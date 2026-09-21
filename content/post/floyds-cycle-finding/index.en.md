@@ -18,7 +18,7 @@ In computer science, it is extremely important to detect whether unexpected "cyc
 
 Since this algorithm uses two pointers moving at different speeds (often pseudo-named "Hare" and "Tortoise"), it is also widely known as the **Tortoise and Hare Algorithm**.
 
-In this article, we will explain in detail the mechanism of this algorithm, its mathematical background, and concrete implementation examples using C++ and Rust.
+In this article, we will explain in detail the mechanism of this algorithm, its mathematical background, and concrete implementation examples using C++ and [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/).
 
 ## What is Cycle Detection?
 
@@ -111,7 +111,7 @@ In other words, **immediately after a collision occurs, if one pointer is return
 
 ## Implementation in Code
 
-Now, let's implement the above theory in C++ and Rust.
+Now, let's implement the above theory in C++ and [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/).
 
 ### Implementation in C++
 
@@ -207,7 +207,7 @@ int main() {
 }
 ```
 
-### Implementation in Rust
+### Implementation in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)
 
 In Rust, the rules of ownership and borrowing tend to make the implementation of linked lists complicated, but modeling it as an index reference problem on an array (or `Vec`) is common in competitive programming.
 Here, we show an example of implementation using an array that holds the "next index" instead of a "pointer to the next".
@@ -332,4 +332,4 @@ In this article, we explained **Robert Floyd's cycle-finding algorithm** (Tortoi
 It is an elegant method that enables cycle detection and start point identification in $O(N)$ time and $O(1)$ space, despite being a simple idea of running two pointers at different speeds.
 By understanding the mathematical backing, it should have become clear why returning one pointer to the beginning after a collision and moving it at the same speed allows you to find the starting point.
 
-In data structure implementations and competitive programming, this algorithm serves as a very powerful weapon. By all means, try implementing it in C++ or Rust yourself.
+In data structure implementations and competitive programming, this algorithm serves as a very powerful weapon. By all means, try implementing it in C++ or [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) yourself.

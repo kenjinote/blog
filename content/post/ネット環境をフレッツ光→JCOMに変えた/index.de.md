@@ -32,7 +32,7 @@ Da ich derzeit weder streame noch große Datenmengen hochlade, werde ich die Sit
 Außerdem arbeiten meine Familie und ich in letzter Zeit hauptsächlich im Homeoffice, und heute fiel das Internet zum ersten Mal für einige Minuten bis zu ein paar Dutzend Minuten aus. Es hat sich automatisch wiederhergestellt, aber
 es ist vielleicht kein gutes Zeichen. Es ist noch nicht einmal eine Woche seit der Umstellung vergangen...
 
-Als Randnotiz: Da J:COM P2P-Kommunikation einschränkt, scheint die Geschwindigkeit von P2P-Apps nicht gut zu sein. Wer P2P nutzt, sollte vorsichtig sein.
+Als Randnotiz: Da J:COM [P2P](https://kenji.blog/de/p/webrtc-realtime-communication-p2p/)-Kommunikation einschränkt, scheint die Geschwindigkeit von P2P-Apps nicht gut zu sein. Wer P2P nutzt, sollte vorsichtig sein.
 
 # Über den Service
 Beim Vertragsabschluss erhält man bei einer Anmeldung bei Netflix oder Disney+ eine QUO-Karte im Wert von 40.000 Yen, was die jeweiligen Service-Vertragsgebühren ausgleicht und die monatlichen Gebühren

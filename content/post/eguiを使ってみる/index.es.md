@@ -15,7 +15,7 @@ description: 'Te presentamos el uso básico de "egui", una librería GUI de fác
 
 # ¿Qué es egui?
 
-Es una librería GUI que se puede utilizar con Rust.
+Es una librería GUI que se puede utilizar con [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/).
 
 # Probando egui
 

@@ -8,7 +8,7 @@ image: "images/img.webp"
 categories: ["programming"]
 description: 'Dans le cadre de l''apprentissage de la programmation en Rust, présente un exemple d''implémentation d''un algorithme simple qui énumère les nombres premiers jusqu''à une limite supérieure spécifiée. Explique clairement comment coder de manière basique en utilisant des boucles et des branchements conditionnels avec des exemples de code spécifiques.'
 ---
-J'ai écrit un programme pour énumérer les nombres premiers en Rust.
+J'ai écrit un programme pour énumérer les nombres premiers en [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/).
 
 ```rust
 fn main() {

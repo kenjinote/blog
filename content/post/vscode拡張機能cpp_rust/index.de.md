@@ -11,7 +11,7 @@ tags: ["VSCode", "C++", "Rust", "Editor"]
 
 # Einführung
 
-In der modernen Systemprogrammierung haben C++ und Rust ihre Position als die wichtigsten Sprachen fest etabliert. C++ ist mit seiner langjährigen Erfolgsgeschichte und seinem riesigen Ökosystem unverzichtbar für Betriebssysteme, Spiele-Engines und Hochfrequenzhandelssysteme (HFT). Rust hingegen verbreitet sich dank seines Speichersicherheitsmodells (Ownership) und moderner Sprachfunktionen rasant und wird zunehmend auch in den Linux-Kernel integriert. Bei der Entwicklung in diesen beiden Sprachen wirkt sich die Wahl und Konfiguration des Editors direkt auf die Produktivität aus.
+In der modernen Systemprogrammierung haben C++ und [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) ihre Position als die wichtigsten Sprachen fest etabliert. C++ ist mit seiner langjährigen Erfolgsgeschichte und seinem riesigen Ökosystem unverzichtbar für Betriebssysteme, Spiele-Engines und Hochfrequenzhandelssysteme (HFT). Rust hingegen verbreitet sich dank seines Speichersicherheitsmodells (Ownership) und moderner Sprachfunktionen rasant und wird zunehmend auch in den Linux-Kernel integriert. Bei der Entwicklung in diesen beiden Sprachen wirkt sich die Wahl und Konfiguration des Editors direkt auf die Produktivität aus.
 
 Visual Studio Code (VSCode) wird von Systemprogrammierern auf der ganzen Welt wegen seiner hohen Erweiterbarkeit und Leichtigkeit geschätzt. Ein frisch installiertes VSCode ist jedoch nur ein einfacher Texteditor. Um das wahre Potenzial von C++ und Rust freizusetzen, sind die Installation geeigneter Erweiterungen und detaillierte Konfigurationen unerlässlich – etwa Language Server, die die Semantik der Sprache tiefgreifend verstehen, und Debugger, die den Zustand auf binärer Ebene verfolgen.
 
@@ -43,7 +43,7 @@ graph TD
     Debugger -. ptrace / Speicherabbild .-> Executable["Kompilierte Binärdatei"]
 ```
 
-VSCode selbst versteht weder die C++-Template-Metaprogrammierung noch die komplexen Lebensdauer-Spezifizierer von Rust. Die Rolle des Editors beschränkt sich auf die Anzeige des Quellcodes und die Entgegennahme von Benutzereingaben. Rechenintensive Aufgaben wie semantische Analyse, Typinferenz und Fehlerprüfung werden über JSON-RPC an im Hintergrund laufende "Language Server" delegiert.
+VSCode selbst versteht weder die C++-Template-Metaprogrammierung noch die komplexen Lebensdauer-Spezifizierer von [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/). Die Rolle des Editors beschränkt sich auf die Anzeige des Quellcodes und die Entgegennahme von Benutzereingaben. Rechenintensive Aufgaben wie semantische Analyse, Typinferenz und Fehlerprüfung werden über JSON-RPC an im Hintergrund laufende "Language Server" delegiert.
 
 Dadurch werden ein reibungsloses Tippen und schnelle Reaktionszeiten selbst in Codebasen mit Millionen von Zeilen erreicht, ohne den UI-Thread des Editors zu blockieren.
 
@@ -97,12 +97,12 @@ Durch die Perfektionierung der Hintergrund-Indizierung (Optimierung der vorberec
 
 ---
 
-### ② rust-analyzer (Der De-facto-Standard für die Rust-Entwicklung)
+### ② rust-analyzer (Der De-facto-Standard für die [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)-Entwicklung)
 
-Bei der Rust-Entwicklung ist **`rust-analyzer`** der offiziell empfohlene Language Server. Der frühere Standard RLS (Rust Language Server) stieß aufgrund seiner Architektur, die den Compiler (rustc) direkt aufrief, an Leistungsgrenzen. Im Gegensatz dazu wurde `rust-analyzer` speziell für IDEs von Grund auf neu entwickelt und verfügt über leistungsstarke Funktionen für das inkrementelle Parsen, selbst von unvollständigem Code.
+Bei der Rust-Entwicklung ist **`rust-analyzer`** der offiziell empfohlene Language Server. Der frühere Standard RLS ([Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) Language Server) stieß aufgrund seiner Architektur, die den Compiler (rustc) direkt aufrief, an Leistungsgrenzen. Im Gegensatz dazu wurde `rust-analyzer` speziell für IDEs von Grund auf neu entwickelt und verfügt über leistungsstarke Funktionen für das inkrementelle Parsen, selbst von unvollständigem Code.
 
 #### Funktionen für unschlagbare Produktivität
-1. **Inlay Hints**: Da Typinferenz in Rust sehr stark ist, wird empfohlen, den Typ einer Variablen nicht explizit anzugeben, was jedoch die Lesbarkeit beeinträchtigen kann. Inlay Hints überlagern abgeleitete Typen und Namen von Funktionsparametern als halbtransparente Texte direkt im Editor.
+1. **Inlay Hints**: Da Typinferenz in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) sehr stark ist, wird empfohlen, den Typ einer Variablen nicht explizit anzugeben, was jedoch die Lesbarkeit beeinträchtigen kann. Inlay Hints überlagern abgeleitete Typen und Namen von Funktionsparametern als halbtransparente Texte direkt im Editor.
 2. **Vollständige Unterstützung für prozedurale Makros (Proc-macros)**: Prozedurale Makros wie `#[derive(Serialize)]` von `serde` oder `tokio::main` empfangen beim Kompilieren den AST als TokenStream und generieren neuen Code. `rust-analyzer` erweitert diese Makros intern und ermöglicht die Codevervollständigung und Fehlerprüfung für den generierten Code.
 3. **Magic Completions**: Bei Methodenverkettungen (Method Chains) wie `iter().map().filter().collect()` kann Schritt für Schritt angezeigt werden, wie sich der Typ transformiert.
 
@@ -119,19 +119,19 @@ Bei der Rust-Entwicklung ist **`rust-analyzer`** der offiziell empfohlene Langua
     "rust-analyzer.hover.actions.references.enable": true
 }
 ```
-Die Einstellung, `cargo clippy` beim Speichern automatisch im Hintergrund auszuführen, ist unverzichtbar. So lernen Sie nicht nur bei Ownership-Verstößen sofort dazu, sondern erhalten auch Vorschläge zur Leistungsverbesserung und zur idiomatischen (typischen) Rust-Schreibweise.
+Die Einstellung, `cargo clippy` beim Speichern automatisch im Hintergrund auszuführen, ist unverzichtbar. So lernen Sie nicht nur bei Ownership-Verstößen sofort dazu, sondern erhalten auch Vorschläge zur Leistungsverbesserung und zur idiomatischen (typischen) [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)-Schreibweise.
 
 ---
 
 ### ③ CodeLLDB (Leistungsstarker plattformübergreifender Debugger)
 
-Egal, ob Sie in C++ oder Rust entwickeln, ein Debugger zur Überprüfung des Speicherzustands zur Laufzeit ist zwingend erforderlich. **`CodeLLDB`** zeichnet sich durch hohe Stabilität auf allen Plattformen (Windows, Mac, Linux) und eine hervorragende Integration mit Rust aus.
+Egal, ob Sie in C++ oder Rust entwickeln, ein Debugger zur Überprüfung des Speicherzustands zur Laufzeit ist zwingend erforderlich. **`CodeLLDB`** zeichnet sich durch hohe Stabilität auf allen Plattformen (Windows, Mac, Linux) und eine hervorragende Integration mit [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) aus.
 
 Da der Rust-Compiler (rustc) LLVM als Backend verwendet, ist das Format der generierten Debuginformationen (DWARF / PDB) vollständig kompatibel mit LLDB, das ebenfalls Teil des LLVM-Projekts ist.
 
 #### Fortgeschrittenes Beispiel für launch.json
 
-Hier sind die Einstellungen in `.vscode/launch.json` zum Starten des Debuggings in VSCode. Dies zeigt eine integrierte Konfiguration zum Debuggen von sowohl C++ als auch Rust-Ausführungsdateien.
+Hier sind die Einstellungen in `.vscode/launch.json` zum Starten des Debuggings in VSCode. Dies zeigt eine integrierte Konfiguration zum Debuggen von sowohl C++ als auch [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)-Ausführungsdateien.
 
 ```json
 {
@@ -170,7 +170,7 @@ Hier sind die Einstellungen in `.vscode/launch.json` zum Starten des Debuggings 
     ]
 }
 ```
-Beachten Sie den Rust-Konfigurationsblock. Da `CodeLLDB` native Unterstützung für die Option `cargo` bietet, müssen Sie den binären Pfad, der nach der Kompilierung komplexe Hash-Werte enthalten könnte, nicht direkt angeben. Der Editor führt automatisch `cargo build` aus, erfasst die neu generierte ausführbare Datei und hängt den Debugger an.
+Beachten Sie den [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)-Konfigurationsblock. Da `CodeLLDB` native Unterstützung für die Option `cargo` bietet, müssen Sie den binären Pfad, der nach der Kompilierung komplexe Hash-Werte enthalten könnte, nicht direkt angeben. Der Editor führt automatisch `cargo build` aus, erfasst die neu generierte ausführbare Datei und hängt den Debugger an.
 
 ---
 
@@ -194,9 +194,9 @@ Die Angabe von `Ninja` als Build-Tool optimiert parallele Kompilierungen besser 
 
 ---
 
-### ⑤ crates (Echtzeit-Verwaltung von Rust-Paketabhängigkeiten)
+### ⑤ crates (Echtzeit-Verwaltung von [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)-Paketabhängigkeiten)
 
-Diese Erweiterung macht die Arbeit mit `Cargo.toml`, der Abhängigkeitsverwaltungsdatei von Rust, extrem komfortabel.
+Diese Erweiterung macht die Arbeit mit `Cargo.toml`, der Abhängigkeitsverwaltungsdatei von [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/), extrem komfortabel.
 
 Sie ruft in Echtzeit ab, ob eine neuere Version für Ihre Abhängigkeits-Crates (Bibliotheken) im offiziellen Repository (Crates.io) verfügbar ist, und zeigt dies inline neben der Versionsnummer an.
 
@@ -212,11 +212,11 @@ Auf diese Weise können Sicherheitsanfälligkeiten oder Fehler durch veraltete B
 
 ### ⑥ Error Lens
 
-`Error Lens` ist eine revolutionäre Erweiterung, die C++-Template-Fehler und die strikten Rust-Borrow-Checker-Fehler direkt inline auf der rechten Seite der entsprechenden Codezeile hervorhebt.
+`Error Lens` ist eine revolutionäre Erweiterung, die C++-Template-Fehler und die strikten [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)-Borrow-Checker-Fehler direkt inline auf der rechten Seite der entsprechenden Codezeile hervorhebt.
 
 Normalerweise müssen Sie in VSCode das Fenster "Probleme (Problems)" am unteren Bildschirmrand öffnen oder genau mit der Maus über die rote Wellenlinie fahren, um die Fehlerdetails im Popup zu lesen. Dies erhöht jedoch die kognitive Belastung und unterbricht den Programmierfluss.
 
-Mit `Error Lens` können Sie Fehlermeldungen aus den Augenwinkeln lesen, während Sie tippen, ohne die Hände von der Tastatur zu nehmen. Insbesondere komplexe Lebensdauer-Fehler in Rust, wie "`cannot borrow 'x' as mutable because it is also borrowed as immutable`", können sofort bei der Betrachtung der Zeile verstanden werden, was die Korrekturgeschwindigkeit drastisch erhöht.
+Mit `Error Lens` können Sie Fehlermeldungen aus den Augenwinkeln lesen, während Sie tippen, ohne die Hände von der Tastatur zu nehmen. Insbesondere komplexe Lebensdauer-Fehler in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/), wie "`cannot borrow 'x' as mutable because it is also borrowed as immutable`", können sofort bei der Betrachtung der Zeile verstanden werden, was die Korrekturgeschwindigkeit drastisch erhöht.
 
 ---
 
@@ -226,13 +226,13 @@ Systemprogrammierungsprojekte sind oft sehr groß und befassen sich mit Codebase
 
 **`GitLens`** zeigt die `git blame`-Informationen der aktuellen Cursor-Position als feine Annotation im Editor an. Außerdem bietet es grafische Funktionen zur Untersuchung des gesamten Commit-Verlaufs einer Datei und der zeilenbasierten Historie (Line History).
 
-Wenn Sie auf einen `unsafe`-Block in Rust oder trickreiche Casts in C++ stoßen, ist es für das Reverse Engineering enorm hilfreich, sofort den damaligen Pull Request oder ausführliche Commit-Nachrichten einsehen zu können.
+Wenn Sie auf einen `unsafe`-Block in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) oder trickreiche Casts in C++ stoßen, ist es für das Reverse Engineering enorm hilfreich, sofort den damaligen Pull Request oder ausführliche Commit-Nachrichten einsehen zu können.
 
 ---
 
 ### ⑧ GitHub Copilot
 
-Auch in der Systemprogrammierung ist der Einsatz generativer KI-Assistenten bereits zu einem unvermeidlichen Paradigmenwechsel geworden. **`GitHub Copilot`** unterstützt Sie mit extrem hoher Präzision beim Schreiben von redundatem Boilerplate-Code in C++ und beim Aufbau komplexer Iterator-Ketten in Rust.
+Auch in der Systemprogrammierung ist der Einsatz generativer KI-Assistenten bereits zu einem unvermeidlichen Paradigmenwechsel geworden. **`GitHub Copilot`** unterstützt Sie mit extrem hoher Präzision beim Schreiben von redundatem Boilerplate-Code in C++ und beim Aufbau komplexer Iterator-Ketten in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/).
 
 #### Nutzung von KI in der Systemprogrammierung
 - **Implementierung der "Rule of Five"**: Beim Schreiben von Destruktoren, Kopierkonstruktoren, Kopierzuweisungsoperatoren, Move-Konstruktoren und Move-Zuweisungsoperatoren in C++ schlägt Copilot sofort genaue Implementierungen vor, die auf den Membervariablen der Klasse basieren und Speicherlecks vermeiden.
@@ -242,7 +242,7 @@ Auch in der Systemprogrammierung ist der Einsatz generativer KI-Assistenten bere
 
 ### ⑨ Even Better TOML
 
-Diese Erweiterung bietet Syntax-Hervorhebung, Auto-Formatierung und eine sehr mächtige Schema-Validierung (Schema Validation) für Rust-Projektkonfigurationsdateien wie `Cargo.toml` und Toolchain-Konfigurationen wie `rust-toolchain.toml`.
+Diese Erweiterung bietet Syntax-Hervorhebung, Auto-Formatierung und eine sehr mächtige Schema-Validierung (Schema Validation) für [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)-Projektkonfigurationsdateien wie `Cargo.toml` und Toolchain-Konfigurationen wie `rust-toolchain.toml`.
 
 Einfache Tippfehler in `Cargo.toml` (z. B. wenn man `[dependencies]` fälschlicherweise als `[dependencis]` schreibt) werden in Echtzeit als Warnung ausgegeben, wodurch Sie keine Zeit mehr verlieren, weil der Fehler erst beim Kompilieren bemerkt wird. Dank der Validierung über ein JSON Schema ist auch die Autovervollständigung verfügbarer Schlüssel möglich.
 
@@ -252,7 +252,7 @@ Einfache Tippfehler in `Cargo.toml` (z. B. wenn man `[dependencies]` fälschlich
 
 In der Systemprogrammierung steht die korrekte Rechtschreibung von Variablen und Funktionsnamen in direktem Zusammenhang mit der Lesbarkeit und Wartbarkeit des gesamten Projekts. **`Code Spell Checker`** erkennt Tippfehler in Bezeichnern (Camel-Case `myVariable` und Snake-Case `my_variable` werden automatisch in Einzelwörter zerlegt), Kommentaren und String-Literalen im Quellcode.
 
-Wenn String-Literale als Schlüssel für `std::unordered_map` in C++ oder `HashMap` in Rust verwendet werden, bleiben Fehler, die durch Rechtschreibfehler (Tippfehler) verursacht werden, extrem tückisch, da sie vom Compiler nicht erfasst werden und erst zur Laufzeit als Fehler in Erscheinung treten. Durch die Einführung einer Rechtschreibprüfung mit Wellenlinienwarnungen im Editor können solche flüchtigen Fehler bereits während des Codierens vollständig eliminiert werden.
+Wenn String-Literale als Schlüssel für `std::unordered_map` in C++ oder `HashMap` in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) verwendet werden, bleiben Fehler, die durch Rechtschreibfehler (Tippfehler) verursacht werden, extrem tückisch, da sie vom Compiler nicht erfasst werden und erst zur Laufzeit als Fehler in Erscheinung treten. Durch die Einführung einer Rechtschreibprüfung mit Wellenlinienwarnungen im Editor können solche flüchtigen Fehler bereits während des Codierens vollständig eliminiert werden.
 
 ---
 
@@ -260,7 +260,7 @@ Wenn String-Literale als Schlüssel für `std::unordered_map` in C++ oder `HashM
 
 Um als IDE perfekt zu funktionieren, sollten Sie nicht nur die GUI des Editors nutzen, sondern auch die VSCode-Task-Funktionalität (`.vscode/tasks.json`). Damit können Sie den Build- und Test-Vorgang mit einer einzigen Tastenkombination (standardmäßig `Ctrl+Shift+B`) ausführen.
 
-Hier ist ein fortgeschrittenes `tasks.json`-Beispiel, mit dem C++-Builds über CMake und Rust-Builds über Cargo koexistieren können.
+Hier ist ein fortgeschrittenes `tasks.json`-Beispiel, mit dem C++-Builds über CMake und [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)-Builds über Cargo koexistieren können.
 
 ```json
 {
@@ -334,7 +334,7 @@ sequenceDiagram
     VSCode->>Developer: Anzeige als Baumstruktur im Panel "Variablen" der GUI
 ```
 
-Wie dieses Sequenzdiagramm zeigt, finden während einer Debug-Sitzung unzählige Kommunikationen (Debug Adapter Protocol - DAP) zwischen VSCode und CodeLLDB statt. Selbst komplexe Datenstrukturen, die Sammlungen von Zeigern sind, wie `std::map` in C++ oder `Vec<T>` in Rust, werden durch die integrierte Formatierungsfunktion von CodeLLDB auf sehr intuitive Weise (als erweiterter Baum der Array-Inhalte) in der GUI von VSCode dargestellt.
+Wie dieses Sequenzdiagramm zeigt, finden während einer Debug-Sitzung unzählige Kommunikationen (Debug Adapter Protocol - DAP) zwischen VSCode und CodeLLDB statt. Selbst komplexe Datenstrukturen, die Sammlungen von Zeigern sind, wie `std::map` in C++ oder `Vec<T>` in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/), werden durch die integrierte Formatierungsfunktion von CodeLLDB auf sehr intuitive Weise (als erweiterter Baum der Array-Inhalte) in der GUI von VSCode dargestellt.
 
 Um dies zu ermöglichen, bettet der Rust-Compiler detaillierte Informationen zum Speicherlayout von Typen (wie Größe und Padding) in das DWARF-Format ein, und CodeLLDB konvertiert die rohen Bytes im Zielspeicher dementsprechend in ein für Menschen lesbares Format.
 
@@ -370,7 +370,7 @@ Infolgedessen wird die Gesamtdauer der Aufgabe $T_{total}$ deutlich reduziert, s
 
 ## Fazit
 
-Sowohl C++ als auch Rust sind anspruchsvolle Sprachen, die darauf abzielen, "die maximale Leistung der Hardware herauszuholen". Daher verlangen sie den Entwicklern ein hohes Maß an Verständnis und präziser Codierung ab.
+Sowohl C++ als auch [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) sind anspruchsvolle Sprachen, die darauf abzielen, "die maximale Leistung der Hardware herauszuholen". Daher verlangen sie den Entwicklern ein hohes Maß an Verständnis und präziser Codierung ab.
 
 Durch die Anwendung der in diesem Artikel vorgestellten 10 Erweiterungen und Einstellungen wird VSCode weit mehr als nur ein Texteditor. Er verwandelt sich in ein "starkes Exoskelett für Entwickler", das tiefes Compiler-Wissen mit den Durchblick-Fähigkeiten eines Debuggers vereint.
 

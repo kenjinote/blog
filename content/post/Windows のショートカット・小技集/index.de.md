@@ -146,7 +146,7 @@ Im Folgenden werden einige Befehle vorgestellt, die Sie im Dialog "Ausführen" o
 ![img_5.png](img_5.webp)
 - Geben Sie `calc` ein und drücken Sie `Enter`
 
-## Paint starten
+## [Paint](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/) starten
 ![img_6.png](img_6.webp)
 - Geben Sie `mspaint` ein und drücken Sie `Enter`  
 

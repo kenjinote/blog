@@ -114,7 +114,7 @@ A vantagem do Event Loop é que o gerenciamento de locks para estados compartilh
 
 ---
 
-## 3. Modelo de Atores e Troca de Mensagens (Rust / Erlang / Akka)
+## 3. Modelo de Atores e Troca de Mensagens ([Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) / Erlang / Akka)
 
 Se o Event Loop é uma abordagem que desafia os limites de ser single-thread, o **modelo de Atores** (Actor Model) é um paradigma para tornar o processamento concorrente seguro e escalável em ambientes multithread e distribuídos.
 
@@ -139,7 +139,7 @@ flowchart LR
     end
 ```
 
-### 3.2 Exemplo de Implementação de Atores usando Rust
+### 3.2 Exemplo de Implementação de Atores usando [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/)
 
 Na linguagem de programação de sistemas Rust, é possível construir o modelo de Atores usando crates assíncronos poderosos como `tokio` e `actix`. Aqui mostramos uma implementação de um padrão de Ator simples usando um canal `mpsc` (Multi-Producer, Single-Consumer).
 
@@ -207,7 +207,7 @@ async fn main() {
 }
 ```
 
-No Rust, a posse (Ownership) e o sistema de tipos garantem a segurança da troca de mensagens entre Atores em tempo de compilação. Expressando o throughput do sistema $ S $ em fórmula, para o número de atores $ N $ e a taxa de processamento de mensagens $ R $, idealmente temos $ S = N \times R $, demonstrando alta escalabilidade.
+No [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/), a posse (Ownership) e o sistema de tipos garantem a segurança da troca de mensagens entre Atores em tempo de compilação. Expressando o throughput do sistema $ S $ em fórmula, para o número de atores $ N $ e a taxa de processamento de mensagens $ R $, idealmente temos $ S = N \times R $, demonstrando alta escalabilidade.
 
 ---
 
@@ -281,7 +281,7 @@ As tecnologias que vimos até agora têm casos de uso adequados para cada uma.
 1. **Event Loop (Node.js)**: 
    - API Gateways e sistemas de chat em tempo real com muito processamento I/O-bound.
    - Servidores WebSocket que lidam com um grande número de conexões simultâneas.
-2. **Modelo de Atores (Rust / Akka)**: 
+2. **Modelo de Atores ([Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) / Akka)**: 
    - Processamento concorrente com estados complexos (servidores de jogos, rastreamento em tempo real).
    - Sistemas de alta disponibilidade que exigem capacidade de autocorreção de erros (supervisor trees).
 3. **CQRS / Event Sourcing**: 

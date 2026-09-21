@@ -9,7 +9,7 @@ categories: ["programming"]
 description: '面向初学者讲解在Rust中编写测试代码的方法，以及使用cargo test命令执行测试的步骤。结合具体的代码示例，详细介绍#[test]属性的用法以及成功或失败时的输出结果。'
 ---
 
-在 Rust 中编写测试，只需在测试函数的定义上方添加 `#[test]` 属性即可创建测试函数。
+在 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 中编写测试，只需在测试函数的定义上方添加 `#[test]` 属性即可创建测试函数。
 
 ```rust
 fn plus(a:i32,b:i32)->i32 {

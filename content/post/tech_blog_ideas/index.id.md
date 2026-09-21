@@ -180,7 +180,7 @@ Pada umumnya terdapat 3 jenis catatan dalam Zettelkasten:
 2. **Literature Notes (Catatan Literatur)**: Ringkasan dengan kata-kata sendiri setelah membaca artikel atau buku.
 3. **Permanent Notes (Catatan Permanen)**: Berisi pemikiran utuh mengenai satu topik. Inilah yang menjadi benih langsung dari artikel blog.
 
-Dengan menggunakan fitur backlink Obsidian (`[[Nama Catatan]]`), misalnya dengan menautkan catatan "Kepemilikan di Rust" dan "Sejarah [Garbage Collection](https://kenji.blog/id/p/memory-management-garbage-collection/)", Anda dapat menemukan koneksi ide yang tidak terduga.
+Dengan menggunakan fitur backlink Obsidian (`[[Nama Catatan]]`), misalnya dengan menautkan catatan "Kepemilikan di [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)" dan "Sejarah [Garbage Collection](https://kenji.blog/id/p/memory-management-garbage-collection/)", Anda dapat menemukan koneksi ide yang tidak terduga.
 
 ## 5. Pencarian Semantik Menggunakan Database Vektor (Pinecone) dan OpenAI Embeddings
 
@@ -284,7 +284,7 @@ if __name__ == "__main__":
     search_similar_ideas(idx, "Mempercepat inferensi machine learning di browser menggunakan WebAssembly")
 ```
 
-Dengan menggunakan sistem ini, ketika Anda bertanya, "Saya ingin menulis tentang 'WebAssembly' yang sedang ramai di Hacker News minggu ini, tapi apakah saya pernah menulis catatan terkait sebelumnya?", AI akan dengan instan mengambil Permanent Notes (Catatan Permanen) terdahulu yang relevan secara semantik. Hal ini memungkinkan penulisan artikel mendalam yang sepenuhnya memanfaatkan aset pengetahuan Anda di masa lalu.
+Dengan menggunakan sistem ini, ketika Anda bertanya, "Saya ingin menulis tentang '[WebAssembly](https://kenji.blog/id/p/webassembly-wasm-current-future/)' yang sedang ramai di Hacker News minggu ini, tapi apakah saya pernah menulis catatan terkait sebelumnya?", AI akan dengan instan mengambil Permanent Notes (Catatan Permanen) terdahulu yang relevan secara semantik. Hal ini memungkinkan penulisan artikel mendalam yang sepenuhnya memanfaatkan aset pengetahuan Anda di masa lalu.
 
 ## 6. Pengulangan Berjarak Memanfaatkan Kurva Kelupaan Ebbinghaus dan Anki
 

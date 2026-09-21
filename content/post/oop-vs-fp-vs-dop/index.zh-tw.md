@@ -10,7 +10,7 @@ tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]
 
 程式語言的演進歷史，同時也是與複雜性抗爭的歷史。隨著軟體規模的擴大，開發者面臨了狀態管理、效能及維護性的障礙，為了解決這些問題，提出了各種 **程式設計典範** 。
 
-本文將針對現代軟體開發中成為主流的 **物件導向程式設計** （OOP）、具備數學強健性的 **函數式程式設計** （FP），以及專注於效能與資料分離的 **資料導向程式設計** （DOP / DOD），深入探討各自的思想、優勢與 **極限** 。此外，還將解說現代強大的語言（如 Rust 與 TypeScript 等）如何將這些典範進行 **融合** 。
+本文將針對現代軟體開發中成為主流的 **物件導向程式設計** （OOP）、具備數學強健性的 **函數式程式設計** （FP），以及專注於效能與資料分離的 **資料導向程式設計** （DOP / DOD），深入探討各自的思想、優勢與 **極限** 。此外，還將解說現代強大的語言（如 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 與 TypeScript 等）如何將這些典範進行 **融合** 。
 
 ---
 
@@ -136,7 +136,7 @@ $ S' = f(S, A) $
 
 ## 3. 回歸資料導向程式設計 (DOP/DOD)
 
-**資料導向設計** （Data-Oriented Design）或 **資料導向程式設計** ，是誕生於遊戲開發（特別是 C++ 與 Rust）現場，隨後波及企業領域（如 Clojure 的思想）的一種典範。
+**資料導向設計** （Data-Oriented Design）或 **資料導向程式設計** ，是誕生於遊戲開發（特別是 C++ 與 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)）現場，隨後波及企業領域（如 Clojure 的思想）的一種典範。
 
 ### 3.1 DOP 的核心概念
 
@@ -200,7 +200,7 @@ graph TD
 
 ## 5. 現代的最佳解答：典範的「融合」
 
-在今日，從中選擇「唯一正解」被認為是毫無意義的。現代的程式語言（如 Rust、TypeScript、Scala、Go 等）都在吸取這些典範的 **優點** 。
+在今日，從中選擇「唯一正解」被認為是毫無意義的。現代的程式語言（如 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)、TypeScript、Scala、Go 等）都在吸取這些典範的 **優點** 。
 
 ### 5.1 Rust 所展現的終極融合
 

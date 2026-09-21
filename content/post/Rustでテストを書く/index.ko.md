@@ -17,7 +17,7 @@ description: 'Rust에서 테스트 코드를 작성하는 방법과 cargo test �
 
 
 
-Rust에서 테스트를 작성하려면, 테스트 함수 정의 한 줄 위에 `#[test]` 속성을 붙여 함수를 생성합니다.
+[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)에서 테스트를 작성하려면, 테스트 함수 정의 한 줄 위에 `#[test]` 속성을 붙여 함수를 생성합니다.
 
 ```rust
 fn plus(a:i32,b:i32)->i32 {

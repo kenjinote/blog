@@ -12,7 +12,7 @@ description: '精通 Hugo SEO 策略的完整指南。從中繼資料、OGP 到 
 
 Hugo 是一款以 Go 語言編寫、世界最快等級的靜態網站產生器 (SSG)。憑藉其壓倒性的建置速度與靈活的模板系統，獲得了許多工程師與部落客的高度支持。然而，僅僅是網站能高速生成與顯示，並無法獲得搜尋引擎 (如 Google 或 Bing) 的高評價，也就無法將文章傳遞給使用者。
 
-為了提升搜尋排名、增強在社群媒體上的擴散力，進而大幅增加部落格的流量，縝密的 SEO (搜尋引擎最佳化) 策略是不可或缺的。Hugo 中 SEO 策略的核心，在於每篇 Markdown 文章開頭所撰寫的 **Frontmatter** ，與解析它並將中繼資料展開至 HTML `<head>` 標籤內的 **模板 (Layouts)** 之間的協作。
+為了提升搜尋排名、增強在社群媒體上的擴散力，進而大幅增加部落格的流量，縝密的 SEO (搜尋引擎最佳化) 策略是不可或缺的。Hugo 中 SEO 策略的核心，在於每篇 Markdown 文章開頭所撰寫的 **Frontmatter** ，與解析它並將中繼資料展開至 HTML `<head>` 標籤內的 **模板 ([Layout](https://kenji.blog/zh-tw/p/browser-rendering-mechanism-dom-paint/)s)** 之間的協作。
 
 本文將徹底解說如何將 Hugo 的功能發揮到極致，以實作進階 SEO 策略的 Frontmatter 設定，涵蓋各種 Meta 標籤、OGP (Open Graph Protocol)、Twitter Cards，以及使用 JSON-LD 輸出結構化資料。內容將以壓倒性的豐富度詳細說明。
 

@@ -22,7 +22,7 @@ Dieser Artikel fasst die „Folgen“ der Einführung des obligatorischen Progra
 
 Der De-facto-Standard in der Programmierausbildung an Grundschulen sind visuelle Programmiersprachen (Blockprogrammierung), wie beispielsweise das vom MIT Media Lab entwickelte „Scratch“. Die Möglichkeit, die drei grundlegenden Kontrollstrukturen von Algorithmen – „Sequenz“ (Folge), „Selektion“ (Verzweigung) und „Iteration“ (Wiederholung) – visuell und intuitiv durch das Zusammensetzen von Blöcken wie bei einem Puzzle über eine grafische Benutzeroberfläche zu erlernen, ist eine großartige Erfindung, die als Einstiegsbildung hoch bewertet werden sollte.
 
-Hier lauert jedoch eine große Falle, sozusagen die „Falle der Abstraktion“. Es ist die grausame Tatsache, dass „der Übergang von der visuellen Programmierung zu vollwertigen textbasierten Programmiersprachen (Python, JavaScript, C++, Rust usw.) extrem schwierig ist und viele Lernende in dieser Phase scheitern“.
+Hier lauert jedoch eine große Falle, sozusagen die „Falle der Abstraktion“. Es ist die grausame Tatsache, dass „der Übergang von der visuellen Programmierung zu vollwertigen textbasierten Programmiersprachen (Python, JavaScript, C++, [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) usw.) extrem schwierig ist und viele Lernende in dieser Phase scheitern“.
 
 ### Die Mauer der Abstraktion und das Blackboxing der Informatik
 
@@ -49,7 +49,7 @@ flowchart TD
     class J success;
 ```
 
-Wie aus diesem Flussdiagramm deutlich wird, bringt das bloße Sammeln von Erfahrungen mit dem „Schreiben von Code, um einen Charakter auf dem Bildschirm zu bewegen“, keine echten Software-Ingenieure hervor, die skalierbare verteilte Systemarchitekturen entwerfen und die Leistung im Millisekundenbereich optimieren können. Zwischen dem Zusammensetzen bunter Blöcke in Scratch mit der Maus und dem Entschlüsseln des C-Quellcodes des Linux-Kernels sowie dem Verfolgen des Verhaltens eines TCP/IP-Stacks besteht eine absolute konzeptionelle Lücke, die nicht einfach mit den Worten „Unterschied in der verwendeten Sprache“ abgetan werden kann.
+Wie aus diesem Flussdiagramm deutlich wird, bringt das bloße Sammeln von Erfahrungen mit dem „Schreiben von Code, um einen Charakter auf dem Bildschirm zu bewegen“, keine echten Software-Ingenieure hervor, die skalierbare verteilte Systemarchitekturen entwerfen und die Leistung im Millisekundenbereich optimieren können. Zwischen dem Zusammensetzen bunter Blöcke in Scratch mit der Maus und dem Entschlüsseln des C-Quellcodes des Linux-Kernels sowie dem Verfolgen des Verhaltens eines [TCP](https://kenji.blog/de/p/http3-quic-protocol-tcp-udp/)/IP-Stacks besteht eine absolute konzeptionelle Lücke, die nicht einfach mit den Worten „Unterschied in der verwendeten Sprache“ abgetan werden kann.
 
 ## 3. Die Grenzen des Codings ohne „Mathematik“ und „diskrete Logik“: Ein Ansatz aus der Komplexitätstheorie
 
@@ -247,7 +247,7 @@ Fachkräfte, die in der Lage sind, solch fortgeschrittene mathematische Formeln 
 
 Die Einführung der obligatorischen Programmierausbildung in den 2020er Jahren war zweifellos ein wichtiger Schritt, um die gesamte japanische Gesellschaft für die „Bedeutung von IT und Information“ zu sensibilisieren. Dennoch war dies nur ein bloßes „Aufwärmen“ auf einem langen Weg.
 
-Es geht darum, über den Spaß hinauszugehen, eine Katzenfigur in Scratch zu bewegen, und die mathematische Schönheit eines $O(N \log N)$-Algorithmus zu bewundern. Es geht darum, die Spannung zu vermitteln, über TCP-Pakete von einem schwarzen Terminalbildschirm aus mit Servern weltweit zu kommunizieren. Es erfordert den Wiederaufbau einer neuen Bildungsinfrastruktur, um die Hardware-Einschränkungen des GIGA School-Konzepts zu überwinden, die Ausbildung und Vermittlung von Lehrkräften mit hoher CS-Expertise und mitunter die mutige Einbindung externer professioneller Ingenieure in die Schulbildung.
+Es geht darum, über den Spaß hinauszugehen, eine Katzenfigur in Scratch zu bewegen, und die mathematische Schönheit eines $O(N \log N)$-Algorithmus zu bewundern. Es geht darum, die Spannung zu vermitteln, über [TCP](https://kenji.blog/de/p/http3-quic-protocol-tcp-udp/)-Pakete von einem schwarzen Terminalbildschirm aus mit Servern weltweit zu kommunizieren. Es erfordert den Wiederaufbau einer neuen Bildungsinfrastruktur, um die Hardware-Einschränkungen des GIGA School-Konzepts zu überwinden, die Ausbildung und Vermittlung von Lehrkräften mit hoher CS-Expertise und mitunter die mutige Einbindung externer professioneller Ingenieure in die Schulbildung.
 
 Die Herausforderungen, vor denen die IT-Bildung in Japan steht, sind extrem tief, hartnäckig und komplex. Wenn sich jedoch Industrie, Wissenschaft und Regierung ernsthaft zusammenschließen, um sich diesen Problemen zu stellen und ein Ökosystem aufzubauen, das kontinuierlich „echte Ingenieure, die Systeme von Grund auf entwerfen und erschaffen können“ hervorbringt – anstatt nur „Arbeiter, die Code nach Spezifikation schreiben können“ –, wird Japan als wahre IT-Nation wieder eine weltweite Führungsrolle übernehmen können.
 

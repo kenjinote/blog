@@ -217,7 +217,7 @@ Node.js 환경이라면 `cross-env` 등의 패키지를 사용하여 환경 변�
 
 ## 6. 크로스 플랫폼의 빌드 시스템과 컴파일러
 
-C++나 Rust 등의 네이티브 코드(머신 코드로 직접 컴파일되는 언어)를 다룰 경우, OS 고유의 API뿐만 아니라 빌드 시스템과 컴파일러의 차이도 극복해야 합니다.
+C++나 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/) 등의 네이티브 코드(머신 코드로 직접 컴파일되는 언어)를 다룰 경우, OS 고유의 API뿐만 아니라 빌드 시스템과 컴파일러의 차이도 극복해야 합니다.
 
 *   **컴파일러**:
     *   Windows: MSVC (Microsoft Visual C++), MinGW (GCC for Windows)

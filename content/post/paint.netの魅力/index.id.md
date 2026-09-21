@@ -12,7 +12,7 @@ Saya ingin memperkenalkan paint.net, perangkat lunak pengeditan gambar yang seri
 
 ![img_1.png](img_1.webp)
 
-# Fitur berguna yang tidak bisa dilakukan dengan Paint standar Windows
+# Fitur berguna yang tidak bisa dilakukan dengan [Paint](https://kenji.blog/id/p/browser-rendering-mechanism-dom-paint/) standar Windows
 - Dapat menangani transparansi/opasitas
 - Pemilihan otomatis area yang kompleks
 - Dapat menangani layer

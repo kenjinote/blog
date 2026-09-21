@@ -35,6 +35,6 @@ description: 'Объясняем, как устанавливать прилож
 [Использование инструмента winget для установки приложений и управления ими](https://learn.microsoft.com/ja-jp/windows/package-manager/winget/)
 
 ### Отступление
-Я думал, что смогу установить Paint.Net, но не получилось.
+Я думал, что смогу установить [Paint](https://kenji.blog/ru/p/browser-rendering-mechanism-dom-paint/).Net, но не получилось.
 
 https://forums.getpaint.net/topic/118574-please-add-paintnet-to-the-available-packages-for-windows-package-manager-winget/

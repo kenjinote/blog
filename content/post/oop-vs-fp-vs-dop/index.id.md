@@ -10,7 +10,7 @@ tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]
 
 Sejarah evolusi bahasa pemrograman juga merupakan sejarah pertempuran melawan kompleksitas. Seiring dengan membesarnya skala perangkat lunak, kita menghadapi hambatan pada manajemen status, performa, dan pemeliharaan, sehingga berbagai **paradigma pemrograman** telah diusulkan untuk mengatasinya.
 
-Pada artikel ini, kita akan membahas secara mendalam filosofi, keunggulan, dan **batasan** dari **Pemrograman Berorientasi Objek** (OOP) yang menjadi arus utama dalam pengembangan perangkat lunak modern, **Pemrograman Fungsional** (FP) yang memiliki ketangguhan matematis, dan **Pemrograman Berorientasi Data** (DOP / DOD) yang berfokus pada performa dan pemisahan data. Lebih lanjut, kita akan menjelaskan bagaimana bahasa modern yang kuat (seperti Rust dan TypeScript) melakukan **fusi** dari ketiganya.
+Pada artikel ini, kita akan membahas secara mendalam filosofi, keunggulan, dan **batasan** dari **Pemrograman Berorientasi Objek** (OOP) yang menjadi arus utama dalam pengembangan perangkat lunak modern, **Pemrograman Fungsional** (FP) yang memiliki ketangguhan matematis, dan **Pemrograman Berorientasi Data** (DOP / DOD) yang berfokus pada performa dan pemisahan data. Lebih lanjut, kita akan menjelaskan bagaimana bahasa modern yang kuat (seperti [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) dan TypeScript) melakukan **fusi** dari ketiganya.
 
 ---
 
@@ -136,7 +136,7 @@ Alokasi memori untuk menjaga immutability (beban pada [Garbage Collection](https
 
 ## 3. Kembali ke Pemrograman Berorientasi Data (DOP/DOD)
 
-**Desain Berorientasi Data** (Data-Oriented Design) atau **Pemrograman Berorientasi Data** adalah paradigma yang lahir di lapangan pengembangan game (terutama C++ dan Rust) dan kemudian menyebar ke ranah perusahaan (seperti filosofi Clojure).
+**Desain Berorientasi Data** (Data-Oriented Design) atau **Pemrograman Berorientasi Data** adalah paradigma yang lahir di lapangan pengembangan game (terutama C++ dan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)) dan kemudian menyebar ke ranah perusahaan (seperti filosofi Clojure).
 
 ### 3.1 Konsep Inti DOP
 
@@ -200,7 +200,7 @@ Masing-masing paradigma memiliki area keunggulan dan kelemahan yang jelas.
 
 ## 5. Solusi Optimal Masa Kini: "Fusi" Paradigma
 
-Saat ini, memilih satu "jawaban yang paling benar" di antara ini dianggap masuk akal. Bahasa pemrograman modern (Rust, TypeScript, Scala, Go, dll.) telah mengambil **bagian terbaik** dari paradigma-paradigma ini.
+Saat ini, memilih satu "jawaban yang paling benar" di antara ini dianggap masuk akal. Bahasa pemrograman modern ([Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), TypeScript, Scala, Go, dll.) telah mengambil **bagian terbaik** dari paradigma-paradigma ini.
 
 ### 5.1 Fusi Utama yang Ditunjukkan oleh Rust
 

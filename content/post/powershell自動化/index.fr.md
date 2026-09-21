@@ -147,7 +147,7 @@ $$ T_{backup} = \frac{S_{total}}{B \times (1 - \alpha)} + C \times L $$
 Ici, chaque variable est la suivante :
 - $S_{total}$ : Quantité totale de données à sauvegarder (Bits)
 - $B$ : Bande passante du réseau (bps, Ex : 1 Gbps = $10^9$ bps)
-- $\alpha$ : Surcharge du réseau et des protocoles (généralement de 0,1 à 0,2 pour TCP/IP ou les protocoles SMB)
+- $\alpha$ : Surcharge du réseau et des protocoles (généralement de 0,1 à 0,2 pour [TCP](https://kenji.blog/fr/p/http3-quic-protocol-tcp-udp/)/IP ou les protocoles SMB)
 - $C$ : Nombre total de fichiers
 - $L$ : Latence de traitement par fichier (secondes)
 

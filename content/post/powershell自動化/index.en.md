@@ -147,7 +147,7 @@ $$ T_{backup} = \frac{S_{total}}{B \times (1 - \alpha)} + C \times L $$
 Here, each variable is as follows:
 - $S_{total}$ : Total amount of data to be backed up (Bits)
 - $B$ : Network bandwidth (bps, e.g., 1Gbps = $10^9$ bps)
-- $\alpha$ : Network and protocol overhead (usually 0.1 to 0.2 for TCP/IP and SMB protocols)
+- $\alpha$ : Network and protocol overhead (usually 0.1 to 0.2 for [TCP](https://kenji.blog/en/p/http3-quic-protocol-tcp-udp/)/IP and SMB protocols)
 - $C$ : Total number of files
 - $L$ : Processing latency per file (seconds)
 

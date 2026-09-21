@@ -156,7 +156,7 @@ L'utilisation des contrats non seulement auto-documente les spécifications de l
 
 Depuis l'introduction de `std::variant` et `std::any` en C++17, `std::visit` a été utilisé pour distribuer les variables contenant différents types. Cependant, la combinaison de `std::visit` et du motif de surcharge (le fameux hack de la structure `overloaded`) était extrêmement verbeuse et peu lisible.
 
-Dans C++26, le **filtrage par motif (Pattern Matching)** a été intégré en tant que fonctionnalité du langage (conforme à P2688). Cela permet un appariement intuitif, proche de celui des langages fonctionnels (comme Rust ou Haskell).
+Dans C++26, le **filtrage par motif (Pattern Matching)** a été intégré en tant que fonctionnalité du langage (conforme à P2688). Cela permet un appariement intuitif, proche de celui des langages fonctionnels (comme [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) ou Haskell).
 
 ## 3.1 Les difficultés avec `std::visit` jusqu'à C++23
 

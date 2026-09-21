@@ -12,7 +12,7 @@ tags: ["Rust", "CLI", "clap", "tokio"]
 
 ## 1. Introduction
 
-In modern software development, CLI (Command Line Interface) tools are essential for dramatically boosting developer productivity. In the past, shell scripts, Python, or Ruby were the mainstream, but in recent years, **Rust** has established a solid position as the de facto standard for CLI tool development.
+In modern software development, CLI (Command Line Interface) tools are essential for dramatically boosting developer productivity. In the past, shell scripts, Python, or Ruby were the mainstream, but in recent years, **[Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)** has established a solid position as the de facto standard for CLI tool development.
 
 In this article, we will thoroughly explain how to build practical CLI tools that "run at blazing speed and can be developed at blazing speed" using Rust, covering everything from the basics to advanced topics. Rather than just building something that works, we will comprehensively cover robust error handling suitable for commercial use, high-speed API requests using asynchronous processing, and implementing progress bars to improve user experience (UX).
 
@@ -41,9 +41,9 @@ Thanks to Rust's greatest weaponsâ€”its Ownership model and strong type systemâ€
 In the Rust ecosystem, there are many excellent crates (libraries) that strongly support CLI development. In this tutorial, we will use the following crates, which can be called the "golden stack" in modern Rust CLI development.
 
 1. **`clap`**: The most powerful and popular crate for parsing command-line arguments. Since version 4, declarative definition using the Derive macro has been further refined, supporting automatic generation of help messages and input completion scripts.
-2. **`tokio`**: The de facto standard async runtime for Rust. It handles multi-threaded asynchronous I/O extremely efficiently.
+2. **`tokio`**: The de facto standard async runtime for [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/). It handles multi-threaded asynchronous I/O extremely efficiently.
 3. **`reqwest`**: A high-performance HTTP client that runs on `tokio`. It has an easy-to-use API and makes implementing asynchronous API requests easy.
-4. **`serde` & `serde_json`**: A framework for serializing and deserializing data. It is essential for mapping JSON responses from APIs to type-safe Rust structures.
+4. **`serde` & `serde_json`**: A framework for serializing and deserializing data. It is essential for mapping JSON responses from APIs to type-safe [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) structures.
 5. **`indicatif`**: Provides rich and customizable progress bars. It visually displays the progress of asynchronous processing and dramatically improves the UX of the CLI.
 6. **`anyhow` & `thiserror`**: A powerful combination for error handling. The best practice is to use `thiserror` for defining domain errors inside libraries, and `anyhow` for aggregating errors at the top layer of the application.
 
@@ -86,7 +86,7 @@ $$
 L = \lambda W \implies \lambda = \frac{L}{W}
 $$
 
-In other words, in an environment where network latency $W$ is unavoidable, the only way to improve the system's throughput $\lambda$ is to increase the number of requests processed simultaneously $L$. Since asynchronous tasks in Rust have extremely small memory overhead compared to native OS threads, $L$ can be easily scaled.
+In other words, in an environment where network latency $W$ is unavoidable, the only way to improve the system's throughput $\lambda$ is to increase the number of requests processed simultaneously $L$. Since asynchronous tasks in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) have extremely small memory overhead compared to native OS threads, $L$ can be easily scaled.
 
 ---
 
@@ -239,7 +239,7 @@ Commands:
 
 ## 9. Implementation Phase 3: API Client and Data Mapping
 
-We map the JSON data returned from the GitHub API to Rust structures. Implement `src/models.rs` and `src/api.rs`.
+We map the JSON data returned from the GitHub API to [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) structures. Implement `src/models.rs` and `src/api.rs`.
 
 ```rust
 // src/models.rs
@@ -413,7 +413,7 @@ By applying these settings, the generated binary size is reduced by a few megaby
 These are the steps to distribute your created tool to the world.
 
 ### Publishing to crates.io
-Using Cargo, Rust's package manager, you can publish to the official registry with just a few commands.
+Using Cargo, [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)'s package manager, you can publish to the official registry with just a few commands.
 
 ```bash
 cargo login <YOUR_TOKEN>
@@ -428,11 +428,11 @@ Build a CI/CD pipeline that automatically uploads cross-compiled binaries to Git
 
 ## 13. Conclusion
 
-In this article, we thoroughly explained the entire flow of CLI tool development using Rust.
+In this article, we thoroughly explained the entire flow of CLI tool development using [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/).
 
 1. **Design Policy**: We confirmed the safety and speed of Rust, and the advantages of a single binary.
 2. **Crate Selection**: We acquired powerful weapons: `clap`, `tokio`, `serde`, `indicatif`, `thiserror`, and `anyhow`.
 3. **Mathematical Advantages of Concurrency**: We theoretically understood the power of asynchronous processing based on Amdahl's Law and Little's Law.
 4. **Implementation and Optimization**: We packed practical know-how, from robust error handling to extreme binary optimization.
 
-CLI development in Rust is a wonderful experience where software quality can be guaranteed from the design stage through dialogue with the compiler. Based on the base code we created this time, please develop your own original CLI tool and share it with the world! Happy Rust Coding!
+CLI development in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) is a wonderful experience where software quality can be guaranteed from the design stage through dialogue with the compiler. Based on the base code we created this time, please develop your own original CLI tool and share it with the world! Happy Rust Coding!

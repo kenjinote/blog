@@ -248,7 +248,7 @@ function gl { git log --oneline --graph --decorate --all $args }
 
 ## 5.2. Optimierung der Verzeichnisnavigation (z / zoxide)
 
-In tief verschachtelte Verzeichnisse mit dem Befehl `cd` zu wechseln, ist mühsam. In den letzten Jahren hat sich **`zoxide`** (in Rust geschrieben) zum Standard entwickelt. Es lernt den Navigationsverlauf und die Häufigkeit (Frecency: Frequency + Recency) des Benutzers und ermöglicht den Sprung zum Zielverzeichnis durch Eingabe nur eines Teils des Pfades.
+In tief verschachtelte Verzeichnisse mit dem Befehl `cd` zu wechseln, ist mühsam. In den letzten Jahren hat sich **`zoxide`** (in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) geschrieben) zum Standard entwickelt. Es lernt den Navigationsverlauf und die Häufigkeit (Frecency: Frequency + Recency) des Benutzers und ermöglicht den Sprung zum Zielverzeichnis durch Eingabe nur eines Teils des Pfades.
 
 ```bash
 # Nach der Installation von zoxide, z anstelle von cd verwenden

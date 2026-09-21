@@ -180,7 +180,7 @@ Existen principalmente 3 tipos de notas en Zettelkasten:
 2. **Literature Notes (Notas de literatura)**: Resúmenes con tus propias palabras tras leer artículos o libros.
 3. **Permanent Notes (Notas permanentes)**: Consideraciones completas escritas sobre un tema único. Estas serán directamente la semilla para tus artículos del blog.
 
-Al utilizar la función de retroenlace (backlink) de Obsidian (`[[Nombre de la nota]]`), puedes, por ejemplo, enlazar una nota sobre "La propiedad en Rust" con una sobre "La historia del recolector de basura", y descubrir conexiones inesperadas de ideas.
+Al utilizar la función de retroenlace (backlink) de Obsidian (`[[Nombre de la nota]]`), puedes, por ejemplo, enlazar una nota sobre "La propiedad en [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/)" con una sobre "La historia del recolector de basura", y descubrir conexiones inesperadas de ideas.
 
 ## 5. Búsqueda semántica utilizando una base de datos vectorial (Pinecone) y OpenAI Embeddings
 
@@ -284,7 +284,7 @@ if __name__ == "__main__":
     search_similar_ideas(idx, "Aceleración de la inferencia de aprendizaje automático en el navegador utilizando WebAssembly")
 ```
 
-Con este sistema, frente a la pregunta "Quiero escribir sobre 'WebAssembly', que fue tema de conversación esta semana en Hacker News, pero ¿he escrito notas relacionadas en el pasado?", la IA seleccionará instantáneamente las Permanent Notes pasadas que estén semánticamente relacionadas. Esto hace posible estructurar un artículo profundo aprovechando al máximo tus propios activos de conocimiento pasados.
+Con este sistema, frente a la pregunta "Quiero escribir sobre '[WebAssembly](https://kenji.blog/es/p/webassembly-wasm-current-future/)', que fue tema de conversación esta semana en Hacker News, pero ¿he escrito notas relacionadas en el pasado?", la IA seleccionará instantáneamente las Permanent Notes pasadas que estén semánticamente relacionadas. Esto hace posible estructurar un artículo profundo aprovechando al máximo tus propios activos de conocimiento pasados.
 
 ## 6. Repetición espaciada aprovechando la curva del olvido de Ebbinghaus y Anki
 

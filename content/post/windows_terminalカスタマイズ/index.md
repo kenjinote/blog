@@ -317,7 +317,7 @@ Import-Module -Name Terminal-Icons
 
 Windows上で本物のLinuxカーネルを実行できるWSL2（Windows Subsystem for Linux 2）は、モダンなWeb開発やクラウドネイティブ開発に不可欠です。WSL内のシェル（BashやZsh）のプロンプトをカスタマイズするには、「 **Starship** 」が最適解となります。
 
-StarshipはRust言語で記述された、極めて高速でカスタマイズ性に優れたクロスシェルプロンプトです。設定ファイル（TOML）を一つ書くだけで、Bash、Zsh、Fishなどどのシェルでも全く同じプロンプトを再現できるのが強みです。
+Starshipは[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)言語で記述された、極めて高速でカスタマイズ性に優れたクロスシェルプロンプトです。設定ファイル（TOML）を一つ書くだけで、Bash、Zsh、Fishなどどのシェルでも全く同じプロンプトを再現できるのが強みです。
 
 ## 7.1 Starshipのインストール
 

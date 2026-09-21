@@ -217,7 +217,7 @@ Jika diperlukan skrip shell yang kompleks dalam proyek berskala besar, praktik t
 
 ## 6. Sistem Build Lintas Platform dan Kompiler
 
-Saat berhadapan dengan kode asli (native code, yaitu bahasa yang dikompilasi langsung ke dalam kode mesin) seperti C++ atau Rust, Anda tidak hanya harus mengatasi perbedaan API khusus OS, tetapi juga perbedaan dalam sistem build dan kompiler.
+Saat berhadapan dengan kode asli (native code, yaitu bahasa yang dikompilasi langsung ke dalam kode mesin) seperti C++ atau [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), Anda tidak hanya harus mengatasi perbedaan API khusus OS, tetapi juga perbedaan dalam sistem build dan kompiler.
 
 *   **Kompiler**:
     *   Windows: MSVC (Microsoft Visual C++), MinGW (GCC untuk Windows)

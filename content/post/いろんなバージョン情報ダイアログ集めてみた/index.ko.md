@@ -45,7 +45,7 @@ description: 'Windows 11, IntelliJ IDEA, VS Code, Chrome, Edge, LINE 등 일상�
 이것은 LINE의 Windows 버전입니다.
 ![img_4.png](img_4.webp)
 
-## Paint.NET
+## [Paint](https://kenji.blog/ko/p/browser-rendering-mechanism-dom-paint/).NET
 이것은 이미지 편집 소프트웨어입니다.
 ![img_5.png](img_5.webp)
 

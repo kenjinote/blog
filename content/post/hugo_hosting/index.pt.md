@@ -50,7 +50,7 @@ O GitHub Pages é um serviço que permite publicar arquivos HTML, CSS e JavaScri
 
 ### 2.3 Cloudflare Pages
 O Cloudflare Pages é um serviço de hospedagem de sites estáticos construído na maior rede Anycast do mundo (presente em mais de 275 cidades), orgulhosamente fornecida pela Cloudflare.
-Ele permite ajustes de desempenho esmagadores, como o suporte padrão ao HTTP/3 (QUIC), otimização de imagens e a integração de funções de borda (Cloudflare Workers). Além disso, não há cobrança por largura de banda, o que significa que pode ser operado gratuitamente independentemente de quão repentinamente o tráfego aumentar, sendo esta uma grande vantagem.
+Ele permite ajustes de desempenho esmagadores, como o suporte padrão ao [HTTP/3](https://kenji.blog/pt/p/http3-quic-protocol-tcp-udp/) ([QUIC](https://kenji.blog/pt/p/http3-quic-protocol-tcp-udp/)), otimização de imagens e a integração de funções de borda (Cloudflare Workers). Além disso, não há cobrança por largura de banda, o que significa que pode ser operado gratuitamente independentemente de quão repentinamente o tráfego aumentar, sendo esta uma grande vantagem.
 
 ### 2.4 Netlify
 O Netlify é um pioneiro no modelo Jamstack, fornecendo uma DX tudo-em-um que integra funcionalidades de formulário, autenticação (Identity), funções serverless (sem servidor), entre outras. Porém, caso a largura de banda ultrapasse a cota gratuita (100 GB por mês), são geradas cobranças baseadas no consumo que podem ser altas, de modo que é necessário ter cuidado com o controle de custos em blogs que utilizam muitas imagens e vídeos.
@@ -240,7 +240,7 @@ A implementação no Hugo também é muito simples. Basta adicionar o snippet fo
 {{ end }}
 ```
 
-Adicionando o atributo `defer`, o script é carregado de forma assíncrona sem bloquear a análise (parsing) do HTML e executado após a construção do DOM. Dessa forma, é possível minimizar os impactos na velocidade de renderização inicial (LCP: Largest Contentful Paint e FCP: First Contentful Paint).
+Adicionando o atributo `defer`, o script é carregado de forma assíncrona sem bloquear a análise (parsing) do HTML e executado após a construção do DOM. Dessa forma, é possível minimizar os impactos na velocidade de renderização inicial (LCP: Largest Contentful [Paint](https://kenji.blog/pt/p/browser-rendering-mechanism-dom-paint/) e FCP: First Contentful Paint).
 
 ---
 

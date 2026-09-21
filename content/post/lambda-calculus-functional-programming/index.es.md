@@ -16,7 +16,7 @@ tags:
 
 ## 1. Introducción: La filosofía subyacente de la programación funcional
 
-En el desarrollo de software moderno, la **programación funcional** ([Functional Programming](https://kenji.blog/es/p/oop-vs-fp-vs-dop/)) ya no es un enfoque para unos pocos entusiastas, sino que se ha convertido en un paradigma ampliamente adoptado. Desde tecnologías frontend como React, hasta Rust y Scala, e incluso en lenguajes orientados a objetos como Java y C#, se han incorporado conceptos como el tratamiento de funciones como objetos de primera clase y la eliminación de efectos secundarios.
+En el desarrollo de software moderno, la **programación funcional** ([Functional Programming](https://kenji.blog/es/p/oop-vs-fp-vs-dop/)) ya no es un enfoque para unos pocos entusiastas, sino que se ha convertido en un paradigma ampliamente adoptado. Desde tecnologías frontend como React, hasta [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) y Scala, e incluso en lenguajes orientados a objetos como Java y C#, se han incorporado conceptos como el tratamiento de funciones como objetos de primera clase y la eliminación de efectos secundarios.
 
 Sin embargo, detrás de este paradigma existe una profunda teoría matemática construida en la década de 1930, antes del nacimiento físico de los ordenadores. Se trata del **cálculo lambda** ( $\lambda$-calculus ) propuesto por Alonzo Church.
 
@@ -227,6 +227,6 @@ A través de la mónada IO, tuvo éxito en separar completamente "el cálculo" y
 
 El **cálculo lambda**, que Alonzo Church esbozó solo con lápiz y papel en la década de 1930, de ninguna manera es una teoría obsoleta. Reimaginó "qué es la computación" desde un ángulo diferente al de la máquina de Turing, y se desató en el mundo programable a través de Lisp. Luego, a través de su hermosa conexión con la lógica conocida como el isomorfismo de Curry-Howard, culminó en lenguajes modernos con sistemas de tipos robustos y poderosos como Haskell.
 
-Hoy en día, cuando usamos `map` y `filter` en React, aprovechamos los tipos de datos algebraicos en Rust o escribimos expresiones lambda en Python, todos somos beneficiarios del gran legado intelectual de Church.
+Hoy en día, cuando usamos `map` y `filter` en React, aprovechamos los tipos de datos algebraicos en [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) o escribimos expresiones lambda en Python, todos somos beneficiarios del gran legado intelectual de Church.
 
 La programación funcional no es solo un estilo de codificación, es una **filosofía matemática que se acerca a la esencia misma de la computación**.

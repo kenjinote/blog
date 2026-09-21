@@ -23,7 +23,7 @@ description: 'قمنا بإعداد قائمة بلغات البرمجة الم�
 
 ## Haskell
 
-## Rust
+## [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/)
 
 ## Go
 

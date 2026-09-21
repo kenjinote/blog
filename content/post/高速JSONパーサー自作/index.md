@@ -48,7 +48,7 @@ graph TD
 ```
 
 1. **レキサー（Lexer / Tokenizer）**: 入力された生の文字列（文字の配列）を先頭から読み込み、「意味のある最小単位（トークン）」に分割します。
-2. **パーサー（Parser）**: レキサーから受け取ったトークンの列を読み込み、文法規則に従って木構造（DOMツリー：Document Object Model）を構築します。
+2. **パーサー（Parser）**: レキサーから受け取ったトークンの列を読み込み、文法規則に従って木構造（[DOMツリー](https://kenji.blog/p/browser-rendering-mechanism-dom-paint/)：Document Object Model）を構築します。
 
 今回の実装では、メモリ効率を高めるために、レキサーは文字列のコピーを行わず、元の入力文字列に対するポインタと長さ（`std::string_view`）を保持するように設計します。
 
@@ -437,7 +437,7 @@ T(N) = O(N)
 $$
 
 **空間計算量 (Space Complexity):**
-AST（DOMツリー）を構築するために確保されるメモリは、JSON文字列の要素数に比例します。最悪のケース（例：巨大なネスト配列 `[[[[...]]]]`）を考慮しても、必要なメモリ量は入力サイズ $N$ を超えない定数倍に収まります。
+AST（[DOMツリー](https://kenji.blog/p/browser-rendering-mechanism-dom-paint/)）を構築するために確保されるメモリは、JSON文字列の要素数に比例します。最悪のケース（例：巨大なネスト配列 `[[[[...]]]]`）を考慮しても、必要なメモリ量は入力サイズ $N$ を超えない定数倍に収まります。
 
 $$
 Space(N) \le C \times N \implies O(N)

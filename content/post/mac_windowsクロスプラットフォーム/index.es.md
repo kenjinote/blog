@@ -217,7 +217,7 @@ Para proyectos a gran escala donde se requieren scripts de shell complejos, la m
 
 ## 6. Sistemas de compilación y compiladores multiplataforma
 
-Al trabajar con código nativo (lenguajes que se compilan directamente a código máquina) como C++ o Rust, es necesario superar no solo las APIs específicas del SO, sino también las diferencias en los sistemas de compilación y los compiladores.
+Al trabajar con código nativo (lenguajes que se compilan directamente a código máquina) como C++ o [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/), es necesario superar no solo las APIs específicas del SO, sino también las diferencias en los sistemas de compilación y los compiladores.
 
 *   **Compiladores**:
     *   Windows: MSVC (Microsoft Visual C++), MinGW (GCC para Windows)

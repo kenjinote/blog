@@ -16,7 +16,7 @@ tags:
 
 ## 1. Introduction: The Philosophy Underlying [Functional Programming](https://kenji.blog/en/p/oop-vs-fp-vs-dop/)
 
-In modern software development, **functional programming** is no longer a niche approach for a subset of enthusiasts, but has become a widely adopted paradigm. From frontend technologies like React to Rust and Scala, and even object-oriented languages like Java and C#, concepts such as treating functions as first-class objects and eliminating side effects have been incorporated.
+In modern software development, **functional programming** is no longer a niche approach for a subset of enthusiasts, but has become a widely adopted paradigm. From frontend technologies like React to [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) and Scala, and even object-oriented languages like Java and C#, concepts such as treating functions as first-class objects and eliminating side effects have been incorporated.
 
 However, behind this paradigm lies a profound mathematical theory constructed in the 1930s, before the physical birth of computers. That is the **lambda calculus** ($\lambda$-calculus) proposed by Alonzo Church.
 
@@ -227,6 +227,6 @@ With the IO monad, it succeeded in completely separating "computation" and "exec
 
 The **lambda calculus** drawn solely with paper and pencil in the 1930s by Alonzo Church is by no means an outdated theory. It re-examined "what computation is" from an angle different from the Turing machine, and was unleashed into the programmable world through Lisp. Then, through its beautiful connection with logic via the Curry-Howard Correspondence, it bore fruit as modern languages with robust and powerful type systems like Haskell.
 
-Today, when we use `map` and `filter` in React, leverage algebraic data types in Rust, or write lambda expressions in Python, we are all benefiting from Church's great intellectual legacy.
+Today, when we use `map` and `filter` in React, leverage algebraic data types in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/), or write lambda expressions in Python, we are all benefiting from Church's great intellectual legacy.
 
 Functional programming is not just a coding style, but a **mathematical philosophy that approaches the very essence of computation**.

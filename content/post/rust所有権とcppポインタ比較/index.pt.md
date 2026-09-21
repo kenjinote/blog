@@ -10,9 +10,9 @@ tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: "Uma comparação aprofundada dos ponteiros do C++ e do modelo de propriedade e empréstimo do Rust. Dos ponteiros brutos e ponteiros inteligentes ao borrow checker, explicamos a essência da segurança de memória."
 ---
 
-Na programação de sistemas moderna, conciliar desempenho e segurança de memória é um desafio eterno. O C++ reina como líder absoluto nessa área há muitos anos, mas o Rust vem ameaçando essa posição ultimamente. A principal característica do Rust reside nos conceitos de "Propriedade" (Ownership) e "Empréstimo" (Borrowing), que garantem a segurança da memória em tempo de compilação sem a necessidade de um coletor de lixo ([Garbage Collection](https://kenji.blog/pt/p/memory-management-garbage-collection/)).
+Na programação de sistemas moderna, conciliar desempenho e segurança de memória é um desafio eterno. O C++ reina como líder absoluto nessa área há muitos anos, mas o [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) vem ameaçando essa posição ultimamente. A principal característica do Rust reside nos conceitos de "Propriedade" (Ownership) e "Empréstimo" (Borrowing), que garantem a segurança da memória em tempo de compilação sem a necessidade de um coletor de lixo ([Garbage Collection](https://kenji.blog/pt/p/memory-management-garbage-collection/)).
 
-Neste artigo, vamos comparar detalhadamente os ponteiros do C++ (ponteiros brutos, `std::unique_ptr`, `std::shared_ptr`) e o modelo de propriedade do Rust, e explicaremos minuciosamente, com exemplos de código e diagramas, como o compilador do Rust (borrow checker) previne o Use-After-Free (uso após liberação) e as corridas de dados (Data Race).
+Neste artigo, vamos comparar detalhadamente os ponteiros do C++ (ponteiros brutos, `std::unique_ptr`, `std::shared_ptr`) e o modelo de propriedade do [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/), e explicaremos minuciosamente, com exemplos de código e diagramas, como o compilador do Rust (borrow checker) previne o Use-After-Free (uso após liberação) e as corridas de dados (Data Race).
 
 ## 1. Fundamentos da Gestão de Memória: Stack e Heap
 
@@ -91,13 +91,13 @@ void uniquePtrExample() {
 #### `std::shared_ptr`
 É um ponteiro que permite que vários ponteiros compartilhem o mesmo objeto. Ele usa Contagem de Referência (Reference Counting) e libera a memória no momento em que a contagem chega a 0. Devido à necessidade de operações atômicas de incremento e decremento, ocorre uma leve sobrecarga de desempenho (equivalente ao $O_{sync}$ mencionado anteriormente).
 
-## 3. A Propriedade (Ownership) do Rust: Uma Mudança de Paradigma
+## 3. A Propriedade (Ownership) do [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/): Uma Mudança de Paradigma
 
 O Rust adotou o conceito do `std::unique_ptr` do C++ no núcleo das especificações da linguagem e criou um "modelo de propriedade" ainda mais rigoroso.
 
 ### As 3 Regras da Propriedade
 
-O sistema de propriedade do Rust baseia-se em três regras extremamente simples:
+O sistema de propriedade do [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) baseia-se em três regras extremamente simples:
 
 1. **Cada valor no Rust tem uma variável que é chamada de seu proprietário (owner).**
 2. **Só pode haver um proprietário de cada vez.**
@@ -116,7 +116,7 @@ fn main() {
 }
 ```
 
-Essa funcionalidade de "tornar variáveis inacessíveis em tempo de compilação após o move" é um dos motivos pelos quais o Rust é mais seguro que o `std::unique_ptr` do C++.
+Essa funcionalidade de "tornar variáveis inacessíveis em tempo de compilação após o move" é um dos motivos pelos quais o [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) é mais seguro que o `std::unique_ptr` do C++.
 
 ```mermaid
 sequenceDiagram
@@ -134,13 +134,13 @@ sequenceDiagram
 
 Se a propriedade estiver sempre sendo movida, seria extremamente inconveniente ter que retornar a propriedade a cada vez que passamos um valor para uma função. É aí que entra o "Empréstimo" (Borrowing). Ele equivale aos ponteiros e referências do C++.
 
-Existem dois tipos de empréstimos no Rust:
+Existem dois tipos de empréstimos no [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/):
 - **Referência Imutável (Immutable Reference)**: `&T` (Semelhante ao `const T&` do C++)
 - **Referência Mutável (Mutable Reference)**: `&mut T` (Semelhante ao `T&` do C++)
 
 ### As Regras Implacáveis do [Borrow Checker](https://kenji.blog/pt/p/memory-management-garbage-collection/)
 
-O compilador do Rust possui um "Borrow Checker" integrado que verifica a validade das referências. O borrow checker impõe a seguinte regra rigorosa:
+O compilador do [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) possui um "Borrow Checker" integrado que verifica a validade das referências. O borrow checker impõe a seguinte regra rigorosa:
 
 > Em qualquer escopo, apenas um dos seguintes pode existir:
 > - **Uma referência mutável (`&mut T`)**
@@ -150,7 +150,7 @@ Este é o princípio conhecido como **"Múltiplos Leitores OU Um Único Escritor
 
 $$ (N_r \ge 0 \land N_w = 0) \oplus (N_r = 0 \land N_w = 1) $$
 
-Através dessa regra, **as corridas de dados (Data Race) são completamente eliminadas em tempo de compilação**. Uma corrida de dados ocorre quando: ① dois ou mais ponteiros acessam os mesmos dados simultaneamente, ② pelo menos um deles realiza uma escrita, e ③ não há nenhum mecanismo de sincronização. O Rust previne preventivamente as corridas de dados destruindo a condição ② em tempo de compilação.
+Através dessa regra, **as corridas de dados (Data Race) são completamente eliminadas em tempo de compilação**. Uma corrida de dados ocorre quando: ① dois ou mais ponteiros acessam os mesmos dados simultaneamente, ② pelo menos um deles realiza uma escrita, e ③ não há nenhum mecanismo de sincronização. O [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) previne preventivamente as corridas de dados destruindo a condição ② em tempo de compilação.
 
 ```rust
 // Rust: Erro de compilação devido a violação da regra de empréstimo
@@ -195,7 +195,7 @@ int main() {
 }
 ```
 
-### Defesa em Tempo de Compilação no Rust
+### Defesa em Tempo de Compilação no [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/)
 
 Vamos escrever a exata mesma lógica em Rust.
 
@@ -215,7 +215,7 @@ fn main() {
 }
 ```
 
-Dessa forma, como o Rust proíbe a nível de compilação "modificar um valor (empréstimo mutável) enquanto ele está sendo lido (empréstimo imutável)", bugs fatais como o Use-After-Free e a invalidação de iteradores são garantidamente interceptados durante a compilação.
+Dessa forma, como o [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) proíbe a nível de compilação "modificar um valor (empréstimo mutável) enquanto ele está sendo lido (empréstimo imutável)", bugs fatais como o Use-After-Free e a invalidação de iteradores são garantidamente interceptados durante a compilação.
 
 ```mermaid
 graph LR
@@ -227,9 +227,9 @@ graph LR
     style D stroke:#FF0000,stroke-width:2px
 ```
 
-## 6. Propriedade Compartilhada no Rust: `Rc` e `Arc`
+## 6. Propriedade Compartilhada no [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/): `Rc` e `Arc`
 
-Embora o Rust possua propriedade compartilhada, equivalente ao `std::shared_ptr` do C++, há uma distinção clara de tipos para uso em thread única (single-thread) e em múltiplas threads (multi-thread).
+Embora o [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) possua propriedade compartilhada, equivalente ao `std::shared_ptr` do C++, há uma distinção clara de tipos para uso em thread única (single-thread) e em múltiplas threads (multi-thread).
 
 ### Para Thread Única: `Rc<T>` (Reference Counted)
 `Rc<T>` é um ponteiro inteligente de contagem de referência que não é thread-safe. Como ele incrementa e decrementa a contagem sem usar instruções atômicas, é extremamente rápido dentro de uma única thread. No entanto, tentar enviá-lo para outra thread resultará num erro de compilação (porque não implementa o trait `Send`).
@@ -239,7 +239,7 @@ Para o compartilhamento entre threads, é usado o `Arc<T>`, que realiza incremen
 
 Além disso, no C++, a escrita simultânea de várias threads numa variável compartilhada via `std::shared_ptr` causará uma corrida de dados. Para evitar isso, deve-se usar `std::mutex` corretamente de forma manual.
 
-Por outro lado, no Rust, o **`Arc<T>` por si só não permite que os dados internos sejam modificados**. Quando modificações são necessárias, é preciso combiná-lo com um `Mutex<T>`, que é o mecanismo de exclusão mútua.
+Por outro lado, no [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/), o **`Arc<T>` por si só não permite que os dados internos sejam modificados**. Quando modificações são necessárias, é preciso combiná-lo com um `Mutex<T>`, que é o mecanismo de exclusão mútua.
 
 ```rust
 use std::sync::{Arc, Mutex};
@@ -269,13 +269,13 @@ fn main() {
 }
 ```
 
-O mais notável é que o `Mutex<T>` do Rust não é um mero mecanismo de bloqueio; ele **"envolve os dados que precisam ser protegidos em forma de tipo"**. Graças a isso, é possível evitar completamente, em nível de compilação, o erro de "esquecer de pegar o lock e acessar os dados". O sistema é projetado de forma que direitos de acesso (referência) aos dados internos não possam ser obtidos a menos que o lock (`lock()`) seja adquirido.
+O mais notável é que o `Mutex<T>` do [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) não é um mero mecanismo de bloqueio; ele **"envolve os dados que precisam ser protegidos em forma de tipo"**. Graças a isso, é possível evitar completamente, em nível de compilação, o erro de "esquecer de pegar o lock e acessar os dados". O sistema é projetado de forma que direitos de acesso (referência) aos dados internos não possam ser obtidos a menos que o lock (`lock()`) seja adquirido.
 
 ## Conclusão: "Verificação Prévia" do Compilador ou "Responsabilidade Própria" do Desenvolvedor
 
 Embora os ponteiros do C++ e os ponteiros inteligentes forneçam ao desenvolvedor alto desempenho e controle avançado, o uso correto depende da disciplina do desenvolvedor. A introdução do RAII e do `std::unique_ptr` tornou o C++ drasticamente mais seguro, mas isso não evita completamente que "comportamentos indefinidos", como acesso após a movimentação (move) ou a invalidação de iteradores, ocorram a nível de linguagem.
 
-Por outro lado, o Rust, ao embutir as regras de Propriedade (Ownership) e Empréstimo (Borrowing) no compilador, detecta esses erros **em tempo de compilação** em vez de tempo de execução. A forte garantia de que "se compilar, é seguro na memória" é a principal razão pela qual o Rust vem ganhando cada vez mais suporte na programação de sistemas.
+Por outro lado, o [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/), ao embutir as regras de Propriedade (Ownership) e Empréstimo (Borrowing) no compilador, detecta esses erros **em tempo de compilação** em vez de tempo de execução. A forte garantia de que "se compilar, é seguro na memória" é a principal razão pela qual o Rust vem ganhando cada vez mais suporte na programação de sistemas.
 
 Lutar contra o borrow checker do Rust (Fight the borrow checker) pode ser uma barreira considerável para os iniciantes, mas é simplesmente o compilador que rigorosamente executa os complicados cálculos de "rastreamento da vida útil do ponteiro", algo que os programadores C++ originalmente faziam em suas cabeças.
 

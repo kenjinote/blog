@@ -31,7 +31,7 @@ Atualmente, estão atribuídas como acima. Você também pode alterar a atribui�
 - A sujeira se acumula ao redor do trackball, então é necessário remover a bola e limpá-la regularmente (cerca de uma vez a cada poucos dias).
 - Demora um pouco para se acostumar porque a sensação de operação é diferente de um mouse: move-se o cursor com o dedo indicador ou médio, e opera-se a roda do mouse com o polegar.
 - Embora eu tenha escrito acima que é fácil fazer movimentos finos, ainda é difícil mover o cursor pixel por pixel com um trackball.
-- Não é possível operar a roda de rolagem enquanto pressiona o botão esquerdo (por exemplo, se você quiser aumentar/diminuir o zoom enquanto seleciona uma área no Paint).
+- Não é possível operar a roda de rolagem enquanto pressiona o botão esquerdo (por exemplo, se você quiser aumentar/diminuir o zoom enquanto seleciona uma área no [Paint](https://kenji.blog/pt/p/browser-rendering-mechanism-dom-paint/)).
 
 No geral, embora eu ache que é um trackball caro, ele é bastante fácil de operar em geral e sinto que meu trabalho se tornou mais produtivo.
 Espero que isso seja útil para quem está considerando comprar.

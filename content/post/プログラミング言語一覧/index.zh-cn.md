@@ -24,7 +24,7 @@ description: '整理了从C语言、Python、Java、JavaScript到Rust、Go、OCa
 
 ## Haskell
 
-## Rust
+## [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)
 
 ## Go
 

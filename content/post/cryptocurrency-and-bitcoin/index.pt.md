@@ -39,7 +39,7 @@ O "eCash" idealizado por David Chaum, o "Hashcash" de Adam Back e o "Bit gold" d
 
 Em 2008, ocorreu a crise financeira global desencadeada pelo colapso do Lehman Brothers. Em 31 de outubro do mesmo ano, quando a desconfiança no sistema financeiro existente atingiu o auge, uma pessoa (ou grupo) anônima sob o pseudônimo de "Satoshi Nakamoto" postou um artigo em uma lista de discussão de criptografia.
 
-O título era "Bitcoin: A Peer-to-Peer Electronic Cash System" (Bitcoin: Um Sistema de Dinheiro Eletrônico P2P). Este artigo de 9 páginas mostrou como resolver o problema do gasto duplo que as tentativas anteriores de dinheiro eletrônico enfrentavam, de uma forma completamente descentralizada, usando um mecanismo chamado **Proof of Work (PoW)**.
+O título era "Bitcoin: A Peer-to-Peer Electronic Cash System" (Bitcoin: Um Sistema de Dinheiro Eletrônico [P2P](https://kenji.blog/pt/p/webrtc-realtime-communication-p2p/)). Este artigo de 9 páginas mostrou como resolver o problema do gasto duplo que as tentativas anteriores de dinheiro eletrônico enfrentavam, de uma forma completamente descentralizada, usando um mecanismo chamado **Proof of Work (PoW)**.
 
 ### O Bloco Gênesis (Genesis Block)
 
@@ -256,7 +256,7 @@ As defesas da rede Bitcoin contra isso são as seguintes:
 1. **Proteção de Funções de Hash**: Um endereço Bitcoin não é a própria chave pública, mas o resultado da aplicação das funções de hash SHA-256 e RIPEMD-160 à chave pública. Mesmo com um computador quântico, o cálculo inverso da função de hash (mesmo usando o algoritmo de Grover, a complexidade é $\mathcal{O}(\sqrt{N})$) continua sendo difícil. Portanto, até que uma transação seja feita e a chave pública seja exposta à rede, o conteúdo do endereço é considerado seguro mesmo contra computadores quânticos.
 2. **Transição para Criptografia Pós-Quântica (Post-Quantum Cryptography: PQC)**: Antes que os computadores quânticos sejam colocados em uso prático, o protocolo do Bitcoin seria bifurcado (hard fork) e discutido para mudar para um novo algoritmo de assinatura que seja difícil de ser decifrado por computadores quânticos, como a criptografia baseada em reticulados (Lattice-based cryptography) ou criptografia polinomial multivariável (Multivariate polynomial cryptography) selecionadas pelo NIST (Instituto Nacional de Padrões e Tecnologia dos EUA).
 
-## 9. Topologia de Rede e Detalhes do Protocolo P2P
+## 9. Topologia de Rede e Detalhes do Protocolo [P2P](https://kenji.blog/pt/p/webrtc-realtime-communication-p2p/)
 
 A rede Bitcoin não é um mero conjunto de servidores e clientes, mas é construída como uma rede **Peer-to-Peer (P2P)** completa.
 

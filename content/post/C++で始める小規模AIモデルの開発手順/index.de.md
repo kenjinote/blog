@@ -81,7 +81,7 @@ sequenceDiagram
 
 ### 3.2 Binäre Struktur des GGUF-Formats
 
-Das aus Formaten wie `.safetensors` von Hugging Face konvertierte **GGUF (GPT-Generated Unified Format)** ist das ultimative Format für Inferenzen. Es verfügt über das folgende strikte binäre Layout.
+Das aus Formaten wie `.safetensors` von Hugging Face konvertierte **GGUF (GPT-Generated Unified Format)** ist das ultimative Format für Inferenzen. Es verfügt über das folgende strikte binäre [Layout](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/).
 
 1. **Magic Bytes**: `0x46554747` (GGUF).
 2. **Version**: Die Versionsnummer des Formats.

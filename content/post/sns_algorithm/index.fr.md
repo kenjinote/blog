@@ -46,7 +46,7 @@ $$
 $$
 
 **Impact sur la sélection technologique :**
-Cet algorithme rapproche "l'utilisateur A intéressé par Rust" et "l'utilisateur B intéressé par Rust" dans l'espace latent. Si A "aime" une publication sur un nouveau framework Web, il est très probable que cette publication apparaisse également dans le fil d'actualité de B. Cela provoque un phénomène de mode locale autour d'une technologie spécifique au sein d'un groupe d'ingénieurs préférant une stack technologique particulière.
+Cet algorithme rapproche "l'utilisateur A intéressé par [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/)" et "l'utilisateur B intéressé par Rust" dans l'espace latent. Si A "aime" une publication sur un nouveau framework Web, il est très probable que cette publication apparaisse également dans le fil d'actualité de B. Cela provoque un phénomène de mode locale autour d'une technologie spécifique au sein d'un groupe d'ingénieurs préférant une stack technologique particulière.
 
 ### 2.2 Modèles de recommandation utilisant l'apprentissage profond (DLRM)
 
@@ -142,7 +142,7 @@ Alors, sous l'emprise de ces algorithmes, comment pouvons-nous faire des choix t
 La défense la plus sûre est de déplacer la source de nos informations de l'agrégation des réseaux sociaux vers les **sources primaires (Primary Sources)**.
 
 1. **Lire le code source :** Au lieu de croire une publication sur un réseau social affirmant que "cette bibliothèque est ultra-rapide", ouvrez plutôt GitHub et vérifiez la complexité de calcul de la logique centrale et le mécanisme d'allocation de la mémoire.
-2. **Suivre les RFC (Request for Comments) :** De nombreux projets open-source matures (React, Rust, Python, etc.) adoptent le processus RFC lors de l'introduction de nouvelles fonctionnalités. Dans les RFC, "pourquoi cette fonctionnalité est nécessaire", "quels sont les compromis de conception" et "quelles sont les alternatives" sont consignés de manière logique et dépassionnée, sans se soucier de l'engagement algorithmique. C'est là que réside la véritable valeur technique.
+2. **Suivre les RFC (Request for Comments) :** De nombreux projets open-source matures (React, [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/), Python, etc.) adoptent le processus RFC lors de l'introduction de nouvelles fonctionnalités. Dans les RFC, "pourquoi cette fonctionnalité est nécessaire", "quels sont les compromis de conception" et "quelles sont les alternatives" sont consignés de manière logique et dépassionnée, sans se soucier de l'engagement algorithmique. C'est là que réside la véritable valeur technique.
 
 ### 5.2 Lecture attentive des articles académiques (Academic Papers) et des livres blancs
 

@@ -147,7 +147,7 @@ $$ T_{backup} = \frac{S_{total}}{B \times (1 - \alpha)} + C \times L $$
 Di sini, setiap variabel adalah sebagai berikut:
 - $S_{total}$ : Jumlah total data yang akan dicadangkan (Bit)
 - $B$ : Bandwidth jaringan (bps, misal: 1Gbps = $10^9$ bps)
-- $\alpha$ : Overhead jaringan atau protokol (biasanya 0.1 hingga 0.2 untuk TCP/IP atau protokol SMB)
+- $\alpha$ : Overhead jaringan atau protokol (biasanya 0.1 hingga 0.2 untuk [TCP](https://kenji.blog/id/p/http3-quic-protocol-tcp-udp/)/IP atau protokol SMB)
 - $C$ : Jumlah total file
 - $L$ : Latensi pemrosesan per file (detik)
 

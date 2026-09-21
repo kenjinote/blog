@@ -138,7 +138,7 @@ In a world where ECDSA decryption by quantum computers is possible, what specifi
 
 ### 3.1. Address Generation and the "Privacy" of Public Keys
 
-[Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) addresses (P2PKH: Pay-to-Public-Key-Hash or P2WPKH: Pay-to-Witness-Public-Key-Hash) use a public key hashed multiple times rather than the public key itself.
+[Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) addresses ([P2P](https://kenji.blog/en/p/webrtc-realtime-communication-p2p/)KH: Pay-to-Public-Key-Hash or P2WPKH: Pay-to-Witness-Public-Key-Hash) use a public key hashed multiple times rather than the public key itself.
 
 $$
 \text{[Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Public Key})))
@@ -178,7 +178,7 @@ Once the public key is sent to the Mempool (the waiting area for unconfirmed tra
 Miners prioritize transactions with higher fees into blocks according to economic incentives. As a result, the attacker's fraudulent transfer is confirmed first, and Alice's legitimate transfer is discarded as a "Double Spend" due to insufficient balance.
 This series of events is called a **Front-running Attack**, and in a world where quantum computers are commercialized, it will cause a terrifying situation where funds are stolen by hackers the moment someone presses the send button.
 
-### 3.3. The Crisis of Reused Addresses and Old Addresses (P2PK)
+### 3.3. The Crisis of Reused Addresses and Old Addresses ([P2P](https://kenji.blog/en/p/webrtc-realtime-communication-p2p/)K)
 
 An even more serious problem is that addresses that have sent funds at least once in the past (such as when reused as change addresses) already have their public keys permanently recorded on the blockchain. These are in danger of having their private keys calculated and balances stolen at any time, without even waiting to send a transaction.
 
@@ -289,7 +289,7 @@ In the current EVM, a precompiled contract `ecrecover` (address: `0x01`) is prov
 
 However, the verification process of new lattice-based cryptographic algorithms like Dilithium and Falcon involves complex polynomial and matrix operations. Implementing this using only existing EVM Opcodes could consume millions to tens of millions of gas for just one signature verification. This is a level that would deplete the current block gas limit (about 30 million Gas) with a single transaction.
 
-To avoid this, it is necessary to incorporate a new Precompiled Contract for PQC verification (e.g., assigning DilithiumVerify to `0x10`) into the EVM itself through a network hard fork. This requires a long-term process where core developers of each Ethereum client (Geth, Nethermind, Erigon, etc.) collaborate to optimally implement lattice cryptography verification logic at the language level (C++, Go, Rust, etc.) and conduct security audits.
+To avoid this, it is necessary to incorporate a new Precompiled Contract for PQC verification (e.g., assigning DilithiumVerify to `0x10`) into the EVM itself through a network hard fork. This requires a long-term process where core developers of each Ethereum client (Geth, Nethermind, Erigon, etc.) collaborate to optimally implement lattice cryptography verification logic at the language level (C++, Go, [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/), etc.) and conduct security audits.
 
 ### 5.3. Difficulties in Consensus Building Through Hard Forks
 

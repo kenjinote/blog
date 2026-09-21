@@ -32,7 +32,7 @@ description: 'Hemos recopilado una lista de varios lenguajes de programación, d
 
 ## Haskell
 
-## Rust
+## [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/)
 
 ## Go
 

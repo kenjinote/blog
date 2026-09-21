@@ -255,7 +255,7 @@ The Bitcoin network's defense measures against this are as follows:
 1. **Protection of Hash Functions**: A Bitcoin address is not the public key itself, but the result of applying the SHA-256 and RIPEMD-160 hash functions to the public key. Even using a quantum computer, reversing a hash function (even using Grover's algorithm, the computational complexity is $\mathcal{O}(\sqrt{N})$) remains difficult. Therefore, until a transaction is made and the public key is exposed to the network, the contents of the address can be considered safe even from quantum computers.
 2. **Transition to Post-Quantum Cryptography (PQC)**: There is discussion about hard forking the Bitcoin protocol before quantum computers become practical to transition to new signature algorithms that are difficult even for quantum computers to crack, such as lattice-based cryptography or multivariate polynomial cryptography, which are being selected by NIST (National Institute of Standards and Technology).
 
-## 9. Network Topology and P2P Protocol Details
+## 9. Network Topology and [P2P](https://kenji.blog/en/p/webrtc-realtime-communication-p2p/) Protocol Details
 
 The Bitcoin network is not just a collection of servers and clients, but is constructed as a complete **Peer-to-Peer (P2P)** network.
 

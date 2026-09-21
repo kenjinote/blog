@@ -138,7 +138,7 @@ SHA-256の場合、$N = 2^{256}$ であるため、古典的な総当たり探�
 
 ### 3.1. アドレスの生成と公開鍵の「非公開性」
 
-[ビットコイン](https://kenji.blog/p/cryptocurrency-and-bitcoin/)のアドレス（P2PKH: Pay-to-Public-Key-Hash や P2WPKH: Pay-to-Witness-Public-Key-Hash）は、公開鍵そのものではなく、公開鍵を複数回ハッシュ化したものを使用しています。
+[ビットコイン](https://kenji.blog/p/cryptocurrency-and-bitcoin/)のアドレス（[P2P](https://kenji.blog/p/webrtc-realtime-communication-p2p/)KH: Pay-to-Public-Key-Hash や P2WPKH: Pay-to-Witness-Public-Key-Hash）は、公開鍵そのものではなく、公開鍵を複数回ハッシュ化したものを使用しています。
 
 $$
 \text{[Bitcoin](https://kenji.blog/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Public Key})))
@@ -178,7 +178,7 @@ sequenceDiagram
 マイナーは経済的インセンティブに従い、手数料の高いトランザクションを優先的にブロックに組み込みます。結果として、攻撃者の不正な送金が先に承認（Confirm）され、アリスの正当な送金は「残高不足（Double Spend）」として破棄されます。
 この一連の流れは **フロントランニング攻撃（Front-running Attack）** と呼ばれ、量子コンピュータが実用化された世界では、誰かが送金ボタンを押した瞬間に資金がハッカーに奪われるという恐ろしい事態を引き起こします。
 
-### 3.3. 再利用アドレスと古いアドレス（P2PK）の危機
+### 3.3. 再利用アドレスと古いアドレス（[P2P](https://kenji.blog/p/webrtc-realtime-communication-p2p/)K）の危機
 
 さらに深刻な問題として、過去に一度でも送金を行ったことのあるアドレス（お釣りアドレスなどとして再利用している場合）は、すでにブロックチェーン上に公開鍵が永続的に記録されています。これらはトランザクションの送信を待つまでもなく、いつでも秘密鍵を計算されて残高を奪われる危険に晒されています。
 
@@ -289,7 +289,7 @@ Ethereumのような[チューリング](https://kenji.blog/p/turing/)完全な�
 
 しかし、DilithiumやFalconといった新しい格子暗号アルゴリズムの検証処理は、複雑な多項式演算や行列演算を伴うため、既存のEVMオペコード（Opcode）だけで実装すると、1回の署名検証だけで数百万から数千万ガスを消費する可能性があります。これは、現在のブロックガスリミット（約3000万Gas）を1トランザクションで枯渇させるレベルです。
 
-これを回避するためには、ネットワークのハードフォークを通じて、新たにPQC検証用のPrecompiled Contract（例：`0x10` に DilithiumVerify を割り当てるなど）をEVM自体に組み込む必要があります。これには、各イーサリアムクライアント（Geth, Nethermind, Erigonなど）のコア開発者が協調してC++、Go、Rustなどの言語レベルで格子暗号検証ロジックを最適化実装し、セキュリティ監査を実施するという長期間にわたるプロセスが必要です。
+これを回避するためには、ネットワークのハードフォークを通じて、新たにPQC検証用のPrecompiled Contract（例：`0x10` に DilithiumVerify を割り当てるなど）をEVM自体に組み込む必要があります。これには、各イーサリアムクライアント（Geth, Nethermind, Erigonなど）のコア開発者が協調してC++、Go、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)などの言語レベルで格子暗号検証ロジックを最適化実装し、セキュリティ監査を実施するという長期間にわたるプロセスが必要です。
 
 ### 5.3. ハードフォークによる合意形成の難しさ
 

@@ -20,7 +20,7 @@ Google Colaboratory（コラボラトリー）とは、オンライン上で実�
 
 Jupyter Notebookをベースにしている。
 
-## Rust
+## [Rust](https://kenji.blog/p/webassembly-wasm-current-future/)
 
 - [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021)
 

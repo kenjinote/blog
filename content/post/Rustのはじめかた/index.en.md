@@ -9,8 +9,8 @@ categories: ["programming"]
 description: 'Explains how to get started with Rust, a fast and memory-safe programming language, for beginners. Comprehensively introduces everything from the language''s features and installation methods to the execution steps of the first program, Hello World, and recommended Japanese documentation.'
 ---
 # Introduction
-Rust is a relatively new programming language that allows you to write fast and memory-efficient modules using modern syntax.
-It supports multi-platform and is also used in the world of WebAssembly and embedded systems.
+[Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) is a relatively new programming language that allows you to write fast and memory-efficient modules using modern syntax.
+It supports multi-platform and is also used in the world of [WebAssembly](https://kenji.blog/en/p/webassembly-wasm-current-future/) and embedded systems.
 Notably, it has been adopted by Firefox, Dropbox, and Cloudflare.
 
 It is also gaining attention as an alternative to C++.
@@ -37,7 +37,7 @@ When you run `rustc main.rs` from the command prompt or terminal, it will be com
 
 [The Rust Programming Language Japanese Version](https://doc.rust-jp.rs/book-ja/)
 
-The explanations necessary for learning Rust are gathered in the link above (Japanese translation version).
+The explanations necessary for learning [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) are gathered in the link above (Japanese translation version).
 It is so comprehensive that there is no need to purchase a Rust textbook.
 
 # If you want to try it on the Web

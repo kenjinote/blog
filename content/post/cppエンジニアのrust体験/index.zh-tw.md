@@ -11,9 +11,9 @@ tags: ["C++", "Rust", "Programming", "Career"]
 
 # 前言：系統程式設計的新黎明
 
-在現代軟體工程中，C++與Rust是站在系統程式設計最前線的兩大巨頭。長年以來，C++在作業系統、嵌入式裝置、遊戲引擎、高頻交易（HFT）系統等需要發揮硬體極限效能的領域中，一直以絕對王者的姿態君臨天下。我本身也是一位資深C++工程師，從C++98時代的原始指標叢林開始，一路伴隨著C++11現代化浪潮（引進智慧指標、Lambda表達式、`auto`），以及C++14/17/20不斷龐大化的規範編寫著程式碼。
+在現代軟體工程中，C++與[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)是站在系統程式設計最前線的兩大巨頭。長年以來，C++在作業系統、嵌入式裝置、遊戲引擎、高頻交易（HFT）系統等需要發揮硬體極限效能的領域中，一直以絕對王者的姿態君臨天下。我本身也是一位資深C++工程師，從C++98時代的原始指標叢林開始，一路伴隨著C++11現代化浪潮（引進智慧指標、Lambda表達式、`auto`），以及C++14/17/20不斷龐大化的規範編寫著程式碼。
 
-然而近年來，為了解決C++所面臨的結構性問題——特別是因「缺乏記憶體安全性」造成的安全漏洞（據說約7成的CVE起因於記憶體問題）以及「無止盡複雜化的規範與未定義行為（UB）」——Rust的強勢崛起提供了解決方案。Linux核心正式採用Rust，以及Microsoft、Google、AWS等科技巨頭進行的大規模Rust轉移專案，這不僅僅是一時的流行，更意味著系統程式設計正經歷典範轉移。
+然而近年來，為了解決C++所面臨的結構性問題——特別是因「缺乏記憶體安全性」造成的安全漏洞（據說約7成的CVE起因於記憶體問題）以及「無止盡複雜化的規範與未定義行為（UB）」——[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)的強勢崛起提供了解決方案。Linux核心正式採用Rust，以及Microsoft、Google、AWS等科技巨頭進行的大規模Rust轉移專案，這不僅僅是一時的流行，更意味著系統程式設計正經歷典範轉移。
 
 本篇文章將由一位道地的C++工程師，從語言規範核心的技術觀點出發，深入比較並解說實際深入學習Rust、並在實戰中使用後所感受到的「優點」與「缺點」。
 
@@ -57,7 +57,7 @@ int main() {
 
 在C++中，總是存在著錯誤存取因`std::move`而被掏空（有效但處於未指定狀態）的物件的風險。這會直接導致執行時的崩潰，或在最糟的情況下產生安全漏洞。
 
-## Rust的所有權（Ownership）與借用檢查器的絕對防禦
+## [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)的所有權（Ownership）與借用檢查器的絕對防禦
 
 Rust將這個「所有權」的概念融入語言的核心設計中，並透過稱為 **借用檢查器（[Borrow Checker](https://kenji.blog/zh-tw/p/memory-management-garbage-collection/)）** 的編譯器功能進行嚴格的靜態分析。
 
@@ -77,7 +77,7 @@ fn main() {
 }
 ```
 
-在Rust中，當變數的所有權移動的那一刻，原來的變數在編譯器眼中就被視為等同「未初始化」狀態，並完全阻斷後續的存取。因此，「Use-After-Free（釋放後使用）」或「Dangling Pointer（迷途指標）」等Bug，在理論上根本無法通過編譯。
+在[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)中，當變數的所有權移動的那一刻，原來的變數在編譯器眼中就被視為等同「未初始化」狀態，並完全阻斷後續的存取。因此，「Use-After-Free（釋放後使用）」或「Dangling Pointer（迷途指標）」等Bug，在理論上根本無法通過編譯。
 
 ```mermaid
 graph TD
@@ -94,17 +94,17 @@ graph TD
 
 ## 借用（Borrowing）與可變性的控制
 
-更強大的是參考資源的「借用（Borrowing）」規則。Rust強制實施以下規則：
+更強大的是參考資源的「借用（Borrowing）」規則。[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)強制實施以下規則：
 1. 在任何時間點，「多個不可變參考（`&T`）」或「單一可變參考（`&mut T`）」 **只能有其中一種** 存在。
 2. 參考的生命週期絕對不能比原來的資料更長（生命週期限制）。
 
-在C++中，可以輕易地為同一個物件建立多個可變參考或指標，這會引起非預期的狀態破壞（如迭代器失效等）。Rust在語言層級禁止了這種「別名（Aliasing）＋可變性（Mutability）」的組合，從而防患未然。
+在C++中，可以輕易地為同一個物件建立多個可變參考或指標，這會引起非預期的狀態破壞（如迭代器失效等）。[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)在語言層級禁止了這種「別名（Aliasing）＋可變性（Mutability）」的組合，從而防患未然。
 
 ---
 
 # 2. 記憶體佈局與智慧指標的數學運算開銷
 
-在系統程式設計中，正確理解記憶體佈局是不可或缺的。讓我們來比較C++的`std::shared_ptr`與Rust的`std::rc::Rc` / `std::sync::Arc`。
+在系統程式設計中，正確理解記憶體佈局是不可或缺的。讓我們來比較C++的`std::shared_ptr`與[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)的`std::rc::Rc` / `std::sync::Arc`。
 
 C++的`std::shared_ptr`透過參考計數來管理資源，但預設使用執行緒安全的原子操作（`std::atomic`）來增減參考計數。其在記憶體上的開銷可以公式化如下：
 
@@ -112,7 +112,7 @@ $$ Overhead_{C++} = sizeof(T) + sizeof(ControlBlock) $$
 
 在這裡，$ControlBlock$ 包含了「強參考計數（Strong Ref Count）」、「弱參考計數（Weak Ref Count）」以及「自訂刪除器（Custom Deleter）」。問題在於，即使在只使用單執行緒的情況下，原子指令的開銷（如快取行鎖定等）也會無條件地發生。
 
-相對地，Rust會根據用途嚴格區分智慧指標：
+相對地，[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)會根據用途嚴格區分智慧指標：
 
 - **單執行緒用**: `Rc<T>` (Reference Counted)
 - **多執行緒用**: `Arc<T>` (Atomic Reference Counted)
@@ -120,7 +120,7 @@ $$ Overhead_{C++} = sizeof(T) + sizeof(ControlBlock) $$
 $$ Overhead_{Rc} = sizeof(T) + 2 \times sizeof(usize) $$
 $$ Overhead_{Arc} = sizeof(T) + 2 \times sizeof(AtomicUsize) $$
 
-在Rust中，只要使用單執行緒專用的`Rc<T>`，就能完全避免原子操作的效能懲罰（零成本抽象化）。而且，透過後述的執行緒安全機制，型別系統會完全防止你將`Rc<T>`錯誤地傳遞到另一個執行緒。
+在[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)中，只要使用單執行緒專用的`Rc<T>`，就能完全避免原子操作的效能懲罰（零成本抽象化）。而且，透過後述的執行緒安全機制，型別系統會完全防止你將`Rc<T>`錯誤地傳遞到另一個執行緒。
 
 ---
 
@@ -156,7 +156,7 @@ int main() {
 }
 ```
 
-## Rust的Mutex「擁有」資料
+## [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)的Mutex「擁有」資料
 
 在Rust中，`Mutex<T>`使用泛型將受保護的資料型別 `T` **內含（擁有）** 在其中。為了存取資料，必須呼叫`lock()`來取得守衛物件（Guard Object）。如果不取得鎖就想觸碰資料，在語法上是不可能的。
 
@@ -186,7 +186,7 @@ fn main() {
 }
 ```
 
-此外，Rust存在兩個確保並行處理安全性的核心特徵（Trait）：
+此外，[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)存在兩個確保並行處理安全性的核心特徵（Trait）：
 - `Send`: 可以在執行緒間安全轉移所有權的型別
 - `Sync`: 從多個執行緒同時參考也安全的型別
 
@@ -196,7 +196,7 @@ fn main() {
 
 $$ S(N) = \frac{1}{(1 - P) + \frac{P}{N}} $$
 
-Rust讓你可以依賴型別系統，極度安全地進行重構，以最大化這個 $P$ 值。
+[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)讓你可以依賴型別系統，極度安全地進行重構，以最大化這個 $P$ 值。
 
 ```mermaid
 graph TD
@@ -215,7 +215,7 @@ graph TD
 
 C++錯誤處理的標準是「例外（Exceptions）」。然而，例外會讓控制流程變得不透明，並引起效能上的開銷（堆疊展開與RTTI膨脹）。在嵌入式系統或遊戲引擎中，經常會採用完全停用例外（`-fno-exceptions`）並回傳傳統錯誤碼的設計。雖然C++23導入了`std::expected`，但要普及到整個生態圈還需要一段時間。
 
-Rust不存在例外的概念。錯誤純粹作為「值」被回傳，並透過 `Result<T, E>` 這個列舉型別（代數資料型別）來表現。
+[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)不存在例外的概念。錯誤純粹作為「值」被回傳，並透過 `Result<T, E>` 這個列舉型別（代數資料型別）來表現。
 
 ```rust
 use std::fs::File;
@@ -243,7 +243,7 @@ C++的多型主要是透過類別繼承與虛擬函式（`virtual`）的動態�
 
 $$ T_{dispatch} = T_{lookup\_in\_vtable} + T_{dereference} $$
 
-Rust捨棄了傳統物件導向的「類別繼承」，轉而採用「 **特徵（Traits）** 」這個概念（類似於C++20的Concept，但功能更豐富）。
+[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)捨棄了傳統物件導向的「類別繼承」，轉而採用「 **特徵（Traits）** 」這個概念（類似於C++20的Concept，但功能更豐富）。
 
 ```rust
 trait Drawable {
@@ -266,7 +266,7 @@ fn draw_dynamic(item: &dyn Drawable) {
 }
 ```
 
-Rust的動態分派（`dyn Trait`）最大的特點是，資料結構內部不包含vptr，而是使用 **胖指標（Fat Pointer）** 。胖指標將「指向資料的指標」與「指向vtable的指標」作為一對保存。這使得為外部函式庫定義的型別事後實作（擴充）特徵並進行動態分派變得非常容易。
+[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)的動態分派（`dyn Trait`）最大的特點是，資料結構內部不包含vptr，而是使用 **胖指標（Fat Pointer）** 。胖指標將「指向資料的指標」與「指向vtable的指標」作為一對保存。這使得為外部函式庫定義的型別事後實作（擴充）特徵並進行動態分派變得非常容易。
 
 ---
 
@@ -274,7 +274,7 @@ Rust的動態分派（`dyn Trait`）最大的特點是，資料結構內部不�
 
 C++最大的弱點之一就是缺乏標準的套件管理工具。`CMakeLists.txt`難解的語法、`find_package`解決相依性問題的複雜度，以及各個OS之間函式庫路徑的差異，持續奪走C++工程師大量的時間。
 
-Rust標準內建了 **Cargo** 這個世界頂尖的套件管理器兼建置系統。
+[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)標準內建了 **Cargo** 這個世界頂尖的套件管理器兼建置系統。
 
 ```mermaid
 graph TD
@@ -293,7 +293,7 @@ graph TD
 
 ---
 
-# 7. 學習Rust的缺點與學習曲線
+# 7. 學習[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)的缺點與學習曲線
 
 到目前為止談了許多Rust的優點，但C++工程師要將Rust投入實戰時，也確實會面臨一些「高牆」與缺點。
 
@@ -301,14 +301,14 @@ graph TD
 如果在Rust中試圖直接實作C++裡「隨便用原始指標串接」的資料結構（例如雙向鏈結串列、圖結構、自我參考結構等），會因為所有權與生命週期的限制而無法通過編譯。為了解決借用檢查器的問題，必須進行像 `Rc<RefCell<T>>` 這樣複雜的包裝，或者從根本上重新設計，改用區域分配器（Arena Allocator）或基於索引的管理方式。
 
 ## 2. 漫長的編譯時間
-雖然C++也會因為樣板巢狀而導致編譯緩慢，但Rust的編譯時間（特別是從零開始的乾淨建置）也絕不算短。由於LLVM強大的最佳化流程、巨集展開、泛型的單態化（Monomorphization）等因素疊加，在大型專案中建置時間將成為瓶頸。在開發過程中，必須經常運用 `cargo check` 等技巧。
+雖然C++也會因為樣板巢狀而導致編譯緩慢，但[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)的編譯時間（特別是從零開始的乾淨建置）也絕不算短。由於LLVM強大的最佳化流程、巨集展開、泛型的單態化（Monomorphization）等因素疊加，在大型專案中建置時間將成為瓶頸。在開發過程中，必須經常運用 `cargo check` 等技巧。
 
 ## 3. 與C++程式碼庫的互通性
-雖然與C語言（FFI）的整合非常順暢，但要將既存的龐大C++程式碼庫（大量使用類別、樣板、虛擬函式）直接與Rust整合卻非常困難。近年來雖然有 `cxx` 或 `autocxx` 等橋接工具不斷進化，但要達到完全無縫的轉移仍然有很高的門檻。
+雖然與C語言（FFI）的整合非常順暢，但要將既存的龐大C++程式碼庫（大量使用類別、樣板、虛擬函式）直接與[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)整合卻非常困難。近年來雖然有 `cxx` 或 `autocxx` 等橋接工具不斷進化，但要達到完全無縫的轉移仍然有很高的門檻。
 
 ---
 
-# 總結：我們應該轉移到Rust嗎？
+# 總結：我們應該轉移到[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)嗎？
 
 C++未來在遊戲引擎開發以及既存的龐大基礎設施中，仍將繼續扮演重要的角色。C++20/23帶來的現代化也非常顯著，使得撰寫程式碼變得更安全。
 

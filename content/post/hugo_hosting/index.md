@@ -50,7 +50,7 @@ GitHub Pagesは、GitHubリポジトリから直接HTML、CSS、JavaScriptファ
 
 ### 2.3 Cloudflare Pages
 Cloudflare Pagesは、Cloudflareが誇る世界最大規模のAnycastネットワーク（275以上の都市に展開）の上に構築された静的サイトホスティングサービスです。
-HTTP/3（QUIC）の標準サポート、画像最適化、エッジ関数（Cloudflare Workers）の統合など、圧倒的なパフォーマンスチューニングが可能です。また、帯域幅に対する課金がなく、どれだけトラフィックが急増しても無料で運用できる点が大きなメリットです。
+[HTTP/3](https://kenji.blog/p/http3-quic-protocol-tcp-udp/)（[QUIC](https://kenji.blog/p/http3-quic-protocol-tcp-udp/)）の標準サポート、画像最適化、エッジ関数（Cloudflare Workers）の統合など、圧倒的なパフォーマンスチューニングが可能です。また、帯域幅に対する課金がなく、どれだけトラフィックが急増しても無料で運用できる点が大きなメリットです。
 
 ### 2.4 Netlify
 NetlifyはJamstackのパイオニア的存在であり、フォーム機能、認証（Identity）、サーバーレス関数などを統合したオールインワンのDXを提供します。しかし、無料枠の帯域幅（月間100GB）を超えると高額な従量課金が発生するため、画像や動画を多用するブログではコスト管理に注意が必要です。
@@ -240,7 +240,7 @@ Hugoでの実装も非常に簡単です。`layouts/partials/head.html` や `lay
 {{ end }}
 ```
 
-`defer` 属性を付与することで、HTMLのパースをブロックせずにスクリプトを非同期に読み込み、DOM構築後に実行させることができます。これにより、初期表示速度（LCP: Largest Contentful Paint や FCP: First Contentful Paint）への影響を最小限に抑えられます。
+`defer` 属性を付与することで、HTMLのパースをブロックせずにスクリプトを非同期に読み込み、DOM構築後に実行させることができます。これにより、初期表示速度（LCP: Largest Contentful [Paint](https://kenji.blog/p/browser-rendering-mechanism-dom-paint/) や FCP: First Contentful Paint）への影響を最小限に抑えられます。
 
 ---
 

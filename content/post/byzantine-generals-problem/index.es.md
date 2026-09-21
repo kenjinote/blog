@@ -120,7 +120,7 @@ En este modelo, es imposible alterar las órdenes emitidas por el comandante dur
 
 La resistencia al problema de los generales bizantinos se llama **Tolerancia a Fallas Bizantinas** (Byzantine Fault Tolerance, BFT). Es un indicador crucial para que un sistema distribuido pueda soportar fallas y ataques maliciosos y seguir operando con normalidad.
 
-Recientemente, este problema ha vuelto a acaparar gran atención debido a la aparición de la **tecnología Blockchain**. Dado que Blockchain es una red P2P sin administrador central, los participantes malintencionados (nodos) podrían difundir historiales de transacciones falsos. Es exactamente el problema de los generales bizantinos.
+Recientemente, este problema ha vuelto a acaparar gran atención debido a la aparición de la **tecnología Blockchain**. Dado que Blockchain es una red [P2P](https://kenji.blog/es/p/webrtc-realtime-communication-p2p/) sin administrador central, los participantes malintencionados (nodos) podrían difundir historiales de transacciones falsos. Es exactamente el problema de los generales bizantinos.
 
 ### El mecanismo de PBFT (Practical Byzantine Fault Tolerance)
 

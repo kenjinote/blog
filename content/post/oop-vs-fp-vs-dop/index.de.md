@@ -10,7 +10,7 @@ tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]
 
 Die Geschichte der Entwicklung von Programmiersprachen ist auch eine Geschichte des Kampfes gegen die Komplexität. Mit dem zunehmenden Maßstab von Software stieß man auf Barrieren bei der Zustandsverwaltung, Leistung und Wartbarkeit, und um diese zu überwinden, wurden verschiedene **Programmierparadigmen** vorgeschlagen.
 
-In diesem Artikel werden wir die in der modernen Softwareentwicklung vorherrschende **objektorientierte Programmierung** (OOP), die **funktionale Programmierung** (FP) mit ihrer mathematischen Robustheit und die **datenorientierte Programmierung** (DOP / DOD), die sich auf Leistung und die Trennung von Daten konzentriert, hinsichtlich ihrer jeweiligen Philosophien, Stärken und **Grenzen** genauer untersuchen. Darüber hinaus werden wir erklären, wie moderne leistungsstarke Sprachen (wie Rust und TypeScript) diese **verschmelzen**.
+In diesem Artikel werden wir die in der modernen Softwareentwicklung vorherrschende **objektorientierte Programmierung** (OOP), die **funktionale Programmierung** (FP) mit ihrer mathematischen Robustheit und die **datenorientierte Programmierung** (DOP / DOD), die sich auf Leistung und die Trennung von Daten konzentriert, hinsichtlich ihrer jeweiligen Philosophien, Stärken und **Grenzen** genauer untersuchen. Darüber hinaus werden wir erklären, wie moderne leistungsstarke Sprachen (wie [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) und TypeScript) diese **verschmelzen**.
 
 ---
 
@@ -136,7 +136,7 @@ Die Speicherzuweisung (Belastung der [Garbage Collection](https://kenji.blog/de/
 
 ## 3. Rückkehr zur datenorientierten Programmierung (DOP/DOD)
 
-**Datenorientiertes Design** (Data-Oriented Design) oder **datenorientierte Programmierung** ist ein Paradigma, das aus der Spieleentwicklung (insbesondere C++ und Rust) stammt und sich später auch auf Unternehmensbereiche (z. B. Clojures Philosophie) ausgebreitet hat.
+**Datenorientiertes Design** (Data-Oriented Design) oder **datenorientierte Programmierung** ist ein Paradigma, das aus der Spieleentwicklung (insbesondere C++ und [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)) stammt und sich später auch auf Unternehmensbereiche (z. B. Clojures Philosophie) ausgebreitet hat.
 
 ### 3.1 Kernkonzepte der DOP
 
@@ -200,7 +200,7 @@ Jedes Paradigma hat seine klaren Stärken und Schwächen.
 
 ## 5. Die optimale Lösung in der heutigen Zeit: "Verschmelzung" der Paradigmen
 
-Heute gilt es als Unsinn, die "einzige richtige Antwort" unter diesen zu wählen. Moderne Programmiersprachen (Rust, TypeScript, Scala, Go usw.) nehmen sich das **Beste** aus diesen Paradigmen.
+Heute gilt es als Unsinn, die "einzige richtige Antwort" unter diesen zu wählen. Moderne Programmiersprachen ([Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/), TypeScript, Scala, Go usw.) nehmen sich das **Beste** aus diesen Paradigmen.
 
 ### 5.1 Die ultimative Verschmelzung, die Rust zeigt
 

@@ -8,7 +8,7 @@ image: "img.webp"
 categories: ["programming"]
 description: 'Explique clairement les principales caractéristiques du langage de programmation ''Rust'' développé par Mozilla. Présente les raisons de son choix, telles que la vitesse de fonctionnement rapide, l''absence de ramasse-miettes, la sécurité de la mémoire grâce à la propriété et à l''emprunt, et la compatibilité multiplateforme.'
 ---
-# Caractéristiques de Rust
+# Caractéristiques de [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/)
 
 - Un langage de programmation open source relativement récent développé par Mozilla
 - Un langage rapide sans ramasse-miettes (garbage collection), spécialisé dans la programmation système

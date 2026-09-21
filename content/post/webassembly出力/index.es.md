@@ -11,13 +11,13 @@ tags: ["C++", "Rust", "Wasm", "JavaScript"]
 
 ## 1. Introducción
 
-En el desarrollo web moderno, JavaScript (y TypeScript) ha consolidado su posición como el único lenguaje de programación que se ejecuta en el navegador durante mucho tiempo. Sin embargo, en los últimos años, ha aumentado la demanda de realizar cálculos más avanzados en el propio navegador, como el procesamiento de imágenes, la codificación de video, los juegos en 3D y la simulación física. Es aquí donde entra **WebAssembly (conocido como Wasm)**.
+En el desarrollo web moderno, JavaScript (y TypeScript) ha consolidado su posición como el único lenguaje de programación que se ejecuta en el navegador durante mucho tiempo. Sin embargo, en los últimos años, ha aumentado la demanda de realizar cálculos más avanzados en el propio navegador, como el procesamiento de imágenes, la codificación de video, los juegos en 3D y la simulación física. Es aquí donde entra **[WebAssembly](https://kenji.blog/es/p/webassembly-wasm-current-future/) (conocido como [Wasm](https://kenji.blog/es/p/webassembly-wasm-current-future/))**.
 
-En este artículo, comenzaremos desde los fundamentos de WebAssembly, y explicaremos detalladamente los procedimientos y la estructura interna para generar Wasm a partir de dos potentes lenguajes de programación de sistemas: C++ (usando Emscripten) y Rust (usando `wasm-pack`), y cómo integrarlos con el entorno de JavaScript. Además, profundizaremos en la gestión de los límites de memoria, cómo pasar datos complejos como cadenas y matrices, la sobrecarga de rendimiento y el formato binario de Wasm (`.wasm`).
+En este artículo, comenzaremos desde los fundamentos de WebAssembly, y explicaremos detalladamente los procedimientos y la estructura interna para generar Wasm a partir de dos potentes lenguajes de programación de sistemas: C++ (usando Emscripten) y [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) (usando `wasm-pack`), y cómo integrarlos con el entorno de JavaScript. Además, profundizaremos en la gestión de los límites de memoria, cómo pasar datos complejos como cadenas y matrices, la sobrecarga de rendimiento y el formato binario de [Wasm](https://kenji.blog/es/p/webassembly-wasm-current-future/) (`.wasm`).
 
-## 2. Descripción general y arquitectura de WebAssembly (Wasm)
+## 2. Descripción general y arquitectura de [WebAssembly](https://kenji.blog/es/p/webassembly-wasm-current-future/) ([Wasm](https://kenji.blog/es/p/webassembly-wasm-current-future/))
 
-WebAssembly es un formato de instrucciones binarias para una máquina virtual basada en pila. Está diseñado como un "objetivo de compilación portátil" que se puede compilar a partir de lenguajes como C/C++, Rust, Go, Zig, etc., con el objetivo de ejecutarse a una velocidad cercana a la nativa en los navegadores web.
+WebAssembly es un formato de instrucciones binarias para una máquina virtual basada en pila. Está diseñado como un "objetivo de compilación portátil" que se puede compilar a partir de lenguajes como C/C++, [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/), Go, Zig, etc., con el objetivo de ejecutarse a una velocidad cercana a la nativa en los navegadores web.
 
 El siguiente diagrama muestra el flujo general de la cadena de herramientas desde que se genera WebAssembly a partir de C++ y Rust hasta que se ejecuta en el navegador.
 
@@ -38,11 +38,11 @@ graph TD
   I --> J
 ```
 
-Wasm no reemplaza a JavaScript. Está diseñado para funcionar junto con JavaScript, delegando las tareas de gran carga computacional a Wasm, aprovechando así los puntos fuertes de cada uno.
+[Wasm](https://kenji.blog/es/p/webassembly-wasm-current-future/) no reemplaza a JavaScript. Está diseñado para funcionar junto con JavaScript, delegando las tareas de gran carga computacional a Wasm, aprovechando así los puntos fuertes de cada uno.
 
 ## 3. Desafío matemático: Cálculo del conjunto de Mandelbrot
 
-En este artículo, utilizaremos el algoritmo de dibujo del "conjunto de Mandelbrot", que impone una gran carga en la CPU, para implementarlo en C++ y Rust.
+En este artículo, utilizaremos el algoritmo de dibujo del "conjunto de Mandelbrot", que impone una gran carga en la CPU, para implementarlo en C++ y [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/).
 
 El conjunto de Mandelbrot se define mediante la siguiente relación de recurrencia compleja:
 
@@ -58,7 +58,7 @@ $$ x^2 + y^2 > 4 $$
 
 ## 4. Enfoque con C++ y Emscripten
 
-Emscripten es una cadena de herramientas de compilación basada en LLVM y es el estándar de facto para compilar código C/C++ a WebAssembly. Proporciona un potente entorno de ejecución que emula llamadas al sistema POSIX con la API del navegador (Web API).
+Emscripten es una cadena de herramientas de compilación basada en LLVM y es el estándar de facto para compilar código C/C++ a [WebAssembly](https://kenji.blog/es/p/webassembly-wasm-current-future/). Proporciona un potente entorno de ejecución que emula llamadas al sistema POSIX con la API del navegador (Web API).
 
 ### Código de implementación en C++
 
@@ -113,7 +113,7 @@ Compilaremos este código usando Emscripten.
 emcc mandelbrot.cpp -O3 -s WASM=1 -s EXPORTED_FUNCTIONS="['_compute_mandelbrot', '_malloc', '_free']" -s EXPORTED_RUNTIME_METHODS="['ccall', 'cwrap']" -o mandelbrot.js
 ```
 
-En el lado de JavaScript, se carga el código de enlace (`mandelbrot.js`) generado por Emscripten y se llama usando la API de WebAssembly como se muestra a continuación.
+En el lado de JavaScript, se carga el código de enlace (`mandelbrot.js`) generado por Emscripten y se llama usando la API de [WebAssembly](https://kenji.blog/es/p/webassembly-wasm-current-future/) como se muestra a continuación.
 
 ```javascript
 Module.onRuntimeInitialized = () => {
@@ -137,9 +137,9 @@ Module.onRuntimeInitialized = () => {
 };
 ```
 
-## 5. Enfoque con Rust y `wasm-pack`
+## 5. Enfoque con [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) y `wasm-pack`
 
-Rust ofrece soporte de primera clase para WebAssembly, y el uso de las herramientas `wasm-bindgen` y `wasm-pack` permite una alta integración entre JavaScript y Rust. Mientras que Emscripten adopta el enfoque de "llevar un enorme tiempo de ejecución de C/C++ al navegador", el `wasm-pack` de Rust adopta el enfoque de "generar solo los enlaces (código de enlace JS) mínimos necesarios".
+[Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) ofrece soporte de primera clase para [WebAssembly](https://kenji.blog/es/p/webassembly-wasm-current-future/), y el uso de las herramientas `wasm-bindgen` y `wasm-pack` permite una alta integración entre JavaScript y [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/). Mientras que Emscripten adopta el enfoque de "llevar un enorme tiempo de ejecución de C/C++ al navegador", el `wasm-pack` de [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) adopta el enfoque de "generar solo los enlaces (código de enlace JS) mínimos necesarios".
 
 ### Código de implementación en Rust
 
@@ -193,7 +193,7 @@ Construimos con el comando `wasm-pack`.
 wasm-pack build --target web
 ```
 
-Importamos el paquete generado desde JavaScript. Gracias a `wasm-bindgen`, el `Vec<i32>` de Rust se convierte automáticamente en un `Int32Array` de JavaScript (ocultando la manipulación de punteros).
+Importamos el paquete generado desde JavaScript. Gracias a `wasm-bindgen`, el `Vec<i32>` de [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) se convierte automáticamente en un `Int32Array` de JavaScript (ocultando la manipulación de punteros).
 
 ```javascript
 import init, { compute_mandelbrot_rust } from './pkg/mandelbrot_wasm.js';
@@ -215,7 +215,7 @@ run();
 
 ## 6. Profundización: Límites de memoria y paso de tipos de datos
 
-Uno de los conceptos más importantes en WebAssembly es la "memoria lineal (Linear Memory)". El código Wasm no puede acceder directamente al espacio de memoria del anfitrión (navegador), sino que se le asigna un enorme `ArrayBuffer` aislado. Esta es la memoria lineal.
+Uno de los conceptos más importantes en [WebAssembly](https://kenji.blog/es/p/webassembly-wasm-current-future/) es la "memoria lineal (Linear Memory)". El código [Wasm](https://kenji.blog/es/p/webassembly-wasm-current-future/) no puede acceder directamente al espacio de memoria del anfitrión (navegador), sino que se le asigna un enorme `ArrayBuffer` aislado. Esta es la memoria lineal.
 
 ```mermaid
 sequenceDiagram
@@ -238,29 +238,29 @@ sequenceDiagram
 
 ### Cómo pasar cadenas y matrices
 
-Los enteros y los números de punto flotante (`i32`, `i64`, `f32`, `f64`) se pueden pasar directamente como valores a las funciones Wasm. Sin embargo, los tipos complejos como cadenas, matrices y estructuras no se pueden pasar directamente como firmas de funciones Wasm.
+Los enteros y los números de punto flotante (`i32`, `i64`, `f32`, `f64`) se pueden pasar directamente como valores a las funciones [Wasm](https://kenji.blog/es/p/webassembly-wasm-current-future/). Sin embargo, los tipos complejos como cadenas, matrices y estructuras no se pueden pasar directamente como firmas de funciones Wasm.
 
 **En el caso de Emscripten**:
-1. Llamar a `Module._malloc` en el lado de JS para asignar un área de memoria lineal en el lado de Wasm.
+1. Llamar a `Module._malloc` en el lado de JS para asignar un área de memoria lineal en el lado de [Wasm](https://kenji.blog/es/p/webassembly-wasm-current-future/).
 2. Escribir los datos desde JS en la dirección de memoria asignada (puntero) usando algo como `Module.HEAPU8.set()`.
 3. Pasar el puntero a la función de C++.
 4. Después del cálculo, leer el resultado desde el puntero en el lado de JS y finalmente llamar a `Module._free`.
 
-**En el caso de wasm-bindgen (Rust)**:
-El tedioso flujo de gestión de memoria anterior se oculta completamente dentro del código de enlace generado automáticamente (envoltorio JS). Cuando pasas un simple `String` o `Array` desde el lado de JS a la función de Rust, detrás de escena se realiza automáticamente una serie de operaciones: asignación de búfer (equivalente a `malloc`), copia, paso de puntero y liberación de memoria.
+**En el caso de wasm-bindgen ([Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/))**:
+El tedioso flujo de gestión de memoria anterior se oculta completamente dentro del código de enlace generado automáticamente (envoltorio JS). Cuando pasas un simple `String` o `Array` desde el lado de JS a la función de [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/), detrás de escena se realiza automáticamente una serie de operaciones: asignación de búfer (equivalente a `malloc`), copia, paso de puntero y liberación de memoria.
 
 ## 7. Sobrecarga de rendimiento y optimización
 
-WebAssembly se puede ejecutar a una velocidad cercana a la nativa, pero existe una sobrecarga en la "comunicación que cruza el límite entre JavaScript y WebAssembly (Interop)".
+[WebAssembly](https://kenji.blog/es/p/webassembly-wasm-current-future/) se puede ejecutar a una velocidad cercana a la nativa, pero existe una sobrecarga en la "comunicación que cruza el límite entre JavaScript y WebAssembly (Interop)".
 
-* **Sobrecarga de llamada**: Es el costo de conmutación para que el motor de JavaScript llame a una función Wasm. Aunque actualmente está muy optimizado, se debe evitar el diseño de llamar a funciones muy ligeras decenas de miles de veces por fotograma.
+* **Sobrecarga de llamada**: Es el costo de conmutación para que el motor de JavaScript llame a una función [Wasm](https://kenji.blog/es/p/webassembly-wasm-current-future/). Aunque actualmente está muy optimizado, se debe evitar el diseño de llamar a funciones muy ligeras decenas de miles de veces por fotograma.
 * **Costo de copia de memoria**: Al pasar cadenas o matrices a Wasm, se produce una copia de datos desde la memoria gestionada por la recolección de basura de JS a la memoria lineal de Wasm (ArrayBuffer). Si pasas una gran cantidad de datos, se requiere un diseño de "copia cero" donde los datos se construyen en la memoria Wasm desde el principio y se accede desde el lado de JS a través de una vista de TypedArray (como `Uint8Array`).
 
-Por ejemplo, en motores de juegos y motores de física, es común la arquitectura en la que todo el estado se mantiene dentro de la memoria lineal de Wasm, y JavaScript solo se encarga de un disparador de "actualización" por fotograma y de la representación en pantalla (llamadas a la API WebGL/WebGPU).
+Por ejemplo, en motores de juegos y motores de física, es común la arquitectura en la que todo el estado se mantiene dentro de la memoria lineal de [Wasm](https://kenji.blog/es/p/webassembly-wasm-current-future/), y JavaScript solo se encarga de un disparador de "actualización" por fotograma y de la representación en pantalla (llamadas a la API WebGL/WebGPU).
 
-## 8. Anatomía del formato binario de WebAssembly (.wasm)
+## 8. Anatomía del formato binario de [WebAssembly](https://kenji.blog/es/p/webassembly-wasm-current-future/) (.wasm)
 
-Ahora, veamos la estructura interna del archivo `.wasm` generado por el compilador. Los binarios de Wasm están compuestos por conjuntos de bloques lógicos llamados "secciones" con énfasis en la extensibilidad y la velocidad de análisis.
+Ahora, veamos la estructura interna del archivo `.wasm` generado por el compilador. Los binarios de [Wasm](https://kenji.blog/es/p/webassembly-wasm-current-future/) están compuestos por conjuntos de bloques lógicos llamados "secciones" con énfasis en la extensibilidad y la velocidad de análisis.
 
 ```mermaid
 graph TD
@@ -281,15 +281,15 @@ graph TD
 El número mágico del archivo siempre comienza con `0x00 0x61 0x73 0x6D` (`\0asm`). Cada sección que sigue a esto tiene su propia ID.
 
 * **Type Section**: Define todas las firmas de funciones (tipos de argumentos y valores de retorno) utilizadas.
-* **Import Section**: Lista de funciones o memoria proporcionadas por el entorno JavaScript a Wasm. Por ejemplo, si llamas a `console.log` desde C++, se declara aquí.
+* **Import Section**: Lista de funciones o memoria proporcionadas por el entorno JavaScript a [Wasm](https://kenji.blog/es/p/webassembly-wasm-current-future/). Por ejemplo, si llamas a `console.log` desde C++, se declara aquí.
 * **Code Section**: Almacena las instrucciones de código de bytes reales (`i32.add`, `call`, `loop`, etc.). Al ser una máquina de pila, es un formato en el que se apilan los operandos y se llaman a las instrucciones operativas.
-* **Data Section**: Las cadenas literales estáticas o datos de inicialización definidos en el código de C++ o Rust se cargan en la memoria lineal desde esta sección.
+* **Data Section**: Las cadenas literales estáticas o datos de inicialización definidos en el código de C++ o [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) se cargan en la memoria lineal desde esta sección.
 
-El motor de Wasm del navegador logra una aceleración dramática del inicio mediante la compilación en flujo de estas secciones (compilación en código de máquina en paralelo mientras se descarga).
+El motor de [Wasm](https://kenji.blog/es/p/webassembly-wasm-current-future/) del navegador logra una aceleración dramática del inicio mediante la compilación en flujo de estas secciones (compilación en código de máquina en paralelo mientras se descarga).
 
 ## 9. C++ vs Rust: ¿Cuál deberías elegir?
 
-En la generación de WebAssembly, elegir entre C++ y Rust depende en gran medida de los requisitos de tu proyecto y de los recursos existentes.
+En la generación de [WebAssembly](https://kenji.blog/es/p/webassembly-wasm-current-future/), elegir entre C++ y Rust depende en gran medida de los requisitos de tu proyecto y de los recursos existentes.
 
 **Casos en los que deberías elegir C++ / Emscripten**:
 * Cuando deseas portar librerías C/C++ existentes (FFmpeg, OpenCV, SQLite, etc.) al navegador.

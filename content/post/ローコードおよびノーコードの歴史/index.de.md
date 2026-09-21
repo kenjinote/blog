@@ -21,7 +21,7 @@ Die Low-Code- / No-Code-Entwicklung ist ein Ansatz, der es ermöglicht, Apps, We
   App-Erstellungstool für den Macintosh. Der Bildschirm war im Kartenformat konfiguriert und die grafische Benutzeroberfläche (GUI) wurde per Drag-and-Drop erstellt. Eine einfache Verhaltenssteuerung war auch mit der eigenen Skriptsprache "HyperTalk" möglich. Es wurde für Prototyping-Zwecke bevorzugt. Der Einführungspreis betrug 49,95 Dollar, später wurde es neuen Mac-Käufern kostenlos zur Verfügung gestellt. Die letzte Version erschien 1998 und bietet keine Unterstützung für Mac OS X oder höher.
 
 * **FileMaker (Claris/Apple, 1985)**
-  Grafische Datenbanksoftware. Neben der Anzeige von Daten in Tabellenform ist es ein relationales Datenbanktool mit flexibler Layoutbearbeitung und Skriptfunktionen. Wird derzeit als "Claris FileMaker Pro" angeboten und die Vollversionslizenz kostet 594 Dollar (Stand 2024).
+  Grafische Datenbanksoftware. Neben der Anzeige von Daten in Tabellenform ist es ein relationales Datenbanktool mit flexibler [Layout](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/)bearbeitung und Skriptfunktionen. Wird derzeit als "Claris FileMaker Pro" angeboten und die Vollversionslizenz kostet 594 Dollar (Stand 2024).
 
 ---
 

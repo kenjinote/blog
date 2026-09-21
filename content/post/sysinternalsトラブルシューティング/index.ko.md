@@ -153,7 +153,7 @@ Autoruns에서도 ProcExp와 마찬가지로 `Options`에서 `Verify Code Signat
 ## 5. TCPView를 통한 숨겨진 네트워크 연결 추적
 
 작업 관리자의 네트워크 탭이나 `netstat -ano` 명령으로도 통신 상태를 확인할 수 있지만, 업데이트가 느리거나 프로세스명과 PID 매핑을 수동으로 수행하는 것은 번거롭습니다.
-TCPView는 모든 TCP 및 UDP 엔드포인트를 실시간으로 모니터링하여 어떤 프로세스가 어떤 원격 주소·포트와 통신하고 있는지 목록으로 표시합니다.
+TCPView는 모든 [TCP](https://kenji.blog/ko/p/http3-quic-protocol-tcp-udp/) 및 [UDP](https://kenji.blog/ko/p/http3-quic-protocol-tcp-udp/) 엔드포인트를 실시간으로 모니터링하여 어떤 프로세스가 어떤 원격 주소·포트와 통신하고 있는지 목록으로 표시합니다.
 
 ### 5.1 악의적인 C2 통신 특정
 악성코드가 백도어를 설치하고 외부의 C2(Command and Control) 서버로 비콘(Beacon)을 전송하는 경우, TCPView에서 다음과 같은 특징을 찾습니다.
@@ -161,7 +161,7 @@ TCPView는 모든 TCP 및 UDP 엔드포인트를 실시간으로 모니터링하
 *   **프로세스명이 부자연스러움**: `svchost.exe`임에도 시스템 권한이 아닌 유저 권한으로 동작하고 있으며, 알 수 없는 해외 IP 주소와 `ESTABLISHED` 상태의 통신을 유지하고 있다.
 *   **일반적으로 통신하지 않는 프로세스의 통신**: 예를 들어 계산기(`calc.exe`)나 메모장(`notepad.exe`)이 포트 443이나 80으로 대량의 패킷을 송수신하고 있다(프로세스 할로잉의 전형적인 징후).
 
-의심스러운 통신을 발견한 경우 TCPView에서 직접 `Close Connection`을 보내 TCP 세션을 강제 절단(RST 패킷 발행)하거나, 해당 프로세스를 `End Process`로 강제 종료시킬 수 있습니다.
+의심스러운 통신을 발견한 경우 TCPView에서 직접 `Close Connection`을 보내 [TCP](https://kenji.blog/ko/p/http3-quic-protocol-tcp-udp/) 세션을 강제 절단(RST 패킷 발행)하거나, 해당 프로세스를 `End Process`로 강제 종료시킬 수 있습니다.
 
 ---
 

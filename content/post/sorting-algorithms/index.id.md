@@ -1,56 +1,3 @@
-+++
-title = "Panduan Lengkap Algoritma Pengurutan: Dari Bubble Sort hingga Timsort"
-description = "Penjelasan lengkap tentang algoritma pengurutan dalam pemrograman. Mencakup dari dasar hingga tingkat lanjut."
-slug = "sorting-algorithms"
-date = "2026-09-21T01:50:00+09:00"
-image = "eyecatch.jpg"
-categories = ["programming", "algorithms", "computer-science"]
-tags = ["sort", "python", "algorithm", "big-o"]
-+++
-
-# Panduan Lengkap Algoritma Pengurutan: Dari Bubble Sort hingga Timsort
-
-Algoritma dan struktur data adalah tema yang sangat penting yang menjadi tulang punggung ilmu komputer. Di antaranya, "pengurutan (sorting)" adalah operasi dasar yang sangat penting dalam berbagai situasi, seperti pencarian, pengelompokan data, dan visualisasi. Dalam artikel ini, kita akan membahas secara sangat rinci mekanisme, implementasi, kompleksitas waktu, dan kapan harus menggunakannya, mulai dari algoritma pengurutan dasar yang dipelajari oleh pemula hingga algoritma pengurutan tingkat lanjut yang diadopsi dalam pustaka standar bahasa pemrograman modern.
-
-## 1. Pengetahuan Dasar Algoritma Pengurutan
-
-Sebelum mempelajari algoritma pengurutan, penting untuk memahami beberapa konsep penting yang menjadi kriteria evaluasi algoritma. Dengan memahami hal ini, akan menjadi jelas mengapa ada begitu banyak algoritma pengurutan dan mana yang harus dipilih tergantung pada situasinya.
-
-### 1.1 Stabilitas (Stability)
-
- **Stabilitas** (Stability) dalam algoritma pengurutan adalah sifat yang menunjukkan apakah urutan relatif dari elemen-elemen yang memiliki nilai kunci pengurutan yang sama dipertahankan sebelum dan sesudah pengurutan.
-
-Misalnya, misalkan ada daftar data dengan nilai ujian dan nama siswa.
-`[ (80 poin, "Si A"), (70 poin, "Si B"), (80 poin, "Si C") ]`
-Ketika ini diurutkan dalam urutan menaik berdasarkan nilai, algoritma pengurutan yang stabil akan selalu menghasilkan sebagai berikut.
-`[ (70 poin, "Si B"), (80 poin, "Si A"), (80 poin, "Si C") ]`
-Karena awalnya "Si A" berada sebelum "Si C", "Si A" ditempatkan di depan meskipun keduanya memiliki 80 poin. Inilah yang disebut **pengurutan stabil** (Stable Sort).
-
-Di sisi lain, dalam algoritma pengurutan yang tidak stabil, urutan ini bisa terbalik menjadi `(80 poin, "Si C"), (80 poin, "Si A")`. Stabilitas menjadi sangat penting ketika melakukan pengurutan berulang kali dengan banyak kunci (contoh: pertama urutkan berdasarkan nama, lalu urutkan berdasarkan nilai).
-
-### 1.2 In-place dan Out-of-place
-
-Ini adalah klasifikasi yang menunjukkan seberapa banyak memori tambahan yang dibutuhkan algoritma saat dieksekusi.
-
-*    **In-place (Di tempat)** : Algoritma yang menulis ulang langsung array input itu sendiri saat mengurutkan, dan hanya membutuhkan memori tambahan berukuran konstan ($O(1)$) atau logaritmik ($O(\log n)$) yang digunakan untuk menukar elemen. Ini sangat berguna di lingkungan dengan batasan memori yang ketat.
-*    **Out-of-place (Di luar tempat)** : Algoritma yang membutuhkan ruang memori tambahan sebanding dengan ukuran input (misalnya $O(n)$) terpisah dari array input untuk pengurutan.
-
-### 1.3 Kompleksitas dan Notasi Big O
-
-Untuk menyatakan efisiensi algoritma, kita menggunakan notasi asimtotik yaitu **Big O Notation** (Notasi Big O).
-Dalam algoritma pengurutan, yang dievaluasi terutama adalah **kompleksitas waktu** (waktu eksekusi) dan **kompleksitas ruang** (penggunaan memori).
-
-*   $O(1)$: Waktu konstan. Selalu konstan dan tidak bergantung pada jumlah data.
-*   $O(n)$: Waktu linier. Meningkat sebanding dengan jumlah data.
-*   $O(n \log n)$: Waktu logaritmik linier. Kecepatan maksimum teoritis dalam algoritma pengurutan berbasis perbandingan.
-*   $O(n^2)$: Waktu kuadrat. Ketika jumlah data berlipat ganda, waktu menjadi empat kali lipat, sehingga tidak cocok untuk data skala besar.
-
-Telah dibuktikan secara matematis bahwa dalam algoritma pengurutan berbasis perbandingan (metode pengurutan dengan membandingkan ukuran antar elemen), batas bawah dari kompleksitas terburuk adalah $O(n \log n)$.
-
-$$
-\text{Batas bawah pengurutan perbandingan} = \Omega(n \log n)
-$$
-
 ---
 
 ## 2. Algoritma $O(n^2)$: Pendekatan Dasar dan Intuitif
@@ -520,7 +467,7 @@ Meskipun buku teks akademis sering kali membahas hingga quick sort dan merge sor
 
 ### 5.1 Timsort (Bawaan pada Python)
 
-Timsort adalah algoritma yang diimplementasikan oleh Tim Peters untuk Python pada tahun 2002. Saat ini, algoritma ini merupakan penguasa dunia praktis yang diadopsi dalam banyak bahasa, tidak hanya `list.sort()` atau `sorted()` pada Python, tetapi juga pada array objek Java dan standard sort Rust.
+Timsort adalah algoritma yang diimplementasikan oleh Tim Peters untuk Python pada tahun 2002. Saat ini, algoritma ini merupakan penguasa dunia praktis yang diadopsi dalam banyak bahasa, tidak hanya `list.sort()` atau `sorted()` pada Python, tetapi juga pada array objek Java dan standard sort [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/).
 
 Konsep desain terbesar Timsort didasarkan pada aturan praktis empiris bahwa  **"Data di dunia nyata jarang sepenuhnya acak, dan seringkali sebagian sudah terurut sampai tingkat tertentu (ada blok terurut menaik atau menurun secara berurutan)."** 
 

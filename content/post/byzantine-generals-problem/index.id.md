@@ -120,7 +120,7 @@ Dalam model ini, perintah yang dikeluarkan oleh komandan tidak dapat diubah di t
 
 Ketahanan terhadap [Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/) disebut **Byzantine Fault Tolerance** (BFT). Ini adalah metrik penting bagi sistem terdistribusi untuk dapat bertahan dari kegagalan dan serangan berbahaya, serta terus beroperasi secara normal.
 
-Dalam beberapa tahun terakhir, masalah ini kembali menjadi sorotan utama karena kemunculan **teknologi blockchain**. Karena blockchain adalah jaringan P2P tanpa administrator pusat, ada kemungkinan peserta (node) jahat menyebarkan riwayat transaksi bohong. Ini persis seperti [Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/) itu sendiri.
+Dalam beberapa tahun terakhir, masalah ini kembali menjadi sorotan utama karena kemunculan **teknologi blockchain**. Karena blockchain adalah jaringan [P2P](https://kenji.blog/id/p/webrtc-realtime-communication-p2p/) tanpa administrator pusat, ada kemungkinan peserta (node) jahat menyebarkan riwayat transaksi bohong. Ini persis seperti [Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/) itu sendiri.
 
 ### Mekanisme PBFT (Practical Byzantine Fault Tolerance)
 

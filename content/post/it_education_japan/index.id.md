@@ -22,7 +22,7 @@ Artikel ini merangkum "dampak" dari pendidikan pemrograman wajib di Jepang, dan 
 
 Bahasa pemrograman visual (block programming), yang direpresentasikan oleh "Scratch" yang dikembangkan oleh MIT Media Lab, merupakan standar de facto (de facto standard) dalam pendidikan pemrograman di sekolah dasar. Bahasa ini layak diapresiasi tinggi sebagai pengantar pendidikan karena memungkinkan siswa untuk secara visual dan intuitif mempelajari tiga struktur kontrol dasar algoritma: "urutan" (sequence), "percabangan" (selection), dan "pengulangan" (iteration), dengan menggabungkan blok-blok seperti puzzle menggunakan antarmuka grafis yang intuitif.
 
-Namun, ada jebakan besar di sini, yang bisa disebut "jebakan abstraksi" (trap of abstraction). Ada sebuah fakta pahit bahwa "transisi dari pemrograman visual ke bahasa pemrograman berbasis teks (seperti Python, JavaScript, C++, Rust, dll.) sangatlah sulit, dan banyak pelajar yang menyerah (dropout) pada tahap ini."
+Namun, ada jebakan besar di sini, yang bisa disebut "jebakan abstraksi" (trap of abstraction). Ada sebuah fakta pahit bahwa "transisi dari pemrograman visual ke bahasa pemrograman berbasis teks (seperti Python, JavaScript, C++, [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), dll.) sangatlah sulit, dan banyak pelajar yang menyerah (dropout) pada tahap ini."
 
 ### Dinding Abstraksi dan Ilmu Komputer sebagai Kotak Hitam (Black Box)
 
@@ -49,7 +49,7 @@ flowchart TD
     class J success;
 ```
 
-Sebagaimana terlihat jelas dari flowchart ini, hanya dengan mengumpulkan pengalaman "menulis kode yang menggerakkan karakter di layar", tidak akan dapat mencetak seorang perekayasa perangkat lunak sejati yang mampu mendesain arsitektur sistem terdistribusi yang terukur (scalable) dan mengoptimalkan performa dalam hitungan milidetik. Ada keterputusan pemahaman konseptual yang mutlak antara menyusun blok-blok Scratch yang berwarna-warni dengan mouse dan memahami kode sumber bahasa C pada kernel Linux serta melacak perilaku tumpukan (stack) TCP/IP. Hal ini tidak bisa disederhanakan sebagai "perbedaan bahasa pemrograman yang digunakan".
+Sebagaimana terlihat jelas dari flowchart ini, hanya dengan mengumpulkan pengalaman "menulis kode yang menggerakkan karakter di layar", tidak akan dapat mencetak seorang perekayasa perangkat lunak sejati yang mampu mendesain arsitektur sistem terdistribusi yang terukur (scalable) dan mengoptimalkan performa dalam hitungan milidetik. Ada keterputusan pemahaman konseptual yang mutlak antara menyusun blok-blok Scratch yang berwarna-warni dengan mouse dan memahami kode sumber bahasa C pada kernel Linux serta melacak perilaku tumpukan (stack) [TCP](https://kenji.blog/id/p/http3-quic-protocol-tcp-udp/)/IP. Hal ini tidak bisa disederhanakan sebagai "perbedaan bahasa pemrograman yang digunakan".
 
 ## 3. Batas Coding Tanpa "Matematika" dan "Logika Diskrit": Pendekatan dari Teori Kompleksitas
 
@@ -247,7 +247,7 @@ Sumber daya manusia yang mampu menerjemahkan berbagai perhitungan matematis cang
 
 Kewajiban pendidikan pemrograman yang diterapkan di tahun 2020-an merupakan suatu langkah maju yang positif, di mana seluruh lapisan masyarakat Jepang kian sadar akan "pentingnya teknologi informasi". Akan tetapi, itu hanya sebuah langkah "pemanasan" di perjalanan yang masih sangat panjang.
 
-Berangkat dari kesenangan menggerakkan karakter kucing menggunakan Scratch, langkah selanjutnya adalah tentang kekaguman akan keindahan matematis dalam algoritma $O(N \log N)$ serta sensasi berinteraksi dengan peladen (server) yang ada di seluruh dunia via paket komunikasi TCP lewat jendela terminal berwarna hitam. Penting bagi kita untuk mulai membangun kembali infrastruktur pendidikan dan mengatasi keterbatasan perangkat keras dari Konsep GIGA School; melatih sekaligus mendatangkan staf pengajar yang kompeten di bidang CS (Ilmu Komputer), hingga berani merangkul tenaga engineer profesional dari pihak luar (eksternal) untuk bergabung memajukan ekosistem pendidikan sekolah kita.
+Berangkat dari kesenangan menggerakkan karakter kucing menggunakan Scratch, langkah selanjutnya adalah tentang kekaguman akan keindahan matematis dalam algoritma $O(N \log N)$ serta sensasi berinteraksi dengan peladen (server) yang ada di seluruh dunia via paket komunikasi [TCP](https://kenji.blog/id/p/http3-quic-protocol-tcp-udp/) lewat jendela terminal berwarna hitam. Penting bagi kita untuk mulai membangun kembali infrastruktur pendidikan dan mengatasi keterbatasan perangkat keras dari Konsep GIGA School; melatih sekaligus mendatangkan staf pengajar yang kompeten di bidang CS (Ilmu Komputer), hingga berani merangkul tenaga engineer profesional dari pihak luar (eksternal) untuk bergabung memajukan ekosistem pendidikan sekolah kita.
 
 Permasalahan yang dihadapi pendidikan TI Jepang saat ini amatlah mendalam, mengakar, dan kompleks. Namun, bila pemerintah, akademisi, dan pihak industri tak menutup mata atas isu-isu tersebut dan mulai bekerja sama untuk mengatasinya secara komprehensif, dengan tujuan membangun ekosistem yang dapat terus mencetak "perekayasa (engineer) sejati yang mampu mendesain sistem dari nol" daripada "pekerja yang sekadar bisa menulis kode sesuai buku panduan/spesifikasi", maka di saat itulah Jepang akan kembali mendominasi tingkat global sebagai "Negara TI yang Sejati".
 

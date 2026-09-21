@@ -11,13 +11,13 @@ tags: ["C++", "Rust", "Wasm", "JavaScript"]
 
 ## 1. Pendahuluan
 
-Dalam pengembangan web modern, JavaScript (dan TypeScript) telah lama memantapkan posisinya sebagai satu-satunya bahasa pemrograman yang berjalan di browser. Namun, belakangan ini kebutuhan untuk menjalankan komputasi yang lebih canggih langsung di browser, seperti pemrosesan gambar, encoding video, game 3D, dan simulasi fisika, semakin meningkat. Di sinilah **WebAssembly (biasa disebut Wasm)** muncul.
+Dalam pengembangan web modern, JavaScript (dan TypeScript) telah lama memantapkan posisinya sebagai satu-satunya bahasa pemrograman yang berjalan di browser. Namun, belakangan ini kebutuhan untuk menjalankan komputasi yang lebih canggih langsung di browser, seperti pemrosesan gambar, encoding video, game 3D, dan simulasi fisika, semakin meningkat. Di sinilah **[WebAssembly](https://kenji.blog/id/p/webassembly-wasm-current-future/) (biasa disebut [Wasm](https://kenji.blog/id/p/webassembly-wasm-current-future/))** muncul.
 
-Artikel ini akan membahas secara mendalam mulai dari dasar-dasar WebAssembly, cara menghasilkan Wasm dari dua bahasa pemrograman sistem yang kuat, yaitu C++ (menggunakan Emscripten) dan Rust (menggunakan `wasm-pack`), hingga langkah-langkah detail dan struktur internal untuk mengintegrasikannya dengan lingkungan JavaScript. Lebih jauh, kita akan mengeksplorasi manajemen batas memori (memory boundaries), cara melewatkan data kompleks seperti string dan array, overhead performa, hingga format biner Wasm (`.wasm`).
+Artikel ini akan membahas secara mendalam mulai dari dasar-dasar WebAssembly, cara menghasilkan Wasm dari dua bahasa pemrograman sistem yang kuat, yaitu C++ (menggunakan Emscripten) dan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) (menggunakan `wasm-pack`), hingga langkah-langkah detail dan struktur internal untuk mengintegrasikannya dengan lingkungan JavaScript. Lebih jauh, kita akan mengeksplorasi manajemen batas memori (memory boundaries), cara melewatkan data kompleks seperti string dan array, overhead performa, hingga format biner [Wasm](https://kenji.blog/id/p/webassembly-wasm-current-future/) (`.wasm`).
 
-## 2. Gambaran Umum dan Arsitektur WebAssembly (Wasm)
+## 2. Gambaran Umum dan Arsitektur [WebAssembly](https://kenji.blog/id/p/webassembly-wasm-current-future/) ([Wasm](https://kenji.blog/id/p/webassembly-wasm-current-future/))
 
-WebAssembly adalah format instruksi biner untuk mesin virtual berbasis stack. Ia dirancang sebagai "target kompilasi portabel" yang dapat dikompilasi dari bahasa seperti C/C++, Rust, Go, Zig, dll., dengan tujuan untuk dieksekusi pada kecepatan yang mendekati native di browser web.
+WebAssembly adalah format instruksi biner untuk mesin virtual berbasis stack. Ia dirancang sebagai "target kompilasi portabel" yang dapat dikompilasi dari bahasa seperti C/C++, [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), Go, Zig, dll., dengan tujuan untuk dieksekusi pada kecepatan yang mendekati native di browser web.
 
 Diagram berikut menunjukkan gambaran umum alur toolchain dari pembuatan WebAssembly menggunakan C++ dan Rust, hingga dieksekusi di dalam browser.
 
@@ -38,11 +38,11 @@ graph TD
   I --> J
 ```
 
-Wasm tidak dirancang untuk menggantikan JavaScript. Ia dirancang untuk bekerja bersama JavaScript, memanfaatkan kekuatan masing-masing dengan mengalihkan tugas-tugas komputasi berat ke Wasm.
+[Wasm](https://kenji.blog/id/p/webassembly-wasm-current-future/) tidak dirancang untuk menggantikan JavaScript. Ia dirancang untuk bekerja bersama JavaScript, memanfaatkan kekuatan masing-masing dengan mengalihkan tugas-tugas komputasi berat ke Wasm.
 
 ## 3. Tantangan Matematis: Menghitung Himpunan Mandelbrot
 
-Dalam artikel ini, kita akan mengimplementasikan algoritma penggambaran "Himpunan Mandelbrot (Mandelbrot set)", yang memberikan beban tinggi pada CPU, menggunakan C++ dan Rust.
+Dalam artikel ini, kita akan mengimplementasikan algoritma penggambaran "Himpunan Mandelbrot (Mandelbrot set)", yang memberikan beban tinggi pada CPU, menggunakan C++ dan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/).
 
 Himpunan Mandelbrot didefinisikan oleh relasi perulangan kompleks berikut:
 
@@ -58,7 +58,7 @@ $$ x^2 + y^2 > 4 $$
 
 ## 4. Pendekatan dengan C++ dan Emscripten
 
-Emscripten adalah toolchain kompilator berbasis LLVM dan merupakan standar de facto untuk mengkompilasi kode C/C++ menjadi WebAssembly. Ia menyediakan runtime yang kuat yang mengemulasi panggilan sistem POSIX dengan API browser (Web API).
+Emscripten adalah toolchain kompilator berbasis LLVM dan merupakan standar de facto untuk mengkompilasi kode C/C++ menjadi [WebAssembly](https://kenji.blog/id/p/webassembly-wasm-current-future/). Ia menyediakan runtime yang kuat yang mengemulasi panggilan sistem POSIX dengan API browser (Web API).
 
 ### Kode Implementasi C++
 
@@ -113,7 +113,7 @@ Kita akan mengkompilasi kode ini menggunakan Emscripten.
 emcc mandelbrot.cpp -O3 -s WASM=1 -s EXPORTED_FUNCTIONS="['_compute_mandelbrot', '_malloc', '_free']" -s EXPORTED_RUNTIME_METHODS="['ccall', 'cwrap']" -o mandelbrot.js
 ```
 
-Di sisi JavaScript, kita memuat glue code yang dihasilkan oleh Emscripten (`mandelbrot.js`) dan memanggilnya menggunakan WebAssembly API seperti berikut.
+Di sisi JavaScript, kita memuat glue code yang dihasilkan oleh Emscripten (`mandelbrot.js`) dan memanggilnya menggunakan [WebAssembly](https://kenji.blog/id/p/webassembly-wasm-current-future/) API seperti berikut.
 
 ```javascript
 Module.onRuntimeInitialized = () => {
@@ -137,9 +137,9 @@ Module.onRuntimeInitialized = () => {
 };
 ```
 
-## 5. Pendekatan dengan Rust dan `wasm-pack`
+## 5. Pendekatan dengan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) dan `wasm-pack`
 
-Rust menyediakan dukungan kelas satu untuk WebAssembly, dan menggunakan alat `wasm-bindgen` serta `wasm-pack` memungkinkan interaksi tingkat tinggi antara JavaScript dan Rust. Sementara pendekatan Emscripten "membawa runtime besar C/C++ ke browser," pendekatan `wasm-pack` dari Rust "hanya menghasilkan binding (JS glue code) minimal yang diperlukan."
+[Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) menyediakan dukungan kelas satu untuk [WebAssembly](https://kenji.blog/id/p/webassembly-wasm-current-future/), dan menggunakan alat `wasm-bindgen` serta `wasm-pack` memungkinkan interaksi tingkat tinggi antara JavaScript dan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/). Sementara pendekatan Emscripten "membawa runtime besar C/C++ ke browser," pendekatan `wasm-pack` dari [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) "hanya menghasilkan binding (JS glue code) minimal yang diperlukan."
 
 ### Kode Implementasi Rust
 
@@ -193,7 +193,7 @@ Build menggunakan perintah `wasm-pack`.
 wasm-pack build --target web
 ```
 
-Impor paket yang dihasilkan dari JavaScript. Berkat `wasm-bindgen`, `Vec<i32>` milik Rust secara otomatis dikonversi menjadi `Int32Array` milik JavaScript (menyembunyikan manipulasi pointer).
+Impor paket yang dihasilkan dari JavaScript. Berkat `wasm-bindgen`, `Vec<i32>` milik [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) secara otomatis dikonversi menjadi `Int32Array` milik JavaScript (menyembunyikan manipulasi pointer).
 
 ```javascript
 import init, { compute_mandelbrot_rust } from './pkg/mandelbrot_wasm.js';
@@ -215,7 +215,7 @@ run();
 
 ## 6. Lebih Dalam: Batas Memori dan Melewatkan Tipe Data
 
-Salah satu konsep paling penting dalam WebAssembly adalah "Memori Linear (Linear Memory)". Kode Wasm tidak dapat mengakses ruang memori host (browser) secara langsung, melainkan dialokasikan sebuah `ArrayBuffer` raksasa yang terisolasi. Inilah yang disebut memori linear.
+Salah satu konsep paling penting dalam [WebAssembly](https://kenji.blog/id/p/webassembly-wasm-current-future/) adalah "Memori Linear (Linear Memory)". Kode [Wasm](https://kenji.blog/id/p/webassembly-wasm-current-future/) tidak dapat mengakses ruang memori host (browser) secara langsung, melainkan dialokasikan sebuah `ArrayBuffer` raksasa yang terisolasi. Inilah yang disebut memori linear.
 
 ```mermaid
 sequenceDiagram
@@ -238,29 +238,29 @@ sequenceDiagram
 
 ### Cara Melewatkan String dan Array
 
-Bilangan bulat dan pecahan (floating point) (`i32`, `i64`, `f32`, `f64`) dapat diteruskan langsung sebagai nilai ke fungsi Wasm. Namun, tipe kompleks seperti string, array, atau struktur data tidak bisa dilewatkan secara langsung pada signatur fungsi Wasm.
+Bilangan bulat dan pecahan (floating point) (`i32`, `i64`, `f32`, `f64`) dapat diteruskan langsung sebagai nilai ke fungsi [Wasm](https://kenji.blog/id/p/webassembly-wasm-current-future/). Namun, tipe kompleks seperti string, array, atau struktur data tidak bisa dilewatkan secara langsung pada signatur fungsi Wasm.
 
 **Kasus Emscripten**:
-1. Panggil `Module._malloc` di sisi JS untuk mengalokasikan memori linear di sisi Wasm.
+1. Panggil `Module._malloc` di sisi JS untuk mengalokasikan memori linear di sisi [Wasm](https://kenji.blog/id/p/webassembly-wasm-current-future/).
 2. JS menulis data ke alamat memori yang dialokasikan (pointer) menggunakan `Module.HEAPU8.set()`, dll.
 3. Pointer dilewatkan ke fungsi C++.
 4. Setelah dihitung, JS membaca hasil dari pointer, dan akhirnya memanggil `Module._free`.
 
-**Kasus wasm-bindgen (Rust)**:
-Alur manajemen memori yang rumit di atas disembunyikan sepenuhnya di dalam glue code (JS wrapper) yang dihasilkan secara otomatis. Ketika Anda melewatkan `String` atau `Array` sederhana dari sisi JS ke fungsi Rust, serangkaian proses seperti alokasi buffer (setara dengan `malloc`), penyalinan, pengiriman pointer, dan pelepasan memori akan dilakukan secara otomatis di latar belakang.
+**Kasus wasm-bindgen ([Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/))**:
+Alur manajemen memori yang rumit di atas disembunyikan sepenuhnya di dalam glue code (JS wrapper) yang dihasilkan secara otomatis. Ketika Anda melewatkan `String` atau `Array` sederhana dari sisi JS ke fungsi [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), serangkaian proses seperti alokasi buffer (setara dengan `malloc`), penyalinan, pengiriman pointer, dan pelepasan memori akan dilakukan secara otomatis di latar belakang.
 
 ## 7. Overhead Performa dan Optimasi
 
-WebAssembly dapat dieksekusi dengan kecepatan mendekati native, tetapi ada overhead pada "komunikasi (Interop) yang melintasi batas antara JavaScript dan WebAssembly".
+[WebAssembly](https://kenji.blog/id/p/webassembly-wasm-current-future/) dapat dieksekusi dengan kecepatan mendekati native, tetapi ada overhead pada "komunikasi (Interop) yang melintasi batas antara JavaScript dan WebAssembly".
 
-* **Overhead Pemanggilan**: Biaya peralihan bagi engine JavaScript untuk memanggil fungsi Wasm. Meskipun saat ini telah banyak dioptimalkan, memanggil fungsi yang sangat ringan puluhan ribu kali per frame harus dihindari.
+* **Overhead Pemanggilan**: Biaya peralihan bagi engine JavaScript untuk memanggil fungsi [Wasm](https://kenji.blog/id/p/webassembly-wasm-current-future/). Meskipun saat ini telah banyak dioptimalkan, memanggil fungsi yang sangat ringan puluhan ribu kali per frame harus dihindari.
 * **Biaya Salin Memori**: Ketika melewatkan string atau array ke Wasm, data disalin dari memori yang dikelola oleh garbage collection JS ke memori linear Wasm (ArrayBuffer). Jika melewatkan data berukuran besar, diperlukan desain "zero-copy" di mana data dibangun dari awal di memori Wasm, dan sisi JS mengaksesnya melalui tampilan TypedArray (seperti `Uint8Array`).
 
-Misalnya, pada engine game atau engine fisika, arsitektur umum yang digunakan adalah menyimpan seluruh status (state) di dalam memori linear Wasm, dan JavaScript hanya menangani pemicu untuk "perbarui" pada tiap frame dan penggambaran layar (pemanggilan WebGL/WebGPU API).
+Misalnya, pada engine game atau engine fisika, arsitektur umum yang digunakan adalah menyimpan seluruh status (state) di dalam memori linear [Wasm](https://kenji.blog/id/p/webassembly-wasm-current-future/), dan JavaScript hanya menangani pemicu untuk "perbarui" pada tiap frame dan penggambaran layar (pemanggilan WebGL/WebGPU API).
 
-## 8. Anatomi Format Biner WebAssembly (.wasm)
+## 8. Anatomi Format Biner [WebAssembly](https://kenji.blog/id/p/webassembly-wasm-current-future/) (.wasm)
 
-Sekarang, mari kita lihat struktur internal dari file `.wasm` yang dihasilkan oleh kompilator. Biner Wasm terdiri dari kumpulan blok logis yang disebut "section" yang dirancang untuk mementingkan ekstensibilitas dan kecepatan parsing.
+Sekarang, mari kita lihat struktur internal dari file `.wasm` yang dihasilkan oleh kompilator. Biner [Wasm](https://kenji.blog/id/p/webassembly-wasm-current-future/) terdiri dari kumpulan blok logis yang disebut "section" yang dirancang untuk mementingkan ekstensibilitas dan kecepatan parsing.
 
 ```mermaid
 graph TD
@@ -281,15 +281,15 @@ graph TD
 Angka ajaib (magic number) file ini selalu dimulai dengan `0x00 0x61 0x73 0x6D` (`\0asm`). Setiap bagian (section) yang mengikutinya memiliki ID masing-masing.
 
 * **Type Section**: Mendefinisikan semua signatur fungsi (tipe argumen dan nilai kembalian) yang digunakan.
-* **Import Section**: Daftar fungsi dan memori yang disediakan dari lingkungan JavaScript ke Wasm. Misalnya, jika memanggil `console.log` dari C++, deklarasinya ada di sini.
+* **Import Section**: Daftar fungsi dan memori yang disediakan dari lingkungan JavaScript ke [Wasm](https://kenji.blog/id/p/webassembly-wasm-current-future/). Misalnya, jika memanggil `console.log` dari C++, deklarasinya ada di sini.
 * **Code Section**: Berisi instruksi bytecode aktual (seperti `i32.add`, `call`, dan `loop`). Karena merupakan stack machine, formatnya adalah dengan menaruh operand di stack lalu memanggil instruksi operasi.
-* **Data Section**: Literal string statis dan data inisialisasi yang didefinisikan dalam kode C++ atau Rust dimuat ke dalam memori linear dari bagian (section) ini.
+* **Data Section**: Literal string statis dan data inisialisasi yang didefinisikan dalam kode C++ atau [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) dimuat ke dalam memori linear dari bagian (section) ini.
 
-Engine Wasm pada browser dapat mencapai peningkatan kecepatan proses startup yang dramatis dengan mengkompilasi bagian-bagian ini secara streaming (menerjemahkan ke bahasa mesin secara paralel sambil mengunduhnya).
+Engine [Wasm](https://kenji.blog/id/p/webassembly-wasm-current-future/) pada browser dapat mencapai peningkatan kecepatan proses startup yang dramatis dengan mengkompilasi bagian-bagian ini secara streaming (menerjemahkan ke bahasa mesin secara paralel sambil mengunduhnya).
 
 ## 9. C++ vs Rust: Mana yang Harus Dipilih?
 
-Dalam pembuatan WebAssembly, memilih antara C++ dan Rust sangat bergantung pada persyaratan proyek dan aset yang sudah ada.
+Dalam pembuatan [WebAssembly](https://kenji.blog/id/p/webassembly-wasm-current-future/), memilih antara C++ dan Rust sangat bergantung pada persyaratan proyek dan aset yang sudah ada.
 
 **Kasus memilih C++ / Emscripten**:
 * Ingin melakukan porting library C/C++ yang sudah ada (FFmpeg, OpenCV, SQLite, dll.) ke browser.

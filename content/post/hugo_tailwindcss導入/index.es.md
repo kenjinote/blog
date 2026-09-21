@@ -291,7 +291,7 @@ flowchart TD
 
 ## 6. Análisis matemático del rendimiento en la optimización de CSS
 
-Una de las mayores ventajas de introducir Tailwind CSS es la reducción drástica del tamaño del archivo CSS entregado. Utilizando un modelo matemático, analicemos cuantitativamente cómo afecta esto al rendimiento web (especialmente a First Contentful Paint: FCP).
+Una de las mayores ventajas de introducir Tailwind CSS es la reducción drástica del tamaño del archivo CSS entregado. Utilizando un modelo matemático, analicemos cuantitativamente cómo afecta esto al rendimiento web (especialmente a First Contentful [Paint](https://kenji.blog/es/p/browser-rendering-mechanism-dom-paint/): FCP).
 
 ### Modelo de reducción del tamaño del archivo CSS
 

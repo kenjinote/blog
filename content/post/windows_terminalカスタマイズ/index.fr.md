@@ -317,7 +317,7 @@ Il y a des centaines de thèmes (config) disponibles. Vous pouvez également cr�
 
 WSL2 (Windows Subsystem for Linux 2), qui permet d'exécuter un véritable noyau Linux sur Windows, est indispensable pour le développement Web moderne et le développement cloud natif. "**Starship**" est la solution optimale pour personnaliser le prompt dans le shell (Bash ou Zsh) au sein de WSL.
 
-Starship est un prompt multi-shell extrêmement rapide, écrit en langage Rust et hautement personnalisable. Son principal avantage est que vous pouvez reproduire le même prompt, quel que soit le shell (Bash, Zsh, Fish, etc.), avec un seul fichier de configuration (TOML).
+Starship est un prompt multi-shell extrêmement rapide, écrit en langage [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) et hautement personnalisable. Son principal avantage est que vous pouvez reproduire le même prompt, quel que soit le shell (Bash, Zsh, Fish, etc.), avec un seul fichier de configuration (TOML).
 
 ## 7.1 Installation de Starship
 

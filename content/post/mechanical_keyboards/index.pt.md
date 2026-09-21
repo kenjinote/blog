@@ -120,7 +120,7 @@ Dentre as funções que o QMK oferece, as seguintes aumentam explosivamente a pr
 
 A desvantagem do QMK era a necessidade de "compilar o código-fonte e regravar (fazer flash) o firmware toda vez que uma configuração fosse alterada". Isso foi resolvido pelo **VIA** e **VIAL**. Eles permitem acessar o teclado por um aplicativo GUI (ou direto no navegador web) e reescrever o mapa de teclas em tempo real sem precisar reiniciar o dispositivo.
 
-## 4. Ergonomia e a Ciência dos Layouts
+## 4. Ergonomia e a Ciência dos [Layout](https://kenji.blog/pt/p/browser-rendering-mechanism-dom-paint/)s
 
 O "Row Staggered" (layout em que as teclas são deslocadas diagonalmente por linha) comum é um resquício da necessidade de evitar que as hastes mecânicas das máquinas de escrever se cruzassem, não sendo baseado na anatomia da mão humana.
 
@@ -171,7 +171,7 @@ O ápice dos teclados divididos desenvolvidos pela ZSA do Canadá. O lado esquer
 
 - **Switches:** Mecânicos (Compatíveis com Cherry MX, Hot-swappable)
 - **Firmware:** Baseado em QMK (com sua própria ferramenta gráfica poderosa, o "Oryx")
-- **Características:** Layout Columnar Staggered, botões específicos agrupados para o polegar, pés padrão (tenting legs) para inclinação.
+- **Características:** [Layout](https://kenji.blog/pt/p/browser-rendering-mechanism-dom-paint/) Columnar Staggered, botões específicos agrupados para o polegar, pés padrão (tenting legs) para inclinação.
 - **Vantagens para engenheiros:** Atribuir as teclas Enter, Space, Backspace, e mudanças de Layer aos polegares alivia extremamente os dedos mínimos que têm menos força. É o dispositivo que salvará engenheiros que sofrem da Síndrome do Túnel do Carpo.
 
 ---

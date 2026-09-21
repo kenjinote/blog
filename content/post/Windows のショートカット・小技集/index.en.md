@@ -145,7 +145,7 @@ Here are a few commands you can execute in "Run" or Command Prompt.
 ![img_5.png](img_5.webp)
 - Type `calc` and press `Enter`
 
-## Launch Paint
+## Launch [Paint](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/)
 ![img_6.png](img_6.webp)
 - Type `mspaint` and press `Enter`  
 

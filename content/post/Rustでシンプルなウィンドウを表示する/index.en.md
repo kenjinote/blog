@@ -9,7 +9,7 @@ categories: ["programming"]
 description: 'Introduces how to create and display a simple Windows window using `winapi` in Rust. It provides a detailed explanation of the source code that forms the basis of GUI programming, from Cargo.toml settings to the implementation of the window procedure.'
 ---
 
-Displaying a simple window in Rust
+Displaying a simple window in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)
 
 ```Cargo.toml
 [package]

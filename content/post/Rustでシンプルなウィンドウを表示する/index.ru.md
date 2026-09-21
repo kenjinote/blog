@@ -9,7 +9,7 @@ categories: ["programming"]
 description: 'Представлен метод создания и отображения простого окна Windows в Rust с использованием `winapi`. Подробно объясняется исходный код, который является основой программирования GUI, от настройки Cargo.toml до реализации оконной процедуры.'
 ---
 
-Отображение простого окна в Rust
+Отображение простого окна в [Rust](https://kenji.blog/ru/p/webassembly-wasm-current-future/)
 
 ```Cargo.toml
 [package]

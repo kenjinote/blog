@@ -28,7 +28,7 @@ description: 'نشرح بوضوح آليات عمل والخطوات المحد�
 ![](Animation_Sieb_des_Eratosthenes.gif)
 
 
-## التنفيذ في Rust
+## التنفيذ في [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/)
 
 ```
 fn main() {

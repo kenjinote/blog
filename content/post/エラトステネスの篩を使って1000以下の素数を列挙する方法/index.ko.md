@@ -38,7 +38,7 @@ description: '소수를 효율적으로 찾는 알고리즘 ''에라토스테네
 ![](Animation_Sieb_des_Eratosthenes.gif)
 
 
-## Rust에서의 구현
+## [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)에서의 구현
 
 ```
 fn main() {

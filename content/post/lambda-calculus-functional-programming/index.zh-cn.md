@@ -16,7 +16,7 @@ tags:
 
 ## 1. 引言：流淌在函数式编程根底的哲学
 
-在现代软件开发中， **函数式编程** （[Functional Programming](https://kenji.blog/zh-cn/p/oop-vs-fp-vs-dop/)）早已不再是仅面向部分狂热爱好者的方案，而是成为了广泛普及的范式。从React等前端技术，到Rust和Scala，甚至Java和C#等面向对象语言，都引入了将函数作为一等公民对待以及消除副作用等概念。
+在现代软件开发中， **函数式编程** （[Functional Programming](https://kenji.blog/zh-cn/p/oop-vs-fp-vs-dop/)）早已不再是仅面向部分狂热爱好者的方案，而是成为了广泛普及的范式。从React等前端技术，到[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)和Scala，甚至Java和C#等面向对象语言，都引入了将函数作为一等公民对待以及消除副作用等概念。
 
 然而，在这个范式的背后，存在着在计算机被物理制造出来之前的1930年代所构建的深奥数学理论。那就是由阿隆佐·邱奇（Alonzo Church）提出的 **Lambda演算** （ $\lambda$-calculus ）。
 
@@ -227,6 +227,6 @@ firstTenEvens = take 10 (map (*2) naturals)
 
 在20世纪30年代，仅凭纸笔，阿隆佐·邱奇描绘的 **Lambda演算** 绝不是一门过时的理论。它是从与图灵机不同的角度重新审视“计算是什么”，并通过Lisp将其释放到可编程的世界中。然后，经过与逻辑学的完美结合——柯里-霍华德同构，最终结出了像Haskell这样具有强大而健壮类型系统的现代语言的果实。
 
-今天，当我们在React中使用 `map` 或 `filter` ，在Rust中利用代数数据类型，在Python中编写Lambda表达式时，我们都受益于邱奇伟大的知识遗产。
+今天，当我们在React中使用 `map` 或 `filter` ，在[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)中利用代数数据类型，在Python中编写Lambda表达式时，我们都受益于邱奇伟大的知识遗产。
 
 函数式编程不仅仅是一种编码风格，它是 **逼近计算本质的数学哲学** 。

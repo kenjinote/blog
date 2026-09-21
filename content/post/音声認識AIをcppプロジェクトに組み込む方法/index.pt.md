@@ -237,7 +237,7 @@ graph LR
 
 ### 6.1 A Importância da Detecção de Atividade de Voz (VAD)
 
-No processamento em tempo real, executar constantemente a inferência, mesmo para partes silenciosas, é um desperdício de recursos computacionais. Inserir um algoritmo VAD (como limiares baseados em energia simples ou WebRTC VAD) na etapa anterior permite o seguinte controle: **"Iniciar o buffering apenas quando a fala começar e disparar o `whisper_full` no momento em que a fala terminar (após um certo período de silêncio)".**
+No processamento em tempo real, executar constantemente a inferência, mesmo para partes silenciosas, é um desperdício de recursos computacionais. Inserir um algoritmo VAD (como limiares baseados em energia simples ou [WebRTC](https://kenji.blog/pt/p/webrtc-realtime-communication-p2p/) VAD) na etapa anterior permite o seguinte controle: **"Iniciar o buffering apenas quando a fala começar e disparar o `whisper_full` no momento em que a fala terminar (após um certo período de silêncio)".**
 
 ### 6.2 Abordagem de Janela Deslizante (Sliding Window)
 

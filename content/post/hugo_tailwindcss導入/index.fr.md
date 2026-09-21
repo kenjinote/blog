@@ -291,7 +291,7 @@ flowchart TD
 
 ## 6. Analyse mathématique des performances dans l'optimisation CSS
 
-L'un des plus grands avantages de l'adoption de Tailwind CSS est la minimisation extrême de la taille du fichier CSS distribué. Analysons quantitativement l'impact de cela sur les performances Web (en particulier le First Contentful Paint : FCP) à l'aide de modèles mathématiques.
+L'un des plus grands avantages de l'adoption de Tailwind CSS est la minimisation extrême de la taille du fichier CSS distribué. Analysons quantitativement l'impact de cela sur les performances Web (en particulier le First Contentful [Paint](https://kenji.blog/fr/p/browser-rendering-mechanism-dom-paint/) : FCP) à l'aide de modèles mathématiques.
 
 ### Modèle de réduction de la taille des fichiers CSS
 

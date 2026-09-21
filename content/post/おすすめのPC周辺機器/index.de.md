@@ -15,7 +15,7 @@ description: 'Wir stellen empfohlene PC-Peripheriegeräte vor, die von aktiven I
 
 Vor allem kapazitive Tastaturen ohne Kontakt werden dringend empfohlen, da sie sehr langlebig sind.
 Ich besitze seit über 10 Jahren eine [RealForce](https://amzn.to/3IzOOFO) und benutze sie immer noch aktiv.
-Ich verwende das Modell mit englischem Layout und leisen Tasten.
+Ich verwende das Modell mit englischem [Layout](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/) und leisen Tasten.
 
 Allerdings habe ich mich in letzter Zeit auch für die Tastatur [Logitech MX Keys](https://amzn.to/3Z5skmR) interessiert.
 

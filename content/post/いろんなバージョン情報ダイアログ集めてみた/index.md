@@ -31,7 +31,7 @@ description: 'Windows 11、IntelliJ IDEA、VS Code、Chrome、Edge、LINEなど�
 こちらはLINEのWindows版です。
 ![img_4.png](img_4.webp)
 
-## Paint.NET
+## [Paint](https://kenji.blog/p/browser-rendering-mechanism-dom-paint/).NET
 こちらは画像編集ソフトです。
 ![img_5.png](img_5.webp)
 

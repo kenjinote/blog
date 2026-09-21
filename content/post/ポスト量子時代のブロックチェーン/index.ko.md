@@ -138,7 +138,7 @@ SHA-256의 경우 $N = 2^{256}$이므로 고전적인 무차별 대입(Brute-for
 
 ### 3.1. 주소 생성과 공개키의 '비공개성'
 
-[비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)의 주소(P2PKH: Pay-to-Public-Key-Hash나 P2WPKH: Pay-to-Witness-Public-Key-Hash)는 공개키 그 자체가 아니라 공개키를 여러 번 해시화한 것을 사용합니다.
+[비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)의 주소([P2P](https://kenji.blog/ko/p/webrtc-realtime-communication-p2p/)KH: Pay-to-Public-Key-Hash나 P2WPKH: Pay-to-Witness-Public-Key-Hash)는 공개키 그 자체가 아니라 공개키를 여러 번 해시화한 것을 사용합니다.
 
 $$
 \text{[Bitcoin](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Public Key})))
@@ -178,7 +178,7 @@ sequenceDiagram
 마이너는 경제적 인센티브에 따라 수수료가 높은 트랜잭션을 우선적으로 블록에 포함시킵니다. 결과적으로 공격자의 부정 송금이 먼저 승인(Confirm)되고, 앨리스의 정당한 송금은 '잔고 부족(Double Spend)'으로 파기됩니다.
 이 일련의 흐름은 **프론트 러닝 공격(Front-running Attack)** 이라 불리며, 양자 컴퓨터가 실용화된 세계에서는 누군가가 송금 버튼을 누른 순간에 자금을 해커에게 빼앗기는 끔찍한 사태를 야기합니다.
 
-### 3.3. 재사용 주소와 오래된 주소(P2PK)의 위기
+### 3.3. 재사용 주소와 오래된 주소([P2P](https://kenji.blog/ko/p/webrtc-realtime-communication-p2p/)K)의 위기
 
 더욱 심각한 문제로, 과거에 한 번이라도 송금을 한 적이 있는 주소(잔돈 주소 등으로 재사용하고 있는 경우)는 이미 블록체인 상에 공개키가 영구적으로 기록되어 있습니다. 이들은 트랜잭션 송신을 기다릴 것도 없이 언제든지 비밀키가 계산되어 잔고를 빼앗길 위험에 노출되어 있습니다.
 
@@ -289,7 +289,7 @@ pie title 블록체인에서의 서명 데이터 크기 비교 (개념도)
 
 하지만 Dilithium이나 Falcon과 같은 새로운 격자 기반 암호 알고리즘의 검증 처리는 복잡한 다항식 연산이나 행렬 연산을 수반하기 때문에, 기존의 EVM 연산 코드(Opcode)만으로 구현하면 단 1회의 서명 검증만으로 수백만에서 수천만 가스를 소비할 가능성이 있습니다. 이는 현재의 블록 가스 한도(약 3000만 Gas)를 1개의 트랜잭션으로 고갈시키는 수준입니다.
 
-이를 회피하기 위해서는 네트워크의 하드포크를 통해 새롭게 PQC 검증용 사전 컴파일된 컨트랙트(예: `0x10`에 DilithiumVerify를 할당하는 등)를 EVM 자체에 내장해야 합니다. 여기에는 각 이더리움 클라이언트(Geth, Nethermind, Erigon 등)의 코어 개발자가 협력하여 C++, Go, Rust 등의 언어 레벨에서 격자 기반 암호 검증 로직을 최적화하여 구현하고, 보안 감사를 실시하는 장기간에 걸친 프로세스가 필요합니다.
+이를 회피하기 위해서는 네트워크의 하드포크를 통해 새롭게 PQC 검증용 사전 컴파일된 컨트랙트(예: `0x10`에 DilithiumVerify를 할당하는 등)를 EVM 자체에 내장해야 합니다. 여기에는 각 이더리움 클라이언트(Geth, Nethermind, Erigon 등)의 코어 개발자가 협력하여 C++, Go, [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/) 등의 언어 레벨에서 격자 기반 암호 검증 로직을 최적화하여 구현하고, 보안 감사를 실시하는 장기간에 걸친 프로세스가 필요합니다.
 
 ### 5.3. 하드포크를 통한 합의 형성의 어려움
 

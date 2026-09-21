@@ -124,7 +124,7 @@ In diesem Modell können die vom Kommandanten ausgegebenen Befehle auf dem Weg n
 
 Die Widerstandsfähigkeit gegenüber dem Problem der byzantinischen Generäle wird als **byzantinische Fehlertoleranz** (Byzantine Fault Tolerance, BFT) bezeichnet. Sie ist ein wichtiger Indikator dafür, dass ein verteiltes System Ausfälle oder böswillige Angriffe überstehen und normal weiterarbeiten kann.
 
-In den letzten Jahren rückte dieses Problem durch das Aufkommen der **Blockchain-Technologie** wieder stark in den Fokus. Da eine Blockchain ein P2P-Netzwerk ohne zentrale Kontrollinstanz ist, besteht die Möglichkeit, dass böswillige Teilnehmer (Knoten) gefälschte Transaktionsverläufe verbreiten. Dies entspricht exakt dem Problem der byzantinischen Generäle.
+In den letzten Jahren rückte dieses Problem durch das Aufkommen der **Blockchain-Technologie** wieder stark in den Fokus. Da eine Blockchain ein [P2P](https://kenji.blog/de/p/webrtc-realtime-communication-p2p/)-Netzwerk ohne zentrale Kontrollinstanz ist, besteht die Möglichkeit, dass böswillige Teilnehmer (Knoten) gefälschte Transaktionsverläufe verbreiten. Dies entspricht exakt dem Problem der byzantinischen Generäle.
 
 ### Die Funktionsweise von PBFT (Practical Byzantine Fault Tolerance)
 

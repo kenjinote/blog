@@ -9,7 +9,7 @@ categories: ["programming"]
 description: 'Erklärt für Anfänger, wie man Testcode in Rust schreibt und Tests mit dem Befehl cargo test ausführt. Stellt die Verwendung des #[test]-Attributs und die Ausgabeergebnisse bei Erfolg oder Fehlschlag mit konkreten Codebeispielen ausführlich vor.'
 ---
 
-Um Tests in Rust zu schreiben, erstellen Sie eine Funktion, indem Sie das Attribut `#[test]` eine Zeile über der Definition der Testfunktion hinzufügen.
+Um Tests in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) zu schreiben, erstellen Sie eine Funktion, indem Sie das Attribut `#[test]` eine Zeile über der Definition der Testfunktion hinzufügen.
 
 ```rust
 fn plus(a:i32,b:i32)->i32 {

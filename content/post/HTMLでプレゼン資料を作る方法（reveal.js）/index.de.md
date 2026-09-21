@@ -14,7 +14,7 @@ description: 'Wir erklären die Installation und grundlegende Verwendung des Too
 reveal.js ist ein Tool zur Erstellung von Präsentationen mit HTML und Markdown, das die folgenden Funktionen bietet:
 
 - Verschiedene Präsentationsfunktionen wie mathematische Formeln, Animationen und Wischgesten
-- Anpassbare Themes und Layouts
+- Anpassbare Themes und [Layout](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/)s
 - Navigationsfunktionen, die von mehreren Geräten wie Maus, Tastatur und Touchpad unterstützt werden
 - Bietet erweiterte Funktionen wie automatische Wiedergabe von Folien und eingebettete Videos
 - Kann im PDF-Format exportiert werden

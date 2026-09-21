@@ -106,13 +106,13 @@ sequenceDiagram
 
 ---
 
-# 4. 實作步驟 1：`/slack/install` 與防範 CSRF 的 `state` 參數
+# 4. 實作步驟 1：`/slack/install` 與防範 [CSRF](https://kenji.blog/zh-tw/p/web-security-basics-cors-csp/) 的 `state` 參數
 
 我們將建立使用者開始使用應用程式（安裝到工作區）的第一個端點。這裡最大的職責是將使用者重新導向到 Slack 的授權伺服器，但在安全性上極為重要的是 **產生並保存 `state` 參數**。
 
-## state 參數的必要性（防範 CSRF 攻擊）
+## state 參數的必要性（防範 [CSRF](https://kenji.blog/zh-tw/p/web-security-basics-cors-csp/) 攻擊）
 
-如果不存在 `state` 參數，惡意的攻擊者可以使用自己的 Slack 帳號開始授權流程，並誘使受害者點擊包含取得的「授權碼」的回呼網址（例如：`http://localhost:3000/slack/oauth_redirect?code=ATTACKER_CODE`）。當受害者的瀏覽器執行此網址時，就會在受害者的連線階段（Session）中完成與攻擊者 Slack 帳號的綁定，導致資料外洩或非預期的操作（登入 CSRF）。
+如果不存在 `state` 參數，惡意的攻擊者可以使用自己的 Slack 帳號開始授權流程，並誘使受害者點擊包含取得的「授權碼」的回呼網址（例如：`http://localhost:3000/slack/oauth_redirect?code=ATTACKER_CODE`）。當受害者的瀏覽器執行此網址時，就會在受害者的連線階段（Session）中完成與攻擊者 Slack 帳號的綁定，導致資料外洩或非預期的操作（登入 [CSRF](https://kenji.blog/zh-tw/p/web-security-basics-cors-csp/)）。
 
 為了防範這種情況，`state` 被設計為一個無法預測的隨機字串，用來驗證「發起請求的瀏覽器」與「接收回呼的瀏覽器」是同一個。
 
@@ -367,7 +367,7 @@ sequenceDiagram
 
 1. 透過意識到 **4 個角色（RO, Client, AS, RS）** ，可以使整體系統的架構更加明確。
 2. **授權碼授權流程** 巧妙地活用了瀏覽器與伺服器之間的通訊路徑（前台 / 後台通道）來確保安全性。
-3. 了解其背後的密碼學機制，如利用 **`state` 參數 ** 防禦 CSRF，以及利用 **PKCE** 防止授權碼攔截攻擊等，是邁向安全實作的捷徑。
+3. 了解其背後的密碼學機制，如利用 **`state` 參數 ** 防禦 [CSRF](https://kenji.blog/zh-tw/p/web-security-basics-cors-csp/)，以及利用 **PKCE** 防止授權碼攔截攻擊等，是邁向安全實作的捷徑。
 4. 基於 **最小權限原則** 的範圍設計，以及在存入資料庫時進行加密，是營運上絕對不可或缺的要素。
 
 OAuth 2.0 是一門非常深奧的學問，光是 RFC 就有龐大的規格，但像這樣以實際的平台（Slack）為目標，一邊動手實作一邊學習，應該就能體會到其精練的設計理念與堅固的安全機制。希望本文的知識能在未來的應用程式開發或 API 整合實作中對您有所幫助。

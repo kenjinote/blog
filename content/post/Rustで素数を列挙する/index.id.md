@@ -8,7 +8,7 @@ image: "images/img.webp"
 categories: ["programming"]
 description: 'Sebagai pembelajaran pemrograman Rust, kami memperkenalkan contoh implementasi algoritme sederhana yang menghitung bilangan prima hingga nilai batas atas yang ditentukan. Kami menjelaskan dengan mudah metode pengkodean dasar menggunakan perulangan dan percabangan kondisional, beserta kode contoh spesifik.'
 ---
-Saya menulis program untuk membuat daftar bilangan prima di Rust.
+Saya menulis program untuk membuat daftar bilangan prima di [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/).
 
 ```rust
 fn main() {

@@ -28,7 +28,7 @@ Algoritmanya sederhana dan dapat diimplementasikan dengan langkah-langkah beriku
 ![](Animation_Sieb_des_Eratosthenes.gif)
 
 
-## Implementasi dalam Rust
+## Implementasi dalam [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)
 
 ```
 fn main() {

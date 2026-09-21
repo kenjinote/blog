@@ -8,7 +8,7 @@ categories: ["programming", "computer-science", "software-engineering"]
 tags: ["memory-management", "c-language", "java", "rust", "garbage-collection"]
 ---
 
-# 歡迎來到記憶體管理的真相：從 C、Java、Rust 探索深淵
+# 歡迎來到記憶體管理的真相：從 C、Java、[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 探索深淵
 
 在軟體開發中，記憶體管理是無法迴避的永恆主題，更是決定系統效能與穩定性最重要的因素之一。本篇文章將透過直逼兩萬字規模的壓倒性深度探索，完整涵蓋從記憶體管理的基礎理論，到現代架構中的最佳化手法。
 
@@ -206,7 +206,7 @@ public class GcExample {
 
 ---
 
-## 4. Rust：所有權與借用帶來的第三條路
+## 4. [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)：所有權與借用帶來的第三條路
 
 C 語言「透過手動管理達到極限效能」與 Java「透過自動管理保障記憶體安全」。這兩者長期以來被認為是需要權衡取捨（Trade-off）的關係。然而，Rust 語言導入了 **「所有權（ Ownership ）」** 這個劃時代的模型，成功達成排除了垃圾回收，卻能在編譯期 100% 保證記憶體安全的創舉。
 
@@ -222,7 +222,7 @@ C 語言「透過手動管理達到極限效能」與 Java「透過自動管理�
 
 ### 4.2 所有權的轉移（Move）
 
-在 Rust 中，若將變數賦值給其他變數，或是將值傳遞給函式，所有權就會發生「轉移（ Move ）」。失去所有權的變數在之後將無法被存取（會產生編譯錯誤）。這使得雙重釋放（Double Free）在結構上變得不可能發生。
+在 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 中，若將變數賦值給其他變數，或是將值傳遞給函式，所有權就會發生「轉移（ Move ）」。失去所有權的變數在之後將無法被存取（會產生編譯錯誤）。這使得雙重釋放（Double Free）在結構上變得不可能發生。
 
 ```rust
 fn main() {
@@ -241,7 +241,7 @@ fn main() {
 
 ### 4.3 借用（Borrowing）與生命週期
 
-如果所有的操作都會轉移所有權，那程式設計將變得極度不便。為了在不奪走所有權的情況下存取資料，Rust 引入了 **參考（ Reference ）** 與 **借用（ Borrowing ）** 的概念。
+如果所有的操作都會轉移所有權，那程式設計將變得極度不便。為了在不奪走所有權的情況下存取資料，[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 引入了 **參考（ Reference ）** 與 **借用（ Borrowing ）** 的概念。
 
 此外，內建於 Rust 編譯器中的 **借用檢查器（ Borrow Checker ）** ，會在編譯時強制執行以下嚴格的規則。
 
@@ -295,7 +295,7 @@ stateDiagram-v2
 
 ### 5.1 不同語言的快取效率差異
 
-- **C / C++ / Rust** : 當建立結構的陣列（如 `struct Array[100]` 或 `Vec<MyStruct>` ）時，資料會在記憶體上緊密連續地排列。當對陣列進行迴圈處理時，CPU 的硬體預取器（Hardware Prefetcher）能完美發揮作用，使快取命中率（Cache Hit Rate）飛躍性地提升。
+- **C / C++ / [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)** : 當建立結構的陣列（如 `struct Array[100]` 或 `Vec<MyStruct>` ）時，資料會在記憶體上緊密連續地排列。當對陣列進行迴圈處理時，CPU 的硬體預取器（Hardware Prefetcher）能完美發揮作用，使快取命中率（Cache Hit Rate）飛躍性地提升。
 - **Java** : Java 的物件陣列（如 `MyObject[]` ）並非實體陣列，而是「物件參考（指標）」的陣列。作為實體的每個物件會被分配在堆積上零散的位置，因此每次執行迴圈時都必須追蹤指標存取隨機的記憶體位址，進而引發嚴重的快取未命中（ Cache Miss ）。
 
 記憶體存取的實際平均時間 $ T_{avg} $ 可用下列公式表示。
@@ -303,7 +303,7 @@ stateDiagram-v2
 $ T_{avg} = h \cdot T_{cache} + (1 - h) \cdot T_{memory} $
 
 這裡的 $ h $ 代表快取命中率（ $ 0 \le h \le 1 $ ），$ T_{cache} $ 是快取存取時間（約 1〜4 ns ），$ T_{memory} $ 是主記憶體存取時間（約 100 ns ）。
-究竟是將 $ h $ 提升至 0.99（如 C/Rust 的做法），還是降至 0.5（如 Java 的指標追蹤），會讓應用程式的迴圈執行速度產生數十倍的差距。這正是遊戲引擎或高頻交易系統選擇 C++ 或 Rust 的真正原因。
+究竟是將 $ h $ 提升至 0.99（如 C/[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 的做法），還是降至 0.5（如 Java 的指標追蹤），會讓應用程式的迴圈執行速度產生數十倍的差距。這正是遊戲引擎或高頻交易系統選擇 C++ 或 Rust 的真正原因。
 
 ---
 
@@ -315,7 +315,7 @@ $ T_{avg} = h \cdot T_{cache} + (1 - h) \cdot T_{memory} $
 |:---:|:---|:---|:---|
 | **C** | 透過 `malloc/free` 進行手動管理 | 極致的速度、快取效率最大化、輕量 | 漏洞的溫床（洩漏、雙重釋放）、開發成本高 |
 | **Java** | GC (垃圾回收) | 提升開發速度、確保記憶體安全 | STW 導致延遲波動、快取效率惡化 |
-| **Rust** | 所有權與借用檢查器 | 零執行時期成本的安全性、高速 | 學習曲線陡峭、生命週期設計困難 |
+| **[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)** | 所有權與借用檢查器 | 零執行時期成本的安全性、高速 | 學習曲線陡峭、生命週期設計困難 |
 
 **記憶體管理** 的歷史，是一場在效能與安全性之間搖擺的翹翹板遊戲。為了防止手動管理引發的慘劇而誕生了 GC，而為了迴避 GC 帶來的效能懲罰，又發明了所有權模型。
 

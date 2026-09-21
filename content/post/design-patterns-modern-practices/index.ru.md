@@ -30,7 +30,7 @@ tags:
 
 ## 3. Современная переоценка паттернов GoF и альтернативы
 
-Здесь мы рассмотрим типичные паттерны GoF и то, как они заменяются в современных языках (TypeScript, Kotlin, Rust и т.д.).
+Здесь мы рассмотрим типичные паттерны GoF и то, как они заменяются в современных языках (TypeScript, Kotlin, [Rust](https://kenji.blog/ru/p/webassembly-wasm-current-future/) и т.д.).
 
 ### 3.1. Паттерн Strategy: Вытеснение функциями первого класса
 
@@ -133,7 +133,7 @@ coroutineScope.launch {
 
 Паттерн `Visitor` предназначен для разделения структур данных и операций над ними, но у него была проблема: реализация была очень сложной и неинтуитивной (требовалась двойная диспетчеризация).
 
-В наше время эта проблема элегантно решается с использованием языков (Rust, Kotlin, Swift, Scala и т.д.), которые поддерживают **алгебраические типы данных (ADT)** и **сопоставление с образцом (pattern matching)**.
+В наше время эта проблема элегантно решается с использованием языков ([Rust](https://kenji.blog/ru/p/webassembly-wasm-current-future/), Kotlin, Swift, Scala и т.д.), которые поддерживают **алгебраические типы данных (ADT)** и **сопоставление с образцом (pattern matching)**.
 
 **Современный подход (Перечисления и сопоставление с образцом в Rust)**
 
@@ -191,7 +191,7 @@ $$
 bind: M[A] \times (A \rightarrow M[B]) \rightarrow M[B]
 $$
 
-**Тип Result в Rust (Применение монады Either)**
+**Тип Result в [Rust](https://kenji.blog/ru/p/webassembly-wasm-current-future/) (Применение монады Either)**
 
 ```rust
 fn divide(numerator: f64, denominator: f64) -> Result<f64, String> {

@@ -162,7 +162,7 @@ Contractsを利用することで、APIの仕様が自己文書化されるだ�
 
 C++17で `std::variant` や `std::any` が導入されて以来、様々な型を保持する変数のディスパッチには `std::visit` が用いられてきました。しかし、`std::visit` とオーバーロードパターンの組み合わせ（いわゆる `overloaded` 構造体ハック）は非常に冗長で可読性が低いものでした。
 
-C++26では、 **パターンマッチング（Pattern Matching）** が言語機能として組み込まれました（P2688準拠）。これにより、関数型言語（RustやHaskellなど）に近い直感的なマッチングが可能になります。
+C++26では、 **パターンマッチング（Pattern Matching）** が言語機能として組み込まれました（P2688準拠）。これにより、関数型言語（[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)やHaskellなど）に近い直感的なマッチングが可能になります。
 
 ## 3.1 C++23までの `std::visit` の苦悩
 

@@ -35,6 +35,6 @@ Harus Windows 11
 [Menggunakan alat winget untuk menginstal dan mengelola aplikasi](https://learn.microsoft.com/ja-jp/windows/package-manager/winget/)
 
 ### Catatan tambahan
-Saya pikir saya bisa menginstal Paint.Net juga, tetapi ternyata tidak bisa.
+Saya pikir saya bisa menginstal [Paint](https://kenji.blog/id/p/browser-rendering-mechanism-dom-paint/).Net juga, tetapi ternyata tidak bisa.
 
 https://forums.getpaint.net/topic/118574-please-add-paintnet-to-the-available-packages-for-windows-package-manager-winget/

@@ -9,7 +9,7 @@ categories: ["programming"]
 description: '介紹在 Rust 中使用 `winapi` 建立並顯示 Windows 簡易視窗的方法。從 Cargo.toml 的設定到視窗程序的實作，詳細解說構成 GUI 程式設計基礎的原始碼。'
 ---
 
-在 Rust 中顯示簡單的視窗
+在 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 中顯示簡單的視窗
 
 ```Cargo.toml
 [package]

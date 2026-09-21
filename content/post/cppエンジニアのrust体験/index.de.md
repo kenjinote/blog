@@ -11,9 +11,9 @@ tags: ["C++", "Rust", "Programming", "Career"]
 
 # Einführung: Eine neue Morgenröte in der Systemprogrammierung
 
-In der modernen Softwareentwicklung sind C++ und Rust die zwei großen Giganten, die an vorderster Front der Systemprogrammierung stehen. Viele Jahre lang herrschte C++ als absoluter König in Bereichen, in denen extreme Hardwareleistung gefordert ist, wie Betriebssysteme, eingebettete Geräte, Spiele-Engines und Hochfrequenzhandel (HFT). Ich selbst schreibe als Senior-C++-Entwickler seit der C++98-Ära mit ihrem Dschungel aus rohen Zeigern Code und habe die Welle der Modernisierung durch C++11 (Einführung von Smart Pointern, Lambda-Ausdrücken und `auto`) sowie die kontinuierliche Vergrößerung der Spezifikationen in C++14/17/20 hautnah miterlebt.
+In der modernen Softwareentwicklung sind C++ und [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) die zwei großen Giganten, die an vorderster Front der Systemprogrammierung stehen. Viele Jahre lang herrschte C++ als absoluter König in Bereichen, in denen extreme Hardwareleistung gefordert ist, wie Betriebssysteme, eingebettete Geräte, Spiele-Engines und Hochfrequenzhandel (HFT). Ich selbst schreibe als Senior-C++-Entwickler seit der C++98-Ära mit ihrem Dschungel aus rohen Zeigern Code und habe die Welle der Modernisierung durch C++11 (Einführung von Smart Pointern, Lambda-Ausdrücken und `auto`) sowie die kontinuierliche Vergrößerung der Spezifikationen in C++14/17/20 hautnah miterlebt.
 
-In den letzten Jahren hat Rust jedoch als Lösung für die strukturellen Probleme von C++ – insbesondere das "Fehlen von Speichersicherheit", das zu Sicherheitslücken führt (etwa 70% der CVEs sollen speicherbedingt sein), und die "endlos komplexen Spezifikationen sowie undefiniertes Verhalten (UB)" – einen dramatischen Aufstieg erlebt. Die offizielle Einführung in den Linux-Kernel sowie groß angelegte Migrationsprojekte zu Rust durch Tech-Giganten wie Microsoft, Google und AWS sind nicht nur ein vorübergehender Trend, sondern bedeuten einen Paradigmenwechsel in der Systemprogrammierung.
+In den letzten Jahren hat [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) jedoch als Lösung für die strukturellen Probleme von C++ – insbesondere das "Fehlen von Speichersicherheit", das zu Sicherheitslücken führt (etwa 70% der CVEs sollen speicherbedingt sein), und die "endlos komplexen Spezifikationen sowie undefiniertes Verhalten (UB)" – einen dramatischen Aufstieg erlebt. Die offizielle Einführung in den Linux-Kernel sowie groß angelegte Migrationsprojekte zu Rust durch Tech-Giganten wie Microsoft, Google und AWS sind nicht nur ein vorübergehender Trend, sondern bedeuten einen Paradigmenwechsel in der Systemprogrammierung.
 
 In diesem Artikel werde ich die "Vorteile" und "Nachteile", die ich als waschechter C++-Entwickler beim tiefgreifenden Erlernen und praktischen Einsatz von Rust erfahren habe, aus einer technischen Perspektive, die an die Grundlagen des Sprachdesigns rührt, gründlich vergleichen und erläutern.
 
@@ -59,7 +59,7 @@ In C++ besteht immer das Risiko, versehentlich auf ein Objekt zuzugreifen, das d
 
 ## Rusts Eigentümerschaft (Ownership) und die absolute Verteidigung des [Borrow Checker](https://kenji.blog/de/p/memory-management-garbage-collection/)s
 
-Rust hat dieses Konzept der "Eigentümerschaft" in das Kerndesign der Sprache integriert und führt durch eine Compiler-Funktion namens **Borrow Checker** eine strenge statische Analyse durch.
+[Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) hat dieses Konzept der "Eigentümerschaft" in das Kerndesign der Sprache integriert und führt durch eine Compiler-Funktion namens **Borrow Checker** eine strenge statische Analyse durch.
 
 ```rust
 fn consume(s: String) {
@@ -77,7 +77,7 @@ fn main() {
 }
 ```
 
-Wenn in Rust die Eigentümerschaft einer Variablen verschoben wird, behandelt der Compiler die ursprüngliche Variable so, als wäre sie "uninitialisiert", und blockiert jeglichen weiteren Zugriff vollständig. Dadurch können Fehler wie "Use-After-Free" oder "Dangling Pointers" theoretisch nicht durch die Kompilierung gelangen.
+Wenn in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) die Eigentümerschaft einer Variablen verschoben wird, behandelt der Compiler die ursprüngliche Variable so, als wäre sie "uninitialisiert", und blockiert jeglichen weiteren Zugriff vollständig. Dadurch können Fehler wie "Use-After-Free" oder "Dangling Pointers" theoretisch nicht durch die Kompilierung gelangen.
 
 ```mermaid
 graph TD
@@ -94,17 +94,17 @@ graph TD
 
 ## Ausleihen (Borrowing) und die Kontrolle der Veränderbarkeit
 
-Noch leistungsfähiger sind die Regeln für das "Ausleihen (Borrowing)", bei dem eine Referenz auf eine Ressource erstellt wird. In Rust werden folgende Regeln erzwungen:
+Noch leistungsfähiger sind die Regeln für das "Ausleihen (Borrowing)", bei dem eine Referenz auf eine Ressource erstellt wird. In [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) werden folgende Regeln erzwungen:
 1. Zu einem beliebigen Zeitpunkt darf **entweder** "mehrere unveränderliche Referenzen (`&T`)" **oder** "genau eine veränderliche Referenz (`&mut T`)" existieren, aber nicht beides gleichzeitig.
 2. Eine Referenz darf nicht länger leben als die Daten, auf die sie verweist (Lebensdauer-Beschränkungen / Lifetimes).
 
-In C++ können problemlos mehrere veränderliche Referenzen oder Zeiger auf dasselbe Objekt erstellt werden, was zu unerwarteter Zerstörung des Zustands (wie Invalidation von Iteratoren) führen kann. Rust verhindert solche Fehler im Vorfeld, indem es die Kombination aus "Aliasing" und "Mutability" (Veränderbarkeit) auf Sprachebene verbietet.
+In C++ können problemlos mehrere veränderliche Referenzen oder Zeiger auf dasselbe Objekt erstellt werden, was zu unerwarteter Zerstörung des Zustands (wie Invalidation von Iteratoren) führen kann. [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) verhindert solche Fehler im Vorfeld, indem es die Kombination aus "Aliasing" und "Mutability" (Veränderbarkeit) auf Sprachebene verbietet.
 
 ---
 
 # 2. Speicherlayout und der mathematische Overhead von Smart Pointern
 
-In der Systemprogrammierung ist ein genaues Verständnis des Speicherlayouts unerlässlich. Vergleichen wir `std::shared_ptr` in C++ mit `std::rc::Rc` / `std::sync::Arc` in Rust.
+In der Systemprogrammierung ist ein genaues Verständnis des Speicherlayouts unerlässlich. Vergleichen wir `std::shared_ptr` in C++ mit `std::rc::Rc` / `std::sync::Arc` in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/).
 
 Der C++ `std::shared_ptr` verwaltet Ressourcen über Referenzzählung, verwendet aber standardmäßig threadsichere atomare Operationen (`std::atomic`), um den Referenzzähler zu erhöhen oder zu verringern. Dieser Overhead im Speicher kann wie folgt formuliert werden:
 
@@ -112,7 +112,7 @@ $$ Overhead_{C++} = sizeof(T) + sizeof(ControlBlock) $$
 
 Hierbei enthält der $ControlBlock$ den "Strong Ref Count" (Starker Referenzzähler), den "Weak Ref Count" (Schwacher Referenzzähler) und einen "Custom Deleter". Das Problem dabei ist, dass der Overhead von atomaren Anweisungen (wie Cache-Line-Sperren) bedingungslos auftritt, selbst in Situationen, in denen er nur in einem einzigen Thread verwendet wird.
 
-Im Gegensatz dazu trennt Rust Smart Pointer streng nach ihrem Verwendungszweck.
+Im Gegensatz dazu trennt [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) Smart Pointer streng nach ihrem Verwendungszweck.
 
 - **Für Single-Thread**: `Rc<T>` (Reference Counted)
 - **Für Multi-Thread**: `Arc<T>` (Atomic Reference Counted)
@@ -120,7 +120,7 @@ Im Gegensatz dazu trennt Rust Smart Pointer streng nach ihrem Verwendungszweck.
 $$ Overhead_{Rc} = sizeof(T) + 2 \times sizeof(usize) $$
 $$ Overhead_{Arc} = sizeof(T) + 2 \times sizeof(AtomicUsize) $$
 
-In Rust können Sie die Strafe (Penalty) für atomare Operationen vollständig vermeiden (Zero-Cost Abstraction), wenn Sie das für Single-Thread-Anwendungen spezifische `Rc<T>` verwenden. Und dank des unten beschriebenen Mechanismus zur Threadsicherheit wird das versehentliche Übergeben eines `Rc<T>` an einen anderen Thread durch das Typsystem vollständig verhindert.
+In [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) können Sie die Strafe (Penalty) für atomare Operationen vollständig vermeiden (Zero-Cost Abstraction), wenn Sie das für Single-Thread-Anwendungen spezifische `Rc<T>` verwenden. Und dank des unten beschriebenen Mechanismus zur Threadsicherheit wird das versehentliche Übergeben eines `Rc<T>` an einen anderen Thread durch das Typsystem vollständig verhindert.
 
 ---
 
@@ -158,7 +158,7 @@ int main() {
 
 ## Rusts Mutex "besitzt" die Daten
 
-In Rust kapselt (besitzt) `Mutex<T>` den zu schützenden Datentyp `T` mithilfe von Generics. Um auf die Daten zuzugreifen, ist es zwingend erforderlich, `lock()` aufzurufen, um ein Guard-Objekt zu erhalten. Es ist syntaktisch unmöglich, die Daten zu berühren, ohne die Sperre (Lock) zu erwerben.
+In [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) kapselt (besitzt) `Mutex<T>` den zu schützenden Datentyp `T` mithilfe von Generics. Um auf die Daten zuzugreifen, ist es zwingend erforderlich, `lock()` aufzurufen, um ein Guard-Objekt zu erhalten. Es ist syntaktisch unmöglich, die Daten zu berühren, ohne die Sperre (Lock) zu erwerben.
 
 ```rust
 use std::sync::{Arc, Mutex};
@@ -186,7 +186,7 @@ fn main() {
 }
 ```
 
-Darüber hinaus gibt es in Rust zwei zentrale Traits, die die Sicherheit der Nebenläufigkeit (Concurrency) garantieren.
+Darüber hinaus gibt es in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) zwei zentrale Traits, die die Sicherheit der Nebenläufigkeit (Concurrency) garantieren.
 - `Send`: Typen, deren Eigentümerschaft sicher zwischen Threads übertragen werden kann.
 - `Sync`: Typen, die sicher von mehreren Threads gleichzeitig referenziert werden können.
 
@@ -196,7 +196,7 @@ Nach dem Amdahlschen Gesetz (Amdahl's Law) kann der theoretisch maximale Durchsa
 
 $$ S(N) = \frac{1}{(1 - P) + \frac{P}{N}} $$
 
-Rust ermöglicht es, Refactorings zur Maximierung dieses $P$-Wertes äußerst sicher durchzuführen, indem man sich voll auf das Typsystem verlässt.
+[Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) ermöglicht es, Refactorings zur Maximierung dieses $P$-Wertes äußerst sicher durchzuführen, indem man sich voll auf das Typsystem verlässt.
 
 ```mermaid
 graph TD
@@ -215,7 +215,7 @@ graph TD
 
 Der Standard für die Fehlerbehandlung in C++ sind "Ausnahmen (Exceptions)". Ausnahmen machen den Kontrollfluss jedoch undurchsichtig und verursachen Performance-Einbußen (Stack Unwinding und Aufblähung der RTTI). In eingebetteten Systemen oder Spiele-Engines werden Ausnahmen oft vollständig deaktiviert (`-fno-exceptions`), und man entscheidet sich für ein klassisches Design, das Fehlercodes zurückgibt. In C++23 wurde `std::expected` eingeführt, aber es wird Zeit brauchen, bis es das gesamte Ökosystem durchdringt.
 
-In Rust gibt es das Konzept der Ausnahmen nicht. Fehler werden als reine "Werte" zurückgegeben und durch einen Aufzählungstyp (Algebraischer Datentyp) namens `Result<T, E>` dargestellt.
+In [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) gibt es das Konzept der Ausnahmen nicht. Fehler werden als reine "Werte" zurückgegeben und durch einen Aufzählungstyp (Algebraischer Datentyp) namens `Result<T, E>` dargestellt.
 
 ```rust
 use std::fs::File;
@@ -243,7 +243,7 @@ Beim dynamischen Dispatch wird ein Zeiger (vptr) auf eine Tabelle virtueller Fun
 
 $$ T_{dispatch} = T_{lookup\_in\_vtable} + T_{dereference} $$
 
-Rust hat die klassische objektorientierte "Klassenvererbung" verworfen und stattdessen das Konzept der "**Traits**" eingeführt (ähnlich den Concepts in C++20, aber vielseitiger).
+[Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) hat die klassische objektorientierte "Klassenvererbung" verworfen und stattdessen das Konzept der "**Traits**" eingeführt (ähnlich den Concepts in C++20, aber vielseitiger).
 
 ```rust
 trait Drawable {
@@ -266,7 +266,7 @@ fn draw_dynamic(item: &dyn Drawable) {
 }
 ```
 
-Das Hauptmerkmal des dynamischen Dispatches in Rust (`dyn Trait`) ist, dass er keinen vptr innerhalb der Datenstruktur hat, sondern einen **Fat Pointer** verwendet. Ein Fat Pointer hält ein Paar bestehend aus einem "Zeiger auf die Daten" und einem "Zeiger auf die vtable". Dies macht es extrem einfach, später Traits für Typen zu implementieren (zu erweitern), die in externen Bibliotheken definiert sind, und sie einem dynamischen Dispatch zu unterziehen.
+Das Hauptmerkmal des dynamischen Dispatches in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) (`dyn Trait`) ist, dass er keinen vptr innerhalb der Datenstruktur hat, sondern einen **Fat Pointer** verwendet. Ein Fat Pointer hält ein Paar bestehend aus einem "Zeiger auf die Daten" und einem "Zeiger auf die vtable". Dies macht es extrem einfach, später Traits für Typen zu implementieren (zu erweitern), die in externen Bibliotheken definiert sind, und sie einem dynamischen Dispatch zu unterziehen.
 
 ---
 
@@ -274,7 +274,7 @@ Das Hauptmerkmal des dynamischen Dispatches in Rust (`dyn Trait`) ist, dass er k
 
 Eine der größten Schwächen von C++ ist das Fehlen eines Standard-Paketmanagers. Die obskure Syntax von `CMakeLists.txt`, die Komplexität der Auflösung von Abhängigkeiten mit `find_package` und die Unterschiede in den Bibliothekspfaden je nach Betriebssystem rauben C++-Entwicklern weiterhin enorm viel Zeit.
 
-Rust ist standardmäßig mit **Cargo** ausgestattet, einem der weltbesten Paketmanager und Build-Systeme.
+[Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) ist standardmäßig mit **Cargo** ausgestattet, einem der weltbesten Paketmanager und Build-Systeme.
 
 ```mermaid
 graph TD
@@ -293,22 +293,22 @@ Indem man einfach eine einzige Zeile mit dem Namen und der Version der Abhängig
 
 ---
 
-# 7. Nachteile und die Lernkurve beim Erlernen von Rust
+# 7. Nachteile und die Lernkurve beim Erlernen von [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)
 
 Bisher habe ich über die Vorteile von Rust gesprochen, aber es gibt definitiv "Barrieren" und Nachteile, auf die C++-Entwickler stoßen, wenn sie Rust in der Praxis einsetzen.
 
 ## 1. Der harte Kampf mit dem [Borrow Checker](https://kenji.blog/de/p/memory-management-garbage-collection/)
-Wenn man versucht, Datenstrukturen, die in C++ "irgendwie mit rohen Zeigern verbunden waren" (z. B. doppelt verkettete Listen, Graphenstrukturen oder selbstreferenzielle Strukturen), unverändert in Rust zu implementieren, wird die Kompilierung aufgrund von Eigentümerschafts- und Lebensdauerbeschränkungen fehlschlagen. Um den Borrow Checker zufriedenzustellen, muss man entweder komplexe Wrapper wie `Rc<RefCell<T>>` verwenden oder das Design grundlegend überdenken, hin zu Arena-Allokatoren oder indexbasiertem Management.
+Wenn man versucht, Datenstrukturen, die in C++ "irgendwie mit rohen Zeigern verbunden waren" (z. B. doppelt verkettete Listen, Graphenstrukturen oder selbstreferenzielle Strukturen), unverändert in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) zu implementieren, wird die Kompilierung aufgrund von Eigentümerschafts- und Lebensdauerbeschränkungen fehlschlagen. Um den Borrow Checker zufriedenzustellen, muss man entweder komplexe Wrapper wie `Rc<RefCell<T>>` verwenden oder das Design grundlegend überdenken, hin zu Arena-Allokatoren oder indexbasiertem Management.
 
 ## 2. Lange Kompilierungszeiten
-Auch C++ wird durch die Verschachtelung von Templates langsam kompiliert, aber die Kompilierungszeit von Rust (insbesondere bei einem Clean Build von Grund auf) ist keineswegs kurz. Da die leistungsstarken Optimierungs-Pässe von LLVM, die Makro-Erweiterung und die Monomorphisierung von Generics zusammenkommen, wird die Build-Zeit in großen Projekten zu einem Engpass. Während der Entwicklung ist es unerlässlich, Workarounds wie die häufige Nutzung von `cargo check` anzuwenden.
+Auch C++ wird durch die Verschachtelung von Templates langsam kompiliert, aber die Kompilierungszeit von [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) (insbesondere bei einem Clean Build von Grund auf) ist keineswegs kurz. Da die leistungsstarken Optimierungs-Pässe von LLVM, die Makro-Erweiterung und die Monomorphisierung von Generics zusammenkommen, wird die Build-Zeit in großen Projekten zu einem Engpass. Während der Entwicklung ist es unerlässlich, Workarounds wie die häufige Nutzung von `cargo check` anzuwenden.
 
 ## 3. Interoperabilität mit C++-Codebasen
-Während die Integration mit C (FFI) sehr reibungslos verläuft, ist es äußerst schwierig, bestehende, riesige C++-Codebasen (die Klassen, Templates und virtuelle Funktionen stark nutzen) direkt mit Rust zu verbinden. In den letzten Jahren haben sich Bridge-Tools wie `cxx` und `autocxx` weiterentwickelt, aber es gibt immer noch hohe Hürden für eine völlig nahtlose Migration.
+Während die Integration mit C (FFI) sehr reibungslos verläuft, ist es äußerst schwierig, bestehende, riesige C++-Codebasen (die Klassen, Templates und virtuelle Funktionen stark nutzen) direkt mit [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) zu verbinden. In den letzten Jahren haben sich Bridge-Tools wie `cxx` und `autocxx` weiterentwickelt, aber es gibt immer noch hohe Hürden für eine völlig nahtlose Migration.
 
 ---
 
-# Fazit: Sollten wir zu Rust wechseln?
+# Fazit: Sollten wir zu [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) wechseln?
 
 C++ wird auch in Zukunft eine wichtige Rolle in der Entwicklung von Spiele-Engines und in bestehenden riesigen Infrastrukturen spielen. Die Modernisierung durch C++20/23 ist ebenfalls bemerkenswert und ermöglicht ein sichereres Schreiben von Code.
 

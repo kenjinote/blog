@@ -153,7 +153,7 @@ npm install -D tailwindcss postcss postcss-cli autoprefixer
 npx tailwindcss init
 ```
 
-使用編輯器打開生成的 `tailwind.config.js`，並設定 `content` 屬性。這部分非常重要。Tailwind會解析這裡指定路徑的檔案，並提取被使用的類別。請配合Hugo的專案結構，準確地指定版面配置檔（Layout）和內容檔（Content）。
+使用編輯器打開生成的 `tailwind.config.js`，並設定 `content` 屬性。這部分非常重要。Tailwind會解析這裡指定路徑的檔案，並提取被使用的類別。請配合Hugo的專案結構，準確地指定版面配置檔（[Layout](https://kenji.blog/zh-tw/p/browser-rendering-mechanism-dom-paint/)）和內容檔（Content）。
 
 ```javascript
 /** @type {import('tailwindcss').Config} */

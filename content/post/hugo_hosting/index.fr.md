@@ -50,7 +50,7 @@ GitHub Pages est un service qui permet de publier des fichiers HTML, CSS et Java
 
 ### 2.3 Cloudflare Pages
 Cloudflare Pages est un service d'hébergement de sites statiques construit sur le plus grand réseau Anycast au monde dont Cloudflare est fier (déployé dans plus de 275 villes).
-Il offre d'immenses possibilités d'optimisation des performances, telles que la prise en charge standard de HTTP/3 (QUIC), l'optimisation des images et l'intégration de fonctions en périphérie (Cloudflare Workers). De plus, il n'y a pas de facturation pour la bande passante, ce qui permet de l'utiliser gratuitement même en cas d'augmentation fulgurante du trafic.
+Il offre d'immenses possibilités d'optimisation des performances, telles que la prise en charge standard de [HTTP/3](https://kenji.blog/fr/p/http3-quic-protocol-tcp-udp/) ([QUIC](https://kenji.blog/fr/p/http3-quic-protocol-tcp-udp/)), l'optimisation des images et l'intégration de fonctions en périphérie (Cloudflare Workers). De plus, il n'y a pas de facturation pour la bande passante, ce qui permet de l'utiliser gratuitement même en cas d'augmentation fulgurante du trafic.
 
 ### 2.4 Netlify
 Netlify est un pionnier de la Jamstack et offre une expérience développeur (DX) tout-en-un intégrant des fonctionnalités de formulaire, d'authentification (Identity), de fonctions serverless, etc. Cependant, si vous dépassez la bande passante gratuite (100 Go par mois), des frais de paiement à l'usage élevés sont appliqués. Par conséquent, il est nécessaire de faire attention à la gestion des coûts pour les blogs qui utilisent beaucoup d'images ou de vidéos.
@@ -240,7 +240,7 @@ Son implémentation dans Hugo est également très simple. Il vous suffit d'ajou
 {{ end }}
 ```
 
-L'ajout de l'attribut `defer` permet de charger le script de manière asynchrone sans bloquer l'analyse du document HTML, et de l'exécuter après la construction du DOM. Cela permet de minimiser l'impact sur la vitesse d'affichage initiale (LCP : Largest Contentful Paint et FCP : First Contentful Paint).
+L'ajout de l'attribut `defer` permet de charger le script de manière asynchrone sans bloquer l'analyse du document HTML, et de l'exécuter après la construction du DOM. Cela permet de minimiser l'impact sur la vitesse d'affichage initiale (LCP : Largest Contentful [Paint](https://kenji.blog/fr/p/browser-rendering-mechanism-dom-paint/) et FCP : First Contentful Paint).
 
 ---
 

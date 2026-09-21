@@ -232,7 +232,7 @@ Buat file CSS sebagai entry point di direktori `assets/css/` (buat direktorinya 
 }
 ```
 
-### 5-2. Mengedit File Layout (head.html)
+### 5-2. Mengedit File [Layout](https://kenji.blog/id/p/browser-rendering-mechanism-dom-paint/) (head.html)
 
 Selanjutnya, ambil file CSS di atas dari template Hugo dan tulis pipeline untuk memprosesnya menggunakan PostCSS. Umumnya, Anda mengedit sebagian template (partial template) yang mendefinisikan tag `<head>` (contoh: `layouts/partials/head.html`).
 
@@ -291,7 +291,7 @@ flowchart TD
 
 ## 6. Analisis Kinerja Matematis dalam Optimasi CSS
 
-Salah satu manfaat terbesar menerapkan Tailwind CSS adalah meminimalkan ukuran file CSS yang dikirim. Mari kita analisis secara matematis menggunakan model tentang bagaimana hal ini memengaruhi kinerja web (terutama First Contentful Paint: FCP).
+Salah satu manfaat terbesar menerapkan Tailwind CSS adalah meminimalkan ukuran file CSS yang dikirim. Mari kita analisis secara matematis menggunakan model tentang bagaimana hal ini memengaruhi kinerja web (terutama First Contentful [Paint](https://kenji.blog/id/p/browser-rendering-mechanism-dom-paint/): FCP).
 
 ### Model Pengurangan Ukuran File CSS
 

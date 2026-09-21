@@ -138,7 +138,7 @@ Em um mundo onde a quebra do ECDSA por computadores quânticos se torna possíve
 
 ### 3.1. Geração de endereços e "não divulgação" de chaves públicas
 
-Os endereços do [Bitcoin](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/) (P2PKH: Pay-to-Public-Key-Hash e P2WPKH: Pay-to-Witness-Public-Key-Hash) não usam a própria chave pública, mas a chave pública com hash aplicado múltiplas vezes.
+Os endereços do [Bitcoin](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/) ([P2P](https://kenji.blog/pt/p/webrtc-realtime-communication-p2p/)KH: Pay-to-Public-Key-Hash e P2WPKH: Pay-to-Witness-Public-Key-Hash) não usam a própria chave pública, mas a chave pública com hash aplicado múltiplas vezes.
 
 $$
 \text{Endereço [Bitcoin](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Chave Pública})))
@@ -178,7 +178,7 @@ Uma vez que a chave pública é enviada ao Mempool (área de espera para transa�
 Seguindo o incentivo econômico, os mineradores priorizarão a transação com as taxas mais altas e a incluirão no bloco. Como resultado, a transferência fraudulenta do invasor é aprovada (Confirm) primeiro e a transferência legítima da Alice é rejeitada como "saldo insuficiente (Double Spend)".
 Essa sequência de eventos é chamada de **Ataque Front-running (Front-running Attack)** e, em um mundo onde computadores quânticos são colocados em uso prático, as pessoas terão seus fundos roubados por hackers no instante em que clicarem no botão enviar.
 
-### 3.3. A crise dos endereços reutilizados e endereços antigos (P2PK)
+### 3.3. A crise dos endereços reutilizados e endereços antigos ([P2P](https://kenji.blog/pt/p/webrtc-realtime-communication-p2p/)K)
 
 Um problema ainda mais sério é que os endereços que enviaram fundos pelo menos uma vez no passado (por exemplo, quando reutilizados como endereços de troco) já têm suas chaves públicas registradas permanentemente na blockchain. Essas carteiras correm o risco de ter as chaves privadas calculadas e os saldos roubados a qualquer momento, sem precisar aguardar que enviem novas transações.
 
@@ -289,7 +289,7 @@ Atualmente, no EVM, o `ecrecover` (no endereço: `0x01`) é um Precompiled Contr
 
 Todavia, os novos algoritmos de criptografia de reticulados, como o Dilithium e Falcon, requerem operações de matrizes e polinômios complexos na verificação, logo, seriam necessários milhões e até dezenas de milhões de gás, utilizando os Opcodes que já estão lá atualmente. Esse é o limite atual do Gas consumido no bloco inteiro (perto dos 30 milhões de Gas) sumindo inteiramente num único uso por uma transação.
 
-A melhor maneira de combater essa questão é inserir um Precompiled Contract próprio para verificação PQC através de Hard Forks na rede (Ex.: usar o endereço `0x10` para DilithiumVerify) inseridos no próprio EVM. E isso, é claro, implica em uma colaboração profunda dos desenvolvedores principais do Ethereum de todos os clientes (Geth, Nethermind, Erigon, etc.), aplicando a verificação num nível mais denso pelas linguagens como C++, Go, e Rust; além de necessitar passar por auditorias duradouras pelo processo.
+A melhor maneira de combater essa questão é inserir um Precompiled Contract próprio para verificação PQC através de Hard Forks na rede (Ex.: usar o endereço `0x10` para DilithiumVerify) inseridos no próprio EVM. E isso, é claro, implica em uma colaboração profunda dos desenvolvedores principais do Ethereum de todos os clientes (Geth, Nethermind, Erigon, etc.), aplicando a verificação num nível mais denso pelas linguagens como C++, Go, e [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/); além de necessitar passar por auditorias duradouras pelo processo.
 
 ### 5.3. A dificuldade de formar consenso através do Hard Fork
 

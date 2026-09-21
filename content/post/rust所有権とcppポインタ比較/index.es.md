@@ -10,9 +10,9 @@ tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: 'Una comparación exhaustiva de los punteros de C++ y el modelo de propiedad/préstamo de Rust. Explicamos la esencia de la seguridad de la memoria, desde punteros en crudo y punteros inteligentes hasta el comprobador de préstamos.'
 ---
 
-En la programación de sistemas moderna, equilibrar el rendimiento y la seguridad de la memoria es un desafío eterno. C++ ha reinado como el rey en este campo durante muchos años, pero recientemente, Rust ha estado amenazando su posición. La mayor característica de Rust radica en los conceptos de "Propiedad" (Ownership) y "Préstamo" (Borrowing), que garantizan la seguridad de la memoria en tiempo de compilación sin tener un recolector de basura (GC).
+En la programación de sistemas moderna, equilibrar el rendimiento y la seguridad de la memoria es un desafío eterno. C++ ha reinado como el rey en este campo durante muchos años, pero recientemente, [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) ha estado amenazando su posición. La mayor característica de Rust radica en los conceptos de "Propiedad" (Ownership) y "Préstamo" (Borrowing), que garantizan la seguridad de la memoria en tiempo de compilación sin tener un recolector de basura (GC).
 
-En este artículo, compararemos en detalle los punteros de C++ (punteros en crudo, `std::unique_ptr`, `std::shared_ptr`) y el modelo de propiedad de Rust, y explicaremos de manera exhaustiva mediante ejemplos de código y diagramas cómo el compilador de Rust (comprobador de préstamos o borrow checker) evita el uso después de la liberación (Use-After-Free) y las condiciones de carrera de datos (Data Race).
+En este artículo, compararemos en detalle los punteros de C++ (punteros en crudo, `std::unique_ptr`, `std::shared_ptr`) y el modelo de propiedad de [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/), y explicaremos de manera exhaustiva mediante ejemplos de código y diagramas cómo el compilador de Rust (comprobador de préstamos o borrow checker) evita el uso después de la liberación (Use-After-Free) y las condiciones de carrera de datos (Data Race).
 
 ## 1. Fundamentos de la gestión de memoria: Pila y Montículo (Stack and Heap)
 
@@ -91,13 +91,13 @@ void uniquePtrExample() {
 #### `std::shared_ptr`
 Es un puntero que permite que múltiples punteros compartan el mismo objeto. Utiliza el conteo de referencias (Reference Counting) para liberar la memoria cuando el conteo llega a 0. Dado que requiere operaciones de incremento/decremento atómicas, se produce una ligera sobrecarga de rendimiento (equivalente al $O_{sync}$ mencionado anteriormente).
 
-## 3. Propiedad (Ownership) de Rust: Un cambio de paradigma
+## 3. Propiedad (Ownership) de [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/): Un cambio de paradigma
 
 Rust ha situado el concepto de `std::unique_ptr` de C++ en el núcleo de la especificación del lenguaje, creando un "modelo de propiedad" mucho más estricto.
 
 ### Las 3 reglas de la Propiedad
 
-El sistema de propiedad de Rust se basa en tres reglas extremadamente simples:
+El sistema de propiedad de [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) se basa en tres reglas extremadamente simples:
 
 1. **Cada valor en Rust tiene una variable que se llama su propietario (owner).**
 2. **Solo puede haber un propietario a la vez.**
@@ -116,7 +116,7 @@ fn main() {
 }
 ```
 
-Esta característica de "hacer que las variables sean inaccesibles en tiempo de compilación después de un movimiento" es una de las razones por las que Rust es más seguro que `std::unique_ptr` de C++.
+Esta característica de "hacer que las variables sean inaccesibles en tiempo de compilación después de un movimiento" es una de las razones por las que [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) es más seguro que `std::unique_ptr` de C++.
 
 ```mermaid
 sequenceDiagram
@@ -134,13 +134,13 @@ sequenceDiagram
 
 Si la propiedad se mueve constantemente, tendríamos que devolver la propiedad cada vez que pasamos un valor a una función, lo cual es muy inconveniente. Aquí es donde entra el "Préstamo" (Borrowing). Equivale a los punteros y referencias de C++.
 
-Hay dos tipos de préstamos en Rust:
+Hay dos tipos de préstamos en [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/):
 - **Referencia inmutable (Immutable Reference)**: `&T` (Similar a `const T&` en C++)
 - **Referencia mutable (Mutable Reference)**: `&mut T` (Similar a `T&` en C++)
 
 ### La regla despiadada del comprobador de préstamos ([Borrow Checker](https://kenji.blog/es/p/memory-management-garbage-collection/))
 
-El compilador de Rust lleva incorporado un "comprobador de préstamos" que verifica la validez de las referencias. El comprobador de préstamos impone las siguientes reglas estrictas:
+El compilador de [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) lleva incorporado un "comprobador de préstamos" que verifica la validez de las referencias. El comprobador de préstamos impone las siguientes reglas estrictas:
 
 > En cualquier ámbito dado, solo puede existir uno de los siguientes:
 > - **Una referencia mutable (`&mut T`)**
@@ -150,7 +150,7 @@ Este es un principio llamado **"Múltiple Lectores O un solo Escritor" (Multiple
 
 $$ (N_r \ge 0 \land N_w = 0) \oplus (N_r = 0 \land N_w = 1) $$
 
-Gracias a esta regla, **se eliminan completamente las condiciones de carrera de datos en tiempo de compilación**. Una condición de carrera de datos ocurre cuando ① dos o más punteros acceden a los mismos datos simultáneamente, ② al menos uno de ellos realiza una escritura, y ③ no hay un mecanismo de sincronización. Rust previene esto destruyendo la condición ② en tiempo de compilación.
+Gracias a esta regla, **se eliminan completamente las condiciones de carrera de datos en tiempo de compilación**. Una condición de carrera de datos ocurre cuando ① dos o más punteros acceden a los mismos datos simultáneamente, ② al menos uno de ellos realiza una escritura, y ③ no hay un mecanismo de sincronización. [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) previene esto destruyendo la condición ② en tiempo de compilación.
 
 ```rust
 // Rust: Error de compilación por violación de la regla de préstamo
@@ -195,7 +195,7 @@ int main() {
 }
 ```
 
-### Defensa en tiempo de compilación por Rust
+### Defensa en tiempo de compilación por [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/)
 
 Escribamos exactamente la misma lógica en Rust.
 
@@ -215,7 +215,7 @@ fn main() {
 }
 ```
 
-De esta manera, en Rust, "modificar un valor (préstamo mutable) mientras se está leyendo (préstamo inmutable)" está prohibido a nivel del compilador, por lo que errores fatales como el uso después de la liberación (Use-After-Free) y la invalidación de iteradores se capturan de forma fiable en tiempo de compilación.
+De esta manera, en [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/), "modificar un valor (préstamo mutable) mientras se está leyendo (préstamo inmutable)" está prohibido a nivel del compilador, por lo que errores fatales como el uso después de la liberación (Use-After-Free) y la invalidación de iteradores se capturan de forma fiable en tiempo de compilación.
 
 ```mermaid
 graph LR
@@ -227,9 +227,9 @@ graph LR
     style D stroke:#FF0000,stroke-width:2px
 ```
 
-## 6. Propiedad Compartida en Rust: `Rc` y `Arc`
+## 6. Propiedad Compartida en [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/): `Rc` y `Arc`
 
-Rust también proporciona una propiedad compartida equivalente a `std::shared_ptr` de C++, pero separa claramente los tipos para uso en un solo hilo y para uso en múltiples hilos.
+[Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) también proporciona una propiedad compartida equivalente a `std::shared_ptr` de C++, pero separa claramente los tipos para uso en un solo hilo y para uso en múltiples hilos.
 
 ### Para un solo hilo: `Rc<T>` (Reference Counted)
 `Rc<T>` es un puntero inteligente de conteo de referencias no seguro para hilos (non-thread-safe). Ya que incrementa y decrementa el conteo sin utilizar instrucciones atómicas, es extremadamente rápido dentro de un solo hilo. Sin embargo, si intentas enviarlo a otro hilo, resultará en un error de compilación (porque no implementa el rasgo `Send`).
@@ -239,7 +239,7 @@ Cuando se comparte entre hilos, se usa `Arc<T>`, que realiza incrementos y decre
 
 Además, en C++, si varios hilos escriben simultáneamente en una variable compartida mediante `std::shared_ptr`, se producirá una condición de carrera de datos. Para prevenir esto, es necesario usar `std::mutex` manualmente de forma correcta.
 
-Por otro lado, en Rust, **no se pueden modificar los datos internos** solo con `Arc<T>`. Si se necesita modificar, debe combinarse con `Mutex<T>`, que es un mutex.
+Por otro lado, en [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/), **no se pueden modificar los datos internos** solo con `Arc<T>`. Si se necesita modificar, debe combinarse con `Mutex<T>`, que es un mutex.
 
 ```rust
 use std::sync::{Arc, Mutex};
@@ -269,13 +269,13 @@ fn main() {
 }
 ```
 
-Lo que cabe destacar es que el `Mutex<T>` de Rust no es solo un mecanismo de bloqueo, sino que **"encapsula los datos a proteger como un tipo"**. Esto evita completamente a nivel de compilación el error de "acceder a los datos olvidando tomar el bloqueo". El sistema está diseñado para que no puedas obtener el derecho de acceso (referencia) a los datos internos a menos que adquieras el bloqueo (`lock()`).
+Lo que cabe destacar es que el `Mutex<T>` de [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) no es solo un mecanismo de bloqueo, sino que **"encapsula los datos a proteger como un tipo"**. Esto evita completamente a nivel de compilación el error de "acceder a los datos olvidando tomar el bloqueo". El sistema está diseñado para que no puedas obtener el derecho de acceso (referencia) a los datos internos a menos que adquieras el bloqueo (`lock()`).
 
 ## Conclusión: ¿"Inspección previa" por parte del compilador o "responsabilidad propia" por parte del desarrollador?
 
 Los punteros y los punteros inteligentes de C++ proporcionan un alto grado de control y rendimiento a los desarrolladores, pero su uso correcto depende de la disciplina del desarrollador. Aunque la introducción de RAII y `std::unique_ptr` hizo que C++ fuera drásticamente más seguro, aún no puede prevenir por completo comportamientos indefinidos como el acceso después del movimiento y la invalidación de iteradores a nivel del lenguaje.
 
-Por otro lado, Rust detecta estos errores en **tiempo de compilación** en lugar de en tiempo de ejecución, incorporando las reglas de Propiedad (Ownership) y Préstamo (Borrowing) en el compilador. Esta fuerte garantía de que "si compila, es seguro para la memoria" es la razón principal por la que Rust está ganando apoyo rápidamente en la programación de sistemas.
+Por otro lado, [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) detecta estos errores en **tiempo de compilación** en lugar de en tiempo de ejecución, incorporando las reglas de Propiedad (Ownership) y Préstamo (Borrowing) en el compilador. Esta fuerte garantía de que "si compila, es seguro para la memoria" es la razón principal por la que Rust está ganando apoyo rápidamente en la programación de sistemas.
 
 Luchar contra el comprobador de préstamos de Rust (Fight the borrow checker) puede ser un gran obstáculo para los principiantes, pero no es más que el compilador asumiendo estrictamente el cálculo complejo de "rastrear la vida útil del puntero" que los programadores de C++ tradicionalmente hacían en sus cabezas.
 

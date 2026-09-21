@@ -1,56 +1,3 @@
-+++
-title = "Guide Complet des Algorithmes de Tri : Du Tri à Bulles au Timsort"
-description = "Une explication complète des algorithmes de tri en programmation. Couvre tout, des bases aux techniques avancées."
-slug = "sorting-algorithms"
-date = "2026-09-21T01:50:00+09:00"
-image = "eyecatch.jpg"
-categories = ["programming", "algorithms", "computer-science"]
-tags = ["sort", "python", "algorithm", "big-o"]
-+++
-
-# Guide Complet des Algorithmes de Tri : Du Tri à Bulles au Timsort
-
-Les algorithmes et les structures de données constituent le fondement essentiel de l'informatique. Parmi eux, le « tri » est une opération fondamentale indispensable dans toutes sortes de situations telles que la recherche, le regroupement de données et la visualisation. Dans cet article, nous expliquerons en détail les algorithmes de tri, allant des bases apprises par les débutants aux algorithmes avancés adoptés dans les bibliothèques standard des langages de programmation modernes, en couvrant leur fonctionnement, leur implémentation, leur complexité et les cas où vous devriez les utiliser.
-
-## 1. Connaissances de Base des Algorithmes de Tri
-
-Avant d'apprendre les algorithmes de tri, il est nécessaire de comprendre plusieurs concepts importants qui servent de critères d'évaluation des algorithmes. En les comprenant, vous verrez clairement pourquoi il existe tant d'algorithmes de tri et lequel choisir selon la situation.
-
-### 1.1 Stabilité (Stability)
-
-La **stabilité** (Stability) dans un algorithme de tri est la propriété qui indique si l'ordre relatif des éléments ayant la même clé de tri est conservé avant et après le tri.
-
-Par exemple, supposons que nous ayons une liste de données contenant les notes de tests et les noms d'élèves.
-`[ (80 points, "Personne A"), (70 points, "Personne B"), (80 points, "Personne C") ]`
-Lorsque nous trions cela par ordre croissant de notes, si c'est un algorithme de tri stable, cela deviendra toujours comme ceci :
-`[ (70 points, "Personne B"), (80 points, "Personne A"), (80 points, "Personne C") ]`
-À l'origine, "Personne A" était avant "Personne C", donc même avec le même score de 80 points, "Personne A" est placé avant. C'est le **tri stable** (Stable Sort).
-
-D'un autre côté, dans un algorithme de tri instable, cet ordre pourrait être inversé pour devenir `(80 points, "Personne C"), (80 points, "Personne A")`. La stabilité devient très importante lors d'un tri multiple avec plusieurs clés (par exemple : trier d'abord par nom, puis par note).
-
-### 1.2 Sur place (In-place) et Hors place (Out-of-place)
-
-C'est une classification indiquant combien de mémoire supplémentaire un algorithme nécessite lors de son exécution.
-
-*   **Sur place (In-place)** : Ce sont des algorithmes qui modifient directement le tableau d'entrée lui-même lors du tri, et qui ne nécessitent qu'une taille constante ($O(1)$) ou logarithmique ($O(\log n)$) de mémoire supplémentaire utilisée pour échanger des éléments, etc. Ils sont très utiles dans des environnements avec des limites de mémoire strictes.
-*   **Hors place (Out-of-place)** : Ce sont des algorithmes qui nécessitent un espace mémoire supplémentaire séparé du tableau d'entrée et proportionnel à la taille de l'entrée (par exemple, $O(n)$) pour effectuer le tri.
-
-### 1.3 Complexité et Notation Grand O (Big O)
-
-Pour exprimer l'efficacité d'un algorithme, nous utilisons la **Notation Big O** (Big O Notation), qui est une notation asymptotique.
-Dans les algorithmes de tri, on évalue principalement la **complexité en temps** (temps d'exécution) et la **complexité en espace** (utilisation de la mémoire).
-
-*   $O(1)$ : Temps constant. Toujours constant quelle que soit la quantité de données.
-*   $O(n)$ : Temps linéaire. Augmente proportionnellement à la quantité de données.
-*   $O(n \log n)$ : Temps linéarithmique. La vitesse maximale théorique pour les algorithmes de tri basés sur la comparaison.
-*   $O(n^2)$ : Temps quadratique. Lorsque la quantité de données double, le temps est multiplié par quatre. Inadapté aux données à grande échelle.
-
-Pour les algorithmes de tri basés sur la comparaison (méthodes qui trions en comparant la taille entre les éléments), il est mathématiquement prouvé que la limite inférieure de la complexité dans le pire des cas est $O(n \log n)$.
-
-$$
-\text{Limite inférieure du tri par comparaison} = \Omega(n \log n)
-$$
-
 ---
 
 ## 2. Les Algorithmes en $O(n^2)$ : Bases et Approches Intuitives
@@ -520,7 +467,7 @@ Alors que les manuels académiques couvrent souvent jusqu'au tri rapide et au tr
 
 ### 5.1 Timsort (Par défaut en Python)
 
-Le Timsort est un algorithme implémenté pour Python en 2002 par Tim Peters. Aujourd'hui, il est le champion du monde pratique, adopté dans de nombreux langages, tels que `list.sort()` et `sorted()` de Python bien sûr, mais aussi pour les tableaux d'objets de Java et le tri standard de Rust.
+Le Timsort est un algorithme implémenté pour Python en 2002 par Tim Peters. Aujourd'hui, il est le champion du monde pratique, adopté dans de nombreux langages, tels que `list.sort()` et `sorted()` de Python bien sûr, mais aussi pour les tableaux d'objets de Java et le tri standard de [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/).
 
 La plus grande philosophie de conception du Timsort est basée sur l'expérience selon laquelle **« dans le monde réel, les données sont rarement complètement aléatoires, et sont souvent partiellement triées (il y a des blocs consécutifs ascendants ou descendants) »**.
 

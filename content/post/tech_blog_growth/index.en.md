@@ -27,9 +27,9 @@ The foundational system of a blog (such as a static site generator) and the stru
 Google has adopted page experience as a ranking factor, and **Core Web Vitals (LCP, FID/INP, CLS)** cannot be ignored, even for tech blogs.
 Tech blogs heavily use large amounts of source code blocks, mathematical formulas (MathJax / KaTeX), and explanatory diagrams. These are factors that delay page rendering.
 
-- **LCP (Largest Contentful Paint)**: The loading speed of the main content above the fold. Use WebP or AVIF for the eye-catch image and add the `fetchpriority="high"` attribute to preload it. Also, huge CSS and JS files for syntax highlighting should be loaded asynchronously or designed to load only on pages where they are needed.
-- **CLS (Cumulative Layout Shift)**: Layout shifts during page loading. By securing the display area for formulas and images in advance using CSS properties like `aspect-ratio`, you can prevent layout jank when the DOM is inserted later.
-- **INP (Interaction to Next Paint)**: Responsiveness to user interactions. Heavy JavaScript (such as dynamic full-text search on the client side or executing a massive Markdown parser) must not be executed on the main thread; it is essential to offload it to a Web Worker or generate it as static HTML (SSG) during the build process.
+- **LCP (Largest Contentful [Paint](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/))**: The loading speed of the main content above the fold. Use WebP or AVIF for the eye-catch image and add the `fetchpriority="high"` attribute to preload it. Also, huge CSS and JS files for syntax highlighting should be loaded asynchronously or designed to load only on pages where they are needed.
+- **CLS (Cumulative [Layout](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/) Shift)**: Layout shifts during page loading. By securing the display area for formulas and images in advance using CSS properties like `aspect-ratio`, you can prevent layout jank when the DOM is inserted later.
+- **INP (Interaction to Next [Paint](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/))**: Responsiveness to user interactions. Heavy JavaScript (such as dynamic full-text search on the client side or executing a massive Markdown parser) must not be executed on the main thread; it is essential to offload it to a Web Worker or generate it as static HTML (SSG) during the build process.
 
 ### 1.2 Implementation of Structured Data (JSON-LD)
 

@@ -28,7 +28,7 @@ description: 'Понятное объяснение механизма и кон
 ![](Animation_Sieb_des_Eratosthenes.gif)
 
 
-## Реализация на Rust
+## Реализация на [Rust](https://kenji.blog/ru/p/webassembly-wasm-current-future/)
 
 ```
 fn main() {

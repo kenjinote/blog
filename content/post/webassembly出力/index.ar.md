@@ -11,13 +11,13 @@ tags: ["C++", "Rust", "Wasm", "JavaScript"]
 
 ## 1. مقدمة
 
-في تطوير الويب الحديث، أثبتت JavaScript (و TypeScript) مكانتها لفترة طويلة باعتبارها لغة البرمجة الوحيدة التي تعمل في المتصفح. ومع ذلك، في السنوات الأخيرة، زاد الطلب على تنفيذ حسابات أكثر تقدمًا في المتصفح نفسه، مثل معالجة الصور، وترميز الفيديو، والألعاب ثلاثية الأبعاد، والمحاكاة الفيزيائية. وهنا ظهر **WebAssembly (المعروف باسم Wasm)**.
+في تطوير الويب الحديث، أثبتت JavaScript (و TypeScript) مكانتها لفترة طويلة باعتبارها لغة البرمجة الوحيدة التي تعمل في المتصفح. ومع ذلك، في السنوات الأخيرة، زاد الطلب على تنفيذ حسابات أكثر تقدمًا في المتصفح نفسه، مثل معالجة الصور، وترميز الفيديو، والألعاب ثلاثية الأبعاد، والمحاكاة الفيزيائية. وهنا ظهر **[WebAssembly](https://kenji.blog/ar/p/webassembly-wasm-current-future/) (المعروف باسم [Wasm](https://kenji.blog/ar/p/webassembly-wasm-current-future/))**.
 
-تبدأ هذه المقالة بأساسيات WebAssembly، وتشرح الإجراءات والهياكل الداخلية بالتفصيل لإخراج Wasm من لغتين قويتين لبرمجة النظم: C++ (باستخدام Emscripten) و Rust (باستخدام `wasm-pack`)، وربطها ببيئة JavaScript. بالإضافة إلى ذلك، سنتعمق بشكل شامل في إدارة حدود الذاكرة، وطرق تمرير البيانات المعقدة مثل السلاسل النصية والمصفوفات، والأعباء الإضافية على الأداء، وصولاً إلى التنسيق الثنائي لـ Wasm (`.wasm`).
+تبدأ هذه المقالة بأساسيات WebAssembly، وتشرح الإجراءات والهياكل الداخلية بالتفصيل لإخراج Wasm من لغتين قويتين لبرمجة النظم: C++ (باستخدام Emscripten) و [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) (باستخدام `wasm-pack`)، وربطها ببيئة JavaScript. بالإضافة إلى ذلك، سنتعمق بشكل شامل في إدارة حدود الذاكرة، وطرق تمرير البيانات المعقدة مثل السلاسل النصية والمصفوفات، والأعباء الإضافية على الأداء، وصولاً إلى التنسيق الثنائي لـ [Wasm](https://kenji.blog/ar/p/webassembly-wasm-current-future/) (`.wasm`).
 
-## 2. نظرة عامة على WebAssembly (Wasm) وبنيته
+## 2. نظرة عامة على [WebAssembly](https://kenji.blog/ar/p/webassembly-wasm-current-future/) ([Wasm](https://kenji.blog/ar/p/webassembly-wasm-current-future/)) وبنيته
 
-WebAssembly هو تنسيق أوامر ثنائي لآلة افتراضية تعتمد على المكدس (Stack-based virtual machine). تم تصميمه كـ "هدف تجميع محمول" يمكن التحويل البرمجي إليه من لغات مثل C/C++، Rust، Go، و Zig، ويهدف إلى التنفيذ بسرعة تقترب من السرعة الأصلية على متصفحات الويب.
+WebAssembly هو تنسيق أوامر ثنائي لآلة افتراضية تعتمد على المكدس (Stack-based virtual machine). تم تصميمه كـ "هدف تجميع محمول" يمكن التحويل البرمجي إليه من لغات مثل C/C++، [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/)، Go، و Zig، ويهدف إلى التنفيذ بسرعة تقترب من السرعة الأصلية على متصفحات الويب.
 
 يوضح الشكل التالي التدفق العام لسلسلة الأدوات (toolchain) بدءًا من توليد WebAssembly من C++ و Rust حتى تنفيذه في المتصفح.
 
@@ -38,11 +38,11 @@ graph TD
   I --> J
 ```
 
-Wasm ليس بديلاً عن JavaScript. تم تصميمه ليعمل جنبًا إلى جنب مع JavaScript، ويستفيد من نقاط قوة كليهما عن طريق تفريغ المهام ذات الحمل الحسابي الثقيل إلى Wasm.
+[Wasm](https://kenji.blog/ar/p/webassembly-wasm-current-future/) ليس بديلاً عن JavaScript. تم تصميمه ليعمل جنبًا إلى جنب مع JavaScript، ويستفيد من نقاط قوة كليهما عن طريق تفريغ المهام ذات الحمل الحسابي الثقيل إلى Wasm.
 
 ## 3. تحدي رياضي: حساب مجموعة ماندلبروت
 
-في هذه المقالة، سنقوم بالتنفيذ بلغة C++ و Rust باستخدام خوارزمية رسم "مجموعة ماندلبروت (Mandelbrot set)" التي تضع حملاً عاليًا على وحدة المعالجة المركزية (CPU).
+في هذه المقالة، سنقوم بالتنفيذ بلغة C++ و [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) باستخدام خوارزمية رسم "مجموعة ماندلبروت (Mandelbrot set)" التي تضع حملاً عاليًا على وحدة المعالجة المركزية (CPU).
 
 يتم تعريف مجموعة ماندلبروت بواسطة صيغة التكرار المعقدة التالية:
 
@@ -58,7 +58,7 @@ $$ x^2 + y^2 > 4 $$
 
 ## 4. النهج باستخدام C++ و Emscripten
 
-Emscripten هي سلسلة أدوات مترجم تعتمد على LLVM وهي المعيار الفعلي لتجميع كود C/C++ إلى WebAssembly. إنها توفر وقت تشغيل (runtime) قوي يحاكي مكالمات نظام POSIX باستخدام واجهات برمجة تطبيقات المتصفح (Web API).
+Emscripten هي سلسلة أدوات مترجم تعتمد على LLVM وهي المعيار الفعلي لتجميع كود C/C++ إلى [WebAssembly](https://kenji.blog/ar/p/webassembly-wasm-current-future/). إنها توفر وقت تشغيل (runtime) قوي يحاكي مكالمات نظام POSIX باستخدام واجهات برمجة تطبيقات المتصفح (Web API).
 
 ### كود تنفيذ C++
 
@@ -113,7 +113,7 @@ extern "C" {
 emcc mandelbrot.cpp -O3 -s WASM=1 -s EXPORTED_FUNCTIONS="['_compute_mandelbrot', '_malloc', '_free']" -s EXPORTED_RUNTIME_METHODS="['ccall', 'cwrap']" -o mandelbrot.js
 ```
 
-على جانب JavaScript، نقوم بتحميل كود الغراء (`mandelbrot.js`) الذي تم إنشاؤه بواسطة Emscripten، واستدعائه باستخدام WebAssembly API على النحو التالي:
+على جانب JavaScript، نقوم بتحميل كود الغراء (`mandelbrot.js`) الذي تم إنشاؤه بواسطة Emscripten، واستدعائه باستخدام [WebAssembly](https://kenji.blog/ar/p/webassembly-wasm-current-future/) API على النحو التالي:
 
 ```javascript
 Module.onRuntimeInitialized = () => {
@@ -137,9 +137,9 @@ Module.onRuntimeInitialized = () => {
 };
 ```
 
-## 5. النهج باستخدام Rust و `wasm-pack`
+## 5. النهج باستخدام [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) و `wasm-pack`
 
-توفر Rust دعمًا من الدرجة الأولى لـ WebAssembly، وباستخدام أدوات `wasm-bindgen` و `wasm-pack`، يمكن تحقيق تكامل متقدم بين JavaScript و Rust. في حين أن Emscripten يتبع نهج "إحضار وقت تشغيل C/C++ الضخم إلى المتصفح"، فإن `wasm-pack` في Rust يتبع نهج "إنشاء الروابط الضرورية فقط (كود الغراء JS)".
+توفر [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) دعمًا من الدرجة الأولى لـ [WebAssembly](https://kenji.blog/ar/p/webassembly-wasm-current-future/)، وباستخدام أدوات `wasm-bindgen` و `wasm-pack`، يمكن تحقيق تكامل متقدم بين JavaScript و [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/). في حين أن Emscripten يتبع نهج "إحضار وقت تشغيل C/C++ الضخم إلى المتصفح"، فإن `wasm-pack` في [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) يتبع نهج "إنشاء الروابط الضرورية فقط (كود الغراء JS)".
 
 ### كود تنفيذ Rust
 
@@ -193,7 +193,7 @@ pub fn compute_mandelbrot_rust(width: usize, height: usize, max_iter: u32) -> Ve
 wasm-pack build --target web
 ```
 
-استورد الحزمة التي تم إنشاؤها من JavaScript. بفضل `wasm-bindgen`، يتم تحويل `Vec<i32>` في Rust تلقائيًا إلى `Int32Array` في JavaScript (إخفاء عمليات المؤشر).
+استورد الحزمة التي تم إنشاؤها من JavaScript. بفضل `wasm-bindgen`، يتم تحويل `Vec<i32>` في [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) تلقائيًا إلى `Int32Array` في JavaScript (إخفاء عمليات المؤشر).
 
 ```javascript
 import init, { compute_mandelbrot_rust } from './pkg/mandelbrot_wasm.js';
@@ -215,7 +215,7 @@ run();
 
 ## 6. الغوص العميق: حدود الذاكرة وتمرير أنواع البيانات
 
-أحد أهم المفاهيم في WebAssembly هو "الذاكرة الخطية (Linear Memory)". لا يمكن لكود Wasm الوصول المباشر إلى مساحة ذاكرة المضيف (المتصفح)، وبدلاً من ذلك يتم تخصيص `ArrayBuffer` معزول وضخم. هذه هي الذاكرة الخطية.
+أحد أهم المفاهيم في [WebAssembly](https://kenji.blog/ar/p/webassembly-wasm-current-future/) هو "الذاكرة الخطية (Linear Memory)". لا يمكن لكود [Wasm](https://kenji.blog/ar/p/webassembly-wasm-current-future/) الوصول المباشر إلى مساحة ذاكرة المضيف (المتصفح)، وبدلاً من ذلك يتم تخصيص `ArrayBuffer` معزول وضخم. هذه هي الذاكرة الخطية.
 
 ```mermaid
 sequenceDiagram
@@ -238,29 +238,29 @@ sequenceDiagram
 
 ### كيفية تمرير السلاسل النصية والمصفوفات
 
-يمكن تمرير الأعداد الصحيحة وأرقام الفاصلة العائمة (`i32`, `i64`, `f32`, `f64`) مباشرة كقيم إلى وظائف Wasm. ومع ذلك، لا يمكن تمرير الأنواع المعقدة مثل السلاسل النصية، المصفوفات، والهياكل (structs) مباشرة كتوقيعات (signatures) لوظيفة Wasm.
+يمكن تمرير الأعداد الصحيحة وأرقام الفاصلة العائمة (`i32`, `i64`, `f32`, `f64`) مباشرة كقيم إلى وظائف [Wasm](https://kenji.blog/ar/p/webassembly-wasm-current-future/). ومع ذلك، لا يمكن تمرير الأنواع المعقدة مثل السلاسل النصية، المصفوفات، والهياكل (structs) مباشرة كتوقيعات (signatures) لوظيفة Wasm.
 
 **في حالة Emscripten**:
-1. يستدعي جانب JS `Module._malloc` لتخصيص مساحة ذاكرة خطية في جانب Wasm.
+1. يستدعي جانب JS `Module._malloc` لتخصيص مساحة ذاكرة خطية في جانب [Wasm](https://kenji.blog/ar/p/webassembly-wasm-current-future/).
 2. يكتب JS البيانات في عنوان الذاكرة المخصص (المؤشر) باستخدام أدوات مثل `Module.HEAPU8.set()`.
 3. يُمرر المؤشر إلى وظيفة C++.
 4. بعد الحساب، يقرأ JS النتيجة من المؤشر، وأخيرًا يستدعي `Module._free`.
 
-**في حالة wasm-bindgen (Rust)**:
-يتم إخفاء سير عمل إدارة الذاكرة المعقد المذكور أعلاه بالكامل داخل كود الغراء (غلاف JS) الذي يتم إنشاؤه تلقائيًا. عندما تمرر مجرد `String` أو `Array` من JS إلى دالة Rust، يتم تلقائيًا في الخلفية تأمين المخزن المؤقت (ما يعادل `malloc`)، النسخ، تمرير المؤشر، وتحرير الذاكرة.
+**في حالة wasm-bindgen ([Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/))**:
+يتم إخفاء سير عمل إدارة الذاكرة المعقد المذكور أعلاه بالكامل داخل كود الغراء (غلاف JS) الذي يتم إنشاؤه تلقائيًا. عندما تمرر مجرد `String` أو `Array` من JS إلى دالة [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/)، يتم تلقائيًا في الخلفية تأمين المخزن المؤقت (ما يعادل `malloc`)، النسخ، تمرير المؤشر، وتحرير الذاكرة.
 
 ## 7. الأعباء الإضافية على الأداء والتحسين
 
-يمكن تنفيذ WebAssembly بسرعة تقترب من السرعة الأصلية، ولكن يوجد عبء إضافي (overhead) في "الاتصال عبر الحدود بين JavaScript و WebAssembly (Interop)".
+يمكن تنفيذ [WebAssembly](https://kenji.blog/ar/p/webassembly-wasm-current-future/) بسرعة تقترب من السرعة الأصلية، ولكن يوجد عبء إضافي (overhead) في "الاتصال عبر الحدود بين JavaScript و WebAssembly (Interop)".
 
-* **عبء الاستدعاء**: تكلفة التبديل لمحرك JavaScript لاستدعاء وظيفة Wasm. على الرغم من أنه تم تحسينه بشكل كبير حاليًا، إلا أنه يجب تجنب تصميم يستدعي وظيفة خفيفة جدًا عشرات الآلاف من المرات في كل إطار.
-* **تكلفة نسخ الذاكرة**: عند تمرير السلاسل النصية أو المصفوفات إلى Wasm، يحدث نسخ للبيانات من الذاكرة المُدارة بواسطة جمع القمامة ([Garbage Collection](https://kenji.blog/ar/p/memory-management-garbage-collection/)) في JS إلى الذاكرة الخطية لـ Wasm (ArrayBuffer). عند تمرير كميات كبيرة من البيانات، يتطلب الأمر تصميمًا "خاليًا من النسخ (zero-copy)" حيث يتم بناء البيانات في ذاكرة Wasm منذ البداية، ويصل إليها جانب JS من خلال عرض TypedArray (مثل `Uint8Array`).
+* **عبء الاستدعاء**: تكلفة التبديل لمحرك JavaScript لاستدعاء وظيفة [Wasm](https://kenji.blog/ar/p/webassembly-wasm-current-future/). على الرغم من أنه تم تحسينه بشكل كبير حاليًا، إلا أنه يجب تجنب تصميم يستدعي وظيفة خفيفة جدًا عشرات الآلاف من المرات في كل إطار.
+* **تكلفة نسخ الذاكرة**: عند تمرير السلاسل النصية أو المصفوفات إلى Wasm، يحدث نسخ للبيانات من الذاكرة المُدارة بواسطة جمع القمامة ([Garbage Collection](https://kenji.blog/ar/p/memory-management-garbage-collection/)) في JS إلى الذاكرة الخطية لـ [Wasm](https://kenji.blog/ar/p/webassembly-wasm-current-future/) (ArrayBuffer). عند تمرير كميات كبيرة من البيانات، يتطلب الأمر تصميمًا "خاليًا من النسخ (zero-copy)" حيث يتم بناء البيانات في ذاكرة Wasm منذ البداية، ويصل إليها جانب JS من خلال عرض TypedArray (مثل `Uint8Array`).
 
-على سبيل المثال، في محركات الألعاب ومحركات الفيزياء، من الشائع الاحتفاظ بكل الحالة (state) داخل الذاكرة الخطية لـ Wasm، بينما تكون JavaScript مسؤولة فقط عن مُشغل "التحديث" لكل إطار ورسم الشاشة (استدعاء WebGL/WebGPU API).
+على سبيل المثال، في محركات الألعاب ومحركات الفيزياء، من الشائع الاحتفاظ بكل الحالة (state) داخل الذاكرة الخطية لـ [Wasm](https://kenji.blog/ar/p/webassembly-wasm-current-future/)، بينما تكون JavaScript مسؤولة فقط عن مُشغل "التحديث" لكل إطار ورسم الشاشة (استدعاء WebGL/WebGPU API).
 
-## 8. تشريح التنسيق الثنائي لـ WebAssembly (.wasm)
+## 8. تشريح التنسيق الثنائي لـ [WebAssembly](https://kenji.blog/ar/p/webassembly-wasm-current-future/) (.wasm)
 
-دعونا الآن نلقي نظرة على البنية الداخلية لملف `.wasm` الذي ينتجه المترجم. يتكون الملف الثنائي لـ Wasm من مجموعة من الكتل المنطقية تسمى "أقسام (Sections)" مع التركيز على قابلية التوسعة وسرعة التحليل.
+دعونا الآن نلقي نظرة على البنية الداخلية لملف `.wasm` الذي ينتجه المترجم. يتكون الملف الثنائي لـ [Wasm](https://kenji.blog/ar/p/webassembly-wasm-current-future/) من مجموعة من الكتل المنطقية تسمى "أقسام (Sections)" مع التركيز على قابلية التوسعة وسرعة التحليل.
 
 ```mermaid
 graph TD
@@ -281,15 +281,15 @@ graph TD
 يبدأ الرقم السحري للملف دائمًا بـ `0x00 0x61 0x73 0x6D` (`\0asm`). كل قسم يليه له معرّف (ID) خاص به.
 
 * **قسم النوع (Type Section)**: يُعرف جميع توقيعات الوظائف المستخدمة (أنواع الوسائط والقيم المرجعة).
-* **قسم الاستيراد (Import Section)**: قائمة بالوظائف والذاكرة المقدمة لـ Wasm من بيئة JavaScript. على سبيل المثال، إذا تم استدعاء `console.log` من C++، فسيتم الإعلان عنه هنا.
+* **قسم الاستيراد (Import Section)**: قائمة بالوظائف والذاكرة المقدمة لـ [Wasm](https://kenji.blog/ar/p/webassembly-wasm-current-future/) من بيئة JavaScript. على سبيل المثال، إذا تم استدعاء `console.log` من C++، فسيتم الإعلان عنه هنا.
 * **قسم الكود (Code Section)**: يخزن تعليمات الكود البايتي الفعلية (مثل `i32.add`، `call`، `loop`). نظرًا لأنه آلة تعتمد على المكدس، فإنه يضع المعاملات على المكدس ويستدعي تعليمات العملية.
-* **قسم البيانات (Data Section)**: يتم تحميل القيم الحرفية للسلاسل الثابتة أو بيانات التهيئة المحددة في كود C++ أو Rust إلى الذاكرة الخطية من هذا القسم.
+* **قسم البيانات (Data Section)**: يتم تحميل القيم الحرفية للسلاسل الثابتة أو بيانات التهيئة المحددة في كود C++ أو [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) إلى الذاكرة الخطية من هذا القسم.
 
-من خلال البث والترجمة (Streaming Compilation) (الترجمة إلى لغة الآلة بالتوازي أثناء التنزيل) لهذه الأقسام، تحقق محركات Wasm في المتصفح سرعة تشغيل أسرع بشكل كبير.
+من خلال البث والترجمة (Streaming Compilation) (الترجمة إلى لغة الآلة بالتوازي أثناء التنزيل) لهذه الأقسام، تحقق محركات [Wasm](https://kenji.blog/ar/p/webassembly-wasm-current-future/) في المتصفح سرعة تشغيل أسرع بشكل كبير.
 
 ## 9. C++ مقابل Rust: أيهما يجب أن تختار؟
 
-عند إنشاء WebAssembly، يعتمد الاختيار بين C++ و Rust بشكل كبير على متطلبات المشروع والأصول الحالية.
+عند إنشاء [WebAssembly](https://kenji.blog/ar/p/webassembly-wasm-current-future/)، يعتمد الاختيار بين C++ و Rust بشكل كبير على متطلبات المشروع والأصول الحالية.
 
 **الحالات التي يجب فيها اختيار C++ / Emscripten**:
 * عندما تريد ترحيل (porting) مكتبات C/C++ الحالية (مثل FFmpeg، OpenCV، SQLite) إلى المتصفح.

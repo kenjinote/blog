@@ -403,7 +403,7 @@ For `HRESULT`, you can either create a dedicated error category or use the Windo
 
 ## 10. Modern Error Handling Using `std::expected` (C++23)
 
-C++23 introduced `std::expected`, which is equivalent to Rust's `Result` type. In projects that avoid exceptions (for performance reasons or in designs where errors occur frequently), it is the optimal method for modernizing Win32 return values.
+C++23 introduced `std::expected`, which is equivalent to [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)'s `Result` type. In projects that avoid exceptions (for performance reasons or in designs where errors occur frequently), it is the optimal method for modernizing Win32 return values.
 
 ```cpp
 #include <expected>

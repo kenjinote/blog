@@ -12,7 +12,7 @@ tags: ["Rust", "CLI", "clap", "tokio"]
 
 ## 1. Introduction
 
-Dans le développement logiciel moderne, les outils CLI (Command Line Interface) sont essentiels pour augmenter considérablement la productivité des développeurs. Autrefois, les scripts shell, Python ou Ruby étaient la norme, mais ces dernières années, **Rust** s'est imposé comme le standard de facto pour le développement d'outils CLI.
+Dans le développement logiciel moderne, les outils CLI (Command Line Interface) sont essentiels pour augmenter considérablement la productivité des développeurs. Autrefois, les scripts shell, Python ou Ruby étaient la norme, mais ces dernières années, **[Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/)** s'est imposé comme le standard de facto pour le développement d'outils CLI.
 
 Dans cet article, nous expliquerons de manière exhaustive, des bases jusqu'aux concepts avancés, comment construire un outil CLI pratique avec Rust qui "fonctionne à une vitesse fulgurante et se développe à une vitesse fulgurante". Nous ne ferons pas que créer quelque chose qui fonctionne, mais nous couvrirons également la gestion robuste des erreurs au niveau commercial, les requêtes API rapides utilisant le traitement asynchrone, et l'implémentation de barres de progression pour améliorer l'expérience utilisateur (UX).
 
@@ -41,9 +41,9 @@ Grâce au modèle de possession (Ownership), qui est la plus grande arme de Rust
 L'écosystème Rust dispose de nombreuses excellentes crates (bibliothèques) qui soutiennent fortement le développement CLI. Dans ce tutoriel, nous utiliserons les crates suivantes, que l'on peut appeler la "pile d'or" dans le développement CLI Rust moderne.
 
 1. **`clap`**: La crate la plus puissante et populaire pour l'analyse des arguments de ligne de commande. Depuis la version 4, la définition déclarative utilisant la macro Derive est devenue plus raffinée, prenant en charge la génération automatique de messages d'aide et de scripts de complétion de saisie.
-2. **`tokio`**: Le standard de facto pour le runtime asynchrone de Rust. Il gère les E/S asynchrones multithread de manière extrêmement efficace.
+2. **`tokio`**: Le standard de facto pour le runtime asynchrone de [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/). Il gère les E/S asynchrones multithread de manière extrêmement efficace.
 3. **`reqwest`**: Un client HTTP très performant fonctionnant sur `tokio`. Il dispose d'une API facile à utiliser et permet d'implémenter facilement des requêtes API asynchrones.
-4. **`serde` & `serde_json`**: Frameworks pour la sérialisation et la désérialisation de données. Indispensables pour mapper les réponses JSON des API vers des structures Rust fortement typées.
+4. **`serde` & `serde_json`**: Frameworks pour la sérialisation et la désérialisation de données. Indispensables pour mapper les réponses JSON des API vers des structures [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) fortement typées.
 5. **`indicatif`**: Fournit des barres de progression riches et personnalisables. Il affiche visuellement la progression du traitement asynchrone, améliorant considérablement l'UX de la CLI.
 6. **`anyhow` & `thiserror`**: Une combinaison puissante pour la gestion des erreurs. La meilleure pratique consiste à utiliser `thiserror` pour les définitions d'erreurs de domaine à l'intérieur de la bibliothèque, et `anyhow` pour regrouper les erreurs au niveau supérieur de l'application.
 
@@ -86,7 +86,7 @@ $$
 L = \lambda W \implies \lambda = \frac{L}{W}
 $$
 
-En d'autres termes, dans un environnement où la latence du réseau $W$ est inévitable, la seule façon d'améliorer le débit du système $\lambda$ est d'augmenter le nombre de requêtes traitées simultanément $L$. Contrairement aux threads natifs de l'OS, les tâches asynchrones de Rust ont une surcharge mémoire extrêmement faible, ce qui permet de faire évoluer facilement $L$.
+En d'autres termes, dans un environnement où la latence du réseau $W$ est inévitable, la seule façon d'améliorer le débit du système $\lambda$ est d'augmenter le nombre de requêtes traitées simultanément $L$. Contrairement aux threads natifs de l'OS, les tâches asynchrones de [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) ont une surcharge mémoire extrêmement faible, ce qui permet de faire évoluer facilement $L$.
 
 ---
 
@@ -239,7 +239,7 @@ Commands:
 
 ## 9. Phase d'implémentation 3 : Client API et mappage des données
 
-Nous mapperons les données JSON renvoyées par l'API GitHub vers des structures Rust. Nous implémenterons `src/models.rs` et `src/api.rs`.
+Nous mapperons les données JSON renvoyées par l'API GitHub vers des structures [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/). Nous implémenterons `src/models.rs` et `src/api.rs`.
 
 ```rust
 // src/models.rs
@@ -413,7 +413,7 @@ En appliquant ces paramètres, la taille du binaire généré sera réduite de p
 Ce sont les étapes pour distribuer l'outil que vous avez créé dans le monde entier.
 
 ### Publication sur crates.io
-Avec Cargo, le gestionnaire de paquets de Rust, vous pouvez publier sur le registre officiel en quelques commandes seulement.
+Avec Cargo, le gestionnaire de paquets de [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/), vous pouvez publier sur le registre officiel en quelques commandes seulement.
 
 ```bash
 cargo login <YOUR_TOKEN>
@@ -428,11 +428,11 @@ Construisez un pipeline CI/CD qui téléverse automatiquement les binaires compi
 
 ## 13. Conclusion
 
-Dans cet article, nous avons expliqué en détail une série de flux pour développer des outils CLI avec Rust.
+Dans cet article, nous avons expliqué en détail une série de flux pour développer des outils CLI avec [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/).
 
 1. **Principes de conception** : Nous avons confirmé les avantages de la sécurité et de la vitesse de Rust, ainsi que des binaires uniques.
 2. **Sélection de crates** : Nous avons acquis des armes puissantes : `clap`, `tokio`, `serde`, `indicatif`, `thiserror`, `anyhow`.
 3. **Avantage mathématique du traitement parallèle** : Sur la base de la loi d'Amdahl et de la loi de Little, nous avons compris de manière théorique la puissance du traitement asynchrone.
 4. **Implémentation et optimisation** : Nous l'avons rempli de savoir-faire pratique, de la gestion robuste des erreurs à l'optimisation extrême des binaires.
 
-Le développement de CLI avec Rust est une expérience merveilleuse qui permet de garantir la qualité du logiciel dès la phase de conception par l'interaction avec le compilateur. En utilisant le code de base créé cette fois, n'hésitez pas à développer votre propre outil CLI original et à le partager avec le monde ! Bon codage Rust !
+Le développement de CLI avec [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) est une expérience merveilleuse qui permet de garantir la qualité du logiciel dès la phase de conception par l'interaction avec le compilateur. En utilisant le code de base créé cette fois, n'hésitez pas à développer votre propre outil CLI original et à le partager avec le monde ! Bon codage Rust !

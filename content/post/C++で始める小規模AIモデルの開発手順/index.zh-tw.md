@@ -81,7 +81,7 @@ sequenceDiagram
 
 ### 3.2 GGUF 格式的二進位結構
 
-從 Hugging Face 等平台的 `.safetensors` 格式轉換而來的 **GGUF (GPT-Generated Unified Format)** ，是專為推論打造的終極格式。它具有以下嚴謹的二進位佈局（Binary Layout）：
+從 Hugging Face 等平台的 `.safetensors` 格式轉換而來的 **GGUF (GPT-Generated Unified Format)** ，是專為推論打造的終極格式。它具有以下嚴謹的二進位佈局（Binary [Layout](https://kenji.blog/zh-tw/p/browser-rendering-mechanism-dom-paint/)）：
 
 1. **Magic Bytes**: `0x46554747` (GGUF)。
 2. **Version**: 格式的版本號碼。

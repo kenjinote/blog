@@ -15,7 +15,7 @@ description: 'Explicamos para principiantes cómo escribir código de prueba en 
 
 
 
-Para escribir pruebas en Rust, crea una función añadiendo el atributo `#[test]` en la línea superior de la definición de la función de prueba.
+Para escribir pruebas en [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/), crea una función añadiendo el atributo `#[test]` en la línea superior de la definición de la función de prueba.
 
 ```rust
 fn plus(a:i32,b:i32)->i32 {

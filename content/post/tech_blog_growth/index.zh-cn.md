@@ -27,9 +27,9 @@ description: '利用数据和自动化最大化技术博客访问量的策略。
 Google将页面体验作为排名因素之一，特别是 **Core Web Vitals (LCP, FID/INP, CLS)** 在技术博客中也不容忽视。
 技术博客中大量使用源代码块、数学公式（MathJax / KaTeX）和图解图片。这些都会成为延迟页面渲染的因素。
 
-- **LCP (Largest Contentful Paint)**: 首屏主要内容的加载速度。对于头图建议使用WebP或AVIF格式，并添加`fetchpriority="high"`属性进行预加载。另外，用于语法高亮的巨大CSS或JS应设计为异步加载，或仅在需要的页面上加载。
-- **CLS (Cumulative Layout Shift)**: 文章加载过程中的布局偏移。通过提前使用CSS的`aspect-ratio`等属性预留出公式或图片的显示区域，可以防止后续DOM插入时发生的画面抖动。
-- **INP (Interaction to Next Paint)**: 对用户交互的响应能力。沉重的JavaScript（例如客户端动态全文搜索或巨大的Markdown解析器执行等）绝对不能在主线程上执行，必须将其转移到Web Worker中，或者在构建时生成静态HTML（SSG）。
+- **LCP (Largest Contentful [Paint](https://kenji.blog/zh-cn/p/browser-rendering-mechanism-dom-paint/))**: 首屏主要内容的加载速度。对于头图建议使用WebP或AVIF格式，并添加`fetchpriority="high"`属性进行预加载。另外，用于语法高亮的巨大CSS或JS应设计为异步加载，或仅在需要的页面上加载。
+- **CLS (Cumulative [Layout](https://kenji.blog/zh-cn/p/browser-rendering-mechanism-dom-paint/) Shift)**: 文章加载过程中的布局偏移。通过提前使用CSS的`aspect-ratio`等属性预留出公式或图片的显示区域，可以防止后续DOM插入时发生的画面抖动。
+- **INP (Interaction to Next [Paint](https://kenji.blog/zh-cn/p/browser-rendering-mechanism-dom-paint/))**: 对用户交互的响应能力。沉重的JavaScript（例如客户端动态全文搜索或巨大的Markdown解析器执行等）绝对不能在主线程上执行，必须将其转移到Web Worker中，或者在构建时生成静态HTML（SSG）。
 
 ### 1.2 结构化数据 (JSON-LD) 的实现
 

@@ -146,7 +146,7 @@ Berikut adalah beberapa perintah yang dapat dijalankan di "Run" atau Command Pro
 ![img_5.png](img_5.webp)
 - Ketik `calc` lalu tekan `Enter`.
 
-## Membuka Paint
+## Membuka [Paint](https://kenji.blog/id/p/browser-rendering-mechanism-dom-paint/)
 ![img_6.png](img_6.webp)
 - Ketik `mspaint` lalu tekan `Enter`.  
 

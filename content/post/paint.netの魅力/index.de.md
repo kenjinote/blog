@@ -12,7 +12,7 @@ Ich werde die Bildbearbeitungssoftware paint.net vorstellen, die ich oft bei mei
 
 ![img_1.png](img_1.webp)
 
-# Nützliche Punkte, die mit dem Windows-Standard-Paint nicht möglich sind
+# Nützliche Punkte, die mit dem Windows-Standard-[Paint](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/) nicht möglich sind
 - Kann Transparenz und Deckkraft handhaben
 - Kann automatische Auswahlen für komplexe Bereichsformen durchführen
 - Kann mit Ebenen arbeiten

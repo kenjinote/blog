@@ -18,7 +18,7 @@ Na ciência da computação, é extremamente importante detetar se existe um "ci
 
 Este algoritmo utiliza dois ponteiros que se movem a velocidades diferentes (frequentemente chamados de "lebre" e "tartaruga"), sendo por isso amplamente conhecido como o **Algoritmo da Lebre e da Tartaruga** (Tortoise and Hare Algorithm).
 
-Neste artigo, explicaremos detalhadamente o mecanismo deste algoritmo, o seu contexto matemático e exemplos concretos de implementação usando C++ e Rust.
+Neste artigo, explicaremos detalhadamente o mecanismo deste algoritmo, o seu contexto matemático e exemplos concretos de implementação usando C++ e [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/).
 
 ## O que é a deteção de ciclos?
 
@@ -111,7 +111,7 @@ Ou seja, prova-se que **logo após a colisão, se retornarmos um ponteiro ao in�
 
 ## Implementação em código
 
-Vamos implementar a teoria acima em C++ e Rust.
+Vamos implementar a teoria acima em C++ e [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/).
 
 ### Implementação em C++
 
@@ -207,7 +207,7 @@ int main() {
 }
 ```
 
-### Implementação em Rust
+### Implementação em [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/)
 
 No caso do Rust, devido às regras de "ownership" (propriedade) e "borrowing" (empréstimo), a implementação de listas ligadas tende a ser complexa. Contudo, em programação competitiva, é comum modelar isto como um problema de referência de índices num array (ou `Vec`).
 Aqui, apresentamos um exemplo de implementação utilizando um array onde cada elemento contém "o índice seguinte" em vez de um "ponteiro para o próximo".
@@ -332,4 +332,4 @@ Neste artigo, explicámos o **Algoritmo de deteção de ciclos de Robert Floyd**
 Apesar da ideia simples de ter dois ponteiros a moverem-se a velocidades diferentes, é um método elegante que permite a deteção do ciclo e a identificação do seu início em tempo $O(N)$ e espaço $O(1)$.
 Ao compreender o contexto matemático, acreditamos que ficou claro por que retornar um dos ponteiros para o início e movê-los à mesma velocidade após a colisão, permite encontrar o ponto de partida do ciclo.
 
-Este algoritmo é uma ferramenta muito poderosa na implementação de estruturas de dados e na programação competitiva. Certifique-se de experimentar e implementá-lo em C++ ou Rust.
+Este algoritmo é uma ferramenta muito poderosa na implementação de estruturas de dados e na programação competitiva. Certifique-se de experimentar e implementá-lo em C++ ou [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/).

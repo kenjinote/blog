@@ -205,7 +205,7 @@ Le ZKP est indéniablement une technologie fondamentale de la prochaine généra
 1. **Coût de calcul de la génération de preuve et accélération matérielle**
    La génération de ZKP nécessite des opérations polynomiales massives, des FFT (transformées de Fourier rapides) et des MSM (multiplications multi-scalaires). Actuellement, la recherche avance rapidement sur le développement de matériel dédié (FPGA ou ASIC) pour accélérer cette génération de preuves, ce que l'on appelle le **minage ZKP** (Réseau de Prouveurs).
 2. **Standardisation et amélioration de l'expérience développeur (DX)**
-   Des langages dédiés pour écrire des circuits ZKP tels que Circom, Cairo, Noir et Leo se multiplient. Des normes unifiées pour les rassembler et la maturation de compilateurs capables de générer automatiquement des circuits ZKP à partir de Rust ou C++ existants seront la clé pour l'adoption du ZKP par les ingénieurs logiciels en général.
+   Des langages dédiés pour écrire des circuits ZKP tels que Circom, Cairo, Noir et Leo se multiplient. Des normes unifiées pour les rassembler et la maturation de compilateurs capables de générer automatiquement des circuits ZKP à partir de [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) ou C++ existants seront la clé pour l'adoption du ZKP par les ingénieurs logiciels en général.
 
 ## Conclusion
 

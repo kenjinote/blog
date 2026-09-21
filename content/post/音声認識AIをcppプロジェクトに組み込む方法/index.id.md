@@ -237,7 +237,7 @@ graph LR
 
 ### 6.1 Pentingnya Voice Activity Detection (VAD)
 
-Dalam pemrosesan real-time, mengeksekusi inferensi pada bagian tanpa suara akan membuang-buang sumber daya komputasi. Dengan menempatkan algoritma VAD (seperti pemrosesan threshold berbasis energi sederhana atau WebRTC VAD) di tahapan awal, Anda dapat menerapkan sistem kontrol di mana **"buffering hanya dimulai ketika ucapan terdeteksi, dan `whisper_full` dieksekusi ketika ucapan berakhir (setelah periode tanpa suara tertentu)".**
+Dalam pemrosesan real-time, mengeksekusi inferensi pada bagian tanpa suara akan membuang-buang sumber daya komputasi. Dengan menempatkan algoritma VAD (seperti pemrosesan threshold berbasis energi sederhana atau [WebRTC](https://kenji.blog/id/p/webrtc-realtime-communication-p2p/) VAD) di tahapan awal, Anda dapat menerapkan sistem kontrol di mana **"buffering hanya dimulai ketika ucapan terdeteksi, dan `whisper_full` dieksekusi ketika ucapan berakhir (setelah periode tanpa suara tertentu)".**
 
 ### 6.2 Pendekatan Jendela Geser (Sliding Window)
 

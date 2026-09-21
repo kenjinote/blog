@@ -15,7 +15,7 @@ description: 'Presentamos cómo crear y mostrar una ventana simple de Windows us
 
 
 
-Mostrar una ventana simple en Rust
+Mostrar una ventana simple en [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/)
 
 ```Cargo.toml
 [package]

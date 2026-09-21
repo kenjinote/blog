@@ -12,7 +12,7 @@ I would like to introduce paint.net, an image editing software that I often use 
 
 ![img_1.png](img_1.webp)
 
-# Useful Features Not Found in Standard Windows Paint
+# Useful Features Not Found in Standard Windows [Paint](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/)
 - Can handle transparency and opacity
 - Can automatically select complex areas
 - Can handle layers

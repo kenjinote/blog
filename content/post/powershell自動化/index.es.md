@@ -147,7 +147,7 @@ $$ T_{backup} = \frac{S_{total}}{B \times (1 - \alpha)} + C \times L $$
 Donde cada variable es:
 - $S_{total}$ : Cantidad total de datos a respaldar (Bits)
 - $B$ : Ancho de banda de la red (bps, ej: 1Gbps = $10^9$ bps)
-- $\alpha$ : Gastos generales de red y protocolos (generalmente de 0.1 a 0.2 para los protocolos TCP/IP o SMB)
+- $\alpha$ : Gastos generales de red y protocolos (generalmente de 0.1 a 0.2 para los protocolos [TCP](https://kenji.blog/es/p/http3-quic-protocol-tcp-udp/)/IP o SMB)
 - $C$ : Número total de archivos
 - $L$ : Latencia de procesamiento por archivo (segundos)
 

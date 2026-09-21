@@ -248,7 +248,7 @@ function gl { git log --oneline --graph --decorate --all $args }
 
 ## 5.2. ディレクトリ移動の最適化（z / zoxide）
 
-`cd` コマンドで深い階層のディレクトリに移動するのは面倒です。近年では、ユーザーの移動履歴と頻度（Frecency: Frequency + Recency）を学習し、パスの一部を入力するだけで目的のディレクトリにジャンプできるツール **`zoxide`** (Rust製) が標準になりつつあります。
+`cd` コマンドで深い階層のディレクトリに移動するのは面倒です。近年では、ユーザーの移動履歴と頻度（Frecency: Frequency + Recency）を学習し、パスの一部を入力するだけで目的のディレクトリにジャンプできるツール **`zoxide`** ([Rust](https://kenji.blog/p/webassembly-wasm-current-future/)製) が標準になりつつあります。
 
 ```bash
 # zoxide のインストール後、cd の代わりに z を使用

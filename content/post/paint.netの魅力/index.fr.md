@@ -12,7 +12,7 @@ Je vais vous présenter le logiciel de retouche d'images paint.net, que j'utilis
 
 ![img_1.png](img_1.webp)
 
-# Points utiles impossibles avec Paint de Windows
+# Points utiles impossibles avec [Paint](https://kenji.blog/fr/p/browser-rendering-mechanism-dom-paint/) de Windows
 - Peut gérer la transparence et l'opacité
 - Peut effectuer une sélection automatique de formes de zones complexes
 - Peut gérer les calques

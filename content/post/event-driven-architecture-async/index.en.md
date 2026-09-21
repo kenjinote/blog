@@ -114,7 +114,7 @@ The advantage of the Event Loop is that it does not require lock management for 
 
 ---
 
-## 3. Actor Model and Message Passing (Rust / Erlang / Akka)
+## 3. Actor Model and Message Passing ([Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) / Erlang / Akka)
 
 If the Event Loop is an approach that challenges the limits of a single thread, the **Actor model** is a paradigm for making concurrent processing in multi-threaded or distributed environments safe and scalable.
 
@@ -139,7 +139,7 @@ flowchart LR
     end
 ```
 
-### 3.2 Actor Implementation Example using Rust
+### 3.2 Actor Implementation Example using [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)
 
 In Rust, a systems programming language, you can build an Actor model using powerful asynchronous crates such as `tokio` and `actix`. Here, we show a simple Actor pattern implementation using an `mpsc` (Multi-Producer, Single-Consumer) channel.
 
@@ -207,7 +207,7 @@ async fn main() {
 }
 ```
 
-Ownership and the type system in Rust guarantee the safety of message passing between Actors at compile time. If we express the system throughput as $ S $ in a mathematical formula, for an actor count $ N $ and message processing rate $ R $, it ideally becomes $ S = N \times R $, demonstrating high scalability.
+Ownership and the type system in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) guarantee the safety of message passing between Actors at compile time. If we express the system throughput as $ S $ in a mathematical formula, for an actor count $ N $ and message processing rate $ R $, it ideally becomes $ S = N \times R $, demonstrating high scalability.
 
 ---
 
@@ -281,7 +281,7 @@ The technologies we have looked at so far each have their suitable use cases.
 1. **Event Loop (Node.js)**: 
    - API gateways and real-time chat systems with many I/O-bound processes.
    - WebSocket servers handling massive concurrent connections.
-2. **Actor Model (Rust / Akka)**: 
+2. **Actor Model ([Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) / Akka)**: 
    - Concurrent processing with complex state (game servers, real-time tracking).
    - High availability systems requiring self-healing capabilities from errors (Supervisor Trees).
 3. **CQRS / Event Sourcing**: 

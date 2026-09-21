@@ -9,7 +9,7 @@ categories: ["programming"]
 description: 'Rustでテストコードを書く方法と、cargo testコマンドを使ったテストの実行手順を初心者向けに解説します。#[test]属性の使い方や、成功・失敗時の出力結果についても具体的なコード例を交えて詳しく紹介します。'
 ---
 
-Rustでテストを書くには、テスト関数の定義の1行上に`#[test]`属性を付けて関数を作成します。
+[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)でテストを書くには、テスト関数の定義の1行上に`#[test]`属性を付けて関数を作成します。
 
 ```rust
 fn plus(a:i32,b:i32)->i32 {

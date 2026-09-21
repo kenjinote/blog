@@ -153,7 +153,7 @@ flowchart LR
 ## 5. 透過 TCPView 追蹤隱藏的網路連線
 
 雖然透過工作管理員的網路索引標籤或 `netstat -ano` 指令也能確認通訊狀況，但這類方法的更新速度較慢，且手動將處理程序名稱與PID進行對應也相當費時。
-TCPView能即時監控所有TCP及UDP端點，並將哪個處理程序正在與哪個遠端位址、連接埠通訊，以清單方式呈現。
+TCPView能即時監控所有[TCP](https://kenji.blog/zh-tw/p/http3-quic-protocol-tcp-udp/)及[UDP](https://kenji.blog/zh-tw/p/http3-quic-protocol-tcp-udp/)端點，並將哪個處理程序正在與哪個遠端位址、連接埠通訊，以清單方式呈現。
 
 ### 5.1 找出惡意的C2通訊
 當惡意軟體設置了後門，並向外部的C2（Command and Control）伺服器傳送Beacon（信號）時，可以在TCPView中尋找以下特徵：
@@ -161,7 +161,7 @@ TCPView能即時監控所有TCP及UDP端點，並將哪個處理程序正在與�
 *   **處理程序名稱不自然** ：例如明明是 `svchost.exe`，卻不是以系統權限而是以使用者權限運作，並且對未知的國外IP位址維持著 `ESTABLISHED` 狀態的連線。
 *   **不應通訊的處理程序正在通訊** ：例如小算盤（`calc.exe`）或記事本（`notepad.exe`）在連接埠 443 或 80 傳送或接收大量封包（這是處理程序掏空的典型徵兆）。
 
-若發現可疑通訊，可以直接從TCPView傳送 `Close Connection` 以強制中斷TCP工作階段（發出RST封包），或使用 `End Process` 強制結束該處理程序。
+若發現可疑通訊，可以直接從TCPView傳送 `Close Connection` 以強制中斷[TCP](https://kenji.blog/zh-tw/p/http3-quic-protocol-tcp-udp/)工作階段（發出RST封包），或使用 `End Process` 強制結束該處理程序。
 
 ---
 

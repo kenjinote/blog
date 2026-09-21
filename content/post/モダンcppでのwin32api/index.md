@@ -403,7 +403,7 @@ inline void throw_if_win32_error(BOOL result, const char* msg = "Win32 API faile
 
 ## 10. `std::expected` (C++23) を用いたモダンなエラーハンドリング
 
-C++23からは、Rustの `Result` 型に相当する `std::expected` が導入されました。例外を好まない（パフォーマンス上の理由や、エラーが頻発する設計）プロジェクトにおいて、Win32の戻り値をモダナイズする最適な手法です。
+C++23からは、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の `Result` 型に相当する `std::expected` が導入されました。例外を好まない（パフォーマンス上の理由や、エラーが頻発する設計）プロジェクトにおいて、Win32の戻り値をモダナイズする最適な手法です。
 
 ```cpp
 #include <expected>

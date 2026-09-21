@@ -217,7 +217,7 @@ with open("data.txt", "w", encoding="utf-8") as f:
 
 ## 6. 跨平台的建置系統與編譯器
 
-在處理 C++ 或 Rust 等原生程式碼（直接編譯為機器碼的語言）時，除了 OS 特有的 API，我們還需要克服建置系統與編譯器的差異。
+在處理 C++ 或 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 等原生程式碼（直接編譯為機器碼的語言）時，除了 OS 特有的 API，我們還需要克服建置系統與編譯器的差異。
 
 *   **編譯器** ：
     *   Windows: MSVC (Microsoft Visual C++), MinGW (GCC for Windows)

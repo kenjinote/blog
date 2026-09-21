@@ -50,7 +50,7 @@ GitHub Pages ist ein Dienst, mit dem HTML-, CSS- und JavaScript-Dateien direkt a
 
 ### 2.3 Cloudflare Pages
 Cloudflare Pages ist ein Hosting-Service für statische Websites, der auf Cloudflares weltweit größtem Anycast-Netzwerk (mit Präsenz in über 275 Städten) aufbaut.
-Er bietet Standardunterstützung für HTTP/3 (QUIC), Bildoptimierung und die Integration von Edge-Funktionen (Cloudflare Workers), was ein überwältigendes Performance-Tuning ermöglicht. Ein großer Vorteil ist zudem, dass keine Gebühren für die Bandbreite anfallen, sodass die Website auch bei massiven Traffic-Spitzen kostenlos betrieben werden kann.
+Er bietet Standardunterstützung für [HTTP/3](https://kenji.blog/de/p/http3-quic-protocol-tcp-udp/) ([QUIC](https://kenji.blog/de/p/http3-quic-protocol-tcp-udp/)), Bildoptimierung und die Integration von Edge-Funktionen (Cloudflare Workers), was ein überwältigendes Performance-Tuning ermöglicht. Ein großer Vorteil ist zudem, dass keine Gebühren für die Bandbreite anfallen, sodass die Website auch bei massiven Traffic-Spitzen kostenlos betrieben werden kann.
 
 ### 2.4 Netlify
 Netlify ist ein Pionier im Bereich Jamstack und bietet eine All-in-One-DX (Developer Experience), die Formularfunktionen, Authentifizierung (Identity), serverlose Funktionen und vieles mehr integriert. Wenn jedoch das kostenlose Kontingent für die Bandbreite (100 GB pro Monat) überschritten wird, können hohe verbrauchsabhängige Kosten entstehen. Daher ist bei Blogs, die viele Bilder oder Videos verwenden, auf das Kostenmanagement zu achten.
@@ -246,7 +246,7 @@ Auch die Implementierung in Hugo ist sehr einfach. Sie müssen lediglich das ber
 {{ end }}
 ```
 
-Durch das Hinzufügen des Attributs `defer` kann das Skript asynchron geladen werden, ohne das Parsen des HTMLs zu blockieren, und nach dem Aufbau des DOMs ausgeführt werden. Dadurch werden die Auswirkungen auf die anfängliche Ladegeschwindigkeit (LCP: Largest Contentful Paint und FCP: First Contentful Paint) auf ein Minimum reduziert.
+Durch das Hinzufügen des Attributs `defer` kann das Skript asynchron geladen werden, ohne das Parsen des HTMLs zu blockieren, und nach dem Aufbau des DOMs ausgeführt werden. Dadurch werden die Auswirkungen auf die anfängliche Ladegeschwindigkeit (LCP: Largest Contentful [Paint](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/) und FCP: First Contentful Paint) auf ein Minimum reduziert.
 
 ---
 

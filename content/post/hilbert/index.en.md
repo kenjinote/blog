@@ -138,7 +138,7 @@ This demonstrated that the construction of the "perfect mathematical system wher
 
 In the 1930s, the Nazi Party, led by Adolf Hitler, seized power in Germany. The "Law for the Restoration of the Professional Civil Service" was enacted in 1933, resulting in the ruthless expulsion of many outstanding Jewish mathematicians and dissident scholars at the University of Göttingen, including [Emmy Noether](https://kenji.blog/en/p/noether/), Hermann Weyl, Richard Courant, and Max Born.
 
-Göttingen, once a vibrant mathematical sanctuary where talent from all over the world gathered, collapsed almost overnight. Once, at a banquet, the Nazi Minister of Education Bernhard Rust asked [Hilbert](https://kenji.blog/en/p/hilbert/), "How is mathematics at your institution now that it has been freed from the Jewish influence?" [Hilbert](https://kenji.blog/en/p/hilbert/) replied with anger and sorrow: "Mathematical Institute? There is really none any more."
+Göttingen, once a vibrant mathematical sanctuary where talent from all over the world gathered, collapsed almost overnight. Once, at a banquet, the Nazi Minister of Education Bernhard [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) asked [Hilbert](https://kenji.blog/en/p/hilbert/), "How is mathematics at your institution now that it has been freed from the Jewish influence?" [Hilbert](https://kenji.blog/en/p/hilbert/) replied with anger and sorrow: "Mathematical Institute? There is really none any more."
 
 On February 14, 1943, in the midst of World War II, [Hilbert](https://kenji.blog/en/p/hilbert/) passed away in solitude at the age of 81 in Göttingen, after most of his former students had fled to America and elsewhere. Very few people attended his funeral.
 

@@ -8,7 +8,7 @@ image: "img.webp"
 categories: ["programming"]
 description: '通俗易懂地解说Mozilla开发的编程语言“Rust”的主要特点。为您介绍其备受青睐的理由，包括运行速度快、无垃圾回收机制、通过所有权与借用实现内存安全，以及跨平台支持等。'
 ---
-# Rust 的特点
+# [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 的特点
 
 - 由 Mozilla 开发的相对较新的开源编程语言
 - 没有垃圾回收，是一种专注于系统编程的高速语言

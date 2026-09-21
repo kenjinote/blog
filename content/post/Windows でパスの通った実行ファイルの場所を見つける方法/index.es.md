@@ -23,7 +23,7 @@ Al ejecutar un comando especificando un archivo ejecutable, a veces quieres sabe
 where <nombre_del_archivo_ejecutable>
 ```
 
-Por ejemplo, si quieres saber la ubicación de Paint (mspaint.exe), debes hacerlo de la siguiente manera.
+Por ejemplo, si quieres saber la ubicación de [Paint](https://kenji.blog/es/p/browser-rendering-mechanism-dom-paint/) (mspaint.exe), debes hacerlo de la siguiente manera.
 
 ```powershell
 where mspaint.exe

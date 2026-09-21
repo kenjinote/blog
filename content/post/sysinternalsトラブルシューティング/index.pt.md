@@ -153,7 +153,7 @@ No Autoruns, assim como no ProcExp, ative `Verify Code Signatures` e `Check Viru
 ## 5. Rastreando Conexões de Rede Ocultas com o TCPView
 
 Você pode verificar o status das comunicações com a guia de rede do Gerenciador de Tarefas ou com o comando `netstat -ano`, mas pode ser demorado devido às atualizações lentas ou à necessidade de mapear manualmente os nomes dos processos e PIDs.
-O TCPView monitora todos os endpoints TCP e UDP em tempo real e lista qual processo está se comunicando com qual endereço remoto e porta.
+O TCPView monitora todos os endpoints [TCP](https://kenji.blog/pt/p/http3-quic-protocol-tcp-udp/) e [UDP](https://kenji.blog/pt/p/http3-quic-protocol-tcp-udp/) em tempo real e lista qual processo está se comunicando com qual endereço remoto e porta.
 
 ### 5.1 Identificando Comunicações C2 Maliciosas
 Quando um malware instala um backdoor e envia um Beacon para um servidor C2 (Command and Control) externo, procure por características como estas no TCPView:
@@ -161,7 +161,7 @@ Quando um malware instala um backdoor e envia um Beacon para um servidor C2 (Com
 *   **Nomes de processos não naturais**: É o `svchost.exe`, mas está sendo executado com privilégios de usuário e não privilégios de sistema, mantendo uma comunicação no estado `ESTABLISHED` com um endereço IP no exterior desconhecido.
 *   **Processos que normalmente não se comunicam**: Por exemplo, a calculadora (`calc.exe`) ou o Bloco de Notas (`notepad.exe`) está enviando e recebendo um grande número de pacotes nas portas 443 ou 80 (um sinal clássico de Process Hollowing).
 
-Se você encontrar comunicações suspeitas, você pode enviar `Close Connection` diretamente do TCPView para cortar à força a sessão TCP (emitindo um pacote RST), ou forçar a finalização do processo afetado com `End Process`.
+Se você encontrar comunicações suspeitas, você pode enviar `Close Connection` diretamente do TCPView para cortar à força a sessão [TCP](https://kenji.blog/pt/p/http3-quic-protocol-tcp-udp/) (emitindo um pacote RST), ou forçar a finalização do processo afetado com `End Process`.
 
 ---
 

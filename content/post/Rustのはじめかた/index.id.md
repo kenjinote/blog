@@ -9,8 +9,8 @@ categories: ["programming"]
 description: 'Menjelaskan cara memulai bahasa pemrograman Rust yang cepat dan aman memori untuk pemula. Kami memperkenalkannya secara komprehensif, dari fitur bahasa dan metode instalasi, hingga prosedur menjalankan program pertama yaitu Hello World, dan rekomendasi dokumentasi berbahasa Jepang.'
 ---
 # Pengantar
-Rust adalah bahasa pemrograman yang relatif baru yang memungkinkan Anda menulis modul yang cepat dan efisien dalam penggunaan memori dengan sintaksis modern.
-Bahasa ini mendukung multi-platform dan juga digunakan di dunia WebAssembly dan sistem tertanam (embedded).
+[Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) adalah bahasa pemrograman yang relatif baru yang memungkinkan Anda menulis modul yang cepat dan efisien dalam penggunaan memori dengan sintaksis modern.
+Bahasa ini mendukung multi-platform dan juga digunakan di dunia [WebAssembly](https://kenji.blog/id/p/webassembly-wasm-current-future/) dan sistem tertanam (embedded).
 Selain itu, bahasa ini digunakan oleh perusahaan terkenal seperti Firefox, DropBox, dan Cloudflare.
 
 Rust juga menarik perhatian sebagai alternatif dari C++.
@@ -38,7 +38,7 @@ itu akan dikompilasi, dan menjalankan `./main` (untuk Windows `main.exe`) akan m
 
 [The Rust Programming Language Versi Jepang](https://doc.rust-jp.rs/book-ja/)
 
-Semua penjelasan yang diperlukan untuk mempelajari Rust telah dirangkum di tautan di atas (versi terjemahan bahasa Jepang).
+Semua penjelasan yang diperlukan untuk mempelajari [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) telah dirangkum di tautan di atas (versi terjemahan bahasa Jepang).
 Itu sangat lengkap sehingga Anda tidak perlu membeli buku teks tentang Rust.
 
 # Jika Anda Ingin Mencobanya di Web

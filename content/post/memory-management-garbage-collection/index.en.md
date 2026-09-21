@@ -8,7 +8,7 @@ categories: ["programming", "computer-science", "software-engineering"]
 tags: ["memory-management", "c-language", "java", "rust", "garbage-collection"]
 ---
 
-# Welcome to the Truth of Memory Management: Unraveling the Abyss from C, Java, and Rust
+# Welcome to the Truth of Memory Management: Unraveling the Abyss from C, Java, and [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)
 
 In software development, memory management is an eternal theme that cannot be avoided, and is one of the most important factors determining the performance and stability of a system. In this article, through an overwhelming deep dive comparable to a 20,000-character scale, we comprehensively cover everything from the basic theory of memory management to optimization techniques in modern architectures.
 
@@ -206,7 +206,7 @@ When GC is executed, all threads of the application pause to maintain memory con
 
 ---
 
-## 4. Rust: The Third Path Brought by Ownership and Borrowing
+## 4. [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/): The Third Path Brought by Ownership and Borrowing
 
 "Ultimate performance through manual management" in C and "memory safety through automatic management" in Java. These two have long been considered a trade-off relationship. However, the Rust language achieved the feat of guaranteeing 100% memory safety at compile time while eliminating garbage collection by introducing the groundbreaking model of **"Ownership"**.
 
@@ -222,7 +222,7 @@ Due to these rules, Rust automatically calls the `drop` function and frees memor
 
 ### 4.2 Moving Ownership
 
-In Rust, when a variable is assigned to another variable or passed by value to a function, the ownership is "Moved". The source variable can no longer be accessed after that (it results in a compile error). This structurally makes a Double Free impossible.
+In [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/), when a variable is assigned to another variable or passed by value to a function, the ownership is "Moved". The source variable can no longer be accessed after that (it results in a compile error). This structurally makes a Double Free impossible.
 
 ```rust
 fn main() {
@@ -241,7 +241,7 @@ fn main() {
 
 ### 4.3 Borrowing and Lifetimes
 
-If ownership is moved in every operation, programming becomes extremely inconvenient. To access data without taking ownership, Rust has concepts of **References** and **Borrowing**.
+If ownership is moved in every operation, programming becomes extremely inconvenient. To access data without taking ownership, [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) has concepts of **References** and **Borrowing**.
 
 Furthermore, the **Borrow Checker** built into the Rust compiler enforces the following strict rules at compile time:
 
@@ -295,7 +295,7 @@ When a CPU reads data from memory, it loads not just that data but an entire adj
 
 ### 5.1 Differences in Cache Efficiency by Language
 
-- **C / C++ / Rust**: When you create an array of structures (`struct Array[100]` or `Vec<MyStruct>`), the data is arranged continuously in memory without gaps. When looping through the array, the CPU's hardware prefetcher functions perfectly, dramatically increasing the cache hit rate.
+- **C / C++ / [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)**: When you create an array of structures (`struct Array[100]` or `Vec<MyStruct>`), the data is arranged continuously in memory without gaps. When looping through the array, the CPU's hardware prefetcher functions perfectly, dramatically increasing the cache hit rate.
 - **Java**: Java's object arrays (`MyObject[]`) are not arrays of entities, but arrays of "references (pointers) to objects". Since each entity object is allocated in scattered locations on the heap, you trace pointers and access random memory addresses at each loop iteration, repeatedly causing severe Cache Misses.
 
 The effective average time $ T_{avg} $ of memory access is expressed as follows:
@@ -303,7 +303,7 @@ The effective average time $ T_{avg} $ of memory access is expressed as follows:
 $ T_{avg} = h \cdot T_{cache} + (1 - h) \cdot T_{memory} $
 
 Here, $ h $ is the cache hit rate ($ 0 \le h \le 1 $), $ T_{cache} $ is the cache access time (about 1-4 ns), and $ T_{memory} $ is the main memory access time (about 100 ns).
-Whether you make $ h $ 0.99 (the C/Rust approach) or drop it to 0.5 (Java's pointer chasing), creates a difference of tens of times in the loop execution speed of the application. This is the true reason why C++ and Rust are chosen for game engines and high-frequency trading systems.
+Whether you make $ h $ 0.99 (the C/[Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) approach) or drop it to 0.5 (Java's pointer chasing), creates a difference of tens of times in the loop execution speed of the application. This is the true reason why C++ and Rust are chosen for game engines and high-frequency trading systems.
 
 ---
 
@@ -315,7 +315,7 @@ In this article, we dived deep into three completely different memory management
 |:---:|:---|:---|:---|
 | **C** | Manual management via `malloc/free` | Ultimate speed, maximum cache efficiency, lightweight | Hotbed for vulnerabilities (leaks, double free), high development cost |
 | **Java** | GC (Garbage Collection) | Improved development speed, guaranteed memory safety | Latency fluctuation due to STW, deterioration of cache efficiency |
-| **Rust** | Ownership / Borrow Checker | Zero-cost runtime safety, fast | Steep learning curve, difficulty in lifetime design |
+| **[Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)** | Ownership / Borrow Checker | Zero-cost runtime safety, fast | Steep learning curve, difficulty in lifetime design |
 
 The history of **memory management** has been a seesaw game oscillating between performance and safety. GC was born to prevent tragedies caused by manual management, and the ownership model was invented to avoid the performance penalty of GC.
 

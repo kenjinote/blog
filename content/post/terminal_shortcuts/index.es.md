@@ -248,7 +248,7 @@ function gl { git log --oneline --graph --decorate --all $args }
 
 ## 5.2. Optimización del movimiento entre directorios (z / zoxide)
 
-Moverse a un directorio profundo con el comando `cd` es tedioso. Recientemente, la herramienta estándar emergente es **`zoxide`** (escrita en Rust), que aprende el historial de movimiento y la frecuencia del usuario (Frecency: Frequency + Recency), permitiéndole saltar al directorio deseado con solo escribir una parte de la ruta.
+Moverse a un directorio profundo con el comando `cd` es tedioso. Recientemente, la herramienta estándar emergente es **`zoxide`** (escrita en [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/)), que aprende el historial de movimiento y la frecuencia del usuario (Frecency: Frequency + Recency), permitiéndole saltar al directorio deseado con solo escribir una parte de la ruta.
 
 ```bash
 # Después de instalar zoxide, usa z en lugar de cd

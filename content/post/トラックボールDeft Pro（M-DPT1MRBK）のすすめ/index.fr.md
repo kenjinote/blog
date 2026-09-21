@@ -31,7 +31,7 @@ Actuellement, ils sont attribués comme ci-dessus. Vous pouvez également modifi
 - La saleté s'accumule autour du trackball, il est donc nécessaire de retirer la boule et de la nettoyer régulièrement (environ une fois tous les quelques jours).
 - Il faut un certain temps pour s'y habituer car la sensation de fonctionnement est différente de celle d'une souris : déplacement du curseur avec l'index ou le majeur, et fonctionnement de la molette avec le pouce.
 - Bien que j'aie écrit ci-dessus qu'il est facile de faire des mouvements précis, il est toujours difficile de déplacer le curseur pixel par pixel avec un trackball.
-- Impossible d'utiliser la molette tout en appuyant sur le bouton gauche (par exemple, si vous souhaitez zoomer/dézoomer lors de la sélection d'une zone dans Paint).
+- Impossible d'utiliser la molette tout en appuyant sur le bouton gauche (par exemple, si vous souhaitez zoomer/dézoomer lors de la sélection d'une zone dans [Paint](https://kenji.blog/fr/p/browser-rendering-mechanism-dom-paint/)).
 
 Dans l'ensemble, même si je pense que c'est un trackball cher, il est globalement assez facile à utiliser et je sens que mon travail est devenu plus productif.
 J'espère que cela sera utile à ceux qui envisagent de l'acheter.

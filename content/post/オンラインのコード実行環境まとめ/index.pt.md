@@ -20,7 +20,7 @@ Google Colaboratory é um ambiente de execução de código Python online.
 
 É baseado no Jupyter Notebook.
 
-## Rust
+## [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/)
 
 - [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021)
 

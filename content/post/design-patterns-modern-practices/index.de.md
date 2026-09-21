@@ -30,7 +30,7 @@ Zum Beispiel waren in Sprachen ohne First-Class-Funktionen das `Strategy`- oder 
 
 ## 3. Moderne Neubewertung von GoF-Mustern und Alternativen
 
-Hier werden wir typische GoF-Muster betrachten und sehen, wie sie in modernen Sprachen (TypeScript, Kotlin, Rust usw.) ersetzt werden.
+Hier werden wir typische GoF-Muster betrachten und sehen, wie sie in modernen Sprachen (TypeScript, Kotlin, [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) usw.) ersetzt werden.
 
 ### 3.1. Strategy-Muster: Verdrängt durch First-Class-Funktionen
 
@@ -133,7 +133,7 @@ Da asynchrone Streams auf Sprachebene unterstützt werden, muss kein eigener Ben
 
 Das `Visitor`-Muster wurde entwickelt, um die Datenstruktur von der Verarbeitung zu trennen. Das Problem war jedoch, dass die Implementierung sehr komplex und kontraintuitiv ist (da sie Double Dispatch erfordert).
 
-Heutzutage wird dieses Problem elegant durch Sprachen gelöst (Rust, Kotlin, Swift, Scala usw.), die über **Algebraische Datentypen (ADT)** und **Pattern Matching** verfügen.
+Heutzutage wird dieses Problem elegant durch Sprachen gelöst ([Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/), Kotlin, Swift, Scala usw.), die über **Algebraische Datentypen (ADT)** und **Pattern Matching** verfügen.
 
 **Der moderne Ansatz (Rust Enums und Pattern Matching)**
 
@@ -191,7 +191,7 @@ $$
 bind: M[A] \times (A \rightarrow M[B]) \rightarrow M[B]
 $$
 
-**Der Result-Typ in Rust (Anwendung der Either-Monade)**
+**Der Result-Typ in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) (Anwendung der Either-Monade)**
 
 ```rust
 fn divide(numerator: f64, denominator: f64) -> Result<f64, String> {

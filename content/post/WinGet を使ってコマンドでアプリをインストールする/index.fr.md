@@ -35,6 +35,6 @@ description: 'Nous expliquons comment installer des applications à partir d''un
 [Utiliser l'outil winget pour installer et gérer des applications](https://learn.microsoft.com/fr-fr/windows/package-manager/winget/)
 
 ### Aparté
-Je pensais pouvoir installer Paint.Net aussi, mais ce n'était pas possible.
+Je pensais pouvoir installer [Paint](https://kenji.blog/fr/p/browser-rendering-mechanism-dom-paint/).Net aussi, mais ce n'était pas possible.
 
 https://forums.getpaint.net/topic/118574-please-add-paintnet-to-the-available-packages-for-windows-package-manager-winget/

@@ -32,7 +32,7 @@ Pour le moment, comme je ne fais pas de streaming ou de téléchargement de gran
 De plus, ces derniers temps, ma famille et moi faisons principalement du télétravail, et aujourd'hui, pour la première fois, internet a été coupé pendant quelques dizaines de minutes. Il s'est rétabli automatiquement, mais
 ce n'est peut-être pas bon signe. Cela ne fait même pas une semaine depuis le changement...
 
-Pour information, comme J:COM restreint les communications P2P, il semble que la vitesse des applications P2P soit faible. Ceux qui utilisent le P2P devraient être prudents.
+Pour information, comme J:COM restreint les communications [P2P](https://kenji.blog/fr/p/webrtc-realtime-communication-p2p/), il semble que la vitesse des applications P2P soit faible. Ceux qui utilisent le P2P devraient être prudents.
 
 # À propos du service
 Lors de la signature du contrat, si l'on s'abonne à Netflix ou Disney+, on reçoit une carte QUO de 40 000 yens, ce qui compense les frais d'abonnement à chaque service et rend les frais mensuels

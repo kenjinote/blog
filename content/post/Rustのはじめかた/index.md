@@ -9,8 +9,8 @@ categories: ["programming"]
 description: '高速でメモリ安全なプログラミング言語Rustの始め方を初心者向けに解説します。言語の特徴やインストール方法から、最初のプログラムであるHello Worldの実行手順、おすすめの日本語ドキュメントまで網羅的に紹介します。'
 ---
 # はじめに
-Rustは高速でかつメモリ効率が高いモジュールをモダンな記法で記述できる比較的新しいプログラミング言語です。
-マルチプラットフォームに対応しており、WebAssemblyや組み込みの世界でも使われています。
+[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)は高速でかつメモリ効率が高いモジュールをモダンな記法で記述できる比較的新しいプログラミング言語です。
+マルチプラットフォームに対応しており、[WebAssembly](https://kenji.blog/p/webassembly-wasm-current-future/)や組み込みの世界でも使われています。
 有名なところでは、Firefoxや、DropBox、Cloudflareでも採用されています。
 
 C++の代用としても注目されています。
@@ -38,7 +38,7 @@ fn main() {
 
 [The Rust Programming Language 日本語版](https://doc.rust-jp.rs/book-ja/)
 
-Rustを学ぶうえで必要となる解説は上記のリンク（日本語訳版）に集約されています。
+[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)を学ぶうえで必要となる解説は上記のリンク（日本語訳版）に集約されています。
 Rustのテキストを購入する必要がないくらい充実しています。
 
 # Webで動かしてみたい場合

@@ -317,7 +317,7 @@ Import-Module -Name Terminal-Icons
 
 能在 Windows 上运行真正 Linux 内核的 WSL2（Windows Subsystem for Linux 2），对于现代 Web 开发和云原生开发是不可或缺的。要定制 WSL 内的 Shell（Bash 或 Zsh）提示符，“ **Starship** ”无疑是最佳选择。
 
-Starship 是用 Rust 语言编写的，极快且定制性极强的跨 Shell 提示符。它最大的优势在于只需编写一个配置文件（TOML），就能在 Bash、Zsh、Fish 等任何 Shell 中重现完全相同的提示符。
+Starship 是用 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 语言编写的，极快且定制性极强的跨 Shell 提示符。它最大的优势在于只需编写一个配置文件（TOML），就能在 Bash、Zsh、Fish 等任何 Shell 中重现完全相同的提示符。
 
 ## 7.1 安装 Starship
 

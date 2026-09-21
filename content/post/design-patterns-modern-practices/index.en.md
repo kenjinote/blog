@@ -30,7 +30,7 @@ For example, in languages without first-class functions, patterns like `Strategy
 
 ## 3. Modern Re-evaluation and Alternatives of GoF Patterns
 
-Here, we take a look at some of the most representative GoF patterns and see how they are being replaced in modern languages (TypeScript, Kotlin, Rust, etc.).
+Here, we take a look at some of the most representative GoF patterns and see how they are being replaced in modern languages (TypeScript, Kotlin, [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/), etc.).
 
 ### 3.1. Strategy Pattern: Ousted by First-Class Functions
 
@@ -133,7 +133,7 @@ Since asynchronous streams are supported at the language level, there is no need
 
 The `Visitor` pattern is for separating data structures from the operations performed on them, but it had the issue of being highly complex and counter-intuitive to implement (requiring double dispatch).
 
-Nowadays, languages equipped with **Algebraic Data Types (ADT)** and **Pattern Matching** (Rust, Kotlin, Swift, Scala, etc.) elegantly solve this problem.
+Nowadays, languages equipped with **Algebraic Data Types (ADT)** and **Pattern Matching** ([Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/), Kotlin, Swift, Scala, etc.) elegantly solve this problem.
 
 **Modern Approach (Rust Enums and Pattern Matching)**
 
@@ -191,7 +191,7 @@ $$
 bind: M[A] \times (A \rightarrow M[B]) \rightarrow M[B]
 $$
 
-**Result Type in Rust (Application of the Either Monad)**
+**Result Type in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) (Application of the Either Monad)**
 
 ```rust
 fn divide(numerator: f64, denominator: f64) -> Result<f64, String> {

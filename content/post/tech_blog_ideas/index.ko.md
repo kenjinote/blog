@@ -180,7 +180,7 @@ jobs:
 2. **Literature Notes (문헌 메모)**: 기사나 책을 읽고 자신의 언어로 요약한 것.
 3. **Permanent Notes (영구 노트)**: 하나의 토픽에 대해 완결된 고찰을 적은 것. 이것들이 블로그 기사의 직접적인 씨앗이 됩니다.
 
-Obsidian의 백링크 기능(`[[노트명]]`)을 사용하면, 예를 들어 'Rust의 소유권'이라는 노트와 '가비지 컬렉션의 역사'라는 노트를 연결하여 예상치 못한 아이디어의 연결 고리를 발견할 수 있습니다.
+Obsidian의 백링크 기능(`[[노트명]]`)을 사용하면, 예를 들어 '[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)의 소유권'이라는 노트와 '가비지 컬렉션의 역사'라는 노트를 연결하여 예상치 못한 아이디어의 연결 고리를 발견할 수 있습니다.
 
 ## 5. 벡터 데이터베이스(Pinecone)와 OpenAI Embeddings를 이용한 시맨틱 검색
 
@@ -284,7 +284,7 @@ if __name__ == "__main__":
     search_similar_ideas(idx, "WebAssembly를 활용한 브라우저 상의 머신러닝 추론 고속화")
 ```
 
-이 시스템을 사용하면, '이번 주 Hacker News에서 화제가 된 「WebAssembly」에 대해 쓰고 싶은데, 과거에 내가 관련된 노트를 쓴 적이 있나?'라는 질문에 대해, AI가 의미적으로 관련된 과거의 Permanent Notes를 순식간에 골라줍니다. 이를 통해 과거의 자신의 지식 자산을 최대한 활용한 깊이 있는 기사 구성이 가능해집니다.
+이 시스템을 사용하면, '이번 주 Hacker News에서 화제가 된 「[WebAssembly](https://kenji.blog/ko/p/webassembly-wasm-current-future/)」에 대해 쓰고 싶은데, 과거에 내가 관련된 노트를 쓴 적이 있나?'라는 질문에 대해, AI가 의미적으로 관련된 과거의 Permanent Notes를 순식간에 골라줍니다. 이를 통해 과거의 자신의 지식 자산을 최대한 활용한 깊이 있는 기사 구성이 가능해집니다.
 
 ## 6. 에빙하우스의 망각 곡선과 Anki를 활용한 간격 반복
 

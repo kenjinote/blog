@@ -46,7 +46,7 @@ $$
 $$
 
 **Auswirkungen auf die Technologieauswahl:**
-Dieser Algorithmus rückt "Person A, die sich für Rust interessiert" und "Person B, die sich für Rust interessiert" im latenten Raum näher zusammen. Wenn Person A einen Beitrag über ein aufstrebendes Web-Framework "likt", wird der Beitrag über dieses Framework mit hoher Wahrscheinlichkeit auch in der Timeline von Person B angezeigt. Dies führt zu dem Phänomen, dass eine bestimmte Technologie innerhalb einer Gruppe von Entwicklern, die einen bestimmten Technologie-Stack bevorzugen, lokal extrem populär wird.
+Dieser Algorithmus rückt "Person A, die sich für [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) interessiert" und "Person B, die sich für Rust interessiert" im latenten Raum näher zusammen. Wenn Person A einen Beitrag über ein aufstrebendes Web-Framework "likt", wird der Beitrag über dieses Framework mit hoher Wahrscheinlichkeit auch in der Timeline von Person B angezeigt. Dies führt zu dem Phänomen, dass eine bestimmte Technologie innerhalb einer Gruppe von Entwicklern, die einen bestimmten Technologie-Stack bevorzugen, lokal extrem populär wird.
 
 ### 2.2 Deep Learning basierte Empfehlungsmodelle (DLRM)
 
@@ -142,7 +142,7 @@ Wie also sollen wir unter der Herrschaft dieser Algorithmen eine objektive und k
 Die sicherste Verteidigungsstrategie ist, die Informationsquellen von der Social-Media-Aggregation auf **Primärquellen (Primary Sources)** zu verlagern.
 
 1. **Den Quellcode lesen:** Anstatt dem Social-Media-Beitrag "Diese Bibliothek ist rasend schnell" zu glauben, sollten Sie GitHub öffnen und die zeitliche Komplexität der Kernlogik und die Mechanismen der Speicherallokation überprüfen.
-2. **RFCs (Request for Comments) verfolgen:** Viele ausgereifte Open-Source-Projekte (React, Rust, Python usw.) nutzen den RFC-Prozess zur Einführung neuer Funktionen. In RFCs wird logisch und sachlich dargelegt, "warum diese Funktion benötigt wird", "welche Design-Kompromisse es gibt" und "was die Alternativen sind", ohne Rücksicht auf algorithmisches Engagement nehmen zu müssen. Genau hier liegt der wahre technische Wert verborgen.
+2. **RFCs (Request for Comments) verfolgen:** Viele ausgereifte Open-Source-Projekte (React, [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/), Python usw.) nutzen den RFC-Prozess zur Einführung neuer Funktionen. In RFCs wird logisch und sachlich dargelegt, "warum diese Funktion benötigt wird", "welche Design-Kompromisse es gibt" und "was die Alternativen sind", ohne Rücksicht auf algorithmisches Engagement nehmen zu müssen. Genau hier liegt der wahre technische Wert verborgen.
 
 ### 5.2 Sorgfältiges Lesen von wissenschaftlichen Publikationen (Academic Papers) und Whitepapern
 

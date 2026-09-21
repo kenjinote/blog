@@ -217,7 +217,7 @@ graph LR
 
 ### 6.1 The Importance of Voice Activity Detection (VAD)
 
-In real-time processing, it is a waste of computational resources to constantly run inference on silent parts. By inserting a VAD algorithm (like simple energy-based thresholding or WebRTC VAD) in the preceding stage, you can implement control logic such as: **"Start buffering only when speech begins, and kick off `whisper_full` when speech ends (after a certain period of silence)."**
+In real-time processing, it is a waste of computational resources to constantly run inference on silent parts. By inserting a VAD algorithm (like simple energy-based thresholding or [WebRTC](https://kenji.blog/en/p/webrtc-realtime-communication-p2p/) VAD) in the preceding stage, you can implement control logic such as: **"Start buffering only when speech begins, and kick off `whisper_full` when speech ends (after a certain period of silence)."**
 
 ### 6.2 Sliding Window Approach
 

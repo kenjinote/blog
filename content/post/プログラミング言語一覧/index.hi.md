@@ -24,7 +24,7 @@ description: 'सी लैंग्वेज, पायथन, जावा औ
 
 ## Haskell
 
-## Rust
+## [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/)
 
 ## Go
 

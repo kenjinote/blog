@@ -17,7 +17,7 @@ Saat menjalankan perintah dengan menentukan file executable, kadang-kadang Anda 
 where <nama file executable>
 ```
 
-Misalnya, jika Anda ingin mengetahui lokasi Paint (mspaint.exe), lakukan hal berikut:
+Misalnya, jika Anda ingin mengetahui lokasi [Paint](https://kenji.blog/id/p/browser-rendering-mechanism-dom-paint/) (mspaint.exe), lakukan hal berikut:
 
 ```powershell
 where mspaint.exe

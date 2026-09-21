@@ -31,7 +31,7 @@ description: 'نعرض قائمة بتصميمات واجهة المستخدم �
 هذه نسخة Windows من LINE.
 ![img_4.png](img_4.webp)
 
-## Paint.NET
+## [Paint](https://kenji.blog/ar/p/browser-rendering-mechanism-dom-paint/).NET
 هذا برنامج تحرير صور.
 ![img_5.png](img_5.webp)
 

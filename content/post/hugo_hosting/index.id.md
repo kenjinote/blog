@@ -50,7 +50,7 @@ GitHub Pages adalah layanan yang memungkinkan Anda mempublikasikan file HTML, CS
 
 ### 2.3 Cloudflare Pages
 Cloudflare Pages adalah layanan hosting situs statis yang dibangun di atas jaringan Anycast berskala global milik Cloudflare (tersebar di lebih dari 275 kota).
-Layanan ini menawarkan penyesuaian kinerja yang luar biasa, termasuk dukungan standar untuk HTTP/3 (QUIC), optimasi gambar, dan integrasi dengan fungsi edge (Cloudflare Workers). Selain itu, tidak ada biaya bandwidth, sehingga keunggulan terbesarnya adalah Anda dapat menjalankannya secara gratis, tidak peduli seberapa besar lonjakan lalu lintas yang terjadi.
+Layanan ini menawarkan penyesuaian kinerja yang luar biasa, termasuk dukungan standar untuk [HTTP/3](https://kenji.blog/id/p/http3-quic-protocol-tcp-udp/) ([QUIC](https://kenji.blog/id/p/http3-quic-protocol-tcp-udp/)), optimasi gambar, dan integrasi dengan fungsi edge (Cloudflare Workers). Selain itu, tidak ada biaya bandwidth, sehingga keunggulan terbesarnya adalah Anda dapat menjalankannya secara gratis, tidak peduli seberapa besar lonjakan lalu lintas yang terjadi.
 
 ### 2.4 Netlify
 Netlify adalah pionir di bidang Jamstack, menawarkan DX (Developer Experience) all-in-one yang mengintegrasikan fungsionalitas formulir, otentikasi (Identity), hingga fungsi serverless. Namun, Anda harus berhati-hati dengan manajemen biaya, karena apabila penggunaan bandwidth melebihi batas gratis (100GB per bulan), tagihan berdasarkan penggunaan dapat menjadi sangat mahal, terutama bagi blog yang banyak memuat gambar dan video.
@@ -240,7 +240,7 @@ Implementasinya di Hugo juga sangat mudah. Cukup tambahkan cuplikan kode yang di
 {{ end }}
 ```
 
-Dengan menambahkan atribut `defer`, skrip akan dimuat secara asinkron tanpa memblokir proses parsing HTML, dan akan dieksekusi setelah pembuatan DOM selesai. Hal ini membantu meminimalkan dampak terhadap kecepatan tampilan awal (LCP: Largest Contentful Paint dan FCP: First Contentful Paint).
+Dengan menambahkan atribut `defer`, skrip akan dimuat secara asinkron tanpa memblokir proses parsing HTML, dan akan dieksekusi setelah pembuatan DOM selesai. Hal ini membantu meminimalkan dampak terhadap kecepatan tampilan awal (LCP: Largest Contentful [Paint](https://kenji.blog/id/p/browser-rendering-mechanism-dom-paint/) dan FCP: First Contentful Paint).
 
 ---
 

@@ -30,7 +30,7 @@ tags:
 
 ## 3. GoF 패턴의 현대적 재평가와 대안
 
-여기서는 대표적인 GoF 패턴을 살펴보고, 그것들이 현대의 모던 언어(TypeScript, Kotlin, Rust 등)에서 어떻게 대체되고 있는지를 보겠습니다.
+여기서는 대표적인 GoF 패턴을 살펴보고, 그것들이 현대의 모던 언어(TypeScript, Kotlin, [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/) 등)에서 어떻게 대체되고 있는지를 보겠습니다.
 
 ### 3.1. Strategy 패턴: 일급 함수에 의한 구축
 
@@ -133,7 +133,7 @@ coroutineScope.launch {
 
 `Visitor` 패턴은 데이터 구조와 그에 대한 처리를 분리하기 위한 패턴이지만, 구현이 매우 복잡하고 직관에 반하는(더블 디스패치를 필요로 하는) 문제가 있었습니다.
 
-현대에서는 **대수적 데이터 타입 (ADT)** 과 **패턴 매칭** 을 갖춘 언어(Rust, Kotlin, Swift, Scala 등)를 사용함으로써, 이 문제가 아름답게 해결됩니다.
+현대에서는 **대수적 데이터 타입 (ADT)** 과 **패턴 매칭** 을 갖춘 언어([Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/), Kotlin, Swift, Scala 등)를 사용함으로써, 이 문제가 아름답게 해결됩니다.
 
 **현대의 접근 방식 (Rust의 열거형과 패턴 매칭)**
 
@@ -191,7 +191,7 @@ $$
 bind: M[A] \times (A \rightarrow M[B]) \rightarrow M[B]
 $$
 
-**Rust에서의 Result 타입 (Either 모나드의 응용)**
+**[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)에서의 Result 타입 (Either 모나드의 응용)**
 
 ```rust
 fn divide(numerator: f64, denominator: f64) -> Result<f64, String> {

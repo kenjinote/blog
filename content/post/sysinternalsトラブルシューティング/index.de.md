@@ -155,7 +155,7 @@ flowchart LR
 ## 5. Verfolgung versteckter Netzwerkverbindungen mit TCPView
 
 Man kann die Kommunikationsaktivität auch über den Netzwerk-Tab im Task-Manager oder den Befehl `netstat -ano` überprüfen, aber die Aktualisierung ist langsam und das manuelle Zuordnen von Prozessnamen zu PIDs ist mühsam.
-TCPView überwacht alle TCP- und UDP-Endpunkte in Echtzeit und listet auf, welcher Prozess mit welcher Remote-Adresse und welchem Port kommuniziert.
+TCPView überwacht alle [TCP](https://kenji.blog/de/p/http3-quic-protocol-tcp-udp/)- und [UDP](https://kenji.blog/de/p/http3-quic-protocol-tcp-udp/)-Endpunkte in Echtzeit und listet auf, welcher Prozess mit welcher Remote-Adresse und welchem Port kommuniziert.
 
 ### 5.1 Identifizierung von bösartiger C2-Kommunikation
 Wenn Malware eine Hintertür (Backdoor) installiert hat und ein Beacon an einen externen C2-Server (Command and Control) sendet, achten Sie in TCPView auf die folgenden Merkmale:
@@ -163,7 +163,7 @@ Wenn Malware eine Hintertür (Backdoor) installiert hat und ein Beacon an einen 
 *   **Unnatürlicher Prozessname**: Obwohl es sich um eine `svchost.exe` handelt, läuft sie mit Benutzerrechten anstelle von Systemrechten und unterhält eine Verbindung im Zustand `ESTABLISHED` zu einer unbekannten ausländischen IP-Adresse.
 *   **Kommunikation durch Prozesse, die normalerweise nicht kommunizieren**: Beispielsweise der Taschenrechner (`calc.exe`) oder der Editor (`notepad.exe`), die eine große Anzahl von Paketen über Port 443 oder 80 senden/empfangen (typisches Zeichen für Process Hollowing).
 
-Wenn Sie verdächtige Kommunikation finden, können Sie direkt in TCPView `Close Connection` senden, um die TCP-Sitzung zwangsweise zu trennen (durch Senden eines RST-Pakets), oder den entsprechenden Prozess mit `End Process` gewaltsam beenden.
+Wenn Sie verdächtige Kommunikation finden, können Sie direkt in TCPView `Close Connection` senden, um die [TCP](https://kenji.blog/de/p/http3-quic-protocol-tcp-udp/)-Sitzung zwangsweise zu trennen (durch Senden eines RST-Pakets), oder den entsprechenden Prozess mit `End Process` gewaltsam beenden.
 
 ---
 

@@ -14,7 +14,7 @@ description: 'Como aprendizaje de programación en Rust, presentamos un ejemplo 
 
 
 
-He escrito un programa para enumerar números primos en Rust.
+He escrito un programa para enumerar números primos en [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/).
 
 ```rust
 fn main() {

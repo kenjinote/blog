@@ -9,7 +9,7 @@ categories: ["programming"]
 description: 'Rustで`winapi`と`user32-sys`クレートを利用し、Windows APIを呼び出してシンプルなメッセージボックス（MessageBox）を表示する方法を、プロジェクトの作成からコード実装まで手順を追って解説します。'
 ---
 
-下記の手順でRustでMessageBoxを表示することができます。
+下記の手順で[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)でMessageBoxを表示することができます。
 
 1. Rustをインストールする。 [Rustのはじめかた](https://kenji.blog/posts/rust%E3%81%AE%E3%81%AF%E3%81%98%E3%82%81%E3%81%8B%E3%81%9F/) 参照
 2. コマンドプロンプトで`cargo new --bin MessageBox`を実行する。

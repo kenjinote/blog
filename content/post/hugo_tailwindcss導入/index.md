@@ -291,7 +291,7 @@ flowchart TD
 
 ## 6. CSS最適化における数学的パフォーマンス分析
 
-Tailwind CSSを導入する最大のメリットの一つは、配信されるCSSファイルサイズの極小化です。これがウェブパフォーマンス（特にFirst Contentful Paint: FCP）にどのような影響を与えるのか、数学的なモデルを用いて定量的に分析してみましょう。
+Tailwind CSSを導入する最大のメリットの一つは、配信されるCSSファイルサイズの極小化です。これがウェブパフォーマンス（特にFirst Contentful [Paint](https://kenji.blog/p/browser-rendering-mechanism-dom-paint/): FCP）にどのような影響を与えるのか、数学的なモデルを用いて定量的に分析してみましょう。
 
 ### CSSファイルサイズの削減モデル
 

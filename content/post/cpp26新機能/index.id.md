@@ -162,7 +162,7 @@ Dengan menggunakan Contracts, spesifikasi API tidak hanya terdokumentasi sendiri
 
 Sejak perkenalan `std::variant` dan `std::any` di C++17, `std::visit` telah digunakan untuk dispatch tipe yang bervariasi pada suatu variabel. Namun, kombinasi dari `std::visit` dan pola overload (sering disebut sebagai hack struktur `overloaded`) sangat bertele-tele dan sulit dibaca.
 
-Di C++26, **Pattern Matching (Pencocokan Pola)** telah dimasukkan sebagai fitur bahasa (sesuai standar P2688). Ini memungkinkan pencocokan yang intuitif, mirip dengan apa yang ada di bahasa fungsional (seperti Rust atau Haskell).
+Di C++26, **Pattern Matching (Pencocokan Pola)** telah dimasukkan sebagai fitur bahasa (sesuai standar P2688). Ini memungkinkan pencocokan yang intuitif, mirip dengan apa yang ada di bahasa fungsional (seperti [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) atau Haskell).
 
 ## 3.1 Penderitaan `std::visit` Sebelum C++23
 

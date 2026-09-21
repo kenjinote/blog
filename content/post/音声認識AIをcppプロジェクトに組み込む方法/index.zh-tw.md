@@ -237,7 +237,7 @@ graph LR
 
 ### 6.1 語音活動偵測 (VAD) 的重要性
 
-在即時處理中，不斷對無音部分執行推論會浪費運算資源。透過在前端加入VAD演算法（簡單的基於能量閾值處理，或WebRTC VAD等），可以進行**「僅在開始說話時才開始緩衝，並在說話結束（一定時間的無音）時觸發 `whisper_full`」** 的控制。
+在即時處理中，不斷對無音部分執行推論會浪費運算資源。透過在前端加入VAD演算法（簡單的基於能量閾值處理，或[WebRTC](https://kenji.blog/zh-tw/p/webrtc-realtime-communication-p2p/) VAD等），可以進行**「僅在開始說話時才開始緩衝，並在說話結束（一定時間的無音）時觸發 `whisper_full`」** 的控制。
 
 ### 6.2 滑動視窗 (Sliding Window) 策略
 

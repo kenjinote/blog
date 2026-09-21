@@ -248,7 +248,7 @@ function gl { git log --oneline --graph --decorate --all $args }
 
 ## 5.2. 目錄移動的最佳化（z / zoxide）
 
-使用 `cd` 指令移動到深層目錄非常麻煩。近年來，能學習使用者移動的歷史紀錄與頻率（Frecency: Frequency + Recency），只要輸入部分路徑就能跳到目標目錄的工具 **`zoxide`**（使用 Rust 編寫）正逐漸成為標準。
+使用 `cd` 指令移動到深層目錄非常麻煩。近年來，能學習使用者移動的歷史紀錄與頻率（Frecency: Frequency + Recency），只要輸入部分路徑就能跳到目標目錄的工具 **`zoxide`**（使用 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 編寫）正逐漸成為標準。
 
 ```bash
 # 安裝 zoxide 後，使用 z 來代替 cd

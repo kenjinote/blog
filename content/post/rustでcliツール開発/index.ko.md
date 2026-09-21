@@ -12,7 +12,7 @@ tags: ["Rust", "CLI", "clap", "tokio"]
 
 ## 1. 시작하며
 
-현대의 소프트웨어 개발에 있어 CLI(명령줄 인터페이스) 도구는 개발자의 생산성을 비약적으로 높여주는 필수불가결한 존재입니다. 예전에는 쉘 스크립트나 Python, Ruby 등이 주류였지만, 최근에는 **Rust** 가 CLI 도구 개발의 사실상 표준으로 확고한 지위를 구축해 나가고 있습니다.
+현대의 소프트웨어 개발에 있어 CLI(명령줄 인터페이스) 도구는 개발자의 생산성을 비약적으로 높여주는 필수불가결한 존재입니다. 예전에는 쉘 스크립트나 Python, Ruby 등이 주류였지만, 최근에는 **[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)** 가 CLI 도구 개발의 사실상 표준으로 확고한 지위를 구축해 나가고 있습니다.
 
 본 기사에서는 Rust를 사용하여 '초고속으로 동작하고, 초고속으로 개발할 수 있는' 실용적인 CLI 도구 구축 방법을 기초부터 응용까지 철저하게 해설합니다. 단순히 동작하는 것을 만드는 것에 그치지 않고, 상용 수준에서 통용되는 견고한 에러 핸들링, 비동기 처리를 이용한 고속 API 요청, 그리고 사용자 경험(UX)을 향상시키는 프로그레스 바 구현까지 망라하여 다룹니다.
 
@@ -41,9 +41,9 @@ Rust의 최대 무기인 소유권(Ownership) 모델과 강력한 타입 시스�
 Rust 생태계에는 CLI 개발을 강력하게 지원하는 뛰어난 크레이트(라이브러리)가 다수 존재합니다. 본 튜토리얼에서는 현대 Rust CLI 개발에 있어서 '골든 스택'이라고도 부를 수 있는 다음 크레이트들을 사용합니다.
 
 1. **`clap`**: 명령줄 인수 구문 분석에서 가장 강력하고 인기 있는 크레이트입니다. 버전 4 이후 Derive 매크로를 사용한 선언적 정의가 더욱 세련되어졌으며, 도움말 메시지 자동 생성과 입력 자동 완성 스크립트 생성도 지원합니다.
-2. **`tokio`**: Rust 비동기 런타임의 사실상 표준입니다. 멀티 스레드에서의 비동기 I/O를 극히 효율적으로 처리합니다.
+2. **`tokio`**: [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/) 비동기 런타임의 사실상 표준입니다. 멀티 스레드에서의 비동기 I/O를 극히 효율적으로 처리합니다.
 3. **`reqwest`**: `tokio` 위에서 동작하는 고기능 HTTP 클라이언트입니다. 사용하기 쉬운 API를 갖추고 있어 비동기 API 요청을 간단히 구현할 수 있습니다.
-4. **`serde` & `serde_json`**: 데이터의 직렬화·역직렬화를 수행하는 프레임워크입니다. API의 JSON 응답을 Rust의 타입 안전한 구조체에 매핑하기 위해 필수적입니다.
+4. **`serde` & `serde_json`**: 데이터의 직렬화·역직렬화를 수행하는 프레임워크입니다. API의 JSON 응답을 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)의 타입 안전한 구조체에 매핑하기 위해 필수적입니다.
 5. **`indicatif`**: 풍부하고 사용자 정의 가능한 프로그레스 바를 제공합니다. 비동기 처리의 진행 상황을 시각적으로 표시하여 CLI의 UX를 극적으로 향상시킵니다.
 6. **`anyhow` & `thiserror`**: 에러 핸들링의 강력한 조합입니다. 라이브러리 내부의 도메인 에러 정의에는 `thiserror`를, 애플리케이션 최상위 계층에서의 에러 집계에는 `anyhow`를 사용하는 것이 모범 사례입니다.
 
@@ -86,7 +86,7 @@ $$
 L = \lambda W \implies \lambda = \frac{L}{W}
 $$
 
-즉, 네트워크 지연 $W$를 피할 수 없는 환경 하에서 시스템의 처리량 $\lambda$를 향상시키려면 동시에 처리하는 요청 수 $L$을 늘릴 수밖에 없습니다. Rust의 비동기 작업은 OS의 네이티브 스레드와 달리 메모리 오버헤드가 극히 작기 때문에 $L$을 쉽게 확장(Scale)시킬 수 있습니다.
+즉, 네트워크 지연 $W$를 피할 수 없는 환경 하에서 시스템의 처리량 $\lambda$를 향상시키려면 동시에 처리하는 요청 수 $L$을 늘릴 수밖에 없습니다. [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)의 비동기 작업은 OS의 네이티브 스레드와 달리 메모리 오버헤드가 극히 작기 때문에 $L$을 쉽게 확장(Scale)시킬 수 있습니다.
 
 ---
 
@@ -239,7 +239,7 @@ Commands:
 
 ## 9. 구현 단계 3: API 클라이언트와 데이터 매핑
 
-GitHub API에서 반환되는 JSON 데이터를 Rust의 구조체에 매핑합니다. `src/models.rs`와 `src/api.rs`를 구현합니다.
+GitHub API에서 반환되는 JSON 데이터를 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)의 구조체에 매핑합니다. `src/models.rs`와 `src/api.rs`를 구현합니다.
 
 ```rust
 // src/models.rs
@@ -413,7 +413,7 @@ strip = true        # 심볼 정보를 삭제하여 바이너리 크기를 극�
 작성한 도구를 전 세계에 배포하기 위한 단계입니다.
 
 ### crates.io에 공개
-Rust 패키지 매니저인 Cargo를 사용하면 단 몇 번의 명령어로 공식 레지스트리에 공개할 수 있습니다.
+[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/) 패키지 매니저인 Cargo를 사용하면 단 몇 번의 명령어로 공식 레지스트리에 공개할 수 있습니다.
 
 ```bash
 cargo login <YOUR_TOKEN>
@@ -428,12 +428,12 @@ cargo publish
 
 ## 13. 요약
 
-본 기사에서는 Rust를 이용한 CLI 도구 개발의 일련의 흐름을 상세하게 해설했습니다.
+본 기사에서는 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)를 이용한 CLI 도구 개발의 일련의 흐름을 상세하게 해설했습니다.
 
 1. **설계 방침**: Rust의 안전성과 고속성, 단일 바이너리의 이점을 확인했습니다.
 2. **크레이트 선정**: `clap`, `tokio`, `serde`, `indicatif`, `thiserror`, `anyhow`라는 강력한 무기를 얻었습니다.
 3. **병행 처리의 수학적 우위성**: 암달의 법칙과 리틀의 법칙을 바탕으로 비동기 처리의 위력을 이론적으로 이해했습니다.
 4. **구현과 최적화**: 견고한 에러 핸들링부터 극한의 바이너리 최적화까지 실용적인 노하우를 담았습니다.
 
-Rust를 활용한 CLI 개발은 컴파일러와의 대화를 통해 소프트웨어의 품질을 설계 단계부터 담보할 수 있는 훌륭한 경험입니다. 이번에 작성한 기본 코드를 바탕으로 부디 여러분만의 오리지널 CLI 도구를 개발하여 전 세계를 향해 공유해 보시기 바랍니다! Happy Rust Coding!
+[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)를 활용한 CLI 개발은 컴파일러와의 대화를 통해 소프트웨어의 품질을 설계 단계부터 담보할 수 있는 훌륭한 경험입니다. 이번에 작성한 기본 코드를 바탕으로 부디 여러분만의 오리지널 CLI 도구를 개발하여 전 세계를 향해 공유해 보시기 바랍니다! Happy Rust Coding!
 

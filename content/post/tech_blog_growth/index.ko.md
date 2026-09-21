@@ -27,9 +27,9 @@ description: '데이터와 자동화로 기술 블로그의 트래픽을 극대�
 Google은 페이지 경험을 랭킹 요소로 채택하고 있으며, 특히 **Core Web Vitals (LCP, FID/INP, CLS)** 는 기술 블로그에서도 무시할 수 없습니다.
 기술 블로그에서는 대량의 소스 코드 블록이나 수식(MathJax / KaTeX), 도해 이미지가 많이 사용됩니다. 이것들은 페이지 렌더링을 지연시키는 요인이 됩니다.
 
-- **LCP (Largest Contentful Paint)**: 첫 화면의 주요 콘텐츠 로딩 속도입니다. 썸네일 이미지에는 WebP나 AVIF를 사용하고, `fetchpriority="high"` 속성을 부여하여 프리로드합니다. 또한 신택스 하이라이팅을 위한 거대한 CSS나 JS는 비동기 로드하거나 필요한 페이지에만 로드되도록 설계합니다.
-- **CLS (Cumulative Layout Shift)**: 문서를 로딩하는 도중 발생하는 레이아웃의 어긋남입니다. 수식이나 이미지의 표시 영역을 미리 CSS의 `aspect-ratio` 등으로 확보해 두면 나중에 DOM이 삽입될 때 발생하는 흔들림을 방지할 수 있습니다.
-- **INP (Interaction to Next Paint)**: 사용자의 조작에 대한 응답성입니다. 무거운 JavaScript(예를 들어 클라이언트 사이드에서의 동적인 전문 검색이나 거대한 Markdown 파서 실행 등)를 메인 스레드에서 실행하지 않고, Web Worker로 넘기거나 빌드 시 정적 HTML로 생성(SSG)해 두는 것이 필수적입니다.
+- **LCP (Largest Contentful [Paint](https://kenji.blog/ko/p/browser-rendering-mechanism-dom-paint/))**: 첫 화면의 주요 콘텐츠 로딩 속도입니다. 썸네일 이미지에는 WebP나 AVIF를 사용하고, `fetchpriority="high"` 속성을 부여하여 프리로드합니다. 또한 신택스 하이라이팅을 위한 거대한 CSS나 JS는 비동기 로드하거나 필요한 페이지에만 로드되도록 설계합니다.
+- **CLS (Cumulative [Layout](https://kenji.blog/ko/p/browser-rendering-mechanism-dom-paint/) Shift)**: 문서를 로딩하는 도중 발생하는 레이아웃의 어긋남입니다. 수식이나 이미지의 표시 영역을 미리 CSS의 `aspect-ratio` 등으로 확보해 두면 나중에 DOM이 삽입될 때 발생하는 흔들림을 방지할 수 있습니다.
+- **INP (Interaction to Next [Paint](https://kenji.blog/ko/p/browser-rendering-mechanism-dom-paint/))**: 사용자의 조작에 대한 응답성입니다. 무거운 JavaScript(예를 들어 클라이언트 사이드에서의 동적인 전문 검색이나 거대한 Markdown 파서 실행 등)를 메인 스레드에서 실행하지 않고, Web Worker로 넘기거나 빌드 시 정적 HTML로 생성(SSG)해 두는 것이 필수적입니다.
 
 ### 1.2 구조화된 데이터(JSON-LD) 구현
 

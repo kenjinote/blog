@@ -8,7 +8,7 @@ categories: ["programming", "computer-science", "software-engineering"]
 tags: ["memory-management", "c-language", "java", "rust", "garbage-collection"]
 ---
 
-# Selamat Datang di Kebenaran Manajemen Memori: Mengungkap Misteri dari C, Java, dan Rust
+# Selamat Datang di Kebenaran Manajemen Memori: Mengungkap Misteri dari C, Java, dan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)
 
 Dalam pengembangan perangkat lunak, manajemen memori adalah tema abadi yang tidak dapat dihindari, dan salah satu faktor terpenting yang menentukan kinerja dan stabilitas sistem. Dalam artikel ini, melalui eksplorasi mendalam berskala sekitar 20.000 karakter, kami akan sepenuhnya mencakup segala hal mulai dari teori dasar manajemen memori hingga teknik pengoptimalan dalam arsitektur modern.
 
@@ -206,7 +206,7 @@ Saat GC dijalankan, semua utas aplikasi akan dijeda (pause) untuk menjaga konsis
 
 ---
 
-## 4. Rust: Jalan Ketiga yang Dibawa oleh Kepemilikan dan Peminjaman
+## 4. [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/): Jalan Ketiga yang Dibawa oleh Kepemilikan dan Peminjaman
 
 "Performa ekstrem melalui manajemen manual" milik C dan "Keamanan memori melalui manajemen otomatis" milik Java. Keduanya telah lama dianggap memiliki hubungan timbal balik (trade-off). Namun, bahasa pemrograman Rust telah mencapai pencapaian luar biasa dengan menyingkirkan pengumpulan sampah (GC) sambil memberikan jaminan 100% atas keamanan memori pada saat kompilasi, dengan memperkenalkan model inovatif yang disebut **"Kepemilikan (Ownership)"**.
 
@@ -222,7 +222,7 @@ Dengan aturan ini, Rust secara otomatis memanggil fungsi `drop` pada saat variab
 
 ### 4.2 Perpindahan Kepemilikan (Move)
 
-Di Rust, saat Anda menetapkan (assign) variabel ke variabel lain atau meneruskannya ke fungsi berdasarkan nilai, kepemilikan akan "berpindah (Move)". Variabel sumber tidak lagi dapat diakses setelahnya (akan menghasilkan kesalahan kompilasi). Ini membuat pembebasan ganda (Double Free) secara struktural tidak mungkin terjadi.
+Di [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), saat Anda menetapkan (assign) variabel ke variabel lain atau meneruskannya ke fungsi berdasarkan nilai, kepemilikan akan "berpindah (Move)". Variabel sumber tidak lagi dapat diakses setelahnya (akan menghasilkan kesalahan kompilasi). Ini membuat pembebasan ganda (Double Free) secara struktural tidak mungkin terjadi.
 
 ```rust
 fn main() {
@@ -241,7 +241,7 @@ fn main() {
 
 ### 4.3 Peminjaman (Borrowing) dan Waktu Hidup (Lifetime)
 
-Jika semua operasi memindahkan kepemilikan, pemrograman akan menjadi sangat tidak nyaman. Untuk mengakses data tanpa merampas kepemilikan, Rust memiliki konsep **Referensi (Reference)** dan **Peminjaman (Borrowing)**.
+Jika semua operasi memindahkan kepemilikan, pemrograman akan menjadi sangat tidak nyaman. Untuk mengakses data tanpa merampas kepemilikan, [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) memiliki konsep **Referensi (Reference)** dan **Peminjaman (Borrowing)**.
 
 Selain itu, **Pemeriksa Pinjaman (Borrow Checker)** bawaan kompilator Rust memaksakan aturan ketat berikut pada saat kompilasi.
 
@@ -295,7 +295,7 @@ Saat CPU memuat data dari memori, CPU tidak hanya memuat data itu sendiri, tetap
 
 ### 5.1 Perbedaan Efisiensi Cache Berdasarkan Bahasa
 
-- **C / C++ / Rust** : Saat Anda membuat array dari struktur (`struct Array[100]` atau `Vec<MyStruct>`), data tersebut ditempatkan secara berurutan dan padat di memori tanpa celah. Saat melakukan pengulangan pada array, prefetcher perangkat keras CPU berfungsi dengan sempurna, sehingga tingkat rasio hit cache (cache hit rate) meningkat secara dramatis.
+- **C / C++ / [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)** : Saat Anda membuat array dari struktur (`struct Array[100]` atau `Vec<MyStruct>`), data tersebut ditempatkan secara berurutan dan padat di memori tanpa celah. Saat melakukan pengulangan pada array, prefetcher perangkat keras CPU berfungsi dengan sempurna, sehingga tingkat rasio hit cache (cache hit rate) meningkat secara dramatis.
 - **Java** : Array objek Java (`MyObject[]`) bukanlah entitas (nilai aslinya), melainkan array "referensi (pointer) ke objek". Karena setiap objek aktual dialokasikan di tempat yang tersebar di heap, setiap kali terjadi pengulangan, sistem mengikuti pointer untuk mengakses alamat memori yang acak, menyebabkan kesalahan cache (Cache Miss) berturut-turut yang parah.
 
 Waktu rata-rata akses memori efektif $ T_{avg} $ dinyatakan sebagai berikut.
@@ -303,7 +303,7 @@ Waktu rata-rata akses memori efektif $ T_{avg} $ dinyatakan sebagai berikut.
 $ T_{avg} = h \cdot T_{cache} + (1 - h) \cdot T_{memory} $
 
 Di mana, $ h $ adalah rasio hit cache ( $ 0 \le h \le 1 $ ), $ T_{cache} $ adalah waktu akses cache (sekitar 1~4 ns), dan $ T_{memory} $ adalah waktu akses memori utama (sekitar 100 ns).
-Dengan menjadikan $ h $ mendekati 0.99 (pendekatan C/Rust) dibandingkan menurunkannya ke 0.5 (pengejaran pointer ala Java), akan tercipta perbedaan kecepatan eksekusi perulangan (looping) aplikasi puluhan kali lipat. Inilah alasan sebenarnya mengapa C++ atau Rust dipilih dalam mesin game atau sistem perdagangan berfrekuensi tinggi (high-frequency trading system).
+Dengan menjadikan $ h $ mendekati 0.99 (pendekatan C/[Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)) dibandingkan menurunkannya ke 0.5 (pengejaran pointer ala Java), akan tercipta perbedaan kecepatan eksekusi perulangan (looping) aplikasi puluhan kali lipat. Inilah alasan sebenarnya mengapa C++ atau Rust dipilih dalam mesin game atau sistem perdagangan berfrekuensi tinggi (high-frequency trading system).
 
 ---
 
@@ -315,7 +315,7 @@ Dalam artikel ini, kita telah menggali lebih dalam 3 paradigma manajemen memori 
 |:---:|:---|:---|:---|
 | **C** | Manajemen manual dengan `malloc/free` | Kecepatan tertinggi, efisiensi cache maksimum, ringan | Sarang kerentanan (kebocoran, pembebasan ganda), biaya pengembangan tinggi |
 | **Java** | GC (Pengumpulan Sampah) | Peningkatan kecepatan pengembangan, terjaminnya keamanan memori | Fluktuasi latensi akibat STW, memburuknya efisiensi cache |
-| **Rust** | Kepemilikan & Pemeriksa Pinjaman | Keamanan dengan biaya runtime nol, kecepatan tinggi | Kurva pembelajaran yang curam, kesulitan dalam mendesain waktu hidup (lifetime) |
+| **[Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)** | Kepemilikan & Pemeriksa Pinjaman | Keamanan dengan biaya runtime nol, kecepatan tinggi | Kurva pembelajaran yang curam, kesulitan dalam mendesain waktu hidup (lifetime) |
 
 Sejarah **manajemen memori** adalah permainan jungkat-jungkit yang berayun di antara performa dan keamanan. GC diciptakan untuk mencegah tragedi akibat manajemen manual, dan model kepemilikan ditemukan untuk menghindari penalti performa dari GC.
 

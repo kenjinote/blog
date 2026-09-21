@@ -9,7 +9,7 @@ categories: ["programming"]
 description: 'نشرح كيفية إنشاء وعرض نافذة بسيطة في Windows باستخدام `winapi` في Rust. نشرح بالتفصيل الكود المصدري الذي يمثل أساس برمجة واجهة المستخدم الرسومية (GUI)، من إعدادات Cargo.toml إلى تنفيذ إجراء النافذة.'
 ---
 
-عرض نافذة بسيطة في Rust
+عرض نافذة بسيطة في [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/)
 
 ```Cargo.toml
 [package]

@@ -18,7 +18,7 @@ slug: "floyds-cycle-finding"
 
 由于该算法使用了两个速度不同的指针（通常被比喻为“兔子”和“乌龟”），因此它也被广泛称为 **龟兔赛跑算法** （Tortoise and Hare Algorithm）。
 
-本文将从该算法的工作原理、数学背景，到使用 C++ 和 Rust 的具体实现示例，进行详细的解说。
+本文将从该算法的工作原理、数学背景，到使用 C++ 和 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 的具体实现示例，进行详细的解说。
 
 ## 什么是循环检测？
 
@@ -111,7 +111,7 @@ $$ x = (k - 1)C + z $$
 
 ## 代码实现
 
-接下来，让我们用 C++ 和 Rust 来实现上述理论。
+接下来，让我们用 C++ 和 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 来实现上述理论。
 
 ### C++ 的实现
 
@@ -207,7 +207,7 @@ int main() {
 }
 ```
 
-### Rust 的实现
+### [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 的实现
 
 在 Rust 中，由于所有权和借用规则，链表的实现往往会变得复杂，但在竞技编程等场景中，将其建模为数组（或 `Vec`）上的索引引用问题是很常见的。
 这里展示了一个不使用“指向下一个的指针”，而是使用保存“下一个索引”的数组的实现示例。
@@ -332,4 +332,4 @@ graph TD
 尽管“让两个速度不同的指针奔跑”是一个简单的想法，但它却能在 $O(N)$ 的时间和 $O(1)$ 的空间内检测出循环并定位起点，是一种非常优雅的方法。
 通过理解其数学依据，相信你已经明白了为什么在相遇后，将一个指针移回起点并以相同速度前进就能找到循环的起始点。
 
-在数据结构实现和竞技编程中，这个算法是非常强大的武器。请务必亲自动手尝试用 C++ 或 Rust 来实现一下。
+在数据结构实现和竞技编程中，这个算法是非常强大的武器。请务必亲自动手尝试用 C++ 或 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 来实现一下。

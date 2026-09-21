@@ -232,7 +232,7 @@ No diretório `assets/css/` (crie-o se não existir), crie o arquivo CSS que ser
 }
 ```
 
-### 5-2. Edição do Arquivo de Layout (head.html)
+### 5-2. Edição do Arquivo de [Layout](https://kenji.blog/pt/p/browser-rendering-mechanism-dom-paint/) (head.html)
 
 A seguir, a partir dos templates do Hugo, leremos o arquivo CSS acima e descreveremos o pipeline para processá-lo com o PostCSS. Normalmente, você edita o partial template que define o interior da tag `<head>` (ex: `layouts/partials/head.html`).
 
@@ -291,7 +291,7 @@ flowchart TD
 
 ## 6. Análise de Desempenho Matemático na Otimização do CSS
 
-Um dos maiores benefícios de introduzir o Tailwind CSS é a minimização extrema do tamanho do arquivo CSS distribuído. Vamos analisar quantitativamente como isso afeta a performance web (especialmente o First Contentful Paint: FCP) através de um modelo matemático.
+Um dos maiores benefícios de introduzir o Tailwind CSS é a minimização extrema do tamanho do arquivo CSS distribuído. Vamos analisar quantitativamente como isso afeta a performance web (especialmente o First Contentful [Paint](https://kenji.blog/pt/p/browser-rendering-mechanism-dom-paint/): FCP) através de um modelo matemático.
 
 ### Modelo de Redução do Tamanho do Arquivo CSS
 

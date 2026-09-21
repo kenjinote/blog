@@ -145,7 +145,7 @@ Voici quelques commandes que vous pouvez exécuter dans "Exécuter" ou dans l'In
 ![img_5.png](img_5.webp)
 - Tapez `calc` et appuyez sur `Enter`
 
-## Lancer Paint
+## Lancer [Paint](https://kenji.blog/fr/p/browser-rendering-mechanism-dom-paint/)
 ![img_6.png](img_6.webp)
 - Tapez `mspaint` et appuyez sur `Enter`  
 

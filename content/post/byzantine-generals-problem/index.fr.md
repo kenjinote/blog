@@ -120,7 +120,7 @@ Dans ce modèle, l'ordre émis par le commandant ne peut pas être altéré en c
 
 La résistance au problème des généraux byzantins est appelée la **Tolérance aux pannes byzantines** (Byzantine Fault Tolerance, BFT). Il s'agit d'un indicateur clé permettant à un système distribué de continuer à fonctionner normalement même face à des pannes ou des attaques malveillantes.
 
-Ces dernières années, ce problème est revenu sur le devant de la scène grâce à l'apparition de la **technologie blockchain**. La blockchain étant un réseau P2P sans autorité centrale, des participants malveillants (nœuds) peuvent diffuser de faux historiques de transactions. Il s'agit précisément du problème des généraux byzantins.
+Ces dernières années, ce problème est revenu sur le devant de la scène grâce à l'apparition de la **technologie blockchain**. La blockchain étant un réseau [P2P](https://kenji.blog/fr/p/webrtc-realtime-communication-p2p/) sans autorité centrale, des participants malveillants (nœuds) peuvent diffuser de faux historiques de transactions. Il s'agit précisément du problème des généraux byzantins.
 
 ### Le mécanisme de PBFT (Practical Byzantine Fault Tolerance)
 

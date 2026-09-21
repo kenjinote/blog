@@ -27,7 +27,7 @@ Dieser Mechanismus hat den Vorteil, dass für jeden Besucher individuelle Inhalt
 
 ### 1.2 Die Architektur von Hugo (Vorab-Generierung zur Build-Zeit)
 Andererseits generiert Hugo, wie der Name "Static Site Generator" schon sagt, Inhalte nicht zur "Anfragezeit", sondern zur "Build-Zeit". Die Inhalte werden nicht in einer Datenbank, sondern als lokale "Markdown-Dateien" verwaltet, die mit Versionskontrollsystemen wie Git versioniert werden.
-Wenn der Entwickler den Befehl (`hugo`) ausführt, liest Hugo die Markdown-Dateien ein, fügt die Daten in die angegebenen HTML-Vorlagen (Layout-Dateien) ein und generiert eine Sammlung vollständiger, reiner HTML/CSS/JS-Dateien.
+Wenn der Entwickler den Befehl (`hugo`) ausführt, liest Hugo die Markdown-Dateien ein, fügt die Daten in die angegebenen HTML-Vorlagen ([Layout](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/)-Dateien) ein und generiert eine Sammlung vollständiger, reiner HTML/CSS/JS-Dateien.
 
 Die generierten Dateien (statische Assets) können einfach durch Platzieren in einer "statischen Hosting-Umgebung" wie Amazon S3, Cloudflare Pages, Netlify, Vercel oder einem einfachen Nginx-Server bereitgestellt werden. Da weder eine Datenbank noch eine serverseitige Sprache (wie PHP) erforderlich sind, werden Sicherheitsrisiken (wie SQL-Injection oder PHP-Schwachstellen) drastisch reduziert, und die Auslieferungsgeschwindigkeit wird extrem maximiert, da die Daten auf Edge-Nodes eines CDN (Content Delivery Network) zwischengespeichert (gecacht) werden.
 
@@ -136,7 +136,7 @@ Bemerkenswert ist hier der `aliases`-Schlüssel. Bei der Migration von WordPress
 
 Eine der leistungsstärksten Funktionen von Hugo ist sein flexibler Vorlagen-Suchmechanismus (Template Lookup Order). Beim Rendern einer bestimmten Seite durchsucht Hugo Verzeichnisse und Dateinamen in einer bestimmten Reihenfolge, um die optimale Vorlage zu finden.
 
-Wenn beispielsweise ein einzelner Artikel (Single Page) namens `content/post/hello-world.md` gerendert wird, sucht Hugo im Allgemeinen in der folgenden Reihenfolge nach Layoutdateien:
+Wenn beispielsweise ein einzelner Artikel (Single Page) namens `content/post/hello-world.md` gerendert wird, sucht Hugo im Allgemeinen in der folgenden Reihenfolge nach [Layout](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/)dateien:
 
 1. `layouts/post/single.html`
 2. `layouts/post/list.html` (Nicht falsch, aber normalerweise für Listen)
@@ -206,7 +206,7 @@ Zusätzlich richten Sie für Seiten, deren URL sich ändert, Weiterleitungen mit
 ### 4.3 Konvertierung von Shortcodes
 
 WordPress-spezifische Shortcodes (z. B. `[gallery]`, `[caption]`, benutzerdefinierte Codes verschiedener Plugins) bleiben beim Export oft als bloße Zeichenfolgen erhalten, daher muss dies behoben werden.
-Diese werden entweder in großen Mengen mithilfe von Ersetzungsskripten (sed oder Python) gelöscht oder Sie verwenden Hugos leistungsstarke **Custom Shortcode-Funktion** (erstellen Sie benutzerdefinierte Layouts in `layouts/shortcodes/`), um sie so zu migrieren, dass sie auf der Hugo-Seite korrekt gerendert werden.
+Diese werden entweder in großen Mengen mithilfe von Ersetzungsskripten (sed oder Python) gelöscht oder Sie verwenden Hugos leistungsstarke **Custom Shortcode-Funktion** (erstellen Sie benutzerdefinierte [Layout](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/)s in `layouts/shortcodes/`), um sie so zu migrieren, dass sie auf der Hugo-Seite korrekt gerendert werden.
 
 ---
 

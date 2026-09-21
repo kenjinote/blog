@@ -237,7 +237,7 @@ graph LR
 
 ### 6.1 Die Bedeutung der Voice Activity Detection (VAD)
 
-Bei der Echtzeitverarbeitung ist es eine Verschwendung von Rechenressourcen, ständig Inferenzen auch für stille Abschnitte durchzuführen. Indem man einen VAD-Algorithmus (einen einfachen energie-basierten Schwellenwertprozess oder WebRTC VAD usw.) in die vorhergehende Stufe einfügt, wird die Steuerung erreicht: **"Starten Sie die Pufferung nur, wenn eine Äußerung beginnt, und stoßen Sie `whisper_full` an dem Punkt an, an dem die Äußerung endet (eine bestimmte Zeit der Stille)."**
+Bei der Echtzeitverarbeitung ist es eine Verschwendung von Rechenressourcen, ständig Inferenzen auch für stille Abschnitte durchzuführen. Indem man einen VAD-Algorithmus (einen einfachen energie-basierten Schwellenwertprozess oder [WebRTC](https://kenji.blog/de/p/webrtc-realtime-communication-p2p/) VAD usw.) in die vorhergehende Stufe einfügt, wird die Steuerung erreicht: **"Starten Sie die Pufferung nur, wenn eine Äußerung beginnt, und stoßen Sie `whisper_full` an dem Punkt an, an dem die Äußerung endet (eine bestimmte Zeit der Stille)."**
 
 ### 6.2 Sliding-Window-Ansatz
 

@@ -153,7 +153,7 @@ Al igual que en ProcExp, en Autoruns puedes habilitar `Verify Code Signatures` y
 ## 5. Seguimiento de conexiones de red ocultas con TCPView
 
 Aunque es posible comprobar el estado de las conexiones en la pestaña de red del Administrador de tareas o con el comando `netstat -ano`, las actualizaciones pueden ser lentas y mapear manualmente los nombres de los procesos con los PID es tedioso.
-TCPView monitorea en tiempo real todos los puntos finales de TCP y UDP, y muestra una lista de qué procesos se están comunicando con qué direcciones y puertos remotos.
+TCPView monitorea en tiempo real todos los puntos finales de [TCP](https://kenji.blog/es/p/http3-quic-protocol-tcp-udp/) y [UDP](https://kenji.blog/es/p/http3-quic-protocol-tcp-udp/), y muestra una lista de qué procesos se están comunicando con qué direcciones y puertos remotos.
 
 ### 5.1 Identificación de comunicaciones C2 ilícitas
 Si un malware ha instalado una puerta trasera (backdoor) y está enviando señales (Beacon) a un servidor C2 (Command and Control) externo, busca las siguientes características en TCPView:
@@ -161,7 +161,7 @@ Si un malware ha instalado una puerta trasera (backdoor) y está enviando señal
 *   **Nombre de proceso poco natural**: Un `svchost.exe` que, en lugar de ejecutarse con privilegios del sistema, opera con privilegios de usuario y mantiene una comunicación en estado `ESTABLISHED` con una dirección IP extranjera desconocida.
 *   **Comunicación de procesos que normalmente no se comunican**: Por ejemplo, la calculadora (`calc.exe`) o el bloc de notas (`notepad.exe`) enviando y recibiendo una gran cantidad de paquetes por los puertos 443 o 80 (una señal típica de ahuecamiento de procesos).
 
-Si encuentras una conexión sospechosa, puedes enviar `Close Connection` directamente desde TCPView para forzar la desconexión de la sesión TCP (emitiendo un paquete RST), o forzar el cierre del proceso en cuestión con `End Process`.
+Si encuentras una conexión sospechosa, puedes enviar `Close Connection` directamente desde TCPView para forzar la desconexión de la sesión [TCP](https://kenji.blog/es/p/http3-quic-protocol-tcp-udp/) (emitiendo un paquete RST), o forzar el cierre del proceso en cuestión con `End Process`.
 
 ---
 

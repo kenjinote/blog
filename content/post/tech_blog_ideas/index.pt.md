@@ -180,7 +180,7 @@ O Zettelkasten consiste principalmente em 3 tipos de anotações:
 2. **Literature Notes (Notas de Leitura)**: Resumos que você escreveu com suas próprias palavras após a leitura de artigos ou livros.
 3. **Permanent Notes (Notas Permanentes)**: Reflexões completas sobre um único tópico. Essas notas são a semente direta para artigos de blogs.
 
-Usando o recurso de backlinks (`[[Nome da Nota]]`) do Obsidian, por exemplo, ao linkar uma anotação sobre a "Ownership no Rust" com outra sobre a "História do [Garbage Collection](https://kenji.blog/pt/p/memory-management-garbage-collection/)", é possível descobrir conexões de ideias completamente inesperadas.
+Usando o recurso de backlinks (`[[Nome da Nota]]`) do Obsidian, por exemplo, ao linkar uma anotação sobre a "Ownership no [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/)" com outra sobre a "História do [Garbage Collection](https://kenji.blog/pt/p/memory-management-garbage-collection/)", é possível descobrir conexões de ideias completamente inesperadas.
 
 ## 5. Busca Semântica usando Banco de Dados Vetorial (Pinecone) e OpenAI Embeddings
 
@@ -284,7 +284,7 @@ if __name__ == "__main__":
     search_similar_ideas(idx, "Aceleração de inferência de aprendizado de máquina no navegador usando WebAssembly")
 ```
 
-Com este sistema, ao questionar "Quero escrever sobre 'WebAssembly', que estava em alta no Hacker News desta semana, mas será que já escrevi notas relacionadas no passado?", a IA pode extrair instantaneamente Notas Permanentes do passado que tenham relação semântica. Assim, é possível estruturar artigos de maneira profunda, aproveitando ao máximo todos os seus conhecimentos anteriores.
+Com este sistema, ao questionar "Quero escrever sobre '[WebAssembly](https://kenji.blog/pt/p/webassembly-wasm-current-future/)', que estava em alta no Hacker News desta semana, mas será que já escrevi notas relacionadas no passado?", a IA pode extrair instantaneamente Notas Permanentes do passado que tenham relação semântica. Assim, é possível estruturar artigos de maneira profunda, aproveitando ao máximo todos os seus conhecimentos anteriores.
 
 ## 6. Curva de Esquecimento de Ebbinghaus e Repetição Espaçada com Anki
 

@@ -403,7 +403,7 @@ Di sisi lain, untuk `HRESULT`, Anda membuat kategori kesalahan khusus atau mengg
 
 ## 10. Penanganan Kesalahan Modern Menggunakan `std::expected` (C++23)
 
-Mulai dari C++23, `std::expected`, yang setara dengan tipe `Result` dari Rust, telah diperkenalkan. Dalam proyek yang tidak menyukai pengecualian (karena alasan kinerja atau desain di mana kesalahan sering terjadi), ini adalah cara terbaik untuk memodernisasi nilai kembalian dari Win32.
+Mulai dari C++23, `std::expected`, yang setara dengan tipe `Result` dari [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), telah diperkenalkan. Dalam proyek yang tidak menyukai pengecualian (karena alasan kinerja atau desain di mana kesalahan sering terjadi), ini adalah cara terbaik untuk memodernisasi nilai kembalian dari Win32.
 
 ```cpp
 #include <expected>

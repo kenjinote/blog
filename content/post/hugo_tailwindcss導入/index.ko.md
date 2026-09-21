@@ -291,7 +291,7 @@ flowchart TD
 
 ## 6. CSS 최적화에서의 수학적 성능 분석
 
-Tailwind CSS를 도입하는 가장 큰 장점 중 하나는 전송되는 CSS 파일 크기의 극소화입니다. 이것이 웹 성능(특히 First Contentful Paint: FCP)에 어떤 영향을 미치는지 수학적인 모델을 사용하여 정량적으로 분석해 보겠습니다.
+Tailwind CSS를 도입하는 가장 큰 장점 중 하나는 전송되는 CSS 파일 크기의 극소화입니다. 이것이 웹 성능(특히 First Contentful [Paint](https://kenji.blog/ko/p/browser-rendering-mechanism-dom-paint/): FCP)에 어떤 영향을 미치는지 수학적인 모델을 사용하여 정량적으로 분석해 보겠습니다.
 
 ### CSS 파일 크기 감소 모델
 

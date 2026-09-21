@@ -50,7 +50,7 @@ GitHub Pages是一项能够直接从GitHub仓库发布HTML、CSS和JavaScript文
 
 ### 2.3 Cloudflare Pages
 Cloudflare Pages是建立在Cloudflare引以为豪的全球最大规模Anycast网络（覆盖275个以上城市）之上的静态网站托管服务。
-它原生支持HTTP/3（QUIC）、图像优化以及集成边缘函数（Cloudflare Workers），可以进行极致的性能调优。此外，它不对带宽进行计费，无论流量如何激增都能免费运营，这是一个巨大的优势。
+它原生支持[HTTP/3](https://kenji.blog/zh-cn/p/http3-quic-protocol-tcp-udp/)（[QUIC](https://kenji.blog/zh-cn/p/http3-quic-protocol-tcp-udp/)）、图像优化以及集成边缘函数（Cloudflare Workers），可以进行极致的性能调优。此外，它不对带宽进行计费，无论流量如何激增都能免费运营，这是一个巨大的优势。
 
 ### 2.4 Netlify
 Netlify是Jamstack的先驱，提供了集成表单功能、认证（Identity）、无服务器函数等在内的多合一DX体验。然而，当超出免费额度的带宽（每月100GB）时，将会产生高昂的按量计费费用，因此在大量使用图像和视频的博客中需要注意成本控制。
@@ -240,7 +240,7 @@ Cloudflare Web Analytics只需嵌入一个非常轻量的JavaScript片段即可�
 {{ end }}
 ```
 
-通过添加 `defer` 属性，可以异步加载脚本而不阻塞HTML的解析，并在DOM构建完成后执行。这样可以把对初始显示速度（LCP: Largest Contentful Paint 和 FCP: First Contentful Paint）的影响降到最低。
+通过添加 `defer` 属性，可以异步加载脚本而不阻塞HTML的解析，并在DOM构建完成后执行。这样可以把对初始显示速度（LCP: Largest Contentful [Paint](https://kenji.blog/zh-cn/p/browser-rendering-mechanism-dom-paint/) 和 FCP: First Contentful Paint）的影响降到最低。
 
 ---
 

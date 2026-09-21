@@ -28,7 +28,7 @@ description: '素数を効率的に見つけるアルゴリズム「エラトス
 ![](Animation_Sieb_des_Eratosthenes.gif)
 
 
-## Rustでの実装
+## [Rust](https://kenji.blog/p/webassembly-wasm-current-future/)での実装
 
 ```
 fn main() {

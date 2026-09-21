@@ -17,8 +17,8 @@ description: '빠르고 메모리 안전성이 뛰어난 프로그래밍 언어 
 
 
 # 시작하며
-Rust는 빠르고 메모리 효율이 높은 모듈을 모던한 표기법으로 작성할 수 있는 비교적 새로운 프로그래밍 언어입니다.
-멀티 플랫폼을 지원하며, WebAssembly나 임베디드 환경에서도 사용되고 있습니다.
+[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)는 빠르고 메모리 효율이 높은 모듈을 모던한 표기법으로 작성할 수 있는 비교적 새로운 프로그래밍 언어입니다.
+멀티 플랫폼을 지원하며, [WebAssembly](https://kenji.blog/ko/p/webassembly-wasm-current-future/)나 임베디드 환경에서도 사용되고 있습니다.
 유명한 곳으로는 Firefox나 DropBox, Cloudflare에서도 채택하고 있습니다.
 
 C++의 대체 언어로도 주목받고 있습니다.
@@ -46,7 +46,7 @@ fn main() {
 
 [The Rust Programming Language 일본어판](https://doc.rust-jp.rs/book-ja/)
 
-Rust를 배우는 데 필요한 설명은 위 링크(일본어 번역판)에 모여 있습니다.
+[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)를 배우는 데 필요한 설명은 위 링크(일본어 번역판)에 모여 있습니다.
 Rust 교재를 구입할 필요가 없을 정도로 충실하게 구성되어 있습니다.
 
 # Web에서 실행해 보고 싶은 경우

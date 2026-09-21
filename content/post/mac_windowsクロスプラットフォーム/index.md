@@ -217,7 +217,7 @@ Node.js環境であれば、`cross-env` などのパッケージを使用して�
 
 ## 6. クロスプラットフォームのビルドシステムとコンパイラ
 
-C++ や Rust などのネイティブコード（マシンコードに直接コンパイルされる言語）を扱う場合、OS固有のAPIだけでなく、ビルドシステムとコンパイラの違いも克服する必要があります。
+C++ や [Rust](https://kenji.blog/p/webassembly-wasm-current-future/) などのネイティブコード（マシンコードに直接コンパイルされる言語）を扱う場合、OS固有のAPIだけでなく、ビルドシステムとコンパイラの違いも克服する必要があります。
 
 *   **コンパイラ**:
     *   Windows: MSVC (Microsoft Visual C++), MinGW (GCC for Windows)

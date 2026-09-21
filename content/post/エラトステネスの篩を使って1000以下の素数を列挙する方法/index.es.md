@@ -36,7 +36,7 @@ El algoritmo es simple y se puede implementar con los siguientes pasos:
 ![](Animation_Sieb_des_Eratosthenes.gif)
 
 
-## Implementación en Rust
+## Implementación en [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/)
 
 ```
 fn main() {

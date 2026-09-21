@@ -9,7 +9,7 @@ categories: ["programming"]
 description: 'Menjelaskan langkah demi langkah, dari pembuatan proyek hingga implementasi kode, cara menggunakan peti ''winapi'' dan ''user32-sys'' di Rust untuk memanggil Windows API dan menampilkan kotak pesan sederhana (MessageBox).'
 ---
 
-Anda dapat menampilkan MessageBox di Rust dengan mengikuti langkah-langkah di bawah ini.
+Anda dapat menampilkan MessageBox di [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) dengan mengikuti langkah-langkah di bawah ini.
 
 1. Instal Rust. Lihat [Cara memulai Rust](https://kenji.blog/posts/rust%E3%81%AE%E3%81%AF%E3%81%98%E3%82%81%E3%81%8B%E3%81%9F/)
 2. Jalankan `cargo new --bin MessageBox` di command prompt.

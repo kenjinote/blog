@@ -120,7 +120,7 @@ end
 
 [비잔틴 장군 문제](https://kenji.blog/ko/p/byzantine-generals-problem/)에 대한 내성을 ** 비잔틴 장애 허용 ** (Byzantine Fault Tolerance, BFT)이라고 부릅니다. 분산 시스템이 고장이나 악의적인 공격을 견뎌내고 정상적으로 가동을 계속하기 위한 중요한 지표입니다.
 
-최근 이 문제가 다시 크게 주목받게 된 것은 ** 블록체인 기술 ** 의 등장 때문입니다. 블록체인은 중앙 관리자가 없는 P2P 네트워크이기 때문에 악의적인 참가자(노드)가 거짓 거래 내역을 흘릴 가능성이 있습니다. 바로 [비잔틴 장군 문제](https://kenji.blog/ko/p/byzantine-generals-problem/) 그 자체입니다.
+최근 이 문제가 다시 크게 주목받게 된 것은 ** 블록체인 기술 ** 의 등장 때문입니다. 블록체인은 중앙 관리자가 없는 [P2P](https://kenji.blog/ko/p/webrtc-realtime-communication-p2p/) 네트워크이기 때문에 악의적인 참가자(노드)가 거짓 거래 내역을 흘릴 가능성이 있습니다. 바로 [비잔틴 장군 문제](https://kenji.blog/ko/p/byzantine-generals-problem/) 그 자체입니다.
 
 ### PBFT (Practical Byzantine Fault Tolerance)의 구조
 

@@ -31,7 +31,7 @@ I currently have them assigned as shown above. You can also change button assign
 - Dust accumulates around the trackball, so the ball needs to be removed and cleaned regularly (about once every few days).
 - It takes time to get used to the different feel compared to a mouse, as you use your index and middle fingers to move the cursor and your thumb to operate the mouse wheel.
 - Although I mentioned above that fine movements are easy, it is still difficult to move the cursor pixel by pixel with a trackball.
-- You cannot operate the wheel while pressing the left button (e.g., when you want to zoom in or out while selecting an area in Paint).
+- You cannot operate the wheel while pressing the left button (e.g., when you want to zoom in or out while selecting an area in [Paint](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/)).
 
 Overall, I think it is on the expensive side for a trackball, but generally it is quite easy to operate and has improved my work efficiency.
 I hope this will be helpful for those considering purchasing it.

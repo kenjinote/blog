@@ -12,7 +12,7 @@ tags: ["Rust", "CLI", "clap", "tokio"]
 
 ## 1. Pendahuluan
 
-Dalam pengembangan perangkat lunak modern, tool CLI (Command Line Interface) adalah entitas yang tak tergantikan yang secara dramatis meningkatkan produktivitas pengembang. Dulu, shell script, Python, Ruby, dll. adalah arus utama, tetapi dalam beberapa tahun terakhir, **Rust** telah menetapkan posisi yang kuat sebagai standar de facto untuk pengembangan tool CLI.
+Dalam pengembangan perangkat lunak modern, tool CLI (Command Line Interface) adalah entitas yang tak tergantikan yang secara dramatis meningkatkan produktivitas pengembang. Dulu, shell script, Python, Ruby, dll. adalah arus utama, tetapi dalam beberapa tahun terakhir, **[Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)** telah menetapkan posisi yang kuat sebagai standar de facto untuk pengembangan tool CLI.
 
 Artikel ini akan secara menyeluruh menjelaskan cara membangun tool CLI praktis yang "berjalan super cepat dan dapat dikembangkan secara super cepat" menggunakan Rust, dari dasar hingga aplikasi tingkat lanjut. Kita tidak hanya akan membuat sesuatu yang berfungsi, tetapi mencakup secara komprehensif mulai dari penanganan error yang kuat (robust) yang dapat digunakan di level komersial, permintaan API (API request) berkecepatan tinggi menggunakan pemrosesan asinkron (asynchronous), hingga implementasi progress bar yang meningkatkan pengalaman pengguna (UX).
 
@@ -41,9 +41,9 @@ Dengan model kepemilikan (Ownership) dan sistem tipe yang kuat yang merupakan se
 Ekosistem Rust memiliki banyak crate (library) unggulan yang sangat mendukung pengembangan CLI. Dalam tutorial ini, kita akan menggunakan crate berikut yang dapat disebut sebagai "Golden Stack" dalam pengembangan Rust CLI modern.
 
 1. **`clap`**: Crate paling kuat dan populer untuk mengurai (parsing) argumen baris perintah (command line). Sejak versi 4, definisi deklaratif menggunakan makro Derive menjadi lebih elegan, dan juga mendukung pembuatan otomatis pesan bantuan (help message) serta skrip penyelesaian input (input completion script).
-2. **`tokio`**: Standar de facto untuk runtime asinkron (asynchronous runtime) Rust. Menangani I/O asinkron secara multi-thread dengan sangat efisien.
+2. **`tokio`**: Standar de facto untuk runtime asinkron (asynchronous runtime) [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/). Menangani I/O asinkron secara multi-thread dengan sangat efisien.
 3. **`reqwest`**: Klien HTTP berfitur tinggi yang berjalan di atas `tokio`. Memiliki API yang mudah digunakan dan memungkinkan implementasi permintaan API asinkron dengan mudah.
-4. **`serde` & `serde_json`**: Framework untuk melakukan serialisasi dan deserialisasi data. Sangat penting untuk memetakan respons JSON dari API ke dalam struct di Rust yang aman dari segi tipe.
+4. **`serde` & `serde_json`**: Framework untuk melakukan serialisasi dan deserialisasi data. Sangat penting untuk memetakan respons JSON dari API ke dalam struct di [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) yang aman dari segi tipe.
 5. **`indicatif`**: Menyediakan progress bar yang kaya (rich) dan dapat disesuaikan. Menampilkan kemajuan pemrosesan asinkron secara visual dan secara dramatis meningkatkan UX dari CLI.
 6. **`anyhow` & `thiserror`**: Kombinasi kuat untuk penanganan error (error handling). Praktik terbaik adalah menggunakan `thiserror` untuk definisi error domain di dalam library, dan `anyhow` untuk agregasi error di lapisan teratas (top-level) aplikasi.
 
@@ -86,7 +86,7 @@ $$
 L = \lambda W \implies \lambda = \frac{L}{W}
 $$
 
-Artinya, dalam lingkungan di mana latensi jaringan $W$ tidak dapat dihindari, untuk meningkatkan throughput sistem $\lambda$, satu-satunya cara adalah meningkatkan jumlah permintaan $L$ yang diproses secara bersamaan. Tugas (task) asinkron Rust berbeda dengan thread native dari OS karena overhead memori yang sangat kecil, sehingga $L$ dapat diukur (scale) dengan mudah.
+Artinya, dalam lingkungan di mana latensi jaringan $W$ tidak dapat dihindari, untuk meningkatkan throughput sistem $\lambda$, satu-satunya cara adalah meningkatkan jumlah permintaan $L$ yang diproses secara bersamaan. Tugas (task) asinkron [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) berbeda dengan thread native dari OS karena overhead memori yang sangat kecil, sehingga $L$ dapat diukur (scale) dengan mudah.
 
 ---
 
@@ -239,7 +239,7 @@ Commands:
 
 ## 9. Fase Implementasi 3: Klien API dan Pemetaan Data
 
-Kita akan memetakan (mapping) data JSON yang dikembalikan dari API GitHub ke dalam struct Rust. Kita implementasikan `src/models.rs` dan `src/api.rs`.
+Kita akan memetakan (mapping) data JSON yang dikembalikan dari API GitHub ke dalam struct [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/). Kita implementasikan `src/models.rs` dan `src/api.rs`.
 
 ```rust
 // src/models.rs
@@ -413,7 +413,7 @@ Dengan menerapkan pengaturan ini, ukuran binary yang dihasilkan akan berkurang b
 Ini adalah langkah-langkah untuk mendistribusikan tool yang telah Anda buat ke seluruh dunia.
 
 ### Publikasi ke crates.io
-Dengan menggunakan Cargo, manajer paket Rust, Anda dapat mempublikasikannya ke registry resmi hanya dengan beberapa perintah.
+Dengan menggunakan Cargo, manajer paket [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), Anda dapat mempublikasikannya ke registry resmi hanya dengan beberapa perintah.
 
 ```bash
 cargo login <YOUR_TOKEN>
@@ -428,11 +428,11 @@ Kita akan membangun pipeline CI/CD yang mengunggah (upload) binary hasil cross-c
 
 ## 13. Kesimpulan
 
-Dalam artikel ini, kita telah menjelaskan secara rinci alur pengembangan tool CLI menggunakan Rust.
+Dalam artikel ini, kita telah menjelaskan secara rinci alur pengembangan tool CLI menggunakan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/).
 
 1. **Kebijakan Desain**: Mengonfirmasi keunggulan kecepatan dan keamanan Rust, serta keuntungan dari single binary.
 2. **Pemilihan Crate**: Memperoleh senjata kuat bernama `clap`, `tokio`, `serde`, `indicatif`, `thiserror`, dan `anyhow`.
 3. **Keunggulan Matematis Pemrosesan Paralel**: Memahami kehebatan pemrosesan asinkron secara teoritis berdasarkan Hukum Amdahl dan Hukum Little.
 4. **Implementasi dan Optimasi**: Mengemas pengetahuan (know-how) praktis, dari penanganan error yang kuat hingga optimasi binary yang ekstrem.
 
-Pengembangan CLI dengan Rust adalah pengalaman luar biasa yang memungkinkan Anda memastikan kualitas perangkat lunak sejak tahap desain melalui dialog dengan compiler (kompiler). Berdasarkan kode dasar yang dibuat kali ini, silakan coba kembangkan tool CLI orisinal Anda sendiri dan publikasikan ke dunia! Selamat Coding Rust!
+Pengembangan CLI dengan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) adalah pengalaman luar biasa yang memungkinkan Anda memastikan kualitas perangkat lunak sejak tahap desain melalui dialog dengan compiler (kompiler). Berdasarkan kode dasar yang dibuat kali ini, silakan coba kembangkan tool CLI orisinal Anda sendiri dan publikasikan ke dunia! Selamat Coding Rust!

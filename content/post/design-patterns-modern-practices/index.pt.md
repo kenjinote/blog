@@ -30,7 +30,7 @@ Por exemplo, em linguagens que não possuíam funções de primeira classe (Firs
 
 ## 3. Reavaliação moderna e alternativas dos padrões GoF
 
-Aqui, abordaremos alguns padrões GoF representativos e veremos como eles estão sendo substituídos em linguagens modernas (TypeScript, Kotlin, Rust, etc.).
+Aqui, abordaremos alguns padrões GoF representativos e veremos como eles estão sendo substituídos em linguagens modernas (TypeScript, Kotlin, [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/), etc.).
 
 ### 3.1. Padrão Strategy: Eliminação por funções de primeira classe
 
@@ -133,7 +133,7 @@ Como fluxos assíncronos são suportados no nível da linguagem, não há necess
 
 O padrão `Visitor` separa a estrutura de dados das operações sobre ela, mas tinha o problema de sua implementação ser extremamente complexa e contra-intuitiva (exigindo double dispatch).
 
-Hoje em dia, usando linguagens (como Rust, Kotlin, Swift, Scala, etc.) que possuem **Tipos de Dados Algébricos (ADT)** e **Correspondência de padrões (Pattern matching)**, esse problema é resolvido de maneira elegante.
+Hoje em dia, usando linguagens (como [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/), Kotlin, Swift, Scala, etc.) que possuem **Tipos de Dados Algébricos (ADT)** e **Correspondência de padrões (Pattern matching)**, esse problema é resolvido de maneira elegante.
 
 **Abordagem moderna (Enums e Pattern match no Rust)**
 
@@ -191,7 +191,7 @@ $$
 bind: M[A] \times (A \rightarrow M[B]) \rightarrow M[B]
 $$
 
-**Tipo Result em Rust (Aplicação da mônada Either)**
+**Tipo Result em [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) (Aplicação da mônada Either)**
 
 ```rust
 fn divide(numerator: f64, denominator: f64) -> Result<f64, String> {

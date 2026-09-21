@@ -106,13 +106,13 @@ Con esto, la preparación está completa. Pasemos a la implementación del servi
 
 ---
 
-# 4. Paso de implementación 1: `/slack/install` y el parámetro `state` como medida contra CSRF
+# 4. Paso de implementación 1: `/slack/install` y el parámetro `state` como medida contra [CSRF](https://kenji.blog/es/p/web-security-basics-cors-csp/)
 
 Crearemos el primer punto final (endpoint) para que el usuario comience a usar la aplicación (instalarla en el espacio de trabajo). La responsabilidad principal aquí es redirigir al usuario al servidor de autorización de Slack, pero lo más importante a nivel de seguridad es la **generación y almacenamiento del parámetro `state`**.
 
-## Necesidad del parámetro state (Prevención de ataques CSRF)
+## Necesidad del parámetro state (Prevención de ataques [CSRF](https://kenji.blog/es/p/web-security-basics-cors-csp/))
 
-Si no existe el parámetro `state`, un atacante malintencionado puede iniciar el proceso de autorización con su propia cuenta de Slack y hacer que la víctima acceda a la URL de devolución de llamada que contiene el "código de autorización" obtenido (ej: `http://localhost:3000/slack/oauth_redirect?code=ATTACKER_CODE`). Cuando el navegador de la víctima ejecuta esto, la vinculación con la cuenta de Slack del atacante se completa en la sesión de la víctima, causando fugas de información o acciones involuntarias (Login CSRF).
+Si no existe el parámetro `state`, un atacante malintencionado puede iniciar el proceso de autorización con su propia cuenta de Slack y hacer que la víctima acceda a la URL de devolución de llamada que contiene el "código de autorización" obtenido (ej: `http://localhost:3000/slack/oauth_redirect?code=ATTACKER_CODE`). Cuando el navegador de la víctima ejecuta esto, la vinculación con la cuenta de Slack del atacante se completa en la sesión de la víctima, causando fugas de información o acciones involuntarias (Login [CSRF](https://kenji.blog/es/p/web-security-basics-cors-csp/)).
 
 Para prevenir esto, `state` es una cadena aleatoria impredecible para verificar que el navegador que inició la solicitud y el navegador que recibió la devolución de llamada son el mismo.
 
@@ -367,7 +367,7 @@ En este artículo, explicamos detalladamente el flujo de concesión de código d
 
 1. Al ser consciente de los **4 roles (RO, Client, AS, RS)**, la arquitectura de todo el sistema se vuelve clara.
 2. La **Concesión de código de autorización** garantiza la seguridad utilizando hábilmente las rutas de comunicación entre el navegador y el servidor (canal frontal / canal secundario).
-3. Comprender los mecanismos criptográficos subyacentes, como la defensa CSRF mediante el **parámetro `state`** y la prevención de ataques de intercepción de código de autorización mediante **PKCE**, es el atajo hacia una implementación segura.
+3. Comprender los mecanismos criptográficos subyacentes, como la defensa [CSRF](https://kenji.blog/es/p/web-security-basics-cors-csp/) mediante el **parámetro `state`** y la prevención de ataques de intercepción de código de autorización mediante **PKCE**, es el atajo hacia una implementación segura.
 4. El diseño de alcances basado en el **Principio de Menor Privilegio** y la encriptación al guardar en la base de datos son elementos absolutamente indispensables a nivel operativo.
 
 OAuth 2.0 es muy profundo, e incluso hay especificaciones enormes solo en las RFC, pero al aprender de manera práctica enfocándose en una plataforma real (Slack) de esta manera, deberías poder sentir su sofisticada filosofía de diseño y mecanismos de seguridad robustos. Espero que el conocimiento de este artículo sea útil para el futuro desarrollo de aplicaciones y la implementación de integraciones de API.

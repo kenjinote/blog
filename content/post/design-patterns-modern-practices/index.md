@@ -30,7 +30,7 @@ tags:
 
 ## 3. GoFパターンの現代的再評価と代替案
 
-ここでは、代表的なGoFパターンを取り上げ、それらが現代のモダンな言語（TypeScript, Kotlin, Rustなど）でどのように置き換えられているかを見ていきます。
+ここでは、代表的なGoFパターンを取り上げ、それらが現代のモダンな言語（TypeScript, Kotlin, [Rust](https://kenji.blog/p/webassembly-wasm-current-future/)など）でどのように置き換えられているかを見ていきます。
 
 ### 3.1. Strategy パターン：第一級関数による駆逐
 
@@ -133,7 +133,7 @@ coroutineScope.launch {
 
 `Visitor` パターンは、データ構造とそれに対する処理を分離するためのパターンですが、実装が非常に複雑で直感に反する（ダブルディスパッチを必要とする）という問題がありました。
 
-現代では、 **代数的データ型 (ADT)** と **パターンマッチング** を備えた言語（Rust, Kotlin, Swift, Scalaなど）を使用することで、この問題は美しく解決されます。
+現代では、 **代数的データ型 (ADT)** と **パターンマッチング** を備えた言語（[Rust](https://kenji.blog/p/webassembly-wasm-current-future/), Kotlin, Swift, Scalaなど）を使用することで、この問題は美しく解決されます。
 
 **現代のアプローチ（Rustの列挙型とパターンマッチ）**
 
@@ -191,7 +191,7 @@ $$
 bind: M[A] \times (A \rightarrow M[B]) \rightarrow M[B]
 $$
 
-**Rustにおける Result型 (Eitherモナドの応用)**
+**[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)における Result型 (Eitherモナドの応用)**
 
 ```rust
 fn divide(numerator: f64, denominator: f64) -> Result<f64, String> {

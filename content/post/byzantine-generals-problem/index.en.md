@@ -120,7 +120,7 @@ In this model, an order issued by a commander cannot be altered in transit. As a
 
 Tolerance against the Byzantine Generals Problem is called **Byzantine Fault Tolerance** (BFT). It is an important metric for a distributed system to withstand failures or malicious attacks and continue operating normally.
 
-In recent years, this problem has returned to the spotlight largely due to the emergence of **blockchain technology**. Since the blockchain is a P2P network without a central administrator, malicious participants (nodes) might broadcast fake transaction histories. This is exactly the Byzantine Generals Problem itself.
+In recent years, this problem has returned to the spotlight largely due to the emergence of **blockchain technology**. Since the blockchain is a [P2P](https://kenji.blog/en/p/webrtc-realtime-communication-p2p/) network without a central administrator, malicious participants (nodes) might broadcast fake transaction histories. This is exactly the Byzantine Generals Problem itself.
 
 ### The Mechanism of PBFT (Practical Byzantine Fault Tolerance)
 

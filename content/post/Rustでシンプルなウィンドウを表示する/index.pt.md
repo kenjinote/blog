@@ -9,7 +9,7 @@ categories: ["programming"]
 description: 'Apresentamos como criar e exibir uma janela simples no Windows usando o `winapi` em Rust. Explicamos detalhadamente o código-fonte que é a base da programação GUI, desde as configurações no Cargo.toml até a implementação do procedimento da janela.'
 ---
 
-Exibir uma janela simples em Rust
+Exibir uma janela simples em [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/)
 
 ```Cargo.toml
 [package]

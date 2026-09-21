@@ -244,7 +244,7 @@ Die ausführbare Datei von Windows Terminal, `wt.exe`, unterstützt leistungssta
 wt -p "PowerShell 7" -d "C:\Projects\MyApp" ; split-pane -p "Ubuntu-22.04" -d "/var/log" -V ; split-pane -p "cmd" -H
 ```
 
-Wenn Sie diesen Befehl als Windows-Verknüpfung oder Batch-Datei speichern, kann das komplexe Layout Ihrer Entwicklungsumgebung mit nur einem Klick im Handumdrehen wiederhergestellt werden.
+Wenn Sie diesen Befehl als Windows-Verknüpfung oder Batch-Datei speichern, kann das komplexe [Layout](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/) Ihrer Entwicklungsumgebung mit nur einem Klick im Handumdrehen wiederhergestellt werden.
 
 ---
 
@@ -317,7 +317,7 @@ Hunderte von Themes (configs) sind verfügbar, und es ist auch möglich, Ihr eig
 
 WSL2 (Windows Subsystem for Linux 2), das einen echten Linux-Kernel auf Windows ausführen kann, ist für die moderne Webentwicklung und Cloud-native Entwicklung unerlässlich. Um den Prompt von Shells in WSL (Bash oder Zsh) anzupassen, ist „ **Starship** “ die optimale Lösung.
 
-Starship ist ein in Rust geschriebener, extrem schneller und in hohem Maße anpassbarer plattformübergreifender Prompt. Seine Stärke liegt darin, dass Sie in jeder Shell wie Bash, Zsh, Fish usw. denselben Prompt reproduzieren können, indem Sie einfach eine einzige Konfigurationsdatei (TOML) schreiben.
+Starship ist ein in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) geschriebener, extrem schneller und in hohem Maße anpassbarer plattformübergreifender Prompt. Seine Stärke liegt darin, dass Sie in jeder Shell wie Bash, Zsh, Fish usw. denselben Prompt reproduzieren können, indem Sie einfach eine einzige Konfigurationsdatei (TOML) schreiben.
 
 ## 7.1 Installation von Starship
 

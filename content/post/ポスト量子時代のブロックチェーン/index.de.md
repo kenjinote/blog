@@ -138,7 +138,7 @@ Welchen spezifischen Schwachstellen werden Krypto-Asset-Netzwerke in einer Welt 
 
 ### 3.1. Generierung von Adressen und die "Nicht-Öffentlichkeit" des öffentlichen Schlüssels
 
-[Bitcoin](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)-Adressen (P2PKH: Pay-to-Public-Key-Hash und P2WPKH: Pay-to-Witness-Public-Key-Hash) verwenden nicht den öffentlichen Schlüssel selbst, sondern einen mehrfach gehashten öffentlichen Schlüssel.
+[Bitcoin](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)-Adressen ([P2P](https://kenji.blog/de/p/webrtc-realtime-communication-p2p/)KH: Pay-to-Public-Key-Hash und P2WPKH: Pay-to-Witness-Public-Key-Hash) verwenden nicht den öffentlichen Schlüssel selbst, sondern einen mehrfach gehashten öffentlichen Schlüssel.
 
 $$
 \text{[Bitcoin](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Public Key})))
@@ -178,7 +178,7 @@ Sobald der öffentliche Schlüssel an den Mempool (den Wartebereich für unbest�
 Miner folgen wirtschaftlichen Anreizen und priorisieren Transaktionen mit hohen Gebühren für die Aufnahme in Blöcke. Infolgedessen wird die betrügerische Überweisung des Angreifers zuerst bestätigt (Confirm), und Alices legitime Überweisung wird als "unzureichendes Guthaben (Double Spend)" verworfen.
 Diese Abfolge von Ereignissen wird als **Front-Running-Angriff (Front-running Attack)** bezeichnet. In einer Welt, in der Quantencomputer praktisch einsetzbar sind, würde dies zu der erschreckenden Situation führen, dass in dem Moment, in dem jemand auf den Senden-Button drückt, seine Gelder von Hackern gestohlen werden.
 
-### 3.3. Die Krise wiederverwendeter Adressen und alter Adressen (P2PK)
+### 3.3. Die Krise wiederverwendeter Adressen und alter Adressen ([P2P](https://kenji.blog/de/p/webrtc-realtime-communication-p2p/)K)
 
 Ein noch größeres Problem ist, dass bei Adressen, von denen in der Vergangenheit bereits Gelder gesendet wurden (z. B. wenn sie als Wechselgeldadressen wiederverwendet werden), der öffentliche Schlüssel bereits dauerhaft auf der Blockchain aufgezeichnet ist. Bei diesen Adressen besteht jederzeit die Gefahr, dass der private Schlüssel berechnet und das Guthaben gestohlen wird, ohne dass auf das Senden einer Transaktion gewartet werden muss.
 
@@ -289,7 +289,7 @@ In der aktuellen EVM wird zur Überprüfung von ECDSA-Signaturen ein vorkompilie
 
 Die Verarbeitungslogik für neue Gitter-basierte Kryptoalgorithmen wie Dilithium oder Falcon beinhaltet jedoch komplexe Polynom- oder Matrixoperationen. Wenn sie nur mit bestehenden EVM-Opcodes (Opcode) implementiert würde, könnte eine einzige Signaturüberprüfung Millionen bis Zehnmillionen von Gas verbrauchen. Dies liegt auf einem Niveau, das das aktuelle Block-Gaslimit (etwa 30 Millionen Gas) mit einer einzigen Transaktion aufbrauchen würde.
 
-Um dies zu vermeiden, ist es notwendig, durch einen Hard Fork (Hard Fork) des Netzwerks einen neuen Precompiled Contract zur PQC-Überprüfung (z.B. Zuweisung von DilithiumVerify zu `0x10`) in die EVM selbst aufzunehmen. Dies erfordert einen langfristigen Prozess, bei dem die Core-Entwickler jedes Ethereum-Clients (Geth, Nethermind, Erigon usw.) zusammenarbeiten, um die Logik der Gitterkryptografie-Überprüfung auf Sprachebene in C++, Go, Rust usw. optimiert zu implementieren und Sicherheitsaudits durchzuführen.
+Um dies zu vermeiden, ist es notwendig, durch einen Hard Fork (Hard Fork) des Netzwerks einen neuen Precompiled Contract zur PQC-Überprüfung (z.B. Zuweisung von DilithiumVerify zu `0x10`) in die EVM selbst aufzunehmen. Dies erfordert einen langfristigen Prozess, bei dem die Core-Entwickler jedes Ethereum-Clients (Geth, Nethermind, Erigon usw.) zusammenarbeiten, um die Logik der Gitterkryptografie-Überprüfung auf Sprachebene in C++, Go, [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) usw. optimiert zu implementieren und Sicherheitsaudits durchzuführen.
 
 ### 5.3. Schwierigkeit der Konsensfindung durch Hard Forks
 

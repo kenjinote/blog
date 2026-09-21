@@ -248,7 +248,7 @@ function gl { git log --oneline --graph --decorate --all $args }
 
 ## 5.2. Optimizing Directory Navigation (z / zoxide)
 
-Navigating to deeply nested directories with the `cd` command is cumbersome. In recent years, **`zoxide`** (written in Rust), a tool that learns a user's navigation history and Frecency (Frequency + Recency) and allows jumping to a target directory just by typing part of the path, is becoming the standard.
+Navigating to deeply nested directories with the `cd` command is cumbersome. In recent years, **`zoxide`** (written in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)), a tool that learns a user's navigation history and Frecency (Frequency + Recency) and allows jumping to a target directory just by typing part of the path, is becoming the standard.
 
 ```bash
 # After installing zoxide, use z instead of cd

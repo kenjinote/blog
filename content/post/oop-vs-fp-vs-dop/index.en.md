@@ -10,7 +10,7 @@ tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]
 
 The history of programming language evolution is also a history of battles against complexity. As software grows in scale, developers hit walls related to state management, performance, and maintainability, leading to the proposal of various **programming paradigms** to overcome them.
 
-In this article, we will take a deep dive into the philosophy, strengths, and **limitations** of **Object-Oriented Programming** (OOP), which is mainstream in modern software development, **Functional Programming** (FP) with its mathematical robustness, and **Data-Oriented Programming** (DOP / DOD), which focuses on performance and the separation of data. Furthermore, we will explain how powerful modern languages (like Rust and TypeScript) are **fusing** these paradigms.
+In this article, we will take a deep dive into the philosophy, strengths, and **limitations** of **Object-Oriented Programming** (OOP), which is mainstream in modern software development, **Functional Programming** (FP) with its mathematical robustness, and **Data-Oriented Programming** (DOP / DOD), which focuses on performance and the separation of data. Furthermore, we will explain how powerful modern languages (like [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) and TypeScript) are **fusing** these paradigms.
 
 ---
 
@@ -136,7 +136,7 @@ Concepts like memory allocation to maintain immutability (load on garbage collec
 
 ## 3. Return to Data-Oriented Programming (DOP/DOD)
 
-**Data-Oriented Design** or **Data-Oriented Programming** is a paradigm that originated in game development (especially C++ and Rust) and later rippled into the enterprise domain (such as Clojure's philosophy).
+**Data-Oriented Design** or **Data-Oriented Programming** is a paradigm that originated in game development (especially C++ and [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)) and later rippled into the enterprise domain (such as Clojure's philosophy).
 
 ### 3.1 Core Concepts of DOP
 
@@ -144,7 +144,7 @@ DOP's supreme mandate is to "separate data and logic". While OOP combined data a
 
 - **Separation of Data**: Data is defined merely as data structures (records, structs) without any behavior.
 - **ECS (Entity Component System)**: Instead of inheritance, data is split into components, and systems (functions) process them in bulk.
-- **Cache Efficiency (Memory Layout)**: Data is placed in contiguous memory (SoA: Structure of Arrays) so it fits into CPU cache lines.
+- **Cache Efficiency (Memory [Layout](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/))**: Data is placed in contiguous memory (SoA: Structure of Arrays) so it fits into CPU cache lines.
 
 ```rust
 // Data-oriented (ECS-like) approach using Rust
@@ -200,7 +200,7 @@ Each paradigm has clear strengths and weaknesses.
 
 ## 5. The Optimal Solution Today: The "Fusion" of Paradigms
 
-Today, choosing a "single correct answer" among these is considered nonsense. Modern programming languages (Rust, TypeScript, Scala, Go, etc.) take the **best parts** of these paradigms.
+Today, choosing a "single correct answer" among these is considered nonsense. Modern programming languages ([Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/), TypeScript, Scala, Go, etc.) take the **best parts** of these paradigms.
 
 ### 5.1 The Ultimate Fusion Shown by Rust
 

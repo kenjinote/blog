@@ -24,7 +24,7 @@ description: 'Wir haben eine Liste verschiedener Programmiersprachen zusammenges
 
 ## Haskell
 
-## Rust
+## [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)
 
 ## Go
 

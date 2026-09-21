@@ -10,9 +10,9 @@ tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: 'C++のポインタとRustの所有権・借用モデルを徹底比較。生ポインタ、スマートポインタからボローチェッカーまで、メモリ安全性の本質を解説します。'
 ---
 
-現代のシステムプログラミングにおいて、パフォーマンスとメモリ安全性の両立は永遠の課題です。C++は長年この分野の王者として君臨してきましたが、近年その地位を脅かしつつあるのがRustです。Rustの最大の特徴は、[ガベージコレクション](https://kenji.blog/p/memory-management-garbage-collection/)（GC）を持たずにメモリ安全性をコンパイル時に保証する「所有権（Ownership）」と「借用（Borrowing）」という概念にあります。
+現代のシステムプログラミングにおいて、パフォーマンスとメモリ安全性の両立は永遠の課題です。C++は長年この分野の王者として君臨してきましたが、近年その地位を脅かしつつあるのが[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)です。Rustの最大の特徴は、[ガベージコレクション](https://kenji.blog/p/memory-management-garbage-collection/)（GC）を持たずにメモリ安全性をコンパイル時に保証する「所有権（Ownership）」と「借用（Borrowing）」という概念にあります。
 
-本記事では、C++のポインタ（生ポインタ、`std::unique_ptr`、`std::shared_ptr`）とRustの所有権モデルを詳細に比較し、Rustのコンパイラ（ボローチェッカー）がどのようにしてUse-After-Free（解放後使用）やデータ競合（Data Race）を防いでいるのかを、コード例や図式を交えて徹底的に解説します。
+本記事では、C++のポインタ（生ポインタ、`std::unique_ptr`、`std::shared_ptr`）と[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の所有権モデルを詳細に比較し、Rustのコンパイラ（ボローチェッカー）がどのようにしてUse-After-Free（解放後使用）やデータ競合（Data Race）を防いでいるのかを、コード例や図式を交えて徹底的に解説します。
 
 ## 1. [メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)の基礎：スタックとヒープ
 
@@ -24,7 +24,7 @@ description: 'C++のポインタとRustの所有権・借用モデルを徹底�
 ### ヒープ（Heap）
 実行時に動的にサイズが決まるデータや、関数のスコープを超えて生存する必要があるデータが配置されます。ポインタ（または参照）を通じてアクセスされます。
 
-[ガベージコレクション](https://kenji.blog/p/memory-management-garbage-collection/)を持たないC++やRustでは、ヒープメモリの管理コストを数式として以下のようにモデル化できます。オブジェクトの総数を $N$、アロケーションにかかる平均時間を $T_{alloc}$、デアロケーションにかかる平均時間を $T_{dealloc}$ とすると、メモリ管理の総コスト $C_{memory}$ は：
+[ガベージコレクション](https://kenji.blog/p/memory-management-garbage-collection/)を持たないC++や[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)では、ヒープメモリの管理コストを数式として以下のようにモデル化できます。オブジェクトの総数を $N$、アロケーションにかかる平均時間を $T_{alloc}$、デアロケーションにかかる平均時間を $T_{dealloc}$ とすると、メモリ管理の総コスト $C_{memory}$ は：
 
 $$ C_{memory} = \sum_{i=1}^{N} (T_{alloc, i} + T_{dealloc, i}) + O_{sync} $$
 
@@ -91,13 +91,13 @@ void uniquePtrExample() {
 #### `std::shared_ptr`
 複数のポインタが同じオブジェクトを共有できるポインタです。参照カウント（Reference Counting）を用いて、カウントが0になった時点でメモリを解放します。アトミックな増減操作が必要なため、若干のパフォーマンスオーバーヘッド（前述の $O_{sync}$ に相当）が生じます。
 
-## 3. Rustの所有権（Ownership）：パラダイムシフト
+## 3. [Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の所有権（Ownership）：パラダイムシフト
 
 Rustは、C++の`std::unique_ptr`の概念を言語仕様の根幹に据え、さらに厳密にした「所有権モデル」を持っています。
 
 ### 所有権の3つのルール
 
-Rustの所有権システムは、以下の3つの極めてシンプルなルールに基づいています。
+[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の所有権システムは、以下の3つの極めてシンプルなルールに基づいています。
 
 1. **Rustの個々の値は、所有者（owner）と呼ばれる変数を持つ。**
 2. **いかなる時も所有者は一つである。**
@@ -116,7 +116,7 @@ fn main() {
 }
 ```
 
-この「ムーブ後の変数をコンパイル時にアクセス不可にする」機能こそが、RustがC++の`std::unique_ptr`よりも安全である理由の一つです。
+この「ムーブ後の変数をコンパイル時にアクセス不可にする」機能こそが、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)がC++の`std::unique_ptr`よりも安全である理由の一つです。
 
 ```mermaid
 sequenceDiagram
@@ -134,13 +134,13 @@ sequenceDiagram
 
 所有権を常に移動させていると、関数に値を渡すたびに所有権を返しもらわなければならず、非常に不便です。そこで登場するのが「借用（Borrowing）」です。C++のポインタや参照に相当します。
 
-Rustにおける借用には2つの種類があります。
+[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)における借用には2つの種類があります。
 - **不変参照（Immutable Reference）**: `&T` （C++の `const T&` に近い）
 - **可変参照（Mutable Reference）**: `&mut T` （C++の `T&` に近い）
 
 ### ボローチェッカー（[Borrow Checker](https://kenji.blog/p/memory-management-garbage-collection/)）の冷酷なる掟
 
-Rustのコンパイラには、参照の正当性を検証する「ボローチェッカー」が内蔵されています。ボローチェッカーは以下の厳格なルールを強制します。
+[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)のコンパイラには、参照の正当性を検証する「ボローチェッカー」が内蔵されています。ボローチェッカーは以下の厳格なルールを強制します。
 
 > 任意のスコープにおいて、以下のいずれか一方のみが存在可能である。
 > - **1つの可変参照（`&mut T`）**
@@ -150,7 +150,7 @@ Rustのコンパイラには、参照の正当性を検証する「ボローチ�
 
 $$ (N_r \ge 0 \land N_w = 0) \oplus (N_r = 0 \land N_w = 1) $$
 
-このルールにより、 **データ競合（Data Race）をコンパイル時に完全に排除** します。データ競合は、①2つ以上のポインタが同じデータに同時アクセスし、②少なくとも1つが書き込みを行い、③同期メカニズムがない場合に発生します。Rustは②の条件をコンパイル時に破壊することでデータ競合を未然に防ぎます。
+このルールにより、 **データ競合（Data Race）をコンパイル時に完全に排除** します。データ競合は、①2つ以上のポインタが同じデータに同時アクセスし、②少なくとも1つが書き込みを行い、③同期メカニズムがない場合に発生します。[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)は②の条件をコンパイル時に破壊することでデータ競合を未然に防ぎます。
 
 ```rust
 // Rust: 借用のルール違反によるコンパイルエラー
@@ -195,7 +195,7 @@ int main() {
 }
 ```
 
-### Rustによるコンパイル時防御
+### [Rust](https://kenji.blog/p/webassembly-wasm-current-future/)によるコンパイル時防御
 
 全く同じロジックをRustで記述してみましょう。
 
@@ -215,7 +215,7 @@ fn main() {
 }
 ```
 
-このように、Rustでは「値を読み取っている最中（不変借用中）に、その値を変更する（可変借用する）こと」がコンパイラレベルで禁止されているため、Use-After-Freeやイテレータ無効化といった致命的なバグがコンパイル時に確実に捕捉されます。
+このように、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)では「値を読み取っている最中（不変借用中）に、その値を変更する（可変借用する）こと」がコンパイラレベルで禁止されているため、Use-After-Freeやイテレータ無効化といった致命的なバグがコンパイル時に確実に捕捉されます。
 
 ```mermaid
 graph LR
@@ -227,9 +227,9 @@ graph LR
     style D stroke:#FF0000,stroke-width:2px
 ```
 
-## 6. Rustにおける共有所有権：`Rc` と `Arc`
+## 6. [Rust](https://kenji.blog/p/webassembly-wasm-current-future/)における共有所有権：`Rc` と `Arc`
 
-C++の`std::shared_ptr`に相当する共有所有権もRustには用意されていますが、シングルスレッド用とマルチスレッド用に明確に型が分かれています。
+C++の`std::shared_ptr`に相当する共有所有権も[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)には用意されていますが、シングルスレッド用とマルチスレッド用に明確に型が分かれています。
 
 ### シングルスレッド用：`Rc<T>` (Reference Counted)
 `Rc<T>`は、非スレッドセーフな参照カウントスマートポインタです。アトミックな命令を使わずにカウントを増減させるため、単一スレッド内では非常に高速です。しかし、これを別スレッドに送ろうとすると、コンパイルエラーになります（`Send`トレイトを実装していないため）。
@@ -239,7 +239,7 @@ C++の`std::shared_ptr`に相当する共有所有権もRustには用意され�
 
 さらに、C++では`std::shared_ptr`で共有している変数に対して、複数のスレッドから同時に書き込みを行うとデータ競合が発生します。これを防ぐためには`std::mutex`を手動で正しく使う必要があります。
 
-一方Rustでは、`Arc<T>`単体では **内部のデータを変更することができません** 。変更が必要な場合は、ミューテックスである`Mutex<T>`と組み合わせる必要があります。
+一方[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)では、`Arc<T>`単体では **内部のデータを変更することができません** 。変更が必要な場合は、ミューテックスである`Mutex<T>`と組み合わせる必要があります。
 
 ```rust
 use std::sync::{Arc, Mutex};
@@ -269,13 +269,13 @@ fn main() {
 }
 ```
 
-特筆すべきは、Rustの`Mutex<T>`は単なるロック機構ではなく、 **「守るべきデータを型として内包している」** 点です。これにより、「ロックを取り忘れてデータにアクセスする」というミスをコンパイルレベルで完全に防ぐことができます。ロック（`lock()`）を取得しない限り、中身のデータへのアクセス権（参照）を得られない仕組みになっているのです。
+特筆すべきは、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の`Mutex<T>`は単なるロック機構ではなく、 **「守るべきデータを型として内包している」** 点です。これにより、「ロックを取り忘れてデータにアクセスする」というミスをコンパイルレベルで完全に防ぐことができます。ロック（`lock()`）を取得しない限り、中身のデータへのアクセス権（参照）を得られない仕組みになっているのです。
 
 ## まとめ：コンパイラによる「事前検査」か、開発者による「自己責任」か
 
 C++のポインタやスマートポインタは、開発者に高度な制御とパフォーマンスを提供しますが、その正しい利用は開発者の規律に依存しています。RAIIや`std::unique_ptr`の導入によりC++は劇的に安全になりましたが、それでもムーブ後のアクセスやイテレータ無効化といった「未定義動作」を言語レベルで完全に防ぐことはできません。
 
-一方Rustは、所有権（Ownership）と借用（Borrowing）というルールをコンパイラに組み込むことで、これらのエラーを実行時ではなく **コンパイル時** に検出します。「コンパイルが通るなら、メモリ安全である」という強い保証こそが、Rustがシステムプログラミングにおいて急速に支持を集めている最大の理由です。
+一方[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)は、所有権（Ownership）と借用（Borrowing）というルールをコンパイラに組み込むことで、これらのエラーを実行時ではなく **コンパイル時** に検出します。「コンパイルが通るなら、メモリ安全である」という強い保証こそが、Rustがシステムプログラミングにおいて急速に支持を集めている最大の理由です。
 
 Rustのボローチェッカーと戦う（Fight the borrow checker）ことは、初学者にとって大きな壁となりますが、それは本来C++プログラマが頭の中で行っていた「ポインタの生存期間の追跡」という複雑な計算を、コンパイラが厳密に代行してくれているに過ぎません。
 

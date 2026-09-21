@@ -177,7 +177,7 @@ Die folgende Tabelle fasst zusammen, wie Sie ein Schema basierend auf Ihrem Zwec
 Heutzutage gibt es viele Open-Source-Bibliotheken, mit denen man FHE nutzen kann, ohne fundierte Kenntnisse der Kryptographie zu besitzen.
 
 *   **Microsoft SEAL (Simple Encrypted Arithmetic Library)**: Eine C++-Bibliothek, die BFV, BGV und CKKS unterstützt. Einer der Industriestandards. Die Python-Anbindung **TenSEAL** ist bei KI-Ingenieuren sehr beliebt.
-*   **Zama (Concrete)**: Ein Framework basierend auf TFHE. Es kann in Rust/Python geschrieben werden und bietet die Funktion (Concrete ML), bestehende PyTorch-Modelle zu kompilieren und auf FHE auszuführen.
+*   **Zama (Concrete)**: Ein Framework basierend auf TFHE. Es kann in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)/Python geschrieben werden und bietet die Funktion (Concrete ML), bestehende PyTorch-Modelle zu kompilieren und auf FHE auszuführen.
 *   **OpenFHE**: Der Nachfolger von PALISADE, eine umfassende C++-Bibliothek, die alle gängigen Schemata unterstützt.
 
 ### Beispiel für FHE-Programmierung in Python (TenSEAL)

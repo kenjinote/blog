@@ -30,7 +30,7 @@ tags:
 
 ## 3. GoF 模式的现代重新评估与替代方案
 
-在这里，我们将列举一些具代表性的 GoF 模式，并看看在现代语言（TypeScript, Kotlin, Rust 等）中它们是如何被替代的。
+在这里，我们将列举一些具代表性的 GoF 模式，并看看在现代语言（TypeScript, Kotlin, [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 等）中它们是如何被替代的。
 
 ### 3.1. Strategy 模式：被头等函数驱逐
 
@@ -133,7 +133,7 @@ coroutineScope.launch {
 
 `Visitor` 模式是为了将数据结构与其上的操作分离而设计的模式，但它存在实现非常复杂且违反直觉（需要双重分派）的问题。
 
-在现代，通过使用具备 **代数数据类型 (ADT)** 和 **模式匹配** 的语言（如 Rust, Kotlin, Swift, Scala 等），这个问题可以被优雅地解决。
+在现代，通过使用具备 **代数数据类型 (ADT)** 和 **模式匹配** 的语言（如 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/), Kotlin, Swift, Scala 等），这个问题可以被优雅地解决。
 
 **现代方法（Rust 的枚举和模式匹配）**
 
@@ -191,7 +191,7 @@ $$
 bind: M[A] \times (A \rightarrow M[B]) \rightarrow M[B]
 $$
 
-**Rust 中的 Result 类型 (Either 单子的应用)**
+**[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 中的 Result 类型 (Either 单子的应用)**
 
 ```rust
 fn divide(numerator: f64, denominator: f64) -> Result<f64, String> {

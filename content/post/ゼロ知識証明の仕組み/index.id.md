@@ -205,7 +205,7 @@ ZKP tidak diragukan lagi merupakan teknologi dasar generasi berikutnya, tetapi m
 1. **Biaya Komputasi Pembuatan Bukti dan Akselerasi Perangkat Keras**
    Pembuatan ZKP memerlukan operasi polinomial yang sangat besar, FFT (Fast Fourier Transform), dan MSM (Multi-Scalar Multiplication). Saat ini, penelitian tentang pengembangan perangkat keras khusus (FPGA atau ASIC) untuk mempercepat pembuatan bukti ini, atau yang disebut **Penambangan ZKP (Prover Network)**, sedang berkembang pesat.
 2. **Standardisasi dan Peningkatan Pengalaman Pengembang (DX)**
-   Banyak bahasa khusus yang bermunculan untuk menulis sirkuit ZKP, seperti Circom, Cairo, Noir, Leo, dan lain-lain. Kemampuan untuk menyatukan standar ini dan kematangan kompiler yang secara otomatis dapat menghasilkan sirkuit ZKP dari bahasa pemrograman yang ada seperti Rust atau C++ akan menjadi kunci bagi para rekayasawan perangkat lunak umum untuk mengadopsi ZKP.
+   Banyak bahasa khusus yang bermunculan untuk menulis sirkuit ZKP, seperti Circom, Cairo, Noir, Leo, dan lain-lain. Kemampuan untuk menyatukan standar ini dan kematangan kompiler yang secara otomatis dapat menghasilkan sirkuit ZKP dari bahasa pemrograman yang ada seperti [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) atau C++ akan menjadi kunci bagi para rekayasawan perangkat lunak umum untuk mengadopsi ZKP.
 
 ## Penutup
 

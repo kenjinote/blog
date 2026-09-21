@@ -1224,7 +1224,7 @@ Gemäß der Projektionshypothese (dem Kollaps der Wellenfunktion) der Quantenmec
 
 Einstein nannte dies "spukhafte Fernwirkung" (Spooky action at a distance). Das liegt daran, dass Alices lokale Messoperation scheinbar überlichtschnell (augenblicklich) den physikalischen Zustand des weit entfernten Bobs beeinflusst hat. Dies scheint eindeutig gegen das Lokalitätsprinzip zu verstoßen, eine Forderung der Speziellen Relativitätstheorie, dass "keine Information schneller als das Licht übertragen werden kann".
 
-### No-Signaling-Theorem und Bellsche Ungleichung
+### No-[Signaling](https://kenji.blog/de/p/webrtc-realtime-communication-p2p/)-Theorem und Bellsche Ungleichung
 
 Steht die Quantenmechanik also im Widerspruch zur Relativitätstheorie? Die Schlussfolgerung lautet: Nein, tut sie nicht.
 Dieses scheinbare Paradoxon wird durch das **No-Signaling-Theorem** (No-Communication Theorem) gelöst. Obwohl Bobs Zustand durch Alices Messung augenblicklich bestimmt wird, ist es für Alice prinzipiell unmöglich zu kontrollieren, ob sie das Ergebnis $0$ oder $1$ erhält. Aus Bobs Sicht gibt es keine Möglichkeit zu wissen, dass Alice eine Messung durchgeführt hat, und das Ergebnis der Messung seines eigenen Qubits erscheint ihm immer noch völlig zufällig (mit 50%iger Wahrscheinlichkeit 0 oder 1). Wie im Abschnitt über die reduzierte Dichtematrix bewiesen wurde, ändert sich Bobs lokale Dichtematrix $\rho_B$ überhaupt nicht, unabhängig davon, welche Messbasis Alice wählt. Daher ist es nicht möglich, "sinnvolle Informationen" mithilfe von Verschränkung überlichtschnell zu übertragen.

@@ -138,7 +138,7 @@ Di dunia di mana komputer kuantum dapat memecahkan ECDSA, kerentanan spesifik ap
 
 ### 3.1. Pembuatan Alamat dan Sifat "Tertutup" dari Kunci Publik
 
-Alamat [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) (seperti P2PKH: Pay-to-Public-Key-Hash atau P2WPKH: Pay-to-Witness-Public-Key-Hash) tidak menggunakan kunci publik itu sendiri, melainkan hash dari kunci publik yang diproses beberapa kali.
+Alamat [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) (seperti [P2P](https://kenji.blog/id/p/webrtc-realtime-communication-p2p/)KH: Pay-to-Public-Key-Hash atau P2WPKH: Pay-to-Witness-Public-Key-Hash) tidak menggunakan kunci publik itu sendiri, melainkan hash dari kunci publik yang diproses beberapa kali.
 
 $$
 \text{[Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Public Key})))
@@ -178,7 +178,7 @@ Setelah kunci publik dikirim ke Mempool (tempat tunggu untuk transaksi yang belu
 Penambang, mengikuti insentif ekonomi, memprioritaskan transaksi dengan biaya tinggi untuk dimasukkan ke dalam blok. Akibatnya, transfer palsu penyerang disetujui (Confirm) lebih dulu, dan transfer sah Alice dibuang sebagai "Dana Tidak Cukup (Double Spend)".
 Rangkaian aliran ini disebut **Serangan Front-running (Front-running Attack)**, dan di dunia di mana komputer kuantum direalisasikan, akan menyebabkan situasi mengerikan di mana dana dicuri oleh peretas pada saat seseorang menekan tombol kirim.
 
-### 3.3. Krisis Alamat Penggunaan Ulang dan Alamat Lama (P2PK)
+### 3.3. Krisis Alamat Penggunaan Ulang dan Alamat Lama ([P2P](https://kenji.blog/id/p/webrtc-realtime-communication-p2p/)K)
 
 Masalah yang lebih serius adalah alamat yang pernah digunakan untuk mengirim dana sekali saja di masa lalu (misalnya jika digunakan kembali sebagai alamat kembalian) memiliki kunci publik yang telah dicatat secara permanen di blockchain. Alamat-alamat ini selalu berisiko kehilangan saldonya dengan kunci privat yang dihitung tanpa harus menunggu transaksi dikirim.
 
@@ -289,7 +289,7 @@ Saat ini EVM menyediakan kontrak pra-kompilasi (Precompiled Contract) yang diseb
 
 Namun, proses verifikasi algoritma kriptografi kisi baru seperti Dilithium dan Falcon melibatkan operasi polinomial kompleks dan operasi matriks, dan jika diimplementasikan menggunakan opcode (Opcode) EVM yang ada, memverifikasi satu tanda tangan saja dapat memakan biaya jutaan hingga puluhan juta gas. Ini merupakan tingkat yang dapat menghabiskan batas gas blok (sekitar 30 juta Gas) saat ini dalam satu transaksi.
 
-Untuk menghindari ini, diperlukan untuk mengintegrasikan kontrak pra-kompilasi baru (Precompiled Contract) untuk verifikasi PQC (misalnya, menugaskan `0x10` untuk DilithiumVerify) ke dalam EVM itu sendiri melalui pembaruan sistem yang besar pada jaringan (Hard Fork). Hal ini membutuhkan pengembang inti masing-masing klien Ethereum (Geth, Nethermind, Erigon, dll.) untuk bekerja sama dalam mengoptimalkan logika verifikasi kriptografi kisi di tingkat bahasa pemrograman seperti C++, Go, atau Rust, dan melakukan audit keamanan, yang merupakan proses yang akan memakan waktu bertahun-tahun.
+Untuk menghindari ini, diperlukan untuk mengintegrasikan kontrak pra-kompilasi baru (Precompiled Contract) untuk verifikasi PQC (misalnya, menugaskan `0x10` untuk DilithiumVerify) ke dalam EVM itu sendiri melalui pembaruan sistem yang besar pada jaringan (Hard Fork). Hal ini membutuhkan pengembang inti masing-masing klien Ethereum (Geth, Nethermind, Erigon, dll.) untuk bekerja sama dalam mengoptimalkan logika verifikasi kriptografi kisi di tingkat bahasa pemrograman seperti C++, Go, atau [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), dan melakukan audit keamanan, yang merupakan proses yang akan memakan waktu bertahun-tahun.
 
 ### 5.3. Kesulitan Membangun Konsensus melalui Hard Fork
 

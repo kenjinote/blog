@@ -147,7 +147,7 @@ $$ T_{backup} = \frac{S_{total}}{B \times (1 - \alpha)} + C \times L $$
 其中，各个变量如下：
 - $S_{total}$ : 备份对象的总数据量 (Bit)
 - $B$ : 网络带宽 (bps, 例: 1Gbps = $10^9$ bps)
-- $\alpha$ : 网络或协议的开销 (通常在 TCP/IP 或 SMB 协议中为 0.1 ～ 0.2)
+- $\alpha$ : 网络或协议的开销 (通常在 [TCP](https://kenji.blog/zh-cn/p/http3-quic-protocol-tcp-udp/)/IP 或 SMB 协议中为 0.1 ～ 0.2)
 - $C$ : 文件总数
 - $L$ : 单个文件的处理延迟 (秒)
 

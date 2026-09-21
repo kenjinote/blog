@@ -11,9 +11,9 @@ tags: ["C++", "Rust", "Programming", "Career"]
 
 # 引言：系统编程的新黎明
 
-在现代软件工程中，C++和Rust是站在系统编程最前沿的两大巨头。多年来，在操作系统、嵌入式设备、游戏引擎、高频交易（HFT）系统等需要发挥硬件极限性能的领域，C++一直作为绝对的王者君临天下。作为一名资深C++工程师，我自己也是从C++98时代的裸指针丛林开始，经历了C++11的现代化浪潮（智能指针、Lambda表达式、`auto`的引入），并伴随着C++14/17/20规范的不断庞大，一直坚持编写代码至今。
+在现代软件工程中，C++和[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)是站在系统编程最前沿的两大巨头。多年来，在操作系统、嵌入式设备、游戏引擎、高频交易（HFT）系统等需要发挥硬件极限性能的领域，C++一直作为绝对的王者君临天下。作为一名资深C++工程师，我自己也是从C++98时代的裸指针丛林开始，经历了C++11的现代化浪潮（智能指针、Lambda表达式、`auto`的引入），并伴随着C++14/17/20规范的不断庞大，一直坚持编写代码至今。
 
-然而近年来，作为C++结构性问题——特别是“缺乏内存安全”导致的安全漏洞（据说约70%的CVE源于内存问题）以及“无止境复杂化的规范和未定义行为（UB）”——的解决方案，Rust正在戏剧性地崛起。被Linux内核正式采用，以及微软、谷歌、AWS等科技巨头大规模向Rust迁移的项目，并不只是短暂的流行，而是意味着系统编程领域范式的转变。
+然而近年来，作为C++结构性问题——特别是“缺乏内存安全”导致的安全漏洞（据说约70%的CVE源于内存问题）以及“无止境复杂化的规范和未定义行为（UB）”——的解决方案，[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)正在戏剧性地崛起。被Linux内核正式采用，以及微软、谷歌、AWS等科技巨头大规模向Rust迁移的项目，并不只是短暂的流行，而是意味着系统编程领域范式的转变。
 
 在本文中，我将作为一名纯正的C++工程师，从涉及语言规范根本的技术视角，彻底比较并剖析在深入学习Rust并将其应用于实战后所体会到的“优点”和“缺点”。
 
@@ -57,7 +57,7 @@ int main() {
 
 在C++中，始终存在由于误访问被`std::move`掏空（处于有效但未指定状态）的对象而带来的风险。这会导致运行时崩溃，最坏的情况下还会直接引发安全漏洞。
 
-## Rust的所有权（Ownership）与借用检查器的绝对防御
+## [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)的所有权（Ownership）与借用检查器的绝对防御
 
 Rust将“所有权”这一概念融入了语言的核心设计中，并通过称为 **借用检查器（[Borrow Checker](https://kenji.blog/zh-cn/p/memory-management-garbage-collection/)）** 的编译器功能进行严格的静态分析。
 
@@ -77,7 +77,7 @@ fn main() {
 }
 ```
 
-在Rust中，当变量的所有权转移时，原变量会被编译器视为“未初始化”状态，从而彻底阻断后续的访问。这使得“释放后使用（Use-After-Free）”或“悬垂指针（Dangling Pointer）”等漏洞在理论上根本无法通过编译。
+在[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)中，当变量的所有权转移时，原变量会被编译器视为“未初始化”状态，从而彻底阻断后续的访问。这使得“释放后使用（Use-After-Free）”或“悬垂指针（Dangling Pointer）”等漏洞在理论上根本无法通过编译。
 
 ```mermaid
 graph TD
@@ -94,17 +94,17 @@ graph TD
 
 ## 借用（Borrowing）与可变性的控制
 
-更为强大的是引用资源的“借用（Borrowing）”规则。在Rust中，强制执行以下规则：
+更为强大的是引用资源的“借用（Borrowing）”规则。在[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)中，强制执行以下规则：
 1. 在任何给定的时间点，要么只能存在“多个不可变引用（`&T`）”，要么只能存在“一个可变引用（`&mut T`）”， **二者只能选其一** 。
 2. 引用的生命周期不能超过其原始数据的作用域（生命周期的限制）。
 
-在C++中，可以轻松地对同一个对象创建多个可变引用或指针，这常常会引起意想不到的状态破坏（如迭代器失效等）。Rust通过在语言层面上禁止这种“别名（Aliasing）+ 可变性（Mutability）”的组合，将漏洞扼杀在摇篮里。
+在C++中，可以轻松地对同一个对象创建多个可变引用或指针，这常常会引起意想不到的状态破坏（如迭代器失效等）。[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)通过在语言层面上禁止这种“别名（Aliasing）+ 可变性（Mutability）”的组合，将漏洞扼杀在摇篮里。
 
 ---
 
 # 2. 内存布局与智能指针的数学开销
 
-在系统编程中，对内存布局的准确理解是不可或缺的。让我们比较一下C++的`std::shared_ptr`和Rust的`std::rc::Rc` / `std::sync::Arc`。
+在系统编程中，对内存布局的准确理解是不可或缺的。让我们比较一下C++的`std::shared_ptr`和[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)的`std::rc::Rc` / `std::sync::Arc`。
 
 C++的`std::shared_ptr`通过引用计数来管理资源，但它默认使用线程安全的原子操作（`std::atomic`）来增加或减少引用计数。其内存开销可以用如下公式表示：
 
@@ -112,7 +112,7 @@ $$ Overhead_{C++} = sizeof(T) + sizeof(ControlBlock) $$
 
 这里，$ControlBlock$ 包含“强引用计数（Strong Ref Count）”、“弱引用计数（Weak Ref Count）”以及“自定义删除器（Custom Deleter）”。问题在于，即使只在单线程环境下使用，原子指令的开销（如缓存行锁定等）也会无条件地产生。
 
-相比之下，Rust根据用途对智能指针进行了严格的区分。
+相比之下，[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)根据用途对智能指针进行了严格的区分。
 
 - **单线程专用**: `Rc<T>` (Reference Counted)
 - **多线程专用**: `Arc<T>` (Atomic Reference Counted)
@@ -120,7 +120,7 @@ $$ Overhead_{C++} = sizeof(T) + sizeof(ControlBlock) $$
 $$ Overhead_{Rc} = sizeof(T) + 2 \times sizeof(usize) $$
 $$ Overhead_{Arc} = sizeof(T) + 2 \times sizeof(AtomicUsize) $$
 
-在Rust中，只要使用单线程专用的`Rc<T>`，就能完全避免原子操作带来的性能惩罚（零成本抽象）。而且，借助后文将要提到的线程安全机制，将`Rc<T>`错误地传递给另一个线程的行为会被类型系统完全阻止。
+在[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)中，只要使用单线程专用的`Rc<T>`，就能完全避免原子操作带来的性能惩罚（零成本抽象）。而且，借助后文将要提到的线程安全机制，将`Rc<T>`错误地传递给另一个线程的行为会被类型系统完全阻止。
 
 ---
 
@@ -156,7 +156,7 @@ int main() {
 }
 ```
 
-## Rust的互斥锁“所有”数据
+## [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)的互斥锁“所有”数据
 
 在Rust中，`Mutex<T>`通过泛型将要保护的数据类型 `T` **包裹（所有）** 在内部。为了访问数据，必须调用`lock()`获取一个守卫对象。在不获取锁的情况下接触数据，在语法上是不可能的。
 
@@ -186,7 +186,7 @@ fn main() {
 }
 ```
 
-此外，Rust中还有两个保证并发安全的核心特征（Trait）：
+此外，[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)中还有两个保证并发安全的核心特征（Trait）：
 - `Send`：可以在线程间安全地转移所有权的类型
 - `Sync`：可以被多个线程同时安全引用的类型
 
@@ -196,7 +196,7 @@ fn main() {
 
 $$ S(N) = \frac{1}{(1 - P) + \frac{P}{N}} $$
 
-借助类型系统，Rust使得为了最大化该 $P$ 值而进行的重构变得极其安全。
+借助类型系统，[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)使得为了最大化该 $P$ 值而进行的重构变得极其安全。
 
 ```mermaid
 graph TD
@@ -215,7 +215,7 @@ graph TD
 
 C++的标准错误处理机制是“异常（Exceptions）”。然而，异常会让控制流变得不透明，并带来性能损失（如栈展开或RTTI膨胀）。在嵌入式系统和游戏引擎中，经常会完全禁用异常（`-fno-exceptions`），并采用返回传统错误代码的设计。虽然C++23引入了`std::expected`，但要渗透到整个生态系统中还需要时间。
 
-Rust中不存在异常的概念。错误被作为纯粹的“值”返回，并用 `Result<T, E>` 这个枚举类型（代数数据类型）来表示。
+[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)中不存在异常的概念。错误被作为纯粹的“值”返回，并用 `Result<T, E>` 这个枚举类型（代数数据类型）来表示。
 
 ```rust
 use std::fs::File;
@@ -243,7 +243,7 @@ C++的多态主要通过类的继承和虚函数（`virtual`）实现的动态�
 
 $$ T_{dispatch} = T_{lookup\_in\_vtable} + T_{dereference} $$
 
-Rust摒弃了经典面向对象中的“类继承”，取而代之采用了“ **特征（Traits）** ”的概念（类似于C++20的Concept，但功能更强大）。
+[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)摒弃了经典面向对象中的“类继承”，取而代之采用了“ **特征（Traits）** ”的概念（类似于C++20的Concept，但功能更强大）。
 
 ```rust
 trait Drawable {
@@ -266,7 +266,7 @@ fn draw_dynamic(item: &dyn Drawable) {
 }
 ```
 
-Rust动态分发（`dyn Trait`）最大的特点是，数据结构内部不包含vptr，而是使用 **胖指针（Fat Pointer）** 。胖指针成对地保存“指向数据的指针”和“指向vtable的指针”。这使得对外部库定义的类型进行事后特征实现（扩展）并应用于动态分发变得非常容易。
+[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)动态分发（`dyn Trait`）最大的特点是，数据结构内部不包含vptr，而是使用 **胖指针（Fat Pointer）** 。胖指针成对地保存“指向数据的指针”和“指向vtable的指针”。这使得对外部库定义的类型进行事后特征实现（扩展）并应用于动态分发变得非常容易。
 
 ---
 
@@ -274,7 +274,7 @@ Rust动态分发（`dyn Trait`）最大的特点是，数据结构内部不包�
 
 C++最大的弱点之一就是缺乏标准的包管理器。`CMakeLists.txt`晦涩难懂的语法、使用`find_package`解决依赖关系的复杂性，以及不同操作系统库路径的差异，持续吞噬着C++工程师大量的时间。
 
-而在Rust中，标准搭载了 **Cargo** 这款世界上最顶级的包管理器兼构建系统。
+而在[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)中，标准搭载了 **Cargo** 这款世界上最顶级的包管理器兼构建系统。
 
 ```mermaid
 graph TD
@@ -293,7 +293,7 @@ graph TD
 
 ---
 
-# 7. 学习Rust的缺点与学习曲线
+# 7. 学习[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)的缺点与学习曲线
 
 到目前为止，我已经讲述了Rust的优点，但是C++工程师在将Rust投入实战时，也肯定会面临一些“高墙”和缺点。
 
@@ -301,14 +301,14 @@ graph TD
 如果我们试图将C++中“随便用裸指针连接”的数据结构（例如双向链表、图结构、自引用结构体等）原封不动地在Rust中实现，会因为所有权和生命周期的限制而无法通过编译。为了满足借用检查器，我们需要使用 `Rc<RefCell<T>>` 进行复杂的包装，或者从根本上重新设计，改用Arena分配器或基于索引的管理。
 
 ## 2. 漫长的编译时间
-虽然C++也会因为模板嵌套而导致编译变慢，但Rust的编译时间（特别是从零开始的干净构建）也绝对不算短。由于LLVM强大的优化过程、宏展开以及泛型的单态化（Monomorphization）相互叠加，在大型项目中构建时间会成为瓶颈。开发过程中必须经常使用 `cargo check` 等技巧来应对。
+虽然C++也会因为模板嵌套而导致编译变慢，但[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)的编译时间（特别是从零开始的干净构建）也绝对不算短。由于LLVM强大的优化过程、宏展开以及泛型的单态化（Monomorphization）相互叠加，在大型项目中构建时间会成为瓶颈。开发过程中必须经常使用 `cargo check` 等技巧来应对。
 
 ## 3. 与C++代码库的互操作性
-与C语言（FFI）的互操作非常顺畅，但是要将Rust与现有庞大的C++代码库（大量使用了类、模板、虚函数）直接连接起来却非常困难。近年来，虽然 `cxx` 和 `autocxx` 等桥接工具正在发展，但要实现完全无缝的迁移仍然面临很高的门槛。
+与C语言（FFI）的互操作非常顺畅，但是要将[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)与现有庞大的C++代码库（大量使用了类、模板、虚函数）直接连接起来却非常困难。近年来，虽然 `cxx` 和 `autocxx` 等桥接工具正在发展，但要实现完全无缝的迁移仍然面临很高的门槛。
 
 ---
 
-# 总结：我们应该转向Rust吗？
+# 总结：我们应该转向[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)吗？
 
 未来，C++仍将在游戏引擎开发以及现有庞大基础设施中继续扮演重要角色。C++20/23带来的现代化进程也引人瞩目，使得代码编写变得越来越安全。
 

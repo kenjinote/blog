@@ -217,7 +217,7 @@ Wenn komplexe Shell-Skripte für große Projekte erforderlich sind, ist es die a
 
 ## 6. Plattformübergreifende Build-Systeme und Compiler
 
-Beim Umgang mit nativem Code (Sprachen, die direkt in Maschinencode kompiliert werden) wie C++ oder Rust müssen nicht nur OS-spezifische APIs, sondern auch Unterschiede in Build-Systemen und Compilern überwunden werden.
+Beim Umgang mit nativem Code (Sprachen, die direkt in Maschinencode kompiliert werden) wie C++ oder [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) müssen nicht nur OS-spezifische APIs, sondern auch Unterschiede in Build-Systemen und Compilern überwunden werden.
 
 *   **Compiler**:
     *   Windows: MSVC (Microsoft Visual C++), MinGW (GCC for Windows)

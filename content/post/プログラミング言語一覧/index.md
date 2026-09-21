@@ -24,7 +24,7 @@ description: 'C言語、Python、Java、JavaScriptから、Rust、Go、OCaml、C
 
 ## Haskell
 
-## Rust
+## [Rust](https://kenji.blog/p/webassembly-wasm-current-future/)
 
 ## Go
 

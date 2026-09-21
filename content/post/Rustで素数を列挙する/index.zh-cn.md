@@ -8,7 +8,7 @@ image: "images/img.webp"
 categories: ["programming"]
 description: '作为Rust编程的学习内容，介绍一个枚举指定上限值以内素数的简单算法实现示例。结合具体的示例代码，通俗易懂地讲解使用循环处理及条件分支的基础编码方法。'
 ---
-我尝试写了一个在 Rust 中枚举素数的程序。
+我尝试写了一个在 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 中枚举素数的程序。
 
 ```rust
 fn main() {

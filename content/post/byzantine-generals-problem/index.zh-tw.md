@@ -120,7 +120,7 @@ end
 
 對[拜占庭將軍問題](https://kenji.blog/zh-tw/p/byzantine-generals-problem/)的耐受性被稱為 **拜占庭容錯** (Byzantine Fault Tolerance, BFT)。這是一項重要指標，衡量分散式系統在經歷故障或惡意攻擊時能否繼續正常運作。
 
-近年來，這個問題再次受到高度關注，是因為 **區塊鏈技術** 的出現。由於區塊鏈是沒有中央管理者的 P2P 網路，惡意參與者（節點）可能會散播虛假的交易紀錄。這正是[拜占庭將軍問題](https://kenji.blog/zh-tw/p/byzantine-generals-problem/)的體現。
+近年來，這個問題再次受到高度關注，是因為 **區塊鏈技術** 的出現。由於區塊鏈是沒有中央管理者的 [P2P](https://kenji.blog/zh-tw/p/webrtc-realtime-communication-p2p/) 網路，惡意參與者（節點）可能會散播虛假的交易紀錄。這正是[拜占庭將軍問題](https://kenji.blog/zh-tw/p/byzantine-generals-problem/)的體現。
 
 ### PBFT (Practical Byzantine Fault Tolerance) 的機制
 

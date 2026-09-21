@@ -120,7 +120,7 @@ Among the features provided by QMK, the following in particular explosively incr
 
 The drawback of QMK was that "every time you change settings, you have to compile the source code and flash (write) the firmware." **VIA** and **VIAL** solved this. These allow you to access the keyboard from a GUI application (or a web browser) and rewrite the keymap in real-time without rebooting.
 
-## 4. Ergonomics and the Science of Layouts
+## 4. Ergonomics and the Science of [Layout](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/)s
 
 The typical "row-staggered (keys are staggered by row)" layout is a remnant to prevent the physical arms of typewriters from tangling, and is not based on the structure of the human hand.
 

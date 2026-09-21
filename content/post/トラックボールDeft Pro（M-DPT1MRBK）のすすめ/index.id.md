@@ -31,7 +31,7 @@ Saat ini saya menetapkannya seperti gambar di atas. Anda juga dapat mengubah pen
 - Debu menumpuk di sekitar trackball, jadi perlu melepas bola dan membersihkannya secara teratur (sekitar beberapa hari sekali)
 - Karena rasa operasionalnya berbeda dari mouse (menggerakkan kursor dengan jari telunjuk dan jari tengah, mengoperasikan roda mouse dengan ibu jari), butuh waktu untuk terbiasa
 - Seperti yang saya tulis di atas bahwa mudah untuk melakukan gerakan presisi, tetapi tetap saja sulit untuk menggerakkan kursor dalam satuan 1 piksel dengan trackball
-- Tidak mungkin mengoperasikan roda sambil menahan tombol kiri (misalnya, saat Anda ingin memperbesar/memperkecil sambil memilih area di Paint)
+- Tidak mungkin mengoperasikan roda sambil menahan tombol kiri (misalnya, saat Anda ingin memperbesar/memperkecil sambil memilih area di [Paint](https://kenji.blog/id/p/browser-rendering-mechanism-dom-paint/))
 
 Sebagai kesimpulan, saya pikir ini adalah salah satu trackball yang lebih mahal, tetapi secara keseluruhan cukup mudah dioperasikan, dan saya pikir pekerjaan saya menjadi lebih efisien.
 Saya harap ini bermanfaat bagi mereka yang mempertimbangkan untuk membelinya.

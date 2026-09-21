@@ -11,7 +11,7 @@ description: '介紹可在Rust中輕鬆使用的GUI函式庫「egui」之基本�
 
 # 什麼是 egui
 
-這是一個可以在 Rust 中使用的 GUI 函式庫。
+這是一個可以在 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 中使用的 GUI 函式庫。
 
 # 試用 egui
 

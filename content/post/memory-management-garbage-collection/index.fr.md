@@ -8,7 +8,7 @@ categories: ["programming", "computer-science", "software-engineering"]
 tags: ["memory-management", "c-language", "java", "rust", "garbage-collection"]
 ---
 
-# Bienvenue dans la vérité de la gestion de la mémoire : Dénouer les profondeurs à partir de C, Java et Rust
+# Bienvenue dans la vérité de la gestion de la mémoire : Dénouer les profondeurs à partir de C, Java et [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/)
 
 Dans le développement logiciel, la gestion de la mémoire est un thème éternel incontournable, et l'un des éléments les plus importants déterminant les performances et la stabilité du système. Dans cet article, à travers une analyse approfondie comparable à environ 20 000 caractères, nous couvrons complètement depuis les théories fondamentales de la gestion de la mémoire jusqu'aux méthodes d'optimisation dans les architectures modernes.
 
@@ -206,7 +206,7 @@ Lors de l'exécution du GC, tous les threads de l'application sont mis en pause 
 
 ---
 
-## 4. Rust : La troisième voie apportée par la possession et l'emprunt
+## 4. [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) : La troisième voie apportée par la possession et l'emprunt
 
 "Performances extrêmes par gestion manuelle" du langage C, et "Sécurité de la mémoire par gestion automatique" de Java. Ces deux concepts ont longtemps été considérés comme un compromis. Cependant, le langage Rust a introduit un modèle révolutionnaire appelé **"possession" (Ownership)**, accomplissant l'exploit de garantir la sécurité de la mémoire à 100 % lors de la compilation, tout en éliminant le ramasse-miettes.
 
@@ -222,7 +222,7 @@ Grâce à ces règles, Rust ne demande pas aux développeurs d'écrire `malloc` 
 
 ### 4.2 Déplacement de possession (Move)
 
-En Rust, lorsque vous assignez une variable à une autre, ou que vous la passez par valeur à une fonction, la possession est "déplacée (Move)". La variable d'origine ne peut plus être accédée ensuite (cela entraîne une erreur de compilation). Cela rend la double libération structurellement impossible.
+En [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/), lorsque vous assignez une variable à une autre, ou que vous la passez par valeur à une fonction, la possession est "déplacée (Move)". La variable d'origine ne peut plus être accédée ensuite (cela entraîne une erreur de compilation). Cela rend la double libération structurellement impossible.
 
 ```rust
 fn main() {
@@ -241,7 +241,7 @@ fn main() {
 
 ### 4.3 Emprunt (Borrowing) et durée de vie (Lifetime)
 
-Déplacer la possession à chaque opération rendrait la programmation extrêmement gênante. Pour accéder aux données sans en prendre la possession, Rust propose les concepts de **référence (Reference)** et d'**emprunt (Borrowing)**.
+Déplacer la possession à chaque opération rendrait la programmation extrêmement gênante. Pour accéder aux données sans en prendre la possession, [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) propose les concepts de **référence (Reference)** et d'**emprunt (Borrowing)**.
 
 De plus, le **vérificateur d'emprunt (Borrow Checker)** intégré au compilateur de Rust applique les règles strictes suivantes à la compilation.
 
@@ -295,7 +295,7 @@ Lorsque le CPU lit des données en mémoire, il charge non seulement ces donnée
 
 ### 5.1 Différences d'efficacité du cache selon les langages
 
-- **C / C++ / Rust** : Lors de la création d'un tableau de structures (`struct Array[100]` ou `Vec<MyStruct>`), les données sont placées consécutivement sans espaces en mémoire. Lors du traitement du tableau dans une boucle, le prefetcher matériel du CPU fonctionne parfaitement et le taux de réussite du cache augmente de manière spectaculaire.
+- **C / C++ / [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/)** : Lors de la création d'un tableau de structures (`struct Array[100]` ou `Vec<MyStruct>`), les données sont placées consécutivement sans espaces en mémoire. Lors du traitement du tableau dans une boucle, le prefetcher matériel du CPU fonctionne parfaitement et le taux de réussite du cache augmente de manière spectaculaire.
 - **Java** : Un tableau d'objets Java (`MyObject[]`) n'est pas un tableau d'entités, mais un "tableau de références (pointeurs) vers des objets". Puisque chaque objet physique est alloué à différents endroits sur le tas, chaque itération de la boucle implique de suivre des pointeurs pour accéder à des adresses mémoire aléatoires, entraînant de graves défauts de cache (Cache Miss).
 
 Le temps d'accès mémoire effectif moyen $ T_{avg} $ est exprimé ainsi :
@@ -303,7 +303,7 @@ Le temps d'accès mémoire effectif moyen $ T_{avg} $ est exprimé ainsi :
 $ T_{avg} = h \cdot T_{cache} + (1 - h) \cdot T_{memory} $
 
 Ici, $ h $ est le taux de réussite du cache ($ 0 \le h \le 1 $), $ T_{cache} $ est le temps d'accès au cache (environ 1 à 4 ns), et $ T_{memory} $ est le temps d'accès à la mémoire principale (environ 100 ns).
-Selon que l'on ajuste $ h $ à 0,99 (approche style C/Rust) ou à 0,5 (chasse aux pointeurs style Java), il se crée une différence de plusieurs dizaines de fois dans la vitesse d'exécution des boucles d'une application. C'est la véritable raison pour laquelle C++ et Rust sont choisis pour les moteurs de jeu ou les systèmes de trading à haute fréquence.
+Selon que l'on ajuste $ h $ à 0,99 (approche style C/[Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/)) ou à 0,5 (chasse aux pointeurs style Java), il se crée une différence de plusieurs dizaines de fois dans la vitesse d'exécution des boucles d'une application. C'est la véritable raison pour laquelle C++ et Rust sont choisis pour les moteurs de jeu ou les systèmes de trading à haute fréquence.
 
 ---
 
@@ -315,7 +315,7 @@ Cet article a exploré en profondeur trois paradigmes de gestion de mémoire com
 |:---:|:---|:---|:---|
 | **C** | Gestion manuelle via `malloc/free` | Vitesse extrême, efficacité de cache maximale, léger | Foyer de vulnérabilités (fuites, double libération), coût de développement élevé |
 | **Java** | GC (Ramasse-miettes) | Amélioration de la vitesse de développement, garantie de la sécurité mémoire | Fluctuation de la latence due au STW, dégradation de l'efficacité du cache |
-| **Rust** | Possession et vérificateur d'emprunt | Sécurité avec un coût d'exécution nul, rapide | Courbe d'apprentissage abrupte, difficulté de conception de la durée de vie |
+| **[Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/)** | Possession et vérificateur d'emprunt | Sécurité avec un coût d'exécution nul, rapide | Courbe d'apprentissage abrupte, difficulté de conception de la durée de vie |
 
 L'histoire de la **gestion de la mémoire** a été un jeu de bascule oscillant entre performances et sécurité. Le GC a été créé pour prévenir les tragédies causées par la gestion manuelle, et le modèle de possession a été inventé pour contourner la pénalité de performances du GC.
 

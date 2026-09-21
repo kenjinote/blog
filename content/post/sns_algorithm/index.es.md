@@ -46,7 +46,7 @@ $$
 $$
 
 **Impacto en la selección tecnológica:**
-Este algoritmo acerca en el espacio latente a la "Persona A, interesada en Rust" y a la "Persona B, interesada en Rust". Si la Persona A da "Me gusta" a una publicación sobre un nuevo framework web, es muy probable que la publicación de ese framework también aparezca en la línea de tiempo de la Persona B. Como resultado, ocurre el fenómeno en el que una tecnología específica se vuelve localmente muy popular dentro de un grupo de ingenieros que prefieren una pila tecnológica particular.
+Este algoritmo acerca en el espacio latente a la "Persona A, interesada en [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/)" y a la "Persona B, interesada en Rust". Si la Persona A da "Me gusta" a una publicación sobre un nuevo framework web, es muy probable que la publicación de ese framework también aparezca en la línea de tiempo de la Persona B. Como resultado, ocurre el fenómeno en el que una tecnología específica se vuelve localmente muy popular dentro de un grupo de ingenieros que prefieren una pila tecnológica particular.
 
 ### 2.2 Modelos de recomendación usando Aprendizaje Profundo (DLRM)
 
@@ -142,7 +142,7 @@ Entonces, ¿cómo podemos realizar selecciones tecnológicas objetivas y raciona
 La defensa más segura es cambiar nuestras fuentes de información, pasando de la agregación de las redes sociales a la **información primaria (Primary Sources)**.
 
 1. **Leer el código fuente:** En lugar de creer en una publicación de redes sociales que dice que "esta biblioteca es extremadamente rápida", abre su repositorio en GitHub y verifica la complejidad computacional de la lógica central y sus mecanismos de asignación de memoria.
-2. **Seguir los RFC (Request for Comments):** Muchos proyectos maduros de código abierto (React, Rust, Python, etc.) adoptan el proceso de RFC al introducir nuevas características. En el RFC se documentan aspectos lógicos de manera desapasionada sin importar la participación algorítmica: "¿Por qué es necesaria esta característica?", "¿Cuáles son los compromisos técnicos en el diseño?" y "¿Cuáles son las alternativas?". Aquí es donde reside el verdadero valor técnico.
+2. **Seguir los RFC (Request for Comments):** Muchos proyectos maduros de código abierto (React, [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/), Python, etc.) adoptan el proceso de RFC al introducir nuevas características. En el RFC se documentan aspectos lógicos de manera desapasionada sin importar la participación algorítmica: "¿Por qué es necesaria esta característica?", "¿Cuáles son los compromisos técnicos en el diseño?" y "¿Cuáles son las alternativas?". Aquí es donde reside el verdadero valor técnico.
 
 ### 5.2 Lectura cuidadosa de artículos académicos (Academic Papers) y Whitepapers
 

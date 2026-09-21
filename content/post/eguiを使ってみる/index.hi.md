@@ -11,7 +11,7 @@ description: 'हम Rust में उपयोग में आसान GUI �
 
 # egui क्या है
 
-यह एक GUI लाइब्रेरी है जिसका उपयोग Rust में किया जा सकता है।
+यह एक GUI लाइब्रेरी है जिसका उपयोग [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) में किया जा सकता है।
 
 # egui का उपयोग करके देखें
 

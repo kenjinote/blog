@@ -17,7 +17,7 @@ description: 'Объясняем, как легко узнать место со
 where <имя исполняемого файла>
 ```
 
-Например, если вы хотите узнать расположение Paint (mspaint.exe), сделайте следующее:
+Например, если вы хотите узнать расположение [Paint](https://kenji.blog/ru/p/browser-rendering-mechanism-dom-paint/) (mspaint.exe), сделайте следующее:
 
 ```powershell
 where mspaint.exe

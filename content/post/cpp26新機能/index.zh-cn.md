@@ -162,7 +162,7 @@ graph TD
 
 自从C++17引入 `std::variant` 和 `std::any` 以来，对保存各种类型的变量进行分派一直使用 `std::visit`。然而，`std::visit` 与重载模式的组合（即所谓的 `overloaded` 结构体技巧）非常冗长且可读性较差。
 
-在C++26中， **模式匹配（Pattern Matching）** 作为语言特性被引入（遵循P2688）。这使得类似于函数式语言（如Rust、Haskell等）的直观匹配成为可能。
+在C++26中， **模式匹配（Pattern Matching）** 作为语言特性被引入（遵循P2688）。这使得类似于函数式语言（如[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)、Haskell等）的直观匹配成为可能。
 
 ## 3.1 C++23及以前 `std::visit` 的困境
 

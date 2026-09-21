@@ -14,7 +14,7 @@ description: 'Explicamos de manera comprensible las principales características
 
 
 
-# Características de Rust
+# Características de [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/)
 
 - Es un lenguaje de programación de código abierto relativamente nuevo desarrollado por Mozilla.
 - Es un lenguaje rápido y especializado en programación de sistemas, sin recolección de basura.

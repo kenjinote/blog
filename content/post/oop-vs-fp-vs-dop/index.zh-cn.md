@@ -10,7 +10,7 @@ tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]
 
 编程语言的进化历史，同时也是与复杂性作斗争的历史。随着软件规模的不断扩大，我们面临着状态管理、性能和可维护性等壁垒，为了克服这些问题，各种 **编程范式** 被相继提出。
 
-在本文中，我们将深入探讨现代软件开发中占据主流的 **面向对象编程** （OOP）、具有数学般严谨性的 **函数式编程** （FP）、以及侧重于性能和数据分离的 **数据导向编程** （DOP / DOD），分析它们各自的思想、优势以及 **局限性** 。此外，我们还将解析现代强大的语言（如 Rust 和 TypeScript 等）是如何将它们进行 **融合** 的。
+在本文中，我们将深入探讨现代软件开发中占据主流的 **面向对象编程** （OOP）、具有数学般严谨性的 **函数式编程** （FP）、以及侧重于性能和数据分离的 **数据导向编程** （DOP / DOD），分析它们各自的思想、优势以及 **局限性** 。此外，我们还将解析现代强大的语言（如 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 和 TypeScript 等）是如何将它们进行 **融合** 的。
 
 ---
 
@@ -136,7 +136,7 @@ $ S' = f(S, A) $
 
 ## 3. 回归数据导向编程 (DOP/DOD)
 
-**数据导向设计** （Data-Oriented Design）或 **数据导向编程** 是一种源自游戏开发领域（尤其是 C++ 和 Rust）的范式，随后也波及到了企业级领域（如 Clojure 的思想）。
+**数据导向设计** （Data-Oriented Design）或 **数据导向编程** 是一种源自游戏开发领域（尤其是 C++ 和 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)）的范式，随后也波及到了企业级领域（如 Clojure 的思想）。
 
 ### 3.1 DOP 的核心概念
 
@@ -200,7 +200,7 @@ graph TD
 
 ## 5. 现代的最佳方案：范式的“融合”
 
-如今，从中选择“唯一正确答案”被认为是荒谬的。现代编程语言（如 Rust、TypeScript、Scala、Go 等）都在吸取这些范式的 **长处** 。
+如今，从中选择“唯一正确答案”被认为是荒谬的。现代编程语言（如 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)、TypeScript、Scala、Go 等）都在吸取这些范式的 **长处** 。
 
 ### 5.1 Rust 所展示的终极融合
 

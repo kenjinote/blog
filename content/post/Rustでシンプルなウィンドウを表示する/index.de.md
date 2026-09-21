@@ -9,7 +9,7 @@ categories: ["programming"]
 description: 'Stellt vor, wie man in Rust mit `winapi` ein einfaches Windows-Fenster erstellt und anzeigt. Erklärt den Quellcode, der die Grundlage der GUI-Programmierung bildet, im Detail, von den Einstellungen in Cargo.toml bis zur Implementierung der Fensterprozedur.'
 ---
 
-Ein einfaches Fenster in Rust anzeigen
+Ein einfaches Fenster in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) anzeigen
 
 ```Cargo.toml
 [package]

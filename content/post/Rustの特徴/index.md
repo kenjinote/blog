@@ -8,7 +8,7 @@ image: "img.webp"
 categories: ["programming"]
 description: 'Mozillaが開発するプログラミング言語「Rust」の主な特徴を分かりやすく解説します。高速な動作、ガベージコレクションなし、所有権と借用によるメモリの安全性、クロスプラットフォーム対応など、選ばれる理由を紹介します。'
 ---
-# Rust（ラスト）の特徴
+# [Rust](https://kenji.blog/p/webassembly-wasm-current-future/)（ラスト）の特徴
 
 - Mozilla が開発を行っている比較的新しいオープンソースなプログラミング言語
 - ガーベージコレクションがなく、高速でシステムプログラミングに特化した言語

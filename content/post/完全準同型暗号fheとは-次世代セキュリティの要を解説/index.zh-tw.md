@@ -177,7 +177,7 @@ TFHE 的特色在於其自舉速度非常快（達毫秒等級）。它在邏輯
 時至今日，已經有許多開源函式庫釋出，讓開發者不需要具備深厚的密碼學知識也能使用 FHE。
 
 *   **Microsoft SEAL (Simple Encrypted Arithmetic Library)**: 支援 BFV、BGV、CKKS 的 C++ 函式庫，也是業界標準之一。其 Python 綁定版 **TenSEAL** 在 AI 工程師之間廣受歡迎。
-*   **Zama (Concrete)**: 基於 TFHE 的框架。可用 Rust/Python 編寫，並提供將現有的 PyTorch 模型編譯為在 FHE 上執行的功能（Concrete ML）。
+*   **Zama (Concrete)**: 基於 TFHE 的框架。可用 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)/Python 編寫，並提供將現有的 PyTorch 模型編譯為在 FHE 上執行的功能（Concrete ML）。
 *   **OpenFHE**: PALISADE 的後繼者，是一個支援所有主要方案的全面性 C++ 函式庫。
 
 ### 使用 Python (TenSEAL) 的 FHE 程式設計範例

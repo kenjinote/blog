@@ -28,7 +28,7 @@ description: '通俗易懂地讲解高效寻找素数的算法“埃拉托斯特
 ![](Animation_Sieb_des_Eratosthenes.gif)
 
 
-## Rust 中的实现
+## [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 中的实现
 
 ```
 fn main() {

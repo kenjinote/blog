@@ -46,7 +46,7 @@ $$
 $$
 
 **Dampak pada Pemilihan Teknologi:**
-Algoritma ini membawa "Si A yang tertarik dengan Rust" dan "Si B yang tertarik dengan Rust" lebih dekat di ruang laten. Jika Si A "menyukai" postingan tentang kerangka kerja Web yang sedang berkembang, postingan tentang kerangka kerja tersebut akan memiliki probabilitas tinggi untuk ditampilkan di linimasa Si B juga. Akibatnya, terjadi fenomena di mana sebuah teknologi spesifik menjadi sangat populer secara lokal di dalam kelompok insinyur yang menyukai tumpukan teknologi tertentu.
+Algoritma ini membawa "Si A yang tertarik dengan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)" dan "Si B yang tertarik dengan Rust" lebih dekat di ruang laten. Jika Si A "menyukai" postingan tentang kerangka kerja Web yang sedang berkembang, postingan tentang kerangka kerja tersebut akan memiliki probabilitas tinggi untuk ditampilkan di linimasa Si B juga. Akibatnya, terjadi fenomena di mana sebuah teknologi spesifik menjadi sangat populer secara lokal di dalam kelompok insinyur yang menyukai tumpukan teknologi tertentu.
 
 ### 2.2 Model Rekomendasi Berbasis Pembelajaran Mendalam (DLRM)
 
@@ -142,7 +142,7 @@ Lalu, bagaimana kita bisa membuat pilihan teknologi yang objektif dan tenang di 
 Garis pertahanan yang paling pasti adalah memindahkan sumber informasi kita dari agregasi SNS ke **informasi primer (Primary Sources)**.
 
 1. **Membaca Kode Sumber:** Daripada memercayai postingan SNS yang mengatakan "pustaka ini secepat kilat", bukalah GitHub yang sebenarnya dan periksa kompleksitas komputasi dari logika inti serta mekanisme alokasi memorinya.
-2. **Mengikuti RFC (Request for Comments):** Banyak proyek open-source yang matang (React, Rust, Python, dll.) mengadopsi proses RFC saat memperkenalkan fitur baru. Dalam RFC, alasan "mengapa fitur ini diperlukan", "apa pertukaran desainnya", dan "apa alternatifnya" ditulis secara lugas dan logis tanpa mengkhawatirkan keterlibatan algoritma. Di sinilah nilai teknis yang sebenarnya berada.
+2. **Mengikuti RFC (Request for Comments):** Banyak proyek open-source yang matang (React, [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), Python, dll.) mengadopsi proses RFC saat memperkenalkan fitur baru. Dalam RFC, alasan "mengapa fitur ini diperlukan", "apa pertukaran desainnya", dan "apa alternatifnya" ditulis secara lugas dan logis tanpa mengkhawatirkan keterlibatan algoritma. Di sinilah nilai teknis yang sebenarnya berada.
 
 ### 5.2 Membaca Cermat Makalah (Academic Papers) dan Buku Putih (White Papers)
 

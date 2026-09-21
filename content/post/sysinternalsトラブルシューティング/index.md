@@ -153,7 +153,7 @@ AutorunsでもProcExpと同様に、`Options` から `Verify Code Signatures` �
 ## 5. TCPView による隠れたネットワーク接続の追跡
 
 タスクマネージャーのネットワークタブや `netstat -ano` コマンドでも通信状況は確認できますが、更新が遅かったり、プロセス名とPIDのマッピングを手動で行うのは手間です。
-TCPViewは、すべてのTCPおよびUDPエンドポイントをリアルタイムで監視し、どのプロセスがどのリモートアドレス・ポートと通信しているかを一覧表示します。
+TCPViewは、すべての[TCP](https://kenji.blog/p/http3-quic-protocol-tcp-udp/)および[UDP](https://kenji.blog/p/http3-quic-protocol-tcp-udp/)エンドポイントをリアルタイムで監視し、どのプロセスがどのリモートアドレス・ポートと通信しているかを一覧表示します。
 
 ### 5.1 不正なC2通信の特定
 マルウェアがバックドアを設置し、外部のC2（Command and Control）サーバーにBeacon（ビーコン）を送信している場合、TCPViewで以下のような特徴を探します。
@@ -161,7 +161,7 @@ TCPViewは、すべてのTCPおよびUDPエンドポイントをリアルタイ�
 *   **プロセス名が不自然**: `svchost.exe` なのに、システム権限ではなくユーザー権限で動作しており、見知らぬ海外のIPアドレスに対して `ESTABLISHED` 状態の通信を維持している。
 *   **通常通信しないプロセスの通信**: 例えば、電卓（`calc.exe`）やメモ帳（`notepad.exe`）がポート 443 や 80 で大量のパケットを送受信している（プロセスホローイングの典型的な兆候）。
 
-怪しい通信を見つけた場合、TCPViewから直接 `Close Connection` を送ってTCPセッションを強制切断（RSTパケットの発行）したり、該当プロセスを `End Process` で強制終了させることができます。
+怪しい通信を見つけた場合、TCPViewから直接 `Close Connection` を送って[TCP](https://kenji.blog/p/http3-quic-protocol-tcp-udp/)セッションを強制切断（RSTパケットの発行）したり、該当プロセスを `End Process` で強制終了させることができます。
 
 ---
 

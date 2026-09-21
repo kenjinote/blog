@@ -162,7 +162,7 @@ By utilizing Contracts, API specifications not only become self-documenting but 
 
 Since `std::variant` and `std::any` were introduced in C++17, `std::visit` has been used to dispatch variables holding various types. However, the combination of `std::visit` and the overload pattern (the so-called `overloaded` struct hack) was highly verbose and hard to read.
 
-In C++26, **Pattern Matching** is integrated as a language feature (compliant with P2688). This enables intuitive matching, much closer to functional languages (like Rust or Haskell).
+In C++26, **Pattern Matching** is integrated as a language feature (compliant with P2688). This enables intuitive matching, much closer to functional languages (like [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) or Haskell).
 
 ## 3.1 The Struggle with `std::visit` up to C++23
 

@@ -9,7 +9,7 @@ categories: ["programming"]
 description: 'Explique pour les débutants comment écrire du code de test en Rust et la procédure d''exécution des tests à l''aide de la commande cargo test. Présente en détail l''utilisation de l''attribut #[test] et les résultats de sortie lors du succès ou de l''échec avec des exemples de code concrets.'
 ---
 
-Pour écrire des tests en Rust, créez la fonction en ajoutant l'attribut `#[test]` une ligne au-dessus de la définition de la fonction de test.
+Pour écrire des tests en [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/), créez la fonction en ajoutant l'attribut `#[test]` une ligne au-dessus de la définition de la fonction de test.
 
 ```rust
 fn plus(a:i32,b:i32)->i32 {

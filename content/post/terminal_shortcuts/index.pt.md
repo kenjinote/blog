@@ -248,7 +248,7 @@ function gl { git log --oneline --graph --decorate --all $args }
 
 ## 5.2. Otimizando a Navegação de Diretórios (z / zoxide)
 
-Navegar em pastas muito profundas com `cd` toma muito tempo. Uma ferramenta essencial hoje é o **`zoxide`** (escrito em Rust). Ele rastreia a sua frequência e recência (Frecency) de uso e possibilita saltos instantâneos para um diretório digitando apenas parte do seu nome.
+Navegar em pastas muito profundas com `cd` toma muito tempo. Uma ferramenta essencial hoje é o **`zoxide`** (escrito em [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/)). Ele rastreia a sua frequência e recência (Frecency) de uso e possibilita saltos instantâneos para um diretório digitando apenas parte do seu nome.
 
 ```bash
 # Depois de instalar o zoxide, use z no lugar de cd

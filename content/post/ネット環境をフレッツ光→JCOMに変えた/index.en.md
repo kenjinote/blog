@@ -30,7 +30,7 @@ For now, I won't be doing any streaming or uploading massive amounts of data, so
 
 Also, recently my family and I are mainly working remotely, and today for the first time the internet went down for a few tens of minutes. It recovered automatically, but it might not be a very good omen. It hasn't even been a week since the switch, though...
 
-As a side note, J:COM regulates P2P communication, so it seems you won't get good speeds on P2P apps. Those who use P2P should be careful.
+As a side note, J:COM regulates [P2P](https://kenji.blog/en/p/webrtc-realtime-communication-p2p/) communication, so it seems you won't get good speeds on P2P apps. Those who use P2P should be careful.
 
 # About the service
 At the time of signing up, I was told that if I join Netflix or Disney+, I could get 40,000 yen worth of QUO cards, which offsets the respective service contract fees and makes the average monthly fee a bit cheaper, so I signed up for the services at the same time as the contract. It seems Netflix is a 1-year contract and Disney+ is a half-year contract, and I need to complete the cancellation procedures myself.

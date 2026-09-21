@@ -35,6 +35,6 @@ Windows 11
 [Use the winget tool to install and manage applications](https://learn.microsoft.com/en-us/windows/package-manager/winget/)
 
 ### Aside
-I thought I could install Paint.Net too, but I wasn't able to.
+I thought I could install [Paint](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/).Net too, but I wasn't able to.
 
 https://forums.getpaint.net/topic/118574-please-add-paintnet-to-the-available-packages-for-windows-package-manager-winget/

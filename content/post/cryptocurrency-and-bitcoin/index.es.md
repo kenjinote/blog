@@ -256,7 +256,7 @@ Las medidas de defensa de la red de Bitcoin contra esto son las siguientes:
 1. **Protección de funciones hash**: Una dirección de Bitcoin no es la clave pública en sí, sino el resultado de aplicar las funciones hash SHA-256 y RIPEMD-160 a la clave pública. Incluso utilizando computadoras cuánticas, invertir una función hash (incluso con el algoritmo de Grover, la complejidad es $\mathcal{O}(\sqrt{N})$) sigue siendo difícil. Por lo tanto, hasta que se realice una transacción y la clave pública se exponga a la red, el contenido de la dirección se considera seguro incluso contra computadoras cuánticas.
 2. **Migración a Criptografía Poscúantica (Post-Quantum Cryptography: PQC)**: Se está discutiendo realizar una bifurcación dura en el protocolo de Bitcoin antes de que las computadoras cuánticas se vuelvan prácticas, con el fin de migrar a nuevos algoritmos de firma que sean difíciles de descifrar incluso para las computadoras cuánticas, como la criptografía basada en retículos (Lattice-based cryptography) y la criptografía polinómica multivariable (Multivariate polynomial cryptography) seleccionadas por el NIST (Instituto Nacional de Estándares y Tecnología de EE. UU.).
 
-## 9. Topología de Red y Detalles del Protocolo P2P
+## 9. Topología de Red y Detalles del Protocolo [P2P](https://kenji.blog/es/p/webrtc-realtime-communication-p2p/)
 
 La red de Bitcoin no es solo una colección de servidores y clientes, sino que está construida como una red **Peer-to-Peer (P2P)** completa.
 

@@ -248,7 +248,7 @@ function gl { git log --oneline --graph --decorate --all $args }
 
 ## 5.2. निर्देशिका नेविगेशन का अनुकूलन (z / zoxide)
 
-`cd` कमांड के साथ गहरी निर्देशिकाओं (deep directories) में नेविगेट करना थकाऊ है। हाल के वर्षों में, **`zoxide`** (Rust में लिखा गया) एक मानक बनता जा रहा है, जो उपयोगकर्ता के नेविगेशन इतिहास और आवृत्ति (Frecency: Frequency + Recency) को सीखता है, और आपको केवल पथ का एक हिस्सा टाइप करके गंतव्य निर्देशिका (destination directory) पर जाने की अनुमति देता है।
+`cd` कमांड के साथ गहरी निर्देशिकाओं (deep directories) में नेविगेट करना थकाऊ है। हाल के वर्षों में, **`zoxide`** ([Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) में लिखा गया) एक मानक बनता जा रहा है, जो उपयोगकर्ता के नेविगेशन इतिहास और आवृत्ति (Frecency: Frequency + Recency) को सीखता है, और आपको केवल पथ का एक हिस्सा टाइप करके गंतव्य निर्देशिका (destination directory) पर जाने की अनुमति देता है।
 
 ```bash
 # zoxide स्थापित करने के बाद, cd के बजाय z का उपयोग करें

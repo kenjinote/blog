@@ -9,7 +9,7 @@ categories: ["programming"]
 description: '详细讲解在Rust中使用`winapi`和`user32-sys`包，通过调用Windows API来显示简单的消息框（MessageBox）的方法，从项目创建到代码实现一步步带您操作。'
 ---
 
-可以通过以下步骤在Rust中显示MessageBox。
+可以通过以下步骤在[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)中显示MessageBox。
 
 1. 安装Rust。参考 [Rust入门](https://kenji.blog/posts/rust%E3%81%AE%E3%81%AF%E3%81%98%E3%82%81%E3%81%8B%E3%81%9F/)
 2. 在命令提示符中执行 `cargo new --bin MessageBox`。

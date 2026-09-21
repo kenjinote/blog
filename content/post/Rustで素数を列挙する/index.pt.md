@@ -8,7 +8,7 @@ image: "images/img.webp"
 categories: ["programming"]
 description: 'Como parte do aprendizado da programação em Rust, apresentamos um exemplo de implementação de um algoritmo simples para listar os números primos até um limite especificado. Explicamos métodos básicos de codificação que usam processamento de loop e desvio condicional de maneira fácil de entender através de código de amostra concreto.'
 ---
-Escrevi um programa para enumerar números primos em Rust.
+Escrevi um programa para enumerar números primos em [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/).
 
 ```rust
 fn main() {

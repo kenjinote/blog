@@ -35,6 +35,6 @@ description: '讲解如何使用Windows 11的包管理器“WinGet”，通过�
 [使用 winget 工具安装和管理应用程序](https://learn.microsoft.com/zh-cn/windows/package-manager/winget/)
 
 ### 题外话
-我原以为也可以安装 Paint.Net，但结果无法安装。
+我原以为也可以安装 [Paint](https://kenji.blog/zh-cn/p/browser-rendering-mechanism-dom-paint/).Net，但结果无法安装。
 
 https://forums.getpaint.net/topic/118574-please-add-paintnet-to-the-available-packages-for-windows-package-manager-winget/

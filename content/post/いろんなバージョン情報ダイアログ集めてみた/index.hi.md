@@ -31,7 +31,7 @@ description: 'दैनिक उपयोग में आने वाले �
 यह LINE का Windows संस्करण है।
 ![img_4.png](img_4.webp)
 
-## Paint.NET
+## [Paint](https://kenji.blog/hi/p/browser-rendering-mechanism-dom-paint/).NET
 यह एक छवि संपादन सॉफ्टवेयर है।
 ![img_5.png](img_5.webp)
 

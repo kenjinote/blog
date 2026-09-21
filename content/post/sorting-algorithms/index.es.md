@@ -1,56 +1,3 @@
-+++
-title = "Guía completa de algoritmos de ordenamiento: Desde Bubble Sort hasta Timsort"
-description = "Explicación completa de los algoritmos de ordenamiento en programación. Cubre desde los más básicos hasta los más avanzados."
-slug = "sorting-algorithms"
-date = "2026-09-21T01:50:00+09:00"
-image = "eyecatch.jpg"
-categories = ["programming", "algorithms", "computer-science"]
-tags = ["sort", "python", "algorithm", "big-o"]
-+++
-
-# Guía completa de algoritmos de ordenamiento: Desde Bubble Sort hasta Timsort
-
-Los algoritmos y las estructuras de datos son temas sumamente importantes que forman la columna vertebral de la informática. Entre ellos, el "ordenamiento" (sorting) es una operación fundamental esencial en diversas situaciones, como búsquedas, agrupación de datos y visualización. En este artículo, explicaremos con gran detalle desde los algoritmos de ordenamiento básicos que aprenden los principiantes, hasta los algoritmos avanzados que se adoptan en las bibliotecas estándar de los lenguajes de programación modernos, cubriendo cómo funcionan, sus implementaciones, complejidad computacional y en qué situaciones deben usarse.
-
-## 1. Conocimientos básicos de los algoritmos de ordenamiento
-
-Antes de aprender sobre los algoritmos de ordenamiento, es necesario comprender varios conceptos importantes que sirven como criterios de evaluación para los algoritmos. Comprender estos conceptos aclarará por qué existen tantos algoritmos de ordenamiento y cuál debería elegirse según la situación.
-
-### 1.1 Estabilidad (Stability)
-
-La **estabilidad** (Stability) en los algoritmos de ordenamiento es una propiedad que indica si el orden relativo entre los elementos que tienen el mismo valor de clave de ordenamiento se conserva antes y después de ordenarlos.
-
-Por ejemplo, supongamos que tenemos una lista de datos con las calificaciones de exámenes y los nombres de los estudiantes.
-`[ (80 puntos, "Estudiante A"), (70 puntos, "Estudiante B"), (80 puntos, "Estudiante C") ]`
-Cuando ordenamos esto en orden ascendente por puntuación, un algoritmo de ordenamiento estable siempre dará como resultado lo siguiente:
-`[ (70 puntos, "Estudiante B"), (80 puntos, "Estudiante A"), (80 puntos, "Estudiante C") ]`
-Dado que el "Estudiante A" estaba originalmente antes del "Estudiante C", el "Estudiante A" se coloca antes, incluso con los mismos 80 puntos. Esto es un **ordenamiento estable** (Stable Sort).
-
-Por otro lado, en un algoritmo de ordenamiento inestable, este orden podría invertirse y resultar en `(80 puntos, "Estudiante C"), (80 puntos, "Estudiante A")`. La estabilidad se vuelve extremadamente importante cuando se ordena por múltiples claves varias veces (por ejemplo: primero ordenando por nombre y luego por puntuación).
-
-### 1.2 In-place y Out-of-place
-
-Esta es una clasificación que indica cuánta memoria adicional requiere el algoritmo durante su ejecución.
-
-*   **In-place (En su lugar)** : Es un algoritmo que sobrescribe directamente la matriz de entrada al ordenar y solo requiere una cantidad de memoria adicional de tamaño constante ($O(1)$) o tamaño logarítmico ($O(\log n)$) que se utiliza para intercambiar elementos. Es muy útil en entornos con estrictas limitaciones de memoria.
-*   **Out-of-place (Fuera de lugar)** : Es un algoritmo que requiere un área de memoria adicional proporcional al tamaño de la entrada (por ejemplo, $O(n)$) aparte de la matriz de entrada para realizar el ordenamiento.
-
-### 1.3 Complejidad computacional y notación Big O
-
-Para expresar la eficiencia de un algoritmo, utilizamos la **notación Big O** (Big O Notation), que es una notación asintótica.
-En los algoritmos de ordenamiento, evaluamos principalmente la **complejidad temporal** (tiempo de ejecución) y la **complejidad espacial** (uso de memoria).
-
-*   $O(1)$: Tiempo constante. Siempre es constante independientemente de la cantidad de datos.
-*   $O(n)$: Tiempo lineal. Aumenta proporcionalmente a la cantidad de datos.
-*   $O(n \log n)$: Tiempo lineal logarítmico. La velocidad máxima teórica en algoritmos de ordenamiento basados en comparaciones.
-*   $O(n^2)$: Tiempo cuadrático. Cuando la cantidad de datos se duplica, el tiempo se cuadruplica, lo que no es adecuado para datos a gran escala.
-
-En los algoritmos de ordenamiento basados en comparaciones (métodos que ordenan comparando el tamaño entre los elementos), está demostrado matemáticamente que el límite inferior de la complejidad temporal en el peor de los casos es $O(n \log n)$.
-
-$$
-\text{Límite inferior de la ordenación por comparación} = \Omega(n \log n)
-$$
-
 ---
 
 ## 2. Algoritmos de $O(n^2)$: Conceptos básicos y enfoques intuitivos
@@ -520,7 +467,7 @@ En los libros de texto académicos, a menudo se tratan temas hasta el ordenamien
 
 ### 5.1 Timsort (Predeterminado en Python)
 
-Timsort es un algoritmo implementado por Tim Peters en 2002 para Python, y actualmente es el ganador en el mundo práctico, adoptado en muchos lenguajes, desde las funciones de Python `list.sort()` y `sorted()`, hasta matrices de objetos en Java y la ordenación estándar de Rust.
+Timsort es un algoritmo implementado por Tim Peters en 2002 para Python, y actualmente es el ganador en el mundo práctico, adoptado en muchos lenguajes, desde las funciones de Python `list.sort()` y `sorted()`, hasta matrices de objetos en Java y la ordenación estándar de [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/).
 
 La filosofía de diseño más grande de Timsort se basa en la regla empírica de que **"en los datos del mundo real, rara vez son completamente aleatorios, sino que a menudo están parcialmente ordenados hasta cierto punto (hay bloques consecutivos en orden ascendente o descendente)"**.
 

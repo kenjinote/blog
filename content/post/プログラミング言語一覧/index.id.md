@@ -23,7 +23,7 @@ description: 'Kami telah membuat daftar berbagai bahasa pemrograman dari C, Pyth
 
 ## Haskell
 
-## Rust
+## [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)
 
 ## Go
 

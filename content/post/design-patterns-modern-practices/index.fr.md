@@ -30,7 +30,7 @@ Par exemple, dans les langages sans fonctions de première classe (First-class f
 
 ## 3. Réévaluation moderne des patrons GoF et alternatives
 
-Ici, nous examinerons certains patrons GoF représentatifs et comment ils ont été remplacés dans les langages modernes (TypeScript, Kotlin, Rust, etc.).
+Ici, nous examinerons certains patrons GoF représentatifs et comment ils ont été remplacés dans les langages modernes (TypeScript, Kotlin, [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/), etc.).
 
 ### 3.1. Le patron Strategy : L'élimination par les fonctions de première classe
 
@@ -133,7 +133,7 @@ Puisque les flux asynchrones sont pris en charge au niveau du langage, il n'est 
 
 Le patron `Visitor` est un patron pour séparer les structures de données du traitement qui leur est appliqué, mais il présentait le problème d'avoir une implémentation très complexe et contre-intuitive (nécessitant un double dispatch).
 
-Aujourd'hui, ce problème est élégamment résolu en utilisant des langages (Rust, Kotlin, Swift, Scala, etc.) dotés de **types de données algébriques (ADT)** et de **pattern matching**.
+Aujourd'hui, ce problème est élégamment résolu en utilisant des langages ([Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/), Kotlin, Swift, Scala, etc.) dotés de **types de données algébriques (ADT)** et de **pattern matching**.
 
 **L'approche moderne (Énumérations et Pattern Match de Rust)**
 
@@ -191,7 +191,7 @@ $$
 bind: M[A] \times (A \rightarrow M[B]) \rightarrow M[B]
 $$
 
-**Le type Result en Rust (Application de la monade Either)**
+**Le type Result en [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) (Application de la monade Either)**
 
 ```rust
 fn divide(numerator: f64, denominator: f64) -> Result<f64, String> {

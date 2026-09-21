@@ -10,9 +10,9 @@ tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: '徹底比較C++的指標與Rust的所有權、借用模型。從原生指標、智慧指標到借用檢查器，為您解說記憶體安全性的本質。'
 ---
 
-現代系統程式設計中，兼顧效能與記憶體安全性是永遠的課題。C++長年來一直稱霸這個領域，但近年來逐漸威脅其地位的便是Rust。Rust最大的特色在於，它沒有垃圾回收機制（GC），卻能透過「所有權（Ownership）」與「借用（Borrowing）」的概念，在編譯時期保證記憶體的安全性。
+現代系統程式設計中，兼顧效能與記憶體安全性是永遠的課題。C++長年來一直稱霸這個領域，但近年來逐漸威脅其地位的便是[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)。Rust最大的特色在於，它沒有垃圾回收機制（GC），卻能透過「所有權（Ownership）」與「借用（Borrowing）」的概念，在編譯時期保證記憶體的安全性。
 
-在本文中，我們將詳細比較C++的指標（原生指標、`std::unique_ptr`、`std::shared_ptr`）與Rust的所有權模型，並搭配程式碼範例與圖解，徹底為您解說Rust的編譯器（借用檢查器）是如何防止釋放後使用（Use-After-Free）以及資料競爭（Data Race）的。
+在本文中，我們將詳細比較C++的指標（原生指標、`std::unique_ptr`、`std::shared_ptr`）與[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)的所有權模型，並搭配程式碼範例與圖解，徹底為您解說Rust的編譯器（借用檢查器）是如何防止釋放後使用（Use-After-Free）以及資料競爭（Data Race）的。
 
 ## 1. 記憶體管理的基礎：堆疊與堆積
 
@@ -91,13 +91,13 @@ void uniquePtrExample() {
 #### `std::shared_ptr`
 這是一種允許多個指標共用同一個物件的指標。它使用參考計數（Reference Counting），當計數歸零時就會釋放記憶體。由於需要進行原子的增減操作，因此會產生些許的效能開銷（相當於前述的 $O_{sync}$）。
 
-## 3. Rust的所有權（Ownership）：典範轉移
+## 3. [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)的所有權（Ownership）：典範轉移
 
 Rust將C++中 `std::unique_ptr` 的概念視為語言規範的核心，並擁有更加嚴格的「所有權模型」。
 
 ### 所有權的3個規則
 
-Rust的所有權系統建立在以下3個極其簡單的規則之上。
+[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)的所有權系統建立在以下3個極其簡單的規則之上。
 
 1. **Rust中的每一個值，都有一個被稱為其擁有者（owner）的變數。**
 2. **任何時候，擁有者都只能有一個。**
@@ -116,7 +116,7 @@ fn main() {
 }
 ```
 
-這個「讓移動後的變數在編譯時期變得無法存取」的功能，正是Rust比C++的 `std::unique_ptr` 更安全的原因之一。
+這個「讓移動後的變數在編譯時期變得無法存取」的功能，正是[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)比C++的 `std::unique_ptr` 更安全的原因之一。
 
 ```mermaid
 sequenceDiagram
@@ -134,13 +134,13 @@ sequenceDiagram
 
 如果總是讓所有權不斷轉移，每次傳遞值給函式時，都必須再把所有權還回來，這非常不方便。因此誕生了「借用（Borrowing）」的概念。這相當於C++的指標或參考。
 
-在Rust中，借用有兩種。
+在[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)中，借用有兩種。
 - **不可變參考（Immutable Reference）**: `&T` （類似於C++的 `const T&`）
 - **可變參考（Mutable Reference）**: `&mut T` （類似於C++的 `T&`）
 
 ### 借用檢查器（[Borrow Checker](https://kenji.blog/zh-tw/p/memory-management-garbage-collection/)）的冷酷鐵律
 
-Rust的編譯器內建了驗證參考正確性的「借用檢查器」。借用檢查器會強制執行以下嚴格的規則。
+[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)的編譯器內建了驗證參考正確性的「借用檢查器」。借用檢查器會強制執行以下嚴格的規則。
 
 > 在任意的作用域中，只能存在以下其中一種情況。
 > - **1個可變參考（`&mut T`）**
@@ -150,7 +150,7 @@ Rust的編譯器內建了驗證參考正確性的「借用檢查器」。借用�
 
 $$ (N_r \ge 0 \land N_w = 0) \oplus (N_r = 0 \land N_w = 1) $$
 
-透過這個規則， **在編譯時期就能完全排除資料競爭（Data Race）** 。資料競爭會發生在以下條件下：①兩個以上的指標同時存取同一份資料，②至少有一個正在進行寫入，③沒有同步機制。Rust藉由在編譯時期破壞條件②，來防範資料競爭於未然。
+透過這個規則， **在編譯時期就能完全排除資料競爭（Data Race）** 。資料競爭會發生在以下條件下：①兩個以上的指標同時存取同一份資料，②至少有一個正在進行寫入，③沒有同步機制。[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)藉由在編譯時期破壞條件②，來防範資料競爭於未然。
 
 ```rust
 // Rust: 違反借用規則所導致的編譯錯誤
@@ -195,7 +195,7 @@ int main() {
 }
 ```
 
-### 透過Rust進行編譯時期防禦
+### 透過[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)進行編譯時期防禦
 
 讓我們用Rust來撰寫完全一樣的邏輯。
 
@@ -215,7 +215,7 @@ fn main() {
 }
 ```
 
-像這樣，在Rust中「讀取數值的過程中（不可變借用中），更改該數值（可變借用）」在編譯器層級是被禁止的，因此像是釋放後使用（Use-After-Free）或迭代器失效這類致命的Bug，必定能在編譯時期被捕捉到。
+像這樣，在[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)中「讀取數值的過程中（不可變借用中），更改該數值（可變借用）」在編譯器層級是被禁止的，因此像是釋放後使用（Use-After-Free）或迭代器失效這類致命的Bug，必定能在編譯時期被捕捉到。
 
 ```mermaid
 graph LR
@@ -227,9 +227,9 @@ graph LR
     style D stroke:#FF0000,stroke-width:2px
 ```
 
-## 6. Rust中的共用所有權：`Rc` 與 `Arc`
+## 6. [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)中的共用所有權：`Rc` 與 `Arc`
 
-Rust也準備了相當於C++ `std::shared_ptr` 的共用所有權，但它明確區分了單一執行緒用與多執行緒用的型別。
+[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)也準備了相當於C++ `std::shared_ptr` 的共用所有權，但它明確區分了單一執行緒用與多執行緒用的型別。
 
 ### 單一執行緒用：`Rc<T>` (Reference Counted)
 `Rc<T>` 是一種非執行緒安全（Non-thread-safe）的參考計數智慧指標。因為它不使用原子指令來增減計數，所以在單一執行緒內非常快速。然而，如果試圖將它傳送到另一個執行緒，就會產生編譯錯誤（因為它沒有實作 `Send` 特徵）。
@@ -239,7 +239,7 @@ Rust也準備了相當於C++ `std::shared_ptr` 的共用所有權，但它明確
 
 此外，在C++中，如果從多個執行緒同時對以 `std::shared_ptr` 共用的變數進行寫入，就會發生資料競爭。為了防止這種情況，必須手動且正確地使用 `std::mutex`。
 
-另一方面，在Rust中，單靠 `Arc<T>` **無法更改內部的資料** 。如果需要更改，必須將其與作為互斥鎖的 `Mutex<T>` 結合使用。
+另一方面，在[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)中，單靠 `Arc<T>` **無法更改內部的資料** 。如果需要更改，必須將其與作為互斥鎖的 `Mutex<T>` 結合使用。
 
 ```rust
 use std::sync::{Arc, Mutex};
@@ -269,13 +269,13 @@ fn main() {
 }
 ```
 
-值得特別一提的是，Rust的 `Mutex<T>` 不僅僅是一個鎖的機制， **「它還將需要保護的資料作為型別內含在其中」** 。這使得「忘記取得鎖就存取資料」的失誤能在編譯層級被完全防堵。除非取得鎖（`lock()`），否則機制上是不允許取得存取內部資料的權限（參考）的。
+值得特別一提的是，[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)的 `Mutex<T>` 不僅僅是一個鎖的機制， **「它還將需要保護的資料作為型別內含在其中」** 。這使得「忘記取得鎖就存取資料」的失誤能在編譯層級被完全防堵。除非取得鎖（`lock()`），否則機制上是不允許取得存取內部資料的權限（參考）的。
 
 ## 總結：是編譯器的「事前檢查」，還是開發者的「自我負責」？
 
 C++的指標與智慧指標為開發者提供了高度的控制能力與效能，但正確的使用與否卻取決於開發者的紀律。雖然RAII與 `std::unique_ptr` 的引入讓C++變得極為安全，但仍然無法在語言層級完全防止移動後存取或迭代器失效這類的「未定義行為」。
 
-相對地，Rust將所有權（Ownership）與借用（Borrowing）的規則內建於編譯器中，使得這些錯誤能在 **編譯時期** 而非執行時被偵測出來。「只要編譯通過，就保證記憶體安全」這樣強力的保證，正是Rust在系統程式設計領域中迅速獲得支持的最大理由。
+相對地，[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)將所有權（Ownership）與借用（Borrowing）的規則內建於編譯器中，使得這些錯誤能在 **編譯時期** 而非執行時被偵測出來。「只要編譯通過，就保證記憶體安全」這樣強力的保證，正是Rust在系統程式設計領域中迅速獲得支持的最大理由。
 
 對初學者來說，與Rust的借用檢查器搏鬥（Fight the borrow checker）是一大障礙，但這其實只不過是編譯器在嚴格地代勞處理C++程式設計師原本要在腦中進行的「追蹤指標生存期間」的複雜計算而已。
 

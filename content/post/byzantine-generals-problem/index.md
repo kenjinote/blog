@@ -120,7 +120,7 @@ end
 
 [ビザンチン将軍問題](https://kenji.blog/p/byzantine-generals-problem/)に対する耐性のことを **ビザンチン・フォールト・トレランス** (Byzantine Fault Tolerance, BFT) と呼びます。[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)が故障や悪意のある攻撃に耐えて正常に稼働し続けるための重要な指標です。
 
-近年、この問題が再び大きく脚光を浴びたのは **ブロックチェーン技術** の登場によるものです。ブロックチェーンは中央管理者のいない P2P ネットワークであるため、悪意のある参加者（ノード）が嘘の取引履歴を流す可能性があります。まさに[ビザンチン将軍問題](https://kenji.blog/p/byzantine-generals-problem/)そのものです。
+近年、この問題が再び大きく脚光を浴びたのは **ブロックチェーン技術** の登場によるものです。ブロックチェーンは中央管理者のいない [P2P](https://kenji.blog/p/webrtc-realtime-communication-p2p/) ネットワークであるため、悪意のある参加者（ノード）が嘘の取引履歴を流す可能性があります。まさに[ビザンチン将軍問題](https://kenji.blog/p/byzantine-generals-problem/)そのものです。
 
 ### PBFT (Practical Byzantine Fault Tolerance) の仕組み
 

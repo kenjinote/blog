@@ -46,7 +46,7 @@ $$
 $$
 
 **Impact on Tech Selection:**
-This algorithm brings "Person A who is interested in Rust" and "Person B who is interested in Rust" closer together in the latent space. If Person A "likes" a post about an emerging Web framework, posts about that framework will appear on Person B's timeline with a high probability. Because of this, a phenomenon occurs where specific technologies become locally popular within engineer groups that prefer certain tech stacks.
+This algorithm brings "Person A who is interested in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)" and "Person B who is interested in Rust" closer together in the latent space. If Person A "likes" a post about an emerging Web framework, posts about that framework will appear on Person B's timeline with a high probability. Because of this, a phenomenon occurs where specific technologies become locally popular within engineer groups that prefer certain tech stacks.
 
 ### 2.2 Deep Learning Recommendation Model (DLRM)
 
@@ -142,7 +142,7 @@ So, how should we make objective and calm tech selections under the dominance of
 The most reliable defense is to shift your information sources from SNS aggregations to **Primary Sources**.
 
 1. **Read the Source Code:** Instead of believing SNS posts saying "This library is blazingly fast," actually open GitHub and check the core logic's time complexity and memory allocation mechanisms.
-2. **Follow RFCs (Request for Comments):** Many mature open-source projects (React, Rust, Python, etc.) adopt the RFC process when introducing new features. RFCs objectively and logically describe "Why this feature is necessary," "What the design trade-offs are," and "What the alternatives are," without worrying about algorithm engagement. This is where true technical value lies.
+2. **Follow RFCs (Request for Comments):** Many mature open-source projects (React, [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/), Python, etc.) adopt the RFC process when introducing new features. RFCs objectively and logically describe "Why this feature is necessary," "What the design trade-offs are," and "What the alternatives are," without worrying about algorithm engagement. This is where true technical value lies.
 
 ### 5.2 Close Reading of Academic Papers and Whitepapers
 

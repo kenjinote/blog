@@ -291,7 +291,7 @@ flowchart TD
 
 ## 6. التحليل الرياضي للأداء في تحسين CSS
 
-تعتبر إحدى أكبر ميزات إدراج Tailwind CSS هي تقليل حجم ملف CSS المرسل إلى أدنى حد. دعونا نحلل كمياً كيف يؤثر ذلك على أداء الويب (وخاصة على First Contentful Paint: FCP) باستخدام نماذج رياضية.
+تعتبر إحدى أكبر ميزات إدراج Tailwind CSS هي تقليل حجم ملف CSS المرسل إلى أدنى حد. دعونا نحلل كمياً كيف يؤثر ذلك على أداء الويب (وخاصة على First Contentful [Paint](https://kenji.blog/ar/p/browser-rendering-mechanism-dom-paint/): FCP) باستخدام نماذج رياضية.
 
 ### نموذج تقليل حجم ملف CSS
 

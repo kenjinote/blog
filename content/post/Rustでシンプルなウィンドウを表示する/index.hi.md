@@ -9,7 +9,7 @@ categories: ["programming"]
 description: 'हम Rust में `winapi` का उपयोग करके एक साधारण Windows विंडो बनाने और प्रदर्शित करने का तरीका बताते हैं। Cargo.toml सेटिंग्स से लेकर विंडो प्रक्रिया के कार्यान्वयन तक, हम GUI प्रोग्रामिंग के आधार बनने वाले स्रोत कोड के बारे में विस्तार से बताते हैं।'
 ---
 
-Rust में एक साधारण विंडो प्रदर्शित करना
+[Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) में एक साधारण विंडो प्रदर्शित करना
 
 ```Cargo.toml
 [package]

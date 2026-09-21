@@ -17,7 +17,7 @@ Quando você executa um comando especificando um arquivo executável, há moment
 where <nome_do_arquivo_executável>
 ```
 
-Por exemplo, se você quiser saber a localização do Paint (mspaint.exe), faça o seguinte:
+Por exemplo, se você quiser saber a localização do [Paint](https://kenji.blog/pt/p/browser-rendering-mechanism-dom-paint/) (mspaint.exe), faça o seguinte:
 
 ```powershell
 where mspaint.exe

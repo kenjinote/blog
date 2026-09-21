@@ -10,9 +10,9 @@ tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: 'Ein umfassender Vergleich von C++ Zeigern und Rusts Ownership- und Borrowing-Modell. Von rohen Zeigern und Smart Pointern bis hin zum Borrow Checker wird das Wesen der Speichersicherheit erklärt.'
 ---
 
-In der modernen Systemprogrammierung ist die Vereinbarkeit von Leistung und Speichersicherheit eine ständige Herausforderung. C++ war lange Zeit der unangefochtene König in diesem Bereich, aber in den letzten Jahren hat Rust begonnen, diese Position zu bedrohen. Das größte Merkmal von Rust ist die Garantie der Speichersicherheit zur Kompilierzeit ohne [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/) (GC), was durch die Konzepte von "Ownership" (Eigentum) und "Borrowing" (Ausleihen) erreicht wird.
+In der modernen Systemprogrammierung ist die Vereinbarkeit von Leistung und Speichersicherheit eine ständige Herausforderung. C++ war lange Zeit der unangefochtene König in diesem Bereich, aber in den letzten Jahren hat [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) begonnen, diese Position zu bedrohen. Das größte Merkmal von Rust ist die Garantie der Speichersicherheit zur Kompilierzeit ohne [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/) (GC), was durch die Konzepte von "Ownership" (Eigentum) und "Borrowing" (Ausleihen) erreicht wird.
 
-In diesem Artikel werden wir C++ Zeiger (rohe Zeiger, `std::unique_ptr`, `std::shared_ptr`) und das Rust-Ownership-Modell detailliert vergleichen. Wir werden anhand von Codebeispielen und Diagrammen ausführlich erklären, wie der Rust-Compiler ([Borrow Checker](https://kenji.blog/de/p/memory-management-garbage-collection/)) Use-After-Free (Verwendung nach Freigabe) und Datenrennen (Data Races) verhindert.
+In diesem Artikel werden wir C++ Zeiger (rohe Zeiger, `std::unique_ptr`, `std::shared_ptr`) und das [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)-Ownership-Modell detailliert vergleichen. Wir werden anhand von Codebeispielen und Diagrammen ausführlich erklären, wie der Rust-Compiler ([Borrow Checker](https://kenji.blog/de/p/memory-management-garbage-collection/)) Use-After-Free (Verwendung nach Freigabe) und Datenrennen (Data Races) verhindert.
 
 ## 1. Grundlagen der Speicherverwaltung: Stack und Heap
 
@@ -26,11 +26,11 @@ Dies ist der Bereich, in dem lokale Variablen bei Funktionsaufrufen abgelegt wer
 
 Hier werden Daten platziert, deren Größe zur Laufzeit dynamisch bestimmt wird, oder Daten, die über den Gültigkeitsbereich einer Funktion hinaus existieren müssen. Auf sie wird über Zeiger (oder Referenzen) zugegriffen.
 
-In C++ und Rust, die keine [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/) haben, kann der Verwaltungsaufwand für den Heapspeicher als Formel wie folgt modelliert werden. Wenn die Gesamtzahl der Objekte $N$ ist, die durchschnittliche Zeit für die Allokation $T_{alloc}$ und die durchschnittliche Zeit für die Deallokation $T_{dealloc}$ ist, dann ist der Gesamtaufwand für die Speicherverwaltung $C_{memory}$:
+In C++ und [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/), die keine [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/) haben, kann der Verwaltungsaufwand für den Heapspeicher als Formel wie folgt modelliert werden. Wenn die Gesamtzahl der Objekte $N$ ist, die durchschnittliche Zeit für die Allokation $T_{alloc}$ und die durchschnittliche Zeit für die Deallokation $T_{dealloc}$ ist, dann ist der Gesamtaufwand für die Speicherverwaltung $C_{memory}$:
 
 $$ C_{memory} = \sum_{i=1}^{N} (T_{alloc, i} + T_{dealloc, i}) + O_{sync} $$
 
-Hierbei ist $O_{sync}$ der Overhead für die gegenseitige Ausschließung (Mutex- oder atomare Operationen) in einer Multithread-Umgebung. Da Rust den Zeitpunkt der Speicherfreigabe zur Kompilierzeit bestimmt, führt es $T_{dealloc}$ zu einem zuverlässigen und sicheren Zeitpunkt aus, während die Durchsatzminderung (Stop-The-World) durch die Garbage Collection zur Laufzeit auf null reduziert wird.
+Hierbei ist $O_{sync}$ der Overhead für die gegenseitige Ausschließung (Mutex- oder atomare Operationen) in einer Multithread-Umgebung. Da [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) den Zeitpunkt der Speicherfreigabe zur Kompilierzeit bestimmt, führt es $T_{dealloc}$ zu einem zuverlässigen und sicheren Zeitpunkt aus, während die Durchsatzminderung (Stop-The-World) durch die Garbage Collection zur Laufzeit auf null reduziert wird.
 
 ```mermaid
 graph TD
@@ -95,11 +95,11 @@ Ein Zeiger, der es mehreren Zeigern ermöglicht, dasselbe Objekt zu teilen. Er v
 
 ## 3. Rusts Ownership (Eigentum): Ein Paradigmenwechsel
 
-Rust hat das Konzept von `std::unique_ptr` aus C++ als Kern seiner Sprachspezifikation übernommen und verfügt über ein noch strengeres "Ownership-Modell".
+[Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) hat das Konzept von `std::unique_ptr` aus C++ als Kern seiner Sprachspezifikation übernommen und verfügt über ein noch strengeres "Ownership-Modell".
 
 ### Die 3 Regeln von Ownership
 
-Das Ownership-System von Rust basiert auf den folgenden drei sehr einfachen Regeln:
+Das Ownership-System von [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) basiert auf den folgenden drei sehr einfachen Regeln:
 
 1. **Jeder Wert in Rust hat eine Variable, die als sein Eigentümer (Owner) bezeichnet wird.**
 2. **Es kann immer nur einen Eigentümer zur gleichen Zeit geben.**
@@ -118,7 +118,7 @@ fn main() {
 }
 ```
 
-Diese Funktion, den Zugriff auf Variablen nach einem Move zur Kompilierzeit zu verhindern, ist einer der Gründe, warum Rust sicherer ist als `std::unique_ptr` in C++.
+Diese Funktion, den Zugriff auf Variablen nach einem Move zur Kompilierzeit zu verhindern, ist einer der Gründe, warum [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) sicherer ist als `std::unique_ptr` in C++.
 
 ```mermaid
 sequenceDiagram
@@ -136,13 +136,13 @@ sequenceDiagram
 
 Wenn man das Eigentum ständig verschiebt, müsste man es jedes Mal zurückgeben lassen, wenn man einen Wert an eine Funktion übergibt, was sehr unpraktisch ist. Hier kommt das "Borrowing" (Ausleihen) ins Spiel. Es entspricht Zeigern oder Referenzen in C++.
 
-In Rust gibt es zwei Arten von Borrowing:
+In [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) gibt es zwei Arten von Borrowing:
 - **Unveränderliche Referenz (Immutable Reference)**: `&T` (ähnlich wie `const T&` in C++)
 - **Veränderliche Referenz (Mutable Reference)**: `&mut T` (ähnlich wie `T&` in C++)
 
 ### Die unerbittlichen Regeln des [Borrow Checker](https://kenji.blog/de/p/memory-management-garbage-collection/)s
 
-Der Rust-Compiler enthält einen "Borrow Checker", der die Gültigkeit von Referenzen überprüft. Der Borrow Checker erzwingt die folgenden strengen Regeln:
+Der [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)-Compiler enthält einen "Borrow Checker", der die Gültigkeit von Referenzen überprüft. Der Borrow Checker erzwingt die folgenden strengen Regeln:
 
 > In jedem beliebigen Gültigkeitsbereich kann nur eine der folgenden Bedingungen existieren:
 > - **Genau eine veränderliche Referenz (`&mut T`)**
@@ -152,7 +152,7 @@ Dies wird als das Prinzip **"Multiple Readers XOR Single Writer (MRSW)"** bezeic
 
 $$ (N_r \ge 0 \land N_w = 0) \oplus (N_r = 0 \land N_w = 1) $$
 
-Diese Regel eliminiert **Datenrennen (Data Races) zur Kompilierzeit vollständig**. Ein Datenrennen tritt auf, wenn ① zwei oder mehr Zeiger gleichzeitig auf dieselben Daten zugreifen, ② mindestens einer davon schreibt und ③ kein Synchronisationsmechanismus vorhanden ist. Rust verhindert Datenrennen im Vorfeld, indem es die Bedingung ② zur Kompilierzeit bricht.
+Diese Regel eliminiert **Datenrennen (Data Races) zur Kompilierzeit vollständig**. Ein Datenrennen tritt auf, wenn ① zwei oder mehr Zeiger gleichzeitig auf dieselben Daten zugreifen, ② mindestens einer davon schreibt und ③ kein Synchronisationsmechanismus vorhanden ist. [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) verhindert Datenrennen im Vorfeld, indem es die Bedingung ② zur Kompilierzeit bricht.
 
 ```rust
 // Rust: Kompilierfehler durch Verletzung der Borrowing-Regeln
@@ -197,7 +197,7 @@ int main() {
 }
 ```
 
-### Schutz zur Kompilierzeit durch Rust
+### Schutz zur Kompilierzeit durch [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)
 
 Lassen Sie uns genau dieselbe Logik in Rust schreiben.
 
@@ -217,7 +217,7 @@ fn main() {
 }
 ```
 
-Da Rust auf Compiler-Ebene verbietet, "einen Wert zu ändern (veränderlich auszuleihen), während er gelesen wird (unveränderlich ausgeliehen ist)", werden fatale Bugs wie Use-After-Free oder Iterator-Ungültigmachung zur Kompilierzeit zuverlässig abgefangen.
+Da [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) auf Compiler-Ebene verbietet, "einen Wert zu ändern (veränderlich auszuleihen), während er gelesen wird (unveränderlich ausgeliehen ist)", werden fatale Bugs wie Use-After-Free oder Iterator-Ungültigmachung zur Kompilierzeit zuverlässig abgefangen.
 
 ```mermaid
 graph LR
@@ -229,9 +229,9 @@ graph LR
     style D stroke:#FF0000,stroke-width:2px
 ```
 
-## 6. Geteiltes Eigentum (Shared Ownership) in Rust: `Rc` und `Arc`
+## 6. Geteiltes Eigentum (Shared Ownership) in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/): `Rc` und `Arc`
 
-Geteiltes Eigentum, das dem `std::shared_ptr` in C++ entspricht, ist auch in Rust verfügbar, jedoch gibt es eine klare Typentrennung für Single-Threaded- und Multi-Threaded-Anwendungen.
+Geteiltes Eigentum, das dem `std::shared_ptr` in C++ entspricht, ist auch in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) verfügbar, jedoch gibt es eine klare Typentrennung für Single-Threaded- und Multi-Threaded-Anwendungen.
 
 ### Für Single-Thread: `Rc<T>` (Reference Counted)
 `Rc<T>` ist ein nicht-thread-sicherer Smart Pointer mit Referenzzählung. Da er Inkrementierungs- und Dekrementierungsoperationen ohne atomare Befehle durchführt, ist er innerhalb eines einzelnen Threads sehr schnell. Wenn Sie jedoch versuchen, ihn an einen anderen Thread zu senden, führt dies zu einem Kompilierfehler (da er das `Send`-Trait nicht implementiert).
@@ -241,7 +241,7 @@ Wenn Daten zwischen Threads geteilt werden sollen, wird `Arc<T>` verwendet, das 
 
 Darüber hinaus tritt in C++ ein Datenrennen auf, wenn mehrere Threads gleichzeitig in eine von `std::shared_ptr` gemeinsam genutzte Variable schreiben. Um dies zu verhindern, muss `std::mutex` manuell und korrekt verwendet werden.
 
-Im Gegensatz dazu kann in Rust **die innere Struktur von `Arc<T>` allein nicht geändert werden**. Wenn Änderungen erforderlich sind, muss es mit einem Mutex, d. h. `Mutex<T>`, kombiniert werden.
+Im Gegensatz dazu kann in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) **die innere Struktur von `Arc<T>` allein nicht geändert werden**. Wenn Änderungen erforderlich sind, muss es mit einem Mutex, d. h. `Mutex<T>`, kombiniert werden.
 
 ```rust
 use std::sync::{Arc, Mutex};
@@ -271,15 +271,15 @@ fn main() {
 }
 ```
 
-Bemerkenswert ist, dass `Mutex<T>` in Rust nicht nur ein einfacher Sperrmechanismus ist, sondern **"die zu schützenden Daten als Typ kapselt"**. Dies verhindert auf Compiler-Ebene vollständig den Fehler, "auf Daten zuzugreifen und dabei zu vergessen, die Sperre zu erlangen". Es ist so konzipiert, dass man ohne das Erlangen der Sperre (`lock()`) keine Zugriffsrechte (Referenz) auf die darin enthaltenen Daten erhält.
+Bemerkenswert ist, dass `Mutex<T>` in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) nicht nur ein einfacher Sperrmechanismus ist, sondern **"die zu schützenden Daten als Typ kapselt"**. Dies verhindert auf Compiler-Ebene vollständig den Fehler, "auf Daten zuzugreifen und dabei zu vergessen, die Sperre zu erlangen". Es ist so konzipiert, dass man ohne das Erlangen der Sperre (`lock()`) keine Zugriffsrechte (Referenz) auf die darin enthaltenen Daten erhält.
 
 ## Fazit: "Vorabprüfung" durch den Compiler oder "Eigenverantwortung" durch den Entwickler
 
 Zeiger und Smart Pointer in C++ bieten Entwicklern ein hohes Maß an Kontrolle und Leistung, aber ihre korrekte Verwendung hängt von der Disziplin des Entwicklers ab. Obwohl C++ durch die Einführung von RAII und `std::unique_ptr` drastisch sicherer geworden ist, kann es "undefiniertes Verhalten" wie den Zugriff nach einem Move oder die Iterator-Ungültigmachung auf Sprachebene nicht vollständig verhindern.
 
-Auf der anderen Seite erkennt Rust diese Fehler zur **Kompilierzeit** anstatt zur Laufzeit, indem es die Regeln von "Ownership" und "Borrowing" in den Compiler integriert. Die starke Garantie, dass "wenn es kompiliert, speichersicher ist", ist der Hauptgrund, warum Rust in der Systemprogrammierung schnell an Popularität gewinnt.
+Auf der anderen Seite erkennt [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) diese Fehler zur **Kompilierzeit** anstatt zur Laufzeit, indem es die Regeln von "Ownership" und "Borrowing" in den Compiler integriert. Die starke Garantie, dass "wenn es kompiliert, speichersicher ist", ist der Hauptgrund, warum Rust in der Systemprogrammierung schnell an Popularität gewinnt.
 
-Der Kampf mit dem [Borrow Checker](https://kenji.blog/de/p/memory-management-garbage-collection/) von Rust ("Fighting the borrow checker") ist für Anfänger eine große Hürde, aber letztendlich übernimmt der Compiler nur streng die komplexe Berechnung der "Verfolgung der Lebensdauer von Zeigern", die C++ Programmierer ursprünglich in ihren Köpfen durchführten.
+Der Kampf mit dem [Borrow Checker](https://kenji.blog/de/p/memory-management-garbage-collection/) von [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) ("Fighting the borrow checker") ist für Anfänger eine große Hürde, aber letztendlich übernimmt der Compiler nur streng die komplexe Berechnung der "Verfolgung der Lebensdauer von Zeigern", die C++ Programmierer ursprünglich in ihren Köpfen durchführten.
 
 Wenn man Rust lernt, nachdem man die Freiheit und die Gefahren von C++ Zeigern verstanden hat, wird man die Philosophie hinter dem Ownership-Modell und das "Warum es so entworfen wurde" tiefgründiger verstehen können.
 

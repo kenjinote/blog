@@ -9,7 +9,7 @@ categories: ["programming"]
 description: '介绍在Rust中使用`winapi`创建并显示Windows简单窗口的方法。从Cargo.toml的设置到窗口过程的实现，详细讲解GUI编程基础的源代码。'
 ---
 
-用 Rust 显示一个简单的窗口
+用 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 显示一个简单的窗口
 
 ```Cargo.toml
 [package]

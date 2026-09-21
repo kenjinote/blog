@@ -28,7 +28,7 @@ description: '淺顯易懂地解說能有效率找出質數的演算法「埃拉
 ![](Animation_Sieb_des_Eratosthenes.gif)
 
 
-## Rust 實作
+## [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 實作
 
 ```
 fn main() {

@@ -1,56 +1,3 @@
-+++
-title = "Guia Completo de Algoritmos de Ordenação: Do Bubble Sort ao Timsort"
-description = "Uma explicação completa dos algoritmos de ordenação na programação. Cobre desde os mais básicos até os avançados."
-slug = "sorting-algorithms"
-date = "2026-09-21T01:50:00+09:00"
-image = "eyecatch.jpg"
-categories = ["programming", "algorithms", "computer-science"]
-tags = ["sort", "python", "algorithm", "big-o"]
-+++
-
-# Guia Completo de Algoritmos de Ordenação: Do Bubble Sort ao Timsort
-
-Algoritmos e estruturas de dados são temas extremamente importantes que formam a base da ciência da computação. Entre eles, a "ordenação" (sorting) é uma operação fundamental essencial em diversas situações, como pesquisa, agrupamento de dados e visualização. Neste artigo, explicaremos detalhadamente desde os algoritmos de ordenação básicos aprendidos por iniciantes até os algoritmos avançados adotados nas bibliotecas padrão das linguagens de programação modernas, abordando seus mecanismos, implementação, complexidade e quando devem ser usados.
-
-## 1. Conhecimentos Básicos de Algoritmos de Ordenação
-
-Antes de aprender algoritmos de ordenação, é necessário entender alguns conceitos importantes que servem como critérios de avaliação dos algoritmos. Compreender isso deixará claro por que existem tantos algoritmos de ordenação e qual escolher dependendo da situação.
-
-### 1.1 Estabilidade (Stability)
-
-A **estabilidade** (Stability) em algoritmos de ordenação é a propriedade que indica se a ordem relativa entre elementos que possuem o mesmo valor de chave de ordenação é preservada antes e depois da ordenação.
-
-Por exemplo, suponha que temos uma lista de dados contendo as notas de teste e os nomes dos alunos.
-`[ (80 pontos, "Aluno A"), (70 pontos, "Aluno B"), (80 pontos, "Aluno C") ]`
-Quando isso é ordenado em ordem crescente de pontos, se for um algoritmo de ordenação estável, o resultado será sempre o seguinte.
-`[ (70 pontos, "Aluno B"), (80 pontos, "Aluno A"), (80 pontos, "Aluno C") ]`
-Como o "Aluno A" estava originalmente antes do "Aluno C", mesmo com os mesmos 80 pontos, o "Aluno A" é colocado na frente. Isso é a **ordenação estável** (Stable Sort).
-
-Por outro lado, em um algoritmo de ordenação instável, essa ordem pode ser invertida, resultando em `(80 pontos, "Aluno C"), (80 pontos, "Aluno A")`. A estabilidade torna-se extremamente importante quando se realiza a ordenação várias vezes com várias chaves (por exemplo, primeiro ordenando por nome e depois ordenando por pontos).
-
-### 1.2 In-place e Out-of-place
-
-Esta é uma classificação que indica quanta memória adicional o algoritmo requer durante a execução.
-
-*   **In-place (No local)**: É um algoritmo que reescreve diretamente o próprio array de entrada durante a ordenação, exigindo apenas um tamanho constante ($O(1)$) ou logarítmico ($O(\log n)$) de memória adicional usada para trocar elementos e afins. É muito útil em ambientes com restrições rigorosas de memória.
-*   **Out-of-place (Fora do local)**: É um algoritmo que requer uma área de memória adicional proporcional ao tamanho da entrada (por exemplo, $O(n)$), separada do array de entrada para a ordenação.
-
-### 1.3 Complexidade e Notação Big O
-
-Para expressar a eficiência de um algoritmo, usamos a **Notação Big O** (Big O Notation), que é uma notação assintótica.
-Nos algoritmos de ordenação, avaliamos principalmente a **complexidade de tempo** (tempo de execução) e a **complexidade de espaço** (uso de memória).
-
-*   $O(1)$: Tempo constante. Permanece sempre constante, independente da quantidade de dados.
-*   $O(n)$: Tempo linear. Aumenta proporcionalmente à quantidade de dados.
-*   $O(n \log n)$: Tempo linearítmico. É a velocidade teórica máxima em algoritmos de ordenação baseados em comparação.
-*   $O(n^2)$: Tempo quadrático. Quando a quantidade de dados dobra, o tempo quadruplica, sendo inadequado para dados em larga escala.
-
-Foi matematicamente provado que o limite inferior da complexidade de pior caso para algoritmos de ordenação baseados em comparação (métodos que ordenam comparando os tamanhos dos elementos entre si) é $O(n \log n)$.
-
-$$
-\text{Limite inferior da ordenação por comparação} = \Omega(n \log n)
-$$
-
 ---
 
 ## 2. Algoritmos $O(n^2)$: Abordagens Básicas e Intuitivas
@@ -520,7 +467,7 @@ Embora os livros acadêmicos costumem cobrir apenas até o Quick Sort e o Merge 
 
 ### 5.1 Timsort (Padrão no Python)
 
-Timsort é um algoritmo implementado em 2002 por Tim Peters para o Python, e hoje é o campeão do mundo prático; foi adotado pelo `list.sort()` e `sorted()` do Python, e também em diversas linguagens, como no array de objetos do Java e na ordenação padrão do Rust.
+Timsort é um algoritmo implementado em 2002 por Tim Peters para o Python, e hoje é o campeão do mundo prático; foi adotado pelo `list.sort()` e `sorted()` do Python, e também em diversas linguagens, como no array de objetos do Java e na ordenação padrão do [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/).
 
 A principal filosofia de design por trás do Timsort baseia-se na heurística: **"Dados no mundo real raramente são completamente aleatórios e muitas vezes contêm blocos já ordenados de forma crescente ou decrescente"**.
 

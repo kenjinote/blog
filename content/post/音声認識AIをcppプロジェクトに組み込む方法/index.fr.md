@@ -237,7 +237,7 @@ graph LR
 
 ### 6.1 L'importance de la détection d'activité vocale (VAD)
 
-Dans le traitement en temps réel, exécuter constamment des inférences même sur les parties silencieuses est un gaspillage de ressources informatiques. En insérant un algorithme VAD (tel qu'un seuillage basé sur l'énergie simple ou WebRTC VAD) à l'étape précédente, vous pouvez contrôler le flux de sorte que **"la mise en mémoire tampon ne commence que lorsque la parole commence, et que `whisper_full` soit déclenché à la fin de la parole (après une certaine période de silence)."**
+Dans le traitement en temps réel, exécuter constamment des inférences même sur les parties silencieuses est un gaspillage de ressources informatiques. En insérant un algorithme VAD (tel qu'un seuillage basé sur l'énergie simple ou [WebRTC](https://kenji.blog/fr/p/webrtc-realtime-communication-p2p/) VAD) à l'étape précédente, vous pouvez contrôler le flux de sorte que **"la mise en mémoire tampon ne commence que lorsque la parole commence, et que `whisper_full` soit déclenché à la fin de la parole (après une certaine période de silence)."**
 
 ### 6.2 L'approche de la fenêtre glissante
 

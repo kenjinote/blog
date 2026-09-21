@@ -8,7 +8,7 @@ image: "img.webp"
 categories: ["programming"]
 description: '淺顯易懂地解說 Mozilla 開發的程式語言「Rust」的主要特色。介紹其受到青睞的原因，如高速執行、無垃圾回收機制、透過所有權與借用實現記憶體安全性、跨平台支援等。'
 ---
-# Rust 的特徵
+# [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 的特徵
 
 - 由 Mozilla 開發的相對較新的開源程式語言
 - 沒有垃圾回收機制（garbage collection），是一種專為系統編程設計的高速語言

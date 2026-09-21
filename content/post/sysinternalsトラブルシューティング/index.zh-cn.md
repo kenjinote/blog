@@ -153,7 +153,7 @@ flowchart LR
 ## 5. 使用 TCPView 追踪隐藏的网络连接
 
 虽然任务管理器的网络选项卡或 `netstat -ano` 命令也能查看网络通信状态，但它们的刷新较慢，且手动进行进程名与PID的映射十分繁琐。
-TCPView可实时监视所有TCP和UDP端点，并列表显示哪个进程正在与哪个远程地址和端口进行通信。
+TCPView可实时监视所有[TCP](https://kenji.blog/zh-cn/p/http3-quic-protocol-tcp-udp/)和[UDP](https://kenji.blog/zh-cn/p/http3-quic-protocol-tcp-udp/)端点，并列表显示哪个进程正在与哪个远程地址和端口进行通信。
 
 ### 5.1 识别非法的 C2 通信
 当恶意软件植入后门，并向外部的C2（Command and Control）服务器发送Beacon（信标）时，可以在TCPView中寻找以下特征：
@@ -161,7 +161,7 @@ TCPView可实时监视所有TCP和UDP端点，并列表显示哪个进程正在�
 *   **进程名不自然**: 比如 `svchost.exe` 却不是以系统权限而是以用户权限运行，并且对一个陌生的海外IP地址维持着 `ESTABLISHED` 状态的通信。
 *   **通常不通信的进程却在通信**: 例如，计算器（`calc.exe`）或记事本（`notepad.exe`）在 443 或 80 端口收发大量数据包（进程替换的典型征兆）。
 
-发现可疑通信后，可直接在TCPView中发送 `Close Connection` 强制断开TCP会话（发送RST包），或通过 `End Process` 强制终止相关进程。
+发现可疑通信后，可直接在TCPView中发送 `Close Connection` 强制断开[TCP](https://kenji.blog/zh-cn/p/http3-quic-protocol-tcp-udp/)会话（发送RST包），或通过 `End Process` 强制终止相关进程。
 
 ---
 

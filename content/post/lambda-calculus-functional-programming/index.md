@@ -16,7 +16,7 @@ tags:
 
 ## 1. はじめに：[関数型プログラミング](https://kenji.blog/p/oop-vs-fp-vs-dop/)の根底に流れる哲学
 
-現代のソフトウェア開発において、 **関数型プログラミング** （[Functional Programming](https://kenji.blog/p/oop-vs-fp-vs-dop/)）はもはや一部のマニア向けのアプローチではなく、広く普及したパラダイムとなりました。Reactなどのフロントエンド技術から、RustやScala、さらにはJavaやC#といった[オブジェクト指向](https://kenji.blog/p/oop-vs-fp-vs-dop/)言語にまで、関数の第一級オブジェクトとしての扱いや副作用の排除といった概念が取り入れられています。
+現代のソフトウェア開発において、 **関数型プログラミング** （[Functional Programming](https://kenji.blog/p/oop-vs-fp-vs-dop/)）はもはや一部のマニア向けのアプローチではなく、広く普及したパラダイムとなりました。Reactなどのフロントエンド技術から、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)やScala、さらにはJavaやC#といった[オブジェクト指向](https://kenji.blog/p/oop-vs-fp-vs-dop/)言語にまで、関数の第一級オブジェクトとしての扱いや副作用の排除といった概念が取り入れられています。
 
 しかし、このパラダイムの背後には、コンピュータが物理的に誕生する以前の1930年代に構築された深遠な数学的理論が存在します。それが、アロンゾ・チャーチ（Alonzo Church）によって提唱された **ラムダ計算** （ $\lambda$-calculus ）です。
 
@@ -227,6 +227,6 @@ IOモナドによって、「計算」と「副作用を伴う実行」を型シ
 
 1930年代に紙と鉛筆だけでアロンゾ・チャーチが描いた **ラムダ計算** は、決して時代遅れの理論ではありません。それは[チューリングマシン](https://kenji.blog/p/turing-machine-computability/)とは異なる角度から「計算とは何か」を捉え直したものであり、Lispを通じてプログラマブルな世界へと解き放たれました。そして、カリー＝ハワード同型対応という論理学との美しい結びつきを経て、Haskellのような堅牢で強力な型システムを持つ現代の言語へと結実しました。
 
-今日、私たちがReactで `map` や `filter` を使い、Rustで代数的データ型を活用し、Pythonでラムダ式を書くとき、私たちは皆、チャーチの偉大な知的遺産の恩恵を受けているのです。
+今日、私たちがReactで `map` や `filter` を使い、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)で代数的データ型を活用し、Pythonでラムダ式を書くとき、私たちは皆、チャーチの偉大な知的遺産の恩恵を受けているのです。
 
 [関数型プログラミング](https://kenji.blog/p/oop-vs-fp-vs-dop/)は単なるコーディングスタイルではなく、 **計算そのものの本質に迫る数学的哲学** なのです。

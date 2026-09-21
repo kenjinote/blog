@@ -8,7 +8,7 @@ image: "img.webp"
 categories: ["programming"]
 description: 'Menjelaskan dengan mudah fitur-fitur utama dari bahasa pemrograman ''Rust'' yang dikembangkan oleh Mozilla. Kami memperkenalkan alasan mengapa ia dipilih, seperti operasi berkecepatan tinggi, tidak adanya pengumpulan sampah, keamanan memori melalui kepemilikan dan peminjaman, dan dukungan lintas platform.'
 ---
-# Fitur Rust
+# Fitur [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)
 
 - Bahasa pemrograman open source yang relatif baru yang dikembangkan oleh Mozilla
 - Bahasa yang cepat tanpa garbage collection, dikhususkan untuk pemrograman sistem

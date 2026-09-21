@@ -17,7 +17,7 @@ Sometimes when you execute a command by specifying an executable file, you want 
 where <executable_file_name>
 ```
 
-For example, if you want to know the location of Paint (mspaint.exe), you can do it as follows.
+For example, if you want to know the location of [Paint](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/) (mspaint.exe), you can do it as follows.
 
 ```powershell
 where mspaint.exe

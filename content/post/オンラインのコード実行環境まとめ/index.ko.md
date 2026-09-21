@@ -30,7 +30,7 @@ Google Colaboratory(콜라보래토리)란, 온라인상에서 실행 가능한 
 
 Jupyter Notebook을 기반으로 하고 있다.
 
-## Rust
+## [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)
 
 - [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021)
 

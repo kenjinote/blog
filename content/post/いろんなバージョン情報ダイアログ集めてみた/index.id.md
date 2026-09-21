@@ -31,7 +31,7 @@ Ini adalah lingkungan pengembangan yang saya gunakan untuk C++.
 Ini adalah LINE versi Windows.
 ![img_4.png](img_4.webp)
 
-## Paint.NET
+## [Paint](https://kenji.blog/id/p/browser-rendering-mechanism-dom-paint/).NET
 Ini adalah perangkat lunak pengedit gambar.
 ![img_5.png](img_5.webp)
 

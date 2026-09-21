@@ -147,7 +147,7 @@ $$ T_{backup} = \frac{S_{total}}{B \times (1 - \alpha)} + C \times L $$
 ここで、各変数は以下の通りです。
 - $S_{total}$ : バックアップ対象の総データ量 (Bit)
 - $B$ : ネットワークの帯域幅 (bps, 例: 1Gbps = $10^9$ bps)
-- $\alpha$ : ネットワークやプロトコルのオーバーヘッド (通常 TCP/IP や SMB プロトコルで 0.1 ～ 0.2)
+- $\alpha$ : ネットワークやプロトコルのオーバーヘッド (通常 [TCP](https://kenji.blog/p/http3-quic-protocol-tcp-udp/)/IP や SMB プロトコルで 0.1 ～ 0.2)
 - $C$ : ファイルの総数
 - $L$ : ファイル1つあたりの処理レイテンシ (秒)
 

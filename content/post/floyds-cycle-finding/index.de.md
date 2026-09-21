@@ -18,7 +18,7 @@ In der Informatik ist die Erkennung, ob eine Datenstruktur unerwartete "Zyklen" 
 
 Da dieser Algorithmus zwei Zeiger mit unterschiedlichen Geschwindigkeiten (die oft pseudomäßig "Hase" und "Igel" genannt werden) verwendet, ist er auch weithin als **Hase-und-Igel-Algorithmus** (Tortoise and Hare Algorithm) bekannt.
 
-In diesem Artikel werden wir die Funktionsweise dieses Algorithmus, seinen mathematischen Hintergrund sowie konkrete Implementierungsbeispiele in C++ und Rust im Detail erläutern.
+In diesem Artikel werden wir die Funktionsweise dieses Algorithmus, seinen mathematischen Hintergrund sowie konkrete Implementierungsbeispiele in C++ und [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) im Detail erläutern.
 
 ## Was ist Zykluserkennung?
 
@@ -111,7 +111,7 @@ Das heißt: **Wenn man direkt nach der Kollision einen Zeiger an den Start der L
 
 ## Implementierung per Code
 
-Lassen Sie uns nun die obige Theorie in C++ und Rust implementieren.
+Lassen Sie uns nun die obige Theorie in C++ und [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) implementieren.
 
 ### Implementierung in C++
 
@@ -207,7 +207,7 @@ int main() {
 }
 ```
 
-### Implementierung in Rust
+### Implementierung in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)
 
 In Rust wird die Implementierung verketteter Listen aufgrund der Eigentums- und Ausleihregeln (Ownership & Borrowing) tendenziell komplex. Beim wettbewerbsorientierten Programmieren (Competitive Programming) ist es daher üblich, sie als Index-Referenzproblem auf Arrays (oder `Vec`) zu modellieren.
 Hier zeigen wir ein Implementierungsbeispiel unter Verwendung eines Arrays, das den "nächsten Index" anstelle eines "Zeigers auf den nächsten Knoten" speichert.
@@ -332,4 +332,4 @@ In diesem Artikel haben wir **Floyds Algorithmus zur Zykluserkennung** (Hase-und
 Trotz der einfachen Idee, zwei Zeiger mit unterschiedlichen Geschwindigkeiten laufen zu lassen, ist dies eine elegante Methode, die die Erkennung von Zyklen und die Identifizierung ihres Startpunkts in $O(N)$-Zeit und $O(1)$-Speicherplatz ermöglicht.
 Durch das Verständnis der mathematischen Hintergründe dürfte deutlich geworden sein, warum man den Startpunkt finden kann, indem man nach der Kollision einen Zeiger an den Anfang zurücksetzt und beide mit derselben Geschwindigkeit fortbewegt.
 
-Bei der Implementierung von Datenstrukturen und beim wettbewerbsorientierten Programmieren ist dieser Algorithmus ein äußerst mächtiges Werkzeug. Bitte probieren Sie ihn aus und implementieren Sie ihn selbst in C++ oder Rust.
+Bei der Implementierung von Datenstrukturen und beim wettbewerbsorientierten Programmieren ist dieser Algorithmus ein äußerst mächtiges Werkzeug. Bitte probieren Sie ihn aus und implementieren Sie ihn selbst in C++ oder [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/).

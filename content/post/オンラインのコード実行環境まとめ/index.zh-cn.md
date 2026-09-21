@@ -20,7 +20,7 @@ Google Colaboratory 是一个可以在线执行 Python 的环境。
 
 基于 Jupyter Notebook。
 
-## Rust
+## [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)
 
 - [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021)
 

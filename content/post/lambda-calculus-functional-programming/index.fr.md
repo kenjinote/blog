@@ -16,7 +16,7 @@ tags:
 
 ## 1. Introduction : La philosophie sous-jacente à la programmation fonctionnelle
 
-Dans le développement logiciel moderne, la **programmation fonctionnelle** ([Functional Programming](https://kenji.blog/fr/p/oop-vs-fp-vs-dop/)) n'est plus une approche réservée à quelques passionnés, mais un paradigme largement répandu. Des technologies front-end comme React aux langages orientés objet tels que Java et C#, en passant par Rust et Scala, des concepts tels que le traitement des fonctions comme des objets de première classe et l'élimination des effets de bord ont été adoptés.
+Dans le développement logiciel moderne, la **programmation fonctionnelle** ([Functional Programming](https://kenji.blog/fr/p/oop-vs-fp-vs-dop/)) n'est plus une approche réservée à quelques passionnés, mais un paradigme largement répandu. Des technologies front-end comme React aux langages orientés objet tels que Java et C#, en passant par [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) et Scala, des concepts tels que le traitement des fonctions comme des objets de première classe et l'élimination des effets de bord ont été adoptés.
 
 Cependant, derrière ce paradigme se cache une théorie mathématique profonde élaborée dans les années 1930, bien avant la naissance physique des ordinateurs. Il s'agit du **lambda-calcul** ( $\lambda$-calculus ) proposé par Alonzo Church.
 
@@ -227,6 +227,6 @@ Avec la monade IO, Haskell a réussi à séparer complètement le « calcul » d
 
 Le **lambda-calcul**, dessiné par Alonzo Church avec seulement du papier et un crayon dans les années 1930, n'est en aucun cas une théorie obsolète. Il a redéfini « ce qu'est le calcul » sous un angle différent de celui de la machine de Turing, et a été libéré dans le monde programmable par l'intermédiaire de Lisp. Puis, grâce à la belle connexion avec la logique qu'est la correspondance de Curry-Howard, il s'est concrétisé dans des langages modernes dotés de systèmes de types robustes et puissants comme Haskell.
 
-Aujourd'hui, lorsque nous utilisons `map` ou `filter` dans React, que nous tirons parti des types de données algébriques dans Rust, ou que nous écrivons des expressions lambda en Python, nous bénéficions tous du grand héritage intellectuel de Church.
+Aujourd'hui, lorsque nous utilisons `map` ou `filter` dans React, que nous tirons parti des types de données algébriques dans [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/), ou que nous écrivons des expressions lambda en Python, nous bénéficions tous du grand héritage intellectuel de Church.
 
 La programmation fonctionnelle n'est pas seulement un style de codage, mais une **philosophie mathématique qui touche à l'essence même du calcul**.

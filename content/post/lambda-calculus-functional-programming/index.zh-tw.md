@@ -16,7 +16,7 @@ tags:
 
 ## 1. 簡介：流淌在函數式編程根基的哲學
 
-在現代軟體開發中， **函數式編程** （[Functional Programming](https://kenji.blog/zh-tw/p/oop-vs-fp-vs-dop/)）早已不再是少數狂熱者的方法，而是成為了廣泛普及的範式。從React等前端技術，到Rust、Scala，甚至Java與C#等物件導向語言，都引入了將函數視為一等公民（第一級物件）的處理方式以及消除副作用等概念。
+在現代軟體開發中， **函數式編程** （[Functional Programming](https://kenji.blog/zh-tw/p/oop-vs-fp-vs-dop/)）早已不再是少數狂熱者的方法，而是成為了廣泛普及的範式。從React等前端技術，到[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)、Scala，甚至Java與C#等物件導向語言，都引入了將函數視為一等公民（第一級物件）的處理方式以及消除副作用等概念。
 
 然而，在這個範式的背後，存在著在電腦實體誕生之前的1930年代所建構的深奧數學理論。那就是由阿隆佐·邱奇（Alonzo Church）所提出的 **Lambda演算** （ $\lambda$-calculus ）。
 
@@ -227,6 +227,6 @@ firstTenEvens = take 10 (map (*2) naturals)
 
 阿隆佐·邱奇在1930年代僅憑紙筆描繪的 **Lambda演算** ，絕不是過時的理論。它從與圖靈機不同的角度重新審視了「計算是什麼」，並透過Lisp被釋放到可程式化的世界。然後，經過與邏輯學完美結合的柯里-霍華德同構，最終結出了如Haskell這樣具備堅固且強大型別系統的現代語言之果實。
 
-今天，當我們在React中使用 `map` 或 `filter` ，在Rust中活用代數資料型別，或是在Python中撰寫Lambda表達式時，我們都受惠於邱奇偉大的智慧遺產。
+今天，當我們在React中使用 `map` 或 `filter` ，在[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)中活用代數資料型別，或是在Python中撰寫Lambda表達式時，我們都受惠於邱奇偉大的智慧遺產。
 
 函數式編程不僅僅是一種編碼風格，更是 **直逼計算本身本質的數學哲學** 。

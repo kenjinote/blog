@@ -127,7 +127,7 @@ winrt::fire_and_forget MainWindow::OnRunSimulationClicked(
 
 ### 4.2. 完全實作自訂標題列
 
-在 Windows 11 時代的應用程式中，將索引標籤或搜尋方塊配置在視窗標題列 (Caption 區域) 的「自訂標題列」，是現代 UX 的必備要求。然而，在 WinUI 3 中自訂標題列，如果只是改變顏色那很簡單，但如果要滿足「將用戶端區域擴展至標題列，同時維持視窗的拖曳移動和 Snap Layouts (將視窗靠向螢幕邊緣時的自動調整大小)」這項要求，難度就會瞬間飆升。
+在 Windows 11 時代的應用程式中，將索引標籤或搜尋方塊配置在視窗標題列 (Caption 區域) 的「自訂標題列」，是現代 UX 的必備要求。然而，在 WinUI 3 中自訂標題列，如果只是改變顏色那很簡單，但如果要滿足「將用戶端區域擴展至標題列，同時維持視窗的拖曳移動和 Snap [Layout](https://kenji.blog/zh-tw/p/browser-rendering-mechanism-dom-paint/)s (將視窗靠向螢幕邊緣時的自動調整大小)」這項要求，難度就會瞬間飆升。
 
 在 LogicPad 中，我使用了 `ExtendsContentIntoTitleBar` API，以自家的 XAML 元素建構了標題列。以下程式碼是利用 Windows App SDK 的 `AppWindow` 類別來自訂標題列的步驟。
 

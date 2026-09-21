@@ -8,7 +8,7 @@ image: "images/img.webp"
 categories: ["programming"]
 description: 'Stellt als Lernmaterial für die Rust-Programmierung ein Implementierungsbeispiel eines einfachen Algorithmus vor, der Primzahlen bis zu einer angegebenen Obergrenze aufzählt. Erklärt leicht verständlich grundlegende Codierungsmethoden mit Schleifen und bedingten Verzweigungen zusammen mit konkretem Beispielcode.'
 ---
-Ich habe ein Programm geschrieben, um Primzahlen in Rust aufzuzählen.
+Ich habe ein Programm geschrieben, um Primzahlen in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) aufzuzählen.
 
 ```rust
 fn main() {

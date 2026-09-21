@@ -35,6 +35,6 @@ description: 'نشرح كيفية تثبيت التطبيقات من سطر ال
 [استخدام أداة winget لتثبيت التطبيقات وإدارتها](https://learn.microsoft.com/ja-jp/windows/package-manager/winget/)
 
 ### ملاحظة جانبية
-اعتقدت أنه يمكنني تثبيت Paint.Net أيضًا، لكن لم أتمكن من ذلك.
+اعتقدت أنه يمكنني تثبيت [Paint](https://kenji.blog/ar/p/browser-rendering-mechanism-dom-paint/).Net أيضًا، لكن لم أتمكن من ذلك.
 
 https://forums.getpaint.net/topic/118574-please-add-paintnet-to-the-available-packages-for-windows-package-manager-winget/

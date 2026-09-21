@@ -22,7 +22,7 @@ This article summarizes the "aftermath" of the mandatory programming education i
 
 The de facto standard in elementary school programming education is visual programming languages (block programming), represented by "Scratch" developed by the MIT Media Lab. The fact that it allows beginners to visually and intuitively learn the three basic algorithmic control structures—sequence, selection, and iteration—by combining puzzle-like blocks using an intuitive graphical interface makes it a great invention that deserves high praise as introductory education.
 
-However, there is a major pitfall here, which can be called the "trap of abstraction." That is the cruel reality that "transitioning from visual programming to a full-fledged text-based programming language (Python, JavaScript, C++, Rust, etc.) is extremely difficult, and many learners drop out at this stage."
+However, there is a major pitfall here, which can be called the "trap of abstraction." That is the cruel reality that "transitioning from visual programming to a full-fledged text-based programming language (Python, JavaScript, C++, [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/), etc.) is extremely difficult, and many learners drop out at this stage."
 
 ### The Wall of Abstraction and the Black-Boxing of Computer Science
 
@@ -49,7 +49,7 @@ flowchart TD
     class J success;
 ```
 
-As is evident from this flowchart, merely accumulating the experience of "writing code to move characters on a screen" will not cultivate true software engineers who can design scalable distributed system architectures and optimize performance down to the millisecond. Between the task of assembling colorful Scratch blocks with a mouse and reading the C source code of the Linux kernel to trace the behavior of the TCP/IP stack, there lies an absolute conceptual disconnect that cannot be dismissed simply as "a difference in the language used."
+As is evident from this flowchart, merely accumulating the experience of "writing code to move characters on a screen" will not cultivate true software engineers who can design scalable distributed system architectures and optimize performance down to the millisecond. Between the task of assembling colorful Scratch blocks with a mouse and reading the C source code of the Linux kernel to trace the behavior of the [TCP](https://kenji.blog/en/p/http3-quic-protocol-tcp-udp/)/IP stack, there lies an absolute conceptual disconnect that cannot be dismissed simply as "a difference in the language used."
 
 ## 3. The Limits of Coding Without "Mathematics" and "Discrete Logic": An Approach from Computational Complexity Theory
 
@@ -247,7 +247,7 @@ Professionals who can translate such advanced mathematical formulas into code, a
 
 There is no doubt that making programming education mandatory in the 2020s was a solid step forward in terms of making Japanese society as a whole widely recognize the "importance of IT and information." However, it is merely "warm-up exercises" in a long journey.
 
-We must step beyond the fun of moving a cat character in Scratch, move students with the mathematical beauty of an $O(N \log N)$ algorithm, and teach them the excitement of conversing with servers around the world via TCP packets from a black terminal screen. We must rebuild new educational infrastructures to overcome the hardware constraints of the GIGA School Concept, train and deploy instructors with advanced CS expertise, and sometimes boldly involve external professional engineers in school education.
+We must step beyond the fun of moving a cat character in Scratch, move students with the mathematical beauty of an $O(N \log N)$ algorithm, and teach them the excitement of conversing with servers around the world via [TCP](https://kenji.blog/en/p/http3-quic-protocol-tcp-udp/) packets from a black terminal screen. We must rebuild new educational infrastructures to overcome the hardware constraints of the GIGA School Concept, train and deploy instructors with advanced CS expertise, and sometimes boldly involve external professional engineers in school education.
 
 The challenges facing Japan's IT education are extremely deep, persistent, and complex. However, if we do not avert our eyes from these issues, and if industry, academia, and government work together in earnest to build an ecosystem that continuously produces not just "laborers who can write code according to specifications," but "genuine engineers who can design and create systems from scratch," Japan will once again be able to lead the world as a true IT nation.
 

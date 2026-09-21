@@ -256,7 +256,7 @@ Die Verteidigungsmaßnahmen des Bitcoin-Netzwerks dagegen sind wie folgt:
 1. **Schutz durch Hash-Funktionen**: Eine Bitcoin-Adresse ist nicht der öffentliche Schlüssel selbst, sondern das Ergebnis der Anwendung der Hash-Funktionen SHA-256 und RIPEMD-160 auf den öffentlichen Schlüssel. Selbst mit Quantencomputern bleibt die Rückrechnung einer Hash-Funktion (sogar mit Grovers Algorithmus beträgt die Komplexität $\mathcal{O}(\sqrt{N})$) schwierig. Daher gilt der Inhalt einer Adresse als quantensicher, bis eine Transaktion durchgeführt und der öffentliche Schlüssel dem Netzwerk offengelegt wird.
 2. **Übergang zur Post-Quanten-Kryptografie (Post-Quantum Cryptography: PQC)**: Es wird diskutiert, das Bitcoin-Protokoll vor der praktischen Anwendung von Quantencomputern zu "hard forken" und zu neuen Signaturalgorithmen überzugehen, die selbst für Quantencomputer schwer zu knacken sind, wie z.B. gitterbasierte Kryptografie (Lattice-based cryptography) oder multivariate polynomische Kryptografie (Multivariate polynomial cryptography), die vom NIST (National Institute of Standards and Technology) ausgewählt werden.
 
-## 9. Netzwerk-Topologie und Details des P2P-Protokolls
+## 9. Netzwerk-Topologie und Details des [P2P](https://kenji.blog/de/p/webrtc-realtime-communication-p2p/)-Protokolls
 
 Das Bitcoin-Netzwerk ist nicht nur eine Ansammlung von Servern und Clients, sondern als vollständig **Peer-to-Peer (P2P)** Netzwerk aufgebaut.
 

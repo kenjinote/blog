@@ -317,7 +317,7 @@ Tersedia ratusan jenis tema (config), dan juga memungkinkan untuk membuatnya sen
 
 WSL2 (Windows Subsystem for Linux 2), yang dapat menjalankan kernel Linux asli di Windows, sangat diperlukan untuk pengembangan web modern atau pengembangan cloud-native. Untuk mengustomisasi prompt shell (Bash atau Zsh) di dalam WSL, "**Starship**" adalah solusi terbaik.
 
-Starship adalah prompt lintas shell yang ditulis dalam bahasa Rust, yang sangat cepat dan sangat dapat dikustomisasi. Kelebihannya adalah dapat mereproduksi prompt yang sama persis di shell apa pun seperti Bash, Zsh, atau Fish hanya dengan menulis satu file konfigurasi (TOML).
+Starship adalah prompt lintas shell yang ditulis dalam bahasa [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), yang sangat cepat dan sangat dapat dikustomisasi. Kelebihannya adalah dapat mereproduksi prompt yang sama persis di shell apa pun seperti Bash, Zsh, atau Fish hanya dengan menulis satu file konfigurasi (TOML).
 
 ## 7.1 Instalasi Starship
 

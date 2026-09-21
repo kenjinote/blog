@@ -180,7 +180,7 @@ Zettelkasten 主要有三種筆記：
 2. **Literature Notes（文獻筆記）** ：閱讀文章或書籍後，用自己的話語總結的內容。
 3. **Permanent Notes（永久筆記）** ：針對一個主題寫下完整考察的筆記。這些將直接成為部落格文章的種子。
 
-透過使用 Obsidian 的反向連結功能（`[[筆記名稱]]`），例如可以將「Rust 的所有權」與「垃圾回收 ([Garbage Collection](https://kenji.blog/zh-tw/p/memory-management-garbage-collection/)) 的歷史」這兩篇筆記連結起來，進而發現出乎意料的點子關聯。
+透過使用 Obsidian 的反向連結功能（`[[筆記名稱]]`），例如可以將「[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 的所有權」與「垃圾回收 ([Garbage Collection](https://kenji.blog/zh-tw/p/memory-management-garbage-collection/)) 的歷史」這兩篇筆記連結起來，進而發現出乎意料的點子關聯。
 
 ## 5. 利用向量資料庫（Pinecone）與 OpenAI Embeddings 進行語意搜尋
 
@@ -284,7 +284,7 @@ if __name__ == "__main__":
     search_similar_ideas(idx, "WebAssemblyを利用したブラウザ上での機械学習推論の高速化")
 ```
 
-透過這個系統，當遇到「我想寫這週在 Hacker News 上引起話題的『WebAssembly』，但我過去有沒有寫過相關筆記？」的疑問時，AI 就會瞬間挑選出語意相關的過去永久筆記。如此一來，就能充分活用過去的自我知識資產，構築出具有深度的文章架構。
+透過這個系統，當遇到「我想寫這週在 Hacker News 上引起話題的『[WebAssembly](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)』，但我過去有沒有寫過相關筆記？」的疑問時，AI 就會瞬間挑選出語意相關的過去永久筆記。如此一來，就能充分活用過去的自我知識資產，構築出具有深度的文章架構。
 
 ## 6. 活用艾賓浩斯遺忘曲線與 Anki 的間隔重複
 

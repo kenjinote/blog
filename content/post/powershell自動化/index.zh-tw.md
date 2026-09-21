@@ -147,7 +147,7 @@ $$ T_{backup} = \frac{S_{total}}{B \times (1 - \alpha)} + C \times L $$
 其中，各變數的意義如下：
 - $S_{total}$ : 備份目標的總資料量 (Bit)
 - $B$ : 網路頻寬 (bps，例：1Gbps = $10^9$ bps)
-- $\alpha$ : 網路或通訊協定的額外負載（通常 TCP/IP 或 SMB 通訊協定為 0.1 ～ 0.2）
+- $\alpha$ : 網路或通訊協定的額外負載（通常 [TCP](https://kenji.blog/zh-tw/p/http3-quic-protocol-tcp-udp/)/IP 或 SMB 通訊協定為 0.1 ～ 0.2）
 - $C$ : 檔案總數
 - $L$ : 每個檔案的處理延遲 (秒)
 

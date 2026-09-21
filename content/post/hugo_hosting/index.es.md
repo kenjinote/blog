@@ -50,7 +50,7 @@ GitHub Pages es un servicio que permite publicar archivos HTML, CSS y JavaScript
 
 ### 2.3 Cloudflare Pages
 Cloudflare Pages es un servicio de alojamiento de sitios estáticos construido sobre la red Anycast a nivel mundial de la que Cloudflare se enorgullece (desplegada en más de 275 ciudades).
-Permite un ajuste de rendimiento abrumador, incluyendo soporte estándar para HTTP/3 (QUIC), optimización de imágenes y la integración de funciones edge (Cloudflare Workers). Además, una gran ventaja es que no hay cargos por ancho de banda, por lo que se puede operar de forma gratuita sin importar cuánto aumente el tráfico.
+Permite un ajuste de rendimiento abrumador, incluyendo soporte estándar para [HTTP/3](https://kenji.blog/es/p/http3-quic-protocol-tcp-udp/) ([QUIC](https://kenji.blog/es/p/http3-quic-protocol-tcp-udp/)), optimización de imágenes y la integración de funciones edge (Cloudflare Workers). Además, una gran ventaja es que no hay cargos por ancho de banda, por lo que se puede operar de forma gratuita sin importar cuánto aumente el tráfico.
 
 ### 2.4 Netlify
 Netlify es un pionero de Jamstack y proporciona un DX todo en uno que integra funciones de formularios, autenticación (Identity), funciones serverless, etc. Sin embargo, una vez que se supera el ancho de banda del nivel gratuito (100 GB por mes), se incurren en altos cargos por uso, por lo que se requiere cuidado con la gestión de costos en blogs que utilizan muchas imágenes o videos.
@@ -240,7 +240,7 @@ Su implementación en Hugo también es muy sencilla. Simplemente añade el fragm
 {{ end }}
 ```
 
-Al agregar el atributo `defer`, el script se puede cargar de forma asíncrona sin bloquear el análisis de HTML y ejecutarse después de que se construya el DOM. Esto minimiza el impacto en la velocidad de visualización inicial (LCP: Largest Contentful Paint y FCP: First Contentful Paint).
+Al agregar el atributo `defer`, el script se puede cargar de forma asíncrona sin bloquear el análisis de HTML y ejecutarse después de que se construya el DOM. Esto minimiza el impacto en la velocidad de visualización inicial (LCP: Largest Contentful [Paint](https://kenji.blog/es/p/browser-rendering-mechanism-dom-paint/) y FCP: First Contentful Paint).
 
 ---
 

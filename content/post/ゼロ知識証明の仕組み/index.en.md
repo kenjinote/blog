@@ -205,7 +205,7 @@ While ZKPs are undoubtedly a next-generation foundational technology, several ch
 1. **Proof Generation Computational Costs and Hardware Acceleration**
    Generating a ZKP requires massive polynomial operations, FFT (Fast Fourier Transform), and MSM (Multi-Scalar Multiplication). Currently, research into dedicated hardware (FPGAs and ASICs) to accelerate this proof generation, known as **ZKP Mining** (Prover Networks), is rapidly advancing.
 2. **Standardization and Improvement of Developer Experience (DX)**
-   Dedicated languages for writing ZKP circuits, such as Circom, Cairo, Noir, and Leo, are proliferating. A standard unifying these and the maturation of compilers that automatically generate ZKP circuits from existing languages like Rust and C++ will be key to general software engineers adopting ZKPs.
+   Dedicated languages for writing ZKP circuits, such as Circom, Cairo, Noir, and Leo, are proliferating. A standard unifying these and the maturation of compilers that automatically generate ZKP circuits from existing languages like [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) and C++ will be key to general software engineers adopting ZKPs.
 
 ## Conclusion
 

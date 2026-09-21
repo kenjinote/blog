@@ -9,7 +9,7 @@ categories: ["programming"]
 description: 'Présente comment utiliser `winapi` en Rust pour créer et afficher une fenêtre simple sous Windows. De la configuration de Cargo.toml à l''implémentation de la procédure de fenêtre, explique en détail le code source qui forme la base de la programmation d''interface graphique.'
 ---
 
-Afficher une fenêtre simple en Rust
+Afficher une fenêtre simple en [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/)
 
 ```Cargo.toml
 [package]

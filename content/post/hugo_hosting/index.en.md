@@ -49,7 +49,7 @@ graph TD
 GitHub Pages is a service that allows you to publish HTML, CSS, and JavaScript files directly from a GitHub repository. CDNs like Fastly are used behind the scenes, delivering sufficient performance. However, there are constraints on header customization (e.g., setting `Cache-Control` or security headers), and redirect settings rely on HTML meta refresh or Jekyll plugins, making its functions as pure infrastructure somewhat modest.
 
 ### 2.3 Cloudflare Pages
-Cloudflare Pages is a static site hosting service built on top of Cloudflare's world-class Anycast network (deployed in over 275 cities). It enables overwhelming performance tuning, including standard support for HTTP/3 (QUIC), image optimization, and integration with edge functions (Cloudflare Workers). Additionally, a major benefit is that there are no bandwidth charges, so it can be operated for free no matter how much traffic spikes.
+Cloudflare Pages is a static site hosting service built on top of Cloudflare's world-class Anycast network (deployed in over 275 cities). It enables overwhelming performance tuning, including standard support for [HTTP/3](https://kenji.blog/en/p/http3-quic-protocol-tcp-udp/) ([QUIC](https://kenji.blog/en/p/http3-quic-protocol-tcp-udp/)), image optimization, and integration with edge functions (Cloudflare Workers). Additionally, a major benefit is that there are no bandwidth charges, so it can be operated for free no matter how much traffic spikes.
 
 ### 2.4 Netlify
 Netlify is a pioneer of Jamstack, offering an all-in-one DX that integrates form features, authentication (Identity), serverless functions, and more. However, exceeding the free tier bandwidth (100GB per month) incurs expensive pay-as-you-go billing, so careful cost management is necessary for blogs that heavily use images and videos.
@@ -239,7 +239,7 @@ Implementation in Hugo is also very simple. Just add the provided snippet to `la
 {{ end }}
 ```
 
-Adding the `defer` attribute allows the script to load asynchronously without blocking HTML parsing, letting it run after the DOM is built. This minimizes its impact on initial display speed (LCP: Largest Contentful Paint and FCP: First Contentful Paint).
+Adding the `defer` attribute allows the script to load asynchronously without blocking HTML parsing, letting it run after the DOM is built. This minimizes its impact on initial display speed (LCP: Largest Contentful [Paint](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/) and FCP: First Contentful Paint).
 
 ---
 

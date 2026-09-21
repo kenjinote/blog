@@ -30,7 +30,7 @@ tags:
 
 ## 3. GoF पैटर्नों का आधुनिक पुनर्मूल्यांकन और विकल्प
 
-यहाँ, हम कुछ प्रमुख GoF पैटर्नों पर नज़र डालेंगे और देखेंगे कि उन्हें आधुनिक भाषाओं (TypeScript, Kotlin, Rust आदि) में कैसे प्रतिस्थापित (replace) किया गया है।
+यहाँ, हम कुछ प्रमुख GoF पैटर्नों पर नज़र डालेंगे और देखेंगे कि उन्हें आधुनिक भाषाओं (TypeScript, Kotlin, [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) आदि) में कैसे प्रतिस्थापित (replace) किया गया है।
 
 ### 3.1. Strategy पैटर्न: प्रथम-श्रेणी फ़ंक्शंस द्वारा उन्मूलन
 
@@ -133,7 +133,7 @@ coroutineScope.launch {
 
 `Visitor` पैटर्न डेटा संरचनाओं और उन पर संचालन को अलग करने के लिए एक पैटर्न है, लेकिन इसमें यह समस्या थी कि इसका कार्यान्वयन बहुत जटिल था और यह सहज (intuitive) नहीं था (डबल डिस्पैच की आवश्यकता थी)।
 
-आजकल, **अलजेब्रिक डेटा प्रकार (ADT)** और **पैटर्न मैचिंग** वाली भाषाओं (Rust, Kotlin, Swift, Scala, आदि) का उपयोग करके इस समस्या को बहुत अच्छे से हल किया जा सकता है।
+आजकल, **अलजेब्रिक डेटा प्रकार (ADT)** और **पैटर्न मैचिंग** वाली भाषाओं ([Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/), Kotlin, Swift, Scala, आदि) का उपयोग करके इस समस्या को बहुत अच्छे से हल किया जा सकता है।
 
 **आधुनिक दृष्टिकोण (Rust के Enums और पैटर्न मैचिंग)**
 
@@ -191,7 +191,7 @@ $$
 bind: M[A] \times (A \rightarrow M[B]) \rightarrow M[B]
 $$
 
-**Rust में Result प्रकार (Either मोनाड का अनुप्रयोग)**
+**[Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) में Result प्रकार (Either मोनाड का अनुप्रयोग)**
 
 ```rust
 fn divide(numerator: f64, denominator: f64) -> Result<f64, String> {

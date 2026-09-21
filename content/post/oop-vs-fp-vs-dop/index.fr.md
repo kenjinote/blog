@@ -10,7 +10,7 @@ tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]
 
 L'histoire de l'évolution des langages de programmation est aussi l'histoire de la lutte contre la complexité. À mesure que les logiciels deviennent plus vastes, ils se heurtent aux murs de la gestion de l'état, des performances et de la maintenabilité, et divers **paradigmes de programmation** ont été proposés pour les surmonter.
 
-Dans cet article, nous approfondirons les philosophies, les forces et les **limites** de la **programmation orientée objet** (POO) dominante dans le développement de logiciels modernes, de la **programmation fonctionnelle** (PF) avec sa robustesse mathématique, et de la **programmation orientée données** (POD / DOD) axée sur les performances et la séparation des données. De plus, nous expliquerons comment les langages puissants modernes (tels que Rust et TypeScript) **fusionnent** ces approches.
+Dans cet article, nous approfondirons les philosophies, les forces et les **limites** de la **programmation orientée objet** (POO) dominante dans le développement de logiciels modernes, de la **programmation fonctionnelle** (PF) avec sa robustesse mathématique, et de la **programmation orientée données** (POD / DOD) axée sur les performances et la séparation des données. De plus, nous expliquerons comment les langages puissants modernes (tels que [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) et TypeScript) **fusionnent** ces approches.
 
 ---
 
@@ -136,7 +136,7 @@ L'allocation de mémoire pour maintenir l'immuabilité (charge sur le ramasse-mi
 
 ## 3. Retour à la programmation orientée données (POD/DOD)
 
-La **conception orientée données** (Data-Oriented Design) ou **programmation orientée données** est un paradigme né sur le terrain du développement de jeux (en particulier C++ et Rust), et qui s'est ensuite propagé au domaine des entreprises (comme la philosophie de Clojure).
+La **conception orientée données** (Data-Oriented Design) ou **programmation orientée données** est un paradigme né sur le terrain du développement de jeux (en particulier C++ et [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/)), et qui s'est ensuite propagé au domaine des entreprises (comme la philosophie de Clojure).
 
 ### 3.1 Concepts fondamentaux de la POD
 
@@ -200,7 +200,7 @@ Chaque paradigme a ses propres forces et faiblesses claires.
 
 ## 5. La solution optimale moderne : La « fusion » des paradigmes
 
-Aujourd'hui, il est considéré comme absurde de choisir une « seule bonne réponse » parmi ces derniers. Les langages de programmation modernes (Rust, TypeScript, Scala, Go, etc.) **prennent le meilleur** de ces paradigmes.
+Aujourd'hui, il est considéré comme absurde de choisir une « seule bonne réponse » parmi ces derniers. Les langages de programmation modernes ([Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/), TypeScript, Scala, Go, etc.) **prennent le meilleur** de ces paradigmes.
 
 ### 5.1 Rust démontre la fusion ultime
 

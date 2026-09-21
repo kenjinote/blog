@@ -162,7 +162,7 @@ Contracts를 이용함으로써 API의 명세가 스스로 문서화될 뿐만 �
 
 C++17에서 `std::variant` 나 `std::any` 가 도입된 이래, 여러 타입을 유지하는 변수의 디스패치에는 `std::visit` 이 사용되어 왔습니다. 그러나 `std::visit` 과 오버로드 패턴의 조합(이른바 `overloaded` 구조체 핵)은 매우 장황하고 가독성이 낮았습니다.
 
-C++26에서는 **패턴 매칭(Pattern Matching)** 이 언어 기능으로 내장되었습니다(P2688 준수). 이로써 함수형 언어(Rust나 Haskell 등)에 가까운 직관적인 매칭이 가능해집니다.
+C++26에서는 **패턴 매칭(Pattern Matching)** 이 언어 기능으로 내장되었습니다(P2688 준수). 이로써 함수형 언어([Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)나 Haskell 등)에 가까운 직관적인 매칭이 가능해집니다.
 
 ## 3.1 C++23까지의 `std::visit`의 고뇌
 

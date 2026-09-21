@@ -28,7 +28,7 @@ description: 'अभाज्य संख्याओं को कुशलत
 ![](Animation_Sieb_des_Eratosthenes.gif)
 
 
-## Rust में कार्यान्वयन
+## [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) में कार्यान्वयन
 
 ```
 fn main() {

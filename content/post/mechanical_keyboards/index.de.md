@@ -112,7 +112,7 @@ Wenn die Hardware der "Körper" ist, dann ist die Firmware das "Gehirn" der Tast
 
 Unter den von QMK gebotenen Funktionen sind es insbesondere die folgenden, die die Produktivität von Ingenieuren explosionsartig steigern:
 
-- **Ebenenfunktionen (Layers):** Ähnlich wie man auf einer Smartphone-Tastatur zwischen "Buchstaben" und "Zahlen" wechselt, wird das Layout der gesamten Tastatur umgeschaltet, solange eine bestimmte Taste (wie die Fn-Taste) gedrückt gehalten wird. Dies ermöglicht die Eingabe von Pfeiltasten, Makros oder Symbolen, ohne die Hände aus der Grundstellung (Home Position) bewegen zu müssen.
+- **Ebenenfunktionen (Layers):** Ähnlich wie man auf einer Smartphone-Tastatur zwischen "Buchstaben" und "Zahlen" wechselt, wird das [Layout](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/) der gesamten Tastatur umgeschaltet, solange eine bestimmte Taste (wie die Fn-Taste) gedrückt gehalten wird. Dies ermöglicht die Eingabe von Pfeiltasten, Makros oder Symbolen, ohne die Hände aus der Grundstellung (Home Position) bewegen zu müssen.
 - **Mod-Tap:** Einer einzelnen Taste werden unterschiedliche Funktionen zugewiesen, je nachdem, ob sie "kurz angetippt" oder "lang gedrückt gehalten" wird. Wenn man beispielsweise die Leertaste auf "Tippen für Space, Halten für Shift" (Space Cadet Shift) einstellt, kann der Daumen effektiver genutzt werden.
 - **Home Row Mods:** Eine Methode, bei der den Tasten in der Grundstellung (ASDF, JKL; usw.) beim Gedrückthalten Modifikatoren (Ctrl, Shift, Alt, GUI) zugewiesen werden. Dadurch entfällt die Notwendigkeit, den kleinen Finger zu überlasten, um nach der Ctrl-Taste zu greifen, was die Belastung der Handgelenke von Vim- und Emacs-Nutzern drastisch reduziert.
 
@@ -132,7 +132,7 @@ pie title Bevorzugte Tastaturlayouts von Ingenieuren (Geschätzte Daten)
     "Column Staggered (Geteilt)" : 30
 ```
 
-Zu den Layouts, die mehr auf Ergonomie (Ergonomics) ausgelegt sind, gehören die folgenden:
+Zu den [Layout](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/)s, die mehr auf Ergonomie (Ergonomics) ausgelegt sind, gehören die folgenden:
 
 - **Ortholinear:** Ein Layout, bei dem die Tasten in einem vollkommen geraden, vertikalen und horizontalen Gitter angeordnet sind. Die Beugung und Streckung der Finger erfolgt geradlinig, wodurch unnötige Fingerbewegungen reduziert werden.
 - **Column Staggered:** Ein Layout, bei dem die vertikalen Spalten (Columns) entsprechend der Länge der menschlichen Finger (Mittelfinger ist lang, kleiner Finger ist kurz) versetzt sind. Dies ermöglicht das Tippen in einer natürlichen Handhaltung.

@@ -180,7 +180,7 @@ There are primarily 3 types of notes in Zettelkasten:
 2. **Literature Notes**: Summaries in your own words of articles or books you've read.
 3. **Permanent Notes**: Completed thoughts written on a single topic. These become the direct seeds for blog articles.
 
-By using Obsidian's backlink feature (`[[Note Name]]`), you can link a note like "Rust's Ownership" with a note like "History of [Garbage Collection](https://kenji.blog/en/p/memory-management-garbage-collection/)", for example, allowing you to discover unexpected connections between ideas.
+By using Obsidian's backlink feature (`[[Note Name]]`), you can link a note like "[Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)'s Ownership" with a note like "History of [Garbage Collection](https://kenji.blog/en/p/memory-management-garbage-collection/)", for example, allowing you to discover unexpected connections between ideas.
 
 ## 5. Semantic Search Using Vector Database (Pinecone) and OpenAI Embeddings
 
@@ -284,7 +284,7 @@ if __name__ == "__main__":
     search_similar_ideas(idx, "Speeding up machine learning inference in browsers using WebAssembly")
 ```
 
-Using this system, if you wonder "I want to write about 'WebAssembly' which was trending on Hacker News this week, but have I written any related notes in the past?", the AI will instantly pick up semantically related past Permanent Notes. This enables a deep article structure that fully utilizes your past knowledge assets.
+Using this system, if you wonder "I want to write about '[WebAssembly](https://kenji.blog/en/p/webassembly-wasm-current-future/)' which was trending on Hacker News this week, but have I written any related notes in the past?", the AI will instantly pick up semantically related past Permanent Notes. This enables a deep article structure that fully utilizes your past knowledge assets.
 
 ## 6. Ebbinghaus's Forgetting Curve and Spaced Repetition Utilizing Anki
 

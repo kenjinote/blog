@@ -180,7 +180,7 @@ Zettelkasten 主要包含三种类型的笔记：
 2. **Literature Notes（文献笔记）**: 阅读文章或书籍后，用自己的话进行总结的笔记。
 3. **Permanent Notes（永久笔记）**: 针对某个话题编写的完整思考。这些是博客文章最直接的种子。
 
-通过使用 Obsidian 的反向链接功能（`[[笔记名称]]`），你可以例如将名为“Rust 的所有权”的笔记和“垃圾回收的历史”的笔记链接起来，从而发现意想不到的创意联系。
+通过使用 Obsidian 的反向链接功能（`[[笔记名称]]`），你可以例如将名为“[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 的所有权”的笔记和“垃圾回收的历史”的笔记链接起来，从而发现意想不到的创意联系。
 
 ## 5. 利用向量数据库（Pinecone）和 OpenAI Embeddings 进行语义搜索
 
@@ -284,7 +284,7 @@ if __name__ == "__main__":
     search_similar_ideas(idx, "利用 WebAssembly 加速浏览器上的机器学习推理")
 ```
 
-有了这个系统，如果你有疑问：“我想写本周 Hacker News 上很火的‘WebAssembly’，但我以前写过相关的笔记吗？”，AI 会瞬间为你挑选出语义上相关的过去写的 Permanent Notes。这使你能够充分利用过去的知识资产，构建出一篇有深度的文章。
+有了这个系统，如果你有疑问：“我想写本周 Hacker News 上很火的‘[WebAssembly](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)’，但我以前写过相关的笔记吗？”，AI 会瞬间为你挑选出语义上相关的过去写的 Permanent Notes。这使你能够充分利用过去的知识资产，构建出一篇有深度的文章。
 
 ## 6. 结合艾宾浩斯遗忘曲线和 Anki 的间隔重复
 

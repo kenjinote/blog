@@ -32,7 +32,7 @@ Como não faço transmissões ou upload de uma grande quantidade de dados no mom
 Além disso, recentemente tanto eu quanto minha família estamos trabalhando principalmente em home office, e hoje, pela primeira vez, a internet caiu por alguns minutos a dezenas de minutos. Voltou automaticamente, mas
 pode não ser um bom sinal. Ainda não faz nem uma semana desde a mudança...
 
-Como curiosidade, a J:COM restringe a comunicação P2P, então parece que a velocidade de aplicativos P2P não é boa. Quem usa P2P deve ter cuidado.
+Como curiosidade, a J:COM restringe a comunicação [P2P](https://kenji.blog/pt/p/webrtc-realtime-communication-p2p/), então parece que a velocidade de aplicativos P2P não é boa. Quem usa P2P deve ter cuidado.
 
 # Sobre o serviço
 No momento do contrato, se você se inscrever na Netflix ou no Disney+, ganha um cartão QUO no valor de 40.000 ienes, que compensa a taxa de contrato de cada serviço e deixa a mensalidade

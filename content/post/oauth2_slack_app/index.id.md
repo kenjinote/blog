@@ -106,13 +106,13 @@ Sekarang persiapannya sudah selesai. Mari kita mulai mengimplementasikan server.
 
 ---
 
-# 4. Langkah Implementasi 1: `/slack/install` dan Parameter `state` untuk Pencegahan CSRF
+# 4. Langkah Implementasi 1: `/slack/install` dan Parameter `state` untuk Pencegahan [CSRF](https://kenji.blog/id/p/web-security-basics-cors-csp/)
 
 Kita akan membuat titik akhir pertama bagi pengguna untuk mulai menggunakan aplikasi (menginstalnya di ruang kerja mereka). Tanggung jawab terbesar di sini adalah mengarahkan pengguna ke server otorisasi Slack, tetapi yang sangat penting untuk keamanan adalah **menghasilkan dan menyimpan parameter `state`**.
 
-## Kebutuhan parameter state (Mencegah serangan CSRF)
+## Kebutuhan parameter state (Mencegah serangan [CSRF](https://kenji.blog/id/p/web-security-basics-cors-csp/))
 
-Jika parameter `state` tidak ada, penyerang berbahaya dapat memulai proses otorisasi dengan akun Slack mereka sendiri, dan membuat korban mengklik URL callback yang berisi "kode otorisasi" yang diperoleh (misal: `http://localhost:3000/slack/oauth_redirect?code=ATTACKER_CODE`). Ketika browser korban mengeksekusi ini, penyelarasan dengan akun Slack penyerang diselesaikan pada sesi korban, menyebabkan kebocoran informasi atau operasi yang tidak diinginkan (Login CSRF).
+Jika parameter `state` tidak ada, penyerang berbahaya dapat memulai proses otorisasi dengan akun Slack mereka sendiri, dan membuat korban mengklik URL callback yang berisi "kode otorisasi" yang diperoleh (misal: `http://localhost:3000/slack/oauth_redirect?code=ATTACKER_CODE`). Ketika browser korban mengeksekusi ini, penyelarasan dengan akun Slack penyerang diselesaikan pada sesi korban, menyebabkan kebocoran informasi atau operasi yang tidak diinginkan (Login [CSRF](https://kenji.blog/id/p/web-security-basics-cors-csp/)).
 
 Untuk mencegah hal ini, `state` adalah string acak yang tidak dapat diprediksi untuk memverifikasi bahwa browser yang memulai permintaan sama dengan browser yang menerima callback.
 
@@ -367,7 +367,7 @@ Artikel ini menjelaskan Authorization Code Grant Flow pada OAuth 2.0 secara deta
 
 1. Dengan memahami **4 peran (RO, Client, AS, RS)**, arsitektur keseluruhan sistem menjadi lebih jelas.
 2. **Authorization Code Grant** menjamin keamanan dengan memanfaatkan saluran komunikasi (front/back channel) secara cerdik antara browser dan server.
-3. Memahami mekanisme kriptografis di baliknya, seperti pertahanan CSRF menggunakan parameter **`state`** dan pencegahan serangan intersep kode otorisasi menggunakan **PKCE**, adalah jalan pintas menuju implementasi yang aman.
+3. Memahami mekanisme kriptografis di baliknya, seperti pertahanan [CSRF](https://kenji.blog/id/p/web-security-basics-cors-csp/) menggunakan parameter **`state`** dan pencegahan serangan intersep kode otorisasi menggunakan **PKCE**, adalah jalan pintas menuju implementasi yang aman.
 4. Desain cakupan (scope) berdasarkan **Prinsip Hak Istimewa Minimal (Principle of Least Privilege)** dan enkripsi saat menyimpan di DB adalah elemen yang sangat penting dalam pengoperasiannya.
 
 OAuth 2.0 sangat dalam, dengan sejumlah besar spesifikasi bahkan hanya di dalam RFC, tetapi dengan mempelajari dan mempraktikkannya langsung pada platform aktual (Slack) seperti ini, Anda pasti akan merasakan filosofi desainnya yang elegan dan mekanisme keamanannya yang kokoh. Semoga pengetahuan dalam artikel ini bermanfaat untuk pengembangan aplikasi Anda di masa depan dan implementasi integrasi API.

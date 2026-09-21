@@ -11,7 +11,7 @@ description: 'We introduce basic usage of ''egui'', a GUI library that can be ea
 
 # What is egui
 
-It is a GUI library that can be used with Rust.
+It is a GUI library that can be used with [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/).
 
 # Trying out egui
 

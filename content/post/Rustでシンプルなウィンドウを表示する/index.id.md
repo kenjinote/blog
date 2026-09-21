@@ -9,7 +9,7 @@ categories: ["programming"]
 description: 'Memperkenalkan cara menggunakan ''winapi'' di Rust untuk membuat dan menampilkan jendela Windows sederhana. Kami menjelaskan secara rinci kode sumber yang menjadi dasar pemrograman GUI, dari pengaturan Cargo.toml hingga implementasi prosedur jendela.'
 ---
 
-Menampilkan jendela sederhana di Rust
+Menampilkan jendela sederhana di [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)
 
 ```Cargo.toml
 [package]

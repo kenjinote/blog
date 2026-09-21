@@ -404,7 +404,7 @@ Für `HRESULT` kann entweder eine dedizierte Fehlerkategorie erstellt oder das W
 
 ## 10. Moderne Fehlerbehandlung mit `std::expected` (C++23)
 
-Ab C++23 wurde `std::expected` eingeführt, was dem `Result`-Typ in Rust entspricht. Für Projekte, die Ausnahmen vermeiden wollen (aus Leistungsgründen oder wegen eines Designs, bei dem Fehler häufig auftreten), ist dies die beste Methode zur Modernisierung von Win32-Rückgabewerten.
+Ab C++23 wurde `std::expected` eingeführt, was dem `Result`-Typ in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) entspricht. Für Projekte, die Ausnahmen vermeiden wollen (aus Leistungsgründen oder wegen eines Designs, bei dem Fehler häufig auftreten), ist dies die beste Methode zur Modernisierung von Win32-Rückgabewerten.
 
 ```cpp
 #include <expected>

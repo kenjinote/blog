@@ -162,7 +162,7 @@ Al utilizar Contracts, no solo las especificaciones de la API se autodocumentan,
 
 Desde la introducción de `std::variant` y `std::any` en C++17, se ha utilizado `std::visit` para despachar variables que contienen varios tipos. Sin embargo, la combinación de `std::visit` y el patrón de sobrecarga (el llamado hack de la estructura `overloaded`) era extremadamente redundante y de poca legibilidad.
 
-En C++26, se incorporó la **coincidencia de patrones (Pattern Matching)** como una característica del lenguaje (conforme a P2688). Esto permite una coincidencia intuitiva similar a la de los lenguajes funcionales (como Rust o Haskell).
+En C++26, se incorporó la **coincidencia de patrones (Pattern Matching)** como una característica del lenguaje (conforme a P2688). Esto permite una coincidencia intuitiva similar a la de los lenguajes funcionales (como [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) o Haskell).
 
 ## 3.1 La lucha con `std::visit` hasta C++23
 

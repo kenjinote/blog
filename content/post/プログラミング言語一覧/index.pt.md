@@ -24,7 +24,7 @@ description: 'Listamos várias linguagens de programação, desde C, Python, Jav
 
 ## Haskell
 
-## Rust
+## [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/)
 
 ## Go
 

@@ -106,13 +106,13 @@ The preparation is now complete. Let's move on to the server implementation.
 
 ---
 
-# 4. Implementation Step 1: `/slack/install` and the CSRF Protection `state` Parameter
+# 4. Implementation Step 1: `/slack/install` and the [CSRF](https://kenji.blog/en/p/web-security-basics-cors-csp/) Protection `state` Parameter
 
 Create the first endpoint for the user to start using the app (install it into the workspace). While the primary responsibility here is to redirect the user to Slack's authorization server, a critically important aspect for security is the **generation and storage of the `state` parameter**.
 
-## The Necessity of the state Parameter (Preventing CSRF Attacks)
+## The Necessity of the state Parameter (Preventing [CSRF](https://kenji.blog/en/p/web-security-basics-cors-csp/) Attacks)
 
-If the `state` parameter did not exist, a malicious attacker could start the authorization process with their own Slack account and trick a victim into stepping on a callback URL containing the obtained "authorization code" (e.g., `http://localhost:3000/slack/oauth_redirect?code=ATTACKER_CODE`). If the victim's browser executes this, the attacker's Slack account will be linked to the victim's session, causing information leaks or unintended operations (Login CSRF).
+If the `state` parameter did not exist, a malicious attacker could start the authorization process with their own Slack account and trick a victim into stepping on a callback URL containing the obtained "authorization code" (e.g., `http://localhost:3000/slack/oauth_redirect?code=ATTACKER_CODE`). If the victim's browser executes this, the attacker's Slack account will be linked to the victim's session, causing information leaks or unintended operations (Login [CSRF](https://kenji.blog/en/p/web-security-basics-cors-csp/)).
 
 To prevent this, `state` is an unpredictable random string used to verify that the browser initiating the request and the browser receiving the callback are identical.
 
@@ -367,7 +367,7 @@ In this article, we explained the OAuth 2.0 Authorization Code Grant flow in det
 
 1. Being aware of the **4 roles (RO, Client, AS, RS)** clarifies the architecture of the entire system.
 2. The **Authorization Code Grant** guarantees safety by skillfully utilizing the communication paths (front/back channels) between the browser and the server.
-3. Understanding the underlying cryptographic mechanisms, such as CSRF defense via the **`state` parameter** and prevention of authorization code intercept attacks via **PKCE**, is a shortcut to secure implementation.
+3. Understanding the underlying cryptographic mechanisms, such as [CSRF](https://kenji.blog/en/p/web-security-basics-cors-csp/) defense via the **`state` parameter** and prevention of authorization code intercept attacks via **PKCE**, is a shortcut to secure implementation.
 4. Scope design based on the **Principle of Least Privilege** and encryption when saving to the DB are absolutely indispensable elements in operation.
 
 OAuth 2.0 is very deep, and there are massive specifications just within the RFCs. However, by getting your hands dirty and learning while targeting an actual platform (Slack) like this, you should be able to experience its refined design philosophy and robust security mechanisms. We hope the knowledge in this article will be useful in your future application development and API integration implementations.

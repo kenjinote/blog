@@ -114,7 +114,7 @@ Der Vorteil der Event Loop besteht darin, dass keine Sperrverwaltung für den ge
 
 ---
 
-## 3. Actor-Modell und Message Passing (Rust / Erlang / Akka)
+## 3. Actor-Modell und Message Passing ([Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) / Erlang / Akka)
 
 Wenn die Event Loop ein Ansatz ist, der die Grenzen von Single-Threading herausfordert, dann ist das **Actor-Modell** ein Paradigma, um die parallele Verarbeitung in Multi-Thread- und verteilten Umgebungen sicher und skalierbar zu machen.
 
@@ -139,7 +139,7 @@ flowchart LR
     end
 ```
 
-### 3.2 Implementierungsbeispiel eines Actors mit Rust
+### 3.2 Implementierungsbeispiel eines Actors mit [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)
 
 In der Systemprogrammiersprache Rust können Sie leistungsstarke asynchrone Crates wie `tokio` und `actix` verwenden, um das Actor-Modell zu erstellen. Hier zeigen wir ein einfaches Actor-Pattern-Implementierungsbeispiel unter Verwendung eines `mpsc`-Kanals (Multi-Producer, Single-Consumer).
 
@@ -207,7 +207,7 @@ async fn main() {
 }
 ```
 
-Das Ownership- und Typsystem von Rust garantiert zur Kompilierzeit die Sicherheit des Message Passings zwischen Actors. Wenn wir den Durchsatz des Systems mathematisch als $ S $ darstellen, mit $ N $ als der Anzahl der Actors und $ R $ als Nachrichtenverarbeitungsrate, beträgt er idealerweise $ S = N \times R $, was eine hohe Skalierbarkeit zeigt.
+Das Ownership- und Typsystem von [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) garantiert zur Kompilierzeit die Sicherheit des Message Passings zwischen Actors. Wenn wir den Durchsatz des Systems mathematisch als $ S $ darstellen, mit $ N $ als der Anzahl der Actors und $ R $ als Nachrichtenverarbeitungsrate, beträgt er idealerweise $ S = N \times R $, was eine hohe Skalierbarkeit zeigt.
 
 ---
 
@@ -281,7 +281,7 @@ Jede der bisher besprochenen Technologien hat ihre eigenen geeigneten Anwendungs
 1. **Event Loop (Node.js)**: 
    - API-Gateways und Echtzeit-Chat-Systeme mit vielen I/O-gebundenen Verarbeitungen.
    - WebSocket-Server, die eine große Anzahl gleichzeitiger Verbindungen verwalten.
-2. **Actor-Modell (Rust / Akka)**: 
+2. **Actor-Modell ([Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) / Akka)**: 
    - Parallele Verarbeitungen mit komplexen Zuständen (Gameserver, Echtzeit-Tracking).
    - Hochverfügbarkeitssysteme, die Selbstheilungskräfte (Supervisor-Bäume) bei Fehlern erfordern.
 3. **CQRS / Event Sourcing**: 

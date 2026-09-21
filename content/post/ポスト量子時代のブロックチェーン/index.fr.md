@@ -138,7 +138,7 @@ Dans un monde où le déchiffrement de l'ECDSA par un ordinateur quantique devie
 
 ### 3.1. Génération d'adresses et « confidentialité » de la clé publique
 
-Les adresses [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) (P2PKH : Pay-to-Public-Key-Hash ou P2WPKH : Pay-to-Witness-Public-Key-Hash) n'utilisent pas la clé publique elle-même, mais un hachage multiple de la clé publique.
+Les adresses [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) ([P2P](https://kenji.blog/fr/p/webrtc-realtime-communication-p2p/)KH : Pay-to-Public-Key-Hash ou P2WPKH : Pay-to-Witness-Public-Key-Hash) n'utilisent pas la clé publique elle-même, mais un hachage multiple de la clé publique.
 
 $$
 \text{[Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Public Key})))
@@ -178,7 +178,7 @@ Une fois que la clé publique est envoyée au Mempool (la zone d'attente des tra
 Les mineurs, obéissant aux incitations économiques, incluront en priorité la transaction avec les frais les plus élevés dans un bloc. Par conséquent, la transaction frauduleuse de l'attaquant sera confirmée en premier, et la transaction légitime d'Alice sera rejetée pour « fonds insuffisants (Double Spend) ».
 Cette séquence d'événements est appelée **attaque de front-running (Front-running Attack)**. Dans un monde où les ordinateurs quantiques sont devenus réalité, cela entraînera une situation effrayante où les fonds seront volés par des pirates informatiques à la seconde où quelqu'un appuiera sur le bouton d'envoi.
 
-### 3.3. Le danger des adresses réutilisées et des anciennes adresses (P2PK)
+### 3.3. Le danger des adresses réutilisées et des anciennes adresses ([P2P](https://kenji.blog/fr/p/webrtc-realtime-communication-p2p/)K)
 
 Un problème encore plus grave est que les adresses à partir desquelles des fonds ont été envoyés au moins une fois par le passé (comme lorsqu'elles sont réutilisées comme adresses de monnaie de retour) ont déjà leur clé publique enregistrée de manière permanente sur la blockchain. Celles-ci risquent de voir leur clé privée calculée et leur solde volé à tout moment, sans même attendre l'envoi d'une transaction.
 
@@ -289,7 +289,7 @@ L'EVM actuel dispose d'un contrat précompilé (Precompiled Contract) appelé `e
 
 Cependant, le processus de vérification des nouveaux algorithmes de cryptographie sur réseau tels que Dilithium ou Falcon implique des calculs polynomiaux et matriciels complexes. Si l'on tente de l'implémenter uniquement avec les codes d'opération (Opcodes) de l'EVM existant, une seule vérification de signature pourrait consommer des millions, voire des dizaines de millions de gaz. Cela suffirait à épuiser la limite de gaz de bloc actuelle (environ 30 millions de Gas) avec une seule transaction.
 
-Pour éviter cela, il est nécessaire, via un hard fork du réseau, d'intégrer dans l'EVM lui-même un nouveau contrat précompilé pour la vérification PQC (par exemple, assigner DilithiumVerify à `0x10`). Cela nécessitera un long processus dans lequel les développeurs principaux de chaque client Ethereum (Geth, Nethermind, Erigon, etc.) devront collaborer pour implémenter de manière optimisée la logique de vérification de la cryptographie sur réseau au niveau des langages C++, Go, Rust, etc., et réaliser des audits de sécurité.
+Pour éviter cela, il est nécessaire, via un hard fork du réseau, d'intégrer dans l'EVM lui-même un nouveau contrat précompilé pour la vérification PQC (par exemple, assigner DilithiumVerify à `0x10`). Cela nécessitera un long processus dans lequel les développeurs principaux de chaque client Ethereum (Geth, Nethermind, Erigon, etc.) devront collaborer pour implémenter de manière optimisée la logique de vérification de la cryptographie sur réseau au niveau des langages C++, Go, [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/), etc., et réaliser des audits de sécurité.
 
 ### 5.3. La difficulté d'atteindre un consensus par hard fork
 

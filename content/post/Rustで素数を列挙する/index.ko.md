@@ -16,7 +16,7 @@ description: 'Rust 프로그래밍 학습의 일환으로 지정된 상한값까
 
 
 
-Rust로 소수를 나열하는 프로그램을 작성해 보았습니다.
+[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)로 소수를 나열하는 프로그램을 작성해 보았습니다.
 
 ```rust
 fn main() {

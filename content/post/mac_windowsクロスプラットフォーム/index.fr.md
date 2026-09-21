@@ -217,7 +217,7 @@ Si des scripts shell complexes sont nécessaires dans des projets à grande éch
 
 ## 6. Systèmes de build et compilateurs multiplateformes
 
-Lors de la manipulation de code natif comme en C++ ou en Rust (langages compilés directement en code machine), il faut non seulement surmonter les différences d'API spécifiques à l'OS, mais aussi celles des systèmes de build et des compilateurs.
+Lors de la manipulation de code natif comme en C++ ou en [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) (langages compilés directement en code machine), il faut non seulement surmonter les différences d'API spécifiques à l'OS, mais aussi celles des systèmes de build et des compilateurs.
 
 *   **Compilateurs** :
     *   Windows: MSVC (Microsoft Visual C++), MinGW (GCC for Windows)

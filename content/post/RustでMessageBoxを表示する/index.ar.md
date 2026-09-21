@@ -9,7 +9,7 @@ categories: ["programming"]
 description: 'نشرح كيفية عرض مربع رسالة بسيط (MessageBox) في Windows باستدعاء واجهة برمجة تطبيقات Windows (Windows API) باستخدام صناديق (crates) `winapi` و `user32-sys` في Rust، من إنشاء المشروع حتى تنفيذ الكود خطوة بخطوة.'
 ---
 
-يمكنك عرض MessageBox في Rust باتباع الخطوات التالية.
+يمكنك عرض MessageBox في [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) باتباع الخطوات التالية.
 
 1. قم بتثبيت Rust. راجع [كيفية البدء مع Rust](https://kenji.blog/posts/rust%E3%81%AE%E3%81%AF%E3%81%98%E3%82%81%E3%81%8B%E3%81%9F/)
 2. قم بتشغيل `cargo new --bin MessageBox` في موجه الأوامر.

@@ -8,7 +8,7 @@ image: "images/img.webp"
 categories: ["programming"]
 description: 'Rustプログラミングの学習として、指定した上限値までの素数を列挙する簡単なアルゴリズムの実装例を紹介します。ループ処理や条件分岐を用いた基本的なコーディング方法を具体的なサンプルコードとともにわかりやすく解説します。'
 ---
-Rustで素数を列挙するプログラムを書いてみました。
+[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)で素数を列挙するプログラムを書いてみました。
 
 ```rust
 fn main() {

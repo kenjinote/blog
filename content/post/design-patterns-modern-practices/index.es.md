@@ -30,7 +30,7 @@ Por ejemplo, en lenguajes donde no existen funciones de primera clase (First-cla
 
 ## 3. Reevaluación moderna de los patrones GoF y alternativas
 
-Aquí tomaremos algunos patrones GoF representativos y veremos cómo han sido reemplazados en lenguajes modernos (TypeScript, Kotlin, Rust, etc.).
+Aquí tomaremos algunos patrones GoF representativos y veremos cómo han sido reemplazados en lenguajes modernos (TypeScript, Kotlin, [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/), etc.).
 
 ### 3.1. Patrón Strategy: Desplazado por las funciones de primera clase
 
@@ -133,7 +133,7 @@ Dado que los flujos (streams) asíncronos son compatibles a nivel del lenguaje, 
 
 El patrón `Visitor` es un patrón para separar una estructura de datos del procesamiento que se realiza en ella, pero tenía el problema de que su implementación era extremadamente compleja y contraintuitiva (requería despacho doble).
 
-En la actualidad, utilizando lenguajes (Rust, Kotlin, Swift, Scala, etc.) equipados con **Tipos de Datos Algebraicos (ADT)** y **Pattern Matching**, este problema se resuelve de manera elegante.
+En la actualidad, utilizando lenguajes ([Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/), Kotlin, Swift, Scala, etc.) equipados con **Tipos de Datos Algebraicos (ADT)** y **Pattern Matching**, este problema se resuelve de manera elegante.
 
 **Enfoque moderno (Tipos enumerados y Pattern Matching en Rust)**
 
@@ -191,7 +191,7 @@ $$
 bind: M[A] \times (A \rightarrow M[B]) \rightarrow M[B]
 $$
 
-**El tipo Result en Rust (Aplicación de la mónada Either)**
+**El tipo Result en [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) (Aplicación de la mónada Either)**
 
 ```rust
 fn divide(numerator: f64, denominator: f64) -> Result<f64, String> {

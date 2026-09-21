@@ -11,7 +11,7 @@ tags: ["VSCode", "C++", "Rust", "Editor"]
 
 # はじめに
 
-現代のシステムプログラミングにおいて、C++とRustは最も重要な言語として確固たる地位を築いています。長年の実績と膨大なエコシステムを持ち、OSやゲームエンジン、高頻度取引（HFT）システムなどで不可欠なC++。そして、所有権（Ownership）モデルによるメモリ安全性とモダンな言語仕様によって急速に普及し、Linuxカーネルへの採用も進んでいるRust。これら二つの言語で開発を行う際、エディタの選択と設定は開発の生産性に直結します。
+現代のシステムプログラミングにおいて、C++と[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)は最も重要な言語として確固たる地位を築いています。長年の実績と膨大なエコシステムを持ち、OSやゲームエンジン、高頻度取引（HFT）システムなどで不可欠なC++。そして、所有権（Ownership）モデルによるメモリ安全性とモダンな言語仕様によって急速に普及し、Linuxカーネルへの採用も進んでいるRust。これら二つの言語で開発を行う際、エディタの選択と設定は開発の生産性に直結します。
 
 Visual Studio Code（VSCode）は、その高い拡張性と軽量さから、世界中のシステムプログラマに愛用されています。しかし、インストールした直後のVSCodeはあくまで単なるテキストエディタに過ぎません。C++やRustの真の力を引き出すためには、言語のセマンティクスを深く理解する言語サーバーや、バイナリレベルで状態を追跡するデバッガなど、適切な拡張機能の導入と緻密な設定が不可欠です。
 
@@ -43,7 +43,7 @@ graph TD
     Debugger -. ptrace / メモリダンプ .-> Executable["コンパイル済みバイナリ"]
 ```
 
-VSCodeの本体は、C++のテンプレートメタプログラミングやRustの複雑なライフタイム指定子を理解しているわけではありません。エディタの役割はソースコードの表示とユーザーからの入力の受付に専念し、コードの意味解析（Semantic Analysis）、型推論（Type Inference）、エラーチェックといった計算コストの高い処理は、背後で動く「言語サーバー」にJSON-RPCを通じて委譲されます。
+VSCodeの本体は、C++のテンプレートメタプログラミングや[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の複雑なライフタイム指定子を理解しているわけではありません。エディタの役割はソースコードの表示とユーザーからの入力の受付に専念し、コードの意味解析（Semantic Analysis）、型推論（Type Inference）、エラーチェックといった計算コストの高い処理は、背後で動く「言語サーバー」にJSON-RPCを通じて委譲されます。
 
 これにより、エディタのUIスレッドをブロックすることなく、数百万行の大規模コードベースであってもスムーズなタイピングと高速なレスポンスを実現しています。
 
@@ -97,12 +97,12 @@ $$ T_{response} = \alpha \cdot O(S \log(M_{ast})) + \beta \cdot T_{IPC} $$
 
 ---
 
-### ② rust-analyzer (Rust開発のデファクトスタンダード)
+### ② rust-analyzer ([Rust](https://kenji.blog/p/webassembly-wasm-current-future/)開発のデファクトスタンダード)
 
-Rust開発において、現在公式の言語サーバーとして採用されているのが **`rust-analyzer`** です。かつて標準だったRLS (Rust Language Server) はコンパイラ（rustc）を直接呼び出すアーキテクチャだったためレスポンスに限界がありましたが、`rust-analyzer`はIDE向けにゼロから設計し直され、不完全なコードであってもインクリメンタルにパースできる強力な機能を持っています。
+Rust開発において、現在公式の言語サーバーとして採用されているのが **`rust-analyzer`** です。かつて標準だったRLS ([Rust](https://kenji.blog/p/webassembly-wasm-current-future/) Language Server) はコンパイラ（rustc）を直接呼び出すアーキテクチャだったためレスポンスに限界がありましたが、`rust-analyzer`はIDE向けにゼロから設計し直され、不完全なコードであってもインクリメンタルにパースできる強力な機能を持っています。
 
 #### 圧倒的な生産性を生む機能群
-1. **Inlay Hints (インレイヒント)**: 型推論が強力なRustでは、変数の型を明示的に書かないことが推奨されますが、可読性が落ちる場合があります。Inlay Hintsは、推論された型や、関数呼び出しの引数名をエディタ上に薄い文字でオーバーレイ表示します。
+1. **Inlay Hints (インレイヒント)**: 型推論が強力な[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)では、変数の型を明示的に書かないことが推奨されますが、可読性が落ちる場合があります。Inlay Hintsは、推論された型や、関数呼び出しの引数名をエディタ上に薄い文字でオーバーレイ表示します。
 2. **手続き的マクロ (Proc-macro) の完全サポート**: `serde` の `#[derive(Serialize)]` や `tokio::main` などの手続き的マクロは、コンパイル時にASTをTokenStreamとして受け取り、新しいコードを生成します。`rust-analyzer`はこれらのマクロを内部で展開し、生成されたコードに対しても補完やエラーチェックを機能させます。
 3. **Magic Completions**: `iter().map().filter().collect()` のようなメソッドチェーンにおいて、途中の型がどのように変換されているかをステップごとに表示可能です。
 
@@ -119,7 +119,7 @@ Rust開発において、現在公式の言語サーバーとして採用され�
     "rust-analyzer.hover.actions.references.enable": true
 }
 ```
-保存時に自動で `cargo clippy` をバックグラウンドで走らせる設定は必須と言えます。これにより、所有権の違反だけでなく、パフォーマンス上の改善提案や、よりRustらしい（Idiomaticな）書き方を即座に学習することができます。
+保存時に自動で `cargo clippy` をバックグラウンドで走らせる設定は必須と言えます。これにより、所有権の違反だけでなく、パフォーマンス上の改善提案や、より[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)らしい（Idiomaticな）書き方を即座に学習することができます。
 
 ---
 
@@ -127,11 +127,11 @@ Rust開発において、現在公式の言語サーバーとして採用され�
 
 C++とRustのどちらを開発するにしても、実行時のメモリ状態を検査するためのデバッガは必須です。特にWindows、Mac、Linuxのすべてのプラットフォームで安定して動作し、Rustとの親和性が極めて高いのが **`CodeLLDB`** です。
 
-Rustのコンパイラ (rustc) はLLVMをバックエンドとして利用しており、生成されるデバッグ情報 (DWARF / PDB) のフォーマットは、同じくLLVMプロジェクトの一部であるLLDBと完全に適合します。
+[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)のコンパイラ (rustc) はLLVMをバックエンドとして利用しており、生成されるデバッグ情報 (DWARF / PDB) のフォーマットは、同じくLLVMプロジェクトの一部であるLLDBと完全に適合します。
 
 #### launch.json の高度な設定例
 
-VSCodeでデバッグを開始するための `.vscode/launch.json` の設定です。ここではC++とRustの両方の実行ファイルをデバッグするための統合構成を示します。
+VSCodeでデバッグを開始するための `.vscode/launch.json` の設定です。ここではC++と[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の両方の実行ファイルをデバッグするための統合構成を示します。
 
 ```json
 {
@@ -170,7 +170,7 @@ VSCodeでデバッグを開始するための `.vscode/launch.json` の設定で
     ]
 }
 ```
-Rustの構成ブロックに注目してください。`CodeLLDB`は `cargo` オプションをネイティブにサポートしているため、コンパイル後の複雑なハッシュ値が含まれたバイナリパスを直接指定する必要がありません。エディタが自動的に `cargo build` を実行し、生成された最新の実行ファイルを捕捉してデバッガをアタッチしてくれます。
+[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の構成ブロックに注目してください。`CodeLLDB`は `cargo` オプションをネイティブにサポートしているため、コンパイル後の複雑なハッシュ値が含まれたバイナリパスを直接指定する必要がありません。エディタが自動的に `cargo build` を実行し、生成された最新の実行ファイルを捕捉してデバッガをアタッチしてくれます。
 
 ---
 
@@ -194,7 +194,7 @@ C++プロジェクトの業界標準ビルドシステムであるCMakeを、VSC
 
 ---
 
-### ⑤ crates (Rustパッケージ依存関係のリアルタイム管理)
+### ⑤ crates ([Rust](https://kenji.blog/p/webassembly-wasm-current-future/)パッケージ依存関係のリアルタイム管理)
 
 Rustの依存関係管理ファイルである `Cargo.toml` を極めて便利にする拡張機能です。
 
@@ -212,11 +212,11 @@ reqwest = "0.11" # <- アップデートが必要な場合はワンクリック�
 
 ### ⑥ Error Lens
 
-`Error Lens` は、C++の長いテンプレートエラーや、Rustの厳密な[借用チェッカー](https://kenji.blog/p/memory-management-garbage-collection/)（[Borrow Checker](https://kenji.blog/p/memory-management-garbage-collection/)）のエラーを、エディタの該当行の右側に直接インラインでハイライト表示する画期的な拡張機能です。
+`Error Lens` は、C++の長いテンプレートエラーや、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の厳密な[借用チェッカー](https://kenji.blog/p/memory-management-garbage-collection/)（[Borrow Checker](https://kenji.blog/p/memory-management-garbage-collection/)）のエラーを、エディタの該当行の右側に直接インラインでハイライト表示する画期的な拡張機能です。
 
 通常、VSCodeでエラーの詳細を確認するには、画面下部の「問題（Problems）」パネルを開くか、テキスト上の赤い波線に正確にマウスカーソルを合わせてホバーポップアップを待つ必要があります。しかし、この操作は認知負荷を高め、コーディングのフロー状態を阻害します。
 
-`Error Lens` を導入すると、キーボードから手を離すことなく、コードをタイプしている最中にエラーメッセージが視界の端に表示されます。特にRustにおける「`cannot borrow 'x' as mutable because it is also borrowed as immutable`」のような複雑なライフタイムエラーを、該当行を見ながら瞬時に理解できるため、修正速度が飛躍的に向上します。
+`Error Lens` を導入すると、キーボードから手を離すことなく、コードをタイプしている最中にエラーメッセージが視界の端に表示されます。特に[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)における「`cannot borrow 'x' as mutable because it is also borrowed as immutable`」のような複雑なライフタイムエラーを、該当行を見ながら瞬時に理解できるため、修正速度が飛躍的に向上します。
 
 ---
 
@@ -226,13 +226,13 @@ reqwest = "0.11" # <- アップデートが必要な場合はワンクリック�
 
 **`GitLens`** は、現在のカーソル位置にある行の `git blame` 情報をエディタ上にアノテーションとして薄く表示します。また、ファイル全体のコミット履歴をグラフィカルに探索する機能や、行単位での履歴（Line History）を辿る機能を備えています。
 
-Rustの `unsafe` ブロックやC++のトリッキーなキャスト処理に遭遇した際、そのコードがマージされた当時のPull Requestや詳細なコミットメッセージを即座に参照できることは、リバースエンジニアリングにおける強力な武器となります。
+[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の `unsafe` ブロックやC++のトリッキーなキャスト処理に遭遇した際、そのコードがマージされた当時のPull Requestや詳細なコミットメッセージを即座に参照できることは、リバースエンジニアリングにおける強力な武器となります。
 
 ---
 
 ### ⑧ GitHub Copilot
 
-システムプログラミングにおいても、生成AIアシスタントの導入はすでに不可避のパラダイムシフトとなっています。**`GitHub Copilot`** は、C++の冗長なボイラープレートコードや、Rustの複雑なイテレータチェーンの構築を極めて高い精度でサポートします。
+システムプログラミングにおいても、生成AIアシスタントの導入はすでに不可避のパラダイムシフトとなっています。**`GitHub Copilot`** は、C++の冗長なボイラープレートコードや、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の複雑なイテレータチェーンの構築を極めて高い精度でサポートします。
 
 #### システムプログラミングにおけるAIの活用
 - **Rule of Fiveの実装**: C++において、デストラクタ、コピーコンストラクタ、コピー代入演算子、ムーブコンストラクタ、ムーブ代入演算子を記述する際、Copilotはクラスのメンバ変数に基づき、メモリリークのない正確な実装を瞬時に提案します。
@@ -242,7 +242,7 @@ Rustの `unsafe` ブロックやC++のトリッキーなキャスト処理に遭
 
 ### ⑨ Even Better TOML
 
-Rustのプロジェクト設定ファイルである `Cargo.toml` や、ツールチェイン設定の `rust-toolchain.toml` に対する、構文ハイライト、オートフォーマット、および強力なスキーマ検証（Schema Validation）を提供する拡張機能です。
+[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)のプロジェクト設定ファイルである `Cargo.toml` や、ツールチェイン設定の `rust-toolchain.toml` に対する、構文ハイライト、オートフォーマット、および強力なスキーマ検証（Schema Validation）を提供する拡張機能です。
 
 `Cargo.toml` 内での単純なタイプミス（例えば、`[dependencies]` を `[dependencis]` と書き間違えるなど）をリアルタイムで警告してくれるため、ビルド実行時に初めてエラーに気付くというタイムロスを排除できます。また、JSON Schemaに基づいたバリデーションが行われるため、利用可能なキーを自動補完させることも可能です。
 
@@ -252,7 +252,7 @@ Rustのプロジェクト設定ファイルである `Cargo.toml` や、ツー�
 
 システムプログラミングにおいて、変数名や関数名の正確なスペリングは、プロジェクト全体の可読性と保守性に直結します。**`Code Spell Checker`** は、ソースコード内の識別子（キャメルケース `myVariable` やスネークケース `my_variable` を自動で単語に分解して判定）や、コメント、文字列リテラル内のスペルミスを検知します。
 
-C++の `std::unordered_map` やRustの `HashMap` のキーとして文字列リテラルを使用する設計パターンの場合、スペルミス（タイポ）によるバグはコンパイルを通過してしまい、実行時エラーとして顕在化するまで気づきにくいという非常に厄介な性質があります。スペルチェッカーを導入し、エディタ上で波線警告を出すことで、こうしたイージーミスをコーディング段階で完全に排除できます。
+C++の `std::unordered_map` や[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の `HashMap` のキーとして文字列リテラルを使用する設計パターンの場合、スペルミス（タイポ）によるバグはコンパイルを通過してしまい、実行時エラーとして顕在化するまで気づきにくいという非常に厄介な性質があります。スペルチェッカーを導入し、エディタ上で波線警告を出すことで、こうしたイージーミスをコーディング段階で完全に排除できます。
 
 ---
 
@@ -260,7 +260,7 @@ C++の `std::unordered_map` やRustの `HashMap` のキーとして文字列リ�
 
 IDEとしての機能を完結させるためには、エディタのGUI機能だけでなく、VSCodeのTask機能（`.vscode/tasks.json`）を活用して、ショートカットキー（デフォルトでは `Ctrl+Shift+B`）一つでビルドやテストを実行できるように設定することが重要です。
 
-以下は、CMakeを用いたC++のビルドと、Cargoを用いたRustのビルドを共存させる、高度な `tasks.json` の設定例です。
+以下は、CMakeを用いたC++のビルドと、Cargoを用いた[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)のビルドを共存させる、高度な `tasks.json` の設定例です。
 
 ```json
 {
@@ -334,9 +334,9 @@ sequenceDiagram
     VSCode->>Developer: GUI上の「変数」ペインにツリー表示
 ```
 
-このシーケンス図が示すように、デバッグセッション中はVSCodeとCodeLLDBの間で無数の通信（Debug Adapter Protocol - DAP）が行われています。C++の `std::map` や Rustの `Vec<T>` といったポインタの集合体である複雑なデータ構造も、CodeLLDBに組み込まれたフォーマッタ機能によって、VSCodeのGUI上で非常に直感的に（配列の中身が展開されたツリー状で）表示されます。
+このシーケンス図が示すように、デバッグセッション中はVSCodeとCodeLLDBの間で無数の通信（Debug Adapter Protocol - DAP）が行われています。C++の `std::map` や [Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の `Vec<T>` といったポインタの集合体である複雑なデータ構造も、CodeLLDBに組み込まれたフォーマッタ機能によって、VSCodeのGUI上で非常に直感的に（配列の中身が展開されたツリー状で）表示されます。
 
-これを可能にするため、RustのコンパイラはDWARFフォーマット内に型のレイアウト情報（サイズやパディングなど）を詳細に埋め込み、CodeLLDBはそれに従ってターゲットメモリ上の生バイト列を人間が読める形式に見事に変換しているのです。
+これを可能にするため、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)のコンパイラはDWARFフォーマット内に型のレイアウト情報（サイズやパディングなど）を詳細に埋め込み、CodeLLDBはそれに従ってターゲットメモリ上の生バイト列を人間が読める形式に見事に変換しているのです。
 
 ---
 
@@ -370,7 +370,7 @@ $$ T_{total} = T_{design} + T_{write} + \sum_{k=1}^{N} \left( T_{compile}^{(k)} 
 
 ## おわりに
 
-C++とRustは、どちらも「ハードウェアの限界性能を引き出す」ことを目的としたシビアな言語であり、開発者には高いレベルの理解と正確なコーディングが求められます。
+C++と[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)は、どちらも「ハードウェアの限界性能を引き出す」ことを目的としたシビアな言語であり、開発者には高いレベルの理解と正確なコーディングが求められます。
 
 本記事で紹介した10の拡張機能と設定を適用することで、VSCodeは単なるテキストエディタの枠を超え、コンパイラの深い知識とデバッガの透視能力を併せ持つ「開発者の強力な外骨格」へと進化します。
 

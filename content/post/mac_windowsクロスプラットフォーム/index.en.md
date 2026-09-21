@@ -217,7 +217,7 @@ If a large-scale project requires complex shell scripts, the current best practi
 
 ## 6. Cross-Platform Build Systems and Compilers
 
-When dealing with native code (languages compiled directly into machine code) such as C++ and Rust, you must overcome not only OS-specific APIs but also differences in build systems and compilers.
+When dealing with native code (languages compiled directly into machine code) such as C++ and [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/), you must overcome not only OS-specific APIs but also differences in build systems and compilers.
 
 *   **Compilers**:
     *   Windows: MSVC (Microsoft Visual C++), MinGW (GCC for Windows)

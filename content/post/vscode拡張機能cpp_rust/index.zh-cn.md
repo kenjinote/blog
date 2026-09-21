@@ -11,7 +11,7 @@ tags: ["VSCode", "C++", "Rust", "Editor"]
 
 # 前言
 
-在现代系统编程中，C++ 和 Rust 已经确立了作为最重要语言的稳固地位。C++ 凭借多年的经验和庞大的生态系统，在操作系统、游戏引擎、高频交易（HFT）系统等领域不可或缺。而 Rust 则凭借基于所有权（Ownership）模型的内存安全性和现代语言特性迅速普及，并且正逐渐被引入 Linux 内核中。在使用这两种语言进行开发时，编辑器的选择和配置直接关系到开发的生产力。
+在现代系统编程中，C++ 和 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 已经确立了作为最重要语言的稳固地位。C++ 凭借多年的经验和庞大的生态系统，在操作系统、游戏引擎、高频交易（HFT）系统等领域不可或缺。而 Rust 则凭借基于所有权（Ownership）模型的内存安全性和现代语言特性迅速普及，并且正逐渐被引入 Linux 内核中。在使用这两种语言进行开发时，编辑器的选择和配置直接关系到开发的生产力。
 
 Visual Studio Code (VSCode) 因其高扩展性和轻量级，深受全球系统程序员的喜爱。然而，刚安装好的 VSCode 仅仅只是一个文本编辑器。为了充分发挥 C++ 和 Rust 的真正力量，深入理解语言语义的语言服务器，以及在二进制级别追踪状态的调试器等合适的扩展功能的引入和周密的配置是必不可少的。
 
@@ -43,7 +43,7 @@ graph TD
     Debugger -. ptrace / 内存转储 .-> Executable["编译后的二进制文件"]
 ```
 
-VSCode 本身并不理解 C++ 的模板元编程或 Rust 复杂的生命周期说明符。编辑器的作用仅限于显示源代码和接收用户的输入，而代码的语义分析（Semantic Analysis）、类型推导（Type Inference）、错误检查等计算成本高昂的处理，则通过 JSON-RPC 委托给在后台运行的“语言服务器”。
+VSCode 本身并不理解 C++ 的模板元编程或 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 复杂的生命周期说明符。编辑器的作用仅限于显示源代码和接收用户的输入，而代码的语义分析（Semantic Analysis）、类型推导（Type Inference）、错误检查等计算成本高昂的处理，则通过 JSON-RPC 委托给在后台运行的“语言服务器”。
 
 这样一来，即使是数百万行的大规模代码库，也能在不阻塞编辑器 UI 线程的情况下，实现流畅的输入和高速的响应。
 
@@ -97,12 +97,12 @@ $$ T_{response} = \alpha \cdot O(S \log(M_{ast})) + \beta \cdot T_{IPC} $$
 
 ---
 
-### ② rust-analyzer (Rust 开发的事实标准)
+### ② rust-analyzer ([Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 开发的事实标准)
 
-在 Rust 开发中，目前被采用为官方语言服务器的是 **`rust-analyzer`**。过去作为标准的 RLS (Rust Language Server) 因为直接调用编译器 (rustc) 的架构，在响应速度上存在局限，而 `rust-analyzer` 专为 IDE 重新从零设计，具有即使面对不完整的代码也能进行增量解析的强大功能。
+在 Rust 开发中，目前被采用为官方语言服务器的是 **`rust-analyzer`**。过去作为标准的 RLS ([Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) Language Server) 因为直接调用编译器 (rustc) 的架构，在响应速度上存在局限，而 `rust-analyzer` 专为 IDE 重新从零设计，具有即使面对不完整的代码也能进行增量解析的强大功能。
 
 #### 带来压倒性生产力的功能群
-1. **Inlay Hints (内联提示)** ：在类型推导强大的 Rust 中，推荐不显式写出变量的类型，但这有时会降低可读性。Inlay Hints 会在编辑器上用浅色文字覆盖显示推导出的类型和函数调用的参数名。
+1. **Inlay Hints (内联提示)** ：在类型推导强大的 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 中，推荐不显式写出变量的类型，但这有时会降低可读性。Inlay Hints 会在编辑器上用浅色文字覆盖显示推导出的类型和函数调用的参数名。
 2. **完全支持过程宏 (Proc-macro)** ：诸如 `serde` 的 `#[derive(Serialize)]` 或 `tokio::main` 等过程宏，在编译时将 AST 接收为 TokenStream，并生成新代码。`rust-analyzer` 能够在内部展开这些宏，并对生成的代码也提供补全和错误检查功能。
 3. **Magic Completions** ：在诸如 `iter().map().filter().collect()` 这样的方法链中，能够逐步显示中间的类型是如何被转换的。
 
@@ -119,7 +119,7 @@ $$ T_{response} = \alpha \cdot O(S \log(M_{ast})) + \beta \cdot T_{IPC} $$
     "rust-analyzer.hover.actions.references.enable": true
 }
 ```
-保存时自动在后台运行 `cargo clippy` 的设置可以说是必不可少的。通过这个设置，不仅能够发现所有权违规，还可以即时学习到性能改进建议以及更符合 Rust 风格 (Idiomatic) 的写法。
+保存时自动在后台运行 `cargo clippy` 的设置可以说是必不可少的。通过这个设置，不仅能够发现所有权违规，还可以即时学习到性能改进建议以及更符合 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 风格 (Idiomatic) 的写法。
 
 ---
 
@@ -127,11 +127,11 @@ $$ T_{response} = \alpha \cdot O(S \log(M_{ast})) + \beta \cdot T_{IPC} $$
 
 无论是开发 C++ 还是 Rust，用于检查运行时内存状态的调试器都是必不可少的。特别是在 Windows、Mac、Linux 所有平台上都能稳定运行，并且与 Rust 具有极高亲和力的当属 **`CodeLLDB`**。
 
-Rust 的编译器 (rustc) 使用 LLVM 作为后端，其生成的调试信息 (DWARF / PDB) 格式，与同属 LLVM 项目一部分的 LLDB 完全兼容。
+[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 的编译器 (rustc) 使用 LLVM 作为后端，其生成的调试信息 (DWARF / PDB) 格式，与同属 LLVM 项目一部分的 LLDB 完全兼容。
 
 #### launch.json 的高级配置示例
 
-这是为了在 VSCode 中启动调试的 `.vscode/launch.json` 配置。这里展示了能够同时调试 C++ 和 Rust 两个可执行文件的集成配置。
+这是为了在 VSCode 中启动调试的 `.vscode/launch.json` 配置。这里展示了能够同时调试 C++ 和 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 两个可执行文件的集成配置。
 
 ```json
 {
@@ -170,7 +170,7 @@ Rust 的编译器 (rustc) 使用 LLVM 作为后端，其生成的调试信息 (D
     ]
 }
 ```
-请注意 Rust 的配置块。`CodeLLDB` 原生支持 `cargo` 选项，因此不需要直接指定包含编译后复杂哈希值的二进制路径。编辑器会自动执行 `cargo build`，捕获最新生成的可执行文件并附加调试器。
+请注意 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 的配置块。`CodeLLDB` 原生支持 `cargo` 选项，因此不需要直接指定包含编译后复杂哈希值的二进制路径。编辑器会自动执行 `cargo build`，捕获最新生成的可执行文件并附加调试器。
 
 ---
 
@@ -194,7 +194,7 @@ Rust 的编译器 (rustc) 使用 LLVM 作为后端，其生成的调试信息 (D
 
 ---
 
-### ⑤ crates (Rust 包依赖关系的实时管理)
+### ⑤ crates ([Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 包依赖关系的实时管理)
 
 这是一款能让 Rust 依赖管理文件 `Cargo.toml` 变得极其方便的扩展功能。
 
@@ -212,11 +212,11 @@ reqwest = "0.11" # <- 如果需要更新，可以一键修复
 
 ### ⑥ Error Lens
 
-`Error Lens` 是一款革命性的扩展功能，它直接在编辑器的对应行右侧，以内联的方式高亮显示 C++ 冗长的模板错误，或是 Rust 严格的借用检查器（[Borrow Checker](https://kenji.blog/zh-cn/p/memory-management-garbage-collection/)）错误。
+`Error Lens` 是一款革命性的扩展功能，它直接在编辑器的对应行右侧，以内联的方式高亮显示 C++ 冗长的模板错误，或是 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 严格的借用检查器（[Borrow Checker](https://kenji.blog/zh-cn/p/memory-management-garbage-collection/)）错误。
 
 通常，在 VSCode 中要查看错误的详细信息，需要打开屏幕底部的“问题（Problems）”面板，或是将鼠标光标准确停留在文本的红色波浪线上等待悬停弹窗。然而，这些操作会增加认知负荷，并阻碍编码的心流状态。
 
-引入 `Error Lens` 后，无需让手离开键盘，在编写代码的同时错误消息就会显示在视线边缘。特别是对于 Rust 中诸如“`cannot borrow 'x' as mutable because it is also borrowed as immutable`”这样复杂的生命周期错误，可以边看对应行边瞬间理解，从而使修复速度得到飞跃性的提升。
+引入 `Error Lens` 后，无需让手离开键盘，在编写代码的同时错误消息就会显示在视线边缘。特别是对于 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 中诸如“`cannot borrow 'x' as mutable because it is also borrowed as immutable`”这样复杂的生命周期错误，可以边看对应行边瞬间理解，从而使修复速度得到飞跃性的提升。
 
 ---
 
@@ -226,13 +226,13 @@ reqwest = "0.11" # <- 如果需要更新，可以一键修复
 
 **`GitLens`** 会在编辑器上以浅色注释的形式，显示当前光标所在行的 `git blame` 信息。此外，它还具备以图形化方式探索整个文件提交历史的功能，以及追踪行级历史（Line History）的功能。
 
-当遇到 Rust 的 `unsafe` 块或 C++ 诡异的类型转换处理时，能够立即查阅该代码合并时的 Pull Request 或详细的提交说明，这在进行逆向工程时是一件强大的武器。
+当遇到 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 的 `unsafe` 块或 C++ 诡异的类型转换处理时，能够立即查阅该代码合并时的 Pull Request 或详细的提交说明，这在进行逆向工程时是一件强大的武器。
 
 ---
 
 ### ⑧ GitHub Copilot
 
-在系统编程中，引入生成式 AI 助手也已成为不可避免的范式转变。**`GitHub Copilot`** 能以极高的精度协助编写 C++ 冗长的样板代码，或构建 Rust 复杂的迭代器链。
+在系统编程中，引入生成式 AI 助手也已成为不可避免的范式转变。**`GitHub Copilot`** 能以极高的精度协助编写 C++ 冗长的样板代码，或构建 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 复杂的迭代器链。
 
 #### AI 在系统编程中的应用
 - **五法则 (Rule of Five) 的实现** ：在 C++ 中，当编写析构函数、拷贝构造函数、拷贝赋值运算符、移动构造函数和移动赋值运算符时，Copilot 能够根据类的成员变量，瞬间提供没有内存泄漏的正确实现。
@@ -242,7 +242,7 @@ reqwest = "0.11" # <- 如果需要更新，可以一键修复
 
 ### ⑨ Even Better TOML
 
-这是一款为 Rust 项目配置文件 `Cargo.toml` 以及工具链配置文件 `rust-toolchain.toml` 提供语法高亮、自动格式化以及强大的模式验证（Schema Validation）的扩展功能。
+这是一款为 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 项目配置文件 `Cargo.toml` 以及工具链配置文件 `rust-toolchain.toml` 提供语法高亮、自动格式化以及强大的模式验证（Schema Validation）的扩展功能。
 
 它能够实时警告 `Cargo.toml` 内的简单拼写错误（例如，把 `[dependencies]` 错写成 `[dependencis]`），从而消除了直到执行构建时才发现错误的的时间浪费。另外，由于它基于 JSON Schema 进行验证，因此也能够自动补全可用的键。
 
@@ -252,7 +252,7 @@ reqwest = "0.11" # <- 如果需要更新，可以一键修复
 
 在系统编程中，变量名和函数名的准确拼写直接关系到整个项目的可读性和可维护性。**`Code Spell Checker`** 可以检测源代码中的标识符（自动将驼峰命名法 `myVariable` 或蛇形命名法 `my_variable` 拆分成单词进行判定）、注释以及字符串字面量中的拼写错误。
 
-在将字符串字面量用作 C++ 的 `std::unordered_map` 或 Rust 的 `HashMap` 键的设计模式下，由拼写错误（笔误）引起的 Bug 会通过编译，并且直到作为运行时错误显现出来才容易被发现，这具有非常棘手的性质。通过引入拼写检查器并在编辑器上显示波浪线警告，可以在编码阶段完全排除这些低级错误。
+在将字符串字面量用作 C++ 的 `std::unordered_map` 或 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 的 `HashMap` 键的设计模式下，由拼写错误（笔误）引起的 Bug 会通过编译，并且直到作为运行时错误显现出来才容易被发现，这具有非常棘手的性质。通过引入拼写检查器并在编辑器上显示波浪线警告，可以在编码阶段完全排除这些低级错误。
 
 ---
 
@@ -260,7 +260,7 @@ reqwest = "0.11" # <- 如果需要更新，可以一键修复
 
 为了使其作为 IDE 的功能完整，不仅要依靠编辑器的 GUI 功能，还必须利用 VSCode 的 Task 功能（`.vscode/tasks.json`），配置成能够通过一个快捷键（默认为 `Ctrl+Shift+B`）来执行构建和测试。
 
-以下是让使用 CMake 构建的 C++ 和使用 Cargo 构建的 Rust 共存的高级 `tasks.json` 配置示例。
+以下是让使用 CMake 构建的 C++ 和使用 Cargo 构建的 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 共存的高级 `tasks.json` 配置示例。
 
 ```json
 {
@@ -334,9 +334,9 @@ sequenceDiagram
     VSCode->>Developer: 在 GUI 上的“变量”窗格以树状显示
 ```
 
-正如该序列图所示，在调试会话期间，VSCode 和 CodeLLDB 之间正在进行无数次通信（Debug Adapter Protocol - DAP）。哪怕是像 C++ 的 `std::map` 或 Rust 的 `Vec<T>` 这种作为指针集合的复杂数据结构，由于 CodeLLDB 内置了格式化功能，也能在 VSCode 的 GUI 上非常直观地（以展开数组内容的树状形式）显示出来。
+正如该序列图所示，在调试会话期间，VSCode 和 CodeLLDB 之间正在进行无数次通信（Debug Adapter Protocol - DAP）。哪怕是像 C++ 的 `std::map` 或 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 的 `Vec<T>` 这种作为指针集合的复杂数据结构，由于 CodeLLDB 内置了格式化功能，也能在 VSCode 的 GUI 上非常直观地（以展开数组内容的树状形式）显示出来。
 
-为了实现这一点，Rust 的编译器在 DWARF 格式中详细嵌入了类型的布局信息（如大小和填充等），而 CodeLLDB 就能根据这些信息，出色地将目标内存上的原生字节流转换为人类可读的格式。
+为了实现这一点，[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 的编译器在 DWARF 格式中详细嵌入了类型的布局信息（如大小和填充等），而 CodeLLDB 就能根据这些信息，出色地将目标内存上的原生字节流转换为人类可读的格式。
 
 ---
 
@@ -370,7 +370,7 @@ $$ T_{total} = T_{design} + T_{write} + \sum_{k=1}^{N} \left( T_{compile}^{(k)} 
 
 ## 结语
 
-C++ 和 Rust 都是以“压榨硬件极限性能”为目标的严苛语言，要求开发者具备高水平的理解和准确的编码能力。
+C++ 和 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 都是以“压榨硬件极限性能”为目标的严苛语言，要求开发者具备高水平的理解和准确的编码能力。
 
 通过应用本文介绍的 10 款扩展功能和配置，VSCode 将超越单纯文本编辑器的范畴，进化为兼具编译器深厚知识与调试器透视能力的“开发者的强大外骨格”。
 

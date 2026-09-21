@@ -237,7 +237,7 @@ graph LR
 
 ### 6.1 Importancia de la Detección de Actividad de Voz (VAD)
 
-En el procesamiento en tiempo real, ejecutar constantemente la inferencia, incluso en partes silenciosas, es un desperdicio de recursos computacionales. Al intercalar un algoritmo VAD (como el procesamiento de umbral basado en energía simple o WebRTC VAD) en la etapa preliminar, se realiza el control de **"iniciar el almacenamiento en búfer solo cuando se inicia el habla, y activar `whisper_full` en el momento en que el habla termina (un cierto tiempo de silencio)"**.
+En el procesamiento en tiempo real, ejecutar constantemente la inferencia, incluso en partes silenciosas, es un desperdicio de recursos computacionales. Al intercalar un algoritmo VAD (como el procesamiento de umbral basado en energía simple o [WebRTC](https://kenji.blog/es/p/webrtc-realtime-communication-p2p/) VAD) en la etapa preliminar, se realiza el control de **"iniciar el almacenamiento en búfer solo cuando se inicia el habla, y activar `whisper_full` en el momento en que el habla termina (un cierto tiempo de silencio)"**.
 
 ### 6.2 Enfoque de ventana deslizante (Sliding Window)
 

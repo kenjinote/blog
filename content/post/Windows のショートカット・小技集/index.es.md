@@ -152,7 +152,7 @@ A continuación, se presentan algunos comandos que puedes ejecutar en "Ejecutar"
 ![img_5.png](img_5.webp)
 - Escribe `calc` y presiona `Enter`
 
-## Iniciar Paint
+## Iniciar [Paint](https://kenji.blog/es/p/browser-rendering-mechanism-dom-paint/)
 ![img_6.png](img_6.webp)
 - Escribe `mspaint` y presiona `Enter`
 

@@ -18,7 +18,7 @@ Dalam ilmu komputer, mendeteksi apakah ada "siklus" (putaran) tak terduga yang t
 
 Algoritma ini sering disebut juga sebagai **Algoritma Kura-kura dan Kelinci** (Tortoise and Hare Algorithm) karena menggunakan dua penunjuk (pointer) dengan kecepatan yang berbeda (sering kali dianalogikan sebagai "kelinci" dan "kura-kura").
 
-Dalam artikel ini, kita akan membahas secara detail mulai dari cara kerja algoritma ini, latar belakang matematisnya, hingga contoh implementasi konkret menggunakan C++ dan Rust.
+Dalam artikel ini, kita akan membahas secara detail mulai dari cara kerja algoritma ini, latar belakang matematisnya, hingga contoh implementasi konkret menggunakan C++ dan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/).
 
 ## Apa itu Deteksi Siklus?
 
@@ -111,7 +111,7 @@ Artinya, segera setelah tumbukan terjadi, **jika kita mengembalikan salah satu p
 
 ## Implementasi dengan Kode
 
-Mari kita terapkan teori di atas ke dalam implementasi C++ dan Rust.
+Mari kita terapkan teori di atas ke dalam implementasi C++ dan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/).
 
 ### Implementasi dengan C++
 
@@ -207,7 +207,7 @@ int main() {
 }
 ```
 
-### Implementasi dengan Rust
+### Implementasi dengan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)
 
 Dalam kasus Rust, implementasi linked list cenderung rumit karena aturan kepemilikan (ownership) dan peminjaman (borrowing). Oleh karena itu, pada pemrograman kompetitif dsb, biasanya masalah dimodelkan sebagai referensi indeks pada array (atau `Vec`).
 Di sini kami tunjukkan contoh implementasi menggunakan array di mana "pointer ke berikutnya" diganti dengan penyimpanan "indeks berikutnya".
@@ -332,4 +332,4 @@ Dalam artikel ini, kita telah membahas **Algoritma Deteksi Siklus Robert Floyd**
 Ini adalah metode elegan yang memungkinkan deteksi siklus serta penentuan titik awal siklus dalam waktu $O(N)$ dan memori $O(1)$ dengan pemikiran sederhana menjalankan dua pointer yang memiliki kecepatan berbeda.
 Dengan memahami dasar matematisnya, kami harap Anda dapat memahami dengan jelas alasan mengapa setelah tumbukan, dengan mengembalikan satu pointer ke titik awal dan memajukan keduanya dengan kecepatan yang sama, mereka akan menemukan titik awal siklus.
 
-Dalam implementasi struktur data dan pemrograman kompetitif, algoritma ini menjadi alat yang sangat kuat. Silakan coba mengimplementasikannya secara mandiri menggunakan C++ atau Rust.
+Dalam implementasi struktur data dan pemrograman kompetitif, algoritma ini menjadi alat yang sangat kuat. Silakan coba mengimplementasikannya secara mandiri menggunakan C++ atau [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/).

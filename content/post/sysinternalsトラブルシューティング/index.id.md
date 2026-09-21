@@ -153,7 +153,7 @@ Mirip dengan ProcExp, aktifkan `Verify Code Signatures` dan `Check VirusTotal.co
 ## 5. Melacak Koneksi Jaringan Tersembunyi Menggunakan TCPView
 
 Meskipun Anda dapat memeriksa status komunikasi melalui tab Jaringan (Network) di Task Manager atau menggunakan perintah `netstat -ano`, pembaruannya lambat dan melakukan pemetaan nama proses ke PID secara manual sangat merepotkan.
-TCPView memantau semua titik akhir TCP dan UDP secara real-time, lalu menampilkan daftar proses yang berkomunikasi dengan alamat jarak jauh dan port tertentu.
+TCPView memantau semua titik akhir [TCP](https://kenji.blog/id/p/http3-quic-protocol-tcp-udp/) dan [UDP](https://kenji.blog/id/p/http3-quic-protocol-tcp-udp/) secara real-time, lalu menampilkan daftar proses yang berkomunikasi dengan alamat jarak jauh dan port tertentu.
 
 ### 5.1 Mengidentifikasi Komunikasi C2 yang Berbahaya
 Jika malware memasang backdoor (pintu belakang) dan mengirimkan Beacon (suar) ke server C2 (Command and Control) eksternal, Anda harus mencari karakteristik berikut menggunakan TCPView:
@@ -161,7 +161,7 @@ Jika malware memasang backdoor (pintu belakang) dan mengirimkan Beacon (suar) ke
 *   **Nama proses tidak wajar**: Misalnya `svchost.exe` beroperasi dengan hak pengguna alih-alih hak sistem, dan mempertahankan status koneksi `ESTABLISHED` dengan alamat IP asing yang tidak dikenal.
 *   **Komunikasi dari proses yang tidak terduga**: Misalnya, Kalkulator (`calc.exe`) atau Notepad (`notepad.exe`) mengirimkan atau menerima jumlah paket yang besar melalui port 443 atau 80 (tanda khas Process Hollowing).
 
-Jika Anda menemukan komunikasi mencurigakan, Anda dapat secara paksa memutuskan sesi TCP (mengeluarkan paket RST) dengan mengirimkan `Close Connection` secara langsung dari TCPView, atau menghentikan proses tersebut secara paksa dengan mengeklik `End Process`.
+Jika Anda menemukan komunikasi mencurigakan, Anda dapat secara paksa memutuskan sesi [TCP](https://kenji.blog/id/p/http3-quic-protocol-tcp-udp/) (mengeluarkan paket RST) dengan mengirimkan `Close Connection` secara langsung dari TCPView, atau menghentikan proses tersebut secara paksa dengan mengeklik `End Process`.
 
 ---
 

@@ -147,7 +147,7 @@ $$ T_{backup} = \frac{S_{total}}{B \times (1 - \alpha)} + C \times L $$
 여기서 각 변수는 다음과 같습니다.
 - $S_{total}$ : 백업 대상의 총 데이터 양(Bit)
 - $B$ : 네트워크 대역폭(bps, 예: 1Gbps = $10^9$ bps)
-- $\alpha$ : 네트워크나 프로토콜의 오버헤드(일반적으로 TCP/IP나 SMB 프로토콜에서 0.1 ~ 0.2)
+- $\alpha$ : 네트워크나 프로토콜의 오버헤드(일반적으로 [TCP](https://kenji.blog/ko/p/http3-quic-protocol-tcp-udp/)/IP나 SMB 프로토콜에서 0.1 ~ 0.2)
 - $C$ : 총 파일 수
 - $L$ : 파일 1개당 처리 레이턴시(초)
 

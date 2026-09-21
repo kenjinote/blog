@@ -234,7 +234,7 @@ O modo suportado também inclui o "Quake Mode" (modo suspenso), no qual você po
 
 ---
 
-# 5. Automação do Layout de Inicialização Aproveitando o `wt.exe`
+# 5. Automação do [Layout](https://kenji.blog/pt/p/browser-rendering-mechanism-dom-paint/) de Inicialização Aproveitando o `wt.exe`
 
 As tarefas diárias matinais repetitivas, como abrir terminais num diretório de projeto específico, dividindo a tela em três seções, para rodar tarefas como a build do front-end, iniciar os servidores do back-end, e rodar comandos para monitorar os bancos de dados simultaneamente... devem ser automatizadas.
 
@@ -317,7 +317,7 @@ Existem centenas de temas (config) disponíveis, e também é possível criar os
 
 O WSL2 (Windows Subsystem for Linux 2), que permite rodar um verdadeiro kernel do Linux no Windows, é indispensável para o desenvolvimento web moderno e o desenvolvimento nativo em nuvem (cloud-native). O "**Starship**" é a melhor solução para personalizar os prompts de shells no WSL (como Bash ou Zsh).
 
-Starship é um prompt cross-shell escrito em Rust, extremamente rápido e altamente personalizável. Sua principal vantagem é a capacidade de reproduzir exatamente o mesmo prompt em qualquer shell, seja Bash, Zsh ou Fish, escrevendo um único arquivo de configuração (TOML).
+Starship é um prompt cross-shell escrito em [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/), extremamente rápido e altamente personalizável. Sua principal vantagem é a capacidade de reproduzir exatamente o mesmo prompt em qualquer shell, seja Bash, Zsh ou Fish, escrevendo um único arquivo de configuração (TOML).
 
 ## 7.1 Instalação do Starship
 

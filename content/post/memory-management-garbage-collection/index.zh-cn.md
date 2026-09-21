@@ -8,7 +8,7 @@ categories: ["programming", "computer-science", "software-engineering"]
 tags: ["memory-management", "c-language", "java", "rust", "garbage-collection"]
 ---
 
-# 欢迎来到内存管理的真相：从 C、Java、Rust 探索深渊
+# 欢迎来到内存管理的真相：从 C、Java、[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 探索深渊
 
 在软件开发中，内存管理是无法回避的永恒主题，也是决定系统性能与稳定性的最重要因素之一。本文将通过堪比两万字的深度解析，从内存管理的基础理论到现代架构中的优化手法，进行全面涵盖。
 
@@ -206,7 +206,7 @@ public class GcExample {
 
 ---
 
-## 4. Rust：所有权和借用带来的第三条路
+## 4. [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)：所有权和借用带来的第三条路
 
 C 语言“通过手动管理实现的极限性能”和 Java“通过自动管理实现的内存安全”。长期以来，人们认为这两者之间存在着权衡（Trade-off）关系。然而，Rust 语言通过引入 **“所有权（ Ownership ）”** 这一革命性的模型，实现了在消除垃圾回收的同时，在编译时百分之百保证内存安全这一壮举。
 
@@ -222,7 +222,7 @@ C 语言“通过手动管理实现的极限性能”和 Java“通过自动管�
 
 ### 4.2 所有权的转移（Move）
 
-在 Rust 中，当你将变量赋值给另一个变量，或者通过值传递给函数时，所有权会“转移（ Move ）”。原来的变量在转移之后将无法访问（会导致编译错误）。这样，从结构上就避免了重复释放（Double Free）的可能性。
+在 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 中，当你将变量赋值给另一个变量，或者通过值传递给函数时，所有权会“转移（ Move ）”。原来的变量在转移之后将无法访问（会导致编译错误）。这样，从结构上就避免了重复释放（Double Free）的可能性。
 
 ```rust
 fn main() {
@@ -241,7 +241,7 @@ fn main() {
 
 ### 4.3 借用（Borrowing）与生命周期
 
-如果在所有的操作中都转移所有权，那么编程将变得极其不便。为了能在不剥夺所有权的情况下访问数据，Rust 引入了 **引用（ Reference ）** 和 **借用（ Borrowing ）** 的概念。
+如果在所有的操作中都转移所有权，那么编程将变得极其不便。为了能在不剥夺所有权的情况下访问数据，[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 引入了 **引用（ Reference ）** 和 **借用（ Borrowing ）** 的概念。
 
 此外，Rust 编译器内置的 **借用检查器（ Borrow Checker ）** ，会在编译时强制执行以下严格规则。
 
@@ -295,7 +295,7 @@ stateDiagram-v2
 
 ### 5.1 不同语言的缓存效率差异
 
-- **C / C++ / Rust** : 当创建结构体数组（如 `struct Array[100]` 或 `Vec<MyStruct>` ）时，数据在内存中是没有间隙、连续排列的。在遍历数组时，CPU 的硬件预取器会完美发挥作用，缓存命中率将飞跃性地提升。
+- **C / C++ / [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)** : 当创建结构体数组（如 `struct Array[100]` 或 `Vec<MyStruct>` ）时，数据在内存中是没有间隙、连续排列的。在遍历数组时，CPU 的硬件预取器会完美发挥作用，缓存命中率将飞跃性地提升。
 - **Java** : Java 的对象数组（ `MyObject[]` ）并非实体，而是“指向对象的引用（指针）”的数组。由于作为实体的各个对象被分配在堆上零散的位置，因此在每次循环处理时都要顺着指针访问随机的内存地址，这会导致严重的连续缓存未命中（ Cache Miss ）。
 
 内存访问的有效平均时间 $ T_{avg} $ 可表示如下。
@@ -303,7 +303,7 @@ stateDiagram-v2
 $ T_{avg} = h \cdot T_{cache} + (1 - h) \cdot T_{memory} $
 
 这里，$ h $ 是缓存命中率（ $ 0 \le h \le 1 $ ），$ T_{cache} $ 是缓存访问时间（约 1〜4 ns ），$ T_{memory} $ 是主内存访问时间（约 100 ns ）。
-是像 C/Rust 那样将 $ h $ 提升到 0.99，还是像 Java 的指针追踪那样降到 0.5，这会让应用程序的循环执行速度产生数十倍的差距。这就是在游戏引擎或高频交易系统中选择 C++ 或 Rust 的真正原因。
+是像 C/[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 那样将 $ h $ 提升到 0.99，还是像 Java 的指针追踪那样降到 0.5，这会让应用程序的循环执行速度产生数十倍的差距。这就是在游戏引擎或高频交易系统中选择 C++ 或 Rust 的真正原因。
 
 ---
 
@@ -315,7 +315,7 @@ $ T_{avg} = h \cdot T_{cache} + (1 - h) \cdot T_{memory} $
 |:---:|:---|:---|:---|
 | **C** | 通过 `malloc/free` 手动管理 | 极致的速度，缓存效率最大化，轻量 | 漏洞的温床（泄漏、重复释放），开发成本高 |
 | **Java** | GC (垃圾回收) | 提升开发速度，确保内存安全 | STW 导致的延迟波动，缓存效率恶化 |
-| **Rust** | 所有权・借用检查器 | 零运行时成本的安全性，高速 | 学习曲线陡峭，生命周期设计困难 |
+| **[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)** | 所有权・借用检查器 | 零运行时成本的安全性，高速 | 学习曲线陡峭，生命周期设计困难 |
 
 **内存管理** 的历史，是在性能与安全之间摇摆的跷跷板游戏。为了防止手动管理带来的惨剧，诞生了 GC；为了避免 GC 带来的性能损耗，又发明了所有权模型。
 

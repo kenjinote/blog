@@ -31,7 +31,7 @@ Derzeit sind sie wie oben zugewiesen. Sie können die Tastenbelegung auch für j
 - Schmutz sammelt sich um den Trackball herum an, daher ist es notwendig, den Ball regelmäßig herauszunehmen und zu reinigen (etwa alle paar Tage).
 - Es dauert eine Weile, sich daran zu gewöhnen, da das Bediengefühl anders ist als bei einer Maus: Bewegen des Cursors mit dem Zeige- oder Mittelfinger und Bedienen des Mausrads mit dem Daumen.
 - Obwohl ich oben geschrieben habe, dass es einfach ist, feine Bewegungen zu machen, ist es immer noch schwierig, den Cursor mit einem Trackball pixelweise zu bewegen.
-- Das Mausrad kann nicht bedient werden, während die linke Taste gedrückt wird (z. B. wenn Sie beim Auswählen eines Bereichs in Paint hinein-/herauszoomen möchten).
+- Das Mausrad kann nicht bedient werden, während die linke Taste gedrückt wird (z. B. wenn Sie beim Auswählen eines Bereichs in [Paint](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/) hinein-/herauszoomen möchten).
 
 Insgesamt denke ich, dass es sich um einen teuren Trackball handelt, aber im Allgemeinen ist er recht einfach zu bedienen, und ich habe das Gefühl, dass meine Arbeit produktiver geworden ist.
 Ich hoffe, das ist hilfreich für diejenigen, die einen Kauf in Betracht ziehen.

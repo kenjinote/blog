@@ -114,7 +114,7 @@ Keuntungan Event Loop adalah tidak memerlukan manajemen kunci (lock) untuk keada
 
 ---
 
-## 3. Model Actor dan Pengiriman Pesan (Rust / Erlang / Akka)
+## 3. Model Actor dan Pengiriman Pesan ([Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) / Erlang / Akka)
 
 Jika Event Loop adalah pendekatan yang menantang batas thread tunggal, **model Actor** adalah paradigma untuk membuat pemrosesan konkuren di lingkungan multi-thread atau terdistribusi menjadi aman dan dapat diskalakan.
 
@@ -139,7 +139,7 @@ flowchart LR
     end
 ```
 
-### 3.2 Contoh Implementasi Actor Menggunakan Rust
+### 3.2 Contoh Implementasi Actor Menggunakan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)
 
 Dalam Rust, yang merupakan bahasa pemrograman sistem, Anda dapat membangun model Actor menggunakan crate asinkron yang kuat seperti `tokio` dan `actix`. Di sini, ditunjukkan implementasi pola Actor sederhana menggunakan saluran `mpsc` (Multi-Producer, Single-Consumer).
 
@@ -207,7 +207,7 @@ async fn main() {
 }
 ```
 
-Kepemilikan (Ownership) dan sistem tipe dalam Rust menjamin keamanan pengiriman pesan antar Actor saat kompilasi. Jika kita menyatakan throughput sistem dengan rumus $ S $, untuk jumlah actor $ N $ dan tingkat pemrosesan pesan $ R $, secara ideal $ S = N \times R $, yang menunjukkan skalabilitas tinggi.
+Kepemilikan (Ownership) dan sistem tipe dalam [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) menjamin keamanan pengiriman pesan antar Actor saat kompilasi. Jika kita menyatakan throughput sistem dengan rumus $ S $, untuk jumlah actor $ N $ dan tingkat pemrosesan pesan $ R $, secara ideal $ S = N \times R $, yang menunjukkan skalabilitas tinggi.
 
 ---
 
@@ -281,7 +281,7 @@ Teknologi yang telah dibahas sejauh ini memiliki kasus penggunaan masing-masing 
 1. **Event Loop (Node.js)**: 
    - API Gateway dan sistem obrolan waktu nyata yang banyak melakukan pemrosesan yang dibatasi oleh I/O (I/O bound).
    - Server WebSocket yang menangani koneksi bersamaan dalam jumlah besar.
-2. **Model Actor (Rust / Akka)**: 
+2. **Model Actor ([Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) / Akka)**: 
    - Pemrosesan konkuren yang memiliki keadaan kompleks (server permainan, pelacakan waktu nyata).
    - Sistem ketersediaan tinggi yang memerlukan kemampuan perbaikan diri (self-healing) dari kesalahan (pohon supervisor).
 3. **CQRS / Event Sourcing**: 

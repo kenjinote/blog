@@ -177,7 +177,7 @@ The table below summarizes how to choose a scheme by purpose.
 Today, many open-source libraries are provided that allow you to use FHE without deep cryptographic knowledge.
 
 *   **Microsoft SEAL (Simple Encrypted Arithmetic Library)**: A C++ library supporting BFV, BGV, and CKKS. One of the industry standards. Its Python binding, **TenSEAL**, is popular among AI engineers.
-*   **Zama (Concrete)**: A framework based on TFHE. You can write in Rust/Python, and it provides functionality (Concrete ML) to compile existing PyTorch models and run them on FHE.
+*   **Zama (Concrete)**: A framework based on TFHE. You can write in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)/Python, and it provides functionality (Concrete ML) to compile existing PyTorch models and run them on FHE.
 *   **OpenFHE**: The successor to PALISADE, a comprehensive C++ library supporting all major schemes.
 
 ### Example of FHE Programming using Python (TenSEAL)

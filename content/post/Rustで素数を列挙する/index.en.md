@@ -8,7 +8,7 @@ image: "images/img.webp"
 categories: ["programming"]
 description: 'Introduces an implementation example of a simple algorithm to enumerate prime numbers up to a specified upper limit as a learning exercise for Rust programming. Explains the basic coding method using loops and conditional branching clearly with specific sample code.'
 ---
-I wrote a program to enumerate prime numbers in Rust.
+I wrote a program to enumerate prime numbers in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/).
 
 ```rust
 fn main() {

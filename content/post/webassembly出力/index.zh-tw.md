@@ -11,13 +11,13 @@ tags: ["C++", "Rust", "Wasm", "JavaScript"]
 
 ## 1. 簡介
 
-在現代的 Web 開發中，JavaScript（以及 TypeScript）長期以來確立了作為在瀏覽器上運行的唯一程式語言的地位。然而，近年來在瀏覽器上進行更高度運算的需求不斷增加，例如影像處理、影片編碼、3D 遊戲、物理模擬等，希望能單獨在瀏覽器內執行。因此， **WebAssembly（通稱 Wasm）** 應運而生。
+在現代的 Web 開發中，JavaScript（以及 TypeScript）長期以來確立了作為在瀏覽器上運行的唯一程式語言的地位。然而，近年來在瀏覽器上進行更高度運算的需求不斷增加，例如影像處理、影片編碼、3D 遊戲、物理模擬等，希望能單獨在瀏覽器內執行。因此， **[WebAssembly](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)（通稱 [Wasm](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)）** 應運而生。
 
-本文將從 WebAssembly 的基礎開始，詳細解說從 C++（使用 Emscripten）與 Rust（使用 `wasm-pack`）這兩種強大的系統程式語言匯出 Wasm，並與 JavaScript 環境進行整合的步驟與內部架構。此外，我們也會深入探討記憶體邊界的管理、字串與陣列等複雜資料的傳遞方式、效能上的開銷（Overhead），以及 Wasm 的二進位格式（`.wasm`）。
+本文將從 WebAssembly 的基礎開始，詳細解說從 C++（使用 Emscripten）與 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)（使用 `wasm-pack`）這兩種強大的系統程式語言匯出 [Wasm](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)，並與 JavaScript 環境進行整合的步驟與內部架構。此外，我們也會深入探討記憶體邊界的管理、字串與陣列等複雜資料的傳遞方式、效能上的開銷（Overhead），以及 Wasm 的二進位格式（`.wasm`）。
 
-## 2. WebAssembly (Wasm) 概要與架構
+## 2. [WebAssembly](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) ([Wasm](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)) 概要與架構
 
-WebAssembly 是一種針對堆疊式虛擬機（Stack-based Virtual Machine）的二進位指令格式。它被設計為一種「可移植的編譯目標（Portable Compilation Target）」，可由 C/C++、Rust、Go、Zig 等語言編譯而成，目的是在網頁瀏覽器上以接近原生的速度執行。
+WebAssembly 是一種針對堆疊式虛擬機（Stack-based Virtual Machine）的二進位指令格式。它被設計為一種「可移植的編譯目標（Portable Compilation Target）」，可由 C/C++、[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)、Go、Zig 等語言編譯而成，目的是在網頁瀏覽器上以接近原生的速度執行。
 
 下圖展示了從 C++ 與 Rust 產生 WebAssembly，直到在瀏覽器中執行的工具鏈大致流程。
 
@@ -38,11 +38,11 @@ graph TD
   I --> J
 ```
 
-Wasm 並不是用來取代 JavaScript 的。它是與 JavaScript 共同運作，藉由將運算負載高的任務卸載（Offload）給 Wasm 來發揮各自的優勢。
+[Wasm](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 並不是用來取代 JavaScript 的。它是與 JavaScript 共同運作，藉由將運算負載高的任務卸載（Offload）給 Wasm 來發揮各自的優勢。
 
 ## 3. 數學上的課題：曼德博集合的計算
 
-本文將使用會對 CPU 造成高負載的「曼德博集合（Mandelbrot set）」繪圖演算法，並以 C++ 和 Rust 來進行實作。
+本文將使用會對 CPU 造成高負載的「曼德博集合（Mandelbrot set）」繪圖演算法，並以 C++ 和 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 來進行實作。
 
 曼德博集合定義為以下的複數遞迴數列：
 
@@ -58,7 +58,7 @@ $$ x^2 + y^2 > 4 $$
 
 ## 4. 使用 C++ 與 Emscripten 的方法
 
-Emscripten 是一個基於 LLVM 的編譯器工具鏈，是將 C/C++ 程式碼編譯為 WebAssembly 的實質標準。它提供了一個強大的執行環境（Runtime），能透過瀏覽器 API（Web API）來模擬 POSIX 的系統呼叫。
+Emscripten 是一個基於 LLVM 的編譯器工具鏈，是將 C/C++ 程式碼編譯為 [WebAssembly](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 的實質標準。它提供了一個強大的執行環境（Runtime），能透過瀏覽器 API（Web API）來模擬 POSIX 的系統呼叫。
 
 ### C++ 實作程式碼
 
@@ -113,7 +113,7 @@ extern "C" {
 emcc mandelbrot.cpp -O3 -s WASM=1 -s EXPORTED_FUNCTIONS="['_compute_mandelbrot', '_malloc', '_free']" -s EXPORTED_RUNTIME_METHODS="['ccall', 'cwrap']" -o mandelbrot.js
 ```
 
-在 JavaScript 端，我們會載入 Emscripten 產生的膠水程式碼（Glue Code, `mandelbrot.js`），並如下方所示使用 WebAssembly API 進行呼叫。
+在 JavaScript 端，我們會載入 Emscripten 產生的膠水程式碼（Glue Code, `mandelbrot.js`），並如下方所示使用 [WebAssembly](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) API 進行呼叫。
 
 ```javascript
 Module.onRuntimeInitialized = () => {
@@ -137,11 +137,11 @@ Module.onRuntimeInitialized = () => {
 };
 ```
 
-## 5. 使用 Rust 與 `wasm-pack` 的方法
+## 5. 使用 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 與 `wasm-pack` 的方法
 
-Rust 提供了對 WebAssembly 的一級（First-class）支援，透過使用 `wasm-bindgen` 與 `wasm-pack` 工具，可以實現 JavaScript 與 Rust 之間的高度整合。相對於 Emscripten 採用「將 C/C++ 龐大的 Runtime 帶入瀏覽器」的方法，Rust 的 `wasm-pack` 則是採用「只產生必要最小限度的綁定（JS 膠水程式碼）」的方法。
+[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 提供了對 [WebAssembly](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 的一級（First-class）支援，透過使用 `wasm-bindgen` 與 `wasm-pack` 工具，可以實現 JavaScript 與 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 之間的高度整合。相對於 Emscripten 採用「將 C/C++ 龐大的 Runtime 帶入瀏覽器」的方法，Rust 的 `wasm-pack` 則是採用「只產生必要最小限度的綁定（JS 膠水程式碼）」的方法。
 
-### Rust 實作程式碼
+### [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 實作程式碼
 
 建立 Cargo 專案，並在 `Cargo.toml` 中指定 `cdylib` 與 `wasm-bindgen`。
 
@@ -193,7 +193,7 @@ pub fn compute_mandelbrot_rust(width: usize, height: usize, max_iter: u32) -> Ve
 wasm-pack build --target web
 ```
 
-從 JavaScript 匯入產生出的套件。多虧了 `wasm-bindgen`，Rust 的 `Vec<i32>` 會自動轉換為 JavaScript 的 `Int32Array`（隱藏了指標操作）。
+從 JavaScript 匯入產生出的套件。多虧了 `wasm-bindgen`，[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 的 `Vec<i32>` 會自動轉換為 JavaScript 的 `Int32Array`（隱藏了指標操作）。
 
 ```javascript
 import init, { compute_mandelbrot_rust } from './pkg/mandelbrot_wasm.js';
@@ -215,7 +215,7 @@ run();
 
 ## 6. 深入探討：記憶體邊界與資料型別的傳遞
 
-WebAssembly 中最重要的概念之一就是「線性記憶體（Linear Memory）」。Wasm 程式碼無法直接存取宿主（瀏覽器）的記憶體空間，取而代之的是被分配到一個被隔離的巨大 `ArrayBuffer`。這就是線性記憶體。
+[WebAssembly](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 中最重要的概念之一就是「線性記憶體（Linear Memory）」。[Wasm](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 程式碼無法直接存取宿主（瀏覽器）的記憶體空間，取而代之的是被分配到一個被隔離的巨大 `ArrayBuffer`。這就是線性記憶體。
 
 ```mermaid
 sequenceDiagram
@@ -238,29 +238,29 @@ sequenceDiagram
 
 ### 傳遞字串與陣列的方法
 
-整數或浮點數（`i32`, `i64`, `f32`, `f64`）可以作為值直接傳遞給 Wasm 函式。然而，字串、陣列或結構體等複雜型別，則無法直接作為 Wasm 的函式簽章來傳遞。
+整數或浮點數（`i32`, `i64`, `f32`, `f64`）可以作為值直接傳遞給 [Wasm](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 函式。然而，字串、陣列或結構體等複雜型別，則無法直接作為 Wasm 的函式簽章來傳遞。
 
 **在 Emscripten 的情況** ：
-1. 在 JS 端呼叫 `Module._malloc`，確保 Wasm 端的線性記憶體區域。
+1. 在 JS 端呼叫 `Module._malloc`，確保 [Wasm](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 端的線性記憶體區域。
 2. 從 JS 使用 `Module.HEAPU8.set()` 等方法，將資料寫入確保好的記憶體位址（指標）。
 3. 將指標傳遞給 C++ 的函式。
 4. 計算結束後，在 JS 端從該指標讀取結果，最後呼叫 `Module._free`。
 
-**在 wasm-bindgen (Rust) 的情況** ：
-上述繁雜的記憶體管理流程，會完全隱藏在自動產生的膠水程式碼（JS 封裝）內。從 JS 端只需單純地將 `String` 或 `Array` 傳遞給 Rust 函式，背後就會自動執行確保緩衝區（相當於 `malloc`）、複製、傳遞指標、記憶體釋放等一系列處理。
+**在 wasm-bindgen ([Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)) 的情況** ：
+上述繁雜的記憶體管理流程，會完全隱藏在自動產生的膠水程式碼（JS 封裝）內。從 JS 端只需單純地將 `String` 或 `Array` 傳遞給 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 函式，背後就會自動執行確保緩衝區（相當於 `malloc`）、複製、傳遞指標、記憶體釋放等一系列處理。
 
 ## 7. 效能開銷與最佳化
 
-雖然 WebAssembly 能以接近原生的速度執行，但「跨越 JavaScript 與 WebAssembly 邊界的通訊（Interop）」是存在開銷的。
+雖然 [WebAssembly](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 能以接近原生的速度執行，但「跨越 JavaScript 與 WebAssembly 邊界的通訊（Interop）」是存在開銷的。
 
-* **呼叫開銷（Call Overhead）** ：這是 JavaScript 引擎呼叫 Wasm 函式的切換成本。雖然現在已經大幅最佳化，但仍應避免在每一幀呼叫極輕量的函式數萬次這樣的設計。
-* **記憶體複製成本** ：當傳遞字串或陣列給 Wasm 時，會發生將資料從 JS 的垃圾回收（[Garbage Collection](https://kenji.blog/zh-tw/p/memory-management-garbage-collection/)）管理的記憶體中，複製到 Wasm 線性記憶體（ArrayBuffer）的動作。當傳遞大容量資料時，會需要一種「零拷貝（Zero-copy）」的設計，也就是一開始就在 Wasm 記憶體上建構資料，而 JS 端則透過 TypedArray 的視圖（例如 `Uint8Array`）來進行存取。
+* **呼叫開銷（Call Overhead）** ：這是 JavaScript 引擎呼叫 [Wasm](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 函式的切換成本。雖然現在已經大幅最佳化，但仍應避免在每一幀呼叫極輕量的函式數萬次這樣的設計。
+* **記憶體複製成本** ：當傳遞字串或陣列給 Wasm 時，會發生將資料從 JS 的垃圾回收（[Garbage Collection](https://kenji.blog/zh-tw/p/memory-management-garbage-collection/)）管理的記憶體中，複製到 [Wasm](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 線性記憶體（ArrayBuffer）的動作。當傳遞大容量資料時，會需要一種「零拷貝（Zero-copy）」的設計，也就是一開始就在 Wasm 記憶體上建構資料，而 JS 端則透過 TypedArray 的視圖（例如 `Uint8Array`）來進行存取。
 
-例如，在遊戲引擎或物理運算引擎中，一般的架構會將所有狀態保存在 Wasm 的線性記憶體內，而 JavaScript 僅負責每幀發出「更新」的觸發訊號，以及畫面渲染（呼叫 WebGL/WebGPU API）。
+例如，在遊戲引擎或物理運算引擎中，一般的架構會將所有狀態保存在 [Wasm](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 的線性記憶體內，而 JavaScript 僅負責每幀發出「更新」的觸發訊號，以及畫面渲染（呼叫 WebGL/WebGPU API）。
 
-## 8. 剖析 WebAssembly 二進位格式 (.wasm)
+## 8. 剖析 [WebAssembly](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 二進位格式 (.wasm)
 
-在此，我們來看看編譯器輸出的 `.wasm` 檔案的內部結構。Wasm 的二進位檔案為了重視擴充性與解析速度，是由被稱為「區段（Section）」的邏輯區塊集合所構成。
+在此，我們來看看編譯器輸出的 `.wasm` 檔案的內部結構。[Wasm](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 的二進位檔案為了重視擴充性與解析速度，是由被稱為「區段（Section）」的邏輯區塊集合所構成。
 
 ```mermaid
 graph TD
@@ -281,15 +281,15 @@ graph TD
 檔案的魔術數字（Magic Number）一定會由 `0x00 0x61 0x73 0x6D` (`\0asm`) 開始。接下來的每個區段各自擁有其 ID。
 
 * **Type Section** ：定義所有使用到的函式簽章（參數與回傳值型別）。
-* **Import Section** ：從 JavaScript 環境提供給 Wasm 的函式或記憶體列表。例如，如果要從 C++ 呼叫 `console.log`，就會在這裡宣告。
+* **Import Section** ：從 JavaScript 環境提供給 [Wasm](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 的函式或記憶體列表。例如，如果要從 C++ 呼叫 `console.log`，就會在這裡宣告。
 * **Code Section** ：存放實際的位元組碼指令（例如 `i32.add`、`call` 或 `loop` 等）。由於是堆疊機器的架構，形式上是將運算元推入堆疊中再呼叫運算指令。
-* **Data Section** ：在 C++ 或 Rust 程式碼內定義的靜態字串字面量或初始化資料，會從這個區段載入到線性記憶體。
+* **Data Section** ：在 C++ 或 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 程式碼內定義的靜態字串字面量或初始化資料，會從這個區段載入到線性記憶體。
 
-瀏覽器的 Wasm 引擎會透過串流編譯（Streaming Compilation，邊下載邊平行編譯為機器碼）這些區段，來實現啟動速度的劇烈提升。
+瀏覽器的 [Wasm](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 引擎會透過串流編譯（Streaming Compilation，邊下載邊平行編譯為機器碼）這些區段，來實現啟動速度的劇烈提升。
 
 ## 9. C++ 與 Rust：該選擇哪一個？
 
-在產生 WebAssembly 時，該選擇 C++ 還是 Rust，很大程度上取決於專案需求與既有資產。
+在產生 [WebAssembly](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 時，該選擇 C++ 還是 Rust，很大程度上取決於專案需求與既有資產。
 
 **應該選擇 C++ / Emscripten 的情況** ：
 * 想要將既有的 C/C++ 函式庫（FFmpeg、OpenCV、SQLite 等）移植到瀏覽器時。

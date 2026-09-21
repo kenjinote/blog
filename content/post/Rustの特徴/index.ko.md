@@ -16,7 +16,7 @@ description: 'Mozilla가 개발하는 프로그래밍 언어 ''Rust''의 주요 
 
 
 
-# Rust(러스트)의 특징
+# [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)(러스트)의 특징
 
 - Mozilla가 개발하고 있는 비교적 새로운 오픈 소스 프로그래밍 언어
 - 가비지 컬렉션이 없으며, 빠르고 시스템 프로그래밍에 특화된 언어

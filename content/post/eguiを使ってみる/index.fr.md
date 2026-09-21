@@ -11,7 +11,7 @@ description: 'Nous présentons l''utilisation de base de la bibliothèque GUI «
 
 # Qu'est-ce que egui
 
-C'est une bibliothèque GUI qui peut être utilisée en Rust.
+C'est une bibliothèque GUI qui peut être utilisée en [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/).
 
 # Essayer egui
 

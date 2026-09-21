@@ -31,7 +31,7 @@ description: 'Представляем список UI-дизайнов «диа
 Это версия LINE для Windows.
 ![img_4.png](img_4.webp)
 
-## Paint.NET
+## [Paint](https://kenji.blog/ru/p/browser-rendering-mechanism-dom-paint/).NET
 Это программа для редактирования изображений.
 ![img_5.png](img_5.webp)
 

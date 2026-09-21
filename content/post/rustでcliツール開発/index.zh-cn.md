@@ -12,7 +12,7 @@ tags: ["Rust", "CLI", "clap", "tokio"]
 
 ## 1. 简介
 
-在现代软件开发中，CLI（命令行界面）工具是大幅提升开发者生产力不可或缺的存在。过去，Shell 脚本、Python、Ruby 等是主流，但近年来， **Rust** 已经作为 CLI 工具开发的业界标准确立了稳固的地位。
+在现代软件开发中，CLI（命令行界面）工具是大幅提升开发者生产力不可或缺的存在。过去，Shell 脚本、Python、Ruby 等是主流，但近年来， **[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)** 已经作为 CLI 工具开发的业界标准确立了稳固的地位。
 
 本文将彻底讲解如何从基础到高级，使用 Rust 构建“运行爆速、开发爆速”的实用 CLI 工具。我们不仅仅是做一个能动的东西，还将全面涵盖达到商业级别水准的健壮错误处理、使用异步处理实现的高速 API 请求，以及提升用户体验（UX）的进度条实现。
 
@@ -41,9 +41,9 @@ Rust 没有垃圾回收器（GC），通过零成本抽象，它能发挥出与 
 Rust 的生态系统中存在许多强力支持 CLI 开发的优秀 Crate（库）。在本教程中，我们将使用以下可以称为现代 Rust CLI 开发中“黄金技术栈”的 Crate。
 
 1. **`clap`**: 这是在命令行参数解析方面最强大和最受欢迎的 Crate。自版本 4 以来，使用 Derive 宏的声明式定义变得更加精炼，并且支持自动生成帮助信息和输入补全脚本。
-2. **`tokio`**: Rust 异步运行时的业界标准。它极度高效地处理多线程环境下的异步 I/O。
+2. **`tokio`**: [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 异步运行时的业界标准。它极度高效地处理多线程环境下的异步 I/O。
 3. **`reqwest`**: 运行在 `tokio` 上的高功能 HTTP 客户端。具备易用的 API，能够轻松实现异步 API 请求。
-4. **`serde` & `serde_json`**: 执行数据序列化和反序列化的框架。为了将 API 的 JSON 响应映射到 Rust 的类型安全结构体中，它是必不可少的。
+4. **`serde` & `serde_json`**: 执行数据序列化和反序列化的框架。为了将 API 的 JSON 响应映射到 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 的类型安全结构体中，它是必不可少的。
 5. **`indicatif`**: 提供丰富且可定制的进度条。直观地显示异步处理的进度，大幅提升 CLI 的 UX。
 6. **`anyhow` & `thiserror`**: 错误处理的强大组合。最佳实践是使用 `thiserror` 定义库内部的领域错误，并在应用程序的最顶层使用 `anyhow` 进行错误汇总。
 
@@ -86,7 +86,7 @@ $$
 L = \lambda W \implies \lambda = \frac{L}{W}
 $$
 
-也就是说，在网络延迟 $W$ 无法避免的环境下，要提高系统的吞吐量 $\lambda$，唯一的办法就是增加同时处理的请求数 $L$。Rust 的异步任务与 OS 的原生线程不同，其内存开销极小，因此可以轻松地横向扩展 $L$。
+也就是说，在网络延迟 $W$ 无法避免的环境下，要提高系统的吞吐量 $\lambda$，唯一的办法就是增加同时处理的请求数 $L$。[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 的异步任务与 OS 的原生线程不同，其内存开销极小，因此可以轻松地横向扩展 $L$。
 
 ---
 
@@ -239,7 +239,7 @@ Commands:
 
 ## 9. 实现阶段 3: API 客户端与数据映射
 
-将从 GitHub API 返回的 JSON 数据映射到 Rust 的结构体中。实现 `src/models.rs` 和 `src/api.rs`。
+将从 GitHub API 返回的 JSON 数据映射到 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 的结构体中。实现 `src/models.rs` 和 `src/api.rs`。
 
 ```rust
 // src/models.rs
@@ -413,7 +413,7 @@ strip = true        # 移除符号信息，极大地减小二进制文件的体�
 这是将创建的工具分发到世界各地的步骤。
 
 ### 发布到 crates.io
-使用 Rust 的包管理器 Cargo，只需几个命令即可将其发布到官方注册表。
+使用 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 的包管理器 Cargo，只需几个命令即可将其发布到官方注册表。
 
 ```bash
 cargo login <YOUR_TOKEN>
@@ -428,12 +428,12 @@ cargo publish
 
 ## 13. 总结
 
-本文详细讲解了使用 Rust 开发 CLI 工具的一系列流程。
+本文详细讲解了使用 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 开发 CLI 工具的一系列流程。
 
 1. **设计方针**: 确认了 Rust 的安全性与高速度，以及单一二进制文件的优势。
 2. **Crate 选型**: 掌握了 `clap`, `tokio`, `serde`, `indicatif`, `thiserror`, `anyhow` 等强大武器。
 3. **并发处理的数学优势**: 基于阿姆达尔定律和利特尔法则，从理论上理解了异步处理的威力。
 4. **实现与优化**: 从健壮的错误处理到极限的二进制优化，注入了实用的技术诀窍。
 
-使用 Rust 进行 CLI 开发，能通过与编译器的对话，在设计阶段就确保软件质量，是一种绝佳的体验。请务必以本次创建的基础代码为起点，开发出只属于你的原创 CLI 工具，并向全世界发布吧！Happy Rust Coding!
+使用 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 进行 CLI 开发，能通过与编译器的对话，在设计阶段就确保软件质量，是一种绝佳的体验。请务必以本次创建的基础代码为起点，开发出只属于你的原创 CLI 工具，并向全世界发布吧！Happy Rust Coding!
 

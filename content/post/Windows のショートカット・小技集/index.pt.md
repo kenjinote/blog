@@ -145,7 +145,7 @@ Abaixo estão alguns comandos que podem ser usados em "Executar" ou no Prompt de
 ![img_5.png](img_5.webp)
 - Digite `calc` e pressione `Enter`
 
-## Iniciar o Paint
+## Iniciar o [Paint](https://kenji.blog/pt/p/browser-rendering-mechanism-dom-paint/)
 ![img_6.png](img_6.webp)
 - Digite `mspaint` e pressione `Enter`  
 

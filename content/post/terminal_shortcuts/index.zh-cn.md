@@ -248,7 +248,7 @@ function gl { git log --oneline --graph --decorate --all $args }
 
 ## 5.2. 目录跳转的优化（z / zoxide）
 
-使用 `cd` 命令进入层级很深的目录非常麻烦。近年来，能够学习用户移动历史和频率（Frecency：Frequency + Recency），只需输入路径的一部分就能跳转到目标目录的工具 **`zoxide`** (Rust 编写) 正逐渐成为标准。
+使用 `cd` 命令进入层级很深的目录非常麻烦。近年来，能够学习用户移动历史和频率（Frecency：Frequency + Recency），只需输入路径的一部分就能跳转到目标目录的工具 **`zoxide`** ([Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 编写) 正逐渐成为标准。
 
 ```bash
 # 安装 zoxide 后，使用 z 替代 cd

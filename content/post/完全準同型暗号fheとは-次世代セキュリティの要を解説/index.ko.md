@@ -177,7 +177,7 @@ TFHE의 특징은 부트스트래핑이 매우 빠르다는(밀리초 단위) �
 현재는 암호학에 대한 깊은 지식이 없어도 FHE를 이용할 수 있는 오픈소스 라이브러리가 다수 제공되고 있습니다.
 
 *   **Microsoft SEAL (Simple Encrypted Arithmetic Library)**: BFV, BGV, CKKS를 지원하는 C++ 라이브러리. 업계 표준 중 하나입니다. Python 바인딩인 **TenSEAL** 이 AI 엔지니어들 사이에서 인기가 있습니다.
-*   **Zama (Concrete)**: TFHE를 기반으로 한 프레임워크. Rust/Python으로 작성할 수 있으며 기존의 PyTorch 모델을 컴파일하여 FHE 상에서 구동하는 기능(Concrete ML)을 제공합니다.
+*   **Zama (Concrete)**: TFHE를 기반으로 한 프레임워크. [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)/Python으로 작성할 수 있으며 기존의 PyTorch 모델을 컴파일하여 FHE 상에서 구동하는 기능(Concrete ML)을 제공합니다.
 *   **OpenFHE**: PALISADE의 후속으로, 모든 주요 체계를 지원하는 포괄적인 C++ 라이브러리입니다.
 
 ### Python (TenSEAL) 을 이용한 FHE 프로그래밍 예시

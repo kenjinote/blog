@@ -10,9 +10,9 @@ tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: 'Perbandingan menyeluruh antara pointer C++ dan model kepemilikan/peminjaman Rust. Dari pointer mentah, smart pointer, hingga borrow checker, kami menjelaskan esensi dari keamanan memori.'
 ---
 
-Dalam pemrograman sistem modern, menyeimbangkan kinerja dan keamanan memori adalah tantangan abadi. C++ telah berkuasa sebagai raja di bidang ini selama bertahun-tahun, tetapi dalam beberapa tahun terakhir, posisinya mulai terancam oleh Rust. Fitur terbesar Rust terletak pada konsep "Kepemilikan" (Ownership) dan "Peminjaman" (Borrowing), yang menjamin keamanan memori pada saat kompilasi tanpa memiliki garbage collection (GC).
+Dalam pemrograman sistem modern, menyeimbangkan kinerja dan keamanan memori adalah tantangan abadi. C++ telah berkuasa sebagai raja di bidang ini selama bertahun-tahun, tetapi dalam beberapa tahun terakhir, posisinya mulai terancam oleh [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/). Fitur terbesar Rust terletak pada konsep "Kepemilikan" (Ownership) dan "Peminjaman" (Borrowing), yang menjamin keamanan memori pada saat kompilasi tanpa memiliki garbage collection (GC).
 
-Pada artikel ini, kita akan membandingkan secara rinci pointer C++ (pointer mentah, `std::unique_ptr`, `std::shared_ptr`) dan model kepemilikan Rust, serta menjelaskan secara menyeluruh bagaimana kompiler Rust (borrow checker) mencegah Use-After-Free (penggunaan setelah pembebasan) dan data race (perlombaan data), disertai dengan contoh kode dan diagram.
+Pada artikel ini, kita akan membandingkan secara rinci pointer C++ (pointer mentah, `std::unique_ptr`, `std::shared_ptr`) dan model kepemilikan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), serta menjelaskan secara menyeluruh bagaimana kompiler Rust (borrow checker) mencegah Use-After-Free (penggunaan setelah pembebasan) dan data race (perlombaan data), disertai dengan contoh kode dan diagram.
 
 ## 1. Dasar-dasar Manajemen Memori: Stack dan Heap
 
@@ -91,13 +91,13 @@ void uniquePtrExample() {
 #### `std::shared_ptr`
 Ini adalah pointer yang memungkinkan beberapa pointer untuk berbagi objek yang sama. Ia menggunakan penghitungan referensi (Reference Counting), dan membebaskan memori ketika hitungannya mencapai 0. Karena operasi penambahan/pengurangan atomik diperlukan, ini menyebabkan sedikit overhead kinerja (setara dengan $O_{sync}$ yang disebutkan sebelumnya).
 
-## 3. Kepemilikan (Ownership) Rust: Perubahan Paradigma
+## 3. Kepemilikan (Ownership) [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/): Perubahan Paradigma
 
 Rust menjadikan konsep `std::unique_ptr` dari C++ sebagai inti dari spesifikasi bahasanya, dan memiliki "model kepemilikan" yang bahkan lebih ketat.
 
 ### 3 Aturan Kepemilikan
 
-Sistem kepemilikan Rust didasarkan pada tiga aturan yang sangat sederhana berikut:
+Sistem kepemilikan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) didasarkan pada tiga aturan yang sangat sederhana berikut:
 
 1. **Setiap nilai dalam Rust memiliki variabel yang disebut pemiliknya (owner).**
 2. **Hanya boleh ada satu pemilik pada satu waktu.**
@@ -116,7 +116,7 @@ fn main() {
 }
 ```
 
-Fungsi "membuat variabel yang dipindahkan tidak dapat diakses pada saat kompilasi" ini adalah salah satu alasan mengapa Rust lebih aman daripada `std::unique_ptr` di C++.
+Fungsi "membuat variabel yang dipindahkan tidak dapat diakses pada saat kompilasi" ini adalah salah satu alasan mengapa [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) lebih aman daripada `std::unique_ptr` di C++.
 
 ```mermaid
 sequenceDiagram
@@ -134,13 +134,13 @@ sequenceDiagram
 
 Jika kepemilikan selalu dipindahkan, kita harus mengembalikan kepemilikan setiap kali kita meneruskan nilai ke suatu fungsi, yang mana itu sangat tidak nyaman. Di sinilah "Peminjaman" (Borrowing) berperan. Ini setara dengan pointer atau referensi dalam C++.
 
-Ada dua jenis peminjaman di Rust:
+Ada dua jenis peminjaman di [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/):
 - **Referensi Imutabel (Immutable Reference)**: `&T` (Mirip dengan `const T&` dalam C++)
 - **Referensi Mutabel (Mutable Reference)**: `&mut T` (Mirip dengan `T&` dalam C++)
 
 ### Aturan Kejam dari [Borrow Checker](https://kenji.blog/id/p/memory-management-garbage-collection/)
 
-Kompiler Rust memiliki mekanisme bawaan bernama "borrow checker" yang memvalidasi kebenaran referensi. Borrow checker memaksakan aturan ketat berikut:
+Kompiler [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) memiliki mekanisme bawaan bernama "borrow checker" yang memvalidasi kebenaran referensi. Borrow checker memaksakan aturan ketat berikut:
 
 > Dalam suatu scope tertentu, hanya salah satu dari berikut ini yang dapat ada:
 > - **Satu referensi mutabel (`&mut T`)**
@@ -150,7 +150,7 @@ Ini disebut sebagai prinsip **"Multiple Readers XOR Single Writer (MRSW)"**. Ini
 
 $$ (N_r \ge 0 \land N_w = 0) \oplus (N_r = 0 \land N_w = 1) $$
 
-Melalui aturan ini, **data race sepenuhnya dihilangkan pada saat kompilasi**. Data race terjadi ketika: (1) dua atau lebih pointer mengakses data yang sama secara bersamaan, (2) setidaknya satu darinya melakukan penulisan, dan (3) tidak ada mekanisme sinkronisasi. Rust mencegah data race agar tidak terjadi dengan menghancurkan kondisi (2) pada saat kompilasi.
+Melalui aturan ini, **data race sepenuhnya dihilangkan pada saat kompilasi**. Data race terjadi ketika: (1) dua atau lebih pointer mengakses data yang sama secara bersamaan, (2) setidaknya satu darinya melakukan penulisan, dan (3) tidak ada mekanisme sinkronisasi. [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) mencegah data race agar tidak terjadi dengan menghancurkan kondisi (2) pada saat kompilasi.
 
 ```rust
 // Rust: Kesalahan kompilasi karena pelanggaran aturan peminjaman
@@ -195,7 +195,7 @@ int main() {
 }
 ```
 
-### Pertahanan saat Kompilasi oleh Rust
+### Pertahanan saat Kompilasi oleh [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)
 
 Mari kita tulis logika yang sama persis di Rust.
 
@@ -215,7 +215,7 @@ fn main() {
 }
 ```
 
-Seperti ini, di Rust, "mengubah suatu nilai (meminjam mutabel) saat nilai tersebut sedang dibaca (dipinjam imutabel)" dilarang pada tingkat kompiler, sehingga bug fatal seperti Use-After-Free atau pembatalan iterator pasti ditangkap pada saat kompilasi.
+Seperti ini, di [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), "mengubah suatu nilai (meminjam mutabel) saat nilai tersebut sedang dibaca (dipinjam imutabel)" dilarang pada tingkat kompiler, sehingga bug fatal seperti Use-After-Free atau pembatalan iterator pasti ditangkap pada saat kompilasi.
 
 ```mermaid
 graph LR
@@ -227,9 +227,9 @@ graph LR
     style D stroke:#FF0000,stroke-width:2px
 ```
 
-## 6. Kepemilikan Bersama di Rust: `Rc` dan `Arc`
+## 6. Kepemilikan Bersama di [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/): `Rc` dan `Arc`
 
-Kepemilikan bersama yang setara dengan `std::shared_ptr` di C++ juga tersedia di Rust, namun tipenya dipisahkan dengan jelas untuk thread tunggal dan multi-thread.
+Kepemilikan bersama yang setara dengan `std::shared_ptr` di C++ juga tersedia di [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), namun tipenya dipisahkan dengan jelas untuk thread tunggal dan multi-thread.
 
 ### Untuk Thread Tunggal: `Rc<T>` (Reference Counted)
 `Rc<T>` adalah smart pointer penghitung referensi yang tidak thread-safe. Ia sangat cepat di dalam satu thread tunggal karena menambah dan mengurangi hitungan tanpa menggunakan instruksi atomik. Namun, jika Anda mencoba mengirimnya ke thread lain, itu akan menyebabkan kesalahan kompilasi (karena tidak mengimplementasikan trait `Send`).
@@ -239,7 +239,7 @@ Saat berbagi antar thread, kita menggunakan `Arc<T>` yang melakukan penambahan d
 
 Lebih jauh lagi, di C++, jika Anda melakukan penulisan secara bersamaan dari beberapa thread ke variabel yang dibagikan dengan `std::shared_ptr`, data race akan terjadi. Untuk mencegah hal ini, Anda harus menggunakan `std::mutex` dengan benar secara manual.
 
-Di sisi lain, dalam Rust, **data di dalam tidak dapat diubah** hanya dengan `Arc<T>` saja. Jika perubahan diperlukan, ia harus digabungkan dengan `Mutex<T>`, yang merupakan sebuah mutex.
+Di sisi lain, dalam [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), **data di dalam tidak dapat diubah** hanya dengan `Arc<T>` saja. Jika perubahan diperlukan, ia harus digabungkan dengan `Mutex<T>`, yang merupakan sebuah mutex.
 
 ```rust
 use std::sync::{Arc, Mutex};
@@ -269,13 +269,13 @@ fn main() {
 }
 ```
 
-Yang perlu diperhatikan adalah `Mutex<T>` di Rust bukan sekadar mekanisme penguncian, tetapi **"membungkus data yang harus dilindungi sebagai sebuah tipe"**. Dengan ini, kesalahan seperti "mengakses data karena lupa mengambil kunci" dapat sepenuhnya dicegah pada tingkat kompilasi. Sistem dirancang sedemikian rupa sehingga hak akses (referensi) ke data di dalamnya tidak dapat diperoleh kecuali kunci (`lock()`) telah didapatkan.
+Yang perlu diperhatikan adalah `Mutex<T>` di [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) bukan sekadar mekanisme penguncian, tetapi **"membungkus data yang harus dilindungi sebagai sebuah tipe"**. Dengan ini, kesalahan seperti "mengakses data karena lupa mengambil kunci" dapat sepenuhnya dicegah pada tingkat kompilasi. Sistem dirancang sedemikian rupa sehingga hak akses (referensi) ke data di dalamnya tidak dapat diperoleh kecuali kunci (`lock()`) telah didapatkan.
 
 ## Kesimpulan: "Pemeriksaan Sebelumnya" oleh Kompiler, atau "Tanggung Jawab Sendiri" oleh Pengembang?
 
 Pointer dan smart pointer C++ menawarkan kontrol tingkat tinggi dan kinerja kepada para pengembang, tetapi penggunaannya yang benar bergantung pada disiplin pengembang. Meskipun C++ menjadi jauh lebih aman dengan diperkenalkannya RAII dan `std::unique_ptr`, "perilaku tidak terdefinisi" seperti akses setelah perpindahan atau pembatalan iterator masih tidak dapat dicegah sepenuhnya pada tingkat bahasa.
 
-Di sisi lain, Rust mendeteksi kesalahan-kesalahan ini **pada saat kompilasi** dan bukan saat runtime, dengan memasukkan aturan Kepemilikan (Ownership) dan Peminjaman (Borrowing) ke dalam kompiler. Jaminan kuat bahwa "jika dapat dikompilasi, maka memori aman" adalah alasan terbesar mengapa Rust dengan cepat mendapatkan dukungan dalam pemrograman sistem.
+Di sisi lain, [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) mendeteksi kesalahan-kesalahan ini **pada saat kompilasi** dan bukan saat runtime, dengan memasukkan aturan Kepemilikan (Ownership) dan Peminjaman (Borrowing) ke dalam kompiler. Jaminan kuat bahwa "jika dapat dikompilasi, maka memori aman" adalah alasan terbesar mengapa Rust dengan cepat mendapatkan dukungan dalam pemrograman sistem.
 
 Bertarung dengan borrow checker Rust (Fight the borrow checker) adalah rintangan besar bagi pemula, namun itu hanya kompiler yang dengan ketat mengambil alih perhitungan kompleks tentang "melacak masa pakai pointer" yang awalnya dilakukan di kepala oleh pemrogram C++.
 

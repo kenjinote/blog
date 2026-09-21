@@ -1,56 +1,3 @@
-+++
-title = "Complete Guide to Sorting Algorithms: From Bubble Sort to Timsort"
-description = "A complete explanation of sorting algorithms in programming. Covers everything from basics to advanced."
-slug = "sorting-algorithms"
-date = "2026-09-21T01:50:00+09:00"
-image = "eyecatch.jpg"
-categories = ["programming", "algorithms", "computer-science"]
-tags = ["sort", "python", "algorithm", "big-o"]
-+++
-
-# Complete Guide to Sorting Algorithms: From Bubble Sort to Timsort
-
-Algorithms and data structures are crucial themes that form the foundation of computer science. Among them, "sorting" is a fundamental operation essential in various situations such as searching, data grouping, and visualization. In this article, we will explain in great detail the sorting algorithms that beginners learn, up to the advanced sorting algorithms adopted in standard libraries of modern programming languages, covering their mechanisms, implementations, computational complexity, and when they should be used.
-
-## 1. Basic Knowledge of Sorting Algorithms
-
-Before learning sorting algorithms, it is necessary to understand several important concepts that serve as evaluation criteria for algorithms. Understanding these will clarify why there are so many sorting algorithms and which one to choose depending on the situation.
-
-### 1.1 Stability
-
-**Stability** in sorting algorithms is a property that indicates whether the relative order of elements with the same sort key value is preserved before and after sorting.
-
-For example, suppose we have a list of data with students' test scores and names.
-`[ (80 points, "Person A"), (70 points, "Person B"), (80 points, "Person C") ]`
-When sorting this in ascending order of scores, if it is a stable sorting algorithm, it will always be as follows.
-`[ (70 points, "Person B"), (80 points, "Person A"), (80 points, "Person C") ]`
-Since "Person A" was originally before "Person C", "Person A" is placed first even with the same 80 points. This is a **Stable Sort**.
-
-On the other hand, in an unstable sorting algorithm, this order might be reversed to `(80 points, "Person C"), (80 points, "Person A")`. Stability becomes extremely important when sorting multiple times with multiple keys (e.g., sorting first by name, then by score).
-
-### 1.2 In-place and Out-of-place
-
-This is a classification indicating how much additional memory an algorithm requires during execution.
-
-*   **In-place**: An algorithm that directly rewrites the input array itself when sorting, requiring only a constant size ($O(1)$) or logarithmic size ($O(\log n)$) of additional memory used for swapping elements, etc. It is useful in environments with strict memory limitations.
-*   **Out-of-place**: An algorithm that requires an additional memory space proportional to the input size (e.g., $O(n)$) separate from the input array for sorting.
-
-### 1.3 Computational Complexity and Big O Notation
-
-To express the efficiency of an algorithm, we use asymptotic notation called **Big O Notation**.
-In sorting algorithms, we primarily evaluate **time complexity** (execution time) and **space complexity** (memory usage).
-
-*   $O(1)$: Constant time. Always constant regardless of the amount of data.
-*   $O(n)$: Linear time. Increases proportionally to the amount of data.
-*   $O(n \log n)$: Linearithmic time. The theoretical maximum speed in comparison-based sorting algorithms.
-*   $O(n^2)$: Quadratic time. When the data amount doubles, the time quadruples, making it unsuitable for large-scale data.
-
-In comparison-based sorting algorithms (methods that sort by comparing the magnitude of elements), it is mathematically proven that the lower bound of the worst-case time complexity is $O(n \log n)$.
-
-$$
-\text{Lower bound of comparison sort} = \Omega(n \log n)
-$$
-
 ---
 
 ## 2. $O(n^2)$ Algorithms: Basics and Intuitive Approaches
@@ -520,7 +467,7 @@ While academic textbooks often cover up to quick sort and merge sort, what is ac
 
 ### 5.1 Timsort (Default in Python)
 
-Timsort is an algorithm implemented for Python by Tim Peters in 2002, and is now the champion of the practical world, adopted in many languages, such as Python's `list.sort()` and `sorted()`, Java's object arrays, and Rust's standard sort.
+Timsort is an algorithm implemented for Python by Tim Peters in 2002, and is now the champion of the practical world, adopted in many languages, such as Python's `list.sort()` and `sorted()`, Java's object arrays, and [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)'s standard sort.
 
 The greatest design philosophy of Timsort is based on the rule of thumb that **"real-world data is rarely completely random, and is often partially sorted (has continuous ascending or descending blocks)."**
 

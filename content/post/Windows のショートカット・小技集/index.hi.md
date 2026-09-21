@@ -146,7 +146,7 @@ Windows में रोज़ाना इस्तेमाल होने �
 ![img_5.png](img_5.webp)
 - `calc` टाइप करें और `Enter` दबाएँ।
 
-## पेंट (Paint) खोलना
+## पेंट ([Paint](https://kenji.blog/hi/p/browser-rendering-mechanism-dom-paint/)) खोलना
 ![img_6.png](img_6.webp)
 - `mspaint` टाइप करें और `Enter` दबाएँ।  
 

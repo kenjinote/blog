@@ -9,8 +9,8 @@ categories: ["programming"]
 description: '為初學者說明如何開始使用快速且記憶體安全的程式語言 Rust。全面介紹語言特色、安裝方法，到第一個程式 Hello World 的執行步驟，以及推薦的日文說明文件。'
 ---
 # 簡介
-Rust 是一種相對較新的程式語言，它允許您使用現代語法編寫快速且記憶體效率高的模組。
-它支援多平台，也被用於 WebAssembly 和嵌入式系統領域。
+[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 是一種相對較新的程式語言，它允許您使用現代語法編寫快速且記憶體效率高的模組。
+它支援多平台，也被用於 [WebAssembly](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 和嵌入式系統領域。
 著名的是，它被 Firefox、DropBox 和 Cloudflare 採用。
 
 它也作為 C++ 的替代品而受到關注。
@@ -37,7 +37,7 @@ fn main() {
 
 [The Rust Programming Language 日語版](https://doc.rust-jp.rs/book-ja/)
 
-學習 Rust 所需的說明都集中在上面的連結（日語翻譯版）中。
+學習 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 所需的說明都集中在上面的連結（日語翻譯版）中。
 它非常全面，以至於您不需要購買 Rust 的書籍。
 
 # 如果您想在 Web 上嘗試

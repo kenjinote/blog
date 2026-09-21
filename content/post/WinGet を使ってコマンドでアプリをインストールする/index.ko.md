@@ -45,6 +45,6 @@ Windows 11 일 것
 [winget 도구를 사용한 애플리케이션 설치 및 관리](https://learn.microsoft.com/ja-jp/windows/package-manager/winget/)
 
 ### 여담
-Paint.Net도 설치할 수 있을까 생각했는데, 설치할 수 없었다.
+[Paint](https://kenji.blog/ko/p/browser-rendering-mechanism-dom-paint/).Net도 설치할 수 있을까 생각했는데, 설치할 수 없었다.
 
 https://forums.getpaint.net/topic/118574-please-add-paintnet-to-the-available-packages-for-windows-package-manager-winget/

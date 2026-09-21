@@ -10,9 +10,9 @@ tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: 'A thorough comparison between C++ pointers and Rust ownership/borrowing models. Explains the essence of memory safety from raw pointers and smart pointers to the borrow checker.'
 ---
 
-Modern system programming constantly faces the challenge of balancing performance and memory safety. While C++ has reigned as the king of this domain for many years, Rust has recently emerged to threaten its position. The most prominent feature of Rust lies in its concepts of "Ownership" and "Borrowing", which guarantee memory safety at compile time without relying on [Garbage Collection](https://kenji.blog/en/p/memory-management-garbage-collection/) (GC).
+Modern system programming constantly faces the challenge of balancing performance and memory safety. While C++ has reigned as the king of this domain for many years, [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) has recently emerged to threaten its position. The most prominent feature of Rust lies in its concepts of "Ownership" and "Borrowing", which guarantee memory safety at compile time without relying on [Garbage Collection](https://kenji.blog/en/p/memory-management-garbage-collection/) (GC).
 
-In this article, we will thoroughly compare C++ pointers (raw pointers, `std::unique_ptr`, `std::shared_ptr`) with the Rust ownership model. We will use code examples and diagrams to explain how the Rust compiler ([Borrow Checker](https://kenji.blog/en/p/memory-management-garbage-collection/)) prevents Use-After-Free (using memory after it has been freed) and Data Races.
+In this article, we will thoroughly compare C++ pointers (raw pointers, `std::unique_ptr`, `std::shared_ptr`) with the [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) ownership model. We will use code examples and diagrams to explain how the Rust compiler ([Borrow Checker](https://kenji.blog/en/p/memory-management-garbage-collection/)) prevents Use-After-Free (using memory after it has been freed) and Data Races.
 
 ## 1. Basics of [Memory Management](https://kenji.blog/en/p/memory-management-garbage-collection/): Stack and Heap
 
@@ -24,7 +24,7 @@ This is the region where local variables during function calls are placed. It ha
 ### Heap
 This region holds data whose size is determined dynamically at runtime, or data that needs to outlive the scope of a function. It is accessed via pointers (or references).
 
-In languages without garbage collection like C++ and Rust, the management cost of heap memory can be mathematically modeled as follows. Assuming the total number of objects is $N$, the average allocation time is $T_{alloc}$, and the average deallocation time is $T_{dealloc}$, the total memory management cost $C_{memory}$ is:
+In languages without garbage collection like C++ and [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/), the management cost of heap memory can be mathematically modeled as follows. Assuming the total number of objects is $N$, the average allocation time is $T_{alloc}$, and the average deallocation time is $T_{dealloc}$, the total memory management cost $C_{memory}$ is:
 
 $$ C_{memory} = \sum_{i=1}^{N} (T_{alloc, i} + T_{dealloc, i}) + O_{sync} $$
 
@@ -91,13 +91,13 @@ void uniquePtrExample() {
 #### `std::shared_ptr`
 A pointer that allows multiple pointers to share the same object. It uses Reference Counting, freeing the memory when the count reaches zero. Since it requires atomic increment/decrement operations, it incurs a slight performance overhead (corresponding to $O_{sync}$ mentioned earlier).
 
-## 3. Rust's Ownership: A Paradigm Shift
+## 3. [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)'s Ownership: A Paradigm Shift
 
 Rust places the concept of C++'s `std::unique_ptr` at the core of its language specifications, adopting a much stricter "Ownership Model".
 
 ### The 3 Rules of Ownership
 
-The Rust ownership system is based on the following three extremely simple rules:
+The [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) ownership system is based on the following three extremely simple rules:
 
 1. **Each value in Rust has a variable that's called its owner.**
 2. **There can only be one owner at a time.**
@@ -116,7 +116,7 @@ fn main() {
 }
 ```
 
-This feature of "making variables inaccessible at compile time after a move" is one of the reasons why Rust is safer than C++'s `std::unique_ptr`.
+This feature of "making variables inaccessible at compile time after a move" is one of the reasons why [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) is safer than C++'s `std::unique_ptr`.
 
 ```mermaid
 sequenceDiagram
@@ -134,13 +134,13 @@ sequenceDiagram
 
 If ownership is constantly moved, it would be extremely inconvenient to have to return ownership every time a value is passed to a function. This is where "Borrowing" comes in. It corresponds to C++ pointers and references.
 
-There are two types of borrowing in Rust:
+There are two types of borrowing in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/):
 - **Immutable Reference**: `&T` (Similar to `const T&` in C++)
 - **Mutable Reference**: `&mut T` (Similar to `T&` in C++)
 
 ### The Ruthless Laws of the [Borrow Checker](https://kenji.blog/en/p/memory-management-garbage-collection/)
 
-The Rust compiler has a built-in "Borrow Checker" that verifies the validity of references. The borrow checker enforces the following strict rules:
+The [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) compiler has a built-in "Borrow Checker" that verifies the validity of references. The borrow checker enforces the following strict rules:
 
 > In any given scope, you may have either one of the following:
 > - **Exactly one mutable reference (`&mut T`)**
@@ -150,7 +150,7 @@ This principle is known as **"Multiple Readers XOR Single Writer (MRSW)"**. It c
 
 $$ (N_r \ge 0 \land N_w = 0) \oplus (N_r = 0 \land N_w = 1) $$
 
-This rule **completely eliminates data races at compile time**. A data race occurs when: (1) two or more pointers access the same data simultaneously, (2) at least one is writing, and (3) there is no synchronization mechanism. Rust proactively prevents data races by destroying condition (2) at compile time.
+This rule **completely eliminates data races at compile time**. A data race occurs when: (1) two or more pointers access the same data simultaneously, (2) at least one is writing, and (3) there is no synchronization mechanism. [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) proactively prevents data races by destroying condition (2) at compile time.
 
 ```rust
 // Rust: Compile error due to violating borrowing rules
@@ -195,7 +195,7 @@ int main() {
 }
 ```
 
-### Compile-Time Defense by Rust
+### Compile-Time Defense by [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)
 
 Let's write the exact same logic in Rust.
 
@@ -215,7 +215,7 @@ fn main() {
 }
 ```
 
-In this way, Rust prohibits at the compiler level "modifying a value (mutable borrowing) while it is being read (immutable borrowing)", ensuring that fatal bugs like Use-After-Free and iterator invalidation are reliably caught at compile time.
+In this way, [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) prohibits at the compiler level "modifying a value (mutable borrowing) while it is being read (immutable borrowing)", ensuring that fatal bugs like Use-After-Free and iterator invalidation are reliably caught at compile time.
 
 ```mermaid
 graph LR
@@ -227,9 +227,9 @@ graph LR
     style D stroke:#FF0000,stroke-width:2px
 ```
 
-## 6. Shared Ownership in Rust: `Rc` and `Arc`
+## 6. Shared Ownership in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/): `Rc` and `Arc`
 
-Rust also provides shared ownership corresponding to C++'s `std::shared_ptr`, but the types are clearly separated for single-threaded and multi-threaded use.
+[Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) also provides shared ownership corresponding to C++'s `std::shared_ptr`, but the types are clearly separated for single-threaded and multi-threaded use.
 
 ### For Single-Threaded: `Rc<T>` (Reference Counted)
 `Rc<T>` is a non-thread-safe reference-counting smart pointer. It increments and decrements the count without using atomic instructions, making it extremely fast within a single thread. However, attempting to send this to another thread results in a compile error (because it does not implement the `Send` trait).
@@ -239,7 +239,7 @@ When sharing across threads, `Arc<T>`, which performs atomic increments and decr
 
 Furthermore, in C++, simultaneously writing to a variable shared via `std::shared_ptr` from multiple threads causes a data race. To prevent this, you must manually use `std::mutex` correctly.
 
-On the other hand, in Rust, **you cannot mutate the internal data** of `Arc<T>` alone. If modification is necessary, it must be combined with a mutex, such as `Mutex<T>`.
+On the other hand, in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/), **you cannot mutate the internal data** of `Arc<T>` alone. If modification is necessary, it must be combined with a mutex, such as `Mutex<T>`.
 
 ```rust
 use std::sync::{Arc, Mutex};
@@ -269,13 +269,13 @@ fn main() {
 }
 ```
 
-What is especially noteworthy is that Rust's `Mutex<T>` is not just a locking mechanism; **"it encapsulates the data it protects as its type."** This completely prevents the mistake of "accessing data while forgetting to take the lock" at the compile level. Unless you acquire the lock (`lock()`), you are mechanically unable to obtain access rights (a reference) to the data inside.
+What is especially noteworthy is that [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)'s `Mutex<T>` is not just a locking mechanism; **"it encapsulates the data it protects as its type."** This completely prevents the mistake of "accessing data while forgetting to take the lock" at the compile level. Unless you acquire the lock (`lock()`), you are mechanically unable to obtain access rights (a reference) to the data inside.
 
 ## Conclusion: "Pre-check" by the Compiler vs. "Self-responsibility" of the Developer
 
 C++ pointers and smart pointers offer developers a high degree of control and performance, but their correct usage relies entirely on developer discipline. The introduction of RAII and `std::unique_ptr` dramatically increased the safety of C++, but it still cannot completely prevent "undefined behaviors" like use-after-free or iterator invalidation at the language level.
 
-On the other hand, Rust embeds the rules of Ownership and Borrowing into the compiler, detecting these errors at **compile time** rather than at runtime. The strong guarantee that "if it compiles, it is memory safe" is the biggest reason why Rust is rapidly gaining support in system programming.
+On the other hand, [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) embeds the rules of Ownership and Borrowing into the compiler, detecting these errors at **compile time** rather than at runtime. The strong guarantee that "if it compiles, it is memory safe" is the biggest reason why Rust is rapidly gaining support in system programming.
 
 "Fighting the borrow checker" presents a significant hurdle for beginners, but it simply means the compiler is strictly taking over the complex calculation of "tracking pointer lifetimes" that C++ programmers originally had to perform in their heads.
 

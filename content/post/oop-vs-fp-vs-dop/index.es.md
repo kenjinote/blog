@@ -10,7 +10,7 @@ tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]
 
 La historia de la evolución de los lenguajes de programación es también la historia de la batalla contra la complejidad. A medida que el software crece a gran escala, los desarrolladores se enfrentan a muros en la gestión del estado, el rendimiento y la mantenibilidad, y se han propuesto varios **paradigmas de programación** para superarlos.
 
-En este artículo, profundizaremos en la filosofía, fortalezas y **límites** de la **Programación Orientada a Objetos** (OOP, por sus siglas en inglés), predominante en el desarrollo de software moderno, la **Programación Funcional** (FP), con su robustez matemática, y la **Programación Orientada a Datos** (DOP / DOD), centrada en el rendimiento y la separación de datos. Además, explicaremos cómo lenguajes modernos y potentes (como Rust y TypeScript) logran la **fusión** de estos paradigmas.
+En este artículo, profundizaremos en la filosofía, fortalezas y **límites** de la **Programación Orientada a Objetos** (OOP, por sus siglas en inglés), predominante en el desarrollo de software moderno, la **Programación Funcional** (FP), con su robustez matemática, y la **Programación Orientada a Datos** (DOP / DOD), centrada en el rendimiento y la separación de datos. Además, explicaremos cómo lenguajes modernos y potentes (como [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) y TypeScript) logran la **fusión** de estos paradigmas.
 
 ---
 
@@ -136,7 +136,7 @@ Las asignaciones de memoria para mantener la inmutabilidad (carga para el recole
 
 ## 3. Retorno a la Programación Orientada a Datos (DOP/DOD)
 
-El **Diseño Orientado a Datos** (Data-Oriented Design) o **Programación Orientada a Datos** es un paradigma que nació en el desarrollo de videojuegos (especialmente en C++ y Rust) y que posteriormente se extendió al ámbito empresarial (como en la filosofía de Clojure).
+El **Diseño Orientado a Datos** (Data-Oriented Design) o **Programación Orientada a Datos** es un paradigma que nació en el desarrollo de videojuegos (especialmente en C++ y [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/)) y que posteriormente se extendió al ámbito empresarial (como en la filosofía de Clojure).
 
 ### 3.1 Conceptos principales de DOP
 
@@ -200,7 +200,7 @@ Cada paradigma tiene áreas en las que sobresale y áreas donde flaquea.
 
 ## 5. La solución óptima actual: "Fusión" de paradigmas
 
-Hoy en día, se considera un absurdo intentar elegir "la única respuesta correcta" entre estos paradigmas. Los lenguajes de programación modernos (como Rust, TypeScript, Scala y Go) adoptan **lo mejor de cada mundo**.
+Hoy en día, se considera un absurdo intentar elegir "la única respuesta correcta" entre estos paradigmas. Los lenguajes de programación modernos (como [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/), TypeScript, Scala y Go) adoptan **lo mejor de cada mundo**.
 
 ### 5.1 La fusión definitiva demostrada por Rust
 

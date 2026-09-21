@@ -153,7 +153,7 @@ Tout comme pour ProcExp, activez `Verify Code Signatures` et `Check VirusTotal.c
 ## 5. Suivi des connexions réseau cachées avec TCPView
 
 Bien qu'il soit possible de vérifier l'état des communications via l'onglet réseau du Gestionnaire des tâches ou la commande `netstat -ano`, les mises à jour peuvent être lentes et la correspondance manuelle entre les noms de processus et les PID est fastidieuse.
-TCPView surveille en temps réel tous les points finaux (endpoints) TCP et UDP, et répertorie quel processus communique avec quelle adresse distante et quel port.
+TCPView surveille en temps réel tous les points finaux (endpoints) [TCP](https://kenji.blog/fr/p/http3-quic-protocol-tcp-udp/) et [UDP](https://kenji.blog/fr/p/http3-quic-protocol-tcp-udp/), et répertorie quel processus communique avec quelle adresse distante et quel port.
 
 ### 5.1 Identification des communications C2 illicites
 Si un malware a installé une porte dérobée (backdoor) et envoie des balises (beacons) à un serveur C2 (Command and Control) externe, recherchez les caractéristiques suivantes avec TCPView :
@@ -161,7 +161,7 @@ Si un malware a installé une porte dérobée (backdoor) et envoie des balises (
 *   **Nom de processus peu naturel** : Un `svchost.exe` qui s'exécute avec les privilèges de l'utilisateur au lieu de ceux du système, et maintient une communication dans l'état `ESTABLISHED` avec une adresse IP étrangère inconnue.
 *   **Communication par des processus qui ne communiquent pas habituellement** : Par exemple, la calculatrice (`calc.exe`) ou le bloc-notes (`notepad.exe`) envoyant et recevant un grand nombre de paquets sur le port 443 ou 80 (un signe typique de Process Hollowing).
 
-Si vous repérez une communication suspecte, vous pouvez forcer la déconnexion de la session TCP en envoyant `Close Connection` (émission d'un paquet RST) directement depuis TCPView, ou forcer la fermeture du processus avec `End Process`.
+Si vous repérez une communication suspecte, vous pouvez forcer la déconnexion de la session [TCP](https://kenji.blog/fr/p/http3-quic-protocol-tcp-udp/) en envoyant `Close Connection` (émission d'un paquet RST) directement depuis TCPView, ou forcer la fermeture du processus avec `End Process`.
 
 ---
 

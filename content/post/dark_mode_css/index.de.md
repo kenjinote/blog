@@ -57,7 +57,7 @@ a {
 }
 ```
 
-Durch die vollständige Trennung von Layout- oder Typografie-Spezifikationen und Farb-(Theme-)Spezifikationen auf diese Weise wird die Wartbarkeit von CSS drastisch verbessert.
+Durch die vollständige Trennung von [Layout](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/)- oder Typografie-Spezifikationen und Farb-(Theme-)Spezifikationen auf diese Weise wird die Wartbarkeit von CSS drastisch verbessert.
 
 ### 1.2 Nutzung von @media (prefers-color-scheme: dark)
 

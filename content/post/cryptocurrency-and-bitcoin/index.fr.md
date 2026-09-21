@@ -256,7 +256,7 @@ Les mesures défensives du réseau Bitcoin contre cela sont les suivantes.
 1. **Protection par fonction de hachage** : L'adresse Bitcoin n'est pas la clé publique elle-même, mais les fonctions de hachage SHA-256 et RIPEMD-160 appliquées à la clé publique. Même avec un ordinateur quantique, l'inversion d'une fonction de hachage (même avec l'algorithme de Grover, la complexité de calcul est de $\mathcal{O}(\sqrt{N})$) reste difficile. Par conséquent, jusqu'à ce qu'une transaction soit effectuée et que la clé publique soit exposée au réseau, le contenu de l'adresse peut être considéré comme sûr même contre les ordinateurs quantiques.
 2. **Transition vers la cryptographie post-quantique (Post-Quantum Cryptography : PQC)** : Il est discuté qu'avant que les ordinateurs quantiques ne deviennent d'usage pratique, le protocole Bitcoin fera l'objet d'un hard fork pour passer à de nouveaux algorithmes de signature difficiles à déchiffrer même pour les ordinateurs quantiques, tels que la cryptographie basée sur les réseaux (Lattice-based cryptography) ou la cryptographie polynomiale multivariée (Multivariate polynomial cryptography) sélectionnées par le NIST (National Institute of Standards and Technology).
 
-## 9. Topologie du réseau et détails du protocole P2P
+## 9. Topologie du réseau et détails du protocole [P2P](https://kenji.blog/fr/p/webrtc-realtime-communication-p2p/)
 
 Le réseau Bitcoin n'est pas simplement une collection de serveurs et de clients, mais est construit comme un réseau **pair à pair (Peer-to-Peer : P2P)** complet.
 

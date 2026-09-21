@@ -1224,7 +1224,7 @@ However, according to the projection postulate of quantum mechanics (wave functi
 
 Einstein famously termed this "spooky action at a distance" (*spukhafte Fernwirkung*). This is because Alice's local measurement operation appears to influence Bob's physical state far away faster than light (instantaneously). This seems to overtly violate the principle of locality required by special relativity, which dictates that "no information can travel faster than light".
 
-### The No-Signaling Theorem and Bell's Inequality
+### The No-[Signaling](https://kenji.blog/en/p/webrtc-realtime-communication-p2p/) Theorem and Bell's Inequality
 
 Does quantum mechanics then contradict the theory of relativity? In short, it does not.
 This apparent paradox is resolved by the **no-signaling theorem** (or no-communication theorem). While Bob's state is instantaneously determined upon Alice's measurement, it is fundamentally impossible for Alice to control whether she obtains $0$ or $1$. From Bob's perspective, there is no way of knowing that Alice performed a measurement, and the outcome of measuring his own qubit remains completely random (0 or 1 with 50% probability each). As proved in the section on reduced density matrices, no matter what measurement basis Alice chooses, Bob's local density matrix $\rho_B$ remains completely unchanged. Consequently, entanglement cannot be used to transmit "meaningful information" faster than light.

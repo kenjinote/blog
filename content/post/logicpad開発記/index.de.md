@@ -55,7 +55,7 @@ WinUI 3 ist ein natives UI-Framework, das auf diesem Windows App SDK läuft und 
 Als Entwicklungssprachen für WinUI 3 werden C# und C++ unterstützt. Während die Entwicklungseffizienz mit C# und .NET dramatisch steigen würde, habe ich mich bei LogicPad aus folgenden Gründen für **C++/WinRT** entschieden:
 
 1. **Deterministische Speicherverwaltung**: Da es keinen Garbage Collector (GC) gibt, kann der Zeitpunkt der Speicherzuweisung und -freigabe vollständig kontrolliert werden. Dies verhindert GC-Pausen während der Simulationsschleife.
-2. **SIMD- und Cache-Optimierung**: In C++ kann das physische Layout des Speichers (z. B. Struct of Arrays) strikt definiert werden, um die CPU-Cache-Trefferrate zu maximieren.
+2. **SIMD- und Cache-Optimierung**: In C++ kann das physische [Layout](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/) des Speichers (z. B. Struct of Arrays) strikt definiert werden, um die CPU-Cache-Trefferrate zu maximieren.
 3. **Native ABI-Grenze**: C++/WinRT ist eine moderne C++-Projektion von COM (Component Object Model). Es ermöglicht den direkten Aufruf nativer OS-APIs ohne den P/Invoke-Overhead, den man bei C# hätte.
 
 An der Basis von C++/WinRT steht COM. Alle WinRT-Objekte sind im Wesentlichen COM-Objekte, die die `IUnknown`-Schnittstelle implementieren, und intelligente Zeiger wie `winrt::com_ptr` in C++/WinRT verwalten die Referenzzählung (`AddRef` / `Release`) automatisch.
@@ -127,7 +127,7 @@ Das Verhalten von `winrt::apartment_context` wirkt wie Magie, aber intern nutzt 
 
 ### 4.2. Die vollständige Implementierung einer benutzerdefinierten Titelleiste
 
-Bei Anwendungen im Zeitalter von Windows 11 ist eine „benutzerdefinierte Titelleiste“, bei der Tabs oder eine Suchleiste im Bereich der Titelleiste (Caption-Bereich) platziert werden, eine wesentliche Anforderung für eine moderne UX. Die Anpassung der Titelleiste in WinUI 3 ist zwar einfach, wenn man nur die Farbe ändern möchte, aber wenn man die Anforderung erfüllen will, „den Client-Bereich in die Titelleiste auszudehnen und dabei das Ziehen des Fensters und die Snap-Layouts (automatisches Anpassen beim Verschieben des Fensters an den Bildschirmrand) beizubehalten“, steigt der Schwierigkeitsgrad enorm.
+Bei Anwendungen im Zeitalter von Windows 11 ist eine „benutzerdefinierte Titelleiste“, bei der Tabs oder eine Suchleiste im Bereich der Titelleiste (Caption-Bereich) platziert werden, eine wesentliche Anforderung für eine moderne UX. Die Anpassung der Titelleiste in WinUI 3 ist zwar einfach, wenn man nur die Farbe ändern möchte, aber wenn man die Anforderung erfüllen will, „den Client-Bereich in die Titelleiste auszudehnen und dabei das Ziehen des Fensters und die Snap-[Layout](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/)s (automatisches Anpassen beim Verschieben des Fensters an den Bildschirmrand) beizubehalten“, steigt der Schwierigkeitsgrad enorm.
 
 In LogicPad habe ich die `ExtendsContentIntoTitleBar` API verwendet, um die Titelleiste mit eigenen XAML-Elementen zu erstellen. Der folgende Code zeigt die Schritte zur Anpassung der Titelleiste mithilfe der `AppWindow`-Klasse des Windows App SDK.
 

@@ -22,7 +22,7 @@ En este artículo, resumimos el "después" de hacer obligatoria la educación en
 
 Lo que reina como un estándar de facto en la educación de programación en las escuelas primarias son los lenguajes de programación visual (programación basada en bloques), representados por "Scratch" desarrollado por el MIT Media Lab. El uso de una interfaz gráfica intuitiva para combinar bloques como un rompecabezas para aprender de forma visual e intuitiva las tres estructuras básicas de control algorítmico de "secuencia", "selección" e "iteración" es un gran invento que debe ser altamente valorado como educación introductoria.
 
-Sin embargo, hay un problema grave aquí, una "trampa de la abstracción", por así decirlo. Es el hecho cruel de que "la transición de la programación visual a un lenguaje de programación basado en texto real (Python, JavaScript, C++, Rust, etc.) es extremadamente difícil, y muchos estudiantes se frustran en esta etapa".
+Sin embargo, hay un problema grave aquí, una "trampa de la abstracción", por así decirlo. Es el hecho cruel de que "la transición de la programación visual a un lenguaje de programación basado en texto real (Python, JavaScript, C++, [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/), etc.) es extremadamente difícil, y muchos estudiantes se frustran en esta etapa".
 
 ### El muro de la abstracción y la caja negra de las ciencias de la computación
 
@@ -49,7 +49,7 @@ flowchart TD
     class J success;
 ```
 
-Como se desprende claramente de este diagrama de flujo, el simple hecho de acumular experiencia en "escribir código que mueve personajes en una pantalla" no criará verdaderos ingenieros de software capaces de diseñar arquitecturas de sistemas distribuidos escalables y optimizar el rendimiento a nivel de milisegundos. Existe una desconexión absoluta en la comprensión conceptual, que no se puede explicar con las simples palabras "diferencia en el lenguaje utilizado", entre la tarea de combinar bloques coloridos en Scratch con un mouse y la tarea de descifrar el código fuente en lenguaje C del núcleo de Linux y rastrear el comportamiento de la pila TCP/IP.
+Como se desprende claramente de este diagrama de flujo, el simple hecho de acumular experiencia en "escribir código que mueve personajes en una pantalla" no criará verdaderos ingenieros de software capaces de diseñar arquitecturas de sistemas distribuidos escalables y optimizar el rendimiento a nivel de milisegundos. Existe una desconexión absoluta en la comprensión conceptual, que no se puede explicar con las simples palabras "diferencia en el lenguaje utilizado", entre la tarea de combinar bloques coloridos en Scratch con un mouse y la tarea de descifrar el código fuente en lenguaje C del núcleo de Linux y rastrear el comportamiento de la pila [TCP](https://kenji.blog/es/p/http3-quic-protocol-tcp-udp/)/IP.
 
 ## 3. Los límites de la codificación sin "Matemáticas" y "Lógica Discreta": Un enfoque desde la teoría de la complejidad computacional
 
@@ -247,7 +247,7 @@ Es el talento capaz de traducir tales fórmulas matemáticas avanzadas en códig
 
 No hay duda de que hacer que la educación en programación fuera obligatoria en la década de 2020 fue un paso firme al lograr que la sociedad japonesa en general reconociera la "importancia de la TI y la información". Sin embargo, esto es un mero "calentamiento" en un largo viaje.
 
-Dar un paso adelante desde la diversión de mover un personaje de gato en Scratch para que se emocionen con la belleza matemática de un algoritmo $O(N \log N)$ y enseñarles la emoción de comunicarse con servidores de todo el mundo a través de paquetes TCP desde la pantalla negra de la terminal. Debemos reconstruir una nueva infraestructura educativa para superar las limitaciones de hardware de la Iniciativa GIGA School, fomentar y colocar instructores con experiencia avanzada en CS, y en ocasiones, involucrar valientemente a ingenieros profesionales externos en la educación escolar.
+Dar un paso adelante desde la diversión de mover un personaje de gato en Scratch para que se emocionen con la belleza matemática de un algoritmo $O(N \log N)$ y enseñarles la emoción de comunicarse con servidores de todo el mundo a través de paquetes [TCP](https://kenji.blog/es/p/http3-quic-protocol-tcp-udp/) desde la pantalla negra de la terminal. Debemos reconstruir una nueva infraestructura educativa para superar las limitaciones de hardware de la Iniciativa GIGA School, fomentar y colocar instructores con experiencia avanzada en CS, y en ocasiones, involucrar valientemente a ingenieros profesionales externos en la educación escolar.
 
 Los desafíos que enfrenta la educación de TI en Japón son extremadamente profundos, arraigados y complejos. Sin embargo, no debemos apartar la mirada de estos desafíos, y cuando la industria, la academia y el gobierno colaboren seriamente para abordarlos y puedan construir un ecosistema que produzca continuamente no "trabajadores que solo pueden escribir código de acuerdo a las especificaciones", sino "verdaderos ingenieros que pueden diseñar y crear sistemas desde cero", Japón sin duda volverá a liderar el mundo como una verdadera nación de TI.
 

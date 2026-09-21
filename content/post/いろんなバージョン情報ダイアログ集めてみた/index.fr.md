@@ -31,7 +31,7 @@ C'est l'environnement de développement que j'utilise pour le C++.
 Il s'agit de la version Windows de LINE.
 ![img_4.png](img_4.webp)
 
-## Paint.NET
+## [Paint](https://kenji.blog/fr/p/browser-rendering-mechanism-dom-paint/).NET
 C'est un logiciel de retouche d'image.
 ![img_5.png](img_5.webp)
 

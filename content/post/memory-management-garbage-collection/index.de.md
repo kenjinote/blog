@@ -8,7 +8,7 @@ categories: ["programming", "computer-science", "software-engineering"]
 tags: ["memory-management", "c-language", "java", "rust", "garbage-collection"]
 ---
 
-# Willkommen bei der Wahrheit der Speicherverwaltung: Die Tiefen von C, Java und Rust entschlüsseln
+# Willkommen bei der Wahrheit der Speicherverwaltung: Die Tiefen von C, Java und [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) entschlüsseln
 
 In der Softwareentwicklung ist die Speicherverwaltung ein ewiges Thema, das man nicht umgehen kann, und eines der wichtigsten Elemente, das die Leistung und Stabilität eines Systems bestimmt. Dieser Artikel deckt durch eine überwältigende Vertiefung, vergleichbar mit einem Umfang von etwa 20.000 Zeichen, alles vollständig ab, von den grundlegenden Theorien der Speicherverwaltung bis hin zu Optimierungstechniken in modernen Architekturen.
 
@@ -206,7 +206,7 @@ Wenn die GC ausgeführt wird, werden alle Anwendungs-Threads angehalten, um die 
 
 ---
 
-## 4. Rust: Der dritte Weg, den Ownership und Borrowing bringen
+## 4. [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/): Der dritte Weg, den Ownership und Borrowing bringen
 
 Die "extreme Leistung durch manuelle Verwaltung" von C und die "Speichersicherheit durch automatische Verwaltung" von Java. Diese beiden galten lange Zeit als ein Kompromiss (Trade-off). Die Sprache Rust führte jedoch das revolutionäre Modell von **"Ownership" (Eigentumsrecht)** ein und schaffte das Kunststück, 100%ige Speichersicherheit zur Kompilierzeit zu garantieren, während die Garbage Collection eliminiert wurde.
 
@@ -222,7 +222,7 @@ Durch diese Regeln lässt Rust den Entwickler nicht `malloc` oder `free` schreib
 
 ### 4.2 Die Verschiebung von Ownership (Move)
 
-In Rust wird das Ownership "verschoben (Move)", wenn eine Variable einer anderen Variablen zugewiesen oder als Wert (Value) an eine Funktion übergeben wird. Die ursprüngliche Variable, von der verschoben wurde, ist danach nicht mehr zugänglich (es kommt zu einem Kompilierfehler). Dadurch wird eine doppelte Freigabe (Double Free) strukturell unmöglich gemacht.
+In [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) wird das Ownership "verschoben (Move)", wenn eine Variable einer anderen Variablen zugewiesen oder als Wert (Value) an eine Funktion übergeben wird. Die ursprüngliche Variable, von der verschoben wurde, ist danach nicht mehr zugänglich (es kommt zu einem Kompilierfehler). Dadurch wird eine doppelte Freigabe (Double Free) strukturell unmöglich gemacht.
 
 ```rust
 fn main() {
@@ -241,7 +241,7 @@ fn main() {
 
 ### 4.3 Ausleihen (Borrowing) und Lebensdauer (Lifetime)
 
-Wenn man für jede Operation das Ownership verschieben würde, wäre das Programmieren extrem unpraktisch. Um auf Daten zuzugreifen, ohne das Ownership zu entziehen, verfügt Rust über die Konzepte von **Referenz (Reference)** und **Ausleihen (Borrowing)**.
+Wenn man für jede Operation das Ownership verschieben würde, wäre das Programmieren extrem unpraktisch. Um auf Daten zuzugreifen, ohne das Ownership zu entziehen, verfügt [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) über die Konzepte von **Referenz (Reference)** und **Ausleihen (Borrowing)**.
 
 Darüber hinaus erzwingt der **Borrow Checker**, der in den Rust-Compiler integriert ist, die folgenden strengen Regeln zur Kompilierzeit:
 
@@ -295,7 +295,7 @@ Wenn die CPU Daten aus dem Speicher liest, lädt sie nicht nur diese Daten, sond
 
 ### 5.1 Unterschiede in der Cache-Effizienz nach Sprache
 
-- **C / C++ / Rust**: Wenn Sie ein Array von Strukturen (`struct Array[100]` oder `Vec<MyStruct>`) erstellen, werden die Daten lückenlos aufeinanderfolgend im Speicher platziert. Bei der Schleifenverarbeitung des Arrays funktioniert der Hardware-Prefetcher der CPU perfekt, und die Cache-Trefferrate (Cache Hit Rate) steigt drastisch an.
+- **C / C++ / [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)**: Wenn Sie ein Array von Strukturen (`struct Array[100]` oder `Vec<MyStruct>`) erstellen, werden die Daten lückenlos aufeinanderfolgend im Speicher platziert. Bei der Schleifenverarbeitung des Arrays funktioniert der Hardware-Prefetcher der CPU perfekt, und die Cache-Trefferrate (Cache Hit Rate) steigt drastisch an.
 - **Java**: Ein Java-Objekt-Array (`MyObject[]`) ist kein Array der eigentlichen Objekte, sondern ein Array von "Referenzen (Pointern) auf Objekte". Da jedes eigentliche Objekt an verstreuten Stellen auf dem Heap zugewiesen wird, muss bei jeder Schleifenverarbeitung der Pointer verfolgt und auf eine zufällige Speicheradresse zugegriffen werden, was zu einer Reihe schwerwiegender Cache-Fehler (Cache Misses) führt.
 
 Die durchschnittliche effektive Zeit für Speicherzugriffe $ T_{avg} $ wird wie folgt ausgedrückt:
@@ -303,7 +303,7 @@ Die durchschnittliche effektive Zeit für Speicherzugriffe $ T_{avg} $ wird wie 
 $ T_{avg} = h \cdot T_{cache} + (1 - h) \cdot T_{memory} $
 
 Hierbei ist $ h $ die Cache-Trefferrate ( $ 0 \le h \le 1 $ ), $ T_{cache} $ ist die Cache-Zugriffszeit (etwa 1 bis 4 ns) und $ T_{memory} $ ist die Hauptspeicher-Zugriffszeit (etwa 100 ns).
-Je nachdem, ob Sie $ h $ auf 0,99 bringen (C/Rust-Ansatz) oder auf 0,5 abfallen lassen (Javas Pointer Chasing), ergibt sich ein Unterschied vom Dutzendfachen in der Ausführungsgeschwindigkeit von Schleifen in der Anwendung. Dies ist der wahre Grund, warum C++ und Rust für Spiel-Engines und Hochfrequenzhandelssysteme ausgewählt werden.
+Je nachdem, ob Sie $ h $ auf 0,99 bringen (C/[Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)-Ansatz) oder auf 0,5 abfallen lassen (Javas Pointer Chasing), ergibt sich ein Unterschied vom Dutzendfachen in der Ausführungsgeschwindigkeit von Schleifen in der Anwendung. Dies ist der wahre Grund, warum C++ und Rust für Spiel-Engines und Hochfrequenzhandelssysteme ausgewählt werden.
 
 ---
 
@@ -315,7 +315,7 @@ In diesem Artikel haben wir drei völlig unterschiedliche Paradigmen der Speiche
 |:---:|:---|:---|:---|
 | **C** | Manuelle Verwaltung mit `malloc/free` | Ultimative Geschwindigkeit, maximale Cache-Effizienz, leichtgewichtig | Brutstätte für Schwachstellen (Lecks, doppelte Freigabe), hohe Entwicklungskosten |
 | **Java** | GC (Garbage Collection) | Erhöhte Entwicklungsgeschwindigkeit, Gewährleistung der Speichersicherheit | Schwankungen der Latenz durch STW, Verschlechterung der Cache-Effizienz |
-| **Rust** | Ownership und Borrow Checker | Sicherheit ohne Laufzeitkosten (Zero-Cost), schnell | Steile Lernkurve, Schwierigkeiten beim Design von Lifetimes |
+| **[Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)** | Ownership und Borrow Checker | Sicherheit ohne Laufzeitkosten (Zero-Cost), schnell | Steile Lernkurve, Schwierigkeiten beim Design von Lifetimes |
 
 Die Geschichte der **Speicherverwaltung** war ein ständiges Auf und Ab zwischen Leistung und Sicherheit. Um die Tragödien zu verhindern, die durch die manuelle Verwaltung verursacht wurden, entstand die GC, und um die Leistungsstrafen der GC zu umgehen, wurde das Ownership-Modell erfunden.
 

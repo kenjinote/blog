@@ -23,7 +23,7 @@ description: 'Мы составили список различных языко
 
 ## Haskell
 
-## Rust
+## [Rust](https://kenji.blog/ru/p/webassembly-wasm-current-future/)
 
 ## Go
 

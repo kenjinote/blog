@@ -31,7 +31,7 @@ description: '汇总展示Windows 11、IntelliJ IDEA、VS Code、Chrome、Edge�
 这是LINE的Windows版。
 ![img_4.png](img_4.webp)
 
-## Paint.NET
+## [Paint](https://kenji.blog/zh-cn/p/browser-rendering-mechanism-dom-paint/).NET
 这是图像编辑软件。
 ![img_5.png](img_5.webp)
 

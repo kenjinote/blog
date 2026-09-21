@@ -48,7 +48,7 @@ graph TD
 ```
 
 1. **Lexer (Tokenizer)**: Reads the input raw string (character array) from the beginning and splits it into "minimum meaningful units (tokens)".
-2. **Parser**: Reads the sequence of tokens received from the lexer and builds a tree structure (DOM Tree: Document Object Model) according to the grammar rules.
+2. **Parser**: Reads the sequence of tokens received from the lexer and builds a tree structure ([DOM Tree](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/): Document Object Model) according to the grammar rules.
 
 In this implementation, to improve memory efficiency, the lexer is designed to hold a pointer and length (`std::string_view`) to the original input string without copying the string.
 

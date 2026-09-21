@@ -138,7 +138,7 @@ $$
 
 ### 3.1. 地址的產生與公鑰的「非公開性」
 
-[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)的地址（如P2PKH: Pay-to-Public-Key-Hash 或 P2WPKH: Pay-to-Witness-Public-Key-Hash）並非使用公鑰本身，而是將公鑰進行多次雜湊後生成。
+[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)的地址（如[P2P](https://kenji.blog/zh-tw/p/webrtc-realtime-communication-p2p/)KH: Pay-to-Public-Key-Hash 或 P2WPKH: Pay-to-Witness-Public-Key-Hash）並非使用公鑰本身，而是將公鑰進行多次雜湊後生成。
 
 $$
 \text{[Bitcoin](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Public Key})))
@@ -178,7 +178,7 @@ sequenceDiagram
 礦工受到經濟誘因驅使，會優先將手續費較高的交易納入區塊中。結果，攻擊者的非法轉帳將率先被確認（Confirm），而Alice的合法轉帳則會被當作「餘額不足（Double Spend）」遭到捨棄。
 這一連串過程被稱為 **搶先交易攻擊（Front-running Attack）** 。在量子電腦實用化的世界裡，只要有人按下轉帳按鈕的瞬間，資金就會被駭客奪走，這將是極其可怕的情況。
 
-### 3.3. 重複使用地址與舊地址（P2PK）的危機
+### 3.3. 重複使用地址與舊地址（[P2P](https://kenji.blog/zh-tw/p/webrtc-realtime-communication-p2p/)K）的危機
 
 更嚴重的問題在於，過去只要曾經發送過一次資金的地址（例如被當作找零地址重複使用的情況），其公鑰就已經永久記錄在區塊鏈上。這些地址不需要等待發送交易，隨時都暴露在被計算出私鑰並盜取餘額的危險之中。
 
@@ -289,7 +289,7 @@ pie title 區塊鏈中的簽章資料大小比較 (概念圖)
 
 然而，像Dilithium或Falcon等新晶格密碼演算法的驗證過程，牽涉到複雜的多項式運算與矩陣運算。如果僅用現有的EVM操作碼（Opcode）來實作，單次簽章驗證就可能消耗數百萬到數千萬的Gas。這足以在單筆交易中耗盡目前的區塊Gas上限（約3000萬Gas）。
 
-為了避免這個情況，必須透過網路的硬分叉（Hard Fork），在EVM內部新增專門用於驗證PQC的Precompiled Contract（例如將 `0x10` 分配給 DilithiumVerify）。這需要各個以太坊客戶端（Geth, Nethermind, Erigon等）的核心開發者協同合作，在C++、Go、Rust等語言層級上進行晶格密碼學驗證邏輯的最佳化實作，並執行安全審計，這將是一個漫長的過程。
+為了避免這個情況，必須透過網路的硬分叉（Hard Fork），在EVM內部新增專門用於驗證PQC的Precompiled Contract（例如將 `0x10` 分配給 DilithiumVerify）。這需要各個以太坊客戶端（Geth, Nethermind, Erigon等）的核心開發者協同合作，在C++、Go、[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)等語言層級上進行晶格密碼學驗證邏輯的最佳化實作，並執行安全審計，這將是一個漫長的過程。
 
 ### 5.3. 硬分叉達成共識的困難度
 

@@ -145,7 +145,7 @@ description: 'Тщательно отобранные полезные соче�
 ![img_5.png](img_5.webp)
 - Введите `calc` и нажмите `Enter`
 
-## Запустить Paint
+## Запустить [Paint](https://kenji.blog/ru/p/browser-rendering-mechanism-dom-paint/)
 ![img_6.png](img_6.webp)
 - Введите `mspaint` и нажмите `Enter`  
 

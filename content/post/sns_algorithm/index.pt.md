@@ -46,7 +46,7 @@ $$
 $$
 
 **Impacto na escolha tecnológica:**
-Esse algoritmo aproxima o "Usuário A, interessado em Rust" e o "Usuário B, interessado em Rust" no espaço latente. Se o Usuário A curtir uma postagem sobre um novo framework web, há uma alta probabilidade de que a postagem desse framework também apareça na linha do tempo do Usuário B. Com isso, ocorre um fenômeno onde uma tecnologia específica se torna um grande sucesso localmente dentro de um grupo de engenheiros que preferem uma determinada *stack* tecnológica.
+Esse algoritmo aproxima o "Usuário A, interessado em [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/)" e o "Usuário B, interessado em Rust" no espaço latente. Se o Usuário A curtir uma postagem sobre um novo framework web, há uma alta probabilidade de que a postagem desse framework também apareça na linha do tempo do Usuário B. Com isso, ocorre um fenômeno onde uma tecnologia específica se torna um grande sucesso localmente dentro de um grupo de engenheiros que preferem uma determinada *stack* tecnológica.
 
 ### 2.2 Modelos de recomendação baseados em Deep Learning (DLRM)
 
@@ -142,7 +142,7 @@ Então, sob o domínio desses algoritmos, como podemos fazer escolhas tecnológi
 A defesa mais segura é mudar suas fontes de informação das agregações de redes sociais para as **fontes primárias (Primary Sources)**.
 
 1. **Leia o código-fonte:** Em vez de confiar em postagens nas redes sociais que afirmam "esta biblioteca é super rápida", abra o GitHub e verifique a complexidade computacional da lógica central e os mecanismos de alocação de memória.
-2. **Acompanhe os RFCs (Request for Comments):** Muitos projetos maduros de código aberto (React, Rust, Python, etc.) adotam o processo de RFC ao introduzir novas funcionalidades. Os RFCs detalham logicamente "por que essa funcionalidade é necessária", "quais são os *trade-offs* de design" e "quais são as alternativas", sem se preocupar com o engajamento de algoritmos. É aqui que reside o verdadeiro valor tecnológico.
+2. **Acompanhe os RFCs (Request for Comments):** Muitos projetos maduros de código aberto (React, [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/), Python, etc.) adotam o processo de RFC ao introduzir novas funcionalidades. Os RFCs detalham logicamente "por que essa funcionalidade é necessária", "quais são os *trade-offs* de design" e "quais são as alternativas", sem se preocupar com o engajamento de algoritmos. É aqui que reside o verdadeiro valor tecnológico.
 
 ### 5.2 Leitura atenta de Artigos Acadêmicos (Academic Papers) e White Papers
 

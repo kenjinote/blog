@@ -10,9 +10,9 @@ tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: "C++의 포인터와 Rust의 '소유권'·'차용' 모델을 철저하게 비교. 원시 포인터, 스마트 포인터부터 보로우 체커까지, 메모리 안전성의 본질을 해설합니다."
 ---
 
-현대 시스템 프로그래밍에서 성능과 메모리 안전성의 양립은 영원한 과제입니다. C++는 오랫동안 이 분야의 제왕으로 군림해 왔지만, 최근 그 위상을 위협하고 있는 것이 바로 Rust입니다. Rust의 가장 큰 특징은 가비지 컬렉션(GC) 없이 컴파일 타임에 메모리 안전성을 보장하는 '소유권(Ownership)'과 '차용(Borrowing)'이라는 개념에 있습니다.
+현대 시스템 프로그래밍에서 성능과 메모리 안전성의 양립은 영원한 과제입니다. C++는 오랫동안 이 분야의 제왕으로 군림해 왔지만, 최근 그 위상을 위협하고 있는 것이 바로 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)입니다. Rust의 가장 큰 특징은 가비지 컬렉션(GC) 없이 컴파일 타임에 메모리 안전성을 보장하는 '소유권(Ownership)'과 '차용(Borrowing)'이라는 개념에 있습니다.
 
-이 글에서는 C++의 포인터(원시 포인터, `std::unique_ptr`, `std::shared_ptr`)와 Rust의 소유권 모델을 자세히 비교하고, Rust의 컴파일러(보로우 체커)가 어떻게 Use-After-Free(해제 후 사용)나 데이터 경합(Data Race)을 방지하는지 코드 예제와 다이어그램을 통해 철저하게 해설합니다.
+이 글에서는 C++의 포인터(원시 포인터, `std::unique_ptr`, `std::shared_ptr`)와 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)의 소유권 모델을 자세히 비교하고, Rust의 컴파일러(보로우 체커)가 어떻게 Use-After-Free(해제 후 사용)나 데이터 경합(Data Race)을 방지하는지 코드 예제와 다이어그램을 통해 철저하게 해설합니다.
 
 ## 1. 메모리 관리의 기초: 스택과 힙
 
@@ -91,13 +91,13 @@ void uniquePtrExample() {
 #### `std::shared_ptr`
 여러 포인터가 같은 객체를 공유할 수 있는 포인터입니다. 참조 카운트(Reference Counting)를 사용하여, 카운트가 0이 된 시점에 메모리를 해제합니다. 원자적(atomic)인 증감 연산이 필요하므로 약간의 성능 오버헤드(앞서 언급한 $O_{sync}$에 해당)가 발생합니다.
 
-## 3. Rust의 소유권(Ownership): 패러다임 시프트
+## 3. [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)의 소유권(Ownership): 패러다임 시프트
 
 Rust는 C++의 `std::unique_ptr` 개념을 언어 사양의 근간에 두고, 이를 더욱 엄격하게 만든 '소유권 모델'을 가지고 있습니다.
 
 ### 소유권의 3가지 규칙
 
-Rust의 소유권 시스템은 다음 3가지의 매우 단순한 규칙을 바탕으로 합니다.
+[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)의 소유권 시스템은 다음 3가지의 매우 단순한 규칙을 바탕으로 합니다.
 
 1. **Rust의 각각의 값은 소유자(owner)라고 불리는 변수를 가진다.**
 2. **어느 때든 소유자는 단 하나뿐이다.**
@@ -116,7 +116,7 @@ fn main() {
 }
 ```
 
-이 '이동 후의 변수를 컴파일 시점에 접근 불가능하게 만드는' 기능이야말로 Rust가 C++의 `std::unique_ptr`보다 안전한 이유 중 하나입니다.
+이 '이동 후의 변수를 컴파일 시점에 접근 불가능하게 만드는' 기능이야말로 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)가 C++의 `std::unique_ptr`보다 안전한 이유 중 하나입니다.
 
 ```mermaid
 sequenceDiagram
@@ -134,13 +134,13 @@ sequenceDiagram
 
 소유권을 항상 이동시키다 보면 함수에 값을 넘길 때마다 소유권을 돌려받아야 하므로 매우 불편합니다. 여기서 등장하는 것이 '차용(Borrowing)'입니다. C++의 포인터나 참조에 해당합니다.
 
-Rust의 차용에는 2가지 종류가 있습니다.
+[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)의 차용에는 2가지 종류가 있습니다.
 - **불변 참조(Immutable Reference)**: `&T` (C++의 `const T&`와 유사)
 - **가변 참조(Mutable Reference)**: `&mut T` (C++의 `T&`와 유사)
 
 ### 보로우 체커([Borrow Checker](https://kenji.blog/ko/p/memory-management-garbage-collection/))의 냉혹한 규칙
 
-Rust 컴파일러에는 참조의 정당성을 검증하는 '보로우 체커'가 내장되어 있습니다. 보로우 체커는 다음의 엄격한 규칙을 강제합니다.
+[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/) 컴파일러에는 참조의 정당성을 검증하는 '보로우 체커'가 내장되어 있습니다. 보로우 체커는 다음의 엄격한 규칙을 강제합니다.
 
 > 임의의 스코프에서 다음 중 어느 하나만 존재할 수 있다.
 > - **하나의 가변 참조(`&mut T`)**
@@ -150,7 +150,7 @@ Rust 컴파일러에는 참조의 정당성을 검증하는 '보로우 체커'�
 
 $$ (N_r \ge 0 \land N_w = 0) \oplus (N_r = 0 \land N_w = 1) $$
 
-이 규칙을 통해, **데이터 경합(Data Race)을 컴파일 시점에 완전히 배제** 합니다. 데이터 경합은 ① 2개 이상의 포인터가 동일한 데이터에 동시 접근하고, ② 그중 적어도 하나가 쓰기를 수행하며, ③ 동기화 메커니즘이 없는 경우에 발생합니다. Rust는 ②의 조건을 컴파일 시점에 파괴함으로써 데이터 경합을 미연에 방지합니다.
+이 규칙을 통해, **데이터 경합(Data Race)을 컴파일 시점에 완전히 배제** 합니다. 데이터 경합은 ① 2개 이상의 포인터가 동일한 데이터에 동시 접근하고, ② 그중 적어도 하나가 쓰기를 수행하며, ③ 동기화 메커니즘이 없는 경우에 발생합니다. [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)는 ②의 조건을 컴파일 시점에 파괴함으로써 데이터 경합을 미연에 방지합니다.
 
 ```rust
 // Rust: 차용 규칙 위반으로 인한 컴파일 에러
@@ -195,7 +195,7 @@ int main() {
 }
 ```
 
-### Rust에 의한 컴파일 타임 방어
+### [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)에 의한 컴파일 타임 방어
 
 완전히 동일한 로직을 Rust로 작성해 보겠습니다.
 
@@ -215,7 +215,7 @@ fn main() {
 }
 ```
 
-이처럼 Rust에서는 '값을 읽고 있는 도중(불변 차용 중)에 그 값을 변경하는(가변 차용하는) 것'이 컴파일러 레벨에서 금지되어 있기 때문에, Use-After-Free나 이터레이터 무효화와 같은 치명적인 버그가 컴파일 시점에 확실하게 포착됩니다.
+이처럼 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)에서는 '값을 읽고 있는 도중(불변 차용 중)에 그 값을 변경하는(가변 차용하는) 것'이 컴파일러 레벨에서 금지되어 있기 때문에, Use-After-Free나 이터레이터 무효화와 같은 치명적인 버그가 컴파일 시점에 확실하게 포착됩니다.
 
 ```mermaid
 graph LR
@@ -227,9 +227,9 @@ graph LR
     style D stroke:#FF0000,stroke-width:2px
 ```
 
-## 6. Rust에서의 공유 소유권: `Rc` 와 `Arc`
+## 6. [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)에서의 공유 소유권: `Rc` 와 `Arc`
 
-C++의 `std::shared_ptr`에 해당하는 공유 소유권도 Rust에 마련되어 있지만, 싱글 스레드용과 멀티 스레드용으로 명확하게 타입이 나뉘어 있습니다.
+C++의 `std::shared_ptr`에 해당하는 공유 소유권도 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)에 마련되어 있지만, 싱글 스레드용과 멀티 스레드용으로 명확하게 타입이 나뉘어 있습니다.
 
 ### 싱글 스레드용: `Rc<T>` (Reference Counted)
 `Rc<T>`는 스레드 안전성(thread-safe)이 없는 참조 카운트 스마트 포인터입니다. 원자적 명령을 사용하지 않고 카운트를 증감시키기 때문에 단일 스레드 내에서는 매우 빠릅니다. 하지만 이를 다른 스레드로 보내려고 하면 컴파일 에러가 발생합니다(`Send` 트레이트를 구현하지 않았기 때문입니다).
@@ -239,7 +239,7 @@ C++의 `std::shared_ptr`에 해당하는 공유 소유권도 Rust에 마련되�
 
 또한, C++에서는 `std::shared_ptr`로 공유하고 있는 변수에 대해 여러 스레드에서 동시에 쓰기를 수행하면 데이터 경합이 발생합니다. 이를 방지하려면 `std::mutex`를 수동으로 올바르게 사용해야 합니다.
 
-반면 Rust에서는 `Arc<T>` 단독으로는 **내부의 데이터를 변경할 수 없습니다**. 변경이 필요한 경우에는 뮤텍스인 `Mutex<T>`와 조합해야 합니다.
+반면 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)에서는 `Arc<T>` 단독으로는 **내부의 데이터를 변경할 수 없습니다**. 변경이 필요한 경우에는 뮤텍스인 `Mutex<T>`와 조합해야 합니다.
 
 ```rust
 use std::sync::{Arc, Mutex};
@@ -269,13 +269,13 @@ fn main() {
 }
 ```
 
-특기할 만한 점은, Rust의 `Mutex<T>`는 단순한 락 메커니즘이 아니라 **"보호해야 할 데이터를 타입으로서 내포하고 있다"** 는 것입니다. 이를 통해 '락을 거는 것을 잊고 데이터에 접근하는' 실수를 컴파일 레벨에서 완벽하게 방지할 수 있습니다. 락(`lock()`)을 획득하지 않는 한 내부 데이터에 대한 접근 권한(참조)을 얻을 수 없는 구조로 되어 있습니다.
+특기할 만한 점은, [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)의 `Mutex<T>`는 단순한 락 메커니즘이 아니라 **"보호해야 할 데이터를 타입으로서 내포하고 있다"** 는 것입니다. 이를 통해 '락을 거는 것을 잊고 데이터에 접근하는' 실수를 컴파일 레벨에서 완벽하게 방지할 수 있습니다. 락(`lock()`)을 획득하지 않는 한 내부 데이터에 대한 접근 권한(참조)을 얻을 수 없는 구조로 되어 있습니다.
 
 ## 요약: 컴파일러에 의한 '사전 검사'인가, 개발자에 의한 '자기 책임'인가
 
 C++의 포인터나 스마트 포인터는 개발자에게 고도의 제어와 성능을 제공하지만, 그 올바른 사용은 개발자의 규율에 의존하고 있습니다. RAII나 `std::unique_ptr`의 도입으로 C++는 극적으로 안전해졌지만, 여전히 이동 후 접근이나 이터레이터 무효화와 같은 '미정의 동작'을 언어 레벨에서 완벽하게 방지할 수는 없습니다.
 
-반면 Rust는 소유권(Ownership)과 차용(Borrowing)이라는 규칙을 컴파일러에 내장함으로써, 이러한 에러들을 실행 시점이 아닌 **컴파일 시점** 에 검출합니다. "컴파일이 통과되면 메모리 안전하다"라는 강력한 보장이야말로 Rust가 시스템 프로그래밍 분야에서 급속히 지지를 얻고 있는 가장 큰 이유입니다.
+반면 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)는 소유권(Ownership)과 차용(Borrowing)이라는 규칙을 컴파일러에 내장함으로써, 이러한 에러들을 실행 시점이 아닌 **컴파일 시점** 에 검출합니다. "컴파일이 통과되면 메모리 안전하다"라는 강력한 보장이야말로 Rust가 시스템 프로그래밍 분야에서 급속히 지지를 얻고 있는 가장 큰 이유입니다.
 
 Rust의 보로우 체커와 싸우는 것(Fight the borrow checker)은 초학자에게 큰 장벽이 되지만, 이는 본래 C++ 프로그래머가 머릿속에서 수행하던 '포인터의 생존 기간 추적'이라는 복잡한 계산을 컴파일러가 엄밀하게 대행해 주고 있는 것에 불과합니다.
 

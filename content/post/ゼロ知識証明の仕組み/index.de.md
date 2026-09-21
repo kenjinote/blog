@@ -205,7 +205,7 @@ ZKP ist zweifellos eine Basistechnologie der nächsten Generation, es bleiben je
 1. **Rechenkosten für die Beweisgenerierung und Hardwarebeschleunigung**
    Die Generierung eines ZKP erfordert enorme Polynomoperationen, FFT (Fast Fourier Transform) und MSM (Multi-Scalar Multiplication). Derzeit schreitet die Erforschung spezieller Hardware (FPGA und ASIC) zur Beschleunigung dieser Beweisgenerierung, auch bekannt als **ZKP-Mining** (Prover Network), rasant voran.
 2. **Standardisierung und Verbesserung der Developer Experience (DX)**
-   Es gibt eine Vielzahl spezialisierter Sprachen zum Schreiben von ZKP-Schaltkreisen, wie Circom, Cairo, Noir und Leo. Standardisierungen, die diese vereinheitlichen, sowie die Ausreifung von Compilern, die automatisch ZKP-Schaltkreise aus bestehendem Rust- oder C++-Code generieren, werden der Schlüssel für die Einführung von ZKP durch gewöhnliche Softwareentwickler sein.
+   Es gibt eine Vielzahl spezialisierter Sprachen zum Schreiben von ZKP-Schaltkreisen, wie Circom, Cairo, Noir und Leo. Standardisierungen, die diese vereinheitlichen, sowie die Ausreifung von Compilern, die automatisch ZKP-Schaltkreise aus bestehendem [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)- oder C++-Code generieren, werden der Schlüssel für die Einführung von ZKP durch gewöhnliche Softwareentwickler sein.
 
 ## Fazit
 

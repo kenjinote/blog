@@ -138,7 +138,7 @@ En un mundo donde es posible descifrar ECDSA con computadoras cuánticas, ¿a qu
 
 ### 3.1. Generación de direcciones y "privacidad" de las claves públicas
 
-Las direcciones de [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) (P2PKH: Pay-to-Public-Key-Hash o P2WPKH: Pay-to-Witness-Public-Key-Hash) no utilizan la clave pública directamente, sino un hash repetido de la clave pública.
+Las direcciones de [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) ([P2P](https://kenji.blog/es/p/webrtc-realtime-communication-p2p/)KH: Pay-to-Public-Key-Hash o P2WPKH: Pay-to-Witness-Public-Key-Hash) no utilizan la clave pública directamente, sino un hash repetido de la clave pública.
 
 $$
 \text{[Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Public Key})))
@@ -178,7 +178,7 @@ Una vez que se envía la clave pública a la Mempool (la sala de espera de trans
 Guiados por los incentivos económicos, los mineros priorizan incluir transacciones con altas tarifas en los bloques. Como resultado, la transferencia fraudulenta del atacante es confirmada (Confirm) primero, y la transferencia legítima de Alice se descarta por "fondos insuficientes (Double Spend)".
 Esta serie de eventos se conoce como **Ataque Front-running (Front-running Attack)**, y en un mundo con computadoras cuánticas prácticas, causaría una situación aterradora donde los fondos son robados por un hacker en el mismo momento en que alguien presiona el botón de enviar.
 
-### 3.3. Peligros de la reutilización de direcciones y direcciones antiguas (P2PK)
+### 3.3. Peligros de la reutilización de direcciones y direcciones antiguas ([P2P](https://kenji.blog/es/p/webrtc-realtime-communication-p2p/)K)
 
 Un problema aún más grave es que en direcciones desde las que se han transferido fondos al menos una vez en el pasado (por ejemplo, si se reutilizan como direcciones de cambio), la clave pública ya está registrada de forma permanente en la cadena de bloques. Sin siquiera esperar a enviar una transacción, estas corren un peligro constante de que su clave privada sea calculada y se roben sus saldos.
 
@@ -289,7 +289,7 @@ La EVM actual provee un contrato precompilado (Precompiled Contract) llamado `ec
 
 No obstante, los nuevos algoritmos de criptografía de retículo como Dilithium y Falcon involucran cálculos polinómicos y matriciales complejos. Si se implementan usando solamente los códigos de operación (Opcodes) actuales de la EVM, una simple verificación de firma podría consumir desde millones hasta decenas de millones de gas. A este nivel, el límite de gas por bloque (actualmente de unos 30 millones de Gas) se agotaría en una sola transacción.
 
-Para eludir esto, la red deberá llevar a cabo un "Hard Fork" (Bifurcación dura) para integrar un nuevo Precompiled Contract dedicado a la verificación PQC (por ejemplo, asignar `0x10` para DilithiumVerify) directamente en la EVM. Esto requiere un proceso de largo plazo donde los desarrolladores principales de cada cliente de Ethereum (Geth, Nethermind, Erigon, etc.) colaboren en implementaciones optimizadas de lógicas de verificación criptográfica de retículos a nivel de lenguajes como C++, Go, y Rust, así como ejecutar auditorías de seguridad.
+Para eludir esto, la red deberá llevar a cabo un "Hard Fork" (Bifurcación dura) para integrar un nuevo Precompiled Contract dedicado a la verificación PQC (por ejemplo, asignar `0x10` para DilithiumVerify) directamente en la EVM. Esto requiere un proceso de largo plazo donde los desarrolladores principales de cada cliente de Ethereum (Geth, Nethermind, Erigon, etc.) colaboren en implementaciones optimizadas de lógicas de verificación criptográfica de retículos a nivel de lenguajes como C++, Go, y [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/), así como ejecutar auditorías de seguridad.
 
 ### 5.3. Dificultad para lograr consensos a través de Hard Forks
 

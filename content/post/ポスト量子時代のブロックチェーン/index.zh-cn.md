@@ -138,7 +138,7 @@ $$
 
 ### 3.1. 地址的生成与公钥的“非公开性”
 
-[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)地址（如P2PKH: Pay-to-Public-Key-Hash 或 P2WPKH: Pay-to-Witness-Public-Key-Hash）并不是公钥本身，而是经过多次哈希处理后的公钥。
+[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)地址（如[P2P](https://kenji.blog/zh-cn/p/webrtc-realtime-communication-p2p/)KH: Pay-to-Public-Key-Hash 或 P2WPKH: Pay-to-Witness-Public-Key-Hash）并不是公钥本身，而是经过多次哈希处理后的公钥。
 
 $$
 \text{[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)地址} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{公钥})))
@@ -178,7 +178,7 @@ sequenceDiagram
 矿工受经济利益驱使，会优先将手续费高的交易打包进区块。结果就是，攻击者的欺诈转账被率先确认（Confirm），而Alice的合法转账则因“余额不足（Double Spend）”被丢弃。
 这一系列流程被称为 **抢跑攻击（Front-running Attack）** 。在量子计算机普及的世界里，这会导致当有人按下发送按钮的瞬间，资金就会被黑客卷走的可怕局面。
 
-### 3.3. 重用地址与旧地址（P2PK）的危机
+### 3.3. 重用地址与旧地址（[P2P](https://kenji.blog/zh-cn/p/webrtc-realtime-communication-p2p/)K）的危机
 
 更严重的问题是，那些过去哪怕只发送过一次资金的地址（例如被重复用作找零地址的情况），其公钥已经永久记录在区块链上了。这些地址根本不需要等待发送交易，随时都面临着被计算出私钥并盗走余额的风险。
 
@@ -289,7 +289,7 @@ pie title 区块链中签名数据大小比较 (概念图)
 
 然而，Dilithium或Falcon等新格密码算法的验证处理涉及复杂的多项式和矩阵运算，如果仅使用现有的EVM操作码（Opcode）来实现，一次签名验证可能就会消耗数百万甚至数千万Gas。这足以在单笔交易中就耗尽目前的区块Gas限制（约3000万Gas）。
 
-为了避免这种情况，必须通过网络硬分叉，将用于验证PQC的新预编译合约（例如：将 `0x10` 分配给 DilithiumVerify）直接内置到EVM中。这需要各个以太坊客户端（如Geth、Nethermind、Erigon等）的核心开发者协同合作，在C++、Go、Rust等语言层面上优化实现格密码学验证逻辑，并进行安全审计，这是一个极其漫长的过程。
+为了避免这种情况，必须通过网络硬分叉，将用于验证PQC的新预编译合约（例如：将 `0x10` 分配给 DilithiumVerify）直接内置到EVM中。这需要各个以太坊客户端（如Geth、Nethermind、Erigon等）的核心开发者协同合作，在C++、Go、[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)等语言层面上优化实现格密码学验证逻辑，并进行安全审计，这是一个极其漫长的过程。
 
 ### 5.3. 硬分叉达成共识的困难性
 

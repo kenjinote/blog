@@ -317,7 +317,7 @@ Import-Module -Name Terminal-Icons
 
 Windows 상에서 실제 Linux 커널을 실행할 수 있는 WSL2(Windows Subsystem for Linux 2)는 모던 웹 개발이나 클라우드 네이티브 개발에 필수적입니다. WSL 내의 셸(Bash나 Zsh) 프롬프트를 커스터마이즈하려면 '**Starship**'이 최적의 해답이 됩니다.
 
-Starship은 Rust 언어로 작성된 매우 빠르고 커스터마이즈성이 뛰어난 크로스 셸 프롬프트입니다. 설정 파일(TOML) 하나만 작성하면 Bash, Zsh, Fish 등 어떤 셸에서든 완전히 동일한 프롬프트를 재현할 수 있다는 것이 장점입니다.
+Starship은 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/) 언어로 작성된 매우 빠르고 커스터마이즈성이 뛰어난 크로스 셸 프롬프트입니다. 설정 파일(TOML) 하나만 작성하면 Bash, Zsh, Fish 등 어떤 셸에서든 완전히 동일한 프롬프트를 재현할 수 있다는 것이 장점입니다.
 
 ## 7.1 Starship 설치
 

@@ -12,7 +12,7 @@ Apresentarei o software de edição de imagens paint.net, que costumo usar no me
 
 ![img_1.png](img_1.webp)
 
-# Pontos úteis que o Paint padrão do Windows não faz
+# Pontos úteis que o [Paint](https://kenji.blog/pt/p/browser-rendering-mechanism-dom-paint/) padrão do Windows não faz
 - Pode lidar com transparência e opacidade
 - Pode fazer seleção automática de formas de área complexas
 - Pode lidar com camadas

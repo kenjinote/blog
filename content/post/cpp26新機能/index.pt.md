@@ -162,7 +162,7 @@ Ao utilizar Contracts, a especificação da API não apenas se autodocumenta, ma
 
 Desde que `std::variant` e `std::any` foram introduzidos no C++17, `std::visit` tem sido usado para despachar variáveis que mantêm vários tipos. No entanto, a combinação de `std::visit` com o padrão de sobrecarga (o chamado hack da estrutura `overloaded`) era muito verboso e tinha baixa legibilidade.
 
-No C++26, a **Correspondência de Padrões (Pattern Matching)** foi incorporada como um recurso da linguagem (conforme P2688). Com isso, uma correspondência intuitiva próxima a de linguagens funcionais (como Rust ou Haskell) torna-se possível.
+No C++26, a **Correspondência de Padrões (Pattern Matching)** foi incorporada como um recurso da linguagem (conforme P2688). Com isso, uma correspondência intuitiva próxima a de linguagens funcionais (como [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) ou Haskell) torna-se possível.
 
 ## 3.1 O Sofrimento com o `std::visit` até o C++23
 

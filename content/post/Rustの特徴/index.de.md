@@ -8,7 +8,7 @@ image: "img.webp"
 categories: ["programming"]
 description: 'Erklärt leicht verständlich die Hauptmerkmale der von Mozilla entwickelten Programmiersprache „Rust“. Stellt vor, warum sie gewählt wird, einschließlich schneller Ausführung, keiner Garbage Collection, Speichersicherheit durch Eigentum (Ownership) und Ausleihen (Borrowing) sowie plattformübergreifender Unterstützung.'
 ---
-# Eigenschaften von Rust
+# Eigenschaften von [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)
 
 - Eine relativ neue Open-Source-Programmiersprache, die von Mozilla entwickelt wird
 - Eine schnelle Sprache ohne [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/), die auf Systemprogrammierung spezialisiert ist

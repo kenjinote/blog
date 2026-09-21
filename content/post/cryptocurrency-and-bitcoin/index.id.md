@@ -39,7 +39,7 @@ Banyak gagasan yang menjadi fondasi Bitcoin lahir dari komunitas ini, seperti "e
 
 Pada tahun 2008, terjadi krisis keuangan global yang dipicu oleh kebangkrutan Lehman Brothers. Ketidakpercayaan terhadap sistem keuangan yang ada mencapai puncaknya pada tahun yang sama, tepatnya pada tanggal 31 Oktober, ketika seseorang (atau kelompok) anonim dengan nama "Satoshi Nakamoto" mengunggah sebuah makalah ke milis kriptografi.
 
-Judulnya adalah 『Bitcoin: A Peer-to-Peer Electronic Cash System』 (Bitcoin: Sistem Uang Tunai Elektronik P2P). Makalah setebal 9 halaman ini menunjukkan cara menyelesaikan masalah pengeluaran ganda yang dialami oleh upaya uang elektronik sebelumnya, dengan cara yang sepenuhnya terdesentralisasi menggunakan mekanisme **Proof of Work (PoW)**.
+Judulnya adalah 『Bitcoin: A Peer-to-Peer Electronic Cash System』 (Bitcoin: Sistem Uang Tunai Elektronik [P2P](https://kenji.blog/id/p/webrtc-realtime-communication-p2p/)). Makalah setebal 9 halaman ini menunjukkan cara menyelesaikan masalah pengeluaran ganda yang dialami oleh upaya uang elektronik sebelumnya, dengan cara yang sepenuhnya terdesentralisasi menggunakan mekanisme **Proof of Work (PoW)**.
 
 ### Blok Genesis (Genesis Block)
 
@@ -256,7 +256,7 @@ Langkah-langkah pertahanan jaringan Bitcoin terhadap hal ini adalah sebagai beri
 1. **Perlindungan Fungsi Hash**: Alamat Bitcoin bukanlah kunci publik itu sendiri, melainkan hasil dari penerapan fungsi hash SHA-256 dan RIPEMD-160 ke kunci publik. Bahkan dengan komputer kuantum, menghitung mundur fungsi hash (bahkan menggunakan algoritma Grover, kompleksitas komputasinya adalah $\mathcal{O}(\sqrt{N})$) masih sulit. Oleh karena itu, alamat tersebut aman terhadap komputer kuantum hingga transaksi dilakukan dan kunci publik diekspos ke jaringan.
 2. **Transisi ke Kriptografi Pasca-Kuantum (Post-Quantum Cryptography: PQC)**: Sebelum komputer kuantum digunakan secara praktis, ada diskusi untuk melakukan hard fork pada protokol Bitcoin untuk beralih ke algoritma tanda tangan baru yang sulit dipecahkan bahkan oleh komputer kuantum, seperti kriptografi berbasis kisi (Lattice-based cryptography) atau kriptografi polinomial multivariat (Multivariate polynomial cryptography) yang dipilih oleh NIST (Institut Nasional Standar dan Teknologi AS).
 
-## 9. Topologi Jaringan dan Detail Protokol P2P
+## 9. Topologi Jaringan dan Detail Protokol [P2P](https://kenji.blog/id/p/webrtc-realtime-communication-p2p/)
 
 Jaringan Bitcoin bukanlah sekadar kumpulan server dan klien, melainkan dibangun sebagai jaringan **Peer-to-Peer (P2P)** yang utuh.
 

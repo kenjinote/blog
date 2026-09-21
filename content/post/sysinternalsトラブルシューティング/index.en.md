@@ -153,7 +153,7 @@ In Autoruns, similar to ProcExp, enable `Verify Code Signatures` and `Check Viru
 ## 5. Tracking Hidden Network Connections with TCPView
 
 While you can check the network status in the Task Manager's Network tab or with the `netstat -ano` command, updates are slow, and manually mapping PIDs to process names is tedious.
-TCPView monitors all TCP and UDP endpoints in real-time, listing which processes are communicating with which remote addresses and ports.
+TCPView monitors all [TCP](https://kenji.blog/en/p/http3-quic-protocol-tcp-udp/) and [UDP](https://kenji.blog/en/p/http3-quic-protocol-tcp-udp/) endpoints in real-time, listing which processes are communicating with which remote addresses and ports.
 
 ### 5.1 Identifying Unauthorized C2 Communications
 If malware has installed a backdoor and is sending Beacons to an external C2 (Command and Control) server, look for the following characteristics in TCPView:
@@ -161,7 +161,7 @@ If malware has installed a backdoor and is sending Beacons to an external C2 (Co
 *   **Unnatural Process Names**: For example, a process named `svchost.exe` operating with user privileges instead of system privileges, and maintaining communication in an `ESTABLISHED` state with an unfamiliar overseas IP address.
 *   **Communication from Processes that Normally Don't Communicate**: For instance, Calculator (`calc.exe`) or Notepad (`notepad.exe`) sending and receiving large numbers of packets on port 443 or 80 (a typical sign of Process Hollowing).
 
-If you spot suspicious communication, you can forcefully close the TCP session (issuing an RST packet) by sending `Close Connection` directly from TCPView, or forcefully terminate the corresponding process with `End Process`.
+If you spot suspicious communication, you can forcefully close the [TCP](https://kenji.blog/en/p/http3-quic-protocol-tcp-udp/) session (issuing an RST packet) by sending `Close Connection` directly from TCPView, or forcefully terminate the corresponding process with `End Process`.
 
 ---
 

@@ -18,7 +18,7 @@ En ciencias de la computación, es extremadamente importante detectar si una est
 
 Este algoritmo utiliza dos punteros que se mueven a diferentes velocidades (a menudo llamados seudónimamente "liebre" y "tortuga"), por lo que también es ampliamente conocido como el **Algoritmo de la liebre y la tortuga** (Tortoise and Hare Algorithm).
 
-En este artículo, explicaremos en detalle desde el funcionamiento de este algoritmo hasta su contexto matemático, pasando por ejemplos concretos de implementación en C++ y Rust.
+En este artículo, explicaremos en detalle desde el funcionamiento de este algoritmo hasta su contexto matemático, pasando por ejemplos concretos de implementación en C++ y [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/).
 
 ## ¿Qué es la detección de ciclos?
 
@@ -111,7 +111,7 @@ En otras palabras, inmediatamente después de la colisión, **si devolvemos uno 
 
 ## Implementación mediante código
 
-Ahora implementemos la teoría anterior en C++ y Rust.
+Ahora implementemos la teoría anterior en C++ y [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/).
 
 ### Implementación en C++
 
@@ -207,7 +207,7 @@ int main() {
 }
 ```
 
-### Implementación en Rust
+### Implementación en [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/)
 
 En el caso de Rust, debido a las reglas de propiedad (ownership) y préstamo (borrowing), la implementación de listas enlazadas tiende a ser compleja, por lo que en la programación competitiva es común modelar esto como un problema de referencias de índices en un arreglo (o `Vec`).
 Aquí mostraremos un ejemplo de implementación utilizando un arreglo que mantiene el "índice siguiente" en lugar del "puntero al siguiente".
@@ -332,4 +332,4 @@ En este artículo, hemos explicado el **Algoritmo de detección de ciclos de Flo
 Es un método elegante que, partiendo de la sencilla idea de hacer correr dos punteros a diferentes velocidades, permite detectar ciclos e identificar el punto de inicio con un tiempo de $O(N)$ y un espacio de $O(1)$.
 Al comprender su fundamento matemático, queda claro por qué al regresar un puntero al principio tras la colisión y hacerlos avanzar a la misma velocidad se puede encontrar el inicio.
 
-En la implementación de estructuras de datos y en la programación competitiva, este algoritmo se convierte en un arma muy poderosa. Te animamos a que intentes implementarlo por ti mismo en C++ o Rust.
+En la implementación de estructuras de datos y en la programación competitiva, este algoritmo se convierte en un arma muy poderosa. Te animamos a que intentes implementarlo por ti mismo en C++ o [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/).

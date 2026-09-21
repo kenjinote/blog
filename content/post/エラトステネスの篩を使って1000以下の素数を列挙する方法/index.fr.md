@@ -28,7 +28,7 @@ L'algorithme est simple et peut être implémenté via les étapes suivantes :
 ![](Animation_Sieb_des_Eratosthenes.gif)
 
 
-## Implémentation en Rust
+## Implémentation en [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/)
 
 ```
 fn main() {

@@ -106,7 +106,7 @@ This research birthed a new method in analytic number theory called the "Circle 
 
 Ramanujan's research on "mock theta functions" was described in his last letter to Hardy just before his death. For a long time, the mathematical meaning of these functions remained a mystery, and many mathematicians attempted to decode them. In recent years, it has become clear that these functions play a critical role in the forefront of modern physics, such as black hole thermodynamics and string theory. His intuition was decades, if not a century, ahead of its time.
 
-### Ramanujan Primes and Highly Composite Numbers
+### Ramanujan Primes and Highly [Composite](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/) Numbers
 
 He also possessed deep insights into the distribution of primes. His research leading to "Ramanujan primes," derived from the generalization of Bertrand's postulate, and "highly composite numbers," which have an unusually large number of divisors, hold an important place in modern number theory.
 

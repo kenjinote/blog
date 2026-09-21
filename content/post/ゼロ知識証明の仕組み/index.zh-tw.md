@@ -205,7 +205,7 @@ ZKP無疑是次世代的基礎技術，但也仍有一些挑戰需要解決。
 1. **證明生成的計算成本與硬體加速**
    生成ZKP需要龐大的多項式運算、FFT（快速傅立葉轉換）與MSM（多純量乘法）。目前，為了加速這種證明生成，專用硬體（FPGA或ASIC）的開發，也就是所謂的 **ZKP挖礦** （Prover Network）研究正在快速進展。
 2. **標準化與開發者體驗（DX）的提升**
-   用於撰寫ZKP電路的專用語法（如Circom、Cairo、Noir、Leo等）百花齊放。統一這些標準，以及能從現有的Rust或C++自動生成ZKP電路的編譯器發展成熟度，將成為一般軟體工程師導入ZKP的關鍵。
+   用於撰寫ZKP電路的專用語法（如Circom、Cairo、Noir、Leo等）百花齊放。統一這些標準，以及能從現有的[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)或C++自動生成ZKP電路的編譯器發展成熟度，將成為一般軟體工程師導入ZKP的關鍵。
 
 ## 結語
 

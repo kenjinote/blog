@@ -9,7 +9,7 @@ categories: ["programming"]
 description: 'Объясняется, как отобразить простое окно сообщения (MessageBox) путем вызова API Windows в Rust с использованием крейтов `winapi` и `user32-sys`, шаг за шагом, от создания проекта до реализации кода.'
 ---
 
-Вы можете отобразить MessageBox в Rust, выполнив следующие шаги.
+Вы можете отобразить MessageBox в [Rust](https://kenji.blog/ru/p/webassembly-wasm-current-future/), выполнив следующие шаги.
 
 1. Установите Rust. См. [С чего начать в Rust](https://kenji.blog/posts/rust%E3%81%AE%E3%81%AF%E3%81%98%E3%82%81%E3%81%8B%E3%81%9F/)
 2. Выполните команду `cargo new --bin MessageBox` в командной строке.

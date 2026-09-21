@@ -20,7 +20,7 @@ Google Colaboratory एक ऑनलाइन Python निष्पादन �
 
 यह Jupyter Notebook पर आधारित है।
 
-## Rust
+## [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/)
 
 - [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021)
 

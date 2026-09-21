@@ -35,6 +35,6 @@ Windows 11 होना चाहिए
 [एप्लिकेशन इंस्टॉल और प्रबंधित करने के लिए winget टूल का उपयोग करें](https://learn.microsoft.com/hi-in/windows/package-manager/winget/)
 
 ### अतिरिक्त बात
-मैंने सोचा था कि मैं Paint.Net भी इंस्टॉल कर सकता हूं, लेकिन मैं इसे इंस्टॉल नहीं कर सका।
+मैंने सोचा था कि मैं [Paint](https://kenji.blog/hi/p/browser-rendering-mechanism-dom-paint/).Net भी इंस्टॉल कर सकता हूं, लेकिन मैं इसे इंस्टॉल नहीं कर सका।
 
 https://forums.getpaint.net/topic/118574-please-add-paintnet-to-the-available-packages-for-windows-package-manager-winget/

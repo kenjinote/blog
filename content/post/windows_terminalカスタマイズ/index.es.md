@@ -317,7 +317,7 @@ Hay cientos de temas (configuraciones) disponibles y también puedes crear el tu
 
 WSL2 (Windows Subsystem for Linux 2), que te permite ejecutar un núcleo de Linux real en Windows, es indispensable para el desarrollo web moderno y el desarrollo nativo en la nube. "Starship" es la solución óptima para personalizar la consola de los shells (Bash o Zsh) dentro de WSL.
 
-Starship es una consola multi-shell extremadamente rápida y personalizable escrita en Rust. Su mayor ventaja es que puedes reproducir exactamente el mismo prompt en cualquier shell, como Bash, Zsh o Fish, escribiendo un solo archivo de configuración (TOML).
+Starship es una consola multi-shell extremadamente rápida y personalizable escrita en [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/). Su mayor ventaja es que puedes reproducir exactamente el mismo prompt en cualquier shell, como Bash, Zsh o Fish, escribiendo un solo archivo de configuración (TOML).
 
 ## 7.1 Instalación de Starship
 

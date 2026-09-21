@@ -39,7 +39,7 @@ Actualmente están asignados como se muestra arriba. También puedes cambiar la 
 - El polvo se acumula alrededor del trackball, por lo que es necesario quitar la bola y limpiarla regularmente (aproximadamente una vez cada pocos días).
 - La sensación operativa es diferente a la de un mouse, usando el dedo índice y medio para mover el cursor, y el pulgar para operar la rueda del mouse, por lo que toma tiempo acostumbrarse.
 - Como escribí anteriormente, es fácil realizar movimientos finos, pero todavía es difícil mover el cursor píxel por píxel con un trackball.
-- No es posible operar la rueda mientras se presiona el botón izquierdo (por ejemplo, cuando se desea acercar/alejar mientras se selecciona un área en Paint).
+- No es posible operar la rueda mientras se presiona el botón izquierdo (por ejemplo, cuando se desea acercar/alejar mientras se selecciona un área en [Paint](https://kenji.blog/es/p/browser-rendering-mechanism-dom-paint/)).
 
 En conclusión, aunque creo que es de los más caros entre los trackballs, en general es bastante fácil de operar y creo que ha mejorado la eficiencia de mi trabajo.
 Espero que esto sea útil para quienes estén considerando comprarlo.

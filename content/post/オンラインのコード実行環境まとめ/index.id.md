@@ -20,7 +20,7 @@ Google Colaboratory adalah lingkungan eksekusi Python yang dapat dijalankan seca
 
 Ini didasarkan pada Jupyter Notebook.
 
-## Rust
+## [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)
 
 - [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021)
 

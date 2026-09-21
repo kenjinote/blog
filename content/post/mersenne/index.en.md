@@ -75,7 +75,7 @@ For example:
 
 However, for $n = 11$,
 $$
-M_{11} = 2^{11} - 1 = 2047 = 23 \times 89 \quad (\text{Composite number})
+M_{11} = 2^{11} - 1 = 2047 = 23 \times 89 \quad (\text{[Composite](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/) number})
 $$
 Thus, it is not prime.
 

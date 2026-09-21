@@ -11,9 +11,9 @@ tags: ["C++", "Rust", "Programming", "Career"]
 
 # Introducción: Un nuevo amanecer en la programación de sistemas
 
-En la ingeniería de software moderna, C++ y Rust son los dos gigantes que lideran la vanguardia de la programación de sistemas. Durante muchos años, C++ ha reinado como el rey absoluto en áreas que extraen el máximo rendimiento del hardware, como sistemas operativos, dispositivos embebidos, motores de juegos y sistemas de comercio de alta frecuencia (HFT). Como ingeniero senior de C++, yo mismo he estado escribiendo código a lo largo de este viaje, empezando por la jungla de los punteros crudos en la era de C++98, pasando por la ola de modernización con C++11 (introducción de punteros inteligentes, expresiones lambda, `auto`), y continuando con la expansión masiva de las especificaciones en C++14/17/20.
+En la ingeniería de software moderna, C++ y [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) son los dos gigantes que lideran la vanguardia de la programación de sistemas. Durante muchos años, C++ ha reinado como el rey absoluto en áreas que extraen el máximo rendimiento del hardware, como sistemas operativos, dispositivos embebidos, motores de juegos y sistemas de comercio de alta frecuencia (HFT). Como ingeniero senior de C++, yo mismo he estado escribiendo código a lo largo de este viaje, empezando por la jungla de los punteros crudos en la era de C++98, pasando por la ola de modernización con C++11 (introducción de punteros inteligentes, expresiones lambda, `auto`), y continuando con la expansión masiva de las especificaciones en C++14/17/20.
 
-Sin embargo, en los últimos años, Rust ha experimentado un ascenso dramático como solución a los problemas estructurales que enfrenta C++: específicamente la "falta de seguridad de memoria" que conduce a vulnerabilidades de seguridad (se dice que alrededor del 70% de los CVE son causados por la memoria) y la "complejidad interminable de especificaciones y comportamientos indefinidos (UB)". Su adopción oficial en el kernel de Linux, y los proyectos de migración a gran escala a Rust por gigantes tecnológicos como Microsoft, Google y AWS, significan que no es solo una moda pasajera, sino un cambio de paradigma en la programación de sistemas.
+Sin embargo, en los últimos años, [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) ha experimentado un ascenso dramático como solución a los problemas estructurales que enfrenta C++: específicamente la "falta de seguridad de memoria" que conduce a vulnerabilidades de seguridad (se dice que alrededor del 70% de los CVE son causados por la memoria) y la "complejidad interminable de especificaciones y comportamientos indefinidos (UB)". Su adopción oficial en el kernel de Linux, y los proyectos de migración a gran escala a Rust por gigantes tecnológicos como Microsoft, Google y AWS, significan que no es solo una moda pasajera, sino un cambio de paradigma en la programación de sistemas.
 
 En este artículo, compararé y explicaré exhaustivamente desde un punto de vista técnico y fundamental las "ventajas" y "desventajas" que un ingeniero de C++ puro ha experimentado al aprender profundamente Rust y usarlo en la práctica.
 
@@ -57,9 +57,9 @@ int main() {
 
 En C++, siempre existe el riesgo de acceder por error a un objeto que ha sido vaciado por `std::move` (un estado válido pero no especificado). Esto puede provocar bloqueos (crashes) en tiempo de ejecución o, en el peor de los casos, directamente vulnerabilidades de seguridad.
 
-## Propiedad (Ownership) en Rust y la defensa absoluta del [Borrow Checker](https://kenji.blog/es/p/memory-management-garbage-collection/)
+## Propiedad (Ownership) en [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) y la defensa absoluta del [Borrow Checker](https://kenji.blog/es/p/memory-management-garbage-collection/)
 
-Rust incorpora este concepto de "propiedad" en el diseño central del lenguaje, y realiza un análisis estático estricto mediante una característica del compilador llamada **Borrow Checker**.
+[Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) incorpora este concepto de "propiedad" en el diseño central del lenguaje, y realiza un análisis estático estricto mediante una característica del compilador llamada **Borrow Checker**.
 
 ```rust
 fn consume(s: String) {
@@ -77,7 +77,7 @@ fn main() {
 }
 ```
 
-En Rust, en el momento en que se transfiere la propiedad de una variable, el compilador trata a la variable original de manera equivalente a un estado "no inicializado", bloqueando completamente cualquier acceso posterior. Debido a esto, errores como "Use-After-Free (Uso de memoria después de ser liberada)" y "Dangling Pointer (Puntero colgante)" teóricamente no pueden pasar la compilación.
+En [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/), en el momento en que se transfiere la propiedad de una variable, el compilador trata a la variable original de manera equivalente a un estado "no inicializado", bloqueando completamente cualquier acceso posterior. Debido a esto, errores como "Use-After-Free (Uso de memoria después de ser liberada)" y "Dangling Pointer (Puntero colgante)" teóricamente no pueden pasar la compilación.
 
 ```mermaid
 graph TD
@@ -94,17 +94,17 @@ graph TD
 
 ## Préstamo (Borrowing) y control de mutabilidad
 
-Aún más poderosas son las reglas de "Préstamo (Borrowing)" que referencian recursos. En Rust se imponen las siguientes reglas:
+Aún más poderosas son las reglas de "Préstamo (Borrowing)" que referencian recursos. En [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) se imponen las siguientes reglas:
 1. En cualquier momento, **solo puede existir uno** de los siguientes casos: "Múltiples referencias inmutables (`&T`)" o "Una única referencia mutable (`&mut T`)".
 2. Una referencia no debe vivir más tiempo que el alcance de los datos originales (restricción de tiempo de vida - lifetime).
 
-En C++, se pueden crear fácilmente múltiples referencias o punteros mutables para el mismo objeto, lo que provoca la destrucción de estados inesperados (como la invalidación de iteradores). Rust prohíbe esta combination de "Aliasing + Mutabilidad" a nivel de lenguaje para prevenir errores antes de que ocurran.
+En C++, se pueden crear fácilmente múltiples referencias o punteros mutables para el mismo objeto, lo que provoca la destrucción de estados inesperados (como la invalidación de iteradores). [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) prohíbe esta combination de "Aliasing + Mutabilidad" a nivel de lenguaje para prevenir errores antes de que ocurran.
 
 ---
 
 # 2. Diseño de memoria y la sobrecarga matemática de los punteros inteligentes
 
-En la programación de sistemas, es esencial tener una comprensión precisa del diseño de la memoria. Comparemos `std::shared_ptr` de C++ con `std::rc::Rc` / `std::sync::Arc` de Rust.
+En la programación de sistemas, es esencial tener una comprensión precisa del diseño de la memoria. Comparemos `std::shared_ptr` de C++ con `std::rc::Rc` / `std::sync::Arc` de [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/).
 
 `std::shared_ptr` en C++ gestiona los recursos mediante conteo de referencias, y por defecto aumenta y disminuye este conteo utilizando operaciones atómicas thread-safe (`std::atomic`). Su sobrecarga de memoria se puede formular de la siguiente manera:
 
@@ -112,7 +112,7 @@ $$ Overhead_{C++} = sizeof(T) + sizeof(ControlBlock) $$
 
 Aquí, el $ControlBlock$ incluye el "Contador de referencias fuertes (Strong Ref Count)", el "Contador de referencias débiles (Weak Ref Count)" y un "Eliminador personalizado (Custom Deleter)". El problema es que, incluso en escenarios donde solo se usa un hilo (single-thread), la sobrecarga de las instrucciones atómicas (bloqueos en la línea de caché, etc.) ocurre incondicionalmente.
 
-En contraste, Rust separa estrictamente los punteros inteligentes según su caso de uso.
+En contraste, [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) separa estrictamente los punteros inteligentes según su caso de uso.
 
 - **Para un solo hilo**: `Rc<T>` (Reference Counted)
 - **Para múltiples hilos**: `Arc<T>` (Atomic Reference Counted)
@@ -120,7 +120,7 @@ En contraste, Rust separa estrictamente los punteros inteligentes según su caso
 $$ Overhead_{Rc} = sizeof(T) + 2 \times sizeof(usize) $$
 $$ Overhead_{Arc} = sizeof(T) + 2 \times sizeof(AtomicUsize) $$
 
-En Rust, si se usa `Rc<T>`, que es exclusivo para un solo hilo, se puede evitar por completo la penalización de las operaciones atómicas (abstracción de costo cero). Y gracias al mecanismo de seguridad de hilos (thread-safety) que veremos más adelante, pasar `Rc<T>` a otro hilo por error es completamente prevenido por el sistema de tipos.
+En [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/), si se usa `Rc<T>`, que es exclusivo para un solo hilo, se puede evitar por completo la penalización de las operaciones atómicas (abstracción de costo cero). Y gracias al mecanismo de seguridad de hilos (thread-safety) que veremos más adelante, pasar `Rc<T>` a otro hilo por error es completamente prevenido por el sistema de tipos.
 
 ---
 
@@ -156,7 +156,7 @@ int main() {
 }
 ```
 
-## En Rust, Mutex "posee" los datos
+## En [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/), Mutex "posee" los datos
 
 En Rust, `Mutex<T>` utiliza genéricos para **encapsular (poseer)** el tipo de dato `T` que protege. Para acceder a los datos, es absolutamente necesario invocar `lock()` y obtener un objeto guardia (guard object). Es sintácticamente imposible tocar los datos sin obtener el bloqueo.
 
@@ -186,7 +186,7 @@ fn main() {
 }
 ```
 
-Además, Rust cuenta con dos traits centrales que garantizan la seguridad del procesamiento concurrente.
+Además, [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) cuenta con dos traits centrales que garantizan la seguridad del procesamiento concurrente.
 - `Send`: Tipos cuya propiedad puede transferirse de forma segura entre hilos.
 - `Sync`: Tipos a los que se puede acceder simultáneamente desde varios hilos de forma segura.
 
@@ -196,7 +196,7 @@ Según la Ley de Amdahl (Amdahl's Law), el rendimiento máximo teórico en relac
 
 $$ S(N) = \frac{1}{(1 - P) + \frac{P}{N}} $$
 
-Rust permite maximizar esta $P$ a través de refactorizaciones que pueden realizarse con extrema seguridad basándose en el sistema de tipos.
+[Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) permite maximizar esta $P$ a través de refactorizaciones que pueden realizarse con extrema seguridad basándose en el sistema de tipos.
 
 ```mermaid
 graph TD
@@ -215,7 +215,7 @@ graph TD
 
 El estándar de manejo de errores en C++ son las "Excepciones" (Exceptions). Sin embargo, las excepciones opacan el flujo de control y provocan penalizaciones de rendimiento (stack unwinding y sobrecarga de RTTI). En los sistemas embebidos y en los motores de juegos, suele ser común adoptar un diseño que devuelve códigos de error clásicos y deshabilita completamente las excepciones (`-fno-exceptions`). En C++23 se introdujo `std::expected`, pero tomará tiempo hasta que penetre en todo el ecosistema.
 
-En Rust, el concepto de excepción no existe. Los errores se devuelven como "valores" puros y se representan mediante un enum (tipo de dato algebraico) llamado `Result<T, E>`.
+En [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/), el concepto de excepción no existe. Los errores se devuelven como "valores" puros y se representan mediante un enum (tipo de dato algebraico) llamado `Result<T, E>`.
 
 ```rust
 use std::fs::File;
@@ -243,7 +243,7 @@ En el despacho dinámico, se inserta un puntero (vptr) a la tabla de funciones v
 
 $$ T_{dispatch} = T_{lookup\_in\_vtable} + T_{dereference} $$
 
-Rust ha descartado la clásica "herencia de clases" orientada a objetos, adoptando en su lugar el concepto de "**Traits**" (similar a Concept de C++20, pero con más funcionalidades).
+[Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) ha descartado la clásica "herencia de clases" orientada a objetos, adoptando en su lugar el concepto de "**Traits**" (similar a Concept de C++20, pero con más funcionalidades).
 
 ```rust
 trait Drawable {
@@ -266,7 +266,7 @@ fn draw_dynamic(item: &dyn Drawable) {
 }
 ```
 
-La característica principal del despacho dinámico de Rust (`dyn Trait`) es que no tiene un vptr dentro de la estructura de datos, sino que utiliza un **Puntero Gordo (Fat Pointer)**. El Fat Pointer mantiene un par con el "puntero a los datos" y el "puntero a la vtable". Gracias a esto, es muy fácil implementar (extender) un Trait a un tipo definido en una biblioteca externa y aplicarle el despacho dinámico posteriormente.
+La característica principal del despacho dinámico de [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) (`dyn Trait`) es que no tiene un vptr dentro de la estructura de datos, sino que utiliza un **Puntero Gordo (Fat Pointer)**. El Fat Pointer mantiene un par con el "puntero a los datos" y el "puntero a la vtable". Gracias a esto, es muy fácil implementar (extender) un Trait a un tipo definido en una biblioteca externa y aplicarle el despacho dinámico posteriormente.
 
 ---
 
@@ -274,7 +274,7 @@ La característica principal del despacho dinámico de Rust (`dyn Trait`) es que
 
 Una de las mayores debilidades de C++ es la falta de un administrador de paquetes estándar. La sintaxis incomprensible de `CMakeLists.txt`, la complejidad para resolver dependencias a través de `find_package`, y las diferencias en las rutas de las bibliotecas según el sistema operativo, han estado robando una enorme cantidad de tiempo a los ingenieros de C++.
 
-Rust viene equipado de serie con **Cargo**, un sistema de construcción y administrador de paquetes de primer nivel a nivel mundial.
+[Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) viene equipado de serie con **Cargo**, un sistema de construcción y administrador de paquetes de primer nivel a nivel mundial.
 
 ```mermaid
 graph TD
@@ -293,22 +293,22 @@ Con solo agregar una línea en `Cargo.toml` con el nombre y la versión de la bi
 
 ---
 
-# 7. Desventajas y curva de aprendizaje al aprender Rust
+# 7. Desventajas y curva de aprendizaje al aprender [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/)
 
 Hasta ahora, he hablado de las ventajas de Rust, pero ciertamente existen "muros" y desventajas que un ingeniero de C++ enfrentará al implementarlo en la práctica.
 
 ## 1. La feroz lucha con el [Borrow Checker](https://kenji.blog/es/p/memory-management-garbage-collection/)
-Si intentas implementar de la misma manera en Rust una estructura de datos que en C++ simplemente "conectabas de alguna manera con punteros crudos" (por ejemplo, listas doblemente enlazadas, estructuras de grafos, estructuras autorreferenciadas, etc.), la compilación fallará debido a las restricciones de propiedad y tiempos de vida. Para satisfacer al Borrow Checker, necesitas hacer envolturas complejas como `Rc<RefCell<T>>`, o rediseñar desde la raíz usando un asignador de arena (arena allocator) o una gestión basada en índices.
+Si intentas implementar de la misma manera en [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) una estructura de datos que en C++ simplemente "conectabas de alguna manera con punteros crudos" (por ejemplo, listas doblemente enlazadas, estructuras de grafos, estructuras autorreferenciadas, etc.), la compilación fallará debido a las restricciones de propiedad y tiempos de vida. Para satisfacer al Borrow Checker, necesitas hacer envolturas complejas como `Rc<RefCell<T>>`, o rediseñar desde la raíz usando un asignador de arena (arena allocator) o una gestión basada en índices.
 
 ## 2. Largos tiempos de compilación
-Aunque C++ también ralentiza la compilación al anidar plantillas, el tiempo de compilación de Rust (especialmente en un clean build desde cero) no es para nada corto. Esto se debe a la superposición de las potentes pasadas de optimización de LLVM, la expansión de macros y la monomorfización de genéricos, lo que convierte al tiempo de construcción en un cuello de botella en proyectos a gran escala. Durante el desarrollo, es indispensable ingeniárselas usando `cargo check` con frecuencia.
+Aunque C++ también ralentiza la compilación al anidar plantillas, el tiempo de compilación de [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) (especialmente en un clean build desde cero) no es para nada corto. Esto se debe a la superposición de las potentes pasadas de optimización de LLVM, la expansión de macros y la monomorfización de genéricos, lo que convierte al tiempo de construcción en un cuello de botella en proyectos a gran escala. Durante el desarrollo, es indispensable ingeniárselas usando `cargo check` con frecuencia.
 
 ## 3. Interoperabilidad con bases de código de C++
-La integración con el lenguaje C (FFI) es muy fluida, pero integrar Rust directamente en bases de código enormes de C++ existentes (aquellas que utilizan en gran medida clases, plantillas y funciones virtuales) es extremadamente difícil. En los últimos años, han evolucionado herramientas puente como `cxx` y `autocxx`, pero todavía hay un listón alto para una transición completamente fluida.
+La integración con el lenguaje C (FFI) es muy fluida, pero integrar [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) directamente en bases de código enormes de C++ existentes (aquellas que utilizan en gran medida clases, plantillas y funciones virtuales) es extremadamente difícil. En los últimos años, han evolucionado herramientas puente como `cxx` y `autocxx`, pero todavía hay un listón alto para una transición completamente fluida.
 
 ---
 
-# Conclusión: ¿Deberíamos migrar a Rust?
+# Conclusión: ¿Deberíamos migrar a [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/)?
 
 C++ seguirá desempeñando un papel importante en el desarrollo de motores de juegos y en la enorme infraestructura existente. Su modernización a través de C++20/23 también ha sido notable, volviéndose más seguro de escribir.
 

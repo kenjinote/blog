@@ -9,7 +9,7 @@ categories: ["programming"]
 description: 'Explains how to display a simple message box (MessageBox) by calling the Windows API using the `winapi` and `user32-sys` crates in Rust, following the steps from project creation to code implementation.'
 ---
 
-You can display a MessageBox in Rust by following these steps.
+You can display a MessageBox in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) by following these steps.
 
 1. Install Rust. See [Getting Started with Rust](https://kenji.blog/posts/rust%E3%81%AE%E3%81%AF%E3%81%98%E3%82%81%E3%81%8B%E3%81%9F/).
 2. Run `cargo new --bin MessageBox` in the command prompt.

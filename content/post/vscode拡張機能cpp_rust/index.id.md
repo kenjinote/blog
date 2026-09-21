@@ -11,7 +11,7 @@ tags: ["VSCode", "C++", "Rust", "Editor"]
 
 # Pengantar
 
-Dalam pemrograman sistem modern, C++ dan Rust telah mengukuhkan posisi mereka sebagai bahasa yang paling penting. C++ sangat diperlukan dalam OS, mesin game, dan sistem perdagangan frekuensi tinggi (HFT) dengan rekam jejaknya yang panjang dan ekosistem yang luas. Dan Rust, yang menyebar dengan cepat berkat keamanan memori yang diberikan oleh model kepemilikan (Ownership) serta spesifikasi bahasanya yang modern, dan adopsinya ke dalam kernel Linux terus berlanjut. Saat mengembangkan dalam kedua bahasa ini, pilihan editor dan pengaturannya berhubungan langsung dengan produktivitas pengembangan.
+Dalam pemrograman sistem modern, C++ dan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) telah mengukuhkan posisi mereka sebagai bahasa yang paling penting. C++ sangat diperlukan dalam OS, mesin game, dan sistem perdagangan frekuensi tinggi (HFT) dengan rekam jejaknya yang panjang dan ekosistem yang luas. Dan Rust, yang menyebar dengan cepat berkat keamanan memori yang diberikan oleh model kepemilikan (Ownership) serta spesifikasi bahasanya yang modern, dan adopsinya ke dalam kernel Linux terus berlanjut. Saat mengembangkan dalam kedua bahasa ini, pilihan editor dan pengaturannya berhubungan langsung dengan produktivitas pengembangan.
 
 Visual Studio Code (VSCode) sangat disukai oleh programmer sistem di seluruh dunia karena kemudahan ekstensinya dan sifatnya yang ringan. Namun, VSCode setelah diinstal hanyalah sekadar editor teks biasa. Untuk memaksimalkan kekuatan sejati dari C++ dan Rust, pengenalan ekstensi yang tepat dan pengaturan yang teliti sangat diperlukan, seperti server bahasa yang sangat memahami semantik bahasa tersebut, serta debugger yang melacak status hingga tingkat biner.
 
@@ -43,7 +43,7 @@ graph TD
     Debugger -. ptrace / Dump memori .-> Executable["Biner yang dikompilasi"]
 ```
 
-Inti dari VSCode itu sendiri tidak memahami metaprogramming template dari C++ atau specifier lifetime (waktu hidup) yang kompleks dari Rust. Peran editor hanya terfokus pada menampilkan kode sumber dan menerima input dari pengguna, sementara proses dengan biaya komputasi yang tinggi seperti analisis semantik (Semantic Analysis), inferensi tipe (Type Inference), dan pemeriksaan error, didelegasikan kepada "server bahasa" yang berjalan di latar belakang melalui JSON-RPC.
+Inti dari VSCode itu sendiri tidak memahami metaprogramming template dari C++ atau specifier lifetime (waktu hidup) yang kompleks dari [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/). Peran editor hanya terfokus pada menampilkan kode sumber dan menerima input dari pengguna, sementara proses dengan biaya komputasi yang tinggi seperti analisis semantik (Semantic Analysis), inferensi tipe (Type Inference), dan pemeriksaan error, didelegasikan kepada "server bahasa" yang berjalan di latar belakang melalui JSON-RPC.
 
 Berkat ini, tanpa memblokir thread UI pada editor, penyelesaian respons yang lancar dan cepat bisa dicapai bahkan pada basis kode berskala besar yang terdiri dari jutaan baris kode.
 
@@ -97,12 +97,12 @@ Dengan mengoptimalkan indeks latar belakang secara maksimal (optimasi struktur d
 
 ---
 
-### ② rust-analyzer (Standar De Facto Pengembangan Rust)
+### ② rust-analyzer (Standar De Facto Pengembangan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/))
 
-Dalam pengembangan Rust, **`rust-analyzer`** adalah yang diadopsi sebagai server bahasa resmi saat ini. Dulu standar yang digunakan adalah RLS (Rust Language Server) yang memiliki arsitektur memanggil langsung compiler (rustc), sehingga waktu responsnya terbatas. Namun, `rust-analyzer` dirancang ulang dari awal khusus untuk IDE, dan memiliki fitur kuat yang mampu mem-parsing kode secara bertahap (incremental) bahkan jika kode tersebut tidak lengkap.
+Dalam pengembangan Rust, **`rust-analyzer`** adalah yang diadopsi sebagai server bahasa resmi saat ini. Dulu standar yang digunakan adalah RLS ([Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) Language Server) yang memiliki arsitektur memanggil langsung compiler (rustc), sehingga waktu responsnya terbatas. Namun, `rust-analyzer` dirancang ulang dari awal khusus untuk IDE, dan memiliki fitur kuat yang mampu mem-parsing kode secara bertahap (incremental) bahkan jika kode tersebut tidak lengkap.
 
 #### Fitur yang Menghasilkan Produktivitas Luar Biasa
-1. **Inlay Hints (Petunjuk Inlay)**: Di Rust yang inferensi tipenya kuat, disarankan untuk tidak menulis tipe variabel secara eksplisit, tetapi ini dapat menurunkan tingkat keterbacaan (readability). Inlay Hints menampilkan tipe yang diinferensikan serta nama argumen panggilan fungsi dalam teks pudar yang ditumpangkan (overlay) pada editor.
+1. **Inlay Hints (Petunjuk Inlay)**: Di [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) yang inferensi tipenya kuat, disarankan untuk tidak menulis tipe variabel secara eksplisit, tetapi ini dapat menurunkan tingkat keterbacaan (readability). Inlay Hints menampilkan tipe yang diinferensikan serta nama argumen panggilan fungsi dalam teks pudar yang ditumpangkan (overlay) pada editor.
 2. **Dukungan Penuh untuk Makro Prosedural (Proc-macro)**: Makro prosedural seperti `#[derive(Serialize)]` dari `serde` atau `tokio::main` menerima AST sebagai TokenStream pada waktu kompilasi dan menghasilkan kode baru. `rust-analyzer` mengembangkan makro ini secara internal dan memungkinkan penyelesaian (completion) serta pemeriksaan error berfungsi pada kode yang dihasilkan.
 3. **Magic Completions (Penyelesaian Ajaib)**: Dalam rantai metode (method chaining) seperti `iter().map().filter().collect()`, ini bisa menampilkan langkah demi langkah bagaimana tipe data diubah di tengah jalan.
 
@@ -119,7 +119,7 @@ Dalam pengembangan Rust, **`rust-analyzer`** adalah yang diadopsi sebagai server
     "rust-analyzer.hover.actions.references.enable": true
 }
 ```
-Pengaturan untuk menjalankan `cargo clippy` secara otomatis di latar belakang saat menyimpan bisa dikatakan sangat wajib. Dengan begitu, Anda tidak hanya belajar tentang pelanggaran kepemilikan (ownership), tetapi juga langsung menerima saran perbaikan performa dan penulisan kode yang lebih idiomatik (khas) gaya Rust.
+Pengaturan untuk menjalankan `cargo clippy` secara otomatis di latar belakang saat menyimpan bisa dikatakan sangat wajib. Dengan begitu, Anda tidak hanya belajar tentang pelanggaran kepemilikan (ownership), tetapi juga langsung menerima saran perbaikan performa dan penulisan kode yang lebih idiomatik (khas) gaya [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/).
 
 ---
 
@@ -127,11 +127,11 @@ Pengaturan untuk menjalankan `cargo clippy` secara otomatis di latar belakang sa
 
 Baik ketika mengembangkan dengan C++ maupun Rust, debugger sangat diperlukan untuk memeriksa status memori pada saat runtime (waktu berjalan). Khususnya yang beroperasi secara stabil di seluruh platform Windows, Mac, dan Linux, serta memiliki afinitas yang sangat tinggi dengan Rust adalah **`CodeLLDB`**.
 
-Karena compiler Rust (rustc) menggunakan LLVM sebagai backend, format informasi debug yang dihasilkan (DWARF / PDB) sangat cocok dengan LLDB yang juga merupakan bagian dari proyek LLVM.
+Karena compiler [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) (rustc) menggunakan LLVM sebagai backend, format informasi debug yang dihasilkan (DWARF / PDB) sangat cocok dengan LLDB yang juga merupakan bagian dari proyek LLVM.
 
 #### Contoh Pengaturan Tingkat Lanjut untuk launch.json
 
-Ini adalah pengaturan `.vscode/launch.json` untuk memulai debug pada VSCode. Di sini ditunjukkan konfigurasi terintegrasi untuk men-debug file executable dari C++ dan Rust.
+Ini adalah pengaturan `.vscode/launch.json` untuk memulai debug pada VSCode. Di sini ditunjukkan konfigurasi terintegrasi untuk men-debug file executable dari C++ dan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/).
 
 ```json
 {
@@ -170,7 +170,7 @@ Ini adalah pengaturan `.vscode/launch.json` untuk memulai debug pada VSCode. Di 
     ]
 }
 ```
-Perhatikan blok konfigurasi Rust. Karena `CodeLLDB` mendukung secara bawaan (native) opsi `cargo`, kita tidak perlu secara langsung menentukan path biner yang mencakup nilai hash kompleks hasil kompilasi. Editor akan secara otomatis menjalankan `cargo build`, menangkap file eksekusi terbaru yang dihasilkan, dan melampirkan (attach) debugger padanya.
+Perhatikan blok konfigurasi [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/). Karena `CodeLLDB` mendukung secara bawaan (native) opsi `cargo`, kita tidak perlu secara langsung menentukan path biner yang mencakup nilai hash kompleks hasil kompilasi. Editor akan secara otomatis menjalankan `cargo build`, menangkap file eksekusi terbaru yang dihasilkan, dan melampirkan (attach) debugger padanya.
 
 ---
 
@@ -194,7 +194,7 @@ Dengan menetapkan `Ninja` sebagai alat build (build tool), kompilasi paralel aka
 
 ---
 
-### ⑤ crates (Manajemen Dependensi Paket Rust secara Real-Time)
+### ⑤ crates (Manajemen Dependensi Paket [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) secara Real-Time)
 
 Ini adalah ekstensi yang sangat berguna untuk mengelola file dependensi Rust, yaitu `Cargo.toml`.
 
@@ -212,11 +212,11 @@ Dengan begitu, kerentanan dan bug yang disebabkan oleh penggunaan pustaka versi 
 
 ### ⑥ Error Lens
 
-`Error Lens` adalah ekstensi terobosan (inovatif) yang secara langsung menyoroti (highlight) error sebaris di sebelah kanan baris editor yang relevan, baik untuk error template C++ yang panjang maupun error borrow checker (pemeriksa peminjaman) yang ketat pada Rust.
+`Error Lens` adalah ekstensi terobosan (inovatif) yang secara langsung menyoroti (highlight) error sebaris di sebelah kanan baris editor yang relevan, baik untuk error template C++ yang panjang maupun error borrow checker (pemeriksa peminjaman) yang ketat pada [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/).
 
 Biasanya, untuk melihat detail error di VSCode, Anda harus membuka panel "Masalah (Problems)" di bagian bawah layar atau secara presisi mengarahkan kursor mouse ke garis bawah bergelombang berwarna merah untuk menunggu popup melayang (hover popup) muncul. Namun, operasi ini meningkatkan beban kognitif dan menghambat alur (flow) saat coding.
 
-Dengan memperkenalkan `Error Lens`, pesan error akan muncul di sudut pandang Anda saat Anda sedang mengetik kode tanpa perlu melepaskan tangan dari keyboard. Khususnya pada Rust, error lifetime yang rumit seperti "`cannot borrow 'x' as mutable because it is also borrowed as immutable`" bisa dipahami dalam sekejap saat melihat baris kode yang bersangkutan, sehingga kecepatan perbaikan (debugging) meningkat tajam.
+Dengan memperkenalkan `Error Lens`, pesan error akan muncul di sudut pandang Anda saat Anda sedang mengetik kode tanpa perlu melepaskan tangan dari keyboard. Khususnya pada [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), error lifetime yang rumit seperti "`cannot borrow 'x' as mutable because it is also borrowed as immutable`" bisa dipahami dalam sekejap saat melihat baris kode yang bersangkutan, sehingga kecepatan perbaikan (debugging) meningkat tajam.
 
 ---
 
@@ -226,13 +226,13 @@ Proyek pemrograman sistem umumnya berskala besar dan sering berurusan dengan bas
 
 **`GitLens`** menampilkan informasi `git blame` pada baris kursor saat ini dalam bentuk anotasi yang pudar di editor. Selain itu, ekstensi ini dilengkapi dengan fitur untuk menavigasi riwayat commit seluruh file secara grafis dan melacak riwayat per baris (Line History).
 
-Saat menemui blok `unsafe` di Rust atau pemrosesan cast (konversi) yang rumit pada C++, kemampuan untuk langsung merujuk pada Pull Request dan pesan commit terperinci saat kode tersebut digabungkan (di-merge) merupakan senjata yang ampuh untuk reverse engineering.
+Saat menemui blok `unsafe` di [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) atau pemrosesan cast (konversi) yang rumit pada C++, kemampuan untuk langsung merujuk pada Pull Request dan pesan commit terperinci saat kode tersebut digabungkan (di-merge) merupakan senjata yang ampuh untuk reverse engineering.
 
 ---
 
 ### ⑧ GitHub Copilot
 
-Dalam pemrograman sistem sekalipun, pengenalan asisten AI generatif telah menjadi pergeseran paradigma (paradigm shift) yang tidak dapat dihindari. **`GitHub Copilot`** sangat mendukung penulisan kode boilerplate yang panjang pada C++ atau pembuatan rantai iterator yang kompleks pada Rust dengan akurasi tinggi.
+Dalam pemrograman sistem sekalipun, pengenalan asisten AI generatif telah menjadi pergeseran paradigma (paradigm shift) yang tidak dapat dihindari. **`GitHub Copilot`** sangat mendukung penulisan kode boilerplate yang panjang pada C++ atau pembuatan rantai iterator yang kompleks pada [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) dengan akurasi tinggi.
 
 #### Pemanfaatan AI dalam Pemrograman Sistem
 - **Implementasi Rule of Five**: Di C++, saat mendeskripsikan destruktor (destructor), konstruktor salin (copy constructor), operator penugasan salin (copy assignment operator), konstruktor pindah (move constructor), dan operator penugasan pindah (move assignment operator), Copilot dengan cepat menyarankan implementasi yang tepat dan bebas dari kebocoran memori berdasarkan variabel anggota (member variables) suatu kelas.
@@ -242,7 +242,7 @@ Dalam pemrograman sistem sekalipun, pengenalan asisten AI generatif telah menjad
 
 ### ⑨ Even Better TOML
 
-Ini adalah ekstensi yang menyediakan penyorotan sintaks (syntax highlight), pemformatan otomatis (auto format), serta validasi skema (Schema Validation) yang kuat untuk `Cargo.toml` (file pengaturan proyek Rust) dan `rust-toolchain.toml` (pengaturan toolchain).
+Ini adalah ekstensi yang menyediakan penyorotan sintaks (syntax highlight), pemformatan otomatis (auto format), serta validasi skema (Schema Validation) yang kuat untuk `Cargo.toml` (file pengaturan proyek [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)) dan `rust-toolchain.toml` (pengaturan toolchain).
 
 Kesalahan ketik yang sederhana pada `Cargo.toml` (misalnya salah menulis `[dependencies]` menjadi `[dependencis]`) akan diperingatkan secara real-time, sehingga Anda bisa mengeliminasi kerugian waktu yang terbuang saat baru menyadari adanya error pada waktu proses build. Ekstensi ini juga melakukan validasi berdasarkan JSON Schema, yang memungkinkannya melengkapi secara otomatis kunci yang tersedia.
 
@@ -252,7 +252,7 @@ Kesalahan ketik yang sederhana pada `Cargo.toml` (misalnya salah menulis `[depen
 
 Dalam pemrograman sistem, ejaan yang akurat dari variabel dan nama fungsi sangat memengaruhi tingkat keterbacaan dan pemeliharaan (maintainability) keseluruhan proyek. **`Code Spell Checker`** mampu mendeteksi kesalahan ejaan pada identifier (seperti camel case `myVariable` atau snake case `my_variable` yang dipecah menjadi kata secara otomatis), komentar, atau literal string di dalam kode sumber.
 
-Saat menggunakan literal string sebagai kunci di dalam fitur seperti `std::unordered_map` di C++ atau `HashMap` di Rust, seringkali bug akibat kesalahan ketik (typo) dapat lolos dari kompilasi dan sifatnya sangat merepotkan, karena sangat sulit untuk disadari hingga masalah tersebut muncul sebagai runtime error. Dengan menggunakan pemeriksa ejaan yang mengeluarkan peringatan berupa garis bawah bergelombang pada editor, Anda dapat sepenuhnya mengeliminasi kesalahan sepele ini sejak fase penulisan kode.
+Saat menggunakan literal string sebagai kunci di dalam fitur seperti `std::unordered_map` di C++ atau `HashMap` di [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), seringkali bug akibat kesalahan ketik (typo) dapat lolos dari kompilasi dan sifatnya sangat merepotkan, karena sangat sulit untuk disadari hingga masalah tersebut muncul sebagai runtime error. Dengan menggunakan pemeriksa ejaan yang mengeluarkan peringatan berupa garis bawah bergelombang pada editor, Anda dapat sepenuhnya mengeliminasi kesalahan sepele ini sejak fase penulisan kode.
 
 ---
 
@@ -260,7 +260,7 @@ Saat menggunakan literal string sebagai kunci di dalam fitur seperti `std::unord
 
 Agar fungsionalitasnya benar-benar lengkap sebagai IDE, selain fungsi GUI editor, sangat penting juga untuk memanfaatkan fungsi Task di VSCode (`.vscode/tasks.json`) agar dapat mengeksekusi build atau test hanya dengan satu tombol shortcut (default-nya adalah `Ctrl+Shift+B`).
 
-Berikut adalah contoh pengaturan tingkat lanjut pada `tasks.json` yang dapat menjalankan build C++ dengan CMake dan build Rust dengan Cargo secara berdampingan.
+Berikut adalah contoh pengaturan tingkat lanjut pada `tasks.json` yang dapat menjalankan build C++ dengan CMake dan build [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) dengan Cargo secara berdampingan.
 
 ```json
 {
@@ -334,7 +334,7 @@ sequenceDiagram
     VSCode->>Developer: Tampilkan pohon (tree) pada panel "Variabel" di GUI
 ```
 
-Seperti yang ditunjukkan oleh diagram sekuens ini, banyak komunikasi yang terjadi antara VSCode dan CodeLLDB (melalui protokol yang disebut Debug Adapter Protocol - DAP) selama sesi debug. Struktur data yang rumit yang merupakan kumpulan pointer seperti `std::map` pada C++ atau `Vec<T>` pada Rust, secara intuitif ditampilkan (sebagai tree yang diperluas sesuai isi array) pada GUI VSCode melalui fitur pemformat yang tertanam di CodeLLDB.
+Seperti yang ditunjukkan oleh diagram sekuens ini, banyak komunikasi yang terjadi antara VSCode dan CodeLLDB (melalui protokol yang disebut Debug Adapter Protocol - DAP) selama sesi debug. Struktur data yang rumit yang merupakan kumpulan pointer seperti `std::map` pada C++ atau `Vec<T>` pada [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), secara intuitif ditampilkan (sebagai tree yang diperluas sesuai isi array) pada GUI VSCode melalui fitur pemformat yang tertanam di CodeLLDB.
 
 Hal ini dapat dicapai berkat kompilator Rust yang menanamkan informasi tata letak tipe data (seperti ukuran dan padding) dengan terperinci ke dalam format DWARF, sementara CodeLLDB mengubah rentetan byte mentah (raw byte data) dari memori target secara spektakuler sesuai dengan layout tersebut menjadi struktur data yang dapat dibaca manusia.
 
@@ -370,7 +370,7 @@ Sebagai hasilnya, estimasi seluruh waktu yang diperlukan untuk tugas secara kese
 
 ## Penutup
 
-C++ dan Rust adalah bahasa yang ketat, yang bertujuan "menarik kinerja ekstrem dari batas hardware", di mana pengembang dituntut memiliki pemahaman yang dalam serta ketelitian menulis kode yang tinggi.
+C++ dan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) adalah bahasa yang ketat, yang bertujuan "menarik kinerja ekstrem dari batas hardware", di mana pengembang dituntut memiliki pemahaman yang dalam serta ketelitian menulis kode yang tinggi.
 
 Dengan menerapkan 10 ekstensi dan pengaturannya yang disebutkan dalam artikel ini, VSCode berkembang melampaui kerangka "editor teks biasa", bertransformasi menjadi "eksoskeleton yang kuat untuk para pengembang" lengkap dengan perpaduan pengetahuan mendalam dari kompilator dan penglihatan tembus pandang sang debugger.
 

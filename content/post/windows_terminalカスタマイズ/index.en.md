@@ -234,7 +234,7 @@ A "Quake Mode" (dropdown mode) is also supported, allowing you to summon the ter
 
 ---
 
-# 5. Automating Startup Layouts Using `wt.exe`
+# 5. Automating Startup [Layout](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/)s Using `wt.exe`
 
 Routine tasks, such as opening a terminal in a specific project directory at the start of work every morning, splitting the screen into three, and executing commands for frontend building, backend server startup, and database monitoring in each, should be automated.
 
@@ -317,7 +317,7 @@ Hundreds of themes (configs) are available, and it is also possible to completel
 
 WSL2 (Windows Subsystem for Linux 2), which allows you to run a real Linux kernel on Windows, is indispensable for modern web development and cloud-native development. To customize the prompt of the shell (Bash or Zsh) inside WSL, "**Starship**" is the optimal solution.
 
-Starship is an extremely fast and highly customizable cross-shell prompt written in Rust. Its strength is that you can reproduce exactly the same prompt in any shell, such as Bash, Zsh, or Fish, just by writing one configuration file (TOML).
+Starship is an extremely fast and highly customizable cross-shell prompt written in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/). Its strength is that you can reproduce exactly the same prompt in any shell, such as Bash, Zsh, or Fish, just by writing one configuration file (TOML).
 
 ## 7.1 Installing Starship
 

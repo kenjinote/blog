@@ -9,8 +9,8 @@ categories: ["programming"]
 description: '面向初学者讲解如何入门快速且内存安全的编程语言Rust。全面介绍其语言特点、安装方法、第一个程序Hello World的执行步骤，以及推荐的日文文档等。'
 ---
 # 简介
-Rust 是一种相对较新的编程语言，它允许使用现代语法编写高速且内存高效的模块。
-它支持跨平台，并广泛应用于 WebAssembly 和嵌入式开发领域。
+[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 是一种相对较新的编程语言，它允许使用现代语法编写高速且内存高效的模块。
+它支持跨平台，并广泛应用于 [WebAssembly](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 和嵌入式开发领域。
 著名的例子包括 Firefox、Dropbox 和 Cloudflare 都采用了它。
 
 它作为 C++ 的替代品也备受关注。
@@ -37,7 +37,7 @@ fn main() {
 
 [The Rust Programming Language 日文版](https://doc.rust-jp.rs/book-ja/)
 
-学习 Rust 所需的讲解都汇总在上述链接（日文翻译版）中。
+学习 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 所需的讲解都汇总在上述链接（日文翻译版）中。
 其内容非常详实，甚至不需要额外购买 Rust 的相关书籍。
 
 # 如果想在 Web 上运行

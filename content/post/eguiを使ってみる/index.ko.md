@@ -17,7 +17,7 @@ description: 'Rust에서 손쉽게 다룰 수 있는 GUI 라이브러리 ''egui'
 
 # egui란
 
-Rust에서 사용할 수 있는 GUI 라이브러리입니다.
+[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)에서 사용할 수 있는 GUI 라이브러리입니다.
 
 # egui 사용해보기
 

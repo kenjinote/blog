@@ -162,7 +162,7 @@ graph TD
 
 自從 C++17 引入 `std::variant` 與 `std::any` 以來，對於持有各種型別變數的派發一直都使用 `std::visit`。然而，`std::visit` 與多載模式的組合（即所謂的 `overloaded` 結構體技巧）非常冗長且可讀性低。
 
-在 C++26 中， **模式匹配（Pattern Matching）** 被作為語言功能內建了（依據 P2688）。這使得類似函數式語言（如 Rust 或 Haskell）那種直觀的匹配成為可能。
+在 C++26 中， **模式匹配（Pattern Matching）** 被作為語言功能內建了（依據 P2688）。這使得類似函數式語言（如 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 或 Haskell）那種直觀的匹配成為可能。
 
 ## 3.1 C++23 以前使用 `std::visit` 的困擾
 

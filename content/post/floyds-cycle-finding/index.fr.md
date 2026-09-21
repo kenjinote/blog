@@ -18,7 +18,7 @@ En informatique, il est extrêmement important de détecter la présence d'un é
 
 Cet algorithme utilise deux pointeurs qui se déplacent à des vitesses différentes (souvent appelés le « lièvre » et la « tortue ») et est donc largement connu sous le nom d'**algorithme du lièvre et de la tortue** (Tortoise and Hare Algorithm).
 
-Cet article explique en détail le fonctionnement de cet algorithme, ses fondements mathématiques, ainsi que des exemples concrets d'implémentation en C++ et en Rust.
+Cet article explique en détail le fonctionnement de cet algorithme, ses fondements mathématiques, ainsi que des exemples concrets d'implémentation en C++ et en [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/).
 
 ## Qu'est-ce que la détection de cycle ?
 
@@ -111,7 +111,7 @@ En d'autres termes, juste après la collision, **si vous replacez un pointeur au
 
 ## Implémentation du code
 
-Implémentons maintenant la théorie ci-dessus en C++ et en Rust.
+Implémentons maintenant la théorie ci-dessus en C++ et en [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/).
 
 ### Implémentation en C++
 
@@ -207,7 +207,7 @@ int main() {
 }
 ```
 
-### Implémentation en Rust
+### Implémentation en [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/)
 
 En Rust, les règles de possession (ownership) et d'emprunt (borrowing) rendent souvent l'implémentation de listes chaînées complexe. Cependant, il est fréquent en programmation compétitive de modéliser cela comme un problème de référence d'indices sur un tableau (ou `Vec`).
 Voici un exemple d'implémentation utilisant un tableau dont les valeurs représentent l'« indice suivant » plutôt qu'un pointeur vers le nœud suivant.
@@ -332,4 +332,4 @@ Dans cet article, nous avons expliqué l'**Algorithme de détection de cycle de 
 C'est une méthode élégante qui permet la détection d'un cycle et l'identification de son point de départ en un temps $O(N)$ et avec un espace $O(1)$, grâce à l'idée simple de faire courir deux pointeurs à des vitesses différentes.
 La démonstration mathématique permet de comprendre clairement pourquoi en replaçant un pointeur au début après la collision, et en les faisant avancer à la même vitesse, on peut trouver le point de départ.
 
-Lors de la mise en œuvre de structures de données et lors de la programmation compétitive, cet algorithme est une arme très puissante. N'hésitez pas à vous exercer à l'implémenter en C++ ou en Rust.
+Lors de la mise en œuvre de structures de données et lors de la programmation compétitive, cet algorithme est une arme très puissante. N'hésitez pas à vous exercer à l'implémenter en C++ ou en [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/).

@@ -34,7 +34,7 @@ description: 'C언어, Python, Java, JavaScript부터 Rust, Go, OCaml, Clojure �
 
 ## Haskell
 
-## Rust
+## [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)
 
 ## Go
 

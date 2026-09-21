@@ -30,7 +30,7 @@ tags:
 
 ## 3. GoF 模式的現代重新評估與替代方案
 
-在這裡，我們將探討具代表性的 GoF 模式，並觀察它們在現代語言（如 TypeScript、Kotlin、Rust 等）中是如何被取代的。
+在這裡，我們將探討具代表性的 GoF 模式，並觀察它們在現代語言（如 TypeScript、Kotlin、[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 等）中是如何被取代的。
 
 ### 3.1. Strategy 模式：被一級函式驅逐
 
@@ -133,7 +133,7 @@ coroutineScope.launch {
 
 `Visitor` 模式是為了將資料結構與其對應的處理分離而存在的模式，但它有一個問題：實作非常複雜且違反直覺（需要雙重分派 Double Dispatch）。
 
-在現代，透過使用具備 **代數資料型別 (ADT)** 與 **模式匹配** 的語言（如 Rust、Kotlin、Swift、Scala 等），這個問題得以完美解決。
+在現代，透過使用具備 **代數資料型別 (ADT)** 與 **模式匹配** 的語言（如 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)、Kotlin、Swift、Scala 等），這個問題得以完美解決。
 
 **現代的作法（Rust 的列舉與模式匹配）**
 
@@ -191,7 +191,7 @@ $$
 bind: M[A] \times (A \rightarrow M[B]) \rightarrow M[B]
 $$
 
-**Rust 中的 Result 型別 (Either Monad 的應用)**
+**[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 中的 Result 型別 (Either Monad 的應用)**
 
 ```rust
 fn divide(numerator: f64, denominator: f64) -> Result<f64, String> {

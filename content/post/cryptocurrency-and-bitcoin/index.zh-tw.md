@@ -256,7 +256,7 @@ Peter Shor 於 1994 年發表的「Shor 演算法（[Shor's Algorithm](https://k
 1. **哈希函數的保護**： 比特幣地址不是公開金鑰本身，而是將 SHA-256 與 RIPEMD-160 兩種哈希函數應用於公開金鑰的結果。即使使用量子電腦，逆向計算哈希函數（即使使用 Grover 演算法，計算量也為 $\mathcal{O}(\sqrt{N})$）仍然很困難。因此，在進行交易並將公開金鑰暴露給網路之前，地址的內容對於量子電腦來說仍然是安全的。
 2. **向抗量子密碼學（Post-Quantum Cryptography: PQC）過渡**： 目前正在討論，在量子電腦實用化之前，對比特幣協議進行硬分叉，轉向 NIST（美國國家標準暨技術研究院）所選定的基於格子的密碼學（Lattice-based cryptography）或多變量多項式密碼學（Multivariate polynomial cryptography）等，即使是量子電腦也難以破解的新簽章演算法。
 
-## 9. 網路拓撲與 P2P 協議的詳細內容
+## 9. 網路拓撲與 [P2P](https://kenji.blog/zh-tw/p/webrtc-realtime-communication-p2p/) 協議的詳細內容
 
 比特幣網路不僅僅是伺服器與客戶端的集合體，而是建構成一個完全的 **對等式（Peer-to-Peer: P2P）** 網路。
 

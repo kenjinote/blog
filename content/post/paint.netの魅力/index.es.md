@@ -18,7 +18,7 @@ Les presento paint.net, un software de edición de imágenes que utilizo a menud
 
 ![img_1.png](img_1.webp)
 
-# Puntos valiosos que no se pueden hacer con Paint estándar de Windows
+# Puntos valiosos que no se pueden hacer con [Paint](https://kenji.blog/es/p/browser-rendering-mechanism-dom-paint/) estándar de Windows
 - Puede manejar transparencias y niveles de opacidad
 - Puede realizar selecciones automáticas de formas complejas
 - Puede manejar capas

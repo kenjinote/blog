@@ -38,7 +38,7 @@ Por ahora no hago transmisiones en vivo ni subo grandes cantidades de datos, as�
 
 Además, últimamente tanto mi familia como yo trabajamos principalmente desde casa (teletrabajo), y hoy por primera vez el internet se desconectó durante unas decenas de minutos. Se recuperó automáticamente, pero tal vez no sea un buen comienzo. Aún no ha pasado ni una semana desde el cambio, pero bueno...
 
-Como nota al margen, parece que J:COM restringe las conexiones P2P, por lo que la velocidad de las aplicaciones P2P no es buena. Quienes usan P2P deberían tener cuidado.
+Como nota al margen, parece que J:COM restringe las conexiones [P2P](https://kenji.blog/es/p/webrtc-realtime-communication-p2p/), por lo que la velocidad de las aplicaciones P2P no es buena. Quienes usan P2P deberían tener cuidado.
 
 # Sobre el servicio
 Al momento del contrato, me dijeron que si me suscribía a Netflix o Disney+ recibiría una tarjeta QUO por valor de 40.000 yenes, y que compensando con la cuota del contrato de cada servicio, la tarifa mensual sería un poco más barata en promedio, así que contraté los servicios junto con el contrato principal. Netflix es un contrato de 1 año y Disney+ es de medio año, y parece que es necesario realizar el trámite de cancelación por cuenta propia.

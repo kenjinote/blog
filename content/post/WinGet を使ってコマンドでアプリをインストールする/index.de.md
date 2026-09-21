@@ -35,6 +35,6 @@ Windows 11 muss installiert sein
 [Verwenden des winget-Tools zum Installieren und Verwalten von Anwendungen](https://learn.microsoft.com/de-de/windows/package-manager/winget/)
 
 ### Nebenbei
-Ich dachte, ich könnte auch Paint.Net installieren, aber das war nicht möglich.
+Ich dachte, ich könnte auch [Paint](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/).Net installieren, aber das war nicht möglich.
 
 https://forums.getpaint.net/topic/118574-please-add-paintnet-to-the-available-packages-for-windows-package-manager-winget/

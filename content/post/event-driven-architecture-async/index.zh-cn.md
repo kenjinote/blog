@@ -114,7 +114,7 @@ Event Loop 的优势在于无需对共享状态进行锁管理。然而，如果
 
 ---
 
-## 3. Actor模型与消息传递（Rust / Erlang / Akka）
+## 3. Actor模型与消息传递（[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) / Erlang / Akka）
 
 如果说 Event Loop 是挑战单线程极限的方法，那么 **Actor模型** 则是在多线程和分布式环境中，让并发处理变得安全且可扩展的范式。
 
@@ -139,7 +139,7 @@ flowchart LR
     end
 ```
 
-### 3.2 使用 Rust 的 Actor 实现示例
+### 3.2 使用 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 的 Actor 实现示例
 
 在系统编程语言 Rust 中，可以使用 `tokio` 和 `actix` 等强大的异步 Crate 来构建 Actor 模型。这里展示一个使用 `mpsc`（多生产者，单消费者）通道的简单 Actor 模式实现。
 
@@ -207,7 +207,7 @@ async fn main() {
 }
 ```
 
-Rust 中的所有权（Ownership）和类型系统在编译时就保证了 Actor 之间消息传递的安全性。用数学公式表示系统吞吐量 $ S $，对于 Actor 数量 $ N $ 和消息处理速率 $ R $，理想情况下 $ S = N \times R $，这展现了极高的可扩展性。
+[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 中的所有权（Ownership）和类型系统在编译时就保证了 Actor 之间消息传递的安全性。用数学公式表示系统吞吐量 $ S $，对于 Actor 数量 $ N $ 和消息处理速率 $ R $，理想情况下 $ S = N \times R $，这展现了极高的可扩展性。
 
 ---
 
@@ -281,7 +281,7 @@ $ Balance = \sum_{i=1}^{n} (Deposit_i) - \sum_{j=1}^{m} (Withdrawal_j) $
 1. **Event Loop (Node.js)**: 
    - 存在大量 I/O 密集型处理的 API 网关或实时聊天系统。
    - 处理海量并发连接的 WebSocket 服务器。
-2. **Actor模型 (Rust / Akka)**: 
+2. **Actor模型 ([Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) / Akka)**: 
    - 具有复杂状态的并发处理（游戏服务器、实时追踪）。
    - 需要从错误中自我修复（监督者树）的高可用性系统。
 3. **CQRS / Event Sourcing**: 

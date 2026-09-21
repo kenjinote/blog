@@ -177,7 +177,7 @@ graph LR
 حاليًا، يتم توفير العديد من المكتبات مفتوحة المصدر التي تتيح لك استخدام FHE دون معرفة عميقة بالتشفير.
 
 *   **Microsoft SEAL (Simple Encrypted Arithmetic Library)**: مكتبة C++ تدعم BFV و BGV و CKKS. إنها واحدة من معايير الصناعة. واجهة بايثون **TenSEAL** تحظى بشعبية بين مهندسي الذكاء الاصطناعي.
-*   **Zama (Concrete)**: إطار عمل يعتمد على TFHE. يمكن كتابته بـ Rust/Python، ويوفر القدرة على تجميع نماذج PyTorch الحالية وتشغيلها على FHE (Concrete ML).
+*   **Zama (Concrete)**: إطار عمل يعتمد على TFHE. يمكن كتابته بـ [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/)/Python، ويوفر القدرة على تجميع نماذج PyTorch الحالية وتشغيلها على FHE (Concrete ML).
 *   **OpenFHE**: خليفة PALISADE، وهي مكتبة C++ شاملة تدعم جميع الأنظمة الرئيسية.
 
 ### مثال على برمجة FHE باستخدام Python (TenSEAL)

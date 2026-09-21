@@ -114,7 +114,7 @@ Event Loopの利点は、共有状態に対するロック管理が不要であ�
 
 ---
 
-## 3. Actorモデルとメッセージパッシング（Rust / Erlang / Akka）
+## 3. Actorモデルとメッセージパッシング（[Rust](https://kenji.blog/p/webassembly-wasm-current-future/) / Erlang / Akka）
 
 Event Loopがシングルスレッドの限界に挑むアプローチだとすれば、 **Actorモデル** はマルチスレッドや分散環境における並行処理を安全かつスケール可能にするためのパラダイムです。
 
@@ -139,7 +139,7 @@ flowchart LR
     end
 ```
 
-### 3.2 Rust を用いた Actor の実装例
+### 3.2 [Rust](https://kenji.blog/p/webassembly-wasm-current-future/) を用いた Actor の実装例
 
 システムプログラミング言語である Rust では、 `tokio` や `actix` といった強力な非同期クレートを用いてActorモデルを構築できます。ここでは、 `mpsc` （Multi-Producer, Single-Consumer）チャネルを用いたシンプルなActorパターンの実装を示します。
 
@@ -207,7 +207,7 @@ async fn main() {
 }
 ```
 
-Rustにおける所有権（Ownership）と型システムは、Actor間のメッセージパッシングの安全性をコンパイル時に保証します。数式でシステムのスループット $ S $ を表すと、アクター数 $ N $ とメッセージ処理レート $ R $ に対して、理想的には $ S = N \times R $ となり、高いスケーラビリティを発揮します。
+[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)における所有権（Ownership）と型システムは、Actor間のメッセージパッシングの安全性をコンパイル時に保証します。数式でシステムのスループット $ S $ を表すと、アクター数 $ N $ とメッセージ処理レート $ R $ に対して、理想的には $ S = N \times R $ となり、高いスケーラビリティを発揮します。
 
 ---
 
@@ -281,7 +281,7 @@ $$ Balance = \sum_{i=1}^{n} (Deposit_i) - \sum_{j=1}^{m} (Withdrawal_j) $$
 1. **Event Loop (Node.js)**: 
    - I/Oバウンドな処理が多いAPIゲートウェイやリアルタイムチャットシステム。
    - 大量の同時接続をさばくWebSocketサーバー。
-2. **Actor モデル (Rust / Akka)**: 
+2. **Actor モデル ([Rust](https://kenji.blog/p/webassembly-wasm-current-future/) / Akka)**: 
    - 複雑な状態を持つ並行処理（ゲームサーバー、リアルタイムトラッキング）。
    - エラーからの自己修復能力（スーパーバイザーツリー）が求められる高可用性システム。
 3. **CQRS / Event Sourcing**: 

@@ -248,7 +248,7 @@ function gl { git log --oneline --graph --decorate --all $args }
 
 ## 5.2. Optimisation du déplacement entre répertoires (z / zoxide)
 
-Se déplacer dans un répertoire profond avec la commande `cd` est fastidieux. Récemment, l'outil **`zoxide`** (développé en Rust) devient la norme. Il apprend l'historique et la fréquence de navigation de l'utilisateur (Frecency : Frequency + Recency) et permet de sauter au répertoire souhaité en tapant simplement une partie du chemin.
+Se déplacer dans un répertoire profond avec la commande `cd` est fastidieux. Récemment, l'outil **`zoxide`** (développé en [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/)) devient la norme. Il apprend l'historique et la fréquence de navigation de l'utilisateur (Frecency : Frequency + Recency) et permet de sauter au répertoire souhaité en tapant simplement une partie du chemin.
 
 ```bash
 # Après l'installation de zoxide, utilisez z au lieu de cd

@@ -12,7 +12,7 @@ description: 'Panduan lengkap untuk menguasai strategi SEO Hugo. Dari metadata, 
 
 Hugo adalah salah satu generator situs statis (SSG) tercepat di dunia, ditulis dalam bahasa Go. Karena kecepatan build yang luar biasa dan sistem template yang fleksibel, Hugo sangat didukung oleh banyak insinyur dan blogger. Namun, hanya karena sebuah situs dibangun dan ditampilkan dengan cepat bukan berarti situs tersebut akan dinilai tinggi oleh mesin pencari (seperti Google atau Bing) dan menjangkau pengguna.
 
-Untuk meningkatkan peringkat pencarian, meningkatkan penyebaran di media sosial, dan pada akhirnya secara dramatis meningkatkan lalu lintas ke blog Anda, optimasi mesin pencari (SEO) yang cermat sangatlah penting. Inti dari strategi SEO di Hugo adalah kolaborasi antara **frontmatter** (yang ditulis di awal setiap artikel markdown) dan **template** (Layouts) yang menafsirkannya dan menyebarkan metadata di dalam tag `<head>` HTML.
+Untuk meningkatkan peringkat pencarian, meningkatkan penyebaran di media sosial, dan pada akhirnya secara dramatis meningkatkan lalu lintas ke blog Anda, optimasi mesin pencari (SEO) yang cermat sangatlah penting. Inti dari strategi SEO di Hugo adalah kolaborasi antara **frontmatter** (yang ditulis di awal setiap artikel markdown) dan **template** ([Layout](https://kenji.blog/id/p/browser-rendering-mechanism-dom-paint/)s) yang menafsirkannya dan menyebarkan metadata di dalam tag `<head>` HTML.
 
 Dalam artikel ini, kami akan menjelaskan secara menyeluruh cara memaksimalkan fitur Hugo untuk mengimplementasikan strategi SEO tingkat lanjut, dengan volume yang melebihi 10.000 karakter, mulai dari pengaturan frontmatter hingga berbagai meta tag, OGP (Open Graph Protocol), Twitter Cards, dan output data terstruktur menggunakan JSON-LD.
 

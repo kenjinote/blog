@@ -17,7 +17,7 @@ Wenn Sie einen Befehl ausführen, indem Sie eine ausführbare Datei angeben, mö
 where <name_der_ausführbaren_datei>
 ```
 
-Wenn Sie beispielsweise den Speicherort von Paint (mspaint.exe) wissen möchten, gehen Sie wie folgt vor:
+Wenn Sie beispielsweise den Speicherort von [Paint](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/) (mspaint.exe) wissen möchten, gehen Sie wie folgt vor:
 
 ```powershell
 where mspaint.exe

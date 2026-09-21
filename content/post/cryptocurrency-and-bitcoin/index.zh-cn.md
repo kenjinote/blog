@@ -256,7 +256,7 @@ PoW 的另一个巨大挑战是挖矿带来的庞大电力消耗。为了应对�
 1. **哈希函数的保护** ：比特币地址并非公钥本身，而是对公钥应用了 SHA-256 和 RIPEMD-160 哈希函数后生成的值。即使使用量子计算机，逆向推导哈希函数（即使使用格罗弗算法，计算复杂度也是 $\mathcal{O}(\sqrt{N})$）仍然很困难。因此，在进行交易并向网络暴露公钥之前，地址的内容对抗量子计算机可以说是安全的。
 2. **向抗量子密码学（Post-Quantum Cryptography: PQC）过渡** ：目前正在讨论，在量子计算机投入实用之前，通过硬分叉比特币协议，将其过渡到即使是量子计算机也难以破解的新签名算法，例如 NIST（美国国家标准与技术研究院）正在评选的基于格的密码学（Lattice-based cryptography）或多变量多项式密码学（Multivariate polynomial cryptography）。
 
-## 9. 网络拓扑与 P2P 协议详解
+## 9. 网络拓扑与 [P2P](https://kenji.blog/zh-cn/p/webrtc-realtime-communication-p2p/) 协议详解
 
 比特币网络不仅是服务器与客户端的集合，它被构建为一个完全的 **点对点（Peer-to-Peer: P2P）** 网络。
 

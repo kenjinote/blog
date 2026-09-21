@@ -403,7 +403,7 @@ Para `HRESULT`, você pode criar uma categoria de erro dedicada ou usar a classe
 
 ## 10. Tratamento de erros moderno usando `std::expected` (C++23)
 
-A partir do C++23, `std::expected`, equivalente ao tipo `Result` em Rust, foi introduzido. É o método ideal para modernizar o valor de retorno de Win32 em projetos que não gostam de exceções (devido a razões de desempenho ou a um design onde os erros ocorrem frequentemente).
+A partir do C++23, `std::expected`, equivalente ao tipo `Result` em [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/), foi introduzido. É o método ideal para modernizar o valor de retorno de Win32 em projetos que não gostam de exceções (devido a razões de desempenho ou a um design onde os erros ocorrem frequentemente).
 
 ```cpp
 #include <expected>

@@ -153,7 +153,7 @@ Wenn Sie den folgenden Befehl in Ihrem Terminal ausführen, wird eine Standardko
 npx tailwindcss init
 ```
 
-Öffnen Sie die generierte Datei `tailwind.config.js` in Ihrem Editor und konfigurieren Sie die Eigenschaft `content`. Dies ist sehr wichtig. Tailwind analysiert die Dateien in den hier angegebenen Pfaden und extrahiert die verwendeten Klassen. Geben Sie die Layout- und Inhaltsdateien entsprechend der Projektstruktur von Hugo genau an.
+Öffnen Sie die generierte Datei `tailwind.config.js` in Ihrem Editor und konfigurieren Sie die Eigenschaft `content`. Dies ist sehr wichtig. Tailwind analysiert die Dateien in den hier angegebenen Pfaden und extrahiert die verwendeten Klassen. Geben Sie die [Layout](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/)- und Inhaltsdateien entsprechend der Projektstruktur von Hugo genau an.
 
 ```javascript
 /** @type {import('tailwindcss').Config} */
@@ -232,7 +232,7 @@ Erstellen Sie eine CSS-Datei als Einstiegspunkt im Verzeichnis `assets/css/` (er
 }
 ```
 
-### 5-2. Bearbeiten der Layout-Datei (head.html)
+### 5-2. Bearbeiten der [Layout](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/)-Datei (head.html)
 
 Als Nächstes weisen wir Hugos Template an, die oben genannte CSS-Datei zu laden, und definieren die Pipeline, um sie mit PostCSS zu verarbeiten. Im Allgemeinen wird das Partial-Template, das das `<head>`-Tag definiert, (z. B. `layouts/partials/head.html`) bearbeitet.
 
@@ -291,7 +291,7 @@ flowchart TD
 
 ## 6. Mathematische Leistungsanalyse in der CSS-Optimierung
 
-Einer der größten Vorteile der Einführung von Tailwind CSS ist die Minimierung der ausgelieferten CSS-Dateigröße. Analysieren wir dies quantitativ mithilfe eines mathematischen Modells, um zu verstehen, wie sich dies auf die Web-Performance (insbesondere den First Contentful Paint: FCP) auswirkt.
+Einer der größten Vorteile der Einführung von Tailwind CSS ist die Minimierung der ausgelieferten CSS-Dateigröße. Analysieren wir dies quantitativ mithilfe eines mathematischen Modells, um zu verstehen, wie sich dies auf die Web-Performance (insbesondere den First Contentful [Paint](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/): FCP) auswirkt.
 
 ### Modell zur Reduzierung der CSS-Dateigröße
 

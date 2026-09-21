@@ -22,7 +22,7 @@ Cet article résume les conséquences de la programmation obligatoire au Japon e
 
 Le standard de facto de l'enseignement de la programmation à l'école primaire est le langage de programmation visuelle (programmation par blocs), représenté par « Scratch » développé par le MIT Media Lab. L'utilisation d'une interface graphique intuitive pour assembler des blocs comme un puzzle permet d'apprendre de manière visuelle et intuitive les trois structures de contrôle algorithmiques de base : « séquence », « sélection » et « itération ». C'est une grande invention qui mérite d'être saluée comme une introduction à la programmation.
 
-Cependant, il y a un piège majeur ici, que l'on pourrait appeler le « piège de l'abstraction ». Il s'agit du fait cruel qu'« il est extrêmement difficile de passer de la programmation visuelle à de vrais langages de programmation textuels (Python, JavaScript, C++, Rust, etc.), et que de nombreux apprenants abandonnent à ce stade ».
+Cependant, il y a un piège majeur ici, que l'on pourrait appeler le « piège de l'abstraction ». Il s'agit du fait cruel qu'« il est extrêmement difficile de passer de la programmation visuelle à de vrais langages de programmation textuels (Python, JavaScript, C++, [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/), etc.), et que de nombreux apprenants abandonnent à ce stade ».
 
 ### Le mur de l'abstraction et la boîte noire de l'informatique
 
@@ -49,7 +49,7 @@ flowchart TD
     class J success;
 ```
 
-Comme le montre clairement cet organigramme, le simple fait d'accumuler l'expérience d'écrire « du code pour déplacer un personnage à l'écran » ne permet pas de former de véritables ingénieurs logiciels capables de concevoir des architectures de systèmes distribués évolutives et d'optimiser les performances à la milliseconde près. Entre la tâche d'assembler des blocs colorés dans Scratch avec une souris et celle de décrypter le code source en C du noyau Linux pour suivre le comportement de la pile TCP/IP, il y a un gouffre de compréhension conceptuelle absolu qui ne peut se résumer à une simple « différence de langage utilisé ».
+Comme le montre clairement cet organigramme, le simple fait d'accumuler l'expérience d'écrire « du code pour déplacer un personnage à l'écran » ne permet pas de former de véritables ingénieurs logiciels capables de concevoir des architectures de systèmes distribués évolutives et d'optimiser les performances à la milliseconde près. Entre la tâche d'assembler des blocs colorés dans Scratch avec une souris et celle de décrypter le code source en C du noyau Linux pour suivre le comportement de la pile [TCP](https://kenji.blog/fr/p/http3-quic-protocol-tcp-udp/)/IP, il y a un gouffre de compréhension conceptuelle absolu qui ne peut se résumer à une simple « différence de langage utilisé ».
 
 ## 3. Les limites du codage sans « mathématiques » et sans « logique discrète » : L'approche par la théorie de la complexité
 
@@ -247,7 +247,7 @@ Ce sont les personnes capables de traduire ces équations mathématiques complex
 
 L'obligation d'enseigner la programmation dans les années 2020 a indéniablement constitué un pas en avant en faisant prendre conscience à la société japonaise de « l'importance de l'informatique et de l'information ». Cependant, il ne s'agit là que de simples « échauffements » dans un long voyage.
 
-Aller au-delà du plaisir de faire bouger un chat dans Scratch pour enseigner l'émotion ressentie devant la beauté mathématique d'un algorithme en $O(N \log N)$ et l'excitation de dialoguer avec des serveurs du monde entier via des paquets TCP depuis un écran noir de terminal. Reconstruire une nouvelle infrastructure éducative pour surmonter les contraintes matérielles du concept GIGA School, former et affecter des enseignants ayant une haute expertise en informatique, et parfois impliquer de manière audacieuse des ingénieurs professionnels externes dans l'enseignement scolaire.
+Aller au-delà du plaisir de faire bouger un chat dans Scratch pour enseigner l'émotion ressentie devant la beauté mathématique d'un algorithme en $O(N \log N)$ et l'excitation de dialoguer avec des serveurs du monde entier via des paquets [TCP](https://kenji.blog/fr/p/http3-quic-protocol-tcp-udp/) depuis un écran noir de terminal. Reconstruire une nouvelle infrastructure éducative pour surmonter les contraintes matérielles du concept GIGA School, former et affecter des enseignants ayant une haute expertise en informatique, et parfois impliquer de manière audacieuse des ingénieurs professionnels externes dans l'enseignement scolaire.
 
 Les défis auxquels l'enseignement de l'informatique au Japon est confronté sont extrêmement profonds, tenaces et complexes. Cependant, en ne détournant pas les yeux de ces défis, et en travaillant sérieusement et en collaboration entre l'industrie, le monde universitaire et le gouvernement, si nous parvenons à construire un écosystème capable de produire en continu non pas des « travailleurs capables de coder selon un cahier des charges », mais de « véritables ingénieurs capables de concevoir et de créer des systèmes à partir de zéro », alors le Japon pourra à nouveau mener le monde en tant que véritable nation informatique.
 

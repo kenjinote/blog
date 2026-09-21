@@ -248,7 +248,7 @@ function gl { git log --oneline --graph --decorate --all $args }
 
 ## 5.2. Mengoptimalkan Navigasi Direktori (z / zoxide)
 
-Berpindah ke direktori dengan hierarki yang dalam menggunakan perintah `cd` sangat merepotkan. Baru-baru ini, sebuah alat bernama **`zoxide`** (dibuat menggunakan Rust), yang mempelajari riwayat navigasi dan frekuensi pengguna (Frecency: Frequency + Recency), telah menjadi standar di mana Anda dapat melompat ke direktori tujuan hanya dengan mengetikkan sebagian dari path-nya.
+Berpindah ke direktori dengan hierarki yang dalam menggunakan perintah `cd` sangat merepotkan. Baru-baru ini, sebuah alat bernama **`zoxide`** (dibuat menggunakan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)), yang mempelajari riwayat navigasi dan frekuensi pengguna (Frecency: Frequency + Recency), telah menjadi standar di mana Anda dapat melompat ke direktori tujuan hanya dengan mengetikkan sebagian dari path-nya.
 
 ```bash
 # Setelah menginstal zoxide, gunakan z sebagai pengganti cd

@@ -9,7 +9,7 @@ categories: ["programming"]
 description: 'Rustで`winapi`を使用し、Windowsのシンプルなウィンドウを作成して表示する方法を紹介します。Cargo.tomlの設定からウィンドウプロシージャの実装まで、GUIプログラミングの基礎となるソースコードを詳しく解説します。'
 ---
 
-Rustでシンプルなウィンドウを表示する
+[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)でシンプルなウィンドウを表示する
 
 ```Cargo.toml
 [package]

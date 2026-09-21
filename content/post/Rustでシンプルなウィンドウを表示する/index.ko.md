@@ -17,7 +17,7 @@ description: 'Rust에서 `winapi`를 사용하여 Windows의 간단한 창을 �
 
 
 
-Rust에서 간단한 창 표시하기
+[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)에서 간단한 창 표시하기
 
 ```Cargo.toml
 [package]

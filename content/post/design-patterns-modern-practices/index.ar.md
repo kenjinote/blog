@@ -30,7 +30,7 @@ tags:
 
 ## 3. إعادة التقييم الحديثة لأنماط GoF والبدائل
 
-هنا، سنتناول أبرز أنماط GoF، ونرى كيف تم استبدالها في اللغات الحديثة المعاصرة (مثل TypeScript، و Kotlin، و Rust، إلخ).
+هنا، سنتناول أبرز أنماط GoF، ونرى كيف تم استبدالها في اللغات الحديثة المعاصرة (مثل TypeScript، و Kotlin، و [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/)، إلخ).
 
 ### 3.1. نمط Strategy: الإقصاء بواسطة دوال الدرجة الأولى
 
@@ -133,7 +133,7 @@ coroutineScope.launch {
 
 نمط `Visitor` هو نمط لفصل هياكل البيانات عن المعالجة التي تتم عليها، ولكنه كان يعاني من مشكلة أن التنفيذ معقد للغاية ويتعارض مع الحدس (يتطلب إرسالاً مزدوجاً Double Dispatch).
 
-في العصر الحديث، يتم حل هذه المشكلة بشكل جميل باستخدام لغات تتميز بـ **أنواع البيانات الجبرية (ADT)** و **مطابقة الأنماط** (مثل Rust و Kotlin و Swift و Scala).
+في العصر الحديث، يتم حل هذه المشكلة بشكل جميل باستخدام لغات تتميز بـ **أنواع البيانات الجبرية (ADT)** و **مطابقة الأنماط** (مثل [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) و Kotlin و Swift و Scala).
 
 **النهج الحديث (أنواع التعداد ومطابقة الأنماط في Rust)**
 
@@ -191,7 +191,7 @@ $$
 bind: M[A] \times (A \rightarrow M[B]) \rightarrow M[B]
 $$
 
-**نوع Result في Rust (تطبيق على الموناد Either)**
+**نوع Result في [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) (تطبيق على الموناد Either)**
 
 ```rust
 fn divide(numerator: f64, denominator: f64) -> Result<f64, String> {

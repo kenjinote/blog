@@ -180,7 +180,7 @@ Zettelkastenには主に3種類のノートが存在します：
 2. **Literature Notes（文献メモ）**: 記事や本を読んで、自分の言葉で要約したもの。
 3. **Permanent Notes（永久ノート）**: 一つのトピックについて完結した考察を書いたもの。これらがブログ記事の直接の種となります。
 
-Obsidianのバックリンク機能（`[[ノート名]]`）を使うことで、例えば「Rustの所有権」というノートと「[ガベージコレクション](https://kenji.blog/p/memory-management-garbage-collection/)の歴史」というノートをリンクさせ、予期せぬアイデアの繋がりを発見することができます。
+Obsidianのバックリンク機能（`[[ノート名]]`）を使うことで、例えば「[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の所有権」というノートと「[ガベージコレクション](https://kenji.blog/p/memory-management-garbage-collection/)の歴史」というノートをリンクさせ、予期せぬアイデアの繋がりを発見することができます。
 
 ## 5. ベクトルデータベース（Pinecone）とOpenAI Embeddingsを利用したセマンティック検索
 
@@ -284,7 +284,7 @@ if __name__ == "__main__":
     search_similar_ideas(idx, "WebAssemblyを利用したブラウザ上での機械学習推論の高速化")
 ```
 
-このシステムを使えば、「今週のHacker Newsで話題になっていた『WebAssembly』について書きたいが、過去に自分は関連するノートを書いたか？」という疑問に対し、AIが意味的に関連する過去のPermanent Notesを瞬時にピックアップしてくれます。これにより、過去の自分の知識資産をフル活用した深みのある記事構成が可能になります。
+このシステムを使えば、「今週のHacker Newsで話題になっていた『[WebAssembly](https://kenji.blog/p/webassembly-wasm-current-future/)』について書きたいが、過去に自分は関連するノートを書いたか？」という疑問に対し、AIが意味的に関連する過去のPermanent Notesを瞬時にピックアップしてくれます。これにより、過去の自分の知識資産をフル活用した深みのある記事構成が可能になります。
 
 ## 6. エビングハウスの忘却曲線とAnkiを活用した間隔反復
 

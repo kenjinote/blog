@@ -32,7 +32,7 @@ Karena saat ini saya tidak melakukan streaming atau mengunggah data dalam jumlah
 Selain itu, akhir-akhir ini saya dan keluarga lebih banyak bekerja dari rumah, namun hari ini untuk pertama kalinya internet terputus selama beberapa puluh menit. Itu pulih secara otomatis, tapi,
 mungkin ini bukan awal yang baik. Padahal, belum genap seminggu sejak saya beralih...
 
-Sebagai catatan, tampaknya kecepatan aplikasi P2P lambat karena J:COM membatasi komunikasi P2P. Bagi yang menggunakan P2P sebaiknya berhati-hati.
+Sebagai catatan, tampaknya kecepatan aplikasi [P2P](https://kenji.blog/id/p/webrtc-realtime-communication-p2p/) lambat karena J:COM membatasi komunikasi P2P. Bagi yang menggunakan P2P sebaiknya berhati-hati.
 
 # Tentang Layanan
 Saat penandatanganan kontrak, jika bergabung dengan Netflix atau Disney+, saya akan mendapatkan kartu QUO senilai 40.000 yen, yang akan menutupi biaya kontrak masing-masing layanan dan membuat biaya bulanan rata-rata sedikit lebih murah.

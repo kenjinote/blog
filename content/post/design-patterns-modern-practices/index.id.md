@@ -30,7 +30,7 @@ Sebagai contoh, dalam bahasa tanpa fungsi kelas pertama (*first-class functions*
 
 ## 3. Evaluasi Ulang Modern dari Pola GoF dan Alternatifnya
 
-Di sini, kita akan melihat beberapa pola GoF representatif dan bagaimana mereka telah digantikan dalam bahasa modern (TypeScript, Kotlin, Rust, dll.).
+Di sini, kita akan melihat beberapa pola GoF representatif dan bagaimana mereka telah digantikan dalam bahasa modern (TypeScript, Kotlin, [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), dll.).
 
 ### 3.1. Pola Strategy: Disingkirkan oleh Fungsi Kelas Pertama
 
@@ -133,7 +133,7 @@ Karena *stream* asinkron didukung pada tingkat bahasa, tidak perlu lagi membuat 
 
 Pola `Visitor` memisahkan struktur data dari pemrosesan di atasnya, namun memiliki masalah di mana implementasinya sangat kompleks dan berlawanan dengan intuisi (membutuhkan *double dispatch*).
 
-Di zaman modern, masalah ini diselesaikan dengan indah dengan menggunakan bahasa (Rust, Kotlin, Swift, Scala, dll.) yang memiliki **tipe data aljabar (ADT)** dan **pencocokan pola** (*pattern matching*).
+Di zaman modern, masalah ini diselesaikan dengan indah dengan menggunakan bahasa ([Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), Kotlin, Swift, Scala, dll.) yang memiliki **tipe data aljabar (ADT)** dan **pencocokan pola** (*pattern matching*).
 
 **Pendekatan Modern (Enum dan Pencocokan Pola di Rust)**
 
@@ -191,7 +191,7 @@ $$
 bind: M[A] \times (A \rightarrow M[B]) \rightarrow M[B]
 $$
 
-**Tipe Result di Rust (Aplikasi dari Monad Either)**
+**Tipe Result di [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) (Aplikasi dari Monad Either)**
 
 ```rust
 fn divide(numerator: f64, denominator: f64) -> Result<f64, String> {
