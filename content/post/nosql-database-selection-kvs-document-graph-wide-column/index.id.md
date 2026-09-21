@@ -306,18 +306,18 @@ Berikut adalah gambaran struktur data logis dari Wide-Column Store untuk mencata
 erDiagram
     %% Struktur Data Wide Column Store
     ROW_KEY {
-        string "Kunci Baris (Partition Key)"
+        string Kunci_Baris_Partition_Key
     }
     
     COLUMN_FAMILY_1 {
-        string "Kolom 1 (Nama:Nilai:Stempel_Waktu)"
-        string "Kolom 2 (Nama:Nilai:Stempel_Waktu)"
-        string "Kolom n..."
+        string Kolom_1_Nama_Nilai_Stempel_Waktu
+        string Kolom_2_Nama_Nilai_Stempel_Waktu
+        string Kolom_n
     }
     
     COLUMN_FAMILY_2 {
-        string "Kolom A (Nama:Nilai:Stempel_Waktu)"
-        string "Kolom B (Nama:Nilai:Stempel_Waktu)"
+        string Kolom_A_Nama_Nilai_Stempel_Waktu
+        string Kolom_B_Nama_Nilai_Stempel_Waktu
     }
     
     ROW_KEY ||--o{ COLUMN_FAMILY_1 : "berisi"

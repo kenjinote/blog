@@ -306,18 +306,18 @@ ORDER BY purchaseCount DESC;
 erDiagram
     %% 寬行儲存資料結構 (Wide Column Store Data Structure)
     ROW_KEY {
-        string "Row Key (Partition Key)"
+        string Row_Key_Partition_Key
     }
     
     COLUMN_FAMILY_1 {
-        string "欄位 1 (名稱:值:時間戳記)"
-        string "欄位 2 (名稱:值:時間戳記)"
-        string "欄位 n..."
+        string 欄位_1_名稱_值_時間戳記
+        string 欄位_2_名稱_值_時間戳記
+        string 欄位_n
     }
     
     COLUMN_FAMILY_2 {
-        string "欄位 A (名稱:值:時間戳記)"
-        string "欄位 B (名稱:值:時間戳記)"
+        string 欄位_A_名稱_值_時間戳記
+        string 欄位_B_名稱_值_時間戳記
     }
     
     ROW_KEY ||--o{ COLUMN_FAMILY_1 : "包含"

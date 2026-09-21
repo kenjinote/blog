@@ -306,18 +306,18 @@ Abaixo está uma imagem da estrutura lógica de dados de um armazenamento de col
 erDiagram
     %% Estrutura de Dados do Wide Column Store
     ROW_KEY {
-        string "Row Key (Partition Key)"
+        string Row_Key_Partition_Key
     }
     
     COLUMN_FAMILY_1 {
-        string "Column 1 (Name:Value:Timestamp)"
-        string "Column 2 (Name:Value:Timestamp)"
-        string "Column n..."
+        string Column_1_Name_Value_Timestamp
+        string Column_2_Name_Value_Timestamp
+        string Column_n
     }
     
     COLUMN_FAMILY_2 {
-        string "Column A (Name:Value:Timestamp)"
-        string "Column B (Name:Value:Timestamp)"
+        string Column_A_Name_Value_Timestamp
+        string Column_B_Name_Value_Timestamp
     }
     
     ROW_KEY ||--o{ COLUMN_FAMILY_1 : contains
