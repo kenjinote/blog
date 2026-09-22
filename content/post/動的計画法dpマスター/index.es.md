@@ -244,8 +244,8 @@ El siguiente diagrama de Mermaid visualiza el concepto de la transición de esta
 
 ```mermaid
 graph TD
-    A["dp[i-1"][w] (Saltar artículo i)"] --> C["Máx: dp[i"][w]"]
-    B["dp[i-1"][w - weight["i"]] + value["i"] (Tomar artículo i)"] --> C
+    A["dp[i-1][w] (Saltar artículo i)"] --> C["Máx: dp[i"][w]"]
+    B["dp[i-1][w - weight[i]] + value[i] (Tomar artículo i)"] --> C
 ```
 
 ### 4-3. Implementación bottom-up (arreglo bidimensional)
@@ -357,12 +357,12 @@ Expresando esta transición con Mermaid, sería de la siguiente manera.
 
 ```mermaid
 graph TD
-    subgraph "S["i-1"] == T["j-1"]"
-        A1["dp[i-1"][j-1]"] --> B1["+1 --> dp[i"][j]"]
+    subgraph "S[i-1] == T[j-1]"
+        A1["dp[i-1][j-1]"] --> B1["+1 --> dp[i][j]"]
     end
-    subgraph "S["i-1"] != T["j-1"]"
-        A2["dp[i-1"][j]"] --> C2["Máx --> dp[i"][j]"]
-        B2["dp[i"][j-1]"] --> C2
+    subgraph "S[i-1] != T[j-1]"
+        A2["dp[i-1][j]"] --> C2["Máx --> dp[i"][j]"]
+        B2["dp[i][j-1]"] --> C2
     end
 ```
 

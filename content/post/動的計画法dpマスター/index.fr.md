@@ -244,8 +244,8 @@ Le diagramme Mermaid ci-dessous visualise le concept de la transition d'état.
 
 ```mermaid
 graph TD
-    A["dp[i-1"][w] (Ignorer l'objet i)"] --> C["Max: dp[i"][w]"]
-    B["dp[i-1"][w - weight["i"]] + value["i"] (Prendre l'objet i)"] --> C
+    A["dp[i-1][w] (Ignorer l'objet i)"] --> C["Max: dp[i][w]"]
+    B["dp[i-1][w - weight[i]] + value[i] (Prendre l'objet i)"] --> C
 ```
 
 ### 4-3. Implémentation ascendante (Tableau 2D)
@@ -357,12 +357,12 @@ Si on exprime cette transition avec Mermaid, cela donne ceci :
 
 ```mermaid
 graph TD
-    subgraph "S["i-1"] == T["j-1"]"
-        A1["dp[i-1"][j-1]"] --> B1["+1 --> dp[i"][j]"]
+    subgraph "S[i-1] == T[j-1]"
+        A1["dp[i-1][j-1]"] --> B1["+1 --> dp[i][j]"]
     end
-    subgraph "S["i-1"] != T["j-1"]"
-        A2["dp[i-1"][j]"] --> C2["Max --> dp[i"][j]"]
-        B2["dp[i"][j-1]"] --> C2
+    subgraph "S[i-1] != T[j-1]"
+        A2["dp[i-1][j]"] --> C2["Max --> dp[i][j]"]
+        B2["dp[i][j-1]"] --> C2
     end
 ```
 

@@ -244,8 +244,8 @@ The following Mermaid diagram visualizes the concept of the state transition.
 
 ```mermaid
 graph TD
-    A["dp[i-1"][w] (Skip item i)"] --> C["Max: dp[i"][w]"]
-    B["dp[i-1"][w - weight["i"]] + value["i"] (Take item i)"] --> C
+    A["dp[i-1][w] (Skip item i)"] --> C["Max: dp[i][w]"]
+    B["dp[i-1][w - weight[i]] + value[i] (Take item i)"] --> C
 ```
 
 ### 4-3. Bottom-Up Implementation (2D Array)
@@ -357,12 +357,12 @@ Expressing this transition in Mermaid looks like this.
 
 ```mermaid
 graph TD
-    subgraph "S["i-1"] == T["j-1"]"
-        A1["dp[i-1"][j-1]"] --> B1["+1 --> dp[i"][j]"]
+    subgraph "S[i-1] == T[j-1]"
+        A1["dp[i-1][j-1]"] --> B1["+1 --> dp[i][j]"]
     end
-    subgraph "S["i-1"] != T["j-1"]"
-        A2["dp[i-1"][j]"] --> C2["Max --> dp[i"][j]"]
-        B2["dp[i"][j-1]"] --> C2
+    subgraph "S[i-1] != T[j-1]"
+        A2["dp[i-1][j]"] --> C2["Max --> dp[i][j]"]
+        B2["dp[i][j-1]"] --> C2
     end
 ```
 
