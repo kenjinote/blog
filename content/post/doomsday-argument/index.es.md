@@ -188,9 +188,9 @@ Si decidimos exceptuar de la clase de referencia a las inteligencias artificiale
 ```mermaid
 graph TD
     subgraph "Diferencias según la configuración de la Clase de Referencia"
-        A["¿Como qué nos contamos a nosotros mismos?"] -->|"Solo Homo sapiens"| B["N = 100 mil millones\n("Alta probabilidad de extinción temprana")"]
-        A -->|"Toda entidad con consciencia"| C["N a escala cósmica\n("La conclusión cambia drásticamente")"]
-        A -->|"Humanos actuales + Posthumanos"| D["N = Enorme\n("Posibilidad de evolución")"]
+        A["¿Como qué nos contamos a nosotros mismos?"] -->|"Solo Homo sapiens"| B["N = 100 mil millones\n(Alta probabilidad de extinción temprana)"]
+        A -->|"Toda entidad con consciencia"| C["N a escala cósmica\n(La conclusión cambia drásticamente)"]
+        A -->|"Humanos actuales + Posthumanos"| D["N = Enorme\n(Posibilidad de evolución)"]
     end
 ```
 

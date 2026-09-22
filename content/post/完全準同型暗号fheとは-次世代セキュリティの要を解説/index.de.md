@@ -136,7 +136,7 @@ Intuitiv ist es die Operation: "Bevor der Geheimtext mit Rauschen bedeckt und ze
 ```mermaid
 graph LR
     A["Geheimtext mit hohem Rauschen C_noisy"] --> B["Homomorphe Entschlüsselungsschaltung (Eval_Dec)"]
-    C["Verschlüsselter privater Schlüssel E("sk")"] --> B
+    C["Verschlüsselter privater Schlüssel E(sk)"] --> B
     B --> D["Geheimtext mit geringem Rauschen C_fresh"]
     
     style B fill:#ffeeba,stroke:#ffc107

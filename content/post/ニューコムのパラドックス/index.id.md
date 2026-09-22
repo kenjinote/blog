@@ -48,8 +48,8 @@ graph TD
     
     You["Pilihan Anda<br>(Hari ini)"]
     
-    You -->|"Pilihan 1: Ambil keduanya"| Result1["Kotak A("100 ribu") + Isi Kotak B"]
-    You -->|"Pilihan 2: Hanya ambil Kotak B"| Result2["Kotak A("0 Yen") + Isi Kotak B"]
+    You -->|"Pilihan 1: Ambil keduanya"| Result1["Kotak A(100 ribu) + Isi Kotak B"]
+    You -->|"Pilihan 2: Hanya ambil Kotak B"| Result2["Kotak A(0 Yen) + Isi Kotak B"]
     
     BoxB_Empty -.-> Result1
     BoxB_100M -.-> Result2

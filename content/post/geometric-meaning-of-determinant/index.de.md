@@ -40,7 +40,7 @@ Wenn die Matrix $A$ angewendet wird, werden die Standard-Basisvektoren in $\math
 
 ```mermaid
 flowchart LR
-    A["Einheitsquadrat (Fläche 1)"] -->|"Lineare Transformation durch Matrix A"| B["Parallelogramm (Fläche |det("A")|)"]
+    A["Einheitsquadrat (Fläche 1)"] -->|"Lineare Transformation durch Matrix A"| B["Parallelogramm (Fläche |det(A)|)"]
 ```
 
 Mit anderen Worten, der absolute Wert der Determinante bedeutet den "Flächen-Skalierungsfaktor", der angibt, **wie viele Male** jede Figur im Raum durch diese lineare Transformation gedehnt (oder geschrumpft) wurde. Wenn beispielsweise die Determinante einer Matrix $3$ ist, wird die Fläche jeder auf der ursprünglichen Ebene gezeichneten Figur nach der Transformation genau dreimal so groß.

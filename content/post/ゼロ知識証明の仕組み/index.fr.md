@@ -137,10 +137,10 @@ Le protocole FRI est une technique permettant de vérifier « si une certaine fo
 graph TD
     Root["Racine de Merkle (Engagement)"] --> Node0["Nœud 0"]
     Root --> Node1["Nœud 1"]
-    Node0 --> Leaf0["P("x_0")"]
-    Node0 --> Leaf1["P("x_1")"]
-    Node1 --> Leaf2["P("x_2")"]
-    Node1 --> Leaf3["P("x_3")"]
+    Node0 --> Leaf0["P(x_0)"]
+    Node0 --> Leaf1["P(x_1)"]
+    Node1 --> Leaf2["P(x_2)"]
+    Node1 --> Leaf3["P(x_3)"]
 ```
 
 Le vérificateur demande la révélation de quelques points aléatoires et utilise des preuves de Merkle pour confirmer qu'ils sont inclus dans l'engagement. En répétant cela récursivement, il est garanti avec une probabilité écrasante que le degré du polynôme d'origine est effectivement faible.

@@ -67,11 +67,11 @@ flowchart LR
     A["数論の世界 (Number Theory)"] -->|"L-function equality"| B["解析の世界 (Analysis)"]
     subgraph SG1 ["有理数体上の楕円曲線"]
         N1["方程式 E: y² = x³ + ax + b"]
-        N2["ハッセ・ヴェイユ L関数 L("s, E")"]
+        N2["ハッセ・ヴェイユ L関数 L(s, E)"]
     end
     subgraph SG2 ["モジュラー形式"]
-        N3["重さ2のカスプ形式 f("z")"]
-        N4["ディリクレ級数 L("s, f")"]
+        N3["重さ2のカスプ形式 f(z)"]
+        N4["ディリクレ級数 L(s, f)"]
     end
     SG1 -->|"谷山・志村予想"| SG2
     %% これは全く異なる概念が深く結びついていることを示す図です

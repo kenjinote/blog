@@ -137,10 +137,10 @@ FRI 프로토콜은 "어떤 함수가 특정 차수의 다항식에 충분히 �
 graph TD
     Root["Merkle Root (커미트먼트)"] --> Node0["Node 0"]
     Root --> Node1["Node 1"]
-    Node0 --> Leaf0["P("x_0")"]
-    Node0 --> Leaf1["P("x_1")"]
-    Node1 --> Leaf2["P("x_2")"]
-    Node1 --> Leaf3["P("x_3")"]
+    Node0 --> Leaf0["P(x_0)"]
+    Node0 --> Leaf1["P(x_1)"]
+    Node1 --> Leaf2["P(x_2)"]
+    Node1 --> Leaf3["P(x_3)"]
 ```
 
 검증자는 무작위로 몇 개의 점을 공개하도록 요구하고, 머클 프루프(Merkle Proof)를 사용하여 그것들이 커미트먼트에 포함되어 있는지 확인합니다. 이를 재귀적으로 반복함으로써 원래 다항식의 차수가 실제로 낮다는 것을 압도적인 확률로 보장합니다.

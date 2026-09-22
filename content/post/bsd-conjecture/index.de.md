@@ -127,7 +127,7 @@ Mit der Hasse-Schranke kann gezeigt werden, dass dieses unendliche Produkt im Be
 flowchart LR
     Eq["Elliptische Kurve E / Q"] -->|"Reduktion mod p"| Fp["E / F_p (für jede Primzahl p)"]
     Fp -->|"Berechnung der Lösungsanzahl N_p"| ap["Spur a_p = p + 1 - N_p"]
-    ap -->|"Integration als Euler-Produkt"| Lfunc["L-Funktion L("E, s")"]
+    ap -->|"Integration als Euler-Produkt"| Lfunc["L-Funktion L(E, s)"]
 ```
 
 ### 4.3. Analytische Fortsetzung und Modularitätssatz

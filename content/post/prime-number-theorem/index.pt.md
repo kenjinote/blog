@@ -36,8 +36,8 @@ A função de contagem de números primos $\pi(x)$ é uma função que conta a q
 ```mermaid
 graph TD;
     A["Número natural x"] -->|"Contar primos"| B["Função de contagem de primos π(x)"];
-    B -->|"Aproximar para"| C["x / ln("x")"];
-    C -->|"Aumentar a precisão"| D["Integral logarítmica Li("x")"];
+    B -->|"Aproximar para"| C["x / ln(x)"];
+    C -->|"Aumentar a precisão"| D["Integral logarítmica Li(x)"];
 ```
 
 ## Contexto Histórico: Da conjectura de Gauss à demonstração

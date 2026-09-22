@@ -91,18 +91,18 @@ This implementation is intuitive, but the computational complexity explodes expo
 
 ```mermaid
 graph TD
-    A["fib("5")"] --> B["fib("4")"]
-    A --> C["fib("3")"]
-    B --> D["fib("3")"]
-    B --> E["fib("2")"]
-    C --> F["fib("2")"]
-    C --> G["fib("1")"]
-    D --> H["fib("2")"]
-    D --> I["fib("1")"]
-    E --> J["fib("1")"]
-    E --> K["fib("0")"]
-    F --> L["fib("1")"]
-    F --> M["fib("0")"]
+    A["fib(5)"] --> B["fib(4)"]
+    A --> C["fib(3)"]
+    B --> D["fib(3)"]
+    B --> E["fib(2)"]
+    C --> F["fib(2)"]
+    C --> G["fib(1)"]
+    D --> H["fib(2)"]
+    D --> I["fib(1)"]
+    E --> J["fib(1)"]
+    E --> K["fib(0)"]
+    F --> L["fib(1)"]
+    F --> M["fib(0)"]
 ```
 
 Looking at the diagram, you can see that `"fib(3)"` and `"fib(2)"` are evaluated multiple times. This is the "overlapping of subproblems".
@@ -244,8 +244,8 @@ The following Mermaid diagram visualizes the concept of the state transition.
 
 ```mermaid
 graph TD
-    A["dp["i-1"][w] (Skip item i)"] --> C["Max: dp["i"][w]"]
-    B["dp["i-1"][w - weight["i"]] + value["i"] (Take item i)"] --> C
+    A["dp[i-1"][w] (Skip item i)"] --> C["Max: dp[i"][w]"]
+    B["dp[i-1"][w - weight["i"]] + value["i"] (Take item i)"] --> C
 ```
 
 ### 4-3. Bottom-Up Implementation (2D Array)
@@ -358,11 +358,11 @@ Expressing this transition in Mermaid looks like this.
 ```mermaid
 graph TD
     subgraph "S["i-1"] == T["j-1"]"
-        A1["dp["i-1"][j-1]"] --> B1["+1 --> dp["i"][j]"]
+        A1["dp[i-1"][j-1]"] --> B1["+1 --> dp[i"][j]"]
     end
     subgraph "S["i-1"] != T["j-1"]"
-        A2["dp["i-1"][j]"] --> C2["Max --> dp["i"][j]"]
-        B2["dp["i"][j-1]"] --> C2
+        A2["dp[i-1"][j]"] --> C2["Max --> dp[i"][j]"]
+        B2["dp[i"][j-1]"] --> C2
     end
 ```
 

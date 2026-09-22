@@ -136,7 +136,7 @@ $$ D(c) = (c \cdot s) \pmod q = m + \text{noise} $$
 ```mermaid
 graph LR
     A["उच्च-शोर सिफरटेक्स्ट C_noisy"] --> B["समरूप डिक्रिप्शन सर्किट (Eval_Dec)"]
-    C["एन्क्रिप्टेड निजी कुंजी E("sk")"] --> B
+    C["एन्क्रिप्टेड निजी कुंजी E(sk)"] --> B
     B --> D["निम्न-शोर सिफरटेक्स्ट C_fresh"]
     
     style B fill:#ffeeba,stroke:#ffc107

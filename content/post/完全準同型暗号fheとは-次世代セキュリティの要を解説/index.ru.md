@@ -142,7 +142,7 @@ $$ D(c) = (c \cdot s) \pmod q = m + \text{noise} $$
 ```mermaid
 graph LR
     A["Шифротекст с высоким шумом C_noisy"] --> B["Гомоморфная схема дешифрования (Eval_Dec)"]
-    C["Зашифрованный закрытый ключ E("sk")"] --> B
+    C["Зашифрованный закрытый ключ E(sk)"] --> B
     B --> D["Шифротекст с низким шумом C_fresh"]
     
     style B fill:#ffeeba,stroke:#ffc107

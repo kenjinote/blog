@@ -313,8 +313,8 @@ Pengujian keprimaan berkecepatan tinggi adalah teknik yang tak terhindarkan saat
 
 ```mermaid
 graph LR
-    TrialDivision["Pembagian Coba-coba (O("√N"))"] --> Fermat["Uji Fermat (O("log N"), punya kelemahan)"]
-    Fermat --> MillerRabin["Metode Miller-Rabin (O("log N"), dapat dideterministikkan)"]
+    TrialDivision["Pembagian Coba-coba (O(√N))"] --> Fermat["Uji Fermat (O(log N), punya kelemahan)"]
+    Fermat --> MillerRabin["Metode Miller-Rabin (O(log N), dapat dideterministikkan)"]
     MillerRabin --> Montgomery["+ Perkalian Montgomery (Peningkatan kecepatan konstanta)"]
     
     style MillerRabin fill:#f9f,stroke:#333,stroke-width:2px

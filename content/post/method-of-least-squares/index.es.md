@@ -128,7 +128,7 @@ Esta fórmula es uno de los resultados más hermosos de la estadística y el apr
 ```mermaid
 flowchart LR
     b["Vector b"] -->|"Proyección Ortogonal"| p["Vector de Proyección p = A x_hat"]
-    p --> C["Espacio de Columnas C("A")"]
+    p --> C["Espacio de Columnas C(A)"]
     b -->|"Vector de Error e"| p
     e["e = b - A x_hat"] -.->|"Ortogonal"| C
 ```

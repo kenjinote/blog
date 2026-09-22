@@ -188,9 +188,9 @@ If super-advanced AI or posthumans are not included in the reference class (sepa
 ```mermaid
 graph TD
     subgraph "Difference Due to Reference Class Setting"
-        A["What do we count ourselves as?"] -->|"Only Homo Sapiens"| B["N = 100 Billion\n("High Probability of Early Extinction")"]
-        A -->|"All Conscious Beings"| C["Universe-scale N\n("Conclusion Changes Greatly")"]
-        A -->|"Modern Humans + Posthumans"| D["N = Enormous\n("Possibility of Evolution")"]
+        A["What do we count ourselves as?"] -->|"Only Homo Sapiens"| B["N = 100 Billion\n(High Probability of Early Extinction)"]
+        A -->|"All Conscious Beings"| C["Universe-scale N\n(Conclusion Changes Greatly)"]
+        A -->|"Modern Humans + Posthumans"| D["N = Enormous\n(Possibility of Evolution)"]
     end
 ```
 

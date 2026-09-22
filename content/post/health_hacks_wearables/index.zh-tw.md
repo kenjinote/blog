@@ -252,7 +252,7 @@ processed_df = engineer_features(merged_df)
 ```mermaid
 xychart-beta
     title HRV 與每日寫程式時數 (正規化)
-    x-axis ["週一", "週二", "週三", "週四", "週五", "週六", "週日"]
+    x-axis ["週一, 週二, 週三, 週四, 週五, 週六, 週日"]
     y-axis "HRV 與寫程式產出" 10 --> 100
     line [45, 52, 65, 75, 70, 58, 48]
     bar [35, 42, 58, 65, 60, 20, 15]

@@ -87,8 +87,8 @@ El procedimiento para resolver ecuaciones diferenciales utilizando la transforma
 ```mermaid
 flowchart TD
   A["Ecuación diferencial en el dominio del tiempo"] -->|"Aplicar transformada de Laplace"| B["Ecuación algebraica en el dominio s"]
-  B -->|"Cálculo algebraico (Simplificación)"| C["Solución F("s") en el dominio s"]
-  C -->|"Aplicar transformada de Laplace inversa"| D["Solución f("t") en el dominio del tiempo"]
+  B -->|"Cálculo algebraico (Simplificación)"| C["Solución F(s) en el dominio s"]
+  C -->|"Aplicar transformada de Laplace inversa"| D["Solución f(t) en el dominio del tiempo"]
 ```
 
 1. **Aplicar transformada de Laplace**: Aplique la transformada de Laplace a ambos lados de la ecuación diferencial dada. Sustituya las condiciones iniciales aquí.

@@ -162,7 +162,7 @@ Oleh karena itu, para ahli matematika menggunakan teknik yang disebut **perluasa
 
 ```mermaid
 graph TD
-    A["Fungsi Zeta Re("s") > 1"] -->|"Perluasan Analitik"| B["Ekstensi ke seluruh bidang kompleks"]
+    A["Fungsi Zeta Re(s) > 1"] -->|"Perluasan Analitik"| B["Ekstensi ke seluruh bidang kompleks"]
     B --> C["Substitusi s = -1"]
     C --> D["ζ(-1) = -1/12"]
 ```

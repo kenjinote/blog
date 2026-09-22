@@ -150,8 +150,8 @@ Tendo em vista as implementações de circuitos otimizadas nos últimos anos, af
 
 ```mermaid
 graph LR
-  A["Algoritmo clássico (GNFS)"] -->|"Limite"| B["Tempo subexponencial L_n["1/3"]"]
-  C["Algoritmo quântico (Shor)"] -->|"Avanço"| D["Tempo polinomial O("(log n")^3)"]
+  A["Algoritmo clássico (GNFS)"] -->|"Limite"| B["Tempo subexponencial L_n[1/3"]"]
+  C["Algoritmo quântico (Shor)"] -->|"Avanço"| D["Tempo polinomial O((log n)^3)"]
   B --> E["Uso contínuo de criptografia RSA (aumento do tamanho da chave)"]
   D --> F["Colapso completo da criptografia RSA"]
 ```

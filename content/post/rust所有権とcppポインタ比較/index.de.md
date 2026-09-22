@@ -222,8 +222,8 @@ Da [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) auf Compiler
 ```mermaid
 graph LR
     A["Variable v (Eigentümer)"] --> B["Heap Array [1, 2, 3]"]
-    C["Referenz 'first' (&v["0"])"] -.->|"Unveränderliches Ausleihen"| B
-    A -->|"X "Veränderliches Ausleihen verweigert!""| D["v.push("4")"]
+    C["Referenz 'first' (&v[0"])"] -.->|"Unveränderliches Ausleihen"| B
+    A -->|"X "Veränderliches Ausleihen verweigert!""| D["v.push(4)"]
     
     style C stroke:#00FF00,stroke-width:2px
     style D stroke:#FF0000,stroke-width:2px

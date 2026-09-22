@@ -39,8 +39,8 @@ Cela signifie que si l'on double le nombre de bits, le temps de calcul augmente 
 ```mermaid
 graph TD
     A["Augmentation de la taille de l'entrée N (nombre de bits)"] --> B{"Choix de l'algorithme"}
-    B -->|"Classique : Crible général du corps de nombres"| C["Augmentation sous-exponentielle O("exp(..."))"]
-    B -->|"Quantique : Algorithme de Shor"| D["Temps polynomial O("(log N")^3)"]
+    B -->|"Classique : Crible général du corps de nombres"| C["Augmentation sous-exponentielle O(exp(...))"]
+    B -->|"Quantique : Algorithme de Shor"| D["Temps polynomial O((log N)^3)"]
     C --> E["Milliers à milliards d'années (Indéchiffrable)"]
     D --> F["Quelques minutes à quelques heures (Déchiffrable en un temps réaliste)"]
 ```
@@ -57,11 +57,11 @@ Le flux global de l'algorithme est le suivant :
 graph TD
     A["Entrée : Nombre composé N à factoriser"] --> B["Choisir un nombre aléatoire a tel que a < N"]
     B --> C{"gcd("a, N") > 1 ?"}
-    C -- Oui --> D["Afficher le facteur trivial gcd("a, N") et terminer"]
-    C -- Non --> E["Trouver la période r de f("x") = a^x mod N avec un algorithme quantique"]
+    C -- Oui --> D["Afficher le facteur trivial gcd(a, N) et terminer"]
+    C -- Non --> E["Trouver la période r de f(x) = a^x mod N avec un algorithme quantique"]
     E --> F{"r est pair ET a^(r/2) ≢ -1 mod N ?"}
     F -- Non --> B
-    F -- Oui --> G["Calculer les facteurs p = gcd("a^(r/2") - 1, N), q = gcd("a^(r/2") + 1, N)"]
+    F -- Oui --> G["Calculer les facteurs p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N)"]
     G --> H["Sortie : p, q"]
 ```
 

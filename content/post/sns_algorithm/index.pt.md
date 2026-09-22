@@ -122,7 +122,7 @@ O gráfico a seguir ilustra a diferença nos ciclos de vida de tecnologias exces
 ```mermaid
 xychart-beta
     title Ciclo de vida e evolução da avaliação de tecnologias
-    x-axis ["0 meses", "6 meses", "12 meses", "18 meses", "24 meses", "30 meses", "36 meses"]
+    x-axis ["0 meses, 6 meses, 12 meses, 18 meses, 24 meses, 30 meses, 36 meses"]
     y-axis "Nº de menções e nível de entusiasmo no SNS" 0 --> 100
     line [10, 85, 95, 45, 20, 10, 5]
     line [15, 20, 25, 35, 50, 65, 80]

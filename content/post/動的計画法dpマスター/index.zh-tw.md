@@ -91,18 +91,18 @@ def fib_naive(n):
 
 ```mermaid
 graph TD
-    A["fib("5")"] --> B["fib("4")"]
-    A --> C["fib("3")"]
-    B --> D["fib("3")"]
-    B --> E["fib("2")"]
-    C --> F["fib("2")"]
-    C --> G["fib("1")"]
-    D --> H["fib("2")"]
-    D --> I["fib("1")"]
-    E --> J["fib("1")"]
-    E --> K["fib("0")"]
-    F --> L["fib("1")"]
-    F --> M["fib("0")"]
+    A["fib(5)"] --> B["fib(4)"]
+    A --> C["fib(3)"]
+    B --> D["fib(3)"]
+    B --> E["fib(2)"]
+    C --> F["fib(2)"]
+    C --> G["fib(1)"]
+    D --> H["fib(2)"]
+    D --> I["fib(1)"]
+    E --> J["fib(1)"]
+    E --> K["fib(0)"]
+    F --> L["fib(1)"]
+    F --> M["fib(0)"]
 ```
 
 從圖中可以看出，`"fib(3)"` 和 `"fib(2)"` 被多次求值。這就是所謂的「重疊子問題」。
@@ -244,8 +244,8 @@ $$ dp[0][w] = 0, \quad dp[i][0] = 0 $$
 
 ```mermaid
 graph TD
-    A["dp["i-1"][w] (不選物品 i)"] --> C["Max: dp["i"][w]"]
-    B["dp["i-1"][w - weight["i"]] + value["i"] (選物品 i)"] --> C
+    A["dp[i-1"][w] (不選物品 i)"] --> C["Max: dp[i"][w]"]
+    B["dp[i-1"][w - weight["i"]] + value["i"] (選物品 i)"] --> C
 ```
 
 ### 4-3. 由下而上實作（二維陣列）
@@ -358,11 +358,11 @@ $$
 ```mermaid
 graph TD
     subgraph "S["i-1"] == T["j-1"]"
-        A1["dp["i-1"][j-1]"] --> B1["+1 --> dp["i"][j]"]
+        A1["dp[i-1"][j-1]"] --> B1["+1 --> dp[i"][j]"]
     end
     subgraph "S["i-1"] != T["j-1"]"
-        A2["dp["i-1"][j]"] --> C2["Max --> dp["i"][j]"]
-        B2["dp["i"][j-1]"] --> C2
+        A2["dp[i-1"][j]"] --> C2["Max --> dp[i"][j]"]
+        B2["dp[i"][j-1]"] --> C2
     end
 ```
 

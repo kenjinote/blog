@@ -39,8 +39,8 @@ This means that if we double the number of bits, the computation time on a class
 ```mermaid
 graph TD
     A["Increase in input size (bits) N"] --> B{"Algorithm selection"}
-    B -->|"Classical: General Number Field Sieve"| C["Sub-exponential increase O("exp(..."))"]
-    B -->|"Quantum: Shor's algorithm"| D["Polynomial time O("(log N")^3)"]
+    B -->|"Classical: General Number Field Sieve"| C["Sub-exponential increase O(exp(...))"]
+    B -->|"Quantum: Shor's algorithm"| D["Polynomial time O((log N)^3)"]
     C --> E["Thousands to billions of years (Undecipherable)"]
     D --> F["Minutes to hours (Decipherable in realistic time)"]
 ```
@@ -57,11 +57,11 @@ The overall flow of the algorithm is as follows:
 graph TD
     A["Input: Composite number N to be factored"] --> B["Choose a random number a such that a < N"]
     B --> C{"gcd("a, N") > 1 ?"}
-    C -- Yes --> D["Output trivial factor gcd("a, N") and terminate"]
-    C -- No --> E["Find the period r of f("x") = a^x mod N using quantum algorithm"]
+    C -- Yes --> D["Output trivial factor gcd(a, N) and terminate"]
+    C -- No --> E["Find the period r of f(x) = a^x mod N using quantum algorithm"]
     E --> F{"Is r even AND a^(r/2) ≢ -1 mod N ?"}
     F -- No --> B
-    F -- Yes --> G["Calculate factors p = gcd("a^(r/2") - 1, N), q = gcd("a^(r/2") + 1, N)"]
+    F -- Yes --> G["Calculate factors p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N)"]
     G --> H["Output: p, q"]
 ```
 

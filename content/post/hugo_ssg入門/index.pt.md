@@ -174,9 +174,9 @@ O fluxo geral do pipeline de migração é mostrado abaixo.
 flowchart LR
   WPDB["Banco de Dados WP"] -->|"Plugin"| Exporter["Ferramenta de Exportação"]
   Exporter -->|"Extrai Texto, \nMeta, Imagens"| ZipFile["Zip / Pasta"]
-  ZipFile -->|"Descompactar"| MarkdownFiles["Arquivos Markdown \n("content/")"]
-  ZipFile -->|"Descompactar"| ImageFiles["Imagens \n("static/wp-content/")"]
-  MarkdownFiles --> Formatting["Revisão e Formatação \n("Ajustar Shortcodes")"]
+  ZipFile -->|"Descompactar"| MarkdownFiles["Arquivos Markdown \n(content/)"]
+  ZipFile -->|"Descompactar"| ImageFiles["Imagens \n(static/wp-content/)"]
+  MarkdownFiles --> Formatting["Revisão e Formatação \n(Ajustar Shortcodes)"]
   Formatting --> Git["Commit no Git"]
 ```
 

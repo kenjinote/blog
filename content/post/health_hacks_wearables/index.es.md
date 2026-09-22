@@ -252,7 +252,7 @@ A partir de los datos preprocesados, analizamos la relación entre los indicador
 ```mermaid
 xychart-beta
     title VFC vs Horas Diarias de Codificación (Normalizado)
-    x-axis ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"]
+    x-axis ["Lun, Mar, Mié, Jue, Vie, Sáb, Dom"]
     y-axis "VFC y Rendimiento de Codificación" 10 --> 100
     line [45, 52, 65, 75, 70, 58, 48]
     bar [35, 42, 58, 65, 60, 20, 15]

@@ -87,8 +87,8 @@ $$
 ```mermaid
 flowchart TD
   A["時域中的微分方程"] -->|"執行拉普拉斯變換"| B["s域中的代數方程"]
-  B -->|"代數計算（整理）"| C["s域中的解 F("s")"]
-  C -->|"執行逆拉普拉斯變換"| D["時域中的解 f("t")"]
+  B -->|"代數計算（整理）"| C["s域中的解 F(s)"]
+  C -->|"執行逆拉普拉斯變換"| D["時域中的解 f(t)"]
 ```
 
 1. **執行[拉普拉斯變換](https://kenji.blog/zh-tw/p/laplace-transform/)**：對給定的微分方程兩邊進行[拉普拉斯變換](https://kenji.blog/zh-tw/p/laplace-transform/)。在此處代入初始條件。

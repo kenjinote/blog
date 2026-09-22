@@ -115,11 +115,11 @@ Usando una cola de prioridad (`std::priority_queue`), el vértice no fijado con 
 
 ```mermaid
 graph TD
-    S["Origen S("0")"] -- 2 --> A["Vértice A("2")"]
-    S["Origen S("0")"] -- 5 --> B["Vértice B("5")"]
-    A["Vértice A("2")"] -- 1 --> B["Vértice B("3")"]
-    A["Vértice A("2")"] -- 4 --> C["Vértice C("6")"]
-    B["Vértice B("3")"] -- 1 --> C["Vértice C("4")"]
+    S["Origen S(0)"] -- 2 --> A["Vértice A(2)"]
+    S["Origen S(0)"] -- 5 --> B["Vértice B(5)"]
+    A["Vértice A(2)"] -- 1 --> B["Vértice B(3)"]
+    A["Vértice A(2)"] -- 4 --> C["Vértice C(6)"]
+    B["Vértice B(3)"] -- 1 --> C["Vértice C(4)"]
 ```
 Como se muestra en la figura anterior, el costo de ir directamente de S a B es 5, pero pasando por A, se puede llegar con un costo de 3. El algoritmo de [Dijkstra](https://kenji.blog/es/p/graph-theory-dijkstra-a-star/) realiza optimizaciones de esta manera.
 

@@ -174,9 +174,9 @@ aliases:
 flowchart LR
   WPDB["WP डेटाबेस"] -->|"Plugin"| Exporter["एक्सपोर्ट टूल"]
   Exporter -->|"टेक्स्ट, \nमेटा, इमेज निकालें"| ZipFile["Zip / फ़ोल्डर"]
-  ZipFile -->|"Unpack"| MarkdownFiles["मार्कडाउन फ़ाइलें \n("content/")"]
-  ZipFile -->|"Unpack"| ImageFiles["इमेज \n("static/wp-content/")"]
-  MarkdownFiles --> Formatting["समीक्षा और प्रारूप \n("शॉर्टकोड ठीक करें")"]
+  ZipFile -->|"Unpack"| MarkdownFiles["मार्कडाउन फ़ाइलें \n(content/)"]
+  ZipFile -->|"Unpack"| ImageFiles["इमेज \n(static/wp-content/)"]
+  MarkdownFiles --> Formatting["समीक्षा और प्रारूप \n(शॉर्टकोड ठीक करें)"]
   Formatting --> Git["Git में कमिट करें"]
 ```
 

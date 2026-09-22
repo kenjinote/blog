@@ -32,7 +32,7 @@ Mais que se passe-t-il si la région à l'intérieur du contour inclut des point
 
 ```mermaid
 flowchart TD
-    A["Intégrale complexe sur la droite réelle"] -->|"Extension au plan complexe"| B["Définir la fonction complexe f("z")"]
+    A["Intégrale complexe sur la droite réelle"] -->|"Extension au plan complexe"| B["Définir la fonction complexe f(z)"]
     B --> C["Définir un contour approprié C"]
     C --> D["Identifier les singularités (pôles) à l'intérieur du contour"]
     D --> E["Calculer le résidu à chaque singularité"]

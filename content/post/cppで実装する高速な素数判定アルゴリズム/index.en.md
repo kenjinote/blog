@@ -313,8 +313,8 @@ Fast primality testing is an unavoidable technology in calculations dealing with
 
 ```mermaid
 graph LR
-    TrialDivision["Trial Division (O("√N"))"] --> Fermat["Fermat Test (O("log N"), has flaws)"]
-    Fermat --> MillerRabin["Miller-Rabin Method (O("log N"), can be deterministic)"]
+    TrialDivision["Trial Division (O(√N))"] --> Fermat["Fermat Test (O(log N), has flaws)"]
+    Fermat --> MillerRabin["Miller-Rabin Method (O(log N), can be deterministic)"]
     MillerRabin --> Montgomery["+ Montgomery Multiplication (Constant factor speedup)"]
     
     style MillerRabin fill:#f9f,stroke:#333,stroke-width:2px

@@ -128,7 +128,7 @@ $$ \hat{\mathbf{x}} = (A^T A)^{-1} A^T \mathbf{b} $$
 ```mermaid
 flowchart LR
     b["벡터 b"] -->|"직교 사영"| p["사영 벡터 p = A x_hat"]
-    p --> C["열공간 C("A")"]
+    p --> C["열공간 C(A)"]
     b -->|"오차 벡터 e"| p
     e["e = b - A x_hat"] -.->|"직교"| C
 ```

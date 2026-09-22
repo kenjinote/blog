@@ -174,9 +174,9 @@ A continuación se muestra el flujo general de la canalización de migración.
 flowchart LR
   WPDB["Base de datos WP"] -->|"Plugin"| Exporter["Herramienta de exportación"]
   Exporter -->|"Extrae texto, \nMetadatos, Imágenes"| ZipFile["Archivo Zip / Carpeta"]
-  ZipFile -->|"Unpack"| MarkdownFiles["Archivos Markdown \n("content/")"]
-  ZipFile -->|"Unpack"| ImageFiles["Imágenes \n("static/wp-content/")"]
-  MarkdownFiles --> Formatting["Revisión y formato \n("Corregir Shortcodes")"]
+  ZipFile -->|"Unpack"| MarkdownFiles["Archivos Markdown \n(content/)"]
+  ZipFile -->|"Unpack"| ImageFiles["Imágenes \n(static/wp-content/)"]
+  MarkdownFiles --> Formatting["Revisión y formato \n(Corregir Shortcodes)"]
   Formatting --> Git["Commit a Git"]
 ```
 

@@ -67,11 +67,11 @@ flowchart LR
     A["Zahlentheorie"] -->|"L-Funktionsgleichheit"| B["Analysis"]
     subgraph SG1 ["Elliptische Kurven über rationalen Zahlen"]
         N1["Gleichung E: y² = x³ + ax + b"]
-        N2["Hasse-Weil-L-Funktion L("s, E")"]
+        N2["Hasse-Weil-L-Funktion L(s, E)"]
     end
     subgraph SG2 ["Modulformen"]
-        N3["Spitzenform vom Gewicht 2 f("z")"]
-        N4["Dirichlet-Reihe L("s, f")"]
+        N3["Spitzenform vom Gewicht 2 f(z)"]
+        N4["Dirichlet-Reihe L(s, f)"]
     end
     SG1 -->|"Taniyama-Shimura-Vermutung"| SG2
     %% Dieses Diagramm zeigt, wie völlig unterschiedliche Konzepte tief miteinander verbunden sind.

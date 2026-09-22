@@ -37,7 +37,7 @@ flowchart TD
     B -->|"Manque de compréhension des variables et du typage statique"| D["Décrochage (Le mur des types)"]
     B -->|"Transition réussie"| E["Lycée : Information I (Bases de Python/JavaScript, etc.)"]
     E --> F{"Le mur de la conception d'algorithmes et des structures de données"}
-    F -->|"Ignorance de la complexité temporelle et spatiale"| G["Code inefficace (Dégradation des performances par création massive de O("N^2"))"]
+    F -->|"Ignorance de la complexité temporelle et spatiale"| G["Code inefficace (Dégradation des performances par création massive de O(N^2))"]
     F -->|"Boîte noire de la gestion de la mémoire et des références"| H["Devenir un simple codeur se limitant aux appels d'API superficiels"]
     F -->|"Percée conceptuelle"| I["Apprentissage approfondi de la CS (C/C++, Java, architecture bas niveau)"]
     I --> J["Professionnel de l'informatique de haut niveau ardemment désiré par l'industrie"]
@@ -211,7 +211,7 @@ Le graphique ci-dessous illustre conceptuellement le gouffre désespérant entre
 ```mermaid
 xychart-beta
     title Compétences enseignées à l'école au Japon vs Niveau requis par l'industrie
-    x-axis ["Langages visuels", "Syntaxe de base/variables", "Algorithmes/Complexité", "OS/Réseaux", "DB/Conception de systèmes", "Cloud/Architecture distribuée"]
+    x-axis ["Langages visuels, Syntaxe de base/variables, Algorithmes/Complexité, OS/Réseaux, DB/Conception de systèmes, Cloud/Architecture distribuée"]
     y-axis "Niveau d'atteinte / Exigence (%)" 0 --> 100
     line "Niveau atteint dans l'enseignement scolaire actuel" [95, 60, 15, 5, 2, 0]
     line "Niveau exigé par l'industrie et la tech" [0, 20, 85, 90, 95, 100]

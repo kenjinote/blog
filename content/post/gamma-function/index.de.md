@@ -63,8 +63,8 @@ Durch Wiederholen dieser Operation wird die Gammafunktion zu einer meromorphen F
 
 ```mermaid
 graph LR
-    P1["Re("z") > 0"] -->|"Durch Integral definiert"| P2["Γ(z) konvergiert"]
-    P2 -->|"Verwendung der Rekursion"| P3["Erweitert auf Re("z") ≤ 0"]
+    P1["Re(z) > 0"] -->|"Durch Integral definiert"| P2["Γ(z) konvergiert"]
+    P2 -->|"Verwendung der Rekursion"| P3["Erweitert auf Re(z) ≤ 0"]
     P3 -->|"z = 0, -1, -2, ..."| P4["Singularitäten (Pole)"]
 ```
 

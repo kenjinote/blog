@@ -137,10 +137,10 @@ The FRI protocol is a technique for verifying "whether a certain function is suf
 graph TD
     Root["Merkle Root (Commitment)"] --> Node0["Node 0"]
     Root --> Node1["Node 1"]
-    Node0 --> Leaf0["P("x_0")"]
-    Node0 --> Leaf1["P("x_1")"]
-    Node1 --> Leaf2["P("x_2")"]
-    Node1 --> Leaf3["P("x_3")"]
+    Node0 --> Leaf0["P(x_0)"]
+    Node0 --> Leaf1["P(x_1)"]
+    Node1 --> Leaf2["P(x_2)"]
+    Node1 --> Leaf3["P(x_3)"]
 ```
 
 The verifier requests the disclosure of several random points and uses Merkle proofs to confirm that they are included in the commitment. By repeating this recursively, it guarantees with overwhelming probability that the original polynomial actually has a low degree.

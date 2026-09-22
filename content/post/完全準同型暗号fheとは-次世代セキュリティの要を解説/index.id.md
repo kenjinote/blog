@@ -136,7 +136,7 @@ Secara intuitif, operasi ini berarti "sebelum ciphertext rusak karena dipenuhi n
 ```mermaid
 graph LR
     A["Ciphertext Noise Tinggi C_noisy"] --> B["Sirkuit Dekripsi Homomorfik (Eval_Dec)"]
-    C["Kunci privat terenkripsi E("sk")"] --> B
+    C["Kunci privat terenkripsi E(sk)"] --> B
     B --> D["Ciphertext Noise Rendah C_fresh"]
     
     style B fill:#ffeeba,stroke:#ffc107

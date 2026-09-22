@@ -363,7 +363,7 @@ graph TD
     V --> VCache["KV 캐시에 추가"]
     Q --> Dot1["Q * K_Cache^T"]
     KCache --> Dot1
-    Dot1 --> Scale["스케일링 (1/sqrt("d"))"]
+    Dot1 --> Scale["스케일링 (1/sqrt(d))"]
     Scale --> Softmax["소프트맥스(Softmax)"]
     Softmax --> Dot2["SoftmaxOut * V_Cache"]
     VCache --> Dot2

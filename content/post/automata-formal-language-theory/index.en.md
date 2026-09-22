@@ -58,10 +58,10 @@ The hierarchy is classified as follows (from Type-0 to Type-3). The larger the n
 
 ```mermaid
 flowchart TD
-    Type0["Type-0: Recursively Enumerable Languages\n("Turing Machine")"]
-    Type1["Type-1: Context-Sensitive Languages\n("Linear Bounded Automaton")"]
-    Type2["Type-2: Context-Free Languages\n("Pushdown Automaton")"]
-    Type3["Type-3: Regular Languages\n("Finite Automaton")"]
+    Type0["Type-0: Recursively Enumerable Languages\n(Turing Machine)"]
+    Type1["Type-1: Context-Sensitive Languages\n(Linear Bounded Automaton)"]
+    Type2["Type-2: Context-Free Languages\n(Pushdown Automaton)"]
+    Type3["Type-3: Regular Languages\n(Finite Automaton)"]
 
     Type0 --- Type1
     Type1 --- Type2
@@ -263,7 +263,7 @@ flowchart LR
         T1["..."] --- T2["0"] --- T3["1"] --- T4["1"] --- T5["0"] --- T6["..."]
     end
     Head(("Head")) --> T3
-    State["State: q_read\n("Finite Control")"] --- Head
+    State["State: q_read\n(Finite Control)"] --- Head
 ```
 
 ### [Halting Problem](https://kenji.blog/en/p/turing-machine-computability/)

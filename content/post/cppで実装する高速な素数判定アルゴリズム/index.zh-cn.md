@@ -313,8 +313,8 @@ int main() {
 
 ```mermaid
 graph LR
-    TrialDivision["试除法 (O("√N"))"] --> Fermat["费马测试 (O("log N"), 存在弱点)"]
-    Fermat --> MillerRabin["米勒-拉宾法 (O("log N"), 可转化为确定性)"]
+    TrialDivision["试除法 (O(√N))"] --> Fermat["费马测试 (O(log N), 存在弱点)"]
+    Fermat --> MillerRabin["米勒-拉宾法 (O(log N), 可转化为确定性)"]
     MillerRabin --> Montgomery["+ 蒙哥马利乘法 (常数倍加速)"]
     
     style MillerRabin fill:#f9f,stroke:#333,stroke-width:2px

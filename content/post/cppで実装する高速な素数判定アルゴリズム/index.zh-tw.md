@@ -314,8 +314,8 @@ int main() {
 
 ```mermaid
 graph LR
-    TrialDivision["試除法 (O("√N"))"] --> Fermat["費馬質數性檢驗 (O("log N"), 具弱點)"]
-    Fermat --> MillerRabin["米勒-拉賓法 (O("log N"), 可決定性化)"]
+    TrialDivision["試除法 (O(√N))"] --> Fermat["費馬質數性檢驗 (O(log N), 具弱點)"]
+    Fermat --> MillerRabin["米勒-拉賓法 (O(log N), 可決定性化)"]
     MillerRabin --> Montgomery["+ 蒙哥馬利乘模運算 (常數倍高速化)"]
     
     style MillerRabin fill:#f9f,stroke:#333,stroke-width:2px

@@ -112,8 +112,8 @@ O procedimento para somar 2 pontos diferentes $P$ e $Q$ na curva para encontrar 
 
 ```mermaid
 graph TD
-    Step1["Traçar uma reta ligando P("x1, y1") e Q("x2, y2")"] --> Step2["Encontrar o terceiro ponto de interseção -R com a curva"]
-    Step2 --> Step3["Refletir -R no eixo x para obter R("x3, y3")"]
+    Step1["Traçar uma reta ligando P(x1, y1) e Q(x2, y2)"] --> Step2["Encontrar o terceiro ponto de interseção -R com a curva"]
+    Step2 --> Step3["Refletir -R no eixo x para obter R(x3, y3)"]
     Step3 -.-> Result["Este é R = P + Q"]
 ```
 

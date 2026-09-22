@@ -86,7 +86,7 @@ Cohen a développé une méthode pour étendre un nouveau modèle en ajoutant de
 graph TD
     M["Modèle de base (ZFC)"]
     G["Filtre générique"]
-    MG["Extension générique M["G"]"]
+    MG["Extension générique M[G"]"]
     M -->|"forcing"| MG
     G -->|"ajouté à"| MG
     MG -->|"satisfait"| NOT_CH["Non HC"]

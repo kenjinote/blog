@@ -221,7 +221,7 @@ El siguiente gráfico muestra la VRAM estimada que se requiere (incluida la sobr
 ```mermaid
 xychart-beta
     title Número de Parámetros y VRAM Requerida (Estimación con Cuantización 4-bit)
-    x-axis "Nombre del Modelo" ["Phi-3 Mini (3.8B)", "Llama 3 (8B)", "Gemma 2 (9B)", "Mixtral (8x7B)", "Qwen 2.5 (32B)", "Llama 3 (70B)"]
+    x-axis "Nombre del Modelo" ["Phi-3 Mini (3.8B), Llama 3 (8B), Gemma 2 (9B), Mixtral (8x7B), Qwen 2.5 (32B), Llama 3 (70B)"]
     y-axis "VRAM Requerida (GB)" 0 --> 45
     bar [3.5, 6.0, 6.5, 26.0, 22.0, 40.0]
 ```

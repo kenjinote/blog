@@ -128,7 +128,7 @@ $$ \hat{\mathbf{x}} = (A^T A)^{-1} A^T \mathbf{b} $$
 ```mermaid
 flowchart LR
     b["ベクトル b"] -->|"直交射影"| p["射影ベクトル p = A x_hat"]
-    p --> C["列空間 C("A")"]
+    p --> C["列空間 C(A)"]
     b -->|"誤差ベクトル e"| p
     e["e = b - A x_hat"] -.->|"直交"| C
 ```

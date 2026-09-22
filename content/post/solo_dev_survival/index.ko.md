@@ -38,7 +38,7 @@ $$ P(k) \propto \frac{1}{k^\alpha} $$
 ```mermaid
 xychart-beta
     title 시장 규모 분포와 개인 개발자 타겟
-  x-axis ["대중 A", "대중 B", "니치 C", "니치 D", "니치 E", "니치 F", "니치 G"]
+  x-axis ["대중 A, 대중 B, 니치 C, 니치 D, 니치 E, 니치 F, 니치 G"]
   y-axis "시장 가치" 0 --> 100
   bar [95, 60, 20, 10, 5, 3, 2]
   line [95, 60, 20, 10, 5, 3, 2]

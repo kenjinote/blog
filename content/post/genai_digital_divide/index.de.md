@@ -68,7 +68,7 @@ Das folgende Diagramm zeigt diese Divergenz visuell.
 ```mermaid
 xychart-beta
     title Produktivitätsdivergenz im Laufe der Zeit (Der Matthäus-Effekt)
-    x-axis ["Jahr 1", "Jahr 2", "Jahr 3", "Jahr 4", "Jahr 5", "Jahr 6"]
+    x-axis ["Jahr 1, Jahr 2, Jahr 3, Jahr 4, Jahr 5, Jahr 6"]
     y-axis "Ausgabevolumen" 0 --> 200
     line [10, 15, 30, 60, 110, 180]
     line [10, 12, 14, 16, 18, 20]

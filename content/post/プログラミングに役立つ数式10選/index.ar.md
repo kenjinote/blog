@@ -150,7 +150,7 @@ graph TD
   Extract --> W1["كلمة: 'مجانًا'"]
   Extract --> W2["كلمة: 'أموال'"]
   Extract --> Wn["كلمة: 'اجتماع'"]
-  W1 --> Prob["حساب الاحتمال P("Spam | Words")"]
+  W1 --> Prob["حساب الاحتمال P(Spam | Words)"]
   W2 --> Prob
   Wn --> Prob
   Prob --> Bayes["تطبيق مبرهنة بايز"]
@@ -394,10 +394,10 @@ $$ x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} $$
 
 ```mermaid
 flowchart LR
-  Start["البداية: تخمين x0 الأولي"] --> Eval["تقييم f("xn") و f'(xn)"]
+  Start["البداية: تخمين x0 الأولي"] --> Eval["تقييم f(xn) و f'(xn)"]
   Eval --> Check{"هل f("xn") ≈ 0؟"}
   Check -- نعم --> Done["إرجاع xn كجذر"]
-  Check -- لا --> Update["xn+1 = xn - f("xn") / f'(xn)"]
+  Check -- لا --> Update["xn+1 = xn - f(xn) / f'(xn)"]
   Update --> Eval
 ```
 

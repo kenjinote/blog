@@ -136,7 +136,7 @@ Craig Gentryの天才的な貢献は、 **「ブートストラッピング」**
 ```mermaid
 graph LR
     A["高ノイズ暗号文 C_noisy"] --> B["準同型復号回路 (Eval_Dec)"]
-    C["暗号化された秘密鍵 E("sk")"] --> B
+    C["暗号化された秘密鍵 E(sk)"] --> B
     B --> D["低ノイズ暗号文 C_fresh"]
     
     style B fill:#ffeeba,stroke:#ffc107

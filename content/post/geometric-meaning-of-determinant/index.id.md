@@ -40,7 +40,7 @@ Ketika matriks $A$ diterapkan, vektor basis standar masing-masing ditransformasi
 
 ```mermaid
 flowchart LR
-    A["Persegi satuan (Luas 1)"] -->|"Transformasi linear oleh matriks A"| B["Jajaran genjang (Luas |det("A")|)"]
+    A["Persegi satuan (Luas 1)"] -->|"Transformasi linear oleh matriks A"| B["Jajaran genjang (Luas |det(A)|)"]
 ```
 
 Dengan kata lain, nilai absolut determinan berarti "faktor skala luas" yang menunjukkan **berapa kali** setiap bangun dalam ruang telah diregangkan (atau disusutkan) oleh transformasi linear tersebut. Misalnya, jika determinan suatu matriks adalah $3$, luas setiap bangun yang digambar pada bidang aslinya akan menjadi tepat tiga kali lebih besar setelah transformasi.

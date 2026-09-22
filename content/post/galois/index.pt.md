@@ -85,7 +85,7 @@ flowchart TD
     subgraph "Grupos de Galois (Grupos)"
         I["Grupo trivial {e}"]
         H["Subgrupo H"]
-        G["Grupo de Galois G=Gal("L/K")"]
+        G["Grupo de Galois G=Gal(L/K)"]
         G -->|"contém"| H
         H -->|"contém"| I
     end

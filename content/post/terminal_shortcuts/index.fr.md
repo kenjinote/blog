@@ -276,7 +276,7 @@ stateDiagram-v2
     Normal --> Prefix["Mode préfixe (Ctrl+B)"]
     Prefix --> Command["Invite de commande (:)"]
     Prefix --> SplitV["Diviser le panneau verticalement (%)"]
-    Prefix --> SplitH["Diviser le panneau horizontalement (\")"]
+    Prefix --> SplitH["Diviser le panneau horizontalement (\)"]
     Prefix --> Switch["Changer de fenêtre (n/p/0-9)"]
     Prefix --> Detach["Détacher la session (d)"]
     

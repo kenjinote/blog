@@ -68,7 +68,7 @@ Grafik berikut ini menunjukkan perbedaan tersebut secara visual.
 ```mermaid
 xychart-beta
     title Divergensi Produktivitas Seiring Waktu (Efek Matthew)
-    x-axis ["Tahun 1", "Tahun 2", "Tahun 3", "Tahun 4", "Tahun 5", "Tahun 6"]
+    x-axis ["Tahun 1, Tahun 2, Tahun 3, Tahun 4, Tahun 5, Tahun 6"]
     y-axis "Volume Output" 0 --> 200
     line [10, 15, 30, 60, 110, 180]
     line [10, 12, 14, 16, 18, 20]

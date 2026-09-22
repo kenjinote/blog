@@ -174,9 +174,9 @@ WordPress에서 Hugo로의 마이그레이션은 데이터베이스 내의 동�
 flowchart LR
   WPDB["WP 데이터베이스"] -->|"플러그인"| Exporter["내보내기 도구"]
   Exporter -->|"텍스트, \n메타, 이미지 추출"| ZipFile["Zip / 폴더"]
-  ZipFile -->|"압축 해제"| MarkdownFiles["Markdown 파일들 \n("content/")"]
-  ZipFile -->|"압축 해제"| ImageFiles["이미지들 \n("static/wp-content/")"]
-  MarkdownFiles --> Formatting["검토 및 포맷팅 \n("숏코드 수정")"]
+  ZipFile -->|"압축 해제"| MarkdownFiles["Markdown 파일들 \n(content/)"]
+  ZipFile -->|"압축 해제"| ImageFiles["이미지들 \n(static/wp-content/)"]
+  MarkdownFiles --> Formatting["검토 및 포맷팅 \n(숏코드 수정)"]
   Formatting --> Git["Git에 커밋"]
 ```
 

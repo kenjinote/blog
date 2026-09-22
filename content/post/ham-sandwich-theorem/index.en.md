@@ -112,10 +112,10 @@ For a function $f(x) = \left( \text{Temperature}, \text{Pressure} \right)$ that 
 
 ```mermaid
 flowchart LR
-    P["Normal vector p"] -->|"Determines plane bisecting top bread"| HP["Plane H("p")"]
+    P["Normal vector p"] -->|"Determines plane bisecting top bread"| HP["Plane H(p)"]
     HP -->|"Calculates volume of ham on positive side"| V1["Volume V1"]
     HP -->|"Calculates volume of bottom bread on positive side"| V2["Volume V2"]
-    V1 -->|"Applies Borsuk-Ulam theorem"| Eq["f("p") = f("-p")"]
+    V1 -->|"Applies Borsuk-Ulam theorem"| Eq["f(p) = f(-p)"]
     V2 -->|"Applies Borsuk-Ulam theorem"| Eq
     Eq -->|"All ingredients are bisected!"| Success["Proof complete"]
 ```

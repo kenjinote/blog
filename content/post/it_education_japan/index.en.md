@@ -37,7 +37,7 @@ flowchart TD
     B -->|"Lack of conceptual understanding of variables and static typing"| D["Dropout (The Wall of Types)"]
     B -->|"Successful Transition"| E["High School: Information I (Basics of Python/JavaScript, etc.)"]
     E --> F{"The Wall of Algorithm Design and Data Structures"}
-    F -->|"Lack of understanding of time and space complexity"| G["Inefficient Code (Performance degradation from mass-producing O("N^2"))"]
+    F -->|"Lack of understanding of time and space complexity"| G["Inefficient Code (Performance degradation from mass-producing O(N^2))"]
     F -->|"Black-boxing of memory management and references"| H["Becoming a coder who only does superficial API calls"]
     F -->|"Conceptual Breakthrough"| I["Full-scale CS Learning (C/C++, Java, Low-level Architecture)"]
     I --> J["Highly skilled IT professionals coveted by the industry"]
@@ -211,7 +211,7 @@ The graph below conceptually illustrates the despairing gap between the skill at
 ```mermaid
 xychart-beta
     title Skills Provided by Japanese School Education vs. Skill Levels Demanded by Industry
-    x-axis ["Visual Languages", "Basic Syntax/Variables", "Algorithms/Complexity", "OS/Networks", "DB/System Design", "Cloud/Distributed Arch"]
+    x-axis ["Visual Languages, Basic Syntax/Variables, Algorithms/Complexity, OS/Networks, DB/System Design, Cloud/Distributed Arch"]
     y-axis "Attainment / Demand (%)" 0 --> 100
     line "Current Attainment Level in School Education" [95, 60, 15, 5, 2, 0]
     line "Level Demanded by Industry / Tech Companies" [0, 20, 85, 90, 95, 100]

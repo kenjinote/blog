@@ -136,7 +136,7 @@ Intuitivamente, é o processo de "'descriptografar' o texto cifrado dentro do se
 ```mermaid
 graph LR
     A["Texto cifrado com alto ruído C_noisy"] --> B["Circuito de descriptografia homomórfica (Eval_Dec)"]
-    C["Chave secreta criptografada E("sk")"] --> B
+    C["Chave secreta criptografada E(sk)"] --> B
     B --> D["Texto cifrado com baixo ruído C_fresh"]
     
     style B fill:#ffeeba,stroke:#ffc107

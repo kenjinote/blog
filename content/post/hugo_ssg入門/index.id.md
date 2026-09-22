@@ -174,9 +174,9 @@ Berikut adalah alur pipeline migrasi secara umum.
 flowchart LR
   WPDB["Database WP"] -->|"Plugin"| Exporter["Alat Ekspor"]
   Exporter -->|"Mengekstrak Teks, \nMeta, Gambar"| ZipFile["File Zip / Folder"]
-  ZipFile -->|"Unpack"| MarkdownFiles["File Markdown \n("content/")"]
-  ZipFile -->|"Unpack"| ImageFiles["Gambar \n("static/wp-content/")"]
-  MarkdownFiles --> Formatting["Tinjau & Format \n("Perbaiki Shortcode")"]
+  ZipFile -->|"Unpack"| MarkdownFiles["File Markdown \n(content/)"]
+  ZipFile -->|"Unpack"| ImageFiles["Gambar \n(static/wp-content/)"]
+  MarkdownFiles --> Formatting["Tinjau & Format \n(Perbaiki Shortcode)"]
   Formatting --> Git["Commit ke Git"]
 ```
 

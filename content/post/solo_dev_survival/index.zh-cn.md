@@ -38,7 +38,7 @@ $$ P(k) \propto \frac{1}{k^\alpha} $$
 ```mermaid
 xychart-beta
     title 市场规模分布与个人开发者目标
-  x-axis ["大众 A", "大众 B", "利基 C", "利基 D", "利基 E", "利基 F", "利基 G"]
+  x-axis ["大众 A, 大众 B, 利基 C, 利基 D, 利基 E, 利基 F, 利基 G"]
   y-axis "市场价值" 0 --> 100
   bar [95, 60, 20, 10, 5, 3, 2]
   line [95, 60, 20, 10, 5, 3, 2]

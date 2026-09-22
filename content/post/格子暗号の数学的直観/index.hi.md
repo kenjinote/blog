@@ -177,7 +177,7 @@ flowchart LR
     subgraph Enc ["एन्क्रिप्शन प्रक्रिया"]
         direction TB
         u_calc["u = A^T * r mod q"]
-        v_calc["v = b^T * r + M * floor("q/2") mod q"]
+        v_calc["v = b^T * r + M * floor(q/2) mod q"]
     end
     
     Enc --> CT["सिफरटेक्स्ट (u, v)"]

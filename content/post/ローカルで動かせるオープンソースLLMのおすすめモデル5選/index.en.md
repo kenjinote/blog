@@ -221,7 +221,7 @@ The graph below shows a guideline for the VRAM required during inference (includ
 ```mermaid
 xychart-beta
     title Parameter Count vs Required VRAM (Assuming 4-bit Quantization)
-    x-axis "Model Name" ["Phi-3 Mini (3.8B)", "Llama 3 (8B)", "Gemma 2 (9B)", "Mixtral (8x7B)", "Qwen 2.5 (32B)", "Llama 3 (70B)"]
+    x-axis "Model Name" ["Phi-3 Mini (3.8B), Llama 3 (8B), Gemma 2 (9B), Mixtral (8x7B), Qwen 2.5 (32B), Llama 3 (70B)"]
     y-axis "Required VRAM (GB)" 0 --> 45
     bar [3.5, 6.0, 6.5, 26.0, 22.0, 40.0]
 ```

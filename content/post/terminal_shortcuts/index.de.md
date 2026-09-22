@@ -276,7 +276,7 @@ stateDiagram-v2
     Normal --> Prefix["Präfix-Modus (Ctrl+B)"]
     Prefix --> Command["Kommandozeile (:)"]
     Prefix --> SplitV["Fenster vertikal teilen (%)"]
-    Prefix --> SplitH["Fenster horizontal teilen (\")"]
+    Prefix --> SplitH["Fenster horizontal teilen (\)"]
     Prefix --> Switch["Fenster wechseln (n/p/0-9)"]
     Prefix --> Detach["Sitzung trennen (d)"]
     

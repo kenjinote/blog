@@ -150,7 +150,7 @@ graph TD
   Extract --> W1["Palavra: 'Grátis'"]
   Extract --> W2["Palavra: 'Dinheiro'"]
   Extract --> Wn["Palavra: 'Reunião'"]
-  W1 --> Prob["Calcular P("Spam | Palavras")"]
+  W1 --> Prob["Calcular P(Spam | Palavras)"]
   W2 --> Prob
   Wn --> Prob
   Prob --> Bayes["Aplicar Teorema de Bayes"]
@@ -394,10 +394,10 @@ Utilizando o valor da função na posição atual $f(x_n)$ e a sua inclinação 
 
 ```mermaid
 flowchart LR
-  Start["Início: Estimar x0 inicial"] --> Eval["Avaliar f("xn") e f'(xn)"]
+  Start["Início: Estimar x0 inicial"] --> Eval["Avaliar f(xn) e f'(xn)"]
   Eval --> Check{"f("xn") ≈ 0?"}
   Check -- Sim --> Done["Retornar xn como Raiz"]
-  Check -- Não --> Update["xn+1 = xn - f("xn") / f'(xn)"]
+  Check -- Não --> Update["xn+1 = xn - f(xn) / f'(xn)"]
   Update --> Eval
 ```
 

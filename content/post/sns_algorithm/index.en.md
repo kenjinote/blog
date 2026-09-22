@@ -122,7 +122,7 @@ The chart below illustrates the difference in lifecycle between technologies ove
 ```mermaid
 xychart-beta
     title Technology Lifecycle and Evaluation Trends
-    x-axis ["Month 0", "Month 6", "Month 12", "Month 18", "Month 24", "Month 30", "Month 36"]
+    x-axis ["Month 0, Month 6, Month 12, Month 18, Month 24, Month 30, Month 36"]
     y-axis "Number of Mentions / Hype Level on SNS" 0 --> 100
     line [10, 85, 95, 45, 20, 10, 5]
     line [15, 20, 25, 35, 50, 65, 80]

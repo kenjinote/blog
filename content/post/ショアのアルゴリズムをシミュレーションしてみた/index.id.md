@@ -39,8 +39,8 @@ Ini berarti bahwa jika jumlah bit digandakan, waktu komputasi pada komputer klas
 ```mermaid
 graph TD
     A["Peningkatan ukuran input (jumlah bit) N"] --> B{"Pemilihan Algoritma"}
-    B -->|"Klasik: General Number Field Sieve"| C["Peningkatan sub-eksponensial O("exp(..."))"]
-    B -->|"Kuantum: Algoritma Shor"| D["Waktu polinomial O("(log N")^3)"]
+    B -->|"Klasik: General Number Field Sieve"| C["Peningkatan sub-eksponensial O(exp(...))"]
+    B -->|"Kuantum: Algoritma Shor"| D["Waktu polinomial O((log N)^3)"]
     C --> E["Ribuan hingga miliaran tahun (Tidak dapat didekripsi)"]
     D --> F["Beberapa menit hingga jam (Didekripsi dalam waktu realistis)"]
 ```
@@ -57,11 +57,11 @@ Alur keseluruhan algoritma adalah sebagai berikut:
 graph TD
     A["Input: Bilangan komposit N yang ingin difaktorkan"] --> B["Pilih bilangan acak a sehingga a < N"]
     B --> C{"gcd("a, N") > 1 ?"}
-    C -- Yes --> D["Outputkan faktor trivial gcd("a, N") dan selesai"]
-    C -- No --> E["Temukan periode r dari f("x") = a^x mod N dengan algoritma kuantum"]
+    C -- Yes --> D["Outputkan faktor trivial gcd(a, N) dan selesai"]
+    C -- No --> E["Temukan periode r dari f(x) = a^x mod N dengan algoritma kuantum"]
     E --> F{"r genap DAN a^(r/2) ≢ -1 mod N ?"}
     F -- No --> B
-    F -- Yes --> G["Hitung faktor p = gcd("a^(r/2") - 1, N), q = gcd("a^(r/2") + 1, N)"]
+    F -- Yes --> G["Hitung faktor p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N)"]
     G --> H["Output: p, q"]
 ```
 

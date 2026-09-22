@@ -115,11 +115,11 @@ En utilisant une file de priorité (`std::priority_queue`), le sommet non visit�
 
 ```mermaid
 graph TD
-    S["Source S("0")"] -- 2 --> A["Sommet A("2")"]
-    S["Source S("0")"] -- 5 --> B["Sommet B("5")"]
-    A["Sommet A("2")"] -- 1 --> B["Sommet B("3")"]
-    A["Sommet A("2")"] -- 4 --> C["Sommet C("6")"]
-    B["Sommet B("3")"] -- 1 --> C["Sommet C("4")"]
+    S["Source S(0)"] -- 2 --> A["Sommet A(2)"]
+    S["Source S(0)"] -- 5 --> B["Sommet B(5)"]
+    A["Sommet A(2)"] -- 1 --> B["Sommet B(3)"]
+    A["Sommet A(2)"] -- 4 --> C["Sommet C(6)"]
+    B["Sommet B(3)"] -- 1 --> C["Sommet C(4)"]
 ```
 Comme illustré ci-dessus, le coût pour aller directement de S à B est de 5, mais en passant par A, on peut l'atteindre avec un coût de 3. L'algorithme de [Dijkstra](https://kenji.blog/fr/p/graph-theory-dijkstra-a-star/) effectue cette optimisation.
 

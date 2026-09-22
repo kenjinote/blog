@@ -87,8 +87,8 @@ Das Verfahren zur Lösung von Differentialgleichungen mit der [Laplace-Transform
 ```mermaid
 flowchart TD
   A["Differentialgleichung im Zeitbereich"] -->|"Laplace-Transformation ausführen"| B["Algebraische Gleichung im s-Bereich"]
-  B -->|"Algebraische Berechnung (Vereinfachung)"| C["Lösung F("s") im s-Bereich"]
-  C -->|"Inverse Laplace-Transformation ausführen"| D["Lösung f("t") im Zeitbereich"]
+  B -->|"Algebraische Berechnung (Vereinfachung)"| C["Lösung F(s) im s-Bereich"]
+  C -->|"Inverse Laplace-Transformation ausführen"| D["Lösung f(t) im Zeitbereich"]
 ```
 
 1. **[Laplace-Transformation](https://kenji.blog/de/p/laplace-transform/) ausführen**: Wenden Sie die [Laplace-Transformation](https://kenji.blog/de/p/laplace-transform/) auf beide Seiten der gegebenen Differentialgleichung an. Setzen Sie hier die Anfangsbedingungen ein.

@@ -68,9 +68,9 @@ graph TD
     classDef subexp fill:#ffd3b6,stroke:#333,stroke-width:2px;
     classDef exp fill:#ffaaa5,stroke:#333,stroke-width:2px;
 
-    Poly["وقت متعدد الحدود O("n^k")"]:::poly
+    Poly["وقت متعدد الحدود O(n^k)"]:::poly
     SubExp["وقت شبه أسي L_n"]:::subexp
-    Exp["وقت أسي O("2^n")"]:::exp
+    Exp["وقت أسي O(2^n)"]:::exp
 
     GNFS["GNFS (منخل حقل الأعداد العام)"]:::subexp
     Pollard["خوارزمية رو لبولارد"]:::exp
@@ -256,12 +256,12 @@ graph LR
     classDef quantum fill:#00c9a7,stroke:#333,stroke-width:2px;
 
     subgraph "أجهزة الكمبيوتر الكلاسيكية"
-        C1["القسمة التجريبية: O("2^(n/2"))"]:::classical
-        C2["GNFS: شبه أسي L_n("1/3")"]:::classical
+        C1["القسمة التجريبية: O(2^(n/2))"]:::classical
+        C2["GNFS: شبه أسي L_n(1/3)"]:::classical
     end
 
     subgraph "أجهزة الكمبيوتر الكمومية"
-        Q1["خوارزمية شور: متعدد الحدود O("n^3")"]:::quantum
+        Q1["خوارزمية شور: متعدد الحدود O(n^3)"]:::quantum
     end
 
     C1 --> C2

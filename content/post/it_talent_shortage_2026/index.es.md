@@ -117,7 +117,7 @@ Como resultado de esto, las empresas se han dado cuenta de que es abrumadorament
 ```mermaid
 xychart-beta
     title Polarización de la demanda laboral entre las capas junior y senior (2021-2026)
-    x-axis ["2021", "2022", "2023", "2024", "2025", "2026"]
+    x-axis ["2021, 2022, 2023, 2024, 2025, 2026"]
     y-axis "Tasa de empleo" 0.0 --> 10.0
     line ["Senior (Arquitecto/MLOps, etc.)"] [3.0, 3.5, 4.2, 5.8, 7.5, 9.2]
     line ["Junior (Sin experiencia/1-2 años)"] [2.5, 2.2, 1.8, 1.2, 0.8, 0.3]

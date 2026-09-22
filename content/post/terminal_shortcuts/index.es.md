@@ -276,7 +276,7 @@ stateDiagram-v2
     Normal --> Prefix["Modo de prefijo (Ctrl+B)"]
     Prefix --> Command["Símbolo del sistema (:)"]
     Prefix --> SplitV["Dividir panel verticalmente (%)"]
-    Prefix --> SplitH["Dividir panel horizontalmente (\")"]
+    Prefix --> SplitH["Dividir panel horizontalmente (\)"]
     Prefix --> Switch["Cambiar de ventana (n/p/0-9)"]
     Prefix --> Detach["Desconectar sesión (d)"]
     

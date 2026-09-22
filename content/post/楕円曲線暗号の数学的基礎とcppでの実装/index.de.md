@@ -111,8 +111,8 @@ Das Verfahren, um zwei verschiedene Punkte $P$ und $Q$ auf der Kurve zu addieren
 
 ```mermaid
 graph TD
-    Step1["Ziehe eine Gerade durch P("x1, y1") und Q("x2, y2")"] --> Step2["Finde den dritten Schnittpunkt -R mit der Kurve"]
-    Step2 --> Step3["Spiegele -R an der x-Achse, um R("x3, y3") zu erhalten"]
+    Step1["Ziehe eine Gerade durch P(x1, y1) und Q(x2, y2)"] --> Step2["Finde den dritten Schnittpunkt -R mit der Kurve"]
+    Step2 --> Step3["Spiegele -R an der x-Achse, um R(x3, y3) zu erhalten"]
     Step3 -.-> Result["Dies ist R = P + Q"]
 ```
 

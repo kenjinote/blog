@@ -40,7 +40,7 @@ Lorsque la matrice $A$ est appliquée, les vecteurs de base standard sont transf
 
 ```mermaid
 flowchart LR
-    A["Carré unitaire (Surface 1)"] -->|"Transformation linéaire par la matrice A"| B["Parallélogramme (Surface |det("A")|)"]
+    A["Carré unitaire (Surface 1)"] -->|"Transformation linéaire par la matrice A"| B["Parallélogramme (Surface |det(A)|)"]
 ```
 
 En d'autres termes, la valeur absolue du déterminant signifie le "facteur d'échelle de surface" qui indique **combien de fois** chaque figure dans l'espace a été étirée (ou rétrécie) par cette transformation linéaire. Par exemple, si le déterminant d'une matrice est de $3$, la surface de chaque figure dessinée sur le plan d'origine deviendra exactement trois fois plus grande après la transformation.

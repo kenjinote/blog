@@ -63,8 +63,8 @@ Dengan mengulangi operasi ini, fungsi Gamma menjadi fungsi meromorfik yang didef
 
 ```mermaid
 graph LR
-    P1["Re("z") > 0"] -->|"Didefinisikan dengan integral"| P2["Γ(z) konvergen"]
-    P2 -->|"Menggunakan relasi perulangan"| P3["Diperluas ke Re("z") ≤ 0"]
+    P1["Re(z) > 0"] -->|"Didefinisikan dengan integral"| P2["Γ(z) konvergen"]
+    P2 -->|"Menggunakan relasi perulangan"| P3["Diperluas ke Re(z) ≤ 0"]
     P3 -->|"z = 0, -1, -2, ..."| P4["Singularitas (Kutub)"]
 ```
 

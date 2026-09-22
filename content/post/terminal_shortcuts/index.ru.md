@@ -276,7 +276,7 @@ stateDiagram-v2
     Normal --> Prefix["Режим префикса (Ctrl+B)"]
     Prefix --> Command["Командная строка (:)"]
     Prefix --> SplitV["Вертикальное разделение панели (%)"]
-    Prefix --> SplitH["Горизонтальное разделение панели (\")"]
+    Prefix --> SplitH["Горизонтальное разделение панели (\)"]
     Prefix --> Switch["Переключение окон (n/p/0-9)"]
     Prefix --> Detach["Отсоединение сессии (d)"]
     

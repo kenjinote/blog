@@ -306,7 +306,7 @@ graph TD
     Center --- X_neg["|-⟩ = (|0⟩-|1⟩)/√2 (X軸負: θ=π/2, φ=π)"]
     Center --- Y_pos["|i⟩ = (|0⟩+i|1⟩)/√2 (Y軸正: θ=π/2, φ=π/2)"]
     Center --- Y_neg["|-i⟩ = (|0⟩-i|1⟩)/√2 (Y軸負: θ=π/2, φ=3π/2)"]
-    State["|ψ⟩ = cos("θ/2")|0⟩ + e^(iφ)sin("θ/2")|1⟩"] -.->|"布洛赫向量 r = (sinθcosφ, sinθsinφ, cosθ)"| Center
+    State["|ψ⟩ = cos(θ/2)|0⟩ + e^(iφ)sin(θ/2)|1⟩"] -.->|"布洛赫向量 r = (sinθcosφ, sinθsinφ, cosθ)"| Center
     end
     style Z_pos fill:#f9f,stroke:#333,stroke-width:2px
     style Z_neg fill:#f9f,stroke:#333,stroke-width:2px
@@ -582,8 +582,8 @@ graph TD
     classDef operation fill:#e1f5fe,stroke:#0288d1,stroke-width:2px;
     classDef measure fill:#fce4ec,stroke:#c2185b,stroke-width:2px;
     
-    Init["初始狀態 $| \psi("t_0") \rangle$"]:::state --> Evo["么正時間演化 $U("t, t_0") = \exp("-i H t / \hbar")$"]:::operation
-    Evo --> Evolved["演化後的狀態 $| \psi("t") \rangle = U | \psi("t_0") \rangle$"]:::state
+    Init["初始狀態 $| \psi(t_0) \rangle$"]:::state --> Evo["么正時間演化 $U(t, t_0) = \exp(-i H t / \hbar)$"]:::operation
+    Evo --> Evolved["演化後的狀態 $| \psi(t) \rangle = U | \psi(t_0) \rangle$"]:::state
     
     Evolved --> Obs["物理量 $A$ 的觀測 (投影算符 $P_k$)"]:::measure
     
@@ -844,7 +844,7 @@ graph LR
     direction LR
     Q0["|0⟩"] --> G1["H 閘"]
     G1 --> G2["S 閘"]
-    G2 --> G3["Rx("π/2")"]
+    G2 --> G3["Rx(π/2)"]
     G3 --> M1["測量"]
     end
     

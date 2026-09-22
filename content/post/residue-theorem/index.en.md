@@ -32,7 +32,7 @@ But what happens if the region inside the contour includes points where $f(z)$ i
 
 ```mermaid
 flowchart TD
-    A["Complex integral on the real line"] -->|"Extension to the complex plane"| B["Define the complex function f("z")"]
+    A["Complex integral on the real line"] -->|"Extension to the complex plane"| B["Define the complex function f(z)"]
     B --> C["Set an appropriate contour C"]
     C --> D["Identify singularities (poles) inside the contour"]
     D --> E["Calculate the residue at each singularity"]

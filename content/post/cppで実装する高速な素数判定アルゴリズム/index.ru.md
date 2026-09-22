@@ -313,8 +313,8 @@ int main() {
 
 ```mermaid
 graph LR
-    TrialDivision["Метод пробных делений (O("√N"))"] --> Fermat["Тест Ферма (O("log N"), есть слабые места)"]
-    Fermat --> MillerRabin["Метод Миллера-Рабина (O("log N"), можно сделать детерминированным)"]
+    TrialDivision["Метод пробных делений (O(√N))"] --> Fermat["Тест Ферма (O(log N), есть слабые места)"]
+    Fermat --> MillerRabin["Метод Миллера-Рабина (O(log N), можно сделать детерминированным)"]
     MillerRabin --> Montgomery["+ Умножение Монтгомери (ускорение в несколько раз)"]
     
     style MillerRabin fill:#f9f,stroke:#333,stroke-width:2px

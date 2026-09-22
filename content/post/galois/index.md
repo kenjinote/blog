@@ -85,7 +85,7 @@ flowchart TD
     subgraph "ガロア群（Groups）"
         I["単位群 {e}"]
         H["部分群 H"]
-        G["ガロア群 G=Gal("L/K")"]
+        G["ガロア群 G=Gal(L/K)"]
         G -->|"含む"| H
         H -->|"含む"| I
     end

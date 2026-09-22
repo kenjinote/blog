@@ -150,7 +150,7 @@ graph TD
   Extract --> W1["단어: '무료'"]
   Extract --> W2["단어: '돈'"]
   Extract --> Wn["단어: '회의'"]
-  W1 --> Prob["P("스팸 | 단어들") 계산"]
+  W1 --> Prob["P(스팸 | 단어들) 계산"]
   W2 --> Prob
   Wn --> Prob
   Prob --> Bayes["베이즈 정리 적용"]
@@ -394,10 +394,10 @@ $$ x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} $$
 
 ```mermaid
 flowchart LR
-  Start["시작: 초기값 x0 추정"] --> Eval["f("xn") 및 f'(xn) 평가"]
+  Start["시작: 초기값 x0 추정"] --> Eval["f(xn) 및 f'(xn) 평가"]
   Eval --> Check{"f("xn") ≈ 0 입니까?"}
   Check -- 예 --> Done["xn을 근으로 반환"]
-  Check -- 아니오 --> Update["xn+1 = xn - f("xn") / f'(xn)"]
+  Check -- 아니오 --> Update["xn+1 = xn - f(xn) / f'(xn)"]
   Update --> Eval
 ```
 

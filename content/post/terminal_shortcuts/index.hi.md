@@ -276,7 +276,7 @@ stateDiagram-v2
     Normal --> Prefix["प्रिफिक्स मोड (Ctrl+B)"]
     Prefix --> Command["कमांड प्रॉम्प्ट (:)"]
     Prefix --> SplitV["पेन को लंबवत विभाजित करें (%)"]
-    Prefix --> SplitH["पेन को क्षैतिज रूप से विभाजित करें (\")"]
+    Prefix --> SplitH["पेन को क्षैतिज रूप से विभाजित करें (\)"]
     Prefix --> Switch["विंडो स्विच करें (n/p/0-9)"]
     Prefix --> Detach["सत्र को डिटैच करें (d)"]
     

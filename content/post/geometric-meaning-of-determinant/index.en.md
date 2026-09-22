@@ -40,7 +40,7 @@ When matrix $A$ is applied, the standard basis vectors are transformed into $\ma
 
 ```mermaid
 flowchart LR
-    A["Unit square (Area 1)"] -->|"Linear transformation by matrix A"| B["Parallelogram (Area |det("A")|)"]
+    A["Unit square (Area 1)"] -->|"Linear transformation by matrix A"| B["Parallelogram (Area |det(A)|)"]
 ```
 
 In other words, the absolute value of the determinant means the "area scale factor" that indicates **how many times** every figure in space has been stretched (or shrunk) by that linear transformation. For example, if the determinant of a matrix is $3$, the area of every figure drawn on the original plane will become exactly three times larger after the transformation.

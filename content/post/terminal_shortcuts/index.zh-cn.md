@@ -276,7 +276,7 @@ stateDiagram-v2
     Normal --> Prefix["前缀模式 (Ctrl+B)"]
     Prefix --> Command["命令提示符 (:)"]
     Prefix --> SplitV["垂直分割窗格 (%)"]
-    Prefix --> SplitH["水平分割窗格 (\")"]
+    Prefix --> SplitH["水平分割窗格 (\)"]
     Prefix --> Switch["切换窗口 (n/p/0-9)"]
     Prefix --> Detach["分离会话 (d)"]
     

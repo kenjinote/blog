@@ -122,7 +122,7 @@ Bagan di bawah ini menggambarkan perbedaan siklus hidup antara teknologi yang te
 ```mermaid
 xychart-beta
     title Siklus Hidup Teknologi dan Transisi Evaluasinya
-    x-axis ["0 bulan", "6 bulan", "12 bulan", "18 bulan", "24 bulan", "30 bulan", "36 bulan"]
+    x-axis ["0 bulan, 6 bulan, 12 bulan, 18 bulan, 24 bulan, 30 bulan, 36 bulan"]
     y-axis "Jumlah Penyebutan/Tingkat Antusiasme di SNS" 0 --> 100
     line [10, 85, 95, 45, 20, 10, 5]
     line [15, 20, 25, 35, 50, 65, 80]

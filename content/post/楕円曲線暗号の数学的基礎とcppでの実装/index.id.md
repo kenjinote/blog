@@ -112,8 +112,8 @@ Prosedur untuk menambahkan dua titik berbeda $P$ dan $Q$ pada kurva untuk mendap
 
 ```mermaid
 graph TD
-    Step1["Tarik garis lurus yang menghubungkan P("x1, y1") dan Q("x2, y2")"] --> Step2["Temukan persimpangan ketiga -R dengan kurva"]
-    Step2 --> Step3["Cerminkan -R pada sumbu x, untuk mendapatkan R("x3, y3")"]
+    Step1["Tarik garis lurus yang menghubungkan P(x1, y1) dan Q(x2, y2)"] --> Step2["Temukan persimpangan ketiga -R dengan kurva"]
+    Step2 --> Step3["Cerminkan -R pada sumbu x, untuk mendapatkan R(x3, y3)"]
     Step3 -.-> Result["Ini adalah R = P + Q"]
 ```
 

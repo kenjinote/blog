@@ -136,7 +136,7 @@ Craig Gentry의 천재적인 공헌은 **'부트스트래핑'** 이라 불리는
 ```mermaid
 graph LR
     A["높은 노이즈 암호문 C_noisy"] --> B["동형 복호화 회로 (Eval_Dec)"]
-    C["암호화된 비밀키 E("sk")"] --> B
+    C["암호화된 비밀키 E(sk)"] --> B
     B --> D["낮은 노이즈 암호문 C_fresh"]
     
     style B fill:#ffeeba,stroke:#ffc107

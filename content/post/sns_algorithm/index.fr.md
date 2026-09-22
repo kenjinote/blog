@@ -122,7 +122,7 @@ Le graphique suivant illustre la différence de cycle de vie entre une technolog
 ```mermaid
 xychart-beta
     title Cycle de vie des technologies et évolution des évaluations
-    x-axis ["0 mois", "6 mois", "12 mois", "18 mois", "24 mois", "30 mois", "36 mois"]
+    x-axis ["0 mois, 6 mois, 12 mois, 18 mois, 24 mois, 30 mois, 36 mois"]
     y-axis "Nombre de mentions et niveau d'enthousiasme sur les réseaux sociaux" 0 --> 100
     line [10, 85, 95, 45, 20, 10, 5]
     line [15, 20, 25, 35, 50, 65, 80]

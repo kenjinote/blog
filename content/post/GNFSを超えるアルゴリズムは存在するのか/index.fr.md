@@ -148,8 +148,8 @@ Compte tenu des implémentations de circuits optimisées récentes, on considèr
 
 ```mermaid
 graph LR
-  A["Algorithme classique (GNFS)"] -->|"Limite"| B["Temps sous-exponentiel L_n["1/3"]"]
-  C["Algorithme quantique (Shor)"] -->|"Percée"| D["Temps polynomial O("(log n")^3)"]
+  A["Algorithme classique (GNFS)"] -->|"Limite"| B["Temps sous-exponentiel L_n[1/3"]"]
+  C["Algorithme quantique (Shor)"] -->|"Percée"| D["Temps polynomial O((log n)^3)"]
   B --> E["Utilisation continue de RSA (augmentation de la longueur des clés)"]
   D --> F["Effondrement total de la cryptographie RSA"]
 ```

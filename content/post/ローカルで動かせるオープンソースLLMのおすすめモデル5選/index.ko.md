@@ -218,7 +218,7 @@ graph TD
 ```mermaid
 xychart-beta
     title 파라미터 수와 필요 VRAM (4-bit 양자화 가정)
-    x-axis "모델명" ["Phi-3 Mini (3.8B)", "Llama 3 (8B)", "Gemma 2 (9B)", "Mixtral (8x7B)", "Qwen 2.5 (32B)", "Llama 3 (70B)"]
+    x-axis "모델명" ["Phi-3 Mini (3.8B), Llama 3 (8B), Gemma 2 (9B), Mixtral (8x7B), Qwen 2.5 (32B), Llama 3 (70B)"]
     y-axis "필요 VRAM (GB)" 0 --> 45
     bar [3.5, 6.0, 6.5, 26.0, 22.0, 40.0]
 ```

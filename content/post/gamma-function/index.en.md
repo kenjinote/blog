@@ -63,8 +63,8 @@ By repeating this operation, the Gamma function becomes a meromorphic function d
 
 ```mermaid
 graph LR
-    P1["Re("z") > 0"] -->|"Defined by integral"| P2["Γ(z) converges"]
-    P2 -->|"Using recurrence relation"| P3["Extended to Re("z") ≤ 0"]
+    P1["Re(z) > 0"] -->|"Defined by integral"| P2["Γ(z) converges"]
+    P2 -->|"Using recurrence relation"| P3["Extended to Re(z) ≤ 0"]
     P3 -->|"z = 0, -1, -2, ..."| P4["Singularities (Poles)"]
 ```
 

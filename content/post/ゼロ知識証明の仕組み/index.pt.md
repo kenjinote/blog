@@ -137,10 +137,10 @@ O protocolo FRI é uma tecnologia para verificar "se uma determinada função es
 graph TD
     Root["Merkle Root (Compromisso)"] --> Node0["Nó 0"]
     Root --> Node1["Nó 1"]
-    Node0 --> Leaf0["P("x_0")"]
-    Node0 --> Leaf1["P("x_1")"]
-    Node1 --> Leaf2["P("x_2")"]
-    Node1 --> Leaf3["P("x_3")"]
+    Node0 --> Leaf0["P(x_0)"]
+    Node0 --> Leaf1["P(x_1)"]
+    Node1 --> Leaf2["P(x_2)"]
+    Node1 --> Leaf3["P(x_3)"]
 ```
 
 O verificador exige a revelação de alguns pontos aleatórios e utiliza provas de Merkle (Merkle Proofs) para confirmar que estão incluídos no compromisso. Ao repetir isso recursivamente, garante-se com probabilidade esmagadora que o grau do polinômio original é realmente baixo.

@@ -136,7 +136,7 @@ Craig Gentry的天才贡献在于他发明了一种被称为 **“自举（Boots
 ```mermaid
 graph LR
     A["高噪声密文 C_noisy"] --> B["同态解密电路 (Eval_Dec)"]
-    C["加密后的私钥 E("sk")"] --> B
+    C["加密后的私钥 E(sk)"] --> B
     B --> D["低噪声密文 C_fresh"]
     
     style B fill:#ffeeba,stroke:#ffc107

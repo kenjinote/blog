@@ -150,7 +150,7 @@ graph TD
   Extract --> W1["Word: 'Free'"]
   Extract --> W2["Word: 'Money'"]
   Extract --> Wn["Word: 'Meeting'"]
-  W1 --> Prob["Calculate P("Spam | Words")"]
+  W1 --> Prob["Calculate P(Spam | Words)"]
   W2 --> Prob
   Wn --> Prob
   Prob --> Bayes["Apply Bayes Theorem"]
@@ -394,10 +394,10 @@ $$ x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} $$
 
 ```mermaid
 flowchart LR
-  Start["Start: Guess initial x0"] --> Eval["Evaluate f("xn") and f'(xn)"]
+  Start["Start: Guess initial x0"] --> Eval["Evaluate f(xn) and f'(xn)"]
   Eval --> Check{"Is f("xn") ≈ 0?"}
   Check -- Yes --> Done["Return xn as Root"]
-  Check -- No --> Update["xn+1 = xn - f("xn") / f'(xn)"]
+  Check -- No --> Update["xn+1 = xn - f(xn) / f'(xn)"]
   Update --> Eval
 ```
 

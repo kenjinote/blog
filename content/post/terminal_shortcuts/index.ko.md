@@ -276,7 +276,7 @@ stateDiagram-v2
     Normal --> Prefix["접두사 모드 (Ctrl+B)"]
     Prefix --> Command["명령 프롬프트 (:)"]
     Prefix --> SplitV["수직 분할 (%)"]
-    Prefix --> SplitH["수평 분할 (\")"]
+    Prefix --> SplitH["수평 분할 (\)"]
     Prefix --> Switch["창 전환 (n/p/0-9)"]
     Prefix --> Detach["세션 분리 (d)"]
     

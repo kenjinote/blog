@@ -136,7 +136,7 @@ $$ D(c) = (c \cdot s) \pmod q = m + \text{noise} $$
 ```mermaid
 graph LR
     A["نص مشفر عالي الضوضاء C_noisy"] --> B["دائرة فك تشفير متماثلة (Eval_Dec)"]
-    C["المفتاح الخاص المشفر E("sk")"] --> B
+    C["المفتاح الخاص المشفر E(sk)"] --> B
     B --> D["نص مشفر منخفض الضوضاء C_fresh"]
     
     style B fill:#ffeeba,stroke:#ffc107

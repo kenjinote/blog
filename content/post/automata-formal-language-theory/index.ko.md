@@ -58,10 +58,10 @@ $$
 
 ```mermaid
 flowchart TD
-    Type0["Type-0: 재귀적으로 열거 가능한 언어\n("Turing Machine")"]
-    Type1["Type-1: 문맥 의존 언어\n("Linear Bounded Automaton")"]
-    Type2["Type-2: 문맥 자유 언어\n("Pushdown Automaton")"]
-    Type3["Type-3: 정규 언어\n("Finite Automaton")"]
+    Type0["Type-0: 재귀적으로 열거 가능한 언어\n(Turing Machine)"]
+    Type1["Type-1: 문맥 의존 언어\n(Linear Bounded Automaton)"]
+    Type2["Type-2: 문맥 자유 언어\n(Pushdown Automaton)"]
+    Type3["Type-3: 정규 언어\n(Finite Automaton)"]
 
     Type0 -->|"선택 안됨"| Type1
     Type0 --- Type1
@@ -264,7 +264,7 @@ flowchart LR
         T1["..."] --- T2["0"] --- T3["1"] --- T4["1"] --- T5["0"] --- T6["..."]
     end
     Head(("Head")) --> T3
-    State["State: q_read\n("Finite Control")"] --- Head
+    State["State: q_read\n(Finite Control)"] --- Head
 ```
 
 ### 정지 문제([Halting Problem](https://kenji.blog/ko/p/turing-machine-computability/))

@@ -276,7 +276,7 @@ stateDiagram-v2
     Normal --> Prefix["Mode Awalan (Ctrl+B)"]
     Prefix --> Command["Prompt Perintah (:)"]
     Prefix --> SplitV["Pisahkan Panel Vertikal (%)"]
-    Prefix --> SplitH["Pisahkan Panel Horizontal (\")"]
+    Prefix --> SplitH["Pisahkan Panel Horizontal (\)"]
     Prefix --> Switch["Ganti Jendela (n/p/0-9)"]
     Prefix --> Detach["Lepaskan Sesi (d)"]
     

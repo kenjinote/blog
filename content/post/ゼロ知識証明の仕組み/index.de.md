@@ -137,10 +137,10 @@ Das FRI-Protokoll ist eine Technik zur Überprüfung, "ob eine bestimmte Funktio
 graph TD
     Root["Merkle Root (Commitment)"] --> Node0["Knoten 0"]
     Root --> Node1["Knoten 1"]
-    Node0 --> Leaf0["P("x_0")"]
-    Node0 --> Leaf1["P("x_1")"]
-    Node1 --> Leaf2["P("x_2")"]
-    Node1 --> Leaf3["P("x_3")"]
+    Node0 --> Leaf0["P(x_0)"]
+    Node0 --> Leaf1["P(x_1)"]
+    Node1 --> Leaf2["P(x_2)"]
+    Node1 --> Leaf3["P(x_3)"]
 ```
 
 Der Verifizierer verlangt die Offenlegung einiger zufälliger Punkte und verwendet Merkle-Beweise, um sicherzustellen, dass diese im Commitment enthalten sind. Indem dies rekursiv wiederholt wird, wird mit überwältigender Wahrscheinlichkeit garantiert, dass der Grad des ursprünglichen Polynoms tatsächlich niedrig ist.

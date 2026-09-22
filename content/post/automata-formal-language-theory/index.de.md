@@ -58,10 +58,10 @@ Die Hierarchie ist wie folgt klassifiziert (von Typ-0 bis Typ-3). Je höher die 
 
 ```mermaid
 flowchart TD
-    Type0["Typ-0: Rekursiv aufzählbare Sprachen\n("Turingmaschine")"]
-    Type1["Typ-1: Kontextsensitive Sprachen\n("Linear beschränkter Automat")"]
-    Type2["Typ-2: Kontextfreie Sprachen\n("Kellerautomat")"]
-    Type3["Typ-3: Reguläre Sprachen\n("Endlicher Automat")"]
+    Type0["Typ-0: Rekursiv aufzählbare Sprachen\n(Turingmaschine)"]
+    Type1["Typ-1: Kontextsensitive Sprachen\n(Linear beschränkter Automat)"]
+    Type2["Typ-2: Kontextfreie Sprachen\n(Kellerautomat)"]
+    Type3["Typ-3: Reguläre Sprachen\n(Endlicher Automat)"]
 
     Type0 --- Type1
     Type1 --- Type2
@@ -263,7 +263,7 @@ flowchart LR
         T1["..."] --- T2["0"] --- T3["1"] --- T4["1"] --- T5["0"] --- T6["..."]
     end
     Head(("Kopf")) --> T3
-    State["Zustand: q_read\n("Endliche Kontrolle")"] --- Head
+    State["Zustand: q_read\n(Endliche Kontrolle)"] --- Head
 ```
 
 ### [Halteproblem](https://kenji.blog/de/p/turing-machine-computability/) ([Halting Problem](https://kenji.blog/de/p/turing-machine-computability/))

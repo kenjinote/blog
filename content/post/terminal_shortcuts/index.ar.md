@@ -276,7 +276,7 @@ stateDiagram-v2
     Normal --> Prefix["وضع البادئة (Ctrl+B)"]
     Prefix --> Command["موجه الأوامر (:)"]
     Prefix --> SplitV["تقسيم الجزء عموديًا (%)"]
-    Prefix --> SplitH["تقسيم الجزء أفقيًا (\")"]
+    Prefix --> SplitH["تقسيم الجزء أفقيًا (\)"]
     Prefix --> Switch["تبديل النافذة (n/p/0-9)"]
     Prefix --> Detach["فصل الجلسة (d)"]
     

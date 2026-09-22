@@ -40,7 +40,7 @@ Cuando se aplica la matriz $A$, los vectores base estándar se transforman en $\
 
 ```mermaid
 flowchart LR
-    A["Cuadrado unitario (Área 1)"] -->|"Transformación lineal por la matriz A"| B["Paralelogramo (Área |det("A")|)"]
+    A["Cuadrado unitario (Área 1)"] -->|"Transformación lineal por la matriz A"| B["Paralelogramo (Área |det(A)|)"]
 ```
 
 En otras palabras, el valor absoluto del determinante significa el "factor de escala de área" que indica **cuántas veces** cada figura en el espacio ha sido estirada (o encogida) por esa transformación lineal. Por ejemplo, si el determinante de una matriz es $3$, el área de cada figura dibujada en el plano original será exactamente tres veces mayor después de la transformación.

@@ -122,7 +122,7 @@ Das folgende Diagramm zeigt den Unterschied im Lebenszyklus zwischen stark gehyp
 ```mermaid
 xychart-beta
     title Lebenszyklus von Technologien und Entwicklung der Bewertung
-    x-axis ["0 Monate", "6 Monate", "12 Monate", "18 Monate", "24 Monate", "30 Monate", "36 Monate"]
+    x-axis ["0 Monate, 6 Monate, 12 Monate, 18 Monate, 24 Monate, 30 Monate, 36 Monate"]
     y-axis "Erwähnungen & Hype in sozialen Medien" 0 --> 100
     line [10, 85, 95, 45, 20, 10, 5]
     line [15, 20, 25, 35, 50, 65, 80]

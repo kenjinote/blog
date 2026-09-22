@@ -117,7 +117,7 @@ Consequently, companies have realized that "hiring one senior (AI user) with a m
 ```mermaid
 xychart-beta
     title Polarization of Job Demand Between Junior and Senior Levels (2021-2026)
-    x-axis ["2021", "2022", "2023", "2024", "2025", "2026"]
+    x-axis ["2021, 2022, 2023, 2024, 2025, 2026"]
     y-axis "Jobs-to-Applicants Ratio" 0.0 --> 10.0
     line ["Senior (Architect/MLOps, etc.)"] [3.0, 3.5, 4.2, 5.8, 7.5, 9.2]
     line ["Junior (Inexperienced/1-2 Years Exp)"] [2.5, 2.2, 1.8, 1.2, 0.8, 0.3]

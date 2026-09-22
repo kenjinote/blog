@@ -220,8 +220,8 @@ Seperti ini, di [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)
 ```mermaid
 graph LR
     A["Variabel v (Pemilik)"] --> B["Array Heap [1, 2, 3]"]
-    C["Referensi 'first' (&v["0"])"] -.->|"Peminjaman Imutabel"| B
-    A -->|"X "Peminjaman Mutabel Ditolak!""| D["v.push("4")"]
+    C["Referensi 'first' (&v[0"])"] -.->|"Peminjaman Imutabel"| B
+    A -->|"X "Peminjaman Mutabel Ditolak!""| D["v.push(4)"]
     
     style C stroke:#00FF00,stroke-width:2px
     style D stroke:#FF0000,stroke-width:2px

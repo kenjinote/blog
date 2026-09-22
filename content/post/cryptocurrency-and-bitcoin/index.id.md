@@ -80,12 +80,12 @@ Di blockchain, **Pohon Merkle (Merkle [Tree](https://kenji.blog/id/p/tree-graph-
 
 ```mermaid
 flowchart TD
-    Root["Akar Merkle: Hash("H12 + H34")"] --> H12["Hash("H1 + H2")"]
-    Root --> H34["Hash("H3 + H4")"]
-    H12 --> H1["Hash("Tx1")"]
-    H12 --> H2["Hash("Tx2")"]
-    H34 --> H3["Hash("Tx3")"]
-    H34 --> H4["Hash("Tx4")"]
+    Root["Akar Merkle: Hash(H12 + H34)"] --> H12["Hash(H1 + H2)"]
+    Root --> H34["Hash(H3 + H4)"]
+    H12 --> H1["Hash(Tx1)"]
+    H12 --> H2["Hash(Tx2)"]
+    H34 --> H3["Hash(Tx3)"]
+    H34 --> H4["Hash(Tx4)"]
 ```
 
 Jika data transaksi diubah sedikit saja, hash simpul daunnya akan berubah, yang pada gilirannya akan mengubah nilai akar Merkle menjadi sesuatu yang sama sekali berbeda. Hal ini memungkinkan pendeteksian instan dari pemalsuan apa pun, sekecil apa pun, di antara data transaksi yang sangat besar.

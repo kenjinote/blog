@@ -63,8 +63,8 @@ En répétant cette opération, la fonction Gamma devient une fonction méromorp
 
 ```mermaid
 graph LR
-    P1["Re("z") > 0"] -->|"Défini par intégrale"| P2["Γ(z) converge"]
-    P2 -->|"Utilisation de la récurrence"| P3["Étendu à Re("z") ≤ 0"]
+    P1["Re(z) > 0"] -->|"Défini par intégrale"| P2["Γ(z) converge"]
+    P2 -->|"Utilisation de la récurrence"| P3["Étendu à Re(z) ≤ 0"]
     P3 -->|"z = 0, -1, -2, ..."| P4["Singularités (Pôles)"]
 ```
 

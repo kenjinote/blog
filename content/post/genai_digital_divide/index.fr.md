@@ -68,7 +68,7 @@ Le graphique suivant illustre visuellement cette divergence.
 ```mermaid
 xychart-beta
     title Divergence de productivité au fil du temps (L'effet Matthieu)
-    x-axis ["Année 1", "Année 2", "Année 3", "Année 4", "Année 5", "Année 6"]
+    x-axis ["Année 1, Année 2, Année 3, Année 4, Année 5, Année 6"]
     y-axis "Volume de production" 0 --> 200
     line [10, 15, 30, 60, 110, 180]
     line [10, 12, 14, 16, 18, 20]

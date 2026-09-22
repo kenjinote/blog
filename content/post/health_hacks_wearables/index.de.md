@@ -252,7 +252,7 @@ Basierend auf den vorverarbeiteten Daten werden wir die Beziehung zwischen Gesun
 ```mermaid
 xychart-beta
     title HRV vs Tägliche Programmierstunden (Normalisiert)
-    x-axis ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"]
+    x-axis ["Mo, Di, Mi, Do, Fr, Sa, So"]
     y-axis "HRV & Programmierleistung" 10 --> 100
     line [45, 52, 65, 75, 70, 58, 48]
     bar [35, 42, 58, 65, 60, 20, 15]

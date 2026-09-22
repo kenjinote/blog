@@ -117,7 +117,7 @@ En conséquence, les entreprises ont réalisé qu'il est infiniment moins risqu�
 ```mermaid
 xychart-beta
     title Polarisation de la demande de recrutement entre les juniors et les seniors (2021-2026)
-    x-axis ["2021", "2022", "2023", "2024", "2025", "2026"]
+    x-axis ["2021, 2022, 2023, 2024, 2025, 2026"]
     y-axis "Taux d'offres d'emploi" 0.0 --> 10.0
     line ["Senior (Architecte/MLOps, etc.)"] [3.0, 3.5, 4.2, 5.8, 7.5, 9.2]
     line ["Junior (Inexpérimenté/1 à 2 ans d'expérience)"] [2.5, 2.2, 1.8, 1.2, 0.8, 0.3]

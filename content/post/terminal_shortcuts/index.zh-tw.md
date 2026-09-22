@@ -276,7 +276,7 @@ stateDiagram-v2
     Normal --> Prefix["前綴模式 (Prefix Mode, Ctrl+B)"]
     Prefix --> Command["命令提示字元 (:)"]
     Prefix --> SplitV["垂直分割窗格 (%)"]
-    Prefix --> SplitH["水平分割窗格 (\")"]
+    Prefix --> SplitH["水平分割窗格 (\)"]
     Prefix --> Switch["切換視窗 (n/p/0-9)"]
     Prefix --> Detach["卸載工作階段 (d)"]
     

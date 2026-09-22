@@ -80,12 +80,12 @@ Dans la blockchain, une structure de données appelée **arbre de Merkle (Merkle
 
 ```mermaid
 flowchart TD
-    Root["Racine de Merkle : Hash("H12 + H34")"] --> H12["Hash("H1 + H2")"]
-    Root --> H34["Hash("H3 + H4")"]
-    H12 --> H1["Hash("Tx1")"]
-    H12 --> H2["Hash("Tx2")"]
-    H34 --> H3["Hash("Tx3")"]
-    H34 --> H4["Hash("Tx4")"]
+    Root["Racine de Merkle : Hash(H12 + H34)"] --> H12["Hash(H1 + H2)"]
+    Root --> H34["Hash(H3 + H4)"]
+    H12 --> H1["Hash(Tx1)"]
+    H12 --> H2["Hash(Tx2)"]
+    H34 --> H3["Hash(Tx3)"]
+    H34 --> H4["Hash(Tx4)"]
 ```
 
 Si les données de transaction sont modifiées même légèrement, le hachage du nœud feuille changera, et la valeur de la racine de Merkle changera complètement en réaction en chaîne. Cela permet de détecter immédiatement même une seule falsification parmi une énorme quantité de données de transaction.

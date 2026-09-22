@@ -68,9 +68,9 @@ graph TD
     classDef subexp fill:#ffd3b6,stroke:#333,stroke-width:2px;
     classDef exp fill:#ffaaa5,stroke:#333,stroke-width:2px;
 
-    Poly["Tempo Polinomial O("n^k")"]:::poly
+    Poly["Tempo Polinomial O(n^k)"]:::poly
     SubExp["Tempo Subexponencial L_n"]:::subexp
-    Exp["Tempo Exponencial O("2^n")"]:::exp
+    Exp["Tempo Exponencial O(2^n)"]:::exp
 
     GNFS["GNFS (Crivo do Corpo de Números Geral)"]:::subexp
     Pollard["Algoritmo rho de Pollard"]:::exp
@@ -255,12 +255,12 @@ graph LR
     classDef quantum fill:#00c9a7,stroke:#333,stroke-width:2px;
 
     subgraph "Computadores Clássicos"
-        C1["Divisão por Tentativa: O("2^(n/2"))"]:::classical
-        C2["GNFS: Subexponencial L_n("1/3")"]:::classical
+        C1["Divisão por Tentativa: O(2^(n/2))"]:::classical
+        C2["GNFS: Subexponencial L_n(1/3)"]:::classical
     end
 
     subgraph "Computadores Quânticos"
-        Q1["Algoritmo de Shor: O("n^3") Polinomial"]:::quantum
+        Q1["Algoritmo de Shor: O(n^3) Polinomial"]:::quantum
     end
 
     C1 --> C2

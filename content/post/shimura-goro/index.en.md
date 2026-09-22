@@ -67,11 +67,11 @@ flowchart LR
     A["Number Theory"] -->|"L-function equality"| B["Analysis"]
     subgraph SG1 ["Elliptic Curves over Rational Numbers"]
         N1["Equation E: y² = x³ + ax + b"]
-        N2["Hasse-Weil L-function L("s, E")"]
+        N2["Hasse-Weil L-function L(s, E)"]
     end
     subgraph SG2 ["Modular Forms"]
-        N3["Cusp form of weight 2 f("z")"]
-        N4["Dirichlet series L("s, f")"]
+        N3["Cusp form of weight 2 f(z)"]
+        N4["Dirichlet series L(s, f)"]
     end
     SG1 -->|"Taniyama-Shimura Conjecture"| SG2
     %% This diagram shows how completely different concepts are deeply connected

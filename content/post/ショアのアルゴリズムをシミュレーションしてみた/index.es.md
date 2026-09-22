@@ -39,8 +39,8 @@ Esto significa que si se duplica el número de bits, el tiempo de cálculo en un
 ```mermaid
 graph TD
     A["Aumento del tamaño de entrada (número de bits) N"] --> B{"Elección del algoritmo"}
-    B -->|"Clásico: Criba General del Campo de Números"| C["Aumento subexponencial O("exp(..."))"]
-    B -->|"Cuántico: Algoritmo de Shor"| D["Tiempo polinómico O("(log N")^3)"]
+    B -->|"Clásico: Criba General del Campo de Números"| C["Aumento subexponencial O(exp(...))"]
+    B -->|"Cuántico: Algoritmo de Shor"| D["Tiempo polinómico O((log N)^3)"]
     C --> E["Miles a miles de millones de años (Indescifrable)"]
     D --> F["Minutos a horas (Descifrable en tiempo realista)"]
 ```
@@ -57,11 +57,11 @@ El flujo general del algoritmo es el siguiente:
 graph TD
     A["Entrada: Número compuesto a factorizar N"] --> B["Elegir un número aleatorio a tal que a < N"]
     B --> C{"gcd("a, N") > 1 ?"}
-    C -- Sí --> D["Imprimir factor trivial gcd("a, N") y terminar"]
-    C -- No --> E["Encontrar el período r de f("x") = a^x mod N con algoritmo cuántico"]
+    C -- Sí --> D["Imprimir factor trivial gcd(a, N) y terminar"]
+    C -- No --> E["Encontrar el período r de f(x) = a^x mod N con algoritmo cuántico"]
     E --> F{"¿r es par y a^(r/2) ≢ -1 mod N ?"}
     F -- No --> B
-    F -- Sí --> G["Calcular factores p = gcd("a^(r/2") - 1, N), q = gcd("a^(r/2") + 1, N)"]
+    F -- Sí --> G["Calcular factores p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N)"]
     G --> H["Salida: p, q"]
 ```
 

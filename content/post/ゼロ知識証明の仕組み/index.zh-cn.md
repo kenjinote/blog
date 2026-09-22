@@ -137,10 +137,10 @@ FRI协议是一种验证“某函数是否足够接近特定次数的多项式�
 graph TD
     Root["Merkle Root (承诺)"] --> Node0["Node 0"]
     Root --> Node1["Node 1"]
-    Node0 --> Leaf0["P("x_0")"]
-    Node0 --> Leaf1["P("x_1")"]
-    Node1 --> Leaf2["P("x_2")"]
-    Node1 --> Leaf3["P("x_3")"]
+    Node0 --> Leaf0["P(x_0)"]
+    Node0 --> Leaf1["P(x_1)"]
+    Node1 --> Leaf2["P(x_2)"]
+    Node1 --> Leaf3["P(x_3)"]
 ```
 
 验证者要求公开随机的几个点，并利用默克尔证明确认它们包含在承诺中。通过递归地重复这一过程，可以以压倒性的概率保证原始多项式的次数实际上很低。

@@ -112,8 +112,8 @@ $$ P + (-P) = \mathcal{O} $$
 
 ```mermaid
 graph TD
-    Step1["P("x1, y1") 와 Q("x2, y2") 를 잇는 직선을 긋는다"] --> Step2["곡선과의 제3의 교점 -R 을 찾는다"]
-    Step2 --> Step3["-R 을 x축으로 뒤집어, R("x3, y3") 을 얻는다"]
+    Step1["P(x1, y1) 와 Q(x2, y2) 를 잇는 직선을 긋는다"] --> Step2["곡선과의 제3의 교점 -R 을 찾는다"]
+    Step2 --> Step3["-R 을 x축으로 뒤집어, R(x3, y3) 을 얻는다"]
     Step3 -.-> Result["이것이 R = P + Q"]
 ```
 

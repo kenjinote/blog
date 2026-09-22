@@ -48,8 +48,8 @@ graph TD
     
     You["Tu elección<br>(Hoy)"]
     
-    You -->|"Elección 1: Tomar ambas"| Result1["Caja A("100 mil") + Contenido de la Caja B"]
-    You -->|"Elección 2: Tomar solo la caja B"| Result2["Caja A("0") + Contenido de la Caja B"]
+    You -->|"Elección 1: Tomar ambas"| Result1["Caja A(100 mil) + Contenido de la Caja B"]
+    You -->|"Elección 2: Tomar solo la caja B"| Result2["Caja A(0) + Contenido de la Caja B"]
     
     BoxB_Empty -.-> Result1
     BoxB_100M -.-> Result2

@@ -37,7 +37,7 @@ flowchart TD
     B -->|"Falta de comprensión sobre variables y tipado estático"| D["Abandono (Muro de los tipos)"]
     B -->|"Transición exitosa"| E["Escuela secundaria superior: Información I (Fundamentos de Python/JavaScript, etc.)"]
     E --> F{"Muro de diseño de algoritmos y estructuras de datos"}
-    F -->|"Falta de comprensión de la complejidad temporal y espacial"| G["Código ineficiente (Degradación del rendimiento por O("N^2"))"]
+    F -->|"Falta de comprensión de la complejidad temporal y espacial"| G["Código ineficiente (Degradación del rendimiento por O(N^2))"]
     F -->|"Caja negra de gestión de memoria y referencias"| H["Codificador que termina en llamadas superficiales a API"]
     F -->|"Avance conceptual"| I["Aprendizaje avanzado de CS (C/C++, Java, arquitectura de bajo nivel)"]
     I --> J["Profesional avanzado de TI que la industria anhela"]
@@ -211,7 +211,7 @@ El siguiente gráfico muestra conceptualmente la desconexión desesperada entre 
 ```mermaid
 xychart-beta
     title Habilidades provistas en escuelas japonesas vs. Habilidades demandadas por la industria
-    x-axis ["Lenguajes visuales", "Sintaxis básica/Variables", "Algoritmos/Complejidad", "OS/Redes", "BD/Diseño de sistemas", "Nube/Arquitectura distribuida"]
+    x-axis ["Lenguajes visuales, Sintaxis básica/Variables, Algoritmos/Complejidad, OS/Redes, BD/Diseño de sistemas, Nube/Arquitectura distribuida"]
     y-axis "Logro / Demanda (%)" 0 --> 100
     line "Nivel de logro en la educación escolar actual" [95, 60, 15, 5, 2, 0]
     line "Nivel requerido por la industria/empresas tecnológicas" [0, 20, 85, 90, 95, 100]

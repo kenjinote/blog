@@ -87,8 +87,8 @@ Prosedur untuk menyelesaikan persamaan diferensial menggunakan transformasi Lapl
 ```mermaid
 flowchart TD
   A["Persamaan diferensial dalam domain waktu"] -->|"Terapkan transformasi Laplace"| B["Persamaan aljabar dalam domain s"]
-  B -->|"Perhitungan aljabar (Penyederhanaan)"| C["Solusi F("s") dalam domain s"]
-  C -->|"Terapkan transformasi Laplace invers"| D["Solusi f("t") dalam domain waktu"]
+  B -->|"Perhitungan aljabar (Penyederhanaan)"| C["Solusi F(s) dalam domain s"]
+  C -->|"Terapkan transformasi Laplace invers"| D["Solusi f(t) dalam domain waktu"]
 ```
 
 1. **Terapkan transformasi Laplace**: Ambil transformasi Laplace dari kedua sisi persamaan diferensial yang diberikan. Substitusikan kondisi awal di sini.

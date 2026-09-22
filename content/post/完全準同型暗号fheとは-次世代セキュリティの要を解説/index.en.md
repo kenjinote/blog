@@ -136,7 +136,7 @@ Intuitively, it is the operation of "'decrypting' the ciphertext to clean it whi
 ```mermaid
 graph LR
     A["High noise ciphertext C_noisy"] --> B["Homomorphic decryption circuit (Eval_Dec)"]
-    C["Encrypted secret key E("sk")"] --> B
+    C["Encrypted secret key E(sk)"] --> B
     B --> D["Low noise ciphertext C_fresh"]
     
     style B fill:#ffeeba,stroke:#ffc107

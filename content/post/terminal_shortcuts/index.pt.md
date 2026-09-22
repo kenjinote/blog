@@ -276,7 +276,7 @@ stateDiagram-v2
     Normal --> Prefix["Modo Prefixo (Ctrl+B)"]
     Prefix --> Command["Prompt de Comando (:)"]
     Prefix --> SplitV["Dividir Painel Verticalmente (%)"]
-    Prefix --> SplitH["Dividir Painel Horizontalmente (\")"]
+    Prefix --> SplitH["Dividir Painel Horizontalmente (\)"]
     Prefix --> Switch["Trocar de Janela (n/p/0-9)"]
     Prefix --> Detach["Desanexar Sessão (d)"]
     

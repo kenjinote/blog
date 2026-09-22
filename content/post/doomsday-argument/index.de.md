@@ -191,9 +191,9 @@ Wenn man z.B. hyper-fortschrittliche KI oder posthumane Existenzen nicht in dies
 ```mermaid
 graph TD
     subgraph "Unterschiede je nach Wahl der Referenzklasse"
-        A["Was zählen wir als 'uns'?"] -->|"Nur Homo Sapiens"| B["N = 100 Mrd.\n("Hohe Wahrscheinlichkeit für frühes Aussterben")"]
-        A -->|"Jedes bewusste Wesen"| C["Kosmisches N\n("Ergebnisse ändern sich drastisch")"]
-        A -->|"Aktuelle Menschen + Posthumane"| D["N = Gigantisch\n("Möglichkeit der Evolution")"]
+        A["Was zählen wir als 'uns'?"] -->|"Nur Homo Sapiens"| B["N = 100 Mrd.\n(Hohe Wahrscheinlichkeit für frühes Aussterben)"]
+        A -->|"Jedes bewusste Wesen"| C["Kosmisches N\n(Ergebnisse ändern sich drastisch)"]
+        A -->|"Aktuelle Menschen + Posthumane"| D["N = Gigantisch\n(Möglichkeit der Evolution)"]
     end
 ```
 

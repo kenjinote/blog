@@ -188,9 +188,9 @@ Na perspetiva e matriz à formatações em deduções - Se no cômputo à (A exc
 ```mermaid
 graph TD
     subgraph "Diferenças consoante a Configuração da Classe de Referência"
-        A["O que contamos como nós próprios?"] -->|"Apenas Homo Sapiens"| B["N = 100 mil milhões\n("Prob. de extinção precoce alta")"]
-        A -->|"Qualquer ser consciente"| C["N à escala cósmica\n("A conclusão muda drasticamente")"]
-        A -->|"Humanos + Pós-humanos"| D["N = Gigantesco\n("Possibilidade de evolução")"]
+        A["O que contamos como nós próprios?"] -->|"Apenas Homo Sapiens"| B["N = 100 mil milhões\n(Prob. de extinção precoce alta)"]
+        A -->|"Qualquer ser consciente"| C["N à escala cósmica\n(A conclusão muda drasticamente)"]
+        A -->|"Humanos + Pós-humanos"| D["N = Gigantesco\n(Possibilidade de evolução)"]
     end
 ```
 

@@ -85,7 +85,7 @@ flowchart TD
     subgraph "갈루아 군 (Groups)"
         I["자명군 {e}"]
         H["부분군 H"]
-        G["갈루아 군 G=Gal("L/K")"]
+        G["갈루아 군 G=Gal(L/K)"]
         G -->|"포함한다"| H
         H -->|"포함한다"| I
     end

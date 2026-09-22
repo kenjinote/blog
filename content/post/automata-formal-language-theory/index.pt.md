@@ -58,10 +58,10 @@ A hierarquia é classificada da seguinte forma (do Tipo-0 ao Tipo-3). Quanto mai
 
 ```mermaid
 flowchart TD
-    "Type0"["Type-0: Linguagens Recursivamente Enumeráveis\n("Máquina de Turing")"]
-    "Type1"["Type-1: Linguagens Sensíveis ao Contexto\n("Autômato Linearmente Limitado")"]
-    "Type2"["Type-2: Linguagens Livres de Contexto\n("Autômato com Pilha")"]
-    "Type3"["Type-3: Linguagens Regulares\n("Autômato Finito")"]
+    "Type0"["Type-0: Linguagens Recursivamente Enumeráveis\n(Máquina de Turing)"]
+    "Type1"["Type-1: Linguagens Sensíveis ao Contexto\n(Autômato Linearmente Limitado)"]
+    "Type2"["Type-2: Linguagens Livres de Contexto\n(Autômato com Pilha)"]
+    "Type3"["Type-3: Linguagens Regulares\n(Autômato Finito)"]
 
     "Type0" --- "Type1"
     "Type1" --- "Type2"
@@ -263,7 +263,7 @@ flowchart LR
         "T1"["..."] --- "T2"["0"] --- "T3"["1"] --- "T4"["1"] --- "T5"["0"] --- "T6"["..."]
     end
     "Head"(("Head")) --> "T3"
-    "State"["State: q_read\n("Finite Control")"] --- "Head"
+    "State"["State: q_read\n(Finite Control)"] --- "Head"
 ```
 
 ### O Problema da Parada ([Halting Problem](https://kenji.blog/pt/p/turing-machine-computability/))

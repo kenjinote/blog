@@ -142,7 +142,7 @@ Intuitivement, il s'agit d'une opération où l'« on 'déchiffre' le texte chif
 ```mermaid
 graph LR
     A["Texte chiffré à haut bruit C_noisy"] --> B["Circuit de déchiffrement homomorphe (Eval_Dec)"]
-    C["Clé privée chiffrée E("sk")"] --> B
+    C["Clé privée chiffrée E(sk)"] --> B
     B --> D["Texte chiffré à faible bruit C_fresh"]
     
     style B fill:#ffeeba,stroke:#ffc107

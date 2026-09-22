@@ -128,7 +128,7 @@ Diese Formel ist eines der schönsten Ergebnisse in Statistik und maschinellem L
 ```mermaid
 flowchart LR
     b["Vektor b"] -->|"Orthogonale Projektion"| p["Projektionsvektor p = A x_hat"]
-    p --> C["Spaltenraum C("A")"]
+    p --> C["Spaltenraum C(A)"]
     b -->|"Fehlervektor e"| p
     e["e = b - A x_hat"] -.->|"Orthogonal"| C
 ```

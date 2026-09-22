@@ -117,7 +117,7 @@ Das Resultat: Unternehmen haben erkannt, dass es weitaus risikoärmer und leistu
 ```mermaid
 xychart-beta
     title Polarisierung der Nachfrage nach Junior- und Senior-Positionen (2021-2026)
-    x-axis ["2021", "2022", "2023", "2024", "2025", "2026"]
+    x-axis ["2021, 2022, 2023, 2024, 2025, 2026"]
     y-axis "Verhältnis von Stellenangeboten zu Bewerbern" 0.0 --> 10.0
     line ["Senior (Architekt/MLOps etc.)"] [3.0, 3.5, 4.2, 5.8, 7.5, 9.2]
     line ["Junior (Unerfahren/1-2 Jahre Erfahrung)"] [2.5, 2.2, 1.8, 1.2, 0.8, 0.3]

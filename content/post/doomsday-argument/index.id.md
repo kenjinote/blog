@@ -188,9 +188,9 @@ Jika kita tidak memasukkan AI tingkat tinggi atau Posthuman ke dalam kelas refer
 ```mermaid
 graph TD
     subgraph "Perbedaan Berdasarkan Pengaturan Kelas Referensi"
-        A["Sebagai apa kita menghitung diri kita?"] -->|"Hanya Homo Sapiens"| B["N = 100 miliar\n("Probabilitas kepunahan dini tinggi")"]
-        A -->|"Seluruh eksistensi yang memiliki kesadaran"| C["N skala kosmis\n("Kesimpulan berubah drastis")"]
-        A -->|"Manusia modern + Posthuman"| D["N = Sangat besar\n("Kemungkinan evolusi")"]
+        A["Sebagai apa kita menghitung diri kita?"] -->|"Hanya Homo Sapiens"| B["N = 100 miliar\n(Probabilitas kepunahan dini tinggi)"]
+        A -->|"Seluruh eksistensi yang memiliki kesadaran"| C["N skala kosmis\n(Kesimpulan berubah drastis)"]
+        A -->|"Manusia modern + Posthuman"| D["N = Sangat besar\n(Kemungkinan evolusi)"]
     end
 ```
 

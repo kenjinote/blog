@@ -313,8 +313,8 @@ int main() {
 
 ```mermaid
 graph LR
-    TrialDivision["طريقة القسمة التجريبية (O("√N"))"] --> Fermat["اختبار فيرما (O("log N"), توجد نقاط ضعف)"]
-    Fermat --> MillerRabin["طريقة ميلر-رابين (O("log N"), يمكن جعلها حتمية)"]
+    TrialDivision["طريقة القسمة التجريبية (O(√N))"] --> Fermat["اختبار فيرما (O(log N), توجد نقاط ضعف)"]
+    Fermat --> MillerRabin["طريقة ميلر-رابين (O(log N), يمكن جعلها حتمية)"]
     MillerRabin --> Montgomery["+ ضرب مونتغمري (تسريع المضاعف الثابت)"]
     
     style MillerRabin fill:#f9f,stroke:#333,stroke-width:2px

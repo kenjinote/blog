@@ -97,9 +97,9 @@ Esta reta onde a parte real é 1/2 é chamada de "linha crítica (Critical line)
 graph TD
     A["Função Zeta de Riemann ζ(s)"] --> B["Extensão para o plano complexo via continuação analítica"]
     B --> C["Zeros triviais (s = -2, -4, -6 ...)"]
-    B --> D["Zeros não triviais (0 <= Re("s") <= 1)"]
+    B --> D["Zeros não triviais (0 <= Re(s) <= 1)"]
     D --> E["Hipótese de Riemann"]
-    E --> F["Todos os zeros não triviais estão em Re("s") = 1/2"]
+    E --> F["Todos os zeros não triviais estão em Re(s) = 1/2"]
     F --> G["Para a prova do limite do termo de erro da distribuição de primos"]
 ```
 

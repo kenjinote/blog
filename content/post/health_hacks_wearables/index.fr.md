@@ -252,7 +252,7 @@ processed_df = engineer_features(merged_df)
 ```mermaid
 xychart-beta
     title VFC vs Heures de codage quotidiennes (Normalisées)
-    x-axis ["Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"]
+    x-axis ["Lun, Mar, Mer, Jeu, Ven, Sam, Dim"]
     y-axis "VFC & Sortie de codage" 10 --> 100
     line [45, 52, 65, 75, 70, 58, 48]
     bar [35, 42, 58, 65, 60, 20, 15]

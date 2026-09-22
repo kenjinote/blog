@@ -115,11 +115,11 @@ By using a priority queue (`std::priority_queue`), the unfinalized vertex with t
 
 ```mermaid
 graph TD
-    S["Source S("0")"] -- 2 --> A["Vertex A("2")"]
-    S["Source S("0")"] -- 5 --> B["Vertex B("5")"]
-    A["Vertex A("2")"] -- 1 --> B["Vertex B("3")"]
-    A["Vertex A("2")"] -- 4 --> C["Vertex C("6")"]
-    B["Vertex B("3")"] -- 1 --> C["Vertex C("4")"]
+    S["Source S(0)"] -- 2 --> A["Vertex A(2)"]
+    S["Source S(0)"] -- 5 --> B["Vertex B(5)"]
+    A["Vertex A(2)"] -- 1 --> B["Vertex B(3)"]
+    A["Vertex A(2)"] -- 4 --> C["Vertex C(6)"]
+    B["Vertex B(3)"] -- 1 --> C["Vertex C(4)"]
 ```
 As shown in the figure above, the cost to go directly from S to B is 5, but going via A allows reaching it with a cost of 3. [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)'s algorithm performs optimizations in this way.
 

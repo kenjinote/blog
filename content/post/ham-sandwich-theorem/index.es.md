@@ -112,10 +112,10 @@ Para una función $f(x) = \left( \text{Temperatura}, \text{Presión} \right)$ qu
 
 ```mermaid
 flowchart LR
-    P["Vector normal p"] -->|"Determina el plano que biseca el pan superior"| HP["Plano H("p")"]
+    P["Vector normal p"] -->|"Determina el plano que biseca el pan superior"| HP["Plano H(p)"]
     HP -->|"Calcula el volumen del jamón en el lado positivo"| V1["Volumen V1"]
     HP -->|"Calcula el volumen del pan inferior en el lado positivo"| V2["Volumen V2"]
-    V1 -->|"Aplica el teorema de Borsuk-Ulam"| Eq["f("p") = f("-p")"]
+    V1 -->|"Aplica el teorema de Borsuk-Ulam"| Eq["f(p) = f(-p)"]
     V2 -->|"Aplica el teorema de Borsuk-Ulam"| Eq
     Eq -->|"¡Todos los ingredientes están bisecados!"| Success["Prueba completa"]
 ```

@@ -111,8 +111,8 @@ La procédure pour ajouter deux points distincts $P$ et $Q$ sur la courbe pour o
 
 ```mermaid
 graph TD
-    Step1["Tracer une droite reliant P("x1, y1") et Q("x2, y2")"] --> Step2["Trouver la 3ème intersection avec la courbe, -R"]
-    Step2 --> Step3["Refléter -R sur l'axe des x pour obtenir R("x3, y3")"]
+    Step1["Tracer une droite reliant P(x1, y1) et Q(x2, y2)"] --> Step2["Trouver la 3ème intersection avec la courbe, -R"]
+    Step2 --> Step3["Refléter -R sur l'axe des x pour obtenir R(x3, y3)"]
     Step3 -.-> Result["Ceci est R = P + Q"]
 ```
 

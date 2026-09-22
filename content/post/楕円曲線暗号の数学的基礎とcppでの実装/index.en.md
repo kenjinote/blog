@@ -112,8 +112,8 @@ The procedure for finding a new point $R$ ($R = P + Q$) by adding two distinct p
 
 ```mermaid
 graph TD
-    Step1["Draw a line connecting P("x1, y1") and Q("x2, y2")"] --> Step2["Find the 3rd intersection -R with the curve"]
-    Step2 --> Step3["Reflect -R across the x-axis to get R("x3, y3")"]
+    Step1["Draw a line connecting P(x1, y1) and Q(x2, y2)"] --> Step2["Find the 3rd intersection -R with the curve"]
+    Step2 --> Step3["Reflect -R across the x-axis to get R(x3, y3)"]
     Step3 -.-> Result["This is R = P + Q"]
 ```
 

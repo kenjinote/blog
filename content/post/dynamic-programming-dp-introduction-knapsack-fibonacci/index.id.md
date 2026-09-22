@@ -61,20 +61,20 @@ Implementasi ini intuitif, tetapi ada satu masalah besar. Yaitu, **kompleksitas 
 
 ```mermaid
 graph TD
-    A["F("5")"] --> B["F("4")"]
-    A --> C["F("3")"]
-    B --> D["F("3")"]
-    B --> E["F("2")"]
-    C --> F["F("2")"]
-    C --> G["F("1")"]
-    D --> H["F("2")"]
-    D --> I["F("1")"]
-    E --> J["F("1")"]
-    E --> K["F("0")"]
-    F --> L["F("1")"]
-    F --> M["F("0")"]
-    H --> N["F("1")"]
-    H --> O["F("0")"]
+    A["F(5)"] --> B["F(4)"]
+    A --> C["F(3)"]
+    B --> D["F(3)"]
+    B --> E["F(2)"]
+    C --> F["F(2)"]
+    C --> G["F(1)"]
+    D --> H["F(2)"]
+    D --> I["F(1)"]
+    E --> J["F(1)"]
+    E --> K["F(0)"]
+    F --> L["F(1)"]
+    F --> M["F(0)"]
+    H --> N["F(1)"]
+    H --> O["F(0)"]
 ```
 
 Seperti yang Anda lihat, $F(3)$ dan $F(2)$ dihitung berulang kali. Kompleksitas waktunya menjadi $O(2^n)$, dan seiring dengan bertambahnya nilai $n$, perhitungan tidak akan selesai dalam waktu yang praktis.

@@ -112,10 +112,10 @@ Für eine Funktion $f(x) = \left( \text{Temperatur}, \text{Druck} \right)$, die 
 
 ```mermaid
 flowchart LR
-    P["Normalenvektor p"] -->|"Bestimmt die Ebene, die das obere Brot halbiert"| HP["Ebene H("p")"]
+    P["Normalenvektor p"] -->|"Bestimmt die Ebene, die das obere Brot halbiert"| HP["Ebene H(p)"]
     HP -->|"Berechnet das Volumen des Schinkens auf der positiven Seite"| V1["Volumen V1"]
     HP -->|"Berechnet das Volumen des unteren Brotes auf der positiven Seite"| V2["Volumen V2"]
-    V1 -->|"Wendet den Borsuk-Ulam-Satz an"| Eq["f("p") = f("-p")"]
+    V1 -->|"Wendet den Borsuk-Ulam-Satz an"| Eq["f(p) = f(-p)"]
     V2 -->|"Wendet den Borsuk-Ulam-Satz an"| Eq
     Eq -->|"Alle Zutaten sind halbiert!"| Success["Beweis abgeschlossen"]
 ```

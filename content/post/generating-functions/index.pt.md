@@ -132,7 +132,7 @@ $$
 ```mermaid
 graph TD
     S["Relação de Recorrência de Fibonacci"] -->|"Definir Função Geradora F("x")"| EQ["Formular Equação da Função"]
-    EQ -->|"Resolver Algebricamente"| GF["F("x") = x / (1 - x - x^2)"]
+    EQ -->|"Resolver Algebricamente"| GF["F(x) = x / (1 - x - x^2)"]
     GF -->|"Decomposição em Frações Parciais"| PF["(A / (1 - αx)) + (B / (1 - βx))"]
     PF -->|"Expansão em Série de Potências e Comparação de Coeficientes"| AN["Termo Geral (Fórmula de Binet)"]
 ```

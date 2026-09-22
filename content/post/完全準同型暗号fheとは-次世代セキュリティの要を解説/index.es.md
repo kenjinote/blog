@@ -142,7 +142,7 @@ Intuitivamente, es una operación de "limpiar el texto cifrado 'descifrándolo' 
 ```mermaid
 graph LR
     A["Texto cifrado con alto ruido C_noisy"] --> B["Circuito de descifrado homomórfico (Eval_Dec)"]
-    C["Clave privada cifrada E("sk")"] --> B
+    C["Clave privada cifrada E(sk)"] --> B
     B --> D["Texto cifrado con bajo ruido C_fresh"]
     
     style B fill:#ffeeba,stroke:#ffc107
