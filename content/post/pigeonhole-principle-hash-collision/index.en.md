@@ -78,7 +78,7 @@ graph TD
     end
 
     subgraph "Hash Function"
-        H{"Hash("x")"}
+        H{"Hash(x)"}
     end
 
     subgraph "Finite Hash Space (Holes)"

@@ -78,7 +78,7 @@ graph TD
     end
 
     subgraph "해시 함수"
-        H{"Hash("x")"}
+        H{"Hash(x)"}
     end
 
     subgraph "유한한 해시 공간(집)"

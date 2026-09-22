@@ -56,7 +56,7 @@ Alur keseluruhan algoritma adalah sebagai berikut:
 ```mermaid
 graph TD
     A["Input: Bilangan komposit N yang ingin difaktorkan"] --> B["Pilih bilangan acak a sehingga a < N"]
-    B --> C{"gcd("a, N") > 1 ?"}
+    B --> C{"gcd(a, N) > 1 ?"}
     C -- Yes --> D["Outputkan faktor trivial gcd(a, N) dan selesai"]
     C -- No --> E["Temukan periode r dari f(x) = a^x mod N dengan algoritma kuantum"]
     E --> F{"r genap DAN a^(r/2) ≢ -1 mod N ?"}

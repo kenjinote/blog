@@ -78,7 +78,7 @@ graph TD
     end
 
     subgraph "Fonction de hachage"
-        H{"Hash("x")"}
+        H{"Hash(x)"}
     end
 
     subgraph "Espace de hachage fini (Tiroirs)"

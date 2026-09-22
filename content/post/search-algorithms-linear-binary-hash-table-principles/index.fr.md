@@ -53,7 +53,7 @@ L'algorithme de recherche linéaire procède selon les étapes suivantes :
 flowchart TD
     A["Début de la recherche"] --> B["Index i = 0"]
     B --> C{"i < longueur du tableau ?"}
-    C -- "Oui" --> D{"tableau["i"] == cible ?"}
+    C -- "Oui" --> D{"tableau[i] == cible ?"}
     C -- "Non" --> E["Échec de la recherche (non trouvé)"]
     D -- "Oui" --> F["Renvoyer l'index i"]
     D -- "Non" --> G["Incrémenter i de 1"]
@@ -212,9 +212,9 @@ flowchart TD
     B --> C{"low <= high ?"}
     C -- "Non" --> D["Échec de la recherche"]
     C -- "Oui" --> E["mid = (low + high) / 2"]
-    E --> F{"arr["mid"] == target ?"}
+    E --> F{"arr[mid] == target ?"}
     F -- "Oui" --> G["Renvoyer mid"]
-    F -- "Non" --> H{"arr["mid"] < target ?"}
+    F -- "Non" --> H{"arr[mid] < target ?"}
     H -- "Oui" --> I["low = mid + 1"]
     H -- "Non" --> J["high = mid - 1"]
     I --> C

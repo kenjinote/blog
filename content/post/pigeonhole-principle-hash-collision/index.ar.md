@@ -78,7 +78,7 @@ graph TD
     end
 
     subgraph "دالة التجزئة"
-        H{"Hash("x")"}
+        H{"Hash(x)"}
     end
 
     subgraph "فضاء التجزئة المحدود (الأعشاش)"

@@ -56,7 +56,7 @@ graph TD
 ```mermaid
 graph TD
     A["输入: 想要进行质因数分解的合数 N"] --> B["选择随机数 a 使得 a < N"]
-    B --> C{"gcd("a, N") > 1 ?"}
+    B --> C{"gcd(a, N) > 1 ?"}
     C -- Yes --> D["输出平凡因子 gcd(a, N) 并结束"]
     C -- No --> E["使用量子算法寻找 f(x) = a^x mod N 的周期 r"]
     E --> F{"r 是偶数 且 a^(r/2) ≢ -1 mod N ?"}

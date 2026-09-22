@@ -154,7 +154,7 @@ graph TD
   W2 --> Prob
   Wn --> Prob
   Prob --> Bayes["Appliquer le théorème de Bayes"]
-  Bayes --> Class{"P("Spam") > 0.9 ?"}
+  Bayes --> Class{"P(Spam) > 0.9 ?"}
   Class -- Oui --> Spam["Déplacer vers le dossier Spam"]
   Class -- Non --> Ham["Livrer à la boîte de réception"]
 ```
@@ -395,7 +395,7 @@ $$ x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} $$
 ```mermaid
 flowchart LR
   Start["Début : Deviner le x0 initial"] --> Eval["Évaluer f(xn) et f'(xn)"]
-  Eval --> Check{"f("xn") ≈ 0 ?"}
+  Eval --> Check{"f(xn) ≈ 0 ?"}
   Check -- Oui --> Done["Renvoyer xn comme racine"]
   Check -- Non --> Update["xn+1 = xn - f(xn) / f'(xn)"]
   Update --> Eval

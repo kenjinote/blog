@@ -126,7 +126,7 @@ def D(X):
 ```mermaid
 graph TD
     subgraph "Анализатор H"
-        H{"Каков результат H("X, X")?"}
+        H{"Каков результат H(X, X)?"}
     end
 
     subgraph "Зловредная программа D"

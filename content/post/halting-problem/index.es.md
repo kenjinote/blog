@@ -126,7 +126,7 @@ Vamos a ilustrar la lógica de esta reducción al absurdo utilizando Mermaid.
 ```mermaid
 graph TD
     subgraph "Evaluador H"
-        H{"¿Resultado de H("X, X")?"}
+        H{"¿Resultado de H(X, X)?"}
     end
 
     subgraph "Programa malintencionado D"

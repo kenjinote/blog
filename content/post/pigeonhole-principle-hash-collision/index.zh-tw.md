@@ -78,7 +78,7 @@ graph TD
     end
 
     subgraph "雜湊函數"
-        H{"Hash("x")"}
+        H{"Hash(x)"}
     end
 
     subgraph "有限的雜湊空間（鴿籠）"

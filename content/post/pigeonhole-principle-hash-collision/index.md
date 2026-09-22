@@ -78,7 +78,7 @@ graph TD
     end
 
     subgraph "ハッシュ関数"
-        H{"Hash("x")"}
+        H{"Hash(x)"}
     end
 
     subgraph "有限のハッシュ空間（巣）"

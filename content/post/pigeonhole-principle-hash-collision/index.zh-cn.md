@@ -78,7 +78,7 @@ graph TD
     end
 
     subgraph "哈希函数"
-        H{"Hash("x")"}
+        H{"Hash(x)"}
     end
 
     subgraph "有限的哈希空间（巢）"

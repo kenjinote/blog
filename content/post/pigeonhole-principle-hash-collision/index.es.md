@@ -78,7 +78,7 @@ graph TD
     end
 
     subgraph "Función Hash"
-        H{"Hash("x")"}
+        H{"Hash(x)"}
     end
 
     subgraph "Espacio Hash finito (nidos)"

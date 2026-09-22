@@ -126,7 +126,7 @@ Mari kita ilustrasikan logika pembuktian melalui kontradiksi ini menggunakan dia
 ```mermaid
 graph TD
     subgraph "Mesin Penentu H"
-        H{"Apa hasil dari H("X, X")?"}
+        H{"Apa hasil dari H(X, X)?"}
     end
 
     subgraph "Program Jahat D"

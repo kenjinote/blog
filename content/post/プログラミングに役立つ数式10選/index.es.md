@@ -154,7 +154,7 @@ graph TD
   W2 --> Prob
   Wn --> Prob
   Prob --> Bayes["Aplicar Teorema de Bayes"]
-  Bayes --> Class{"¿P("Spam") > 0.9?"}
+  Bayes --> Class{"¿P(Spam) > 0.9?"}
   Class -- Sí --> Spam["Mover a Carpeta de Spam"]
   Class -- No --> Ham["Entregar a la Bandeja de Entrada"]
 ```
@@ -395,7 +395,7 @@ Utilizando el valor de la función $f(x_n)$ y su pendiente (derivada) $f'(x_n)$ 
 ```mermaid
 flowchart LR
   Start["Inicio: Adivinar x0 inicial"] --> Eval["Evaluar f(xn) y f'(xn)"]
-  Eval --> Check{"¿Es f("xn") ≈ 0?"}
+  Eval --> Check{"¿Es f(xn) ≈ 0?"}
   Check -- Sí --> Done["Devolver xn como Raíz"]
   Check -- No --> Update["xn+1 = xn - f(xn) / f'(xn)"]
   Update --> Eval

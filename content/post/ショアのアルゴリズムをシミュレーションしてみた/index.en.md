@@ -56,7 +56,7 @@ The overall flow of the algorithm is as follows:
 ```mermaid
 graph TD
     A["Input: Composite number N to be factored"] --> B["Choose a random number a such that a < N"]
-    B --> C{"gcd("a, N") > 1 ?"}
+    B --> C{"gcd(a, N) > 1 ?"}
     C -- Yes --> D["Output trivial factor gcd(a, N) and terminate"]
     C -- No --> E["Find the period r of f(x) = a^x mod N using quantum algorithm"]
     E --> F{"Is r even AND a^(r/2) ≢ -1 mod N ?"}

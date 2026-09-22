@@ -126,7 +126,7 @@ def D(X):
 ```mermaid
 graph TD
     subgraph "निर्णय मशीन H"
-        H{"H("X, X") का परिणाम क्या है?"}
+        H{"H(X, X) का परिणाम क्या है?"}
     end
 
     subgraph "दुष्ट प्रोग्राम D"

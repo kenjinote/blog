@@ -126,7 +126,7 @@ def D(X):
 ```mermaid
 graph TD
     subgraph "判定机 H"
-        H{"H("X, X") 的结果是？"}
+        H{"H(X, X) 的结果是？"}
     end
 
     subgraph "恶意程序 D"

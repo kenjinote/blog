@@ -126,7 +126,7 @@ Recorramos perante Mermaid, traduzindo no suporte visual demonstrativo os passos
 ```mermaid
 graph TD
     subgraph "Máquina de Decisão H"
-        H{"Resultado de H("X, X")?"}
+        H{"Resultado de H(X, X)?"}
     end
 
     subgraph "Programa Enganoso D"

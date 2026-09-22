@@ -154,7 +154,7 @@ graph TD
   W2 --> Prob
   Wn --> Prob
   Prob --> Bayes["베이즈 정리 적용"]
-  Bayes --> Class{"P("스팸") > 0.9?"}
+  Bayes --> Class{"P(스팸) > 0.9?"}
   Class -- 예 --> Spam["스팸 폴더로 이동"]
   Class -- 아니오 --> Ham["받은 편지함으로 배달"]
 ```
@@ -395,7 +395,7 @@ $$ x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} $$
 ```mermaid
 flowchart LR
   Start["시작: 초기값 x0 추정"] --> Eval["f(xn) 및 f'(xn) 평가"]
-  Eval --> Check{"f("xn") ≈ 0 입니까?"}
+  Eval --> Check{"f(xn) ≈ 0 입니까?"}
   Check -- 예 --> Done["xn을 근으로 반환"]
   Check -- 아니오 --> Update["xn+1 = xn - f(xn) / f'(xn)"]
   Update --> Eval

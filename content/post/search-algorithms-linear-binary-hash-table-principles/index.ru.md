@@ -212,9 +212,9 @@ flowchart TD
     B --> C{"low <= high?"}
     C -- "No" --> D["Поиск неудачен"]
     C -- "Yes" --> E["mid = (low + high) / 2"]
-    E --> F{"arr["mid"] == target?"}
+    E --> F{"arr[mid] == target?"}
     F -- "Yes" --> G["Вернуть mid"]
-    F -- "No" --> H{"arr["mid"] < target?"}
+    F -- "No" --> H{"arr[mid] < target?"}
     H -- "Yes" --> I["low = mid + 1"]
     H -- "No" --> J["high = mid - 1"]
     I --> C

@@ -56,7 +56,7 @@ El flujo general del algoritmo es el siguiente:
 ```mermaid
 graph TD
     A["Entrada: Número compuesto a factorizar N"] --> B["Elegir un número aleatorio a tal que a < N"]
-    B --> C{"gcd("a, N") > 1 ?"}
+    B --> C{"gcd(a, N) > 1 ?"}
     C -- Sí --> D["Imprimir factor trivial gcd(a, N) y terminar"]
     C -- No --> E["Encontrar el período r de f(x) = a^x mod N con algoritmo cuántico"]
     E --> F{"¿r es par y a^(r/2) ≢ -1 mod N ?"}

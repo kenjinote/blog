@@ -126,7 +126,7 @@ def D(X):
 ```mermaid
 graph TD
     subgraph "판정기 H"
-        H{"H("X, X") 의 결과는?"}
+        H{"H(X, X) 의 결과는?"}
     end
 
     subgraph "짓궂은 프로그램 D"

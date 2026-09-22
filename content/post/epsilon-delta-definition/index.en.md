@@ -63,7 +63,7 @@ This definition is very easy to understand if you think of it as a game between 
 flowchart TD
     A["Demon presents any ε > 0"] --> B["You find and present a suitable δ > 0"]
     B --> C{"For any x satisfying 0 < |x - a| < δ..."}
-    C -- "Verify" --> D{"Does |f("x") - L| < ε hold?"}
+    C -- "Verify" --> D{"Does |f(x) - L| < ε hold?"}
     D -- "Yes" --> E["Game continues (Proven if possible for all ε)"]
     D -- "No" --> F["Proof fails (Not a limit)"]
 ```

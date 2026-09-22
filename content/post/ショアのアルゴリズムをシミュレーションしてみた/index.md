@@ -56,7 +56,7 @@ graph TD
 ```mermaid
 graph TD
     A["入力: 素因数分解したい合成数 N"] --> B["a < N なる乱数 a を選ぶ"]
-    B --> C{"gcd("a, N") > 1 ?"}
+    B --> C{"gcd(a, N) > 1 ?"}
     C -- Yes --> D["自明な因数 gcd(a, N) を出力して終了"]
     C -- No --> E["量子アルゴリズムで f(x) = a^x mod N の周期 r を見つける"]
     E --> F{"r が偶数 かつ a^(r/2) ≢ -1 mod N ?"}

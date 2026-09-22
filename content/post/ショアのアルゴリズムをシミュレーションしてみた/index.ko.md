@@ -56,7 +56,7 @@ graph TD
 ```mermaid
 graph TD
     A["입력: 소인수분해하고 싶은 합성수 N"] --> B["a < N 인 난수 a 를 선택"]
-    B --> C{"gcd("a, N") > 1 ?"}
+    B --> C{"gcd(a, N) > 1 ?"}
     C -- Yes --> D["자명한 인수 gcd(a, N) 을 출력하고 종료"]
     C -- No --> E["양자 알고리즘으로 f(x) = a^x mod N 의 주기 r 을 찾음"]
     E --> F{"r 이 짝수이고 a^(r/2) ≢ -1 mod N ?"}

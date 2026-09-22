@@ -56,7 +56,7 @@ Der Gesamtablauf des Algorithmus ist wie folgt:
 ```mermaid
 graph TD
     A["Eingabe: Zusammengesetzte Zahl N, die faktorisiert werden soll"] --> B["Wähle Zufallszahl a, sodass a < N"]
-    B --> C{"gcd("a, N") > 1 ?"}
+    B --> C{"gcd(a, N) > 1 ?"}
     C -- Yes --> D["Gibt den trivialen Faktor gcd(a, N) aus und beendet"]
     C -- No --> E["Finde Periode r von f(x) = a^x mod N mit Quantenalgorithmus"]
     E --> F{"Ist r gerade und a^(r/2) ≢ -1 mod N ?"}

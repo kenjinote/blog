@@ -53,7 +53,7 @@ The linear search algorithm proceeds with the following steps:
 flowchart TD
     A["Start search"] --> B["Index i = 0"]
     B --> C{"i < length of array?"}
-    C -->|"Yes"| D{"array["i"] == target?"}
+    C -->|"Yes"| D{"array[i] == target?"}
     C -->|"No"| E["Search failed (not found)"]
     D -->|"Yes"| F["Return index i"]
     D -->|"No"| G["Increment i by 1"]
@@ -212,9 +212,9 @@ flowchart TD
     B --> C{"low <= high?"}
     C -->|"No"| D["Search failed"]
     C -->|"Yes"| E["mid = (low + high) / 2"]
-    E --> F{"arr["mid"] == target?"}
+    E --> F{"arr[mid] == target?"}
     F -->|"Yes"| G["Return mid"]
-    F -->|"No"| H{"arr["mid"] < target?"}
+    F -->|"No"| H{"arr[mid] < target?"}
     H -->|"Yes"| I["low = mid + 1"]
     H -->|"No"| J["high = mid - 1"]
     I --> C

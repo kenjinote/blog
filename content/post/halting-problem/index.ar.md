@@ -126,7 +126,7 @@ def D(X):
 ```mermaid
 graph TD
     subgraph "آلة الحكم H"
-        H{"ما هي نتيجة H("X, X")؟"}
+        H{"ما هي نتيجة H(X, X)؟"}
     end
 
     subgraph "البرنامج الخبيث D"

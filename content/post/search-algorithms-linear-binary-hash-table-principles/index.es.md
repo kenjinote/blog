@@ -53,7 +53,7 @@ El algoritmo de búsqueda lineal procede con los siguientes pasos.
 flowchart TD
     A["Inicio de búsqueda"] --> B["Índice i = 0"]
     B --> C{"¿i < longitud del arreglo?"}
-    C -- "Sí" --> D{"¿arreglo["i"] == objetivo?"}
+    C -- "Sí" --> D{"¿arreglo[i] == objetivo?"}
     C -- "No" --> E["Búsqueda fallida (no encontrado)"]
     D -- "Sí" --> F["Devolver índice i"]
     D -- "No" --> G["Incrementar i en 1"]
@@ -212,9 +212,9 @@ flowchart TD
     B --> C{"¿low <= high?"}
     C -- "No" --> D["Búsqueda fallida"]
     C -- "Yes" --> E["mid = (low + high) / 2"]
-    E --> F{"¿arr["mid"] == target?"}
+    E --> F{"¿arr[mid] == target?"}
     F -- "Sí" --> G["Devolver mid"]
-    F -- "No" --> H{"¿arr["mid"] < target?"}
+    F -- "No" --> H{"¿arr[mid] < target?"}
     H -- "Yes" --> I["low = mid + 1"]
     H -- "No" --> J["high = mid - 1"]
     I --> C

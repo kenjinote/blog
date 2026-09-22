@@ -56,7 +56,7 @@ Le flux global de l'algorithme est le suivant :
 ```mermaid
 graph TD
     A["Entrée : Nombre composé N à factoriser"] --> B["Choisir un nombre aléatoire a tel que a < N"]
-    B --> C{"gcd("a, N") > 1 ?"}
+    B --> C{"gcd(a, N) > 1 ?"}
     C -- Oui --> D["Afficher le facteur trivial gcd(a, N) et terminer"]
     C -- Non --> E["Trouver la période r de f(x) = a^x mod N avec un algorithme quantique"]
     E --> F{"r est pair ET a^(r/2) ≢ -1 mod N ?"}

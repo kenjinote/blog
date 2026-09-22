@@ -78,7 +78,7 @@ graph TD
     end
 
     subgraph "Função Base para cômputos formatados"
-        H{"Avaliador de base Hash("x")"}
+        H{"Avaliador de base Hash(x)"}
     end
 
     subgraph "As Fronteiras estritas de Limites / Universo base Finito (As Casas / O ninho)"

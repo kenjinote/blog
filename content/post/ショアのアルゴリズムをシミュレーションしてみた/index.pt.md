@@ -56,7 +56,7 @@ O fluxo geral do algoritmo é o seguinte:
 ```mermaid
 graph TD
     A["Entrada: Número composto N a ser fatorado"] --> B["Escolher número aleatório a tal que a < N"]
-    B --> C{"gcd("a, N") > 1 ?"}
+    B --> C{"gcd(a, N) > 1 ?"}
     C -- Yes --> D["Imprimir fator trivial gcd(a, N) e encerrar"]
     C -- No --> E["Encontrar o período r de f(x) = a^x mod N com algoritmo quântico"]
     E --> F{"r é par E a^(r/2) ≢ -1 mod N ?"}

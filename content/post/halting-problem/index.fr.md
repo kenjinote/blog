@@ -126,7 +126,7 @@ Illustrons la logique de cette preuve par l'absurde avec Mermaid.
 ```mermaid
 graph TD
     subgraph "Machine de décision H"
-        H{"Résultat de H("X, X") ?"}
+        H{"Résultat de H(X, X) ?"}
     end
 
     subgraph "Programme malveillant D"

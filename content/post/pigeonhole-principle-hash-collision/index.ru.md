@@ -78,7 +78,7 @@ graph TD
     end
 
     subgraph "Хеш-функция"
-        H{"Hash("x")"}
+        H{"Hash(x)"}
     end
 
     subgraph "Конечное хеш-пространство (ящики)"

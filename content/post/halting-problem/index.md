@@ -126,7 +126,7 @@ def D(X):
 ```mermaid
 graph TD
     subgraph "判定機 H"
-        H{"H("X, X") の結果は？"}
+        H{"H(X, X) の結果は？"}
     end
 
     subgraph "意地悪なプログラム D"

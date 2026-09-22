@@ -78,7 +78,7 @@ graph TD
     end
 
     subgraph "हैश फंक्शन"
-        H{"Hash("x")"}
+        H{"Hash(x)"}
     end
 
     subgraph "परिमित हैश स्थान (घोंसला)"

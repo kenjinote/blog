@@ -78,7 +78,7 @@ graph TD
     end
 
     subgraph "Fungsi Hash"
-        H{"Hash("x")"}
+        H{"Hash(x)"}
     end
 
     subgraph "Ruang Hash Terbatas (Sarang)"

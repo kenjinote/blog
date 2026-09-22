@@ -154,7 +154,7 @@ graph TD
   W2 --> Prob
   Wn --> Prob
   Prob --> Bayes["बेयस की प्रमेय लागू करें"]
-  Bayes --> Class{"P("स्पैम") > 0.9?"}
+  Bayes --> Class{"P(स्पैम) > 0.9?"}
   Class -- हाँ --> Spam["स्पैम फ़ोल्डर में ले जाएं"]
   Class -- नहीं --> Ham["इनबॉक्स में डिलीवर करें"]
 ```
@@ -395,7 +395,7 @@ $$ x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} $$
 ```mermaid
 flowchart LR
   Start["प्रारंभ: प्रारंभिक x0 का अनुमान लगाएं"] --> Eval["f(xn) और f'(xn) का मूल्यांकन करें"]
-  Eval --> Check{"क्या f("xn") ≈ 0 है?"}
+  Eval --> Check{"क्या f(xn) ≈ 0 है?"}
   Check -- हाँ --> Done["मूल (Root) के रूप में xn लौटाएं"]
   Check -- नहीं --> Update["xn+1 = xn - f(xn) / f'(xn)"]
   Update --> Eval

@@ -63,7 +63,7 @@ Definisi ini sangat mudah dipahami jika Anda menganggapnya sebagai permainan ant
 flowchart TD
     A["Iblis memberikan sebarang ε > 0"] --> B["Anda menemukan dan memberikan δ > 0 yang sesuai"]
     B --> C{"Untuk setiap x yang memenuhi 0 < |x - a| < δ..."}
-    C -- "Verifikasi" --> D{"Apakah |f("x") - L| < ε berlaku?"}
+    C -- "Verifikasi" --> D{"Apakah |f(x) - L| < ε berlaku?"}
     D -- "Ya" --> E["Permainan berlanjut (Terbukti jika mungkin untuk semua ε)"]
     D -- "Tidak" --> F["Pembuktian gagal (Bukan limit)"]
 ```
