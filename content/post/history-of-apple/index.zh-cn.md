@@ -108,7 +108,7 @@ pie title "移动操作系统市场份额变化 (概念)"
 近年来，苹果完成了从英特尔芯片向自主设计的 **Apple Silicon (ARM架构)** 的过渡。实现了高性能与压倒性功耗效率的兼顾。
 
 $$
-	ext{Performance per Watt} = rac{	ext{Computation Output (FLOPS)}}{	ext{Power Consumption (Watts)}}
+\text{每瓦性能} = \frac{\text{计算输出 (FLOPS)}}{\text{功耗 (瓦特)}}
 $$
 
 ## 7. AI时代的苹果 (Apple Intelligence)
@@ -215,7 +215,7 @@ pie title "移动操作系统市场份额变化 (概念)"
 近年来，苹果完成了从英特尔芯片向自主设计的 **Apple Silicon (ARM架构)** 的过渡。实现了高性能与压倒性功耗效率的兼顾。
 
 $$
-	ext{Performance per Watt} = rac{	ext{Computation Output (FLOPS)}}{	ext{Power Consumption (Watts)}}
+\text{每瓦性能} = \frac{\text{计算输出 (FLOPS)}}{\text{功耗 (瓦特)}}
 $$
 
 ## 7. AI时代的苹果 (Apple Intelligence)
@@ -322,7 +322,7 @@ pie title "移动操作系统市场份额变化 (概念)"
 近年来，苹果完成了从英特尔芯片向自主设计的 **Apple Silicon (ARM架构)** 的过渡。实现了高性能与压倒性功耗效率的兼顾。
 
 $$
-	ext{Performance per Watt} = rac{	ext{Computation Output (FLOPS)}}{	ext{Power Consumption (Watts)}}
+\text{每瓦性能} = \frac{\text{计算输出 (FLOPS)}}{\text{功耗 (瓦特)}}
 $$
 
 ## 7. AI时代的苹果 (Apple Intelligence)
@@ -429,7 +429,7 @@ pie title "移动操作系统市场份额变化 (概念)"
 近年来，苹果完成了从英特尔芯片向自主设计的 **Apple Silicon (ARM架构)** 的过渡。实现了高性能与压倒性功耗效率的兼顾。
 
 $$
-	ext{Performance per Watt} = rac{	ext{Computation Output (FLOPS)}}{	ext{Power Consumption (Watts)}}
+\text{每瓦性能} = \frac{\text{计算输出 (FLOPS)}}{\text{功耗 (瓦特)}}
 $$
 
 ## 7. AI时代的苹果 (Apple Intelligence)
@@ -536,7 +536,7 @@ pie title "移动操作系统市场份额变化 (概念)"
 近年来，苹果完成了从英特尔芯片向自主设计的 **Apple Silicon (ARM架构)** 的过渡。实现了高性能与压倒性功耗效率的兼顾。
 
 $$
-	ext{Performance per Watt} = rac{	ext{Computation Output (FLOPS)}}{	ext{Power Consumption (Watts)}}
+\text{每瓦性能} = \frac{\text{计算输出 (FLOPS)}}{\text{功耗 (瓦特)}}
 $$
 
 ## 7. AI时代的苹果 (Apple Intelligence)
@@ -643,7 +643,7 @@ pie title "移动操作系统市场份额变化 (概念)"
 近年来，苹果完成了从英特尔芯片向自主设计的 **Apple Silicon (ARM架构)** 的过渡。实现了高性能与压倒性功耗效率的兼顾。
 
 $$
-	ext{Performance per Watt} = rac{	ext{Computation Output (FLOPS)}}{	ext{Power Consumption (Watts)}}
+\text{每瓦性能} = \frac{\text{计算输出 (FLOPS)}}{\text{功耗 (瓦特)}}
 $$
 
 ## 7. AI时代的苹果 (Apple Intelligence)
@@ -750,7 +750,7 @@ pie title "移动操作系统市场份额变化 (概念)"
 近年来，苹果完成了从英特尔芯片向自主设计的 **Apple Silicon (ARM架构)** 的过渡。实现了高性能与压倒性功耗效率的兼顾。
 
 $$
-	ext{Performance per Watt} = rac{	ext{Computation Output (FLOPS)}}{	ext{Power Consumption (Watts)}}
+\text{每瓦性能} = \frac{\text{计算输出 (FLOPS)}}{\text{功耗 (瓦特)}}
 $$
 
 ## 7. AI时代的苹果 (Apple Intelligence)
@@ -857,7 +857,7 @@ pie title "移动操作系统市场份额变化 (概念)"
 近年来，苹果完成了从英特尔芯片向自主设计的 **Apple Silicon (ARM架构)** 的过渡。实现了高性能与压倒性功耗效率的兼顾。
 
 $$
-	ext{Performance per Watt} = rac{	ext{Computation Output (FLOPS)}}{	ext{Power Consumption (Watts)}}
+\text{每瓦性能} = \frac{\text{计算输出 (FLOPS)}}{\text{功耗 (瓦特)}}
 $$
 
 ## 7. AI时代的苹果 (Apple Intelligence)
@@ -964,7 +964,7 @@ pie title "移动操作系统市场份额变化 (概念)"
 近年来，苹果完成了从英特尔芯片向自主设计的 **Apple Silicon (ARM架构)** 的过渡。实现了高性能与压倒性功耗效率的兼顾。
 
 $$
-	ext{Performance per Watt} = rac{	ext{Computation Output (FLOPS)}}{	ext{Power Consumption (Watts)}}
+\text{每瓦性能} = \frac{\text{计算输出 (FLOPS)}}{\text{功耗 (瓦特)}}
 $$
 
 ## 7. AI时代的苹果 (Apple Intelligence)
@@ -1071,7 +1071,7 @@ pie title "移动操作系统市场份额变化 (概念)"
 近年来，苹果完成了从英特尔芯片向自主设计的 **Apple Silicon (ARM架构)** 的过渡。实现了高性能与压倒性功耗效率的兼顾。
 
 $$
-	ext{Performance per Watt} = rac{	ext{Computation Output (FLOPS)}}{	ext{Power Consumption (Watts)}}
+\text{每瓦性能} = \frac{\text{计算输出 (FLOPS)}}{\text{功耗 (瓦特)}}
 $$
 
 ## 7. AI时代的苹果 (Apple Intelligence)
