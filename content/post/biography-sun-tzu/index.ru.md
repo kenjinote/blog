@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["sun-tzu", "history"]
 image: "eyecatch.jpg"
 slug: "biography-sun-tzu"
+description: "«Если знаешь противника и знаешь себя, сражайся хоть сто раз, опасности не будет»."
 ---
 
 ## Введение

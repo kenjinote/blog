@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["donald-knuth", "history"]
 image: "eyecatch.jpg"
 slug: "biography-donald-knuth"
+description: "En el mundo de la informática, probablemente no haya nadie que no conozca el nombre de Donald E."
 ---
 
 En el mundo de la informática, probablemente no haya nadie que no conozca el nombre de Donald E. Knuth. Conocido como el "padre del análisis de algoritmos", es una gran figura que elevó la programación de una simple técnica al ámbito del "arte". Este artículo profundiza en su vida, su filosofía única y el inmenso impacto que ha tenido en las generaciones futuras.

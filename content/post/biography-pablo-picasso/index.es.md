@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["pablo-picasso", "history"]
 image: "eyecatch.jpg"
 slug: "biography-pablo-picasso"
+description: "Pablo Picasso (1881–1973) fue más que un pintor; fue uno de los \"más grandes artistas del siglo XX\" que revolucionó todos los campos de las artes visuales,"
 ---
 
 Pablo Picasso (1881–1973) fue más que un pintor; fue uno de los "más grandes artistas del siglo XX" que revolucionó todos los campos de las artes visuales, incluyendo la escultura, el grabado, la cerámica e incluso la escenografía. Dejó aproximadamente 150,000 obras, y es conocido no solo por su abrumadora fecundidad, sino también por transformar continuamente su estilo a lo largo de su vida. Este artículo explora la extraordinaria vida de Picasso, la filosofía única que trajo al mundo y su influencia en las generaciones posteriores.

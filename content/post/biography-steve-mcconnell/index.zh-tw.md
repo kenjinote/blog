@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["steve-mcconnell", "history"]
 image: "eyecatch.jpg"
 slug: "biography-steve-mcconnell"
+description: "凡是從事軟體開發的人，都可能見過那本厚厚的名著《代碼大全》（Code Complete）。該書的作者史蒂夫·麥康奈爾（Steve McConnell），將畢生精力致力於為混亂的程式設計工作帶來秩序，並確立真正意義上的「軟體工程」（Software Engineering）。"
 ---
 
 凡是從事軟體開發的人，都可能見過那本厚厚的名著《代碼大全》（Code Complete）。該書的作者史蒂夫·麥康奈爾（Steve McConnell），將畢生精力致力於為混亂的程式設計工作帶來秩序，並確立真正意義上的「軟體工程」（Software Engineering）。本文將深入探討他的生平、獨特的理念，以及他對現代開發領域持續產生的巨大影響。

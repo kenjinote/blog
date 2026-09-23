@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["plato", "history"]
 image: "eyecatch.jpg"
 slug: "biography-plato"
+description: "Plato, salah satu filsuf paling terkemuka dari Yunani Kuno, meletakkan dasar filsafat Barat."
 ---
 
 Plato, salah satu filsuf paling terkemuka dari Yunani Kuno, meletakkan dasar filsafat Barat. Sebagai murid Sokrates dan guru Aristoteles, ia meninggalkan banyak pemikiran untuk generasi mendatang melalui dialog-dialognya. Konsep-konsep seperti "Teori Bentuk" (Ide) sangat memengaruhi tidak hanya filsafat tetapi juga ilmu politik, etika, dan teologi. Kehadirannya begitu luar biasa sehingga filsuf Inggris A.N. Whitehead pernah berkata, "Karakterisasi umum yang paling aman dari tradisi filosofis Eropa adalah bahwa itu terdiri dari serangkaian catatan kaki untuk Plato."

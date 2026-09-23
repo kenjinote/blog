@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["j-r-r-tolkien", "history"]
 image: "eyecatch.jpg"
 slug: "biography-j-r-r-tolkien"
+description: "존 로널드 루엘 톨킨(J.R.R. Tolkien)의 이름을 들으면 가장 먼저 떠오르는 것은 『반지의 제왕』이나 『호빗』이 펼쳐지는 장대한 \"가운데땅(Middle-earth)\"의 세계일 것입니다."
 ---
 
 # J.R.R. 톨킨: 현대 판타지의 아버지의 발자취와 신화의 창조

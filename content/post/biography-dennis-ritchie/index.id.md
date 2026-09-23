@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["dennis-ritchie", "history"]
 image: "eyecatch.jpg"
 slug: "biography-dennis-ritchie"
+description: "Dennis MacAlistair Ritchie (9 September 1941 - 12 Oktober 2011) adalah salah satu tokoh paling penting dan berpengaruh dalam ilmu komputer modern."
 ---
 
 Dennis MacAlistair Ritchie (9 September 1941 - 12 Oktober 2011) adalah salah satu tokoh paling penting dan berpengaruh dalam ilmu komputer modern. Meskipun ia jarang mendapat sorotan yang mencolok seperti Steve Jobs atau Bill Gates, warisan yang ditinggalkannya adalah fondasi dari setiap teknologi yang kita gunakan saat ini. Bahasa "C" dan sistem operasi "UNIX" yang sangat ia kembangkan secara mendalam, terus berdetak di mana-mana di dunia digital modern, dari server internet hingga ponsel cerdas, superkomputer, dan bahkan peralatan rumah tangga.

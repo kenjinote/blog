@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["alan-kay", "history"]
 image: "eyecatch.jpg"
 slug: "biography-alan-kay"
+description: "Alan Kay é um cientista da computação estadunidense, frequentemente chamado de \"pai do computador pessoal\", e um visionário genial que influenciou profunda"
 ---
 
 Alan Kay é um cientista da computação estadunidense, frequentemente chamado de "pai do computador pessoal", e um visionário genial que influenciou profundamente a computação moderna. Sua famosa citação, "A melhor forma de prever o futuro é inventá-lo" (The best way to predict the future is to invent it.), continua a inspirar muitos empreendedores e engenheiros até hoje.

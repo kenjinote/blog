@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["aristotle", "history"]
 image: "eyecatch.jpg"
 slug: "biography-aristotle"
+description: "Conhecido como o \"Pai de Todas as Ciências\" e aquele que construiu o sistema de conhecimento no Ocidente, o filósofo grego antigo Aristóteles (384 a.C."
 ---
 
 Conhecido como o "Pai de Todas as Ciências" e aquele que construiu o sistema de conhecimento no Ocidente, o filósofo grego antigo Aristóteles (384 a.C. - 322 a.C.). Sua busca não se limitou à filosofia, mas se estendeu literalmente a "todas as disciplinas", desde a lógica, ética, ciência política, ciências naturais, biologia, até a poética. Neste artigo, explicaremos a vida turbulenta de Aristóteles, seus pensamentos profundos que ainda são relevantes hoje e a imensurável influência que ele teve na história humana.

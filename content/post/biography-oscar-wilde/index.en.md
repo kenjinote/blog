@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["oscar-wilde", "history"]
 image: "eyecatch.jpg"
 slug: "biography-oscar-wilde"
+description: "In late 19th-century British literary circles, few figures shone more brilliantly—or fell from grace more tragically—than Oscar Wilde."
 ---
 
 In late 19th-century British literary circles, few figures shone more brilliantly—or fell from grace more tragically—than Oscar Wilde. His philosophy of Aestheticism, encapsulated by the doctrine of "art for art's sake," continues to inspire creators and artists to this day. In this article, we delve deeply into his dramatic life, his celebrated body of work, and his enduring legacy.

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["jean-paul-sartre", "history"]
 image: "eyecatch.jpg"
 slug: "biography-jean-paul-sartre"
+description: "Jean-Paul Sartre (1905-1980), philosophe représentant la France du 20ème siècle, a également laissé une empreinte considérable en tant que romancier, drama"
 ---
 
 Jean-Paul Sartre (1905-1980), philosophe représentant la France du 20ème siècle, a également laissé une empreinte considérable en tant que romancier, dramaturge et critique. Sa pensée, connue par l'expression "l'existence précède l'essence", a eu un impact puissant sur le monde de l'après-guerre et est devenue un courant majeur de la pensée contemporaine. Dans cet article, nous plongerons profondément dans sa vie, sa philosophie unique et l'influence qu'il a laissée sur les générations futures.

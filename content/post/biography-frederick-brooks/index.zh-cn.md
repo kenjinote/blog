@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["frederick-brooks", "history"]
 image: "eyecatch.jpg"
 slug: "biography-frederick-brooks"
+description: "只要是从事软件开发的人，想必都曾听过这样一条定律：“向进度落后的软件项目增加人手，只会让项目更加落后。”这被称为“布鲁克斯定律”，是软件工程中最著名的格言之一。提出这一定律的人，正是计算机科学巨星、传奇的项目经理——弗雷德里克·P·布鲁克斯（Frederick P. Brooks, Jr.）。"
 ---
 
 只要是从事软件开发的人，想必都曾听过这样一条定律：“向进度落后的软件项目增加人手，只会让项目更加落后。”这被称为“布鲁克斯定律”，是软件工程中最著名的格言之一。提出这一定律的人，正是计算机科学巨星、传奇的项目经理——弗雷德里克·P·布鲁克斯（Frederick P. Brooks, Jr.）。

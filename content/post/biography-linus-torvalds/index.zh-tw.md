@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["linus-torvalds", "history"]
 image: "eyecatch.jpg"
 slug: "biography-linus-torvalds"
+description: "支撐現代IT基礎設施、在無數系統上運行的作業系統「Linux」。以及，全球開發者每天都在使用的版本控制系統「Git」。創造了這兩個歷史性軟體的，是來自芬蘭的程式設計師林納斯·托瓦茲（Linus Torvalds）。本文將深入探討他所帶來的創新、其背後的獨特哲學，以及對後世產生的不可估量的影響。"
 ---
 
 # 開源巨星：林納斯·托瓦茲的軌跡與哲學

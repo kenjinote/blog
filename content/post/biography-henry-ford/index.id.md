@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["henry-ford", "history"]
 image: "eyecatch.jpg"
 slug: "biography-henry-ford"
+description: "Henry Ford (1863-1947) tidak sekadar menjadi pendiri perusahaan manufaktur mobil; ia menorehkan namanya dalam sejarah sebagai \"Raja Mobil\" yang secara fund"
 ---
 
 Henry Ford (1863-1947) tidak sekadar menjadi pendiri perusahaan manufaktur mobil; ia menorehkan namanya dalam sejarah sebagai "Raja Mobil" yang secara fundamental mengubah struktur industri dan gaya hidup masyarakat pada abad ke-20. Pencapaian terbesarnya bukanlah menemukan mobil, tetapi "mengubah mobil dari barang mewah untuk segelintir orang kaya menjadi sarana transportasi sehari-hari untuk masyarakat umum."

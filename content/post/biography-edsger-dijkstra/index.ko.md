@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["edsger-dijkstra", "history"]
 image: "eyecatch.jpg"
 slug: "biography-edsger-dijkstra"
+description: "에츠허르 W. 다익스트라(Edsger W. Dijkstra, 1930 - 2002)는 현대 소프트웨어 공학 및 컴퓨터 과학의 기반을 다진 가장 위대한 지성 중 한 명입니다."
 ---
 
 에츠허르 W. 다익스트라(Edsger W. Dijkstra, 1930 - 2002)는 현대 소프트웨어 공학 및 컴퓨터 과학의 기반을 다진 가장 위대한 지성 중 한 명입니다. 그가 남긴 수많은 알고리즘과 프로그래밍 패러다임은 오늘날 우리가 일상적으로 사용하는 모든 기술의 밑바탕에 숨 쉬고 있습니다. 본 기사에서는 다익스트라의 생애, 그의 독특한 철학, 그리고 후세에 미친 헤아릴 수 없는 영향에 대해 깊이 파헤쳐 봅니다.

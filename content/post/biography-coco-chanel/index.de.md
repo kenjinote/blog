@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["coco-chanel", "history"]
 image: "eyecatch.jpg"
 slug: "biography-coco-chanel"
+description: "In der Modewelt des 20. Jahrhunderts gibt es wohl keine andere Persönlichkeit, die den Lebensstil der Frauen derart grundlegend verändert hat wie Gabrielle"
 ---
 
 # Coco Chanel: Leben und Philosophie der Revolutionärin, die die Frauen befreite

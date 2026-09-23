@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["mark-zuckerberg", "history"]
 image: "eyecatch.jpg"
 slug: "biography-mark-zuckerberg"
+description: "マーク・エリオット・ザッカーバーグ（Mark Elliot Zuckerberg）は、1984年5月14日、ニューヨーク州ホワイト・プレインズで生まれました。歯科医の父と精神科医の母という恵まれた家庭環境の中、彼は幼い頃からプログラミングに強い関心を示しました。"
 ---
 
 ## 孤独なハッカーから「つながり」の創造者へ

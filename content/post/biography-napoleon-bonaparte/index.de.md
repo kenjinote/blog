@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["napoleon-bonaparte", "history"]
 image: "eyecatch.jpg"
 slug: "biography-napoleon-bonaparte"
+description: "In der Weltgeschichte gibt es nur wenige Persönlichkeiten, die so stark umstritten sind wie Napoleon Bonaparte."
 ---
 
 # Napoleon Bonaparte: Kind der Revolution oder Diktator?

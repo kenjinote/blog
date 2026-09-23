@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["georg-wilhelm-friedrich-hegel", "history"]
 image: "eyecatch.jpg"
 slug: "biography-georg-wilhelm-friedrich-hegel"
+description: "En la historia de la filosofía occidental, el pensador que comenzó con Immanuel Kant y alcanzó el pináculo del idealismo alemán del siglo XIX es Georg Wilh"
 ---
 
 En la historia de la filosofía occidental, el pensador que comenzó con Immanuel Kant y alcanzó el pináculo del idealismo alemán del siglo XIX es Georg Wilhelm Friedrich Hegel (1770–1831). Su vasto y complejo sistema de pensamiento, con conceptos como la "Dialéctica" y el "Espíritu Absoluto", tuvo una influencia sumamente amplia, no solo en su época, sino hasta en Karl Marx, el existencialismo y en la ciencia política e historia contemporáneas. En este artículo, al trazar la vida de Hegel, profundizaremos en el núcleo de su filosofía y su impacto en las generaciones posteriores.

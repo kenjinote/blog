@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["edsger-dijkstra", "history"]
 image: "eyecatch.jpg"
 slug: "biography-edsger-dijkstra"
+description: "エドガー・W・ダイクストラ（Edsger W. Dijkstra, 1930 - 2002）は、現代のソフトウェア工学および計算機科学の基盤を築き上げた最も偉大な知性の一人です。"
 ---
 
 エドガー・W・ダイクストラ（Edsger W. Dijkstra, 1930 - 2002）は、現代のソフトウェア工学および計算機科学の基盤を築き上げた最も偉大な知性の一人です。彼が残した数々のアルゴリズムやプログラミングパラダイムは、今日私たちが日常的に利用しているあらゆるテクノロジーの根底に息づいています。本記事では、ダイクストラの生涯、彼のユニークな哲学、そして後世に与えた計り知れない影響について深く掘り下げます。

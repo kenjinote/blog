@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["franklin-d-roosevelt", "history"]
 image: "eyecatch.jpg"
 slug: "biography-franklin-d-roosevelt"
+description: "富蘭克林·德拉諾·羅斯福（Franklin Delano Roosevelt，簡稱FDR）是美國第32任總統，也是20世紀歷史上最具影響力的領導人之一。他在美國面臨大蕭條和第二次世界大戰的空前危機中領導了國家，並且是美國歷史上唯一一位連任四屆的總統。讓我們深入探討他的一生、政治哲學以及對現代的深遠影響。"
 ---
 
 富蘭克林·德拉諾·羅斯福（Franklin Delano Roosevelt，簡稱FDR）是美國第32任總統，也是20世紀歷史上最具影響力的領導人之一。他在美國面臨大蕭條和第二次世界大戰的空前危機中領導了國家，並且是美國歷史上唯一一位連任四屆的總統。讓我們深入探討他的一生、政治哲學以及對現代的深遠影響。

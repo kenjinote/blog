@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["dennis-ritchie", "history"]
 image: "eyecatch.jpg"
 slug: "biography-dennis-ritchie"
+description: "Dennis MacAlistair Ritchie (9. September 1941 - 12. Oktober 2011) ist eine der wichtigsten und einflussreichsten Persönlichkeiten in der modernen Informatik."
 ---
 
 Dennis MacAlistair Ritchie (9. September 1941 - 12. Oktober 2011) ist eine der wichtigsten und einflussreichsten Persönlichkeiten in der modernen Informatik. Obwohl er selten so im Rampenlicht stand wie Steve Jobs oder Bill Gates, bildet sein Vermächtnis das Fundament für fast alle Technologien, die wir heute nutzen. Die Programmiersprache "C" und das Betriebssystem "UNIX", an deren Entwicklung er maßgeblich beteiligt war, sind überall in unserer modernen digitalen Gesellschaft lebendig – von Internet-Servern über Smartphones und Supercomputer bis hin zu Haushaltsgeräten.

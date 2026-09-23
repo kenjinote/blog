@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["bill-gates", "history"]
 image: "eyecatch.jpg"
 slug: "biography-bill-gates"
+description: "Heute sind Computer auf unseren Schreibtischen und in unseren Taschen eine Selbstverständlichkeit."
 ---
 
 Heute sind Computer auf unseren Schreibtischen und in unseren Taschen eine Selbstverständlichkeit. Bill Gates (William Henry Gates III) ist der größte Mitwirkende, der dieses Konzept des "Personal Computers (PC)" weltweit populär machte und die riesige Softwareindustrie schuf. Er war mehr als nur ein Technologe, er war ein herausragender Geschäftsmann, der sich später in den größten Philanthropen der Welt verwandelte. Seine Lebensgeschichte ist gewissermaßen die Entwicklungsgeschichte der modernen Gesellschaft selbst.

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["mahatma-gandhi", "history"]
 image: "eyecatch.jpg"
 slug: "biography-mahatma-gandhi"
+description: "「目には目を、という考え方は、やがて世界中を盲目にするだろう。」"
 ---
 
 # 平和の使徒・マハトマ・ガンディー：非暴力不服従が変えた世界

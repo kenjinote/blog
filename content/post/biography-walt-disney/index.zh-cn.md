@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["walt-disney", "history"]
 image: "eyecatch.jpg"
 slug: "biography-walt-disney"
+description: "华特·迪士尼（Walter Elias Disney）是一位代表20世纪的“梦想创造者”，他超越了单纯的动画师或电影制作人的范畴。如今，他的名字已成为全世界无人不知的品牌，但在其背后，隐藏着无数的挫折以及克服这些挫折的不屈精神。"
 ---
 
 华特·迪士尼（Walter Elias Disney）是一位代表20世纪的“梦想创造者”，他超越了单纯的动画师或电影制作人的范畴。如今，他的名字已成为全世界无人不知的品牌，但在其背后，隐藏着无数的挫折以及克服这些挫折的不屈精神。本文将带您走进他的生平与哲学，探究他如何将动画这一不成熟的领域升华为艺术，并确立了主题公园这种全新的娱乐形式。

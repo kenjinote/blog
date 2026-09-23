@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["oscar-wilde", "history"]
 image: "eyecatch.jpg"
 slug: "biography-oscar-wilde"
+description: "En los círculos literarios británicos de finales del siglo XIX, ningún autor brilló con mayor esplendor ni conoció una caída más trágica que Oscar Wilde."
 ---
 
 En los círculos literarios británicos de finales del siglo XIX, ningún autor brilló con mayor esplendor ni conoció una caída más trágica que Oscar Wilde. Su filosofía del esteticismo, compendiada bajo la premisa del «arte por el arte», sigue cautivando e influyendo a multitud de creadores y artistas contemporáneos. En este artículo profundizamos en su apasionante vida, su legado literario y la impronta imperecedera que dejó para la posteridad.

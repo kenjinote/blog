@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["mahatma-gandhi", "history"]
 image: "eyecatch.jpg"
 slug: "biography-mahatma-gandhi"
+description: "\"आँख के बदले आँख, पूरी दुनिया को अंधा बना देगी।\""
 ---
 
 # शांति के दूत महात्मा गांधी: कैसे अहिंसक सविनय अवज्ञा ने दुनिया को बदल दिया

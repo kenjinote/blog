@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["linus-torvalds", "history"]
 image: "eyecatch.jpg"
 slug: "biography-linus-torvalds"
+description: "«Linux» — операционная система, лежащая в основе современной ИТ-инфраструктуры и работающая на бесчисленном множестве устройств."
 ---
 
 # Гигант Open Source: Путь и Философия Линуса Торвальдса

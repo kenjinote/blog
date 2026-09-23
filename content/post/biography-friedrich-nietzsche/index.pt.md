@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["friedrich-nietzsche", "history"]
 image: "eyecatch.jpg"
 slug: "biography-friedrich-nietzsche"
+description: "Olá. Hoje, vamos mergulhar profundamente na vida e no pensamento de Friedrich Nietzsche, um filósofo que atingiu o mundo filosófico do século XIX como um m"
 ---
 
 Olá. Hoje, vamos mergulhar profundamente na vida e no pensamento de Friedrich Nietzsche, um filósofo que atingiu o mundo filosófico do século XIX como um meteorito gigante e teve um impacto incomensurável no pensamento moderno.

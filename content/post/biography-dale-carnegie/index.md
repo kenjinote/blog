@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["dale-carnegie", "history"]
 image: "eyecatch.jpg"
 slug: "biography-dale-carnegie"
+description: "現代のビジネスパーソンやテック業界のリーダーたちに、いまなお多大な影響を与え続けている自己啓発の金字塔。それが『人を動かす（How to Win Friends and Influence People）』や『道は開ける（How to Stop Worrying and Start Living）』といった名著です。"
 ---
 
 現代のビジネスパーソンやテック業界のリーダーたちに、いまなお多大な影響を与え続けている自己啓発の金字塔。それが『人を動かす（How to Win Friends and Influence People）』や『道は開ける（How to Stop Worrying and Start Living）』といった名著です。これらの生みの親であるデール・カーネギー（Dale Carnegie, 1888–1955）は、いかにして人間関係の原則を体系化し、世界中の人々の心を動かすに至ったのでしょうか。本記事では、彼の波乱に満ちた生涯から、その哲学の真髄、そして現代に受け継がれるレガシーまでを深く掘り下げていきます。

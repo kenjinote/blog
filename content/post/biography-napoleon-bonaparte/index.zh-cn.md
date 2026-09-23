@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["napoleon-bonaparte", "history"]
 image: "eyecatch.jpg"
 slug: "biography-napoleon-bonaparte"
+description: "在世界历史上，很少有人像拿破仑·波拿巴那样毁誉参半。“我的字典里没有不可能”这句名言为人们所熟知，他不仅是一位军事天才，更是一位奠定了现代欧洲法律和社会基础的政治家。在本文中，我们将深入探讨他充满戏剧性的一生与哲学，以及他对后世产生的影响。"
 ---
 
 # 拿破仑·波拿巴：革命之子还是独裁者？

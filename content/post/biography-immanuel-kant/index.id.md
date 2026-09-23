@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["immanuel-kant", "history"]
 image: "eyecatch.jpg"
 slug: "biography-immanuel-kant"
+description: "Bintang raksasa yang tidak mungkin diabaikan saat membahas filsafat modern. Ia adalah Immanuel Kant (1724–1804)."
 ---
 
 ## Pengantar: Kehidupan yang Akurat seperti Jam dan Perubahan Paradigma Terbesar dalam Filsafat

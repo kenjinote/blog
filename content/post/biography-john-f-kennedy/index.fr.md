@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["john-f-kennedy", "history"]
 image: "eyecatch.jpg"
 slug: "biography-john-f-kennedy"
+description: "John Fitzgerald Kennedy (JFK), le 35e président des États-Unis, était un leader charismatique qui a guidé la nation à travers le tournant historique de la"
 ---
 
 John Fitzgerald Kennedy (JFK), le 35e président des États-Unis, était un leader charismatique qui a guidé la nation à travers le tournant historique de la guerre froide. Bien que son mandat n'ait duré que 1 036 jours, sa philosophie et ses actions continuent d'inspirer les peuples du monde entier aujourd'hui. Cet article se penche sur sa vie, sa philosophie fondamentale et son impact incommensurable jusqu'à nos jours.

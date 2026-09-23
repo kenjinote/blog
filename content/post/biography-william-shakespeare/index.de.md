@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["william-shakespeare", "history"]
 image: "eyecatch.jpg"
 slug: "biography-william-shakespeare"
+description: "William Shakespeare (1564 - 1616) gilt weithin als der größte Dramatiker und Dichter der Geschichte und wird oft als englischer Nationaldichter bezeichnet."
 ---
 
 William Shakespeare (1564 - 1616) gilt weithin als der größte Dramatiker und Dichter der Geschichte und wird oft als englischer Nationaldichter bezeichnet. Seine Werke haben die Grenzen von Zeit und Kultur überschritten und werden auch über 400 Jahre später noch weltweit aufgeführt und gelesen. Seine lebendigen Darstellungen universeller menschlicher Emotionen und Konflikte sind tief in der modernen Literatur, Kunst und sogar in unserer Alltagssprache verwurzelt.

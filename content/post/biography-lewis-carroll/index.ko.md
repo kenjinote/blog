@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["lewis-carroll", "history"]
 image: "eyecatch.jpg"
 slug: "biography-lewis-carroll"
+description: "'루이스 캐럴'이라는 이름을 들으면 많은 사람들이 전 세계적으로 사랑받는 동화 『이상한 나라의 앨리스』의 작가를 떠올릴 것입니다. 하지만 그의 본명은 찰스 루트위지 도지슨입니다."
 ---
 
 ## 머리말

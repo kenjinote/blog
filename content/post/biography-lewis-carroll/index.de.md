@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["lewis-carroll", "history"]
 image: "eyecatch.jpg"
 slug: "biography-lewis-carroll"
+description: "Wenn man den Namen „Lewis Carroll“ hört, denken viele Menschen an den Autor des weltweit beliebten Kinderbuchs „Alice im Wunderland“."
 ---
 
 ## Einleitung

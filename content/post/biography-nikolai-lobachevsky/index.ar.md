@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["nikolai-lobachevsky", "history"]
 image: "eyecatch.jpg"
 slug: "biography-nikolai-lobachevsky"
+description: "في تاريخ الرياضيات، قلائل هم الأشخاص الذين قلبوا الفطرة السليمة القائمة رأساً على عقب وقدموا رؤية جديدة للعالم."
 ---
 
 # نيكولاي لوباتشيفسكي: 'كوبرنيكوس الهندسة' الذي فتح أبواب الهندسة اللاإقليدية

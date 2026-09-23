@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["lewis-carroll", "history"]
 image: "eyecatch.jpg"
 slug: "biography-lewis-carroll"
+description: "When hearing the name \"Lewis Carroll,\" many people think of the author of the globally beloved children's book \"Alice's Adventures in Wonderland.\" However,"
 ---
 
 ## Introduction

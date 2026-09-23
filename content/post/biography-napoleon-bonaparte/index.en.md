@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["napoleon-bonaparte", "history"]
 image: "eyecatch.jpg"
 slug: "biography-napoleon-bonaparte"
+description: "In world history, few figures are as intensely praised and condemned as Napoleon Bonaparte."
 ---
 
 # Napoleon Bonaparte: Child of the Revolution or Dictator?

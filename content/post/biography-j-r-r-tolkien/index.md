@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["j-r-r-tolkien", "history"]
 image: "eyecatch.jpg"
 slug: "biography-j-r-r-tolkien"
+description: "ジョン・ロナルド・ロウエル・トールキン（J.R.R. Tolkien）の名前を聞いて、多くの人が真っ先に思い浮かべるのは『指輪物語』や『ホビットの冒険』が展開される壮大な「中つ国（Middle-earth）」の世界でしょう。"
 ---
 
 # J.R.R. トールキン：現代ファンタジーの父の軌跡と神話の創造

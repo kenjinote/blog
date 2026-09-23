@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["nikolai-lobachevsky", "history"]
 image: "eyecatch.jpg"
 slug: "biography-nikolai-lobachevsky"
+description: "수학의 역사에서 기존의 상식을 뿌리째 뒤집고 새로운 세계관을 제시한 인물은 손에 꼽을 정도다. 그 중에서도 니콜라이 이바노비치 로바쳅스키(Nikolai Ivanovich Lobachevsky, 1792–1856)는 2,000년 이상 절대적인 진리로 여겨져 온 '유클리드 기하학'"
 ---
 
 # 니콜라이 로바쳅스키: 비유클리드 기하학의 문을 연 '기하학의 코페르니쿠스'

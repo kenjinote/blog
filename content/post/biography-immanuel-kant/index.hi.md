@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["immanuel-kant", "history"]
 image: "eyecatch.jpg"
 slug: "biography-immanuel-kant"
+description: "आधुनिक दर्शन की बात करते समय, एक महान व्यक्ति जिसे हम कभी नजरअंदाज नहीं कर सकते। वह हैं इमैनुएल कांट (Immanuel Kant, 1724–1804)। उनका जन्म प्रशिया (अब रूसी"
 ---
 
 ## परिचय: घड़ी की तरह सटीक जीवन से उत्पन्न दर्शनशास्त्र का एक विशाल प्रतिमान बदलाव

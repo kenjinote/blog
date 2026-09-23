@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["abraham-lincoln", "history"]
 image: "eyecatch.jpg"
 slug: "biography-abraham-lincoln"
+description: "美国第16任总统亚伯拉罕·林肯（Abraham Lincoln）。他被广泛誉为“解放黑奴之父”，是度过了建国以来最大危机——南北战争，并阻止了国家分裂的人物。他所说的“民有、民治、民享”的政府，作为民主主义的根本理念，至今仍被人们传颂。"
 ---
 
 美国第16任总统亚伯拉罕·林肯（Abraham Lincoln）。他被广泛誉为“解放黑奴之父”，是度过了建国以来最大危机——南北战争，并阻止了国家分裂的人物。他所说的“民有、民治、民享”的政府，作为民主主义的根本理念，至今仍被人们传颂。

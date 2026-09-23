@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["linus-torvalds", "history"]
 image: "eyecatch.jpg"
 slug: "biography-linus-torvalds"
+description: "\"Linux\" (लिनक्स), वह ओएस (ऑपरेटिंग सिस्टम) जो आधुनिक आईटी बुनियादी ढांचे को आधार प्रदान करता है और अनगिनत प्रणालियों पर चलता है। और \"Git\" (गिट), वह संस्करण"
 ---
 
 # ओपन सोर्स के दिग्गज: लिनस टोरवाल्ड्स का पथ और दर्शन

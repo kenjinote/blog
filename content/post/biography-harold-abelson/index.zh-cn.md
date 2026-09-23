@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["harold-abelson", "history"]
 image: "eyecatch.jpg"
 slug: "biography-harold-abelson"
+description: "在计算机科学的历史上，有一位人物在“如何教授和分享技术”方面产生了与技术本身同等重大的影响。他就是麻省理工学院（MIT）的教授，在编程教育和自由软件运动中扮演核心角色的哈罗德·阿贝尔森（Harold Abelson），通常被称为“哈尔·阿贝尔森”。"
 ---
 
 在计算机科学的历史上，有一位人物在“如何教授和分享技术”方面产生了与技术本身同等重大的影响。他就是麻省理工学院（MIT）的教授，在编程教育和自由软件运动中扮演核心角色的哈罗德·阿贝尔森（Harold Abelson），通常被称为“哈尔·阿贝尔森”。

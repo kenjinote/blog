@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["andrew-carnegie", "history"]
 image: "eyecatch.jpg"
 slug: "biography-andrew-carnegie"
+description: "Andrew Carnegie (1835-1919), le \"roi de l'acier\" qui représente la révolution industrielle américaine."
 ---
 
 Andrew Carnegie (1835-1919), le "roi de l'acier" qui représente la révolution industrielle américaine. Sa vie est souvent racontée comme un cas typique du "rêve américain" où un pauvre immigrant écossais a amassé une immense richesse, tout en étant également un philanthrope qui prônait l'"Évangile de la richesse" et a restitué toute sa fortune à la société. Dans cet article, nous explorerons en profondeur sa vie dramatique, sa philosophie qui perdure encore aujourd'hui et son influence sur les générations futures.

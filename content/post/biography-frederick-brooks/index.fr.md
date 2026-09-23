@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["frederick-brooks", "history"]
 image: "eyecatch.jpg"
 slug: "biography-frederick-brooks"
+description: "Quiconque participe au développement de logiciels a probablement entendu la règle : « Ajouter de la main-d'œuvre à un projet logiciel en retard le retarde"
 ---
 
 Quiconque participe au développement de logiciels a probablement entendu la règle : « Ajouter de la main-d'œuvre à un projet logiciel en retard le retarde encore plus. » Ceci est connu sous le nom de « Loi de Brooks » et constitue l'une des maximes les plus célèbres du génie logiciel. L'homme qui a proposé cette loi était Frederick P. Brooks, Jr., un géant de l'informatique et un chef de projet légendaire.

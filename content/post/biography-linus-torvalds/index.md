@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["linus-torvalds", "history"]
 image: "eyecatch.jpg"
 slug: "biography-linus-torvalds"
+description: "現代のITインフラを支え、数え切れないほどのシステムで稼働しているOS「Linux」。そして、世界中の開発者が日々利用するバージョン管理システム「Git」。これら2つの歴史的ソフトウェアを生み出したのが、フィンランド出身のプログラマー、リーナス・トーバルズ（Linus Torvalds）です。"
 ---
 
 # オープンソースの巨星：リーナス・トーバルズの軌跡と哲学

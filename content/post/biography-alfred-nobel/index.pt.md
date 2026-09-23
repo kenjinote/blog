@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["alfred-nobel", "history"]
 image: "eyecatch.jpg"
 slug: "biography-alfred-nobel"
+description: "Alfred Nobel acumulou uma vasta fortuna através da invenção da dinamite e estabeleceu o Prêmio Nobel com o seu legado."
 ---
 
 Alfred Nobel acumulou uma vasta fortuna através da invenção da dinamite e estabeleceu o Prêmio Nobel com o seu legado. A sua vida incorporou a luz e a sombra trazidas pelo desenvolvimento da ciência e da tecnologia.

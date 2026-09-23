@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["soichiro-honda", "history"]
 image: "eyecatch.jpg"
 slug: "biography-soichiro-honda"
+description: "Soichiro Honda, der Mann, der die japanische Fertigungsindustrie (Monozukuri) symbolisiert und in einer Generation das Weltunternehmen \"Honda\" aufbaute."
 ---
 
 Soichiro Honda, der Mann, der die japanische Fertigungsindustrie (Monozukuri) symbolisiert und in einer Generation das Weltunternehmen "Honda" aufbaute. Sein Leben ist geprägt von einem endlosen Forscherdrang nach Technologie und einem unbeugsamen Geist, der von "Träumen" angetrieben wurde. In diesem Artikel tauchen wir tief in sein Leben ein – wie er aus einem einfachen Mechaniker das weltweite Unternehmen HONDA schuf, seine einzigartige Philosophie und das Vermächtnis, das in der modernen Zeit weiterlebt.

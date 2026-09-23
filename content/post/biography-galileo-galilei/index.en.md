@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["galileo-galilei", "history"]
 image: "eyecatch.jpg"
 slug: "biography-galileo-galilei"
+description: "Galileo Galilei (1564 - 1642) is an Italian physicist, astronomer, and philosopher known as the \"Father of Modern Science.\" His greatest achievement lies n"
 ---
 
 Galileo Galilei (1564 - 1642) is an Italian physicist, astronomer, and philosopher known as the "Father of Modern Science." His greatest achievement lies not merely in his new discoveries, but in fundamentally overturning the very "method" by which humanity understands the natural world. Positivism based on observational data and the description of nature using mathematics became the firm foundation of the scientific revolution that followed.

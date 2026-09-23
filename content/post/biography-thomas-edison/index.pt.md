@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["thomas-edison", "history"]
 image: "eyecatch.jpg"
 slug: "biography-thomas-edison"
+description: "\"Genialidade é 1% de inspiração e 99% de transpiração.\" Thomas Alva Edison (1847-1931), que deixou estas palavras, é um dos inventores mais prolíficos e in"
 ---
 
 "Genialidade é 1% de inspiração e 99% de transpiração." Thomas Alva Edison (1847-1931), que deixou estas palavras, é um dos inventores mais prolíficos e influentes da história da humanidade. Com mais de 1.000 patentes adquiridas durante sua vida, as realizações do homem conhecido como o "Mago de Menlo Park" lançaram as bases para a tecnologia da sociedade moderna. Neste artigo, mergulhamos profundamente na vida turbulenta de Edison, na filosofia inabalável por trás dela e em seu impacto duradouro nos dias de hoje.

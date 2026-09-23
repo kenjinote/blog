@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["martin-fowler", "history"]
 image: "eyecatch.jpg"
 slug: "biography-martin-fowler"
+description: "In der modernen Softwareentwicklung vergeht kaum ein Tag, an dem man nicht Begriffe wie „Agile“, „Refactoring“ oder „Microservices“ hört."
 ---
 
 In der modernen Softwareentwicklung vergeht kaum ein Tag, an dem man nicht Begriffe wie „Agile“, „Refactoring“ oder „Microservices“ hört. Die Person, die diese Konzepte in der gesamten Branche populär gemacht und die Softwaretechnik grundlegend verändert hat, ist Martin Fowler. In diesem Artikel tauchen wir tief ein in das Leben, die zugrundeliegende Philosophie und den nachhaltigen Einfluss dieses Programmierers, Autors und Denkers.

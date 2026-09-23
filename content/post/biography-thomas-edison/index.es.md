@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["thomas-edison", "history"]
 image: "eyecatch.jpg"
 slug: "biography-thomas-edison"
+description: "\"El genio es uno por ciento de inspiración y un noventa y nueve por ciento de transpiración\"."
 ---
 
 "El genio es uno por ciento de inspiración y un noventa y nueve por ciento de transpiración". Thomas Alva Edison (1847-1931), quien dejó estas palabras, es uno de los inventores más prolíficos e influyentes en la historia de la humanidad. Con más de 1.000 patentes adquiridas durante su vida, los logros del hombre conocido como el "Mago de Menlo Park" sentaron las bases de la tecnología de la sociedad moderna. En este artículo, profundizamos en la vida turbulenta de Edison, la firme filosofía que la sustenta y su impacto duradero en la actualidad.

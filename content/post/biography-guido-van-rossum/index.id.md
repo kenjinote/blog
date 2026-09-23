@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["guido-van-rossum", "history"]
 image: "eyecatch.jpg"
 slug: "biography-guido-van-rossum"
+description: "\"Python\" adalah salah satu bahasa pemrograman paling populer di dunia. Dikenal sebagai penciptanya, Guido van Rossum adalah seorang programmer asal Belanda."
 ---
 
 "Python" adalah salah satu bahasa pemrograman paling populer di dunia. Dikenal sebagai penciptanya, Guido van Rossum adalah seorang programmer asal Belanda. Bahasa yang ia ciptakan kini menjadi hal yang sangat diperlukan dalam berbagai bidang seperti AI, ilmu data, dan pengembangan web. Artikel ini akan menggali lebih dalam mengenai perjalanan hidupnya, filosofi yang mendasari desain Python, serta seberapa besar pengaruhnya terhadap teknologi di masa depan.

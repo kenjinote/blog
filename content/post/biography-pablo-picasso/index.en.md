@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["pablo-picasso", "history"]
 image: "eyecatch.jpg"
 slug: "biography-pablo-picasso"
+description: "Pablo Picasso (1881–1973) was not merely a painter but one of the \"greatest artists of the 20th century\" who revolutionized every field of visual arts, inc"
 ---
 
 Pablo Picasso (1881–1973) was not merely a painter but one of the "greatest artists of the 20th century" who revolutionized every field of visual arts, including sculpture, printmaking, ceramics, and even stage design. He left behind approximately 150,000 works and is known not only for his overwhelming prolificacy but also for continuously changing his artistic style throughout his life. This article explores Picasso's extraordinary life, the unique philosophy he brought to the world, and his influence on later generations.

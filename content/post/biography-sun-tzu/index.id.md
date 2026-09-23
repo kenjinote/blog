@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["sun-tzu", "history"]
 image: "eyecatch.jpg"
 slug: "biography-sun-tzu"
+description: "\"Jika Anda mengenali musuh dan mengenali diri Anda sendiri, Anda tidak perlu takut dengan hasil dari seratus pertempuran.\" Kutipan terkenal ini, yang serin"
 ---
 
 ## Pengantar

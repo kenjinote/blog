@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["mahatma-gandhi", "history"]
 image: "eyecatch.jpg"
 slug: "biography-mahatma-gandhi"
+description: "\"Olho por olho e o mundo acabará cego.\""
 ---
 
 # Apóstolo da Paz Mahatma Gandhi: Como a desobediência civil não violenta mudou o mundo

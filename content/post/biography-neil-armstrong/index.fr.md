@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["neil-armstrong", "history"]
 image: "eyecatch.jpg"
 slug: "biography-neil-armstrong"
+description: "« C'est un petit pas pour un homme, un bond de géant pour l'humanité » (That's one small step for man, one giant leap for mankind)."
 ---
 
 « C'est un petit pas pour un homme, un bond de géant pour l'humanité » (That's one small step for man, one giant leap for mankind).

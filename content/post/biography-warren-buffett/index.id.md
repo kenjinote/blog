@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["warren-buffett", "history"]
 image: "eyecatch.jpg"
 slug: "biography-warren-buffett"
+description: "Warren Buffett, dikenal sebagai investor paling sukses di dunia. Dengan julukan \"Sage of Omaha\", ia tidak hanya sekadar miliarder yang mengumpulkan kekayaa"
 ---
 
 Warren Buffett, dikenal sebagai investor paling sukses di dunia. Dengan julukan "Sage of Omaha", ia tidak hanya sekadar miliarder yang mengumpulkan kekayaan luar biasa, tetapi terus memberikan pengaruh besar kepada orang-orang di seluruh dunia dalam filosofi investasi, etika, dan filantropi. Artikel ini akan menggali lebih dalam bagaimana ia menjadi dewa investasi, kehidupannya dan filosofi investasinya yang unik, serta warisan yang ia tinggalkan untuk generasi mendatang.

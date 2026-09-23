@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["laozi", "history"]
 image: "eyecatch.jpg"
 slug: "biography-laozi"
+description: "Laozi (Lao-Tsé), proeminente filósofo da China Antiga, é reverenciado como o fundador do taoísmo."
 ---
 
 Laozi (Lao-Tsé), proeminente filósofo da China Antiga, é reverenciado como o fundador do taoísmo. Sua principal obra, o *Daodejing* (Tao Te Ching), continua sendo lida e relida em todo o mundo após mais de dois mil anos, inspirando inúmeras gerações. Enquanto Confúcio, pai do confucionismo, pregava virtudes morais estruturadas pela ação humana, como o rito (*Li*) e a benevolência (*Ren*), Laozi defendia a harmonia com o *Dao* (o Caminho) — o princípio primordial do cosmos — e a prática do *Wu Wei* (não-ação ou ação natural), vivendo em conformidade espontânea com as leis da natureza.

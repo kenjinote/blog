@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["donald-knuth", "history"]
 image: "eyecatch.jpg"
 slug: "biography-donald-knuth"
+description: "컴퓨터 과학의 세계에서 도널드 E. 크누스(Donald E. Knuth)의 이름을 모르는 사람은 없을 것입니다. 그는 '알고리즘 분석의 아버지'로 알려져 있으며, 프로그래밍을 단순한 기술에서 '예술(Art)'의 경지로 승화시킨 위대한 인물입니다."
 ---
 
 컴퓨터 과학의 세계에서 도널드 E. 크누스(Donald E. Knuth)의 이름을 모르는 사람은 없을 것입니다. 그는 '알고리즘 분석의 아버지'로 알려져 있으며, 프로그래밍을 단순한 기술에서 '예술(Art)'의 경지로 승화시킨 위대한 인물입니다. 본 기사에서는 그의 생애와 독자적인 철학, 그리고 후세에 미친 헤아릴 수 없는 영향에 대해 깊이 파헤쳐 봅니다.

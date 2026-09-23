@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["neil-armstrong", "history"]
 image: "eyecatch.jpg"
 slug: "biography-neil-armstrong"
+description: "\"هذه خطوة صغيرة لرجل، ولكنها قفزة عملاقة للبشرية\" (That's one small step for man, one giant leap for mankind)."
 ---
 
 "هذه خطوة صغيرة لرجل، ولكنها قفزة عملاقة للبشرية" (That's one small step for man, one giant leap for mankind).

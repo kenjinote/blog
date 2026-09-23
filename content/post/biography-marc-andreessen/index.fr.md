@@ -5,6 +5,7 @@ image: eyecatch.jpg
 tags: ["marc-andreessen", "history"]
 title: "L'homme qui crée l'avenir depuis l'aube d'Internet : La vie et la philosophie de Marc Andreessen"
 slug: "biography-marc-andreessen"
+description: "L'homme qui a rendu l'Internet moderne omniprésent et qui continue de façonner le monde en investissant massivement dans l'avenir de la technologie : il s'"
 ---
 
 L'homme qui a rendu l'Internet moderne omniprésent et qui continue de façonner le monde en investissant massivement dans l'avenir de la technologie : il s'agit de Marc Andreessen. L'un des créateurs du navigateur web et cofondateur de la société de capital-risque représentative de la Silicon Valley, "Andreessen Horowitz (a16z)", son parcours se confond avec l'histoire du développement d'Internet.

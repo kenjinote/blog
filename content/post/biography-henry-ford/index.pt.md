@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["henry-ford", "history"]
 image: "eyecatch.jpg"
 slug: "biography-henry-ford"
+description: "Henry Ford (1863-1947) foi além de ser apenas o fundador de uma empresa de fabricação de automóveis; ele gravou seu nome na história como o \"Rei do Automóv"
 ---
 
 Henry Ford (1863-1947) foi além de ser apenas o fundador de uma empresa de fabricação de automóveis; ele gravou seu nome na história como o "Rei do Automóvel" que transformou fundamentalmente a estrutura industrial e o estilo de vida das pessoas no século XX. Sua maior conquista não foi inventar o automóvel, mas "transformar o automóvel de um item de luxo para poucos ricos em um meio de transporte diário para as massas".

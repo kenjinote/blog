@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["william-shakespeare", "history"]
 image: "eyecatch.jpg"
 slug: "biography-william-shakespeare"
+description: "William Shakespeare (1564 - 1616) is widely regarded as the greatest playwright and poet in history, often called England's national poet."
 ---
 
 William Shakespeare (1564 - 1616) is widely regarded as the greatest playwright and poet in history, often called England's national poet. His works have transcended the barriers of time and culture, and are still performed and read worldwide over 400 years later. His vibrant depictions of universal human emotions and conflicts are deeply rooted in modern literature, art, and even our everyday language.

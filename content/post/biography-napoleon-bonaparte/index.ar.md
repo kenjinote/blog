@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["napoleon-bonaparte", "history"]
 image: "eyecatch.jpg"
 slug: "biography-napoleon-bonaparte"
+description: "في تاريخ العالم، قلة من الشخصيات التي تباينت حولها الآراء مثل نابليون بونابرت. يُعرف بمقولته الشهيرة \"كلمة مستحيل ليست في قاموسي\"، ولم يكن مجرد عبقري عسكري"
 ---
 
 # نابليون بونابرت: ابن الثورة أم دكتاتور؟

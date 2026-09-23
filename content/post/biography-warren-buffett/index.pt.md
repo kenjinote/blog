@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["warren-buffett", "history"]
 image: "eyecatch.jpg"
 slug: "biography-warren-buffett"
+description: "Conhecido como o investidor mais bem-sucedido do mundo, Warren Buffett. Apelidado de \"Oráculo de Omaha\", ele não se limita ao papel de um bilionário que ac"
 ---
 
 Conhecido como o investidor mais bem-sucedido do mundo, Warren Buffett. Apelidado de "Oráculo de Omaha", ele não se limita ao papel de um bilionário que acumulou uma fortuna colossal; ele continua a exercer uma profunda influência sobre pessoas no mundo inteiro no que diz respeito à filosofia de investimento, ética e filantropia. Neste artigo, vamos explorar profundamente como ele se tornou o deus dos investimentos, sua vida, sua filosofia de investimento única e o seu legado para as gerações futuras.

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["georg-wilhelm-friedrich-hegel", "history"]
 image: "eyecatch.jpg"
 slug: "biography-georg-wilhelm-friedrich-hegel"
+description: "In the history of Western philosophy, the thinker who began with Immanuel Kant and reached the pinnacle of 19th-century German Idealism is Georg Wilhelm Fr"
 ---
 
 In the history of Western philosophy, the thinker who began with Immanuel Kant and reached the pinnacle of 19th-century German Idealism is Georg Wilhelm Friedrich Hegel (1770–1831). His intricate and grand philosophical system of "dialectics" and the "Absolute Spirit" had an extremely broad influence, not only on his contemporaries but also on Karl Marx, existentialism, and modern political science and history. In this article, we will trace Hegel's life and delve deeply into the core of his philosophy and his influence on later generations.

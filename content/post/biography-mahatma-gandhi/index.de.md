@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["mahatma-gandhi", "history"]
 image: "eyecatch.jpg"
 slug: "biography-mahatma-gandhi"
+description: "„Auge um Auge führt nur dazu, dass die ganze Welt erblindet.“"
 ---
 
 # Friedensapostel Mahatma Gandhi: Wie gewaltloser ziviler Ungehorsam die Welt veränderte

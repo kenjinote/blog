@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["j-r-r-tolkien", "history"]
 image: "eyecatch.jpg"
 slug: "biography-j-r-r-tolkien"
+description: "En entendant le nom de John Ronald Reuel Tolkien (J.R.R. Tolkien), la plupart des gens pensent d'abord au vaste monde de la « Terre du Milieu » (Middle-ear"
 ---
 
 # J.R.R. Tolkien : La trajectoire du père de la fantasy moderne et la création d'un mythe

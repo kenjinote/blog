@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["coco-chanel", "history"]
 image: "eyecatch.jpg"
 slug: "biography-coco-chanel"
+description: "In the 20th-century fashion world, perhaps no one has fundamentally overturned women's lifestyles quite like Gabrielle \"Coco\" Chanel."
 ---
 
 # Coco Chanel: The Life and Philosophy of the Revolutionary Who Liberated Women

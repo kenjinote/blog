@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["car-hoare", "history"]
 image: "eyecatch.jpg"
 slug: "biography-car-hoare"
+description: "Sir Charles Antony Richard Hoare (communément appelé Tony Hoare, 1934–2026) était un grand informaticien qui a jeté les bases du génie logiciel moderne et"
 ---
 
 Sir Charles Antony Richard Hoare (communément appelé Tony Hoare, 1934–2026) était un grand informaticien qui a jeté les bases du génie logiciel moderne et des langages de programmation. Ses réalisations, laissées derrière lui après son décès en mars 2026 à l'âge de 92 ans, insufflent la vie à chaque système que nous utilisons au quotidien. Dans cet article, nous plongeons profondément dans sa vie, sa philosophie unique et l'impact incommensurable qu'il a eu sur les générations futures.

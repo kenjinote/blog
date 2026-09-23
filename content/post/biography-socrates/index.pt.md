@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["socrates", "history"]
 image: "eyecatch.jpg"
 slug: "biography-socrates"
+description: "Sócrates (c. 470 a.C. – 399 a.C.), o grande pensador que lançou as bases da filosofia ocidental."
 ---
 
 Sócrates (c. 470 a.C. – 399 a.C.), o grande pensador que lançou as bases da filosofia ocidental. Embora nunca tenha deixado uma única obra escrita, seus pensamentos e seu intenso modo de vida foram transmitidos à era moderna através dos diálogos escritos por seus discípulos, como Platão e Xenofonte. Suas abordagens, como a "Sabedoria da Ignorância" e o "Método Socrático", não eram meramente uma busca por conhecimento, mas uma poderosa antítese à questão humana universal de como viver uma vida boa. Este artigo investiga profundamente a vida de Sócrates, que se envolveu repetidamente em diálogos com jovens nas esquinas da antiga Atenas, e a imensurável influência que ele teve nas gerações futuras.

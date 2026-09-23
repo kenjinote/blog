@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["nelson-mandela", "history"]
 image: "eyecatch.jpg"
 slug: "biography-nelson-mandela"
+description: "Нельсон Мандела глубоко запечатлен в памяти людей во всем мире как один из величайших лидеров 20-го века."
 ---
 
 ## Введение: Долгий путь к свободе

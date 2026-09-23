@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["lewis-carroll", "history"]
 image: "eyecatch.jpg"
 slug: "biography-lewis-carroll"
+description: "عند سماع اسم \"لويس كارول\"، يتبادر إلى ذهن الكثيرين مؤلف كتاب الأطفال المحبوب عالميًا \"مغامرات أليس في بلاد العجائب\"."
 ---
 
 ## مقدمة

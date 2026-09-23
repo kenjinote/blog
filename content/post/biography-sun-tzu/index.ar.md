@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["sun-tzu", "history"]
 image: "eyecatch.jpg"
 slug: "biography-sun-tzu"
+description: "\"إذا كنت تعرف العدو وتعرف نفسك، فلا داعي للخوف من نتيجة مائة معركة.\" هذا الاقتباس الشهير، الذي يتم الاستشهاد به بشكل متكرر حتى في مشاهد الأعمال الحديثة، تر"
 ---
 
 ## مقدمة

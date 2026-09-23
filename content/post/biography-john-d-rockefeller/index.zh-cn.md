@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["john-d-rockefeller", "history"]
 image: "eyecatch.jpg"
 slug: "biography-john-d-rockefeller"
+description: "19世纪后半叶至20世纪初，有一位人物不仅对美国，更对全球经济产生了巨大影响。他的名字叫约翰·戴维森·洛克菲勒（John Davison Rockefeller）。"
 ---
 
 19世纪后半叶至20世纪初，有一位人物不仅对美国，更对全球经济产生了巨大影响。他的名字叫约翰·戴维森·洛克菲勒（John Davison Rockefeller）。他创立了标准石油公司（Standard Oil），通过压倒性的垄断积累了据称是史上最高额的巨额财富，作为“石油大王”而广为人知。然而，他真正的了不起之处不仅在于财富的积累，更在于确立了现代资本主义系统，并将对后世产生深远影响的史无前例的慈善事业体系化。在本文中，我们将深入探讨他充满波折的一生、独特的商业哲学，以及他给现代社会留下的伟大遗产。

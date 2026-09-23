@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["benjamin-franklin", "history"]
 image: "eyecatch.jpg"
 slug: "biography-benjamin-franklin"
+description: "Quando se ouve o nome de Benjamin Franklin (1706–1790), muitas pessoas podem pensar primeiro no retrato gentil da nota de 100 dólares dos Estados Unidos."
 ---
 
 Quando se ouve o nome de Benjamin Franklin (1706–1790), muitas pessoas podem pensar primeiro no retrato gentil da nota de 100 dólares dos Estados Unidos. No entanto, sua verdadeira figura não pode ser contida na estrutura política de um "Pai Fundador". Impressor, escritor, cientista, inventor, diplomata e filósofo — Franklin foi um raro "polímata" (gênio universal) que deixou uma marca histórica em todos os campos.

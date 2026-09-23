@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["martin-luther-king-jr", "history"]
 image: "eyecatch.jpg"
 slug: "biography-martin-luther-king-jr"
+description: "Martin Luther King Jr. (15. Januar 1929 – 4. April 1968) war ein US-amerikanischer baptistischer Geistlicher und der prominenteste Führer der Bürgerrechtsb"
 ---
 
 Martin Luther King Jr. (15. Januar 1929 – 4. April 1968) war ein US-amerikanischer baptistischer Geistlicher und der prominenteste Führer der Bürgerrechtsbewegung der Afroamerikaner. Seine Philosophie der „gewaltfreien direkten Aktion“ war die treibende Kraft bei der Überwindung der Rassentrennung in der amerikanischen Gesellschaft und beeinflusst auch heute noch zahlreiche Menschenrechtsbewegungen zutiefst.

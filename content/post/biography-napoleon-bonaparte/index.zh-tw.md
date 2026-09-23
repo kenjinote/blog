@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["napoleon-bonaparte", "history"]
 image: "eyecatch.jpg"
 slug: "biography-napoleon-bonaparte"
+description: "在世界史中，很少有像拿破崙·波拿巴（Napoleon Bonaparte）這樣毀譽參半的人物。以「在我的字典裡沒有『不可能』這個詞」這句名言而聞名的他，不僅僅是一位軍事天才，更是一位為現代歐洲法制與社會基礎奠定基石的政治家。本篇文章將深入探討他戲劇性的一生與哲學，以及對後世所帶來的影響。"
 ---
 
 # 拿破崙·波拿巴：革命之子，還是獨裁者？

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["mahatma-gandhi", "history"]
 image: "eyecatch.jpg"
 slug: "biography-mahatma-gandhi"
+description: "« Œil pour œil, et le monde finira aveugle. »"
 ---
 
 # Apôtre de la paix Mahatma Gandhi : Comment la désobéissance civile non violente a changé le monde

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["charles-chaplin", "history"]
 image: "eyecatch.jpg"
 slug: "biography-charles-chaplin"
+description: "查爾斯·史賓賽·卓別林（Charles Spencer Chaplin，1889年4月16日 - 1977年12月25日）是一位出生於英國的電影演員、導演、喜劇演員、編劇和作曲家。"
 ---
 
 查爾斯·史賓賽·卓別林（Charles Spencer Chaplin，1889年4月16日 - 1977年12月25日）是一位出生於英國的電影演員、導演、喜劇演員、編劇和作曲家。享有「喜劇之王」美譽的他，被廣泛認為是電影史上最重要且最具影響力的人物之一。他所創造的「流浪漢（The Tramp）」形象——頭戴圓頂硬禮帽、留著小鬍子、穿著寬鬆的褲子、手持竹拐杖的標誌性裝扮——至今仍被世界各地的人們所喜愛。本文將帶您了解卓別林波瀾壯闊的一生、作品中蘊含的深刻哲學，以及對後世產生的影響。

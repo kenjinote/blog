@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["mahatma-gandhi", "history"]
 image: "eyecatch.jpg"
 slug: "biography-mahatma-gandhi"
+description: "留下這句名言的莫罕達斯·卡拉姆昌德·甘地（通稱聖雄甘地），是20世紀最具影響力的領導人之一。他所倡導的「非暴力不合作（堅持真理）」哲學，不僅帶領印度擺脫了英國的殖民統治走向獨立，也對後來的馬丁·路德·金、納爾遜·曼德拉等世界各地的民權運動和解放運動產生了深遠影響。"
 ---
 
 # 和平使者聖雄甘地：非暴力不合作如何改變世界

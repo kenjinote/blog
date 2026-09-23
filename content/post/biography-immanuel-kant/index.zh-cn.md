@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["immanuel-kant", "history"]
 image: "eyecatch.jpg"
 slug: "biography-immanuel-kant"
+description: "谈及近代哲学，有一位绝对无法避开的巨星。那就是伊曼努尔·康德（Immanuel Kant, 1724–1804）。他出生于普鲁士王国（现俄罗斯联邦加里宁格勒）的柯尼斯堡，一生未曾离开故乡，过着规律而平静的日子。关于他每天散步的时间精准得可以让人对表的轶事，早已为人熟知。"
 ---
 
 ## 引言：源于如钟表般精准的人生的哲学巨大范式转变

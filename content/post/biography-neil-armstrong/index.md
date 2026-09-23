@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["neil-armstrong", "history"]
 image: "eyecatch.jpg"
 slug: "biography-neil-armstrong"
+description: "「これは一人の人間にとっては小さな一歩だが、人類にとっては偉大な飛躍である（That's one small step for man, one giant leap for mankind.）」。"
 ---
 
 「これは一人の人間にとっては小さな一歩だが、人類にとっては偉大な飛躍である（That's one small step for man, one giant leap for mankind.）」。

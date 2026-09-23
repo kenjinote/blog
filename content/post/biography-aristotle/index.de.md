@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["aristotle", "history"]
 image: "eyecatch.jpg"
 slug: "biography-aristotle"
+description: "Aristoteles (384 v. Chr. - 322 v. Chr.), ein antiker griechischer Philosoph, der als \"Vater aller Wissenschaften\" bezeichnet wird und das System des Wissen"
 ---
 
 Aristoteles (384 v. Chr. - 322 v. Chr.), ein antiker griechischer Philosoph, der als "Vater aller Wissenschaften" bezeichnet wird und das System des Wissens im Westen aufgebaut hat. Seine Forschungen beschränkten sich nicht nur auf die Philosophie, sondern erstreckten sich buchstäblich auf "alle wissenschaftlichen Disziplinen", einschließlich Logik, Ethik, Politik, Naturwissenschaften, Biologie und Poetik. In diesem Artikel erläutern wir das turbulente Leben des Aristoteles, seine tiefe Philosophie, die bis heute relevant ist, und seinen unermesslichen Einfluss auf die Menschheitsgeschichte.

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["marie-curie", "history"]
 image: "eyecatch.jpg"
 slug: "biography-marie-curie"
+description: "In der Geschichte der Wissenschaft ist Marie Curie (Madame Curie) eine der Personen, die den brillantesten und zugleich härtesten Weg gegangen ist."
 ---
 
 In der Geschichte der Wissenschaft ist Marie Curie (Madame Curie) eine der Personen, die den brillantesten und zugleich härtesten Weg gegangen ist. Sie ist die erste Frau, die einen Nobelpreis gewann, und die einzige Person in der Geschichte, die in zwei verschiedenen wissenschaftlichen Bereichen – Physik und Chemie – mit Nobelpreisen ausgezeichnet wurde. Ihr Leben ist geprägt von einer reinen Leidenschaft, die nach Wissen dürstete, und einer tiefen Liebe für die Zukunft der Menschheit. In diesem Artikel tauchen wir tief in das Leben von Marie Curie, ihre Philosophie und ihren immensen Einfluss ein, der bis heute anhält.

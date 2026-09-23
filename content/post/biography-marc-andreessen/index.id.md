@@ -5,6 +5,7 @@ image: eyecatch.jpg
 tags: ["marc-andreessen", "history"]
 title: "Pria yang Menciptakan Masa Depan Sejak Fajar Internet: Kehidupan dan Filosofi Marc Andreessen"
 slug: "biography-marc-andreessen"
+description: "Sosok yang menjadikan internet modern sebagai hal yang lumrah, dan terus membentuk dunia dengan menginvestasikan dana besar ke masa depan teknologi."
 ---
 
 Sosok yang menjadikan internet modern sebagai hal yang lumrah, dan terus membentuk dunia dengan menginvestasikan dana besar ke masa depan teknologi. Itulah Marc Andreessen. Sebagai salah satu pencipta peramban web dan salah satu pendiri modal ventura representatif Silicon Valley, "Andreessen Horowitz (a16z)", jejak langkahnya sejalan dengan sejarah perkembangan internet itu sendiri.

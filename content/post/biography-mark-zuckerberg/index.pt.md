@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["mark-zuckerberg", "history"]
 image: "eyecatch.jpg"
 slug: "biography-mark-zuckerberg"
+description: "Mark Elliot Zuckerberg nasceu em 14 de maio de 1984, em White Plains, Nova York. Criado em um ambiente familiar privilegiado com um pai dentista e uma mãe"
 ---
 
 ## De Hacker Solitário a Criador de Conexões

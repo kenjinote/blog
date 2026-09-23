@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["j-r-r-tolkien", "history"]
 image: "eyecatch.jpg"
 slug: "biography-j-r-r-tolkien"
+description: "При упоминании имени Джона Рональда Руэла Толкина (J.R.R. Tolkien) большинству людей в первую очередь приходит на ум обширный мир «Средиземья» (Middle-eart"
 ---
 
 # Дж.Р.Р. Толкин: Путь отца современного фэнтези и создание мифа

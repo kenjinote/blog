@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["alfred-nobel", "history"]
 image: "eyecatch.jpg"
 slug: "biography-alfred-nobel"
+description: "Alfred Nobel häufte durch die Erfindung des Dynamits ein riesiges Vermögen an und stiftete mit seinem Vermächtnis den Nobelpreis."
 ---
 
 Alfred Nobel häufte durch die Erfindung des Dynamits ein riesiges Vermögen an und stiftete mit seinem Vermächtnis den Nobelpreis. Sein Leben verkörperte Licht und Schatten, die die Entwicklung von Wissenschaft und Technik mit sich brachten. 

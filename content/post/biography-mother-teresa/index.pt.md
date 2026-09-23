@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["mother-teresa", "history"]
 image: "eyecatch.jpg"
 slug: "biography-mother-teresa"
+description: "Madre Teresa (1910 - 1997) foi uma das principais figuras humanitárias do século XX e uma freira católica que dedicou a sua vida aos \"mais pobres dos pobres\"."
 ---
 
 Madre Teresa (1910 - 1997) foi uma das principais figuras humanitárias do século XX e uma freira católica que dedicou a sua vida aos "mais pobres dos pobres". O seu modo de vida e a sua filosofia continuam a influenciar pessoas em todo o mundo, transcendendo as fronteiras religiosas. Este artigo explora em profundidade a sua vida agitada, a sua fé inabalável e o grande legado que deixou para as gerações vindouras.

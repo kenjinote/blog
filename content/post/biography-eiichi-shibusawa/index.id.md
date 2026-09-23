@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["eiichi-shibusawa", "history"]
 image: "eyecatch.jpg"
 slug: "biography-eiichi-shibusawa"
+description: "Eiichi Shibusawa, salah satu tokoh yang memainkan peran paling penting dalam modernisasi Jepang."
 ---
 
 Eiichi Shibusawa, salah satu tokoh yang memainkan peran paling penting dalam modernisasi Jepang. Dikenal sebagai "Bapak Kapitalisme Jepang", ia terlibat dalam pendirian dan pengembangan sekitar 500 perusahaan sepanjang hidupnya, sekaligus mengabdikan dirinya untuk mendukung sekitar 600 proyek pekerjaan umum dan lembaga pendidikan. Kehidupannya dan filosofinya, yang tidak hanya berfokus pada pencarian keuntungan belaka tetapi juga mencari harmoni antara moralitas dan ekonomi di bawah filosofi "Analek dan Sempoa", terus memberikan banyak pelajaran bagi para profesional bisnis modern.

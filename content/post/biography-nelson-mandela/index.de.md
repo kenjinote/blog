@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["nelson-mandela", "history"]
 image: "eyecatch.jpg"
 slug: "biography-nelson-mandela"
+description: "Nelson Mandela hat sich als einer der größten Führer des 20. Jahrhunderts tief in das Gedächtnis der Menschen weltweit eingeprägt."
 ---
 
 ## Einleitung: Der lange Weg zur Freiheit

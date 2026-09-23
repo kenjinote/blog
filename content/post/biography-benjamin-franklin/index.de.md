@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["benjamin-franklin", "history"]
 image: "eyecatch.jpg"
 slug: "biography-benjamin-franklin"
+description: "Wenn man den Namen Benjamin Franklin (1706–1790) hört, denken viele Menschen vielleicht zuerst an das sanfte Porträt auf dem 100-Dollar-Schein der USA."
 ---
 
 Wenn man den Namen Benjamin Franklin (1706–1790) hört, denken viele Menschen vielleicht zuerst an das sanfte Porträt auf dem 100-Dollar-Schein der USA. Seine wahre Natur lässt sich jedoch nicht in den politischen Rahmen eines "Gründervaters" zwängen. Drucker, Schriftsteller, Wissenschaftler, Erfinder, Diplomat und Philosoph — Franklin war ein seltenes "Universalgenie" (Universalgelehrter), das in jedem Bereich historische Spuren hinterlassen hat.

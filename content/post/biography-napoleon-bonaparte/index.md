@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["napoleon-bonaparte", "history"]
 image: "eyecatch.jpg"
 slug: "biography-napoleon-bonaparte"
+description: "世界史において、ナポレオン・ボナパルトほど毀誉褒貶（きよほうへん）の激しい人物は少ないでしょう。「不可能という文字は余の辞書にはない」という名言で知られる彼は、単なる軍事的天才にとどまらず、現代ヨーロッパの法制や社会基盤の礎を築いた政治家でもありました。"
 ---
 
 # ナポレオン・ボナパルト：革命の子か、それとも独裁者か

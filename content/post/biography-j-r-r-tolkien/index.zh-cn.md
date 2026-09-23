@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["j-r-r-tolkien", "history"]
 image: "eyecatch.jpg"
 slug: "biography-j-r-r-tolkien"
+description: "一听到约翰·罗纳德·鲁埃尔·托尔金（J.R.R. 托尔金）的名字，许多人脑海中首先浮现的，便是《指环王》（魔戒）与《霍比特人》故事展开的那个宏大的“中土世界”（Middle-earth）。"
 ---
 
 # J.R.R. 托尔金：现代奇幻之父的足迹与神话的创造

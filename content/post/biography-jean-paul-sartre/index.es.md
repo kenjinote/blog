@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["jean-paul-sartre", "history"]
 image: "eyecatch.jpg"
 slug: "biography-jean-paul-sartre"
+description: "Jean-Paul Sartre (1905-1980), un filósofo que representa a la Francia del siglo XX, también dejó una huella enorme como novelista, dramaturgo y crítico."
 ---
 
 Jean-Paul Sartre (1905-1980), un filósofo que representa a la Francia del siglo XX, también dejó una huella enorme como novelista, dramaturgo y crítico. Su pensamiento, conocido por la frase "la existencia precede a la esencia", tuvo un impacto profundo en el mundo de la posguerra y se convirtió en una de las principales corrientes de la filosofía moderna. En este artículo, profundizaremos en su vida, su filosofía única y la influencia que dejó en las generaciones futuras.

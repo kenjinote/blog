@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["immanuel-kant", "history"]
 image: "eyecatch.jpg"
 slug: "biography-immanuel-kant"
+description: "Une étoile géante incontournable lorsqu'on parle de la philosophie moderne. C'est Emmanuel Kant (Immanuel Kant, 1724-1804)."
 ---
 
 ## Introduction : Un gigantesque changement de paradigme philosophique né d'une vie réglée comme une horloge

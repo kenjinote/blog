@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["nelson-mandela", "history"]
 image: "eyecatch.jpg"
 slug: "biography-nelson-mandela"
+description: "넬슨 만델라는 20세기 가장 위대한 지도자 중 한 명으로 전 세계인의 기억 속에 깊이 각인되어 있습니다. 그는 남아프리카 공화국의 인종 차별 정책인 '아파르트헤이트' 철폐를 위해 평생을 바쳤고, 27년에 달하는 가혹한 투옥 생활을 견뎌냈습니다."
 ---
 
 ## 시작하며: 자유를 향한 길고도 험난한 여정

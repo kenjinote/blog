@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["confucius", "history"]
 image: "eyecatch.jpg"
 slug: "biography-confucius"
+description: "歷史上，最具影響力的網紅是誰？在現代，我們可能會想到史蒂夫·賈伯斯（Steve Jobs）或伊隆·馬斯克（Elon Musk），但在2500多年前，有一位席捲整個東亞、其思想至今仍被傳承的人物。他就是「孔子」。"
 ---
 
 歷史上，最具影響力的網紅是誰？在現代，我們可能會想到史蒂夫·賈伯斯（Steve Jobs）或伊隆·馬斯克（Elon Musk），但在2500多年前，有一位席捲整個東亞、其思想至今仍被傳承的人物。他就是「孔子」。

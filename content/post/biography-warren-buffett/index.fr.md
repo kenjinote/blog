@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["warren-buffett", "history"]
 image: "eyecatch.jpg"
 slug: "biography-warren-buffett"
+description: "Warren Buffett est connu comme l'investisseur le plus prospère au monde. Surnommé « l'Oracle d'Omaha », il dépasse largement le cadre du simple milliardair"
 ---
 
 Warren Buffett est connu comme l'investisseur le plus prospère au monde. Surnommé « l'Oracle d'Omaha », il dépasse largement le cadre du simple milliardaire ayant amassé une immense fortune, et continue d'exercer une influence majeure sur les gens du monde entier par sa philosophie d'investissement, son éthique et ses activités philanthropiques. Cet article explore en profondeur comment il est devenu le dieu de l'investissement, sa vie, sa philosophie d'investissement unique, ainsi que l'héritage qu'il laisse aux générations futures.

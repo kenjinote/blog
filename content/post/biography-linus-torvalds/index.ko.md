@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["linus-torvalds", "history"]
 image: "eyecatch.jpg"
 slug: "biography-linus-torvalds"
+description: "현대 IT 인프라를 지탱하며 수많은 시스템에서 가동되고 있는 운영 체제(OS) 'Linux(리눅스)'. 그리고 전 세계 개발자들이 매일 사용하는 버전 관리 시스템 'Git(깃)'."
 ---
 
 # 오픈 소스의 거성: 리누스 토발즈의 궤적과 철학

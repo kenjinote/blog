@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["sun-tzu", "history"]
 image: "eyecatch.jpg"
 slug: "biography-sun-tzu"
+description: "“知己知彼，百战不殆”——这句在现代商业场景中也被频繁引用的名言，是由生活在距今2500多年前中国春秋时期的一位军事家留下的。他的名字叫孙武。后人尊称他为“孙子”，他撰写了世界最高峰的兵法书《孙子兵法》，不仅对东方，而且对世界的军事和经营战略产生了深远的影响。"
 ---
 
 ## 引言

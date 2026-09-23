@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["nelson-mandela", "history"]
 image: "eyecatch.jpg"
 slug: "biography-nelson-mandela"
+description: "Nelson Mandela is deeply etched in the memory of people worldwide as one of the greatest leaders of the 20th century."
 ---
 
 ## Introduction: The Long Walk to Freedom

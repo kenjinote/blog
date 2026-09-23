@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["nikolai-lobachevsky", "history"]
 image: "eyecatch.jpg"
 slug: "biography-nikolai-lobachevsky"
+description: "In the history of mathematics, few individuals have fundamentally overturned existing common sense and presented a new worldview."
 ---
 
 # Nikolai Lobachevsky: The "Copernicus of Geometry" Who Opened the Door to Non-Euclidean Geometry

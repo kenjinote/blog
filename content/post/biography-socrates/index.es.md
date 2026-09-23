@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["socrates", "history"]
 image: "eyecatch.jpg"
 slug: "biography-socrates"
+description: "Sócrates (c. 470 a.C. – 399 a.C.), el gran pensador que sentó las bases de la filosofía occidental."
 ---
 
 Sócrates (c. 470 a.C. – 399 a.C.), el gran pensador que sentó las bases de la filosofía occidental. Aunque nunca dejó una sola obra escrita por sí mismo, sus pensamientos y su intensa forma de vida se han transmitido a la era moderna a través de los diálogos escritos por sus discípulos, como Platón y Jenofonte. Sus enfoques, como la "Sabiduría de la ignorancia" y el "Método socrático", no eran una mera búsqueda de conocimiento, sino una poderosa antítesis a la pregunta humana universal de cómo vivir una buena vida. Este artículo profundiza en la vida de Sócrates, quien entablaba diálogos repetidamente con los jóvenes en las esquinas de la antigua Atenas, y la inmensurable influencia que tuvo en las generaciones futuras.

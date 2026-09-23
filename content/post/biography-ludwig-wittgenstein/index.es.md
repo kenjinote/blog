@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["ludwig-wittgenstein", "history"]
 image: "eyecatch.jpg"
 slug: "biography-ludwig-wittgenstein"
+description: "Ludwig Wittgenstein (1889–1951) es uno de los filósofos más importantes e influyentes del siglo XX."
 ---
 
 Ludwig Wittgenstein (1889–1951) es uno de los filósofos más importantes e influyentes del siglo XX. Su filosofía se divide a grandes rasgos en su primer período, en el que exploró los límites del lenguaje y la lógica, y un período posterior centrado en el uso del lenguaje cotidiano. Que un solo filósofo derrocara radicalmente sus propias teorías del pasado para establecer dos sistemas filosóficos completamente distintos a lo largo de su vida es un acontecimiento extremadamente raro en la historia del pensamiento.

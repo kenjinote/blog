@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["neil-armstrong", "history"]
 image: "eyecatch.jpg"
 slug: "biography-neil-armstrong"
+description: "\"Este é um pequeno passo para o homem, um salto gigante para a humanidade\" (That's one small step for man, one giant leap for mankind)."
 ---
 
 "Este é um pequeno passo para o homem, um salto gigante para a humanidade" (That's one small step for man, one giant leap for mankind).

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["guido-van-rossum", "history"]
 image: "eyecatch.jpg"
 slug: "biography-guido-van-rossum"
+description: "\"Python\" es uno de los lenguajes de programación más populares del mundo. Su creador es el programador de origen neerlandés Guido van Rossum."
 ---
 
 "Python" es uno de los lenguajes de programación más populares del mundo. Su creador es el programador de origen neerlandés Guido van Rossum. El lenguaje que él creó es hoy en día una presencia indispensable en todos los campos, como la inteligencia artificial (IA), la ciencia de datos y el desarrollo web. En este artículo, profundizaremos en qué tipo de vida ha llevado, bajo qué filosofía diseñó Python y cuánta influencia ha tenido en la tecnología para las futuras generaciones.

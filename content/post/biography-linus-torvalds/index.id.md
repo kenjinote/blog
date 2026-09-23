@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["linus-torvalds", "history"]
 image: "eyecatch.jpg"
 slug: "biography-linus-torvalds"
+description: "\"Linux,\" OS yang mendasari infrastruktur TI modern dan berjalan di sistem yang tak terhitung jumlahnya."
 ---
 
 # Raksasa Open Source: Jejak dan Filosofi Linus Torvalds

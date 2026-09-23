@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["oscar-wilde", "history"]
 image: "eyecatch.jpg"
 slug: "biography-oscar-wilde"
+description: "在19世紀末的英國文學界，奧斯卡·王爾德（Oscar Wilde）無疑是一位比任何人都更加璀璨耀眼，卻也比任何人都跌得更深的作家。他所留下的「為藝術而藝術」（Art for art's sake）這項唯美主義哲學，時至今日仍持續影響著無數的創作者與藝術家。"
 ---
 
 在19世紀末的英國文學界，奧斯卡·王爾德（Oscar Wilde）無疑是一位比任何人都更加璀璨耀眼，卻也比任何人都跌得更深的作家。他所留下的「為藝術而藝術」（Art for art's sake）這項唯美主義哲學，時至今日仍持續影響著無數的創作者與藝術家。本文將深入探討他充滿戲劇性的傳奇人生、經典作品，以及對後世的深遠影響。

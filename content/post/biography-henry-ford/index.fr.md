@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["henry-ford", "history"]
 image: "eyecatch.jpg"
 slug: "biography-henry-ford"
+description: "Henry Ford (1863-1947) est allé au-delà du simple fait d'être le fondateur d'une entreprise de construction automobile ; il a gravé son nom dans l'histoire"
 ---
 
 Henry Ford (1863-1947) est allé au-delà du simple fait d'être le fondateur d'une entreprise de construction automobile ; il a gravé son nom dans l'histoire en tant que « roi de l'automobile » qui a fondamentalement transformé la structure industrielle et les modes de vie des gens au XXe siècle. Sa plus grande réalisation n'a pas été d'inventer l'automobile, mais de « transformer l'automobile d'un article de luxe pour quelques riches en un moyen de transport quotidien pour les masses ».

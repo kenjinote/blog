@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["harold-abelson", "history"]
 image: "eyecatch.jpg"
 slug: "biography-harold-abelson"
+description: "Dalam sejarah ilmu komputer, ada seorang tokoh yang memberikan pengaruh besar tidak hanya pada teknologi itu sendiri, tetapi juga pada \"bagaimana mengajark"
 ---
 
 Dalam sejarah ilmu komputer, ada seorang tokoh yang memberikan pengaruh besar tidak hanya pada teknologi itu sendiri, tetapi juga pada "bagaimana mengajarkan dan membagikannya". Ia adalah Harold Abelson, biasa dipanggil "Hal Abelson", seorang profesor di Massachusetts Institute of Technology (MIT) dan tokoh sentral dalam pendidikan pemrograman serta gerakan perangkat lunak bebas.

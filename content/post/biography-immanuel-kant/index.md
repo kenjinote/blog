@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["immanuel-kant", "history"]
 image: "eyecatch.jpg"
 slug: "biography-immanuel-kant"
+description: "近代哲学を語る上で、決して避けて通ることができない巨星。それがイマヌエル・カント（Immanuel Kant, 1724–1804）です。プロイセン王国（現在のロシア連邦カリーニングラード）のケーニヒスベルクに生まれ、生涯その地を離れることなく、規則正しく穏やかな日々を送りました。"
 ---
 
 ## はじめに：時計のように正確な人生から生まれた、哲学の巨大なパラダイムシフト

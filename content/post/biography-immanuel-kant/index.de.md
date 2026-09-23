@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["immanuel-kant", "history"]
 image: "eyecatch.jpg"
 slug: "biography-immanuel-kant"
+description: "Ein gigantischer Stern, an dem man nicht vorbeikommt, wenn man über die moderne Philosophie spricht."
 ---
 
 ## Einleitung: Ein Leben pünktlich wie ein Uhrwerk und der größte Paradigmenwechsel der Philosophie

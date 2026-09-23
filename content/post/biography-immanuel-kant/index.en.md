@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["immanuel-kant", "history"]
 image: "eyecatch.jpg"
 slug: "biography-immanuel-kant"
+description: "When discussing modern philosophy, there is one giant who can never be ignored. That is Immanuel Kant (1724–1804)."
 ---
 
 ## Introduction: A Massive Paradigm Shift in Philosophy Born from a Clockwork Life

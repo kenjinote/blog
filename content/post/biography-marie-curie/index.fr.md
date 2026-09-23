@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["marie-curie", "history"]
 image: "eyecatch.jpg"
 slug: "biography-marie-curie"
+description: "Dans l'histoire des sciences, l'une des personnes ayant parcouru le chemin le plus brillant et le plus ardu est Marie Curie (Madame Curie)."
 ---
 
 Dans l'histoire des sciences, l'une des personnes ayant parcouru le chemin le plus brillant et le plus ardu est Marie Curie (Madame Curie). Elle est la première femme à remporter un prix Nobel et la seule personne dans l'histoire à avoir remporté des prix Nobel dans deux domaines scientifiques différents : la physique et la chimie. Sa vie est colorée par une passion pure, assoiffée de connaissances, et un amour profond pour l'avenir de l'humanité. Dans cet article, nous plongerons profondément dans la vie de Marie Curie, la philosophie qu'elle a adoptée, et son immense influence qui perdure encore aujourd'hui.

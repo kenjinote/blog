@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["hippocrates", "history"]
 image: "eyecatch.jpg"
 slug: "biography-hippocrates"
+description: "In ancient Greece, medicine was long deeply tied to prayers to the gods, superstitions, and magic."
 ---
 
 In ancient Greece, medicine was long deeply tied to prayers to the gods, superstitions, and magic. In an era when illness was considered "divine punishment" or the "work of evil spirits," there was a figure who completely overturned this common sense and elevated medicine into a scientific and rational discipline. That is Hippocrates, known as the "Father of Medicine." In this article, we will delve deeply into his life, his groundbreaking medical philosophy, and his tremendous influence that continues to form the foundation of medical ethics to this day.

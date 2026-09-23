@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["mark-zuckerberg", "history"]
 image: "eyecatch.jpg"
 slug: "biography-mark-zuckerberg"
+description: "Mark Elliot Zuckerberg lahir pada 14 Mei 1984 di White Plains, New York. Dibesarkan dalam lingkungan keluarga yang beruntung dengan ayah seorang dokter gig"
 ---
 
 ## Dari Hacker Penyendiri Menjadi Pencipta "Koneksi"

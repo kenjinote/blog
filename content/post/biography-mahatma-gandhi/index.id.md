@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["mahatma-gandhi", "history"]
 image: "eyecatch.jpg"
 slug: "biography-mahatma-gandhi"
+description: "\"Mata ganti mata hanya akan membuat seluruh dunia buta.\""
 ---
 
 # Rasul Perdamaian Mahatma Gandhi: Bagaimana Pembangkangan Sipil Tanpa Kekerasan Mengubah Dunia

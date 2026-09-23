@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["stephen-covey", "history"]
 image: "eyecatch.jpg"
 slug: "biography-stephen-covey"
+description: "Jika kita harus menyebutkan salah satu tokoh yang memberikan pengaruh paling besar dalam bisnis modern dan pengembangan diri, nama Dr."
 ---
 
 Jika kita harus menyebutkan salah satu tokoh yang memberikan pengaruh paling besar dalam bisnis modern dan pengembangan diri, nama Dr. Stephen R. Covey pasti akan muncul. Bukunya, "The 7 Habits of Highly Effective People" ("7 Kebiasaan Manusia yang Sangat Efektif"), telah terjual puluhan juta eksemplar di seluruh dunia, melampaui sekadar buku bisnis dan dibaca oleh banyak orang sebagai "pedoman hidup". Dalam artikel ini, kita akan menggali lebih dalam tentang kehidupan Dr. Covey, filosofi yang mendasarinya, serta pengaruh tak ternilai yang ditinggalkannya untuk generasi mendatang.

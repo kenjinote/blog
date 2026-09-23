@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["stephen-covey", "history"]
 image: "eyecatch.jpg"
 slug: "biography-stephen-covey"
+description: "Wenn man eine der einflussreichsten Persönlichkeiten in der modernen Wirtschaft und Selbstentwicklung nennen sollte, würde der Name Dr."
 ---
 
 Wenn man eine der einflussreichsten Persönlichkeiten in der modernen Wirtschaft und Selbstentwicklung nennen sollte, würde der Name Dr. Stephen R. Covey zweifellos fallen. Sein Buch "Die 7 Wege zur Effektivität" (The 7 Habits of Highly Effective People) wurde weltweit zweistellige Millionen Male verkauft und wird von vielen Menschen nicht nur als Geschäftsbuch, sondern als "Lebenskompass" geschätzt. In diesem Artikel werden wir tief in das Leben von Dr. Covey, die seiner Arbeit zugrunde liegende Philosophie und den unermesslichen Einfluss, den er der Nachwelt hinterlassen hat, eintauchen.

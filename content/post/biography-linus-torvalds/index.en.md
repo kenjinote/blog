@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["linus-torvalds", "history"]
 image: "eyecatch.jpg"
 slug: "biography-linus-torvalds"
+description: "\"Linux,\" the OS that underpins modern IT infrastructure and runs on countless systems."
 ---
 
 # Giant of Open Source: The Trajectory and Philosophy of Linus Torvalds

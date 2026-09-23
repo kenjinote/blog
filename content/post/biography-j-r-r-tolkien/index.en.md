@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["j-r-r-tolkien", "history"]
 image: "eyecatch.jpg"
 slug: "biography-j-r-r-tolkien"
+description: "When hearing the name John Ronald Reuel Tolkien (J.R.R. Tolkien), the first thing that comes to mind for many people is the epic world of \"Middle-earth,\" w"
 ---
 
 # J.R.R. Tolkien: The Trajectory of the Father of Modern Fantasy and the Creation of a Myth

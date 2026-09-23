@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["peter-drucker", "history"]
 image: "eyecatch.jpg"
 slug: "biography-peter-drucker"
+description: "Conocido como el \"padre del management moderno\", Peter F. Drucker tuvo un profundo impacto no solo en los negocios, sino también en los campos de la sociol"
 ---
 
 Conocido como el "padre del management moderno", Peter F. Drucker tuvo un profundo impacto no solo en los negocios, sino también en los campos de la sociología y la ciencia política. Las numerosas percepciones y filosofías que dejó atrás no se han desvanecido en la actualidad y continúan sirviendo de guía para ejecutivos y líderes en todo el mundo. En este artículo, profundizaremos en su extraordinaria vida y las ideas de gestión que estableció.

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["harold-abelson", "history"]
 image: "eyecatch.jpg"
 slug: "biography-harold-abelson"
+description: "In the history of computer science, there is a figure who has had as much influence on \"how it is taught and shared\" as on the technology itself."
 ---
 
 In the history of computer science, there is a figure who has had as much influence on "how it is taught and shared" as on the technology itself. That is Harold Abelson, commonly known as Hal Abelson, a professor at the Massachusetts Institute of Technology (MIT) and a central figure in programming education and the free software movement.

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["sun-tzu", "history"]
 image: "eyecatch.jpg"
 slug: "biography-sun-tzu"
+description: "« Connais ton ennemi et connais-toi toi-même, eussions-nous cent guerres à soutenir, cent fois tu seras victorieux."
 ---
 
 ## Introduction

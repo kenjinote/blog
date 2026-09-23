@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["neil-armstrong", "history"]
 image: "eyecatch.jpg"
 slug: "biography-neil-armstrong"
+description: "“這是一個人的一小步，卻是人類的一大步（That's one small step for man, one giant leap for mankind.）。” 1969年7月20日，當人類首次在地球以外的星體上留下足跡的那一刻，尼爾·阿姆斯壯說出的這句話，作為20世紀最具代表性的名言，已被永遠銘刻在歷史中。"
 ---
 
 “這是一個人的一小步，卻是人類的一大步（That's one small step for man, one giant leap for mankind.）。”

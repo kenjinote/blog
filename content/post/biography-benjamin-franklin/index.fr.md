@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["benjamin-franklin", "history"]
 image: "eyecatch.jpg"
 slug: "biography-benjamin-franklin"
+description: "Lorsque l'on entend le nom de Benjamin Franklin (1706–1790), beaucoup de gens pensent d'abord au doux portrait figurant sur le billet de 100 dollars américain."
 ---
 
 Lorsque l'on entend le nom de Benjamin Franklin (1706–1790), beaucoup de gens pensent d'abord au doux portrait figurant sur le billet de 100 dollars américain. Cependant, sa véritable nature ne peut être contenue dans le cadre politique d'un "Père fondateur". Imprimeur, écrivain, scientifique, inventeur, diplomate et philosophe — Franklin était un "polymathe" (génie universel) rare qui a laissé une empreinte historique dans tous les domaines.

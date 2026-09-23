@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["napoleon-bonaparte", "history"]
 image: "eyecatch.jpg"
 slug: "biography-napoleon-bonaparte"
+description: "Dans l'histoire du monde, peu de figures ont suscité autant de louanges et de critiques que Napoléon Bonaparte."
 ---
 
 # Napoléon Bonaparte : Enfant de la Révolution ou dictateur ?

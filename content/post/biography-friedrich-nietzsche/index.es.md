@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["friedrich-nietzsche", "history"]
 image: "eyecatch.jpg"
 slug: "biography-friedrich-nietzsche"
+description: "Hola. Hoy profundizaremos en la vida y el pensamiento del filósofo Friedrich Nietzsche, quien chocó como un enorme meteorito contra el mundo filosófico del"
 ---
 
 Hola. Hoy profundizaremos en la vida y el pensamiento del filósofo Friedrich Nietzsche, quien chocó como un enorme meteorito contra el mundo filosófico del siglo XIX y tuvo un impacto inmensurable en el pensamiento moderno.

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["j-r-r-tolkien", "history"]
 image: "eyecatch.jpg"
 slug: "biography-j-r-r-tolkien"
+description: "عند سماع اسم جون رونالد رويل تولكين (J.R.R. Tolkien)، يتبادر إلى ذهن معظم الناس فورًا عالم \"الأرض الوسطى\" (Middle-earth) الشاسع حيث تدور أحداث \"سيد الخواتم"
 ---
 
 # جيه. آر. آر. تولكين: مسيرة أب الفانتازيا الحديثة وخلق الأساطير

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["julius-caesar", "history"]
 image: "eyecatch.jpg"
 slug: "biography-julius-caesar"
+description: "\"Dadu telah dilemparkan\", \"Veni, vidi, vici (Aku datang, aku melihat, aku menang)\", \"Et tu, Brute? (Kamu juga, Brutus?)\" — Bahkan mereka yang tidak akrab d"
 ---
 
 "Dadu telah dilemparkan", "Veni, vidi, vici (Aku datang, aku melihat, aku menang)", "Et tu, Brute? (Kamu juga, Brutus?)" — Bahkan mereka yang tidak akrab dengan sejarah dunia kemungkinan besar pernah mendengar kata-kata yang ditinggalkannya. Gaius Julius Caesar (100 SM - 44 SM), pahlawan yang muncul seperti komet di akhir Republik Romawi dan menentukan bentuk dunia Eropa berikutnya. Ia bukan sekadar pria militer dan politikus, melainkan juga seorang penulis, pengacara pengadilan, dan bahkan pembaharu kalender.

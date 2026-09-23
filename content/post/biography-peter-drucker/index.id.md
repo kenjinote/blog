@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["peter-drucker", "history"]
 image: "eyecatch.jpg"
 slug: "biography-peter-drucker"
+description: "Peter F. Drucker, yang dijuluki sebagai \"Bapak Manajemen Modern\", tidak hanya memberikan pengaruh besar pada dunia bisnis, tetapi juga pada bidang sosiolog"
 ---
 
 Peter F. Drucker, yang dijuluki sebagai "Bapak Manajemen Modern", tidak hanya memberikan pengaruh besar pada dunia bisnis, tetapi juga pada bidang sosiologi dan ilmu politik. Banyak wawasan dan filosofi yang ia tinggalkan tidak memudar hingga hari ini, dan terus memberikan panduan bagi para eksekutif dan pemimpin di seluruh dunia. Dalam artikel ini, kita akan menggali lebih dalam tentang kehidupannya yang luar biasa dan pemikiran manajemen yang ia bangun.

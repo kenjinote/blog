@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["nelson-mandela", "history"]
 image: "eyecatch.jpg"
 slug: "biography-nelson-mandela"
+description: "يظل اسم نيلسون مانديلا محفورًا بعمق في ذاكرة الناس حول العالم كواحد من أعظم القادة في القرن العشرين."
 ---
 
 ## مقدمة: الطريق الطويل نحو الحرية

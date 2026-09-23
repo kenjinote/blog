@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["neil-armstrong", "history"]
 image: "eyecatch.jpg"
 slug: "biography-neil-armstrong"
+description: "\"이것은 한 인간에게는 작은 한 걸음이지만, 인류에게는 위대한 도약이다 (That's one small step for man, one giant leap for mankind).\" 1969년 7월 20일, 인류가 지구 이외의 천체에 처음으로 발자국을 남긴 순간, 닐 암스트롱이"
 ---
 
 "이것은 한 인간에게는 작은 한 걸음이지만, 인류에게는 위대한 도약이다 (That's one small step for man, one giant leap for mankind)."

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["john-d-rockefeller", "history"]
 image: "eyecatch.jpg"
 slug: "biography-john-d-rockefeller"
+description: "Vom späten 19. bis zum frühen 20. Jahrhundert gab es eine Person, die nicht nur die Vereinigten Staaten, sondern auch die Weltwirtschaft tiefgreifend beein"
 ---
 
 Vom späten 19. bis zum frühen 20. Jahrhundert gab es eine Person, die nicht nur die Vereinigten Staaten, sondern auch die Weltwirtschaft tiefgreifend beeinflusste. Sein Name war John Davison Rockefeller. Er gründete die Standard Oil Company und ist weithin als der "Ölkönig" bekannt, der durch sein überwältigendes Monopol ein massives Vermögen aufbaute, das oft als das größte der Geschichte bezeichnet wird. Seine wahre Größe lag jedoch nicht nur in der Anhäufung von Reichtum, sondern in der Etablierung des modernen kapitalistischen Systems und der Systematisierung beispielloser philanthropischer Bemühungen, die auch zukünftige Generationen beeinflussen sollten. In diesem Artikel werden wir tief in sein turbulentes Leben, seine einzigartige Geschäftsphilosophie und das große Erbe eintauchen, das er der modernen Gesellschaft hinterlassen hat.

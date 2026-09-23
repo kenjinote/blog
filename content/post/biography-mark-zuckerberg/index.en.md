@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["mark-zuckerberg", "history"]
 image: "eyecatch.jpg"
 slug: "biography-mark-zuckerberg"
+description: "Mark Elliot Zuckerberg was born on May 14, 1984, in White Plains, New York. Raised in a privileged environment with a dentist father and a psychiatrist mot"
 ---
 
 ## From Lonely Hacker to Creator of Connections

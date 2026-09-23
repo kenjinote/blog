@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["harold-abelson", "history"]
 image: "eyecatch.jpg"
 slug: "biography-harold-abelson"
+description: "在電腦科學的歷史中，有些人對「如何教導和分享科技」的影響力，與科技本身一樣深遠。麻省理工學院（MIT）教授、在程式設計教育與自由軟體運動中扮演核心角色的哈羅德·阿伯爾森（Harold Abelson），通常被稱為「哈爾·阿伯爾森（Hal Abelson）」，就是這樣一位人物。"
 ---
 
 在電腦科學的歷史中，有些人對「如何教導和分享科技」的影響力，與科技本身一樣深遠。麻省理工學院（MIT）教授、在程式設計教育與自由軟體運動中扮演核心角色的哈羅德·阿伯爾森（Harold Abelson），通常被稱為「哈爾·阿伯爾森（Hal Abelson）」，就是這樣一位人物。

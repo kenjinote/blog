@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["karl-marx", "history"]
 image: "eyecatch.jpg"
 slug: "biography-karl-marx"
+description: "Karl Marx. Mendengar nama itu, apa yang terlintas dalam pikiran Anda? Seseorang mungkin menganggapnya sebagai tokoh besar dalam sejarah, \"Bapak Komunisme\","
 ---
 
 Karl Marx. Mendengar nama itu, apa yang terlintas dalam pikiran Anda? Seseorang mungkin menganggapnya sebagai tokoh besar dalam sejarah, "Bapak Komunisme", sementara yang lain mungkin memandangnya sebagai "pemikir berbahaya yang melahirkan negara-negara diktator". Namun, jika kita menyingkirkan selubung ideologi dan melihat pemikirannya secara murni, yang akan kita temukan adalah sosok "debugger jenius yang menganalisis bug (kontradiksi) dalam sistem kapitalisme lebih dalam dari siapa pun".

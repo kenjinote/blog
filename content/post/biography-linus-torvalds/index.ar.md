@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["linus-torvalds", "history"]
 image: "eyecatch.jpg"
 slug: "biography-linus-torvalds"
+description: "\"لينكس\" (Linux)، نظام التشغيل الذي يدعم البنية التحتية الحديثة لتكنولوجيا المعلومات ويعمل على أنظمة لا حصر لها."
 ---
 
 # عملاق المصدر المفتوح: مسار وفلسفة لينوس تورفالدس

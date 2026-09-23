@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["neil-armstrong", "history"]
 image: "eyecatch.jpg"
 slug: "biography-neil-armstrong"
+description: "\"यह एक इंसान के लिए एक छोटा कदम है, लेकिन मानवता के लिए एक बड़ी छलांग है (That's one small step for man, one giant leap for mankind)।\" 20 जुलाई, 1969 को, ज"
 ---
 
 "यह एक इंसान के लिए एक छोटा कदम है, लेकिन मानवता के लिए एक बड़ी छलांग है (That's one small step for man, one giant leap for mankind)।"

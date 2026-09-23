@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["jean-jacques-rousseau", "history"]
 image: "eyecatch.jpg"
 slug: "biography-jean-jacques-rousseau"
+description: "Dans l'Europe du XVIIIe siècle, alors que la pensée des Lumières, qui considérait la raison comme suprême, s'épanouissait, un homme a défié la tendance et"
 ---
 
 Dans l'Europe du XVIIIe siècle, alors que la pensée des Lumières, qui considérait la raison comme suprême, s'épanouissait, un homme a défié la tendance et s'est écrié : "Retour à la nature." Cet homme était Jean-Jacques Rousseau (1712 - 1778). Ses idées ont eu une influence décisive sur la Révolution française et ont en outre jeté les bases de la pédagogie moderne et de la littérature romantique. Dans cet article, nous dévoilerons la vie de Rousseau, qui a continué à chercher la vérité au milieu de la solitude et de l'errance, et sa philosophie profonde qui résonne encore aujourd'hui.

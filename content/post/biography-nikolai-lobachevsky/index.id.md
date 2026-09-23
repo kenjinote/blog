@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["nikolai-lobachevsky", "history"]
 image: "eyecatch.jpg"
 slug: "biography-nikolai-lobachevsky"
+description: "Dalam sejarah matematika, sedikit yang telah membalikkan akal sehat yang ada dari akarnya dan menyajikan pandangan dunia baru."
 ---
 
 # Nikolai Lobachevsky: 'Copernicus dari Geometri' yang Membuka Pintu Geometri Non-Euclidean

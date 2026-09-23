@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["socrates", "history"]
 image: "eyecatch.jpg"
 slug: "biography-socrates"
+description: "Socrate (vers 470 av. J.-C. – 399 av. J.-C.) est le grand penseur qui a jeté les bases de la philosophie occidentale."
 ---
 
 Socrate (vers 470 av. J.-C. – 399 av. J.-C.) est le grand penseur qui a jeté les bases de la philosophie occidentale. Bien qu'il n'ait lui-même laissé aucune œuvre écrite, ses pensées et son mode de vie intense ont été transmis à l'ère moderne à travers les dialogues écrits par ses disciples, tels que Platon et Xénophon. Ses approches, telles que la « Sagesse de l'ignorance » et la « Méthode socratique », n'étaient pas une simple quête de connaissances, mais une puissante antithèse à la question humaine universelle de savoir comment mener une vie bonne. Cet article se penche en profondeur sur la vie de Socrate, qui s'est engagé à plusieurs reprises dans des dialogues avec des jeunes au coin des rues de l'Athènes antique, et sur l'influence incommensurable qu'il a eue sur les générations futures.

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["lewis-carroll", "history"]
 image: "eyecatch.jpg"
 slug: "biography-lewis-carroll"
+description: "提到“刘易斯·卡罗尔”这个名字，许多人脑海中浮现的可能是风靡全球的童话《爱丽丝梦游仙境》的作者。然而，他的本名是查尔斯·路特维奇·道奇森。他是英国牛津大学基督堂学院的数学讲师、摄影师，同时也是一位逻辑学家。"
 ---
 
 ## 引言

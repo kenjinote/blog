@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["mark-zuckerberg", "history"]
 image: "eyecatch.jpg"
 slug: "biography-mark-zuckerberg"
+description: "马克·埃利奥特·扎克伯格（Mark Elliot Zuckerberg）于1984年5月14日出生在纽约州白原市。在牙医父亲和精神科医生母亲的优渥家庭环境中长大，他从小就对编程表现出浓厚的兴趣。早在初中时期，他就已经展现出自己的才华，开发了一款名为“ZuckNet”的消息软件，将父亲牙医诊所的接待处与检查室连接起来。"
 ---
 
 ## 从孤独的黑客到“连接”的创造者

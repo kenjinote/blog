@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["karl-marx", "history"]
 image: "eyecatch.jpg"
 slug: "biography-karl-marx"
+description: "Karl Marx. O que lhe vem à mente quando você ouve esse nome? Alguns podem considerá-lo um grande homem na história como o \"pai do comunismo\", enquanto outr"
 ---
 
 Karl Marx. O que lhe vem à mente quando você ouve esse nome? Alguns podem considerá-lo um grande homem na história como o "pai do comunismo", enquanto outros podem vê-lo como um "pensador perigoso que deu origem a estados ditatoriais". No entanto, se removermos o véu da ideologia e reexaminarmos seu pensamento puramente, o que emerge é a figura de um "depurador genial que analisou os bugs (contradições) do sistema capitalista mais profundamente do que qualquer outra pessoa".

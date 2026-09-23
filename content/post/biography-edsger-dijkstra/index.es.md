@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["edsger-dijkstra", "history"]
 image: "eyecatch.jpg"
 slug: "biography-edsger-dijkstra"
+description: "Edsger W. Dijkstra (1930 - 2002) es una de las mentes más brillantes que construyó los cimientos de la ingeniería de software y la informática modernas."
 ---
 
 Edsger W. Dijkstra (1930 - 2002) es una de las mentes más brillantes que construyó los cimientos de la ingeniería de software y la informática modernas. Los numerosos algoritmos y paradigmas de programación que dejó atrás perduran en la base de casi todas las tecnologías que utilizamos a diario. En este artículo, profundizaremos en la vida de Dijkstra, su filosofía única y la incalculable influencia que ha tenido en las generaciones posteriores.

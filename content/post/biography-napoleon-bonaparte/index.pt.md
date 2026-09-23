@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["napoleon-bonaparte", "history"]
 image: "eyecatch.jpg"
 slug: "biography-napoleon-bonaparte"
+description: "Na história mundial, poucas figuras foram alvo de tantos elogios e críticas quanto Napoleão Bonaparte."
 ---
 
 # Napoleão Bonaparte: Filho da Revolução ou Ditador?

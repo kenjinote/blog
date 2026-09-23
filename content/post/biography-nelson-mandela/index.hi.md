@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["nelson-mandela", "history"]
 image: "eyecatch.jpg"
 slug: "biography-nelson-mandela"
+description: "नेल्सन मंडेला को 20वीं सदी के सबसे महान नेताओं में से एक के रूप में दुनिया भर के लोगों की यादों में गहराई से उकेरा गया है। उन्होंने दक्षिण अफ्रीका की नस्ली"
 ---
 
 ## प्रस्तावना: स्वतंत्रता की लंबी और कठिन यात्रा

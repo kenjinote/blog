@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["nikolai-lobachevsky", "history"]
 image: "eyecatch.jpg"
 slug: "biography-nikolai-lobachevsky"
+description: "Dans l'histoire des mathématiques, rares sont ceux qui ont fondamentalement bouleversé le sens commun existant et présenté une nouvelle vision du monde."
 ---
 
 # Nikolaï Lobatchevski : Le « Copernic de la géométrie » qui a ouvert les portes de la géométrie non euclidienne

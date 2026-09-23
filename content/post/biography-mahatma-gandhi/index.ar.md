@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["mahatma-gandhi", "history"]
 image: "eyecatch.jpg"
 slug: "biography-mahatma-gandhi"
+description: "\"العين بالعين تجعل العالم كله أعمى.\""
 ---
 
 # رسول السلام المهاتما غاندي: كيف غير العصيان المدني اللاعنفي العالم

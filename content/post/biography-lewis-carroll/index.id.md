@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["lewis-carroll", "history"]
 image: "eyecatch.jpg"
 slug: "biography-lewis-carroll"
+description: "Mendengar nama \"Lewis Carroll,\" banyak orang akan teringat pada penulis buku anak-anak yang dicintai di seluruh dunia, \"Alice's Adventures in Wonderland.\""
 ---
 
 ## Pendahuluan

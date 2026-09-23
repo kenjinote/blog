@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["stephen-covey", "history"]
 image: "eyecatch.jpg"
 slug: "biography-stephen-covey"
+description: "現代のビジネスや自己啓発において、最も多大な影響を与えた人物の一人を挙げるとすれば、間違いなくスティーブン・R・コヴィー博士（Stephen R. Covey）の名前が挙がるでしょう。"
 ---
 
 現代のビジネスや自己啓発において、最も多大な影響を与えた人物の一人を挙げるとすれば、間違いなくスティーブン・R・コヴィー博士（Stephen R. Covey）の名前が挙がるでしょう。彼の著書『7つの習慣（The 7 Habits of Highly Effective People）』は世界中で数千万部を売り上げ、単なるビジネス書を超えて「人生の指針」として多くの人々に愛読されています。本記事では、コヴィー博士の生涯、その根底に流れる哲学、そして後世に遺した計り知れない影響について深く掘り下げていきます。

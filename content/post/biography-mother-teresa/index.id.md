@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["mother-teresa", "history"]
 image: "eyecatch.jpg"
 slug: "biography-mother-teresa"
+description: "Bunda Teresa (1910 - 1997) adalah seorang tokoh kemanusiaan terkemuka abad ke-20 dan biarawati Katolik yang mendedikasikan hidupnya untuk \"orang termiskin"
 ---
 
 Bunda Teresa (1910 - 1997) adalah seorang tokoh kemanusiaan terkemuka abad ke-20 dan biarawati Katolik yang mendedikasikan hidupnya untuk "orang termiskin di antara yang miskin." Jalan hidup dan filosofinya terus memengaruhi orang-orang di seluruh dunia, melampaui batas-batas agama. Dalam artikel ini, kita akan menggali lebih dalam tentang kehidupannya yang penuh pergolakan, keyakinan teguh yang mendasarinya, dan warisan besar yang ia tinggalkan untuk generasi mendatang.

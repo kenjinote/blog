@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["confucius", "history"]
 image: "eyecatch.jpg"
 slug: "biography-confucius"
+description: "¿Quién es el influencer más influyente de la historia? En la actualidad, uno podría pensar en Steve Jobs o Elon Musk, pero hay una figura que arrasó en tod"
 ---
 
 ¿Quién es el influencer más influyente de la historia? En la actualidad, uno podría pensar en Steve Jobs o Elon Musk, pero hay una figura que arrasó en toda Asia Oriental hace más de 2500 años y cuya filosofía todavía se transmite hoy. Ese es "Confucio".

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["lewis-carroll", "history"]
 image: "eyecatch.jpg"
 slug: "biography-lewis-carroll"
+description: "Услышав имя «Льюис Кэрролл», многие вспоминают автора всемирно любимой детской книги «Алиса в Стране чудес»."
 ---
 
 ## Введение

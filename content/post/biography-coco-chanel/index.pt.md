@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["coco-chanel", "history"]
 image: "eyecatch.jpg"
 slug: "biography-coco-chanel"
+description: "No mundo da moda do século XX, talvez não haja outra figura que tenha revolucionado o próprio estilo de vida das mulheres de forma tão profunda quanto Gabr"
 ---
 
 # Coco Chanel: A Vida e Filosofia da Revolucionária que Libertou as Mulheres

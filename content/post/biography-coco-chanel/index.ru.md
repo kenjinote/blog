@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["coco-chanel", "history"]
 image: "eyecatch.jpg"
 slug: "biography-coco-chanel"
+description: "В мире моды 20-го века вряд ли найдется кто-то, кроме Габриэль «Коко» Шанель, кто бы так фундаментально изменил образ жизни женщин."
 ---
 
 # Коко Шанель: Жизнь и философия бунтарки, освободившей женщин

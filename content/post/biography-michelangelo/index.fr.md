@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["michelangelo", "history"]
 image: "eyecatch.jpg"
 slug: "biography-michelangelo"
+description: "Michel-Ange Buonarroti (1475-1564) est considéré, aux côtés de Léonard de Vinci et de Raphaël, comme l'un des trois grands maîtres de la Renaissance."
 ---
 
 Michel-Ange Buonarroti (1475-1564) est considéré, aux côtés de Léonard de Vinci et de Raphaël, comme l'un des trois grands maîtres de la Renaissance. Sculpteur, peintre, architecte et poète, il a laissé une empreinte indélébile dans l'histoire de l'art occidental. Cet article explore comment il a donné naissance à d'innombrables chefs-d'œuvre, la philosophie qui guidait son art, ainsi que sa vie et son influence sur la postérité.

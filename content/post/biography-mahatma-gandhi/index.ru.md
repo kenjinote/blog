@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["mahatma-gandhi", "history"]
 image: "eyecatch.jpg"
 slug: "biography-mahatma-gandhi"
+description: "«Око за око сделает весь мир слепым»."
 ---
 
 # Апостол мира Махатма Ганди: Как ненасильственное гражданское неповиновение изменило мир

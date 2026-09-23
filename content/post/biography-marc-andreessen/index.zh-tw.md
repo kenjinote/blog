@@ -5,6 +5,7 @@ image: eyecatch.jpg
 tags: ["marc-andreessen", "history"]
 title: "網路黎明期到開創未來的男人：馬克·安德森的生涯與哲學"
 slug: "biography-marc-andreessen"
+description: "現代的網際網路已經成為理所當然的存在，更透過投入鉅額資金於科技的未來來持續塑造這個世界的人物，這就是馬克·安德森（Marc Andreessen）。身為網頁瀏覽器的創始人之一，同時也是代表矽谷的創業投資公司「Andreessen Horowitz (a16z)」的共同創辦人，他的軌跡與網際網路的發展史可說是完全重疊。"
 ---
 
 現代的網際網路已經成為理所當然的存在，更透過投入鉅額資金於科技的未來來持續塑造這個世界的人物，這就是馬克·安德森（Marc Andreessen）。身為網頁瀏覽器的創始人之一，同時也是代表矽谷的創業投資公司「Andreessen Horowitz (a16z)」的共同創辦人，他的軌跡與網際網路的發展史可說是完全重疊。

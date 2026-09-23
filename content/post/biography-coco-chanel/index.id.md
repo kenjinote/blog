@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["coco-chanel", "history"]
 image: "eyecatch.jpg"
 slug: "biography-coco-chanel"
+description: "Di dunia mode abad ke-20, mungkin tidak ada tokoh lain yang secara mendasar membalikkan gaya hidup wanita selain Gabrielle \"Coco\" Chanel."
 ---
 
 # Coco Chanel: Kehidupan dan Filosofi Sang Revolusioner yang Membebaskan Wanita

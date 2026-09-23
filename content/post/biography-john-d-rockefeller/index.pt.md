@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["john-d-rockefeller", "history"]
 image: "eyecatch.jpg"
 slug: "biography-john-d-rockefeller"
+description: "Do final do século XIX ao início do século XX, houve uma figura que teve um impacto enorme não apenas nos Estados Unidos, mas na economia global."
 ---
 
 Do final do século XIX ao início do século XX, houve uma figura que teve um impacto enorme não apenas nos Estados Unidos, mas na economia global. Seu nome é John Davison Rockefeller. Amplamente conhecido como o "Rei do Petróleo", ele fundou a Standard Oil Company e construiu uma das maiores fortunas da história através de um monopólio esmagador. No entanto, sua verdadeira grandeza não residia simplesmente no acúmulo de riqueza, mas no estabelecimento do sistema capitalista moderno e na sistematização de uma filantropia sem precedentes que continua a influenciar as gerações futuras. Este artigo aprofunda-se em sua vida turbulenta, sua filosofia de negócios única e o grande legado que ele deixou para a sociedade moderna.

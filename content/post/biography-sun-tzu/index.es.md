@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["sun-tzu", "history"]
 image: "eyecatch.jpg"
 slug: "biography-sun-tzu"
+description: "\"Si conoces al enemigo y te conoces a ti mismo, no debes temer el resultado de cien batallas\"."
 ---
 
 ## Introducción

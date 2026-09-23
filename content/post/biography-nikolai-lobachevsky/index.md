@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["nikolai-lobachevsky", "history"]
 image: "eyecatch.jpg"
 slug: "biography-nikolai-lobachevsky"
+description: "数学の歴史において、既存の常識を根本から覆し、新たな世界観を提示した人物は数少ない。その中でも、ニコライ・イヴァノヴィチ・ロバチェフスキー（Nikolai Ivanovich Lobachevsky, 1792–1856）は、"
 ---
 
 # ニコライ・ロバチェフスキー：非ユークリッド幾何学の扉を開いた「幾何学のコペルニクス」

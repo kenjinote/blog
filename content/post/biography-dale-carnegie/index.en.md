@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["dale-carnegie", "history"]
 image: "eyecatch.jpg"
 slug: "biography-dale-carnegie"
+description: "A monumental work of self-help that continues to have a massive influence on modern business people and leaders in the tech industry today."
 ---
 
 A monumental work of self-help that continues to have a massive influence on modern business people and leaders in the tech industry today. These are masterpieces such as "How to Win Friends and Influence People" and "How to Stop Worrying and Start Living". How did their creator, Dale Carnegie (1888–1955), come to systematize the principles of human relations and move the hearts of people all over the world? In this article, we will dig deep into his turbulent life, the essence of his philosophy, and the legacy he left for the modern era.

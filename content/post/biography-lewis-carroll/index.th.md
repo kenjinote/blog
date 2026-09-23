@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["lewis-carroll", "history"]
 image: "eyecatch.jpg"
 slug: "biography-lewis-carroll"
+description: "เมื่อได้ยินชื่อ \"ลูอิส แคร์รอลล์\" หลายคนมักจะนึกถึงผู้แต่งนิทานเด็กที่โด่งดังไปทั่วโลกอย่าง \"อลิซในดินแดนมหัศจรรย์\" (Alice's Adventures in Wonderland) ทว่า"
 ---
 
 ## คำนำ

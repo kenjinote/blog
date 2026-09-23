@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["martin-fowler", "history"]
 image: "eyecatch.jpg"
 slug: "biography-martin-fowler"
+description: "Dans le développement logiciel moderne, il ne se passe pas un jour sans que l'on entende des termes tels que « Agile », « Refactoring » et « Microservices »."
 ---
 
 Dans le développement logiciel moderne, il ne se passe pas un jour sans que l'on entende des termes tels que « Agile », « Refactoring » et « Microservices ». La personne qui a popularisé ces concepts dans toute l'industrie et qui a fondamentalement transformé l'ingénierie logicielle est Martin Fowler. Dans cet article, nous plongeons au cœur de la vie, de la philosophie sous-jacente et de l'impact durable de ce programmeur, auteur et penseur.

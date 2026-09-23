@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["eiichi-shibusawa", "history"]
 image: "eyecatch.jpg"
 slug: "biography-eiichi-shibusawa"
+description: "Eiichi Shibusawa is one of the most important figures who played a role in the modernization of Japan."
 ---
 
 Eiichi Shibusawa is one of the most important figures who played a role in the modernization of Japan. Known as the "Father of Japanese Capitalism," he was involved in the founding and development of approximately 500 companies throughout his life, while also dedicating his efforts to supporting around 600 social public works and educational institutions. Going beyond mere profit-seeking, his life and philosophy, which pursued the harmony of morality and economy under the ideal of "The Analects and the Abacus," provide many insights for modern business professionals.

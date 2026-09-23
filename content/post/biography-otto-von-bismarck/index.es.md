@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["otto-von-bismarck", "history"]
 image: "eyecatch.jpg"
 slug: "biography-otto-von-bismarck"
+description: "Otto von Bismarck (1815–1898), conocido como el \"Canciller de Hierro\", fue un estadista prusiano y alemán, y un realista excepcional que lideró la diplomac"
 ---
 
 Otto von Bismarck (1815–1898), conocido como el "Canciller de Hierro", fue un estadista prusiano y alemán, y un realista excepcional que lideró la diplomacia europea a finales del siglo XIX. Su vida, sus ideas y su legado al unir los fragmentados estados alemanes a través de la fuerza militar y una hábil diplomacia para construir un poderoso Imperio Alemán siguen ofreciendo lecciones cruciales en la política internacional moderna. Este artículo sigue sus pasos, desde su origen en una zona rural de Prusia hasta convertirse en un coloso que movió la historia mundial.

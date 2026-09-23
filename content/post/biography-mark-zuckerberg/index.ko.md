@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["mark-zuckerberg", "history"]
 image: "eyecatch.jpg"
 slug: "biography-mark-zuckerberg"
+description: "마크 엘리엇 저커버그(Mark Elliot Zuckerberg)는 1984년 5월 14일 뉴욕주 화이트 플레인스에서 태어났습니다. 치과의사 아버지와 정신과 의사 어머니라는 유복한 가정 환경에서 자란 그는 어린 시절부터 프로그래밍에 강한 관심을 보였습니다."
 ---
 
 ## 고독한 해커에서 '연결'의 창조자로

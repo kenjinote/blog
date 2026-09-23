@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["guido-van-rossum", "history"]
 image: "eyecatch.jpg"
 slug: "biography-guido-van-rossum"
+description: "\"Python\" é uma das linguagens de programação mais populares do mundo. Seu criador, o programador holandês Guido van Rossum, é amplamente conhecido."
 ---
 
 "Python" é uma das linguagens de programação mais populares do mundo. Seu criador, o programador holandês Guido van Rossum, é amplamente conhecido. A linguagem que ele criou tornou-se indispensável em várias áreas, como IA, ciência de dados e desenvolvimento web. Neste artigo, vamos explorar profundamente a vida que ele levou, a filosofia sob a qual ele projetou o Python e o impacto que ele teve na tecnologia das gerações futuras.

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["nikolai-lobachevsky", "history"]
 image: "eyecatch.jpg"
 slug: "biography-nikolai-lobachevsky"
+description: "En la historia de las matemáticas, pocos individuos han anulado fundamentalmente el sentido común existente y presentado una nueva visión del mundo."
 ---
 
 # Nikolái Lobachevski: El "Copérnico de la Geometría" que abrió la puerta a la geometría no euclidiana

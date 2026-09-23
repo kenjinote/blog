@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["sun-tzu", "history"]
 image: "eyecatch.jpg"
 slug: "biography-sun-tzu"
+description: "\"적을 알고 나를 알면 백 번 싸워도 위태롭지 않다\"——현대 비즈니스 현장에서도 자주 인용되는 이 명언은 지금으로부터 2500년 전 중국 춘추시대에 살았던 한 군략가가 남긴 것입니다."
 ---
 
 ## 머리말

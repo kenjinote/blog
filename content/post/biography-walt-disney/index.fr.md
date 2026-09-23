@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["walt-disney", "history"]
 image: "eyecatch.jpg"
 slug: "biography-walt-disney"
+description: "Walt Disney (Walter Elias Disney) est un \"créateur de rêves\" emblématique du XXe siècle, dont la portée dépasse largement le cadre d'un simple animateur ou"
 ---
 
 Walt Disney (Walter Elias Disney) est un "créateur de rêves" emblématique du XXe siècle, dont la portée dépasse largement le cadre d'un simple animateur ou producteur de films. Son nom est aujourd'hui une marque connue de tous à travers le monde, mais derrière ce succès se cachent d'innombrables échecs et un esprit indomptable pour les surmonter. Cet article explore sa vie et sa philosophie, et comment il a élevé l'animation, alors un domaine balbutiant, au rang d'art, et établi une nouvelle forme de divertissement avec les parcs à thème.

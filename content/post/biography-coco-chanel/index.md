@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["coco-chanel", "history"]
 image: "eyecatch.jpg"
 slug: "biography-coco-chanel"
+description: "20世紀のファッション界において、ガブリエル・“ココ”・シャネルほど、女性のライフスタイルそのものを根底から覆した人物は他にいないでしょう。彼女は単なる衣服のデザイナーではなく、因習に縛られた女性たちに「自由」という名の新たな価値観を提供した思想家であり、起業家でした。"
 ---
 
 # ココ・シャネル：女性を解放した革命児の生涯と哲学

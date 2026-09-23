@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["george-soros", "history"]
 image: "eyecatch.jpg"
 slug: "biography-george-soros"
+description: "George Soros. Mendengar nama ini, apa yang terlintas dalam pikiran Anda? Apakah ia seorang investor legendaris yang dijuluki \"Pria yang Menghancurkan Bank"
 ---
 
 George Soros. Mendengar nama ini, apa yang terlintas dalam pikiran Anda? Apakah ia seorang investor legendaris yang dijuluki "Pria yang Menghancurkan Bank of England", atau seorang filantropis besar yang mendukung demokratisasi di seluruh dunia? Atau mungkin, ia adalah sosok misterius yang sering menjadi sasaran teori konspirasi.

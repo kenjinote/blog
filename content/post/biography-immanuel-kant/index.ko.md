@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["immanuel-kant", "history"]
 image: "eyecatch.jpg"
 slug: "biography-immanuel-kant"
+description: "근대 철학을 논할 때 결코 피해 갈 수 없는 거성. 그가 바로 임마누엘 칸트(Immanuel Kant, 1724–1804)입니다. 프로이센 왕국(현재 러시아 연방 칼리닌그라드)의 쾨니히스베르크에서 태어나 평생 그곳을 떠나지 않고 규칙적이고 평온한 나날을 보냈습니다."
 ---
 
 ## 머리말: 시계처럼 정확한 삶에서 탄생한 철학의 거대한 패러다임 전환

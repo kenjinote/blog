@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["abraham-lincoln", "history"]
 image: "eyecatch.jpg"
 slug: "biography-abraham-lincoln"
+description: "Presiden ke-16 Amerika Serikat, Abraham Lincoln. Dikenal luas sebagai \"Bapak Emansipasi\", ia adalah tokoh yang mencegah perpecahan negara dengan melewati P"
 ---
 
 Presiden ke-16 Amerika Serikat, Abraham Lincoln. Dikenal luas sebagai "Bapak Emansipasi", ia adalah tokoh yang mencegah perpecahan negara dengan melewati Perang Saudara Amerika, krisis terbesar sejak berdirinya negara tersebut. Kata-katanya "Pemerintahan dari rakyat, oleh rakyat, untuk rakyat" telah diwariskan hingga hari ini sebagai filosofi yang membentuk fondasi demokrasi.

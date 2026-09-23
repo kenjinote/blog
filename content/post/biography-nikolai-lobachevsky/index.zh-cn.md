@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["nikolai-lobachevsky", "history"]
 image: "eyecatch.jpg"
 slug: "biography-nikolai-lobachevsky"
+description: "在数学史上，能够从根本上颠覆现有常识并提出新世界观的人物寥寥无几。其中，尼古拉·伊万诺维奇·罗巴切夫斯基（Nikolai Ivanovich Lobachevsky, 1792–1856）是一位打破了2000多年来被视为绝对真理的“欧几里得几何”的局限，并为现代数学和物理学开辟了道路的伟大数学家。"
 ---
 
 # 尼古拉·罗巴切夫斯基：推开非欧几何大门的“几何学哥白尼”

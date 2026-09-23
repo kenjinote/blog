@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["mark-zuckerberg", "history"]
 image: "eyecatch.jpg"
 slug: "biography-mark-zuckerberg"
+description: "ولد مارك إليوت زوكربيرج (Mark Elliot Zuckerberg) في 14 مايو 1984، في وايت بلينس، نيويورك."
 ---
 
 ## من هاكر وحيد إلى صانع للتواصل

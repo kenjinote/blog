@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["nelson-mandela", "history"]
 image: "eyecatch.jpg"
 slug: "biography-nelson-mandela"
+description: "ネルソン・マンデラは、20世紀における最も偉大な指導者の一人として、世界中の人々の記憶に深く刻まれています。南アフリカ共和国の人種隔離政策「アパルトヘイト」の撤廃に向けて生涯を捧げ、27年にも及ぶ過酷な獄中生活を耐え抜きました。"
 ---
 
 ## はじめに：自由への長く険しい道

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["friedrich-nietzsche", "history"]
 image: "eyecatch.jpg"
 slug: "biography-friedrich-nietzsche"
+description: "Hallo. Dieses Mal werden wir tief in das Leben und Denken von Friedrich Nietzsche eintauchen, einem Philosophen, der wie ein riesiger Meteorit in die philo"
 ---
 
 Hallo. Dieses Mal werden wir tief in das Leben und Denken von Friedrich Nietzsche eintauchen, einem Philosophen, der wie ein riesiger Meteorit in die philosophische Welt des 19. Jahrhunderts einschlug und einen unermesslichen Einfluss auf das moderne Denken ausübte.

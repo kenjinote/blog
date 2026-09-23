@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["linus-torvalds", "history"]
 image: "eyecatch.jpg"
 slug: "biography-linus-torvalds"
+description: "« Linux », le système d'exploitation qui sous-tend l'infrastructure informatique moderne et fonctionne sur d'innombrables systèmes."
 ---
 
 # Le Géant de l'Open Source : La Trajectoire et la Philosophie de Linus Torvalds

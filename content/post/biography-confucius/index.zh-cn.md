@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["confucius", "history"]
 image: "eyecatch.jpg"
 slug: "biography-confucius"
+description: "历史上最具影响力的影响者（influencer）是谁？在现代，你可能会想到史蒂夫·乔布斯或埃隆·马斯克，但在2500多年前，有一位席卷了整个东亚，其思想至今仍被传承的人物。他就是“孔子”。"
 ---
 
 历史上最具影响力的影响者（influencer）是谁？在现代，你可能会想到史蒂夫·乔布斯或埃隆·马斯克，但在2500多年前，有一位席卷了整个东亚，其思想至今仍被传承的人物。他就是“孔子”。

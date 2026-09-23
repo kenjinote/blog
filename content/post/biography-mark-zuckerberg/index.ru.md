@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["mark-zuckerberg", "history"]
 image: "eyecatch.jpg"
 slug: "biography-mark-zuckerberg"
+description: "Марк Эллиот Цукерберг (Mark Elliot Zuckerberg) родился 14 мая 1984 года в Уайт-Плейнс, штат Нью-Йорк."
 ---
 
 ## От одинокого хакера к создателю связей

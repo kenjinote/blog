@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["lewis-carroll", "history"]
 image: "eyecatch.jpg"
 slug: "biography-lewis-carroll"
+description: "Al escuchar el nombre de \"Lewis Carroll\", la mayoría de las personas piensan en el autor del querido cuento infantil \"Alicia en el país de las maravillas\"."
 ---
 
 ## Introducción

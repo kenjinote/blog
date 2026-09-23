@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["mother-teresa", "history"]
 image: "eyecatch.jpg"
 slug: "biography-mother-teresa"
+description: "La Madre Teresa (1910 - 1997) es una trabajadora humanitaria representativa del siglo XX y una monja de la Iglesia Católica que dedicó su vida a los \"más p"
 ---
 
 La Madre Teresa (1910 - 1997) es una trabajadora humanitaria representativa del siglo XX y una monja de la Iglesia Católica que dedicó su vida a los "más pobres de entre los pobres". Su forma de vida y su filosofía continúan influyendo en personas de todo el mundo, trascendiendo las fronteras religiosas. En este artículo, profundizaremos en su vida llena de acontecimientos, su fe inquebrantable que yace en el fondo y el gran legado que dejó a la posteridad.

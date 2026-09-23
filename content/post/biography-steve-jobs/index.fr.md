@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["steve-jobs", "history"]
 image: "eyecatch.jpg"
 slug: "biography-steve-jobs"
+description: "Dans la société numérique moderne, il n'est pas exagéré de dire que c'est grâce à un entrepreneur charismatique que nous utilisons des smartphones comme un"
 ---
 
 Dans la société numérique moderne, il n'est pas exagéré de dire que c'est grâce à un entrepreneur charismatique que nous utilisons des smartphones comme une évidence, tapons des textes avec de belles polices de caractères et transportons de la musique dans nos poches. Steve Jobs — cofondateur d'Apple et un homme qui s'est toujours tenu à l'intersection de la technologie et de l'art. Sa vie a été remplie de développements si dramatiques que le terme de "mouvementée" ne suffirait pas à la décrire, ainsi que d'une philosophie inébranlable.

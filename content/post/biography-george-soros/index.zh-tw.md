@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["george-soros", "history"]
 image: "eyecatch.jpg"
 slug: "biography-george-soros"
+description: "喬治·索羅斯。聽到這個名字，大家會想到什麼？是有著「擊垮英格蘭銀行的男人」異名的傳奇投資家，還是在世界各地支援民主化的巨大慈善家？又或許，他是陰謀論中常被提及的神祕人物。"
 ---
 
 喬治·索羅斯。聽到這個名字，大家會想到什麼？是有著「擊垮英格蘭銀行的男人」異名的傳奇投資家，還是在世界各地支援民主化的巨大慈善家？又或許，他是陰謀論中常被提及的神祕人物。

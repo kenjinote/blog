@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["j-r-r-tolkien", "history"]
 image: "eyecatch.jpg"
 slug: "biography-j-r-r-tolkien"
+description: "一聽到約翰·羅納德·魯埃爾·托爾金（J.R.R. 托爾金）的名字，許多人腦海中首先浮現的，便是《魔戒》與《哈比人》故事展開的那個宏大的「中土世界」（Middle-earth）。"
 ---
 
 # J.R.R. 托爾金：現代奇幻之父的足跡與神話的創造

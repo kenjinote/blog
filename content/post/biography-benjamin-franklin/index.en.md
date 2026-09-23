@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["benjamin-franklin", "history"]
 image: "eyecatch.jpg"
 slug: "biography-benjamin-franklin"
+description: "When hearing the name Benjamin Franklin (1706–1790), many people might first think of the gentle portrait on the United States 100-dollar bill."
 ---
 
 When hearing the name Benjamin Franklin (1706–1790), many people might first think of the gentle portrait on the United States 100-dollar bill. However, his true character cannot be contained within the political framework of a "Founding Father." A printer, writer, scientist, inventor, diplomat, and philosopher—Franklin was a rare "polymath" who left a historical footprint in every field.

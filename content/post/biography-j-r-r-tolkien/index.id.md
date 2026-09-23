@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["j-r-r-tolkien", "history"]
 image: "eyecatch.jpg"
 slug: "biography-j-r-r-tolkien"
+description: "Ketika mendengar nama John Ronald Reuel Tolkien (J.R.R. Tolkien), hal pertama yang terlintas di benak banyak orang adalah dunia epik \"Dunia Tengah\" (Middle"
 ---
 
 # J.R.R. Tolkien: Jejak Bapak Fantasi Modern dan Penciptaan Mitos

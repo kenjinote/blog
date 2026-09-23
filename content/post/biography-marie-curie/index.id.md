@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["marie-curie", "history"]
 image: "eyecatch.jpg"
 slug: "biography-marie-curie"
+description: "Dalam sejarah sains, salah satu orang yang menempuh jalan paling cemerlang dan paling melelahkan adalah Marie Curie (Nyonya Curie)."
 ---
 
 Dalam sejarah sains, salah satu orang yang menempuh jalan paling cemerlang dan paling melelahkan adalah Marie Curie (Nyonya Curie). Dia adalah wanita pertama yang memenangkan Hadiah Nobel dan satu-satunya orang dalam sejarah yang memenangkan Hadiah Nobel dalam dua bidang sains yang berbeda: fisika dan kimia. Kehidupannya diwarnai oleh semangat murni yang haus akan pengetahuan dan kecintaan yang mendalam pada masa depan umat manusia. Dalam artikel ini, kita mendalami kehidupan Marie Curie, filosofi yang dipegangnya, dan pengaruh besarnya yang terus berlanjut hingga hari ini.

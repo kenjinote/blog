@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["martin-luther-king-jr", "history"]
 image: "eyecatch.jpg"
 slug: "biography-martin-luther-king-jr"
+description: "Martin Luther King Jr. (15 de enero de 1929 - 4 de abril de 1968) fue un ministro bautista protestante estadounidense y el líder más destacado del movimien"
 ---
 
 Martin Luther King Jr. (15 de enero de 1929 - 4 de abril de 1968) fue un ministro bautista protestante estadounidense y el líder más destacado del movimiento de derechos civiles afroamericano. Su filosofía de "acción directa no violenta" sirvió como motor para derribar las políticas de segregación racial en la sociedad estadounidense, y continúa influyendo profundamente en numerosos movimientos de derechos humanos en la actualidad.

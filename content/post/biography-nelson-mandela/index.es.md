@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["nelson-mandela", "history"]
 image: "eyecatch.jpg"
 slug: "biography-nelson-mandela"
+description: "Nelson Mandela está profundamente grabado en la memoria de las personas de todo el mundo como uno de los líderes más grandes del siglo XX."
 ---
 
 ## Introducción: El largo camino hacia la libertad

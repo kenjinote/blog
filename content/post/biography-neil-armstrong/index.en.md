@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["neil-armstrong", "history"]
 image: "eyecatch.jpg"
 slug: "biography-neil-armstrong"
+description: "\"That's one small step for man, one giant leap for mankind.\" On July 20, 1969, at the moment humanity first left footprints on a celestial body other than"
 ---
 
 "That's one small step for man, one giant leap for mankind."

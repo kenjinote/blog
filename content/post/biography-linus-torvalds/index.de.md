@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["linus-torvalds", "history"]
 image: "eyecatch.jpg"
 slug: "biography-linus-torvalds"
+description: "\"Linux\", das Betriebssystem, das die Grundlage der modernen IT-Infrastruktur bildet und auf unzähligen Systemen läuft."
 ---
 
 # Gigant des Open Source: Der Werdegang und die Philosophie von Linus Torvalds

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["thomas-edison", "history"]
 image: "eyecatch.jpg"
 slug: "biography-thomas-edison"
+description: "\"Genie ist ein Prozent Inspiration und neunundneunzig Prozent Transpiration.\" Thomas Alva Edison (1847-1931), der diese Worte hinterließ, ist einer der pro"
 ---
 
 "Genie ist ein Prozent Inspiration und neunundneunzig Prozent Transpiration." Thomas Alva Edison (1847-1931), der diese Worte hinterließ, ist einer der produktivsten und einflussreichsten Erfinder der Menschheitsgeschichte. Mit über 1.000 Patenten, die er im Laufe seines Lebens erwarb, legten die Errungenschaften des Mannes, der als "Zauberer von Menlo Park" bekannt ist, den Grundstein für die Technologie der modernen Gesellschaft. In diesem Artikel tauchen wir tief in Edisons turbulentes Leben, die unerschütterliche Philosophie dahinter und seinen bis heute andauernden Einfluss ein.

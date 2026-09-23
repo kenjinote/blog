@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["napoleon-bonaparte", "history"]
 image: "eyecatch.jpg"
 slug: "biography-napoleon-bonaparte"
+description: "В мировой истории найдется немного личностей, вызывающих столь же противоречивые оценки, как Наполеон Бонапарт."
 ---
 
 # Наполеон Бонапарт: Дитя революции или диктатор?

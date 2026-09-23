@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["mahatma-gandhi", "history"]
 image: "eyecatch.jpg"
 slug: "biography-mahatma-gandhi"
+description: "\"An eye for an eye will only make the whole world blind.\""
 ---
 
 # Apostle of Peace Mahatma Gandhi: How Nonviolent Civil Disobedience Changed the World

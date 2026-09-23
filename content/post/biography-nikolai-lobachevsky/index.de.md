@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["nikolai-lobachevsky", "history"]
 image: "eyecatch.jpg"
 slug: "biography-nikolai-lobachevsky"
+description: "In der Geschichte der Mathematik haben nur wenige den bestehenden gesunden Menschenverstand von Grund auf umgestoßen und ein neues Weltbild präsentiert."
 ---
 
 # Nikolai Lobatschewski: Der 'Kopernikus der Geometrie', der die Tür zur nicht-euklidischen Geometrie öffnete

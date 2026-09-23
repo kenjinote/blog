@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["sun-tzu", "history"]
 image: "eyecatch.jpg"
 slug: "biography-sun-tzu"
+description: "\"यदि आप शत्रु को जानते हैं और स्वयं को जानते हैं, तो आपको सौ युद्धों के परिणाम से डरने की आवश्यकता नहीं है।\" यह प्रसिद्ध उद्धरण, जो आधुनिक व्यापारिक परिदृश"
 ---
 
 ## परिचय

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["nelson-mandela", "history"]
 image: "eyecatch.jpg"
 slug: "biography-nelson-mandela"
+description: "Nelson Mandela terukir dalam di ingatan orang-orang di seluruh dunia sebagai salah satu pemimpin terbesar abad ke-20."
 ---
 
 ## Pendahuluan: Perjalanan Panjang Menuju Kebebasan

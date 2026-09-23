@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["mark-zuckerberg", "history"]
 image: "eyecatch.jpg"
 slug: "biography-mark-zuckerberg"
+description: "मार्क एलियट जुकरबर्ग (Mark Elliot Zuckerberg) का जन्म 14 मई, 1984 को वाइट प्लेन्स, न्यूयॉर्क में हुआ था। एक डेंटिस्ट पिता और मनोचिकित्सक माँ के विशेषाधिकार"
 ---
 
 ## एक अकेले हैकर से "कनेक्शन" के निर्माता तक

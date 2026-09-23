@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["steve-mcconnell", "history"]
 image: "eyecatch.jpg"
 slug: "biography-steve-mcconnell"
+description: "Anyone involved in software development has likely come across the thick, masterful book titled Code Complete."
 ---
 
 Anyone involved in software development has likely come across the thick, masterful book titled *Code Complete*. Its author, Steve McConnell, is a figure who has dedicated his life to bringing order to the chaotic task of programming and establishing "Software Engineering" in its truest sense. This article delves deeply into his life, his unique philosophy, and the immense influence he continues to have on the modern development scene.

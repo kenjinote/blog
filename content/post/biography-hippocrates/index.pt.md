@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["hippocrates", "history"]
 image: "eyecatch.jpg"
 slug: "biography-hippocrates"
+description: "Na Grécia Antiga, a medicina esteve por muito tempo profundamente ligada a orações aos deuses, superstições e magia."
 ---
 
 Na Grécia Antiga, a medicina esteve por muito tempo profundamente ligada a orações aos deuses, superstições e magia. Em uma época em que a doença era considerada um "castigo divino" ou "obra de espíritos malignos", houve um homem que derrubou fundamentalmente esse senso comum e elevou a medicina a uma disciplina científica e racional. Este é Hipócrates (Hippocrates), aclamado como o "Pai da Medicina". Neste artigo, vamos aprofundar a sua vida, a sua inovadora filosofia médica e a sua enorme influência que continua a formar a base da ética médica até hoje.

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["j-r-r-tolkien", "history"]
 image: "eyecatch.jpg"
 slug: "biography-j-r-r-tolkien"
+description: "Al escuchar el nombre de John Ronald Reuel Tolkien (J.R.R. Tolkien), lo primero que le viene a la mente a mucha gente es el épico mundo de la \"Tierra Media"
 ---
 
 # J.R.R. Tolkien: La trayectoria del padre de la fantasía moderna y la creación de un mito

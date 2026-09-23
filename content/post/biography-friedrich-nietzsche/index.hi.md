@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["friedrich-nietzsche", "history"]
 image: "eyecatch.jpg"
 slug: "biography-friedrich-nietzsche"
+description: "नमस्ते। आज हम फ्रेडरिक नीत्शे (Friedrich Nietzsche) के जीवन और विचारों पर गहराई से विचार करेंगे, एक दार्शनिक जो 19वीं सदी के दर्शनशास्त्र की दुनिया में एक"
 ---
 
 नमस्ते। आज हम फ्रेडरिक नीत्शे (Friedrich Nietzsche) के जीवन और विचारों पर गहराई से विचार करेंगे, एक दार्शनिक जो 19वीं सदी के दर्शनशास्त्र की दुनिया में एक विशाल उल्कापिंड की तरह टकराए और जिनका आधुनिक विचारों पर अकल्पनीय प्रभाव पड़ा।

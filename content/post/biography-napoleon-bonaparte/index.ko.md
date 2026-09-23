@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["napoleon-bonaparte", "history"]
 image: "eyecatch.jpg"
 slug: "biography-napoleon-bonaparte"
+description: "세계사에서 나폴레옹 보나파르트만큼 훼예포폄(명성과 악평)이 엇갈리는 인물은 드물 것입니다. \"내 사전에 불가능이란 단어는 없다\"는 명언으로 알려진 그는 단순한 군사적 천재에 그치지 않고, 현대 유럽의 법제와 사회 기반의 초석을 다진 정치가이기도 했습니다."
 ---
 
 # 나폴레옹 보나파르트: 혁명의 아들인가, 아니면 독재자인가

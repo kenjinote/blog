@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["plato", "history"]
 image: "eyecatch.jpg"
 slug: "biography-plato"
+description: "Platon, einer der bedeutendsten Philosophen des antiken Griechenlands, legte den Grundstein der westlichen Philosophie."
 ---
 
 Platon, einer der bedeutendsten Philosophen des antiken Griechenlands, legte den Grundstein der westlichen Philosophie. Als Schüler des Sokrates und Lehrer des Aristoteles hinterließ er durch seine Dialoge der Nachwelt zahlreiche Ideen. Konzepte wie die „Ideenlehre“ beeinflussten nicht nur die Philosophie tiefgreifend, sondern auch die Politikwissenschaft, Ethik und Theologie. Seine Präsenz ist so überwältigend, dass der britische Philosoph A.N. Whitehead die berühmte Bemerkung machte: „Die sicherste allgemeine Charakterisierung der europäischen philosophischen Tradition lautet, dass sie aus einer Reihe von Fußnoten zu Platon besteht.“

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["karl-marx", "history"]
 image: "eyecatch.jpg"
 slug: "biography-karl-marx"
+description: "Karl Marx. Al escuchar ese nombre, ¿qué le viene a la mente? Algunas personas pueden considerarlo una gran figura histórica como el \"padre del comunismo\","
 ---
 
 Karl Marx. Al escuchar ese nombre, ¿qué le viene a la mente? Algunas personas pueden considerarlo una gran figura histórica como el "padre del comunismo", mientras que otras pueden percibirlo como un "pensador peligroso que creó estados dictatoriales". Sin embargo, si quitamos el velo de la ideología y volvemos a mirar puramente su pensamiento, lo que encontramos es la figura de "un depurador genial que analizó más profundamente que nadie los errores (contradicciones) del sistema capitalista".

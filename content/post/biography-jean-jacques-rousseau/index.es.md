@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["jean-jacques-rousseau", "history"]
 image: "eyecatch.jpg"
 slug: "biography-jean-jacques-rousseau"
+description: "En la Europa del siglo XVIII, mientras florecía el pensamiento ilustrado que consideraba la razón como suprema, hubo un hombre que desafió la corriente y c"
 ---
 
 En la Europa del siglo XVIII, mientras florecía el pensamiento ilustrado que consideraba la razón como suprema, hubo un hombre que desafió la corriente y clamó: "Regreso a la naturaleza". Ese hombre fue Jean-Jacques Rousseau (1712 - 1778). Sus ideas tuvieron una influencia decisiva en la Revolución Francesa y, además, sentaron las bases de la pedagogía moderna y la literatura romántica. En este artículo, desentrañaremos la vida de Rousseau, quien continuó buscando la verdad en medio de la soledad y el vagabundeo, y su profunda filosofía que sigue resonando en la actualidad.

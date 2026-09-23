@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["friedrich-nietzsche", "history"]
 image: "eyecatch.jpg"
 slug: "biography-friedrich-nietzsche"
+description: "大家好。今天，我们将深入探讨弗里德里希·尼采（Friedrich Nietzsche）的一生及其思想，这位哲学家如同巨大的陨石般撞击了19世纪的哲学界，对现代思想产生了不可估量的影响。"
 ---
 
 大家好。今天，我们将深入探讨弗里德里希·尼采（Friedrich Nietzsche）的一生及其思想，这位哲学家如同巨大的陨石般撞击了19世纪的哲学界，对现代思想产生了不可估量的影响。

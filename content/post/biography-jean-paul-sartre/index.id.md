@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["jean-paul-sartre", "history"]
 image: "eyecatch.jpg"
 slug: "biography-jean-paul-sartre"
+description: "Jean-Paul Sartre (1905-1980) adalah seorang filsuf terkemuka dari Prancis abad ke-20 yang juga meninggalkan jejak besar sebagai novelis, dramawan, dan kritikus."
 ---
 
 Jean-Paul Sartre (1905-1980) adalah seorang filsuf terkemuka dari Prancis abad ke-20 yang juga meninggalkan jejak besar sebagai novelis, dramawan, dan kritikus. Pemikirannya, yang dikenal dengan ungkapan "Eksistensi mendahului esensi", memberikan dampak kuat pada dunia pasca-perang dan menjadi arus besar dalam pemikiran modern. Dalam artikel ini, kita akan mendalami kehidupannya, filosofinya yang unik, serta pengaruh yang ditinggalkannya bagi generasi berikutnya.

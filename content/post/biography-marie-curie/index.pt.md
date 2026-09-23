@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["marie-curie", "history"]
 image: "eyecatch.jpg"
 slug: "biography-marie-curie"
+description: "Na história da ciência, uma das pessoas que percorreu o caminho mais brilhante e árduo é Marie Curie (Madame Curie)."
 ---
 
 Na história da ciência, uma das pessoas que percorreu o caminho mais brilhante e árduo é Marie Curie (Madame Curie). Ela é a primeira mulher a ganhar um Prêmio Nobel e a única pessoa na história a ganhar Prêmios Nobel em dois campos científicos diferentes: física e química. Sua vida é colorida por uma pura paixão sedenta por conhecimento e um profundo amor pelo futuro da humanidade. Neste artigo, vamos nos aprofundar na vida de Marie Curie, na filosofia que ela mantinha e em sua imensa influência que continua até hoje.

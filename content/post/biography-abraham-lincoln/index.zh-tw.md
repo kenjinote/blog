@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["abraham-lincoln", "history"]
 image: "eyecatch.jpg"
 slug: "biography-abraham-lincoln"
+description: "美國第16任總統，亞伯拉罕·林肯（Abraham Lincoln）。身為廣為人知的「解放黑奴之父」，他帶領國家度過了建國以來最大的危機——南北戰爭，並防止了國家的分裂。「民有、民治、民享的政府」這句話，作為構成民主主義根基的理念，至今仍被傳頌。"
 ---
 
 美國第16任總統，亞伯拉罕·林肯（Abraham Lincoln）。身為廣為人知的「解放黑奴之父」，他帶領國家度過了建國以來最大的危機——南北戰爭，並防止了國家的分裂。「民有、民治、民享的政府」這句話，作為構成民主主義根基的理念，至今仍被傳頌。

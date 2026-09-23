@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["immanuel-kant", "history"]
 image: "eyecatch.jpg"
 slug: "biography-immanuel-kant"
+description: "Uma estrela gigante que é impossível de ignorar ao discutir a filosofia moderna. Esse é Immanuel Kant (1724–1804)."
 ---
 
 ## Introdução: Uma Vida Pontual como um Relógio e a Maior Mudança de Paradigma da Filosofia

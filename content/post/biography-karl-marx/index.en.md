@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["karl-marx", "history"]
 image: "eyecatch.jpg"
 slug: "biography-karl-marx"
+description: "Karl Marx. What comes to mind when you hear that name? Some might think of him as a great historical figure, the \"father of communism,\" while others might"
 ---
 
 Karl Marx. What comes to mind when you hear that name? Some might think of him as a great historical figure, the "father of communism," while others might see him as a "dangerous thinker who spawned dictatorial states." However, if we strip away the veil of ideology and look purely at his thought, we find the figure of a "genius debugger who analyzed the bugs (contradictions) of the capitalist system more deeply than anyone else."

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["edsger-dijkstra", "history"]
 image: "eyecatch.jpg"
 slug: "biography-edsger-dijkstra"
+description: "Edsger W. Dijkstra (1930 - 2002) é um dos maiores intelectuais que lançaram as bases da engenharia de software moderna e da ciência da computação."
 ---
 
 Edsger W. Dijkstra (1930 - 2002) é um dos maiores intelectuais que lançaram as bases da engenharia de software moderna e da ciência da computação. Numerosos algoritmos e paradigmas de programação que ele deixou para trás respiram na base de todas as tecnologias que usamos diariamente hoje. Neste artigo, vamos explorar profundamente a vida de Dijkstra, sua filosofia única e a imensa influência que ele teve nas gerações futuras.

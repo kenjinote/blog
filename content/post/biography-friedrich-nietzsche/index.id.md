@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["friedrich-nietzsche", "history"]
 image: "eyecatch.jpg"
 slug: "biography-friedrich-nietzsche"
+description: "Halo. Kali ini, kita akan menggali lebih dalam tentang kehidupan dan pemikiran Friedrich Nietzsche, seorang filsuf yang menabrak dunia filsafat abad ke-19"
 ---
 
 Halo. Kali ini, kita akan menggali lebih dalam tentang kehidupan dan pemikiran Friedrich Nietzsche, seorang filsuf yang menabrak dunia filsafat abad ke-19 seperti meteor raksasa dan memberikan pengaruh yang tak terukur pada pemikiran modern.

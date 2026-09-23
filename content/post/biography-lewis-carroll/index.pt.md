@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["lewis-carroll", "history"]
 image: "eyecatch.jpg"
 slug: "biography-lewis-carroll"
+description: "Ao ouvir o nome \"Lewis Carroll\", muitas pessoas pensam no autor do mundialmente amado livro infantil \"Alice no País das Maravilhas\"."
 ---
 
 ## Introdução

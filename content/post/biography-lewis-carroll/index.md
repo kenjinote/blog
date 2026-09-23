@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["lewis-carroll", "history"]
 image: "eyecatch.jpg"
 slug: "biography-lewis-carroll"
+description: "「ルイス・キャロル」という名前を聞いて、多くの人が思い浮かべるのは、世界中で愛読されている童話『不思議の国のアリス』の作者という顔でしょう。しかし、彼の本名はチャールズ・ラトウィッジ・ドジソン。"
 ---
 
 ## はじめに

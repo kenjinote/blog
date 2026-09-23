@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["mother-teresa", "history"]
 image: "eyecatch.jpg"
 slug: "biography-mother-teresa"
+description: "Mère Teresa (1910 - 1997) est une figure humanitaire majeure du XXe siècle et une religieuse catholique qui a consacré sa vie aux « plus pauvres d'entre le"
 ---
 
 Mère Teresa (1910 - 1997) est une figure humanitaire majeure du XXe siècle et une religieuse catholique qui a consacré sa vie aux « plus pauvres d'entre les pauvres ». Sa vie et sa philosophie continuent d'influencer les peuples du monde entier au-delà des frontières religieuses. Cet article explore en profondeur sa vie mouvementée, sa foi inébranlable et l'immense héritage qu'elle a laissé aux générations futures.

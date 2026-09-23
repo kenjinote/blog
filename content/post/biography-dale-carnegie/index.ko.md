@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["dale-carnegie", "history"]
 image: "eyecatch.jpg"
 slug: "biography-dale-carnegie"
+description: "현대의 비즈니스맨이나 테크 업계의 리더들에게 지금까지도 지대한 영향을 미치고 있는 자기계발의 금자탑. 그것이 『인간관계론 (How to Win Friends and Influence People)』이나 『자기관리론 (How to Stop Worrying and Start Liv"
 ---
 
 현대의 비즈니스맨이나 테크 업계의 리더들에게 지금까지도 지대한 영향을 미치고 있는 자기계발의 금자탑. 그것이 『인간관계론 (How to Win Friends and Influence People)』이나 『자기관리론 (How to Stop Worrying and Start Living)』과 같은 명저입니다. 이들의 창시자인 데일 카네기(Dale Carnegie, 1888–1955)는 어떻게 인간관계의 원칙을 체계화하고 전 세계 사람들의 마음을 움직일 수 있었을까요? 본 기사에서는 그의 파란만장한 생애부터 그 철학의 진수, 그리고 현대에 계승되는 유산까지 깊이 파헤쳐 보겠습니다.

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["frederick-brooks", "history"]
 image: "eyecatch.jpg"
 slug: "biography-frederick-brooks"
+description: "Siapa pun yang terlibat dalam pengembangan perangkat lunak kemungkinan besar pernah mendengar aturan ini: \"Menambahkan tenaga kerja ke proyek perangkat lun"
 ---
 
 Siapa pun yang terlibat dalam pengembangan perangkat lunak kemungkinan besar pernah mendengar aturan ini: "Menambahkan tenaga kerja ke proyek perangkat lunak yang terlambat hanya akan membuatnya semakin terlambat." Ini dikenal sebagai "Hukum Brooks" dan merupakan salah satu pepatah paling terkenal dalam rekayasa perangkat lunak. Orang yang mengusulkan hukum ini adalah Frederick P. Brooks, Jr., seorang raksasa dalam ilmu komputer dan seorang manajer proyek legendaris.

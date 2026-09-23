@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["thomas-edison", "history"]
 image: "eyecatch.jpg"
 slug: "biography-thomas-edison"
+description: "\"Jenius adalah satu persen inspirasi dan sembilan puluh sembilan persen keringat.\" Thomas Alva Edison (1847-1931), yang meninggalkan kata-kata ini, adalah"
 ---
 
 "Jenius adalah satu persen inspirasi dan sembilan puluh sembilan persen keringat." Thomas Alva Edison (1847-1931), yang meninggalkan kata-kata ini, adalah salah satu penemu paling produktif dan berpengaruh dalam sejarah manusia. Dengan lebih dari 1.000 paten yang diperoleh selama masa hidupnya, pencapaian pria yang dikenal sebagai "Penyihir Menlo Park" ini meletakkan dasar bagi teknologi masyarakat modern. Dalam artikel ini, kita akan menggali lebih dalam kehidupan Edison yang penuh gejolak, filosofi teguh di baliknya, dan dampak abadinya hingga saat ini.

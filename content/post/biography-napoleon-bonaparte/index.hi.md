@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["napoleon-bonaparte", "history"]
 image: "eyecatch.jpg"
 slug: "biography-napoleon-bonaparte"
+description: "विश्व इतिहास में, नेपोलियन बोनापार्ट से अधिक विवादित और चर्चित व्यक्ति शायद ही कोई और हो। \"असंभव शब्द मेरे शब्दकोश में नहीं है\" के अपने प्रसिद्ध उद्धरण के"
 ---
 
 # नेपोलियन बोनापार्ट: क्रांति का पुत्र या तानाशाह?

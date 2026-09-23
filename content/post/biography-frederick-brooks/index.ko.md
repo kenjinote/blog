@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["frederick-brooks", "history"]
 image: "eyecatch.jpg"
 slug: "biography-frederick-brooks"
+description: "소프트웨어 개발에 참여하는 사람이라면 누구나 한 번쯤 \"지연되는 소프트웨어 프로젝트에 인력을 추가하면 프로젝트가 더 지연될 뿐이다\"라는 법칙을 들어보았을 것입니다."
 ---
 
 소프트웨어 개발에 참여하는 사람이라면 누구나 한 번쯤 "지연되는 소프트웨어 프로젝트에 인력을 추가하면 프로젝트가 더 지연될 뿐이다"라는 법칙을 들어보았을 것입니다. 이는 '브룩스의 법칙(Brooks's Law)'으로 알려져 있으며, 소프트웨어 공학에서 가장 유명한 격언 중 하나입니다. 이 법칙을 제안한 사람은 컴퓨터 과학의 거장이자 전설적인 프로젝트 관리자인 프레더릭 P. 브룩스 주니어(Frederick P. Brooks, Jr.)입니다.

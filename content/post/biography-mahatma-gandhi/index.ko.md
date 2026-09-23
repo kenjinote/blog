@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["mahatma-gandhi", "history"]
 image: "eyecatch.jpg"
 slug: "biography-mahatma-gandhi"
+description: "\"눈에는 눈이라는 생각은 결국 온 세상을 눈멀게 할 것이다.\""
 ---
 
 # 평화의 사도 마하트마 간디: 비폭력 불복종이 바꾼 세상

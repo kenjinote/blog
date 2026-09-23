@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["guido-van-rossum", "history"]
 image: "eyecatch.jpg"
 slug: "biography-guido-van-rossum"
+description: "\"Python\" ist eine der beliebtesten Programmiersprachen der Welt. Als ihr Schöpfer ist der niederländische Programmierer Guido van Rossum bekannt."
 ---
 
 "Python" ist eine der beliebtesten Programmiersprachen der Welt. Als ihr Schöpfer ist der niederländische Programmierer Guido van Rossum bekannt. Die von ihm geschaffene Sprache ist heute in Bereichen wie KI, Data Science und Webentwicklung unverzichtbar geworden. Dieser Artikel geht der Frage nach, welches Leben er führte, unter welcher Philosophie er Python entwarf und welch großen Einfluss er auf die Technologie nachfolgender Generationen ausübte.

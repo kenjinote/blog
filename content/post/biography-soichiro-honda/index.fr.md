@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["soichiro-honda", "history"]
 image: "eyecatch.jpg"
 slug: "biography-soichiro-honda"
+description: "Symbole du savoir-faire japonais (\"monozukuri\") et homme ayant bâti l'entreprise mondiale \"Honda\" en une seule génération, Soichiro Honda a eu une vie marq"
 ---
 
 Symbole du savoir-faire japonais ("monozukuri") et homme ayant bâti l'entreprise mondiale "Honda" en une seule génération, Soichiro Honda a eu une vie marquée par une quête incessante de la technologie et un esprit indomptable animé par le "rêve". Dans cet article, nous plongerons dans la vie de cet homme passé de simple mécanicien à créateur de la marque mondiale HONDA, dans sa philosophie unique et dans l'héritage qui perdure aujourd'hui.

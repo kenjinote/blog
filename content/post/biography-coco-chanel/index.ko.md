@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["coco-chanel", "history"]
 image: "eyecatch.jpg"
 slug: "biography-coco-chanel"
+description: "20세기 패션계에서 가브리엘 \"코코\" 샤넬만큼 여성의 라이프스타일 자체를 근본적으로 뒤바꾼 인물은 없을 것입니다. 그녀는 단순한 의상 디자이너가 아니라, 인습에 얽매인 여성들에게 \"자유\"라는 이름의 새로운 가치관을 제공한 사상가이자 기업가였습니다."
 ---
 
 # 코코 샤넬: 여성을 해방시킨 혁명가의 생애와 철학

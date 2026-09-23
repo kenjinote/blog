@@ -5,6 +5,7 @@ image: eyecatch.jpg
 tags: ["marc-andreessen", "history"]
 title: "El hombre que crea el futuro desde los albores de Internet: La vida y filosofía de Marc Andreessen"
 slug: "biography-marc-andreessen"
+description: "La persona que hizo que el Internet moderno se convirtiera en algo cotidiano y que sigue dando forma al mundo invirtiendo enormes sumas de dinero en el fut"
 ---
 
 La persona que hizo que el Internet moderno se convirtiera en algo cotidiano y que sigue dando forma al mundo invirtiendo enormes sumas de dinero en el futuro de la tecnología. Ese es Marc Andreessen. Su trayectoria como uno de los creadores del navegador web y cofundador de "Andreessen Horowitz (a16z)", una firma de capital de riesgo representativa de Silicon Valley, coincide directamente con la historia del desarrollo de Internet.

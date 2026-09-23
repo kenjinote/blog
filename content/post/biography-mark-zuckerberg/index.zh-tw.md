@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["mark-zuckerberg", "history"]
 image: "eyecatch.jpg"
 slug: "biography-mark-zuckerberg"
+description: "馬克·艾略特·祖克柏（Mark Elliot Zuckerberg）於1984年5月14日出生在紐約州白原市。在牙醫父親和精神科醫生母親的優渥家庭環境中長大，他從小就對程式設計表現出濃厚的興趣。早在國中時期，他就已經展現出自己的才華，開發了一款名為「ZuckNet」的訊息軟體，將父親牙醫診所的接待處與診療室連結起來。"
 ---
 
 ## 從孤獨的駭客到「連結」的創造者

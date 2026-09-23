@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["immanuel-kant", "history"]
 image: "eyecatch.jpg"
 slug: "biography-immanuel-kant"
+description: "نجم عملاق لا يمكن تجاهله أبدًا عند الحديث عن الفلسفة الحديثة. إنه إيمانويل كانط (Immanuel Kant, 1724–1804)."
 ---
 
 ## مقدمة: تحول نموذجي هائل في الفلسفة وُلد من حياة دقيقة كالساعة

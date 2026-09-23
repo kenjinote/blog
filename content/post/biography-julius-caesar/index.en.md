@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["julius-caesar", "history"]
 image: "eyecatch.jpg"
 slug: "biography-julius-caesar"
+description: "\"The die is cast,\" \"I came, I saw, I conquered,\" \"Et tu, Brute?\" — Even those unfamiliar with world history have likely heard the words he left behind."
 ---
 
 "The die is cast," "I came, I saw, I conquered," "Et tu, Brute?" — Even those unfamiliar with world history have likely heard the words he left behind. Gaius Julius Caesar (100 BC - 44 BC), the hero who appeared like a comet at the end of the Roman Republic and determined the shape of the subsequent European world. He was not merely a military man and politician, but also a writer, trial lawyer, and even a calendar reformer.

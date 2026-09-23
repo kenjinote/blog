@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["abraham-lincoln", "history"]
 image: "eyecatch.jpg"
 slug: "biography-abraham-lincoln"
+description: "O 16º presidente dos Estados Unidos, Abraham Lincoln. Amplamente conhecido como o \"Pai da Emancipação\", ele foi o homem que superou a maior crise desde a f"
 ---
 
 O 16º presidente dos Estados Unidos, Abraham Lincoln. Amplamente conhecido como o "Pai da Emancipação", ele foi o homem que superou a maior crise desde a fundação do país, a Guerra Civil Americana (Guerra de Secessão), e evitou a divisão da nação. Suas palavras, "governo do povo, pelo povo, para o povo", foram transmitidas até os dias de hoje como um princípio que forma a base da democracia.

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["napoleon-bonaparte", "history"]
 image: "eyecatch.jpg"
 slug: "biography-napoleon-bonaparte"
+description: "En la historia mundial, hay pocas figuras con una reputación tan polarizada como Napoleón Bonaparte."
 ---
 
 # Napoleón Bonaparte: ¿Hijo de la Revolución o dictador?

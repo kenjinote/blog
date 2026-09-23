@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["oscar-wilde", "history"]
 image: "eyecatch.jpg"
 slug: "biography-oscar-wilde"
+description: "In der britischen Literaturszene des ausgehenden 19. Jahrhunderts strahlte kaum eine Persönlichkeit brillanter – und stürzte keine tiefer ins Verderben – a"
 ---
 
 In der britischen Literaturszene des ausgehenden 19. Jahrhunderts strahlte kaum eine Persönlichkeit brillanter – und stürzte keine tiefer ins Verderben – als Oscar Wilde. Seine Philosophie des Ästhetizismus, getragen von dem Leitsatz „L’art pour l’art“ („Kunst für die Kunst“), inspiriert bis heute unzählige Kunstschaffende und Autoren. In diesem Beitrag beleuchten wir sein dramatisches Leben, sein literarisches Schaffen und sein unvergängliches Vermächtnis.

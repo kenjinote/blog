@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["benjamin-franklin", "history"]
 image: "eyecatch.jpg"
 slug: "biography-benjamin-franklin"
+description: "Mendengar nama Benjamin Franklin (1706–1790), banyak orang mungkin pertama kali membayangkan potret lembut yang tergambar pada uang kertas 100 dolar Amerik"
 ---
 
 Mendengar nama Benjamin Franklin (1706–1790), banyak orang mungkin pertama kali membayangkan potret lembut yang tergambar pada uang kertas 100 dolar Amerika Serikat. Namun, sosok aslinya tidak dapat dibatasi hanya dalam bingkai politik seorang "Bapak Pendiri". Pencetak, penulis, ilmuwan, penemu, diplomat, dan filsuf — Franklin adalah seorang "polimatik" (jenius universal) langka yang meninggalkan jejak sejarah di setiap bidang.

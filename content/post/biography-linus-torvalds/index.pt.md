@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["linus-torvalds", "history"]
 image: "eyecatch.jpg"
 slug: "biography-linus-torvalds"
+description: "\"Linux\", o sistema operacional que sustenta a moderna infraestrutura de TI e roda em incontáveis sistemas."
 ---
 
 # O Gigante do Código Aberto: A Trajetória e Filosofia de Linus Torvalds

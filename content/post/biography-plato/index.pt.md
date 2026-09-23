@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["plato", "history"]
 image: "eyecatch.jpg"
 slug: "biography-plato"
+description: "Platão, um dos filósofos mais proeminentes da Grécia Antiga, lançou as bases da filosofia ocidental."
 ---
 
 Platão, um dos filósofos mais proeminentes da Grécia Antiga, lançou as bases da filosofia ocidental. Como aluno de Sócrates e professor de Aristóteles, ele deixou inúmeras ideias para as gerações futuras através dos seus diálogos. Conceitos como a "Teoria das Ideias" influenciaram profundamente não apenas a filosofia, mas também a ciência política, a ética e a teologia. A sua presença é tão avassaladora que o filósofo britânico A.N. Whitehead comentou a famosa frase: "A caracterização geral mais segura da tradição filosófica europeia é que ela consiste numa série de notas de rodapé a Platão".

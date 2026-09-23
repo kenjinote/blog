@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["alan-kay", "history"]
 image: "eyecatch.jpg"
 slug: "biography-alan-kay"
+description: "Alan Kay adalah ilmuwan komputer Amerika yang juga dikenal sebagai \"Bapak Komputer Personal\", dan seorang visioner jenius yang memberikan pengaruh besar pa"
 ---
 
 Alan Kay adalah ilmuwan komputer Amerika yang juga dikenal sebagai "Bapak Komputer Personal", dan seorang visioner jenius yang memberikan pengaruh besar pada komputasi modern. Kutipannya yang terkenal, "Cara terbaik memprediksi masa depan adalah dengan menciptakannya (The best way to predict the future is to invent it.)," terus memberikan inspirasi bagi banyak pengusaha dan insinyur hingga saat ini.

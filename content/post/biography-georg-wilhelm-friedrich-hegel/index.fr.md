@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["georg-wilhelm-friedrich-hegel", "history"]
 image: "eyecatch.jpg"
 slug: "biography-georg-wilhelm-friedrich-hegel"
+description: "Dans l'histoire de la philosophie occidentale, le penseur qui a commencé avec Emmanuel Kant et atteint le sommet de l'idéalisme allemand au XIXe siècle est"
 ---
 
 Dans l'histoire de la philosophie occidentale, le penseur qui a commencé avec Emmanuel Kant et atteint le sommet de l'idéalisme allemand au XIXe siècle est Georg Wilhelm Friedrich Hegel (1770-1831). Son système de pensée vaste et complexe, caractérisé par la "dialectique" et l'"Esprit Absolu", a exercé une influence extrêmement large non seulement sur son époque, mais aussi sur Karl Marx, l'existentialisme, et jusqu'aux sciences politiques et historiques contemporaines. Dans cet article, nous retracerons la vie de Hegel tout en approfondissant le cœur de sa philosophie et son influence sur la postérité.

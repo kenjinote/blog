@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["jean-paul-sartre", "history"]
 image: "eyecatch.jpg"
 slug: "biography-jean-paul-sartre"
+description: "Jean-Paul Sartre (1905-1980), a philosopher representing 20th-century France, also left a massive footprint as a novelist, playwright, and critic."
 ---
 
 Jean-Paul Sartre (1905-1980), a philosopher representing 20th-century France, also left a massive footprint as a novelist, playwright, and critic. His thought, known by the phrase "existence precedes essence," had a profound impact on the post-war world and became a major current in modern philosophy. In this article, we delve deeply into his life, his unique philosophy, and the influence he left on future generations.

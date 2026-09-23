@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["nelson-mandela", "history"]
 image: "eyecatch.jpg"
 slug: "biography-nelson-mandela"
+description: "作為20世紀最偉大的領導人之一，納爾遜·曼德拉的名字深深印刻在全世界人民的記憶中。他將一生奉獻於廢除南非的種族隔離政策（Apartheid），並熬過了長達27年的殘酷牢獄生活。"
 ---
 
 ## 引言：通向自由的漫漫長路

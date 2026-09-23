@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["walt-disney", "history"]
 image: "eyecatch.jpg"
 slug: "biography-walt-disney"
+description: "Walt Disney (Walter Elias Disney) é um emblemático \"criador de sonhos\" do século XX, cuja influência vai muito além de ser um mero animador ou produtor de"
 ---
 
 Walt Disney (Walter Elias Disney) é um emblemático "criador de sonhos" do século XX, cuja influência vai muito além de ser um mero animador ou produtor de cinema. Seu nome hoje é uma marca conhecida por todos em todo o mundo, mas por trás desse sucesso há inúmeros fracassos e um espírito indomável para superá-los. Este artigo explora a sua vida e filosofia, e como ele elevou a animação, então um campo imaturo, à arte, e estabeleceu uma nova forma de entretenimento com os parques temáticos.

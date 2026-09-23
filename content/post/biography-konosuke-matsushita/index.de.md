@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["konosuke-matsushita", "history"]
 image: "eyecatch.jpg"
 slug: "biography-konosuke-matsushita"
+description: "Konosuke Matsushita, der in der japanischen Industriegeschichte als „Gott des Managements“ bezeichnet wird, beeinflusst auch heute noch viele Geschäftsleute."
 ---
 
 Konosuke Matsushita, der in der japanischen Industriegeschichte als „Gott des Managements“ bezeichnet wird, beeinflusst auch heute noch viele Geschäftsleute. Als Gründer von Panasonic (ehemals Matsushita Electric Industrial) ist er für seine einzigartigen Managementphilosophien wie die „Leitungswasser-Philosophie“ und das „Sammeln von kollektivem Wissen“ bekannt. Dieser Artikel befasst sich mit seinem Weg von einer durch Armut und Krankheit geprägten Kindheit bis zum Aufbau eines Weltkonzerns und dem leidenschaftlichen Vermächtnis, das er künftigen Generationen hinterließ.

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["lewis-carroll", "history"]
 image: "eyecatch.jpg"
 slug: "biography-lewis-carroll"
+description: "En entendant le nom de « Lewis Carroll », beaucoup de gens pensent à l'auteur du livre pour enfants mondialement apprécié « Alice au pays des merveilles »."
 ---
 
 ## Introduction

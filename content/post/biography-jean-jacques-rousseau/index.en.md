@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["jean-jacques-rousseau", "history"]
 image: "eyecatch.jpg"
 slug: "biography-jean-jacques-rousseau"
+description: "In 18th-century Europe, as the Enlightenment's supreme reasoning blossomed, there was a man who challenged the trend and cried, \"Return to nature.\" That ma"
 ---
 
 In 18th-century Europe, as the Enlightenment's supreme reasoning blossomed, there was a man who challenged the trend and cried, "Return to nature." That man was Jean-Jacques Rousseau (1712 - 1778). His ideas had a decisive influence on the French Revolution and further laid the foundation for modern pedagogy and Romantic literature. In this article, we unravel the life of Rousseau, who continued to seek the truth amidst loneliness and wandering, and his profound philosophy that still resonates today.

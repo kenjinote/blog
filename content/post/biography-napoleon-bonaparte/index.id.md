@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["napoleon-bonaparte", "history"]
 image: "eyecatch.jpg"
 slug: "biography-napoleon-bonaparte"
+description: "Dalam sejarah dunia, jarang ada tokoh yang menuai pujian sekaligus kecaman sehebat Napoleon Bonaparte."
 ---
 
 # Napoleon Bonaparte: Anak Revolusi atau Diktator?

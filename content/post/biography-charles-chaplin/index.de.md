@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["charles-chaplin", "history"]
 image: "eyecatch.jpg"
 slug: "biography-charles-chaplin"
+description: "Charles Spencer Chaplin (16. April 1889 - 25. Dezember 1977) war ein britischer Filmschauspieler, Regisseur, Komiker, Drehbuchautor und Komponist."
 ---
 
 Charles Spencer Chaplin (16. April 1889 - 25. Dezember 1977) war ein britischer Filmschauspieler, Regisseur, Komiker, Drehbuchautor und Komponist. Bekannt unter dem Spitznamen „König der Komödie“, wird er weithin als eine der wichtigsten und einflussreichsten Persönlichkeiten in der Filmgeschichte anerkannt. Die von ihm geschaffene Figur des „Tramps“ – eine ikonische Erscheinung mit Melone, Zahnbürstenbart, weiten Hosen und einem Bambusstock – wird weiterhin von Menschen auf der ganzen Welt geliebt. Dieser Artikel beleuchtet Chaplins turbulentes Leben, die tiefe Philosophie in seinen Werken und seinen Einfluss auf die Nachwelt.

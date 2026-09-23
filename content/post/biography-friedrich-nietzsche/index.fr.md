@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["friedrich-nietzsche", "history"]
 image: "eyecatch.jpg"
 slug: "biography-friedrich-nietzsche"
+description: "Bonjour. Aujourd'hui, nous allons plonger profondément dans la vie et la pensée de Friedrich Nietzsche, un philosophe qui a frappé le monde philosophique d"
 ---
 
 Bonjour. Aujourd'hui, nous allons plonger profondément dans la vie et la pensée de Friedrich Nietzsche, un philosophe qui a frappé le monde philosophique du 19ème siècle comme une météorite géante et a eu un impact incommensurable sur la pensée moderne.

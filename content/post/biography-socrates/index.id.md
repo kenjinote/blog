@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["socrates", "history"]
 image: "eyecatch.jpg"
 slug: "biography-socrates"
+description: "Socrates (sekitar 470 SM – 399 SM), pemikir besar yang meletakkan dasar filsafat Barat."
 ---
 
 Socrates (sekitar 470 SM – 399 SM), pemikir besar yang meletakkan dasar filsafat Barat. Meskipun ia sendiri tidak pernah meninggalkan satu pun karya tulis, pemikiran dan cara hidupnya yang intens telah diwariskan ke era modern melalui dialog-dialog yang ditulis oleh murid-muridnya seperti Plato dan Xenophon. Pendekatannya, seperti "Kebijaksanaan Ketidaktahuan" dan "Metode Socratic," bukan sekadar pencarian pengetahuan, melainkan antitesis yang kuat terhadap pertanyaan universal manusia tentang bagaimana menjalani kehidupan yang baik. Artikel ini menggali lebih dalam kehidupan Socrates, yang berulang kali terlibat dalam dialog dengan orang-orang muda di sudut-sudut jalan Athena kuno, dan pengaruhnya yang tak terukur pada generasi mendatang.

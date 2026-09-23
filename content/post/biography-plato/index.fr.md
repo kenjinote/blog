@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["plato", "history"]
 image: "eyecatch.jpg"
 slug: "biography-plato"
+description: "Platon, l'un des philosophes les plus éminents de la Grèce antique, a jeté les bases de la philosophie occidentale."
 ---
 
 Platon, l'un des philosophes les plus éminents de la Grèce antique, a jeté les bases de la philosophie occidentale. Élève de Socrate et maître d'Aristote, il a laissé de nombreuses idées aux générations futures à travers ses dialogues. Des concepts tels que la « théorie des Idées » ont profondément influencé non seulement la philosophie, mais aussi les sciences politiques, l'éthique et la théologie. Sa présence est si écrasante que le philosophe britannique A.N. Whitehead a fait cette célèbre remarque : « Toute la philosophie occidentale n'est qu'une série de notes de bas de page aux dialogues de Platon. »

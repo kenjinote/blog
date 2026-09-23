@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["martin-luther-king-jr", "history"]
 image: "eyecatch.jpg"
 slug: "biography-martin-luther-king-jr"
+description: "Martin Luther King Jr. (15 Januari 1929 - 4 April 1968) adalah seorang pendeta Baptis Protestan Amerika dan pemimpin paling menonjol dari gerakan hak-hak s"
 ---
 
 Martin Luther King Jr. (15 Januari 1929 - 4 April 1968) adalah seorang pendeta Baptis Protestan Amerika dan pemimpin paling menonjol dari gerakan hak-hak sipil Afrika-Amerika. Filosofinya tentang "tindakan langsung nir-kekerasan" berfungsi sebagai kekuatan pendorong untuk mendobrak kebijakan segregasi rasial dalam masyarakat Amerika, dan terus sangat memengaruhi banyak gerakan hak asasi manusia saat ini.

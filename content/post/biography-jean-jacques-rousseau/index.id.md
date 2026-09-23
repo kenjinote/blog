@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["jean-jacques-rousseau", "history"]
 image: "eyecatch.jpg"
 slug: "biography-jean-jacques-rousseau"
+description: "Di Eropa abad ke-18, ketika pemikiran Pencerahan yang memandang akal sebagai hal yang tertinggi sedang berkembang pesat, ada seorang pria yang menantang tr"
 ---
 
 Di Eropa abad ke-18, ketika pemikiran Pencerahan yang memandang akal sebagai hal yang tertinggi sedang berkembang pesat, ada seorang pria yang menantang tren tersebut dan menyerukan, "Kembali ke alam." Pria itu adalah Jean-Jacques Rousseau (1712 - 1778). Ide-idenya memiliki pengaruh yang menentukan pada Revolusi Prancis dan lebih jauh lagi meletakkan dasar bagi pedagogi modern dan literatur Romantis. Dalam artikel ini, kita akan mengurai kehidupan Rousseau, yang terus mencari kebenaran di tengah kesepian dan pengembaraan, serta filosofinya yang mendalam yang terus bergema hingga saat ini.

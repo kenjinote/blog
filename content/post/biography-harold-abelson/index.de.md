@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["harold-abelson", "history"]
 image: "eyecatch.jpg"
 slug: "biography-harold-abelson"
+description: "In der Geschichte der Informatik gibt es eine Persönlichkeit, die einen ebenso großen Einfluss darauf hatte, \"wie man lehrt und wie man teilt\", wie auf die"
 ---
 
 In der Geschichte der Informatik gibt es eine Persönlichkeit, die einen ebenso großen Einfluss darauf hatte, "wie man lehrt und wie man teilt", wie auf die Technologie selbst. Es handelt sich um Harold Abelson, allgemein bekannt als "Hal Abelson", einen Professor am Massachusetts Institute of Technology (MIT) und eine zentrale Figur in der Programmierausbildung und der Freie-Software-Bewegung.

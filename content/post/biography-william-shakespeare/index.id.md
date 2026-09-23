@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["william-shakespeare", "history"]
 image: "eyecatch.jpg"
 slug: "biography-william-shakespeare"
+description: "William Shakespeare (1564 - 1616) secara luas dianggap sebagai penulis drama dan penyair terbesar dalam sejarah, dan sering disebut sebagai penyair nasiona"
 ---
 
 William Shakespeare (1564 - 1616) secara luas dianggap sebagai penulis drama dan penyair terbesar dalam sejarah, dan sering disebut sebagai penyair nasional Inggris. Karya-karyanya telah melampaui batas ruang dan waktu, serta masih dipentaskan dan dibaca di seluruh dunia lebih dari 400 tahun kemudian. Penggambarannya yang hidup tentang emosi dan konflik manusia yang universal tertanam kuat dalam sastra, seni modern, dan bahkan dalam bahasa kita sehari-hari.

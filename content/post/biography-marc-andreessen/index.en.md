@@ -5,6 +5,7 @@ image: eyecatch.jpg
 tags: ["marc-andreessen", "history"]
 title: "The Man Who Built the Future from the Dawn of the Internet: The Life and Philosophy of Marc Andreessen"
 slug: "biography-marc-andreessen"
+description: "He is the man who made the modern internet something we take for granted, and who continues to shape the world by pouring massive amounts of funding into t"
 ---
 
 He is the man who made the modern internet something we take for granted, and who continues to shape the world by pouring massive amounts of funding into the future of technology. That man is Marc Andreessen. As one of the creators of the web browser and the co-founder of "Andreessen Horowitz (a16z)," a prominent venture capital firm in Silicon Valley, his trajectory directly overlaps with the history of the internet's development.

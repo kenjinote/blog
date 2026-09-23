@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["george-soros", "history"]
 image: "eyecatch.jpg"
 slug: "biography-george-soros"
+description: "George Soros. What comes to mind when you hear this name? A legendary investor nicknamed \"The Man Who Broke the Bank of England\", or a massive philanthropi"
 ---
 
 George Soros. What comes to mind when you hear this name? A legendary investor nicknamed "The Man Who Broke the Bank of England", or a massive philanthropist supporting democratization around the world? Or perhaps a mysterious figure often targeted by conspiracy theories.

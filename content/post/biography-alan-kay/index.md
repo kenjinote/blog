@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["alan-kay", "history"]
 image: "eyecatch.jpg"
 slug: "biography-alan-kay"
+description: "アラン・ケイ（Alan Kay）は、「パーソナルコンピュータの父」とも呼ばれるアメリカの計算機科学者であり、現代のコンピューティングに多大な影響を与えた天才ビジョナリーです。"
 ---
 
 アラン・ケイ（Alan Kay）は、「パーソナルコンピュータの父」とも呼ばれるアメリカの計算機科学者であり、現代のコンピューティングに多大な影響を与えた天才ビジョナリーです。「未来を予測する最善の方法は、それを発明することだ（The best way to predict the future is to invent it.）」という彼の有名な言葉は、現在でも多くの起業家やエンジニアにインスピレーションを与え続けています。

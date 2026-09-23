@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["dale-carnegie", "history"]
 image: "eyecatch.jpg"
 slug: "biography-dale-carnegie"
+description: "现代的商务人士和科技行业的领导者们，至今仍深受一部自我启发领域的金字塔尖之作的巨大影响。那就是《人性的弱点》（How to Win Friends and Influence People）和《人性的优点》（How to Stop Worrying and Start Living）等名著。"
 ---
 
 现代的商务人士和科技行业的领导者们，至今仍深受一部自我启发领域的金字塔尖之作的巨大影响。那就是《人性的弱点》（How to Win Friends and Influence People）和《人性的优点》（How to Stop Worrying and Start Living）等名著。这些著作的作者戴尔·卡耐基（Dale Carnegie, 1888–1955）是如何系统化人际关系原则，从而打动全世界人们的心的呢？本文将从他充满波折的生平，到他哲学的精髓，以及传承至今的遗产进行深入探讨。

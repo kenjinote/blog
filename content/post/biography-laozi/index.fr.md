@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["laozi", "history"]
 image: "eyecatch.jpg"
 slug: "biography-laozi"
+description: "Penseur éminent de la Chine antique et figure fondatrice du taoïsme, Lao-Tseu (Laozi) a laissé derrière lui le Daodejing (ou Tao Te King), une œuvre magist"
 ---
 
 Penseur éminent de la Chine antique et figure fondatrice du taoïsme, **Lao-Tseu** (Laozi) a laissé derrière lui le *Daodejing* (ou *Tao Te King*), une œuvre magistrale qui continue d'inspirer des lecteurs à travers le monde entier, plus de deux millénaires après sa rédaction. Alors que Confucius, père du confucianisme, prônait des vertus morales et des règles sociétales artificielles telles que les « rites » (*Li*) et la « bienveillance » (*Ren*), Lao-Tseu enseignait plutôt la conformité avec le **Dao** (la Voie) — principe fondamental et source de tout l'univers — invitant l'être humain à embrasser le **Wuwei**, le « non-agir » et la spontanéité naturelle.

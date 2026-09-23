@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["michelangelo", "history"]
 image: "eyecatch.jpg"
 slug: "biography-michelangelo"
+description: "Miguel Ángel Buonarroti (1475-1564) es considerado, junto con Leonardo da Vinci y Rafael, uno de los tres grandes maestros del Renacimiento."
 ---
 
 Miguel Ángel Buonarroti (1475-1564) es considerado, junto con Leonardo da Vinci y Rafael, uno de los tres grandes maestros del Renacimiento. Como escultor, pintor, arquitecto y poeta, dejó una huella imborrable y profunda en la historia del arte occidental. En este artículo, exploramos su vida, la filosofía con la que abordó el arte, cómo dio vida a numerosas obras maestras y el impacto que dejó para la posteridad.

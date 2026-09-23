@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["lewis-carroll", "history"]
 image: "eyecatch.jpg"
 slug: "biography-lewis-carroll"
+description: "\"लिविस कैरोल\" का नाम सुनकर, बहुत से लोग विश्व स्तर पर प्रिय बाल पुस्तक \"एलिस एडवेंचर्स इन वंडरलैंड\" के लेखक के बारे में सोचते हैं। हालाँकि, उनका असली नाम च"
 ---
 
 ## परिचय

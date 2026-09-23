@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["stephen-covey", "history"]
 image: "eyecatch.jpg"
 slug: "biography-stephen-covey"
+description: "Se fôssemos nomear uma das pessoas que mais influenciaram os negócios modernos e o autodesenvolvimento, o nome do Dr."
 ---
 
 Se fôssemos nomear uma das pessoas que mais influenciaram os negócios modernos e o autodesenvolvimento, o nome do Dr. Stephen R. Covey sem dúvida estaria na lista. Seu livro, "Os 7 Hábitos das Pessoas Altamente Eficazes", vendeu dezenas de milhões de cópias em todo o mundo, transcendendo os livros de negócios comuns para se tornar um "guia para a vida" lido por muitos. Neste artigo, aprofundaremos a vida do Dr. Covey, a filosofia subjacente e o imensurável impacto que ele deixou para as gerações futuras.

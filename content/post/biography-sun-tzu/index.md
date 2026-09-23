@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["sun-tzu", "history"]
 image: "eyecatch.jpg"
 slug: "biography-sun-tzu"
+description: "「彼を知り己を知れば百戦殆うからず」——現代のビジネスシーンでも頻繁に引用されるこの名言は、今から2500年以上前の中国春秋時代に生きた一人の軍略家によって残されました。"
 ---
 
 ## はじめに

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["j-r-r-tolkien", "history"]
 image: "eyecatch.jpg"
 slug: "biography-j-r-r-tolkien"
+description: "जॉन रोनाल्ड रूएल टोल्किन (जे.आर.आर. टोल्किन) का नाम सुनते ही, अधिकांश लोगों के मन में सबसे पहले \"मिडिल-अर्थ\" (Middle-earth) की वह विशाल दुनिया आती है, जहाँ"
 ---
 
 # जे.आर.आर. टोल्किन: आधुनिक फैंटेसी के पिता की यात्रा और मिथक का निर्माण

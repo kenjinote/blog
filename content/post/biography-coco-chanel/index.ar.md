@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["coco-chanel", "history"]
 image: "eyecatch.jpg"
 slug: "biography-coco-chanel"
+description: "في عالم الموضة في القرن العشرين، لم يقلب شخص أسلوب حياة النساء رأساً على عقب مثل غابرييل \"كوكو\" شانيل."
 ---
 
 # كوكو شانيل: حياة وفلسفة الثائرة التي حررت النساء

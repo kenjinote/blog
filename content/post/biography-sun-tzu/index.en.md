@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["sun-tzu", "history"]
 image: "eyecatch.jpg"
 slug: "biography-sun-tzu"
+description: "\"If you know the enemy and know yourself, you need not fear the result of a hundred battles.\" This famous quote, frequently cited even in modern business s"
 ---
 
 ## Introduction

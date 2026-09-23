@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["michelangelo", "history"]
 image: "eyecatch.jpg"
 slug: "biography-michelangelo"
+description: "Michelangelo Buonarroti (1475–1564) é reconhecido, ao lado de Leonardo da Vinci e Rafael, como um dos três grandes mestres do Renascimento."
 ---
 
 Michelangelo Buonarroti (1475–1564) é reconhecido, ao lado de Leonardo da Vinci e Rafael, como um dos três grandes mestres do Renascimento. Como escultor, pintor, arquiteto e poeta, deixou marcas indeléveis na história da arte ocidental. Neste artigo, exploramos como ele concebeu inúmeras obras-primas, a filosofia com que abordou sua criação artística, sua trajetória de vida e seu impacto duradouro para a posteridade.

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["plato", "history"]
 image: "eyecatch.jpg"
 slug: "biography-plato"
+description: "Platón, uno de los filósofos más destacados de la antigua Grecia, sentó las bases de la filosofía occidental."
 ---
 
 Platón, uno de los filósofos más destacados de la antigua Grecia, sentó las bases de la filosofía occidental. Como estudiante de Sócrates y maestro de Aristóteles, dejó innumerables ideas a las generaciones futuras a través de sus diálogos. Conceptos como la "Teoría de las Ideas" influyeron profundamente no solo en la filosofía, sino también en las ciencias políticas, la ética y la teología. Su presencia es tan abrumadora que el filósofo británico Whitehead comentó: "La historia de la filosofía occidental no es más que una serie de notas a pie de página de Platón".

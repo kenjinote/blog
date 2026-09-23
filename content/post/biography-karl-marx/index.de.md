@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["karl-marx", "history"]
 image: "eyecatch.jpg"
 slug: "biography-karl-marx"
+description: "Karl Marx. Was kommt Ihnen in den Sinn, wenn Sie diesen Namen hören? Einige betrachten ihn vielleicht als eine große historische Figur, den „Vater des Komm"
 ---
 
 Karl Marx. Was kommt Ihnen in den Sinn, wenn Sie diesen Namen hören? Einige betrachten ihn vielleicht als eine große historische Figur, den „Vater des Kommunismus“, während andere ihn vielleicht als einen „gefährlichen Denker, der diktatorische Staaten hervorbrachte“ sehen. Wenn man jedoch den Schleier der Ideologie entfernt und seine Ideen rein betrachtet, findet man die Figur eines „genialen Debuggers, der den Bug (die Widersprüche) des kapitalistischen Systems tiefer analysierte als jeder andere“.

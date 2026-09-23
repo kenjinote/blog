@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["neil-armstrong", "history"]
 image: "eyecatch.jpg"
 slug: "biography-neil-armstrong"
+description: "\"Itu adalah satu langkah kecil bagi seorang pria, satu lompatan raksasa bagi umat manusia (That's one small step for man, one giant leap for mankind).\" Pad"
 ---
 
 "Itu adalah satu langkah kecil bagi seorang pria, satu lompatan raksasa bagi umat manusia (That's one small step for man, one giant leap for mankind)."

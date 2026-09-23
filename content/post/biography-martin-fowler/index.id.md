@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["martin-fowler", "history"]
 image: "eyecatch.jpg"
 slug: "biography-martin-fowler"
+description: "Dalam pengembangan perangkat lunak modern, tidak ada hari yang berlalu tanpa mendengar istilah seperti \"Agile,\" \"Refactoring,\" dan \"Microservices.\" Orang y"
 ---
 
 Dalam pengembangan perangkat lunak modern, tidak ada hari yang berlalu tanpa mendengar istilah seperti "Agile," "Refactoring," dan "Microservices." Orang yang mempopulerkan konsep-konsep ini di seluruh industri dan secara fundamental mengubah rekayasa perangkat lunak adalah Martin Fowler. Dalam artikel ini, kita menyelidiki lebih dalam tentang kehidupan, filosofi yang mendasari, dan dampak jangka panjang dari programmer, penulis, dan pemikir ini.

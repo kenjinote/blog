@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["john-d-rockefeller", "history"]
 image: "eyecatch.jpg"
 slug: "biography-john-d-rockefeller"
+description: "Dari akhir abad ke-19 hingga awal abad ke-20, ada seorang tokoh yang memberikan pengaruh besar tidak hanya pada Amerika Serikat tetapi juga pada ekonomi dunia."
 ---
 
 Dari akhir abad ke-19 hingga awal abad ke-20, ada seorang tokoh yang memberikan pengaruh besar tidak hanya pada Amerika Serikat tetapi juga pada ekonomi dunia. Namanya adalah John Davison Rockefeller. Ia mendirikan Standard Oil Company dan dikenal luas sebagai "Raja Minyak" yang membangun kekayaan luar biasa, sering disebut sebagai yang terbesar dalam sejarah, melalui monopoli yang luar biasa. Namun, kehebatannya yang sesungguhnya bukan hanya terletak pada akumulasi kekayaan, melainkan pada pembentukan sistem kapitalisme modern dan sistematisasi filantropi yang belum pernah ada sebelumnya yang terus memengaruhi generasi mendatang. Dalam artikel ini, kita akan menyelami kehidupannya yang penuh gejolak, filosofi bisnisnya yang unik, dan warisan besar yang ia tinggalkan untuk masyarakat modern.

@@ -5,6 +5,7 @@ categories: ["biography"]
 tags: ["stephen-covey", "history"]
 image: "eyecatch.jpg"
 slug: "biography-stephen-covey"
+description: "若要舉出在現代商業及自我啟發領域中帶來最深遠影響的人物之一，無疑會提到史蒂芬·R·柯維博士（Stephen R. Covey）的名字。他的著作《與成功有約：高效能人士的七個習慣（The 7 Habits of Highly Effective People）》在全世界銷量高達數千萬冊，超越了單純的商業書籍範疇"
 ---
 
 若要舉出在現代商業及自我啟發領域中帶來最深遠影響的人物之一，無疑會提到史蒂芬·R·柯維博士（Stephen R. Covey）的名字。他的著作《與成功有約：高效能人士的七個習慣（The 7 Habits of Highly Effective People）》在全世界銷量高達數千萬冊，超越了單純的商業書籍範疇，被許多人作為「人生指南」而愛不釋手。本篇文章將深入探討柯維博士的生平、其根基底層的哲學，以及他為後世留下的無可估量的影響。
