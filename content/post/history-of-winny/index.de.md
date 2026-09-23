@@ -1,91 +1,154 @@
 ---
-title: "Netzwerktechnologie: Technische Erklärung von Winny - Licht und Schatten von P2P-Netzwerken"
-description: "Die japanische Gesellschaft wurde durch die Dateitauschsoftware \"Winny\" erschüttert. Hinter dem sozialen Problem der Verhaftung und des Prozesses gegen den Entwickler verbirgt sich die Essenz der damals weltweit führenden P2P-Netzwerktechnologie, der wir auf den Grund gehen."
+title: "Wie Winny funktionierte: Suche, Cache, Weiterleitung und Grenzen der Anonymität"
+description: "Winnys P2P-Technik verständlich erklärt: Metadaten, Hierarchie nach Verbindungsgeschwindigkeit und Caching, ergänzt um Rechenbeispiele, Datenlecks und den Prozess gegen den Entwickler."
 slug: "history-of-winny"
 date: "2026-09-23T10:00:00+09:00"
-image: "eyecatch.jpg"
-categories:
-    - "technology"
-    - "computer-science"
-tags:
-    - "p2p"
-    - "network"
-    - "winny"
-    - "history"
-    - "history"
+categories: ["technology", "computer-science"]
+tags: ["p2p", "network", "winny", "history"]
+math: true
 ---
 
-## 1. Was ist "Winny", das Anfang der 2000er Jahre den Markt eroberte?
+## 1. Welches Problem sollte Winny lösen?
 
-Im Jahr 2002 wurde auf dem Download-Board des riesigen elektronischen Bulletin-Boards "2channel" von einem anonymen Programmierer, der sich "47-shi" (Herr 47) nannte, eine Software veröffentlicht. Das war "**Winny**".
+Eine große Datei soll viele Menschen erreichen, obwohl der ursprüngliche Anbieter wenig Upload-Kapazität hat. Zugleich soll es keinen zentralen Suchserver geben und der Erstveröffentlicher schwer zu erkennen sein. Diese drei Ziele zu verbinden macht Winny technisch interessant.
 
-Winny war eine "Dateitauschsoftware", die es Benutzern im Internet ermöglichte, Dateien direkt miteinander auszutauschen. Es rühmte sich einer hohen Anonymität und einer überwältigenden Übertragungseffizienz, die sich deutlich von bestehenden Systemen abhob, und gewann im Handumdrehen Millionen von Nutzern.
-Aufgrund seiner hohen Anonymität wurde es jedoch zu einer Brutstätte für Urheberrechtsverletzungen, und zudem entwickelten sich häufige Vorfälle von durch Viren verursachten Lecks vertraulicher Informationen zu einem großen gesellschaftlichen Problem. Im Jahr 2004 führte dies zur Verhaftung des Entwicklers Isamu Kaneko (47-shi) wegen des Verdachts auf Beihilfe zur Urheberrechtsverletzung, was den Auslöser für eine Tragödie darstellte, die in die japanische IT-Geschichte eingehen sollte.
+Winny ist ein von Isamu Kaneko entwickeltes P2P-Dateitauschprogramm. Die erste Testversion erschien am 6. Mai 2002. **Peer-to-Peer** bedeutet, dass teilnehmende Rechner Daten nicht nur empfangen, sondern auch anderen anbieten. Jeder Teilnehmer ist ein Peer oder Knoten. [Urteil des japanischen Obersten Gerichtshofs, englische Übersetzung bei WIPO Lex][court]
 
-In diesem Artikel werden wir abseits der sozialen Aspekte wie Urheberrechtsprobleme, über die oft gesprochen wird, die Innovationskraft der "damals weltweit führenden P2P (Peer-to-Peer)-Netzwerktechnologie", die in Winny steckte, aus der reinen Perspektive der Informatik detailliert erklären.
+P2P allein legt weder Suchverfahren noch Anonymität fest. Wir müssen **Nachbarn finden, Dateien suchen und Dateiinhalte übertragen** unterscheiden. Die folgenden Diagramme und Zahlen sind konzeptionelle Modelle, keine Protokollmitschnitte einer bestimmten Version.
 
-## 2. Was ist P2P (Peer-to-Peer)?
+## 2. Ohne Zentralserver, aber nicht ohne Einstiegspunkt
 
-Um die Technologie von Winny zu verstehen, muss man zunächst die Grundstruktur von Netzwerken kennen.
+Beim üblichen Webabruf kontaktiert der Nutzer einen vorgegebenen Server. Ein CDN kann die Auslieferung verteilen; zum Vergleich nehmen wir hier eine einzelne Quelle an. Bei P2P kann ein Empfänger selbst zum Anbieter werden.
 
-### Client-Server-Modell (Konventionelles Modell)
-Websites und YouTube, also der Großteil des Internets, das wir normalerweise nutzen, verwenden dieses System.
-In der Mitte existiert ein leistungsstarker "Server", und zahlreiche "Clients" (unsere PCs und Smartphones) fordern Daten vom Server an. Während die Struktur einfach und leicht zu verwalten ist, hat sie die Schwäche, dass der Server bei einer Häufung von Zugriffen abstürzen kann oder dem Serveradministrator enorme Kosten entstehen.
+Winny benötigt keinen zentralen Suchserver mit dem gesamten Dateikatalog. Trotzdem muss ein neuer Knoten eine erste Kontaktadresse kennen. Informationen über Einstiegsknoten ermöglichen die ersten Verbindungen. Kein zentraler Katalog bedeutet nicht, dass Kontaktinformationen oder Internet-Infrastruktur entfallen. [Technische Unterlagen von JPNIC][jpnic]
 
-### P2P-Modell (Peer-to-Peer)
-Es gibt keinen zentralen Server. Die einzelnen am Netzwerk teilnehmenden PCs (Peers) kommunizieren auf Augenhöhe direkt miteinander und stellen sich gegenseitig Daten zur Verfügung.
-Es besitzt die robuste Eigenschaft, dass die Verarbeitungskapazität und Bandbreite des gesamten Systems umso stärker skalieren, je mehr Teilnehmer es gibt.
+Diese logischen Verbindungen bilden ein **Overlay-Netz**, ähnlich wie Buslinien auf vorhandenen Straßen. Ein Knoten tauscht Informationen mit einigen Nachbarn aus, nicht direkt mit allen Teilnehmern.
 
-## 3. Die Innovationskraft von Winny: Pure P2P und Freenet-Architektur
+Alternative Wege können den Betrieb fortsetzen, wenn ein Nachbar aussteigt. Häufiges Kommen und Gehen lässt Verbindungsinformationen jedoch veralten. Dezentralisierung garantiert weder die Auffindbarkeit jeder Datei noch Schutz vor jedem Ausfall.
 
-Damalige ausländische Dateitauschprogramme (wie Napster) verwendeten ein "Hybrid-P2P"-System: "Der Dateiaustausch selbst findet zwischen den Nutzern (P2P) statt, aber der Suchserver, der weiß, wer welche Datei hat, befindet sich im Zentrum". Dies hatte die Schwäche, dass das gesamte Netzwerk abstarb, wenn der zentraler Server gestoppt wurde.
+## 3. Kleinen Katalogeintrag und große Datei trennen
 
-Im Gegensatz dazu realisierte Winny ein "**Pure P2P**" (Reines P2P), das überhaupt keinen zentralen Server besaß.
-Das Netzwerkmodell von Winny basierte auf einer Architektur namens "Freenet", die entwickelt wurde, um hohe Anonymität zu erreichen, und wurde durch Herrn Kanekos eigene, äußerst brillante Verbesserungen ergänzt.
+In einer Bibliothek werden nicht für jede Suche alle Bücher herbeigetragen. Man durchsucht den Katalog und bestellt das gewünschte Buch. Winny trennt ebenso Metadaten und Inhalt.
 
-### Autonomes dezentrales Routing basierend auf Schlüsseln (Keys)
-Im Netzwerk von Winny wird Dateien ein "Schlüssel" zugewiesen, der auf einem eindeutigen Hash-Wert (einer Art Fingerabdruck der Datei) basiert, und auch jedem einzelnen Knoten (Node, dem PC des Nutzers) wird eine auf einer Zufallszahl basierende "Node-ID" zugewiesen.
+| Element | Aufgabe | Wichtige Abgrenzung |
+|---|---|---|
+| Schlüssel | Katalogdaten wie Name, Größe, Hash und Bezugsadresse | Hier kein kryptografischer Entschlüsselungsschlüssel |
+| Inhalt/Cache | Verschlüsselten Dateiinhalt speichern und übertragen | Der Besitzer ist nicht zwingend der Erstveröffentlicher |
+| Hashwert | Dateien identifizieren und vergleichen | Keine Signatur, die Urheberschaft oder Sicherheit belegt |
 
-Bei einer Suche gibt der Nutzer keine bestimmte IP-Adresse an, sondern gibt die Anfrage "Wer ist der Knoten, der Informationen nahe diesem Schlüssel hat?" wie bei einer Eimerkette an den benachbarten Knoten weiter.
-Jeder Knoten leitet die Anfrage anhand seiner eigenen Informationen an "einen Knoten, der der Anfrage näher ist" weiter. Dadurch wurde ein mathematischer Algorithmus integriert, bei dem das gesamte Netzwerk autonom als eine Art "riesige dezentrale Datenbank" fungiert und effizient die Zieldatei erreicht.
+Ein Bericht über Kanekos Vortrag erläutert diese Trennung und die Speicherung in weiterleitenden Knoten. [GLOCOM-Vortragsbericht][glocom]
+
+Zwei Dateien namens `lecture.zip` können unterschiedliche Inhalte haben. Inhaltsbezogene Kennungen helfen bei der Unterscheidung, aber auch Schadsoftware besitzt einen Hashwert. Übereinstimmung mit einem Katalogeintrag ist nicht gleichbedeutend mit sicherer Ausführung.
+
+## 4. Hierarchie und Gruppierung lenken die Suche
+
+Stets alle Teilnehmer zu fragen würde mit wachsendem Netz immer mehr Suchverkehr erzeugen. Winny bildet eine Hierarchie unter Berücksichtigung der Verbindungsgeschwindigkeit. Schlüssel und Suchanfragen bewegen sich überwiegend nach oben. **Clustering** verbindet Knoten mit ähnlichen Interessenschlagwörtern und verbessert so die Suche. [JPNIC][jpnic]
 
 ```mermaid
-graph TD
-    NodeA["User A (Search)"] -->|"Request"| NodeB["Node B"]
-    NodeA -->|"Request"| NodeC["Node C"]
-    NodeB -->|"Forward"| NodeD["Node D"]
-    NodeC -->|"Forward"| NodeE["Node E (Has File)"]
-    NodeE -.->|"Encrypted Path"| NodeC
-    NodeC -.->|"Encrypted Path"| NodeB
-    NodeB -.->|"Encrypted Path"| NodeA
-    Note["Die Daten werden im Staffelformat weitergeleitet, und der endgültige Sender und Empfänger kennen die IP-Adresse des jeweils anderen nicht."]
+flowchart BT
+    A["Knoten A"] -->|"Schlüssel und Anfragen"| B["Übergeordneter Knoten B"]
+    C["Knoten C"] -->|"Schlüssel und Anfragen"| B
+    B -->|"Weitersuchen"| D["Übergeordneter Knoten D"]
 ```
 
-## 4. Das "Cache-Relay"-System, das die ultimative Anonymität schuf
+Das Diagramm zeigt nur die Richtung. „Oben“ bedeutet weder geografischen Norden noch einen festen Firmenserver. Auch schnelle Anschlüsse haben begrenzte Kapazität, und oben konzentrierte Arbeit erzeugt Last.
 
-Der größte Grund, warum Winny die damaligen Techniker in Erstaunen versetzte, war sein robuster Mechanismus der **Anonymität**.
+Clustering lässt sich so verstehen: Musikbezogene Informationen sind eher in der Nähe musikinteressierter Teilnehmer zu finden. Ähnliche Schlagwörter sind keine KI-Bewertung des Wahrheitsgehalts oder der Qualität.
 
-Beim normalen P2P verbinden Sender (Seed) und Empfänger (Downloader) beim Herunterladen einer Datei direkt ihre IP-Adressen, wodurch leicht identifiziert werden kann, wer wem eine Datei gesendet hat.
-Winny führte jedoch das System der "**Dateien-Eimerkette und des automatischen Cachings**" ein.
+**Winny als DHT zu beschreiben, die zum Knoten mit dem nächstgelegenen Hash routet, ist irreführend.** Eine verteilte Hashtabelle verteilt die Zuständigkeit für einen Schlüsselraum auf Knoten; das ist ein anderes Konzept. Hashwerte zur Dateiidentifikation machen ein Netz nicht automatisch zur DHT. Katalogkennung und Suchweg sind verschiedene Dinge.
 
-1. **Verschlüsselter Übertragungsweg**: Die Datei wird nicht direkt gesendet, sondern über mehrere unbeteiligte Knoten (Nodes) in der Mitte weitergeleitet (Relay), und die gesamte Kommunikation auf diesem Weg war verschlüsselt.
-2. **Verbreitung von Besitzern durch automatisches Caching**: Das ist der wichtigste Punkt. Auf der Festplatte der unbeteiligten Knoten, die als Relaisstationen fungierten, wird automatisch ein Teil der übertragenen Datei als "verschlüsselter Cache" gespeichert.
-3. **Geheimhaltung des Senders**: Selbst wenn man entdeckt, dass ein bestimmter Knoten eine Datei sendet, wird es dadurch prinzipiell unmöglich, im System zu unterscheiden, ob diese Person der "ursprüngliche Veröffentlicher der Datei" ist oder einfach nur eine "unbeteiligte Person, die nur als Relaisstation fungieren muss".
+## 5. Weiterleitung und Cache schaffen weitere Anbieter
 
-Das Geniale an Herrn Kaneko war, dass er diese "Erhöhung der Netzwerkbelastung durch Relaisübertragung zur Anonymisierung" auf bewundernswerte Weise mit Effizienz verknüpfte, indem "durch die Verteilung von Caches über das gesamte Netzwerk beliebtere Dateien schneller von nahegelegenen Knoten heruntergeladen werden können (ein CDN-ähnlicher Effekt)".
+Auf die Suche folgt der Abruf. Suchinformationen und Dateiinhalte müssen nicht denselben Weg nehmen. Winny kennt einen Mechanismus, bei dem ein Knoten die Bezugsadresse eines Schlüssels ändert, eine Anfrage annimmt, Daten von der bisherigen Quelle holt und sie weiterleitet und speichert. Der Cache kann spätere Anfragen bedienen. [JPNIC][jpnic]
 
-## 5. Clustering: Integration der BBS (Bulletin Board)-Funktion
+```mermaid
+flowchart LR
+    A["Veröffentlicher A"] -->|"Erste Übertragung"| B["Relais B: speichert Cache"]
+    B -->|"Übertragung"| C["Empfänger C"]
+    B -->|"Spätere Wiederverwendung"| D["Empfänger D"]
+```
 
-Ab Winny2 wurde nicht nur der Dateiaustausch, sondern auch eine "Bulletin Board"-Funktion im P2P-Netzwerk implementiert.
-Es handelt sich um ein vollständig zensurresistentes, dezentrales Bulletin Board, das den zentralen 2channel-Server nicht benötigt.
+D nutzt Bs Kopie statt direkt von A zu empfangen. Das entlastet A und trennt den unmittelbaren Absender für D vom Erstveröffentlicher. Daraus folgt nicht, dass jeder Download gleich viele Relais durchläuft.
 
-Hier wurde eine "Clustering-Technologie" basierend auf den Interessen der Nutzer eingesetzt. Die Topologie (Verbindungsstruktur) des Netzwerks lernt aus dem Verhalten der Nutzer und verändert sich dynamisch, sodass Knoten mit Interesse an Anime, Knoten mit Interesse an Musik usw., also Gleichgesinnte, automatisch in der Nähe voneinander platziert werden.
-Dadurch wurde eine äußerst effiziente Informationsverbreitung realisiert, ohne dass das gesamte riesige Netzwerk unnötig durchsucht werden muss. Dieser fortschrittliche Clustering-Algorithmus besaß eine Weitsicht, die mit modernen KI-Empfehlungssystemen und verteilten Verarbeitungstechnologien vergleichbar ist.
+### 100 MB an 100 Empfänger senden
 
-## 6. Licht und Schatten: Technologische Evolution und gesellschaftliche Reibung
+Seien $F$ die Dateigröße und $n$ die Empfängerzahl. Sendet eine Quelle jedem eine vollständige Kopie, beträgt ihr Upload-Volumen:
 
-Die in Winny enthaltenen technologischen Konzepte wie "vollständige Dezentralisierung", "Geheimhaltung der Kommunikation durch Verschlüsselung" und "autonomes, dezentrales, effizientes Routing" waren äußerst fortschrittlich und sind direkt mit den Ideen der **Blockchain**, die später mit Bitcoin aufkam, und dem dezentralen Web (Web3) wie IPFS verbunden.
+$$
+V_0 = nF
+$$
 
-Wäre Isamu Kaneko nicht verhaftet worden und dieses außergewöhnliche Talent auf die Entwicklung einer legalen Infrastruktur gerichtet worden, so dass aus Japan ein verteiltes System mit Weltstandard hervorgegangen wäre, sähe das aktuelle Bild der Internet-Vorherrschaft möglicherweise etwas anders aus.
+Bei $F=100\,\mathrm{MB}$ und $n=100$ sind das 10.000 MB. Im idealisierten Vergleich sendet die Quelle nur eine Kopie, während Cache-Besitzer die übrigen 99 Auslieferungen übernehmen.
 
-Technologie an sich ist weder gut noch böse. Wenn jedoch diese Technologie zu mächtig ist und die gesetzlichen Rahmenbedingungen der Gesellschaft überholt, entstehen starke Reibungen. Die Geschichte von Winny stellt uns auch heute noch tiefgreifende Fragen zu Innovation und gesellschaftlicher Verantwortung und dazu, wie Techniker geschützt und gefördert werden sollten.
+| Annahme | Upload der Quelle | Upload anderer Teilnehmer |
+|---|---:|---:|
+| Quelle beliefert alle 100 direkt | 10.000 MB | 0 MB |
+| Eine erste Kopie, danach 99 Weiterverteilungen | 100 MB | 9.900 MB |
+
+**Es entfällt die Konzentration an der Quelle, nicht der Verkehr zur Versorgung aller Empfänger.** Relais, Wiederholungen und Suchverkehr können das Gesamtvolumen sogar erhöhen. Das sind keine Winny-Messwerte und kein Versprechen hundertfacher Geschwindigkeit.
+
+Sei $u_i$ die Upload-Rate jedes der $k$ Anbieter und $d$ die Download-Kapazität des Empfängers. Bei parallelem Abruf gilt als konzeptionelle obere Grenze der effektiven Rate $r$:
+
+$$
+r \leq \min\left(d,\sum_{i=1}^{k}u_i\right)
+$$
+
+Überlastung, Festplattentempo und vorhandene Daten spielen ebenfalls eine Rolle. Zehn Anbieter auf derselben langsamen Leitung verzehnfachen deren Geschwindigkeit nicht. Beliebte Dateien sammeln Kopien; seltene können verschwinden, sobald ihr einziger Besitzer offline geht.
+
+## 6. Verschlüsselung bedeutet nicht Unsichtbarkeit
+
+Winny kombinierte Verschlüsselung, Relais und Cache, um den Veröffentlicher schwerer erkennbar zu machen. Vier Eigenschaften sind zu unterscheiden.
+
+| Eigenschaft | Frage | Weitere Gesichtspunkte |
+|---|---|---|
+| Vertraulichkeit | Kann ein Beobachter den Inhalt lesen? | Verfahren, Implementierung, Schlüsselverwaltung |
+| Anonymität | Lässt sich Verhalten einer Person zuordnen? | Nachbarn, Zeitpunkte und Verkehrsvolumen |
+| Authentizität | Stammt der Inhalt vom behaupteten Urheber? | Vertrauenswürdige Signaturen oder Bezugsquellen |
+| Endgerätesicherheit | Kann das Öffnen dem Rechner schaden? | Ausführungsrechte und Schutz vor Schadsoftware |
+
+Direkte IP-Kommunikation benötigt eine Zieladresse. Verschlüsselung beseitigt weder die Existenz einer Verbindung noch sämtliche Informationen über deren Endpunkte. Eine beobachtete Cache-Übertragung beweist allein keine Erstveröffentlichung; Beobachtungen über mehrere Orte und Zeitpunkte lassen sich aber möglicherweise kombinieren.
+
+Aussagen zur Anonymität benötigen ein Bedrohungsmodell: Wer kann was beobachten? Ein einzelner Nachbar und ein Beobachter vieler Verbindungen haben unterschiedliche Möglichkeiten. „Vollständig anonym“ und „prinzipiell nicht rückverfolgbar“ sind deshalb unpassend.
+
+## 7. Datenlecks: Kompromittierung und Weiterverteilung trennen
+
+Winny-bezogene Lecks lassen sich in zwei Schritten verstehen: Schadsoftware oder eine andere Ursache legt private Daten auf dem Rechner offen, danach kopiert das Netz sie weiter. IPA untersuchte die Bearbeitung tatsächlicher Vorfälle. [IPA-Bericht][ipa]
+
+Eine typische Erklärungskette lautet: **verdächtige Datei ausführen → Schadsoftware sammelt und veröffentlicht Informationen → andere Knoten rufen sie ab → Caches verteilen sie weiter**. Das bedeutet nicht, dass ein Winny-Start zwangsläufig die gesamte Festplatte veröffentlicht. Schadprogramm und P2P-Verteilung sind getrennt zu betrachten.
+
+Das Löschen des Originals entfernt nicht unbedingt bereits verteilte Kopien. Liest Schadsoftware Klartext auf dem infizierten Rechner, muss sie keine Verschlüsselung brechen. Transportverschlüsselung allein schließt diesen Zugang nicht.
+
+Welche Daten werden geteilt? Kann der Nutzer das prüfen? Wie weit reicht ein Einbruch? Lässt sich eine versehentliche Veröffentlichung zurückholen? Bedienbarkeit und Kontrolle zählen ebenso wie Effizienz.
+
+## 8. Geschichte und Urteil von der Technikbewertung trennen
+
+| Zeitpunkt | Ereignis |
+|---|---|
+| Mai 2002 | Erste Testversion |
+| Mai 2003 | Testversion von Winny 2 mit dem Ziel eines P2P-Diskussionsforums |
+| 2004 | Kaneko wegen Verdachts der Beihilfe zu Urheberrechtsverletzungen verhaftet |
+| 19. Dezember 2011 | Oberster Gerichtshof verwirft das Rechtsmittel der Staatsanwaltschaft; Freispruch wird rechtskräftig |
+
+Das Forum von Winny 2 war eine Anwendung auf der verteilten Datenübertragung. Such-Clustering war nicht selbst ein Forum. Verteilung garantiert weder echte Beiträge noch Dauerhaftigkeit oder Widerstand gegen jede Löschung. [GLOCOM][glocom]
+
+Im Verfahren ging es darum, ob die Softwarebereitstellung unter den konkreten Umständen eine strafbare Hilfe zu den Urheberrechtsverletzungen der Nutzer darstellte. Der Oberste Gerichtshof verneinte die Strafbarkeit des Entwicklers in diesem Fall. Er legalisierte weder jeden Dateitausch noch schuf er allgemeine Immunität für Entwickler. [Urteil][court]
+
+## 9. Die bleibenden Entwurfsfragen
+
+„Innovativ, also sicher“ und „Schäden entstanden, also ist Verteilung wertlos“ greifen zu kurz. Suche, Auslieferung, Privatsphäre und Kontrolle sind verschiedene technische Ziele.
+
+Metadaten vom Inhalt zu trennen, Kopien wiederzuverwenden und ähnliche Interessen zu verbinden spart Ressourcen. Mehr Kopien erschweren jedoch den Rückruf, zusätzliche Relais verändern Latenz und Beobachtungspunkte. Nutzen und Kosten stammen aus denselben Mechanismen.
+
+Fünf Fragen helfen auch bei heutigen Systemen: **Wie wird der erste Peer gefunden? Wo wird gesucht? Wer sendet den Inhalt? Was bleibt vor wem verborgen? Wer behält nach der Veröffentlichung Kontrolle?** Winny liefert einen konkreten Fall, um diese Fragen getrennt zu prüfen.
+
+## Quellen
+
+- [JPNIC: P2P-Grundlagen und Netzbetrieb, Internet Week 2006, besonders S. 9–15 (Japanisch)][jpnic]
+- [GLOCOM: Bericht zu Kanekos Vortrag über Winny, 2006 (Japanisch)][glocom]
+- [IPA: Umgang mit Datenlecks über Winny, 2007 (Japanisch)][ipa]
+- [WIPO Lex: Oberster Gerichtshof, 2009 (A) 1900, 19. Dezember 2011 (englische Übersetzung)][court]
+
+[jpnic]: https://www.nic.ad.jp/ja/materials/iw/2006/proceedings/T3-1.pdf
+[glocom]: https://www.glocom.ac.jp/wp-content/uploads/2020/10/chijo106_042-053.pdf
+[ipa]: https://www.ipa.go.jp/archive/files/000011527.pdf
+[court]: https://www.wipo.int/wipolex/en/text/584277

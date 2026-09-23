@@ -1,91 +1,154 @@
 ---
-title: "Tecnologia de Redes: Explicação Técnica do Winny - A Luz e a Sombra das Redes P2P"
-description: "O software de compartilhamento de arquivos 'Winny' que abalou o Japão. Por trás do problema social da prisão e julgamento do desenvolvedor, revelamos a essência da tecnologia de rede P2P, que era de ponta mundial na época."
+title: "Como o Winny funcionava: busca, cache, retransmissão e limites do anonimato"
+description: "Entenda as chaves de metadados, a hierarquia por velocidade e o cache do Winny, com exemplos de tráfego e uma análise das limitações de segurança, dos vazamentos e do julgamento do desenvolvedor."
 slug: "history-of-winny"
 date: "2026-09-23T10:00:00+09:00"
-image: "eyecatch.jpg"
-categories:
-    - "technology"
-    - "computer-science"
-tags:
-    - "p2p"
-    - "network"
-    - "winny"
-    - "history"
-    - "history"
+categories: ["technology", "computer-science"]
+tags: ["p2p", "network", "winny", "history"]
+math: true
 ---
 
-## 1. O que foi o "Winny" que dominou o início dos anos 2000?
+## 1. O problema que o Winny tentava resolver
 
-Em 2002, no fórum de downloads do gigantesco quadro de mensagens eletrônicas "2channel", um programador anônimo autodenominado "47-shi" publicou um software. Esse software era o "**Winny**".
+Queremos distribuir um arquivo grande para muitas pessoas, mas a origem tem pouca capacidade de upload. Também queremos dispensar um servidor central de busca e dificultar a identificação de quem publicou o arquivo primeiro. Conciliar esses três objetivos torna o Winny tecnicamente interessante.
 
-O Winny era um "software de compartilhamento de arquivos" que permitia a troca direta de arquivos entre usuários na Internet. Com alto nível de anonimato e incrível eficiência de transferência que o distinguiam dos sistemas existentes, ele rapidamente conquistou milhões de usuários.
-No entanto, justamente por causa de seu alto grau de anonimato, tornou-se um terreno fértil para violações da lei de direitos autorais e, com o vazamento frequente de informações confidenciais devido a vírus, evoluiu para um grande problema social. Em 2004, a prisão do desenvolvedor, Isamu Kaneko (47-shi), sob a suspeita de cumplicidade em violações de direitos autorais, desencadeou uma tragédia que ficou marcada na história da TI japonesa.
+Winny é um programa de compartilhamento P2P desenvolvido por Isamu Kaneko. Sua primeira versão de teste foi publicada em 6 de maio de 2002. Em uma rede **ponto a ponto**, os computadores fornecem dados além de recebê-los. Cada participante é um par, ou nó. [Decisão da Suprema Corte japonesa, tradução inglesa no WIPO Lex][court]
 
-Neste artigo, vamos explicar profundamente a inovatividade da "tecnologia de rede P2P (Peer-to-Peer) de ponta mundial da época", sob a perspectiva puramente da ciência da computação, um aspecto raramente discutido sob a sombra das questões sociais, como direitos autorais.
+P2P, por si só, não define a busca nem o anonimato. É preciso separar **encontrar outros nós, buscar arquivos e transferir seu conteúdo**. Os diagramas e cálculos abaixo são modelos conceituais, não registros de comunicação de uma versão específica.
 
-## 2. O que é P2P (Peer-to-Peer)?
+## 2. Sem servidor central, mas com um ponto de entrada
 
-Para entender a tecnologia do Winny, primeiro precisamos conhecer a estrutura básica das redes.
+Na distribuição web habitual, o usuário acessa um servidor designado. Uma CDN pode distribuir a entrega; aqui usamos uma única origem para simplificar. No P2P, quem recebe pode se tornar fornecedor.
 
-### Modelo Cliente-Servidor (Convencional)
-A maior parte da Internet que usamos regularmente, como sites e o YouTube, segue esse modelo.
-Um "servidor" poderoso fica no centro e vários "clientes" (nossos PCs e smartphones) solicitam dados a ele. Embora a estrutura seja simples e fácil de gerenciar, tem a desvantagem de que, se houver um grande fluxo de acessos simultâneos, o servidor pode cair, além de gerar custos enormes para o administrador.
+O Winny não precisa de um servidor central que concentre o catálogo. Mesmo assim, um nó novo precisa conhecer algum endereço inicial. Informações sobre nós de entrada permitem estabelecer as primeiras conexões. A ausência de catálogo central não elimina a necessidade de contatos iniciais nem da infraestrutura da Internet. [Material técnico do JPNIC][jpnic]
 
-### Modelo P2P (Peer-to-Peer)
-Não há um servidor central; os PCs individuais (peers) conectados à rede se comunicam diretamente e trocam dados em pé de igualdade.
-Possui uma natureza robusta onde a capacidade de processamento e a largura de banda de todo o sistema aumentam (escalam) conforme o número de participantes cresce.
+Essas conexões lógicas formam uma **rede sobreposta**, como linhas de ônibus sobre uma malha de ruas. Cada nó troca informações com alguns vizinhos, sem se conectar diretamente a todos.
 
-## 3. A Inovação do Winny: P2P Puro e a Arquitetura Freenet
+Caminhos alternativos podem manter a comunicação quando um vizinho sai. Porém, entradas e saídas frequentes tornam as informações desatualizadas. Descentralizar não garante encontrar qualquer arquivo nem resistir a toda falha.
 
-Naquela época, os softwares de compartilhamento de arquivos estrangeiros (como o Napster) usavam um modelo "P2P Híbrido", onde "a transferência dos arquivos em si ocorria entre os usuários (P2P), mas o servidor de busca que sabia quem tinha qual arquivo ficava no centro". A fraqueza era que a rede inteira morria se o servidor central parasse.
+## 3. Separar o pequeno registro do grande arquivo
 
-Em contraste, o Winny implementou um "**P2P Puro (Pure P2P)**" que não tinha servidor central algum.
-O modelo de rede do Winny era baseado na arquitetura "Freenet", desenvolvida para oferecer alto anonimato, com melhorias próprias extremamente brilhantes adicionadas por Kaneko.
+Uma biblioteca não traz todos os livros a cada busca: consulta-se o catálogo e pede-se a obra desejada. O Winny também separa metadados e conteúdo.
 
-### Roteamento Distribuído Autônomo Baseado em Chaves (Keys)
-Na rede do Winny, cada arquivo recebe uma "chave" baseada no seu valor de hash exclusivo (como uma impressão digital do arquivo) e cada nó (PC do usuário) recebe um "ID de nó" baseado em números aleatórios.
+| Elemento | Função | Distinção importante |
+|---|---|---|
+| Chave | Metadados como nome, tamanho, hash e endereço de obtenção | Não é, nesse contexto, uma chave de descriptografia |
+| Corpo/cache | Armazenar e transferir o conteúdo criptografado | Seu detentor pode não ser o publicador original |
+| Hash | Identificar e comparar arquivos | Não é assinatura que comprove autoria ou segurança |
 
-Ao fazer uma busca, em vez de especificar um endereço IP, o usuário passa o pedido adiante, de nó em nó (como uma corrida de revezamento), perguntando: "Quem é o nó mais próximo que tem informações sobre esta chave?".
-Como cada nó transfere a solicitação para um nó "mais próximo da solicitação" usando as informações que tem, o sistema inteiro funciona de maneira autônoma como uma espécie de "gigantesco banco de dados distribuído", incorporando algoritmos matemáticos para chegar eficientemente ao arquivo desejado.
+O relato de uma palestra de Kaneko explica essa separação e o armazenamento nos nós intermediários. [Relato do GLOCOM][glocom]
+
+Dois arquivos chamados `lecture.zip` podem conter dados diferentes. Identificadores relacionados ao conteúdo ajudam a distingui-los, mas arquivos maliciosos também têm hashes. Corresponder ao catálogo não equivale a ser seguro para executar.
+
+## 4. Hierarquia e agrupamento orientam a busca
+
+Perguntar sempre a todos aumentaria o tráfego conforme a rede crescesse. O Winny organiza uma hierarquia considerando a velocidade de conexão: chaves e buscas seguem principalmente para os níveis superiores. O **agrupamento por interesses** conecta nós com palavras-chave semelhantes para melhorar a busca. [JPNIC][jpnic]
 
 ```mermaid
-graph TD
-    NodeA["Usuário A (Busca)"] -->|"Requisição"| NodeB["Nó B"]
-    NodeA -->|"Requisição"| NodeC["Nó C"]
-    NodeB -->|"Encaminhamento"| NodeD["Nó D"]
-    NodeC -->|"Encaminhamento"| NodeE["Nó E (Possui o Arquivo)"]
-    NodeE -.->|"Caminho Criptografado"| NodeC
-    NodeC -.->|"Caminho Criptografado"| NodeB
-    NodeB -.->|"Caminho Criptografado"| NodeA
-    Note["Os dados são transferidos em formato de revezamento, e o remetente inicial e o destinatário final não conhecem o endereço IP um do outro"]
+flowchart BT
+    A["Nó A"] -->|"Chaves e consultas"| B["Nó superior B"]
+    C["Nó C"] -->|"Chaves e consultas"| B
+    B -->|"Continuar busca"| D["Nó superior D"]
 ```
 
-## 4. O Sistema de "Cache Relay" Que Criou o Anonimato Extremo
+É um esquema direcional. “Superior” não significa norte geográfico nem servidor fixo de uma organização. Uma conexão rápida ainda tem capacidade limitada, e o trabalho concentrado pode gerar sobrecarga.
 
-O maior motivo pelo qual o Winny surpreendeu os engenheiros da época foi o seu mecanismo robusto de **anonimato**.
+O agrupamento pode facilitar encontrar informações musicais perto de participantes interessados em música. Semelhança de palavras-chave não é uma avaliação por IA da veracidade ou qualidade do conteúdo.
 
-No P2P comum, ao fazer o download de um arquivo, a origem (seeder) e o destinatário (downloader) se conectam diretamente pelos endereços IP, o que torna muito fácil rastrear quem enviou o arquivo para quem.
-No entanto, o Winny adotou o sistema de "**revezamento de arquivos e cache automático**".
+**Descrever o Winny como uma DHT que encaminha ao nó com o hash mais próximo é enganoso.** Uma tabela hash distribuída atribui partes do espaço de chaves a nós: trata-se de outro projeto. Usar hashes para identificar arquivos não transforma automaticamente a rede em DHT. Identificador de catálogo e caminho de busca são coisas diferentes.
 
-1. **Rota de transferência criptografada**: os arquivos não são enviados diretamente, mas transferidos (revezados) por meio de vários nós intermediários não relacionados, e toda a comunicação dessa rota era criptografada.
-2. **Dispersão de detentores por cache automático**: este é o ponto principal. Parte do arquivo em trânsito é salvo automaticamente como um "cache criptografado" nos discos rígidos dos nós intermediários não relacionados que atuaram como pontos de trânsito.
-3. **Ocultamento da origem (remetente)**: com isso, mesmo que seja descoberto que um nó está enviando um arquivo, tornou-se teoricamente impossível para o sistema distinguir se essa pessoa era o "publicador original do arquivo" ou apenas uma "pessoa não relacionada servindo de intermediário".
+## 5. Retransmissão e cache criam novos fornecedores
 
-A genialidade de Kaneko estava em pegar o aumento da carga de rede gerado por essa "transferência de revezamento para anonimização" e transformá-lo de maneira brilhante em um ganho de eficiência: "com os caches espalhados por toda a rede, arquivos mais populares podem ser baixados muito mais rápido através de nós próximos (um efeito semelhante ao de um CDN)".
+Depois de encontrar um candidato, é preciso obter seu conteúdo. Metadados e dados não necessariamente percorrem a mesma rota. O Winny inclui um mecanismo em que um nó altera o endereço de obtenção de uma chave, aceita o pedido, busca os dados na origem anterior e os retransmite e armazena. O cache pode atender a pedidos posteriores. [JPNIC][jpnic]
 
-## 5. Clustering: Inclusão da Função de BBS (Fórum)
+```mermaid
+flowchart LR
+    A["Publicador A"] -->|"Transferência inicial"| B["Intermediário B: guarda cache"]
+    B -->|"Transferência"| C["Destinatário C"]
+    B -->|"Reutilização posterior"| D["Destinatário D"]
+```
 
-A partir do Winny2, não apenas o compartilhamento de arquivos, mas também uma função de "fórum" (BBS) foi implementada na rede P2P.
-Era um fórum distribuído completamente incensurável, sem necessidade dos servidores centrais do 2channel.
+D usa a cópia de B em vez de receber diretamente de A. Isso reduz a carga de A e separa o remetente imediato de D do publicador original. Não significa que toda transferência passe pelo mesmo número de intermediários.
 
-Aqui, a "tecnologia de clustering" baseada no interesse do usuário foi adotada. Grupos de nós interessados em animes, grupos de nós interessados em música, etc. — a topologia da rede (forma de conexão) aprendia o comportamento dos usuários e mudava dinamicamente, de modo que pessoas com gostos parecidos fossem automaticamente colocadas perto umas das outras.
-Graças a isso, ele alcançava uma disseminação de informações extremamente eficiente, sem realizar buscas desnecessárias por toda a rede gigantesca. Esse algoritmo avançado de clustering foi visionário e se alinha com as tecnologias atuais de processamento distribuído e os sistemas de recomendação de Inteligência Artificial (IA).
+### Enviar 100 MB para 100 pessoas
 
-## 6. Luz e Sombra: A Evolução da Tecnologia e o Atrito com a Sociedade
+Sejam $F$ o tamanho do arquivo e $n$ o número de destinatários. Se uma origem enviar uma cópia completa a cada pessoa, seu volume de upload será:
 
-Os conceitos tecnológicos integrados no Winny, como "descentralização completa", "ocultamento da comunicação por criptografia" e "roteamento autônomo distribuído e eficiente", foram incrivelmente pioneiros, conectando-se diretamente aos ideais do "**blockchain**", como no Bitcoin, e da Web descentralizada (Web3), como o IPFS, que surgiriam depois.
+$$
+V_0 = nF
+$$
 
-Se Isamu Kaneko não tivesse sido preso e seu raro talento tivesse sido direcionado para o desenvolvimento de uma infraestrutura legal, criando um sistema distribuído a partir do Japão para se tornar um padrão global, talvez o panorama atual da dominância na Internet fosse um pouco diferente.
+Para $F=100\,\mathrm{MB}$ e $n=100$, são 10.000 MB. Compare com um caso ideal em que a origem envia uma cópia e os detentores de cache fazem as outras 99 entregas.
 
-A tecnologia em si não é boa nem má. No entanto, quando essa tecnologia é muito poderosa e ultrapassa a legislação de uma sociedade, ocorre um forte atrito. A história do Winny nos apresenta questões pesadas, ainda muito relevantes hoje, sobre inovação, responsabilidade social e como os engenheiros devem ser protegidos e incentivados.
+| Hipótese | Upload da origem | Upload dos demais participantes |
+|---|---:|---:|
+| A origem entrega diretamente aos 100 destinatários | 10.000 MB | 0 MB |
+| Uma cópia inicial, seguida de 99 redistribuições | 100 MB | 9.900 MB |
+
+**O que desaparece é a concentração na origem, não o tráfego necessário para entregar todas as cópias.** Intermediários, retransmissões e buscas podem aumentar o tráfego total. Esses números não são medições do Winny nem uma previsão de velocidade cem vezes maior.
+
+Se $u_i$ é a taxa de upload de cada um dos $k$ fornecedores e $d$ a capacidade de download do destinatário, assumindo obtenção paralela, um limite conceitual da taxa efetiva $r$ é:
+
+$$
+r \leq \min\left(d,\sum_{i=1}^{k}u_i\right)
+$$
+
+Congestionamento, disco e disponibilidade de cada parte dos dados também importam. Dez fornecedores compartilhando uma conexão lenta não multiplicam sua velocidade por dez. Arquivos populares acumulam cópias; um raro pode ficar indisponível quando seu único detentor sai.
+
+## 6. Criptografia não significa invisibilidade
+
+O Winny combinava criptografia, retransmissão e cache para dificultar a identificação do publicador. É preciso distinguir quatro propriedades.
+
+| Propriedade | Pergunta | Outros fatores |
+|---|---|---|
+| Confidencialidade | Um observador consegue ler o conteúdo? | Algoritmo, implementação e gestão de chaves |
+| Anonimato | A atividade pode ser ligada a uma pessoa? | Vizinhos, horários e volumes de tráfego |
+| Autenticidade | Os dados vêm do autor declarado? | Assinaturas ou fontes confiáveis |
+| Segurança do dispositivo | Abrir o arquivo pode prejudicar o computador? | Permissões de execução e defesa contra malware |
+
+Comunicação IP direta exige um endereço de destino. Criptografar não apaga a existência da conexão nem todas as informações sobre suas pontas. Observar um envio de cache não basta para identificar a publicação original, mas observações de locais e momentos distintos podem ser combinadas.
+
+Uma afirmação de anonimato exige um modelo de ameaça: quem observa o quê? Acompanhar um vizinho e monitorar muitas conexões são capacidades diferentes. “Totalmente anônimo” e “impossível de rastrear por princípio” são descrições inadequadas.
+
+## 7. Vazamentos: separar invasão e redistribuição
+
+Vazamentos ligados ao Winny podem ser entendidos em duas etapas: malware ou outra causa expõe dados privados do computador, e a rede depois os copia. A IPA investigou respostas a incidentes reais. [Relatório da IPA][ipa]
+
+Uma sequência explicativa típica é **executar arquivo suspeito → malware coleta e publica informações → outros nós obtêm os dados → caches os redistribuem**. Isso não significa que iniciar o Winny publique necessariamente o disco inteiro. O comportamento do malware deve ser separado da distribuição P2P.
+
+Excluir o original não necessariamente apaga as cópias já presentes em outros computadores. Se o malware lê os dados em claro no dispositivo infectado, não precisa quebrar a criptografia. Criptografar o transporte não bloqueia essa entrada.
+
+Quais dados são compartilhados? O usuário consegue conferir? Até onde uma invasão se espalha? Uma publicação acidental pode ser recolhida? Usabilidade e controle importam tanto quanto eficiência.
+
+## 8. Separar história e julgamento da avaliação técnica
+
+| Data | Evento |
+|---|---|
+| Maio de 2002 | Primeira versão de teste |
+| Maio de 2003 | Teste do Winny 2, voltado a um fórum P2P |
+| 2004 | Kaneko preso sob suspeita de auxílio a violações de direitos autorais |
+| 19 de dezembro de 2011 | Suprema Corte rejeita recurso da acusação, tornando definitiva a absolvição |
+
+O fórum do Winny 2 era uma aplicação sobre a distribuição de dados. O agrupamento de buscas não era, em si, um fórum. Distribuição não garante autenticidade das publicações, permanência ou resistência a toda remoção. [GLOCOM][glocom]
+
+A questão judicial era se fornecer o programa constituía auxílio criminoso às infrações dos usuários nas circunstâncias do caso. A Suprema Corte não reconheceu responsabilidade penal do desenvolvedor nesse caso. Não legalizou todo compartilhamento nem criou imunidade universal para desenvolvedores. [Decisão][court]
+
+## 9. As perguntas de projeto que o Winny deixa
+
+“Inovador, portanto seguro” e “houve danos, portanto distribuir não tem valor” são avaliações simplistas. Busca, entrega, privacidade e controle são objetivos diferentes.
+
+Separar metadados e conteúdo, reutilizar cópias e conectar interesses semelhantes aproveita recursos. Porém, mais cópias dificultam o recolhimento, e mais intermediários alteram a latência e os pontos de observação. Benefícios e custos vêm dos mesmos mecanismos.
+
+Aplique cinco perguntas aos sistemas atuais: **Como se encontra o primeiro nó? Onde se busca? Quem envia o conteúdo? O que fica oculto de quem? Quem mantém o controle depois da publicação?** O Winny é um caso concreto para examiná-las separadamente.
+
+## Fontes
+
+- [JPNIC: fundamentos de P2P e operação de redes, Internet Week 2006, especialmente pp. 9–15 (japonês)][jpnic]
+- [GLOCOM: relato da palestra de Kaneko sobre Winny, 2006 (japonês)][glocom]
+- [IPA: respostas a vazamentos pelo Winny, 2007 (japonês)][ipa]
+- [WIPO Lex: Suprema Corte, 2009 (A) 1900, 19 de dezembro de 2011 (tradução inglesa)][court]
+
+[jpnic]: https://www.nic.ad.jp/ja/materials/iw/2006/proceedings/T3-1.pdf
+[glocom]: https://www.glocom.ac.jp/wp-content/uploads/2020/10/chijo106_042-053.pdf
+[ipa]: https://www.ipa.go.jp/archive/files/000011527.pdf
+[court]: https://www.wipo.int/wipolex/en/text/584277

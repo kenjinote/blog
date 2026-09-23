@@ -1,1 +1,8 @@
 /* Place your custom SCSS in HUGO_SITE_FOLDER/assets/scss/custom.scss */
+
+// Mathematical notation keeps its reading order inside right-to-left prose.
+[dir="rtl"] .katex {
+    direction: ltr;
+    unicode-bidi: isolate;
+    display: inline-block;
+}
