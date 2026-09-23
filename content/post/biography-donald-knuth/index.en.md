@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["donald-knuth", "history"]
 image: "eyecatch.jpg"
+slug: "biography-donald-knuth"
 ---
 
 In the world of computer science, there is likely no one who does not know the name Donald E. Knuth. Known as the "father of algorithm analysis," he is a great figure who elevated programming from a mere technique to the realm of "art." This article delves deep into his life, his unique philosophy, and the immeasurable impact he has had on future generations.

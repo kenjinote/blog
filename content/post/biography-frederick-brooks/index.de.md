@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["frederick-brooks", "history"]
 image: "eyecatch.jpg"
+slug: "biography-frederick-brooks"
 ---
 
 Jeder, der in der Softwareentwicklung tätig ist, hat wahrscheinlich schon einmal die Regel gehört: "Das Hinzufügen von Arbeitskräften zu einem verspäteten Softwareprojekt verzögert es noch weiter." Dies ist als "Brooks'sches Gesetz" bekannt und ist eine der berühmtesten Maximen in der Softwaretechnik. Der Mann, der dieses Gesetz vorschlug, war Frederick P. Brooks, Jr., ein Gigant der Informatik und ein legendärer Projektmanager.

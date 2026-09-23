@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["jean-jacques-rousseau", "history"]
 image: "eyecatch.jpg"
+slug: "biography-jean-jacques-rousseau"
 ---
 
 Im Europa des 18. Jahrhunderts, als das Aufklärungsdenken, das die Vernunft als das Höchste ansah, blühte, gab es einen Mann, der sich diesem Trend widersetzte und rief: "Zurück zur Natur". Dieser Mann war Jean-Jacques Rousseau (1712 - 1778). Seine Ideen hatten einen entscheidenden Einfluss auf die Französische Revolution und legten zudem den Grundstein für die moderne Pädagogik und die romantische Literatur. In diesem Artikel entwirren wir das Leben Rousseaus, der inmitten von Einsamkeit und Wanderschaft unermüdlich nach der Wahrheit suchte, und seine tiefgründige Philosophie, die bis heute nachhallt.

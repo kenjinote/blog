@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["coco-chanel", "history"]
 image: "eyecatch.jpg"
+slug: "biography-coco-chanel"
 ---
 
 # ココ・シャネル：女性を解放した革命児の生涯と哲学

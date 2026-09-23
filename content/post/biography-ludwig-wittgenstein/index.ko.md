@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["ludwig-wittgenstein", "history"]
 image: "eyecatch.jpg"
+slug: "biography-ludwig-wittgenstein"
 ---
 
 루트비히 비트겐슈타인(Ludwig Wittgenstein, 1889–1951)은 20세기에서 가장 중요하고 영향력 있는 철학자 중 한 명입니다. 그의 철학은 언어와 논리의 한계를 추구했던 전기와 일상 언어의 사용에 초점을 맞춘 후기로 크게 나뉩니다. 한 명의 철학자가 일생 동안 자신의 과거 이론을 근본적으로 뒤집고 전혀 다른 두 개의 철학 체계를 세운 것은 사상사에서도 극히 드문 일입니다.

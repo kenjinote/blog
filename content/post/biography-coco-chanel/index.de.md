@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["coco-chanel", "history"]
 image: "eyecatch.jpg"
+slug: "biography-coco-chanel"
 ---
 
 # Coco Chanel: Leben und Philosophie der Revolutionärin, die die Frauen befreite

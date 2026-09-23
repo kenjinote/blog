@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["steve-mcconnell", "history"]
 image: "eyecatch.jpg"
+slug: "biography-steve-mcconnell"
 ---
 
 ソフトウェア開発に携わる者であれば、「Code Complete（コードコンプリート）」という分厚い名著を目にしたことがあるでしょう。この本の著者であるスティーブ・マコネル（Steve McConnell）は、プログラミングという混沌とした作業に秩序をもたらし、真の意味での「ソフトウェア工学（Software Engineering）」を確立するために生涯を捧げてきた人物です。本記事では、彼の生涯、独自の哲学、そして現代の開発シーンに与え続ける多大な影響について深く掘り下げます。

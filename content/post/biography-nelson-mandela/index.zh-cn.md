@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["nelson-mandela", "history"]
 image: "eyecatch.jpg"
+slug: "biography-nelson-mandela"
 ---
 
 ## 引言：通向自由的漫漫长路

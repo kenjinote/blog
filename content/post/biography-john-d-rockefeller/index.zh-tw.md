@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["john-d-rockefeller", "history"]
 image: "eyecatch.jpg"
+slug: "biography-john-d-rockefeller"
 ---
 
 19世紀後半葉至20世紀初，有一位人物不僅對美國，更對全球經濟產生了巨大影響。他的名字叫約翰·戴維森·洛克斐勒（John Davison Rockefeller）。他創立了標準石油公司（Standard Oil），透過壓倒性的壟斷積累了據稱是史上最高額的巨額財富，作為「石油大王」而廣為人知。然而，他真正的了不起之處不僅在於財富的積累，更在於確立了現代資本主義系統，並將對後世產生深遠影響的史無前例的慈善事業體系化。在本文中，我們將深入探討他充滿波折的一生、獨特的商業哲學，以及他給現代社會留下的偉大遺產。

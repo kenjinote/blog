@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["jean-paul-sartre", "history"]
 image: "eyecatch.jpg"
+slug: "biography-jean-paul-sartre"
 ---
 
 20世紀のフランスを代表する哲学者であり、小説家、劇作家、評論家としても多大な足跡を残したジャン＝ポール・サルトル（Jean-Paul Sartre, 1905-1980）。「実存は本質に先立つ」という言葉で知られる彼の思想は、戦後の世界に強烈なインパクトを与え、現代思想の大きな潮流となりました。本記事では、彼の生涯、独自の哲学、そして後世に与えた影響について深く掘り下げます。

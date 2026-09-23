@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:58+09:00
 categories: ["biography"]
 tags: ["stephen-covey", "history"]
 image: "eyecatch.jpg"
+slug: "biography-stephen-covey"
 ---
 
 Si l'on devait citer l'une des personnes ayant eu la plus grande influence sur les affaires et le développement personnel modernes, le nom du Dr Stephen R. Covey serait sans aucun doute mentionné. Son livre « Les 7 Habitudes de ceux qui réalisent tout ce qu'ils entreprennent (The 7 Habits of Highly Effective People) » s'est vendu à des dizaines de millions d'exemplaires dans le monde entier, et il est lu par beaucoup non seulement comme un livre de business, mais aussi comme un « guide de vie ». Dans cet article, nous explorerons en profondeur la vie du Dr Covey, la philosophie qui la sous-tend et l'impact incommensurable qu'il a laissé à la postérité.

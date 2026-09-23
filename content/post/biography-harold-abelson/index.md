@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["harold-abelson", "history"]
 image: "eyecatch.jpg"
+slug: "biography-harold-abelson"
 ---
 
 コンピュータサイエンスの歴史において、技術そのものと同じくらい「それをどう教え、どう共有するか」に多大な影響を与えた人物がいます。マサチューセッツ工科大学（MIT）の教授であり、プログラミング教育とフリーソフトウェア運動の中心的な役割を担ってきたハロルド・エイブルソン（Harold Abelson）、通称「ハル・エイブルソン」です。

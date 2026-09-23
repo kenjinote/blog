@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["alfred-nobel", "history"]
 image: "eyecatch.jpg"
+slug: "biography-alfred-nobel"
 ---
 
 Alfred Nobel acumuló una gran fortuna gracias a la invención de la dinamita y estableció el Premio Nobel con su legado. Su vida encarnó las luces y sombras del desarrollo científico y tecnológico. En este artículo profundizamos en su extraordinario talento como inventor, su agonía al ser llamado el "mercader de la muerte" y su deseo de paz confiado al futuro.

@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["walt-disney", "history"]
 image: "eyecatch.jpg"
+slug: "biography-walt-disney"
 ---
 
 Walt Disney is a "creator of dreams" representative of the 20th century, a figure who transcends the boundaries of a mere animator or film producer. While his name is now a globally recognized brand, behind it lay countless setbacks and the indomitable spirit to overcome them. In this article, we delve into his life and philosophy, exploring how he elevated the immature field of animation into an art form and established the theme park as a new form of entertainment.

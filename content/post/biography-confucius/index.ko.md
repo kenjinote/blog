@@ -4,6 +4,7 @@ date: "2026-09-23T19:53:32+09:00"
 categories: ["biography"]
 tags: ["confucius", "history"]
 image: "eyecatch.jpg"
+slug: "biography-confucius"
 ---
 
 역사상 가장 큰 영향력을 가진 인플루언서는 누구일까요? 현대라면 스티브 잡스나 일론 머스크를 떠올릴지도 모르지만, 2500년 이상 전에 동아시아 전체를 휩쓸고 지금도 그 사상이 이어지고 있는 인물이 있습니다. 바로 '공자'입니다.

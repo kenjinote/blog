@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["friedrich-nietzsche", "history"]
 image: "eyecatch.jpg"
+slug: "biography-friedrich-nietzsche"
 ---
 
 안녕하세요. 이번에는 19세기 철학계에 거대한 운석처럼 충돌하여 현대 사상에 헤아릴 수 없는 영향을 미친 철학자 프리드리히 니체(Friedrich Nietzsche)의 생애와 그 사상에 대해 깊이 파헤쳐 보겠습니다.

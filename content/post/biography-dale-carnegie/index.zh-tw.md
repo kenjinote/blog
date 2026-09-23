@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:58+09:00
 categories: ["biography"]
 tags: ["dale-carnegie", "history"]
 image: "eyecatch.jpg"
+slug: "biography-dale-carnegie"
 ---
 
 對於現代商務人士與科技業界的領袖們，至今仍持續產生巨大影響的自我啟發金字塔。那就是《人性的弱點（How to Win Friends and Influence People）》與《人性的優點（How to Stop Worrying and Start Living）》等名著。這些作品的作者戴爾·卡內基（Dale Carnegie, 1888–1955），究竟是如何將人際關係的原則體系化，進而打動全世界人們的心的呢？本篇文章將從他充滿波折的一生，深入探討其哲學的精髓，以及傳承至現代的遺產。

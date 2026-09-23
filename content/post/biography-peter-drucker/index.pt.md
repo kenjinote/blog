@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["peter-drucker", "history"]
 image: "eyecatch.jpg"
+slug: "biography-peter-drucker"
 ---
 
 Conhecido como o "pai da gestão moderna", Peter F. Drucker exerceu um impacto profundo não apenas nos negócios, mas também nas áreas da sociologia e da ciência política. Os inúmeros insights e a filosofia que ele deixou continuam tão relevantes hoje como sempre, servindo como um guia para executivos e líderes em todo o mundo. Neste artigo, vamos aprofundar em sua vida notável e na filosofia de gestão que ele estabeleceu.

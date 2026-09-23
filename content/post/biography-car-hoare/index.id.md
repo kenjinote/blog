@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["car-hoare", "history"]
 image: "eyecatch.jpg"
+slug: "biography-car-hoare"
 ---
 
 Sir Charles Antony Richard Hoare (biasa dikenal sebagai Tony Hoare, 1934–2026) adalah seorang ilmuwan komputer hebat yang meletakkan dasar bagi rekayasa perangkat lunak modern dan bahasa pemrograman. Pencapaiannya, yang ditinggalkan setelah ia meninggal pada bulan Maret 2026 pada usia 92 tahun, menghidupkan setiap sistem yang kita gunakan sehari-hari. Dalam artikel ini, kita mendalami kehidupannya, filosofi uniknya, dan dampaknya yang tak terukur pada generasi mendatang.

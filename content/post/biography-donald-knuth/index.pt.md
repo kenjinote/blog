@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["donald-knuth", "history"]
 image: "eyecatch.jpg"
+slug: "biography-donald-knuth"
 ---
 
 No mundo da ciência da computação, provavelmente não há ninguém que não conheça o nome Donald E. Knuth. Conhecido como o "pai da análise de algoritmos", ele é uma grande figura que elevou a programação de uma mera técnica ao reino da "arte". Este artigo aprofunda-se em sua vida, sua filosofia única e o impacto imensurável que ele teve nas gerações futuras.

@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["warren-buffett", "history"]
 image: "eyecatch.jpg"
+slug: "biography-warren-buffett"
 ---
 
 세계에서 가장 성공한 투자자로 알려진 워런 버핏(Warren Buffett). 「오마하의 현인」이라는 별명을 가진 그는 단순한 거대한 부를 이룩한 억만장자라는 틀에 얽매이지 않고, 투자 철학, 윤리관, 그리고 자선 활동에 있어서 전 세계 사람들에게 막대한 영향을 계속 주고 있습니다. 이 글에서는 그가 어떻게 투자의 신이 되었는지, 그의 생애와 독자적인 투자 철학, 그리고 후세에 남긴 것들에 대해 깊이 파헤쳐 보겠습니다.

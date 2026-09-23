@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["jean-jacques-rousseau", "history"]
 image: "eyecatch.jpg"
+slug: "biography-jean-jacques-rousseau"
 ---
 
 在18世纪的欧洲，当以理性至上为特征的启蒙思想盛行时，有一个人却反其道而行之，高呼“回归自然”。他就是让-雅克·卢梭（Jean-Jacques Rousseau，1712年 - 1778年）。他的思想对法国大革命产生了决定性的影响，并进一步奠定了现代教育学和浪漫主义文学的基础。在本文中，我们将深入探讨这位在孤独与流浪中不断探寻真理的卢梭的生平，以及他那至今仍在回响的深邃哲学。

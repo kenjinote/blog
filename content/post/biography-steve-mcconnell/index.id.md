@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["steve-mcconnell", "history"]
 image: "eyecatch.jpg"
+slug: "biography-steve-mcconnell"
 ---
 
 Siapa pun yang terlibat dalam pengembangan perangkat lunak kemungkinan besar pernah menemukan buku tebal dan luar biasa berjudul *Code Complete*. Penulisnya, Steve McConnell, adalah sosok yang telah mendedikasikan hidupnya untuk menertibkan tugas pemrograman yang kacau dan membangun "Rekayasa Perangkat Lunak" (Software Engineering) dalam arti yang sebenarnya. Artikel ini menggali lebih dalam tentang kehidupannya, filosofi uniknya, dan pengaruh besarnya yang terus berlanjut di kancah pengembangan modern.

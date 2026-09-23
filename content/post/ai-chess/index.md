@@ -4,6 +4,7 @@ date: 2026-09-23T04:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["ai", "gaming"]
 tags: ["Chess", "Deep Blue", "Artificial Intelligence"]
+slug: "ai-chess"
 ---
 
 # ボードゲームとAI: チェスのルールと戦略パターン、ディープブルーから現在

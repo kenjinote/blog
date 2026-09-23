@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["bill-gates", "history"]
 image: "eyecatch.jpg"
+slug: "biography-bill-gates"
 ---
 
 Hoje, computadores existem em nossas mesas e em nossos bolsos como algo natural. Bill Gates (William Henry Gates III) é o maior contribuidor que popularizou este conceito de "computador pessoal (PC)" em todo o mundo e criou a enorme indústria de software. Mais do que apenas um tecnólogo, ele foi um empresário notável que mais tarde se transformou no maior filantropo do mundo. A história de sua vida pode ser considerada a própria história do desenvolvimento da sociedade moderna.

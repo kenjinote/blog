@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["mahatma-gandhi", "history"]
 image: "eyecatch.jpg"
+slug: "biography-mahatma-gandhi"
 ---
 
 # Apôtre de la paix Mahatma Gandhi : Comment la désobéissance civile non violente a changé le monde

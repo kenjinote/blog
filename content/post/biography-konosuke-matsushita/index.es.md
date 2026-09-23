@@ -4,6 +4,7 @@ date: "2026-09-23T20:59:56+09:00"
 categories: ["biography"]
 tags: ["konosuke-matsushita", "history"]
 image: "eyecatch.jpg"
+slug: "biography-konosuke-matsushita"
 ---
 
 Konosuke Matsushita, aclamado como el "Dios de la Gestión" en la historia industrial de Japón, sigue influyendo en muchos profesionales de los negocios en la actualidad. Como fundador de Panasonic (anteriormente Matsushita Electric Industrial), es conocido por sus singulares filosofías de gestión, como la "Filosofía del Agua del Grifo" y "Reunir la sabiduría colectiva". Este artículo profundiza en su trayectoria, desde una infancia marcada por la pobreza y la enfermedad hasta la construcción de una corporación mundial, y el apasionado legado que dejó a las generaciones posteriores.

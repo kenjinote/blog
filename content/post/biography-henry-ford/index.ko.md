@@ -4,6 +4,7 @@ date: "2026-09-23T20:59:56+09:00"
 categories: ["biography"]
 tags: ["henry-ford", "history"]
 image: "eyecatch.jpg"
+slug: "biography-henry-ford"
 ---
 
 헨리 포드(Henry Ford, 1863-1947)는 단순한 자동차 제조 회사의 창업자를 넘어, 20세기의 산업 구조와 사람들의 라이프스타일을 근본적으로 변화시킨 '자동차 왕'으로 역사에 이름을 남겼습니다. 그의 가장 큰 업적은 자동차를 발명한 것이 아니라, "자동차를 소수 부유층의 사치품에서 대중의 일상적인 교통수단으로 바꾼 것"에 있습니다.

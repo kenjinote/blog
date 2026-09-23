@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["donald-knuth", "history"]
 image: "eyecatch.jpg"
+slug: "biography-donald-knuth"
 ---
 
 コンピュータ科学の世界において、ドナルド・クヌース（Donald E. Knuth）の名を知らない者はいないでしょう。彼は「アルゴリズム解析の父」として知られ、プログラミングを単なる技術から「芸術（アート）」の域へと昇華させた偉大な人物です。本記事では、彼の生涯、独自の哲学、そして後世に与えた計り知れない影響について深く掘り下げていきます。

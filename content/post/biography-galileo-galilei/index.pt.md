@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["galileo-galilei", "history"]
 image: "eyecatch.jpg"
+slug: "biography-galileo-galilei"
 ---
 
 Galileu Galilei (1564 - 1642) foi um físico, astrônomo e filósofo italiano, aclamado como o "Pai da Ciência Moderna". Sua maior contribuição não se limitou a novas descobertas, mas esteve na transformação fundamental do próprio "método" pelo qual a humanidade entende o mundo natural. O positivismo baseado em dados observacionais e a descrição da natureza usando a matemática tornaram-se a base sólida da revolução científica subsequente.

@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["dennis-ritchie", "history"]
 image: "eyecatch.jpg"
+slug: "biography-dennis-ritchie"
 ---
 
 Dennis MacAlistair Ritchie (9 de septiembre de 1941 - 12 de octubre de 2011) fue una de las figuras más importantes e influyentes de la informática moderna. Aunque rara vez recibió los llamativos reflectores de Steve Jobs o Bill Gates, el legado que dejó es la base de toda la tecnología que utilizamos hoy en día. El "lenguaje C" y el sistema operativo "UNIX", en cuyo desarrollo estuvo profundamente involucrado, laten en cada rincón de nuestra sociedad digital moderna, desde servidores de Internet hasta teléfonos inteligentes, supercomputadoras e incluso electrodomésticos.

@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["harold-abelson", "history"]
 image: "eyecatch.jpg"
+slug: "biography-harold-abelson"
 ---
 
 컴퓨터 과학의 역사에서 기술 그 자체만큼이나 '그것을 어떻게 가르치고 어떻게 공유할 것인가'에 지대한 영향을 미친 인물이 있습니다. 매사추세츠 공과대학교(MIT)의 교수이자 프로그래밍 교육 및 자유 소프트웨어 운동의 중심적인 역할을 해온 해럴드 에이블슨(Harold Abelson), 일명 '할 에이블슨'입니다.

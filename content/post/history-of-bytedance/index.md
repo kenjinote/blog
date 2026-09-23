@@ -6,6 +6,7 @@ image: "eyecatch.jpg"
 draft: false
 categories: ['History', 'business']
 tags: ['ByteDance', 'TikTok', 'Tech History']
+slug: "history-of-bytedance"
 ---
 
 ## 1. はじめに：世界を塗り替えたユニコーン企業

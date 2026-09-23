@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["jean-paul-sartre", "history"]
 image: "eyecatch.jpg"
+slug: "biography-jean-paul-sartre"
 ---
 
 让-保罗·萨特（Jean-Paul Sartre, 1905-1980）是20世纪法国的代表性哲学家，同时作为小说家、剧作家和评论家也留下了深远的足迹。他的思想以“存在先于本质”这一名言而闻名，给战后世界带来了强烈的冲击，并成为现代思想的一大潮流。本文将深入探讨他的生平、独特的哲学以及对后世产生的影响。

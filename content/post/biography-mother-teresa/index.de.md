@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:04+09:00
 categories: ["biography"]
 tags: ["mother-teresa", "history"]
 image: "eyecatch.jpg"
+slug: "biography-mother-teresa"
 ---
 
 Mutter Teresa (1910 - 1997) war eine herausragende Humanitäre des 20. Jahrhunderts und eine katholische Nonne, die ihr Leben den "Ärmsten der Armen" widmete. Ihre Lebensweise und Philosophie beeinflussen weiterhin Menschen auf der ganzen Welt und überschreiten religiöse Grenzen. In diesem Artikel befassen wir uns intensiv mit ihrem bewegten Leben, den unerschütterlichen Überzeugungen in ihrem Inneren und dem großen Erbe, das sie zukünftigen Generationen hinterlassen hat.

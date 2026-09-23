@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:32+09:00
 categories: ["biography"]
 tags: ["hippocrates", "history"]
 image: "eyecatch.jpg"
+slug: "biography-hippocrates"
 ---
 
 Di Yunani Kuno, kedokteran telah lama dikaitkan dengan doa kepada para dewa, takhayul, dan sihir. Di era ketika penyakit dianggap sebagai "hukuman dewa" atau "perbuatan roh jahat", ada seorang tokoh yang membalikkan akal sehat ini dari akarnya dan mengangkat kedokteran menjadi disiplin ilmu yang ilmiah dan rasional. Dialah Hippocrates, yang dikenal sebagai "Bapak Kedokteran". Artikel ini akan menggali lebih dalam tentang kehidupannya, filosofi medisnya yang inovatif, dan pengaruhnya yang sangat besar yang terus membentuk inti etika medis hingga saat ini.

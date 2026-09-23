@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["otto-von-bismarck", "history"]
 image: "eyecatch.jpg"
+slug: "biography-otto-von-bismarck"
 ---
 
 Otto von Bismarck (1815–1898), yang dikenal dengan julukan "Kanselir Besi", adalah seorang politisi Prusia dan Kekaisaran Jerman, serta seorang realis (praktisi Realpolitik) terkemuka yang memimpin diplomasi Eropa pada paruh kedua abad ke-19. Kehidupan, pemikiran, dan dampaknya pada generasi mendatang, dengan menyatukan negara-negara Jerman yang terpecah melalui kekuatan militer dan diplomasi yang terampil untuk membangun Kekaisaran Jerman yang kuat, terus memberikan pelajaran penting bagi politik internasional kontemporer. Artikel ini menelusuri jejaknya, dari daerah pedesaan Prusia hingga tumbuh menjadi raksasa yang menggerakkan sejarah dunia.

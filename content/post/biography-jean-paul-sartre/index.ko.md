@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["jean-paul-sartre", "history"]
 image: "eyecatch.jpg"
+slug: "biography-jean-paul-sartre"
 ---
 
 20세기 프랑스를 대표하는 철학자이자 소설가, 극작가, 평론가로서도 지대한 족적을 남긴 장 폴 사르트르(Jean-Paul Sartre, 1905-1980). "실존은 본질에 앞선다"는 말로 알려진 그의 사상은 전후 세계에 강렬한 임팩트를 주며 현대 사상의 큰 조류가 되었습니다. 본 기사에서는 그의 생애, 독자적인 철학, 그리고 후세에 미친 영향에 대해 깊이 파헤쳐 봅니다.

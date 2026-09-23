@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["michelangelo", "history"]
 image: "eyecatch.jpg"
+slug: "biography-michelangelo"
 ---
 
 Michelangelo Buonarroti (1475–1564), widely celebrated alongside Leonardo da Vinci and Raphael as one of the three titans of the High Renaissance, left an indelible mark on Western art history as a sculptor, painter, architect, and poet. This article explores his remarkable life, his enduring legacy, the creation of his greatest masterpieces, and the unique artistic philosophy that guided his visionary work.

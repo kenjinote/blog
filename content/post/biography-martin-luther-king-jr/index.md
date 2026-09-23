@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["martin-luther-king-jr", "history"]
 image: "eyecatch.jpg"
+slug: "biography-martin-luther-king-jr"
 ---
 
 マーティン・ルーサー・キング・ジュニア（Martin Luther King Jr.、1929年1月15日 - 1968年4月4日）は、アメリカ合衆国のプロテスタントバプテスト派の牧師であり、アフリカ系アメリカ人公民権運動の最も著名な指導者です。彼の「非暴力直接行動」という哲学は、アメリカ社会の人種隔離政策を打ち破る原動力となり、現代の数多くの人権運動に多大な影響を与え続けています。

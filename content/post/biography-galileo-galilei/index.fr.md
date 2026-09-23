@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["galileo-galilei", "history"]
 image: "eyecatch.jpg"
+slug: "biography-galileo-galilei"
 ---
 
 Galilée (1564 - 1642) est un physicien, astronome et philosophe italien, souvent qualifié de "père de la science moderne". Son plus grand accomplissement ne réside pas seulement dans ses nouvelles découvertes, mais dans le fait d'avoir fondamentalement bouleversé la "méthode" même par laquelle l'humanité comprend le monde naturel. Le positivisme basé sur des données d'observation et la description de la nature à l'aide des mathématiques ont jeté les bases solides de la révolution scientifique qui a suivi.

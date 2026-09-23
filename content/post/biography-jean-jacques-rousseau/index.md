@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["jean-jacques-rousseau", "history"]
 image: "eyecatch.jpg"
+slug: "biography-jean-jacques-rousseau"
 ---
 
 18世紀のヨーロッパにおいて、理性を至上とする啓蒙思想が花開く中、その流れに異を唱え「自然に帰れ」と叫んだ一人の男がいました。それがジャン＝ジャック・ルソー（Jean-Jacques Rousseau, 1712年 - 1778年）です。彼の思想は、フランス革命に決定的な影響を与え、さらには近代の教育学やロマン主義文学の礎を築きました。本記事では、孤独と放浪のなかに真理を探求し続けたルソーの生涯と、現代にも通じるその深遠な哲学について紐解いていきます。

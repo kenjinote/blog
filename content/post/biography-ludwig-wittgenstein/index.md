@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["ludwig-wittgenstein", "history"]
 image: "eyecatch.jpg"
+slug: "biography-ludwig-wittgenstein"
 ---
 
 ルートヴィヒ・ウィトゲンシュタイン（Ludwig Wittgenstein, 1889–1951）は、20世紀における最も重要で影響力のある哲学者の一人です。彼の哲学は、言語と論理の限界を追求した前期と、日常言語の使用に焦点を当てた後期に大別されます。一人の哲学者が生涯のうちに、自らの過去の理論を根本から覆し、二つの全く異なる哲学大系を打ち立てたことは、思想史においても極めて稀な出来事です。

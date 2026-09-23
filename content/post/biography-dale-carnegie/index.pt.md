@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:58+09:00
 categories: ["biography"]
 tags: ["dale-carnegie", "history"]
 image: "eyecatch.jpg"
+slug: "biography-dale-carnegie"
 ---
 
 Um marco do autodesenvolvimento que continua a ter um impacto profundo nos profissionais de negócios modernos e líderes da indústria de tecnologia até hoje. Estes são livros clássicos como "Como Fazer Amigos e Influenciar Pessoas" e "Como Evitar Preocupações e Começar a Viver". Como o seu criador, Dale Carnegie (1888–1955), conseguiu sistematizar os princípios das relações humanas e emocionar pessoas em todo o mundo? Neste artigo, vamos mergulhar profundamente em sua vida turbulenta, na essência de sua filosofia e no legado que é transmitido até os dias de hoje.

@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["martin-luther-king-jr", "history"]
 image: "eyecatch.jpg"
+slug: "biography-martin-luther-king-jr"
 ---
 
 Martin Luther King Jr. (January 15, 1929 - April 4, 1968) was an American Protestant Baptist minister and the most prominent leader of the African American civil rights movement. His philosophy of "nonviolent direct action" served as the driving force to break down racial segregation policies in American society, continuing to profoundly influence numerous human rights movements today.

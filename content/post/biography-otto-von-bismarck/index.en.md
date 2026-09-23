@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["otto-von-bismarck", "history"]
 image: "eyecatch.jpg"
+slug: "biography-otto-von-bismarck"
 ---
 
 Otto von Bismarck (1815–1898), known as the "Iron Chancellor," was a Prussian and German statesman and an exceptional realist who drove European diplomacy in the late 19th century. His life, philosophy, and legacy of uniting fragmented German states through military force and adroit diplomacy to build a powerful German Empire continue to offer crucial lessons in modern international politics. This article traces his footsteps from a rural Prussian backwater to a colossus who moved world history.

@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["georg-wilhelm-friedrich-hegel", "history"]
 image: "eyecatch.jpg"
+slug: "biography-georg-wilhelm-friedrich-hegel"
 ---
 
 Dalam sejarah filsafat Barat, pemikir yang mencapai puncak idealisme Jerman abad ke-19, dimulai dengan Immanuel Kant, adalah Georg Wilhelm Friedrich Hegel (1770–1831). Sistem pemikirannya yang hebat dan megah, yang berpusat pada "Dialektika" dan "Roh Absolut", memberikan pengaruh yang sangat luas tidak hanya pada zamannya, tetapi juga pada Karl Marx, eksistensialisme, dan bahkan pada ilmu politik dan sejarah modern hingga saat ini. Dalam artikel ini, kita akan menelusuri kehidupan Hegel dan menggali lebih dalam esensi filsafatnya serta dampaknya pada generasi berikutnya.

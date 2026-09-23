@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:04+09:00
 categories: ["biography"]
 tags: ["mother-teresa", "history"]
 image: "eyecatch.jpg"
+slug: "biography-mother-teresa"
 ---
 
 德蕾莎修女（1910年 - 1997年）是20世紀最具代表性的人道救援家，也是一位將一生奉獻給「窮人中的窮人」的天主教修女。她的生活方式與哲學跨越了宗教的界線，持續影響著世界各地的人們。本篇文章將深入探討她充滿波折的一生、根植於內心的堅定信念，以及留給後世的偉大遺產。

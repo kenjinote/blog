@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["peter-drucker", "history"]
 image: "eyecatch.jpg"
+slug: "biography-peter-drucker"
 ---
 
 Surnommé le « père du management moderne », Peter F. Drucker a exercé une influence considérable non seulement dans le domaine des affaires, mais aussi en sociologie et en sciences politiques. Les nombreuses idées et philosophies qu'il a laissées n'ont rien perdu de leur pertinence aujourd'hui et continuent de guider les dirigeants et les leaders du monde entier. Dans cet article, nous plongeons dans sa vie extraordinaire et dans la philosophie du management qu'il a établie.

@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["guido-van-rossum", "history"]
 image: "eyecatch.jpg"
+slug: "biography-guido-van-rossum"
 ---
 
 "Python" is one of the most popular programming languages in the world. Its creator is the Dutch programmer Guido van Rossum. The language he built is now indispensable in every field, including AI, data science, and web development. In this article, we delve deep into the life he led, the philosophy behind his design of Python, and the profound impact he has had on subsequent technology.

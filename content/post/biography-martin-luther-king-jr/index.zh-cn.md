@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["martin-luther-king-jr", "history"]
 image: "eyecatch.jpg"
+slug: "biography-martin-luther-king-jr"
 ---
 
 马丁·路德·金（Martin Luther King Jr.，1929年1月15日 - 1968年4月4日）是美国新教浸信会牧师，也是非裔美国人民权运动最著名的领袖。他的“非暴力直接行动”哲学成为打破美国社会种族隔离政策的驱动力，并继续对当今众多人权运动产生深远影响。

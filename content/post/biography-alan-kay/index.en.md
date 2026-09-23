@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["alan-kay", "history"]
 image: "eyecatch.jpg"
+slug: "biography-alan-kay"
 ---
 
 Alan Kay is an American computer scientist often referred to as the "father of the personal computer," and a genius visionary who has had a profound impact on modern computing. His famous quote, "The best way to predict the future is to invent it," continues to inspire many entrepreneurs and engineers today.

@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["galileo-galilei", "history"]
 image: "eyecatch.jpg"
+slug: "biography-galileo-galilei"
 ---
 
 Galileo Galilei (1564 - 1642) es un físico, astrónomo y filósofo italiano conocido como el "padre de la ciencia moderna". Su mayor logro no se limita simplemente a nuevos descubrimientos, sino que transformó fundamentalmente el "método" mismo mediante el cual la humanidad comprende el mundo natural. El positivismo basado en datos de observación y la descripción de la naturaleza mediante las matemáticas se convirtieron en la base sólida de la revolución científica que siguió.

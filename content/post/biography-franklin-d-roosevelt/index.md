@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["franklin-d-roosevelt", "history"]
 image: "eyecatch.jpg"
+slug: "biography-franklin-d-roosevelt"
 ---
 
 フランクリン・デラノ・ルーズベルト（Franklin Delano Roosevelt、通称FDR）は、アメリカ合衆国の第32代大統領であり、20世紀の歴史において最も影響力のある指導者の一人です。大恐慌と第二次世界大戦という、アメリカ合衆国が直面した未曾有の危機において国を導き、歴代で唯一、4選を果たした大統領でもあります。彼の生涯、政治哲学、そして現代にまで続くその影響について深く掘り下げてみましょう。

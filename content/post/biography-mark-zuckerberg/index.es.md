@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["mark-zuckerberg", "history"]
 image: "eyecatch.jpg"
+slug: "biography-mark-zuckerberg"
 ---
 
 ## De hacker solitario a creador de conexiones

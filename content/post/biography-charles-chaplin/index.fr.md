@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["charles-chaplin", "history"]
 image: "eyecatch.jpg"
+slug: "biography-charles-chaplin"
 ---
 
 Charles Spencer Chaplin (16 avril 1889 - 25 décembre 1977) est un acteur, réalisateur, humoriste, scénariste et compositeur britannique. Surnommé le « Roi de la comédie », il est largement reconnu comme l'une des figures les plus importantes et influentes de l'histoire du cinéma. Son personnage de « Charlot » (The Tramp), avec sa silhouette emblématique - chapeau melon, petite moustache, pantalon baggy et canne en bambou - continue d'être aimé par les gens du monde entier. Cet article explore la vie tumultueuse de Chaplin, la profonde philosophie ancrée dans ses œuvres et l'impact qu'il a laissé sur les générations futures.

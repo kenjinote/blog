@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["ludwig-wittgenstein", "history"]
 image: "eyecatch.jpg"
+slug: "biography-ludwig-wittgenstein"
 ---
 
 Ludwig Wittgenstein (1889–1951) ist einer der wichtigsten und einflussreichsten Philosophen des 20. Jahrhunderts. Seine Philosophie wird grob in eine frühe Phase, in der er die Grenzen von Sprache und Logik erforschte, und eine späte Phase, die sich auf den Gebrauch der Alltagssprache konzentrierte, unterteilt. Dass ein einzelner Philosoph im Laufe seines Lebens seine eigene frühere Theorie von Grund auf umstößt und zwei völlig unterschiedliche philosophische Systeme begründet, ist selbst in der Ideengeschichte ein äußerst seltenes Ereignis.

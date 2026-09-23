@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["marie-curie", "history"]
 image: "eyecatch.jpg"
+slug: "biography-marie-curie"
 ---
 
 In the history of science, one of the people who walked the most brilliant and grueling paths is Marie Curie (Madame Curie). She is the first woman to win a Nobel Prize and the only person in history to win Nobel Prizes in two different scientific fields: physics and chemistry. Her life is colored by a pure passion that thirsted for knowledge and a deep love for the future of humanity. In this article, we delve deeply into the life of Marie Curie, the philosophy she held, and her immense influence that continues to this day.

@@ -4,6 +4,7 @@ date: "2026-09-23T19:53:32+09:00"
 categories: ["biography"]
 tags: ["confucius", "history"]
 image: "eyecatch.jpg"
+slug: "biography-confucius"
 ---
 
 歴史上、最も影響力を持ったインフルエンサーとは誰でしょうか？現代で言えばスティーブ・ジョブズやイーロン・マスクを思い浮かべるかもしれませんが、2500年以上前に東アジア全体を席巻し、今なおその思想が受け継がれている人物がいます。それが「孔子」です。

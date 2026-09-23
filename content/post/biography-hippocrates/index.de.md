@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:32+09:00
 categories: ["biography"]
 tags: ["hippocrates", "history"]
 image: "eyecatch.jpg"
+slug: "biography-hippocrates"
 ---
 
 Im antiken Griechenland war die Medizin lange Zeit tief mit Gebeten an die Götter, Aberglauben und Magie verbunden. In einer Zeit, in der Krankheiten als "Strafe der Götter" oder "Werk böser Geister" galten, gab es eine Person, die diesen gesunden Menschenverstand grundlegend umstieß und die Medizin zu einer wissenschaftlichen und rationalen Disziplin erhob. Das ist Hippokrates, der als "Vater der Medizin" bezeichnet wird. In diesem Artikel werden wir tief in sein Leben, seine bahnbrechende medizinische Philosophie und seinen enormen Einfluss eintauchen, der bis heute den Kern der medizinischen Ethik bildet.

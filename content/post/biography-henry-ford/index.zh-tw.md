@@ -4,6 +4,7 @@ date: "2026-09-23T20:59:56+09:00"
 categories: ["biography"]
 tags: ["henry-ford", "history"]
 image: "eyecatch.jpg"
+slug: "biography-henry-ford"
 ---
 
 亨利·福特（Henry Ford, 1863-1947）超越了單純的汽車製造商創始人的範疇，作為從根本上改變了20世紀產業結構和人們生活方式的「汽車大王」被載入史冊。他最大的功績並非發明了汽車，而是「將汽車從少數富人的奢侈品變成了大眾日常的代步工具」。

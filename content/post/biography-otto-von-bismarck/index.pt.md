@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["otto-von-bismarck", "history"]
 image: "eyecatch.jpg"
+slug: "biography-otto-von-bismarck"
 ---
 
 Otto von Bismarck (1815–1898) é um político prussiano e do Império Alemão conhecido pelo apelido de "Chanceler de Ferro", e um realista notável (praticante da Realpolitik) que liderou a diplomacia europeia na segunda metade do século XIX. Sua vida, seus pensamentos e seu impacto nas gerações futuras, ao unificar os estados alemães fragmentados por meio da força militar e de uma diplomacia hábil, criando o poderoso Império Alemão, continuam a fornecer lições cruciais para a política internacional contemporânea. Este artigo traça seus passos, desde uma região rural da Prússia até se tornar um gigante que moveu a história mundial.

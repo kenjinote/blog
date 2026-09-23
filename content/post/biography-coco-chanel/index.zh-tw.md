@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["coco-chanel", "history"]
 image: "eyecatch.jpg"
+slug: "biography-coco-chanel"
 ---
 
 # 可可·香奈兒：解放女性的革命者的生平與哲學

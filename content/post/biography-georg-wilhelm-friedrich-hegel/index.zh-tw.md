@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["georg-wilhelm-friedrich-hegel", "history"]
 image: "eyecatch.jpg"
+slug: "biography-georg-wilhelm-friedrich-hegel"
 ---
 
 在西方哲學史中，從伊曼努爾·康德開始，將19世紀德國唯心主義推向巔峰的思想家，正是格奧爾格·威廉·弗里德里希·黑格爾（1770年–1831年）。他那艱澀而宏大的「辯證法」與「絕對精神」的思想體系，不僅影響了同時代的人，更對卡爾·馬克思、存在主義，甚至現代的政治學與歷史學產生了極其廣泛的影響。本文將追溯黑格爾的生平，並深入探討其哲學的核心及對後世的影響。

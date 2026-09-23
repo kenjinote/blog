@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:58+09:00
 categories: ["biography"]
 tags: ["dale-carnegie", "history"]
 image: "eyecatch.jpg"
+slug: "biography-dale-carnegie"
 ---
 
 Un chef-d'œuvre du développement personnel qui continue d'avoir une influence massive sur les professionnels et les leaders de l'industrie technologique d'aujourd'hui. Ce sont des classiques comme "Comment se faire des amis" (How to Win Friends and Influence People) et "Triomphez de vos soucis : vivez que diable !" (How to Stop Worrying and Start Living). Comment leur créateur, Dale Carnegie (1888-1955), a-il systématisé les principes des relations humaines et réussi à toucher le cœur des gens du monde entier ? Dans cet article, nous plongerons profondément dans sa vie tumultueuse, l'essence de sa philosophie et l'héritage transmis à l'ère moderne.

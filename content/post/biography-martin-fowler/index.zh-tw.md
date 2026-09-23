@@ -4,6 +4,7 @@ date: 2026-09-23T19:00:00+09:00
 categories: ["biography"]
 tags: ["martin-fowler", "history"]
 image: "eyecatch.jpg"
+slug: "biography-martin-fowler"
 ---
 
 在現代軟體開發中，我們每天都會聽到「敏捷」、「重構」和「微服務」等詞彙。正是馬丁·福勒（Martin Fowler）將這些概念廣泛推廣到整個行業，並從根本上改變了軟體工程的運作方式。本文將深入探討這位程式設計師、作家和思想家的一生，他根深蒂固的哲學，以及他對後世的深遠影響。

@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["ludwig-wittgenstein", "history"]
 image: "eyecatch.jpg"
+slug: "biography-ludwig-wittgenstein"
 ---
 
 路德維希·維根斯坦 (Ludwig Wittgenstein, 1889–1951) 是20世紀最重要且最具影響力的哲學家之一。他的哲學大致可以分為探討語言與邏輯極限的前期，以及專注於日常語言使用的後期。一位哲學家在其一生中，從根本上推翻自己過去的理論，建立起兩個截然不同的哲學體系，這在思想史上是極為罕見的。

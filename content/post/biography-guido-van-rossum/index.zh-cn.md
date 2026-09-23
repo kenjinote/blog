@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["guido-van-rossum", "history"]
 image: "eyecatch.jpg"
+slug: "biography-guido-van-rossum"
 ---
 
 "Python"是世界上最受欢迎的编程语言之一。众所周知，它的创始人是来自荷兰的程序员吉多·范罗苏姆（Guido van Rossum）。他所创造的语言如今在人工智能、数据科学、Web开发等各个领域都已成为不可或缺的存在。本文将深入探讨他度过了怎样的一生，是基于怎样的哲学设计了Python，以及对后世的技术产生了多么深远的影响。

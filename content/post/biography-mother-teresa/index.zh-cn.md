@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:04+09:00
 categories: ["biography"]
 tags: ["mother-teresa", "history"]
 image: "eyecatch.jpg"
+slug: "biography-mother-teresa"
 ---
 
 特蕾莎修女（1910年 - 1997年）是20世纪最具代表性的人道主义者，也是将一生奉献给“穷人中最穷的人”的天主教修女。她的生活方式和哲学跨越了宗教的界限，持续影响着世界各地的人们。本文将深入探讨她充满波折的一生、根深蒂固的坚定信念，以及留给后世的伟大遗产。

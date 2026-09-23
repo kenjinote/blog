@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["nikolai-lobachevsky", "history"]
 image: "eyecatch.jpg"
+slug: "biography-nikolai-lobachevsky"
 ---
 
 # Nikolái Lobachevski: El "Copérnico de la Geometría" que abrió la puerta a la geometría no euclidiana

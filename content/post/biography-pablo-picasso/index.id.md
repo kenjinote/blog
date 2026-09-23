@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["pablo-picasso", "history"]
 image: "eyecatch.jpg"
+slug: "biography-pablo-picasso"
 ---
 
 Pablo Picasso (1881–1973) bukan sekadar pelukis, melainkan salah satu "seniman terbesar abad ke-20" yang merevolusi setiap bidang seni visual, termasuk patung, seni grafis, keramik, dan bahkan desain panggung. Dia meninggalkan sekitar 150.000 karya dan dikenal bukan hanya karena produktivitasnya yang luar biasa, tetapi juga karena terus-menerus mengubah gaya artistiknya sepanjang hidupnya. Artikel ini mengeksplorasi kehidupan Picasso yang luar biasa, filosofi unik yang ia bawa ke dunia, dan pengaruhnya pada generasi-generasi selanjutnya.

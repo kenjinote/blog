@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["alfred-nobel", "history"]
 image: "eyecatch.jpg"
+slug: "biography-alfred-nobel"
 ---
 
 Альфред Нобель накопил огромное состояние благодаря изобретению динамита и учредил Нобелевскую премию, оставив после себя великое наследие.

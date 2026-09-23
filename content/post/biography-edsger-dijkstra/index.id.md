@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["edsger-dijkstra", "history"]
 image: "eyecatch.jpg"
+slug: "biography-edsger-dijkstra"
 ---
 
 Edsger W. Dijkstra (1930 - 2002) adalah salah satu intelektual terbesar yang membangun fondasi rekayasa perangkat lunak dan ilmu komputer modern. Berbagai algoritma dan paradigma pemrograman yang ia tinggalkan hidup di dasar semua teknologi yang kita gunakan sehari-hari saat ini. Dalam artikel ini, kita akan menggali lebih dalam tentang kehidupan Dijkstra, filosofinya yang unik, dan pengaruhnya yang tak terukur pada generasi-generasi berikutnya.

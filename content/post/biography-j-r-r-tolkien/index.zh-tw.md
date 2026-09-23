@@ -4,6 +4,7 @@ date: "2026-09-23T20:51:46+09:00"
 categories: ["biography"]
 tags: ["j-r-r-tolkien", "history"]
 image: "eyecatch.jpg"
+slug: "biography-j-r-r-tolkien"
 ---
 
 # J.R.R. 托爾金：現代奇幻之父的足跡與神話的創造

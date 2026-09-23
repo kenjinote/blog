@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["charles-chaplin", "history"]
 image: "eyecatch.jpg"
+slug: "biography-charles-chaplin"
 ---
 
 Charles Spencer Chaplin (16 de abril de 1889 - 25 de diciembre de 1977) fue un actor de cine, director, comediante, guionista y compositor de origen británico. Conocido como el "Rey de la Comedia", es ampliamente reconocido como una de las figuras más importantes e influyentes en la historia del cine. Su personaje de "El vagabundo (The Tramp)", con su icónica imagen de sombrero bombín, pequeño bigote, pantalones holgados y un bastón de bambú, sigue siendo amado por personas de todo el mundo. En este artículo, exploraremos la turbulenta vida de Chaplin, la profunda filosofía de sus obras y el impacto que dejó para la posteridad.

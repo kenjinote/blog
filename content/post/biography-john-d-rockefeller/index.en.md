@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["john-d-rockefeller", "history"]
 image: "eyecatch.jpg"
+slug: "biography-john-d-rockefeller"
 ---
 
 From the late 19th century to the early 20th century, there was a figure who had a massive impact not only on the United States but on the global economy. His name was John Davison Rockefeller. He is widely known as the "Oil King" who founded the Standard Oil Company and amassed an unprecedented fortune through overwhelming monopoly, often said to be the highest in history. However, his true greatness lay not just in accumulating wealth, but in establishing the system of modern capitalism and systematizing unprecedented philanthropy that continues to influence future generations. In this article, we will delve deep into his turbulent life, unique business philosophy, and the great legacy he left to modern society.

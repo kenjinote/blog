@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["nikolai-lobachevsky", "history"]
 image: "eyecatch.jpg"
+slug: "biography-nikolai-lobachevsky"
 ---
 
 # ニコライ・ロバチェフスキー：非ユークリッド幾何学の扉を開いた「幾何学のコペルニクス」

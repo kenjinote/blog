@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["dennis-ritchie", "history"]
 image: "eyecatch.jpg"
+slug: "biography-dennis-ritchie"
 ---
 
 데니스 매캘리스터 리치(Dennis MacAlistair Ritchie, 1941년 9월 9일 - 2011년 10월 12일)는 현대 컴퓨터 과학에서 가장 중요하고 가장 영향력 있는 인물 중 한 명입니다. 스티브 잡스나 빌 게이츠처럼 화려한 조명을 받는 일은 적었지만, 그가 남긴 유산은 우리가 오늘날 사용하는 모든 기술의 기반이 되고 있습니다. 그가 개발에 깊이 관여한 'C언어'와 'UNIX' 운영 체제는 인터넷 서버에서 스마트폰, 슈퍼컴퓨터, 나아가 가전제품에 이르기까지 현대 디지털 사회의 모든 곳에서 맥박처럼 살아 숨쉬고 있습니다.

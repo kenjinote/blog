@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["john-d-rockefeller", "history"]
 image: "eyecatch.jpg"
+slug: "biography-john-d-rockefeller"
 ---
 
 Il y a une figure qui a eu un impact énorme non seulement sur les États-Unis mais aussi sur l'économie mondiale de la fin du 19e siècle au début du 20e siècle. Son nom est John Davison Rockefeller. Largement connu sous le nom de "roi du pétrole", il a fondé la Standard Oil Company et a bâti l'une des plus grandes fortunes de l'histoire grâce à un monopole écrasant. Cependant, sa véritable grandeur ne réside pas simplement dans l'accumulation de richesses, mais dans l'établissement du système capitaliste moderne et la systématisation d'une philanthropie sans précédent qui continue d'influencer les générations futures. Cet article se penche sur sa vie mouvementée, sa philosophie d'entreprise unique et le grand héritage qu'il a laissé à la société moderne.

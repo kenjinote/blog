@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:58+09:00
 categories: ["biography"]
 tags: ["dale-carnegie", "history"]
 image: "eyecatch.jpg"
+slug: "biography-dale-carnegie"
 ---
 
 Ein monumentales Werk der Selbsthilfe, das bis heute einen enormen Einfluss auf moderne Geschäftsleute und Führungskräfte in der Tech-Branche hat. Das sind Meisterwerke wie „Wie man Freunde gewinnt“ (How to Win Friends and Influence People) und „Sorge dich nicht – lebe!“ (How to Stop Worrying and Start Living). Wie ist es ihrem Schöpfer Dale Carnegie (1888–1955) gelungen, die Prinzipien menschlicher Beziehungen zu systematisieren und die Herzen der Menschen auf der ganzen Welt zu bewegen? In diesem Artikel werden wir tief in sein turbulentes Leben, die Essenz seiner Philosophie und sein bis heute fortbestehendes Vermächtnis eintauchen.

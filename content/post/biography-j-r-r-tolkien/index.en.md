@@ -4,6 +4,7 @@ date: "2026-09-23T20:51:46+09:00"
 categories: ["biography"]
 tags: ["j-r-r-tolkien", "history"]
 image: "eyecatch.jpg"
+slug: "biography-j-r-r-tolkien"
 ---
 
 # J.R.R. Tolkien: The Trajectory of the Father of Modern Fantasy and the Creation of a Myth

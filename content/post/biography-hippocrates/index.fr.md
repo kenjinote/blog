@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:32+09:00
 categories: ["biography"]
 tags: ["hippocrates", "history"]
 image: "eyecatch.jpg"
+slug: "biography-hippocrates"
 ---
 
 Dans la Grèce antique, la médecine a longtemps été profondément liée aux prières adressées aux dieux, à la superstition et à la magie. À une époque où la maladie était considérée comme une « punition divine » ou l'« œuvre des mauvais esprits », un homme a fondamentalement bouleversé cette croyance, élevant la médecine au rang de discipline scientifique et rationnelle. Il s'agit d'Hippocrate (Hippocrates), souvent appelé le « Père de la médecine ». Dans cet article, nous explorerons en profondeur sa vie, sa philosophie médicale révolutionnaire, et son influence immense qui continue de constituer le fondement de l'éthique médicale jusqu'à aujourd'hui.

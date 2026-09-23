@@ -4,6 +4,7 @@ date: "2026-09-23T19:53:32+09:00"
 categories: ["biography"]
 tags: ["confucius", "history"]
 image: "eyecatch.jpg"
+slug: "biography-confucius"
 ---
 
 Who is the most influential influencer in history? In the modern era, you might think of Steve Jobs or Elon Musk, but there is a figure who swept across East Asia over 2,500 years ago and whose ideas are still passed down today. That is "Confucius."

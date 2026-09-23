@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:56+09:00
 categories: ["biography"]
 tags: ["soichiro-honda", "history"]
 image: "eyecatch.jpg"
+slug: "biography-soichiro-honda"
 ---
 
 本田宗一郎，他是日本制造业的象征，也是一手缔造了世界级企业“本田（Honda）”的男人。他的一生充满了对技术无尽的探求心，以及以“梦想”为原动力的不屈精神。本文将深入探讨他从一名普通修理工到创造世界级HONDA的一生、其独特的哲学，以及流传至今的遗产。

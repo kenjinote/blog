@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["michelangelo", "history"]
 image: "eyecatch.jpg"
+slug: "biography-michelangelo"
 ---
 
 Michelangelo Buonarroti (1475–1564) gilt neben Leonardo da Vinci und Raffael als einer der drei großen Meister der Hochrenaissance. Als Bildhauer, Maler, Baumeister und Dichter hinterließ er unauslöschliche Spuren in der westlichen Kunstgeschichte. Dieser Artikel beleuchtet seinen Lebensweg, seine philosophische Herangehensweise an die Kunst sowie seinen nachhaltigen Einfluss auf die Nachwelt und zeigt, wie seine weltberühmten Meisterwerke entstanden sind.

@@ -4,6 +4,7 @@ date: "2026-09-23T19:46:03+09:00"
 categories: ["biography"]
 tags: ["john-f-kennedy", "history"]
 image: "eyecatch.jpg"
+slug: "biography-john-f-kennedy"
 ---
 
 約翰·費茲傑羅·甘迺迪（JFK）作為美國第35任總統，是在冷戰這一歷史轉折點領導國家的魅力型領袖。雖然他的任期只有短暫的1036天，但他的哲學和行動至今仍不斷激勵著世界各地的人們。本文將深入探討他的生平、核心哲學以及對現代的深遠影響。

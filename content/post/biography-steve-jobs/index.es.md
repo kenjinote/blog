@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["steve-jobs", "history"]
 image: "eyecatch.jpg"
+slug: "biography-steve-jobs"
 ---
 
 En la sociedad digital actual, el hecho de que interactuemos con teléfonos inteligentes como si fuera lo más natural del mundo, escribamos textos con hermosas fuentes y llevemos nuestra música en el bolsillo se lo debemos, sin exagerar, a un emprendedor carismático. Steve Jobs, cofundador de Apple y el hombre que se mantuvo en la intersección entre la tecnología y el arte. Su vida estuvo llena de un desarrollo tan dramático que la palabra "tumultuosa" se queda corta, y de una filosofía inquebrantable.

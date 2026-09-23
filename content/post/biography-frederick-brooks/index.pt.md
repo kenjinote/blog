@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["frederick-brooks", "history"]
 image: "eyecatch.jpg"
+slug: "biography-frederick-brooks"
 ---
 
 Qualquer pessoa envolvida no desenvolvimento de software provavelmente já ouviu a regra: "Adicionar mão de obra a um projeto de software atrasado o atrasa ainda mais". Isso é conhecido como a "Lei de Brooks" e é uma das máximas mais famosas na engenharia de software. O homem que propôs esta lei foi Frederick P. Brooks, Jr., um gigante da ciência da computação e um gerente de projetos lendário.

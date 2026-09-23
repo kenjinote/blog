@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["oscar-wilde", "history"]
 image: "eyecatch.jpg"
+slug: "biography-oscar-wilde"
 ---
 
 在19世纪末的英国文坛上，奥斯卡·王尔德无疑是绽放得最为绚烂、却也坠落得最深沉的作家。他所留下的“为艺术而艺术”的唯美主义哲学，直至今日仍持续影响着无数的创作者与艺术家。本文将深入探讨他极具戏剧性的一生、主要代表作以及他对后世的深远影响。

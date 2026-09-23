@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["abraham-lincoln", "history"]
 image: "eyecatch.jpg"
+slug: "biography-abraham-lincoln"
 ---
 
 アメリカ合衆国第16代大統領、エイブラハム・リンカーン（Abraham Lincoln）。「奴隷解放の父」として広く知られ、建国以来最大の危機であった南北戦争を乗り越え、国家の分裂を防いだ人物です。「人民の、人民による、人民のための政治」という言葉は、民主主義の根幹をなす理念として、今日まで語り継がれています。

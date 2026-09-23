@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["alan-kay", "history"]
 image: "eyecatch.jpg"
+slug: "biography-alan-kay"
 ---
 
 Alan Kay ist ein amerikanischer Informatiker, der oft als "Vater des Personal Computers" bezeichnet wird, und ein genialer Visionär, der das moderne Computing maßgeblich beeinflusst hat. Sein berühmtes Zitat "Der beste Weg, die Zukunft vorauszusagen, ist, sie zu erfinden (The best way to predict the future is to invent it.)" inspiriert bis heute viele Unternehmer und Ingenieure.

@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:56+09:00
 categories: ["biography"]
 tags: ["soichiro-honda", "history"]
 image: "eyecatch.jpg"
+slug: "biography-soichiro-honda"
 ---
 
 Soichiro Honda, o homem que simbolizou a manufatura japonesa e construiu a empresa global "Honda" em uma única geração. Sua vida é marcada por uma busca incessante pela tecnologia e por um espírito indomável impulsionado por "sonhos". Neste artigo, mergulharemos profundamente na vida dele, que passou de um simples mecânico ao criador da HONDA mundial, em sua filosofia única e no legado que perdura até os dias de hoje.

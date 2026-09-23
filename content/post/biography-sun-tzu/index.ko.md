@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:32+09:00
 categories: ["biography"]
 tags: ["sun-tzu", "history"]
 image: "eyecatch.jpg"
+slug: "biography-sun-tzu"
 ---
 
 ## 머리말

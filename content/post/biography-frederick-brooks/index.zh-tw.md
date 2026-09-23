@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["frederick-brooks", "history"]
 image: "eyecatch.jpg"
+slug: "biography-frederick-brooks"
 ---
 
 只要是從事軟體開發的人，想必都曾聽過這樣一條定律：「向進度落後的軟體專案增加人手，只會讓專案更加落後。」這被稱為「布魯克斯定律」，是軟體工程中最著名的格言之一。提出這一定律的人，正是計算機科學巨星、傳奇的專案經理——弗雷德里克·P·布魯克斯（Frederick P. Brooks, Jr.）。

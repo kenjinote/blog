@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:32+09:00
 categories: ["biography"]
 tags: ["laozi", "history"]
 image: "eyecatch.jpg"
+slug: "biography-laozi"
 ---
 
 Laozi (Lao-Tse), antiguo pensador chino considerado el fundador del taoísmo, legó a la humanidad el *Tao Te King* (*Dào Dé Jīng*), una obra que, más de dos mil años después, sigue leyéndose en todo el mundo e inspirando a incontables personas. Mientras que Confucio, padre del confucianismo, predicaba una moral humana basada en los «ritos» y la «benevolencia», Laozi defendía seguir el «Tao» (el Camino), el principio cósmico fundamental de todas las cosas, y vivir en armonía con él a través del «wu wei» o la acción sin artificio.

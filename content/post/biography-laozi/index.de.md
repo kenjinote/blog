@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:32+09:00
 categories: ["biography"]
 tags: ["laozi", "history"]
 image: "eyecatch.jpg"
+slug: "biography-laozi"
 ---
 
 Laozi (Laotse) gilt als einer der bedeutendsten Denker des antiken Chinas und als Begründer des philosophischen und religiösen Daoismus (Taoismus). Sein Werk, das *Daodejing* (Tao Te King), wird auch nach mehr als zweitausend Jahren weltweit gelesen und inspiriert bis heute unzählige Menschen. Während Konfuzius, der Begründer des Konfuzianismus, von Menschen geschaffene moralische Tugenden wie »Li« (Sittlichkeit/Ritus) und »Ren« (Menschlichkeit/Güte) lehrte, predigte Laozi das Leben im Einklang mit dem »Dao« (dem Weg) – dem Urgrund allen Seins – und formulierte das Prinzip des »Wu Wei« (Handeln durch Nichthandeln bzw. natürliches Geschehenlassen).

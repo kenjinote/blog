@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["franklin-d-roosevelt", "history"]
 image: "eyecatch.jpg"
+slug: "biography-franklin-d-roosevelt"
 ---
 
 Franklin Delano Roosevelt (FDR) was the 32nd President of the United States and one of the most influential leaders in 20th-century history. He guided the nation through the unprecedented crises of the Great Depression and World War II, and is the only president in US history to be elected to four terms. Let's delve deeply into his life, political philosophy, and his enduring impact on the modern world.

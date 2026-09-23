@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["galileo-galilei", "history"]
 image: "eyecatch.jpg"
+slug: "biography-galileo-galilei"
 ---
 
 Galileo Galilei (1564 - 1642) war ein italienischer Physiker, Astronom und Philosoph, der als „Vater der modernen Wissenschaft“ bezeichnet wird. Sein größter Verdienst bestand nicht nur in neuen Entdeckungen, sondern darin, die "Methode", wie die Menschheit die Natur versteht, grundlegend zu revolutionieren. Der auf Beobachtungsdaten basierende Positivismus und die mathematische Naturbeschreibung bildeten ein festes Fundament für die darauffolgende wissenschaftliche Revolution.

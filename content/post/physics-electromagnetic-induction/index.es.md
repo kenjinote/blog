@@ -5,6 +5,7 @@ date: 2026-09-23T04:01:41+09:00
 image: "eyecatch.jpg"
 categories: ["physics", "technology"]
 tags: ["electromagnetic-induction", "motor", "ev"]
+slug: "physics-electromagnetic-induction"
 ---
 # Física: Inducción electromagnética y el mecanismo del motor
 

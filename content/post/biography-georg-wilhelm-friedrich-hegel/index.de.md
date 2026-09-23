@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["georg-wilhelm-friedrich-hegel", "history"]
 image: "eyecatch.jpg"
+slug: "biography-georg-wilhelm-friedrich-hegel"
 ---
 
 In der Geschichte der abendländischen Philosophie ist der Denker, der den Höhepunkt des deutschen Idealismus des 19. Jahrhunderts erreichte, beginnend mit Immanuel Kant, Georg Wilhelm Friedrich Hegel (1770–1831). Sein schwer verständliches und grandioses Gedankensystem, das sich auf die „Dialektik“ und den „absoluten Geist“ konzentriert, übte nicht nur zu seiner Zeit einen enormen Einfluss aus, sondern auch auf Karl Marx, den Existenzialismus und bis in die moderne Politik- und Geschichtswissenschaft hinein. In diesem Artikel werden wir Hegels Leben nachzeichnen und tief in die Essenz seiner Philosophie und deren Auswirkungen auf spätere Generationen eintauchen.

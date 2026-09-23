@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["julius-caesar", "history"]
 image: "eyecatch.jpg"
+slug: "biography-julius-caesar"
 ---
 
 "A sorte está lançada", "Vim, vi, venci", "Até tu, Brutus?" — Mesmo aqueles que não estão familiarizados com a história mundial provavelmente já ouviram as palavras que ele deixou para trás. Caio Júlio César (100 a.C. - 44 a.C.), o herói que apareceu como um cometa no final da República Romana e determinou a forma do mundo europeu subsequente. Ele não era apenas um militar e político, mas também escritor, advogado e até reformador do calendário.

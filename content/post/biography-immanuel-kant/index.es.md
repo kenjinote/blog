@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["immanuel-kant", "history"]
 image: "eyecatch.jpg"
+slug: "biography-immanuel-kant"
 ---
 
 ## Introducción: Un enorme cambio de paradigma filosófico nacido de una vida precisa como un reloj

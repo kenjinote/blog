@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["warren-buffett", "history"]
 image: "eyecatch.jpg"
+slug: "biography-warren-buffett"
 ---
 
 Warren Buffett, bekannt als der erfolgreichste Investor der Welt. Er trägt den Spitznamen "Das Orakel von Omaha" und ist weit mehr als nur ein Milliardär, der ein riesiges Vermögen angehäuft hat; er übt mit seiner Anlagephilosophie, seinem ethischen Kompass und seinen philanthropischen Aktivitäten weiterhin einen massiven Einfluss auf Menschen auf der ganzen Welt aus. In diesem Artikel werden wir tief in sein Leben, seine einzigartige Anlagephilosophie und das Erbe eintauchen, das er künftigen Generationen hinterlässt, um herauszufinden, wie er zum Gott des Investierens wurde.

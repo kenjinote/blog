@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["mahatma-gandhi", "history"]
 image: "eyecatch.jpg"
+slug: "biography-mahatma-gandhi"
 ---
 
 # Rasul Perdamaian Mahatma Gandhi: Bagaimana Pembangkangan Sipil Tanpa Kekerasan Mengubah Dunia

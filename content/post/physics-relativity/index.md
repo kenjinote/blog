@@ -6,6 +6,7 @@ image: "eyecatch.jpg"
 draft: false
 categories: ['Physics', 'Science']
 tags: ['Relativity', 'Physics', 'Einstein']
+slug: "physics-relativity"
 ---
 
 ## はじめに

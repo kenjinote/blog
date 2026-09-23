@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["andrew-carnegie", "history"]
 image: "eyecatch.jpg"
+slug: "biography-andrew-carnegie"
 ---
 
 O "Rei do Aço" Andrew Carnegie (1835-1919), representou a era da Revolução Industrial americana. Sua vida é contada como um exemplo clássico do "Sonho Americano", no qual um imigrante pobre da Escócia acumulou enorme riqueza, ao mesmo tempo em que possuía a faceta de um filantropo que defendeu o "Evangelho da Riqueza" e devolveu todos os seus bens à sociedade. Neste artigo, exploraremos profundamente sua vida dramática, sua filosofia que foi transmitida à era moderna e sua influência nas gerações posteriores.

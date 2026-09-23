@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["galileo-galilei", "history"]
 image: "eyecatch.jpg"
+slug: "biography-galileo-galilei"
 ---
 
 Galileo Galilei (1564 - 1642) adalah seorang fisikawan, astronom, dan filsuf Italia yang dijuluki sebagai "Bapak Ilmu Pengetahuan Modern". Pencapaian terbesarnya bukan sekadar penemuan-penemuan baru, melainkan telah merombak secara mendasar "metode" yang digunakan umat manusia untuk memahami alam semesta. Positivisme berdasarkan data pengamatan, dan deskripsi alam menggunakan matematika, menjadi landasan yang kokoh bagi revolusi ilmiah yang menyusul kemudian.

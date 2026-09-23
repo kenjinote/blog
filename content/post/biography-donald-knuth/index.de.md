@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["donald-knuth", "history"]
 image: "eyecatch.jpg"
+slug: "biography-donald-knuth"
 ---
 
 In der Welt der Informatik gibt es wohl niemanden, der den Namen Donald E. Knuth nicht kennt. Bekannt als "Vater der Algorithmenanalyse", ist er eine herausragende Persönlichkeit, die das Programmieren von einer bloßen Technik in den Bereich der "Kunst" erhoben hat. Dieser Artikel taucht tief in sein Leben, seine einzigartige Philosophie und seinen unermesslichen Einfluss auf zukünftige Generationen ein.

@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:47+09:00
 categories: ["biography"]
 tags: ["neil-armstrong", "history"]
 image: "eyecatch.jpg"
+slug: "biography-neil-armstrong"
 ---
 
 "이것은 한 인간에게는 작은 한 걸음이지만, 인류에게는 위대한 도약이다 (That's one small step for man, one giant leap for mankind)."

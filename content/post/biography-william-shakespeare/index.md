@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["william-shakespeare", "history"]
 image: "eyecatch.jpg"
+slug: "biography-william-shakespeare"
 ---
 
 ウィリアム・シェイクスピア（William Shakespeare, 1564年 - 1616年）は、史上最も偉大な劇作家、詩人であり、「イギリスの国民的詩人」と称されています。彼の作品は、時代や文化の壁を越え、400年以上経った今でも世界中で上演され、読み継がれています。人間の普遍的な感情や葛藤を鮮やかに描き出した彼の筆致は、現代の文学や芸術、さらには私たちの日常の言語にまで深く根付いています。

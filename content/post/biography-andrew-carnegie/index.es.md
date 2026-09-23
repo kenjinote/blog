@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["andrew-carnegie", "history"]
 image: "eyecatch.jpg"
+slug: "biography-andrew-carnegie"
 ---
 
 Andrew Carnegie (1835-1919), el "Rey del Acero", representa la era de la Revolución Industrial estadounidense. Su vida a menudo se narra como el epítome del "Sueño Americano", donde un inmigrante pobre de Escocia amasó una inmensa fortuna. Al mismo tiempo, tiene la faceta de un filántropo que abogó por "El Evangelio de la Riqueza" (The Gospel of Wealth) y devolvió toda su riqueza a la sociedad. Este artículo profundiza en su dramática vida, la filosofía que se hereda hasta nuestros días y su impacto en las generaciones futuras.

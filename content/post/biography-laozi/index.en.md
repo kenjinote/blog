@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:32+09:00
 categories: ["biography"]
 tags: ["laozi", "history"]
 image: "eyecatch.jpg"
+slug: "biography-laozi"
 ---
 
 Laozi is revered as an ancient Chinese philosopher and the founder of Daoism. His enduring work, the *Daodejing* (Tao Te Ching), continues to be read across the globe more than two millennia later, inspiring countless minds. While Confucius, the father of Confucianism, advocated for artificial moral virtues such as *Li* (propriety/ritual) and *Ren* (benevolence), Laozi espoused following the *Dao* (the Way)—the primordial order and essence of the universe—and living in harmony with spontaneity and effortless action, known as *Wu Wei* (non-action).

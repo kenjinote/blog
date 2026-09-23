@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["martin-luther-king-jr", "history"]
 image: "eyecatch.jpg"
+slug: "biography-martin-luther-king-jr"
 ---
 
 마틴 루터 킹 주니어(Martin Luther King Jr., 1929년 1월 15일 - 1968년 4월 4일)는 미국의 개신교 침례교 목사이자 아프리카계 미국인 민권 운동의 가장 저명한 지도자입니다. 그의 "비폭력 직접 행동"이라는 철학은 미국 사회의 인종 차별 정책을 타파하는 원동력이 되었으며, 오늘날 수많은 인권 운동에 계속해서 지대한 영향을 미치고 있습니다.

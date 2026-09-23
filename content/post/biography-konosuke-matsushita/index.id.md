@@ -4,6 +4,7 @@ date: "2026-09-23T20:59:56+09:00"
 categories: ["biography"]
 tags: ["konosuke-matsushita", "history"]
 image: "eyecatch.jpg"
+slug: "biography-konosuke-matsushita"
 ---
 
 Konosuke Matsushita, yang dikenal sebagai "Dewa Manajemen" dalam sejarah industri Jepang, terus mempengaruhi banyak profesional bisnis hingga hari ini. Sebagai pendiri Panasonic (sebelumnya Matsushita Electric Industrial), ia terkenal dengan filosofi manajemennya yang unik seperti "Filosofi Air Keran" dan "Mengumpulkan Kebijaksanaan Kolektif." Artikel ini menggali perjalanannya dari masa kecil yang diwarnai dengan kemiskinan dan penyakit hingga membangun sebuah perusahaan global, dan warisan penuh semangat yang ia tinggalkan untuk generasi mendatang.

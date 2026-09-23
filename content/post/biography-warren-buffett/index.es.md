@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["warren-buffett", "history"]
 image: "eyecatch.jpg"
+slug: "biography-warren-buffett"
 ---
 
 Conocido como el inversor más exitoso del mundo, Warren Buffett, apodado el «Oráculo de Omaha», no se limita a ser un mero multimillonario que ha amasado una inmensa fortuna. Continúa ejerciendo una profunda influencia en personas de todo el mundo a través de su filosofía de inversión, su ética y su filantropía. En este artículo, profundizaremos en su vida, su singular filosofía de inversión y el legado que deja a las generaciones futuras, analizando cómo llegó a convertirse en el dios de las inversiones.

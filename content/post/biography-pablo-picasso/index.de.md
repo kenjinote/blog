@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["pablo-picasso", "history"]
 image: "eyecatch.jpg"
+slug: "biography-pablo-picasso"
 ---
 
 Pablo Picasso (1881–1973) war nicht nur ein Maler, sondern einer der „größten Künstler des 20. Jahrhunderts“, der jeden Bereich der bildenden Kunst revolutionierte, einschließlich Skulptur, Druckgrafik, Keramik und sogar Bühnenbild. Er hinterließ etwa 150.000 Werke und ist nicht nur für seine überwältigende Produktivität bekannt, sondern auch dafür, dass er seinen künstlerischen Stil sein ganzes Leben lang kontinuierlich veränderte. Dieser Artikel untersucht Picassos außergewöhnliches Leben, die einzigartige Philosophie, die er in die Welt brachte, und seinen Einfluss auf spätere Generationen.

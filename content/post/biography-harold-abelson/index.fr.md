@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["harold-abelson", "history"]
 image: "eyecatch.jpg"
+slug: "biography-harold-abelson"
 ---
 
 Dans l'histoire de l'informatique, certaines personnes ont eu autant d'impact sur « comment l'enseigner et la partager » que sur la technologie elle-même. Harold Abelson, souvent appelé « Hal Abelson », professeur au Massachusetts Institute of Technology (MIT) et figure centrale de l'enseignement de la programmation et du mouvement des logiciels libres, est l'une de ces personnes.

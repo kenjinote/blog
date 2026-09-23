@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["eiichi-shibusawa", "history"]
 image: "eyecatch.jpg"
+slug: "biography-eiichi-shibusawa"
 ---
 
 涩泽荣一是日本近代化进程中发挥了最重要作用的人物之一。他被誉为“日本资本主义之父”，一生参与创办和培育了约500家企业，同时还致力于支持约600项社会公共事业和教育机构。他不仅限于单纯追求利润，而是在“论语与算盘”的理念下，追求道德与经济的和谐，其一生和哲学为现代商业人士提供了许多启示。

@@ -5,6 +5,7 @@ date: 2026-09-23T04:01:41+09:00
 image: "eyecatch.jpg"
 categories: ["space", "technology"]
 tags: ["gps", "relativity", "satellite"]
+slug: "physics-gps"
 ---
 # 우주와 기술: GPS의 원리
 

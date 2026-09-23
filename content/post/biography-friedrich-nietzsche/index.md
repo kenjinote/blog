@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["friedrich-nietzsche", "history"]
 image: "eyecatch.jpg"
+slug: "biography-friedrich-nietzsche"
 ---
 
 こんにちは。今回は、19世紀の哲学界に巨大な隕石のように衝突し、現代思想に計り知れない影響を与えた哲学者、フリードリヒ・ニーチェ（Friedrich Nietzsche）の生涯とその思想について深く掘り下げていきます。

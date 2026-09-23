@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["steve-mcconnell", "history"]
 image: "eyecatch.jpg"
+slug: "biography-steve-mcconnell"
 ---
 
 Cualquiera que esté involucrado en el desarrollo de software probablemente se haya encontrado con el grueso y magistral libro titulado *Code Complete* (Código Completo). Su autor, Steve McConnell, es una figura que ha dedicado su vida a poner orden en la caótica tarea de la programación y establecer la "Ingeniería de Software" (Software Engineering) en su sentido más verdadero. Este artículo profundiza en su vida, su filosofía única y la inmensa influencia que continúa ejerciendo en la escena del desarrollo moderno.

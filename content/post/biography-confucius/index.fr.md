@@ -4,6 +4,7 @@ date: "2026-09-23T19:53:32+09:00"
 categories: ["biography"]
 tags: ["confucius", "history"]
 image: "eyecatch.jpg"
+slug: "biography-confucius"
 ---
 
 Qui est l'influenceur le plus influent de l'histoire ? À l'ère moderne, on pourrait penser à Steve Jobs ou Elon Musk, mais il y a un homme qui a balayé toute l'Asie de l'Est il y a plus de 2500 ans et dont les pensées sont encore transmises aujourd'hui. C'est « Confucius ».

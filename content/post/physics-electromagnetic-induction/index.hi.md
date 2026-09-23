@@ -5,6 +5,7 @@ date: 2026-09-23T04:01:41+09:00
 image: "eyecatch.jpg"
 categories: ["physics", "technology"]
 tags: ["electromagnetic-induction", "motor", "ev"]
+slug: "physics-electromagnetic-induction"
 ---
 # भौतिकी: विद्युत चुम्बकीय प्रेरण और मोटर तंत्र
 

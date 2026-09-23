@@ -5,6 +5,7 @@ date: 2026-09-23T04:01:41+09:00
 image: "eyecatch.jpg"
 categories: ["space", "technology"]
 tags: ["gps", "relativity", "satellite"]
+slug: "physics-gps"
 ---
 
 # 宇宙と技術: GPSの仕組み - 相対性理論と衛星測位システム

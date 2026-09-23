@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:56+09:00
 categories: ["biography"]
 tags: ["soichiro-honda", "history"]
 image: "eyecatch.jpg"
+slug: "biography-soichiro-honda"
 ---
 
 Soichiro Honda, pria yang menjadi simbol manufaktur Jepang dan membangun perusahaan global "Honda" dalam satu generasi. Kehidupannya diwarnai oleh semangat eksplorasi tanpa batas terhadap teknologi dan semangat pantang menyerah yang didorong oleh "mimpi". Dalam artikel ini, kita akan menggali lebih dalam tentang kehidupannya dari seorang mekanik biasa hingga menciptakan HONDA kelas dunia, filosofi uniknya, dan warisan yang diteruskan hingga saat ini.

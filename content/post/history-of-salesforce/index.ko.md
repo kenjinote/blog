@@ -5,6 +5,7 @@ date: 2026-09-23T04:01:41+09:00
 image: "eyecatch.jpg"
 categories: ["business", "technology"]
 tags: ["salesforce", "saas", "history", "cloud"]
+slug: "history-of-salesforce"
 ---
 # 기업사: Salesforce의 역사 - SaaS(클라우드 소프트웨어)의 개척자
 

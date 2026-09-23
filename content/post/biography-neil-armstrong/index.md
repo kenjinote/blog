@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:47+09:00
 categories: ["biography"]
 tags: ["neil-armstrong", "history"]
 image: "eyecatch.jpg"
+slug: "biography-neil-armstrong"
 ---
 
 「これは一人の人間にとっては小さな一歩だが、人類にとっては偉大な飛躍である（That's one small step for man, one giant leap for mankind.）」。

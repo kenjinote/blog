@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["oscar-wilde", "history"]
 image: "eyecatch.jpg"
+slug: "biography-oscar-wilde"
 ---
 
 Dalam dunia sastra Inggris pada akhir abad ke-19, Oscar Wilde adalah seorang penulis yang bersinar lebih gemilang daripada siapa pun, namun juga jatuh ke titik terendah yang paling kelam. Filosofi estetisisme yang ia tinggalkan—"seni demi seni" (*art for art's sake*)—terus memberikan pengaruh bagi banyak kreator dan seniman hingga hari ini. Artikel ini mengupas secara mendalam kehidupan dramatisnya, karya-karyanya, serta pengaruhnya bagi generasi mendatang.

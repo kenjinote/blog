@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["guido-van-rossum", "history"]
 image: "eyecatch.jpg"
+slug: "biography-guido-van-rossum"
 ---
 
 世界で最も人気のあるプログラミング言語の一つである「Python」。その生みの親として知られるのが、オランダ出身のプログラマー、グイド・ヴァン・ロッサム（Guido van Rossum）です。彼が作り上げた言語は、現在AI、データサイエンス、Web開発などあらゆる分野で不可欠な存在となっています。本記事では、彼がどのような人生を歩み、どのような哲学のもとにPythonを設計し、そして後世のテクノロジーにどれほどの影響を与えたのかを深く掘り下げます。

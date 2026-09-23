@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["warren-buffett", "history"]
 image: "eyecatch.jpg"
+slug: "biography-warren-buffett"
 ---
 
 作为世界上最成功的投资者，沃伦·巴菲特（Warren Buffett）以“奥马哈先知”的称号闻名。他不仅仅是一个积累了巨额财富的亿万富翁，他的投资哲学、道德观以及慈善活动都在持续地对世界各地的人们产生深远影响。本文将深入探讨他如何成为投资界的神话、他的生平与独特的投资哲学，以及他留给后世的精神财富。

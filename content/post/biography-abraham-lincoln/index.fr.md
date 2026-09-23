@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["abraham-lincoln", "history"]
 image: "eyecatch.jpg"
+slug: "biography-abraham-lincoln"
 ---
 
 Abraham Lincoln, 16e président des États-Unis. Largement connu comme le « Père de l'émancipation des esclaves », il est l'homme qui a surmonté la guerre de Sécession, la plus grande crise depuis la fondation du pays, et a empêché la division de la nation. L'expression « Le gouvernement du peuple, par le peuple, pour le peuple » a été transmise jusqu'à nos jours comme un idéal constituant le fondement de la démocratie.

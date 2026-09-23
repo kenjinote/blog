@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:04+09:00
 categories: ["biography"]
 tags: ["mother-teresa", "history"]
 image: "eyecatch.jpg"
+slug: "biography-mother-teresa"
 ---
 
 Mother Teresa (1910 - 1997) was a prominent 20th-century humanitarian and a Catholic nun who dedicated her life to the "poorest of the poor." Her way of life and philosophy continue to influence people around the world, transcending religious boundaries. In this article, we delve deeply into her turbulent life, the unwavering beliefs at her core, and the great legacy she left to future generations.

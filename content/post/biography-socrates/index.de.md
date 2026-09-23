@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["socrates", "history"]
 image: "eyecatch.jpg"
+slug: "biography-socrates"
 ---
 
 Sokrates (ca. 470 v. Chr. – 399 v. Chr.), der große Denker, der den Grundstein für die westliche Philosophie legte. Obwohl er selbst nie ein einziges schriftliches Werk hinterließ, wurden seine Gedanken und seine intensive Lebensweise durch die von seinen Schülern wie Platon und Xenophon verfassten Dialoge in die Moderne überliefert. Seine Ansätze wie die „Weisheit der Unwissenheit“ und die „Sokratische Methode“ waren nicht nur ein Streben nach Wissen, sondern eine mächtige Antithese zur universellen menschlichen Frage, wie man ein gutes Leben führt. Dieser Artikel befasst sich eingehend mit dem Leben des Sokrates, der an den Straßenecken des antiken Athen immer wieder Dialoge mit jungen Menschen führte, und mit dem unermesslichen Einfluss, den er auf zukünftige Generationen hatte.

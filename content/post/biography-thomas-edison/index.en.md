@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["thomas-edison", "history"]
 image: "eyecatch.jpg"
+slug: "biography-thomas-edison"
 ---
 
 "Genius is one percent inspiration and ninety-nine percent perspiration." Thomas Alva Edison (1847-1931), who left these words, is one of the most prolific and influential inventors in human history. With over 1,000 patents acquired during his lifetime, the achievements of the man known as the "Wizard of Menlo Park" laid the foundation for modern society's technology. In this article, we delve deeply into Edison's turbulent life, the unwavering philosophy behind it, and his lasting impact on the present day.

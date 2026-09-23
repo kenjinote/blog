@@ -4,6 +4,7 @@ date: "2026-09-23T19:46:03+09:00"
 categories: ["biography"]
 tags: ["john-f-kennedy", "history"]
 image: "eyecatch.jpg"
+slug: "biography-john-f-kennedy"
 ---
 
 John Fitzgerald Kennedy (JFK), Presiden Amerika Serikat ke-35, adalah seorang pemimpin karismatik yang membimbing bangsa melalui titik balik bersejarah Perang Dingin. Meskipun masa jabatannya singkat, hanya 1.036 hari, filosofi dan tindakannya terus menginspirasi orang-orang di seluruh dunia hingga saat ini. Artikel ini menggali lebih dalam kehidupan, filosofi inti, dan dampaknya yang tak terukur hingga saat ini.

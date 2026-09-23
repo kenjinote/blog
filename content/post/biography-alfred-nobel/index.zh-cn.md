@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["alfred-nobel", "history"]
 image: "eyecatch.jpg"
+slug: "biography-alfred-nobel"
 ---
 
 阿尔弗雷德·诺贝尔通过发明炸药积累了巨额财富，并用其遗产创立了诺贝尔奖。他的一生体现了科技发展带来的光与影。

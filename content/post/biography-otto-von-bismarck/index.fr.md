@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["otto-von-bismarck", "history"]
 image: "eyecatch.jpg"
+slug: "biography-otto-von-bismarck"
 ---
 
 Otto von Bismarck (1815-1898), surnommé le « Chancelier de fer », était un homme d'État prussien et allemand, ainsi qu'un réaliste exceptionnel qui a dirigé la diplomatie européenne dans la seconde moitié du XIXe siècle. Il a unifié les États allemands divisés par la force militaire et une diplomatie habile, bâtissant ainsi un puissant Empire allemand. Sa vie, ses pensées et son influence sur les générations ultérieures continuent de fournir des leçons extrêmement importantes dans la politique internationale contemporaine. Cet article retrace son parcours, de la campagne prussienne jusqu'à devenir un leader majeur ayant façonné l'histoire mondiale.

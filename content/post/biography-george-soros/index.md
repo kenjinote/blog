@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["george-soros", "history"]
 image: "eyecatch.jpg"
+slug: "biography-george-soros"
 ---
 
 ジョージ・ソロス。この名前を聞いて、皆さんは何を思い浮かべるでしょうか。「イングランド銀行を潰した男」という異名を持つ伝説的な投資家か、あるいは世界中で民主化支援を行う巨大な慈善家か。さらには、陰謀論の標的として語られる謎多き人物かもしれません。

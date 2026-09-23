@@ -4,6 +4,7 @@ date: 2026-09-23T04:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["ai", "gaming"]
 tags: ["Othello", "Reversi", "Artificial Intelligence"]
+slug: "ai-othello"
 ---
 
 # ボードゲームとAI: オセロのルールと戦略パターン、完全解析への道

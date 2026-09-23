@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["julius-caesar", "history"]
 image: "eyecatch.jpg"
+slug: "biography-julius-caesar"
 ---
 
 „Die Würfel sind gefallen“, „Ich kam, ich sah, ich siegte“, „Auch du, mein Sohn Brutus?“ — Selbst diejenigen, die mit der Weltgeschichte nicht vertraut sind, haben wahrscheinlich die Worte gehört, die er hinterlassen hat. Gaius Julius Caesar (100 v. Chr. - 44 v. Chr.), der Held, der am Ende der Römischen Republik wie ein Komet auftauchte und die Gestalt der nachfolgenden europäischen Welt bestimmte. Er war nicht nur Militär und Politiker, sondern auch Schriftsteller, Anwalt und sogar Kalenderreformer.

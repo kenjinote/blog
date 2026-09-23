@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["napoleon-bonaparte", "history"]
 image: "eyecatch.jpg"
+slug: "biography-napoleon-bonaparte"
 ---
 
 # नेपोलियन बोनापार्ट: क्रांति का पुत्र या तानाशाह?

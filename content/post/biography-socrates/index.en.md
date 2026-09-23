@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["socrates", "history"]
 image: "eyecatch.jpg"
+slug: "biography-socrates"
 ---
 
 Socrates (c. 470 BC – 399 BC) is the great thinker who laid the foundation of Western philosophy. Although he never left a single written work himself, his thoughts and intense way of life have been passed down to the modern era through the dialogues written by his disciples such as Plato and Xenophon. His approaches, such as the "Wisdom of Ignorance" and the "Socratic Method," were not merely a pursuit of knowledge, but a powerful antithesis to the universal human question of how to live a good life. This article delves deeply into the life of Socrates, who repeatedly engaged in dialogues with young people on the street corners of ancient Athens, and the immeasurable influence he had on future generations.

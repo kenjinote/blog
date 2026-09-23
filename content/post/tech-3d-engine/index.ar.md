@@ -4,6 +4,7 @@ date: 2026-09-23T04:01:41+09:00
 image: "eyecatch.jpg"
 categories: ["gaming", "technology"]
 tags: ["3d", "engine", "unreal", "unity", "graphics"]
+slug: "tech-3d-engine"
 ---
 # تقنية الألعاب: تطور محركات الرسومات ثلاثية الأبعاد
 

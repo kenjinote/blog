@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["walt-disney", "history"]
 image: "eyecatch.jpg"
+slug: "biography-walt-disney"
 ---
 
 Walt Disney (Walter Elias Disney) no se limitó a ser un mero animador o productor de cine; es un "creador de sueños" que representa el siglo XX. Su nombre es ahora una marca que todos en el mundo conocen, pero detrás de eso hubo innumerables reveses y un espíritu indomable para superarlos. En este artículo, exploraremos su vida y filosofía sobre cómo elevó la inmadura industria de la animación a la categoría de arte y estableció una nueva forma de entretenimiento con los parques temáticos.

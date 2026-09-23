@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["peter-drucker", "history"]
 image: "eyecatch.jpg"
+slug: "biography-peter-drucker"
 ---
 
 Peter F. Drucker, oft als „Vater des modernen Managements“ bezeichnet, hat nicht nur die Geschäftswelt, sondern auch die Bereiche Soziologie und Politikwissenschaft tiefgreifend geprägt. Die zahlreichen Erkenntnisse und Philosophien, die er hinterlassen hat, haben bis heute nicht an Relevanz verloren und dienen Führungskräften und Managern weltweit weiterhin als Leitstern. In diesem Artikel tauchen wir tief in sein bemerkenswertes Leben und die von ihm begründete Managementphilosophie ein.

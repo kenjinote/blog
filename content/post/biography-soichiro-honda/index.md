@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:56+09:00
 categories: ["biography"]
 tags: ["soichiro-honda", "history"]
 image: "eyecatch.jpg"
+slug: "biography-soichiro-honda"
 ---
 
 日本のモノづくりを象徴し、世界的な企業「ホンダ」を一代で築き上げた男、本田宗一郎。彼の人生は、技術への果てしない探求心と、「夢」を原動力とする不屈の精神に彩られています。本記事では、ただの修理工から世界のHONDAを創り上げた彼の生涯、独自の哲学、そして現代に受け継がれる遺産について深く掘り下げます。

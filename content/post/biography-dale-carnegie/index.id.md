@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:58+09:00
 categories: ["biography"]
 tags: ["dale-carnegie", "history"]
 image: "eyecatch.jpg"
+slug: "biography-dale-carnegie"
 ---
 
 Karya monumental pengembangan diri yang terus memberikan pengaruh besar pada para profesional bisnis dan pemimpin industri teknologi modern hingga saat ini. Itulah buku-buku mahakarya seperti "Bagaimana Mencari Kawan dan Mempengaruhi Orang Lain (How to Win Friends and Influence People)" dan "Bagaimana Berhenti Cemas dan Mulai Hidup (How to Stop Worrying and Start Living)". Bagaimana penciptanya, Dale Carnegie (1888–1955), mampu mensistematisasikan prinsip-prinsip hubungan manusia dan menggerakkan hati orang-orang di seluruh dunia? Dalam artikel ini, kita akan menggali lebih dalam dari kehidupannya yang penuh gejolak, esensi filosofinya, hingga warisan yang diteruskan ke era modern.

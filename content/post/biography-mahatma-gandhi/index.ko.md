@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["mahatma-gandhi", "history"]
 image: "eyecatch.jpg"
+slug: "biography-mahatma-gandhi"
 ---
 
 # 평화의 사도 마하트마 간디: 비폭력 불복종이 바꾼 세상

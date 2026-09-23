@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["alfred-nobel", "history"]
 image: "eyecatch.jpg"
+slug: "biography-alfred-nobel"
 ---
 
 다이너마이트의 발명으로 거만적인 부를 축적하고 그 유산으로 노벨상을 창설한 알프레드 노벨. 그의 생애는 과학 기술의 발전이 가져오는 빛과 그림자를 체현한 것이었습니다.

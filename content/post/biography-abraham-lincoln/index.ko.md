@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["abraham-lincoln", "history"]
 image: "eyecatch.jpg"
+slug: "biography-abraham-lincoln"
 ---
 
 미국 제16대 대통령, 에이브러햄 링컨(Abraham Lincoln). '노예 해방의 아버지'로 널리 알려져 있으며, 건국 이래 최대의 위기였던 남북전쟁을 극복하고 국가의 분열을 막아낸 인물입니다. "국민의, 국민에 의한, 국민을 위한 정치"라는 말은 민주주의의 근간을 이루는 이념으로서 오늘날까지 전해 내려오고 있습니다.

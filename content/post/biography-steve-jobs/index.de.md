@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["steve-jobs", "history"]
 image: "eyecatch.jpg"
+slug: "biography-steve-jobs"
 ---
 
 In der heutigen digitalen Gesellschaft, in der wir wie selbstverständlich unsere Smartphones berühren, Texte in schönen Schriftarten tippen und unsere Musik in der Tasche bei uns tragen, ist es keine Übertreibung zu sagen, dass dies alles einem einzigen charismatischen Unternehmer zu verdanken ist: Steve Jobs – Mitbegründer von Apple und der Mann, der stets an der Schnittstelle von Technologie und Kunst stand. Sein Leben war voller so dramatischer Entwicklungen und unerschütterlicher Philosophien, dass das Wort "bewegt" bei weitem nicht ausreicht, um es zu beschreiben.

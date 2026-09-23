@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["karl-marx", "history"]
 image: "eyecatch.jpg"
+slug: "biography-karl-marx"
 ---
 
 Karl Marx. Que vous vient-il à l'esprit lorsque vous entendez ce nom ? Certains peuvent le considérer comme un grand homme de l'histoire en tant que « père du communisme », tandis que d'autres peuvent le voir comme un « dangereux penseur qui a donné naissance à des États dictatoriaux ». Cependant, si l'on retire le voile de l'idéologie pour réexaminer purement sa pensée, ce qui apparaît est la figure d'un « débogueur de génie qui a analysé plus profondément que quiconque les bugs (contradictions) du système capitaliste ».

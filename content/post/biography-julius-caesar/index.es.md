@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["julius-caesar", "history"]
 image: "eyecatch.jpg"
+slug: "biography-julius-caesar"
 ---
 
 "La suerte está echada", "Vine, vi, vencí", "¿Tú también, Bruto?" — Incluso aquellos que no están familiarizados con la historia mundial probablemente hayan escuchado las palabras que dejó atrás. Cayo Julio César (100 a. C. - 44 a. C.), el héroe que apareció como un cometa a fines de la República Romana y determinó la forma del mundo europeo posterior. No fue solo un militar y político, sino también escritor, abogado e incluso reformador del calendario.

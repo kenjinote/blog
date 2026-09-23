@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["alfred-nobel", "history"]
 image: "eyecatch.jpg"
+slug: "biography-alfred-nobel"
 ---
 
 Alfred Nobel mengumpulkan kekayaan besar melalui penemuan dinamit dan mendirikan Hadiah Nobel dengan warisannya. Kehidupannya mewujudkan cahaya dan bayangan dari perkembangan ilmu pengetahuan dan teknologi.

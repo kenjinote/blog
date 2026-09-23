@@ -4,6 +4,7 @@ date: "2026-09-23T20:59:56+09:00"
 categories: ["biography"]
 tags: ["henry-ford", "history"]
 image: "eyecatch.jpg"
+slug: "biography-henry-ford"
 ---
 
 亨利·福特（Henry Ford, 1863-1947）超越了单纯的汽车制造商创始人的范畴，作为从根本上改变了20世纪产业结构和人们生活方式的“汽车大王”被载入史册。他最大的功绩并非发明了汽车，而是“将汽车从少数富人的奢侈品变成了大众日常的代步工具”。

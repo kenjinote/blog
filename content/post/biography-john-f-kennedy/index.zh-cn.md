@@ -4,6 +4,7 @@ date: "2026-09-23T19:46:03+09:00"
 categories: ["biography"]
 tags: ["john-f-kennedy", "history"]
 image: "eyecatch.jpg"
+slug: "biography-john-f-kennedy"
 ---
 
 约翰·菲茨杰拉德·肯尼迪（JFK）作为美国第35任总统，是在冷战这一历史转折点领导国家的魅力型领袖。虽然他的任期只有短暂的1036天，但他的哲学和行动至今仍不断激励着世界各地的人们。本文将深入探讨他的生平、核心哲学以及对现代的深远影响。

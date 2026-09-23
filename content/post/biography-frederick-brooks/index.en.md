@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["frederick-brooks", "history"]
 image: "eyecatch.jpg"
+slug: "biography-frederick-brooks"
 ---
 
 Anyone involved in software development has likely heard the rule: "Adding manpower to a late software project makes it later." This is known as "Brooks's Law" and is one of the most famous maxims in software engineering. The man who proposed this law was Frederick P. Brooks, Jr., a giant in computer science and a legendary project manager.

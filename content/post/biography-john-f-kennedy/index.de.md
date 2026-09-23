@@ -4,6 +4,7 @@ date: "2026-09-23T19:46:03+09:00"
 categories: ["biography"]
 tags: ["john-f-kennedy", "history"]
 image: "eyecatch.jpg"
+slug: "biography-john-f-kennedy"
 ---
 
 John Fitzgerald Kennedy (JFK), der 35. Präsident der Vereinigten Staaten, war eine charismatische Führungspersönlichkeit, die die Nation durch den historischen Wendepunkt des Kalten Krieges lenkte. Obwohl seine Amtszeit mit nur 1.036 Tagen kurz war, inspirieren seine Philosophie und seine Taten auch heute noch Menschen auf der ganzen Welt. Dieser Artikel befasst sich ausführlich mit seinem Leben, seiner Kernphilosophie und seinem unermesslichen Einfluss bis in die heutige Zeit.

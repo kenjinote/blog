@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["george-soros", "history"]
 image: "eyecatch.jpg"
+slug: "biography-george-soros"
 ---
 
 George Soros. Was kommt Ihnen in den Sinn, wenn Sie diesen Namen hören? Der legendäre Investor, bekannt als "der Mann, der die Bank von England ruinierte", oder der gigantische Philanthrop, der die Demokratisierung auf der ganzen Welt unterstützt? Vielleicht ist er sogar die mysteriöse Figur, über die als Ziel von Verschwörungstheorien gesprochen wird.

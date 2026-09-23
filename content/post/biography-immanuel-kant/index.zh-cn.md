@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["immanuel-kant", "history"]
 image: "eyecatch.jpg"
+slug: "biography-immanuel-kant"
 ---
 
 ## 引言：源于如钟表般精准的人生的哲学巨大范式转变

@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["otto-von-bismarck", "history"]
 image: "eyecatch.jpg"
+slug: "biography-otto-von-bismarck"
 ---
 
 Otto von Bismarck (1815–1898), bekannt als der „Eiserne Kanzler“, war ein Politiker Preußens und des Deutschen Reiches sowie ein herausragender Realist (Praktiker der Realpolitik), der die europäische Diplomatie in der zweiten Hälfte des 19. Jahrhunderts maßgeblich prägte. Sein Leben, seine Gedanken und sein Einfluss auf die Nachwelt, indem er die zersplitterten deutschen Staaten durch militärische Macht und geschickte Diplomatie einte und das mächtige Deutsche Reich schuf, bieten bis heute äußerst wichtige Lehren für die moderne internationale Politik. Dieser Artikel zeichnet seinen Lebensweg nach, von einem ländlichen preußischen Gebiet bis hin zu dem Giganten, der die Weltgeschichte bewegte.

@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["thomas-edison", "history"]
 image: "eyecatch.jpg"
+slug: "biography-thomas-edison"
 ---
 
 « Le génie, c'est 1 % d'inspiration et 99 % de transpiration. » Thomas Alva Edison (1847-1931), qui a laissé ces mots, est l'un des inventeurs les plus prolifiques et les plus influents de l'histoire de l'humanité. Avec plus de 1 000 brevets acquis au cours de sa vie, les réalisations de l'homme connu sous le nom de « Sorcier de Menlo Park » ont jeté les bases de la technologie de la société moderne. Dans cet article, nous plongeons profondément dans la vie turbulente d'Edison, la philosophie inébranlable qui la sous-tend, et son impact durable sur notre époque.

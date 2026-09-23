@@ -5,6 +5,7 @@ date: 2026-09-23T04:01:41+09:00
 image: "eyecatch.jpg"
 categories: ["business", "technology"]
 tags: ["salesforce", "saas", "history", "cloud"]
+slug: "history-of-salesforce"
 ---
 # Sejarah Perusahaan: Sejarah Salesforce - Pelopor SaaS (Perangkat Lunak Cloud)
 

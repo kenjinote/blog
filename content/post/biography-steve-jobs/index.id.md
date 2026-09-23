@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["steve-jobs", "history"]
 image: "eyecatch.jpg"
+slug: "biography-steve-jobs"
 ---
 
 Dalam masyarakat digital modern, tidak berlebihan untuk mengatakan bahwa fakta kita dapat menyentuh ponsel cerdas, mengetik kalimat dengan font yang indah, dan membawa musik di dalam saku sebagai sesuatu yang biasa, adalah berkat seorang pengusaha karismatik. Steve Jobs——salah satu pendiri Apple dan pria yang terus berdiri di persimpangan antara teknologi dan seni. Kehidupannya dipenuhi dengan perkembangan dramatis yang tidak cukup digambarkan dengan kata penuh gejolak, serta filosofi yang teguh.

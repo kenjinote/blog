@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["warren-buffett", "history"]
 image: "eyecatch.jpg"
+slug: "biography-warren-buffett"
 ---
 
 Known as the most successful investor in the world, Warren Buffett. With the nickname "The Oracle of Omaha," he is more than just a billionaire who has amassed immense wealth; he continues to have a profound influence on people all over the world through his investment philosophy, ethical views, and philanthropic activities. In this article, we delve deep into how he became the god of investing, his life, his unique investment philosophy, and his legacy.

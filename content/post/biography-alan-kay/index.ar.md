@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["alan-kay", "history"]
 image: "eyecatch.jpg"
+slug: "biography-alan-kay"
 ---
 
 آلان كاي (Alan Kay) هو عالم حاسوب أمريكي يُعرف أيضًا باسم "أبو الكمبيوتر الشخصي"، وهو صاحب رؤية عبقرية أثر بشكل كبير على الحوسبة الحديثة. مقولته الشهيرة "أفضل طريقة للتنبؤ بالمستقبل هي اختراعه" (The best way to predict the future is to invent it.) لا تزال تلهم العديد من رواد الأعمال والمهندسين حتى يومنا هذا.

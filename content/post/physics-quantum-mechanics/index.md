@@ -6,6 +6,7 @@ image: "eyecatch.jpg"
 draft: false
 categories: ['Physics', 'Science']
 tags: ['Quantum Mechanics', 'Physics']
+slug: "physics-quantum-mechanics"
 ---
 
 ## 1. はじめに：常識を打ち破るミクロの世界

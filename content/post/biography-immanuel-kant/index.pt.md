@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["immanuel-kant", "history"]
 image: "eyecatch.jpg"
+slug: "biography-immanuel-kant"
 ---
 
 ## Introdução: Uma Vida Pontual como um Relógio e a Maior Mudança de Paradigma da Filosofia

@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["george-soros", "history"]
 image: "eyecatch.jpg"
+slug: "biography-george-soros"
 ---
 
 George Soros. Qu'est-ce qui vous vient à l'esprit lorsque vous entendez ce nom ? L'investisseur légendaire surnommé « l'homme qui a fait sauter la Banque d'Angleterre », ou le gigantesque philanthrope qui soutient la démocratisation dans le monde entier ? Ou peut-être encore un personnage mystérieux, cible récurrente des théories du complot.

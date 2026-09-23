@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["friedrich-nietzsche", "history"]
 image: "eyecatch.jpg"
+slug: "biography-friedrich-nietzsche"
 ---
 
 مرحبًا. اليوم، سوف نتعمق في حياة وفكر الفيلسوف فريدريك نيتشه، الذي اصطدم كنيزك ضخم بعالم الفلسفة في القرن التاسع عشر وكان له تأثير لا يقاس على الفكر الحديث.

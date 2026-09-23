@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["alfred-nobel", "history"]
 image: "eyecatch.jpg"
+slug: "biography-alfred-nobel"
 ---
 
 جمع ألفريد نوبل ثروة طائلة من خلال اختراع الديناميت وأسس جائزة نوبل بإرثه. جسدت حياته النور والظل اللذين جلبهما تطور العلوم والتكنولوجيا.

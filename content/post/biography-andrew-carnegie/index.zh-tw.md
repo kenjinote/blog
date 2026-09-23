@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["andrew-carnegie", "history"]
 image: "eyecatch.jpg"
+slug: "biography-andrew-carnegie"
 ---
 
 代表美國工業革命時期的「鋼鐵王」安德魯·卡內基（1835-1919）。他的一生，既被視為來自蘇格蘭的貧苦移民建立巨額財富的「美國夢」典型，同時也是提倡「財富的福音」、將其財產全數回饋社會的慈善家。本篇文章將深入探討他戲劇性的一生、流傳至今的哲學，以及對後世的影響。

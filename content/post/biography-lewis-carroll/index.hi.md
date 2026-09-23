@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:47+09:00
 categories: ["biography"]
 tags: ["lewis-carroll", "history"]
 image: "eyecatch.jpg"
+slug: "biography-lewis-carroll"
 ---
 
 ## परिचय

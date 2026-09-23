@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["donald-knuth", "history"]
 image: "eyecatch.jpg"
+slug: "biography-donald-knuth"
 ---
 
 在计算机科学的世界里，唐纳德·克努斯（Donald E. Knuth，中文名高德纳）的名字无人不知。他被称为“算法分析之父”，是一位将编程从纯粹的技术升华为“艺术”的伟大人物。本文将深入探讨他的生平、独特的哲学以及对后世产生的不可估量的影响。

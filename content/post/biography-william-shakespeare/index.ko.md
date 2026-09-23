@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["william-shakespeare", "history"]
 image: "eyecatch.jpg"
+slug: "biography-william-shakespeare"
 ---
 
 윌리엄 셰익스피어(William Shakespeare, 1564년 - 1616년)는 역사상 가장 위대한 극작가이자 시인으로 널리 알려져 있으며, 영국의 국민 시인으로 불립니다. 그의 작품은 시대와 문화의 장벽을 뛰어넘어 400년이 지난 오늘날에도 전 세계에서 공연되고 읽히고 있습니다. 인간의 보편적인 감정과 갈등을 생생하게 묘사한 그의 필치는 현대 문학과 예술, 나아가 우리의 일상 언어에까지 깊게 뿌리내리고 있습니다.

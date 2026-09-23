@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["georg-wilhelm-friedrich-hegel", "history"]
 image: "eyecatch.jpg"
+slug: "biography-georg-wilhelm-friedrich-hegel"
 ---
 
 Na história da filosofia ocidental, o pensador que atingiu o ápice do idealismo alemão do século XIX, começando com Immanuel Kant, foi Georg Wilhelm Friedrich Hegel (1770–1831). Seu formidável e grandioso sistema de pensamento, centrado na "Dialética" e no "Espírito Absoluto", exerceu uma influência extremamente ampla não apenas em sua época, mas também em Karl Marx, no existencialismo e, até hoje, na ciência política e na história modernas. Neste artigo, traçaremos a vida de Hegel e aprofundaremos na essência de sua filosofia e em seu impacto nas gerações posteriores.

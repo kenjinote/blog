@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["steve-mcconnell", "history"]
 image: "eyecatch.jpg"
+slug: "biography-steve-mcconnell"
 ---
 
 소프트웨어 개발에 종사하는 사람이라면 《코드 컴플리트》(Code Complete)라는 두꺼운 명저를 본 적이 있을 것입니다. 이 책의 저자인 스티브 맥코넬(Steve McConnell)은 프로그래밍이라는 혼돈스러운 작업에 질서를 가져오고, 진정한 의미의 '소프트웨어 공학'(Software Engineering)을 확립하기 위해 평생을 바친 인물입니다. 본 기사에서는 그의 생애, 독자적인 철학, 그리고 현대 개발 씬에 지속적으로 미치고 있는 엄청난 영향에 대해 깊이 파헤쳐 봅니다.

@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["ludwig-wittgenstein", "history"]
 image: "eyecatch.jpg"
+slug: "biography-ludwig-wittgenstein"
 ---
 
 Ludwig Wittgenstein (1889–1951) adalah salah satu filsuf paling penting dan berpengaruh di abad ke-20. Filsafatnya secara luas dibagi menjadi dua periode: periode awal yang mengeksplorasi batas-batas bahasa dan logika, dan periode akhir yang berfokus pada penggunaan bahasa sehari-hari. Sangat jarang dalam sejarah pemikiran bahwa seorang filsuf membalikkan teorinya sendiri dan membangun dua sistem filosofis yang sama sekali berbeda selama hidupnya.

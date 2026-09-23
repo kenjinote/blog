@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:32+09:00
 categories: ["biography"]
 tags: ["laozi", "history"]
 image: "eyecatch.jpg"
+slug: "biography-laozi"
 ---
 
 "Laozi" adalah seorang pemikir Tiongkok kuno yang diakui sebagai pendiri Taoisme. Karyanya yang abadi, *Daodejing* (*Laozi Daodejing* atau *Tao Te Ching*), terus dibaca di seluruh dunia dan memberi inspirasi kepada banyak orang bahkan hingga saat ini, lebih dari dua ribu tahun kemudian. Berbeda dengan Konfusius, pendiri Konfusianisme, yang mengajarkan moralitas buatan manusia seperti "kesopanan" (*li*) dan "kebajikan" (*ren*), Laozi justru mengajarkan "Wu Wei Zi Ran" (tindakan alami tanpa paksaan), yaitu hidup apa adanya dengan mengikuti "Dao" (Tao), hakikat mendasar dari alam semesta.

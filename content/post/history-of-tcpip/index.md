@@ -6,6 +6,7 @@ image: "eyecatch.jpg"
 draft: false
 categories: ['History', 'networking']
 tags: ['TCP/IP', 'Internet', 'ARPANET']
+slug: "history-of-tcpip"
 ---
 
 ## はじめに

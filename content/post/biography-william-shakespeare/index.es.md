@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["william-shakespeare", "history"]
 image: "eyecatch.jpg"
+slug: "biography-william-shakespeare"
 ---
 
 William Shakespeare (1564 - 1616) está considerado como el mayor dramaturgo y poeta de la historia, y a menudo se le llama el "poeta nacional de Inglaterra". Sus obras han superado las barreras del tiempo y la cultura, y todavía se interpretan y leen en todo el mundo más de 400 años después. Su vívida representación de las emociones humanas universales y los conflictos está profundamente arraigada en la literatura moderna, el arte e incluso en nuestro lenguaje cotidiano.

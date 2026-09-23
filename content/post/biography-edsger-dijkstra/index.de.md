@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["edsger-dijkstra", "history"]
 image: "eyecatch.jpg"
+slug: "biography-edsger-dijkstra"
 ---
 
 Edsger W. Dijkstra (1930 - 2002) ist einer der größten Intellektuellen, die den Grundstein für das moderne Software-Engineering und die Informatik gelegt haben. Viele der von ihm hinterlassenen Algorithmen und Programmierparadigmen bilden die Grundlage aller Technologien, die wir heute täglich nutzen. In diesem Artikel werden wir tiefer auf Dijkstras Leben, seine einzigartige Philosophie und seinen unermesslichen Einfluss auf nachfolgende Generationen eingehen.

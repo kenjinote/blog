@@ -5,6 +5,7 @@ date: 2026-09-23T04:01:41+09:00
 image: "eyecatch.jpg"
 categories: ["physics", "technology"]
 tags: ["electromagnetic-induction", "motor", "ev"]
+slug: "physics-electromagnetic-induction"
 ---
 # 物理学：电磁感应与电机原理
 

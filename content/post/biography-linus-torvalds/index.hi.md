@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["linus-torvalds", "history"]
 image: "eyecatch.jpg"
+slug: "biography-linus-torvalds"
 ---
 
 # ओपन सोर्स के दिग्गज: लिनस टोरवाल्ड्स का पथ और दर्शन

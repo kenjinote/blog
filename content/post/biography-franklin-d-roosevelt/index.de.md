@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["franklin-d-roosevelt", "history"]
 image: "eyecatch.jpg"
+slug: "biography-franklin-d-roosevelt"
 ---
 
 Franklin Delano Roosevelt (FDR) war der 32. Präsident der Vereinigten Staaten und eine der einflussreichsten Führungspersönlichkeiten in der Geschichte des 20. Jahrhunderts. Er führte die Nation durch die beispiellosen Krisen der Weltwirtschaftskrise und des Zweiten Weltkriegs und ist der einzige Präsident in der Geschichte der USA, der für vier Amtszeiten gewählt wurde. Lassen Sie uns tief in sein Leben, seine politische Philosophie und seine anhaltenden Auswirkungen auf die moderne Welt eintauchen.

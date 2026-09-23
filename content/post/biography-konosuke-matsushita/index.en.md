@@ -4,6 +4,7 @@ date: "2026-09-23T20:59:56+09:00"
 categories: ["biography"]
 tags: ["konosuke-matsushita", "history"]
 image: "eyecatch.jpg"
+slug: "biography-konosuke-matsushita"
 ---
 
 Konosuke Matsushita, known as the "God of Management" in Japanese industrial history, continues to influence many business professionals today. As the founder of Panasonic (formerly Matsushita Electric Industrial), he is renowned for his unique management philosophies such as the "Tap Water Philosophy" and "Gathering Collective Wisdom." This article delves into his journey from a childhood marked by poverty and illness to building a global corporation, and the passionate legacy he left for future generations.

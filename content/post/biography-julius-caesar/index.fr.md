@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["julius-caesar", "history"]
 image: "eyecatch.jpg"
+slug: "biography-julius-caesar"
 ---
 
 « Le sort en est jeté », « Je suis venu, j'ai vu, j'ai vaincu », « Toi aussi, mon fils ? » — Même ceux qui ne sont pas familiers avec l'histoire mondiale ont probablement entendu les mots qu'il a laissés derrière lui. Gaius Julius Caesar (100 av. J.-C. - 44 av. J.-C.), le héros apparu telle une comète à la fin de la République romaine et qui a déterminé la forme du monde européen ultérieur. Il n'était pas seulement un militaire et un politicien, mais aussi un écrivain, un avocat de procès, et même un réformateur de calendrier.

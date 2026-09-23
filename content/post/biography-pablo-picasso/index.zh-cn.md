@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["pablo-picasso", "history"]
 image: "eyecatch.jpg"
+slug: "biography-pablo-picasso"
 ---
 
 巴勃罗·毕加索（Pablo Picasso，1881年 - 1973年）不仅是一位画家，他还在雕塑、版画、陶瓷甚至舞台美术等各个视觉艺术领域掀起了革命，被誉为“20世纪最伟大的艺术家”之一。他留下的作品数量高达约15万件，除了令人惊叹的多产之外，他一生中不断改变画风的特点也广为人知。本文将探讨毕加索传奇的一生、他给世界带来的独特哲学以及对后世的影响。

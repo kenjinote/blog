@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["edsger-dijkstra", "history"]
 image: "eyecatch.jpg"
+slug: "biography-edsger-dijkstra"
 ---
 
 艾兹赫尔·W·戴克斯特拉（Edsger W. Dijkstra, 1930 - 2002）是奠定现代软件工程和计算机科学基础的最伟大的智者之一。他留下的众多算法和编程范式，如今活跃在我们日常使用的各种技术的底层。本文将深入探讨戴克斯特拉的生平、他独特的哲学，以及他对后世产生的不可估量的影响。

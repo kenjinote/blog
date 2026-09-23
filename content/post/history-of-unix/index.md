@@ -6,6 +6,7 @@ image: "eyecatch.jpg"
 draft: false
 categories: ['History', 'Technology']
 tags: ['UNIX', 'OS', 'Bell Labs']
+slug: "history-of-unix"
 ---
 
 ## はじめに：現代を動かす見えざる巨人

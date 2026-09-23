@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["mark-zuckerberg", "history"]
 image: "eyecatch.jpg"
+slug: "biography-mark-zuckerberg"
 ---
 
 ## 從孤獨的駭客到「連結」的創造者

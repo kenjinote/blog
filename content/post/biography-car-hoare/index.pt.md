@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["car-hoare", "history"]
 image: "eyecatch.jpg"
+slug: "biography-car-hoare"
 ---
 
 Sir Charles Antony Richard Hoare (comumente conhecido como Tony Hoare, 1934–2026) foi um grande cientista da computação que lançou as bases da engenharia de software moderna e das linguagens de programação. Suas conquistas, deixadas para trás após seu falecimento em março de 2026 aos 92 anos, dão vida a cada sistema que usamos diariamente. Neste artigo, nos aprofundamos em sua vida, sua filosofia única e o impacto imensurável que ele teve nas gerações futuras.

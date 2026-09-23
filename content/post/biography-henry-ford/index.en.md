@@ -4,6 +4,7 @@ date: "2026-09-23T20:59:56+09:00"
 categories: ["biography"]
 tags: ["henry-ford", "history"]
 image: "eyecatch.jpg"
+slug: "biography-henry-ford"
 ---
 
 Henry Ford (1863-1947) went beyond being just the founder of an automobile manufacturing company; he etched his name in history as the "Automobile King" who fundamentally transformed the industrial structure and people's lifestyles in the 20th century. His greatest achievement was not inventing the automobile, but "turning the automobile from a luxury item for a wealthy few into an everyday means of transportation for the masses."

@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["galileo-galilei", "history"]
 image: "eyecatch.jpg"
+slug: "biography-galileo-galilei"
 ---
 
 伽利略·伽利莱（1564年 - 1642年）是被称为“近代科学之父”的意大利物理学家、天文学家和哲学家。他最大的功绩不仅仅局限于新的发现，更在于从根本上颠覆了人类理解自然界的“方法”。基于观测数据的实证主义和运用数学描述自然，成为了后来科学革命的坚实基础。

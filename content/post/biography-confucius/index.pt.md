@@ -4,6 +4,7 @@ date: "2026-09-23T19:53:32+09:00"
 categories: ["biography"]
 tags: ["confucius", "history"]
 image: "eyecatch.jpg"
+slug: "biography-confucius"
 ---
 
 Quem é o influenciador mais impactante da história? Nos tempos modernos, você pode pensar em Steve Jobs ou Elon Musk, mas há uma pessoa que varreu toda a Ásia Oriental há mais de 2500 anos e cujos pensamentos continuam a ser passados até hoje. Esse é "Confúcio".

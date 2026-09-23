@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["donald-knuth", "history"]
 image: "eyecatch.jpg"
+slug: "biography-donald-knuth"
 ---
 
 Dalam dunia ilmu komputer, mungkin tidak ada orang yang tidak mengenal nama Donald E. Knuth. Dikenal sebagai "bapak analisis algoritma," ia adalah sosok hebat yang mengangkat pemrograman dari sekadar teknik menjadi ranah "seni" (art). Artikel ini membahas secara mendalam tentang kehidupannya, filosofi uniknya, dan dampak tak terukur yang telah ia berikan kepada generasi mendatang.

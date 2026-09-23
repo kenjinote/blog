@@ -5,6 +5,7 @@ date: 2026-09-23T04:01:41+09:00
 image: "eyecatch.jpg"
 categories: ["physics", "science"]
 tags: ["superconductivity", "meissner-effect", "maglev"]
+slug: "physics-superconductivity"
 ---
 # भौतिक विज्ञान: सुपरकंडक्टिविटी कैसे काम करती है
 

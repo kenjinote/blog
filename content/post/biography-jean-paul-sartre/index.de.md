@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["jean-paul-sartre", "history"]
 image: "eyecatch.jpg"
+slug: "biography-jean-paul-sartre"
 ---
 
 Jean-Paul Sartre (1905-1980) war ein repräsentativer Philosoph des Frankreichs des 20. Jahrhunderts, der auch als Schriftsteller, Dramatiker und Kritiker große Spuren hinterließ. Sein Denken, bekannt durch den Satz „Die Existenz geht der Essenz voraus“, hatte starke Auswirkungen auf die Nachkriegswelt und wurde zu einer großen Strömung im modernen Denken. In diesem Artikel werden wir sein Leben, seine einzigartige Philosophie und seinen Einfluss auf nachfolgende Generationen näher beleuchten.

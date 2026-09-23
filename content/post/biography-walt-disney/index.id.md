@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["walt-disney", "history"]
 image: "eyecatch.jpg"
+slug: "biography-walt-disney"
 ---
 
 Walt Disney (Walter Elias Disney) bukan hanya sekadar animator atau produser film, melainkan "Pencipta Mimpi" perwakilan abad ke-20. Namanya kini menjadi merek yang dikenal semua orang di seluruh dunia, tetapi di balik itu terdapat kegagalan yang tak terhitung jumlahnya serta semangat pantang menyerah untuk mengatasinya. Artikel ini mengeksplorasi kehidupan dan filosofinya, bagaimana ia mengangkat animasi yang dulunya bidang belum matang menjadi sebuah seni, dan bagaimana ia membangun bentuk hiburan baru bernama taman hiburan.

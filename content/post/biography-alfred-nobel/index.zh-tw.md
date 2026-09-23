@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["alfred-nobel", "history"]
 image: "eyecatch.jpg"
+slug: "biography-alfred-nobel"
 ---
 
 阿爾弗雷德·諾貝爾透過發明炸藥累積了巨額財富，並用其遺產創立了諾貝爾獎。他的一生體現了科技發展帶來的光與影。

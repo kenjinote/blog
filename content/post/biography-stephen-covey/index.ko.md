@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:58+09:00
 categories: ["biography"]
 tags: ["stephen-covey", "history"]
 image: "eyecatch.jpg"
+slug: "biography-stephen-covey"
 ---
 
 현대 비즈니스와 자기계발에 있어 가장 큰 영향을 미친 인물 중 한 명을 꼽자면, 의심할 여지 없이 스티븐 R. 코비 박사(Stephen R. Covey)의 이름이 거론될 것입니다. 그의 저서 『성공하는 사람들의 7가지 습관(The 7 Habits of Highly Effective People)』은 전 세계적으로 수천만 부가 팔렸으며, 단순한 비즈니스 서적을 넘어 '인생의 지침서'로서 많은 사람들에게 애독되고 있습니다. 본 기사에서는 코비 박사의 생애, 그 기저에 흐르는 철학, 그리고 후세에 남긴 헤아릴 수 없는 영향에 대해 깊이 파헤쳐 보겠습니다.

@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["peter-drucker", "history"]
 image: "eyecatch.jpg"
+slug: "biography-peter-drucker"
 ---
 
 被譽為「現代管理學之父」，不僅在商業領域，甚至對社會學與政治學領域都產生了巨大影響的彼得·F·杜拉克。他留下的無數洞察與哲學，至今依然沒有褪色，持續為世界各地的企業家與領導者提供指引。本文將深入探討他波瀾壯闊的一生以及他所確立的管理學思想。

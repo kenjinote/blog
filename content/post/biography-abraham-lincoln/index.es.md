@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["abraham-lincoln", "history"]
 image: "eyecatch.jpg"
+slug: "biography-abraham-lincoln"
 ---
 
 El 16º presidente de los Estados Unidos, Abraham Lincoln. Ampliamente conocido como el "Padre de la Emancipación", es la figura que superó la Guerra Civil, la mayor crisis desde la fundación del país, y evitó la división de la nación. Sus palabras "el gobierno del pueblo, por el pueblo y para el pueblo" han sido transmitidas hasta hoy como un ideal que constituye la base de la democracia.

@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["jean-paul-sartre", "history"]
 image: "eyecatch.jpg"
+slug: "biography-jean-paul-sartre"
 ---
 
 尚-保羅·沙特（Jean-Paul Sartre, 1905-1980）是20世紀法國的代表性哲學家，同時作為小說家、劇作家和評論家也留下了深遠的足跡。他的思想以「存在先於本質」這句名言而聞名，給戰後世界帶來了強烈的衝擊，並成為現代思想的一大潮流。本文將深入探討他的生平、獨特的哲學以及對後世產生的影響。

@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["eiichi-shibusawa", "history"]
 image: "eyecatch.jpg"
+slug: "biography-eiichi-shibusawa"
 ---
 
 Eiichi Shibusawa, l'une des figures les plus importantes de la modernisation du Japon, est surnommé le « père du capitalisme japonais ». Au cours de sa vie, il a participé à la création et au développement d'environ 500 entreprises, tout en soutenant près de 600 projets sociaux et d'utilité publique, ainsi que des établissements d'enseignement. Ne se limitant pas à la simple recherche de profit, sa vie et sa philosophie, guidées par le principe des « Analectes et de l'Abaque », visaient l'harmonie entre la morale et l'économie, offrant encore aujourd'hui de nombreuses leçons aux professionnels des affaires.

@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["ludwig-wittgenstein", "history"]
 image: "eyecatch.jpg"
+slug: "biography-ludwig-wittgenstein"
 ---
 
 Ludwig Wittgenstein (1889–1951) is one of the most important and influential philosophers of the 20th century. His philosophy is broadly divided into an early period, which pursued the limits of language and logic, and a later period, which focused on the use of ordinary language. It is an extremely rare event in intellectual history for a single philosopher to completely overturn his own past theories and establish two entirely different philosophical systems within his lifetime.

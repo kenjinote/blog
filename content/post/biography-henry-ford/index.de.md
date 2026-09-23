@@ -4,6 +4,7 @@ date: "2026-09-23T20:59:56+09:00"
 categories: ["biography"]
 tags: ["henry-ford", "history"]
 image: "eyecatch.jpg"
+slug: "biography-henry-ford"
 ---
 
 Henry Ford (1863-1947) war mehr als nur der Gründer eines Automobilherstellers; er hat sich als „Automobilkönig“, der die Industriestruktur und den Lebensstil der Menschen im 20. Jahrhundert grundlegend verändert hat, in die Geschichte eingeschrieben. Seine größte Errungenschaft war nicht die Erfindung des Automobils, sondern die „Verwandlung des Automobils von einem Luxusgut für wenige Reiche zu einem alltäglichen Fortbewegungsmittel für die Massen.“

@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["jean-paul-sartre", "history"]
 image: "eyecatch.jpg"
+slug: "biography-jean-paul-sartre"
 ---
 
 Jean-Paul Sartre (1905-1980) foi um filósofo, romancista, dramaturgo e crítico que deixou uma imensa marca como um dos representantes da França do século XX. O seu pensamento, conhecido pela frase "A existência precede a essência", causou um forte impacto no mundo pós-guerra e tornou-se uma grande corrente do pensamento moderno. Neste artigo, aprofundaremos em sua vida, em sua filosofia original e na influência que deixou para as gerações posteriores.

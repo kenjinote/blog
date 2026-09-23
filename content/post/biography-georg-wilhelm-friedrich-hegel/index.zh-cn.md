@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["georg-wilhelm-friedrich-hegel", "history"]
 image: "eyecatch.jpg"
+slug: "biography-georg-wilhelm-friedrich-hegel"
 ---
 
 在西方哲学史中，始于伊曼努尔·康德，并在19世纪将德国唯心主义推向顶峰的思想家，正是格奥尔格·威廉·弗里德里希·黑格尔（1770年–1831年）。他那被称为“辩证法”和“绝对精神”的深奥且宏大的思想体系，不仅在同时代，更对卡尔·马克思、存在主义，甚至现代政治学和历史学产生了极其广泛的影响。本文将通过追溯黑格尔的生平，深入探讨其哲学的核心及对后世的影响。

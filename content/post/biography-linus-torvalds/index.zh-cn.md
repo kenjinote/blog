@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["linus-torvalds", "history"]
 image: "eyecatch.jpg"
+slug: "biography-linus-torvalds"
 ---
 
 # 开源巨星：林纳斯·托瓦兹的轨迹与哲学

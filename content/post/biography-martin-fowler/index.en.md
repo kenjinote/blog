@@ -4,6 +4,7 @@ date: 2026-09-23T19:00:00+09:00
 categories: ["biography"]
 tags: ["martin-fowler", "history"]
 image: "eyecatch.jpg"
+slug: "biography-martin-fowler"
 ---
 
 In modern software development, not a day goes by without hearing terms like "Agile," "Refactoring," and "Microservices." The person who popularized these concepts throughout the industry and fundamentally transformed software engineering is Martin Fowler. In this article, we delve deep into the life, underlying philosophy, and lasting impact of this programmer, author, and thinker.

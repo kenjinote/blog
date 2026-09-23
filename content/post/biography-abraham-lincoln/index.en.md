@@ -4,6 +4,7 @@ date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["abraham-lincoln", "history"]
 image: "eyecatch.jpg"
+slug: "biography-abraham-lincoln"
 ---
 
 Abraham Lincoln, the 16th President of the United States. Widely known as the "Father of Emancipation," he is the figure who overcame the American Civil War—the greatest crisis since the founding of the nation—and prevented the division of the country. The phrase "government of the people, by the people, for the people" has been handed down to this day as a fundamental principle of democracy.

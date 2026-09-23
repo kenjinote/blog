@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:32+09:00
 categories: ["biography"]
 tags: ["hippocrates", "history"]
 image: "eyecatch.jpg"
+slug: "biography-hippocrates"
 ---
 
 在古希腊，医学长期以来与向神明祈祷、迷信和魔法紧密相连。在那个认为疾病是“神的惩罚”或“恶灵作祟”的时代，有一个人从根本上颠覆了这一常识，将医学升华为科学且合理的学问。他就是被尊称为“医学之父”的希波克拉底（Hippocrates）。在本文中，我们将深入探讨他的生平、具有划时代意义的医学哲学，以及他至今仍在构成医疗伦理根基的巨大影响力。

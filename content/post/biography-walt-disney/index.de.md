@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["walt-disney", "history"]
 image: "eyecatch.jpg"
+slug: "biography-walt-disney"
 ---
 
 Walt Disney (Walter Elias Disney) ist nicht nur ein Trickfilmzeichner oder Filmproduzent, sondern der „Schöpfer von Träumen“, der das 20. Jahrhundert repräsentiert. Sein Name ist heute eine weltweit bekannte Marke, doch dahinter verbergen sich unzählige Rückschläge und ein unbeugsamer Geist, diese zu überwinden. Dieser Artikel beleuchtet sein Leben und seine Philosophie, wie er die noch unreife Animationsbranche zu einer Kunstform erhob und mit dem Themenpark eine neue Form der Unterhaltung schuf.

@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["plato", "history"]
 image: "eyecatch.jpg"
+slug: "biography-plato"
 ---
 
 Plato, one of the most prominent philosophers of ancient Greece, laid the foundations of Western philosophy. As a student of Socrates and the teacher of Aristotle, he left behind numerous ideas for future generations through his dialogues. Concepts like the "Theory of Forms" (Ideas) profoundly influenced not only philosophy but also political science, ethics, and theology. His presence is so overwhelming that the British philosopher A.N. Whitehead famously remarked, "The safest general characterization of the European philosophical tradition is that it consists of a series of footnotes to Plato."

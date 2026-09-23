@@ -5,6 +5,7 @@ date: 2026-09-23T04:01:41+09:00
 image: "eyecatch.jpg"
 categories: ["physics", "science"]
 tags: ["laser", "optics", "quantum"]
+slug: "physics-laser"
 ---
 
 # 物理学: レーザーの仕組み - 誘導放出と光の増幅

@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["william-shakespeare", "history"]
 image: "eyecatch.jpg"
+slug: "biography-william-shakespeare"
 ---
 
 威廉·莎士比亚（William Shakespeare，1564年 - 1616年）被公认为史上最伟大的剧作家、诗人，并被誉为“英国的国民诗人”。他的作品超越了时代与文化的壁垒，在400多年后的今天依然在世界各地上演与传诵。他对人类普遍情感与冲突的生动描绘，深深扎根于现代文学、艺术，甚至我们的日常语言之中。

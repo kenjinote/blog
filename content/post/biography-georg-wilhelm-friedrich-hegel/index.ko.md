@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["georg-wilhelm-friedrich-hegel", "history"]
 image: "eyecatch.jpg"
+slug: "biography-georg-wilhelm-friedrich-hegel"
 ---
 
 서양 철학사에서 임마누엘 칸트로부터 시작된 19세기 독일 관념론의 정점을 이룬 사상가가 바로 게오르크 빌헬름 프리드리히 헤겔(1770년–1831년)입니다. 그의 '변증법'과 '절대정신'이라는 난해하고 웅대한 사상 체계는 동시대뿐만 아니라 카를 마르크스와 실존주의, 그리고 현대의 정치학과 역사학에 이르기까지 매우 광범위한 영향을 미쳤습니다. 본 기사에서는 헤겔의 생애를 추적하면서 그 철학의 핵심과 후세에 미친 영향에 대해 깊이 파헤쳐 보겠습니다.

@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:58+09:00
 categories: ["biography"]
 tags: ["stephen-covey", "history"]
 image: "eyecatch.jpg"
+slug: "biography-stephen-covey"
 ---
 
 要说在现代商业和自我提升领域产生最深远影响的人物之一，史蒂芬·R·柯维（Stephen R. Covey）博士的名字绝对名列前茅。他的著作《高效能人士的七个习惯（The 7 Habits of Highly Effective People）》在世界各地售出数千万册，超越了单纯的商业书籍，作为许多人“人生的指南针”而被广泛阅读。在本文中，我们将深入探讨柯维博士的一生、其根基中的哲学，以及他留给后世的不可估量的影响。

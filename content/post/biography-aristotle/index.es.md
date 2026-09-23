@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["aristotle", "history"]
 image: "eyecatch.jpg"
+slug: "biography-aristotle"
 ---
 
 Conocido como el "padre de todas las ciencias" y artífice del sistema de conocimiento occidental, el filósofo griego antiguo Aristóteles (384 a. C. - 322 a. C.). Su búsqueda no se limitó a la filosofía, sino que abarcó literalmente "todas las disciplinas": lógica, ética, política, ciencias naturales, biología e incluso poética. En este artículo, explicaremos la turbulenta vida de Aristóteles, sus profundos pensamientos que aún resuenan en la actualidad y la inmensa influencia que ha tenido en la historia humana.

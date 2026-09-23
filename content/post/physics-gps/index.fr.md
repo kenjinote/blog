@@ -5,6 +5,7 @@ date: 2026-09-23T04:01:41+09:00
 image: "eyecatch.jpg"
 categories: ["space", "technology"]
 tags: ["gps", "relativity", "satellite"]
+slug: "physics-gps"
 ---
 # Espace et technologie : Le fonctionnement du GPS
 

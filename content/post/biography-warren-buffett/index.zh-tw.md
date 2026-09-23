@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["warren-buffett", "history"]
 image: "eyecatch.jpg"
+slug: "biography-warren-buffett"
 ---
 
 被譽為世界上最成功的投資家——華倫·巴菲特（Warren Buffett）。擁有「奧馬哈的先知」稱號的他，不僅僅是一個累積了巨額財富的億萬富翁，他在投資哲學、倫理觀以及慈善事業方面，也持續對全世界的人們產生深遠的影響。本文將深入探討他如何成為投資之神、他的生平與獨特的投資哲學，以及他留給後世的遺產。

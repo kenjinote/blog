@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["guido-van-rossum", "history"]
 image: "eyecatch.jpg"
+slug: "biography-guido-van-rossum"
 ---
 
 「Python」是世界上最受歡迎的程式語言之一。其創造者是來自荷蘭的程式設計師吉多·范羅蘇姆（Guido van Rossum）。他所創造的語言，如今在AI、資料科學、網頁開發等各個領域中已成為不可或缺的存在。本文將深入探討他的人生歷程、他基於何種哲學設計出Python，以及他對後世科技產生了多麼深遠的影響。

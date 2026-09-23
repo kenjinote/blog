@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:58+09:00
 categories: ["biography"]
 tags: ["stephen-covey", "history"]
 image: "eyecatch.jpg"
+slug: "biography-stephen-covey"
 ---
 
 Si tuviéramos que mencionar a una de las personas más influyentes en los negocios modernos y el desarrollo personal, sin duda surgiría el nombre del Dr. Stephen R. Covey. Su libro "Los 7 hábitos de la gente altamente efectiva" (The 7 Habits of Highly Effective People) ha vendido decenas de millones de copias en todo el mundo, superando la categoría de un simple libro de negocios para ser leído por muchos como una "guía de vida". En este artículo, profundizaremos en la vida del Dr. Covey, la filosofía subyacente y el inmenso impacto que dejó para la posteridad.

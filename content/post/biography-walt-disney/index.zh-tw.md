@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["walt-disney", "history"]
 image: "eyecatch.jpg"
+slug: "biography-walt-disney"
 ---
 
 華特·迪士尼（Walter Elias Disney）是一位代表20世紀的「夢想創造者」，他超越了單純的動畫師或電影製作人的範疇。如今，他的名字已成為全世界無人不知的品牌，但在其背後，隱藏著無數的挫折以及克服這些挫折的不屈精神。本文將帶您走進他的生平與哲學，探究他如何將動畫這一不成熟的領域昇華為藝術，並確立了主題公園這種全新的娛樂形式。

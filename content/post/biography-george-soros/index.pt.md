@@ -4,6 +4,7 @@ date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["george-soros", "history"]
 image: "eyecatch.jpg"
+slug: "biography-george-soros"
 ---
 
 George Soros. O que vem à sua mente quando ouve esse nome? O lendário investidor conhecido como "O Homem que Quebrou o Banco da Inglaterra", ou talvez o gigante filantropo que apoia a democratização ao redor do mundo. Ou ainda, ele pode ser a figura misteriosa frequentemente visada por teorias da conspiração.

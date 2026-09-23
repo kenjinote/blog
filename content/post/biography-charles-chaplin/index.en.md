@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["charles-chaplin", "history"]
 image: "eyecatch.jpg"
+slug: "biography-charles-chaplin"
 ---
 
 Charles Spencer Chaplin (April 16, 1889 - December 25, 1977) was a British film actor, director, comedian, screenwriter, and composer. Known by the nickname "King of Comedy," he is widely recognized as one of the most important and influential figures in the history of cinema. His iconic character "The Tramp," with his bowler hat, toothbrush moustache, baggy trousers, and bamboo cane, continues to be loved by people all over the world. This article will unravel Chaplin's turbulent life, the deep philosophy embedded in his works, and the influence he left on future generations.

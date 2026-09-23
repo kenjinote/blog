@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["oscar-wilde", "history"]
 image: "eyecatch.jpg"
+slug: "biography-oscar-wilde"
 ---
 
 Dans le monde littéraire britannique de la fin du XIXe siècle, aucun auteur n'a brillé avec autant d'éclat ni connu de chute aussi vertigineuse qu'Oscar Wilde. Sa philosophie de l'esthétisme, résumée par le principe de « l'art pour l'art », continue d'influencer d'innombrables créateurs et artistes jusqu'à nos jours. Cet article se propose d'explorer en profondeur sa vie dramatique, l'ensemble de son œuvre, ainsi que son héritage pour la postérité.

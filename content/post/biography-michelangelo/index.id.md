@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["michelangelo", "history"]
 image: "eyecatch.jpg"
+slug: "biography-michelangelo"
 ---
 
 Michelangelo Buonarroti (1475–1564) adalah salah satu dari tiga maestro besar Renaisans Tinggi bersama Leonardo da Vinci dan Raffaello (Raphael). Sebagai pematung, pelukis, arsitek, dan penyair, ia meninggalkan jejak mendalam yang tak terhapuskan dalam sejarah seni Barat. Artikel ini mengupas bagaimana ia melahirkan berbagai mahakarya, filosofi yang mendasari pendekatan artistiknya, serta perjalanan hidup dan pengaruh abadinya bagi generasi mendatang.

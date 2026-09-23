@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["nikolai-lobachevsky", "history"]
 image: "eyecatch.jpg"
+slug: "biography-nikolai-lobachevsky"
 ---
 
 # निकोलाई लोबाचेव्स्की: 'ज्यामिति के कोपरनिकस' जिन्होंने गैर-यूक्लिडियन ज्यामिति के द्वार खोले

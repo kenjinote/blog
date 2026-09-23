@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["guido-van-rossum", "history"]
 image: "eyecatch.jpg"
+slug: "biography-guido-van-rossum"
 ---
 
 세계에서 가장 인기 있는 프로그래밍 언어 중 하나인 '파이썬(Python)'. 그 창시자로 알려진 인물이 바로 네덜란드 출신의 프로그래머 귀도 반 로섬(Guido van Rossum)입니다. 그가 만들어낸 언어는 현재 AI, 데이터 사이언스, 웹 개발 등 모든 분야에서 없어서는 안 될 존재가 되었습니다. 본 기사에서는 그가 어떤 인생을 걸어왔는지, 어떤 철학을 바탕으로 파이썬을 설계했는지, 그리고 후세의 기술에 얼마나 큰 영향을 미쳤는지 깊이 파헤쳐 봅니다.

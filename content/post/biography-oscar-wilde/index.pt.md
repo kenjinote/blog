@@ -4,6 +4,7 @@ date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["oscar-wilde", "history"]
 image: "eyecatch.jpg"
+slug: "biography-oscar-wilde"
 ---
 
 No cenário literário britânico do final do século XIX, ninguém brilhou com tanto esplendor — nem caiu tão profundamente em desgraça — quanto Oscar Wilde. Sua filosofia do esteticismo, sintetizada no lema "a arte pela arte", continua a influenciar criadores e artistas até os dias de hoje. Neste artigo, aprofundamos a análise sobre sua vida dramática, suas obras fundamentais e seu legado para a posteridade.

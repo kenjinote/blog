@@ -4,6 +4,7 @@ date: 2026-09-23T19:53:32+09:00
 categories: ["biography"]
 tags: ["hippocrates", "history"]
 image: "eyecatch.jpg"
+slug: "biography-hippocrates"
 ---
 
 En la antigua Grecia, la medicina estuvo durante mucho tiempo profundamente vinculada a las oraciones a los dioses, la superstición y la magia. En una época en la que las enfermedades se consideraban un "castigo divino" o la "obra de espíritus malignos", hubo alguien que revolucionó por completo este sentido común y elevó la medicina a una disciplina científica y racional. Ese fue Hipócrates (Hippocrates), conocido como el "Padre de la Medicina". En este artículo, profundizaremos en su vida, su revolucionaria filosofía médica y la inmensa influencia que sigue siendo la base de la ética médica hasta nuestros días.
