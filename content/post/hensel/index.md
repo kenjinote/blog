@@ -4,7 +4,7 @@ description: "ドイツの数学者クルト・ヘンゼルの生涯と、現代
 slug: "hensel"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "伝記"]
+categories: ["mathematics", "biography"]
 tags: ["クルト・ヘンゼル", "p進数", "代数的整数論", "数学史"]
 ---
 

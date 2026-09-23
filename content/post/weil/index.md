@@ -4,7 +4,7 @@ description: "アンドレ・ヴェイユのドラマチックな生涯、ブル
 slug: "weil"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "伝記"]
+categories: ["mathematics", "biography"]
 tags: ["アンドレ・ヴェイユ", "ブルバキ", "代数幾何学", "数論"]
 ---
 

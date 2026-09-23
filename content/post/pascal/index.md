@@ -4,7 +4,7 @@ description: "「人間は考える葦である」で知られるブレーズ・
 slug: "pascal"
 date: 2026-09-20T19:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["数学", "伝記"]
+categories: ["mathematics", "biography"]
 tags: ["パスカル", "確率論", "射影幾何学", "パスカルの定理", "パスカルの三角形", "物理学"]
 ---
 

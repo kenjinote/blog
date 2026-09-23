@@ -4,7 +4,7 @@ description: "数学における「代数」は、方程式を解くための手
 slug: "groups-rings-and-fields"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学"]
+categories: ["mathematics"]
 tags: ["代数学", "群論", "環論", "体論"]
 ---
 

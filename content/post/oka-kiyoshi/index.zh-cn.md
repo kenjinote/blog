@@ -4,7 +4,7 @@ description: "日本引以为傲的数学家冈洁。深入探讨他一生的轶
 slug: "oka-kiyoshi"
 date: 2026-09-20T20:20:00+09:00
 image: "eyecatch.jpg"
-categories: ["数学", "传记"]
+categories: ["mathematics", "传记"]
 tags: ["冈洁", "复分析", "数学史"]
 ---
 

@@ -4,7 +4,7 @@ description: "详细解读20世纪最伟大的逻辑学家库尔特·哥德尔�
 slug: "godel"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "传记"]
+categories: ["mathematics", "传记"]
 tags: ["库尔特·哥德尔", "不完备性定理", "数学", "逻辑学", "历史"]
 ---
 

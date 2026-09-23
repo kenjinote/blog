@@ -4,7 +4,7 @@ description: "20岁时在决斗中丧生的天才数学家埃瓦里斯特·伽�
 slug: "galois"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "传记"]
+categories: ["mathematics", "传记"]
 tags: ["伽罗瓦理论", "代数学", "群论", "历史"]
 ---
 

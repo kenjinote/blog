@@ -5,7 +5,7 @@ slug: "cauchy"
 date: 2026-09-20T19:20:00+09:00
 image: "eyecatch.jpg"
 categories:
-  - "数学"
+  - "mathematics"
   - "传记"
 tags:
   - "柯西"

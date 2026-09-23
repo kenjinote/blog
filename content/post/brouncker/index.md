@@ -4,7 +4,7 @@ description: "イギリスの数学者ウィリアム・ブランカーの生涯
 slug: "brouncker"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "伝記"]
+categories: ["mathematics", "biography"]
 tags: ["ウィリアム・ブランカー", "円周率", "連分数", "ペル方程式", "王立協会"]
 ---
 

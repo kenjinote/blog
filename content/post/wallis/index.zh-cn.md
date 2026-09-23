@@ -5,7 +5,7 @@ slug: "wallis"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
-  - "数学"
+  - "mathematics"
   - "传记"
 tags:
   - "约翰·沃利斯"

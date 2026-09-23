@@ -5,8 +5,8 @@ slug: "newton"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
-  - "数学"
-  - "伝記"
+  - "mathematics"
+  - "biography"
 tags:
   - "アイザック・ニュートン"
   - "微積分"

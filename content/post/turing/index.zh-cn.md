@@ -4,7 +4,7 @@ description: "详细解读艾伦·图灵的一生、破解恩尼格玛密码机�
 slug: "turing"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "传记"]
+categories: ["mathematics", "传记"]
 tags: ["艾伦·图灵", "图灵机", "恩尼格玛", "停机问题", "形态发生"]
 ---
 

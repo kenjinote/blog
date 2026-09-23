@@ -4,7 +4,7 @@ description: "アレクサンドル・グロタンディークの数奇な生涯
 slug: "grothendieck"
 date: 2026-09-20T20:30:00+09:00
 image: "eyecatch.jpg"
-categories: ["数学", "伝記"]
+categories: ["mathematics", "biography"]
 tags: ["グロタンディーク", "代数幾何学", "スキーム論", "圏論"]
 ---
 

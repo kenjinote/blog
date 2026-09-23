@@ -4,7 +4,7 @@ description: "微積分学の基礎を支える「中間値の定理」と「平
 slug: "intermediate-and-mean-value-theorem"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学"]
+categories: ["mathematics"]
 tags: ["微積分", "定理", "数学の証明"]
 ---
 

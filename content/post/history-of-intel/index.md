@@ -2,7 +2,7 @@
 title: "企業史: Intelの歴史 - マイクロプロセッサの誕生とシリコンバレーの覇者"
 date: 2026-09-23T04:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["History", "Business"]
+categories: ["History", "business"]
 tags: ["Intel", "Microprocessor", "Silicon Valley"]
 ---
 

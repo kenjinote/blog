@@ -4,7 +4,7 @@ description: "详细讲解线性代数中最重要的概念之一：特征值与
 slug: "eigenvalues-and-eigenvectors"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学"]
+categories: ["mathematics"]
 tags: ["线性代数", "特征值", "特征向量", "数学", "机器学习", "python", "数据科学"]
 ---
 

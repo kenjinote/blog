@@ -4,7 +4,7 @@ description: "本文深入探讨了微积分的基础支撑——「介值定理
 slug: "intermediate-and-mean-value-theorem"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学"]
+categories: ["mathematics"]
 tags: ["微积分", "定理", "数学证明"]
 ---
 

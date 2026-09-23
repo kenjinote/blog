@@ -4,7 +4,7 @@ description: "ノルウェーが生んだ天才数学者ニールス・ヘンリ
 slug: "abel"
 date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "伝記"]
+categories: ["mathematics", "biography"]
 tags: ["アーベル", "代数学", "歴史", "数学"]
 ---
 

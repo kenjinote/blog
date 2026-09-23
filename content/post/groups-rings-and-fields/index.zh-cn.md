@@ -4,7 +4,7 @@ description: "在数学中，‘代数’已经从解方程的方法发展到研
 slug: "groups-rings-and-fields"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学"]
+categories: ["mathematics"]
 tags: ["代数", "群论", "环论", "域论"]
 ---
 

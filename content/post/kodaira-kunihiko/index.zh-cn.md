@@ -4,7 +4,7 @@ description: "探索日本首位菲尔兹奖得主、数学家小平邦彦的生
 slug: "kodaira-kunihiko"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "传记"]
+categories: ["mathematics", "传记"]
 tags: ["小平邦彦", "菲尔兹奖", "复几何"]
 ---
 

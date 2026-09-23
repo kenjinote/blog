@@ -4,7 +4,7 @@ description: "深入了解德国数学家库尔特·亨泽尔的一生，他发�
 slug: "hensel"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "传记"]
+categories: ["mathematics", "传记"]
 tags: ["库尔特·亨泽尔", "p进数", "代数数论", "数学史"]
 ---
 

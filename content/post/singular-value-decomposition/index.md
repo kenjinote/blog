@@ -4,7 +4,7 @@ description: "特異値分解（SVD）の数学的基礎から幾何学的直感
 slug: "singular-value-decomposition"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学"]
+categories: ["mathematics"]
 tags: ["SVD", "線形代数", "機械学習", "データ圧縮", "人工知能", "Python"]
 ---
 

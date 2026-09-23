@@ -4,7 +4,7 @@ description: "探索安德鲁·怀尔斯的生平与数学成就，他通过证�
 slug: "wiles"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "传记"]
+categories: ["mathematics", "传记"]
 tags: ["安德鲁·怀尔斯", "费马", "数论"]
 ---
 

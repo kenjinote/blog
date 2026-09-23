@@ -4,7 +4,7 @@ description: "アラン・チューリングの生涯、エニグマ暗号解読
 slug: "turing"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "伝記"]
+categories: ["mathematics", "biography"]
 tags: ["アラン・チューリング", "チューリングマシン", "エニグマ", "停止問題", "形態形成"]
 ---
 

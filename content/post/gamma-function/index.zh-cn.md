@@ -4,7 +4,7 @@ description: "将离散的阶乘与平滑曲线相连接的“伽玛函数”。
 slug: "gamma-function"
 date: 2026-09-20T14:40:00+09:00
 image: "eyecatch.jpg"
-categories: ["数学"]
+categories: ["mathematics"]
 tags: ["伽玛函数", "欧拉", "复分析", "微积分"]
 ---
 

@@ -4,7 +4,7 @@ description: "详细解读天才数学家埃米·诺特的生平与成就，她�
 slug: "noether"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "传记"]
+categories: ["mathematics", "传记"]
 tags: ["埃米·诺特", "抽象代数", "物理学", "STEM领域的女性"]
 ---
 

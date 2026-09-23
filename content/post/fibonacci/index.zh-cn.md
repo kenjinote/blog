@@ -4,7 +4,7 @@ description: "深入剖析斐波那契的生平、《算盘书》对阿拉伯数
 slug: "fibonacci"
 date: "2026-09-20T18:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "传记"]
+categories: ["mathematics", "传记"]
 tags: ["斐波那契", "数学", "历史", "黄金分割", "算盘书"]
 ---
 

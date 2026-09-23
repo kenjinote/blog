@@ -4,7 +4,7 @@ description: "フランスの偉大な数学者アンリ・ポアンカレの生
 slug: "poincare"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "伝記"]
+categories: ["mathematics", "biography"]
 tags: ["ポアンカレ", "トポロジー", "カオス理論", "数学史", "物理学"]
 ---
 

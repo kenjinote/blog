@@ -4,7 +4,7 @@ description: "全面解析奇异值分解（SVD）的数学基础、几何直观
 slug: "singular-value-decomposition"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学"]
+categories: ["mathematics"]
 tags: ["SVD", "线性代数", "机器学习", "数据压缩", "人工智能", "Python"]
 ---
 

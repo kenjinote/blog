@@ -5,7 +5,7 @@ slug: "geometric-meaning-of-determinant"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
 categories: 
-  - "数学"
+  - "mathematics"
 tags: 
   - "線形代数"
   - "行列式"

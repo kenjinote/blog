@@ -4,7 +4,7 @@ description: "详细介绍如何使用复分析的亮点——留数定理，惊
 slug: "residue-theorem"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学"]
+categories: ["mathematics"]
 tags: ["复分析", "微积分", "数学"]
 ---
 

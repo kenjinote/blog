@@ -4,7 +4,7 @@ description: "ランダムウォーク（酔歩）の基礎から、拡散現象
 slug: "random-walk"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学"]
+categories: ["mathematics"]
 tags: ["ランダムウォーク", "確率論", "拡散方程式", "ブラウン運動", "Python"]
 ---
 

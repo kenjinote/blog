@@ -4,7 +4,7 @@ description: "深入剖析法国数学家加布里埃尔·拉梅的一生，以�
 slug: "lame"
 date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "传记"]
+categories: ["mathematics", "传记"]
 tags: ["加布里埃尔·拉梅", "数学史", "数论", "弹性力学", "几何学"]
 ---
 

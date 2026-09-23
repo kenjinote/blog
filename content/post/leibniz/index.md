@@ -4,7 +4,7 @@ description: "17世紀最大の知性の一人であるゴットフリート・�
 slug: "leibniz"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "伝記"]
+categories: ["mathematics", "biography"]
 tags: ["ライプニッツ", "微積分", "二進法", "哲学", "数学史"]
 ---
 

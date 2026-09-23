@@ -4,7 +4,7 @@ description: "详细介绍英国数学家威廉·布隆克尔的生平及其在�
 slug: "brouncker"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "传记"]
+categories: ["mathematics", "传记"]
 tags: ["威廉·布隆克尔", "圆周率", "连分数", "佩尔方程", "皇家学会"]
 ---
 

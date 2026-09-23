@@ -4,7 +4,7 @@ description: "深入探讨古希腊数学家欧几里得的一生，其巨著《
 slug: "euclid"
 date: 2026-09-20T18:40:00+09:00
 image: "eyecatch.jpg"
-categories: ["数学", "传记"]
+categories: ["mathematics", "传记"]
 tags: ["欧几里得", "几何学", "数学史", "古希腊", "几何原本", "欧几里得算法"]
 ---
 

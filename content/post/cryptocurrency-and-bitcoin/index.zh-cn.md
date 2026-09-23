@@ -4,7 +4,7 @@ description: "全面解析比特币与加密资产背后的技术与数学机制
 slug: "cryptocurrency-and-bitcoin"
 date: "2026-09-20T23:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["技术", "数学"]
+categories: ["技术", "mathematics"]
 tags: ["比特币", "密码学", "区块链"]
 ---
 

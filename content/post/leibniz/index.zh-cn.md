@@ -4,7 +4,7 @@ description: "深入剖析17世纪最伟大心智之一戈特弗里德·威廉·
 slug: "leibniz"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "传记"]
+categories: ["mathematics", "传记"]
 tags: ["莱布尼茨", "微积分", "二进制", "哲学", "数学史"]
 ---
 

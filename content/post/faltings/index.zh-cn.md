@@ -5,7 +5,7 @@ slug: "faltings"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
 categories:
-  - "数学"
+  - "mathematics"
   - "传记"
 tags:
   - "格尔德·法尔廷斯"

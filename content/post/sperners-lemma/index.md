@@ -4,7 +4,7 @@ description: "境界のルールに従って頂点を塗ると、3色の小三�
 slug: "sperners-lemma"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学"]
+categories: ["mathematics"]
 tags: ["トポロジー", "組合せ論", "不動点定理"]
 ---
 

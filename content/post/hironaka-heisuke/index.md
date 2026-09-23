@@ -4,7 +4,7 @@ description: "フィールズ賞を受賞した日本の数学者、広中平祐
 slug: "hironaka-heisuke"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "伝記"]
+categories: ["mathematics", "biography"]
 tags: ["広中平祐", "代数幾何学", "特異点解消", "フィールズ賞", "日本の数学者", "創造性"]
 ---
 

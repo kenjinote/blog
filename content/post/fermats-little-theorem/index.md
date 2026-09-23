@@ -5,7 +5,7 @@ slug: "fermats-little-theorem"
 date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
 categories:
-  - "数学"
+  - "mathematics"
 tags:
   - "整数論"
   - "暗号理論"

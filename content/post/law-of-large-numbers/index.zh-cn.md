@@ -4,7 +4,7 @@ description: "深入解析概率论中极其重要的定理“大数定律”。
 slug: "law-of-large-numbers"
 date: 2026-09-14
 image: "eyecatch.jpg"
-categories: ["数学", "数据科学", "赌博"]
+categories: ["mathematics", "数据科学", "赌博"]
 tags:
   - "大数定律"
   - "概率"

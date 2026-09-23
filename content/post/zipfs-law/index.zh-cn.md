@@ -4,7 +4,7 @@ description: "通过公式和图解深入探讨“齐普夫定律”，这一从
 slug: "zipfs-law"
 date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "数据科学", "语言学"]
+categories: ["mathematics", "数据科学", "语言学"]
 tags:
   - "齐普夫定律"
   - "幂律"

@@ -6,7 +6,7 @@ date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
 categories:
   - 计算机科学
-  - 数学
+  - mathematics
 tags:
   - 图灵机
   - 计算理论

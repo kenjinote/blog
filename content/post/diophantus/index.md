@@ -5,8 +5,8 @@ slug: "diophantus"
 date: 2026-09-20T18:40:00+09:00
 image: "eyecatch.jpg"
 categories:
-  - "数学"
-  - "伝記"
+  - "mathematics"
+  - "biography"
 tags:
   - "ディオファントス"
   - "代数学"

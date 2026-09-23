@@ -4,7 +4,7 @@ description: "古代ギリシャの数学者ユークリッドの生涯と、彼
 slug: "euclid"
 date: 2026-09-20T18:40:00+09:00
 image: "eyecatch.jpg"
-categories: ["数学", "伝記"]
+categories: ["mathematics", "biography"]
 tags: ["ユークリッド", "幾何学", "数学史", "古代ギリシャ", "原論", "ユークリッドの互除法"]
 ---
 

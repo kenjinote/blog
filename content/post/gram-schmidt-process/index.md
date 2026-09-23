@@ -4,7 +4,7 @@ description: '線形代数における重要概念「グラム・シュミット
 slug: 'gram-schmidt-process'
 date: '2026-09-20T14:40:00+09:00'
 image: "eyecatch.jpg"
-categories: ["数学"]
+categories: ["mathematics"]
 tags: ["線形代数", "アルゴリズム", "機械学習", "QR分解", "Python", "数値計算", "数学"]
 ---
 

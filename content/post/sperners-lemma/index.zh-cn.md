@@ -4,7 +4,7 @@ description: "解释根据边界规则为顶点着色如何保证出现包含三
 slug: "sperners-lemma"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学"]
+categories: ["mathematics"]
 tags: ["拓扑学", "组合数学", "不动点定理"]
 ---
 

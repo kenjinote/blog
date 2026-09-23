@@ -4,7 +4,7 @@ description: "複素関数論のハイライトである留数定理を用いて
 slug: "residue-theorem"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学"]
+categories: ["mathematics"]
 tags: ["複素解析", "微積分", "数学"]
 ---
 

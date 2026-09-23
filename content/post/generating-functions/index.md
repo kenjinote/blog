@@ -5,7 +5,7 @@ slug: "generating-functions"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
-  - "数学"
+  - "mathematics"
 tags:
   - "母関数"
   - "組合せ論"

@@ -4,7 +4,7 @@ description: "详细解读被誉为“数学王子”的卡尔·弗里德里希�
 slug: "gauss"
 date: 2026-09-20T19:10:00+09:00
 image: "eyecatch.jpg"
-categories: ["数学", "传记"]
+categories: ["mathematics", "传记"]
 tags: ["高斯", "数学史", "天才", "几何学", "数论"]
 ---
 

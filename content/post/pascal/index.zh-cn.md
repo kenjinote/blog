@@ -4,7 +4,7 @@ description: "以“人是一根能思想的芦苇”而闻名的布莱兹·帕�
 slug: "pascal"
 date: 2026-09-20T19:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["数学", "传记"]
+categories: ["mathematics", "传记"]
 tags: ["帕斯卡", "概率论", "射影几何", "帕斯卡定理", "帕斯卡三角形", "物理学"]
 ---
 
