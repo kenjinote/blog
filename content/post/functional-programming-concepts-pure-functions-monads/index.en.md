@@ -1,5 +1,5 @@
 ---
-title: Functional Programming Basics and Benefits (Pure Functions, Immutability, Monad Concepts)
+title: "Functional Programming Basics and Benefits (Pure Functions, Immutability, Monad Concepts)"
 description: Deep dive into the functional programming paradigm and thoroughly explain its benefits through the concepts of pure functions, immutability, and monads.
 slug: functional-programming-concepts-pure-functions-monads
 date: 2026-09-21T14:51:08+09:00

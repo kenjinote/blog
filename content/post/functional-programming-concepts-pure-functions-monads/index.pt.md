@@ -1,5 +1,5 @@
 ---
-title: Fundamentos e Vantagens da Programação Funcional (Funções Puras, Imutabilidade e Mônadas)
+title: "Fundamentos e Vantagens da Programação Funcional (Funções Puras, Imutabilidade e Mônadas)"
 description: Aprofunde-se no paradigma da programação funcional e explore exaustivamente suas vantagens através dos conceitos de funções puras, imutabilidade e mônadas.
 slug: functional-programming-concepts-pure-functions-monads
 date: 2026-09-21T14:51:08+09:00

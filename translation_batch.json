@@ -1,0 +1,1082 @@
+[
+  {
+    "Model": "flash",
+    "Role": "Translator en for biography-steve-jobs",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-steve-jobs/index.md の内容を読み込み、言語コード 'en' に翻訳して C:/work/kenji.blog/content/post/biography-steve-jobs/index.en.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-cn for biography-steve-jobs",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-steve-jobs/index.md の内容を読み込み、言語コード 'zh-cn' に翻訳して C:/work/kenji.blog/content/post/biography-steve-jobs/index.zh-cn.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-tw for biography-steve-jobs",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-steve-jobs/index.md の内容を読み込み、言語コード 'zh-tw' に翻訳して C:/work/kenji.blog/content/post/biography-steve-jobs/index.zh-tw.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator es for biography-steve-jobs",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-steve-jobs/index.md の内容を読み込み、言語コード 'es' に翻訳して C:/work/kenji.blog/content/post/biography-steve-jobs/index.es.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator hi for biography-steve-jobs",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-steve-jobs/index.md の内容を読み込み、言語コード 'hi' に翻訳して C:/work/kenji.blog/content/post/biography-steve-jobs/index.hi.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ar for biography-steve-jobs",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-steve-jobs/index.md の内容を読み込み、言語コード 'ar' に翻訳して C:/work/kenji.blog/content/post/biography-steve-jobs/index.ar.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator fr for biography-steve-jobs",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-steve-jobs/index.md の内容を読み込み、言語コード 'fr' に翻訳して C:/work/kenji.blog/content/post/biography-steve-jobs/index.fr.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ru for biography-steve-jobs",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-steve-jobs/index.md の内容を読み込み、言語コード 'ru' に翻訳して C:/work/kenji.blog/content/post/biography-steve-jobs/index.ru.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator pt for biography-steve-jobs",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-steve-jobs/index.md の内容を読み込み、言語コード 'pt' に翻訳して C:/work/kenji.blog/content/post/biography-steve-jobs/index.pt.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator id for biography-steve-jobs",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-steve-jobs/index.md の内容を読み込み、言語コード 'id' に翻訳して C:/work/kenji.blog/content/post/biography-steve-jobs/index.id.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator de for biography-steve-jobs",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-steve-jobs/index.md の内容を読み込み、言語コード 'de' に翻訳して C:/work/kenji.blog/content/post/biography-steve-jobs/index.de.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ko for biography-steve-jobs",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-steve-jobs/index.md の内容を読み込み、言語コード 'ko' に翻訳して C:/work/kenji.blog/content/post/biography-steve-jobs/index.ko.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator en for biography-bill-gates",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-bill-gates/index.md の内容を読み込み、言語コード 'en' に翻訳して C:/work/kenji.blog/content/post/biography-bill-gates/index.en.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-cn for biography-bill-gates",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-bill-gates/index.md の内容を読み込み、言語コード 'zh-cn' に翻訳して C:/work/kenji.blog/content/post/biography-bill-gates/index.zh-cn.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-tw for biography-bill-gates",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-bill-gates/index.md の内容を読み込み、言語コード 'zh-tw' に翻訳して C:/work/kenji.blog/content/post/biography-bill-gates/index.zh-tw.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator es for biography-bill-gates",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-bill-gates/index.md の内容を読み込み、言語コード 'es' に翻訳して C:/work/kenji.blog/content/post/biography-bill-gates/index.es.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator hi for biography-bill-gates",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-bill-gates/index.md の内容を読み込み、言語コード 'hi' に翻訳して C:/work/kenji.blog/content/post/biography-bill-gates/index.hi.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ar for biography-bill-gates",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-bill-gates/index.md の内容を読み込み、言語コード 'ar' に翻訳して C:/work/kenji.blog/content/post/biography-bill-gates/index.ar.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator fr for biography-bill-gates",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-bill-gates/index.md の内容を読み込み、言語コード 'fr' に翻訳して C:/work/kenji.blog/content/post/biography-bill-gates/index.fr.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ru for biography-bill-gates",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-bill-gates/index.md の内容を読み込み、言語コード 'ru' に翻訳して C:/work/kenji.blog/content/post/biography-bill-gates/index.ru.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator pt for biography-bill-gates",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-bill-gates/index.md の内容を読み込み、言語コード 'pt' に翻訳して C:/work/kenji.blog/content/post/biography-bill-gates/index.pt.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator id for biography-bill-gates",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-bill-gates/index.md の内容を読み込み、言語コード 'id' に翻訳して C:/work/kenji.blog/content/post/biography-bill-gates/index.id.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator de for biography-bill-gates",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-bill-gates/index.md の内容を読み込み、言語コード 'de' に翻訳して C:/work/kenji.blog/content/post/biography-bill-gates/index.de.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ko for biography-bill-gates",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-bill-gates/index.md の内容を読み込み、言語コード 'ko' に翻訳して C:/work/kenji.blog/content/post/biography-bill-gates/index.ko.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator en for biography-linus-torvalds",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-linus-torvalds/index.md の内容を読み込み、言語コード 'en' に翻訳して C:/work/kenji.blog/content/post/biography-linus-torvalds/index.en.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-cn for biography-linus-torvalds",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-linus-torvalds/index.md の内容を読み込み、言語コード 'zh-cn' に翻訳して C:/work/kenji.blog/content/post/biography-linus-torvalds/index.zh-cn.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-tw for biography-linus-torvalds",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-linus-torvalds/index.md の内容を読み込み、言語コード 'zh-tw' に翻訳して C:/work/kenji.blog/content/post/biography-linus-torvalds/index.zh-tw.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator es for biography-linus-torvalds",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-linus-torvalds/index.md の内容を読み込み、言語コード 'es' に翻訳して C:/work/kenji.blog/content/post/biography-linus-torvalds/index.es.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator hi for biography-linus-torvalds",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-linus-torvalds/index.md の内容を読み込み、言語コード 'hi' に翻訳して C:/work/kenji.blog/content/post/biography-linus-torvalds/index.hi.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ar for biography-linus-torvalds",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-linus-torvalds/index.md の内容を読み込み、言語コード 'ar' に翻訳して C:/work/kenji.blog/content/post/biography-linus-torvalds/index.ar.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator fr for biography-linus-torvalds",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-linus-torvalds/index.md の内容を読み込み、言語コード 'fr' に翻訳して C:/work/kenji.blog/content/post/biography-linus-torvalds/index.fr.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ru for biography-linus-torvalds",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-linus-torvalds/index.md の内容を読み込み、言語コード 'ru' に翻訳して C:/work/kenji.blog/content/post/biography-linus-torvalds/index.ru.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator pt for biography-linus-torvalds",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-linus-torvalds/index.md の内容を読み込み、言語コード 'pt' に翻訳して C:/work/kenji.blog/content/post/biography-linus-torvalds/index.pt.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator id for biography-linus-torvalds",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-linus-torvalds/index.md の内容を読み込み、言語コード 'id' に翻訳して C:/work/kenji.blog/content/post/biography-linus-torvalds/index.id.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator de for biography-linus-torvalds",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-linus-torvalds/index.md の内容を読み込み、言語コード 'de' に翻訳して C:/work/kenji.blog/content/post/biography-linus-torvalds/index.de.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ko for biography-linus-torvalds",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-linus-torvalds/index.md の内容を読み込み、言語コード 'ko' に翻訳して C:/work/kenji.blog/content/post/biography-linus-torvalds/index.ko.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator en for biography-dennis-ritchie",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-dennis-ritchie/index.md の内容を読み込み、言語コード 'en' に翻訳して C:/work/kenji.blog/content/post/biography-dennis-ritchie/index.en.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-cn for biography-dennis-ritchie",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-dennis-ritchie/index.md の内容を読み込み、言語コード 'zh-cn' に翻訳して C:/work/kenji.blog/content/post/biography-dennis-ritchie/index.zh-cn.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-tw for biography-dennis-ritchie",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-dennis-ritchie/index.md の内容を読み込み、言語コード 'zh-tw' に翻訳して C:/work/kenji.blog/content/post/biography-dennis-ritchie/index.zh-tw.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator es for biography-dennis-ritchie",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-dennis-ritchie/index.md の内容を読み込み、言語コード 'es' に翻訳して C:/work/kenji.blog/content/post/biography-dennis-ritchie/index.es.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator hi for biography-dennis-ritchie",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-dennis-ritchie/index.md の内容を読み込み、言語コード 'hi' に翻訳して C:/work/kenji.blog/content/post/biography-dennis-ritchie/index.hi.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ar for biography-dennis-ritchie",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-dennis-ritchie/index.md の内容を読み込み、言語コード 'ar' に翻訳して C:/work/kenji.blog/content/post/biography-dennis-ritchie/index.ar.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator fr for biography-dennis-ritchie",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-dennis-ritchie/index.md の内容を読み込み、言語コード 'fr' に翻訳して C:/work/kenji.blog/content/post/biography-dennis-ritchie/index.fr.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ru for biography-dennis-ritchie",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-dennis-ritchie/index.md の内容を読み込み、言語コード 'ru' に翻訳して C:/work/kenji.blog/content/post/biography-dennis-ritchie/index.ru.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator pt for biography-dennis-ritchie",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-dennis-ritchie/index.md の内容を読み込み、言語コード 'pt' に翻訳して C:/work/kenji.blog/content/post/biography-dennis-ritchie/index.pt.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator id for biography-dennis-ritchie",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-dennis-ritchie/index.md の内容を読み込み、言語コード 'id' に翻訳して C:/work/kenji.blog/content/post/biography-dennis-ritchie/index.id.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator de for biography-dennis-ritchie",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-dennis-ritchie/index.md の内容を読み込み、言語コード 'de' に翻訳して C:/work/kenji.blog/content/post/biography-dennis-ritchie/index.de.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ko for biography-dennis-ritchie",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-dennis-ritchie/index.md の内容を読み込み、言語コード 'ko' に翻訳して C:/work/kenji.blog/content/post/biography-dennis-ritchie/index.ko.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator en for biography-alan-kay",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-alan-kay/index.md の内容を読み込み、言語コード 'en' に翻訳して C:/work/kenji.blog/content/post/biography-alan-kay/index.en.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-cn for biography-alan-kay",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-alan-kay/index.md の内容を読み込み、言語コード 'zh-cn' に翻訳して C:/work/kenji.blog/content/post/biography-alan-kay/index.zh-cn.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-tw for biography-alan-kay",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-alan-kay/index.md の内容を読み込み、言語コード 'zh-tw' に翻訳して C:/work/kenji.blog/content/post/biography-alan-kay/index.zh-tw.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator es for biography-alan-kay",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-alan-kay/index.md の内容を読み込み、言語コード 'es' に翻訳して C:/work/kenji.blog/content/post/biography-alan-kay/index.es.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator hi for biography-alan-kay",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-alan-kay/index.md の内容を読み込み、言語コード 'hi' に翻訳して C:/work/kenji.blog/content/post/biography-alan-kay/index.hi.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ar for biography-alan-kay",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-alan-kay/index.md の内容を読み込み、言語コード 'ar' に翻訳して C:/work/kenji.blog/content/post/biography-alan-kay/index.ar.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator fr for biography-alan-kay",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-alan-kay/index.md の内容を読み込み、言語コード 'fr' に翻訳して C:/work/kenji.blog/content/post/biography-alan-kay/index.fr.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ru for biography-alan-kay",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-alan-kay/index.md の内容を読み込み、言語コード 'ru' に翻訳して C:/work/kenji.blog/content/post/biography-alan-kay/index.ru.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator pt for biography-alan-kay",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-alan-kay/index.md の内容を読み込み、言語コード 'pt' に翻訳して C:/work/kenji.blog/content/post/biography-alan-kay/index.pt.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator id for biography-alan-kay",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-alan-kay/index.md の内容を読み込み、言語コード 'id' に翻訳して C:/work/kenji.blog/content/post/biography-alan-kay/index.id.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator de for biography-alan-kay",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-alan-kay/index.md の内容を読み込み、言語コード 'de' に翻訳して C:/work/kenji.blog/content/post/biography-alan-kay/index.de.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ko for biography-alan-kay",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-alan-kay/index.md の内容を読み込み、言語コード 'ko' に翻訳して C:/work/kenji.blog/content/post/biography-alan-kay/index.ko.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator en for biography-edsger-dijkstra",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-edsger-dijkstra/index.md の内容を読み込み、言語コード 'en' に翻訳して C:/work/kenji.blog/content/post/biography-edsger-dijkstra/index.en.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-cn for biography-edsger-dijkstra",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-edsger-dijkstra/index.md の内容を読み込み、言語コード 'zh-cn' に翻訳して C:/work/kenji.blog/content/post/biography-edsger-dijkstra/index.zh-cn.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-tw for biography-edsger-dijkstra",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-edsger-dijkstra/index.md の内容を読み込み、言語コード 'zh-tw' に翻訳して C:/work/kenji.blog/content/post/biography-edsger-dijkstra/index.zh-tw.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator es for biography-edsger-dijkstra",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-edsger-dijkstra/index.md の内容を読み込み、言語コード 'es' に翻訳して C:/work/kenji.blog/content/post/biography-edsger-dijkstra/index.es.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator hi for biography-edsger-dijkstra",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-edsger-dijkstra/index.md の内容を読み込み、言語コード 'hi' に翻訳して C:/work/kenji.blog/content/post/biography-edsger-dijkstra/index.hi.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ar for biography-edsger-dijkstra",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-edsger-dijkstra/index.md の内容を読み込み、言語コード 'ar' に翻訳して C:/work/kenji.blog/content/post/biography-edsger-dijkstra/index.ar.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator fr for biography-edsger-dijkstra",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-edsger-dijkstra/index.md の内容を読み込み、言語コード 'fr' に翻訳して C:/work/kenji.blog/content/post/biography-edsger-dijkstra/index.fr.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ru for biography-edsger-dijkstra",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-edsger-dijkstra/index.md の内容を読み込み、言語コード 'ru' に翻訳して C:/work/kenji.blog/content/post/biography-edsger-dijkstra/index.ru.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator pt for biography-edsger-dijkstra",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-edsger-dijkstra/index.md の内容を読み込み、言語コード 'pt' に翻訳して C:/work/kenji.blog/content/post/biography-edsger-dijkstra/index.pt.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator id for biography-edsger-dijkstra",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-edsger-dijkstra/index.md の内容を読み込み、言語コード 'id' に翻訳して C:/work/kenji.blog/content/post/biography-edsger-dijkstra/index.id.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator de for biography-edsger-dijkstra",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-edsger-dijkstra/index.md の内容を読み込み、言語コード 'de' に翻訳して C:/work/kenji.blog/content/post/biography-edsger-dijkstra/index.de.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ko for biography-edsger-dijkstra",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-edsger-dijkstra/index.md の内容を読み込み、言語コード 'ko' に翻訳して C:/work/kenji.blog/content/post/biography-edsger-dijkstra/index.ko.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator en for biography-donald-knuth",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-donald-knuth/index.md の内容を読み込み、言語コード 'en' に翻訳して C:/work/kenji.blog/content/post/biography-donald-knuth/index.en.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-cn for biography-donald-knuth",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-donald-knuth/index.md の内容を読み込み、言語コード 'zh-cn' に翻訳して C:/work/kenji.blog/content/post/biography-donald-knuth/index.zh-cn.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-tw for biography-donald-knuth",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-donald-knuth/index.md の内容を読み込み、言語コード 'zh-tw' に翻訳して C:/work/kenji.blog/content/post/biography-donald-knuth/index.zh-tw.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator es for biography-donald-knuth",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-donald-knuth/index.md の内容を読み込み、言語コード 'es' に翻訳して C:/work/kenji.blog/content/post/biography-donald-knuth/index.es.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator hi for biography-donald-knuth",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-donald-knuth/index.md の内容を読み込み、言語コード 'hi' に翻訳して C:/work/kenji.blog/content/post/biography-donald-knuth/index.hi.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ar for biography-donald-knuth",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-donald-knuth/index.md の内容を読み込み、言語コード 'ar' に翻訳して C:/work/kenji.blog/content/post/biography-donald-knuth/index.ar.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator fr for biography-donald-knuth",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-donald-knuth/index.md の内容を読み込み、言語コード 'fr' に翻訳して C:/work/kenji.blog/content/post/biography-donald-knuth/index.fr.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ru for biography-donald-knuth",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-donald-knuth/index.md の内容を読み込み、言語コード 'ru' に翻訳して C:/work/kenji.blog/content/post/biography-donald-knuth/index.ru.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator pt for biography-donald-knuth",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-donald-knuth/index.md の内容を読み込み、言語コード 'pt' に翻訳して C:/work/kenji.blog/content/post/biography-donald-knuth/index.pt.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator id for biography-donald-knuth",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-donald-knuth/index.md の内容を読み込み、言語コード 'id' に翻訳して C:/work/kenji.blog/content/post/biography-donald-knuth/index.id.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator de for biography-donald-knuth",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-donald-knuth/index.md の内容を読み込み、言語コード 'de' に翻訳して C:/work/kenji.blog/content/post/biography-donald-knuth/index.de.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ko for biography-donald-knuth",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-donald-knuth/index.md の内容を読み込み、言語コード 'ko' に翻訳して C:/work/kenji.blog/content/post/biography-donald-knuth/index.ko.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator en for biography-guido-van-rossum",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-guido-van-rossum/index.md の内容を読み込み、言語コード 'en' に翻訳して C:/work/kenji.blog/content/post/biography-guido-van-rossum/index.en.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-cn for biography-guido-van-rossum",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-guido-van-rossum/index.md の内容を読み込み、言語コード 'zh-cn' に翻訳して C:/work/kenji.blog/content/post/biography-guido-van-rossum/index.zh-cn.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-tw for biography-guido-van-rossum",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-guido-van-rossum/index.md の内容を読み込み、言語コード 'zh-tw' に翻訳して C:/work/kenji.blog/content/post/biography-guido-van-rossum/index.zh-tw.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator es for biography-guido-van-rossum",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-guido-van-rossum/index.md の内容を読み込み、言語コード 'es' に翻訳して C:/work/kenji.blog/content/post/biography-guido-van-rossum/index.es.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator hi for biography-guido-van-rossum",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-guido-van-rossum/index.md の内容を読み込み、言語コード 'hi' に翻訳して C:/work/kenji.blog/content/post/biography-guido-van-rossum/index.hi.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ar for biography-guido-van-rossum",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-guido-van-rossum/index.md の内容を読み込み、言語コード 'ar' に翻訳して C:/work/kenji.blog/content/post/biography-guido-van-rossum/index.ar.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator fr for biography-guido-van-rossum",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-guido-van-rossum/index.md の内容を読み込み、言語コード 'fr' に翻訳して C:/work/kenji.blog/content/post/biography-guido-van-rossum/index.fr.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ru for biography-guido-van-rossum",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-guido-van-rossum/index.md の内容を読み込み、言語コード 'ru' に翻訳して C:/work/kenji.blog/content/post/biography-guido-van-rossum/index.ru.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator pt for biography-guido-van-rossum",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-guido-van-rossum/index.md の内容を読み込み、言語コード 'pt' に翻訳して C:/work/kenji.blog/content/post/biography-guido-van-rossum/index.pt.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator id for biography-guido-van-rossum",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-guido-van-rossum/index.md の内容を読み込み、言語コード 'id' に翻訳して C:/work/kenji.blog/content/post/biography-guido-van-rossum/index.id.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator de for biography-guido-van-rossum",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-guido-van-rossum/index.md の内容を読み込み、言語コード 'de' に翻訳して C:/work/kenji.blog/content/post/biography-guido-van-rossum/index.de.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ko for biography-guido-van-rossum",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-guido-van-rossum/index.md の内容を読み込み、言語コード 'ko' に翻訳して C:/work/kenji.blog/content/post/biography-guido-van-rossum/index.ko.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator en for biography-mark-zuckerberg",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-mark-zuckerberg/index.md の内容を読み込み、言語コード 'en' に翻訳して C:/work/kenji.blog/content/post/biography-mark-zuckerberg/index.en.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-cn for biography-mark-zuckerberg",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-mark-zuckerberg/index.md の内容を読み込み、言語コード 'zh-cn' に翻訳して C:/work/kenji.blog/content/post/biography-mark-zuckerberg/index.zh-cn.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-tw for biography-mark-zuckerberg",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-mark-zuckerberg/index.md の内容を読み込み、言語コード 'zh-tw' に翻訳して C:/work/kenji.blog/content/post/biography-mark-zuckerberg/index.zh-tw.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator es for biography-mark-zuckerberg",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-mark-zuckerberg/index.md の内容を読み込み、言語コード 'es' に翻訳して C:/work/kenji.blog/content/post/biography-mark-zuckerberg/index.es.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator hi for biography-mark-zuckerberg",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-mark-zuckerberg/index.md の内容を読み込み、言語コード 'hi' に翻訳して C:/work/kenji.blog/content/post/biography-mark-zuckerberg/index.hi.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ar for biography-mark-zuckerberg",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-mark-zuckerberg/index.md の内容を読み込み、言語コード 'ar' に翻訳して C:/work/kenji.blog/content/post/biography-mark-zuckerberg/index.ar.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator fr for biography-mark-zuckerberg",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-mark-zuckerberg/index.md の内容を読み込み、言語コード 'fr' に翻訳して C:/work/kenji.blog/content/post/biography-mark-zuckerberg/index.fr.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ru for biography-mark-zuckerberg",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-mark-zuckerberg/index.md の内容を読み込み、言語コード 'ru' に翻訳して C:/work/kenji.blog/content/post/biography-mark-zuckerberg/index.ru.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator pt for biography-mark-zuckerberg",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-mark-zuckerberg/index.md の内容を読み込み、言語コード 'pt' に翻訳して C:/work/kenji.blog/content/post/biography-mark-zuckerberg/index.pt.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator id for biography-mark-zuckerberg",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-mark-zuckerberg/index.md の内容を読み込み、言語コード 'id' に翻訳して C:/work/kenji.blog/content/post/biography-mark-zuckerberg/index.id.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator de for biography-mark-zuckerberg",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-mark-zuckerberg/index.md の内容を読み込み、言語コード 'de' に翻訳して C:/work/kenji.blog/content/post/biography-mark-zuckerberg/index.de.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ko for biography-mark-zuckerberg",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-mark-zuckerberg/index.md の内容を読み込み、言語コード 'ko' に翻訳して C:/work/kenji.blog/content/post/biography-mark-zuckerberg/index.ko.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator en for biography-marc-andreessen",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-marc-andreessen/index.md の内容を読み込み、言語コード 'en' に翻訳して C:/work/kenji.blog/content/post/biography-marc-andreessen/index.en.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-cn for biography-marc-andreessen",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-marc-andreessen/index.md の内容を読み込み、言語コード 'zh-cn' に翻訳して C:/work/kenji.blog/content/post/biography-marc-andreessen/index.zh-cn.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-tw for biography-marc-andreessen",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-marc-andreessen/index.md の内容を読み込み、言語コード 'zh-tw' に翻訳して C:/work/kenji.blog/content/post/biography-marc-andreessen/index.zh-tw.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator es for biography-marc-andreessen",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-marc-andreessen/index.md の内容を読み込み、言語コード 'es' に翻訳して C:/work/kenji.blog/content/post/biography-marc-andreessen/index.es.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator hi for biography-marc-andreessen",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-marc-andreessen/index.md の内容を読み込み、言語コード 'hi' に翻訳して C:/work/kenji.blog/content/post/biography-marc-andreessen/index.hi.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ar for biography-marc-andreessen",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-marc-andreessen/index.md の内容を読み込み、言語コード 'ar' に翻訳して C:/work/kenji.blog/content/post/biography-marc-andreessen/index.ar.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator fr for biography-marc-andreessen",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-marc-andreessen/index.md の内容を読み込み、言語コード 'fr' に翻訳して C:/work/kenji.blog/content/post/biography-marc-andreessen/index.fr.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ru for biography-marc-andreessen",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-marc-andreessen/index.md の内容を読み込み、言語コード 'ru' に翻訳して C:/work/kenji.blog/content/post/biography-marc-andreessen/index.ru.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator pt for biography-marc-andreessen",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-marc-andreessen/index.md の内容を読み込み、言語コード 'pt' に翻訳して C:/work/kenji.blog/content/post/biography-marc-andreessen/index.pt.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator id for biography-marc-andreessen",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-marc-andreessen/index.md の内容を読み込み、言語コード 'id' に翻訳して C:/work/kenji.blog/content/post/biography-marc-andreessen/index.id.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator de for biography-marc-andreessen",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-marc-andreessen/index.md の内容を読み込み、言語コード 'de' に翻訳して C:/work/kenji.blog/content/post/biography-marc-andreessen/index.de.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ko for biography-marc-andreessen",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-marc-andreessen/index.md の内容を読み込み、言語コード 'ko' に翻訳して C:/work/kenji.blog/content/post/biography-marc-andreessen/index.ko.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator en for biography-frederick-brooks",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-frederick-brooks/index.md の内容を読み込み、言語コード 'en' に翻訳して C:/work/kenji.blog/content/post/biography-frederick-brooks/index.en.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-cn for biography-frederick-brooks",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-frederick-brooks/index.md の内容を読み込み、言語コード 'zh-cn' に翻訳して C:/work/kenji.blog/content/post/biography-frederick-brooks/index.zh-cn.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-tw for biography-frederick-brooks",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-frederick-brooks/index.md の内容を読み込み、言語コード 'zh-tw' に翻訳して C:/work/kenji.blog/content/post/biography-frederick-brooks/index.zh-tw.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator es for biography-frederick-brooks",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-frederick-brooks/index.md の内容を読み込み、言語コード 'es' に翻訳して C:/work/kenji.blog/content/post/biography-frederick-brooks/index.es.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator hi for biography-frederick-brooks",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-frederick-brooks/index.md の内容を読み込み、言語コード 'hi' に翻訳して C:/work/kenji.blog/content/post/biography-frederick-brooks/index.hi.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ar for biography-frederick-brooks",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-frederick-brooks/index.md の内容を読み込み、言語コード 'ar' に翻訳して C:/work/kenji.blog/content/post/biography-frederick-brooks/index.ar.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator fr for biography-frederick-brooks",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-frederick-brooks/index.md の内容を読み込み、言語コード 'fr' に翻訳して C:/work/kenji.blog/content/post/biography-frederick-brooks/index.fr.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ru for biography-frederick-brooks",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-frederick-brooks/index.md の内容を読み込み、言語コード 'ru' に翻訳して C:/work/kenji.blog/content/post/biography-frederick-brooks/index.ru.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator pt for biography-frederick-brooks",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-frederick-brooks/index.md の内容を読み込み、言語コード 'pt' に翻訳して C:/work/kenji.blog/content/post/biography-frederick-brooks/index.pt.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator id for biography-frederick-brooks",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-frederick-brooks/index.md の内容を読み込み、言語コード 'id' に翻訳して C:/work/kenji.blog/content/post/biography-frederick-brooks/index.id.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator de for biography-frederick-brooks",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-frederick-brooks/index.md の内容を読み込み、言語コード 'de' に翻訳して C:/work/kenji.blog/content/post/biography-frederick-brooks/index.de.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ko for biography-frederick-brooks",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-frederick-brooks/index.md の内容を読み込み、言語コード 'ko' に翻訳して C:/work/kenji.blog/content/post/biography-frederick-brooks/index.ko.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator en for biography-martin-fowler",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-martin-fowler/index.md の内容を読み込み、言語コード 'en' に翻訳して C:/work/kenji.blog/content/post/biography-martin-fowler/index.en.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-cn for biography-martin-fowler",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-martin-fowler/index.md の内容を読み込み、言語コード 'zh-cn' に翻訳して C:/work/kenji.blog/content/post/biography-martin-fowler/index.zh-cn.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-tw for biography-martin-fowler",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-martin-fowler/index.md の内容を読み込み、言語コード 'zh-tw' に翻訳して C:/work/kenji.blog/content/post/biography-martin-fowler/index.zh-tw.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator es for biography-martin-fowler",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-martin-fowler/index.md の内容を読み込み、言語コード 'es' に翻訳して C:/work/kenji.blog/content/post/biography-martin-fowler/index.es.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator hi for biography-martin-fowler",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-martin-fowler/index.md の内容を読み込み、言語コード 'hi' に翻訳して C:/work/kenji.blog/content/post/biography-martin-fowler/index.hi.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ar for biography-martin-fowler",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-martin-fowler/index.md の内容を読み込み、言語コード 'ar' に翻訳して C:/work/kenji.blog/content/post/biography-martin-fowler/index.ar.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator fr for biography-martin-fowler",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-martin-fowler/index.md の内容を読み込み、言語コード 'fr' に翻訳して C:/work/kenji.blog/content/post/biography-martin-fowler/index.fr.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ru for biography-martin-fowler",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-martin-fowler/index.md の内容を読み込み、言語コード 'ru' に翻訳して C:/work/kenji.blog/content/post/biography-martin-fowler/index.ru.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator pt for biography-martin-fowler",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-martin-fowler/index.md の内容を読み込み、言語コード 'pt' に翻訳して C:/work/kenji.blog/content/post/biography-martin-fowler/index.pt.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator id for biography-martin-fowler",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-martin-fowler/index.md の内容を読み込み、言語コード 'id' に翻訳して C:/work/kenji.blog/content/post/biography-martin-fowler/index.id.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator de for biography-martin-fowler",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-martin-fowler/index.md の内容を読み込み、言語コード 'de' に翻訳して C:/work/kenji.blog/content/post/biography-martin-fowler/index.de.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ko for biography-martin-fowler",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-martin-fowler/index.md の内容を読み込み、言語コード 'ko' に翻訳して C:/work/kenji.blog/content/post/biography-martin-fowler/index.ko.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator en for biography-steve-mcconnell",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-steve-mcconnell/index.md の内容を読み込み、言語コード 'en' に翻訳して C:/work/kenji.blog/content/post/biography-steve-mcconnell/index.en.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-cn for biography-steve-mcconnell",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-steve-mcconnell/index.md の内容を読み込み、言語コード 'zh-cn' に翻訳して C:/work/kenji.blog/content/post/biography-steve-mcconnell/index.zh-cn.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-tw for biography-steve-mcconnell",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-steve-mcconnell/index.md の内容を読み込み、言語コード 'zh-tw' に翻訳して C:/work/kenji.blog/content/post/biography-steve-mcconnell/index.zh-tw.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator es for biography-steve-mcconnell",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-steve-mcconnell/index.md の内容を読み込み、言語コード 'es' に翻訳して C:/work/kenji.blog/content/post/biography-steve-mcconnell/index.es.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator hi for biography-steve-mcconnell",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-steve-mcconnell/index.md の内容を読み込み、言語コード 'hi' に翻訳して C:/work/kenji.blog/content/post/biography-steve-mcconnell/index.hi.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ar for biography-steve-mcconnell",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-steve-mcconnell/index.md の内容を読み込み、言語コード 'ar' に翻訳して C:/work/kenji.blog/content/post/biography-steve-mcconnell/index.ar.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator fr for biography-steve-mcconnell",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-steve-mcconnell/index.md の内容を読み込み、言語コード 'fr' に翻訳して C:/work/kenji.blog/content/post/biography-steve-mcconnell/index.fr.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ru for biography-steve-mcconnell",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-steve-mcconnell/index.md の内容を読み込み、言語コード 'ru' に翻訳して C:/work/kenji.blog/content/post/biography-steve-mcconnell/index.ru.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator pt for biography-steve-mcconnell",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-steve-mcconnell/index.md の内容を読み込み、言語コード 'pt' に翻訳して C:/work/kenji.blog/content/post/biography-steve-mcconnell/index.pt.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator id for biography-steve-mcconnell",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-steve-mcconnell/index.md の内容を読み込み、言語コード 'id' に翻訳して C:/work/kenji.blog/content/post/biography-steve-mcconnell/index.id.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator de for biography-steve-mcconnell",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-steve-mcconnell/index.md の内容を読み込み、言語コード 'de' に翻訳して C:/work/kenji.blog/content/post/biography-steve-mcconnell/index.de.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ko for biography-steve-mcconnell",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-steve-mcconnell/index.md の内容を読み込み、言語コード 'ko' に翻訳して C:/work/kenji.blog/content/post/biography-steve-mcconnell/index.ko.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator en for biography-car-hoare",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-car-hoare/index.md の内容を読み込み、言語コード 'en' に翻訳して C:/work/kenji.blog/content/post/biography-car-hoare/index.en.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-cn for biography-car-hoare",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-car-hoare/index.md の内容を読み込み、言語コード 'zh-cn' に翻訳して C:/work/kenji.blog/content/post/biography-car-hoare/index.zh-cn.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-tw for biography-car-hoare",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-car-hoare/index.md の内容を読み込み、言語コード 'zh-tw' に翻訳して C:/work/kenji.blog/content/post/biography-car-hoare/index.zh-tw.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator es for biography-car-hoare",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-car-hoare/index.md の内容を読み込み、言語コード 'es' に翻訳して C:/work/kenji.blog/content/post/biography-car-hoare/index.es.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator hi for biography-car-hoare",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-car-hoare/index.md の内容を読み込み、言語コード 'hi' に翻訳して C:/work/kenji.blog/content/post/biography-car-hoare/index.hi.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ar for biography-car-hoare",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-car-hoare/index.md の内容を読み込み、言語コード 'ar' に翻訳して C:/work/kenji.blog/content/post/biography-car-hoare/index.ar.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator fr for biography-car-hoare",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-car-hoare/index.md の内容を読み込み、言語コード 'fr' に翻訳して C:/work/kenji.blog/content/post/biography-car-hoare/index.fr.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ru for biography-car-hoare",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-car-hoare/index.md の内容を読み込み、言語コード 'ru' に翻訳して C:/work/kenji.blog/content/post/biography-car-hoare/index.ru.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator pt for biography-car-hoare",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-car-hoare/index.md の内容を読み込み、言語コード 'pt' に翻訳して C:/work/kenji.blog/content/post/biography-car-hoare/index.pt.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator id for biography-car-hoare",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-car-hoare/index.md の内容を読み込み、言語コード 'id' に翻訳して C:/work/kenji.blog/content/post/biography-car-hoare/index.id.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator de for biography-car-hoare",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-car-hoare/index.md の内容を読み込み、言語コード 'de' に翻訳して C:/work/kenji.blog/content/post/biography-car-hoare/index.de.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ko for biography-car-hoare",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-car-hoare/index.md の内容を読み込み、言語コード 'ko' に翻訳して C:/work/kenji.blog/content/post/biography-car-hoare/index.ko.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator en for biography-harold-abelson",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-harold-abelson/index.md の内容を読み込み、言語コード 'en' に翻訳して C:/work/kenji.blog/content/post/biography-harold-abelson/index.en.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-cn for biography-harold-abelson",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-harold-abelson/index.md の内容を読み込み、言語コード 'zh-cn' に翻訳して C:/work/kenji.blog/content/post/biography-harold-abelson/index.zh-cn.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator zh-tw for biography-harold-abelson",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-harold-abelson/index.md の内容を読み込み、言語コード 'zh-tw' に翻訳して C:/work/kenji.blog/content/post/biography-harold-abelson/index.zh-tw.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator es for biography-harold-abelson",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-harold-abelson/index.md の内容を読み込み、言語コード 'es' に翻訳して C:/work/kenji.blog/content/post/biography-harold-abelson/index.es.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator hi for biography-harold-abelson",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-harold-abelson/index.md の内容を読み込み、言語コード 'hi' に翻訳して C:/work/kenji.blog/content/post/biography-harold-abelson/index.hi.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ar for biography-harold-abelson",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-harold-abelson/index.md の内容を読み込み、言語コード 'ar' に翻訳して C:/work/kenji.blog/content/post/biography-harold-abelson/index.ar.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator fr for biography-harold-abelson",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-harold-abelson/index.md の内容を読み込み、言語コード 'fr' に翻訳して C:/work/kenji.blog/content/post/biography-harold-abelson/index.fr.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ru for biography-harold-abelson",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-harold-abelson/index.md の内容を読み込み、言語コード 'ru' に翻訳して C:/work/kenji.blog/content/post/biography-harold-abelson/index.ru.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator pt for biography-harold-abelson",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-harold-abelson/index.md の内容を読み込み、言語コード 'pt' に翻訳して C:/work/kenji.blog/content/post/biography-harold-abelson/index.pt.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator id for biography-harold-abelson",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-harold-abelson/index.md の内容を読み込み、言語コード 'id' に翻訳して C:/work/kenji.blog/content/post/biography-harold-abelson/index.id.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator de for biography-harold-abelson",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-harold-abelson/index.md の内容を読み込み、言語コード 'de' に翻訳して C:/work/kenji.blog/content/post/biography-harold-abelson/index.de.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  },
+  {
+    "Model": "flash",
+    "Role": "Translator ko for biography-harold-abelson",
+    "TypeName": "self",
+    "Prompt": "\nあなたはプロの翻訳者です。\nC:/work/kenji.blog/content/post/biography-harold-abelson/index.md の内容を読み込み、言語コード 'ko' に翻訳して C:/work/kenji.blog/content/post/biography-harold-abelson/index.ko.md に write_to_file してください。\n【必須ルール】\n1. フロントマターの categories と tags は絶対に翻訳せず、元の英語（小文字ハイフン区切り）のまま維持すること！\n2. Mermaid図解の翻訳時、ノード内のテキストは必ずダブルクォートで囲むこと。二重ネストは禁止（例: A[\"Translated Text\"]）。\n3. 数式がある場合は Block math は $$ ... $$、改行は \\\\ とすること。\n"
+  }
+]

@@ -1,5 +1,5 @@
 ---
-title: Konsep Dasar dan Keuntungan Pemrograman Fungsional (Fungsi Murni, Imutabilitas, dan Konsep Monad)
+title: "Konsep Dasar dan Keuntungan Pemrograman Fungsional (Fungsi Murni, Imutabilitas, dan Konsep Monad)"
 description: Menggali lebih dalam tentang paradigma pemrograman fungsional, serta menjelaskan secara menyeluruh keuntungannya melalui konsep fungsi murni, imutabilitas, dan monad.
 slug: functional-programming-concepts-pure-functions-monads
 date: 2026-09-21T14:51:08+09:00

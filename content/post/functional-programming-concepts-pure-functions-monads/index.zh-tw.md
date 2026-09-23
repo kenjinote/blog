@@ -1,5 +1,5 @@
 ---
-title: 函數式編程的基礎與優勢（純函數、不變性與單子的概念）
+title: "函數式編程的基礎與優勢（純函數、不變性與單子的概念）"
 description: 深入探討函數式編程的範式，並從純函數、不變性以及單子的概念中徹底解析其優勢。
 slug: functional-programming-concepts-pure-functions-monads
 date: 2026-09-21T14:51:08+09:00

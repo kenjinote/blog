@@ -3,7 +3,7 @@ categories: ["biography"]
 date: 2026-09-23T19:18:01+09:00
 image: eyecatch.jpg
 tags: ["marc-andreessen", "history"]
-title: O homem que criou o futuro desde os primórdios da internet: a vida e a filosofia de Marc Andreessen
+title: "O homem que criou o futuro desde os primórdios da internet: a vida e a filosofia de Marc Andreessen"
 ---
 
 A pessoa que tornou a internet moderna algo natural e continua moldando o mundo investindo enormes quantias no futuro da tecnologia. Esse é Marc Andreessen. Sendo um dos criadores do navegador da web e cofundador de uma das principais firmas de capital de risco do Vale do Silício, a "Andreessen Horowitz (a16z)", a sua trajetória se sobrepõe à própria história do desenvolvimento da internet.

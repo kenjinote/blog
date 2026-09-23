@@ -3,7 +3,7 @@ categories: ["biography"]
 date: 2026-09-23T19:18:01+09:00
 image: eyecatch.jpg
 tags: ["marc-andreessen", "history"]
-title: Der Mann, der aus der Frühzeit des Internets die Zukunft gestaltet: Leben und Philosophie von Marc Andreessen
+title: "Der Mann, der aus der Frühzeit des Internets die Zukunft gestaltet: Leben und Philosophie von Marc Andreessen"
 ---
 
 Eine Person, die das moderne Internet zu einer Selbstverständlichkeit gemacht hat und die Welt weiterhin formt, indem sie riesige Geldsummen in die Zukunft der Technologie investiert. Das ist Marc Andreessen. Als einer der Väter des Webbrowsers und Mitbegründer der repräsentativen Silicon-Valley-Risikokapitalfirma „Andreessen Horowitz (a16z)“ überschneidet sich sein Werdegang direkt mit der Entwicklungsgeschichte des Internets.

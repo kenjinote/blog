@@ -3,7 +3,7 @@ categories: ["biography"]
 date: 2026-09-23T19:18:01+09:00
 image: eyecatch.jpg
 tags: ["marc-andreessen", "history"]
-title: 从互联网黎明期到塑造未来的男人：马克·安德森的一生与哲学
+title: "从互联网黎明期到塑造未来的男人：马克·安德森的一生与哲学"
 ---
 
 将现代互联网变成理所当然的存在，并通过向科技未来投入巨额资金持续重塑世界的人，这就是马克·安德森（Marc Andreessen）。作为网页浏览器的联合创始人之一，也是硅谷顶尖风险投资公司“Andreessen Horowitz (a16z)”的联合创始人，他的足迹与互联网的发展史高度重合。

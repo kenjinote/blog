@@ -1,5 +1,5 @@
 ---
-title: 関数型プログラミングの基礎と利点（純粋関数、不変性、モナドの概念）
+title: "関数型プログラミングの基礎と利点（純粋関数、不変性、モナドの概念）"
 description: 関数型プログラミングのパラダイムを深掘りし、純粋関数、不変性、そしてモナドの概念からその利点を徹底的に解説します。
 slug: functional-programming-concepts-pure-functions-monads
 date: 2026-09-21T14:51:08+09:00
