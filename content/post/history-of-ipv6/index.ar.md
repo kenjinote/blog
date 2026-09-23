@@ -5,10 +5,13 @@ slug: "history-of-ipv6"
 date: "2026-09-23T04:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
-  - Network
+    - "technology"
+    - "computer-science"
 tags:
-  - IPv6
-  - Protocol
+    - "network"
+    - "ip"
+    - "ipv4"
+    - "ipv6"
   - Internet
 ---
 
