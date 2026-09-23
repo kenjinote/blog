@@ -37,306 +37,42 @@ Aujourd'hui, les gigantesques LLM tels que ChatGPT sont tous entraînés et inf�
 ## Partie supplémentaire de vérification technique 1
 
 
-### 1. Fondation et aube des graphiques 3D
-Fondée en 1993 par Jensen Huang et d'autres. L'entreprise a commencé par développer des puces (GPU) spécialisées dans le traitement des graphiques 3D pour les jeux vidéo sur PC.
-
-```mermaid
-graph TD
-    CPU["CPU (Traitement Séquentiel)"] --> Slow["Rendu 3D Lent"]
-    GPU["GPU (Traitement Parallèle)"] --> Fast["Rendu 3D Rapide"]
-```
-
-### 2. Naissance de CUDA
-Annoncée en 2006, "CUDA" était une plate-forme révolutionnaire qui permettait d'utiliser les GPU non seulement pour les graphiques mais aussi pour les calculs généraux (GPGPU). Cela a jeté les bases du futur boom de l'IA.
-
-### 3. La révolution du Deep Learning
-Lors du concours ImageNet de 2012, le modèle de deep learning "AlexNet" utilisant des GPU a remporté une victoire écrasante. Suite à cela, les chercheurs en IA ont commencé à réclamer en masse les GPU de NVIDIA.
-
-### 4. Au cœur de l'IA
-Aujourd'hui, les gigantesques LLM tels que ChatGPT sont tous entraînés et inférés sur des dizaines de milliers de GPU NVIDIA (A100 ou H100). NVIDIA s'est métamorphosée en l'une des entreprises les plus cotées en bourse, devenant l'entreprise d'infrastructure de l'ère de l'IA.
-
-
 ## Partie supplémentaire de vérification technique 2
-
-
-### 1. Fondation et aube des graphiques 3D
-Fondée en 1993 par Jensen Huang et d'autres. L'entreprise a commencé par développer des puces (GPU) spécialisées dans le traitement des graphiques 3D pour les jeux vidéo sur PC.
-
-```mermaid
-graph TD
-    CPU["CPU (Traitement Séquentiel)"] --> Slow["Rendu 3D Lent"]
-    GPU["GPU (Traitement Parallèle)"] --> Fast["Rendu 3D Rapide"]
-```
-
-### 2. Naissance de CUDA
-Annoncée en 2006, "CUDA" était une plate-forme révolutionnaire qui permettait d'utiliser les GPU non seulement pour les graphiques mais aussi pour les calculs généraux (GPGPU). Cela a jeté les bases du futur boom de l'IA.
-
-### 3. La révolution du Deep Learning
-Lors du concours ImageNet de 2012, le modèle de deep learning "AlexNet" utilisant des GPU a remporté une victoire écrasante. Suite à cela, les chercheurs en IA ont commencé à réclamer en masse les GPU de NVIDIA.
-
-### 4. Au cœur de l'IA
-Aujourd'hui, les gigantesques LLM tels que ChatGPT sont tous entraînés et inférés sur des dizaines de milliers de GPU NVIDIA (A100 ou H100). NVIDIA s'est métamorphosée en l'une des entreprises les plus cotées en bourse, devenant l'entreprise d'infrastructure de l'ère de l'IA.
 
 
 ## Partie supplémentaire de vérification technique 3
 
 
-### 1. Fondation et aube des graphiques 3D
-Fondée en 1993 par Jensen Huang et d'autres. L'entreprise a commencé par développer des puces (GPU) spécialisées dans le traitement des graphiques 3D pour les jeux vidéo sur PC.
-
-```mermaid
-graph TD
-    CPU["CPU (Traitement Séquentiel)"] --> Slow["Rendu 3D Lent"]
-    GPU["GPU (Traitement Parallèle)"] --> Fast["Rendu 3D Rapide"]
-```
-
-### 2. Naissance de CUDA
-Annoncée en 2006, "CUDA" était une plate-forme révolutionnaire qui permettait d'utiliser les GPU non seulement pour les graphiques mais aussi pour les calculs généraux (GPGPU). Cela a jeté les bases du futur boom de l'IA.
-
-### 3. La révolution du Deep Learning
-Lors du concours ImageNet de 2012, le modèle de deep learning "AlexNet" utilisant des GPU a remporté une victoire écrasante. Suite à cela, les chercheurs en IA ont commencé à réclamer en masse les GPU de NVIDIA.
-
-### 4. Au cœur de l'IA
-Aujourd'hui, les gigantesques LLM tels que ChatGPT sont tous entraînés et inférés sur des dizaines de milliers de GPU NVIDIA (A100 ou H100). NVIDIA s'est métamorphosée en l'une des entreprises les plus cotées en bourse, devenant l'entreprise d'infrastructure de l'ère de l'IA.
-
-
 ## Partie supplémentaire de vérification technique 4
-
-
-### 1. Fondation et aube des graphiques 3D
-Fondée en 1993 par Jensen Huang et d'autres. L'entreprise a commencé par développer des puces (GPU) spécialisées dans le traitement des graphiques 3D pour les jeux vidéo sur PC.
-
-```mermaid
-graph TD
-    CPU["CPU (Traitement Séquentiel)"] --> Slow["Rendu 3D Lent"]
-    GPU["GPU (Traitement Parallèle)"] --> Fast["Rendu 3D Rapide"]
-```
-
-### 2. Naissance de CUDA
-Annoncée en 2006, "CUDA" était une plate-forme révolutionnaire qui permettait d'utiliser les GPU non seulement pour les graphiques mais aussi pour les calculs généraux (GPGPU). Cela a jeté les bases du futur boom de l'IA.
-
-### 3. La révolution du Deep Learning
-Lors du concours ImageNet de 2012, le modèle de deep learning "AlexNet" utilisant des GPU a remporté une victoire écrasante. Suite à cela, les chercheurs en IA ont commencé à réclamer en masse les GPU de NVIDIA.
-
-### 4. Au cœur de l'IA
-Aujourd'hui, les gigantesques LLM tels que ChatGPT sont tous entraînés et inférés sur des dizaines de milliers de GPU NVIDIA (A100 ou H100). NVIDIA s'est métamorphosée en l'une des entreprises les plus cotées en bourse, devenant l'entreprise d'infrastructure de l'ère de l'IA.
 
 
 ## Partie supplémentaire de vérification technique 5
 
 
-### 1. Fondation et aube des graphiques 3D
-Fondée en 1993 par Jensen Huang et d'autres. L'entreprise a commencé par développer des puces (GPU) spécialisées dans le traitement des graphiques 3D pour les jeux vidéo sur PC.
-
-```mermaid
-graph TD
-    CPU["CPU (Traitement Séquentiel)"] --> Slow["Rendu 3D Lent"]
-    GPU["GPU (Traitement Parallèle)"] --> Fast["Rendu 3D Rapide"]
-```
-
-### 2. Naissance de CUDA
-Annoncée en 2006, "CUDA" était une plate-forme révolutionnaire qui permettait d'utiliser les GPU non seulement pour les graphiques mais aussi pour les calculs généraux (GPGPU). Cela a jeté les bases du futur boom de l'IA.
-
-### 3. La révolution du Deep Learning
-Lors du concours ImageNet de 2012, le modèle de deep learning "AlexNet" utilisant des GPU a remporté une victoire écrasante. Suite à cela, les chercheurs en IA ont commencé à réclamer en masse les GPU de NVIDIA.
-
-### 4. Au cœur de l'IA
-Aujourd'hui, les gigantesques LLM tels que ChatGPT sont tous entraînés et inférés sur des dizaines de milliers de GPU NVIDIA (A100 ou H100). NVIDIA s'est métamorphosée en l'une des entreprises les plus cotées en bourse, devenant l'entreprise d'infrastructure de l'ère de l'IA.
-
-
 ## Partie supplémentaire de vérification technique 6
-
-
-### 1. Fondation et aube des graphiques 3D
-Fondée en 1993 par Jensen Huang et d'autres. L'entreprise a commencé par développer des puces (GPU) spécialisées dans le traitement des graphiques 3D pour les jeux vidéo sur PC.
-
-```mermaid
-graph TD
-    CPU["CPU (Traitement Séquentiel)"] --> Slow["Rendu 3D Lent"]
-    GPU["GPU (Traitement Parallèle)"] --> Fast["Rendu 3D Rapide"]
-```
-
-### 2. Naissance de CUDA
-Annoncée en 2006, "CUDA" était une plate-forme révolutionnaire qui permettait d'utiliser les GPU non seulement pour les graphiques mais aussi pour les calculs généraux (GPGPU). Cela a jeté les bases du futur boom de l'IA.
-
-### 3. La révolution du Deep Learning
-Lors du concours ImageNet de 2012, le modèle de deep learning "AlexNet" utilisant des GPU a remporté une victoire écrasante. Suite à cela, les chercheurs en IA ont commencé à réclamer en masse les GPU de NVIDIA.
-
-### 4. Au cœur de l'IA
-Aujourd'hui, les gigantesques LLM tels que ChatGPT sont tous entraînés et inférés sur des dizaines de milliers de GPU NVIDIA (A100 ou H100). NVIDIA s'est métamorphosée en l'une des entreprises les plus cotées en bourse, devenant l'entreprise d'infrastructure de l'ère de l'IA.
 
 
 ## Partie supplémentaire de vérification technique 7
 
 
-### 1. Fondation et aube des graphiques 3D
-Fondée en 1993 par Jensen Huang et d'autres. L'entreprise a commencé par développer des puces (GPU) spécialisées dans le traitement des graphiques 3D pour les jeux vidéo sur PC.
-
-```mermaid
-graph TD
-    CPU["CPU (Traitement Séquentiel)"] --> Slow["Rendu 3D Lent"]
-    GPU["GPU (Traitement Parallèle)"] --> Fast["Rendu 3D Rapide"]
-```
-
-### 2. Naissance de CUDA
-Annoncée en 2006, "CUDA" était une plate-forme révolutionnaire qui permettait d'utiliser les GPU non seulement pour les graphiques mais aussi pour les calculs généraux (GPGPU). Cela a jeté les bases du futur boom de l'IA.
-
-### 3. La révolution du Deep Learning
-Lors du concours ImageNet de 2012, le modèle de deep learning "AlexNet" utilisant des GPU a remporté une victoire écrasante. Suite à cela, les chercheurs en IA ont commencé à réclamer en masse les GPU de NVIDIA.
-
-### 4. Au cœur de l'IA
-Aujourd'hui, les gigantesques LLM tels que ChatGPT sont tous entraînés et inférés sur des dizaines de milliers de GPU NVIDIA (A100 ou H100). NVIDIA s'est métamorphosée en l'une des entreprises les plus cotées en bourse, devenant l'entreprise d'infrastructure de l'ère de l'IA.
-
-
 ## Partie supplémentaire de vérification technique 8
-
-
-### 1. Fondation et aube des graphiques 3D
-Fondée en 1993 par Jensen Huang et d'autres. L'entreprise a commencé par développer des puces (GPU) spécialisées dans le traitement des graphiques 3D pour les jeux vidéo sur PC.
-
-```mermaid
-graph TD
-    CPU["CPU (Traitement Séquentiel)"] --> Slow["Rendu 3D Lent"]
-    GPU["GPU (Traitement Parallèle)"] --> Fast["Rendu 3D Rapide"]
-```
-
-### 2. Naissance de CUDA
-Annoncée en 2006, "CUDA" était une plate-forme révolutionnaire qui permettait d'utiliser les GPU non seulement pour les graphiques mais aussi pour les calculs généraux (GPGPU). Cela a jeté les bases du futur boom de l'IA.
-
-### 3. La révolution du Deep Learning
-Lors du concours ImageNet de 2012, le modèle de deep learning "AlexNet" utilisant des GPU a remporté une victoire écrasante. Suite à cela, les chercheurs en IA ont commencé à réclamer en masse les GPU de NVIDIA.
-
-### 4. Au cœur de l'IA
-Aujourd'hui, les gigantesques LLM tels que ChatGPT sont tous entraînés et inférés sur des dizaines de milliers de GPU NVIDIA (A100 ou H100). NVIDIA s'est métamorphosée en l'une des entreprises les plus cotées en bourse, devenant l'entreprise d'infrastructure de l'ère de l'IA.
 
 
 ## Partie supplémentaire de vérification technique 9
 
 
-### 1. Fondation et aube des graphiques 3D
-Fondée en 1993 par Jensen Huang et d'autres. L'entreprise a commencé par développer des puces (GPU) spécialisées dans le traitement des graphiques 3D pour les jeux vidéo sur PC.
-
-```mermaid
-graph TD
-    CPU["CPU (Traitement Séquentiel)"] --> Slow["Rendu 3D Lent"]
-    GPU["GPU (Traitement Parallèle)"] --> Fast["Rendu 3D Rapide"]
-```
-
-### 2. Naissance de CUDA
-Annoncée en 2006, "CUDA" était une plate-forme révolutionnaire qui permettait d'utiliser les GPU non seulement pour les graphiques mais aussi pour les calculs généraux (GPGPU). Cela a jeté les bases du futur boom de l'IA.
-
-### 3. La révolution du Deep Learning
-Lors du concours ImageNet de 2012, le modèle de deep learning "AlexNet" utilisant des GPU a remporté une victoire écrasante. Suite à cela, les chercheurs en IA ont commencé à réclamer en masse les GPU de NVIDIA.
-
-### 4. Au cœur de l'IA
-Aujourd'hui, les gigantesques LLM tels que ChatGPT sont tous entraînés et inférés sur des dizaines de milliers de GPU NVIDIA (A100 ou H100). NVIDIA s'est métamorphosée en l'une des entreprises les plus cotées en bourse, devenant l'entreprise d'infrastructure de l'ère de l'IA.
-
-
 ## Partie supplémentaire de vérification technique 10
-
-
-### 1. Fondation et aube des graphiques 3D
-Fondée en 1993 par Jensen Huang et d'autres. L'entreprise a commencé par développer des puces (GPU) spécialisées dans le traitement des graphiques 3D pour les jeux vidéo sur PC.
-
-```mermaid
-graph TD
-    CPU["CPU (Traitement Séquentiel)"] --> Slow["Rendu 3D Lent"]
-    GPU["GPU (Traitement Parallèle)"] --> Fast["Rendu 3D Rapide"]
-```
-
-### 2. Naissance de CUDA
-Annoncée en 2006, "CUDA" était une plate-forme révolutionnaire qui permettait d'utiliser les GPU non seulement pour les graphiques mais aussi pour les calculs généraux (GPGPU). Cela a jeté les bases du futur boom de l'IA.
-
-### 3. La révolution du Deep Learning
-Lors du concours ImageNet de 2012, le modèle de deep learning "AlexNet" utilisant des GPU a remporté une victoire écrasante. Suite à cela, les chercheurs en IA ont commencé à réclamer en masse les GPU de NVIDIA.
-
-### 4. Au cœur de l'IA
-Aujourd'hui, les gigantesques LLM tels que ChatGPT sont tous entraînés et inférés sur des dizaines de milliers de GPU NVIDIA (A100 ou H100). NVIDIA s'est métamorphosée en l'une des entreprises les plus cotées en bourse, devenant l'entreprise d'infrastructure de l'ère de l'IA.
 
 
 ## Partie supplémentaire de vérification technique 11
 
 
-### 1. Fondation et aube des graphiques 3D
-Fondée en 1993 par Jensen Huang et d'autres. L'entreprise a commencé par développer des puces (GPU) spécialisées dans le traitement des graphiques 3D pour les jeux vidéo sur PC.
-
-```mermaid
-graph TD
-    CPU["CPU (Traitement Séquentiel)"] --> Slow["Rendu 3D Lent"]
-    GPU["GPU (Traitement Parallèle)"] --> Fast["Rendu 3D Rapide"]
-```
-
-### 2. Naissance de CUDA
-Annoncée en 2006, "CUDA" était une plate-forme révolutionnaire qui permettait d'utiliser les GPU non seulement pour les graphiques mais aussi pour les calculs généraux (GPGPU). Cela a jeté les bases du futur boom de l'IA.
-
-### 3. La révolution du Deep Learning
-Lors du concours ImageNet de 2012, le modèle de deep learning "AlexNet" utilisant des GPU a remporté une victoire écrasante. Suite à cela, les chercheurs en IA ont commencé à réclamer en masse les GPU de NVIDIA.
-
-### 4. Au cœur de l'IA
-Aujourd'hui, les gigantesques LLM tels que ChatGPT sont tous entraînés et inférés sur des dizaines de milliers de GPU NVIDIA (A100 ou H100). NVIDIA s'est métamorphosée en l'une des entreprises les plus cotées en bourse, devenant l'entreprise d'infrastructure de l'ère de l'IA.
-
-
 ## Partie supplémentaire de vérification technique 12
-
-
-### 1. Fondation et aube des graphiques 3D
-Fondée en 1993 par Jensen Huang et d'autres. L'entreprise a commencé par développer des puces (GPU) spécialisées dans le traitement des graphiques 3D pour les jeux vidéo sur PC.
-
-```mermaid
-graph TD
-    CPU["CPU (Traitement Séquentiel)"] --> Slow["Rendu 3D Lent"]
-    GPU["GPU (Traitement Parallèle)"] --> Fast["Rendu 3D Rapide"]
-```
-
-### 2. Naissance de CUDA
-Annoncée en 2006, "CUDA" était une plate-forme révolutionnaire qui permettait d'utiliser les GPU non seulement pour les graphiques mais aussi pour les calculs généraux (GPGPU). Cela a jeté les bases du futur boom de l'IA.
-
-### 3. La révolution du Deep Learning
-Lors du concours ImageNet de 2012, le modèle de deep learning "AlexNet" utilisant des GPU a remporté une victoire écrasante. Suite à cela, les chercheurs en IA ont commencé à réclamer en masse les GPU de NVIDIA.
-
-### 4. Au cœur de l'IA
-Aujourd'hui, les gigantesques LLM tels que ChatGPT sont tous entraînés et inférés sur des dizaines de milliers de GPU NVIDIA (A100 ou H100). NVIDIA s'est métamorphosée en l'une des entreprises les plus cotées en bourse, devenant l'entreprise d'infrastructure de l'ère de l'IA.
 
 
 ## Partie supplémentaire de vérification technique 13
 
 
-### 1. Fondation et aube des graphiques 3D
-Fondée en 1993 par Jensen Huang et d'autres. L'entreprise a commencé par développer des puces (GPU) spécialisées dans le traitement des graphiques 3D pour les jeux vidéo sur PC.
-
-```mermaid
-graph TD
-    CPU["CPU (Traitement Séquentiel)"] --> Slow["Rendu 3D Lent"]
-    GPU["GPU (Traitement Parallèle)"] --> Fast["Rendu 3D Rapide"]
-```
-
-### 2. Naissance de CUDA
-Annoncée en 2006, "CUDA" était une plate-forme révolutionnaire qui permettait d'utiliser les GPU non seulement pour les graphiques mais aussi pour les calculs généraux (GPGPU). Cela a jeté les bases du futur boom de l'IA.
-
-### 3. La révolution du Deep Learning
-Lors du concours ImageNet de 2012, le modèle de deep learning "AlexNet" utilisant des GPU a remporté une victoire écrasante. Suite à cela, les chercheurs en IA ont commencé à réclamer en masse les GPU de NVIDIA.
-
-### 4. Au cœur de l'IA
-Aujourd'hui, les gigantesques LLM tels que ChatGPT sont tous entraînés et inférés sur des dizaines de milliers de GPU NVIDIA (A100 ou H100). NVIDIA s'est métamorphosée en l'une des entreprises les plus cotées en bourse, devenant l'entreprise d'infrastructure de l'ère de l'IA.
-
-
 ## Partie supplémentaire de vérification technique 14
 
 
-### 1. Fondation et aube des graphiques 3D
-Fondée en 1993 par Jensen Huang et d'autres. L'entreprise a commencé par développer des puces (GPU) spécialisées dans le traitement des graphiques 3D pour les jeux vidéo sur PC.
-
-```mermaid
-graph TD
-    CPU["CPU (Traitement Séquentiel)"] --> Slow["Rendu 3D Lent"]
-    GPU["GPU (Traitement Parallèle)"] --> Fast["Rendu 3D Rapide"]
-```
-
-### 2. Naissance de CUDA
-Annoncée en 2006, "CUDA" était une plate-forme révolutionnaire qui permettait d'utiliser les GPU non seulement pour les graphiques mais aussi pour les calculs généraux (GPGPU). Cela a jeté les bases du futur boom de l'IA.
-
-### 3. La révolution du Deep Learning
-Lors du concours ImageNet de 2012, le modèle de deep learning "AlexNet" utilisant des GPU a remporté une victoire écrasante. Suite à cela, les chercheurs en IA ont commencé à réclamer en masse les GPU de NVIDIA.
-
-### 4. Au cœur de l'IA
-Aujourd'hui, les gigantesques LLM tels que ChatGPT sont tous entraînés et inférés sur des dizaines de milliers de GPU NVIDIA (A100 ou H100). NVIDIA s'est métamorphosée en l'une des entreprises les plus cotées en bourse, devenant l'entreprise d'infrastructure de l'ère de l'IA.

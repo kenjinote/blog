@@ -38,334 +38,42 @@ Teknologi inti macOS kemudian dioptimalkan menjadi "iOS" untuk iPhone, membangun
 ## Bagian Verifikasi Teknologi Tambahan 1
 
 
-### 1. Keterbatasan Mac OS Klasik
-Sejak kemunculan Macintosh pada tahun 1984, OS Apple (System 1 hingga Mac OS 9) memang inovatif, namun tidak memiliki perlindungan memori dan preemptive multitasking, sehingga memiliki masalah stabilitas.
-
-### 2. Garis Keturunan NeXTSTEP
-OS "NeXTSTEP" dari perusahaan NeXT yang didirikan oleh Jobs, berbasis pada kernel Mach yang kuat dan BSD UNIX. Pada tahun 1997, Apple mengakuisisi NeXT dan menjadikan garis keturunan UNIX ini sebagai fondasi untuk Mac OS generasi berikutnya.
-
-```mermaid
-graph TD
-    BSD["BSD UNIX"] --> NeXT["NeXTSTEP"]
-    Mach["Kernel Mach"] --> NeXT
-    NeXT --> OSX["Mac OS X (2001)"]
-    OSX --> macOS["macOS / iOS"]
-```
-
-### 3. Kelahiran Mac OS X
-Dirilis pada tahun 2001, Mac OS X adalah OS hibrida di mana UNIX yang tangguh (kernel Darwin) berjalan di balik GUI yang indah yaitu antarmuka Aqua.
-
-### 4. Dari UNIX ke OS Seluler
-Teknologi inti macOS kemudian dioptimalkan menjadi "iOS" untuk iPhone, membangun ekosistem yang kuat yang menjadi fondasi bagi semua perangkat Apple.
-
-
 ## Bagian Verifikasi Teknologi Tambahan 2
-
-
-### 1. Keterbatasan Mac OS Klasik
-Sejak kemunculan Macintosh pada tahun 1984, OS Apple (System 1 hingga Mac OS 9) memang inovatif, namun tidak memiliki perlindungan memori dan preemptive multitasking, sehingga memiliki masalah stabilitas.
-
-### 2. Garis Keturunan NeXTSTEP
-OS "NeXTSTEP" dari perusahaan NeXT yang didirikan oleh Jobs, berbasis pada kernel Mach yang kuat dan BSD UNIX. Pada tahun 1997, Apple mengakuisisi NeXT dan menjadikan garis keturunan UNIX ini sebagai fondasi untuk Mac OS generasi berikutnya.
-
-```mermaid
-graph TD
-    BSD["BSD UNIX"] --> NeXT["NeXTSTEP"]
-    Mach["Kernel Mach"] --> NeXT
-    NeXT --> OSX["Mac OS X (2001)"]
-    OSX --> macOS["macOS / iOS"]
-```
-
-### 3. Kelahiran Mac OS X
-Dirilis pada tahun 2001, Mac OS X adalah OS hibrida di mana UNIX yang tangguh (kernel Darwin) berjalan di balik GUI yang indah yaitu antarmuka Aqua.
-
-### 4. Dari UNIX ke OS Seluler
-Teknologi inti macOS kemudian dioptimalkan menjadi "iOS" untuk iPhone, membangun ekosistem yang kuat yang menjadi fondasi bagi semua perangkat Apple.
 
 
 ## Bagian Verifikasi Teknologi Tambahan 3
 
 
-### 1. Keterbatasan Mac OS Klasik
-Sejak kemunculan Macintosh pada tahun 1984, OS Apple (System 1 hingga Mac OS 9) memang inovatif, namun tidak memiliki perlindungan memori dan preemptive multitasking, sehingga memiliki masalah stabilitas.
-
-### 2. Garis Keturunan NeXTSTEP
-OS "NeXTSTEP" dari perusahaan NeXT yang didirikan oleh Jobs, berbasis pada kernel Mach yang kuat dan BSD UNIX. Pada tahun 1997, Apple mengakuisisi NeXT dan menjadikan garis keturunan UNIX ini sebagai fondasi untuk Mac OS generasi berikutnya.
-
-```mermaid
-graph TD
-    BSD["BSD UNIX"] --> NeXT["NeXTSTEP"]
-    Mach["Kernel Mach"] --> NeXT
-    NeXT --> OSX["Mac OS X (2001)"]
-    OSX --> macOS["macOS / iOS"]
-```
-
-### 3. Kelahiran Mac OS X
-Dirilis pada tahun 2001, Mac OS X adalah OS hibrida di mana UNIX yang tangguh (kernel Darwin) berjalan di balik GUI yang indah yaitu antarmuka Aqua.
-
-### 4. Dari UNIX ke OS Seluler
-Teknologi inti macOS kemudian dioptimalkan menjadi "iOS" untuk iPhone, membangun ekosistem yang kuat yang menjadi fondasi bagi semua perangkat Apple.
-
-
 ## Bagian Verifikasi Teknologi Tambahan 4
-
-
-### 1. Keterbatasan Mac OS Klasik
-Sejak kemunculan Macintosh pada tahun 1984, OS Apple (System 1 hingga Mac OS 9) memang inovatif, namun tidak memiliki perlindungan memori dan preemptive multitasking, sehingga memiliki masalah stabilitas.
-
-### 2. Garis Keturunan NeXTSTEP
-OS "NeXTSTEP" dari perusahaan NeXT yang didirikan oleh Jobs, berbasis pada kernel Mach yang kuat dan BSD UNIX. Pada tahun 1997, Apple mengakuisisi NeXT dan menjadikan garis keturunan UNIX ini sebagai fondasi untuk Mac OS generasi berikutnya.
-
-```mermaid
-graph TD
-    BSD["BSD UNIX"] --> NeXT["NeXTSTEP"]
-    Mach["Kernel Mach"] --> NeXT
-    NeXT --> OSX["Mac OS X (2001)"]
-    OSX --> macOS["macOS / iOS"]
-```
-
-### 3. Kelahiran Mac OS X
-Dirilis pada tahun 2001, Mac OS X adalah OS hibrida di mana UNIX yang tangguh (kernel Darwin) berjalan di balik GUI yang indah yaitu antarmuka Aqua.
-
-### 4. Dari UNIX ke OS Seluler
-Teknologi inti macOS kemudian dioptimalkan menjadi "iOS" untuk iPhone, membangun ekosistem yang kuat yang menjadi fondasi bagi semua perangkat Apple.
 
 
 ## Bagian Verifikasi Teknologi Tambahan 5
 
 
-### 1. Keterbatasan Mac OS Klasik
-Sejak kemunculan Macintosh pada tahun 1984, OS Apple (System 1 hingga Mac OS 9) memang inovatif, namun tidak memiliki perlindungan memori dan preemptive multitasking, sehingga memiliki masalah stabilitas.
-
-### 2. Garis Keturunan NeXTSTEP
-OS "NeXTSTEP" dari perusahaan NeXT yang didirikan oleh Jobs, berbasis pada kernel Mach yang kuat dan BSD UNIX. Pada tahun 1997, Apple mengakuisisi NeXT dan menjadikan garis keturunan UNIX ini sebagai fondasi untuk Mac OS generasi berikutnya.
-
-```mermaid
-graph TD
-    BSD["BSD UNIX"] --> NeXT["NeXTSTEP"]
-    Mach["Kernel Mach"] --> NeXT
-    NeXT --> OSX["Mac OS X (2001)"]
-    OSX --> macOS["macOS / iOS"]
-```
-
-### 3. Kelahiran Mac OS X
-Dirilis pada tahun 2001, Mac OS X adalah OS hibrida di mana UNIX yang tangguh (kernel Darwin) berjalan di balik GUI yang indah yaitu antarmuka Aqua.
-
-### 4. Dari UNIX ke OS Seluler
-Teknologi inti macOS kemudian dioptimalkan menjadi "iOS" untuk iPhone, membangun ekosistem yang kuat yang menjadi fondasi bagi semua perangkat Apple.
-
-
 ## Bagian Verifikasi Teknologi Tambahan 6
-
-
-### 1. Keterbatasan Mac OS Klasik
-Sejak kemunculan Macintosh pada tahun 1984, OS Apple (System 1 hingga Mac OS 9) memang inovatif, namun tidak memiliki perlindungan memori dan preemptive multitasking, sehingga memiliki masalah stabilitas.
-
-### 2. Garis Keturunan NeXTSTEP
-OS "NeXTSTEP" dari perusahaan NeXT yang didirikan oleh Jobs, berbasis pada kernel Mach yang kuat dan BSD UNIX. Pada tahun 1997, Apple mengakuisisi NeXT dan menjadikan garis keturunan UNIX ini sebagai fondasi untuk Mac OS generasi berikutnya.
-
-```mermaid
-graph TD
-    BSD["BSD UNIX"] --> NeXT["NeXTSTEP"]
-    Mach["Kernel Mach"] --> NeXT
-    NeXT --> OSX["Mac OS X (2001)"]
-    OSX --> macOS["macOS / iOS"]
-```
-
-### 3. Kelahiran Mac OS X
-Dirilis pada tahun 2001, Mac OS X adalah OS hibrida di mana UNIX yang tangguh (kernel Darwin) berjalan di balik GUI yang indah yaitu antarmuka Aqua.
-
-### 4. Dari UNIX ke OS Seluler
-Teknologi inti macOS kemudian dioptimalkan menjadi "iOS" untuk iPhone, membangun ekosistem yang kuat yang menjadi fondasi bagi semua perangkat Apple.
 
 
 ## Bagian Verifikasi Teknologi Tambahan 7
 
 
-### 1. Keterbatasan Mac OS Klasik
-Sejak kemunculan Macintosh pada tahun 1984, OS Apple (System 1 hingga Mac OS 9) memang inovatif, namun tidak memiliki perlindungan memori dan preemptive multitasking, sehingga memiliki masalah stabilitas.
-
-### 2. Garis Keturunan NeXTSTEP
-OS "NeXTSTEP" dari perusahaan NeXT yang didirikan oleh Jobs, berbasis pada kernel Mach yang kuat dan BSD UNIX. Pada tahun 1997, Apple mengakuisisi NeXT dan menjadikan garis keturunan UNIX ini sebagai fondasi untuk Mac OS generasi berikutnya.
-
-```mermaid
-graph TD
-    BSD["BSD UNIX"] --> NeXT["NeXTSTEP"]
-    Mach["Kernel Mach"] --> NeXT
-    NeXT --> OSX["Mac OS X (2001)"]
-    OSX --> macOS["macOS / iOS"]
-```
-
-### 3. Kelahiran Mac OS X
-Dirilis pada tahun 2001, Mac OS X adalah OS hibrida di mana UNIX yang tangguh (kernel Darwin) berjalan di balik GUI yang indah yaitu antarmuka Aqua.
-
-### 4. Dari UNIX ke OS Seluler
-Teknologi inti macOS kemudian dioptimalkan menjadi "iOS" untuk iPhone, membangun ekosistem yang kuat yang menjadi fondasi bagi semua perangkat Apple.
-
-
 ## Bagian Verifikasi Teknologi Tambahan 8
-
-
-### 1. Keterbatasan Mac OS Klasik
-Sejak kemunculan Macintosh pada tahun 1984, OS Apple (System 1 hingga Mac OS 9) memang inovatif, namun tidak memiliki perlindungan memori dan preemptive multitasking, sehingga memiliki masalah stabilitas.
-
-### 2. Garis Keturunan NeXTSTEP
-OS "NeXTSTEP" dari perusahaan NeXT yang didirikan oleh Jobs, berbasis pada kernel Mach yang kuat dan BSD UNIX. Pada tahun 1997, Apple mengakuisisi NeXT dan menjadikan garis keturunan UNIX ini sebagai fondasi untuk Mac OS generasi berikutnya.
-
-```mermaid
-graph TD
-    BSD["BSD UNIX"] --> NeXT["NeXTSTEP"]
-    Mach["Kernel Mach"] --> NeXT
-    NeXT --> OSX["Mac OS X (2001)"]
-    OSX --> macOS["macOS / iOS"]
-```
-
-### 3. Kelahiran Mac OS X
-Dirilis pada tahun 2001, Mac OS X adalah OS hibrida di mana UNIX yang tangguh (kernel Darwin) berjalan di balik GUI yang indah yaitu antarmuka Aqua.
-
-### 4. Dari UNIX ke OS Seluler
-Teknologi inti macOS kemudian dioptimalkan menjadi "iOS" untuk iPhone, membangun ekosistem yang kuat yang menjadi fondasi bagi semua perangkat Apple.
 
 
 ## Bagian Verifikasi Teknologi Tambahan 9
 
 
-### 1. Keterbatasan Mac OS Klasik
-Sejak kemunculan Macintosh pada tahun 1984, OS Apple (System 1 hingga Mac OS 9) memang inovatif, namun tidak memiliki perlindungan memori dan preemptive multitasking, sehingga memiliki masalah stabilitas.
-
-### 2. Garis Keturunan NeXTSTEP
-OS "NeXTSTEP" dari perusahaan NeXT yang didirikan oleh Jobs, berbasis pada kernel Mach yang kuat dan BSD UNIX. Pada tahun 1997, Apple mengakuisisi NeXT dan menjadikan garis keturunan UNIX ini sebagai fondasi untuk Mac OS generasi berikutnya.
-
-```mermaid
-graph TD
-    BSD["BSD UNIX"] --> NeXT["NeXTSTEP"]
-    Mach["Kernel Mach"] --> NeXT
-    NeXT --> OSX["Mac OS X (2001)"]
-    OSX --> macOS["macOS / iOS"]
-```
-
-### 3. Kelahiran Mac OS X
-Dirilis pada tahun 2001, Mac OS X adalah OS hibrida di mana UNIX yang tangguh (kernel Darwin) berjalan di balik GUI yang indah yaitu antarmuka Aqua.
-
-### 4. Dari UNIX ke OS Seluler
-Teknologi inti macOS kemudian dioptimalkan menjadi "iOS" untuk iPhone, membangun ekosistem yang kuat yang menjadi fondasi bagi semua perangkat Apple.
-
-
 ## Bagian Verifikasi Teknologi Tambahan 10
-
-
-### 1. Keterbatasan Mac OS Klasik
-Sejak kemunculan Macintosh pada tahun 1984, OS Apple (System 1 hingga Mac OS 9) memang inovatif, namun tidak memiliki perlindungan memori dan preemptive multitasking, sehingga memiliki masalah stabilitas.
-
-### 2. Garis Keturunan NeXTSTEP
-OS "NeXTSTEP" dari perusahaan NeXT yang didirikan oleh Jobs, berbasis pada kernel Mach yang kuat dan BSD UNIX. Pada tahun 1997, Apple mengakuisisi NeXT dan menjadikan garis keturunan UNIX ini sebagai fondasi untuk Mac OS generasi berikutnya.
-
-```mermaid
-graph TD
-    BSD["BSD UNIX"] --> NeXT["NeXTSTEP"]
-    Mach["Kernel Mach"] --> NeXT
-    NeXT --> OSX["Mac OS X (2001)"]
-    OSX --> macOS["macOS / iOS"]
-```
-
-### 3. Kelahiran Mac OS X
-Dirilis pada tahun 2001, Mac OS X adalah OS hibrida di mana UNIX yang tangguh (kernel Darwin) berjalan di balik GUI yang indah yaitu antarmuka Aqua.
-
-### 4. Dari UNIX ke OS Seluler
-Teknologi inti macOS kemudian dioptimalkan menjadi "iOS" untuk iPhone, membangun ekosistem yang kuat yang menjadi fondasi bagi semua perangkat Apple.
 
 
 ## Bagian Verifikasi Teknologi Tambahan 11
 
 
-### 1. Keterbatasan Mac OS Klasik
-Sejak kemunculan Macintosh pada tahun 1984, OS Apple (System 1 hingga Mac OS 9) memang inovatif, namun tidak memiliki perlindungan memori dan preemptive multitasking, sehingga memiliki masalah stabilitas.
-
-### 2. Garis Keturunan NeXTSTEP
-OS "NeXTSTEP" dari perusahaan NeXT yang didirikan oleh Jobs, berbasis pada kernel Mach yang kuat dan BSD UNIX. Pada tahun 1997, Apple mengakuisisi NeXT dan menjadikan garis keturunan UNIX ini sebagai fondasi untuk Mac OS generasi berikutnya.
-
-```mermaid
-graph TD
-    BSD["BSD UNIX"] --> NeXT["NeXTSTEP"]
-    Mach["Kernel Mach"] --> NeXT
-    NeXT --> OSX["Mac OS X (2001)"]
-    OSX --> macOS["macOS / iOS"]
-```
-
-### 3. Kelahiran Mac OS X
-Dirilis pada tahun 2001, Mac OS X adalah OS hibrida di mana UNIX yang tangguh (kernel Darwin) berjalan di balik GUI yang indah yaitu antarmuka Aqua.
-
-### 4. Dari UNIX ke OS Seluler
-Teknologi inti macOS kemudian dioptimalkan menjadi "iOS" untuk iPhone, membangun ekosistem yang kuat yang menjadi fondasi bagi semua perangkat Apple.
-
-
 ## Bagian Verifikasi Teknologi Tambahan 12
-
-
-### 1. Keterbatasan Mac OS Klasik
-Sejak kemunculan Macintosh pada tahun 1984, OS Apple (System 1 hingga Mac OS 9) memang inovatif, namun tidak memiliki perlindungan memori dan preemptive multitasking, sehingga memiliki masalah stabilitas.
-
-### 2. Garis Keturunan NeXTSTEP
-OS "NeXTSTEP" dari perusahaan NeXT yang didirikan oleh Jobs, berbasis pada kernel Mach yang kuat dan BSD UNIX. Pada tahun 1997, Apple mengakuisisi NeXT dan menjadikan garis keturunan UNIX ini sebagai fondasi untuk Mac OS generasi berikutnya.
-
-```mermaid
-graph TD
-    BSD["BSD UNIX"] --> NeXT["NeXTSTEP"]
-    Mach["Kernel Mach"] --> NeXT
-    NeXT --> OSX["Mac OS X (2001)"]
-    OSX --> macOS["macOS / iOS"]
-```
-
-### 3. Kelahiran Mac OS X
-Dirilis pada tahun 2001, Mac OS X adalah OS hibrida di mana UNIX yang tangguh (kernel Darwin) berjalan di balik GUI yang indah yaitu antarmuka Aqua.
-
-### 4. Dari UNIX ke OS Seluler
-Teknologi inti macOS kemudian dioptimalkan menjadi "iOS" untuk iPhone, membangun ekosistem yang kuat yang menjadi fondasi bagi semua perangkat Apple.
 
 
 ## Bagian Verifikasi Teknologi Tambahan 13
 
 
-### 1. Keterbatasan Mac OS Klasik
-Sejak kemunculan Macintosh pada tahun 1984, OS Apple (System 1 hingga Mac OS 9) memang inovatif, namun tidak memiliki perlindungan memori dan preemptive multitasking, sehingga memiliki masalah stabilitas.
-
-### 2. Garis Keturunan NeXTSTEP
-OS "NeXTSTEP" dari perusahaan NeXT yang didirikan oleh Jobs, berbasis pada kernel Mach yang kuat dan BSD UNIX. Pada tahun 1997, Apple mengakuisisi NeXT dan menjadikan garis keturunan UNIX ini sebagai fondasi untuk Mac OS generasi berikutnya.
-
-```mermaid
-graph TD
-    BSD["BSD UNIX"] --> NeXT["NeXTSTEP"]
-    Mach["Kernel Mach"] --> NeXT
-    NeXT --> OSX["Mac OS X (2001)"]
-    OSX --> macOS["macOS / iOS"]
-```
-
-### 3. Kelahiran Mac OS X
-Dirilis pada tahun 2001, Mac OS X adalah OS hibrida di mana UNIX yang tangguh (kernel Darwin) berjalan di balik GUI yang indah yaitu antarmuka Aqua.
-
-### 4. Dari UNIX ke OS Seluler
-Teknologi inti macOS kemudian dioptimalkan menjadi "iOS" untuk iPhone, membangun ekosistem yang kuat yang menjadi fondasi bagi semua perangkat Apple.
-
-
 ## Bagian Verifikasi Teknologi Tambahan 14
 
 
-### 1. Keterbatasan Mac OS Klasik
-Sejak kemunculan Macintosh pada tahun 1984, OS Apple (System 1 hingga Mac OS 9) memang inovatif, namun tidak memiliki perlindungan memori dan preemptive multitasking, sehingga memiliki masalah stabilitas.
-
-### 2. Garis Keturunan NeXTSTEP
-OS "NeXTSTEP" dari perusahaan NeXT yang didirikan oleh Jobs, berbasis pada kernel Mach yang kuat dan BSD UNIX. Pada tahun 1997, Apple mengakuisisi NeXT dan menjadikan garis keturunan UNIX ini sebagai fondasi untuk Mac OS generasi berikutnya.
-
-```mermaid
-graph TD
-    BSD["BSD UNIX"] --> NeXT["NeXTSTEP"]
-    Mach["Kernel Mach"] --> NeXT
-    NeXT --> OSX["Mac OS X (2001)"]
-    OSX --> macOS["macOS / iOS"]
-```
-
-### 3. Kelahiran Mac OS X
-Dirilis pada tahun 2001, Mac OS X adalah OS hibrida di mana UNIX yang tangguh (kernel Darwin) berjalan di balik GUI yang indah yaitu antarmuka Aqua.
-
-### 4. Dari UNIX ke OS Seluler
-Teknologi inti macOS kemudian dioptimalkan menjadi "iOS" untuk iPhone, membangun ekosistem yang kuat yang menjadi fondasi bagi semua perangkat Apple.

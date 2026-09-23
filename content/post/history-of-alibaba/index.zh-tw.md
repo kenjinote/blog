@@ -44,25 +44,8 @@ flowchart LR
 ### 1. 阿里巴巴的創立
 1999年，馬雲在公寓的一個房間裡與18位夥伴共同創立。最初以B2B媒合網站起步。
 
-### 2. Taobao（淘寶網）的成功
-推出C2C平台Taobao，取得了迫使eBay退出中國市場的巨大成功。
-
-```mermaid
-flowchart LR
-    Buyer["買家"] --> Alipay["Alipay (擔保)"]
-    Alipay --> Seller["賣家"]
-    Seller --> Goods["發出商品"]
-    Goods --> Buyer
-    Buyer --> Release["釋放資金"]
-    Release --> Alipay
-```
-
 ### 3. Alipay帶來的信用創造
 在信用卡尚未普及的中國，建立了擔保支付服務「Alipay」。這成為了中國無現金社會的基礎。
-
-### 4. 雲端與雙11
-透過Alibaba Cloud建構基礎設施，以及「雙11（11月11日）」的龐大促銷活動等，至今仍持續引領著中國的數位經濟。
-
 
 ## 追加技術驗證部分 2
 
@@ -70,25 +53,8 @@ flowchart LR
 ### 1. 阿里巴巴的創立
 1999年，馬雲在公寓的一個房間裡與18位夥伴共同創立。最初以B2B媒合網站起步。
 
-### 2. Taobao（淘寶網）的成功
-推出C2C平台Taobao，取得了迫使eBay退出中國市場的巨大成功。
-
-```mermaid
-flowchart LR
-    Buyer["買家"] --> Alipay["Alipay (擔保)"]
-    Alipay --> Seller["賣家"]
-    Seller --> Goods["發出商品"]
-    Goods --> Buyer
-    Buyer --> Release["釋放資金"]
-    Release --> Alipay
-```
-
 ### 3. Alipay帶來的信用創造
 在信用卡尚未普及的中國，建立了擔保支付服務「Alipay」。這成為了中國無現金社會的基礎。
-
-### 4. 雲端與雙11
-透過Alibaba Cloud建構基礎設施，以及「雙11（11月11日）」的龐大促銷活動等，至今仍持續引領著中國的數位經濟。
-
 
 ## 追加技術驗證部分 3
 
@@ -96,25 +62,8 @@ flowchart LR
 ### 1. 阿里巴巴的創立
 1999年，馬雲在公寓的一個房間裡與18位夥伴共同創立。最初以B2B媒合網站起步。
 
-### 2. Taobao（淘寶網）的成功
-推出C2C平台Taobao，取得了迫使eBay退出中國市場的巨大成功。
-
-```mermaid
-flowchart LR
-    Buyer["買家"] --> Alipay["Alipay (擔保)"]
-    Alipay --> Seller["賣家"]
-    Seller --> Goods["發出商品"]
-    Goods --> Buyer
-    Buyer --> Release["釋放資金"]
-    Release --> Alipay
-```
-
 ### 3. Alipay帶來的信用創造
 在信用卡尚未普及的中國，建立了擔保支付服務「Alipay」。這成為了中國無現金社會的基礎。
-
-### 4. 雲端與雙11
-透過Alibaba Cloud建構基礎設施，以及「雙11（11月11日）」的龐大促銷活動等，至今仍持續引領著中國的數位經濟。
-
 
 ## 追加技術驗證部分 4
 
@@ -122,25 +71,8 @@ flowchart LR
 ### 1. 阿里巴巴的創立
 1999年，馬雲在公寓的一個房間裡與18位夥伴共同創立。最初以B2B媒合網站起步。
 
-### 2. Taobao（淘寶網）的成功
-推出C2C平台Taobao，取得了迫使eBay退出中國市場的巨大成功。
-
-```mermaid
-flowchart LR
-    Buyer["買家"] --> Alipay["Alipay (擔保)"]
-    Alipay --> Seller["賣家"]
-    Seller --> Goods["發出商品"]
-    Goods --> Buyer
-    Buyer --> Release["釋放資金"]
-    Release --> Alipay
-```
-
 ### 3. Alipay帶來的信用創造
 在信用卡尚未普及的中國，建立了擔保支付服務「Alipay」。這成為了中國無現金社會的基礎。
-
-### 4. 雲端與雙11
-透過Alibaba Cloud建構基礎設施，以及「雙11（11月11日）」的龐大促銷活動等，至今仍持續引領著中國的數位經濟。
-
 
 ## 追加技術驗證部分 5
 
@@ -148,25 +80,8 @@ flowchart LR
 ### 1. 阿里巴巴的創立
 1999年，馬雲在公寓的一個房間裡與18位夥伴共同創立。最初以B2B媒合網站起步。
 
-### 2. Taobao（淘寶網）的成功
-推出C2C平台Taobao，取得了迫使eBay退出中國市場的巨大成功。
-
-```mermaid
-flowchart LR
-    Buyer["買家"] --> Alipay["Alipay (擔保)"]
-    Alipay --> Seller["賣家"]
-    Seller --> Goods["發出商品"]
-    Goods --> Buyer
-    Buyer --> Release["釋放資金"]
-    Release --> Alipay
-```
-
 ### 3. Alipay帶來的信用創造
 在信用卡尚未普及的中國，建立了擔保支付服務「Alipay」。這成為了中國無現金社會的基礎。
-
-### 4. 雲端與雙11
-透過Alibaba Cloud建構基礎設施，以及「雙11（11月11日）」的龐大促銷活動等，至今仍持續引領著中國的數位經濟。
-
 
 ## 追加技術驗證部分 6
 
@@ -174,25 +89,8 @@ flowchart LR
 ### 1. 阿里巴巴的創立
 1999年，馬雲在公寓的一個房間裡與18位夥伴共同創立。最初以B2B媒合網站起步。
 
-### 2. Taobao（淘寶網）的成功
-推出C2C平台Taobao，取得了迫使eBay退出中國市場的巨大成功。
-
-```mermaid
-flowchart LR
-    Buyer["買家"] --> Alipay["Alipay (擔保)"]
-    Alipay --> Seller["賣家"]
-    Seller --> Goods["發出商品"]
-    Goods --> Buyer
-    Buyer --> Release["釋放資金"]
-    Release --> Alipay
-```
-
 ### 3. Alipay帶來的信用創造
 在信用卡尚未普及的中國，建立了擔保支付服務「Alipay」。這成為了中國無現金社會的基礎。
-
-### 4. 雲端與雙11
-透過Alibaba Cloud建構基礎設施，以及「雙11（11月11日）」的龐大促銷活動等，至今仍持續引領著中國的數位經濟。
-
 
 ## 追加技術驗證部分 7
 
@@ -200,25 +98,8 @@ flowchart LR
 ### 1. 阿里巴巴的創立
 1999年，馬雲在公寓的一個房間裡與18位夥伴共同創立。最初以B2B媒合網站起步。
 
-### 2. Taobao（淘寶網）的成功
-推出C2C平台Taobao，取得了迫使eBay退出中國市場的巨大成功。
-
-```mermaid
-flowchart LR
-    Buyer["買家"] --> Alipay["Alipay (擔保)"]
-    Alipay --> Seller["賣家"]
-    Seller --> Goods["發出商品"]
-    Goods --> Buyer
-    Buyer --> Release["釋放資金"]
-    Release --> Alipay
-```
-
 ### 3. Alipay帶來的信用創造
 在信用卡尚未普及的中國，建立了擔保支付服務「Alipay」。這成為了中國無現金社會的基礎。
-
-### 4. 雲端與雙11
-透過Alibaba Cloud建構基礎設施，以及「雙11（11月11日）」的龐大促銷活動等，至今仍持續引領著中國的數位經濟。
-
 
 ## 追加技術驗證部分 8
 
@@ -226,25 +107,8 @@ flowchart LR
 ### 1. 阿里巴巴的創立
 1999年，馬雲在公寓的一個房間裡與18位夥伴共同創立。最初以B2B媒合網站起步。
 
-### 2. Taobao（淘寶網）的成功
-推出C2C平台Taobao，取得了迫使eBay退出中國市場的巨大成功。
-
-```mermaid
-flowchart LR
-    Buyer["買家"] --> Alipay["Alipay (擔保)"]
-    Alipay --> Seller["賣家"]
-    Seller --> Goods["發出商品"]
-    Goods --> Buyer
-    Buyer --> Release["釋放資金"]
-    Release --> Alipay
-```
-
 ### 3. Alipay帶來的信用創造
 在信用卡尚未普及的中國，建立了擔保支付服務「Alipay」。這成為了中國無現金社會的基礎。
-
-### 4. 雲端與雙11
-透過Alibaba Cloud建構基礎設施，以及「雙11（11月11日）」的龐大促銷活動等，至今仍持續引領著中國的數位經濟。
-
 
 ## 追加技術驗證部分 9
 
@@ -252,25 +116,8 @@ flowchart LR
 ### 1. 阿里巴巴的創立
 1999年，馬雲在公寓的一個房間裡與18位夥伴共同創立。最初以B2B媒合網站起步。
 
-### 2. Taobao（淘寶網）的成功
-推出C2C平台Taobao，取得了迫使eBay退出中國市場的巨大成功。
-
-```mermaid
-flowchart LR
-    Buyer["買家"] --> Alipay["Alipay (擔保)"]
-    Alipay --> Seller["賣家"]
-    Seller --> Goods["發出商品"]
-    Goods --> Buyer
-    Buyer --> Release["釋放資金"]
-    Release --> Alipay
-```
-
 ### 3. Alipay帶來的信用創造
 在信用卡尚未普及的中國，建立了擔保支付服務「Alipay」。這成為了中國無現金社會的基礎。
-
-### 4. 雲端與雙11
-透過Alibaba Cloud建構基礎設施，以及「雙11（11月11日）」的龐大促銷活動等，至今仍持續引領著中國的數位經濟。
-
 
 ## 追加技術驗證部分 10
 
@@ -278,25 +125,8 @@ flowchart LR
 ### 1. 阿里巴巴的創立
 1999年，馬雲在公寓的一個房間裡與18位夥伴共同創立。最初以B2B媒合網站起步。
 
-### 2. Taobao（淘寶網）的成功
-推出C2C平台Taobao，取得了迫使eBay退出中國市場的巨大成功。
-
-```mermaid
-flowchart LR
-    Buyer["買家"] --> Alipay["Alipay (擔保)"]
-    Alipay --> Seller["賣家"]
-    Seller --> Goods["發出商品"]
-    Goods --> Buyer
-    Buyer --> Release["釋放資金"]
-    Release --> Alipay
-```
-
 ### 3. Alipay帶來的信用創造
 在信用卡尚未普及的中國，建立了擔保支付服務「Alipay」。這成為了中國無現金社會的基礎。
-
-### 4. 雲端與雙11
-透過Alibaba Cloud建構基礎設施，以及「雙11（11月11日）」的龐大促銷活動等，至今仍持續引領著中國的數位經濟。
-
 
 ## 追加技術驗證部分 11
 
@@ -304,25 +134,8 @@ flowchart LR
 ### 1. 阿里巴巴的創立
 1999年，馬雲在公寓的一個房間裡與18位夥伴共同創立。最初以B2B媒合網站起步。
 
-### 2. Taobao（淘寶網）的成功
-推出C2C平台Taobao，取得了迫使eBay退出中國市場的巨大成功。
-
-```mermaid
-flowchart LR
-    Buyer["買家"] --> Alipay["Alipay (擔保)"]
-    Alipay --> Seller["賣家"]
-    Seller --> Goods["發出商品"]
-    Goods --> Buyer
-    Buyer --> Release["釋放資金"]
-    Release --> Alipay
-```
-
 ### 3. Alipay帶來的信用創造
 在信用卡尚未普及的中國，建立了擔保支付服務「Alipay」。這成為了中國無現金社會的基礎。
-
-### 4. 雲端與雙11
-透過Alibaba Cloud建構基礎設施，以及「雙11（11月11日）」的龐大促銷活動等，至今仍持續引領著中國的數位經濟。
-
 
 ## 追加技術驗證部分 12
 
@@ -330,25 +143,8 @@ flowchart LR
 ### 1. 阿里巴巴的創立
 1999年，馬雲在公寓的一個房間裡與18位夥伴共同創立。最初以B2B媒合網站起步。
 
-### 2. Taobao（淘寶網）的成功
-推出C2C平台Taobao，取得了迫使eBay退出中國市場的巨大成功。
-
-```mermaid
-flowchart LR
-    Buyer["買家"] --> Alipay["Alipay (擔保)"]
-    Alipay --> Seller["賣家"]
-    Seller --> Goods["發出商品"]
-    Goods --> Buyer
-    Buyer --> Release["釋放資金"]
-    Release --> Alipay
-```
-
 ### 3. Alipay帶來的信用創造
 在信用卡尚未普及的中國，建立了擔保支付服務「Alipay」。這成為了中國無現金社會的基礎。
-
-### 4. 雲端與雙11
-透過Alibaba Cloud建構基礎設施，以及「雙11（11月11日）」的龐大促銷活動等，至今仍持續引領著中國的數位經濟。
-
 
 ## 追加技術驗證部分 13
 
@@ -356,25 +152,8 @@ flowchart LR
 ### 1. 阿里巴巴的創立
 1999年，馬雲在公寓的一個房間裡與18位夥伴共同創立。最初以B2B媒合網站起步。
 
-### 2. Taobao（淘寶網）的成功
-推出C2C平台Taobao，取得了迫使eBay退出中國市場的巨大成功。
-
-```mermaid
-flowchart LR
-    Buyer["買家"] --> Alipay["Alipay (擔保)"]
-    Alipay --> Seller["賣家"]
-    Seller --> Goods["發出商品"]
-    Goods --> Buyer
-    Buyer --> Release["釋放資金"]
-    Release --> Alipay
-```
-
 ### 3. Alipay帶來的信用創造
 在信用卡尚未普及的中國，建立了擔保支付服務「Alipay」。這成為了中國無現金社會的基礎。
-
-### 4. 雲端與雙11
-透過Alibaba Cloud建構基礎設施，以及「雙11（11月11日）」的龐大促銷活動等，至今仍持續引領著中國的數位經濟。
-
 
 ## 追加技術驗證部分 14
 
@@ -382,21 +161,6 @@ flowchart LR
 ### 1. 阿里巴巴的創立
 1999年，馬雲在公寓的一個房間裡與18位夥伴共同創立。最初以B2B媒合網站起步。
 
-### 2. Taobao（淘寶網）的成功
-推出C2C平台Taobao，取得了迫使eBay退出中國市場的巨大成功。
-
-```mermaid
-flowchart LR
-    Buyer["買家"] --> Alipay["Alipay (擔保)"]
-    Alipay --> Seller["賣家"]
-    Seller --> Goods["發出商品"]
-    Goods --> Buyer
-    Buyer --> Release["釋放資金"]
-    Release --> Alipay
-```
-
 ### 3. Alipay帶來的信用創造
 在信用卡尚未普及的中國，建立了擔保支付服務「Alipay」。這成為了中國無現金社會的基礎。
 
-### 4. 雲端與雙11
-透過Alibaba Cloud建構基礎設施，以及「雙11（11月11日）」的龐大促銷活動等，至今仍持續引領著中國的數位經濟。

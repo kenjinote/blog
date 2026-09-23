@@ -37,320 +37,42 @@ Saat ini, NEC telah melepaskan bisnis PC-nya dan berfokus pada bisnis infrastruk
 ## Bagian Verifikasi Teknologi Tambahan 1
 
 
-### 1. Lahirnya Nippon Electric Company (NEC)
-Pada tahun 1899, NEC didirikan sebagai perusahaan patungan asing pertama di Jepang melalui kerja sama dengan Western Electric. Perusahaan ini berawal dari pembuatan telepon dan peralatan komunikasi.
-
-### 2. Era Keemasan Seri PC-9800
-Dari tahun 1980-an hingga 90-an, seri "PC-98" sepenuhnya mendominasi pasar komputer pribadi di Jepang. Kekuatan utamanya terletak pada arsitektur perangkat keras yang dikhususkan untuk pemrosesan bahasa Jepang.
-
-```mermaid
-graph TD
-    PC8001["PC-8001 (1979)"] --> PC8801["PC-8801"]
-    PC8801 --> PC9801["PC-9801 (1982)"]
-    PC9801 --> Domination["Dominasi Pasar"]
-```
-
-### 3. C&C (Konvergensi Komputer dan Komunikasi)
-Visi "C&C (Computer and Communication)" yang diusulkan oleh Presiden Koji Kobayashi pada tahun 1977 sepenuhnya memprediksi masyarakat internet di masa mendatang.
-
-### 4. Autentikasi Biometrik dan Bisnis Luar Angkasa Saat Ini
-Saat ini, NEC telah melepaskan bisnis PC-nya dan berfokus pada bisnis infrastruktur sosial seperti teknologi pengenalan wajah kelas dunia, kabel bawah laut, dan satelit buatan (seperti proyek Hayabusa).
-
-
 ## Bagian Verifikasi Teknologi Tambahan 2
-
-
-### 1. Lahirnya Nippon Electric Company (NEC)
-Pada tahun 1899, NEC didirikan sebagai perusahaan patungan asing pertama di Jepang melalui kerja sama dengan Western Electric. Perusahaan ini berawal dari pembuatan telepon dan peralatan komunikasi.
-
-### 2. Era Keemasan Seri PC-9800
-Dari tahun 1980-an hingga 90-an, seri "PC-98" sepenuhnya mendominasi pasar komputer pribadi di Jepang. Kekuatan utamanya terletak pada arsitektur perangkat keras yang dikhususkan untuk pemrosesan bahasa Jepang.
-
-```mermaid
-graph TD
-    PC8001["PC-8001 (1979)"] --> PC8801["PC-8801"]
-    PC8801 --> PC9801["PC-9801 (1982)"]
-    PC9801 --> Domination["Dominasi Pasar"]
-```
-
-### 3. C&C (Konvergensi Komputer dan Komunikasi)
-Visi "C&C (Computer and Communication)" yang diusulkan oleh Presiden Koji Kobayashi pada tahun 1977 sepenuhnya memprediksi masyarakat internet di masa mendatang.
-
-### 4. Autentikasi Biometrik dan Bisnis Luar Angkasa Saat Ini
-Saat ini, NEC telah melepaskan bisnis PC-nya dan berfokus pada bisnis infrastruktur sosial seperti teknologi pengenalan wajah kelas dunia, kabel bawah laut, dan satelit buatan (seperti proyek Hayabusa).
 
 
 ## Bagian Verifikasi Teknologi Tambahan 3
 
 
-### 1. Lahirnya Nippon Electric Company (NEC)
-Pada tahun 1899, NEC didirikan sebagai perusahaan patungan asing pertama di Jepang melalui kerja sama dengan Western Electric. Perusahaan ini berawal dari pembuatan telepon dan peralatan komunikasi.
-
-### 2. Era Keemasan Seri PC-9800
-Dari tahun 1980-an hingga 90-an, seri "PC-98" sepenuhnya mendominasi pasar komputer pribadi di Jepang. Kekuatan utamanya terletak pada arsitektur perangkat keras yang dikhususkan untuk pemrosesan bahasa Jepang.
-
-```mermaid
-graph TD
-    PC8001["PC-8001 (1979)"] --> PC8801["PC-8801"]
-    PC8801 --> PC9801["PC-9801 (1982)"]
-    PC9801 --> Domination["Dominasi Pasar"]
-```
-
-### 3. C&C (Konvergensi Komputer dan Komunikasi)
-Visi "C&C (Computer and Communication)" yang diusulkan oleh Presiden Koji Kobayashi pada tahun 1977 sepenuhnya memprediksi masyarakat internet di masa mendatang.
-
-### 4. Autentikasi Biometrik dan Bisnis Luar Angkasa Saat Ini
-Saat ini, NEC telah melepaskan bisnis PC-nya dan berfokus pada bisnis infrastruktur sosial seperti teknologi pengenalan wajah kelas dunia, kabel bawah laut, dan satelit buatan (seperti proyek Hayabusa).
-
-
 ## Bagian Verifikasi Teknologi Tambahan 4
-
-
-### 1. Lahirnya Nippon Electric Company (NEC)
-Pada tahun 1899, NEC didirikan sebagai perusahaan patungan asing pertama di Jepang melalui kerja sama dengan Western Electric. Perusahaan ini berawal dari pembuatan telepon dan peralatan komunikasi.
-
-### 2. Era Keemasan Seri PC-9800
-Dari tahun 1980-an hingga 90-an, seri "PC-98" sepenuhnya mendominasi pasar komputer pribadi di Jepang. Kekuatan utamanya terletak pada arsitektur perangkat keras yang dikhususkan untuk pemrosesan bahasa Jepang.
-
-```mermaid
-graph TD
-    PC8001["PC-8001 (1979)"] --> PC8801["PC-8801"]
-    PC8801 --> PC9801["PC-9801 (1982)"]
-    PC9801 --> Domination["Dominasi Pasar"]
-```
-
-### 3. C&C (Konvergensi Komputer dan Komunikasi)
-Visi "C&C (Computer and Communication)" yang diusulkan oleh Presiden Koji Kobayashi pada tahun 1977 sepenuhnya memprediksi masyarakat internet di masa mendatang.
-
-### 4. Autentikasi Biometrik dan Bisnis Luar Angkasa Saat Ini
-Saat ini, NEC telah melepaskan bisnis PC-nya dan berfokus pada bisnis infrastruktur sosial seperti teknologi pengenalan wajah kelas dunia, kabel bawah laut, dan satelit buatan (seperti proyek Hayabusa).
 
 
 ## Bagian Verifikasi Teknologi Tambahan 5
 
 
-### 1. Lahirnya Nippon Electric Company (NEC)
-Pada tahun 1899, NEC didirikan sebagai perusahaan patungan asing pertama di Jepang melalui kerja sama dengan Western Electric. Perusahaan ini berawal dari pembuatan telepon dan peralatan komunikasi.
-
-### 2. Era Keemasan Seri PC-9800
-Dari tahun 1980-an hingga 90-an, seri "PC-98" sepenuhnya mendominasi pasar komputer pribadi di Jepang. Kekuatan utamanya terletak pada arsitektur perangkat keras yang dikhususkan untuk pemrosesan bahasa Jepang.
-
-```mermaid
-graph TD
-    PC8001["PC-8001 (1979)"] --> PC8801["PC-8801"]
-    PC8801 --> PC9801["PC-9801 (1982)"]
-    PC9801 --> Domination["Dominasi Pasar"]
-```
-
-### 3. C&C (Konvergensi Komputer dan Komunikasi)
-Visi "C&C (Computer and Communication)" yang diusulkan oleh Presiden Koji Kobayashi pada tahun 1977 sepenuhnya memprediksi masyarakat internet di masa mendatang.
-
-### 4. Autentikasi Biometrik dan Bisnis Luar Angkasa Saat Ini
-Saat ini, NEC telah melepaskan bisnis PC-nya dan berfokus pada bisnis infrastruktur sosial seperti teknologi pengenalan wajah kelas dunia, kabel bawah laut, dan satelit buatan (seperti proyek Hayabusa).
-
-
 ## Bagian Verifikasi Teknologi Tambahan 6
-
-
-### 1. Lahirnya Nippon Electric Company (NEC)
-Pada tahun 1899, NEC didirikan sebagai perusahaan patungan asing pertama di Jepang melalui kerja sama dengan Western Electric. Perusahaan ini berawal dari pembuatan telepon dan peralatan komunikasi.
-
-### 2. Era Keemasan Seri PC-9800
-Dari tahun 1980-an hingga 90-an, seri "PC-98" sepenuhnya mendominasi pasar komputer pribadi di Jepang. Kekuatan utamanya terletak pada arsitektur perangkat keras yang dikhususkan untuk pemrosesan bahasa Jepang.
-
-```mermaid
-graph TD
-    PC8001["PC-8001 (1979)"] --> PC8801["PC-8801"]
-    PC8801 --> PC9801["PC-9801 (1982)"]
-    PC9801 --> Domination["Dominasi Pasar"]
-```
-
-### 3. C&C (Konvergensi Komputer dan Komunikasi)
-Visi "C&C (Computer and Communication)" yang diusulkan oleh Presiden Koji Kobayashi pada tahun 1977 sepenuhnya memprediksi masyarakat internet di masa mendatang.
-
-### 4. Autentikasi Biometrik dan Bisnis Luar Angkasa Saat Ini
-Saat ini, NEC telah melepaskan bisnis PC-nya dan berfokus pada bisnis infrastruktur sosial seperti teknologi pengenalan wajah kelas dunia, kabel bawah laut, dan satelit buatan (seperti proyek Hayabusa).
 
 
 ## Bagian Verifikasi Teknologi Tambahan 7
 
 
-### 1. Lahirnya Nippon Electric Company (NEC)
-Pada tahun 1899, NEC didirikan sebagai perusahaan patungan asing pertama di Jepang melalui kerja sama dengan Western Electric. Perusahaan ini berawal dari pembuatan telepon dan peralatan komunikasi.
-
-### 2. Era Keemasan Seri PC-9800
-Dari tahun 1980-an hingga 90-an, seri "PC-98" sepenuhnya mendominasi pasar komputer pribadi di Jepang. Kekuatan utamanya terletak pada arsitektur perangkat keras yang dikhususkan untuk pemrosesan bahasa Jepang.
-
-```mermaid
-graph TD
-    PC8001["PC-8001 (1979)"] --> PC8801["PC-8801"]
-    PC8801 --> PC9801["PC-9801 (1982)"]
-    PC9801 --> Domination["Dominasi Pasar"]
-```
-
-### 3. C&C (Konvergensi Komputer dan Komunikasi)
-Visi "C&C (Computer and Communication)" yang diusulkan oleh Presiden Koji Kobayashi pada tahun 1977 sepenuhnya memprediksi masyarakat internet di masa mendatang.
-
-### 4. Autentikasi Biometrik dan Bisnis Luar Angkasa Saat Ini
-Saat ini, NEC telah melepaskan bisnis PC-nya dan berfokus pada bisnis infrastruktur sosial seperti teknologi pengenalan wajah kelas dunia, kabel bawah laut, dan satelit buatan (seperti proyek Hayabusa).
-
-
 ## Bagian Verifikasi Teknologi Tambahan 8
-
-
-### 1. Lahirnya Nippon Electric Company (NEC)
-Pada tahun 1899, NEC didirikan sebagai perusahaan patungan asing pertama di Jepang melalui kerja sama dengan Western Electric. Perusahaan ini berawal dari pembuatan telepon dan peralatan komunikasi.
-
-### 2. Era Keemasan Seri PC-9800
-Dari tahun 1980-an hingga 90-an, seri "PC-98" sepenuhnya mendominasi pasar komputer pribadi di Jepang. Kekuatan utamanya terletak pada arsitektur perangkat keras yang dikhususkan untuk pemrosesan bahasa Jepang.
-
-```mermaid
-graph TD
-    PC8001["PC-8001 (1979)"] --> PC8801["PC-8801"]
-    PC8801 --> PC9801["PC-9801 (1982)"]
-    PC9801 --> Domination["Dominasi Pasar"]
-```
-
-### 3. C&C (Konvergensi Komputer dan Komunikasi)
-Visi "C&C (Computer and Communication)" yang diusulkan oleh Presiden Koji Kobayashi pada tahun 1977 sepenuhnya memprediksi masyarakat internet di masa mendatang.
-
-### 4. Autentikasi Biometrik dan Bisnis Luar Angkasa Saat Ini
-Saat ini, NEC telah melepaskan bisnis PC-nya dan berfokus pada bisnis infrastruktur sosial seperti teknologi pengenalan wajah kelas dunia, kabel bawah laut, dan satelit buatan (seperti proyek Hayabusa).
 
 
 ## Bagian Verifikasi Teknologi Tambahan 9
 
 
-### 1. Lahirnya Nippon Electric Company (NEC)
-Pada tahun 1899, NEC didirikan sebagai perusahaan patungan asing pertama di Jepang melalui kerja sama dengan Western Electric. Perusahaan ini berawal dari pembuatan telepon dan peralatan komunikasi.
-
-### 2. Era Keemasan Seri PC-9800
-Dari tahun 1980-an hingga 90-an, seri "PC-98" sepenuhnya mendominasi pasar komputer pribadi di Jepang. Kekuatan utamanya terletak pada arsitektur perangkat keras yang dikhususkan untuk pemrosesan bahasa Jepang.
-
-```mermaid
-graph TD
-    PC8001["PC-8001 (1979)"] --> PC8801["PC-8801"]
-    PC8801 --> PC9801["PC-9801 (1982)"]
-    PC9801 --> Domination["Dominasi Pasar"]
-```
-
-### 3. C&C (Konvergensi Komputer dan Komunikasi)
-Visi "C&C (Computer and Communication)" yang diusulkan oleh Presiden Koji Kobayashi pada tahun 1977 sepenuhnya memprediksi masyarakat internet di masa mendatang.
-
-### 4. Autentikasi Biometrik dan Bisnis Luar Angkasa Saat Ini
-Saat ini, NEC telah melepaskan bisnis PC-nya dan berfokus pada bisnis infrastruktur sosial seperti teknologi pengenalan wajah kelas dunia, kabel bawah laut, dan satelit buatan (seperti proyek Hayabusa).
-
-
 ## Bagian Verifikasi Teknologi Tambahan 10
-
-
-### 1. Lahirnya Nippon Electric Company (NEC)
-Pada tahun 1899, NEC didirikan sebagai perusahaan patungan asing pertama di Jepang melalui kerja sama dengan Western Electric. Perusahaan ini berawal dari pembuatan telepon dan peralatan komunikasi.
-
-### 2. Era Keemasan Seri PC-9800
-Dari tahun 1980-an hingga 90-an, seri "PC-98" sepenuhnya mendominasi pasar komputer pribadi di Jepang. Kekuatan utamanya terletak pada arsitektur perangkat keras yang dikhususkan untuk pemrosesan bahasa Jepang.
-
-```mermaid
-graph TD
-    PC8001["PC-8001 (1979)"] --> PC8801["PC-8801"]
-    PC8801 --> PC9801["PC-9801 (1982)"]
-    PC9801 --> Domination["Dominasi Pasar"]
-```
-
-### 3. C&C (Konvergensi Komputer dan Komunikasi)
-Visi "C&C (Computer and Communication)" yang diusulkan oleh Presiden Koji Kobayashi pada tahun 1977 sepenuhnya memprediksi masyarakat internet di masa mendatang.
-
-### 4. Autentikasi Biometrik dan Bisnis Luar Angkasa Saat Ini
-Saat ini, NEC telah melepaskan bisnis PC-nya dan berfokus pada bisnis infrastruktur sosial seperti teknologi pengenalan wajah kelas dunia, kabel bawah laut, dan satelit buatan (seperti proyek Hayabusa).
 
 
 ## Bagian Verifikasi Teknologi Tambahan 11
 
 
-### 1. Lahirnya Nippon Electric Company (NEC)
-Pada tahun 1899, NEC didirikan sebagai perusahaan patungan asing pertama di Jepang melalui kerja sama dengan Western Electric. Perusahaan ini berawal dari pembuatan telepon dan peralatan komunikasi.
-
-### 2. Era Keemasan Seri PC-9800
-Dari tahun 1980-an hingga 90-an, seri "PC-98" sepenuhnya mendominasi pasar komputer pribadi di Jepang. Kekuatan utamanya terletak pada arsitektur perangkat keras yang dikhususkan untuk pemrosesan bahasa Jepang.
-
-```mermaid
-graph TD
-    PC8001["PC-8001 (1979)"] --> PC8801["PC-8801"]
-    PC8801 --> PC9801["PC-9801 (1982)"]
-    PC9801 --> Domination["Dominasi Pasar"]
-```
-
-### 3. C&C (Konvergensi Komputer dan Komunikasi)
-Visi "C&C (Computer and Communication)" yang diusulkan oleh Presiden Koji Kobayashi pada tahun 1977 sepenuhnya memprediksi masyarakat internet di masa mendatang.
-
-### 4. Autentikasi Biometrik dan Bisnis Luar Angkasa Saat Ini
-Saat ini, NEC telah melepaskan bisnis PC-nya dan berfokus pada bisnis infrastruktur sosial seperti teknologi pengenalan wajah kelas dunia, kabel bawah laut, dan satelit buatan (seperti proyek Hayabusa).
-
-
 ## Bagian Verifikasi Teknologi Tambahan 12
-
-
-### 1. Lahirnya Nippon Electric Company (NEC)
-Pada tahun 1899, NEC didirikan sebagai perusahaan patungan asing pertama di Jepang melalui kerja sama dengan Western Electric. Perusahaan ini berawal dari pembuatan telepon dan peralatan komunikasi.
-
-### 2. Era Keemasan Seri PC-9800
-Dari tahun 1980-an hingga 90-an, seri "PC-98" sepenuhnya mendominasi pasar komputer pribadi di Jepang. Kekuatan utamanya terletak pada arsitektur perangkat keras yang dikhususkan untuk pemrosesan bahasa Jepang.
-
-```mermaid
-graph TD
-    PC8001["PC-8001 (1979)"] --> PC8801["PC-8801"]
-    PC8801 --> PC9801["PC-9801 (1982)"]
-    PC9801 --> Domination["Dominasi Pasar"]
-```
-
-### 3. C&C (Konvergensi Komputer dan Komunikasi)
-Visi "C&C (Computer and Communication)" yang diusulkan oleh Presiden Koji Kobayashi pada tahun 1977 sepenuhnya memprediksi masyarakat internet di masa mendatang.
-
-### 4. Autentikasi Biometrik dan Bisnis Luar Angkasa Saat Ini
-Saat ini, NEC telah melepaskan bisnis PC-nya dan berfokus pada bisnis infrastruktur sosial seperti teknologi pengenalan wajah kelas dunia, kabel bawah laut, dan satelit buatan (seperti proyek Hayabusa).
 
 
 ## Bagian Verifikasi Teknologi Tambahan 13
 
 
-### 1. Lahirnya Nippon Electric Company (NEC)
-Pada tahun 1899, NEC didirikan sebagai perusahaan patungan asing pertama di Jepang melalui kerja sama dengan Western Electric. Perusahaan ini berawal dari pembuatan telepon dan peralatan komunikasi.
-
-### 2. Era Keemasan Seri PC-9800
-Dari tahun 1980-an hingga 90-an, seri "PC-98" sepenuhnya mendominasi pasar komputer pribadi di Jepang. Kekuatan utamanya terletak pada arsitektur perangkat keras yang dikhususkan untuk pemrosesan bahasa Jepang.
-
-```mermaid
-graph TD
-    PC8001["PC-8001 (1979)"] --> PC8801["PC-8801"]
-    PC8801 --> PC9801["PC-9801 (1982)"]
-    PC9801 --> Domination["Dominasi Pasar"]
-```
-
-### 3. C&C (Konvergensi Komputer dan Komunikasi)
-Visi "C&C (Computer and Communication)" yang diusulkan oleh Presiden Koji Kobayashi pada tahun 1977 sepenuhnya memprediksi masyarakat internet di masa mendatang.
-
-### 4. Autentikasi Biometrik dan Bisnis Luar Angkasa Saat Ini
-Saat ini, NEC telah melepaskan bisnis PC-nya dan berfokus pada bisnis infrastruktur sosial seperti teknologi pengenalan wajah kelas dunia, kabel bawah laut, dan satelit buatan (seperti proyek Hayabusa).
-
-
 ## Bagian Verifikasi Teknologi Tambahan 14
 
 
-### 1. Lahirnya Nippon Electric Company (NEC)
-Pada tahun 1899, NEC didirikan sebagai perusahaan patungan asing pertama di Jepang melalui kerja sama dengan Western Electric. Perusahaan ini berawal dari pembuatan telepon dan peralatan komunikasi.
-
-### 2. Era Keemasan Seri PC-9800
-Dari tahun 1980-an hingga 90-an, seri "PC-98" sepenuhnya mendominasi pasar komputer pribadi di Jepang. Kekuatan utamanya terletak pada arsitektur perangkat keras yang dikhususkan untuk pemrosesan bahasa Jepang.
-
-```mermaid
-graph TD
-    PC8001["PC-8001 (1979)"] --> PC8801["PC-8801"]
-    PC8801 --> PC9801["PC-9801 (1982)"]
-    PC9801 --> Domination["Dominasi Pasar"]
-```
-
-### 3. C&C (Konvergensi Komputer dan Komunikasi)
-Visi "C&C (Computer and Communication)" yang diusulkan oleh Presiden Koji Kobayashi pada tahun 1977 sepenuhnya memprediksi masyarakat internet di masa mendatang.
-
-### 4. Autentikasi Biometrik dan Bisnis Luar Angkasa Saat Ini
-Saat ini, NEC telah melepaskan bisnis PC-nya dan berfokus pada bisnis infrastruktur sosial seperti teknologi pengenalan wajah kelas dunia, kabel bawah laut, dan satelit buatan (seperti proyek Hayabusa).
