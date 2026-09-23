@@ -3,7 +3,7 @@ title: 'Affine and Projective Transformations: The Fusion of Linear Algebra and 
 description: 'A detailed explanation of the mathematical foundations of affine and projective transformations, their expression using homogeneous coordinates, and applications in computer graphics and image processing.'
 slug: 'affine-and-projective-transformations'
 date: '2026-09-20T15:15:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'mathematics'
 tags:
@@ -151,3 +151,4 @@ Starting from the basic matrix operations of linear algebra, by introducing the 
 - **Projective Transformation**, in addition to this, expresses perspective, enabling non-linear projections closer to real cameras.
 
 This framework simplified the design of hardware circuits inside GPUs, dramatically improving the expressive power of computer graphics. At the same time, it has become the fundamental bedrock for advanced image recognition and correction algorithms in computer vision. By deeply understanding the mathematical meanings behind these, the behavior of the 3D software and image processing APIs you normally use will surely become clearer.
+

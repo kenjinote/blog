@@ -10,7 +10,7 @@
 title: '양자 컴퓨터는 RSA 암호를 깰 것인가? 쇼어의 알고리즘 설명'
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["양자 컴퓨터", "암호 해독", "Shor의 알고리즘", "RSA"]
-image: "quantum_breaking_rsa_1788613722990.webp"
+image: "eyecatch.jpg"
 date: 2026-09-05T22:09:21+09:00
 categories: ["math-cryptography-quantum"]
 description: '양자 컴퓨터의 대두로 인해 현대의 통신 인프라를 지탱하는 RSA 암호가 어떻게 위협받는지에 대해 설명합니다. 쇼어의 알고리즘 원리부터 NISQ 시대 하드웨어의 현황까지, 차세대 암호 해독과 보안의 미래를 고찰합니다.'
@@ -199,4 +199,5 @@ PQC는 양자 컴퓨터를 이용하더라도 해독이 곤란한(즉, 쇼어의
 양자 컴퓨터는 SF 세계의 꿈 같은 이야기에서 현실적인 공학적 도전으로 넘어가고 있습니다. 쇼어의 알고리즘은 수학과 양자역학이 융합된 인류의 위대한 지적 성과이지만, 동시에 우리 디지털 사회의 기반을 뒤흔드는 '파괴적인 힘'을 간직하고 있습니다.
 
 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호가 내일 당장 쓰지 못하게 되는 것은 아닙니다. 하지만 양자 기술의 진화와 'Store Now, Decrypt Later'의 리스크를 감안한다면, PQC로의 이행이라는 암호 역사에 남을 대규모의 마이그레이션은 이미 시작되었습니다. 우리는 지금 정보 보안의 패러다임 시프트의 최전선을 목격하고 있는 것입니다.
+
 

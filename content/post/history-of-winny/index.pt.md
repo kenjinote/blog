@@ -3,6 +3,7 @@ title: "Como o Winny funcionava: busca, cache, retransmissão e limites do anoni
 description: "Entenda as chaves de metadados, a hierarquia por velocidade e o cache do Winny, com exemplos de tráfego e uma análise das limitações de segurança, dos vazamentos e do julgamento do desenvolvedor."
 slug: "history-of-winny"
 date: "2026-09-23T10:00:00+09:00"
+image: "eyecatch.jpg"
 categories: ["technology", "computer-science"]
 tags: ["p2p", "network", "winny", "history"]
 math: true
@@ -152,3 +153,4 @@ Aplique cinco perguntas aos sistemas atuais: **Como se encontra o primeiro nó? 
 [glocom]: https://www.glocom.ac.jp/wp-content/uploads/2020/10/chijo106_042-053.pdf
 [ipa]: https://www.ipa.go.jp/archive/files/000011527.pdf
 [court]: https://www.wipo.int/wipolex/en/text/584277
+

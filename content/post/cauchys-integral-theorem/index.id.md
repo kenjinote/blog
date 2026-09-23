@@ -3,7 +3,7 @@ title: 'Teorema Integral Cauchy: Fondasi Indah Analisis Kompleks Tempat Integral
 description: 'Penjelasan rinci tentang Teorema Integral Cauchy, salah satu teorema terpenting dalam analisis kompleks, dari makna intuitifnya hingga sketsa pembuktiannya menggunakan teorema Green dan aplikasinya pada rumus integral.'
 slug: 'cauchys-integral-theorem'
 date: 2026-09-20T14:30:00+09:00
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'mathematics'
 tags:
@@ -214,3 +214,4 @@ Sepintas, teorema integral [Cauchy](https://kenji.blog/id/p/cauchy/) mungkin ter
 Berawal dari teorema ini, pencapaian luar biasa dari analisis kompleks seperti rumus integral [Cauchy](https://kenji.blog/id/p/cauchy/), pembuktian bahwa suatu fungsi dapat diturunkan secara tak terbatas (menjamin ekspansi Taylor dan ekspansi Laurent), dan Teorema Residu diturunkan secara berurutan. Teorema integral [Cauchy](https://kenji.blog/id/p/cauchy/) benar-benar dapat dikatakan sebagai fondasi yang paling kuat dan indah yang menopang bangunan matematika yang megah dari analisis kompleks dari akar-akarnya.
 
 Kami mendorong para pembaca untuk mengambil kertas dan pena dan menelusuri pembuktian menggunakan teorema Green dengan tangan Anda sendiri. Anda kemudian pasti akan dapat merasakan dunia bidang kompleks yang selaras dengan indah yang terbentang di balik rumus-rumus matematika.
+

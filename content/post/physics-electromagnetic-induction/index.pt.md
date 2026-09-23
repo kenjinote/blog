@@ -1,6 +1,7 @@
 ---
 title: "Física: Indução Eletromagnética e o Mecanismo dos Motores - Da Descoberta de Faraday aos VEs"
-date: 2026-09-23T04:01:41+09:00
+date: 2026-09-23T04:01:41+09:00
+image: "eyecatch.jpg"
 categories: ["physics", "technology"]
 tags: ["electromagnetic-induction", "motor", "ev"]
 ---
@@ -1590,3 +1591,4 @@ Nesta seção, nos aprofundamos em mais detalhes técnicos e estudos de caso. Av
 ## Verificação Técnica Adicional Parte 393
 
 Nesta seção, nos aprofundamos em mais detalhes técnicos e estudos de caso. Avaliamos o desempenho sob várias condições e examinamos os desafios e soluções para a integração com outros sistemas. Também discutimos perspectivas futuras e limitações.
+

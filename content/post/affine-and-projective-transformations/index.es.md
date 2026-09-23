@@ -3,7 +3,7 @@ title: 'Transformaciones Afines y Proyectivas: La Fusión del Álgebra Lineal y 
 description: 'Una explicación detallada de los fundamentos matemáticos de las transformaciones afines y proyectivas, su expresión usando coordenadas homogéneas y aplicaciones en gráficos por computadora y procesamiento de imágenes.'
 slug: 'affine-and-projective-transformations'
 date: '2026-09-20T15:15:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'mathematics'
 tags:
@@ -151,3 +151,4 @@ Partiendo de las operaciones básicas de matrices del álgebra lineal, y al intr
 - La **Transformación Proyectiva** además de eso representa la perspectiva, permitiendo una proyección no lineal mucho más cercana a las cámaras reales.
 
 Este marco de trabajo simplificó el diseño de circuitos de hardware dentro de las GPU, incrementando enormemente la capacidad expresiva de los gráficos por computadora. Paralelamente, se ha convertido en la base esencial para algoritmos avanzados de reconocimiento y corrección de imágenes en el campo de la visión por computadora. Comprender profundamente los significados matemáticos que hay detrás seguramente hará mucho más nítido el funcionamiento de los API de procesamiento de imágenes y software 3D que utilizas habitualmente.
+

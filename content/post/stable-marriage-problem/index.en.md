@@ -2,7 +2,7 @@
 title: "The stable marriage problem: how can everyone’s preferences fit together?"
 description: "Understand the Gale–Shapley algorithm through equations, diagrams, preference tables, and Python. Learn why a stable matching does not necessarily make everyone happy."
 date: "2026-09-16T14:30:00+09:00"
-image: "eyecatch.png"
+image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Stable marriage problem", "Algorithms", "Game theory", "Matching", "Python"]
 slug: "stable-marriage-problem"
@@ -247,3 +247,4 @@ When everyone’s wishes cannot be fulfilled, defining the objective precisely b
 ### Reference
 
 D. Gale and L. S. Shapley, “College Admissions and the Stability of Marriage,” *The American Mathematical Monthly*, 69(1), 9–15, 1962. [PDF](https://www.math.utoronto.ca/mccann/assignments/477/GaleShapley62.pdf). The original source for the model, deferred acceptance, stability, and proposer optimality. The three-by-three example, tables, and figures here were calculated independently.
+

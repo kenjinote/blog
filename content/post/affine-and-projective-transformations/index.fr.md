@@ -3,7 +3,7 @@ title: 'Transformations Affines et Projectives : La Fusion de l''Algèbre Linéa
 description: 'Une explication détaillée des fondements mathématiques des transformations affines et projectives, de leur expression en utilisant les coordonnées homogènes et de leurs applications en infographie et traitement d''images.'
 slug: 'affine-and-projective-transformations'
 date: '2026-09-20T15:15:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'mathematics'
 tags:
@@ -151,3 +151,4 @@ En partant des opérations matricielles basiques de l'algèbre linéaire, et en 
 - La **Transformation Projective** exprime en plus la perspective, permettant une projection non linéaire bien plus proche des véritables appareils photo.
 
 Ce cadre a simplifié la conception des circuits matériels à l'intérieur des GPU, augmentant considérablement la capacité expressive de l'infographie. En parallèle, cela est devenu la base essentielle des algorithmes avancés de reconnaissance et de correction d'images en vision par ordinateur. Comprendre profondément les significations mathématiques derrière tout cela rendra sûrement plus clair le fonctionnement des logiciels 3D et des API de traitement d'images que vous utilisez habituellement.
+

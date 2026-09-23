@@ -3,7 +3,7 @@ title: 'RSA-Verschlüsselung knacken? Detaillierte Erklärung der Algorithmen vo
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00
 tags: ["Quantencomputer", "GNFS", "Shor-Algorithmus", "Kryptanalyse", "Mathematik"]
-image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
+image: "eyecatch.jpg"
 mermaid: true
 math: true
 categories: ["math-cryptography-quantum"]
@@ -198,5 +198,6 @@ In diesem Artikel haben wir das **„GNFS“ ** , den Höhepunkt der klassischen
 Während GNFS durch mathematische Tricks wie die Polynomauswahl und riesige Matrixberechnungen die Zeitkomplexität auf subexponentielle Zeit reduzierte, gelang dem Shor-Algorithmus ein sofortiger Durchbruch in die polynomielle Zeit. Er verschmolz die Grundprinzipien der Quantenmechanik – Superposition und Interferenz – mit mathematischen Werkzeugen (QFT).
 
 Derzeit gibt es keine fehlertoleranten Quantencomputer (FTQC), die den Shor-Algorithmus in einem praktischen Maßstab (Tausende von Qubits) ausführen können. Das bloße Vorhandensein dieses mathematischen und theoretischen Paradigmenwechsels ist jedoch der Hauptgrund, warum der Übergang zur Post-Quanten-Kryptographie (PQC: Post-Quantum [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy) derzeit weltweit dringend vorangetrieben wird.
+
 
 

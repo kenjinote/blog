@@ -3,7 +3,7 @@ title: 'Teorema Integral de Cauchy: A Bela Fundação da Análise Complexa Onde 
 description: 'Uma explicação detalhada do Teorema Integral de Cauchy, um dos teoremas mais importantes da análise complexa, desde seu significado intuitivo até um esboço de sua prova usando o teorema de Green e sua aplicação à fórmula integral.'
 slug: 'cauchys-integral-theorem'
 date: 2026-09-20T14:30:00+09:00
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'mathematics'
 tags:
@@ -214,3 +214,4 @@ No entanto, ao aplicar engenhosamente o teorema integral de [Cauchy](https://ken
 A partir desse teorema, glórias conquistas da análise complexa, como a fórmula integral de [Cauchy](https://kenji.blog/pt/p/cauchy/), a prova de que uma função é infinitamente diferenciável (garantindo expansões de Taylor e de Laurent), e o Teorema do Resíduo, são sucessivamente derivadas. O teorema integral de [Cauchy](https://kenji.blog/pt/p/cauchy/) pode, de fato, ser dito como o alicerce mais robusto e belo, que sustenta, a partir das raízes, a magnífica estrutura matemática da análise complexa.
 
 Nós incentivamos os leitores a pegar uma folha e uma caneta, e acompanhar a prova utilizando o Teorema de Green, com as suas próprias mãos. Certamente será possível sentir o harmonioso e lindo universo do plano complexo que se desdobra por trás das fórmulas matemáticas.
+

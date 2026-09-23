@@ -2,7 +2,7 @@
 title: '[PQC] La menace des ordinateurs quantiques et le panorama complet de la cryptographie post-quantique de nouvelle génération'
 slug: "post-quantum-cryptography"
 tags: ["Technologie de chiffrement", "PQC", "Sécurité", "Technologie de nouvelle génération"]
-image: "post_quantum_cryptography_1788613735417.webp"
+image: "eyecatch.jpg"
 date: 2026-09-05T22:09:22+09:00
 categories: ["math-cryptography-quantum"]
 description: 'La cryptographie à clé publique comporte le risque d''être déchiffrée à l''avenir avec l''application pratique des ordinateurs quantiques. Cet article explique en détail les mécanismes et l''importance de la technologie de sécurité de nouvelle génération, la ''Cryptographie Post-Quantique (PQC)'', développée pour contrer cette menace (problème Y2Q).'
@@ -168,3 +168,4 @@ La création d'un inventaire cryptographique (CBOM : [Crypto](https://kenji.blog
 L'évolution de l'informatique quantique apportera d'énormes avantages à l'humanité, mais elle représente également la plus grande menace pour la sécurité cryptographique qui constitue le fondement de notre société numérique actuelle. La cryptographie post-quantique (PQC) n'est plus un "thème de recherche d'un futur lointain". Après avoir franchi l'étape de la publication des normes FIPS par le NIST, la PQC est entrée dans une véritable phase d'"implémentation et de migration".
 
 Compte tenu de la menace "Harvest Now, Decrypt Later", la migration vers la PQC est une priorité absolue qui doit être entreprise "immédiatement" par toutes les organisations traitant des données sensibles. En comprenant en profondeur la technologie de cryptographie de nouvelle génération et en augmentant la crypto-agilité des systèmes, surmontons en toute sécurité l'ère imminente de l'informatique quantique.
+

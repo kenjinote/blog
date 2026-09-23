@@ -1,6 +1,7 @@
 ---
 title: "ゲーム技術: 3Dグラフィックスエンジンの進化 (Unreal Engine / Unity)"
-date: 2026-09-23T04:01:41+09:00
+date: 2026-09-23T04:01:41+09:00
+image: "eyecatch.jpg"
 categories: ["gaming", "technology"]
 tags: ["3d", "engine", "unreal", "unity", "graphics"]
 ---
@@ -1590,3 +1591,4 @@ $$ L_o = L_e + \int_{\Omega} f_r L_i (w_i \cdot n) d w_i $$
 ## 追加技術検証パート 393
 
 このセクションでは、さらなる技術的な詳細とケーススタディについて深く掘り下げます。様々な条件下でのパフォーマンスの評価や、他のシステムとの統合に関する課題と解決策を検討します。今後の展望や限界についても考察を行います。
+

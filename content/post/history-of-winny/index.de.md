@@ -3,6 +3,7 @@ title: "Wie Winny funktionierte: Suche, Cache, Weiterleitung und Grenzen der Ano
 description: "Winnys P2P-Technik verständlich erklärt: Metadaten, Hierarchie nach Verbindungsgeschwindigkeit und Caching, ergänzt um Rechenbeispiele, Datenlecks und den Prozess gegen den Entwickler."
 slug: "history-of-winny"
 date: "2026-09-23T10:00:00+09:00"
+image: "eyecatch.jpg"
 categories: ["technology", "computer-science"]
 tags: ["p2p", "network", "winny", "history"]
 math: true
@@ -152,3 +153,4 @@ Fünf Fragen helfen auch bei heutigen Systemen: **Wie wird der erste Peer gefund
 [glocom]: https://www.glocom.ac.jp/wp-content/uploads/2020/10/chijo106_042-053.pdf
 [ipa]: https://www.ipa.go.jp/archive/files/000011527.pdf
 [court]: https://www.wipo.int/wipolex/en/text/584277
+

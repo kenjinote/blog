@@ -6,7 +6,7 @@ tags: ["Quantum Computer", "Quantum Mechanics", "Algorithm", "Physics"]
 categories: ["math-cryptography-quantum"]
 math: true
 mermaid: true
-image: "cover.webp"
+image: "eyecatch.jpg"
 description: 'Una explicación exhaustiva de los antecedentes que llevaron al amanecer de los ordenadores cuánticos, desde los límites físicos de los ordenadores clásicos y el fin de la Ley de Moore hasta la barrera de los efectos de la mecánica cuántica como el efecto túnel cuántico. Este es el primer capítulo de una guía completa para comprender la tecnología de procesamiento de información de próxima generación.'
 ---
 
@@ -2867,5 +2867,6 @@ Si esta serie ha servido para transmitir a los lectores la verdadera esencia de 
 
 ---
  **Serie «Principios de las computadoras cuánticas» (12 capítulos) - Fin** 
+
 
 

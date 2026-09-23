@@ -4,7 +4,7 @@ slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "演算法"]
 draft: false
-image: "img.webp"
+image: "eyecatch.jpg"
 categories: ["programming"]
 description: '針對程式設計師面試中常出現的「FizzBuzz問題」，淺顯易懂地解說其概要，並提供使用Python的具體程式碼範例（條件分支）。內容適合初學者或想複習基礎知識的朋友閱讀。'
 ---
@@ -116,3 +116,4 @@ for i in range(1, 101):
 程式碼是人類寫的。既然是人類，就有忘記的時候，也有緊張的時候。一邊接受這些，一邊慢慢前進，我想這樣就足夠了。
 
 那麼，今天也輕鬆地寫程式碼吧。
+

@@ -4,7 +4,7 @@ slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "Algorithmus"]
 draft: false
-image: "img.webp"
+image: "eyecatch.jpg"
 categories: ["programming"]
 description: 'Wir erklären leicht verständlich den Überblick über das „FizzBuzz-Problem“, das oft in Vorstellungsgesprächen für Programmierer vorkommt, und zeigen konkrete Codebeispiele (bedingte Verzweigungen) mit Python. Ein Muss für Anfänger und alle, die die Grundlagen wiederholen möchten.'
 ---
@@ -116,3 +116,4 @@ Keine Eile, lass uns langsam vorankommen.
 Code wird von Menschen geschrieben. Weil wir Menschen sind, vergessen wir manchmal Dinge und sind nervös. Wenn wir das akzeptieren, reicht es meiner Meinung nach aus, wenn wir Stück für Stück vorankommen können.
 
 Lass uns also auch heute wieder ganz entspannt Code schreiben.
+

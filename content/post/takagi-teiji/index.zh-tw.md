@@ -3,7 +3,7 @@ title: '高木貞治：創立類域論的日本世界級數學家'
 description: '深入探討日本近代數學之父高木貞治的生平，以及他創立類域論這一偉大數學成就。'
 slug: 'takagi-teiji'
 date: '2026-09-20T19:50:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - '數學'
   - '傳記'
@@ -116,3 +116,4 @@ graph TD
 **[高木貞治](https://kenji.blog/zh-tw/p/takagi-teiji/)** 將誕生於西方的數學這門學問，在東方國家日本進行了獨特的發展，並構建了世界最高峰的理論。他克服了戰時孤立的逆境，僅憑純粹的思考便完成了宏大的「類域論」，他的一生向我們展示了人類智慧的無限可能性。
 
 今天，代數數論被應用於密碼學和數學物理學等領域的範圍正在不斷擴大。為其奠定基礎的[高木貞治](https://kenji.blog/zh-tw/p/takagi-teiji/)的成就，跨越時代，持續閃耀著光芒。
+

@@ -3,7 +3,7 @@ title: 'Quebrando a Criptografia RSA? GNFS e o Algoritmo de Shor Explicados por 
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00
 tags: ["Computador Quântico", "GNFS", "Algoritmo de Shor", "Criptoanálise", "Matemática"]
-image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
+image: "eyecatch.jpg"
 mermaid: true
 math: true
 categories: ["math-cryptography-quantum"]
@@ -197,4 +197,5 @@ Neste artigo, aprofundamo-nos nos contextos matemáticos e nas estruturas de alg
 Enquanto o GNFS usa técnicas matemáticas sofisticadas, como a escolha de polinômios e cálculos matemáticos com grandes matrizes, para reduzir o tempo computacional a um tempo subexponencial, o Algoritmo de Shor combina os princípios fundamentais da mecânica quântica, sobreposição e interferência, com ferramentas matemáticas (QFT) para produzir um avanço instantâneo ao tempo polinomial.
 
 No momento, não existe nenhum computador quântico tolerante a falhas (FTQC) capaz de executar o Algoritmo de Shor em escala prática (milhares de qubits). No entanto, a própria existência dessa mudança de paradigma matemático e teórico é a principal razão pela qual há atualmente uma rápida e urgente transição para a Criptografia Pós-Quântica (PQC: Post-Quantum [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy) no mundo todo.
+
 

@@ -3,7 +3,7 @@ title: 'Transformasi Afin dan Proyektif: Perpaduan Aljabar Linear dan Geometri d
 description: 'Penjelasan terperinci mengenai fondasi matematika dari transformasi afin dan proyektif, ekspresinya menggunakan koordinat homogen, dan penerapannya dalam grafik komputer dan pemrosesan gambar.'
 slug: 'affine-and-projective-transformations'
 date: '2026-09-20T15:15:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'mathematics'
 tags:
@@ -151,3 +151,4 @@ Beranjak dari operasi matriks linear aljabar dasar, dan mengadopsi struktur mate
 - **Transformasi Proyektif** ditambahkan padanya untuk mengekspresikan efek perspektif non-linear yang menyerupai cara kerja lensa kamera asli.
 
 Sistem ini memudahkan rancang bangun sirkuit perangkat keras di dalam GPU, sehingga secara luar biasa meningkatkan kapasitas grafis komputer dalam merepresentasikan sesuatu. Di saat yang sama, ini mendasari kemunculan algoritma koreksi serta rekognisi visual modern. Memahami rahasia makna matematis di balik fungsi software 3D atau peranti grafis lainnya bakal memberikan Anda wawasan yang lebih jernih ke depannya.
+

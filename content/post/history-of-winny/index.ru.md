@@ -3,6 +3,7 @@ title: "Как работала Winny: поиск, кэш, ретрансляц�
 description: "Разбираем P2P-сеть Winny: метаданные, иерархию по скорости соединения и кэширование. Примеры объёма передачи, ограничения безопасности, утечки данных и судебное дело разработчика."
 slug: "history-of-winny"
 date: "2026-09-23T10:00:00+09:00"
+image: "eyecatch.jpg"
 categories: ["technology", "computer-science"]
 tags: ["p2p", "network", "winny", "history"]
 math: true
@@ -152,3 +153,4 @@ Winny сочетала шифрование, ретрансляцию и кэш,
 [glocom]: https://www.glocom.ac.jp/wp-content/uploads/2020/10/chijo106_042-053.pdf
 [ipa]: https://www.ipa.go.jp/archive/files/000011527.pdf
 [court]: https://www.wipo.int/wipolex/en/text/584277
+

@@ -1,6 +1,7 @@
 ---
 title: "ボードゲームとAI: 将棋のルールと戦略パターン解説、AIの進化"
 date: 2026-09-23T04:00:00+09:00
+image: "eyecatch.jpg"
 categories: ["AI", "Gaming"]
 tags: ["Shogi", "Board Games", "Artificial Intelligence"]
 ---

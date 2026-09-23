@@ -4,7 +4,7 @@ slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "Algoritmo"]
 draft: false
-image: "img.webp"
+image: "eyecatch.jpg"
 categories: ["programming"]
 description: 'Explicamos claramente a visão geral do problema ''FizzBuzz'', muito comum em entrevistas para programadores, e apresentamos exemplos práticos de código em Python (condicionais). Leitura obrigatória para iniciantes e para quem deseja rever o básico.'
 ---
@@ -116,3 +116,4 @@ Não se apresse, vamos avançar devagar.
 O código é escrito por humanos. Porque somos humanos, às vezes esquecemos coisas e ficamos nervosos. Aceitando isso, acho que basta se pudermos avançar pouco a pouco.
 
 Então, vamos escrever o código de maneira descontraída hoje.
+

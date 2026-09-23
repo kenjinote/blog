@@ -2,7 +2,7 @@
 title: "Ramsey-Theorie: Ordnung entsteht selbst im Chaos – Beweis anhand von Beziehungen zwischen 6 Personen"
 description: "Kommen 6 Personen zusammen, gibt es garantiert entweder 3 Personen, die sich alle kennen, oder 3 Personen, die sich alle nicht kennen. Dieser Artikel beweist die Ramsey-Zahl R(3,3)=6 anhand farbiger Diagramme, zeigt das 5-Personen-Gegenbeispiel, prüft alle 32.768 Färbungen und erklärt Anwendungen auf Zahlenfolgen sowie Netzwerke."
 date: 2026-09-16T20:05:00+09:00
-image: "eyecatch.png"
+image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Ramsey-Theorie", "Graphentheorie", "Kombinatorik", "Schubfachprinzip", "Python"]
 slug: "ramsey-theory"
@@ -262,3 +262,4 @@ Die Faszination der [Ramsey-Theorie](https://kenji.blog/de/p/ramsey-theory/) lie
 - Yuval Wigderson, PCMI 2025, [Extremal graph theory and Ramsey theory: Lecture 10](https://ywigderson.math.ethz.ch/math/static/pcmi2025/Notes10.pdf): Vorlesungsskript zu Ramsey-artigen Fragestellungen einschließlich monotoner Teilfolgen.
 
 Die Abbildungen, Tabellen zur vollständigen Auszählung sowie die Wahrscheinlichkeits- und Häufigkeitsverteilungen in diesem Artikel wurden mit dem beiliegenden Python-Skript generiert.
+

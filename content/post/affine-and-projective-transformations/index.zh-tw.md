@@ -3,7 +3,7 @@ title: '仿射變換與投影變換：支撐CG與透視的線性代數與幾何�
 description: '從仿射變換與投影變換的數學基礎，到在電腦圖學和影像處理中的應用，使用齊次坐標系進行詳細講解。'
 slug: 'affine-and-projective-transformations'
 date: '2026-09-20T15:15:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'mathematics'
 tags:
@@ -151,3 +151,4 @@ sequenceDiagram
 - **投影變換** 在此基礎上還表現透視，從而實現更接近真實相機的非線性投影。
 
 這一框架簡化了GPU內部硬體電路的設計，實現了電腦圖學表現力的飛躍提升。同時，它也成為了電腦視覺中高級影像識別與校正演算法的基礎。透過深入理解其背後的數學含義，你對日常使用的3D軟體和影像處理API的運作方式必定會有更清晰的認識。
+

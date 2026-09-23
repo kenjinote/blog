@@ -3,7 +3,7 @@ title: 'Gram-Schmidt Process: An Algorithm to Realign Distorted Basis Vectors in
 description: 'A comprehensive guide to the Gram-Schmidt orthogonalization process in linear algebra, covering geometric intuition, mathematical formulation, numerically stable modified versions, Python implementation, and applications to polynomial spaces.'
 slug: 'gram-schmidt-process'
 date: '2026-09-20T14:40:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories: ["Mathematics"]
 tags: ["Linear Algebra", "Algorithms", "Machine Learning", "QR Decomposition", "Python", "Numerical Computing", "Mathematics"]
 ---
@@ -222,3 +222,4 @@ In this article, we broadly explained the Gram-Schmidt orthogonalization process
 I hope you have realized how powerful and widespread the impact of the simple and clear idea of "realigning distorted coordinate axes into neat, mutually perpendicular axes" is. It is beautiful as a mathematical theory, and indispensable as a modern practical data analysis algorithm performed by computers. It can be said to be one of the pinnacles for appreciating the depth of linear algebra.
 
 By all means, try executing actual program codes or attempting orthogonalization of other polynomials by hand to physically experience the mathematical joy of space being refined.
+

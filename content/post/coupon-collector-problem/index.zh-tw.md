@@ -2,7 +2,7 @@
 title: "集點問題：要抽幾次才能集滿？用公式與圖表解釋最後一張為何遲遲不來"
 description: "10種等機率卡片平均需要抽約29.3次才能集滿，但30次以內集滿的機率僅約63%。透過期望值推導、機率圖表與Python模擬，理解集點問題。"
 date: "2026-09-15T21:20:00+09:00"
-image: "eyecatch.png"
+image: "eyecatch.jpg"
 categories: ["mathematics", "statistics"]
 tags: ["機率", "期望值", "集點問題", "Python"]
 slug: "coupon-collector-problem"
@@ -298,3 +298,4 @@ $$
 - [計算資料JSON](calculation-results.zh-tw.json)——理論值、完成機率與模擬摘要。
 
 圖表依文中模型獨立計算並繪製。生成的封面圖只是概念插畫，不是量化圖表。
+

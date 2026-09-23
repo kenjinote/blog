@@ -1,6 +1,7 @@
 ---
 title: "物理學: 超導的機制 - 邁斯納效應與磁浮列車"
 date: 2026-09-23T04:01:41+09:00
+image: "eyecatch.jpg"
 categories: ["physics", "science"]
 tags: ["superconductivity", "meissner-effect", "maglev"]
 ---
@@ -1589,4 +1590,5 @@ $$ \nabla \times \mathbf{J} = -\frac{n_s e^2}{m} \mathbf{B} $$
 ## 附加技術驗證部分 393
 
 本節將深入探討進一步的技術細節與案例研究。我們將評估各種條件下的效能，並探討與其他系統整合時的挑戰與解決方案。同時也會考察未來的展望與限制。
+
 

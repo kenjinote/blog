@@ -3,7 +3,7 @@ title: 'Pythagoras: The Intersection of Mathematics and Mysticism'
 description: 'An in-depth exploration of the life of the ancient Greek mathematician Pythagoras, the Pythagorean theorem, and the philosophy that all is number.'
 slug: 'pythagoras'
 date: '2026-09-20T18:40:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'mathematics'
   - 'biography'
@@ -66,3 +66,4 @@ The Pythagorean Order believed that "all phenomena can be expressed as a ratio o
 ## Conclusion
 
 [Pythagoras](https://kenji.blog/en/p/pythagoras/) was not merely a mathematician; he was a great thinker who tried to understand the world through the lens of "numbers". His teachings continue to shine as the spiritual origin of modern scientific approaches.
+

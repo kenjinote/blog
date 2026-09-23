@@ -6,7 +6,7 @@ tags: ["Física", "Mecánica cuántica", "Experimento de la doble rendija", "Ecu
 categories: ["physics-science"]
 math: true
 mermaid: true
-image: "cover.webp"
+image: "eyecatch.jpg"
 description: 'Una explicación profunda sobre el "experimento de la doble rendija", conocido como el experimento más hermoso de la historia de la física. Resumimos para principiantes las anomalías del mundo microscópico donde el sentido común del mundo macroscópico no aplica, y los profundos misterios de la mecánica cuántica.'
 ---
 ## 1. [Introducción] ¿Qué es el experimento de la doble rendija?
@@ -437,5 +437,6 @@ A lo largo de este artículo, hemos visto en detalle cómo un experimento extrem
 Ahora nos encontramos en el umbral del segundo acto de la revolución cuántica. No importa cuánto avance la ciencia y la tecnología, los profundos misterios de las "ondas de probabilidad" y la "determinación por observación" que se extienden más allá de esas dos rendijas aún no se han resuelto por completo. ¿Cómo comenzó el universo? ¿Qué significado físico tienen la conciencia y la observación? ¿Cómo se unificarán la mecánica cuántica microscópica y la relatividad general macroscópica (el estudio de la teoría de la gravedad cuántica)? Las claves para descifrar estos misterios definitivos también podrían estar ocultas dentro del fenómeno simple y profundo del experimento de la doble rendija.
 
 En el ajetreo de la vida diaria, cuando de repente veas la luz entrar por la ventana, o cuando mires hacia arriba al parpadeo de las estrellas en el cielo nocturno, por favor recuérdalo: los innumerables fotones que componen esa luz, hasta el mismo instante en que llegaron a los "instrumentos de observación" que son tus ojos al final de un largo viaje, fueron ondas que albergaban el potencial infinito de atravesar todos los caminos del universo simultáneamente. Esta realidad que estamos presenciando no es más que una pequeña fracción de una danza épica y eterna en la que el universo se observa y se determina a sí mismo continuamente. El experimento de la doble rendija no nos confronta con el terror o la vacuidad ante la incertidumbre del mundo. Es un sentimiento abrumador de asombro y reverencia por lo místico que es este universo, lo inimaginablemente rico que es y lo profundamente conectado que está con nuestra propia existencia. Este podría considerarse el mayor regalo que el experimento de la doble rendija ha dado a la humanidad.
+
 
 

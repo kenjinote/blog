@@ -6,7 +6,7 @@ tags: ["量子コンピュータ", "量子力学", "アルゴリズム", "物理
 categories: ["math-cryptography-quantum"]
 math: true
 mermaid: true
-image: "cover.webp"
+image: "eyecatch.jpg"
 description: '古典コンピュータの物理的限界とムーアの法則の終焉から、量子トンネル効果といった量子力学的効果の壁まで、量子コンピュータの幕開けに至る背景を徹底解説します。次世代の情報処理技術を理解するための完全ガイド第1章です。'
 ---
 
@@ -2863,6 +2863,7 @@ $$
 
 ---
  **連載『量子コンピュータの原理』（全12章）　完** 
+
 
 
 

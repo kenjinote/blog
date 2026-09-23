@@ -3,7 +3,7 @@ title: 'Pythagore : Le carrefour des mathematiques et du mysticisme'
 description: 'Une exploration approfondie de la vie du mathematicien de la Grece antique Pythagore, du theoreme de Pythagore et de la philosophie selon laquelle tout est nombre.'
 slug: 'pythagoras'
 date: '2026-09-20T18:40:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'mathématiques'
   - 'biographie'
@@ -66,3 +66,4 @@ Pythagore a découvert que des accords agréables (consonances) sont produits lo
 ## Conclusion
 
 Pythagore n'était pas seulement un mathématicien ; c'était un grand penseur qui a essayé de comprendre le monde à travers le prisme des "nombres". Ses enseignements continuent de briller comme l'origine spirituelle des approches scientifiques modernes.
+

@@ -3,7 +3,7 @@ title: 'John von Neumann: A Trajetória do "Cérebro Demoníaco" que Construiu a
 description: 'Uma explicação detalhada da vida do gênio matemático John von Neumann, suas realizações surpreendentes desde a teoria dos jogos até a mecânica quântica e a ciência da computação, e inúmeras anedotas sobre ele.'
 slug: 'von-neumann'
 date: '2026-09-20T20:20:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories: ['mathematics', 'biography']
 tags: ['John von Neumann', 'Mecânica Quântica', 'Teoria dos Jogos', 'Ciência da Computação', 'Matemático', 'Gênio']
 ---
@@ -145,3 +145,4 @@ A seguir, uma linha do tempo detalhada resumindo a vida e as principais realiza�
 ## 12. Conclusão
 
 John von Neumann faleceu em 1957 com a tenra idade de 53 anos devido a um câncer. No entanto, o legado intelectual que ele deixou ainda sobrevive fortemente hoje como a base da matemática, física, economia e tecnologia da informação modernas. Dos smartphones e computadores que usamos todos os dias à tecnologia de inteligência artificial (IA) de ponta e métodos analíticos nas ciências sociais, vislumbres do "Cérebro Demoníaco" de von Neumann podem ser vistos em todos os lugares. Refletir sobre sua vida nos faz perceber mais uma vez as infinitas possibilidades do intelecto humano e a magnitude de seu impacto no mundo. Na história da humanidade, ninguém mais causou mudanças de paradigma fundamentais em uma gama tão ampla de campos como ele.
+

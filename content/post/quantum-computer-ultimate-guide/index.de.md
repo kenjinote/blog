@@ -6,7 +6,7 @@ tags: ["Quantum Computer", "Quantum Mechanics", "Algorithm", "Physics"]
 categories: ["math-cryptography-quantum"]
 math: true
 mermaid: true
-image: "cover.webp"
+image: "eyecatch.jpg"
 description: 'Erklärt umfassend die Hintergründe, die zum Beginn der Quantencomputer geführt haben, von den physikalischen Grenzen klassischer Computer und dem Ende des Mooreschen Gesetzes bis zur Barriere quantenmechanischer Effekte wie dem Quantentunneleffekt. Dies ist Kapitel 1 des vollständigen Leitfadens zum Verständnis der Informationsverarbeitungstechnologie der nächsten Generation.'
 ---
 
@@ -2864,5 +2864,6 @@ Wenn diese Serie dazu beitragen konnte, abseits oberflächlicher Schlagworte und
 
 ---
  **Die Serie „Prinzipien von Quantencomputern“ (12 Kapitel) – Ende** 
+
 
 

@@ -3,7 +3,7 @@ title: 'Teiji Takagi: Matematikawan Jepang Kelas Dunia yang Mendirikan Teori Med
 description: 'Melihat lebih dalam kehidupan Teiji Takagi, bapak matematika Jepang modern, dan pencapaian matematika besarnya dalam mendirikan Teori Medan Kelas.'
 slug: 'takagi-teiji'
 date: '2026-09-20T19:50:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'matematika'
   - 'biografi'
@@ -116,3 +116,4 @@ Benih yang ditaburnya diwariskan kepada matematikawan Jepang yang nantinya akan 
 **Teiji [Takagi](https://kenji.blog/id/p/takagi-teiji/)** mengembangkan disiplin akademik matematika, yang lahir di Barat, secara unik di negara Timur, Jepang, dan membangun puncak teori tertinggi di dunia. Kehidupannya mengatasi kesulitan isolasi selama perang dan menyelesaikan "Teori Medan Kelas" yang luar biasa dengan hanya mengandalkan pemikiran murni mengajarkan kita kemungkinan tak terbatas dari kecerdasan manusia.
 
 Hari ini, bidang-bidang di mana teori bilangan aljabar diterapkan, seperti kriptografi dan fisika matematika, terus berkembang. Pencapaian Teiji [Takagi](https://kenji.blog/id/p/takagi-teiji/), yang meletakkan fondasinya, terus bersinar melampaui zaman.
+

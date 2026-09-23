@@ -3,6 +3,7 @@ title: "How Winny worked: search, caching, relays, and the limits of anonymity"
 description: "A technical guide to Winny’s P2P network: metadata keys, bandwidth-based hierarchy, caching, and relays, with numerical examples and a clear account of data leaks and the developer’s trial."
 slug: "history-of-winny"
 date: "2026-09-23T10:00:00+09:00"
+image: "eyecatch.jpg"
 categories: ["technology", "computer-science"]
 tags: ["p2p", "network", "winny", "history"]
 math: true
@@ -152,3 +153,4 @@ Ask five questions of modern distributed systems too: **How is the first peer fo
 [glocom]: https://www.glocom.ac.jp/wp-content/uploads/2020/10/chijo106_042-053.pdf
 [ipa]: https://www.ipa.go.jp/archive/files/000011527.pdf
 [court]: https://www.wipo.int/wipolex/en/text/584277
+

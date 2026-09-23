@@ -6,7 +6,7 @@ tags: ["Quantum Computer", "Quantum Mechanics", "Algorithm", "Physics"]
 categories: ["math-cryptography-quantum"]
 math: true
 mermaid: true
-image: "cover.webp"
+image: "eyecatch.jpg"
 description: 'Kami menjelaskan secara tuntas latar belakang yang mengarah pada dimulainya komputer kuantum, dari batas fisik komputer klasik dan berakhirnya Hukum Moore, hingga hambatan efek mekanika kuantum seperti efek terowongan kuantum. Ini adalah bab pertama dari panduan lengkap untuk memahami teknologi pemrosesan informasi generasi berikutnya.'
 ---
 
@@ -2863,5 +2863,6 @@ Penulis merasa sangat bahagia jika seri ini dapat membantu para pembaca memahami
 
 ---
  **Seri "Prinsip-prinsip Komputer Kuantum" (Total 12 Bab) Selesai** 
+
 
 

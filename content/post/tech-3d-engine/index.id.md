@@ -1,6 +1,7 @@
 ---
 title: "Teknologi Game: Evolusi Mesin Grafis 3D (Unreal Engine / Unity)"
-date: 2026-09-23T04:01:41+09:00
+date: 2026-09-23T04:01:41+09:00
+image: "eyecatch.jpg"
 categories: ["gaming", "technology"]
 tags: ["3d", "engine", "unreal", "unity", "graphics"]
 ---
@@ -1590,3 +1591,4 @@ Di bagian ini, kami akan menggali lebih dalam detail teknis lebih lanjut dan stu
 ## Bagian Verifikasi Teknologi Tambahan 393
 
 Di bagian ini, kami akan menggali lebih dalam detail teknis lebih lanjut dan studi kasus. Kami akan mengevaluasi kinerja dalam berbagai kondisi dan memeriksa tantangan serta solusi yang berkaitan dengan integrasi sistem lain. Kami juga akan membahas prospek dan batasan masa depan.
+

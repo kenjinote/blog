@@ -3,7 +3,7 @@ title: '破解RSA密碼？透過數學公式徹底解說GNFS與Shor演算法'
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00
 tags: ["量子電腦", "GNFS", "Shor演算法", "密碼破解", "數學"]
-image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
+image: "eyecatch.jpg"
 mermaid: true
 math: true
 categories: ["math-cryptography-quantum"]
@@ -197,5 +197,6 @@ GNFS採取 **「在數學空間（代數體）中尋找關係式」** 的策略�
 GNFS透過多項式選擇與巨大矩陣計算等數學技巧，將計算複雜度壓低至次指數時間；相對地，Shor演算法將量子力學的基本原理（疊加與干涉）與數學工具（QFT）融合，一舉突破至多項式時間。
 
 目前，尚不存在能夠以實用規模（數千個量子位元）執行Shor演算法的容錯量子電腦（FTQC）。然而，正是這個數學與理論上的典範轉移，成為了現在全世界急於轉換至後量子密碼學（PQC: Post-Quantum [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）的最大理由。
+
 
 

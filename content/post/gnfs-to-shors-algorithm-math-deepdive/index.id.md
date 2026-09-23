@@ -3,7 +3,7 @@ title: 'Memecahkan Sandi RSA? Penjelasan Menyeluruh Algoritme GNFS dan Shor deng
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00
 tags: ["Komputer Kuantum", "GNFS", "Algoritma Shor", "Kriptanalisis", "Matematika"]
-image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
+image: "eyecatch.jpg"
 mermaid: true
 math: true
 categories: ["math-cryptography-quantum"]
@@ -198,4 +198,5 @@ Dalam artikel ini, kami telah membandingkan secara mendalam latar belakang matem
 Sementara GNFS menggunakan keahlian matematis seperti pemilihan polinomial dan komputasi matriks besar untuk menekan kompleksitas ke waktu sub-eksponensial, Algoritma Shor berhasil mencapai terobosan langsung ke waktu polinomial dengan menggabungkan prinsip dasar mekanika kuantum, yakni superposisi dan interferensi, dengan alat matematis (QFT).
 
 Saat ini, belum ada Komputer Kuantum Toleran Kesalahan (FTQC) berskala praktis (ribuan qubit) yang mampu menjalankan Algoritma Shor. Namun, keberadaan pergeseran paradigma teoritis dan matematis inilah yang menjadi alasan utama mengapa transisi ke Kriptografi Pasca-Kuantum (PQC: Post-Quantum [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy) dipercepat secara global di seluruh dunia saat ini.
+
 

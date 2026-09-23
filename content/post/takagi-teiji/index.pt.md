@@ -3,7 +3,7 @@ title: 'Teiji Takagi: O matemático japonês de classe mundial que estabeleceu a
 description: 'Um olhar aprofundado sobre a vida de Teiji Takagi, o pai da matemática japonesa moderna, e sua grande conquista matemática de estabelecer a teoria de corpos de classes.'
 slug: 'takagi-teiji'
 date: '2026-09-20T19:50:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'matemática'
   - 'biografia'
@@ -116,3 +116,4 @@ As sementes que ele plantou foram passadas a matemáticos japoneses que mais tar
 **Teiji [Takagi](https://kenji.blog/pt/p/takagi-teiji/)** desenvolveu a disciplina acadêmica da matemática, nascida no Ocidente, de forma singular no país oriental do Japão e construiu o mais alto pico teórico do mundo. Sua vida de superar a adversidade do isolamento durante a guerra e concluir a magnífica "Teoria de corpos de classes" confiando apenas no pensamento puro ensina-nos as infinitas possibilidades do intelecto humano.
 
 Hoje, os campos onde a teoria algébrica dos números é aplicada, como a criptografia e a física matemática, continuam a expandir-se. As conquistas de Teiji [Takagi](https://kenji.blog/pt/p/takagi-teiji/), que estabeleceu seus fundamentos, continuam a brilhar além de sua época.
+

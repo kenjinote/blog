@@ -3,6 +3,7 @@ title: "كيف عمل Winny: البحث والتخزين المؤقت والتر
 description: "شرح شبكة Winny من خلال البيانات الوصفية والتدرج حسب سرعة الاتصال والتخزين المؤقت، مع أمثلة لحجم النقل وتوضيح حدود الأمان وتسرب البيانات ومحاكمة المطور."
 slug: "history-of-winny"
 date: "2026-09-23T10:00:00+09:00"
+image: "eyecatch.jpg"
 categories: ["technology", "computer-science"]
 tags: ["p2p", "network", "winny", "history"]
 math: true
@@ -152,3 +153,4 @@ $$
 [glocom]: https://www.glocom.ac.jp/wp-content/uploads/2020/10/chijo106_042-053.pdf
 [ipa]: https://www.ipa.go.jp/archive/files/000011527.pdf
 [court]: https://www.wipo.int/wipolex/en/text/584277
+

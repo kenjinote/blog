@@ -4,7 +4,7 @@ slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "數學", "密碼學"]
 draft: false
-image: "gnfs_cpp_blog_eyecatch_1788580949217.webp"
+image: "eyecatch.jpg"
 categories: ["math-cryptography-quantum"]
 description: '附上C++實作程式碼，徹底解說用於破解RSA密碼的質因數分解演算法「普通數域篩法（GNFS）」之原理。這是一篇深入探討活用Boost函式庫的計算邏輯與代數數論奧秘，程式設計愛好者必看的文章。'
 ---
@@ -443,4 +443,5 @@ GNFS 不僅僅是一種程式設計的技巧。
 我們不經意傳送的聊天訊息或信用卡資訊，就是建立在這種天文數字般的數學攻防之上受到保護的。
 
 希望透過這個 C++ 框架，能讓各位感受到最尖端密碼破解演算法背後的「數學與計算機的浪漫」。
+
 

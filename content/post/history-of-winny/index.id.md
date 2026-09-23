@@ -3,6 +3,7 @@ title: "Cara kerja Winny: pencarian, cache, perantara, dan batas anonimitas"
 description: "Memahami jaringan P2P Winny melalui metadata, hierarki kecepatan koneksi, dan cache, dilengkapi contoh volume transfer, batas keamanan, kebocoran data, serta perkara pengembangnya."
 slug: "history-of-winny"
 date: "2026-09-23T10:00:00+09:00"
+image: "eyecatch.jpg"
 categories: ["technology", "computer-science"]
 tags: ["p2p", "network", "winny", "history"]
 math: true
@@ -152,3 +153,4 @@ Ajukan lima pertanyaan juga pada sistem modern: **Bagaimana simpul pertama ditem
 [glocom]: https://www.glocom.ac.jp/wp-content/uploads/2020/10/chijo106_042-053.pdf
 [ipa]: https://www.ipa.go.jp/archive/files/000011527.pdf
 [court]: https://www.wipo.int/wipolex/en/text/584277
+

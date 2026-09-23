@@ -2,7 +2,7 @@
 title: 'Construcción de un pipeline CI/CD para proyectos C++ con GitHub Actions'
 slug: 'github-actions-cpp-cicd-pipeline'
 date: '2026-09-12T18:00:00+09:00'
-image: 'img/eyecatch.jpg'
+image: "eyecatch.jpg"
 math: true
 mermaid: true
 categories: ["programming", "devops"]
@@ -455,3 +455,4 @@ La construcción de un pipeline [CI/CD](https://kenji.blog/es/p/cicd-pipeline-gi
 La verificación multiplataforma mediante la estrategia matricial, la detección de errores en tiempo de ejecución con Sanitizers, la medición de cobertura y el despliegue automático a GitHub Releases que se explicaron en este artículo, son las mejores prácticas adoptadas ampliamente, incluso en proyectos de código abierto de nivel comercial.
 
 Un pipeline CI/CD automatizado minimiza el tiempo que los desarrolladores dedican a la "búsqueda de errores" y a las "tareas manuales de construcción y lanzamiento", convirtiéndose en el arma definitiva para concentrarse en la actividad verdaderamente creativa que es la programación. No dudes en implementarlo en tus proyectos C++ y disfruta de una vida de desarrollo ágil y confiable.
+

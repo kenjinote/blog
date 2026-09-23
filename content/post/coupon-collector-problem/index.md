@@ -2,7 +2,7 @@
 title: "クーポンコレクター問題：全種類そろえるには何回必要？最後の1枚が出ない理由を数式とグラフで解説"
 description: "全10種類のカードをそろえる平均回数は約29.3回。でも30回でそろう確率は約63％です。クーポンコレクター問題を、期待値の導出、完了確率のグラフ、Pythonシミュレーションでわかりやすく解説します。"
 date: 2026-09-15T21:20:00+09:00
-image: "eyecatch.png"
+image: "eyecatch.jpg"
 categories: ["mathematics", "statistics"]
 tags: ["確率", "期待値", "クーポンコレクター問題", "Python"]
 slug: "coupon-collector-problem"
@@ -306,3 +306,4 @@ $$
 - [グラフの計算値（JSON）](calculation-results.json) — 理論値、完了確率、シミュレーション結果の要約。
 
 [グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)は上記のモデルから独自に計算・作図したものです。アイキャッチは内容をイメージした生成画像で、計算結果を示す図ではありません。
+

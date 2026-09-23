@@ -3,7 +3,7 @@ title: 'RSA暗号を破る？GNFSとShorのアルゴリズムを数式で徹底�
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00
 tags: ["量子コンピュータ", "GNFS", "Shorのアルゴリズム", "暗号解読", "数学"]
-image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
+image: "eyecatch.jpg"
 mermaid: true
 math: true
 categories: ["math-cryptography-quantum"]
@@ -198,5 +198,6 @@ GNFSは **「数学的な空間（代数体）の中で関係式を探索する�
 GNFSが多項式の選択や巨大行列の計算といった数学的技巧を凝らして準指数時間へと計算量を押し下げたのに対し、Shorのアルゴリズムは量子力学の基本原理である重ね合わせと干渉を数学的ツール（QFT）と融合させ、一気に多項式時間へとブレイクスルーを果たしました。
 
 現状では、実用的な規模（数千量子ビット）でShorのアルゴリズムを実行できるエラー耐性[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)（FTQC）は存在しません。しかし、この数学的・理論的なパラダイムシフトの存在こそが、現在世界中で耐量子計算機暗号（PQC: Post-Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy）への移行が急がれている最大の理由なのです。
+
 
 

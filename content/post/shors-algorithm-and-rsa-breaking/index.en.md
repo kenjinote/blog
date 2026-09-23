@@ -2,7 +2,7 @@
 title: 'Will Quantum Computers Break RSA Encryption? Explaining Shor''s Algorithm'
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["Quantum Computer", "Cryptanalysis", "Shor's Algorithm", "RSA"]
-image: "quantum_breaking_rsa_1788613722990.webp"
+image: "eyecatch.jpg"
 date: 2026-09-05T22:09:21+09:00
 categories: ["math-cryptography-quantum"]
 description: 'Explains how RSA encryption, which supports modern communication infrastructure, is threatened by the rise of quantum computers. Discusses the future of next-generation cryptanalysis and security, from the mechanics of Shor''s algorithm to the current state of hardware in the NISQ era.'
@@ -183,4 +183,5 @@ Major software and platforms such as Google Chrome and Apple's iMessage have alr
 Quantum computers are transitioning from a pipe dream in the world of science fiction to a real engineering challenge. Shor's algorithm is a great intellectual achievement of humanity that merges mathematics and quantum mechanics, but at the same time, it harbors a "destructive power" that shakes the foundations of our digital society.
 
 [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption will not suddenly become unusable tomorrow. However, considering the evolution of quantum technology and the risk of "Store Now, Decrypt Later," a large-scale migration that will remain in cryptographic history—the transition to PQC—has already begun. We are now witnessing the front lines of a paradigm shift in information security.
+
 

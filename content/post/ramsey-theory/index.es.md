@@ -2,7 +2,7 @@
 title: "Teoría de Ramsey: siempre surge el orden del desorden — Demostración de relaciones entre 6 personas con colores"
 description: "En cualquier grupo de 6 personas, siempre existen 3 que se conocen mutuamente o 3 que no se conocen entre sí. Demostramos el número de Ramsey R(3,3)=6 con diagramas a color, el contraejemplo para 5 personas, la verificación de las 32.768 configuraciones y sus aplicaciones a secuencias y redes."
 date: 2026-09-16T20:05:00+09:00
-image: "eyecatch.png"
+image: "eyecatch.jpg"
 categories: ["matemáticas"]
 tags: ["Teoría de Ramsey", "Teoría de grafos", "Combinatoria", "Principio del palomar", "Python"]
 slug: "ramsey-theory"
@@ -262,3 +262,4 @@ La fascinación de la teoría de Ramsey no radica en que un todo complejo se vue
 - Yuval Wigderson, PCMI 2025, [Extremal graph theory and Ramsey theory: Lecture 10](https://ywigderson.math.ethz.ch/math/static/pcmi2025/Notes10.pdf): Material de cátedra sobre el pensamiento de Ramsey, incluyendo subsecuencias monótonas.
 
 Las figuras, la tabla de enumeración exhaustiva y las distribuciones de probabilidad y recuento de este artículo fueron generadas con el script en Python adjunto.
+

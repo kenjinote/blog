@@ -2,7 +2,7 @@
 title: "安定結婚問題：全員の希望をどう組み合わせるか？ゲール＝シャプレーのアルゴリズムを図と数式で解説"
 description: "全員の第1希望がかなわなくても、安定した組み合わせは作れます。安定結婚問題を、3組の具体例、希望順位の比較グラフ、ゲール＝シャプレーのアルゴリズムとPythonコードで解説。安定・満足・公平の違いも考えます。"
 date: 2026-09-16T14:30:00+09:00
-image: "eyecatch.png"
+image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["安定結婚問題", "アルゴリズム", "ゲーム理論", "マッチング", "Python"]
 slug: "stable-marriage-problem"
@@ -269,3 +269,4 @@ print("ブロッキングペア:", blocking_pairs(match, left, right))
 ### 参考文献
 
 D. Gale and L. S. Shapley, “College Admissions and the Stability of Marriage,” *The American Mathematical Monthly*, 69(1), 9–15, 1962. [原論文PDF](https://www.math.utoronto.ca/mccann/assignments/477/GaleShapley62.pdf)。基本モデルの定義、受入保留方式、安定性と申し込み側最適性の原典です。本記事の3人の例・比較表・図は独自に計算しています。
+

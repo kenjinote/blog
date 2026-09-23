@@ -4,7 +4,7 @@ slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "Matemática", "Criptografia"]
 draft: false
-image: "gnfs_cpp_blog_eyecatch_1788580949217.webp"
+image: "eyecatch.jpg"
 categories: ["math-cryptography-quantum"]
 description: 'Uma análise profunda com código em C++ do algoritmo de fatoração ''General Number Field Sieve (GNFS)'', utilizado na quebra do algoritmo de criptografia RSA. Uma leitura indispensável para entusiastas da programação, mergulhando na lógica de cálculos usando a biblioteca Boost e nos abismos da teoria dos números algébricos.'
 ---
@@ -443,3 +443,4 @@ Trata-se de forçar as "profundezas da matemática pura" como álgebra abstrata,
 Por trás de transações por cartão de crédito ou simples chats do dia-a-dia, encontra-se esta astronômica barreira defensiva construída através do poderio e batalha da matemática.
 
 Espero que compreendam que, na retaguarda dos fortes algoritmos criptográficos, existe um "romance dos computadores com a matemática" oculto neste simples framework em C++.
+

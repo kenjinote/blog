@@ -3,7 +3,7 @@ title: 'Proceso de Ortogonalización de Gram-Schmidt: Un algoritmo para realinea
 description: 'Una guía completa sobre el proceso de ortogonalización de Gram-Schmidt en álgebra lineal, cubriendo intuición geométrica, formulación matemática, versiones modificadas estables numéricamente, implementación en Python y aplicaciones a espacios polinómicos.'
 slug: 'gram-schmidt-process'
 date: '2026-09-20T14:40:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories: ["Matemáticas"]
 tags: ["Álgebra Lineal", "Algoritmos", "Aprendizaje Automático", "Descomposición QR", "Python", "Cálculo Numérico", "Matemáticas"]
 ---
@@ -222,3 +222,4 @@ En este artículo, explicamos detalladamente el proceso de ortogonalización de 
 Espero que haya comprendido cuán poderoso y generalizado es el impacto de la idea simple y clara de "realinear los ejes de coordenadas distorsionados en ejes nítidos y mutuamente perpendiculares". Es hermoso como teoría matemática e indispensable como algoritmo moderno de análisis de datos práctico realizado por computadoras. Se puede decir que es uno de los pináculos para apreciar la profundidad del álgebra lineal.
 
 Por supuesto, intente ejecutar códigos de programas reales o intentar ortogonalizar otros polinomios a mano para experimentar físicamente la alegría matemática de refinar el espacio.
+

@@ -3,7 +3,7 @@ title: 'Pythagoras: Persimpangan Matematika dan Mistisisme'
 description: 'Eksplorasi mendalam tentang kehidupan matematikawan Yunani kuno Pythagoras, teorema Pythagoras, dan filosofi bahwa semuanya adalah angka.'
 slug: 'pythagoras'
 date: '2026-09-20T18:40:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'matematika'
   - 'biografi'
@@ -66,3 +66,4 @@ Ordo [Pythagoras](https://kenji.blog/id/p/pythagoras/) percaya bahwa "semua feno
 ## Kesimpulan
 
 [Pythagoras](https://kenji.blog/id/p/pythagoras/) bukan hanya seorang matematikawan; ia adalah seorang pemikir hebat yang mencoba memahami dunia melalui lensa "angka". Ajarannya terus bersinar sebagai asal mula spiritual dari pendekatan ilmiah modern.
+

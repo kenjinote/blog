@@ -2,7 +2,7 @@
 title: '量子计算机会破解RSA加密吗？Shor算法分析'
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["量子计算机", "密码破解", "Shor算法", "RSA"]
-image: "quantum_breaking_rsa_1788613722990.webp"
+image: "eyecatch.jpg"
 date: 2026-09-05T22:09:21+09:00
 categories: ["math-cryptography-quantum"]
 description: '讲解量子计算机的崛起将如何威胁支撑现代通信基础设施的RSA加密。从Shor算法的原理到NISQ时代硬件的现状，探讨下一代密码破解与安全的未来。'
@@ -184,5 +184,6 @@ PQC是基于即使使用量子计算机也很难破解（即无法应用秀尔�
 量子计算机正在从科幻世界里的梦想，转变为现实的工程挑战。秀尔算法是数学与量子力学融合的人类伟大智力成果，但同时，它也暗藏着动摇我们数字社会基石的“破坏力”。
 
 [RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密并不会明天立刻就变得不可用。但是，考虑到量子技术的发展以及“Store Now, Decrypt Later”的风险，向PQC过渡这一密码学史上规模空前的迁移已经开始。我们现在正在见证信息安全领域范式转移的最前线。
+
 
 

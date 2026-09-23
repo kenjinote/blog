@@ -2,7 +2,7 @@
 title: '量子コンピュータはRSA暗号を破るか？ショアのアルゴリズムを解説'
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["量子コンピュータ", "暗号解読", "Shorのアルゴリズム", "RSA"]
-image: "quantum_breaking_rsa_1788613722990.webp"
+image: "eyecatch.jpg"
 date: 2026-09-05T22:09:21+09:00
 categories: ["math-cryptography-quantum"]
 description: '量子コンピュータの台頭によって現代の通信インフラを支えるRSA暗号がどのように脅かされるのかを解説します。ショアのアルゴリズムの仕組みからNISQ時代のハードウェアの現状まで、次世代の暗号解読とセキュリティの未来を考察します。'
@@ -184,3 +184,4 @@ PQCは、[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors
 量子コンピュータは、SFの世界の夢物語から現実の工学的挑戦へと移行しています。ショアのアルゴリズムは、数学と量子力学が融合した人類の偉大な知的成果ですが、同時に我々のデジタル社会の基盤を揺るがす「破壊的な力」を秘めています。
 
 [RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号が明日すぐに使えなくなるわけではありません。しかし、量子技術の進化と「Store Now, Decrypt Later」のリスクを鑑みれば、PQCへの移行という暗号史に残る大規模なマイグレーションはすでに始まっています。我々は今、情報セキュリティにおけるパラダイムシフトの最前線を目撃しているのです。
+

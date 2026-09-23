@@ -6,7 +6,7 @@ tags: ["Física", "Mecânica Quântica", "Experiência da Dupla Fenda", "Equaç�
 categories: ["physics-science"]
 math: true
 mermaid: true
-image: "cover.webp"
+image: "eyecatch.jpg"
 description: 'Uma análise detalhada sobre o ''Experimento da Dupla Fenda'', frequentemente considerado o experimento mais bonito da história da física. Resumimos de forma clara e acessível aos iniciantes as anomalias do mundo microscópico, onde o senso comum macroscópico falha, e os profundos mistérios da mecânica quântica.'
 ---
 ## 1. [Introdução] O Que É a Experiência da Dupla Fenda?
@@ -447,5 +447,6 @@ Ao longo deste artigo, vimos detalhadamente como o experimento extremamente simp
 Hoje nos encontramos na porta de entrada do segundo ato da revolução quântica. Por mais que a ciência e a tecnologia avancem, o profundo mistério das "ondas de probabilidade" e da "definição pela observação", que se espalha para além daquelas duas fendas, ainda não foi completamente desvendado. Como o universo começou? O que consciência e observação significam fisicamente? Como a mecânica quântica microscópica e a teoria da relatividade geral macroscópica se unificam (estudos da teoria da gravitação quântica)? As chaves para desvendar esses enigmas supremos também podem estar escondidas no fenômeno tão simples e profundo do experimento da dupla fenda.
 
 Em meio à correria do dia a dia, quando de repente você vir a luz entrando por uma janela, ou olhar para as estrelas piscando no céu noturno, por favor se lembre disto. Inúmeros fótons, que constituem aquela luz, foram ondas ocultando infinitas possibilidades, atravessando simultaneamente cada rota imaginável no universo, até o momento em que chegaram aos seus olhos — os "detectores" —, ao fim de uma longa viagem. Essa realidade que testemunhamos não é mais que uma ínfima parte da dança grandiosa e eterna onde o universo continua observando a si mesmo e definindo a si mesmo. O que o experimento da dupla fenda nos apresenta não é nem o medo nem o niilismo face à incerteza do mundo. É o espanto e a reverência avassaladores perante o quão místico, inimaginavelmente rico e profundamente ligado à nossa própria existência este universo é. Este pode ser considerado o maior presente que o experimento da dupla fenda deu à humanidade.
+
 
 

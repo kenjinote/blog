@@ -1,6 +1,7 @@
 ---
 title: "Tecnología de juegos: La evolución de los motores de gráficos 3D (Unreal Engine / Unity)"
-date: 2026-09-23T04:01:41+09:00
+date: 2026-09-23T04:01:41+09:00
+image: "eyecatch.jpg"
 categories: ["gaming", "technology"]
 tags: ["3d", "engine", "unreal", "unity", "graphics"]
 ---
@@ -1590,3 +1591,4 @@ En esta sección, profundizaremos en más detalles técnicos y estudios de casos
 ## Parte 393 de Verificación de Tecnología Adicional
 
 En esta sección, profundizaremos en más detalles técnicos y estudios de casos. Evaluaremos el rendimiento bajo diversas condiciones y discutiremos los desafíos y soluciones relacionados con la integración con otros sistemas. También consideraremos las perspectivas y limitaciones futuras.
+

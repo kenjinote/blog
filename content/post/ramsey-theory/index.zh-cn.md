@@ -2,7 +2,7 @@
 title: "拉姆齐理论：完全无序中必有规则——通过6人社交关系着色证明"
 description: "只要聚集6个人，就必定存在互为熟人的3人，或者互不相识的3人。本文通过着色图证明拉姆齐数 R(3,3)=6，并深入解析5人时的反例、全部32768种涂色情况的程序验证，以及在数列和网络中的实际应用。"
 date: 2026-09-16T20:05:00+09:00
-image: "eyecatch.png"
+image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["拉姆齐理论", "图论", "组合数学", "鸽巢原理", "Python"]
 slug: "ramsey-theory"
@@ -262,3 +262,4 @@ $$
 - Yuval Wigderson, PCMI 2025, [Extremal graph theory and Ramsey theory: Lecture 10](https://ywigderson.math.ethz.ch/math/static/pcmi2025/Notes10.pdf)：涵盖单调子序列等拉姆齐思想的高校讲义资料。
 
 本文中的示意图、穷举表格、概率与数量分布数据，均由文章附带的Python脚本计算生成。
+

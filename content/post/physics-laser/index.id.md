@@ -1,6 +1,7 @@
 ---
 title: "Fisika: Cara Kerja Laser - Emisi Terstimulasi dan Amplifikasi Cahaya"
-date: 2026-09-23T04:01:41+09:00
+date: 2026-09-23T04:01:41+09:00
+image: "eyecatch.jpg"
 categories: ["physics", "science"]
 tags: ["laser", "optics", "quantum"]
 ---
@@ -1594,3 +1595,4 @@ Di bagian ini, kami mempelajari lebih dalam tentang detail teknis lebih lanjut d
 ## Bagian Verifikasi Teknis Tambahan 394
 
 Di bagian ini, kami mempelajari lebih dalam tentang detail teknis lebih lanjut dan studi kasus. Mengevaluasi performa dalam berbagai kondisi serta mempertimbangkan masalah dan solusi terkait integrasi dengan sistem lain. Kami juga membahas prospek dan batasan di masa depan.
+

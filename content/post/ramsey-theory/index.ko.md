@@ -2,7 +2,7 @@
 title: "램지 이론: 무질서 속에서도 반드시 규칙은 나타난다——6명의 인간관계를 색칠로 증명"
 description: "6명이 모이면 서로 아는 3명이나 서로 모르는 3명이 반드시 존재합니다. 램지 수 R(3,3)=6을 색칠한 그림으로 증명하고, 5명의 반례, 총 32,768가지 경우의 검증, 수열 및 네트워크 응용까지 해설합니다."
 date: 2026-09-16T20:05:00+09:00
-image: "eyecatch.png"
+image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["램지 이론", "그래프 이론", "조합수학", "비둘기집 원리", "Python"]
 slug: "ramsey-theory"
@@ -262,3 +262,4 @@ $$
 - Yuval Wigderson, PCMI 2025, [Extremal graph theory and Ramsey theory: Lecture 10](https://ywigderson.math.ethz.ch/math/static/pcmi2025/Notes10.pdf): 단조 부분수열을 포함한 램지적 사고방식에 대한 강의 자료.
 
 본 기사의 그림, 전수 조사 표, 확률 및 개수 분포는 첨부된 Python 스크립트로 생성되었습니다.
+

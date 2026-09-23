@@ -3,7 +3,7 @@ title: 'Joseph Liouville: Pioneer of Transcendental Numbers and Complex Analysis
 description: 'Exploring the life and legacy of Joseph Liouville, the great 19th-century French mathematician known for Liouville''s theorem, transcendental numbers, Sturm-Liouville theory, and restoring Galois theory.'
 slug: 'liouville'
 date: '2026-09-20T19:20:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'Mathematics'
   - 'Biography'
@@ -94,3 +94,4 @@ Furthermore, he served as a professor at the École Polytechnique and the Collè
 On September 8, 1882, Joseph [Liouville](https://kenji.blog/en/p/liouville/) passed away in Paris. The theorems and concepts he left behind have become essential not just for pure mathematics, but for the advancement of physics and engineering. In particular, had he not saved [Galois](https://kenji.blog/en/p/galois/)'s manuscripts, the development of modern algebra would likely have been delayed by decades.
 
 His contributions continue to be honored to this day, with his name engraved in history, including a crater on the moon named "[Liouville](https://kenji.blog/en/p/liouville/)" in his honor.
+

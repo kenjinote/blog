@@ -3,7 +3,7 @@ title: 'Théorème Intégral de Cauchy : La Magnifique Fondation de l''Analyse C
 description: 'Une explication détaillée du théorème intégral de Cauchy, l''un des théorèmes les plus importants en analyse complexe, de sa signification intuitive à une esquisse de sa preuve à l''aide du théorème de Green et son application à la formule intégrale.'
 slug: 'cauchys-integral-theorem'
 date: 2026-09-20T14:30:00+09:00
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'mathematics'
 tags:
@@ -214,3 +214,4 @@ Cependant, en appliquant ingénieusement le théorème intégral de [Cauchy](htt
 À partir de ce théorème, des réalisations glorieuses de l'analyse complexe telles que la formule intégrale de [Cauchy](https://kenji.blog/fr/p/cauchy/), la preuve qu'une fonction est infiniment dérivable (garantissant les développements de Taylor et les développements de Laurent), et le théorème des résidus sont successivement dérivées. On peut vraiment dire que le théorème intégral de [Cauchy](https://kenji.blog/fr/p/cauchy/) est la base la plus solide et la plus belle qui soutient le magnifique édifice mathématique de l'analyse complexe depuis ses racines.
 
 Nous encourageons les lecteurs à prendre une feuille et un stylo et à retracer de leurs propres mains la preuve utilisant le théorème de Green. Vous devriez alors pouvoir certainement ressentir le monde harmonieux du plan complexe qui se déploie derrière les formules mathématiques.
+

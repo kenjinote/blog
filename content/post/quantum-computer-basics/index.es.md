@@ -11,7 +11,7 @@ title: '¿Qué es un ordenador cuántico? Explicación desde cero del principio 
 slug: "quantum-computer-basics"
 date: 2026-09-05T22:10:00+09:00
 tags: ["Computación cuántica", "Física", "Tecnología"]
-image: "quantum_basics_eyecatch_1788613712487.webp"
+image: "eyecatch.jpg"
 categories: ["math-cryptography-quantum"]
 description: 'Explicamos los fundamentos del ''ordenador cuántico'', que tiene el potencial de superar los límites de las supercomputadoras convencionales. Desentrañamos de manera profesional y comprensible cómo se utilizan para el cálculo los fenómenos asombrosos de la mecánica cuántica, como la superposición, el entrelazamiento cuántico y las puertas cuánticas.'
 ---
@@ -188,3 +188,4 @@ Las puertas al mundo cuántico acaban de abrirse. No podemos quitarle los ojos a
 
 ---
 *Este artículo tiene la intención de explicar los conceptos básicos de la computación cuántica de manera comprensible a personas del mundo de los negocios y el público general interesado en tecnología. Tenga en cuenta que ha sido en parte simplificado, omitiendo las definiciones matemáticas y físicas estrictas (como los detalles de la notación bra-ket y de la amplitud de probabilidad compleja).*
+

@@ -2,7 +2,7 @@
 title: 'GitHub Actions를 사용한 C++ 프로젝트의 CI/CD 파이프라인 구축'
 slug: 'github-actions-cpp-cicd-pipeline'
 date: '2026-09-12T18:00:00+09:00'
-image: 'img/eyecatch.jpg'
+image: "eyecatch.jpg"
 math: true
 mermaid: true
 categories: ["programming", "devops"]
@@ -456,3 +456,4 @@ C++ 프로젝트에서 [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-acti
 본 문서에서 설명한 매트릭스 전략을 이용한 크로스 플랫폼 검증, 새니타이저를 이용한 런타임 버그 감지, 커버리지 측정, 그리고 GitHub Releases로의 자동 배포는 상용 수준의 오픈 소스 프로젝트에서도 널리 채택하고 있는 모범 사례입니다.
 
 자동화된 CI/CD 파이프라인은 개발자가 "버그 찾기"이나 "수동 빌드 및 릴리스 작업"에 쏟는 시간을 최소화하고, 본연의 창조적인 코딩 활동에 집중하기 위한 최강의 무기가 됩니다. 여러분의 C++ 프로젝트에도 적극 도입하여, 애자일하고 안심할 수 있는 개발 라이프를 실현하시기 바랍니다.
+

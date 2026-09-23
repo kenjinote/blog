@@ -3,7 +3,7 @@ title: 'Pythagoras: Die Schnittstelle von Mathematik und Mystik'
 description: 'Eine eingehende Untersuchung des Lebens des antiken griechischen Mathematikers Pythagoras, des Satzes des Pythagoras und der Philosophie, dass alle Dinge Zahlen sind.'
 slug: 'pythagoras'
 date: '2026-09-20T18:40:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'mathematik'
   - 'biografie'
@@ -66,3 +66,4 @@ Der Orden der Pythagoreer glaubte, dass "alle Phänomene als ein Verhältnis von
 ## Fazit
 
 [Pythagoras](https://kenji.blog/de/p/pythagoras/) war nicht nur ein Mathematiker; er war ein großer Denker, der versuchte, die Welt durch die Linse der "Zahlen" zu verstehen. Seine Lehren leuchten weiterhin als spiritueller Ursprung moderner wissenschaftlicher Ansätze.
+

@@ -1,6 +1,7 @@
 ---
 title: "Espaço e Tecnologia: Como o GPS Funciona - Teoria da Relatividade e Sistema de Posicionamento por Satélite"
-date: 2026-09-23T04:01:41+09:00
+date: 2026-09-23T04:01:41+09:00
+image: "eyecatch.jpg"
 categories: ["space", "technology"]
 tags: ["gps", "relativity", "satellite"]
 ---
@@ -1590,3 +1591,4 @@ Nesta seção, nos aprofundaremos em mais detalhes técnicos e estudos de caso. 
 ## Verificação de Tecnologia Adicional Parte 393
 
 Nesta seção, nos aprofundaremos em mais detalhes técnicos e estudos de caso. Avaliaremos o desempenho sob várias condições e examinaremos os desafios e soluções para a integração com outros sistemas. Perspectivas futuras e limitações também serão discutidas.
+

@@ -2,7 +2,7 @@
 title: '[PQC] Ancaman Komputer Kuantum dan Gambaran Utuh Kriptografi Pasca-Kuantum Generasi Berikutnya'
 slug: "post-quantum-cryptography"
 tags: ["Teknologi Kriptografi", "PQC", "Keamanan", "Teknologi Generasi Berikutnya"]
-image: "post_quantum_cryptography_1788613735417.webp"
+image: "eyecatch.jpg"
 date: 2026-09-05T22:09:22+09:00
 categories: ["math-cryptography-quantum"]
 description: 'Kriptografi kunci publik memiliki risiko untuk didekripsi di masa mendatang akibat komersialisasi komputer kuantum. Artikel ini menjelaskan secara detail mekanisme dan pentingnya teknologi keamanan generasi berikutnya ''Kriptografi Pasca-Kuantum (PQC)'', yang sedang dikembangkan untuk melawan ancaman ini (Masalah Y2Q).'
@@ -166,3 +166,4 @@ Langkah pertama yang penting menuju migrasi PQC adalah membuat Inventaris Kripto
 Sementara evolusi komputer kuantum akan membawa manfaat besar bagi umat manusia, itu juga merupakan ancaman terbesar bagi keamanan kriptografi yang merupakan fondasi masyarakat digital kita saat ini. Kriptografi Pasca-Kuantum (PQC) bukan lagi sekadar "topik penelitian masa depan yang jauh". Menyusul tonggak penerbitan standar FIPS oleh NIST, PQC kini telah memasuki fase "implementasi dan migrasi" berskala penuh.
 
 Mengingat ancaman "Harvest Now, Decrypt Later", migrasi ke PQC adalah prioritas utama yang harus dimulai "sekarang" untuk setiap organisasi yang menangani data sensitif. Mari kita atasi era komputer kuantum yang akan datang dengan aman dengan memahami secara mendalam teknologi kriptografi generasi berikutnya dan meningkatkan agility kripto sistem kita.
+

@@ -3,7 +3,7 @@ title: 'Teiji Takagi: Der Weltklasse-Mathematiker aus Japan, der die Klassenkör
 description: 'Ein tiefer Einblick in das Leben von Teiji Takagi, dem Vater der modernen japanischen Mathematik, und seine großartige mathematische Errungenschaft: die Begründung der Klassenkörpertheorie.'
 slug: 'takagi-teiji'
 date: '2026-09-20T19:50:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'Mathematik'
   - 'Biografie'
@@ -116,3 +116,4 @@ Die Samen, die er säte, wurden an japanische Mathematiker weitergegeben, die sp
 **Teiji [Takagi](https://kenji.blog/de/p/takagi-teiji/)** entwickelte die im Westen entstandene akademische Disziplin der Mathematik auf einzigartige Weise im östlichen Land Japan und baute den höchsten theoretischen Gipfel der Welt auf. Sein Leben, in dem er die Widrigkeiten der Isolation während des Krieges überwand und sich allein auf reines Denken verließ, um die großartige "Klassenkörpertheorie" zu vollenden, lehrt uns die unendlichen Möglichkeiten des menschlichen Intellekts.
 
 Heute weiten sich die Bereiche, in denen die algebraische Zahlentheorie angewendet wird, wie die Kryptographie und die mathematische Physik, immer weiter aus. Die Errungenschaften von Teiji [Takagi](https://kenji.blog/de/p/takagi-teiji/), der den Grundstein dafür legte, strahlen auch über seine Epoche hinaus.
+

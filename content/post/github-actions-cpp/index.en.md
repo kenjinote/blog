@@ -2,7 +2,7 @@
 title: 'Building a CI/CD Pipeline for C++ Projects Using GitHub Actions'
 slug: 'github-actions-cpp-cicd-pipeline'
 date: '2026-09-12T18:00:00+09:00'
-image: 'img/eyecatch.jpg'
+image: "eyecatch.jpg"
 math: true
 mermaid: true
 categories: ["programming", "devops"]
@@ -456,3 +456,4 @@ Building a [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-pra
 The cross-platform verification using a matrix strategy, runtime bug detection with sanitizers, coverage measurement, and automated deployment to GitHub Releases explained in this article are best practices widely adopted even in commercial-grade open-source projects.
 
 An automated CI/CD pipeline minimizes the time developers spend on "bug hunting" or "manual build/release tasks," becoming the ultimate weapon to help them focus on their core, creative coding activities. By all means, introduce it to your C++ projects and realize an agile and secure development life.
+

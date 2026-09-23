@@ -2,7 +2,7 @@
 title: "Задача об устойчивых браках: как совместить предпочтения всех участников?"
 description: "Алгоритм Гейла — Шепли на примерах, с формулами, графиками, таблицами и кодом Python. Почему устойчивое сочетание не обязательно делает всех довольными?"
 date: "2026-09-16T14:30:00+09:00"
-image: "eyecatch.png"
+image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Устойчивые браки", "Алгоритмы", "Теория игр", "Паросочетания", "Python"]
 slug: "stable-marriage-problem"
@@ -237,3 +237,4 @@ print("Блокирующие пары:", blocking_pairs(match, left, right))
 ### Источник
 
 D. Gale and L. S. Shapley, “College Admissions and the Stability of Marriage”, *The American Mathematical Monthly*, 69(1), 9–15, 1962. [PDF](https://www.math.utoronto.ca/mccann/assignments/477/GaleShapley62.pdf). Первоисточник модели, отложенного согласия и оптимальности. Пример с тремя участниками на стороне, таблицы и рисунки рассчитаны независимо.
+

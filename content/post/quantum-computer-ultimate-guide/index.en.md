@@ -6,7 +6,7 @@ tags: ["Quantum Computer", "Quantum Mechanics", "Algorithm", "Physics"]
 categories: ["math-cryptography-quantum"]
 math: true
 mermaid: true
-image: "cover.webp"
+image: "eyecatch.jpg"
 description: 'Provides a thorough explanation of the background leading to the dawn of quantum computers, from the physical limits of classical computers and the end of Moore''s Law to the barriers of quantum mechanical effects like quantum tunneling. This is Chapter 1 of the complete guide to understanding next-generation information processing technologies.'
 ---
 
@@ -2864,5 +2864,6 @@ If this series has served to deeply convey to readers the true nature of quantum
 
 ---
  **The Series "Principles of [Quantum Computing](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)" (12 Chapters in Total) - End** 
+
 
 

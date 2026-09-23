@@ -3,7 +3,7 @@ title: 'O que é um Computador Quântico? Explicando do zero os princípios fund
 slug: "quantum-computer-basics"
 date: 2026-09-05T22:10:00+09:00
 tags: ["Computador Quântico", "Física", "Tecnologia"]
-image: "quantum_basics_eyecatch_1788613712487.webp"
+image: "eyecatch.jpg"
 categories: ["math-cryptography-quantum"]
 description: 'Explicamos os fundamentos dos ''computadores quânticos'', que escondem o potencial de ultrapassar os limites dos supercomputadores tradicionais. Desvendamos de forma especializada, mas fácil de entender, o mecanismo que utiliza os misteriosos fenômenos da mecânica quântica, como superposição, emaranhamento quântico e portas quânticas para cálculos.'
 ---
@@ -170,3 +170,4 @@ A portal abertura nas porta matriz das senda base aos portais de um de e no hori
 
 ---
 *Este artigo tem a finalidade de narrar, da forma mais descomplicada no conhecimento do universo profissional das finanças de capital das sociedades civis e às simples gentes sem conhecimento mas interessadas num foco instrutivo e didático, todas as diretrizes básicas da ciência computacional quântica. Note que não estão incluídas abordagens de minúcias matemáticas rigorosas.*
+

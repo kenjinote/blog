@@ -3,7 +3,7 @@ title: 'ピタゴラス：数学と神秘主義の交差点'
 description: '古代ギリシャの数学者ピタゴラスの生涯、ピタゴラスの定理、そして万物は数なりという哲学について深く探求します。'
 slug: 'pythagoras'
 date: '2026-09-20T18:40:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'mathematics'
   - 'biography'
@@ -66,3 +66,4 @@ $$
 ## まとめ
 
 [ピタゴラス](https://kenji.blog/p/pythagoras/)は、単なる数学者ではなく、世界を「数」というレンズを通して理解しようとした偉大な思想家でした。彼の教えは、現代の科学的アプローチの精神的な起源として、今もなお輝き続けています。
+

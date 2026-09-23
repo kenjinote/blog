@@ -2,7 +2,7 @@
 title: '【PQC】量子计算机的威胁与下一代抗量子计算密码学全貌'
 slug: "post-quantum-cryptography"
 tags: ["密码技术", "PQC", "安全", "下一代技术"]
-image: "post_quantum_cryptography_1788613735417.webp"
+image: "eyecatch.jpg"
 date: 2026-09-05T22:09:22+09:00
 categories: ["math-cryptography-quantum"]
 description: '随着量子计算机的实用化，公钥密码学在未来将面临被破解的风险。本文将详细讲解为应对这一威胁（Y2Q问题）而正在研发的下一代安全技术“抗量子计算密码学（PQC）”的原理及重要性。'
@@ -168,4 +168,5 @@ NIST已将“SLH-DSA（旧称 SPHINCS+）”作为无状态哈希签名进行了
 量子计算机的进化在为人类带来巨大恩惠的同时，也是对作为现代数字社会基石的密码安全的最大威胁。后量子密码学（PQC）已不再是“遥远未来的研究课题”。经历了NIST发布FIPS标准这一里程碑，PQC已正式进入了全面的“实施与迁移”阶段。
 
 考虑到“Harvest Now, Decrypt Later”的威胁，对于所有处理高度机密数据的组织而言，向PQC迁移是“现在立即”就应该着手进行的最优先课题。让我们深刻理解新一代密码技术，提高系统的密码敏捷性，从而安全地度过即将到来的量子计算机时代。
+
 

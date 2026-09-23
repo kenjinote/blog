@@ -2,7 +2,7 @@
 title: "Masalah pernikahan stabil: bagaimana menyatukan pilihan semua orang?"
 description: "Pelajari algoritma Gale–Shapley melalui rumus, diagram, tabel preferensi, dan Python. Pencocokan yang stabil belum tentu membuat semua orang puas."
 date: "2026-09-16T14:30:00+09:00"
-image: "eyecatch.png"
+image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Pernikahan stabil", "Algoritma", "Teori permainan", "Pencocokan", "Python"]
 slug: "stable-marriage-problem"
@@ -237,3 +237,4 @@ Ketika semua keinginan tidak dapat dipenuhi, justru semakin penting untuk mendef
 ### Referensi
 
 D. Gale dan L. S. Shapley, “College Admissions and the Stability of Marriage”, *The American Mathematical Monthly*, 69(1), 9–15, 1962. [PDF](https://www.math.utoronto.ca/mccann/assignments/477/GaleShapley62.pdf). Sumber asli model, penerimaan tertunda, dan optimalitas. Contoh tiga orang per sisi, tabel, dan gambar dihitung secara mandiri.
+

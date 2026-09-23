@@ -3,7 +3,7 @@ title: 'Proses Gram-Schmidt: Algoritma untuk Menyelaraskan Kembali Vektor Basis 
 description: 'Panduan komprehensif tentang proses ortogonalisasi Gram-Schmidt dalam aljabar linear, mencakup intuisi geometris, formulasi matematis, versi modifikasi yang stabil secara numerik, implementasi Python, dan aplikasi pada ruang polinomial.'
 slug: 'gram-schmidt-process'
 date: '2026-09-20T14:40:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories: ["Matematika"]
 tags: ["Aljabar Linear", "Algoritma", "Pembelajaran Mesin", "Dekomposisi QR", "Python", "Komputasi Numerik", "Matematika"]
 ---
@@ -222,3 +222,4 @@ Dalam artikel ini, kami secara luas menjelaskan proses ortogonalisasi Gram-Schmi
 Saya harap Anda telah menyadari betapa kuat dan meluasnya dampak dari ide sederhana dan jelas mengenai "menyelaraskan kembali sumbu koordinat yang terdistorsi menjadi sumbu yang rapi dan saling tegak lurus". Hal ini indah sebagai teori matematika, dan sangat diperlukan sebagai algoritma analisis data praktis modern yang dijalankan oleh komputer. Bisa dikatakan ini adalah salah satu puncak untuk mengapresiasi kedalaman aljabar linear.
 
 Oleh karena itu, cobalah untuk menjalankan kode program yang sebenarnya atau mencoba mengortogonalisasi polinomial lain secara manual untuk merasakan secara fisik kegembiraan matematis dari ruang yang sedang disempurnakan.
+

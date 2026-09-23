@@ -12,7 +12,7 @@ slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "Algoritmos"]
 draft: false
-image: "img.webp"
+image: "eyecatch.jpg"
 categories: ["programming"]
 description: 'Explicamos de manera sencilla qué es el "Problema FizzBuzz", a menudo planteado en entrevistas a programadores, y mostramos ejemplos de código específicos (uso de condicionales) en Python. Un contenido indispensable desde principiantes hasta aquellos que deseen repasar lo básico.'
 ---
@@ -132,3 +132,4 @@ Sin apresurarnos, avancemos lentamente.
 El código es escrito por humanos. Por ser humanos, a veces olvidamos y a veces nos ponemos nerviosos. Creo que es suficiente si podemos avanzar poco a poco mientras aceptamos eso.
 
 Entonces, escribamos código de manera relajada hoy también.
+

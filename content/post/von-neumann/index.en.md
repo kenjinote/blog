@@ -3,7 +3,7 @@ title: 'John von Neumann: The Trajectory of the Demonic Brain Who Built Modern S
 description: 'A detailed explanation of the life of genius mathematician John von Neumann, his astonishing achievements from game theory to quantum mechanics and computer science, and numerous anecdotes surrounding him.'
 slug: 'von-neumann'
 date: '2026-09-20T20:20:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories: ['mathematics', 'biography']
 tags: ['John von Neumann', 'Quantum Mechanics', 'Game Theory', 'Computer Science', 'Mathematician', 'Genius']
 ---
@@ -145,3 +145,4 @@ The following is a detailed timeline summarizing the life and major achievements
 ## 12. Conclusion
 
 John von Neumann passed away in 1957 at the young age of 53 due to cancer. However, the intellectual legacy he left behind still strongly survives today as the foundation of modern mathematics, physics, economics, and information technology. From the smartphones and computers we use every day to cutting-edge artificial intelligence (AI) technology and analytical methods in the social sciences, glimpses of von Neumann's "Demonic Brain" can be seen everywhere. Reflecting on his life makes us realize once again the infinite possibilities of human intellect and the magnitude of its impact on the world. In the history of humanity, no one else has caused fundamental paradigm shifts in such a wide range of fields as he did.
+

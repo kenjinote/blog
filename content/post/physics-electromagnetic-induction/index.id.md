@@ -1,6 +1,7 @@
 ---
 title: "Fisika: Induksi Elektromagnetik dan Mekanisme Motor - Dari Penemuan Faraday hingga EV"
-date: 2026-09-23T04:01:41+09:00
+date: 2026-09-23T04:01:41+09:00
+image: "eyecatch.jpg"
 categories: ["physics", "technology"]
 tags: ["electromagnetic-induction", "motor", "ev"]
 ---
@@ -1590,3 +1591,4 @@ Bagian ini menggali lebih dalam tentang detail teknis lebih lanjut dan studi kas
 ## Bagian Verifikasi Teknis Tambahan 393
 
 Bagian ini menggali lebih dalam tentang detail teknis lebih lanjut dan studi kasus. Kami akan mengevaluasi kinerja di bawah berbagai kondisi dan mempertimbangkan tantangan serta solusi untuk integrasi dengan sistem lain. Kami juga akan membahas prospek dan keterbatasan di masa depan.
+

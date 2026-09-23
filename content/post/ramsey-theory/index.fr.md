@@ -2,7 +2,7 @@
 title: "Théorie de Ramsey : l'ordre émerge inévitablement du désordre — Démonstration par coloriage des relations entre 6 personnes"
 description: "Dans un groupe de 6 personnes, il existe toujours 3 personnes qui se connaissent toutes mutuellement ou 3 personnes qui ne se connaissent pas du tout. Démonstration du nombre de Ramsey R(3,3) = 6 par les graphes bicolores, contre-exemple à 5 personnes, vérification des 32 768 configurations, et applications aux suites et aux réseaux."
 date: 2026-09-16T20:05:00+09:00
-image: "eyecatch.png"
+image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Théorie de Ramsey", "Théorie des graphes", "Combinatoire", "Principe des tiroirs", "Python"]
 slug: "ramsey-theory"
@@ -262,3 +262,4 @@ L'élégance de la théorie de Ramsey ne réside pas dans une simplification mag
 - Yuval Wigderson, PCMI 2025, [Extremal graph theory and Ramsey theory: Lecture 10](https://ywigderson.math.ethz.ch/math/static/pcmi2025/Notes10.pdf) : Support de cours sur la combinatoire extrémale et les approches de type Ramsey, incluant les sous-suites monotones (en anglais).
 
 Les graphiques, les tableaux d'énumération exhaustive et les distributions de probabilités présentés dans cet article ont été générés à l'aide du script Python fourni.
+

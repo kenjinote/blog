@@ -2,7 +2,7 @@
 title: "稳定婚姻问题：如何组合所有人的意愿？"
 description: "通过公式、关系图、排名比较图、表格与 Python，理解盖尔–沙普利算法，分清“稳定的匹配”和“让所有人满意的匹配”。"
 date: "2026-09-16T14:30:00+09:00"
-image: "eyecatch.png"
+image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["稳定婚姻问题", "算法", "博弈论", "匹配", "Python"]
 slug: "stable-marriage-problem"
@@ -247,3 +247,4 @@ print("阻塞对:", blocking_pairs(match, left, right))
 ### 参考文献
 
 D. Gale and L. S. Shapley, “College Admissions and the Stability of Marriage,” *The American Mathematical Monthly*, 69(1), 9–15, 1962。[PDF](https://www.math.utoronto.ca/mccann/assignments/477/GaleShapley62.pdf)。这是模型、延迟接受、稳定性及申请方最优性的原始文献。本文的三人例子、表格和图均独立计算。
+

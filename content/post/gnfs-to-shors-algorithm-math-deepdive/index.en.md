@@ -3,7 +3,7 @@ title: 'Breaking RSA Encryption? Thorough Mathematical Explanation of GNFS and S
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00
 tags: ["Quantum Computer", "GNFS", "Shor's Algorithm", "Cryptography", "Mathematics"]
-image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
+image: "eyecatch.jpg"
 mermaid: true
 math: true
 categories: ["math-cryptography-quantum"]
@@ -198,4 +198,5 @@ In this article, we deeply compared the mathematical backgrounds and algorithmic
 While GNFS drove computational complexity down to sub-exponential time by employing mathematical tricks such as polynomial selection and massive matrix calculations, Shor's algorithm fused the fundamental principles of quantum mechanics—superposition and interference—with a mathematical tool (QFT), achieving a breakthrough to polynomial time in one stroke.
 
 Currently, Fault-Tolerant Quantum Computers (FTQC) capable of executing Shor's algorithm at a practical scale (thousands of qubits) do not exist. However, the very existence of this mathematical and theoretical paradigm shift is the primary reason why the transition to Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC) is urgently being accelerated worldwide today.
+
 

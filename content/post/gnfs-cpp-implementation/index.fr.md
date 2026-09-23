@@ -4,7 +4,7 @@ slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "Mathématiques", "Cryptographie"]
 draft: false
-image: "gnfs_cpp_blog_eyecatch_1788580949217.webp"
+image: "eyecatch.jpg"
 categories: ["math-cryptography-quantum"]
 description: 'Explication approfondie du fonctionnement de « l''algorithme du Crible du Corps de Nombres Généralisé (GNFS) », un algorithme de factorisation utilisé pour casser le chiffrement RSA, accompagnée d''un code d''implémentation en C++. Il s''agit d''un contenu incontournable pour les amateurs de programmation, qui plonge dans la logique de calcul utilisant la bibliothèque Boost et dans les profondeurs de la théorie algébrique des nombres.'
 ---
@@ -443,4 +443,5 @@ C'est le sommet de l'intelligence humaine, où les « abîmes des mathématiques
 Les chats et les informations de carte de crédit que nous envoyons sans y penser sont protégés au-dessus de ces luttes mathématiques astronomiques.
 
 Nous espérons qu'à travers ce framework C++, vous ressentirez le « romantisme des mathématiques et des ordinateurs » qui se cache derrière les algorithmes de décryptage les plus avancés.
+
 

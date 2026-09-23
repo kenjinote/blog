@@ -1,6 +1,7 @@
 ---
 title: "物理学: 超伝導の仕組み - マイスナー効果とリニアモーターカー"
-date: 2026-09-23T04:01:41+09:00
+date: 2026-09-23T04:01:41+09:00
+image: "eyecatch.jpg"
 categories: ["physics", "science"]
 tags: ["superconductivity", "meissner-effect", "maglev"]
 ---
@@ -1589,3 +1590,4 @@ $$ \nabla \times \mathbf{J} = -\frac{n_s e^2}{m} \mathbf{B} $$
 ## 追加技術検証パート 393
 
 このセクションでは、さらなる技術的な詳細とケーススタディについて深く掘り下げます。様々な条件下でのパフォーマンスの評価や、他のシステムとの統合に関する課題と解決策を検討します。今後の展望や限界についても考察を行います。
+

@@ -1,6 +1,7 @@
 ---
 title: "Física: Como funciona a supercondutividade - Efeito Meissner e Maglev"
-date: 2026-09-23T04:01:41+09:00
+date: 2026-09-23T04:01:41+09:00
+image: "eyecatch.jpg"
 categories: ["physics", "science"]
 tags: ["superconductivity", "meissner-effect", "maglev"]
 ---
@@ -1589,3 +1590,4 @@ Nesta seção, nos aprofundaremos em mais detalhes técnicos e estudos de caso. 
 ## Parte de Verificação Técnica Adicional 393
 
 Nesta seção, nos aprofundaremos em mais detalhes técnicos e estudos de caso. Avaliaremos o desempenho sob várias condições e discutiremos os desafios e as soluções para a integração com outros sistemas. Também discutiremos as perspectivas e limitações futuras.
+

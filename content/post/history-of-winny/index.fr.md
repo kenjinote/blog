@@ -3,6 +3,7 @@ title: "Comprendre Winny : recherche, cache, relais et limites de l’anonymat"
 description: "Une explication du réseau P2P de Winny, de ses métadonnées à sa hiérarchie et à ses caches, avec des exemples chiffrés et une mise au point sur les fuites de données et le procès du développeur."
 slug: "history-of-winny"
 date: "2026-09-23T10:00:00+09:00"
+image: "eyecatch.jpg"
 categories: ["technology", "computer-science"]
 tags: ["p2p", "network", "winny", "history"]
 math: true
@@ -152,3 +153,4 @@ Posons aussi cinq questions aux systèmes actuels : **Comment trouve-t-on le pre
 [glocom]: https://www.glocom.ac.jp/wp-content/uploads/2020/10/chijo106_042-053.pdf
 [ipa]: https://www.ipa.go.jp/archive/files/000011527.pdf
 [court]: https://www.wipo.int/wipolex/en/text/584277
+

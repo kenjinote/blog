@@ -2,7 +2,7 @@
 title: '【PQC】Die Bedrohung durch Quantencomputer und das Gesamtbild der Post-Quanten-Kryptographie der nächsten Generation'
 slug: "post-quantum-cryptography"
 tags: ["Kryptographie", "PQC", "Sicherheit", "Technologie der nächsten Generation"]
-image: "post_quantum_cryptography_1788613735417.webp"
+image: "eyecatch.jpg"
 date: 2026-09-05T22:09:22+09:00
 categories: ["math-cryptography-quantum"]
 description: 'Public-Key-Kryptographie birgt das Risiko, in Zukunft durch die praktische Anwendung von Quantencomputern entschlüsselt zu werden. Dieser Artikel erklärt detailliert die Mechanismen und die Bedeutung der „Post-Quanten-Kryptographie (PQC)“, einer Sicherheitstechnologie der nächsten Generation, die entwickelt wird, um dieser Bedrohung (Y2Q-Problem) entgegenzuwirken.'
@@ -168,3 +168,4 @@ Die Erstellung eines Kryptographie-Inventars (CBOM: [Crypto](https://kenji.blog/
 Während die Entwicklung von Quantencomputern der Menschheit enorme Vorteile bringen wird, stellt sie gleichzeitig die größte Bedrohung für die kryptographische Sicherheit dar, die die Grundlage unserer derzeitigen digitalen Gesellschaft bildet. Die Post-Quanten-Kryptographie (PQC) ist kein "Forschungsthema der fernen Zukunft" mehr. Durch den Meilenstein der Veröffentlichung von FIPS-Standards durch das NIST ist die PQC in eine vollwertige Phase der "Implementierung und Migration" eingetreten.
 
 In Anbetracht der Bedrohung durch "Harvest Now, Decrypt Later" ist der Übergang zur PQC eine oberste Priorität, die für jede Organisation, die mit hochsensiblen Daten umgeht, "jetzt sofort" angegangen werden muss. Lassen Sie uns die Technologie der Kryptographie der nächsten Generation tief verstehen und die [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)-Agility unserer Systeme erhöhen, um das kommende Quantencomputer-Zeitalter sicher zu meistern.
+

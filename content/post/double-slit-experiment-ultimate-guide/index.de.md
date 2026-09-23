@@ -6,7 +6,7 @@ tags: ["Physik", "Quantenmechanik", "Doppelspaltexperiment", "Schrödinger-Gleic
 categories: ["physics-science"]
 math: true
 mermaid: true
-image: "cover.webp"
+image: "eyecatch.jpg"
 description: 'Wir erklären detailliert das sogenannte schönste Experiment in der Geschichte der Physik, das „Doppelspaltexperiment“. Die Anomalien der Mikrowelt, in der der gesunde Menschenverstand der Makrowelt nicht gilt, und die tiefen Geheimnisse der Quantenmechanik sind auch für Anfänger leicht verständlich zusammengefasst.'
 ---
 ## 1. 【Einführung】Was ist das Doppelspaltexperiment?
@@ -439,5 +439,6 @@ In diesem Artikel haben wir uns im Detail angesehen, wie das äußerst einfache 
 Wir stehen heute am Eingang zum zweiten Akt der Quantenrevolution. Egal, wie weit die Wissenschaft und Technologie fortschreitet, das tiefe Geheimnis der „Wahrscheinlichkeitswelle“ und der „Festlegung durch Beobachtung“, das sich hinter diesen beiden Spalten erstreckt, ist immer noch nicht vollständig gelöst. Wie hat das Universum begonnen? Welche physikalische Bedeutung haben Bewusstsein und Beobachtung? Wie können die mikroskopische Quantenmechanik und die makroskopische allgemeine Relativitätstheorie vereinheitlicht werden (Forschung zur Theorie der Quantengravitation)? Der Schlüssel zur Lösung dieser ultimativen Rätsel könnte ebenfalls in dem einfachen, aber tiefgründigen Phänomen des Doppelspaltexperiments verborgen sein.
 
 Wenn Sie in der Hektik des Alltags zufällig das durchs Fenster hereinfallende Licht oder das Funkeln der Sterne am Nachthimmel betrachten, denken Sie bitte daran: Die unzähligen Photonen, aus denen dieses Licht besteht, waren bis zu dem Moment, in dem sie nach einer langen Reise Ihren „Detektor“ – Ihr Auge – erreichten, Wellen mit dem unendlichen Potenzial, alle Pfade des Universums gleichzeitig zu durchlaufen. Diese Realität, deren Zeugen wir sind, ist nur ein kleiner Teil eines grandiosen, ewigen Tanzes, in dem das Universum sich selbst beobachtet und unentwegt festlegt. Das Doppelspaltexperiment konfrontiert uns weder mit der Angst vor der Unsicherheit der Welt noch mit dem Nichts. Es erfüllt uns vielmehr mit überwältigendem Staunen und Ehrfurcht darüber, wie mysteriös, unvorstellbar reich und eng dieses Universum mit unserer eigenen Existenz verbunden ist. Dies kann wohl als das größte Geschenk angesehen werden, das das Doppelspaltexperiment der Menschheit gemacht hat.
+
 
 

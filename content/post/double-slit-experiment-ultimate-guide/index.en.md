@@ -6,7 +6,7 @@ tags: ["Physics", "Quantum Mechanics", "Double-Slit Experiment", "Schrödinger E
 categories: ["physics-science"]
 math: true
 mermaid: true
-image: "cover.webp"
+image: "eyecatch.jpg"
 description: 'A thorough explanation of the ''double-slit experiment'', known as the most beautiful experiment in the history of physics. We summarize the abnormalities of the micro world, where the common sense of the macro world does not apply, and the profound mysteries of quantum mechanics in a way that is easy for beginners to understand.'
 ---
 ## 1. [Introduction] What is the Double-Slit Experiment?
@@ -437,5 +437,6 @@ Through this article, we have looked in detail at how an extremely simple experi
 We are now standing at the threshold of the second act of the quantum revolution. No matter how much science and technology advance, the deep mystery of the "waves of probability" and "determination through observation" spreading beyond those two slits has yet to be fully unraveled. How did the universe begin? What physical meaning do consciousness and observation have? How will microscopic quantum mechanics and macroscopic general relativity be unified (the study of quantum gravity theory)? The key to unlocking these ultimate mysteries may also be hidden within the simple yet profound phenomenon that is the double-slit experiment.
 
 When, amidst the busyness of daily life, you happen to see light streaming through a window, or look up at the twinkling stars in the night sky, please try to remember. Those countless photons making up that light were waves holding the infinite potential to pass simultaneously through every path in the universe, right up until the moment they concluded their long journey and reached the "detector" that is your pupil. This reality we are witnessing is nothing more than a mere fraction of a grand and eternal dance in which the universe continuously observes and determines itself. What the double-slit experiment thrusts upon us is not terror or nihilism toward the uncertainty of the world. It is a sense of overwhelming wonder and awe at how mysterious, unimaginably rich, and deeply connected this universe is to our very existence. This could be said to be the greatest gift the double-slit experiment has given humanity.
+
 
 

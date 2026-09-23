@@ -6,7 +6,7 @@ tags: ["Quantum Computer", "Quantum Mechanics", "Algorithm", "Physics"]
 categories: ["math-cryptography-quantum"]
 math: true
 mermaid: true
-image: "cover.webp"
+image: "eyecatch.jpg"
 description: '从经典计算机的物理极限和摩尔定律的终结，到量子隧道效应等量子力学效应的墙壁垒，深入分析量子计算机拉开序幕的背景。这是理解下一代信息处理技术的完整指南第一章。'
 ---
 
@@ -2866,6 +2866,7 @@ $$
 
 ---
  **连载《量子计算机的原理》（全12章）　完** 
+
 
 
 

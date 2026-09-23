@@ -3,7 +3,7 @@ title: 'Affine und Projektive Transformationen: Die Verschmelzung von linearer A
 description: 'Eine detaillierte Erklärung der mathematischen Grundlagen der affinen und projektiven Transformationen, deren Darstellung mithilfe homogener Koordinaten und Anwendungen in Computergrafik und Bildverarbeitung.'
 slug: 'affine-and-projective-transformations'
 date: '2026-09-20T15:15:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'mathematics'
 tags:
@@ -151,3 +151,4 @@ Ausgehend von den grundlegenden Matrixoperationen der linearen Algebra und durch
 - Die **Projektive Transformation** stellt darüber hinaus die Perspektive dar und ermöglicht eine nichtlineare Projektion, die viel näher an echten Kameras liegt.
 
 Dieser Rahmen vereinfachte das Design von Hardwareschaltungen innerhalb von GPUs und erhöhte die Ausdruckskraft von Computergrafiken enorm. Gleichzeitig wurde er zur grundlegenden Basis für fortschrittliche Bilderkennungs- und Korrekturalgorithmen in der Computer Vision. Ein tiefes Verständnis der mathematischen Bedeutungen dahinter wird sicherlich die Funktionsweise von 3D-Software und Bildverarbeitungs-APIs, die Sie normalerweise verwenden, klarer machen.
+

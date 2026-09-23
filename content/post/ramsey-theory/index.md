@@ -2,7 +2,7 @@
 title: "ラムゼー理論：無秩序の中にも必ず規則が現れる——6人の人間関係を色分けで証明"
 description: "6人集まると、互いに知り合いの3人か、互いに知り合いではない3人が必ず存在します。ラムゼー数 R(3,3)=6 を色分けした図で証明し、5人の反例、全32768通りの検証、数列やネットワークへの応用まで解説します。"
 date: 2026-09-16T20:05:00+09:00
-image: "eyecatch.png"
+image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["ラムゼー理論", "グラフ理論", "組合せ数学", "鳩の巣原理", "Python"]
 slug: "ramsey-theory"
@@ -262,3 +262,4 @@ $$
 - Yuval Wigderson, PCMI 2025, [Extremal graph theory and Ramsey theory: Lecture 10](https://ywigderson.math.ethz.ch/math/static/pcmi2025/Notes10.pdf)：単調部分列を含むラムゼー的な考え方の講義資料。
 
 本記事の図、全列挙の表、確率と個数の分布は、付属のPythonスクリプトで生成しています。
+

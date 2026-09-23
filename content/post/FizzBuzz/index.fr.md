@@ -4,7 +4,7 @@ slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "Algorithme"]
 draft: false
-image: "img.webp"
+image: "eyecatch.jpg"
 categories: ["programming"]
 description: 'Nous expliquons clairement le « test de FizzBuzz », qui est souvent posé lors des entretiens pour les programmeurs, son aperçu et des exemples de code spécifiques (branchements conditionnels) en utilisant Python. C''est un contenu incontournable des débutants à ceux qui souhaitent revoir les bases.'
 ---
@@ -116,3 +116,4 @@ Ne vous précipitez pas, avançons lentement.
 Le code est écrit par des humains. En tant qu'humains, il nous arrive d'oublier des choses et d'être nerveux. En acceptant cela, je pense qu'il suffit de pouvoir avancer petit à petit.
 
 Alors, écrivons du code de manière détendue aujourd'hui aussi.
+

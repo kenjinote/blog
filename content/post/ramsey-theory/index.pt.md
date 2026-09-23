@@ -2,7 +2,7 @@
 title: "Teoria de Ramsey: A ordem surge inevitavelmente na desordem — Provando as relações entre 6 pessoas por coloração"
 description: "Em qualquer grupo de 6 pessoas, sempre existem 3 pessoas que se conhecem mutuamente ou 3 que não se conhecem mutuamente. Provamos o número de Ramsey R(3,3)=6 com diagramas coloridos, exploramos o contraexemplo de 5 pessoas, verificamos todas as 32.768 possibilidades e abordamos aplicações em sequências numéricas e redes."
 date: 2026-09-16T20:05:00+09:00
-image: "eyecatch.png"
+image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Teoria de Ramsey", "Teoria dos Grafos", "Combinatória", "Princípio da Casa dos Pombos", "Python"]
 slug: "ramsey-theory"
@@ -262,3 +262,4 @@ O fascínio da [Teoria de Ramsey](https://kenji.blog/pt/p/ramsey-theory/) não r
 - Yuval Wigderson, PCMI 2025, [Extremal graph theory and Ramsey theory: Lecture 10](https://ywigderson.math.ethz.ch/math/static/pcmi2025/Notes10.pdf): Notas de aula sobre conceitos do tipo Ramsey, incluindo subsequências monótonas.
 
 Os diagramas deste artigo, a tabela de enumeração exaustiva e as distribuições de probabilidade e contagem foram gerados com o script Python incluído no repositório.
+

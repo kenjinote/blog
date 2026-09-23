@@ -1,6 +1,7 @@
 ---
 title: "Physique : Le mécanisme de la supraconductivité - Effet Meissner et train à lévitation magnétique"
-date: 2026-09-23T04:01:41+09:00
+date: 2026-09-23T04:01:41+09:00
+image: "eyecatch.jpg"
 categories: ["physics", "science"]
 tags: ["superconductivity", "meissner-effect", "maglev"]
 ---
@@ -1589,3 +1590,4 @@ Dans cette section, nous approfondirons les détails techniques supplémentaires
 ## Partie de vérification technique supplémentaire 393
 
 Dans cette section, nous approfondirons les détails techniques supplémentaires et les études de cas. Nous évaluerons les performances dans diverses conditions et examinerons les défis et les solutions concernant l'intégration avec d'autres systèmes. Nous discuterons également des perspectives futures et des limites.
+

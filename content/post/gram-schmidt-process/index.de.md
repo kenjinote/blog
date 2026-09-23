@@ -3,7 +3,7 @@ title: 'Gram-Schmidt-Verfahren: Ein Algorithmus zur Neuausrichtung verzerrter Ba
 description: 'Ein umfassender Leitfaden zum Gram-Schmidt-Orthogonalisierungsverfahren in der linearen Algebra, der geometrische Intuition, mathematische Formulierung, numerisch stabile modifizierte Versionen, Python-Implementierung und Anwendungen auf Polynomräume abdeckt.'
 slug: 'gram-schmidt-process'
 date: '2026-09-20T14:40:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories: ["Mathematik"]
 tags: ["Lineare Algebra", "Algorithmen", "Maschinelles Lernen", "QR-Zerlegung", "Python", "Numerisches Rechnen", "Mathematik"]
 ---
@@ -222,3 +222,4 @@ In diesem Artikel haben wir das Gram-Schmidt-Orthogonalisierungsverfahren ausfü
 Ich hoffe, Sie haben erkannt, wie mächtig und weitreichend die Auswirkungen der einfachen und klaren Idee sind, „verzerrte Koordinatenachsen in ordentliche, zueinander senkrechte Achsen neu auszurichten“. Es ist schön als mathematische Theorie und unverzichtbar als moderner praktischer Datenanalyse-Algorithmus, der von Computern ausgeführt wird. Man kann sagen, dass es einer der Höhepunkte ist, um die Tiefe der linearen Algebra zu schätzen.
 
 Versuchen Sie unbedingt, tatsächliche Programmcodes auszuführen oder die Orthogonalisierung anderer Polynome von Hand durchzuführen, um die mathematische Freude an der Verfeinerung des Raumes physisch zu erleben.
+

@@ -4,7 +4,7 @@ slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "Algoritma"]
 draft: false
-image: "img.webp"
+image: "eyecatch.jpg"
 categories: ["programming"]
 description: 'Menjelaskan dengan mudah mengenai gambaran umum dan contoh kode konkret (percabangan kondisi) menggunakan Python untuk ''masalah FizzBuzz'' yang sering ditanyakan dalam wawancara programmer. Konten wajib baca bagi pemula hingga mereka yang ingin mengingat kembali hal mendasar.'
 ---
@@ -116,3 +116,4 @@ Jangan terburu-buru, mari kita jalani pelan-pelan.
 Kode ditulis oleh manusia. Karena kita manusia, terkadang kita melupakan sesuatu, dan terkadang kita merasa gugup. Saya pikir cukup untuk menerima hal itu dan bergerak maju sedikit demi sedikit.
 
 Baiklah, mari bersantai dan menulis beberapa kode hari ini.
+

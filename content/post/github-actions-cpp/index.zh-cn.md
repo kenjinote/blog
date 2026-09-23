@@ -2,7 +2,7 @@
 title: '使用GitHub Actions构建C++项目的CI/CD流水线'
 slug: 'github-actions-cpp-cicd-pipeline'
 date: '2026-09-12T18:00:00+09:00'
-image: 'img/eyecatch.jpg'
+image: "eyecatch.jpg"
 math: true
 mermaid: true
 categories: ["programming", "devops"]
@@ -455,4 +455,5 @@ jobs:
 本文所讲解的基于矩阵策略的跨平台验证、基于Sanitizer的运行时Bug检测、覆盖率测量，以及自动部署到GitHub Releases，都是在商业级开源项目中被广泛采用的最佳实践。
 
 自动化的CI/CD流水线是最小化开发者在“寻找Bug”和“手动构建/发布”上所耗费的时间，使其能够专注于本质的创造性编码活动的最强武器。请务必也引入到您的C++项目中，实现敏捷且充满安心感的开发生活。
+
 

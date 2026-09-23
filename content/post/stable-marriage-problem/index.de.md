@@ -2,7 +2,7 @@
 title: "Das Problem der stabilen Paarung: Wie lassen sich alle Wünsche miteinander vereinbaren?"
 description: "Der Gale–Shapley-Algorithmus mit Formeln, Diagrammen, Präferenztabellen und Python: Warum eine stabile Zuordnung nicht automatisch alle zufriedenstellt."
 date: "2026-09-16T14:30:00+09:00"
-image: "eyecatch.png"
+image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Stabile Paarung", "Algorithmen", "Spieltheorie", "Matching", "Python"]
 slug: "stable-marriage-problem"
@@ -237,3 +237,4 @@ Gerade wenn nicht alle Wünsche erfüllbar sind, müssen wir das Ziel präzise b
 ### Quelle
 
 D. Gale und L. S. Shapley, “College Admissions and the Stability of Marriage”, *The American Mathematical Monthly*, 69(1), 9–15, 1962. [PDF](https://www.math.utoronto.ca/mccann/assignments/477/GaleShapley62.pdf). Ursprung des Modells, des Verfahrens und der Optimalitätsaussage. Das Beispiel mit je drei Personen, die Tabellen und Diagramme wurden eigenständig berechnet.
+

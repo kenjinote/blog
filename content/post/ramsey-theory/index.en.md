@@ -2,7 +2,7 @@
 title: "Ramsey Theory: Order Inevitably Emerges from Disorder — Proving Six-Person Relationships with Two Colors"
 description: "Whenever six people gather, there are always either three mutual acquaintances or three mutual strangers. We prove the Ramsey number R(3,3) = 6 using color-coded diagrams, examine the 5-person counterexample, verify all 32,768 cases, and explore applications to sequences and networks."
 date: 2026-09-16T20:05:00+09:00
-image: "eyecatch.png"
+image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Ramsey Theory", "Graph Theory", "Combinatorics", "Pigeonhole Principle", "Python"]
 slug: "ramsey-theory"
@@ -262,3 +262,4 @@ The fascination of Ramsey theory lies not in simplifying a complex whole, but in
 - Yuval Wigderson, PCMI 2025, [Extremal graph theory and Ramsey theory: Lecture 10](https://ywigderson.math.ethz.ch/math/static/pcmi2025/Notes10.pdf): Lecture notes on Ramsey-type thinking, including monotone subsequences.
 
 The diagrams, exhaustive enumeration tables, and probability/count distributions in this article were generated using the accompanying Python script.
+

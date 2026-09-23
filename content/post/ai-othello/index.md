@@ -1,6 +1,7 @@
 ---
 title: "ボードゲームとAI: オセロのルールと戦略パターン、完全解析への道"
 date: 2026-09-23T04:00:00+09:00
+image: "eyecatch.jpg"
 categories: ["AI", "Gaming"]
 tags: ["Othello", "Reversi", "Artificial Intelligence"]
 ---

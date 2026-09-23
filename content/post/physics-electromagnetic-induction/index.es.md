@@ -1,6 +1,7 @@
 ---
 title: "Física: Inducción electromagnética y el mecanismo del motor - Desde el descubrimiento de Faraday hasta los vehículos eléctricos"
-date: 2026-09-23T04:01:41+09:00
+date: 2026-09-23T04:01:41+09:00
+image: "eyecatch.jpg"
 categories: ["physics", "technology"]
 tags: ["electromagnetic-induction", "motor", "ev"]
 ---
@@ -1590,3 +1591,4 @@ En esta sección, profundizamos en más detalles técnicos y estudios de casos. 
 ## Parte de verificación técnica adicional 393
 
 En esta sección, profundizamos en más detalles técnicos y estudios de casos. Evaluamos el rendimiento bajo diversas condiciones y examinamos los desafíos y soluciones relacionados con la integración con otros sistemas. También consideramos las perspectivas y limitaciones futuras.
+

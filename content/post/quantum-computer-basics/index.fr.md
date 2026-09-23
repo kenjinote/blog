@@ -3,7 +3,7 @@ title: 'Qu''est-ce qu''un ordinateur quantique ? Explication des principes de ca
 slug: "quantum-computer-basics"
 date: 2026-09-05T22:10:00+09:00
 tags: ["Ordinateur quantique", "Physique", "Technologie"]
-image: "quantum_basics_eyecatch_1788613712487.webp"
+image: "eyecatch.jpg"
 categories: ["math-cryptography-quantum"]
 description: 'Explique les bases des ''ordinateurs quantiques'' qui ont le potentiel de dépasser les limites des superordinateurs traditionnels. Démêle de manière professionnelle et compréhensible les mécanismes qui utilisent des phénomènes mystérieux de la mécanique quantique comme la superposition, l''intrication quantique et les portes quantiques pour le calcul.'
 ---
@@ -172,4 +172,5 @@ La porte du monde quantique vient de s'ouvrir. Nous devons garder un œil sur le
 
 ---
 *Cet article vise à expliquer les concepts fondamentaux de l'informatique quantique d'une manière facile à comprendre pour les hommes d'affaires et le grand public intéressé par la technologie. Veuillez noter que des simplifications ont été apportées à partir des définitions mathématiques et physiques strictes (telles que la notation bra-ket et les détails de l'amplitude de probabilité complexe).*
+
 

@@ -1,6 +1,7 @@
 ---
 title: "企業史: AMDの歴史 - 永遠の挑戦者からRyzenでの大逆転"
 date: 2026-09-23T04:00:00+09:00
+image: "eyecatch.jpg"
 categories: ["History", "Business"]
 tags: ["AMD", "Ryzen", "Semiconductor"]
 ---

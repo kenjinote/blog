@@ -6,7 +6,7 @@ tags: ["Quantum Computer", "Quantum Mechanics", "Algorithm", "Physics"]
 categories: ["math-cryptography-quantum"]
 math: true
 mermaid: true
-image: "cover.webp"
+image: "eyecatch.jpg"
 description: 'Du limite physique des ordinateurs classiques et de la fin de la loi de Moore, jusqu''au mur des effets de la mécanique quantique tel que l''effet tunnel quantique, explique en profondeur le contexte menant à l''aube des ordinateurs quantiques. C''est le premier chapitre du guide complet pour comprendre la technologie de traitement de l''information de la prochaine génération.'
 ---
 
@@ -2861,6 +2861,7 @@ Si cette série a pu contribuer à vous faire comprendre en profondeur la vérit
 
 ---
  **Série « Les principes de l'ordinateur quantique » (12 chapitres au total) — Fin** 
+
 
 
 

@@ -2,7 +2,7 @@
 title: "쿠폰 수집 문제: 모든 종류를 모으려면 몇 번 뽑아야 할까?"
 description: "같은 확률로 나오는 카드 10종류를 모두 모으려면 평균 약 29.3회가 필요합니다. 하지만 30회 안에 모을 확률은 약 63%입니다. 수식, 그래프, Python 시뮬레이션으로 이유를 알아봅니다."
 date: "2026-09-15T21:20:00+09:00"
-image: "eyecatch.png"
+image: "eyecatch.jpg"
 categories: ["mathematics", "statistics"]
 tags: ["확률", "기댓값", "쿠폰 수집 문제", "Python"]
 slug: "coupon-collector-problem"
@@ -298,3 +298,4 @@ $$
 - [계산 데이터 JSON](calculation-results.ko.json) — 이론값, 완료 확률, 시뮬레이션 요약.
 
 그래프는 설명한 모형을 바탕으로 직접 계산해 그렸습니다. 생성된 표지 이미지는 개념적인 삽화이며 계산 결과를 나타내는 그래프가 아닙니다.
+

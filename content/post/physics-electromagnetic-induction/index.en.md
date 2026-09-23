@@ -1,6 +1,7 @@
 ---
 title: "Physics: Mechanism of Electromagnetic Induction and Motors - From Faraday's Discovery to EVs"
-date: 2026-09-23T04:01:41+09:00
+date: 2026-09-23T04:01:41+09:00
+image: "eyecatch.jpg"
 categories: ["physics", "technology"]
 tags: ["electromagnetic-induction", "motor", "ev"]
 ---
@@ -1590,3 +1591,4 @@ This section delves deeper into further technical details and case studies. It e
 ## Additional Technical Verification Part 393
 
 This section delves deeper into further technical details and case studies. It evaluates performance under various conditions, and examines challenges and solutions related to integration with other systems. It also discusses future prospects and limitations.
+

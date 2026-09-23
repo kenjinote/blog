@@ -2,7 +2,7 @@
 title: '使用 GitHub Actions 建構 C++ 專案的 CI/CD 管線'
 slug: 'github-actions-cpp-cicd-pipeline'
 date: '2026-09-12T18:00:00+09:00'
-image: 'img/eyecatch.jpg'
+image: "eyecatch.jpg"
 math: true
 mermaid: true
 categories: ["programming", "devops"]
@@ -455,3 +455,4 @@ jobs:
 本文所解說的：運用矩陣策略進行跨平台驗證、運用 Sanitizer 偵測執行期 Bug、測量涵蓋率，以及自動部署至 GitHub Releases 等，都是在商業級別的開源專案中被廣泛採用的最佳實踐。
 
 自動化的 CI/CD 管線，能將開發者花在「找 Bug」與「手動建置・發布作業」的時間最小化，並成為讓開發者專注於本質上具創造力的程式設計活動的最強武器。請務必在您的 C++ 專案中也導入這套做法，實現敏捷且令人安心的開發生活。
+

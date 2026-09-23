@@ -4,7 +4,7 @@ slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "Math", "Cryptography"]
 draft: false
-image: "gnfs_cpp_blog_eyecatch_1788580949217.webp"
+image: "eyecatch.jpg"
 categories: ["math-cryptography-quantum"]
 description: 'A thorough explanation with C++ implementation code of the mechanism of the ''General Number Field Sieve (GNFS)'', a prime factorization algorithm used to crack RSA encryption. Must-see content for programming enthusiasts, approaching the abyss of calculation logic using the Boost library and algebraic number theory.'
 ---
@@ -443,3 +443,4 @@ It is a crystal of human intellect that has wrestled down the "depths of pure ma
 The chat messages and credit card information we casually transmit are protected upon such astronomical mathematical defense and offense.
 
 Through this C++ framework, I hope you have felt the "romance of mathematics and computers" behind state-of-the-art cryptanalysis algorithms.
+

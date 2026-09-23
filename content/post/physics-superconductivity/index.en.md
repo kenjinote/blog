@@ -1,6 +1,7 @@
 ---
 title: "Physics: How Superconductivity Works - Meissner Effect and Maglev"
-date: 2026-09-23T04:01:41+09:00
+date: 2026-09-23T04:01:41+09:00
+image: "eyecatch.jpg"
 categories: ["physics", "science"]
 tags: ["superconductivity", "meissner-effect", "maglev"]
 ---
@@ -1589,3 +1590,4 @@ This section delves deeper into further technical details and case studies. We e
 ## Additional Technical Verification Part 393
 
 This section delves deeper into further technical details and case studies. We evaluate performance under various conditions and discuss challenges and solutions related to integration with other systems. We also consider future prospects and limitations.
+

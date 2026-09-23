@@ -3,6 +3,7 @@ title: "Winny कैसे काम करता था: खोज, कैश, 
 description: "मेटाडेटा, कनेक्शन गति के आधार पर बने स्तरों और कैश के माध्यम से Winny की P2P तकनीक समझें। डेटा भेजने के उदाहरणों के साथ सुरक्षा की सीमाओं, सूचना लीक और डेवलपर के मुकदमे की व्याख्या।"
 slug: "history-of-winny"
 date: "2026-09-23T10:00:00+09:00"
+image: "eyecatch.jpg"
 categories: ["technology", "computer-science"]
 tags: ["p2p", "network", "winny", "history"]
 math: true
@@ -152,3 +153,4 @@ Winny 2 का चर्चा मंच वितरित डेटा वि�
 [glocom]: https://www.glocom.ac.jp/wp-content/uploads/2020/10/chijo106_042-053.pdf
 [ipa]: https://www.ipa.go.jp/archive/files/000011527.pdf
 [court]: https://www.wipo.int/wipolex/en/text/584277
+

@@ -3,7 +3,7 @@ title: 'Procédé de Gram-Schmidt : Un algorithme pour réaligner des vecteurs d
 description: 'Un guide complet sur le procédé d’orthogonalisation de Gram-Schmidt en algèbre linéaire, couvrant l’intuition géométrique, la formulation mathématique, les versions modifiées numériquement stables, l’implémentation Python et les applications aux espaces de polynômes.'
 slug: 'gram-schmidt-process'
 date: '2026-09-20T14:40:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories: ["Mathématiques"]
 tags: ["Algèbre linéaire", "Algorithmes", "Apprentissage automatique", "Décomposition QR", "Python", "Calcul numérique", "Mathématiques"]
 ---
@@ -222,3 +222,4 @@ Dans cet article, nous avons expliqué en détail le procédé d'orthogonalisati
 J'espère que vous avez réalisé à quel point l'impact de l'idée simple et claire de « réaligner des axes de coordonnées déformés en axes nets et mutuellement perpendiculaires » est puissant et répandu. C'est magnifique en tant que théorie mathématique et indispensable en tant qu'algorithme moderne d'analyse de données pratique exécuté par des ordinateurs. On peut dire que c'est l'un des sommets pour apprécier la profondeur de l'algèbre linéaire.
 
 Surtout, essayez d'exécuter des codes de programme réels ou d'essayer d'orthogonaliser d'autres polynômes à la main pour expérimenter physiquement la joie mathématique de voir un espace se raffiner.
+

@@ -2,7 +2,7 @@
 title: "안정 결혼 문제: 모두의 희망을 어떻게 조합할까?"
 description: "게일–섀플리 알고리즘을 수식, 관계도, 순위 비교 그래프와 Python으로 알아봅니다. 안정적인 매칭과 모두가 만족하는 매칭이 어떻게 다른지 살펴봅니다."
 date: "2026-09-16T14:30:00+09:00"
-image: "eyecatch.png"
+image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["안정 결혼 문제", "알고리즘", "게임 이론", "매칭", "Python"]
 slug: "stable-marriage-problem"
@@ -241,3 +241,4 @@ print("블로킹 쌍:", blocking_pairs(match, left, right))
 ### 참고 문헌
 
 D. Gale and L. S. Shapley, “College Admissions and the Stability of Marriage,” *The American Mathematical Monthly*, 69(1), 9–15, 1962. [PDF](https://www.math.utoronto.ca/mccann/assignments/477/GaleShapley62.pdf). 모델, 지연 수락 방식, 안정성 및 제안자 최적성의 원전입니다. 세 명씩의 사례, 표, 그림은 독립적으로 계산했습니다.
+

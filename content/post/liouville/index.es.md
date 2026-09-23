@@ -3,7 +3,7 @@ title: 'Joseph Liouville: Pionero de los Números Trascendentes y el Análisis C
 description: 'Explorando la vida y el legado de Joseph Liouville, el gran matemático francés del siglo XIX conocido por el teorema de Liouville, los números trascendentes, la teoría de Sturm-Liouville y la restauración de la teoría de Galois.'
 slug: 'liouville'
 date: '2026-09-20T19:20:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'Matemáticas'
   - 'Biografía'
@@ -94,3 +94,4 @@ Además, se desempeñó como profesor en la École Polytechnique y el Collège d
 El 8 de septiembre de 1882, Joseph [Liouville](https://kenji.blog/es/p/liouville/) falleció en París. Los teoremas y conceptos que dejó atrás se han vuelto esenciales no solo para las matemáticas puras, sino también para el avance de la física y la ingeniería. En particular, si no hubiera salvado los manuscritos de [Galois](https://kenji.blog/es/p/galois/), el desarrollo del álgebra moderna probablemente se habría retrasado décadas.
 
 Sus contribuciones continúan siendo honradas hasta el día de hoy, con su nombre grabado en la historia, incluido un cráter en la luna llamado "[Liouville](https://kenji.blog/es/p/liouville/)" en su honor.
+

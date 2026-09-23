@@ -2,7 +2,7 @@
 title: 'GitHub Actionsを使ったC++プロジェクトのCI/CDパイプライン構築'
 slug: 'github-actions-cpp-cicd-pipeline'
 date: '2026-09-12T18:00:00+09:00'
-image: 'img/eyecatch.jpg'
+image: "eyecatch.jpg"
 math: true
 mermaid: true
 categories: ["programming", "devops"]
@@ -455,3 +455,4 @@ C++プロジェクトにおける[CI/CD](https://kenji.blog/p/cicd-pipeline-gith
 本記事で解説したマトリックス戦略を用いたクロスプラットフォーム検証、サニタイザーを用いた実行時バグの検出、カバレッジ計測、そしてGitHub Releasesへの自動デプロイメントは、商用レベルのオープンソースプロジェクトでも広く採用されているベストプラクティスです。
 
 自動化されたCI/CDパイプラインは、開発者が「バグ探し」や「手動ビルド・リリース作業」に費やす時間を最小化し、本来のクリエイティブなコーディング活動に集中するための最強の武器となります。ぜひあなたのC++プロジェクトにも導入し、アジャイルで安心感のある開発ライフを実現してください。
+

@@ -3,7 +3,7 @@ title: 'John von Neumann: Die Flugbahn des "Dämonischen Gehirns", das die moder
 description: 'Eine detaillierte Erklärung des Lebens des genialen Mathematikers John von Neumann, seiner erstaunlichen Leistungen von der Spieltheorie bis zur Quantenmechanik und Informatik sowie zahlreicher Anekdoten rund um ihn.'
 slug: 'von-neumann'
 date: '2026-09-20T20:20:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories: ['mathematics', 'biography']
 tags: ['John von Neumann', 'Quantenmechanik', 'Spieltheorie', 'Informatik', 'Mathematiker', 'Genie']
 ---
@@ -145,3 +145,4 @@ Im Folgenden finden Sie einen detaillierten Zeitplan, der das Leben und die wich
 ## 12. Fazit
 
 John von Neumann verstarb 1957 im jungen Alter von 53 Jahren an Krebs. Das intellektuelle Erbe, das er hinterlassen hat, lebt jedoch bis heute als Grundlage der modernen Mathematik, Physik, Wirtschaft und Informationstechnologie stark weiter. Von den Smartphones und Computern, die wir jeden Tag nutzen, bis hin zu modernster Technologie für künstliche Intelligenz (KI) und analytischen Methoden in den Sozialwissenschaften – überall lassen sich Einblicke in von Neumanns "Dämonisches Gehirn" erkennen. Wenn wir über sein Leben nachdenken, erkennen wir einmal mehr die unendlichen Möglichkeiten des menschlichen Intellekts und das Ausmaß seines Einflusses auf die Welt. In der Geschichte der Menschheit hat niemand sonst einen grundlegenden Paradigmenwechsel in so vielen Bereichen herbeigeführt wie er.
+

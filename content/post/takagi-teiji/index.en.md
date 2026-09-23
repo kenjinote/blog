@@ -3,7 +3,7 @@ title: 'Teiji Takagi: The World-Class Japanese Mathematician Who Established Cla
 description: 'An in-depth look at the life of Teiji Takagi, the father of modern Japanese mathematics, and his great mathematical achievement of establishing Class Field Theory.'
 slug: 'takagi-teiji'
 date: '2026-09-20T19:50:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'mathematics'
   - 'biography'
@@ -116,3 +116,4 @@ The seeds he sowed were passed on to Japanese mathematicians who would later be 
 **Teiji [Takagi](https://kenji.blog/en/p/takagi-teiji/)** developed the academic discipline of mathematics, born in the West, uniquely in the Eastern country of Japan, and built the world's highest peak of theory. His life of overcoming the adversity of isolation during the war and completing the magnificent "Class Field Theory" relying solely on pure thought teaches us the infinite possibilities of human intellect.
 
 Today, the fields where algebraic number theory is applied, such as cryptography and mathematical physics, continue to expand. The achievements of Teiji [Takagi](https://kenji.blog/en/p/takagi-teiji/), who laid its foundation, continue to shine beyond eras.
+

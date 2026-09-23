@@ -6,7 +6,7 @@ tags: ["Fisika", "Mekanika Kuantum", "Eksperimen celah ganda", "Persamaan Schrö
 categories: ["physics-science"]
 math: true
 mermaid: true
-image: "cover.webp"
+image: "eyecatch.jpg"
 description: 'Penjelasan menyeluruh tentang ''eksperimen celah ganda'' yang disebut sebagai eksperimen terindah dalam sejarah fisika. Kami merangkum dengan mudah bagi pemula tentang keanehan dunia mikro di mana akal sehat dunia makro tidak berlaku, serta misteri mendalam dari mekanika kuantum.'
 ---
 ## 1. [Pengantar] Apa Itu Eksperimen Celah Ganda?
@@ -435,5 +435,6 @@ Melalui artikel ini, kita telah melihat secara rinci bagaimana sebuah eksperimen
 Kita kini berdiri di depan gerbang babak kedua dari revolusi kuantum. Sejauh apa pun ilmu pengetahuan dan teknologi berkembang, misteri mendalam mengenai "gelombang probabilitas" dan "penetapan akibat pengamatan" yang membentang di balik dua celah tersebut, masih belum terpecahkan sepenuhnya. Bagaimana alam semesta bermula? Apa makna dari kesadaran dan pengamatan dalam ilmu fisika? Bagaimana mekanika kuantum mikroskopis dan teori relativitas umum makroskopis disatukan? (Penelitian tentang teori gravitasi kuantum). Kunci untuk mengungkap misteri-misteri pamungkas ini, mungkin juga tersembunyi di dalam fenomena yang sederhana namun mendalam yang disebut sebagai eksperimen celah ganda.
 
 Di tengah kesibukan sehari-hari, saat Anda kebetulan melihat cahaya yang masuk melalui jendela, atau menatap kelap-kelip bintang di langit malam, cobalah untuk mengingatnya. Ingatlah bahwa foton-foton tak terhitung jumlahnya yang membentuk cahaya tersebut, adalah gelombang yang menyimpan kemungkinan tak terbatas untuk secara bersamaan melewati setiap jalur di alam semesta, tepat hingga saat di akhir perjalanan panjangnya ia mencapai "detektor" bernama pupil mata Anda. Realitas yang sedang kita saksikan ini, hanyalah sebagian kecil dari tarian abadi nan agung di mana alam semesta terus mengamati dan menetapkan dirinya sendiri. Apa yang disodorkan oleh eksperimen celah ganda kepada kita bukanlah teror atau kekosongan atas ketidakpastian dunia. Sebaliknya, ia adalah rasa takjub dan kekaguman yang luar biasa akan betapa misteriusnya alam semesta ini, betapa kaya ia hingga tak terbayangkan, dan betapa erat ia terhubung dengan eksistensi kita sendiri. Ini bisa dikatakan sebagai hadiah terbesar yang diberikan oleh eksperimen celah ganda kepada umat manusia.
+
 
 

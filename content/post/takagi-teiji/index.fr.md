@@ -3,7 +3,7 @@ title: 'Teiji Takagi : Le mathématicien japonais de renommée mondiale qui a é
 description: 'Une plongée approfondie dans la vie de Teiji Takagi, le père des mathématiques japonaises modernes, et sa grande réalisation mathématique : la théorie du corps de classes.'
 slug: 'takagi-teiji'
 date: '2026-09-20T19:50:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'mathématiques'
   - 'biographie'
@@ -116,3 +116,4 @@ Les graines qu'il a semées ont été transmises à des mathématiciens japonais
 **Teiji [Takagi](https://kenji.blog/fr/p/takagi-teiji/)** a développé la discipline académique des mathématiques, née en Occident, de manière unique dans le pays oriental qu'est le Japon, et a construit le plus haut sommet théorique du monde. Sa vie consistant à surmonter l'adversité de l'isolement pendant la guerre et à achever la magnifique « Théorie du corps de classes » en s'appuyant uniquement sur la pensée pure nous enseigne les possibilités infinies de l'intellect humain.
 
 Aujourd'hui, les domaines où la théorie algébrique des nombres est appliquée, tels que la cryptographie et la physique mathématique, continuent de s'étendre. Les réalisations de Teiji [Takagi](https://kenji.blog/fr/p/takagi-teiji/), qui en a jeté les bases, continuent de briller au-delà de son époque.
+

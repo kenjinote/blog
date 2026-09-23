@@ -2,7 +2,7 @@
 title: "مسألة الزواج المستقر: كيف نوفّق بين تفضيلات الجميع؟"
 description: "تعرّف إلى خوارزمية غيل–شابلي بالمعادلات والرسوم وجداول التفضيلات وPython، وافهم الفرق بين المطابقة المستقرة والمطابقة التي ترضي الجميع."
 date: "2026-09-16T14:30:00+09:00"
-image: "eyecatch.png"
+image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["الزواج المستقر", "الخوارزميات", "نظرية الألعاب", "المطابقة", "Python"]
 slug: "stable-marriage-problem"
@@ -241,3 +241,4 @@ print("الأزواج المعطلة:", blocking_pairs(match, left, right))
 ### المرجع
 
 D. Gale and L. S. Shapley, “College Admissions and the Stability of Marriage,” *The American Mathematical Monthly*, 69(1), 9–15, 1962. [PDF](https://www.math.utoronto.ca/mccann/assignments/477/GaleShapley62.pdf). المصدر الأصلي للنموذج والقبول المؤجل والأمثلية. حُسب مثال الثلاثة مقابل الثلاثة والجداول والرسوم بصورة مستقلة.
+

@@ -3,7 +3,7 @@ title: 'What is a Quantum Computer? Explaining Ultimate Computing Principles Lik
 slug: "quantum-computer-basics"
 date: 2026-09-05T22:10:00+09:00
 tags: ["Quantum Computer", "Physics", "Technology"]
-image: "quantum_basics_eyecatch_1788613712487.webp"
+image: "eyecatch.jpg"
 categories: ["math-cryptography-quantum"]
 description: 'Explains the basics of the ''quantum computer'', which has the potential to exceed the limits of traditional supercomputers. It expertly and clearly unravels the mechanism of utilizing mysterious phenomena of quantum mechanics for computation, such as superposition, quantum entanglement, and quantum gates.'
 ---
@@ -172,3 +172,4 @@ The door to the quantum world has just been opened. Keep an eye on future develo
 
 ---
 *This article aims to explain the basic concepts of quantum computing in an easy-to-understand manner for business professionals and the general public interested in technology. Please note that some rigorous mathematical and physical definitions (such as bra-ket notation and details of complex probability amplitudes) have been partially simplified.*
+

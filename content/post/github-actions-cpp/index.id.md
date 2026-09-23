@@ -2,7 +2,7 @@
 title: 'Membangun Pipeline CI/CD untuk Proyek C++ menggunakan GitHub Actions'
 slug: 'github-actions-cpp-cicd-pipeline'
 date: '2026-09-12T18:00:00+09:00'
-image: 'img/eyecatch.jpg'
+image: "eyecatch.jpg"
 math: true
 mermaid: true
 categories: ["programming", "devops"]
@@ -455,3 +455,4 @@ Membangun pipeline [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-
 Validasi lintas platform (cross-platform) menggunakan strategi matriks, deteksi bug pada saat runtime (waktu eksekusi) menggunakan pembersih (sanitizers), pengukuran cakupan (code coverage), dan penerapan otomatis (auto deployment) ke GitHub Releases yang dibahas dalam artikel ini adalah praktik terbaik yang banyak diadopsi bahkan dalam proyek open-source komersial.
 
 [Pipeline](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) CI/CD otomatis meminimalkan waktu yang dihabiskan pengembang untuk "mencari bug" atau "tugas build dan rilis manual", menjadikannya senjata yang luar biasa untuk membantu mereka fokus pada kegiatan pembuatan kode yang sebenarnya (coding kreatif). Jangan ragu untuk menerapkannya pada proyek C++ Anda sendiri demi mencapai kehidupan pengembangan yang lebih lincah dan bebas dari rasa khawatir.
+

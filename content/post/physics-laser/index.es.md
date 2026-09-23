@@ -1,6 +1,7 @@
 ---
 title: "Física: Cómo funcionan los láseres - Emisión estimulada y amplificación de luz"
-date: 2026-09-23T04:01:41+09:00
+date: 2026-09-23T04:01:41+09:00
+image: "eyecatch.jpg"
 categories: ["physics", "science"]
 tags: ["laser", "optics", "quantum"]
 ---
@@ -1594,3 +1595,4 @@ En esta sección, profundizamos en más detalles técnicos y estudios de casos. 
 ## Verificación técnica adicional parte 394
 
 En esta sección, profundizamos en más detalles técnicos y estudios de casos. Evaluamos el rendimiento bajo diversas condiciones y exploramos los desafíos y soluciones relacionados con la integración con otros sistemas. También consideramos las perspectivas y limitaciones futuras.
+

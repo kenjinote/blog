@@ -2,7 +2,7 @@
 title: "स्थिर विवाह समस्या: सबकी पसंदों को एक साथ कैसे मिलाएँ?"
 description: "समीकरणों, आरेखों, पसंद की तालिकाओं और Python से गेल–शैप्ली एल्गोरिदम समझें। जानें कि स्थिर मिलान और सबको संतुष्ट करने वाला मिलान अलग क्यों हैं।"
 date: "2026-09-16T14:30:00+09:00"
-image: "eyecatch.png"
+image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["स्थिर विवाह समस्या", "एल्गोरिदम", "खेल सिद्धांत", "मिलान", "Python"]
 slug: "stable-marriage-problem"
@@ -241,3 +241,4 @@ print("अवरोधक जोड़ियाँ:", blocking_pairs(match, left
 ### संदर्भ
 
 D. Gale and L. S. Shapley, “College Admissions and the Stability of Marriage,” *The American Mathematical Monthly*, 69(1), 9–15, 1962. [PDF](https://www.math.utoronto.ca/mccann/assignments/477/GaleShapley62.pdf)। मॉडल, विलंबित स्वीकृति और इष्टतमता का मूल स्रोत। तीन-तीन व्यक्तियों के उदाहरण, तालिकाओं और चित्रों की गणना स्वतंत्र रूप से की गई है।
+

@@ -10,7 +10,7 @@
 title: '¿Romperán los ordenadores cuánticos el cifrado RSA? Explicando el algoritmo de Shor'
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["Computación cuántica", "Criptoanálisis", "Algoritmo de Shor", "RSA"]
-image: "quantum_breaking_rsa_1788613722990.webp"
+image: "eyecatch.jpg"
 date: 2026-09-05T22:09:21+09:00
 categories: ["math-cryptography-quantum"]
 description: 'Explicamos cómo el auge de los ordenadores cuánticos amenaza el cifrado RSA que sustenta la actual infraestructura de comunicaciones. Analizamos el futuro del descifrado y la seguridad de próxima generación, desde el funcionamiento del algoritmo de Shor hasta el estado del hardware en la era NISQ.'
@@ -201,4 +201,5 @@ Ya se han iniciado las pruebas de implementación y las implementaciones híbrid
 Las computadoras cuánticas están pasando de ser el sueño del mundo de la ciencia ficción a un desafío de ingeniería en la realidad. El algoritmo de Shor es un gran logro intelectual de la humanidad que fusiona las matemáticas y la mecánica cuántica, pero al mismo tiempo tiene un "poder destructivo" oculto que puede sacudir los cimientos de nuestra sociedad digital.
 
 El cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) no quedará inutilizable inmediatamente mañana. Sin embargo, considerando la evolución de la tecnología cuántica y el riesgo de "Store Now, Decrypt Later", la migración masiva en la historia de la criptografía, que es la transición a PQC, ya ha comenzado. Ahora mismo somos testigos de la primera línea de un cambio de paradigma en la seguridad de la información.
+
 

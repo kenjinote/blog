@@ -2,7 +2,7 @@
 title: 'Akankah Komputer Kuantum Memecahkan Kriptografi RSA? Menjelaskan Algoritme Shor'
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["Komputer Kuantum", "Dekripsi", "Algoritma Shor", "RSA"]
-image: "quantum_breaking_rsa_1788613722990.webp"
+image: "eyecatch.jpg"
 date: 2026-09-05T22:09:21+09:00
 categories: ["math-cryptography-quantum"]
 description: 'Menjelaskan bagaimana kebangkitan komputer kuantum mengancam kriptografi RSA yang mendukung infrastruktur komunikasi modern. Kami mempertimbangkan masa depan dekripsi dan keamanan generasi berikutnya, dari mekanisme algoritme Shor hingga status perangkat keras saat ini di era NISQ.'
@@ -183,4 +183,5 @@ Platform perangkat lunak utama seperti Google Chrome dan Apple iMessage sudah mu
 Komputer kuantum sedang bergeser dari impian fiksi ilmiah menjadi tantangan teknik dunia nyata. Algoritma Shor adalah pencapaian intelektual umat manusia yang hebat yang menggabungkan matematika dan mekanika kuantum, tetapi pada saat yang sama memegang "kekuatan destruktif" untuk mengguncang fondasi masyarakat digital kita.
 
 Enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) tidak akan berhenti menjadi tidak berguna besok. Namun, mengingat evolusi teknologi kuantum dan risiko "Store Now, Decrypt Later", migrasi skala besar dalam sejarah kriptografi ke PQC sudah dimulai. Kita sekarang menyaksikan garis depan pergeseran paradigma dalam keamanan informasi.
+
 

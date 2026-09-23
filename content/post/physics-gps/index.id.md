@@ -1,6 +1,7 @@
 ---
 title: "Luar Angkasa dan Teknologi: Cara Kerja GPS - Teori Relativitas dan Sistem Navigasi Satelit"
-date: 2026-09-23T04:01:41+09:00
+date: 2026-09-23T04:01:41+09:00
+image: "eyecatch.jpg"
 categories: ["space", "technology"]
 tags: ["gps", "relativity", "satellite"]
 ---
@@ -1590,3 +1591,4 @@ Bagian ini menggali lebih dalam tentang detail teknis dan studi kasus lebih lanj
 ## Verifikasi Teknologi Tambahan Bagian 393
 
 Bagian ini menggali lebih dalam tentang detail teknis dan studi kasus lebih lanjut. Kami mengevaluasi performa di berbagai kondisi dan mempertimbangkan tantangan serta solusi untuk integrasi dengan sistem lain. Kami juga membahas prospek dan batasan di masa depan.
+

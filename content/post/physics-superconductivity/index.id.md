@@ -1,6 +1,7 @@
 ---
 title: "Fisika: Cara Kerja Superkonduktivitas - Efek Meissner dan Kereta Maglev"
-date: 2026-09-23T04:01:41+09:00
+date: 2026-09-23T04:01:41+09:00
+image: "eyecatch.jpg"
 categories: ["physics", "science"]
 tags: ["superconductivity", "meissner-effect", "maglev"]
 ---
@@ -1589,3 +1590,4 @@ Di bagian ini, kami akan menggali lebih dalam detail teknis dan studi kasus lebi
 ## Bagian Verifikasi Teknis Tambahan 393
 
 Di bagian ini, kami akan menggali lebih dalam detail teknis dan studi kasus lebih lanjut. Kami akan mengevaluasi kinerja dalam berbagai kondisi dan memeriksa tantangan serta solusi yang berkaitan dengan integrasi dengan sistem lain. Kami juga akan membahas prospek dan batasan di masa depan.
+

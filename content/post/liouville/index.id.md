@@ -3,7 +3,7 @@ title: 'Joseph Liouville: Perintis Bilangan Transenden dan Analisis Kompleks'
 description: 'Mengeksplorasi kehidupan dan warisan Joseph Liouville, matematikawan hebat Prancis abad ke-19 yang dikenal karena teorema Liouville, bilangan transenden, teori Sturm-Liouville, dan pemulihan teori Galois.'
 slug: 'liouville'
 date: '2026-09-20T19:20:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'Matematika'
   - 'Biografi'
@@ -94,3 +94,4 @@ Lebih jauh lagi, ia menjabat sebagai profesor di École Polytechnique dan Collè
 Pada 8 September 1882, Joseph [Liouville](https://kenji.blog/id/p/liouville/) meninggal dunia di Paris. Teorema dan konsep yang ditinggalkannya telah menjadi sangat penting bukan hanya untuk matematika murni, tetapi untuk kemajuan fisika dan teknik. Secara khusus, seandainya ia tidak menyelamatkan manuskrip-manuskrip [Galois](https://kenji.blog/id/p/galois/), perkembangan aljabar modern kemungkinan akan tertunda selama beberapa dekade.
 
 Kontribusinya terus dihormati hingga hari ini, dengan namanya terukir dalam sejarah, termasuk sebuah kawah di bulan yang dinamai "[Liouville](https://kenji.blog/id/p/liouville/)" untuk menghormatinya.
+

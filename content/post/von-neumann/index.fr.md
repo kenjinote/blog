@@ -3,7 +3,7 @@ title: 'John von Neumann : La trajectoire du « Cerveau Démoniaque » qui a con
 description: 'Une explication détaillée de la vie du génie mathématique John von Neumann, de ses réalisations étonnantes allant de la théorie des jeux à la mécanique quantique et à l''informatique, ainsi que de nombreuses anecdotes à son sujet.'
 slug: 'von-neumann'
 date: '2026-09-20T20:20:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories: ['mathematics', 'biography']
 tags: ['John von Neumann', 'Mécanique quantique', 'Théorie des jeux', 'Informatique', 'Mathématicien', 'Génie']
 ---
@@ -145,3 +145,4 @@ Voici une chronologie détaillée résumant la vie et les principales réalisati
 ## 12. Conclusion
 
 John von Neumann est décédé en 1957 à l'âge de 53 ans des suites d'un cancer. Cependant, l'héritage intellectuel qu'il a laissé survit encore fortement aujourd'hui en tant que fondement des mathématiques, de la physique, de l'économie et des technologies de l'information modernes. Des smartphones et des ordinateurs que nous utilisons tous les jours à la technologie d'intelligence artificielle (IA) de pointe et aux méthodes d'analyse en sciences sociales, on peut voir des aperçus du « Cerveau Démoniaque » de von Neumann partout. Réfléchir à sa vie nous fait réaliser une fois de plus les possibilités infinies de l'intellect humain et l'ampleur de son impact sur le monde. Dans l'histoire de l'humanité, personne d'autre n'a provoqué de changements de paradigme fondamentaux dans un éventail de domaines aussi large que lui.
+

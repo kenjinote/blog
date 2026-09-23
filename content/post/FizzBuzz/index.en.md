@@ -4,7 +4,7 @@ slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "Algorithm"]
 draft: false
-image: "img.webp"
+image: "eyecatch.jpg"
 categories: ["programming"]
 description: 'We clearly explain the overview and specific code examples (conditional branching) using Python for the ''FizzBuzz Problem'', which is often asked in programmer interviews. This is must-see content for everyone from beginners to those who want to review the basics.'
 ---
@@ -116,3 +116,4 @@ Let's not rush and proceed slowly.
 Code is written by humans. Because we're human, there are times when we forget things or get nervous. I think it's enough if we can accept that and move forward little by little.
 
 Well then, let's take it easy and write some code today too.
+

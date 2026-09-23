@@ -2,7 +2,7 @@
 title: "Le problème des mariages stables : comment concilier les préférences de chacun ?"
 description: "Découvrez l’algorithme de Gale–Shapley avec des équations, des schémas, des tableaux et du Python. Un appariement stable ne rend pas nécessairement tout le monde satisfait."
 date: "2026-09-16T14:30:00+09:00"
-image: "eyecatch.png"
+image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Mariages stables", "Algorithmes", "Théorie des jeux", "Appariement", "Python"]
 slug: "stable-marriage-problem"
@@ -237,3 +237,4 @@ Lorsque tous les souhaits ne peuvent être exaucés, préciser l’objectif devi
 ### Référence
 
 D. Gale et L. S. Shapley, “College Admissions and the Stability of Marriage”, *The American Mathematical Monthly*, 69(1), 9–15, 1962. [PDF](https://www.math.utoronto.ca/mccann/assignments/477/GaleShapley62.pdf). Source du modèle, de l’acceptation différée et de l’optimalité. L’exemple à trois contre trois, les tableaux et les figures ont été calculés pour cet article.
+

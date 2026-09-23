@@ -10,7 +10,7 @@
 title: '【PQC】La amenaza de los ordenadores cuánticos y el panorama completo de la criptografía postcuántica de próxima generación'
 slug: "post-quantum-cryptography"
 tags: ["Criptografía", "PQC", "Seguridad", "Tecnología de próxima generación"]
-image: "post_quantum_cryptography_1788613735417.webp"
+image: "eyecatch.jpg"
 date: 2026-09-05T22:09:22+09:00
 categories: ["math-cryptography-quantum"]
 description: 'La criptografía de clave pública enfrenta el riesgo de ser descifrada en el futuro debido a la aplicación práctica de los ordenadores cuánticos. Este artículo detalla el funcionamiento y la importancia de la ''Criptografía Postcuántica (PQC)'', una tecnología de seguridad de próxima generación que se está desarrollando para contrarrestar esta amenaza (el problema Y2Q).'
@@ -184,3 +184,4 @@ El primer y crucial paso para la transición a PQC es la creación de un Inventa
 Si bien la evolución de las computadoras cuánticas traerá enormes beneficios a la humanidad, también representa la mayor amenaza para la seguridad criptográfica, que es la columna vertebral de nuestra sociedad digital actual. La Criptografía Post-Cuántica (PQC) ya no es un "tema de investigación en un futuro lejano". Con el hito de la publicación de los estándares FIPS por parte del NIST, la PQC ha entrado en una fase de "implementación y transición" a gran escala.
 
 Teniendo en cuenta la amenaza de "Cosechar ahora, descifrar después", migrar a PQC es una prioridad absoluta que todas las organizaciones que manejan datos altamente confidenciales deben abordar "ahora mismo". Comprendiendo profundamente las tecnologías criptográficas de próxima generación y aumentando la agilidad criptográfica de los sistemas, preparémonos para superar de forma segura la inminente era de las computadoras cuánticas.
+

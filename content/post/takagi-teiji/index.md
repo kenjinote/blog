@@ -3,7 +3,7 @@ title: '高木貞治：類体論を打ち立てた日本の世界的数学者'
 description: '日本の近代数学の父、高木貞治の生涯と、類体論の構築という偉大な数学的業績について深く掘り下げます。'
 slug: 'takagi-teiji'
 date: '2026-09-20T19:50:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'mathematics'
   - 'biography'
@@ -116,3 +116,4 @@ graph TD
 **[高木貞治](https://kenji.blog/p/takagi-teiji/)** （Teiji [Takagi](https://kenji.blog/p/takagi-teiji/)）は、西洋で生まれた数学という学問を、日本という東洋の国で独自に発展させ、世界最高峰の理論を築き上げました。戦時中の孤立という逆境を跳ね返し、純粋な思考のみを頼りに壮大な「類体論」を完成させた彼の生涯は、私たちに人間の知性の無限の可能性を教えてくれます。
 
 今日、暗号理論や数理物理学など、代数的整数論が応用される領域は広がり続けています。その基礎を築いた[高木貞治](https://kenji.blog/p/takagi-teiji/)の業績は、時代を超えて輝き続けています。
+

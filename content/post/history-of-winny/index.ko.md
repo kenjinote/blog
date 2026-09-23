@@ -3,6 +3,7 @@ title: "Winny의 작동 원리: 검색·캐시·중계와 익명성의 한계"
 description: "검색용 키, 회선 속도에 따른 계층화, 캐시와 중계로 Winny의 P2P를 설명합니다. 전송량 예시를 통해 효율과 익명성을 구분하고 정보 유출과 개발자 재판의 경과를 살펴봅니다."
 slug: "history-of-winny"
 date: "2026-09-23T10:00:00+09:00"
+image: "eyecatch.jpg"
 categories: ["technology", "computer-science"]
 tags: ["p2p", "network", "winny", "history"]
 math: true
@@ -152,3 +153,4 @@ Winny 2의 게시판은 분산 전송 위에 만든 애플리케이션입니다.
 [glocom]: https://www.glocom.ac.jp/wp-content/uploads/2020/10/chijo106_042-053.pdf
 [ipa]: https://www.ipa.go.jp/archive/files/000011527.pdf
 [court]: https://www.wipo.int/wipolex/en/text/584277
+

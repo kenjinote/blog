@@ -6,7 +6,7 @@ title: 'RSA 암호를 깨다? GNFS와 Shor의 알고리즘을 수식으로 철�
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00
 tags: ["양자 컴퓨터", "GNFS", "쇼어 알고리즘", "암호 해독", "수학"]
-image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
+image: "eyecatch.jpg"
 mermaid: true
 math: true
 categories: ["math-cryptography-quantum"]
@@ -204,4 +204,5 @@ GNFS는 **'수학적인 공간(대수체) 안에서 관계식을 탐색한다'**
 GNFS가 다항식의 선택이나 거대한 행렬의 계산 등 수학적 기교를 부려 준지수 시간으로 계산량을 끌어내린 반면, 쇼어 알고리즘은 양자 역학의 기본 원리인 중첩과 간섭을 수학적 도구(QFT)와 융합시켜 단숨에 다항식 시간으로의 혁신을 이루어냈습니다.
 
 현재 시점에서는 실용적인 규모(수천 양자 비트)로 쇼어 알고리즘을 실행할 수 있는 결함 허용 양자 컴퓨터(FTQC)는 존재하지 않습니다. 하지만 이 수학적·이론적인 패러다임 시프트의 존재야말로, 현재 전 세계적으로 양자 내성 암호(PQC: Post-Quantum [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy)로의 이행이 시급해진 가장 큰 이유입니다.
+
 

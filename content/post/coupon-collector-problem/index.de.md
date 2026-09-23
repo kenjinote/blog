@@ -2,7 +2,7 @@
 title: "Das Sammelbilderproblem: Wie viele Ziehungen braucht eine vollständige Sammlung?"
 description: "Bei 10 gleich wahrscheinlichen Kartentypen braucht man im Mittel etwa 29,3 Ziehungen. Nach 30 Ziehungen sind aber nur rund 63 % der Sammlungen vollständig. Eine Erklärung mit Formeln, Diagrammen und Python."
 date: "2026-09-15T21:20:00+09:00"
-image: "eyecatch.png"
+image: "eyecatch.jpg"
 categories: ["mathematics", "statistics"]
 tags: ["Wahrscheinlichkeit", "Erwartungswert", "Sammelbilderproblem", "Python"]
 slug: "coupon-collector-problem"
@@ -298,3 +298,4 @@ Das Warten auf die letzte Karte hat also einen klaren mathematischen Grund. Prob
 - [Berechnungsdaten als JSON](calculation-results.de.json) — theoretische Werte, Wahrscheinlichkeiten und Simulationsübersicht.
 
 Die Diagramme wurden eigenständig aus dem beschriebenen Modell berechnet. Das generierte Titelbild ist eine thematische Illustration und kein quantitatives Diagramm.
+

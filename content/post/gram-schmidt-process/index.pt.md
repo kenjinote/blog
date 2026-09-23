@@ -3,7 +3,7 @@ title: 'Processo de Gram-Schmidt: Um algoritmo para realinhar vetores de base di
 description: 'Um guia abrangente sobre o processo de ortogonalização de Gram-Schmidt em álgebra linear, cobrindo a intuição geométrica, formulação matemática, versões modificadas numericamente estáveis, implementação em Python e aplicações em espaços polinomiais.'
 slug: 'gram-schmidt-process'
 date: '2026-09-20T14:40:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories: ["Matemática"]
 tags: ["Álgebra Linear", "Algoritmos", "Aprendizado de Máquina", "Decomposição QR", "Python", "Cálculo Numérico", "Matemática"]
 ---
@@ -222,3 +222,4 @@ Neste artigo, explicamos amplamente o processo de ortogonalização de Gram-Schm
 Espero que você tenha percebido o quão poderoso e amplo é o impacto da ideia simples e clara de "realinhar os eixos de coordenadas distorcidos em eixos nítidos e mutuamente perpendiculares". É belo como uma teoria matemática e indispensável como um algoritmo de análise de dados prático e moderno, executado por computadores. Pode-se dizer que é um dos pináculos para apreciar a profundidade da álgebra linear.
 
 Por todos os meios, tente executar códigos de programa reais ou tente ortogonalizar outros polinômios manualmente para experimentar fisicamente a alegria matemática do espaço sendo refinado.
+

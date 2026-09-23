@@ -1,6 +1,7 @@
 ---
 title: "Weltraum und Technologie: Wie GPS funktioniert - Relativitätstheorie und Satellitennavigationssysteme"
-date: 2026-09-23T04:01:41+09:00
+date: 2026-09-23T04:01:41+09:00
+image: "eyecatch.jpg"
 categories: ["space", "technology"]
 tags: ["gps", "relativity", "satellite"]
 ---
@@ -1590,3 +1591,4 @@ In diesem Abschnitt gehen wir tiefer auf weitere technische Details und Fallstud
 ## Zusätzliche technische Validierung Teil 393
 
 In diesem Abschnitt gehen wir tiefer auf weitere technische Details und Fallstudien ein. Wir bewerten die Leistung unter verschiedenen Bedingungen und untersuchen Herausforderungen und Lösungen für die Integration mit anderen Systemen. Wir betrachten auch zukünftige Perspektiven und Grenzen.
+

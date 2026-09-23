@@ -3,7 +3,7 @@ title: 'Cauchyscher Integralsatz: Das schöne Fundament der Funktionentheorie, w
 description: 'Eine ausführliche Erklärung des Cauchyschen Integralsatzes, eines der wichtigsten Sätze der Funktionentheorie, von seiner intuitiven Bedeutung über eine Skizze des Beweises mit dem Satz von Green bis hin zur Anwendung auf die Integralformel.'
 slug: 'cauchys-integral-theorem'
 date: 2026-09-20T14:30:00+09:00
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'mathematics'
 tags:
@@ -214,3 +214,4 @@ Auf den ersten Blick mag der [Cauchy](https://kenji.blog/de/p/cauchy/)sche Integ
 Ausgehend von diesem Satz werden sukzessive glorreiche Errungenschaften der Funktionentheorie abgeleitet, wie die [Cauchy](https://kenji.blog/de/p/cauchy/)sche Integralformel, der Beweis, dass eine Funktion unendlich oft differenzierbar ist (was Taylor-Reihen und Laurent-Reihen garantiert), und der Residuensatz. Vom [Cauchy](https://kenji.blog/de/p/cauchy/)schen Integralsatz kann man wahrlich sagen, dass er das robusteste und schönste Fundament ist, das das großartige mathematische Gebäude der Funktionentheorie von seinen Wurzeln an stützt.
 
 Wir ermutigen die Leser, Papier und Stift zur Hand zu nehmen und den Beweis mit dem Satz von Green mit eigenen Händen nachzuvollziehen. Sie sollten dann sicherlich die wunderbar harmonische Welt der komplexen Ebene spüren können, die sich hinter den mathematischen Formeln ausbreitet.
+

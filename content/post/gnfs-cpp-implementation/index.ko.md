@@ -12,7 +12,7 @@ slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "수학", "암호"]
 draft: false
-image: "gnfs_cpp_blog_eyecatch_1788580949217.webp"
+image: "eyecatch.jpg"
 categories: ["math-cryptography-quantum"]
 description: 'RSA 암호 해독에 사용되는 소인수분해 알고리즘 ''일반 수체 체(GNFS)''의 원리를 C++ 구현 코드와 함께 철저히 해설합니다. Boost 라이브러리를 활용한 계산 로직이나 대수적 정수론의 심연에 다가가는, 프로그래밍 애호가라면 꼭 봐야 할 내용입니다.'
 ---
@@ -459,4 +459,5 @@ GNFS는 단순한 프로그래밍 테크닉이 아닙니다.
 우리가 무심코 전송하고 있는 채팅이나 신용카드 정보는 이러한 천문학적인 수학의 공방 위에서 지켜지고 있는 것입니다.
 
 이 C++ 프레임워크를 통해 최첨단 암호 해독 알고리즘의 이면에 있는 「수학과 컴퓨터의 로망」을 느껴보시기 바랍니다.
+
 

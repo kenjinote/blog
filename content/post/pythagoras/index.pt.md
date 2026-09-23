@@ -3,7 +3,7 @@ title: 'Pitágoras: A Interseção da Matemática e do Misticismo'
 description: 'Uma exploração profunda da vida do matemático da Grécia antiga Pitágoras, o teorema de Pitágoras e a filosofia de que tudo é número.'
 slug: 'pythagoras'
 date: '2026-09-20T18:40:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'matemática'
   - 'biografia'
@@ -66,3 +66,4 @@ Pitágoras descobriu que acordes agradáveis (consonâncias) são produzidos qua
 ## Conclusão
 
 Pitágoras não foi apenas um matemático; foi um grande pensador que tentou entender o mundo através das lentes dos "números". Os seus ensinamentos continuam a brilhar como a origem espiritual das abordagens científicas modernas.
+

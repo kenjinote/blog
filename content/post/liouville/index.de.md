@@ -3,7 +3,7 @@ title: 'Joseph Liouville: Pionier der transzendenten Zahlen und der komplexen An
 description: 'Erforschung des Lebens und Vermächtnisses von Joseph Liouville, dem großen französischen Mathematiker des 19. Jahrhunderts, bekannt für den Satz von Liouville, transzendente Zahlen, die Sturm-Liouville-Theorie und die Wiederherstellung der Galois-Theorie.'
 slug: 'liouville'
 date: '2026-09-20T19:20:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'Mathematik'
   - 'Biografie'
@@ -94,3 +94,4 @@ Darüber hinaus war er als Professor an der École Polytechnique und am Collège
 Am 8. September 1882 verstarb Joseph [Liouville](https://kenji.blog/de/p/liouville/) in Paris. Die Theoreme und Konzepte, die er hinterließ, sind nicht nur für die reine Mathematik, sondern auch für den Fortschritt der Physik und Ingenieurwissenschaften unverzichtbar geworden. Insbesondere wenn er [Galois](https://kenji.blog/de/p/galois/)' Manuskripte nicht gerettet hätte, wäre die Entwicklung der modernen Algebra wahrscheinlich um Jahrzehnte verzögert worden.
 
 Seine Beiträge werden bis heute geehrt, und sein Name ist in die Geschichte eingraviert, unter anderem durch einen Mondkrater namens „[Liouville](https://kenji.blog/de/p/liouville/)“, der ihm zu Ehren benannt wurde.
+

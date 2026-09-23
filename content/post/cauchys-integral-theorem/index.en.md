@@ -3,7 +3,7 @@ title: 'Cauchy''s Integral Theorem: The Beautiful Foundation of Complex Analysis
 description: 'A detailed explanation of Cauchy''s Integral Theorem, one of the most important theorems in complex analysis, from its intuitive meaning to a sketch of its proof using Green''s theorem and its application to the integral formula.'
 slug: 'cauchys-integral-theorem'
 date: 2026-09-20T14:30:00+09:00
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories:
   - 'mathematics'
 tags:
@@ -214,3 +214,4 @@ At first glance, [Cauchy](https://kenji.blog/en/p/cauchy/)'s integral theorem mi
 Starting from this theorem, glorious achievements of complex analysis such as [Cauchy](https://kenji.blog/en/p/cauchy/)'s integral formula, the proof that a function is infinitely differentiable (guaranteeing Taylor expansions and Laurent expansions), and the Residue Theorem are successively derived. [Cauchy](https://kenji.blog/en/p/cauchy/)'s integral theorem can truly be said to be the most robust and beautiful foundation that supports the magnificent mathematical edifice of complex analysis from its roots.
 
 We encourage readers to pick up a paper and pen and trace the proof using Green's theorem with your own hands. You should be able to surely feel the beautifully harmonious world of the complex plane spreading out behind the mathematical formulas.
+

@@ -2,7 +2,7 @@
 title: "拉姆齊理論：混亂之中必有秩序——以雙色圖解證明 6 人的人際關係"
 description: "只要聚集 6 個人，就必然存在 3 個互相認識的人，或是 3 個互相不認識的人。本文透過雙色圖解證明拉姆齊數 R(3,3)=6，剖析 5 人的反例、完整驗證全部 32768 種著色情形，並延伸探討數列與網路中的實際應用。"
 date: 2026-09-16T20:05:00+09:00
-image: "eyecatch.png"
+image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["拉姆齊理論", "圖論", "組合數學", "鴿籠原理", "Python"]
 slug: "ramsey-theory"
@@ -262,3 +262,4 @@ $$
 - Yuval Wigderson, PCMI 2025, [Extremal graph theory and Ramsey theory: Lecture 10](https://ywigderson.math.ethz.ch/math/static/pcmi2025/Notes10.pdf)：涵蓋單調子序列等拉姆齊思維的專題講義。
 
 本文章中的圖表、全排列窮舉數據表、機率與數量分佈，均由隨附的 Python 腳本生成。
+

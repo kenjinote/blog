@@ -2,7 +2,7 @@
 title: "O problema do casamento estável: como combinar as preferências de todos?"
 description: "Entenda o algoritmo de Gale–Shapley com equações, diagramas, tabelas e Python. Descubra por que um emparelhamento estável não significa satisfação para todos."
 date: "2026-09-16T14:30:00+09:00"
-image: "eyecatch.png"
+image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Casamento estável", "Algoritmos", "Teoria dos jogos", "Emparelhamento", "Python"]
 slug: "stable-marriage-problem"
@@ -237,3 +237,4 @@ Quando não é possível realizar todos os desejos, definir o objetivo fica aind
 ### Referência
 
 D. Gale e L. S. Shapley, “College Admissions and the Stability of Marriage”, *The American Mathematical Monthly*, 69(1), 9–15, 1962. [PDF](https://www.math.utoronto.ca/mccann/assignments/477/GaleShapley62.pdf). Fonte original do modelo, da aceitação diferida e da optimalidade. O exemplo de três pessoas por lado, as tabelas e as figuras foram calculados independentemente.
+

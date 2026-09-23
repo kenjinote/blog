@@ -3,7 +3,7 @@ title: 'John von Neumann: Jejak "Otak Iblis" yang Membangun Sains Modern'
 description: 'Penjelasan mendetail tentang kehidupan ahli matematika jenius John von Neumann, pencapaiannya yang menakjubkan dari teori permainan hingga mekanika kuantum dan ilmu komputer, serta berbagai anekdot di sekitarnya.'
 slug: 'von-neumann'
 date: '2026-09-20T20:20:00+09:00'
-image: 'eyecatch.jpg'
+image: "eyecatch.jpg"
 categories: ['mathematics', 'biography']
 tags: ['John von Neumann', 'Mekanika Kuantum', 'Teori Permainan', 'Ilmu Komputer', 'Matematikawan', 'Jenius']
 ---
@@ -145,3 +145,4 @@ Berikut adalah garis waktu terperinci yang merangkum kehidupan dan pencapaian ut
 ## 12. Kesimpulan
 
 John von Neumann meninggal pada tahun 1957 di usia muda 53 tahun karena kanker. Namun, warisan intelektual yang ditinggalkannya masih bertahan kuat hingga saat ini sebagai fondasi matematika, fisika, ekonomi, dan teknologi informasi modern. Dari ponsel pintar dan komputer yang kita gunakan setiap hari hingga teknologi kecerdasan buatan (AI) mutakhir dan metode analisis dalam ilmu sosial, sekilas tentang "Otak Iblis" von Neumann dapat dilihat di mana-mana. Merefleksikan kehidupannya membuat kita sekali lagi menyadari kemungkinan tak terbatas dari kecerdasan manusia dan besarnya dampaknya terhadap dunia. Dalam sejarah umat manusia, tidak ada orang lain yang menyebabkan perubahan paradigma mendasar dalam berbagai bidang seluas dia.
+
