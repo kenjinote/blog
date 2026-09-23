@@ -587,9 +587,9 @@ graph TD
     
     Evolved --> Obs["भौतिक राशि $A$ का प्रेक्षण (प्रक्षेप ऑपरेटर $P_k$)"]:::measure
     
-    Obs -->|"प्रायिकता $p("a_1") = \langle \psi"| P_1 | \psi \rangle$ | State1["संकुचित अवस्था 1: $| a_1 \rangle$"]:::state
-    Obs -->|"प्रायिकता $p("a_2") = \langle \psi"| P_2 | \psi \rangle$ | State2["संकुचित अवस्था 2: $| a_2 \rangle$"]:::state
-    Obs -->|"..."| StateN["संकुचित अवस्था n: $| a_n \rangle$"]:::state
+      Obs -- "p(a_1) = <ψ|P_1|ψ>" --> State1["संकुचित अवस्था 1: $| a_1 \rangle$"]:::state
+      Obs -- "p(a_2) = <ψ|P_2|ψ>" --> State2["संकुचित अवस्था 2: $| a_2 \rangle$"]:::state
+      Obs -- "..." --> StateN["संकुचित अवस्था n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["डिकोहेरेंस (कला सुसंगतता की हानि) और मिश्रित अवस्था में संक्रमण"]:::measure
     State2 --> Decoherence

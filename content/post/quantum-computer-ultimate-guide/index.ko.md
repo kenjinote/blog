@@ -587,9 +587,9 @@ graph TD
     
     Evolved --> Obs["물리량 $A$ 의 관측 (사영 연산자 $P_k$)"]:::measure
     
-    Obs -->|"확률 $p("a_1") = \langle \psi"| P_1 | \psi \rangle$ | State1["수축 상태 1: $| a_1 \rangle$"]:::state
-    Obs -->|"확률 $p("a_2") = \langle \psi"| P_2 | \psi \rangle$ | State2["수축 상태 2: $| a_2 \rangle$"]:::state
-    Obs -->|"..."| StateN["수축 상태 n: $| a_n \rangle$"]:::state
+      Obs -- "p(a_1) = <ψ|P_1|ψ>" --> State1["수축 상태 1: $| a_1 \rangle$"]:::state
+      Obs -- "p(a_2) = <ψ|P_2|ψ>" --> State2["수축 상태 2: $| a_2 \rangle$"]:::state
+      Obs -- "..." --> StateN["수축 상태 n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["결어긋남(위상 간섭의 상실)과 혼합 상태화"]:::measure
     State2 --> Decoherence

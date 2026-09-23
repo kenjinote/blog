@@ -587,9 +587,9 @@ graph TD
     
     Evolved --> Obs["Observación de la magnitud física $A$ (Operador de proyección $P_k$)"]:::measure
     
-    Obs -->|"Probabilidad $p("a_1") = \langle \psi"| P_1 | \psi \rangle$ | State1["Estado colapsado 1: $| a_1 \rangle$"]:::state
-    Obs -->|"Probabilidad $p("a_2") = \langle \psi"| P_2 | \psi \rangle$ | State2["Estado colapsado 2: $| a_2 \rangle$"]:::state
-    Obs -->|"..."| StateN["Estado colapsado n: $| a_n \rangle$"]:::state
+      Obs -- "p(a_1) = <ψ|P_1|ψ>" --> State1["Estado colapsado 1: $| a_1 \rangle$"]:::state
+      Obs -- "p(a_2) = <ψ|P_2|ψ>" --> State2["Estado colapsado 2: $| a_2 \rangle$"]:::state
+      Obs -- "..." --> StateN["Estado colapsado n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["Decoherencia (pérdida de interferencia de fase) y estado mixto"]:::measure
     State2 --> Decoherence

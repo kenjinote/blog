@@ -587,9 +587,9 @@ graph TD
     
     Evolved --> Obs["Pengukuran Observabel $A$ (Operator Proyeksi $P_k$)"]:::measure
     
-    Obs -->|"Probabilitas $p("a_1") = \langle \psi"| P_1 | \psi \rangle$ | State1["Keadaan Runtuh 1: $| a_1 \rangle$"]:::state
-    Obs -->|"Probabilitas $p("a_2") = \langle \psi"| P_2 | \psi \rangle$ | State2["Keadaan Runtuh 2: $| a_2 \rangle$"]:::state
-    Obs -->|"..."| StateN["Keadaan Runtuh n: $| a_n \rangle$"]:::state
+      Obs -- "p(a_1) = <ψ|P_1|ψ>" --> State1["Keadaan Runtuh 1: $| a_1 \rangle$"]:::state
+      Obs -- "p(a_2) = <ψ|P_2|ψ>" --> State2["Keadaan Runtuh 2: $| a_2 \rangle$"]:::state
+      Obs -- "..." --> StateN["Keadaan Runtuh n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["Dekoherensi (Hilangnya Interferensi Fase) dan Transisi ke Keadaan Campuran"]:::measure
     State2 --> Decoherence

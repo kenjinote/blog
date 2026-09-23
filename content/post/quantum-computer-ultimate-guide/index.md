@@ -587,9 +587,9 @@ graph TD
     
     Evolved --> Obs["物理量 $A$ の観測 (射影演算子 $P_k$)"]:::measure
     
-    Obs -->|"確率 $p("a_1") = \langle \psi"| P_1 | \psi \rangle$ | State1["収縮状態 1: $| a_1 \rangle$"]:::state
-    Obs -->|"確率 $p("a_2") = \langle \psi"| P_2 | \psi \rangle$ | State2["収縮状態 2: $| a_2 \rangle$"]:::state
-    Obs -->|"..."| StateN["収縮状態 n: $| a_n \rangle$"]:::state
+      Obs -- "p(a_1) = <ψ|P_1|ψ>" --> State1["収縮状態 1: $| a_1 \rangle$"]:::state
+      Obs -- "p(a_2) = <ψ|P_2|ψ>" --> State2["収縮状態 2: $| a_2 \rangle$"]:::state
+      Obs -- "..." --> StateN["収縮状態 n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["デコヒーレンス（位相干渉の喪失）と混合状態化"]:::measure
     State2 --> Decoherence

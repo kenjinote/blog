@@ -587,9 +587,9 @@ graph TD
     
     Evolved --> Obs["物理量 $A$ 的观测 (投影算子 $P_k$)"]:::measure
     
-    Obs -->|"概率 $p("a_1") = \langle \psi"| P_1 | \psi \rangle$ | State1["塌缩状态 1: $| a_1 \rangle$"]:::state
-    Obs -->|"概率 $p("a_2") = \langle \psi"| P_2 | \psi \rangle$ | State2["塌缩状态 2: $| a_2 \rangle$"]:::state
-    Obs -->|"..."| StateN["塌缩状态 n: $| a_n \rangle$"]:::state
+      Obs -- "p(a_1) = <ψ|P_1|ψ>" --> State1["塌缩状态 1: $| a_1 \rangle$"]:::state
+      Obs -- "p(a_2) = <ψ|P_2|ψ>" --> State2["塌缩状态 2: $| a_2 \rangle$"]:::state
+      Obs -- "..." --> StateN["塌缩状态 n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["退相干（相位干涉丧失）与转为混合态"]:::measure
     State2 --> Decoherence

@@ -587,9 +587,9 @@ graph TD
     
     Evolved --> Obs["Наблюдение физической величины $A$ (Проекционный оператор $P_k$)"]:::measure
     
-    Obs -->|"Вероятность $p("a_1") = \langle \psi"| P_1 | \psi \rangle$ | State1["Состояние коллапса 1: $| a_1 \rangle$"]:::state
-    Obs -->|"Вероятность $p("a_2") = \langle \psi"| P_2 | \psi \rangle$ | State2["Состояние коллапса 2: $| a_2 \rangle$"]:::state
-    Obs -->|"..."| StateN["Состояние коллапса n: $| a_n \rangle$"]:::state
+      Obs -- "p(a_1) = <ψ|P_1|ψ>" --> State1["Состояние коллапса 1: $| a_1 \rangle$"]:::state
+      Obs -- "p(a_2) = <ψ|P_2|ψ>" --> State2["Состояние коллапса 2: $| a_2 \rangle$"]:::state
+      Obs -- "..." --> StateN["Состояние коллапса n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["Декогеренция (потеря фазовой когерентности) и переход в смешанное состояние"]:::measure
     State2 --> Decoherence
