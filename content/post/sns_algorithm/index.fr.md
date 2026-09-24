@@ -1,7 +1,7 @@
 ---
 title: "L'impact des algorithmes de réseaux sociaux sur notre réflexion et nos choix technologiques"
 slug: "sns-algorithm-tech-selection"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

@@ -2,7 +2,7 @@
 title: "火腿三明治定理：一刀能将3种食材平分吗？"
 description: "详细解释火腿三明治定理，该定理指出在三维空间中总是存在一个平面可以同时平分三个物体的体积，从直观理解到博苏克-乌拉姆定理。"
 slug: "ham-sandwich-theorem"
-date: "2026-09-20T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

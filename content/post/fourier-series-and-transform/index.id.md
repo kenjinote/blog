@@ -2,7 +2,7 @@
 title: "Deret Fourier dan Transformasi Fourier: Menguraikan Gelombang Kompleks Apa Pun Menjadi Jumlah Sinus dan Kosinus"
 description: "Penjelasan mendetail tentang 'Deret Fourier', yang menyatakan bentuk gelombang kompleks sebagai superposisi gelombang sinus dan kosinus sederhana, serta perluasannya pada fungsi non-periodik, yaitu 'Transformasi Fourier'."
 slug: "fourier-series-and-transform"
-date: "2026-09-20T14:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matematika"

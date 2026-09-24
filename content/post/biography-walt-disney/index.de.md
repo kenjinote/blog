@@ -1,6 +1,6 @@
 ---
 title: "Der Mann, der Träume formte: Das Leben und die kreative Reise von Walt Disney"
-date: 2026-09-23T20:51:46+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["walt-disney", "history"]
 image: "eyecatch.jpg"

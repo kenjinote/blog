@@ -1,7 +1,7 @@
 ---
 title: '【C++】年賀状作成アプリ開発配信 VOL.1：環境構築とDirect2Dの初期化'
 slug: "年賀状作成アプリ開発配信 VOL.1"
-date: 2025-08-31T20:24:49+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["年賀状作成アプリ作成配信", "YouTube"]
 draft: false
 image: "img.webp"

@@ -2,7 +2,7 @@
 title: "Lema de Burnside: Como contar padrões quando as rotações importam?"
 description: "Explicação sobre como eliminar padrões duplicados causados por rotações, usando a coloração de colares como exemplo. Uma introdução prática à teoria dos grupos."
 slug: "burnsides-lemma"
-date: "2026-09-20T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "matemática"

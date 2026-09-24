@@ -2,7 +2,7 @@
 title: "Benfordsches Gesetz: Warum beginnen so viele Zahlen mit einer 1?"
 description: "Erforschung des mysteriösen mathematischen Gesetzes, das in natürlichen Daten verborgen ist und auch zur Aufdeckung von Buchhaltungsbetrug verwendet wird."
 slug: "benfords-law"
-date: "2026-09-15T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematik"

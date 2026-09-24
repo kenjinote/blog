@@ -1,6 +1,6 @@
 ---
 title: "Стальной король Эндрю Карнеги: человек, воплотивший парадокс богатства и благотворительности"
-date: 2026-09-23T20:59:57+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["andrew-carnegie", "history"]
 image: "eyecatch.jpg"

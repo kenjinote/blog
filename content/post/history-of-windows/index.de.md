@@ -2,7 +2,7 @@
 title: "Die Geschichte des Betriebssystems: Die Windows-Genealogie (Von MS-DOS zur Vollendung der NT-Architektur)"
 description: "Die Evolutionsgeschichte von Windows, beginnend mit dem CUI von MS-DOS, über den Übergang zur GUI bis hin zur robusten NT-Architektur."
 slug: "history-of-windows"
-date: "2026-09-23T02:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

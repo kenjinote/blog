@@ -8,7 +8,7 @@
 
 title: '약 40년 전의 OS ''MS-DOS 4.0''이 오픈 소스화되어 공개'
 slug: "MS-DOS 4.0 の오픈 소스化"
-date: 2024-05-05T16:44:28+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["MS-DOS", "오픈소스"]
 draft: false
 image: "img.webp"

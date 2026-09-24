@@ -1,7 +1,7 @@
 ---
 title: 'كيفية حل مشكلة بائع المتجول (TSP) باستخدام Mathematica'
 slug: "Mathematicaでمشكلة بائع المتجولを解く"
-date: 2022-10-12T19:05:58+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Mathematica", "مشكلة البائع المتجول", "خوارزمية", "رياضيات"]
 draft: false
 image: "img.webp"

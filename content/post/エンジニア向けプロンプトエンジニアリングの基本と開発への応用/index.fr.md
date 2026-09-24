@@ -1,7 +1,7 @@
 ---
 title: "Pour les ingénieurs : Les bases de l'ingénierie des prompts et son application au développement"
 slug: "prompt-engineering-for-engineers"
-date: "2026-09-11T20:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

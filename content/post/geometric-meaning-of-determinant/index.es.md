@@ -2,7 +2,7 @@
 title: "Significado geométrico del determinante: Más que una fórmula, el 'Factor de escala de volumen' y la 'Inversión de orientación'"
 description: "El determinante no es solo una fórmula de cálculo, sino un importante indicador geométrico del factor de escala de volumen y la inversión de orientación del espacio mediante transformaciones lineales. En este artículo, explicamos su significado intuitivo en detalle."
 slug: "geometric-meaning-of-determinant"
-date: "2026-09-20T14:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "Matemáticas"

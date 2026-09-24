@@ -1,7 +1,7 @@
 ---
 title: 'Memecahkan Sandi RSA? Penjelasan Menyeluruh Algoritme GNFS dan Shor dengan Rumus Matematika'
 slug: "gnfs-to-shors-algorithm-math-deepdive"
-date: 2026-09-06T12:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Komputer Kuantum", "GNFS", "Algoritma Shor", "Kriptanalisis", "Matematika"]
 image: "eyecatch.jpg"
 mermaid: true

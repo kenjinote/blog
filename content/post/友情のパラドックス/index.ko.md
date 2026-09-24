@@ -1,7 +1,7 @@
 ---
 title: "당신의 친구는 당신보다 친구가 많다: 우정의 역설"
 description: "'나는 친구가 적은 게 아닐까?' 하고 고민할 필요는 없습니다. 그것은 수학적으로 증명된 네트워크의 성질이니까요."
-date: 2026-09-10T21:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 slug: "friendship-paradox"
 image: "img/friendship_paradox.jpg"

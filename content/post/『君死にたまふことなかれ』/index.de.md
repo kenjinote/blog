@@ -1,7 +1,7 @@
 ---
 title: 'Volltext und Erklärung von Akiko Yosanos „Du sollst nicht sterben“: Die Gedanken an ihren kleinen Bruder in einem Antikriegsgedicht'
 slug: "『Kimi Shinitamou Koto Nakare』"
-date: 2024-07-25T13:16:47+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Akiko Yosano", "Stirb nicht", "Gedicht", "Antikriegsgedicht"]
 draft: false
 categories: ["it-technology"]

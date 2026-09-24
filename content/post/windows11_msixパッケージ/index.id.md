@@ -1,7 +1,7 @@
 ---
 title: 'Cara Membuat Paket MSIX untuk Windows 11 dan Perangkap Sertifikat yang Ditandatangani Sendiri'
 slug: "windows-11-msix-packaging-guide"
-date: "2026-09-12T22:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

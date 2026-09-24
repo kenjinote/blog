@@ -2,7 +2,7 @@
 title: "卡爾·路德維希·西格爾：20世紀數論的巨人"
 description: "深入解讀西格爾的生平及其在數論與天體力學領域的偉大數學成就。"
 slug: "siegel"
-date: "2026-09-20T20:10:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["西格爾", "數論", "數學家", "天體力學", "解析數論", "丟番圖方程"]

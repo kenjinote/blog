@@ -2,7 +2,7 @@
 title: "Srinivasa Ramanujan: O Gênio Matemático Que Capturou o Infinito Através da Intuição"
 description: "Uma explicação aprofundada da vida do gênio matemático indiano Srinivasa Ramanujan e de suas impressionantes conquistas matemáticas, como o número do táxi e as fórmulas para pi. Também exploramos o impacto de sua intuição na matemática e física modernas."
 slug: "ramanujan"
-date: "2026-09-20T20:10:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemática"

@@ -1,7 +1,7 @@
 ---
 title: '[Windows 11/10] Eine Sammlung praktischer Tastenkombinationen und Tricks, die die Arbeitseffizienz drastisch steigern'
 slug: "Windows のVerknüpfung・Trick集"
-date: 2022-09-18T23:49:29+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Windows", "Tipps", "Tastenkombinationen"]
 draft: false
 image: "img.webp"

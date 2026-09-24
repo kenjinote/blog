@@ -2,7 +2,7 @@
 title: "网络技术: DNS的机制 - 互联网的电话簿，名称解析的背后"
 description: "只需输入「www.google.com」，为什么就能连接到目标服务器？本文将解说互联网最大的分布式数据库「DNS」的层级结构和名称解析的机制。"
 slug: "network-dns"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

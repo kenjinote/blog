@@ -2,7 +2,7 @@
 title: "勒内·笛卡尔：近代哲学之父与解析几何的创始人"
 description: "勒内·笛卡尔以“我思故我在”闻名于世。我们将深入探讨他传奇的一生以及在数学史上引发革命的解析几何的诞生。"
 slug: "descartes"
-date: 2026-09-20T18:50:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

@@ -9,7 +9,7 @@
 
 title: '¿Qué es la conjetura P≠NP? Explicación sencilla del problema no resuelto de la teoría de la complejidad computacional y la diferencia entre P y NP'
 slug: "Conjetura P≠NP"
-date: 2024-09-11T02:22:39+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Conjetura P≠NP", "Matemáticas", "Problemas no resueltos"]
 draft: false
 categories: ["math-cryptography-quantum"]

@@ -2,7 +2,7 @@
 title: "ガンマ関数：「階乗」を連続的な実数や複素数へと拡張するオイラーの傑作"
 description: "離散的な階乗を滑らかな曲線へとつなぐガンマ関数。その定義、性質、オイラーの発見の歴史から、解析接続、スターリングの公式、現代科学における応用までを深く解説します。"
 slug: "gamma-function"
-date: 2026-09-20T14:40:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Gamma Function", "Euler", "Complex Analysis", "Calculus"]

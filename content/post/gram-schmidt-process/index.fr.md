@@ -2,7 +2,7 @@
 title: 'Procédé de Gram-Schmidt : Un algorithme pour réaligner des vecteurs de base déformés en vecteurs nets et mutuellement orthogonaux'
 description: 'Un guide complet sur le procédé d’orthogonalisation de Gram-Schmidt en algèbre linéaire, couvrant l’intuition géométrique, la formulation mathématique, les versions modifiées numériquement stables, l’implémentation Python et les applications aux espaces de polynômes.'
 slug: 'gram-schmidt-process'
-date: '2026-09-20T14:40:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathématiques"]
 tags: ["Algèbre linéaire", "Algorithmes", "Apprentissage automatique", "Décomposition QR", "Python", "Calcul numérique", "Mathématiques"]

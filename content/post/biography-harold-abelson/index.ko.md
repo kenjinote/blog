@@ -1,6 +1,6 @@
 ---
 title: "해럴드 에이블슨: 프로그래밍 교육과 오픈 컬처의 거장"
-date: 2026-09-23T19:18:01+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["harold-abelson", "history"]
 image: "eyecatch.jpg"

@@ -1,6 +1,6 @@
 ---
 title: "鉄血宰相オットー・フォン・ビスマルク：ドイツ統一の立役者とその現実政治"
-date: 2026-09-23T19:46:03+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["otto-von-bismarck", "history"]
 image: "eyecatch.jpg"

@@ -2,7 +2,7 @@
 title: '兩個信封悖論：無限期望值引發的邏輯崩潰與決策陷阱'
 slug: 'two-envelopes-paradox'
 description: '眼前有兩個信封，其中一個信封裡的金額是另一個的兩倍。如果在不打開自己信封的情況下交換，在期望值上總是能獲利嗎？透過直覺與數學激烈衝突的「兩個信封悖論」，徹底解說期望值的陷阱與無限的概念。'
-date: '2026-09-10T00:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/two_envelopes.jpg'
 math: true
 mermaid: true

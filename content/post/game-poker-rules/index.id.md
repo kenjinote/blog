@@ -2,7 +2,7 @@
 title: "Olahraga Pikiran: Aturan dan Teori Peluang Poker (Texas Hold'em) - Permainan Di Mana Keberuntungan dan Keterampilan Bertemu"
 description: "Texas Hold'em, olahraga pikiran pamungkas dengan total hadiah turnamen dunia melebihi 10 miliar yen. Bukan sekadar perjudian, kami menjelaskan teori posisi, perhitungan peluang, dan dasar matematika dari gertakan (bluffing)."
 slug: "game-poker-rules"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

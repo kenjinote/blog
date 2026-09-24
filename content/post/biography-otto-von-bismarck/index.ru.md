@@ -1,6 +1,6 @@
 ---
 title: "Железный канцлер Отто фон Бисмарк: архитектор объединения Германии и реальной политики"
-date: 2026-09-23T19:46:03+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["otto-von-bismarck", "history"]
 image: "eyecatch.jpg"

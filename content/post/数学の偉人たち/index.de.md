@@ -1,7 +1,7 @@
 ---
 title: 'Die großen Mathematiker, die die Geschichte verändert haben: Von Pythagoras über Archimedes bis hin zu Euklid'
 slug: "Mathematikの偉人たち"
-date: 2022-09-22T23:06:37+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Mathematiker"]
 draft: false
 image: "img.webp"

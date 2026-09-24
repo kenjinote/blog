@@ -4,7 +4,7 @@
 
 title: 'reveal.js 사용법: HTML과 Markdown으로 프레젠테이션 자료 작성'
 slug: "HTMLで프레젠테이션資料を作る方法（reveal.js）"
-date: 2023-04-06T23:23:46+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["HTML", "reveal.js", "프레젠테이션"]
 draft: false
 image: "img.webp"

@@ -2,7 +2,7 @@
 title: "Leyes de la física y tecnología cotidiana: Cómo funcionan las baterías de iones de litio - La química de carga y descarga que sustenta la sociedad móvil moderna"
 description: "Desde los teléfonos inteligentes hasta los vehículos eléctricos, las baterías de iones de litio son indispensables en la sociedad moderna. Explicamos la dinámica reacción química de electrones e iones que ocurre en su interior para lograr una capacidad tan alta y un peso tan ligero."
 slug: "physics-lithium-ion"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

@@ -1,7 +1,7 @@
 ---
 title: 'Introdução ao Gerador de Sites Estáticos com Hugo (Guia de Migração do WordPress)'
 slug: "hugo-static-site-generator-wordpress-migration"
-date: "2026-09-13T02:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -116,7 +116,7 @@ Cada arquivo de artigo do Hugo possui um bloco de metadados no topo chamado de "
 ```yaml
 ---
 title: "Entendendo as Taxonomias do Hugo"
-date: 2026-09-13T10:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 categories:
   - "Explicação Técnica"

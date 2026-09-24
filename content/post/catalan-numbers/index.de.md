@@ -2,7 +2,7 @@
 title: "Catalan-Zahlen: Warum Klammern und Baumstrukturen die gleichen Anzahlen ergeben"
 description: "Eine Erklärung der Catalan-Zahlen, einer faszinierenden Folge, die gültige Klammerausdrücke, Binärbäume und Polygon-Triangulierungen verbindet. Wir behandeln auch Berechnungsmethoden mittels Rekursion und dynamischer Programmierung."
 slug: "catalan-numbers"
-date: "2026-09-20T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematik"

@@ -1,7 +1,7 @@
 ---
 title: '개인 개발 앱의 프로모션 전략: 기술 블로그를 어떻게 활용할 것인가'
 slug: "indie-app-promotion-blog-strategy"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

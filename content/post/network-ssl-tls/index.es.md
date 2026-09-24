@@ -2,7 +2,7 @@
 title: "El Escudo de Internet: ¿Cómo funciona SSL/TLS y por qué es seguro enviar información de tarjetas de crédito?"
 description: "¿Qué significa la «s» en «https» de las URL de los sitios web? Explicamos el funcionamiento de «SSL/TLS», la tecnología de cifrado que protege el comercio electrónico y las comunicaciones en todo el mundo, desde el sistema híbrido de clave compartida y clave pública."
 slug: "network-ssl-tls"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -2,7 +2,7 @@
 title: "The 3 Main Elements of Object-Oriented Programming (OOP) and Practicing SOLID Principles: From History to Advanced Design Methods"
 description: "A complete guide covering the historical background of Object-Oriented Programming, its 3 main elements (Encapsulation, Inheritance, Polymorphism), and deep practical methods of SOLID principles."
 slug: "object-oriented-programming-oop-solid-principles"
-date: "2026-09-21T14:51:08+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "computer-science"

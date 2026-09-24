@@ -2,7 +2,7 @@
 title: "加密貨幣與比特幣：其歷史、數學基礎與未來"
 description: "徹底解說比特幣與加密貨幣背後的技術與數學機制。這是一份涵蓋 SHA-256、橢圓曲線密碼學、UTXO 以及可擴展性問題的完整指南。"
 slug: "cryptocurrency-and-bitcoin"
-date: "2026-09-20T23:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["科技", "數學"]
 tags: ["比特幣", "密碼學", "區塊鏈"]

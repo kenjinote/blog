@@ -2,7 +2,7 @@
 title: "O Teorema do Sanduíche de Presunto: Você Pode Cortar 3 Ingredientes com Um Corte?"
 description: "Uma explicação detalhada do Teorema do Sanduíche de Presunto, que afirma que sempre existe um plano que divide simultaneamente três objetos no espaço 3D, de uma abordagem intuitiva ao teorema de Borsuk-Ulam."
 slug: "ham-sandwich-theorem"
-date: "2026-09-20T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemática"

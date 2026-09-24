@@ -2,7 +2,7 @@
 title: "本福特定律：为什么那么多数字以1开头？"
 description: "探讨隐藏在自然数据中神秘的数学定律，以及它如何被用来发现财务欺诈。"
 slug: "benfords-law"
-date: "2026-09-15T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

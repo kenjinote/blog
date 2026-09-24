@@ -1,7 +1,7 @@
 ---
 title: 'Cara Mengatur Pergantian Aplikasi ala Windows (Alt+Tab) di Mac'
 slug: "macでWindowsライク（Alt+Tab）にBeralih Aplikasiする方法"
-date: 2023-04-05T02:20:12+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["macos", "mac", "pintasan keyboard", "beralih aplikasi"]
 draft: 
 image: "img.webp"

@@ -6,7 +6,7 @@
 
 title: '필견! 개인적인 영화 시청 TODO 리스트와 감상 완료 추천 작품 기록'
 slug: "영화TODOリスト"
-date: 2023-04-17T00:34:13+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["영화", "TODO"]
 draft: false
 image: "image.webp"

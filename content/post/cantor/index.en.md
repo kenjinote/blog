@@ -2,7 +2,7 @@
 title: "Georg Cantor: The Tragic Genius Who Discovered the Hierarchy of Infinity and Built the Foundations of Mathematics"
 description: "A detailed explanation of the turbulent life of Georg Cantor, the founder of set theory, and his astonishing mathematical achievement of proving that there are different sizes of infinity."
 slug: "cantor"
-date: "2026-09-20T19:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

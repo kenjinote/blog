@@ -2,7 +2,7 @@
 title: "移动革命：iPhone 的历史 - 重新发明电话并改变世界的设备"
 description: "从 2007 年史蒂夫·乔布斯传奇般的演讲开始的 iPhone 历史。回顾智能手机革命的轨迹，从淘汰物理键盘到 App Store 的诞生。"
 slug: "history-of-iphone"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

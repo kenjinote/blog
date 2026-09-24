@@ -1,7 +1,7 @@
 ---
 title: '后量子时代的区块链和虚拟货币将如何改变？'
 slug: "post-quantum-blockchain-and-crypto"
-date: "2026-09-11T17:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

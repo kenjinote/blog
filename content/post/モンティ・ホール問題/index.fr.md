@@ -2,7 +2,7 @@
 title: "Le problème de Monty Hall : le piège de la théorie des probabilités qui défie l'intuition et sa résolution complète par l'inférence bayésienne"
 slug: 'monty-hall-problem'
 description: "Un jeu télévisé où vous devez choisir la bonne récompense parmi 3 portes. Après que le présentateur a ouvert une porte cachant une chèvre, devriez-vous changer votre choix ? Nous expliquons de manière approfondie le « problème de Monty Hall », qui a déclenché une énorme controverse parmi les mathématiciens du monde entier, du point de vue de la théorie des probabilités, de l'inférence bayésienne et de la psychologie cognitive."
-date: '2026-09-10T00:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/monty_hall.jpg'
 math: true
 mermaid: true

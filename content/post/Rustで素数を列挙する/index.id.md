@@ -1,7 +1,7 @@
 ---
 title: 'Cara Membuat Program untuk Menghitung Bilangan Prima di Rust dan Contoh Kodenya'
 slug: "RustでBilangan Primaを列挙する"
-date: 2022-09-09T07:08:49+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Rust","bilangan prima","algoritma"]
 draft: false
 image: "images/img.webp"

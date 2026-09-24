@@ -2,7 +2,7 @@
 title: "Louis Mordell: A Giant of Number Theory and His Trajectory"
 description: "A detailed explanation of the life and mathematical contributions of Louis Mordell, known for his groundbreaking work in Diophantine equations, elliptic curves, and the 'Mordell Conjecture'."
 slug: "mordell"
-date: 2026-09-20T20:10:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["number theory", "Mordell", "elliptic curves", "Diophantine equations"]

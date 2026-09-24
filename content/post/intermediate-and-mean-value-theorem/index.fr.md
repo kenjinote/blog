@@ -2,7 +2,7 @@
 title: "Théorème des Valeurs Intermédiaires et Théorème des Accroissements Finis : Des Outils de Preuve Puissants Issus des Propriétés Intuitives des Fonctions Continues et des Dérivées"
 description: "Une explication approfondie du théorème des valeurs intermédiaires et du théorème des accroissements finis, qui forment la base du calcul infinitésimal, en explorant leurs significations intuitives, leurs preuves mathématiques rigoureuses et leurs applications."
 slug: "intermediate-and-mean-value-theorem"
-date: "2026-09-20T14:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathématiques"]
 tags: ["calcul", "théorèmes", "preuves-mathématiques"]

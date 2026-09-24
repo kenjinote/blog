@@ -1,5 +1,6 @@
 ---
 title: "La Bataille du Déchiffrement d'Enigma et Alan Turing : Le Génie et la Machine qui ont Sauvé le Monde"
+date: "2026-09-24T16:08:36+09:00"
 description: "Le déchiffrement d'Enigma a été décisif pour l'issue de la Seconde Guerre mondiale. Découvrez en détail l'histoire méconnue du génie mathématique Alan Turing et des déchiffreurs de Bletchley Park."
 slug: "history-enigma-alan-turing"
 categories: ["history"]

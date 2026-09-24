@@ -2,7 +2,7 @@
 title: "Estratégia de Jogos de Tabuleiro: Regras Básicas do Othello e Padrões de Vitória - Táticas Precisas Até Conquistar os Cantos"
 description: "Othello (Reversi) é conhecido como 'um minuto para aprender, uma vida para dominar'. Em vez de virar peças às cegas, explicaremos os 'Discos Estáveis' e a 'Teoria da Mobilidade' para ajudar os iniciantes a se destacarem."
 slug: "game-othello-rules"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

@@ -2,7 +2,7 @@
 title: "Die Birch-Swinnerton-Dyer-Vermutung (BSD-Vermutung) - Rationale Punkte auf elliptischen Kurven und L-Funktionen"
 description: "Eine detaillierte mathematische Erklärung der Birch-Swinnerton-Dyer-Vermutung (BSD-Vermutung), einem der Millennium-Probleme, von den Grundlagen elliptischer Kurven bis zu ihrer tiefen Verbindung mit L-Funktionen."
 slug: "bsd-conjecture"
-date: "2026-09-14T13:05:17+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Zahlentheorie", "Elliptische Kurven", "BSD-Vermutung", "Millennium-Probleme"]

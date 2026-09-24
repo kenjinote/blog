@@ -1,5 +1,6 @@
 ---
 title: "【Les coulisses du Manifeste Agile】La trajectoire de la révolution qui a jeté les bases du développement logiciel moderne"
+date: "2026-09-24T16:08:36+09:00"
 description: "En 2001, le « Manifeste pour le développement Agile de logiciels » a été rédigé par 17 ingénieurs réunis à Snowbird, dans l'Utah. Cet article explore en profondeur le contexte historique ayant conduit à ce manifeste, le sentiment d'urgence de l'époque, ainsi que la philosophie et l'essence de l'Agile que les organisations de développement modernes devraient véritablement apprendre."
 slug: "philosophy-agile-manifesto"
 categories: ["philosophy"]

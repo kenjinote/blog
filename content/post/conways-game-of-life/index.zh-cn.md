@@ -2,7 +2,7 @@
 title: "康威生命游戏：从简单规则中涌现出类生命复杂性的元胞自动机"
 description: "“康威生命游戏”是一个令人惊叹的元胞自动机，仅凭四条简单规则就能产生类似生命的复杂行为。本文深入探讨其数学背景、详细规则、著名图案以及实现示例。"
 slug: "conways-game-of-life"
-date: 2026-09-15T10:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

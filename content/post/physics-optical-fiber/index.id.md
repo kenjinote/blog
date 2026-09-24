@@ -2,7 +2,7 @@
 title: "Hukum Fisika dan Teknologi Sehari-hari: Cara Kerja Serat Optik - Internet Ultracepat yang Didukung oleh Hukum Fisika Pemantulan Sempurna"
 description: 'Merayap di dasar laut dan menghubungkan benua-benua di dunia, benang kaca tipis "serat optik". Kami akan menjelaskan fisika "pemantulan sempurna" yang menjadi alasan mengapa cahaya merambat tanpa bocor dari tabung kaca yang melengkung, serta cara kerja komunikasi optik yang mendukung internet.'
 slug: "physics-optical-fiber"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

@@ -2,7 +2,7 @@
 title: "網路技術：HTTP 技術解說 - 支撐 Web 的無狀態協定"
 description: "在我們每天瀏覽 Web 網站的背後運作著的「HTTP」。本文將解說這個單純的文字傳輸協定，是如何演進成現代豐富應用程式的基礎。"
 slug: "history-of-http"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

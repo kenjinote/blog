@@ -1,5 +1,6 @@
 ---
 title: "O Paradoxo de Galileu: O Mistério da Matemática Tecido pelo Infinito"
+date: "2026-09-24T16:08:36+09:00"
 description: "A quantidade de \"números naturais\" e seus \"quadrados perfeitos\" é a mesma? Uma explicação detalhada das profundas reflexões sobre o \"infinito\" deixadas por Galileu Galilei em seus últimos anos, até sua conexão com a teoria dos conjuntos moderna. Um artigo longo que explora as maravilhas e o fascínio do infinito."
 slug: "paradox-galileos-paradox"
 categories: ["science"]

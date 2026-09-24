@@ -1,7 +1,7 @@
 ---
 title: 'लंबे समय तक कोडिंग के लिए! इंजीनियरों के लिए 5 अनुशंसित मैकेनिकल कीबोर्ड'
 slug: "engineer-mechanical-keyboard-recommendations"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

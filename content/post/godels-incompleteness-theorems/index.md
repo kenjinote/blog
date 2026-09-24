@@ -1,7 +1,7 @@
 ---
 title: "ゲーデルの不完全性定理：「絶対に証明できない真理」の数学的証明"
 image: "eyecatch.jpg"
-date: 2026-09-14T00:00:51+09:00
+date: "2026-09-24T16:08:36+09:00"
 description: "数学の限界を示した歴史的定理、ゲーデルの不完全性定理について、その意味や証明の仕組みを具体例や図解を交えてわかりやすく解説します。"
 categories: ["mathematics", "computer-science"]
 tags:

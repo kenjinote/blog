@@ -1,7 +1,7 @@
 ---
 title: 'Comment l''échelle des logiciels a-t-elle évolué ? L''histoire et l''évolution du nombre de lignes de code source'
 slug: "Code sourceのNombre de lignes"
-date: 2025-04-17T10:33:02+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["code source", "lignes de code"]
 draft: false
 image: "img_1.webp"

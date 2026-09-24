@@ -2,7 +2,7 @@
 title: "Dasar-Dasar Informasi Lokasi: Cara Kerja GPS - Teknologi Ajaib di Mana Teori Relativitas dan Satelit Buatan Bersilangan"
 description: "Mengapa aplikasi peta di ponsel pintar dapat mengetahui lokasi Anda saat ini? Kami akan menjelaskan mekanisme perhitungan waktu yang presisi menggunakan gelombang radio dari satelit GPS yang terbang di luar angkasa dan teori relativitas Einstein."
 slug: "technology-gps"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

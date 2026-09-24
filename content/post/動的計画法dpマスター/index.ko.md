@@ -1,7 +1,7 @@
 ---
 title: '【알고리즘 도해】 동적 계획법(DP) 완벽 마스터하기'
 slug: "dp-algorithm-master-guide"
-date: "2026-09-12T15:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

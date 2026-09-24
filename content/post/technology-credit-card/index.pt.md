@@ -2,7 +2,7 @@
 title: "Rede Financeira: O Mecanismo do Pagamento com Cartão de Crédito - Tecnologia da Autorização à Liquidação"
 description: "No momento em que o cartão é escaneado na loja, que tipo de comunicação de dados ocorre nos bastidores? Explicamos o mecanismo de 'autorização' e 'liquidação' que sustenta a rede global de pagamentos."
 slug: "technology-credit-card"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

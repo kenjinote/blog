@@ -2,7 +2,7 @@
 title: "情報理論とシャノンのエントロピー：データ圧縮と通信の限界を探る"
 description: "クロード・シャノンが提唱した情報理論の基礎から、エントロピーの概念、データ圧縮の限界、そして現代通信への応用までを詳細に解説します。"
 slug: information-theory-shannon-entropy
-date: 2026-09-21T02:45:54+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - computer-science

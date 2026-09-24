@@ -2,7 +2,7 @@
 title: "介值定理與均值定理：源自連續函數與導數直觀性質的強大證明工具"
 description: "本文深入探討了微積分的基礎支撐——「介值定理」與「均值定理」，從直觀意義到嚴格的數學證明，再到其廣泛的應用實例。"
 slug: "intermediate-and-mean-value-theorem"
-date: "2026-09-20T14:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["數學"]
 tags: ["微積分", "定理", "數學證明"]

@@ -1,7 +1,7 @@
 ---
 title: "從宇宙回來後弟弟比自己還老？：雙子悖論"
 description: "愛因斯坦相對論預言的「時間膨脹」。解說搭乘接近光速的火箭旅行的雙胞胎哥哥，與留在地球的弟弟年齡逆轉的悖論。"
-date: 2026-09-10T21:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 slug: "twin-paradox"
 image: "img/twin_paradox.jpg"

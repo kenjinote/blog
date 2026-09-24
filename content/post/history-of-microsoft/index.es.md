@@ -2,7 +2,7 @@
 title: "Historia de Microsoft: El amanecer del PC, la hegemonía de Windows y la adaptación a la era de la nube y la IA"
 description: "La historia de Microsoft, desde Windows hasta Azure y la alianza con OpenAI"
 slug: "history-of-microsoft"
-date: "2026-09-23T00:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

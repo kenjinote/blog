@@ -2,7 +2,7 @@
 title: "Network Technology: A Technical Guide to HTTPS - How Encryption and Public Key Infrastructure (PKI) Work"
 description: "We can shop online securely thanks to 'HTTPS'. We explain the encryption technologies that prevent eavesdropping and tampering, and the complex mathematical processing that SSL/TLS performs behind the scenes."
 slug: "history-of-https"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

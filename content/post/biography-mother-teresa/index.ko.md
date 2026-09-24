@@ -1,6 +1,6 @@
 ---
 title: "'가장 가난한 사람들 중의 가장 가난한 사람'에게 바친 생애: 마더 테레사의 발자취와 철학"
-date: 2026-09-23T19:46:04+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["mother-teresa", "history"]
 image: "eyecatch.jpg"

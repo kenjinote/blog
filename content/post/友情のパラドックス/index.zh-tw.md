@@ -1,7 +1,7 @@
 ---
 title: "你的朋友比你擁有更多朋友：友誼悖論"
 description: "「我是不是朋友很少？」你不需要為此苦惱。因為這是在數學上被證明的網絡特性。"
-date: 2026-09-10T21:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 slug: "friendship-paradox"
 image: "img/friendship_paradox.jpg"

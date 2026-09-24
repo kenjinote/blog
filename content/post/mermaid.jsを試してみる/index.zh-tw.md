@@ -1,7 +1,7 @@
 ---
 title: '什麼是 Mermaid.js？導入 Hugo 並繪製圖表的方法'
 slug: "mermaid.jsを試してみる"
-date: 2024-05-25T02:18:09+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["mermaid.js"]
 draft: false
 mermaid: true

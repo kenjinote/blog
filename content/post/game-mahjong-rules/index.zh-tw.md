@@ -2,7 +2,7 @@
 title: "桌上遊戲的極致：麻將的基本規則與役的解說 - 4人交織的情報戰"
 description: "由136張牌交織而成的東方知性桌上遊戲「麻將」。我們將解說這款運氣與實力達到絕妙平衡的遊戲之基本結構、面子與雀頭的組成方法，以及具代表性的「役」。"
 slug: "game-mahjong-rules"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

@@ -2,7 +2,7 @@
 title: "A Definição ε-δ (Épsilon-Delta): O Fundamento Rigoroso dos Limites e Por Que 'Aproximar' Não É Suficiente"
 description: "Uma explicação detalhada da definição épsilon-delta de limites, cobrindo seu contexto histórico, provas práticas e uma analogia intuitiva de jogo para explicar por que as definições intuitivas falham."
 slug: "epsilon-delta-definition"
-date: "2026-09-20T14:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "Matemática"

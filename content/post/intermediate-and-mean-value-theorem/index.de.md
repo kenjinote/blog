@@ -2,7 +2,7 @@
 title: "Der Zwischenwertsatz und der Mittelwertsatz: Leistungsstarke Beweiswerkzeuge aus den intuitiven Eigenschaften stetiger Funktionen und Ableitungen"
 description: "Eine ausführliche Erklärung des Zwischenwertsatzes und des Mittelwertsatzes, welche die Grundlage der Analysis bilden. Wir untersuchen ihre intuitiven Bedeutungen, strenge mathematische Beweise und Anwendungen."
 slug: "intermediate-and-mean-value-theorem"
-date: "2026-09-20T14:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematik"]
 tags: ["analysis", "sätze", "mathematische-beweise"]

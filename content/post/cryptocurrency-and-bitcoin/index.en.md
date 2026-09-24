@@ -2,7 +2,7 @@
 title: "Cryptocurrency and Bitcoin: Their History, Mathematical Foundations, and Future"
 description: "A comprehensive guide explaining the technical and mathematical mechanisms behind Bitcoin and cryptocurrencies. Covers SHA-256, elliptic curve cryptography, UTXO, and scalability issues."
 slug: "cryptocurrency-and-bitcoin"
-date: "2026-09-20T23:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["technology", "mathematics"]
 tags: ["bitcoin", "cryptography", "blockchain"]

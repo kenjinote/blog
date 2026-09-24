@@ -1,7 +1,7 @@
 ---
 title: '【Für Anfänger】Wie man ganz einfach eine Remote-Desktop-Verbindung mit TeamViewer herstellt'
 slug: "TeamViewerで簡単Remoteverbindung"
-date: 2023-01-13T01:45:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["TeamViewer", "Befehl", "Remoteverbindung"]
 draft: false
 image: "img.webp"

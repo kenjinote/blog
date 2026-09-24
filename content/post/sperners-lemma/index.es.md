@@ -2,7 +2,7 @@
 title: "El Lema de Sperner: De Colorear Triángulos a Pruebas de Existencia"
 description: "Explicación de cómo colorear vértices según reglas de frontera garantiza la aparición de pequeños triángulos de 3 colores. Esto sirve como puente hacia los teoremas de punto fijo."
 slug: "sperners-lemma"
-date: "2026-09-20T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["matemáticas"]
 tags: ["topología", "combinatoria", "teorema-del-punto-fijo"]

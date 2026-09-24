@@ -2,7 +2,7 @@
 title: "Karl Weierstrass : Le père de l'analyse moderne et sa vie"
 description: "Une explication détaillée de la vie turbulente et des grandes réalisations (définition epsilon-delta, fonction de Weierstrass, etc.) de Karl Weierstrass, connu comme le 'père de l'analyse moderne'."
 slug: "weierstrass"
-date: "2026-09-20T19:40:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathématiques", "Biographie"]
 tags: ["Maths", "Weierstrass", "Analyse", "Histoire"]

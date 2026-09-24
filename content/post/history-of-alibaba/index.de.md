@@ -2,7 +2,7 @@
 title: "Geschichte von Alibaba: Die chinesische E-Commerce-Revolution und der Aufbau eines digitalen Ökosystems"
 description: "Wie Jack Ma den Einzelhandel und den Zahlungsverkehr in China transformierte und ein riesiges digitales Ökosystem aufbaute."
 slug: "history-of-alibaba"
-date: "2026-09-23T01:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

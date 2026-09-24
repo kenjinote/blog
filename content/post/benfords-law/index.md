@@ -2,7 +2,7 @@
 title: "ベンフォードの法則：1から始まる数字が多いのはなぜか？"
 description: "不正経理の発見にも使われる、自然界のデータに潜む不思議な法則を解説します"
 slug: "benfords-law"
-date: "2026-09-15T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

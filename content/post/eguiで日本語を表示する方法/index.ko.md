@@ -4,7 +4,7 @@
 
 title: 'Rust의 GUI 라이브러리 ''egui''에서 일본어 폰트를 불러와 표시하는 방법'
 slug: "eguiで일본어を表示する方法"
-date: 2023-04-01T03:17:52+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["rsut", "egui", "GUI 라이브러리", "일본어"]
 draft: false
 image: "img.webp"

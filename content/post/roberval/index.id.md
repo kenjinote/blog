@@ -2,7 +2,7 @@
 title: "Gilles Personne de Roberval: Pelopor Indivisibles dan Geometri Kinematika"
 description: "Gilles Personne de Roberval adalah salah satu matematikawan Prancis terkemuka pada abad ke-17. Aktif menjelang penemuan kalkulus, kita mendalami kehidupan dan pencapaiannya, termasuk metode indivisibles, perhitungan luas sikloid, garis singgung kinematika, dan penemuan 'timbangan Roberval'."
 slug: "roberval"
-date: "2026-09-20T18:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matematika"

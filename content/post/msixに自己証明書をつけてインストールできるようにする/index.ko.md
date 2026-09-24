@@ -9,7 +9,7 @@
 
 title: 'Windows 앱 개발자 필독! MSIX에 자체 인증서를 추가하여 로컬 설치하는 방법'
 slug: "msixに자체 서명 인증서をつけて설치できるようにする"
-date: 2025-08-30T04:18:04+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["msix", "자체 서명 인증서", "설치"]
 draft: false
 image: "img.webp"

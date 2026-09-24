@@ -1,7 +1,7 @@
 ---
 title: "新蓋了道路，為什麼塞車反而變嚴重了？：布雷斯悖論"
 description: "為了解決交通擁塞而建設了新的外環道，結果卻導致所有人的通勤時間變長的網路理論奇妙悖論。"
-date: 2026-09-10T21:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 slug: "braess-paradox"
 image: "img/braess_paradox.jpg"

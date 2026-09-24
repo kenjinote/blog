@@ -2,7 +2,7 @@
 title: "Fundamentos de la Teoría de Grafos: Representando Redes con Puntos y Líneas, una Herramienta Esencial en la Sociedad Moderna"
 description: "Una guía completa sobre los fundamentos de la teoría de grafos. Desde los puentes de Königsberg hasta el algoritmo de Dijkstra, implementaciones en Python y aplicaciones modernas en aprendizaje automático, exploremos las matemáticas de las redes."
 slug: "basics-of-graph-theory"
-date: "2026-09-20T15:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matemáticas"

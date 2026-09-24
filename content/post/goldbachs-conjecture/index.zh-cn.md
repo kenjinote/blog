@@ -2,7 +2,7 @@
 title: "哥德巴赫猜想 - 所有大于2的偶数都能表示为两个素数之和吗？"
 description: "详细解释数学中最著名的未解决问题之一的“哥德巴赫猜想”，涵盖其历史、意义以及在现代数学中的地位。"
 slug: "goldbachs-conjecture"
-date: "2026-09-14T13:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "unsolved-problems"]
 tags:

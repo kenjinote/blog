@@ -1,7 +1,7 @@
 ---
 title: '개발 효율을 극대화하는 멀티 디스플레이 배치와 최적의 솔루션'
 slug: "multi-display-monitor-setup-optimization-for-devs"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

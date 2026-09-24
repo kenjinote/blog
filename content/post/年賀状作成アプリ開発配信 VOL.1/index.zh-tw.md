@@ -1,7 +1,7 @@
 ---
 title: '【C++】賀年卡製作應用程式開發直播 VOL.1：環境建置與Direct2D初始化'
 slug: "年賀状作成應用程式開発配信 VOL.1"
-date: 2025-08-31T20:24:49+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["賀年卡製作應用程式開發實況", "YouTube"]
 draft: false
 image: "img.webp"

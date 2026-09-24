@@ -1,7 +1,7 @@
 ---
 title: 'Windows 應用程式開發者必看！為 MSIX 附加自我簽署憑證並進行本機安裝的方法'
 slug: "msixに自我簽署憑證をつけて安裝できるようにする"
-date: 2025-08-30T04:18:04+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["msix", "自簽憑證", "安裝"]
 draft: false
 image: "img.webp"

@@ -2,7 +2,7 @@
 title: "История Meta (бывшего Facebook): От создания соцсетей до освоения пространства метавселенной"
 description: "Путь от империи соцсетей к метавселенной и ИИ"
 slug: "history-of-meta-facebook"
-date: "2026-09-23T00:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

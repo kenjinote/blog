@@ -1,7 +1,7 @@
 ---
 title: '[WinHTTP] Comment publier des messages sur Slack via Webhook depuis C++ (Win32 API)'
 slug: "C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】"
-date: 2025-07-16T19:42:56+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["C++", "API Win32", "WinHTTP", "Slack", "Webhook"]
 draft: false
 image: "img.webp"

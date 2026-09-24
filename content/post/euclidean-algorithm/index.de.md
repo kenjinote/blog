@@ -2,7 +2,7 @@
 title: "Der euklidische Algorithmus: Schnelle GCD-Berechnung und der älteste Algorithmus der Menschheit aus der Antike"
 description: "Ein umfassender Leitfaden zum euklidischen Algorithmus zur Berechnung des größten gemeinsamen Teilers (ggT), der seine Funktionsweise, Implementierung, Komplexität, den Satz von Lamé, den erweiterten euklidischen Algorithmus und seine Anwendungen in der RSA-Kryptographie abdeckt."
 slug: "euclidean-algorithm"
-date: 2026-09-20T15:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]

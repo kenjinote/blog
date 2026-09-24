@@ -1,5 +1,6 @@
 ---
 title: "Ada Lovelace: The Complete Story of the \"World's First Programmer\" Who Foresaw the Future of Computers"
+date: "2026-09-24T16:08:36+09:00"
 description: "Ada Lovelace, born as the daughter of the poet Byron, wrote the first program in history for Charles Babbage's \"Analytical Engine\". We dive deep into her life, mathematical talent, and the astonishing foresight that allowed her to see the true potential of computers already in the 19th century, in this detailed commentary of several thousand words."
 slug: "biography-ada-lovelace"
 categories: ["biography"]

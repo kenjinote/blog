@@ -9,7 +9,7 @@
 
 title: '¿Cuál es la verdadera estructura matemática de la Criba General del Cuerpo de Números (GNFS)? El mecanismo de factorización de enteros mediante homomorfismos'
 slug: "一般数体篩法（GNFS）の真のMatemáticas的構造"
-date: 2026-09-05T02:26:13+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Matemáticas", "Criptografía", "RSA", "GNFS"]
 draft: false
 image: "rsa_encryption_break_1788542156523.webp"

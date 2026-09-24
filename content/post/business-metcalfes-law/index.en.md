@@ -1,5 +1,6 @@
 ---
 title: "What is 'Metcalfe's Law' Governing Network Value? A Comprehensive Guide to Using It in Business Strategy"
+date: "2026-09-24T16:08:36+09:00"
 description: "Metcalfe's Law states that 'the value of a network is proportional to the square of the number of users.' We delve deeply into the essence of network effects, the secret to the growth of SNS and platform businesses, the history of the law, its mathematical background, and its applications and limitations in modern business."
 slug: "business-metcalfes-law"
 categories: ["business"]

@@ -2,7 +2,7 @@
 title: "テーブルゲームの極致: 麻雀の基本ルールと役の解説 - 4人で織りなす情報戦"
 description: "136枚の牌が織りなす東洋の知的なテーブルゲーム「麻雀」。運と実力のバランスが絶妙なこのゲームの基本構造、メンツとアタマの作り方、そして代表的な「役」について解説します。"
 slug: "game-mahjong-rules"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

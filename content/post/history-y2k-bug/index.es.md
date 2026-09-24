@@ -1,5 +1,6 @@
 ---
 title: "La verdad sobre el problema Y2K y el drama de depuración: La batalla de los programadores anónimos que salvaron el mundo"
+date: "2026-09-24T16:08:36+09:00"
 description: "A finales de 1999, el mundo entero entró en pánico por el \"Problema Y2K\" (el error del año 2000). ¿Fue solo sensacionalismo de los medios? No, hubo un feroz drama de depuración de programadores que lucharon día y noche con el código para prevenir el colapso de los sistemas en todo el mundo. Nos acercamos a la verdad de aquel entonces."
 slug: "history-y2k-bug"
 categories: ["history"]

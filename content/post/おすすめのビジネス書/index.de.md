@@ -1,7 +1,7 @@
 ---
 title: 'Lebensverändernd! Zusammenfassung von Meisterwerken und empfohlenen Wirtschaftsbüchern, die man unbedingt gelesen haben muss'
 slug: "EmpfehlungのWirtschaftsbuch"
-date: 2023-03-19T18:13:14+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Wirtschaftsbücher", "Bücher"]
 draft: false
 image: "img.webp"

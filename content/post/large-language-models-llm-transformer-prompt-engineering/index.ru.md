@@ -2,7 +2,7 @@
 title: "Механизмы LLM (больших языковых моделей) и их применение в программировании (модель Transformer, инженерия промптов)"
 description: "Подробно разбираем математические механизмы архитектуры Transformer, лежащей в основе больших языковых моделей (LLM), продвинутые методы инженерии промптов и их практическое применение в программировании."
 slug: "large-language-models-llm-transformer-prompt-engineering"
-date: "2026-09-21T14:51:08+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["ai", "llm", "transformer", "prompt-engineering"]

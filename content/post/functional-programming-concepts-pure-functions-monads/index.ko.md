@@ -2,7 +2,7 @@
 title: "함수형 프로그래밍의 기초와 이점 (순수 함수, 불변성, 모나드 개념)"
 description: 함수형 프로그래밍의 패러다임을 깊이 파고들어, 순수 함수, 불변성, 그리고 모나드 개념에서부터 그 이점을 철저히 해설합니다.
 slug: functional-programming-concepts-pure-functions-monads
-date: 2026-09-21T14:51:08+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - 컴퓨터 과학

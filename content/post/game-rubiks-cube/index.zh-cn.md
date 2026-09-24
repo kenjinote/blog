@@ -2,7 +2,7 @@
 title: "谜题算法：魔方的还原方法与算法 - 破解4325京种组合"
 description: "人们往往认为“靠自己还原魔方是不可能的”，但实际上只要记住几个“算法（步骤）”，任何人都能完成六面还原。本文将为您解说群论与数学交织的谜题世界。"
 slug: "game-rubiks-cube"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

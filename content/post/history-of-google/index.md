@@ -2,7 +2,7 @@
 title: "Googleの歴史: 検索エンジンから「AIファースト」企業への進化"
 description: "PageRankからTransformerに至るGoogleの歴史"
 slug: "history-of-google"
-date: "2026-09-23T00:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

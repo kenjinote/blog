@@ -2,7 +2,7 @@
 title: "LLM（大規模言語モデル）の仕組みとプログラミングへの応用（Transformerモデル、プロンプトエンジニアリング）"
 description: "大規模言語モデル（LLM）の根幹をなすTransformerアーキテクチャの数学的メカニズムから、プロンプトエンジニアリングの高度な手法、そして実際のプログラミングへの応用までを徹底的に解説します。"
 slug: "large-language-models-llm-transformer-prompt-engineering"
-date: "2026-09-21T14:51:08+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["ai", "llm", "transformer", "prompt-engineering"]

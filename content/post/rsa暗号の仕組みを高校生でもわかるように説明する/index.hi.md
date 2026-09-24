@@ -1,7 +1,7 @@
 ---
 title: '【गणित व्याख्या】 हाई स्कूल के छात्रों के लिए RSA एन्क्रिप्शन तंत्र की सरल व्याख्या'
 slug: "rsa-encryption-math-explained-for-beginners"
-date: "2026-09-11T13:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

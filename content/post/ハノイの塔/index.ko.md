@@ -9,7 +9,7 @@
 
 title: '[Python 입문] 재귀 처리로 푸는 ''하노이의 탑'' 알고리즘 해설'
 slug: "하노이의 탑"
-date: 2025-04-17T22:23:14+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["하노이의 탑", "알고리즘", "Python"]
 draft: false
 image: "img.webp"

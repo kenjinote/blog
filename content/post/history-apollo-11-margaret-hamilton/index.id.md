@@ -1,5 +1,6 @@
 ---
 title: "Kode yang Membawa Umat Manusia ke Bulan: Margaret Hamilton dan Rekayasa Perangkat Lunak Apollo 11"
+date: "2026-09-24T16:08:36+09:00"
 description: "Pada tahun 1969, Apollo 11 berhasil melakukan pendaratan di bulan pertama bagi umat manusia. Di balik itu, terdapat perangkat lunak tangguh yang dikembangkan oleh Margaret Hamilton dan timnya. Kami akan membahas secara mendalam pencapaiannya yang meletakkan dasar bagi rekayasa perangkat lunak modern, dan keseluruhan kode sumber Apollo Guidance Computer (AGC)."
 slug: "history-apollo-11-margaret-hamilton"
 categories: ["history"]

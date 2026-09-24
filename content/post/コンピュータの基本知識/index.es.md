@@ -9,7 +9,7 @@
 
 title: '¿Cuáles son las 5 grandes unidades de una computadora? Conceptos básicos de hardware y software que todo principiante en TI debe conocer'
 slug: "ComputadoraのConocimiento básico"
-date: 2024-09-19T01:10:20+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Computadora", "Conocimientos básicos"]
 draft: false
 image: "img.webp"

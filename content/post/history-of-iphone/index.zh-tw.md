@@ -2,7 +2,7 @@
 title: "行動革命：iPhone 的歷史 - 重新發明手機並改變世界的裝置"
 description: "從 2007 年史蒂夫·賈伯斯傳奇般的簡報開始的 iPhone 歷史。從消除實體鍵盤到 App Store 的誕生，回顧智慧型手機革命的軌跡。"
 slug: "history-of-iphone"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

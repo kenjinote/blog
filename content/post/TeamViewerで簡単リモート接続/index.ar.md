@@ -1,7 +1,7 @@
 ---
 title: '【للمبتدئين】كيفية الاتصال بسهولة بسطح المكتب البعيد باستخدام TeamViewer'
 slug: "TeamViewerで簡単اتصال عن بعد"
-date: 2023-01-13T01:45:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["TeamViewer", "أوامر", "اتصال عن بعد"]
 draft: false
 image: "img.webp"

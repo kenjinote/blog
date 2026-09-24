@@ -2,7 +2,7 @@
 title: "Strategi Board Game: Aturan Dasar dan Strategi Pembukaan Catur - Perang di Atas Papan untuk Menyudutkan Raja"
 description: "Catur, olahraga asah otak yang paling banyak dimainkan di dunia. Dari dasar pergerakan bidak, penguasaan pusat, rokade, hingga strategi pembukaan (teori) yang umum, kami menjelaskan teori agar pemula bisa menang."
 slug: "game-chess-rules"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

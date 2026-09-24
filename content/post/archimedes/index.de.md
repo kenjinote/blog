@@ -2,7 +2,7 @@
 title: "Das Genie der Antike: Leben und mathematische Errungenschaften des Archimedes"
 description: "Archimedes von Syrakus. Von der 'Heureka'-Episode über die Berechnung von Pi, den Satz von Kugel und Zylinder bis hin zur 'Methode', die den Weg für die Infinitesimalrechnung ebnete – wir beleuchten das Leben und die Errungenschaften des größten Mathematikers und Physikers der Antike."
 slug: "archimedes"
-date: "2026-09-20T18:40:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematik", "Biografie"]
 tags: ["Archimedes", "Antikes Griechenland", "Geometrie", "Physik", "Infinitesimalrechnung"]

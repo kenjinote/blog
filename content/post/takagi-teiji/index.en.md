@@ -2,7 +2,7 @@
 title: 'Teiji Takagi: The World-Class Japanese Mathematician Who Established Class Field Theory'
 description: 'An in-depth look at the life of Teiji Takagi, the father of modern Japanese mathematics, and his great mathematical achievement of establishing Class Field Theory.'
 slug: 'takagi-teiji'
-date: '2026-09-20T19:50:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - 'mathematics'

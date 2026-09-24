@@ -2,7 +2,7 @@
 title: "Алгоритмы поиска (линейный, бинарный поиск и принципы хеш-таблиц)"
 description: "Алгоритмы поиска для нахождения нужного значения в данных. Мы объясним основы линейного и бинарного поиска, а также принципы хеш-таблиц, обеспечивающих быстрый поиск."
 slug: "search-algorithms-linear-binary-hash-table-principles"
-date: 2026-09-22T02:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "search", "binary-search", "hash-table", "data-structures"]

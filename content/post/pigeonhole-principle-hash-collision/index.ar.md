@@ -1,7 +1,7 @@
 ---
 title: "مبدأ جحر الحمام وتصادم التجزئة: كشف حدود وأمان تقنيات التشفير"
 image: "eyecatch.jpg"
-date: "2026-09-14T00:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 description: "كيف يصبح \"مبدأ جحر الحمام\" البديهي المفهوم الأهم في تقنيات التشفير الحديثة وأمان دوال التجزئة. نشرح ذلك بتعمق باستخدام الأمثلة العملية، والصيغ الرياضية، والرسوم التوضيحية."
 categories: ["technology", "cryptography", "mathematics"]
 tags: ["Hash", "Pigeonhole Principle", "Security", "Algorithm", "KaTeX", "Mermaid"]

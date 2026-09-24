@@ -2,7 +2,7 @@
 title: "Sejarah Panasonic: Transformasi Luar Biasa dari Raja Peralatan Rumah Tangga ke Bisnis B2B dan Baterai Otomotif"
 description: "Sejarah Panasonic, yang bertransformasi dari stopkontak cabang dua ciptaan Konosuke Matsushita menjadi produsen baterai otomotif yang mendukung Tesla."
 slug: "history-of-panasonic"
-date: "2026-09-23T01:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

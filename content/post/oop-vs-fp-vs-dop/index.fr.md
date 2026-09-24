@@ -2,7 +2,7 @@
 title: "Programmation orientée objet vs Fonctionnelle vs Orientée données : Limites et fusion des paradigmes"
 description: "Nous approfondissons l'histoire et l'évolution des paradigmes de programmation, les forces et les limites de la POO, de la PF et de la POD, et examinons en détail la « fusion des paradigmes » qui est la solution optimale dans le développement moderne."
 slug: "oop-vs-fp-vs-dop"
-date: "2026-09-21T02:58:35+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["programming", "architecture", "software-engineering"]
 tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]

@@ -2,7 +2,7 @@
 title: "Euclides: El padre de la geometría y su gran legado"
 description: "Una mirada profunda a la vida del antiguo matemático griego Euclides, el impacto de su obra maestra 'Elementos' en las generaciones posteriores y sus logros matemáticos como el algoritmo de Euclides."
 slug: "euclid"
-date: 2026-09-20T18:40:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Matemáticas", "Biografía"]
 tags: ["Euclides", "Geometría", "Historia de las matemáticas", "Antigua Grecia", "Elementos", "Algoritmo de Euclides"]

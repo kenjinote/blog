@@ -1,7 +1,7 @@
 ---
 title: 'Benar-benar Bermanfaat! Rangkuman Pilihan Aplikasi iOS yang Direkomendasikan'
 slug: "RekomendasiiOSAplikasi"
-date: 2024-09-18T23:31:20+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["iOS", "Aplikasi", "Rekomendasi"]
 draft: false
 image: "img.webp"

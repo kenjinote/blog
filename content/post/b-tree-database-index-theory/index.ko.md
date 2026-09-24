@@ -2,7 +2,7 @@
 title: "B-트리와 데이터베이스 인덱스 이론 (왜 DB는 B-Tree를 선택하는가?)"
 description: "데이터베이스 인덱스의 근간을 이루는 B-트리(B-Tree)와 B+트리(B+Tree)의 이론, 데이터 구조, 디스크 I/O와의 관계성, 그리고 왜 RDBMS가 B-트리를 인덱스의 표준으로 계속 채택하고 있는지 수학적 분석과 구현 예시를 통해 깊이 파헤쳐 봅니다."
 slug: "b-tree-database-index-theory"
-date: "2026-09-21T02:45:54+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science", "database"]
 tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]

@@ -1,7 +1,7 @@
 ---
 title: 'Meningkatkan Efisiensi Pengembangan Secara Drastis dengan Menggabungkan Copilot dan AI Lokal'
 slug: "hybrid-ai-development-workflow"
-date: "2026-09-11T21:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

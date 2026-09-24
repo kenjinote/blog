@@ -2,7 +2,7 @@
 title: "Leonhard Euler: The Giant of Mathematics, His Life and Achievements"
 description: "Leonhard Euler, one of the greatest mathematicians in history. A detailed exploration of his dramatic life and immeasurable contributions to mathematics, physics, and astronomy."
 slug: "euler"
-date: "2026-09-20T19:10:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Euler", "History of Mathematics", "Genius", "Physics"]

@@ -1,5 +1,6 @@
 ---
 title: "The Code That Led Humanity to the Moon: Margaret Hamilton and the Software Engineering of Apollo 11"
+date: "2026-09-24T16:08:36+09:00"
 description: "In 1969, Apollo 11 succeeded in humanity's first lunar landing. Behind this was the robust software developed by Margaret Hamilton and her team. We thoroughly explain her achievements, which laid the foundation of modern software engineering, and the full picture of the Apollo Guidance Computer (AGC) source code."
 slug: "history-apollo-11-margaret-hamilton"
 categories: ["history"]

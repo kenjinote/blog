@@ -1,7 +1,7 @@
 ---
 title: "量子コンピュータが実用化される日：2026年の現在地"
 slug: "quantum-computing-2026-current-status"
-date: "2026-09-11T06:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

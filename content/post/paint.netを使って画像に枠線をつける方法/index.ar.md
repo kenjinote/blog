@@ -1,7 +1,7 @@
 ---
 title: 'طريقة وخطوات بسيطة لإضافة إطار للصورة في paint.net'
 slug: "paint.netを使ってصورةにحدودをつける方法"
-date: 2023-04-11T14:31:59+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["paint.net", "إطار", "صورة"]
 draft: false
 image: "img_3.webp"

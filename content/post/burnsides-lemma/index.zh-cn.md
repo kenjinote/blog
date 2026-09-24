@@ -2,7 +2,7 @@
 title: "伯恩赛德引理：如何计算考虑旋转时的图案数量？"
 description: "以项链的配色为例，讲解如何消除由旋转引起的重复图案。这是一篇实用的群论入门指南。"
 slug: "burnsides-lemma"
-date: "2026-09-20T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "mathematics"

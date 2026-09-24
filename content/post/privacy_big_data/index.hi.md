@@ -1,7 +1,7 @@
 ---
 title: 'प्राइवेसी और सुविधा के बीच समझौता: बिग डेटा के युग में व्यक्तिगत जानकारी का भविष्य'
 slug: 'privacy-vs-convenience-big-data'
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true

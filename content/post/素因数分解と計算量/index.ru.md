@@ -1,7 +1,7 @@
 ---
 title: "Пределы факторизации простых чисел и объяснение нотации 'О-большое' (O) для вычислительной сложности"
 slug: "prime-factorization-limits-big-o-notation"
-date: "2026-09-11T23:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

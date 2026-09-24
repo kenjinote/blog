@@ -1,7 +1,7 @@
 ---
 title: 'Ça change la vie ! Résumé des chefs-d''œuvre et livres d''affaires recommandés qu''il faut absolument lire'
 slug: "RecommandationのLivre d'affaires"
-date: 2023-03-19T18:13:14+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Livres d'Affaires", "Livres"]
 draft: false
 image: "img.webp"

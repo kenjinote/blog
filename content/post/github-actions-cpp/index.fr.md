@@ -1,7 +1,7 @@
 ---
 title: 'Construire un pipeline CI/CD pour un projet C++ avec GitHub Actions'
 slug: 'github-actions-cpp-cicd-pipeline'
-date: '2026-09-12T18:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 math: true
 mermaid: true

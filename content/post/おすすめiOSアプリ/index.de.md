@@ -1,7 +1,7 @@
 ---
 title: 'Wirklich nützlich! Eine sorgfältig ausgewählte Zusammenfassung empfohlener iOS-Apps'
 slug: "EmpfehlungiOSApp"
-date: 2024-09-18T23:31:20+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["iOS", "App", "Empfohlen"]
 draft: false
 image: "img.webp"

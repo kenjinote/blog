@@ -2,7 +2,7 @@
 title: 'Sleeping Beauty Paradox: Is the coin probability 1/2 or 1/3? A difficult problem dividing probability theory'
 slug: 'sleeping-beauty-paradox'
 description: '"Now that you are awake, what is the probability that the coin toss resulted in heads?" We explain the latest paradox that continues to divide mathematicians and philosophers worldwide into the "1/2 camp" and the "1/3 camp" despite its very simple setup.'
-date: '2026-09-10T09:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/sleeping_beauty.jpg'
 math: true
 mermaid: true

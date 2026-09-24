@@ -2,7 +2,7 @@
 title: "Isaac Newton : Approche de la vie du génie à travers la découverte du calcul et de la gravitation universelle"
 description: "Une plongée approfondie dans la vie extraordinaire d'Isaac Newton, ses épisodes durant l'Année des Merveilles, et ses découvertes révolutionnaires en mathématiques et en physique."
 slug: "newton"
-date: "2026-09-20T19:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathématiques"

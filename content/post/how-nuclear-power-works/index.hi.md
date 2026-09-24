@@ -2,7 +2,7 @@
 title: "परमाणु बिजलीघर कैसे काम करता है: विखंडन की ऊष्मा से बिजली तक, और बंद होने के बाद भी शीतलन क्यों ज़रूरी है"
 description: "बंधन ऊर्जा, शृंखला अभिक्रिया, विलंबित न्यूट्रॉन, PWR और BWR, टर्बाइन, क्षय ऊष्मा तथा प्रयुक्त ईंधन को इतिहास, आरेखों और गणनाओं के साथ समझें।"
 slug: "how-nuclear-power-works"
-date: "2026-09-24T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.png"
 categories: ["technology", "physics"]
 tags: ["nuclear-power", "nuclear-fission", "energy", "engineering", "history"]

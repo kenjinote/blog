@@ -2,7 +2,7 @@
 title: "इवेंट-ड्रिवन आर्किटेक्चर और मैसेज क्यू (Kafka, RabbitMQ)"
 description: "असिंक्रोनस संचार के माध्यम से सिस्टम के बीच कपलिंग को कम करने वाला इवेंट-ड्रिवन डिज़ाइन, और मैसेज ब्रोकर की भूमिका।"
 slug: "event-driven-architecture-message-queue-kafka-rabbitmq"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

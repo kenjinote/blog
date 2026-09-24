@@ -2,7 +2,7 @@
 title: "Grundlagen und Vorteile der funktionalen Programmierung (Konzepte von reinen Funktionen, Unveränderlichkeit und Monaden)"
 description: Ein tiefer Einblick in das Paradigma der funktionalen Programmierung mit einer umfassenden Erklärung ihrer Vorteile anhand der Konzepte von reinen Funktionen, Unveränderlichkeit und Monaden.
 slug: functional-programming-concepts-pure-functions-monads
-date: 2026-09-21T14:51:08+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - computer-science

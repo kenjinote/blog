@@ -1,5 +1,6 @@
 ---
 title: "Blue Ocean Strategy: The Ultimate Business Theory for Creating Uncontested Market Space"
+date: "2026-09-24T16:08:36+09:00"
 description: "We will thoroughly explain the specific frameworks and practical strategies to escape the red ocean (bloody competitive market) and open up a new market space (blue ocean) without competition."
 slug: "business-blue-ocean-strategy"
 categories: ["business"]

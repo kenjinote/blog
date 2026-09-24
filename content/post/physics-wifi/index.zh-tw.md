@@ -2,7 +2,7 @@
 title: "物理的奧秘：Wi-Fi的運作機制 - 看不見的電波如何傳遞數據"
 description: "連接手機和電腦到網際網路的Wi-Fi。本文將從物理學和通訊工程的角度為您解說，看不見的電波是如何準確且高速地傳遞龐大的數位數據。"
 slug: "physics-wifi"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

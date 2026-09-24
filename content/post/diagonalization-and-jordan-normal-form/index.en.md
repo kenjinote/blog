@@ -2,7 +2,7 @@
 title: "Diagonalization and Jordan Normal Form: The Ultimate Classification Method for Expressing Complex Matrices Simply"
 description: "A detailed explanation of diagonalization in linear algebra and the Jordan normal form for non-diagonalizable matrices, covering intuitive meanings, mathematical definitions, and applications."
 slug: "diagonalization-and-jordan-normal-form"
-date: "2026-09-20T14:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["linear-algebra", "matrix", "eigenvalue", "jordan-normal-form"]

@@ -2,7 +2,7 @@
 title: "OAuth 2.0과 OIDC (OpenID Connect) 완전 해부 (인가와 인증의 차이)"
 description: "OAuth 2.0과 OIDC의 원리, 인증과 인가의 차이, 각종 그랜트 타입을 철저히 해설합니다."
 slug: "oauth2-oidc-authentication-authorization-difference"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

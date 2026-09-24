@@ -1,7 +1,7 @@
 ---
 title: 'PMP 考試基礎知識與備考總結：對應 PMBOK 第 7 版'
 slug: "PMP學習"
-date: 2024-02-04T18:41:31+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["PMP", "PMBOK", "學習"]
 draft: false
 image: "img.webp"

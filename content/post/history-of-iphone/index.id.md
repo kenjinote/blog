@@ -2,7 +2,7 @@
 title: "Revolusi Seluler: Sejarah iPhone - Perangkat yang Menemukan Kembali Telepon dan Mengubah Dunia"
 description: "Sejarah iPhone yang dimulai dari presentasi legendaris Steve Jobs pada tahun 2007. Menilik kembali jejak revolusi ponsel pintar, mulai dari penghapusan keyboard fisik hingga lahirnya App Store."
 slug: "history-of-iphone"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

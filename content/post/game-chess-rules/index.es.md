@@ -2,7 +2,7 @@
 title: "Estrategia de juegos de mesa: Reglas básicas de ajedrez y estrategias de apertura - La guerra en el tablero para arrinconar al rey"
 description: "El ajedrez es el deporte mental más jugado del mundo. Explicamos la teoría para que los principiantes ganen, desde los movimientos básicos de las piezas hasta el control del centro, el enroque y las estrategias de apertura (teoría) representativas."
 slug: "game-chess-rules"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

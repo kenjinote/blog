@@ -2,7 +2,7 @@
 title: "Fundamentos da Criptografia Moderna (Criptografia de Chave Pública, Funções Hash, Assinatura Digital)"
 description: "Uma explicação completa sobre o funcionamento da criptografia moderna, desde chaves simétricas e públicas até hashes e assinaturas digitais."
 slug: "modern-cryptography-public-key-hash-signature"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

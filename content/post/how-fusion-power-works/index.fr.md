@@ -2,7 +2,7 @@
 title: "Comment fonctionne la fusion nucléaire : de l'énergie des étoiles à l'électricité"
 description: "Réactions deutérium-tritium, confinement du plasma, tokamaks, stellarators, lasers, bilan énergétique et cycle du combustible : comprendre les principes et les défis d'une centrale à fusion."
 slug: "how-fusion-power-works"
-date: "2026-09-24T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.png"
 categories: ["technology", "physics"]
 tags: ["nuclear-fusion", "energy", "plasma", "engineering", "history"]

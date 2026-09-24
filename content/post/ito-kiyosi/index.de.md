@@ -2,7 +2,7 @@
 title: "Kiyosi Ito: Der Vater der stochastischen Differentialgleichungen und die Mathematik hinter den modernen Finanzen"
 description: "Ein tiefer Einblick in das Leben von Kiyosi Ito, bekannt für das Lemma von Ito, seine Errungenschaften in der stochastischen Analysis und seinen Einfluss auf die moderne Gesellschaft."
 slug: "ito-kiyosi"
-date: "2026-09-20T20:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Kiyosi Ito", "Stochastische Differentialgleichungen", "Finanzmathematik", "Geschichte der Mathematik"]

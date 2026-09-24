@@ -2,7 +2,7 @@
 title: '使用Rust爆速开发CLI工具的教程'
 description: '这是使用Rust开发高速且安全的CLI工具的完整教程。我们将充分利用clap、tokio、serde等库来构建实用的工具。'
 slug: "rust-cli-tool-fast-development-tutorial"
-date: "2026-09-12T13:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

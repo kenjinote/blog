@@ -2,7 +2,7 @@
 title: "ジップの法則（Zipf's Law） - 単語の出現頻度から都市の人口までを支配する「べき乗則」"
 description: "自然言語から都市の規模、経済まで、世界を支配する驚くべき数学的法則「ジップの法則」について、数式と図解を用いて深く掘り下げます。"
 slug: "zipfs-law"
-date: "2026-09-14T13:20:38+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "data-science", "linguistics"]
 tags:

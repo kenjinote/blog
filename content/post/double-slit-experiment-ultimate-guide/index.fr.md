@@ -1,7 +1,7 @@
 ---
 title: '[Guide Complet] Explication approfondie et claire du plus grand mystère de la mécanique quantique : « L''expérience des fentes de Young »'
 slug: "double-slit-experiment-ultimate-guide"
-date: "2026-09-08T01:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Physique", "Mécanique quantique", "Expérience de la double fente", "Équation de Schrödinger"]
 categories: ["physics-science"]
 math: true

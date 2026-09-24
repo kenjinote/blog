@@ -2,7 +2,7 @@
 title: "Srinivasa Ramanujan : Le Mathématicien Génial Qui Saisit l'Infini par l'Intuition"
 description: "Une explication approfondie de la vie du génie mathématique indien Srinivasa Ramanujan et de ses réalisations exceptionnelles telles que le nombre de taxi et les formules pour pi. Nous explorons également l'impact de son intuition sur les mathématiques et la physique modernes."
 slug: "ramanujan"
-date: "2026-09-20T20:10:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathématiques"

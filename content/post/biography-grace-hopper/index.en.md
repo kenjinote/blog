@@ -1,5 +1,6 @@
 ---
 title: "Grace Hopper: The Life and Legacy of the \"Mother of COBOL\" Who Pioneered the Future of Programming"
+date: "2026-09-24T16:08:36+09:00"
 description: "Rear Admiral Grace Hopper of the US Navy, known as the \"Mother of COBOL\". From the invention of the compiler to the discovery of the first computer bug, we thoroughly explain the turbulent life and great achievements of the woman who laid the foundation for modern IT society."
 slug: "biography-grace-hopper"
 categories: ["biography"]

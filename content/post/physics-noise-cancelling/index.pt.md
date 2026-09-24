@@ -2,7 +2,7 @@
 title: "Mistérios da Física: Cancelamento de Ruído - Interferência de Ondas que Cancela Som com Som"
 description: "O 'cancelamento de ruído', onde o ruído ambiente desaparece apenas ao colocar fones de ouvido. Explicaremos profundamente o princípio de 'interferência de ondas' da física por trás disso e a história tecnológica."
 slug: "physics-noise-cancelling"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

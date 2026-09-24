@@ -1,7 +1,7 @@
 ---
 title: "マクスウェルの悪魔：物理学の常識を破る「情報」のエネルギー"
 image: "eyecatch.jpg"
-date: 2026-09-14T00:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 description: "熱力学第二法則を打ち破るかのように見える思考実験「マクスウェルの悪魔」。そのパラドックスがいかにして「情報の物理学」によって解明されたのか、数式と図解を交えて詳しく解説します。"
 categories: ["physics", "information-theory"]
 tags: ["Thermodynamics", "Maxwell's Demon", "Entropy", "Landauer's Principle"]

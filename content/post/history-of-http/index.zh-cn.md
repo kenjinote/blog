@@ -2,7 +2,7 @@
 title: "网络技术：HTTP 技术解析 - 支撑 Web 的无状态协议"
 description: "在我们每天浏览的网站背后运作的“HTTP”。本文将讲解一个单纯的文本传输协议是如何演变成现代丰富应用程序基础架构的。"
 slug: "history-of-http"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

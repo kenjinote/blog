@@ -1,7 +1,7 @@
 ---
 title: 'Git初學者容易犯的錯誤與解決指令集（解決衝突等）'
 slug: "git-beginners-mistakes-and-solutions"
-date: "2026-09-12T17:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

@@ -2,7 +2,7 @@
 title: "The Internet of Things: How IoT Works - Behind the Scenes of a Connected World"
 description: "From home appliances and automobiles to factory machinery, the 'IoT (Internet of Things)' connects all sorts of things to the internet. We explain how sensor technology and communication networks gather data and collaborate with AI to create value."
 slug: "technology-iot"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -1,5 +1,6 @@
 ---
 title: "Richard Feynman: Sosok Penuh Rasa Ingin Tahu yang Menyingkap Kebenaran Alam Semesta dan Cara Hidup Manusia"
+date: "2026-09-24T16:08:36+09:00"
 description: "Peraih Hadiah Nobel Fisika, Richard Feynman. Mulai dari perumusan elektrodinamika kuantum, investigasi kecelakaan pesawat ulang-alik Challenger, hingga keahliannya membobol brankas dan bermain bongo. Artikel ini membahas secara mendalam kehidupannya yang luar biasa, penuh dengan rasa ingin tahu yang tak berkesudahan dan \"kesenangan dalam menemukan sesuatu\"."
 slug: "biography-richard-feynman"
 categories: ["biography"]

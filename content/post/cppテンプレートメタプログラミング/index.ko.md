@@ -1,7 +1,7 @@
 ---
 title: 'C++ 템플릿 메타프로그래밍으로 컴파일 타임 연산 수행하기'
 slug: "cpp-template-metaprogramming-compile-time-computation"
-date: "2026-09-12T14:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

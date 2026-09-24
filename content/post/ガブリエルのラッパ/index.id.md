@@ -1,7 +1,7 @@
 ---
 title: "Bisa Diisi Cat, Tapi Permukaannya Tidak Bisa Dicat?: Terompet Gabriel"
 description: "Paradoks bangun ruang aneh yang dihasilkan oleh kalkulus, memiliki 'volume berhingga' dan 'luas permukaan tak terhingga' secara bersamaan."
-date: 2026-09-10T21:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 slug: "gabriels-horn"
 image: "img/gabriels_horn.jpg"

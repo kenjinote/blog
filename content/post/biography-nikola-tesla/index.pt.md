@@ -1,5 +1,6 @@
 ---
 title: "Nikola Tesla: O Futuro Desenhado pela Corrente Alternada e o Sistema Mundial"
+date: "2026-09-24T16:08:36+09:00"
 description: "Exploramos a fundo a vida do gênio inventor Nikola Tesla, a \"Guerra das Correntes\" com Edison, e seu grandioso sonho inacabado do \"Sistema Mundial\", com contexto tecnológico."
 slug: "biography-nikola-tesla"
 categories: ["biography"]

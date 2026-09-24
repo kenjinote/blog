@@ -2,7 +2,7 @@
 title: "物件導向 vs 函數式 vs 資料導向：典範的極限與融合"
 description: "深入探討程式設計典範的歷史與演進，OOP、FP、DOP各自的優勢與極限，並徹底考察現代開發中的最佳解答「典範的融合」。"
 slug: "oop-vs-fp-vs-dop"
-date: "2026-09-21T02:58:35+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["programming", "architecture", "software-engineering"]
 tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]

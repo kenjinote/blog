@@ -2,7 +2,7 @@
 title: "Network Technology: The History and Mechanism of TCP/IP - The Global Standard Rules Connecting the Internet"
 description: "Why can all computers around the world communicate with each other regardless of differences in manufacturers or OS? We unravel the philosophy and history of the 'TCP/IP' protocol suite, which forms the foundation of the Internet."
 slug: "network-tcp-ip"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

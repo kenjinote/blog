@@ -2,7 +2,7 @@
 title: "Marin Mersenne: Pos-Kotak Eropa Abad ke-17 dan Bapak Bilangan Prima Mersenne"
 description: "Pandangan mendalam tentang kehidupan Marin Mersenne, interaksinya dengan Descartes dan Fermat, serta pencapaian matematika dan ilmiahnya dalam bilangan prima Mersenne dan akustik."
 slug: "mersenne"
-date: "2026-09-20T18:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matematika"

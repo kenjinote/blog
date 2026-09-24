@@ -1,7 +1,7 @@
 ---
 title: '使用靜態網站產生器Hugo開始寫部落格了！記錄日常與技術筆記'
 slug: "部落格、はじめてみました"
-date: 2022-09-02T07:23:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["雜記"]
 draft: false
 image: "images/komeda.webp"

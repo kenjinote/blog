@@ -1,6 +1,6 @@
 ---
 categories: ["biography"]
-date: 2026-09-23T19:18:01+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 tags: ["marc-andreessen", "history"]
 title: "インターネットの黎明期から未来を創る男：マーク・アンドリーセンの生涯と哲学"

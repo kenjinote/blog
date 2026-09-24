@@ -2,7 +2,7 @@
 title: "核融合発電の仕組み：太陽の反応を、地上で使える電力に変えるには"
 description: "重水素・三重水素の反応からプラズマの閉じ込め、トカマクとステラレーター、レーザー核融合、エネルギー利得、燃料増殖、材料と発電設備まで。核融合の科学と実用化の課題を図解と計算で解説します。"
 slug: "how-fusion-power-works"
-date: "2026-09-24T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.png"
 categories: ["technology", "physics"]
 tags: ["nuclear-fusion", "energy", "plasma", "engineering", "history"]

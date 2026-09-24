@@ -2,7 +2,7 @@
 title: "Lambda演算与函数式编程的起源：从阿隆佐·邱奇的理论到Lisp、Haskell"
 description: "计算的基础理论Lambda演算，是如何发展成现代的函数式编程语言的。本文将深入讲解从阿隆佐·邱奇的理论到Lisp、Haskell诞生的历史与数学基础。"
 slug: lambda-calculus-functional-programming
-date: 2026-09-21T02:35:46+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - 计算机科学

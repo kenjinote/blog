@@ -2,7 +2,7 @@
 title: "Technologie Réseau : La transformation d'IPv4 à IPv6 et l'Internet de nouvelle génération"
 description: "L'adresse IP, qui est l'adresse de l'Internet. Nous expliquons comment l'IPv4, qui ne comptait que 4,3 milliards d'adresses, a surmonté la crise d'épuisement et migre vers l'IPv6 avec son espace infini."
 slug: "history-of-ipv6"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

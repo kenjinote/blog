@@ -1,5 +1,6 @@
 ---
 title: "Otak Iblis: John von Neumann dan Fondasi Masyarakat Modern"
+date: "2026-09-24T16:08:36+09:00"
 description: "Penjelasan mendalam tentang kehidupan dan pencapaian luar biasa John von Neumann, kejeniusan terbesar abad ke-20, yang dikenal sebagai \"Otak Iblis\", yang meletakkan fondasi masyarakat modern dalam matematika, mekanika kuantum, teori permainan, ilmu komputer, dan pengembangan bom atom."
 slug: "biography-john-von-neumann"
 categories: ["biography"]

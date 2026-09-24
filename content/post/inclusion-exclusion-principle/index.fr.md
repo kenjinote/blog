@@ -2,7 +2,7 @@
 title: "Principe d'inclusion-exclusion : Une technique puissante pour compter correctement les éléments d'ensembles qui se chevauchent"
 description: "Un guide approfondi sur le principe d'inclusion-exclusion, un outil mathématique essentiel pour compter avec précision les éléments de multiples ensembles qui se chevauchent sans duplication. Nous expliquons tout, du cas de base à 2 ensembles jusqu'au cas général à n ensembles, avec des exemples, des preuves et des applications."
 slug: "inclusion-exclusion-principle"
-date: "2026-09-20T15:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathématiques"

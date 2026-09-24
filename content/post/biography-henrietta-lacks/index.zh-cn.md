@@ -1,5 +1,6 @@
 ---
 title: "海莉耶塔·拉克斯与不死的HeLa细胞：塑造现代医学的不为人知的故事"
+date: "2026-09-24T16:08:36+09:00"
 description: "深入了解现代医疗与生物学中不可或缺的“HeLa细胞”。详细解读其原始主人海莉耶塔·拉克斯的一生、科学突破，以及对生命伦理的深远影响。"
 slug: "biography-henrietta-lacks"
 categories: ["biography"]

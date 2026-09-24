@@ -2,7 +2,7 @@
 title: "Hukum Bilangan Besar - Mengapa Kasino Selalu Menang dan Bagaimana Probabilitas Konvergen"
 description: "Penjelasan tentang Hukum Bilangan Besar, teorema penting dalam teori probabilitas. Kami mendalami struktur keuntungan kasino dan definisi matematis yang ketat (hukum lemah dan kuat), dengan diagram dan kode Python."
 slug: "law-of-large-numbers"
-date: 2026-09-14
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["matematika", "ilmu-data", "perjudian"]
 tags:

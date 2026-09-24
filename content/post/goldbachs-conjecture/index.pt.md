@@ -2,7 +2,7 @@
 title: "Conjectura de Goldbach - Todo número par maior que 2 pode ser expresso como a soma de dois primos?"
 description: "Uma explicação detalhada da 'Conjectura de Goldbach', um dos problemas não resolvidos mais famosos da matemática, cobrindo sua história, significado e importância na matemática moderna."
 slug: "goldbachs-conjecture"
-date: "2026-09-14T13:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "unsolved-problems"]
 tags:

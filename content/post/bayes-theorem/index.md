@@ -2,7 +2,7 @@
 title: "ベイズの定理：「新しい証拠」で確率をアップデートする、AIと統計の核"
 description: "ベイズの定理がどのようにして新しい証拠に基づいて確率を更新するのか、その数理的背景とAI（人工知能）や機械学習での応用について深く解説します。"
 slug: "bayes-theorem"
-date: "2026-09-20T15:15:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

@@ -2,7 +2,7 @@
 title: "B-Tree 與資料庫索引理論（為什麼 DB 選擇 B-Tree？）"
 description: "深入探討資料庫索引核心的 B-Tree 與 B+Tree 理論、資料結構、與磁碟 I/O 的關係，以及為什麼 RDBMS 持續採用 B-Tree 作為索引標準，並結合數學分析與實作範例。"
 slug: "b-tree-database-index-theory"
-date: "2026-09-21T02:45:54+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science", "database"]
 tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]

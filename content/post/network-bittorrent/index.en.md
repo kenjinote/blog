@@ -2,7 +2,7 @@
 title: "Network Technology: Technical Explanation of BitTorrent - The Mechanism for Efficiently Distributing Massive Files"
 description: "Even when tens of thousands of people download a multi-gigabyte OS image simultaneously, the server doesn't go down. We explain the innovative file splitting and data exchange algorithms of the P2P masterpiece, 'BitTorrent'."
 slug: "network-bittorrent"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -2,7 +2,7 @@
 title: "留数定理：使用复平面上的“奇点”巧妙求解复杂实积分的方法"
 description: "详细介绍如何使用复分析的亮点——留数定理，惊人地简化和计算困难的实数定积分。同时涵盖分支切割和钥匙孔积分。"
 slug: "residue-theorem"
-date: "2026-09-20T14:40:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["复分析", "微积分", "数学"]

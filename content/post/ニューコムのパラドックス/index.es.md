@@ -2,7 +2,7 @@
 title: 'La Paradoja de Newcomb: ¿Puedes vencer a un superhumano que ve el futuro?'
 slug: 'newcombs-paradox'
 description: '“Una caja transparente con 100.000 yenes” y “una caja opaca con 100 millones de yenes o vacía”. En un juego preparado por un superhumano que predice el futuro a la perfección, ¿qué elegirías? Explicamos el mayor enigma de la filosofía moderna, donde chocan el libre albedrío y el determinismo.'
-date: '2026-09-10T08:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/newcombs_paradox.jpg'
 math: true
 mermaid: true

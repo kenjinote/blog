@@ -2,7 +2,7 @@
 title: "Markow-Ketten: Die Mathematik und Wahrscheinlichkeitsmodelle von Zustandsübergängen, bei denen 'die Zukunft nur von der Gegenwart abhängt'"
 description: "Eine detaillierte Erklärung von Wahrscheinlichkeitsmodellen für Zustandsübergänge, die die Grundlagen und Anwendungen von Markow-Ketten abdeckt."
 slug: "markov-chain"
-date: "2026-09-20T15:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematik"

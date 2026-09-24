@@ -2,7 +2,7 @@
 title: "Carl Gustav Jacob Jacobi: Das mathematische Genie der elliptischen Funktionen und der Mechanik"
 description: "Eine detaillierte Erklärung des Lebens von Carl Gustav Jacob Jacobi, einem führenden Mathematiker des 19. Jahrhunderts, und seiner mathematischen Errungenschaften wie der elliptischen Funktionen, der analytischen Mechanik und der Determinanten (die Jacobi-Matrix)."
 slug: "jacobi"
-date: "2026-09-20T19:20:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematik"

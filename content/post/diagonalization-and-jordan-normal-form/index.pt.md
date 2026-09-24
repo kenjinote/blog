@@ -2,7 +2,7 @@
 title: "Diagonalização e Forma Canônica de Jordan: O método definitivo para simplificar matrizes complexas"
 description: "Uma explicação detalhada sobre a diagonalização em álgebra linear e a forma canônica de Jordan para matrizes não diagonalizáveis, cobrindo intuição, teoria e aplicações."
 slug: "diagonalization-and-jordan-normal-form"
-date: "2026-09-20T14:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["linear-algebra", "matrix", "eigenvalue", "jordan-normal-form"]

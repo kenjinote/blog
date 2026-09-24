@@ -1,5 +1,6 @@
 ---
 title: "Nikola Tesla : L'avenir dessiné par le courant alternatif et le système mondial"
+date: "2026-09-24T16:08:36+09:00"
 description: "Nous explorons en profondeur la vie du génial inventeur Nikola Tesla, la « guerre des courants » avec Edison, et son rêve grandiose et inachevé, le « système mondial », en y ajoutant le contexte technique."
 slug: "biography-nikola-tesla"
 categories: ["biography"]

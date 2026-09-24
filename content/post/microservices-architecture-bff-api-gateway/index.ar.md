@@ -2,7 +2,7 @@
 title: "ضوء وظل بنية الخدمات المصغرة (BFF و API Gateway)"
 description: "تحديات التقسيم من النظام المتجانس، والحلول باستخدام أنماط API Gateway و BFF (Backend for Frontend)."
 slug: "microservices-architecture-bff-api-gateway"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

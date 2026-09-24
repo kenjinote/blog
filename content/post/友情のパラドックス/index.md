@@ -1,7 +1,7 @@
 ---
 title: "あなたの友達は、あなたよりも友達が多い：友情のパラドックス"
 description: "「自分は友達が少ないのではないか？」と悩む必要はありません。それは数学的に証明されたネットワークの性質なのですから。"
-date: 2026-09-10T21:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 slug: "friendship-paradox"
 image: "img/friendship_paradox.jpg"

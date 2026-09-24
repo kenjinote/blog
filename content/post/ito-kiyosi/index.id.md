@@ -2,7 +2,7 @@
 title: "Kiyosi Ito: Bapak Persamaan Diferensial Stokastik dan Matematika di Balik Keuangan Modern"
 description: "Pandangan mendalam tentang kehidupan Kiyosi Ito, yang dikenal dengan Lemma Ito, pencapaiannya dalam kalkulus stokastik, dan dampaknya terhadap masyarakat modern."
 slug: "ito-kiyosi"
-date: "2026-09-20T20:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Kiyosi Ito", "Persamaan Diferensial Stokastik", "Rekayasa Keuangan", "Sejarah Matematika"]

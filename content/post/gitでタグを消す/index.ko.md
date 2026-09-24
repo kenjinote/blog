@@ -4,7 +4,7 @@
 
 title: 'Git에서 로컬 및 원격의 태그를 삭제하는 방법'
 slug: "gitでタグを消す"
-date: 2022-10-02T02:18:04+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["git"]
 draft: false
 image: "img.webp"

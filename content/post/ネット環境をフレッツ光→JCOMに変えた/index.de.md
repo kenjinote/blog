@@ -1,7 +1,7 @@
 ---
 title: 'Das Ergebnis des Wechsels von Flet''s Hikari zu J:COM! Reale Eindrücke von Preisen und Kommunikationsgeschwindigkeiten'
 slug: "ネット環境をFlet's Hikari→JCOMに変えた"
-date: 2022-09-05T22:48:51+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["J:COM","Flet's Hikari","Internetleitung"]
 draft: false
 image: "jcom.webp"

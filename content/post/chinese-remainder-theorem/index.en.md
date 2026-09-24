@@ -2,7 +2,7 @@
 title: "Chinese Remainder Theorem - The Great Theorem from Ancient Arithmetic to Modern RSA Cryptography"
 description: "A detailed explanation of the Chinese Remainder Theorem (CRT), originating from ancient Chinese arithmetic texts, covering its mathematical principles to its important applications in modern public-key cryptography (RSA cryptography)."
 slug: "chinese-remainder-theorem"
-date: 2026-09-14T13:11:25+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "cryptography"]
 tags:

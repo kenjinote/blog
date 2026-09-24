@@ -1,5 +1,6 @@
 ---
 title: "Lisp dan \"Bahasa Tuhan\" ―― Keindahan S-Expressions dan Filosofi Code as Data"
+date: "2026-09-24T16:08:36+09:00"
 description: "Mengapa bahasa pemrograman Lisp disebut sebagai \"Bahasa Tuhan\". Esai filosofi teknis yang mengkaji secara mendalam tentang keindahan S-expressions, homoiconicity, dan kedalaman metapemrograman melalui makro yang menjadi intinya."
 slug: "philosophy-lisp-s-expressions"
 categories: ["philosophy"]

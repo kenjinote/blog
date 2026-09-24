@@ -1,7 +1,7 @@
 ---
 title: '好的社群需要什麼？從 Scratch 指南學習經營的提示'
 slug: "社群に必要なこと"
-date: 2022-09-23T01:37:43+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["社群", "雜記"]
 draft: false
 image: "img.webp"

@@ -1,5 +1,6 @@
 ---
 title: "Rust 的精髓：安全性與所有權模型帶來的典範轉移"
+date: "2026-09-24T16:08:36+09:00"
 description: "深入探討 Rust 的核心概念「所有權 (Ownership)」與「借用 (Borrowing)」，徹底解析其如何兼顧記憶體安全性與效能。"
 slug: "philosophy-rust-ownership"
 categories: ["philosophy"]

@@ -2,7 +2,7 @@
 title: "OAuth 2.0与OIDC (OpenID Connect)的全面剖析（授权与认证的区别）"
 description: "彻底讲解OAuth 2.0和OIDC的机制、认证与授权的区别以及各种授权类型。"
 slug: "oauth2-oidc-authentication-authorization-difference"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

@@ -1,6 +1,6 @@
 ---
 title: "スティーブ・マコネルの軌跡：ソフトウェア開発を「工学」へと昇華させた巨匠"
-date: 2026-09-23T19:18:01+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["steve-mcconnell", "history"]
 image: "eyecatch.jpg"

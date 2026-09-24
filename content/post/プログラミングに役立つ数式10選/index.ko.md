@@ -1,7 +1,7 @@
 ---
 title: '수학을 좋아하는 사람이라면 필독! 프로그래밍에 유용한 아름다운 수식 10선'
 slug: "10-beautiful-math-formulas-for-programming"
-date: "2026-09-12T01:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

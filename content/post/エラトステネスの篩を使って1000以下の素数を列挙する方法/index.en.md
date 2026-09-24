@@ -1,7 +1,7 @@
 ---
 title: 'What is the Sieve of Eratosthenes? Algorithm and Implementation for Enumerating Primes Under 1000'
 slug: "Sieve of Eratosthenesを使って1000以下のPrime Numberを列挙する方法"
-date: 2023-04-09T12:54:24+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Sieve of Eratosthenes", "Prime Numbers", "Math", "Rust"]
 draft: false
 math: true

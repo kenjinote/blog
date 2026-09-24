@@ -2,7 +2,7 @@
 title: "Web Vitals 與前端效能最佳化（改善 LCP, FID, CLS）"
 description: "Core Web Vitals 各項指標的詳細介紹，以及改善這些指標的具體前端實作手法。"
 slug: "web-vitals-frontend-performance-optimization-lcp-fid-cls"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

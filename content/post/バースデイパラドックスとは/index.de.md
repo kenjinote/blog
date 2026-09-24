@@ -1,7 +1,7 @@
 ---
 title: 'Was ist das Geburtstagsparadoxon? Warum die Wahrscheinlichkeit, dass 2 unter 23 Personen am selben Tag Geburtstag haben, 50% übersteigt'
 slug: "バースデイParadoxonとは"
-date: 2024-04-02T01:20:50+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Mathematik", "Paradoxon"]
 draft: false
 math: true

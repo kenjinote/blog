@@ -1,5 +1,6 @@
 ---
 title: "Galileo's Paradox: The Mathematical Mystery Woven by Infinity"
+date: "2026-09-24T16:08:36+09:00"
 description: "Are there as many \"natural numbers\" as their \"squares\"? A comprehensive guide from Galileo Galilei's profound thoughts on \"infinity\" left in his later years to its connection to modern set theory. A long-form article exploring the wonders and charm of infinity."
 slug: "paradox-galileos-paradox"
 categories: ["science"]

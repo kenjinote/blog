@@ -2,7 +2,7 @@
 title: '格拉姆-施密特正交化：将扭曲的基向量重新排列为整齐的相互垂直向量的算法'
 description: '全面解析线性代数中的重要概念“格拉姆-施密特正交化”，涵盖几何直觉、数学公式、考虑数值稳定性的改进版本、Python实现以及在多项式空间中的应用。'
 slug: 'gram-schmidt-process'
-date: '2026-09-20T14:40:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["线性代数", "算法", "机器学习", "QR分解", "Python", "数值计算", "数学"]

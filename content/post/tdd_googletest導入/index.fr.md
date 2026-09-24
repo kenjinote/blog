@@ -1,7 +1,7 @@
 ---
 title: 'Comment introduire le développement dirigé par les tests (TDD) dans un projet C++ (GoogleTest, etc.)'
 slug: "tdd-cpp-googletest-introduction"
-date: "2026-09-12T21:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

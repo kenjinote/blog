@@ -2,7 +2,7 @@
 title: "Divisas y tecnología: La historia del FX (Foreign Exchange) y el trading algorítmico"
 description: "El mercado de divisas, que comenzó tras el colapso del patrón oro. Explicamos cómo, tras su encuentro con Internet, se convirtió en el principal campo de batalla del trading algorítmico, donde se compite en milisegundos."
 slug: "finance-fx-algo"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "finance"

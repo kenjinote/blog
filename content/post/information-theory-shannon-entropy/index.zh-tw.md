@@ -2,7 +2,7 @@
 title: "資訊理論與夏農的熵：探索資料壓縮與通訊的極限"
 description: "詳細解說克勞德·夏農提出的資訊理論基礎，從熵的概念、資料壓縮的極限，到現代通訊的應用。"
 slug: information-theory-shannon-entropy
-date: 2026-09-21T02:45:54+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - 計算機科學

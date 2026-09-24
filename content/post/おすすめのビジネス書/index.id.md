@@ -1,7 +1,7 @@
 ---
 title: 'Mengubah Hidup! Kumpulan Mahakarya & Buku Bisnis Rekomendasi yang Wajib Dibaca'
 slug: "RekomendasiのBuku Bisnis"
-date: 2023-03-19T18:13:14+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["buku bisnis", "buku"]
 draft: false
 image: "img.webp"

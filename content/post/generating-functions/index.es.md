@@ -2,7 +2,7 @@
 title: "Funciones generadoras: ¿Cuál es la ventaja de convertir una sucesión en una función?"
 description: "Introducción a cómo calcular combinaciones de pago con monedas y arreglos como coeficientes de una ecuación. Explicación de la magia de las funciones generadoras, incluida su aplicación a la sucesión de Fibonacci."
 slug: "generating-functions"
-date: "2026-09-20T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemáticas"

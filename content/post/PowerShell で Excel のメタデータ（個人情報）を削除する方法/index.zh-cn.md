@@ -1,7 +1,7 @@
 ---
 title: '如何使用PowerShell批量删除Excel和Word的元数据（个人信息）'
 slug: "PowerShell で Excel の元数据（个人信息）を削除する方法"
-date: 2025-07-30T02:42:40+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "元数据", "个人信息"]
 draft: false
 image: "powershell_metadata_eyecatch_1788588033601.webp"

@@ -1,7 +1,7 @@
 ---
 title: 'P≠NP予想とは？計算量理論の未解決問題とクラスP・NPの違いをわかりやすく解説'
 slug: "P≠NP予想"
-date: 2024-09-11T02:22:39+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["P≠NP予想", "数学", "未解決問題"]
 draft: false
 categories: ["math-cryptography-quantum"]

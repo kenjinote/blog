@@ -1,6 +1,6 @@
 ---
 categories: ["biography"]
-date: 2026-09-23T19:18:01+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 tags: ["marc-andreessen", "history"]
 title: "L'homme qui crée l'avenir depuis l'aube d'Internet : La vie et la philosophie de Marc Andreessen"

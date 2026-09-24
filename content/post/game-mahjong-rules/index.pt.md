@@ -2,7 +2,7 @@
 title: "O Ápice dos Jogos de Mesa: Regras Básicas e Explicação dos Yaku do Mahjong - Uma Batalha de Informações Entre 4 Pessoas"
 description: "O jogo de mesa intelectual oriental 'Mahjong', onde 136 peças se entrelaçam. Explicaremos a estrutura básica deste jogo com um equilíbrio perfeito entre sorte e habilidade, como formar os Mentsu e a Atama, e os 'Yaku' representativos."
 slug: "game-mahjong-rules"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

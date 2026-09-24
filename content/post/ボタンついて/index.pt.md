@@ -1,7 +1,7 @@
 ---
 title: 'Criação de botões (controles de GUI) e método de implementação do tratamento de eventos na API do Windows'
 slug: "Botãoついて"
-date: 2023-01-14T20:24:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Botão", "GUI"]
 draft: false
 image: "img.webp"

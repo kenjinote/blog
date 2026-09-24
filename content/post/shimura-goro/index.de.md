@@ -2,7 +2,7 @@
 title: "Goro Shimura: Leben und Werk eines Giganten der modernen Mathematik"
 description: 'Goro Shimura, ein weltbekannter Mathematiker, bekannt für die Taniyama-Shimura-Vermutung. Dieser Artikel beschreibt sein Leben und seine Errungenschaften in der Zahlentheorie.'
 slug: "shimura-goro"
-date: "2026-09-20T20:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematik", "Biografie"]
 tags: ["Goro Shimura", "Zahlentheorie", "Taniyama-Shimura-Vermutung", "Fermatscher letzter Satz"]

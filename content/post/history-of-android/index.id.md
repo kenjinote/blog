@@ -2,7 +2,7 @@
 title: "Serangan Balik Open Source: Sejarah Android - Bagaimana OS Mobile Terbesar di Dunia Lahir"
 description: "Untuk melawan kemunculan iPhone, Google membentuk 'Open Handset Alliance'. Artikel ini menjelaskan bagaimana perubahan model bisnis yang menawarkan OS secara gratis mengubah smartphone di seluruh dunia."
 slug: "history-of-android"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

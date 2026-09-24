@@ -2,7 +2,7 @@
 title: "Persamaan Yang-Mills dan Masalah Kesenjangan Massa - Dasar Matematika dari \"Model Standar\" Fisika Partikel"
 description: "Penjelasan yang mudah dipahami tentang salah satu Masalah Hadiah Milenium, \"Persamaan Yang-Mills dan Masalah Kesenjangan Massa\", termasuk latar belakang fisikanya dan kesulitan matematikanya."
 slug: "yang-mills-mass-gap"
-date: 2026-09-14T13:11:25+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["physics", "mathematics"]
 tags:

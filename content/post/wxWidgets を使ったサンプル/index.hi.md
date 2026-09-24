@@ -1,7 +1,7 @@
 ---
 title: 'wxWidgets का उपयोग कैसे करें: इंस्टॉलेशन से लेकर सैंपल प्रोजेक्ट बनाने तक'
 slug: "wxWidgets を使ったनमूना"
-date: 2023-04-18T00:18:22+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["wxWidgets", "उदाहरण"]
 draft: false
 image: "img.webp"

@@ -1,5 +1,6 @@
 ---
 title: "스리니바사 라마누잔: 직관과 무한을 엮은 인도의 마술사"
+date: "2026-09-24T16:08:36+09:00"
 description: "직관만으로 수많은 미지의 공식을 발견하여 \"인도의 마술사\"로 불린 천재 수학자 스리니바사 라마누잔의 생애와 업적, 그리고 현대 수학에 미친 영향까지 상세히 해설합니다."
 slug: "biography-srinivasa-ramanujan"
 categories: ["biography"]

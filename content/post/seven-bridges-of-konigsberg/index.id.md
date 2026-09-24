@@ -2,7 +2,7 @@
 title: "Tujuh Jembatan Königsberg - Asal Usul Teori Graf dan Topologi"
 description: "Masalah 'Tujuh Jembatan Königsberg' diselesaikan oleh matematikawan abad ke-18 Leonhard Euler. Kami menggali lebih dalam sejarah dan latar belakang matematis tentang bagaimana masalah ini membuka bidang baru dalam matematika modern, seperti teori graf dan topologi."
 slug: "seven-bridges-of-konigsberg"
-date: 2026-09-14T13:11:25+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "history"]
 tags: ["Graph Theory", "Topology", "Euler", "Mathematics"]

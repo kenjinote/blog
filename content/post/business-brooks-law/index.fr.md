@@ -1,5 +1,6 @@
 ---
 title: "Une analyse approfondie de la loi de Brooks : Pourquoi ajouter des personnes à un projet en retard ne fait qu'empirer la situation"
+date: "2026-09-24T16:08:36+09:00"
 description: "\"Ajouter des personnes à un projet en retard le retarde encore plus\". Nous explorons en profondeur la loi de Brooks, proposée dans le classique du génie logiciel \"Le Mythe du mois-homme\", ses origines, ses causes et les mesures à prendre dans le développement agile moderne."
 slug: "business-brooks-law"
 categories: ["business"]

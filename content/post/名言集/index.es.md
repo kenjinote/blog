@@ -1,7 +1,7 @@
 ---
 title: 'Colección de citas que enriquecen la vida: Palabras inspiradoras de figuras históricas y celebridades'
 slug: "Colección de citas"
-date: 2022-10-15T17:00:43+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Colección de citas"]
 draft: false
 image: "img.webp"

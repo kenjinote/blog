@@ -5,7 +5,7 @@
 
 title: '중고 ThinkPad T470s 구입! 사양과 사용 편의성, 불만 사항 솔직 리뷰'
 slug: "ThinkPad（中古）を買った"
-date: 2023-01-13T19:07:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["ThinkPad", "노트북"]
 draft: false
 image: "img.webp"

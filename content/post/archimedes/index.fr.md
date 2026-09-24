@@ -2,7 +2,7 @@
 title: "Le Génie de la Grèce Antique : Vie et Réalisations Mathématiques d'Archimède"
 description: "Archimède de Syracuse. De l'épisode « Eurêka » au calcul de pi, au théorème de la sphère et du cylindre, et à la « Méthode » qui a ouvert la voie au calcul infinitésimal, nous plongeons dans la vie et les réalisations du plus grand mathématicien et physicien de la Grèce antique."
 slug: "archimedes"
-date: "2026-09-20T18:40:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathématiques", "biographie"]
 tags: ["Archimède", "Grèce antique", "Géométrie", "Physique", "Calcul infinitésimal"]

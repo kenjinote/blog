@@ -1,7 +1,7 @@
 ---
 title: 'जाली-आधारित क्रिप्टोग्राफी (Lattice-based cryptography) का गणितीय अंतर्ज्ञान'
 slug: "lattice-based-cryptography-math-intuition"
-date: "2026-09-11T21:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

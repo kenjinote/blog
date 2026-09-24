@@ -1,7 +1,7 @@
 ---
 title: 'Cara Memecahkan Masalah Pedagang Keliling (TSP) di Mathematica'
 slug: "MathematicaでMasalah Pedagang Kelilingを解く"
-date: 2022-10-12T19:05:58+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Mathematica", "Masalah Pedagang Keliling", "Algoritma", "Matematika"]
 draft: false
 image: "img.webp"

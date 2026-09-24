@@ -2,7 +2,7 @@
 title: "O Algoritmo de Euclides: Cálculo Rápido de MDC e o Algoritmo Mais Antigo da Humanidade"
 description: "Um guia abrangente sobre o Algoritmo de Euclides para calcular o máximo divisor comum (MDC), cobrindo sua mecânica, implementação, complexidade, o teorema de Lamé, o Algoritmo de Euclides Estendido e suas aplicações na criptografia RSA."
 slug: "euclidean-algorithm"
-date: 2026-09-20T15:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]

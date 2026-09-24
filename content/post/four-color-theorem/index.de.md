@@ -2,7 +2,7 @@
 title: "Der Vier-Farben-Satz (Four Color Theorem) - Kann jede Karte mit 4 Farben gefärbt werden?"
 description: "Eine detaillierte Erklärung der Geschichte, der Beweisansätze und der Bedeutung des computergestützten Beweises des Vier-Farben-Satzes, der ein schwieriges Problem in der Mathematik war."
 slug: "four-color-theorem"
-date: "2026-09-14T13:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "computer-science"]
 tags: ["Four Color Theorem", "Graph Theory", "Computer-assisted Proof", "Topology"]

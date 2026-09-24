@@ -1,7 +1,7 @@
 ---
 title: 'Cara dan Prosedur Mudah untuk Menambahkan Batas ke Gambar di paint.net'
 slug: "paint.netを使ってGambarにPerbatasanをつける方法"
-date: 2023-04-11T14:31:59+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["paint.net", "batas", "gambar"]
 draft: false
 image: "img_3.webp"

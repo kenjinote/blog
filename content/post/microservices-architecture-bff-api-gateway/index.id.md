@@ -2,7 +2,7 @@
 title: "Cahaya dan Bayangan Arsitektur Microservices (BFF dan API Gateway)"
 description: "Tantangan dalam memecah monolitik, dan solusi dengan API Gateway serta pola BFF (Backend for Frontend)."
 slug: "microservices-architecture-bff-api-gateway"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

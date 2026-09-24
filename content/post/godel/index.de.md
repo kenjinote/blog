@@ -2,7 +2,7 @@
 title: "Kurt Gödel: Die Unvollständigkeitssätze und der Weg eines genialen Mathematikers"
 description: "Eine detaillierte Erklärung des Lebens von Kurt Gödel, dem größten Logiker des 20. Jahrhunderts, und der Unvollständigkeitssätze, die die Grundlagen der Mathematik erschütterten."
 slug: "godel"
-date: "2026-09-20T20:20:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematik", "Biografie"]
 tags: ["Kurt Gödel", "Unvollständigkeitssätze", "Mathematik", "Logik", "Geschichte"]

@@ -1,7 +1,7 @@
 ---
 title: "Explication de la 'Possession' et de 'l'Emprunt' de Rust comparés aux pointeurs C++"
 slug: "rust-ownership-borrowing-cpp-pointer-comparison"
-date: "2026-09-12T04:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

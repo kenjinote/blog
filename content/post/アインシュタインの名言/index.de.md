@@ -1,7 +1,7 @@
 ---
 title: 'Geben Sie der Kritik nicht nach! Tipps für ein starkes Leben aus Einsteins Zitaten'
 slug: "EinsteinのZitat"
-date: 2024-08-24T18:38:47+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Einstein", "Zitate", "Philosophie", "Wissenschaft", "Physik"]
 draft: false
 image: "Solvay_conference_1927.webp"

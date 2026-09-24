@@ -1,7 +1,7 @@
 ---
 title: 'आधुनिक C++ के साथ Windows API (Win32) को सुरक्षित और आधुनिक तरीके से संभालना'
 slug: "modern-cpp-win32-api-safe-handling"
-date: "2026-09-12T06:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

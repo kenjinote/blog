@@ -2,7 +2,7 @@
 title: "IBMの歴史: パンチカードからメインフレーム、そして量子コンピュータへ"
 description: "「ビッグブルー」がいかにしてIT業界を100年以上リードし続けてきたか。"
 slug: "history-of-ibm"
-date: "2026-09-23T01:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

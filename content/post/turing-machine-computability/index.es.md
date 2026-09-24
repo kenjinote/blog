@@ -2,7 +2,7 @@
 title: "Máquina de Turing y teoría de la computabilidad: El experimento mental de Alan Turing y el problema de la parada"
 description: "¿Cuáles son los límites de la computación? Profundizamos en el concepto de la máquina de Turing propuesto por Alan Turing y el problema de la parada, un hito de la teoría de la computabilidad, desde perspectivas matemáticas y de programación."
 slug: turing-machine-computability
-date: 2026-09-21T02:35:46+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - computer-science

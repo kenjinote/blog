@@ -2,7 +2,7 @@
 title: "圖論基礎：用點和線表示網路，現代社會的必備工具"
 description: "全面講解圖論的基礎知識。從哥尼斯堡七橋問題到最短路徑演算法（如戴克斯特拉演算法），再到Python實作以及現代機器學習應用，深入學習網路的數學原理。"
 slug: "basics-of-graph-theory"
-date: "2026-09-20T15:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "數學"

@@ -1,7 +1,7 @@
 ---
 title: '블로그의 다크 모드 지원을 위한 CSS 설계의 포인트'
 slug: "dark-mode-css-design-patterns"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

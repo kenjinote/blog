@@ -2,7 +2,7 @@
 title: "Théorème Fondamental de l'Algèbre : Preuve qu'une Équation de Degré n a Toujours n Racines Complexes"
 description: "Une explication détaillée de l'histoire, de la signification intuitive et de la belle preuve du théorème fondamental de l'algèbre à l'aide de l'analyse complexe (théorème de Liouville)."
 slug: "fundamental-theorem-of-algebra"
-date: "2026-09-20T15:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathématiques"

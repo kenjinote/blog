@@ -1,5 +1,6 @@
 ---
 title: "Jurang Perjalanan Waktu: Panduan Komprehensif tentang Paradoks Kakek dan Solusinya"
+date: "2026-09-24T16:08:36+09:00"
 description: "Penjelasan terperinci tentang paradoks kakek, tantangan terbesar dalam perjalanan waktu, dari perspektif fisika dan filsafat, mencakup relativitas, mekanika kuantum, interpretasi banyak dunia, dan prinsip konsistensi diri Novikov."
 slug: "paradox-grandfather-paradox"
 categories: ["science"]

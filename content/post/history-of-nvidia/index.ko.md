@@ -2,7 +2,7 @@
 title: "NVIDIA(지포스)의 역사: 3D 그래픽스에서 AI의 심장부(GPU)로 크게 변화한 궤적"
 description: "게임용 그래픽 보드 제조업체에서 현대 AI 혁명을 견인하는 절대 강자로 변모한 NVIDIA의 역사."
 slug: "history-of-nvidia"
-date: "2026-09-23T01:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

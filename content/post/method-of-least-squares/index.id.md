@@ -2,7 +2,7 @@
 title: "Metode Kuadrat Terkecil: Menemukan 'Garis Kesesuaian Terbaik' untuk Data Tersebar menggunakan Aljabar Linier"
 description: "Penjelasan mendalam tentang mekanisme Metode Kuadrat Terkecil menggunakan intuisi geometris dan alat aljabar linier yang kuat (persamaan normal, proyeksi ortogonal)."
 slug: "method-of-least-squares"
-date: "2026-09-20T14:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matematika"

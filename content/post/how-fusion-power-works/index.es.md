@@ -2,7 +2,7 @@
 title: "Cómo funciona la energía de fusión: de las reacciones estelares a la electricidad"
 description: "Una explicación de la fusión de deuterio y tritio, el confinamiento del plasma, los tokamaks, los láseres, el balance energético y los desafíos del combustible y los materiales."
 slug: "how-fusion-power-works"
-date: "2026-09-24T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.png"
 categories: ["technology", "physics"]
 tags: ["nuclear-fusion", "energy", "plasma", "engineering", "history"]

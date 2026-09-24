@@ -1,7 +1,7 @@
 ---
 title: '为GitHub仓库设置自定义域名的方法｜Onamae.com篇'
 slug: "Github仓库にカスタム域名を設定する方法"
-date: 2022-09-13T01:16:40+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Github","域名"]
 draft: false
 image: "images/octocat.webp"

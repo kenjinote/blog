@@ -1,5 +1,6 @@
 ---
 title: "Qu'est-ce que la « loi de Metcalfe » qui régit la valeur d'un réseau ? Guide complet de son utilisation dans la stratégie d'entreprise"
+date: "2026-09-24T16:08:36+09:00"
 description: "La loi de Metcalfe stipule que « la valeur d'un réseau est proportionnelle au carré du nombre de ses utilisateurs ». Nous explorerons en profondeur l'essence de l'effet de réseau, secret de la croissance des réseaux sociaux et des plateformes, l'histoire de la loi, son contexte mathématique, ses applications dans les entreprises modernes jusqu'à ses limites."
 slug: "business-metcalfes-law"
 categories: ["business"]

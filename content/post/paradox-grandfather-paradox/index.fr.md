@@ -1,5 +1,6 @@
 ---
 title: "L'abîme du voyage dans le temps : Un guide complet du paradoxe du grand-père et de ses solutions"
+date: "2026-09-24T16:08:36+09:00"
 description: "Une explication détaillée du paradoxe du grand-père, le plus grand défi du voyage dans le temps, du point de vue de la physique et de la philosophie, couvrant la relativité, la mécanique quantique, l'interprétation des mondes multiples et le principe d'autocohérence de Novikov."
 slug: "paradox-grandfather-paradox"
 categories: ["science"]

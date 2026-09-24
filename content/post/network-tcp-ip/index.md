@@ -2,7 +2,7 @@
 title: "ネットワーク技術: TCP/IPの歴史と仕組み - インターネットを繋ぐ世界標準のルール"
 description: "世界中のあらゆるコンピュータが、メーカーやOSの違いを超えて通信できるのはなぜか。インターネットの根幹を成す「TCP/IP」プロトコルスイートの思想と歴史を紐解きます。"
 slug: "network-tcp-ip"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

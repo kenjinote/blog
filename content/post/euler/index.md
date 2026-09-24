@@ -2,7 +2,7 @@
 title: "レオンハルト・オイラー：数学界の巨人、その生涯と偉業"
 description: "歴史上最も偉大な数学者の一人、レオンハルト・オイラー。彼の劇的な生涯と、数学、物理学、天文学に残した計り知れない功績を詳しく解説します。"
 slug: "euler"
-date: "2026-09-20T19:10:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Euler", "History of Mathematics", "Genius", "Physics"]

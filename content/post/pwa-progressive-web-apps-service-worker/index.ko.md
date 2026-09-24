@@ -2,7 +2,7 @@
 title: "PWA (Progressive Web Apps) 의 가능성과 구현 (Service Worker의 힘)"
 description: "PWA의 전체 모습부터 Service Worker의 수명 주기, 오프라인 캐시, Push 알림까지 해설합니다."
 slug: "pwa-progressive-web-apps-service-worker"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

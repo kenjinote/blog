@@ -2,7 +2,7 @@
 title: "素数定理（Prime Number Theorem） - 素数分布趋近于对数函数的法则"
 description: "深入解析关于素数出现规律性的数学里程碑——素数定理（Prime Number Theorem）。从素数计数函数到与黎曼猜想的关系。"
 slug: "prime-number-theorem"
-date: 2026-09-14T13:11:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "algorithms"]
 tags:

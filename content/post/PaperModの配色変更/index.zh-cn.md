@@ -1,7 +1,7 @@
 ---
 title: '如何通过CSS更改Hugo PaperMod主题的配色及颜色主题'
 slug: "PaperModの配色変更"
-date: 2022-09-07T15:30:21+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "img.webp"

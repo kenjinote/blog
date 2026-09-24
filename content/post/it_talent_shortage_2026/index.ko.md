@@ -1,7 +1,7 @@
 ---
 title: '【2026년 문제】IT 인재 부족은 정말로 일어나고 있는가? 현장의 리얼리티'
 slug: "it-talent-shortage-2026"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

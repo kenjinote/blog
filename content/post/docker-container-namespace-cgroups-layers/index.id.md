@@ -2,7 +2,7 @@
 title: "Pemahaman Lengkap tentang Docker dan Teknologi Kontainer: Dari Namespace, cgroups hingga Lapisan Gambar"
 description: "Lebih dari sekadar cara menggunakan alat, kami akan membedah secara menyeluruh mekanisme di balik kontainer menggunakan fitur kernel Linux (Namespace, cgroups, OverlayFS)."
 slug: "docker-container-namespace-cgroups-layers"
-date: 2026-09-21T09:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - "infrastructure"

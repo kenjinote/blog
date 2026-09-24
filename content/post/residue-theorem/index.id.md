@@ -2,7 +2,7 @@
 title: "Teorema Residu: Memecahkan Integral Riil Kompleks dengan Cemerlang Menggunakan 'Singularitas' di Bidang Kompleks"
 description: "Penjelasan mendetail tentang cara menyederhanakan integral tentu yang sulit dari bilangan riil secara menakjubkan menggunakan teorema residu, yang merupakan sorotan dari analisis kompleks. Juga mencakup potongan cabang dan integral lubang kunci."
 slug: "residue-theorem"
-date: "2026-09-20T14:40:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["matematika"]
 tags: ["analisis kompleks", "kalkulus", "matematika"]

@@ -1,7 +1,7 @@
 ---
 title: "能用油漆注滿，卻無法塗滿表面？：加百列號角"
 description: "同時擁有「有限體積」與「無限表面積」，微積分學帶來的奇妙立體悖論。"
-date: 2026-09-10T21:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 slug: "gabriels-horn"
 image: "img/gabriels_horn.jpg"

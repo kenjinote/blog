@@ -1,7 +1,7 @@
 ---
 title: '¿Cómo cambiarán el blockchain y las criptomonedas en la era post-cuántica?'
 slug: "post-quantum-blockchain-and-crypto"
-date: "2026-09-11T17:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

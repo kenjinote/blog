@@ -1,7 +1,7 @@
 ---
 title: 'PMP考试基础知识与备考总结：对应PMBOK第7版'
 slug: "PMP学习"
-date: 2024-02-04T18:41:31+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["PMP", "PMBOK", "学习"]
 draft: false
 image: "img.webp"

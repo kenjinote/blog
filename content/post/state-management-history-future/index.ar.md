@@ -2,7 +2,7 @@
 title: "تاريخ ومستقبل إدارة الحالة: التطور من Redux إلى Signals وReactivity"
 description: "الدليل الشامل المكون من حوالي 20,000 حرف يغوص بعمق في التحدي الأكبر في تاريخ تطوير الواجهات الأمامية: «إدارة الحالة». نستعرض التطور والمستقبل من MVC إلى Flux وRedux وContext API، وصولاً إلى Signals والتفاعلية الدقيقة."
 slug: state-management-history-future
-date: 2026-09-21T12:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - واجهة أمامية

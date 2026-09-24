@@ -2,7 +2,7 @@
 title: "생성함수: 수열을 '함수'로 만들면 무엇이 좋을까?"
 description: "동전 지불 방법이나 조합의 수를 식의 계수로 계산하는 방법을 소개합니다. 피보나치 수열에도 응용할 수 있는 생성함수의 마법을 해설합니다."
 slug: "generating-functions"
-date: "2026-09-20T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "수학"

@@ -2,7 +2,7 @@
 title: "How to Choose a NoSQL Database (KVS, Document, Graph, Wide-Column)"
 description: "A guide to understanding the data models of various NoSQL databases and making the optimal choice for your use case."
 slug: "nosql-database-selection-kvs-document-graph-wide-column"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "database"

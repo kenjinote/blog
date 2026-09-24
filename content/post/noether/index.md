@@ -2,7 +2,7 @@
 title: "エミー・ネーター：現代代数学の母と対称性の定理"
 description: "現代代数学の基礎を築き、物理学における「ネーターの定理」を証明した天才数学者エミー・ネーターの生涯と業績を詳しく解説します。"
 slug: "noether"
-date: "2026-09-20T20:10:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Emmy Noether", "Abstract Algebra", "Physics", "Women in STEM"]

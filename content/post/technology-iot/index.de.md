@@ -2,7 +2,7 @@
 title: "Internet der Dinge: Wie IoT funktioniert – Hinter den Kulissen einer vernetzten Welt"
 description: "Von Haushaltsgeräten über Autos bis hin zu Fabrikmaschinen: Alles verbindet sich mit dem Internet über das „IoT“ (Internet of Things). Dieser Artikel erklärt, wie Sensortechnologie und Kommunikationsnetzwerke Daten sammeln und in Verbindung mit KI Wert schaffen."
 slug: "technology-iot"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -2,7 +2,7 @@
 title: "वेब वाइटल्स (Web Vitals) और फ्रंटएंड परफॉर्मेंस ऑप्टिमाइज़ेशन (LCP, FID, CLS में सुधार)"
 description: "कोर वेब वाइटल्स (Core Web Vitals) के हर मेट्रिक का विवरण और उन्हें सुधारने के लिए विशिष्ट फ्रंटएंड कार्यान्वयन तकनीकें।"
 slug: "web-vitals-frontend-performance-optimization-lcp-fid-cls"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

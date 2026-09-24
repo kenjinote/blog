@@ -2,7 +2,7 @@
 title: "Network Technology: The Transformation from IPv4 to IPv6 and the Next Generation Internet"
 description: "IP addresses are the internet's addresses. This article explains how IPv4, which only had 4.3 billion addresses, overcame the crisis of exhaustion and is transitioning to IPv6, which has an infinite space."
 slug: "history-of-ipv6"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

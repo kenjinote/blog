@@ -2,7 +2,7 @@
 title: "Grundlagen der Graphentheorie: Netzwerke mit Punkten und Linien darstellen, ein unverzichtbares Werkzeug der modernen Gesellschaft"
 description: "Ein umfassender Leitfaden zu den Grundlagen der Graphentheorie. Von den Königsberger Brücken bis zum Dijkstra-Algorithmus, Python-Implementierungen und modernen Anwendungen im maschinellen Lernen – entdecken wir die Mathematik der Netzwerke."
 slug: "basics-of-graph-theory"
-date: "2026-09-20T15:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematik"

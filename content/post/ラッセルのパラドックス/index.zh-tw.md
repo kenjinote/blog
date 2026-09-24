@@ -2,7 +2,7 @@
 title: '羅素悖論：「不包含自身的集合的集合」是否包含自身？'
 slug: 'russells-paradox'
 description: '「只幫不自己刮鬍子的村民刮鬍子的理髮師，會不會幫自己刮鬍子？」為您解說動搖數學根基「集合論」並改變邏輯學歷史的伯特蘭·羅素的驚人悖論。'
-date: '2026-09-10T04:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/russells_paradox.jpg'
 math: true
 mermaid: true

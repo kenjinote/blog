@@ -1,7 +1,7 @@
 ---
 title: 'What Does It Mean to ''Understand''? On the Ambiguity of Understanding and Its Value'
 slug: "わかるってなんだろう？"
-date: 2022-09-24T02:38:18+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Miscellaneous"]
 draft: false
 image: "img.webp"

@@ -2,7 +2,7 @@
 title: "Deret Taylor dan Maclaurin: Keajaiban Mendekati Fungsi Kompleks dengan Polinomial"
 description: "Penjelasan rinci tentang deret Taylor dan Maclaurin, rahasia kalkulus, dari makna intuitif hingga derivasi matematis dan aplikasi dalam pemrograman dan fisika."
 slug: "taylor-and-maclaurin-series"
-date: "2026-09-20T14:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matematika"

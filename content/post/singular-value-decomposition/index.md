@@ -2,7 +2,7 @@
 title: "特異値分解 (SVD)：あらゆる行列を回転と拡大縮小に分解し、データ圧縮やAIに活かす"
 description: "特異値分解（SVD）の数学的基礎から幾何学的直感、そして画像圧縮や自然言語処理への応用までを徹底解説します。"
 slug: "singular-value-decomposition"
-date: "2026-09-20T14:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["SVD", "線形代数", "機械学習", "データ圧縮", "人工知能", "Python"]

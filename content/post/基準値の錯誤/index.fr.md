@@ -1,7 +1,7 @@
 ---
 title: "« Test positif » ne signifie pas toujours « maladie » ? : L'erreur du taux de base"
 description: "Même si un test précis à 99 % est positif, la probabilité d'être réellement malade n'est que de 9 % ? Explication de l'« erreur du taux de base », où l'intuition humaine est trompée par les données statistiques."
-date: 2026-09-10T21:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 slug: "base-rate-fallacy"
 image: "img/base_rate_fallacy.jpg"

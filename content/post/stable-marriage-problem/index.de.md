@@ -1,7 +1,7 @@
 ---
 title: "Das Problem der stabilen Paarung: Wie lassen sich alle Wünsche miteinander vereinbaren?"
 description: "Der Gale–Shapley-Algorithmus mit Formeln, Diagrammen, Präferenztabellen und Python: Warum eine stabile Zuordnung nicht automatisch alle zufriedenstellt."
-date: "2026-09-16T14:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Stabile Paarung", "Algorithmen", "Spieltheorie", "Matching", "Python"]

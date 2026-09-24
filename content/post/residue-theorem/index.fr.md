@@ -2,7 +2,7 @@
 title: "Théorème des Résidus : Résoudre Brillamment les Intégrales Réelles Complexes à l'Aide des « Singularités » dans le Plan Complexe"
 description: "Une explication détaillée de la façon de simplifier étonnamment les intégrales définies difficiles de nombres réels en utilisant le théorème des résidus, un point culminant de l'analyse complexe. Couvre également les coupures de branche et les intégrales en trou de serrure."
 slug: "residue-theorem"
-date: "2026-09-20T14:40:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathématiques"]
 tags: ["analyse complexe", "calcul", "mathématiques"]

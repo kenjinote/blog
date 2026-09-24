@@ -2,7 +2,7 @@
 title: 'O Paradoxo de Berry: A contradição que surge ao tentar definir "números" com "palavras"'
 slug: 'berry-paradox'
 description: 'A própria frase "O menor inteiro não expressável em 19 caracteres ou menos" expressa esse número em 19 caracteres ou menos?! Explicamos um paradoxo curto e belo que ocorre na fronteira entre a linguagem cotidiana e a matemática.'
-date: '2026-09-10T11:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/berry_paradox.jpg'
 math: true
 mermaid: true

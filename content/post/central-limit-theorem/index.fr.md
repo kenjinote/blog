@@ -1,7 +1,7 @@
 ---
 title: "Théorème Central Limite - Le Miracle par Lequel Toute Donnée s'Approche d'une Distribution Normale en s'Additionnant"
 description: "Une explication détaillée du Théorème Central Limite, l'un des théorèmes les plus importants en statistiques, de la compréhension intuitive à la preuve mathématique et la simulation avec Python."
-date: 2026-09-14T13:20:38+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathématiques", "Statistiques"]
 tags: ["Théorème Central Limite", "Probabilités", "Science des Données", "Python"]

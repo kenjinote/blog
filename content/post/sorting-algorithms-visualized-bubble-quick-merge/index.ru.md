@@ -2,7 +2,7 @@
 title: "Иллюстрированные алгоритмы сортировки (от пузырьковой до быстрой и сортировки слиянием)"
 description: "Алгоритмы сортировки — основа программирования. В этой статье мы подробно и с иллюстрациями рассмотрим все: от пузырьковой сортировки до быстрой и сортировки слиянием."
 slug: "sorting-algorithms-visualized-bubble-quick-merge"
-date: 2026-09-22T01:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "sorting", "quick-sort", "merge-sort", "bubble-sort"]

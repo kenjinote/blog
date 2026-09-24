@@ -1,5 +1,6 @@
 ---
 title: "Der Abgrund der Zeitreise: Ein umfassender Leitfaden zum Großvaterparadoxon und seinen Lösungen"
+date: "2026-09-24T16:08:36+09:00"
 description: "Eine detaillierte Erklärung des Großvaterparadoxons, der größten Herausforderung bei Zeitreisen, aus der Perspektive von Physik und Philosophie, die Relativitätstheorie, Quantenmechanik, Viele-Welten-Interpretation und das Novikov-Selbstkonsistenzprinzip abdeckt."
 slug: "paradox-grandfather-paradox"
 categories: ["science"]

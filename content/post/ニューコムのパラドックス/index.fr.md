@@ -2,7 +2,7 @@
 title: 'Le paradoxe de Newcomb : Pouvez-vous battre le surhomme qui voit l''avenir ?'
 slug: 'newcombs-paradox'
 description: '« Une boîte transparente avec 100 000 yens » et « une boîte opaque avec 100 millions de yens ou vide ». Dans un jeu préparé par un surhomme qui prédit parfaitement l''avenir, laquelle choisiriez-vous ? Nous expliquons le plus grand casse-tête de la philosophie moderne où le libre arbitre et le déterminisme s''affrontent.'
-date: '2026-09-10T08:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/newcombs_paradox.jpg'
 math: true
 mermaid: true

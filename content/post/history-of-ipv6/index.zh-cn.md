@@ -2,7 +2,7 @@
 title: "网络技术：从IPv4到IPv6的演变与下一代互联网"
 description: "IP地址是互联网的地址。本文将解释仅有43亿个的IPv4如何克服枯竭危机，并向拥有无限空间的IPv6过渡的过程。"
 slug: "history-of-ipv6"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

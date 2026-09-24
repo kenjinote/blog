@@ -1,7 +1,7 @@
 ---
 title: 'Cara Mudah Memeriksa Status SIM Lock iPhone (Terkunci/Tidak)'
 slug: "iPhoneにKunci SIMがかかっているか確認する方法"
-date: 2024-09-12T00:32:11+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["iPhone", "Kunci SIM"]
 draft: false
 image: "img.webp"

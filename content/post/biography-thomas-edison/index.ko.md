@@ -1,6 +1,6 @@
 ---
 title: "'발명왕' 토마스 에디슨의 생애와 철학: 실패를 두려워하지 않는 혁신의 궤적"
-date: 2026-09-23T19:53:31+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["thomas-edison", "history"]
 image: "eyecatch.jpg"

@@ -1,5 +1,6 @@
 ---
 title: "A Deep Dive into Brooks's Law: Why Adding Manpower to a Late Project Adds Fuel to the Fire"
+date: "2026-09-24T16:08:36+09:00"
 description: "\"Adding manpower to a late software project makes it later.\" We deeply explore Brooks's Law, proposed in the software engineering classic \"The Mythical Man-Month,\" including its background, causes, and countermeasures in modern Agile development."
 slug: "business-brooks-law"
 categories: ["business"]

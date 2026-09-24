@@ -2,7 +2,7 @@
 title: "Arquitetura de Rede Zero Trust (Rompendo com a Defesa de Perímetro)"
 description: "Aprenda sobre os conceitos e métodos de implementação da arquitetura Zero Trust a partir do BeyondCorp do Google."
 slug: "zero-trust-network-architecture-beyond-corp"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

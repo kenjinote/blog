@@ -1,6 +1,6 @@
 ---
 title: "स्टीफन कोवे: नेतृत्व के वह दिग्गज जिन्होंने 'द 7 हैबिट्स' से दुनिया बदल दी"
-date: 2026-09-23T20:59:58+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["stephen-covey", "history"]
 image: "eyecatch.jpg"

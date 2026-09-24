@@ -1,7 +1,7 @@
 ---
 title: 'Penjelasan Mudah tentang Cara Menerapkan Mosaik ke Bagian Gambar Tertentu dengan paint.net'
 slug: "paint.netでGambarの特定個所にモザイクをかける方法"
-date: 2023-04-11T16:33:10+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["paint.net", "bingkai", "gambar"]
 draft: false
 image: "img.webp"

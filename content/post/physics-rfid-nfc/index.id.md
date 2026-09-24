@@ -2,7 +2,7 @@
 title: "Hukum Fisika dan Teknologi di Sekitar Kita: Bagaimana RFID dan NFC (Osaifu-Keitai) Bekerja - Komunikasi Nirkontak Melalui Induksi Elektromagnetik"
 description: "Sebuah teknologi ajaib di mana pembayaran diselesaikan hanya dengan menyentuhkan Suica, PASMO, atau Osaifu-Keitai ke gerbang tiket. Kami akan menjelaskan \"induksi elektromagnetik\", sebuah hukum fisika di balik teknologi ini, serta standar komunikasi NFC."
 slug: "physics-rfid-nfc"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

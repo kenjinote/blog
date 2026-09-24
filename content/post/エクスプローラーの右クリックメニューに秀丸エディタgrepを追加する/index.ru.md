@@ -1,7 +1,7 @@
 ---
 title: 'Как добавить функцию grep редактора Hidemaru в контекстное меню в Windows'
 slug: "ПроводникのКонтекстное менюにHidemaru Editorgrepを追加する"
-date: 2024-04-03T00:00:46+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Hidemaru Editor", "Проводник", "Контекстное меню", "grep", "Реестр"]
 draft: false
 image: "img.webp"

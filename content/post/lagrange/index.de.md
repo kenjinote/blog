@@ -2,7 +2,7 @@
 title: "Joseph-Louis Lagrange: Vater der analytischen Mechanik und Gigant der mathematischen Physik"
 description: "Eine detaillierte Erklärung des Lebens des Mathematikers und Physikers des 18. Jahrhunderts, Joseph-Louis Lagrange, und seiner großen Errungenschaften in der analytischen Mechanik, der Variationsrechnung und der Zahlentheorie."
 slug: "lagrange"
-date: "2026-09-20T19:10:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematik"

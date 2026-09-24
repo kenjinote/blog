@@ -2,7 +2,7 @@
 title: "네트워크 기술: P2P(피어 투 피어) 기술 해설 - 분산형 시스템의 힘"
 description: "특정 서버에 의존하지 않고, 개별 컴퓨터가 대등하게 통신하는 'P2P' 기술. 그 기초 이론부터 현대의 블록체인으로 이어지는 사상까지 깊이 있게 해설합니다."
 slug: "history-of-p2p"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

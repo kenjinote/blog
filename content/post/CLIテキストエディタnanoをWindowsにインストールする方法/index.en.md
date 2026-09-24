@@ -1,7 +1,7 @@
 ---
 title: 'How to Install CLI Text Editor nano on Windows and Set Environment Variables'
 slug: "CLIText EditornanoをWindowsにInstallする方法"
-date: 2024-03-31T18:09:32+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["nano", "text editor"]
 draft: false
 image: "img_1.webp"

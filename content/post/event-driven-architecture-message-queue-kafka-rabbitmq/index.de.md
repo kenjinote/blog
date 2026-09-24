@@ -2,7 +2,7 @@
 title: "Ereignisgesteuerte Architektur und Message Queues (Kafka, RabbitMQ)"
 description: "Ereignisgesteuertes Design, das die Kopplung zwischen Systemen durch asynchrone Kommunikation reduziert, und die Rolle von Message Brokern."
 slug: "event-driven-architecture-message-queue-kafka-rabbitmq"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

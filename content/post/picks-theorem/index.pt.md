@@ -2,7 +2,7 @@
 title: "Teorema de Pick: Encontrando a Área Apenas Contando Pontos da Grade"
 description: "Uma explicação detalhada, com diagramas e demonstrações, da fórmula para encontrar a área de um polígono sem buracos com vértices nos pontos de uma grade a partir do número de pontos interiores e no limite."
 slug: "picks-theorem"
-date: "2026-09-20T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matemática"

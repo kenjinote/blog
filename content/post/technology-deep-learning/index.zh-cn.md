@@ -2,7 +2,7 @@
 title: "AI的核心：深度学习的运作机制 - 神经网络如何进行学习"
 description: "「深度学习（Deep Learning）」是引发第三次AI热潮的导火索，也是ChatGPT等技术的基础。本文将为您解说模仿人类脑神经的算法是如何自行发现特征的。"
 slug: "technology-deep-learning"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

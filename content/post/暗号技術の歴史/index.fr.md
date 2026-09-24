@@ -1,7 +1,7 @@
 ---
 title: "Histoire de la cryptographie : du chiffre de César à la cryptographie post-quantique (PQC)"
 slug: "history-of-cryptography-caesar-to-pqc"
-date: "2026-09-11T15:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

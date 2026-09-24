@@ -1,6 +1,6 @@
 ---
 title: "【जीवनी】 चार्ली चैप्लिन: हँसी और आंसुओं से दुनिया को पिरोने वाले 'कॉमेडी किंग' का जीवन और दर्शन"
-date: 2026-09-23T20:51:46+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["charles-chaplin", "history"]
 image: "eyecatch.jpg"

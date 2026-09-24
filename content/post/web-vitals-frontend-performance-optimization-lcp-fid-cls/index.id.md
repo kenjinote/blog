@@ -2,7 +2,7 @@
 title: "Web Vitals dan Optimasi Performa Frontend (Peningkatan LCP, FID, CLS)"
 description: "Detail setiap metrik Core Web Vitals dan metode implementasi frontend spesifik untuk meningkatkannya."
 slug: "web-vitals-frontend-performance-optimization-lcp-fid-cls"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

@@ -1,7 +1,7 @@
 ---
 title: "鳩の巣原理とハッシュ衝突：暗号技術の限界と安全性を紐解く"
 image: "eyecatch.jpg"
-date: "2026-09-14T00:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 description: "直感的に理解できる「鳩の巣原理」が、なぜ現代の暗号技術やハッシュ関数の安全性において最重要の概念となるのか。具体例や数式、図解を用いて深く解説します。"
 categories: ["technology", "cryptography", "mathematics"]
 tags: ["Hash", "Pigeonhole Principle", "Security", "Algorithm", "KaTeX", "Mermaid"]

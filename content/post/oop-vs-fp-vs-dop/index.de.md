@@ -2,7 +2,7 @@
 title: "Objektorientiert vs. Funktional vs. Datenorientiert: Grenzen und Verschmelzung der Paradigmen"
 description: "Eine tiefe Untersuchung der Geschichte und Entwicklung von Programmierparadigmen, der jeweiligen Stärken und Grenzen von OOP, FP und DOP, sowie eine gründliche Betrachtung der 'Verschmelzung der Paradigmen' als optimale Lösung in der modernen Entwicklung."
 slug: "oop-vs-fp-vs-dop"
-date: "2026-09-21T02:58:35+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["programming", "architecture", "software-engineering"]
 tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]

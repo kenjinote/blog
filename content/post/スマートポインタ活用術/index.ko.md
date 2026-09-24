@@ -1,7 +1,7 @@
 ---
 title: '메모리 누수를 방지하는 스마트 포인터(std::unique_ptr / shared_ptr) 활용법'
 slug: "cpp-smart-pointers-guide-unique-shared-ptr"
-date: "2026-09-12T07:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

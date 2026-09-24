@@ -2,7 +2,7 @@
 title: "Jantung AI: Cara Kerja Deep Learning - Bagaimana Neural Network Belajar"
 description: "Menjadi pemicu ledakan AI generasi ke-3 dan menjadi teknologi dasar di balik ChatGPT dan lainnya, yaitu 'Deep Learning (Pembelajaran Mendalam)'. Kami akan menjelaskan bagaimana algoritma yang meniru saraf otak manusia ini mampu menemukan fitur (features) secara mandiri."
 slug: "technology-deep-learning"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -1,7 +1,7 @@
 ---
 title: 'Markdown으로 작성하는 기술 블로그: 집필 속도를 배가시키는 에디터 설정'
 slug: "markdown-editor-setup-for-tech-blogs"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

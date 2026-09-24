@@ -2,7 +2,7 @@
 title: "시간 복잡도와 공간 복잡도 (O 표기법 입문과 실례)"
 description: "알고리즘의 성능 평가에 필수적인 O 표기법(빅오 표기법)에 대해, 시간 복잡도와 공간 복잡도의 차이부터 구체적인 실례까지 철저히 해설합니다."
 slug: "time-space-complexity-big-o-notation-examples"
-date: 2026-09-22T00:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "big-o", "time-complexity", "space-complexity", "data-structures"]

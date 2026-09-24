@@ -2,7 +2,7 @@
 title: "Complete Understanding of C Language and Pointers (Memory Management, Addresses, Basics of Stack and Heap)"
 description: "We will thoroughly explain pointers, the biggest hurdle in C programming, from the concept of memory addresses to the differences between stack and heap, and dynamic memory allocation. This is a complete guide for those aiming for a deep understanding of the C language."
 slug: "c-language-pointers-memory-management-stack-heap"
-date: 2026-09-21T14:51:08+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["c", "pointers", "memory", "stack", "heap"]

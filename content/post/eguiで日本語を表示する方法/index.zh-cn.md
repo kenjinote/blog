@@ -1,7 +1,7 @@
 ---
 title: '在Rust的GUI库“egui”中加载并显示中文字体（日语字体）的方法'
 slug: "eguiで日语を表示する方法"
-date: 2023-04-01T03:17:52+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["rust", "egui", "GUI库", "日语"]
 draft: false
 image: "img.webp"

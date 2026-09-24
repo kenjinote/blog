@@ -2,7 +2,7 @@
 title: "Sejarah Apple: Jejak dari Garasi ke Kapitalisasi Pasar Terbesar di Dunia dan DNA Inovasi"
 description: "Penjelasan lengkap tentang sejarah dan inovasi teknis Apple, mulai dari pendirian di garasi oleh Steve Jobs dan Wozniak, hingga revolusi iPhone dan pencapaian kapitalisasi pasar terbesar di dunia."
 slug: "history-of-apple"
-date: "2026-09-23T03:35:47+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

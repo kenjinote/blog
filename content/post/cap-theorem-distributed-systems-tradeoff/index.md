@@ -2,7 +2,7 @@
 title: "CAP定理と分散システム（一貫性、可用性、分断耐性のトレードオフ）"
 description: "分散システム設計における絶対的な法則「CAP定理」と、現代のデータベースが選択するアーキテクチャの妥協点。"
 slug: "cap-theorem-distributed-systems-tradeoff"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

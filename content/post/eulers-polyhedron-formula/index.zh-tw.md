@@ -2,7 +2,7 @@
 title: "尤拉多面體定理：V - E + F = 2 所展現的，形狀改變也不變的拓樸學魔法"
 description: "詳細解讀尤拉多面體定理（V - E + F = 2）的數學之美，以及它所引領的拓樸學世界。從正多面體到跨越維度的尤拉示性數，讓我們一起探索不變量的魅力。"
 slug: "eulers-polyhedron-formula"
-date: "2026-09-20T15:15:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "數學"

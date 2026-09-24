@@ -1,7 +1,7 @@
 ---
 title: "Algoritma Deteksi Siklus Robert Floyd (Algoritma Kura-kura dan Kelinci)"
 image: "eyecatch.jpg"
-date: 2026-09-14T00:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 description: "Penjelasan mendetail mengenai algoritma terkenal untuk mendeteksi siklus (putaran) dalam daftar (list) atau graf, yaitu 'Algoritma Deteksi Siklus Robert Floyd (Algoritma Kura-kura dan Kelinci)', disertai dengan ilustrasi, rumus matematika, dan implementasi dalam C++ dan Rust."
 categories: ["algorithms", "computer-science"]
 tags:

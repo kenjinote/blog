@@ -2,7 +2,7 @@
 title: "서버리스 아키텍처의 빛과 그림자: AWS Lambda의 이면과 콜드 스타트"
 description: "서버리스의 장점뿐만 아니라, 배후에서 움직이는 컨테이너의 원리, 콜드 스타트 문제와 그 대책(SnapStart 등)을 깊이 파헤칩니다."
 slug: "serverless-architecture-aws-lambda-cold-start"
-date: 2026-09-21T09:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - "cloud"

@@ -1,7 +1,7 @@
 ---
 title: 'أمثلة عملية على أتمتة المهام اليومية الروتينية بالكامل باستخدام برامج PowerShell النصية'
 slug: "powershell-daily-task-automation-scripts"
-date: "2026-09-13T06:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

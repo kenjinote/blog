@@ -2,7 +2,7 @@
 title: "Keajaiban Fisika: Cara Kerja Wi-Fi - Prinsip Pengiriman Data Melalui Gelombang Tak Terlihat"
 description: "Wi-Fi menghubungkan ponsel pintar dan PC ke internet. Kami akan menjelaskan dari sudut pandang fisika dan teknik komunikasi tentang bagaimana gelombang radio tak terlihat membawa data digital dalam jumlah sangat besar secara akurat dan pada kecepatan tinggi."
 slug: "physics-wifi"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

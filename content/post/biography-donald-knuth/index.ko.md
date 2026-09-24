@@ -1,6 +1,6 @@
 ---
 title: "컴퓨터 과학의 아버지, 도널드 크누스의 궤적과 철학"
-date: 2026-09-23T19:18:01+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["donald-knuth", "history"]
 image: "eyecatch.jpg"

@@ -2,7 +2,7 @@
 title: "Технология блокчейн и смарт-контракты (Механизмы распределенного реестра)"
 description: "Изучение фундаментальных принципов блокчейна, алгоритмов консенсуса и реализации смарт-контрактов."
 slug: "blockchain-technology-smart-contract-distributed-ledger"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "blockchain"

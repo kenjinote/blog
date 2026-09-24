@@ -1,7 +1,7 @@
 ---
 title: 'रीफैक्टरिंग का रहस्य: लिगेसी C++ कोड को सुरक्षित रूप से सुधारना'
 slug: "refactoring-legacy-cpp-code-safely"
-date: "2026-09-12T20:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

@@ -2,7 +2,7 @@
 title: "カントールの対角線論法（Cantor's Diagonal Argument） - 実数が有理数より「圧倒的に多い」ことの証明"
 description: "無限には「大きさ」の違いがある。ゲオルク・カントールが提唱した「対角線論法」を用いて、実数の濃度が自然数や有理数の濃度よりも真に大きいことを証明する過程を詳細に解説します。"
 slug: "cantors-diagonal-argument"
-date: "2026-09-14T13:11:25+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "foundations-of-mathematics", "set-theory"]
 tags: ["Cantor", "対角線論法", "無限", "数学", "証明"]

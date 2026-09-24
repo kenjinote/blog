@@ -2,7 +2,7 @@
 title = "Conjectura dos Primos Gêmeos (Twin Prime Conjecture) - Existem infinitos pares de primos com diferença de 2?"
 description = "Explicação detalhada sobre a Conjectura dos Primos Gêmeos, um problema não resolvido na matemática, incluindo sua história, resoluções parciais e tendências recentes de pesquisa."
 slug = "twin-prime-conjecture"
-date = "2026-09-14T13:04:13+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image = "eyecatch.jpg"
 categories = ["mathematics"]
 tags = ["Prime Numbers", "Number Theory", "Unsolved Problems"]

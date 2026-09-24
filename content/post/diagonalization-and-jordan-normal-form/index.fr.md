@@ -2,7 +2,7 @@
 title: "Diagonalisation et forme de Jordan : la méthode ultime pour simplifier les matrices complexes"
 description: "Une explication détaillée de la diagonalisation en algèbre linéaire et de la forme de Jordan pour les matrices non diagonalisables, couvrant le sens intuitif, les définitions mathématiques et les applications."
 slug: "diagonalization-and-jordan-normal-form"
-date: "2026-09-20T14:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["linear-algebra", "matrix", "eigenvalue", "jordan-normal-form"]

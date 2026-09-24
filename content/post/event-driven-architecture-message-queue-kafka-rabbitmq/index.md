@@ -2,7 +2,7 @@
 title: "イベント駆動アーキテクチャとメッセージキュー（Kafka, RabbitMQ）"
 description: "非同期通信によってシステム間の結合度を下げるイベント駆動型設計と、メッセージブローカーの役割。"
 slug: "event-driven-architecture-message-queue-kafka-rabbitmq"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

@@ -2,7 +2,7 @@
 title: 'Kommunikation der nächsten Generation: Funktionsweise und Merkmale von 5G - Die durch "ultrahohe Geschwindigkeit, extrem niedrige Latenz und massive gleichzeitige Verbindungen" geschaffene Zukunft'
 description: 'Das Mobilfunksystem der 5. Generation, "5G", das nicht nur für Smartphones, sondern auch als Infrastruktur für autonomes Fahren und Telemedizin erwartet wird. Wir erklären die zugrundeliegenden Technologien wie Millimeterwellen, Beamforming und Edge Computing.'
 slug: "network-5g"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

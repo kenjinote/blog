@@ -2,7 +2,7 @@
 title: "皮克定理：只需數網格點就能求出面積"
 description: "結合圖解和證明，詳細講解如何透過內部和邊界上的點數，求出以網格點為頂點的無洞多邊形面積的公式。"
 slug: "picks-theorem"
-date: "2026-09-20T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "數學"

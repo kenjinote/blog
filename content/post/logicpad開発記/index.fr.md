@@ -1,7 +1,7 @@
 ---
 title: 'Apprendre du développement de LogicPad : le parcours de la création et du lancement d''une application Windows personnelle'
 slug: "logicpad-windows-app-development-journey"
-date: "2026-09-13T04:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

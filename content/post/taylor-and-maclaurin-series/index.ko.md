@@ -2,7 +2,7 @@
 title: "테일러 전개와 매클로린 전개: 복잡한 함수를 다항식으로 근사하는 마법"
 description: "미적분학의 비법인 테일러 전개와 매클로린 전개에 대해, 직관적인 의미부터 수학적 유도, 프로그래밍 및 물리학에서의 응용까지 자세히 설명합니다."
 slug: "taylor-and-maclaurin-series"
-date: "2026-09-20T14:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "수학"

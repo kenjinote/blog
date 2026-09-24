@@ -2,7 +2,7 @@
 title: "Permutations, Combinations, and the Binomial Theorem: The Beautiful Regularity of Numbers Seen in Pascal's Triangle"
 description: "A detailed explanation of the mathematical structure woven by permutations, combinations, the binomial theorem, and Pascal's triangle."
 slug: "permutations-combinations-and-binomial-theorem"
-date: "2026-09-20T15:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematics"

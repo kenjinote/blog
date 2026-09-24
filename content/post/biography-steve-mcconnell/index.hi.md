@@ -1,6 +1,6 @@
 ---
 title: "स्टीव मैककोनेल की विरासत: वह गुरु जिसने सॉफ्टवेयर विकास को 'इंजीनियरिंग' के स्तर तक पहुंचाया"
-date: 2026-09-23T19:18:01+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["steve-mcconnell", "history"]
 image: "eyecatch.jpg"

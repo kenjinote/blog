@@ -1,7 +1,7 @@
 ---
 title: "Die Poincaré-Vermutung - Ein schwieriges Problem der Topologie, das die Form des Universums enträtselt, und die Legende von Perelman"
 description: "Eine detaillierte Erklärung der gesamten Geschichte der 'Poincaré-Vermutung', die Mathematiker über 100 Jahre lang verblüffte, der Grundlagen der Topologie und der dramatischen Beweisführung durch Grigori Perelman."
-date: "2026-09-14T13:04:13+09:00"
+date: "2026-09-24T16:08:36+09:00"
 slug: "poincare-conjecture"
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]

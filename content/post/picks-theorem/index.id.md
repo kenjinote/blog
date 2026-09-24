@@ -2,7 +2,7 @@
 title: "Teorema Pick: Menemukan Luas Hanya dengan Menghitung Titik Kisi"
 description: "Penjelasan mendetail, beserta diagram dan pembuktian, dari rumus untuk menemukan luas poligon tanpa lubang dengan titik sudut pada titik kisi dari jumlah titik interior dan batas."
 slug: "picks-theorem"
-date: "2026-09-20T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matematika"

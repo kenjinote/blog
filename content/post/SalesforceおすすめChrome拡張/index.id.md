@@ -1,7 +1,7 @@
 ---
 title: 'Pengembangan Salesforce Menjadi Lebih Mudah! Ringkasan Ekstensi Chrome yang Direkomendasikan'
 slug: "SalesforceRekomendasiEkstensi Chrome"
-date: 2022-05-02T10:39:36+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Salesforce", "Ekstensi Chrome"]
 draft: false
 image: "img.webp"

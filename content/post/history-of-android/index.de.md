@@ -2,7 +2,7 @@
 title: "Der Gegenschlag durch Open Source: Die Geschichte von Android - Wie das größte mobile Betriebssystem der Welt entstand"
 description: "Um der Einführung des iPhones entgegenzuwirken, gründete Google die 'Open Handset Alliance'. Wir erklären, wie der Wechsel des Geschäftsmodells hin zur kostenlosen Bereitstellung des Betriebssystems Smartphones weltweit verändert hat."
 slug: "history-of-android"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

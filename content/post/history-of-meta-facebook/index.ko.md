@@ -2,7 +2,7 @@
 title: "Meta (구 Facebook)의 역사: SNS의 탄생에서 메타버스 공간으로의 도전"
 description: "SNS 제국에서 메타버스, 그리고 AI로의 여정"
 slug: "history-of-meta-facebook"
-date: "2026-09-23T00:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

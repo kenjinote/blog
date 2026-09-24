@@ -2,7 +2,7 @@
 title: "Board Game Strategy: Basic Chess Rules and Opening Strategies - The Board War to Corner the King"
 description: "Chess, the world's most played mind sport. From the basics of piece movement to center control, castling, and typical opening strategies (theory), we explain the theory for beginners to win."
 slug: "game-chess-rules"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

@@ -1,6 +1,6 @@
 ---
 title: "미켈란젤로 부오나로티: 르네상스 거장의 생애와 예술 철학"
-date: 2026-09-23T20:51:46+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["michelangelo", "history"]
 image: "eyecatch.jpg"

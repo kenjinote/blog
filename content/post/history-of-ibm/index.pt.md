@@ -2,7 +2,7 @@
 title: "História da IBM: De Cartões Perfurados a Mainframes e Computação Quântica"
 description: "Como a 'Big Blue' tem liderado a indústria de TI por mais de 100 anos."
 slug: "history-of-ibm"
-date: "2026-09-23T01:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

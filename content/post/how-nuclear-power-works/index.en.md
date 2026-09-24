@@ -2,7 +2,7 @@
 title: "How nuclear power works: from fission heat to electricity, and why cooling must continue after shutdown"
 description: "Understand nuclear power from binding energy and chain reactions to delayed neutrons, PWRs, BWRs, turbines, decay heat, and spent fuel, with history, diagrams, and worked examples."
 slug: "how-nuclear-power-works"
-date: "2026-09-24T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.png"
 categories: ["technology", "physics"]
 tags: ["nuclear-power", "nuclear-fission", "energy", "engineering", "history"]

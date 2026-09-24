@@ -1,7 +1,7 @@
 ---
 title: '收集了各種軟體的版本資訊對話方塊畫面'
 slug: "いろんな版本資訊ダイアログ集めてみた"
-date: 2024-03-02T21:32:11+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["版本資訊", "Windows", "MacOS"]
 draft: false
 image: "img.webp"

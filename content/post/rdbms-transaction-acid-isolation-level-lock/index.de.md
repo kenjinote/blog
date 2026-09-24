@@ -2,7 +2,7 @@
 title: "Transaktionen und ACID-Eigenschaften von RDBMS (Isolationsstufen und Sperren)"
 description: "Von den Grundlagen der Transaktionsverarbeitung zum Schutz der Datenbankintegrität bis hin zu Anomalien durch Isolationsstufen und Sperrmechanismen."
 slug: "rdbms-transaction-acid-isolation-level-lock"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "database"

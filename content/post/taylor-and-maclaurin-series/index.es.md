@@ -2,7 +2,7 @@
 title: "Series de Taylor y Maclaurin: La magia de aproximar funciones complejas con polinomios"
 description: "Una explicación detallada de las series de Taylor y Maclaurin, los secretos del cálculo, desde los significados intuitivos hasta las derivaciones matemáticas y sus aplicaciones en programación y física."
 slug: "taylor-and-maclaurin-series"
-date: "2026-09-20T14:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemáticas"

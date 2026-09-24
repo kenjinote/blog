@@ -2,7 +2,7 @@
 title: "Los 3 elementos principales de la Programación Orientada a Objetos (POO) y la práctica de los principios SOLID: Desde la historia hasta técnicas de diseño avanzado"
 description: "Una guía completa que abarca desde los antecedentes históricos de la Programación Orientada a Objetos, sus 3 elementos principales (encapsulamiento, herencia y polimorfismo), hasta la práctica profunda de los principios SOLID."
 slug: "object-oriented-programming-oop-solid-principles"
-date: "2026-09-21T14:51:08+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "computer-science"

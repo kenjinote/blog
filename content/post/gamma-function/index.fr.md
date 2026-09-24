@@ -2,7 +2,7 @@
 title: "La Fonction Gamma : Le Chef-d'œuvre d'Euler Étendant la Factorielle aux Nombres Réels et Complexes"
 description: "La fonction Gamma relie les factorielles discrètes à une courbe lisse. Nous explorons en profondeur sa définition, ses propriétés, l'histoire de sa découverte par Euler, le prolongement analytique, l'approximation de Stirling et ses applications dans la science moderne."
 slug: "gamma-function"
-date: 2026-09-20T14:40:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathématiques"]
 tags: ["Fonction Gamma", "Euler", "Analyse Complexe", "Calcul Différentiel et Intégral"]

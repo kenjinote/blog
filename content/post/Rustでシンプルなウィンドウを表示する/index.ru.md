@@ -1,7 +1,7 @@
 ---
 title: 'Как создать и отобразить простое окно Windows с помощью Rust и winapi'
 slug: "RustでシンプルなОкноを表示する"
-date: 2022-10-01T19:08:58+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Rust", "окно"]
 draft: false
 image: "images/rust_logo.webp"

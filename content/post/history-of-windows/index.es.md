@@ -2,7 +2,7 @@
 title: "Historia de los SO: La genealogía de Windows (Desde MS-DOS hasta la culminación de la arquitectura NT)"
 description: "La historia de la evolución de Windows, comenzando desde el CUI de MS-DOS, la transición a GUI y culminando en la robusta arquitectura NT."
 slug: "history-of-windows"
-date: "2026-09-23T02:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

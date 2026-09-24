@@ -6,7 +6,7 @@
 
 title: 'Windows API에서의 버튼(GUI 컨트롤) 생성과 이벤트 처리 구현 방법'
 slug: "버튼ついて"
-date: 2023-01-14T20:24:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["버튼", "GUI"]
 draft: false
 image: "img.webp"

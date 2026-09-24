@@ -1,7 +1,7 @@
 ---
 title: 'Verrouillez votre PC Windows en 1 seconde ! Comment créer et utiliser un raccourci pratique'
 slug: "Verrouiller l'ordinateurするRaccourciを作成する方法"
-date: 2024-04-01T01:37:49+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Windows", "Verrouiller l'ordinateur", "Raccourci"]
 draft: false
 image: "img.webp"

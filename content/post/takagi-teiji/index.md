@@ -2,7 +2,7 @@
 title: '高木貞治：類体論を打ち立てた日本の世界的数学者'
 description: '日本の近代数学の父、高木貞治の生涯と、類体論の構築という偉大な数学的業績について深く掘り下げます。'
 slug: 'takagi-teiji'
-date: '2026-09-20T19:50:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - 'mathematics'

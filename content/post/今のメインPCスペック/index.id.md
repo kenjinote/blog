@@ -1,7 +1,7 @@
 ---
 title: '[Core i7-8700K / RAM 32GB] Spesifikasi PC Utama dan Lingkungan Kerja Saat Ini'
 slug: "今のメインPCスペック"
-date: 2022-09-08T01:55:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["PC"]
 draft: false
 image: "images/img.webp"

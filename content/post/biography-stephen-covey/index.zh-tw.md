@@ -1,6 +1,6 @@
 ---
 title: "史蒂芬·柯維：以《與成功有約》改變世界的領導力大師"
-date: 2026-09-23T20:59:58+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["stephen-covey", "history"]
 image: "eyecatch.jpg"

@@ -1,7 +1,7 @@
 ---
 title: 'Создание CI/CD пайплайна для C++ проектов с использованием GitHub Actions'
 slug: 'github-actions-cpp-cicd-pipeline'
-date: '2026-09-12T18:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 math: true
 mermaid: true

@@ -1,7 +1,7 @@
 ---
 title: "Guru dan Murid, Pengadilan yang Kontradiktif Siapapun Pemenangnya: Paradoks Protagoras"
 description: "Perselisihan di pengadilan antara guru dan murid mengenai syarat pembayaran biaya kuliah. Sebuah paradoks hukum Yunani Kuno di mana logikanya saling bertentangan, tak peduli siapapun yang menang atau kalah."
-date: 2026-09-10T21:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 slug: "paradox-of-the-court"
 image: "img/paradox_of_court.jpg"

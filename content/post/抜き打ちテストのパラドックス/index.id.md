@@ -2,7 +2,7 @@
 title: 'Paradoks Tes Dadakan: Hari di Mana Tes yang Secara Logika "Sama Sekali Tidak Mungkin" Diadakan'
 slug: 'unexpected-hanging-paradox'
 description: '"Minggu depan, pada salah satu hari dari Senin hingga Jumat, akan diadakan tes dadakan yang tidak dapat kalian prediksi"——Terhadap deklarasi guru ini, para siswa membuktikan bahwa "secara logika tes dadakan tidak mungkin dilakukan". Namun......'
-date: '2026-09-10T10:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/unexpected_hanging.jpg'
 math: true
 mermaid: true

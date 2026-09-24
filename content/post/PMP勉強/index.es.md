@@ -8,7 +8,7 @@
 
 title: 'Conocimientos básicos y resumen de estudio para el examen PMP: Compatible con la 7ª edición del PMBOK'
 slug: "PMPEstudio"
-date: 2024-02-04T18:41:31+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["PMP", "PMBOK", "Estudio"]
 draft: false
 image: "img.webp"

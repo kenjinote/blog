@@ -1,7 +1,7 @@
 ---
 title: 'El día a día de un ingeniero que gestiona su salud con anillos inteligentes (Hackeos de Salud)'
 slug: "engineer-health-hacks-wearables"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

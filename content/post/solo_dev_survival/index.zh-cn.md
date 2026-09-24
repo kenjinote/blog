@@ -1,7 +1,7 @@
 ---
 title: '个人开发者与大企业及世界竞争的生存战略'
 slug: "solo-developer-survival-strategy"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

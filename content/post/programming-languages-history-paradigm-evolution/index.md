@@ -2,7 +2,7 @@
 title: "プログラミング言語の歴史とパラダイムの変遷（アセンブリ、C、JavaからRust、Goまで）"
 description: "プログラミング言語はどのように進化してきたのか。アセンブリ言語から始まり、C言語、Java、そして現代のRustやGoに至るまでの歴史とパラダイムの変遷を詳細に解説します。"
 slug: "programming-languages-history-paradigm-evolution"
-date: "2026-09-21T14:51:07+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["programming-languages", "history", "paradigm", "rust", "go"]

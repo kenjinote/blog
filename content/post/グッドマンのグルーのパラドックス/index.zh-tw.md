@@ -1,7 +1,7 @@
 ---
 title: "祖母綠是綠色，還是「綠藍（Grue）」色？：古德曼的新歸納之謎"
 description: "到了明天，全世界的祖母綠可能都會變成藍色。從根本上動搖科學預測基礎的「綠藍（Grue）」悖論。"
-date: 2026-09-10T21:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 slug: "grue-paradox"
 image: "img/grue_paradox.jpg"

@@ -1,7 +1,7 @@
 ---
 title: '암호 기술의 역사: 카이사르 암호에서 양자 내성 암호(PQC)까지'
 slug: "history-of-cryptography-caesar-to-pqc"
-date: "2026-09-11T15:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

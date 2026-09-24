@@ -1,7 +1,7 @@
 ---
 title: 'Código de exemplo simples em C para gerar e determinar números primos em um intervalo especificado'
 slug: "Número Primoを生成するC言語コード"
-date: 2024-08-24T09:38:10+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["C", "Números primos", "Algoritmo", "Matemática"]
 draft: false
 image: "img.webp"

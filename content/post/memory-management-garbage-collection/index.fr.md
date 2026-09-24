@@ -2,7 +2,7 @@
 title: "Gestion de la mémoire et ramasse-miettes : La vérité sur la mémoire apprise de C, Java et Rust"
 description: "Des bases de la gestion de la mémoire en programmation jusqu'à la gestion manuelle en C, le ramasse-miettes de Java, et le modèle de possession de Rust, nous comparons et expliquons tout en profondeur."
 slug: "memory-management-garbage-collection"
-date: "2026-09-21T02:58:36+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["programming", "computer-science", "software-engineering"]
 tags: ["memory-management", "c-language", "java", "rust", "garbage-collection"]

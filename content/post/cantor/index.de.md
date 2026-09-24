@@ -2,7 +2,7 @@
 title: "Georg Cantor: Das tragische Genie, das die Hierarchie der Unendlichkeit entdeckte und die Grundlagen der Mathematik schuf"
 description: "Eine detaillierte Erklärung des turbulenten Lebens von Georg Cantor, dem Begründer der Mengenlehre, und seiner erstaunlichen mathematischen Leistung, zu beweisen, dass es verschiedene Größen der Unendlichkeit gibt."
 slug: "cantor"
-date: "2026-09-20T19:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematik"

@@ -2,7 +2,7 @@
 title: "Gabriel Lamé: Ein Gigant, der eine Brücke zwischen reiner und angewandter Mathematik schlug"
 description: "Ein tiefer Einblick in das Leben des französischen Mathematikers Gabriel Lamé und seine vielfältigen Errungenschaften, einschließlich der Lamé-Kurve und des Satzes von Lamé zum euklidischen Algorithmus."
 slug: "lame"
-date: "2026-09-20T19:20:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematik", "Biografie"]
 tags: ["Gabriel Lamé", "Geschichte der Mathematik", "Zahlentheorie", "Elastizität", "Geometrie"]

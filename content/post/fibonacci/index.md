@@ -2,7 +2,7 @@
 title: "レオナルド・フィボナッチ：中世ヨーロッパに数学の光をもたらした天才"
 description: "フィボナッチの生涯、『算盤の書』によるアラビア数字の普及、そして自然界に潜むフィボナッチ数列と黄金比の驚くべき関係について深く掘り下げます。"
 slug: "fibonacci"
-date: "2026-09-20T18:40:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Fibonacci", "Mathematics", "History", "Golden Ratio", "Liber Abaci"]

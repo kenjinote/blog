@@ -5,7 +5,7 @@
 
 title: 'Cómo eliminar por lotes y a alta velocidad carpetas grandes en Windows 【Símbolo del sistema】'
 slug: "大きなフォルダーを高速一括削除"
-date: 2022-09-20T16:04:02+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Símbolo del sistema"]
 draft: false
 image: "img.webp"

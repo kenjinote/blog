@@ -2,7 +2,7 @@
 title: "Geometric Meaning of the Determinant: More Than Just a Formula, It's the 'Volume Scale Factor' and 'Orientation Reversal'"
 description: "The determinant is not just a calculation formula, but an important geometric indicator of the volume scale factor and orientation reversal of space by linear transformations. In this article, we explain its intuitive meaning in detail with abundant diagrams and formulas."
 slug: "geometric-meaning-of-determinant"
-date: "2026-09-20T14:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "Mathematics"

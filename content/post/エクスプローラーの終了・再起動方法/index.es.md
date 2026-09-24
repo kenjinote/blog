@@ -8,7 +8,7 @@
 
 title: 'Resumen de métodos para cerrar y reiniciar el Explorador de Windows'
 slug: "Exploradorの終了・再起動方法"
-date: 2024-03-30T15:40:24+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Explorador de archivos"]
 draft: false
 image: "img_2.webp"

@@ -2,7 +2,7 @@
 title: "Kiyosi Ito: O Pai das Equações Diferenciais Estocásticas e a Matemática por trás das Finanças Modernas"
 description: "Um olhar profundo sobre a vida de Kiyosi Ito, conhecido pelo Lema de Ito, suas conquistas no cálculo estocástico e seu impacto na sociedade moderna."
 slug: "ito-kiyosi"
-date: "2026-09-20T20:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Kiyosi Ito", "Equações Diferenciais Estocásticas", "Engenharia Financeira", "História da Matemática"]

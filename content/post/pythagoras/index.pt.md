@@ -2,7 +2,7 @@
 title: 'Pitágoras: A Interseção da Matemática e do Misticismo'
 description: 'Uma exploração profunda da vida do matemático da Grécia antiga Pitágoras, o teorema de Pitágoras e a filosofia de que tudo é número.'
 slug: 'pythagoras'
-date: '2026-09-20T18:40:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - 'matemática'

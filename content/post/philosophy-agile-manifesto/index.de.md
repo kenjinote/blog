@@ -1,5 +1,6 @@
 ---
 title: "[Hinter den Kulissen des Agilen Manifests] Die Geschichte einer Revolution, die den Grundstein der modernen Softwareentwicklung legte"
+date: "2026-09-24T16:08:36+09:00"
 description: "Das \"Manifest für Agile Softwareentwicklung\" wurde 2001 von 17 Technikern entworfen, die sich in Snowbird, Utah, versammelten. In diesem Artikel untersuchen wir die historischen Hintergründe, das damalige Krisengefühl und die wahre Philosophie und Essenz, die moderne Entwicklungsorganisationen von Agile lernen sollten."
 slug: "philosophy-agile-manifesto"
 categories: ["philosophy"]

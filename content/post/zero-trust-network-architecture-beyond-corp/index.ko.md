@@ -2,7 +2,7 @@
 title: "제로 트러스트 네트워크 아키텍처 (경계 기반 방어로부터의 탈피)"
 description: "Google의 BeyondCorp에서 배우는 제로 트러스트 아키텍처의 개념과 구현 방법."
 slug: "zero-trust-network-architecture-beyond-corp"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

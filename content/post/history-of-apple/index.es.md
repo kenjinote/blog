@@ -2,7 +2,7 @@
 title: "Historia de Apple: Desde el garaje hasta la mayor capitalización bursátil del mundo y su ADN de innovación"
 description: "Explicación exhaustiva de la historia e innovación tecnológica de Apple, desde su fundación en un garaje por Steve Jobs y Wozniak, pasando por la revolución del iPhone, hasta alcanzar la mayor capitalización bursátil del mundo."
 slug: "history-of-apple"
-date: "2026-09-23T03:35:47+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

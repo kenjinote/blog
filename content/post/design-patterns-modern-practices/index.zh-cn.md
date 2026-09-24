@@ -2,7 +2,7 @@
 title: "重新思考设计模式：GoF 过时了吗？现代的最佳实践"
 description: "1994 年提出的 GoF 设计模式，在现代编程语言中是否仍然有效？结合函数式编程的影响和新范式，深入探讨现代设计的最佳实践。"
 slug: "design-patterns-modern-practices"
-date: "2026-09-21T02:58:36+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "architecture"

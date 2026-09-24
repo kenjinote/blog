@@ -1,7 +1,7 @@
 ---
 title: '分析llama.cpp的量化技术（GGUF）原理'
 slug: "llama-cpp-quantization-gguf"
-date: "2026-09-11T00:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

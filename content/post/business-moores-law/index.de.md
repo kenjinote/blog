@@ -1,5 +1,6 @@
 ---
 title: "Mooresches Gesetz: Die Zukunft, gewoben aus Halbleitern und exponentieller Evolution"
+date: "2026-09-24T16:08:36+09:00"
 description: "Wie das \"Mooresche Gesetz\" die Halbleiterindustrie angetrieben und die exponentielle technologische Entwicklung in der modernen Gesellschaft ermöglicht hat. Eine umfassende Erklärung der Geschichte, der Mechanismen, der Grenzen und zukünftiger Technologien."
 slug: "business-moores-law"
 categories: ["business"]

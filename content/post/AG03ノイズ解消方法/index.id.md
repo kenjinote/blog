@@ -1,7 +1,7 @@
 ---
 title: '[Solusi Cepat] Langkah-langkah Pembaruan Driver untuk Menghilangkan Noise Kresek pada YAMAHA AG03'
 slug: "AG03Kebisingan解消方法"
-date: 2023-03-18T01:17:10+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["YAMAHA", "AG03", "Noise"]
 draft: false
 image: "img.webp"

@@ -1,5 +1,6 @@
 ---
 title: "[Behind the Agile Manifesto] The Trajectory of a Revolution that Laid the Foundation for Modern Software Development"
+date: "2026-09-24T16:08:36+09:00"
 description: "Drafted by 17 technologists gathered in Snowbird, Utah in 2001, the \"Agile Manifesto for Software Development\" revolutionized the industry. This article delves deeply into the historical background, the sense of crisis at the time, and the philosophy and essence that modern development organizations should truly learn from Agile."
 slug: "philosophy-agile-manifesto"
 categories: ["philosophy"]

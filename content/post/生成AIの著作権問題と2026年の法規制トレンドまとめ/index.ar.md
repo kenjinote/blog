@@ -1,7 +1,7 @@
 ---
 title: 'قضايا حقوق الطبع والنشر للذكاء الاصطناعي التوليدي وملخص لاتجاهات التنظيم القانوني لعام 2026'
 slug: "ai-copyright-law-2026-trends"
-date: "2026-09-11T23:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

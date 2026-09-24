@@ -2,7 +2,7 @@
 title: "原子能发电的原理：裂变热如何变成电，停堆后为什么还要冷却"
 description: "从原子核结合能、链式反应、缓发中子到压水堆、沸水堆、汽轮机、衰变热和乏燃料，通过历史、图解与计算示例理解核电。"
 slug: "how-nuclear-power-works"
-date: "2026-09-24T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.png"
 categories: ["technology", "physics"]
 tags: ["nuclear-power", "nuclear-fission", "energy", "engineering", "history"]

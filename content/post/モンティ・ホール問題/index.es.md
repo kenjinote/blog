@@ -2,7 +2,7 @@
 title: 'El problema de Monty Hall: Una trampa para la intuición y su solución completa mediante inferencia bayesiana'
 slug: 'monty-hall-problem'
 description: 'Un juego de televisión donde eliges un premio entre 3 puertas. Después de que el presentador abre una puerta perdedora, ¿deberías cambiar tu elección? Analizamos en profundidad el "problema de Monty Hall", que generó un gran debate mundial entre los matemáticos, desde las perspectivas de la teoría de la probabilidad, la inferencia bayesiana y la psicología cognitiva.'
-date: '2026-09-10T00:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/monty_hall.jpg'
 math: true
 mermaid: true

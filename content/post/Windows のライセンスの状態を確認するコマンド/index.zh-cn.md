@@ -1,7 +1,7 @@
 ---
 title: '确认Windows许可证激活状态的方法！一键执行命令轻松检查'
 slug: "Windows の许可证の状態を確認する命令"
-date: 2025-04-14T00:41:45+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Windows", "许可证", "命令提示符"]
 draft: false
 image: "img_1.webp"

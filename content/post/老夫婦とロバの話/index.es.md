@@ -9,7 +9,7 @@
 
 title: 'Aprendiendo de la historia del anciano, la anciana y el burro: Cómo vivir sin dejarse influir por la opinión de los demás'
 slug: "La historia de la pareja de ancianos y el burro"
-date: 2024-09-18T00:56:59+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["La historia de la pareja de ancianos y el burro", "Sátira"]
 draft: false
 image: "img.webp"

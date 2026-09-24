@@ -2,7 +2,7 @@
 title: "Technologie d'IA dans les jeux de société : Règles de base du Shogi et stratégies majeures - Explication de l'Ibisha et du Furibisha"
 description: "« Shogi », le jeu de réflexion ultime qui se déroule sur un plateau de 81 cases. Des règles de base pour débutants aux stratégies phares « Ibisha » et « Furibisha » utilisées par les professionnels, nous expliquons tout de manière simple."
 slug: "game-shogi-rules"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

@@ -1,5 +1,6 @@
 ---
 title: "Apa Itu Hukum Parkinson? Penjelasan Lengkap Mekanisme Mengembangnya Pekerjaan dan Waktu hingga Cara Mengatasinya"
+date: "2026-09-24T16:08:36+09:00"
 description: "Membahas tuntas tentang Hukum Parkinson yang menyatakan \"pekerjaan akan mengembang untuk mengisi waktu yang tersedia\", mulai dari latar belakang sejarah, mekanisme psikologis, hingga cara konkret mengatasinya dalam bisnis dan kehidupan sehari-hari dengan volume pembahasan yang mendalam. Panduan lengkap untuk manajemen waktu dan peningkatan produktivitas."
 slug: "business-parkinsons-law"
 categories: ["business"]

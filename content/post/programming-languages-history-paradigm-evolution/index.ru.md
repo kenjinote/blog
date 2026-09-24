@@ -2,7 +2,7 @@
 title: "История языков программирования и эволюция парадигм (от Ассемблера, C, Java до Rust и Go)"
 description: "Как эволюционировали языки программирования? Подробный разбор истории и эволюции парадигм, начиная с языка ассемблера, через C и Java, вплоть до современных Rust и Go."
 slug: "programming-languages-history-paradigm-evolution"
-date: "2026-09-21T14:51:07+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["programming-languages", "history", "paradigm", "rust", "go"]

@@ -2,7 +2,7 @@
 title: "Niels Henrik Abel: The Tragic Genius Who Denied the Quintic Equation Formula"
 description: "Niels Henrik Abel, a brilliant mathematician from Norway. This article explores his turbulent life and the monumental legacy he left on modern mathematics before his tragic death at age 26."
 slug: "abel"
-date: "2026-09-20T19:20:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematics", "Biography"]
 tags: ["Abel", "Algebra", "History", "Math"]

@@ -1,7 +1,7 @@
 ---
 title: 'Résumé des chefs-d''œuvre recommandés de la musique japonaise : J-POP nostalgique et chansons classiques qui touchent le cœur'
 slug: "好きなMusique japonaise"
-date: 2024-01-06T04:11:01+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Musique Japonaise", "Musique"]
 draft: false
 image: "img.webp"

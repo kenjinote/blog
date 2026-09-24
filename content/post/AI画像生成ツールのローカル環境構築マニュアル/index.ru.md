@@ -1,7 +1,7 @@
 ---
 title: 'Руководство по настройке локальной среды для инструментов генерации ИИ-изображений (Stable Diffusion и др.)'
 slug: "local-ai-image-generation-setup"
-date: "2026-09-11T19:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

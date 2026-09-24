@@ -1,6 +1,6 @@
 ---
 title: "Jean-Paul Sartre: A Grande Estrela do Existencialismo e sua Trajetória"
-date: 2026-09-23T19:53:31+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["jean-paul-sartre", "history"]
 image: "eyecatch.jpg"

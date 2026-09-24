@@ -2,7 +2,7 @@
 title: "René Descartes: Padre de la filosofía moderna y fundador de la geometría analítica"
 description: "René Descartes es famoso por 'Pienso, luego existo'. Exploramos su extraordinaria vida y el nacimiento de la geometría analítica que revolucionó la historia de las matemáticas."
 slug: "descartes"
-date: 2026-09-20T18:50:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemáticas"

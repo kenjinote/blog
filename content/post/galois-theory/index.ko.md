@@ -2,7 +2,7 @@
 title: "갈루아 이론(Galois Theory) - 5차 이상의 방정식에 근의 공식이 존재하지 않는 이유와 군론의 탄생"
 description: "갈루아 이론이란 무엇인가? 왜 5차 이상의 방정식에는 근의 공식이 존재하지 않는가? 에바리스트 갈루아가 남긴 군론의 기초와 수학에서의 대칭성의 아름다움을 알기 쉽게 해설합니다."
 slug: "galois-theory"
-date: "2026-09-14T13:04:13+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "algebra"]
 tags:

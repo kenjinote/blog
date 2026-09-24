@@ -2,7 +2,7 @@
 title: '生成式 AI 的進化所帶來的「新數位落差」日益嚴重'
 description: '深入探討由於 AI 技術的快速發展，數位落差已從硬體和網路存取權限，轉移到「提示工程與協調編排能力」的新型態數位鴻溝。'
 slug: "generative-ai-digital-divide"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

@@ -2,7 +2,7 @@
 title: "連続体仮説（Continuum Hypothesis） - カントールの究極の問いと「証明も反証もできない」結末"
 description: "ゲオルク・カントールによって提唱された連続体仮説（CH）の歴史、数学的背景、そしてゲーデルとコーエンによる独立性の証明について深く掘り下げます。"
 slug: "continuum-hypothesis"
-date: "2026-09-14T13:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "set-theory"]
 tags: ["Continuum Hypothesis", "Cantor", "Infinity", "Math"]

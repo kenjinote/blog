@@ -2,7 +2,7 @@
 title: "イベント駆動アーキテクチャと非同期処理の深層：Event Loop、Actorモデル、CQRS"
 description: "現代の分散システムにおいて不可欠なイベント駆動アーキテクチャと非同期処理について、Event Loop、Actorモデル、CQRSの観点から深く掘り下げます。"
 slug: "event-driven-architecture-async"
-date: "2026-09-21T02:58:36+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "architecture"

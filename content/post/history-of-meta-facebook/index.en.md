@@ -2,7 +2,7 @@
 title: "History of Meta (formerly Facebook): From the Birth of SNS to the Challenge of the Metaverse Space"
 description: "The journey from the SNS empire to the metaverse and AI"
 slug: "history-of-meta-facebook"
-date: "2026-09-23T00:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

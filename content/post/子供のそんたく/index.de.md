@@ -1,7 +1,7 @@
 ---
 title: 'Berührt von der Freundlichkeit einer 2-Jährigen! Eine herzerwärmende Episode über das Einfühlungsvermögen und die Rücksichtnahme eines Kindes'
 slug: "Kindのそんたく"
-date: 2022-09-07T04:40:52+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Kind"]
 draft: false
 image: "images/img.webp"

@@ -1,7 +1,7 @@
 ---
 title: 'List of Built-in Shortcodes in Hugo: YouTube and Twitter Embedding'
 slug: "HUGOで使えるShortコード"
-date: 2022-09-11T22:59:52+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["HUGO"]
 draft: false
 image: "img.webp"

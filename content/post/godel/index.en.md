@@ -2,7 +2,7 @@
 title: "Kurt Gödel: The Incompleteness Theorems and the Trajectory of a Genius Mathematician"
 description: "A detailed explanation of the life of Kurt Gödel, the greatest logician of the 20th century, and the incompleteness theorems that shook the foundations of mathematics."
 slug: "godel"
-date: "2026-09-20T20:20:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Kurt Gödel", "Incompleteness Theorems", "Mathematics", "Logic", "History"]

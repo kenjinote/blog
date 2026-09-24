@@ -1,7 +1,7 @@
 ---
 title: '尝试用静态网站生成器Hugo搭建了博客！记录日常与技术笔记'
 slug: "博客、はじめてみました"
-date: 2022-09-02T07:23:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["杂记"]
 draft: false
 image: "images/komeda.webp"

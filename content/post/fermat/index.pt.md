@@ -2,7 +2,7 @@
 title: "Pierre de Fermat: O \"Príncipe dos Amadores\" Que Escreveu Romance nas Margens"
 description: "Uma explicação detalhada da vida e das extraordinárias realizações matemáticas (Último Teorema de Fermat, Pequeno Teorema, início do cálculo, etc.) de Pierre de Fermat, um juiz francês do século XVII que deixou uma marca imortal na história da matemática."
 slug: "fermat"
-date: "2026-09-20T18:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["matemática", "biografia"]
 tags: ["Fermat", "História da Matemática", "Último Teorema de Fermat", "Teoria dos Números", "Teoria das Probabilidades"]

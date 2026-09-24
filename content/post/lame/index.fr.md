@@ -2,7 +2,7 @@
 title: "Gabriel Lamé : Un géant jetant un pont entre mathématiques pures et appliquées"
 description: "Une plongée approfondie dans la vie du mathématicien français Gabriel Lamé et ses nombreuses réalisations, dont la courbe de Lamé et le théorème de Lamé dans l'algorithme d'Euclide."
 slug: "lame"
-date: "2026-09-20T19:20:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathématiques", "Biographie"]
 tags: ["Gabriel Lamé", "Histoire des mathématiques", "Théorie des nombres", "Élasticité", "Géométrie"]

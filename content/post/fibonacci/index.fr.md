@@ -2,7 +2,7 @@
 title: "Leonardo Fibonacci : Le génie qui a apporté la lumière des mathématiques à l'Europe médiévale"
 description: 'Une plongée approfondie dans la vie de Fibonacci, la diffusion des chiffres arabes à travers le "Liber Abaci", et la relation étonnante entre la suite de Fibonacci et le nombre d''or caché dans la nature.'
 slug: "fibonacci"
-date: "2026-09-20T18:40:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathématiques", "Biographie"]
 tags: ["Fibonacci", "Mathématiques", "Histoire", "Nombre d'Or", "Liber Abaci"]

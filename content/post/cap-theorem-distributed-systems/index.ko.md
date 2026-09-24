@@ -2,7 +2,7 @@
 title: "CAP 정리와 분산 시스템：분산 DB가 안고 있는 본질적인 딜레마"
 description: "분산 시스템에서 가장 중요한 원칙인 CAP 정리에 대해, 그 정의부터 증명, PACELC 정리로의 확장, 그리고 실제 분산 데이터베이스에서의 구현까지 깊이 파헤칩니다."
 slug: "cap-theorem-distributed-systems"
-date: "2026-09-21T00:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "분산 시스템"

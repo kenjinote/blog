@@ -1,5 +1,6 @@
 ---
 title: "SQL and the Relational Model: The Depths and Philosophy of Edgar F. Codd's Set-Theoretic Approach"
+date: "2026-09-24T16:08:36+09:00"
 description: "A deep dive into the relational model underlying SQL and Codd's set theory. A definitive, long-form article detailing everything from the historical background of databases to their mathematical foundations and philosophical implications in modern application design."
 slug: "philosophy-sql-relational-model"
 categories: ["philosophy"]

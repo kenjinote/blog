@@ -1,7 +1,7 @@
 ---
 title: 'История разработки low-code инструмента «LogicPad»: почему мы его создали?'
 slug: "LogicPad 開発秘話"
-date: 2025-07-30T23:51:35+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["LogicPad", "Разработка", "История"]
 draft: false
 image: "img.webp"

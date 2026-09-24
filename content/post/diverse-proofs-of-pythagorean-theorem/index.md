@@ -2,7 +2,7 @@
 title: "ピタゴラスの定理の多様な証明：幾何、代数、そしてアインシュタインの証明まで"
 description: "ピタゴラスの定理（三平方の定理）の魅力的な証明方法を複数紹介します。ユークリッドからアインシュタインまで、様々な視点から数学の美しさを探求しましょう。"
 slug: "diverse-proofs-of-pythagorean-theorem"
-date: "2026-09-20T15:15:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "mathematics"

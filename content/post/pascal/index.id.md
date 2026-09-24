@@ -2,7 +2,7 @@
 title: "Blaise Pascal: Jejak dan Pencapaian Besar Sang Jenius Matematika, Fisika, dan Filsafat"
 description: "Blaise Pascal, yang dikenal dengan kutipan 'Manusia adalah alang-alang yang berpikir'. Kami merinci kehidupan dan pencapaiannya yang penuh gejolak, mulai dari teorema Pascal, segitiga Pascal, dan pendirian teori probabilitas, hingga pembuktian ruang hampa dalam fisika, dan tujuan filosofisnya 'Pensées'."
 slug: "pascal"
-date: 2026-09-20T19:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Matematika", "Biografi"]
 tags: ["Pascal", "Teori Probabilitas", "Geometri Proyektif", "Teorema Pascal", "Segitiga Pascal", "Fisika"]

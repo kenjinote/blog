@@ -2,7 +2,7 @@
 title: "CI/CD конвейеры и GitHub Actions: лучшие практики непрерывной интеграции"
 description: "Охватывает принципы CI/CD, ускоряющие жизненный цикл разработки программного обеспечения, а также практические знания по созданию конвейеров с использованием GitHub Actions."
 slug: "cicd-pipeline-github-actions-best-practices"
-date: 2026-09-21T09:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - "devops"

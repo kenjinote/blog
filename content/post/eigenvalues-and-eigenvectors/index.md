@@ -2,7 +2,7 @@
 title: "固有値と固有ベクトル：行列による変換で「向きが変わらない」特別なベクトルとその応用"
 description: "線形代数における最も重要な概念の一つである固有値と固有ベクトルについて、その幾何学的な意味から具体的な計算方法、そして機械学習や物理学における応用まで詳しく解説します。Pythonによる実装例も交えながら、直感的な理解を目指します。"
 slug: "eigenvalues-and-eigenvectors"
-date: "2026-09-20T14:40:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["linear-algebra", "eigenvalue", "eigenvector", "math", "machine-learning", "python", "data-science"]

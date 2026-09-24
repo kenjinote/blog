@@ -2,7 +2,7 @@
 title: "Ecuación de Pell: El Encanto de la Ecuación Diofántica con Soluciones Infinitas y Fracciones Continuas"
 description: "Una guía detallada sobre la ecuación de Pell, su solución utilizando fracciones continuas y la generación de infinitas soluciones."
 slug: "pell-equation"
-date: "2026-09-20T15:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matemáticas"

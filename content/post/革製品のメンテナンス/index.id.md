@@ -1,7 +1,7 @@
 ---
 title: 'Untuk Pemula: Produk Perawatan dan Cara Perawatan Rekomendasi untuk Produk Kulit'
 slug: "Produk Kulitのメンテナンス"
-date: 2024-10-30T00:31:46+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Produk Kulit", "Hobi"]
 draft: fales
 image: "img.webp"

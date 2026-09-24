@@ -2,7 +2,7 @@
 title: "Internet das Coisas: Como Funciona a IoT - Os Bastidores de um Mundo Totalmente Conectado"
 description: "De eletrodomésticos e carros a máquinas de fábrica, tudo está se conectando à internet através da 'IoT (Internet of Things)'. Explicaremos como a tecnologia de sensores e as redes de comunicação coletam dados e, em conjunto com a IA, geram valor."
 slug: "technology-iot"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

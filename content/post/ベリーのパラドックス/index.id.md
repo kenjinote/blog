@@ -2,7 +2,7 @@
 title: 'Paradoks Berry: Kontradiksi yang Timbul Saat Mencoba Mendefinisikan "Angka" dengan "Kata-kata"'
 slug: 'berry-paradox'
 description: 'Frasa "bilangan bulat terkecil yang tidak dapat dinyatakan dalam maksimal 19 karakter" itu sendiri justru mewakili angka tersebut dalam 19 karakter atau kurang!? Berikut penjelasan tentang paradoks singkat dan indah yang terjadi di perbatasan antara bahasa sehari-hari dan matematika ini.'
-date: '2026-09-10T11:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/berry_paradox.jpg'
 math: true
 mermaid: true

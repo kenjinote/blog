@@ -2,7 +2,7 @@
 title: "स्टेट मैनेजमेंट का इतिहास और विकास (Redux, Context, Recoil, Zustand की तुलना)"
 description: "React पर केंद्रित स्टेट मैनेजमेंट लाइब्रेरी के ऐतिहासिक विकास और प्रत्येक आर्किटेक्चर की तुलना।"
 slug: "state-management-history-redux-context-recoil-zustand"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

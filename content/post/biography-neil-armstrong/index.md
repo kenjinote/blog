@@ -1,6 +1,6 @@
 ---
 title: "ニール・アームストロング：人類初の月面歩行を果たした男の生涯と哲学"
-date: 2026-09-23T20:51:47+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["neil-armstrong", "history"]
 image: "eyecatch.jpg"

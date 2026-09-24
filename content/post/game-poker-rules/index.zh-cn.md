@@ -2,7 +2,7 @@
 title: "智力运动：扑克（德州扑克）的规则与概率论 - 运气与实力交织的游戏"
 description: "世界级比赛总奖金超过100亿日元的终极智力运动“德州扑克”。它并非单纯的赌博，本文将为您解析位置理论、赔率计算以及诈唬背后的数学依据。"
 slug: "game-poker-rules"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

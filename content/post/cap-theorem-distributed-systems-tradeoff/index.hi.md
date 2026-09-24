@@ -2,7 +2,7 @@
 title: "CAP प्रमेय और वितरित सिस्टम (एकता, उपलब्धता और विभाजन सहिष्णुता का ट्रेडऑफ़)"
 description: "वितरित सिस्टम डिज़ाइन में पूर्ण नियम 'CAP प्रमेय' और आधुनिक डेटाबेस द्वारा चुने गए आर्किटेक्चर के समझौते बिंदु।"
 slug: "cap-theorem-distributed-systems-tradeoff"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

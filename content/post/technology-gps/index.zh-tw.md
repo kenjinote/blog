@@ -2,7 +2,7 @@
 title: "位置資訊的基礎：GPS的運作原理 - 相對論與人造衛星交會的奇蹟技術"
 description: "為什麼智慧型手機的地圖應用程式能知道我們目前的位置？本文將解說來自太空中GPS衛星的電波，以及運用愛因斯坦相對論進行精密時間計算的原理。"
 slug: "technology-gps"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

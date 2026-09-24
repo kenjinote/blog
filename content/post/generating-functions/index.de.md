@@ -2,7 +2,7 @@
 title: "Erzeugende Funktionen: Welchen Nutzen hat es, eine Folge in eine Funktion umzuwandeln?"
 description: "Eine Einführung, wie man Münzzahlungskombinationen und Anordnungen als Koeffizienten einer Gleichung berechnet. Erklärung der Magie erzeugender Funktionen, einschließlich ihrer Anwendung auf die Fibonacci-Folge."
 slug: "generating-functions"
-date: "2026-09-20T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematik"

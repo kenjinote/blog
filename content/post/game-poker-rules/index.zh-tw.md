@@ -2,7 +2,7 @@
 title: "心智運動：撲克（德州撲克）的規則與機率論 - 運氣與實力交織的遊戲"
 description: "世界大賽總獎金超過 100 億日圓的終極心智運動「德州撲克」。它不只是單純的賭博，本文將解說位置理論、賠率計算，以及詐唬的數學基礎。"
 slug: "game-poker-rules"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

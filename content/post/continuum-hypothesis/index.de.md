@@ -2,7 +2,7 @@
 title: "Kontinuumshypothese (Continuum Hypothesis) - Cantors ultimative Frage und das Ende von „Weder beweisbar noch widerlegbar“"
 description: "Ein tiefer Einblick in die Geschichte, die mathematischen Hintergründe der von Georg Cantor aufgestellten Kontinuumshypothese (CH) sowie den Beweis ihrer Unabhängigkeit durch Gödel und Cohen."
 slug: "continuum-hypothesis"
-date: "2026-09-14T13:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "set-theory"]
 tags: ["Kontinuumshypothese", "Cantor", "Unendlichkeit", "Mathematik"]

@@ -8,7 +8,7 @@
 
 title: 'LoadIcon 함수로 가져온 아이콘은 DestroyIcon이 불필요한 이유'
 slug: "LoadIconはDestroyIconを呼び出す必要はない"
-date: 2024-04-19T01:55:17+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["아이콘", "LoadIcon", "DestroyIcon", "Windows 프로그래밍"]
 draft: false
 categories: ["programming"]

@@ -1,7 +1,7 @@
 ---
 title: "「検査で陽性」＝「病気」とは限らない？：基準値の錯誤"
 description: "精度99%の検査で陽性が出ても、実際に病気である確率はわずか9%？人間の直感が統計データに騙される「基準値の錯誤」を解説。"
-date: 2026-09-10T21:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 slug: "base-rate-fallacy"
 image: "img/base_rate_fallacy.jpg"

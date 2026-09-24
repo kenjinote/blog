@@ -2,7 +2,7 @@
 title: "傅立葉級數與傅立葉轉換：將任何複雜波形分解為正弦和餘弦之和"
 description: "詳細解釋將複雜波形表示為簡單正弦波和餘弦波疊加的「傅立葉級數」，以及其向非週期函數擴展的「傅立葉轉換」。"
 slug: "fourier-series-and-transform"
-date: "2026-09-20T14:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "數學"

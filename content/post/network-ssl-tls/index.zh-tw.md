@@ -2,7 +2,7 @@
 title: "網際網路之盾：SSL/TLS 的運作原理 - 為什麼能安全傳送信用卡資訊？"
 description: "網站 URL 中的「https」的「s」代表什麼？本文將從對稱金鑰與公開金鑰的混合架構，解說守護全球電子商務與通訊安全的加密技術「SSL/TLS」的運作原理。"
 slug: "network-ssl-tls"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

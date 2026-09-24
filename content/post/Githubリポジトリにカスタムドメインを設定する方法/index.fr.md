@@ -1,7 +1,7 @@
 ---
 title: 'Comment configurer un domaine personnalisé pour un dépôt GitHub | Édition Onamae.com'
 slug: "GithubDépôtにカスタムDomaineを設定する方法"
-date: 2022-09-13T01:16:40+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Github","Domaine"]
 draft: false
 image: "images/octocat.webp"

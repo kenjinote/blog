@@ -2,7 +2,7 @@
 title: "From Ownership to Usage: How Cloud Computing Works - The Great Shift in IT Infrastructure"
 description: "How has cloud computing like Amazon Web Services (AWS) and Google Cloud (GCP) changed corporate and personal IT? This article explains the differences between IaaS, PaaS, SaaS, and the basics of virtualization technology."
 slug: "technology-cloud-computing"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

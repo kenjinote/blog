@@ -2,7 +2,7 @@
 title: "Webセキュリティの基礎と最新動向：XSS, CSRFからCORS, CSPまで"
 description: "Webアプリケーションを脅威から守るためのセキュリティ対策。古典的なXSSやCSRFから、現代の必須技術であるCORS、CSP、SameSite Cookieまでを網羅的に解説します。"
 slug: "web-security-basics-cors-csp"
-date: 2026-09-20T17:10:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - "security"

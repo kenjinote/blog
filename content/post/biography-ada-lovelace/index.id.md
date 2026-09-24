@@ -1,5 +1,6 @@
 ---
 title: "Ada Lovelace: Gambaran Lengkap \"Programmer Pertama di Dunia\" yang Meramalkan Masa Depan Komputer"
+date: "2026-09-24T16:08:36+09:00"
 description: "Lahir sebagai putri penyair Byron, Ada Lovelace menulis program pertama dalam sejarah untuk \"Mesin Analitik\" Charles Babbage. Kami akan mendalami kehidupannya, bakat matematikanya, dan pandangannya yang luar biasa yang telah melihat potensi sebenarnya dari komputer di abad ke-19, dalam penjelasan rinci sepanjang ribuan kata."
 slug: "biography-ada-lovelace"
 categories: ["biography"]

@@ -2,7 +2,7 @@
 title: "Theorema Egregium von Gauss - Der Meilenstein der Differentialgeometrie, der auch beim Pizzabrot-Essen anwendbar ist"
 description: "Eine tiefergehende Erklärung über das von Carl Friedrich Gauss entdeckte \"Theorema Egregium\", angefangen von seinem mathematischen Hintergrund bis hin zu seiner alltäglichen Anwendung beim Essen einer Pizza."
 slug: "theorema-egregium"
-date: "2026-09-14T13:11:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]
 tags: ["Geometrie", "Gauss", "Pizza-Theorem", "Theorema Egregium", "Differentialgeometrie"]

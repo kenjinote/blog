@@ -1,7 +1,7 @@
 ---
 title: 'ملخص لأفضل إضافات VSCode! قائمة بالمكونات الإضافية التي ترفع كفاءة التطوير بشكل كبير'
 slug: "Visual Studio Codeموصى بهوظيفة إضافية"
-date: 2024-05-29T17:20:19+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Visual Studio Code", "VSCode", "إضافات", "ملحقات"]
 draft: false
 image: "img.webp"

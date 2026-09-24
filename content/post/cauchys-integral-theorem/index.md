@@ -2,7 +2,7 @@
 title: "コーシーの積分定理：複素関数の積分がゼロになる、複素解析の美しき土台"
 description: "複素解析における最重要定理の一つであるコーシーの積分定理について、その直感的な意味からグリーンの定理を用いた証明のスケッチ、そして積分公式への応用まで詳しく解説します。"
 slug: "cauchys-integral-theorem"
-date: 2026-09-20T14:30:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

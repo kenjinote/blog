@@ -1,5 +1,6 @@
 ---
 title: "操作系统宗教战争的全貌：Windows、Mac与Linux交织的技术与哲学斗争史"
+date: "2026-09-24T16:08:36+09:00"
 description: "深入探讨持续数十年的“操作系统宗教战争”。彻底解析Windows、Mac和Linux各自的思想、历史背景，以及在现代的共存与未来。"
 slug: "history-os-wars"
 categories: ["history"]

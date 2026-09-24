@@ -2,7 +2,7 @@
 title: "Временная и пространственная сложность (Введение в О-нотацию и примеры)"
 description: "Подробное руководство по О-нотации (Big O notation), необходимой для оценки производительности алгоритмов. Мы объясним разницу между временной и пространственной сложностью и приведем конкретные примеры."
 slug: "time-space-complexity-big-o-notation-examples"
-date: 2026-09-22T00:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "big-o", "time-complexity", "space-complexity", "data-structures"]

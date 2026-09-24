@@ -1,7 +1,7 @@
 ---
 title: '在 Windows 右鍵選單中新增秀丸編輯器 grep 的方法'
 slug: "檔案總管の右鍵選單に秀丸編輯器grepを追加する"
-date: 2024-04-03T00:00:46+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Hidemaru Editor", "檔案總管", "右鍵選單", "grep", "登錄檔"]
 draft: false
 image: "img.webp"

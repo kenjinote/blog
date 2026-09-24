@@ -2,7 +2,7 @@
 title: "Orientado a Objetos vs Funcional vs Orientado a Datos: Límites y Fusión de Paradigmas"
 description: "Profundizamos en la historia y evolución de los paradigmas de programación, las fortalezas y límites de OOP, FP y DOP, y analizamos a fondo la 'fusión de paradigmas' como la solución óptima en el desarrollo moderno."
 slug: "oop-vs-fp-vs-dop"
-date: "2026-09-21T02:58:35+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["programming", "architecture", "software-engineering"]
 tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]

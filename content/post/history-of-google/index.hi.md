@@ -2,7 +2,7 @@
 title: "Google का इतिहास: सर्च इंजन से 'AI-फर्स्ट' कंपनी के रूप में विकास"
 description: "PageRank से Transformer तक Google का इतिहास"
 slug: "history-of-google"
-date: "2026-09-23T00:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

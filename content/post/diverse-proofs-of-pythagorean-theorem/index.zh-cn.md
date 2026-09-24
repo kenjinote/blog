@@ -2,7 +2,7 @@
 title: "勾股定理的多种证明：从几何、代数到爱因斯坦的证明"
 description: "探索勾股定理（毕达哥拉斯定理）的迷人证明方法。从欧几里得至爱因斯坦，从不同视角领略数学之美。"
 slug: "diverse-proofs-of-pythagorean-theorem"
-date: "2026-09-20T15:15:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "mathematics"

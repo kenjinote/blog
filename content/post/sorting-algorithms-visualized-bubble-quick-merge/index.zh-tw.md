@@ -2,7 +2,7 @@
 title: "排序演算法圖解（從氣泡、快速到合併排序）"
 description: "程式設計的基礎：排序演算法。從氣泡排序到快速排序、合併排序，透過圖解與程式碼全面解析。"
 slug: "sorting-algorithms-visualized-bubble-quick-merge"
-date: 2026-09-22T01:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "sorting", "quick-sort", "merge-sort", "bubble-sort"]

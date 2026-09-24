@@ -2,7 +2,7 @@
 title: "チューリングマシンと計算可能性理論：アラン・チューリングの思考実験と「停止性問題」"
 description: "計算の限界とは何か？アラン・チューリングが提唱したチューリングマシンの概念と、計算可能性理論の金字塔である「停止性問題」について、数学的・プログラム的視点から深掘りします。"
 slug: turing-machine-computability
-date: 2026-09-21T02:35:46+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - computer-science

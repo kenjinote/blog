@@ -2,7 +2,7 @@
 title: "O Contra-Ataque do Código Aberto: A História do Android - Como Nasceu o Maior SO Móvel do Mundo"
 description: "Para enfrentar a chegada do iPhone, o Google formou a 'Open Handset Alliance'. Explicamos como a mudança de modelo de negócios para oferecer um sistema operacional gratuitamente mudou os smartphones em todo o mundo."
 slug: "history-of-android"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

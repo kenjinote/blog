@@ -4,7 +4,7 @@
 
 title: 'Pasos y métodos sencillos para agregar bordes a imágenes con paint.net'
 slug: "paint.netを使ってImagenにBordeをつける方法"
-date: 2023-04-11T14:31:59+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["paint.net", "borde", "imagen"]
 draft: false
 image: "img_3.webp"

@@ -2,7 +2,7 @@
 title: "RDBMS Transactions and ACID Properties (Isolation Levels and Locks)"
 description: "From the basics of transaction processing that protects database consistency, to anomalies caused by isolation levels and locking mechanisms."
 slug: "rdbms-transaction-acid-isolation-level-lock"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "database"

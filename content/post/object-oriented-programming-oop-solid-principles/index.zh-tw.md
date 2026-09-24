@@ -2,7 +2,7 @@
 title: "物件導向程式設計（OOP）的 3 大要素與 SOLID 原則的實踐：從歷史到進階設計手法"
 description: "這是一份完整指南，涵蓋了物件導向程式設計的歷史背景、3 大要素（封裝、繼承、多型），以及如何深入實踐 SOLID 原則。"
 slug: "object-oriented-programming-oop-solid-principles"
-date: "2026-09-21T14:51:08+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "computer-science"

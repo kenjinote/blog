@@ -1,5 +1,6 @@
 ---
 title: "硅谷的起源：“八叛逆”创造的创新圣地"
+date: "2026-09-24T16:08:36+09:00"
 description: "如今的IT产业中心硅谷。其诞生的背后，有着一位天才的失控，以及举起反旗的8位年轻工程师——“八叛逆”（Traitorous Eight）所演绎的宏大故事。我们将彻底解说他们的轨迹。"
 slug: "history-silicon-valley-traitorous-eight"
 categories: ["history"]

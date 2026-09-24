@@ -2,7 +2,7 @@
 title: "شرح خوارزميات الفرز (من الفرز الفقاعي إلى الفرز السريع وفرز الدمج)"
 description: "خوارزميات الفرز هي أساس البرمجة. من الفرز الفقاعي إلى الفرز السريع وفرز الدمج، نشرحها بشكل شامل مع الرسوم التوضيحية والرموز."
 slug: "sorting-algorithms-visualized-bubble-quick-merge"
-date: 2026-09-22T01:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "sorting", "quick-sort", "merge-sort", "bubble-sort"]

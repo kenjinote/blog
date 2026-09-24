@@ -2,7 +2,7 @@
 title: "헬무트 하세: 국소와 대역을 잇는 정수론의 거인"
 description: "20세기를 대표하는 수학자 헬무트 하세의 생애와 하세의 원리, 타원 곡선 등 그의 수학적 업적을 깊이 있게 살펴봅니다."
 slug: "hasse"
-date: "2026-09-20T20:10:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

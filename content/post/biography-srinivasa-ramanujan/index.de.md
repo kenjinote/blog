@@ -1,5 +1,6 @@
 ---
 title: "Srinivasa Ramanujan: Der indische Magier, der Intuition und Unendlichkeit verwob"
+date: "2026-09-24T16:08:36+09:00"
 description: "Eine detaillierte Erklärung des Lebens und der Errungenschaften des genialen Mathematikers Srinivasa Ramanujan, der als \"indischer Magier\" bezeichnet wurde, da er unzählige unbekannte Formeln allein durch Intuition entdeckte, sowie sein Einfluss auf die moderne Mathematik."
 slug: "biography-srinivasa-ramanujan"
 categories: ["biography"]

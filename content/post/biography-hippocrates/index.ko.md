@@ -1,6 +1,6 @@
 ---
 title: "의학의 아버지 히포크라테스: 그의 생애와 현대에 살아 숨쉬는 철학"
-date: 2026-09-23T19:53:32+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["hippocrates", "history"]
 image: "eyecatch.jpg"

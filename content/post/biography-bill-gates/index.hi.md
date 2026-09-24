@@ -1,6 +1,6 @@
 ---
 title: "आधुनिक प्रोमेथियस: बिल गेट्स की प्रक्षेपवक्र और प्रौद्योगिकी द्वारा बदली गई दुनिया"
-date: 2026-09-23T19:18:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["bill-gates", "history"]
 image: "eyecatch.jpg"

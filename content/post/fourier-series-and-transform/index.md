@@ -2,7 +2,7 @@
 title: "フーリエ級数とフーリエ変換：あらゆる複雑な波をサインとコサインの足し算に分解する"
 description: "複雑な波形を単純なサイン波とコサイン波の重ね合わせとして表現する「フーリエ級数」と、それを非周期関数に拡張した「フーリエ変換」について詳しく解説します。"
 slug: "fourier-series-and-transform"
-date: "2026-09-20T14:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

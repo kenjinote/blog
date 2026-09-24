@@ -1,5 +1,6 @@
 ---
 title: "La visión completa del \"Problema del Año 2038\" de UNIX: La bomba de tiempo del mundo digital y la evolución de la arquitectura del sistema"
+date: "2026-09-24T16:08:36+09:00"
 description: "El 19 de enero de 2038, el tiempo UNIX gestionado por enteros con signo de 32 bits se desbordará, causando un mal funcionamiento en muchos sistemas informáticos. Este artículo explica detalladamente el \"Problema del Año 2038\", desde su mecanismo, historia, causa raíz, hasta las posibles soluciones."
 slug: "history-unix-2038-problem"
 categories: ["history"]

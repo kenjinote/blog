@@ -1,5 +1,6 @@
 ---
 title: "SQL et le Modèle Relationnel : Les Profondeurs et la Philosophie de l'Approche Ensembliste d'Edgar F. Codd"
+date: "2026-09-24T16:08:36+09:00"
 description: "Une exploration approfondie du modèle relationnel qui sous-tend SQL et de la théorie des ensembles de Codd. Un article long métrage de référence qui détaille le contexte historique, les fondements mathématiques et les implications philosophiques dans la conception d'applications modernes."
 slug: "philosophy-sql-relational-model"
 categories: ["philosophy"]

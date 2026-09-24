@@ -2,7 +2,7 @@
 title: "La historia de Meta (anteriormente Facebook): Del nacimiento de las redes sociales al desafío del espacio del metaverso"
 description: "El camino del imperio de las redes sociales al metaverso y la IA"
 slug: "history-of-meta-facebook"
-date: "2026-09-23T00:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

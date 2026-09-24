@@ -1,5 +1,6 @@
 ---
 title: "Rustの真髄：安全性と所有権モデルがもたらすパラダイムシフト"
+date: "2026-09-24T16:08:36+09:00"
 description: "Rustの核心である「所有権(Ownership)」と「借用(Borrowing)」の概念を深掘りし、メモリ安全性とパフォーマンスをいかに両立させているかを徹底解説します。"
 slug: "philosophy-rust-ownership"
 categories: ["philosophy"]

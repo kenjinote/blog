@@ -2,7 +2,7 @@
 title: "非歐幾里得幾何學的誕生 - 「彎曲空間」的發現與相對論之路"
 description: "從對歐幾里得平行公設的質疑開始，解說由高斯、波約、羅巴切夫斯基、黎曼確立的非歐幾里得幾何學，以及直到愛因斯坦廣義相對論的數學與物理學壯麗歷史。"
 slug: "non-euclidean-geometry"
-date: 2026-09-14T13:11:25+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "physics"]
 tags: ["幾何學", "相對論", "科學史", "數學"]

@@ -2,7 +2,7 @@
 title: "Fundamental Theorem of Algebra: Proof That an n-th Degree Equation Always Has n Complex Roots"
 description: "A detailed explanation of the history, intuitive meaning, and beautiful proof of the Fundamental Theorem of Algebra using complex analysis (Liouville's theorem)."
 slug: "fundamental-theorem-of-algebra"
-date: "2026-09-20T15:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematics"

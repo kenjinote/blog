@@ -1,7 +1,7 @@
 ---
 title: 'C++로 고속 JSON 파서를 직접 만들며 원리 이해하기'
 slug: "cpp-custom-fast-json-parser-tutorial"
-date: "2026-09-12T11:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

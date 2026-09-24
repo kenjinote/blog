@@ -1,7 +1,7 @@
 ---
 title: 'Apa Perbedaan Antara Market-In dan Product-Out? Penjelasan Mudah Mengenai Kelebihan dan Kekurangannya'
 slug: "Market InとProduct Out"
-date: 2025-07-15T20:18:22+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Market-in", "Product-out", "Pengembangan", "Bisnis", "Puisi"]
 draft: false
 image: "img.webp"

@@ -2,7 +2,7 @@
 title: "Permutations, Combinaisons et Théorème du Binôme : La Magnifique Régularité des Nombres Vue dans le Triangle de Pascal"
 description: "Une explication détaillée de la structure mathématique tissée par les permutations, les combinaisons, le théorème du binôme et le triangle de Pascal."
 slug: "permutations-combinations-and-binomial-theorem"
-date: "2026-09-20T15:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathématiques"

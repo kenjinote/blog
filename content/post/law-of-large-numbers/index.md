@@ -2,7 +2,7 @@
 title: "大数の法則（Law of Large Numbers） - カジノが必ず儲かる理由と確率が収束するメカニズム"
 description: "確率論における極めて重要な定理「大数の法則」について解説。カジノの利益構造から数学的な厳密な定義（弱法則・強法則）まで、図解とPythonコードを交えて深く掘り下げます。"
 slug: "law-of-large-numbers"
-date: 2026-09-14
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "data-science", "gambling"]
 tags:

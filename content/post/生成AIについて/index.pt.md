@@ -1,7 +1,7 @@
 ---
 title: 'Aprendendo sobre IA Generativa! Um resumo de vídeos de palestras recomendadas por professores da Universidade de Tóquio'
 slug: "IA Generativaについて"
-date: 2024-04-16T02:13:56+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["IA Generativa", "YouTube", "Palestra"]
 draft: false
 image: "img.webp"

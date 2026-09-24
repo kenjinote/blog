@@ -2,7 +2,7 @@
 title: 'John von Neumann: Jejak "Otak Iblis" yang Membangun Sains Modern'
 description: 'Penjelasan mendetail tentang kehidupan ahli matematika jenius John von Neumann, pencapaiannya yang menakjubkan dari teori permainan hingga mekanika kuantum dan ilmu komputer, serta berbagai anekdot di sekitarnya.'
 slug: 'von-neumann'
-date: '2026-09-20T20:20:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ['mathematics', 'biography']
 tags: ['John von Neumann', 'Mekanika Kuantum', 'Teori Permainan', 'Ilmu Komputer', 'Matematikawan', 'Jenius']

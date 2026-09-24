@@ -2,7 +2,7 @@
 title: "ネットワーク技術: BitTorrentの技術解説 - 巨大ファイルを効率的に分散配信する仕組み"
 description: "数ギガバイトのOSイメージを数万人が一斉にダウンロードしてもサーバーが落ちない。P2Pの傑作「BitTorrent（ビットトレント）」の革新的なファイル分割とデータ交換アルゴリズムを解説します。"
 slug: "network-bittorrent"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -2,7 +2,7 @@
 title: 'Transformasi Afin dan Proyektif: Perpaduan Aljabar Linear dan Geometri di Balik CG dan Perspektif'
 description: 'Penjelasan terperinci mengenai fondasi matematika dari transformasi afin dan proyektif, ekspresinya menggunakan koordinat homogen, dan penerapannya dalam grafik komputer dan pemrosesan gambar.'
 slug: 'affine-and-projective-transformations'
-date: '2026-09-20T15:15:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - 'mathematics'

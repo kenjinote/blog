@@ -2,7 +2,7 @@
 title: "Prinsip Inklusi-Eksklusi: Teknik Ampuh untuk Menghitung Elemen Secara Tepat dalam Himpunan yang Tumpang Tindih"
 description: "Panduan mendalam tentang Prinsip Inklusi-Eksklusi, alat matematika penting untuk menghitung secara akurat elemen-elemen dari beberapa himpunan yang tumpang tindih tanpa duplikasi. Kami menjelaskan semuanya mulai dari kasus dasar 2 himpunan hingga kasus umum n himpunan, menggunakan contoh, bukti, dan contoh penerapan."
 slug: "inclusion-exclusion-principle"
-date: "2026-09-20T15:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matematika"

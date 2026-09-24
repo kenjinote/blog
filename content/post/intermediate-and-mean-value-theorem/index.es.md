@@ -2,7 +2,7 @@
 title: "Teoremas del Valor Intermedio y del Valor Medio: Poderosas Herramientas de Demostración a partir de las Propiedades Intuitivas de las Funciones Continuas y las Derivadas"
 description: "Una explicación en profundidad del Teorema del Valor Intermedio y el Teorema del Valor Medio, que forman la base del cálculo, explorando sus significados intuitivos, demostraciones matemáticas rigurosas y aplicaciones."
 slug: "intermediate-and-mean-value-theorem"
-date: "2026-09-20T14:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["matemáticas"]
 tags: ["cálculo", "teoremas", "demostraciones-matemáticas"]

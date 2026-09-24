@@ -2,7 +2,7 @@
 title: "O Coração da IA: Como Funciona o Deep Learning - Como as Redes Neurais Aprendem"
 description: "A força motriz por trás do 3º boom da IA e a tecnologia fundamental para ferramentas como o ChatGPT: o 'Deep Learning' (Aprendizado Profundo). Explicamos como esse algoritmo, que imita os nervos cerebrais humanos, encontra as suas próprias características."
 slug: "technology-deep-learning"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

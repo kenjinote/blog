@@ -1,5 +1,6 @@
 ---
 title: "The Peter Principle: Why Do Competent People Keep Getting Promoted Until They Become Incompetent? A Thorough Anatomy of Organizational Traps and Countermeasures"
+date: "2026-09-24T16:08:36+09:00"
 description: "We will thoroughly delve into the mechanism and specific countermeasures of \"The Peter Principle,\" a universal organizational phenomenon where \"competent rank-and-file employees become incompetent managers.\" What is the wisdom to survive the fate of a hierarchical society?"
 slug: "business-peter-principle"
 categories: ["business"]

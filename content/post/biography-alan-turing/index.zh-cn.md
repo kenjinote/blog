@@ -1,5 +1,6 @@
 ---
 title: "艾伦·图灵：AI之父与悲剧性的结局"
+date: "2026-09-24T16:08:36+09:00"
 description: "深入探究天才数学家艾伦·图灵的一生、成就及遗产。他奠定了现代计算机科学与人工智能的基础，却被时代捉弄，悲剧性地结束了生命。"
 slug: "biography-alan-turing"
 categories: ["biography"]

@@ -2,7 +2,7 @@
 title: 'Gram-Schmidt Process: An Algorithm to Realign Distorted Basis Vectors into Neat, Mutually Orthogonal Vectors'
 description: 'A comprehensive guide to the Gram-Schmidt orthogonalization process in linear algebra, covering geometric intuition, mathematical formulation, numerically stable modified versions, Python implementation, and applications to polynomial spaces.'
 slug: 'gram-schmidt-process'
-date: '2026-09-20T14:40:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematics"]
 tags: ["Linear Algebra", "Algorithms", "Machine Learning", "QR Decomposition", "Python", "Numerical Computing", "Mathematics"]

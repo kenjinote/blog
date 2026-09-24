@@ -9,7 +9,7 @@
 
 title: 'Instalación de la CLI de Hugo y lista de comandos básicos más usados'
 slug: "HugoComando一覧"
-date: 2024-05-31T01:36:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["hugo", "comandos"]
 draft: false
 image: "img.webp"

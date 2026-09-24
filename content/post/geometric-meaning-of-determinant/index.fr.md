@@ -2,7 +2,7 @@
 title: "Signification géométrique du déterminant : Plus qu'une formule, c'est le 'Facteur d'échelle de volume' et 'l'Inversion d'orientation'"
 description: "Le déterminant n'est pas seulement une formule de calcul, mais un indicateur géométrique important du facteur d'échelle de volume et de l'inversion d'orientation de l'espace par des transformations linéaires. Dans cet article, nous expliquons en détail sa signification intuitive avec de nombreux diagrammes et formules."
 slug: "geometric-meaning-of-determinant"
-date: "2026-09-20T14:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "Mathématiques"

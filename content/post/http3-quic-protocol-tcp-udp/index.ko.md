@@ -2,7 +2,7 @@
 title: "HTTP/3와 QUIC 프로토콜: TCP의 한계와 UDP를 통한 혁신"
 description: "HTTP/3와 QUIC 프로토콜이 왜 탄생했는지, Head-of-Line Blocking 문제의 해결, 커넥션 확립의 고속화 등 차세대 Web 통신 프로토콜을 상세히 해설합니다."
 slug: "http3-quic-protocol-tcp-udp"
-date: 2026-09-20T17:10:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - "network"

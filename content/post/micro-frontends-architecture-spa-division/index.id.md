@@ -2,7 +2,7 @@
 title: "Arsitektur Micro Frontends (Metode Pemisahan SPA yang Semakin Membesar)"
 description: "Pola implementasi micro frontends untuk memisahkan monolit front-end yang kompleks dan meningkatkan otonomi tim."
 slug: "micro-frontends-architecture-spa-division"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

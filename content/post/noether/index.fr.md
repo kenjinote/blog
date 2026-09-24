@@ -2,7 +2,7 @@
 title: "Emmy Noether : La mère de l'algèbre moderne et le théorème de la symétrie"
 description: "Une explication détaillée de la vie et des réalisations d'Emmy Noether, mathématicienne de génie qui a jeté les bases de l'algèbre moderne et prouvé le théorème de Noether en physique."
 slug: "noether"
-date: "2026-09-20T20:10:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathématiques", "Biographie"]
 tags: ["Emmy Noether", "Algèbre abstraite", "Physique", "Femmes en STIM"]

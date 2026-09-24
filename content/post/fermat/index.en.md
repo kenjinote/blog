@@ -2,7 +2,7 @@
 title: "Pierre de Fermat: The \"Prince of Amateurs\" Who Wrote Romance in the Margins"
 description: "An in-depth explanation of the life and extraordinary mathematical achievements (Fermat's Last Theorem, Little Theorem, early calculus, etc.) of Pierre de Fermat, a 17th-century French judge who left an immortal mark on the history of mathematics."
 slug: "fermat"
-date: "2026-09-20T18:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Fermat", "History of Mathematics", "Fermat's Last Theorem", "Number Theory", "Probability Theory"]

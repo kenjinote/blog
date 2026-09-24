@@ -2,7 +2,7 @@
 title: "تقنية البلوكتشين والعقود الذكية (آلية دفتر الأستاذ الموزع)"
 description: "استكشاف المبادئ الأساسية للبلوكتشين، خوارزميات الإجماع، وتنفيذ العقود الذكية."
 slug: "blockchain-technology-smart-contract-distributed-ledger"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "blockchain"

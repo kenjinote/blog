@@ -2,7 +2,7 @@
 title: "L'aiguille de Buffon - Le problème classique de probabilité où lâcher une aiguille permet de trouver Pi"
 description: "Pouvez-vous trouver Pi (π) juste en lâchant une aiguille sur le sol ? Nous expliquons en détail le problème classique et étonnant de la théorie des probabilités proposé au 18ème siècle, l'aiguille de Buffon, de sa preuve mathématique à la simulation."
 slug: "buffons-needle"
-date: 2026-09-14T13:20:38+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "probability-theory"]
 tags:

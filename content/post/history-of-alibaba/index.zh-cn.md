@@ -2,7 +2,7 @@
 title: "阿里巴巴的历史：中国电商革命与数字生态系统的构建"
 description: "马云如何重塑中国零售和支付，并建立起庞大的数字生态系统。"
 slug: "history-of-alibaba"
-date: "2026-09-23T01:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

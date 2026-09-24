@@ -2,7 +2,7 @@
 title: "GraphQL vs REST API (Eliminating Overfetching and Type Safety)"
 description: "The limitations of REST APIs, and the flexible data fetching and type-safe frontend development brought by GraphQL."
 slug: "graphql-vs-rest-api-overfetching-type-safety"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "backend"

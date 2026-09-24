@@ -2,7 +2,7 @@
 title: "Teknologi Jaringan: Penjelasan Teknologi P2P (Peer-to-Peer) - Kekuatan Sistem Terdesentralisasi"
 description: "Teknologi 'P2P' memungkinkan komputer individu berkomunikasi secara setara tanpa bergantung pada server tertentu. Kami menjelaskan secara mendalam dari teori dasarnya hingga konsep yang mengarah ke blockchain modern."
 slug: "history-of-p2p"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

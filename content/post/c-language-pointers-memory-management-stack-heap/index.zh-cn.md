@@ -2,7 +2,7 @@
 title: "完全理解C语言与指针（内存管理、地址、堆与栈的基础）"
 description: "深入解析C语言中最大的难关——指针，从内存地址的概念到栈与堆的区别，再到动态内存分配。这是为希望深入理解C语言的人准备的完整指南。"
 slug: "c-language-pointers-memory-management-stack-heap"
-date: 2026-09-21T14:51:08+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["c", "pointers", "memory", "stack", "heap"]

@@ -1,7 +1,7 @@
 ---
 title: 'Hugo 블로그의 SEO 대책: 방문자 수를 극적으로 늘리는 프론트매터 설정'
 slug: "hugo-blog-seo-frontmatter-tips"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

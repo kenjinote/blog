@@ -1,7 +1,7 @@
 ---
 title: 'Learning from the LogicPad Development Journey: The Path to Releasing a Personal Windows App'
 slug: 'logicpad-windows-app-development-journey'
-date: '2026-09-13T04:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true

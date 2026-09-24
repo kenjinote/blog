@@ -1,7 +1,7 @@
 ---
 title: 'Salesforce: Wie man die tägliche Anzahl an Datensatzerstellungen mit SOQL abruft'
 slug: "SalesforceのSOQLを利用して日別のレコード作成数を取得する方法"
-date: 2023-04-09T02:50:30+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["salesforce", "soql", "datum", "aggregation"]
 draft: false
 image: "img.webp"

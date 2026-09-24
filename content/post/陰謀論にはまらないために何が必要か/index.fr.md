@@ -1,7 +1,7 @@
 ---
 title: '6 mesures pour éviter de tomber dans les théories du complot | Améliorez la sécurité de votre esprit'
 slug: "陰謀論にはまらないために何が必要か"
-date: 2025-05-26T22:23:34+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Théorie du complot", "Poème"]
 draft: false
 image: "img.webp"

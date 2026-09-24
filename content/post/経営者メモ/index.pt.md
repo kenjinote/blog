@@ -1,7 +1,7 @@
 ---
 title: 'O segredo para a escolha de negócios de sucesso e sistematização: Notas práticas para gestores'
 slug: "Empreendedorメモ"
-date: 2022-09-07T02:36:11+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Gestor"]
 draft: false
 image: "images/img.webp"

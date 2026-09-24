@@ -2,7 +2,7 @@
 title: "Vue d'ensemble du problème P vs NP et des classes de complexité : Explication du Problème du Prix du millénaire et son importance en programmation"
 description: "Nous explorons en profondeur le problème P vs NP, l'un des Problèmes du Prix du millénaire, des bases des classes de complexité (P, NP, NP-complet, NP-difficile) aux dernières tendances de recherche, en passant par son impact sur la programmation et la théorie de la cryptographie."
 slug: p-vs-np-problem
-date: 2026-09-21T02:35:46+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories: ["computer-science", "algorithms"]
 tags: ["complexity-theory", "p-vs-np", "np-complete", "millennium-prize", "python"]

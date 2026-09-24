@@ -2,7 +2,7 @@
 title: "ネットワーク技術: HTTPの技術解説 - Webを支えるステートレスプロトコル"
 description: "私たちが毎日Webサイトを見る裏側で働いている「HTTP」。単なるテキスト転送プロトコルが、いかにして現代のリッチなアプリケーション基盤へと進化したのかを解説します。"
 slug: "history-of-http"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

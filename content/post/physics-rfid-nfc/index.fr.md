@@ -2,7 +2,7 @@
 title: "Lois de la physique et technologies du quotidien : le fonctionnement de la RFID et du NFC - Communication sans contact par induction électromagnétique"
 description: "Une technologie aux allures de magie qui permet de régler ses achats en effleurant simplement un tourniquet avec une carte Suica, PASMO ou un smartphone. Nous expliquons la loi de la physique de « l'induction électromagnétique » et la norme de communication NFC qui se cachent derrière cela."
 slug: "physics-rfid-nfc"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

@@ -2,7 +2,7 @@
 title: "현대 암호학의 기초 (공개키 암호, 해시 함수, 전자 서명)"
 description: "현대 암호 기술의 원리를 공통키・공개키부터 해시, 전자 서명까지 철저하게 해설합니다."
 slug: "modern-cryptography-public-key-hash-signature"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

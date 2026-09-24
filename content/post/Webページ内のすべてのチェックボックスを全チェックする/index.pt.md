@@ -1,7 +1,7 @@
 ---
 title: '[JS] Como marcar todas as caixas de seleção em uma página da web de uma só vez (com bookmarklet)'
 slug: "Webページ内のすべてのチェックボックスを全チェックする"
-date: 2022-10-05T20:07:06+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["javascript", "automatização"]
 draft: false
 image: "img.webp"

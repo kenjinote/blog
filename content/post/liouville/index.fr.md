@@ -2,7 +2,7 @@
 title: 'Joseph Liouville : Pionnier des Nombres Transcendants et de l''Analyse Complexe'
 description: 'Découvrez la vie et l''héritage de Joseph Liouville, le grand mathématicien français du 19e siècle connu pour le théorème de Liouville, les nombres transcendants, la théorie de Sturm-Liouville et la restauration de la théorie de Galois.'
 slug: 'liouville'
-date: '2026-09-20T19:20:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - 'Mathématiques'

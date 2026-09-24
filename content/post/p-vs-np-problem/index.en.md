@@ -2,7 +2,7 @@
 title: "The Full Picture of the 'P vs NP Problem' and Computational Complexity Classes: Explanation of the Millennium Prize Problem and Its Significance in Programming"
 description: "We deeply explore the 'P vs NP problem', one of the Millennium Prize Problems, from the basics of computational complexity classes (P, NP, NP-Complete, NP-Hard) to the latest research trends, and its impact on programming and cryptography."
 slug: p-vs-np-problem
-date: 2026-09-21T02:35:46+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories: ["computer-science", "algorithms"]
 tags: ["complexity-theory", "p-vs-np", "np-complete", "millennium-prize", "python"]

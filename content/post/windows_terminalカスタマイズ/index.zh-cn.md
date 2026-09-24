@@ -1,7 +1,7 @@
 ---
 title: '将 Windows Terminal 定制到极致（主题与提示符设置）'
 slug: "windows-terminal-ultimate-customization-guide"
-date: "2026-09-13T00:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

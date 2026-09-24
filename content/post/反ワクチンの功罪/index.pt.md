@@ -1,7 +1,7 @@
 ---
 title: 'Os prós e contras do movimento antivacina e as lições da epidemiologia: O que é a ''ilusão de causalidade'' destacada pela pandemia do coronavírus'
 slug: "反ワクチンの功罪"
-date: 2026-01-24T15:41:23+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Problemas Sociais", "Saúde", "Alfabetização Informacional"]
 draft: false
 image: "img.webp"

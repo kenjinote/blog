@@ -6,7 +6,7 @@
 
 title: '【Core i7-8700K·메모리 32GB】현재의 메인 PC 스펙과 작업 환경'
 slug: "今のメインPCスペック"
-date: 2022-09-08T01:55:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["PC"]
 draft: false
 image: "images/img.webp"

@@ -2,7 +2,7 @@
 title: '貝里悖論：當試圖用「文字」來定義「數字」時產生的矛盾'
 slug: 'berry-paradox'
 description: '「不能用19個字以內表達的最小整數」這句話本身，就已經用19個字以內表達了那個數字！？我們將解說這個發生在日常語言與數學邊界上，簡短而美麗的悖論。'
-date: '2026-09-10T11:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/berry_paradox.jpg'
 math: true
 mermaid: true

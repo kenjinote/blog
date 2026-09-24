@@ -2,7 +2,7 @@
 title: "モノのインターネット: IoTの仕組み - 全てが繋がる世界の裏側"
 description: "家電から自動車、工場の機械まで、あらゆるモノがインターネットに繋がる「IoT（Internet of Things）」。センサー技術と通信ネットワークがどのようにデータを集め、AIと連携して価値を生み出すのかを解説します。"
 slug: "technology-iot"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

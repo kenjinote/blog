@@ -2,7 +2,7 @@
 title: "Sejarah Bahasa Pemrograman dan Evolusi Paradigma (Dari Assembly, C, Java hingga Rust dan Go)"
 description: "Bagaimana bahasa pemrograman berevolusi? Artikel ini menjelaskan secara rinci sejarah dan evolusi paradigma mulai dari bahasa assembly, bahasa C, Java, hingga Rust dan Go modern."
 slug: "programming-languages-history-paradigm-evolution"
-date: "2026-09-21T14:51:07+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["programming-languages", "history", "paradigm", "rust", "go"]

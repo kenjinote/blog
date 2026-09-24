@@ -2,7 +2,7 @@
 title: "Teoría de B-Tree y los Índices de Bases de Datos (¿Por qué las BD eligen B-Tree?)"
 description: "Profundizaremos en la teoría de B-Tree y B+Tree, que forman la base de los índices en bases de datos, sus estructuras de datos, su relación con el I/O del disco y por qué los RDBMS continúan adoptando B-Tree como estándar de índice, incluyendo análisis matemáticos y ejemplos de implementación."
 slug: "b-tree-database-index-theory"
-date: "2026-09-21T02:45:54+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science", "database"]
 tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]

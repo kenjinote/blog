@@ -1,7 +1,7 @@
 ---
 title: "Ramsey Theory: Order Inevitably Emerges from Disorder — Proving Six-Person Relationships with Two Colors"
 description: "Whenever six people gather, there are always either three mutual acquaintances or three mutual strangers. We prove the Ramsey number R(3,3) = 6 using color-coded diagrams, examine the 5-person counterexample, verify all 32,768 cases, and explore applications to sequences and networks."
-date: 2026-09-16T20:05:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Ramsey Theory", "Graph Theory", "Combinatorics", "Pigeonhole Principle", "Python"]

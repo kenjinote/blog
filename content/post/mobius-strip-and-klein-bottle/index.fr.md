@@ -2,7 +2,7 @@
 title: "Le Ruban de Möbius et la Bouteille de Klein : Le Monde Fascinant des Surfaces sans 'Intérieur' ni 'Extérieur'"
 description: "Une explication approfondie des surfaces non orientables en topologie, spécifiquement le ruban de Möbius et la bouteille de Klein, avec formules mathématiques et diagrammes."
 slug: "mobius-strip-and-klein-bottle"
-date: 2026-09-20T15:15:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathématiques"]
 tags: ["topologie", "géométrie", "ruban-de-mobius", "bouteille-de-klein"]

@@ -1,7 +1,7 @@
 ---
 title: 'Roadmap für Unternehmensgründung und Softwareentwicklung: Kurz- und langfristige Ziele und Aufgaben'
 slug: "Ziel"
-date: 2024-12-08T03:32:34+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Ziele"]
 draft: false
 image: "img.webp"

@@ -2,7 +2,7 @@
 title: "ディオファントス：代数学の父とその偉大なる遺産"
 description: "古代ギリシャの数学者ディオファントスの生涯、主著『算術』、ディオファントス方程式、そして彼の墓碑銘に隠された謎について詳しく解説します。"
 slug: "diophantus"
-date: 2026-09-20T18:40:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

@@ -1,5 +1,6 @@
 ---
 title: "Git의 사상 (탈중앙화의 미학)"
+date: "2026-09-24T16:08:36+09:00"
 description: "Git의 설계 사상인 탈중앙화적 접근법에 대해, 그 미학과 아키텍처 관점에서 깊이 고찰합니다. 분산형 버전 관리 시스템이 가져온 개발 패러다임의 전환을 해명합니다."
 slug: "philosophy-git-decentralized"
 categories: ["philosophy"]

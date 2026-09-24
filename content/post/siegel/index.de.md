@@ -2,7 +2,7 @@
 title: "Carl Ludwig Siegel: Ein Gigant der Zahlentheorie im 20. Jahrhundert"
 description: "Eine detaillierte Erklärung von Siegels Leben und seinen großen mathematischen Errungenschaften in der Zahlentheorie und Himmelsmechanik."
 slug: "siegel"
-date: "2026-09-20T20:10:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Siegel", "Zahlentheorie", "Mathematiker", "Himmelsmechanik", "analytische Zahlentheorie", "diophantische Gleichungen"]

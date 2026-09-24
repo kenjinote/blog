@@ -1,7 +1,7 @@
 ---
 title: '在Hugo中引入KaTeX，显示类似LaTeX的优美数学公式的方法'
 slug: "hugoでKaTeX(LaTeX風数学公式表示)を有効にする方法"
-date: 2023-03-31T23:11:26+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["KaTeX", "LaTeX", "数学公式", "数学", "hugo"]
 draft: false
 math: true

@@ -2,7 +2,7 @@
 title: 'Hilbert''s Grand Hotel: How to Accommodate Infinite New Guests in a Fully Booked Hotel'
 slug: 'hilberts-grand-hotel'
 description: 'The "Grand Hotel" with infinite rooms never turns away a new guest, even when it is completely full. We explain the astonishing logical trick (properties of infinite sets) that allows it to accommodate 1 person, a million people, or even an "infinite number" of guests arriving on a bus.'
-date: '2026-09-10T06:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/hilberts_hotel.jpg'
 math: true
 mermaid: true

@@ -1,7 +1,7 @@
 ---
 title: 'Wie man mit Rust und winapi ein einfaches Windows-Fenster erstellt und anzeigt'
 slug: "RustでシンプルなFensterを表示する"
-date: 2022-10-01T19:08:58+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Rust", "Fenster"]
 draft: false
 image: "images/rust_logo.webp"

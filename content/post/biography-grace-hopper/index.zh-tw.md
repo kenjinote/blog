@@ -1,5 +1,6 @@
 ---
 title: "【葛麗絲·霍普：開創程式設計未來的「COBOL之母」的生平與遺產】"
+date: "2026-09-24T16:08:36+09:00"
 description: "以「COBOL之母」聞名的美國海軍少將葛麗絲·霍普。從發明編譯器到發現第一個電腦bug，我們將深入解析她波瀾壯闊的生平與奠定現代IT社會基礎的偉大業績。"
 slug: "biography-grace-hopper"
 categories: ["biography"]

@@ -1,7 +1,7 @@
 ---
 title: "Konjektur Poincaré - Masalah Sulit Topologi yang Mengungkap Bentuk Alam Semesta dan Legenda Perelman"
 description: "Penjelasan lengkap tentang 'Konjektur Poincaré' yang membingungkan para matematikawan selama lebih dari 100 tahun, dasar-dasar topologi, dan kisah pembuktian dramatis oleh Grigori Perelman."
-date: "2026-09-14T13:04:13+09:00"
+date: "2026-09-24T16:08:36+09:00"
 slug: "poincare-conjecture"
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]

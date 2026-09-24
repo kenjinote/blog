@@ -8,7 +8,7 @@
 
 title: '스플래툰 2를 오래 즐기는 비결! 추천 무기와 운영 팁'
 slug: "스플래툰 2"
-date: 2023-08-01T00:26:30+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["스플래툰 2", "게임", "Nintendo Switch"]
 draft: false
 image: "img.webp"

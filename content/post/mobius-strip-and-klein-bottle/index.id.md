@@ -2,7 +2,7 @@
 title: "Pita Möbius dan Botol Klein: Dunia Permukaan yang Menakjubkan Tanpa 'Dalam' atau 'Luar'"
 description: "Penjelasan mendalam tentang permukaan tak terorientasi dalam topologi, khususnya pita Möbius dan botol Klein, menggunakan rumus matematika dan diagram."
 slug: "mobius-strip-and-klein-bottle"
-date: 2026-09-20T15:15:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["matematika"]
 tags: ["topologi", "geometri", "pita-mobius", "botol-klein"]

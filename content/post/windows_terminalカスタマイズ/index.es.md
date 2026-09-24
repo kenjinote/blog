@@ -1,7 +1,7 @@
 ---
 title: 'Personalización definitiva de Windows Terminal (temas y configuración de la consola)'
 slug: "windows-terminal-ultimate-customization-guide"
-date: "2026-09-13T00:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

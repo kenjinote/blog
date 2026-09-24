@@ -2,7 +2,7 @@
 title: "納維-斯托克斯方程式解的存在性與平滑性 - 流體力學基礎方程式中的終極之謎"
 description: "深入探討克雷數學研究所的千禧年大獎難題之一：納維-斯托克斯方程式解的存在性與平滑性。"
 slug: "navier-stokes-equations"
-date: 2026-09-14T13:11:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "physics"]
 tags: ["納維-斯托克斯", "流體動力學", "千禧年大獎難題"]

@@ -1,5 +1,6 @@
 ---
 title: "La Paradoja de Fermi: En un universo tan vasto, ¿por qué no nos encontramos con \"ellos\"?"
+date: "2026-09-24T16:08:36+09:00"
 description: "\"¿Dónde están los extraterrestres?\" - La \"Paradoja de Fermi\", que comenzó con una pregunta casual del físico Enrico Fermi. Una explicación súper detallada que profundiza en numerosas hipótesis que explican el silencio cósmico, como la Ecuación de Drake, la teoría del Gran Filtro y la hipótesis del Bosque Oscuro, para acercarse al significado de la existencia de la humanidad y su futuro."
 slug: "paradox-fermi-paradox"
 categories: ["science"]

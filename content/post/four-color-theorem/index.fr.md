@@ -2,7 +2,7 @@
 title: "Théorème des quatre couleurs (Four Color Theorem) - N'importe quelle carte peut-elle être coloriée avec 4 couleurs ?"
 description: "Une explication détaillée de l'histoire du problème des quatre couleurs, un problème mathématique difficile, de l'approche de sa démonstration et de la signification de la preuve assistée par ordinateur."
 slug: "four-color-theorem"
-date: "2026-09-14T13:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "computer-science"]
 tags: ["Théorème des quatre couleurs", "Théorie des graphes", "Preuve assistée par ordinateur", "Topologie"]

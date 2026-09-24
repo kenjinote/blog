@@ -2,7 +2,7 @@
 title: "Amazonの歴史: オンライン書店から巨大物流・クラウド(AWS)帝国への道のり"
 description: "EコマースとAWSクラウドを制覇したAmazonの歴史"
 slug: "history-of-amazon"
-date: "2026-09-23T00:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

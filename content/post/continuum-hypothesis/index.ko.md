@@ -2,7 +2,7 @@
 title: "연속체 가설(Continuum Hypothesis) - 칸토어의 궁극적인 질문과 '증명도 반증도 할 수 없다'는 결말"
 description: "게오르크 칸토어가 제창한 연속체 가설(CH)의 역사, 수학적 배경, 그리고 괴델과 코언에 의한 독립성 증명에 대해 깊이 파헤칩니다."
 slug: "continuum-hypothesis"
-date: "2026-09-14T13:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "set-theory"]
 tags: ["연속체 가설", "칸토어", "무한", "수학"]

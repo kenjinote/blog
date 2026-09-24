@@ -2,7 +2,7 @@
 title: "物理的奥秘：Wi-Fi的工作原理 - 看不见的电波传输数据的原理"
 description: "将智能手机和电脑连接到互联网的Wi-Fi。从物理学和通信工程的角度，我们将解释看不见的电波是如何准确、高速地传输海量数字数据的。"
 slug: "physics-wifi"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

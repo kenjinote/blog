@@ -2,7 +2,7 @@
 title: "最小平方法：用線性代數尋找散點數據的「最佳擬合直線」"
 description: "使用幾何直覺和強大的線性代數工具（正規方程式、正交投影）深入解釋最小平方法的原理。"
 slug: "method-of-least-squares"
-date: "2026-09-20T14:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "數學"

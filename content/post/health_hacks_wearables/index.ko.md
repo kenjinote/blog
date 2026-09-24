@@ -1,7 +1,7 @@
 ---
 title: '스마트 링 등으로 컨디션을 관리하는 엔지니어의 일상 (건강 핵)'
 slug: "engineer-health-hacks-wearables"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

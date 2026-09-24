@@ -1,7 +1,7 @@
 ---
 title: 'Wie man KaTeX in Hugo einführt und schöne Formeln im LaTeX-Stil anzeigt'
 slug: "hugoでKaTeX(LaTeX風Formel表示)を有効にする方法"
-date: 2023-03-31T23:11:26+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["KaTeX", "LaTeX", "Formeln", "Mathematik", "hugo"]
 draft: false
 math: true

@@ -2,7 +2,7 @@
 title: "桌游的AI技术：将棋的基本规则与代表性战略 - 居飞车与振飞车战法解说"
 description: "在81格棋盘上展开的终极思考游戏“将棋”。从面向初学者的基本规则复习，到职业棋手也使用的代表性两大战略“居飞车”和“振飞车”的思想，进行通俗易懂的解说。"
 slug: "game-shogi-rules"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

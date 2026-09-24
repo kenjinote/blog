@@ -2,7 +2,7 @@
 title: "Google의 역사: 검색 엔진에서 'AI 퍼스트' 기업으로의 진화"
 description: "PageRank에서 Transformer에 이르는 Google의 역사"
 slug: "history-of-google"
-date: "2026-09-23T00:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

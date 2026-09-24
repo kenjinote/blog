@@ -1,7 +1,7 @@
 ---
 title: "도로를 새로 만들었는데 어째서인지 교통 체증이 악화되었다?: 브라스의 역설"
 description: "교통 체증을 해소하기 위해 새로운 우회 도로를 건설한 결과, 모두의 통근 시간이 길어지고 마는 네트워크 이론의 기묘한 역설."
-date: 2026-09-10T21:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 slug: "braess-paradox"
 image: "img/braess_paradox.jpg"

@@ -2,7 +2,7 @@
 title: "Das Herzstück der KI: Wie Deep Learning funktioniert - Wie neuronale Netze lernen"
 description: "Der Auslöser des dritten KI-Booms und die grundlegende Technologie hinter ChatGPT und Co.: 'Deep Learning'. Wir erklären, wie Algorithmen, die menschliche Gehirnnerven nachahmen, selbstständig Merkmale finden."
 slug: "technology-deep-learning"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

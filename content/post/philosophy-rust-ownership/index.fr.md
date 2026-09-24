@@ -1,5 +1,6 @@
 ---
 title: "L'essence de Rust : Le changement de paradigme apporté par la sécurité et le modèle de possession"
+date: "2026-09-24T16:08:36+09:00"
 description: "Nous approfondirons les concepts de \"possession (Ownership)\" et d'\"emprunt (Borrowing)\" qui sont au cœur de Rust, et expliquerons en détail comment il concilie sécurité de la mémoire et performances."
 slug: "philosophy-rust-ownership"
 categories: ["philosophy"]

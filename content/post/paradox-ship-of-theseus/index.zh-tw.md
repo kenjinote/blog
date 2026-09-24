@@ -1,5 +1,6 @@
 ---
 title: "忒修斯之船：拷問認同邊界的終極悖論"
+date: "2026-09-24T16:08:36+09:00"
 description: "「忒修斯之船」是源自古希臘的哲學悖論。所有零件都被更換過的船，究竟還是不是原來的那艘船？本文將深入探討何為自我認同。"
 slug: "paradox-ship-of-theseus"
 categories: ["philosophy"]

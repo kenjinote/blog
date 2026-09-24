@@ -1,5 +1,6 @@
 ---
 title: "Was ist das „Metcalfesche Gesetz“, das den Wert eines Netzwerks bestimmt? Eine ausführliche Erklärung zur Anwendung in der Geschäftsstrategie"
+date: "2026-09-24T16:08:36+09:00"
 description: "Das Metcalfesche Gesetz besagt, dass „der Wert eines Netzwerks proportional zum Quadrat der Anzahl seiner Nutzer ist“. Wir untersuchen eingehend die Essenz des Netzwerkeffekts, der das Geheimnis des Wachstums von Social-Media- und Plattformgeschäften ist, die Geschichte des Gesetzes, den mathematischen Hintergrund sowie seine Anwendung und Grenzen im modernen Geschäft."
 slug: "business-metcalfes-law"
 categories: ["business"]

@@ -1,5 +1,6 @@
 ---
 title: "Haskell과 순수 함수형 언어의 철학: 모나드의 세계와 그 심연"
+date: "2026-09-24T16:08:36+09:00"
 description: "순수 함수형 언어 Haskell의 철학부터 난해하다고 여겨지는 \"모나드(Monad)\"의 진정한 모습까지 철저히 깊이 파헤치는 완전 가이드. 부작용의 격리, 펑터(Functor)와 어플리케이티브(Applicative), 그리고 모나드가 엮어내는 추상 세계의 아름다움을 해설합니다."
 slug: "philosophy-haskell-monads"
 categories: ["philosophy"]

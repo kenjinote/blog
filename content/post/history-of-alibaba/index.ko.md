@@ -2,7 +2,7 @@
 title: "알리바바의 역사: 중국의 이커머스 혁명과 디지털 생태계 구축"
 description: "마윈이 어떻게 중국의 소매 및 결제를 혁신하고 거대한 디지털 생태계를 구축했는가."
 slug: "history-of-alibaba"
-date: "2026-09-23T01:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

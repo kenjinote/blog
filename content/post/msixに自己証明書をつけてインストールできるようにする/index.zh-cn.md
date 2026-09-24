@@ -1,7 +1,7 @@
 ---
 title: 'Windows开发者必看！为MSIX添加自签名证书以进行本地安装的方法'
 slug: "msixに自签名证书をつけて安装できるようにする"
-date: 2025-08-30T04:18:04+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["msix", "自签名证书", "安装"]
 draft: false
 image: "img.webp"

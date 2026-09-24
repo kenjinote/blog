@@ -2,7 +2,7 @@
 title: "История Google: Эволюция от поисковой системы к компании «AI-first»"
 description: "История Google от PageRank до Transformer"
 slug: "history-of-google"
-date: "2026-09-23T00:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

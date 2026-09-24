@@ -2,7 +2,7 @@
 title: "Lemma von Burnside: Wie zählt man Muster, wenn Rotationen wichtig sind?"
 description: "Erklärung, wie man durch Rotationen verursachte doppelte Muster eliminiert, am Beispiel der Halskettenfärbung. Eine praktische Einführung in die Gruppentheorie."
 slug: "burnsides-lemma"
-date: "2026-09-20T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "mathematik"

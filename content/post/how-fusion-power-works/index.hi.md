@@ -2,7 +2,7 @@
 title: "नाभिकीय संलयन से बिजली कैसे बनती है: तारों की अभिक्रिया से विद्युत संयंत्र तक"
 description: "ड्यूटेरियम–ट्रिटियम अभिक्रिया, प्लाज़्मा परिरोधन, टोकामाक, स्टेलरेटर, लेज़र, ऊर्जा लाभ, ईंधन चक्र और पदार्थों की चुनौतियों को सूत्रों और आरेखों से समझें।"
 slug: "how-fusion-power-works"
-date: "2026-09-24T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.png"
 categories: ["technology", "physics"]
 tags: ["nuclear-fusion", "energy", "plasma", "engineering", "history"]

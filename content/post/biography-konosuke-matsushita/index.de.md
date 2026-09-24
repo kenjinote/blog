@@ -1,6 +1,6 @@
 ---
 title: "Das Leben und die Philosophie von Konosuke Matsushita: Das Vermächtnis des Gottes des Managements für die Zukunft"
-date: "2026-09-23T20:59:56+09:00"
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["konosuke-matsushita", "history"]
 image: "eyecatch.jpg"

@@ -2,7 +2,7 @@
 title: "L'apogée des jeux de table : Règles de base et combinaisons (Yaku) au Mahjong - Une guerre de l'information à 4 joueurs"
 description: "Le « Mahjong », un jeu de table intellectuel oriental tissé de 136 tuiles. Nous expliquerons la structure de base de ce jeu où s'équilibrent parfaitement la chance et les compétences, comment créer des Mentsu et des Atama, ainsi que les « Yaku » (combinaisons) représentatifs."
 slug: "game-mahjong-rules"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

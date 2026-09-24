@@ -2,7 +2,7 @@
 title: "赫爾穆特·哈塞：連結局部與全局的數論巨人"
 description: "深入了解20世紀傑出數學家赫爾穆特·哈塞的生平，及其在哈塞原理和橢圓曲線等方面的數學成就。"
 slug: "hasse"
-date: "2026-09-20T20:10:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

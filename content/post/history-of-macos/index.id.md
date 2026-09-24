@@ -2,7 +2,7 @@
 title: "Sejarah OS: Silsilah macOS (Dari NeXTSTEP ke Garis Keturunan UNIX)"
 description: "Bagaimana macOS, yang merupakan fondasi Apple, berevolusi dengan mewarisi garis keturunan NeXTSTEP dan UNIX."
 slug: "history-of-macos"
-date: "2026-09-23T02:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

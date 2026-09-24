@@ -1,7 +1,7 @@
 ---
 title: '圖解 OAuth 2.0 的運作機制：從 Slack App 整合實作中學習'
 slug: "oauth2-architecture-slack-app-integration"
-date: "2026-09-13T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

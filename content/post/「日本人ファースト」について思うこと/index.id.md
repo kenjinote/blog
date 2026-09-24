@@ -1,7 +1,7 @@
 ---
 title: 'Ilusi dan Realitas ''Japan First'': Tantangan Jepang di Tahun 2026 dan Jalan Menuju Koeksistensi'
 slug: "「Mengutamakan Orang Jepang」についてPikiran"
-date: 2026-01-23T13:43:41+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Jepang Pertama", "Politik", "Masalah Sosial"]
 draft: false
 image: "img.webp"

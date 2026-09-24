@@ -1,7 +1,7 @@
 ---
 title: '簡單解說使用 paint.net 為圖片特定區域打馬賽克的方法'
 slug: "paint.netで圖片の特定個所にモザイクをかける方法"
-date: 2023-04-11T16:33:10+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["paint.net", "邊框", "圖片"]
 draft: false
 image: "img.webp"

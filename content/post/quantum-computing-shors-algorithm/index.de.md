@@ -2,7 +2,7 @@
 title: "Wie Quantencomputer funktionieren und Shors Algorithmus: Warum Quantenberechnungen Kryptografie brechen können"
 description: "Eine tiefe Erklärung von den Grundlagen der Quantencomputer bis zu den mathematischen und quantenmechanischen Mechanismen von Shors Algorithmus, der eine Bedrohung für die RSA-Kryptografie darstellt. Wir erklären dies im Detail mit einer überwältigenden Menge an Informationen, einschließlich Implementierungsbeispielen mit Qiskit und zukünftigen Perspektiven der Post-Quanten-Kryptografie."
 slug: "quantum-computing-shors-algorithm"
-date: "2026-09-21T02:35:46+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "technologie"

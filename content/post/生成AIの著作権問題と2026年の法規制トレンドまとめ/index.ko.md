@@ -1,7 +1,7 @@
 ---
 title: '생성형 AI의 저작권 문제와 2026년 법 규제 트렌드 요약'
 slug: "ai-copyright-law-2026-trends"
-date: "2026-09-11T23:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

@@ -1,7 +1,7 @@
 ---
 title: '子供の机を借りて作業？育児中のテレワーク・リモートワークのリアルな作業環境'
 slug: "今日の作業環境"
-date: 2022-09-04T14:29:09+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["雑記","子供"]
 draft: false
 image: "images/today_workplase.webp"

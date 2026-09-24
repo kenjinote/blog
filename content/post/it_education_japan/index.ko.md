@@ -1,7 +1,7 @@
 ---
 title: '일본의 IT 교육 현황과 과제: 프로그래밍 필수화의 그 후'
 slug: "japan-it-education-aftermath"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

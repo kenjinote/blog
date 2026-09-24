@@ -1,7 +1,7 @@
 ---
 title: 'خطوات تثبيت لغة Go (Golang) وطريقة تنفيذ البرنامج الأول'
 slug: "Goをتثبيتする方法"
-date: 2022-09-10T00:48:17+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Go","تثبيت"]
 draft: false
 image: "images/cover.webp"

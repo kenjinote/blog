@@ -1,7 +1,7 @@
 ---
 title: '【Windows 11/10】作業効率が劇的に上がる便利なショートカットキー・小技集'
 slug: "Windows のショートカット・小技集"
-date: 2022-09-18T23:49:29+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Windows","小技","ショートカット"]
 draft: false
 image: "img.webp"

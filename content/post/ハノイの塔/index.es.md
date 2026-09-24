@@ -9,7 +9,7 @@
 
 title: '[Introducción a Python] Explicación del algoritmo de las ''Torres de Hanói'' resuelto mediante recursividad'
 slug: "Torre de Hanói"
-date: 2025-04-17T22:23:14+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["La Torre de Hanói", "Algoritmo", "Python"]
 draft: false
 image: "img.webp"

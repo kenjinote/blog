@@ -1,7 +1,7 @@
 ---
 title: "Le paradoxe des ancêtres : Mathématiques et génétique de l'effondrement des généalogies (Pedigree Collapse)"
 image: "eyecatch.jpg"
-date: 2026-09-14T00:00:51+09:00
+date: "2026-09-24T16:08:36+09:00"
 description: "Le « paradoxe des ancêtres » se produit lorsqu'en remontant les générations, le nombre d'ancêtres dépasse la population mondiale de l'époque. Nous expliquons en détail l'« effondrement des généalogies (Pedigree Collapse) » qui résout ce mystère, sous l'angle des mathématiques et de la génétique."
 categories: ["mathematical-paradoxes", "genetics", "science"]
 tags:

@@ -1,6 +1,6 @@
 ---
 categories: ["biography"]
-date: 2026-09-23T19:18:01+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 tags: ["marc-andreessen", "history"]
 title: "網路黎明期到開創未來的男人：馬克·安德森的生涯與哲學"

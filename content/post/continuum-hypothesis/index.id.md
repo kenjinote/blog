@@ -2,7 +2,7 @@
 title: "Hipotesis Kontinum (Continuum Hypothesis) - Pertanyaan Pamungkas Cantor dan Akhir yang 'Tidak Dapat Dibuktikan maupun Dibantah'"
 description: "Menggali lebih dalam sejarah, latar belakang matematika dari Hipotesis Kontinum (CH) yang diusulkan oleh Georg Cantor, serta bukti independensinya oleh Gödel dan Cohen."
 slug: "continuum-hypothesis"
-date: "2026-09-14T13:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "set-theory"]
 tags: ["Hipotesis Kontinum", "Cantor", "Ketakterhinggaan", "Matematika"]

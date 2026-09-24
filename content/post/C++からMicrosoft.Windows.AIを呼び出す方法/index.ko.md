@@ -9,7 +9,7 @@
 
 title: '【샘플 포함】 C++에서 Windows.AI를 호출하여 ONNX 모델을 실행하는 방법'
 slug: "C++からMicrosoft.Windows.AIを呼び出す方法"
-date: 2025-07-19T10:03:51+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["C++", "Microsoft.Windows.AI", "Win32 API"]
 draft: false
 image: "img.webp"

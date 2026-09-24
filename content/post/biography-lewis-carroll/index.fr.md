@@ -1,6 +1,6 @@
 ---
 title: "Lewis Carroll: La trajectoire du mathématicien et logicien qui a créé 'Alice au pays des merveilles'"
-date: 2026-09-23T20:51:47+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["lewis-carroll", "history"]
 image: "eyecatch.jpg"

@@ -2,7 +2,7 @@
 title: "Physics and Everyday Technology: How RFID and NFC (Osaifu-Keitai) Work - Contactless Communication by Electromagnetic Induction"
 description: "A magical technology that completes a payment just by touching Suica, PASMO, or Osaifu-Keitai to a ticket gate. This article explains the physical law of 'electromagnetic induction' behind it and the NFC communication standard."
 slug: "physics-rfid-nfc"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

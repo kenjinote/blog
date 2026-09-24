@@ -2,7 +2,7 @@
 title: "OSの歴史: macOSの系譜 (NeXTSTEPからUNIXの血統へ)"
 description: "Appleの基盤であるmacOSが、いかにしてNeXTSTEPとUNIXの血統を受け継いで進化したか。"
 slug: "history-of-macos"
-date: "2026-09-23T02:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -8,7 +8,7 @@
 
 title: '¡El secreto para disfrutar de Splatoon 2 durante mucho tiempo! Armas recomendadas y consejos de movimiento'
 slug: "Splatoon 2"
-date: 2023-08-01T00:26:30+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Splatoon 2", "Juegos", "Nintendo Switch"]
 draft: false
 image: "img.webp"

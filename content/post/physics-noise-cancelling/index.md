@@ -2,7 +2,7 @@
 title: "物理の不思議: ノイズキャンセリング - 音で音を消す波の干渉"
 description: "イヤホンをつけるだけで周囲の騒音が消える「ノイズキャンセリング」。その裏にある物理学『波の干渉』の原理と技術的歴史を深く解説します。"
 slug: "physics-noise-cancelling"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

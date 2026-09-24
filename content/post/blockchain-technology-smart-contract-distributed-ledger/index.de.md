@@ -2,7 +2,7 @@
 title: "Blockchain-Technologie und Smart Contracts (Wie verteilte Ledger funktionieren)"
 description: "Erkundung der Grundprinzipien der Blockchain, Konsensalgorithmen und der Implementierung von Smart Contracts."
 slug: "blockchain-technology-smart-contract-distributed-ledger"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "blockchain"

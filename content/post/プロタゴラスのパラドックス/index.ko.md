@@ -1,7 +1,7 @@
 ---
 title: "스승과 제자, 어느 쪽이 이겨도 모순되는 재판: 프로타고라스의 역설"
 description: "수업료 지불 조건을 둘러싼 사제 간의 법정 논쟁. 어느 쪽이 이기든, 어느 쪽이 지든 논리가 모순되고 마는 고대 그리스의 법률 역설."
-date: 2026-09-10T21:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 slug: "paradox-of-the-court"
 image: "img/paradox_of_court.jpg"

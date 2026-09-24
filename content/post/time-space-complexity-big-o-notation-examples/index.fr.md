@@ -2,7 +2,7 @@
 title: "Complexité temporelle et spatiale (Introduction et exemples de la notation Big O)"
 description: "Nous expliquons en détail la notation O (notation Big O), indispensable pour évaluer les performances des algorithmes, de la différence entre complexité temporelle et spatiale jusqu'à des exemples concrets."
 slug: "time-space-complexity-big-o-notation-examples"
-date: 2026-09-22T00:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "big-o", "time-complexity", "space-complexity", "data-structures"]

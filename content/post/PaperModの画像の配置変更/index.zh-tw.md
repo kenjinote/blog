@@ -1,7 +1,7 @@
 ---
 title: '使用 CSS 自訂 Hugo PaperMod 主題的圖片大小與配置方法'
 slug: "PaperModの圖片の配置変更"
-date: 2022-09-11T18:50:40+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "images/img.webp"

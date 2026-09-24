@@ -1,7 +1,7 @@
 ---
 title: 'Windows 레지스트리의 기초 지식과 프로그래밍 가능한 안전한 편집 방법'
 slug: "windows-registry-safe-programmable-editing"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

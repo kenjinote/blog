@@ -1,7 +1,7 @@
 ---
 title: 'The Trade-off Between Privacy and Convenience: The Fate of Personal Information in the Era of Big Data'
 slug: 'privacy-vs-convenience-big-data'
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true

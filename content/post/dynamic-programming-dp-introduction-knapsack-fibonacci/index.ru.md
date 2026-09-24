@@ -2,7 +2,7 @@
 title: "Введение в динамическое программирование (ДП) и известные задачи (Рюкзак, Фибоначчи)"
 description: "Трудность алгоритмов - «Динамическое программирование (ДП)». На примере последовательности Фибоначчи и задачи о рюкзаке мы простыми словами объясним разницу между рекурсией с мемоизацией и восходящим подходом."
 slug: "dynamic-programming-dp-introduction-knapsack-fibonacci"
-date: 2026-09-22T04:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "dynamic-programming", "dp", "knapsack", "optimization"]

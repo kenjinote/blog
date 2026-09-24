@@ -1,6 +1,6 @@
 ---
 categories: ["biography"]
-date: 2026-09-23T19:18:01+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 tags: ["marc-andreessen", "history"]
 title: "인터넷의 여명기부터 미래를 창조하는 사람: 마크 앤드리슨의 생애와 철학"

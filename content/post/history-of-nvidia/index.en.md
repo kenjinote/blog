@@ -2,7 +2,7 @@
 title: "The History of NVIDIA (GeForce): The Trajectory from 3D Graphics to the Heart of AI (GPU)"
 description: "The history of NVIDIA, transforming from a gaming graphics board manufacturer to the absolute ruler leading the modern AI revolution."
 slug: "history-of-nvidia"
-date: "2026-09-23T01:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

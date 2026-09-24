@@ -2,7 +2,7 @@
 title: "금융 네트워크: 신용카드 결제의 원리 - 승인부터 청산까지의 기술"
 description: "매장에서 카드를 스캔하는 순간, 그 이면에서는 어떤 데이터 통신이 이루어지고 있을까? 세계 규모의 결제 네트워크를 지탱하는 '승인'과 '청산'의 원리를 해설합니다."
 slug: "technology-credit-card"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

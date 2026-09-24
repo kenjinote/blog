@@ -2,7 +2,7 @@
 title: "操作系统的历史：Windows 的谱系 (从 MS-DOS 到 NT 架构的完成)"
 description: "从 CUI 的 MS-DOS 开始，过渡到 GUI，再到坚固的 NT 架构，Windows 演进的历史。"
 slug: "history-of-windows"
-date: "2026-09-23T02:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

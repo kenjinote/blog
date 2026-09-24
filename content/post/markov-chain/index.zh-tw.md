@@ -2,7 +2,7 @@
 title: "馬可夫鏈：'未來僅取決於現在' 狀態轉移的數學與機率模型"
 description: "從基礎到應用，詳細解析狀態轉移的機率模型——馬可夫鏈。"
 slug: "markov-chain"
-date: "2026-09-20T15:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "數學"

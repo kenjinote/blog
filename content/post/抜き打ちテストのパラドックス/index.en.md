@@ -2,7 +2,7 @@
 title: 'The Unexpected Hanging Paradox: The Day a Logically "Absolutely Impossible" Test Takes Place'
 slug: 'unexpected-hanging-paradox'
 description: '"Next week, on one of the days from Monday to Friday, I will give you a surprise test in an unpredictable manner." —— In response to the teacher''s declaration, the students proved that "a surprise test is logically impossible." However...'
-date: '2026-09-10T10:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/unexpected_hanging.jpg'
 math: true
 mermaid: true

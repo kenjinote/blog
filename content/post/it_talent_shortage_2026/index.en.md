@@ -1,7 +1,7 @@
 ---
 title: "The '2026 Problem': Is the IT Talent Shortage Really Happening? The Reality on the Ground"
 slug: "it-talent-shortage-2026"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

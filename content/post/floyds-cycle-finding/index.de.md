@@ -1,7 +1,7 @@
 ---
 title: "Floyds Algorithmus zur Zykluserkennung (Hase-und-Igel-Algorithmus)"
 image: "eyecatch.jpg"
-date: 2026-09-14T00:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 description: "Wir erklären Floyds Algorithmus zur Zykluserkennung (Hase-und-Igel-Algorithmus), einen berühmten Algorithmus zum Finden von Zyklen in Listen und Graphen, detailliert mit Diagrammen, mathematischen Formeln und Implementierungen in C++ und Rust."
 categories: ["algorithms", "computer-science"]
 tags:

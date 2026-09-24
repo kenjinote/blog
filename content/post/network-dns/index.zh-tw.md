@@ -2,7 +2,7 @@
 title: "網路技術: DNS 的運作原理 - 網際網路的電話簿，名稱解析的幕後機制"
 description: "為什麼只要輸入「www.google.com」就能連上目標伺服器？本文將為您解說網際網路最大的分散式資料庫「DNS」的階層結構與名稱解析機制。"
 slug: "network-dns"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

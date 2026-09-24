@@ -2,7 +2,7 @@
 title: "Informationstheorie und Shannon-Entropie: Die Grenzen von Datenkompression und Kommunikation erkunden"
 description: "Eine detaillierte Erklärung der Grundlagen der von Claude Shannon vorgeschlagenen Informationstheorie, von dem Konzept der Entropie über die Grenzen der Datenkompression bis hin zu Anwendungen in der modernen Kommunikation."
 slug: information-theory-shannon-entropy
-date: 2026-09-21T02:45:54+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - computer-science

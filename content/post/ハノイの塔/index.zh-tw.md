@@ -1,7 +1,7 @@
 ---
 title: '【Python入門】用遞迴處理求解「河內塔」演算法解說'
 slug: "河內塔"
-date: 2025-04-17T22:23:14+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["漢諾塔", "演算法", "Python"]
 draft: false
 image: "img.webp"

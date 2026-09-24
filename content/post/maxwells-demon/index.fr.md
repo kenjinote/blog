@@ -1,7 +1,7 @@
 ---
 title: "Le démon de Maxwell : L'énergie de l'« information » qui défie le bon sens de la physique"
 image: "eyecatch.jpg"
-date: 2026-09-14T00:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 description: "Le « démon de Maxwell », une expérience de pensée qui semble violer la deuxième loi de la thermodynamique. Nous expliquons en détail, avec des formules mathématiques et des schémas, comment ce paradoxe a été résolu grâce à la « physique de l'information »."
 categories: ["physics", "information-theory"]
 tags: ["Thermodynamics", "Maxwell's Demon", "Entropy", "Landauer's Principle"]

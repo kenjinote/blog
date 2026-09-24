@@ -1,5 +1,6 @@
 ---
 title: "Kebenaran tentang Bug Y2K dan Drama Debugging: Pertempuran Programmer Tanpa Nama yang Menyelamatkan Dunia"
+date: "2026-09-24T16:08:36+09:00"
 description: "Pada akhir 1999, dunia panik karena \"Masalah Y2K\" (Masalah Tahun 2000). Apakah itu sekadar sensasi media? Tidak, ada drama debugging epik dari para programmer yang berjuang siang dan malam dengan kode untuk mencegah keruntuhan sistem global. Kami mendekati kebenaran pada masa itu."
 slug: "history-y2k-bug"
 categories: ["history"]

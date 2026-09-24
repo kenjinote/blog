@@ -2,7 +2,7 @@
 title: 'Simpsons Paradoxon: Ein mysteriöses Phänomen, bei dem man im Detail gewinnt, aber im Ganzen verliert'
 slug: 'simpsons-paradox'
 description: 'Obwohl die „Erfolgsquote“ in jeder Abteilung höher ist, verliert man bei der Berechnung der „Gesamterfolgsquote“ des gesamten Unternehmens aufgrund einer Umkehrung!? Wir erklären leicht verständlich das „Simpson-Paradoxon“, eine erschreckende Falle der Statistik, die uns mit Daten täuscht.'
-date: '2026-09-10T07:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/simpsons_paradox.jpg'
 math: true
 mermaid: true

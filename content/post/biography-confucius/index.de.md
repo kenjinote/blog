@@ -1,6 +1,6 @@
 ---
 title: "Das Leben und die Philosophie des Konfuzius: Die zeitlose Weisheit von 'Ren' und 'Li'"
-date: "2026-09-23T19:53:32+09:00"
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["confucius", "history"]
 image: "eyecatch.jpg"

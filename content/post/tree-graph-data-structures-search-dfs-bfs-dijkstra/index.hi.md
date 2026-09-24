@@ -2,7 +2,7 @@
 title: "ट्री और ग्राफ डेटा संरचनाओं की खोज (DFS, BFS, डिजक्स्ट्रा एल्गोरिदम)"
 description: "ट्री और ग्राफ संरचनाएं जो जटिल डेटा संबंधों का प्रतिनिधित्व करती हैं। गहराई-प्रथम खोज (DFS), चौड़ाई-प्रथम खोज (BFS) से लेकर सबसे छोटे पथ की समस्या (डिजक्स्ट्रा एल्गोरिदम) तक विस्तृत विवरण।"
 slug: "tree-graph-data-structures-search-dfs-bfs-dijkstra"
-date: 2026-09-22T03:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "graph", "tree", "dfs", "bfs", "dijkstra"]

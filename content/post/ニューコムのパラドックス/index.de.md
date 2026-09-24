@@ -2,7 +2,7 @@
 title: 'Newcombs Paradoxon: Kannst du ein superintelligentes Wesen besiegen, das die Zukunft vorhersieht?'
 slug: 'newcombs-paradox'
 description: '"Eine durchsichtige Box mit 100.000 Yen" und "eine undurchsichtige Box mit 100 Millionen Yen oder leer". Welches würdest du in einem Spiel wählen, das von einem Wesen vorbereitet wurde, das die Zukunft perfekt vorhersagt? Wir erklären das größte Rätsel der modernen Philosophie, bei dem der freie Wille und der Determinismus aufeinanderprallen.'
-date: '2026-09-10T08:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/newcombs_paradox.jpg'
 math: true
 mermaid: true

@@ -2,7 +2,7 @@
 title: "Der ultimative Tischspiel-Klassiker: Mahjong-Grundregeln und Yaku-Erklärung - Ein Informationskrieg zu viert"
 description: "Eine Einführung in das asiatische, intellektuelle Tischspiel 'Mahjong', das mit 136 Ziegeln gespielt wird. Wir erklären die Grundstruktur, wie man Sets und Paare bildet, sowie die wichtigsten 'Yaku' (Gewinnhände) in diesem Spiel mit seiner perfekten Balance aus Glück und Können."
 slug: "game-mahjong-rules"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

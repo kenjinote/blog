@@ -2,7 +2,7 @@
 title: "Internet-Adressen: Die Geschichte von IPv4 und das Problem der Erschöpfung - Warum 4,3 Milliarden Adressen nicht ausreichten"
 description: "Die „IP-Adresse“ ist die Adresse, die jedem Gerät im Internet zugewiesen wird. Wir erklären die Geschichte und die Mechanismen, warum IPv4, von dem eigentlich eine riesige Anzahl von etwa 4,3 Milliarden bereitgestellt wurde, erschöpft ist und der Übergang zum Next-Generation-IPv6 stattfindet."
 slug: "history-of-ipv4"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

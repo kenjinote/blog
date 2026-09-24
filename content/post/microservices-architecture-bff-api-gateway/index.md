@@ -2,7 +2,7 @@
 title: "マイクロサービス・アーキテクチャの光と影（BFFとAPI Gateway）"
 description: "モノリスからの分割における課題と、API GatewayやBFF（Backend for Frontend）パターンによる解決策。"
 slug: "microservices-architecture-bff-api-gateway"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

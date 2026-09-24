@@ -2,7 +2,7 @@
 title: "Computadoras de próxima generación: Cómo funcionan las computadoras cuánticas - El mundo revolucionado por la superposición de '0' y '1'"
 description: "Las 'computadoras cuánticas' se dice que resuelven en segundos cálculos que a las supercomputadoras les llevarían decenas de miles de años. Explicaremos el paradigma de computación completamente nuevo que utiliza los misteriosos fenómenos de la mecánica cuántica: la 'superposición' y el 'entrelazamiento'."
 slug: "technology-quantum-computer"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

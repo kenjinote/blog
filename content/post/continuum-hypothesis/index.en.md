@@ -2,7 +2,7 @@
 title: "Continuum Hypothesis - Cantor's Ultimate Question and the 'Unprovable and Undisprovable' Conclusion"
 description: "Delve deeply into the history of the Continuum Hypothesis (CH) proposed by Georg Cantor, its mathematical background, and the proofs of its independence by Gödel and Cohen."
 slug: "continuum-hypothesis"
-date: "2026-09-14T13:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "set-theory"]
 tags: ["Continuum Hypothesis", "Cantor", "Infinity", "Math"]

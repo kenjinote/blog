@@ -2,7 +2,7 @@
 title: "Cadenas de Markov: Las matemáticas y los modelos de probabilidad de transiciones de estado donde el 'futuro depende solo del presente'"
 description: "Una explicación detallada de los modelos de probabilidad de transiciones de estado, cubriendo los fundamentos y las aplicaciones de las cadenas de Markov."
 slug: "markov-chain"
-date: "2026-09-20T15:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemáticas"

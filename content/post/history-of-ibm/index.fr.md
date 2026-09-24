@@ -2,7 +2,7 @@
 title: "Histoire d'IBM : des cartes perforées aux ordinateurs centraux, et jusqu'à l'informatique quantique"
 description: "Comment « Big Blue » a continué de diriger l'industrie informatique depuis plus de 100 ans."
 slug: "history-of-ibm"
-date: "2026-09-23T01:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -1,7 +1,7 @@
 ---
 title: 'تسريع تطوير Salesforce! ملخص لأفضل إضافات Chrome'
 slug: "Salesforceموصى بهإضافة كروم"
-date: 2022-05-02T10:39:36+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Salesforce", "إضافات Chrome"]
 draft: false
 image: "img.webp"

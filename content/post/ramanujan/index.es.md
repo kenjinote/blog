@@ -2,7 +2,7 @@
 title: "Srinivasa Ramanujan: El genio matemático que comprendió el infinito a través de la intuición"
 description: "Una explicación detallada de la vida del genio matemático indio Srinivasa Ramanujan, y sus asombrosos logros matemáticos, como el número de Hardy-Ramanujan y las fórmulas de pi. También exploramos el impacto de su intuición en la matemática y la física modernas."
 slug: "ramanujan"
-date: "2026-09-20T20:10:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemáticas"

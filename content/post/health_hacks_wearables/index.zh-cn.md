@@ -1,7 +1,7 @@
 ---
 title: '使用智能戒指等管理身体状况的工程师日常（健康黑客）'
 slug: "engineer-health-hacks-wearables"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

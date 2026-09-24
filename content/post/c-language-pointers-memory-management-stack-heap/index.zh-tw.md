@@ -2,7 +2,7 @@
 title: "完全理解 C 語言與指標（記憶體管理、位址、堆積與堆疊基礎）"
 description: "針對 C 語言中最大的障礙——指標，從記憶體位址的概念、堆疊與堆積的差異，到動態記憶體配置進行徹底解說。這是專為想要深入理解 C 語言的人所準備的完整指南。"
 slug: "c-language-pointers-memory-management-stack-heap"
-date: 2026-09-21T14:51:08+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["c", "pointers", "memory", "stack", "heap"]

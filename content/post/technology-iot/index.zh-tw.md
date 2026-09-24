@@ -2,7 +2,7 @@
 title: "物聯網：IoT的運作原理 - 萬物互聯世界的背後"
 description: "從家電到汽車，再到工廠的機械，所有事物都連接到網際網路的「IoT（Internet of Things）」。本文將解說感測器技術與通訊網路如何收集資料，並與AI協作創造價值。"
 slug: "technology-iot"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -2,7 +2,7 @@
 title: "양자 컴퓨터의 원리와 쇼어의 알고리즘: 왜 양자 계산은 암호를 깰 수 있을까?"
 description: "양자 컴퓨터의 기초부터, RSA 암호의 위협이 되는 쇼어의 알고리즘(Shor's Algorithm)의 수학적・양자 역학적 원리까지 깊이 있게 해설. Qiskit을 이용한 구현 예제와 향후 포스트 양자 암호의 전망도 포함하여 압도적인 정보량으로 상세히 설명합니다."
 slug: "quantum-computing-shors-algorithm"
-date: "2026-09-21T02:35:46+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "기술"

@@ -2,7 +2,7 @@
 title: "L'axiome du choix et le lemme de Zorn – Le concept de « choix » qui a ébranlé les fondements des mathématiques"
 description: "Un approfondissement de l'axiome du choix et du lemme de Zorn, de leur signification intuitive à leur formalisation mathématique et à leur importance dans les mathématiques modernes."
 slug: "axiom-of-choice-and-zorns-lemma"
-date: 2026-09-14T13:20:37+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathématiques", "théorie-des-ensembles"]
 tags: ["Axiome du choix", "Lemme de Zorn", "Système axiomatique ZFC", "Fondements des mathématiques", "Mermaid", "KaTeX"]

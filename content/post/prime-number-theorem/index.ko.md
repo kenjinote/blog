@@ -2,7 +2,7 @@
 title: "소수 정리(Prime Number Theorem) - 소수의 분포가 로그 함수에 가까워진다는 법칙"
 description: "소수의 출현 규칙성에 관한 수학의 금자탑, 소수 정리(Prime Number Theorem)에 대해 깊이 있게 해설합니다. 소수 계수 함수부터 리만 가설과의 관계성까지."
 slug: "prime-number-theorem"
-date: 2026-09-14T13:11:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "algorithms"]
 tags:

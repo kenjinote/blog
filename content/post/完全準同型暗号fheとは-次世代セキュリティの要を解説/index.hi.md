@@ -1,7 +1,7 @@
 ---
 title: 'पूर्ण समरूप एन्क्रिप्शन (FHE) क्या है? अगली पीढ़ी की सुरक्षा के मूल तत्व की व्याख्या'
 slug: "fully-homomorphic-encryption-fhe-explained"
-date: "2026-09-11T11:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

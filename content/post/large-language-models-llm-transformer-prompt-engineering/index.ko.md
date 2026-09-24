@@ -2,7 +2,7 @@
 title: "LLM(대규모 언어 모델)의 메커니즘과 프로그래밍에의 응용 (Transformer 모델, 프롬프트 엔지니어링)"
 description: "대규모 언어 모델(LLM)의 근간을 이루는 Transformer 아키텍처의 수학적 메커니즘부터 프롬프트 엔지니어링의 고급 기법, 그리고 실제 프로그래밍에의 응용까지 철저하게 해설합니다."
 slug: "large-language-models-llm-transformer-prompt-engineering"
-date: "2026-09-21T14:51:08+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["ai", "llm", "transformer", "prompt-engineering"]

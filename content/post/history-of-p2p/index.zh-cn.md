@@ -2,7 +2,7 @@
 title: "网络技术：P2P（点对点）技术解析 - 分布式系统的力量"
 description: "深入解析不依赖特定服务器、由各个计算机对等通信的「P2P」技术。从其基础理论到连接现代区块链的思想。"
 slug: "history-of-p2p"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -1,7 +1,7 @@
 ---
 title: "羅伯特·弗洛伊德的循環檢測法（龜兔賽跑演算法）"
 image: "eyecatch.jpg"
-date: 2026-09-14T00:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 description: "關於用於檢測列表或圖中循環的著名演算法「羅伯特·弗洛伊德的循環檢測法（龜兔賽跑演算法）」，我們將結合圖解與數學公式，以及 C++ 和 Rust 的實作進行詳細解說。"
 categories: ["algorithms", "computer-science"]
 tags:

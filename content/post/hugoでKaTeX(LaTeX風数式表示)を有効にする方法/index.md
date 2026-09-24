@@ -1,7 +1,7 @@
 ---
 title: 'HugoでKaTeXを導入し、LaTeX風の美しい数式を表示する方法'
 slug: "hugoでKaTeX(LaTeX風数式表示)を有効にする方法"
-date: 2023-03-31T23:11:26+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["KaTeX", "LaTeX", "数式", "数学", "hugo"]
 draft: false
 math: true

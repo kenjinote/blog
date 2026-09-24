@@ -2,7 +2,7 @@
 title: "Équation de Pell : Le Charme de l'Équation Diophantienne aux Solutions Infinies et les Fractions Continues"
 description: "Une explication détaillée de l'équation de Pell, de sa résolution à l'aide de fractions continues et de la génération de solutions infinies."
 slug: "pell-equation"
-date: "2026-09-20T15:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathématiques"

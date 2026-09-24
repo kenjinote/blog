@@ -2,7 +2,7 @@
 title: "Apple의 역사: 차고에서 시가총액 세계 1위로의 궤적과 혁신의 DNA"
 description: "스티브 잡스와 워즈니악의 차고 창업부터, iPhone 혁명, 시가총액 세계 1위에 이르기까지 Apple의 역사와 기술적 혁신을 철저히 해설."
 slug: "history-of-apple"
-date: "2026-09-23T03:35:47+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

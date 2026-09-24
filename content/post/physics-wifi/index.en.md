@@ -2,7 +2,7 @@
 title: "The Wonder of Physics: How Wi-Fi Works - The Principle of Transmitting Data via Invisible Radio Waves"
 description: "Wi-Fi connects smartphones and PCs to the internet. We explain from the perspectives of physics and communication engineering how invisible radio waves accurately and rapidly transport vast amounts of digital data."
 slug: "physics-wifi"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

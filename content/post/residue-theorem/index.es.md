@@ -2,7 +2,7 @@
 title: "Teorema de los Residuos: Resolviendo Brillante y Fácilmente Integrales Reales Complejas Usando 'Singularidades' en el Plano Complejo"
 description: "Una explicación detallada de cómo simplificar de manera asombrosa las difíciles integrales definidas de números reales utilizando el teorema de los residuos, un aspecto destacado del análisis complejo. También cubre cortes de rama e integrales de ojo de cerradura."
 slug: "residue-theorem"
-date: "2026-09-20T14:40:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["matemáticas"]
 tags: ["análisis complejo", "cálculo", "matemáticas"]

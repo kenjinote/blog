@@ -2,7 +2,7 @@
 title: "事件驱动架构与异步处理的深层探索：Event Loop、Actor模型与CQRS"
 description: "从Event Loop、Actor模型和CQRS的角度，深入探讨现代分布式系统中不可或缺的事件驱动架构与异步处理。"
 slug: "event-driven-architecture-async"
-date: "2026-09-21T02:58:36+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "architecture"

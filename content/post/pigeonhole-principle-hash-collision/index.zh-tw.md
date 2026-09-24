@@ -1,7 +1,7 @@
 ---
 title: "鴿籠原理與雜湊碰撞：解密密碼學技術的極限與安全性"
 image: "eyecatch.jpg"
-date: "2026-09-14T00:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 description: "直觀易懂的「鴿籠原理」為何會成為現代密碼學技術與雜湊函數安全性中最重要的概念？本文將透過具體範例、數學公式及圖解進行深入探討。"
 categories: ["technology", "cryptography", "mathematics"]
 tags: ["Hash", "Pigeonhole Principle", "Security", "Algorithm", "KaTeX", "Mermaid"]

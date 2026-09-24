@@ -2,7 +2,7 @@
 title: "奇异值分解 (SVD)：将任意矩阵分解为旋转和缩放，应用于数据压缩与AI"
 description: "全面解析奇异值分解（SVD）的数学基础、几何直观，以及在图像压缩和自然语言处理中的应用。"
 slug: "singular-value-decomposition"
-date: "2026-09-20T14:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["SVD", "线性代数", "机器学习", "数据压缩", "人工智能", "Python"]

@@ -2,7 +2,7 @@
 title: "최소제곱법: 선형대수를 이용해 흩어진 데이터에 '가장 잘 맞는 직선' 찾기"
 description: "기하학적 직관과 강력한 선형대수 도구(정규 방정식, 직교 사영)를 사용하여 최소제곱법의 원리를 깊이 있게 설명합니다."
 slug: "method-of-least-squares"
-date: "2026-09-20T14:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "수학"

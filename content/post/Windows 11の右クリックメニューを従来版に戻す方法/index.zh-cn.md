@@ -1,7 +1,7 @@
 ---
 title: '将Windows 11右键菜单恢复为传统版（旧规范）的方法【注册表设置】'
 slug: "Windows 11の右键菜单を従来版に戻す方法"
-date: 2024-03-30T13:13:36+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Windows11", "资源管理器"]
 draft: false
 image: "img.webp"

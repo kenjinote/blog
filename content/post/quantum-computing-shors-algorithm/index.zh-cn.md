@@ -2,7 +2,7 @@
 title: "量子计算机的运作原理与Shor算法：为什么量子计算能破解密码？"
 description: "深入探讨从量子计算机基础到威胁RSA密码的Shor算法（Shor's Algorithm）的数学及量子力学原理。结合使用Qiskit的实现示例和未来后量子密码学的展望，以海量信息为您进行详尽解析。"
 slug: "quantum-computing-shors-algorithm"
-date: "2026-09-21T02:35:46+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "technology"

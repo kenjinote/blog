@@ -2,7 +2,7 @@
 title: "Sorting Algorithms Visualized (Bubble, Quick, Merge Sort)"
 description: "Sorting algorithms are the foundation of programming. From bubble sort to quick sort and merge sort, we comprehensively explain them with visualizations and code."
 slug: "sorting-algorithms-visualized-bubble-quick-merge"
-date: 2026-09-22T01:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "sorting", "quick-sort", "merge-sort", "bubble-sort"]

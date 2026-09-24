@@ -2,7 +2,7 @@
 title: "核融合發電的原理：如何把恆星的能量轉化為地球上可用的電力"
 description: "從氘氚反應、電漿侷限、托卡馬克與仿星器，到雷射核融合、能量增益、燃料增殖、材料與發電設備，透過圖解和計算理解核融合的科學與工程。"
 slug: "how-fusion-power-works"
-date: "2026-09-24T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.png"
 categories: ["technology", "physics"]
 tags: ["nuclear-fusion", "energy", "plasma", "engineering", "history"]

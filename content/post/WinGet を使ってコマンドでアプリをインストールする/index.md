@@ -1,7 +1,7 @@
 ---
 title: 'Windows 11のWinGetコマンドでアプリを簡単インストール・管理する方法'
 slug: "WinGet を使ってコマンドでアプリをインストールする"
-date: 2022-10-05T12:15:20+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["WinGet"]
 draft: false
 image: "img.webp"

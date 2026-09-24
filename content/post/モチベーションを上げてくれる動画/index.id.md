@@ -1,7 +1,7 @@
 ---
 title: '[Yusuke Narita & Hayao Miyazaki] Video Rekomendasi dan Cara Berpikir yang Akan Meningkatkan Motivasi Anda'
 slug: "Motivasiを上げてくれるVideo"
-date: 2022-09-08T02:22:52+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Motivasi", "Video"]
 draft: false
 image: "images/img.webp"

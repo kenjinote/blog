@@ -2,7 +2,7 @@
 title: "Search in Tree and Graph Data Structures (DFS, BFS, Dijkstra)"
 description: "Tree and graph structures expressing complex data relationships. A thorough explanation from Depth-First Search (DFS) and Breadth-First Search (BFS) to the shortest path problem (Dijkstra's Algorithm)."
 slug: "tree-graph-data-structures-search-dfs-bfs-dijkstra"
-date: 2026-09-22T03:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "graph", "tree", "dfs", "bfs", "dijkstra"]

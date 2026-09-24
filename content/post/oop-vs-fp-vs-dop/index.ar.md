@@ -2,7 +2,7 @@
 title: "الكائنية التوجه مقابل الوظيفية مقابل الموجهة للبيانات: حدود النماذج واندماجها"
 description: "تعمق في تاريخ وتطور نماذج البرمجة، ونقاط القوة والقيود لكل من OOP و FP و DOP، واستكشف الحل الأمثل في التطوير الحديث: 'اندماج النماذج'."
 slug: "oop-vs-fp-vs-dop"
-date: "2026-09-21T02:58:35+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["programming", "architecture", "software-engineering"]
 tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]

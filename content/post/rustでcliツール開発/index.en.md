@@ -2,7 +2,7 @@
 title: "Tutorial for Blazing Fast CLI Tool Development with Rust"
 description: 'A complete tutorial for developing fast and safe CLI tools using Rust. Build practical tools leveraging clap, tokio, serde, and more.'
 slug: "rust-cli-tool-fast-development-tutorial"
-date: "2026-09-12T13:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

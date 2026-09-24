@@ -1,7 +1,7 @@
 ---
 title: 'AI 시대의 프로그래머는 어떻게 살아남아야 하는가?'
 slug: "how-programmers-survive-in-ai-era"
-date: "2026-09-11T15:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

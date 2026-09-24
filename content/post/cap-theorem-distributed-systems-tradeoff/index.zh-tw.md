@@ -2,7 +2,7 @@
 title: "CAP 定理與分散式系統（一致性、可用性、分斷容忍性的權衡）"
 description: "分散式系統設計中的絕對法則「CAP 定理」，以及現代資料庫所選擇的架構妥協點。"
 slug: "cap-theorem-distributed-systems-tradeoff"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

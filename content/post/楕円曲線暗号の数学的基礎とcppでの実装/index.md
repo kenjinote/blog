@@ -1,7 +1,7 @@
 ---
 title: "楕円曲線暗号（ECC）の数学的基礎とC++での実装"
 slug: "elliptic-curve-cryptography-math-cpp"
-date: "2026-09-11T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

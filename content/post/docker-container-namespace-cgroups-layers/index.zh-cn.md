@@ -2,7 +2,7 @@
 title: "完全理解Docker与容器技术：从Namespace、cgroups到镜像层"
 description: "超越单纯的工具使用，深度剖析使用Linux内核功能（Namespace、cgroups、OverlayFS）的容器底层机制。"
 slug: "docker-container-namespace-cgroups-layers"
-date: 2026-09-21T09:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - "infrastructure"

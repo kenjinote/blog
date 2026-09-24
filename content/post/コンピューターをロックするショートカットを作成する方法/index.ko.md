@@ -8,7 +8,7 @@
 
 title: 'Windows PC를 1초 만에 잠금! 편리한 바로가기 생성 방법과 사용법'
 slug: "컴퓨터 잠금する바로 가기を作成する方法"
-date: 2024-04-01T01:37:49+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Windows", "컴퓨터 잠금", "바로 가기"]
 draft: false
 image: "img.webp"

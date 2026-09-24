@@ -2,7 +2,7 @@
 title: "泰勒展開與麥克勞林展開：用多項式近似複雜函數的魔法"
 description: "詳細講解微積分的秘訣——泰勒展開和麥克勞林展開，從直觀含義到數學推導，再到編程和物理學中的應用。"
 slug: "taylor-and-maclaurin-series"
-date: "2026-09-20T14:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "數學"

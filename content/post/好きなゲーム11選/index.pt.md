@@ -1,7 +1,7 @@
 ---
 title: 'Imperdível para jogadores retrô! 11 obras-primas recomendadas para o Game Boy original e Super Famicom'
 slug: "好きなJogo11選"
-date: 2022-09-12T19:28:50+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Jogos"]
 draft: false
 image: "img_12.webp"

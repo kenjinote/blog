@@ -2,7 +2,7 @@
 title: "가상 전용선: VPN의 작동 원리 - 인터넷상의 안전한 터널"
 description: "원격 근무에 필수적인 VPN(가상 사설망). 암호화와 캡슐화를 통해 누구나 엿볼 수 있는 인터넷상에 '나만의 안전한 전용 터널'을 만드는 원리를 설명합니다."
 slug: "network-vpn"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

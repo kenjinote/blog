@@ -2,7 +2,7 @@
 title: "オープンソースの反撃: Androidの歴史 - 世界最大のモバイルOSはいかにして生まれたか"
 description: "iPhoneの登場に対抗するため、Googleが結成した「オープン・ハンドセット・アライアンス」。OSを無償提供するというビジネスモデルの転換が、世界中のスマートフォンをどう変えたのかを解説します。"
 slug: "history-of-android"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

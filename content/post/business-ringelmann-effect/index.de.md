@@ -1,5 +1,6 @@
 ---
 title: "【Die Wahrheit über den Ringelmann-Effekt (soziales Faulenzen) und der ultimative Leitfaden zur Maximierung der organisatorischen Produktivität】"
+date: "2026-09-24T16:08:36+09:00"
 description: "\"Menschen faulenzen, wenn sie in einer Gruppe sind\". Wir erklären ausführlich die Ursachen dieses \"Ringelmann-Effekts (soziales Faulenzen)\", der vom französischen Agrarwissenschaftler Maximilien Ringelmann entdeckt wurde, seine negativen Auswirkungen auf das Geschäft und konkrete Maßnahmen zum Schutz Ihrer Organisation."
 slug: "business-ringelmann-effect"
 categories: ["business"]

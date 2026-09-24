@@ -2,7 +2,7 @@
 title: "네트워크 기술: HTTPS의 기술 해설 - 암호화와 공개키 기반(PKI)의 구조"
 description: "우리가 안심하고 인터넷 쇼핑을 할 수 있는 것은 'HTTPS' 덕분입니다. 도청이나 변조를 막는 암호화 기술과 SSL/TLS가 이면에서 수행하는 복잡한 수학적 처리 과정을 해설합니다."
 slug: "history-of-https"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

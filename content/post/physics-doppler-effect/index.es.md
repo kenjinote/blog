@@ -2,7 +2,7 @@
 title: "Misterios de la Física: El Efecto Doppler - Desde la sirena de una ambulancia hasta la expansión del universo"
 description: "Cómo funciona el 'Efecto Doppler', donde los sonidos que se acercan son agudos y los que se alejan son graves, y por qué revela los misterios del universo."
 slug: "physics-doppler-effect"
-date: "2026-09-23T02:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

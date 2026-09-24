@@ -2,7 +2,7 @@
 title: "네트워크 기술: IPv4에서 IPv6로의 변모와 차세대 인터넷"
 description: "인터넷의 주소인 IP 주소. 43억 개밖에 없었던 IPv4가 어떻게 고갈 위기를 극복하고, 무한한 공간을 가진 IPv6로 전환되고 있는지 해설합니다."
 slug: "history-of-ipv6"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

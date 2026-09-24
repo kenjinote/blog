@@ -2,7 +2,7 @@
 title: "WebAssembly (Wasm) Gegenwart und Zukunft: Wie C/Rust im Browser funktioniert"
 description: "Von der WebAssembly-Architektur, dem Kompilierungsprozess und der Integration mit JS bis hin zu den Möglichkeiten außerhalb des Browsers (WASI) – eine umfassende Erklärung von allem rund um Wasm."
 slug: "webassembly-wasm-current-future"
-date: 2026-09-20T17:10:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - "web-development"

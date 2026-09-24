@@ -2,7 +2,7 @@
 title: "Ernst Kummer: Bapak Bilangan Ideal dan Tantangan Teorema Terakhir Fermat"
 description: "Penjelasan mendalam tentang kehidupan matematikawan besar Jerman Ernst Kummer, pengenalannya tentang bilangan ideal, dan tantangan legendarisnya terhadap Teorema Terakhir Fermat."
 slug: "kummer"
-date: "2026-09-20T19:40:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["matematika", "biografi"]
 tags: ["Ernst Kummer", "Teorema Terakhir Fermat", "Bilangan Ideal", "Teori Bilangan Aljabar", "Bilangan Prima Reguler"]

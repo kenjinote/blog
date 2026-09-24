@@ -2,7 +2,7 @@
 title: "Nilai Eigen dan Vektor Eigen: Vektor Khusus yang Tidak Berubah Arah di Bawah Transformasi Matriks dan Aplikasinya"
 description: "Penjelasan terperinci tentang nilai eigen dan vektor eigen, salah satu konsep terpenting dalam aljabar linier, dari makna geometris dan metode perhitungan spesifik hingga aplikasinya dalam pembelajaran mesin dan fisika. Termasuk contoh Python untuk pemahaman yang intuitif."
 slug: "eigenvalues-and-eigenvectors"
-date: "2026-09-20T14:40:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["matematika"]
 tags: ["aljabar-linier", "nilai-eigen", "vektor-eigen", "matematika", "pembelajaran-mesin", "python", "sains-data"]

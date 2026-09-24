@@ -1,5 +1,6 @@
 ---
 title: "Filosofi Unix (Esensi Desain Modular): Seni Perangkat Lunak yang Ditenun oleh Tanggung Jawab Tunggal dan Pipa"
+date: "2026-09-24T16:08:36+09:00"
 description: "Menyelami lebih dalam esensi \"desain modular\" yang mendasari Filosofi Unix. Menjelaskan secara menyeluruh prinsip-prinsip abadi yang berlaku untuk rekayasa perangkat lunak modern, seperti program yang melakukan satu hal dengan baik, dan kolaborasi melalui aliran teks."
 slug: "philosophy-unix-modular-design"
 categories: ["philosophy"]

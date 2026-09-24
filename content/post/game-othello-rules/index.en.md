@@ -2,7 +2,7 @@
 title: "Board Game Strategy: Basic Rules and Winning Patterns of Othello - The Meticulous Tactics Until Taking the Corners"
 description: "Othello (Reversi) is often said to take 'a minute to learn, a lifetime to master.' We explain the 'stable discs' and 'mobility theory' to help beginners graduate from just blindly flipping discs."
 slug: "game-othello-rules"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

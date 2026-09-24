@@ -2,7 +2,7 @@
 title: "털 난 공 정리(Hairy Ball Theorem) - '털 난 공은 예쁘게 빗질할 수 없다' 위상수학의 정리"
 description: "위상수학(토폴로지)의 유명한 정리인 '털 난 공 정리(Hairy Ball Theorem)'에 대해, 직관적인 이해부터 수학적인 엄밀한 증명, 그리고 기상학이나 컴퓨터 그래픽스 등 실세계의 응용까지 자세히 해설합니다."
 slug: "hairy-ball-theorem"
-date: "2026-09-14T13:11:25+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "topology"]
 tags:

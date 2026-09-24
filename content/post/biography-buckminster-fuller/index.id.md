@@ -1,5 +1,6 @@
 ---
 title: "Buckminster Fuller dan Konsep \"Pesawat Luar Angkasa Bumi\": Jenius Bidah yang Merancang Masa Depan"
+date: "2026-09-24T16:08:36+09:00"
 description: "Buckminster Fuller mengemukakan konsep \"Pesawat Luar Angkasa Bumi\" dan menemukan Kubah Geodesik. Kami menggali dalam-dalam kehidupan turbulennya dan filosofinya yang menjadi petunjuk untuk masa depan yang berkelanjutan."
 slug: "biography-buckminster-fuller"
 categories: ["biography"]

@@ -2,7 +2,7 @@
 title: "B-Tree और डेटाबेस इंडेक्स की थ्योरी (डेटाबेस B-Tree को क्यों चुनते हैं?)"
 description: "डेटाबेस में इंडेक्स के मूल आधार B-Tree और B+Tree के सिद्धांत, डेटा संरचना, डिस्क I/O के साथ संबंध, और RDBMS इंडेक्स के मानक के रूप में B-Tree को क्यों अपनाना जारी रखता है, इसका गणितीय विश्लेषण और कार्यान्वयन उदाहरणों के साथ गहराई से अन्वेषण।"
 slug: "b-tree-database-index-theory"
-date: "2026-09-21T02:45:54+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science", "database"]
 tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]

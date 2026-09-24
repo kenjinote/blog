@@ -2,7 +2,7 @@
 title: "Masalah Sekretaris / Masalah Penghentian Optimal (Secretary Problem) - \"Aturan 1/e\" untuk Merekrut Orang Terbaik"
 description: "Apa itu Masalah Sekretaris (Secretary Problem)? Melalui contoh umum dari masalah penghentian optimal ini, kami menjelaskan secara rinci tentang pendekatan matematis \"Aturan 1/e (Aturan sekitar 37%)\" untuk membuat pilihan terbaik di bawah ketidakpastian. Dengan bukti matematis dan simulasi, kita akan mengeksplorasi bagaimana hal itu dapat diterapkan dalam proses rekrutmen dan pengambilan keputusan sehari-hari."
 slug: "secretary-problem"
-date: "2026-09-14T13:20:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "algorithms", "decision-making"]
 tags:

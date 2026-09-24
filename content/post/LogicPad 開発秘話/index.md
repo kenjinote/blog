@@ -1,7 +1,7 @@
 ---
 title: 'ローコードツール「LogicPad」開発秘話：なぜこれを作ったのか？'
 slug: "LogicPad 開発秘話"
-date: 2025-07-30T23:51:35+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["LogicPad", "開発", "秘話"]
 draft: false
 image: "img.webp"

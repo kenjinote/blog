@@ -1,6 +1,6 @@
 ---
 title: '양자 컴퓨터용 프로그래밍 언어 "Q#"을 사용해 보았다'
-date: "2026-09-12T00:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 slug: "qsharp-quantum-programming-language-intro"
 image: "img/eyecatch.jpg"
 math: true

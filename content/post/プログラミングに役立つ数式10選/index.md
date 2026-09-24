@@ -1,7 +1,7 @@
 ---
 title: "数学好き必見！プログラミングに役立つ美しい数式10選"
 slug: "10-beautiful-math-formulas-for-programming"
-date: "2026-09-12T01:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

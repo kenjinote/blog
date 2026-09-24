@@ -2,7 +2,7 @@
 title: "Revisão dos Padrões de Projeto: o GoF está obsoleto? Melhores práticas modernas"
 description: "Padrões de projeto GoF propostos em 1994. Eles ainda são válidos nas linguagens de programação modernas de hoje? Exploramos as melhores práticas do design moderno, incorporando o impacto da programação funcional e novos paradigmas."
 slug: "design-patterns-modern-practices"
-date: "2026-09-21T02:58:36+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "arquitetura"

@@ -2,7 +2,7 @@
 title: "WebAssembly(Wasm)の現在と未来：ブラウザでC/Rustが動く仕組み"
 description: "WebAssemblyのアーキテクチャ、コンパイルプロセス、JSとの連携、そしてブラウザ外（WASI）での可能性まで、Wasmのすべてを徹底解説します。"
 slug: "webassembly-wasm-current-future"
-date: 2026-09-20T17:10:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - "web-development"

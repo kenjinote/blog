@@ -2,7 +2,7 @@
 title: "Finanz- und Kryptotechnologie: Technische Erklärung der Blockchain - Die dezentrale Ledger-Technologie, die Bitcoin hervorbrachte"
 description: "Die Magie, 'Geld ohne einen Verwalter ausgeben und überweisen zu können'. Wir lüften die Geheimnisse der Hash-Funktionen, des PoW (Proof of Work) und der dezentralen Ledger, die den Kern der von Satoshi Nakamoto geschaffenen Blockchain bilden."
 slug: "technology-blockchain"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

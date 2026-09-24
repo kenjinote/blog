@@ -1,6 +1,6 @@
 ---
 title: "에이브러햄 링컨: 분열된 국가를 이끈 '위대한 해방자'의 생애와 철학"
-date: 2026-09-23T19:46:03+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["abraham-lincoln", "history"]
 image: "eyecatch.jpg"

@@ -2,7 +2,7 @@
 title: "Basics of Location Information: How GPS Works - The Miraculous Technology Where Relativity Meets Artificial Satellites"
 description: "Why does your smartphone's map app know your current location? We explain the mechanism of precise time calculations using radio waves from GPS satellites flying in space and Einstein's theory of relativity."
 slug: "technology-gps"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

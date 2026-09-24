@@ -1,5 +1,6 @@
 ---
 title: "Revolusi Sumber Terbuka dan \"Katedral dan Pasar\": Pergeseran Paradigma yang Mengubah Sejarah Pengembangan Perangkat Lunak"
+date: "2026-09-24T16:08:36+09:00"
 description: "Penjelasan mendetail tentang bagaimana \"Katedral dan Pasar\" meletakkan fondasi bagi pengembangan perangkat lunak sumber terbuka (open source) modern, dari latar belakang sejarahnya hingga dampaknya terhadap rekayasa perangkat lunak kontemporer."
 slug: "history-open-source-revolution"
 categories: ["history"]

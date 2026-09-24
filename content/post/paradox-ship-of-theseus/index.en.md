@@ -1,5 +1,6 @@
 ---
 title: "The Ship of Theseus: The Ultimate Paradox Questioning the Boundaries of Identity"
+date: "2026-09-24T16:08:36+09:00"
 description: "The \"Ship of Theseus\" is a philosophical paradox from ancient Greece. Is a ship whose parts have all been replaced still the same ship? We delve into what self-identity truly is."
 slug: "paradox-ship-of-theseus"
 categories: ["philosophy"]

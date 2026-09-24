@@ -2,7 +2,7 @@
 title: "Penjumlahan Ramanujan (Ramanujan Summation) - Interpretasi Matematis Kontraintuitif di Balik '1+2+3+... = -1/12'"
 description: "Apa yang terjadi jika Anda menjumlahkan '1+2+3+4+...' tanpa batas? Menurut intuisi biasa, deret tersebut akan menyimpang menuju tak terhingga, tetapi dalam cabang matematika tertentu, diketahui hasil mengejutkan yaitu '-1/12'. Artikel ini akan membahas secara rinci tentang 'Penjumlahan Ramanujan', yang menghasilkan kesimpulan kontraintuitif ini, beserta latar belakang matematisnya dan aplikasinya dalam fisika."
 slug: "ramanujan-summation"
-date: "2026-09-14T13:20:38+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "physics"]
 tags:

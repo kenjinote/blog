@@ -2,7 +2,7 @@
 title: "La Función Gamma: La Obra Maestra de Euler que Extiende el Factorial a los Números Reales y Complejos"
 description: "La función Gamma conecta los factoriales discretos con una curva suave. Exploraremos en profundidad su definición, sus propiedades, la historia de su descubrimiento por Euler, la continuación analítica, la aproximación de Stirling y sus aplicaciones en la ciencia moderna."
 slug: "gamma-function"
-date: 2026-09-20T14:40:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Matemáticas"]
 tags: ["Función Gamma", "Euler", "Análisis Complejo", "Cálculo"]

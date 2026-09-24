@@ -2,7 +2,7 @@
 title: "버치-스위너턴다이어 추측 (BSD 추측) - 타원 곡선 상의 유리점과 L-함수"
 description: "밀레니엄 현상 문제 중 하나인 버치-스위너턴다이어 추측(BSD 추측)에 대해, 타원 곡선의 기본부터 L-함수와의 깊은 연관성까지 수리적으로 상세히 해설합니다."
 slug: "bsd-conjecture"
-date: "2026-09-14T13:05:17+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["정수론", "타원 곡선", "BSD 추측", "밀레니엄 현상 문제"]

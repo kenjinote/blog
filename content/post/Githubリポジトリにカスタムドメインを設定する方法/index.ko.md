@@ -4,7 +4,7 @@
 
 title: 'GitHub 리포지토리에 사용자 정의 도메인을 설정하는 방법｜오나마에.com 편'
 slug: "Github리포지토리にカスタム도메인を設定する方法"
-date: 2022-09-13T01:16:40+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Github","도메인"]
 draft: false
 image: "images/octocat.webp"

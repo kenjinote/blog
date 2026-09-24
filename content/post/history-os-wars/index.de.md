@@ -1,5 +1,6 @@
 ---
 title: "Das Gesamtbild der OS-Religionskriege: Eine Geschichte des technologischen und philosophischen Kampfes zwischen Windows, Mac und Linux"
+date: "2026-09-24T16:08:36+09:00"
 description: "Ein tiefer Einblick in die 'OS-Religionskriege', die seit Jahrzehnten toben. Wir untersuchen die Philosophien, historischen Hintergründe von Windows, Mac und Linux sowie ihre heutige Koexistenz und Zukunft."
 slug: "history-os-wars"
 categories: ["history"]

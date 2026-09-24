@@ -1,7 +1,7 @@
 ---
 title: '[Comprehensive] Thorough and Easy-to-Understand Explanation of Quantum Mechanics'' Greatest Mystery ''Double-Slit Experiment'''
 slug: "double-slit-experiment-ultimate-guide"
-date: "2026-09-08T01:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Physics", "Quantum Mechanics", "Double-Slit Experiment", "Schrödinger Equation"]
 categories: ["physics-science"]
 math: true

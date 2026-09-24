@@ -1,5 +1,6 @@
 ---
 title: "Lisp 與「神的語言」——S 運算式的極致之美與程式碼即資料的哲學"
+date: "2026-09-24T16:08:36+09:00"
 description: "為什麼程式語言 Lisp 會被稱為「神的語言」？本文深入探討其核心中 S 運算式的美學、同像性（Homoiconicity）以及巨集所帶來的後設程式設計（Metaprogramming）深淵，是一篇技術哲學散文。"
 slug: "philosophy-lisp-s-expressions"
 categories: ["philosophy"]

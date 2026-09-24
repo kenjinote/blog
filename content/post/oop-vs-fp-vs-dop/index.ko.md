@@ -2,7 +2,7 @@
 title: "객체 지향 vs 함수형 vs 데이터 지향: 패러다임의 한계와 융합"
 description: "프로그래밍 패러다임의 역사와 진화, OOP, FP, DOP의 각각의 강점과 한계를 깊이 파고들어, 현대 개발에 있어서의 최적의 해답인 '패러다임의 융합'에 대해 철저하게 고찰합니다."
 slug: "oop-vs-fp-vs-dop"
-date: "2026-09-21T02:58:35+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["programming", "architecture", "software-engineering"]
 tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]

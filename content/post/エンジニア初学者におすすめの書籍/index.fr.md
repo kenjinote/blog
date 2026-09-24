@@ -1,7 +1,7 @@
 ---
 title: '15 livres incontournables recommandés pour les ingénieurs débutants ! Des bases de la programmation à la conception'
 slug: "IngénieurDébutantにRecommandationのLivre"
-date: 2024-05-05T16:03:33+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Ingénieurs", "Débutants", "Livres"]
 draft: false
 image: "img.webp"

@@ -1,6 +1,6 @@
 ---
 title: "松下幸之助的生平与哲学：经营之神留给未来的遗产"
-date: "2026-09-23T20:59:56+09:00"
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["konosuke-matsushita", "history"]
 image: "eyecatch.jpg"

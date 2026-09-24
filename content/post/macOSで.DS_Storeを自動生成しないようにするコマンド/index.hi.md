@@ -1,7 +1,7 @@
 ---
 title: 'macOS में .DS_Store के स्वत: जनरेशन को अक्षम और रोकने के लिए टर्मिनल कमांड'
 slug: "macOSで.DS_Storeを自動生成しないようにするकमांड"
-date: 2022-09-12T16:03:42+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["macOS"]
 draft: false
 image: "img.webp"

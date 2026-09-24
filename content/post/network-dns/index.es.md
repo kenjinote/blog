@@ -2,7 +2,7 @@
 title: "Tecnología de redes: Cómo funciona DNS - La guía telefónica de Internet, el funcionamiento interno de la resolución de nombres"
 description: "Al simplemente escribir 'www.google.com', ¿por qué te conectas al servidor deseado? Explicamos la estructura jerárquica y el mecanismo de resolución de nombres del 'DNS', la base de datos distribuida más grande de Internet."
 slug: "network-dns"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -2,7 +2,7 @@
 title: "代數基本定理：證明「n次方程式必定有n個複數解」"
 description: "詳細講解代數基本定理的歷史背景、直觀意義，以及使用複變分析（李歐維爾定理）的優美證明。"
 slug: "fundamental-theorem-of-algebra"
-date: "2026-09-20T15:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "數學"

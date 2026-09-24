@@ -1,5 +1,6 @@
 ---
 title: "The Essence of Rust: The Paradigm Shift Brought by Safety and the Ownership Model"
+date: "2026-09-24T16:08:36+09:00"
 description: "An in-depth exploration of Rust's core concepts of \"Ownership\" and \"Borrowing\", thoroughly explaining how it balances memory safety and performance."
 slug: "philosophy-rust-ownership"
 categories: ["philosophy"]

@@ -1,7 +1,7 @@
 ---
 title: '【मुफ़्त और बेहद आसान】Stable Diffusion के साथ AI इलस्ट्रेशन चित्र कैसे जनरेट करें! Google Colab प्रक्रिया की व्याख्या'
 slug: "AI(StableDiffusion)を使ってचित्रणछवि निर्माणする方法"
-date: 2023-04-06T00:43:19+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["AI", "Stable Diffusion", "इलस्ट्रेशन", "इमेज जनरेशन", "Google Colaboratory"]
 draft: false
 image: "img.webp"

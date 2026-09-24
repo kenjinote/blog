@@ -1,7 +1,7 @@
 ---
 title: "Quelle est la longueur de la côte britannique ? : Le paradoxe du littoral"
 description: "Plus la règle de mesure est courte, plus le littoral devient infiniment long. Il s'agit d'un célèbre paradoxe qui a ouvert la porte à la géométrie fractale."
-date: 2026-09-10T21:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 slug: "coastline-paradox"
 image: "img/coastline_paradox.jpg"

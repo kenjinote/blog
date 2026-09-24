@@ -1,7 +1,7 @@
 ---
 title: 'Moved by a 2-Year-Old''s Kindness! A Heartwarming Episode Showing a Child''s Consideration and Empathy'
 slug: "Childのそんたく"
-date: 2022-09-07T04:40:52+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Child"]
 draft: false
 image: "images/img.webp"

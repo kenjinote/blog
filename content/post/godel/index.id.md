@@ -2,7 +2,7 @@
 title: "Kurt Gödel: Teorema Ketidaklengkapan dan Jejak Seorang Jenius Matematika"
 description: "Penjelasan terperinci tentang kehidupan Kurt Gödel, ahli logika terbesar abad ke-20, dan teorema ketidaklengkapan yang mengguncang fondasi matematika."
 slug: "godel"
-date: "2026-09-20T20:20:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["matematika", "biografi"]
 tags: ["Kurt Gödel", "Teorema Ketidaklengkapan", "Matematika", "Logika", "Sejarah"]

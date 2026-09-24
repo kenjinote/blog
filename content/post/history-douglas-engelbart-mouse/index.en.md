@@ -1,5 +1,6 @@
 ---
 title: "The Birth of the \"Mouse\" and Douglas Engelbart: The Pioneer Who Redefined the Dialogue Between Computers and Humans"
+date: "2026-09-24T16:08:36+09:00"
 description: "How was the \"mouse\", essential to modern computer operation, born? A thorough explanation of its epic history, from Douglas Engelbart's philosophy of \"Augmenting Human Intellect\" to The Mother of All Demos in 1968."
 slug: "history-douglas-engelbart-mouse"
 categories: ["history"]

@@ -2,7 +2,7 @@
 title: "完全解剖 OAuth 2.0 與 OIDC (OpenID Connect)（授權與驗證的差異）"
 description: "徹底解說 OAuth 2.0 與 OIDC 的機制、驗證與授權的差異、以及各種授權類型。"
 slug: "oauth2-oidc-authentication-authorization-difference"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

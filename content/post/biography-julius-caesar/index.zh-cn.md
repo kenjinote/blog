@@ -1,6 +1,6 @@
 ---
 title: "盖乌斯·尤利乌斯·凯撒：决定罗马命运的天才轨迹"
-date: 2026-09-23T19:46:03+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["julius-caesar", "history"]
 image: "eyecatch.jpg"

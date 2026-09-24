@@ -2,7 +2,7 @@
 title: "Network Technology: UDP Technical Explanation - Connectionless Communication Pursuing Speed"
 description: 'Why can we communicate without delay in online games and video calls? We explain the mechanism of the UDP protocol, which abandoned the "guarantee of delivery" to obtain "overwhelming speed".'
 slug: "history-of-udp"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

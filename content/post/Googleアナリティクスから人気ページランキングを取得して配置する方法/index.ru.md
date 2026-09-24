@@ -1,7 +1,7 @@
 ---
 title: 'Как отобразить рейтинг популярных статей из Google Analytics с помощью Ranklet'
 slug: "Google Аналитикаから人気ページランキングを取得して配置する方法"
-date: 2023-04-10T20:26:57+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Google Аналитика", "Ranklet", "HUGO"]
 draft: false
 image: "img.webp"

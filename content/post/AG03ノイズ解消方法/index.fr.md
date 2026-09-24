@@ -1,7 +1,7 @@
 ---
 title: '[Résolution Immédiate] Procédure de mise à jour du pilote pour éliminer les bruits de craquement du YAMAHA AG03'
 slug: "AG03Bruit解消方法"
-date: 2023-03-18T01:17:10+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["YAMAHA", "AG03", "Bruit"]
 draft: false
 image: "img.webp"

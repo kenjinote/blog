@@ -2,7 +2,7 @@
 title: 'Proses Gram-Schmidt: Algoritma untuk Menyelaraskan Kembali Vektor Basis yang Terdistorsi Menjadi Vektor yang Rapi dan Saling Ortogonal'
 description: 'Panduan komprehensif tentang proses ortogonalisasi Gram-Schmidt dalam aljabar linear, mencakup intuisi geometris, formulasi matematis, versi modifikasi yang stabil secara numerik, implementasi Python, dan aplikasi pada ruang polinomial.'
 slug: 'gram-schmidt-process'
-date: '2026-09-20T14:40:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Matematika"]
 tags: ["Aljabar Linear", "Algoritma", "Pembelajaran Mesin", "Dekomposisi QR", "Python", "Komputasi Numerik", "Matematika"]

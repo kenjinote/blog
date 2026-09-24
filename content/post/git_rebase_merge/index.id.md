@@ -1,7 +1,7 @@
 ---
 title: '【Perintah Git】Perbedaan antara rebase dan merge, serta penggunaan yang tepat dalam praktik'
 slug: "git-rebase-vs-merge-practical-guide"
-date: "2026-09-13T09:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

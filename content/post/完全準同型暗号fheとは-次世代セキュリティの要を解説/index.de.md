@@ -1,7 +1,7 @@
 ---
 title: 'Was ist die vollständig homomorphe Verschlüsselung (FHE)? Der Schlüssel zur Sicherheit der nächsten Generation'
 slug: "fully-homomorphic-encryption-fhe-explained"
-date: "2026-09-11T11:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

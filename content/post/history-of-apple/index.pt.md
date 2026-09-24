@@ -2,7 +2,7 @@
 title: "A História da Apple: Da Garagem à Empresa Mais Valiosa do Mundo e o DNA da Inovação"
 description: "Uma análise aprofundada da história e inovação tecnológica da Apple, desde sua fundação na garagem por Steve Jobs e Wozniak, até a revolução do iPhone e tornar-se a empresa mais valiosa do mundo."
 slug: "history-of-apple"
-date: "2026-09-23T03:35:47+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

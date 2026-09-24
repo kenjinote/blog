@@ -1,6 +1,6 @@
 ---
 title: "마쓰시타 고노스케의 생애와 철학: 경영의 신이 미래에 남긴 유산"
-date: "2026-09-23T20:59:56+09:00"
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["konosuke-matsushita", "history"]
 image: "eyecatch.jpg"

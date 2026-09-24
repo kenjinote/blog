@@ -1,7 +1,7 @@
 ---
 title: 'WindowsにCLIテキストエディタnanoをインストールし環境変数を設定する方法'
 slug: "CLIテキストエディタnanoをWindowsにインストールする方法"
-date: 2024-03-31T18:09:32+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["nano", "テキストエディタ"]
 draft: false
 image: "img_1.webp"

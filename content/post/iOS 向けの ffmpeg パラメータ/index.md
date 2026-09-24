@@ -1,7 +1,7 @@
 ---
 title: 'iOS向けに最適化！動画をスムーズに再生するffmpeg変換パラメータ'
 slug: "iOS 向けの ffmpeg パラメータ"
-date: 2025-03-02T04:16:07+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["iOS", "ffmpeg"]
 draft: false
 image: "img.webp"

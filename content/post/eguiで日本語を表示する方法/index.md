@@ -1,7 +1,7 @@
 ---
 title: 'RustのGUIライブラリ「egui」で日本語フォントを読み込み表示する方法'
 slug: "eguiで日本語を表示する方法"
-date: 2023-04-01T03:17:52+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["rsut", "egui", "GUIライブラリ", "日本語"]
 draft: false
 image: "img.webp"

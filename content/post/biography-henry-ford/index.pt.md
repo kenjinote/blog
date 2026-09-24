@@ -1,6 +1,6 @@
 ---
 title: "O Rei do Automóvel Henry Ford: O Alvorecer da Sociedade de Consumo de Massa e a Inovação do 'Sistema de Produção Ford'"
-date: "2026-09-23T20:59:56+09:00"
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["henry-ford", "history"]
 image: "eyecatch.jpg"

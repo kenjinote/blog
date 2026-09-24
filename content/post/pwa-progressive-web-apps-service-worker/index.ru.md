@@ -2,7 +2,7 @@
 title: "Потенциал и реализация PWA (Progressive Web Apps) (Сила Service Worker)"
 description: "Обзор PWA, от общего представления до жизненного цикла Service Worker, офлайн-кэширования и Push-уведомлений."
 slug: "pwa-progressive-web-apps-service-worker"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

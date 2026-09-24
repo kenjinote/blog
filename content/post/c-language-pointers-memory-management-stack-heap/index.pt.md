@@ -2,7 +2,7 @@
 title: "Compreensão Completa de C e Ponteiros (Gerenciamento de Memória, Endereços, Fundamentos de Heap e Stack)"
 description: "Explicamos detalhadamente os ponteiros, que são a maior barreira em C, desde o conceito de endereços de memória e a diferença entre stack e heap até a alocação dinâmica de memória. Este é um guia completo para quem busca uma compreensão profunda da linguagem C."
 slug: "c-language-pointers-memory-management-stack-heap"
-date: 2026-09-21T14:51:08+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["c", "pointers", "memory", "stack", "heap"]

@@ -2,7 +2,7 @@
 title: "OSの歴史: Windowsの系譜 (MS-DOSからNTアーキテクチャの完成)"
 description: "CUIのMS-DOSから始まり、GUIへの移行、そして堅牢なNTアーキテクチャへと至るWindowsの進化の歴史。"
 slug: "history-of-windows"
-date: "2026-09-23T02:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

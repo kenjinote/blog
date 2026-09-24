@@ -2,7 +2,7 @@
 title: "Teorema Bola Berbulu (Hairy Ball Theorem) - Teorema Topologi 'Bola Berbulu Tidak Bisa Disisir Rapi'"
 description: "Penjelasan mendalam tentang 'Teorema Bola Berbulu (Hairy Ball Theorem)', sebuah teorema terkenal dalam topologi, mulai dari pemahaman intuitif hingga bukti matematis yang ketat, serta aplikasinya di dunia nyata seperti meteorologi dan grafik komputer."
 slug: "hairy-ball-theorem"
-date: "2026-09-14T13:11:25+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "topology"]
 tags:

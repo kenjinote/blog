@@ -8,7 +8,7 @@
 
 title: '추천 J-POP 명곡 모음: 마음에 와닿는 그리운 J-POP·대표곡'
 slug: "好きな일본 음악"
-date: 2024-01-06T04:11:01+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["일본 음악", "음악"]
 draft: false
 image: "img.webp"

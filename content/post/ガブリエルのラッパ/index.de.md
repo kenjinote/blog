@@ -1,7 +1,7 @@
 ---
 title: "Mit Farbe füllen, aber nicht anstreichen? Gabriels Horn"
 description: "Ein bizarres Paradoxon eines Festkörpers, das durch die Infinitesimalrechnung hervorgebracht wurde und gleichzeitig ein „endliches Volumen“ und eine „unendliche Oberfläche“ besitzt."
-date: 2026-09-10T21:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 slug: "gabriels-horn"
 image: "img/gabriels_horn.jpg"

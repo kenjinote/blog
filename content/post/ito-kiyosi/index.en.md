@@ -2,7 +2,7 @@
 title: "Kiyosi Ito: The Father of Stochastic Differential Equations and the Math Behind Modern Finance"
 description: "An in-depth look at the life of Kiyosi Ito, known for Ito's Lemma, his achievements in stochastic calculus, and his impact on modern society."
 slug: "ito-kiyosi"
-date: "2026-09-20T20:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Kiyosi Ito", "Stochastic Differential Equations", "Financial Engineering", "History of Mathematics"]

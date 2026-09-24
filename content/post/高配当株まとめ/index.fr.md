@@ -1,7 +1,7 @@
 ---
 title: 'Liste récapitulative des meilleures actions japonaises à haut rendement en dividendes'
 slug: "高配当Actionまとめ"
-date: 2024-12-22T00:56:14+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Actions"]
 draft: false
 image: "img.webp"

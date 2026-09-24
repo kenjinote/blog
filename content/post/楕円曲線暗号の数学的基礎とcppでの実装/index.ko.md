@@ -1,7 +1,7 @@
 ---
 title: '타원곡선 암호(ECC)의 수학적 기초와 C++에서의 구현'
 slug: "elliptic-curve-cryptography-math-cpp"
-date: "2026-09-11T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

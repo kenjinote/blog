@@ -2,7 +2,7 @@
 title: "自動機與形式語言理論：正規表示式的背後與喬姆斯基層級"
 description: "深入探討正規表示式與程式語言編譯器背後的「自動機」與「形式語言理論」，並穿插介紹喬姆斯基層級。"
 slug: automata-formal-language-theory
-date: 2026-09-21T02:35:46+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - 計算機科學

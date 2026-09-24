@@ -1,6 +1,6 @@
 ---
 title: "나폴레옹 보나파르트: 혁명의 아들인가, 아니면 독재자인가"
-date: 2026-09-23T19:46:03+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["napoleon-bonaparte", "history"]
 image: "eyecatch.jpg"

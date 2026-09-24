@@ -2,7 +2,7 @@
 title: "IBM的历史：从打孔卡到大型机，再到量子计算机"
 description: "“蓝色巨人”是如何持续引领IT行业超过100年的。"
 slug: "history-of-ibm"
-date: "2026-09-23T01:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

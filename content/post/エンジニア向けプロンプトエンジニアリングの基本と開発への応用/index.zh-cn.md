@@ -1,7 +1,7 @@
 ---
 title: '工程师指南：提示词工程的基础与开发应用'
 slug: "prompt-engineering-for-engineers"
-date: "2026-09-11T20:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

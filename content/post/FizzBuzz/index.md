@@ -1,7 +1,7 @@
 ---
 title: 'プログラミングの登竜門「FizzBuzz問題」とは？Pythonでの書き方を解説'
 slug: "FizzBuzz"
-date: 2025-04-18T00:58:11+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["FizzBuzz", "Python", "アルゴリズム"]
 draft: false
 image: "eyecatch.jpg"

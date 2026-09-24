@@ -2,7 +2,7 @@
 title: "Winny 的工作原理：搜索、缓存、中继与匿名性的边界"
 description: "从索引信息、带宽分层、缓存和中继理解 Winny 的 P2P 网络，通过传输量示例区分效率与匿名性，并梳理信息泄露和开发者诉讼。"
 slug: "history-of-winny"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["technology", "computer-science"]
 tags: ["p2p", "network", "winny", "history"]

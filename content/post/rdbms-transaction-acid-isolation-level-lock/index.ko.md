@@ -2,7 +2,7 @@
 title: "RDBMS의 트랜잭션과 ACID 특성 (격리 수준과 잠금)"
 description: "데이터베이스의 정합성을 지키는 트랜잭션 처리의 기본부터, 격리 수준에 따른 이상(Anomaly) 현상과 잠금(Lock) 메커니즘까지."
 slug: "rdbms-transaction-acid-isolation-level-lock"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "database"

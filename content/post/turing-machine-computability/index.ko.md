@@ -2,7 +2,7 @@
 title: "튜링 머신과 계산 가능성 이론: 앨런 튜링의 사고 실험과 '정지 문제'"
 description: "계산의 한계란 무엇인가? 앨런 튜링이 제창한 튜링 머신의 개념과 계산 가능성 이론의 금자탑인 '정지 문제'에 대해 수학적, 프로그램적 관점에서 깊이 파헤쳐 봅니다."
 slug: turing-machine-computability
-date: 2026-09-21T02:35:46+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - 컴퓨터 과학

@@ -2,7 +2,7 @@
 title: "楊-米爾斯方程式與質量間隙問題 - 粒子物理學「標準模型」的數學基礎"
 description: "針對千禧年大獎難題之一的「楊-米爾斯方程式與質量間隙問題」，以淺顯易懂的方式解說其物理背景與數學上的困難點。"
 slug: "yang-mills-mass-gap"
-date: 2026-09-14T13:11:25+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["physics", "mathematics"]
 tags:

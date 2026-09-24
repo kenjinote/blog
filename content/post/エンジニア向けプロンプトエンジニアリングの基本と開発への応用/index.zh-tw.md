@@ -1,7 +1,7 @@
 ---
 title: '給工程師：提示工程的基礎與在開發上的應用'
 slug: "prompt-engineering-for-engineers"
-date: "2026-09-11T20:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

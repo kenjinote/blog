@@ -2,7 +2,7 @@
 title: "Teorema Bayes: Memperbarui Probabilitas dengan 'Bukti Baru', Inti dari AI dan Statistik"
 description: "Penjelasan mendalam tentang bagaimana Teorema Bayes memperbarui probabilitas berdasarkan bukti baru, latar belakang matematisnya, dan penerapannya dalam AI dan pembelajaran mesin."
 slug: "bayes-theorem"
-date: "2026-09-20T15:15:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matematika"

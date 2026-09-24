@@ -2,7 +2,7 @@
 title: "보드게임 전략: 체스의 기본 규칙과 오프닝 전략 - 왕을 몰아넣는 반상의 전쟁"
 description: "세계에서 가장 많이 플레이되는 두뇌 스포츠 '체스'. 기물 이동의 기본부터 중앙 지배, 캐슬링, 그리고 대표적인 오프닝 전략(정석)까지 초보자가 승리하기 위한 이론을 해설합니다."
 slug: "game-chess-rules"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

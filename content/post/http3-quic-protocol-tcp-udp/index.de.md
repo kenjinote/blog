@@ -2,7 +2,7 @@
 title: "HTTP/3 und QUIC-Protokoll: Die Grenzen von TCP und die Innovation durch UDP"
 description: "Warum entstanden HTTP/3 und das QUIC-Protokoll? Eine detaillierte Erklärung der Web-Kommunikationsprotokolle der nächsten Generation, einschließlich der Lösung des Head-of-Line-Blocking-Problems und der Beschleunigung des Verbindungsaufbaus."
 slug: "http3-quic-protocol-tcp-udp"
-date: 2026-09-20T17:10:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - "network"

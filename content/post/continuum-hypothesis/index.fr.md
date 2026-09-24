@@ -2,7 +2,7 @@
 title: "Hypothèse du continu (Continuum Hypothesis) - La question ultime de Cantor et sa conclusion « impossible à prouver ou à réfuter »"
 description: "Une plongée approfondie dans l'histoire et le contexte mathématique de l'hypothèse du continu (HC) proposée par Georg Cantor, ainsi que les preuves de son indépendance par Gödel et Cohen."
 slug: "continuum-hypothesis"
-date: "2026-09-14T13:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "set-theory"]
 tags: ["Hypothèse du continu", "Cantor", "Infini", "Mathématiques"]

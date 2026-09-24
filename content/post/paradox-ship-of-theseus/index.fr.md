@@ -1,5 +1,6 @@
 ---
 title: "Le Bateau de Thésée : L'Ultime Paradoxe Questionnant les Frontières de l'Identité"
+date: "2026-09-24T16:08:36+09:00"
 description: "Le « Bateau de Thésée » est un paradoxe philosophique originaire de la Grèce antique. Un bateau dont toutes les pièces ont été remplacées est-il vraiment le même bateau ? Nous explorons ce qu'est l'identité personnelle."
 slug: "paradox-ship-of-theseus"
 categories: ["philosophy"]

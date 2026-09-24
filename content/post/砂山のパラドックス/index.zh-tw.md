@@ -1,7 +1,7 @@
 ---
 title: "移除一粒沙子後，沙堆何時不再是沙堆？：沙堆悖論"
 description: "「沙堆」與「非沙堆」的界線在哪裡？挑戰模糊性本質的古希臘哲學悖論。"
-date: 2026-09-10T21:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 slug: "sorites-paradox"
 image: "img/sorites_paradox.jpg"

@@ -2,7 +2,7 @@
 title: "Augustin-Louis Cauchy: The Father of Rigorous Analysis and His Turbulent Life"
 description: "A detailed exploration of the life of the great French mathematician Augustin-Louis Cauchy and his numerous mathematical achievements in analysis and complex function theory."
 slug: "cauchy"
-date: 2026-09-20T19:20:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

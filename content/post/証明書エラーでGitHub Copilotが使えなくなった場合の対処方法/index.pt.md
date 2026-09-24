@@ -1,7 +1,7 @@
 ---
 title: 'Como lidar com erros de certificado do GitHub Copilot (UNABLE_TO_VERIFY_LEAF_SIGNATURE)'
 slug: "証明書エラーでGitHub Copilotが使えなくなった場合のSolução"
-date: 2024-04-21T18:47:26+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["GitHub Copilot", ""]
 draft: false
 image: "img.webp"

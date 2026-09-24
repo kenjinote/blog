@@ -2,7 +2,7 @@
 title: "信息论与香农熵：探索数据压缩与通信的极限"
 description: "从克劳德·香农提出的信息论基础出发，详细讲解熵的概念、数据压缩的极限，以及其在现代通信中的应用。"
 slug: information-theory-shannon-entropy
-date: 2026-09-21T02:45:54+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - 计算机科学

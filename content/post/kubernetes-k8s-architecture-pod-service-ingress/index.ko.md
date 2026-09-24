@@ -2,7 +2,7 @@
 title: "Kubernetes(K8s)의 아키텍처: Pod, Service, Ingress와 컨트롤 플레인"
 description: "컨테이너 오케스트레이션의 사실상 표준인 Kubernetes의 전체적인 모습. 컨트롤 플레인의 구조부터 다양한 리소스의 역할까지 상세히 해설합니다."
 slug: "kubernetes-k8s-architecture-pod-service-ingress"
-date: 2026-09-21T09:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - "infrastructure"

@@ -1,7 +1,7 @@
 ---
 title: 'Windows 登錄檔的基礎知識與可程式化之安全編輯方法'
 slug: "windows-registry-safe-programmable-editing"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

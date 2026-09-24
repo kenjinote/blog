@@ -2,7 +2,7 @@
 title: "Claude Gaspard Bachet: Um Pioneiro da Teoria dos Números e Matemática Recreativa"
 description: "Uma exploração detalhada da vida e das realizações matemáticas do matemático francês do século XVII Claude Gaspard Bachet, conhecido por sua tradução da 'Arithmetica' de Diofanto e a equação de Bachet."
 slug: "bachet"
-date: "2026-09-20T18:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Matemática", "Biografia"]
 tags: ["Bachet", "Teoria dos Números", "História da Matemática", "Matemática Recreativa", "Diofanto"]

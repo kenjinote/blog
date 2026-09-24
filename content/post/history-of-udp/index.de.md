@@ -2,7 +2,7 @@
 title: "Netzwerktechnik: Technische Erklärung von UDP - Verbindungslose Kommunikation für ultimative Geschwindigkeit"
 description: 'Warum ist eine verzögerungsfreie Kommunikation bei Online-Spielen und Videoanrufen möglich? Wir erklären die Funktionsweise des UDP-Protokolls, das auf die "Zustellungsgarantie" verzichtet und stattdessen "überwältigende Geschwindigkeit" erreicht.'
 slug: "history-of-udp"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

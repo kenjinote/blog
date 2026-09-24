@@ -1,5 +1,6 @@
 ---
 title: "Was ist das Parkinsonsche Gesetz? Eine umfassende Erklärung vom Mechanismus der Arbeits- und Zeitexpansion bis zu seiner Überwindung"
+date: "2026-09-24T16:08:36+09:00"
 description: "Eine tiefgehende Auseinandersetzung mit dem Parkinsonschen Gesetz, laut dem sich Arbeit genau in dem Maß ausdehnt, wie Zeit für ihre Erledigung zur Verfügung steht. Wir beleuchten den historischen Hintergrund, den psychologischen Mechanismus sowie konkrete Methoden zur Überwindung im Geschäftsumfeld und Alltag. Ein vollständiger Leitfaden für Zeitmanagement und Produktivitätssteigerung."
 slug: "business-parkinsons-law"
 categories: ["business"]

@@ -2,7 +2,7 @@
 title: "The Axiom of Choice and Zorn's Lemma - The Concept of 'Choice' That Shook the Foundations of Mathematics"
 description: "A deep dive into the Axiom of Choice and Zorn's Lemma, from their intuitive meaning to mathematical formalization and their importance in modern mathematics."
 slug: "axiom-of-choice-and-zorns-lemma"
-date: 2026-09-14T13:20:37+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "set-theory"]
 tags: ["Axiom of Choice", "Zorn's Lemma", "ZFC Axiom System", "Foundations of Mathematics", "Mermaid", "KaTeX"]

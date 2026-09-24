@@ -2,7 +2,7 @@
 title: "История Microsoft: Заря ПК, гегемония Windows и адаптация к эпохе облаков и ИИ"
 description: "История Microsoft от Windows до Azure и партнерства с OpenAI"
 slug: "history-of-microsoft"
-date: "2026-09-23T00:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

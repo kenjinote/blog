@@ -1,7 +1,7 @@
 ---
 title: '让Chrome与Edge变得极其好用的推荐浏览器扩展程序汇总'
 slug: "推荐の Chorme 拡張"
-date: 2023-03-19T02:54:30+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Chrome扩展", "浏览器", "Chrome", "Edge"]
 draft: false
 image: "img_4.webp"

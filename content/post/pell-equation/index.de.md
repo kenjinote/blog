@@ -2,7 +2,7 @@
 title: "Pellsche Gleichung: Der Reiz der Diophantischen Gleichung mit Unendlichen Lösungen und Kettenbrüchen"
 description: "Ein detaillierter Leitfaden zur Pellschen Gleichung, ihrer Lösung mittels Kettenbrüchen und der Generierung unendlich vieler Lösungen."
 slug: "pell-equation"
-date: "2026-09-20T15:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematik"

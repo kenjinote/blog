@@ -2,7 +2,7 @@
 title: "AIの心臓部: ディープラーニングの仕組み - ニューラルネットワークがいかにして学習するか"
 description: "第3次AIブームの火付け役となり、ChatGPTなどの基盤技術ともなっている「ディープラーニング（深層学習）」。人間の脳神経を模倣したアルゴリズムが、どのようにして特徴を自ら見つけ出すのかを解説します。"
 slug: "technology-deep-learning"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

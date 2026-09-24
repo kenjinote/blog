@@ -2,7 +2,7 @@
 title: "Hukum Zipf - 'Hukum Pangkat' yang Mengatur Segalanya Mulai dari Frekuensi Kata hingga Populasi Kota"
 description: "Pandangan mendalam, menggunakan rumus dan diagram, ke dalam 'Hukum Zipf', aturan matematika menakjubkan yang mengatur dunia dari bahasa alami hingga skala kota dan ekonomi."
 slug: "zipfs-law"
-date: "2026-09-14T13:20:38+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["matematika", "ilmu-data", "linguistik"]
 tags:

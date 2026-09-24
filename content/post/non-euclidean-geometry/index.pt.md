@@ -2,7 +2,7 @@
 title: "O Nascimento da Geometria Não-Euclidiana - A Descoberta do \"Espaço Curvo\" e o Caminho para a Teoria da Relatividade"
 description: "Começando pela dúvida sobre o postulado das paralelas de Euclides, passando pelo estabelecimento da geometria não-euclidiana por Gauss, Bolyai, Lobachevsky e Riemann, até a teoria da relatividade geral de Einstein, explicamos a grandiosa história da matemática e da física."
 slug: "non-euclidean-geometry"
-date: 2026-09-14T13:11:25+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "physics"]
 tags: ["Geometria", "Relatividade", "História da Ciência", "Matemática"]

@@ -2,7 +2,7 @@
 title: "Como os LLMs (Grandes Modelos de Linguagem) Funcionam e Aplicações em Programação (Modelo Transformer, Engenharia de Prompt)"
 description: "Vamos explicar detalhadamente os mecanismos matemáticos da arquitetura Transformer, que forma a base dos Grandes Modelos de Linguagem (LLMs), os métodos avançados de engenharia de prompt e suas aplicações na programação do mundo real."
 slug: "large-language-models-llm-transformer-prompt-engineering"
-date: "2026-09-21T14:51:08+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["ai", "llm", "transformer", "prompt-engineering"]

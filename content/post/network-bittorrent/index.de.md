@@ -2,7 +2,7 @@
 title: "Netzwerktechnologie: Eine technische Erklärung von BitTorrent - Wie riesige Dateien effizient und dezentral verteilt werden"
 description: "Wenn zehntausende Menschen gleichzeitig ein mehrere Gigabyte großes OS-Image herunterladen, bricht der Server normalerweise zusammen. Wir erklären die innovative Dateiaufteilung und den Datenaustausch-Algorithmus von BitTorrent, einem Meisterwerk der P2P-Technologie, das dieses Problem löst."
 slug: "network-bittorrent"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -1,5 +1,6 @@
 ---
 title: "【Masalah Troli: Pilihan Utama dalam Etika dan Kedalaman Intuisi Moral Manusia】"
+date: "2026-09-24T16:08:36+09:00"
 description: "【Lima pekerja berada di jalur troli yang melaju tak terkendali, dan satu orang di jalur percabangan. Apakah Anda akan menarik tuasnya? Dari eksperimen pikiran klasik Philippa Foot hingga etika AI pada mobil otonom, kami mengeksplorasi secara mendalam konflik antara utilitarianisme dan deontologi yang dipertanyakan oleh \"Masalah Troli\", serta mekanisme pengambilan keputusan moral manusia dalam ribuan kata.】"
 slug: "paradox-trolley-problem"
 categories: ["philosophy"]

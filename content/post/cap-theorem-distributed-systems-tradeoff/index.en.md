@@ -2,7 +2,7 @@
 title: "CAP Theorem and Distributed Systems (Trade-offs of Consistency, Availability, and Partition Tolerance)"
 description: "The absolute law in distributed systems design, 'CAP Theorem', and the architectural compromises made by modern databases."
 slug: "cap-theorem-distributed-systems-tradeoff"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

@@ -1,7 +1,7 @@
 ---
 title: '리팩터링의 비결: 레거시 C++ 코드를 안전하게 개선하기'
 slug: "refactoring-legacy-cpp-code-safely"
-date: "2026-09-12T20:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

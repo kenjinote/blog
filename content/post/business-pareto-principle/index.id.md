@@ -1,5 +1,6 @@
 ---
 title: "Pemahaman Lengkap dan Aplikasi Praktis Prinsip Pareto (Aturan 80:20): Pemikiran Esensial yang Mengubah Bisnis dan Kehidupan Secara Drastis"
+date: "2026-09-24T16:08:36+09:00"
 description: "Menjelaskan secara rinci tentang Prinsip Pareto (Aturan 80:20) bahwa \"80% dari hasil berasal dari 20% penyebab\", mulai dari latar belakang sejarah hingga contoh spesifik dalam bisnis dan kehidupan sehari-hari, serta metode praktisnya. Ini adalah panduan wajib baca untuk mengidentifikasi esensi dan mencapai hasil maksimal dengan upaya minimal."
 slug: "business-pareto-principle"
 categories: ["business"]

@@ -2,7 +2,7 @@
 author: "Hugo Authors"
 title: 'Exemplos de sintaxe Markdown utilizáveis no Hugo: sintaxe básica, como títulos e parágrafos'
 slug: "マークダウンのExemplo"
-date: "2019-03-11"
+date: "2026-09-24T16:08:36+09:00"
 description: 'Apresentamos exemplos da sintaxe básica do Markdown que podem ser usados para criar conteúdo no gerador de sites estáticos Hugo. Você pode verificar como títulos (H1 a H6) e parágrafos são estilizados pelo CSS do tema.'
 tags: ["markdown", "css", "html", "themes"]
 categories: ["themes", "syntax"]

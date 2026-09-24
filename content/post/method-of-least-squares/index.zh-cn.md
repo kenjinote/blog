@@ -2,7 +2,7 @@
 title: "最小二乘法：用线性代数寻找散点数据的“最佳拟合直线”"
 description: "使用几何直觉和强大的线性代数工具（正规方程、正交投影）深入解释最小二乘法的原理。"
 slug: "method-of-least-squares"
-date: "2026-09-20T14:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

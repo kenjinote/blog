@@ -2,7 +2,7 @@
 title: "Funktionsweise des Browser-Renderings: Vollständige Analyse vom DOM-Baum bis zum Paint"
 description: "Eine vollständige Analyse der Funktionsweise von Rendering-Engines (wie Blink, WebKit usw.), von dem Moment an, in dem der Browser HTML/CSS/JS lädt, bis hin zum Zeichnen der Pixel auf dem Bildschirm."
 slug: "browser-rendering-mechanism-dom-paint"
-date: 2026-09-20T17:10:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - "web-development"

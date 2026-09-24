@@ -1,7 +1,7 @@
 ---
 title: 'llama.cpp 사용법 및 C++를 이용한 커스터마이징 입문'
 slug: "llama-cpp-cxx-customization"
-date: "2026-09-11T11:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

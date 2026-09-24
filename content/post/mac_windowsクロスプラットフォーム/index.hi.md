@@ -1,7 +1,7 @@
 ---
 title: 'मैक और विंडोज़ के बीच क्रॉस-प्लेटफ़ॉर्म विकास में ध्यान रखने योग्य बातें'
 slug: 'cross-platform-development-mac-windows'
-date: '2026-09-13T08:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true

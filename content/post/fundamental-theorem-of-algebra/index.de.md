@@ -2,7 +2,7 @@
 title: "Fundamentalsatz der Algebra: Beweis, dass eine Gleichung n-ten Grades immer n komplexe Wurzeln hat"
 description: "Eine detaillierte Erklärung der Geschichte, der intuitiven Bedeutung und des schönen Beweises des Fundamentalsatzes der Algebra mit Hilfe der komplexen Analysis (Satz von Liouville)."
 slug: "fundamental-theorem-of-algebra"
-date: "2026-09-20T15:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematik"

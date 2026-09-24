@@ -2,7 +2,7 @@
 title: "André Weil: Raksasa Matematika Abad 20, Bourbaki, dan Dugaan Weil"
 description: "Eksplorasi mendalam tentang kehidupan dramatis André Weil, pendirian Bourbaki, dan Dugaan Weil yang merevolusi geometri aljabar dan teori bilangan."
 slug: "weil"
-date: "2026-09-20T20:20:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["matematika", "biografi"]
 tags: ["André Weil", "Bourbaki", "Geometri Aljabar", "Teori Bilangan"]

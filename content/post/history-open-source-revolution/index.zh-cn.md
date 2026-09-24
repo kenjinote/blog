@@ -1,5 +1,6 @@
 ---
 title: "开源革命与《大教堂与集市》：改变软件开发历史的范式转换"
+date: "2026-09-24T16:08:36+09:00"
 description: "详细解析《大教堂与集市》如何奠定现代开源软件开发的基础，从其历史背景到对现代软件工程的影响。"
 slug: "history-open-source-revolution"
 categories: ["history"]

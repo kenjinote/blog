@@ -2,7 +2,7 @@
 title: "Apple的歷史：從車庫到全球市值第一的軌跡與創新DNA"
 description: "深入解析從史蒂夫·賈伯斯與沃茲尼亞克車庫創業，到iPhone革命及全球市值第一的Apple歷史與技術創新。"
 slug: "history-of-apple"
-date: "2026-09-23T03:35:47+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

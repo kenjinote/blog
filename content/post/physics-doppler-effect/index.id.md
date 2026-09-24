@@ -2,7 +2,7 @@
 title: "Misteri Fisika: Efek Doppler - Dari Sirene Ambulans hingga Ekspansi Alam Semesta"
 description: "Mekanisme 'Efek Doppler' di mana suara yang mendekat terdengar lebih tinggi dan suara yang menjauh terdengar lebih rendah, serta alasannya mengungkap misteri alam semesta."
 slug: "physics-doppler-effect"
-date: "2026-09-23T02:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

@@ -2,7 +2,7 @@
 title: "Internet Address: History of IPv4 and the Exhaustion Problem - Why Did 4.3 Billion Addresses Run Out?"
 description: "The 'IP address' is an address assigned to all devices on the internet. We explain the history and mechanism of why IPv4, which was supposed to have a massive 4.3 billion addresses, is running out and transitioning to the next-generation IPv6."
 slug: "history-of-ipv4"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

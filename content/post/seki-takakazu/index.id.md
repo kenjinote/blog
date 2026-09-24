@@ -2,7 +2,7 @@
 title: "Takakazu Seki: Kehidupan dan Pencapaian Matematika dari 'Orang Bijak Matematika' yang Mengangkat Wasan"
 description: "Penjelasan terperinci tentang kehidupan Takakazu Seki, seorang matematikawan jenius dari zaman Edo, dan pencapaian matematikanya yang menakjubkan yang sebanding dengan matematika Barat, seperti penemuan prinsip lingkaran, determinan, dan angka Bernoulli."
 slug: "seki-takakazu"
-date: "2026-09-20T19:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Matematika", "Biografi"]
 tags: ["Takakazu Seki", "Wasan", "Zaman Edo", "Sejarah Matematika", "Kalkulus", "Determinan"]

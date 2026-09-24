@@ -1,7 +1,7 @@
 ---
 title: '使用 Notion 進行個人開發與部落格寫作的任務管理術'
 slug: "notion-task-management-blog-dev"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

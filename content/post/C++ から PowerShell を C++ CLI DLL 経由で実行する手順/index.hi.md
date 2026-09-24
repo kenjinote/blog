@@ -1,7 +1,7 @@
 ---
 title: '【VS2022】C++ से PowerShell चलाएं! C++/CLI DLL के माध्यम से एकीकरण प्रक्रिया'
 slug: "C++ から PowerShell を C++ CLI DLL 経由で実行する手順"
-date: 2025-04-16T01:58:03+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["C++", "PowerShell", "C++/CLI", "DLL"]
 draft: false
 image: "img.webp"

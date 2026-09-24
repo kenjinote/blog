@@ -2,7 +2,7 @@
 title: "Memburuknya 'Kesenjangan Digital Baru' Akibat Evolusi AI Generatif"
 description: "Kami mengkaji secara mendalam kesenjangan digital baru yang bergeser dari akses perangkat keras dan internet menuju 'kemampuan prompting dan orkestrasi' akibat perkembangan pesat teknologi AI."
 slug: "generative-ai-digital-divide"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

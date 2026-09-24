@@ -2,7 +2,7 @@
 title: "Lambda演算（Lambda Calculus）與函數式編程的起源：從阿隆佐·邱奇的理論到Lisp、Haskell"
 description: "作為計算基礎理論的Lambda演算，是如何發展成現代的函數式編程語言的？本文將徹底解說從阿隆佐·邱奇的理論到Lisp、Haskell誕生的歷史與數學基礎。"
 slug: lambda-calculus-functional-programming
-date: 2026-09-21T02:35:46+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - computer-science

@@ -1,5 +1,6 @@
 ---
 title: "量子力學的極北：薛丁格的貓所提出的現實悖論"
+date: "2026-09-24T16:08:36+09:00"
 description: "什麼是「薛丁格的貓」？我們將從歷史背景到多世界詮釋，徹底解說量子力學中「疊加態」與「觀測問題」的核心。"
 slug: "paradox-schrodingers-cat"
 categories: ["science"]

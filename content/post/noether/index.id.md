@@ -2,7 +2,7 @@
 title: "Emmy Noether: Ibu Aljabar Modern dan Teorema Simetri"
 description: "Penjelasan mendetail tentang kehidupan dan pencapaian Emmy Noether, seorang ahli matematika jenius yang meletakkan dasar bagi aljabar modern dan membuktikan teorema Noether dalam fisika."
 slug: "noether"
-date: "2026-09-20T20:10:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Matematika", "Biografi"]
 tags: ["Emmy Noether", "Aljabar Abstrak", "Fisika", "Perempuan di STEM"]

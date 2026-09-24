@@ -2,7 +2,7 @@
 title: "الاستقطار وصيغة جوردان القياسية: الطريقة المثلى لتبسيط المصفوفات المعقدة"
 description: "شرح مفصل حول الاستقطار في الجبر الخطي وصيغة جوردان القياسية للمصفوفات التي لا يمكن استقطارها، مع توضيح المفاهيم والتطبيقات العملية."
 slug: "diagonalization-and-jordan-normal-form"
-date: "2026-09-20T14:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["linear-algebra", "matrix", "eigenvalue", "jordan-normal-form"]

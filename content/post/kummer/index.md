@@ -2,7 +2,7 @@
 title: "エルンスト・クンマー：理想数の父とフェルマーの最終定理への挑戦"
 description: "ドイツの偉大な数学者エルンスト・クンマーの生涯、理想数の導入による代数的整数論への貢献、そしてフェルマーの最終定理への挑戦について詳しく解説します。"
 slug: "kummer"
-date: "2026-09-20T19:40:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Ernst Kummer", "Fermat's Last Theorem", "Ideal Numbers", "Algebraic Number Theory", "Regular Primes"]

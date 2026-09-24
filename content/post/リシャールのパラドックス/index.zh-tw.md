@@ -2,7 +2,7 @@
 title: '理查悖論：無限的小數與「對角線論證」所引發的矛盾'
 slug: 'richards-paradox'
 description: '將能用語詞定義的實數全部列出，並創造出一個不同於它們的全新實數。這篇文章將淺顯易懂地解說動搖數學基礎的「理查悖論」，以及為了打破它而產生的哥德爾的靈光。'
-date: '2026-09-10T12:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/richards_paradox.jpg'
 math: true
 mermaid: true

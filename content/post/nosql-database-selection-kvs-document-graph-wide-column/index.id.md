@@ -2,7 +2,7 @@
 title: "Cara Memilih Database NoSQL (KVS, Dokumen, Graf, Kolom Lebar)"
 description: "Panduan untuk memahami model data dari berbagai database NoSQL dan membuat pilihan optimal berdasarkan kasus penggunaan."
 slug: "nosql-database-selection-kvs-document-graph-wide-column"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "database"

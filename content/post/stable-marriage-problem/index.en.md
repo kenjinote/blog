@@ -1,7 +1,7 @@
 ---
 title: "The stable marriage problem: how can everyone’s preferences fit together?"
 description: "Understand the Gale–Shapley algorithm through equations, diagrams, preference tables, and Python. Learn why a stable matching does not necessarily make everyone happy."
-date: "2026-09-16T14:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Stable marriage problem", "Algorithms", "Game theory", "Matching", "Python"]

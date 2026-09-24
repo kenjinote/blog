@@ -1,6 +1,6 @@
 ---
 title: "Edsger Dijkstra: The Rebellious Philosopher Who Built the Foundations of Computer Science"
-date: 2026-09-23T19:18:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["edsger-dijkstra", "history"]
 image: "eyecatch.jpg"

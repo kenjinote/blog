@@ -5,7 +5,7 @@
 
 title: 'Hugo에 KaTeX를 도입하여 LaTeX 스타일의 아름다운 수식을 표시하는 방법'
 slug: "hugoでKaTeX(LaTeX風수식表示)を有効にする方法"
-date: 2023-03-31T23:11:26+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["KaTeX", "LaTeX", "수식", "수학", "hugo"]
 draft: false
 math: true

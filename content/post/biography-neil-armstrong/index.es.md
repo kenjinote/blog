@@ -1,6 +1,6 @@
 ---
 title: "Neil Armstrong: La vida y filosofía del hombre que caminó por primera vez en la Luna"
-date: 2026-09-23T20:51:47+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["neil-armstrong", "history"]
 image: "eyecatch.jpg"

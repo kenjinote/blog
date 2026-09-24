@@ -1,7 +1,7 @@
 ---
 title: 'ما هو i18n (التدويل)؟ معناه في تطوير البرمجيات والعناصر المرتبطة به'
 slug: "i18nとは？"
-date: 2023-04-07T00:42:02+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Internationalization", "i18n", "مصطلحات"]
 draft: false
 image: "img.webp"

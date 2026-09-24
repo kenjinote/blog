@@ -2,7 +2,7 @@
 title: "Der Schild des Internets: Die Funktionsweise von SSL/TLS - Warum können Kreditkarteninformationen sicher gesendet werden?"
 description: "Was bedeutet das 's' in 'https' in einer Website-URL? Wir erklären die Funktionsweise von 'SSL/TLS', der Verschlüsselungstechnologie, die die Sicherheit von E-Commerce und Kommunikation weltweit schützt, anhand der hybriden Methode aus symmetrischen und öffentlichen Schlüsseln."
 slug: "network-ssl-tls"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

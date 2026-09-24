@@ -2,7 +2,7 @@
 title: "Georg Cantor : Le génie tragique qui a découvert la hiérarchie de l'infini et bâti les fondements des mathématiques"
 description: "Une explication détaillée de la vie mouvementée de Georg Cantor, fondateur de la théorie des ensembles, et de sa stupéfiante réalisation mathématique prouvant qu'il existe différentes tailles d'infini."
 slug: "cantor"
-date: "2026-09-20T19:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathématiques"

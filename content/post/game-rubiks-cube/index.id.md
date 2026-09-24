@@ -2,7 +2,7 @@
 title: "Algoritma Teka-teki: Cara Menyelesaikan Rubik dan Algoritmanya - Memecahkan 43 Quintillion Kombinasi"
 description: "Rubik sering dianggap mustahil diselesaikan sendiri, namun sebenarnya siapa pun bisa menyelesaikan 6 sisinya hanya dengan menghafal beberapa algoritma (langkah-langkah). Artikel ini menjelaskan dunia teka-teki yang menggabungkan teori grup dan matematika."
 slug: "game-rubiks-cube"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

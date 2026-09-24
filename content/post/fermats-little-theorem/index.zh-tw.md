@@ -2,7 +2,7 @@
 title: "費馬小定理：質數的性質與支撐現代密碼學（RSA密碼）的基礎"
 description: "詳細講解費馬小定理，從直觀理解到數學證明，以及其在RSA密碼學中的實際應用。"
 slug: "fermats-little-theorem"
-date: 2026-09-20T15:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "數學"

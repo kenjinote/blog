@@ -2,7 +2,7 @@
 title: "CAP 정리와 분산 시스템 (일관성, 가용성, 분단 내성의 트레이드오프)"
 description: "분산 시스템 설계에 있어서 절대적인 법칙 'CAP 정리'와 현대 데이터베이스가 선택하는 아키텍처의 타협점."
 slug: "cap-theorem-distributed-systems-tradeoff"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

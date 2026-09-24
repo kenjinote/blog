@@ -8,7 +8,7 @@
 
 title: '¡Fácil! Cómo usar y descargar herramientas para grabar pantalla en formato de animación GIF'
 slug: "GIFアニメ画面録画Herramienta"
-date: 2024-02-08T01:23:01+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Herramienta", "Grabación de pantalla", "GIF"]
 draft: false
 image: "img.webp"

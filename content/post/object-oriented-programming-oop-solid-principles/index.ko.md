@@ -2,7 +2,7 @@
 title: "객체 지향 프로그래밍(OOP)의 3대 요소와 SOLID 원칙의 실천: 역사부터 고도화된 설계 기법까지"
 description: "객체 지향 프로그래밍의 역사적 배경부터 3대 요소(캡슐화, 상속, 다형성), 그리고 SOLID 원칙의 깊이 있는 실천 방법까지 총망라한 완전 가이드."
 slug: "object-oriented-programming-oop-solid-principles"
-date: "2026-09-21T14:51:08+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "computer-science"

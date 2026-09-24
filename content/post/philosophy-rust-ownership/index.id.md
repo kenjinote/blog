@@ -1,5 +1,6 @@
 ---
 title: "Esensi Rust: Pergeseran Paradigma yang Dibawa oleh Keamanan dan Model Kepemilikan"
+date: "2026-09-24T16:08:36+09:00"
 description: "Menggali lebih dalam konsep inti Rust yaitu \"Kepemilikan (Ownership)\" dan \"Peminjaman (Borrowing)\", dan menjelaskan secara mendalam bagaimana hal itu menyeimbangkan keamanan memori dan kinerja."
 slug: "philosophy-rust-ownership"
 categories: ["philosophy"]

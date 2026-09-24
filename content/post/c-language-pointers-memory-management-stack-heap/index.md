@@ -2,7 +2,7 @@
 title: "C言語とポインタの完全理解（メモリ管理、アドレス、ヒープとスタックの基礎）"
 description: "C言語における最大の壁であるポインタについて、メモリアドレスの概念からスタックとヒープの違い、動的メモリ確保までを徹底的に解説します。C言語の深い理解を目指す方に向けた完全ガイドです。"
 slug: "c-language-pointers-memory-management-stack-heap"
-date: 2026-09-21T14:51:08+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["c", "pointers", "memory", "stack", "heap"]

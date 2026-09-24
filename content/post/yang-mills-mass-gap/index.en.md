@@ -2,7 +2,7 @@
 title: "Yang-Mills Equation and Mass Gap Problem - The Mathematical Foundation of the 'Standard Model' of Particle Physics"
 description: "An easy-to-understand explanation of the physical background and mathematical difficulties of the 'Yang-Mills Equation and Mass Gap Problem', one of the Millennium Prize Problems."
 slug: "yang-mills-mass-gap"
-date: 2026-09-14T13:11:25+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["physics", "mathematics"]
 tags:

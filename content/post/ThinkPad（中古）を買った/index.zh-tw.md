@@ -1,7 +1,7 @@
 ---
 title: '購買了二手 ThinkPad T470s！規格、使用體驗與不滿意之處真心話評測'
 slug: "ThinkPad（中古）を買った"
-date: 2023-01-13T19:07:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["ThinkPad", "筆記型電腦"]
 draft: false
 image: "img.webp"

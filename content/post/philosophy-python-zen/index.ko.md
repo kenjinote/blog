@@ -1,5 +1,6 @@
 ---
 title: "Python의 「Zen (선)」: 아름다움과 단순함을 추구하는 프로그래밍 철학의 심연"
+date: "2026-09-24T16:08:36+09:00"
 description: "Python의 설계 사상 'The Zen of Python (PEP 20)'에 대해, 그 역사적 배경부터 19가지 격언이 가지는 깊은 의미, 그리고 현대 소프트웨어 개발에서 왜 이렇게까지 중요하게 여겨지는지 철저하게 해설합니다."
 slug: "philosophy-python-zen"
 categories: ["philosophy"]

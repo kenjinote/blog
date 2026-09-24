@@ -2,7 +2,7 @@
 title: "How Winny worked: search, caching, relays, and the limits of anonymity"
 description: "A technical guide to Winny’s P2P network: metadata keys, bandwidth-based hierarchy, caching, and relays, with numerical examples and a clear account of data leaks and the developer’s trial."
 slug: "history-of-winny"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["technology", "computer-science"]
 tags: ["p2p", "network", "winny", "history"]

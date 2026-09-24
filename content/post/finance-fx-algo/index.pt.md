@@ -2,7 +2,7 @@
 title: "Câmbio e Tecnologia: A História e o Trading Algorítmico no Mercado de Câmbio (FX)"
 description: "O mercado de câmbio originou-se após o colapso do padrão-ouro. Explicamos como ele encontrou a internet e se tornou o principal campo de batalha para o trading algorítmico, onde milissegundos são disputados."
 slug: "finance-fx-algo"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "finance"

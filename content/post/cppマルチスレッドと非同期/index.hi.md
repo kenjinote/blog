@@ -1,7 +1,7 @@
 ---
 title: 'C++ में मल्टीथ्रेडिंग प्रोग्रामिंग और एसिंक्रोनस प्रोसेसिंग (std::async) का परिचय'
 slug: "cpp-multithreading-and-async-guide"
-date: "2026-09-12T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

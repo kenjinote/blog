@@ -2,7 +2,7 @@
 title: "约翰·沃利斯：创造无穷大符号的微积分先驱"
 description: "17世纪英国杰出的数学家约翰·沃利斯。我们将深入探讨这位发明了无穷大符号“∞”并奠定微积分基础的伟大人物的生平与成就。"
 slug: "wallis"
-date: "2026-09-20T19:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

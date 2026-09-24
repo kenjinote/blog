@@ -2,7 +2,7 @@
 title: "WebAssembly (Wasm) 的現在與未來：在瀏覽器執行 C/Rust 的運作原理"
 description: "深入解析 WebAssembly 的架構、編譯流程、與 JS 的互動，以及在瀏覽器外（WASI）的潛力，為您徹底解說 Wasm 的一切。"
 slug: "webassembly-wasm-current-future"
-date: 2026-09-20T17:10:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - "web-development"

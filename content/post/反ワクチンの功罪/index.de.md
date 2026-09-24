@@ -1,7 +1,7 @@
 ---
 title: 'Die Vor- und Nachteile von Anti-Impf-Bewegungen und die Lehren aus der Epidemiologie: Was ist die „Illusion der Kausalität“, die die Corona-Pandemie hervorgehoben hat?'
 slug: "反ワクチンの功罪"
-date: 2026-01-24T15:41:23+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Gesellschaftliche Probleme", "Gesundheit", "Informationskompetenz"]
 draft: false
 image: "img.webp"

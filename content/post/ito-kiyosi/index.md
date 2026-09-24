@@ -2,7 +2,7 @@
 title: "伊藤清：確率微分方程式の父と現代金融を支える数学"
 description: "「伊藤の補題」で知られる数学者・伊藤清の生涯と、確率解析学の業績、現代社会に与えた影響について深く掘り下げる。"
 slug: "ito-kiyosi"
-date: "2026-09-20T20:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["伊藤清", "確率微分方程式", "金融工学", "数学史"]

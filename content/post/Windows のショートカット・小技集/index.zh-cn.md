@@ -1,7 +1,7 @@
 ---
 title: '【Windows 11/10】让工作效率剧增的实用快捷键与小技巧巧汇总'
 slug: "Windows の快捷方式・小技巧集"
-date: 2022-09-18T23:49:29+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Windows", "小技巧巧", "快捷键"]
 draft: false
 image: "img.webp"

@@ -2,7 +2,7 @@
 title: 'Teiji Takagi: El matemático japonés de talla mundial que estableció la teoría de cuerpos de clases'
 description: 'Una mirada profunda a la vida de Teiji Takagi, el padre de las matemáticas japonesas modernas, y su gran logro matemático de establecer la teoría de cuerpos de clases.'
 slug: 'takagi-teiji'
-date: '2026-09-20T19:50:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - 'matemáticas'

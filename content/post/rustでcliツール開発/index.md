@@ -2,7 +2,7 @@
 title: "RustでCLIツールを爆速で開発するチュートリアル"
 description: 'Rustを使用して高速かつ安全なCLIツールを開発するための完全なチュートリアルです。clap, tokio, serdeなどを駆使して実践的なツールを構築します。'
 slug: "rust-cli-tool-fast-development-tutorial"
-date: "2026-09-12T13:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

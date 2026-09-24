@@ -2,7 +2,7 @@
 title: "Évariste Galois: Das tragische Genie und der Beginn der modernen Mathematik"
 description: "Der geniale Mathematiker Évariste Galois, der mit 20 Jahren in einem Duell starb. Wir beleuchten sein turbulentes Leben und die 'Galois-Theorie', die den Grundstein der modernen Algebra legte."
 slug: "galois"
-date: "2026-09-20T19:40:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematik", "Biografie"]
 tags: ["Galois-Theorie", "Algebra", "Gruppentheorie", "Geschichte"]

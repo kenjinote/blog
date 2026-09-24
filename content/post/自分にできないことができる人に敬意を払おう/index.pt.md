@@ -1,7 +1,7 @@
 ---
 title: 'Respeite as pessoas que podem fazer o que você não pode | Uma atitude para eliminar a superioridade ou inferioridade no trabalho'
 slug: "自分にできないことができる人に敬意を払おう"
-date: 2023-08-01T23:42:31+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Poema", "Pensamentos"]
 draft: false
 image: "img.webp"

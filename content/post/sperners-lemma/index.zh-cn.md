@@ -2,7 +2,7 @@
 title: "斯佩纳引理：从三角形着色到存在性证明"
 description: "解释根据边界规则为顶点着色如何保证出现包含三种颜色的小三角形。这是通往不动点定理的桥梁。"
 slug: "sperners-lemma"
-date: "2026-09-20T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["拓扑学", "组合数学", "不动点定理"]

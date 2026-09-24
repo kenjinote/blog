@@ -2,7 +2,7 @@
 title: "Полный разбор OAuth 2.0 и OIDC (OpenID Connect) (разница между аутентификацией и авторизацией)"
 description: "Подробное объяснение механизмов OAuth 2.0 и OIDC, различий между аутентификацией и авторизацией, а также различных типов грантов."
 slug: "oauth2-oidc-authentication-authorization-difference"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

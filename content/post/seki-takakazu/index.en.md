@@ -2,7 +2,7 @@
 title: "Takakazu Seki: The Life and Mathematical Achievements of the 'Math Sage' Who Elevated Wasan"
 description: "A detailed explanation of the life of Takakazu Seki, a genius mathematician of the Edo period, and his astonishing mathematical achievements comparable to Western mathematics, such as the discovery of the principle of the circle, determinants, and Bernoulli numbers."
 slug: "seki-takakazu"
-date: "2026-09-20T19:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematics", "Biography"]
 tags: ["Takakazu Seki", "Wasan", "Edo Period", "History of Mathematics", "Calculus", "Determinant"]

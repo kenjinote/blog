@@ -2,7 +2,7 @@
 title: "容斥原理：正确计算重叠集合中元素个数的强大技巧"
 description: "深入了解容斥原理的指南，这是一个必不可少的数学工具，用于准确计算多个重叠集合的元素而不会出现重复。我们使用示例、证明和应用实例，详细解释从基本的2个集合的情况到一般的n个集合的情况。"
 slug: "inclusion-exclusion-principle"
-date: "2026-09-20T15:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

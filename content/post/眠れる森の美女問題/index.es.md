@@ -2,7 +2,7 @@
 title: 'El problema de la bella durmiente: ¿la probabilidad de la moneda es 1/2 o 1/3? Un problema complejo que divide la teoría de la probabilidad'
 slug: 'sleeping-beauty-paradox'
 description: '"Ahora que has despertado, ¿cuál es la probabilidad de que la moneda haya salido cara?" A pesar de su configuración muy simple, explicamos la última paradoja que mantiene a matemáticos y filósofos de todo el mundo divididos en la "facción de 1/2" y la "facción de 1/3" debatiendo hasta el día de hoy.'
-date: '2026-09-10T09:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/sleeping_beauty.jpg'
 math: true
 mermaid: true

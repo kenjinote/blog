@@ -2,7 +2,7 @@
 title: "メビウスの帯とクラインの壺：「表と裏」の区別がない不思議な曲面の世界"
 description: "位相幾何学（トポロジー）の世界における非向き付け可能曲面、メビウスの帯とクラインの壺について、数式と図解を用いて深く解説します。"
 slug: "mobius-strip-and-klein-bottle"
-date: 2026-09-20T15:15:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["topology", "geometry", "mobius-strip", "klein-bottle"]

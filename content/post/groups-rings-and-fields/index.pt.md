@@ -2,7 +2,7 @@
 title: "Grupos, Anéis e Corpos: Uma Introdução à Álgebra Moderna"
 description: "Na matemática, a 'álgebra' evoluiu para o estudo de 'estruturas'."
 slug: "groups-rings-and-fields"
-date: "2026-09-20T15:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["matemática"]
 tags: ["álgebra", "teoria de grupos", "teoria de anéis", "teoria de corpos"]

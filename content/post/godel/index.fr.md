@@ -2,7 +2,7 @@
 title: "Kurt Gödel : Les théorèmes d'incomplétude et la trajectoire d'un génie mathématique"
 description: "Une explication détaillée de la vie de Kurt Gödel, le plus grand logicien du XXe siècle, et des théorèmes d'incomplétude qui ont ébranlé les fondements des mathématiques."
 slug: "godel"
-date: "2026-09-20T20:20:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathématiques", "biographie"]
 tags: ["Kurt Gödel", "Théorèmes d'incomplétude", "Mathématiques", "Logique", "Histoire"]

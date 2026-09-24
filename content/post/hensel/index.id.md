@@ -2,7 +2,7 @@
 title: "Kurt Hensel: Penemu Bilangan p-adik dan Warisan Matematikanya"
 description: "Melihat lebih dalam kehidupan matematikawan Jerman Kurt Hensel, penemuannya tentang bilangan p-adik yang merevolusi teori bilangan modern, dan Lemma Hensel."
 slug: "hensel"
-date: "2026-09-20T19:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["matematika", "biografi"]
 tags: ["Kurt Hensel", "bilangan p-adik", "teori bilangan aljabar", "sejarah matematika"]

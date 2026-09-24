@@ -2,7 +2,7 @@
 title: "Ramanujan Summation - A Counterintuitive Mathematical Interpretation Where 1+2+3+... = -1/12"
 description: "What happens if you infinitely add 1+2+3+4+...? Normally, it diverges to infinity, but in a specific field of mathematics, it is known to yield a surprising result of -1/12. In this article, we explain in detail the Ramanujan summation, which derives this counterintuitive result, along with its mathematical background and applications in physics."
 slug: "ramanujan-summation"
-date: "2026-09-14T13:20:38+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "physics"]
 tags:

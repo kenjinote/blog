@@ -2,7 +2,7 @@
 title: "Geometrische Bedeutung der Determinante: Mehr als nur eine Formel, es ist der 'Volumen-Skalierungsfaktor' und die 'Orientierungsumkehr'"
 description: "Die Determinante ist nicht nur eine Berechnungsformel, sondern ein wichtiger geometrischer Indikator für den Volumen-Skalierungsfaktor und die Orientierungsumkehr des Raumes durch lineare Transformationen. In diesem Artikel erklären wir ihre intuitive Bedeutung im Detail."
 slug: "geometric-meaning-of-determinant"
-date: "2026-09-20T14:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "Mathematik"

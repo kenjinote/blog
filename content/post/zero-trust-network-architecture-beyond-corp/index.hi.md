@@ -2,7 +2,7 @@
 title: "ज़ीरो-ट्रस्ट नेटवर्क आर्किटेक्चर (परिधि सुरक्षा से आगे बढ़ना)"
 description: "Google के BeyondCorp से सीखें, ज़ीरो-ट्रस्ट आर्किटेक्चर की अवधारणा और इसे लागू करने का तरीका।"
 slug: "zero-trust-network-architecture-beyond-corp"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

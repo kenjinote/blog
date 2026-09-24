@@ -2,7 +2,7 @@
 title: "양-밀스 방정식과 질량 간극 문제 - 입자 물리학 '표준 모형'의 수학적 기초"
 description: "밀레니엄 현상금 문제 중 하나인 '양-밀스 방정식과 질량 간극 문제'에 대해, 그 물리적 배경과 수학적 어려움을 알기 쉽게 해설합니다."
 slug: "yang-mills-mass-gap"
-date: 2026-09-14T13:11:25+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["physics", "mathematics"]
 tags:

@@ -2,7 +2,7 @@
 title: "Bernhard Riemann: Das Leben und die Errungenschaften des Genies, das die Tür zur modernen Mathematik öffnete"
 description: "Tauchen Sie tief ein in das turbulente Leben von Bernhard Riemann und seine mathematischen Errungenschaften wie die Riemannsche Vermutung und die Riemannsche Geometrie, die die moderne Mathematik und Physik stark beeinflusst haben."
 slug: "riemann"
-date: "2026-09-20T19:40:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematik"

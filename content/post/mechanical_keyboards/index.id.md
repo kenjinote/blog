@@ -1,7 +1,7 @@
 ---
 title: 'Untuk Coding Jangka Panjang! 5 Rekomendasi Keyboard Mekanikal untuk Engineer'
 slug: "engineer-mechanical-keyboard-recommendations"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

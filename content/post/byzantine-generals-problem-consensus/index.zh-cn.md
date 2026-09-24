@@ -2,7 +2,7 @@
 title: "拜占庭将军问题与共识算法的深渊：Paxos、Raft、BFT的机制"
 description: "我们将深入探讨作为分布式系统基础的共识算法，从拜占庭将军问题的起源，到Paxos、Raft，以及对恶意节点具有容错能力的BFT，结合理论、数学公式和代码实现进行彻底剖析。"
 slug: byzantine-generals-problem-consensus
-date: 2026-09-21T02:45:54+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - distributed-systems

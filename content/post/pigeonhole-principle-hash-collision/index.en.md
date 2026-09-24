@@ -1,7 +1,7 @@
 ---
 title: "The Pigeonhole Principle and Hash Collisions: Unraveling the Limits and Security of Cryptography"
 image: "eyecatch.jpg"
-date: "2026-09-14T00:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 description: "Why does the intuitively understandable 'Pigeonhole Principle' become the most important concept in the security of modern cryptography and hash functions? We explain it deeply using concrete examples, formulas, and diagrams."
 categories: ["technology", "cryptography", "mathematics"]
 tags: ["Hash", "Pigeonhole Principle", "Security", "Algorithm", "KaTeX", "Mermaid"]

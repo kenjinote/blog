@@ -1,7 +1,7 @@
 ---
 title: 'C++ 엔지니어가 Rust를 배우고 느낀 장점과 단점'
 slug: "cpp-engineer-learning-rust-pros-cons"
-date: "2026-09-12T03:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

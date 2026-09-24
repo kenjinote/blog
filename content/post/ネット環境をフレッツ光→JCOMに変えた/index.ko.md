@@ -6,7 +6,7 @@
 
 title: 'FLET''S 히카리에서 J:COM으로 갈아탄 결과! 요금과 통신 속도의 생생한 후기'
 slug: "ネット環境をFLET'S Hikari→JCOMに変えた"
-date: 2022-09-05T22:48:51+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["J:COM","플렛츠 광","인터넷 회선"]
 draft: false
 image: "jcom.webp"

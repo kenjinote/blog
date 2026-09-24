@@ -1,5 +1,6 @@
 ---
 title: "La paradoja de Galileo: El misterio matemático tejido por el infinito"
+date: "2026-09-24T16:08:36+09:00"
 description: "¿Es la misma cantidad de \"números naturales\" que de \"sus cuadrados\"? Una explicación exhaustiva desde las profundas reflexiones sobre el \"infinito\" dejadas por Galileo Galilei en sus últimos años, hasta su conexión con la teoría de conjuntos moderna. Un extenso artículo que se acerca a las maravillas y el encanto del infinito."
 slug: "paradox-galileos-paradox"
 categories: ["science"]

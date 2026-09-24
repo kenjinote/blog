@@ -1,7 +1,7 @@
 ---
 title: "末日论证（Doomsday Argument）：概率论导出的“人类灭亡的倒计时”"
 image: "eyecatch.jpg"
-date: 2026-09-14T00:00:51+09:00
+date: "2026-09-24T16:08:36+09:00"
 description: "我们正处于人类历史的哪个节点？通过哥白尼原则和贝叶斯推断，利用概率论预测人类灭亡时期的“末日论证”，本文将结合公式和图解进行讲解。"
 categories: ["probability-theory", "thought-experiment", "philosophy"]
 tags: ["贝叶斯推断", "末日论证", "Doomsday Argument", "数学"]

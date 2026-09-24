@@ -1,5 +1,6 @@
 ---
 title: "SQL dan Model Relasional: Kedalaman dan Filosofi Pendekatan Teori Himpunan Edgar F. Codd"
+date: "2026-09-24T16:08:36+09:00"
 description: "Menggali lebih dalam model relasional yang menjadi dasar SQL dan teori himpunan Codd. Sebuah artikel panjang edisi definitif yang menjelaskan secara rinci latar belakang sejarah basis data, dasar-dasar matematika, dan implikasi filosofis dalam desain aplikasi modern."
 slug: "philosophy-sql-relational-model"
 categories: ["philosophy"]

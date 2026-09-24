@@ -2,7 +2,7 @@
 title: "이벤트 기반 아키텍처와 메시지 큐 (Kafka, RabbitMQ)"
 description: "비동기 통신을 통해 시스템 간 결합도를 낮추는 이벤트 기반 설계와 메시지 브로커의 역할."
 slug: "event-driven-architecture-message-queue-kafka-rabbitmq"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

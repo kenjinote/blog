@@ -2,7 +2,7 @@
 title: "微前端架構（龐大化 SPA 的分割手法）"
 description: "分割複雜化的前端單體，提高團隊自主性的微前端實作模式。"
 slug: "micro-frontends-architecture-spa-division"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

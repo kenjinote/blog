@@ -2,7 +2,7 @@
 title: "Karl Weierstrass: O Pai da Análise Moderna e a Sua Vida"
 description: "Uma explicação detalhada da vida turbulenta e das grandes realizações em matemática (definição epsilon-delta, função de Weierstrass, etc.) de Karl Weierstrass, conhecido como o 'pai da análise moderna'."
 slug: "weierstrass"
-date: "2026-09-20T19:40:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Matemática", "Biografia"]
 tags: ["Matemática", "Weierstrass", "Análise", "História"]

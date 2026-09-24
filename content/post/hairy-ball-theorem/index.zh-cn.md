@@ -2,7 +2,7 @@
 title: "毛球定理（Hairy Ball Theorem） - “长满毛的球无法梳理平整”的拓扑学定理"
 description: "详细讲解拓扑学（Topology）中著名的定理“毛球定理（Hairy Ball Theorem）”，从直观理解到数学上严格的证明，再到气象学和计算机图形学等现实世界的应用。"
 slug: "hairy-ball-theorem"
-date: "2026-09-14T13:11:25+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "topology"]
 tags:

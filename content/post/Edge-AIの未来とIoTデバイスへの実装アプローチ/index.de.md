@@ -1,7 +1,7 @@
 ---
 title: 'Die Zukunft von Edge-AI und Implementierungsansätze für IoT-Geräte'
 slug: "edge-ai-future-iot-implementation"
-date: "2026-09-11T05:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

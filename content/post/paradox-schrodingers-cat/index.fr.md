@@ -1,5 +1,6 @@
 ---
 title: "L'Extrême Nord de la Mécanique Quantique : Le Paradoxe de la Réalité Posé par le Chat de Schrödinger"
+date: "2026-09-24T16:08:36+09:00"
 description: "Qu'est-ce que le « Chat de Schrödinger » ? Nous expliquons de manière approfondie le cœur de la « superposition » et du « problème de la mesure » en mécanique quantique, de leur contexte historique à l'interprétation des mondes multiples."
 slug: "paradox-schrodingers-cat"
 categories: ["science"]

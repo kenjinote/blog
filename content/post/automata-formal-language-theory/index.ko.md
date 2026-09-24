@@ -2,7 +2,7 @@
 title: "오토마타와 형식 언어 이론: 정규 표현식의 이면과 촘스키 계층"
 description: "정규 표현식이나 프로그래밍 언어의 컴파일러 이면에 있는 '오토마타'와 '형식 언어 이론'에 대해 촘스키 계층을 곁들여 깊이 파헤쳐 봅니다."
 slug: automata-formal-language-theory
-date: 2026-09-21T02:35:46+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - computer-science

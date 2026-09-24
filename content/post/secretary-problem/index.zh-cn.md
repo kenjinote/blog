@@ -2,7 +2,7 @@
 title: "秘书问题 / 最佳停止问题（Secretary Problem） - 雇佣最优秀人才的“1/e 法则”"
 description: "什么是秘书问题（Secretary Problem）？通过这个最佳停止问题的经典例子，我们将详细解释用于在不确定情况下做出最佳选择的数学方法“1/e 法则（约 37% 法则）”。结合数学证明和模拟，探索它如何应用于招聘活动和日常决策中。"
 slug: "secretary-problem"
-date: "2026-09-14T13:20:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "algorithms", "decision-making"]
 tags:

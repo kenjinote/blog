@@ -2,7 +2,7 @@
 title: "介值定理与中值定理：源自连续函数与导数直观性质的强大证明工具"
 description: "本文深入探讨了微积分的基础支撑——「介值定理」与「中值定理」，从直观意义到严格的数学证明，再到其广泛的应用实例。"
 slug: "intermediate-and-mean-value-theorem"
-date: "2026-09-20T14:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["微积分", "定理", "数学证明"]

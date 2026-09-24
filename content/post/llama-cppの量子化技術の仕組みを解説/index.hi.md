@@ -1,7 +1,7 @@
 ---
 title: 'llama.cpp की क्वांटाइजेशन तकनीक (GGUF) कैसे काम करती है, इसकी व्याख्या'
 slug: "llama-cpp-quantization-gguf"
-date: "2026-09-11T00:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

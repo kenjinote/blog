@@ -1,5 +1,6 @@
 ---
 title: "Unix哲學（模組化設計的精髓）：單一職責與管道交織的軟體藝術"
+date: "2026-09-24T16:08:36+09:00"
 description: "深入剖析Unix哲學根基中的「模組化設計」精髓。全面解析「做好一件事的程式」、「透過文本流協作」等至今仍在現代軟體工程中適用的不朽原則。"
 slug: "philosophy-unix-modular-design"
 categories: ["philosophy"]

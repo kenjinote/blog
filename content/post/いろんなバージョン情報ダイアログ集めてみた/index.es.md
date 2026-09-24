@@ -8,7 +8,7 @@
 
 title: 'Una colección de pantallas de diálogo de información de versión de varios programas'
 slug: "いろんなInformación de versiónダイアログ集めてみた"
-date: 2024-03-02T21:32:11+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Información de versión", "Windows", "MacOS"]
 draft: false
 image: "img.webp"

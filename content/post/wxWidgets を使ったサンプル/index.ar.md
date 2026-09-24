@@ -1,7 +1,7 @@
 ---
 title: 'كيفية استخدام وتثبيت wxWidgets حتى إنشاء مشروع تجريبي'
 slug: "wxWidgets を使ったعينة"
-date: 2023-04-18T00:18:22+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["wxWidgets", "عينة"]
 draft: false
 image: "img.webp"

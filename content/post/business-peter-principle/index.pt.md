@@ -1,5 +1,6 @@
 ---
 title: "O Princípio de Peter: Por que pessoas competentes continuam sendo promovidas até se tornarem incompetentes? Uma análise profunda das armadilhas organizacionais e contramedidas"
+date: "2026-09-24T16:08:36+09:00"
 description: "O \"Princípio de Peter\" é um fenômeno universal nas organizações onde \"um funcionário raso competente se torna um gerente incompetente\". Explicaremos profundamente este fenômeno, desde o seu mecanismo até contramedidas específicas. Qual é a sabedoria para sobreviver ao destino da sociedade hierárquica?"
 slug: "business-peter-principle"
 categories: ["business"]

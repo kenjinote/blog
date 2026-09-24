@@ -2,7 +2,7 @@
 title: "Séries de Taylor et de Maclaurin : La magie de l'approximation de fonctions complexes avec des polynômes"
 description: "Une explication détaillée des séries de Taylor et de Maclaurin, les secrets du calcul infinitésimal, des significations intuitives aux dérivations mathématiques et applications en programmation et physique."
 slug: "taylor-and-maclaurin-series"
-date: "2026-09-20T14:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathématiques"

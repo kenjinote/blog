@@ -2,7 +2,7 @@
 title: "Carl Friedrich Gauss : Vie et réalisations du Prince des Mathématiciens"
 description: "Une explication détaillée de la vie, des épisodes étonnants et des immenses contributions à la science moderne de Carl Friedrich Gauss, connu sous le nom de 'Prince des Mathématiciens'."
 slug: "gauss"
-date: 2026-09-20T19:10:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Gauss", "Histoire des mathématiques", "Génie", "Géométrie", "Théorie des nombres"]

@@ -1,5 +1,6 @@
 ---
 title: "Gitの思想（非中央集権の美学）"
+date: "2026-09-24T16:08:36+09:00"
 description: "Gitの設計思想である非中央集権的アプローチについて、その美学とアーキテクチャの観点から深く考察します。分散型バージョン管理システムがもたらした開発パラダイムの転換を解き明かします。"
 slug: "philosophy-git-decentralized"
 categories: ["philosophy"]

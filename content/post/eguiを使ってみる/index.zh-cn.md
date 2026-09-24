@@ -1,7 +1,7 @@
 ---
 title: 'Rust轻量级GUI库“egui”的入门与示例运行步骤'
 slug: "eguiを使ってみる"
-date: 2023-03-18T10:27:02+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["rust", "egui", "GUI库"]
 draft: false
 image: "demo.gif"

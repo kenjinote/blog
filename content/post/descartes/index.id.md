@@ -2,7 +2,7 @@
 title: "René Descartes: Bapak Filsafat Modern dan Pendiri Geometri Analitik"
 description: "René Descartes terkenal dengan 'Aku berpikir, maka aku ada'. Kami mengeksplorasi kehidupannya yang luar biasa dan kelahiran geometri analitik yang merevolusi sejarah matematika."
 slug: "descartes"
-date: 2026-09-20T18:50:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matematika"

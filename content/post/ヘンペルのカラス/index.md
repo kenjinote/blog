@@ -1,7 +1,7 @@
 ---
 title: "青いリンゴを見ると「カラスは黒い」ことの証明になる？：ヘンペルのカラス"
 description: "「カラスは黒い」という仮説を、カラスを一切見ることなく証明できるのか？論理的同値性が生み出す帰納法のパラドックス。"
-date: 2026-09-10T21:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 slug: "hempels-ravens"
 image: "img/hempels_ravens.jpg"

@@ -1,7 +1,7 @@
 ---
 title: "Si l'on retire un grain de sable, quand un tas de sable cesse-t-il d'être un tas ? : Le paradoxe sorite"
 description: "Où se situe la frontière entre un « tas de sable » et « ce qui n'est pas un tas » ? Un paradoxe philosophique hérité de la Grèce antique qui interroge l'essence même de l'ambiguïté."
-date: 2026-09-10T21:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 slug: "sorites-paradox"
 image: "img/sorites_paradox.jpg"

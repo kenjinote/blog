@@ -1,6 +1,6 @@
 ---
 title: "Espace et technologie : Le fonctionnement du GPS - Théorie de la relativité et système de positionnement par satellite"
-date: 2026-09-23T04:01:41+09:00
+date: "2026-09-24T16:08:36+09:00"
 
 image: "eyecatch.jpg"
 categories: ["space", "technology"]

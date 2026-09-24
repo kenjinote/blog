@@ -2,7 +2,7 @@
 title: "Finance & Technology: The History of FX (Foreign Exchange Margin Trading) and Algorithmic Trading"
 description: "We explain the foreign exchange market, starting from the collapse of the gold standard, and how its encounter with the internet turned it into a battleground for algorithmic trading competing in milliseconds."
 slug: "finance-fx-algo"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "finance"

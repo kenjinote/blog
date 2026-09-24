@@ -2,7 +2,7 @@
 title: "伽罗瓦理论（Galois Theory） - 为什么5次及以上方程没有求根公式与群论的诞生"
 description: "什么是伽罗瓦理论？为什么5次及以上的方程没有一般的求根公式？本文将为您通俗易懂地讲解埃瓦里斯特·伽罗瓦留下的群论基础，以及数学中对称性的美。"
 slug: "galois-theory"
-date: "2026-09-14T13:04:13+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "algebra"]
 tags:

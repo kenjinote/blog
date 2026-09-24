@@ -1,7 +1,7 @@
 ---
 title: "テスト駆動開発（TDD）をC++プロジェクト（GoogleTest等）に導入する方法"
 slug: "tdd-cpp-googletest-introduction"
-date: "2026-09-12T21:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

@@ -2,7 +2,7 @@
 title: 'Le paradoxe de Saint-Pétersbourg : Combien paieriez-vous pour un jeu dont l''espérance de gain est « infinie » ?'
 slug: 'st-petersburg-paradox'
 description: 'Un jeu de hasard censé rapporter « à l''infini » mathématiquement. Pourtant, en réalité, personne n''est prêt à payer une somme importante pour y jouer. Cet article explique ce paradoxe historique, qui a mis en lumière l''écart entre la théorie des probabilités et la psychologie humaine (l''utilité) et qui est devenu le fondement de l''économie moderne.'
-date: '2026-09-10T05:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/st_petersburg.jpg'
 math: true
 mermaid: true

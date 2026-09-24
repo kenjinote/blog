@@ -1,6 +1,6 @@
 ---
 title: "Pythonの生みの親：グイド・ヴァン・ロッサムの生涯と哲学"
-date: 2026-09-23T19:18:01+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["guido-van-rossum", "history"]
 image: "eyecatch.jpg"

@@ -1,7 +1,7 @@
 ---
 title: '透過靈活運用 Copilot 與本機 AI 來大幅提升開發效率'
 slug: "hybrid-ai-development-workflow"
-date: "2026-09-11T21:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

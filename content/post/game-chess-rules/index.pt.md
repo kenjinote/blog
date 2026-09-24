@@ -2,7 +2,7 @@
 title: "Estratégia de Jogos de Tabuleiro: Regras Básicas e Estratégias de Abertura do Xadrez - A Guerra no Tabuleiro para Encurralar o Rei"
 description: "O xadrez, o esporte mental mais jogado do mundo. Desde o básico do movimento das peças, controle do centro, roque, até estratégias de abertura representativas (teoria), explicamos a teoria para iniciantes vencerem."
 slug: "game-chess-rules"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

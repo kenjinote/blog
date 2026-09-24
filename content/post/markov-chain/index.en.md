@@ -2,7 +2,7 @@
 title: "Markov Chains: 'Future Depends Only on the Present' Mathematics of State Transitions"
 description: "A detailed explanation of probability models for state transitions, covering the basics and applications of Markov chains."
 slug: "markov-chain"
-date: "2026-09-20T15:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematics"

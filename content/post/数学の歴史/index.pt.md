@@ -1,7 +1,7 @@
 ---
 title: 'A história da matemática e os difíceis problemas antigos: Aprendendo sobre os três problemas clássicos de construção e a espiral de Arquimedes'
 slug: "MatemáticaのHistória"
-date: 2023-07-22T15:25:10+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Matemática", "História"]
 draft: false
 image: "img.webp"

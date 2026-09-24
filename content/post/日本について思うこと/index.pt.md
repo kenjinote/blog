@@ -1,7 +1,7 @@
 ---
 title: 'Desafios e desconforto na sociedade japonesa: O declínio da taxa de natalidade e a teoria da responsabilidade individual vistos pelo problema das bolsas de estudo'
 slug: "日本についてPensamentos"
-date: 2022-09-06T02:24:11+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Miscelânea"]
 draft: false
 image: "images/img.webp"

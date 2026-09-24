@@ -1,5 +1,6 @@
 ---
 title: "The 'Zen' of Python: The Abyss of Programming Philosophy Pursuing Beauty and Simplicity"
+date: "2026-09-24T16:08:36+09:00"
 description: "A thorough explanation of Python's design philosophy 'The Zen of Python (PEP 20)', from its historical background to the deep meaning of its 19 aphorisms, and why it is considered so important in modern software development."
 slug: "philosophy-python-zen"
 categories: ["philosophy"]

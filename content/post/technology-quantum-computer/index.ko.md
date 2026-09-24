@@ -2,7 +2,7 @@
 title: "차세대 컴퓨터: 양자 컴퓨터의 원리 - '0'과 '1'의 중첩이 뒤집는 세계"
 description: "슈퍼컴퓨터가 수만 년 걸릴 계산을 단 몇 초 만에 푼다고 알려진 '양자 컴퓨터'. 양자역학의 신비한 현상인 '중첩'과 '얽힘'을 이용한, 전혀 새로운 계산 패러다임을 해설합니다."
 slug: "technology-quantum-computer"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -8,7 +8,7 @@
 
 title: 'Cómo deshacer un git reset ejecutado por error｜Pasos para restaurar commits'
 slug: "git resetを取り消す方法"
-date: 2024-05-15T23:32:43+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["git", "restaurar", "deshacer"]
 draft: false
 image: "img.webp"

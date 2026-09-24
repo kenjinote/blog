@@ -2,7 +2,7 @@
 title: 'Pythagoras: Die Schnittstelle von Mathematik und Mystik'
 description: 'Eine eingehende Untersuchung des Lebens des antiken griechischen Mathematikers Pythagoras, des Satzes des Pythagoras und der Philosophie, dass alle Dinge Zahlen sind.'
 slug: 'pythagoras'
-date: '2026-09-20T18:40:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - 'mathematik'

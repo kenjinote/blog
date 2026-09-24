@@ -2,7 +2,7 @@
 title: "Benford's Law: Why Do So Many Numbers Start With 1?"
 description: "Exploring the mysterious mathematical law hidden in natural data, also used to detect accounting fraud."
 slug: "benfords-law"
-date: "2026-09-15T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematics"

@@ -1,7 +1,7 @@
 ---
 title: "飞行的箭是静止的？：芝诺的“飞矢”悖论"
 description: "飞行的箭在每一个瞬间都是静止的。那么，运动不存在吗？古希腊最大的逻辑谜题。"
-date: 2026-09-10T21:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 slug: "zenos-arrow"
 image: "img/zenos_arrow.jpg"

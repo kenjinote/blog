@@ -2,7 +2,7 @@
 title: "인터넷의 번지수: IPv4의 역사와 고갈 문제 - 43억 개의 주소는 왜 부족해졌는가"
 description: "인터넷상의 모든 기기에 할당되는 주소 'IP 주소'. 약 43억 개라는 방대한 수가 준비되었을 터인 IPv4가 왜 고갈되어 차세대 IPv6로 이행하고 있는지, 그 역사와 구조를 해설합니다."
 slug: "history-of-ipv4"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

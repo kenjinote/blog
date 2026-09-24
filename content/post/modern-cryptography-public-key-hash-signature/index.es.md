@@ -2,7 +2,7 @@
 title: "Fundamentos de criptografía moderna (criptografía de clave pública, funciones hash, firmas digitales)"
 description: "Explicación exhaustiva de los mecanismos de la tecnología criptográfica moderna, desde claves simétricas y públicas hasta hashes y firmas digitales."
 slug: "modern-cryptography-public-key-hash-signature"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

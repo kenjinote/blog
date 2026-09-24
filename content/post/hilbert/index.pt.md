@@ -2,7 +2,7 @@
 title: "David Hilbert: O Gigante que Lançou as Fundações da Matemática Moderna e Sua Trajetória Épica"
 description: "Uma explicação detalhada da vida e das numerosas realizações matemáticas de David Hilbert, um dos maiores matemáticos dos séculos XIX e XX. Traçamos sua trajetória desde a teoria dos invariantes até o espaço de Hilbert."
 slug: "hilbert"
-date: "2026-09-20T19:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["matemática", "biografia"]
 tags: ["Hilbert", "História da Matemática", "Geometria", "Análise Funcional", "Física", "Teoria dos Números"]

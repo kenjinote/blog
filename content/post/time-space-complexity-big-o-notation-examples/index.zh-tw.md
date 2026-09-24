@@ -2,7 +2,7 @@
 title: "時間複雜度與空間複雜度（大O記號入門與實例）"
 description: "關於演算法效能評估不可或缺的大O記號（Big O notation），從時間複雜度與空間複雜度的差異到具體實例，我們將進行徹底解說。"
 slug: "time-space-complexity-big-o-notation-examples"
-date: 2026-09-22T00:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "big-o", "time-complexity", "space-complexity", "data-structures"]

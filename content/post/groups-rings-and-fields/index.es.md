@@ -2,7 +2,7 @@
 title: "Grupos, Anillos y Cuerpos: Una Introducción al Álgebra Moderna"
 description: "En matemáticas, el 'álgebra' evolucionó hasta convertirse en el estudio de 'estructuras'. Este artículo detalla los conceptos de 'grupos', 'anillos' y 'cuerpos'."
 slug: "groups-rings-and-fields"
-date: "2026-09-20T15:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["matemáticas"]
 tags: ["álgebra", "teoría de grupos", "teoría de anillos", "teoría de cuerpos"]

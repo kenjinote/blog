@@ -1,6 +1,6 @@
 ---
 title: "لاوتسو: مؤسس الطاوية، حياته المليئة بالأسرار وأعماق كتاب «تاو تي تشينغ»"
-date: 2026-09-23T19:53:32+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["laozi", "history"]
 image: "eyecatch.jpg"

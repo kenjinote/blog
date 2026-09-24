@@ -1,5 +1,6 @@
 ---
 title: "Henrietta Lacks e as Células Imortais HeLa: A História Não Contada que Moldou a Medicina Moderna"
+date: "2026-09-24T16:08:36+09:00"
 description: "Um olhar aprofundado sobre a vida de Henrietta Lacks, os avanços científicos das células HeLa, essenciais para a medicina e a biologia modernas, e seu profundo impacto na bioética."
 slug: "biography-henrietta-lacks"
 categories: ["biography"]

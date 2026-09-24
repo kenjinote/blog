@@ -4,7 +4,7 @@
 
 title: 'Rust의 경량 GUI 라이브러리 ''egui'' 시작하기 및 샘플 실행 절차'
 slug: "eguiを使ってみる"
-date: 2023-03-18T10:27:02+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["rsut", "egui", "GUI 라이브러리"]
 draft: false
 image: "demo.gif"

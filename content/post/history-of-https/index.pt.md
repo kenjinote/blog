@@ -2,7 +2,7 @@
 title: "Tecnologia de Redes: Explicação Técnica do HTTPS - O Mecanismo de Criptografia e Infraestrutura de Chave Pública (PKI)"
 description: "É graças ao 'HTTPS' que podemos fazer compras online com segurança. Explicaremos a tecnologia de criptografia que previne escuta e adulteração, e os complexos processos matemáticos que o SSL/TLS executa nos bastidores."
 slug: "history-of-https"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

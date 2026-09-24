@@ -2,7 +2,7 @@
 title: "Gauss's Theorema Egregium - A Monumental Milestone in Differential Geometry That Can Also Be Applied to How You Eat Pizza"
 description: "A deep dive into the 'Remarkable Theorem' discovered by Carl Friedrich Gauss, from its mathematical background to its everyday application when eating pizza."
 slug: "theorema-egregium"
-date: "2026-09-14T13:11:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]
 tags: ["Geometry", "Gauss", "Pizza Theorem", "Theorema Egregium", "Differential Geometry"]

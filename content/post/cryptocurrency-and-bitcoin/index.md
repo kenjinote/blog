@@ -2,7 +2,7 @@
 title: "暗号資産とビットコイン：その歴史、数理的基盤、そして未来"
 description: "ビットコインと暗号資産の背後にある技術的・数理的メカニズムを徹底解説。SHA-256、楕円曲線暗号、UTXO、そしてスケーラビリティ問題までを網羅する完全版ガイド。"
 slug: "cryptocurrency-and-bitcoin"
-date: "2026-09-20T23:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["technology", "mathematics"]
 tags: ["bitcoin", "cryptography", "blockchain"]

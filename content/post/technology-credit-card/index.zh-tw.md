@@ -2,7 +2,7 @@
 title: "金融網路：信用卡支付的運作原理 - 從授權到清算的技術"
 description: "在商店刷卡的瞬間，背後到底進行了什麼樣的數據通訊？本文將為您解析支撐全球規模支付網路的「授權」與「清算」機制。"
 slug: "technology-credit-card"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

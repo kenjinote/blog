@@ -2,7 +2,7 @@
 title: "Henri Poincaré: The Last Universalist and His Profound Mathematical Legacy"
 description: "An incredibly detailed exploration of the life of the great French mathematician Henri Poincaré, his groundbreaking mathematical achievements such as Chaos Theory and the Poincaré Conjecture, and fascinating episodes regarding his creativity."
 slug: "poincare"
-date: "2026-09-20T19:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematics", "Biography"]
 tags: ["Poincare", "Topology", "Chaos Theory", "History of Mathematics", "Physics"]

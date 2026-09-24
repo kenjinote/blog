@@ -2,7 +2,7 @@
 title: "Tecnología de Redes: De IPv4 a IPv6 y la Internet de Próxima Generación"
 description: "Direcciones IP, los domicilios de Internet. Explicamos cómo IPv4, que solo tenía 4.300 millones, superó la crisis de agotamiento y está haciendo la transición a IPv6, que tiene un espacio infinito."
 slug: "history-of-ipv6"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -1,5 +1,6 @@
 ---
 title: "物件導向的誤解與真相：Alan Kay 想傳達的「訊息傳遞」核心"
+date: "2026-09-24T16:08:36+09:00"
 description: "物件導向 (OOP) 常被誤解為「類別」和「繼承」，但其真正的核心在於「訊息傳遞」。本文將從 Alan Kay 的願景與細胞隱喻出發，徹底解說 OOP 的真相。"
 slug: "philosophy-oop-messaging"
 categories: ["philosophy"]

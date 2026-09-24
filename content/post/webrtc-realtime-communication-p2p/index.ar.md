@@ -2,7 +2,7 @@
 title: "كواليس WebRTC والاتصال في الوقت الفعلي: P2P، STUN/TURN، والإشارات"
 description: "كيفية عمل WebRTC للاتصال المباشر بين المتصفحات. تحليل شامل للتعقيدات الخلفية مثل تجاوز NAT (STUN/TURN)، خادم الإشارات، وبروتوكول ICE."
 slug: "webrtc-realtime-communication-p2p"
-date: 2026-09-20T17:10:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - "network"

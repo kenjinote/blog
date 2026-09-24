@@ -2,7 +2,7 @@
 author: "Hugo Authors"
 title: 'Hugo中可用的Markdown語法範例：標題、段落等基本語法'
 slug: "マークダウンの範例"
-date: "2019-03-11"
+date: "2026-09-24T16:08:36+09:00"
 description: '介紹在靜態網站產生器Hugo中建立內容時，可使用的基本Markdown語法（Syntax）範例。可以確認標題（H1〜H6）與段落等元素，在主題的CSS中會呈現什麼樣的裝飾效果。'
 tags: ["markdown", "css", "html", "themes"]
 categories: ["themes", "syntax"]

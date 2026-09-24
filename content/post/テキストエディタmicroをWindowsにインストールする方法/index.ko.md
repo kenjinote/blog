@@ -8,7 +8,7 @@
 
 title: 'Windows에서 쓸 수 있다! 경량 텍스트 에디터 ''micro'' 설치 방법'
 slug: "텍스트 에디터microをWindowsに설치する方法"
-date: 2024-03-31T21:50:39+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["micro", "텍스트 에디터"]
 draft: false
 image: "img.webp"

@@ -2,7 +2,7 @@
 title: "Le Theorema Egregium de Gauss - Le summum de la géométrie différentielle applicable même pour manger une pizza"
 description: "Une explication approfondie du « Theorema Egregium » découvert par Carl Friedrich Gauss, de son contexte mathématique jusqu'à son application quotidienne pour manger une pizza."
 slug: "theorema-egregium"
-date: "2026-09-14T13:11:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]
 tags: ["Géométrie", "Gauss", "Théorème de la pizza", "Theorema Egregium", "Géométrie différentielle"]

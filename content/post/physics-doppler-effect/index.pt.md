@@ -2,7 +2,7 @@
 title: "Maravilhas da Física: Efeito Doppler - Da Sirene da Ambulância à Expansão do Universo"
 description: "O mecanismo do Efeito Doppler, onde os sons que se aproximam parecem mais agudos e os que se afastam parecem mais graves, e como isso desvenda os mistérios do universo."
 slug: "physics-doppler-effect"
-date: "2026-09-23T02:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

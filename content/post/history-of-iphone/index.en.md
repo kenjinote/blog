@@ -2,7 +2,7 @@
 title: "The Mobile Revolution: The History of the iPhone - The Device That Reinvented the Phone and Changed the World"
 description: "The history of the iPhone began with Steve Jobs's legendary presentation in 2007. We look back at the trajectory of the smartphone revolution, from the elimination of physical keyboards to the birth of the App Store."
 slug: "history-of-iphone"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

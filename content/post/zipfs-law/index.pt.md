@@ -2,7 +2,7 @@
 title: "A Lei de Zipf - A 'Lei de Potência' que Governa Tudo, Desde a Frequência de Palavras Até as Populações das Cidades"
 description: "Um olhar aprofundado, usando fórmulas e diagramas, sobre a 'Lei de Zipf', a incrível regra matemática que governa o mundo desde a linguagem natural até a escala urbana e a economia."
 slug: "zipfs-law"
-date: "2026-09-14T13:20:38+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["matemática", "ciência-de-dados", "linguística"]
 tags:

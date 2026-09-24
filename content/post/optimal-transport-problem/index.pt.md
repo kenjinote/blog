@@ -2,7 +2,7 @@
 title: "Problema de Transporte Ótimo: A Matemática de Mover Montes de Areia com Esforço Mínimo"
 description: "Consideramos os custos de transporte a partir de quantidades e distâncias, levando à distância de Wasserstein, que mede a diferença entre distribuições."
 slug: "optimal-transport-problem"
-date: 2026-09-20T12:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

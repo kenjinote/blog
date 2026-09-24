@@ -1,7 +1,7 @@
 ---
 title: 'Cara Memulai dan Langkah Menjalankan Sampel pada Library GUI Ringan Rust ''egui'''
 slug: "eguiを使ってみる"
-date: 2023-03-18T10:27:02+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["rust", "egui", "Pustaka GUI"]
 draft: false
 image: "demo.gif"

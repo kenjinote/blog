@@ -1,5 +1,6 @@
 ---
 title: "O Navio de Teseu: O Paradoxo Final Que Questiona as Fronteiras da Identidade"
+date: "2026-09-24T16:08:36+09:00"
 description: "O «Navio de Teseu» é um paradoxo filosófico da Grécia Antiga. Se todas as peças de um navio forem substituídas, ele ainda é o mesmo navio? Exploramos o que é a identidade."
 slug: "paradox-ship-of-theseus"
 categories: ["philosophy"]

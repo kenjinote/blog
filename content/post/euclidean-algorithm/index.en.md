@@ -2,7 +2,7 @@
 title: "The Euclidean Algorithm: Fast GCD Calculation and Humanity's Oldest Algorithm from Antiquity"
 description: "A comprehensive guide to the Euclidean Algorithm for calculating the Greatest Common Divisor (GCD), covering its mechanics, implementation, complexity, Lamé's theorem, the Extended Euclidean Algorithm, and its applications in RSA cryptography."
 slug: "euclidean-algorithm"
-date: 2026-09-20T15:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]

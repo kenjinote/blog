@@ -1,7 +1,7 @@
 ---
 title: 'Quem é Akiko Yosano? Explicando suas obras-primas como ''Midaregami'' e ''Kimi Shinitamou Koto Nakare'' e sua vida'
 slug: "Akiko Yosanoについて"
-date: 2024-07-25T13:08:36+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Yosano Akiko"]
 draft: false
 categories: ["it-technology"]

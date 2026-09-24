@@ -1,7 +1,7 @@
 ---
 title: "蒙地卡羅法與拉斯維加斯法：使用亂數的「最強」演算法"
 image: "eyecatch.jpg"
-date: 2026-09-14T00:00:51+09:00
+date: "2026-09-24T16:08:36+09:00"
 description: "解說使用亂數的兩個代表性機率演算法：蒙地卡羅法與拉斯維加斯法。簡單明瞭地總結了具體的演算法實作及其差異。"
 categories: ["algorithms", "programming"]
 tags: ["亂數", "Monte Carlo", "Las Vegas", "Python", "Mermaid", "Math"]

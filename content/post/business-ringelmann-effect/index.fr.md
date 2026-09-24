@@ -1,5 +1,6 @@
 ---
 title: "【La vérité sur l'effet Ringelmann (paresse sociale) et le guide complet pour maximiser la productivité organisationnelle】"
+date: "2026-09-24T16:08:36+09:00"
 description: "« Les gens fournissent moins d'efforts en groupe ». Nous expliquons en détail les causes de cet « effet Ringelmann (paresse sociale) » découvert par l'agronome français Maximilien Ringelmann, ses effets néfastes sur les entreprises, et les mesures concrètes pour protéger votre organisation."
 slug: "business-ringelmann-effect"
 categories: ["business"]

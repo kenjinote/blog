@@ -2,7 +2,7 @@
 title: "Das Gesetz der großen Zahlen - Warum Casinos immer gewinnen und wie Wahrscheinlichkeiten konvergieren"
 description: "Eine Erklärung des Gesetzes der großen Zahlen, eines entscheidenden Theorems der Wahrscheinlichkeitstheorie. Wir beleuchten die Profitstrukturen von Casinos und strenge mathematische Definitionen (schwaches und starkes Gesetz) anhand von Diagrammen und Python-Code."
 slug: "law-of-large-numbers"
-date: 2026-09-14
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematik", "datenwissenschaft", "gluecksspiel"]
 tags:

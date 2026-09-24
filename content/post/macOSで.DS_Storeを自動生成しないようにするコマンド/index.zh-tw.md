@@ -1,7 +1,7 @@
 ---
 title: '在macOS中停用並停止自動生成.DS_Store的終端機指令'
 slug: "macOSで.DS_Storeを自動生成しないようにする指令"
-date: 2022-09-12T16:03:42+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["macOS"]
 draft: false
 image: "img.webp"

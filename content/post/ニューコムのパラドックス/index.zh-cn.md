@@ -2,7 +2,7 @@
 title: '纽科姆悖论：面对能预见未来的超人，你能赢吗？'
 slug: 'newcombs-paradox'
 description: '“能看见里面的10万日元箱子”和“看不见里面的1亿日元或空箱子”。在能完美预测未来的超人所准备的游戏中，你会选择哪一个？本文将解说自由意志与决定论相互碰撞的现代哲学最大难题。'
-date: '2026-09-10T08:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/newcombs_paradox.jpg'
 math: true
 mermaid: true

@@ -1,7 +1,7 @@
 ---
 title: "WebAssembly (Wasm)를 C++나 Rust에서 출력하여 브라우저에서 실행하기"
 slug: "webassembly-wasm-from-cpp-and-rust"
-date: "2026-09-12T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

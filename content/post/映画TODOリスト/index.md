@@ -1,7 +1,7 @@
 ---
 title: '必見！個人的な映画視聴TODOリストと鑑賞済みおすすめ作品記録'
 slug: "映画TODOリスト"
-date: 2023-04-17T00:34:13+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["映画", "TODO"]
 draft: false
 image: "image.webp"

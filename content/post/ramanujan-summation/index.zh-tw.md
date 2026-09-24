@@ -2,7 +2,7 @@
 title: "拉馬努金求和（Ramanujan Summation） - 違反直覺的數學解釋「1+2+3+... = -1/12」"
 description: "如果將「1+2+3+4+...」無限相加會變成怎樣？以常理思考會發散至無限大，但在數學的特定領域中，卻得出「-1/12」這個令人驚訝的結果。本文將為您詳細解說推導出這個違反直覺結果的「拉馬努金求和」，並介紹其數學背景與在物理學上的應用。"
 slug: "ramanujan-summation"
-date: "2026-09-14T13:20:38+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "physics"]
 tags:

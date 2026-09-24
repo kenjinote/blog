@@ -2,7 +2,7 @@
 title: "Pengenalan Pemrograman Dinamis (DP) dan Masalah Terkenal (Knapsack, Fibonacci)"
 description: "Hambatan algoritma \"Pemrograman Dinamis (DP)\". Menggunakan barisan Fibonacci dan masalah knapsack sebagai contoh, kami menjelaskan perbedaan antara rekursi memoisasi dan metode bottom-up dengan cara yang mudah dipahami."
 slug: "dynamic-programming-dp-introduction-knapsack-fibonacci"
-date: 2026-09-22T04:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "dynamic-programming", "dp", "knapsack", "optimization"]

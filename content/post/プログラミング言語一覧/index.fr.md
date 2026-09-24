@@ -1,7 +1,7 @@
 ---
 title: 'Des majeurs aux mineurs ! Liste des langages de programmation et résumé de leurs caractéristiques'
 slug: "Langage de programmation一覧"
-date: 2023-04-01T03:45:53+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Langage de programmation"]
 draft: true
 image: "img.webp"

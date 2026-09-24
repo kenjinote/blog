@@ -5,7 +5,7 @@
 
 title: '[Windows 11/10] 작업 효율이 극적으로 오르는 유용한 단축키·팁 모음'
 slug: "Windows の바로 가기・팁集"
-date: 2022-09-18T23:49:29+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Windows","팁","단축키"]
 draft: false
 image: "img.webp"

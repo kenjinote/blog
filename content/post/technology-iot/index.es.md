@@ -2,7 +2,7 @@
 title: "Internet de las Cosas: Cómo funciona el IoT - Detrás de las escenas de un mundo conectado"
 description: "Desde electrodomésticos y automóviles hasta maquinaria de fábrica, todo se está conectando a Internet a través del 'IoT (Internet de las Cosas)'. Explicaremos cómo la tecnología de sensores y las redes de comunicación recopilan datos y colaboran con la IA para crear valor."
 slug: "technology-iot"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

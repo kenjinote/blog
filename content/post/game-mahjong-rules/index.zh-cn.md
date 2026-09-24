@@ -2,7 +2,7 @@
 title: "桌游的极致：麻将的基本规则与役种解说 - 4人交织的情报战"
 description: "由136张牌交织而成的东方智慧桌游“麻将”。我们将为您解说这款运气与实力达到绝妙平衡的游戏的基本结构、面子与雀头的组成方法，以及具有代表性的“役”。"
 slug: "game-mahjong-rules"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

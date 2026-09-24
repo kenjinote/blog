@@ -1,7 +1,7 @@
 ---
 title: 'Utilisation et attrait des modèles de pages Web esthétiques (html5up)'
 slug: "かっこいい Web ページModèle（html5up）"
-date: 2023-04-17T00:26:55+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["html5up", "Modèle de page Web"]
 draft: false
 image: "img.webp"

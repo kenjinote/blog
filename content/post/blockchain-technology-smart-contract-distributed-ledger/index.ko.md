@@ -2,7 +2,7 @@
 title: "블록체인 기술과 스마트 컨트랙트 (분산 원장의 원리)"
 description: "블록체인의 근본 원리, 합의 알고리즘, 스마트 컨트랙트의 구현을 탐구합니다."
 slug: "blockchain-technology-smart-contract-distributed-ledger"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "blockchain"

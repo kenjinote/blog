@@ -1,7 +1,7 @@
 ---
 title: '[Windows 11/10] Kumpulan Tombol Pintasan dan Trik Praktis yang Meningkatkan Efisiensi Kerja secara Drastis'
 slug: "Windows のPintasan・Trik Kecil集"
-date: 2022-09-18T23:49:29+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Windows", "Trik", "Pintasan"]
 draft: false
 image: "img.webp"

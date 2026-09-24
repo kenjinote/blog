@@ -1,7 +1,7 @@
 ---
 title: '減輕程式設計師眼睛疲勞的小工具與螢幕設定'
 slug: "programmer-eye-strain-relief"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

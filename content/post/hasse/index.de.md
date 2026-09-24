@@ -2,7 +2,7 @@
 title: "Helmut Hasse: Der Zahlentheoretiker, der das Lokale und Globale verband"
 description: "Ein tiefer Einblick in das Leben von Helmut Hasse, einem der führenden Mathematiker des 20. Jahrhunderts, und seine mathematischen Errungenschaften einschließlich des Lokal-Global-Prinzips und elliptischer Kurven."
 slug: "hasse"
-date: "2026-09-20T20:10:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematik"

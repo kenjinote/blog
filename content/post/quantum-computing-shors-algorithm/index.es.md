@@ -2,7 +2,7 @@
 title: "Cómo funcionan las computadoras cuánticas y el algoritmo de Shor: ¿Por qué la computación cuántica puede romper la criptografía?"
 description: "Una explicación profunda desde los fundamentos de la computación cuántica hasta los mecanismos matemáticos y mecánico-cuánticos del algoritmo de Shor (Shor's Algorithm), que representa una amenaza para la criptografía RSA. Explicación detallada con ejemplos de implementación usando Qiskit y perspectivas sobre la criptografía poscuántica."
 slug: "quantum-computing-shors-algorithm"
-date: "2026-09-21T02:35:46+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "technology"

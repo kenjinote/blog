@@ -2,7 +2,7 @@
 title: "物理法則と身近な技術: RFIDとNFC（おサイフケータイ）の仕組み - 電磁誘導による非接触通信"
 description: "SuicaやPASMO、おサイフケータイを改札にタッチするだけで決済が完了する魔法のような技術。その裏にある「電磁誘導」という物理法則とNFCの通信規格について解説します。"
 slug: "physics-rfid-nfc"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

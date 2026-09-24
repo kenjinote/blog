@@ -1,5 +1,6 @@
 ---
 title: "Le paradoxe de Galilée : le mystère mathématique tissé par l'infini"
+date: "2026-09-24T16:08:36+09:00"
 description: "Le nombre d'\"entiers naturels\" et de \"leurs carrés\" est-il le même ? Une explication approfondie des profondes réflexions de Galilée sur l'\"infini\" dans ses dernières années, et de leur lien avec la théorie des ensembles moderne. Un article long qui explore les merveilles et le charme de l'infini."
 slug: "paradox-galileos-paradox"
 categories: ["science"]

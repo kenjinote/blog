@@ -1,7 +1,7 @@
 ---
 title: 'ह्यूगो का उपयोग करके स्टेटिक साइट जेनरेटर का परिचय (वर्डप्रेस से माइग्रेशन गाइड)'
 slug: "hugo-static-site-generator-wordpress-migration"
-date: "2026-09-13T02:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -116,7 +116,7 @@ mysite/
 ```yaml
 ---
 title: "ह्यूगो टैक्सोनॉमी (Taxonomy) को समझना"
-date: 2026-09-13T10:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 categories:
   - "तकनीकी व्याख्या"

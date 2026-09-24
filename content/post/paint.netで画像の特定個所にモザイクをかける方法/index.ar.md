@@ -1,7 +1,7 @@
 ---
 title: 'شرح بسيط لكيفية وضع فسيفساء (Mosaic) على جزء معين من الصورة في paint.net'
 slug: "paint.netでصورةの特定個所にモザイクをかける方法"
-date: 2023-04-11T16:33:10+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["paint.net", "حدود", "صورة"]
 draft: false
 image: "img.webp"

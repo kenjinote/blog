@@ -1,7 +1,7 @@
 ---
 title: 'Windows 內建「剪取工具」的使用方法及螢幕錄影、擷取教學'
 slug: "Snipping Toolの使い方"
-date: 2024-04-01T23:19:45+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Snipping Tool", "圖片", "影片", "螢幕截圖", "錄影", "擷取"]
 draft: false
 image: "img.webp"

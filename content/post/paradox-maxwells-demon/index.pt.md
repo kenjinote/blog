@@ -1,5 +1,6 @@
 ---
 title: "O Demônio de Maxwell: O Último Experimento Mental Contra a Segunda Lei da Termodinâmica e Como a Informação se Transforma em Calor"
+date: "2026-09-24T16:08:36+09:00"
 description: "O paradoxo mais famoso da história da física, o \"Demônio de Maxwell\". Como surgiu esse demônio, que parecia quebrar a Segunda Lei da Termodinâmica, e como ele foi derrotado após mais de um século? Uma explicação detalhada sobre a trajetória rumo à termodinâmica da informação."
 slug: "paradox-maxwells-demon"
 categories: ["science"]

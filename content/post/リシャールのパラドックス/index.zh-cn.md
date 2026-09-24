@@ -2,7 +2,7 @@
 title: '理查德悖论：无限的小数与“对角线论证”引发的矛盾'
 slug: 'richards-paradox'
 description: '列出所有能用语言定义出来的实数，却又创造出了一个不同于它们的新实数。本文将通俗易懂地解说动摇了数学基础的“理查德悖论”，以及为了打破它而产生的哥德尔的灵感。'
-date: '2026-09-10T12:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/richards_paradox.jpg'
 math: true
 mermaid: true

@@ -2,7 +2,7 @@
 title: "Secretary Problem / Optimal Stopping - The '1/e Law' for Hiring the Best Person"
 description: "What is the Secretary Problem? Through this classic example of the optimal stopping problem, we explain in detail the '1/e law (approx. 37% rule)', a mathematical approach for making the best choices under uncertainty. We explore how to apply it to hiring and everyday decision-making, with mathematical proofs and simulations."
 slug: "secretary-problem"
-date: "2026-09-14T13:20:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "algorithms", "decision-making"]
 tags:

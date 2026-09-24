@@ -1,7 +1,7 @@
 ---
 title: "Wie lang ist die Küstenlinie Großbritanniens?: Das Küstenlinien-Paradoxon"
 description: "Je kürzer der Maßstab, mit dem man misst, desto länger wird die Küstenlinie, bis ins Unendliche. Ein berühmtes Paradoxon, das die Tür zur fraktalen Geometrie öffnete."
-date: 2026-09-10T21:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 slug: "coastline-paradox"
 image: "img/coastline_paradox.jpg"

@@ -2,7 +2,7 @@
 title: "Diagonalisierung und Jordansche Normalform: Die ultimative Methode zur Vereinfachung komplexer Matrizen"
 description: "Eine detaillierte Erklärung der Diagonalisierung in der linearen Algebra und der Jordanschen Normalform für nicht-diagonalisierbare Matrizen, einschließlich intuitiver Bedeutung und Anwendungen."
 slug: "diagonalization-and-jordan-normal-form"
-date: "2026-09-20T14:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["linear-algebra", "matrix", "eigenvalue", "jordan-normal-form"]

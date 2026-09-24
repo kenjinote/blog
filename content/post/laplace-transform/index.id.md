@@ -2,7 +2,7 @@
 title: "Transformasi Laplace: Teknik Mengubah Persamaan Diferensial yang Sulit Menjadi Persamaan Aljabar"
 description: "Penjelasan menyeluruh dari dasar-dasar transformasi Laplace hingga penerapannya dalam persamaan diferensial. Kita menjelajahi esensi dari alat matematika yang kuat ini yang menjembatani antara domain waktu dan domain frekuensi kompleks."
 slug: "laplace-transform"
-date: "2026-09-20T14:40:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matematika"

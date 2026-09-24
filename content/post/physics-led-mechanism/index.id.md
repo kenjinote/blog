@@ -2,7 +2,7 @@
 title: "Keajaiban Fisika: Mekanisme LED - Mengapa Bisa Menyala? Keajaiban Pengembangan LED Biru"
 description: "Prinsip emisi cahaya LED yang sangat penting untuk pencahayaan dan layar modern, serta sejarah pengembangan LED biru yang memenangkan Hadiah Nobel."
 slug: "physics-led-mechanism"
-date: "2026-09-23T02:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

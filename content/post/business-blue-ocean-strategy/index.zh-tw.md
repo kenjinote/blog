@@ -1,5 +1,6 @@
 ---
 title: "【藍海策略：創造無競爭未開發市場的終極商業理論】"
+date: "2026-09-24T16:08:36+09:00"
 description: "【徹底解說如何擺脫紅海（血腥的競爭市場），開拓無競爭的全新市場空間（藍海）的具體框架與實踐策略。】"
 slug: "business-blue-ocean-strategy"
 categories: ["business"]

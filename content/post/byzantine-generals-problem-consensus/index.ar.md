@@ -2,7 +2,7 @@
 title: "مشكلة الجنرالات البيزنطيين وعمق خوارزميات الإجماع: آليات عمل Paxos و Raft و BFT"
 description: "نتعمق في خوارزميات الإجماع التي تشكل أساس الأنظمة الموزعة، بدءًا من أصول مشكلة الجنرالات البيزنطيين مرورًا بـ Paxos و Raft، وصولاً إلى BFT المقاومة للعقد الخبيثة، مع النظرية والمعادلات الرياضية وتنفيذ الكود."
 slug: byzantine-generals-problem-consensus
-date: 2026-09-21T02:45:54+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - distributed-systems

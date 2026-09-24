@@ -2,7 +2,7 @@
 title: "Las maravillas de la física: Cómo funciona el Bluetooth - Salto de frecuencia y emparejamiento"
 description: "El Bluetooth es esencial en los dispositivos inalámbricos modernos. ¿Por qué se conecta de forma estable sin interferencias? Lo desentrañamos a partir de una tecnología de origen militar llamada salto de frecuencia."
 slug: "physics-bluetooth"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

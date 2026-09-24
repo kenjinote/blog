@@ -1,7 +1,7 @@
 ---
 title: '장시간 코딩에! 엔지니어에게 추천하는 기계식 키보드 5선'
 slug: "engineer-mechanical-keyboard-recommendations"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

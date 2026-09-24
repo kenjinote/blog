@@ -2,7 +2,7 @@
 title: "下一代计算机：量子计算机的原理 - 「0」与「1」的叠加将颠覆世界"
 description: "据称能在几秒钟内解开超级计算机需要数万年才能完成的计算的「量子计算机」。本文将解说利用量子力学的神奇现象「叠加」与「纠缠」，一种全新的计算范式。"
 slug: "technology-quantum-computer"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

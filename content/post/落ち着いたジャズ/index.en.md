@@ -1,7 +1,7 @@
 ---
 title: 'Perfect for Relaxing Time: Recommended Playlist of Calm Jazz'
 slug: "落ち着いたJazz"
-date: 2022-09-08T17:40:26+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Jazz", "Music"]
 draft: false
 image: "images/img.webp"

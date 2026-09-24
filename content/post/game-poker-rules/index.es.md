@@ -2,7 +2,7 @@
 title: "Deporte mental: Reglas del póker (Texas Hold'em) y teoría de la probabilidad - Un juego donde se cruzan la suerte y la habilidad"
 description: "El 'Texas Hold'em', el deporte mental definitivo con premios de torneos mundiales que superan los 10 mil millones de yenes. Explicamos la teoría de posiciones, el cálculo de probabilidades y la base matemática del farol, demostrando que no es un simple juego de azar."
 slug: "game-poker-rules"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

@@ -1,7 +1,7 @@
 ---
 title: 'Pengenalan Generator Situs Statis Menggunakan Hugo (Prosedur Migrasi dari WordPress)'
 slug: "hugo-static-site-generator-wordpress-migration"
-date: "2026-09-13T02:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -116,7 +116,7 @@ Setiap file artikel di Hugo memiliki blok metadata yang disebut "Front Matter" d
 ```yaml
 ---
 title: "Memahami Taksonomi Hugo"
-date: 2026-09-13T10:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 categories:
   - "Penjelasan Teknis"

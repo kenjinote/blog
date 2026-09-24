@@ -2,7 +2,7 @@
 title: "Emmy Noether: Die Mutter der modernen Algebra und das Symmetrietheorem"
 description: "Eine ausführliche Erklärung des Lebens und der Leistungen von Emmy Noether, einem genialen Mathematiker, der die Grundlagen der modernen Algebra legte und das Noether-Theorem in der Physik bewies."
 slug: "noether"
-date: "2026-09-20T20:10:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematik", "Biografie"]
 tags: ["Emmy Noether", "Abstrakte Algebra", "Physik", "Frauen in MINT"]

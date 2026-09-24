@@ -2,7 +2,7 @@
 title: "História do SO: O Nascimento do Linux e a Revolução do Código Aberto"
 description: "A história do Linux, que começou como o hobby de um estudante e acabou dominando os servidores do mundo todo e os smartphones (Android)."
 slug: "history-of-linux"
-date: "2026-09-23T02:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

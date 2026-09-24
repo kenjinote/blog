@@ -2,7 +2,7 @@
 title: "Technologie réseau : Explication de la technologie P2P (Peer-to-Peer) - La puissance des systèmes distribués"
 description: "La technologie « P2P », où des ordinateurs individuels communiquent d'égal à égal sans dépendre d'un serveur spécifique. Nous expliquons en profondeur de sa théorie fondamentale jusqu'aux idées menant aux blockchains modernes."
 slug: "history-of-p2p"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

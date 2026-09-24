@@ -2,7 +2,7 @@
 title: "GraphQL vs REST API (Élimination de la sur-récupération et sécurité du typage)"
 description: "Les limites des API REST et le développement front-end flexible et au typage sûr apporté par GraphQL."
 slug: "graphql-vs-rest-api-overfetching-type-safety"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "backend"

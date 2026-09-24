@@ -2,7 +2,7 @@
 title: "Keuangan dan Kriptografi: Sejarah Uang Elektronik - Digitalisasi Mata Uang dan Evolusi Kriptografi"
 description: "Dari koin dan uang kertas fisik menjadi data digital. Menelusuri sejarah evolusi uang elektronik mulai dari eksperimen awal David Chaum, lahirnya Suica, hingga aset kripto."
 slug: "history-electronic-money"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

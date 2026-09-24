@@ -2,7 +2,7 @@
 title: "貝氏定理：用「新證據」更新機率，AI與統計的核心"
 description: "深入解釋貝氏定理如何根據新證據更新機率，其數學背景以及在人工智慧和機器學習中的應用。"
 slug: "bayes-theorem"
-date: "2026-09-20T15:15:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "數學"

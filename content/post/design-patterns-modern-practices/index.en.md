@@ -2,7 +2,7 @@
 title: "Design Patterns Reconsidered: Is GoF Outdated? Modern Best Practices"
 description: "The GoF design patterns introduced in 1994. Are they still relevant in today's modern programming languages? We dive deep into modern design best practices, incorporating the impact of functional programming and new paradigms."
 slug: "design-patterns-modern-practices"
-date: "2026-09-21T02:58:36+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "architecture"

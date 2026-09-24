@@ -9,7 +9,7 @@
 
 title: '양자 컴퓨터란? 중첩 및 양자 얽힘 등 궁극의 계산 원리를 기초부터 설명'
 slug: "quantum-computer-basics"
-date: 2026-09-05T22:10:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ['양자 컴퓨터', '물리학', '테크놀로지']
 image: "eyecatch.jpg"
 categories: ["math-cryptography-quantum"]

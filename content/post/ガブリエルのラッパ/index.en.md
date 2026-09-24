@@ -1,7 +1,7 @@
 ---
 title: "Can it be filled with paint, but not painted on the surface?: Gabriel's Horn"
 description: "A strange paradox of a solid figure brought about by calculus, having both a 'finite volume' and an 'infinite surface area' at the same time."
-date: 2026-09-10T21:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 slug: "gabriels-horn"
 image: "img/gabriels_horn.jpg"

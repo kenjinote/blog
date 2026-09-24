@@ -2,7 +2,7 @@
 title: "图论基础：用点和线表示网络，现代社会的必备工具"
 description: "全面讲解图论的基础知识。从哥尼斯堡七桥问题到最短路径算法（如迪杰斯特拉算法），再到Python实现以及现代机器学习应用，深入学习网络的数学原理。"
 slug: "basics-of-graph-theory"
-date: "2026-09-20T15:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

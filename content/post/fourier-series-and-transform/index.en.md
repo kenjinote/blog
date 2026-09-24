@@ -2,7 +2,7 @@
 title: "Fourier Series and Fourier Transform: Decomposing Any Complex Wave into Sums of Sines and Cosines"
 description: "A detailed explanation of 'Fourier Series', which expresses complex waveforms as a superposition of simple sine and cosine waves, and its extension to non-periodic functions, the 'Fourier Transform'."
 slug: "fourier-series-and-transform"
-date: "2026-09-20T14:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

@@ -2,7 +2,7 @@
 title: "奥古斯丁-路易·柯西：严密分析学之父及其波澜壮阔的一生"
 description: "详细探讨法国伟大的数学家奥古斯丁-路易·柯西的一生，以及他在分析学和复变函数论等领域取得的众多数学成就。"
 slug: "cauchy"
-date: 2026-09-20T19:20:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

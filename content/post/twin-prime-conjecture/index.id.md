@@ -2,7 +2,7 @@
 title = "Konjektur Bilangan Prima Kembar (Twin Prime Conjecture) - Apakah Pasangan Bilangan Prima dengan Selisih 2 Ada Tak Terhingga?"
 description = "Penjelasan rinci tentang Konjektur Bilangan Prima Kembar, sebuah masalah tak terpecahkan dalam matematika, mencakup sejarah, penyelesaian parsial, dan tren penelitian terbaru."
 slug = "twin-prime-conjecture"
-date = "2026-09-14T13:04:13+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image = "eyecatch.jpg"
 categories = ["mathematics"]
 tags = ["Prime Numbers", "Number Theory", "Unsolved Problems"]

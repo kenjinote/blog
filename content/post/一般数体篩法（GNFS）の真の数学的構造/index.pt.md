@@ -1,7 +1,7 @@
 ---
 title: 'Qual é a verdadeira estrutura matemática do General Number Field Sieve (GNFS)? O mecanismo de fatoração de primos usando homomorfismos'
 slug: "一般数体篩法（GNFS）の真のMatemática的構造"
-date: 2026-09-05T02:26:13+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Matemática", "Criptografia", "RSA", "GNFS"]
 draft: false
 image: "rsa_encryption_break_1788542156523.webp"

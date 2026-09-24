@@ -1,7 +1,7 @@
 ---
 title: "能用油漆填满，却无法涂满表面？：加百列的号角"
 description: "同时拥有“有限的体积”和“无限的表面积”，微积分带来的奇妙立体悖论。"
-date: 2026-09-10T21:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 slug: "gabriels-horn"
 image: "img/gabriels_horn.jpg"

@@ -1,7 +1,7 @@
 ---
 title: '【Grafik PQC】Vergleich der wichtigsten Algorithmen für die Post-Quanten-Kryptographie'
 slug: "post-quantum-cryptography-algorithms-comparison"
-date: "2026-09-11T07:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

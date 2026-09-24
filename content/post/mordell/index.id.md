@@ -2,7 +2,7 @@
 title: "Louis Mordell: Raksasa Teori Bilangan dan Perjalanannya"
 description: "Penjelasan terperinci tentang kehidupan dan kontribusi matematika Louis Mordell, yang dikenal karena karya perintisnya pada persamaan Diophantine, kurva eliptik, dan 'Konjektur Mordell'."
 slug: "mordell"
-date: 2026-09-20T20:10:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["matematika", "biografi"]
 tags: ["teori bilangan", "Mordell", "kurva eliptik", "persamaan diophantine"]

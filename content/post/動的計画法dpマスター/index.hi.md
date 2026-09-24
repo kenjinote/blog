@@ -1,7 +1,7 @@
 ---
 title: '【एल्गोरिदम सचित्र】डायनेमिक प्रोग्रामिंग (DP) में पूरी तरह से महारत हासिल करें'
 slug: "dp-algorithm-master-guide"
-date: "2026-09-12T15:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

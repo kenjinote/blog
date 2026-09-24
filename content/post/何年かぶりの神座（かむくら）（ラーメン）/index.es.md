@@ -5,7 +5,7 @@
 
 title: '¡De vuelta a "Kamukura" después de años! Disfrutando del recomendado Ramen de Kimchi y Cebolleta'
 slug: "何年かぶりのKamukura（かむくら）（Ramen）"
-date: 2022-09-09T21:45:19+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Ramen", "Kamukura"]
 draft: false
 image: "images/img2.webp"

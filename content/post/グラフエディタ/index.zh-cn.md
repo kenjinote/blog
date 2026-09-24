@@ -1,7 +1,7 @@
 ---
 title: '在浏览器中轻松制图！免费便捷的Web图表编辑器使用方法'
 slug: "图エディタ"
-date: 2022-10-13T23:31:11+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["tools", "图"]
 draft: false
 image: "img.webp"

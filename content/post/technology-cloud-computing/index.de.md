@@ -2,7 +2,7 @@
 title: "Vom Besitz zur Nutzung: Wie Cloud Computing funktioniert - Ein großer Wandel in der IT-Infrastruktur"
 description: "Wie Cloud Computing wie Amazon Web Services (AWS) und Google Cloud (GCP) die IT für Unternehmen und Einzelpersonen verändert hat. Wir erklären die Unterschiede zwischen IaaS, PaaS und SaaS sowie die Grundlagen der Virtualisierungstechnologie."
 slug: "technology-cloud-computing"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -2,7 +2,7 @@
 title: "Historia y evolución de la gestión del estado (Comparación entre Redux, Context, Recoil, Zustand)"
 description: "Evolución histórica de las bibliotecas de gestión del estado centradas en React y comparación de cada arquitectura."
 slug: "state-management-history-redux-context-recoil-zustand"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

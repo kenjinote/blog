@@ -2,7 +2,7 @@
 title: "تاريخ أنظمة التشغيل: سلالة Windows (من MS-DOS إلى اكتمال بنية NT)"
 description: "تاريخ تطور Windows بدءاً من واجهة سطر الأوامر (CUI) في MS-DOS، مروراً بالانتقال إلى واجهة المستخدم الرسومية (GUI)، وصولاً إلى بنية NT القوية."
 slug: "history-of-windows"
-date: "2026-09-23T02:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

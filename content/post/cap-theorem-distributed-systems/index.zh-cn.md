@@ -2,7 +2,7 @@
 title: "CAP定理与分布式系统：分布式数据库的本质困境"
 description: "深入探讨分布式系统中最重要的原则——CAP定理，从其定义、证明，到PACELC定理的扩展，以及在实际分布式数据库中的实现。"
 slug: "cap-theorem-distributed-systems"
-date: "2026-09-21T00:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "分布式系统"

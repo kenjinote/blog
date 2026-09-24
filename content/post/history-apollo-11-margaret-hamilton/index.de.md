@@ -1,5 +1,6 @@
 ---
 title: "Der Code, der die Menschheit zum Mond führte: Margaret Hamilton und die Softwareentwicklung von Apollo 11"
+date: "2026-09-24T16:08:36+09:00"
 description: "Im Jahr 1969 führte Apollo 11 die erste erfolgreiche bemannte Mondlandung durch. Dahinter stand robuste Software, entwickelt von Margaret Hamilton und ihrem Team. Wir erklären ihre Errungenschaften, die den Grundstein für die moderne Softwareentwicklung legten, sowie den vollständigen Quellcode des Apollo Guidance Computer (AGC)."
 slug: "history-apollo-11-margaret-hamilton"
 categories: ["history"]

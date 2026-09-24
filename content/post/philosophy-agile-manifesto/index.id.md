@@ -1,5 +1,6 @@
 ---
 title: "【Di Balik Agile Manifesto】Jejak Revolusi yang Membangun Fondasi Pengembangan Perangkat Lunak Modern"
+date: "2026-09-24T16:08:36+09:00"
 description: "Pada tahun 2001, 17 ahli teknologi berkumpul di Snowbird, Utah dan menyusun \"Agile Software Development Manifesto\". Artikel ini akan mendalami latar belakang sejarah, rasa krisis pada saat itu, serta filosofi dan esensi sebenarnya yang harus dipelajari oleh organisasi pengembangan modern dari Agile."
 slug: "philosophy-agile-manifesto"
 categories: ["philosophy"]

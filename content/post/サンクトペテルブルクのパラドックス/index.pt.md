@@ -2,7 +2,7 @@
 title: 'Paradoxo de São Petersburgo: Quanto você pagaria por uma aposta com valor esperado "infinito"?'
 slug: 'st-petersburg-paradox'
 description: 'Uma aposta que matematicamente deveria lhe render "lucro infinito". No entanto, ninguém pagaria uma grande quantia por ela na realidade. Explicamos esse paradoxo histórico que destacou a divergência entre a teoria das probabilidades e a psicologia humana (utilidade), tornando-se a base da economia moderna.'
-date: '2026-09-10T05:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/st_petersburg.jpg'
 math: true
 mermaid: true

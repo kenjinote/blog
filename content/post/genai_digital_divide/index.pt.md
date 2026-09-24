@@ -2,7 +2,7 @@
 title: "O Agravamento da 'Nova Exclusão Digital' Trazido pela Evolução da IA Generativa"
 description: "Uma reflexão profunda sobre a nova exclusão digital, que passou do acesso a hardware e internet para a 'capacidade de prompting e orquestração', devido ao rápido desenvolvimento das tecnologias de IA."
 slug: "generative-ai-digital-divide"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

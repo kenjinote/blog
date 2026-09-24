@@ -2,7 +2,7 @@
 title: "CI/CD 파이프라인과 GitHub Actions: 지속적 통합의 베스트 프랙티스"
 description: "소프트웨어 개발 수명 주기를 가속화하는 CI/CD 원칙과 GitHub Actions를 사용한 실용적인 파이프라인 구축 노하우를 망라합니다."
 slug: "cicd-pipeline-github-actions-best-practices"
-date: 2026-09-21T09:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - "devops"

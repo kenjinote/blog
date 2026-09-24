@@ -1,7 +1,7 @@
 ---
 title: "Théorèmes d'incomplétude de Gödel : la preuve mathématique des « vérités absolument indémontrables »"
 image: "eyecatch.jpg"
-date: 2026-09-14T00:00:51+09:00
+date: "2026-09-24T16:08:36+09:00"
 description: "Une explication claire du théorème d'incomplétude de Gödel, un théorème historique démontrant les limites des mathématiques, ainsi que de sa signification et de ses mécanismes de preuve, le tout illustré par des exemples concrets et des schémas."
 categories: ["mathematics", "computer-science"]
 tags:

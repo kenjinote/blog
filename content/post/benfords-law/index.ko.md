@@ -2,7 +2,7 @@
 title: "벤포드의 법칙: 1로 시작하는 숫자가 많은 이유는 무엇일까?"
 description: "회계 부정 발견에도 사용되는, 자연계의 데이터에 숨겨진 신비한 법칙을 해설합니다."
 slug: "benfords-law"
-date: "2026-09-15T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "수학"

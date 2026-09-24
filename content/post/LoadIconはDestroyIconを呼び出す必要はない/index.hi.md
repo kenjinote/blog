@@ -1,7 +1,7 @@
 ---
 title: 'LoadIcon फ़ंक्शन के साथ प्राप्त आइकन को DestroyIcon की आवश्यकता क्यों नहीं है'
 slug: "LoadIconはDestroyIconを呼び出す必要はない"
-date: 2024-04-19T01:55:17+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["आइकन", "LoadIcon", "DestroyIcon", "विंडोज़ प्रोग्रामिंग"]
 draft: false
 categories: ["programming"]

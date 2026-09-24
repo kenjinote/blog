@@ -1,7 +1,7 @@
 ---
 title: 'Go语言（Golang）的安装步骤与首次程序运行方法'
 slug: "Goを安装する方法"
-date: 2022-09-10T00:48:17+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Go","安装"]
 draft: false
 image: "images/cover.webp"

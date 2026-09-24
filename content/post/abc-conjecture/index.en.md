@@ -2,7 +2,7 @@
 title: "The ABC Conjecture - Challenging a Super Difficult Problem in Number Theory via Inter-Universal Teichmüller Theory"
 description: "An in-depth look at the overview of the ABC Conjecture and the groundbreaking approach by Professor Shinichi Mochizuki using Inter-Universal Teichmüller Theory (IUT Theory)."
 slug: "abc-conjecture"
-date: 2026-09-14T13:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]
 tags: ["ABC Conjecture", "Number Theory", "IUT Theory", "Shinichi Mochizuki"]

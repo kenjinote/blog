@@ -2,7 +2,7 @@
 title: "حساب لامدا (Lambda Calculus) وأصول البرمجة الوظيفية: من نظرية ألونزو تشيرش إلى Lisp وHaskell"
 description: "كيف تطور حساب لامدا، وهو النظرية الأساسية للحوسبة، إلى لغات البرمجة الوظيفية الحديثة؟ شرح مفصل للتاريخ والأساس الرياضي من نظرية ألونزو تشيرش إلى ولادة Lisp وHaskell."
 slug: lambda-calculus-functional-programming
-date: 2026-09-21T02:35:46+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - علوم الحاسوب

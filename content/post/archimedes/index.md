@@ -2,7 +2,7 @@
 title: "古代ギリシャの天才：アルキメデスの生涯と数学的業績"
 description: "シラクサのアルキメデス。彼の「エウレカ」の逸話から、円周率の計算、球と円柱の定理、そして微積分の先駆けとなる「方法」まで、古代ギリシャ最大の数学者・物理学者の生涯と業績を深く掘り下げます。"
 slug: "archimedes"
-date: "2026-09-20T18:40:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Archimedes", "Ancient Greece", "Geometry", "Physics", "Calculus"]

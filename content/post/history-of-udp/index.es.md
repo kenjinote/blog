@@ -2,7 +2,7 @@
 title: "Tecnología de redes: Explicación técnica de UDP - Comunicación sin conexión en busca de la velocidad"
 description: "¿Por qué podemos comunicarnos sin retardo en juegos en línea y videollamadas? Explicamos el funcionamiento del protocolo UDP, que abandonó la 'garantía de entrega' para obtener una 'velocidad abrumadora'."
 slug: "history-of-udp"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

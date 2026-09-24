@@ -2,7 +2,7 @@
 title: "所有から利用へ: クラウドコンピューティングの仕組み - ITインフラの大転換"
 description: "Amazon Web Services (AWS) や Google Cloud (GCP) などのクラウドコンピューティングは、企業や個人のITをどう変えたのか。IaaS, PaaS, SaaSの違いや、仮想化技術の基礎を解説します。"
 slug: "technology-cloud-computing"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

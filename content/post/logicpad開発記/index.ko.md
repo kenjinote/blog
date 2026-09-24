@@ -1,7 +1,7 @@
 ---
 title: 'LogicPad 개발기에서 배우다: 개인 개발 Windows 앱을 출시하기까지의 궤적'
 slug: "logicpad-windows-app-development-journey"
-date: "2026-09-13T04:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

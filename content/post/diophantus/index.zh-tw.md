@@ -2,7 +2,7 @@
 title: "丟番圖：代數之父及其偉大遺產"
 description: "詳細解讀古希臘數學家丟番圖的生平、代表作《算術》、丟番圖方程，以及隱藏在其墓誌銘中的謎題。"
 slug: "diophantus"
-date: 2026-09-20T18:40:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "數學"

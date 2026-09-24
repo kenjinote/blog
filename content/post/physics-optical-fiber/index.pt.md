@@ -2,7 +2,7 @@
 title: "Leis da Física e Tecnologia do Dia a Dia: Como Funciona a Fibra Óptica - A Internet Ultrarrápida Sustentada pela Reflexão Total"
 description: "Um fio fino de vidro que se arrasta pelo fundo do mar e conecta os continentes do mundo: a 'fibra óptica'. Explicaremos a física da 'reflexão total', a razão pela qual a luz viaja através de tubos de vidro curvos sem vazar, e como funciona a comunicação óptica que sustenta a internet."
 slug: "physics-optical-fiber"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

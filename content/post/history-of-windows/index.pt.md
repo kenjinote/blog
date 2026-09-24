@@ -2,7 +2,7 @@
 title: "História do OS: A Linhagem do Windows (Do MS-DOS à Conclusão da Arquitetura NT)"
 description: "A história da evolução do Windows, começando pelo MS-DOS com interface CUI, passando para a transição para GUI, até chegar à robusta arquitetura NT."
 slug: "history-of-windows"
-date: "2026-09-23T02:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

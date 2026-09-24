@@ -1,7 +1,7 @@
 ---
 title: 'How to Enable HTML Tags in Hugo (config.toml Settings)'
 slug: "HUGOでHTMLタグを使う"
-date: 2023-01-17T19:20:32+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["HUGO", "HTML"]
 draft: false
 image: "img.webp"

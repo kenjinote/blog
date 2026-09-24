@@ -2,7 +2,7 @@
 title: "Cara Kerja LLM (Large Language Models) dan Aplikasinya dalam Pemrograman (Model Transformer, Prompt Engineering)"
 description: "Membahas secara mendalam mekanisme matematis arsitektur Transformer yang menjadi fondasi Large Language Models (LLM), teknik lanjutan prompt engineering, hingga penerapannya dalam pemrograman dunia nyata."
 slug: "large-language-models-llm-transformer-prompt-engineering"
-date: "2026-09-21T14:51:08+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["ai", "llm", "transformer", "prompt-engineering"]

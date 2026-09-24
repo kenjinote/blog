@@ -1,7 +1,7 @@
 ---
 title: 'Qu''est-ce que le principe de Kerckhoffs ? Une explication claire d''un concept clé soutenant la sécurité de la cryptographie'
 slug: "Principe de Kerckhoffs"
-date: 2025-04-16T23:53:08+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Principe de Kerckhoffs", "Cryptographie"]
 draft: false
 image: "img_2.webp"

@@ -2,7 +2,7 @@
 title: "Teknologi Jaringan: Penjelasan Teknis BitTorrent - Mekanisme Distribusi Terdesentralisasi File Raksasa Secara Efisien"
 description: "Meskipun puluhan ribu orang mengunduh citra OS berukuran beberapa gigabyte secara bersamaan, server tidak akan down. Kami menjelaskan algoritma pembagian file dan pertukaran data yang revolusioner dari karya agung P2P 'BitTorrent'."
 slug: "network-bittorrent"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

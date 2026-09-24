@@ -1,7 +1,7 @@
 ---
 title: 'सॉफ्टवेयर आर्किटेक्चर की मूल बातें: क्लीन आर्किटेक्चर क्या है?'
 slug: "clean-architecture-basics-guide"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

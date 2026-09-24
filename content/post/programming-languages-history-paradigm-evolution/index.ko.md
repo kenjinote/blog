@@ -2,7 +2,7 @@
 title: "프로그래밍 언어의 역사와 패러다임의 변천 (어셈블리, C, Java에서 Rust, Go까지)"
 description: "프로그래밍 언어는 어떻게 진화해 왔는가. 어셈블리 언어에서 시작하여 C 언어, Java, 그리고 현대의 Rust나 Go에 이르기까지의 역사와 패러다임의 변천을 상세히 해설합니다."
 slug: "programming-languages-history-paradigm-evolution"
-date: "2026-09-21T14:51:07+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["programming-languages", "history", "paradigm", "rust", "go"]

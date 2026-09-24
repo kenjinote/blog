@@ -2,7 +2,7 @@
 title: "위치 정보의 기초: GPS의 원리 - 상대성이론과 인공위성이 교차하는 기적의 기술"
 description: "스마트폰의 지도 앱에서 내 현재 위치를 알 수 있는 이유는 무엇일까? 우주 공간을 날아다니는 GPS 위성에서 오는 전파와 아인슈타인의 상대성이론을 활용한 정밀한 시간 계산의 원리를 설명합니다."
 slug: "technology-gps"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

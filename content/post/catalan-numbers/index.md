@@ -2,7 +2,7 @@
 title: "カタラン数：括弧の並べ方と木構造が同じ数になる理由"
 description: "正しい括弧列、二分木、多角形の三角形分割をつなぐ不思議な数列「カタラン数」について解説します。再帰や動的計画法による計算方法も紹介します。"
 slug: "catalan-numbers"
-date: "2026-09-20T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

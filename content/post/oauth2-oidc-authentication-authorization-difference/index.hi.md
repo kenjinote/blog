@@ -2,7 +2,7 @@
 title: "OAuth 2.0 और OIDC (OpenID Connect) का संपूर्ण विश्लेषण (प्राधिकरण और प्रमाणीकरण के बीच अंतर)"
 description: "OAuth 2.0 और OIDC के तंत्र, प्रमाणीकरण और प्राधिकरण के बीच अंतर, और विभिन्न ग्रांट प्रकारों की विस्तृत व्याख्या।"
 slug: "oauth2-oidc-authentication-authorization-difference"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

@@ -2,7 +2,7 @@
 title: "凱萊-哈密頓定理：矩陣滿足其自身「特徵方程式」的奇妙性質"
 description: "詳細解讀線性代數中最令人驚訝的結果之一——凱萊-哈密頓定理，從其直觀含義到嚴謹證明以及實際應用。"
 slug: "cayley-hamilton-theorem"
-date: 2026-09-20T14:50:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "數學"

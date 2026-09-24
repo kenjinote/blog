@@ -9,7 +9,7 @@
 
 title: 'Win32API+C++로 Windows 앱 개발! 현역 엔지니어가 알려주는 장점과 단점'
 slug: "Win32API+C++でプログラムを作るメリットとデメリット"
-date: 2025-07-12T12:30:35+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ['Win32API', 'C++', '프로그래밍', '개발', '기술']
 draft: false
 image: 'img_1.webp'

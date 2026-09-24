@@ -1,5 +1,6 @@
 ---
 title: "딥 블루 vs 카스파로프 (1997년의 충격): 인류와 AI의 역사적 대국의 전모"
+date: "2026-09-24T16:08:36+09:00"
 description: "1997년, 체스 세계 챔피언 가리 카스파로프가 IBM의 슈퍼컴퓨터 '딥 블루'에게 패배한 역사적 사건. 그 배경, 대국의 추이, AI 기술에 미친 영향을 철저히 해설합니다."
 slug: "history-deep-blue-kasparov"
 categories: ["history"]

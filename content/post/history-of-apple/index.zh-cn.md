@@ -2,7 +2,7 @@
 title: "苹果历史：从车库到全球市值第一的轨迹与创新DNA"
 description: "全面解析从史蒂夫·乔布斯和沃兹尼亚克的车库创业，到iPhone革命，再到成为全球市值第一的苹果历史与技术创新。"
 slug: "history-of-apple"
-date: "2026-09-23T03:35:47+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

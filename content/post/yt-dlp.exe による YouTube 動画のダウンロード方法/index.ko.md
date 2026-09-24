@@ -9,7 +9,7 @@
 
 title: 'yt-dlp 사용법: YouTube 동영상 및 오디오를 다운로드하고 저장하는 방법'
 slug: "yt-dlp.exe による YouTube 동영상の다운로드方法"
-date: 2024-09-03T14:09:26+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["YouTube", "다운로드"]
 draft: false
 image: "img_1.webp"

@@ -2,7 +2,7 @@
 title: "Zero Trust Network Architecture (Moving Away from Perimeter Defense)"
 description: "Understanding the concepts and implementation of Zero Trust Architecture, learning from Google's BeyondCorp."
 slug: "zero-trust-network-architecture-beyond-corp"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

@@ -1,7 +1,7 @@
 ---
 title: '使用Rust枚举素数的程序编写方法及代码示例'
 slug: "Rustで素数を列挙する"
-date: 2022-09-09T07:08:49+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Rust","素数","算法"]
 draft: false
 image: "images/img.webp"

@@ -2,7 +2,7 @@
 title: "메모리 관리와 가비지 컬렉션: C, Java, Rust에서 배우는 메모리의 진실"
 description: "프로그래밍의 메모리 관리 기초부터 C언어의 수동 관리, Java의 가비지 컬렉션, Rust의 소유권 모델까지 깊이 있게 비교하고 해설합니다."
 slug: "memory-management-garbage-collection"
-date: "2026-09-21T02:58:36+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["programming", "computer-science", "software-engineering"]
 tags: ["memory-management", "c-language", "java", "rust", "garbage-collection"]

@@ -5,7 +5,7 @@
 
 title: 'Windows 환경에서 OpenSSL을 빌드 및 설치하는 절차와 환경 구축 방법'
 slug: "Windows で OpenSSL を빌드する方法"
-date: 2023-04-07T21:06:32+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Windows", "OpenSSL", "빌드", "C++"]
 draft: false
 image: "img.webp"

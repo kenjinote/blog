@@ -1,5 +1,6 @@
 ---
 title: "Zen Python: Kedalaman Filosofi Pemrograman yang Mengejar Keindahan dan Kesederhanaan"
+date: "2026-09-24T16:08:36+09:00"
 description: "Penjelasan mendalam tentang filosofi desain Python 'The Zen of Python (PEP 20)', dari latar belakang sejarahnya hingga makna mendalam dari 19 pepatah, dan mengapa hal itu dianggap begitu penting dalam pengembangan perangkat lunak modern."
 slug: "philosophy-python-zen"
 categories: ["philosophy"]

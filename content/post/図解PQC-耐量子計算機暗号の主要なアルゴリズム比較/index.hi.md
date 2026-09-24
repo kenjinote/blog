@@ -1,7 +1,7 @@
 ---
 title: '【चित्रित PQC】 क्वांटम-प्रतिरोधी क्रिप्टोग्राफी के प्रमुख एल्गोरिदम की तुलना'
 slug: "post-quantum-cryptography-algorithms-comparison"
-date: "2026-09-11T07:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

@@ -5,7 +5,7 @@ slug: "paradox-prisoners-dilemma"
 categories: ["philosophy"]
 tags: ["game-theory", "prisoners-dilemma", "strategy"]
 image: "eyecatch.jpg"
-date: "2026-09-24T15:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 ---
 
 # 囚人のジレンマ（Prisoner's Dilemma）：ゲーム理論が突きつける究極のパラドックス

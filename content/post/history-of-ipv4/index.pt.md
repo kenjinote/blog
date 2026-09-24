@@ -2,7 +2,7 @@
 title: "Endereço da Internet: A História do IPv4 e o Problema do Esgotamento - Por Que 4,3 Bilhões de Endereços Não Foram Suficientes"
 description: "O \"endereço IP\" é um endereço atribuído a todos os dispositivos na Internet. Explicaremos a história e os mecanismos por trás do IPv4, do porquê de um número tão vasto de cerca de 4,3 bilhões ter se esgotado, e da transição para a próxima geração, o IPv6."
 slug: "history-of-ipv4"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

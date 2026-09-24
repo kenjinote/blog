@@ -1,7 +1,7 @@
 ---
 title: '[Gratis & Super Mudah] Cara Menghasilkan Gambar Ilustrasi AI dengan Stable Diffusion! Penjelasan Langkah di Google Colab'
 slug: "AI(StableDiffusion)を使ってIlustrasiPembuatan Gambarする方法"
-date: 2023-04-06T00:43:19+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["AI", "Stable Diffusion", "ilustrasi", "generasi gambar", "Google Colaboratory"]
 draft: false
 image: "img.webp"

@@ -1,6 +1,6 @@
 ---
 title: "スティーブン・コヴィー：『7つの習慣』で世界を変えたリーダーシップの巨匠"
-date: 2026-09-23T20:59:58+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["stephen-covey", "history"]
 image: "eyecatch.jpg"

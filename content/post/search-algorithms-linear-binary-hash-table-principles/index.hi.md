@@ -2,7 +2,7 @@
 title: "खोज एल्गोरिदम (लीनियर, बाइनरी सर्च और हैश टेबल के सिद्धांत)"
 description: "डेटा से वांछित मान खोजने के लिए खोज एल्गोरिदम। हम लीनियर सर्च और बाइनरी सर्च के मूल सिद्धांतों से लेकर उच्च गति वाली खोजों को साकार करने वाले हैश टेबल के सिद्धांतों तक सब कुछ समझाते हैं।"
 slug: "search-algorithms-linear-binary-hash-table-principles"
-date: 2026-09-22T02:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "search", "binary-search", "hash-table", "data-structures"]

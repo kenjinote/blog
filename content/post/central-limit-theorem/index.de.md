@@ -1,7 +1,7 @@
 ---
 title: "Zentraler Grenzwertsatz - Das Wunder, dass sich alle Daten bei Addition einer Normalverteilung annähern"
 description: "Eine detaillierte Erklärung des zentralen Grenzwertsatzes, eines der wichtigsten Theoreme der Statistik, vom intuitiven Verständnis über den mathematischen Beweis bis hin zur Simulation mit Python."
-date: 2026-09-14T13:20:38+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematik", "Statistik"]
 tags: ["Zentraler Grenzwertsatz", "Wahrscheinlichkeit", "Datenwissenschaft", "Python"]

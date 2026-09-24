@@ -1,7 +1,7 @@
 ---
 title: '[कार्य कुशलता बढ़ाएं] Microsoft Word शॉर्टकट कुंजियों की उपयोगी सूची'
 slug: "Microsoft Wordのशॉर्टकट一覧"
-date: 2024-04-07T14:18:51+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Microsoft Word", "शॉर्टकट"]
 draft: false
 image: "img.webp"

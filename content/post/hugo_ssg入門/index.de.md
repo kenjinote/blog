@@ -1,7 +1,7 @@
 ---
 title: 'Einführung in den Static Site Generator mit Hugo (Migrationsanleitung von WordPress)'
 slug: "hugo-static-site-generator-wordpress-migration"
-date: "2026-09-13T02:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -116,7 +116,7 @@ Jede Artikeldatei in Hugo besteht aus einem Metadatenblock namens "Front Matter"
 ```yaml
 ---
 title: "Die Taxonomie von Hugo verstehen"
-date: 2026-09-13T10:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 categories:
   - "Technische Erklärung"

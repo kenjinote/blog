@@ -1,6 +1,6 @@
 ---
 title: "가이우스 율리우스 카이사르: 로마의 운명을 결정지은 천재의 궤적"
-date: 2026-09-23T19:46:03+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["julius-caesar", "history"]
 image: "eyecatch.jpg"

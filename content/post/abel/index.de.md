@@ -2,7 +2,7 @@
 title: "Niels Henrik Abel: Das tragische Genie, das die Lösungsformel für Gleichungen fünften Grades widerlegte"
 description: "Niels Henrik Abel, ein brillanter norwegischer Mathematiker. Dieser Artikel untersucht sein turbulentes Leben und das monumentale Erbe, das er der modernen Mathematik vor seinem tragischen Tod im Alter von 26 Jahren hinterließ."
 slug: "abel"
-date: "2026-09-20T19:20:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematik", "Biografie"]
 tags: ["Abel", "Algebra", "Geschichte", "Mathematik"]

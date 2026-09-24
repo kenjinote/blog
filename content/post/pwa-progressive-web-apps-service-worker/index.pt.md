@@ -2,7 +2,7 @@
 title: "O Potencial e a Implementação de PWAs (Progressive Web Apps): O Poder do Service Worker"
 description: "Uma explicação desde a visão geral do PWA até o ciclo de vida do Service Worker, cache offline e notificações Push."
 slug: "pwa-progressive-web-apps-service-worker"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

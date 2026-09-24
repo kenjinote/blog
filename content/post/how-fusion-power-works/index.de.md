@@ -2,7 +2,7 @@
 title: "Wie Fusionskraftwerke funktionieren: von der Energie der Sterne zu nutzbarem Strom"
 description: "Deuterium-Tritium-Reaktionen, Plasmaeinschluss, Tokamaks, Stellaratoren, Laserfusion, Energiegewinn, Brennstoffbrüten und Kraftwerkstechnik verständlich erklärt – mit Geschichte, Diagrammen und Rechenbeispielen."
 slug: "how-fusion-power-works"
-date: "2026-09-24T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.png"
 categories: ["technology", "physics"]
 tags: ["nuclear-fusion", "energy", "plasma", "engineering", "history"]

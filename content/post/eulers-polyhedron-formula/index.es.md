@@ -2,7 +2,7 @@
 title: "El Teorema de los Poliedros de Euler: La Magia de la Topología Revelada por V - E + F = 2"
 description: "Una explicación detallada sobre la belleza del teorema de los poliedros de Euler (V - E + F = 2) y el mundo de la topología que lo sigue. Exploremos el encanto de las invariantes, desde los poliedros regulares hasta la característica de Euler."
 slug: "eulers-polyhedron-formula"
-date: "2026-09-20T15:15:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemáticas"

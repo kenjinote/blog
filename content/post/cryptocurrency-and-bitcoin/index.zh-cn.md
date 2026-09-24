@@ -2,7 +2,7 @@
 title: "加密资产与比特币：其历史、数学基础以及未来"
 description: "全面解析比特币与加密资产背后的技术与数学机制。本终极指南涵盖 SHA-256、椭圆曲线密码学、UTXO，直到可扩展性问题。"
 slug: "cryptocurrency-and-bitcoin"
-date: "2026-09-20T23:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["技术", "mathematics"]
 tags: ["比特币", "密码学", "区块链"]

@@ -2,7 +2,7 @@
 title: "History of Alibaba: China's E-commerce Revolution and Building a Digital Ecosystem"
 description: "How Jack Ma transformed China's retail and payments, building a massive digital ecosystem."
 slug: "history-of-alibaba"
-date: "2026-09-23T01:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

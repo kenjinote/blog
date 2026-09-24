@@ -1,6 +1,6 @@
 ---
 title: "物理学：电磁感应与电机原理 - 从法拉第的发现到电动汽车"
-date: 2026-09-23T04:01:41+09:00
+date: "2026-09-24T16:08:36+09:00"
 
 image: "eyecatch.jpg"
 categories: ["physics", "technology"]

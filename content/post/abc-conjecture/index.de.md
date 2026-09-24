@@ -2,7 +2,7 @@
 title: "Die ABC-Vermutung - Die Herausforderung für eines der schwierigsten Probleme der Zahlentheorie durch die Inter-universale Teichmüller-Theorie"
 description: "Ein tiefer Einblick in die ABC-Vermutung und den revolutionären Ansatz der Inter-universalen Teichmüller-Theorie (IUT-Theorie) von Professor Shinichi Mochizuki."
 slug: "abc-conjecture"
-date: 2026-09-14T13:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]
 tags: ["ABC-Vermutung", "Zahlentheorie", "IUT-Theorie", "Shinichi Mochizuki"]

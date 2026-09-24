@@ -1,7 +1,7 @@
 ---
 title: 'A Must-See for Retro Gamers! 11 Recommended Masterpiece Games for the Original GB & SNES'
 slug: "好きなGame11選"
-date: 2022-09-12T19:28:50+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Game"]
 draft: false
 image: "img_12.webp"

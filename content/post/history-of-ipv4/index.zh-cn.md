@@ -2,7 +2,7 @@
 title: "互联网的地址：IPv4的历史与枯竭问题 - 为什么43亿个地址不够用了"
 description: "分配给互联网上所有设备的地址“IP地址”。原本准备了约43亿个庞大数量的IPv4为何会枯竭，并向下一代IPv6过渡？本文将为您解说其历史与机制。"
 slug: "history-of-ipv4"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

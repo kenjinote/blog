@@ -1,6 +1,6 @@
 ---
 title: "जॉन एफ. कैनेडी: एक नए युग की शुरुआत करने वाले युवा राष्ट्रपति का जीवन और दर्शन"
-date: "2026-09-23T19:46:03+09:00"
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["john-f-kennedy", "history"]
 image: "eyecatch.jpg"

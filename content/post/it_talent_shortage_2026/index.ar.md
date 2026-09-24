@@ -1,7 +1,7 @@
 ---
 title: '【مشكلة 2026】هل هناك حقاً نقص في المواهب في مجال تكنولوجيا المعلومات؟ الحقيقة من أرض الواقع'
 slug: "it-talent-shortage-2026"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

@@ -2,7 +2,7 @@
 title: "Network Technology: HTTP Technical Explanation - The Stateless Protocol Behind the Web"
 description: "HTTP works behind the scenes of the websites we view every day. This article explains how a simple text transfer protocol evolved into the foundation for today's rich applications."
 slug: "history-of-http"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

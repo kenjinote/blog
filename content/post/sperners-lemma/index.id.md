@@ -2,7 +2,7 @@
 title: "Lemma Sperner: Dari Mewarnai Segitiga hingga Bukti Keberadaan"
 description: "Penjelasan tentang bagaimana mewarnai titik sudut menurut aturan batas menjamin munculnya segitiga kecil 3 warna. Ini berfungsi sebagai jembatan menuju teorema titik tetap."
 slug: "sperners-lemma"
-date: "2026-09-20T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["matematika"]
 tags: ["topologi", "kombinatorika", "teorema-titik-tetap"]

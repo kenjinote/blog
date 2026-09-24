@@ -2,7 +2,7 @@
 title: "Comprensión total de C y los punteros (gestión de memoria, direcciones, fundamentos de la pila y el montón)"
 description: "Una explicación exhaustiva de los punteros, el mayor obstáculo en el lenguaje C, desde el concepto de direcciones de memoria hasta la diferencia entre la pila y el montón, y la asignación dinámica de memoria. Una guía completa para aquellos que buscan una comprensión profunda del lenguaje C."
 slug: "c-language-pointers-memory-management-stack-heap"
-date: 2026-09-21T14:51:08+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["c", "pointers", "memory", "stack", "heap"]

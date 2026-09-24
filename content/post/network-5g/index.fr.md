@@ -2,7 +2,7 @@
 title: "Communication de nouvelle génération : Mécanisme et caractéristiques de la 5G - L'avenir façonné par 'Ultra haut débit, Ultra faible latence, Connexions multiples simultanées'"
 description: "La 5G, système de communication mobile de 5ème génération, est attendue comme une infrastructure non seulement pour les smartphones, mais aussi pour la conduite autonome et la télémédecine. Cet article explique les technologies clés qui la rendent possible, telles que les ondes millimétriques, le beamforming et l'edge computing."
 slug: "network-5g"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

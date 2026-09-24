@@ -2,7 +2,7 @@
 title: "Alan Baker: O medalhista Fields que revolucionou a teoria dos números transcendentes"
 description: "Um olhar aprofundado sobre a vida e as conquistas matemáticas de Alan Baker, o matemático britânico que ganhou a Medalha Fields em 1970 por seus teoremas sobre formas lineares em logaritmos."
 slug: "baker"
-date: "2026-09-20T20:40:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["matemática", "biografia"]
 tags: ["Alan Baker", "Teoria dos Números", "Medalha Fields", "Teoria dos Números Transcendentes"]

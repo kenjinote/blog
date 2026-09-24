@@ -5,7 +5,7 @@
 
 title: 'Windows에서 패스가 설정된 실행 파일의 위치(패스)를 찾는 방법 [where 명령]'
 slug: "Windows で경로の通った실행 파일の場所を見つける方法"
-date: 2023-04-03T00:02:55+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Windows", "경로", "실행 파일", "명령 프롬프트"]
 draft: false
 image: "img.webp"

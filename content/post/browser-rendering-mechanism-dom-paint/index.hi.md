@@ -2,7 +2,7 @@
 title: "ब्राउज़र रेंडरिंग तंत्र: DOM ट्री से Paint तक का पूरा विश्लेषण"
 description: "HTML/CSS/JS लोड करने से लेकर स्क्रीन पर पिक्सेल रेंडर करने तक ब्राउज़र के रेंडरिंग इंजन (Blink, WebKit, आदि) के तंत्र का पूरा विश्लेषण।"
 slug: "browser-rendering-mechanism-dom-paint"
-date: 2026-09-20T17:10:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - "web-development"

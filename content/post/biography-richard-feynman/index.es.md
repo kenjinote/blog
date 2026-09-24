@@ -1,5 +1,6 @@
 ---
 title: "Richard Feynman: Cómo un espíritu infinitamente curioso desentrañó las verdades del universo y la forma de vivir humana"
+date: "2026-09-24T16:08:36+09:00"
 description: "Richard Feynman, premio Nobel de Física. Desde la construcción de la electrodinámica cuántica hasta la investigación del accidente del Challenger, pasando por el forzado de cajas fuertes y tocar los bongos. Explicamos a fondo su vida poco convencional llena de curiosidad inagotable y \"el placer de descubrir cosas\"."
 slug: "biography-richard-feynman"
 categories: ["biography"]

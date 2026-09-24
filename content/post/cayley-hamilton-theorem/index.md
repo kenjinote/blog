@@ -2,7 +2,7 @@
 title: "ケーリー・ハミルトンの定理：行列が自分自身の「特性方程式」を満たすという不思議な性質"
 description: "線形代数学における最も驚くべき結果の一つであるケーリー・ハミルトンの定理について、その直感的な意味から証明、そして応用まで詳しく解説します。"
 slug: "cayley-hamilton-theorem"
-date: 2026-09-20T14:50:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

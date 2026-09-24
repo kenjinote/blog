@@ -2,7 +2,7 @@
 title: 'Das Paradoxon des Überraschungstests: Der Tag, an dem ein logisch "absolut unmöglicher" Test stattfindet'
 slug: 'unexpected-hanging-paradox'
 description: '„Nächste Woche, an einem Tag zwischen Montag und Freitag, werdet ihr auf unvorhersehbare Weise einen Überraschungstest schreiben.“ – Auf diese Ankündigung des Lehrers hin bewiesen die Schüler, dass „ein Überraschungstest logisch unmöglich ist“. Aber...'
-date: '2026-09-10T10:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/unexpected_hanging.jpg'
 math: true
 mermaid: true

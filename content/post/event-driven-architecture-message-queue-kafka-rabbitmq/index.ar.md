@@ -2,7 +2,7 @@
 title: "هيكلية مدفوعة بالأحداث وطابور الرسائل (Kafka, RabbitMQ)"
 description: "التصميم المدفوع بالأحداث الذي يقلل من اقتران الأنظمة من خلال الاتصال غير المتزامن، ودور وسيط الرسائل."
 slug: "event-driven-architecture-message-queue-kafka-rabbitmq"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

@@ -9,7 +9,7 @@
 
 title: '¿Qué es un ordenador cuántico? Explicación desde cero del principio de cálculo definitivo: superposición y entrelazamiento cuántico'
 slug: "quantum-computer-basics"
-date: 2026-09-05T22:10:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Computación cuántica", "Física", "Tecnología"]
 image: "eyecatch.jpg"
 categories: ["math-cryptography-quantum"]

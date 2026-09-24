@@ -2,7 +2,7 @@
 title: "オイラーの等式（Euler's Identity） - 異なる5つの数学定数が結びつく「人類至宝の数式」"
 description: "数学史上最も美しいとされるオイラーの等式について、その背景と意味を深く解説します。"
 slug: "eulers-identity"
-date: 2026-09-14T13:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Euler", "Math", "Science"]

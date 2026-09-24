@@ -2,7 +2,7 @@
 title: "金融・暗号技術: 電子マネーの歴史 - 貨幣のデジタル化と暗号技術の進化"
 description: "「物理的な硬貨や紙幣」が「デジタルのデータ」へと置き換わるまで。デヴィッド・チャウムの初期の実験から、Suicaの誕生、そして暗号資産へと至る電子マネーの進化の歴史を紐解きます。"
 slug: "history-electronic-money"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

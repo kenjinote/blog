@@ -2,7 +2,7 @@
 title: "La magie de la physique : L'annulation de bruit - L'interférence des ondes pour effacer le son"
 description: "L'« annulation de bruit » fait disparaître les bruits environnants dès que vous mettez des écouteurs. Nous expliquons en profondeur le principe d'« interférence des ondes » de la physique et l'histoire de cette technologie."
 slug: "physics-noise-cancelling"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

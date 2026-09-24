@@ -2,7 +2,7 @@
 title: "Marin Mersenne: Das Postamt Europas im 17. Jahrhundert und der Pate der Mersenne-Primzahlen"
 description: "Ein tiefer Einblick in das Leben von Marin Mersenne, seine Interaktionen mit Descartes und Fermat sowie seine mathematischen und wissenschaftlichen Errungenschaften zu Mersenne-Primzahlen und Akustik."
 slug: "mersenne"
-date: "2026-09-20T18:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematik"

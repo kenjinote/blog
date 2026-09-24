@@ -2,7 +2,7 @@
 title: "특이값 분해 (SVD): 모든 행렬을 회전과 크기 조절로 분해하여 데이터 압축과 AI에 활용하기"
 description: "특이값 분해(SVD)의 수학적 기초부터 기하학적 직관, 그리고 이미지 압축 및 자연어 처리에서의 응용까지 완벽하게 설명합니다."
 slug: "singular-value-decomposition"
-date: "2026-09-20T14:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["수학"]
 tags: ["SVD", "선형대수학", "머신러닝", "데이터 압축", "인공지능", "Python"]

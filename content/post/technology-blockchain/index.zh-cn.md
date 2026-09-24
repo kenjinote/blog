@@ -2,7 +2,7 @@
 title: "金融与密码学：区块链技术解析 - 催生比特币的分布式账本技术"
 description: "无需管理员也能发行和转账的“魔法”。本文将解开中本聪创造的区块链核心：哈希函数、PoW（工作量证明）以及分布式账本的机制。"
 slug: "technology-blockchain"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -1,5 +1,6 @@
 ---
 title: "El extremo norte de la mecánica cuántica: la paradoja de la realidad que plantea el gato de Schrödinger"
+date: "2026-09-24T16:08:36+09:00"
 description: "¿Qué es el \"gato de Schrödinger\"? Una explicación exhaustiva del núcleo de la \"superposición\" y el \"problema de la medición\" en la mecánica cuántica, desde su contexto histórico hasta la interpretación de los muchos mundos."
 slug: "paradox-schrodingers-cat"
 categories: ["science"]

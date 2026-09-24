@@ -2,7 +2,7 @@
 title: "原子力発電の仕組み：核分裂の熱はどう電気になり、なぜ停止後も冷却が必要なのか"
 description: "原子核の結合エネルギーから連鎖反応、遅発中性子、PWR・BWR、蒸気タービン、崩壊熱、使用済燃料まで。歴史、図解、計算例を通して原子力発電を基礎から理解します。"
 slug: "how-nuclear-power-works"
-date: "2026-09-24T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.png"
 categories: ["technology", "physics"]
 tags: ["nuclear-power", "nuclear-fission", "energy", "engineering", "history"]

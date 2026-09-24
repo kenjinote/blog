@@ -2,7 +2,7 @@
 title: "秘書問題 / 最適停止問題（Secretary Problem） - 最も優秀な人を採用するための「1/eの法則」"
 description: "秘書問題（Secretary Problem）とは何か？最適停止問題の代表例であるこの問題を通じて、不確実な状況下で最良の選択をするための数学的アプローチ「1/eの法則（約37%の法則）」について詳しく解説します。数学的な証明とシミュレーションを交え、採用活動や日常の意思決定にどう活かせるかを探ります。"
 slug: "secretary-problem"
-date: "2026-09-14T13:20:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "algorithms", "decision-making"]
 tags:

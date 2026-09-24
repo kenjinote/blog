@@ -2,7 +2,7 @@
 title: "程式語言的歷史與典範的演進（從組合語言、C、Java 到 Rust、Go）"
 description: "程式語言是如何演進的？本文將詳細解說從組合語言開始，歷經 C 語言、Java，再到現代的 Rust 與 Go 的歷史與典範的演進。"
 slug: "programming-languages-history-paradigm-evolution"
-date: "2026-09-21T14:51:07+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["programming-languages", "history", "paradigm", "rust", "go"]

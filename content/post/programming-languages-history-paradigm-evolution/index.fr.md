@@ -2,7 +2,7 @@
 title: "Histoire des langages de programmation et évolution des paradigmes (de l'assembleur, C, Java à Rust et Go)"
 description: "Comment les langages de programmation ont-ils évolué ? Cet article explique en détail l'histoire et l'évolution des paradigmes, en commençant par le langage assembleur, puis C, Java, et enfin les langages modernes tels que Rust et Go."
 slug: "programming-languages-history-paradigm-evolution"
-date: "2026-09-21T14:51:07+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["programming-languages", "history", "paradigm", "rust", "go"]

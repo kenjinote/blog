@@ -2,7 +2,7 @@
 title: "Cara Kerja Komputer Kuantum dan Algoritma Shor: Mengapa Komputasi Kuantum Dapat Menghancurkan Kriptografi?"
 description: "Penjelasan mendalam mulai dari dasar-dasar komputer kuantum hingga mekanisme matematis dan mekanika kuantum dari Algoritma Shor (Shor's Algorithm) yang menjadi ancaman bagi kriptografi RSA. Dilengkapi dengan contoh implementasi menggunakan Qiskit dan prospek kriptografi pasca-kuantum di masa depan, diuraikan dengan informasi yang sangat komprehensif."
 slug: "quantum-computing-shors-algorithm"
-date: "2026-09-21T02:35:46+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "teknologi"

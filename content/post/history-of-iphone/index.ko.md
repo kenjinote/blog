@@ -2,7 +2,7 @@
 title: "모바일 혁명: iPhone의 역사 - 전화를 재발명하고 세계를 바꾼 기기"
 description: "2007년 스티브 잡스의 전설적인 프레젠테이션에서 시작된 iPhone의 역사. 물리적 키보드 제거부터 App Store의 탄생까지 스마트폰 혁명의 궤적을 돌아봅니다."
 slug: "history-of-iphone"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

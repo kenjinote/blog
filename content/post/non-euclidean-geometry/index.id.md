@@ -2,7 +2,7 @@
 title: "Lahirnya Geometri Non-Euclidean - Penemuan \"Ruang Melengkung\" dan Jalan Menuju Teori Relativitas"
 description: "Mulai dari keraguan terhadap postulat sejajar Euclid, hingga pembentukan geometri non-Euclidean oleh Gauss, Bolyai, Lobachevsky, dan Riemann, serta sejarah epik matematika dan fisika yang berujung pada teori relativitas umum Einstein."
 slug: "non-euclidean-geometry"
-date: 2026-09-14T13:11:25+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "physics"]
 tags: ["Geometri", "Relativitas", "Sejarah Sains", "Matematika"]

@@ -2,7 +2,7 @@
 title: "物理の不思議: Bluetoothの仕組み - 電波ホッピングとペアリング"
 description: "現代のワイヤレスデバイスに不可欠なBluetooth。なぜ混信せずに安定して繋がるのか？周波数ホッピングという軍事由来の技術から紐解きます。"
 slug: "physics-bluetooth"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

@@ -8,7 +8,7 @@
 
 title: 'Cómo agregar el grep de Hidemaru Editor al menú contextual de Windows'
 slug: "ExploradorのMenú contextualにHidemaru Editorgrepを追加する"
-date: 2024-04-03T00:00:46+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Editor Hidemaru", "Explorador", "Menú contextual", "grep", "Registro"]
 draft: false
 image: "img.webp"

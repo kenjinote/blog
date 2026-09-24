@@ -1,7 +1,7 @@
 ---
 title: 'Comprei um ThinkPad T470s usado! Uma avaliação honesta sobre especificações, usabilidade e pontos de insatisfação'
 slug: "ThinkPad（中古）を買った"
-date: 2023-01-13T19:07:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["ThinkPad", "Laptop"]
 draft: false
 image: "img.webp"

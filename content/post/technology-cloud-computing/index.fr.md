@@ -2,7 +2,7 @@
 title: "De la possession à l'utilisation : Le fonctionnement du cloud computing - La révolution de l'infrastructure informatique"
 description: "Comment le cloud computing tel que Amazon Web Services (AWS) et Google Cloud (GCP) a-t-il transformé l'informatique des entreprises et des particuliers ? Cet article explique les différences entre IaaS, PaaS et SaaS, ainsi que les bases de la technologie de virtualisation."
 slug: "technology-cloud-computing"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

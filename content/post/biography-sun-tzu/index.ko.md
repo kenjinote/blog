@@ -1,6 +1,6 @@
 ---
 title: "손무: 사상 최고의 병법서 '손자병법'을 탄생시킨 천재 군략가의 궤적"
-date: 2026-09-23T19:53:32+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["sun-tzu", "history"]
 image: "eyecatch.jpg"

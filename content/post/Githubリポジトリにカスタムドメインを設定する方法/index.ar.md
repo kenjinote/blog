@@ -1,7 +1,7 @@
 ---
 title: 'كيفية تعيين نطاق مخصص (Custom Domain) لمستودع GitHub | إصدار Onamae.com'
 slug: "Githubمستودعにカスタムنطاقを設定する方法"
-date: 2022-09-13T01:16:40+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Github","نطاق"]
 draft: false
 image: "images/octocat.webp"

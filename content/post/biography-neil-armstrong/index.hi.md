@@ -1,6 +1,6 @@
 ---
 title: "नील आर्मस्ट्रांग: चंद्रमा पर पहली बार चलने वाले व्यक्ति का जीवन और दर्शन"
-date: 2026-09-23T20:51:47+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["neil-armstrong", "history"]
 image: "eyecatch.jpg"

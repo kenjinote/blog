@@ -2,7 +2,7 @@
 title: "桌遊策略：西洋棋的基本規則與開局策略 - 追擊國王的盤上戰爭"
 description: "世界上最多人遊玩的智力運動「西洋棋」。從棋子移動的基本規則，到控制中心、入堡，以及代表性的開局策略（定石），為初學者解說獲勝的理論。"
 slug: "game-chess-rules"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

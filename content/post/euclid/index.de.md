@@ -2,7 +2,7 @@
 title: "Euklid: Der Vater der Geometrie und sein großes Vermächtnis"
 description: "Ein tiefer Einblick in das Leben des antiken griechischen Mathematikers Euklid, die Auswirkungen seines Meisterwerks 'Elemente' auf spätere Generationen und seine mathematischen Errungenschaften wie den Euklidischen Algorithmus."
 slug: "euclid"
-date: 2026-09-20T18:40:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematik", "Biografie"]
 tags: ["Euklid", "Geometrie", "Geschichte der Mathematik", "Antikes Griechenland", "Elemente", "Euklidischer Algorithmus"]

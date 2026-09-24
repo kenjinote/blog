@@ -2,7 +2,7 @@
 title: '高木贞治：创立类域论的日本世界级数学家'
 description: '深入探讨日本近代数学之父高木贞治的生平，以及他创立类域论这一伟大数学成就。'
 slug: 'takagi-teiji'
-date: '2026-09-20T19:50:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - 'mathematics'

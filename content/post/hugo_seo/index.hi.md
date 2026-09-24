@@ -1,7 +1,7 @@
 ---
 title: 'ह्यूगो ब्लॉग एसईओ: ट्रैफ़िक को नाटकीय रूप से बढ़ाने के लिए फ्रंटमैटर सेटिंग्स'
 slug: "hugo-blog-seo-frontmatter-tips"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

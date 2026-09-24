@@ -9,7 +9,7 @@
 
 title: '¿Quién fue Akiko Yosano? Explicación de su vida y obras maestras como ''Midaregami'' y ''Kimi Shinitamou Koto Nakare'''
 slug: "Akiko Yosanoについて"
-date: 2024-07-25T13:08:36+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Akiko Yosano"]
 draft: false
 categories: ["it-technology"]

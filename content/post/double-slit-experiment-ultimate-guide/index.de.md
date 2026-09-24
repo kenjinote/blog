@@ -1,7 +1,7 @@
 ---
 title: '[Umfassender Leitfaden] Das größte Rätsel der Quantenmechanik, das „Doppelspaltexperiment“, leicht verständlich und detailliert erklärt'
 slug: "double-slit-experiment-ultimate-guide"
-date: "2026-09-08T01:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Physik", "Quantenmechanik", "Doppelspaltexperiment", "Schrödinger-Gleichung"]
 categories: ["physics-science"]
 math: true

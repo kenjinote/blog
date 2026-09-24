@@ -2,7 +2,7 @@
 title: "História das Linguagens de Programação e Evolução dos Paradigmas (De Assembly, C, Java até Rust e Go)"
 description: "Como as linguagens de programação evoluíram? Exploramos em detalhes a história e a evolução dos paradigmas, começando pela linguagem Assembly, passando por C e Java, até as modernas Rust e Go."
 slug: "programming-languages-history-paradigm-evolution"
-date: "2026-09-21T14:51:07+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["programming-languages", "history", "paradigm", "rust", "go"]

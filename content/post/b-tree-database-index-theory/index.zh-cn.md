@@ -2,7 +2,7 @@
 title: "B树与数据库索引理论（为什么DB选择B-Tree？）"
 description: "深入探讨作为数据库索引根基的B树（B-Tree）与B+树（B+Tree）的理论、数据结构、与磁盘I/O的关系，以及为什么RDBMS持续采用B树作为索引标准，结合数学分析与代码实现进行解析。"
 slug: "b-tree-database-index-theory"
-date: "2026-09-21T02:45:54+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science", "database"]
 tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]

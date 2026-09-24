@@ -1,7 +1,7 @@
 ---
 title: '在 VSCode 中建置 Qt 開發環境！Qt Extension Pack 的安裝與使用方法'
 slug: "Visual Studio Code に Qt Extension Pack を入れてみた"
-date: 2024-09-13T00:53:53+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Visual Studio Code", "Qt Extension Pack"]
 draft: false
 image: "img_1.webp"

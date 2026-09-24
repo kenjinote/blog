@@ -2,7 +2,7 @@
 title: "Di Balik WebRTC dan Komunikasi Waktu Nyata: P2P, STUN/TURN, Sinyal"
 description: "Mekanisme WebRTC yang melakukan komunikasi langsung antar peramban. Kami akan membedah secara menyeluruh sisi kompleks seperti melintasi NAT (STUN/TURN), server sinyal, dan protokol ICE."
 slug: "webrtc-realtime-communication-p2p"
-date: 2026-09-20T17:10:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - "network"

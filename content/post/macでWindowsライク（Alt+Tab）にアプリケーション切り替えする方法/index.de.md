@@ -1,7 +1,7 @@
 ---
 title: 'Konfigurationsmethode zum Umschalten von Apps auf dem Mac im Windows-Stil (Alt+Tab)'
 slug: "macでWindowsライク（Alt+Tab）にAnwendungswechselする方法"
-date: 2023-04-05T02:20:12+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["macos", "mac", "tastenkombinationen", "anwendungswechsel"]
 draft: 
 image: "img.webp"

@@ -2,7 +2,7 @@
 title: "網際網路的門牌號碼：IPv4的歷史與枯竭問題 - 為什麼43億個位址會不夠用？"
 description: "分配給網際網路上所有設備的位址「IP位址」。為何當初準備了約43億個如此龐大數量的IPv4會面臨枯竭，並朝向次世代的IPv6過渡呢？本文將解說其歷史與機制。"
 slug: "history-of-ipv4"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

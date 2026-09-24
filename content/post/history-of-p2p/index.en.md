@@ -2,7 +2,7 @@
 title: "Network Technology: Technical Explanation of P2P (Peer-to-Peer) - The Power of Distributed Systems"
 description: "P2P technology allows individual computers to communicate on equal terms without relying on specific servers. This article deeply explains its basic theory and the ideology leading to modern blockchain."
 slug: "history-of-p2p"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

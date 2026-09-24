@@ -2,7 +2,7 @@
 title: "Mistérios da Física: Como funciona o LED - Por que ele brilha? O milagre do desenvolvimento do LED azul"
 description: "O princípio de emissão de luz dos LEDs, essenciais para a iluminação e telas modernas, e a história do desenvolvimento do LED azul que ganhou o Prêmio Nobel."
 slug: "physics-led-mechanism"
-date: "2026-09-23T02:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

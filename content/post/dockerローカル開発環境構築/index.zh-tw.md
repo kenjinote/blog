@@ -1,7 +1,7 @@
 ---
 title: "使用 Docker 建構可重現本地開發環境的步驟"
 slug: "docker-reproducible-local-dev-environment"
-date: "2026-09-13T01:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

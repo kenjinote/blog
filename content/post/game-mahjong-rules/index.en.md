@@ -2,7 +2,7 @@
 title: "The Pinnacle of Table Games: Basic Rules and Yaku of Mahjong - A 4-Player Information War"
 description: "Mahjong, the intellectual table game from the East woven with 136 tiles. We explain the basic structure of this game with an exquisite balance of luck and skill, how to make melds (mentsu) and pairs (atama), and typical 'yaku' (winning hands)."
 slug: "game-mahjong-rules"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

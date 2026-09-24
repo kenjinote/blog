@@ -2,7 +2,7 @@
 title: 'Le paradoxe des anniversaires : Plus de 50 % de chances avec seulement 23 personnes ? La magie des « combinaisons » qui trompe notre intuition'
 slug: 'birthday-paradox'
 description: 'Qu''il s''agisse d''une classe d''école ou d''un département d''entreprise, il suffit d''un rassemblement de 23 personnes pour que la probabilité que deux personnes partagent le même anniversaire dépasse les 50 %. Nous expliquons visuellement et mathématiquement, à l''aide de la théorie des probabilités et de graphes, à quel point l''intuition humaine a tendance à négliger « l''explosion combinatoire ».'
-date: '2026-09-10T00:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/birthday_paradox.jpg'
 math: true
 mermaid: true

@@ -1,7 +1,7 @@
 ---
 title: 'Uma explicação fácil de entender sobre o General Number Field Sieve (GNFS), a matemática mais forte da humanidade para quebrar códigos'
 slug: "インターネットのCriptografiaを破る人類最強のMatemática「一般数体篩法（GNFS）」とは？"
-date: 2026-09-05T02:09:08+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Matemática", "Criptografia", "RSA", "GNFS"]
 draft: false
 image: "gnfs_two_worlds_1788542142485.webp"

@@ -2,7 +2,7 @@
 title: "アラン・ベーカー：超越数論に革命をもたらしたフィールズ賞数学者"
 description: "1970年にフィールズ賞を受賞したイギリスの数学者アラン・ベーカーの生涯と、対数の一次形式に関する定理など、彼の主要な数学的業績について詳しく解説します。"
 slug: "baker"
-date: "2026-09-20T20:40:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Alan Baker", "Number Theory", "Fields Medal", "Transcendental Number Theory"]

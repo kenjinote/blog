@@ -2,7 +2,7 @@
 title: "Das Zipfsche Gesetz - Das 'Potenzgesetz', das alles regiert, von der Worthäufigkeit bis zur Stadtbevölkerung"
 description: "Ein detaillierter Blick, anhand von Formeln und Diagrammen, auf das 'Zipfsche Gesetz', die erstaunliche mathematische Regel, die die Welt regiert, von natürlicher Sprache bis zu städtischem Maßstab und Wirtschaft."
 slug: "zipfs-law"
-date: "2026-09-14T13:20:38+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematik", "datenwissenschaft", "linguistik"]
 tags:

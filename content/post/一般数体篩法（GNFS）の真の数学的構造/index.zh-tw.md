@@ -1,7 +1,7 @@
 ---
 title: '普通數域篩法（GNFS）的真實數學結構為何？使用同態映射的質因數分解機制'
 slug: "一般数体篩法（GNFS）の真の數學的構造"
-date: 2026-09-05T02:26:13+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["數學", "密碼學", "RSA", "GNFS"]
 draft: false
 image: "rsa_encryption_break_1788542156523.webp"

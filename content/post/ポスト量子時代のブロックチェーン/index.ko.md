@@ -1,7 +1,7 @@
 ---
 title: "포스트 양자 시대의 블록체인·가상화폐는 어떻게 변할까?"
 slug: "post-quantum-blockchain-and-crypto"
-date: "2026-09-11T17:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

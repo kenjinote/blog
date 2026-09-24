@@ -2,7 +2,7 @@
 title: "ネットワーク技術: IPv4からIPv6への変貌と次世代インターネット"
 description: "インターネットの住所であるIPアドレス。43億個しかなかったIPv4がいかにして枯渇の危機を乗り越え、無限の空間を持つIPv6へと移行しているのかを解説します。"
 slug: "history-of-ipv6"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

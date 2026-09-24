@@ -2,7 +2,7 @@
 title: "Groups, Rings, and Fields: An Introduction to Modern Algebra Abstracting 'Structure' Itself"
 description: "In mathematics, 'algebra' evolved from methods for solving equations into the study of 'structures' woven by operations and sets. This article details the concepts of 'groups', 'rings', and 'fields', the foundations of modern algebra, with intuitive examples and rigorous definitions."
 slug: "groups-rings-and-fields"
-date: "2026-09-20T15:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["algebra", "group theory", "ring theory", "field theory"]

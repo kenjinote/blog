@@ -2,7 +2,7 @@
 title: "Isaac Newton: Mendekati Kehidupan Sang Jenius Melalui Penemuan Kalkulus dan Gravitasi Universal"
 description: "Penjelasan mendalam tentang kehidupan Isaac Newton, episode selama Tahun Keajaiban, dan penemuan inovatifnya dalam matematika dan fisika."
 slug: "newton"
-date: "2026-09-20T19:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matematika"

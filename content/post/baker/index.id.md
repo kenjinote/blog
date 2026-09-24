@@ -2,7 +2,7 @@
 title: "Alan Baker: Peraih Medali Fields yang Merevolusi Teori Bilangan Transenden"
 description: "Pandangan mendalam tentang kehidupan dan pencapaian matematika Alan Baker, matematikawan Inggris yang memenangkan Medali Fields pada tahun 1970 untuk teoremanya tentang bentuk linier dalam logaritma."
 slug: "baker"
-date: "2026-09-20T20:40:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["matematika", "biografi"]
 tags: ["Alan Baker", "Teori Bilangan", "Medali Fields", "Teori Bilangan Transenden"]

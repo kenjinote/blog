@@ -2,7 +2,7 @@
 title: "Kurt Gödel: Los teoremas de incompletitud y la trayectoria de un genio matemático"
 description: "Una explicación detallada de la vida de Kurt Gödel, el mayor lógico del siglo XX, y los teoremas de incompletitud que sacudieron los cimientos de las matemáticas."
 slug: "godel"
-date: "2026-09-20T20:20:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["matemáticas", "biografía"]
 tags: ["Kurt Gödel", "Teoremas de incompletitud", "Matemáticas", "Lógica", "Historia"]

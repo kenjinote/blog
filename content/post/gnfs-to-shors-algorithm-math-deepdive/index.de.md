@@ -1,7 +1,7 @@
 ---
 title: 'RSA-Verschlüsselung knacken? Detaillierte Erklärung der Algorithmen von GNFS und Shor mit mathematischen Formeln'
 slug: "gnfs-to-shors-algorithm-math-deepdive"
-date: 2026-09-06T12:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Quantencomputer", "GNFS", "Shor-Algorithmus", "Kryptanalyse", "Mathematik"]
 image: "eyecatch.jpg"
 mermaid: true

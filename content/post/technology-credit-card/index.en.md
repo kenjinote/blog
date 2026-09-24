@@ -2,7 +2,7 @@
 title: "Financial Network: How Credit Card Payments Work - The Technology from Authorization to Clearing"
 description: "What kind of data communication happens behind the scenes the moment a card is scanned at a store? We explain the mechanics of 'authorization' and 'clearing' that support the global payment network."
 slug: "technology-credit-card"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

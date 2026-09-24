@@ -2,7 +2,7 @@
 title: 'Transformaciones Afines y Proyectivas: La Fusión del Álgebra Lineal y la Geometría detrás del CG y la Perspectiva'
 description: 'Una explicación detallada de los fundamentos matemáticos de las transformaciones afines y proyectivas, su expresión usando coordenadas homogéneas y aplicaciones en gráficos por computadora y procesamiento de imágenes.'
 slug: 'affine-and-projective-transformations'
-date: '2026-09-20T15:15:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - 'mathematics'

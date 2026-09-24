@@ -1,7 +1,7 @@
 ---
 title: 'क्वांटम सुप्रीमेसी क्या है? गूगल और आईबीएम के नवीनतम रुझान'
 slug: "what-is-quantum-supremacy-google-ibm"
-date: "2026-09-11T18:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

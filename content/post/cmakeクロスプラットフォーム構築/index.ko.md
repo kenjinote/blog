@@ -1,7 +1,7 @@
 ---
 title: 'CMake를 사용한 크로스 플랫폼 C++ 빌드 환경 구축 절차'
 slug: "cmake-cross-platform-build-environment-guide"
-date: "2026-09-12T09:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

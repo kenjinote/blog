@@ -1,7 +1,7 @@
 ---
 title: 'Webフォントサービス「FONTPLUS (フォントプラス)」の特徴と料金'
 slug: "fontplus.jp"
-date: 2023-02-07T20:59:01+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["font","fontplus"]
 draft: false
 image: "img.webp"

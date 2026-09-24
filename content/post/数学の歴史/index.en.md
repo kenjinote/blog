@@ -1,7 +1,7 @@
 ---
 title: 'History of Mathematics and Ancient Difficult Problems: Learning the Three Classical Problems of Antiquity and the Archimedean Spiral'
 slug: "MathematicsのHistory"
-date: 2023-07-22T15:25:10+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Mathematics", "History"]
 draft: false
 image: "img.webp"

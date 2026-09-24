@@ -1,5 +1,6 @@
 ---
 title: "Complete Understanding and Practical Application of the Pareto Principle (80/20 Rule): Essential Thinking that Drastically Changes Business and Life"
+date: "2026-09-24T16:08:36+09:00"
 description: "A detailed guide on the Pareto Principle (80/20 Rule), which states that \"80% of results come from 20% of causes.\" Explains its historical background, specific examples in business and daily life, and practical methods. A must-read for identifying the essence and achieving maximum results with minimal effort."
 slug: "business-pareto-principle"
 categories: ["business"]

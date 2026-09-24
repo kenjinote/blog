@@ -2,7 +2,7 @@
 title: "Georg Cantor: El genio trágico que descubrió la jerarquía del infinito y sentó las bases de las matemáticas"
 description: "Una explicación detallada de la turbulenta vida de Georg Cantor, el fundador de la teoría de conjuntos, y su asombroso logro matemático al probar que existen diferentes tamaños de infinito."
 slug: "cantor"
-date: "2026-09-20T19:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matemáticas"

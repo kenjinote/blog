@@ -2,7 +2,7 @@
 title: "Perisai Internet: Mekanisme SSL/TLS - Mengapa Informasi Kartu Kredit Dapat Dikirim dengan Aman?"
 description: "Apa arti 's' dalam 'https' pada URL situs web? Kami menjelaskan mekanisme 'SSL/TLS', teknologi enkripsi yang melindungi keamanan e-commerce dan komunikasi di seluruh dunia, melalui metode hibrida antara kunci simetris dan publik."
 slug: "network-ssl-tls"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

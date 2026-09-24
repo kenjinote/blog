@@ -2,7 +2,7 @@
 title: "페르마의 소정리: 소수의 성질과 현대 암호 이론(RSA 암호)을 지탱하는 기초"
 description: "페르마의 소정리에 대한 직관적인 이해부터 수학적 증명, 그리고 RSA 암호에서의 실용적인 응용까지 자세히 해설합니다."
 slug: "fermats-little-theorem"
-date: 2026-09-20T15:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "수학"

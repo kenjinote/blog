@@ -2,7 +2,7 @@
 title: "Isaac Newton: Approaching the Genius's Life Through the Discovery of Calculus and Universal Gravitation"
 description: "A deep dive into Isaac Newton's extraordinary life, episodes during the Year of Wonders, and his groundbreaking discoveries in mathematics and physics, including calculus."
 slug: "newton"
-date: "2026-09-20T19:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematics"

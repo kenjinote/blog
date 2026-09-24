@@ -1,7 +1,7 @@
 ---
 title: 'Windows मानक ''Snipping Tool'' का उपयोग कैसे करें और स्क्रीन रिकॉर्डिंग और कैप्चर के तरीके'
 slug: "Snipping Toolの使い方"
-date: 2024-04-01T23:19:45+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Snipping Tool", "छवि", "वीडियो", "स्क्रीनशॉट", "रिकॉर्डिंग", "कैप्चर"]
 draft: false
 image: "img.webp"

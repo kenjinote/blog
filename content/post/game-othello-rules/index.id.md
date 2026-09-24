@@ -2,7 +2,7 @@
 title: "Strategi Permainan Papan: Aturan Dasar Othello dan Pola Kemenangan Pasti - Taktik Cermat hingga Merebut Sudut"
 description: "Othello (Reversi) disebut 'Dipahami dalam 1 menit, dikuasai seumur hidup'. Alih-alih membalikkan batu secara membabi buta, kami menjelaskan 'batu pasti' dan 'teori derajat keterbukaan' agar pemula dapat berkembang."
 slug: "game-othello-rules"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

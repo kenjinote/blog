@@ -2,7 +2,7 @@
 title: "Georg Cantor: Jenius Tragis yang Menemukan Hierarki Ketakterhinggaan dan Membangun Fondasi Matematika"
 description: "Penjelasan mendetail tentang kehidupan penuh gejolak Georg Cantor, pendiri teori himpunan, dan pencapaian matematisnya yang menakjubkan dalam membuktikan bahwa ada ukuran ketakterhinggaan yang berbeda."
 slug: "cantor"
-date: "2026-09-20T19:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matematika"

@@ -1,7 +1,7 @@
 ---
 title: 'Como usar o ''Snipping Tool'' padrão do Windows, gravação de tela e captura'
 slug: "Snipping Toolの使い方"
-date: 2024-04-01T23:19:45+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Snipping Tool", "Imagem", "Vídeo", "Captura de tela", "Gravação", "Captura"]
 draft: false
 image: "img.webp"

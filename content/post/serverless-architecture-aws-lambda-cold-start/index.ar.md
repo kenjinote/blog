@@ -2,7 +2,7 @@
 title: "نور وظلام البنية المعمارية بدون خوادم: ما وراء AWS Lambda والبداية الباردة"
 description: "لا يقتصر الأمر على مزايا البنية المعمارية بدون خوادم، بل نتعمق في آلية عمل الحاويات في الخلفية، ومشكلة البداية الباردة، والحلول المتاحة لها (مثل SnapStart)."
 slug: "serverless-architecture-aws-lambda-cold-start"
-date: 2026-09-21T09:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - "cloud"

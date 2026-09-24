@@ -1,6 +1,6 @@
 ---
 title: '试用面向量子计算机的编程语言 Q#'
-date: "2026-09-12T00:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 slug: "qsharp-quantum-programming-language-intro"
 image: "img/eyecatch.jpg"
 math: true

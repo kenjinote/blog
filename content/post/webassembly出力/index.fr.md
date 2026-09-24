@@ -1,7 +1,7 @@
 ---
 title: 'Générer du WebAssembly (Wasm) depuis C++ et Rust pour une exécution dans le navigateur'
 slug: "webassembly-wasm-from-cpp-and-rust"
-date: "2026-09-12T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

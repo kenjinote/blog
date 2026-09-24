@@ -5,7 +5,7 @@
 
 title: 'Rust 컴파일러(rustc)를 최신 버전으로 업데이트하는 방법'
 slug: "rustcをアップデートする方法"
-date: 2023-03-18T10:27:02+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["RUST", "RUSTC", "UPDATE"]
 draft: false
 image: "img.webp"

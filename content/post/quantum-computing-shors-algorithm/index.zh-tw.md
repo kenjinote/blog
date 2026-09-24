@@ -2,7 +2,7 @@
 title: "量子電腦的原理與秀爾演算法：為什麼量子計算能破解密碼？"
 description: "從量子電腦的基礎開始，深入探討對RSA密碼構成威脅的秀爾演算法（Shor's Algorithm）的數學與量子力學原理。結合使用Qiskit的實作範例以及未來後量子密碼學的展望，以豐富的資訊量進行詳細解說。"
 slug: "quantum-computing-shors-algorithm"
-date: "2026-09-21T02:35:46+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "technology"

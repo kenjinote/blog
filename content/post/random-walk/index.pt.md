@@ -2,7 +2,7 @@
 title: "Passeio Aleatório: Entendendo a Matemática da Difusão e do Movimento Browniano"
 description: "Uma explicação detalhada do contexto matemático do passeio aleatório, desde o básico até os fenômenos de difusão e o movimento browniano. Um guia definitivo incluindo o teorema de Pólya."
 slug: "random-walk"
-date: "2026-09-20T15:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Matemática"]
 tags: ["Passeio Aleatório", "Probabilidade", "Equação de Difusão", "Movimento Browniano", "Python"]

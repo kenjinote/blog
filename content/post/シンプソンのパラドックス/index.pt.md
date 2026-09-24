@@ -2,7 +2,7 @@
 title: 'Paradoxo de Simpson: O misterioso fenômeno de ganhar nas partes, mas perder no todo'
 slug: 'simpsons-paradox'
 description: 'Mesmo que a "taxa de aprovação" ganhe em cada departamento, ao calcular a "taxa de aprovação total" de toda a empresa, ela se inverte e perde!? Explicamos de forma fácil o "Paradoxo de Simpson", uma armadilha assustadora onde os dados estatísticos nos enganam.'
-date: '2026-09-10T07:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/simpsons_paradox.jpg'
 math: true
 mermaid: true

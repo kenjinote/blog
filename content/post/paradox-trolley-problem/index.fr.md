@@ -1,5 +1,6 @@
 ---
 title: "【Le problème du tramway : le choix ultime de l'éthique et les abysses de l'intuition morale humaine】"
+date: "2026-09-24T16:08:36+09:00"
 description: "【Cinq ouvriers se trouvent sur la voie d'un tramway hors de contrôle, et un seul sur la voie de déviation. Tirerez-vous le levier ? Depuis l'expérience de pensée classique de Philippa Foot jusqu'à l'éthique de l'IA dans les voitures autonomes, cet article explore en profondeur le conflit entre utilitarisme et déontologie soulevé par le \"problème du tramway\", ainsi que les mécanismes de la prise de décision morale humaine à travers des milliers de mots.】"
 slug: "paradox-trolley-problem"
 categories: ["philosophy"]

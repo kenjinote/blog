@@ -2,7 +2,7 @@
 title: '柯西積分定理：複變分析的美麗基石，積分在此歸零'
 description: '詳細解釋了複變分析中最重要的定理之一——柯西積分定理，從它的直觀含義到使用格林定理的證明草圖，再到它在積分公式中的應用。'
 slug: 'cauchys-integral-theorem'
-date: 2026-09-20T14:30:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - 'mathematics'

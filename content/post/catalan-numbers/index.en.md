@@ -2,7 +2,7 @@
 title: "Catalan Numbers: Why Parentheses and Tree Structures Yield the Same Counts"
 description: "An explanation of Catalan numbers, a fascinating sequence that connects valid parentheses, binary trees, and polygon triangulation. We also cover recursive and dynamic programming computation methods."
 slug: "catalan-numbers"
-date: "2026-09-20T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

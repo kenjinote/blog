@@ -1,7 +1,7 @@
 ---
 title: '使用Windows 11的WinGet命令轻松安装与管理应用的方法'
 slug: "WinGet を使って命令で应用を安装する"
-date: 2022-10-05T12:15:20+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["WinGet"]
 draft: false
 image: "img.webp"

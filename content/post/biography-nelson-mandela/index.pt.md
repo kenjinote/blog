@@ -1,6 +1,6 @@
 ---
 title: "Nelson Mandela: A Nova África do Sul Construída sobre o Espírito Indomável e o 'Perdão'"
-date: 2026-09-23T19:46:03+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["nelson-mandela", "history"]
 image: "eyecatch.jpg"

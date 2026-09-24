@@ -1,7 +1,7 @@
 ---
 title: 'Introdução sobre como escrever e executar testes em Rust (cargo test)'
 slug: "RustでTesteを書く"
-date: 2022-10-01T02:00:59+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Rust","Testes"]
 draft: false
 image: "images/rust_logo.webp"

@@ -3,7 +3,7 @@ title: '量子電腦會破解 RSA 加密嗎？解說秀爾演算法 (Shor''s Alg
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["量子電腦", "密碼破解", "Shor演算法", "RSA"]
 image: "eyecatch.jpg"
-date: 2026-09-05T22:09:21+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["math-cryptography-quantum"]
 description: '解說隨著量子電腦的崛起，支撐現代通訊基礎設施的 RSA 加密將面臨何種威脅。從秀爾演算法的機制到 NISQ 時代的硬體現況，探討次世代的密碼破解與安全性的未來。'
 ---

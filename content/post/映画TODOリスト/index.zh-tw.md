@@ -1,7 +1,7 @@
 ---
 title: '必看！個人的電影觀看待辦清單與已觀看推薦作品紀錄'
 slug: "電影TODOリスト"
-date: 2023-04-17T00:34:13+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["電影", "TODO"]
 draft: false
 image: "image.webp"

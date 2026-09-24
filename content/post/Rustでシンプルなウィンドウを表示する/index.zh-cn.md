@@ -1,7 +1,7 @@
 ---
 title: '使用Rust和winapi创建并显示Windows简单窗口的方法'
 slug: "Rustでシンプルな窗口を表示する"
-date: 2022-10-01T19:08:58+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Rust","窗口"]
 draft: false
 image: "images/rust_logo.webp"

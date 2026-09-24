@@ -2,7 +2,7 @@
 title: "Théorie de Galois - Pourquoi les équations de degré 5 et plus n'ont pas de formule de résolution et la naissance de la théorie des groupes"
 description: "Qu'est-ce que la théorie de Galois ? Pourquoi n'y a-t-il pas de formule de résolution pour les équations de degré 5 ou plus ? Une explication simple des fondements de la théorie des groupes laissée par Évariste Galois et de la beauté de la symétrie en mathématiques."
 slug: "galois-theory"
-date: "2026-09-14T13:04:13+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "algebra"]
 tags:

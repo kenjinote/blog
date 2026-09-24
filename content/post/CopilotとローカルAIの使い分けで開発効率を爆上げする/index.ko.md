@@ -1,7 +1,7 @@
 ---
 title: 'Copilot과 로컬 AI의 용도별 활용으로 개발 효율 폭발적으로 높이기'
 slug: "hybrid-ai-development-workflow"
-date: "2026-09-11T21:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

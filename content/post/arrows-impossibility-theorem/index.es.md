@@ -1,7 +1,7 @@
 ---
 title: "Teorema de la imposibilidad de Arrow: La \"democracia (elecciones)\" perfecta no existe matemáticamente"
 image: "eyecatch.jpg"
-date: 2026-09-14T00:00:51+09:00
+date: "2026-09-24T16:08:36+09:00"
 description: "¿Es posible crear un 'sistema electoral justo para todos'? A través del 'Teorema de la imposibilidad de Arrow', demostrado por el economista Kenneth Arrow, explicamos los límites matemáticos de la democracia y cómo debemos abordar las elecciones y la toma de decisiones."
 categories: ["mathematics", "economics"]
 tags:

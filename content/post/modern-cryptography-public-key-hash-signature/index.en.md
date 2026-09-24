@@ -2,7 +2,7 @@
 title: "Foundations of Modern Cryptography (Public Key Cryptography, Hash Functions, Digital Signatures)"
 description: "A comprehensive guide to the mechanisms of modern cryptography, from symmetric and public keys to hashes and digital signatures."
 slug: "modern-cryptography-public-key-hash-signature"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

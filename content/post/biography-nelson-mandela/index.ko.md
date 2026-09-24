@@ -1,6 +1,6 @@
 ---
 title: "넬슨 만델라: 불굴의 정신과 '용서'가 쌓아올린 새로운 남아프리카 공화국"
-date: 2026-09-23T19:46:03+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["nelson-mandela", "history"]
 image: "eyecatch.jpg"

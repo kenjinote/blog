@@ -2,7 +2,7 @@
 title: "OS의 역사: Windows의 계보 (MS-DOS에서 NT 아키텍처의 완성까지)"
 description: "CUI인 MS-DOS에서 시작하여 GUI로의 전환, 그리고 견고한 NT 아키텍처에 이르는 Windows의 진화 역사."
 slug: "history-of-windows"
-date: "2026-09-23T02:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

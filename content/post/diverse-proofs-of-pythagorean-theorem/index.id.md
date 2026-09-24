@@ -2,7 +2,7 @@
 title: "Berbagai Bukti Teorema Pythagoras: Dari Geometri dan Aljabar hingga Einstein"
 description: "Temukan bukti-bukti menarik dari teorema Pythagoras. Jelajahi keindahan matematika dari Euclid hingga Einstein melalui berbagai perspektif."
 slug: "diverse-proofs-of-pythagorean-theorem"
-date: "2026-09-20T15:15:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "Matematika"

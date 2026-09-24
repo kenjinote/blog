@@ -2,7 +2,7 @@
 title: "Rumus Polyhedron Euler: Keajaiban Topologi yang Ditunjukkan oleh V - E + F = 2"
 description: "Penjelasan mendetail tentang keindahan rumus polyhedron Euler (V - E + F = 2) dan dunia topologi yang dibawanya. Mari kita jelajahi pesona invarian, dari polyhedron beraturan hingga karakteristik Euler."
 slug: "eulers-polyhedron-formula"
-date: "2026-09-20T15:15:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matematika"

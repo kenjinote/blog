@@ -2,7 +2,7 @@
 title: "ABC 추측 - 우주 간 타이히뮐러 이론에 의한 정수론의 초난제에 대한 도전"
 description: "ABC 추측의 개요와 모치즈키 신이치 교수에 의한 우주 간 타이히뮐러 이론(IUT 이론)의 획기적인 접근법에 대해 깊이 파헤쳐 봅니다."
 slug: "abc-conjecture"
-date: 2026-09-14T13:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]
 tags: ["ABC 추측", "정수론", "IUT 이론", "모치즈키 신이치"]

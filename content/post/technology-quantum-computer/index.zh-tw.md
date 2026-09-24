@@ -2,7 +2,7 @@
 title: "次世代計算機：量子電腦的運作原理 - 「0」與「1」的疊加顛覆世界"
 description: "據說超級電腦需要花費數萬年才能完成的計算，被稱為「量子電腦」的系統可以在短短幾秒鐘內解決。本文將為您解說利用量子力學中奇妙的「疊加」與「糾纏」現象，所打造出的一種全新計算範式。"
 slug: "technology-quantum-computer"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -2,7 +2,7 @@
 title: '圣彼得堡悖论：期望值为“无限大”的赌博，你愿意付多少钱？'
 slug: 'st-petersburg-paradox'
 description: '一场在数学上“无限赚钱”的赌博。然而，在现实中却没有人愿意为它付出重金。本文将为您分析这场凸显概率论与人类心理（效用）之间偏差、并成为现代经济学基础的历史性悖论。'
-date: '2026-09-10T05:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/st_petersburg.jpg'
 math: true
 mermaid: true

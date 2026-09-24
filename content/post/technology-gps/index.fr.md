@@ -2,7 +2,7 @@
 title: "Bases de la géolocalisation : Le fonctionnement du GPS - Une technologie miraculeuse à la croisée de la théorie de la relativité et des satellites artificiels"
 description: "Pourquoi l'application de cartographie de votre smartphone connaît-elle votre position actuelle ? Nous expliquons le mécanisme de calcul précis du temps utilisant les ondes radio des satellites GPS volant dans l'espace et la théorie de la relativité d'Einstein."
 slug: "technology-gps"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

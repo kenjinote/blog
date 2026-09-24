@@ -2,7 +2,7 @@
 title: "Teori Galois (Galois Theory) - Alasan Mengapa Tidak Ada Rumus Solusi untuk Persamaan Derajat 5 atau Lebih dan Lahirnya Teori Grup"
 description: "Apa itu Teori Galois? Mengapa tidak ada rumus solusi untuk persamaan derajat 5 atau lebih? Kami akan menjelaskan secara mudah dipahami dasar-dasar teori grup yang ditinggalkan oleh Évariste Galois, serta keindahan simetri dalam matematika."
 slug: "galois-theory"
-date: "2026-09-14T13:04:13+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "algebra"]
 tags:

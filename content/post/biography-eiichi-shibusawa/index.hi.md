@@ -1,6 +1,6 @@
 ---
 title: "जापानी पूंजीवाद के पिता आइची शिबुसावा: नैतिकता और अर्थशास्त्र को एकजुट करने के लिए समर्पित एक जीवन"
-date: 2026-09-23T20:59:57+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["eiichi-shibusawa", "history"]
 image: "eyecatch.jpg"

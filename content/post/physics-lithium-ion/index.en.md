@@ -2,7 +2,7 @@
 title: "Physics Laws and Everyday Technology: How Lithium-Ion Batteries Work - The Charge-Discharge Chemistry Supporting Modern Mobile Society"
 description: "From smartphones to electric vehicles, \"lithium-ion batteries\" are essential to modern society. We explain the dynamic chemical reactions of electrons and ions occurring inside them and why they are so light and have such high capacity."
 slug: "physics-lithium-ion"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

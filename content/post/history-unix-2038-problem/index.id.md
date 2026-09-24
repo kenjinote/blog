@@ -1,5 +1,6 @@
 ---
 title: "Gambaran Lengkap Masalah Tahun 2038 UNIX: Bom Waktu di Dunia Digital dan Evolusi Arsitektur Sistem"
+date: "2026-09-24T16:08:36+09:00"
 description: "Pada 19 Januari 2038, waktu UNIX yang dikelola dengan bilangan bulat bertanda 32-bit akan meluap, menyebabkan malfungsi pada banyak sistem komputer. Artikel ini membahas secara rinci tentang \"Masalah Tahun 2038\" mulai dari mekanismenya, sejarah, akar penyebab, hingga solusinya."
 slug: "history-unix-2038-problem"
 categories: ["history"]

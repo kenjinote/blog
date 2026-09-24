@@ -1,7 +1,7 @@
 ---
 title: 'Blog técnico escrito en Markdown: Configuración del editor para duplicar la velocidad de escritura'
 slug: "markdown-editor-setup-for-tech-blogs"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

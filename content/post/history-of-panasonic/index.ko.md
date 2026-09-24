@@ -2,7 +2,7 @@
 title: "파나소닉의 역사: 가전의 왕에서 B2B 및 차량용 배터리 사업으로의 화려한 전환"
 description: "마쓰시타 고노스케의 쌍구 소켓으로 시작해 테슬라를 지원하는 차량용 배터리 제조업체로 변모한 파나소닉의 역사."
 slug: "history-of-panasonic"
-date: "2026-09-23T01:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

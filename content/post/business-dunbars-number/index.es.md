@@ -1,5 +1,6 @@
 ---
 title: "¿Qué es el número de Dunbar? Una explicación exhaustiva del límite cognitivo de las relaciones humanas y su aplicación al diseño organizacional"
+date: "2026-09-24T16:08:36+09:00"
 description: "El número de Dunbar establece que \"el límite de relaciones estables que un ser humano puede mantener es de 150 personas\". En este artículo profundizamos en este principio propuesto por el psicólogo evolutivo Robin Dunbar, desde su base biológica hasta las relaciones en la era de las redes sociales, y su aplicación en el diseño organizacional cuando las empresas escalan."
 slug: "business-dunbars-number"
 categories: ["business"]

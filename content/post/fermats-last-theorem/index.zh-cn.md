@@ -2,7 +2,7 @@
 title: "费马大定理 - 留在空白处的谜题历经360年终被解开"
 description: "数学史上最著名的未解之谜“费马大定理”。在皮埃尔·德·费马死后的360年里，这个拒绝了无数天才数学家挑战的难题，是如何被安德鲁·怀尔斯证明的。本文将详细解说其戏剧性的历史和数学背景。"
 slug: "fermats-last-theorem"
-date: 2026-09-14T13:04:13+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "history"]
 tags:

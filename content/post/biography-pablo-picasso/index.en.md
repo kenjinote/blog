@@ -1,6 +1,6 @@
 ---
 title: "Pablo Picasso: The Greatest Genius of the 20th Century Who Repeated Destruction and Creation"
-date: 2026-09-23T20:51:46+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["pablo-picasso", "history"]
 image: "eyecatch.jpg"

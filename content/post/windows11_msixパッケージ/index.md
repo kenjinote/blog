@@ -1,7 +1,7 @@
 ---
 title: 'Windows 11向けMSIXパッケージの作り方と自己署名証明書の罠'
 slug: "windows-11-msix-packaging-guide"
-date: "2026-09-12T22:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

@@ -1,7 +1,7 @@
 ---
 title: 'Wie man ein versehentlich ausgeführtes git reset rückgängig macht | Schritte zur Wiederherstellung von Commits'
 slug: "git resetを取り消す方法"
-date: 2024-05-15T23:32:43+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["git", "wiederherstellen", "rückgängig machen"]
 draft: false
 image: "img.webp"

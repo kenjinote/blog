@@ -2,7 +2,7 @@
 title: "David Hilbert: Raksasa yang Meletakkan Fondasi Matematika Modern dan Lintasan Epiknya"
 description: "Penjelasan terperinci tentang kehidupan dan berbagai pencapaian matematika David Hilbert, salah satu matematikawan terbesar abad ke-19 dan ke-20. Kami melacak lintasannya dari teori invarian hingga ruang Hilbert."
 slug: "hilbert"
-date: "2026-09-20T19:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["matematika", "biografi"]
 tags: ["Hilbert", "Sejarah Matematika", "Geometri", "Analisis Fungsional", "Fisika", "Teori Bilangan"]

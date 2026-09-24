@@ -1,7 +1,7 @@
 ---
 title: 'Elecom Deft Pro समीक्षा! 8-बटन ट्रैकबॉल माउस के फायदे और नुकसान'
 slug: "ट्रैकबॉलDeft Pro（M-DPT1MRBK）のすすめ"
-date: 2023-05-02T23:28:33+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["ट्रैकबॉल", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false
 image: "img.webp"

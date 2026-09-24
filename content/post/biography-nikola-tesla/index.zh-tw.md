@@ -1,5 +1,6 @@
 ---
 title: "尼古拉·特斯拉：交流電與世界系統描繪的未來"
+date: "2026-09-24T16:08:36+09:00"
 description: "深入探討天才發明家尼古拉·特斯拉的一生、與愛迪生的「電流大戰」，以及他未完成的宏偉夢想「世界系統」，並交織技術背景進行徹底解析。"
 slug: "biography-nikola-tesla"
 categories: ["biography"]

@@ -1,7 +1,7 @@
 ---
 title: 'Mathematica परिचय: समीकरण, डिफरेंशियल और इंटीग्रल कैलकुलस जैसी बुनियादी कमांड का उपयोग कैसे करें'
 slug: "Mathematica入門"
-date: 2024-07-25T01:36:19+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Mathematica", "गणित", "एल्गोरिथ्म"]
 draft: false
 image: "img.webp"

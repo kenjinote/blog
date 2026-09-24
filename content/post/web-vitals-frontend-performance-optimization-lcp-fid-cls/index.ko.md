@@ -2,7 +2,7 @@
 title: "Web Vitals와 프론트엔드 성능 최적화 (LCP, FID, CLS 개선)"
 description: "Core Web Vitals의 각 지표에 대한 세부 사항과 이를 개선하기 위한 구체적인 프론트엔드 구현 기법."
 slug: "web-vitals-frontend-performance-optimization-lcp-fid-cls"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

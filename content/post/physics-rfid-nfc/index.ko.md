@@ -2,7 +2,7 @@
 title: "물리 법칙과 친숙한 기술: RFID와 NFC(모바일 결제)의 구조 - 전자기 유도를 통한 비접촉 통신"
 description: "Suica나 PASMO, 모바일 결제 기기를 개찰구에 터치하는 것만으로 결제가 완료되는 마법 같은 기술. 그 이면에 있는 '전자기 유도'라는 물리 법칙과 NFC 통신 규격에 대해 해설합니다."
 slug: "physics-rfid-nfc"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

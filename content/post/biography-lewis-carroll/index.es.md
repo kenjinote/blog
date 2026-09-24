@@ -1,6 +1,6 @@
 ---
 title: "Lewis Carroll: La trayectoria del matemático y lógico que creó 'Alicia en el país de las maravillas'"
-date: 2026-09-23T20:51:47+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["lewis-carroll", "history"]
 image: "eyecatch.jpg"

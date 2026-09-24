@@ -2,7 +2,7 @@
 title: "Le fonctionnement des ordinateurs quantiques et l'algorithme de Shor : pourquoi l'informatique quantique peut-elle casser la cryptographie ?"
 description: "Une explication approfondie allant des bases de l'informatique quantique aux mécanismes mathématiques et quantiques de l'algorithme de Shor, une menace pour la cryptographie RSA. Exemples d'implémentation avec Qiskit et perspectives sur la cryptographie post-quantique inclus."
 slug: "quantum-computing-shors-algorithm"
-date: "2026-09-21T02:35:46+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "technology"

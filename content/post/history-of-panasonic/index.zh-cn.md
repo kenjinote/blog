@@ -2,7 +2,7 @@
 title: "松下电器的历史：从家电之王到B2B及车载电池业务的华丽转型"
 description: "从松下幸之助的改良版插头开始，到支撑特斯拉的车载电池制造商，松下电器的蜕变历史。"
 slug: "history-of-panasonic"
-date: "2026-09-23T01:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -1,7 +1,7 @@
 ---
 title: 'Ne cédez pas aux critiques ! Des astuces pour vivre fort inspirées des citations d''Einstein'
 slug: "EinsteinのCitation célèbre"
-date: 2024-08-24T18:38:47+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Einstein", "Citations", "Philosophie", "Science", "Physique"]
 draft: false
 image: "Solvay_conference_1927.webp"

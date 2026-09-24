@@ -1,7 +1,7 @@
 ---
 title: '【完全版】博客文章创作模板！对SEO友好的标题结构与写作技巧'
 slug: "000_模板"
-date: 2022-01-01T00:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["标签1", "标签2"]
 draft: true
 categories: ["it-technology"]

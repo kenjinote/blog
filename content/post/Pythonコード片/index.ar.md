@@ -1,7 +1,7 @@
 ---
 title: 'نموذج كود بلغة Python لتنزيل الصور وحفظها مؤقتاً ثم عرضها'
 slug: "Pythonコード片"
-date: 2025-02-24T18:21:14+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Python", "نموذج كود"]
 draft: false
 image: "img.webp"

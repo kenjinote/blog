@@ -4,7 +4,7 @@
 
 title: 'Cómo averiguar la ubicación (ruta) de un archivo ejecutable en el path en Windows [Comando where]'
 slug: "Windows でRutaの通ったArchivo ejecutableの場所を見つける方法"
-date: 2023-04-03T00:02:55+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Windows", "path", "archivo ejecutable", "símbolo del sistema"]
 draft: false
 image: "img.webp"

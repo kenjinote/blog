@@ -1,5 +1,6 @@
 ---
 title: "Unix哲学（模块化设计的精髓）：单一职责与管道交织的软件艺术"
+date: "2026-09-24T16:08:36+09:00"
 description: "深入剖析Unix哲学根基中的“模块化设计”精髓。全面解析“做好一件事的程序”、“通过文本流协作”等至今仍在现代软件工程中适用的不朽原则。"
 slug: "philosophy-unix-modular-design"
 categories: ["philosophy"]

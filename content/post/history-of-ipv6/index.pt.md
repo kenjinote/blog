@@ -2,7 +2,7 @@
 title: "Tecnologia de Redes: A Transformação do IPv4 para o IPv6 e a Internet da Próxima Geração"
 description: "Endereços IP, os endereços da Internet. Explicamos como o IPv4, que tinha apenas 4,3 bilhões de endereços, superou a crise de esgotamento e está migrando para o IPv6, que possui um espaço infinito."
 slug: "history-of-ipv6"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

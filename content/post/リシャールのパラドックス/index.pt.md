@@ -2,7 +2,7 @@
 title: 'O Paradoxo de Richard: A Contradição Causada por Decimais Infinitos e o "Argumento da Diagonal"'
 slug: 'richards-paradox'
 description: 'Listar todos os números reais que podem ser definidos por palavras e, a partir deles, criar um novo número real diferente. Explicamos de forma fácil o "Paradoxo de Richard", que abalou os fundamentos da matemática, e a inspiração de Gödel para superá-lo.'
-date: '2026-09-10T12:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/richards_paradox.jpg'
 math: true
 mermaid: true

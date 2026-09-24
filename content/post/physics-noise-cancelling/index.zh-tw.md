@@ -2,7 +2,7 @@
 title: "物理的奧秘：降噪 - 用聲音消除聲音的波的干涉"
 description: "只要戴上耳機就能讓周圍噪音消失的「降噪」。本文將深入解說其背後的物理學『波的干涉』原理與技術歷史。"
 slug: "physics-noise-cancelling"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

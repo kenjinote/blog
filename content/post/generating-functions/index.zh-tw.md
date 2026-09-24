@@ -2,7 +2,7 @@
 title: "母函數：將數列變成「函數」有什麼好處？"
 description: "介紹如何將硬幣的支付方式或組合數作為方程式的係數來計算。講解母函數的魔力，以及它在費氏數列中的應用。"
 slug: "generating-functions"
-date: "2026-09-20T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "數學"

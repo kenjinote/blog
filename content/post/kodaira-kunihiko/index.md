@@ -2,7 +2,7 @@
 title: "小平邦彦：日本初のフィールズ賞受賞者とその幾何学のシンフォニー"
 description: "日本で初めてフィールズ賞を受賞した数学者、小平邦彦の生涯と、調和積分論から複素多様体論に至る偉大な業績を解説します。"
 slug: "kodaira-kunihiko"
-date: "2026-09-20T20:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Kodaira Kunihiko", "Fields Medal", "Complex Geometry"]

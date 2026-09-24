@@ -2,7 +2,7 @@
 title: "Основы веб-безопасности и последние тенденции: от XSS и CSRF до CORS и CSP"
 description: "Меры безопасности для защиты веб-приложений от угроз. Мы всесторонне объясняем классические уязвимости XSS и CSRF, а также современные необходимые технологии, такие как CORS, CSP и SameSite Cookie."
 slug: "web-security-basics-cors-csp"
-date: 2026-09-20T17:10:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - "security"

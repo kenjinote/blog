@@ -1,6 +1,6 @@
 ---
 title: "Жизнь и философия Коносуке Мацуситы: Наследие бога менеджмента для будущего"
-date: "2026-09-23T20:59:56+09:00"
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["konosuke-matsushita", "history"]
 image: "eyecatch.jpg"

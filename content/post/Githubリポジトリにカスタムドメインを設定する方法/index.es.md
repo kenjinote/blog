@@ -3,7 +3,7 @@
 
 title: 'Cómo configurar un dominio personalizado en tu repositorio de GitHub｜Edición Onamae.com'
 slug: "GithubRepositorioにカスタムDominioを設定する方法"
-date: 2022-09-13T01:16:40+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Github", "Dominio"]
 draft: false
 image: "images/octocat.webp"

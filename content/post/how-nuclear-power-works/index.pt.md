@@ -2,7 +2,7 @@
 title: "Como funciona a energia nuclear: da fissão à eletricidade e por que o resfriamento continua após a parada"
 description: "Entenda a energia nuclear pela energia de ligação, reações em cadeia, nêutrons atrasados, reatores PWR e BWR, turbinas, calor de decaimento e combustível usado, com história, diagramas e cálculos."
 slug: "how-nuclear-power-works"
-date: "2026-09-24T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.png"
 categories: ["technology", "physics"]
 tags: ["nuclear-power", "nuclear-fission", "energy", "engineering", "history"]

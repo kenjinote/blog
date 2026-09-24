@@ -9,7 +9,7 @@
 
 title: 'Los pros y contras del movimiento antivacunas y las lecciones epidemiológicas: La "ilusión de causalidad" que destacó la pandemia de COVID-19'
 slug: "反ワクチンの功罪"
-date: 2026-01-24T15:41:23+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Problemas sociales", "Salud", "Alfabetización informacional"]
 draft: false
 image: "img.webp"

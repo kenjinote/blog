@@ -1,7 +1,7 @@
 ---
 title: '[Cakupan Lengkap] Penjelasan Menyeluruh dan Mudah Dipahami tentang ''Eksperimen Celah Ganda'', Misteri Terbesar Mekanika Kuantum'
 slug: "double-slit-experiment-ultimate-guide"
-date: "2026-09-08T01:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Fisika", "Mekanika Kuantum", "Eksperimen celah ganda", "Persamaan Schrödinger"]
 categories: ["physics-science"]
 math: true

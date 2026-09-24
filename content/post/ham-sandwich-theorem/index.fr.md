@@ -2,7 +2,7 @@
 title: "Le Théorème du Sandwich au Jambon : Peut-on Couper 3 Ingrédients avec une Seule Coupe ?"
 description: "Une explication détaillée du théorème du sandwich au jambon, qui stipule qu'il existe toujours un plan qui coupe simultanément trois objets dans l'espace 3D, d'une approche intuitive au théorème de Borsuk-Ulam."
 slug: "ham-sandwich-theorem"
-date: "2026-09-20T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathématiques"

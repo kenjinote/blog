@@ -1,7 +1,7 @@
 ---
 title: "정지 문제(Halting Problem): 절대로 만들 수 없는 최강의 프로그램"
 image: "eyecatch.jpg"
-date: 2026-09-14T00:00:51+09:00
+date: "2026-09-24T16:08:36+09:00"
 description: "컴퓨터 과학에서 가장 유명한 미해결 문제(증명됨) 중 하나인 정지 문제에 대해 해설합니다. 귀류법을 통한 증명, 직관적인 구체적 예시, 수식과 도해를 사용하여 알기 쉽게 설명합니다."
 categories: ["computer-science", "theory-of-computation"]
 tags: ["Halting Problem", "Alan Turing", "Algorithm", "Mathematics"]

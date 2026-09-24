@@ -1,6 +1,6 @@
 ---
 title: "오픈 소스의 거성: 리누스 토발즈의 궤적과 철학"
-date: 2026-09-23T19:18:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["linus-torvalds", "history"]
 image: "eyecatch.jpg"

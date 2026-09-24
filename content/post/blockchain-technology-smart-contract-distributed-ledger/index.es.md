@@ -2,7 +2,7 @@
 title: "Tecnología Blockchain y Contratos Inteligentes (Mecanismo de Libro Mayor Distribuido)"
 description: "Explorando los principios fundamentales de blockchain, los algoritmos de consenso y la implementación de contratos inteligentes."
 slug: "blockchain-technology-smart-contract-distributed-ledger"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "blockchain"

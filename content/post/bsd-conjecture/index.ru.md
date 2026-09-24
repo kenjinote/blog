@@ -2,7 +2,7 @@
 title: "Гипотеза Бёрча — Свиннертон-Дайера (гипотеза BSD) - Рациональные точки на эллиптических кривых и L-функции"
 description: "Подробное математическое объяснение гипотезы Бёрча — Свиннертон-Дайера (гипотеза BSD), одной из Задач тысячелетия, от основ эллиптических кривых до их глубокой связи с L-функциями."
 slug: "bsd-conjecture"
-date: "2026-09-14T13:05:17+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Number Theory", "Elliptic Curves", "BSD Conjecture", "Millennium Prize Problems"]

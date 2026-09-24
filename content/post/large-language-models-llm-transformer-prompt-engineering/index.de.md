@@ -2,7 +2,7 @@
 title: "Funktionsweise von LLMs (Large Language Models) und Anwendung in der Programmierung (Transformer-Modelle, Prompt Engineering)"
 description: "Wir erklären ausführlich den mathematischen Mechanismus der Transformer-Architektur, die Grundlage von Large Language Models (LLMs), fortgeschrittene Techniken des Prompt Engineerings und die praktische Anwendung in der Programmierung."
 slug: "large-language-models-llm-transformer-prompt-engineering"
-date: "2026-09-21T14:51:08+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["ai", "llm", "transformer", "prompt-engineering"]

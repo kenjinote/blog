@@ -2,7 +2,7 @@
 title: "كيف تعمل طاقة الاندماج النووي: من تفاعلات النجوم إلى الكهرباء"
 description: "شرح تفاعل الديوتيريوم والتريتيوم وحصر البلازما والتوكاماك والستيلاراتور والليزر، مع موازنة الطاقة ودورة الوقود وتحديات المواد والصيانة."
 slug: "how-fusion-power-works"
-date: "2026-09-24T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.png"
 categories: ["technology", "physics"]
 tags: ["nuclear-fusion", "energy", "plasma", "engineering", "history"]

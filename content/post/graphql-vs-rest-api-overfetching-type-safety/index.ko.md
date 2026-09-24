@@ -2,7 +2,7 @@
 title: "GraphQL vs REST API (오버페칭 해결 및 타입 안정성)"
 description: "REST API의 한계와 GraphQL이 가져다주는 유연한 데이터 페칭 및 타입 안전한 프론트엔드 개발."
 slug: "graphql-vs-rest-api-overfetching-type-safety"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "backend"

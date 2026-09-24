@@ -2,7 +2,7 @@
 title: "阿里巴巴的歷史：中國電商革命與數位生態系統的建立"
 description: "馬雲如何變革中國的零售與支付，並建立起龐大的數位生態系統。"
 slug: "history-of-alibaba"
-date: "2026-09-23T01:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

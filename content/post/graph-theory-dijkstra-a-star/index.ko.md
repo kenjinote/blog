@@ -2,7 +2,7 @@
 title: "그래프 이론과 다익스트라법·A* 알고리즘: 경로 탐색의 수학적 기반과 구현"
 description: "그래프 이론의 기초부터 시작하여 최단 경로 문제에서의 다익스트라법과 A* 알고리즘의 수학적 배경, 데이터 구조, Python 구현까지 철저히 해설합니다."
 slug: graph-theory-dijkstra-a-star
-date: 2026-09-21T02:45:54+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - mathematics

@@ -1,7 +1,7 @@
 ---
 title: '一键关闭电脑电源！创建Windows关机快捷方式的方法'
 slug: "Windows を关机する快捷方式を作成する方法"
-date: 2023-04-11T17:03:32+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Windows", "关机", "快捷方式"]
 draft: false
 image: "img.webp"

@@ -1,7 +1,7 @@
 ---
 title: '數學愛好者必看！對程式設計有用的10個優美數學公式'
 slug: "10-beautiful-math-formulas-for-programming"
-date: "2026-09-12T01:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

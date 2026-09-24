@@ -4,7 +4,7 @@
 
 title: 'Cómo resolver el problema del viajante de comercio (TSP) con Mathematica'
 slug: "MathematicaでProblema del viajanteを解く"
-date: 2022-10-12T19:05:58+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Mathematica", "Problema del viajante", "Algoritmos", "Matemáticas"]
 draft: false
 image: "img.webp"

@@ -2,7 +2,7 @@
 title: "William Brouncker: Erster Präsident der Royal Society und Kettenbrüche"
 description: "Eine detaillierte Erklärung des Lebens des britischen Mathematikers William Brouncker und seiner mathematischen Errungenschaften wie dem Kettenbruch von Pi und der Pellschen Gleichung. Von Fermats Herausforderung bis zu seinen Aktivitäten in der Royal Society."
 slug: "brouncker"
-date: "2026-09-20T19:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematik", "Biografie"]
 tags: ["William Brouncker", "Pi", "Kettenbruch", "Pellsche Gleichung", "Royal Society"]

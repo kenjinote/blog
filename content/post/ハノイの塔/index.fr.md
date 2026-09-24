@@ -1,7 +1,7 @@
 ---
 title: '[Introduction à Python] Explication de l''algorithme des ''Tours de Hanoï'' résolu par traitement récursif'
 slug: "Tours de Hanoï"
-date: 2025-04-17T22:23:14+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Tour de Hanoï", "Algorithme", "Python"]
 draft: false
 image: "img.webp"

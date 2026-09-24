@@ -2,7 +2,7 @@
 title: "Alexandre Grothendieck : Vie et Œuvres du Plus Grand Mathématicien du 20e Siècle"
 description: "Une explication détaillée de la vie extraordinaire et des réalisations révolutionnaires en géométrie algébrique d'Alexandre Grothendieck. Nous explorons comment sa pensée et sa philosophie ont influencé les mathématiques modernes."
 slug: "grothendieck"
-date: 2026-09-20T20:30:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathématiques", "Biographie"]
 tags: ["Grothendieck", "Géométrie Algébrique", "Théorie des Schémas", "Théorie des Catégories"]

@@ -9,7 +9,7 @@
 
 title: 'Explicación sencilla de ''Criba general del cuerpo de números (GNFS)'', la matemática más poderosa de la humanidad que rompe el cifrado de Internet'
 slug: "インターネットのCriptografíaを破る人類最強のMatemáticas「一般数体篩法（GNFS）」とは？"
-date: 2026-09-05T02:09:08+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Matemáticas", "Criptografía", "RSA", "GNFS"]
 draft: false
 image: "gnfs_two_worlds_1788542142485.webp"

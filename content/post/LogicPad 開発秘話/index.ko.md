@@ -9,7 +9,7 @@
 
 title: '로우코드 도구 ''LogicPad'' 개발 비화: 왜 이것을 만들었는가?'
 slug: "LogicPad 開発秘話"
-date: 2025-07-30T23:51:35+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["LogicPad", "개발", "비화"]
 draft: false
 image: "img.webp"

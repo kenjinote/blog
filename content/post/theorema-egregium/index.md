@@ -2,7 +2,7 @@
 title: "ガウスの驚異の定理（Theorema Egregium） - ピザの食べ方にも応用できる微分幾何学の金字塔"
 description: "カール・フリードリヒ・ガウスが発見した「驚異の定理」について、その数学的背景と、ピザを食べる時の日常的な応用に至るまで深く解説します。"
 slug: "theorema-egregium"
-date: "2026-09-14T13:11:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]
 tags: ["幾何学", "ガウス", "ピザの定理", "Theorema Egregium", "微分幾何学"]

@@ -1,6 +1,6 @@
 ---
 categories: ["biography"]
-date: 2026-09-23T19:18:01+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 tags: ["marc-andreessen", "history"]
 title: "इंटरनेट के शुरुआती दिनों से भविष्य का निर्माण करने वाले व्यक्ति: मार्क एंड्रीसेन का जीवन और दर्शन"

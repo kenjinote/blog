@@ -2,7 +2,7 @@
 title: 'Paradoks Banach-Tarski: Memotong 1 Bola Akan Menghasilkan 2 Bola yang Sama Besar?'
 slug: 'banach-tarski-paradox'
 description: 'Bagaimana jika sebutir kacang polong dipotong dan disusun ulang seperti teka-teki, ternyata bisa menjadi sebesar Matahari? Artikel ini menjelaskan dunia ajaib "Paradoks Banach-Tarski", yang paling berlawanan dengan intuisi namun sepenuhnya benar secara logis, yang disebabkan oleh "Aksioma Pilihan" dalam matematika modern.'
-date: '2026-09-10T02:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/banach_tarski.jpg'
 math: true
 mermaid: true

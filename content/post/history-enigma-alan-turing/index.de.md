@@ -1,5 +1,6 @@
 ---
 title: "Die Entschlüsselung der Enigma und Alan Turing: Das Genie und die Maschine, die die Welt retteten"
+date: "2026-09-24T16:08:36+09:00"
 description: "Die Entschlüsselung der Enigma entschied über den Ausgang des Zweiten Weltkriegs. Ein detaillierter Bericht über den unbekannten Kampf des genialen Mathematikers Alan Turing und der Codeknacker von Bletchley Park."
 slug: "history-enigma-alan-turing"
 categories: ["history"]

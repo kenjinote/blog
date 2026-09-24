@@ -2,7 +2,7 @@
 title: "Joseph-Louis Lagrange: The Father of Analytical Mechanics and Giant of Mathematical Physics"
 description: "A detailed explanation of the life of the 18th-century mathematician and physicist Joseph-Louis Lagrange, and his great achievements in analytical mechanics, calculus of variations, and number theory."
 slug: "lagrange"
-date: "2026-09-20T19:10:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

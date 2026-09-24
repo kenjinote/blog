@@ -1,7 +1,7 @@
 ---
 title: "Cuando las palabras se describen a sí mismas: la paradoja de Grelling-Nelson"
 description: "Desentrañamos el profundo laberinto de la lógica y la semántica creado por la clasificación de palabras en 'autológicas' y 'heterológicas'."
-date: 2026-09-10T21:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 draft: false
 slug: "grelling-nelson-paradox"
 image: "img/grelling_nelson.jpg"

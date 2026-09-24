@@ -2,7 +2,7 @@
 title: "Alan Turing: The Father of Computer Science and a Peerless Genius Mathematician"
 description: "A detailed explanation of Alan Turing's life, the deciphering of Enigma, the Turing machine, the halting problem, and the mathematics of morphogenesis. Exploring how his legacy continues to shape the modern world."
 slug: "turing"
-date: "2026-09-20T20:20:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematics", "Biography"]
 tags: ["Alan Turing", "Turing Machine", "Enigma", "Halting Problem", "Morphogenesis"]

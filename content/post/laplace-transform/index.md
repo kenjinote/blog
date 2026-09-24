@@ -2,7 +2,7 @@
 title: "ラプラス変換：難しい微分方程式を「代数方程式」に変換して解く技術"
 description: "ラプラス変換の基礎から微分方程式への応用までを徹底解説。時間領域と複素周波数領域を行き来する強力な数学的ツールの本質に迫ります。"
 slug: "laplace-transform"
-date: "2026-09-20T14:40:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

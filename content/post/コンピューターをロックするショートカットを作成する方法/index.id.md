@@ -1,7 +1,7 @@
 ---
 title: 'Kunci PC Windows dalam 1 Detik! Cara Membuat dan Menggunakan Pintasan yang Praktis'
 slug: "Kunci KomputerするPintasanを作成する方法"
-date: 2024-04-01T01:37:49+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Windows", "Kunci Komputer", "Pintasan"]
 draft: false
 image: "img.webp"

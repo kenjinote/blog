@@ -2,7 +2,7 @@
 title: "بنية شبكة انعدام الثقة (الابتعاد عن الدفاع المحيطي)"
 description: "تعلم مفاهيم وطرق تنفيذ بنية انعدام الثقة من خلال مبادرة BeyondCorp التابعة لشركة Google."
 slug: "zero-trust-network-architecture-beyond-corp"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

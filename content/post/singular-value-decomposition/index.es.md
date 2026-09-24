@@ -2,7 +2,7 @@
 title: "Descomposición en Valores Singulares (SVD): Descomponiendo Cualquier Matriz en Rotaciones y Escalado para Compresión de Datos e IA"
 description: "Una guía completa sobre los fundamentos matemáticos, la intuición geométrica y las aplicaciones de la Descomposición en Valores Singulares (SVD) en compresión de imágenes y NLP."
 slug: "singular-value-decomposition"
-date: "2026-09-20T14:50:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Matemáticas"]
 tags: ["SVD", "Álgebra Lineal", "Machine Learning", "Compresión de Datos", "IA", "Python"]

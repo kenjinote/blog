@@ -2,7 +2,7 @@
 title: 'Cauchy''s Integral Theorem: The Beautiful Foundation of Complex Analysis Where Integrals Vanish'
 description: 'A detailed explanation of Cauchy''s Integral Theorem, one of the most important theorems in complex analysis, from its intuitive meaning to a sketch of its proof using Green''s theorem and its application to the integral formula.'
 slug: 'cauchys-integral-theorem'
-date: 2026-09-20T14:30:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - 'mathematics'

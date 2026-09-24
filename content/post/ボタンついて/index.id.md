@@ -1,7 +1,7 @@
 ---
 title: 'Cara Membuat Tombol (Kontrol GUI) dan Menerapkan Pemrosesan Acara (Event) Menggunakan Windows API'
 slug: "Tombolついて"
-date: 2023-01-14T20:24:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["tombol", "GUI"]
 draft: false
 image: "img.webp"

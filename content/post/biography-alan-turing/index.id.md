@@ -1,5 +1,6 @@
 ---
 title: "Alan Turing: Bapak AI dan Akhir Tragisnya"
+date: "2026-09-24T16:08:36+09:00"
 description: "Menggali secara mendalam kehidupan, pencapaian, dan warisan Alan Turing, matematikawan jenius yang membangun fondasi ilmu komputer modern dan kecerdasan buatan, namun mengalami nasib tragis karena prasangka zamannya."
 slug: "biography-alan-turing"
 categories: ["biography"]

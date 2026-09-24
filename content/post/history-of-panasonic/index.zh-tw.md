@@ -2,7 +2,7 @@
 title: "Panasonic的歷史：從家電之王到B2B・車用電池事業的華麗轉身"
 description: "從松下幸之助的雙燈泡插座開始，蛻變為支持特斯拉的車用電池製造商之Panasonic的歷史。"
 slug: "history-of-panasonic"
-date: "2026-09-23T01:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

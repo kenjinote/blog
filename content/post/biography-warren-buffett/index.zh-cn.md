@@ -1,6 +1,6 @@
 ---
 title: "「奥马哈先知」沃伦·巴菲特：践行长期投资与复利哲学的投资家"
-date: 2026-09-23T20:59:57+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["warren-buffett", "history"]
 image: "eyecatch.jpg"

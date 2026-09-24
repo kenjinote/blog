@@ -2,7 +2,7 @@
 title: "卡塔兰数：为什么括号排列与树结构得出相同的数量"
 description: "本文解释了卡塔兰数这一奇妙的数列，它将合法括号序列、二叉树和多边形三角剖分联系在一起。我们还将介绍递归和动态规划的计算方法。"
 slug: "catalan-numbers"
-date: "2026-09-20T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

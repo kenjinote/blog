@@ -2,7 +2,7 @@
 title: "網路技術：從 IPv4 到 IPv6 的演變與次世代網際網路"
 description: "作為網際網路地址的 IP 位址。本文將解說僅有 43 億個的 IPv4 如何克服枯竭危機，並轉移到擁有無限空間的 IPv6。"
 slug: "history-of-ipv6"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

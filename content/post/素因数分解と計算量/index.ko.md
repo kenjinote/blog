@@ -1,7 +1,7 @@
 ---
 title: '소인수분해의 한계와 계산량의 빅오(O) 표기법 해설'
 slug: "prime-factorization-limits-big-o-notation"
-date: "2026-09-11T23:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

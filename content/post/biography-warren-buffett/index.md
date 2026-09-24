@@ -1,6 +1,6 @@
 ---
 title: "「オマハの賢人」ウォーレン・バフェット：長期投資と複利の哲学を体現する投資家"
-date: 2026-09-23T20:59:57+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["warren-buffett", "history"]
 image: "eyecatch.jpg"

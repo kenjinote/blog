@@ -2,7 +2,7 @@
 title: "贝叶斯定理：用“新证据”更新概率，AI与统计的核心"
 description: "深入解释贝叶斯定理如何根据新证据更新概率，其数学背景以及在人工智能和机器学习中的应用。"
 slug: "bayes-theorem"
-date: "2026-09-20T15:15:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

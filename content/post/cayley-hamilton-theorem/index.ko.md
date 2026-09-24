@@ -2,7 +2,7 @@
 title: "케일리-해밀턴 정리: 행렬이 자신의 '특성 방정식'을 만족하는 신기한 성질"
 description: "선형대수학에서 가장 놀라운 결과 중 하나인 케일리-해밀턴 정리에 대해 직관적인 의미부터 증명, 그리고 응용까지 자세히 해설합니다."
 slug: "cayley-hamilton-theorem"
-date: 2026-09-20T14:50:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "수학"

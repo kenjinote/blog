@@ -2,7 +2,7 @@
 title: "丢番图：代数之父及其伟大遗产"
 description: "详细解读古希腊数学家丢番图的生平、代表作《算术》、丢番图方程，以及隐藏在其墓志铭中的谜题。"
 slug: "diophantus"
-date: 2026-09-20T18:40:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

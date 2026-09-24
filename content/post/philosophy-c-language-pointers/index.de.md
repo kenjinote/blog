@@ -1,5 +1,6 @@
 ---
 title: "Die Philosophie von C: Der Abgrund der Programmierung durch Zeiger und Freiheit"
+date: "2026-09-24T16:08:36+09:00"
 description: "Der Kern der Sprache C: \"Zeiger\" und \"Freiheit\". Wie schöpft die Philosophie, den Entwicklern alles anzuvertrauen, die Hardware-Grenzen aus und fördert das Wachstum der Programmierer? Eine detaillierte Untersuchung des Abgrunds der Speicherverwaltung."
 slug: "philosophy-c-language-pointers"
 categories: ["philosophy"]

@@ -1,7 +1,7 @@
 ---
 title: '在Windows命令提示符下通过curl调用ChatGPT API的方法'
 slug: "ChatGPT APIをcurlから呼び出す"
-date: 2025-02-01T17:15:34+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["ChatGPT", "API", "命令"]
 draft: false
 image: "img.webp"

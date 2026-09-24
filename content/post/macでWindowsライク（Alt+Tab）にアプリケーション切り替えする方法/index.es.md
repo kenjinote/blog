@@ -4,7 +4,7 @@
 
 title: 'Cómo configurar un cambio de aplicaciones al estilo Windows (Alt+Tab) en Mac'
 slug: "macでWindowsライク（Alt+Tab）にCambio de aplicaciónする方法"
-date: 2023-04-05T02:20:12+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["macos", "mac", "atajos de teclado", "cambiar de aplicación"]
 draft:
 image: "img.webp"

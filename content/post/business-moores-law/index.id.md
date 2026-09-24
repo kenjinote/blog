@@ -1,5 +1,6 @@
 ---
 title: "Hukum Moore: Masa Depan yang Ditenun oleh Semikonduktor dan Evolusi Eksponensial"
+date: "2026-09-24T16:08:36+09:00"
 description: "Bagaimana 'Hukum Moore' mendorong industri semikonduktor dan mewujudkan evolusi teknologi eksponensial dalam masyarakat modern. Penjelasan mendalam tentang sejarah, mekanisme, batasan, hingga teknologi masa depan."
 slug: "business-moores-law"
 categories: ["business"]

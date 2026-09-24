@@ -2,7 +2,7 @@
 title: "連續統假設（Continuum Hypothesis） - 康托爾的終極之問與「無法證明也無法證偽」的結局"
 description: "深入探討由格奧爾格·康托爾提出的連續統假設（CH）的歷史、數學背景，以及哥德爾和科恩對其獨立性的證明。"
 slug: "continuum-hypothesis"
-date: "2026-09-14T13:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "set-theory"]
 tags: ["Continuum Hypothesis", "Cantor", "Infinity", "Math"]

@@ -1,5 +1,6 @@
 ---
 title: "Der Ursprung des Silicon Valley: Die Innovationshochburg der \"Acht Verräter\""
+date: "2026-09-24T16:08:36+09:00"
 description: "Das Silicon Valley ist das heutige Epizentrum der IT-Branche. Hinter seiner Entstehung verbirgt sich ein gewaltiges Drama um ein außer Kontrolle geratenes Genie und acht junge Ingenieure, die \"Acht Verräter\" (Traitorous Eight), die gegen ihn rebellierten. Wir erklären ihren Werdegang im Detail."
 slug: "history-silicon-valley-traitorous-eight"
 categories: ["history"]

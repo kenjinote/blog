@@ -1,5 +1,6 @@
 ---
 title: "【蓝海战略：创造无竞争未开拓市场的终极商业理论】"
+date: "2026-09-24T16:08:36+09:00"
 description: "【彻底解说如何摆脱红海（血腥的竞争市场），开拓无竞争的全新市场空间（蓝海）的具体框架与实践战略。】"
 slug: "business-blue-ocean-strategy"
 categories: ["business"]

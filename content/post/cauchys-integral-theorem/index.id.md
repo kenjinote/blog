@@ -2,7 +2,7 @@
 title: 'Teorema Integral Cauchy: Fondasi Indah Analisis Kompleks Tempat Integral Menghilang'
 description: 'Penjelasan rinci tentang Teorema Integral Cauchy, salah satu teorema terpenting dalam analisis kompleks, dari makna intuitifnya hingga sketsa pembuktiannya menggunakan teorema Green dan aplikasinya pada rumus integral.'
 slug: 'cauchys-integral-theorem'
-date: 2026-09-20T14:30:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - 'mathematics'

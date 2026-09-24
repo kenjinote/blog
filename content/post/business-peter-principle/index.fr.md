@@ -1,5 +1,6 @@
 ---
 title: "Le Principe de Peter : Pourquoi les personnes compétentes continuent-elles d'être promues jusqu'à devenir incompétentes ? Analyse approfondie des pièges organisationnels et de leurs solutions"
+date: "2026-09-24T16:08:36+09:00"
 description: "Nous analysons en profondeur le \"Principe de Peter\", un phénomène universel dans les organisations où \"un employé compétent devient un cadre incompétent\", de son mécanisme à des solutions concrètes. Quelle est la sagesse pour survivre au destin de la société hiérarchique ?"
 slug: "business-peter-principle"
 categories: ["business"]

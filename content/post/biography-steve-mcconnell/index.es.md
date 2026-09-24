@@ -1,6 +1,6 @@
 ---
 title: "La trayectoria de Steve McConnell: El maestro que elevó el desarrollo de software a 'Ingeniería'"
-date: 2026-09-23T19:18:01+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["steve-mcconnell", "history"]
 image: "eyecatch.jpg"

@@ -1,7 +1,7 @@
 ---
 title: '''Kamukura'' depois de anos! Desfrutando do recomendado Ramen de Cebolinha com Kimchi'
 slug: "何年かぶりのKamukura（かむくら）（Lámen）"
-date: 2022-09-09T21:45:19+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Ramen", "Kamukura"]
 draft: false
 image: "images/img2.webp"

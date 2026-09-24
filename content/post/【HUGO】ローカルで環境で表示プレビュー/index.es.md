@@ -5,7 +5,7 @@
 
 title: '[Introducción a Hugo] Instalación en Windows y cómo previsualizar en el entorno local'
 slug: "【HUGO】ローカルで環境で表示プレビュー"
-date: 2022-09-05T12:28:01+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["HUGO"]
 draft: false
 image: "img.webp"

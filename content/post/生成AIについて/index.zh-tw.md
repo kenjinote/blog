@@ -1,7 +1,7 @@
 ---
 title: '學習生成式AI！東京大學教授群的推薦授課影片總整理'
 slug: "生成式AIについて"
-date: 2024-04-16T02:13:56+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["生成式AI", "YouTube", "講座"]
 draft: false
 image: "img.webp"

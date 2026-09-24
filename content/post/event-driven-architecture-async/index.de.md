@@ -2,7 +2,7 @@
 title: "Event-Driven Architecture und Asynchrone Verarbeitung in der Tiefe: Event Loop, Actor-Modell, CQRS"
 description: "Wir gehen tief in die Konzepte der Event-Driven Architecture und asynchronen Verarbeitung ein, die für moderne verteilte Systeme unerlässlich sind, aus der Perspektive von Event Loop, Actor-Modell und CQRS."
 slug: "event-driven-architecture-async"
-date: "2026-09-21T02:58:36+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "architecture"

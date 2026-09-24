@@ -2,7 +2,7 @@
 title: "네트워크 기술: HTTP 기술 해설 - 웹을 지탱하는 스테이트리스 프로토콜"
 description: "우리가 매일 웹사이트를 볼 때 이면에서 작동하는 'HTTP'. 단순한 텍스트 전송 프로토콜이 어떻게 현대의 풍부한 애플리케이션 기반으로 진화했는지 해설합니다."
 slug: "history-of-http"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

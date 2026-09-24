@@ -1,7 +1,7 @@
 ---
 title: 'Edge AI의 미래와 IoT 디바이스 구현 접근법'
 slug: "edge-ai-future-iot-implementation"
-date: "2026-09-11T05:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

@@ -2,7 +2,7 @@
 title: "Finance & Cryptography: Technical Explanation of Blockchain - The Distributed Ledger Technology Behind Bitcoin"
 description: "The magic of 'issuing and transferring money without a central authority.' We unravel the core of the blockchain created by Satoshi Nakamoto: hash functions, PoW (Proof of Work), and the mechanism of distributed ledgers."
 slug: "technology-blockchain"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

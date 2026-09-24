@@ -1,7 +1,7 @@
 ---
 title: '將 Windows 11 的右鍵選單恢復為傳統版（舊規格）的方法【登錄檔設定】'
 slug: "Windows 11の右鍵選單を従来版に戻す方法"
-date: 2024-03-30T13:13:36+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Windows11", "檔案總管"]
 draft: false
 image: "img.webp"

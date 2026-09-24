@@ -2,7 +2,7 @@
 title: "OS의 역사: Linux의 탄생과 오픈 소스 혁명"
 description: "한 학생의 취미에서 시작되어, 전 세계의 서버와 스마트폰(Android)을 지배하게 된 Linux의 역사."
 slug: "history-of-linux"
-date: "2026-09-23T02:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

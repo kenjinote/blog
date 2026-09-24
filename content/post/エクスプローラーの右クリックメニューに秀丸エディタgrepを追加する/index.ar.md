@@ -1,7 +1,7 @@
 ---
 title: 'كيفية إضافة ميزة grep الخاصة بمحرر Hidemaru إلى قائمة النقر بزر الماوس الأيمن في Windows'
 slug: "مستكشف الملفاتのقائمة النقر الأيمنにمحرر هيديماروgrepを追加する"
-date: 2024-04-03T00:00:46+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Hidemaru Editor", "File Explorer", "Right-click menu", "grep", "Registry"]
 draft: false
 image: "img.webp"

@@ -2,7 +2,7 @@
 title: "Diophante : Le Père de l'Algèbre et son Grand Héritage"
 description: "Une explication détaillée de la vie du mathématicien grec antique Diophante, de son chef-d'œuvre 'Arithmetica', des équations diophantiennes, et du mystère caché dans son épitaphe."
 slug: "diophantus"
-date: 2026-09-20T18:40:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathématiques"

@@ -1,5 +1,6 @@
 ---
 title: "Henrietta Lacks and the Immortal HeLa Cells: The Untold Story that Shaped Modern Medicine"
+date: "2026-09-24T16:08:36+09:00"
 description: "An in-depth look at the life of Henrietta Lacks, the scientific breakthroughs of HeLa cells, and their profound impact on bioethics, which are essential to modern medicine and biology."
 slug: "biography-henrietta-lacks"
 categories: ["biography"]

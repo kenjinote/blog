@@ -1,7 +1,7 @@
 ---
 title: '使用 Python 下載圖片並暫存、顯示的範例程式碼'
 slug: "Pythonコード片"
-date: 2025-02-24T18:21:14+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Python", "範例程式碼"]
 draft: false
 image: "img.webp"

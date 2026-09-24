@@ -1,5 +1,6 @@
 ---
 title: "The Full Story of the OS Religious Wars: The History of Technical and Philosophical Conflict Interwoven by Windows, Mac, and Linux"
+date: "2026-09-24T16:08:36+09:00"
 description: "A deep dive into the 'OS Religious Wars' that have unfolded over decades. We thoroughly explore the philosophy, historical background, modern coexistence, and future of Windows, Mac, and Linux."
 slug: "history-os-wars"
 categories: ["history"]

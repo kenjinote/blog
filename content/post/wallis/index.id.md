@@ -2,7 +2,7 @@
 title: "John Wallis: Pelopor Kalkulus yang Menciptakan Simbol Tak Terhingga"
 description: "John Wallis, seorang matematikawan Inggris terkemuka abad ke-17. Kita menjelajahi kehidupan dan pencapaian pria yang menemukan simbol tak terhingga '∞' dan meletakkan dasar-dasar kalkulus."
 slug: "wallis"
-date: "2026-09-20T19:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matematika"

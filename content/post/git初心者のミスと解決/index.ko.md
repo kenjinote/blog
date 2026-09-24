@@ -1,7 +1,7 @@
 ---
 title: 'Git 초보자가 빠지기 쉬운 실수와 해결 명령어 모음 (충돌 해결 등)'
 slug: "git-beginners-mistakes-and-solutions"
-date: "2026-09-12T17:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

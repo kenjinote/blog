@@ -1,6 +1,6 @@
 ---
 title: "OS史: UNIXの歴史 - ベル研究所から始まる現代OSの始祖"
-date: 2026-09-23T04:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 
 image: "eyecatch.jpg"
 draft: false

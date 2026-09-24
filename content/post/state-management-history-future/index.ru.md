@@ -2,7 +2,7 @@
 title: "История и будущее управления состоянием: эволюция от Redux до Signals и Reactivity"
 description: "«Управление состоянием» — главная проблема в истории фронтенд-разработки. Подробное руководство на 20 000 символов, глубоко исследующее переходы и будущее от MVC к Flux, Redux, Context API, а также к Signals и fine-grained reactivity."
 slug: state-management-history-future
-date: 2026-09-21T12:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - frontend

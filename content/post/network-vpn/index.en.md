@@ -2,7 +2,7 @@
 title: "Virtual Dedicated Line: How VPNs Work - A Safe Tunnel on the Internet"
 description: "VPN (Virtual Private Network) is essential for remote work. This article explains the mechanism of creating 'your own safe private tunnel' on the internet, where anyone can peek, using encryption and encapsulation."
 slug: "network-vpn"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

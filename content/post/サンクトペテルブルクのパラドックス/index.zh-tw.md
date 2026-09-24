@@ -2,7 +2,7 @@
 title: '聖彼得堡悖論：期望值為「無限大」的賭局，你願意付多少錢？'
 slug: 'st-petersburg-paradox'
 description: '這是一個在數學上「穩賺不賠」的賭局。然而，現實中沒有人會為此支付鉅款。本文將解說這個凸顯了機率論與人類心理（效用）之間落差、並成為現代經濟學基礎的歷史性悖論。'
-date: '2026-09-10T05:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/st_petersburg.jpg'
 math: true
 mermaid: true

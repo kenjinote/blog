@@ -2,7 +2,7 @@
 title: "Technologie réseau : l'histoire et le mécanisme de TCP/IP - Les règles standard mondiales qui connectent Internet"
 description: "Pourquoi tous les ordinateurs du monde entier peuvent-ils communiquer au-delà des différences de fabricants et de systèmes d'exploitation ? Nous allons démêler la philosophie et l'histoire de la suite de protocoles TCP/IP, qui forme le cœur d'Internet."
 slug: "network-tcp-ip"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

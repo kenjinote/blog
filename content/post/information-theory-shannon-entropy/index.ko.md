@@ -2,7 +2,7 @@
 title: "정보 이론과 섀넌의 엔트로피: 데이터 압축과 통신의 한계 탐구"
 description: "클로드 섀넌이 제창한 정보 이론의 기초부터 엔트로피의 개념, 데이터 압축의 한계, 그리고 현대 통신에의 응용까지 상세히 해설합니다."
 slug: information-theory-shannon-entropy
-date: 2026-09-21T02:45:54+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - 컴퓨터-과학

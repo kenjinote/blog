@@ -2,7 +2,7 @@
 title: "ユークリッドの互除法：最大公約数を高速に求める、紀元前から続く人類最古のアルゴリズム"
 description: "最大公約数(GCD)を計算するユークリッドの互除法について、その仕組みから実装、計算量、ラメの定理、拡張ユークリッドの互除法、RSA暗号への応用まで徹底解説します。"
 slug: "euclidean-algorithm"
-date: 2026-09-20T15:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]

@@ -2,7 +2,7 @@
 title: "مقدمة في البرمجة الديناميكية (DP) والمشكلات الشهيرة (حقيبة الظهر، فيبوناتشي)"
 description: "العقبة الصعبة في الخوارزميات 'البرمجة الديناميكية (DP)'. باستخدام متتالية فيبوناتشي ومشكلة حقيبة الظهر كأمثلة، سنشرح بوضوح الفرق بين التذكر العودي والنهج التصاعدي."
 slug: "dynamic-programming-dp-introduction-knapsack-fibonacci"
-date: 2026-09-22T04:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "dynamic-programming", "dp", "knapsack", "optimization"]

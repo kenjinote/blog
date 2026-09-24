@@ -2,7 +2,7 @@
 title: "志村五郎：現代数学に聳え立つ巨峰の生涯と業績"
 description: "谷山・志村予想で知られる世界的数学者、志村五郎。その苛烈なる生涯と、数論における深遠なる業績を解説します。"
 slug: "shimura-goro"
-date: "2026-09-20T20:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Goro Shimura", "Number Theory", "Taniyama-Shimura Conjecture", "Fermat's Last Theorem"]

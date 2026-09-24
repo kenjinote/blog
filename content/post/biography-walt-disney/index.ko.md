@@ -1,6 +1,6 @@
 ---
 title: "꿈을 구체화한 사나이: 월트 디즈니의 생애와 창조의 궤적"
-date: 2026-09-23T20:51:46+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["walt-disney", "history"]
 image: "eyecatch.jpg"

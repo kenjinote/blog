@@ -1,7 +1,7 @@
 ---
 title: 'Challenges and Discomfort in Japanese Society: Declining Birthrate and the Cult of Self-Responsibility from the Perspective of the Student Loan Issue'
 slug: "日本についてThoughts"
-date: 2022-09-06T02:24:11+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Miscellaneous"]
 draft: false
 image: "images/img.webp"

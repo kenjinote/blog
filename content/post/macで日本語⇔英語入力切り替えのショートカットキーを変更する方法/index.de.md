@@ -1,7 +1,7 @@
 ---
 title: 'Wie man die Tastenkombination zum Wechseln zwischen japanischer und englischer Eingabe auf dem Mac ändert (für US-Tastaturen)'
 slug: "macでJapanisch⇔英語入力切り替えのTastenkombinationを変更する方法"
-date: 2023-04-04T23:02:12+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["macos", "mac", "Tastenkombination", "Japanische Eingabe"]
 draft: 
 image: "img.webp"

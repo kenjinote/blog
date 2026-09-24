@@ -2,7 +2,7 @@
 title: "「P vs NP問題」の全貌と計算複雑性クラス：ミレニアム懸賞問題の解説とプログラミング的意義"
 description: "ミレニアム懸賞問題の1つである「P vs NP問題」について、計算複雑性クラス（P、NP、NP完全、NP困難）の基礎から最新の研究動向、プログラミングや暗号理論への影響まで、徹底的に深掘りして解説します。"
 slug: p-vs-np-problem
-date: 2026-09-21T02:35:46+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories: ["computer-science", "algorithms"]
 tags: ["complexity-theory", "p-vs-np", "np-complete", "millennium-prize", "python"]

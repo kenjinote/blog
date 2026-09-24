@@ -1,7 +1,7 @@
 ---
 title: 'Cloudflare PagesやGitHub PagesでHugoブログを無料・爆速で公開する方法'
 slug: 'hugo-hosting-cloudflare-vs-github-pages'
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true

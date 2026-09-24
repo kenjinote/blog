@@ -2,7 +2,7 @@
 title: "ペル方程式：無限の解を持つディオファントス方程式の魅力と連分数"
 description: "ペル方程式（Pell's equation）の基本から、連分数を用いた解法、そして無限に存在する解の生成方法までを詳細に解説します。"
 slug: "pell-equation"
-date: "2026-09-20T15:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

@@ -1,6 +1,6 @@
 ---
 title: "约翰·D·洛克菲勒：塑造现代资本主义的石油大王的一生与哲学"
-date: 2026-09-23T20:59:57+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["john-d-rockefeller", "history"]
 image: "eyecatch.jpg"

@@ -1,6 +1,6 @@
 ---
 title: "Raja Mobil Henry Ford: Awal Mula Masyarakat Konsumsi Massal dan Inovasi 'Sistem Produksi Ford'"
-date: "2026-09-23T20:59:56+09:00"
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["henry-ford", "history"]
 image: "eyecatch.jpg"

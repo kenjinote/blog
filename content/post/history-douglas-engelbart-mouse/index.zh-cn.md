@@ -1,5 +1,6 @@
 ---
 title: "“鼠标”的诞生与道格拉斯·恩格尔巴特：重新定义计算机与人类对话的先驱轨迹"
+date: "2026-09-24T16:08:36+09:00"
 description: "现代计算机操作中不可或缺的“鼠标”是如何诞生的？从道格拉斯·恩格尔巴特的“增强人类智力 (Augmenting Human Intellect)”思想到1968年的The Mother of All Demos（所有演示之母），为您全面解析这段波澜壮阔的历史。"
 slug: "history-douglas-engelbart-mouse"
 categories: ["history"]

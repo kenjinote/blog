@@ -2,7 +2,7 @@
 title: "事件驅動架構與非同步處理的深層探討：Event Loop、Actor模型、CQRS"
 description: "在現代分散式系統中不可或缺的事件驅動架構與非同步處理，我們將從Event Loop、Actor模型、CQRS的角度進行深入探討。"
 slug: "event-driven-architecture-async"
-date: "2026-09-21T02:58:36+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "架構"

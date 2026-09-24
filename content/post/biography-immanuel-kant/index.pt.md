@@ -1,6 +1,6 @@
 ---
 title: "Immanuel Kant: A Trajetória da \"Revolução Copernicana\" que Alcançou o Ápice da Filosofia Moderna"
-date: 2026-09-23T19:53:31+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["immanuel-kant", "history"]
 image: "eyecatch.jpg"

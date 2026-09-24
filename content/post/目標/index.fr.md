@@ -1,7 +1,7 @@
 ---
 title: 'Feuille de route pour l''entrepreneuriat et le développement de logiciels : Objectifs et tâches à court et à long terme'
 slug: "Objectif"
-date: 2024-12-08T03:32:34+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Objectifs"]
 draft: false
 image: "img.webp"

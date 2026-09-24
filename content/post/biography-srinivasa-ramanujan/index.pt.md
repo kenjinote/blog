@@ -1,5 +1,6 @@
 ---
 title: "Srinivasa Ramanujan: O mágico indiano que teceu a intuição e o infinito"
+date: "2026-09-24T16:08:36+09:00"
 description: "Explicamos detalhadamente a vida e as conquistas do gênio matemático Srinivasa Ramanujan, apelidado de \"o mágico indiano\", que descobriu inúmeras fórmulas desconhecidas apenas pela intuição, e sua influência na matemática moderna."
 slug: "biography-srinivasa-ramanujan"
 categories: ["biography"]

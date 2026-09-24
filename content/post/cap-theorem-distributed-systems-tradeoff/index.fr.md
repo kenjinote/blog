@@ -2,7 +2,7 @@
 title: "Théorème CAP et systèmes distribués (compromis entre cohérence, disponibilité et tolérance au partitionnement)"
 description: "La loi absolue « Théorème CAP » dans la conception de systèmes distribués et le compromis architectural choisi par les bases de données modernes."
 slug: "cap-theorem-distributed-systems-tradeoff"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

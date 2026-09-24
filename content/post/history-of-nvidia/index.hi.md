@@ -2,7 +2,7 @@
 title: "NVIDIA (GeForce) का इतिहास: 3D ग्राफिक्स से AI के हृदय (GPU) में परिवर्तन"
 description: "गेमिंग ग्राफिक्स बोर्ड के निर्माता से आधुनिक AI क्रांति का नेतृत्व करने वाले निर्विवाद राजा के रूप में NVIDIA के परिवर्तन का इतिहास।"
 slug: "history-of-nvidia"
-date: "2026-09-23T01:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

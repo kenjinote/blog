@@ -2,7 +2,7 @@
 title: "Gabriel Lamé: A Giant Bridging Pure and Applied Mathematics"
 description: "A deep dive into the life of French mathematician Gabriel Lamé, exploring his numerous achievements including the Lamé curve and Lamé's Theorem in the Euclidean algorithm."
 slug: "lame"
-date: "2026-09-20T19:20:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematics", "Biography"]
 tags: ["Gabriel Lamé", "History of Mathematics", "Number Theory", "Elasticity", "Geometry"]

@@ -1,6 +1,6 @@
 ---
 title: "Friedensapostel Mahatma Gandhi: Wie gewaltloser ziviler Ungehorsam die Welt veränderte"
-date: 2026-09-23T19:46:03+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["mahatma-gandhi", "history"]
 image: "eyecatch.jpg"

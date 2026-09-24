@@ -1,5 +1,6 @@
 ---
 title: "Richard Feynman: Como uma bola de curiosidade desvendou as verdades do universo e o modo de vida humano"
+date: "2026-09-24T16:08:36+09:00"
 description: "Vencedor do Prêmio Nobel de Física, Richard Feynman. Da construção da eletrodinâmica quântica à investigação do acidente do Challenger, além de arrombar cofres e tocar bongô, explicamos detalhadamente sua vida não convencional e inesgotável busca, cheia da \"alegria da descoberta\"."
 slug: "biography-richard-feynman"
 categories: ["biography"]

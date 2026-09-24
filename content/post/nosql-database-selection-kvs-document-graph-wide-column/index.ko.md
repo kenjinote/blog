@@ -2,7 +2,7 @@
 title: "NoSQL 데이터베이스 선택 방법 (KVS, 문서, 그래프, 와이드 컬럼)"
 description: "다양한 NoSQL 데이터베이스의 데이터 모델을 이해하고, 사용 사례에 따른 최적의 선택을 하기 위한 가이드."
 slug: "nosql-database-selection-kvs-document-graph-wide-column"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "database"

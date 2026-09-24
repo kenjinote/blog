@@ -2,7 +2,7 @@
 title: "Teorema das Quatro Cores (Four Color Theorem) - Qualquer mapa pode ser colorido com 4 cores?"
 description: "Uma explicação detalhada sobre a história, a abordagem de prova e a importância da prova assistida por computador do problema das quatro cores, um desafio na matemática."
 slug: "four-color-theorem"
-date: "2026-09-14T13:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "computer-science"]
 tags: ["Teorema das Quatro Cores", "Teoria dos Grafos", "Prova Assistida por Computador", "Topologia"]

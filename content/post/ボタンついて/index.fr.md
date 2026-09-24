@@ -1,7 +1,7 @@
 ---
 title: 'Comment créer un bouton (contrôle GUI) avec l''API Windows et implémenter la gestion des événements'
 slug: "Boutonついて"
-date: 2023-01-14T20:24:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Bouton", "GUI"]
 draft: false
 image: "img.webp"

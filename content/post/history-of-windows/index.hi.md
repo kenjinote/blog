@@ -2,7 +2,7 @@
 title: "ओएस का इतिहास: विंडोज़ की वंशावली (MS-DOS से NT आर्किटेक्चर के पूरा होने तक)"
 description: "CUI-आधारित MS-DOS से शुरू होकर, GUI में बदलाव, और अंततः मजबूत NT आर्किटेक्चर तक विंडोज़ के विकास का इतिहास।"
 slug: "history-of-windows"
-date: "2026-09-23T02:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

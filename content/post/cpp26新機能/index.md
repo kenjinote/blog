@@ -1,7 +1,7 @@
 ---
 title: "【2026年版】C++26の主要な新機能と実践的な使い方"
 slug: "cpp26-new-features-practical-guide"
-date: "2026-09-12T02:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

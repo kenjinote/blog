@@ -2,7 +2,7 @@
 title: "Gerd Faltings: Der Gigant der modernen Zahlentheorie, der die Mordell-Vermutung löste"
 description: "Eine detaillierte Erklärung des Lebens des Fields-Medaillengewinners Gerd Faltings und seiner mathematischen Errungenschaften, einschließlich der Lösung der Mordell-Vermutung. Seine großen Fußstapfen von der algebraischen Geometrie zur Zahlentheorie verfolgen."
 slug: "faltings"
-date: "2026-09-20T20:40:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematik"

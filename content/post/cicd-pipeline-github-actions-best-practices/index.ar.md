@@ -2,7 +2,7 @@
 title: "مسار CI/CD و GitHub Actions: أفضل الممارسات للتكامل المستمر"
 description: "نغطي مبادئ CI/CD التي تسرع دورة حياة تطوير البرمجيات، والخبرة العملية في بناء مسار باستخدام GitHub Actions."
 slug: "cicd-pipeline-github-actions-best-practices"
-date: 2026-09-21T09:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - "devops"

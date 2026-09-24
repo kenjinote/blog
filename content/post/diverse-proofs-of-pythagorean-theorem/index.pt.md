@@ -2,7 +2,7 @@
 title: "Diversas provas do teorema de Pitágoras: da geometria e da álgebra a Einstein"
 description: "Descubra provas fascinantes do teorema de Pitágoras. Explore a beleza da matemática de Euclides a Einstein através de várias perspectivas."
 slug: "diverse-proofs-of-pythagorean-theorem"
-date: "2026-09-20T15:15:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "Matemática"

@@ -2,7 +2,7 @@
 title: "Next-Generation Communication: The Mechanisms and Features of 5G - The Future Created by 'Ultra-High Speed, Ultra-Low Latency, and Massive Connectivity'"
 description: "We explain the element technologies such as millimeter waves, beamforming, and edge computing that realize '5G', the fifth-generation mobile communication system expected to be the infrastructure for autonomous driving and remote medicine, not just smartphones."
 slug: "network-5g"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

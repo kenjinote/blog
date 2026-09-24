@@ -1,6 +1,6 @@
 ---
 title: "路易斯·卡羅：創作《愛麗絲夢遊仙境》的數學家與邏輯學家的軌跡"
-date: 2026-09-23T20:51:47+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["lewis-carroll", "history"]
 image: "eyecatch.jpg"

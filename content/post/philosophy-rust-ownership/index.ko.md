@@ -1,5 +1,6 @@
 ---
 title: "Rust의 진수: 안전성과 소유권 모델이 가져오는 패러다임 전환"
+date: "2026-09-24T16:08:36+09:00"
 description: "Rust의 핵심인 \"소유권(Ownership)\"과 \"빌림(Borrowing)\"의 개념을 깊이 파고들어, 메모리 안전성과 퍼포먼스를 어떻게 양립시키고 있는지 철저히 해설합니다."
 slug: "philosophy-rust-ownership"
 categories: ["philosophy"]

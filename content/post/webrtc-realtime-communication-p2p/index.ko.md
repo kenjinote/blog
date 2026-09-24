@@ -2,7 +2,7 @@
 title: 'WebRTC와 실시간 통신의 이면: P2P, STUN/TURN, 시그널링'
 description: '브라우저 간 직접 통신을 수행하는 WebRTC의 구조. NAT 통과(STUN/TURN), 시그널링 서버, ICE 프로토콜 등 복잡한 이면을 철저히 해부합니다.'
 slug: "webrtc-realtime-communication-p2p"
-date: 2026-09-20T17:10:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - "network"

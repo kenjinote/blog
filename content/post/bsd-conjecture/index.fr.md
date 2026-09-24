@@ -2,7 +2,7 @@
 title: "Conjecture de Birch et Swinnerton-Dyer (Conjecture BSD) - Points rationnels sur les courbes elliptiques et fonctions L"
 description: "Explication mathématique détaillée de la conjecture de Birch et Swinnerton-Dyer (conjecture BSD), l'un des problèmes du prix du millénaire, depuis les bases des courbes elliptiques jusqu'au lien profond avec les fonctions L."
 slug: "bsd-conjecture"
-date: "2026-09-14T13:05:17+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Théorie des nombres", "Courbes elliptiques", "Conjecture BSD", "Problèmes du prix du millénaire"]

@@ -2,7 +2,7 @@
 title: "Tecnología de Redes: Explicación Técnica de HTTPS - Cómo Funcionan el Cifrado y la Infraestructura de Clave Pública (PKI)"
 description: "Es gracias a 'HTTPS' que podemos realizar compras en línea con tranquilidad. Explicaremos la tecnología de cifrado que previene las escuchas y alteraciones, así como el complejo procesamiento matemático que SSL/TLS lleva a cabo en segundo plano."
 slug: "history-of-https"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

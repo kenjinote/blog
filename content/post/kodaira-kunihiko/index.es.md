@@ -2,7 +2,7 @@
 title: "Kunihiko Kodaira: El primer medallista Fields japonés y su sinfonía de geometría"
 description: "Explorando la vida y obra del matemático Kunihiko Kodaira, el primer medallista Fields de Japón, desde las integrales armónicas hasta la teoría de variedades complejas."
 slug: "kodaira-kunihiko"
-date: "2026-09-20T20:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["matemáticas", "biografía"]
 tags: ["Kunihiko Kodaira", "Medalla Fields", "Geometría Compleja"]

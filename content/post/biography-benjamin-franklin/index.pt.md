@@ -1,6 +1,6 @@
 ---
 title: "Pai Fundador da América e Gênio Universal: A Vida e a Filosofia de Benjamin Franklin"
-date: 2026-09-23T19:46:04+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["benjamin-franklin", "history"]
 image: "eyecatch.jpg"

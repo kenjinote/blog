@@ -2,7 +2,7 @@
 title: "Jalur Khusus Virtual: Mekanisme VPN - Terowongan Aman di Internet"
 description: "VPN (Virtual Private Network) yang sangat penting untuk kerja jarak jauh. Kami akan menjelaskan mekanisme pembuatan \"terowongan khusus yang aman untuk Anda sendiri\" di internet, yang bisa diintip oleh siapa saja, melalui enkripsi dan enkapsulasi."
 slug: "network-vpn"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

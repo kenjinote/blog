@@ -2,7 +2,7 @@
 title: "Physik-Wunder: Wie Wi-Fi funktioniert - Das Prinzip der Datenübertragung durch unsichtbare Funkwellen"
 description: "Wi-Fi verbindet Smartphones und PCs mit dem Internet. Wir erklären aus der Perspektive der Physik und Nachrichtentechnik, wie unsichtbare Funkwellen riesige Mengen an digitalen Daten präzise und mit hoher Geschwindigkeit übertragen."
 slug: "physics-wifi"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

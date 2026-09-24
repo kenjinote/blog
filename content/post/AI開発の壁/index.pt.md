@@ -1,7 +1,7 @@
 ---
 title: 'A Barreira do Desenvolvimento com IA Era Alta... O Motivo Pelo Qual a ''Reta Final'' da Criação de Apps é um Pesadelo'
 slug: "AI開発のParede"
-date: 2025-07-20T21:52:42+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["IA", "desenvolvimento", "barreira", "poema"]
 draft: false
 image: "img_1.webp"

@@ -2,7 +2,7 @@
 title: "브라우저 렌더링의 원리: DOM 트리부터 Paint까지의 완전 해부"
 description: "브라우저가 HTML/CSS/JS를 읽고 화면에 픽셀을 그리기까지의 렌더링 엔진(Blink, WebKit 등)의 원리를 완전히 해부합니다."
 slug: "browser-rendering-mechanism-dom-paint"
-date: 2026-09-20T17:10:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - "web-development"

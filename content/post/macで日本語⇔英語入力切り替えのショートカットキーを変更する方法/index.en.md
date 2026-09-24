@@ -1,7 +1,7 @@
 ---
 title: 'How to Change the Shortcut Key for Switching Between Japanese and English Input on Mac (For US Keyboards)'
 slug: "macでJapanese⇔英語入力切り替えのShortcut Keyを変更する方法"
-date: 2023-04-04T23:02:12+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["macos", "mac", "shortcut key", "japanese input"]
 draft:
 image: "img.webp"

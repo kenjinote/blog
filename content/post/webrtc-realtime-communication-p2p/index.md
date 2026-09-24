@@ -2,7 +2,7 @@
 title: "WebRTCとリアルタイム通信の裏側：P2P, STUN/TURN, シグナリング"
 description: "ブラウザ間で直接通信を行うWebRTCの仕組み。NAT越え（STUN/TURN）、シグナリングサーバー、ICEプロトコルなどの複雑な裏側を徹底解剖します。"
 slug: "webrtc-realtime-communication-p2p"
-date: 2026-09-20T17:10:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - "network"

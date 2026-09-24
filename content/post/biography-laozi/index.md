@@ -1,6 +1,6 @@
 ---
 title: "老子：道教の祖、その謎に包まれた生涯と『道徳経』の深淵"
-date: 2026-09-23T19:53:32+09:00
+date: "2026-09-24T16:08:36+09:00"
 categories: ["biography"]
 tags: ["laozi", "history"]
 image: "eyecatch.jpg"

@@ -2,7 +2,7 @@
 title: "Lois de la physique et technologies du quotidien : Le fonctionnement de la fibre optique - L'internet ultra-rapide soutenu par la loi physique de la réflexion totale"
 description: "Les « fibres optiques », de fins fils de verre qui rampent au fond des océans et relient les continents du monde. Nous expliquons la physique de la « réflexion totale », la raison pour laquelle la lumière progresse sans fuir d'un tube de verre courbé, ainsi que le fonctionnement des communications optiques qui soutiennent internet."
 slug: "physics-optical-fiber"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

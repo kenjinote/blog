@@ -2,7 +2,7 @@
 title: "GraphQL vs REST API（オーバーフェッチの解消と型安全）"
 description: "REST APIの限界と、GraphQLがもたらす柔軟なデータフェッチと型安全なフロントエンド開発。"
 slug: "graphql-vs-rest-api-overfetching-type-safety"
-date: "2026-09-22T08:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "backend"

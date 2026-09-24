@@ -2,7 +2,7 @@
 title: "प्रोग्रामिंग भाषाओं का इतिहास और प्रतिमानों का विकास (असेंबली, C, Java से Rust, Go तक)"
 description: "प्रोग्रामिंग भाषाएं कैसे विकसित हुई हैं? असेंबली भाषा से शुरू होकर, C भाषा, Java, और आधुनिक Rust और Go तक के इतिहास और प्रतिमानों के विकास का विस्तार से वर्णन किया गया है।"
 slug: "programming-languages-history-paradigm-evolution"
-date: "2026-09-21T14:51:07+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["programming-languages", "history", "paradigm", "rust", "go"]

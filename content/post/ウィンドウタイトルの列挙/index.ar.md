@@ -1,7 +1,7 @@
 ---
 title: 'كيفية سرد واسترجاع عناوين النوافذ المفتوحة حالياً باستخدام PowerShell'
 slug: "نافذةタイトルの列挙"
-date: 2022-09-20T17:03:15+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"

@@ -2,7 +2,7 @@
 title: "マルコフ連鎖：「未来は現在だけで決まる」状態遷移の数学と確率モデル"
 description: "マルコフ連鎖の基礎から応用まで、状態遷移の確率モデルを詳しく解説します。"
 slug: "markov-chain"
-date: "2026-09-20T15:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

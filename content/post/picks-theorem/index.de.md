@@ -2,7 +2,7 @@
 title: "Satz von Pick: Flächenberechnung durch reines Zählen von Gitterpunkten"
 description: "Eine detaillierte Erklärung, mit Diagrammen und Beweisen, der Formel zur Berechnung der Fläche eines lochfreien Polygons mit Gitterpunkt-Eckpunkten aus der Anzahl der inneren und Randpunkte."
 slug: "picks-theorem"
-date: "2026-09-20T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematik"

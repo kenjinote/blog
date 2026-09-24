@@ -1,5 +1,6 @@
 ---
 title: "矽谷的起源：「八叛逆」創造的創新聖地"
+date: "2026-09-24T16:08:36+09:00"
 description: "現在的 IT 產業震央矽谷。其誕生的背後，有一位天才的失控，以及揭竿起義的 8 位年輕工程師「八叛逆（Traitorous Eight）」所交織的壯闊戲劇。本文將徹底解說他們的軌跡。"
 slug: "history-silicon-valley-traitorous-eight"
 categories: ["history"]

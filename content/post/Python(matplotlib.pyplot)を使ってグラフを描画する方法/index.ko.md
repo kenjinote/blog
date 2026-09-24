@@ -5,7 +5,7 @@
 
 title: 'Python과 matplotlib로 그래프를 그리는 방법 [Google Colab 대응]'
 slug: "Python(matplotlib.pyplot)を使って그래프を描画する方法"
-date: 2023-04-09T01:02:19+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Python", "그래프", "수학", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
 image: "img.webp"

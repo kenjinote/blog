@@ -1,5 +1,6 @@
 ---
 title: "Divergence entre intuition et probabilité : explorer les profondeurs du problème de Monty Hall"
+date: "2026-09-24T16:08:36+09:00"
 description: "Le problème de Monty Hall, l'exemple par excellence de la théorie des probabilités contre-intuitive. Pourquoi l'intuition humaine s'écarte-t-elle autant de la probabilité ? De la preuve mathématique au contexte psychologique, nous expliquons en détail l'ensemble du paradoxe."
 slug: "paradox-monty-hall-problem"
 categories: ["science"]

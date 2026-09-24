@@ -2,7 +2,7 @@
 title: "Galois-Theorie (Galois Theory) - Warum es ab dem 5. Grad keine Lösungsformel gibt und die Geburt der Gruppentheorie"
 description: "Was ist die Galois-Theorie? Warum gibt es keine Lösungsformel für Gleichungen 5. und höheren Grades? Wir erklären leicht verständlich die Grundlagen der Gruppentheorie, die Évariste Galois hinterlassen hat, und die Schönheit der Symmetrie in der Mathematik."
 slug: "galois-theory"
-date: "2026-09-14T13:04:13+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "algebra"]
 tags:

@@ -2,7 +2,7 @@
 title: "The Genius of Ancient Greece: Life and Mathematical Achievements of Archimedes"
 description: "Archimedes of Syracuse. From the 'Eureka' episode to the calculation of pi, the theorem of the sphere and cylinder, and the 'Method' that pioneered calculus, we delve into the life and achievements of ancient Greece's greatest mathematician and physicist."
 slug: "archimedes"
-date: "2026-09-20T18:40:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Archimedes", "Ancient Greece", "Geometry", "Physics", "Calculus"]

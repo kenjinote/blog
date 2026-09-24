@@ -1,7 +1,7 @@
 ---
 title: "【2026年問題】IT人才短缺真的正在發生嗎？現場的真實情況"
 slug: "it-talent-shortage-2026"
-date: "2026-09-12T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

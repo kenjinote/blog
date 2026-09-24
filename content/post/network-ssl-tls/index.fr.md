@@ -2,7 +2,7 @@
 title: "Le bouclier d'Internet : Le fonctionnement de SSL/TLS - Pourquoi pouvez-vous envoyer vos informations de carte de crédit en toute sécurité ?"
 description: "Que signifie le « s » dans le « https » de l'URL d'un site Web ? Nous vous expliquons le fonctionnement du SSL/TLS, la technologie de chiffrement qui protège le commerce électronique mondial et les communications, grâce à son système hybride de clé publique et clé commune."
 slug: "network-ssl-tls"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

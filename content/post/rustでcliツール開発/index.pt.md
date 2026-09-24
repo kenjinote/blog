@@ -2,7 +2,7 @@
 title: 'Tutorial para Desenvolver Ferramentas CLI em Rust a Uma Velocidade Explosiva'
 description: 'Um tutorial completo para desenvolver ferramentas CLI rápidas e seguras usando Rust. Construa uma ferramenta prática fazendo pleno uso de clap, tokio, serde e muito mais.'
 slug: "rust-cli-tool-fast-development-tutorial"
-date: "2026-09-12T13:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

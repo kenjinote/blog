@@ -2,7 +2,7 @@
 title: "The Internet Shield: How SSL/TLS Works - Why You Can Safely Send Credit Card Information"
 description: "What does the 's' in 'https' in a website URL mean? We explain how the encryption technology 'SSL/TLS' protects global e-commerce and communication security using a hybrid approach of symmetric and public keys."
 slug: "network-ssl-tls"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

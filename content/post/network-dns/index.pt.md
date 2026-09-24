@@ -2,7 +2,7 @@
 title: "Tecnologia de Redes: Como Funciona o DNS - A Lista Telefônica da Internet, os Bastidores da Resolução de Nomes"
 description: "Apenas digitando 'www.google.com', por que nos conectamos ao servidor desejado? Explicaremos a estrutura hierárquica e o mecanismo de resolução de nomes do 'DNS', o maior banco de dados distribuído da Internet."
 slug: "network-dns"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

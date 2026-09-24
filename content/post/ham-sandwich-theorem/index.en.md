@@ -2,7 +2,7 @@
 title: "The Ham Sandwich Theorem: Can You Halve 3 Ingredients with One Cut?"
 description: "A detailed explanation of the Ham Sandwich Theorem, which states that there is always a plane that simultaneously bisects three objects in 3D space, from an intuitive approach to the Borsuk-Ulam theorem."
 slug: "ham-sandwich-theorem"
-date: "2026-09-20T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematics"

@@ -2,7 +2,7 @@
 title: "Kiyosi Ito : Le père des équations différentielles stochastiques et des mathématiques de la finance moderne"
 description: "Un examen approfondi de la vie du mathématicien Kiyosi Ito, célèbre pour le lemme d'Ito, de ses réalisations en calcul stochastique et de son impact sur la société moderne."
 slug: "ito-kiyosi"
-date: "2026-09-20T20:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Kiyosi Ito", "Équations Différentielles Stochastiques", "Ingénierie Financière", "Histoire des Mathématiques"]

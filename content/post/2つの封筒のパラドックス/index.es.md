@@ -2,7 +2,7 @@
 title: 'La paradoja de los dos sobres: el colapso lógico y la trampa de las decisiones provocados por el valor esperado infinito'
 slug: 'two-envelopes-paradox'
 description: 'Dos sobres frente a ti. Uno contiene el doble de dinero que el otro. Si cambias de sobre sin abrir el tuyo, ¿siempre ganarás según el valor esperado? A través de "La paradoja de los dos sobres", donde la intuición y las matemáticas chocan violentamente, explicaremos en detalle los peligros del valor esperado y el concepto de infinito.'
-date: '2026-09-10T00:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/two_envelopes.jpg'
 math: true
 mermaid: true

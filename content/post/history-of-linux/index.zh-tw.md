@@ -2,7 +2,7 @@
 title: "OS的歷史：Linux的誕生與開源革命"
 description: "從一名學生的興趣開始，到支配全世界的伺服器與智慧型手機（Android）的Linux歷史。"
 slug: "history-of-linux"
-date: "2026-09-23T02:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

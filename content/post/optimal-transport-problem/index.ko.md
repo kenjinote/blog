@@ -2,7 +2,7 @@
 title: "최적 운송 문제: 모래더미를 최소한의 노력으로 옮기는 수학"
 description: "이동하는 양과 거리로부터 운송 비용을 고려하여, 분포 간의 차이를 측정하는 바서슈타인 거리로 연결합니다."
 slug: "optimal-transport-problem"
-date: 2026-09-20T12:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

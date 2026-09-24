@@ -2,7 +2,7 @@
 title: "無伺服器架構的光與影：AWS Lambda 的幕後與冷啟動"
 description: "不僅探討無伺服器的優點，也深入挖掘幕後運作的容器機制、冷啟動問題及其對策（如 SnapStart 等）。"
 slug: "serverless-architecture-aws-lambda-cold-start"
-date: 2026-09-21T09:00:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: eyecatch.jpg
 categories:
   - "cloud"

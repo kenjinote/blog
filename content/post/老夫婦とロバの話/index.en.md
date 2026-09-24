@@ -1,7 +1,7 @@
 ---
 title: 'Learning from the Story of the Old Couple and the Donkey: How to Live Without Being Swayed by Others'' Opinions'
 slug: "The Old Couple and the Donkey"
-date: 2024-09-18T00:56:59+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["The Old Couple and the Donkey", "Satire"]
 draft: false
 image: "img.webp"

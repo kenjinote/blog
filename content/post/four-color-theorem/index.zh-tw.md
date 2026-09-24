@@ -2,7 +2,7 @@
 title: "四色定理（Four Color Theorem） - 任何地圖都能用4種顏色塗滿嗎？"
 description: "詳細解說數學界難題四色定理的歷史、證明方法，以及電腦輔助證明的意義。"
 slug: "four-color-theorem"
-date: "2026-09-14T13:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "computer-science"]
 tags: ["四色定理", "圖論", "電腦輔助證明", "拓撲學"]

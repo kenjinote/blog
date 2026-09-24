@@ -1,7 +1,7 @@
 ---
 title: 'Qiskit을 사용한 양자 프로그래밍 초입문'
 slug: "qiskit-quantum-programming-intro"
-date: "2026-09-11T20:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

@@ -2,7 +2,7 @@
 title: "Algoritmos de rompecabezas: Cómo resolver el Cubo de Rubik y sus algoritmos - Resolviendo 43 trillones de combinaciones"
 description: "Aunque a menudo se piensa que es 'imposible de resolver por uno mismo', en realidad cualquiera puede completar las 6 caras del Cubo de Rubik memorizando unos pocos 'algoritmos (secuencias)'. Explicaremos el mundo de los rompecabezas entrelazado por la teoría de grupos y las matemáticas."
 slug: "game-rubiks-cube"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

@@ -1,7 +1,7 @@
 ---
 title: 'Hugo CLIのインストールとよく使う基本コマンド一覧'
 slug: "Hugoコマンド一覧"
-date: 2024-05-31T01:36:00+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["hugo", "コマンド"]
 draft: false
 image: "img.webp"

@@ -1,7 +1,7 @@
 ---
 title: "La conjecture de Poincaré - L'énigme topologique de la forme de l'Univers et la légende de Perelman"
 description: "Une explication détaillée de l'intégralité de la « conjecture de Poincaré » qui a tourmenté les mathématiciens pendant plus d'un siècle, les bases de la topologie, et l'histoire de sa preuve dramatique par Grigori Perelman."
-date: "2026-09-14T13:04:13+09:00"
+date: "2026-09-24T16:08:36+09:00"
 slug: "poincare-conjecture"
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]

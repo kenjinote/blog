@@ -1,7 +1,7 @@
 ---
 title: "OAuth2.0の仕組みを図解：Slack App連携の実装から学ぶ"
 slug: "oauth2-architecture-slack-app-integration"
-date: "2026-09-13T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

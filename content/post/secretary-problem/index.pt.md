@@ -2,7 +2,7 @@
 title: "Problema da Secretária / Problema da Parada Ótima (Secretary Problem) - A \"Regra do 1/e\" para Contratar a Pessoa Mais Qualificada"
 description: "O que é o Problema da Secretária (Secretary Problem)? Através deste problema, que é um exemplo clássico do problema da parada ótima, explicaremos em detalhes a \"Regra do 1/e\" (regra dos 37%), uma abordagem matemática para fazer a melhor escolha sob condições de incerteza. Com provas matemáticas e simulações, exploraremos como isso pode ser aplicado em contratações e nas decisões do dia a dia."
 slug: "secretary-problem"
-date: "2026-09-14T13:20:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "algorithms", "decision-making"]
 tags:

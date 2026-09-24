@@ -2,7 +2,7 @@
 title: 'Le paradoxe de Berry : la contradiction de vouloir définir des « nombres » avec des « mots »'
 slug: 'berry-paradox'
 description: 'L''expression « le plus petit entier ne pouvant être défini en moins de 19 caractères » définit justement ce nombre en moins de 19 caractères !? Explication de ce paradoxe court et élégant qui surgit à la frontière entre le langage courant et les mathématiques.'
-date: '2026-09-10T11:00:00+09:00'
+date: "2026-09-24T16:08:36+09:00"
 image: 'img/berry_paradox.jpg'
 math: true
 mermaid: true

@@ -2,7 +2,7 @@
 title: "Dasar-Dasar Teori Graf: Merepresentasikan Jaringan dengan Titik dan Garis, Alat Esensial dalam Masyarakat Modern"
 description: "Panduan komprehensif tentang dasar-dasar teori graf. Dari jembatan Königsberg hingga algoritma jalur terpendek seperti algoritma Dijkstra, implementasi Python, dan aplikasi pembelajaran mesin modern, mari jelajahi matematika jaringan."
 slug: "basics-of-graph-theory"
-date: "2026-09-20T15:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matematika"

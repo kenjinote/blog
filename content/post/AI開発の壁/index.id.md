@@ -1,7 +1,7 @@
 ---
 title: 'Dinding Pengembangan AI Ternyata Tinggi... Alasan dan Realitas Mengapa ''Neraka Dimulai dari Titik 80%'' dalam Pembuatan Aplikasi'
 slug: "AI開発のDinding"
-date: 2025-07-20T21:52:42+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["AI", "Pengembangan", "Tembok", "Puisi"]
 draft: false
 image: "img_1.webp"

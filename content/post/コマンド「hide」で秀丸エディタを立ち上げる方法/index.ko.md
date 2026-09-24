@@ -8,7 +8,7 @@
 
 title: '히데마루 에디터를 ''hide'' 명령 한 방에 실행! Windows의 편리한 설정 방법'
 slug: "명령어「hide」で히데마루 에디터を立ち上げる方法"
-date: 2024-03-29T23:45:37+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["명령어", "Hidemaru 에디터", "레지스트리"]
 draft: false
 image: "img_2.webp"

@@ -1,5 +1,6 @@
 ---
 title: "O Extremo da Mecânica Quântica: O Paradoxo da Realidade Apresentado pelo Gato de Schrödinger"
+date: "2026-09-24T16:08:36+09:00"
 description: "O que é o \"Gato de Schrödinger\"? Explicamos detalhadamente o cerne da \"superposição\" e do \"problema da medição\" na mecânica quântica, desde o seu contexto histórico até à interpretação de muitos mundos."
 slug: "paradox-schrodingers-cat"
 categories: ["science"]

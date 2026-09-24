@@ -2,7 +2,7 @@
 title: "Kejeniusan Yunani Kuno: Kehidupan dan Pencapaian Matematika Archimedes"
 description: "Archimedes dari Sirakusa. Dari episode 'Eureka' hingga perhitungan pi, teorema bola dan silinder, serta 'Metode' yang memelopori kalkulus, kita menyelami kehidupan dan pencapaian matematikawan serta fisikawan terhebat di Yunani kuno."
 slug: "archimedes"
-date: "2026-09-20T18:40:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["matematika", "biografi"]
 tags: ["Archimedes", "Yunani Kuno", "Geometri", "Fisika", "Kalkulus"]

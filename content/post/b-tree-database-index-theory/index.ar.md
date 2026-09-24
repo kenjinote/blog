@@ -2,7 +2,7 @@
 title: "نظرية أشجار B وفهارس قواعد البيانات (لماذا تختار قواعد البيانات أشجار B؟)"
 description: "تعمق في نظرية وهياكل البيانات لأشجار B (B-Tree) وأشجار B+ (B+Tree) التي تشكل أساس الفهارس في قواعد البيانات، وعلاقتها بإدخال/إخراج القرص (Disk I/O)، ولماذا تستمر أنظمة إدارة قواعد البيانات العلائقية (RDBMS) في اعتماد أشجار B كمعيار للفهارس، مع تحليل رياضي وأمثلة تنفيذية."
 slug: "b-tree-database-index-theory"
-date: "2026-09-21T02:45:54+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science", "database"]
 tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]

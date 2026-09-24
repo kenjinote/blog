@@ -2,7 +2,7 @@
 title: "Fungsi Pembangkit: Apa Keuntungannya Mengubah Barisan Menjadi Fungsi?"
 description: "Pengenalan tentang cara menghitung kombinasi pembayaran koin dan susunan sebagai koefisien sebuah persamaan. Penjelasan tentang keajaiban fungsi pembangkit, termasuk penerapannya pada barisan Fibonacci."
 slug: "generating-functions"
-date: "2026-09-20T12:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matematika"

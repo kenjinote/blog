@@ -1,7 +1,7 @@
 ---
 title: '使用 Rust 與 winapi 顯示 Windows 訊息方塊 (MessageBox) 的方法'
 slug: "RustでMessageBoxを表示する"
-date: 2022-09-30T23:54:31+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Rust","MessageBox"]
 draft: false
 image: "images/rust_logo.webp"

@@ -2,7 +2,7 @@
 title: "Preuves diverses du théorème de Pythagore : De la géométrie et l'algèbre à Einstein"
 description: "Découvrez des preuves fascinantes du théorème de Pythagore. Explorez la beauté des mathématiques d'Euclide à Einstein à travers différentes perspectives."
 slug: "diverse-proofs-of-pythagorean-theorem"
-date: "2026-09-20T15:15:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "Mathématiques"

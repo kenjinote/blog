@@ -1,6 +1,6 @@
 ---
 title: "게임 기술: 3D 그래픽 엔진의 진화 (Unreal Engine / Unity)"
-date: 2026-09-23T04:01:41+09:00
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["gaming", "technology"]
 tags: ["3d", "engine", "unreal", "unity", "graphics"]

@@ -1,7 +1,7 @@
 ---
 title: 'Lista de atalhos convenientes para o Visual Studio [Aumento de Eficiência]'
 slug: "Visual Studio Atalho一覧"
-date: 2024-04-06T11:27:37+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: [ "Visual Studio", "Atalhos" ]
 draft: false
 image: "img.webp"

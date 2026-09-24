@@ -1,7 +1,7 @@
 ---
 title: 'Was braucht eine gute Community? Management-Tipps aus den Scratch-Richtlinien'
 slug: "Gemeinschaftに必要なこと"
-date: 2022-09-23T01:37:43+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Community", "Verschiedenes"]
 draft: false
 image: "img.webp"

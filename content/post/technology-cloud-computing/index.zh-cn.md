@@ -2,7 +2,7 @@
 title: "从拥有到使用：云计算机制——IT基础设施的大转变"
 description: "Amazon Web Services (AWS) 和 Google Cloud (GCP) 等云计算如何改变了企业和个人的IT？本文将解说IaaS、PaaS、SaaS的区别以及虚拟化技术的基础。"
 slug: "technology-cloud-computing"
-date: "2026-09-23T10:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

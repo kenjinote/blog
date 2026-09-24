@@ -1,7 +1,7 @@
 ---
 title: 'Fui premiado novamente como Microsoft MVP (2024-2025)! Explicação do programa MVP'
 slug: "Microsoft MVP（2024-2025）を再Prêmioしました"
-date: 2024-09-03T21:25:20+09:00
+date: "2026-09-24T16:08:36+09:00"
 tags: ["Microsoft MVP"]
 draft: false
 image: "img.webp"

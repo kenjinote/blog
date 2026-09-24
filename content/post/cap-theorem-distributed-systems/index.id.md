@@ -2,7 +2,7 @@
 title: "Teorema CAP dan Sistem Terdistribusi: Dilema Esensial Database Terdistribusi"
 description: "Membahas mendalam tentang teorema CAP, prinsip terpenting dalam sistem terdistribusi, mulai dari definisi, pembuktian, perluasan ke teorema PACELC, hingga implementasinya di database terdistribusi nyata."
 slug: "cap-theorem-distributed-systems"
-date: "2026-09-21T00:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "distributed-systems"

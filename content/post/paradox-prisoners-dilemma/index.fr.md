@@ -5,7 +5,7 @@ slug: "paradox-prisoners-dilemma"
 categories: ["philosophy"]
 tags: ["game-theory", "prisoners-dilemma", "strategy"]
 image: "eyecatch.jpg"
-date: "2026-09-24T15:00:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 ---
 
 # Le dilemme du prisonnier (Prisoner's Dilemma) : Le paradoxe ultime posé par la théorie des jeux

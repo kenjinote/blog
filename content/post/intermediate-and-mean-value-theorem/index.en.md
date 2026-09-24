@@ -2,7 +2,7 @@
 title: "The Intermediate and Mean Value Theorems: Powerful Proof Tools from the Intuitive Properties of Continuous Functions and Derivatives"
 description: "An in-depth explanation of the Intermediate Value Theorem and the Mean Value Theorem, which form the foundation of calculus. We explore their intuitive meanings, rigorous mathematical proofs, and applications."
 slug: "intermediate-and-mean-value-theorem"
-date: "2026-09-20T14:30:00+09:00"
+date: "2026-09-24T16:08:36+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["calculus", "theorems", "math-proofs"]
