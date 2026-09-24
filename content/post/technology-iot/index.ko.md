@@ -2,7 +2,7 @@
 title: "사물인터넷: IoT의 구조 - 모든 것이 연결되는 세계의 이면"
 description: "가전부터 자동차, 공장의 기계까지, 모든 사물이 인터넷에 연결되는 'IoT(Internet of Things)'. 센서 기술과 통신 네트워크가 어떻게 데이터를 수집하고, AI와 연계하여 가치를 창출하는지 해설합니다."
 slug: "technology-iot"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

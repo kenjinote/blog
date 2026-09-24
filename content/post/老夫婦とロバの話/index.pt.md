@@ -1,7 +1,7 @@
 ---
 title: 'Aprendendo com a história do velho casal e do burro: Uma forma de viver sem ser influenciado pelas opiniões dos outros'
 slug: "A História do Velho Casal e o Burro"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-09-18T00:56:59+09:00
 tags: ["A História do Casal de Idosos e do Burro", "Sátira"]
 draft: false
 image: "img.webp"

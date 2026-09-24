@@ -1,6 +1,6 @@
 ---
 title: "富蘭克林·D·羅斯福：克服危機的美國第32任總統的軌跡"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["franklin-d-roosevelt", "history"]
 image: "eyecatch.jpg"

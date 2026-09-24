@@ -2,7 +2,7 @@
 title: "Событийно-ориентированная архитектура и очереди сообщений (Kafka, RabbitMQ)"
 description: "Событийно-ориентированное проектирование, снижающее связанность между системами посредством асинхронного взаимодействия, и роль брокеров сообщений."
 slug: "event-driven-architecture-message-queue-kafka-rabbitmq"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

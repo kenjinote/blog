@@ -2,7 +2,7 @@
 title: "Leonardo Fibonacci: The Genius Who Brought the Light of Mathematics to Medieval Europe"
 description: 'A deep dive into the life of Fibonacci, the spread of Arabic numerals through "Liber Abaci", and the amazing relationship between the Fibonacci sequence and the Golden Ratio hidden in nature.'
 slug: "fibonacci"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T18:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematics", "Biography"]
 tags: ["Fibonacci", "Mathematics", "History", "Golden Ratio", "Liber Abaci"]

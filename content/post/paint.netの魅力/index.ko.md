@@ -5,7 +5,7 @@
 
 title: '무료이면서 고기능! 이미지 편집 소프트웨어 ''paint.net''의 특징과 매력'
 slug: "paint.netの魅力"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-14T19:33:31+09:00
 tags: ["paint.net"]
 draft: false
 image: "img.webp"

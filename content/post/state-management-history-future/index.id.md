@@ -2,7 +2,7 @@
 title: "Sejarah dan Masa Depan Manajemen State: Dari Redux hingga Signals dan Evolusi Reactivity"
 description: "Manajemen state, tantangan terbesar dalam sejarah pengembangan frontend. Panduan lengkap sekitar 20.000 karakter yang menggali lebih dalam transisi dan masa depan dari MVC, Flux, Redux, Context API, hingga Signals dan fine-grained reactivity."
 slug: state-management-history-future
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T12:00:00+09:00
 image: eyecatch.jpg
 categories:
   - frontend

@@ -2,7 +2,7 @@
 title: "中国剰余定理（Chinese Remainder Theorem） - 古代の算術から現代のRSA暗号を支える大定理"
 description: "古代中国の算術書に起源を持つ中国剰余定理（CRT）について、その数学的原理から現代の公開鍵暗号（RSA暗号）における重要な応用までを詳しく解説します。"
 slug: "chinese-remainder-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "cryptography"]
 tags:

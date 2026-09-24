@@ -2,7 +2,7 @@
 title: "Grundlagen der Standortbestimmung: Wie GPS funktioniert - Die wundersame Technologie, bei der sich Relativitätstheorie und künstliche Satelliten kreuzen"
 description: "Warum wissen wir unseren aktuellen Standort auf der Karten-App unseres Smartphones? Wir erklären den Mechanismus der präzisen Zeitberechnung mit Hilfe von Radiowellen von GPS-Satelliten im Weltraum und Einsteins Relativitätstheorie."
 slug: "technology-gps"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

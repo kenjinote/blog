@@ -1,7 +1,7 @@
 ---
 title: 'C++ / Rust 개발자에게 추천하는 VSCode 확장 프로그램 10선'
 slug: "vscode-extensions-cpp-rust-developers"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

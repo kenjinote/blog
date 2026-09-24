@@ -2,7 +2,7 @@
 title: "代数基本定理：证明“n次方程必定有n个复数解”"
 description: "详细讲解代数基本定理的历史背景、直观意义，以及使用复分析（刘维尔定理）的优美证明。"
 slug: "fundamental-theorem-of-algebra"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

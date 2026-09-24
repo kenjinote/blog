@@ -2,7 +2,7 @@
 title: "Alexander Grothendieck: The Life and Achievements of the 20th Century's Greatest Mathematician"
 description: "A detailed explanation of the extraordinary life and revolutionary achievements in algebraic geometry of Alexander Grothendieck. We delve into how his thoughts and philosophy influenced modern mathematics."
 slug: "grothendieck"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T20:30:00+09:00
 image: "eyecatch.jpg"
 categories: ["Mathematics", "Biography"]
 tags: ["Grothendieck", "Algebraic Geometry", "Scheme Theory", "Category Theory"]

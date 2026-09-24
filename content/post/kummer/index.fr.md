@@ -2,7 +2,7 @@
 title: "Ernst Kummer : Père des nombres idéaux et le défi du dernier théorème de Fermat"
 description: "Une plongée approfondie dans la vie du grand mathématicien allemand Ernst Kummer, son introduction des nombres idéaux et son défi légendaire au dernier théorème de Fermat."
 slug: "kummer"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathématiques", "biographie"]
 tags: ["Ernst Kummer", "Dernier théorème de Fermat", "Nombres idéaux", "Théorie algébrique des nombres", "Nombres premiers réguliers"]

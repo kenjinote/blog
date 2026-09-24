@@ -1,7 +1,7 @@
 ---
 title: '在Mac上实现类似Windows（Alt+Tab）切换应用的设置方法'
 slug: "macでWindowsライク（Alt+Tab）に应用切换する方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-04-05T02:20:12+09:00
 tags: ["macos", "mac", "快捷键", "应用程序切换"]
 draft:
 image: "img.webp"

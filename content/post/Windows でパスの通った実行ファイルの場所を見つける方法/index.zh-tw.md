@@ -1,7 +1,7 @@
 ---
 title: '在 Windows 中尋找已設定環境變數路徑的執行檔位置（路徑）的方法【where 指令】'
 slug: "Windows で路徑の通った執行檔の場所を見つける方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "路徑", "執行檔", "命令提示字元"]
 draft: false
 image: "img.webp"

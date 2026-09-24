@@ -2,7 +2,7 @@
 title: "Random Walk: Die Mathematik von Diffusion und Brownscher Bewegung verstehen"
 description: "Eine detaillierte Erklärung des mathematischen Hintergrunds des Random Walk, von den Grundlagen bis zu Diffusionsphänomenen und Brownscher Bewegung. Ein umfassender Leitfaden inklusive Pólyas Rekurrenzsatz und Finanzanwendungen."
 slug: "random-walk"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematik"]
 tags: ["Random Walk", "Wahrscheinlichkeitstheorie", "Diffusionsgleichung", "Brownsche Bewegung", "Python"]

@@ -2,7 +2,7 @@
 title: "NVIDIA（ジフォース）の歴史: 3DグラフィックスからAIの心臓部(GPU)へと大化けした軌跡"
 description: "ゲーム用グラフィックスボードのメーカーから、現代AI革命を牽引する絶対王者へと変貌したNVIDIAの歴史。"
 slug: "history-of-nvidia"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T01:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

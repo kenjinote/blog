@@ -1,6 +1,5 @@
 ---
 title: "【Grace Hopper: Kehidupan dan Warisan \"Ibu COBOL\" yang Membuka Masa Depan Pemrograman】"
-date: "2026-09-24T16:08:36+09:00"
 description: "Laksamana Muda Angkatan Laut AS Grace Hopper, yang dikenal sebagai \"Ibu COBOL\". Dari penemuan kompiler hingga penemuan bug komputer pertama, kami mengulas tuntas kehidupan yang penuh gejolak dan pencapaian luar biasa yang membangun fondasi masyarakat IT modern."
 slug: "biography-grace-hopper"
 categories: ["biography"]

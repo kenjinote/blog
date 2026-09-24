@@ -2,7 +2,7 @@
 title: "تاريخ وتطور إدارة الحالة (مقارنة بين Redux و Context و Recoil و Zustand)"
 description: "التطور التاريخي لمكتبات إدارة الحالة التي تركز على React، ومقارنة بين كل بنية."
 slug: "state-management-history-redux-context-recoil-zustand"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

@@ -1,6 +1,5 @@
 ---
 title: "The Progenitor of the Internet, ARPANET: The Complete Story of the Network That Changed the World, Born from Cold War Military Research"
-date: "2026-09-24T16:08:36+09:00"
 description: "ARPANET is the direct origin of the modern internet. From the birth of packet switching technology, the development of IMP, the historic 1969 communication, and its evolution into TCP/IP, we delve deeply into the history of the internet's genesis with thousands of words of detailed explanation."
 slug: "history-arpanet"
 categories: ["history"]

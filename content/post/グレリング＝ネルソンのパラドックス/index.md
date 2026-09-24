@@ -1,7 +1,7 @@
 ---
 title: "言葉が自分自身を描写する時：グレリング＝ネルソンのパラドックス"
 description: "「自己記述的」な言葉と「非自己記述的」な言葉の分類が生み出す、論理学と意味論の深い迷宮を紐解きます。"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "grelling-nelson-paradox"
 image: "img/grelling_nelson.jpg"

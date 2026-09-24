@@ -2,7 +2,7 @@
 title: "L'algorithme d'Euclide : calcul rapide du PGCD et le plus ancien algorithme de l'humanité"
 description: "Un guide complet sur l'algorithme d'Euclide pour calculer le plus grand commun diviseur (PGCD), couvrant sa mécanique, son implémentation, sa complexité, le théorème de Lamé, l'algorithme d'Euclide étendu et ses applications dans la cryptographie RSA."
 slug: "euclidean-algorithm"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]

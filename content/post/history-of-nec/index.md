@@ -2,7 +2,7 @@
 title: "NECの歴史: 日本のコンピュータ黎明期を支えたPC-98と通信技術の歩み"
 description: "通信の巨人からPC-9800シリーズでの覇権、そして海底ケーブルや宇宙技術に至るNECの歴史。"
 slug: "history-of-nec"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T01:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

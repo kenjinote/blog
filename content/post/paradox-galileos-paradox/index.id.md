@@ -1,6 +1,5 @@
 ---
 title: "Paradoks Galileo: Misteri Matematika yang Terjalin oleh Ketakterhinggaan"
-date: "2026-09-24T16:08:36+09:00"
 description: "Apakah jumlah \"bilangan asli\" dan \"bilangan kuadratnya\" sama? Penjelasan menyeluruh dari pemikiran mendalam tentang \"ketakterhinggaan\" yang ditinggalkan oleh Galileo Galilei di tahun-tahun terakhirnya, hingga hubungannya dengan teori himpunan modern. Ini adalah artikel panjang yang mendekati misteri dan pesona dari ketakterhinggaan."
 slug: "paradox-galileos-paradox"
 categories: ["science"]

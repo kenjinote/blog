@@ -2,7 +2,7 @@
 title: "Cara kerja pembangkit listrik tenaga nuklir: dari panas fisi menjadi listrik, dan mengapa pendinginan tetap diperlukan setelah reaktor berhenti"
 description: "Memahami energi nuklir melalui energi ikat, reaksi berantai, neutron kasip, PWR, BWR, turbin, panas peluruhan, dan bahan bakar bekas, dilengkapi sejarah, diagram, dan contoh perhitungan."
 slug: "how-nuclear-power-works"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-24T10:00:00+09:00"
 image: "eyecatch.png"
 categories: ["technology", "physics"]
 tags: ["nuclear-power", "nuclear-fission", "energy", "engineering", "history"]

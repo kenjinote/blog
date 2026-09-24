@@ -2,7 +2,7 @@
 title: "L'argument de la diagonale de Cantor (Cantor's Diagonal Argument) - Preuve que les nombres réels sont « écrasamment plus nombreux » que les rationnels"
 description: "Il existe des différences de « taille » dans l'infini. Nous expliquons en détail le processus de preuve que la cardinalité des nombres réels est strictement supérieure à celle des entiers naturels ou rationnels, en utilisant « l'argument de la diagonale » proposé par Georg Cantor."
 slug: "cantors-diagonal-argument"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "foundations-of-mathematics", "set-theory"]
 tags: ["Cantor", "Argument de la diagonale", "Infini", "Mathématiques", "Preuve"]

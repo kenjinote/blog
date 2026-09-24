@@ -1,6 +1,5 @@
 ---
 title: "量子力学的极北：薛定谔的猫带来的现实悖论"
-date: "2026-09-24T16:08:36+09:00"
 description: "什么是“薛定谔的猫”？我们将从历史背景到多世界诠释，彻底解说量子力学中“叠加态”与“观测问题”的核心。"
 slug: "paradox-schrodingers-cat"
 categories: ["science"]

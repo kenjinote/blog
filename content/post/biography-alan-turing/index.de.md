@@ -1,6 +1,5 @@
 ---
 title: "Alan Turing: Der Vater der KI und sein tragisches Ende"
-date: "2026-09-24T16:08:36+09:00"
 description: "Eine tiefgründige Untersuchung des Lebens, der Leistungen und des Erbes von Alan Turing, dem genialen Mathematiker, der die Grundlagen für die moderne Informatik und künstliche Intelligenz legte, aber durch die Gesellschaft seiner Zeit ein tragisches Ende fand."
 slug: "biography-alan-turing"
 categories: ["biography"]

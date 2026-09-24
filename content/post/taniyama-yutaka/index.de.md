@@ -2,7 +2,7 @@
 title: "Yutaka Taniyama: Das Leben und die Errungenschaften des genialen Mathematikers, der ungelöste Probleme herausforderte"
 description: 'Ein tiefer Einblick in das Leben von Yutaka Taniyama, dem brillanten japanischen Mathematiker, der für die "Taniyama-Shimura-Vermutung" bekannt ist, und sein immenser Einfluss auf die moderne Mathematik.'
 slug: "taniyama-yutaka"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Yutaka Taniyama", "Mathematik", "Großer Fermatscher Satz", "Taniyama-Shimura-Vermutung", "Elliptische Kurven", "Modulformen"]

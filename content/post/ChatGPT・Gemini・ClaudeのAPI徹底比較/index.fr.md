@@ -1,7 +1,7 @@
 ---
 title: 'Comparaison complète des API ChatGPT, Gemini et Claude ! Laquelle choisir ?'
 slug: "chatgpt-gemini-claude-api-comparison"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

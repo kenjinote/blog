@@ -2,7 +2,7 @@
 title: "Teorema Nilai Antara dan Teorema Nilai Rata-rata: Alat Pembuktian Kuat dari Sifat Intuitif Fungsi Kontinu dan Turunan"
 description: "Penjelasan mendalam tentang Teorema Nilai Antara dan Teorema Nilai Rata-rata, yang membentuk dasar kalkulus. Kami mengeksplorasi makna intuitifnya, pembuktian matematis yang ketat, dan aplikasinya."
 slug: "intermediate-and-mean-value-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
 categories: ["matematika"]
 tags: ["kalkulus", "teorema", "pembuktian-matematika"]

@@ -2,7 +2,7 @@
 title: "Transformada de Laplace: A Técnica para Transformar Equações Diferenciais Difíceis em Equações Algébricas"
 description: "Uma explicação detalhada desde o básico da transformada de Laplace até sua aplicação em equações diferenciais. Exploramos a essência dessa poderosa ferramenta matemática que transita entre o domínio do tempo e o domínio da frequência complexa."
 slug: "laplace-transform"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matemática"

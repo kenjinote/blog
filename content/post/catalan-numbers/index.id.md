@@ -2,7 +2,7 @@
 title: "Bilangan Catalan: Mengapa Susunan Kurung dan Struktur Pohon Menghasilkan Jumlah yang Sama"
 description: "Penjelasan tentang bilangan Catalan, deret menarik yang menghubungkan urutan kurung yang valid, pohon biner, dan triangulasi poligon. Kami juga membahas metode komputasi menggunakan rekursi dan pemrograman dinamis."
 slug: "catalan-numbers"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matematika"

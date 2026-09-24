@@ -2,7 +2,7 @@
 title: "Transformée de Laplace : La technique pour transformer des équations différentielles difficiles en équations algébriques"
 description: "Une explication approfondie des bases de la transformée de Laplace jusqu'à son application aux équations différentielles. Nous explorons l'essence de cet outil mathématique puissant qui fait le lien entre le domaine temporel et le domaine fréquentiel complexe."
 slug: "laplace-transform"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathématiques"

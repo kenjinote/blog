@@ -2,7 +2,7 @@
 title: "Takakazu Seki: Leben und mathematische Errungenschaften des 'Mathematik-Weisen', der Wasan erhob"
 description: "Eine detaillierte Erklärung des Lebens von Takakazu Seki, einem genialen Mathematiker der Edo-Zeit, und seiner erstaunlichen mathematischen Errungenschaften, die mit der westlichen Mathematik vergleichbar sind, wie die Entdeckung des Kreisprinzips, Determinanten und Bernoulli-Zahlen."
 slug: "seki-takakazu"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematik", "Biografie"]
 tags: ["Takakazu Seki", "Wasan", "Edo-Zeit", "Geschichte der Mathematik", "Analysis", "Determinante"]

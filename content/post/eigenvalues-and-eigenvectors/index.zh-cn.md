@@ -2,7 +2,7 @@
 title: "特征值与特征向量：矩阵变换中“方向不变”的特殊向量及其应用"
 description: "详细讲解线性代数中最重要的概念之一：特征值与特征向量，从几何意义、具体计算方法到机器学习与物理学中的应用。结合Python实现示例，旨在帮助读者获得直观的理解。"
 slug: "eigenvalues-and-eigenvectors"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["线性代数", "特征值", "特征向量", "数学", "机器学习", "python", "数据科学"]

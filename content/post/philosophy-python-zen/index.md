@@ -1,6 +1,5 @@
 ---
 title: "Pythonの「Zen (禅)」：美しさとシンプルさを追求するプログラミング哲学の深淵"
-date: "2026-09-24T16:08:36+09:00"
 description: "Pythonの設計思想「The Zen of Python (PEP 20)」について、その歴史的背景から19の格言が持つ深い意味、そして現代のソフトウェア開発においてなぜこれほどまでに重要視されるのかを徹底的に解説します。"
 slug: "philosophy-python-zen"
 categories: ["philosophy"]

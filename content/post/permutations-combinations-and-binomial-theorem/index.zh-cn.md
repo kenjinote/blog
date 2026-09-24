@@ -2,7 +2,7 @@
 title: "排列、组合与二项式定理：从帕斯卡三角形看数字的奇妙规律"
 description: "详细讲解排列、组合的基础知识，到二项式定理，以及帕斯卡三角形编织出的优美数学结构。"
 slug: "permutations-combinations-and-binomial-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

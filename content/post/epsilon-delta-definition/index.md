@@ -2,7 +2,7 @@
 title: "ε-δ（イプシロン-デルタ）論法：極限の厳密な定義と、なぜ「限りなく近づく」という表現ではダメなのか"
 description: "微分積分学の基礎となるε-δ論法について、歴史的背景から具体的な証明方法まで、直感的なゲームの例えを交えて詳細に解説します。"
 slug: "epsilon-delta-definition"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "mathematics"

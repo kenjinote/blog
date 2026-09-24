@@ -1,7 +1,7 @@
 ---
 title: '程式語言 Rust 的 5 大主要特色為何？'
 slug: "Rustの特徴"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-10-03T22:47:20+09:00
 tags: ["Rust"]
 draft: false
 image: "img.webp"

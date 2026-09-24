@@ -6,7 +6,7 @@
 
 title: '아이 책상을 빌려 작업? 육아 중 재택근무·원격근무의 리얼한 작업 환경'
 slug: "今日の作業環境"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-04T14:29:09+09:00
 tags: ["잡기","아이"]
 draft: false
 image: "images/today_workplase.webp"

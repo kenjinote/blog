@@ -2,7 +2,7 @@
 title: "Puzzle Algorithms: How to Solve a Rubik's Cube and Algorithms - Solving 43 Quintillion Combinations"
 description: "Often thought of as \"impossible to solve on your own,\" the Rubik's Cube can actually be solved by anyone by memorizing a few \"algorithms\" (sequences). We explain the world of puzzles woven by group theory and mathematics."
 slug: "game-rubiks-cube"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

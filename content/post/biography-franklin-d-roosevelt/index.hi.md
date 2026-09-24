@@ -1,6 +1,6 @@
 ---
 title: "फ़्रैंकलिन डी. रूज़वेल्ट: संकटों को पार करने वाले अमेरिका के 32वें राष्ट्रपति की यात्रा"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["franklin-d-roosevelt", "history"]
 image: "eyecatch.jpg"

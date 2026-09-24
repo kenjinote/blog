@@ -1,7 +1,7 @@
 ---
 title: '重构的秘诀：安全地改善遗留的 C++ 代码'
 slug: "refactoring-legacy-cpp-code-safely"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T20:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

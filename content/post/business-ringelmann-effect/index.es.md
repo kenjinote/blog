@@ -1,6 +1,5 @@
 ---
 title: "【La verdad sobre el efecto Ringelmann (holgazanería social) y la guía completa para maximizar la productividad organizacional】"
-date: "2026-09-24T16:08:36+09:00"
 description: "\"Las personas se esfuerzan menos cuando están en grupo\". Explicamos a fondo este \"efecto Ringelmann (holgazanería social)\" descubierto por el agrónomo francés Maximilien Ringelmann, sus efectos negativos en los negocios y las medidas concretas para proteger a tu organización."
 slug: "business-ringelmann-effect"
 categories: ["business"]

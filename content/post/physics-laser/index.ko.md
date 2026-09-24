@@ -1,6 +1,6 @@
 ---
 title: "물리학: 레이저의 원리 - 유도 방출과 빛의 증폭"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T04:01:41+09:00
 
 image: "eyecatch.jpg"
 categories: ["physics", "science"]

@@ -2,7 +2,7 @@
 title: "スペルナーの補題：三角形の色塗りから存在証明へ"
 description: "境界のルールに従って頂点を塗ると、3色の小三角形が必ず現れることを説明。不動点定理への橋渡しになります。"
 slug: "sperners-lemma"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["トポロジー", "組合せ論", "不動点定理"]

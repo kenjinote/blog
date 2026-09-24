@@ -2,7 +2,7 @@
 title: "4색 정리(Four Color Theorem) - 어떤 지도든 4색이면 칠할 수 있을까"
 description: "수학계의 난제였던 4색 정리의 역사, 증명 접근법, 그리고 컴퓨터 지원 증명의 의의에 대해 자세히 해설합니다."
 slug: "four-color-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "computer-science"]
 tags: ["Four Color Theorem", "Graph Theory", "Computer-assisted Proof", "Topology"]

@@ -2,7 +2,7 @@
 title: "Winny 的運作原理：搜尋、快取、中繼與匿名性的界限"
 description: "從索引資訊、頻寬分層、快取與中繼理解 Winny 的 P2P 網路，以傳輸量範例區分效率與匿名性，並整理資料外洩和開發者訴訟的經過。"
 slug: "history-of-winny"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["technology", "computer-science"]
 tags: ["p2p", "network", "winny", "history"]

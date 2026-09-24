@@ -2,7 +2,7 @@
 title: "バーチ・スウィンナートン＝ダイアー予想（BSD予想） - 楕円曲線上の有理点とL関数"
 description: "ミレニアム懸賞問題の一つであるバーチ・スウィンナートン＝ダイアー予想（BSD予想）について、楕円曲線の基本からL関数との深い繋がりまでを数理的に詳細に解説します。"
 slug: "bsd-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:05:17+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Number Theory", "Elliptic Curves", "BSD Conjecture", "Millennium Prize Problems"]

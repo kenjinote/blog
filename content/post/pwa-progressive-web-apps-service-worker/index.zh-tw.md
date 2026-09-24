@@ -2,7 +2,7 @@
 title: "PWA（漸進式網路應用程式）的潛力與實作（Service Worker 的力量）"
 description: "從 PWA 的全貌到 Service Worker 的生命週期、離線快取以及推播通知進行解說。"
 slug: "pwa-progressive-web-apps-service-worker"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

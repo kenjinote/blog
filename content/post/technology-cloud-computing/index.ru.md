@@ -2,7 +2,7 @@
 title: "От владения к использованию: как работают облачные вычисления — великая трансформация ИТ-инфраструктуры"
 description: "Как облачные вычисления, такие как Amazon Web Services (AWS) и Google Cloud (GCP), изменили ИТ для компаний и частных лиц? Объяснение различий между IaaS, PaaS и SaaS, а также основ технологий виртуализации."
 slug: "technology-cloud-computing"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

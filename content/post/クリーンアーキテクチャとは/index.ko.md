@@ -1,7 +1,7 @@
 ---
 title: '소프트웨어 아키텍처의 기본: 클린 아키텍처란?'
 slug: "clean-architecture-basics-guide"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

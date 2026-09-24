@@ -1,7 +1,7 @@
 ---
 title: 'إعلان عن طلب رعاية GitHub | طلب دعم التطوير'
 slug: "GitHubراعي募集"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "راعي"]
 draft: false
 image: "img.webp"

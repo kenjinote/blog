@@ -2,7 +2,7 @@
 title: "Anatomie complète de OAuth 2.0 et OIDC (OpenID Connect) (Différence entre authentification et autorisation)"
 description: "Explication détaillée du fonctionnement de OAuth 2.0 et OIDC, de la différence entre authentification et autorisation, et des différents types d'octroi."
 slug: "oauth2-oidc-authentication-authorization-difference"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

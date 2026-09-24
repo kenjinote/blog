@@ -2,7 +2,7 @@
 title: "CAP定理与分布式系统（一致性、可用性、分区容错性的权衡）"
 description: "分布式系统设计中的绝对法则“CAP定理”与现代数据库架构选择的折中点。"
 slug: "cap-theorem-distributed-systems-tradeoff"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

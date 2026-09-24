@@ -1,7 +1,7 @@
 ---
 title: "É possível encher com tinta, mas não pintar a superfície? A Trombeta de Gabriel"
 description: "Um estranho paradoxo tridimensional trazido pelo cálculo, que possui um 'volume finito' e uma 'área de superfície infinita' simultaneamente."
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "gabriels-horn"
 image: "img/gabriels_horn.jpg"

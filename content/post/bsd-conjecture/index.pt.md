@@ -2,7 +2,7 @@
 title: "Conjectura de Birch e Swinnerton-Dyer (Conjectura de BSD) - Pontos Racionais em Curvas Elípticas e Funções L"
 description: "Sobre a Conjectura de Birch e Swinnerton-Dyer (Conjectura de BSD), um dos Problemas do Prêmio Millennium, explicamos detalhadamente e matematicamente desde os fundamentos das curvas elípticas até sua profunda conexão com as funções L."
 slug: "bsd-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:05:17+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Teoria dos Números", "Curvas Elípticas", "Conjectura de BSD", "Problemas do Prêmio Millennium"]

@@ -2,7 +2,7 @@
 title: "تاريخ جوجل: التطور من محرك بحث إلى شركة تعطي الأولوية للذكاء الاصطناعي"
 description: "تاريخ جوجل من PageRank إلى Transformer"
 slug: "history-of-google"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T00:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

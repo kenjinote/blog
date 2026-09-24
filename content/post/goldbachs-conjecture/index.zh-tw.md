@@ -2,7 +2,7 @@
 title: "哥德巴赫猜想 - 所有大於2的偶數都能表示為兩個質數之和嗎？"
 description: "詳細解釋數學中最著名的未解決問題之一的「哥德巴赫猜想」，涵蓋其歷史、意義以及在現代數學中的地位。"
 slug: "goldbachs-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "unsolved-problems"]
 tags:

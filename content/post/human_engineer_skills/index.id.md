@@ -1,7 +1,7 @@
 ---
 title: 'Keterampilan Insinyur Khas Manusia yang Dibutuhkan di Era AI Menulis Kode'
 slug: "human-engineer-skills-ai-era"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

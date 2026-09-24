@@ -1,7 +1,7 @@
 ---
 title: 'Maximizando la eficiencia de desarrollo: disposición y solución óptima para múltiples pantallas'
 slug: "multi-display-monitor-setup-optimization-for-devs"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

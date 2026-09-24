@@ -1,6 +1,5 @@
 ---
 title: "Análisis exhaustivo de la Ley de Brooks: ¿Por qué añadir personal a un proyecto retrasado es echar leña al fuego?"
-date: "2026-09-24T16:08:36+09:00"
 description: "\"Añadir personas a un proyecto retrasado lo retrasa aún más\". Profundizamos en la Ley de Brooks, propuesta en el clásico de la ingeniería de software 'El mítico hombre-mes', explorando sus antecedentes, causas y medidas preventivas en el desarrollo ágil moderno."
 slug: "business-brooks-law"
 categories: ["business"]

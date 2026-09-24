@@ -2,7 +2,7 @@
 title: "Gerd Faltings: O gigante da moderna teoria dos números que resolveu a conjectura de Mordell"
 description: "Uma explicação detalhada da vida do medalhista Fields Gerd Faltings e de suas realizações matemáticas, incluindo a resolução da Conjectura de Mordell. Traçando seus grandes passos da geometria algébrica à teoria dos números."
 slug: "faltings"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemática"

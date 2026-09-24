@@ -2,7 +2,7 @@
 title: "Leyes de la física y tecnología cotidiana: Cómo funciona la fibra óptica - Internet ultrarrápido sustentado por la ley física de la reflexión total"
 description: "Los \"cables de fibra óptica\", finos hilos de vidrio que recorren el fondo marino conectando los continentes del mundo. Explicamos la física detrás de la \"reflexión total\", la razón por la que la luz viaja a través de tubos de vidrio curvados sin filtrarse, y el mecanismo de las comunicaciones ópticas que sustentan Internet."
 slug: "physics-optical-fiber"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

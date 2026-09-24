@@ -2,7 +2,7 @@
 title: "El Teorema Egregium de Gauss - Un hito de la geometría diferencial que se puede aplicar a cómo comer pizza"
 description: "Sobre el 'Teorema Egregium' descubierto por Carl Friedrich Gauss, explicamos profundamente desde sus antecedentes matemáticos hasta su aplicación cotidiana al comer pizza."
 slug: "theorema-egregium"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:11:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]
 tags: ["Geometría", "Gauss", "Teorema de la pizza", "Theorema Egregium", "Geometría diferencial"]

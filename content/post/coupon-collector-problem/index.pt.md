@@ -1,7 +1,7 @@
 ---
 title: "O problema do colecionador de cupons: quantos sorteios são necessários para completar a coleção?"
 description: "Colecionar 10 tipos de cartas equiprováveis exige cerca de 29,3 sorteios em média, mas só cerca de 63% das coleções ficam completas em 30 sorteios. Entenda com fórmulas, gráficos e uma simulação em Python."
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-15T21:20:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "statistics"]
 tags: ["Probabilidade", "Valor esperado", "Problema do colecionador de cupons", "Python"]

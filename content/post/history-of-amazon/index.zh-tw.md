@@ -2,7 +2,7 @@
 title: "Amazon的歷史：從線上書店到巨大物流與雲端(AWS)帝國的歷程"
 description: "稱霸電子商務與AWS雲端的Amazon歷史"
 slug: "history-of-amazon"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T00:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

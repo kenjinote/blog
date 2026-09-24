@@ -2,7 +2,7 @@
 title: 'Newcomb''s Paradox: Can You Beat a Superbeing Who Foresees the Future?'
 slug: 'newcombs-paradox'
 description: 'A transparent box with 100,000 yen and an opaque box with either 100 million yen or nothing. Which would you choose in a game prepared by a superbeing who perfectly predicts the future? We explain the greatest puzzle in modern philosophy where free will and determinism clash.'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T08:00:00+09:00'
 image: 'img/newcombs_paradox.jpg'
 math: true
 mermaid: true

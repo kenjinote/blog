@@ -2,7 +2,7 @@
 title: "Teorema CAP e Sistemas Distribuídos: O Dilema Essencial dos Bancos de Dados Distribuídos"
 description: "Exploramos profundamente o teorema CAP, o princípio mais importante em sistemas distribuídos, desde sua definição e prova até sua extensão para o teorema PACELC e implementação em bancos de dados distribuídos reais."
 slug: "cap-theorem-distributed-systems"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T00:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "distributed-systems"

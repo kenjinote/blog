@@ -2,7 +2,7 @@
 title: "Arquitectura de Red Zero Trust (Escapando de la Defensa Perimetral)"
 description: "Aprende el concepto y los métodos de implementación de la arquitectura Zero Trust a partir de BeyondCorp de Google."
 slug: "zero-trust-network-architecture-beyond-corp"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

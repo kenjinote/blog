@@ -4,7 +4,7 @@
 
 title: 'Cómo crear y mostrar una ventana simple de Windows usando Rust y winapi'
 slug: "RustでシンプルなVentanaを表示する"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-10-01T19:08:58+09:00
 tags: ["Rust","Ventana"]
 draft: false
 image: "images/rust_logo.webp"

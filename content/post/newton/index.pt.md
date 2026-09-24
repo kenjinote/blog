@@ -2,7 +2,7 @@
 title: "Isaac Newton: Abordando a Vida do Gênio Através da Descoberta do Cálculo e da Gravitação Universal"
 description: "Um mergulho profundo na vida extraordinária de Isaac Newton, nos episódios durante o Ano Miraculoso e nas suas descobertas revolucionárias na matemática e física."
 slug: "newton"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemática"

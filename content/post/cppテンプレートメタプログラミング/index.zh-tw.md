@@ -1,7 +1,7 @@
 ---
 title: '在 C++ 中使用模板元編程進行編譯期計算'
 slug: "cpp-template-metaprogramming-compile-time-computation"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T14:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

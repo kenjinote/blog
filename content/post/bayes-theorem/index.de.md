@@ -2,7 +2,7 @@
 title: "Satz von Bayes: Wahrscheinlichkeiten mit \"Neuen Beweisen\" aktualisieren, der Kern von KI und Statistik"
 description: "Eine ausführliche Erklärung, wie der Satz von Bayes Wahrscheinlichkeiten basierend auf neuen Beweisen aktualisiert, sein mathematischer Hintergrund und seine Anwendungen in KI und maschinellem Lernen."
 slug: "bayes-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematik"

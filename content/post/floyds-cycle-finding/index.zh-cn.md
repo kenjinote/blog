@@ -1,7 +1,7 @@
 ---
 title: "罗伯特·弗洛伊德的循环检测法（龟兔赛跑算法）"
 image: "eyecatch.jpg"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T00:00:00+09:00
 description: "用于检测列表或图中的循环（Cycle）的著名算法，“罗伯特·弗洛伊德的循环检测法（龟兔赛跑算法）”，本文将结合图解、数学公式以及 C++ 和 Rust 的代码实现进行详细讲解。"
 categories: ["algorithms", "computer-science"]
 tags:

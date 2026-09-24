@@ -2,7 +2,7 @@
 title: "Pick's Theorem: Finding Area Just by Counting Lattice Points"
 description: "A detailed explanation, with diagrams and proofs, of the formula to find the area of a hole-less polygon with lattice point vertices from the number of interior and boundary points."
 slug: "picks-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

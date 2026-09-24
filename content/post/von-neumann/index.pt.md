@@ -2,7 +2,7 @@
 title: 'John von Neumann: A Trajetória do "Cérebro Demoníaco" que Construiu a Ciência Moderna'
 description: 'Uma explicação detalhada da vida do gênio matemático John von Neumann, suas realizações surpreendentes desde a teoria dos jogos até a mecânica quântica e a ciência da computação, e inúmeras anedotas sobre ele.'
 slug: 'von-neumann'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-20T20:20:00+09:00'
 image: "eyecatch.jpg"
 categories: ['mathematics', 'biography']
 tags: ['John von Neumann', 'Mecânica Quântica', 'Teoria dos Jogos', 'Ciência da Computação', 'Matemático', 'Gênio']

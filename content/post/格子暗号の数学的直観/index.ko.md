@@ -1,7 +1,7 @@
 ---
 title: '격자 암호(Lattice-based cryptography)의 수학적 직관'
 slug: "lattice-based-cryptography-math-intuition"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T21:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

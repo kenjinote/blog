@@ -2,7 +2,7 @@
 title: "Tecnologia de Redes: Explicação Técnica do HTTP - O Protocolo Stateless que Sustenta a Web"
 description: "O 'HTTP' funciona nos bastidores sempre que acessamos um site. Explicaremos como um simples protocolo de transferência de texto evoluiu para a base das modernas e ricas aplicações web."
 slug: "history-of-http"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

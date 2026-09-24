@@ -2,7 +2,7 @@
 title: "Stratégie de jeu de plateau : règles de base et stratégies d'ouverture aux échecs - une guerre sur un plateau pour acculer le roi"
 description: "Les échecs sont le sport intellectuel le plus joué au monde. Des mouvements de base des pièces au contrôle du centre, en passant par le roque et les stratégies d'ouverture classiques (théorie), nous expliquons les concepts permettant aux débutants de gagner."
 slug: "game-chess-rules"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

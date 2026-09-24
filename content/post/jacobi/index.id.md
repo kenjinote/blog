@@ -2,7 +2,7 @@
 title: "Carl Gustav Jacob Jacobi: Jenius Matematika dari Fungsi Eliptik dan Mekanika"
 description: "Penjelasan terperinci tentang kehidupan Carl Gustav Jacob Jacobi, seorang matematikawan terkemuka abad ke-19, dan pencapaian matematikanya seperti fungsi eliptik, mekanika analitik, dan determinan (Jacobian)."
 slug: "jacobi"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matematika"

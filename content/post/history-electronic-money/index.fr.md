@@ -2,7 +2,7 @@
 title: "Finance & Cryptographie : L'histoire de la monnaie électronique - Numérisation de la monnaie et évolution de la technologie cryptographique"
 description: "De la substitution des « pièces et billets physiques » par des « données numériques ». Des premières expériences de David Chaum à la naissance de Suica, pour enfin arriver aux cryptomonnaies, découvrez l'histoire de l'évolution de la monnaie électronique."
 slug: "history-electronic-money"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

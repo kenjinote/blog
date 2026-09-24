@@ -1,7 +1,7 @@
 ---
 title: '宜丽客Deft Pro评测！8键轨迹球鼠标的优缺点'
 slug: "轨迹球Deft Pro（M-DPT1MRBK）のすすめ"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-05-02T23:28:33+09:00
 tags: ["轨迹球", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false
 image: "img.webp"

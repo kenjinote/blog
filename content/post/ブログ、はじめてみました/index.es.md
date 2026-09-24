@@ -5,7 +5,7 @@
 
 title: '¡He empezado un blog con el generador de sitios estáticos Hugo! Registro de mi día a día y notas técnicas'
 slug: "Blog、はじめてみました"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-02T07:23:00+09:00
 tags: ["Notas diversas"]
 draft: false
 image: "images/komeda.webp"

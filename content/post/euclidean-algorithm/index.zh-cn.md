@@ -2,7 +2,7 @@
 title: "欧几里得算法：快速求解最大公约数，从公元前流传至今的人类最古老算法"
 description: "全面解析用于计算最大公约数(GCD)的欧几里得算法（辗转相除法），涵盖其原理、代码实现、时间复杂度、拉梅定理、扩展欧几里得算法以及在RSA加密中的应用。"
 slug: "euclidean-algorithm"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]

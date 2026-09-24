@@ -2,7 +2,7 @@
 title: '使用 Rust 爆速開發 CLI 工具的教學'
 description: '這是一份使用 Rust 開發高速且安全的 CLI 工具的完整教學。我們將運用 clap、tokio、serde 等套件來建構實用的工具。'
 slug: "rust-cli-tool-fast-development-tutorial"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T13:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

@@ -2,7 +2,7 @@
 title: "대수학의 기본 정리: 'n차 방정식은 반드시 n개의 복소수 해를 갖는다'는 것의 증명"
 description: "대수학의 기본 정리의 역사, 직관적인 의미, 그리고 복소해석학(리우빌의 정리)을 이용한 아름다운 증명에 대해 자세히 해설합니다."
 slug: "fundamental-theorem-of-algebra"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "수학"

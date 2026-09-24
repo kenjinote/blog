@@ -2,7 +2,7 @@
 title: "蒲丰投针问题（Buffon's Needle） - 仅靠投针就能求圆周率的概率论经典"
 description: "仅仅在地上投针就能求出圆周率π？我们将从数学证明到模拟，详细讲解18世纪提出的令人惊叹的经典概率论问题“蒲丰投针”。"
 slug: "buffons-needle"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "probability-theory"]
 tags:

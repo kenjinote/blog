@@ -2,7 +2,7 @@
 title: "IBM의 역사: 펀치 카드에서 메인프레임, 그리고 양자 컴퓨터까지"
 description: "'빅 블루'가 어떻게 100년 이상 IT 산업을 선도해 올 수 있었는가."
 slug: "history-of-ibm"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T01:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

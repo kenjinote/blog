@@ -2,7 +2,7 @@
 title = "孿生質數猜想（Twin Prime Conjecture） - 差為2的質數對是否無限存在？"
 description = "關於數學上未解決的問題——孿生質數猜想，我們將詳細解說其歷史、部分解決方案以及最新研究動向等。"
 slug = "twin-prime-conjecture"
-date = "2026-09-24T16:08:36+09:00"
+date = "2026-09-14T13:04:13+09:00"
 image = "eyecatch.jpg"
 categories = ["mathematics"]
 tags = ["質數", "數論", "未解決問題"]

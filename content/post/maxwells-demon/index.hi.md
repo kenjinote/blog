@@ -1,7 +1,7 @@
 ---
 title: "मैक्सवेल का दानव (Maxwell's Demon): 'सूचना' की ऊर्जा जो भौतिकी के सामान्य ज्ञान को तोड़ती है"
 image: "eyecatch.jpg"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T00:00:00+09:00
 description: "एक विचार प्रयोग 'मैक्सवेल का दानव' जो ऊष्मप्रवैगिकी (Thermodynamics) के दूसरे नियम को तोड़ता हुआ प्रतीत होता है। हम गणितीय सूत्रों और आरेखों का उपयोग करते हुए विस्तार से बताएंगे कि कैसे इस विरोधाभास को 'सूचना की भौतिकी' द्वारा स्पष्ट किया गया था।"
 categories: ["physics", "information-theory"]
 tags: ["Thermodynamics", "Maxwell's Demon", "Entropy", "Landauer's Principle"]

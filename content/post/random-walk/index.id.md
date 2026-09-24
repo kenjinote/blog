@@ -2,7 +2,7 @@
 title: "Membaca Fenomena Difusi dan Matematika Gerak Brown dari Jalan Acak"
 description: "Penjelasan rinci mengenai latar belakang matematika jalan acak (random walk), dari dasar hingga fenomena difusi dan gerak Brown. Panduan definitif yang mencakup teorema Polya dan aplikasi keuangan."
 slug: "random-walk"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Matematika"]
 tags: ["Jalan Acak", "Probabilitas", "Persamaan Difusi", "Gerak Brown", "Python"]

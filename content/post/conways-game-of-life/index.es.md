@@ -2,7 +2,7 @@
 title: "El juego de la vida de Conway: Un autómata celular donde surge la complejidad de la vida a partir de reglas simples"
 description: "El \"Juego de la vida de Conway\" es un increíble autómata celular que produce comportamientos complejos similares a los de la vida a partir de solo cuatro reglas simples. Este artículo explora profundamente su trasfondo matemático, reglas detalladas, patrones famosos y ejemplos de implementación."
 slug: "conways-game-of-life"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-15T10:00:00+09:00
 image: "eyecatch.jpg"
 categories:
   - "Matemáticas"

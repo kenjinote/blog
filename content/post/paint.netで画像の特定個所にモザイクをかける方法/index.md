@@ -1,7 +1,7 @@
 ---
 title: 'paint.netで画像の特定箇所にモザイクをかける方法を簡単解説'
 slug: "paint.netで画像の特定個所にモザイクをかける方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-04-11T16:33:10+09:00
 tags: ["paint.net", "枠線", "画像"]
 draft: false
 image: "img.webp"

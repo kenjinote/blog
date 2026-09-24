@@ -2,7 +2,7 @@
 title: "ओपन-सोर्स का पलटवार: Android का इतिहास - दुनिया का सबसे बड़ा मोबाइल OS कैसे बना"
 description: "iPhone के आगमन का मुक़ाबला करने के लिए, Google ने 'ओपन हैंडसेट अलायंस' (Open Handset Alliance) बनाया। जानें कि मुफ़्त OS प्रदान करने के इस बिज़नेस मॉडल ने दुनिया भर के स्मार्टफ़ोन्स को कैसे बदल दिया।"
 slug: "history-of-android"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

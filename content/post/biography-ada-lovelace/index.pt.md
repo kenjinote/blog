@@ -1,6 +1,5 @@
 ---
 title: "Ada Lovelace: A Visão Completa da \"Primeira Programadora do Mundo\" que Previu o Futuro dos Computadores"
-date: "2026-09-24T16:08:36+09:00"
 description: "Ada Lovelace, nascida como filha do poeta Byron, escreveu o primeiro programa da história para a \"Máquina Analítica\" de Charles Babbage. Mergulhamos profundamente em sua vida, talento matemático e na incrível presciência que, já no século XIX, reconhecia o verdadeiro potencial dos computadores, em uma explicação detalhada de milhares de palavras."
 slug: "biography-ada-lovelace"
 categories: ["biography"]

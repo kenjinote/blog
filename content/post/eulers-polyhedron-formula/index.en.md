@@ -2,7 +2,7 @@
 title: "Euler's Polyhedron Formula: The Magic of Topology Shown by V - E + F = 2"
 description: "An in-depth explanation of the beauty of Euler's polyhedron formula (V - E + F = 2) and the world of topology it leads to. Let's explore the charm of invariants, from regular polyhedra to the Euler characteristic."
 slug: "eulers-polyhedron-formula"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematics"

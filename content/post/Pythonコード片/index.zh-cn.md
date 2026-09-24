@@ -1,7 +1,7 @@
 ---
 title: '使用Python下载图片并临时保存、显示的示例代码'
 slug: "Pythonコード片"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-02-24T18:21:14+09:00
 tags: ["Python", "示例代码"]
 draft: false
 image: "img.webp"

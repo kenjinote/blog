@@ -2,7 +2,7 @@
 title: "Búsqueda en estructuras de datos de árboles y grafos (DFS, BFS, algoritmo de Dijkstra)"
 description: "Estructuras de datos de árboles y grafos para representar relaciones de datos complejas. Una explicación exhaustiva desde la búsqueda en profundidad (DFS) y en anchura (BFS) hasta el problema del camino más corto (algoritmo de Dijkstra)."
 slug: "tree-graph-data-structures-search-dfs-bfs-dijkstra"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-22T03:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "graph", "tree", "dfs", "bfs", "dijkstra"]

@@ -2,7 +2,7 @@
 title: "Marche Aléatoire : Comprendre les Mathématiques de la Diffusion et du Mouvement Brownien"
 description: "Une explication détaillée de l'arrière-plan mathématique de la marche aléatoire, depuis les bases jusqu'au phénomène de diffusion et au mouvement brownien. Un guide définitif incluant le théorème de récurrence de Pólya et ses applications financières."
 slug: "random-walk"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathématiques"]
 tags: ["Marche Aléatoire", "Probabilité", "Équation de Diffusion", "Mouvement Brownien", "Python"]

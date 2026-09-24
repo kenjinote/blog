@@ -2,7 +2,7 @@
 title: "Finanznetzwerk: Wie Kreditkartenzahlungen funktionieren - Die Technologie von der Autorisierung bis zum Clearing"
 description: "Welche Datenkommunikation findet im Hintergrund statt, in dem Moment, in dem Sie Ihre Karte in einem Geschäft scannen? Wir erklären die Mechanismen von 'Autorisierung' und 'Clearing', die das globale Zahlungsnetzwerk unterstützen."
 slug: "technology-credit-card"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

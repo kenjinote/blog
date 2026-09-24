@@ -2,7 +2,7 @@
 title: "Teorema de la bola peluda (Hairy Ball Theorem) - El teorema de la topología sobre 'no poder peinar una bola peluda sin dejar un remolino'"
 description: "Explicamos en detalle el 'Teorema de la bola peluda', un famoso teorema de la topología, desde su comprensión intuitiva hasta su rigurosa demostración matemática y sus aplicaciones en el mundo real, como en meteorología y gráficos por computadora."
 slug: "hairy-ball-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "topology"]
 tags:

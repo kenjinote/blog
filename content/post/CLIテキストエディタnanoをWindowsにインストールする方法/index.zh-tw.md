@@ -1,7 +1,7 @@
 ---
 title: '在Windows中安裝CLI文字編輯器nano並設定環境變數的方法'
 slug: "CLI文字編輯器nanoをWindowsに安裝する方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-03-31T18:09:32+09:00
 tags: ["nano", "文字編輯器"]
 draft: false
 image: "img_1.webp"

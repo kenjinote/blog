@@ -2,7 +2,7 @@
 title: "金融與加密技術：電子貨幣的歷史 - 貨幣數位化與加密技術的演進"
 description: "直到「實體硬幣與紙鈔」被「數位數據」取代為止。從大衛·喬姆的早期實驗、Suica 的誕生，到加密資產的出現，為您剖析電子貨幣演進的歷史。"
 slug: "history-electronic-money"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

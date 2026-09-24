@@ -1,7 +1,7 @@
 ---
 title: 'Hugo में KaTeX कैसे पेश करें और सुंदर LaTeX-शैली के सूत्र कैसे प्रदर्शित करें'
 slug: "hugoでKaTeX(LaTeX風सूत्र表示)を有効にする方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-03-31T23:11:26+09:00
 tags: ["KaTeX", "LaTeX", "सूत्र", "गणित", "hugo"]
 draft: false
 math: true

@@ -2,7 +2,7 @@
 title: "Gilles Personne de Roberval: Pioneiro dos Indivisíveis e da Geometria Cinemática"
 description: "Gilles Personne de Roberval foi um dos principais matemáticos franceses do século XVII. Ativo às vésperas do cálculo, aprofundamo-nos em sua vida e conquistas, incluindo o método dos indivisíveis, cálculos da área da cicloide, tangentes cinemáticas e a invenção da 'balança de Roberval'."
 slug: "roberval"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matemática"

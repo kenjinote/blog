@@ -2,7 +2,7 @@
 title: "Mystères de la physique : Le mécanisme des LED - Pourquoi brillent-elles ? Le miracle du développement des LED bleues"
 description: "Le principe d'émission de lumière des LED, indispensables à l'éclairage et aux écrans modernes, et l'histoire du développement des LED bleues récompensé par un prix Nobel."
 slug: "physics-led-mechanism"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T02:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

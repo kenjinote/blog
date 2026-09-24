@@ -2,7 +2,7 @@
 title: "Internet of Things: Cara Kerjanya IoT - Di Balik Dunia yang Semuanya Saling Terhubung"
 description: "Dari peralatan rumah tangga hingga mobil dan mesin pabrik, 'IoT (Internet of Things)' menghubungkan segala hal ke internet. Kami akan menjelaskan bagaimana teknologi sensor dan jaringan komunikasi mengumpulkan data, serta berkolaborasi dengan AI untuk menciptakan nilai."
 slug: "technology-iot"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

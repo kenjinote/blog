@@ -1,7 +1,7 @@
 ---
 title: 'El equilibrio entre privacidad y conveniencia: El destino de la información personal en la era del Big Data'
 slug: 'privacy-vs-convenience-big-data'
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true

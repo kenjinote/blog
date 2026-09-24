@@ -2,7 +2,7 @@
 title: "代数学の基本定理：「n次方程式は必ずn個の複素数解を持つ」ことの証明"
 description: "代数学の基本定理の歴史、直感的な意味、そして複素解析（リウヴィルの定理）を用いた美しい証明について詳しく解説します。"
 slug: "fundamental-theorem-of-algebra"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

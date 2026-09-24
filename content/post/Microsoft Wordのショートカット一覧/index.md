@@ -1,7 +1,7 @@
 ---
 title: '【作業効率アップ】Microsoft Wordの便利なショートカットキー一覧'
 slug: "Microsoft Wordのショートカット一覧"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "ショートカット"]
 draft: false
 image: "img.webp"

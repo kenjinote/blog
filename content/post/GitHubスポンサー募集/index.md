@@ -1,7 +1,7 @@
 ---
 title: 'GitHubスポンサー募集のお知らせ｜開発支援のお願い'
 slug: "GitHubスポンサー募集"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "スポンサー"]
 draft: false
 image: "img.webp"

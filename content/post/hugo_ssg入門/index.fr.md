@@ -1,7 +1,7 @@
 ---
 title: 'Introduction à Hugo en tant que générateur de site statique (guide de migration depuis WordPress)'
 slug: "hugo-static-site-generator-wordpress-migration"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-13T02:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -116,7 +116,7 @@ Chaque fichier d'article de Hugo possède un bloc de métadonnées appelé "Fron
 ```yaml
 ---
 title: "Comprendre la taxonomie de Hugo"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-13T10:00:00+09:00
 draft: false
 categories:
   - "Explication technique"

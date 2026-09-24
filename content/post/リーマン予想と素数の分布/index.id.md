@@ -1,7 +1,7 @@
 ---
 title: 'Hipotesis Riemann dan Distribusi Bilangan Prima: Hubungan Mendalam dengan Kriptografi Modern'
 slug: "riemann-hypothesis-prime-distribution-cryptography"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T16:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

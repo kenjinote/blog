@@ -2,7 +2,7 @@
 title: "OS의 역사: macOS의 계보 (NeXTSTEP에서 UNIX의 혈통으로)"
 description: "Apple의 기반인 macOS가 어떻게 NeXTSTEP과 UNIX의 혈통을 이어받아 진화했는지."
 slug: "history-of-macos"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T02:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

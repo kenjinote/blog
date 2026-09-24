@@ -2,7 +2,7 @@
 title: "バーンサイドの補題：回すと同じ模様をどう数える？"
 description: "ネックレスの配色などを題材に、回転で重なる模様の重複を除く方法を解説。群論の具体的な入門になります。"
 slug: "burnsides-lemma"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "mathematics"

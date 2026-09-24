@@ -2,7 +2,7 @@
 title: "Fermats Letzter Satz - Wie ein in einem Randabstand hinterlassenes Rätsel nach 360 Jahren gelöst wurde"
 description: "Das berühmteste ungelöste Problem der Mathematikgeschichte, „Fermats Letzter Satz“. Wie dieses schwierige Problem, das 360 Jahre lang nach dem Tod von Pierre de Fermat die Bemühungen unzähliger brillanter Mathematiker abwehrte, von Andrew Wiles bewiesen wurde. Eine detaillierte Erklärung der dramatischen Geschichte und des mathematischen Hintergrunds."
 slug: "fermats-last-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "history"]
 tags:

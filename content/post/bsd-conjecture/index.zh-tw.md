@@ -2,7 +2,7 @@
 title: "貝赫和斯維納通-戴爾猜想（BSD猜想） - 橢圓曲線上的有理點與L函數"
 description: "關於千禧年大獎難題之一的貝赫和斯維納通-戴爾猜想（BSD猜想），從橢圓曲線的基礎到與L函數的深層聯繫，進行了詳細的數理與解析。"
 slug: "bsd-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:05:17+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["數論", "橢圓曲線", "BSD猜想", "千禧年大獎難題"]

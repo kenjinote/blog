@@ -2,7 +2,7 @@
 title: "History of IBM: From Punch Cards to Mainframes and Quantum Computers"
 description: "How \"Big Blue\" has continued to lead the IT industry for over 100 years."
 slug: "history-of-ibm"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T01:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -2,7 +2,7 @@
 title: "Mistérios da Física: Como o Bluetooth Funciona - Saltos de Frequência e Pareamento"
 description: "O Bluetooth é essencial para os dispositivos sem fio modernos. Por que ele se conecta de forma estável sem interferência? Desvendamos o salto de frequência, uma tecnologia de origem militar."
 slug: "physics-bluetooth"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

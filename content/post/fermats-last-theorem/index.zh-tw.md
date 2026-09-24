@@ -2,7 +2,7 @@
 title: "費馬最後定理 - 寫在空白處的謎題歷經360年終獲解答"
 description: "數學史上最著名的未解難題「費馬最後定理」。在皮埃爾·德·費馬死後的360年間，這個讓無數天才數學家鎩羽而歸的難題，究竟是如何被安德魯·懷爾斯證明的？我們將為您詳細解說這段戲劇性的歷史與數學背景。"
 slug: "fermats-last-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "history"]
 tags:

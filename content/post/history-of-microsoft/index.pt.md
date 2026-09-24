@@ -2,7 +2,7 @@
 title: "História da Microsoft: O Alvorecer dos PCs, a Hegemonia do Windows e a Adaptação à Era do Cloud e IA"
 description: "A história da Microsoft, do Windows ao Azure e a parceria com a OpenAI"
 slug: "history-of-microsoft"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T00:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

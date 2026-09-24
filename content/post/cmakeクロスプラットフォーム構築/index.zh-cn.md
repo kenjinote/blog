@@ -1,7 +1,7 @@
 ---
 title: '使用 CMake 构建跨平台 C++ 编译环境的步骤'
 slug: "cmake-cross-platform-build-environment-guide"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T09:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

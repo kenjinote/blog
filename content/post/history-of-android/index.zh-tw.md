@@ -2,7 +2,7 @@
 title: "開源的反擊：Android 的歷史 - 全球最大的行動作業系統是如何誕生的"
 description: "為了對抗 iPhone 的出現，Google 組成了「開放手機聯盟」。我們將解說這種免費提供作業系統的商業模式轉變，是如何改變了全球的智慧型手機。"
 slug: "history-of-android"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

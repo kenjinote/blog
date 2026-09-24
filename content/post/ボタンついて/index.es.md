@@ -5,7 +5,7 @@
 
 title: 'Cómo crear botones (controles GUI) e implementar el procesamiento de eventos con la API de Windows'
 slug: "Botónついて"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-01-14T20:24:00+09:00
 tags: ["botón", "GUI"]
 draft: false
 image: "img.webp"

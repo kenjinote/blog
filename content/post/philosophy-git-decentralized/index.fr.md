@@ -1,6 +1,5 @@
 ---
 title: "La Philosophie de Git (L'esthétique de la décentralisation)"
-date: "2026-09-24T16:08:36+09:00"
 description: "Une réflexion approfondie sur l'approche décentralisée, qui est la philosophie de conception de Git, de son esthétique et de son architecture. Nous élucidons le changement de paradigme de développement apporté par les systèmes de contrôle de version distribués."
 slug: "philosophy-git-decentralized"
 categories: ["philosophy"]

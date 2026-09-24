@@ -1,7 +1,7 @@
 ---
 title: 'Rangkuman Lagu Jepang Terkenal Rekomendasi: J-POP Klasik Nostalgia yang Menyentuh Hati'
 slug: "好きなMusik Jepang"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-01-06T04:11:01+09:00
 tags: ["Musik Jepang", "Musik"]
 draft: false
 image: "img.webp"

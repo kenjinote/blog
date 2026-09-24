@@ -2,7 +2,7 @@
 title: "カオス理論とバタフライ効果（Chaos Theory） - 初期値のわずかな違いが未来を予測不能にする仕組み"
 description: "初期値鋭敏性を持つ非線形力学系であるカオス理論とバタフライ効果について、歴史的背景から数学的基礎、フラクタル、そして現実世界での応用まで徹底解説します。"
 slug: "chaos-theory"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
 categories: ["science", "mathematics"]
 tags:

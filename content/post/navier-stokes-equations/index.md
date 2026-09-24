@@ -2,7 +2,7 @@
 title: "ナビエ＝ストークス方程式の解の存在と滑らかさ - 流体力学の基礎方程式における究極の謎"
 description: "クレイ数学研究所のミレニアム懸賞問題の1つである、ナビエ＝ストークス方程式の解の存在と滑らかさについて深く掘り下げます。"
 slug: "navier-stokes-equations"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "physics"]
 tags: ["Navier-Stokes", "Fluid Dynamics", "Millennium Prize Problems"]

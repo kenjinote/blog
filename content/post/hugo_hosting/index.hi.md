@@ -1,7 +1,7 @@
 ---
 title: 'Cloudflare Pages या GitHub Pages पर Hugo ब्लॉग को मुफ़्त और बहुत तेज़ी से कैसे होस्ट करें'
 slug: 'hugo-hosting-cloudflare-vs-github-pages'
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true

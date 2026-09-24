@@ -3,7 +3,7 @@ title: '【PQC】量子コンピュータの脅威と次世代の耐量子計算
 slug: "post-quantum-cryptography"
 tags: ["暗号技術", "PQC", "セキュリティ", "次世代技術"]
 image: "eyecatch.jpg"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-05T22:09:22+09:00
 categories: ["math-cryptography-quantum"]
 description: '公開鍵暗号は、量子コンピュータの実用化により将来的に解読されるリスクを抱えています。本記事では、この脅威（Y2Q問題）に対抗すべく開発が進む次世代のセキュリティ技術「耐量子計算機暗号（PQC）」の仕組みや重要性について詳しく解説します。'
 ---

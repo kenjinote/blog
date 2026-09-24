@@ -8,7 +8,7 @@
 
 title: '생성형 AI를 배우다! 도쿄대학 교수진의 추천 강의 영상 모음'
 slug: "생성 AIについて"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-04-16T02:13:56+09:00
 tags: ["생성형 AI", "YouTube", "강의"]
 draft: false
 image: "img.webp"

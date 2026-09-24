@@ -2,7 +2,7 @@
 title: "Singulärwertzerlegung (SVD): Zerlegung jeder Matrix in Rotationen und Skalierungen für Datenkompression und KI"
 description: "Ein umfassender Leitfaden zu den mathematischen Grundlagen, der geometrischen Intuition und den Anwendungen der Singulärwertzerlegung (SVD) in der Bildkompression und NLP."
 slug: "singular-value-decomposition"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematik"]
 tags: ["SVD", "Lineare Algebra", "Maschinelles Lernen", "Datenkompression", "KI", "Python"]

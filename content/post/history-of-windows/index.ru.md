@@ -2,7 +2,7 @@
 title: "История ОС: Эволюция Windows (от MS-DOS до завершения архитектуры NT)"
 description: "История развития Windows, начиная с текстового интерфейса MS-DOS, перехода к GUI и заканчивая надежной архитектурой NT."
 slug: "history-of-windows"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T02:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -1,7 +1,7 @@
 ---
 title: '양자 어닐링과 양자 게이트 방식의 차이를 알기 쉽게 해설'
 slug: "quantum-annealing-vs-gate-model-explained"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

@@ -1,6 +1,6 @@
 ---
 title: "जॉन डी. रॉकफेलर: आधुनिक पूंजीवाद को आकार देने वाले ऑयल टाइकून का जीवन और दर्शन"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["john-d-rockefeller", "history"]
 image: "eyecatch.jpg"

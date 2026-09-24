@@ -2,7 +2,7 @@
 title: "물리의 신비: LED의 원리 - 왜 빛나는가? 청색 LED 개발의 기적"
 description: "현대의 조명과 디스플레이에 필수적인 LED의 발광 원리와 노벨상을 빛낸 청색 LED 개발의 역사."
 slug: "physics-led-mechanism"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T02:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

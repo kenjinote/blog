@@ -2,7 +2,7 @@
 title: 'Joseph Liouville: Pionier der transzendenten Zahlen und der komplexen Analysis'
 description: 'Erforschung des Lebens und Vermächtnisses von Joseph Liouville, dem großen französischen Mathematiker des 19. Jahrhunderts, bekannt für den Satz von Liouville, transzendente Zahlen, die Sturm-Liouville-Theorie und die Wiederherstellung der Galois-Theorie.'
 slug: 'liouville'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-20T19:20:00+09:00'
 image: "eyecatch.jpg"
 categories:
   - 'Mathematik'

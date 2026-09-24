@@ -2,7 +2,7 @@
 title: "Marin Mersenne: El cartero de la Europa del siglo XVII y padrino de los primos de Mersenne"
 description: "Una mirada profunda a la vida de Marin Mersenne, sus interacciones con Descartes y Fermat, y sus logros matemáticos y científicos en los números primos de Mersenne y la acústica."
 slug: "mersenne"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemáticas"

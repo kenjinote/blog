@@ -2,7 +2,7 @@
 title: "班佛定律：為什麼那麼多數字以1開頭？"
 description: "探討隱藏在自然數據中神秘的數學定律，以及它如何被用來發現財務欺詐。"
 slug: "benfords-law"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-15T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "數學"

@@ -1,7 +1,7 @@
 ---
 title: '【수학 해설】 고등학생도 이해할 수 있는 RSA 암호의 원리'
 slug: "rsa-encryption-math-explained-for-beginners"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T13:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

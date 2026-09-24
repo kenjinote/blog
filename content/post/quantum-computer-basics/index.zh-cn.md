@@ -1,7 +1,7 @@
 ---
 title: '什么是量子计算机？从零讲解叠加态、量子纠缠等终极计算原理'
 slug: "quantum-computer-basics"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-05T22:10:00+09:00
 tags: ["量子计算机", "物理学", "技术"]
 image: "eyecatch.jpg"
 categories: ["math-cryptography-quantum"]

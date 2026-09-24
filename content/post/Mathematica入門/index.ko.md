@@ -9,7 +9,7 @@
 
 title: 'Mathematica 입문: 방정식·미분적분 등 기본 명령어 사용법'
 slug: "Mathematica入門"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-07-25T01:36:19+09:00
 tags: ["Mathematica", "수학", "알고리즘"]
 draft: false
 image: "img.webp"

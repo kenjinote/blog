@@ -2,7 +2,7 @@
 title: "बर्च और स्विन्नर्टन-डायर अनुमान (BSD अनुमान) - अण्डाकार वक्रों पर परिमेय बिंदु और L-फलन"
 description: "मिलेनियम पुरस्कार समस्याओं में से एक, बर्च और स्विन्नर्टन-डायर अनुमान (BSD अनुमान) के बारे में, अण्डाकार वक्रों के मूल सिद्धांतों से लेकर L-फलन के साथ उनके गहरे संबंध तक का विस्तृत गणितीय स्पष्टीकरण।"
 slug: "bsd-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:05:17+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Number Theory", "Elliptic Curves", "BSD Conjecture", "Millennium Prize Problems"]

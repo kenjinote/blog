@@ -1,6 +1,5 @@
 ---
 title: "Bapak Teori Informasi, Claude Shannon: Kehidupan dan Pencapaian Sang Jenius yang Menciptakan Era Digital"
-date: "2026-09-24T16:08:36+09:00"
 description: "Claude Shannon, \"Bapak Teori Informasi\" yang meletakkan dasar bagi komunikasi digital dan komputer modern. Dari kehidupan awalnya, penerapan aljabar Boolean, hingga pembentukan teori informasi, dan sisi aslinya yang penuh dengan semangat bermain yang mencintai sepeda roda satu dan juggling, kami menjelajahi seluruh gambaran jenius ini dengan penjelasan terperinci."
 slug: "biography-claude-shannon"
 categories: ["biography"]

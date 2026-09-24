@@ -2,7 +2,7 @@
 title: "Red Financiera: Mecanismo de Pago con Tarjeta de Crédito - Tecnología desde la Autorización hasta la Compensación"
 description: "Cuando escaneas tu tarjeta en una tienda, ¿qué comunicación de datos ocurre detrás de escena? Explicamos los mecanismos de 'autorización' y 'compensación' que sustentan la red global de pagos."
 slug: "technology-credit-card"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

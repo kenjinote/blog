@@ -2,7 +2,7 @@
 title: "Teknologi Jaringan: Transformasi dari IPv4 ke IPv6 dan Internet Generasi Berikutnya"
 description: "Alamat IP sebagai alamat internet. Artikel ini menjelaskan bagaimana IPv4 yang hanya berjumlah 4,3 miliar berhasil mengatasi krisis kehabisan alamat, dan bermigrasi ke IPv6 yang memiliki ruang tak terbatas."
 slug: "history-of-ipv6"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

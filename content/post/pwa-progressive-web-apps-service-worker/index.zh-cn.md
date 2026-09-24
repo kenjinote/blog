@@ -2,7 +2,7 @@
 title: "PWA (Progressive Web Apps) 的潜力与实现（Service Worker的力量）"
 description: "从PWA全貌到Service Worker的生命周期、离线缓存和Push通知的全面解说。"
 slug: "pwa-progressive-web-apps-service-worker"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

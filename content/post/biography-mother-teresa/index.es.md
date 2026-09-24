@@ -1,6 +1,6 @@
 ---
 title: "Una vida dedicada a los «más pobres de entre los pobres»: La trayectoria y filosofía de la Madre Teresa"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:46:04+09:00
 categories: ["biography"]
 tags: ["mother-teresa", "history"]
 image: "eyecatch.jpg"

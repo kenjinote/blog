@@ -1,7 +1,7 @@
 ---
 title: "中心极限定理（Central Limit Theorem） - 任意数据相加都会趋于正态分布的奇迹"
 description: "详细讲解统计学中最重要的定理之一——中心极限定理，从直观理解到数学证明，再到使用Python进行模拟验证。"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "统计学"]
 tags: ["中心极限定理", "概率论", "数据科学", "Python"]

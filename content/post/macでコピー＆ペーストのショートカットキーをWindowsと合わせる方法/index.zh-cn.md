@@ -1,7 +1,7 @@
 ---
 title: '将Mac的复制粘贴快捷键更改为与Windows相同设置的方法'
 slug: "macで复制与粘贴の快捷键をWindowsと合わせる方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-04-05T00:49:02+09:00
 tags: ["macos", "mac", "快捷键", "复制粘贴"]
 draft: 
 image: "img.webp"

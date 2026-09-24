@@ -2,7 +2,7 @@
 title: "Criptomonedas y Bitcoin: Su Historia, Fundamentos Matemáticos y Futuro"
 description: "Una guía completa que explica exhaustivamente los mecanismos técnicos y matemáticos detrás de Bitcoin y las criptomonedas. Cubre SHA-256, criptografía de curva elíptica, UTXO y el problema de escalabilidad."
 slug: "cryptocurrency-and-bitcoin"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T23:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["tecnología", "matemáticas"]
 tags: ["bitcoin", "criptografía", "blockchain"]

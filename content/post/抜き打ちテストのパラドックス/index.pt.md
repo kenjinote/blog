@@ -2,7 +2,7 @@
 title: 'O Paradoxo do Teste Surpresa: O dia em que um teste logicamente "absolutamente impossível" acontece'
 slug: 'unexpected-hanging-paradox'
 description: '"Na próxima semana, em algum dia de segunda a sexta-feira, farei um teste surpresa de uma forma que vocês não poderão prever" —— Em resposta a esta declaração do professor, os alunos provaram que "logicamente, um teste surpresa é impossível". No entanto...'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T10:00:00+09:00'
 image: 'img/unexpected_hanging.jpg'
 math: true
 mermaid: true

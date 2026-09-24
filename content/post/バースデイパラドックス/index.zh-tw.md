@@ -2,7 +2,7 @@
 title: '生日悖論：只要23人就有超過50%機率？欺騙直覺的「組合」魔法'
 slug: 'birthday-paradox'
 description: '在學校班級或公司部門中，只要聚集了23個人，存在兩個同月同日生的人的機率就會超過50%。本文將運用機率論與圖表，視覺化且以數學方式解說，人類的直覺是多麼容易忽略「組合的爆炸」現象。'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T00:00:00+09:00'
 image: 'img/birthday_paradox.jpg'
 math: true
 mermaid: true

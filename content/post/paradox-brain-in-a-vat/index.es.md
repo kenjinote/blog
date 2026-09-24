@@ -1,6 +1,5 @@
 ---
 title: "[El cerebro en una cubeta y la hipótesis de la simulación] ¿Es real nuestra realidad?"
-date: "2026-09-24T16:08:36+09:00"
 description: "Exploramos a fondo el experimento mental del \"cerebro en una cubeta\" y la hipótesis de la simulación desde las perspectivas de la filosofía, la mecánica cuántica y la teoría de la información. ¿Es el mundo en el que vivimos una realidad, o una realidad virtual avanzada? Una reflexión detallada sobre la pregunta fundamental de la humanidad."
 slug: "paradox-brain-in-a-vat"
 categories: ["philosophy"]

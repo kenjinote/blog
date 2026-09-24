@@ -1,6 +1,5 @@
 ---
 title: "C語言的哲學：指標與自由帶來的程式設計深淵"
-date: "2026-09-24T16:08:36+09:00"
 description: "C語言的核心在於「指標」與「自由」。這種將一切交託給開發者的哲學，是如何激發硬體極限並促進程式設計師成長的？深入探討記憶體管理的深淵。"
 slug: "philosophy-c-language-pointers"
 categories: ["philosophy"]

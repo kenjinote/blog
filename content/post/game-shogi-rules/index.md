@@ -2,7 +2,7 @@
 title: "ボードゲームのAI技術: 将棋の基本ルールと代表的な戦略 - 居飛車と振り飛車の戦法解説"
 description: "81マスの盤上で繰り広げられる究極の思考ゲーム「将棋」。初心者向けの基本ルールのおさらいから、プロも用いる代表的な二大戦略「居飛車」と「振り飛車」の思想までを分かりやすく解説します。"
 slug: "game-shogi-rules"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

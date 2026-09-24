@@ -2,7 +2,7 @@
 title: "Teorema de Pick: Encontrar el Área Solo Contando Puntos de la Cuadrícula"
 description: "Una explicación detallada, con diagramas y demostraciones, de la fórmula para encontrar el área de un polígono sin agujeros con vértices en los puntos de una cuadrícula a partir del número de puntos interiores y en el límite."
 slug: "picks-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matemáticas"

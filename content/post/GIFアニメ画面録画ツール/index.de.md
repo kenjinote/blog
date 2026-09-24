@@ -1,7 +1,7 @@
 ---
 title: 'Einfach! Anleitung und Download für ein GIF-Animations-Bildschirmaufzeichnungs-Tool'
 slug: "GIFアニメ画面録画Tool"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-02-08T01:23:01+09:00
 tags: ["Tool", "Bildschirmaufnahme", "GIF"]
 draft: false
 image: "img.webp"

@@ -2,7 +2,7 @@
 title: 'ピタゴラス：数学と神秘主義の交差点'
 description: '古代ギリシャの数学者ピタゴラスの生涯、ピタゴラスの定理、そして万物は数なりという哲学について深く探求します。'
 slug: 'pythagoras'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-20T18:40:00+09:00'
 image: "eyecatch.jpg"
 categories:
   - 'mathematics'

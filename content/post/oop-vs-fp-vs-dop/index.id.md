@@ -2,7 +2,7 @@
 title: "Pemrograman Berorientasi Objek vs Fungsional vs Berorientasi Data: Batas dan Fusi Paradigma"
 description: "Membahas secara mendalam sejarah dan evolusi paradigma pemrograman, keunggulan dan batasan masing-masing dari OOP, FP, dan DOP, serta menganalisis secara tuntas 'fusi paradigma' yang menjadi solusi optimal dalam pengembangan modern."
 slug: "oop-vs-fp-vs-dop"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:58:35+09:00"
 image: "eyecatch.jpg"
 categories: ["programming", "architecture", "software-engineering"]
 tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]

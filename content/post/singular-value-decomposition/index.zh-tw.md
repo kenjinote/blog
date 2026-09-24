@@ -2,7 +2,7 @@
 title: "奇異值分解 (SVD)：將任意矩陣分解為旋轉和縮放，應用於資料壓縮與AI"
 description: "全面解析奇異值分解（SVD）的數學基礎、幾何直觀，以及在影像壓縮和自然語言處理中的應用。"
 slug: "singular-value-decomposition"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
 categories: ["數學"]
 tags: ["SVD", "線性代數", "機器學習", "資料壓縮", "人工智慧", "Python"]

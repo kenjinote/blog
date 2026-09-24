@@ -8,7 +8,7 @@
 
 title: '¿Qué es la paradoja del cumpleaños? Por qué la probabilidad de que 23 personas compartan el mismo cumpleaños supera el 50%'
 slug: "バースデイParadojaとは"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-04-02T01:20:50+09:00
 tags: ["Matemáticas", "Paradojas"]
 draft: false
 math: true

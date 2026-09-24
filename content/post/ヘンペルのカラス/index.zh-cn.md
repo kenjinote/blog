@@ -1,7 +1,7 @@
 ---
 title: "看到青苹果就能证明“乌鸦是黑的”？：亨佩尔的乌鸦"
 description: "能否在完全不看乌鸦的情况下，证明“乌鸦是黑的”这一假说？逻辑等价性带来的归纳法悖论。"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "hempels-ravens"
 image: "img/hempels_ravens.jpg"

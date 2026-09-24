@@ -5,7 +5,7 @@
 
 title: '¡Imprescindible para los jugadores retro! 11 obras maestras recomendadas para la Game Boy y Super Famicom originales'
 slug: "好きなJuego11選"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-12T19:28:50+09:00
 tags: ["Juegos"]
 draft: false
 image: "img_12.webp"

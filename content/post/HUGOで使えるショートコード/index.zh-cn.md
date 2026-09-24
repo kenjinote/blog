@@ -1,7 +1,7 @@
 ---
 title: 'Hugo内置简码（Shortcode）一览：嵌入YouTube和Twitter'
 slug: "HUGOで使える短路コード"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-11T22:59:52+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"

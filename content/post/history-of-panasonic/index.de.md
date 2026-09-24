@@ -2,7 +2,7 @@
 title: "Die Geschichte von Panasonic: Eine brillante Transformation vom König der Haushaltsgeräte zum B2B- und Autobatterie-Geschäft"
 description: "Die Geschichte von Panasonic, die mit dem Doppelstecker von Konosuke Matsushita begann und sich zu einem Hersteller von Autobatterien entwickelte, der Tesla unterstützt."
 slug: "history-of-panasonic"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T01:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -2,7 +2,7 @@
 title: "柯尼斯堡七橋問題 - 圖論與拓撲學的起源"
 description: "由18世紀數學家萊昂哈德·歐拉解決的「柯尼斯堡七橋」問題。我們將深入探討這個問題是如何開創了圖論與拓撲學等現代數學的新領域，以及其歷史與數學背景。"
 slug: "seven-bridges-of-konigsberg"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "history"]
 tags: ["Graph Theory", "Topology", "Euler", "Mathematics"]

@@ -2,7 +2,7 @@
 title: "Tecnología de redes: Historia y funcionamiento de TCP/IP - Las reglas del estándar mundial que conecta Internet"
 description: "¿Por qué ordenadores de todo el mundo pueden comunicarse superando las diferencias de fabricantes y sistemas operativos? Desentrañamos la filosofía e historia del conjunto de protocolos «TCP/IP», que conforma la base de Internet."
 slug: "network-tcp-ip"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

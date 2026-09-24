@@ -1,6 +1,6 @@
 ---
 title: "El Rey del Acero Andrew Carnegie: El Hombre que Personificó la Paradoja de la Riqueza y la Filantropía"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["andrew-carnegie", "history"]
 image: "eyecatch.jpg"

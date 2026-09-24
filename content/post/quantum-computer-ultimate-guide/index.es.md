@@ -1,7 +1,7 @@
 ---
 title: 'Principios y mecanismos de los ordenadores cuánticos 【Cobertura completa】Desde los límites de la Ley de Moore hasta la mecánica cuántica'
 slug: "quantum-computer-ultimate-guide"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-09T08:00:06+09:00"
 tags: ["Quantum Computer", "Quantum Mechanics", "Algorithm", "Physics"]
 categories: ["math-cryptography-quantum"]
 math: true

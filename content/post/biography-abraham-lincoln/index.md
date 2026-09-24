@@ -1,6 +1,6 @@
 ---
 title: "エイブラハム・リンカーン：分裂した国家を導いた「偉大な解放者」の生涯と哲学"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["abraham-lincoln", "history"]
 image: "eyecatch.jpg"

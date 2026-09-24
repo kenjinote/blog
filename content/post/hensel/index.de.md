@@ -2,7 +2,7 @@
 title: "Kurt Hensel: Der Entdecker der p-adischen Zahlen und sein mathematisches Erbe"
 description: "Ein tiefer Einblick in das Leben des deutschen Mathematikers Kurt Hensel, seine Entdeckung der p-adischen Zahlen, die die moderne Zahlentheorie revolutionierten, und das Henselsche Lemma."
 slug: "hensel"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematik", "Biografie"]
 tags: ["Kurt Hensel", "p-adische Zahlen", "algebraische Zahlentheorie", "Mathematikgeschichte"]

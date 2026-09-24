@@ -1,7 +1,7 @@
 ---
 title: "The Master and the Student, A Contradictory Trial No Matter Who Wins: Paradox of the Court"
 description: "A legal dispute between master and student over tuition payment conditions. An ancient Greek legal paradox where logic contradicts itself regardless of who wins or loses."
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "paradox-of-the-court"
 image: "img/paradox_of_court.jpg"

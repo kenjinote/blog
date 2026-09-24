@@ -2,7 +2,7 @@
 title: "Leonhard Euler: Raksasa Matematika, Kehidupan, dan Prestasinya"
 description: "Leonhard Euler, salah satu matematikawan terhebat dalam sejarah. Penjelasan mendetail tentang kehidupannya yang dramatis serta kontribusinya yang tak ternilai bagi matematika, fisika, dan astronomi."
 slug: "euler"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
 categories: ["matematika", "biografi"]
 tags: ["Euler", "Sejarah Matematika", "Jenius", "Fisika"]

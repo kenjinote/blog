@@ -2,7 +2,7 @@
 title: 'John von Neumann : La trajectoire du « Cerveau Démoniaque » qui a construit la science moderne'
 description: 'Une explication détaillée de la vie du génie mathématique John von Neumann, de ses réalisations étonnantes allant de la théorie des jeux à la mécanique quantique et à l''informatique, ainsi que de nombreuses anecdotes à son sujet.'
 slug: 'von-neumann'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-20T20:20:00+09:00'
 image: "eyecatch.jpg"
 categories: ['mathematics', 'biography']
 tags: ['John von Neumann', 'Mécanique quantique', 'Théorie des jeux', 'Informatique', 'Mathématicien', 'Génie']

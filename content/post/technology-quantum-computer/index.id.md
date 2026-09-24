@@ -2,7 +2,7 @@
 title: "Komputer Generasi Berikutnya: Mekanisme Komputer Kuantum - Dunia yang Dijungkirbalikkan oleh Superposisi '0' dan '1'"
 description: "Sebuah 'komputer kuantum' dikatakan dapat menyelesaikan perhitungan yang memakan waktu puluhan ribu tahun bagi superkomputer hanya dalam beberapa detik. Kami akan menjelaskan paradigma komputasi yang sama sekali baru, memanfaatkan fenomena misterius mekanika kuantum dari 'superposisi' dan 'keterjeratan'."
 slug: "technology-quantum-computer"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -1,7 +1,7 @@
 ---
 title: 'TinyLLaMA को ऑन-प्रिमाइसेस वातावरण में सबसे तेज़ी से ट्यून करने का तरीका'
 slug: "tinyllama-on-premises-fast-tuning-guide"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T16:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

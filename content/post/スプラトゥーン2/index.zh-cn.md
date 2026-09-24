@@ -1,7 +1,7 @@
 ---
 title: '长久享受《斯普拉遁2》的秘诀！推荐武器与走位技巧'
 slug: "斯普拉遁2"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-08-01T00:26:30+09:00
 tags: ["斯普拉遁2", "游戏", "Nintendo Switch"]
 draft: false
 image: "img.webp"

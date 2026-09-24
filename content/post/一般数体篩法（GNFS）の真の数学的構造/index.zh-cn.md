@@ -1,7 +1,7 @@
 ---
 title: '普通数域筛选法（GNFS）的真实数学结构是什么？使用同态映射的因式分解机制'
 slug: "一般数体篩法（GNFS）の真の数学的構造"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-05T02:26:13+09:00
 tags: ["数学", "密码学", "RSA", "GNFS"]
 draft: false
 image: "rsa_encryption_break_1788542156523.webp"

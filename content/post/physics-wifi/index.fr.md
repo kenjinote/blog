@@ -2,7 +2,7 @@
 title: "Les mystères de la physique : le fonctionnement du Wi-Fi - le principe de transmission de données par ondes invisibles"
 description: "Le Wi-Fi connecte vos smartphones et vos PC à Internet. Nous vous expliquons comment ces ondes invisibles transportent d'énormes quantités de données numériques de manière précise et à grande vitesse, sous l'angle de la physique et de l'ingénierie des télécommunications."
 slug: "physics-wifi"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

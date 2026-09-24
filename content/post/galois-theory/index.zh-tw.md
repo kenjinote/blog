@@ -2,7 +2,7 @@
 title: "伽羅瓦理論（Galois Theory） - 為何五次以上方程式沒有公式解與群論的誕生"
 description: "什麼是伽羅瓦理論？為何五次以上方程式不存在公式解？為您淺顯易懂地解說埃瓦里斯特·伽羅瓦所遺留的群論基礎，以及數學中對稱性的美妙。"
 slug: "galois-theory"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:04:13+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "algebra"]
 tags:

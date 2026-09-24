@@ -1,7 +1,7 @@
 ---
 title: 'Как решить задачу коммивояжера (TSP) в Mathematica'
 slug: "MathematicaでЗадача коммивояжераを解く"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "Задача коммивояжера", "Алгоритмы", "Математика"]
 draft: false
 image: "img.webp"

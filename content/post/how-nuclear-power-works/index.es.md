@@ -2,7 +2,7 @@
 title: "Cómo funciona la energía nuclear: del calor de fisión a la electricidad y por qué hay que enfriar tras la parada"
 description: "Energía de enlace, reacción en cadena, neutrones retardados, reactores PWR y BWR, turbinas, calor residual y combustible gastado, explicados con historia, diagramas y cálculos."
 slug: "how-nuclear-power-works"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-24T10:00:00+09:00"
 image: "eyecatch.png"
 categories: ["technology", "physics"]
 tags: ["nuclear-power", "nuclear-fission", "energy", "engineering", "history"]

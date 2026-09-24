@@ -1,7 +1,7 @@
 ---
 title: "Se removermos um grão, quando o monte de areia deixa de ser um monte? O Paradoxo do Monte"
 description: "Onde está a fronteira entre 'monte de areia' e 'não monte de areia'? Um paradoxo filosófico desde a Grécia Antiga que desafia a essência da ambiguidade."
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "sorites-paradox"
 image: "img/sorites_paradox.jpg"

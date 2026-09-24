@@ -2,7 +2,7 @@
 title: 'Paradoks Ulang Tahun: Apakah 50% Lebih dengan 23 Orang? Keajaiban "Kombinasi" yang Menipu Intuisi'
 slug: 'birthday-paradox'
 description: 'Hanya dengan mengumpulkan 23 orang di kelas sekolah atau departemen perusahaan, probabilitas terdapat dua orang dengan ulang tahun yang sama melebihi 50%. Kita akan menjelaskan secara visual dan matematis menggunakan teori probabilitas dan grafik tentang betapa mudahnya intuisi manusia melewatkan "ledakan kombinasi".'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T00:00:00+09:00'
 image: 'img/birthday_paradox.jpg'
 math: true
 mermaid: true

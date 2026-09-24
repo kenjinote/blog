@@ -1,7 +1,7 @@
 ---
 title: 'Código de exemplo em Python para baixar imagens, salvar temporariamente e exibi-las'
 slug: "Pythonコード片"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-02-24T18:21:14+09:00
 tags: ["Python", "Código de exemplo"]
 draft: false
 image: "img.webp"

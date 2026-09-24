@@ -4,7 +4,7 @@
 
 title: '【Para principiantes】Cómo realizar una conexión de escritorio remoto fácilmente con TeamViewer'
 slug: "TeamViewerで簡単Conexión remota"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-01-13T01:45:00+09:00
 tags: ["TeamViewer", "comando", "conexión remota"]
 draft: false
 image: "img.webp"

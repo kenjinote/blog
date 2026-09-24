@@ -2,7 +2,7 @@
 title: "约瑟夫·路易·拉格朗日：分析力学之父与数学物理学的巨星"
 description: "详细介绍18世纪代表性数学家、物理学家约瑟夫·路易·拉格朗日的生平，及其在分析力学、变分法、数论等领域取得的众多伟大成就。"
 slug: "lagrange"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

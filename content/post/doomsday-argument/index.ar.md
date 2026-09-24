@@ -1,7 +1,7 @@
 ---
 title: "حجة يوم القيامة (Doomsday Argument): \"المهلة الزمنية لانقراض البشرية\" مستنتجة من نظرية الاحتمالات"
 image: "eyecatch.jpg"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T00:00:51+09:00
 description: "في أي نقطة من تاريخ البشرية نحن؟ نشرح \"حجة يوم القيامة\" التي تتنبأ بوقت انقراض البشرية احتماليًا باستخدام مبدأ كوبرنيكوس والاستدلال البايزي، مع الرسوم التوضيحية والصيغ."
 categories: ["probability-theory", "thought-experiment", "philosophy"]
 tags: ["Bayesian Inference", "Doomsday Argument", "Mathematics"]

@@ -1,7 +1,7 @@
 ---
 title: 'reveal.js使用教程：用HTML和Markdown制作演示文稿'
 slug: "HTMLで演示資料を作る方法（reveal.js）"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-04-06T23:23:46+09:00
 tags: ["HTML", "reveal.js", "演示文稿"]
 draft: false
 image: "img.webp"

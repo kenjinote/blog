@@ -2,7 +2,7 @@
 title: "Teorema Fundamental del Álgebra: Demostración de que una Ecuación de Grado n Siempre Tiene n Raíces Complejas"
 description: "Una explicación detallada de la historia, el significado intuitivo y la hermosa demostración del teorema fundamental del álgebra utilizando análisis complejo (teorema de Liouville)."
 slug: "fundamental-theorem-of-algebra"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemáticas"

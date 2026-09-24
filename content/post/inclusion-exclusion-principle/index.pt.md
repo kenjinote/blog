@@ -2,7 +2,7 @@
 title: "Princípio da Inclusão-Exclusão: Uma técnica poderosa para contar corretamente elementos em conjuntos sobrepostos"
 description: "Um guia aprofundado sobre o Princípio da Inclusão-Exclusão, uma ferramenta matemática essencial para contar com precisão elementos de vários conjuntos sobrepostos sem duplicação. Explicamos tudo, desde o caso básico de 2 conjuntos até o caso geral de n conjuntos, usando exemplos, provas e exemplos de aplicação."
 slug: "inclusion-exclusion-principle"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matemática"

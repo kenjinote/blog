@@ -2,7 +2,7 @@
 title: "History and Paradigm Evolution of Programming Languages (From Assembly, C, Java to Rust, Go)"
 description: "How have programming languages evolved? A detailed explanation of the history and paradigm shifts starting from assembly language, to C, Java, and modern languages like Rust and Go."
 slug: "programming-languages-history-paradigm-evolution"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T14:51:07+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["programming-languages", "history", "paradigm", "rust", "go"]

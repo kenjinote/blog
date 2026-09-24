@@ -2,7 +2,7 @@
 title: "Teorema Empat Warna (Four Color Theorem) - Apakah peta apa pun dapat diwarnai dengan 4 warna?"
 description: "Menjelaskan secara rinci sejarah Masalah Empat Warna yang merupakan masalah sulit di dunia matematika, pendekatan pembuktian, dan signifikansi pembuktian berbantuan komputer."
 slug: "four-color-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "computer-science"]
 tags: ["Teorema Empat Warna", "Teori Graf", "Pembuktian Berbantuan Komputer", "Topologi"]

@@ -1,7 +1,7 @@
 ---
 title: '讓 Chrome、Edge 變得超級便利的推薦瀏覽器擴充功能總整理'
 slug: "推薦の Chorme 拡張"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-03-19T02:54:30+09:00
 tags: ["Chrome 擴充功能", "瀏覽器", "Chrome", "Edge"]
 draft: false
 image: "img_4.webp"

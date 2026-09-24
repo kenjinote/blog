@@ -2,7 +2,7 @@
 title: "호지 추측 (Hodge Conjecture) - 대수기하학과 위상수학을 연결하는 밀레니엄 현상 문제"
 description: "클레이 수학연구소의 밀레니엄 현상 문제 중 하나인 호지 추측에 대해, 대수기하학과 위상수학의 가교로서의 역할부터 그 심오한 수학적 배경까지 철저히 해설합니다."
 slug: "hodge-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]
 tags: ["밀레니엄 현상 문제", "위상수학", "대수기하학", "호지 추측"]

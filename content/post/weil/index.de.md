@@ -2,7 +2,7 @@
 title: "André Weil: Gigant der Mathematik des 20. Jahrhunderts, Bourbaki und die Weil-Vermutungen"
 description: "Eine tiefgehende Untersuchung von André Weils dramatischem Leben, der Gründung von Bourbaki und den Weil-Vermutungen, die die algebraische Geometrie und Zahlentheorie revolutionierten."
 slug: "weil"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematik", "biografie"]
 tags: ["André Weil", "Bourbaki", "Algebraische Geometrie", "Zahlentheorie"]

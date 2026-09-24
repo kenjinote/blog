@@ -1,7 +1,7 @@
 ---
 title: "푸앵카레 추측 - 우주의 형태를 풀어내는 토폴로지의 난제와 페렐만의 전설"
 description: "100년 이상 수학자들을 괴롭혀 온 '푸앵카레 추측'의 전모, 토폴로지의 기초, 그리고 그리고리 페렐만에 의한 극적인 증명의 이야기를 자세히 해설합니다."
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:04:13+09:00"
 slug: "poincare-conjecture"
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]

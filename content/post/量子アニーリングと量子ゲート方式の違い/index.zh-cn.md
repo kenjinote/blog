@@ -1,7 +1,7 @@
 ---
 title: '通俗易懂地解说量子退火与量子门模型的区别'
 slug: "quantum-annealing-vs-gate-model-explained"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

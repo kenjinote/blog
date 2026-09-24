@@ -2,7 +2,7 @@
 title: '아핀 변환과 투영 변환: CG와 원근법을 지탱하는 선형대수와 기하학의 융합'
 description: '아핀 변환과 투영 변환의 수학적 기초부터 컴퓨터 그래픽스 및 이미지 처리에서의 응용까지, 동차 좌표계를 사용한 표현을 통해 자세히 설명합니다.'
 slug: 'affine-and-projective-transformations'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-20T15:15:00+09:00'
 image: "eyecatch.jpg"
 categories:
   - 'mathematics'

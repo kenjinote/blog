@@ -2,7 +2,7 @@
 title: "Ley de los Grandes Números - Por qué los casinos siempre ganan y cómo convergen las probabilidades"
 description: "Una explicación de la 'Ley de los Grandes Números', un teorema crucial en la teoría de la probabilidad. Profundizamos en las estructuras de ganancias de los casinos y definiciones matemáticas rigurosas (leyes débil y fuerte), con diagramas y código en Python."
 slug: "law-of-large-numbers"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14
 image: "eyecatch.jpg"
 categories: ["matematicas", "ciencia-de-datos", "juegos-de-azar"]
 tags:

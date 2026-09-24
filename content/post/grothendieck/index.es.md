@@ -2,7 +2,7 @@
 title: "Alexander Grothendieck: La vida y los logros del mayor matemático del siglo XX"
 description: "Una explicación detallada de la extraordinaria vida y los logros revolucionarios en geometría algebraica de Alexander Grothendieck. Exploramos cómo sus pensamientos y filosofía influyeron en las matemáticas modernas."
 slug: "grothendieck"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T20:30:00+09:00
 image: "eyecatch.jpg"
 categories: ["Matemáticas", "Biografía"]
 tags: ["Grothendieck", "Geometría Algebraica", "Teoría de Esquemas", "Teoría de Categorías"]

@@ -1,7 +1,7 @@
 ---
 title: 'كيفية استخدام reveal.js: إنشاء عروض تقديمية باستخدام HTML و Markdown'
 slug: "HTMLでعرض تقديمي資料を作る方法（reveal.js）"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-04-06T23:23:46+09:00
 tags: ["HTML", "reveal.js", "عرض تقديمي"]
 draft: false
 image: "img.webp"

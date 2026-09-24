@@ -2,7 +2,7 @@
 title: "Finanças e Criptografia: A História do Dinheiro Eletrônico - A Digitalização da Moeda e a Evolução da Criptografia"
 description: "Até que as 'moedas e cédulas físicas' fossem substituídas por 'dados digitais'. Desvendamos a história da evolução do dinheiro eletrônico, desde os primeiros experimentos de David Chaum, passando pela criação do Suica, até chegar aos criptoativos."
 slug: "history-electronic-money"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

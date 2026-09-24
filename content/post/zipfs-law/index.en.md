@@ -2,7 +2,7 @@
 title: "Zipf's Law - The 'Power Law' that Governs Everything from Word Frequency to City Populations"
 description: "An in-depth look, using formulas and diagrams, into 'Zipf's Law', the amazing mathematical rule governing the world from natural language to city scale and economics."
 slug: "zipfs-law"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "data-science", "linguistics"]
 tags:

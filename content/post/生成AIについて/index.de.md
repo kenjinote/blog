@@ -1,7 +1,7 @@
 ---
 title: 'Lernen über Generative KI! Eine Zusammenfassung empfohlener Vorlesungsvideos von Professoren der Universität Tokio'
 slug: "Generative KIについて"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-04-16T02:13:56+09:00
 tags: ["Generative KI", "YouTube", "Vorlesung"]
 draft: false
 image: "img.webp"

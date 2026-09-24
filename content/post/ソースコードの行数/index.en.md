@@ -1,7 +1,7 @@
 ---
 title: 'How Has Software Scale Changed? The History and Evolution of Source Code Line Counts'
 slug: "Source CodeのLine Count"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-04-17T10:33:02+09:00
 tags: ["Source Code", "Lines of Code"]
 draft: false
 image: "img_1.webp"

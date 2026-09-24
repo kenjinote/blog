@@ -2,7 +2,7 @@
 title: "Évariste Galois: The Tragic Genius and the Dawn of Modern Mathematics"
 description: "The genius mathematician Évariste Galois, who died in a duel at age 20. We explore his turbulent life and 'Galois Theory', which laid the foundation of modern algebra."
 slug: "galois"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Galois Theory", "Algebra", "Group Theory", "History"]

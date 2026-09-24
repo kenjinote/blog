@@ -1,6 +1,6 @@
 ---
 title: "미국 건국의 아버지이자 만능 천재: 벤저민 프랭클린의 생애와 철학"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:46:04+09:00
 categories: ["biography"]
 tags: ["benjamin-franklin", "history"]
 image: "eyecatch.jpg"

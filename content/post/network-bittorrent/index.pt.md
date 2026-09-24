@@ -2,7 +2,7 @@
 title: "Tecnologia de Redes: Explicação Técnica do BitTorrent - Como Distribuir Arquivos Gigantes de Forma Eficiente"
 description: "Como milhares de pessoas podem baixar uma imagem de SO de vários gigabytes de uma vez sem derrubar o servidor. Explicamos a inovadora divisão de arquivos e o algoritmo de troca de dados do \"BitTorrent\", uma obra-prima do P2P."
 slug: "network-bittorrent"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

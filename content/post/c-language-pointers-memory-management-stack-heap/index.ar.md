@@ -2,7 +2,7 @@
 title: "الفهم الكامل لمؤشرات لغة C (إدارة الذاكرة، العناوين، وأساسيات المكدس والكومة)"
 description: "نشرح بالتفصيل مؤشرات لغة C التي تعد أكبر عقبة في اللغة، بدءا من مفهوم عناوين الذاكرة والفرق بين المكدس والكومة، وصولا إلى تخصيص الذاكرة الديناميكي. هذا الدليل الشامل موجه لمن يسعى لفهم لغة C بعمق."
 slug: "c-language-pointers-memory-management-stack-heap"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T14:51:08+09:00
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["c", "pointers", "memory", "stack", "heap"]

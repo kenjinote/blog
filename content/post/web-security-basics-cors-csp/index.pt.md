@@ -2,7 +2,7 @@
 title: "Princípios Básicos e Tendências Recentes de Segurança na Web: De XSS e CSRF até CORS e CSP"
 description: "Medidas de segurança para proteger aplicações Web contra ameaças. Cobrimos de forma abrangente desde as vulnerabilidades clássicas como XSS e CSRF até tecnologias essenciais modernas como CORS, CSP e SameSite Cookie."
 slug: "web-security-basics-cors-csp"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T17:10:00+09:00
 image: eyecatch.jpg
 categories:
   - "security"

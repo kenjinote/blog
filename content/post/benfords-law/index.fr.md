@@ -2,7 +2,7 @@
 title: "Loi de Benford : Pourquoi tant de nombres commencent-ils par 1 ?"
 description: "Exploration de la mystérieuse loi mathématique cachée dans les données naturelles, également utilisée pour détecter la fraude comptable."
 slug: "benfords-law"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-15T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathématiques"

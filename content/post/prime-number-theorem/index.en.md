@@ -2,7 +2,7 @@
 title: "Prime Number Theorem - The Law That Prime Distribution Approaches a Logarithmic Function"
 description: "A deep explanation of the Prime Number Theorem, a monumental achievement in mathematics regarding the regularity of prime number appearances. From the prime-counting function to its relationship with the Riemann Hypothesis."
 slug: "prime-number-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "algorithms"]
 tags:

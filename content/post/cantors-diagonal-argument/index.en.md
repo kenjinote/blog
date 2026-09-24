@@ -2,7 +2,7 @@
 title: "Cantor's Diagonal Argument - Proof That Real Numbers Are 'Overwhelmingly More' Than Rational Numbers"
 description: "There are differences in 'size' among infinities. We explain in detail the process of proving that the cardinality of real numbers is strictly greater than the cardinality of natural or rational numbers, using the 'Diagonal Argument' proposed by Georg Cantor."
 slug: "cantors-diagonal-argument"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "foundations-of-mathematics", "set-theory"]
 tags: ["Cantor", "Diagonal Argument", "Infinity", "Mathematics", "Proof"]

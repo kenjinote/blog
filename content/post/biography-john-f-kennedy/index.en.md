@@ -1,6 +1,6 @@
 ---
 title: "John F. Kennedy: The Life and Philosophy of the Young President Who Pioneered a New Era"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T19:46:03+09:00"
 categories: ["biography"]
 tags: ["john-f-kennedy", "history"]
 image: "eyecatch.jpg"

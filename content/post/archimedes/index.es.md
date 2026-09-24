@@ -2,7 +2,7 @@
 title: "El Genio de la Antigua Grecia: Vida y Logros Matemáticos de Arquímedes"
 description: "Arquímedes de Siracusa. Desde el episodio de '¡Eureka!' hasta el cálculo de pi, el teorema de la esfera y el cilindro, y el 'Método' que fue pionero del cálculo, profundizamos en la vida y los logros del mayor matemático y físico de la antigua Grecia."
 slug: "archimedes"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T18:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["matemáticas", "biografía"]
 tags: ["Arquímedes", "Antigua Grecia", "Geometría", "Física", "Cálculo"]

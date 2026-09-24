@@ -2,7 +2,7 @@
 title: "Kurt Hensel : Découvreur des nombres p-adiques et son héritage mathématique"
 description: "Une plongée en profondeur dans la vie du mathématicien allemand Kurt Hensel, sa découverte des nombres p-adiques qui a révolutionné la théorie moderne des nombres, et le lemme de Hensel."
 slug: "hensel"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathématiques", "biographie"]
 tags: ["Kurt Hensel", "nombres p-adiques", "théorie algébrique des nombres", "histoire des mathématiques"]

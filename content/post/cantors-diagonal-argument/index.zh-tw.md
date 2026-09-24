@@ -2,7 +2,7 @@
 title: "康托爾的對角線論證（Cantor's Diagonal Argument） - 實數比有理數「壓倒性地多」的證明"
 description: "無限也有「大小」之分。本文將詳細解說如何使用格奧爾格·康托爾提出的「對角線論證」，來證明實數的勢真大於自然數與有理數的勢。"
 slug: "cantors-diagonal-argument"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "foundations-of-mathematics", "set-theory"]
 tags: ["Cantor", "對角線論證", "無限", "數學", "證明"]

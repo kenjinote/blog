@@ -2,7 +2,7 @@
 title: "Как выбрать NoSQL-базу данных (KVS, Документные, Графовые, Ширококолоночные)"
 description: "Руководство по пониманию различных моделей данных баз данных NoSQL и выбору оптимальной для ваших задач."
 slug: "nosql-database-selection-kvs-document-graph-wide-column"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "database"

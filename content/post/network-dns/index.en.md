@@ -2,7 +2,7 @@
 title: "Network Technology: How DNS Works - The Internet's Phone Book, Behind the Scenes of Name Resolution"
 description: "Why entering 'www.google.com' connects you to the target server. Explaining the hierarchical structure and name resolution mechanism of 'DNS', the Internet's largest distributed database."
 slug: "network-dns"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

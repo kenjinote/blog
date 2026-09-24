@@ -2,7 +2,7 @@
 title: "網路技術：BitTorrent 技術解說 - 高效分散傳輸巨大檔案的機制"
 description: "即使數萬人同時下載數 GB 的 OS 映像檔，伺服器也不會崩潰。為您解說 P2P 傑作「BitTorrent」創新的檔案分割與資料交換演算法。"
 slug: "network-bittorrent"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

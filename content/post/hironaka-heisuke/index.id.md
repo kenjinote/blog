@@ -2,7 +2,7 @@
 title: "Heisuke Hironaka: Teorema Resolusi Singularitas dan Pencarian Kreativitas"
 description: "Selami kehidupan matematikawan Jepang pemenang Medali Fields, Heisuke Hironaka, pencapaian matematisnya dalam 'Teorema Resolusi Singularitas', dan filosofi kreativitasnya."
 slug: "hironaka-heisuke"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Matematika", "Biografi"]
 tags: ["Heisuke Hironaka", "Geometri Aljabar", "Resolusi Singularitas", "Medali Fields", "Matematikawan Jepang", "Kreativitas"]

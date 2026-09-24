@@ -2,7 +2,7 @@
 title: "网络技术：BitTorrent 的技术解析 - 高效分布式分发巨大文件的机制"
 description: "即使成千上万人同时下载数 GB 的 OS 镜像，服务器也不会崩溃。本文将为您解析 P2P 杰作「BitTorrent」创新的文件分割与数据交换算法。"
 slug: "network-bittorrent"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

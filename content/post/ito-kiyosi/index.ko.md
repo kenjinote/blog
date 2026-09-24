@@ -2,7 +2,7 @@
 title: "이토 기요시: 확률미분방정식의 아버지와 현대 금융을 지탱하는 수학"
 description: "'이토의 보조정리'로 알려진 수학자 이토 기요시의 생애와 확률해석학의 업적, 현대 사회에 미친 영향을 깊이 파헤칩니다."
 slug: "ito-kiyosi"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["이토 기요시", "확률미분방정식", "금융공학", "수학사"]

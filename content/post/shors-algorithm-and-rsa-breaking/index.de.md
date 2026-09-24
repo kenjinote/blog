@@ -3,7 +3,7 @@ title: 'Werden Quantencomputer die RSA-Kryptographie knacken? Shors Algorithmus 
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["Quantencomputer", "Kryptoanalyse", "Shors Algorithmus", "RSA"]
 image: "eyecatch.jpg"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-05T22:09:21+09:00
 categories: ["math-cryptography-quantum"]
 description: 'Erklärt, wie die RSA-Kryptographie, die die heutige Kommunikationsinfrastruktur unterstützt, durch den Aufstieg von Quantencomputern bedroht wird. Untersucht die Zukunft der Kryptanalyse der nächsten Generation und der Sicherheit, von den Mechanismen von Shors Algorithmus bis hin zum aktuellen Stand der Hardware im NISQ-Zeitalter.'
 ---

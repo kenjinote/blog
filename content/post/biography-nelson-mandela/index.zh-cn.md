@@ -1,6 +1,6 @@
 ---
 title: "纳尔逊·曼德拉：不屈的精神与“宽恕”筑就的新南非"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["nelson-mandela", "history"]
 image: "eyecatch.jpg"

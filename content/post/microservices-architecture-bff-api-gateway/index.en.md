@@ -2,7 +2,7 @@
 title: "Light and Shadow of Microservices Architecture (BFF and API Gateway)"
 description: "Challenges in splitting from a monolith, and solutions using API Gateway and the BFF (Backend for Frontend) pattern."
 slug: "microservices-architecture-bff-api-gateway"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

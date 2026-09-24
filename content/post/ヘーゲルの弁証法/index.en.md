@@ -1,7 +1,7 @@
 ---
 title: 'What is Hegel''s Dialectic? The Concept of Aufheben and its Application in Daily Life and Programming'
 slug: "HegelのDialectic"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-09T23:13:19+09:00
 tags: ["Philosophy","Hegel","Dialectic"]
 draft: false
 image: "images/img.webp"

@@ -2,7 +2,7 @@
 title: "Technologie réseau : Explication technique d'UDP - Une communication sans connexion en quête de vitesse"
 description: "Pourquoi peut-on communiquer sans latence dans les jeux en ligne et les appels vidéo ? Nous expliquons le fonctionnement du protocole UDP, qui a abandonné la « garantie de livraison » pour obtenir une « vitesse écrasante »."
 slug: "history-of-udp"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

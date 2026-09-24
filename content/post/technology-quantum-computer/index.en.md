@@ -2,7 +2,7 @@
 title: "Next-Generation Computers: How Quantum Computers Work - A World Overturned by the Superposition of '0' and '1'"
 description: "Quantum computers are said to solve calculations that would take supercomputers tens of thousands of years in mere seconds. We explain this entirely new computing paradigm that utilizes the mysterious phenomena of quantum mechanics, 'superposition' and 'entanglement'."
 slug: "technology-quantum-computer"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

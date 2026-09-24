@@ -1,7 +1,7 @@
 ---
 title: 'Gratuit et riche en fonctionnalités ! Les caractéristiques et les attraits du logiciel de retouche d''image ''paint.net'''
 slug: "paint.netの魅力"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-14T19:33:31+09:00
 tags: ["paint.net"]
 draft: false
 image: "img.webp"

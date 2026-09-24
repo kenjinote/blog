@@ -2,7 +2,7 @@
 title: "齊普夫定律（Zipf's Law） - 從詞頻到城市人口的主宰「冪律」"
 description: "透過公式和圖解深入探討「齊普夫定律」，這一從自然語言到城市規模與經濟領域主宰世界的驚人數學法則。"
 slug: "zipfs-law"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
 categories: ["數學", "數據科學", "語言學"]
 tags:

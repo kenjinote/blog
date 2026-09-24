@@ -2,7 +2,7 @@
 title: "Amazon의 역사: 온라인 서점에서 거대 물류·클라우드(AWS) 제국으로의 여정"
 description: "이커머스와 AWS 클라우드를 제패한 Amazon의 역사"
 slug: "history-of-amazon"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T00:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

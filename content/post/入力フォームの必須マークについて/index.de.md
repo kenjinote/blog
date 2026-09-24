@@ -1,7 +1,7 @@
 ---
 title: 'Optimierung der Pflichtfeld-Markierungen in Eingabeformularen | Best Practices aus internationalen UI-Richtlinien'
 slug: "Eingabeformularの必須マークについて"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-07-14T13:47:51+09:00
 tags: ["Eingabeformular", "Webentwicklung", "UX"]
 draft: false
 image: "img.webp"

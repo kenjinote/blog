@@ -2,7 +2,7 @@
 title: "Finance & Cryptography: The History of Electronic Money - The Digitization of Currency and the Evolution of Cryptographic Technology"
 description: "From 'physical coins and bills' to 'digital data'. We unravel the history of the evolution of electronic money, from David Chaum's early experiments to the birth of Suica and the rise of crypto assets."
 slug: "history-electronic-money"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

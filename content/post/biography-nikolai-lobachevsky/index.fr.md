@@ -1,6 +1,6 @@
 ---
 title: "Nikolaï Lobatchevski : Le « Copernic de la géométrie » qui a ouvert les portes de la géométrie non euclidienne"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["nikolai-lobachevsky", "history"]
 image: "eyecatch.jpg"

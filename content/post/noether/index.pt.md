@@ -2,7 +2,7 @@
 title: "Emmy Noether: A Mãe da Álgebra Moderna e o Teorema da Simetria"
 description: "Uma explicação detalhada da vida e das realizações de Emmy Noether, uma matemática genial que estabeleceu as bases da álgebra moderna e provou o teorema de Noether na física."
 slug: "noether"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Matemática", "Biografia"]
 tags: ["Emmy Noether", "Álgebra Abstrata", "Física", "Mulheres em STEM"]

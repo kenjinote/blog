@@ -2,7 +2,7 @@
 title: "Potensi dan Implementasi PWA (Progressive Web Apps) (Kekuatan Service Worker)"
 description: "Menjelaskan secara menyeluruh mulai dari gambaran keseluruhan PWA, siklus hidup Service Worker, cache luring, hingga pemberitahuan Push."
 slug: "pwa-progressive-web-apps-service-worker"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

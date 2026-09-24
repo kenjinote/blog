@@ -2,7 +2,7 @@
 title: "History of Apple: From Garage to World's Most Valuable Company and the DNA of Innovation"
 description: "A deep dive into Apple's history and technological innovation, from Steve Jobs and Wozniak's garage startup to the iPhone revolution and becoming the world's most valuable company."
 slug: "history-of-apple"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T03:35:47+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

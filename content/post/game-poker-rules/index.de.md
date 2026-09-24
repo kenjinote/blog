@@ -2,7 +2,7 @@
 title: "Denksport: Poker (Texas Hold'em) Regeln und Wahrscheinlichkeitsrechnung - Ein Spiel, bei dem sich Glück und Können kreuzen"
 description: "Der ultimative Denksport 'Texas Hold'em', dessen Gesamtpreisgeld bei Weltmeisterschaften 10 Milliarden Yen übersteigt. Es ist mehr als nur ein Glücksspiel. Wir erklären die Positionstheorie, die Berechnung von Odds und die mathematische Grundlage des Bluffens."
 slug: "game-poker-rules"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

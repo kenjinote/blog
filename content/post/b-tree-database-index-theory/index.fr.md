@@ -2,7 +2,7 @@
 title: "La théorie des arbres B et des index de base de données (Pourquoi les SGBD choisissent-ils le B-Tree ?)"
 description: "Nous approfondissons la théorie, la structure de données et la relation avec les E/S disque des arbres B (B-Tree) et B+ (B+Tree), qui constituent le fondement des index dans les bases de données, avec une analyse mathématique et des exemples d'implémentation pour comprendre pourquoi les SGBDR continuent de les adopter comme norme."
 slug: "b-tree-database-index-theory"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:45:54+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science", "database"]
 tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]

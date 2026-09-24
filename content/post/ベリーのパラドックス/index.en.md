@@ -2,7 +2,7 @@
 title: 'Berry Paradox: The Contradiction That Occurs When Trying to Define a "Number" Using "Words"'
 slug: 'berry-paradox'
 description: 'The very phrase "the smallest integer not expressible in 19 characters or less" ends up expressing that number in under 19 characters!? An explanation of a short, beautiful paradox that occurs at the boundary of everyday language and mathematics.'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T11:00:00+09:00'
 image: 'img/berry_paradox.jpg'
 math: true
 mermaid: true

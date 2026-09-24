@@ -2,7 +2,7 @@
 title: "마이크로서비스 아키텍처의 빛과 그림자 (BFF와 API Gateway)"
 description: "모놀리스에서 분리할 때의 과제와 API Gateway 및 BFF(Backend for Frontend) 패턴을 통한 해결책."
 slug: "microservices-architecture-bff-api-gateway"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

@@ -1,7 +1,7 @@
 ---
 title: 'Как рисовать графики с помощью Python и matplotlib [Поддержка Google Colab]'
 slug: "Python(matplotlib.pyplot)を使ってГрафを描画する方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "график", "математика", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
 image: "img.webp"

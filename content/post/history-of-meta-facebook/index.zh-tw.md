@@ -2,7 +2,7 @@
 title: "Meta (前Facebook) 的歷史：從社群網路的誕生到挑戰元宇宙空間"
 description: "從社群網路帝國到元宇宙，以及邁向AI的歷程"
 slug: "history-of-meta-facebook"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T00:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

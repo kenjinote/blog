@@ -2,7 +2,7 @@
 title: "随机漫步：从醉汉漫步解读扩散现象与布朗运动的数学"
 description: "详细解读随机漫步（醉汉漫步）的基础知识，到扩散现象、布朗运动的数学背景。包含波利亚复发定理与金融工程应用的决定版。"
 slug: "random-walk"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["随机漫步", "概率论", "扩散方程", "布朗运动", "Python"]

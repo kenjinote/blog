@@ -3,7 +3,7 @@
 
 title: '【Versión Completa】¡Plantilla para la creación de artículos de blog! Estructura de encabezados fuerte para SEO y consejos de escritura'
 slug: "000_Plantilla"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-01-01T00:00:00+09:00
 tags: ["etiqueta1", "etiqueta2"]
 draft: true
 categories: ["it-technology"]

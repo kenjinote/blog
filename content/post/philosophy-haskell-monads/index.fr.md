@@ -1,6 +1,5 @@
 ---
 title: "La philosophie de Haskell et des langages purement fonctionnels : le monde des monades et ses abysses"
-date: "2026-09-24T16:08:36+09:00"
 description: "Un guide complet qui explore en profondeur la philosophie du langage purement fonctionnel Haskell, jusqu'à la véritable nature des \"monades\" souvent considérées comme complexes. Découvrez l'isolation des effets de bord, les foncteurs, les applicatifs et la beauté du monde abstrait tissé par les monades."
 slug: "philosophy-haskell-monads"
 categories: ["philosophy"]

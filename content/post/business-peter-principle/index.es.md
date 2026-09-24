@@ -1,6 +1,5 @@
 ---
 title: "El Principio de Peter: ¿Por qué las personas competentes siguen siendo ascendidas hasta volverse incompetentes? Un análisis profundo de las trampas organizacionales y sus soluciones"
-date: "2026-09-24T16:08:36+09:00"
 description: "Una exploración exhaustiva del 'Principio de Peter', un fenómeno universal en las organizaciones donde 'los empleados de base competentes se convierten en gerentes incompetentes', desde sus mecanismos hasta contramedidas específicas. ¿Cuál es la sabiduría para sobrevivir al destino de una sociedad jerárquica?"
 slug: "business-peter-principle"
 categories: ["business"]

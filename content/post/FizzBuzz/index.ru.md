@@ -1,7 +1,7 @@
 ---
 title: 'Что такое «Задача FizzBuzz» — врата в программирование? Объяснение написания на Python'
 slug: "FizzBuzz"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "алгоритм"]
 draft: false
 image: "eyecatch.jpg"

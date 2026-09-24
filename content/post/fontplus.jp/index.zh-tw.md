@@ -1,7 +1,7 @@
 ---
 title: '網頁字型服務「FONTPLUS」的特色與費用'
 slug: "fontplus.jp"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-02-07T20:59:01+09:00
 tags: ["font","fontplus"]
 draft: false
 image: "img.webp"

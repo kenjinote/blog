@@ -2,7 +2,7 @@
 title: "중국인 나머지 정리 (Chinese Remainder Theorem) - 고대의 산술에서 현대의 RSA 암호를 지탱하는 대정리"
 description: "고대 중국의 산술서에 기원을 둔 중국인 나머지 정리(CRT)에 대해, 그 수학적 원리부터 현대의 공개키 암호(RSA 암호)에서의 중요한 응용까지 자세히 해설합니다."
 slug: "chinese-remainder-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "cryptography"]
 tags:

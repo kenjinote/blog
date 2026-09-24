@@ -2,7 +2,7 @@
 title: "Algorithmes de tri expliqués (du tri à bulles au tri rapide et tri fusion)"
 description: "Les algorithmes de tri sont la base de la programmation. Du tri à bulles au tri rapide et tri fusion, nous les expliquons en détail avec des schémas et du code."
 slug: "sorting-algorithms-visualized-bubble-quick-merge"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-22T01:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "sorting", "quick-sort", "merge-sort", "bubble-sort"]

@@ -2,7 +2,7 @@
 title: "Inclusion-Exclusion Principle: A Powerful Technique for Correctly Counting Elements in Overlapping Sets"
 description: "An in-depth guide to the Inclusion-Exclusion Principle, an essential mathematical tool for accurately counting elements of multiple overlapping sets without duplication. We explain everything from the basic 2-set case to the general n-set case, using examples, proofs, and application examples."
 slug: "inclusion-exclusion-principle"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

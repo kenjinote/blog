@@ -2,7 +2,7 @@
 title: "AI의 심장부: 딥러닝의 원리 - 신경망은 어떻게 학습하는가"
 description: "제3차 AI 붐의 불쏘시개가 되었고, ChatGPT 등의 기반 기술이기도 한 '딥러닝(심층 학습)'. 인간의 뇌신경을 모방한 알고리즘이 어떻게 특징을 스스로 찾아내는지 해설합니다."
 slug: "technology-deep-learning"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

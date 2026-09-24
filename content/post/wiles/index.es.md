@@ -2,7 +2,7 @@
 title: "Andrew Wiles: El matemático solitario que demostró el último teorema de Fermat"
 description: "Explorando la vida y los logros matemáticos de Andrew Wiles, quien estableció un hito histórico en las matemáticas al demostrar el Último Teorema de Fermat."
 slug: "wiles"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["matemáticas", "biografía"]
 tags: ["Andrew Wiles", "Fermat", "Teoría de números"]

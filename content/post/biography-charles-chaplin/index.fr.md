@@ -1,6 +1,6 @@
 ---
 title: "【Biographie】 Charles Chaplin : La vie et la philosophie du « Roi de la comédie » qui a tissé le monde de rires et de larmes"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["charles-chaplin", "history"]
 image: "eyecatch.jpg"

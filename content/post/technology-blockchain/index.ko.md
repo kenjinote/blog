@@ -2,7 +2,7 @@
 title: "금융·암호 기술: 블록체인 기술 해설 - 비트코인을 탄생시킨 분산 원장 기술"
 description: "'관리자가 없는데도 돈을 발행·송금할 수 있다'는 마법. 사토시 나카모토가 만들어낸 블록체인의 근간인 해시 함수, PoW(작업 증명), 분산 원장의 구조를 풀어냅니다."
 slug: "technology-blockchain"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

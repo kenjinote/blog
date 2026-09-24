@@ -1,6 +1,5 @@
 ---
 title: "El Demonio de Maxwell: El máximo experimento mental contra la Segunda Ley de la Termodinámica y cómo la información se convierte en calor"
-date: "2026-09-24T16:08:36+09:00"
 description: "El demonio de Maxwell, la paradoja más famosa de la historia de la física. ¿Cómo nació este demonio que parecía romper la Segunda Ley de la Termodinámica, y cómo fue derrotado más de un siglo después? Una explicación exhaustiva del camino hacia la termodinámica de la información."
 slug: "paradox-maxwells-demon"
 categories: ["science"]

@@ -1,6 +1,6 @@
 ---
 title: "Sócrates: A origem da filosofia ocidental forjada pela sabedoria da ignorância e pelo diálogo"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["socrates", "history"]
 image: "eyecatch.jpg"

@@ -2,7 +2,7 @@
 title: "Les mystères de la physique : le fonctionnement du Bluetooth - Saut de fréquence et appairage"
 description: "Le Bluetooth est indispensable aux appareils sans fil modernes. Pourquoi se connecte-t-il de manière stable sans interférence ? Nous l'expliquons à travers le saut de fréquence, une technologie d'origine militaire."
 slug: "physics-bluetooth"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

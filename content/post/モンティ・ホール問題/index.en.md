@@ -2,7 +2,7 @@
 title: 'Monty Hall Problem: The Trap of Probability Theory that Betrays Intuition and its Complete Resolution using Bayesian Inference'
 slug: 'monty-hall-problem'
 description: 'A TV show game where you choose a winning prize from 3 doors. Should you change your choice after the host opens a losing door? We thoroughly explain the "Monty Hall Problem", which caused a huge controversy involving mathematicians worldwide, from the perspectives of probability theory, Bayesian inference, and cognitive psychology.'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T00:00:00+09:00'
 image: 'img/monty_hall.jpg'
 math: true
 mermaid: true

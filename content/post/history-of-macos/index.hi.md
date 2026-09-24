@@ -1,8 +1,8 @@
----
+﻿---
 title: "OS का इतिहास: macOS की वंशावली (NeXTSTEP से UNIX के वंश तक)"
 description: "Apple का आधार macOS कैसे NeXTSTEP और UNIX की वंशावली को विरासत में पाकर विकसित हुआ।"
 slug: "history-of-macos"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T02:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "प्रौद्योगिकी"

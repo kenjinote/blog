@@ -2,7 +2,7 @@
 title: "图灵机与可计算性理论：艾伦·图灵的思想实验与“停机问题”"
 description: "计算的极限是什么？我们将从数学和程序的角度深入探讨艾伦·图灵提出的图灵机概念，以及可计算性理论的金字塔——“停机问题”。"
 slug: turing-machine-computability
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
 categories:
   - 计算机科学

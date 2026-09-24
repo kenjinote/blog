@@ -2,7 +2,7 @@
 title: "Método de Mínimos Cuadrados: Encontrando la 'Línea de Mejor Ajuste' para Datos Dispersos usando Álgebra Lineal"
 description: "Una explicación profunda de la mecánica del Método de Mínimos Cuadrados utilizando intuición geométrica y poderosas herramientas de álgebra lineal (ecuación normal, proyección ortogonal)."
 slug: "method-of-least-squares"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matemáticas"

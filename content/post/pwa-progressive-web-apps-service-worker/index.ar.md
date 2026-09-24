@@ -2,7 +2,7 @@
 title: "إمكانيات وتنفيذ تطبيقات الويب التقدمية (PWA) (قوة Service Worker)"
 description: "شرح شامل لتطبيقات الويب التقدمية (PWA)، بدءًا من النظرة العامة، مرورًا بدورة حياة عامل الخدمة (Service Worker)، والتخزين المؤقت دون اتصال (Offline Cache)، وصولاً إلى إشعارات الدفع (Push Notifications)."
 slug: "pwa-progressive-web-apps-service-worker"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

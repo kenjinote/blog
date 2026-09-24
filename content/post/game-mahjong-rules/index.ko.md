@@ -2,7 +2,7 @@
 title: "테이블 게임의 극치: 마작의 기본 규칙과 역 해설 - 4인이 엮어내는 정보전"
 description: "136장의 패가 엮어내는 동양의 지적인 테이블 게임 '마작'. 운과 실력의 밸런스가 절묘한 이 게임의 기본 구조, 몸통(멘츠)과 머리(아타마)를 만드는 방법, 그리고 대표적인 '역'에 대해 해설합니다."
 slug: "game-mahjong-rules"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

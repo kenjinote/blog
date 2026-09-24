@@ -1,6 +1,5 @@
 ---
 title: "The Origins of Silicon Valley: The Innovation Mecca Created by the 'Traitorous Eight'"
-date: "2026-09-24T16:08:36+09:00"
 description: "Silicon Valley is the epicenter of today's IT industry. Behind its birth lies an epic drama of a lone genius running amok and the rebellion of eight young engineers known as the 'Traitorous Eight'. We thoroughly explain their journey."
 slug: "history-silicon-valley-traitorous-eight"
 categories: ["history"]

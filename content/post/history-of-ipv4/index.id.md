@@ -2,7 +2,7 @@
 title: "Alamat Internet: Sejarah IPv4 dan Masalah Kehabisan - Mengapa 4,3 Miliar Alamat Tidak Cukup?"
 description: "Alamat IP adalah alamat yang ditetapkan untuk semua perangkat di internet. Artikel ini menjelaskan sejarah dan mekanisme mengapa IPv4, yang seharusnya memiliki jumlah yang sangat besar sekitar 4,3 miliar, telah habis dan beralih ke IPv6 generasi berikutnya."
 slug: "history-of-ipv4"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -1,6 +1,5 @@
 ---
 title: "Henrietta Lacks dan Sel HeLa Abadi: Kisah Tak Terungkap yang Membentuk Kedokteran Modern"
-date: "2026-09-24T16:08:36+09:00"
 description: "Tinjauan mendalam tentang kehidupan Henrietta Lacks, terobosan ilmiah dari sel HeLa yang sangat penting bagi kedokteran dan biologi modern, serta dampak mendalamnya pada bioetika."
 slug: "biography-henrietta-lacks"
 categories: ["biography"]

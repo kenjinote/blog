@@ -2,7 +2,7 @@
 title: "オブジェクト指向プログラミング（OOP）の3大要素とSOLID原則の実践：歴史から高度な設計手法まで"
 description: "オブジェクト指向プログラミングの歴史的背景から3大要素（カプセル化、継承、ポリモーフィズム）、そしてSOLID原則の深い実践方法までを網羅した完全ガイド。"
 slug: "object-oriented-programming-oop-solid-principles"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T14:51:08+09:00"
 image: "eyecatch.jpg"
 categories:
   - "computer-science"

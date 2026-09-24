@@ -2,7 +2,7 @@
 title: "칸토어의 대각선 논법 (Cantor's Diagonal Argument) - 실수가 유리수보다 '압도적으로 많음'을 증명"
 description: "무한에는 '크기'의 차이가 있습니다. 게오르크 칸토어가 제창한 '대각선 논법'을 사용하여, 실수의 농도가 자연수나 유리수의 농도보다 진정으로 크다는 것을 증명하는 과정을 상세히 해설합니다."
 slug: "cantors-diagonal-argument"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "foundations-of-mathematics", "set-theory"]
 tags: ["Cantor", "대각선논법", "무한", "수학", "증명"]

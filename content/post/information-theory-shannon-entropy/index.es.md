@@ -2,7 +2,7 @@
 title: "Teoría de la información y entropía de Shannon: Explorando los límites de la compresión de datos y las comunicaciones"
 description: "Explicación detallada de los fundamentos de la teoría de la información propuesta por Claude Shannon, el concepto de entropía, los límites de la compresión de datos y su aplicación a las comunicaciones modernas."
 slug: information-theory-shannon-entropy
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T02:45:54+09:00
 image: eyecatch.jpg
 categories:
   - computer-science

@@ -2,7 +2,7 @@
 title: 'Pythagoras: The Intersection of Mathematics and Mysticism'
 description: 'An in-depth exploration of the life of the ancient Greek mathematician Pythagoras, the Pythagorean theorem, and the philosophy that all is number.'
 slug: 'pythagoras'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-20T18:40:00+09:00'
 image: "eyecatch.jpg"
 categories:
   - 'mathematics'

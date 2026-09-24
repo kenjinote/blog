@@ -1,7 +1,7 @@
 ---
 title: 'PowerShell के साथ Excel और Word से मेटाडेटा (व्यक्तिगत जानकारी) को एक साथ कैसे हटाएं'
 slug: "PowerShell で Excel のमेटाडेटा（व्यक्तिगत जानकारी）を削除する方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-07-30T02:42:40+09:00
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "मेटाडेटा", "व्यक्तिगत जानकारी"]
 draft: false
 image: "powershell_metadata_eyecatch_1788588033601.webp"

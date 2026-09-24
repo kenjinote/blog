@@ -2,7 +2,7 @@
 title: "Inklusion-Exklusion-Prinzip: Eine mächtige Technik zur korrekten Zählung von Elementen in überlappenden Mengen"
 description: "Ein ausführlicher Leitfaden zum Inklusion-Exklusion-Prinzip, einem wesentlichen mathematischen Werkzeug zur genauen Zählung von Elementen in mehreren überlappenden Mengen ohne Duplikate. Wir erklären alles vom grundlegenden 2-Mengen-Fall bis zum allgemeinen n-Mengen-Fall anhand von Beispielen, Beweisen und Anwendungsbeispielen."
 slug: "inclusion-exclusion-principle"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematik"

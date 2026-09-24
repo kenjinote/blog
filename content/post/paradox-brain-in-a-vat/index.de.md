@@ -1,6 +1,5 @@
 ---
 title: "【Gehirn im Tank und Simulationshypothese】 Ist unsere Realität echt?"
-date: "2026-09-24T16:08:36+09:00"
 description: "Eine tiefe Erforschung des Gedankenexperiments vom \"Gehirn im Tank\" und der Simulationshypothese aus der Perspektive von Philosophie, Quantenmechanik und Informationstheorie. Ist die Welt, in der wir leben, die Realität oder eine hochentwickelte virtuelle Realität? Eine detaillierte Untersuchung der ultimativen Frage der Menschheit."
 slug: "paradox-brain-in-a-vat"
 categories: ["philosophy"]

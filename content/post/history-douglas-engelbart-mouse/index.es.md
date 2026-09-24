@@ -1,6 +1,5 @@
 ---
 title: "El nacimiento del ratón y Douglas Engelbart: La trayectoria del pionero que redefinió la interacción entre el ser humano y la computadora"
-date: "2026-09-24T16:08:36+09:00"
 description: "¿Cómo nació el ratón, indispensable para el manejo actual de las computadoras? Una explicación exhaustiva de su épica historia, desde la filosofía de Douglas Engelbart de \"Aumentar el Intelecto Humano\" (Augmenting Human Intellect) hasta La Madre de Todas las Demos de 1968."
 slug: "history-douglas-engelbart-mouse"
 categories: ["history"]

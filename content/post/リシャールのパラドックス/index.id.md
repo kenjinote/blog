@@ -2,7 +2,7 @@
 title: 'Paradoks Richard: Kontradiksi yang Ditimbulkan oleh Desimal Tak Terhingga dan "Argumen Diagonal"'
 slug: 'richards-paradox'
 description: 'Mendaftar semua bilangan real yang dapat didefinisikan dengan kata-kata, dan kemudian menciptakan bilangan real baru yang berbeda darinya. Kami menjelaskan secara sederhana "Paradoks Richard" yang mengguncang fondasi matematika, dan inspirasi Gödel untuk memecahkannya.'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T12:00:00+09:00'
 image: 'img/richards_paradox.jpg'
 math: true
 mermaid: true

@@ -2,7 +2,7 @@
 title: '辛普森悖論：局部獲勝，卻在整體中落敗的神秘現象'
 slug: 'simpsons-paradox'
 description: '在各個部門的「合格率」都勝出，但計算公司整體的「總合格率」時卻被逆轉而落敗！？我們將為您淺顯易懂地解說「辛普森悖論」，這是一個統計數據欺騙我們的可怕陷阱。'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T07:00:00+09:00'
 image: 'img/simpsons_paradox.jpg'
 math: true
 mermaid: true

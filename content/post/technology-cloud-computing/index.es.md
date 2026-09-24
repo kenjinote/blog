@@ -2,7 +2,7 @@
 title: "De la propiedad al uso: Cómo funciona la computación en la nube - El gran cambio en la infraestructura de TI"
 description: "Cómo la computación en la nube, como Amazon Web Services (AWS) y Google Cloud (GCP), ha transformado la TI para empresas y particulares. Explicamos las diferencias entre IaaS, PaaS y SaaS, y los fundamentos de la tecnología de virtualización."
 slug: "technology-cloud-computing"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -1,7 +1,7 @@
 ---
 title: "Das Problem der byzantinischen Generäle: Wie erzielt man einen Konsens in einem Netzwerk mit Verrätern?"
 image: "eyecatch.jpg"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T00:00:00+09:00
 description: "Wir erklären das „Problem der byzantinischen Generäle“, ein repräsentatives Problem in verteilten Systemen, leicht verständlich anhand von konkreten Beispielen und Diagrammen – vom Konzept über mathematische Beweise bis hin zur Anwendung in der Blockchain."
 categories: ["technical-explanation", "distributed-systems"]
 tags:

@@ -2,7 +2,7 @@
 title: "Mechanism of LLM (Large Language Model) and Application to Programming (Transformer Model, Prompt Engineering)"
 description: "We thoroughly explain the mathematical mechanism of the Transformer architecture, which is the foundation of Large Language Models (LLMs), advanced prompt engineering techniques, and their application to actual programming."
 slug: "large-language-models-llm-transformer-prompt-engineering"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T14:51:08+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["ai", "llm", "transformer", "prompt-engineering"]

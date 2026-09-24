@@ -1,7 +1,7 @@
 ---
 title: "페인트로 채울 수는 있지만 표면을 칠할 수는 없다?: 가브리엘의 나팔"
 description: "'유한한 부피'와 '무한한 표면적'을 동시에 가지는, 미적분학이 가져온 기묘한 입체의 역설."
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "gabriels-horn"
 image: "img/gabriels_horn.jpg"

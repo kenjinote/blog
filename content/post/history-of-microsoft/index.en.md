@@ -2,7 +2,7 @@
 title: "History of Microsoft: Dawn of the PC, Windows Hegemony, and Adaptation to the Cloud and AI Era"
 description: "The history of Microsoft from Windows to Azure and the OpenAI partnership"
 slug: "history-of-microsoft"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T00:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

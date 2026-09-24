@@ -2,7 +2,7 @@
 title: "가우스의 경이로운 정리(Theorema Egregium) - 피자 먹는 법에도 응용할 수 있는 미분 기하학의 금자탑"
 description: "칼 프리드리히 가우스가 발견한 '경이로운 정리'에 대해, 그 수학적 배경과 피자를 먹을 때의 일상적인 응용에 이르기까지 깊이 있게 해설합니다."
 slug: "theorema-egregium"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:11:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]
 tags: ["기하학", "가우스", "피자 정리", "Theorema Egregium", "미분 기하학"]

@@ -1,6 +1,5 @@
 ---
 title: "\"마우스\"의 탄생과 더글러스 엥겔바트: 컴퓨터와 인간의 대화를 재정의한 선구자의 궤적"
-date: "2026-09-24T16:08:36+09:00"
 description: "현재의 컴퓨터 조작에 빼놓을 수 없는 \"마우스\"는 어떻게 탄생했을까. 더글러스 엥겔바트의 사상 \"지성의 증폭(Augmenting Human Intellect)\"부터 1968년의 The Mother of All Demos(모든 데모의 어머니)까지 그 장대한 역사를 철저히 해설한다."
 slug: "history-douglas-engelbart-mouse"
 categories: ["history"]

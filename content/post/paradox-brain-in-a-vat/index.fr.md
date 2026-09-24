@@ -1,6 +1,5 @@
 ---
 title: "[Le cerveau dans une cuve et l'hypothèse de la simulation] Notre réalité est-elle vraie ?"
-date: "2026-09-24T16:08:36+09:00"
 description: "Une exploration approfondie de l'expérience de pensée du \"cerveau dans une cuve\" et de l'hypothèse de la simulation sous l'angle de la philosophie, de la mécanique quantique et de la théorie de l'information. Le monde dans lequel nous vivons est-il la réalité ou une réalité virtuelle avancée ? Une réflexion détaillée sur la question ultime de l'humanité."
 slug: "paradox-brain-in-a-vat"
 categories: ["philosophy"]

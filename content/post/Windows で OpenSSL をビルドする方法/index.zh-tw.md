@@ -1,7 +1,7 @@
 ---
 title: '在 Windows 環境下編譯與安裝 OpenSSL 的步驟與環境建置方法'
 slug: "Windows で OpenSSL を建置する方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-04-07T21:06:32+09:00
 tags: ["Windows", "OpenSSL", "編譯", "C++"]
 draft: false
 image: "img.webp"

@@ -2,7 +2,7 @@
 title: "Teoria dos Grafos e Algoritmos de Dijkstra e A*: Base Matemática e Implementação de Busca de Caminho"
 description: "Desde os fundamentos da teoria dos grafos até a base matemática dos algoritmos de Dijkstra e A* no problema do caminho mais curto, explicamos detalhadamente estruturas de dados e implementação em Python."
 slug: graph-theory-dijkstra-a-star
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T02:45:54+09:00
 image: eyecatch.jpg
 categories:
   - mathematics

@@ -1,7 +1,7 @@
 ---
 title: 'Git शुरुआती लोगों द्वारा की जाने वाली आम गलतियाँ और समाधान कमांड (कन्फ्लिक्ट रिज़ॉल्यूशन आदि)'
 slug: "git-beginners-mistakes-and-solutions"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T17:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

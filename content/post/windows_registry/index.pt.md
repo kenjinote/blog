@@ -1,7 +1,7 @@
 ---
 title: 'Conhecimentos Básicos do Registro do Windows e Métodos de Edição Segura e Programável'
 slug: "windows-registry-safe-programmable-editing"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

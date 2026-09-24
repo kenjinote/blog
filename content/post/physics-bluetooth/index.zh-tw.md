@@ -2,7 +2,7 @@
 title: "物理的奧秘：Bluetooth 的運作原理 - 頻率跳變與配對"
 description: "Bluetooth 是現代無線裝置不可或缺的技術。為什麼它能在不互相干擾的情況下穩定連線？我們將從源自軍事技術的頻率跳變（Frequency Hopping）來探討其奧秘。"
 slug: "physics-bluetooth"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

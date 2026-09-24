@@ -2,7 +2,7 @@
 title: "Alan Baker: Der Fields-Medaillengewinner, der die Theorie der transzendenten Zahlen revolutionierte"
 description: "Ein detaillierter Blick auf das Leben und die mathematischen Errungenschaften von Alan Baker, dem britischen Mathematiker, der 1970 die Fields-Medaille für seine Sätze über Linearformen in Logarithmen gewann."
 slug: "baker"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematik", "biografie"]
 tags: ["Alan Baker", "Zahlentheorie", "Fields-Medaille", "Theorie der transzendenten Zahlen"]

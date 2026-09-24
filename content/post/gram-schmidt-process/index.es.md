@@ -2,7 +2,7 @@
 title: 'Proceso de Ortogonalización de Gram-Schmidt: Un algoritmo para realinear vectores base distorsionados en vectores nítidos y mutuamente ortogonales'
 description: 'Una guía completa sobre el proceso de ortogonalización de Gram-Schmidt en álgebra lineal, cubriendo intuición geométrica, formulación matemática, versiones modificadas estables numéricamente, implementación en Python y aplicaciones a espacios polinómicos.'
 slug: 'gram-schmidt-process'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-20T14:40:00+09:00'
 image: "eyecatch.jpg"
 categories: ["Matemáticas"]
 tags: ["Álgebra Lineal", "Algoritmos", "Aprendizaje Automático", "Descomposición QR", "Python", "Cálculo Numérico", "Matemáticas"]

@@ -1,7 +1,7 @@
 ---
 title: 'Einfache Erklärung, wie man mit paint.net bestimmte Bildbereiche verpixelt'
 slug: "paint.netでBildの特定個所にモザイクをかける方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-04-11T16:33:10+09:00
 tags: ["paint.net", "Rand", "Bild"]
 draft: false
 image: "img.webp"

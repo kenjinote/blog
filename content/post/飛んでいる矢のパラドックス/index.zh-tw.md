@@ -1,7 +1,7 @@
 ---
 title: "飛行的箭是靜止的？：芝諾的「飛矢」悖論"
 description: "飛行的箭在每一個瞬間都是靜止的。那麼，運動不存在嗎？古希臘最大的邏輯謎題。"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "zenos-arrow"
 image: "img/zenos_arrow.jpg"

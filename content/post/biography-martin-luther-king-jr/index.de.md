@@ -1,6 +1,6 @@
 ---
 title: "Martin Luther King Jr.: Die Verkörperung eines Traums, der die Welt durch Gewaltlosigkeit veränderte"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["martin-luther-king-jr", "history"]
 image: "eyecatch.jpg"

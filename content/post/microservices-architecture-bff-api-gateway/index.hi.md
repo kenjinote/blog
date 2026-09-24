@@ -2,7 +2,7 @@
 title: "माइक्रोसर्विसेज आर्किटेक्चर के प्रकाश और अंधकार (BFF और API Gateway)"
 description: "मोनोलिथ से विभाजन में आने वाली चुनौतियां और API Gateway या BFF (Backend for Frontend) पैटर्न के माध्यम से समाधान।"
 slug: "microservices-architecture-bff-api-gateway"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

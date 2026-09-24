@@ -1,7 +1,7 @@
 ---
 title: "Dasar dan Implementasi Kriptografi Menggunakan Teorema Kecil Fermat"
 slug: "fermats-little-theorem-cryptography-implementation"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T22:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

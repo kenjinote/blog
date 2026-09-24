@@ -9,7 +9,7 @@
 
 title: 'Cómo llamar a la API de ChatGPT desde curl en la línea de comandos de Windows'
 slug: "ChatGPT APIをcurlから呼び出す"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-02-01T17:15:34+09:00
 tags: ["ChatGPT", "API", "Comandos"]
 draft: false
 image: "img.webp"

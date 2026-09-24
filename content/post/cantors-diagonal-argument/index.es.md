@@ -2,7 +2,7 @@
 title: "El argumento diagonal de Cantor (Cantor's Diagonal Argument) - Demostración de que hay «abrumadoramente más» números reales que racionales"
 description: "El infinito tiene diferencias de «tamaño». Explicamos detalladamente el proceso para demostrar que la cardinalidad de los números reales es verdaderamente mayor que la de los números naturales o racionales, utilizando el «argumento diagonal» propuesto por Georg Cantor."
 slug: "cantors-diagonal-argument"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "foundations-of-mathematics", "set-theory"]
 tags: ["Cantor", "Argumento diagonal", "Infinito", "Matemáticas", "Demostración"]

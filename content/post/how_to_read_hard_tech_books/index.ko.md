@@ -1,7 +1,7 @@
 ---
 title: '난해한 기술서(수학·알고리즘)의 효율적인 독서와 아웃풋 방법'
 slug: "reading-hard-tech-books"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

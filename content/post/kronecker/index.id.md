@@ -2,7 +2,7 @@
 title: 'Leopold Kronecker: Kehidupan dan Kontribusi Aljabar dari Matematikawan yang Mencintai Bilangan Bulat'
 description: 'Tinjauan tentang kehidupan, konflik dengan Cantor, dan pencapaian mendalam Leopold Kronecker, matematikawan besar abad ke-19 yang terkenal dengan kutipan "Tuhan menciptakan bilangan bulat, yang lainnya adalah karya manusia."'
 slug: "kronecker"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matematika"

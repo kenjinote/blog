@@ -1,7 +1,7 @@
 ---
 title: 'How to Create a Program to Enumerate Prime Numbers in Rust and Code Examples'
 slug: "RustでPrime Numberを列挙する"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-09T07:08:49+09:00
 tags: ["Rust", "Prime Numbers", "Algorithm"]
 draft: false
 image: "images/img.webp"

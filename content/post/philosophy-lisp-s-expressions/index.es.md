@@ -1,6 +1,5 @@
 ---
 title: "Lisp y el \"Lenguaje de Dios\" — La Belleza de las Expresiones-S y la Filosofía del Código como Datos"
-date: "2026-09-24T16:08:36+09:00"
 description: "Por qué el lenguaje de programación Lisp es llamado el \"Lenguaje de Dios\". Un ensayo de filosofía técnica que examina a fondo la belleza de las Expresiones-S en su núcleo, la asombrosa Homoiconicidad y el abismo de la metaprogramación mediante macros."
 slug: "philosophy-lisp-s-expressions"
 categories: ["philosophy"]

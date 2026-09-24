@@ -2,7 +2,7 @@
 title: "물리의 신비: 블루투스의 원리 - 주파수 호핑과 페어링"
 description: "현대 무선 기기에 필수적인 블루투스. 왜 혼선 없이 안정적으로 연결될까? 주파수 호핑이라는 군사 유래 기술에서 실마리를 풀어봅니다."
 slug: "physics-bluetooth"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

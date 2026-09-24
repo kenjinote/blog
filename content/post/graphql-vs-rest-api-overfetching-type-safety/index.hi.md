@@ -2,7 +2,7 @@
 title: "GraphQL बनाम REST API (ओवरफेचिंग का समाधान और टाइप सेफ्टी)"
 description: "REST API की सीमाएँ, और GraphQL द्वारा प्रदान की जाने वाली लचीली डेटा फ़ेचिंग और टाइप-सेफ फ्रंटएंड डेवलपमेंट।"
 slug: "graphql-vs-rest-api-overfetching-type-safety"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "backend"

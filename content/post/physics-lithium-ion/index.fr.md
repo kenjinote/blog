@@ -2,7 +2,7 @@
 title: "Lois de la physique et technologies du quotidien : le fonctionnement de la batterie lithium-ion - La chimie de la charge et de la décharge au service de la société mobile moderne"
 description: "Des smartphones aux véhicules électriques, la batterie lithium-ion est indispensable à notre société moderne. Pourquoi est-elle si légère et de si grande capacité ? Nous vous expliquons les réactions chimiques dynamiques des électrons et des ions qui se produisent à l'intérieur."
 slug: "physics-lithium-ion"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

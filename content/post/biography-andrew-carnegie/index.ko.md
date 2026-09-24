@@ -1,6 +1,6 @@
 ---
 title: "강철왕 앤드류 카네기: 부와 자선의 역설을 구현한 남자"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["andrew-carnegie", "history"]
 image: "eyecatch.jpg"

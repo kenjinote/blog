@@ -2,7 +2,7 @@
 title: "Pierre de Fermat: Der „König der Amateurmathematiker“, der die Romantik an den Rand schrieb"
 description: "Eine detaillierte Erklärung des Lebens und der außergewöhnlichen mathematischen Errungenschaften (Fermatscher letzter Satz, kleiner Satz, frühe Analysis usw.) von Pierre de Fermat, einem französischen Richter des 17. Jahrhunderts, der unsterbliche Spuren in der Geschichte der Mathematik hinterließ."
 slug: "fermat"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematik", "Biografie"]
 tags: ["Fermat", "Geschichte der Mathematik", "Fermatscher letzter Satz", "Zahlentheorie", "Wahrscheinlichkeitstheorie"]

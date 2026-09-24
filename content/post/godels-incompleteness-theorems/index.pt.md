@@ -1,7 +1,7 @@
 ---
 title: "Os Teoremas da Incompletude de Gödel: A prova matemática da 'verdade que nunca pode ser provada'"
 image: "eyecatch.jpg"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T00:00:51+09:00
 description: "Explicamos de forma clara e simples os históricos Teoremas da Incompletude de Gödel, que demonstraram os limites da matemática, utilizando exemplos concretos e diagramas para ilustrar o seu significado e a mecânica da prova."
 categories: ["mathematics", "computer-science"]
 tags:

@@ -2,7 +2,7 @@
 title: "Le paradoxe de l'interrogation surprise : le jour où un test logiquement « absolument impossible » a lieu"
 slug: "unexpected-hanging-paradox"
 description: "« La semaine prochaine, un jour entre lundi et vendredi, je vous ferai un contrôle surprise imprévisible » —— Face à cette déclaration du professeur, les élèves ont prouvé qu'« un contrôle surprise est logiquement impossible ». Cependant..."
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-10T10:00:00+09:00"
 image: "img/unexpected_hanging.jpg"
 math: true
 mermaid: true

@@ -1,7 +1,7 @@
 ---
 title: 'Mude de vida! Resumo de obras-primas e livros de negócios recomendados que você deve ler'
 slug: "RecomendaçãoのLivro de Negócios"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-03-19T18:13:14+09:00
 tags: ["Livros de Negócios", "Livros"]
 draft: false
 image: "img.webp"

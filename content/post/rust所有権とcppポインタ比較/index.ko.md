@@ -1,7 +1,7 @@
 ---
 title: "Rust의 '소유권'과 '차용'을 C++의 포인터와 비교하여 해설"
 slug: "rust-ownership-borrowing-cpp-pointer-comparison"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

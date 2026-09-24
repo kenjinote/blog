@@ -2,7 +2,7 @@
 title: "뷔퐁의 바늘 (Buffon's Needle) - 바늘을 떨어뜨리기만 하면 원주율을 구하는 확률론의 고전"
 description: "바닥에 바늘을 떨어뜨리기만 해도 원주율 π를 구할 수 있다? 18세기에 제안된 놀라운 확률론의 고전적 문제 '뷔퐁의 바늘'에 대해 수학적 증명부터 시뮬레이션까지 자세히 설명합니다."
 slug: "buffons-needle"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "probability-theory"]
 tags:

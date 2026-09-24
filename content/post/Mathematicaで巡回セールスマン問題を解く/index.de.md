@@ -1,7 +1,7 @@
 ---
 title: 'Wie man das Problem des Handlungsreisenden (TSP) mit Mathematica löst'
 slug: "MathematicaでProblem des Handlungsreisendenを解く"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "Problem des Handlungsreisenden", "Algorithmus", "Mathematik"]
 draft: false
 image: "img.webp"

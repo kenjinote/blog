@@ -2,7 +2,7 @@
 title: "核聚变发电的原理：怎样把恒星的能量转化为地球上可用的电力"
 description: "从氘氚反应、等离子体约束、托卡马克与仿星器，到激光聚变、能量增益、燃料增殖、材料和发电设备，结合图解与计算理解核聚变的科学和工程。"
 slug: "how-fusion-power-works"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-24T10:00:00+09:00"
 image: "eyecatch.png"
 categories: ["technology", "physics"]
 tags: ["nuclear-fusion", "energy", "plasma", "engineering", "history"]

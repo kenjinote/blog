@@ -2,7 +2,7 @@
 title: "Le fonctionnement des LLM (Grands Modèles de Langage) et leurs applications en programmation (Modèle Transformer, Ingénierie de Prompt)"
 description: "Une explication approfondie allant du mécanisme mathématique de l'architecture Transformer, qui est au cœur des grands modèles de langage (LLM), aux techniques avancées d'ingénierie de prompt, jusqu'à leurs applications concrètes en programmation."
 slug: "large-language-models-llm-transformer-prompt-engineering"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T14:51:08+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["ai", "llm", "transformer", "prompt-engineering"]

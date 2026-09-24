@@ -9,7 +9,7 @@
 
 title: '일반 수체 체(GNFS)의 진정한 수학적 구조란? 준동형 사상을 이용한 소인수분해의 원리'
 slug: "一般数体篩法（GNFS）の真の수학的構造"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-05T02:26:13+09:00
 tags: ["수학", "암호", "RSA", "GNFS"]
 draft: false
 image: "rsa_encryption_break_1788542156523.webp"

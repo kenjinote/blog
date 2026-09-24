@@ -1,7 +1,7 @@
 ---
 title: "엔지니어를 위한: 프롬프트 엔지니어링의 기본과 개발에서의 응용"
 slug: "prompt-engineering-for-engineers"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T20:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

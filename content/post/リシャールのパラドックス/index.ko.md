@@ -2,7 +2,7 @@
 title: '리샤르의 역설: 무한한 소수와 "대각선 논법"이 일으키는 모순'
 slug: 'richards-paradox'
 description: '말로 정의할 수 있는 실수를 모두 나열하고, 그와는 다른 새로운 실수를 만들어 낸다. 수학의 기초를 뒤흔든 "리샤르의 역설"과 그것을 타파하기 위한 괴델의 번뜩임을 알기 쉽게 해설합니다.'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T12:00:00+09:00'
 image: 'img/richards_paradox.jpg'
 math: true
 mermaid: true

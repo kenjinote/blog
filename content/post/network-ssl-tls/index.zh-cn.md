@@ -2,7 +2,7 @@
 title: "互联网之盾：SSL/TLS的机制 - 为什么可以安全地发送信用卡信息？"
 description: "Web网站URL中的“https”里的“s”意味着什么？我们将从对称密钥和公钥的混合加密方式出发，为您解说保护全球电子商务和通信安全的加密技术“SSL/TLS”的机制。"
 slug: "network-ssl-tls"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

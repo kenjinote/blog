@@ -2,7 +2,7 @@
 title: "物理法则与身边技术：RFID与NFC（手机钱包）的机制 - 通过电磁感应的非接触式通信"
 description: "只需将Suica、PASMO或手机钱包触碰闸机即可完成支付的如魔法般的技术。我们将解说其背后的“电磁感应”物理法则以及NFC通信标准。"
 slug: "physics-rfid-nfc"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

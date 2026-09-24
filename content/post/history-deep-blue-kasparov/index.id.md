@@ -1,6 +1,5 @@
 ---
 title: "Deep Blue vs Kasparov (Kejutan 1997): Kisah Lengkap Pertandingan Bersejarah Antara Manusia dan AI"
-date: "2026-09-24T16:08:36+09:00"
 description: "Peristiwa bersejarah di tahun 1997 ketika juara dunia catur Garry Kasparov dikalahkan oleh superkomputer IBM, \"Deep Blue\". Artikel ini membahas latar belakang, jalannya pertandingan, dan dampaknya terhadap teknologi AI secara mendalam."
 slug: "history-deep-blue-kasparov"
 categories: ["history"]

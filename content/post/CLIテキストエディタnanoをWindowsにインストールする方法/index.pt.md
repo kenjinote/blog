@@ -1,7 +1,7 @@
 ---
 title: 'Como Instalar o Editor de Texto CLI ''nano'' no Windows e Configurar as Variáveis de Ambiente'
 slug: "CLIEditor de TextonanoをWindowsにInstalaçãoする方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-03-31T18:09:32+09:00
 tags: ["nano", "editor de texto"]
 draft: false
 image: "img_1.webp"

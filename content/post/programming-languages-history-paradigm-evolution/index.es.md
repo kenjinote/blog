@@ -2,7 +2,7 @@
 title: "Historia de los lenguajes de programación y evolución de paradigmas (Desde Ensamblador, C, Java hasta Rust y Go)"
 description: "¿Cómo han evolucionado los lenguajes de programación? Explicaremos en detalle la historia y la evolución de los paradigmas, comenzando desde el lenguaje ensamblador, pasando por C y Java, hasta llegar a los modernos Rust y Go."
 slug: "programming-languages-history-paradigm-evolution"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T14:51:07+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["programming-languages", "history", "paradigm", "rust", "go"]

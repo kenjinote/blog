@@ -2,7 +2,7 @@
 title: "Nilai Tukar dan Teknologi: Sejarah FX (Perdagangan Margin Valuta Asing) dan Trading Algoritme"
 description: "Pasar valuta asing berawal dari runtuhnya sistem standar emas. Artikel ini menjelaskan bagaimana pasar ini bertemu dengan internet dan menjadi medan pertempuran utama bagi trading algoritme yang bersaing dalam hitungan milidetik."
 slug: "finance-fx-algo"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "finance"

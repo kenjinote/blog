@@ -1,7 +1,7 @@
 ---
 title: '用C++运行TinyLLaMA！使用llama.cpp搭建本地LLM环境的步骤'
 slug: "TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "AI"]
 draft: false
 image: "img.webp"

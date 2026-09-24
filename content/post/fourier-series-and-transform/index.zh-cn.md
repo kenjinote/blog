@@ -2,7 +2,7 @@
 title: "傅里叶级数与傅里叶变换：将任何复杂波形分解为正弦和余弦之和"
 description: "详细解释将复杂波形表示为简单正弦波和余弦波叠加的“傅里叶级数”，以及其向非周期函数扩展的“傅里叶变换”。"
 slug: "fourier-series-and-transform"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

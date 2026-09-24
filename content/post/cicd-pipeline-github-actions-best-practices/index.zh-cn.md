@@ -2,7 +2,7 @@
 title: "CI/CD流水线与GitHub Actions：持续集成的最佳实践"
 description: "全面涵盖加速软件开发生命周期的CI/CD原则，以及使用GitHub Actions构建实用流水线的专有知识。"
 slug: "cicd-pipeline-github-actions-best-practices"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T09:00:00+09:00
 image: eyecatch.jpg
 categories:
   - "devops"

@@ -2,7 +2,7 @@
 title: "HTTP/3 और QUIC प्रोटोकॉल: TCP की सीमाएँ और UDP के माध्यम से नवाचार"
 description: "HTTP/3 और QUIC प्रोटोकॉल का जन्म क्यों हुआ, Head-of-Line Blocking समस्या का समाधान, कनेक्शन स्थापना को तेज करना, और अगली पीढ़ी के वेब संचार प्रोटोकॉल के बारे में विस्तार से जानें।"
 slug: "http3-quic-protocol-tcp-udp"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T17:10:00+09:00
 image: eyecatch.jpg
 categories:
   - "network"

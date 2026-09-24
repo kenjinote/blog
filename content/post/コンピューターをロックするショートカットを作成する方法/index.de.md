@@ -1,7 +1,7 @@
 ---
 title: 'Sperren Sie Ihren Windows-PC in 1 Sekunde! So erstellen und verwenden Sie praktische Verknüpfungen'
 slug: "Computer sperrenするVerknüpfungを作成する方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "Computer sperren", "Verknüpfung"]
 draft: false
 image: "img.webp"

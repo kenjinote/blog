@@ -8,7 +8,7 @@
 
 title: 'Git clone으로 리포지토리의 최신 커밋만 가져오는 방법'
 slug: "git리포지토리の最新だけ取得する"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-04-27T02:54:12+09:00
 tags: ["git", "저장소", "명령어"]
 draft: false
 image: "img.webp"

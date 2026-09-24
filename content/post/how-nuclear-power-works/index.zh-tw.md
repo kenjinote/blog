@@ -2,7 +2,7 @@
 title: "核能發電的原理：分裂熱如何變成電，停機後為什麼還要冷卻"
 description: "從原子核結合能、連鎖反應、延遲中子到壓水式反應爐、沸水式反應爐、汽輪機、衰變熱與用過核子燃料，以歷史、圖解和計算範例理解核電。"
 slug: "how-nuclear-power-works"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-24T10:00:00+09:00"
 image: "eyecatch.png"
 categories: ["technology", "physics"]
 tags: ["nuclear-power", "nuclear-fission", "energy", "engineering", "history"]

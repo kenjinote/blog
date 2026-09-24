@@ -2,7 +2,7 @@
 title: "Taylor- und Maclaurin-Reihen: Die Magie der Approximation komplexer Funktionen mit Polynomen"
 description: "Eine detaillierte Erklärung der Taylor- und Maclaurin-Reihen, der Geheimnisse der Infinitesimalrechnung, von intuitiven Bedeutungen über mathematische Herleitungen bis hin zu Anwendungen in Programmierung und Physik."
 slug: "taylor-and-maclaurin-series"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematik"

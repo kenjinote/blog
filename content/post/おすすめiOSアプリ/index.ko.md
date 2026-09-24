@@ -9,7 +9,7 @@
 
 title: '정말 유용한! 추천 iOS 앱 엄선 모음'
 slug: "추천iOS앱"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-09-18T23:31:20+09:00
 tags: ["iOS", "앱", "추천"]
 draft: false
 image: "img.webp"

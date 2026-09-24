@@ -1,7 +1,7 @@
 ---
 title: 'Qu''est-ce que la conjecture de Collatz ? Vérification en Python d''un problème mathématique non résolu où tout nombre finit par 1'
 slug: "Conjecture de Collatz"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-07-15T18:03:03+09:00
 tags: ["Conjecture de Collatz", "Mathématiques", "Programmation", "Algorithme"]
 draft: false
 image: "img.webp"

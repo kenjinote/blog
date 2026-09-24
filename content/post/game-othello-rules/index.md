@@ -2,7 +2,7 @@
 title: "ボードゲーム戦略: オセロの基本ルールと必勝パターン - 角を取るまでの緻密な戦術"
 description: "「覚えるのは1分、極めるのは一生」と呼ばれるオセロ（リバーシ）。ただ闇雲にひっくり返すのではなく、初心者が脱却するための「確定石」と「開放度理論」を解説します。"
 slug: "game-othello-rules"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

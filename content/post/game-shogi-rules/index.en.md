@@ -2,7 +2,7 @@
 title: "AI Technology in Board Games: Basic Rules of Shogi and Typical Strategies - Explanation of Ibisha and Furibisha Tactics"
 description: "Shogi, the ultimate game of thought played on an 81-square board. We clearly explain everything from a review of the basic rules for beginners to the philosophies of the two major typical strategies, 'Ibisha' and 'Furibisha', which are also used by professionals."
 slug: "game-shogi-rules"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

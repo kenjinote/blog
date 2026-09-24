@@ -2,7 +2,7 @@
 title: "NEC의 역사: 일본 컴퓨터 여명기를 지탱한 PC-98과 통신 기술의 발자취"
 description: "통신 거인에서 PC-9800 시리즈의 패권, 그리고 해저 케이블과 우주 기술에 이르는 NEC의 역사."
 slug: "history-of-nec"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T01:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

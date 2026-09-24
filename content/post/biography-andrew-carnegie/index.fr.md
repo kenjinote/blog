@@ -1,6 +1,6 @@
 ---
 title: "Andrew Carnegie, le roi de l'acier : L'homme qui incarnait le paradoxe de la richesse et de la philanthropie"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["andrew-carnegie", "history"]
 image: "eyecatch.jpg"

@@ -1,6 +1,6 @@
 ---
 title: "닐 암스트롱: 인류 최초로 달을 밟은 사나이의 생애와 철학"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T20:51:47+09:00
 categories: ["biography"]
 tags: ["neil-armstrong", "history"]
 image: "eyecatch.jpg"

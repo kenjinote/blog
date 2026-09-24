@@ -2,7 +2,7 @@
 title: "Der Igel-Satz (Hairy Ball Theorem) - Ein Satz der Topologie: \"Ein behaarter Ball lässt sich nicht glatt kämmen\""
 description: "Wir erklären ausführlich den berühmten \"Igel-Satz\" (Hairy Ball Theorem) aus der Topologie, vom intuitiven Verständnis über den strengen mathematischen Beweis bis hin zu realen Anwendungen in der Meteorologie und Computergrafik."
 slug: "hairy-ball-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "topology"]
 tags:

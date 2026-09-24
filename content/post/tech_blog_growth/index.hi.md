@@ -1,7 +1,7 @@
 ---
 title: 'तकनीकी ब्लॉग पर मासिक विज़िटर्स बढ़ाने के लिए इंजीनियरों को क्या करना चाहिए'
 slug: "tech-blog-growth-strategies-for-engineers"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

@@ -2,7 +2,7 @@
 title: "Изнанка WebRTC и связи в реальном времени: P2P, STUN/TURN, сигнализация"
 description: "Как работает WebRTC для прямой связи между браузерами. Подробный разбор сложной изнанки, такой как обход NAT (STUN/TURN), сервер сигнализации и протокол ICE."
 slug: "webrtc-realtime-communication-p2p"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T17:10:00+09:00
 image: eyecatch.jpg
 categories:
   - "network"

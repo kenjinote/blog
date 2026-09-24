@@ -1,6 +1,6 @@
 ---
 title: "सभी विज्ञानों के जनक अरस्तू: प्राचीन ग्रीस द्वारा छोड़े गए ज्ञान के अंतिम अन्वेषक"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["aristotle", "history"]
 image: "eyecatch.jpg"

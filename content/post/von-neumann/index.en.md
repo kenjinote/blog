@@ -2,7 +2,7 @@
 title: 'John von Neumann: The Trajectory of the Demonic Brain Who Built Modern Science'
 description: 'A detailed explanation of the life of genius mathematician John von Neumann, his astonishing achievements from game theory to quantum mechanics and computer science, and numerous anecdotes surrounding him.'
 slug: 'von-neumann'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-20T20:20:00+09:00'
 image: "eyecatch.jpg"
 categories: ['mathematics', 'biography']
 tags: ['John von Neumann', 'Quantum Mechanics', 'Game Theory', 'Computer Science', 'Mathematician', 'Genius']

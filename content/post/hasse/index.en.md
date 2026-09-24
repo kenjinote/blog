@@ -2,7 +2,7 @@
 title: "Helmut Hasse: The Number Theory Giant Weaving Local to Global"
 description: "A deep dive into the life of Helmut Hasse, one of the leading mathematicians of the 20th century, exploring his mathematical achievements including the Hasse Principle and his work on elliptic curves."
 slug: "hasse"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

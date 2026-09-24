@@ -1,6 +1,6 @@
 ---
 title: "物理学: レーザーの仕組み - 誘導放出と光の増幅"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T04:01:41+09:00
 
 image: "eyecatch.jpg"
 categories: ["physics", "science"]

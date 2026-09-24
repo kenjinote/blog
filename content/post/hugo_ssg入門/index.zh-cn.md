@@ -1,7 +1,7 @@
 ---
 title: '使用Hugo的静态网站生成器入门（从WordPress迁移步骤）'
 slug: "hugo-static-site-generator-wordpress-migration"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-13T02:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -118,7 +118,7 @@ Hugo的每一篇文章文件在最顶部都有一个被称为“Front Matter（�
 ```yaml
 ---
 title: "理解Hugo的分类法（Taxonomy）"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-13T10:00:00+09:00
 draft: false
 categories:
   - "技术解说"

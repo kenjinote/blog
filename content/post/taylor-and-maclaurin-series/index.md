@@ -2,7 +2,7 @@
 title: "テイラー展開とマクローリン展開：複雑な関数を多項式で近似する魔法"
 description: "微分積分の極意であるテイラー展開とマクローリン展開について、直感的な意味から数学的な導出、そしてプログラミングや物理学への応用までを詳しく解説します。"
 slug: "taylor-and-maclaurin-series"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

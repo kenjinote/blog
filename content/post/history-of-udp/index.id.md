@@ -2,7 +2,7 @@
 title: "Teknologi Jaringan: Penjelasan Teknis UDP - Komunikasi Connectionless untuk Kecepatan"
 description: "Mengapa game online dan panggilan video dapat berkomunikasi tanpa jeda? Kami menjelaskan mekanisme protokol UDP, yang mendapatkan 'kecepatan luar biasa' dengan membuang 'jaminan pengiriman'."
 slug: "history-of-udp"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

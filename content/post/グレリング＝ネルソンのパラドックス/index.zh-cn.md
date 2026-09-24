@@ -1,7 +1,7 @@
 ---
 title: "当词语描述它自己：格雷林-纳尔逊悖论"
 description: "解开由“自述性”和“非自述性”词汇分类产生的逻辑学与语义学深层迷宫。"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "grelling-nelson-paradox"
 image: "img/grelling_nelson.jpg"

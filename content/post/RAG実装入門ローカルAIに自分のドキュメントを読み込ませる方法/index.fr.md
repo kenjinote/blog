@@ -1,7 +1,7 @@
 ---
 title: "【Introduction à l'implémentation de RAG】 Comment faire lire vos propres documents à une 'IA locale'"
 slug: "rag-local-ai-implementation-guide"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T13:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

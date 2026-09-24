@@ -1,7 +1,7 @@
 ---
 title: 'Microsoft.Windows.AI의 최신 API 활용 사례 및 샘플 코드'
 slug: "microsoft-windows-ai-api-guide"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T18:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

@@ -2,7 +2,7 @@
 title: "Galois Theory - Why There Is No Solvable Formula for Equations of Degree 5 or Higher and the Birth of Group Theory"
 description: "What is Galois Theory? Why is there no formula for solving equations of degree 5 or higher? We will explain the foundations of group theory left by Évariste Galois and the beauty of symmetry in mathematics in an easy-to-understand way."
 slug: "galois-theory"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:04:13+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "algebra"]
 tags:

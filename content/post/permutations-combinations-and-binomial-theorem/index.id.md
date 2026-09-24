@@ -2,7 +2,7 @@
 title: "Permutasi, Kombinasi, dan Teorema Binomial: Keteraturan Angka yang Indah Dilihat dalam Segitiga Pascal"
 description: "Penjelasan rinci tentang struktur matematika yang dijalin oleh permutasi, kombinasi, teorema binomial, dan segitiga Pascal."
 slug: "permutations-combinations-and-binomial-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matematika"

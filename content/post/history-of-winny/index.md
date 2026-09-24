@@ -2,7 +2,7 @@
 title: "Winnyの仕組みを読み解く：検索・キャッシュ・中継と匿名性の限界"
 description: "WinnyのP2Pを、検索用のキー、回線速度による階層化、キャッシュと中継から解説。転送量の例を交え、匿名性の限界、情報漏えい、裁判の経緯を整理します。"
 slug: "history-of-winny"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["technology", "computer-science"]
 tags: ["p2p", "network", "winny", "history"]

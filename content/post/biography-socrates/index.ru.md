@@ -1,6 +1,6 @@
 ---
 title: "Сократ: Истоки западной философии, выкованные мудростью незнания и диалогом"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["socrates", "history"]
 image: "eyecatch.jpg"

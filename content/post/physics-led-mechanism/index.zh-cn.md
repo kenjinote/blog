@@ -2,7 +2,7 @@
 title: "物理的奥秘：LED的原理 - 为什么会发光？蓝色LED开发的奇迹"
 description: "现代照明和显示器不可或缺的LED发光原理，以及荣获诺贝尔奖的蓝色LED开发历史。"
 slug: "physics-led-mechanism"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T02:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

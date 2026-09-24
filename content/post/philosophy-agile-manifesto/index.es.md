@@ -1,6 +1,5 @@
 ---
 title: "[El lado oculto del Manifiesto Ágil] La trayectoria de la revolución que sentó las bases del desarrollo de software moderno"
-date: "2026-09-24T16:08:36+09:00"
 description: "En 2001, 17 ingenieros reunidos en Snowbird, Utah, redactaron el \"Manifiesto para el Desarrollo Ágil de Software\". En este artículo, profundizaremos en el contexto histórico que llevó a la creación de este manifiesto, la sensación de crisis de la época, y la filosofía y esencia que las organizaciones de desarrollo modernas realmente deberían aprender de Agile."
 slug: "philosophy-agile-manifesto"
 categories: ["philosophy"]

@@ -2,7 +2,7 @@
 title: "Механизм рендеринга браузера: полный разбор от DOM-дерева до Paint"
 description: "Мы полностью разберем механизм движка рендеринга (Blink, WebKit и др.), начиная с загрузки HTML/CSS/JS браузером и заканчивая отрисовкой пикселей на экране."
 slug: "browser-rendering-mechanism-dom-paint"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T17:10:00+09:00
 image: eyecatch.jpg
 categories:
   - "web-development"

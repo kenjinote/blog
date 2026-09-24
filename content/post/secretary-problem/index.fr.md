@@ -2,7 +2,7 @@
 title: "Le problème du secrétaire / Problème d'arrêt optimal - La 'Loi de 1/e' pour recruter la meilleure personne"
 description: "Qu'est-ce que le problème du secrétaire ? À travers cet exemple classique du problème d'arrêt optimal, nous expliquons en détail la 'loi de 1/e (règle des 37%)', une approche mathématique pour faire les meilleurs choix en situation d'incertitude."
 slug: "secretary-problem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:20:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "algorithms", "decision-making"]
 tags:

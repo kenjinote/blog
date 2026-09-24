@@ -1,7 +1,7 @@
 ---
 title: 'एलिप्टिक कर्व क्रिप्टोग्राफी (ECC) का गणितीय आधार और C++ में इसका कार्यान्वयन'
 slug: "elliptic-curve-cryptography-math-cpp"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T10:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

@@ -2,7 +2,7 @@
 title: "Maravillas de la física: Cancelación de ruido - Cancelando sonido con sonido mediante interferencia de ondas"
 description: "La 'cancelación de ruido' permite que el ruido del entorno desaparezca con solo ponerse unos auriculares. Explicamos en profundidad el principio físico de la 'interferencia de ondas' detrás de esto y su historia tecnológica."
 slug: "physics-noise-cancelling"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

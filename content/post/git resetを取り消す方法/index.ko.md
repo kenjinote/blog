@@ -8,7 +8,7 @@
 
 title: '실수로 실행한 git reset을 취소하는 방법｜커밋 복원 절차'
 slug: "git resetを取り消す方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-05-15T23:32:43+09:00
 tags: ["git", "복원", "취소"]
 draft: false
 image: "img.webp"

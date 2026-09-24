@@ -2,7 +2,7 @@
 title: "Gottfried Leibniz: Das Leben und die mathematischen Errungenschaften eines Universalgenies"
 description: "Ein tiefer Einblick in das Leben, die Episoden und die mathematischen Errungenschaften, wie die Infinitesimalrechnung und das Binärsystem, von Gottfried Wilhelm Leibniz, einem der größten Denker des 17. Jahrhunderts."
 slug: "leibniz"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematik", "Biografie"]
 tags: ["Leibniz", "Infinitesimalrechnung", "Binärsystem", "Philosophie", "Geschichte der Mathematik"]

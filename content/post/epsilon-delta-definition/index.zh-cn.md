@@ -2,7 +2,7 @@
 title: "ε-δ（Epsilon-Delta）论法：极限的严格定义，以及为什么“无限趋近”的说法不够"
 description: "深入解析作为微积分基础的ε-δ论法，从历史背景到具体证明方法，并结合直观的游戏比喻，详细讲解为什么直观的极限定义会失效。"
 slug: "epsilon-delta-definition"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "mathematics"

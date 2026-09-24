@@ -1,7 +1,7 @@
 ---
 title: 'L''histoire secrète du développement de l''outil low-code « LogicPad » : Pourquoi l''ai-je créé ?'
 slug: "LogicPad 開発秘話"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "Développement", "Histoire secrète"]
 draft: false
 image: "img.webp"

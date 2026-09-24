@@ -2,7 +2,7 @@
 title: "Kunihiko Kodaira: Peraih Medali Fields Pertama Jepang dan Simfoni Geometrinya"
 description: "Menjelajahi kehidupan dan karya matematikawan Kunihiko Kodaira, peraih Medali Fields pertama Jepang, dari integral harmonik hingga teori manifold kompleks."
 slug: "kodaira-kunihiko"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
 categories: ["matematika", "biografi"]
 tags: ["Kunihiko Kodaira", "Medali Fields", "Geometri Kompleks"]

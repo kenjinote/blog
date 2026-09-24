@@ -2,7 +2,7 @@
 title: "The Wonder of Physics: Noise Cancelling - Cancelling Sound with Sound via Wave Interference"
 description: "The 'noise cancelling' feature that makes ambient noise disappear the moment you put on your earphones. This article deeply explains the underlying physics principle of 'wave interference' and its technological history."
 slug: "physics-noise-cancelling"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

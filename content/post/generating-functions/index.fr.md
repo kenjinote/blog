@@ -2,7 +2,7 @@
 title: "Fonctions génératrices : Quel est l'avantage de transformer une suite en fonction ?"
 description: "Introduction au calcul des combinaisons de paiement avec des pièces et aux arrangements en tant que coefficients d'une équation. Explication de la magie des fonctions génératrices, y compris leur application à la suite de Fibonacci."
 slug: "generating-functions"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathématiques"

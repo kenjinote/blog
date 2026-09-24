@@ -1,7 +1,7 @@
 ---
 title: 'كيفية إنشاء ملف .gitignore للمشاريع بسهولة باستخدام أمر dotnet'
 slug: "dotnetأمرで.gitignoreを生成する"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-13T00:25:12+09:00
 tags: ["dotnet","git"]
 draft: false
 image: "img_1.webp"

@@ -2,7 +2,7 @@
 title: "How fusion power works: turning the reaction that powers stars into usable electricity"
 description: "From deuterium–tritium reactions and plasma confinement to tokamaks, stellarators, laser fusion, energy gain, fuel breeding, materials, and power systems: fusion science and engineering explained with diagrams and calculations."
 slug: "how-fusion-power-works"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-24T10:00:00+09:00"
 image: "eyecatch.png"
 categories: ["technology", "physics"]
 tags: ["nuclear-fusion", "energy", "plasma", "engineering", "history"]

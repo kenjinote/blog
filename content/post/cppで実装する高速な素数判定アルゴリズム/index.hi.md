@@ -1,7 +1,7 @@
 ---
 title: 'C++ में लागू तेज़ अभाज्य संख्या परीक्षण एल्गोरिदम (मिलर-राबिन आदि)'
 slug: "cpp-fast-prime-testing-miller-rabin"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T14:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

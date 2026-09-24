@@ -2,7 +2,7 @@
 title: "Computadores de próxima geração: O mecanismo do computador quântico - O mundo virado de cabeça para baixo pela superposição de '0' e '1'"
 description: "Diz-se que o 'computador quântico' resolve em segundos cálculos que levariam dezenas de milhares de anos em um supercomputador. Explicamos o paradigma de computação totalmente novo utilizando os misteriosos fenômenos da mecânica quântica, 'superposição' e 'emaranhamento'."
 slug: "technology-quantum-computer"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

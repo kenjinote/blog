@@ -1,6 +1,6 @@
 ---
 title: "汽车大王亨利·福特：大众消费社会的开端与“福特生产方式”的革新"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T20:59:56+09:00"
 categories: ["biography"]
 tags: ["henry-ford", "history"]
 image: "eyecatch.jpg"

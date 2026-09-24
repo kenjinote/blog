@@ -4,7 +4,7 @@
 
 title: 'dotnet 명령을 사용하여 프로젝트용 .gitignore를 쉽게 생성하는 방법'
 slug: "dotnet명령어で.gitignoreを生成する"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-13T00:25:12+09:00
 tags: ["dotnet","git"]
 draft: false
 image: "img_1.webp"

@@ -1,7 +1,7 @@
 ---
 title: '在paint.net中为图片添加边框的简单方法与步骤'
 slug: "paint.netを使って图像に边框线をつける方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-04-11T14:31:59+09:00
 tags: ["paint.net", "边框", "图片"]
 draft: false
 image: "img_3.webp"

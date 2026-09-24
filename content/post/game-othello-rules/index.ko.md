@@ -2,7 +2,7 @@
 title: "보드게임 전략: 오셀로의 기본 규칙과 필승 패턴 - 모서리를 차지하기 위한 치밀한 전술"
 description: "'배우는 데는 1분, 마스터하는 데는 평생'이라고 불리는 오셀로(리버시). 무작정 뒤집는 것이 아니라, 초보자에서 벗어나기 위한 '확정석'과 '개방도 이론'을 해설합니다."
 slug: "game-othello-rules"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

@@ -2,7 +2,7 @@
 title: 'Transformations Affines et Projectives : La Fusion de l''Algèbre Linéaire et de la Géométrie derrière la 3D et la Perspective'
 description: 'Une explication détaillée des fondements mathématiques des transformations affines et projectives, de leur expression en utilisant les coordonnées homogènes et de leurs applications en infographie et traitement d''images.'
 slug: 'affine-and-projective-transformations'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-20T15:15:00+09:00'
 image: "eyecatch.jpg"
 categories:
   - 'mathematics'

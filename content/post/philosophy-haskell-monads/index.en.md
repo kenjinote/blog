@@ -1,6 +1,5 @@
 ---
 title: "The Philosophy of Haskell and Pure Functional Languages: The World of Monads and Its Abyss"
-date: "2026-09-24T16:08:36+09:00"
 description: "A complete guide that thoroughly explores everything from the philosophy of the pure functional language Haskell to the true nature of the notoriously difficult \"Monad\". We explain the isolation of side effects, Functors, Applicatives, and the beauty of the abstract world woven by Monads."
 slug: "philosophy-haskell-monads"
 categories: ["philosophy"]

@@ -2,7 +2,7 @@
 title: "Bernhard Riemann: La vida y los logros del genio que abrió la puerta a las matemáticas modernas"
 description: "Profundice en la turbulenta vida de Bernhard Riemann y sus logros matemáticos, como la Hipótesis de Riemann y la geometría riemanniana, que han influido enormemente en las matemáticas y la física modernas."
 slug: "riemann"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matemáticas"

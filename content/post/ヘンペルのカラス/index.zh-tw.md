@@ -1,7 +1,7 @@
 ---
 title: "看到青蘋果能證明「烏鴉是黑的」？：亨佩爾的烏鴉"
 description: "我們能不看任何烏鴉就證明「烏鴉是黑的」這個假說嗎？邏輯等價性所產生的歸納法悖論。"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "hempels-ravens"
 image: "img/hempels_ravens.jpg"

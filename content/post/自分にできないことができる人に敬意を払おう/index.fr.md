@@ -1,7 +1,7 @@
 ---
 title: 'Faites preuve de respect envers ceux qui peuvent faire ce que vous ne pouvez pas | État d''esprit pour supprimer la supériorité au travail'
 slug: "自分にできないことができる人に敬意を払おう"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-08-01T23:42:31+09:00
 tags: ["Poème", "Pensées"]
 draft: false
 image: "img.webp"

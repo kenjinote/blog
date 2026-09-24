@@ -2,7 +2,7 @@
 title: "O Pequeno Teorema de Fermat: A Natureza dos Números Primos e a Base da Criptografia Moderna (RSA)"
 description: "Uma explicação detalhada do Pequeno Teorema de Fermat, desde uma compreensão intuitiva até sua prova matemática e sua aplicação prática na criptografia RSA."
 slug: "fermats-little-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
 categories:
   - "Matemática"

@@ -2,7 +2,7 @@
 title: "四色问题（Four Color Theorem） - 任何地图都能用4种颜色着色吗"
 description: "详细解说数学界难题四色问题的历史、证明方法以及计算机辅助证明的意义。"
 slug: "four-color-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "computer-science"]
 tags: ["四色定理", "图论", "计算机辅助证明", "拓扑学"]

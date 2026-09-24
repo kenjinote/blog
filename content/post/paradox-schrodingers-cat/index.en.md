@@ -1,6 +1,5 @@
 ---
 title: "The Extreme North of Quantum Mechanics: The Paradox of Reality Posed by Schrödinger's Cat"
-date: "2026-09-24T16:08:36+09:00"
 description: "What is \"Schrödinger's Cat\"? A thorough explanation of the core of \"superposition\" and the \"measurement problem\" in quantum mechanics, from historical background to the many-worlds interpretation."
 slug: "paradox-schrodingers-cat"
 categories: ["science"]

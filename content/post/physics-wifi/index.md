@@ -2,7 +2,7 @@
 title: "物理の不思議: Wi-Fiの仕組み - 見えない電波でデータが飛ぶ原理"
 description: "スマホやPCをインターネットに繋ぐWi-Fi。目に見えない電波が、どのようにして膨大なデジタルデータを正確かつ高速に運んでいるのか、物理と通信工学の視点から解説します。"
 slug: "physics-wifi"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

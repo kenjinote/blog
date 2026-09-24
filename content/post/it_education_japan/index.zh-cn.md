@@ -1,7 +1,7 @@
 ---
 title: '日本IT教育的现状与挑战：编程必修化之后'
 slug: "japan-it-education-aftermath"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

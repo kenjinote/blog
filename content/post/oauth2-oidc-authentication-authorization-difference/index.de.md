@@ -2,7 +2,7 @@
 title: "Eine vollständige Anatomie von OAuth 2.0 und OIDC (OpenID Connect) (Unterschied zwischen Autorisierung und Authentifizierung)"
 description: "Eine gründliche Erklärung der Mechanismen von OAuth 2.0 und OIDC, der Unterschiede zwischen Authentifizierung und Autorisierung sowie der verschiedenen Grant-Typen."
 slug: "oauth2-oidc-authentication-authorization-difference"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

@@ -1,6 +1,6 @@
 ---
 title: "J.R.R. Tolkien: Der Weg des Vaters der modernen Fantasy und die Erschaffung von Mythen"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T20:51:46+09:00"
 categories: ["biography"]
 tags: ["j-r-r-tolkien", "history"]
 image: "eyecatch.jpg"

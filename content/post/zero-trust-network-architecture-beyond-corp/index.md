@@ -2,7 +2,7 @@
 title: "ゼロトラスト・ネットワークアーキテクチャ（境界防御からの脱却）"
 description: "GoogleのBeyondCorpから学ぶ、ゼロトラストアーキテクチャの概念と実装方法。"
 slug: "zero-trust-network-architecture-beyond-corp"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

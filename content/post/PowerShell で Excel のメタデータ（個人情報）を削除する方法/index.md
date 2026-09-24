@@ -1,7 +1,7 @@
 ---
 title: 'PowerShellでExcelやWordのメタデータ(個人情報)を一括削除する方法'
 slug: "PowerShell で Excel のメタデータ（個人情報）を削除する方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-07-30T02:42:40+09:00
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "メタデータ", "個人情報"]
 draft: false
 image: "powershell_metadata_eyecatch_1788588033601.webp"

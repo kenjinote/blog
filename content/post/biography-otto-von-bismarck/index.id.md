@@ -1,6 +1,6 @@
 ---
 title: "Kanselir Besi Otto von Bismarck: Arsitek Penyatuan Jerman dan Realpolitiknya"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["otto-von-bismarck", "history"]
 image: "eyecatch.jpg"

@@ -1,7 +1,7 @@
 ---
 title: 'كيفية استخدام "أداة القطع" (Snipping Tool) المدمجة في Windows لتسجيل والتقاط الشاشة'
 slug: "Snipping Toolの使い方"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "صورة", "فيديو", "لقطة شاشة", "تسجيل", "التقاط"]
 draft: false
 image: "img.webp"

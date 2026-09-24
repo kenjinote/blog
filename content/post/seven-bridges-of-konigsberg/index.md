@@ -2,7 +2,7 @@
 title: "ケーニヒスベルクの七つの橋 - グラフ理論とトポロジーの起源"
 description: "18世紀の数学者レオンハルト・オイラーによって解決された「ケーニヒスベルクの七つの橋」問題。この問題がどのようにしてグラフ理論やトポロジーといった現代数学の新しい分野を切り拓いたのか、その歴史と数学的背景を深く掘り下げます。"
 slug: "seven-bridges-of-konigsberg"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "history"]
 tags: ["Graph Theory", "Topology", "Euler", "Mathematics"]

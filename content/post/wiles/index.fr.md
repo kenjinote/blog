@@ -2,7 +2,7 @@
 title: "Andrew Wiles : Le mathématicien solitaire qui a prouvé le dernier théorème de Fermat"
 description: "Découvrez la vie et les réalisations mathématiques d'Andrew Wiles, qui a établi une étape historique en mathématiques en prouvant le dernier théorème de Fermat."
 slug: "wiles"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathématiques", "biographie"]
 tags: ["Andrew Wiles", "Fermat", "Théorie des nombres"]

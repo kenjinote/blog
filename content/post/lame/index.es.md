@@ -2,7 +2,7 @@
 title: "Gabriel Lamé: Un gigante que tendió un puente entre las matemáticas puras y aplicadas"
 description: "Una inmersión profunda en la vida del matemático francés Gabriel Lamé y sus numerosos logros, incluyendo la curva de Lamé y el teorema de Lamé en el algoritmo de Euclides."
 slug: "lame"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Matemáticas", "Biografía"]
 tags: ["Gabriel Lamé", "Historia de las matemáticas", "Teoría de números", "Elasticidad", "Geometría"]

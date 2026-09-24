@@ -1,6 +1,6 @@
 ---
 title: "[전기] 찰리 채플린: 웃음과 눈물로 세상을 엮은 '희극의 왕'의 생애와 철학"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["charles-chaplin", "history"]
 image: "eyecatch.jpg"

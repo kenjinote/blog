@@ -2,7 +2,7 @@
 title: "Diophantus: Der Vater der Algebra und sein großes Vermächtnis"
 description: "Eine detaillierte Erklärung des Lebens des antiken griechischen Mathematikers Diophantus, seines Meisterwerks 'Arithmetica', diophantischer Gleichungen und des in seinem Epitaph verborgenen Geheimnisses."
 slug: "diophantus"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T18:40:00+09:00
 image: "eyecatch.jpg"
 categories:
   - "Mathematik"

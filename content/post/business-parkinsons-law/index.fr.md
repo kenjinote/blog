@@ -1,6 +1,5 @@
 ---
 title: "Qu'est-ce que la loi de Parkinson ? Une explication complète, des mécanismes d'expansion du travail et du temps jusqu'aux moyens de les surmonter"
-date: "2026-09-24T16:08:36+09:00"
 description: "Nous approfondissons en détail la loi de Parkinson selon laquelle \"le travail s'étale de façon à occuper le temps disponible pour son achèvement\", de son contexte historique et ses mécanismes psychologiques jusqu'aux solutions concrètes dans les affaires et le quotidien. Un guide complet pour la gestion du temps et l'amélioration de la productivité."
 slug: "business-parkinsons-law"
 categories: ["business"]

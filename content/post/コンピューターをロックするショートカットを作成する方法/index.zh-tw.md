@@ -1,7 +1,7 @@
 ---
 title: '1秒鎖定 Windows 電腦！實用捷徑的建立方法與用法'
 slug: "鎖定電腦する捷徑を作成する方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "鎖定電腦", "捷徑"]
 draft: false
 image: "img.webp"

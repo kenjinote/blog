@@ -1,7 +1,7 @@
 ---
 title: "Masalah Jenderal Bizantium: Bagaimana Mencapai Kesepakatan di Jaringan yang Memiliki Pengkhianat?"
 image: "eyecatch.jpg"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T00:00:00+09:00
 description: "Tentang tantangan perwakilan dalam sistem terdistribusi, 'Masalah Jenderal Bizantium', artikel ini menjelaskan secara komprehensif mulai dari konsep, pembuktian matematis, hingga aplikasi pada blockchain beserta contoh konkret dan ilustrasi visual."
 categories: ["technical-explanation", "distributed-systems"]
 tags: ["Masalah Jenderal Bizantium", "Blockchain", "Konsensus", "Algoritma"]

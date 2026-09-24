@@ -2,7 +2,7 @@
 title: "B木とデータベースインデックスの理論（なぜDBはB-Treeを選ぶのか？）"
 description: "データベースにおけるインデックスの根幹をなすB木（B-Tree）とB+木（B+Tree）の理論、データ構造、ディスクI/Oとの関係性、そしてなぜRDBMSがB木をインデックスの標準として採用し続けるのかについて、数学的解析と実装例を交えて深く掘り下げます。"
 slug: "b-tree-database-index-theory"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:45:54+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science", "database"]
 tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]

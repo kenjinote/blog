@@ -2,7 +2,7 @@
 title: "Isaac Newton: Acercándonos a la vida del genio a través del descubrimiento del cálculo y la gravitación universal"
 description: "Una inmersión profunda en la extraordinaria vida de Isaac Newton, los episodios durante el Año de las Maravillas y sus descubrimientos revolucionarios en matemáticas y física."
 slug: "newton"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemáticas"

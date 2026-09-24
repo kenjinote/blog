@@ -2,7 +2,7 @@
 title: "핵융합 발전의 원리: 별의 에너지를 전기로 바꾸기까지"
 description: "중수소와 삼중수소의 반응부터 플라스마 가둠, 토카막과 스텔러레이터, 레이저 핵융합, 에너지 이득, 연료 증식과 재료 문제까지 그림과 계산으로 살펴봅니다."
 slug: "how-fusion-power-works"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-24T10:00:00+09:00"
 image: "eyecatch.png"
 categories: ["technology", "physics"]
 tags: ["nuclear-fusion", "energy", "plasma", "engineering", "history"]

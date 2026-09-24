@@ -2,7 +2,7 @@
 title: "PWA (Progressive Web Apps) की संभावनाएँ और कार्यान्वयन (Service Worker की शक्ति)"
 description: "PWA के समग्र दृष्टिकोण से लेकर Service Worker के जीवनचक्र, ऑफ़लाइन कैशिंग और Push सूचनाओं तक का स्पष्टीकरण।"
 slug: "pwa-progressive-web-apps-service-worker"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

@@ -2,7 +2,7 @@
 title: '突击测验悖论：逻辑上“绝对不可能”进行测验的日子'
 slug: 'unexpected-hanging-paradox'
 description: '“下周，从周一到周五的某一天，将对你们进行一次无法预测的突击测验”——面对老师的这一宣言，学生们证明了“逻辑上突击测验是不可能的”。但是……'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T10:00:00+09:00'
 image: 'img/unexpected_hanging.jpg'
 math: true
 mermaid: true

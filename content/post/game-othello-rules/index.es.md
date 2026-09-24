@@ -2,7 +2,7 @@
 title: "Estrategia de juego de mesa: Reglas básicas de Othello y patrones ganadores - Tácticas precisas para tomar las esquinas"
 description: "Othello (Reversi), también conocido como «un minuto para aprender, toda una vida para dominar». Te explicamos las «piedras estables» y la «teoría de la movilidad» para que los principiantes dejen de voltear al azar."
 slug: "game-othello-rules"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

@@ -1,6 +1,5 @@
 ---
 title: "Deep Blue vs Kasparov (O Choque de 1997): A História Completa da Partida Histórica entre a Humanidade e a IA"
-date: "2026-09-24T16:08:36+09:00"
 description: "O evento histórico de 1997 em que o campeão mundial de xadrez Garry Kasparov foi derrotado pelo supercomputador \"Deep Blue\" da IBM. Explicamos detalhadamente o seu contexto, o desenrolar das partidas e o seu impacto na tecnologia de IA."
 slug: "history-deep-blue-kasparov"
 categories: ["history"]

@@ -1,7 +1,7 @@
 ---
 title: 'Les mérites et démérites de l''anti-vaccin et les leçons de l''épidémiologie : Qu''est-ce que « l''illusion de causalité » révélée par la pandémie ?'
 slug: "反ワクチンの功罪"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-01-24T15:41:23+09:00
 tags: ["problèmes sociaux", "santé", "littératie informationnelle"]
 draft: false
 image: "img.webp"

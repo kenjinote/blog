@@ -2,7 +2,7 @@
 title: "Arquitetura de Micro Frontends (Método de Divisão para SPAs Crescentes)"
 description: "Padrões de implementação de micro frontends para dividir monólitos front-end complexos e aumentar a autonomia das equipes."
 slug: "micro-frontends-architecture-spa-division"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

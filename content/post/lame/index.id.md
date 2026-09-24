@@ -2,7 +2,7 @@
 title: "Gabriel Lamé: Raksasa yang Menjembatani Matematika Murni dan Terapan"
 description: "Penyelaman mendalam ke dalam kehidupan matematikawan Prancis Gabriel Lamé dan berbagai pencapaiannya, termasuk kurva Lamé dan Teorema Lamé dalam algoritma Euklides."
 slug: "lame"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Matematika", "Biografi"]
 tags: ["Gabriel Lamé", "Sejarah Matematika", "Teori Bilangan", "Elastisitas", "Geometri"]

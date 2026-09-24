@@ -2,7 +2,7 @@
 title: "行列式的几何意义：不仅仅是计算公式，更是“空间体积的缩放率”与“方向的反转”"
 description: "行列式不仅是一个计算公式，更是表示线性变换下空间体积缩放率和方向反转的重要几何指标。本文将通过丰富的图解和公式详细解释其直观意义。"
 slug: "geometric-meaning-of-determinant"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "mathematics"

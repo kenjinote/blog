@@ -1,7 +1,7 @@
 ---
 title: 'Cara Memuat dan Menampilkan Font Bahasa Jepang di Library GUI Rust ''egui'''
 slug: "eguiでBahasa Jepangを表示する方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-04-01T03:17:52+09:00
 tags: ["rust", "egui", "pustaka-GUI", "jepang"]
 draft: false
 image: "img.webp"

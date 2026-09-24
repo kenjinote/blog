@@ -2,7 +2,7 @@
 title: "ダフィット・ヒルベルト：現代数学の礎を築いた巨星とその壮大な軌跡"
 description: "19世紀から20世紀にかけての最も偉大な数学者の一人、ダフィット・ヒルベルトの生涯と、彼の数々の数学的業績について詳しく解説します。不変式論からヒルベルト空間まで、その軌跡を追います。"
 slug: "hilbert"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Hilbert", "History of Mathematics", "Geometry", "Functional Analysis", "Physics", "Number Theory"]

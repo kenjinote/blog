@@ -1,7 +1,7 @@
 ---
 title: 'Windows注册表基础知识与可编程的安全编辑方法'
 slug: "windows-registry-safe-programmable-editing"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

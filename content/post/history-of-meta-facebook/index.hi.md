@@ -2,7 +2,7 @@
 title: "मेटा (पूर्व में फेसबुक) का इतिहास: सोशल नेटवर्क के जन्म से लेकर मेटावर्स तक की चुनौती"
 description: "सोशल नेटवर्क साम्राज्य से मेटावर्स और एआई तक का सफर"
 slug: "history-of-meta-facebook"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T00:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -2,7 +2,7 @@
 title: '잠자는 숲속의 미녀 문제: 동전의 확률은 1/2인가 1/3인가? 확률론을 분열시킨 난제'
 slug: 'sleeping-beauty-paradox'
 description: '"당신이 깨어난 지금, 동전 던지기 결과가 앞면일 확률은?" 아주 단순한 설정임에도 불구하고, 전 세계의 수학자와 철학자가 "1/2파"와 "1/3파"로 나뉘어 지금도 논쟁을 계속하고 있는 최신 역설을 해설합니다.'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T09:00:00+09:00'
 image: 'img/sleeping_beauty.jpg'
 math: true
 mermaid: true

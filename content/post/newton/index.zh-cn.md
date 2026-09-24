@@ -2,7 +2,7 @@
 title: "艾萨克·牛顿：通过微积分与万有引力的发现走近天才的一生"
 description: "深入探究艾萨克·牛顿非凡的一生、奇迹之年的插曲，以及他在数学和物理学领域的开创性发现。"
 slug: "newton"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

@@ -2,7 +2,7 @@
 title: "CI/CDパイプラインとGitHub Actions：継続的インテグレーションのベストプラクティス"
 description: "ソフトウェア開発のライフサイクルを加速させるCI/CDの原則と、GitHub Actionsを用いた実践的なパイプライン構築のノウハウを網羅します。"
 slug: "cicd-pipeline-github-actions-best-practices"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T09:00:00+09:00
 image: eyecatch.jpg
 categories:
   - "devops"

@@ -2,7 +2,7 @@
 title: "Grup, Gelanggang, dan Lapangan: Pengantar Aljabar Modern"
 description: "Dalam matematika, aljabar berevolusi menjadi studi tentang struktur."
 slug: "groups-rings-and-fields"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["matematika"]
 tags: ["aljabar", "teori grup", "teori gelanggang", "teori lapangan"]

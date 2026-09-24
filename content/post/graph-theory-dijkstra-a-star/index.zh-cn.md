@@ -2,7 +2,7 @@
 title: "图论与Dijkstra算法・A*算法：路径搜索的数学基础与实现"
 description: "从图论基础开始，全面讲解最短路径问题中Dijkstra算法与A*算法的数学背景、数据结构以及Python实现。"
 slug: graph-theory-dijkstra-a-star
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T02:45:54+09:00
 image: eyecatch.jpg
 categories:
   - mathematics

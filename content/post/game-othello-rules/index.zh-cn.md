@@ -2,7 +2,7 @@
 title: "桌游策略：黑白棋的基本规则与必胜模式 - 直到夺角的精密战术"
 description: "被称为“一分钟学会，一生精通”的黑白棋（奥赛罗）。不仅是盲目地翻转，本文将解说帮助初学者脱颖而出的“确定石”与“开放度理论”。"
 slug: "game-othello-rules"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

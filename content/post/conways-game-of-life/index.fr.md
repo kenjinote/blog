@@ -2,7 +2,7 @@
 title: "Le jeu de la vie de Conway : Un automate cellulaire où la complexité de la vie émerge de règles simples"
 description: "Le \"Jeu de la vie de Conway\" est un automate cellulaire incroyable qui produit des comportements complexes semblables à ceux de la vie à partir de seulement quatre règles simples. Cet article explore en profondeur son contexte mathématique, ses règles détaillées, ses modèles célèbres et des exemples d'implémentation."
 slug: "conways-game-of-life"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-15T10:00:00+09:00
 image: "eyecatch.jpg"
 categories:
   - "Mathématiques"

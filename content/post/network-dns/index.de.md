@@ -2,7 +2,7 @@
 title: "Netzwerktechnologie: Wie DNS funktioniert - Das Telefonbuch des Internets, hinter den Kulissen der Namensauflösung"
 description: "Warum führt die einfache Eingabe von „www.google.com“ zum gewünschten Server? Dieser Artikel erklärt die hierarchische Struktur und den Prozess der Namensauflösung von „DNS“, der größten verteilten Datenbank des Internets."
 slug: "network-dns"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -2,7 +2,7 @@
 title: "Pierre de Fermat: \"Pangeran Amatir\" yang Menulis Romansa di Margin Buku"
 description: "Penjelasan mendalam tentang kehidupan dan pencapaian matematika yang luar biasa (Teorema Terakhir Fermat, Teorema Kecil, awal mula kalkulus, dll.) dari Pierre de Fermat, seorang hakim Prancis abad ke-17 yang meninggalkan jejak abadi dalam sejarah matematika."
 slug: "fermat"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
 categories: ["matematika", "biografi"]
 tags: ["Fermat", "Sejarah Matematika", "Teorema Terakhir Fermat", "Teori Bilangan", "Teori Peluang"]

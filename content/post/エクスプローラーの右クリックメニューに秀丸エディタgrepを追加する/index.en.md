@@ -1,7 +1,7 @@
 ---
 title: 'How to Add Hidemaru Editor''s grep to the Windows Right-Click Menu'
 slug: "ExplorerのRight-Click MenuにHidemaru Editorgrepを追加する"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-04-03T00:00:46+09:00
 tags: ["Hidemaru Editor", "Explorer", "Context Menu", "grep", "Registry"]
 draft: false
 image: "img.webp"

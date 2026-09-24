@@ -2,7 +2,7 @@
 title: "LLM（大型語言模型）的運作原理與程式設計應用（Transformer 模型、提示工程）"
 description: "深入解析作為大型語言模型（LLM）核心的 Transformer 架構的數學機制，到提示工程的高階手法，以及在實際程式設計上的應用。"
 slug: "large-language-models-llm-transformer-prompt-engineering"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T14:51:08+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["ai", "llm", "transformer", "prompt-engineering"]

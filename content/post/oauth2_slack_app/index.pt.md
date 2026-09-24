@@ -1,7 +1,7 @@
 ---
 title: 'Como funciona o OAuth 2.0: Um guia ilustrado de implementação de uma integração com o Slack App'
 slug: "oauth2-architecture-slack-app-integration"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-13T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

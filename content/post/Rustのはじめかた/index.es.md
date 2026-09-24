@@ -4,7 +4,7 @@
 
 title: 'Introducción al lenguaje Rust: Desde sus características y la instalación hasta Hola Mundo'
 slug: "Rustのはじめかた"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-06T00:12:36+09:00
 tags: ["Rust"]
 draft: false
 image: "images/rust_logo.webp"

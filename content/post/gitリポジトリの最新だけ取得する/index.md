@@ -1,7 +1,7 @@
 ---
 title: 'Git cloneでリポジトリの最新コミットだけを取得する方法'
 slug: "gitリポジトリの最新だけ取得する"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-04-27T02:54:12+09:00
 tags: ["git", "リポジトリ", "コマンド"]
 draft: false
 image: "img.webp"

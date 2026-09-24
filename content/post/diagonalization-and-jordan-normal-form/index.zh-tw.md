@@ -2,7 +2,7 @@
 title: "對角化與喬丹標準型：將複雜矩陣極致簡化的分類法"
 description: "詳細講解線性代數中的對角化以及無法對角化的矩陣的喬丹標準型，涵蓋其直觀含義、數學定義以及在物理和工程中的應用。"
 slug: "diagonalization-and-jordan-normal-form"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["linear-algebra", "matrix", "eigenvalue", "jordan-normal-form"]

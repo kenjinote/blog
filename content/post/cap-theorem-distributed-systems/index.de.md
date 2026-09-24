@@ -2,7 +2,7 @@
 title: "CAP-Theorem und verteilte Systeme: Das fundamentale Dilemma verteilter Datenbanken"
 description: "Ein tiefer Einblick in das CAP-Theorem, das wichtigste Prinzip verteilter Systeme, von seiner Definition und dem Beweis über die Erweiterung zum PACELC-Theorem bis hin zur Implementierung in echten verteilten Datenbanken."
 slug: "cap-theorem-distributed-systems"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T00:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "distributed-systems"

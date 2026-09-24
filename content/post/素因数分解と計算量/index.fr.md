@@ -1,7 +1,7 @@
 ---
 title: 'Limites de la factorisation en nombres premiers et explication de la notation Grand O (O)'
 slug: "prime-factorization-limits-big-o-notation"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T23:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

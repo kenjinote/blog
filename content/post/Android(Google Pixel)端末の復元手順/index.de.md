@@ -1,7 +1,7 @@
 ---
 title: '[Boot-Loop-Reparatur] Offizielle Schritte zur Wiederherstellung und Initialisierung der Software von Google Pixel-Geräten'
 slug: "Android(Google Pixel)端末のWiederherstellung手順"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-02-28T01:20:41+09:00
 tags: ["Android", "Google Pixel", "Wiederherstellung", "Fehlerbehebung"]
 draft: false
 image: "pixel_restore_eyecatch_1788588727945.webp"

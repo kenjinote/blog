@@ -2,7 +2,7 @@
 title: 'एफ़िन और प्रोजेक्टिव ट्रांसफॉर्मेशन: कंप्यूटर ग्राफिक्स और परिप्रेक्ष्य के पीछे रैखिक बीजगणित और ज्यामिति का विलय'
 description: 'एफ़िन (Affine) और प्रोजेक्टिव (Projective) परिवर्तनों की गणितीय नींव, समरूप निर्देशांक (Homogeneous Coordinates) का उपयोग करके उनकी अभिव्यक्ति, और कंप्यूटर ग्राफिक्स (CG) और छवि प्रसंस्करण (Image Processing) में उनके अनुप्रयोगों का विस्तृत विवरण।'
 slug: 'affine-and-projective-transformations'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-20T15:15:00+09:00'
 image: "eyecatch.jpg"
 categories:
   - 'mathematics'

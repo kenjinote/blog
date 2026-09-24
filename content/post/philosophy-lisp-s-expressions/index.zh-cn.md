@@ -1,6 +1,5 @@
 ---
 title: "Lisp与“神的语言”——S表达式之美与代码即数据的哲学"
-date: "2026-09-24T16:08:36+09:00"
 description: "编程语言Lisp为何被称为“神的语言”？本文是一篇深入探讨其核心中的S表达式之美、同像性（Homoiconicity）以及宏带来的元编程深渊的技术哲学散文。"
 slug: "philosophy-lisp-s-expressions"
 categories: ["philosophy"]

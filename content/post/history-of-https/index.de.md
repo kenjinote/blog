@@ -2,7 +2,7 @@
 title: "Netzwerktechnik: Technische Erklärung von HTTPS - Die Funktionsweise von Verschlüsselung und Public-Key-Infrastruktur (PKI)"
 description: "Dass wir sicher im Internet einkaufen können, verdanken wir „HTTPS“. Wir erklären die Verschlüsselungstechnologien, die Abhören und Manipulation verhindern, sowie die komplexen mathematischen Prozesse, die SSL/TLS im Hintergrund ausführt."
 slug: "history-of-https"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

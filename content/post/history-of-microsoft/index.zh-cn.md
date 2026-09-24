@@ -2,7 +2,7 @@
 title: "微软的历史：PC的黎明、Windows的霸权，以及向云和AI时代的适应"
 description: "从Windows到Azure，再到与OpenAI合作的微软历史"
 slug: "history-of-microsoft"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T00:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

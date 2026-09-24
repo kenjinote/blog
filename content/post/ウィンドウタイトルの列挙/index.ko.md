@@ -6,7 +6,7 @@
 
 title: 'PowerShell에서 현재 열려 있는 창 제목을 나열하고 가져오는 방법'
 slug: "윈도우タイトルの列挙"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-20T17:03:15+09:00
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"

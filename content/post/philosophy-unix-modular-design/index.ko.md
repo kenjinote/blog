@@ -1,6 +1,5 @@
 ---
 title: "Unix 철학 (모듈식 설계의 진수): 단일 책임과 파이프가 엮어내는 소프트웨어의 예술"
-date: "2026-09-24T16:08:36+09:00"
 description: "Unix 철학의 근간에 있는 \"모듈식 설계\"의 진수를 깊이 파고듭니다. 한 가지 일을 잘 수행하는 프로그램, 텍스트 스트림을 통한 연계 등 현대 소프트웨어 엔지니어링에도 통하는 불후의 원칙을 철저히 해설합니다."
 slug: "philosophy-unix-modular-design"
 categories: ["philosophy"]

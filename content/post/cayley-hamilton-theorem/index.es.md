@@ -2,7 +2,7 @@
 title: "Teorema de Cayley-Hamilton: La asombrosa propiedad de una matriz que satisface su propia 'ecuación característica'"
 description: "Una explicación detallada del teorema de Cayley-Hamilton, uno de los resultados más sorprendentes del álgebra lineal, desde su significado intuitivo hasta su demostración y aplicaciones."
 slug: "cayley-hamilton-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T14:50:00+09:00
 image: "eyecatch.jpg"
 categories:
   - "matemáticas"

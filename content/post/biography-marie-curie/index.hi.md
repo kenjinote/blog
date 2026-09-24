@@ -1,6 +1,6 @@
 ---
 title: "जुनून और रेडियोधर्मिता: मैरी क्यूरी का जीवन और वैज्ञानिक समर्पण"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["marie-curie", "history"]
 image: "eyecatch.jpg"

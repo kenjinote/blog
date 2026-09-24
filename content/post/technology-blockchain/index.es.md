@@ -2,7 +2,7 @@
 title: "Finanzas y Criptografía: Explicación Técnica de Blockchain - La Tecnología de Libro Mayor Distribuido que Creó Bitcoin"
 description: "La magia de 'emitir y enviar dinero sin un administrador'. Desentrañamos los mecanismos de las funciones hash, PoW (Prueba de Trabajo) y los libros mayores distribuidos, que son la base de la blockchain creada por Satoshi Nakamoto."
 slug: "technology-blockchain"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

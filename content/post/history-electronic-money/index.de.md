@@ -2,7 +2,7 @@
 title: "Finanzen & Kryptographie: Die Geschichte des elektronischen Geldes - Digitalisierung der Währung und Evolution der Kryptographie"
 description: "Wie 'physische Münzen und Geldscheine' durch 'digitale Daten' ersetzt wurden. Wir verfolgen die Entwicklung des elektronischen Geldes von David Chaums frühen Experimenten über die Erfindung von Suica bis hin zu Krypto-Assets."
 slug: "history-electronic-money"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

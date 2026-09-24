@@ -2,7 +2,7 @@
 title: "물리학의 신비: 노이즈 캔슬링 - 소리로 소리를 지우는 파동의 간섭"
 description: "이어폰을 끼기만 해도 주변 소음이 사라지는 '노이즈 캔슬링'. 그 이면에 있는 물리학 '파동의 간섭' 원리와 기술적 역사를 깊이 있게 해설합니다."
 slug: "physics-noise-cancelling"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

@@ -1,7 +1,7 @@
 ---
 title: 'Ein Muss für Retro-Gamer! 11 empfohlene Meisterwerke für den ersten Game Boy und SNES'
 slug: "好きなSpiel11選"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-12T19:28:50+09:00
 tags: ["Spiele"]
 draft: false
 image: "img_12.webp"

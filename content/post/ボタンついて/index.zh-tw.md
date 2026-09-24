@@ -1,7 +1,7 @@
 ---
 title: '在Windows API中建立按鈕（GUI控制項）與實作事件處理的方法'
 slug: "按鈕ついて"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-01-14T20:24:00+09:00
 tags: ["按鈕", "GUI"]
 draft: false
 image: "img.webp"

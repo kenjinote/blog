@@ -2,7 +2,7 @@
 title: "選択公理とツォルンの補題 - 数学の基礎を揺るがした「選択」の概念"
 description: "選択公理とツォルンの補題について、その直感的な意味から数学的定式化、そして現代数学における重要性までを深く掘り下げます。"
 slug: "axiom-of-choice-and-zorns-lemma"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:20:37+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "set-theory"]
 tags: ["選択公理", "ツォルンの補題", "ZFC公理系", "数学基礎論", "Mermaid", "KaTeX"]

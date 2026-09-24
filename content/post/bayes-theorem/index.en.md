@@ -2,7 +2,7 @@
 title: "Bayes' Theorem: Updating Probability with \"New Evidence\", the Core of AI and Statistics"
 description: "An in-depth explanation of how Bayes' Theorem updates probabilities based on new evidence, its mathematical background, and its applications in AI and machine learning."
 slug: "bayes-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematics"

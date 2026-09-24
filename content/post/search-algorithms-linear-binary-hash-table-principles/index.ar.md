@@ -2,7 +2,7 @@
 title: "خوارزميات البحث (مبادئ البحث الخطي، البحث الثنائي، وجداول التجزئة)"
 description: "خوارزميات البحث للعثور على القيمة المستهدفة من البيانات. نشرح الأساسيات من البحث الخطي والبحث الثنائي إلى مبدأ جداول التجزئة التي تحقق بحثًا عالي السرعة."
 slug: "search-algorithms-linear-binary-hash-table-principles"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-22T02:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "search", "binary-search", "hash-table", "data-structures"]

@@ -1,6 +1,5 @@
 ---
 title: "Lispと「神の言語」――S式の美しさとコード・アズ・データの哲学"
-date: "2026-09-24T16:08:36+09:00"
 description: "プログラミング言語Lispがなぜ「神の言語」と呼ばれるのか。その中核にあるS式の美しさ、同図像性（Homoiconicity）、マクロによるメタプログラミングの深淵について、徹底的に考察する技術哲学エッセイ。"
 slug: "philosophy-lisp-s-expressions"
 categories: ["philosophy"]

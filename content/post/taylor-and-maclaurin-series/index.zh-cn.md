@@ -2,7 +2,7 @@
 title: "泰勒展开与麦克劳林展开：用多项式近似复杂函数的魔法"
 description: "详细讲解微积分的秘诀——泰勒展开和麦克劳林展开，从直观含义到数学推导，再到编程和物理学中的应用。"
 slug: "taylor-and-maclaurin-series"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

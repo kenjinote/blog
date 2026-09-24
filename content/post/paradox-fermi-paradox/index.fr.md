@@ -1,6 +1,5 @@
 ---
 title: "Le paradoxe de Fermi : dans un univers infini, pourquoi ne les rencontrons-nous pas ?"
-date: "2026-09-24T16:08:36+09:00"
 description: "« Où sont les extraterrestres ? » — Le « paradoxe de Fermi », qui a commencé avec une question anodine du physicien Enrico Fermi. Une explication ultra-détaillée qui approfondit diverses hypothèses expliquant le silence de l'univers, telles que l'équation de Drake, la théorie du grand filtre et l'hypothèse de la forêt sombre, et s'approche de la signification de l'existence de l'humanité et de son avenir."
 slug: "paradox-fermi-paradox"
 categories: ["science"]

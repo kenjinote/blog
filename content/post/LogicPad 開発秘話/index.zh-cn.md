@@ -1,7 +1,7 @@
 ---
 title: '低代码工具“LogicPad”开发秘闻：为什么要开发它？'
 slug: "LogicPad 開発秘話"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "开发", "秘辛"]
 draft: false
 image: "img.webp"

@@ -2,7 +2,7 @@
 title: "Dekomposisi Nilai Singular (SVD): Menguraikan Matriks Apa Pun Menjadi Rotasi dan Penskalaan untuk Kompresi Data dan AI"
 description: "Panduan komprehensif tentang dasar matematika, intuisi geometris, dan aplikasi Dekomposisi Nilai Singular (SVD) dalam kompresi gambar dan NLP."
 slug: "singular-value-decomposition"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Matematika"]
 tags: ["SVD", "Aljabar Linear", "Machine Learning", "Kompresi Data", "AI", "Python"]

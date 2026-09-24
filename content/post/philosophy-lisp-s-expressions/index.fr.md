@@ -1,6 +1,5 @@
 ---
 title: "Lisp et le \"langage des dieux\" ―― La beauté des expressions S et la philosophie du Code as Data"
-date: "2026-09-24T16:08:36+09:00"
 description: "Pourquoi le langage de programmation Lisp est-il parfois appelé le \"langage des dieux\" ? Un essai philosophique et technique explorant en profondeur la beauté des expressions S en son cœur, l'homoiconicité (Homoiconicity) et les abysses de la métaprogrammation par les macros."
 slug: "philosophy-lisp-s-expressions"
 categories: ["philosophy"]

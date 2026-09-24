@@ -2,7 +2,7 @@
 title: "Jaringan Keuangan: Cara Kerja Pembayaran Kartu Kredit - Teknologi dari Otorisasi hingga Kliring"
 description: "Apa saja komunikasi data yang terjadi di balik layar saat kartu digesek di toko? Kami akan menjelaskan mekanisme 'otorisasi' dan 'kliring' yang mendukung jaringan pembayaran skala global."
 slug: "technology-credit-card"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

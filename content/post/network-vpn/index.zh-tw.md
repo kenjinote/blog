@@ -2,7 +2,7 @@
 title: "虛擬的專線：VPN 的運作原理 - 網際網路上的安全隧道"
 description: "遠距工作不可或缺的 VPN（虛擬私人網路）。本文將解說透過加密與封裝，在任何人都能窺探的網際網路上建立「專屬安全隧道」的機制。"
 slug: "network-vpn"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

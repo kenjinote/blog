@@ -1,7 +1,7 @@
 ---
 title: '誤って実行したgit resetを取り消す方法｜コミット復元手順'
 slug: "git resetを取り消す方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-05-15T23:32:43+09:00
 tags: ["git", "復元", "取り消し"]
 draft: false
 image: "img.webp"

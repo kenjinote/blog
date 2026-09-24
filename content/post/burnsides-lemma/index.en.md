@@ -2,7 +2,7 @@
 title: "Burnside's Lemma: How to Count Patterns When Rotations Matter?"
 description: "Explaining how to eliminate duplicate patterns caused by rotations, using necklace coloring as an example. A practical introduction to group theory."
 slug: "burnsides-lemma"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "mathematics"

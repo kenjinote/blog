@@ -1,6 +1,6 @@
 ---
 title: "钢铁大王安德鲁·卡内基：财富与慈善悖论的化身"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["andrew-carnegie", "history"]
 image: "eyecatch.jpg"

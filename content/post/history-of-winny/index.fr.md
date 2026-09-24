@@ -2,7 +2,7 @@
 title: "Comprendre Winny : recherche, cache, relais et limites de l’anonymat"
 description: "Une explication du réseau P2P de Winny, de ses métadonnées à sa hiérarchie et à ses caches, avec des exemples chiffrés et une mise au point sur les fuites de données et le procès du développeur."
 slug: "history-of-winny"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["technology", "computer-science"]
 tags: ["p2p", "network", "winny", "history"]

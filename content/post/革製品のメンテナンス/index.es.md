@@ -9,7 +9,7 @@
 
 title: 'Para principiantes: Suministros y cuidados de mantenimiento recomendados para artículos de cuero'
 slug: "Productos de cueroのメンテナンス"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-10-30T00:31:46+09:00
 tags: ["Productos de cuero", "Pasatiempos"]
 draft: fales
 image: "img.webp"

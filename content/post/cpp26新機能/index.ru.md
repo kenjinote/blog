@@ -1,7 +1,7 @@
 ---
 title: '【Версия 2026 года】Основные новые возможности C++26 и их практическое применение'
 slug: 'cpp26-new-features-practical-guide'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-12T02:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true

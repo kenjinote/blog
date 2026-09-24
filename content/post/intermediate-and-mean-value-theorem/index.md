@@ -2,7 +2,7 @@
 title: "中間値の定理と平均値の定理：連続関数と微分の直感的な性質から導かれる強力な証明ツール"
 description: "微積分学の基礎を支える「中間値の定理」と「平均値の定理」について、その直感的な意味から厳密な数学的証明、そして応用例までを深く掘り下げて解説します。"
 slug: "intermediate-and-mean-value-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["微積分", "定理", "数学の証明"]

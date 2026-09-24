@@ -6,7 +6,7 @@
 
 title: '작업이나 공부에 집중할 수 있는! 추천하는 세련된 카페 음악 및 BGM 모음'
 slug: "카페음악"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-08T08:39:03+09:00
 tags: ["카페", "음악"]
 draft: false
 image: "images/img.webp"

@@ -2,7 +2,7 @@
 title: '囚徒困境：为什么我们会做出“两败俱伤”的选择？'
 slug: 'prisoners-dilemma'
 description: '明知道“互相合作能带来最好结果”，为什么人类还会互相背叛？通过博弈论中最著名的模型“囚徒困境”，从数学和心理学的角度为您分析个人理性导致社会整体非理性的机制。'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T03:00:00+09:00'
 image: 'img/prisoners_dilemma.jpg'
 math: true
 mermaid: true

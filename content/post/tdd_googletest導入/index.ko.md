@@ -1,7 +1,7 @@
 ---
 title: 'C++ 프로젝트(GoogleTest 등)에 테스트 주도 개발(TDD)을 도입하는 방법'
 slug: "tdd-cpp-googletest-introduction"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T21:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

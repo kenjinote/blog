@@ -2,7 +2,7 @@
 title: "Histoire et avenir de la gestion d'état : de Redux à Signals, l'évolution de la Reactivity"
 description: "Le plus grand défi de l'histoire du développement frontend : la « gestion d'état ». Un guide complet d'environ 20 000 caractères explorant en profondeur l'évolution et l'avenir, depuis MVC, Flux, Redux, Context API, jusqu'à Signals et la réactivité à grain fin."
 slug: state-management-history-future
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T12:00:00+09:00
 image: eyecatch.jpg
 categories:
   - frontend

@@ -2,7 +2,7 @@
 title: "GraphQL vs REST API（消除过度获取与类型安全）"
 description: "REST API 的局限性，以及 GraphQL 带来的灵活数据获取和类型安全的前端开发。"
 slug: "graphql-vs-rest-api-overfetching-type-safety"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "backend"

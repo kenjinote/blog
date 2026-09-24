@@ -8,7 +8,7 @@
 
 title: '¡15 libros esenciales recomendados para ingenieros principiantes! Desde los conceptos básicos de programación hasta el diseño'
 slug: "IngenieroPrincipianteにRecomendaciónのLibros"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-05-05T16:03:33+09:00
 tags: ["ingeniero", "principiantes", "libros"]
 draft: false
 image: "img.webp"

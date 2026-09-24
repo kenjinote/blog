@@ -2,7 +2,7 @@
 title: "Carl Gustav Jacob Jacobi: The Genius Mathematician of Elliptic Functions and Mechanics"
 description: "A detailed explanation of the life of Carl Gustav Jacob Jacobi, a leading 19th-century mathematician, and his mathematical achievements such as elliptic functions, analytical mechanics, and determinants (the Jacobian)."
 slug: "jacobi"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

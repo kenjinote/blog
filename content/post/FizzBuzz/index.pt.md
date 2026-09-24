@@ -1,7 +1,7 @@
 ---
 title: 'O que é o Desafio ''FizzBuzz''? Uma Introdução à Programação e Como Codificar em Python'
 slug: "FizzBuzz"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "Algoritmo"]
 draft: false
 image: "eyecatch.jpg"

@@ -1,7 +1,7 @@
 ---
 title: '【2026년 최신】 로컬 LLM을 Windows 환경에서 구동하는 완전 가이드'
 slug: "local-llm-windows-2026"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T10:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

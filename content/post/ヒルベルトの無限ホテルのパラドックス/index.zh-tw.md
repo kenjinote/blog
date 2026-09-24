@@ -2,7 +2,7 @@
 title: '希爾伯特的無限旅館：如何讓客滿的旅館再住進無限位客人'
 slug: 'hilberts-grand-hotel'
 description: '客房數量無限的「無限旅館」，即使客滿也絕對不會拒絕新客人。無論是1人、100萬人，甚至是一輛載著「無限人」的巴士抵達，全都能夠住下的驚人邏輯戲法（無限集合的性質），將為您詳細解說。'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T06:00:00+09:00'
 image: 'img/hilberts_hotel.jpg'
 math: true
 mermaid: true

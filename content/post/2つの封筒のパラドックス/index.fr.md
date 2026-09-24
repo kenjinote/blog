@@ -2,7 +2,7 @@
 title: 'Le paradoxe des deux enveloppes : l’effondrement logique et le piège décisionnel causés par une espérance mathématique infinie'
 slug: 'two-envelopes-paradox'
 description: 'Deux enveloppes sont devant vous. L’une contient le double du montant de l’autre. Si vous échangez sans ouvrir votre enveloppe, êtes-vous toujours gagnant selon l’espérance ? À travers le « paradoxe des deux enveloppes » où l’intuition et les mathématiques s’affrontent violemment, nous expliquerons en profondeur les pièges de l’espérance mathématique et le concept de l’infini.'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T00:00:00+09:00'
 image: 'img/two_envelopes.jpg'
 math: true
 mermaid: true

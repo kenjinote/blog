@@ -1,7 +1,7 @@
 ---
 title: 'Pengenalan Bahasa Rust: Cara Memulai, dari Fitur hingga Instalasi dan Hello World'
 slug: "Rustのはじめかた"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-06T00:12:36+09:00
 tags: ["Rust"]
 draft: false
 image: "images/rust_logo.webp"

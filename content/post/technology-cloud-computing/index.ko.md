@@ -2,7 +2,7 @@
 title: "소유에서 이용으로: 클라우드 컴퓨팅의 원리 - IT 인프라의 대전환"
 description: "Amazon Web Services (AWS) 나 Google Cloud (GCP) 와 같은 클라우드 컴퓨팅은 기업과 개인의 IT를 어떻게 바꾸었는가. IaaS, PaaS, SaaS의 차이점과 가상화 기술의 기초를 해설합니다."
 slug: "technology-cloud-computing"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

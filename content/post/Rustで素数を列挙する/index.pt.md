@@ -1,7 +1,7 @@
 ---
 title: 'Como criar um programa que enumera números primos em Rust e exemplos de código'
 slug: "RustでNúmero Primoを列挙する"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-09T07:08:49+09:00
 tags: ["Rust","Números Primos","Algoritmo"]
 draft: false
 image: "images/img.webp"

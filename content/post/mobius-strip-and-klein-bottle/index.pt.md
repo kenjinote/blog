@@ -2,7 +2,7 @@
 title: "A Fita de Möbius e a Garrafa de Klein: O Mundo Fascinante das Superfícies sem 'Dentro' ou 'Fora'"
 description: "Uma explicação detalhada das superfícies não orientáveis na topologia, especificamente a fita de Möbius e a garrafa de Klein, usando fórmulas matemáticas e diagramas."
 slug: "mobius-strip-and-klein-bottle"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T15:15:00+09:00
 image: "eyecatch.jpg"
 categories: ["matemática"]
 tags: ["topologia", "geometria", "fita-de-mobius", "garrafa-de-klein"]

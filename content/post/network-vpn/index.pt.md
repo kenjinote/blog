@@ -2,7 +2,7 @@
 title: "Linha Dedicada Virtual: Como a VPN Funciona - Um Túnel Seguro na Internet"
 description: "A VPN (Rede Privada Virtual) é essencial para o trabalho remoto. Explicamos o mecanismo de criar o seu 'próprio túnel seguro dedicado' na Internet, onde qualquer um pode bisbilhotar, através de criptografia e encapsulamento."
 slug: "network-vpn"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

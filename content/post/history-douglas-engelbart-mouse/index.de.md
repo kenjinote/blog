@@ -1,6 +1,5 @@
 ---
 title: "Die Geburt der \"Maus\" und Douglas Engelbart: Die Spur eines Pioniers, der die Interaktion zwischen Mensch und Computer neu definierte"
-date: "2026-09-24T16:08:36+09:00"
 description: "Wie entstand die \"Maus\", die heute für die Computerbedienung unverzichtbar ist? Eine umfassende Erläuterung ihrer epischen Geschichte, von Douglas Engelbarts Idee der \"Erweiterung des menschlichen Intellekts\" (Augmenting Human Intellect) bis zur \"The Mother of All Demos\" im Jahr 1968."
 slug: "history-douglas-engelbart-mouse"
 categories: ["history"]

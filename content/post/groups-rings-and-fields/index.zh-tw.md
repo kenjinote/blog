@@ -2,7 +2,7 @@
 title: "群、環、體：不僅僅是數字，更是抽象「結構」本身的現代代數入門"
 description: "在數學中，『代數』已經從解方程式的方法發展到研究『結構』。"
 slug: "groups-rings-and-fields"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["數學"]
 tags: ["代數", "群論", "環論", "體論"]

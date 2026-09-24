@@ -2,7 +2,7 @@
 title: "Adrien-Marie Legendre : Le géant de l'ombre des mathématiques, sa querelle avec Gauss et le mystère de son portrait"
 description: "Un récit détaillé de la vie du grand mathématicien français Adrien-Marie Legendre, de ses réalisations sur les intégrales elliptiques et la théorie des nombres, de son conflit avec Gauss et du mystère de son portrait longtemps confondu."
 slug: "legendre"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathématiques", "biographie"]
 tags: ["Legendre", "Théorie des nombres", "Géométrie", "Histoire des mathématiques"]

@@ -1,7 +1,7 @@
 ---
 title: 'Wie man mit Ranklet ein Ranking der beliebtesten Artikel aus Google Analytics anzeigt'
 slug: "Google Analyticsから人気ページランキングを取得して配置する方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-04-10T20:26:57+09:00
 tags: ["Google Analytics", "Ranklet", "HUGO"]
 draft: false
 image: "img.webp"

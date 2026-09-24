@@ -2,7 +2,7 @@
 title: "환율과 기술: FX(외국환증거금거래)의 역사와 알고리즘 트레이딩"
 description: "금본위제의 붕괴에서 시작된 외환시장. 그것이 인터넷과 만나, 어떻게 밀리초를 다투는 알고리즘 트레이딩의 주전장이 되었는지를 해설합니다."
 slug: "finance-fx-algo"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "finance"

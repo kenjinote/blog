@@ -2,7 +2,7 @@
 title: "アドリアン＝マリ・ルジャンドル：数学の影の巨人、ガウスとの因縁と肖像画の謎"
 description: "フランスの偉大な数学者アドリアン＝マリ・ルジャンドルの生涯、楕円積分や数論における業績、ガウスとの確執、そして長年間違えられていた肖像画の謎について詳しく解説します。"
 slug: "legendre"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Legendre", "Number Theory", "Geometry", "History of Mathematics"]

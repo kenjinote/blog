@@ -1,7 +1,7 @@
 ---
 title: '黎曼猜想與質數分佈：與現代密碼學的深層關聯'
 slug: "riemann-hypothesis-prime-distribution-cryptography"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T16:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

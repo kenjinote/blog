@@ -1,6 +1,6 @@
 ---
 title: "「영란은행을 무너뜨린 사나이」 조지 소로스: 철학하는 투자자가 살아온 파란만장한 궤적"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["george-soros", "history"]
 image: "eyecatch.jpg"

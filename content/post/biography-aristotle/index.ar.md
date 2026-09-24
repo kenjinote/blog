@@ -1,6 +1,6 @@
 ---
 title: "أرسطو، أبو العلوم: الباحث المطلق عن المعرفة الذي تركته اليونان القديمة"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["aristotle", "history"]
 image: "eyecatch.jpg"

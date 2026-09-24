@@ -1,6 +1,6 @@
 ---
 title: "预测未来的最好方式就是去创造它：阿兰·凯的轨迹与哲学"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["alan-kay", "history"]
 image: "eyecatch.jpg"

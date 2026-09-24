@@ -1,7 +1,7 @@
 ---
 title: '中古のThinkPad T470sを購入！スペックや使い勝手、不満点を本音レビュー'
 slug: "ThinkPad（中古）を買った"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "ノートパソコン"]
 draft: false
 image: "img.webp"

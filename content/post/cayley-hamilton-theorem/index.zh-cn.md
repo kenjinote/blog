@@ -2,7 +2,7 @@
 title: "凯莱-哈密顿定理：矩阵满足其自身“特征方程”的奇妙性质"
 description: "详细解读线性代数中最令人惊讶的结果之一——凯莱-哈密顿定理，从其直观含义到严谨证明以及实际应用。"
 slug: "cayley-hamilton-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T14:50:00+09:00
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

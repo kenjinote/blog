@@ -2,7 +2,7 @@
 title: 'Leopold Kronecker : La vie et les contributions algébriques du mathématicien qui aimait les nombres entiers'
 description: 'Un aperçu de la vie, des conflits avec Cantor et des réalisations profondes de Leopold Kronecker, le grand mathématicien du 19ème siècle célèbre pour la citation "Dieu a fait les nombres entiers, tout le reste est l''œuvre de l''homme."'
 slug: "kronecker"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathématiques"

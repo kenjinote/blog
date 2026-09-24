@@ -1,6 +1,6 @@
 ---
 title: "J'ai essayé 'Q#', le langage de programmation pour les ordinateurs quantiques"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T00:00:00+09:00"
 slug: "qsharp-quantum-programming-language-intro"
 image: "img/eyecatch.jpg"
 math: true

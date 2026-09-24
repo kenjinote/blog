@@ -1,6 +1,5 @@
 ---
 title: "Filosofi Haskell dan Bahasa Pemrograman Fungsional Murni: Dunia Monad dan Kedalamannya"
-date: "2026-09-24T16:08:36+09:00"
 description: "Panduan lengkap yang menggali secara mendalam mulai dari filosofi bahasa fungsional murni Haskell hingga wujud asli dari \"Monad\" yang sering dianggap sulit. Kami akan menjelaskan pemisahan efek samping, Functor dan Applicative, serta keindahan dunia abstrak yang dijalin oleh Monad."
 slug: "philosophy-haskell-monads"
 categories: ["philosophy"]

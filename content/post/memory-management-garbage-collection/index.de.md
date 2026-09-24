@@ -2,7 +2,7 @@
 title: "Speicherverwaltung und Garbage Collection: Die Wahrheit über Speicher aus C, Java und Rust lernen"
 description: "Von den Grundlagen der Speicherverwaltung in der Programmierung über das manuelle Management in C, die Garbage Collection in Java bis hin zum Ownership-Modell in Rust – ein tiefgehender Vergleich und eine umfassende Erklärung."
 slug: "memory-management-garbage-collection"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
 categories: ["programming", "computer-science", "software-engineering"]
 tags: ["memory-management", "c-language", "java", "rust", "garbage-collection"]

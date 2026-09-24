@@ -1,6 +1,5 @@
 ---
 title: "Qu'est-ce que le nombre de Dunbar ? Explication détaillée des limites cognitives des relations humaines et de leur application à la conception organisationnelle"
-date: "2026-09-24T16:08:36+09:00"
 description: "Le nombre de Dunbar stipule que \"la limite des relations qu'un humain peut maintenir de manière stable est de 150 personnes\". Cet article explore en profondeur cette loi proposée par le psychologue évolutionniste Robin Dunbar, depuis ses fondements biologiques jusqu'aux relations humaines à l'ère des réseaux sociaux, en passant par son application à la conception organisationnelle lors de la croissance des entreprises."
 slug: "business-dunbars-number"
 categories: ["business"]

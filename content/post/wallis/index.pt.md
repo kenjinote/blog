@@ -2,7 +2,7 @@
 title: "John Wallis: O Pioneiro do Cálculo que Criou o Símbolo do Infinito"
 description: "John Wallis, um proeminente matemático inglês do século XVII. Exploramos a vida e as conquistas do homem que inventou o símbolo do infinito '∞' e lançou as bases do cálculo."
 slug: "wallis"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matemática"

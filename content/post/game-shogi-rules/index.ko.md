@@ -2,7 +2,7 @@
 title: "보드게임의 AI 기술: 쇼기의 기본 규칙과 대표적인 전략 - 앉은비차와 몰이비차 전법 해설"
 description: "81칸의 반상 위에서 펼쳐지는 궁극의 사고 게임 '쇼기'. 초보자를 위한 기본 규칙 복습부터 프로도 사용하는 대표적인 양대 전략 '앉은비차'와 '몰이비차'의 사상까지 알기 쉽게 해설합니다."
 slug: "game-shogi-rules"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

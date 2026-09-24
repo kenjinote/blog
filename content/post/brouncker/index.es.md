@@ -2,7 +2,7 @@
 title: "William Brouncker: Primer presidente de la Royal Society y fracciones continuas"
 description: "Una explicación detallada de la vida del matemático británico William Brouncker y sus logros matemáticos, como la fracción continua de Pi y la ecuación de Pell. Desde el desafío de Fermat hasta sus actividades en la Royal Society."
 slug: "brouncker"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Matemáticas", "Biografía"]
 tags: ["William Brouncker", "Pi", "Fracción continua", "Ecuación de Pell", "Royal Society"]

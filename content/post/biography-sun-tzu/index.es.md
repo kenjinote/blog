@@ -1,6 +1,6 @@
 ---
 title: "Sun Tzu: La trayectoria del genio estratega militar que creó el mejor arte de la guerra"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:53:32+09:00
 categories: ["biography"]
 tags: ["sun-tzu", "history"]
 image: "eyecatch.jpg"

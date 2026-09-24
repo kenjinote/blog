@@ -2,7 +2,7 @@
 title: "Komunikasi Generasi Berikutnya: Mekanisme dan Fitur 5G - Masa Depan yang Diciptakan oleh 'Kecepatan Sangat Tinggi, Latensi Sangat Rendah, dan Koneksi Simultan Masif'"
 description: "Sistem komunikasi seluler generasi ke-5 (5G) tidak hanya diharapkan untuk ponsel pintar, tetapi juga sebagai infrastruktur untuk mengemudi otonom dan telemedis. Kami menjelaskan teknologi dasar yang mewujudkannya, seperti gelombang milimeter, beamforming, dan edge computing."
 slug: "network-5g"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

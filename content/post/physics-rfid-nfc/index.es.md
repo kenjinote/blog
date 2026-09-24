@@ -2,7 +2,7 @@
 title: "Leyes físicas y tecnología cotidiana: Cómo funcionan RFID y NFC (Osaifu-Keitai) - Comunicación sin contacto mediante inducción electromagnética"
 description: "Una tecnología mágica que completa los pagos con solo acercar tarjetas como Suica, PASMO o tu Osaifu-Keitai a las puertas de pago. Aquí explicamos la ley física de la 'inducción electromagnética' detrás de esto y los estándares de comunicación NFC."
 slug: "physics-rfid-nfc"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

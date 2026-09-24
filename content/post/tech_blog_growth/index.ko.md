@@ -1,7 +1,7 @@
 ---
 title: '엔지니어가 기술 블로그의 월간 조회수를 늘리기 위해 해야 할 일'
 slug: "tech-blog-growth-strategies-for-engineers"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

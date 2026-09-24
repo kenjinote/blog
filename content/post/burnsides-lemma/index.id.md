@@ -2,7 +2,7 @@
 title: "Lema Burnside: Bagaimana Cara Menghitung Pola Jika Rotasi Diperhitungkan?"
 description: "Menjelaskan cara menghilangkan pola duplikat yang disebabkan oleh rotasi, menggunakan pewarnaan kalung sebagai contoh. Pengantar praktis ke teori grup."
 slug: "burnsides-lemma"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "matematika"

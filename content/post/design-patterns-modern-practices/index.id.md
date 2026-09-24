@@ -2,7 +2,7 @@
 title: "Mempertimbangkan Kembali Design Pattern: Apakah GoF Kuno? Praktik Terbaik Modern"
 description: "Pola desain GoF diusulkan pada tahun 1994. Apakah itu masih berlaku dalam bahasa pemrograman modern saat ini? Kami mempertimbangkan praktik terbaik desain modern secara mendalam, menggabungkan pengaruh pemrograman fungsional dan paradigma baru."
 slug: "design-patterns-modern-practices"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "architecture"

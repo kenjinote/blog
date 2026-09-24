@@ -2,7 +2,7 @@
 title: "Cómo funcionaba Winny: búsqueda, caché, retransmisión y límites del anonimato"
 description: "Las claves de metadatos, la jerarquía por velocidad de conexión y la caché de Winny, explicadas con ejemplos de tráfico, límites de seguridad y contexto histórico y judicial."
 slug: "history-of-winny"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["technology", "computer-science"]
 tags: ["p2p", "network", "winny", "history"]

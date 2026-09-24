@@ -2,7 +2,7 @@
 title: "Análise Completa de OAuth 2.0 e OIDC (OpenID Connect) (Diferença entre Autenticação e Autorização)"
 description: "Explicação detalhada dos mecanismos de OAuth 2.0 e OIDC, as diferenças entre autenticação e autorização, e os vários tipos de concessão."
 slug: "oauth2-oidc-authentication-authorization-difference"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

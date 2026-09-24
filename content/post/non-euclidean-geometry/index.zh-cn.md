@@ -2,7 +2,7 @@
 title: "非欧几里得几何学的诞生 - “弯曲空间”的发现与通往相对论之路"
 description: "从对欧几里得平行公设的质疑开始，解说由高斯、鲍耶、罗巴切夫斯基、黎曼确立的非欧几里得几何学，直至爱因斯坦广义相对论的宏大数学与物理学历史。"
 slug: "non-euclidean-geometry"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "physics"]
 tags: ["几何学", "相对论", "科学史", "数学"]

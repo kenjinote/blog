@@ -3,7 +3,7 @@
 
 title: 'Cómo empezar a usar "egui", la ligera librería GUI de Rust, y pasos para ejecutar el ejemplo'
 slug: "eguiを使ってみる"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-03-18T10:27:02+09:00
 tags: ["rsut", "egui", "librería GUI"]
 draft: false
 image: "demo.gif"

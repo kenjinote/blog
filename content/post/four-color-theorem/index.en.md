@@ -2,7 +2,7 @@
 title: "Four Color Theorem - Can any map be colored with 4 colors?"
 description: "We explain in detail the history of the Four Color Theorem, a difficult problem in the mathematical world, proof approaches, and the significance of computer-assisted proofs."
 slug: "four-color-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "computer-science"]
 tags: ["Four Color Theorem", "Graph Theory", "Computer-assisted Proof", "Topology"]

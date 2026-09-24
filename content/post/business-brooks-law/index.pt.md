@@ -1,6 +1,5 @@
 ---
 title: "Análise Profunda da Lei de Brooks: Por Que Adicionar Pessoal a um Projeto Atrasado Apenas o Atrasa Mais"
-date: "2026-09-24T16:08:36+09:00"
 description: "\"Adicionar pessoas a um projeto atrasado faz com que ele se atrase ainda mais\". Exploraremos profundamente a Lei de Brooks, proposta no clássico da engenharia de software \"O Mítico Homem-Mês\", abordando seu contexto, causas e as contramedidas no desenvolvimento ágil moderno."
 slug: "business-brooks-law"
 categories: ["business"]

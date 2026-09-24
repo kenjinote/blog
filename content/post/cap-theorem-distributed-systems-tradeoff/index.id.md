@@ -2,7 +2,7 @@
 title: "Teorema CAP dan Sistem Terdistribusi (Pertukaran antara Konsistensi, Ketersediaan, dan Toleransi Partisi)"
 description: "Aturan absolut 'Teorema CAP' dalam desain sistem terdistribusi dan kompromi arsitektur yang dipilih oleh basis data modern."
 slug: "cap-theorem-distributed-systems-tradeoff"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

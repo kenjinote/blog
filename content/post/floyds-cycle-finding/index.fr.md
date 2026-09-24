@@ -1,7 +1,7 @@
 ---
 title: "Algorithme de détection de cycle de Robert Floyd (Algorithme du lièvre et de la tortue)"
 image: "eyecatch.jpg"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T00:00:00+09:00
 description: "Une explication détaillée de l'« Algorithme de détection de cycle de Robert Floyd (Algorithme du lièvre et de la tortue) », un algorithme célèbre pour détecter des cycles dans les listes et les graphes, illustrée par des schémas, des formules mathématiques et des implémentations en C++ et Rust."
 categories: ["algorithms", "computer-science"]
 tags:

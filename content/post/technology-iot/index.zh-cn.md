@@ -2,7 +2,7 @@
 title: "物联网：IoT的运作机制——万物互联世界的背后"
 description: "从家电到汽车，再到工厂的机械，所有的事物都连接到互联网上的“IoT（物联网）”。本文将解说传感器技术与通信网络如何收集数据，并与AI协作创造价值。"
 slug: "technology-iot"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

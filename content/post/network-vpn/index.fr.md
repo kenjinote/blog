@@ -2,7 +2,7 @@
 title: "Ligne dédiée virtuelle : Comment fonctionne un VPN - Un tunnel sécurisé sur Internet"
 description: "Le VPN (Virtual Private Network), indispensable au télétravail. Nous expliquons comment le cryptage et l'encapsulation créent un « tunnel dédié privé et sécurisé » sur Internet, où n'importe qui peut normalement jeter un œil."
 slug: "network-vpn"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

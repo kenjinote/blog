@@ -1,6 +1,5 @@
 ---
 title: "Deep Blue vs. Kasparov (Der Schock von 1997): Die ganze Geschichte des historischen Matches zwischen Mensch und KI"
-date: "2026-09-24T16:08:36+09:00"
 description: "Im Jahr 1997 wurde der Schachweltmeister Garry Kasparov vom IBM-Supercomputer \"Deep Blue\" besiegt – ein historisches Ereignis. Dieser Artikel analysiert die Hintergründe, den Verlauf des Matches und die Auswirkungen auf die KI-Technologie."
 slug: "history-deep-blue-kasparov"
 categories: ["history"]

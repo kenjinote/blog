@@ -2,7 +2,7 @@
 title: "Au cœur de l'IA : le fonctionnement du deep learning - comment apprennent les réseaux de neurones"
 description: "Le « deep learning » (apprentissage profond) a déclenché le troisième boom de l'IA et sert de technologie de base à ChatGPT. Découvrez comment cet algorithme, qui imite les réseaux neuronaux du cerveau humain, parvient à identifier de lui-même des caractéristiques."
 slug: "technology-deep-learning"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

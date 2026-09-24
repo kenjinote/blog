@@ -2,7 +2,7 @@
 title: "La contre-attaque de l'open source : l'histoire d'Android - Comment est né le plus grand système d'exploitation mobile au monde"
 description: "Pour contrer l'arrivée de l'iPhone, Google a formé l'« Open Handset Alliance ». Nous expliquons comment ce changement de modèle économique, consistant à proposer un système d'exploitation gratuitement, a transformé les smartphones du monde entier."
 slug: "history-of-android"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

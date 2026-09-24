@@ -2,7 +2,7 @@
 title: 'Achille et la tortue : impossible à rattraper, ou rattrapable ? Le paradoxe de l''« infini » qui perdure depuis la Grèce antique'
 slug: 'achilles-and-the-tortoise'
 description: 'Le héros rapide Achille ne pourra-t-il jamais rattraper la lente tortue ? Cette question, la plus célèbre des paradoxes de Zénon, a tourmenté philosophes et mathématiciens pendant plus de 2000 ans. Nous décortiquons mathématiquement ce tour de passe-passe logique en utilisant les concepts de sommes de séries infinies et de limites.'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T01:00:00+09:00'
 image: 'img/achilles.jpg'
 math: true
 mermaid: true

@@ -1,6 +1,5 @@
 ---
 title: "[Os Bastidores do Manifesto Ágil] A Trajetória Revolucionária que Lançou as Bases do Desenvolvimento Moderno de Software"
-date: "2026-09-24T16:08:36+09:00"
 description: "Em 2001, 17 engenheiros se reuniram em Snowbird, Utah, e elaboraram o \"Manifesto para Desenvolvimento Ágil de Software\". Este artigo explora o contexto histórico, a sensação de crise da época e a filosofia essencial que as organizações modernas de desenvolvimento devem realmente aprender com o Ágil."
 slug: "philosophy-agile-manifesto"
 categories: ["philosophy"]

@@ -2,7 +2,7 @@
 title: "浏览器渲染机制：从 DOM 树到 Paint 的完全解剖"
 description: "我们将完全解剖渲染引擎（Blink、WebKit 等）在浏览器加载 HTML/CSS/JS 到在屏幕上绘制像素的机制。"
 slug: "browser-rendering-mechanism-dom-paint"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T17:10:00+09:00
 image: eyecatch.jpg
 categories:
   - "web-development"

@@ -8,7 +8,7 @@
 
 title: 'Windows 파일 탐색기 종료 및 재시작 방법 모음'
 slug: "파일 탐색기の終了・再起動方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-03-30T15:40:24+09:00
 tags: ["탐색기"]
 draft: false
 image: "img_2.webp"

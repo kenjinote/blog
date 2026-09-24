@@ -3,7 +3,7 @@
 
 title: 'Cómo usar reveal.js: Creación de presentaciones en HTML y Markdown'
 slug: "HTMLでPresentación資料を作る方法（reveal.js）"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-04-06T23:23:46+09:00
 tags: ["HTML", "reveal.js", "Presentación"]
 draft: false
 image: "img.webp"

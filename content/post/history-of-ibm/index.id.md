@@ -2,7 +2,7 @@
 title: "Sejarah IBM: Dari Kartu Plong ke Mainframe, dan Komputer Kuantum"
 description: "Bagaimana 'Big Blue' terus memimpin industri IT selama lebih dari 100 tahun."
 slug: "history-of-ibm"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T01:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

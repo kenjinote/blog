@@ -2,7 +2,7 @@
 title: "Die 3 Säulen der objektorientierten Programmierung (OOP) und die Praxis der SOLID-Prinzipien: Von der Geschichte bis zu fortgeschrittenen Entwurfsmethoden"
 description: "Ein vollständiger Leitfaden, der den historischen Hintergrund der objektorientierten Programmierung, ihre 3 Säulen (Kapselung, Vererbung, Polymorphismus) sowie tiefgreifende Praktiken der SOLID-Prinzipien abdeckt."
 slug: "object-oriented-programming-oop-solid-principles"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T14:51:08+09:00"
 image: "eyecatch.jpg"
 categories:
   - "computer-science"

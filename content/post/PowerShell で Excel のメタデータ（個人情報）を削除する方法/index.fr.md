@@ -1,7 +1,7 @@
 ---
 title: 'Comment supprimer en masse les métadonnées (informations personnelles) d''Excel et Word avec PowerShell'
 slug: "PowerShell で Excel のMétadonnées（Informations personnelles）を削除する方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-07-30T02:42:40+09:00
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "Métadonnées", "Informations personnelles"]
 draft: false
 image: "powershell_metadata_eyecatch_1788588033601.webp"

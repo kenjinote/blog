@@ -1,6 +1,6 @@
 ---
 title: "स्टीव जॉब्स: दुनिया को बदलने वाले विद्रोही की यात्रा और दर्शन"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["steve-jobs", "history"]
 image: "eyecatch.jpg"

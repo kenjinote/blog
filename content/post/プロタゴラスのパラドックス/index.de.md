@@ -1,7 +1,7 @@
 ---
 title: "Meister und Schüler, ein Prozess, der sich in jedem Fall widerspricht: Das Paradoxon des Protagoras"
 description: "Ein juristischer Streit zwischen Meister und Schüler über die Zahlungsbedingungen von Studiengebühren. Ein juristisches Paradoxon aus dem antiken Griechenland, bei dem die Logik widersprüchlich wird, egal wer gewinnt oder verliert."
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "paradox-of-the-court"
 image: "img/paradox_of_court.jpg"

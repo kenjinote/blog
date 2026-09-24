@@ -1,7 +1,7 @@
 ---
 title: 'Collection de citations pour enrichir la vie : Des mots touchants de personnalités historiques et célèbres'
 slug: "Collection de citations"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-10-15T17:00:43+09:00
 tags: ["citations"]
 draft: false
 image: "img.webp"

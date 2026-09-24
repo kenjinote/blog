@@ -2,7 +2,7 @@
 title: "外匯與科技：FX（外匯保證金交易）的歷史與演算法交易"
 description: "解說從金本位制崩潰開始的外匯市場，在與網際網路結合後，是如何成為爭奪毫秒的演算法交易主戰場。"
 slug: "finance-fx-algo"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "finance"

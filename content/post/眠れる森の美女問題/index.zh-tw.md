@@ -2,7 +2,7 @@
 title: '睡美人問題：硬幣的機率是 1/2 還是 1/3？讓機率論分裂的難題'
 slug: 'sleeping-beauty-paradox'
 description: '「在妳醒來的現在，擲硬幣結果為正面的機率是多少？」儘管設定極其簡單，世界各地的數學家和哲學家卻分成了「1/2派」和「1/3派」，為您解說這個至今仍爭論不休的現代悖論。'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T09:00:00+09:00'
 image: 'img/sleeping_beauty.jpg'
 math: true
 mermaid: true

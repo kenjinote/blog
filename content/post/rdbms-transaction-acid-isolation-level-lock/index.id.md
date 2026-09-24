@@ -2,7 +2,7 @@
 title: "Transaksi RDBMS dan Karakteristik ACID (Level Isolasi dan Lock)"
 description: "Dasar-dasar pemrosesan transaksi yang melindungi integritas database, anomali berdasarkan level isolasi, dan mekanisme penguncian (lock)."
 slug: "rdbms-transaction-acid-isolation-level-lock"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "database"

@@ -2,7 +2,7 @@
 title: "Design-Muster neu überdacht: Ist GoF veraltet? Moderne Best Practices"
 description: "GoF-Design-Muster wurden 1994 eingeführt. Sind sie in modernen Programmiersprachen noch gültig? Wir betrachten moderne Best Practices im Design unter Einbeziehung funktionaler Programmierung und neuer Paradigmen."
 slug: "design-patterns-modern-practices"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "architecture"

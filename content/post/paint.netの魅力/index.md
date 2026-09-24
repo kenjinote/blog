@@ -1,7 +1,7 @@
 ---
 title: '無料で高機能！画像編集ソフト「paint.net」の特徴と魅力'
 slug: "paint.netの魅力"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-14T19:33:31+09:00
 tags: ["paint.net"]
 draft: false
 image: "img.webp"

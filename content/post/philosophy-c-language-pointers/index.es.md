@@ -1,6 +1,5 @@
 ---
 title: "La filosofía de C: El abismo de la programación traído por los punteros y la libertad"
-date: "2026-09-24T16:08:36+09:00"
 description: "El núcleo del lenguaje C: \"punteros\" y \"libertad\". ¿Cómo su filosofía de confiar todo a los desarrolladores desbloquea los límites del hardware y fomenta el crecimiento del programador? Una exploración detallada del abismo de la gestión de memoria."
 slug: "philosophy-c-language-pointers"
 categories: ["philosophy"]

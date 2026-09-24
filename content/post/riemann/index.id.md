@@ -2,7 +2,7 @@
 title: "Bernhard Riemann: Kehidupan dan Pencapaian Jenius yang Membuka Pintu menuju Matematika Modern"
 description: "Selami lebih dalam kehidupan Bernhard Riemann yang penuh gejolak dan pencapaian matematikanya, seperti Hipotesis Riemann dan geometri Riemann, yang telah sangat memengaruhi matematika dan fisika modern."
 slug: "riemann"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matematika"

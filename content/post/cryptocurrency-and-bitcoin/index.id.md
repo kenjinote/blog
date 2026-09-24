@@ -2,7 +2,7 @@
 title: "Aset Kripto dan Bitcoin: Sejarah, Dasar Matematis, dan Masa Depan"
 description: "Panduan lengkap yang membahas secara mendalam mekanisme teknis dan matematis di balik Bitcoin dan aset kripto. Mencakup SHA-256, kriptografi kurva eliptik, UTXO, hingga masalah skalabilitas."
 slug: "cryptocurrency-and-bitcoin"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T23:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["teknologi", "matematika"]
 tags: ["bitcoin", "kriptografi", "blockchain"]

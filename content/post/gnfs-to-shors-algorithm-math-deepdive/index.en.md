@@ -1,7 +1,7 @@
 ---
 title: 'Breaking RSA Encryption? Thorough Mathematical Explanation of GNFS and Shor''s Algorithm'
 slug: "gnfs-to-shors-algorithm-math-deepdive"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-06T12:00:00+09:00
 tags: ["Quantum Computer", "GNFS", "Shor's Algorithm", "Cryptography", "Mathematics"]
 image: "eyecatch.jpg"
 mermaid: true

@@ -2,7 +2,7 @@
 title: "Birch and Swinnerton-Dyer Conjecture (BSD Conjecture) - Rational Points on Elliptic Curves and L-functions"
 description: "A detailed mathematical explanation of the Birch and Swinnerton-Dyer Conjecture (BSD Conjecture), one of the Millennium Prize Problems, from the basics of elliptic curves to its deep connection with L-functions."
 slug: "bsd-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:05:17+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Number Theory", "Elliptic Curves", "BSD Conjecture", "Millennium Prize Problems"]

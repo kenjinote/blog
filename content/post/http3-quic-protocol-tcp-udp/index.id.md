@@ -2,7 +2,7 @@
 title: "HTTP/3 dan Protokol QUIC: Keterbatasan TCP dan Inovasi oleh UDP"
 description: "Membahas secara mendetail alasan lahirnya HTTP/3 dan protokol QUIC, penyelesaian masalah Head-of-Line Blocking, serta percepatan pembentukan koneksi untuk protokol komunikasi Web generasi berikutnya."
 slug: "http3-quic-protocol-tcp-udp"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T17:10:00+09:00
 image: eyecatch.jpg
 categories:
   - "network"

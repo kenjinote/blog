@@ -2,7 +2,7 @@
 title: "Georg Cantor: O Gênio Trágico que Descobriu a Hierarquia do Infinito e Construiu os Fundamentos da Matemática"
 description: "Uma explicação detalhada da vida turbulenta de Georg Cantor, o fundador da teoria dos conjuntos, e sua surpreendente conquista matemática de provar que existem diferentes tamanhos de infinito."
 slug: "cantor"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matemática"

@@ -2,7 +2,7 @@
 title: "Adrien-Marie Legendre: Der Schattengigant der Mathematik, die Fehde mit Gauss und das Porträt-Mysterium"
 description: "Ein detaillierter Bericht über das Leben des großen französischen Mathematikers Adrien-Marie Legendre, seine Errungenschaften bei elliptischen Integralen und der Zahlentheorie, seinen Konflikt mit Gauss und das Geheimnis seines lange verwechselten Porträts."
 slug: "legendre"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematik", "Biografie"]
 tags: ["Legendre", "Zahlentheorie", "Geometrie", "Geschichte der Mathematik"]

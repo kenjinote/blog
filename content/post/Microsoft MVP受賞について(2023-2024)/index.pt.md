@@ -1,7 +1,7 @@
 ---
 title: 'Fui premiado como Microsoft MVP (2023-2024)'
 slug: "Microsoft MVPPrêmioについて(2023-2024)"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-07-31T19:15:14+09:00
 tags: ["Microsoft MVP", "Prêmio"]
 draft: false
 image: "img.webp"

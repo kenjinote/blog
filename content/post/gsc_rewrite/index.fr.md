@@ -1,7 +1,7 @@
 ---
 title: 'Stratégie de réécriture d''articles techniques passés à l''aide de Google Search Console'
 slug: 'google-search-console-rewrite-strategy'
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true

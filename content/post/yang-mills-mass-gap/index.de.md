@@ -2,7 +2,7 @@
 title: "Yang-Mills-Gleichungen und das Massenlücken-Problem - Die mathematischen Grundlagen des \"Standardmodells\" der Teilchenphysik"
 description: "Wir erklären auf verständliche Weise den physikalischen Hintergrund und die mathematischen Schwierigkeiten des \"Yang-Mills- und Massenlücken-Problems\", eines der Millennium-Probleme."
 slug: "yang-mills-mass-gap"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
 categories: ["physics", "mathematics"]
 tags:

@@ -2,7 +2,7 @@
 title: "Amazon的历史：从在线书店到巨大的物流与云(AWS)帝国的历程"
 description: "征服了电子商务和AWS云的Amazon历史"
 slug: "history-of-amazon"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T00:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

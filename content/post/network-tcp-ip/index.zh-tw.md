@@ -2,7 +2,7 @@
 title: "網路技術：TCP/IP 的歷史與機制 - 連結網際網路的世界標準規則"
 description: "為什麼全世界所有的電腦都能跨越製造商和作業系統的差異進行通訊？本文將為您解析構成網際網路基礎的「TCP/IP」協定套件的思想與歷史。"
 slug: "network-tcp-ip"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -2,7 +2,7 @@
 title: "Ordinateurs de nouvelle génération : Le fonctionnement des ordinateurs quantiques - Un monde bouleversé par la superposition de « 0 » et de « 1 »"
 description: "L'ordinateur quantique est censé résoudre en quelques secondes des calculs qui prendraient des dizaines de milliers d'années à un superordinateur. Nous expliquons ce tout nouveau paradigme de calcul utilisant la « superposition » et l'« intrication », des phénomènes mystérieux de la mécanique quantique."
 slug: "technology-quantum-computer"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

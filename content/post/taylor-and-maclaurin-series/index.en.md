@@ -2,7 +2,7 @@
 title: "Taylor and Maclaurin Series: The Magic of Approximating Complex Functions with Polynomials"
 description: "A detailed explanation of Taylor and Maclaurin series, the secrets of calculus, from intuitive meanings to mathematical derivations and applications in programming and physics."
 slug: "taylor-and-maclaurin-series"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematics"

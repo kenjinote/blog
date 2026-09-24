@@ -2,7 +2,7 @@
 title: "대각화와 조르단 표준형: 복잡한 행렬을 극한까지 단순하게 표현하는 분류법"
 description: "선형대수학의 대각화와 대각화할 수 없는 행렬을 위한 조르단 표준형에 대해 직관적인 의미부터 수학적 정의, 그리고 응용까지 상세하게 해설합니다."
 slug: "diagonalization-and-jordan-normal-form"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["linear-algebra", "matrix", "eigenvalue", "jordan-normal-form"]

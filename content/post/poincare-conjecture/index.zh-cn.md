@@ -1,7 +1,7 @@
 ---
 title: "庞加莱猜想 - 揭开宇宙形状的拓扑学难题与佩雷尔曼的传奇"
 description: "详细解说折磨了数学家100多年的「庞加莱猜想」的全貌、拓扑学的基础、以及格里戈里·佩雷尔曼戏剧性证明的故事。"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:04:13+09:00"
 slug: "poincare-conjecture"
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]

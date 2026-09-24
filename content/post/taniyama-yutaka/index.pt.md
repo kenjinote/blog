@@ -2,7 +2,7 @@
 title: "Yutaka Taniyama: A Vida e as Conquistas do Gênio Matemático que Desafiou Problemas Não Resolvidos"
 description: 'Um mergulho profundo na vida de Yutaka Taniyama, o brilhante matemático japonês conhecido pela "Conjectura de Taniyama-Shimura", e seu imenso impacto na matemática moderna.'
 slug: "taniyama-yutaka"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Yutaka Taniyama", "Matemática", "Último Teorema de Fermat", "Conjectura de Taniyama-Shimura", "Curvas Elípticas", "Formas Modulares"]

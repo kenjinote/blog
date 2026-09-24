@@ -2,7 +2,7 @@
 title: "CAP定理與分散式系統：分散式資料庫面臨的本質性困境"
 description: "深入探討分散式系統中最重要的原則——CAP定理，從其定義、證明、擴展至PACELC定理，再到實際分散式資料庫中的實作。"
 slug: "cap-theorem-distributed-systems"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T00:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "distributed-systems"

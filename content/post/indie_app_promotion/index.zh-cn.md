@@ -1,7 +1,7 @@
 ---
 title: '个人开发应用的推广策略：如何发挥技术博客的作用'
 slug: "indie-app-promotion-blog-strategy"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

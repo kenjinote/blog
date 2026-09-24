@@ -2,7 +2,7 @@
 title: "Marin Mersenne: O correio da Europa do século XVII e padrinho dos primos de Mersenne"
 description: "Um olhar profundo sobre a vida de Marin Mersenne, suas interações com Descartes e Fermat, e suas realizações matemáticas e científicas nos números primos de Mersenne e na acústica."
 slug: "mersenne"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemática"

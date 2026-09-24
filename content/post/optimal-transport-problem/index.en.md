@@ -2,7 +2,7 @@
 title: "Optimal Transport Problem: The Mathematics of Moving Sandpiles with Minimal Effort"
 description: "We consider transport costs from amounts and distances, leading to the Wasserstein distance which measures the difference between distributions."
 slug: "optimal-transport-problem"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T12:00:00+09:00
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

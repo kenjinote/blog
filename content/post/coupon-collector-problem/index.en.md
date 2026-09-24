@@ -1,7 +1,7 @@
 ---
 title: "The coupon collector’s problem: how many draws does a complete collection take?"
 description: "Collecting all 10 equally likely cards takes about 29.3 draws on average, but only about 63% of collections finish within 30 draws. Explore the expectation, completion probabilities, graphs, and a Python simulation."
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-15T21:20:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "statistics"]
 tags: ["Probability", "Expected value", "Coupon collector’s problem", "Python"]

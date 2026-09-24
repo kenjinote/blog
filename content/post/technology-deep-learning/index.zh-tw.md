@@ -2,7 +2,7 @@
 title: "AI 的心臟：深度學習的運作機制 - 神經網路如何學習"
 description: "引發第三次 AI 浪潮，也是 ChatGPT 等基底技術的「深度學習（Deep Learning）」。本文將解說模仿人類腦神經的演算法，究竟是如何自行找出特徵的。"
 slug: "technology-deep-learning"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

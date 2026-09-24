@@ -2,7 +2,7 @@
 title: "The Depths of the Byzantine Generals Problem and Consensus Algorithms: How Paxos, Raft, and BFT Work"
 description: "An in-depth exploration of consensus algorithms, the foundation of distributed systems, from the origins of the Byzantine Generals Problem to Paxos, Raft, and BFT, which is resilient against malicious nodes, complete with theory, mathematical proofs, and code implementations."
 slug: byzantine-generals-problem-consensus
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T02:45:54+09:00
 image: eyecatch.jpg
 categories:
   - distributed-systems

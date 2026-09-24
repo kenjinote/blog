@@ -2,7 +2,7 @@
 title: "Dari Kepemilikan Menjadi Penggunaan: Bagaimana Cloud Computing Bekerja - Perubahan Besar dalam Infrastruktur TI"
 description: "Bagaimana cloud computing seperti Amazon Web Services (AWS) atau Google Cloud (GCP) mengubah TI untuk bisnis dan individu? Membahas perbedaan antara IaaS, PaaS, dan SaaS, serta dasar-dasar teknologi virtualisasi."
 slug: "technology-cloud-computing"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

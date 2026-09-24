@@ -2,7 +2,7 @@
 title: "欧拉多面体定理：V - E + F = 2 所展现的，形状改变也不变的拓扑学魔法"
 description: "详细解读欧拉多面体定理（V - E + F = 2）的数学之美，以及它所引领的拓扑学世界。从正多面体到跨越维度的欧拉示性数，让我们一起探索不变量的魅力。"
 slug: "eulers-polyhedron-formula"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

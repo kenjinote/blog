@@ -2,7 +2,7 @@
 title: "Physikalische Gesetze und alltägliche Technologie: Wie Lithium-Ionen-Batterien funktionieren - Die Chemie des Ladens und Entladens in der modernen mobilen Gesellschaft"
 description: "Von Smartphones bis hin zu Elektroautos sind 'Lithium-Ionen-Batterien' für die moderne Gesellschaft unverzichtbar. Warum sind sie so leicht und haben eine so hohe Kapazität? Wir erklären die dynamischen chemischen Reaktionen von Elektronen und Ionen in ihrem Inneren."
 slug: "physics-lithium-ion"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

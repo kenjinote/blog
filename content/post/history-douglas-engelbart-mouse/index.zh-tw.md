@@ -1,6 +1,5 @@
 ---
 title: "「滑鼠」的誕生與道格拉斯·恩格爾巴特：重新定義電腦與人類互動的先驅軌跡"
-date: "2026-09-24T16:08:36+09:00"
 description: "現在電腦操作中不可或缺的「滑鼠」是如何誕生的？從道格拉斯·恩格爾巴特「增強人類智力(Augmenting Human Intellect)」的思想，到1968年的The Mother of All Demos（展示之母），深入解析其波瀾壯闊的歷史。"
 slug: "history-douglas-engelbart-mouse"
 categories: ["history"]

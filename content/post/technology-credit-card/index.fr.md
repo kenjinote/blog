@@ -2,7 +2,7 @@
 title: "Réseau financier : Le mécanisme de paiement par carte de crédit - de l'autorisation à la compensation"
 description: "Quelles données sont échangées en coulisses au moment où une carte est scannée en magasin ? Nous expliquons les mécanismes d'« autorisation » et de « compensation » qui soutiennent le réseau de paiement mondial."
 slug: "technology-credit-card"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

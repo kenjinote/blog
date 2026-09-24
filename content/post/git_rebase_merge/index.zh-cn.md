@@ -1,7 +1,7 @@
 ---
 title: '【Git命令】rebase与merge的区别，以及在实际工作中的正确使用场景'
 slug: "git-rebase-vs-merge-practical-guide"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-13T09:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

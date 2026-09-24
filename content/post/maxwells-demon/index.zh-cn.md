@@ -1,7 +1,7 @@
 ---
 title: "麦克斯韦妖：打破物理学常识的“信息”能量"
 image: "eyecatch.jpg"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T00:00:00+09:00
 description: "仿佛打破热力学第二定律的思考实验“麦克斯韦妖”。它的悖论是如何被“信息物理学”所解开的？本文将结合数学公式和图解进行详细解说。"
 categories: ["physics", "information-theory"]
 tags: ["Thermodynamics", "Maxwell's Demon", "Entropy", "Landauer's Principle"]

@@ -2,7 +2,7 @@
 title: "선택 공리와 초른의 보조정리 - 수학의 기초를 뒤흔든 '선택'의 개념"
 description: "선택 공리와 초른의 보조정리에 대해, 직관적인 의미에서 수학적 정식화, 그리고 현대 수학에서의 중요성까지 깊이 파고듭니다."
 slug: "axiom-of-choice-and-zorns-lemma"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:20:37+09:00
 image: "eyecatch.jpg"
 categories: ["수학", "집합론"]
 tags: ["선택 공리", "초른의 보조정리", "ZFC 공리계", "수학기초론", "Mermaid", "KaTeX"]

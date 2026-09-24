@@ -2,7 +2,7 @@
 title: "Leonardo Fibonacci: O Gênio que Trouxe a Luz da Matemática para a Europa Medieval"
 description: 'Um mergulho profundo na vida de Fibonacci, na disseminação dos algarismos arábicos através do "Liber Abaci" e na incrível relação entre a sequência de Fibonacci e a proporção áurea na natureza.'
 slug: "fibonacci"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T18:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Matemática", "Biografia"]
 tags: ["Fibonacci", "Matemática", "História", "Proporção Áurea", "Liber Abaci"]

@@ -1,7 +1,7 @@
 ---
 title: 'RSA एन्क्रिप्शन को तोड़ें? GNFS और Shor के एल्गोरिदम की सूत्रों के साथ गहन व्याख्या'
 slug: "gnfs-to-shors-algorithm-math-deepdive"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-06T12:00:00+09:00
 tags: ["क्वांटम कंप्यूटर", "GNFS", "शोर का एल्गोरिदम", "क्रिप्टोग्राफी", "गणित"]
 image: "eyecatch.jpg"
 mermaid: true

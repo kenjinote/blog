@@ -8,7 +8,7 @@
 
 title: '[초보자용] Vim 입문: 설치부터 기본 실행 및 종료, 모드 설명까지'
 slug: "vim入門"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "텍스트 에디터"]
 draft: false
 image: "img.webp"

@@ -2,7 +2,7 @@
 title: "Netzwerktechnologie: P2P (Peer-to-Peer) Technologie erklärt - Die Macht dezentraler Systeme"
 description: "Die 'P2P'-Technologie, bei der einzelne Computer auf Augenhöhe kommunizieren, ohne von einem bestimmten Server abhängig zu sein. Wir erklären ausführlich alles von den grundlegenden Theorien bis hin zu den Konzepten, die zur modernen Blockchain geführt haben."
 slug: "history-of-p2p"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

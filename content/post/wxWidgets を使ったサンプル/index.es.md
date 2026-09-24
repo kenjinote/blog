@@ -5,7 +5,7 @@
 
 title: 'Cómo usar wxWidgets: desde la instalación hasta la creación de un proyecto de muestra'
 slug: "wxWidgets を使ったMuestra"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-04-18T00:18:22+09:00
 tags: ["wxWidgets", "Ejemplo"]
 draft: false
 image: "img.webp"

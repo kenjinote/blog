@@ -2,7 +2,7 @@
 title: "圖靈機與可計算性理論：艾倫·圖靈的思想實驗與「停機問題」"
 description: "計算的極限是什麼？我們將從數學與程式設計的角度，深入探討艾倫·圖靈提出的圖靈機概念，以及可計算性理論中的里程碑「停機問題」。"
 slug: turing-machine-computability
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
 categories:
   - 計算機科學

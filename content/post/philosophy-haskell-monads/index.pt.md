@@ -1,6 +1,5 @@
 ---
 title: "A Filosofia do Haskell e das Linguagens Funcionais Puras: O Mundo dos Mônadas e Seu Abismo"
-date: "2026-09-24T16:08:36+09:00"
 description: "Um guia completo que explora a fundo a filosofia da linguagem funcional pura Haskell, até a verdadeira natureza do muitas vezes considerado complexo \"Mônada\" (Monad). Explicamos o isolamento de efeitos colaterais, functores, applicatives e a beleza do mundo abstrato tecido pelos mônadas."
 slug: "philosophy-haskell-monads"
 categories: ["philosophy"]

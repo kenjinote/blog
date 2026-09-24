@@ -2,7 +2,7 @@
 title: "面向对象编程（OOP）的三大要素与SOLID原则实践：从历史到高级设计方法"
 description: "全面涵盖从面向对象编程的历史背景到三大要素（封装、继承、多态），再到SOLID原则的深入实践方法的完整指南。"
 slug: "object-oriented-programming-oop-solid-principles"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T14:51:08+09:00"
 image: "eyecatch.jpg"
 categories:
   - "computer-science"

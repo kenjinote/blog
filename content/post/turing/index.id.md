@@ -2,7 +2,7 @@
 title: "Alan Turing: Bapak Ilmu Komputer dan Jenius Matematika yang Tak Tertandingi"
 description: "Penjelasan rinci tentang kehidupan Alan Turing, pemecahan Enigma, mesin Turing, masalah penghentian, dan matematika morfogenesis. Menjelajahi bagaimana warisannya terus membentuk dunia modern."
 slug: "turing"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Matematika", "Biografi"]
 tags: ["Alan Turing", "Mesin Turing", "Enigma", "Masalah Penghentian", "Morfogenesis"]

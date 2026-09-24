@@ -2,7 +2,7 @@
 title: "Tiga Elemen Utama Pemrograman Berorientasi Objek (OOP) dan Praktik Prinsip SOLID: Dari Sejarah hingga Metode Desain Lanjutan"
 description: "Panduan lengkap yang mencakup latar belakang sejarah pemrograman berorientasi objek hingga tiga elemen utamanya (enkapsulasi, pewarisan, dan polimorfisme), serta cara mempraktikkan prinsip SOLID secara mendalam."
 slug: "object-oriented-programming-oop-solid-principles"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T14:51:08+09:00"
 image: "eyecatch.jpg"
 categories:
   - "computer-science"

@@ -2,7 +2,7 @@
 title: "GraphQL مقابل REST API (حل مشكلة الجلب الزائد وأمان النوع)"
 description: "حدود REST API، وجلب البيانات المرن وتطوير الواجهة الأمامية الآمنة للنوع الذي يوفره GraphQL."
 slug: "graphql-vs-rest-api-overfetching-type-safety"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "backend"

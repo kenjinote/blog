@@ -1,7 +1,7 @@
 ---
 title: '15 Must-Read Books Recommended for Beginner Engineers! From Programming Basics to Design'
 slug: "EngineerBeginnerにRecommendationのBook"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-05-05T16:03:33+09:00
 tags: ["Engineer", "Beginner", "Books"]
 draft: false
 image: "img.webp"

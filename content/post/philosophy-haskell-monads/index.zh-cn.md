@@ -1,6 +1,5 @@
 ---
 title: "Haskell与纯函数式语言的哲学：Monad的世界及其深渊"
-date: "2026-09-24T16:08:36+09:00"
 description: "这是一份详尽的指南，深入探讨了纯函数式语言Haskell的哲学，以及被认为晦涩难懂的「Monad」的真实面貌。文章将解析副作用的隔离、Functor、Applicative，以及Monad所交织出的抽象世界之美。"
 slug: "philosophy-haskell-monads"
 categories: ["philosophy"]

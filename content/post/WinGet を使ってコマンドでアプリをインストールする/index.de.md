@@ -1,7 +1,7 @@
 ---
 title: 'So installieren und verwalten Sie Apps einfach mit dem WinGet-Befehl von Windows 11'
 slug: "WinGet を使ってBefehlでAppをInstallationする"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-10-05T12:15:20+09:00
 tags: ["WinGet"]
 draft: false
 image: "img.webp"

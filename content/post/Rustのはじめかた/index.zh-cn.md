@@ -1,7 +1,7 @@
 ---
 title: 'Rust语言入门：从特点、安装到Hello World的入门指南'
 slug: "Rustのはじめかた"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-06T00:12:36+09:00
 tags: ["Rust"]
 draft: false
 image: "images/rust_logo.webp"

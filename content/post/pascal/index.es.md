@@ -2,7 +2,7 @@
 title: "Blaise Pascal: La trayectoria y los grandes logros de un genio de las matemáticas, la física y la filosofía"
 description: "Blaise Pascal, conocido por 'El hombre es una caña pensante'. Detallamos su turbulenta vida y logros, desde el teorema de Pascal, el triángulo de Pascal y la fundación de la teoría de la probabilidad, hasta la prueba del vacío en la física y su destino filosófico, los 'Pensamientos'."
 slug: "pascal"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T19:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["Matemáticas", "Biografía"]
 tags: ["Pascal", "Teoría de la probabilidad", "Geometría proyectiva", "Teorema de Pascal", "Triángulo de Pascal", "Física"]

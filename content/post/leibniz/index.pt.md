@@ -2,7 +2,7 @@
 title: "Gottfried Leibniz: A Vida e as Realizações Matemáticas de um Gênio Universal"
 description: "Um olhar aprofundado sobre a vida, os episódios e as realizações matemáticas — como o cálculo e o sistema binário — de Gottfried Wilhelm Leibniz, uma das maiores mentes do século XVII."
 slug: "leibniz"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Matemática", "Biografia"]
 tags: ["Leibniz", "Cálculo", "Binário", "Filosofia", "História da Matemática"]

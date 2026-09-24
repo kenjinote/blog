@@ -1,6 +1,5 @@
 ---
 title: "O que é a Lei de Parkinson? Explicação completa, do mecanismo de expansão de trabalho e tempo até como superá-la"
-date: "2026-09-24T16:08:36+09:00"
 description: "Sobre a Lei de Parkinson que diz \"o trabalho se expande para preencher o tempo disponível\", mergulharemos fundo no seu contexto histórico, mecanismo psicológico e métodos práticos para superá-la nos negócios e no dia a dia. Este é o guia completo para gestão de tempo e melhoria de produtividade."
 slug: "business-parkinsons-law"
 categories: ["business"]

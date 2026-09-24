@@ -2,7 +2,7 @@
 title: 'Pythagore : Le carrefour des mathematiques et du mysticisme'
 description: 'Une exploration approfondie de la vie du mathematicien de la Grece antique Pythagore, du theoreme de Pythagore et de la philosophie selon laquelle tout est nombre.'
 slug: 'pythagoras'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-20T18:40:00+09:00'
 image: "eyecatch.jpg"
 categories:
   - 'mathématiques'

@@ -1,7 +1,7 @@
 ---
 title: "¿'Positivo en la prueba' no siempre significa 'enfermedad'?: La falacia de la tasa base"
 description: "Incluso si das positivo en una prueba con un 99% de precisión, ¿la probabilidad real de estar enfermo es solo del 9%? Explicamos la 'falacia de la tasa base', donde la intuición humana es engañada por los datos estadísticos."
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "base-rate-fallacy"
 image: "img/base_rate_fallacy.jpg"

@@ -2,7 +2,7 @@
 title: "Finance et Technologie : L'histoire et le trading algorithmique du FX (Forex)"
 description: "Le marché des changes a commencé avec l'effondrement de l'étalon-or. Cet article explique comment sa rencontre avec Internet l'a transformé en un champ de bataille pour le trading algorithmique, où chaque milliseconde compte."
 slug: "finance-fx-algo"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "finance"

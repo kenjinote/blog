@@ -2,7 +2,7 @@
 title: "Alan Turing: El padre de la informática y un matemático genio sin igual"
 description: "Una explicación detallada de la vida de Alan Turing, el descifrado de Enigma, la máquina de Turing, el problema de la parada y las matemáticas de la morfogénesis. Explorando cómo su legado sigue dando forma al mundo moderno."
 slug: "turing"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Matemáticas", "Biografía"]
 tags: ["Alan Turing", "Máquina de Turing", "Enigma", "Problema de la parada", "Morfogénesis"]

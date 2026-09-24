@@ -2,7 +2,7 @@
 title: "순열, 조합 그리고 이항정리: 파스칼의 삼각형에서 보이는 아름다운 수의 규칙성"
 description: "순열, 조합, 이항정리, 그리고 파스칼의 삼각형이 엮어내는 수학적 구조에 대한 상세한 설명."
 slug: "permutations-combinations-and-binomial-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "수학"

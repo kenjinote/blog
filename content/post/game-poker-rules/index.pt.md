@@ -2,7 +2,7 @@
 title: "Esporte Mental: Regras e Teoria das Probabilidades do Poker (Texas Hold'em) - Um Jogo Onde Sorte e Habilidade se Cruzam"
 description: "O Texas Hold'em é o esporte mental definitivo, com prêmios de torneios mundiais que ultrapassam dezenas de milhões de dólares. Não é um simples jogo de azar; explicaremos a teoria das posições, cálculo de pot odds e a base matemática dos blefes."
 slug: "game-poker-rules"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

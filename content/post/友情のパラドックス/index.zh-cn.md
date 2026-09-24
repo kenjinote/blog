@@ -1,7 +1,7 @@
 ---
 title: "你的朋友比你朋友多：友谊悖论"
 description: "不必再为“我是不是朋友太少？”而烦恼。这其实是数学上已证明的网络特性。"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "friendship-paradox"
 image: "img/friendship_paradox.jpg"

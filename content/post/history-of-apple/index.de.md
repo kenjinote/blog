@@ -2,7 +2,7 @@
 title: "Die Geschichte von Apple: Von der Garage zum weltweit wertvollsten Unternehmen und die DNA der Innovation"
 description: "Eine detaillierte Erklärung der Geschichte und der technologischen Innovationen von Apple, angefangen bei der Gründung in der Garage durch Steve Jobs und Wozniak über die iPhone-Revolution bis hin zur weltweit höchsten Marktkapitalisierung."
 slug: "history-of-apple"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T03:35:47+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

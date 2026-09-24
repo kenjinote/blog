@@ -2,7 +2,7 @@
 title: '高木貞治：創立類域論的日本世界級數學家'
 description: '深入探討日本近代數學之父高木貞治的生平，以及他創立類域論這一偉大數學成就。'
 slug: 'takagi-teiji'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-20T19:50:00+09:00'
 image: "eyecatch.jpg"
 categories:
   - '數學'

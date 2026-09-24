@@ -1,6 +1,6 @@
 ---
 title: "공자의 생애와 철학: 시대를 초월한 '인(仁)'과 '예(礼)'의 지혜"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T19:53:32+09:00"
 categories: ["biography"]
 tags: ["confucius", "history"]
 image: "eyecatch.jpg"

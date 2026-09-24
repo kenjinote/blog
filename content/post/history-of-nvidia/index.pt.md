@@ -2,7 +2,7 @@
 title: "História da NVIDIA (GeForce): A Trajetória da Grande Transformação de Gráficos 3D ao Coração da IA (GPU)"
 description: "A história da NVIDIA, que se transformou de uma fabricante de placas gráficas para jogos na líder absoluta da revolução moderna da IA."
 slug: "history-of-nvidia"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T01:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

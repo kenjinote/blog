@@ -1,7 +1,7 @@
 ---
 title: 'प्रोग्रामर की आंखों के तनाव को कम करने वाले गैजेट्स और मॉनिटर सेटिंग्स'
 slug: "programmer-eye-strain-relief"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

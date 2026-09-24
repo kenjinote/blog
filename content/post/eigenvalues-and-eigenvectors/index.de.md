@@ -2,7 +2,7 @@
 title: "Eigenwerte und Eigenvektoren: Spezielle Vektoren, die unter Matrixtransformationen ihre Richtung nicht ändern, und ihre Anwendungen"
 description: "Eine detaillierte Erklärung von Eigenwerten und Eigenvektoren, einem der wichtigsten Konzepte der linearen Algebra, von ihrer geometrischen Bedeutung und spezifischen Berechnungsmethoden bis hin zu Anwendungen in maschinellem Lernen und Physik. Mit Python-Beispielen für ein intuitives Verständnis."
 slug: "eigenvalues-and-eigenvectors"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematik"]
 tags: ["lineare-algebra", "eigenwert", "eigenvektor", "mathematik", "maschinelles-lernen", "python", "datenwissenschaft"]

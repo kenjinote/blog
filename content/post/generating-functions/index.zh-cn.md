@@ -2,7 +2,7 @@
 title: "生成函数：将数列变成“函数”有什么好处？"
 description: "介绍如何将硬币的支付方式或组合数作为方程的系数来计算。讲解生成函数的魔力，以及它在斐波那契数列中的应用。"
 slug: "generating-functions"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

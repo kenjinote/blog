@@ -2,7 +2,7 @@
 title: "Teorema Sandwich Ham: Bisakah Anda Membelah 3 Bahan dengan Satu Potongan?"
 description: "Penjelasan rinci tentang Teorema Sandwich Ham, yang menyatakan bahwa selalu ada bidang yang membagi tiga objek secara bersamaan dalam ruang 3D, dari pendekatan intuitif hingga teorema Borsuk-Ulam."
 slug: "ham-sandwich-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matematika"

@@ -1,7 +1,7 @@
 ---
 title: "L'argument de l'Apocalypse (Doomsday Argument) : L'humanité va-t-elle bientôt s'éteindre ? La troublante conclusion dictée par les probabilités"
 image: "eyecatch.jpg"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T00:00:00+09:00
 description: "Une explication détaillée, avec des formules mathématiques, du paradoxe troublant dicté par la théorie des probabilités appelé « l'argument de l'Apocalypse (Doomsday Argument) », selon lequel « il est très probable que plus de la moitié de l'histoire de l'humanité soit déjà écoulée »."
 categories: ["paradoxes", "probability-theory"]
 tags:

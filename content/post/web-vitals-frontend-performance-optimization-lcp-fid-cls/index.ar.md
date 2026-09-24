@@ -2,7 +2,7 @@
 title: "مؤشرات الويب الحيوية (Web Vitals) وتحسين أداء الواجهة الأمامية (تحسين LCP و FID و CLS)"
 description: "تفاصيل كل مؤشر من مؤشرات الويب الحيوية الأساسية (Core Web Vitals) وطرق تنفيذ الواجهة الأمامية المحددة لتحسينها."
 slug: "web-vitals-frontend-performance-optimization-lcp-fid-cls"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

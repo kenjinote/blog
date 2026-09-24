@@ -2,7 +2,7 @@
 title: "霍奇猜想 (Hodge Conjecture) - 連結代數幾何與拓樸學的千禧年大獎難題"
 description: "關於克雷數學研究所的千禧年大獎難題之一的霍奇猜想，我們將從其作為代數幾何與拓樸學橋樑的角色，徹底解說其深奧的數學背景。"
 slug: "hodge-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]
 tags: ["千禧年大獎難題", "拓樸學", "代數幾何學", "霍奇猜想"]

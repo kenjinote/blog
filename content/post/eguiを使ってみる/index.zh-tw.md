@@ -1,7 +1,7 @@
 ---
 title: 'Rust輕量GUI函式庫「egui」的入門與範例執行步驟'
 slug: "eguiを使ってみる"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-03-18T10:27:02+09:00
 tags: ["rsut", "egui", "GUI函式庫"]
 draft: false
 image: "demo.gif"

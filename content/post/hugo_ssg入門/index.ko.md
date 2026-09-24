@@ -1,7 +1,7 @@
 ---
 title: 'Hugo를 사용한 정적 사이트 생성기 입문 (WordPress에서 마이그레이션하는 절차)'
 slug: "hugo-static-site-generator-wordpress-migration"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-13T02:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -116,7 +116,7 @@ Hugo의 각 기사 파일은 최상단에 'Front Matter(프런트매터)'라고 
 ```yaml
 ---
 title: "Hugo의 택소노미를 이해하기"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-13T10:00:00+09:00
 draft: false
 categories:
   - "기술 해설"

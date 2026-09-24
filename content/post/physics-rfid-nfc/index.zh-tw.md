@@ -2,7 +2,7 @@
 title: "物理定律與生活科技：RFID與NFC（行動支付）的原理 - 電磁感應的非接觸式通訊"
 description: "只需將Suica、PASMO或行動支付裝置在閘門感應一下即可完成付款，這宛如魔法般的技術。本文將為您解說其背後的「電磁感應」物理定律與NFC的通訊規格。"
 slug: "physics-rfid-nfc"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

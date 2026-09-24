@@ -2,7 +2,7 @@
 title: "ルネ・デカルト：近代哲学の父にして解析幾何学の創始者"
 description: "「我思う、ゆえに我あり」で知られるルネ・デカルト。彼の数奇な生涯と、数学史に革命をもたらした解析幾何学の誕生について詳しく解説します。"
 slug: "descartes"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T18:50:00+09:00
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

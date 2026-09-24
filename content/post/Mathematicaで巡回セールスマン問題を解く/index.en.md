@@ -1,7 +1,7 @@
 ---
 title: 'How to Solve the Traveling Salesperson Problem (TSP) in Mathematica'
 slug: "MathematicaでTravelling Salesman Problemを解く"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "Traveling Salesperson Problem", "Algorithm", "Mathematics"]
 draft: false
 image: "img.webp"

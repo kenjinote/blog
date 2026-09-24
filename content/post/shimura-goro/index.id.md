@@ -2,7 +2,7 @@
 title: "Goro Shimura: Kehidupan dan Pencapaian Puncak Raksasa dalam Matematika Modern"
 description: 'Goro Shimura, matematikawan terkenal di dunia yang dikenal karena Konjektur Taniyama-Shimura. Artikel ini merinci kehidupan keras dan pencapaian mendalamnya dalam teori bilangan.'
 slug: "shimura-goro"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
 categories: ["matematika", "biografi"]
 tags: ["Goro Shimura", "Teori Bilangan", "Konjektur Taniyama-Shimura", "Teorema Terakhir Fermat"]

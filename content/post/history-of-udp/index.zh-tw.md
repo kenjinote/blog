@@ -2,7 +2,7 @@
 title: "網路技術：UDP 技術解說 - 追求速度的無連線通訊"
 description: "為什麼線上遊戲和視訊通話可以無延遲地通訊？為您解說捨棄「送達保證」以換取「壓倒性速度」的 UDP 協定之運作原理。"
 slug: "history-of-udp"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -2,7 +2,7 @@
 title: "毛玉の定理（Hairy Ball Theorem） - 「毛の生えたボールは綺麗に梳かせない」トポロジーの定理"
 description: "位相幾何学（トポロジー）の有名な定理である「毛玉の定理（Hairy Ball Theorem）」について、直感的な理解から数学的な厳密な証明、そして気象学やコンピュータグラフィックスなどの実世界の応用まで、詳しく解説します。"
 slug: "hairy-ball-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "topology"]
 tags:

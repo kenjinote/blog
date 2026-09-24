@@ -2,7 +2,7 @@
 title: "Gilles Personne de Roberval: Pioneer of Indivisibles and Kinematic Geometry"
 description: "Gilles Personne de Roberval was one of the leading French mathematicians of the 17th century. Active on the eve of the calculus, we delve deeply into his life and achievements, including the method of indivisibles, cycloid area calculations, kinematic tangents, and the invention of the 'Roberval balance'."
 slug: "roberval"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

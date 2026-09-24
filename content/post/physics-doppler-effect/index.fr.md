@@ -2,7 +2,7 @@
 title: "Mystères de la physique : L'effet Doppler - De la sirène d'ambulance à l'expansion de l'univers"
 description: "Le mécanisme de l'« effet Doppler », où un son qui s'approche est perçu comme aigu et un son qui s'éloigne comme grave, et pourquoi cela révèle les mystères de l'univers."
 slug: "physics-doppler-effect"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T02:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

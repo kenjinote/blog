@@ -2,7 +2,7 @@
 title: '심슨의 역설: 부분에서는 이기는데 전체에서는 지는 수수께끼의 현상'
 slug: 'simpsons-paradox'
 description: '각 부서의 「합격률」에서는 이기는데, 회사 전체의 「총 합격률」을 계산하면 역전되어 져버린다!? 통계 데이터가 우리를 속이는 무서운 함정 「심슨의 역설」을 알기 쉽게 해설합니다.'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T07:00:00+09:00'
 image: 'img/simpsons_paradox.jpg'
 math: true
 mermaid: true

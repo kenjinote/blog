@@ -1,7 +1,7 @@
 ---
 title: 'Ollama를 이용한 로컬 LLM의 간단한 구축 및 API 연동'
 slug: "ollama-local-llm-api-guide"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T02:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

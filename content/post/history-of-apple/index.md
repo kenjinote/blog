@@ -2,7 +2,7 @@
 title: "Appleの歴史: ガレージから時価総額世界一への軌跡と革新のDNA"
 description: "スティーブ・ジョブズとウォズニアックのガレージ創業から、iPhone革命、時価総額世界一に至るAppleの歴史と技術的革新を徹底解説。"
 slug: "history-of-apple"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T03:35:47+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

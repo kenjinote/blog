@@ -2,7 +2,7 @@
 title: "Mind Sports: Poker (Texas Hold'em) Rules and Probability Theory - A Game Where Luck and Skill Intersect"
 description: "Texas Hold'em is the ultimate mind sport with world championship prize pools exceeding 10 billion yen. We explain position theory, odds calculation, and the mathematical basis of bluffing in what is more than just a gamble."
 slug: "game-poker-rules"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

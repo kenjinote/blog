@@ -1,6 +1,6 @@
 ---
 title: "老子：道教之祖，籠罩於謎團中的生平與《道德經》的深淵"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:53:32+09:00
 categories: ["biography"]
 tags: ["laozi", "history"]
 image: "eyecatch.jpg"

@@ -2,7 +2,7 @@
 title: "Die Verschärfung der 'neuen digitalen Kluft' durch die Evolution der generativen KI"
 description: "Eine tiefgreifende Betrachtung der neuen digitalen Kluft, die sich durch die rasante Entwicklung der KI-Technologie vom Zugang zu Hardware und Internet hin zur 'Fähigkeit des Promptings und der Orchestrierung' verlagert hat."
 slug: "generative-ai-digital-divide"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

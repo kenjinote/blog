@@ -2,7 +2,7 @@
 title: "微前端架构（不断膨胀的SPA的拆分策略）"
 description: "拆分复杂化的前端单体应用，提高团队自治性的微前端实现模式。"
 slug: "micro-frontends-architecture-spa-division"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

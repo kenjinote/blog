@@ -1,7 +1,7 @@
 ---
 title: 'ما هي ''مسألة FizzBuzz'' التي تعد بوابة الدخول للبرمجة؟ شرح كيفية كتابتها بلغة Python'
 slug: "FizzBuzz"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "خوارزمية"]
 draft: false
 image: "eyecatch.jpg"

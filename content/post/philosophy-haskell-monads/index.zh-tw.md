@@ -1,6 +1,5 @@
 ---
 title: "Haskell 與純函數式程式語言的哲學：單子 (Monad) 的世界與其深淵"
-date: "2026-09-24T16:08:36+09:00"
 description: "從純函數式程式語言 Haskell 的哲學出發，徹底深入探討被認為艱澀難懂的「單子 (Monad)」真實面貌的完整指南。本文將解說副作用的隔離、函子 (Functor)、應用函子 (Applicative)，以及由單子交織而成的抽象世界之美。"
 slug: "philosophy-haskell-monads"
 categories: ["philosophy"]

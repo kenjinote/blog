@@ -2,7 +2,7 @@
 title: "Masa Kini dan Masa Depan WebAssembly (Wasm): Bagaimana C/Rust Berjalan di Browser"
 description: "Penjelasan lengkap tentang semua aspek Wasm, mulai dari arsitektur WebAssembly, proses kompilasi, integrasi dengan JS, hingga potensinya di luar browser (WASI)."
 slug: "webassembly-wasm-current-future"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T17:10:00+09:00
 image: eyecatch.jpg
 categories:
   - "web-development"

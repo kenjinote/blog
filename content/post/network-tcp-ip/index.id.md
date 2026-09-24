@@ -2,7 +2,7 @@
 title: "Teknologi Jaringan: Sejarah dan Mekanisme TCP/IP - Aturan Standar Global yang Menghubungkan Internet"
 description: "Mengapa setiap komputer di seluruh dunia dapat berkomunikasi satu sama lain, terlepas dari perbedaan produsen dan OS? Kami mengungkap filosofi dan sejarah dari rangkaian protokol 'TCP/IP' yang menjadi dasar internet."
 slug: "network-tcp-ip"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

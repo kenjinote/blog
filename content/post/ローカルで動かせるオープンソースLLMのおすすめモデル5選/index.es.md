@@ -1,7 +1,7 @@
 ---
 title: 'Los 5 mejores modelos de LLM de código abierto para ejecutar localmente'
 slug: 'top-5-open-source-local-llms'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-11T03:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true

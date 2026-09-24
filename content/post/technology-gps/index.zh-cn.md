@@ -2,7 +2,7 @@
 title: "位置信息的基础：GPS的运作原理 - 相对论与人造卫星交织的奇迹技术"
 description: "为什么智能手机的地图应用能知道你的当前位置？本文将解说来自太空中飞行的GPS卫星的电波，以及利用爱因斯坦相对论进行精密时间计算的机制。"
 slug: "technology-gps"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

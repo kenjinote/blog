@@ -1,6 +1,6 @@
 ---
 title: "孫武：史上最高の兵法書『孫子』を生み出した天才軍略家の軌跡"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:53:32+09:00
 categories: ["biography"]
 tags: ["sun-tzu", "history"]
 image: "eyecatch.jpg"

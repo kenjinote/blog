@@ -2,7 +2,7 @@
 title: "Das Möbiusband und die Kleinsche Flasche: Die Faszinierende Welt der Flächen ohne 'Innen' oder 'Außen'"
 description: "Eine detaillierte Erklärung nicht-orientierbarer Flächen in der Topologie, insbesondere des Möbiusbandes und der Kleinschen Flasche, unter Verwendung mathematischer Formeln und Diagramme."
 slug: "mobius-strip-and-klein-bottle"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T15:15:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematik"]
 tags: ["topologie", "geometrie", "moebiusband", "kleinsche-flasche"]

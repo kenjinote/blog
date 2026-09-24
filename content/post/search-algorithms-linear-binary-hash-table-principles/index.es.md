@@ -2,7 +2,7 @@
 title: "Algoritmos de búsqueda (principios de búsqueda lineal, binaria y tabla hash)"
 description: "Algoritmos de búsqueda para encontrar un valor deseado en los datos. Explicamos desde los conceptos básicos de búsqueda lineal y binaria hasta los principios de las tablas hash que logran búsquedas rápidas."
 slug: "search-algorithms-linear-binary-hash-table-principles"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-22T02:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "search", "binary-search", "hash-table", "data-structures"]

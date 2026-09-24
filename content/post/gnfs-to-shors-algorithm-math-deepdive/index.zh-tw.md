@@ -1,7 +1,7 @@
 ---
 title: '破解RSA密碼？透過數學公式徹底解說GNFS與Shor演算法'
 slug: "gnfs-to-shors-algorithm-math-deepdive"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-06T12:00:00+09:00
 tags: ["量子電腦", "GNFS", "Shor演算法", "密碼破解", "數學"]
 image: "eyecatch.jpg"
 mermaid: true

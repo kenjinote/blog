@@ -2,7 +2,7 @@
 title: "素数定理（Prime Number Theorem） - 素数の分布が対数関数に近づいていくという法則"
 description: "素数の出現規則性に関する数学の金字塔、素数定理（Prime Number Theorem）について深く解説します。素数計数関数からリーマン予想との関係性まで。"
 slug: "prime-number-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "algorithms"]
 tags:

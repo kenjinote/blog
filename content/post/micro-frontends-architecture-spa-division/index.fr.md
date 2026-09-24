@@ -2,7 +2,7 @@
 title: "Architecture des Micro-Frontends (Méthode de division des SPA volumineuses)"
 description: "Modèles d'implémentation de micro-frontends pour diviser les monolithes front-end complexes et améliorer l'autonomie des équipes."
 slug: "micro-frontends-architecture-spa-division"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

@@ -1,7 +1,7 @@
 ---
 title: 'Lista resumida de ações recomendadas de excelentes empresas de alto rendimento de dividendos no Japão'
 slug: "高配当Açõesまとめ"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-12-22T00:56:14+09:00
 tags: ["Ações"]
 draft: false
 image: "img.webp"

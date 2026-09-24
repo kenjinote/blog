@@ -2,7 +2,7 @@
 title: "Hukum Benford: Mengapa Banyak Angka Berawalan 1?"
 description: "Mengeksplorasi hukum matematika misterius yang tersembunyi dalam data alam, yang juga digunakan untuk mendeteksi penipuan akuntansi."
 slug: "benfords-law"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-15T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matematika"

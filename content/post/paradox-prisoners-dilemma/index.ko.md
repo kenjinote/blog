@@ -5,7 +5,7 @@ slug: "paradox-prisoners-dilemma"
 categories: ["philosophy"]
 tags: ["game-theory", "prisoners-dilemma", "strategy"]
 image: "eyecatch.jpg"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-24T15:00:00+09:00"
 ---
 
 # 죄수의 딜레마(Prisoner's Dilemma): 게임 이론이 제시하는 궁극의 역설

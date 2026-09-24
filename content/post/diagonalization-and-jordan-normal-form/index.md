@@ -2,7 +2,7 @@
 title: "対角化とジョルダン標準形：複雑な行列を限界までシンプルに表現する分類法"
 description: "線形代数における対角化と、対角化できない行列のためのジョルダン標準形について、その直観的意味から数学的定義、そして応用までを詳細に解説します。"
 slug: "diagonalization-and-jordan-normal-form"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["linear-algebra", "matrix", "eigenvalue", "jordan-normal-form"]

@@ -2,7 +2,7 @@
 title: "Pierre de Fermat : le « Prince des amateurs » qui écrivait des romances dans les marges"
 description: "Une explication détaillée de la vie et des extraordinaires réalisations mathématiques (Dernier théorème de Fermat, Petit théorème, début du calcul infinitésimal, etc.) de Pierre de Fermat, juge français du XVIIe siècle qui a laissé une marque immortelle dans l'histoire des mathématiques."
 slug: "fermat"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathématiques", "biographie"]
 tags: ["Fermat", "Histoire des mathématiques", "Dernier théorème de Fermat", "Théorie des nombres", "Théorie des probabilités"]

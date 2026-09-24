@@ -2,7 +2,7 @@
 title: "デザインパターン再考：GoFは時代遅れか？現代のベストプラクティス"
 description: "1994年に提唱されたGoFデザインパターン。現代のモダンなプログラミング言語において、それらはまだ有効なのか？関数型プログラミングの影響や新しいパラダイムを交え、現代の設計のベストプラクティスを深く考察します。"
 slug: "design-patterns-modern-practices"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "architecture"

@@ -2,7 +2,7 @@
 title: "WebRTC与实时通信的内幕：P2P、STUN/TURN、信令"
 description: "浏览器之间直接进行通信的WebRTC机制。彻底剖析NAT穿透（STUN/TURN）、信令服务器、ICE协议等复杂的内部原理。"
 slug: "webrtc-realtime-communication-p2p"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T17:10:00+09:00
 image: eyecatch.jpg
 categories:
   - "network"

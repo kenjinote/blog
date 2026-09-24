@@ -2,7 +2,7 @@
 title: 'Berry-Paradoxon: Der Widerspruch, der entsteht, wenn man versucht, "Zahlen" mit "Wörtern" zu definieren'
 slug: 'berry-paradox'
 description: 'Die Phrase "die kleinste ganze Zahl, die nicht mit höchstens 19 Zeichen ausgedrückt werden kann" drückt diese Zahl selbst in weniger als 19 Zeichen aus!? Wir erklären ein kurzes und schönes Paradoxon, das an der Grenze zwischen Alltagssprache und Mathematik entsteht.'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T11:00:00+09:00'
 image: 'img/berry_paradox.jpg'
 math: true
 mermaid: true

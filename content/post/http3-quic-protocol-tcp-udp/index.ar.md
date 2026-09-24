@@ -2,7 +2,7 @@
 title: "HTTP/3 و بروتوكول QUIC: حدود TCP والابتكار بواسطة UDP"
 description: "شرح مفصل لبروتوكولات الاتصال الشبكي للجيل القادم، لماذا ظهر HTTP/3 وبروتوكول QUIC، حل مشكلة حظر رأس السطر (Head-of-Line Blocking)، وتسريع تأسيس الاتصال."
 slug: "http3-quic-protocol-tcp-udp"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T17:10:00+09:00
 image: eyecatch.jpg
 categories:
   - "network"

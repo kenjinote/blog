@@ -2,7 +2,7 @@
 title: "Laplace Transform: The Technique of Transforming Difficult Differential Equations into Algebraic Equations"
 description: "A thorough explanation from the basics of the Laplace transform to its application in differential equations. We explore the essence of this powerful mathematical tool that transitions between the time domain and the complex frequency domain."
 slug: "laplace-transform"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

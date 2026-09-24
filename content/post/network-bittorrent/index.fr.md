@@ -2,7 +2,7 @@
 title: "Technologie réseau : Explication technique de BitTorrent - Le mécanisme de distribution décentralisée efficace pour les fichiers volumineux"
 description: "Même si des dizaines de milliers de personnes téléchargent simultanément une image d'OS de plusieurs gigaoctets, le serveur ne plante pas. Nous expliquons la fragmentation de fichiers et l'algorithme d'échange de données révolutionnaires du chef-d'œuvre P2P « BitTorrent »."
 slug: "network-bittorrent"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

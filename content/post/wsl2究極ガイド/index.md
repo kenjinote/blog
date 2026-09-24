@@ -1,7 +1,7 @@
 ---
 title: 'WSL2（Windows Subsystem for Linux）の究極の開発環境設定ガイド'
 slug: 'wsl2-ultimate-development-setup-guide'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-12T23:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true

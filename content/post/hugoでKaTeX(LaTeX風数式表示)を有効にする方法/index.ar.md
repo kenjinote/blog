@@ -1,7 +1,7 @@
 ---
 title: 'كيفية دمج KaTeX في Hugo وعرض معادلات رياضية جميلة بأسلوب LaTeX'
 slug: "hugoでKaTeX(LaTeX風صيغة رياضية表示)を有効にする方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-03-31T23:11:26+09:00
 tags: ["KaTeX", "LaTeX", "معادلات", "رياضيات", "hugo"]
 draft: false
 math: true

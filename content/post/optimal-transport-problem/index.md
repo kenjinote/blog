@@ -2,7 +2,7 @@
 title: "最適輸送問題：砂山を最小の手間で移す数学"
 description: "移動する量と距離から輸送コストを考え、分布同士の違いを測るワッサースタイン距離へつなげます"
 slug: "optimal-transport-problem"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T12:00:00+09:00
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

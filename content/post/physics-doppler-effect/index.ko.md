@@ -2,7 +2,7 @@
 title: "물리학의 신비: 도플러 효과 - 구급차 사이렌에서 우주의 팽창까지"
 description: "가까워지는 소리는 높게, 멀어지는 소리는 낮게 들리는 '도플러 효과'의 원리와 그것이 우주의 수수께끼를 푸는 이유."
 slug: "physics-doppler-effect"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T02:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

@@ -2,7 +2,7 @@
 title: "Transações em RDBMS e Propriedades ACID (Níveis de Isolamento e Bloqueio)"
 description: "Desde os fundamentos do processamento de transações que protegem a integridade do banco de dados, até anomalias devido aos níveis de isolamento e mecanismos de bloqueio."
 slug: "rdbms-transaction-acid-isolation-level-lock"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "database"

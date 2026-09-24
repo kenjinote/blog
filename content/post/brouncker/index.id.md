@@ -2,7 +2,7 @@
 title: "William Brouncker: Presiden Pertama Royal Society dan Pecahan Berlanjut"
 description: "Penjelasan rinci tentang kehidupan fisikawan dan matematikawan Inggris William Brouncker serta pencapaian matematisnya seperti pecahan berlanjut Pi dan persamaan Pell. Dari tantangan Fermat hingga aktivitasnya di Royal Society."
 slug: "brouncker"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Matematika", "Biografi"]
 tags: ["William Brouncker", "Pi", "Pecahan Berlanjut", "Persamaan Pell", "Royal Society"]

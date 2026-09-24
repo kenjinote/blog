@@ -2,7 +2,7 @@
 title: "Bernhard Riemann: A Vida e as Realizações do Gênio que Abriu a Porta para a Matemática Moderna"
 description: "Mergulhe profundamente na vida turbulenta de Bernhard Riemann e em suas realizações matemáticas, como a Hipótese de Riemann e a geometria riemanniana, que influenciaram grandemente a matemática e a física modernas."
 slug: "riemann"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matemática"

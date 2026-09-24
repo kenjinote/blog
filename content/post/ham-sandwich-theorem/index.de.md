@@ -2,7 +2,7 @@
 title: "Der Schinken-Sandwich-Satz: Kann man 3 Zutaten mit einem Schnitt halbieren?"
 description: "Eine detaillierte Erklärung des Schinken-Sandwich-Satzes, der besagt, dass es immer eine Ebene gibt, die drei Objekte im 3D-Raum gleichzeitig halbiert, von einem intuitiven Ansatz bis zum Borsuk-Ulam-Satz."
 slug: "ham-sandwich-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematik"

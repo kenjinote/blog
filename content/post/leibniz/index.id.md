@@ -2,7 +2,7 @@
 title: "Gottfried Leibniz: Kehidupan dan Pencapaian Matematika Sang Jenius Universal"
 description: "Pandangan mendalam tentang kehidupan, episode, dan pencapaian matematika—seperti kalkulus dan sistem biner—dari Gottfried Wilhelm Leibniz, salah satu pemikir terhebat abad ke-17."
 slug: "leibniz"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Matematika", "Biografi"]
 tags: ["Leibniz", "Kalkulus", "Biner", "Filsafat", "Sejarah Matematika"]

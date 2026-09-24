@@ -2,7 +2,7 @@
 title: "Niels Henrik Abel: O Gênio Trágico que Negou a Fórmula da Equação Quíntica"
 description: "Niels Henrik Abel, um brilhante matemático norueguês. Este artigo explora sua vida turbulenta e o monumental legado que deixou na matemática moderna antes de sua morte trágica aos 26 anos."
 slug: "abel"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Matemática", "Biografia"]
 tags: ["Abel", "Álgebra", "História", "Matemática"]

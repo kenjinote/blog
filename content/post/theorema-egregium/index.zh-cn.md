@@ -2,7 +2,7 @@
 title: "高斯的绝妙定理（Theorema Egregium） - 也可应用于吃披萨方式的微分几何学金字塔"
 description: "深入解析卡尔·弗里德里希·高斯发现的「绝妙定理」，从其数学背景，一直探讨到我们在日常生活中吃披萨时的应用。"
 slug: "theorema-egregium"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:11:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]
 tags: ["几何学", "高斯", "披萨定理", "Theorema Egregium", "微分几何"]

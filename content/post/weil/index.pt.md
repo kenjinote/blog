@@ -2,7 +2,7 @@
 title: "André Weil: Gigante da Matemática do Século XX, Bourbaki e as Conjecturas de Weil"
 description: "Uma exploração aprofundada da vida dramática de André Weil, a fundação do Bourbaki e as conjecturas de Weil que revolucionaram a geometria algébrica e a teoria dos números."
 slug: "weil"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
 categories: ["matemática", "biografia"]
 tags: ["André Weil", "Bourbaki", "Geometria Algébrica", "Teoria dos Números"]

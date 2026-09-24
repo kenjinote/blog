@@ -2,7 +2,7 @@
 title: "Netzwerktechnologie: Der Wandel von IPv4 zu IPv6 und das Internet der nächsten Generation"
 description: "IP-Adressen sind die Adressen des Internets. Wir erklären, wie das mit nur 4,3 Milliarden Adressen ausgestattete IPv4 die Krise der Erschöpfung überwand und zum IPv6 mit seinem unendlichen Raum übergeht."
 slug: "history-of-ipv6"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

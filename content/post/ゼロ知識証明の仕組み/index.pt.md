@@ -1,7 +1,7 @@
 ---
 title: 'O Funcionamento das Provas de Conhecimento Zero (ZKP) e as Últimas Aplicações em Web3 e Segurança'
 slug: "zero-knowledge-proofs-zkp-web3-security"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

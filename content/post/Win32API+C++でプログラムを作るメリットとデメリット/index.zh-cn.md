@@ -1,7 +1,7 @@
 ---
 title: '使用Win32API＋C++开发Windows应用！现役工程师讲解优缺点'
 slug: "Win32API+C++でプログラムを作るメリットとデメリット"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-07-12T12:30:35+09:00
 tags: ["Win32API", "C++", "编程", "开发", "技术"]
 draft: false
 image: "img_1.webp"

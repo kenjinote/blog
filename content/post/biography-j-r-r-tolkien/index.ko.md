@@ -1,6 +1,6 @@
 ---
 title: "J.R.R. 톨킨: 현대 판타지의 아버지의 발자취와 신화의 창조"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T20:51:46+09:00"
 categories: ["biography"]
 tags: ["j-r-r-tolkien", "history"]
 image: "eyecatch.jpg"

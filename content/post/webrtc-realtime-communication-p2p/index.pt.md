@@ -2,7 +2,7 @@
 title: "Os Bastidores do WebRTC e Comunicação em Tempo Real: P2P, STUN/TURN, Sinalização"
 description: "Como funciona o WebRTC para comunicação direta entre navegadores. Uma análise detalhada dos bastidores complexos como travessia de NAT (STUN/TURN), servidores de sinalização e o protocolo ICE."
 slug: "webrtc-realtime-communication-p2p"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T17:10:00+09:00
 image: eyecatch.jpg
 categories:
   - "network"

@@ -1,7 +1,7 @@
 ---
 title: "鸽巢原理与哈希冲突：揭开密码技术极限与安全性的奥秘"
 image: "eyecatch.jpg"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T00:00:00+09:00"
 description: "直观易懂的“鸽巢原理”，为何会成为现代密码技术和哈希函数安全性中最重要的概念。本文将结合具体例子、数学公式和图解进行深入解说。"
 categories: ["technology", "cryptography", "mathematics"]
 tags: ["Hash", "Pigeonhole Principle", "Security", "Algorithm", "KaTeX", "Mermaid"]

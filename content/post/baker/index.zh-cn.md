@@ -2,7 +2,7 @@
 title: "阿兰·贝克：彻底改变超越数论的菲尔兹奖得主数学家"
 description: "深入探讨1970年因对数线性形式的定理而获得菲尔兹奖的英国数学家阿兰·贝克的生平与数学成就。"
 slug: "baker"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "传记"]
 tags: ["Alan Baker", "数论", "菲尔兹奖", "超越数论"]

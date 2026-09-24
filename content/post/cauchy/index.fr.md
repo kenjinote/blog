@@ -2,7 +2,7 @@
 title: "Augustin-Louis Cauchy : Le Père de l'Analyse Rigoureuse et sa Vie Tumultueuse"
 description: "Une exploration détaillée de la vie du grand mathématicien français Augustin-Louis Cauchy et de ses nombreuses réalisations mathématiques en analyse et en théorie des fonctions complexes."
 slug: "cauchy"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T19:20:00+09:00
 image: "eyecatch.jpg"
 categories:
   - "mathématiques"

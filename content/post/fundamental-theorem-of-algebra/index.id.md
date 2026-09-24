@@ -2,7 +2,7 @@
 title: "Teorema Fundamental Aljabar: Bukti bahwa Persamaan Derajat n Selalu Memiliki n Akar Kompleks"
 description: "Penjelasan terperinci tentang sejarah, makna intuitif, dan bukti indah dari teorema fundamental aljabar menggunakan analisis kompleks (teorema Liouville)."
 slug: "fundamental-theorem-of-algebra"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matematika"

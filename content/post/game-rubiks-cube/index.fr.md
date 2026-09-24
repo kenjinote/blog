@@ -2,7 +2,7 @@
 title: "Algorithmes de puzzle : Comment résoudre le Rubik's Cube et ses algorithmes - Résoudre 43 milliards de milliards de combinaisons"
 description: "Souvent considéré comme impossible à résoudre par soi-même, le Rubik's Cube peut en réalité être complété sur ses 6 faces par n'importe qui en mémorisant simplement quelques algorithmes (séquences). Nous expliquons le monde de ce puzzle entrelacé de théorie des groupes et de mathématiques."
 slug: "game-rubiks-cube"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

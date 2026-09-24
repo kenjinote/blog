@@ -2,7 +2,7 @@
 title: "Equações de Yang-Mills e a Lacuna de Massa - Fundamentos Matemáticos do 'Modelo Padrão' da Física de Partículas"
 description: "Explicaremos de forma simples o contexto físico e as dificuldades matemáticas do 'Problema de Yang-Mills e a Lacuna de Massa', um dos Problemas do Milênio."
 slug: "yang-mills-mass-gap"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
 categories: ["physics", "mathematics"]
 tags:

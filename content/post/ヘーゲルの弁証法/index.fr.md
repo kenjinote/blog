@@ -1,7 +1,7 @@
 ---
 title: 'Qu''est-ce que la dialectique de Hegel ? Le concept d''Aufheben (dépassement) et son application au quotidien et en programmation'
 slug: "HegelのDialectique"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-09T23:13:19+09:00
 tags: ["Philosophie", "Hegel", "Dialectique"]
 draft: false
 image: "images/img.webp"

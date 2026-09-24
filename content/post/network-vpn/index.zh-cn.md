@@ -2,7 +2,7 @@
 title: "虚拟专线：VPN 的工作原理 - 互联网上的安全隧道"
 description: "远程办公必不可少的 VPN（虚拟专用网络）。我们将为您讲解如何通过加密和封装，在任何人都能窥探的互联网上，打造一个“专属的安全隧道”。"
 slug: "network-vpn"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -1,7 +1,7 @@
 ---
 title: 'Como Começar com a Biblioteca GUI Leve ''egui'' do Rust e Executar Exemplos'
 slug: "eguiを使ってみる"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-03-18T10:27:02+09:00
 tags: ["rsut", "egui", "Biblioteca GUI"]
 draft: false
 image: "demo.gif"

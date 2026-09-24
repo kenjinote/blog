@@ -2,7 +2,7 @@
 title: "Théorème de la boule chevelue (Hairy Ball Theorem) - Le théorème de topologie selon lequel « on ne peut pas peigner une boule chevelue sans faire d'épi »"
 description: "Nous expliquons en détail le célèbre théorème de topologie appelé « théorème de la boule chevelue » (Hairy Ball Theorem), de sa compréhension intuitive à sa démonstration mathématique rigoureuse, en passant par ses applications dans le monde réel comme la météorologie et l'infographie."
 slug: "hairy-ball-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "topology"]
 tags:

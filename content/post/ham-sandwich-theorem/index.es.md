@@ -2,7 +2,7 @@
 title: "El Teorema del Sándwich de Jamón: ¿Puedes Partir 3 Ingredientes con un Corte?"
 description: "Una explicación detallada del Teorema del Sándwich de Jamón, que establece que siempre existe un plano que biseca simultáneamente tres objetos en el espacio 3D, desde un enfoque intuitivo hasta el teorema de Borsuk-Ulam."
 slug: "ham-sandwich-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemáticas"

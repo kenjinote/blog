@@ -1,6 +1,5 @@
 ---
 title: "互联网的鼻祖“ARPANET”：从冷战时期的军事研究中诞生的改变世界的网络全貌"
-date: "2026-09-24T16:08:36+09:00"
 description: "现代互联网的直接起源ARPANET。从分组交换技术的诞生、IMP的开发、1969年历史性的通信，直到向TCP/IP的进化，通过数千字的详细解说深入挖掘互联网创世纪的历史。"
 slug: "history-arpanet"
 categories: ["history"]

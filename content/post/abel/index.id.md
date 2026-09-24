@@ -2,7 +2,7 @@
 title: "Niels Henrik Abel: Jenius Tragis yang Menyangkal Rumus Persamaan Derajat Lima"
 description: "Niels Henrik Abel, seorang ahli matematika brilian dari Norwegia. Artikel ini mengeksplorasi kehidupannya yang penuh gejolak dan warisan monumental yang ia tinggalkan pada matematika modern sebelum kematian tragisnya di usia 26 tahun."
 slug: "abel"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Matematika", "Biografi"]
 tags: ["Abel", "Aljabar", "Sejarah", "Matematika"]

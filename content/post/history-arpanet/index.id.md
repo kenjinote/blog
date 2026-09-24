@@ -1,6 +1,5 @@
 ---
 title: "Nenek Moyang Internet \"ARPANET\": Gambaran Keseluruhan Jaringan yang Mengubah Dunia yang Lahir dari Penelitian Militer Perang Dingin"
-date: "2026-09-24T16:08:36+09:00"
 description: "ARPANET adalah asal mula langsung dari internet modern. Dari kelahiran teknologi packet switching, pengembangan IMP, komunikasi bersejarah pada tahun 1969, hingga evolusi menuju TCP/IP, kami akan menggali lebih dalam sejarah genesis internet dengan penjelasan terperinci sepanjang ribuan karakter."
 slug: "history-arpanet"
 categories: ["history"]

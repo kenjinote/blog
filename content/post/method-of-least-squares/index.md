@@ -2,7 +2,7 @@
 title: "最小二乗法：ばらつきのあるデータに「最もフィットする直線」を線形代数で求める"
 description: "最小二乗法の仕組みを、幾何学的な直観と線形代数の強力なツール（正規方程式、直交射影）を用いて深く解説します。"
 slug: "method-of-least-squares"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

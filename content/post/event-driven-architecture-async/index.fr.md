@@ -2,7 +2,7 @@
 title: "Plongée dans l'architecture orientée événements et le traitement asynchrone : Event Loop, modèle Acteur et CQRS"
 description: "Une exploration approfondie de l'architecture orientée événements et du traitement asynchrone, indispensables dans les systèmes distribués modernes, du point de vue de l'Event Loop, du modèle Acteur et du CQRS."
 slug: "event-driven-architecture-async"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "architecture"

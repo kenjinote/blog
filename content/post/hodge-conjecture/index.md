@@ -2,7 +2,7 @@
 title: "ホッジ予想 (Hodge Conjecture) - 代数幾何学とトポロジーを繋ぐミレニアム懸賞問題"
 description: "クレイ数学研究所のミレニアム懸賞問題の1つであるホッジ予想について、代数幾何学とトポロジーの架け橋としての役割からその奥深い数学的背景までを徹底解説します。"
 slug: "hodge-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]
 tags: ["Millennium Prize Problems", "Topology", "Algebraic Geometry", "Hodge Conjecture"]

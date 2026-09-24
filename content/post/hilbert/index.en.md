@@ -2,7 +2,7 @@
 title: "David Hilbert: The Giant Who Laid the Foundations of Modern Mathematics and His Epic Trajectory"
 description: "A detailed explanation of the life and numerous mathematical achievements of David Hilbert, one of the greatest mathematicians of the 19th and 20th centuries. We trace his trajectory from invariant theory to Hilbert space."
 slug: "hilbert"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Hilbert", "History of Mathematics", "Geometry", "Functional Analysis", "Physics", "Number Theory"]

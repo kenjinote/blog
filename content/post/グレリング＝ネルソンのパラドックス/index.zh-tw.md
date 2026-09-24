@@ -1,7 +1,7 @@
 ---
 title: "當詞語描述自身時：格雷林-納爾遜悖論"
 description: "解開由「自我描述的」與「非自我描述的」詞語分類所產生的邏輯與語義學的深層迷宮。"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "grelling-nelson-paradox"
 image: "img/grelling_nelson.jpg"

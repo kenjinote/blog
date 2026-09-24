@@ -1,7 +1,7 @@
 ---
 title: "Le problème des généraux byzantins : Comment parvenir à un consensus dans un réseau avec des traîtres ?"
 image: "eyecatch.jpg"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T00:00:00+09:00
 description: "Nous expliquons clairement le « problème des généraux byzantins », un défi majeur des systèmes distribués, de son concept à sa preuve mathématique, en passant par ses applications dans la blockchain, à l'aide d'exemples concrets et de schémas."
 categories: ["technical-explanation", "distributed-systems"]
 tags: ["Problème des généraux byzantins", "Blockchain", "Consensus", "Algorithme"]

@@ -2,7 +2,7 @@
 title: "Gorō Shimura : La vie et les réalisations d'un sommet des mathématiques modernes"
 description: 'Gorō Shimura, mathématicien de renommée mondiale connu pour la conjecture de Taniyama-Shimura. Cet article détaille sa vie féroce et ses réalisations profondes en théorie des nombres.'
 slug: "shimura-goro"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathématiques", "biographie"]
 tags: ["Gorō Shimura", "Théorie des nombres", "Conjecture de Taniyama-Shimura", "Dernier théorème de Fermat"]

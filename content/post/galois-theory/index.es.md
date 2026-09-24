@@ -2,7 +2,7 @@
 title: "Teoría de Galois (Galois Theory) - Por qué no hay fórmula para resolver ecuaciones de grado 5 o superior y el nacimiento de la teoría de grupos"
 description: "¿Qué es la Teoría de Galois? ¿Por qué no existe una fórmula general para ecuaciones de grado 5 o superior? Explicaremos los fundamentos de la teoría de grupos dejada por Évariste Galois y la belleza de la simetría en matemáticas."
 slug: "galois-theory"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:04:13+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "algebra"]
 tags:

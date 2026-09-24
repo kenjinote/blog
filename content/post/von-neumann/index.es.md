@@ -2,7 +2,7 @@
 title: 'John von Neumann: La trayectoria del "Cerebro Demoníaco" que construyó la ciencia moderna'
 description: 'Una explicación detallada de la vida del genio matemático John von Neumann, sus asombrosos logros desde la teoría de juegos hasta la mecánica cuántica y la informática, y numerosas anécdotas en torno a él.'
 slug: 'von-neumann'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-20T20:20:00+09:00'
 image: "eyecatch.jpg"
 categories: ['mathematics', 'biography']
 tags: ['John von Neumann', 'Mecánica Cuántica', 'Teoría de Juegos', 'Informática', 'Matemático', 'Genio']

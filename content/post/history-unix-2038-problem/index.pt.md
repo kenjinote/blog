@@ -1,6 +1,5 @@
 ---
 title: "O Panorama Completo do \"Problema do Ano 2038\" no UNIX: A Bomba-Relógio do Mundo Digital e a Evolução da Arquitetura de Sistemas"
-date: "2026-09-24T16:08:36+09:00"
 description: "No dia 19 de janeiro de 2038, o tempo UNIX, gerenciado por um número inteiro com sinal de 32 bits, sofrerá overflow. Este artigo explica em detalhes o \"Problema de 2038\", que causará o mau funcionamento de muitos sistemas de computadores, desde o seu mecanismo, história, causas fundamentais, até as soluções."
 slug: "history-unix-2038-problem"
 categories: ["history"]

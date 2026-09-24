@@ -1,6 +1,5 @@
 ---
 title: "时间旅行的深渊：祖父悖论及其解法的全面解析"
-date: "2026-09-24T16:08:36+09:00"
 description: "从物理学和哲学的角度详细解释时间旅行中最大的难题“祖父悖论”，涵盖相对论、量子力学、多世界解释以及诺维科夫自洽性原则。"
 slug: "paradox-grandfather-paradox"
 categories: ["science"]

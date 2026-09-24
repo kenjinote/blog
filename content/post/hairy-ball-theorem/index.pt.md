@@ -2,7 +2,7 @@
 title: "Teorema da Bola Cabeluda (Hairy Ball Theorem) - O teorema da topologia onde \"uma bola com pelos não pode ser penteada perfeitamente\""
 description: "Explicamos detalhadamente o famoso \"Teorema da Bola Cabeluda\" (Hairy Ball Theorem) da topologia, desde sua compreensão intuitiva e prova matemática rigorosa, até aplicações no mundo real como meteorologia e computação gráfica."
 slug: "hairy-ball-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "topology"]
 tags:

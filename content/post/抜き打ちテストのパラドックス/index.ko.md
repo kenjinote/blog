@@ -2,7 +2,7 @@
 title: '깜짝 시험의 역설: 논리적으로 "절대 불가능한" 시험이 치러지는 날'
 slug: 'unexpected-hanging-paradox'
 description: '"다음 주 월요일부터 금요일 중 하루에, 너희들이 예측할 수 없는 형태로 깜짝 시험을 치르겠다"——선생님의 이 선언에 대해, 학생들은 "논리적으로 깜짝 시험은 불가능하다"고 증명해 냈습니다. 하지만…….'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T10:00:00+09:00'
 image: 'img/unexpected_hanging.jpg'
 math: true
 mermaid: true

@@ -2,7 +2,7 @@
 title: "Arsitektur Berbasis Peristiwa dan Pemrosesan Asinkron secara Mendalam: Event Loop, Model Actor, CQRS"
 description: "Menyelami arsitektur berbasis peristiwa dan pemrosesan asinkron yang sangat penting dalam sistem terdistribusi modern, dari perspektif Event Loop, model Actor, dan CQRS."
 slug: "event-driven-architecture-async"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "architecture"

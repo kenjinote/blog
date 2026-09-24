@@ -2,7 +2,7 @@
 title: "Panasonicの歴史: 家電の王様からB2B・車載バッテリー事業への華麗なる転換"
 description: "松下幸之助の二股ソケットから始まり、テスラを支える車載電池メーカーへと変貌したパナソニックの歴史。"
 slug: "history-of-panasonic"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T01:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

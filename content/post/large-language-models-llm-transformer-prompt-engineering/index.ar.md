@@ -2,7 +2,7 @@
 title: "كيفية عمل النماذج اللغوية الكبيرة (LLM) وتطبيقاتها في البرمجة (نموذج Transformer، هندسة الأوامر)"
 description: "شرح شامل للآلية الرياضية لهيكلية Transformer التي تشكل أساس النماذج اللغوية الكبيرة (LLM)، والتقنيات المتقدمة في هندسة الأوامر، وتطبيقاتها الفعلية في البرمجة."
 slug: "large-language-models-llm-transformer-prompt-engineering"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T14:51:08+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["ai", "llm", "transformer", "prompt-engineering"]

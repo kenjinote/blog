@@ -2,7 +2,7 @@
 title: '仿射变换与投影变换：支撑CG与透视的线性代数与几何学的融合'
 description: '从仿射变换与投影变换的数学基础，到在计算机图形学和图像处理中的应用，使用齐次坐标系进行详细讲解。'
 slug: 'affine-and-projective-transformations'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-20T15:15:00+09:00'
 image: "eyecatch.jpg"
 categories:
   - 'mathematics'

@@ -2,7 +2,7 @@
 title: "アンドリュー・ワイルズ：フェルマーの最終定理を証明した孤高の数学者"
 description: "「フェルマーの最終定理」を証明し、数学界に歴史的な金字塔を打ち立てたアンドリュー・ワイルズの生涯と数々のエピソード、そしてその背後にある深い数学的業績に迫ります。"
 slug: "wiles"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Andrew Wiles", "Fermat", "Number Theory"]

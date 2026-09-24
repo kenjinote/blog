@@ -2,7 +2,7 @@
 title: "IBM的歷史：從打孔卡到大型主機，再到量子電腦"
 description: "「藍色巨人」如何持續引領IT產業超過100年。"
 slug: "history-of-ibm"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T01:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -1,7 +1,7 @@
 ---
 title: "Apakah zamrud berwarna hijau atau 'grue'? Teka-teki baru induksi Goodman"
 description: "Besok, zamrud di seluruh dunia mungkin berubah menjadi biru. Paradoks 'grue' yang mengguncang dasar prediksi ilmiah."
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "grue-paradox"
 image: "img/grue_paradox.jpg"

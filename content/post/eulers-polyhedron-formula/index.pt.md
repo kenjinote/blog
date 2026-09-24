@@ -2,7 +2,7 @@
 title: "A Fórmula de Euler para Poliedros: A Magia da Topologia Revelada por V - E + F = 2"
 description: "Uma explicação detalhada sobre a beleza da fórmula de Euler para poliedros (V - E + F = 2) e o mundo da topologia ao qual ela conduz. Vamos explorar o charme das invariantes, desde os poliedros regulares até a característica de Euler."
 slug: "eulers-polyhedron-formula"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemática"

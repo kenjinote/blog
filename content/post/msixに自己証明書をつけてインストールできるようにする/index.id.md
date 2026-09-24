@@ -1,7 +1,7 @@
 ---
 title: 'Wajib Dilihat oleh Pengembang Aplikasi Windows! Cara Menyematkan Sertifikat Mandiri ke MSIX untuk Instalasi Lokal'
 slug: "msixにSertifikat Diri SendiriをつけてInstalasiできるようにする"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-08-30T04:18:04+09:00
 tags: ["msix", "sertifikat yang ditandatangani sendiri", "instalasi"]
 draft: false
 image: "img.webp"

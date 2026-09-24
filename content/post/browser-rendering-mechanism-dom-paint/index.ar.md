@@ -2,7 +2,7 @@
 title: "آلية تصيير المتصفح: تحليل كامل من شجرة DOM إلى الرسم (Paint)"
 description: "تحليل كامل لآلية عمل محرك التصيير (مثل Blink و WebKit) منذ أن يقوم المتصفح بتحميل HTML/CSS/JS وحتى رسم البكسلات على الشاشة."
 slug: "browser-rendering-mechanism-dom-paint"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T17:10:00+09:00
 image: eyecatch.jpg
 categories:
   - "web-development"

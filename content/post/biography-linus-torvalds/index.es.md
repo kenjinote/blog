@@ -1,6 +1,6 @@
 ---
 title: "El Gigante del Código Abierto: La Trayectoria y Filosofía de Linus Torvalds"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["linus-torvalds", "history"]
 image: "eyecatch.jpg"

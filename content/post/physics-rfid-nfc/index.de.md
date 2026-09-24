@@ -2,7 +2,7 @@
 title: "Physikalische Gesetze und Alltagstechnologie: Wie RFID und NFC (Mobile Payment) funktionieren - Kontaktlose Kommunikation durch elektromagnetische Induktion"
 description: "Eine magische Technologie, die Zahlungen durch einfaches Berühren des Ticketschalters mit Suica, PASMO oder dem Smartphone abschließt. Wir erklären das physikalische Gesetz der \"elektromagnetischen Induktion\" und den NFC-Kommunikationsstandard, die dahinterstecken."
 slug: "physics-rfid-nfc"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

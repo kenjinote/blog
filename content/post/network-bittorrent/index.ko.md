@@ -2,7 +2,7 @@
 title: "네트워크 기술: BitTorrent 기술 해설 - 거대 파일을 효율적으로 분산 배포하는 구조"
 description: "수 기가바이트의 OS 이미지를 수만 명이 일제히 다운로드해도 서버가 다운되지 않는다. P2P의 걸작 'BitTorrent(비트토렌트)'의 혁신적인 파일 분할과 데이터 교환 알고리즘을 해설합니다."
 slug: "network-bittorrent"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

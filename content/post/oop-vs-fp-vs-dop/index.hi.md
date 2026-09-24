@@ -2,7 +2,7 @@
 title: "ऑब्जेक्ट-ओरिएंटेड vs फंक्शनल vs डेटा-ओरिएंटेड: प्रतिमानों की सीमाएं और एकीकरण"
 description: "प्रोग्रामिंग प्रतिमानों के इतिहास और विकास, OOP, FP और DOP की खूबियों और सीमाओं की गहराई से जांच, और आधुनिक विकास के लिए इष्टतम समाधान, 'प्रतिमानों के एकीकरण' पर पूरी तरह से विचार।"
 slug: "oop-vs-fp-vs-dop"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:58:35+09:00"
 image: "eyecatch.jpg"
 categories: ["programming", "architecture", "software-engineering"]
 tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]

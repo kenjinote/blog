@@ -2,7 +2,7 @@
 title: "Historia de Panasonic: De rey de los electrodomésticos a una espectacular transformación hacia B2B y el negocio de baterías automotrices"
 description: "La historia de Panasonic, que comenzó con el enchufe de dos vías de Konosuke Matsushita y se transformó en un fabricante de baterías automotrices que respalda a Tesla."
 slug: "history-of-panasonic"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T01:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

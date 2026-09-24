@@ -2,7 +2,7 @@
 title: "如何選擇 NoSQL 資料庫 (KVS, 文件, 圖形, 寬行)"
 description: "理解多種多樣的 NoSQL 資料庫資料模型，並根據使用情境進行最佳選擇的指南。"
 slug: "nosql-database-selection-kvs-document-graph-wide-column"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "database"

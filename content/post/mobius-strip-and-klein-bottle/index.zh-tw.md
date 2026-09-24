@@ -2,7 +2,7 @@
 title: "莫比乌斯带与克莱因瓶：没有“内外”之分的奇妙曲面世界"
 description: "使用数学公式和图解深入讲解拓扑学中的不可定向曲面，特别是莫比乌斯带和克莱因瓶。"
 slug: "mobius-strip-and-klein-bottle"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T15:15:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["拓扑学", "几何学", "莫比乌斯带", "克莱因瓶"]

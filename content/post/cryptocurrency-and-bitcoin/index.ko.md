@@ -2,7 +2,7 @@
 title: "암호화폐와 비트코인: 그 역사, 수리적 기반, 그리고 미래"
 description: "비트코인과 암호화폐 이면의 기술적, 수리적 메커니즘을 철저하게 해설합니다. SHA-256, 타원곡선 암호, UTXO, 그리고 확장성 문제까지 망라하는 완벽한 가이드."
 slug: "cryptocurrency-and-bitcoin"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T23:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["기술", "수학"]
 tags: ["비트코인", "암호학", "블록체인"]

@@ -1,6 +1,5 @@
 ---
 title: "Srinivasa Ramanujan: The Indian Magician Who Spun Intuition and Infinity"
-date: "2026-09-24T16:08:36+09:00"
 description: "A detailed explanation of the life and achievements of Srinivasa Ramanujan, a genius mathematician known as the 'Indian Magician' who discovered numerous unknown formulas using only intuition, and his impact on modern mathematics."
 slug: "biography-srinivasa-ramanujan"
 categories: ["biography"]

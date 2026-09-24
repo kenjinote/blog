@@ -1,7 +1,7 @@
 ---
 title: 'Windows Terminal을 최강으로 커스터마이즈하기 (테마·프롬프트 설정)'
 slug: "windows-terminal-ultimate-customization-guide"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-13T00:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

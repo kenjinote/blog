@@ -1,6 +1,5 @@
 ---
 title: "What is Dunbar's Number? A Comprehensive Guide to the Cognitive Limits of Relationships and Its Application to Organization Design"
-date: "2026-09-24T16:08:36+09:00"
 description: "Dunbar's number states that humans can only maintain stable relationships with up to 150 people. In this article, we take a deep dive into the biological basis of this principle proposed by evolutionary psychologist Robin Dunbar, its implications for relationships in the era of social media, and its applications to organizational design when companies scale."
 slug: "business-dunbars-number"
 categories: ["business"]

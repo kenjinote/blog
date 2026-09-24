@@ -2,7 +2,7 @@
 title: "混沌理论与蝴蝶效应 - 初始值的微小差异如何让未来变得不可预测"
 description: "全面解析具有对初始条件敏感依赖性的非线性动力系统——混沌理论与蝴蝶效应，从其历史背景到数学基础、分形几何，再到现实世界中的广泛应用。"
 slug: "chaos-theory"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
 categories: ["科学", "mathematics"]
 tags:

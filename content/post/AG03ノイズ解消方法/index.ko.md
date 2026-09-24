@@ -4,7 +4,7 @@
 
 title: '【즉시 해결】 YAMAHA AG03의 지직거리는 노이즈를 해소하는 드라이버 업데이트 절차'
 slug: "AG03노이즈解消方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-03-18T01:17:10+09:00
 tags: ["YAMAHA", "AG03", "노이즈"]
 draft: false
 image: "img.webp"

@@ -2,7 +2,7 @@
 title: 'Paradoks St. Petersburg: Berapa yang Akan Anda Bayar untuk Judi dengan Nilai Harapan "Tak Terhingga"?'
 slug: 'st-petersburg-paradox'
 description: 'Judi yang secara matematis seharusnya "untung tak terhingga". Namun, pada kenyataannya, tidak ada orang yang mau membayar mahal untuk itu. Mari kita bahas paradoks bersejarah yang menyoroti kesenjangan antara teori probabilitas dan psikologi manusia (utilitas), yang menjadi dasar ilmu ekonomi modern.'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T05:00:00+09:00'
 image: 'img/st_petersburg.jpg'
 math: true
 mermaid: true

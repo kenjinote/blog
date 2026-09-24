@@ -2,7 +2,7 @@
 title: "Algoritmos de Ordenação Explicados Visualmente (De Bubble a Quick e Merge Sort)"
 description: "Algoritmos de ordenação são a base da programação. Do Bubble Sort ao Quick e Merge Sort, explicamos tudo de forma abrangente com diagramas e código."
 slug: "sorting-algorithms-visualized-bubble-quick-merge"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-22T01:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "sorting", "quick-sort", "merge-sort", "bubble-sort"]

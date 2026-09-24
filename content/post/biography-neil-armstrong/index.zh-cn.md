@@ -1,6 +1,6 @@
 ---
 title: "尼尔·阿姆斯特朗：人类首位登月者的生平与哲学"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T20:51:47+09:00
 categories: ["biography"]
 tags: ["neil-armstrong", "history"]
 image: "eyecatch.jpg"

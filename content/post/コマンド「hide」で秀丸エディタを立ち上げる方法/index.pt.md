@@ -1,7 +1,7 @@
 ---
 title: 'Inicie o Editor Hidemaru com um único comando ''hide''! Métodos de configuração convenientes no Windows'
 slug: "Comando「hide」でHidemaru Editorを立ち上げる方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-03-29T23:45:37+09:00
 tags: ["comando", "Hidemaru Editor", "registro"]
 draft: false
 image: "img_2.webp"

@@ -1,7 +1,7 @@
 ---
 title: '영지식 증명(ZKP)의 구조와 최신 Web3 및 보안에의 응용'
 slug: "zero-knowledge-proofs-zkp-web3-security"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

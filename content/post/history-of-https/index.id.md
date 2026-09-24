@@ -2,7 +2,7 @@
 title: "Teknologi Jaringan: Penjelasan Teknis HTTPS - Mekanisme Enkripsi dan Infrastruktur Kunci Publik (PKI)"
 description: "Kita dapat berbelanja daring dengan aman berkat 'HTTPS'. Artikel ini menjelaskan teknologi enkripsi yang mencegah penyadapan dan manipulasi, serta proses matematis kompleks yang dilakukan oleh SSL/TLS di balik layar."
 slug: "history-of-https"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

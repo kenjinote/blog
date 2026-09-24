@@ -1,7 +1,7 @@
 ---
 title: 'Verwendung von wxWidgets: Von der Installationsmethode bis zur Erstellung eines Beispielprojekts'
 slug: "wxWidgets を使ったBeispiel"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-04-18T00:18:22+09:00
 tags: ["wxWidgets", "Beispiel"]
 draft: false
 image: "img.webp"

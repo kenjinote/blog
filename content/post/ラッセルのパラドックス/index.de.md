@@ -2,7 +2,7 @@
 title: 'Russelsche Antinomie: Enthält die "Menge aller Mengen, die sich nicht selbst als Element enthalten", sich selbst?'
 slug: 'russells-paradox'
 description: '„Rasiert der Barbier, der alle Männer im Dorf rasiert, die sich nicht selbst rasieren, sich selbst?“ Wir erklären das furchterregende Paradoxon von Bertrand Russell, das die „Mengenlehre“, das Fundament der Mathematik, erschütterte und die Geschichte der Logik veränderte.'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T04:00:00+09:00'
 image: 'img/russells_paradox.jpg'
 math: true
 mermaid: true

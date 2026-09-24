@@ -2,7 +2,7 @@
 title: "Helmut Hasse: Raksasa Teori Bilangan yang Menghubungkan Lokal ke Global"
 description: "Penyelaman mendalam ke dalam kehidupan Helmut Hasse, salah satu matematikawan terkemuka abad ke-20, dan pencapaian matematisnya termasuk Prinsip Hasse dan kurva eliptik."
 slug: "hasse"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matematika"

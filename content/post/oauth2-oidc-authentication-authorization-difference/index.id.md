@@ -2,7 +2,7 @@
 title: "Anatomi Lengkap OAuth 2.0 dan OIDC (OpenID Connect) (Perbedaan antara Otorisasi dan Autentikasi)"
 description: "Penjelasan mendalam tentang cara kerja OAuth 2.0 dan OIDC, perbedaan antara autentikasi dan otorisasi, serta berbagai jenis tipe grant."
 slug: "oauth2-oidc-authentication-authorization-difference"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

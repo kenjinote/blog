@@ -2,7 +2,7 @@
 title = "Zwillingsprimzahlvermutung (Twin Prime Conjecture) - Gibt es unendlich viele Primzahlpaare mit einer Differenz von 2?"
 description = "Eine ausführliche Erklärung der Zwillingsprimzahlvermutung, eines ungelösten mathematischen Problems, einschließlich ihrer Geschichte, teilweisen Lösungen und neuesten Forschungstrends."
 slug = "twin-prime-conjecture"
-date = "2026-09-24T16:08:36+09:00"
+date = "2026-09-14T13:04:13+09:00"
 image = "eyecatch.jpg"
 categories = ["mathematics"]
 tags = ["Primzahlen", "Zahlentheorie", "Ungelöste Probleme"]

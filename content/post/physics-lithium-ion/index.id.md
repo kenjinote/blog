@@ -2,7 +2,7 @@
 title: "Hukum Fisika dan Teknologi Sehari-hari: Cara Kerja Baterai Lithium-ion - Kimia Pengisian dan Pengosongan yang Mendukung Masyarakat Seluler Modern"
 description: 'Dari ponsel pintar hingga kendaraan listrik, "baterai lithium-ion" sangat penting dalam masyarakat modern. Mengapa baterai ini sangat ringan dan berkapasitas besar? Kami akan menjelaskan reaksi kimia dinamis dari elektron dan ion yang terjadi di dalamnya.'
 slug: "physics-lithium-ion"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

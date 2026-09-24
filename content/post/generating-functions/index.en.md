@@ -2,7 +2,7 @@
 title: "Generating Functions: What's the Benefit of Turning a Sequence into a Function?"
 description: "Introducing how to count coin combinations and arrangements as coefficients of an equation. Explaining the magic of generating functions, including their application to the Fibonacci sequence."
 slug: "generating-functions"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematics"

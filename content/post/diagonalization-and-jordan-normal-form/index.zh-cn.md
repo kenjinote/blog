@@ -2,7 +2,7 @@
 title: "对角化与若尔当标准型：将复杂矩阵极致简化的分类法"
 description: "详细讲解线性代数中的对角化以及无法对角化的矩阵的若尔当标准型，涵盖其直观含义、数学定义以及在物理和工程中的应用。"
 slug: "diagonalization-and-jordan-normal-form"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["linear-algebra", "matrix", "eigenvalue", "jordan-normal-form"]

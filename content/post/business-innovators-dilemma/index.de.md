@@ -1,6 +1,5 @@
 ---
 title: "【Vollständige Erklärung】Was ist das Innovator's Dilemma? Der Mechanismus, wie Top-Unternehmen gegen disruptive Innovationen verlieren und Strategien zur Überwindung"
-date: "2026-09-24T16:08:36+09:00"
 description: "Eine ausführliche Erklärung des von Clayton Christensen vorgeschlagenen \"Innovator's Dilemma\", in der der Mechanismus disruptiver Innovationen, die Fallen, in die Top-Unternehmen tappen, sowie konkrete Fallstudien und Strategien zur Überwindung detailliert beleuchtet werden."
 slug: "business-innovators-dilemma"
 categories: ["business"]

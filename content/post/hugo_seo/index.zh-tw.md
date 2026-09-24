@@ -1,7 +1,7 @@
 ---
 title: 'Hugo 部落格的 SEO 策略：大幅增加流量的 Frontmatter 設定'
 slug: "hugo-blog-seo-frontmatter-tips"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

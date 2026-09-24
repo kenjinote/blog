@@ -2,7 +2,7 @@
 title: "Keuangan & Kriptografi: Penjelasan Teknologi Blockchain - Teknologi Buku Besar Terdistribusi di Balik Bitcoin"
 description: "Sihir di mana 'uang dapat diterbitkan dan dikirim tanpa administrator'. Kami akan mengungkap dasar-dasar blockchain yang diciptakan oleh Satoshi Nakamoto: fungsi hash, PoW (Proof of Work), dan cara kerja buku besar terdistribusi."
 slug: "technology-blockchain"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

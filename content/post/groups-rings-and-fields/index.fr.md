@@ -2,7 +2,7 @@
 title: "Groupes, Anneaux et Corps : Une Introduction à l'Algèbre Moderne"
 description: "En mathématiques, l'« algèbre » a évolué vers l'étude des « structures ». Cet article détaille les concepts de « groupes », « anneaux » et « corps »."
 slug: "groups-rings-and-fields"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathématiques"]
 tags: ["algèbre", "théorie des groupes", "théorie des anneaux", "théorie des corps"]

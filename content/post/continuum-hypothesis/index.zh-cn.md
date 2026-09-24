@@ -2,7 +2,7 @@
 title: "连续统假设（Continuum Hypothesis） - 康托尔的终极之问与“无法证明也无法证伪”的结局"
 description: "深入探讨由格奥尔格·康托尔提出的连续统假设（CH）的历史、数学背景，以及哥德尔和科恩关于其独立性的证明。"
 slug: "continuum-hypothesis"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "set-theory"]
 tags: ["连续统假设", "康托尔", "无穷", "数学"]

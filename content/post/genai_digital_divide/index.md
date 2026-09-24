@@ -2,7 +2,7 @@
 title: "生成AIの進化がもたらす「新たなデジタルディバイド」の深刻化"
 description: 'AI技術の急速な発展により、ハードウェアやインターネットへのアクセスから「プロンプティングとオーケストレーションの能力」へと移行した新たなデジタル格差について深く考察します。'
 slug: "generative-ai-digital-divide"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

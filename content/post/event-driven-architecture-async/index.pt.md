@@ -2,7 +2,7 @@
 title: "Arquitetura Orientada a Eventos e Processamento Assíncrono: Event Loop, Modelo de Atores e CQRS"
 description: "Um mergulho profundo na arquitetura orientada a eventos e processamento assíncrono, essenciais em sistemas distribuídos modernos, na perspectiva do Event Loop, do modelo de Atores e do CQRS."
 slug: "event-driven-architecture-async"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "architecture"

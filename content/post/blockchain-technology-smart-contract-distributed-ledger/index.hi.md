@@ -2,7 +2,7 @@
 title: "ब्लॉकचेन तकनीक और स्मार्ट कॉन्ट्रैक्ट (वितरित खाता बही का तंत्र)"
 description: "ब्लॉकचेन के मूल सिद्धांतों, सर्वसम्मति एल्गोरिदम और स्मार्ट कॉन्ट्रैक्ट कार्यान्वयन का अन्वेषण करें।"
 slug: "blockchain-technology-smart-contract-distributed-ledger"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "blockchain"

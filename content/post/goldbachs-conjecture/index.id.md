@@ -2,7 +2,7 @@
 title: "Konjektur Goldbach - Bisakah setiap bilangan genap yang lebih besar dari 2 dinyatakan sebagai jumlah dua bilangan prima?"
 description: "Penjelasan terperinci tentang 'Konjektur Goldbach', salah satu masalah yang belum terpecahkan paling terkenal dalam matematika, mencakup sejarah, makna, dan signifikansinya dalam matematika modern."
 slug: "goldbachs-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "unsolved-problems"]
 tags:

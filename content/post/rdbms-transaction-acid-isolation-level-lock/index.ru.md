@@ -2,7 +2,7 @@
 title: "Транзакции СУБД и свойства ACID (уровни изоляции и блокировки)"
 description: "От основ обработки транзакций для сохранения целостности базы данных до аномалий (Anomaly) из-за уровней изоляции и механизмов блокировок."
 slug: "rdbms-transaction-acid-isolation-level-lock"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "database"

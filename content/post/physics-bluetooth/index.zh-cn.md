@@ -2,7 +2,7 @@
 title: "物理的奥秘：蓝牙的工作原理 - 调频与配对"
 description: "现代无线设备不可或缺的蓝牙。为什么能稳定连接而不受干扰？我们将从源自军事技术的跳频（Frequency Hopping）技术来一探究竟。"
 slug: "physics-bluetooth"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

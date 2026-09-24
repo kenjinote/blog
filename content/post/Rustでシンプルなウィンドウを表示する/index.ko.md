@@ -5,7 +5,7 @@
 
 title: 'Rust와 winapi를 사용하여 Windows의 간단한 창을 생성 및 표시하는 방법'
 slug: "Rustでシンプルな윈도우を表示する"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-10-01T19:08:58+09:00
 tags: ["Rust","창"]
 draft: false
 image: "images/rust_logo.webp"

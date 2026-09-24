@@ -1,6 +1,5 @@
 ---
 title: "O Paradoxo de Fermi: No vasto universo infinito, por que não encontramos \"eles\"?"
-date: "2026-09-24T16:08:36+09:00"
 description: "\"Onde estão os alienígenas?\" — O \"Paradoxo de Fermi\" começou com uma pergunta casual do físico Enrico Fermi. Uma explicação super detalhada que aprofunda as inúmeras hipóteses que explicam o silêncio do universo, como a Equação de Drake, a Teoria do Grande Filtro e a Hipótese da Floresta Negra, aproximando-se do significado da existência e do futuro da humanidade."
 slug: "paradox-fermi-paradox"
 categories: ["science"]

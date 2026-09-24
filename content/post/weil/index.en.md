@@ -2,7 +2,7 @@
 title: "André Weil: Giant of 20th Century Mathematics, Bourbaki, and the Weil Conjectures"
 description: "An in-depth exploration of André Weil's dramatic life, the founding of Bourbaki, and the Weil Conjectures that revolutionized algebraic geometry and number theory."
 slug: "weil"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["André Weil", "Bourbaki", "Algebraic Geometry", "Number Theory"]

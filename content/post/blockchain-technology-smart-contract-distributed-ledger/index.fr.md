@@ -2,7 +2,7 @@
 title: "Technologie de la Blockchain et Smart Contracts (Mécanisme du Registre Distribué)"
 description: "Explorer les principes fondamentaux de la blockchain, les algorithmes de consensus et la mise en œuvre des smart contracts."
 slug: "blockchain-technology-smart-contract-distributed-ledger"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "blockchain"

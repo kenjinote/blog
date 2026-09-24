@@ -1,7 +1,7 @@
 ---
 title: "Poincaré Conjecture - The Topological Puzzle Unraveling the Shape of the Universe and the Legend of Perelman"
 description: "A detailed explanation of the full picture of the 'Poincaré Conjecture' that troubled mathematicians for over 100 years, the basics of topology, and the story of the dramatic proof by Grigori Perelman."
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:04:13+09:00"
 slug: "poincare-conjecture"
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]

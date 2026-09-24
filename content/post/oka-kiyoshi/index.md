@@ -2,7 +2,7 @@
 title: "岡潔：情緒と多変数解析函数論の孤高の天才"
 description: "日本が世界に誇る数学者、岡潔。その生涯のエピソードと、多変数複素解析における三大問題の解決をはじめとする数学的業績について深く掘り下げます。数学は情緒であるという哲学に迫ります。"
 slug: "oka-kiyoshi"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T20:20:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Kiyosi Oka", "Complex Analysis", "History of Mathematics"]

@@ -2,7 +2,7 @@
 title: "CAP定理と分散システム：分散DBが抱える本質的なジレンマ"
 description: "分散システムにおける最も重要な原則であるCAP定理について、その定義から証明、PACELC定理への拡張、そして実際の分散データベースでの実装までを深く掘り下げます。"
 slug: "cap-theorem-distributed-systems"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T00:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "distributed-systems"

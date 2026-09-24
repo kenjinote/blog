@@ -8,7 +8,7 @@
 
 title: '【Las siete hierbas de la primavera】Receta de Nanakusagayu para desear buena salud y el significado de las siete hierbas'
 slug: "七草粥のレシピ"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-01-06T22:22:00+09:00
 tags: ["Nanakusa-gayu", "Cocina"]
 draft: false
 image: "img.webp"

@@ -2,7 +2,7 @@
 title: "Arsitektur Jaringan Zero Trust (Beranjak dari Pertahanan Perimeter)"
 description: "Mempelajari konsep dan metode implementasi arsitektur zero trust dari Google BeyondCorp."
 slug: "zero-trust-network-architecture-beyond-corp"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

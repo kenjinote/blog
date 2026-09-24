@@ -2,7 +2,7 @@
 title: '柯西积分定理：复分析的美丽基石，积分在此归零'
 description: '详细解释了复分析中最重要的定理之一——柯西积分定理，从它的直观含义到使用格林定理的证明草图，再到它在积分公式中的应用。'
 slug: 'cauchys-integral-theorem'
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T14:30:00+09:00
 image: "eyecatch.jpg"
 categories:
   - 'mathematics'

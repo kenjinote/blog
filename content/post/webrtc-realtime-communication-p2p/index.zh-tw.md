@@ -2,7 +2,7 @@
 title: "WebRTC與即時通訊的幕後：P2P, STUN/TURN, 傳遞訊號 (Signaling)"
 description: "瀏覽器之間直接進行通訊的 WebRTC 機制。徹底解剖穿越 NAT (STUN/TURN)、傳遞訊號伺服器 (Signaling Server) 以及 ICE 協定等複雜的幕後運作。"
 slug: "webrtc-realtime-communication-p2p"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T17:10:00+09:00
 image: eyecatch.jpg
 categories:
   - "network"

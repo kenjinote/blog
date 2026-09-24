@@ -2,7 +2,7 @@
 title: "अभाज्य संख्या प्रमेय (Prime Number Theorem) - एक नियम कि अभाज्य संख्याओं का वितरण लघुगणकीय फलन के करीब पहुंचता है"
 description: "अभाज्य संख्याओं की उपस्थिति की नियमितता पर गणितीय उपलब्धि, अभाज्य संख्या प्रमेय (Prime Number Theorem) के बारे में गहराई से जानें। अभाज्य गणना फलन से लेकर रीमैन परिकल्पना के साथ इसके संबंध तक।"
 slug: "prime-number-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "algorithms"]
 tags:

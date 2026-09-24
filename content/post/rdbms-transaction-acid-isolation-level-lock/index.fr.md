@@ -2,7 +2,7 @@
 title: "Transactions SGBDR et propriétés ACID (Niveaux d'isolement et verrouillage)"
 description: "Les bases du traitement des transactions pour protéger l'intégrité de la base de données, les anomalies dues aux niveaux d'isolement et les mécanismes de verrouillage."
 slug: "rdbms-transaction-acid-isolation-level-lock"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "database"

@@ -2,7 +2,7 @@
 title: 'Paradoks Putri Tidur: Apakah Peluang Koin 1/2 atau 1/3? Masalah Sulit yang Membelah Teori Peluang'
 slug: 'sleeping-beauty-paradox'
 description: '"Saat Anda terbangun sekarang, berapakah peluang hasil lemparan koin adalah angka?" Terlepas dari pengaturannya yang sangat sederhana, kami menjelaskan paradoks terbaru di mana matematikawan dan filsuf di seluruh dunia terbagi menjadi "Kubu 1/2" dan "Kubu 1/3" dan terus berdebat hingga hari ini.'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T09:00:00+09:00'
 image: 'img/sleeping_beauty.jpg'
 math: true
 mermaid: true

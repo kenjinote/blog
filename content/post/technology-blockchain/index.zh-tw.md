@@ -2,7 +2,7 @@
 title: "金融與密碼學：區塊鏈技術解說 - 創造比特幣的分散式帳本技術"
 description: "「沒有管理者也能發行、轉帳金錢」的魔法。我們將為您揭開中本聰所創造的區塊鏈的核心：雜湊函數、PoW（工作量證明）以及分散式帳本的運作機制。"
 slug: "technology-blockchain"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

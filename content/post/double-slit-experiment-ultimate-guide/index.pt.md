@@ -1,7 +1,7 @@
 ---
 title: '[Guia Completo] Entenda o ''Experimento da Dupla Fenda'', o Maior Mistério da Mecânica Quântica'
 slug: "double-slit-experiment-ultimate-guide"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-08T01:00:00+09:00"
 tags: ["Física", "Mecânica Quântica", "Experiência da Dupla Fenda", "Equação de Schrödinger"]
 categories: ["physics-science"]
 math: true

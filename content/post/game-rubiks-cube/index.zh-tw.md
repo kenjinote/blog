@@ -2,7 +2,7 @@
 title: "益智演算法：魔術方塊的解法與演算法 - 破解4325京種組合"
 description: "常被認為「不可能靠自己解開」的魔術方塊，其實只要記住幾個「演算法（步驟）」，任何人都能完成六面。本文將為您解說群論與數學交織而成的益智世界。"
 slug: "game-rubiks-cube"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

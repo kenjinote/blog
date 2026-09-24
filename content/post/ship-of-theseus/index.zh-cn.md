@@ -1,7 +1,7 @@
 ---
 title: "忒修斯之船：全部替换过的船还是“原来的船”吗？从软件工程解读同一性"
 image: "eyecatch.jpg"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T00:00:00+09:00
 description: "以希腊哲学悖论“忒修斯之船”为题材，深入探讨软件开发中的重构、系统替换，以及面向对象中的“同一性”。"
 categories: ["software-engineering", "architecture"]
 tags: ["忒修斯之船", "重构", "微服务", "面向对象", "DDD"]

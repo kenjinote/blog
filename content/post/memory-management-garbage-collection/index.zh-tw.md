@@ -2,7 +2,7 @@
 title: "記憶體管理與垃圾回收：從 C、Java、Rust 學習記憶體的真相"
 description: "從程式設計中記憶體管理的基礎，到 C 語言的手動管理、Java 的垃圾回收、以及 Rust 的所有權模型，進行深度的比較與解說。"
 slug: "memory-management-garbage-collection"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
 categories: ["programming", "computer-science", "software-engineering"]
 tags: ["memory-management", "c-language", "java", "rust", "garbage-collection"]

@@ -1,7 +1,7 @@
 ---
 title: 'Introducción a la programación multihilo y asíncrona en C++ (std::async)'
 slug: "cpp-multithreading-and-async-guide"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T08:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

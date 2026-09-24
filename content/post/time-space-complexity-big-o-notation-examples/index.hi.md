@@ -2,7 +2,7 @@
 title: "समय और स्थान जटिलता (Big O Notation का परिचय और उदाहरण)"
 description: "एल्गोरिदम के प्रदर्शन का मूल्यांकन करने के लिए आवश्यक O नोटेशन (बिग ओ नोटेशन) के बारे में, समय जटिलता और स्थान जटिलता के बीच अंतर से लेकर विशिष्ट उदाहरणों तक विस्तृत व्याख्या।"
 slug: "time-space-complexity-big-o-notation-examples"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-22T00:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "big-o", "time-complexity", "space-complexity", "data-structures"]

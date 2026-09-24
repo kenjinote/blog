@@ -2,7 +2,7 @@
 title: "畢氏定理的多種證明：從幾何、代數到愛因斯坦的證明"
 description: "探索畢氏定理（勾股定理）的迷人證明方法。從歐幾里得到愛因斯坦，從不同視角領略數學之美。"
 slug: "diverse-proofs-of-pythagorean-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "數學"

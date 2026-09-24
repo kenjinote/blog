@@ -2,7 +2,7 @@
 title: "モバイル革命: iPhoneの歴史 - 電話を再発明し、世界を変えたデバイス"
 description: "2007年、スティーブ・ジョブズの伝説的なプレゼンテーションから始まったiPhoneの歴史。物理キーボードの排除からApp Storeの誕生まで、スマートフォン革命の軌跡を振り返ります。"
 slug: "history-of-iphone"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

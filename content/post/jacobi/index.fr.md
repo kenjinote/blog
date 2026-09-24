@@ -2,7 +2,7 @@
 title: "Carl Gustav Jacob Jacobi : Le génie mathématique des fonctions elliptiques et de la mécanique"
 description: "Une explication détaillée de la vie de Carl Gustav Jacob Jacobi, éminent mathématicien du 19ème siècle, et de ses réalisations telles que les fonctions elliptiques, la mécanique analytique et le Jacobien."
 slug: "jacobi"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathématiques"

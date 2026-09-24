@@ -2,7 +2,7 @@
 title: "सॉर्टिंग एल्गोरिदम सचित्र (बबल से क्विक और मर्ज सॉर्ट तक)"
 description: "सॉर्टिंग एल्गोरिदम प्रोग्रामिंग का आधार हैं। बबल सॉर्ट से लेकर क्विक सॉर्ट और मर्ज सॉर्ट तक, आरेखों और कोड के साथ व्यापक स्पष्टीकरण।"
 slug: "sorting-algorithms-visualized-bubble-quick-merge"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-22T01:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "sorting", "quick-sort", "merge-sort", "bubble-sort"]

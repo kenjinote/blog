@@ -2,7 +2,7 @@
 title: "ABC予想 - 宇宙際タイヒミュラー理論による数論の超難問への挑戦"
 description: "ABC予想の概要と、望月新一教授による宇宙際タイヒミュラー理論（IUT理論）の画期的なアプローチについて深く掘り下げます。"
 slug: "abc-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]
 tags: ["ABC Conjecture", "Number Theory", "IUT Theory", "Shinichi Mochizuki"]

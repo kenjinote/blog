@@ -1,6 +1,6 @@
 ---
 title: "우주와 기술: GPS의 원리 - 상대성 이론과 위성 측위 시스템"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T04:01:41+09:00
 
 image: "eyecatch.jpg"
 categories: ["space", "technology"]

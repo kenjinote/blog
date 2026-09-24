@@ -2,7 +2,7 @@
 title: "Chaînes de Markov : Les modèles de probabilité et mathématiques des transitions d'états où 'l'avenir ne dépend que du présent'"
 description: "Une explication détaillée des modèles de probabilité de transition d'états, couvrant les bases et les applications des chaînes de Markov."
 slug: "markov-chain"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathématiques"

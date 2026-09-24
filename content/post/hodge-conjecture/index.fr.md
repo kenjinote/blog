@@ -2,7 +2,7 @@
 title: "La conjecture de Hodge (Hodge Conjecture) - Le problème du prix du millénaire reliant la géométrie algébrique et la topologie"
 description: "Nous expliquons en détail la conjecture de Hodge, l'un des problèmes du prix du millénaire de l'Institut de mathématiques Clay, de son rôle de pont entre la géométrie algébrique et la topologie jusqu'à son contexte mathématique profond."
 slug: "hodge-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]
 tags: ["Problèmes du prix du millénaire", "Topologie", "Géométrie algébrique", "Conjecture de Hodge"]

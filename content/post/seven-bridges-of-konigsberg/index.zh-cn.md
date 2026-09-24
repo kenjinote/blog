@@ -2,7 +2,7 @@
 title: "柯尼斯堡的七座桥 - 图论与拓扑学的起源"
 description: "由18世纪数学家莱昂哈德·欧拉解决的“柯尼斯堡的七座桥”问题。这个问题是如何开辟图论和拓扑学等现代数学新领域的，我们将深入探讨其历史与数学背景。"
 slug: "seven-bridges-of-konigsberg"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "history"]
 tags: ["图论", "拓扑学", "欧拉", "数学"]

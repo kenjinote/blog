@@ -8,7 +8,7 @@
 
 title: '[작업 효율 향상] Microsoft Word의 유용한 단축키 목록'
 slug: "Microsoft Wordの바로 가기一覧"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "단축키"]
 draft: false
 image: "img.webp"

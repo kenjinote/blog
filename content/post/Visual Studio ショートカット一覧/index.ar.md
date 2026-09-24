@@ -1,7 +1,7 @@
 ---
 title: 'قائمة اختصارات لوحة المفاتيح المفيدة في Visual Studio 【لزيادة كفاءة العمل】'
 slug: "Visual Studio اختصار一覧"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "اختصارات" ]
 draft: false
 image: "img.webp"

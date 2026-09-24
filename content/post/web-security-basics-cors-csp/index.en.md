@@ -2,7 +2,7 @@
 title: "Web Security Basics and Latest Trends: From XSS and CSRF to CORS and CSP"
 description: "Security measures to protect Web applications from threats. Comprehensively explains from classic XSS and CSRF to modern essential technologies such as CORS, CSP, and SameSite Cookie."
 slug: "web-security-basics-cors-csp"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T17:10:00+09:00
 image: eyecatch.jpg
 categories:
   - "security"

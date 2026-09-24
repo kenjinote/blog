@@ -2,7 +2,7 @@
 title: "Gottfried Leibniz: The Life and Mathematical Achievements of a Universal Genius"
 description: "An in-depth look at the life, episodes, and mathematical achievements—such as calculus and the binary system—of Gottfried Wilhelm Leibniz, one of the greatest minds of the 17th century."
 slug: "leibniz"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematics", "Biography"]
 tags: ["Leibniz", "Calculus", "Binary", "Philosophy", "History of Mathematics"]

@@ -2,7 +2,7 @@
 title: "関孝和：和算を飛躍させた「算聖」の生涯と数学的業績"
 description: "江戸時代の天才数学者、関孝和の生涯と、円理や行列式、ベルヌーイ数の発見など、西洋数学に匹敵するその驚異的な数学的業績について詳しく解説します。"
 slug: "seki-takakazu"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Takakazu Seki", "Wasan", "Edo Period", "History of Mathematics", "Calculus", "Determinant"]

@@ -1,7 +1,7 @@
 ---
 title: "リーマン予想と素数の分布：現代暗号技術との深い関係"
 slug: "riemann-hypothesis-prime-distribution-cryptography"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T16:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

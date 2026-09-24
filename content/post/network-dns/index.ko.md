@@ -2,7 +2,7 @@
 title: "네트워크 기술: DNS의 구조 - 인터넷의 전화번호부, 이름 해석의 이면"
 description: "'www.google.com'을 입력하는 것만으로, 어떻게 목적지 서버에 연결되는 것일까? 인터넷 최대의 분산형 데이터베이스 'DNS'의 계층 구조와 이름 해석의 원리를 해설합니다."
 slug: "network-dns"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

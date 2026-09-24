@@ -1,7 +1,7 @@
 ---
 title: 'Matikan PC dengan Satu Klik! Cara Membuat Pintasan untuk Mematikan Windows'
 slug: "Windows をMatikanするPintasanを作成する方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "Mematikan", "Pintasan"]
 draft: false
 image: "img.webp"

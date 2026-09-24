@@ -1,6 +1,5 @@
 ---
 title: "Compreensão Completa e Aplicação Prática do Princípio de Pareto (Regra 80/20): Pensamento Essencial que Transforma Dramaticamente os Negócios e a Vida"
-date: "2026-09-24T16:08:36+09:00"
 description: "Uma explicação detalhada do Princípio de Pareto (Regra 80/20), que afirma que \"80% dos resultados vêm de 20% das causas\". Desde o seu contexto histórico até exemplos concretos nos negócios e no dia a dia, e métodos práticos. Este é um guia de leitura obrigatória para identificar o essencial e obter resultados máximos com esforço mínimo."
 slug: "business-pareto-principle"
 categories: ["business"]

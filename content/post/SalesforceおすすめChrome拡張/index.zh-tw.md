@@ -1,7 +1,7 @@
 ---
 title: '加速 Salesforce 開發！推薦的 Chrome 擴充功能整理'
 slug: "Salesforce推薦Chrome擴充功能"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Chrome擴充功能"]
 draft: false
 image: "img.webp"

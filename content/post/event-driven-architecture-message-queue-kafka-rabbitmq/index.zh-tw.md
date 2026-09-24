@@ -2,7 +2,7 @@
 title: "事件驅動架構與訊息佇列 (Kafka, RabbitMQ)"
 description: "透過非同步通訊降低系統間耦合度的事件驅動設計，以及訊息代理的角色。"
 slug: "event-driven-architecture-message-queue-kafka-rabbitmq"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

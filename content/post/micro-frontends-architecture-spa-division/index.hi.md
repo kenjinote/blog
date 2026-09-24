@@ -2,7 +2,7 @@
 title: "माइक्रो फ्रंटएंड आर्किटेक्चर (विशाल SPA को विभाजित करने के तरीके)"
 description: "जटिल फ्रंटएंड मोनोलिथ को विभाजित करने और टीम की स्वायत्तता को बढ़ाने के लिए माइक्रो फ्रंटएंड कार्यान्वयन पैटर्न।"
 slug: "micro-frontends-architecture-spa-division"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

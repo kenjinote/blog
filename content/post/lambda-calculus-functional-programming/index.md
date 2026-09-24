@@ -2,7 +2,7 @@
 title: "ラムダ計算（Lambda Calculus）と関数型プログラミングの起源：アロンゾ・チャーチの理論からLisp、Haskellへ"
 description: "計算の基礎理論であるラムダ計算が、どのようにして現代の関数型プログラミング言語へと発展を遂げたのか。アロンゾ・チャーチの理論からLisp、Haskellの誕生に至る歴史と数学的基盤を徹底解説します。"
 slug: lambda-calculus-functional-programming
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
 categories:
   - computer-science

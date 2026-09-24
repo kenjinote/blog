@@ -2,7 +2,7 @@
 title: "Fondamentaux de la cryptographie moderne (cryptographie à clé publique, fonctions de hachage, signatures numériques)"
 description: "Explication approfondie du fonctionnement des technologies de cryptographie moderne, de la clé symétrique et publique au hachage et aux signatures numériques."
 slug: "modern-cryptography-public-key-hash-signature"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

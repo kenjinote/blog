@@ -1,6 +1,6 @@
 ---
 title: "혼다 소이치로: 꿈을 쫓은 기술자 혼과 그 유산"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T20:59:56+09:00
 categories: ["biography"]
 tags: ["soichiro-honda", "history"]
 image: "eyecatch.jpg"

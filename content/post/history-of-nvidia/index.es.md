@@ -2,7 +2,7 @@
 title: "Historia de NVIDIA (GeForce): La trayectoria de su gran transformación de los gráficos 3D al corazón de la IA (GPU)"
 description: "La historia de NVIDIA, que pasó de ser un fabricante de tarjetas gráficas para juegos a convertirse en el rey absoluto que impulsa la revolución moderna de la IA."
 slug: "history-of-nvidia"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T01:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

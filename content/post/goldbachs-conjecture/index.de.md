@@ -2,7 +2,7 @@
 title: "Die Goldbachsche Vermutung - Kann jede gerade Zahl größer als 2 als Summe zweier Primzahlen dargestellt werden?"
 description: "Eine detaillierte Erklärung der 'Goldbachschen Vermutung', eines der berühmtesten ungelösten Probleme der Mathematik, einschließlich seiner Geschichte, Bedeutung und Relevanz in der modernen Mathematik."
 slug: "goldbachs-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "unsolved-problems"]
 tags:

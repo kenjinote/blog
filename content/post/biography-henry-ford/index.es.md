@@ -1,6 +1,6 @@
 ---
 title: "El rey del automóvil Henry Ford: El amanecer de la sociedad de consumo masivo y la innovación del 'Sistema de producción de Ford'"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T20:59:56+09:00"
 categories: ["biography"]
 tags: ["henry-ford", "history"]
 image: "eyecatch.jpg"

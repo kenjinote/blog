@@ -1,7 +1,7 @@
 ---
 title: 'Was ist das Sieb des Eratosthenes? Algorithmus und Implementierung zur Auflistung von Primzahlen bis 1000'
 slug: "Sieb des Eratosthenesを使って1000以下のPrimzahlを列挙する方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-04-09T12:54:24+09:00
 tags: ["Sieb des Eratosthenes", "Primzahlen", "Mathematik", "Rust"]
 draft: false
 math: true

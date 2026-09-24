@@ -2,7 +2,7 @@
 title: "Stratégie de jeu de société : Les règles de base de l'Othello et les modèles de victoire - Des tactiques précises pour prendre les coins"
 description: "Surnommé « une minute pour apprendre, toute une vie pour maîtriser », l'Othello (Reversi). Plutôt que de retourner à l'aveuglette, nous expliquons les « disques définitifs » et la « théorie de la mobilité » pour que les débutants progressent."
 slug: "game-othello-rules"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

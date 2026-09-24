@@ -1,7 +1,7 @@
 ---
 title: '[JS] Cara Memeriksa Semua Kotak Centang di Halaman Web Sekaligus (Termasuk Bookmarklet)'
 slug: "Webページ内のすべてのチェックボックスを全チェックする"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "otomatisasi"]
 draft: false
 image: "img.webp"

@@ -2,7 +2,7 @@
 title: '抜き打ちテストのパラドックス：論理的に「絶対に不可能」なテストが行われる日'
 slug: 'unexpected-hanging-paradox'
 description: '「来週、月曜日から金曜日のいずれかの日に、お前たちには予測不可能な形で抜き打ちテストを行う」——先生のこの宣言に対し、生徒たちは「論理的に抜き打ちテストは不可能だ」と証明してしまいました。しかし……。'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T10:00:00+09:00'
 image: 'img/unexpected_hanging.jpg'
 math: true
 mermaid: true

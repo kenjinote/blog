@@ -2,7 +2,7 @@
 title: "금융·암호 기술: 전자화폐의 역사 - 화폐의 디지털화와 암호 기술의 진화"
 description: "「물리적인 동전과 지폐」가 「디지털 데이터」로 대체되기까지. 데이비드 차움의 초기 실험부터, Suica의 탄생, 그리고 암호자산에 이르는 전자화폐 진화의 역사를 살펴봅니다."
 slug: "history-electronic-money"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

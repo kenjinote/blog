@@ -2,7 +2,7 @@
 title: "Tecnologia de IA para Jogos de Tabuleiro: Regras Básicas e Estratégias Principais do Shogi - Explicação das Táticas Ibisha e Furibisha"
 description: "O 'Shogi', o jogo de raciocínio supremo que se desenrola em um tabuleiro de 81 casas. Explicamos de forma fácil desde a revisão das regras básicas para iniciantes até a filosofia das duas grandes estratégias, 'Ibisha' e 'Furibisha', usadas também por profissionais."
 slug: "game-shogi-rules"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

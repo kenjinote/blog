@@ -1,7 +1,7 @@
 ---
 title: "砂粒を1つ取り除くと、砂山はいつ砂山でなくなるのか？：砂山のパラドックス"
 description: "「砂山」と「砂山でないもの」の境界はどこにあるのか。曖昧さの本質に挑む古代ギリシャ以来の哲学的パラドックス。"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "sorites-paradox"
 image: "img/sorites_paradox.jpg"

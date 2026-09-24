@@ -2,7 +2,7 @@
 title: "Netzwerktechnologie: Technische Erklärung von HTTP - Das zustandslose Protokoll, das das Web antreibt"
 description: "Eine Erklärung von 'HTTP', das hinter den Kulissen der Websites arbeitet, die wir täglich besuchen. Wie sich ein einfaches Textübertragungsprotokoll zur Grundlage moderner, funktionsreicher Anwendungen entwickelt hat."
 slug: "history-of-http"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

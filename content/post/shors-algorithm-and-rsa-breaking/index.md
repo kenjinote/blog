@@ -3,7 +3,7 @@ title: '量子コンピュータはRSA暗号を破るか？ショアのアルゴ
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["量子コンピュータ", "暗号解読", "Shorのアルゴリズム", "RSA"]
 image: "eyecatch.jpg"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-05T22:09:21+09:00
 categories: ["math-cryptography-quantum"]
 description: '量子コンピュータの台頭によって現代の通信インフラを支えるRSA暗号がどのように脅かされるのかを解説します。ショアのアルゴリズムの仕組みからNISQ時代のハードウェアの現状まで、次世代の暗号解読とセキュリティの未来を考察します。'
 ---

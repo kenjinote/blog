@@ -2,7 +2,7 @@
 title: "Konjektur Hodge (Hodge Conjecture) - Masalah Milenium yang Menghubungkan Geometri Aljabar dan Topologi"
 description: "Kami akan membahas secara tuntas Konjektur Hodge, salah satu dari Masalah Hadiah Milenium dari Clay Mathematics Institute, mulai dari perannya sebagai jembatan antara geometri aljabar dan topologi hingga latar belakang matematisnya yang mendalam."
 slug: "hodge-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]
 tags: ["Masalah Hadiah Milenium", "Topologi", "Geometri Aljabar", "Konjektur Hodge"]

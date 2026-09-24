@@ -3,7 +3,7 @@ title: '量子计算机会破解RSA加密吗？Shor算法分析'
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["量子计算机", "密码破解", "Shor算法", "RSA"]
 image: "eyecatch.jpg"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-05T22:09:21+09:00
 categories: ["math-cryptography-quantum"]
 description: '讲解量子计算机的崛起将如何威胁支撑现代通信基础设施的RSA加密。从Shor算法的原理到NISQ时代硬件的现状，探讨下一代密码破解与安全的未来。'
 ---

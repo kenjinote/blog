@@ -1,6 +1,6 @@
 ---
 title: "कन्फ्यूशियस का जीवन और दर्शन: 'रेन' और 'ली' का शाश्वत ज्ञान"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T19:53:32+09:00"
 categories: ["biography"]
 tags: ["confucius", "history"]
 image: "eyecatch.jpg"

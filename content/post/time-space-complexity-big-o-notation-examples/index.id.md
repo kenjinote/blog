@@ -2,7 +2,7 @@
 title: "Kompleksitas Waktu dan Ruang (Pengantar Notasi Big-O dan Contoh)"
 description: "Penjelasan mendalam tentang notasi Big-O, yang sangat penting untuk mengevaluasi kinerja algoritma, mulai dari perbedaan antara kompleksitas waktu dan ruang hingga contoh spesifik."
 slug: "time-space-complexity-big-o-notation-examples"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-22T00:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "big-o", "time-complexity", "space-complexity", "data-structures"]

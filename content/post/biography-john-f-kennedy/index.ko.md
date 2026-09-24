@@ -1,6 +1,6 @@
 ---
 title: "존 F. 케네디: 새로운 시대를 개척한 젊은 대통령의 생애와 철학"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T19:46:03+09:00"
 categories: ["biography"]
 tags: ["john-f-kennedy", "history"]
 image: "eyecatch.jpg"

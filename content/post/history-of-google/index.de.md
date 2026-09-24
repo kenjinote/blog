@@ -2,7 +2,7 @@
 title: "Die Geschichte von Google: Die Evolution von der Suchmaschine zum 'AI-First'-Unternehmen"
 description: "Die Geschichte von Google von PageRank bis Transformer"
 slug: "history-of-google"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T00:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

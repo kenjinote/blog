@@ -2,7 +2,7 @@
 title: 'Joseph Liouville: Pioneer of Transcendental Numbers and Complex Analysis'
 description: 'Exploring the life and legacy of Joseph Liouville, the great 19th-century French mathematician known for Liouville''s theorem, transcendental numbers, Sturm-Liouville theory, and restoring Galois theory.'
 slug: 'liouville'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-20T19:20:00+09:00'
 image: "eyecatch.jpg"
 categories:
   - 'Mathematics'

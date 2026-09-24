@@ -2,7 +2,7 @@
 title: "B-Tree and Database Index Theory (Why DBs Choose B-Tree)"
 description: "A deep dive into the theory, data structures, and disk I/O relationships of B-Tree and B+Tree, which form the foundation of database indexes, and why RDBMS continues to adopt B-Tree as the index standard, accompanied by mathematical analysis and implementation examples."
 slug: "b-tree-database-index-theory"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:45:54+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science", "database"]
 tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]

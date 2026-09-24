@@ -2,7 +2,7 @@
 title: 'Banach-Tarski Paradox: Cut one sphere and get two spheres of the same size?'
 slug: 'banach-tarski-paradox'
 description: 'Did you know that if you cut a single pea and reassemble it like a puzzle, it can become as large as the sun? We explain the bizarre world of the "Banach-Tarski Paradox", the most counterintuitive yet logically perfectly correct theorem caused by the "Axiom of Choice" in modern mathematics.'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T02:00:00+09:00'
 image: 'img/banach_tarski.jpg'
 math: true
 mermaid: true

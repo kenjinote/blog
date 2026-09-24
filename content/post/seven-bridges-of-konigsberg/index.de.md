@@ -2,7 +2,7 @@
 title: "Die sieben Brücken von Königsberg - Ursprünge der Graphentheorie und Topologie"
 description: "Das Problem der 'Sieben Brücken von Königsberg', das im 18. Jahrhundert vom Mathematiker Leonhard Euler gelöst wurde. Ein tiefer Einblick in die Geschichte und den mathematischen Hintergrund, wie dieses Problem neue Bereiche der modernen Mathematik wie die Graphentheorie und die Topologie erschloss."
 slug: "seven-bridges-of-konigsberg"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "history"]
 tags: ["Graphentheorie", "Topologie", "Euler", "Mathematik"]

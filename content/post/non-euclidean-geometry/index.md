@@ -2,7 +2,7 @@
 title: "非ユークリッド幾何学の誕生 - 「曲がった空間」の発見と相対性理論への道"
 description: "ユークリッドの平行線公準の疑義から始まり、ガウス、ボヤイ、ロバチェフスキー、リーマンによる非ユークリッド幾何学の確立、そしてアインシュタインの一般相対性理論に至るまでの数学と物理学の壮大な歴史を解説します。"
 slug: "non-euclidean-geometry"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "physics"]
 tags: ["Geometry", "Relativity", "History of Science", "Math"]

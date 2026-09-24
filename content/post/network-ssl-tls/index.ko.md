@@ -2,7 +2,7 @@
 title: "인터넷의 방패: SSL/TLS의 원리 - 왜 신용카드 정보를 안전하게 보낼 수 있을까?"
 description: "웹사이트 URL에 있는 'https'의 's'가 의미하는 것은 무엇일까요? 전 세계의 이커머스와 통신의 안전을 지키는 암호화 기술 'SSL/TLS'의 원리를 공통키와 공개키의 하이브리드 방식을 통해 알아봅니다."
 slug: "network-ssl-tls"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

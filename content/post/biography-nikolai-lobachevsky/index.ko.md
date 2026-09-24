@@ -1,6 +1,6 @@
 ---
 title: "니콜라이 로바쳅스키: 비유클리드 기하학의 문을 연 '기하학의 코페르니쿠스'"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["nikolai-lobachevsky", "history"]
 image: "eyecatch.jpg"

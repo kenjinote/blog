@@ -2,7 +2,7 @@
 title: "Conways Spiel des Lebens: Ein zellulärer Automat, bei dem aus einfachen Regeln lebensähnliche Komplexität entsteht"
 description: "„Conways Spiel des Lebens“ ist ein unglaublicher zellulärer Automat, der aus nur vier einfachen Regeln lebensähnliche komplexe Verhaltensweisen hervorbringt. Dieser Artikel untersucht tiefgehend seinen mathematischen Hintergrund, detaillierte Regeln, berühmte Muster und Implementierungsbeispiele."
 slug: "conways-game-of-life"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-15T10:00:00+09:00
 image: "eyecatch.jpg"
 categories:
   - "Mathematik"

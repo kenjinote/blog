@@ -1,6 +1,6 @@
 ---
 title: "스티븐 코비: 『성공하는 사람들의 7가지 습관』으로 세상을 바꾼 리더십의 거장"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T20:59:58+09:00
 categories: ["biography"]
 tags: ["stephen-covey", "history"]
 image: "eyecatch.jpg"

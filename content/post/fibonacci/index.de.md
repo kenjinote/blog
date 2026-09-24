@@ -2,7 +2,7 @@
 title: "Leonardo Fibonacci: Das Genie, das das Licht der Mathematik ins mittelalterliche Europa brachte"
 description: 'Ein tiefer Einblick in das Leben von Fibonacci, die Verbreitung arabischer Ziffern durch den "Liber Abaci" und die erstaunliche Beziehung zwischen der Fibonacci-Folge und dem Goldenen Schnitt in der Natur.'
 slug: "fibonacci"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T18:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematik", "Biografie"]
 tags: ["Fibonacci", "Mathematik", "Geschichte", "Goldener Schnitt", "Liber Abaci"]

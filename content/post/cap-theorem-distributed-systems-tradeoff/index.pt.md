@@ -2,7 +2,7 @@
 title: "Teorema CAP e Sistemas Distribuídos (Trade-off de Consistência, Disponibilidade e Tolerância à Partição)"
 description: "A regra absoluta 'Teorema CAP' em arquitetura de sistemas distribuídos e o compromisso de arquitetura adotado pelos bancos de dados modernos."
 slug: "cap-theorem-distributed-systems-tradeoff"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

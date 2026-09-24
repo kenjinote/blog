@@ -1,6 +1,6 @@
 ---
 title: "플라톤의 생애와 철학: 서양 사상의 초석을 다진 위대한 사상가"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["plato", "history"]
 image: "eyecatch.jpg"

@@ -1,7 +1,7 @@
 ---
 title: "Le problème du collectionneur de coupons : combien de tirages pour compléter une collection ?"
 description: "Réunir 10 types de cartes équiprobables demande environ 29,3 tirages en moyenne, mais seuls 63 % des collections sont complètes après 30 tirages. Explications, formules, graphiques et simulation Python."
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-15T21:20:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "statistics"]
 tags: ["Probabilités", "Espérance", "Problème du collectionneur de coupons", "Python"]

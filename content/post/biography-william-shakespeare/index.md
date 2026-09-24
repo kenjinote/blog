@@ -1,6 +1,6 @@
 ---
 title: "ウィリアム・シェイクスピア：時代を超越した言葉の錬金術師"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["william-shakespeare", "history"]
 image: "eyecatch.jpg"

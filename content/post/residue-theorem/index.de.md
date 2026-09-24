@@ -2,7 +2,7 @@
 title: "Residuensatz: Wie man komplexe reelle Integrale mithilfe von 'Singularitäten' in der komplexen Ebene meisterhaft löst"
 description: "Eine detaillierte Erklärung, wie man schwierige bestimmte Integrale reeller Zahlen mithilfe des Residuensatzes, einem Highlight der Funktionentheorie, erstaunlich vereinfacht. Behandelt auch Verzweigungsschnitte und Schlüssellochintegrale."
 slug: "residue-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematik"]
 tags: ["Funktionentheorie", "Analysis", "Mathematik"]

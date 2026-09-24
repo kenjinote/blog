@@ -1,7 +1,7 @@
 ---
 title: 'व्यक्तिगत विकास ऐप की प्रचार रणनीति: तकनीकी ब्लॉग का उपयोग कैसे करें'
 slug: "indie-app-promotion-blog-strategy"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

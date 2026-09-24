@@ -2,7 +2,7 @@
 title: "كيفية اختيار قاعدة بيانات NoSQL (KVS، المستندات، الرسم البياني، الأعمدة العريضة)"
 description: "دليل لفهم نماذج البيانات المتنوعة لقواعد بيانات NoSQL واتخاذ الاختيار الأمثل بناءً على حالات الاستخدام."
 slug: "nosql-database-selection-kvs-document-graph-wide-column"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "database"

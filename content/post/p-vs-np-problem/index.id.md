@@ -2,7 +2,7 @@
 title: "Gambaran Lengkap 'Masalah P vs NP' dan Kelas Kompleksitas Komputasi: Penjelasan Masalah Hadiah Milenium dan Signifikansi Pemrograman"
 description: "Menjelaskan secara mendalam tentang 'Masalah P vs NP', salah satu Masalah Hadiah Milenium, mulai dari dasar-dasar kelas kompleksitas komputasi (P, NP, NP-Lengkap, NP-Sulit) hingga tren penelitian terbaru dan dampaknya pada pemrograman serta teori kriptografi."
 slug: p-vs-np-problem
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
 categories: ["computer-science", "algorithms"]
 tags: ["complexity-theory", "p-vs-np", "np-complete", "millennium-prize", "python"]

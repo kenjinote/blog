@@ -2,7 +2,7 @@
 title: "Virtuelle Standleitung: Die Funktionsweise von VPN - Ein sicherer Tunnel im Internet"
 description: "VPN (Virtual Private Network) ist für das Arbeiten im Homeoffice unverzichtbar. Wir erklären, wie durch Verschlüsselung und Kapselung ein 'eigener sicherer und privater Tunnel' im Internet, das ansonsten jeder ausspionieren kann, geschaffen wird."
 slug: "network-vpn"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -1,6 +1,6 @@
 ---
 title: "चिकित्सा के जनक हिप्पोक्रेट्स: उनका जीवन और आधुनिक युग में जीवित दर्शन"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:53:32+09:00
 categories: ["biography"]
 tags: ["hippocrates", "history"]
 image: "eyecatch.jpg"

@@ -2,7 +2,7 @@
 title: "Eulerscher Polyedersatz: Die Magie der Topologie durch V - E + F = 2"
 description: "Eine detaillierte Erklärung der Schönheit des eulerschen Polyedersatzes (V - E + F = 2) und der Welt der Topologie, in die er führt. Entdecken wir den Charme von Invarianten, von regulären Polyedern bis zur Euler-Charakteristik."
 slug: "eulers-polyhedron-formula"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematik"

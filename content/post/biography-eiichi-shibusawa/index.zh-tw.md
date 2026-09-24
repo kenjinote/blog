@@ -1,6 +1,6 @@
 ---
 title: "日本資本主義之父澀澤榮一：致力於道德與經濟合一的一生"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["eiichi-shibusawa", "history"]
 image: "eyecatch.jpg"

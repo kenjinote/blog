@@ -1,7 +1,7 @@
 ---
 title: 'yt-dlp 的用法：下載與儲存 YouTube 影片、音訊的方法'
 slug: "yt-dlp.exe による YouTube 影片の下載方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-09-03T14:09:26+09:00
 tags: ["YouTube", "下載"]
 draft: false
 image: "img_1.webp"

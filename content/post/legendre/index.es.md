@@ -2,7 +2,7 @@
 title: "Adrien-Marie Legendre: El gigante en la sombra de las matemáticas, su enemistad con Gauss y el misterio de su retrato"
 description: "Un relato detallado de la vida del gran matemático francés Adrien-Marie Legendre, sus logros en integrales elípticas y teoría de números, su conflicto con Gauss y el misterio de su retrato durante mucho tiempo equivocado."
 slug: "legendre"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
 categories: ["matemáticas", "biografía"]
 tags: ["Legendre", "Teoría de números", "Geometría", "Historia de las matemáticas"]

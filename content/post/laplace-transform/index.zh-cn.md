@@ -2,7 +2,7 @@
 title: "拉普拉斯变换：将复杂微分方程转化为代数方程求解的技术"
 description: "从拉普拉斯变换的基础知识到其在微分方程中的应用进行全面解析。我们将探讨这个在时域和复频域之间转换的强大数学工具的本质。"
 slug: "laplace-transform"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

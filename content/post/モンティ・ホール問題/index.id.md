@@ -2,7 +2,7 @@
 title: 'Masalah Monty Hall: Jebakan Probabilitas yang Mengkhianati Intuisi dan Solusi Sempurna dengan Inferensi Bayesian'
 slug: 'monty-hall-problem'
 description: 'Sebuah acara kuis televisi di mana Anda harus memilih hadiah dari 3 pintu. Setelah pembawa acara membuka pintu yang salah, haruskah Anda mengubah pilihan Anda? Kami akan mengupas tuntas "Masalah Monty Hall" yang telah memicu perdebatan besar di kalangan ahli matematika di seluruh dunia, dari perspektif teori probabilitas, inferensi Bayesian, dan psikologi kognitif.'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T00:00:00+09:00'
 image: 'img/monty_hall.jpg'
 math: true
 mermaid: true

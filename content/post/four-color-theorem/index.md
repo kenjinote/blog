@@ -2,7 +2,7 @@
 title: "四色問題（Four Color Theorem） - どんな地図も4色あれば塗り分けられるか"
 description: "数学界の難問であった四色問題の歴史、証明のアプローチ、そしてコンピュータ支援証明の意義について詳しく解説します。"
 slug: "four-color-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "computer-science"]
 tags: ["Four Color Theorem", "Graph Theory", "Computer-assisted Proof", "Topology"]

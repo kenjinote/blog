@@ -2,7 +2,7 @@
 title: "伊藤清：隨機微分方程之父與支撐現代金融的數學"
 description: "深入探討以「伊藤引理」聞名的數學家伊藤清的一生，他在隨機分析學上的成就，以及對現代社會的影響。"
 slug: "ito-kiyosi"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["伊藤清", "隨機微分方程", "金融工程", "數學史"]

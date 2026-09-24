@@ -1,6 +1,5 @@
 ---
 title: "O Nascimento do \"Mouse\" e Douglas Engelbart: A Trajetória do Pioneiro que Redefiniu a Interação entre Humanos e Computadores"
-date: "2026-09-24T16:08:36+09:00"
 description: "Como surgiu o \"mouse\", essencial para a operação atual de computadores? Do pensamento de Douglas Engelbart sobre o \"Aumento do Intelecto Humano (Augmenting Human Intellect)\" até \"The Mother of All Demos\" em 1968, uma explicação completa desta história épica."
 slug: "history-douglas-engelbart-mouse"
 categories: ["history"]

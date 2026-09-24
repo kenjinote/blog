@@ -2,7 +2,7 @@
 title: "Alan Turing: O Pai da Ciência da Computação e um Gênio Matemático Inigualável"
 description: "Uma explicação detalhada da vida de Alan Turing, a decifração da Enigma, a máquina de Turing, o problema da parada e a matemática da morfogênese. Explorando como seu legado continua a moldar o mundo moderno."
 slug: "turing"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Matemática", "Biografia"]
 tags: ["Alan Turing", "Máquina de Turing", "Enigma", "Problema da Parada", "Morfogênese"]

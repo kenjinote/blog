@@ -2,7 +2,7 @@
 title: "NVIDIA（GeForce）的歷史：從3D圖形到AI心臟（GPU）的蛻變軌跡"
 description: "從遊戲用顯示卡製造商，變身為引領現代AI革命的絕對王者的NVIDIA歷史。"
 slug: "history-of-nvidia"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T01:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -1,6 +1,5 @@
 ---
 title: "Compréhension complète et application pratique de la loi de Pareto (loi des 80/20) : La pensée essentielle qui transforme radicalement les affaires et la vie"
-date: "2026-09-24T16:08:36+09:00"
 description: "Une explication détaillée de la loi de Pareto (loi des 80/20), selon laquelle « 80 % des résultats proviennent de 20 % des causes », allant de son contexte historique à ses exemples concrets dans les affaires et la vie quotidienne, ainsi que ses méthodes pratiques. Il s'agit d'un guide incontournable pour identifier l'essentiel et obtenir le maximum de résultats avec un minimum d'efforts."
 slug: "business-pareto-principle"
 categories: ["business"]

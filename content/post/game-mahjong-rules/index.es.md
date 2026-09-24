@@ -2,7 +2,7 @@
 title: "El culmen de los juegos de mesa: Reglas básicas de Mahjong y explicación de las manos - Una batalla de información entre 4 jugadores"
 description: "Mahjong, un juego de mesa intelectual oriental tejido por 136 fichas. Explicaremos la estructura básica de este juego con un equilibrio perfecto entre suerte y habilidad, cómo crear los conjuntos y el par, y las 'manos' representativas."
 slug: "game-mahjong-rules"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

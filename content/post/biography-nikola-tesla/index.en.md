@@ -1,6 +1,5 @@
 ---
 title: "Nikola Tesla: The Future Envisioned by Alternating Current and the World System"
-date: "2026-09-24T16:08:36+09:00"
 description: "An in-depth exploration of the life of genius inventor Nikola Tesla, the \"War of the Currents\" with Edison, and his grand, unfinished dream of the \"World System\" along with its technical background."
 slug: "biography-nikola-tesla"
 categories: ["biography"]

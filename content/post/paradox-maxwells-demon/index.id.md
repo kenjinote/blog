@@ -1,6 +1,5 @@
 ---
 title: "Setan Maxwell: Eksperimen Pemikiran Pamungkas Terhadap Hukum Kedua Termodinamika, dan Bagaimana Informasi Berubah Menjadi Panas"
-date: "2026-09-24T16:08:36+09:00"
 description: "Paradoks paling terkenal dalam sejarah fisika, \"Setan Maxwell\". Bagaimana setan yang tampaknya melanggar Hukum Kedua Termodinamika ini lahir, dan bagaimana ia dikalahkan setelah lebih dari satu abad? Penjelasan mendalam tentang jejak menuju termodinamika informasi."
 slug: "paradox-maxwells-demon"
 categories: ["science"]

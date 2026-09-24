@@ -2,7 +2,7 @@
 title: "Architecture orientée événements et files d'attente de messages (Kafka, RabbitMQ)"
 description: "Conception orientée événements qui réduit le couplage entre les systèmes grâce à la communication asynchrone, et le rôle des courtiers de messages."
 slug: "event-driven-architecture-message-queue-kafka-rabbitmq"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

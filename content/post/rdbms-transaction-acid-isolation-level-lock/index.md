@@ -2,7 +2,7 @@
 title: "RDBMSのトランザクションとACID特性（分離レベルとロック）"
 description: "データベースの整合性を守るトランザクション処理の基本から、分離レベルによる異常（Anomaly）とロック機構まで。"
 slug: "rdbms-transaction-acid-isolation-level-lock"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "database"

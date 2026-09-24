@@ -2,7 +2,7 @@
 title: "Brettspiel-Strategie: Grundregeln und Eröffnungsstrategien beim Schach - Ein Krieg auf dem Brett, um den König in die Enge zu treiben"
 description: "Schach, der am meisten gespielte Denksport der Welt. Von den Grundzügen der Figuren über die Kontrolle des Zentrums und die Rochade bis hin zu typischen Eröffnungsstrategien erklären wir die Theorie für Anfänger, um zu gewinnen."
 slug: "game-chess-rules"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

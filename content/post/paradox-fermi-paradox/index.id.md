@@ -1,6 +1,5 @@
 ---
 title: "Paradoks Fermi: Di Alam Semesta yang Tanpa Batas Ini, Mengapa Kita Tidak Bisa Menemukan \"Mereka\"?"
-date: "2026-09-24T16:08:36+09:00"
 description: "\"Di manakah alien?\" —— \"Paradoks Fermi\" yang berawal dari pertanyaan santai fisikawan Enrico Fermi. Penjelasan super mendetail yang menggali secara mendalam berbagai hipotesis yang menjelaskan keheningan alam semesta, seperti Persamaan Drake, Teori Great Filter, dan Hipotesis Hutan Gelap, serta mendekati makna eksistensi dan masa depan umat manusia."
 slug: "paradox-fermi-paradox"
 categories: ["science"]

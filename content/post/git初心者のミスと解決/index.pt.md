@@ -1,7 +1,7 @@
 ---
 title: 'Erros comuns de iniciantes no Git e comandos de solução (resolução de conflitos, etc.)'
 slug: "git-beginners-mistakes-and-solutions"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T17:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

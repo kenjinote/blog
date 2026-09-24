@@ -2,7 +2,7 @@
 title: "Tecnologia de Redes: A História e os Mecanismos do TCP/IP - As Regras de Padrão Global que Conectam a Internet"
 description: "Por que qualquer computador no mundo pode se comunicar independentemente das diferenças de fabricante ou sistema operacional? Vamos desvendar a filosofia e a história da suíte de protocolos 'TCP/IP' que forma a base da internet."
 slug: "network-tcp-ip"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

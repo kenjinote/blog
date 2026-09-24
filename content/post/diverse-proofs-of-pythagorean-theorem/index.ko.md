@@ -2,7 +2,7 @@
 title: "피타고라스 정리의 다양한 증명: 기하학, 대수학에서 아인슈타인의 증명까지"
 description: "피타고라스 정리의 매력적인 증명 방법들을 만나보세요. 유클리드에서 아인슈타인까지 다양한 관점에서 수학의 아름다움을 탐구해 봅니다."
 slug: "diverse-proofs-of-pythagorean-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "수학"

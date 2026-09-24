@@ -2,7 +2,7 @@
 title: "Valeurs propres et vecteurs propres : ces vecteurs spéciaux qui ne changent pas de direction sous les transformations matricielles et leurs applications"
 description: "Une explication détaillée des valeurs propres et des vecteurs propres, l'un des concepts les plus importants en algèbre linéaire, de leur signification géométrique et méthodes de calcul spécifiques aux applications en apprentissage automatique et en physique. Comprend des exemples en Python pour une compréhension intuitive."
 slug: "eigenvalues-and-eigenvectors"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathématiques"]
 tags: ["algèbre-linéaire", "valeur-propre", "vecteur-propre", "mathématiques", "apprentissage-automatique", "python", "science-des-données"]

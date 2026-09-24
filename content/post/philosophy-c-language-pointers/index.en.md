@@ -1,6 +1,5 @@
 ---
 title: "The Philosophy of C: The Abyss of Programming Brought by Pointers and Freedom"
-date: "2026-09-24T16:08:36+09:00"
 description: "The core of C language: \"pointers\" and \"freedom\". How does its philosophy of entrusting everything to developers unlock hardware limits and foster programmer growth? A detailed exploration into the abyss of memory management."
 slug: "philosophy-c-language-pointers"
 categories: ["philosophy"]

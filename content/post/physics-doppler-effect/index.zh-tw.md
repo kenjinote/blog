@@ -2,7 +2,7 @@
 title: "物理的奧秘：都卜勒效應 - 從救護車警笛到宇宙膨脹"
 description: "靠近的聲音較高，遠去的聲音較低。「都卜勒效應」的機制，以及它解開宇宙之謎的原因。"
 slug: "physics-doppler-effect"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T02:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

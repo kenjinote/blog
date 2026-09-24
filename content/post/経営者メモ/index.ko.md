@@ -6,7 +6,7 @@
 
 title: '성공하는 사업 선택과 시스템화의 비결: 경영자용 실천 메모'
 slug: "경영자メモ"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-07T02:36:11+09:00
 tags: ["경영자"]
 draft: false
 image: "images/img.webp"

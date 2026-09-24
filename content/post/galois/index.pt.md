@@ -2,7 +2,7 @@
 title: "Évariste Galois: O gênio trágico e o alvorecer da matemática moderna"
 description: "O genial matemático Évariste Galois, que morreu em um duelo aos 20 anos. Exploramos sua vida turbulenta e a 'Teoria de Galois', que lançou as bases da álgebra moderna."
 slug: "galois"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["matemática", "biografia"]
 tags: ["Teoria de Galois", "Álgebra", "Teoria dos grupos", "História"]

@@ -2,7 +2,7 @@
 title: "木構造とグラフ構造の探索（DFS, BFS, ダイクストラ法）"
 description: "複雑なデータ関係を表現する木構造とグラフ構造。深さ優先探索(DFS)、幅優先探索(BFS)から最短経路問題(ダイクストラ法)まで徹底解説します。"
 slug: "tree-graph-data-structures-search-dfs-bfs-dijkstra"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-22T03:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "graph", "tree", "dfs", "bfs", "dijkstra"]

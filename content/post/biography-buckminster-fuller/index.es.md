@@ -1,6 +1,5 @@
 ---
 title: "Buckminster Fuller y la filosofía de la \"Nave Espacial Tierra\": El genio heterodoxo que diseñó el futuro"
-date: "2026-09-24T16:08:36+09:00"
 description: "Buckminster Fuller, quien propuso el concepto de la \"Nave Espacial Tierra\" e inventó la cúpula geodésica. Profundizamos en su turbulenta vida y en su filosofía, que sirve como guía para un futuro sostenible."
 slug: "biography-buckminster-fuller"
 categories: ["biography"]

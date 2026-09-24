@@ -1,7 +1,7 @@
 ---
 title: '【नमूने के साथ】C++ से Windows.AI को कॉल करके ONNX मॉडल निष्पादित करने की विधि'
 slug: "C++からMicrosoft.Windows.AIを呼び出す方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-07-19T10:03:51+09:00
 tags: ["C++", "Microsoft.Windows.AI", "Win32 API"]
 draft: false
 image: "img.webp"

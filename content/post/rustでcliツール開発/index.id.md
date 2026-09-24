@@ -2,7 +2,7 @@
 title: 'Tutorial Pengembangan Super Cepat Tool CLI dengan Rust'
 description: 'Ini adalah tutorial lengkap untuk mengembangkan tool CLI yang cepat dan aman menggunakan Rust. Kita akan membangun tool praktis dengan memanfaatkan clap, tokio, serde, dan lainnya.'
 slug: "rust-cli-tool-fast-development-tutorial"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T13:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

@@ -1,7 +1,7 @@
 ---
 title: 'Por que Ícones Carregados pela Função LoadIcon Não Precisam do DestroyIcon'
 slug: "LoadIconはDestroyIconを呼び出す必要はない"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-04-19T01:55:17+09:00
 tags: ["ícone", "LoadIcon", "DestroyIcon", "Programação Windows"]
 draft: false
 categories: ["programming"]

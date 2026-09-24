@@ -2,7 +2,7 @@
 title: "Théorème de Pick : Trouver l'Aire Juste en Comptant les Points du Quadrillage"
 description: "Une explication détaillée, avec des diagrammes et des démonstrations, de la formule pour trouver l'aire d'un polygone sans trou dont les sommets sont sur les points d'un quadrillage à partir du nombre de points intérieurs et sur le bord."
 slug: "picks-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathématiques"

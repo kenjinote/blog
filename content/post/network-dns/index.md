@@ -2,7 +2,7 @@
 title: "ネットワーク技術: DNSの仕組み - インターネットの電話帳、名前解決の裏側"
 description: "「www.google.com」と入力するだけで、なぜ目的のサーバーに繋がるのか。インターネット最大の分散型データベース「DNS」の階層構造と名前解決の仕組みを解説します。"
 slug: "network-dns"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

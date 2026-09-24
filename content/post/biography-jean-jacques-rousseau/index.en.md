@@ -1,6 +1,6 @@
 ---
 title: "The Life and Thoughts of Jean-Jacques Rousseau: The Maverick of the Enlightenment Who Pursued Freedom and Equality"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["jean-jacques-rousseau", "history"]
 image: "eyecatch.jpg"

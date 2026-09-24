@@ -2,7 +2,7 @@
 title: "ピックの定理：格子点を数えるだけで面積がわかる"
 description: "格子点を頂点とする穴のない多角形について、内部と境界の点の数から面積を求める公式を図解や証明とともに詳しく解説します。"
 slug: "picks-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

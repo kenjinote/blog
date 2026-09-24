@@ -1,6 +1,6 @@
 ---
 title: "La vie et la philosophie de Confucius : La sagesse intemporelle de « Ren » et « Li »"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T19:53:32+09:00"
 categories: ["biography"]
 tags: ["confucius", "history"]
 image: "eyecatch.jpg"

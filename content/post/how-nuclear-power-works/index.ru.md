@@ -2,7 +2,7 @@
 title: "Как работает атомная электростанция: от тепла деления до электричества и охлаждения после остановки"
 description: "Энергия связи, цепная реакция, запаздывающие нейтроны, реакторы PWR и BWR, турбины, остаточное тепловыделение и отработавшее топливо — с историей, схемами и примерами расчётов."
 slug: "how-nuclear-power-works"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-24T10:00:00+09:00"
 image: "eyecatch.png"
 categories: ["technology", "physics"]
 tags: ["nuclear-power", "nuclear-fission", "energy", "engineering", "history"]

@@ -1,7 +1,7 @@
 ---
 title: 'Cara Menginstal dan Menghapus PowerToys dengan Perintah winget'
 slug: "PowerToysのInstalasi"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-09-30T21:23:00+09:00
 tags: ["cmd", "Command Prompt", "PowerToys", "winget"]
 draft: false
 image: "img.webp"

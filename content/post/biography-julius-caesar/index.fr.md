@@ -1,6 +1,6 @@
 ---
 title: "Gaius Julius Caesar : La trajectoire du génie qui a décidé du destin de Rome"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["julius-caesar", "history"]
 image: "eyecatch.jpg"

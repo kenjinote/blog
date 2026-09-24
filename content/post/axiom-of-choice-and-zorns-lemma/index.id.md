@@ -2,7 +2,7 @@
 title: "Aksioma Pilihan dan Lemma Zorn - Konsep 'Pilihan' yang Mengguncang Fondasi Matematika"
 description: "Mendalami aksioma pilihan dan lemma Zorn, dari makna intuitifnya hingga formulasi matematis dan pentingnya dalam matematika modern."
 slug: "axiom-of-choice-and-zorns-lemma"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:20:37+09:00
 image: "eyecatch.jpg"
 categories: ["matematika", "teori-himpunan"]
 tags: ["Aksioma Pilihan", "Lemma Zorn", "Sistem Aksioma ZFC", "Fondasi Matematika", "Mermaid", "KaTeX"]

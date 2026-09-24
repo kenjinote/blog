@@ -1,6 +1,5 @@
 ---
 title: "Das Schiff des Theseus: Das ultimative Paradoxon, das die Grenzen der Identität hinterfragt"
-date: "2026-09-24T16:08:36+09:00"
 description: "Das 'Schiff des Theseus' ist ein philosophisches Paradoxon aus dem antiken Griechenland. Ist ein Schiff, bei dem alle Teile ausgetauscht wurden, noch dasselbe Schiff? Wir gehen der Frage auf den Grund, was persönliche Identität bedeutet."
 slug: "paradox-ship-of-theseus"
 categories: ["philosophy"]

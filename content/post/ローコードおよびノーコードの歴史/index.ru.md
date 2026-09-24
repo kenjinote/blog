@@ -1,7 +1,7 @@
 ---
 title: 'История low-code и no-code разработки (с 1980-х годов до наших дней) | От HyperCard до новейших инструментов'
 slug: "Low-codeおよびNo-codeのИстория"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-04-26T16:46:11+09:00
 tags: ["Low-code", "No-code", "История"]
 draft: false
 image: "img.webp"

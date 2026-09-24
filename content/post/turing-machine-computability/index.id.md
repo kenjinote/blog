@@ -2,7 +2,7 @@
 title: 'Mesin Turing dan Teori Komputabilitas: Eksperimen Pemikiran Alan Turing dan "Masalah Penghentian"'
 description: 'Apa batas komputasi? Kami menggali lebih dalam konsep Mesin Turing yang diajukan oleh Alan Turing dan "Masalah Penghentian", tonggak sejarah dalam teori komputabilitas, dari perspektif matematika dan pemrograman.'
 slug: turing-machine-computability
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
 categories:
   - computer-science

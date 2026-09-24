@@ -2,7 +2,7 @@
 title: "Valores propios y vectores propios: los vectores especiales que no cambian de dirección bajo transformaciones matriciales y sus aplicaciones"
 description: "Una explicación detallada de los valores propios y vectores propios, uno de los conceptos más importantes en álgebra lineal, desde su significado geométrico y métodos de cálculo específicos hasta aplicaciones en aprendizaje automático y física. Incluye ejemplos en Python para una comprensión intuitiva."
 slug: "eigenvalues-and-eigenvectors"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["matemáticas"]
 tags: ["álgebra-lineal", "valor-propio", "vector-propio", "matemáticas", "aprendizaje-automático", "python", "ciencia-de-datos"]

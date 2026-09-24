@@ -2,7 +2,7 @@
 title: "LLM（大型语言模型）的机制与编程应用（Transformer模型、提示词工程）"
 description: "深入解析作为大型语言模型（LLM）核心的 Transformer 架构的数学机制，从高级提示词工程（Prompt Engineering）技术，到实际编程中的应用，进行全面彻底的讲解。"
 slug: "large-language-models-llm-transformer-prompt-engineering"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T14:51:08+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["ai", "llm", "transformer", "prompt-engineering"]

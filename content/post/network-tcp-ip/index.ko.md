@@ -2,7 +2,7 @@
 title: "네트워크 기술: TCP/IP의 역사와 원리 - 인터넷을 연결하는 세계 표준 규칙"
 description: "전 세계의 모든 컴퓨터가 제조사나 OS의 차이를 넘어 통신할 수 있는 이유는 무엇일까요? 인터넷의 근간을 이루는 'TCP/IP' 프로토콜 제품군의 사상과 역사를 살펴봅니다."
 slug: "network-tcp-ip"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

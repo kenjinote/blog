@@ -1,7 +1,7 @@
 ---
 title: 'Aufzeichnungen über Naturkatastrophen in Japan: Das Noto-Halbinsel-Erdbeben 2024 und Schadensmeldungen'
 slug: "日本のKatastrophe"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-01-07T00:50:09+09:00
 tags: ["Katastrophen", "Daten"]
 draft: false
 image: "img.webp"

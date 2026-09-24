@@ -2,7 +2,7 @@
 title: "Theorema Egregium (Teorema Mengagumkan) - Puncak Geometri Diferensial yang Juga Berlaku untuk Cara Makan Pizza"
 description: "Membahas secara mendalam tentang 'Teorema Mengagumkan' yang ditemukan oleh Carl Friedrich Gauss, dari latar belakang matematisnya hingga aplikasi sehari-hari saat memakan pizza."
 slug: "theorema-egregium"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:11:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]
 tags: ["Geometri", "Gauss", "Teorema Pizza", "Theorema Egregium", "Geometri Diferensial"]

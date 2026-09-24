@@ -2,7 +2,7 @@
 title: "विकर्णीकरण और जॉर्डन सामान्य रूप: जटिल मैट्रिक्स को सरल बनाने की विधि"
 description: "रैखिक बीजगणित में विकर्णीकरण और जॉर्डन सामान्य रूप का विस्तृत वर्णन, उनके सहज अर्थ, गणितीय परिभाषाएं और अनुप्रयोगों सहित।"
 slug: "diagonalization-and-jordan-normal-form"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["linear-algebra", "matrix", "eigenvalue", "jordan-normal-form"]

@@ -2,7 +2,7 @@
 title: "Kubernetes (K8s) Architektur: Pod, Service, Ingress und Control Plane"
 description: "Ein umfassender Überblick über Kubernetes, den De-facto-Standard für Container-Orchestrierung. Wir erläutern im Detail, wie die Control Plane funktioniert und welche Rolle die verschiedenen Ressourcen spielen."
 slug: "kubernetes-k8s-architecture-pod-service-ingress"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T09:00:00+09:00
 image: eyecatch.jpg
 categories:
   - "infrastructure"

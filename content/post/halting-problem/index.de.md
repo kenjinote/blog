@@ -1,7 +1,7 @@
 ---
 title: "Das Halteproblem (Halting Problem): Das stärkste Programm, das absolut unmöglich zu erschaffen ist"
 image: "eyecatch.jpg"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T00:00:51+09:00
 description: "Wir erklären das Halteproblem, eines der berühmtesten ungelösten (aber als unlösbar bewiesenen) Probleme in der Informatik. Eine leicht verständliche Erklärung mit einem Beweis durch Widerspruch, intuitiven Beispielen, mathematischen Formeln und Diagrammen."
 categories: ["computer-science", "theory-of-computation"]
 tags:

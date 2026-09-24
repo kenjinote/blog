@@ -1,6 +1,5 @@
 ---
 title: "Richard Feynman: The Truth of the Universe and the Human Way of Life Unraveled by a Mass of Curiosity"
-date: "2026-09-24T16:08:36+09:00"
 description: "Nobel laureate in physics, Richard Feynman. From building quantum electrodynamics to investigating the Challenger accident, and even safe-cracking and playing the bongos, we thoroughly explain his wildly unconventional life filled with insatiable curiosity and 'the pleasure of finding things out'."
 slug: "biography-richard-feynman"
 categories: ["biography"]

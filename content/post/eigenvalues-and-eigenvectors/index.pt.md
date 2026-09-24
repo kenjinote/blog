@@ -2,7 +2,7 @@
 title: "Autovalores e Autovetores: Vetores Especiais Que Não Mudam de Direção Sob Transformações Matriciais e Suas Aplicações"
 description: "Uma explicação detalhada sobre autovalores e autovetores, um dos conceitos mais importantes da álgebra linear, desde o seu significado geométrico e métodos de cálculo específicos até aplicações em aprendizado de máquina e física. Inclui exemplos em Python para um entendimento intuitivo."
 slug: "eigenvalues-and-eigenvectors"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["matemática"]
 tags: ["álgebra-linear", "autovalor", "autovetor", "matemática", "aprendizado-de-máquina", "python", "ciência-de-dados"]

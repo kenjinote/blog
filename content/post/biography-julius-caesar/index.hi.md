@@ -1,6 +1,6 @@
 ---
 title: "गयुस जूलियस सीज़र: रोम के भाग्य का फैसला करने वाले प्रतिभाशाली की प्रक्षेपवक्र"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["julius-caesar", "history"]
 image: "eyecatch.jpg"

@@ -1,6 +1,5 @@
 ---
 title: "Claude Shannon, el padre de la teoría de la información: la vida y los logros del genio que creó la era digital"
-date: "2026-09-24T16:08:36+09:00"
 description: "Claude Shannon, el \"padre de la teoría de la información\" que sentó las bases de las comunicaciones digitales y la informática moderna. Exploramos su vida en detalle, desde su aplicación del álgebra de Boole y el establecimiento de la teoría de la información, hasta su faceta más lúdica y amante del monociclo y los malabares, descubriendo toda la magnitud de este genio."
 slug: "biography-claude-shannon"
 categories: ["biography"]

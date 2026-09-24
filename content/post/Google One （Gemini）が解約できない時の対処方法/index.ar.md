@@ -1,7 +1,7 @@
 ---
 title: 'لا تستطيع إلغاء اشتراك Google One (Gemini)؟ شرح طريقة الإلغاء الصحيحة'
 slug: "Google One （Gemini）が解約できない時のطريقة التعامل"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "إلغاء الاشتراك", "الحل"]
 draft: false
 image: "img.webp"

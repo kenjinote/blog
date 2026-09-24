@@ -1,6 +1,5 @@
 ---
 title: "SQL與關聯式模型：埃德加·F·科德集合論方法的深淵與哲學"
-date: "2026-09-24T16:08:36+09:00"
 description: "深入探討作為SQL基礎的關聯式模型與科德的集合論。這是一篇完全保存版的長篇專文，從資料庫的歷史背景、數學基礎，詳解至現代應用程式設計中的哲學意涵。"
 slug: "philosophy-sql-relational-model"
 categories: ["philosophy"]

@@ -2,7 +2,7 @@
 title: '"P vs NP 문제"의 전모와 계산 복잡도 클래스: 밀레니엄 현상 문제 해설과 프로그래밍적 의의'
 description: "밀레니엄 현상 문제 중 하나인 'P vs NP 문제'에 대해 계산 복잡도 클래스(P, NP, NP-완전, NP-난해)의 기초부터 최신 연구 동향, 프로그래밍과 암호 이론에 미치는 영향까지 철저하게 깊이 파헤쳐 해설합니다."
 slug: p-vs-np-problem
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
 categories: ["computer-science", "algorithms"]
 tags: ["complexity-theory", "p-vs-np", "np-complete", "millennium-prize", "python"]

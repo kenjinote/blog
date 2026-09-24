@@ -2,7 +2,7 @@
 title: "Srinivasa Ramanujan: Das mathematische Genie, das durch Intuition die Unendlichkeit begriff"
 description: "Eine detaillierte Erklärung des Lebens des indischen Mathematikgenies Srinivasa Ramanujan und seiner erstaunlichen mathematischen Leistungen wie der Taxicab-Zahl und der Formeln für Pi. Wir untersuchen auch die Auswirkungen seiner Intuition auf die moderne Mathematik und Physik."
 slug: "ramanujan"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematik"

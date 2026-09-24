@@ -2,7 +2,7 @@
 title: "微服务架构的明与暗（BFF与API Gateway）"
 description: "从单体架构拆分过程中的挑战，以及通过API Gateway和BFF（Backend for Frontend）模式提供的解决方案。"
 slug: "microservices-architecture-bff-api-gateway"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

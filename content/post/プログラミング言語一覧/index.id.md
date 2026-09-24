@@ -1,7 +1,7 @@
 ---
 title: 'Dari Mayor hingga Minor! Daftar Bahasa Pemrograman dan Rangkuman Karakteristik Masing-masing'
 slug: "Bahasa Pemrograman一覧"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-04-01T03:45:53+09:00
 tags: ["Bahasa Pemrograman"]
 draft: true
 image: "img.webp"

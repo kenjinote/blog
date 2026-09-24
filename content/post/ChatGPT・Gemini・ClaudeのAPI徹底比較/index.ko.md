@@ -1,7 +1,7 @@
 ---
 title: 'ChatGPT・Gemini・Claude의 API 철저 비교! 어떤 것을 선택해야 할까?'
 slug: "chatgpt-gemini-claude-api-comparison"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

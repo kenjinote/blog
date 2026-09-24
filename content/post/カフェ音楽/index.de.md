@@ -1,7 +1,7 @@
 ---
 title: 'Konzentrieren Sie sich auf Arbeit und Studium! Empfohlene Sammlung von stilvoller Café-Musik und Hintergrundmusik'
 slug: "CaféMusik"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-08T08:39:03+09:00
 tags: ["Café", "Musik"]
 draft: false
 image: "images/img.webp"

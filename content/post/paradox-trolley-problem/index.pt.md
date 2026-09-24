@@ -1,6 +1,5 @@
 ---
 title: "【O Problema do Bonde: A Escolha Definitiva da Ética e o Abismo da Intuição Moral Humana】"
-date: "2026-09-24T16:08:36+09:00"
 description: "【Cinco trabalhadores estão no caminho de um bonde desgovernado, e há uma pessoa na bifurcação. Você puxaria a alavanca? Desde o clássico experimento mental de Philippa Foot até a ética da inteligência artificial em carros autônomos, exploramos profundamente o conflito entre o utilitarismo e a deontologia proposto pelo \"Problema do Bonde\", além dos mecanismos de tomada de decisão moral humana ao longo de milhares de palavras.】"
 slug: "paradox-trolley-problem"
 categories: ["philosophy"]

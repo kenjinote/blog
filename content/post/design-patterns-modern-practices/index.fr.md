@@ -2,7 +2,7 @@
 title: "Repenser les Patrons de Conception : Le GoF est-il Obsolète ? Meilleures Pratiques Modernes"
 description: "Les patrons de conception GoF introduits en 1994. Sont-ils toujours valides dans les langages de programmation modernes d'aujourd'hui ? Nous examinerons en profondeur les meilleures pratiques de conception modernes, en intégrant l'impact de la programmation fonctionnelle et des nouveaux paradigmes."
 slug: "design-patterns-modern-practices"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "architecture"

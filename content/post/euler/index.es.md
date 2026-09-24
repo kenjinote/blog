@@ -2,7 +2,7 @@
 title: "Leonhard Euler: El Gigante de las Matemáticas, su Vida y su Legado"
 description: "Leonhard Euler, uno de los matemáticos más grandes de la historia. Una exploración detallada de su dramática vida y sus inmensurables contribuciones a las matemáticas, la física y la astronomía."
 slug: "euler"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
 categories: ["matemáticas", "biografía"]
 tags: ["Euler", "Historia de las Matemáticas", "Genio", "Física"]

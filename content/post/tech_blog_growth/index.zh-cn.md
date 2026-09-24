@@ -1,7 +1,7 @@
 ---
 title: '为了提高技术博客的月度访问量，工程师应该做些什么'
 slug: "tech-blog-growth-strategies-for-engineers"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

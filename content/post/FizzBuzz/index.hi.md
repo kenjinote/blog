@@ -1,7 +1,7 @@
 ---
 title: 'प्रोग्रामिंग का प्रवेश द्वार "FizzBuzz समस्या" क्या है? Python में लिखने का तरीका बताया गया'
 slug: "FizzBuzz"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "एल्गोरिथम"]
 draft: false
 image: "eyecatch.jpg"

@@ -1,6 +1,5 @@
 ---
 title: "Die Essenz von Rust: Der Paradigmenwechsel durch Sicherheit und das Ownership-Modell"
-date: "2026-09-24T16:08:36+09:00"
 description: "Eine tiefgehende Untersuchung der Kernkonzepte von Rust, \"Ownership\" und \"Borrowing\", und eine umfassende Erklärung, wie Speichersicherheit und Leistung in Einklang gebracht werden."
 slug: "philosophy-rust-ownership"
 categories: ["philosophy"]

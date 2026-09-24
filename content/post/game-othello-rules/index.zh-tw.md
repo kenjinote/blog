@@ -2,7 +2,7 @@
 title: "桌遊策略：黑白棋的基本規則與必勝模式 - 奪取角落前的縝密戰術"
 description: "被稱為「1分鐘學會，一輩子精通」的黑白棋（Othello / Reversi）。為了幫助新手脫離盲目翻棋的階段，本文將解說「確定子」與「開放度理論」。"
 slug: "game-othello-rules"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

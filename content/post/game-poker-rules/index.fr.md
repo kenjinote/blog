@@ -2,7 +2,7 @@
 title: "Sport de l'esprit : Les règles du poker (Texas Hold'em) et la théorie des probabilités - Un jeu à la croisée de la chance et du talent"
 description: "Le Texas Hold'em est l'ultime sport de l'esprit avec des tournois mondiaux dont la dotation dépasse les 10 milliards de yens. Bien plus qu'un simple jeu d'argent, nous expliquons la théorie des positions, le calcul des cotes et les fondements mathématiques du bluff."
 slug: "game-poker-rules"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

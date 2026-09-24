@@ -2,7 +2,7 @@
 title: '希尔伯特旅馆悖论：如何在一个客满的旅馆里，再住进无限位客人'
 slug: 'hilberts-grand-hotel'
 description: '拥有无限个房间的“无限旅馆”，即使客满也绝不会拒绝新客人的入住。无论是1人、100万人，还是又来了一辆载有“无限人”的巴士，都能让所有人住下的惊人逻辑戏法（无限集合的性质），为您详细解说。'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T06:00:00+09:00'
 image: 'img/hilberts_hotel.jpg'
 math: true
 mermaid: true

@@ -2,7 +2,7 @@
 title: "동적 계획법(DP) 입문 및 유명 문제 (배낭 문제, 피보나치)"
 description: "알고리즘의 난관 '동적 계획법(DP)'. 피보나치 수열이나 배낭 문제를 예로 들어 메모이제이션 재귀와 바텀업 방식의 차이를 알기 쉽게 해설합니다."
 slug: "dynamic-programming-dp-introduction-knapsack-fibonacci"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-22T04:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "dynamic-programming", "dp", "knapsack", "optimization"]

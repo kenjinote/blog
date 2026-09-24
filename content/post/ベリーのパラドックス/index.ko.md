@@ -2,7 +2,7 @@
 title: '베리의 역설: "언어"로 "숫자"를 정의하려고 할 때 발생하는 모순'
 slug: 'berry-paradox'
 description: '"19글자 이하로 표현할 수 없는 가장 작은 정수"라는 말 자체가 19글자 이하로 그 수를 표현하고 있다!? 일상 언어와 수학의 경계선에서 발생하는, 짧고 아름다운 역설을 해설합니다.'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T11:00:00+09:00'
 image: 'img/berry_paradox.jpg'
 math: true
 mermaid: true

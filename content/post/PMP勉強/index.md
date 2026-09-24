@@ -1,7 +1,7 @@
 ---
 title: 'PMP試験の基礎知識と受験勉強まとめ：PMBOK第7版対応'
 slug: "PMP勉強"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-02-04T18:41:31+09:00
 tags: ["PMP", "PMBOK", "勉強"]
 draft: false
 image: "img.webp"

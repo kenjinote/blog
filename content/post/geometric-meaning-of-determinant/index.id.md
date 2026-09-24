@@ -2,7 +2,7 @@
 title: "Makna Geometris dari Determinan: Lebih dari Sekadar Rumus, Ini adalah 'Faktor Skala Volume' dan 'Pembalikan Orientasi'"
 description: "Determinan bukan hanya rumus perhitungan, tetapi indikator geometris penting dari faktor skala volume dan pembalikan orientasi ruang oleh transformasi linear. Dalam artikel ini, kami menjelaskan makna intuitifnya secara rinci."
 slug: "geometric-meaning-of-determinant"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "Matematika"

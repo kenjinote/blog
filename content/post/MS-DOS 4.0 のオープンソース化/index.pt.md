@@ -1,7 +1,7 @@
 ---
 title: 'O SO de quase 40 anos atrás ''MS-DOS 4.0'' é disponibilizado como código aberto'
 slug: "MS-DOS 4.0 のCódigo Aberto化"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-05-05T16:44:28+09:00
 tags: ["MS-DOS", "Código Aberto"]
 draft: false
 image: "img.webp"

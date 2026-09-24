@@ -2,7 +2,7 @@
 title: "Konjektur ABC - Tantangan Terhadap Soal Paling Sulit dalam Teori Bilangan melalui Teori Teichmüller Antar-Semesta"
 description: "Menggali lebih dalam tentang ringkasan Konjektur ABC dan pendekatan revolusioner oleh Profesor Shinichi Mochizuki melalui Teori Teichmüller Antar-Semesta (Teori IUT)."
 slug: "abc-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]
 tags: ["Konjektur ABC", "Teori Bilangan", "Teori IUT", "Shinichi Mochizuki"]

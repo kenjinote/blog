@@ -2,7 +2,7 @@
 title: "Sejarah Meta (sebelumnya Facebook): Dari Lahirnya SNS hingga Tantangan Ruang Metaverse"
 description: "Perjalanan dari Kerajaan SNS ke Metaverse, dan Menuju AI"
 slug: "history-of-meta-facebook"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T00:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

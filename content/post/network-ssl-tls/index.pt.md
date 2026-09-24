@@ -2,7 +2,7 @@
 title: "O Escudo da Internet: Como Funciona o SSL/TLS - Por Que É Seguro Enviar Informações de Cartão de Crédito?"
 description: "O que significa o 's' no 'https' nas URLs dos sites? Explicamos o mecanismo do 'SSL/TLS', a tecnologia de criptografia que protege a segurança do e-commerce e da comunicação global, desde o sistema híbrido de chave comum e chave pública."
 slug: "network-ssl-tls"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

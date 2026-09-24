@@ -1,7 +1,7 @@
 ---
 title: '【初學者適用】Vim 入門：從安裝到基本啟動、結束及模式解說'
 slug: "vim入門"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "文字編輯器"]
 draft: false
 image: "img.webp"

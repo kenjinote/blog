@@ -2,7 +2,7 @@
 title: "伯恩賽德引理：如何計算考慮旋轉時的圖案數量？"
 description: "以項鍊的配色為例，講解如何消除由旋轉引起的重複圖案。這是一篇實用的群論入門指南。"
 slug: "burnsides-lemma"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "數學"

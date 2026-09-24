@@ -2,7 +2,7 @@
 title: "Pencarian Struktur Pohon dan Struktur Graf (DFS, BFS, Algoritma Dijkstra)"
 description: "Struktur pohon dan struktur graf yang merepresentasikan hubungan data yang kompleks. Penjelasan mendalam dari Pencarian Mendalam Pertama (DFS), Pencarian Melebar Pertama (BFS) hingga masalah jalur terpendek (Algoritma Dijkstra)."
 slug: "tree-graph-data-structures-search-dfs-bfs-dijkstra"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-22T03:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "graph", "tree", "dfs", "bfs", "dijkstra"]

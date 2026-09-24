@@ -1,7 +1,7 @@
 ---
 title: '将Rust的“所有权”与“借用”同C++指针进行比较分析'
 slug: "rust-ownership-borrowing-cpp-pointer-comparison"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

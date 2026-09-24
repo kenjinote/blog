@@ -1,6 +1,5 @@
 ---
 title: "【Estratégia do Oceano Azul: A Teoria de Negócios Definitiva para Criar Mercados Inexplorados Sem Concorrência】"
-date: "2026-09-24T16:08:36+09:00"
 description: "【Explicamos detalhadamente as estruturas específicas e estratégias práticas para escapar do Oceano Vermelho (mercado de concorrência sangrenta) e abrir um novo espaço de mercado sem concorrência (Oceano Azul).】"
 slug: "business-blue-ocean-strategy"
 categories: ["business"]

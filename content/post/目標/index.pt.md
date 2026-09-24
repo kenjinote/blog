@@ -1,7 +1,7 @@
 ---
 title: 'O roteiro de empreendedorismo e desenvolvimento de software: Metas e tarefas de curto e longo prazo'
 slug: "Objetivo"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-12-08T03:32:34+09:00
 tags: ["Objetivos"]
 draft: false
 image: "img.webp"

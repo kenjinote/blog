@@ -1,7 +1,7 @@
 ---
 title: "新建了道路，为何拥堵反而恶化了？：布雷斯悖论"
 description: "为了缓解交通拥堵而修建了新的快速通道，结果却导致所有人的通勤时间变长——这是网络理论中一个奇妙的悖论。"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "braess-paradox"
 image: "img/braess_paradox.jpg"

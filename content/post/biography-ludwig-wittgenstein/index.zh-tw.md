@@ -1,6 +1,6 @@
 ---
 title: "路德維希·維根斯坦：游走於沉默與日常之間的天才哲學家"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["ludwig-wittgenstein", "history"]
 image: "eyecatch.jpg"

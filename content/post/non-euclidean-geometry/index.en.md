@@ -2,7 +2,7 @@
 title: "The Birth of Non-Euclidean Geometry - The Discovery of \"Curved Space\" and the Path to the Theory of Relativity"
 description: "From the doubts about Euclid's parallel postulate, to the establishment of non-Euclidean geometry by Gauss, Bolyai, Lobachevsky, and Riemann, and leading to Einstein's general theory of relativity, we explain the magnificent history of mathematics and physics."
 slug: "non-euclidean-geometry"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "physics"]
 tags: ["Geometry", "Relativity", "History of Science", "Math"]

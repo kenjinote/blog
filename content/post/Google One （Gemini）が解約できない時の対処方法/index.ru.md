@@ -1,7 +1,7 @@
 ---
 title: 'Не удается отменить подписку Google One (Gemini)? Объяснение правильного способа отписки'
 slug: "Google One （Gemini）が解約できない時のСпособ решения"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "Отмена", "Решение"]
 draft: false
 image: "img.webp"

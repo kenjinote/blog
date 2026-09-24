@@ -1,6 +1,6 @@
 ---
 title: "소프트웨어 공학의 거장: 프레더릭 브룩스의 생애와 철학"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["frederick-brooks", "history"]
 image: "eyecatch.jpg"

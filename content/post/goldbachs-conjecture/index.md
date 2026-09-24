@@ -2,7 +2,7 @@
 title: "ゴールドバッハ予想（Goldbach's Conjecture） - 4以上の全ての偶数は2つの素数の和で表せるか？"
 description: "数学の未解決問題の中でも特に有名な「ゴールドバッハ予想」について、その歴史、意味、そして現代数学における位置づけを詳しく解説します。"
 slug: "goldbachs-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "unsolved-problems"]
 tags:

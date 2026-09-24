@@ -2,7 +2,7 @@
 title: "John Wallis: Der Pionier der Infinitesimalrechnung, der das Unendlichkeitssymbol schuf"
 description: "John Wallis, ein führender englischer Mathematiker des 17. Jahrhunderts. Wir erforschen das Leben und die Errungenschaften des Mannes, der das Unendlichkeitssymbol '∞' erfunden und die Grundlagen der Infinitesimalrechnung gelegt hat."
 slug: "wallis"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematik"

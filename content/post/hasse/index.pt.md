@@ -2,7 +2,7 @@
 title: "Helmut Hasse: O gigante da teoria dos números que uniu o local e o global"
 description: "Um mergulho profundo na vida de Helmut Hasse, um dos principais matemáticos do século XX, e suas realizações matemáticas, incluindo o Princípio de Hasse e as curvas elípticas."
 slug: "hasse"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matemática"

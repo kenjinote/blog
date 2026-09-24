@@ -2,7 +2,7 @@
 title: "Sejarah NVIDIA (GeForce): Jejak Transformasi dari Grafis 3D Menjadi Jantung AI (GPU)"
 description: "Sejarah NVIDIA, yang bertransformasi dari produsen kartu grafis untuk game menjadi penguasa mutlak yang memimpin revolusi AI modern."
 slug: "history-of-nvidia"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T01:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

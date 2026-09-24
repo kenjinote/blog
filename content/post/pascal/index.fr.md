@@ -2,7 +2,7 @@
 title: "Blaise Pascal : La trajectoire et les grandes réalisations d'un génie des mathématiques, de la physique et de la philosophie"
 description: "Blaise Pascal, connu pour « L'homme est un roseau pensant ». Nous détaillons sa vie mouvementée et ses réalisations, du théorème de Pascal au triangle de Pascal, de la fondation de la théorie des probabilités à la preuve du vide en physique, et sa destination philosophique « Les Pensées »."
 slug: "pascal"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T19:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["Mathématiques", "Biographie"]
 tags: ["Pascal", "Théorie des probabilités", "Géométrie projective", "Théorème de Pascal", "Triangle de Pascal", "Physique"]

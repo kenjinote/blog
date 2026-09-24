@@ -2,7 +2,7 @@
 title: "KI-Technologie in Brettspielen: Grundregeln des Shogi und typische Strategien - Erklärung der Ibisha- und Furibisha-Taktiken"
 description: "Shogi ist das ultimative Denkspiel, das sich auf einem Brett mit 81 Feldern abspielt. Wir erklären leicht verständlich alles von den Grundregeln für Anfänger bis hin zu den Konzepten der beiden wichtigsten Strategien, 'Ibisha' und 'Furibisha', die auch von Profis verwendet werden."
 slug: "game-shogi-rules"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

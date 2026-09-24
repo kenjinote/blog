@@ -1,7 +1,7 @@
 ---
 title: '募集GitHub贊助者的通知｜懇請支援開發'
 slug: "GitHub贊助商募集"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "贊助者"]
 draft: false
 image: "img.webp"

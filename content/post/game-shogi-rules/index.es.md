@@ -2,7 +2,7 @@
 title: "Tecnología de IA en juegos de mesa: Reglas básicas del shogi y estrategias representativas - Explicación de las tácticas Ibisha y Furibisha"
 description: "El \"shogi\" es el juego de pensamiento definitivo que se desarrolla en un tablero de 81 casillas. Explicamos de forma sencilla desde un repaso de las reglas básicas para principiantes hasta la filosofía de las dos grandes estrategias representativas que también utilizan los profesionales: \"Ibisha\" (torre estática) y \"Furibisha\" (torre móvil)."
 slug: "game-shogi-rules"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

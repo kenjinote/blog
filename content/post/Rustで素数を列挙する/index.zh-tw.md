@@ -1,7 +1,7 @@
 ---
 title: '在 Rust 中列舉質數的程式建立方法與程式碼範例'
 slug: "Rustで質數を列挙する"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-09T07:08:49+09:00
 tags: ["Rust","質數","演算法"]
 draft: false
 image: "images/img.webp"

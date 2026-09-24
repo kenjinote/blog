@@ -2,7 +2,7 @@
 title: "Sejarah Microsoft: Fajar PC, Supremasi Windows, dan Adaptasi ke Era Cloud & AI"
 description: "Sejarah Microsoft dari Windows hingga Azure dan Kemitraan OpenAI"
 slug: "history-of-microsoft"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T00:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

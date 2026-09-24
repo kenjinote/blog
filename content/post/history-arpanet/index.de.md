@@ -1,6 +1,5 @@
 ---
 title: "Der Vorfahre des Internets \"ARPANET\": Die ganze Geschichte des Netzwerks, das aus militärischer Forschung im Kalten Krieg entstand und die Welt veränderte"
-date: "2026-09-24T16:08:36+09:00"
 description: "ARPANET ist der direkte Ursprung des modernen Internets. Von der Geburt der Paketvermittlungstechnologie, der Entwicklung des IMP, der historischen Kommunikation von 1969 bis zur Entwicklung von TCP/IP wird die Geschichte der Entstehung des Internets in einer detaillierten Erklärung über mehrere tausend Wörter vertieft."
 slug: "history-arpanet"
 categories: ["history"]

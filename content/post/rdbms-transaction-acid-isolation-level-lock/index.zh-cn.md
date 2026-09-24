@@ -2,7 +2,7 @@
 title: "RDBMS事务与ACID特性（隔离级别与锁）"
 description: "从保护数据库一致性的事务处理基础，到隔离级别引起的异常（Anomaly）及锁机制。"
 slug: "rdbms-transaction-acid-isolation-level-lock"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "database"

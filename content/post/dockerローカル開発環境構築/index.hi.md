@@ -1,7 +1,7 @@
 ---
 title: 'Docker का उपयोग करके पुनरुत्पादित (Reproducible) स्थानीय विकास वातावरण स्थापित करने की मार्गदर्शिका'
 slug: "docker-reproducible-local-dev-environment"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-13T01:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

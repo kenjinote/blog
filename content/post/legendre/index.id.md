@@ -2,7 +2,7 @@
 title: "Adrien-Marie Legendre: Raksasa Bayangan Matematika, Perseteruan dengan Gauss, dan Misteri Potret"
 description: "Kisah terperinci tentang kehidupan matematikawan besar Prancis Adrien-Marie Legendre, pencapaiannya dalam integral eliptik dan teori bilangan, konfliknya dengan Gauss, dan misteri potretnya yang lama keliru."
 slug: "legendre"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
 categories: ["matematika", "biografi"]
 tags: ["Legendre", "Teori Bilangan", "Geometri", "Sejarah Matematika"]

@@ -2,7 +2,7 @@
 title: "Terang dan Gelap Arsitektur Serverless: Di Balik Layar AWS Lambda dan Cold Start"
 description: "Kami membahas lebih dalam tidak hanya kelebihan serverless, tetapi juga mekanisme kontainer yang berjalan di belakangnya, masalah cold start, dan solusinya (seperti SnapStart)."
 slug: "serverless-architecture-aws-lambda-cold-start"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T09:00:00+09:00
 image: eyecatch.jpg
 categories:
   - "cloud"

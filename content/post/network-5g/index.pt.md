@@ -2,7 +2,7 @@
 title: "Comunicação de Próxima Geração: A Estrutura e Características do 5G - O Futuro Criado por 'Velocidade Ultra-Alta, Latência Ultra-Baixa e Múltiplas Conexões Simultâneas'"
 description: "O sistema de comunicação móvel de 5ª geração '5G' é esperado não apenas para smartphones, mas também como infraestrutura para condução autônoma e telemedicina. Explicamos as tecnologias-chave que o tornam possível, como ondas milimétricas, beamforming e edge computing."
 slug: "network-5g"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

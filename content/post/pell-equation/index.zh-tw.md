@@ -2,7 +2,7 @@
 title: "佩爾方程：具有無限解的丟番圖方程的魅力與連分數"
 description: "詳細介紹了佩爾方程的基礎知識，使用連分數的求解方法，以及如何生成無限多的解。"
 slug: "pell-equation"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "數學"

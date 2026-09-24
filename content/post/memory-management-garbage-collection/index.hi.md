@@ -2,7 +2,7 @@
 title: "मेमोरी प्रबंधन और गार्बेज कलेक्शन: C, Java और Rust से मेमोरी का सच"
 description: "प्रोग्रामिंग में मेमोरी प्रबंधन की मूल बातें से लेकर, C भाषा के मैन्युअल प्रबंधन, Java के गार्बेज कलेक्शन और Rust के ओनरशिप मॉडल तक, हम गहरे स्तर पर तुलना और व्याख्या करेंगे।"
 slug: "memory-management-garbage-collection"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
 categories: ["programming", "computer-science", "software-engineering"]
 tags: ["memory-management", "c-language", "java", "rust", "garbage-collection"]

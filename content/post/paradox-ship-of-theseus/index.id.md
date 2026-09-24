@@ -1,6 +1,5 @@
 ---
 title: "Kapal Theseus: Paradoks Pamungkas yang Mempertanyakan Batas Identitas"
-date: "2026-09-24T16:08:36+09:00"
 description: "'Kapal Theseus' adalah paradoks filosofis dari Yunani Kuno. Jika semua bagian kapal diganti, apakah itu masih kapal yang sama? Kami mendalami apa itu identitas diri."
 slug: "paradox-ship-of-theseus"
 categories: ["philosophy"]

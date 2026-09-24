@@ -2,7 +2,7 @@
 title: "सर्वरलेस आर्किटेक्चर का प्रकाश और अंधकार: AWS Lambda के पीछे की कार्यप्रणाली और कोल्ड स्टार्ट"
 description: "सर्वरलेस के लाभों के साथ-साथ कंटेनरों की पृष्ठभूमि में कार्यप्रणाली, कोल्ड स्टार्ट की समस्या और इसके समाधान (जैसे SnapStart) का गहराई से अन्वेषण।"
 slug: "serverless-architecture-aws-lambda-cold-start"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T09:00:00+09:00
 image: eyecatch.jpg
 categories:
   - "cloud"

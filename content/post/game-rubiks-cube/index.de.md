@@ -2,7 +2,7 @@
 title: "Puzzle-Algorithmus: Lösung des Zauberwürfels und seine Algorithmen - 43 Trillionen Kombinationen lösen"
 description: "Der Zauberwürfel wird oft für unmöglich gehalten, ohne Hilfe gelöst zu werden. In Wirklichkeit kann jedoch jeder alle 6 Seiten vervollständigen, indem er sich nur ein paar 'Algorithmen' (Schritte) merkt. Wir erklären die Welt dieses Puzzles, in der sich Gruppentheorie und Mathematik verweben."
 slug: "game-rubiks-cube"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

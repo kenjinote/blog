@@ -1,6 +1,6 @@
 ---
 title: "\"Sage of Omaha\" Warren Buffett: Investor yang Mewujudkan Filosofi Investasi Jangka Panjang dan Bunga Majemuk"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["warren-buffett", "history"]
 image: "eyecatch.jpg"

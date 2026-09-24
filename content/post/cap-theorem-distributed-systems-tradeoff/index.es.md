@@ -2,7 +2,7 @@
 title: "Teorema CAP y Sistemas Distribuidos (El compromiso entre Consistencia, Disponibilidad y Tolerancia a Particiones)"
 description: "La ley absoluta en el diseño de sistemas distribuidos, el 'Teorema CAP', y los compromisos arquitectónicos elegidos por las bases de datos modernas."
 slug: "cap-theorem-distributed-systems-tradeoff"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

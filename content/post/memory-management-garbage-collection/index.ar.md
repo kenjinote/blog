@@ -2,7 +2,7 @@
 title: "إدارة الذاكرة وجمع القمامة: حقائق الذاكرة المتعلمة من C، Java، و Rust"
 description: "مقارنة وشرح عميق لأساسيات إدارة الذاكرة في البرمجة، بدءًا من الإدارة اليدوية في لغة C، ومرورًا بجمع القمامة في Java، وصولاً إلى نموذج الملكية في Rust."
 slug: "memory-management-garbage-collection"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
 categories: ["programming", "computer-science", "software-engineering"]
 tags: ["memory-management", "c-language", "java", "rust", "garbage-collection"]

@@ -2,7 +2,7 @@
 title: '阿基里斯與烏龜：追不上，還是追得上？源自古希臘的「無限」悖論'
 slug: 'achilles-and-the-tortoise'
 description: '捷足的英雄阿基里斯永遠追不上緩慢的烏龜？這是芝諾悖論中最著名的一個問題，兩千多年來一直困擾著哲學家和數學家。我們將運用無窮級數求和與極限的概念，從數學角度解開這個邏輯的戲法。'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T01:00:00+09:00'
 image: 'img/achilles.jpg'
 math: true
 mermaid: true

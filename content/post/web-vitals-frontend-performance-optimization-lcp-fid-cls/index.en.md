@@ -2,7 +2,7 @@
 title: "Web Vitals and Frontend Performance Optimization (Improving LCP, FID, CLS)"
 description: "Details on each Core Web Vitals metric and specific frontend implementation techniques to improve them."
 slug: "web-vitals-frontend-performance-optimization-lcp-fid-cls"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

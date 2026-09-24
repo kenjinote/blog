@@ -2,7 +2,7 @@
 title: "Arsitektur Event-Driven dan Message Queue (Kafka, RabbitMQ)"
 description: "Desain event-driven yang mengurangi tingkat ketergantungan antar sistem melalui komunikasi asinkron, dan peran message broker."
 slug: "event-driven-architecture-message-queue-kafka-rabbitmq"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

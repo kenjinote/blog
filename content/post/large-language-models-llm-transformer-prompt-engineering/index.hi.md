@@ -2,7 +2,7 @@
 title: "LLM (विशाल भाषा मॉडल) की कार्यप्रणाली और प्रोग्रामिंग में इसका अनुप्रयोग (Transformer मॉडल, प्रॉम्प्ट इंजीनियरिंग)"
 description: "विशाल भाषा मॉडल (LLM) के मूल में स्थित Transformer आर्किटेक्चर के गणितीय तंत्र से लेकर, प्रॉम्प्ट इंजीनियरिंग की उन्नत तकनीकों और वास्तविक प्रोग्रामिंग में इसके अनुप्रयोग तक की विस्तृत व्याख्या की गई है।"
 slug: "large-language-models-llm-transformer-prompt-engineering"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T14:51:08+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["ai", "llm", "transformer", "prompt-engineering"]

@@ -2,7 +2,7 @@
 title: "Leis da Física e Tecnologia Cotidiana: O Mecanismo do RFID e NFC (Carteiras Digitais) - Comunicação Sem Contato via Indução Eletromagnética"
 description: "Uma tecnologia mágica onde pagamentos são concluídos apenas encostando o Suica, PASMO ou carteira digital na catraca. Explicamos a \"indução eletromagnética\", a lei da física por trás disso, e o padrão de comunicação NFC."
 slug: "physics-rfid-nfc"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

@@ -2,7 +2,7 @@
 title: "Gottfried Leibniz : La vie et l'œuvre mathématique d'un génie universel"
 description: "Une exploration détaillée de la vie, des anecdotes et des accomplissements mathématiques, tels que le calcul infinitésimal et le système binaire, de Gottfried Wilhelm Leibniz, l'un des plus grands esprits du 17e siècle."
 slug: "leibniz"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathématiques", "Biographie"]
 tags: ["Leibniz", "Calcul infinitésimal", "Binaire", "Philosophie", "Histoire des mathématiques"]

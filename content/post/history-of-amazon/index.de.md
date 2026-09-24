@@ -2,7 +2,7 @@
 title: "Die Geschichte von Amazon: Von der Online-Buchhandlung zum riesigen Logistik- und Cloud-Imperium (AWS)"
 description: "Die Geschichte von Amazon, das E-Commerce und die AWS-Cloud erobert hat"
 slug: "history-of-amazon"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T00:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

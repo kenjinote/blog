@@ -9,7 +9,7 @@
 
 title: '¿Qué es el ''Principio de Hanlon'', la forma de pensar que facilita las relaciones humanas? Significado y origen explicados'
 slug: "ハンロンの剃刀"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-09-24T18:14:34+09:00
 tags: ["Frases", "Expresiones"]
 draft: false
 image: "img.webp"

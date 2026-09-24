@@ -2,7 +2,7 @@
 title: "Tecnología de redes: Explicación técnica de HTTP - El protocolo sin estado que sostiene la Web"
 description: "HTTP, que trabaja detrás de escena cada vez que vemos un sitio web. Explicaremos cómo un simple protocolo de transferencia de texto evolucionó hacia la base de las ricas aplicaciones modernas."
 slug: "history-of-http"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

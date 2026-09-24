@@ -2,7 +2,7 @@
 title: "谷山豐：挑戰未解決問題的天才數學家之一生與成就"
 description: '深入探討以「谷山-志村猜想」聞名的日本天才數學家谷山豐的一生，以及他對現代數學產生的巨大影響。'
 slug: "taniyama-yutaka"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["谷山豐", "數學", "費馬最後定理", "谷山-志村猜想", "橢圓曲線", "模形式"]

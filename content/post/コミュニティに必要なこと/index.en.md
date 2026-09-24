@@ -1,7 +1,7 @@
 ---
 title: 'What Makes a Good Community? Management Hints Learned from Scratch''s Guidelines'
 slug: "Communityに必要なこと"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-23T01:37:43+09:00
 tags: ["Community", "Miscellaneous"]
 draft: false
 image: "img.webp"

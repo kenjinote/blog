@@ -2,7 +2,7 @@
 title: "Die nächste Generation von Computern: Wie Quantencomputer funktionieren - Eine Welt, die durch die Überlagerung von '0' und '1' revolutioniert wird"
 description: "Der 'Quantencomputer', von dem man annimmt, dass er Berechnungen in Sekundenschnelle lösen kann, für die Supercomputer Zehntausende von Jahren bräuchten. Wir erklären ein völlig neues Berechnungsparadigma, das die mysteriösen Phänomene der Quantenmechanik 'Überlagerung' und 'Verschränkung' nutzt."
 slug: "technology-quantum-computer"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

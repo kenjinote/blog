@@ -2,7 +2,7 @@
 title: "自动机与形式语言理论：正则表达式的背后与乔姆斯基谱系"
 description: "结合乔姆斯基谱系，深入探讨正则表达式及编程语言编译器背后的「自动机」与「形式语言理论」。"
 slug: automata-formal-language-theory
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
 categories:
   - 计算机科学

@@ -1,6 +1,6 @@
 ---
 title: "Das Leben und die Philosophie des 'Zauberers von Menlo Park' Thomas Edison: Ein Weg der Innovation ohne Angst vor dem Scheitern"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["thomas-edison", "history"]
 image: "eyecatch.jpg"

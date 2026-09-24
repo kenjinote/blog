@@ -2,7 +2,7 @@
 title: "원자력 발전의 원리: 핵분열의 열은 어떻게 전기가 되며, 정지 후에도 왜 냉각해야 할까"
 description: "결합 에너지와 연쇄 반응부터 지발 중성자, 가압경수로와 비등경수로, 터빈, 붕괴열, 사용후핵연료까지 역사와 도식, 계산 예제로 원자력 발전을 이해합니다."
 slug: "how-nuclear-power-works"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-24T10:00:00+09:00"
 image: "eyecatch.png"
 categories: ["technology", "physics"]
 tags: ["nuclear-power", "nuclear-fission", "energy", "engineering", "history"]

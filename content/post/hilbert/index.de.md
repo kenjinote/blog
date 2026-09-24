@@ -2,7 +2,7 @@
 title: "David Hilbert: Der Gigant, der die Grundlagen der modernen Mathematik legte, und sein epischer Werdegang"
 description: "Eine detaillierte Erklärung des Lebens und der zahlreichen mathematischen Errungenschaften von David Hilbert, einem der größten Mathematiker des 19. und 20. Jahrhunderts. Wir verfolgen seinen Weg von der Invariantentheorie bis zum Hilbertraum."
 slug: "hilbert"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematik", "biografie"]
 tags: ["Hilbert", "Geschichte der Mathematik", "Geometrie", "Funktionalanalysis", "Physik", "Zahlentheorie"]

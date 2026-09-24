@@ -2,7 +2,7 @@
 title: "Histoire de NEC : Le PC-98 et les avancées en matière de télécommunications à l'aube de l'informatique japonaise"
 description: "L'histoire de NEC, du géant des télécommunications à sa domination avec la série PC-9800, en passant par les câbles sous-marins et la technologie spatiale."
 slug: "history-of-nec"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T01:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

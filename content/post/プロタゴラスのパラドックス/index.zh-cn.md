@@ -1,7 +1,7 @@
 ---
 title: "师徒之争，无论谁赢都矛盾的法庭：普罗泰戈拉悖论"
 description: "一场围绕学费支付条件的师徒法庭争论。无论谁胜诉或败诉，逻辑都会陷入矛盾的古希腊法律悖论。"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "paradox-of-the-court"
 image: "img/paradox_of_court.jpg"

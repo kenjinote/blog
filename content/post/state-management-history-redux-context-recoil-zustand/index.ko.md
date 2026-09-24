@@ -2,7 +2,7 @@
 title: "상태 관리의 역사와 진화 (Redux, Context, Recoil, Zustand 비교)"
 description: "React를 중심으로 한 상태 관리 라이브러리의 역사적 변천과 각 아키텍처의 비교."
 slug: "state-management-history-redux-context-recoil-zustand"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

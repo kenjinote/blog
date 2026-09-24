@@ -2,7 +2,7 @@
 title: "马尔可夫链：'未来仅取决于现在' 状态转移的数学与概率模型"
 description: "从基础到应用，详细解析状态转移的概率模型——马尔可夫链。"
 slug: "markov-chain"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

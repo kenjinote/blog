@@ -9,7 +9,7 @@
 
 title: '【자동화】 C++에서 Teams로 메시지 게시! Graph API 및 WinHTTP 구현 절차'
 slug: "C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-07-14T23:40:15+09:00
 tags: ["C++", "Microsoft Teams", "Graph API", "WinHTTP"]
 draft: false
 image: "img.webp"

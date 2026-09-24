@@ -2,7 +2,7 @@
 title: "Reconsiderando los Patrones de Diseño: ¿GoF está obsoleto? Mejores prácticas modernas"
 description: "Patrones de diseño GoF propuestos en 1994. ¿Siguen siendo válidos en los lenguajes de programación modernos de hoy en día? Exploramos en profundidad las mejores prácticas del diseño moderno, incluyendo el impacto de la programación funcional y nuevos paradigmas."
 slug: "design-patterns-modern-practices"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "arquitectura"

@@ -2,7 +2,7 @@
 title: "皮克定理：只需数网格点就能求出面积"
 description: "结合图解和证明，详细讲解如何通过内部和边界上的点数，求出以网格点为顶点的无洞多边形面积的公式。"
 slug: "picks-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

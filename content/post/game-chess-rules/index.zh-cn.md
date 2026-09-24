@@ -2,7 +2,7 @@
 title: "棋盘游戏战略：国际象棋基本规则与开局策略 - 步步紧逼的盘上战争"
 description: "世界上最多人参与的智力运动“国际象棋”。从棋子移动基础到控制中心、王车易位，再到典型的开局策略（定式），我们将为您解说让初学者获胜的理论。"
 slug: "game-chess-rules"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

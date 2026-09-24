@@ -2,7 +2,7 @@
 title = "双子素数予想（Twin Prime Conjecture） - 差が2の素数のペアは無限に存在するのか"
 description = "数学上の未解決問題である双子素数予想について、その歴史、部分的な解決、最新の研究動向などを詳しく解説します。"
 slug = "twin-prime-conjecture"
-date = "2026-09-24T16:08:36+09:00"
+date = "2026-09-14T13:04:13+09:00"
 image = "eyecatch.jpg"
 categories = ["mathematics"]
 tags = ["Prime Numbers", "Number Theory", "Unsolved Problems"]

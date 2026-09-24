@@ -2,7 +2,7 @@
 title: "التحليل الكامل لـ OAuth 2.0 و OIDC (OpenID Connect) (الفرق بين المصادقة والتفويض)"
 description: "شرح شامل لآليات عمل OAuth 2.0 و OIDC، والفرق بين المصادقة والتفويض، وأنواع منح الصلاحيات المختلفة."
 slug: "oauth2-oidc-authentication-authorization-difference"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

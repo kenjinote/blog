@@ -2,7 +2,7 @@
 title: "Gruppen, Ringe und Körper: Eine Einführung in die moderne Algebra"
 description: "In der Mathematik entwickelte sich die Algebra zur Untersuchung von 'Strukturen'."
 slug: "groups-rings-and-fields"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematik"]
 tags: ["Algebra", "Gruppentheorie", "Ringtheorie", "Körpertheorie"]

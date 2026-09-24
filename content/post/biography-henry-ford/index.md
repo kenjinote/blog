@@ -1,6 +1,6 @@
 ---
 title: "自動車王ヘンリー・フォード：大衆消費社会の幕開けと「フォード生産方式」の革新"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T20:59:56+09:00"
 categories: ["biography"]
 tags: ["henry-ford", "history"]
 image: "eyecatch.jpg"

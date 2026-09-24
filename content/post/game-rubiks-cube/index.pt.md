@@ -2,7 +2,7 @@
 title: "Algoritmos de Quebra-Cabeça: Como Resolver o Cubo Mágico e Seus Algoritmos - Resolvendo 43 Quintilhões de Combinações"
 description: "Muitas vezes pensa-se que 'é impossível resolver sozinho', mas na verdade, qualquer pessoa pode resolver as 6 faces do Cubo Mágico memorizando apenas alguns 'algoritmos (sequências)'. Explicaremos o mundo dos quebra-cabeças onde a teoria dos grupos e a matemática se entrelaçam."
 slug: "game-rubiks-cube"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

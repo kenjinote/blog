@@ -1,7 +1,7 @@
 ---
 title: 'llama.cpp의 양자화 기술(GGUF)의 원리 해설'
 slug: "llama-cpp-quantization-gguf"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T00:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

@@ -2,7 +2,7 @@
 title: "Wie man eine NoSQL-Datenbank auswählt (KVS, Dokument, Graph, Wide-Column)"
 description: "Ein Leitfaden, um die Datenmodelle verschiedener NoSQL-Datenbanken zu verstehen und die beste Wahl für Ihren Anwendungsfall zu treffen."
 slug: "nosql-database-selection-kvs-document-graph-wide-column"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "database"

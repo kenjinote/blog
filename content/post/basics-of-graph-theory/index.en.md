@@ -2,7 +2,7 @@
 title: "Basics of Graph Theory: Representing Networks with Points and Lines, an Essential Tool in Modern Society"
 description: "A comprehensive guide to the basics of graph theory. From the bridges of Königsberg to shortest path algorithms like Dijkstra's, Python implementations, and modern machine learning applications, let's explore the mathematics of networks."
 slug: "basics-of-graph-theory"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

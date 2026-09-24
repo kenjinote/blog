@@ -2,7 +2,7 @@
 title: "أساسيات أمان الويب وأحدث الاتجاهات: من XSS و CSRF إلى CORS و CSP"
 description: "التدابير الأمنية لحماية تطبيقات الويب من التهديدات. شرح شامل من XSS و CSRF الكلاسيكية إلى التقنيات الحديثة الأساسية مثل CORS و CSP وملفات تعريف الارتباط SameSite."
 slug: "web-security-basics-cors-csp"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T17:10:00+09:00
 image: eyecatch.jpg
 categories:
   - "security"

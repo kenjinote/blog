@@ -2,7 +2,7 @@
 title: "Teoremas do Valor Intermediário e do Valor Médio: Poderosas Ferramentas de Prova a partir das Propriedades Intuitivas das Funções Contínuas e Derivadas"
 description: "Uma explicação aprofundada do Teorema do Valor Intermediário e do Teorema do Valor Médio, que formam a base do cálculo, explorando seus significados intuitivos, provas matemáticas rigorosas e aplicações."
 slug: "intermediate-and-mean-value-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
 categories: ["matemática"]
 tags: ["cálculo", "teoremas", "provas-matemáticas"]

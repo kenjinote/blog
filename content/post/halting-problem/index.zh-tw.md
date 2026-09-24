@@ -1,7 +1,7 @@
 ---
 title: "停止性問題（Halting Problem）：絕對無法打造的最強程式"
 image: "eyecatch.jpg"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T00:00:51+09:00
 description: "解說計算機科學中最著名的未解決問題（已證明）之一：停止性問題。我們將使用反證法、直觀的具體例子、數學公式與圖解來進行淺顯易懂的說明。"
 categories: ["computer-science", "theory-of-computation"]
 tags: ["Halting Problem", "Alan Turing", "Algorithm", "Mathematics"]

@@ -2,7 +2,7 @@
 title: "Le paradoxe de Banach-Tarski : couper une sphère en morceaux et obtenir deux sphères de la même taille ?"
 slug: "banach-tarski-paradox"
 description: "Et si on pouvait couper un petit pois en morceaux et les réassembler comme un puzzle pour obtenir une taille égale à celle du Soleil ? Nous expliquons le monde mystérieux du paradoxe de Banach-Tarski, le plus contre-intuitif et pourtant logiquement tout à fait correct, causé par l'axiome du choix des mathématiques modernes."
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-10T02:00:00+09:00"
 image: "img/banach_tarski.jpg"
 math: true
 mermaid: true

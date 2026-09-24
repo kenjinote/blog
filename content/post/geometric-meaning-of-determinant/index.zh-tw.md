@@ -2,7 +2,7 @@
 title: "行列式的幾何意義：不僅僅是計算公式，更是「空間體積的縮放率」與「方向的反轉」"
 description: "行列式不僅是一個計算公式，更是表示線性變換下空間體積縮放率和方向反轉的重要幾何指標。本文將透過豐富的圖解和公式詳細解釋其直觀意義。"
 slug: "geometric-meaning-of-determinant"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "數學"

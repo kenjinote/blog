@@ -1,7 +1,7 @@
 ---
 title: 'Secrets of Successful Business Selection and Systematization: Practical Memos for Executives'
 slug: "Managerメモ"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-07T02:36:11+09:00
 tags: ["Management"]
 draft: false
 image: "images/img.webp"

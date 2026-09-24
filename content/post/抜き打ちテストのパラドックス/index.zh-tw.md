@@ -2,7 +2,7 @@
 title: '突擊考試悖論：邏輯上「絕對不可能」舉行的考試之日'
 slug: 'unexpected-hanging-paradox'
 description: '「下週一到週五的其中一天，我會以你們無法預測的形式舉行突擊考試。」——面對老師的這項宣言，學生們證明了「邏輯上突擊考試是不可能的」。然而……。'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T10:00:00+09:00'
 image: 'img/unexpected_hanging.jpg'
 math: true
 mermaid: true

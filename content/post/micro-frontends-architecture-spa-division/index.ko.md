@@ -2,7 +2,7 @@
 title: "마이크로 프론트엔드 아키텍처 (거대해지는 SPA 분할 기법)"
 description: "복잡해진 프론트엔드 모놀리스를 분할하고, 팀의 자율성을 높이는 마이크로 프론트엔드 구현 패턴."
 slug: "micro-frontends-architecture-spa-division"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

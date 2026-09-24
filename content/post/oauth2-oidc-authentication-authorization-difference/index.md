@@ -2,7 +2,7 @@
 title: "OAuth 2.0とOIDC (OpenID Connect)の完全解剖（認可と認証の違い）"
 description: "OAuth 2.0とOIDCの仕組み、認証と認可の違い、各種グラントタイプを徹底解説。"
 slug: "oauth2-oidc-authentication-authorization-difference"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

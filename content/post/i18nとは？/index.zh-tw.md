@@ -1,7 +1,7 @@
 ---
 title: 'i18n（國際化）是什麼？在軟體開發中的意義與對應項目'
 slug: "i18nとは？"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-04-07T00:42:02+09:00
 tags: ["Internationalization", "i18n", "術語"]
 draft: false
 image: "img.webp"

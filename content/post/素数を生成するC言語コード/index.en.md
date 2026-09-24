@@ -1,7 +1,7 @@
 ---
 title: 'Simple C Language Sample Code to Generate and Determine Primes Within a Specified Range'
 slug: "Prime Numberを生成するC言語コード"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-08-24T09:38:10+09:00
 tags: ["C Language", "Prime Numbers", "Algorithm", "Mathematics"]
 draft: false
 image: "img.webp"

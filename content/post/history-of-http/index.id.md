@@ -2,7 +2,7 @@
 title: "Teknologi Jaringan: Penjelasan Teknis HTTP - Protokol Stateless di Balik Web"
 description: 'Di balik situs web yang kita lihat setiap hari, bekerja sebuah protokol bernama "HTTP". Artikel ini menjelaskan bagaimana sebuah protokol transfer teks sederhana berevolusi menjadi fondasi aplikasi modern yang kaya.'
 slug: "history-of-http"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

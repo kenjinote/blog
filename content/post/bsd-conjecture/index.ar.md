@@ -2,7 +2,7 @@
 title: "حدسية بيرتش وسوينيرتون-داير (حدسية BSD) - النقاط الجذرية على المنحنيات الإهليلجية ودوال L"
 description: "شرح رياضي مفصل حول حدسية بيرتش وسوينيرتون-داير (حدسية BSD)، إحدى مسائل جائزة الألفية، بدءًا من أساسيات المنحنيات الإهليلجية وحتى ارتباطها العميق بدوال L."
 slug: "bsd-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:05:17+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Number Theory", "Elliptic Curves", "BSD Conjecture", "Millennium Prize Problems"]

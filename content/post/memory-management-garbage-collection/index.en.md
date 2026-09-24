@@ -2,7 +2,7 @@
 title: "Memory Management and Garbage Collection: The Truth About Memory Learned from C, Java, and Rust"
 description: "From the basics of memory management in programming to manual management in C, garbage collection in Java, and the ownership model in Rust, we compare and explain them at a deep level."
 slug: "memory-management-garbage-collection"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
 categories: ["programming", "computer-science", "software-engineering"]
 tags: ["memory-management", "c-language", "java", "rust", "garbage-collection"]

@@ -1,6 +1,5 @@
 ---
 title: "The Full Story of the UNIX Time '2038 Problem': A Time Bomb in the Digital World and the Evolution of System Architecture"
-date: "2026-09-24T16:08:36+09:00"
 description: "On January 19, 2038, UNIX time managed by a 32-bit signed integer will overflow, causing many computer systems to malfunction. We provide a detailed explanation of this '2038 problem', from its mechanism to its history, root causes, and solutions."
 slug: "history-unix-2038-problem"
 categories: ["history"]

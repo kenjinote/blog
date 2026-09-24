@@ -2,7 +2,7 @@
 title: "Existence et régularité des solutions des équations de Navier-Stokes - L'énigme ultime des équations fondamentales de la dynamique des fluides"
 description: "Une plongée approfondie dans l'existence et la régularité des solutions des équations de Navier-Stokes, l'un des problèmes du prix du millénaire de l'Institut de mathématiques Clay."
 slug: "navier-stokes-equations"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "physics"]
 tags: ["Navier-Stokes", "Dynamique des fluides", "Problèmes du prix du millénaire"]

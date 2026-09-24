@@ -2,7 +2,7 @@
 title: "アリババの歴史: 中国のEコマース革命とデジタルエコシステムの構築"
 description: "ジャック・マーがいかにして中国の小売と決済を変革し、巨大なデジタルエコシステムを築いたか。"
 slug: "history-of-alibaba"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T01:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

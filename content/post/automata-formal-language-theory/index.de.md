@@ -2,7 +2,7 @@
 title: "Automaten und formale Sprachtheorie: Die Hintergründe von regulären Ausdrücken und der Chomsky-Hierarchie"
 description: "Ein tiefer Einblick in 'Automaten' und 'formale Sprachtheorie' hinter regulären Ausdrücken und Compilern von Programmiersprachen, unter Einbeziehung der Chomsky-Hierarchie."
 slug: automata-formal-language-theory
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
 categories:
   - informatik

@@ -2,7 +2,7 @@
 title: "Isaac Newton: Annäherung an das Leben des Genies durch die Entdeckung der Infinitesimalrechnung und der universellen Gravitation"
 description: "Ein tiefer Einblick in das außergewöhnliche Leben von Isaac Newton, die Episoden während des Wunderjahres und seine bahnbrechenden Entdeckungen in Mathematik und Physik."
 slug: "newton"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematik"

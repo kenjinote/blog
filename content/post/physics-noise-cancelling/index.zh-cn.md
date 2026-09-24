@@ -2,7 +2,7 @@
 title: "物理的奥秘：主动降噪——用声音消除声音的波的干涉"
 description: "只需戴上耳机就能消除周围噪音的“主动降噪”。本文将深入解说其背后的物理学“波的干涉”原理及技术历史。"
 slug: "physics-noise-cancelling"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

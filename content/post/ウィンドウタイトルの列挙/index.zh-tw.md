@@ -1,7 +1,7 @@
 ---
 title: '使用 PowerShell 列舉並取得目前開啟中視窗標題的方法'
 slug: "視窗タイトルの列挙"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-20T17:03:15+09:00
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"

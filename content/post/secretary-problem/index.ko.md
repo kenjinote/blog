@@ -2,7 +2,7 @@
 title: "비서 문제 / 최적 정지 문제 (Secretary Problem) - 가장 우수한 사람을 채용하기 위한 '1/e의 법칙'"
 description: "비서 문제(Secretary Problem)란 무엇인가? 최적 정지 문제의 대표적인 예인 이 문제를 통해, 불확실한 상황에서 최선의 선택을 하기 위한 수학적 접근인 '1/e의 법칙(약 37%의 법칙)'에 대해 자세히 알아봅니다. 수학적 증명과 시뮬레이션을 통해 채용 활동이나 일상적인 의사결정에 어떻게 활용할 수 있는지 탐구합니다."
 slug: "secretary-problem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:20:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "algorithms", "decision-making"]
 tags:

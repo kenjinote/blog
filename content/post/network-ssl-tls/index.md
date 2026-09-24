@@ -2,7 +2,7 @@
 title: "インターネットの盾: SSL/TLSの仕組み - なぜクレジットカード情報を安全に送れるのか？"
 description: "WebサイトのURLにある「https」の「s」が意味するものとは？世界中のEコマースと通信の安全を守る暗号化技術「SSL/TLS」の仕組みを、共通鍵と公開鍵のハイブリッド方式から解説します。"
 slug: "network-ssl-tls"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

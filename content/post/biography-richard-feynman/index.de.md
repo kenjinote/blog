@@ -1,6 +1,5 @@
 ---
 title: "Richard Feynman: Die Neugier, die die Wahrheiten des Universums und die menschliche Lebensweise entschlüsselte"
-date: "2026-09-24T16:08:36+09:00"
 description: "Der Nobelpreisträger Richard Feynman. Vom Aufbau der Quantenelektrodynamik über die Untersuchung der Challenger-Katastrophe bis hin zum Knacken von Tresoren und dem Spielen von Bongos – wir erklären ausführlich sein unkonventionelles Leben, das von unermüdlicher Neugier und der \"Freude am Entdecken\" geprägt war."
 slug: "biography-richard-feynman"
 categories: ["biography"]

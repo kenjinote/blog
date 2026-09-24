@@ -2,7 +2,7 @@
 title: "小平邦彦：日本首位菲尔兹奖得主及其几何学的交响乐"
 description: "探索日本首位菲尔兹奖得主、数学家小平邦彦的生平，以及他从调和积分论到复流形理论的伟大成就。"
 slug: "kodaira-kunihiko"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "传记"]
 tags: ["小平邦彦", "菲尔兹奖", "复几何"]

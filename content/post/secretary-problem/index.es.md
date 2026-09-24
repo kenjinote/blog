@@ -2,7 +2,7 @@
 title: "El problema de la secretaria / Problema de parada óptima - La 'Ley de 1/e' para contratar a la mejor persona"
 description: "¿Qué es el Problema de la Secretaria? A través de este ejemplo clásico de problema de parada óptima, explicamos en detalle la 'ley de 1/e (regla del 37%)', un enfoque matemático para tomar las mejores decisiones bajo incertidumbre. Con demostraciones matemáticas y simulaciones."
 slug: "secretary-problem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:20:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "algorithms", "decision-making"]
 tags:

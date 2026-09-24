@@ -1,7 +1,7 @@
 ---
 title: 'Den Schreibtisch des Kindes für die Arbeit ausleihen? Die reale Arbeitsumgebung von Telearbeit/Remote-Arbeit während der Kindererziehung'
 slug: "今日の作業環境"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-04T14:29:09+09:00
 tags: ["Verschiedenes", "Kinder"]
 draft: false
 image: "images/today_workplase.webp"

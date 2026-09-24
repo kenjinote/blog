@@ -1,6 +1,6 @@
 ---
 title: "पाब्लो पिकासो: 20वीं सदी का सबसे बड़ा प्रतिभाशाली व्यक्ति जिसने विनाश और सृजन को दोहराया"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["pablo-picasso", "history"]
 image: "eyecatch.jpg"

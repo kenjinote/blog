@@ -1,7 +1,7 @@
 ---
 title: 'Optimizing Required Marks in Input Forms | Best Practices from Global UI Guidelines'
 slug: "Input Formの必須マークについて"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-07-14T13:47:51+09:00
 tags: ["Input Form", "Web Development", "UX"]
 draft: false
 image: "img.webp"

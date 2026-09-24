@@ -2,7 +2,7 @@
 title: "Ernst Kummer: Father of Ideal Numbers and the Challenge of Fermat's Last Theorem"
 description: "An in-depth look at the life of the great German mathematician Ernst Kummer, his introduction of ideal numbers, and his legendary challenge to Fermat's Last Theorem."
 slug: "kummer"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Ernst Kummer", "Fermat's Last Theorem", "Ideal Numbers", "Algebraic Number Theory", "Regular Primes"]

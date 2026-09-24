@@ -2,7 +2,7 @@
 title: "Hairy Ball Theorem - The Topological Theorem That 'You Can't Comb a Hairy Ball Flat'"
 description: "A detailed explanation of the famous topological theorem, the 'Hairy Ball Theorem', from intuitive understanding to rigorous mathematical proof, and its real-world applications in meteorology and computer graphics."
 slug: "hairy-ball-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "topology"]
 tags:

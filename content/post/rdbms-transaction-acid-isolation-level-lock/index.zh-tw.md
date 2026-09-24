@@ -2,7 +2,7 @@
 title: "RDBMS 的交易與 ACID 特性（隔離級別與鎖定）"
 description: "從保護資料庫一致性的交易處理基礎，到隔離級別引起的異常（Anomaly）與鎖定機制。"
 slug: "rdbms-transaction-acid-isolation-level-lock"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "database"

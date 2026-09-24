@@ -2,7 +2,7 @@
 title: "वेब सुरक्षा के मूल सिद्धांत और नवीनतम रुझान: XSS, CSRF से CORS, CSP तक"
 description: "वेब एप्लिकेशन को खतरों से बचाने के लिए सुरक्षा उपाय। क्लासिक XSS और CSRF से लेकर आधुनिक आवश्यक तकनीकों जैसे CORS, CSP, और SameSite Cookie तक व्यापक कवरेज।"
 slug: "web-security-basics-cors-csp"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T17:10:00+09:00
 image: eyecatch.jpg
 categories:
   - "security"

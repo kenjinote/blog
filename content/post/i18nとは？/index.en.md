@@ -1,7 +1,7 @@
 ---
 title: 'What is i18n (Internationalization)? Meaning and Target Items in Software Development'
 slug: "i18nとは？"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-04-07T00:42:02+09:00
 tags: ["Internationalization", "i18n", "Terminology"]
 draft: false
 image: "img.webp"

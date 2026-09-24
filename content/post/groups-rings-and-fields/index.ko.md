@@ -2,7 +2,7 @@
 title: "군, 환, 체: 현대 대수학 입문"
 description: "수학에서 '대수학'은 '구조'를 연구하는 학문으로 진화했습니다."
 slug: "groups-rings-and-fields"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["수학"]
 tags: ["대수학", "군론", "환론", "체론"]

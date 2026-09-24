@@ -1,6 +1,5 @@
 ---
 title: "Asal-usul Lembah Silikon: Tanah Suci Inovasi yang Diciptakan oleh \"Delapan Pengkhianat\""
-date: "2026-09-24T16:08:36+09:00"
 description: "Lembah Silikon adalah pusat industri TI saat ini. Di balik kelahirannya, terdapat drama epik tentang tindakan sembrono seorang jenius dan delapan insinyur muda, \"Delapan Pengkhianat\" (Traitorous Eight), yang memberontak terhadapnya. Kami akan menjelaskan secara mendalam tentang jejak mereka."
 slug: "history-silicon-valley-traitorous-eight"
 categories: ["history"]

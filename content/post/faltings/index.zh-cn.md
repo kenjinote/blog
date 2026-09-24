@@ -2,7 +2,7 @@
 title: "格尔德·法尔廷斯：解决莫德尔猜想的现代数论巨匠"
 description: "详细解析菲尔兹奖得主格尔德·法尔廷斯的生平及其数学成就，包括解决莫德尔猜想。追溯他从代数几何到数论的伟大足迹。"
 slug: "faltings"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

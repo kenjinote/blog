@@ -2,7 +2,7 @@
 title: "Konjektur Birch dan Swinnerton-Dyer (Konjektur BSD) - Titik Rasional pada Kurva Eliptik dan Fungsi L"
 description: "Penjelasan matematis terperinci tentang Konjektur Birch dan Swinnerton-Dyer (Konjektur BSD), salah satu dari Soal Hadiah Milenium, mulai dari dasar kurva eliptik hingga hubungannya yang mendalam dengan fungsi L."
 slug: "bsd-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:05:17+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Number Theory", "Elliptic Curves", "BSD Conjecture", "Millennium Prize Problems"]

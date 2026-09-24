@@ -1,7 +1,7 @@
 ---
 title: 'C++로 시작하는 소규모 AI 모델(TinyLLaMA 등) 개발 절차'
 slug: "cpp-small-ai-model-tinyllama-dev-guide"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T14:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

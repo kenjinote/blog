@@ -2,7 +2,7 @@
 title: '约瑟夫·刘维尔：超越数与复分析的先驱'
 description: '探索19世纪法国伟大数学家约瑟夫·刘维尔的一生与遗产，他以刘维尔定理、超越数、斯图姆-刘维尔理论以及恢复伽罗瓦理论而闻名。'
 slug: 'liouville'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-20T19:20:00+09:00'
 image: "eyecatch.jpg"
 categories:
   - 'mathematics'

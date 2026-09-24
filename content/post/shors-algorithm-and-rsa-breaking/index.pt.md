@@ -3,7 +3,7 @@ title: 'O computador quântico vai quebrar a criptografia RSA? Explicando o Algo
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["Computador Quântico", "Descriptografia", "Algoritmo de Shor", "RSA"]
 image: "eyecatch.jpg"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-05T22:09:21+09:00
 categories: ["math-cryptography-quantum"]
 description: 'Explicamos como a criptografia RSA, que suporta a infraestrutura de comunicação moderna, está ameaçada pelo surgimento de computadores quânticos. Consideramos o futuro da descriptografia de próxima geração e a segurança, desde a mecânica do algoritmo de Shor até o estado atual do hardware da era NISQ.'
 ---

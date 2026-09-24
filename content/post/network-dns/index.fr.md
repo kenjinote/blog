@@ -2,7 +2,7 @@
 title: "Technologie réseau : Le fonctionnement du DNS - L'annuaire d'Internet, les coulisses de la résolution de noms"
 description: "Pourquoi la simple saisie de « www.google.com » permet-elle de se connecter au serveur cible ? Nous expliquons la structure hiérarchique et le mécanisme de résolution de noms du « DNS », la plus grande base de données distribuée d'Internet."
 slug: "network-dns"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

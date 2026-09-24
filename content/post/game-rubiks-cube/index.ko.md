@@ -2,7 +2,7 @@
 title: "퍼즐 알고리즘: 루빅스 큐브 맞추는 법과 알고리즘 - 4325경의 조합을 풀다"
 description: "'혼자서 맞추는 것은 불가능'하다고 생각하기 쉬운 루빅스 큐브이지만, 사실 몇 개의 '알고리즘(순서)'을 암기하는 것만으로 누구나 6면을 완성할 수 있습니다. 군론과 수학이 엮어내는 퍼즐의 세계를 해설합니다."
 slug: "game-rubiks-cube"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

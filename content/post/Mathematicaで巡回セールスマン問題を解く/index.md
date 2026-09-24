@@ -1,7 +1,7 @@
 ---
 title: 'Mathematicaで巡回セールスマン問題（TSP）を解く方法'
 slug: "Mathematicaで巡回セールスマン問題を解く"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "巡回セールスマン問題", "アルゴリズム", "数学"]
 draft: false
 image: "img.webp"

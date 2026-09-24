@@ -2,7 +2,7 @@
 title: "Série de Fourier e Transformada de Fourier: Decompondo Qualquer Onda Complexa em Somas de Senos e Cossenos"
 description: "Uma explicação detalhada da 'Série de Fourier', que expressa formas de onda complexas como uma superposição de ondas simples de seno e cosseno, e sua extensão para funções não periódicas, a 'Transformada de Fourier'."
 slug: "fourier-series-and-transform"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matemática"

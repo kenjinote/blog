@@ -2,7 +2,7 @@
 title: "Graphentheorie und Dijkstra, A*-Algorithmus: Mathematische Grundlagen und Implementierung der Pfadfindung"
 description: "Von den Grundlagen der Graphentheorie über die mathematischen Hintergründe von Dijkstra und dem A*-Algorithmus im Kürzeste-Wege-Problem bis hin zu Datenstrukturen und Python-Implementierungen."
 slug: graph-theory-dijkstra-a-star
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T02:45:54+09:00
 image: eyecatch.jpg
 categories:
   - mathematics

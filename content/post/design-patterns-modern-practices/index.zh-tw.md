@@ -2,7 +2,7 @@
 title: "重新思考設計模式：GoF 過時了嗎？現代最佳實踐"
 description: "1994 年提出的 GoF 設計模式，在現代程式語言中仍然有效嗎？結合函數式編程的影響與新典範，深入探討現代設計的最佳實踐。"
 slug: "design-patterns-modern-practices"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
 categories:
   - "architecture"

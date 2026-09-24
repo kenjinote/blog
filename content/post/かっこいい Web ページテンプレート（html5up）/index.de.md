@@ -1,7 +1,7 @@
 ---
 title: 'Verwendung und Reiz der coolen Webseiten-Vorlagen (html5up)'
 slug: "かっこいい Web ページVorlage（html5up）"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-04-17T00:26:55+09:00
 tags: ["html5up", "Webseiten-Template"]
 draft: false
 image: "img.webp"

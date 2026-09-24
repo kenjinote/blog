@@ -4,7 +4,7 @@
 
 title: '¡Gratuito y de alto rendimiento! Características y encanto del software de edición de imágenes ''paint.net'''
 slug: "paint.netの魅力"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-14T19:33:31+09:00
 tags: ["paint.net"]
 draft: false
 image: "img.webp"

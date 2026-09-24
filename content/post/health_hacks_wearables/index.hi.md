@@ -1,7 +1,7 @@
 ---
 title: 'स्मार्ट रिंग आदि से स्वास्थ्य प्रबंधन करने वाले इंजीनियर की दिनचर्या (हेल्थ हैक)'
 slug: "engineer-health-hacks-wearables"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

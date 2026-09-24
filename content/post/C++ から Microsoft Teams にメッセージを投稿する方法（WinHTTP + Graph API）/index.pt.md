@@ -1,7 +1,7 @@
 ---
 title: '[Automação] Como Enviar Mensagens para o Teams via C++! Tutorial de Implementação com Graph API e WinHTTP'
 slug: "C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-07-14T23:40:15+09:00
 tags: ["C++", "Microsoft Teams", "Graph API", "WinHTTP"]
 draft: false
 image: "img.webp"

@@ -2,7 +2,7 @@
 title: "نظرية الأعداد الأولية (Prime Number Theorem) - القاعدة التي تقترب فيها توزيعات الأعداد الأولية من الدالة اللوغاريتمية"
 description: "شرح مفصل لنظرية الأعداد الأولية (Prime Number Theorem)، وهي معلم رياضي بارز يتعلق بانتظام ظهور الأعداد الأولية. من دالة عد الأعداد الأولية إلى علاقتها بفرضية ريمان."
 slug: "prime-number-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "algorithms"]
 tags:

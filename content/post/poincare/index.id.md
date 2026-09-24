@@ -2,7 +2,7 @@
 title: "Henri Poincaré: Universalis Terakhir dan Warisan Matematikanya yang Mendalam"
 description: "Eksplorasi yang sangat rinci tentang kehidupan matematikawan besar Prancis Henri Poincaré, pencapaian matematisnya yang inovatif seperti Teori Kekacauan dan Konjektur Poincaré, serta episode menarik tentang kreativitasnya."
 slug: "poincare"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Matematika", "Biografi"]
 tags: ["Poincare", "Topologi", "Teori Kekacauan", "Sejarah Matematika", "Fisika"]

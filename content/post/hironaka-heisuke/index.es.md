@@ -2,7 +2,7 @@
 title: "Heisuke Hironaka: El Teorema de Resolución de Singularidades y la Búsqueda de la Creatividad"
 description: "Profundice en la vida del matemático japonés ganador de la Medalla Fields, Heisuke Hironaka, su logro matemático en el 'Teorema de Resolución de Singularidades' y su filosofía de la creatividad."
 slug: "hironaka-heisuke"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Matemáticas", "Biografía"]
 tags: ["Heisuke Hironaka", "Geometría Algebraica", "Resolución de Singularidades", "Medalla Fields", "Matemático Japonés", "Creatividad"]

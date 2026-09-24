@@ -2,7 +2,7 @@
 title: "La Conjecture de Goldbach - Tout nombre pair supérieur à 2 peut-il s'écrire comme la somme de deux nombres premiers ?"
 description: "Une explication détaillée de la 'Conjecture de Goldbach', l'un des problèmes non résolus les plus célèbres en mathématiques, couvrant son histoire, sa signification et son importance dans les mathématiques modernes."
 slug: "goldbachs-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "unsolved-problems"]
 tags:

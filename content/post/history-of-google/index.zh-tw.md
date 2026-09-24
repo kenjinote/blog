@@ -2,7 +2,7 @@
 title: "Google 的歷史：從搜尋引擎到「AI 優先」企業的演進"
 description: "從 PageRank 到 Transformer 的 Google 歷史"
 slug: "history-of-google"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T00:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

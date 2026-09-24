@@ -1,7 +1,7 @@
 ---
 title: "Avis aux passionnés de mathématiques ! 10 superbes formules mathématiques utiles pour la programmation"
 slug: "10-beautiful-math-formulas-for-programming"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T01:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

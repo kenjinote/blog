@@ -1,7 +1,7 @@
 ---
 title: 'लो-कोड टूल "LogicPad" विकास रहस्य: मैंने इसे क्यों बनाया?'
 slug: "LogicPad 開発秘話"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "विकास", "गुप्त कहानी"]
 draft: false
 image: "img.webp"

@@ -1,7 +1,7 @@
 ---
 title: '优秀社区需要什么？从Scratch指南中学习运营的启示'
 slug: "社区に必要なこと"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-23T01:37:43+09:00
 tags: ["社区", "杂记"]
 draft: false
 image: "img.webp"

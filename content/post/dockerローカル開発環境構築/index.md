@@ -1,7 +1,7 @@
 ---
 title: "Dockerを使った再現可能なローカル開発環境の構築手順"
 slug: "docker-reproducible-local-dev-environment"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-13T01:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

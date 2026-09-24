@@ -2,7 +2,7 @@
 title: "Arquitectura basada en eventos y colas de mensajes (Kafka, RabbitMQ)"
 description: "El papel de los intermediarios de mensajes y el diseño basado en eventos que reduce el acoplamiento entre sistemas mediante comunicación asíncrona."
 slug: "event-driven-architecture-message-queue-kafka-rabbitmq"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

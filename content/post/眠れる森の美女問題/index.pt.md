@@ -2,7 +2,7 @@
 title: 'O Problema da Bela Adormecida: A probabilidade da moeda é 1/2 ou 1/3? O enigma que divide a teoria das probabilidades'
 slug: 'sleeping-beauty-paradox'
 description: '"Agora que você acordou, qual a probabilidade do resultado do cara ou coroa ter sido cara?" Apesar de uma premissa muito simples, matemáticos e filósofos ao redor do mundo continuam divididos entre "Metadistas (1/2)" e "Terceiristas (1/3)". Explicamos este paradoxo moderno que ainda gera debates.'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T09:00:00+09:00'
 image: 'img/sleeping_beauty.jpg'
 math: true
 mermaid: true

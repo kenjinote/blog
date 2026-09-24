@@ -1,7 +1,7 @@
 ---
 title: "¿La flecha que vuela está quieta?: La paradoja de la \'flecha que vuela\' de Zenón"
 description: "Una flecha en vuelo está en reposo en cada instante. Entonces, ¿el movimiento no existe? El mayor acertijo lógico de la antigua Grecia."
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "zenos-arrow"
 image: "img/zenos_arrow.jpg"

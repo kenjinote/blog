@@ -2,7 +2,7 @@
 title: "フェルマーの小定理：素数の性質と、現代の暗号理論（RSA暗号）を支える基礎"
 description: "フェルマーの小定理の直感的な理解から、数学的な証明、そしてRSA暗号における実践的な応用までを詳しく解説します。"
 slug: "fermats-little-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

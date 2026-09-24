@@ -1,7 +1,7 @@
 ---
 title: 'Was ist das P-NP-Problem? Das ungelöste Problem der Komplexitätstheorie und der Unterschied zwischen Klasse P und NP leicht verständlich erklärt'
 slug: "P≠NP-Vermutung"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-09-11T02:22:39+09:00
 tags: ["P≠NP-Vermutung", "Mathematik", "Ungelöste Probleme"]
 draft: false
 categories: ["math-cryptography-quantum"]

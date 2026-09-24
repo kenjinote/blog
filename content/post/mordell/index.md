@@ -2,7 +2,7 @@
 title: "ルイス・モーデル：数論の巨星とその軌跡"
 description: "ディオファントス方程式や楕円曲線における画期的な業績、そして「モーデル予想」で知られる数学者ルイス・モーデルの生涯と数学的貢献について詳しく解説します。"
 slug: "mordell"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T20:10:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["number theory", "Mordell", "elliptic curves", "Diophantine equations"]

@@ -1,7 +1,7 @@
 ---
 title: "AI開発におけるGPUメモリ不足の解消テクニック（CPUオフロードなど）"
 slug: "ai-gpu-vram-optimization-cpu-offloading"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T01:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

@@ -1,6 +1,5 @@
 ---
 title: "【Das Trolley-Problem: Die ultimative ethische Wahl und der Abgrund der menschlichen moralischen Intuition】"
-date: "2026-09-24T16:08:36+09:00"
 description: "【Fünf Arbeiter vor einer außer Kontrolle geratenen Straßenbahn, einer auf dem Abstellgleis. Ziehen Sie den Hebel? Von Philippa Foots klassischem Gedankenexperiment bis zur KI-Ethik selbstfahrender Autos: Eine ausführliche Untersuchung des \"Trolley-Problems\", des Konflikts zwischen Utilitarismus und Deontologie sowie der Mechanismen menschlicher moralischer Entscheidungsfindung.】"
 slug: "paradox-trolley-problem"
 categories: ["philosophy"]

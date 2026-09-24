@@ -1,7 +1,7 @@
 ---
 title: 'Como Mudar os Atalhos de Copiar e Colar do Mac para Serem Iguais aos do Windows'
 slug: "macでCopiar e ColarのTecla de AtalhoをWindowsと合わせる方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-04-05T00:49:02+09:00
 tags: ["macos", "mac", "Tecla de Atalho", "Copiar e Colar"]
 draft: 
 image: "img.webp"

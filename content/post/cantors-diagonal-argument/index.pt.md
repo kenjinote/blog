@@ -2,7 +2,7 @@
 title: "O Argumento de Diagonalização de Cantor - A prova de que os números reais são \"esmagadoramente maiores\" que os racionais"
 description: "Existe uma diferença de \"tamanho\" no infinito. Explicaremos detalhadamente o processo de provar que a cardinalidade dos números reais é verdadeiramente maior que a dos números naturais e racionais, utilizando o \"Argumento de Diagonalização\" proposto por Georg Cantor."
 slug: "cantors-diagonal-argument"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "foundations-of-mathematics", "set-theory"]
 tags: ["Cantor", "Argumento de Diagonalização", "Infinito", "Matemática", "Prova"]

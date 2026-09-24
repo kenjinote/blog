@@ -5,7 +5,7 @@
 
 title: '¡Elegidos por un ingeniero en activo! Periféricos de PC recomendados que dispararán la eficiencia de tu trabajo'
 slug: "RecomendaciónのPC周辺機器"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-02-28T00:51:49+09:00
 tags: ["teclado", "trackball", "monitor"]
 draft: false
 image: "img.webp"

@@ -2,7 +2,7 @@
 title: "Claude Gaspard Bachet (クロード＝ガスパール・バシェ)：数論と遊戯数学の先駆者"
 description: "ディオファントスの『算術』の翻訳やバシェ方程式で知られる17世紀フランスの数学者、クロード＝ガスパール・バシェの生涯と数学的業績について詳しく解説します。"
 slug: "bachet"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Bachet", "Number Theory", "History of Mathematics", "Recreational Mathematics", "Diophantus"]

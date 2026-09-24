@@ -1,7 +1,7 @@
 ---
 title: '使用Git clone只取得儲存庫最新Commit的方法'
 slug: "git儲存庫の最新だけ取得する"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-04-27T02:54:12+09:00
 tags: ["git", "儲存庫", "指令"]
 draft: false
 image: "img.webp"

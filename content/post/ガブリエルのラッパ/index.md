@@ -1,7 +1,7 @@
 ---
 title: "ペンキで満たすことはできるが、表面を塗ることはできない？：ガブリエルのラッパ"
 description: "「有限の体積」と「無限の表面積」を同時に持つ、微分積分学がもたらした奇妙な立体のパラドックス。"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "gabriels-horn"
 image: "img/gabriels_horn.jpg"

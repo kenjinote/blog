@@ -2,7 +2,7 @@
 title: "Théorème de Bayes : Mettre à jour les probabilités avec de 'nouvelles preuves', le cœur de l'IA et des statistiques"
 description: "Une explication approfondie de la façon dont le théorème de Bayes met à jour les probabilités en fonction de nouvelles preuves, de son contexte mathématique et de ses applications dans l'IA et l'apprentissage automatique."
 slug: "bayes-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathématiques"

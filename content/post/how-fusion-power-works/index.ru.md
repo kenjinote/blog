@@ -2,7 +2,7 @@
 title: "Как работает термоядерная энергетика: от реакции в звёздах до электричества"
 description: "Дейтерий и тритий, удержание плазмы, токамаки, стеллараторы, лазерный синтез, энергетический баланс, воспроизводство топлива и материалы — с формулами и схемами."
 slug: "how-fusion-power-works"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-24T10:00:00+09:00"
 image: "eyecatch.png"
 categories: ["technology", "physics"]
 tags: ["nuclear-fusion", "energy", "plasma", "engineering", "history"]

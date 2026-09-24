@@ -2,7 +2,7 @@
 title: "ブロックチェーン技術とスマートコントラクト（分散型台帳の仕組み）"
 description: "ブロックチェーンの根本原理、コンセンサスアルゴリズム、スマートコントラクトの実装を探る。"
 slug: "blockchain-technology-smart-contract-distributed-ledger"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "blockchain"

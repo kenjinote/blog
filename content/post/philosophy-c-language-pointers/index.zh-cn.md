@@ -1,6 +1,5 @@
 ---
 title: "C语言的哲学：指针与自由带来的编程深渊"
-date: "2026-09-24T16:08:36+09:00"
 description: "C语言的核心在于“指针”与“自由”。这种将一切交托给开发者的哲学，是如何激发硬件极限并促进程序员成长的？深入探讨内存管理的深渊。"
 slug: "philosophy-c-language-pointers"
 categories: ["philosophy"]

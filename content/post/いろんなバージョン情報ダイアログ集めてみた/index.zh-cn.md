@@ -1,7 +1,7 @@
 ---
 title: '收集了各种软件的版本信息对话框界面'
 slug: "いろんな版本信息ダイアログ集めてみた"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-03-02T21:32:11+09:00
 tags: ["版本信息", "Windows", "MacOS"]
 draft: false
 image: "img.webp"

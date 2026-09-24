@@ -2,7 +2,7 @@
 title: "Vielfältige Beweise des Satzes des Pythagoras: Von Geometrie und Algebra bis zu Einstein"
 description: "Entdecken Sie faszinierende Beweise des Satzes des Pythagoras. Erforschen Sie die Schönheit der Mathematik von Euklid bis Einstein aus verschiedenen Perspektiven."
 slug: "diverse-proofs-of-pythagorean-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "Mathematik"

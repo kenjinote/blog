@@ -1,6 +1,6 @@
 ---
 title: "Python之父：吉多·范羅蘇姆的生平與哲學"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["guido-van-rossum", "history"]
 image: "eyecatch.jpg"

@@ -2,7 +2,7 @@
 title: "順列・組合せと二項定理：パスカルの三角形から見えてくる、美しい数の規則性"
 description: "順列・組合せの基礎から二項定理、そしてパスカルの三角形が織りなす美しい数学的構造について詳しく解説します。"
 slug: "permutations-combinations-and-binomial-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

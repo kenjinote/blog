@@ -2,7 +2,7 @@
 title: "Search Algorithms (Principles of Linear, Binary Search and Hash Tables)"
 description: "Search algorithms for finding target values within data. Explains the basics of linear search and binary search, up to the principles of hash tables that enable high-speed searching."
 slug: "search-algorithms-linear-binary-hash-table-principles"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-22T02:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "search", "binary-search", "hash-table", "data-structures"]

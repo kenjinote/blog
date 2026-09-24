@@ -2,7 +2,7 @@
 author: "Hugo Authors"
 title: 'Contoh Sintaks Markdown yang Bisa Digunakan di Hugo: Sintaks Dasar untuk Judul, Paragraf, dll.'
 slug: "マークダウンのSampel"
-date: "2026-09-24T16:08:36+09:00"
+date: "2019-03-11"
 description: 'Kami akan memperkenalkan contoh sintaks Markdown dasar yang dapat digunakan dalam pembuatan konten untuk static site generator Hugo. Anda dapat memeriksa bagaimana elemen seperti judul (H1~H6) dan paragraf didekorasi oleh CSS tema.'
 tags: ["markdown", "css", "html", "themes"]
 categories: ["themes", "syntax"]

@@ -1,6 +1,5 @@
 ---
 title: "El «Zen» de Python: La profundidad de una filosofía de programación que busca la belleza y la simplicidad"
-date: "2026-09-24T16:08:36+09:00"
 description: "Explicamos a fondo la filosofía de diseño de Python «El Zen de Python (PEP 20)», desde sus antecedentes históricos y el profundo significado de sus 19 aforismos, hasta por qué se valora tanto en el desarrollo de software moderno."
 slug: "philosophy-python-zen"
 categories: ["philosophy"]

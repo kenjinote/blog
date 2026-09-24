@@ -2,7 +2,7 @@
 title: "グラフ理論とダイクストラ法・A*アルゴリズム：経路探索の数学的基盤と実装"
 description: "グラフ理論の基礎から始まり、最短経路問題におけるダイクストラ法とA*アルゴリズムの数学的背景、データ構造、Python実装までを徹底解説します。"
 slug: graph-theory-dijkstra-a-star
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T02:45:54+09:00
 image: eyecatch.jpg
 categories:
   - mathematics

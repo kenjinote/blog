@@ -1,7 +1,7 @@
 ---
 title: "llama.cppの量子化技術（GGUF）の仕組みを解説"
 slug: "llama-cpp-quantization-gguf"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T00:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

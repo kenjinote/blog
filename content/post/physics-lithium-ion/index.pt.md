@@ -2,7 +2,7 @@
 title: "Leis da Física e Tecnologia do Dia a Dia: Como Funcionam as Baterias de Íons de Lítio - A Química de Carga e Descarga que Sustenta a Sociedade Móvel Moderna"
 description: "De smartphones a carros elétricos, as 'baterias de íons de lítio' são indispensáveis para a sociedade moderna. Explicaremos as reações químicas dinâmicas de elétrons e íons que ocorrem em seu interior, e o motivo de serem tão leves e de alta capacidade."
 slug: "physics-lithium-ion"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

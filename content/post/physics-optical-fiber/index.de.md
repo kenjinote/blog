@@ -2,7 +2,7 @@
 title: "Physikalische Gesetze und Alltagstechnologien: Wie Glasfasern funktionieren – Das ultraschnelle Internet, unterstützt durch die Physik der Totalreflexion"
 description: "Ein dünner Glasfaden, der über den Meeresgrund kriecht und die Kontinente der Welt verbindet: die 'Glasfaser'. Wir erklären die Physik der 'Totalreflexion', den Grund, warum Licht sich fortbewegt ohne aus gebogenen Glasröhren auszutreten, sowie die Funktionsweise der optischen Kommunikation, die das Internet stützt."
 slug: "physics-optical-fiber"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

@@ -2,7 +2,7 @@
 title: "波恩哈德·黎曼：开启现代数学大门的天才的生平与成就"
 description: "深入探究波恩哈德·黎曼波澜壮阔的一生及其数学成就，如黎曼猜想和黎曼几何，这些成就对现代数学和物理学产生了深远的影响。"
 slug: "riemann"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

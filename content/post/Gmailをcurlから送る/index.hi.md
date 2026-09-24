@@ -1,7 +1,7 @@
 ---
 title: 'curl कमांड का उपयोग करके Gmail से ईमेल कैसे भेजें'
 slug: "Gmailをcurlから送る"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-02-27T02:13:31+09:00
 tags: ["gmail", "curl"]
 draft: false
 image: "img.webp"

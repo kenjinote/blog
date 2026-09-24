@@ -2,7 +2,7 @@
 title: "Arquitetura Orientada a Eventos e Filas de Mensagens (Kafka, RabbitMQ)"
 description: "Design orientado a eventos que reduz o acoplamento entre sistemas através de comunicação assíncrona, e o papel dos message brokers."
 slug: "event-driven-architecture-message-queue-kafka-rabbitmq"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "architecture"

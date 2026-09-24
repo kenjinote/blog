@@ -1,6 +1,5 @@
 ---
 title: "Git的思想（去中心化的美学）"
-date: "2026-09-24T16:08:36+09:00"
 description: "从美学与架构的视角，深入探讨Git的设计思想——去中心化方法。揭示分布式版本控制系统所带来的开发范式转变。"
 slug: "philosophy-git-decentralized"
 categories: ["philosophy"]

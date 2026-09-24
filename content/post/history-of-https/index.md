@@ -2,7 +2,7 @@
 title: "ネットワーク技術: HTTPSの技術解説 - 暗号化と公開鍵基盤(PKI)の仕組み"
 description: "私たちが安心してネットショッピングできるのは「HTTPS」のおかげです。盗聴や改ざんを防ぐ暗号化技術と、SSL/TLSが裏側で行っている複雑な数学的処理を解説します。"
 slug: "history-of-https"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

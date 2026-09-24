@@ -2,7 +2,7 @@
 title: "Brettspielstrategie: Grundregeln und Gewinnmuster von Othello - Eine detaillierte Taktik bis zur Eroberung der Ecken"
 description: "Othello (Reversi) wird oft als „Eine Minute zum Lernen, ein Leben lang zum Meistern“ bezeichnet. Anstatt einfach blind Steine umzudrehen, erklären wir hier die „sicheren Steine“ und die „Mobilitätstheorie“, mit denen Anfänger ihr Spiel verbessern können."
 slug: "game-othello-rules"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

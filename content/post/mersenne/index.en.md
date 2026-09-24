@@ -2,7 +2,7 @@
 title: "Marin Mersenne: The Post-Box of 17th Century Europe and Godfather of Mersenne Primes"
 description: "An in-depth look at the life of Marin Mersenne, his interactions with Descartes and Fermat, and his mathematical and scientific achievements in Mersenne primes and acoustics."
 slug: "mersenne"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematics"

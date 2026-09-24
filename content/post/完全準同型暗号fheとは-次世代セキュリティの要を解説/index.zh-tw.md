@@ -1,7 +1,7 @@
 ---
 title: '完全同態加密（FHE）是什麼？解析次世代資安的核心'
 slug: "fully-homomorphic-encryption-fhe-explained"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T11:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

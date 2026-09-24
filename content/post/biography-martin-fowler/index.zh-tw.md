@@ -1,6 +1,6 @@
 ---
 title: "軟體開發的指路明燈：馬丁·福勒的軌跡與哲學"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:00:00+09:00
 categories: ["biography"]
 tags: ["martin-fowler", "history"]
 image: "eyecatch.jpg"

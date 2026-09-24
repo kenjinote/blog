@@ -2,7 +2,7 @@
 title: "Поиск в структурах деревьев и графов (DFS, BFS, алгоритм Дейкстры)"
 description: "Структуры деревьев и графов, выражающие сложные взаимосвязи данных. Подробное руководство от поиска в глубину (DFS) и поиска в ширину (BFS) до задачи кратчайшего пути (алгоритм Дейкстры)."
 slug: "tree-graph-data-structures-search-dfs-bfs-dijkstra"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-22T03:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "graph", "tree", "dfs", "bfs", "dijkstra"]

@@ -2,7 +2,7 @@
 title: '毕达哥拉斯：数学与神秘主义的交汇点'
 description: '深入探讨古希腊数学家毕达哥拉斯的生平、毕达哥拉斯定理以及万物皆数的哲学。'
 slug: 'pythagoras'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-20T18:40:00+09:00'
 image: "eyecatch.jpg"
 categories:
   - 'mathematics'

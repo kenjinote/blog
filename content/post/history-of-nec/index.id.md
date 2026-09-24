@@ -2,7 +2,7 @@
 title: "Sejarah NEC: Seri PC-98 yang Mendukung Awal Mula Komputer di Jepang dan Jejak Teknologi Komunikasi"
 description: "Sejarah NEC mulai dari raksasa komunikasi hingga dominasi seri PC-9800, serta kabel bawah laut dan teknologi luar angkasa."
 slug: "history-of-nec"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T01:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

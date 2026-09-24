@@ -2,7 +2,7 @@
 title: "الفهم الكامل لـ Docker وتقنية الحاويات: من مساحة الاسم (Namespace) ومجموعات التحكم (cgroups) إلى طبقات الصور"
 description: "نتجاوز مجرد استخدام الأدوات لنقدم تحليلاً شاملاً للآليات الكامنة وراء الحاويات باستخدام ميزات نواة Linux (مثل مساحة الاسم، مجموعات التحكم، وOverlayFS)."
 slug: "docker-container-namespace-cgroups-layers"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T09:00:00+09:00
 image: eyecatch.jpg
 categories:
   - "infrastructure"

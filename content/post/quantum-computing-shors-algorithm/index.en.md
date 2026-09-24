@@ -2,7 +2,7 @@
 title: "How Quantum Computers Work and Shor's Algorithm: Why Quantum Computing Can Break Cryptography?"
 description: "A deep dive into the basics of quantum computing, and the mathematical and quantum mechanical mechanisms of Shor's Algorithm, which poses a threat to RSA cryptography. This comprehensive guide includes implementation examples using Qiskit and discusses the future prospects of post-quantum cryptography."
 slug: "quantum-computing-shors-algorithm"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:35:46+09:00"
 image: "eyecatch.jpg"
 categories:
   - "technology"

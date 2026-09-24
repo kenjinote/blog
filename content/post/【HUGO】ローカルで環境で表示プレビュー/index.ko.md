@@ -6,7 +6,7 @@
 
 title: '[Hugo 입문] Windows에서의 설치부터 로컬 환경에서의 미리보기 표시 방법'
 slug: "【HUGO】ローカルで環境で表示プレビュー"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"

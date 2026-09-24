@@ -2,7 +2,7 @@
 title: "L'aggravation de la 'nouvelle fracture numérique' causée par l'évolution de l'IA générative"
 description: "Une réflexion approfondie sur la nouvelle fracture numérique, qui, avec le développement rapide des technologies d'IA, est passée de l'accès au matériel et à Internet aux 'capacités de prompt et d'orchestration'."
 slug: "generative-ai-digital-divide"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

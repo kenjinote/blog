@@ -1,7 +1,7 @@
 ---
 title: 'Report on Re-awarding Microsoft MVP (2025-2026) and Past Activities'
 slug: "Microsoft MVP（2025-2026）を再Awardしました"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-07-13T22:01:15+09:00
 tags: ["Microsoft MVP"]
 draft: false
 image: "img.webp"

@@ -2,7 +2,7 @@
 title: "Alan Baker: The Fields Medalist Who Revolutionized Transcendental Number Theory"
 description: "An in-depth look at the life and mathematical achievements of Alan Baker, the British mathematician who won the Fields Medal in 1970 for his theorems on linear forms in logarithms."
 slug: "baker"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Alan Baker", "Number Theory", "Fields Medal", "Transcendental Number Theory"]

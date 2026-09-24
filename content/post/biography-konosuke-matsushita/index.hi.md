@@ -1,6 +1,6 @@
 ---
 title: "कोनोसुके मात्सुशिता का जीवन और दर्शन: भविष्य के लिए प्रबंधन के देवता की विरासत"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T20:59:56+09:00"
 categories: ["biography"]
 tags: ["konosuke-matsushita", "history"]
 image: "eyecatch.jpg"

@@ -1,6 +1,6 @@
 ---
 title: "고독한 예언자: 프리드리히 니체의 생애와 철학의 심연"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["friedrich-nietzsche", "history"]
 image: "eyecatch.jpg"

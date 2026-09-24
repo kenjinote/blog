@@ -2,7 +2,7 @@
 title: "오픈소스의 반격: Android의 역사 - 세계 최대의 모바일 OS는 어떻게 탄생했는가"
 description: "iPhone의 등장에 대항하기 위해 Google이 결성한 '오픈 핸드셋 얼라이언스'. OS를 무상으로 제공한다는 비즈니스 모델의 전환이 전 세계 스마트폰을 어떻게 바꾸었는지 해설합니다."
 slug: "history-of-android"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

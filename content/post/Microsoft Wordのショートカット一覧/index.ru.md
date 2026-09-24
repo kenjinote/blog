@@ -1,7 +1,7 @@
 ---
 title: '【Повышение эффективности】Список полезных сочетаний клавиш для Microsoft Word'
 slug: "Microsoft WordのЯрлык一覧"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "Сочетания клавиш"]
 draft: false
 image: "img.webp"

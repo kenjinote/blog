@@ -1,6 +1,5 @@
 ---
 title: "Ada Lovelace : Toute l'histoire de la \"première programmeuse au monde\" qui a prédit l'avenir des ordinateurs"
-date: "2026-09-24T16:08:36+09:00"
 description: "Fille du poète Byron, Ada Lovelace a écrit le premier programme de l'histoire pour la \"machine analytique\" de Charles Babbage. Nous explorons en détail sa vie, son génie mathématique et son incroyable prescience, elle qui avait déjà perçu le véritable potentiel des ordinateurs dès le 19ème siècle, à travers des milliers de mots d'explications."
 slug: "biography-ada-lovelace"
 categories: ["biography"]

@@ -2,7 +2,7 @@
 title: "金融网络：信用卡支付机制 - 从授权到清算的技术"
 description: "在店铺刷卡的瞬间，后台进行了怎样的数据通信？我们将解说支撑全球支付网络的“授权”与“清算”机制。"
 slug: "technology-credit-card"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

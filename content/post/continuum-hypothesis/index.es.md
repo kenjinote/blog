@@ -2,7 +2,7 @@
 title: "Hipótesis del continuo (Continuum Hypothesis) - La pregunta definitiva de Cantor y su conclusión \"ni demostrable ni refutable\""
 description: "Profundizamos en la historia de la Hipótesis del continuo (CH) propuesta por Georg Cantor, su trasfondo matemático y la demostración de su independencia por Gödel y Cohen."
 slug: "continuum-hypothesis"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "set-theory"]
 tags: ["Hipótesis del continuo", "Cantor", "Infinito", "Matemáticas"]

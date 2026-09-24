@@ -1,7 +1,7 @@
 ---
 title: "El problema del coleccionista de cupones: ¿cuántas extracciones hacen falta para completar una colección?"
 description: "Reunir 10 tipos de cartas equiprobables requiere unas 29,3 extracciones de media, pero en 30 extracciones solo se completa alrededor del 63 % de las colecciones. Una explicación con fórmulas, gráficos y Python."
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-15T21:20:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "statistics"]
 tags: ["Probabilidad", "Valor esperado", "Problema del coleccionista de cupones", "Python"]

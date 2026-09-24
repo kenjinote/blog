@@ -1,7 +1,7 @@
 ---
 title: '量子コンピュータとは？重ね合わせや量子もつれ等の究極の計算原理をゼロから解説'
 slug: "quantum-computer-basics"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-05T22:10:00+09:00
 tags: ["量子コンピュータ", "物理学", "テクノロジー"]
 image: "eyecatch.jpg"
 categories: ["math-cryptography-quantum"]

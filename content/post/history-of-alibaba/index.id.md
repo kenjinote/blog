@@ -2,7 +2,7 @@
 title: "Sejarah Alibaba: Revolusi E-commerce Tiongkok dan Pembangunan Ekosistem Digital"
 description: "Bagaimana Jack Ma mengubah ritel dan pembayaran di Tiongkok, serta membangun ekosistem digital raksasa."
 slug: "history-of-alibaba"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T01:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

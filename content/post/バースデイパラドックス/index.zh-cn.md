@@ -2,7 +2,7 @@
 title: '生日悖论：只要有23人就超过50%？欺骗直觉的“组合”魔法'
 slug: 'birthday-paradox'
 description: '无论是学校的班级还是公司的部门，只需聚集23人，存在两个同生日的人的概率就会超过50%。本文将使用概率论和图表，以视觉和数学的方式解释人类的直觉是多么容易忽视“组合爆炸”。'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T00:00:00+09:00'
 image: 'img/birthday_paradox.jpg'
 math: true
 mermaid: true

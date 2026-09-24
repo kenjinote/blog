@@ -1,6 +1,6 @@
 ---
 title: "マーティン・ルーサー・キング・ジュニア：非暴力で世界を変えた夢の体現者"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["martin-luther-king-jr", "history"]
 image: "eyecatch.jpg"

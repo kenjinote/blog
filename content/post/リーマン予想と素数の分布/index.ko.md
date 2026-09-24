@@ -1,7 +1,7 @@
 ---
 title: '리만 가설과 소수의 분포: 현대 암호 기술과의 깊은 관계'
 slug: "riemann-hypothesis-prime-distribution-cryptography"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T16:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

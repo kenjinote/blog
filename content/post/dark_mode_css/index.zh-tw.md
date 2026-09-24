@@ -1,7 +1,7 @@
 ---
 title: '部落格深色模式支援的 CSS 設計重點'
 slug: "dark-mode-css-design-patterns"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

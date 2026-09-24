@@ -2,7 +2,7 @@
 title: "Diverse Proofs of the Pythagorean Theorem: From Geometry and Algebra to Einstein"
 description: "Discover fascinating proofs of the Pythagorean theorem. Explore the beauty of mathematics from Euclid to Einstein through various perspectives."
 slug: "diverse-proofs-of-pythagorean-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "Mathematics"

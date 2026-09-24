@@ -2,7 +2,7 @@
 title: "面向对象 vs 函数式 vs 数据导向：范式的局限与融合"
 description: "深入探讨编程范式的历史与演进，OOP、FP、DOP的各自优势与局限，并对现代开发中的最佳方案“范式融合”进行彻底考察。"
 slug: "oop-vs-fp-vs-dop"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:58:35+09:00"
 image: "eyecatch.jpg"
 categories: ["programming", "architecture", "software-engineering"]
 tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]

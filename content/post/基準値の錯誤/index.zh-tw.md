@@ -1,7 +1,7 @@
 ---
 title: "「檢驗陽性」＝「生病」？：基準率謬誤"
 description: "即使在準確率高達 99% 的檢驗中呈陽性，實際罹病的機率竟然只有 9%？本文帶您了解人類直覺如何被統計數據欺騙的「基準率謬誤」。"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "base-rate-fallacy"
 image: "img/base_rate_fallacy.jpg"

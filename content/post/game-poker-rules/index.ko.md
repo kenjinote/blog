@@ -2,7 +2,7 @@
 title: "마인드 스포츠: 포커(텍사스 홀덤)의 규칙과 확률론 - 운과 실력이 교차하는 게임"
 description: "세계 대회 총상금이 100억 엔을 넘는 궁극의 마인드 스포츠 '텍사스 홀덤'. 단순한 도박이 아닌, 포지션 이론, 오즈 계산, 그리고 블러핑의 수학적 근거를 해설합니다."
 slug: "game-poker-rules"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

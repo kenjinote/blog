@@ -1,7 +1,7 @@
 ---
 title: '쇼어의 알고리즘을 Python으로 시뮬레이션해 보았다'
 slug: "shors-algorithm-simulation-python"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T08:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

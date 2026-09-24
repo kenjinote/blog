@@ -2,7 +2,7 @@
 title: "Teorema Egregium de Gauss - O Pináculo da Geometria Diferencial Aplicável até ao Comer Pizza"
 description: "Uma explicação profunda do 'Teorema Notável' descoberto por Carl Friedrich Gauss, desde o seu contexto matemático até à sua aplicação quotidiana ao comer pizza."
 slug: "theorema-egregium"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:11:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]
 tags: ["Geometria", "Gauss", "Teorema da Pizza", "Theorema Egregium", "Geometria Diferencial"]

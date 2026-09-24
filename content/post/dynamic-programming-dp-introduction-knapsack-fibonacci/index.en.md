@@ -2,7 +2,7 @@
 title: "Introduction to Dynamic Programming (DP) and Famous Problems (Knapsack, Fibonacci)"
 description: "Overcome the algorithm hurdle 'Dynamic Programming (DP)'. We explain the difference between memoized recursion and the bottom-up approach in an easy-to-understand way, using the Fibonacci sequence and the Knapsack problem as examples."
 slug: "dynamic-programming-dp-introduction-knapsack-fibonacci"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-22T04:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "dynamic-programming", "dp", "knapsack", "optimization"]

@@ -3,7 +3,7 @@ title: 'Les ordinateurs quantiques vont-ils casser le chiffrement RSA ? Explicat
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["Ordinateur quantique", "Décryptage", "Algorithme de Shor", "RSA"]
 image: "eyecatch.jpg"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-05T22:09:21+09:00
 categories: ["math-cryptography-quantum"]
 description: 'Explique comment la cryptographie RSA, qui soutient l''infrastructure de communication moderne, est menacée par l''émergence des ordinateurs quantiques. Examine l''avenir du décryptage de nouvelle génération et de la sécurité, des mécanismes de l''algorithme de Shor à l''état actuel du matériel à l''ère NISQ.'
 ---

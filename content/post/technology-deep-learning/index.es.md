@@ -2,7 +2,7 @@
 title: "El corazón de la IA: Cómo funciona el Deep Learning - Cómo aprenden las redes neuronales"
 description: "El 'Deep Learning' (aprendizaje profundo), que encendió el tercer boom de la IA y es la tecnología fundamental detrás de ChatGPT y otros. Explicamos cómo este algoritmo, que imita las redes neuronales del cerebro humano, descubre sus propias características."
 slug: "technology-deep-learning"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -1,6 +1,5 @@
 ---
 title: "What is Parkinson's Law? A Complete Guide to How Work and Time Expand and How to Overcome It"
-date: "2026-09-24T16:08:36+09:00"
 description: "An incredibly deep dive into Parkinson's Law, which states that \"work expands so as to fill the time available for its completion.\" We comprehensively explore its historical background, psychological mechanisms, and concrete methods to overcome it in business and daily life. A complete guide for time management and productivity improvement."
 slug: "business-parkinsons-law"
 categories: ["business"]

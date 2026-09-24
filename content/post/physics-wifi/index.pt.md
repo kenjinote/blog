@@ -2,7 +2,7 @@
 title: "Maravilhas da Física: Como o Wi-Fi Funciona - O Princípio da Transmissão de Dados por Ondas de Rádio Invisíveis"
 description: "Wi-Fi conecta smartphones e PCs à internet. Explicaremos, sob a perspectiva da física e da engenharia de telecomunicações, como ondas de rádio invisíveis transportam enormes quantidades de dados digitais com precisão e alta velocidade."
 slug: "physics-wifi"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

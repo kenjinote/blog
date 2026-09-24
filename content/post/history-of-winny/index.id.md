@@ -2,7 +2,7 @@
 title: "Cara kerja Winny: pencarian, cache, perantara, dan batas anonimitas"
 description: "Memahami jaringan P2P Winny melalui metadata, hierarki kecepatan koneksi, dan cache, dilengkapi contoh volume transfer, batas keamanan, kebocoran data, serta perkara pengembangnya."
 slug: "history-of-winny"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["technology", "computer-science"]
 tags: ["p2p", "network", "winny", "history"]

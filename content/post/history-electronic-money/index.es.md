@@ -2,7 +2,7 @@
 title: "Finanzas y Criptografía: La Historia del Dinero Electrónico - Digitalización de la Moneda y Evolución de la Criptografía"
 description: "Desde el reemplazo de 'monedas y billetes físicos' por 'datos digitales'. Exploraremos la historia de la evolución del dinero electrónico, desde los primeros experimentos de David Chaum hasta el nacimiento de Suica y las criptomonedas."
 slug: "history-electronic-money"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

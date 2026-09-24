@@ -2,7 +2,7 @@
 title: "Ernst Kummer: Vater der idealen Zahlen und die Herausforderung des Großen Fermatschen Satzes"
 description: "Ein tiefer Einblick in das Leben des großen deutschen Mathematikers Ernst Kummer, seine Einführung idealer Zahlen und seine legendäre Herausforderung des Großen Fermatschen Satzes."
 slug: "kummer"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematik", "biografie"]
 tags: ["Ernst Kummer", "Großer Fermatscher Satz", "Ideale Zahlen", "Algebraische Zahlentheorie", "Reguläre Primzahlen"]

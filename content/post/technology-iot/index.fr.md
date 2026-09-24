@@ -2,7 +2,7 @@
 title: "L'Internet des objets : le fonctionnement de l'IoT - Les coulisses d'un monde tout connecté"
 description: "De l'électroménager aux voitures en passant par les machines d'usine, le concept d'« IoT » (Internet of Things) connecte toutes sortes d'objets à Internet. Découvrez comment les technologies de capteurs et les réseaux de communication collectent des données et s'associent à l'IA pour créer de la valeur."
 slug: "technology-iot"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -2,7 +2,7 @@
 title: "Teori B-Tree dan Indeks Basis Data (Mengapa DB Memilih B-Tree?)"
 description: "Membahas secara mendalam teori B-Tree dan B+Tree yang menjadi dasar indeks dalam basis data, struktur data, hubungannya dengan I/O disk, dan mengapa RDBMS terus mengadopsi B-Tree sebagai standar indeks, lengkap dengan analisis matematis dan contoh implementasi."
 slug: "b-tree-database-index-theory"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:45:54+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science", "database"]
 tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]

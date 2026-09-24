@@ -2,7 +2,7 @@
 title: "The Heart of AI: How Deep Learning Works - How Neural Networks Learn"
 description: "Triggering the third AI boom and serving as the foundational technology for ChatGPT and others, 'Deep Learning' allows algorithms modeled after human neural networks to autonomously discover features. We explain how this works."
 slug: "technology-deep-learning"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

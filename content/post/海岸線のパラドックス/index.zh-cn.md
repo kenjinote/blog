@@ -1,7 +1,7 @@
 ---
 title: "英国的海岸线有多长？：海岸线悖论"
 description: "用来测量的尺子越短，海岸线就会变得无限长。这是开启分形几何大门的著名悖论。"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "coastline-paradox"
 image: "img/coastline_paradox.jpg"

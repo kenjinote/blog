@@ -2,7 +2,7 @@
 title: "Die Geschichte von NVIDIA (GeForce): Vom 3D-Grafik-Pionier zum Herzstück der KI (GPU)"
 description: "Die Geschichte von NVIDIA, das sich von einem Hersteller von Gaming-Grafikkarten zum absoluten Herrscher und Treiber der modernen KI-Revolution wandelte."
 slug: "history-of-nvidia"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T01:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

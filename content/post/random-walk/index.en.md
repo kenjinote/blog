@@ -2,7 +2,7 @@
 title: "Random Walk: Understanding the Mathematics of Diffusion and Brownian Motion from the Drunkard's Walk"
 description: "A detailed explanation of the mathematical background of random walks (the drunkard's walk), from the basics to diffusion phenomena and Brownian motion. A definitive guide including Pólya's recurrence theorem and applications to financial engineering."
 slug: "random-walk"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematics"]
 tags: ["Random Walk", "Probability Theory", "Diffusion Equation", "Brownian Motion", "Python"]

@@ -2,7 +2,7 @@
 title: "Henri Poincaré : Le Dernier Universaliste et Son Profond Héritage Mathématique"
 description: "Une exploration extrêmement détaillée de la vie du grand mathématicien français Henri Poincaré, de ses réalisations mathématiques révolutionnaires telles que la théorie du chaos et la conjecture de Poincaré, ainsi que d'épisodes fascinants sur sa créativité."
 slug: "poincare"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathématiques", "Biographie"]
 tags: ["Poincaré", "Topologie", "Théorie du chaos", "Histoire des mathématiques", "Physique"]

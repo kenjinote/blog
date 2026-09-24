@@ -2,7 +2,7 @@
 title: "メモリ管理とガベージコレクション: C、Java、Rustから学ぶメモリの真実"
 description: "プログラミングにおけるメモリ管理の基礎から、C言語の手動管理、Javaのガベージコレクション、Rustの所有権モデルまで、深いレベルで比較・解説します。"
 slug: "memory-management-garbage-collection"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
 categories: ["programming", "computer-science", "software-engineering"]
 tags: ["memory-management", "c-language", "java", "rust", "garbage-collection"]

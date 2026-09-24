@@ -2,7 +2,7 @@
 title: "La identidad de Euler (Euler's Identity) - La 'fórmula suprema de la humanidad' que conecta 5 constantes matemáticas diferentes"
 description: "Explicaremos en profundidad los antecedentes y el significado de la Identidad de Euler, considerada la más hermosa de la historia de las matemáticas."
 slug: "eulers-identity"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Euler", "Matemáticas", "Ciencia"]

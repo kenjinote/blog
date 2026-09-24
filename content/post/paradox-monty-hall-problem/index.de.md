@@ -1,6 +1,5 @@
 ---
 title: "Die Diskrepanz zwischen Intuition und Wahrscheinlichkeit: Die Tiefen des Monty-Hall-Problems erkunden"
-date: "2026-09-24T16:08:36+09:00"
 description: "Das \"Monty-Hall-Problem\" ist ein klassisches Beispiel für kontraintuitive Wahrscheinlichkeit. Warum weicht die menschliche Intuition so stark von der Wahrscheinlichkeit ab? Von mathematischen Beweisen bis zu psychologischen Hintergründen erklären wir das gesamte Paradoxon im Detail."
 slug: "paradox-monty-hall-problem"
 categories: ["science"]

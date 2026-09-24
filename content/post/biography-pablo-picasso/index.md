@@ -1,6 +1,6 @@
 ---
 title: "パブロ・ピカソ：破壊と創造を繰り返した20世紀最大の天才"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["pablo-picasso", "history"]
 image: "eyecatch.jpg"

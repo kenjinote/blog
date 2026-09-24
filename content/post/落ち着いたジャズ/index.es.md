@@ -5,7 +5,7 @@
 
 title: 'Perfecto para relajarse: Una lista de reproducción recomendada de jazz tranquilo'
 slug: "落ち着いたJazz"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-08T17:40:26+09:00
 tags: ["Jazz", "Música"]
 draft: false
 image: "images/img.webp"

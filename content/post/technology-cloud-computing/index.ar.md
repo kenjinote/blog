@@ -2,7 +2,7 @@
 title: "من التملك إلى الاستخدام: كيف تعمل الحوسبة السحابية - التحول الكبير في البنية التحتية لتكنولوجيا المعلومات"
 description: "كيف غيرت الحوسبة السحابية، مثل Amazon Web Services (AWS) و Google Cloud (GCP)، تكنولوجيا المعلومات للشركات والأفراد. نشرح الفروق بين IaaS و PaaS و SaaS وأساسيات تقنية المحاكاة الافتراضية."
 slug: "technology-cloud-computing"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

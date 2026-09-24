@@ -1,6 +1,5 @@
 ---
 title: "A Essência do Rust: A Mudança de Paradigma Trazida pela Segurança e pelo Modelo de Propriedade"
-date: "2026-09-24T16:08:36+09:00"
 description: "Um mergulho profundo nos conceitos de 'Propriedade' (Ownership) e 'Empréstimo' (Borrowing) que são o núcleo do Rust, e uma explicação detalhada de como ele equilibra a segurança de memória e o desempenho."
 slug: "philosophy-rust-ownership"
 categories: ["philosophy"]

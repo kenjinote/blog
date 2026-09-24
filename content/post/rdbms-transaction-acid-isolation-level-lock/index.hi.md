@@ -2,7 +2,7 @@
 title: "RDBMS ट्रांजेक्शन और ACID गुण (आइसोलेशन लेवल और लॉक)"
 description: "डेटाबेस की अखंडता की रक्षा करने वाले ट्रांजेक्शन प्रोसेसिंग की मूल बातों से लेकर, आइसोलेशन लेवल के कारण होने वाली विसंगतियों (Anomaly) और लॉक तंत्र तक।"
 slug: "rdbms-transaction-acid-isolation-level-lock"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "database"

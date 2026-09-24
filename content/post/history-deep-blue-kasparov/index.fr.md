@@ -1,6 +1,5 @@
 ---
 title: "Deep Blue contre Kasparov (le choc de 1997) : L'histoire complète du match historique entre l'humanité et l'IA"
-date: "2026-09-24T16:08:36+09:00"
 description: "En 1997, le champion du monde des échecs Garry Kasparov a été vaincu par le supercalculateur d'IBM « Deep Blue ». Un événement historique, dont nous expliquons le contexte, l'évolution du match et l'impact sur la technologie de l'IA."
 slug: "history-deep-blue-kasparov"
 categories: ["history"]

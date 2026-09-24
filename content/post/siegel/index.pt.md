@@ -2,7 +2,7 @@
 title: "Carl Ludwig Siegel: Um Gigante da Teoria dos Números no Século XX"
 description: "Uma explicação detalhada da vida de Siegel e suas grandes realizações matemáticas na teoria dos números e mecânica celeste."
 slug: "siegel"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Siegel", "teoria dos números", "matemático", "mecânica celeste", "teoria analítica dos números", "equações diofantinas"]

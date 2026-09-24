@@ -2,7 +2,7 @@
 title: "Fourier-Reihe und Fourier-Transformation: Jede komplexe Welle in eine Summe von Sinus- und Kosinusfunktionen zerlegen"
 description: "Eine detaillierte Erklärung der 'Fourier-Reihe', die komplexe Wellenformen als Überlagerung einfacher Sinus- und Kosinuswellen ausdrückt, und ihrer Erweiterung auf nichtperiodische Funktionen, der 'Fourier-Transformation'."
 slug: "fourier-series-and-transform"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematik"

@@ -1,7 +1,7 @@
 ---
 title: '기술 블로그의 소재 고갈을 막자! 효율적인 인풋 방법과 아이디어 도출'
 slug: "tech-blog-idea-generation-and-input-strategy"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

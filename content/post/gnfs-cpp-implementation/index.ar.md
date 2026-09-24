@@ -1,7 +1,7 @@
 ---
 title: 'تنفيذ منخل حقل الأعداد العام (GNFS) في C++ | آليات خوارزمية فك تشفير RSA'
 slug: "gnfs-cpp-implementation"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "رياضيات", "تشفير"]
 draft: false
 image: "eyecatch.jpg"

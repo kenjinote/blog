@@ -2,7 +2,7 @@
 title: "Théorie de l'information et entropie de Shannon : Explorer les limites de la compression de données et des communications"
 description: "De la base de la théorie de l'information proposée par Claude Shannon jusqu'au concept d'entropie, les limites de la compression de données et les applications aux communications modernes sont expliquées en détail."
 slug: information-theory-shannon-entropy
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T02:45:54+09:00
 image: eyecatch.jpg
 categories:
   - informatique

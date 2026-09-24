@@ -1,7 +1,7 @@
 ---
 title: 'Pengenalan Mathematica: Cara Menggunakan Perintah Dasar seperti Persamaan dan Kalkulus'
 slug: "Mathematica入門"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-07-25T01:36:19+09:00
 tags: ["Mathematica", "Matematika", "Algoritma"]
 draft: false
 image: "img.webp"

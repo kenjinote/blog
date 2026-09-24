@@ -1,6 +1,5 @@
 ---
 title: "「マウス」の誕生とダグラス・エンゲルバート：コンピュータと人間の対話を再定義した先駆者の軌跡"
-date: "2026-09-24T16:08:36+09:00"
 description: "現在のコンピュータ操作に欠かせない「マウス」はどのようにして誕生したのか。ダグラス・エンゲルバートの思想「知性の増幅(Augmenting Human Intellect)」から、1968年のThe Mother of All Demos（すべてのデモの母）まで、その壮大な歴史を徹底解説。"
 slug: "history-douglas-engelbart-mouse"
 categories: ["history"]

@@ -1,7 +1,7 @@
 ---
 title: "ポアンカレ予想 - 宇宙の形を紐解くトポロジーの難問とペレルマンの伝説"
 description: "100年以上にわたり数学者を悩ませた「ポアンカレ予想」の全貌、トポロジーの基礎、そしてグレゴリー・ペレルマンによる劇的な証明の物語を詳しく解説します。"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:04:13+09:00"
 slug: "poincare-conjecture"
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]

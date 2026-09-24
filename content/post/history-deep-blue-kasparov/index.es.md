@@ -1,6 +1,5 @@
 ---
 title: "Deep Blue vs Kasparov (El impacto de 1997): La historia completa de la histórica partida entre la humanidad y la IA"
-date: "2026-09-24T16:08:36+09:00"
 description: "El histórico evento de 1997 cuando el campeón mundial de ajedrez Garry Kasparov fue derrotado por la supercomputadora 'Deep Blue' de IBM. Analizamos en profundidad sus antecedentes, el desarrollo de la partida y su impacto en la tecnología de IA."
 slug: "history-deep-blue-kasparov"
 categories: ["history"]

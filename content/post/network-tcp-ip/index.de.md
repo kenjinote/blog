@@ -2,7 +2,7 @@
 title: "Netzwerktechnik: Geschichte und Funktionsweise von TCP/IP - Die globalen Regeln, die das Internet verbinden"
 description: "Warum können Computer auf der ganzen Welt unabhängig von Hersteller oder Betriebssystem miteinander kommunizieren? Wir beleuchten die Philosophie und Geschichte der 'TCP/IP'-Protokollfamilie, die das Rückgrat des Internets bildet."
 slug: "network-tcp-ip"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

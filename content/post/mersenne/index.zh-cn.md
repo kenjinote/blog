@@ -2,7 +2,7 @@
 title: "马兰·梅森：17世纪欧洲的学术信箱与梅森素数之父"
 description: "深入了解马兰·梅森的一生、他与笛卡尔和费马的互动，以及他在梅森素数和声学方面的数学与科学成就。"
 slug: "mersenne"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

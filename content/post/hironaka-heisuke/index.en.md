@@ -2,7 +2,7 @@
 title: "Heisuke Hironaka: The Resolution of Singularities and the Quest for Creativity"
 description: "Delve into the life of Fields Medal-winning Japanese mathematician Heisuke Hironaka, his mathematical achievement of the 'Resolution of Singularities', and his philosophy of creativity."
 slug: "hironaka-heisuke"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathematics", "Biography"]
 tags: ["Heisuke Hironaka", "Algebraic Geometry", "Resolution of Singularities", "Fields Medal", "Japanese Mathematician", "Creativity"]

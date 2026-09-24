@@ -2,7 +2,7 @@
 title: "Da Posse ao Uso: Como Funciona a Computação em Nuvem - Uma Grande Mudança na Infraestrutura de TI"
 description: "Como a computação em nuvem, como Amazon Web Services (AWS) e Google Cloud (GCP), mudou a TI de empresas e indivíduos. Explicamos a diferença entre IaaS, PaaS, SaaS e os fundamentos da tecnologia de virtualização."
 slug: "technology-cloud-computing"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -1,7 +1,7 @@
 ---
 title: 'Apa Itu ''Masalah FizzBuzz'', Gerbang Masuk Pemrograman? Penjelasan Cara Menulisnya dengan Python'
 slug: "FizzBuzz"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "Algoritma"]
 draft: false
 image: "eyecatch.jpg"

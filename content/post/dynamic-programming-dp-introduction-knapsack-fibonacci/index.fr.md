@@ -2,7 +2,7 @@
 title: "Introduction à la programmation dynamique (DP) et aux problèmes célèbres (Sac à dos, Fibonacci)"
 description: "L'obstacle des algorithmes : la programmation dynamique (DP). Nous expliquons clairement la différence entre la récursivité avec mémoïsation et l'approche ascendante, en utilisant la suite de Fibonacci et le problème du sac à dos comme exemples."
 slug: "dynamic-programming-dp-introduction-knapsack-fibonacci"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-22T04:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "dynamic-programming", "dp", "knapsack", "optimization"]

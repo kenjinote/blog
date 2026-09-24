@@ -1,7 +1,7 @@
 ---
 title: '[Para iniciantes] Introdução ao Vim: Desde a instalação até o início/saída e explicações dos modos'
 slug: "vim入門"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "editor de texto"]
 draft: false
 image: "img.webp"

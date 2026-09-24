@@ -2,7 +2,7 @@
 title: "History of OS: The Birth of Linux and the Open Source Revolution"
 description: "The history of Linux, which started as a hobby of a single student and came to dominate servers and smartphones (Android) around the world."
 slug: "history-of-linux"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T02:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

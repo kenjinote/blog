@@ -1,7 +1,7 @@
 ---
 title: 'Cara Mengubah Pintasan Keyboard untuk Beralih Input Bahasa Jepang/Inggris di Mac (Untuk Keyboard US)'
 slug: "macでBahasa Jepang⇔英語入力切り替えのTombol Pintasanを変更する方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-04-04T23:02:12+09:00
 tags: ["macos", "mac", "Tombol Pintasan", "Input Bahasa Jepang"]
 draft:
 image: "img.webp"

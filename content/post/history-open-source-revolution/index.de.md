@@ -1,6 +1,5 @@
 ---
 title: "Die Open-Source-Revolution und \"Die Kathedrale und der Basar\": Der Paradigmenwechsel, der die Geschichte der Softwareentwicklung veränderte"
-date: "2026-09-24T16:08:36+09:00"
 description: "Eine detaillierte Erklärung, wie \"Die Kathedrale und der Basar\" den Grundstein für die moderne Open-Source-Softwareentwicklung legte, von den historischen Hintergründen bis hin zu den Auswirkungen auf das heutige Software Engineering."
 slug: "history-open-source-revolution"
 categories: ["history"]

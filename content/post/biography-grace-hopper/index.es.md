@@ -1,6 +1,5 @@
 ---
 title: "[Grace Hopper: La vida y el legado de la \"Madre de COBOL\" que fue pionera en el futuro de la programación]"
-date: "2026-09-24T16:08:36+09:00"
 description: "Contraalmirante de la Marina de los EE. UU. Grace Hopper, conocida como la \"Madre de COBOL\". Desde la invención del compilador hasta el descubrimiento del primer error informático (bug), explicamos en profundidad su vida turbulenta y los grandes logros que sentaron las bases de la sociedad de TI moderna."
 slug: "biography-grace-hopper"
 categories: ["biography"]

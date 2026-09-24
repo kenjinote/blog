@@ -1,6 +1,6 @@
 ---
 title: "孤獨的先知：弗里德里希·尼采的一生與哲學深淵"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["friedrich-nietzsche", "history"]
 image: "eyecatch.jpg"

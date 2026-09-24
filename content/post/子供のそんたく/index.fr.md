@@ -1,7 +1,7 @@
 ---
 title: 'Touché par la gentillesse d''une enfant de 2 ans ! Un épisode réconfortant où j''ai ressenti sa considération et son attention'
 slug: "Enfantのそんたく"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-07T04:40:52+09:00
 tags: ["Enfant"]
 draft: false
 image: "images/img.webp"

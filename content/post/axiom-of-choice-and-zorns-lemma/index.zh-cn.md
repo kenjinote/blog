@@ -2,7 +2,7 @@
 title: "选择公理与佐恩引理——动摇数学基础的「选择」概念"
 description: "深入探讨选择公理与佐恩引理，从直观含义到数学形式化，再到它们在现代数学中的重要性。"
 slug: "axiom-of-choice-and-zorns-lemma"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:20:37+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "集合论"]
 tags: ["选择公理", "佐恩引理", "ZFC 公理系统", "数学基础", "Mermaid", "KaTeX"]

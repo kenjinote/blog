@@ -1,6 +1,6 @@
 ---
 title: "सॉफ्टवेयर विकास के मार्गदर्शक: मार्टिन फाउलर का प्रक्षेपवक्र और दर्शन"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:00:00+09:00
 categories: ["biography"]
 tags: ["martin-fowler", "history"]
 image: "eyecatch.jpg"

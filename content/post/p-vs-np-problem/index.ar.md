@@ -2,7 +2,7 @@
 title: "مشكلة P مقابل NP وفئات التعقيد الحسابي: شرح لمسألة جوائز الألفية وأهميتها في البرمجة"
 description: "نغوص في أعماق مشكلة 'P مقابل NP' - إحدى مسائل جوائز الألفية - بدءاً من أساسيات فئات التعقيد الحسابي (P، NP، NP-complete، NP-hard) وصولاً إلى أحدث توجهات البحث، وتأثيرها على البرمجة ونظرية التشفير."
 slug: p-vs-np-problem
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
 categories: ["computer-science", "algorithms"]
 tags: ["complexity-theory", "p-vs-np", "np-complete", "millennium-prize", "python"]

@@ -1,7 +1,7 @@
 ---
 title: "Problema da Paragem (Halting Problem): O programa perfeito que é impossível criar"
 image: "eyecatch.jpg"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T00:00:51+09:00
 description: "Explicaremos um dos problemas matemáticos não resolvidos mais famosos em computação (já provado como insolúvel): o Problema da Paragem. Faremos a prova pelo absurdo (Proof by Contradiction), usaremos exemplos intuitivos, além de fórmulas e diagramas."
 categories: ["computer-science", "theory-of-computation"]
 tags: ["Halting Problem", "Alan Turing", "Algorithm", "Mathematics"]

@@ -1,7 +1,7 @@
 ---
 title: 'So finden Sie den Speicherort (Pfad) einer ausführbaren Datei im Pfad unter Windows [where-Befehl]'
 slug: "Windows でPfadの通ったAusführbare Dateiの場所を見つける方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "Pfad", "Ausführbare Datei", "Eingabeaufforderung"]
 draft: false
 image: "img.webp"

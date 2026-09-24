@@ -2,7 +2,7 @@
 title: "Das Wunder der Physik: Noise-Cancelling – Wie Welleninterferenz Schall mit Schall auslöscht"
 description: "Mit „Noise-Cancelling“ verschwindet Umgebungslärm einfach durch das Aufsetzen von Kopfhörern. Dieser Artikel beleuchtet tiefgehend das physikalische Prinzip der „Welleninterferenz“ und die technologische Geschichte, die dahintersteckt."
 slug: "physics-noise-cancelling"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

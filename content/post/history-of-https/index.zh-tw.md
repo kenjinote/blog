@@ -2,7 +2,7 @@
 title: "網路技術：HTTPS 的技術解說 - 加密與公開金鑰基礎建設 (PKI) 的機制"
 description: "我們能夠安心進行網路購物，全靠「HTTPS」的功勞。本文將解說防止竊聽與篡改的加密技術，以及 SSL/TLS 在背後運作的複雜數學處理。"
 slug: "history-of-https"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

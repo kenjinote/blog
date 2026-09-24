@@ -1,7 +1,7 @@
 ---
 title: 'Hyper-V مقابل WSL2: مقارنة تقنيات المحاكاة الافتراضية على Windows'
 slug: "hyper-v-vs-wsl2-windows-virtualization"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-13T07:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

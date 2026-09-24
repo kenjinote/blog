@@ -5,7 +5,7 @@
 
 title: 'Rust에서 소수를 열거하는 프로그램의 작성 방법과 코드 예제'
 slug: "Rustで소수を列挙する"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-09T07:08:49+09:00
 tags: ["Rust","소수","알고리즘"]
 draft: false
 image: "images/img.webp"

@@ -2,7 +2,7 @@
 title: "Théorème CAP et systèmes distribués : Le dilemme inhérent aux bases de données distribuées"
 description: "Une plongée approfondie dans le théorème CAP, le principe le plus important des systèmes distribués, de sa définition à sa preuve, en passant par son extension au théorème PACELC et son implémentation dans les bases de données distribuées du monde réel."
 slug: "cap-theorem-distributed-systems"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T00:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "systemes-distribues"

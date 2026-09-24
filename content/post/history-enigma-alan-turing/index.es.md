@@ -1,6 +1,5 @@
 ---
 title: "La batalla para descifrar Enigma y Alan Turing: El genio y la máquina que salvaron al mundo"
-date: "2026-09-24T16:08:36+09:00"
 description: "El desciframiento de Enigma que determinó el destino de la Segunda Guerra Mundial. Explicamos en detalle la historia completa de la batalla desconocida del genial matemático Alan Turing y los descifradores de códigos de Bletchley Park."
 slug: "history-enigma-alan-turing"
 categories: ["history"]

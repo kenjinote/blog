@@ -1,6 +1,5 @@
 ---
 title: "Der äußerste Norden der Quantenmechanik: Das Paradoxon der Realität, das uns Schrödingers Katze vor Augen führt"
-date: "2026-09-24T16:08:36+09:00"
 description: "Was ist \"Schrödingers Katze\"? Wir erklären den Kern von \"Überlagerung\" und dem \"Messproblem\" in der Quantenmechanik ausführlich, vom historischen Hintergrund bis zur Viele-Welten-Interpretation."
 slug: "paradox-schrodingers-cat"
 categories: ["science"]

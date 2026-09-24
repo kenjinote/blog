@@ -2,7 +2,7 @@
 title: "Fundamentos de ubicación: Cómo funciona el GPS - La milagrosa tecnología donde se cruzan la teoría de la relatividad y los satélites artificiales"
 description: "¿Por qué las aplicaciones de mapas en los teléfonos inteligentes conocen tu ubicación actual? Explicaremos cómo funcionan las ondas de radio de los satélites GPS que vuelan por el espacio y los cálculos precisos del tiempo utilizando la teoría de la relatividad de Einstein."
 slug: "technology-gps"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

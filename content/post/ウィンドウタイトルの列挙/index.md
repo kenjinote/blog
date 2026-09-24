@@ -1,7 +1,7 @@
 ---
 title: 'PowerShellで現在開いているウィンドウタイトルを列挙・取得する方法'
 slug: "ウィンドウタイトルの列挙"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-20T17:03:15+09:00
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"

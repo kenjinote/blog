@@ -1,6 +1,6 @@
 ---
 title: "米開朗基羅·博那羅蒂：文藝復興巨匠的生平與哲學"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["michelangelo", "history"]
 image: "eyecatch.jpg"

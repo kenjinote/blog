@@ -1,7 +1,7 @@
 ---
 title: '[Windows 11/10] Coleção de teclas de atalho úteis e truques que aumentam drasticamente a eficiência do trabalho'
 slug: "Windows のAtalho・Dica集"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "Dicas", "Atalhos"]
 draft: false
 image: "img.webp"

@@ -2,7 +2,7 @@
 title: "Nombres de Catalan : Pourquoi les parenthèses et les structures d'arbres donnent les mêmes quantités"
 description: "Une explication des nombres de Catalan, une séquence fascinante qui relie les séquences de parenthèses valides, les arbres binaires et la triangulation de polygones. Nous abordons également les méthodes de calcul par récursivité et programmation dynamique."
 slug: "catalan-numbers"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathématiques"

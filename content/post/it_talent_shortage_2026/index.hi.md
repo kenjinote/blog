@@ -1,7 +1,7 @@
 ---
 title: '【2026 की समस्या】क्या सच में आईटी प्रतिभा की कमी हो रही है? फील्ड की वास्तविकता'
 slug: "it-talent-shortage-2026"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

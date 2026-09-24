@@ -1,7 +1,7 @@
 ---
 title: 'Salesforce: चैटर पोस्ट और अटैचमेंट को पूरी तरह से हटाने का कमांड'
 slug: "Salesforceचैटर全消しकमांड"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "Chatter"]
 draft: false
 image: "img_1.webp"

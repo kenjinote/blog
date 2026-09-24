@@ -11,7 +11,7 @@ title: '【PQC】La amenaza de los ordenadores cuánticos y el panorama completo
 slug: "post-quantum-cryptography"
 tags: ["Criptografía", "PQC", "Seguridad", "Tecnología de próxima generación"]
 image: "eyecatch.jpg"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-05T22:09:22+09:00
 categories: ["math-cryptography-quantum"]
 description: 'La criptografía de clave pública enfrenta el riesgo de ser descifrada en el futuro debido a la aplicación práctica de los ordenadores cuánticos. Este artículo detalla el funcionamiento y la importancia de la ''Criptografía Postcuántica (PQC)'', una tecnología de seguridad de próxima generación que se está desarrollando para contrarrestar esta amenaza (el problema Y2Q).'
 ---

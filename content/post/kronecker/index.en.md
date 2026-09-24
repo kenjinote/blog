@@ -2,7 +2,7 @@
 title: 'Leopold Kronecker: The Life and Algebraic Contributions of the Mathematician Who Loved Integers'
 description: 'An overview of the life, conflicts with Cantor, and profound achievements of Leopold Kronecker, the 19th-century mathematician famous for the quote "God made the integers, all else is the work of man."'
 slug: "kronecker"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematics"

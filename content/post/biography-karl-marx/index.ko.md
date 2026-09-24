@@ -1,6 +1,6 @@
 ---
 title: "카를 마르크스: 자본주의의 모순을 공격하고 역사를 움직인 사상가"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["karl-marx", "history"]
 image: "eyecatch.jpg"

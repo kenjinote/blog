@@ -1,7 +1,7 @@
 ---
 title: 'Wie man Bildgröße und -platzierung im Hugo PaperMod-Theme mit CSS anpasst'
 slug: "PaperModのBildの配置変更"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "images/img.webp"

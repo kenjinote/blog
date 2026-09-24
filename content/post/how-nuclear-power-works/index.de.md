@@ -2,7 +2,7 @@
 title: "Wie Kernkraft funktioniert: von der Spaltungswärme zum Strom und warum nach dem Abschalten weiter gekühlt wird"
 description: "Kernenergie verständlich erklärt: Bindungsenergie, Kettenreaktion, verzögerte Neutronen, Druck- und Siedewasserreaktoren, Turbinen, Nachzerfallswärme und abgebrannter Brennstoff – mit Geschichte, Diagrammen und Rechenbeispielen."
 slug: "how-nuclear-power-works"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-24T10:00:00+09:00"
 image: "eyecatch.png"
 categories: ["technology", "physics"]
 tags: ["nuclear-power", "nuclear-fission", "energy", "engineering", "history"]

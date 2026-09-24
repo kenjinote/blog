@@ -2,7 +2,7 @@
 title: "Niels Henrik Abel : Le Génie Tragique qui a Nié la Formule de l'Équation Quintique"
 description: "Niels Henrik Abel, un brillant mathématicien norvégien. Cet article explore sa vie mouvementée et l'héritage monumental qu'il a laissé aux mathématiques modernes avant sa mort tragique à l'âge de 26 ans."
 slug: "abel"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Mathématiques", "Biographie"]
 tags: ["Abel", "Algèbre", "Histoire", "Mathématiques"]

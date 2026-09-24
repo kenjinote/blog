@@ -2,7 +2,7 @@
 title: "Yutaka Taniyama: Kehidupan dan Pencapaian Matematikawan Jenius yang Menantang Masalah Tak Terpecahkan"
 description: 'Penyelaman mendalam ke dalam kehidupan Yutaka Taniyama, matematikawan Jepang brilian yang dikenal dengan "Konjektur Taniyama-Shimura", dan dampak besarnya pada matematika modern.'
 slug: "taniyama-yutaka"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Yutaka Taniyama", "Matematika", "Teorema Terakhir Fermat", "Konjektur Taniyama-Shimura", "Kurva Eliptik", "Bentuk Modular"]

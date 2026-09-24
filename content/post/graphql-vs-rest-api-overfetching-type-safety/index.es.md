@@ -2,7 +2,7 @@
 title: "GraphQL vs REST API (Resolución de sobrebúsqueda y seguridad de tipos)"
 description: "Los límites de la API REST y el enfoque innovador de GraphQL para una recuperación de datos flexible y un desarrollo frontend con seguridad de tipos."
 slug: "graphql-vs-rest-api-overfetching-type-safety"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "backend"

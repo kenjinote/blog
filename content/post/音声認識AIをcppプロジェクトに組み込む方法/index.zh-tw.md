@@ -1,7 +1,7 @@
 ---
 title: '如何將語音辨識AI（Whisper）整合至C++專案'
 slug: "whisper-cpp-integration-guide"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

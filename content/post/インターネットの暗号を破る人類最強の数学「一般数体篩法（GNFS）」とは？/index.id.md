@@ -1,7 +1,7 @@
 ---
 title: 'Penjelasan Sederhana Matematika Terkuat Umat Manusia untuk Memecahkan Kriptografi: ''Saringan Medan Angka Umum (GNFS)'''
 slug: "インターネットのKriptografiを破る人類最強のMatematika「一般数体篩法（GNFS）」とは？"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-05T02:09:08+09:00
 tags: ["Matematika", "Kriptografi", "RSA", "GNFS"]
 draft: false
 image: "gnfs_two_worlds_1788542142485.webp"

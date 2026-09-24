@@ -2,7 +2,7 @@
 title: "네트워크 기술: UDP 기술 해설 - 속도를 추구하는 비연결형 통신"
 description: "온라인 게임이나 비디오 통화에서 지연 없이 통신할 수 있는 이유는 무엇일까요? '도달 보장'을 버리고 '압도적인 속도'를 얻은 UDP 프로토콜의 구조를 해설합니다."
 slug: "history-of-udp"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

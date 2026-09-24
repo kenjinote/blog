@@ -2,7 +2,7 @@
 title: "“P vs NP问题”全貌与计算复杂性类：千禧年大奖难题解析与编程意义"
 description: "深入探讨千禧年大奖难题之一的“P vs NP问题”，从计算复杂性类（P、NP、NP完全、NP困难）的基础，到最新研究动态，再到对编程与密码学理论的影响，进行全面而深入的解析。"
 slug: p-vs-np-problem
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
 categories: ["computer-science", "algorithms"]
 tags: ["complexity-theory", "p-vs-np", "np-complete", "millennium-prize", "python"]

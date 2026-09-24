@@ -2,7 +2,7 @@
 title: "René Descartes: Vater der modernen Philosophie und Begründer der analytischen Geometrie"
 description: "René Descartes ist berühmt für 'Ich denke, also bin ich'. Wir untersuchen sein außergewöhnliches Leben und die Geburt der analytischen Geometrie, die die Geschichte der Mathematik revolutionierte."
 slug: "descartes"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T18:50:00+09:00
 image: "eyecatch.jpg"
 categories:
   - "Mathematik"

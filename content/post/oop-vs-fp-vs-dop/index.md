@@ -2,7 +2,7 @@
 title: "オブジェクト指向 vs 関数型 vs データ指向：パラダイムの限界と融合"
 description: "プログラミングパラダイムの歴史と進化、OOP、FP、DOPのそれぞれの強みと限界を深掘りし、現代の開発における最適解である「パラダイムの融合」について徹底考察します。"
 slug: "oop-vs-fp-vs-dop"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:58:35+09:00"
 image: "eyecatch.jpg"
 categories: ["programming", "architecture", "software-engineering"]
 tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]

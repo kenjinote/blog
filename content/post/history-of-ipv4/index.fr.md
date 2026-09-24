@@ -2,7 +2,7 @@
 title: "L'adresse d'Internet : L'histoire d'IPv4 et le problème de son épuisement - Pourquoi 4,3 milliards d'adresses n'ont-elles pas suffi ?"
 description: "« L'adresse IP » est l'adresse attribuée à tous les appareils sur Internet. L'IPv4, pour lequel environ 4,3 milliards d'adresses ont été prévues, s'est épuisé et laisse place à la nouvelle génération IPv6. Nous expliquons son histoire et son mécanisme."
 slug: "history-of-ipv4"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

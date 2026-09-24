@@ -2,7 +2,7 @@
 title: "Web安全基础与最新动态：从XSS, CSRF到CORS, CSP"
 description: "保护Web应用免受威胁的安全对策。全面解析从经典的XSS和CSRF，到现代必备技术CORS、CSP和SameSite Cookie。"
 slug: "web-security-basics-cors-csp"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T17:10:00+09:00
 image: eyecatch.jpg
 categories:
   - "security"

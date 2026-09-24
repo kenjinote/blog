@@ -2,7 +2,7 @@
 title: "动态规划（DP）入门与著名问题（背包、斐波那契）"
 description: "算法的难关“动态规划（DP）”。以斐波那契数列和背包问题为例，通俗易懂地讲解记忆化搜索和自底向上方式的区别。"
 slug: "dynamic-programming-dp-introduction-knapsack-fibonacci"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-22T04:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "dynamic-programming", "dp", "knapsack", "optimization"]

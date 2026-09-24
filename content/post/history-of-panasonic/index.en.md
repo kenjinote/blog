@@ -2,7 +2,7 @@
 title: "History of Panasonic: A Spectacular Pivot from the King of Home Appliances to B2B and Automotive Battery Business"
 description: "The history of Panasonic, which started with Konosuke Matsushita's twin socket and transformed into an automotive battery manufacturer supporting Tesla."
 slug: "history-of-panasonic"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T01:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

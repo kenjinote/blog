@@ -1,7 +1,7 @@
 ---
 title: '量子コンピュータの原理と仕組み【完全網羅】ムーアの法則の限界から量子力学まで'
 slug: "quantum-computer-ultimate-guide"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-08T22:12:19+09:00"
 tags: ["量子コンピュータ", "量子力学", "アルゴリズム", "物理学"]
 categories: ["math-cryptography-quantum"]
 math: true

@@ -2,7 +2,7 @@
 title: "Die Theorie von B-Bäumen und Datenbankindizes (Warum DBs sich für den B-Baum entscheiden?)"
 description: "Wir befassen uns eingehend mit der Theorie, den Datenstrukturen und der Beziehung zu Festplatten-I/O von B-Bäumen (B-Tree) und B+-Bäumen (B+Tree), die das Fundament von Indizes in Datenbanken bilden, und erläutern anhand von mathematischen Analysen und Implementierungsbeispielen, warum RDBMS B-Bäume weiterhin als Standard für Indizes verwenden."
 slug: "b-tree-database-index-theory"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:45:54+09:00"
 image: "eyecatch.jpg"
 categories: ["computer-science", "database"]
 tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]

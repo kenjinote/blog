@@ -2,7 +2,7 @@
 title: "行列式の幾何学的意味：ただの計算式ではない、「空間の体積の拡大率」と「向きの反転」"
 description: "行列式は単なる計算式ではなく、線形変換による空間の体積の拡大率と向きの反転を表す重要な幾何学的指標です。本記事では、その直感的な意味を豊富な図解と数式で詳しく解説します。"
 slug: "geometric-meaning-of-determinant"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "mathematics"

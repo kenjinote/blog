@@ -2,7 +2,7 @@
 title: "Euclid: The Father of Geometry and His Great Legacy"
 description: "An in-depth look at the life of the ancient Greek mathematician Euclid, the impact of his masterpiece 'Elements' on later generations, and his mathematical achievements such as the Euclidean algorithm."
 slug: "euclid"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T18:40:00+09:00
 image: "eyecatch.jpg"
 categories: ["Mathematics", "Biography"]
 tags: ["Euclid", "Geometry", "History of Mathematics", "Ancient Greece", "Elements", "Euclidean algorithm"]

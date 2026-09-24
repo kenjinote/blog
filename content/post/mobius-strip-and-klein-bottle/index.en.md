@@ -2,7 +2,7 @@
 title: "The Möbius Strip and Klein Bottle: A Fascinating World of Surfaces with No 'Inside' or 'Outside'"
 description: "An in-depth explanation of non-orientable surfaces in topology, specifically the Möbius strip and the Klein bottle, using mathematical formulas and diagrams."
 slug: "mobius-strip-and-klein-bottle"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T15:15:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["topology", "geometry", "mobius-strip", "klein-bottle"]

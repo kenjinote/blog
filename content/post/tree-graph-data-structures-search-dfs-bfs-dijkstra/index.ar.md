@@ -2,7 +2,7 @@
 title: "استكشاف هياكل الشجرة والرسوم البيانية (DFS, BFS, خوارزمية ديكسترا)"
 description: "هياكل الشجرة والرسوم البيانية لتمثيل علاقات البيانات المعقدة. شرح شامل من بحث العمق أولاً (DFS)، بحث العرض أولاً (BFS) إلى مشكلة المسار الأقصر (خوارزمية ديكسترا)."
 slug: "tree-graph-data-structures-search-dfs-bfs-dijkstra"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-22T03:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "graph", "tree", "dfs", "bfs", "dijkstra"]

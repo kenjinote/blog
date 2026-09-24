@@ -2,7 +2,7 @@
 title: '紐康伯悖論：你能戰勝看透未來的超人嗎？'
 slug: 'newcombs-paradox'
 description: '「看得到裡面的10萬日圓箱子」與「看不到裡面的1億日圓或空箱子」。面對完美預測未來的超人所準備的遊戲，你會作何選擇？為您解說自由意志與決定論激烈衝突的現代哲學最大難題。'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T08:00:00+09:00'
 image: 'img/newcombs_paradox.jpg'
 math: true
 mermaid: true

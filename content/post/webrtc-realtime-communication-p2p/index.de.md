@@ -2,7 +2,7 @@
 title: "Die Hintergründe von WebRTC und Echtzeitkommunikation: P2P, STUN/TURN, Signalisierung"
 description: "Die Funktionsweise von WebRTC, das direkte Kommunikation zwischen Browsern ermöglicht. Wir analysieren detailliert die komplexen Hintergründe wie NAT-Traversal (STUN/TURN), Signalisierungsserver und das ICE-Protokoll."
 slug: "webrtc-realtime-communication-p2p"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T17:10:00+09:00
 image: eyecatch.jpg
 categories:
   - "network"

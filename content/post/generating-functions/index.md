@@ -2,7 +2,7 @@
 title: "母関数：数列を「関数」にすると何がうれしい？"
 description: "コインの支払い方や組み合わせの数を、式の係数として数える方法を紹介。フィボナッチ数列にも応用できる母関数の魔法を解説します。"
 slug: "generating-functions"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

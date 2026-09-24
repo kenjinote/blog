@@ -1,7 +1,7 @@
 ---
 title: "Nouvelle route, et pourtant les embouteillages empirent ? Le paradoxe de Braess"
 description: "Un étrange paradoxe de la théorie des réseaux où la construction d'une nouvelle rocade pour fluidifier le trafic finit par rallonger le temps de trajet de tout le monde."
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "braess-paradox"
 image: "img/braess_paradox.jpg"

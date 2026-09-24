@@ -2,7 +2,7 @@
 title: "Open Source Strikes Back: History of Android - How the World's Largest Mobile OS was Born"
 description: "To counter the introduction of the iPhone, Google formed the 'Open Handset Alliance'. We explain how the shift in business model to provide the OS for free changed smartphones around the world."
 slug: "history-of-android"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

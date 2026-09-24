@@ -2,7 +2,7 @@
 title: "Cara kerja pembangkit listrik fusi: dari reaksi bintang hingga listrik di jaringan"
 description: "Memahami reaksi deuterium–tritium, pengungkungan plasma, tokamak, stellarator, laser, neraca energi, siklus bahan bakar, serta tantangan material dan pemeliharaan."
 slug: "how-fusion-power-works"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-24T10:00:00+09:00"
 image: "eyecatch.png"
 categories: ["technology", "physics"]
 tags: ["nuclear-fusion", "energy", "plasma", "engineering", "history"]

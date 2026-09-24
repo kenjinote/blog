@@ -1,7 +1,7 @@
 ---
 title: 'Cara Menggunakan yt-dlp: Unduh dan Simpan Video/Audio YouTube'
 slug: "yt-dlp.exe による YouTube VideoのUnduh方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-09-03T14:09:26+09:00
 tags: ["YouTube", "Unduh"]
 draft: false
 image: "img_1.webp"

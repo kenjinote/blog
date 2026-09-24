@@ -2,7 +2,7 @@
 title: "Les 3 piliers de la programmation orientée objet (POO) et les principes SOLID : de l'histoire aux méthodes de conception avancées"
 description: "Un guide complet couvrant le contexte historique de la programmation orientée objet, ses 3 éléments principaux (encapsulation, héritage, polymorphisme) et les méthodes d'application approfondies des principes SOLID."
 slug: "object-oriented-programming-oop-solid-principles"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T14:51:08+09:00"
 image: "eyecatch.jpg"
 categories:
   - "computer-science"

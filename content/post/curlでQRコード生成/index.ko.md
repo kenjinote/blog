@@ -8,7 +8,7 @@
 
 title: 'curl 명령을 사용하여 명령 프롬프트에서 QR 코드를 생성하는 방법'
 slug: "curlでQR 코드生成"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-04-16T00:42:27+09:00
 tags: ["QR 코드", "curl", "명령 프롬프트"]
 draft: false
 image: "img.webp"

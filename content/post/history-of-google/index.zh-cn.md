@@ -2,7 +2,7 @@
 title: "谷歌的历史：从搜索引擎到“人工智能优先”企业的演进"
 description: "从PageRank到Transformer的谷歌历史"
 slug: "history-of-google"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T00:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

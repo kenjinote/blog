@@ -2,7 +2,7 @@
 title: 'Paradoks Simpson: Menang di Bagian, Namun Kalah Secara Keseluruhan, Fenomena yang Membingungkan'
 slug: 'simpsons-paradox'
 description: 'Meskipun "tingkat kelulusan" menang di masing-masing departemen, namun ketika "total tingkat kelulusan" seluruh perusahaan dihitung, hasilnya berbalik dan malah kalah!? Kami akan menjelaskan dengan mudah tentang "Paradoks Simpson", sebuah jebakan mengerikan di mana data statistik menipu kita.'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T07:00:00+09:00'
 image: 'img/simpsons_paradox.jpg'
 math: true
 mermaid: true

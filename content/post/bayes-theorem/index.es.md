@@ -2,7 +2,7 @@
 title: "Teorema de Bayes: Actualizando probabilidades con 'Nueva Evidencia', el núcleo de la IA y la estadística"
 description: "Una explicación profunda de cómo el Teorema de Bayes actualiza las probabilidades basándose en nueva evidencia, sus fundamentos matemáticos y sus aplicaciones en IA y aprendizaje automático."
 slug: "bayes-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matemáticas"

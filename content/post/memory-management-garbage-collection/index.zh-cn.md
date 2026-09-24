@@ -2,7 +2,7 @@
 title: "内存管理与垃圾回收：从 C、Java、Rust 学习内存的真相"
 description: "从编程中的内存管理基础，到 C 语言的手动管理、Java 的垃圾回收，再到 Rust 的所有权模型，进行深度对比与解析。"
 slug: "memory-management-garbage-collection"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
 categories: ["programming", "computer-science", "software-engineering"]
 tags: ["memory-management", "c-language", "java", "rust", "garbage-collection"]

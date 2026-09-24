@@ -1,7 +1,7 @@
 ---
 title: '在IntelliJ IDEA中创建插入当前日期快捷键的方法'
 slug: "IntelliJ IDEAで日期を貼り付ける命令を追加する"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]
 draft: false
 image: "images/IntelliJ_logo.webp"

@@ -2,7 +2,7 @@
 title: "零信任网络架构（摆脱边界防御）"
 description: "从Google的BeyondCorp中学习零信任架构的概念和实现方法。"
 slug: "zero-trust-network-architecture-beyond-corp"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

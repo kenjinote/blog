@@ -1,7 +1,7 @@
 ---
 title: 'Explication simple : Comment appliquer une mosaïque sur une zone spécifique d''une image avec paint.net'
 slug: "paint.netでImageの特定個所にモザイクをかける方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2023-04-11T16:33:10+09:00
 tags: ["paint.net", "bordure", "image"]
 draft: false
 image: "img.webp"

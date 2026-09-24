@@ -1,7 +1,7 @@
 ---
 title: "Teman Anda Memiliki Lebih Banyak Teman Daripada Anda: Paradoks Persahabatan"
 description: "Tidak perlu khawatir jika Anda merasa 'Apakah saya memiliki sedikit teman?'. Itu adalah sifat jaringan yang terbukti secara matematis."
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "friendship-paradox"
 image: "img/friendship_paradox.jpg"

@@ -2,7 +2,7 @@
 title: "La Naissance de la Géométrie Non Euclidienne - La Découverte de l'« Espace Courbe » et le Chemin vers la Théorie de la Relativité"
 description: "De la remise en question du postulat des parallèles d'Euclide à l'établissement de la géométrie non euclidienne par Gauss, Bolyai, Lobatchevski et Riemann, jusqu'à la théorie de la relativité générale d'Einstein : une explication de l'histoire grandiose des mathématiques et de la physique."
 slug: "non-euclidean-geometry"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "physics"]
 tags: ["Géométrie", "Relativité", "Histoire des Sciences", "Mathématiques"]

@@ -1,6 +1,5 @@
 ---
 title: "A Verdade sobre o Bug do Milênio e o Drama da Depuração: A batalha dos programadores anônimos que salvaram o mundo"
-date: "2026-09-24T16:08:36+09:00"
 description: "No final de 1999, o mundo entrou em pânico por causa do \"Bug do Milênio\" Y2K. Foi apenas histeria da mídia? Não, houve um intenso drama de depuração, com programadores lutando contra códigos dia e noite para evitar o colapso dos sistemas globais. Conheça a verdade."
 slug: "history-y2k-bug"
 categories: ["history"]

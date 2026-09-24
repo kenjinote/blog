@@ -2,7 +2,7 @@
 title: "Louis Mordell : Un Géant de la Théorie des Nombres et sa Trajectoire"
 description: "Une explication détaillée de la vie et des contributions mathématiques de Louis Mordell, connu pour ses travaux pionniers sur les équations diophantiennes, les courbes elliptiques et la « Conjecture de Mordell »."
 slug: "mordell"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T20:10:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathématiques", "biographie"]
 tags: ["théorie des nombres", "Mordell", "courbes elliptiques", "équations diophantiennes"]

@@ -2,7 +2,7 @@
 title: "Eulersche Identität (Euler's Identity) - Die \"kostbarste Formel der Menschheit\", die 5 verschiedene mathematische Konstanten verbindet"
 description: "Eine tiefe Erklärung des Hintergrunds und der Bedeutung der Eulerschen Identität, die als die schönste in der Geschichte der Mathematik gilt."
 slug: "eulers-identity"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["Euler", "Mathematik", "Wissenschaft"]

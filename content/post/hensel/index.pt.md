@@ -2,7 +2,7 @@
 title: "Kurt Hensel: Descobridor dos números p-ádicos e seu legado matemático"
 description: "Um olhar aprofundado sobre a vida do matemático alemão Kurt Hensel, sua descoberta dos números p-ádicos que revolucionou a teoria dos números moderna, e o Lema de Hensel."
 slug: "hensel"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
 categories: ["matemática", "biografia"]
 tags: ["Kurt Hensel", "números p-ádicos", "teoria algébrica dos números", "história da matemática"]

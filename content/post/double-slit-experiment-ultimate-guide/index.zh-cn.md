@@ -1,7 +1,7 @@
 ---
 title: '【完全覆盖】深入浅出彻底分析量子力学最大的谜团“双缝实验”'
 slug: "double-slit-experiment-ultimate-guide"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-08T01:00:00+09:00"
 tags: ["物理学", "量子力学", "双缝实验", "薛定谔方程"]
 categories: ["physics-science"]
 math: true

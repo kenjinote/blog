@@ -1,6 +1,6 @@
 ---
 title: "Laozi: The Father of Daoism, His Enigmatic Life, and the Depths of the Daodejing"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:53:32+09:00
 categories: ["biography"]
 tags: ["laozi", "history"]
 image: "eyecatch.jpg"

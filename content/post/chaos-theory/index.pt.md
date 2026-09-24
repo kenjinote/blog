@@ -2,7 +2,7 @@
 title: "Teoria do Caos e o Efeito Borboleta - Como Pequenas Diferenças nos Valores Iniciais Tornam o Futuro Imprevisível"
 description: "Um guia abrangente sobre a teoria do caos e o efeito borboleta, sistemas dinâmicos não lineares com dependência sensível às condições iniciais, desde seu contexto histórico até fundamentos matemáticos, fractais e aplicações no mundo real."
 slug: "chaos-theory"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
 categories: ["ciência", "matemática"]
 tags:

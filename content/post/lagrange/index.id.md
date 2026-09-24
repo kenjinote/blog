@@ -2,7 +2,7 @@
 title: "Joseph-Louis Lagrange: Bapak Mekanika Analitik dan Raksasa Fisika Matematika"
 description: "Penjelasan rinci tentang kehidupan matematikawan dan fisikawan abad ke-18 Joseph-Louis Lagrange, dan pencapaian besarnya dalam mekanika analitik, kalkulus variasi, dan teori bilangan."
 slug: "lagrange"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matematika"

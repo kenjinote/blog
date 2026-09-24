@@ -2,7 +2,7 @@
 title: "Technologie Réseau : Explication Technique de HTTPS - Le Mécanisme de Chiffrement et de l'Infrastructure à Clés Publiques (PKI)"
 description: "C'est grâce à « HTTPS » que nous pouvons faire des achats en ligne en toute sécurité. Nous expliquons la technologie de chiffrement qui empêche les écoutes et les falsifications, ainsi que les traitements mathématiques complexes que SSL/TLS effectuent en arrière-plan."
 slug: "history-of-https"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

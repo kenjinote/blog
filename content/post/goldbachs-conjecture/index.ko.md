@@ -2,7 +2,7 @@
 title: "골드바흐의 추측 - 4 이상의 모든 짝수는 두 소수의 합으로 표현될 수 있을까?"
 description: "수학의 미해결 난제 중에서도 특히 유명한 '골드바흐의 추측'에 대해, 그 역사와 의미, 그리고 현대 수학에서의 위치를 자세히 설명합니다."
 slug: "goldbachs-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "unsolved-problems"]
 tags:

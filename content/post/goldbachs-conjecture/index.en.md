@@ -2,7 +2,7 @@
 title: "Goldbach's Conjecture - Can every even number greater than 2 be expressed as the sum of two primes?"
 description: "A detailed explanation of 'Goldbach's Conjecture', one of the most famous unsolved problems in mathematics, covering its history, meaning, and significance in modern mathematics."
 slug: "goldbachs-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "unsolved-problems"]
 tags:

@@ -1,6 +1,5 @@
 ---
 title: "La naissance de la « souris » et Douglas Engelbart : La trajectoire d'un pionnier qui a redéfini l'interaction homme-machine"
-date: "2026-09-24T16:08:36+09:00"
 description: "Comment la « souris », indispensable à l'utilisation actuelle des ordinateurs, est-elle née ? Découvrez l'histoire épique de la pensée de Douglas Engelbart, de « l'Amplification de l'intellect humain (Augmenting Human Intellect) » jusqu'à la « Mother of All Demos » (Mère de toutes les démos) de 1968."
 slug: "history-douglas-engelbart-mouse"
 categories: ["history"]

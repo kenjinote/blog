@@ -2,7 +2,7 @@
 title: "Comunicación de próxima generación: Mecanismo y características del 5G - El futuro creado por la «ultravelocidad, latencia ultrabaja y conexiones múltiples simultáneas»"
 description: "El «5G», el sistema de comunicación móvil de 5ª generación del que se espera que sirva de infraestructura no solo para smartphones, sino también para la conducción autónoma y la telemedicina. Explicamos las tecnologías clave que lo hacen posible, como las ondas milimétricas, el beamforming y el edge computing."
 slug: "network-5g"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

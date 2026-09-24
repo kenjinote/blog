@@ -2,7 +2,7 @@
 title: 'Aquiles y la tortuga: ¿No puede alcanzarla o sí? La paradoja del "infinito" desde la antigua Grecia'
 slug: 'achilles-and-the-tortoise'
 description: '¿El veloz héroe Aquiles nunca podrá alcanzar a la lenta tortuga? Esta pregunta, la más famosa entre las paradojas de Zenón, ha desconcertado a filósofos y matemáticos durante más de 2000 años. Desentrañamos matemáticamente el truco de esta lógica utilizando el concepto de suma de series infinitas y límites.'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T01:00:00+09:00'
 image: 'img/achilles.jpg'
 math: true
 mermaid: true

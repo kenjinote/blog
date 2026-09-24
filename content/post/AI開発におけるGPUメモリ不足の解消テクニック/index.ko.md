@@ -1,7 +1,7 @@
 ---
 title: 'AI 개발에서의 GPU 메모리 부족 해소 테크닉 (CPU 오프로딩 등)'
 slug: "ai-gpu-vram-optimization-cpu-offloading"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T01:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

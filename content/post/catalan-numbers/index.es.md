@@ -2,7 +2,7 @@
 title: "Números de Catalan: Por qué los paréntesis y las estructuras de árbol dan las mismas cantidades"
 description: "Una explicación de los números de Catalan, una secuencia fascinante que conecta secuencias de paréntesis válidas, árboles binarios y triangulación de polígonos. También cubrimos métodos de cálculo mediante recursión y programación dinámica."
 slug: "catalan-numbers"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "matemáticas"

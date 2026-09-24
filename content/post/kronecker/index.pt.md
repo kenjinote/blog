@@ -2,7 +2,7 @@
 title: 'Leopold Kronecker: A Vida e as Contribuições Algébricas do Matemático que Amava os Números Inteiros'
 description: 'Uma visão geral da vida, dos conflitos com Cantor e das profundas conquistas de Leopold Kronecker, o grande matemático do século XIX famoso pela citação "Deus fez os números inteiros, o resto é obra do homem."'
 slug: "kronecker"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemática"

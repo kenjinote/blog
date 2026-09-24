@@ -1,6 +1,6 @@
 ---
 title: "マーク・ザッカーバーグ：世界を繋いだハッカーの哲学と未来"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["mark-zuckerberg", "history"]
 image: "eyecatch.jpg"

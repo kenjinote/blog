@@ -2,7 +2,7 @@
 title: "유클리드 호제법: 최대공약수를 빠르게 구하는 기원전부터 이어진 인류 최고(最古)의 알고리즘"
 description: "최대공약수(GCD)를 계산하는 유클리드 호제법에 대해 그 원리부터 구현, 계산 복잡도, 라메의 정리, 확장 유클리드 호제법, RSA 암호에의 응용까지 철저히 해설합니다."
 slug: "euclidean-algorithm"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]

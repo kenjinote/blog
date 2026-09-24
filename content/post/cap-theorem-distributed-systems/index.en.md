@@ -2,7 +2,7 @@
 title: "CAP Theorem and Distributed Systems: The Essential Dilemma of Distributed Databases"
 description: "An in-depth look at the CAP theorem, the most important principle in distributed systems, from its definition and proof to its extension to the PACELC theorem and implementation in actual distributed databases."
 slug: "cap-theorem-distributed-systems"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T00:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "distributed-systems"

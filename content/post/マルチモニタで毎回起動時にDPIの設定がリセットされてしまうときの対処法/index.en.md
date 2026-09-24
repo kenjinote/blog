@@ -1,7 +1,7 @@
 ---
 title: '[Windows 11] How to Fix DPI Settings Resetting on Startup with Multi-Monitors'
 slug: "Multi-Monitorで毎回起動時にDPIの設定がリセットされてしまうときの対処法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-04-29T19:42:20+09:00
 tags: ["Multi-monitor", "DPI", "Control Panel"]
 draft: false
 image: "img.webp"

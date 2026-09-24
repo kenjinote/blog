@@ -1,7 +1,7 @@
 ---
 title: "C++で実装する高速な素数判定アルゴリズム（Miller-Rabin法など）"
 slug: "cpp-fast-prime-testing-miller-rabin"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T14:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

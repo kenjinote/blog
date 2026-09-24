@@ -2,7 +2,7 @@
 title: "Gilles Personne de Roberval : Pionnier des indivisibles et de la géométrie cinématique"
 description: "Gilles Personne de Roberval fut l'un des plus grands mathématiciens français du 17ème siècle. Actif à l'aube du calcul infinitésimal, nous explorons en profondeur sa vie et ses réalisations, y compris la méthode des indivisibles, le calcul de l'aire de la cycloïde, les tangentes cinématiques et l'invention de la 'balance de Roberval'."
 slug: "roberval"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathématiques"

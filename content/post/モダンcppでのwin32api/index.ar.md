@@ -1,7 +1,7 @@
 ---
 title: 'التعامل الآمن والحديث مع واجهة برمجة تطبيقات Windows (Win32) في C++ الحديثة'
 slug: "modern-cpp-win32-api-safe-handling"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T06:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

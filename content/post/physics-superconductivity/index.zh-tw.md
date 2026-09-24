@@ -1,6 +1,6 @@
 ---
 title: "物理學: 超導的機制 - 邁斯納效應與磁浮列車"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T04:01:41+09:00
 image: "eyecatch.jpg"
 categories: ["physics", "science"]
 tags: ["superconductivity", "meissner-effect", "maglev"]

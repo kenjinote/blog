@@ -1,6 +1,6 @@
 ---
 title: "建立人際關係原則的男人：戴爾·卡內基的一生與哲學"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T20:59:58+09:00
 categories: ["biography"]
 tags: ["dale-carnegie", "history"]
 image: "eyecatch.jpg"

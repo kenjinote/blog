@@ -1,7 +1,7 @@
 ---
 title: '[Hugo Beginner''s Guide] From Installation on Windows to Previewing in a Local Environment'
 slug: "【HUGO】ローカルで環境で表示プレビュー"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"

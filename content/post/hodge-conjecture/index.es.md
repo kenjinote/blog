@@ -2,7 +2,7 @@
 title: "Conjetura de Hodge (Hodge Conjecture) - El problema del milenio que conecta la geometría algebraica y la topología"
 description: "Explicación exhaustiva sobre la Conjetura de Hodge, uno de los problemas del Premio del Milenio del Instituto Clay de Matemáticas, desde su papel como puente entre la geometría algebraica y la topología hasta su profundo trasfondo matemático."
 slug: "hodge-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]
 tags: ["Problemas del Premio del Milenio", "Topología", "Geometría Algebraica", "Conjetura de Hodge"]

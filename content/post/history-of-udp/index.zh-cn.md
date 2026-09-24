@@ -2,7 +2,7 @@
 title: "网络技术：UDP技术解说 - 追求速度的无连接通信"
 description: "为什么在线游戏和视频通话能够实现无延迟通信？本文将为您解说放弃“送达保证”以换取“压倒性速度”的UDP协议的运行机制。"
 slug: "history-of-udp"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

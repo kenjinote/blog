@@ -2,7 +2,7 @@
 title: "Eigenvalues and Eigenvectors: Special Vectors That Don't Change Direction Under Matrix Transformations and Their Applications"
 description: "A detailed explanation of eigenvalues and eigenvectors, one of the most important concepts in linear algebra, from their geometric meaning and specific calculation methods to applications in machine learning and physics. We aim for an intuitive understanding with Python implementation examples."
 slug: "eigenvalues-and-eigenvectors"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["linear-algebra", "eigenvalue", "eigenvector", "math", "machine-learning", "python", "data-science"]

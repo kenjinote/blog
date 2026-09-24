@@ -2,7 +2,7 @@
 title: "Web Vitals 与前端性能优化（LCP, FID, CLS 的改进）"
 description: "Core Web Vitals 的各项指标详情，以及用于改进这些指标的具体前端实现方法。"
 slug: "web-vitals-frontend-performance-optimization-lcp-fid-cls"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "frontend"

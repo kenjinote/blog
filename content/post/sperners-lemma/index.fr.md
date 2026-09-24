@@ -2,7 +2,7 @@
 title: "Le Lemme de Sperner : Du coloriage de triangles aux preuves d'existence"
 description: "Explication de la façon dont le coloriage des sommets selon les règles de frontière garantit l'apparition de petits triangles à 3 couleurs. Cela sert de pont vers les théorèmes de point fixe."
 slug: "sperners-lemma"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathématiques"]
 tags: ["topologie", "combinatoire", "théorème-du-point-fixe"]

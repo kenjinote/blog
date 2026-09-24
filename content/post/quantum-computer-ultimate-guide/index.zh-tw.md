@@ -1,7 +1,7 @@
 ---
 title: '量子電腦的原理與機制【完全指南】從摩爾定律的極限到量子力學'
 slug: "quantum-computer-ultimate-guide"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-09T08:00:06+09:00"
 tags: ["Quantum Computer", "Quantum Mechanics", "Algorithm", "Physics"]
 categories: ["math-cryptography-quantum"]
 math: true

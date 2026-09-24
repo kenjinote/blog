@@ -2,7 +2,7 @@
 title: '巴拿赫-塔斯基悖论：把一个球体切碎，能变成两个同样大小的球体？'
 slug: 'banach-tarski-paradox'
 description: '把一粒豌豆切碎后像拼图一样重新拼合，竟然能变成和太阳一样大？本文将为你解说现代数学中由“选择公理”引发的，最违背直觉但逻辑上却完全正确的“巴拿赫-塔斯基悖论”的奇妙世界。'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T02:00:00+09:00'
 image: 'img/banach_tarski.jpg'
 math: true
 mermaid: true

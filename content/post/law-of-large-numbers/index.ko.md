@@ -2,7 +2,7 @@
 title: "대수의 법칙（Law of Large Numbers） - 카지노가 항상 돈을 버는 이유와 확률이 수렴하는 메커니즘"
 description: "확률론에서 매우 중요한 정리인 '대수의 법칙'에 대해 해설. 카지노의 수익 구조부터 수학적으로 엄밀한 정의(약법칙 및 강법칙)까지, 도해와 Python 코드를 곁들여 깊이 있게 파헤칩니다."
 slug: "law-of-large-numbers"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14
 image: "eyecatch.jpg"
 categories: ["수학", "데이터-과학", "도박"]
 tags:

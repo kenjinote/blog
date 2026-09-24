@@ -2,7 +2,7 @@
 title: "Manajemen Memori dan Pengumpulan Sampah: Kebenaran Memori dari C, Java, dan Rust"
 description: "Mulai dari dasar manajemen memori dalam pemrograman, manajemen manual bahasa C, pengumpulan sampah Java, hingga model kepemilikan Rust, kami akan membandingkan dan menjelaskannya pada tingkat yang dalam."
 slug: "memory-management-garbage-collection"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
 categories: ["programming", "computer-science", "software-engineering"]
 tags: ["memory-management", "c-language", "java", "rust", "garbage-collection"]

@@ -2,7 +2,7 @@
 title: "Teknologi AI Board Game: Aturan Dasar Shogi dan Strategi Utama - Penjelasan Taktik Ibisha dan Furibisha"
 description: "Game pemikiran pamungkas \"Shogi\" yang dimainkan di atas papan 81 kotak. Kami akan menjelaskan dengan cara yang mudah dipahami, mulai dari ulasan aturan dasar untuk pemula, hingga konsep dua strategi utama, \"Ibisha\" dan \"Furibisha\", yang juga digunakan oleh para profesional."
 slug: "game-shogi-rules"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

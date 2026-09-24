@@ -2,7 +2,7 @@
 title: "John Wallis: The Pioneer of Calculus Who Created the Infinity Symbol"
 description: "John Wallis, a leading 17th-century English mathematician. We explore the life and achievements of the man who invented the infinity symbol '∞' and laid the foundations of calculus."
 slug: "wallis"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

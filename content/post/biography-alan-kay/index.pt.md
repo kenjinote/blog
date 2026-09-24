@@ -1,6 +1,6 @@
 ---
 title: "A melhor forma de prever o futuro é inventá-lo: a trajetória e a filosofia de Alan Kay"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["alan-kay", "history"]
 image: "eyecatch.jpg"

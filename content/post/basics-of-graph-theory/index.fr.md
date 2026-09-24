@@ -2,7 +2,7 @@
 title: "Bases de la Théorie des Graphes : Représenter les Réseaux avec des Points et des Lignes, un Outil Indispensable dans la Société Moderne"
 description: "Un guide complet sur les bases de la théorie des graphes. Des ponts de Königsberg à l'algorithme de Dijkstra, en passant par les implémentations en Python et les applications modernes d'apprentissage automatique, explorons les mathématiques des réseaux."
 slug: "basics-of-graph-theory"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathématiques"

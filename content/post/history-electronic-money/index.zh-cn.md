@@ -2,7 +2,7 @@
 title: "金融与密码学：电子货币的历史 - 货币的数字化与密码学的演进"
 description: "从“实体的硬币和纸币”被“数字数据”所取代。本文将梳理从大卫·乔姆的早期实验，到Suica的诞生，再到加密资产的电子货币演进史。"
 slug: "history-electronic-money"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

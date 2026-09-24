@@ -1,7 +1,7 @@
 ---
 title: "Neue Straße gebaut, aber der Stau wird schlimmer? Das Braess-Paradoxon"
 description: "Ein seltsames Paradoxon der Netzwerktheorie, bei dem der Bau einer neuen Umgehungsstraße zur Lösung von Verkehrsstaus paradoxerweise dazu führt, dass sich die Pendelzeit für alle verlängert."
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "braess-paradox"
 image: "img/braess_paradox.jpg"

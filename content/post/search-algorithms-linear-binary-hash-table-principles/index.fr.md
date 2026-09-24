@@ -2,7 +2,7 @@
 title: "Algorithmes de recherche (Principes de la recherche linéaire, dichotomique et de la table de hachage)"
 description: "Algorithmes de recherche pour trouver une valeur cible dans des données. Nous expliquons les bases de la recherche linéaire et dichotomique, jusqu'aux principes de la table de hachage pour des recherches ultra-rapides."
 slug: "search-algorithms-linear-binary-hash-table-principles"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-22T02:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["computer-science"]
 tags: ["algorithms", "search", "binary-search", "hash-table", "data-structures"]

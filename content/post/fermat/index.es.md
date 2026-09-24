@@ -2,7 +2,7 @@
 title: "Pierre de Fermat: El \"Príncipe de los aficionados\" que escribió romance en los márgenes"
 description: "Una explicación detallada de la vida y los extraordinarios logros matemáticos (Último teorema de Fermat, Pequeño teorema, cálculo temprano, etc.) de Pierre de Fermat, un juez francés del siglo XVII que dejó una huella inmortal en la historia de las matemáticas."
 slug: "fermat"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
 categories: ["matemáticas", "biografía"]
 tags: ["Fermat", "Historia de las matemáticas", "Último teorema de Fermat", "Teoría de números", "Teoría de la probabilidad"]

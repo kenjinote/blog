@@ -2,7 +2,7 @@
 title: "從擁有到使用：雲端運算的運作原理 - IT 基礎設施的重大轉變"
 description: "Amazon Web Services (AWS) 和 Google Cloud (GCP) 等雲端運算如何改變企業與個人的 IT。我們將解說 IaaS、PaaS、SaaS 的差異以及虛擬化技術的基礎。"
 slug: "technology-cloud-computing"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

@@ -2,7 +2,7 @@
 title: "Lei dos Grandes Números - Por que os cassinos sempre ganham e como as probabilidades convergem"
 description: "Uma explicação da Lei dos Grandes Números, um teorema crucial na teoria das probabilidades. Aprofundamos nas estruturas de lucro dos cassinos e em definições matemáticas rigorosas (leis fraca e forte), com diagramas e código em Python."
 slug: "law-of-large-numbers"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14
 image: "eyecatch.jpg"
 categories: ["matematica", "ciencia-de-dados", "jogos-de-azar"]
 tags:

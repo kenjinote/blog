@@ -9,7 +9,7 @@
 
 title: 'Python으로 이미지를 다운로드하고 임시 저장 및 표시하는 샘플 코드'
 slug: "Pythonコード片"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-02-24T18:21:14+09:00
 tags: ["Python", "샘플 코드"]
 draft: false
 image: "img.webp"

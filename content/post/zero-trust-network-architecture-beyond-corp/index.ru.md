@@ -2,7 +2,7 @@
 title: "Архитектура сети нулевого доверия (отход от защиты периметра)"
 description: "Изучение концепции и методов реализации архитектуры нулевого доверия на примере Google BeyondCorp."
 slug: "zero-trust-network-architecture-beyond-corp"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "security"

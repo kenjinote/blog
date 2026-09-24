@@ -1,7 +1,7 @@
 ---
 title: 'Focus on Work and Study! A Collection of Recommended Stylish Cafe Music and BGM'
 slug: "CafeMusic"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-08T08:39:03+09:00
 tags: ["Cafe", "Music"]
 draft: false
 image: "images/img.webp"

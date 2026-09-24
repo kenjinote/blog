@@ -2,7 +2,7 @@
 title: "オイラーの多面体定理：V - E + F = 2 が示す、形を変えても変わらないトポロジーの魔法"
 description: "オイラーの多面体定理（V - E + F = 2）の美しさと、それが導くトポロジーの世界について詳しく解説します。正多面体から次元を超えたオイラー標数まで、不変量の魅力を探求しましょう。"
 slug: "eulers-polyhedron-formula"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

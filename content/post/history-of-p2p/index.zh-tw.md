@@ -2,7 +2,7 @@
 title: "網路技術: P2P(對等網路)的技術解說 - 分散式系統的力量"
 description: "不依賴特定伺服器，個別電腦進行對等通訊的「P2P」技術。我們將深入解說從其基礎理論，到與現代區塊鏈息息相關的設計思想。"
 slug: "history-of-p2p"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

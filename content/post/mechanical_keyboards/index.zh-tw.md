@@ -1,7 +1,7 @@
 ---
 title: '適合長時間寫程式！推薦給工程師的 5 款機械式鍵盤'
 slug: "engineer-mechanical-keyboard-recommendations"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

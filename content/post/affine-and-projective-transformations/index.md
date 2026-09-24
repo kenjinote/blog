@@ -2,7 +2,7 @@
 title: 'アフィン変換と射影変換：CGや遠近法を支える線形代数と幾何の融合'
 description: 'アフィン変換と射影変換の数学的基礎から、コンピュータグラフィックスや画像処理での応用まで、同次座標系を用いた表現を交えて詳しく解説します。'
 slug: 'affine-and-projective-transformations'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-20T15:15:00+09:00'
 image: "eyecatch.jpg"
 categories:
   - 'mathematics'

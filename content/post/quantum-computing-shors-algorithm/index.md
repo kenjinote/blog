@@ -2,7 +2,7 @@
 title: "量子コンピュータの仕組みとショアのアルゴリズム：なぜ量子計算は暗号を壊せるのか？"
 description: "量子コンピュータの基礎から、RSA暗号の脅威となるショアのアルゴリズム（Shor's Algorithm）の数学的・量子力学的な仕組みまでを深掘り解説。Qiskitを用いた実装例や今後のポスト量子暗号の展望も交え、圧倒的な情報量で詳解します。"
 slug: "quantum-computing-shors-algorithm"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-21T02:35:46+09:00"
 image: "eyecatch.jpg"
 categories:
   - "technology"

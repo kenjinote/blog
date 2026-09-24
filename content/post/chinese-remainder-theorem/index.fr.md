@@ -2,7 +2,7 @@
 title: "Théorème des restes chinois (Chinese Remainder Theorem) - Du calcul antique au grand théorème soutenant la cryptographie RSA moderne"
 description: "Nous expliquons en détail le théorème des restes chinois (TRC), qui trouve son origine dans les textes de calcul de la Chine antique, depuis ses principes mathématiques jusqu'à ses applications importantes dans la cryptographie à clé publique moderne (cryptographie RSA)."
 slug: "chinese-remainder-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "cryptography"]
 tags:

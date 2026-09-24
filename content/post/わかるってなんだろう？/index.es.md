@@ -5,7 +5,7 @@
 
 title: '¿Qué significa ''entender''? Sobre la ambigüedad de la comprensión y su valor'
 slug: "わかるってなんだろう？"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-24T02:38:18+09:00
 tags: ["Miscelánea"]
 draft: false
 image: "img.webp"

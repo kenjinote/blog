@@ -2,7 +2,7 @@
 title: "Tecnologia Financeira e Criptografia: Explicação da Tecnologia Blockchain - A Tecnologia de Livro-Razão Distribuído que Criou o Bitcoin"
 description: "A magia de poder emitir e enviar dinheiro sem um administrador. Desvendaremos os fundamentos do blockchain criado por Satoshi Nakamoto: funções hash, PoW (Prova de Trabalho) e o mecanismo de livro-razão distribuído."
 slug: "technology-blockchain"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

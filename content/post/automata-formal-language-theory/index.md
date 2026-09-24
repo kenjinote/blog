@@ -2,7 +2,7 @@
 title: "オートマトンと形式言語理論：正規表現の裏側とチョムスキー階層"
 description: "正規表現やプログラミング言語のコンパイラの背後にある「オートマトン」と「形式言語理論」について、チョムスキー階層を交えながら深く掘り下げます。"
 slug: automata-formal-language-theory
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
 categories:
   - computer-science

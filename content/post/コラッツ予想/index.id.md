@@ -1,7 +1,7 @@
 ---
 title: 'Apa Itu Konjektur Collatz? Menguji Masalah Matematika Tak Terpecahkan di Mana Angka Berapa Pun Berakhir Menjadi 1 dengan Python'
 slug: "Dugaan Collatz"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-07-15T18:03:03+09:00
 tags: ["Dugaan Collatz", "Matematika", "Pemrograman", "Algoritma"]
 draft: false
 image: "img.webp"

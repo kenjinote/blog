@@ -5,7 +5,7 @@
 
 title: 'PowerShell로 .DS_Store 파일을 일괄 삭제하는 간단한 명령어'
 slug: "PowerShellで.DS_Storeを一括削除する"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-12T10:11:42+09:00
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"

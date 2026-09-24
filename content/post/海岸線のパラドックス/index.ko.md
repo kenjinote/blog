@@ -1,7 +1,7 @@
 ---
 title: "영국의 해안선 길이는 얼마나 될까?: 해안선 역설"
 description: "측정하는 자가 짧아질수록 해안선은 무한히 길어진다. 프랙탈 기하학의 문을 연 유명한 역설입니다."
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "coastline-paradox"
 image: "img/coastline_paradox.jpg"

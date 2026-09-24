@@ -2,7 +2,7 @@
 title: "Goro Shimura: The Life and Achievements of a Towering Peak in Modern Mathematics"
 description: 'Goro Shimura, a world-renowned mathematician known for the Taniyama-Shimura Conjecture. This article details his fierce life and profound achievements in number theory.'
 slug: "shimura-goro"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Goro Shimura", "Number Theory", "Taniyama-Shimura Conjecture", "Fermat's Last Theorem"]

@@ -1,7 +1,7 @@
 ---
 title: 'J''ai lancé un blog avec le générateur de site statique Hugo ! Notes quotidiennes et techniques'
 slug: "Blog、はじめてみました"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-02T07:23:00+09:00
 tags: ["Divers"]
 draft: false
 image: "images/komeda.webp"

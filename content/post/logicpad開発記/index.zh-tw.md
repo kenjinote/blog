@@ -1,7 +1,7 @@
 ---
 title: '從LogicPad開發記學習：個人開發Windows應用程式直到發布的軌跡'
 slug: "logicpad-windows-app-development-journey"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-13T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

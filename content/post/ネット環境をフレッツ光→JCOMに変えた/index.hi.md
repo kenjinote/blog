@@ -1,7 +1,7 @@
 ---
 title: 'Flet''s Hikari से J:COM में स्विच करने का परिणाम! दरों और संचार गति की वास्तविक समीक्षा'
 slug: "ネット環境をफ्लेट्स हिकारी→JCOMに変えた"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-05T22:48:51+09:00
 tags: ["J:COM","Flet's Hikari","इंटरनेट लाइन"]
 draft: false
 image: "jcom.webp"

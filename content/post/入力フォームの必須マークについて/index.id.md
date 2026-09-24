@@ -1,7 +1,7 @@
 ---
 title: 'Optimasi Tanda Wajib di Formulir Input | Praktik Terbaik yang Dipelajari dari Pedoman UI Luar Negeri'
 slug: "Formulir Inputの必須マークについて"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-07-14T13:47:51+09:00
 tags: ["Formulir Input", "Pengembangan Web", "UX"]
 draft: false
 image: "img.webp"

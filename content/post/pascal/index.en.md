@@ -2,7 +2,7 @@
 title: "Blaise Pascal: The Trajectory and Great Achievements of a Genius Mathematician, Physicist, and Philosopher"
 description: "Blaise Pascal, known for 'Man is a thinking reed'. We detail his turbulent life and achievements, from Pascal's theorem, Pascal's triangle, and the foundation of probability theory, to the proof of vacuum in physics, and his philosophical destination 'Pensées'."
 slug: "pascal"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T19:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["Mathematics", "Biography"]
 tags: ["Pascal", "Probability Theory", "Projective Geometry", "Pascal's Theorem", "Pascal's Triangle", "Physics"]

@@ -1,7 +1,7 @@
 ---
 title: 'Algorithmes de test de primalité rapides implémentés en C++ (méthode de Miller-Rabin, etc.)'
 slug: "cpp-fast-prime-testing-miller-rabin"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-11T14:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

@@ -2,7 +2,7 @@
 title: "ガロア理論（Galois Theory） - 5次以上の方程式に解の公式が存在しない理由と群論の誕生"
 description: "ガロア理論とは何か？なぜ5次以上の方程式には解の公式が存在しないのか？エヴァリスト・ガロアが遺した群論の基礎と、数学における対称性の美しさを分かりやすく解説します。"
 slug: "galois-theory"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:04:13+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "algebra"]
 tags:

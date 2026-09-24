@@ -2,7 +2,7 @@
 title: 'Simpson''s Paradox: The Mysterious Phenomenon of Winning in the Parts but Losing in the Whole'
 slug: 'simpsons-paradox'
 description: 'Even though the "pass rate" is higher in every department, when the company''s overall "total pass rate" is calculated, it reverses and loses!? We explain the terrifying trap of "Simpson''s Paradox" where statistical data deceives us in an easy-to-understand way.'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T07:00:00+09:00'
 image: 'img/simpsons_paradox.jpg'
 math: true
 mermaid: true

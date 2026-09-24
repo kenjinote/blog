@@ -2,7 +2,7 @@
 title: "ネットワーク技術: UDPの技術解説 - 速さを追求するコネクションレス通信"
 description: "オンラインゲームやビデオ通話で遅延なく通信できるのはなぜか？「届く保証」を捨てて「圧倒的な速さ」を手に入れたUDPプロトコルの仕組みを解説します。"
 slug: "history-of-udp"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

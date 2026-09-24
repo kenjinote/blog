@@ -2,7 +2,7 @@
 title: '辛普森悖论：部分占优，整体却落后的神秘现象'
 slug: 'simpsons-paradox'
 description: '各个部门的“合格率”都占优，但计算公司整体的“总合格率”时却被反超而落败！？本文将用通俗易懂的语言，为您解说统计数据欺骗我们的可怕陷阱——“辛普森悖论”。'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T07:00:00+09:00'
 image: 'img/simpsons_paradox.jpg'
 math: true
 mermaid: true

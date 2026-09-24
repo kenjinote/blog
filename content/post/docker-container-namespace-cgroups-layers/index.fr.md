@@ -2,7 +2,7 @@
 title: "Compréhension complète de Docker et de la technologie des conteneurs : des espaces de noms (Namespace), cgroups aux couches d'images"
 description: "Au-delà de la simple utilisation d'outils, nous allons disséquer en profondeur les mécanismes des conteneurs utilisant les fonctionnalités du noyau Linux (Namespace, cgroups, OverlayFS)."
 slug: "docker-container-namespace-cgroups-layers"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-21T09:00:00+09:00
 image: eyecatch.jpg
 categories:
   - "infrastructure"

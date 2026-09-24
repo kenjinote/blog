@@ -1,6 +1,6 @@
 +++
 title = "윈스턴 처칠: 불굴의 리더십과 역사에 남긴 발자취"
-date = "2026-09-24T16:08:36+09:00"
+date = "2026-09-23T19:46:00+09:00"
 categories = ["biography"]
 tags = ["winston-churchill", "history"]
 image = "eyecatch.jpg"

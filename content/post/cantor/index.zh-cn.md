@@ -2,7 +2,7 @@
 title: "格奥尔格·康托尔：发现无穷阶层并奠定数学基础的悲剧天才"
 description: "详细解读集合论创始人格奥尔格·康托尔跌宕起伏的一生，以及他证明无穷大小存在差异的惊人数学成就。"
 slug: "cantor"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "mathematics"

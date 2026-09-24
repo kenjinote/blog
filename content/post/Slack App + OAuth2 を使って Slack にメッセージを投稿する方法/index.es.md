@@ -9,7 +9,7 @@
 
 title: 'Cómo publicar un mensaje en Slack usando la API de Slack y OAuth2 (Ejemplo en C++)'
 slug: "Slack App + OAuth2 を使って Slack にメッセージを投稿する方法"
-date: "2026-09-24T16:08:36+09:00"
+date: 2025-07-16T23:36:27+09:00
 tags: ["C++", "API Win32", "WinHTTP", "Slack", "Webhook"]
 draft: false
 image: "img.webp"

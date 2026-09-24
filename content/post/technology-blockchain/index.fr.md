@@ -2,7 +2,7 @@
 title: "Finance et Cryptographie : Explication technique de la blockchain - La technologie de registre distribué qui a donné naissance au Bitcoin"
 description: "La magie d'« émettre et d'envoyer de l'argent sans administrateur ». Nous décortiquons les fondements de la blockchain créée par Satoshi Nakamoto : les fonctions de hachage, la PoW (Proof of Work) et les mécanismes de registre distribué."
 slug: "technology-blockchain"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

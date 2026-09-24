@@ -2,7 +2,7 @@
 title: "Kiyosi Oka: El genio solitario de la emoción y de las varias variables complejas"
 description: "Kiyosi Oka, un matemático del que Japón se enorgullece. Profundizamos en los episodios de su vida y sus logros matemáticos, incluida la resolución de los tres grandes problemas en varias variables complejas. Exploramos su filosofía de que las matemáticas son emoción."
 slug: "oka-kiyoshi"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-20T20:20:00+09:00
 image: "eyecatch.jpg"
 categories: ["matemáticas", "biografía"]
 tags: ["Kiyosi Oka", "Análisis complejo", "Historia de las matemáticas"]

@@ -2,7 +2,7 @@
 title: "外汇与技术：FX（外汇保证金交易）的历史与算法交易"
 description: "从金本位制的崩溃开始的外汇市场。解说它如何与互联网相遇，并成为争夺毫秒级算法交易的主战场。"
 slug: "finance-fx-algo"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "finance"

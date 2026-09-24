@@ -1,6 +1,5 @@
 ---
 title: "Le Cerveau du Diable : John von Neumann et les Fondements de la Société Moderne"
-date: "2026-09-24T16:08:36+09:00"
 description: "Une explication approfondie de la vie et des incroyables réalisations de John von Neumann, le plus grand génie du 20ème siècle, connu sous le nom de \"Cerveau du Diable\", qui a jeté les bases de la société moderne en mathématiques, mécanique quantique, théorie des jeux, informatique et dans le développement de la bombe atomique."
 slug: "biography-john-von-neumann"
 categories: ["biography"]

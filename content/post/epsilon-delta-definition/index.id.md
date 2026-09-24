@@ -2,7 +2,7 @@
 title: "Definisi ε-δ (Epsilon-Delta): Fondasi Kuat Limit dan Mengapa 'Mendekati' Saja Tidak Cukup"
 description: "Penjelasan mendetail tentang definisi epsilon-delta untuk limit, mencakup latar belakang sejarah, bukti praktis, dan analogi permainan intuitif untuk menjelaskan mengapa definisi intuitif sering kali gagal."
 slug: "epsilon-delta-definition"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
 categories: 
   - "Matematika"

@@ -1,7 +1,7 @@
 ---
 title: '睽違多年的「神座（Kamukura）」！品嚐推薦的蔥泡菜拉麵'
 slug: "何年かぶりの神座（かむくら）（拉麵）"
-date: "2026-09-24T16:08:36+09:00"
+date: 2022-09-09T21:45:19+09:00
 tags: ["拉麵", "神座"]
 draft: false
 image: "images/img2.webp"

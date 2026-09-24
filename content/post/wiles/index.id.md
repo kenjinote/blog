@@ -2,7 +2,7 @@
 title: "Andrew Wiles: Matematikawan Penyendiri yang Membuktikan Teorema Terakhir Fermat"
 description: "Mengeksplorasi kehidupan dan pencapaian matematis Andrew Wiles, yang menetapkan tonggak sejarah dalam matematika dengan membuktikan Teorema Terakhir Fermat."
 slug: "wiles"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
 categories: ["matematika", "biografi"]
 tags: ["Andrew Wiles", "Fermat", "Teori Bilangan"]

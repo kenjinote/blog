@@ -2,7 +2,7 @@
 title: "Paseo Aleatorio: Comprendiendo las Matemáticas de la Difusión y el Movimiento Browniano"
 description: "Una explicación detallada de los antecedentes matemáticos del paseo aleatorio, desde los conceptos básicos hasta los fenómenos de difusión y el movimiento browniano. Una guía definitiva que incluye el teorema de recurrencia de Pólya y aplicaciones financieras."
 slug: "random-walk"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
 categories: ["Matemáticas"]
 tags: ["Paseo Aleatorio", "Probabilidad", "Ecuación de Difusión", "Movimiento Browniano", "Python"]

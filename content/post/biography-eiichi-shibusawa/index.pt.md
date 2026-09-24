@@ -1,6 +1,6 @@
 ---
 title: "Eiichi Shibusawa, o Pai do Capitalismo Japonês: Uma Vida Dedicada à Unificação da Moral e da Economia"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["eiichi-shibusawa", "history"]
 image: "eyecatch.jpg"

@@ -2,7 +2,7 @@
 title: "Physics and Familiar Technology: How Optical Fibers Work - Ultra-High-Speed Internet Supported by the Physics of Total Internal Reflection"
 description: "Crawling along the seabed, the thin glass threads connecting the world's continents are known as 'optical fibers'. We explain the physics of 'total internal reflection', which is the reason why light travels through bent glass tubes without leaking, and the mechanism of optical communication that supports the internet."
 slug: "physics-optical-fiber"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "science"

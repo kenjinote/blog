@@ -1,6 +1,6 @@
 ---
 title: "The 'Oracle of Omaha' Warren Buffett: An Investor Embodying the Philosophy of Long-Term Investment and Compound Interest"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["warren-buffett", "history"]
 image: "eyecatch.jpg"

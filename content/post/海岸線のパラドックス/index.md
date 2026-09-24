@@ -1,7 +1,7 @@
 ---
 title: "イギリスの海岸線はどれくらい長いか？：海岸線のパラドックス"
 description: "測る定規を短くすればするほど、海岸線は無限に長くなっていく。フラクタル幾何学の扉を開いた有名なパラドックスです。"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-10T21:00:00+09:00
 draft: false
 slug: "coastline-paradox"
 image: "img/coastline_paradox.jpg"

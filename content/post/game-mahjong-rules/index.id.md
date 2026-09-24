@@ -2,7 +2,7 @@
 title: "Puncak Permainan Meja: Aturan Dasar Mahjong dan Penjelasan Yaku - Pertarungan Informasi 4 Pemain"
 description: "Sebuah permainan meja intelektual dari Timur 'Mahjong', yang ditenun oleh 136 ubin. Kami akan menjelaskan struktur dasar, cara membuat set dan pasangan (kepala), serta 'yaku' yang mewakili permainan ini, yang memiliki keseimbangan sempurna antara keberuntungan dan kemampuan."
 slug: "game-mahjong-rules"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "lifestyle-miscellaneous"

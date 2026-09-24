@@ -1,7 +1,7 @@
 ---
 title: 'السبب وراء عدم الحاجة إلى استدعاء DestroyIcon للأيقونات المستردة بواسطة دالة LoadIcon'
 slug: "LoadIconはDestroyIconを呼び出す必要はない"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-04-19T01:55:17+09:00
 tags: ["أيقونة", "LoadIcon", "DestroyIcon", "برمجة ويندوز"]
 draft: false
 categories: ["programming"]

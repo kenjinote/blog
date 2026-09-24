@@ -1,6 +1,5 @@
 ---
 title: "The Misunderstanding and Truth of Object-Oriented Programming: The Core of \"Messaging\" that Alan Kay Wanted to Convey"
-date: "2026-09-24T16:08:36+09:00"
 description: "Object-Oriented Programming (OOP) is often misunderstood as \"classes\" and \"inheritance\", but its true core lies in \"messaging\". We thoroughly explain the truth of OOP through Alan Kay's vision and the cell metaphor."
 slug: "philosophy-oop-messaging"
 categories: ["philosophy"]

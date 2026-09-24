@@ -2,7 +2,7 @@
 title: '囚徒困境：為什麼我們會做出「讓大家雙輸」的選擇？'
 slug: 'prisoners-dilemma'
 description: '明明知道「互相合作能得到最好結果」，為什麼人類還是會互相背叛？透過賽局理論中最著名的模型「囚徒困境」，我們將從數學與心理學的角度，解析個人的理性如何導致整個社會非理性的機制。'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T03:00:00+09:00'
 image: 'img/prisoners_dilemma.jpg'
 math: true
 mermaid: true

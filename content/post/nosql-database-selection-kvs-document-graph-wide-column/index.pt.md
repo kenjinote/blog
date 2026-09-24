@@ -2,7 +2,7 @@
 title: "Como Escolher um Banco de Dados NoSQL (KVS, Documento, Grafo, Coluna Larga)"
 description: "Um guia para entender modelos de dados de uma grande variedade de bancos de dados NoSQL e fazer a melhor escolha de acordo com o caso de uso."
 slug: "nosql-database-selection-kvs-document-graph-wide-column"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-22T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "database"

@@ -2,7 +2,7 @@
 title: "Teorema Sisa Tiongkok (Chinese Remainder Theorem) - Dari Aritmatika Kuno hingga Teorema Besar yang Mendukung Kriptografi RSA Modern"
 description: "Menjelaskan tentang Teorema Sisa Tiongkok (CRT), yang berawal dari naskah aritmatika Tiongkok kuno, mulai dari prinsip matematika hingga aplikasi pentingnya dalam kriptografi kunci publik modern (Kriptografi RSA)."
 slug: "chinese-remainder-theorem"
-date: "2026-09-24T16:08:36+09:00"
+date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "cryptography"]
 tags:

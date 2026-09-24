@@ -2,7 +2,7 @@
 title: "Sekretärinnenproblem / Problem des optimalen Stoppens (Secretary Problem) - Die \"1/e-Regel\" zur Einstellung der besten Person"
 description: "Was ist das Sekretärinnenproblem (Secretary Problem)? Anhand dieses repräsentativen Beispiels für das Problem des optimalen Stoppens erläutern wir detailliert den mathematischen Ansatz \"1/e-Regel (ca. 37%-Regel)\", um unter unsicheren Bedingungen die beste Wahl zu treffen. Mit mathematischen Beweisen und Simulationen untersuchen wir, wie dies bei der Personalbeschaffung und bei alltäglichen Entscheidungen genutzt werden kann."
 slug: "secretary-problem"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-14T13:20:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "algorithms", "decision-making"]
 tags:

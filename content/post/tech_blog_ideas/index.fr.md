@@ -1,7 +1,7 @@
 ---
 title: 'Prévenir le manque d''idées pour les articles techniques ! Méthodes efficaces d''assimilation et de génération d''idées'
 slug: "tech-blog-idea-generation-and-input-strategy"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true

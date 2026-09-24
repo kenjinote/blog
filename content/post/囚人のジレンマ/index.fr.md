@@ -2,7 +2,7 @@
 title: 'Le dilemme du prisonnier : pourquoi faisons-nous le choix où "tout le monde perd" ?'
 slug: 'prisoners-dilemma'
 description: 'Pourquoi les humains finissent-ils par se trahir alors qu''ils savent que "coopérer donne les meilleurs résultats" ? À travers le modèle le plus célèbre de la théorie des jeux, le "dilemme du prisonnier", nous expliquons mathématiquement et psychologiquement le mécanisme par lequel la rationalité individuelle crée l''irrationalité de la société dans son ensemble.'
-date: "2026-09-24T16:08:36+09:00"
+date: '2026-09-10T03:00:00+09:00'
 image: 'img/prisoners_dilemma.jpg'
 math: true
 mermaid: true

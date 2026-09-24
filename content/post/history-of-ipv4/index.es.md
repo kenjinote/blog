@@ -2,7 +2,7 @@
 title: "Direcciones de Internet: La historia y el problema de agotamiento de IPv4 - ¿Por qué no fueron suficientes 4.300 millones de direcciones?"
 description: "La 'dirección IP' es una dirección asignada a todos los dispositivos en Internet. Explicamos la historia y el mecanismo de por qué IPv4, que se suponía que tendría la enorme cantidad de aproximadamente 4.300 millones, se está agotando y cómo se está realizando la transición hacia la próxima generación, IPv6."
 slug: "history-of-ipv4"
-date: "2026-09-24T16:08:36+09:00"
+date: "2026-09-23T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
     - "technology"

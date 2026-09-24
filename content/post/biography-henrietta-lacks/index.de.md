@@ -1,6 +1,5 @@
 ---
 title: "Henrietta Lacks und die unsterblichen HeLa-Zellen: Die unerzählte Geschichte, die die moderne Medizin prägte"
-date: "2026-09-24T16:08:36+09:00"
 description: "Ein tiefer Einblick in das Leben von Henrietta Lacks, die wissenschaftlichen Durchbrüche der HeLa-Zellen, die für die moderne Medizin und Biologie unerlässlich sind, und ihre tiefgreifenden Auswirkungen auf die Bioethik."
 slug: "biography-henrietta-lacks"
 categories: ["biography"]

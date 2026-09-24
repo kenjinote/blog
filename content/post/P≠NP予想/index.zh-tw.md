@@ -1,7 +1,7 @@
 ---
 title: '什麼是 P≠NP 猜想？淺顯易懂解說計算複雜度理論的未解之謎與 P、NP 類別的差異'
 slug: "P≠NP猜想"
-date: "2026-09-24T16:08:36+09:00"
+date: 2024-09-11T02:22:39+09:00
 tags: ["P≠NP猜想", "數學", "未解問題"]
 draft: false
 categories: ["math-cryptography-quantum"]
