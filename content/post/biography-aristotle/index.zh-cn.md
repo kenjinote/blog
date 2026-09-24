@@ -1,5 +1,6 @@
 ---
 title: "万学之祖 亚里士多德：古希腊留下的终极知识探索者"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["aristotle", "history"]

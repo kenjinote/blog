@@ -1,5 +1,6 @@
 ---
 title: 'Como criar e exibir uma janela simples do Windows usando Rust e winapi'
+date: "2026-09-24T19:44:38+09:00"
 slug: "RustでシンプルなJanelaを表示する"
 date: 2022-10-01T19:08:58+09:00
 tags: ["Rust", "Janela"]

@@ -1,5 +1,6 @@
 ---
 title: "Mecanismo de renderizado del navegador: Una anatomía completa desde el árbol DOM hasta Paint"
+date: "2026-09-24T19:44:38+09:00"
 description: "Analizamos completamente el mecanismo del motor de renderizado (Blink, WebKit, etc.) desde que el navegador carga HTML/CSS/JS hasta que dibuja los píxeles en la pantalla."
 slug: "browser-rendering-mechanism-dom-paint"
 date: 2026-09-20T17:10:00+09:00

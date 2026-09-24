@@ -1,5 +1,6 @@
 ---
 title: '免费且功能强大！图片编辑软件“paint.net”的特点与魅力'
+date: "2026-09-24T19:44:38+09:00"
 slug: "paint.netの魅力"
 date: 2022-09-14T19:33:31+09:00
 tags: ["paint.net"]

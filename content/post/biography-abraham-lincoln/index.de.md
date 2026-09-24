@@ -1,5 +1,6 @@
 ---
 title: "Abraham Lincoln: Leben und Philosophie des „Großen Befreiers“, der eine gespaltene Nation führte"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["abraham-lincoln", "history"]

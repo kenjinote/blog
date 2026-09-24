@@ -1,5 +1,6 @@
 ---
 title: "【Grace Hopper: Leben und Vermächtnis der \"Mutter von COBOL\", die die Zukunft der Programmierung bahnte】"
+date: "2026-09-24T19:44:38+09:00"
 description: "Konteradmiral der US Navy Grace Hopper, bekannt als die \"Mutter von COBOL\". Von der Erfindung des Compilers bis zur Entdeckung des ersten Computer-Bugs erläutern wir ihr bewegtes Leben und ihre großartigen Errungenschaften, die den Grundstein für die moderne IT-Gesellschaft legten."
 slug: "biography-grace-hopper"
 categories: ["biography"]

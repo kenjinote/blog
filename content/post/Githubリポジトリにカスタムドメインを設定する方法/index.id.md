@@ -1,5 +1,6 @@
 ---
 title: 'Cara Mengatur Domain Kustom ke Repositori GitHub | Edisi Onamae.com'
+date: "2026-09-24T19:44:38+09:00"
 slug: "GithubRepositoriにカスタムDomainを設定する方法"
 date: 2022-09-13T01:16:40+09:00
 tags: ["Github","Domain"]

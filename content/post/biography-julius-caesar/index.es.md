@@ -1,5 +1,6 @@
 ---
 title: "Cayo Julio César: La trayectoria del genio que decidió el destino de Roma"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["julius-caesar", "history"]

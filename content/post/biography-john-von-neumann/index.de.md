@@ -1,5 +1,6 @@
 ---
 title: "Das Gehirn des Teufels: John von Neumann und die Grundlagen der modernen Gesellschaft"
+date: "2026-09-24T19:44:38+09:00"
 description: "Eine detaillierte Erklärung des Lebens und der unglaublichen Errungenschaften von John von Neumann, dem größten Genie des 20. Jahrhunderts, bekannt als das \"Gehirn des Teufels\", das den Grundstein für die moderne Gesellschaft in den Bereichen Mathematik, Quantenmechanik, Spieltheorie, Informatik und Atombombenentwicklung legte."
 slug: "biography-john-von-neumann"
 categories: ["biography"]

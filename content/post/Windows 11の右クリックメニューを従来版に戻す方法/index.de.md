@@ -1,5 +1,6 @@
 ---
 title: 'So stellen Sie das Rechtsklick-Menü von Windows 11 auf die klassische Version (alte Spezifikation) zurück [Registrierungseinstellungen]'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Windows 11のRechtsklick-Menüを従来版に戻す方法"
 date: 2024-03-30T13:13:36+09:00
 tags: ["Windows11", "Datei-Explorer"]

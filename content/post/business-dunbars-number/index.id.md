@@ -1,5 +1,6 @@
 ---
 title: "Apa itu Angka Dunbar? Penjelasan Lengkap tentang Batas Kognitif Hubungan Manusia dan Aplikasinya pada Desain Organisasi"
+date: "2026-09-24T19:44:38+09:00"
 description: "Angka Dunbar menyatakan bahwa \"batas manusia untuk mempertahankan hubungan yang stabil adalah 150 orang\". Artikel ini akan mengupas tuntas hukum yang dicetuskan oleh psikolog evolusioner Robin Dunbar ini, mulai dari dasar biologisnya, hubungan antarmanusia di era media sosial, hingga aplikasinya pada desain organisasi saat perusahaan melakukan skala (scaling)."
 slug: "business-dunbars-number"
 categories: ["business"]

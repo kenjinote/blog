@@ -1,5 +1,6 @@
 ---
 title: "【傳記】查理·卓別林：以笑與淚編織世界的「喜劇之王」的一生與哲學"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["charles-chaplin", "history"]

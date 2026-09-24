@@ -1,5 +1,6 @@
 ---
 title: '[Python Beginner''s Guide] Solving ''Tower of Hanoi'' with Recursive Processing Algorithm Explanation'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Tower of Hanoi"
 date: 2025-04-17T22:23:14+09:00
 tags: ["Tower of Hanoi", "Algorithm", "Python"]

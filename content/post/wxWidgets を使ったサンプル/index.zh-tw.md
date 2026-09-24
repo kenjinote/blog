@@ -1,5 +1,6 @@
 ---
 title: 'wxWidgets 的使用與安裝方法及範例專案建立'
+date: "2026-09-24T19:44:38+09:00"
 slug: "wxWidgets を使った範例"
 date: 2023-04-18T00:18:22+09:00
 tags: ["wxWidgets", "範例"]

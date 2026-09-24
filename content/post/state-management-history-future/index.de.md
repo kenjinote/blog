@@ -1,5 +1,6 @@
 ---
 title: "Geschichte und Zukunft des State Managements: Die Evolution von Redux zu Signals und Reactivity"
+date: "2026-09-24T19:44:38+09:00"
 description: "State Management, die größte Herausforderung in der Geschichte der Frontend-Entwicklung. Ein vollständiger Leitfaden über den Wandel und die Zukunft von MVC, Flux, Redux, Context API bis hin zu Signals und Fine-Grained Reactivity."
 slug: state-management-history-future
 date: 2026-09-21T12:00:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: "L'ombre et la lumière de l'architecture Serverless : les coulisses d'AWS Lambda et le démarrage à froid"
+date: "2026-09-24T19:44:38+09:00"
 description: "Nous explorons en profondeur non seulement les avantages du Serverless, mais aussi le fonctionnement des conteneurs en arrière-plan, le problème du démarrage à froid et ses solutions (comme SnapStart)."
 slug: "serverless-architecture-aws-lambda-cold-start"
 date: 2026-09-21T09:00:00+09:00

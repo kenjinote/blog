@@ -1,5 +1,6 @@
 ---
 title: "Der kleine Satz von Fermat: Die Natur der Primzahlen und die Grundlage der modernen Kryptographie (RSA)"
+date: "2026-09-24T19:44:38+09:00"
 description: "Eine detaillierte Erklärung des kleinen Satzes von Fermat, vom intuitiven Verständnis bis hin zum mathematischen Beweis und seiner praktischen Anwendung in der RSA-Kryptographie."
 slug: "fermats-little-theorem"
 date: 2026-09-20T15:00:00+09:00

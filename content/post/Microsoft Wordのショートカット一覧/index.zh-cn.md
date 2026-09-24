@@ -1,5 +1,6 @@
 ---
 title: '【提升效率】Microsoft Word常用快捷键大全'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Microsoft Wordの快捷方式一覧"
 date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "快捷键"]

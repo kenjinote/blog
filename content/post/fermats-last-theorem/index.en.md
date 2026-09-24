@@ -1,5 +1,6 @@
 ---
 title: "Fermat's Last Theorem - How a Mystery Left in the Margin Was Solved After 360 Years"
+date: "2026-09-24T19:44:38+09:00"
 description: "Fermat's Last Theorem, the most famous unsolved problem in the history of mathematics. How was this difficult problem, which rejected the challenges of many genius mathematicians for 360 years after the death of Pierre de Fermat, proven by Andrew Wiles? We explain its dramatic history and mathematical background in detail."
 slug: "fermats-last-theorem"
 date: 2026-09-14T13:04:13+09:00

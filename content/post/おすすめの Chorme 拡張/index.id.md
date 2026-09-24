@@ -1,5 +1,6 @@
 ---
 title: 'Kumpulan Ekstensi Browser yang Direkomendasikan untuk Membuat Chrome & Edge Menjadi Sangat Praktis'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Rekomendasiの Chorme 拡張"
 date: 2023-03-19T02:54:30+09:00
 tags: ["Ekstensi Chrome", "Browser", "Chrome", "Edge"]

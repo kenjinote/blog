@@ -1,5 +1,6 @@
 ---
 title: 'Optimiert für iOS! ffmpeg-Konvertierungsparameter für eine flüssige Videowiedergabe'
+date: "2026-09-24T19:44:38+09:00"
 slug: "iOS 向けの ffmpeg パラメータ"
 date: 2025-03-02T04:16:07+09:00
 tags: ["iOS", "ffmpeg"]

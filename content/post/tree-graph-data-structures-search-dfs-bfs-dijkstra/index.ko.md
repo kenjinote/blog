@@ -1,5 +1,6 @@
 ---
 title: "트리 구조와 그래프 구조 탐색 (DFS, BFS, 다익스트라 알고리즘)"
+date: "2026-09-24T19:44:38+09:00"
 description: "복잡한 데이터 관계를 표현하는 트리 구조와 그래프 구조. 깊이 우선 탐색(DFS), 너비 우선 탐색(BFS)부터 최단 경로 문제(다익스트라 알고리즘)까지 철저히 해설합니다."
 slug: "tree-graph-data-structures-search-dfs-bfs-dijkstra"
 date: 2026-09-22T03:00:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: 'Affine and Projective Transformations: The Fusion of Linear Algebra and Geometry behind CG and Perspective'
+date: "2026-09-24T19:44:38+09:00"
 description: 'A detailed explanation of the mathematical foundations of affine and projective transformations, their expression using homogeneous coordinates, and applications in computer graphics and image processing.'
 slug: 'affine-and-projective-transformations'
 date: '2026-09-20T15:15:00+09:00'

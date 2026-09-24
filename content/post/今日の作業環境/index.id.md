@@ -1,5 +1,6 @@
 ---
 title: 'Bekerja di Meja Anak? Lingkungan Kerja Nyata untuk Telework / Remote Work Saat Mengasuh Anak'
+date: "2026-09-24T19:44:38+09:00"
 slug: "今日の作業環境"
 date: 2022-09-04T14:29:09+09:00
 tags: ["Lain-lain", "Anak-anak"]

@@ -1,5 +1,6 @@
 ---
 title: "【El problema del tranvía: la elección definitiva en ética y el abismo de la intuición moral humana】"
+date: "2026-09-24T19:44:38+09:00"
 description: "【Cinco trabajadores en la vía de un tranvía descontrolado, y uno en el desvío. ¿Tirarías de la palanca? Desde el clásico experimento mental de Philippa Foot hasta la ética de la IA en vehículos autónomos, profundizamos exhaustivamente en miles de palabras sobre el conflicto entre utilitarismo y deontología que plantea el \"problema del tranvía\", y los mecanismos de toma de decisiones morales humanas.】"
 slug: "paradox-trolley-problem"
 categories: ["philosophy"]

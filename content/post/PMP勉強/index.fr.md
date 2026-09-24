@@ -1,5 +1,6 @@
 ---
 title: 'Connaissances de base et résumé de l''étude pour l''examen PMP : compatible PMBOK 7ème édition'
+date: "2026-09-24T19:44:38+09:00"
 slug: "PMPÉtude"
 date: 2024-02-04T18:41:31+09:00
 tags: ["PMP", "PMBOK", "Étude"]

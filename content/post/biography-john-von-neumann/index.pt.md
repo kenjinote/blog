@@ -1,5 +1,6 @@
 ---
 title: "O Cérebro do Diabo: John von Neumann e os Fundamentos da Sociedade Moderna"
+date: "2026-09-24T19:44:38+09:00"
 description: "Uma explicação detalhada da vida e das incríveis realizações de John von Neumann, o maior gênio do século 20, conhecido como o \"Cérebro do Diabo\", que estabeleceu as bases da sociedade moderna na matemática, mecânica quântica, teoria dos jogos, ciência da computação e no desenvolvimento da bomba atômica."
 slug: "biography-john-von-neumann"
 categories: ["biography"]

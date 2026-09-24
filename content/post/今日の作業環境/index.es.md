@@ -4,6 +4,7 @@
 
 
 title: '¿Trabajando en el escritorio de mis hijos? El entorno de trabajo remoto y teletrabajo real durante la crianza'
+date: "2026-09-24T19:44:38+09:00"
 slug: "今日の作業環境"
 date: 2022-09-04T14:29:09+09:00
 tags: ["miscelánea","niños"]

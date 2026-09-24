@@ -1,5 +1,6 @@
 ---
 title: '一般数体篩法（GNFS）をC++で実装｜RSA暗号解読アルゴリズムの仕組み'
+date: "2026-09-24T19:44:38+09:00"
 slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "数学", "暗号"]

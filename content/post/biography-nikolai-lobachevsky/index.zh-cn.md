@@ -1,5 +1,6 @@
 ---
 title: "尼古拉·罗巴切夫斯基：推开非欧几何大门的“几何学哥白尼”"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["nikolai-lobachevsky", "history"]

@@ -7,6 +7,7 @@
 
 
 title: 'El sistema operativo de hace 40 años ''MS-DOS 4.0'' es lanzado como código abierto'
+date: "2026-09-24T19:44:38+09:00"
 slug: "MS-DOS 4.0 のCódigo abierto化"
 date: 2024-05-05T16:44:28+09:00
 tags: ["MS-DOS", "código abierto"]

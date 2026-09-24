@@ -1,5 +1,6 @@
 ---
 title: '防止内存泄漏的智能指针（std::unique_ptr / shared_ptr）运用指南'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'cpp-smart-pointers-guide-unique-shared-ptr'
 date: '2026-09-12T07:00:00+09:00'
 image: 'img/eyecatch.jpg'

@@ -1,5 +1,6 @@
 ---
 title: "루이스 캐럴: 『이상한 나라의 앨리스』를 탄생시킨 수학자이자 논리학자의 궤적"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:51:47+09:00
 categories: ["biography"]
 tags: ["lewis-carroll", "history"]

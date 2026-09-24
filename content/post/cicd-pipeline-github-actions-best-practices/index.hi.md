@@ -1,5 +1,6 @@
 ---
 title: "CI/CD पाइपलाइन और GitHub Actions: कंटीन्यूअस इंटीग्रेशन की बेस्ट प्रैक्टिस"
+date: "2026-09-24T19:44:38+09:00"
 description: "सॉफ़्टवेयर डेवलपमेंट लाइफसाइकल को गति देने वाले CI/CD के सिद्धांत और GitHub Actions का उपयोग करके एक व्यावहारिक पाइपलाइन बनाने का तरीका जानें।"
 slug: "cicd-pipeline-github-actions-best-practices"
 date: 2026-09-21T09:00:00+09:00

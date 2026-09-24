@@ -1,5 +1,6 @@
 ---
 title: 'Les ordinateurs quantiques vont-ils casser le chiffrement RSA ? Explication de l''algorithme de Shor'
+date: "2026-09-24T19:44:38+09:00"
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["Ordinateur quantique", "Décryptage", "Algorithme de Shor", "RSA"]
 image: "eyecatch.jpg"

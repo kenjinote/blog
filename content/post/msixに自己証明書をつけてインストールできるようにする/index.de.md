@@ -1,5 +1,6 @@
 ---
 title: 'Ein Muss für Windows-App-Entwickler! Wie man MSIX mit einem selbstsignierten Zertifikat für die lokale Installation versieht'
+date: "2026-09-24T19:44:38+09:00"
 slug: "msixにSelbstsigniertes ZertifikatをつけてInstallationできるようにする"
 date: 2025-08-30T04:18:04+09:00
 tags: ["msix", "Selbstsigniertes Zertifikat", "Installation"]

@@ -1,5 +1,6 @@
 ---
 title: 'Enregistrements des catastrophes naturelles survenues au Japon : Séisme de 2024 de la péninsule de Noto et ampleur des dégâts'
+date: "2026-09-24T19:44:38+09:00"
 slug: "日本のCatastrophe"
 date: 2024-01-07T00:50:09+09:00
 tags: ["Catastrophes", "Données"]

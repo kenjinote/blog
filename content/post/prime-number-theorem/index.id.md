@@ -1,5 +1,6 @@
 ---
 title: "Teorema Bilangan Prima (Prime Number Theorem) - Hukum di mana distribusi bilangan prima mendekati fungsi logaritma"
+date: "2026-09-24T19:44:38+09:00"
 description: "Penjelasan mendalam tentang Teorema Bilangan Prima (Prime Number Theorem), sebuah pencapaian monumental dalam matematika mengenai keteraturan kemunculan bilangan prima. Dari fungsi penghitungan bilangan prima hingga hubungannya dengan Hipotesis Riemann."
 slug: "prime-number-theorem"
 date: 2026-09-14T13:11:00+09:00

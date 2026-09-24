@@ -1,5 +1,6 @@
 ---
 title: "Masalah Jenderal Bizantium dan Kedalaman Algoritma Konsensus: Mekanisme Paxos, Raft, dan BFT"
+date: "2026-09-24T19:44:38+09:00"
 description: "Membahas secara mendalam algoritma konsensus yang menjadi dasar sistem terdistribusi, mulai dari asal-usul Masalah Jenderal Bizantium hingga Paxos, Raft, dan BFT yang tahan terhadap node berbahaya, dilengkapi dengan teori, rumus matematika, dan implementasi kode."
 slug: byzantine-generals-problem-consensus
 date: 2026-09-21T02:45:54+09:00

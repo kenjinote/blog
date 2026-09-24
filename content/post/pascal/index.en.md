@@ -1,5 +1,6 @@
 ---
 title: "Blaise Pascal: The Trajectory and Great Achievements of a Genius Mathematician, Physicist, and Philosopher"
+date: "2026-09-24T19:44:38+09:00"
 description: "Blaise Pascal, known for 'Man is a thinking reed'. We detail his turbulent life and achievements, from Pascal's theorem, Pascal's triangle, and the foundation of probability theory, to the proof of vacuum in physics, and his philosophical destination 'Pensées'."
 slug: "pascal"
 date: 2026-09-20T19:00:00+09:00

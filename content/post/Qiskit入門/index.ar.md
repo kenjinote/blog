@@ -1,5 +1,6 @@
 ---
 title: 'مقدمة فائقة في البرمجة الكمومية باستخدام Qiskit'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'qiskit-quantum-programming-intro'
 date: '2026-09-11T20:00:00+09:00'
 image: 'img/eyecatch.jpg'

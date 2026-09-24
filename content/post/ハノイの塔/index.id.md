@@ -1,5 +1,6 @@
 ---
 title: '[Pengantar Python] Penjelasan Algoritma ''Menara Hanoi'' yang Diselesaikan dengan Pemrosesan Rekursif'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Menara Hanoi"
 date: 2025-04-17T22:23:14+09:00
 tags: ["Menara Hanoi", "Algoritma", "Python"]

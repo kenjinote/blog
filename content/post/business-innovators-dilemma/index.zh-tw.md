@@ -1,5 +1,6 @@
 ---
 title: "【完全解析】什麼是創新者的窘境？優良企業敗給破壞性創新的機制與克服策略"
+date: "2026-09-24T19:44:38+09:00"
 description: "深入探討克雷頓·克里斯汀生（Clayton Christensen）提出的「創新者的窘境」，包含破壞性創新的機制、優良企業陷入的陷阱，以及從具體案例到克服該窘境的策略，透過數千字篇幅進行徹底解析。"
 slug: "business-innovators-dilemma"
 categories: ["business"]

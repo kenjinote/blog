@@ -1,5 +1,6 @@
 ---
 title: 'الدليل الشامل لإعداد بيئة التطوير لنظام WSL2 (نظام ويندوز الفرعي لنظام لينكس)'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'wsl2-ultimate-development-setup-guide'
 date: '2026-09-12T23:00:00+09:00'
 image: 'img/eyecatch.jpg'

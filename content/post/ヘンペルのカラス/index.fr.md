@@ -1,5 +1,6 @@
 ---
 title: "Voir une pomme bleue prouve-t-il que « les corbeaux sont noirs » ? : Les corbeaux de Hempel"
+date: "2026-09-24T19:44:38+09:00"
 description: "Peut-on prouver l'hypothèse selon laquelle « les corbeaux sont noirs » sans jamais voir de corbeau ? Le paradoxe de l'induction créé par l'équivalence logique."
 date: 2026-09-10T21:00:00+09:00
 draft: false

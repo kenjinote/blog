@@ -1,5 +1,6 @@
 ---
 title: "SQL und das relationale Modell: Die Tiefe und Philosophie des mengentheoretischen Ansatzes von Edgar F. Codd"
+date: "2026-09-24T19:44:38+09:00"
 description: "Ein tiefer Einblick in das relationale Modell, das die Grundlage von SQL bildet, und Codds Mengentheorie. Ein umfassender und archivierungswürdiger langer Artikel, der den historischen Hintergrund von Datenbanken, die mathematischen Grundlagen und die philosophischen Implikationen im modernen Anwendungsdesign im Detail erklärt."
 slug: "philosophy-sql-relational-model"
 categories: ["philosophy"]

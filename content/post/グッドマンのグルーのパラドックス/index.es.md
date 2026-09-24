@@ -1,5 +1,6 @@
 ---
 title: "¿Son las esmeraldas verdes o de color «grue»?: El nuevo enigma de la inducción de Goodman"
+date: "2026-09-24T19:44:38+09:00"
 description: "Mañana, las esmeraldas de todo el mundo podrían volverse azules. La paradoja del «grue» que sacude los cimientos de la predicción científica."
 date: 2026-09-10T21:00:00+09:00
 draft: false

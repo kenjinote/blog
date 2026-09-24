@@ -8,6 +8,7 @@
 
 
 title: '¡Cómo verificar el estado de activación de la licencia de Windows! Comprobación fácil con un solo comando'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Windows のLicenciaの状態を確認するComando"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "Licencia", "Símbolo del sistema"]

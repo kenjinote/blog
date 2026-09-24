@@ -8,6 +8,7 @@
 
 
 title: '¡No te rindas ante las críticas! Pistas para vivir con fuerza aprendidas de las citas de Einstein'
+date: "2026-09-24T19:44:38+09:00"
 slug: "EinsteinのCita famosa"
 date: 2024-08-24T18:38:47+09:00
 tags: ["Einstein", "Citas", "Filosofía", "Ciencia", "Física"]

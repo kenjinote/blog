@@ -1,5 +1,6 @@
 ---
 title: 'Perintah Terminal untuk Menonaktifkan/Menghentikan Pembuatan Otomatis .DS_Store di macOS'
+date: "2026-09-24T19:44:38+09:00"
 slug: "macOSで.DS_Storeを自動生成しないようにするPerintah"
 date: 2022-09-12T16:03:42+09:00
 tags: ["macOS"]

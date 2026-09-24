@@ -3,6 +3,7 @@
 
 
 title: 'Ranklet으로 Google 애널리틱스의 인기 기사 랭킹을 표시하는 방법'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Google 애널리틱스から人気ページランキングを取得して配置する方法"
 date: 2023-04-10T20:26:57+09:00
 tags: ["Google 애널리틱스", "Ranklet", "HUGO"]

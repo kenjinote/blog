@@ -1,5 +1,6 @@
 ---
 title: "Dasar-Dasar Keamanan Web dan Tren Terbaru: Dari XSS, CSRF hingga CORS, CSP"
+date: "2026-09-24T19:44:38+09:00"
 description: "Langkah-langkah keamanan untuk melindungi aplikasi web dari ancaman. Membahas secara komprehensif mulai dari XSS dan CSRF klasik hingga teknologi esensial modern seperti CORS, CSP, dan Cookie SameSite."
 slug: "web-security-basics-cors-csp"
 date: 2026-09-20T17:10:00+09:00

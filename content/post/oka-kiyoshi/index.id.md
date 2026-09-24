@@ -1,5 +1,6 @@
 ---
 title: "Kiyosi Oka: Jenius Penyendiri tentang Emosi dan Beberapa Variabel Kompleks"
+date: "2026-09-24T19:44:38+09:00"
 description: "Kiyosi Oka, seorang matematikawan yang dibanggakan Jepang kepada dunia. Kami menggali lebih dalam episode dari hidupnya dan pencapaian matematikanya, termasuk penyelesaian tiga masalah utama dalam beberapa variabel kompleks. Kami mengeksplorasi filosofinya bahwa matematika adalah emosi."
 slug: "oka-kiyoshi"
 date: 2026-09-20T20:20:00+09:00

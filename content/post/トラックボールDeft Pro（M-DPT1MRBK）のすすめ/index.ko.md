@@ -5,6 +5,7 @@
 
 
 title: '엘레컴 Deft Pro 리뷰! 8버튼 탑재 트랙볼 마우스의 장점과 단점'
+date: "2026-09-24T19:44:38+09:00"
 slug: "트랙볼Deft Pro（M-DPT1MRBK）のすすめ"
 date: 2023-05-02T23:28:33+09:00
 tags: ["트랙볼", "Deft Pro", "M-DPT1MRBK", "Elecom"]

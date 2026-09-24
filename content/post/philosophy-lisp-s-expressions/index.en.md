@@ -1,5 +1,6 @@
 ---
 title: "Lisp and the \"Language of God\"—The Beauty of S-expressions and the Code as Data Philosophy"
+date: "2026-09-24T19:44:38+09:00"
 description: "A technical philosophy essay delving deeply into why the programming language Lisp is called the \"Language of God,\" the beauty of S-expressions at its core, Homoiconicity, and the abyss of metaprogramming through macros."
 slug: "philosophy-lisp-s-expressions"
 categories: ["philosophy"]

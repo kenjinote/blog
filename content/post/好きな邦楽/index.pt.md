@@ -1,5 +1,6 @@
 ---
 title: 'Lista das melhores músicas japonesas recomendadas: J-POP nostálgico e canções clássicas que tocam o coração'
+date: "2026-09-24T19:44:38+09:00"
 slug: "好きなMúsica Japonesa"
 date: 2024-01-06T04:11:01+09:00
 tags: ["Música Japonesa", "Música"]

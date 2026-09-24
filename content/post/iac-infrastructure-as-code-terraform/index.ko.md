@@ -1,5 +1,6 @@
 ---
 title: "IaC (Infrastructure as Code)와 Terraform: 선언적 구성 관리의 철학"
+date: "2026-09-24T19:44:38+09:00"
 description: "인프라를 코드로 관리하는 IaC의 중요성과 Terraform이 채택하는 선언적 접근 방식의 이점. 상태 관리(State)의 구조와 모범 사례를 해설합니다."
 slug: "iac-infrastructure-as-code-terraform"
 date: 2026-09-21T09:00:00+09:00

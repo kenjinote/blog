@@ -1,5 +1,6 @@
 ---
 title: "René Descartes: Pai da filosofia moderna e fundador da geometria analítica"
+date: "2026-09-24T19:44:38+09:00"
 description: "René Descartes é famoso por 'Penso, logo existo'. Exploramos sua vida extraordinária e o nascimento da geometria analítica que revolucionou a história da matemática."
 slug: "descartes"
 date: 2026-09-20T18:50:00+09:00

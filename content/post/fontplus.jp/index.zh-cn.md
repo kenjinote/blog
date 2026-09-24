@@ -1,5 +1,6 @@
 ---
 title: 'Web字体服务“FONTPLUS (Fontplus)”的特点与收费'
+date: "2026-09-24T19:44:38+09:00"
 slug: "fontplus.jp"
 date: 2023-02-07T20:59:01+09:00
 tags: ["字体","fontplus"]

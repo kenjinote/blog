@@ -1,5 +1,6 @@
 ---
 title: "Steht der fliegende Pfeil still?: Zenons Paradoxon vom fliegenden Pfeil"
+date: "2026-09-24T19:44:38+09:00"
 description: "Ein fliegender Pfeil ruht in jedem Moment. Gibt es dann keine Bewegung? Das größte logische Rätsel des antiken Griechenlands."
 date: 2026-09-10T21:00:00+09:00
 draft: false

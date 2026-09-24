@@ -1,5 +1,6 @@
 ---
 title: "奠定人际关系原则的男人：戴尔·卡耐基的生平与哲学"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:59:58+09:00
 categories: ["biography"]
 tags: ["dale-carnegie", "history"]

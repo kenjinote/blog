@@ -1,5 +1,6 @@
 ---
 title: "डायनामिक प्रोग्रामिंग (DP) का परिचय और प्रसिद्ध समस्याएँ (Knapsack, Fibonacci)"
+date: "2026-09-24T19:44:38+09:00"
 description: "एल्गोरिथम की कठिन 'डायनामिक प्रोग्रामिंग (DP)'। Fibonacci अनुक्रम और Knapsack समस्या के उदाहरणों के साथ, मेमोइजेशन रिकर्शन और बॉटम-अप तरीके के बीच के अंतर को स्पष्ट रूप से समझाता है।"
 slug: "dynamic-programming-dp-introduction-knapsack-fibonacci"
 date: 2026-09-22T04:00:00+09:00

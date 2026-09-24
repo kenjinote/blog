@@ -1,5 +1,6 @@
 ---
 title: 'Affine und Projektive Transformationen: Die Verschmelzung von linearer Algebra und Geometrie hinter CG und Perspektive'
+date: "2026-09-24T19:44:38+09:00"
 description: 'Eine detaillierte Erklärung der mathematischen Grundlagen der affinen und projektiven Transformationen, deren Darstellung mithilfe homogener Koordinaten und Anwendungen in Computergrafik und Bildverarbeitung.'
 slug: 'affine-and-projective-transformations'
 date: '2026-09-20T15:15:00+09:00'

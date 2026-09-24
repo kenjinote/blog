@@ -1,5 +1,6 @@
 ---
 title: "Algoritmos de Ordenação Explicados Visualmente (De Bubble a Quick e Merge Sort)"
+date: "2026-09-24T19:44:38+09:00"
 description: "Algoritmos de ordenação são a base da programação. Do Bubble Sort ao Quick e Merge Sort, explicamos tudo de forma abrangente com diagramas e código."
 slug: "sorting-algorithms-visualized-bubble-quick-merge"
 date: 2026-09-22T01:00:00+09:00

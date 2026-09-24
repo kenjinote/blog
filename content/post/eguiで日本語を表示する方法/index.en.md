@@ -1,5 +1,6 @@
 ---
 title: 'How to Load and Display Japanese Fonts in Rust''s GUI Library ''egui'''
+date: "2026-09-24T19:44:38+09:00"
 slug: "eguiでJapaneseを表示する方法"
 date: 2023-04-01T03:17:52+09:00
 tags: ["rust", "egui", "GUI library", "Japanese"]

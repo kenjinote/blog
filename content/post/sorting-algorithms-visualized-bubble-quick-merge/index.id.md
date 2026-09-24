@@ -1,5 +1,6 @@
 ---
 title: "Ilustrasi Algoritma Pengurutan (Dari Bubble, Quick, hingga Merge Sort)"
+date: "2026-09-24T19:44:38+09:00"
 description: "Algoritma pengurutan yang merupakan dasar dari pemrograman. Dari Bubble Sort, Quick Sort, hingga Merge Sort, kami akan menjelaskan secara komprehensif dengan ilustrasi dan kode."
 slug: "sorting-algorithms-visualized-bubble-quick-merge"
 date: 2026-09-22T01:00:00+09:00

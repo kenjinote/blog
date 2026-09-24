@@ -1,5 +1,6 @@
 ---
 title: 'Paradoks Newcomb: Bisakah Anda Mengalahkan Manusia Super yang Bisa Melihat Masa Depan?'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'newcombs-paradox'
 description: '"Kotak transparan berisi 100 ribu Yen" dan "Kotak buram berisi 100 juta Yen atau kosong". Dalam permainan yang disiapkan oleh manusia super yang dapat memprediksi masa depan dengan sempurna, mana yang akan Anda pilih? Artikel ini menjelaskan teka-teki terbesar dalam filsafat modern di mana kehendak bebas dan determinisme saling berbenturan.'
 date: '2026-09-10T08:00:00+09:00'

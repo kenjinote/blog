@@ -1,5 +1,6 @@
 ---
 title: "Équations de Yang-Mills et problème du saut de masse - Fondements mathématiques du « Modèle standard » de la physique des particules"
+date: "2026-09-24T19:44:38+09:00"
 description: "Nous expliquons de manière compréhensible le contexte physique et les difficultés mathématiques des « équations de Yang-Mills et du problème du saut de masse », l'un des problèmes du prix du millénaire."
 slug: "yang-mills-mass-gap"
 date: 2026-09-14T13:11:25+09:00

@@ -1,5 +1,6 @@
 ---
 title: "O Último Teorema de Fermat - Como o mistério deixado numa margem foi resolvido 360 anos depois"
+date: "2026-09-24T19:44:38+09:00"
 description: "O problema não resolvido mais famoso da história da matemática, o 'Último Teorema de Fermat'. Como este problema difícil, que frustrou o desafio de vários matemáticos geniais durante 360 anos após a morte de Pierre de Fermat, foi provado por Andrew Wiles? Explicamos detalhadamente sua história dramática e o contexto matemático."
 slug: "fermats-last-theorem"
 date: 2026-09-14T13:04:13+09:00

@@ -1,5 +1,6 @@
 ---
 title: '【VS2022】从C++执行PowerShell！通过C++/CLI DLL协作的步骤'
+date: "2026-09-24T19:44:38+09:00"
 slug: "C++ から PowerShell を C++ CLI DLL 経由で実行する手順"
 date: 2025-04-16T01:58:03+09:00
 tags: ["C++", "PowerShell", "C++/CLI", "DLL"]

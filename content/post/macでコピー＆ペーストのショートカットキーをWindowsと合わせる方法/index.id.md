@@ -1,5 +1,6 @@
 ---
 title: 'Cara Mengubah Pintasan Copy-Paste di Mac agar Sama dengan Pengaturan Windows'
+date: "2026-09-24T19:44:38+09:00"
 slug: "macでSalin dan TempelのTombol PintasanをWindowsと合わせる方法"
 date: 2023-04-05T00:49:02+09:00
 tags: ["macos", "mac", "tombol pintasan", "salin & tempel"]

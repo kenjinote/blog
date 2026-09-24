@@ -1,5 +1,6 @@
 ---
 title: 'Summary of Recommended VSCode Extensions! A List of Plugins That Dramatically Boost Development Efficiency'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Visual Studio CodeRecommendationExtension"
 date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "Extensions", "Add-ons"]

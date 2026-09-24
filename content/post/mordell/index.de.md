@@ -1,5 +1,6 @@
 ---
 title: "Louis Mordell: Ein Gigant der Zahlentheorie und sein Lebensweg"
+date: "2026-09-24T19:44:38+09:00"
 description: "Eine detaillierte Erklärung des Lebens und der mathematischen Beiträge von Louis Mordell, bekannt für seine bahnbrechenden Arbeiten zu diophantischen Gleichungen, elliptischen Kurven und der 'Mordell-Vermutung'."
 slug: "mordell"
 date: 2026-09-20T20:10:00+09:00

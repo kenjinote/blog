@@ -1,5 +1,6 @@
 ---
 title: 'Pythagoras: The Intersection of Mathematics and Mysticism'
+date: "2026-09-24T19:44:38+09:00"
 description: 'An in-depth exploration of the life of the ancient Greek mathematician Pythagoras, the Pythagorean theorem, and the philosophy that all is number.'
 slug: 'pythagoras'
 date: '2026-09-20T18:40:00+09:00'

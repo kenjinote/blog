@@ -1,5 +1,6 @@
 ---
 title: "Jalons du Développement Logiciel : La Trajectoire et la Philosophie de Martin Fowler"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:00:00+09:00
 categories: ["biography"]
 tags: ["martin-fowler", "history"]

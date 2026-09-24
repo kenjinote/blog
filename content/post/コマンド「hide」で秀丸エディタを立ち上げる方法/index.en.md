@@ -1,5 +1,6 @@
 ---
 title: 'Launch Hidemaru Editor with a Single ''hide'' Command! Handy Windows Setup Method'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Command「hide」でHidemaru Editorを立ち上げる方法"
 date: 2024-03-29T23:45:37+09:00
 tags: ["Command", "Hidemaru Editor", "Registry"]

@@ -1,5 +1,6 @@
 ---
 title: '使用Mathematica求解旅行商问题（TSP）的方法'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Mathematicaで旅行推销员问题を解く"
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "旅行商问题", "算法", "数学"]

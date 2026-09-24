@@ -1,5 +1,6 @@
 ---
 title: "El Cerebro del Diablo: John von Neumann y los Cimientos de la Sociedad Moderna"
+date: "2026-09-24T19:44:38+09:00"
 description: "Una explicación profunda de la vida y los increíbles logros de John von Neumann, el mayor genio del siglo XX, conocido como el \"Cerebro del Diablo\", quien sentó las bases de la sociedad moderna en matemáticas, mecánica cuántica, teoría de juegos, informática y el desarrollo de la bomba atómica."
 slug: "biography-john-von-neumann"
 categories: ["biography"]

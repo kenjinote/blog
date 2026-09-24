@@ -1,5 +1,6 @@
 ---
 title: "絕對精神與辯證法：格奧爾格·威廉·弗里德里希·黑格爾的生平與哲學"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["georg-wilhelm-friedrich-hegel", "history"]

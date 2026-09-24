@@ -1,5 +1,6 @@
 ---
 title: "直覺與機率的落差：深入探索蒙提霍爾問題"
+date: "2026-09-24T19:44:38+09:00"
 description: "違反直覺的機率論代表作「蒙提霍爾問題」。為什麼人類的直覺會與機率產生如此大的落差？從數學證明到心理學背景，徹底解說這個悖論的全貌。"
 slug: "paradox-monty-hall-problem"
 categories: ["science"]

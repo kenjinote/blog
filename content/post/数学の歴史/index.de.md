@@ -1,5 +1,6 @@
 ---
 title: 'Geschichte der Mathematik und antike Probleme: Die drei klassischen Probleme der Konstruktion und die archimedische Spirale'
+date: "2026-09-24T19:44:38+09:00"
 slug: "MathematikのGeschichte"
 date: 2023-07-22T15:25:10+09:00
 tags: ["Mathematik", "Geschichte"]

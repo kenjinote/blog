@@ -1,5 +1,6 @@
 ---
 title: "Kesenjangan Antara Intuisi dan Probabilitas: Menggali Kedalaman Paradoks Monty Hall"
+date: "2026-09-24T19:44:38+09:00"
 description: "Perwakilan utama dari teori probabilitas yang berlawanan dengan intuisi, \"Masalah Monty Hall\". Mengapa intuisi manusia bisa sangat jauh berbeda dengan probabilitas? Dari pembuktian matematis hingga latar belakang psikologis, kami akan menjelaskan secara tuntas keseluruhan paradoks ini."
 slug: "paradox-monty-hall-problem"
 categories: ["science"]

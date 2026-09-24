@@ -1,5 +1,6 @@
 ---
 title: "에츠허르 다익스트라: 컴퓨터 과학의 기초를 다진 반골 철학자"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["edsger-dijkstra", "history"]

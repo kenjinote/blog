@@ -8,6 +8,7 @@
 
 
 title: '¡Ejecutando TinyLLaMA con C++! Pasos para configurar un entorno LLM local usando llama.cpp'
+date: "2026-09-24T19:44:38+09:00"
 slug: "TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）"
 date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "IA"]

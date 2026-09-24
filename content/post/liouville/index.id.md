@@ -1,5 +1,6 @@
 ---
 title: 'Joseph Liouville: Perintis Bilangan Transenden dan Analisis Kompleks'
+date: "2026-09-24T19:44:38+09:00"
 description: 'Mengeksplorasi kehidupan dan warisan Joseph Liouville, matematikawan hebat Prancis abad ke-19 yang dikenal karena teorema Liouville, bilangan transenden, teori Sturm-Liouville, dan pemulihan teori Galois.'
 slug: 'liouville'
 date: '2026-09-20T19:20:00+09:00'

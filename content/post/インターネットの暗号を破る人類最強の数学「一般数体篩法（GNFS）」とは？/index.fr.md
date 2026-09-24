@@ -1,5 +1,6 @@
 ---
 title: 'Explication claire de la mathématique la plus puissante de l''humanité pour casser les codes : Le ''Crible général du corps de nombres (GNFS)'''
+date: "2026-09-24T19:44:38+09:00"
 slug: "インターネットのCryptographieを破る人類最強のMathématiques「一般数体篩法（GNFS）」とは？"
 date: 2026-09-05T02:09:08+09:00
 tags: ["Mathématiques", "Cryptographie", "RSA", "GNFS"]

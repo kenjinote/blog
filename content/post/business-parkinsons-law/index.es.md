@@ -1,5 +1,6 @@
 ---
 title: "¿Qué es la Ley de Parkinson? Guía exhaustiva desde el mecanismo de expansión del trabajo y el tiempo hasta cómo superarlo"
+date: "2026-09-24T19:44:38+09:00"
 description: "Profundizamos exhaustivamente en la Ley de Parkinson, que dicta que \"el trabajo se expande hasta llenar el tiempo disponible para su finalización\", abarcando su contexto histórico, mecanismo psicológico y métodos específicos para superarla en los negocios y la vida diaria. Una guía completa para la gestión del tiempo y la mejora de la productividad."
 slug: "business-parkinsons-law"
 categories: ["business"]

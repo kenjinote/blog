@@ -1,5 +1,6 @@
 ---
 title: "大數法則（Law of Large Numbers） - 賭場為何必賺以及機率收斂的機制"
+date: "2026-09-24T19:44:38+09:00"
 description: "深入解析機率論中極其重要的定理「大數法則」。從賭場的獲利結構到嚴格的數學定義（弱法則和強法則），結合圖解與Python程式碼進行全面探討。"
 slug: "law-of-large-numbers"
 date: 2026-09-14

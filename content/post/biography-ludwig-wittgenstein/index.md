@@ -1,5 +1,6 @@
 ---
 title: "ルートヴィヒ・ウィトゲンシュタイン：沈黙と日常の間に生きた天才哲学者"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["ludwig-wittgenstein", "history"]

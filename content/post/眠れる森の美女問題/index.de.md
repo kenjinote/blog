@@ -1,5 +1,6 @@
 ---
 title: 'Das Dornröschen-Problem: Ist die Wahrscheinlichkeit der Münze 1/2 oder 1/3? Ein Paradoxon, das die Wahrscheinlichkeitstheorie spaltet'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'sleeping-beauty-paradox'
 description: '"Wie hoch ist die Wahrscheinlichkeit, dass das Ergebnis des Münzwurfs Kopf war, jetzt, wo Sie aufgewacht sind?" Wir erklären das neueste Paradoxon, bei dem trotz eines sehr einfachen Aufbaus Mathematiker und Philosophen weltweit in "1/2-Anhänger" und "1/3-Anhänger" gespalten sind und weiterhin debattieren.'
 date: '2026-09-10T09:00:00+09:00'

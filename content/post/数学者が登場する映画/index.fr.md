@@ -1,5 +1,6 @@
 ---
 title: 'Un génie des mathématiques comme héros ! Films recommandés et histoires de décryptage'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Mathématicienが登場するFilm"
 date: 2022-09-05T10:41:00+09:00
 tags: ["Films", "Mathématiciens"]

@@ -1,5 +1,6 @@
 ---
 title: "フランクリン・D・ルーズベルト：危機を乗り越えた第32代アメリカ合衆国大統領の軌跡"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["franklin-d-roosevelt", "history"]

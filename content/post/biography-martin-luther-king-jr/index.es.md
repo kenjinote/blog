@@ -1,5 +1,6 @@
 ---
 title: "Martin Luther King Jr.: La encarnación de un sueño que cambió el mundo a través de la no violencia"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["martin-luther-king-jr", "history"]

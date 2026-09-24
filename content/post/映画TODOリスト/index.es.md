@@ -4,6 +4,7 @@
 
 
 title: '¡Imprescindible! Lista de tareas (TODO) personal de películas por ver y registro de obras recomendadas que ya he visto'
+date: "2026-09-24T19:44:38+09:00"
 slug: "PelículaTODOリスト"
 date: 2023-04-17T00:34:13+09:00
 tags: ["Películas", "TODO"]

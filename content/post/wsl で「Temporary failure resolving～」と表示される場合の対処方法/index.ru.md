@@ -1,5 +1,6 @@
 ---
 title: 'Что делать, если при выполнении apt update в WSL появляется ошибка «Temporary failure resolving»'
+date: "2026-09-24T19:44:38+09:00"
 slug: "wsl で「Temporary failure resolving～」と表示される場合のСпособ решения"
 date: 2024-03-31T16:57:33+09:00
 tags: ["wsl", "устранение неполадок"]

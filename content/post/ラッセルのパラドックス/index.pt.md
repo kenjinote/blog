@@ -1,5 +1,6 @@
 ---
 title: 'Paradoxo de Russell: O "conjunto de conjuntos que não contêm a si mesmos" contém a si mesmo?'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'russells-paradox'
 description: '"O barbeiro que rapa a barba dos aldeões que não rapam a sua própria barba, rapa a sua própria barba?" Explicaremos o terrível paradoxo de Bertrand Russell que abalou a "Teoria dos Conjuntos", o cerne da matemática, e mudou a história da lógica.'
 date: '2026-09-10T04:00:00+09:00'

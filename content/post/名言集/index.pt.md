@@ -1,5 +1,6 @@
 ---
 title: 'Coleção de citações que enriquecem a vida: Uma compilação de palavras comoventes de grandes figuras históricas e celebridades'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Coleção de Citações"
 date: 2022-10-15T17:00:43+09:00
 tags: ["Citações"]

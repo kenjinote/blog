@@ -1,5 +1,6 @@
 ---
 title: "Lewis Carroll: The Trajectory of the Mathematician and Logician Who Created 'Alice in Wonderland'"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:51:47+09:00
 categories: ["biography"]
 tags: ["lewis-carroll", "history"]

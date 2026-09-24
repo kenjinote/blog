@@ -1,5 +1,6 @@
 ---
 title: "Satz von Cayley-Hamilton: Die wundersame Eigenschaft einer Matrix, die ihre eigene 'charakteristische Gleichung' erfüllt"
+date: "2026-09-24T19:44:38+09:00"
 description: "Eine detaillierte Erklärung des Satzes von Cayley-Hamilton, eines der überraschendsten Ergebnisse der linearen Algebra, von seiner intuitiven Bedeutung über seinen Beweis bis hin zu Anwendungen."
 slug: "cayley-hamilton-theorem"
 date: 2026-09-20T14:50:00+09:00

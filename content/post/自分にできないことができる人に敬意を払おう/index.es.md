@@ -7,6 +7,7 @@
 
 
 title: 'Respetemos a los que pueden hacer lo que nosotros no podemos | Actitud mental para eliminar la superioridad o inferioridad en el trabajo'
+date: "2026-09-24T19:44:38+09:00"
 slug: "自分にできないことができる人に敬意を払おう"
 date: 2023-08-01T23:42:31+09:00
 tags: ["poema", "pensamientos"]

@@ -1,5 +1,6 @@
 ---
 title: "斯里尼瓦瑟·拉马努金：编织直觉与无限的印度魔术师"
+date: "2026-09-24T19:44:38+09:00"
 description: "详细解读仅凭直觉便发现无数未知公式、被誉为“印度魔术师”的天才数学家斯里尼瓦瑟·拉马努金的一生与成就，及其对现代数学产生的深远影响。"
 slug: "biography-srinivasa-ramanujan"
 categories: ["biography"]

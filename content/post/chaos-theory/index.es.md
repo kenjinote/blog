@@ -1,5 +1,6 @@
 ---
 title: "La Teoría del Caos y el Efecto Mariposa - Cómo Ligeras Diferencias en los Valores Iniciales Hacen que el Futuro Sea Impredecible"
+date: "2026-09-24T19:44:38+09:00"
 description: "Una guía exhaustiva sobre la teoría del caos y el efecto mariposa, sistemas dinámicos no lineales con dependencia sensible a las condiciones iniciales, desde sus antecedentes históricos hasta sus fundamentos matemáticos, fractales y aplicaciones en el mundo real."
 slug: "chaos-theory"
 date: 2026-09-14T13:20:38+09:00

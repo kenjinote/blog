@@ -1,5 +1,6 @@
 ---
 title: "नेपोलियन बोनापार्ट: क्रांति का पुत्र या तानाशाह?"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["napoleon-bonaparte", "history"]

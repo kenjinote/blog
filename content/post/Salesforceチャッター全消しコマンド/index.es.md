@@ -3,6 +3,7 @@
 
 
 title: 'Salesforce: Comando para borrar todas las publicaciones y archivos adjuntos de Chatter'
+date: "2026-09-24T19:44:38+09:00"
 slug: "SalesforceChatter全消しComando"
 date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "Chatter"]

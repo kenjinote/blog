@@ -1,5 +1,6 @@
 ---
 title: "C언어의 철학: 포인터와 자유가 가져온 프로그래밍의 심연"
+date: "2026-09-24T19:44:38+09:00"
 description: "C언어의 핵심에 있는 \"포인터\"와 \"자유\". 개발자에게 모든 것을 맡기는 그 철학은 어떻게 하드웨어의 한계를 끌어내고 프로그래머를 성장시키는가. 메모리 관리의 심연에 다가가는 상세한 고찰."
 slug: "philosophy-c-language-pointers"
 categories: ["philosophy"]

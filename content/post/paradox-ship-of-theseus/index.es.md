@@ -1,5 +1,6 @@
 ---
 title: "El Barco de Teseo: La paradoja definitiva que cuestiona los límites de la identidad"
+date: "2026-09-24T19:44:38+09:00"
 description: "El \"Barco de Teseo\" es una paradoja filosófica de la antigua Grecia. ¿Un barco cuyas piezas han sido reemplazadas por completo sigue siendo el mismo barco? Profundizamos en qué es verdaderamente la identidad personal."
 slug: "paradox-ship-of-theseus"
 categories: ["philosophy"]

@@ -1,5 +1,6 @@
 ---
 title: "بنية Kubernetes (K8s): الـ Pod و Service و Ingress ومستوى التحكم"
+date: "2026-09-24T19:44:38+09:00"
 description: "نظرة شاملة على Kubernetes، المعيار الفعلي لتنسيق الحاويات. سنشرح بالتفصيل كيفية عمل مستوى التحكم (control plane) ودور الموارد المختلفة."
 slug: "kubernetes-k8s-architecture-pod-service-ingress"
 date: 2026-09-21T09:00:00+09:00

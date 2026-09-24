@@ -4,6 +4,7 @@
 
 
 title: '¡Protagonizadas por genios matemáticos! Obras maestras cinematográficas recomendadas e historias de criptografía'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Matemáticoが登場するPelícula"
 date: 2022-09-05T10:41:00+09:00
 tags: ["Películas","Matemáticos"]

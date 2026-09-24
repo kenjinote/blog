@@ -7,6 +7,7 @@
 
 
 title: '¡Actualiza páginas web automáticamente en Edge! Cómo usar la útil extensión ''Actualización automática de pestañas'''
+date: "2026-09-24T19:44:38+09:00"
 slug: "WebページのActualización automáticaExtensión de navegador(Complemento de Edge)"
 date: 2024-04-06T15:36:54+09:00
 tags: ["Extensión de navegador", "Complemento de Edge", "Actualización automática"]

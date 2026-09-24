@@ -1,5 +1,6 @@
 ---
 title: "Das Schubfachprinzip und Hash-Kollisionen: Warum völlig verschiedene Daten denselben Hash-Wert erzeugen"
+date: "2026-09-24T19:44:38+09:00"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "Eine einfache und mathematisch fundierte Erklärung der Prinzipien hinter den in der IT unentbehrlichen Hash-Funktionen, des unausweichlichen Problems der „Hash-Kollisionen“ und der Verbindung zum „Schubfachprinzip“ aus der Mathematik."

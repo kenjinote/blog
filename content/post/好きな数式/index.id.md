@@ -1,5 +1,6 @@
 ---
 title: 'Dunia Matematika yang Terlalu Indah: Rangkuman Rumus Favorit Seperti Teorema Wilson dan Rumus Euler'
+date: "2026-09-24T19:44:38+09:00"
 slug: "好きなRumus"
 date: 2022-10-05T13:24:50+09:00
 tags: ["Matematika"]

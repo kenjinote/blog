@@ -1,5 +1,6 @@
 ---
 title: "Kapal Theseus: Apakah Kapal yang Semua Bagiannya Telah Diganti Masih 'Kapal yang Sama'? Memahami Identitas dari Perspektif Rekayasa Perangkat Lunak"
+date: "2026-09-24T19:44:38+09:00"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "Mengambil tema paradoks filsafat Yunani 'Kapal Theseus', artikel ini mengkaji secara mendalam tentang refactoring, penggantian sistem dalam pengembangan perangkat lunak, serta 'identitas' dalam pemrograman berorientasi objek."

@@ -1,5 +1,6 @@
 ---
 title: "日本資本主義の父・渋沢栄一：道徳と経済の合一を目指した生涯"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["eiichi-shibusawa", "history"]

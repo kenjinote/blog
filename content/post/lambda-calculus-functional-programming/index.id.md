@@ -1,5 +1,6 @@
 ---
 title: "Kalkulus Lambda (Lambda Calculus) dan Asal-usul Pemrograman Fungsional: Dari Teori Alonzo Church ke Lisp dan Haskell"
+date: "2026-09-24T19:44:38+09:00"
 description: "Bagaimana Kalkulus Lambda, teori dasar komputasi, berkembang menjadi bahasa pemrograman fungsional modern. Kami akan menjelaskan secara mendalam sejarah dan dasar matematis dari teori Alonzo Church hingga lahirnya Lisp dan Haskell."
 slug: lambda-calculus-functional-programming
 date: 2026-09-21T02:35:46+09:00

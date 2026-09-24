@@ -1,5 +1,6 @@
 ---
 title: "The Origins of Lambda Calculus and Functional Programming: From Alonzo Church's Theory to Lisp and Haskell"
+date: "2026-09-24T19:44:38+09:00"
 description: "How lambda calculus, the foundational theory of computation, evolved into modern functional programming languages. A thorough explanation of the history and mathematical foundations from Alonzo Church's theory to the birth of Lisp and Haskell."
 slug: lambda-calculus-functional-programming
 date: 2026-09-21T02:35:46+09:00

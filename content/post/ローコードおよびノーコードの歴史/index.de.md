@@ -1,5 +1,6 @@
 ---
 title: 'Die Geschichte der Low-Code- und No-Code-Entwicklung (1980er Jahre bis heute) | Von HyperCard bis zu den neuesten Tools'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Low-CodeおよびNo-CodeのGeschichte"
 date: 2025-04-26T16:46:11+09:00
 tags: ["Low-Code", "No-Code", "Geschichte"]

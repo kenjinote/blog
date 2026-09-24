@@ -1,5 +1,6 @@
 ---
 title: 'Atualização automática de páginas web no Edge! Como usar a útil extensão de navegador ''Atualização automática de guias'''
+date: "2026-09-24T19:44:38+09:00"
 slug: "WebページのAtualização AutomáticaExtensão do Navegador(Add-on do Edge)"
 date: 2024-04-06T15:36:54+09:00
 tags: ["Extensão de navegador", "Add-on Edge", "Atualização automática"]

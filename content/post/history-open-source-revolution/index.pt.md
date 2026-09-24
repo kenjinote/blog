@@ -1,5 +1,6 @@
 ---
 title: "A Revolução do Código Aberto e \"A Catedral e o Bazar\": Uma Mudança de Paradigma que Alterou a História do Desenvolvimento de Software"
+date: "2026-09-24T19:44:38+09:00"
 description: "Como \"A Catedral e o Bazar\" construiu as bases do desenvolvimento moderno de software de código aberto, com uma explicação detalhada desde o seu contexto histórico até a sua influência na engenharia de software atual."
 slug: "history-open-source-revolution"
 categories: ["history"]

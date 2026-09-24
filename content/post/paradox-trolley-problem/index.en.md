@@ -1,5 +1,6 @@
 ---
 title: "The Trolley Problem: The Ultimate Choice in Ethics and the Abyss of Human Moral Intuition"
+date: "2026-09-24T19:44:38+09:00"
 description: "Five workers are on the tracks ahead of a runaway trolley, and one is on a side track. Do you pull the lever? From Philippa Foot's classic thought experiment to the AI ethics of self-driving cars, this article delves deeply into the clash between utilitarianism and deontology posed by the \"Trolley Problem\" and the mechanisms of human moral decision-making over thousands of words."
 slug: "paradox-trolley-problem"
 categories: ["philosophy"]

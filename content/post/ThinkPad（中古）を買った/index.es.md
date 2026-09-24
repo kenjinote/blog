@@ -3,6 +3,7 @@
 
 
 title: '¡Compré una ThinkPad T470s de segunda mano! Reseña honesta sobre sus especificaciones, usabilidad y puntos débiles'
+date: "2026-09-24T19:44:38+09:00"
 slug: "ThinkPad（中古）を買った"
 date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "Portátil"]

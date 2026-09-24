@@ -1,5 +1,6 @@
 ---
 title: "Lisp와 \"신의 언어\"――S식의 아름다움과 코드-애즈-데이터 철학"
+date: "2026-09-24T19:44:38+09:00"
 description: "프로그래밍 언어 Lisp가 왜 \"신의 언어\"로 불리는가. 그 핵심에 있는 S식의 아름다움, 동형성(Homoiconicity), 매크로에 의한 메타 프로그래밍의 심연에 대해 철저히 고찰하는 기술 철학 에세이."
 slug: "philosophy-lisp-s-expressions"
 categories: ["philosophy"]

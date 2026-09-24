@@ -1,5 +1,6 @@
 ---
 title: "IaC（基礎設施即程式碼）與 Terraform：宣告式組態管理的哲學"
+date: "2026-09-24T19:44:38+09:00"
 description: "探討使用程式碼管理基礎設施的 IaC 重要性，以及 Terraform 所採用的宣告式方法的優勢。本文將解說狀態管理（State）的機制與最佳實踐。"
 slug: "iac-infrastructure-as-code-terraform"
 date: 2026-09-21T09:00:00+09:00

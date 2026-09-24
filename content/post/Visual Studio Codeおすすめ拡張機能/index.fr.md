@@ -1,5 +1,6 @@
 ---
 title: 'Résumé des extensions VSCode recommandées ! Liste des plugins qui améliorent considérablement l''efficacité du développement'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Visual Studio CodeRecommandationExtension"
 date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "Extensions", "Extension"]

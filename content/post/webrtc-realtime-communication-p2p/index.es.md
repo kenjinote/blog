@@ -1,5 +1,6 @@
 ---
 title: "Los entresijos de WebRTC y la comunicación en tiempo real: P2P, STUN/TURN, señalización"
+date: "2026-09-24T19:44:38+09:00"
 description: "Cómo funciona WebRTC para lograr comunicación directa entre navegadores. Un análisis profundo de aspectos complejos como el cruce de NAT (STUN/TURN), los servidores de señalización y el protocolo ICE."
 slug: "webrtc-realtime-communication-p2p"
 date: 2026-09-20T17:10:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: '使用 GitHub Actions 建構 C++ 專案的 CI/CD 管線'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'github-actions-cpp-cicd-pipeline'
 date: '2026-09-12T18:00:00+09:00'
 image: "eyecatch.jpg"

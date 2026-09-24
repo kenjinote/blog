@@ -1,5 +1,6 @@
 ---
 title: "존 D. 록펠러: 근대 자본주의를 형성한 석유왕의 생애와 철학"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["john-d-rockefeller", "history"]

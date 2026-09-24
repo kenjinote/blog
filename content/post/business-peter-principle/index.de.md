@@ -1,5 +1,6 @@
 ---
 title: "Das Peter-Prinzip: Warum fähige Menschen befördert werden, bis sie inkompetent sind? Eine gründliche Analyse der Organisationsfalle und Gegenmaßnahmen"
+date: "2026-09-24T19:44:38+09:00"
 description: "Eine detaillierte Erklärung des \"Peter-Prinzips\", eines universellen Phänomens in Organisationen, bei dem \"fähige Mitarbeiter zu inkompetenten Managern werden\", von seinen Mechanismen bis hin zu konkreten Gegenmaßnahmen. Was ist die Weisheit, um das Schicksal einer hierarchischen Gesellschaft zu überleben?"
 slug: "business-peter-principle"
 categories: ["business"]

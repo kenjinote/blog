@@ -1,5 +1,6 @@
 ---
 title: "The Abyss of Time Travel: A Comprehensive Guide to the Grandfather Paradox and Its Solutions"
+date: "2026-09-24T19:44:38+09:00"
 description: "A detailed explanation of the grandfather paradox, the greatest challenge in time travel, from the perspectives of physics and philosophy, covering relativity, quantum mechanics, the many-worlds interpretation, and Novikov's self-consistency principle."
 slug: "paradox-grandfather-paradox"
 categories: ["science"]

@@ -1,5 +1,6 @@
 ---
 title: "프랭클린 D. 루스벨트: 위기를 극복한 제32대 미국 대통령의 궤적"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["franklin-d-roosevelt", "history"]

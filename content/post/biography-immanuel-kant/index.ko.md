@@ -1,5 +1,6 @@
 ---
 title: "임마누엘 칸트: 근대 철학의 정점을 찍은 '코페르니쿠스적 전환'의 궤적"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["immanuel-kant", "history"]

@@ -1,5 +1,6 @@
 ---
 title: "Algoritmos de Monte Carlo e Las Vegas: Os algoritmos 'mais fortes' que usam números aleatórios"
+date: "2026-09-24T19:44:38+09:00"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "Explicaremos dois algoritmos probabilísticos representativos que utilizam números aleatórios: o método de Monte Carlo e o método de Las Vegas. Resumimos implementações de algoritmos específicos e a diferença entre cada um, de forma fácil de entender."

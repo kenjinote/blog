@@ -1,5 +1,6 @@
 ---
 title: "亚伯拉罕·林肯：领导分裂国家的“伟大的解放者”的生平与哲学"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["abraham-lincoln", "history"]

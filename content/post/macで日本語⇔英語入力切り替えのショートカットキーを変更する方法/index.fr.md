@@ -1,5 +1,6 @@
 ---
 title: 'Comment changer le raccourci clavier pour basculer entre la saisie en japonais et en anglais sur Mac (pour clavier US)'
+date: "2026-09-24T19:44:38+09:00"
 slug: "macでJaponais⇔英語入力切り替えのTouche de raccourciを変更する方法"
 date: 2023-04-04T23:02:12+09:00
 tags: ["macos", "mac", "Touche de raccourci", "Saisie en japonais"]

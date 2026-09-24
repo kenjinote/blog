@@ -1,5 +1,6 @@
 ---
 title: "柏拉图的生平与哲学：奠定西方思想基础的伟大思想家"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["plato", "history"]

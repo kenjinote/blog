@@ -1,5 +1,6 @@
 ---
 title: 'Was bedeutet es zu „verstehen“? Über die Mehrdeutigkeit des Verstehens und seinen Wert'
+date: "2026-09-24T19:44:38+09:00"
 slug: "わかるってなんだろう？"
 date: 2022-09-24T02:38:18+09:00
 tags: ["Verschiedenes"]

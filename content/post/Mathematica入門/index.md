@@ -1,5 +1,6 @@
 ---
 title: 'Mathematica入門：方程式・微分積分など基本コマンドの使い方'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Mathematica入門"
 date: 2024-07-25T01:36:19+09:00
 tags: ["Mathematica", "数学", "アルゴリズム"]

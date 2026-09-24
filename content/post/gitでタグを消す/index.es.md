@@ -2,6 +2,7 @@
 
 
 title: 'Cómo eliminar etiquetas (tags) locales y remotas en Git'
+date: "2026-09-24T19:44:38+09:00"
 slug: "gitでタグを消す"
 date: 2022-10-02T02:18:04+09:00
 tags: ["git"]

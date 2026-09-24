@@ -1,5 +1,6 @@
 ---
 title: 'Achilles dan Kura-kura: Tidak Bisakah Dia Menyusul, atau Bisakah? Paradoks "Tak Terhingga" dari Yunani Kuno'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'achilles-and-the-tortoise'
 description: 'Pahlawan pelari cepat Achilles tidak akan pernah bisa menyusul kura-kura yang lambat? Pertanyaan paling terkenal dari paradoks Zeno ini telah membingungkan para filsuf dan matematikawan selama lebih dari 2000 tahun. Kami akan memecahkan trik logika ini secara matematis menggunakan konsep deret tak terhingga dan limit.'
 date: '2026-09-10T01:00:00+09:00'

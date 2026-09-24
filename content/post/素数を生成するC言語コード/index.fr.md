@@ -1,5 +1,6 @@
 ---
 title: 'Code source simple en langage C pour générer et déterminer les nombres premiers dans une plage spécifiée'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Nombre premierを生成するC言語コード"
 date: 2024-08-24T09:38:10+09:00
 tags: ["C", "Nombres premiers", "Algorithme", "Mathématiques"]

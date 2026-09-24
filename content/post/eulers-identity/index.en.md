@@ -1,5 +1,6 @@
 ---
 title: "Euler's Identity - The 'Greatest Equation Ever' Connecting 5 Different Mathematical Constants"
+date: "2026-09-24T19:44:38+09:00"
 description: "A deep explanation of the background and meaning of Euler's identity, considered the most beautiful equation in the history of mathematics."
 slug: "eulers-identity"
 date: 2026-09-14T13:00:00+09:00

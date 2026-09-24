@@ -4,6 +4,7 @@
 
 
 title: 'Hugo의 내장 쇼트코드 목록: YouTube 및 Twitter 삽입'
+date: "2026-09-24T19:44:38+09:00"
 slug: "HUGOで使える쇼트コード"
 date: 2022-09-11T22:59:52+09:00
 tags: ["HUGO"]

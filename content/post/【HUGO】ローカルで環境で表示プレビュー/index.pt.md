@@ -1,5 +1,6 @@
 ---
 title: '[Introdução ao Hugo] Da instalação no Windows a como exibir a visualização no ambiente local'
+date: "2026-09-24T19:44:38+09:00"
 slug: "【HUGO】ローカルで環境で表示プレビュー"
 date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]

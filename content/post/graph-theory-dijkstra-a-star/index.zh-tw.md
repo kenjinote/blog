@@ -1,5 +1,6 @@
 ---
 title: "圖論與 Dijkstra、A* 演算法：路徑搜尋的數學基礎與實作"
+date: "2026-09-24T19:44:38+09:00"
 description: "從圖論基礎開始，徹底解說最短路徑問題中 Dijkstra 與 A* 演算法的數學背景、資料結構與 Python 實作。"
 slug: graph-theory-dijkstra-a-star
 date: 2026-09-21T02:45:54+09:00

@@ -1,5 +1,6 @@
 ---
 title: 'Cauchyscher Integralsatz: Das schöne Fundament der Funktionentheorie, wo Integrale verschwinden'
+date: "2026-09-24T19:44:38+09:00"
 description: 'Eine ausführliche Erklärung des Cauchyschen Integralsatzes, eines der wichtigsten Sätze der Funktionentheorie, von seiner intuitiven Bedeutung über eine Skizze des Beweises mit dem Satz von Green bis hin zur Anwendung auf die Integralformel.'
 slug: 'cauchys-integral-theorem'
 date: 2026-09-20T14:30:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: 'Ein 400 Jahre altes Rätsel! Was ist die keplersche Vermutung? Eine verständliche Erklärung der Romantik der Mathematik, die wir vom Packen von Wassermelonen lernen können'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Keplersche Vermutungをわかりやすく解説"
 date: 2025-07-21T22:53:03+09:00
 tags: ["Mathematik", "Kepler-Vermutung", "Erklärung"]

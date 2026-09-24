@@ -4,6 +4,7 @@
 
 
 title: 'Salesforce: 채터의 게시물과 첨부 파일을 모두 삭제하는 명령어'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Salesforce채터全消し명령어"
 date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "채터"]

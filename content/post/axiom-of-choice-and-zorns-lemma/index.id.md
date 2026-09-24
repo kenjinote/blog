@@ -1,5 +1,6 @@
 ---
 title: "Aksioma Pilihan dan Lemma Zorn - Konsep 'Pilihan' yang Mengguncang Fondasi Matematika"
+date: "2026-09-24T19:44:38+09:00"
 description: "Mendalami aksioma pilihan dan lemma Zorn, dari makna intuitifnya hingga formulasi matematis dan pentingnya dalam matematika modern."
 slug: "axiom-of-choice-and-zorns-lemma"
 date: 2026-09-14T13:20:37+09:00

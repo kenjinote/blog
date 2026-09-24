@@ -1,5 +1,6 @@
 ---
 title: 'Masalah dan Rasa Kejanggalan pada Masyarakat Jepang: Penurunan Angka Kelahiran Dilihat dari Masalah Beasiswa dan Teori Tanggung Jawab Pribadi'
+date: "2026-09-24T19:44:38+09:00"
 slug: "日本についてPikiran"
 date: 2022-09-06T02:24:11+09:00
 tags: ["Catatan Harian"]

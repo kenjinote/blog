@@ -1,5 +1,6 @@
 ---
 title: '【開機循環修復】Google Pixel裝置軟體還原與初始化的官方步驟'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Android(Google Pixel)端末の還原手順"
 date: 2025-02-28T01:20:41+09:00
 tags: ["Android", "Google Pixel", "還原", "疑難排解"]

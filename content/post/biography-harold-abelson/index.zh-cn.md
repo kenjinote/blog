@@ -1,5 +1,6 @@
 ---
 title: "哈罗德·阿贝尔森：编程教育与开放文化的巨匠"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["harold-abelson", "history"]

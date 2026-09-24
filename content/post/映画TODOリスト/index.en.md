@@ -1,5 +1,6 @@
 ---
 title: 'Must-See! Personal Movie Watchlist and Log of Recommended Works Already Watched'
+date: "2026-09-24T19:44:38+09:00"
 slug: "MovieTODOリスト"
 date: 2023-04-17T00:34:13+09:00
 tags: ["Movie", "TODO"]

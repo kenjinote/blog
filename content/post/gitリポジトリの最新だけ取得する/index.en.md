@@ -1,5 +1,6 @@
 ---
 title: 'How to Get Only the Latest Commit of a Repository with Git clone'
+date: "2026-09-24T19:44:38+09:00"
 slug: "gitRepositoryの最新だけ取得する"
 date: 2024-04-27T02:54:12+09:00
 tags: ["git", "repository", "command"]

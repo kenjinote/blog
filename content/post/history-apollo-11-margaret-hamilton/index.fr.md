@@ -1,5 +1,6 @@
 ---
 title: "Le code qui a mené l'humanité sur la Lune : Margaret Hamilton et le génie logiciel d'Apollo 11"
+date: "2026-09-24T19:44:38+09:00"
 description: "En 1969, Apollo 11 a réussi le premier alunissage de l'humanité. Derrière cela se trouvait un logiciel robuste développé par Margaret Hamilton et son équipe. Nous expliquons en détail ses réalisations qui ont jeté les bases du génie logiciel moderne et l'ensemble du code source de l'Apollo Guidance Computer (AGC)."
 slug: "history-apollo-11-margaret-hamilton"
 categories: ["history"]

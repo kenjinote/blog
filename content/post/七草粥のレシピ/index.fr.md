@@ -1,5 +1,6 @@
 ---
 title: '【Les sept herbes du printemps】Recette de la bouillie aux sept herbes (Nanakusa-gayu) pour prier pour la santé, comment s''en souvenir et signification'
+date: "2026-09-24T19:44:38+09:00"
 slug: "七草粥のレシピ"
 date: 2024-01-06T22:22:00+09:00
 tags: ["Nanakusa-gayu", "Cuisine"]

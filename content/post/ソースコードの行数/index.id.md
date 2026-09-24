@@ -1,5 +1,6 @@
 ---
 title: 'Bagaimana Skala Perangkat Lunak Berubah? Sejarah dan Evolusi Jumlah Baris Kode Sumber'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Kode SumberのJumlah Baris"
 date: 2025-04-17T10:33:02+09:00
 tags: ["kode sumber", "jumlah baris"]

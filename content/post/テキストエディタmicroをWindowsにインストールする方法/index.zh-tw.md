@@ -1,5 +1,6 @@
 ---
 title: 'Windows 也能用！輕量文字編輯器「micro」的安裝方法'
+date: "2026-09-24T19:44:38+09:00"
 slug: "文字編輯器microをWindowsに安裝する方法"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "文字編輯器"]

@@ -1,5 +1,6 @@
 ---
 title: "Identitas Euler (Euler's Identity) - Rumus Paling Berharga bagi Umat Manusia yang Menghubungkan 5 Konstanta Matematika Berbeda"
+date: "2026-09-24T19:44:38+09:00"
 description: "Penjelasan mendalam tentang latar belakang dan makna Identitas Euler yang dianggap paling indah dalam sejarah matematika."
 slug: "eulers-identity"
 date: 2026-09-14T13:00:00+09:00

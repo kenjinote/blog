@@ -1,5 +1,6 @@
 ---
 title: 'Jangan Menyerah pada Kritik! Tips Hidup Kuat Belajar dari Kutipan Einstein'
+date: "2026-09-24T19:44:38+09:00"
 slug: "EinsteinのKutipan"
 date: 2024-08-24T18:38:47+09:00
 tags: ["Albert Einstein", "Kutipan", "Filsafat", "Sains", "Fisika"]

@@ -1,5 +1,6 @@
 ---
 title: "Does seeing a blue apple prove 'ravens are black'? : Hempel's Ravens"
+date: "2026-09-24T19:44:38+09:00"
 description: "Can we prove the hypothesis that 'all ravens are black' without ever seeing a single raven? The paradox of induction created by logical equivalence."
 date: 2026-09-10T21:00:00+09:00
 draft: false

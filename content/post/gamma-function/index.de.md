@@ -1,5 +1,6 @@
 ---
 title: "Die Gammafunktion: Eulers Meisterwerk, das die Fakultät auf reelle und komplexe Zahlen erweitert"
+date: "2026-09-24T19:44:38+09:00"
 description: "Die Gammafunktion verbindet diskrete Fakultäten mit einer glatten Kurve. Wir untersuchen ihre Definition, Eigenschaften, Eulers Entdeckungsgeschichte, analytische Fortsetzung, Stirlingsche Formel und ihre Anwendungen in der modernen Wissenschaft."
 slug: "gamma-function"
 date: 2026-09-20T14:40:00+09:00

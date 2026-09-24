@@ -1,5 +1,6 @@
 ---
 title: '[JS] Comment cocher toutes les cases d''une page Web en une seule fois (avec bookmarklet)'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Webページ内のすべてのチェックボックスを全チェックする"
 date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "automatisation"]

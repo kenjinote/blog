@@ -1,5 +1,6 @@
 ---
 title: 'Éteindre le PC en un clic ! Comment créer un raccourci pour arrêter Windows'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Windows をArrêtするRaccourciを作成する方法"
 date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "Arrêter", "Raccourci"]

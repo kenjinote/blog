@@ -8,6 +8,7 @@
 
 
 title: '【무한 재부팅 복구】 Google Pixel 단말기 소프트웨어 복원 및 초기화 공식 절차'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Android(Google Pixel)端末の복원手順"
 date: 2025-02-28T01:20:41+09:00
 tags: ["Android", "Google Pixel", "복원", "트러블슈팅"]

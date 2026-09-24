@@ -1,5 +1,6 @@
 ---
 title: '로컬에서 실행 가능한 오픈소스 LLM 추천 모델 5선'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'top-5-open-source-local-llms'
 date: '2026-09-11T03:00:00+09:00'
 image: 'img/eyecatch.jpg'

@@ -2,6 +2,7 @@
 
 
 title: 'Pasos de instalación de Go (Golang) y cómo ejecutar tu primer programa'
+date: "2026-09-24T19:44:38+09:00"
 slug: "GoをInstalaciónする方法"
 date: 2022-09-10T00:48:17+09:00
 tags: ["Go","Instalación"]

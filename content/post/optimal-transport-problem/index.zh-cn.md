@@ -1,5 +1,6 @@
 ---
 title: "最优传输问题：以最小代价移动沙堆的数学"
+date: "2026-09-24T19:44:38+09:00"
 description: "通过移动量和距离来考虑传输成本，进而引出衡量分布间差异的 Wasserstein 距离。"
 slug: "optimal-transport-problem"
 date: 2026-09-20T12:00:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: "夢を形にした男：ウォルト・ディズニーの生涯と創造の軌跡"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["walt-disney", "history"]

@@ -1,5 +1,6 @@
 ---
 title: "Teori Ramsey: Keteraturan Pasti Muncul dalam Kekacauan — Pembuktian Hubungan 6 Orang Lewat Pewarnaan Graf"
+date: "2026-09-24T19:44:38+09:00"
 description: "Ketika 6 orang berkumpul, pasti selalu ada 3 orang yang saling mengenal atau 3 orang yang sama sekali tidak saling mengenal. Membuktikan bilangan Ramsey R(3,3)=6 dengan diagram berwarna, contoh penyangkal 5 orang, verifikasi seluruh 32.768 kemungkinan, hingga penerapannya pada barisan bilangan dan jaringan."
 date: 2026-09-16T20:05:00+09:00
 image: "eyecatch.jpg"

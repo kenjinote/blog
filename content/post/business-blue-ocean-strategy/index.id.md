@@ -1,5 +1,6 @@
 ---
 title: "【Strategi Blue Ocean: Teori Bisnis Tertinggi untuk Menciptakan Pasar Belum Terjamah Tanpa Persaingan】"
+date: "2026-09-24T19:44:38+09:00"
 description: "【Penjelasan menyeluruh tentang kerangka kerja konkret dan strategi praktis untuk keluar dari Red Ocean (pasar persaingan berdarah) dan membuka ruang pasar baru tanpa persaingan (Blue Ocean).】"
 slug: "business-blue-ocean-strategy"
 categories: ["business"]

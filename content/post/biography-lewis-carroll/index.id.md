@@ -1,5 +1,6 @@
 ---
 title: "Lewis Carroll: Jejak Matematikawan dan Ahli Logika Pencipta 'Alice in Wonderland'"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:51:47+09:00
 categories: ["biography"]
 tags: ["lewis-carroll", "history"]

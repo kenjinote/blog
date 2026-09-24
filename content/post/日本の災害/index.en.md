@@ -1,5 +1,6 @@
 ---
 title: 'Records of Natural Disasters in Japan: The 2024 Noto Peninsula Earthquake and Damage Situation'
+date: "2026-09-24T19:44:38+09:00"
 slug: "日本のDisaster"
 date: 2024-01-07T00:50:09+09:00
 tags: ["Disasters", "Data"]

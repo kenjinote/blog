@@ -1,5 +1,6 @@
 ---
 title: 'O que é um Computador Quântico? Explicando do zero os princípios fundamentais da computação como superposição e emaranhamento quântico'
+date: "2026-09-24T19:44:38+09:00"
 slug: "quantum-computer-basics"
 date: 2026-09-05T22:10:00+09:00
 tags: ["Computador Quântico", "Física", "Tecnologia"]

@@ -1,5 +1,6 @@
 ---
 title: 'Aquiles e a Tartaruga: Ele nunca a alcançará, ou alcançará? O paradoxo do "infinito" da Grécia Antiga'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'achilles-and-the-tortoise'
 description: 'O herói de pés ligeiros Aquiles nunca alcançará uma tartaruga lenta? Esta questão, a mais famosa dos paradoxos de Zenão, tem intrigado filósofos e matemáticos há mais de 2.000 anos. Usando os conceitos de soma de séries infinitas e limites, desvendamos matematicamente esse truque lógico.'
 date: '2026-09-10T01:00:00+09:00'

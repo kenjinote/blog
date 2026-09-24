@@ -1,5 +1,6 @@
 ---
 title: "La vérité sur le bug de l'an 2000 et le drame du débogage : Le combat des programmeurs anonymes qui ont sauvé le monde"
+date: "2026-09-24T19:44:38+09:00"
 description: "À la fin de 1999, le monde a paniqué à cause du \"Bug de l'an 2000\" Y2K. Était-ce juste de la paranoïa médiatique ? Non, il y a eu un drame de débogage intense impliquant des programmeurs luttant jour et nuit contre le code pour sauver les systèmes mondiaux. Découvrons la vérité."
 slug: "history-y2k-bug"
 categories: ["history"]

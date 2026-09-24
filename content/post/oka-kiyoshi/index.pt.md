@@ -1,5 +1,6 @@
 ---
 title: "Kiyosi Oka: O gênio solitário da emoção e de várias variáveis complexas"
+date: "2026-09-24T19:44:38+09:00"
 description: "Kiyosi Oka, um matemático do qual o Japão se orgulha perante o mundo. Aprofundamo-nos nos episódios de sua vida e suas conquistas matemáticas, incluindo a solução dos três grandes problemas em várias variáveis complexas. Exploramos sua filosofia de que a matemática é emoção."
 slug: "oka-kiyoshi"
 date: 2026-09-20T20:20:00+09:00

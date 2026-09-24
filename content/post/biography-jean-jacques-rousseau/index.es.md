@@ -1,5 +1,6 @@
 ---
 title: "La vida y el pensamiento de Jean-Jacques Rousseau: El inconformista de la Ilustración que persiguió la libertad y la igualdad"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["jean-jacques-rousseau", "history"]

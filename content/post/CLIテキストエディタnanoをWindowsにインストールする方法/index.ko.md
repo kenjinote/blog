@@ -7,6 +7,7 @@
 
 
 title: 'Windows에 CLI 텍스트 편집기 nano를 설치하고 환경 변수를 설정하는 방법'
+date: "2026-09-24T19:44:38+09:00"
 slug: "CLI텍스트 에디터nanoをWindowsに설치する方法"
 date: 2024-03-31T18:09:32+09:00
 tags: ["nano", "텍스트 에디터"]

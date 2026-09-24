@@ -1,5 +1,6 @@
 ---
 title: "「오마하의 현인」 워런 버핏: 장기 투자와 복리의 철학을 실천하는 투자자"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["warren-buffett", "history"]

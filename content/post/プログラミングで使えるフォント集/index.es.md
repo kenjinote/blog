@@ -7,6 +7,7 @@
 
 
 title: 'Colección de fuentes recomendadas para programación | Fuentes gratuitas fáciles de leer que mejoran la eficiencia en el desarrollo'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Programaciónで使えるFuente集"
 date: 2024-03-30T02:21:31+09:00
 tags: ["programación", "fuentes"]

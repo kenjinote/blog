@@ -1,5 +1,6 @@
 ---
 title: 'Geburtstagsparadoxon: Ab 23 Personen über 50%? Die Magie der "Kombinationen", die die Intuition täuscht'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'birthday-paradox'
 description: 'Ob in einer Schulklasse oder einer Firmenabteilung, wenn nur 23 Personen zusammenkommen, übersteigt die Wahrscheinlichkeit, dass zwei denselben Geburtstag haben, 50%. Wie leicht die menschliche Intuition die "Kombinationsexplosion" übersieht, wird hier mit Wahrscheinlichkeitstheorie und Graphen visuell und mathematisch erklärt.'
 date: '2026-09-10T00:00:00+09:00'

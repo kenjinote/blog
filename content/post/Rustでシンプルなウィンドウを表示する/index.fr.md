@@ -1,5 +1,6 @@
 ---
 title: 'Comment créer et afficher une simple fenêtre Windows avec Rust et winapi'
+date: "2026-09-24T19:44:38+09:00"
 slug: "RustでシンプルなFenêtreを表示する"
 date: 2022-10-01T19:08:58+09:00
 tags: ["Rust", "Fenêtre"]

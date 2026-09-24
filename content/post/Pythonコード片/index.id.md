@@ -1,5 +1,6 @@
 ---
 title: 'Kode Contoh untuk Mengunduh, Menyimpan Sementara, dan Menampilkan Gambar di Python'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Pythonコード片"
 date: 2025-02-24T18:21:14+09:00
 tags: ["Python", "kode sampel"]

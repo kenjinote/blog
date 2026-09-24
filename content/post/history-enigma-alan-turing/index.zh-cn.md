@@ -1,5 +1,6 @@
 ---
 title: "恩尼格玛密码破译战与艾伦·图灵：拯救世界的天才与机器"
+date: "2026-09-24T19:44:38+09:00"
 description: "决定第二次世界大战走向的恩尼格玛密码破译。本文详细解说天才数学家艾伦·图灵与布莱切利园的密码破译者们不为人知的战斗全貌。"
 slug: "history-enigma-alan-turing"
 categories: ["history"]

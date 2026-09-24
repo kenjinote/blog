@@ -1,5 +1,6 @@
 ---
 title: 'How to Create a Shortcut to Insert the Current Date in IntelliJ IDEA'
+date: "2026-09-24T19:44:38+09:00"
 slug: "IntelliJ IDEAでDateを貼り付けるCommandを追加する"
 date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]

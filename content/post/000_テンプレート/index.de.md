@@ -1,5 +1,6 @@
 ---
 title: '[Vollständige Version] Vorlage für die Erstellung von Blogartikeln! SEO-freundliche Überschriftenstruktur und Tipps zum Schreiben'
+date: "2026-09-24T19:44:38+09:00"
 slug: "000_Vorlage"
 date: 2022-01-01T00:00:00+09:00
 tags: ["Tag 1", "Tag 2"]

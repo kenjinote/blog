@@ -1,5 +1,6 @@
 ---
 title: "祖先悖論：血統崩壞（Pedigree Collapse）的數學與遺傳學"
+date: "2026-09-24T19:44:38+09:00"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "當世代向上回溯時，祖先的數量會超過當時世界人口的「祖先悖論」。本文將透過數學方法與遺傳學觀點，詳細解說解開這個謎團的「血統崩壞（Pedigree Collapse）」現象。"

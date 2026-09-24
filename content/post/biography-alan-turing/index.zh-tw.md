@@ -1,5 +1,6 @@
 ---
 title: "艾倫·圖靈：AI之父與悲劇的終結"
+date: "2026-09-24T19:44:38+09:00"
 description: "深入探討奠定現代電腦科學與人工智慧基礎，卻被時代捉弄而悲慘離世的天才數學家艾倫·圖靈的一生、成就及其留給後世的遺產。"
 slug: "biography-alan-turing"
 categories: ["biography"]

@@ -3,6 +3,7 @@
 
 
 title: '【JS】Cómo marcar todas las casillas de verificación en una página web a la vez (con Bookmarklet)'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Webページ内のすべてのチェックボックスを全チェックする"
 date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "automatización"]

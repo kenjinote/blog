@@ -1,5 +1,6 @@
 ---
 title: '[Solução Rápida] Passo a Passo para Atualizar o Driver e Eliminar o Ruído do YAMAHA AG03'
+date: "2026-09-24T19:44:38+09:00"
 slug: "AG03Ruído解消方法"
 date: 2023-03-18T01:17:10+09:00
 tags: ["YAMAHA", "AG03", "Ruído"]

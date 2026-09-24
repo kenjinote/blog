@@ -1,5 +1,6 @@
 ---
 title: 'Roadmap for Entrepreneurship and Software Development: Short and Long-Term Goals and Tasks'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Goal"
 date: 2024-12-08T03:32:34+09:00
 tags: ["Goals"]

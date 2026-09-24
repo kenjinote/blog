@@ -1,5 +1,6 @@
 ---
 title: "巴克敏斯特·富勒与“宇宙飞船地球号”思想：设计未来的异端天才"
+date: "2026-09-24T19:44:38+09:00"
 description: "提出“宇宙飞船地球号”概念、发明网格球顶的巴克敏斯特·富勒。我们将深入探讨他波澜壮阔的一生，以及为可持续未来提供启示的哲学思想。"
 slug: "biography-buckminster-fuller"
 categories: ["biography"]

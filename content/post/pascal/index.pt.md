@@ -1,5 +1,6 @@
 ---
 title: "Blaise Pascal: A trajetória e as grandes realizações de um gênio da matemática, física e filosofia"
+date: "2026-09-24T19:44:38+09:00"
 description: "Blaise Pascal, conhecido por 'O homem é um caniço pensante'. Detalhamos sua vida turbulenta e realizações, desde o teorema de Pascal, o triângulo de Pascal e a fundação da teoria da probabilidade, até a prova do vácuo na física, e seu destino filosófico, os 'Pensamentos'."
 slug: "pascal"
 date: 2026-09-20T19:00:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: "정렬 알고리즘 도해 (버블 정렬부터 퀵 정렬, 병합 정렬까지)"
+date: "2026-09-24T19:44:38+09:00"
 description: "프로그래밍의 기초인 정렬 알고리즘. 버블 정렬부터 퀵 정렬, 병합 정렬까지 도해와 코드로 망라하여 해설합니다."
 slug: "sorting-algorithms-visualized-bubble-quick-merge"
 date: 2026-09-22T01:00:00+09:00

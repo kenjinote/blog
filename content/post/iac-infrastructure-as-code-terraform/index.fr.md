@@ -1,5 +1,6 @@
 ---
 title: "IaC (Infrastructure as Code) et Terraform : la philosophie de la gestion de configuration déclarative"
+date: "2026-09-24T19:44:38+09:00"
 description: "L'importance de l'IaC pour gérer l'infrastructure avec du code et les avantages de l'approche déclarative de Terraform. Explication du mécanisme de gestion de l'état (State) et des meilleures pratiques."
 slug: "iac-infrastructure-as-code-terraform"
 date: 2026-09-21T09:00:00+09:00

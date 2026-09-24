@@ -1,5 +1,6 @@
 ---
 title: '面向iOS优化！让视频流畅播放的ffmpeg转换参数'
+date: "2026-09-24T19:44:38+09:00"
 slug: "iOS 向けの ffmpeg パラメータ"
 date: 2025-03-02T04:16:07+09:00
 tags: ["iOS", "ffmpeg"]

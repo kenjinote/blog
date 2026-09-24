@@ -1,5 +1,6 @@
 ---
 title: "Seberapa Panjang Garis Pantai Inggris?: Paradoks Garis Pantai"
+date: "2026-09-24T19:44:38+09:00"
 description: "Semakin pendek penggaris yang digunakan untuk mengukur, semakin panjang garis pantai hingga menjadi tak terhingga. Ini adalah paradoks terkenal yang membuka pintu menuju geometri fraktal."
 date: 2026-09-10T21:00:00+09:00
 draft: false

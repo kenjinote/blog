@@ -1,5 +1,6 @@
 ---
 title: "कंपनी का इतिहास: Salesforce का इतिहास - SaaS (क्लाउड सॉफ्टवेयर) का अग्रणी"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T04:01:41+09:00
 image: "eyecatch.jpg"
 categories: ["business", "technology"]

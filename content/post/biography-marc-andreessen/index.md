@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 image: eyecatch.jpg
 tags: ["marc-andreessen", "history"]
 title: "インターネットの黎明期から未来を創る男：マーク・アンドリーセンの生涯と哲学"
+date: "2026-09-24T19:44:38+09:00"
 slug: "biography-marc-andreessen"
 description: "現代のインターネットを当たり前の存在にし、さらにテクノロジーの未来に巨額の資金を投じることで世界を形作り続ける人物。それが、マーク・アンドリーセン（Marc Andreessen）です。"
 ---

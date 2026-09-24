@@ -1,5 +1,6 @@
 ---
 title: "Historia Corporativa: La Historia de Salesforce - Pionero de SaaS (Software en la Nube)"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T04:01:41+09:00
 
 image: "eyecatch.jpg"

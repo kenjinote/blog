@@ -4,6 +4,7 @@
 
 
 title: 'Mathematica로 외판원 문제(TSP)를 푸는 방법'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Mathematicaで외판원 문제を解く"
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "순회 외판원 문제", "알고리즘", "수학"]

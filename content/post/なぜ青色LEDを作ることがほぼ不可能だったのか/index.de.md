@@ -1,5 +1,6 @@
 ---
 title: 'Warum war die Entwicklung von blauen LEDs fast unmöglich? Wir gehen dem Rätsel auf den Grund'
+date: "2026-09-24T19:44:38+09:00"
 slug: "なぜ青色LEDを作ることがほぼ不可能だったのか"
 date: 2024-09-15T00:43:52+09:00
 tags: ["Wissenschaft", "Physik", "Halbleiter"]

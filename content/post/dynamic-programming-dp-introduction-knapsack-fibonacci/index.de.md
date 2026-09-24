@@ -1,5 +1,6 @@
 ---
 title: "Einführung in die Dynamische Programmierung (DP) und bekannte Probleme (Rucksack, Fibonacci)"
+date: "2026-09-24T19:44:38+09:00"
 description: "Die große Hürde der Algorithmen: Dynamische Programmierung (DP). Wir erklären den Unterschied zwischen memoisierter Rekursion und dem Bottom-up-Ansatz anhand von Fibonacci-Folgen und dem Rucksackproblem leicht verständlich."
 slug: "dynamic-programming-dp-introduction-knapsack-fibonacci"
 date: 2026-09-22T04:00:00+09:00

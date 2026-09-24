@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 image: eyecatch.jpg
 tags: ["marc-andreessen", "history"]
 title: "Pria yang Menciptakan Masa Depan Sejak Fajar Internet: Kehidupan dan Filosofi Marc Andreessen"
+date: "2026-09-24T19:44:38+09:00"
 slug: "biography-marc-andreessen"
 description: "Sosok yang menjadikan internet modern sebagai hal yang lumrah, dan terus membentuk dunia dengan menginvestasikan dana besar ke masa depan teknologi."
 ---

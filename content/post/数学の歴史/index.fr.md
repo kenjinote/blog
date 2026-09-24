@@ -1,5 +1,6 @@
 ---
 title: 'Histoire des mathématiques et anciens problèmes difficiles : Découvrir les trois problèmes de l''Antiquité et la spirale d''Archimède'
+date: "2026-09-24T19:44:38+09:00"
 slug: "MathématiquesのHistoire"
 date: 2023-07-22T15:25:10+09:00
 tags: ["Mathématiques", "Histoire"]

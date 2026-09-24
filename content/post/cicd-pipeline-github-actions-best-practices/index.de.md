@@ -1,5 +1,6 @@
 ---
 title: "CI/CD-Pipelines und GitHub Actions: Best Practices für Continuous Integration"
+date: "2026-09-24T19:44:38+09:00"
 description: "Beschreibt die Prinzipien von CI/CD zur Beschleunigung des Softwareentwicklungslebenszyklus und das praktische Know-how zum Aufbau von Pipelines mit GitHub Actions."
 slug: "cicd-pipeline-github-actions-best-practices"
 date: 2026-09-21T09:00:00+09:00

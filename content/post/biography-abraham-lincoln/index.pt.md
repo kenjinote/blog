@@ -1,5 +1,6 @@
 ---
 title: "Abraham Lincoln: A Vida e a Filosofia do 'Grande Emancipador' que Liderou uma Nação Dividida"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["abraham-lincoln", "history"]

@@ -1,5 +1,6 @@
 ---
 title: "Dockerとコンテナ技術の完全理解：Namespace, cgroupsからイメージ層まで"
+date: "2026-09-24T19:44:38+09:00"
 description: "単なるツールの使い方を超えて、Linuxカーネルの機能（Namespace, cgroups, OverlayFS）を用いたコンテナの裏側の仕組みを徹底解剖します。"
 slug: "docker-container-namespace-cgroups-layers"
 date: 2026-09-21T09:00:00+09:00

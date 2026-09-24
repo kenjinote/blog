@@ -1,5 +1,6 @@
 ---
 title: 'Fascinantes problemas não resolvidos da matemática: O que são números perfeitos, a Conjectura de Goldbach e a Hipótese de Riemann?'
+date: "2026-09-24T19:44:38+09:00"
 slug: "MatemáticaのProblema Não Resolvido"
 date: 2024-03-02T22:57:36+09:00
 tags: ["Matemática","Problemas não resolvidos"]

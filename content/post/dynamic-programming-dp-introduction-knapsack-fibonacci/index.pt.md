@@ -1,5 +1,6 @@
 ---
 title: "Introdução à Programação Dinâmica (DP) e Problemas Famosos (Mochila, Fibonacci)"
+date: "2026-09-24T19:44:38+09:00"
 description: "A barreira de algoritmos 'Programação Dinâmica (DP)'. Usando a sequência de Fibonacci e o problema da mochila como exemplos, explicamos claramente a diferença entre recursão com memoização e a abordagem bottom-up."
 slug: "dynamic-programming-dp-introduction-knapsack-fibonacci"
 date: 2026-09-22T04:00:00+09:00

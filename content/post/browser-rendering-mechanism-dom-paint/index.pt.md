@@ -1,5 +1,6 @@
 ---
 title: "Mecanismo de Renderização do Navegador: Uma Dissecação Completa do DOM até o Paint"
+date: "2026-09-24T19:44:38+09:00"
 description: "Dissecaremos completamente o mecanismo de renderização (Blink, WebKit, etc.) de como um navegador carrega HTML/CSS/JS e desenha pixels na tela."
 slug: "browser-rendering-mechanism-dom-paint"
 date: 2026-09-20T17:10:00+09:00

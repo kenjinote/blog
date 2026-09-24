@@ -5,6 +5,7 @@
 
 
 title: 'Chrome·Edge를 극적으로 편리하게 해주는 추천 브라우저 확장 프로그램 모음'
+date: "2026-09-24T19:44:38+09:00"
 slug: "추천の Chorme 拡張"
 date: 2023-03-19T02:54:30+09:00
 tags: ["Chrome 확장 프로그램", "브라우저", "Chrome", "Edge"]

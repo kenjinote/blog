@@ -1,5 +1,6 @@
 ---
 title: "Diophantus: The Father of Algebra and His Great Legacy"
+date: "2026-09-24T19:44:38+09:00"
 description: "A detailed explanation of the life of the ancient Greek mathematician Diophantus, his masterpiece 'Arithmetica', Diophantine equations, and the mystery hidden in his epitaph."
 slug: "diophantus"
 date: 2026-09-20T18:40:00+09:00

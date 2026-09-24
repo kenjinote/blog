@@ -1,5 +1,6 @@
 ---
 title: 'La Paradoja de Berry: La contradicción de intentar definir "números" con "palabras"'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'berry-paradox'
 description: '¡La misma frase "el menor entero no expresable en 19 caracteres o menos" expresa ese número en menos de 19 caracteres! Explicamos esta breve y hermosa paradoja que ocurre en la frontera entre el lenguaje cotidiano y las matemáticas.'
 date: '2026-09-10T11:00:00+09:00'

@@ -1,5 +1,6 @@
 ---
 title: "スティーブ・ジョブズ：世界を変えた異端児の軌跡と哲学"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["steve-jobs", "history"]

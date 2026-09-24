@@ -1,5 +1,6 @@
 ---
 title: '[Perbaikan Bootloop] Langkah Resmi untuk Pemulihan dan Inisialisasi Perangkat Lunak Perangkat Google Pixel'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Android(Google Pixel)端末のPulihkan手順"
 date: 2025-02-28T01:20:41+09:00
 tags: ["Android", "Google Pixel", "Pemulihan", "Pemecahan Masalah"]

@@ -1,5 +1,6 @@
 ---
 title: 'Richard''s Paradox: The Contradiction Caused by Infinite Decimals and the "Diagonal Argument"'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'richards-paradox'
 description: 'Listing all real numbers that can be defined in words, only to create a new real number different from all of them. We provide an easy-to-understand explanation of "Richard''s Paradox", which shook the foundations of mathematics, and Gödel''s brilliant inspiration that broke through it.'
 date: '2026-09-10T12:00:00+09:00'

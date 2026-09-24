@@ -1,5 +1,6 @@
 ---
 title: 'Running WebAssembly (Wasm) Output from C++ and Rust in the Browser'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'webassembly-wasm-from-cpp-and-rust'
 date: '2026-09-12T10:00:00+09:00'
 image: 'img/eyecatch.jpg'

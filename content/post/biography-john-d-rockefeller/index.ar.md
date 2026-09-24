@@ -1,5 +1,6 @@
 ---
 title: "جون د. روكفلر: حياة وفلسفة قطب النفط الذي شكل الرأسمالية الحديثة"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["john-d-rockefeller", "history"]

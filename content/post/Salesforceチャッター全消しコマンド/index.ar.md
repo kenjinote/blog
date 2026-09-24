@@ -1,5 +1,6 @@
 ---
 title: 'Salesforce: أمر لحذف جميع منشورات Chatter والمرفقات'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Salesforceثرثرة全消しأمر"
 date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "Chatter"]

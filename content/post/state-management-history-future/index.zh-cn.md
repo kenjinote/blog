@@ -1,5 +1,6 @@
 ---
 title: "状态管理的历史与未来：从 Redux 到 Signals 与 Reactivity 的演进"
+date: "2026-09-24T19:44:38+09:00"
 description: "深入探讨前端开发历史中最大的挑战“状态管理”。从 MVC 到 Flux、Redux、Context API，再到 Signals 与细粒度响应式的演变与未来，近两万字的完整指南。"
 slug: state-management-history-future
 date: 2026-09-21T12:00:00+09:00

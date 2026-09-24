@@ -1,5 +1,6 @@
 ---
 title: '[Core i7-8700K / 32GB RAM] Current Main PC Specs and Workspace Setup'
+date: "2026-09-24T19:44:38+09:00"
 slug: "今のメインPCスペック"
 date: 2022-09-08T01:55:00+09:00
 tags: ["PC"]

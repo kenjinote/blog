@@ -1,5 +1,6 @@
 ---
 title: "Teorema Chino del Resto (Chinese Remainder Theorem) - Un gran teorema desde la aritmética antigua hasta respaldar la criptografía RSA moderna"
+date: "2026-09-24T19:44:38+09:00"
 description: "Explicamos en detalle el Teorema Chino del Resto (CRT), originado en los textos de aritmética de la antigua China, desde sus principios matemáticos hasta su importante aplicación en la criptografía moderna de clave pública (criptografía RSA)."
 slug: "chinese-remainder-theorem"
 date: 2026-09-14T13:11:25+09:00

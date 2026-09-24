@@ -1,5 +1,6 @@
 ---
 title: '15 empfohlene Pflichtbücher für angehende Ingenieure! Von den Grundlagen der Programmierung bis zum Design'
+date: "2026-09-24T19:44:38+09:00"
 slug: "IngenieurAnfängerにEmpfehlungのBuch"
 date: 2024-05-05T16:03:33+09:00
 tags: ["Ingenieure", "Anfänger", "Bücher"]

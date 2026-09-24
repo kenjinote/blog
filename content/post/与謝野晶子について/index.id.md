@@ -1,5 +1,6 @@
 ---
 title: 'Siapa Yosano Akiko? Penjelasan Karya Utama Seperti ''Midaregami'' dan ''Kimi Shinitamou Koto Nakare'', serta Perjalanan Hidupnya'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Akiko Yosanoについて"
 date: 2024-07-25T13:08:36+09:00
 tags: ["Akiko Yosano"]

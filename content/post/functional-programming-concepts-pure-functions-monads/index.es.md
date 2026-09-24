@@ -1,5 +1,6 @@
 ---
 title: "Conceptos y ventajas de la programación funcional (funciones puras, inmutabilidad y mónadas)"
+date: "2026-09-24T19:44:38+09:00"
 description: Profundizamos en el paradigma de la programación funcional y explicamos exhaustivamente sus ventajas a partir de los conceptos de funciones puras, inmutabilidad y mónadas.
 slug: functional-programming-concepts-pure-functions-monads
 date: 2026-09-21T14:51:08+09:00

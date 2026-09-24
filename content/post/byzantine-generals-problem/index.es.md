@@ -1,5 +1,6 @@
 ---
 title: "Problema de los generales bizantinos: ¿Cómo llegar a un consenso en una red con traidores?"
+date: "2026-09-24T19:44:38+09:00"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "Explicamos de forma clara el 'Problema de los generales bizantinos', un desafío fundamental en los sistemas distribuidos, desde su concepto y demostración matemática hasta su aplicación en Blockchain, con ejemplos concretos y diagramas."

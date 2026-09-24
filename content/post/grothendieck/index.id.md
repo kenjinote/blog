@@ -1,5 +1,6 @@
 ---
 title: "Alexander Grothendieck: Kehidupan dan Pencapaian Matematikawan Terbesar Abad ke-20"
+date: "2026-09-24T19:44:38+09:00"
 description: "Penjelasan terperinci tentang kehidupan luar biasa dan pencapaian revolusioner dalam geometri aljabar Alexander Grothendieck. Kami mengeksplorasi bagaimana pemikiran dan filosofinya memengaruhi matematika modern."
 slug: "grothendieck"
 date: 2026-09-20T20:30:00+09:00

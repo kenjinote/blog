@@ -1,5 +1,6 @@
 ---
 title: 'A Collection of Version Information Dialog Screens from Various Software'
+date: "2026-09-24T19:44:38+09:00"
 slug: "いろんなVersion Informationダイアログ集めてみた"
 date: 2024-03-02T21:32:11+09:00
 tags: ["Version Information", "Windows", "MacOS"]

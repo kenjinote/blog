@@ -1,5 +1,6 @@
 ---
 title: 'Akankah Komputer Kuantum Memecahkan Kriptografi RSA? Menjelaskan Algoritme Shor'
+date: "2026-09-24T19:44:38+09:00"
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["Komputer Kuantum", "Dekripsi", "Algoritma Shor", "RSA"]
 image: "eyecatch.jpg"

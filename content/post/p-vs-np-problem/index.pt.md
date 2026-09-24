@@ -1,5 +1,6 @@
 ---
 title: "A Visão Geral do Problema P vs NP e as Classes de Complexidade: Explicação do Problema do Prêmio Millennium e o seu Significado na Programação"
+date: "2026-09-24T19:44:38+09:00"
 description: "Um mergulho profundo no 'Problema P vs NP', um dos Problemas do Prêmio Millennium. Explicaremos desde os fundamentos das classes de complexidade (P, NP, NP-completo, NP-difícil) até às tendências de pesquisa mais recentes e o seu impacto na programação e na teoria da criptografia."
 slug: p-vs-np-problem
 date: 2026-09-21T02:35:46+09:00

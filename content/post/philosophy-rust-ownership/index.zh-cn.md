@@ -1,5 +1,6 @@
 ---
 title: "Rust的精髓：安全与所有权模型带来的范式转变"
+date: "2026-09-24T19:44:38+09:00"
 description: "深入探讨Rust的核心概念“所有权（Ownership）”和“借用（Borrowing）”，全面解析如何兼顾内存安全与性能。"
 slug: "philosophy-rust-ownership"
 categories: ["philosophy"]

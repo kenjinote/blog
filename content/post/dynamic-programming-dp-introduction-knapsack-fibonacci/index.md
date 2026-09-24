@@ -1,5 +1,6 @@
 ---
 title: "動的計画法（DP）入門と有名問題（ナップサック、フィボナッチ）"
+date: "2026-09-24T19:44:38+09:00"
 description: "アルゴリズムの難関「動的計画法(DP)」。フィボナッチ数列やナップサック問題を例に、メモ化再帰とボトムアップ方式の違いを分かりやすく解説します。"
 slug: "dynamic-programming-dp-introduction-knapsack-fibonacci"
 date: 2026-09-22T04:00:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: '[Par langage] Ça marche dans le navigateur ! Résumé des environnements d''exécution de code de programmation en ligne gratuits'
+date: "2026-09-24T19:44:38+09:00"
 slug: "En ligneのEnvironnement d'exécution de codeまとめ"
 date: 2023-04-09T14:01:00+09:00
 tags: ["En ligne", "Environnement d'exécution de code", "Programmation"]

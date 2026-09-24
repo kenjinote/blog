@@ -1,5 +1,6 @@
 ---
 title: 'Cara Menerapkan KaTeX di Hugo dan Menampilkan Rumus Indah ala LaTeX'
+date: "2026-09-24T19:44:38+09:00"
 slug: "hugoでKaTeX(LaTeX風Rumus表示)を有効にする方法"
 date: 2023-03-31T23:11:26+09:00
 tags: ["KaTeX", "LaTeX", "rumus", "matematika", "hugo"]

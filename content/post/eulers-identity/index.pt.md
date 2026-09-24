@@ -1,5 +1,6 @@
 ---
 title: "Identidade de Euler (Euler's Identity) - A \"fórmula mais preciosa da humanidade\" que conecta 5 constantes matemáticas diferentes"
+date: "2026-09-24T19:44:38+09:00"
 description: "Uma explicação profunda do contexto e significado da Identidade de Euler, considerada a mais bela da história da matemática."
 slug: "eulers-identity"
 date: 2026-09-14T13:00:00+09:00

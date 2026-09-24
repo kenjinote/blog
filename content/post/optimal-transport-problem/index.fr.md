@@ -1,5 +1,6 @@
 ---
 title: "Problème du transport optimal : les mathématiques pour déplacer des tas de sable avec un minimum d'effort"
+date: "2026-09-24T19:44:38+09:00"
 description: "Nous considérons les coûts de transport à partir des quantités et des distances, ce qui mène à la distance de Wasserstein qui mesure la différence entre les distributions."
 slug: "optimal-transport-problem"
 date: 2026-09-20T12:00:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: "シリコンバレーの起源：「8人の裏切り者」が創り出したイノベーションの聖地"
+date: "2026-09-24T19:44:38+09:00"
 description: "現在のIT産業の震源地であるシリコンバレー。その誕生の裏には、一人の天才の暴走と、それに反旗を翻した8人の若きエンジニア「8人の裏切り者（Traitorous Eight）」による壮大なドラマがありました。彼らの軌跡を徹底解説します。"
 slug: "history-silicon-valley-traitorous-eight"
 categories: ["history"]

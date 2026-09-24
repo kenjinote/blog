@@ -1,5 +1,6 @@
 ---
 title: "Buckminster Fuller and the Philosophy of 'Spaceship Earth': The Maverick Genius Who Designed the Future"
+date: "2026-09-24T19:44:38+09:00"
 description: "Buckminster Fuller, who proposed the concept of 'Spaceship Earth' and invented the geodesic dome. We delve deep into his turbulent life and the philosophy that provides hints for a sustainable future."
 slug: "biography-buckminster-fuller"
 categories: ["biography"]

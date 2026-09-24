@@ -1,5 +1,6 @@
 ---
 title: "HTTP/3与QUIC协议：TCP的局限性与UDP的革新"
+date: "2026-09-24T19:44:38+09:00"
 description: "详解HTTP/3和QUIC协议为何诞生，如何解决队头阻塞（Head-of-Line Blocking）问题、加速连接建立等下一代Web通信协议的奥秘。"
 slug: "http3-quic-protocol-tcp-udp"
 date: 2026-09-20T17:10:00+09:00

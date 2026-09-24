@@ -4,6 +4,7 @@
 
 
 title: 'Hugo PaperMod에서 Twitter Card(X 카드)를 설정하는 방법'
+date: "2026-09-24T19:44:38+09:00"
 slug: "PaperModでTwitter Cardを設定する方法"
 date: 2022-09-10T18:41:22+09:00
 tags: ["HUGO", "PaperMod", "Twitter"]

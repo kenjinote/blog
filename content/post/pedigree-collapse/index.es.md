@@ -1,5 +1,6 @@
 ---
 title: "La paradoja de los ancestros: Matemáticas y genética del colapso del pedigrí (Pedigree Collapse)"
+date: "2026-09-24T19:44:38+09:00"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "La paradoja de los ancestros, donde el número de ancestros al retroceder en generaciones supera la población mundial de la época. Desvelamos este misterio explicando el colapso del pedigrí (Pedigree Collapse) desde una perspectiva matemática y genética."

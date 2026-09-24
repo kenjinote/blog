@@ -1,5 +1,6 @@
 ---
 title: "Autómatas y teoría de lenguajes formales: Detrás de las expresiones regulares y la jerarquía de Chomsky"
+date: "2026-09-24T19:44:38+09:00"
 description: "Profundizamos en los \"autómatas\" y la \"teoría de lenguajes formales\" que se encuentran detrás de las expresiones regulares y los compiladores de lenguajes de programación, junto con la jerarquía de Chomsky."
 slug: automata-formal-language-theory
 date: 2026-09-21T02:35:46+09:00

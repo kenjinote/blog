@@ -1,5 +1,6 @@
 ---
 title: "El código que llevó a la humanidad a la Luna: Margaret Hamilton y la ingeniería de software del Apolo 11"
+date: "2026-09-24T19:44:38+09:00"
 description: "En 1969, el Apolo 11 logró el primer alunizaje tripulado. Detrás de ello estaba el robusto software desarrollado por Margaret Hamilton y su equipo. Explicaremos en detalle sus logros, que sentaron las bases de la ingeniería de software moderna, y la totalidad del código fuente del Apolo Guidance Computer (AGC)."
 slug: "history-apollo-11-margaret-hamilton"
 categories: ["history"]

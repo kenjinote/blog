@@ -1,5 +1,6 @@
 ---
 title: "Web安全性的基礎與最新動向：從XSS、CSRF到CORS、CSP"
+date: "2026-09-24T19:44:38+09:00"
 description: "保護Web應用程式免受威脅的安全對策。從經典的XSS與CSRF，到現代必備技術的CORS、CSP及SameSite Cookie，進行全面的解說。"
 slug: "web-security-basics-cors-csp"
 date: 2026-09-20T17:10:00+09:00

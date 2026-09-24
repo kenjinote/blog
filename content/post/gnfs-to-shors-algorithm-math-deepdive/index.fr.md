@@ -1,5 +1,6 @@
 ---
 title: 'Casser le chiffrement RSA ? Explication approfondie des algorithmes GNFS et de Shor avec des formules mathématiques'
+date: "2026-09-24T19:44:38+09:00"
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00
 tags: ["Ordinateur quantique", "GNFS", "Algorithme de Shor", "Décryptage", "Mathématiques"]

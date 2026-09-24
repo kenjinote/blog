@@ -1,5 +1,6 @@
 ---
 title: 'Comment vérifier l''état d''activation de la licence Windows ! Vérification facile en une seule commande'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Windows のLicenceの状態を確認するCommande"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "Licence", "Invite de commandes"]

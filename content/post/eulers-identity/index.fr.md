@@ -1,5 +1,6 @@
 ---
 title: "Identité d'Euler (Euler's Identity) - La « formule au trésor de l'humanité » reliant 5 constantes mathématiques différentes"
+date: "2026-09-24T19:44:38+09:00"
 description: "Nous expliquons en profondeur le contexte et la signification de l'identité d'Euler, considérée comme la plus belle de l'histoire des mathématiques."
 slug: "eulers-identity"
 date: 2026-09-14T13:00:00+09:00

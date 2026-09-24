@@ -1,5 +1,6 @@
 ---
 title: "深藍 vs 卡斯帕羅夫（1997年的衝擊）：人類與AI歷史性對弈的全貌"
+date: "2026-09-24T19:44:38+09:00"
 description: "1997年，西洋棋世界冠軍加里·卡斯帕羅夫敗給IBM超級電腦「深藍」的歷史性事件。本文將深入剖析其背景、對弈過程以及對AI技術的影響。"
 slug: "history-deep-blue-kasparov"
 categories: ["history"]

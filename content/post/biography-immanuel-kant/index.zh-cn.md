@@ -1,5 +1,6 @@
 ---
 title: "伊曼努尔·康德：登峰造极的近代哲学与“哥白尼式革命”的轨迹"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["immanuel-kant", "history"]

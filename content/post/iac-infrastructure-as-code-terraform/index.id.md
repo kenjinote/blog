@@ -1,5 +1,6 @@
 ---
 title: "IaC (Infrastructure as Code) dan Terraform: Filosofi Manajemen Konfigurasi Deklaratif"
+date: "2026-09-24T19:44:38+09:00"
 description: "Pentingnya IaC yang mengelola infrastruktur dengan kode dan keuntungan pendekatan deklaratif yang diadopsi Terraform. Menjelaskan mekanisme dan praktik terbaik manajemen status (State)."
 slug: "iac-infrastructure-as-code-terraform"
 date: 2026-09-21T09:00:00+09:00

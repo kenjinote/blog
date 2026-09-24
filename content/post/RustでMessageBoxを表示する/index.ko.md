@@ -4,6 +4,7 @@
 
 
 title: 'Rust와 winapi를 사용하여 Windows의 메시지 박스(MessageBox)를 표시하는 방법'
+date: "2026-09-24T19:44:38+09:00"
 slug: "RustでMessageBoxを表示する"
 date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]

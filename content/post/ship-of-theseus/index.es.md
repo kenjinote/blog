@@ -1,5 +1,6 @@
 ---
 title: "El barco de Teseo: ¿Es el mismo barco si se reemplazan todas sus partes? Una reflexión sobre la identidad desde la ingeniería de software"
+date: "2026-09-24T19:44:38+09:00"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "A partir de la paradoja filosófica griega del 'Barco de Teseo', reflexionamos profundamente sobre la refactorización en el desarrollo de software, el reemplazo de sistemas y la 'identidad' en la orientación a objetos."

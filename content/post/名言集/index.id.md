@@ -1,5 +1,6 @@
 ---
 title: 'Kumpulan Kutipan yang Memperkaya Hidup: Rangkuman Kata-kata Berkesan dari Tokoh Sejarah dan Tokoh Terkenal'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Kumpulan Kutipan"
 date: 2022-10-15T17:00:43+09:00
 tags: ["Kumpulan Kutipan"]

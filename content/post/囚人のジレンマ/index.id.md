@@ -1,5 +1,6 @@
 ---
 title: 'Dilema Tahanan: Mengapa Kita Membuat Pilihan di Mana "Semua Orang Merugi"?'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'prisoners-dilemma'
 description: 'Meskipun kita tahu bahwa "bekerja sama satu sama lain memberikan hasil terbaik", mengapa manusia saling mengkhianati? Melalui model paling terkenal dalam teori permainan "Dilema Tahanan", kami menjelaskan secara matematis dan psikologis mekanisme bagaimana rasionalitas individu menciptakan irasionalitas di seluruh masyarakat.'
 date: '2026-09-10T03:00:00+09:00'

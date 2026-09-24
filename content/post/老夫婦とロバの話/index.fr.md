@@ -1,5 +1,6 @@
 ---
 title: 'Apprendre de l''histoire du vieux couple et de l''âne : Comment vivre sans être influencé par les opinions des autres'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Le vieux couple et l'âne"
 date: 2024-09-18T00:56:59+09:00
 tags: ["L'histoire du vieux couple et de l'âne", "Satire"]

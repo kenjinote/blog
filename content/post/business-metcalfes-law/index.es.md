@@ -1,5 +1,6 @@
 ---
 title: "¿Qué es la 'Ley de Metcalfe' que domina el valor de la red? Guía completa para su uso en estrategias de negocio"
+date: "2026-09-24T19:44:38+09:00"
 description: "La Ley de Metcalfe establece que 'el valor de una red es proporcional al cuadrado del número de usuarios'. Profundizamos en la esencia del efecto de red (el secreto del crecimiento de las redes sociales y plataformas), su historia, contexto matemático, aplicaciones empresariales modernas y limitaciones."
 slug: "business-metcalfes-law"
 categories: ["business"]

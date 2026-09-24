@@ -4,6 +4,7 @@
 
 
 title: '¡De los más populares a los menos conocidos! Lista de lenguajes de programación y sus características'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Lenguaje de programación一覧"
 date: 2023-04-01T03:45:53+09:00
 tags: ["Lenguajes de programación"]

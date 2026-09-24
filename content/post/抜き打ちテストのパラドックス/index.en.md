@@ -1,5 +1,6 @@
 ---
 title: 'The Unexpected Hanging Paradox: The Day a Logically "Absolutely Impossible" Test Takes Place'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'unexpected-hanging-paradox'
 description: '"Next week, on one of the days from Monday to Friday, I will give you a surprise test in an unpredictable manner." —— In response to the teacher''s declaration, the students proved that "a surprise test is logically impossible." However...'
 date: '2026-09-10T10:00:00+09:00'

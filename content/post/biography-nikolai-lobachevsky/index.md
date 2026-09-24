@@ -1,5 +1,6 @@
 ---
 title: "ニコライ・ロバチェフスキー：非ユークリッド幾何学の扉を開いた「幾何学のコペルニクス」"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["nikolai-lobachevsky", "history"]

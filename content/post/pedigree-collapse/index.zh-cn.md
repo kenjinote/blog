@@ -1,5 +1,6 @@
 ---
 title: "祖先悖论：血统崩塌（Pedigree Collapse）的数学与遗传学"
+date: "2026-09-24T19:44:38+09:00"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "追溯世代，祖先的数量会超过当时的世界人口，这就是“祖先悖论”。本文将从数学方法和遗传学角度，详细分析解开这一谜团的“血统崩塌（Pedigree Collapse）”。"

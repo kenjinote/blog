@@ -1,5 +1,6 @@
 ---
 title: "Construíram uma nova estrada e o trânsito piorou? O Paradoxo de Braess"
+date: "2026-09-24T19:44:38+09:00"
 description: "O estranho paradoxo da teoria das redes em que a construção de um novo desvio para aliviar o congestionamento do tráfego resulta em tempos de deslocamento mais longos para todos."
 date: 2026-09-10T21:00:00+09:00
 draft: false

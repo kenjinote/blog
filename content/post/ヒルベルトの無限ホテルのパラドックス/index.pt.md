@@ -1,5 +1,6 @@
 ---
 title: 'O Grande Hotel de Hilbert: Como hospedar infinitos hóspedes em um hotel lotado'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'hilberts-grand-hotel'
 description: 'O "Hotel Infinito", que tem um número infinito de quartos, nunca recusa novos hóspedes mesmo quando está lotado. Explicamos o incrível truque lógico (propriedades de conjuntos infinitos) que permite hospedar a todos, seja 1 pessoa, 1 milhão, ou até mesmo um ônibus com um número "infinito" de hóspedes.'
 date: '2026-09-10T06:00:00+09:00'

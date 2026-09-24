@@ -1,5 +1,6 @@
 ---
 title: 'O Dilema do Prisioneiro: Por que fazemos escolhas onde "todos perdem"?'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'prisoners-dilemma'
 description: 'Mesmo sabendo que "cooperar traz o melhor resultado", por que os seres humanos acabam traindo uns aos outros? Através do "Dilema do Prisioneiro", o modelo mais famoso da Teoria dos Jogos, explicamos matemática e psicologicamente o mecanismo pelo qual a racionalidade individual gera a irracionalidade de toda a sociedade.'
 date: '2026-09-10T03:00:00+09:00'

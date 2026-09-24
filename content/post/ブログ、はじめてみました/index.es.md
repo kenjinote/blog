@@ -4,6 +4,7 @@
 
 
 title: '¡He empezado un blog con el generador de sitios estáticos Hugo! Registro de mi día a día y notas técnicas'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Blog、はじめてみました"
 date: 2022-09-02T07:23:00+09:00
 tags: ["Notas diversas"]

@@ -1,5 +1,6 @@
 ---
 title: "Apa itu \"Hukum Metcalfe\" yang Menguasai Nilai Jaringan? Penjelasan Lengkap Cara Memanfaatkannya dalam Strategi Bisnis"
+date: "2026-09-24T19:44:38+09:00"
 description: "Hukum Metcalfe yang menyatakan bahwa \"nilai jaringan sebanding dengan kuadrat jumlah pengguna\". Kami akan menggali secara mendalam esensi efek jaringan yang menjadi rahasia pertumbuhan bisnis SNS dan platform, sejarah hukum, latar belakang matematika, penerapan dalam bisnis modern hingga batasannya."
 slug: "business-metcalfes-law"
 categories: ["business"]

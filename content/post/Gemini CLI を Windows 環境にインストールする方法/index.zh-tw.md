@@ -1,5 +1,6 @@
 ---
 title: '在Windows上安裝Gemini CLI的方法｜從Node.js徹底解說'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Gemini CLI を Windows 環境に安裝する方法"
 date: 2025-07-13T23:49:56+09:00
 tags: ["Gemini", "CLI", "Windows", "安裝", "開發"]

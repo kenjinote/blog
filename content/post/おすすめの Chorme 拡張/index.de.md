@@ -1,5 +1,6 @@
 ---
 title: 'Zusammenfassung empfohlener Browser-Erweiterungen, die Chrome und Edge drastisch komfortabler machen'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Empfehlungの Chorme 拡張"
 date: 2023-03-19T02:54:30+09:00
 tags: ["Chrome-Erweiterungen", "Browser", "Chrome", "Edge"]

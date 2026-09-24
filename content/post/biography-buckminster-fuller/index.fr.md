@@ -1,5 +1,6 @@
 ---
 title: "Buckminster Fuller et la pensée du \"Vaisseau spatial Terre\" : le génie hétérodoxe qui a conçu le futur"
+date: "2026-09-24T19:44:38+09:00"
 description: "Buckminster Fuller, l'homme qui a proposé le concept du \"Vaisseau spatial Terre\" et inventé le dôme géodésique. Nous explorons en profondeur sa vie mouvementée et sa philosophie qui offre des pistes pour un avenir durable."
 slug: "biography-buckminster-fuller"
 categories: ["biography"]

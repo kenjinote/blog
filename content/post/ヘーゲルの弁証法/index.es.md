@@ -4,6 +4,7 @@
 
 
 title: '¿Qué es la dialéctica de Hegel? El concepto de Aufheben (superación) y su aplicación en la vida diaria y en la programación'
+date: "2026-09-24T19:44:38+09:00"
 slug: "HegelのDialéctica"
 date: 2022-09-09T23:13:19+09:00
 tags: ["Filosofía", "Hegel", "Dialéctica"]

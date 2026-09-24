@@ -1,5 +1,6 @@
 ---
 title: "Física: Indução Eletromagnética e o Mecanismo dos Motores - Da Descoberta de Faraday aos VEs"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T04:01:41+09:00
 
 image: "eyecatch.jpg"

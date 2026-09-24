@@ -1,5 +1,6 @@
 ---
 title: 'Salesforce : Commande pour supprimer toutes les publications et pièces jointes Chatter'
+date: "2026-09-24T19:44:38+09:00"
 slug: "SalesforceChatter全消しCommande"
 date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "Chatter"]

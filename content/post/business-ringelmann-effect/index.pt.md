@@ -1,5 +1,6 @@
 ---
 title: "【A Verdade Sobre o Efeito Ringelmann (Vadiagem Social) e o Guia Completo para Maximizar a Produtividade Organizacional】"
+date: "2026-09-24T19:44:38+09:00"
 description: "\"As pessoas se esforçam menos em grupos\". Explicaremos detalhadamente desde as causas desse \"Efeito Ringelmann (Vadiagem Social)\", descoberto pelo engenheiro agrônomo francês Maximilien Ringelmann, até os impactos negativos nos negócios e as medidas concretas para proteger a sua organização."
 slug: "business-ringelmann-effect"
 categories: ["business"]

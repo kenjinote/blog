@@ -1,5 +1,6 @@
 ---
 title: 'Teiji Takagi: Matematikawan Jepang Kelas Dunia yang Mendirikan Teori Medan Kelas'
+date: "2026-09-24T19:44:38+09:00"
 description: 'Melihat lebih dalam kehidupan Teiji Takagi, bapak matematika Jepang modern, dan pencapaian matematika besarnya dalam mendirikan Teori Medan Kelas.'
 slug: 'takagi-teiji'
 date: '2026-09-20T19:50:00+09:00'

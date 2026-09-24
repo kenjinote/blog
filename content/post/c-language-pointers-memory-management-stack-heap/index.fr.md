@@ -1,5 +1,6 @@
 ---
 title: "Compréhension totale du C et des pointeurs (gestion de la mémoire, adresses, bases du tas et de la pile)"
+date: "2026-09-24T19:44:38+09:00"
 description: "Nous expliquons en détail le plus grand obstacle en langage C, les pointeurs, depuis le concept d'adresse mémoire jusqu'à la différence entre la pile et le tas, en passant par l'allocation dynamique de mémoire. C'est un guide complet pour ceux qui visent une compréhension profonde du langage C."
 slug: "c-language-pointers-memory-management-stack-heap"
 date: 2026-09-21T14:51:08+09:00

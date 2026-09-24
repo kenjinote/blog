@@ -1,5 +1,6 @@
 ---
 title: "Carl Friedrich Gauss: Vida y logros del Príncipe de los Matemáticos"
+date: "2026-09-24T19:44:38+09:00"
 description: "Una explicación detallada de la vida, los episodios asombrosos y las inmensas contribuciones a la ciencia moderna de Carl Friedrich Gauss, conocido como el 'Príncipe de los Matemáticos'."
 slug: "gauss"
 date: 2026-09-20T19:10:00+09:00

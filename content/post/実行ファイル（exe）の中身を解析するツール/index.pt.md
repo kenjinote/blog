@@ -1,5 +1,6 @@
 ---
 title: '4 ferramentas úteis que podem analisar e extrair o conteúdo de arquivos executáveis (exe) do Windows'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Arquivo Executável（exe）の中身をAnáliseするFerramenta"
 date: 2023-04-05T23:31:06+09:00
 tags: ["windows", "exe", "arquivo executável", "análise"]

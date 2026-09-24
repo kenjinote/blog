@@ -1,5 +1,6 @@
 ---
 title: "„Positiv getestet“ = „Krank“? : Der Basisratenfehler"
+date: "2026-09-24T19:44:38+09:00"
 description: "Selbst bei einem zu 99% genauen Test und einem positiven Ergebnis liegt die Wahrscheinlichkeit, tatsächlich krank zu sein, bei nur 9%? Eine Erklärung des „Basisratenfehlers“, bei dem die menschliche Intuition von statistischen Daten getäuscht wird."
 date: 2026-09-10T21:00:00+09:00
 draft: false

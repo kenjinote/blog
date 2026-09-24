@@ -1,5 +1,6 @@
 ---
 title: "Teoría de Grafos, Algoritmo de Dijkstra y A*: Fundamentos Matemáticos e Implementación de la Búsqueda de Rutas"
+date: "2026-09-24T19:44:38+09:00"
 description: "Comenzando desde los fundamentos de la teoría de grafos, explicamos a fondo el contexto matemático, las estructuras de datos y la implementación en Python del algoritmo de Dijkstra y el algoritmo A* para el problema de la ruta más corta."
 slug: graph-theory-dijkstra-a-star
 date: 2026-09-21T02:45:54+09:00

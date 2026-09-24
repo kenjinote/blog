@@ -1,5 +1,6 @@
 ---
 title: 'Incontournable ! Ma liste de films personnels à voir et les recommandations des œuvres déjà visionnées'
+date: "2026-09-24T19:44:38+09:00"
 slug: "FilmTODOリスト"
 date: 2023-04-17T00:34:13+09:00
 tags: ["Films", "TODO"]

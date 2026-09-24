@@ -1,5 +1,6 @@
 ---
 title: "The Philosophy of Git (The Aesthetics of Decentralization)"
+date: "2026-09-24T19:44:38+09:00"
 description: "A deep dive into Git's design philosophy of decentralization, examining its aesthetics and architecture. We unravel the paradigm shift in development brought about by distributed version control systems."
 slug: "philosophy-git-decentralized"
 categories: ["philosophy"]

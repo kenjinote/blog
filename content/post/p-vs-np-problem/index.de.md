@@ -1,5 +1,6 @@
 ---
 title: "Das P-vs-NP-Problem und Komplexitätsklassen: Erklärung des Millennium-Problems und programmiertechnische Bedeutung"
+date: "2026-09-24T19:44:38+09:00"
 description: "Eine tiefe Analyse des P-vs-NP-Problems, eines der Millennium-Probleme. Von den Grundlagen der Komplexitätsklassen (P, NP, NP-vollständig, NP-schwer) über aktuelle Forschung bis hin zu Auswirkungen auf Programmierung und Kryptographie."
 slug: p-vs-np-problem
 date: 2026-09-21T02:35:46+09:00

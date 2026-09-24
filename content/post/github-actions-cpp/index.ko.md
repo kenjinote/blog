@@ -1,5 +1,6 @@
 ---
 title: 'GitHub Actions를 사용한 C++ 프로젝트의 CI/CD 파이프라인 구축'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'github-actions-cpp-cicd-pipeline'
 date: '2026-09-12T18:00:00+09:00'
 image: "eyecatch.jpg"

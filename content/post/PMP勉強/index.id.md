@@ -1,5 +1,6 @@
 ---
 title: 'Ringkasan Pengetahuan Dasar dan Studi Ujian PMP: Sesuai dengan PMBOK Edisi ke-7'
+date: "2026-09-24T19:44:38+09:00"
 slug: "PMPBelajar"
 date: 2024-02-04T18:41:31+09:00
 tags: ["PMP", "PMBOK", "Belajar"]

@@ -1,5 +1,6 @@
 ---
 title: "Carl Friedrich Gauss: Kehidupan dan Prestasi Pangeran Matematika"
+date: "2026-09-24T19:44:38+09:00"
 description: "Penjelasan mendetail tentang kehidupan, episode menakjubkan, dan kontribusi besar bagi sains modern dari Carl Friedrich Gauss, yang dikenal sebagai 'Pangeran Matematika'."
 slug: "gauss"
 date: 2026-09-20T19:10:00+09:00

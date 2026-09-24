@@ -1,5 +1,6 @@
 ---
 title: "La philosophie du C : L'abîme de la programmation apporté par les pointeurs et la liberté"
+date: "2026-09-24T19:44:38+09:00"
 description: "Le cœur du langage C : \"pointeurs\" et \"liberté\". Comment sa philosophie consistant à tout confier aux développeurs permet-elle de repousser les limites du matériel et de favoriser la croissance du programmeur ? Une exploration détaillée de l'abîme de la gestion de la mémoire."
 slug: "philosophy-c-language-pointers"
 categories: ["philosophy"]

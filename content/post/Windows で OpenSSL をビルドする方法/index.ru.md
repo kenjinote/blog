@@ -1,5 +1,6 @@
 ---
 title: 'Шаги по сборке и установке OpenSSL в среде Windows и настройка окружения'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Windows で OpenSSL をСборкаする方法"
 date: 2023-04-07T21:06:32+09:00
 tags: ["Windows", "OpenSSL", "Build", "C++"]

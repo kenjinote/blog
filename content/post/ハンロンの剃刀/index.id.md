@@ -1,5 +1,6 @@
 ---
 title: 'Apa Itu ''Pisau Cukur Hanlon'', Cara Berpikir yang Mempermudah Hubungan Antar Manusia? Menjelaskan Makna dan Asal Usulnya'
+date: "2026-09-24T19:44:38+09:00"
 slug: "ハンロンの剃刀"
 date: 2024-09-24T18:14:34+09:00
 tags: ["frasa", "ungkapan"]

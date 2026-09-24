@@ -3,6 +3,7 @@
 
 
 title: 'Explicación sencilla de cómo aplicar un efecto mosaico a áreas específicas de una imagen en paint.net'
+date: "2026-09-24T19:44:38+09:00"
 slug: "paint.netでImagenの特定個所にモザイクをかける方法"
 date: 2023-04-11T16:33:10+09:00
 tags: ["paint.net", "borde", "imagen"]

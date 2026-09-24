@@ -1,5 +1,6 @@
 ---
 title: 'Google One（Gemini）无法取消？正确的退订方法分析'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Google One （Gemini）が解約できない時の处理方法"
 date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "取消", "解决方法"]

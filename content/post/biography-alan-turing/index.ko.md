@@ -1,5 +1,6 @@
 ---
 title: "앨런 튜링: AI의 아버지와 비극적인 최후"
+date: "2026-09-24T19:44:38+09:00"
 description: "현대 컴퓨터 과학과 인공지능의 기초를 다지면서도 시대에 휩쓸려 비극적인 최후를 맞이한 천재 수학자 앨런 튜링의 생애, 업적, 그리고 유산을 철저히 깊이 파헤쳐 봅니다."
 slug: "biography-alan-turing"
 categories: ["biography"]

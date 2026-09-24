@@ -1,5 +1,6 @@
 ---
 title: "O Demónio de Maxwell: A energia da 'Informação' que quebra o senso comum da Física"
+date: "2026-09-24T19:44:38+09:00"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "O Demónio de Maxwell, uma experiência mental que parece quebrar a Segunda Lei da Termodinâmica. Explicaremos detalhadamente, com fórmulas e diagramas, como este paradoxo foi resolvido pela 'Física da Informação'."

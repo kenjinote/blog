@@ -1,5 +1,6 @@
 ---
 title: "Une flèche en plein vol est-elle immobile ? : Le paradoxe de la flèche de Zénon"
+date: "2026-09-24T19:44:38+09:00"
 description: "Une flèche en vol est au repos à chaque instant. Dès lors, le mouvement n'existe-t-il pas ? Le plus grand casse-tête logique de la Grèce antique."
 date: 2026-09-10T21:00:00+09:00
 draft: false

@@ -1,5 +1,6 @@
 ---
 title: "Der Primzahlsatz (Prime Number Theorem) - Das Gesetz, dass sich die Verteilung von Primzahlen einer logarithmischen Funktion annähert"
+date: "2026-09-24T19:44:38+09:00"
 description: "Eine tiefe Erklärung des mathematischen Meilensteins über die Regelmäßigkeit des Auftretens von Primzahlen, den Primzahlsatz (Prime Number Theorem). Von der Primzahlzählfunktion bis zur Beziehung zur Riemannschen Vermutung."
 slug: "prime-number-theorem"
 date: 2026-09-14T13:11:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: "オープンソースの巨星：リーナス・トーバルズの軌跡と哲学"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["linus-torvalds", "history"]

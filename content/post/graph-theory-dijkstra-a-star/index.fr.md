@@ -1,5 +1,6 @@
 ---
 title: "Théorie des graphes, algorithme de Dijkstra et A* : Fondements mathématiques et implémentation de la recherche de chemin"
+date: "2026-09-24T19:44:38+09:00"
 description: "En partant des bases de la théorie des graphes, nous expliquons de manière exhaustive le contexte mathématique de l'algorithme de Dijkstra et de l'algorithme A* dans le problème du plus court chemin, ainsi que les structures de données et l'implémentation en Python."
 slug: graph-theory-dijkstra-a-star
 date: 2026-09-21T02:45:54+09:00

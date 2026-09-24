@@ -1,5 +1,6 @@
 ---
 title: '5 Rekomendasi Model LLM Open Source Terbaik yang Bisa Dijalankan secara Lokal'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'top-5-open-source-local-llms'
 date: '2026-09-11T03:00:00+09:00'
 image: 'img/eyecatch.jpg'

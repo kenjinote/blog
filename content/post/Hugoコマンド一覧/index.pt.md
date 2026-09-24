@@ -1,5 +1,6 @@
 ---
 title: 'Instalação do Hugo CLI e a Lista de Comandos Básicos Mais Usados'
+date: "2026-09-24T19:44:38+09:00"
 slug: "HugoComando一覧"
 date: 2024-05-31T01:36:00+09:00
 tags: ["hugo", "comandos"]

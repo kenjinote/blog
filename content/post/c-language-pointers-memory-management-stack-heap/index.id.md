@@ -1,5 +1,6 @@
 ---
 title: "Pemahaman Lengkap tentang C dan Pointer (Manajemen Memori, Alamat, Dasar Heap dan Stack)"
+date: "2026-09-24T19:44:38+09:00"
 description: "Penjelasan mendalam mengenai pointer, hambatan terbesar dalam bahasa C, mulai dari konsep alamat memori, perbedaan stack dan heap, hingga alokasi memori dinamis. Panduan lengkap bagi mereka yang ingin memahami bahasa C secara mendalam."
 slug: "c-language-pointers-memory-management-stack-heap"
 date: 2026-09-21T14:51:08+09:00

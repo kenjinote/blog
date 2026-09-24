@@ -1,5 +1,6 @@
 ---
 title: "La loi de Moore : l'avenir tissé par les semi-conducteurs et l'évolution géométrique"
+date: "2026-09-24T19:44:38+09:00"
 description: "Comment la « loi de Moore » a stimulé l'industrie des semi-conducteurs et réalisé une évolution technologique exponentielle dans la société moderne. Nous expliquons en détail son histoire, son mécanisme, ses limites et les technologies du futur."
 slug: "business-moores-law"
 categories: ["business"]

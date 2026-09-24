@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 image: eyecatch.jpg
 tags: ["marc-andreessen", "history"]
 title: "인터넷의 여명기부터 미래를 창조하는 사람: 마크 앤드리슨의 생애와 철학"
+date: "2026-09-24T19:44:38+09:00"
 slug: "biography-marc-andreessen"
 description: "현대의 인터넷을 당연한 존재로 만들고, 나아가 기술의 미래에 막대한 자금을 투자하여 세상을 계속해서 형성해 나가는 인물. 그가 바로 마크 앤드리슨(Marc Andreessen)입니다."
 ---

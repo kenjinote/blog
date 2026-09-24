@@ -1,5 +1,6 @@
 ---
 title: 'Perbarui Halaman Web Secara Otomatis di Edge! Cara Menggunakan Ekstensi Browser Berguna ''Pembaruan Otomatis Tab'''
+date: "2026-09-24T19:44:38+09:00"
 slug: "WebページのPembaruan OtomatisEkstensi Peramban(Add-on Edge)"
 date: 2024-04-06T15:36:54+09:00
 tags: ["ekstensi browser", "add-on Edge", "pembaruan otomatis"]

@@ -1,5 +1,6 @@
 ---
 title: 'Free to Use! 7 Recommended Simple Free Icon Material Sites'
+date: "2026-09-24T19:44:38+09:00"
 slug: "シンプルなIcon集サイト"
 date: 2022-09-07T16:46:56+09:00
 tags: ["Icon", "Design"]

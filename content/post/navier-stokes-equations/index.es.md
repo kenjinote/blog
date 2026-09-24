@@ -1,5 +1,6 @@
 ---
 title: "La existencia y suavidad de las soluciones de las ecuaciones de Navier-Stokes - El misterio definitivo en las ecuaciones fundamentales de la dinámica de fluidos"
+date: "2026-09-24T19:44:38+09:00"
 description: "Profundizamos en la existencia y suavidad de las soluciones de las ecuaciones de Navier-Stokes, uno de los Problemas del Milenio del Instituto de Matemáticas Clay."
 slug: "navier-stokes-equations"
 date: 2026-09-14T13:11:00+09:00

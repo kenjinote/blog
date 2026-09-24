@@ -1,5 +1,6 @@
 ---
 title: 'Mengapa Saya Menyukai Matematika dan Komputer? Menelaah Daya Tarik dan Alasan Ketertarikannya'
+date: "2026-09-24T19:44:38+09:00"
 slug: "なぜMatematikaや計算機が好きなんだろう"
 date: 2022-09-23T01:56:52+09:00
 tags: ["catatan-kecil"]

@@ -8,6 +8,7 @@
 
 
 title: '¡Realmente útiles! Una cuidadosa selección de las mejores aplicaciones para iOS'
+date: "2026-09-24T19:44:38+09:00"
 slug: "RecomendacióniOSAplicación"
 date: 2024-09-18T23:31:20+09:00
 tags: ["iOS", "Aplicaciones", "Recomendadas"]

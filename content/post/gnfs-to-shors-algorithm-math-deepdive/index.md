@@ -1,5 +1,6 @@
 ---
 title: 'RSA暗号を破る？GNFSとShorのアルゴリズムを数式で徹底解説'
+date: "2026-09-24T19:44:38+09:00"
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00
 tags: ["量子コンピュータ", "GNFS", "Shorのアルゴリズム", "暗号解読", "数学"]

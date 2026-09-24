@@ -1,5 +1,6 @@
 ---
 title: "ABC猜想 - 宇宙际Teichmüller理论对数论超难题的挑战"
+date: "2026-09-24T19:44:38+09:00"
 description: "深入探讨ABC猜想的概述，以及望月新一教授提出的宇宙际Teichmüller理论（IUT理论）这一划时代的方法。"
 slug: "abc-conjecture"
 date: 2026-09-14T13:00:00+09:00

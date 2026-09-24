@@ -1,5 +1,6 @@
 ---
 title: "Optimales Transportproblem: Die Mathematik, Sandhaufen mit minimalem Aufwand zu bewegen"
+date: "2026-09-24T19:44:38+09:00"
 description: "Wir betrachten Transportkosten aus Mengen und Entfernungen, was zur Wasserstein-Distanz führt, die den Unterschied zwischen Verteilungen misst."
 slug: "optimal-transport-problem"
 date: 2026-09-20T12:00:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: 'Como excluir metadados (informações pessoais) do Excel e Word em lote usando PowerShell'
+date: "2026-09-24T19:44:38+09:00"
 slug: "PowerShell で Excel のMetadados（Informação Pessoal）を削除する方法"
 date: 2025-07-30T02:42:40+09:00
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "Metadados", "Informações Pessoais"]

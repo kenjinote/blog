@@ -1,5 +1,6 @@
 ---
 title: "Mestre da Ciência da Computação: A Vida e a Filosofia de C.A.R. Hoare"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["car-hoare", "history"]

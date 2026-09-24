@@ -1,5 +1,6 @@
 ---
 title: "動態規劃（DP）入門與經典問題（背包問題、費氏數列）"
+date: "2026-09-24T19:44:38+09:00"
 description: "演算法的難關「動態規劃(DP)」。以費氏數列和背包問題為例，淺顯易懂地解說記憶化遞迴與由下而上方式的差異。"
 slug: "dynamic-programming-dp-introduction-knapsack-fibonacci"
 date: 2026-09-22T04:00:00+09:00

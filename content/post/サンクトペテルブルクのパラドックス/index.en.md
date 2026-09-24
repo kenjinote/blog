@@ -1,5 +1,6 @@
 ---
 title: 'St. Petersburg Paradox: How Much Would You Pay for a Gamble with "Infinite" Expected Value?'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'st-petersburg-paradox'
 description: 'A gamble that is mathematically supposed to make you "infinite money". Yet, in reality, nobody would pay a large sum for it. We explain the historical paradox that highlighted the gap between probability theory and human psychology (utility), laying the foundation of modern economics.'
 date: '2026-09-10T05:00:00+09:00'

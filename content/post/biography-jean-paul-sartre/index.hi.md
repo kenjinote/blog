@@ -1,5 +1,6 @@
 ---
 title: "जीन-पॉल सार्त्र: अस्तित्ववाद के दिग्गज और उनका सफर"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["jean-paul-sartre", "history"]

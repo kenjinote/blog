@@ -1,5 +1,6 @@
 ---
 title: "Arsitektur Kubernetes (K8s): Pod, Service, Ingress dan Control Plane"
+date: "2026-09-24T19:44:38+09:00"
 description: "Gambaran umum Kubernetes, standar de facto dari orkestrasi kontainer. Kami akan menjelaskan secara rinci mulai dari mekanisme control plane hingga peran berbagai sumber daya."
 slug: "kubernetes-k8s-architecture-pod-service-ingress"
 date: 2026-09-21T09:00:00+09:00

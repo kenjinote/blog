@@ -1,5 +1,6 @@
 ---
 title: 'Started a Blog with Static Site Generator Hugo! Recording Daily Life and Tech Memos'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Blog、はじめてみました"
 date: 2022-09-02T07:23:00+09:00
 tags: ["Miscellaneous"]

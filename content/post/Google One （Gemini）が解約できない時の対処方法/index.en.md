@@ -1,5 +1,6 @@
 ---
 title: 'Can''t Cancel Google One (Gemini)? Explaining the Correct Withdrawal Method'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Google One （Gemini）が解約できない時のWorkaround"
 date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "Cancellation", "Troubleshooting"]

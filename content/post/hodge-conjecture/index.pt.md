@@ -1,5 +1,6 @@
 ---
 title: "Conjectura de Hodge (Hodge Conjecture) - O Problema do Prêmio Millennium que Conecta Geometria Algébrica e Topologia"
+date: "2026-09-24T19:44:38+09:00"
 description: "Explicamos detalhadamente a Conjectura de Hodge, um dos Problemas do Prêmio Millennium do Clay Mathematics Institute, desde o seu papel como ponte entre a geometria algébrica e a topologia até o seu profundo contexto matemático."
 slug: "hodge-conjecture"
 date: 2026-09-14T13:04:13+09:00

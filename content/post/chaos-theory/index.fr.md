@@ -1,5 +1,6 @@
 ---
 title: "La théorie du chaos et l'effet papillon - Comment de légères différences dans les valeurs initiales rendent l'avenir imprévisible"
+date: "2026-09-24T19:44:38+09:00"
 description: "Un guide complet sur la théorie du chaos et l'effet papillon, les systèmes dynamiques non linéaires avec une dépendance sensible aux conditions initiales, de leur contexte historique à leurs fondements mathématiques, les fractales et les applications dans le monde réel."
 slug: "chaos-theory"
 date: 2026-09-14T13:20:38+09:00

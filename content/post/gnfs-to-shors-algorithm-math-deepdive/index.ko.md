@@ -3,6 +3,7 @@
 
 
 title: 'RSA 암호를 깨다? GNFS와 Shor의 알고리즘을 수식으로 철저 해설'
+date: "2026-09-24T19:44:38+09:00"
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00
 tags: ["양자 컴퓨터", "GNFS", "쇼어 알고리즘", "암호 해독", "수학"]

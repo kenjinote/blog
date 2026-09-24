@@ -1,5 +1,6 @@
 ---
 title: "O Jogo da Vida de Conway: Um Autômato Celular Onde a Complexidade da Vida Emerge de Regras Simples"
+date: "2026-09-24T19:44:38+09:00"
 description: "O 'Jogo da Vida de Conway' é um incrível autômato celular que produz comportamentos complexos semelhantes aos da vida a partir de apenas quatro regras simples. Este artigo explora profundamente seu contexto matemático, regras detalhadas, padrões famosos e exemplos de implementação."
 slug: "conways-game-of-life"
 date: 2026-09-15T10:00:00+09:00

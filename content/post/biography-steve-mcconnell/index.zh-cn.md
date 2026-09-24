@@ -1,5 +1,6 @@
 ---
 title: "史蒂夫·麦康奈尔的轨迹：将软件开发升华为“工程”的大师"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["steve-mcconnell", "history"]

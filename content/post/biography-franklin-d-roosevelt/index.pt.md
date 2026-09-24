@@ -1,5 +1,6 @@
 ---
 title: "Franklin D. Roosevelt: Trajetória do 32º Presidente dos EUA que superou crises"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["franklin-d-roosevelt", "history"]

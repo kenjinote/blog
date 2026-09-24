@@ -1,5 +1,6 @@
 ---
 title: "Monte Carlo and Las Vegas Algorithms: The 'Strongest' Algorithms Using Random Numbers"
+date: "2026-09-24T19:44:38+09:00"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "We explain two representative randomized algorithms that utilize random numbers: the Monte Carlo and Las Vegas algorithms. We summarize specific algorithm implementations and their differences in an easy-to-understand manner."

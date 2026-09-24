@@ -1,5 +1,6 @@
 ---
 title: 'How to Easily Check the SIM Lock Status (Locked/Unlocked) of Your iPhone'
+date: "2026-09-24T19:44:38+09:00"
 slug: "iPhoneにSIM Lockがかかっているか確認する方法"
 date: 2024-09-12T00:32:11+09:00
 tags: ["iPhone", "SIM Lock"]

@@ -8,6 +8,7 @@
 
 
 title: '[PQC] 양자 컴퓨터의 위협과 차세대 양자 내성 암호의 전모'
+date: "2026-09-24T19:44:38+09:00"
 slug: "post-quantum-cryptography"
 tags: ['암호 기술', 'PQC', '보안', '차세대 기술']
 image: "eyecatch.jpg"

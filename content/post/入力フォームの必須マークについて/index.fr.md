@@ -1,5 +1,6 @@
 ---
 title: 'Optimisation de la marque « obligatoire » des formulaires de saisie | Les meilleures pratiques des directives UI internationales'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Formulaire de saisieの必須マークについて"
 date: 2025-07-14T13:47:51+09:00
 tags: ["Formulaire", "Développement Web", "UX"]

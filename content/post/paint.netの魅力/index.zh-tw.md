@@ -1,5 +1,6 @@
 ---
 title: '免費又強大！圖片編輯軟體「paint.net」的特色與魅力'
+date: "2026-09-24T19:44:38+09:00"
 slug: "paint.netの魅力"
 date: 2022-09-14T19:33:31+09:00
 tags: ["paint.net"]

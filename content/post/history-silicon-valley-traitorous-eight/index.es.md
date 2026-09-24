@@ -1,5 +1,6 @@
 ---
 title: "El origen de Silicon Valley: La meca de la innovación creada por los \"Ocho Traidores\""
+date: "2026-09-24T19:44:38+09:00"
 description: "Silicon Valley es el epicentro de la industria de TI actual. Detrás de su nacimiento, hubo un drama épico impulsado por el descontrol de un genio y ocho jóvenes ingenieros que se rebelaron, conocidos como los \"Ocho Traidores\" (Traitorous Eight). Analizamos a fondo su trayectoria."
 slug: "history-silicon-valley-traitorous-eight"
 categories: ["history"]

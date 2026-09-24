@@ -1,5 +1,6 @@
 ---
 title: "परम आत्मा और द्वंद्ववाद: जॉर्ज विल्हेम फ्रेडरिक हेगेल का जीवन और दर्शन"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["georg-wilhelm-friedrich-hegel", "history"]

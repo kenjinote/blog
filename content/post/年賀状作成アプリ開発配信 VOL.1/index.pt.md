@@ -1,5 +1,6 @@
 ---
 title: '[C++] Transmissão do desenvolvimento de um aplicativo de criação de cartão de Ano Novo VOL.1: Configuração do ambiente e inicialização do Direct2D'
+date: "2026-09-24T19:44:38+09:00"
 slug: "年賀状作成Aplicativo開発配信 VOL.1"
 date: 2025-08-31T20:24:49+09:00
 tags: ["Transmissão de Desenvolvimento de App de Cartões de Ano Novo", "YouTube"]

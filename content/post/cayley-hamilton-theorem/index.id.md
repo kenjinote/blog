@@ -1,5 +1,6 @@
 ---
 title: "Teorema Cayley-Hamilton: Sifat Menakjubkan dari Matriks yang Memenuhi 'Persamaan Karakteristik'-nya Sendiri"
+date: "2026-09-24T19:44:38+09:00"
 description: "Penjelasan terperinci tentang teorema Cayley-Hamilton, salah satu hasil paling mengejutkan dalam aljabar linear, dari makna intuitif hingga pembuktian dan aplikasinya."
 slug: "cayley-hamilton-theorem"
 date: 2026-09-20T14:50:00+09:00

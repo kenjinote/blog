@@ -3,6 +3,7 @@
 
 
 title: 'Cómo cambiar el atajo de copiar y pegar en Mac para que coincida con la configuración de Windows'
+date: "2026-09-24T19:44:38+09:00"
 slug: "macでCopiar y pegarのTecla de atajoをWindowsと合わせる方法"
 date: 2023-04-05T00:49:02+09:00
 tags: ["macos", "mac", "atajos de teclado", "copiar y pegar"]

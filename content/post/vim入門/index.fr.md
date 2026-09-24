@@ -1,5 +1,6 @@
 ---
 title: '[Pour les débutants] Introduction à Vim : de l''installation au démarrage/fermeture de base, et explication des modes'
+date: "2026-09-24T19:44:38+09:00"
 slug: "vim入門"
 date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "éditeur de texte"]

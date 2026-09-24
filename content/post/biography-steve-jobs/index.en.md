@@ -1,5 +1,6 @@
 ---
 title: "Steve Jobs: The Trajectory and Philosophy of a Maverick Who Changed the World"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["steve-jobs", "history"]

@@ -1,5 +1,6 @@
 ---
 title: '6 Penanggulangan untuk Mencegah Terperangkap dalam Teori Konspirasi | Mari Tingkatkan Keamanan Pikiran'
+date: "2026-09-24T19:44:38+09:00"
 slug: "陰謀論にはまらないために何が必要か"
 date: 2025-05-26T22:23:34+09:00
 tags: ["Teori Konspirasi", "Puisi"]

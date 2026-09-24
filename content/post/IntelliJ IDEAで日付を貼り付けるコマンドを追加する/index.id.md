@@ -1,5 +1,6 @@
 ---
 title: 'Cara Membuat Pintasan untuk Menyisipkan Tanggal Saat Ini di IntelliJ IDEA'
+date: "2026-09-24T19:44:38+09:00"
 slug: "IntelliJ IDEAでTanggalを貼り付けるPerintahを追加する"
 date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]

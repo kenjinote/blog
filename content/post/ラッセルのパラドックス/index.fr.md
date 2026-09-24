@@ -1,5 +1,6 @@
 ---
 title: 'Le paradoxe de Russell : "l''ensemble de tous les ensembles qui ne se contiennent pas eux-mêmes" se contient-il lui-même ?'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'russells-paradox'
 description: '"Le barbier du village, qui rase tous ceux qui ne se rasent pas eux-mêmes, se rase-t-il lui-même ?" Découvrez le terrible paradoxe de Bertrand Russell qui a ébranlé la théorie des ensembles, fondement des mathématiques, et changé l''histoire de la logique.'
 date: '2026-09-10T04:00:00+09:00'

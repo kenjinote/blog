@@ -1,5 +1,6 @@
 ---
 title: 'Otimização das marcas obrigatórias em formulários de entrada | As melhores práticas aprendidas nos guias de UI internacionais'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Formulário de Entradaの必須マークについて"
 date: 2025-07-14T13:47:51+09:00
 tags: ["Formulário", "Desenvolvimento Web", "UX"]

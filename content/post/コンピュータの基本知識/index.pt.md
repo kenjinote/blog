@@ -1,5 +1,6 @@
 ---
 title: 'Quais são as 5 partes principais de um computador? Conhecimentos básicos de hardware e software que iniciantes em TI devem conhecer'
+date: "2026-09-24T19:44:38+09:00"
 slug: "ComputadorのConhecimento Básico"
 date: 2024-09-19T01:10:20+09:00
 tags: ["Computador", "Conhecimentos Básicos"]

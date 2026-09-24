@@ -1,5 +1,6 @@
 ---
 title: "Philosophie Unix (L'Essence du Design Modulaire) : L'Art du Logiciel Tissé par la Responsabilité Unique et les Tubes"
+date: "2026-09-24T19:44:38+09:00"
 description: "Une plongée en profondeur dans l'essence du « design modulaire » qui sous-tend la philosophie Unix. Une explication approfondie de principes intemporels, tels que les programmes qui font bien une seule chose et la coordination via des flux de texte, qui s'appliquent toujours à l'ingénierie logicielle moderne."
 slug: "philosophy-unix-modular-design"
 categories: ["philosophy"]

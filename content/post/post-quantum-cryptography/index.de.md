@@ -1,5 +1,6 @@
 ---
 title: '【PQC】Die Bedrohung durch Quantencomputer und das Gesamtbild der Post-Quanten-Kryptographie der nächsten Generation'
+date: "2026-09-24T19:44:38+09:00"
 slug: "post-quantum-cryptography"
 tags: ["Kryptographie", "PQC", "Sicherheit", "Technologie der nächsten Generation"]
 image: "eyecatch.jpg"

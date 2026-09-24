@@ -1,5 +1,6 @@
 ---
 title: "Qual é o comprimento da costa da Grã-Bretanha?: O Paradoxo da Linha Costeira"
+date: "2026-09-24T19:44:38+09:00"
 description: "Quanto menor a régua que você usa para medir, infinitamente mais longa a linha costeira se torna. É o famoso paradoxo que abriu as portas para a geometria fractal."
 date: 2026-09-10T21:00:00+09:00
 draft: false

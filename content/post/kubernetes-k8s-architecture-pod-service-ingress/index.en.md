@@ -1,5 +1,6 @@
 ---
 title: "Kubernetes (K8s) Architecture: Pod, Service, Ingress, and Control Plane"
+date: "2026-09-24T19:44:38+09:00"
 description: "An overview of Kubernetes, the de facto standard for container orchestration. Detailed explanation from how the control plane works to the roles of various resources."
 slug: "kubernetes-k8s-architecture-pod-service-ingress"
 date: 2026-09-21T09:00:00+09:00

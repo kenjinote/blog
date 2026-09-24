@@ -1,5 +1,6 @@
 ---
 title: 'Use it on Windows! How to Install the Lightweight Text Editor ''micro'''
+date: "2026-09-24T19:44:38+09:00"
 slug: "Text EditormicroをWindowsにInstallする方法"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "text editor"]

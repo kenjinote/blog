@@ -1,5 +1,6 @@
 ---
 title: 'Cara Mudah Instal dan Kelola Aplikasi dengan Perintah WinGet di Windows 11'
+date: "2026-09-24T19:44:38+09:00"
 slug: "WinGet を使ってPerintahでAplikasiをInstalasiする"
 date: 2022-10-05T12:15:20+09:00
 tags: ["WinGet"]

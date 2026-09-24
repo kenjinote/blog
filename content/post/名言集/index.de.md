@@ -1,5 +1,6 @@
 ---
 title: 'Eine Sammlung von Zitaten zur Bereicherung des Lebens: Eine Zusammenfassung herzergreifender Worte historischer Größen und berühmter Persönlichkeiten'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Zitatesammlung"
 date: 2022-10-15T17:00:43+09:00
 tags: ["Zitatesammlung"]

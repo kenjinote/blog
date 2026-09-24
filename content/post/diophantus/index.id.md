@@ -1,5 +1,6 @@
 ---
 title: "Diophantus: Bapak Aljabar dan Warisan Besarnya"
+date: "2026-09-24T19:44:38+09:00"
 description: "Penjelasan mendetail tentang kehidupan matematikawan Yunani kuno Diophantus, mahakaryanya 'Arithmetica', persamaan Diophantine, dan misteri yang tersembunyi di batu nisannya."
 slug: "diophantus"
 date: 2026-09-20T18:40:00+09:00

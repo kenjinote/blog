@@ -1,5 +1,6 @@
 ---
 title: "IaC（基础设施即代码）与Terraform：声明式配置管理的哲学"
+date: "2026-09-24T19:44:38+09:00"
 description: "通过代码管理基础设施的IaC的重要性，以及Terraform采用声明式方法的优势。我们将解析状态管理（State）的机制与最佳实践。"
 slug: "iac-infrastructure-as-code-terraform"
 date: 2026-09-21T09:00:00+09:00

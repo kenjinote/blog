@@ -1,5 +1,6 @@
 ---
 title: "Kubernetes (K8s) 架構：Pod、Service、Ingress 與控制平面"
+date: "2026-09-24T19:44:38+09:00"
 description: "作為容器編排事實標準的 Kubernetes 總覽。詳細解說從控制平面的機制到各種資源的角色。"
 slug: "kubernetes-k8s-architecture-pod-service-ingress"
 date: 2026-09-21T09:00:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: "La filosofía de Haskell y los lenguajes puramente funcionales: el mundo de las mónadas y su abismo"
+date: "2026-09-24T19:44:38+09:00"
 description: "Una guía completa que profundiza en la filosofía de Haskell, un lenguaje puramente funcional, y la verdadera naturaleza de la \"Mónada\", a menudo considerada difícil. Explica el aislamiento de los efectos secundarios, los functores, los aplicativos y la belleza del mundo abstracto tejido por las mónadas."
 slug: "philosophy-haskell-monads"
 categories: ["philosophy"]

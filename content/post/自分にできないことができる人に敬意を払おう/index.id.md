@@ -1,5 +1,6 @@
 ---
 title: 'Mari Hormati Mereka yang Bisa Melakukan Apa yang Tidak Bisa Kita Lakukan | Pola Pikir untuk Menghilangkan Kesenjangan dalam Pekerjaan'
+date: "2026-09-24T19:44:38+09:00"
 slug: "自分にできないことができる人に敬意を払おう"
 date: 2023-08-01T23:42:31+09:00
 tags: ["puisi", "pemikiran"]

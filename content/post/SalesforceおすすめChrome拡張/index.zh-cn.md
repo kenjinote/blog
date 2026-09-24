@@ -1,5 +1,6 @@
 ---
 title: '提升Salesforce开发效率！推荐Chrome扩展程序合集'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Salesforce推荐Chrome扩展"
 date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Chrome扩展"]

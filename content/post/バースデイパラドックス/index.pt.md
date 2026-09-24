@@ -1,5 +1,6 @@
 ---
 title: 'Paradoxo do Aniversário: Mais de 50% com apenas 23 pessoas? A magia da "combinação" que engana a intuição'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'birthday-paradox'
 description: 'Seja em uma sala de aula ou em um departamento de empresa, reunir apenas 23 pessoas já faz com que a probabilidade de duas delas terem o mesmo aniversário ultrapasse 50%. Explicaremos visual e matematicamente, usando a teoria das probabilidades e grafos, o quanto a intuição humana tende a ignorar a "explosão combinatória".'
 date: '2026-09-10T00:00:00+09:00'

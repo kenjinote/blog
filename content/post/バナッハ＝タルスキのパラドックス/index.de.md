@@ -1,5 +1,6 @@
 ---
 title: 'Banach-Tarski-Paradoxon: Aus einer zerschnittenen Kugel zwei gleich große Kugeln machen?'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'banach-tarski-paradox'
 description: 'Zerschneidet man eine Erbse und setzt sie wie ein Puzzle wieder zusammen, wird sie so groß wie die Sonne? Wir erklären die wundersame Welt des „Banach-Tarski-Paradoxons“, das durch das „Auswahlaxiom“ der modernen Mathematik entsteht und völlig kontraintuitiv, aber logisch vollkommen korrekt ist.'
 date: '2026-09-10T02:00:00+09:00'

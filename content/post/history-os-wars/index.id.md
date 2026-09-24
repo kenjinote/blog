@@ -1,5 +1,6 @@
 ---
 title: "Gambaran Keseluruhan Perang Agama OS: Sejarah Pertarungan Teknologi dan Filosofi yang Ditenun oleh Windows, Mac, dan Linux"
+date: "2026-09-24T19:44:38+09:00"
 description: "\"Perang Agama OS\" yang telah berlangsung selama beberapa dekade. Kami akan menggali secara mendalam filosofi, latar belakang sejarah, serta koeksistensi dan masa depan dari Windows, Mac, dan Linux."
 slug: "history-os-wars"
 categories: ["history"]

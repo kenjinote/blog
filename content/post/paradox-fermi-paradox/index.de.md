@@ -1,5 +1,6 @@
 ---
 title: "Das Fermi-Paradoxon: Warum begegnen wir \"ihnen\" nicht in einem unendlich weiten Universum?"
+date: "2026-09-24T19:44:38+09:00"
 description: "\"Wo sind die Außerirdischen?\" —— Das \"Fermi-Paradoxon\", das mit einer beiläufigen Frage des Physikers Enrico Fermi begann. Eine sehr detaillierte Erklärung, die tief in die zahlreichen Hypothesen eintaucht, die das Schweigen des Universums erklären, wie die Drake-Gleichung, die Theorie des Großen Filters und die Hypothese des dunklen Waldes, und die sich der Bedeutung und Zukunft der menschlichen Existenz nähert."
 slug: "paradox-fermi-paradox"
 categories: ["science"]

@@ -1,5 +1,6 @@
 ---
 title: "The Legacy of Steve McConnell: The Master Who Elevated Software Development to 'Engineering'"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["steve-mcconnell", "history"]

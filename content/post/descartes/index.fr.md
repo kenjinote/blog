@@ -1,5 +1,6 @@
 ---
 title: "René Descartes : Père de la philosophie moderne et fondateur de la géométrie analytique"
+date: "2026-09-24T19:44:38+09:00"
 description: "René Descartes est célèbre pour 'Je pense, donc je suis'. Nous explorons sa vie extraordinaire et la naissance de la géométrie analytique qui a révolutionné l'histoire des mathématiques."
 slug: "descartes"
 date: 2026-09-20T18:50:00+09:00

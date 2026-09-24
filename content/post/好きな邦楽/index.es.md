@@ -7,6 +7,7 @@
 
 
 title: 'Colección de canciones japonesas recomendadas: Conmovedores J-POP y éxitos clásicos nostálgicos'
+date: "2026-09-24T19:44:38+09:00"
 slug: "好きなMúsica japonesa"
 date: 2024-01-06T04:11:01+09:00
 tags: ["Música japonesa", "Música"]

@@ -1,5 +1,6 @@
 ---
 title: "Missverständnisse und Wahrheit über Objektorientierung: Die Kernbotschaft des \"Messaging\", die Alan Kay vermitteln wollte"
+date: "2026-09-24T19:44:38+09:00"
 description: "Objektorientierte Programmierung (OOP) wird oft fälschlicherweise als \"Klassen\" und \"Vererbung\" missverstanden, aber ihr wahrer Kern liegt im \"Messaging\". Wir erklären die Wahrheit über OOP ausgehend von Alan Kays Vision und der Zellmetapher."
 slug: "philosophy-oop-messaging"
 categories: ["philosophy"]

@@ -4,6 +4,7 @@
 
 
 title: 'Salesforce: SOQL로 일별 레코드 생성 수를 가져오는 방법'
+date: "2026-09-24T19:44:38+09:00"
 slug: "SalesforceのSOQLを利用して日別のレコード作成数を取得する方法"
 date: 2023-04-09T02:50:30+09:00
 tags: ["salesforce", "soql", "날짜", "집계"]

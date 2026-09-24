@@ -1,5 +1,6 @@
 ---
 title: 'Warum mag ich Mathematik und Computer? Ich habe über ihren Reiz und die Gründe meiner Faszination nachgedacht'
+date: "2026-09-24T19:44:38+09:00"
 slug: "なぜMathematikや計算機が好きなんだろう"
 date: 2022-09-23T01:56:52+09:00
 tags: ["Notizen"]

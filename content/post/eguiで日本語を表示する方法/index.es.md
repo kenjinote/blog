@@ -2,6 +2,7 @@
 
 
 title: 'Cómo cargar y mostrar fuentes japonesas con "egui", la librería GUI de Rust'
+date: "2026-09-24T19:44:38+09:00"
 slug: "eguiでJaponésを表示する方法"
 date: 2023-04-01T03:17:52+09:00
 tags: ["rust", "egui", "biblioteca GUI", "japonés"]

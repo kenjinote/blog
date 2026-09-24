@@ -1,5 +1,6 @@
 ---
 title: "Carl Friedrich Gauss: Life and Achievements of the Prince of Mathematicians"
+date: "2026-09-24T19:44:38+09:00"
 description: "A detailed explanation of the life, astonishing episodes, and immense contributions to modern science of Carl Friedrich Gauss, known as the 'Prince of Mathematicians'."
 slug: "gauss"
 date: 2026-09-20T19:10:00+09:00

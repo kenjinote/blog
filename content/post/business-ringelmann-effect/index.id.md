@@ -1,5 +1,6 @@
 ---
 title: "Fakta Efek Ringelmann (Kemalasan Sosial) dan Panduan Lengkap Memaksimalkan Produktivitas Organisasi"
+date: "2026-09-24T19:44:38+09:00"
 description: "\"Saat berada dalam kelompok, orang cenderung bermalas-malasan\". Artikel ini membahas secara tuntas mulai dari penyebab \"Efek Ringelmann (Kemalasan Sosial)\" yang ditemukan oleh pakar pertanian Prancis Maximilien Ringelmann, dampak buruknya terhadap bisnis, hingga langkah-langkah konkret untuk melindungi organisasi Anda."
 slug: "business-ringelmann-effect"
 categories: ["business"]

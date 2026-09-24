@@ -1,5 +1,6 @@
 ---
 title: "The Devil's Brain: John von Neumann and the Foundations of Modern Society"
+date: "2026-09-24T19:44:38+09:00"
 description: "An in-depth explanation of the life and incredible achievements of John von Neumann, the 20th century's greatest genius, known as the \"Devil's Brain\", who laid the foundation for modern society in mathematics, quantum mechanics, game theory, computer science, and atomic bomb development."
 slug: "biography-john-von-neumann"
 categories: ["biography"]

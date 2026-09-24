@@ -1,5 +1,6 @@
 ---
 title: "Das Auswahlaxiom und das Lemma von Zorn – Das Konzept der „Wahl“, das die Grundlagen der Mathematik erschütterte"
+date: "2026-09-24T19:44:38+09:00"
 description: "Ein tiefer Einblick in das Auswahlaxiom und das Lemma von Zorn – von ihrer intuitiven Bedeutung über die mathematische Formalisierung bis hin zu ihrer Bedeutung in der modernen Mathematik."
 slug: "axiom-of-choice-and-zorns-lemma"
 date: 2026-09-14T13:20:37+09:00

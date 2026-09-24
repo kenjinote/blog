@@ -1,5 +1,6 @@
 ---
 title: 'Collection of Recommended Japanese Masterpieces: Heart-Touching Nostalgic J-POP & Classic Songs'
+date: "2026-09-24T19:44:38+09:00"
 slug: "好きなJapanese Music"
 date: 2024-01-06T04:11:01+09:00
 tags: ["Japanese Music", "Music"]

@@ -1,5 +1,6 @@
 ---
 title: "Euclide : Le père de la géométrie et son grand héritage"
+date: "2026-09-24T19:44:38+09:00"
 description: "Un regard approfondi sur la vie de l'ancien mathématicien grec Euclide, l'impact de son chef-d'œuvre 'Éléments' sur les générations ultérieures et ses réalisations mathématiques telles que l'algorithme d'Euclide."
 slug: "euclid"
 date: 2026-09-20T18:40:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: "Algoritma Euclidean: Perhitungan GCD Cepat dan Algoritma Tertua Umat Manusia dari Zaman Kuno"
+date: "2026-09-24T19:44:38+09:00"
 description: "Panduan komprehensif tentang Algoritma Euclidean untuk menghitung Faktor Persekutuan Terbesar (FPB), mencakup mekanika, implementasi, kompleksitas, teorema Lamé, Algoritma Euclidean Diperluas, dan aplikasinya dalam kriptografi RSA."
 slug: "euclidean-algorithm"
 date: 2026-09-20T15:00:00+09:00

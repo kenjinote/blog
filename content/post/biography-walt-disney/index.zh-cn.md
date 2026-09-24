@@ -1,5 +1,6 @@
 ---
 title: "将梦想塑造成形的男人：华特·迪士尼的生平与创作轨迹"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["walt-disney", "history"]

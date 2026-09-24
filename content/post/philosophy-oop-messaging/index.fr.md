@@ -1,5 +1,6 @@
 ---
 title: "Mythes et réalités de l'orienté objet : le cœur du \"messaging\" qu'Alan Kay voulait transmettre"
+date: "2026-09-24T19:44:38+09:00"
 description: "La programmation orientée objet (POO) est souvent confondue avec les \"classes\" et l'\"héritage\", mais son essence véritable réside dans le \"messaging\". Nous expliquons en détail la vérité sur la POO à travers la vision d'Alan Kay et la métaphore cellulaire."
 slug: "philosophy-oop-messaging"
 categories: ["philosophy"]

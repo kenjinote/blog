@@ -1,5 +1,6 @@
 ---
 title: "Les coulisses du WebRTC et de la communication en temps réel : P2P, STUN/TURN, Signalisation"
+date: "2026-09-24T19:44:38+09:00"
 description: "Comment le WebRTC permet la communication directe entre navigateurs. Une analyse approfondie des coulisses complexes telles que la traversée de NAT (STUN/TURN), les serveurs de signalisation et le protocole ICE."
 slug: "webrtc-realtime-communication-p2p"
 date: 2026-09-20T17:10:00+09:00

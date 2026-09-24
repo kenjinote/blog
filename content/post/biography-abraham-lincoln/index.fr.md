@@ -1,5 +1,6 @@
 ---
 title: "Abraham Lincoln : La vie et la philosophie du « Grand Émancipateur » qui a guidé une nation divisée"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["abraham-lincoln", "history"]

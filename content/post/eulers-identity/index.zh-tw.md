@@ -1,5 +1,6 @@
 ---
 title: "尤拉恆等式（Euler's Identity） - 連結5個不同數學常數的「人類至寶的數學式」"
+date: "2026-09-24T19:44:38+09:00"
 description: "深入解說數學史上最美麗的尤拉恆等式的背景與意義。"
 slug: "eulers-identity"
 date: 2026-09-14T13:00:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: "Moore's Law: The Future Woven by Semiconductors and Exponential Evolution"
+date: "2026-09-24T19:44:38+09:00"
 description: "How 'Moore's Law' has driven the semiconductor industry and realized exponential technological evolution in modern society. We comprehensively explain its history, mechanisms, limits, and future technologies."
 slug: "business-moores-law"
 categories: ["business"]

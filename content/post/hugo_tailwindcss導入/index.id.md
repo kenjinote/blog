@@ -1,5 +1,6 @@
 ---
 title: 'Kustomisasi Tema Hugo: Cara Mengimplementasikan Tailwind CSS'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'hugo-tailwind-css-customization-guide'
 date: '2026-09-13T03:00:00+09:00'
 image: 'img/eyecatch.jpg'

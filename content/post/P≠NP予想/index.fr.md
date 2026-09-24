@@ -1,5 +1,6 @@
 ---
 title: 'Qu''est-ce que la conjecture P≠NP ? Explication claire d''un problème non résolu en théorie de la complexité et la différence entre les classes P et NP'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Problème P=NP"
 date: 2024-09-11T02:22:39+09:00
 tags: ["Conjecture P≠NP", "Mathématiques", "Problèmes non résolus"]

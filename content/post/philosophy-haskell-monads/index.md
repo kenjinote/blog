@@ -1,5 +1,6 @@
 ---
 title: "Haskellと純粋関数型言語の哲学：モナドの世界とその深淵"
+date: "2026-09-24T19:44:38+09:00"
 description: "純粋関数型言語Haskellの哲学から、難解とされる「モナド(Monad)」の真の姿までを徹底的に深掘りする完全ガイド。副作用の隔離、関手やアプリカティブ、そしてモナドが織りなす抽象世界の美しさを解説します。"
 slug: "philosophy-haskell-monads"
 categories: ["philosophy"]

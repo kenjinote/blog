@@ -1,5 +1,6 @@
 ---
 title: "Kutub Utara Mekanika Kuantum: Paradoks Realitas yang Dihadapkan oleh Kucing Schrödinger"
+date: "2026-09-24T19:44:38+09:00"
 description: "Apa itu \"Kucing Schrödinger\"? Penjelasan mendalam tentang inti dari \"superposisi\" dan \"masalah pengukuran\" dalam mekanika kuantum, mulai dari latar belakang sejarah hingga interpretasi banyak-dunia."
 slug: "paradox-schrodingers-cat"
 categories: ["science"]

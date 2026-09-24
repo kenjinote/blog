@@ -1,5 +1,6 @@
 ---
 title: 'winget कमांड से PowerToys को इंस्टॉल और अनइंस्टॉल कैसे करें'
+date: "2026-09-24T19:44:38+09:00"
 slug: "PowerToysのइंस्टॉल"
 date: 2023-09-30T21:23:00+09:00
 tags: ["cmd", "कमांड प्रॉम्प्ट", "PowerToys", "winget"]

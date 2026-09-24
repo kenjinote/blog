@@ -1,5 +1,6 @@
 ---
 title: "Automates et théorie des langages formels : les coulisses des expressions régulières et de la hiérarchie de Chomsky"
+date: "2026-09-24T19:44:38+09:00"
 description: "Une exploration approfondie des « automates » et de la « théorie des langages formels » derrière les expressions régulières et les compilateurs de langages de programmation, à travers le prisme de la hiérarchie de Chomsky."
 slug: automata-formal-language-theory
 date: 2026-09-21T02:35:46+09:00

@@ -1,5 +1,6 @@
 ---
 title: 'O que é o Princípio de Kerckhoffs? Uma explicação simples do conceito importante que sustenta a segurança criptográfica'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Princípio de Kerckhoffs"
 date: 2025-04-16T23:53:08+09:00
 tags: ["Princípio de Kerckhoffs", "Criptografia"]

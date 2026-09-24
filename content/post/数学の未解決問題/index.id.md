@@ -1,5 +1,6 @@
 ---
 title: 'Masalah Matematika yang Belum Terpecahkan yang Memesona: Apa itu Bilangan Sempurna, Dugaan Goldbach, dan Hipotesis Riemann?'
+date: "2026-09-24T19:44:38+09:00"
 slug: "MatematikaのMasalah yang Belum Terpecahkan"
 date: 2024-03-02T22:57:36+09:00
 tags: ["matematika", "masalah yang belum terpecahkan"]

@@ -1,5 +1,6 @@
 ---
 title: 'Wie man ein Programm zur Aufzählung von Primzahlen in Rust erstellt und Codebeispiele'
+date: "2026-09-24T19:44:38+09:00"
 slug: "RustでPrimzahlを列挙する"
 date: 2022-09-09T07:08:49+09:00
 tags: ["Rust","Primzahlen","Algorithmus"]

@@ -1,5 +1,6 @@
 ---
 title: "Le problème des généraux byzantins et les abysses des algorithmes de consensus : Le fonctionnement de Paxos, Raft et BFT"
+date: "2026-09-24T19:44:38+09:00"
 description: "Nous approfondissons les algorithmes de consensus, fondement des systèmes distribués, de l'origine du problème des généraux byzantins à Paxos, Raft et BFT, qui résiste aux nœuds malveillants, à travers la théorie, les formules mathématiques et l'implémentation de code."
 slug: byzantine-generals-problem-consensus
 date: 2026-09-21T02:45:54+09:00

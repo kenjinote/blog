@@ -1,5 +1,6 @@
 ---
 title: "Filosofi Git (Estetika Desentralisasi)"
+date: "2026-09-24T19:44:38+09:00"
 description: "Eksplorasi mendalam tentang pendekatan desentralisasi sebagai filosofi desain Git, dari perspektif estetika dan arsitektur. Mengungkap pergeseran paradigma pengembangan yang dibawa oleh sistem kontrol versi terdistribusi."
 slug: "philosophy-git-decentralized"
 categories: ["philosophy"]

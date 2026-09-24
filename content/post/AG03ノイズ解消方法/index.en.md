@@ -1,5 +1,6 @@
 ---
 title: '[Immediate Fix] Driver Update Steps to Eliminate Crackling Noise in YAMAHA AG03'
+date: "2026-09-24T19:44:38+09:00"
 slug: "AG03Noise解消方法"
 date: 2023-03-18T01:17:10+09:00
 tags: ["YAMAHA", "AG03", "Noise"]

@@ -1,5 +1,6 @@
 ---
 title: 'The Two Envelopes Paradox: The Collapse of Logic and Decision-Making Traps Caused by Infinite Expected Values'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'two-envelopes-paradox'
 description: 'Two envelopes are in front of you. One contains twice as much money as the other. If you switch envelopes without opening yours, do you always gain in terms of expected value? Through the "Two Envelopes Paradox" where intuition and mathematics violently clash, we thoroughly explain the pitfalls of expected values and the concept of infinity.'
 date: '2026-09-10T00:00:00+09:00'

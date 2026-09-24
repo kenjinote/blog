@@ -1,5 +1,6 @@
 ---
 title: "윌리엄 셰익스피어: 시대를 초월한 언어의 연금술사"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["william-shakespeare", "history"]

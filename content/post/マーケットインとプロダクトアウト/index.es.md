@@ -8,6 +8,7 @@
 
 
 title: '¿Cuál es la diferencia entre "Market-in" y "Product-out"? Explicación sencilla de sus ventajas y desventajas'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Orientación al mercadoとOrientación al producto"
 date: 2025-07-15T20:18:22+09:00
 tags: ["Market-in", "Product-out", "Desarrollo", "Negocios", "Poema"]

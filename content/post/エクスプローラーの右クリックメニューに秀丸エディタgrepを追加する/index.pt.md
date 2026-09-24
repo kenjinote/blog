@@ -1,5 +1,6 @@
 ---
 title: 'Como adicionar o grep do Hidemaru Editor ao menu de contexto no Windows'
+date: "2026-09-24T19:44:38+09:00"
 slug: "ExploradorのMenu de ContextoにHidemaru Editorgrepを追加する"
 date: 2024-04-03T00:00:46+09:00
 tags: ["Hidemaru Editor", "Explorer", "Menu de contexto", "grep", "Registro"]

@@ -1,5 +1,6 @@
 ---
 title: 'What is the Birthday Paradox? Why the Probability of Shared Birthdays Exceeds 50% with 23 People'
+date: "2026-09-24T19:44:38+09:00"
 slug: "バースデイParadoxとは"
 date: 2024-04-02T01:20:50+09:00
 tags: ["Mathematics", "Paradox"]

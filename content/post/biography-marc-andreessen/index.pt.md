@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 image: eyecatch.jpg
 tags: ["marc-andreessen", "history"]
 title: "O homem que criou o futuro desde os primórdios da internet: a vida e a filosofia de Marc Andreessen"
+date: "2026-09-24T19:44:38+09:00"
 slug: "biography-marc-andreessen"
 description: "A pessoa que tornou a internet moderna algo natural e continua moldando o mundo investindo enormes quantias no futuro da tecnologia."
 ---

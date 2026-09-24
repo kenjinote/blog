@@ -1,5 +1,6 @@
 ---
 title: "인터넷의 조상 \"ARPANET\": 냉전 시대 군사 연구에서 탄생하여 세상을 바꾼 네트워크의 전모"
+date: "2026-09-24T19:44:38+09:00"
 description: "현대 인터넷의 직접적인 기원인 ARPANET. 패킷 교환 기술의 탄생, IMP의 개발, 1969년의 역사적인 통신, 그리고 TCP/IP로의 진화까지 인터넷 창세기의 역사를 수천 자에 달하는 상세한 해설로 깊이 파헤칩니다."
 slug: "history-arpanet"
 categories: ["history"]

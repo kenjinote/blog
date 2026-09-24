@@ -1,5 +1,6 @@
 ---
 title: 'Développement d''applications Windows avec Win32API + C++ ! Un ingénieur actif vous explique les avantages et les inconvénients'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Win32API+C++でプログラムを作るメリットとデメリット"
 date: 2025-07-12T12:30:35+09:00
 tags: ["Win32API", "C++", "Programmation", "Développement", "Technologie"]

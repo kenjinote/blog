@@ -1,5 +1,6 @@
 ---
 title: 'Teorema Integral de Cauchy: A Bela Fundação da Análise Complexa Onde as Integrais Desaparecem'
+date: "2026-09-24T19:44:38+09:00"
 description: 'Uma explicação detalhada do Teorema Integral de Cauchy, um dos teoremas mais importantes da análise complexa, desde seu significado intuitivo até um esboço de sua prova usando o teorema de Green e sua aplicação à fórmula integral.'
 slug: 'cauchys-integral-theorem'
 date: 2026-09-20T14:30:00+09:00

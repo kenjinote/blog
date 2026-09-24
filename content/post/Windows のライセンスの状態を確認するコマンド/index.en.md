@@ -1,5 +1,6 @@
 ---
 title: 'How to Check Windows License Activation Status! Easy Check with a Single Command'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Windows のLicenseの状態を確認するCommand"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "License", "Command Prompt"]

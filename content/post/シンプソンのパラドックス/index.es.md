@@ -1,5 +1,6 @@
 ---
 title: 'Paradoja de Simpson: el misterioso fenómeno donde ganas en las partes, pero pierdes en el todo'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'simpsons-paradox'
 description: 'Aunque ganes en la "tasa de aprobación" de cada departamento, ¡¿cuando calculas la "tasa de aprobación total" de toda la empresa se invierte y pierdes?! Te explicamos de forma sencilla la "Paradoja de Simpson", una aterradora trampa donde los datos estadísticos nos engañan.'
 date: '2026-09-10T07:00:00+09:00'

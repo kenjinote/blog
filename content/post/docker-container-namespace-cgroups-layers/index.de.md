@@ -1,5 +1,6 @@
 ---
 title: "Vollständiges Verständnis von Docker und Container-Technologie: Von Namespace und cgroups bis zu Image-Schichten"
+date: "2026-09-24T19:44:38+09:00"
 description: "Über die bloße Nutzung als Werkzeug hinaus analysieren wir gründlich die Mechanismen hinter Containern unter Verwendung von Linux-Kernel-Funktionen (Namespace, cgroups, OverlayFS)."
 slug: "docker-container-namespace-cgroups-layers"
 date: 2026-09-21T09:00:00+09:00

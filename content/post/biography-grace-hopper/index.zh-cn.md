@@ -1,5 +1,6 @@
 ---
 title: "【格蕾丝·霍珀：开创编程未来、\"COBOL之母\"的一生与遗产】"
+date: "2026-09-24T19:44:38+09:00"
 description: "被誉为\"COBOL之母\"的美国海军少将格蕾丝·霍珀。从发明编译器到发现第一个计算机Bug，本文将深入剖析她为现代IT社会奠定基础的波澜壮阔的一生及其伟大成就。"
 slug: "biography-grace-hopper"
 categories: ["biography"]

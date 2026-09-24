@@ -4,6 +4,7 @@
 
 
 title: 'Los secretos para elegir un negocio exitoso y sistematizarlo: Notas prácticas para directivos'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Empresarioメモ"
 date: 2022-09-07T02:36:11+09:00
 tags: ["Gerente"]

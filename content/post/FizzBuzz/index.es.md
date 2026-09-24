@@ -8,6 +8,7 @@
 
 
 title: '¿Qué es el "Problema FizzBuzz", la prueba de fuego en programación? Explicando cómo escribirlo en Python'
+date: "2026-09-24T19:44:38+09:00"
 slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "Algoritmos"]

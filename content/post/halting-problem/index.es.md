@@ -1,5 +1,6 @@
 ---
 title: "El Problema de la Parada (Halting Problem): El programa definitivo que jamás se podrá crear"
+date: "2026-09-24T19:44:38+09:00"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "Explicamos uno de los problemas no resueltos (demostrados) más famosos de la informática, el Problema de la Parada. Lo explicamos de manera fácil con demostraciones por reducción al absurdo, ejemplos intuitivos, fórmulas y diagramas."

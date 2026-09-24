@@ -1,5 +1,6 @@
 ---
 title: 'Salesforce：清空Chatter帖子与附件的命令'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Salesforce抖动全消し命令"
 date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "Chatter"]

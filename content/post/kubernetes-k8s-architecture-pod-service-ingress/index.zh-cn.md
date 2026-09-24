@@ -1,5 +1,6 @@
 ---
 title: "Kubernetes(K8s)架构：Pod、Service、Ingress与控制平面"
+date: "2026-09-24T19:44:38+09:00"
 description: "容器编排事实标准的Kubernetes全貌。详细解析从控制平面机制到各种资源的作用。"
 slug: "kubernetes-k8s-architecture-pod-service-ingress"
 date: 2026-09-21T09:00:00+09:00

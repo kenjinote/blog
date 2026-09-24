@@ -1,5 +1,6 @@
 ---
 title: "Die Geburt der nichteuklidischen Geometrie - Die Entdeckung des „gekrümmten Raums“ und der Weg zur Relativitätstheorie"
+date: "2026-09-24T19:44:38+09:00"
 description: "Von den Zweifeln an Euklids Parallelenpostulat über die Etablierung der nichteuklidischen Geometrie durch Gauss, Bolyai, Lobatschewski und Riemann bis hin zu Einsteins allgemeiner Relativitätstheorie: Eine Darstellung der großartigen Geschichte von Mathematik und Physik."
 slug: "non-euclidean-geometry"
 date: 2026-09-14T13:11:25+09:00

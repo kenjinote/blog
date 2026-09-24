@@ -1,5 +1,6 @@
 ---
 title: "Cayley-Hamilton Theorem: The Wondrous Property of a Matrix Satisfying Its Own Characteristic Equation"
+date: "2026-09-24T19:44:38+09:00"
 description: "A detailed explanation of the Cayley-Hamilton theorem, one of the most surprising results in linear algebra, from its intuitive meaning to its proof and applications."
 slug: "cayley-hamilton-theorem"
 date: 2026-09-20T14:50:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: "Buffon's Needle - The classic probability problem where dropping a needle finds Pi"
+date: "2026-09-24T19:44:38+09:00"
 description: "Can you find Pi (π) just by dropping a needle on the floor? We explain in detail the astonishing classic problem of probability theory proposed in the 18th century, Buffon's Needle, from its mathematical proof to simulation."
 slug: "buffons-needle"
 date: 2026-09-14T13:20:38+09:00

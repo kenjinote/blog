@@ -1,5 +1,6 @@
 ---
 title: "Ludwig Wittgenstein: O Filósofo Genial que Viveu Entre o Silêncio e o Cotidiano"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["ludwig-wittgenstein", "history"]

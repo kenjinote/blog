@@ -1,5 +1,6 @@
 ---
 title: "Augustin-Louis Cauchy: Bapak Analisis Ketat dan Kehidupannya yang Penuh Gejolak"
+date: "2026-09-24T19:44:38+09:00"
 description: "Eksplorasi mendetail tentang kehidupan matematikawan besar Prancis Augustin-Louis Cauchy dan berbagai pencapaian matematikanya dalam analisis dan teori fungsi kompleks."
 slug: "cauchy"
 date: 2026-09-20T19:20:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: "Augustin-Louis Cauchy: O Pai da Análise Rigorosa e sua Vida Turbulenta"
+date: "2026-09-24T19:44:38+09:00"
 description: "Uma exploração detalhada da vida do grande matemático francês Augustin-Louis Cauchy e suas numerosas conquistas matemáticas em análise e teoria de funções complexas."
 slug: "cauchy"
 date: 2026-09-20T19:20:00+09:00

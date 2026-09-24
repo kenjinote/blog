@@ -7,6 +7,7 @@
 
 
 title: 'Mermaid.js란? Hugo에 도입하여 도형이나 차트를 그리는 방법'
+date: "2026-09-24T19:44:38+09:00"
 slug: "mermaid.jsを試してみる"
 date: 2024-05-25T02:18:09+09:00
 tags: ["mermaid.js"]

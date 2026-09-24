@@ -1,5 +1,6 @@
 ---
 title: 'Wer war Akiko Yosano? Erläuterung ihres Lebens und ihrer Hauptwerke wie „Wirres Haar“ und „Du sollst nicht sterben“'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Akiko Yosanoについて"
 date: 2024-07-25T13:08:36+09:00
 tags: ["Yosano Akiko"]

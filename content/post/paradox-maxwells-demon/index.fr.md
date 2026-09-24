@@ -1,5 +1,6 @@
 ---
 title: "Le démon de Maxwell : L'ultime expérience de pensée contre la seconde loi de la thermodynamique et comment l'information se transforme en chaleur"
+date: "2026-09-24T19:44:38+09:00"
 description: "Le « démon de Maxwell », le paradoxe le plus célèbre de l'histoire de la physique. Comment ce démon, qui semblait briser la seconde loi de la thermodynamique, est-il né, et comment a-t-il été vaincu après plus d'un siècle ? Une explication complète de la trajectoire vers la thermodynamique de l'information."
 slug: "paradox-maxwells-demon"
 categories: ["science"]

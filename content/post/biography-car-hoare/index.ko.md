@@ -1,5 +1,6 @@
 ---
 title: "컴퓨터 과학의 거장: C.A.R. 호어의 생애와 철학"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["car-hoare", "history"]

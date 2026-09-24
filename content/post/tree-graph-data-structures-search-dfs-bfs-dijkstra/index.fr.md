@@ -1,5 +1,6 @@
 ---
 title: "Exploration des structures de données en arbre et en graphe (DFS, BFS, Algorithme de Dijkstra)"
+date: "2026-09-24T19:44:38+09:00"
 description: "Structures de données en arbre et en graphe pour représenter des relations complexes. Explication détaillée de la recherche en profondeur (DFS), de la recherche en largeur (BFS) et du problème du plus court chemin (algorithme de Dijkstra)."
 slug: "tree-graph-data-structures-search-dfs-bfs-dijkstra"
 date: 2026-09-22T03:00:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: "中央極限定理（Central Limit Theorem） - 任意資料相加皆會趨近常態分配的奇蹟"
+date: "2026-09-24T19:44:38+09:00"
 description: "詳細解說統計學中最重要的定理之一：中央極限定理。從直觀理解、數學證明到使用Python進行模擬驗證，為您深入剖析。"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"

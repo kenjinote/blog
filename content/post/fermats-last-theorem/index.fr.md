@@ -1,5 +1,6 @@
 ---
 title: "Le dernier théorème de Fermat - Comment un mystère laissé dans une marge a été résolu après 360 ans"
+date: "2026-09-24T19:44:38+09:00"
 description: "« Le dernier théorème de Fermat », le problème non résolu le plus célèbre de l'histoire des mathématiques. Comment ce problème redoutable, qui a repoussé les défis de nombreux mathématiciens de génie pendant 360 ans après la mort de Pierre de Fermat, a-t-il été prouvé par Andrew Wiles ? Nous expliquons en détail son histoire dramatique et son contexte mathématique."
 slug: "fermats-last-theorem"
 date: 2026-09-14T13:04:13+09:00

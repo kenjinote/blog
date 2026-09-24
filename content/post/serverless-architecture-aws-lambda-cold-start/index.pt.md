@@ -1,5 +1,6 @@
 ---
 title: "A Luz e a Sombra da Arquitetura Serverless: Os Bastidores e o Cold Start do AWS Lambda"
+date: "2026-09-24T19:44:38+09:00"
 description: "Exploraremos não apenas as vantagens do serverless, mas também os mecanismos de contêineres em segundo plano, o problema de cold start e as soluções (como o SnapStart)."
 slug: "serverless-architecture-aws-lambda-cold-start"
 date: 2026-09-21T09:00:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: "Claude Shannon, der Vater der Informationstheorie: Leben und Werk des Genies, das das digitale Zeitalter erschuf"
+date: "2026-09-24T19:44:38+09:00"
 description: "Claude Shannon, der \"Vater der Informationstheorie\", legte den Grundstein für moderne digitale Kommunikation und Computer. Dieser Artikel beleuchtet sein Leben – von der Anwendung der Booleschen Algebra über die Begründung der Informationstheorie bis hin zu seinem spielerischen Wesen als Liebhaber von Einrädern und Jonglage."
 slug: "biography-claude-shannon"
 categories: ["biography"]

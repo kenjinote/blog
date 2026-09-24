@@ -1,5 +1,6 @@
 ---
 title: 'كيفية تخصيص حجم الصور وموضعها في قالب Hugo PaperMod باستخدام CSS'
+date: "2026-09-24T19:44:38+09:00"
 slug: "PaperModのصورةの配置変更"
 date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]

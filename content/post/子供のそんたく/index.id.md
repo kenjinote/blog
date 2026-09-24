@@ -1,5 +1,6 @@
 ---
 title: 'Tersentuh oleh Kebaikan Anak Usia 2 Tahun! Episode Mengharukan yang Merasakan Perhatian dan Sikap Membaca Situasi Anak'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Anakのそんたく"
 date: 2022-09-07T04:40:52+09:00
 tags: ["Anak"]

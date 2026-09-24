@@ -1,5 +1,6 @@
 ---
 title: "미래를 예측하는 가장 좋은 방법은 미래를 발명하는 것이다: 앨런 케이의 궤적과 철학"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["alan-kay", "history"]

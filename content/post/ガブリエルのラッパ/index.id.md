@@ -1,5 +1,6 @@
 ---
 title: "Bisa Diisi Cat, Tapi Permukaannya Tidak Bisa Dicat?: Terompet Gabriel"
+date: "2026-09-24T19:44:38+09:00"
 description: "Paradoks bangun ruang aneh yang dihasilkan oleh kalkulus, memiliki 'volume berhingga' dan 'luas permukaan tak terhingga' secara bersamaan."
 date: 2026-09-10T21:00:00+09:00
 draft: false

@@ -1,5 +1,6 @@
 ---
 title: '【Für Anfänger】Einführung in Vim: Von der Installation über das grundlegende Starten und Beenden bis hin zur Erklärung der Modi'
+date: "2026-09-24T19:44:38+09:00"
 slug: "vim入門"
 date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "Texteditor"]

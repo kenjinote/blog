@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 image: eyecatch.jpg
 tags: ["marc-andreessen", "history"]
 title: "The Man Who Built the Future from the Dawn of the Internet: The Life and Philosophy of Marc Andreessen"
+date: "2026-09-24T19:44:38+09:00"
 slug: "biography-marc-andreessen"
 description: "He is the man who made the modern internet something we take for granted, and who continues to shape the world by pouring massive amounts of funding into t"
 ---

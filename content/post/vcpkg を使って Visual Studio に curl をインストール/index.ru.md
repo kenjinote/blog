@@ -1,5 +1,6 @@
 ---
 title: 'Просто с vcpkg! Как установить libcurl с поддержкой OpenSSL в Visual Studio'
+date: "2026-09-24T19:44:38+09:00"
 slug: "vcpkg を使って Visual Studio に curl をУстановка"
 date: 2025-07-07T21:46:08+09:00
 tags: ["vcpkg", "curl", "Visual Studio", "C++"]

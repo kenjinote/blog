@@ -1,5 +1,6 @@
 ---
 title: "Fermi Paradox: In a Boundless Universe, Why Can't We Find \"Them\"?"
+date: "2026-09-24T19:44:38+09:00"
 description: "\"Where are the aliens?\"—An exhaustive exploration of the \"Fermi Paradox,\" starting from physicist Enrico Fermi's casual question. This highly detailed guide delves into numerous hypotheses explaining the universe's silence, such as the Drake Equation, the Great Filter theory, and the Dark Forest hypothesis, approaching the significance of humanity's existence and future."
 slug: "paradox-fermi-paradox"
 categories: ["science"]

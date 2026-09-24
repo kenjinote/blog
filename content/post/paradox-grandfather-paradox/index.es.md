@@ -1,5 +1,6 @@
 ---
 title: "El abismo del viaje en el tiempo: Una guía completa sobre la paradoja del abuelo y sus soluciones"
+date: "2026-09-24T19:44:38+09:00"
 description: "Una explicación detallada de la paradoja del abuelo, el mayor desafío en el viaje en el tiempo, desde las perspectivas de la física y la filosofía, abarcando la relatividad, la mecánica cuántica, la interpretación de los muchos mundos y el principio de autoconsistencia de Novikov."
 slug: "paradox-grandfather-paradox"
 categories: ["science"]

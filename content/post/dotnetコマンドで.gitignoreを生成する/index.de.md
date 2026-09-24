@@ -1,5 +1,6 @@
 ---
 title: 'Wie man mithilfe des dotnet-Befehls einfach eine .gitignore für Projekte generiert'
+date: "2026-09-24T19:44:38+09:00"
 slug: "dotnetBefehlで.gitignoreを生成する"
 date: 2022-09-13T00:25:12+09:00
 tags: ["dotnet","git"]

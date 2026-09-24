@@ -1,5 +1,6 @@
 ---
 title: 'Paradoxo de Banach-Tarski: Se você cortar uma esfera, você terá duas esferas do mesmo tamanho?'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'banach-tarski-paradox'
 description: 'Se você cortar uma ervilha e remontá-la como um quebra-cabeça, ela ficará do mesmo tamanho que o sol? Explicamos o mundo misterioso do "Paradoxo de Banach-Tarski", que é o mais contra-intuitivo e ainda assim logicamente perfeito, causado pelo "Axioma da Escolha" da matemática moderna.'
 date: '2026-09-10T02:00:00+09:00'

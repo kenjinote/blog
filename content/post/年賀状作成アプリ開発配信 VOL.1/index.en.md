@@ -1,5 +1,6 @@
 ---
 title: '[C++] New Year''s Card App Development Stream VOL.1: Environment Setup and Direct2D Initialization'
+date: "2026-09-24T19:44:38+09:00"
 slug: "年賀状作成App開発配信 VOL.1"
 date: 2025-08-31T20:24:49+09:00
 tags: ["New Year's Card Creation App Development Stream", "YouTube"]

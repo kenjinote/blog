@@ -1,5 +1,6 @@
 ---
 title: "Game of Life Conway: Cellular Automaton Tempat Kompleksitas Seperti Kehidupan Muncul dari Aturan Sederhana"
+date: "2026-09-24T19:44:38+09:00"
 description: "\"Game of Life Conway\" adalah cellular automaton luar biasa yang menghasilkan perilaku kompleks seperti kehidupan hanya dari empat aturan sederhana. Artikel ini mengeksplorasi secara mendalam latar belakang matematika, aturan terperinci, pola terkenal, dan contoh implementasinya."
 slug: "conways-game-of-life"
 date: 2026-09-15T10:00:00+09:00

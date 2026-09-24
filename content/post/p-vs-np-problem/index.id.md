@@ -1,5 +1,6 @@
 ---
 title: "Gambaran Lengkap 'Masalah P vs NP' dan Kelas Kompleksitas Komputasi: Penjelasan Masalah Hadiah Milenium dan Signifikansi Pemrograman"
+date: "2026-09-24T19:44:38+09:00"
 description: "Menjelaskan secara mendalam tentang 'Masalah P vs NP', salah satu Masalah Hadiah Milenium, mulai dari dasar-dasar kelas kompleksitas komputasi (P, NP, NP-Lengkap, NP-Sulit) hingga tren penelitian terbaru dan dampaknya pada pemrograman serta teori kriptografi."
 slug: p-vs-np-problem
 date: 2026-09-21T02:35:46+09:00

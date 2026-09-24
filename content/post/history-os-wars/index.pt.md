@@ -1,5 +1,6 @@
 ---
 title: "A História Completa das Guerras Religiosas dos Sistemas Operacionais: A Luta pela Tecnologia e Filosofia entre Windows, Mac e Linux"
+date: "2026-09-24T19:44:38+09:00"
 description: "Um mergulho profundo na 'Guerra Religiosa dos Sistemas Operacionais' que se desenrola há décadas. Exploramos as filosofias, origens históricas, e a coexistência atual e futura do Windows, Mac e Linux."
 slug: "history-os-wars"
 categories: ["history"]

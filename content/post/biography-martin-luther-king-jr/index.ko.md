@@ -1,5 +1,6 @@
 ---
 title: "마틴 루터 킹 주니어: 비폭력으로 세상을 바꾼 꿈의 화신"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["martin-luther-king-jr", "history"]

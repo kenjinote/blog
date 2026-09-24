@@ -1,5 +1,6 @@
 ---
 title: 'Texte intégral et explication de ''Ne donne pas ta vie'' d''Akiko Yosano : Les pensées pour son frère intégrées dans ce poème anti-guerre'
+date: "2026-09-24T19:44:38+09:00"
 slug: "『Kimi Shinitamou Koto Nakare』"
 date: 2024-07-25T13:16:47+09:00
 tags: ["Akiko Yosano", "Ne meurs pas", "poésie", "poésie anti-guerre"]

@@ -1,5 +1,6 @@
 ---
 title: "[Cérebro numa Cuba e a Hipótese da Simulação] A Nossa Realidade é Verdadeira?"
+date: "2026-09-24T19:44:38+09:00"
 description: "Uma exploração profunda da experiência de pensamento do \"Cérebro numa Cuba\" e da Hipótese da Simulação a partir das perspetivas da filosofia, mecânica quântica e teoria da informação. É o mundo em que vivemos uma realidade, ou uma realidade virtual altamente avançada? Um exame detalhado da questão final da humanidade."
 slug: "paradox-brain-in-a-vat"
 categories: ["philosophy"]

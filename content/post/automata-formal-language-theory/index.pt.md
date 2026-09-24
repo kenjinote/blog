@@ -1,5 +1,6 @@
 ---
 title: "Autômatos e Teoria das Linguagens Formais: Os Bastidores das Expressões Regulares e a Hierarquia de Chomsky"
+date: "2026-09-24T19:44:38+09:00"
 description: "Exploraremos profundamente os 'autômatos' e a 'teoria das linguagens formais' por trás das expressões regulares e dos compiladores de linguagens de programação, incluindo a hierarquia de Chomsky."
 slug: automata-formal-language-theory
 date: 2026-09-21T02:35:46+09:00

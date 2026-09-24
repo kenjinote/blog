@@ -1,5 +1,6 @@
 ---
 title: 'Bisa Digunakan di Windows! Cara Instal Editor Teks Ringan ''micro'''
+date: "2026-09-24T19:44:38+09:00"
 slug: "Editor TeksmicroをWindowsにInstalasiする方法"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "teks editor"]

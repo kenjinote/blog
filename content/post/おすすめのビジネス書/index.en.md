@@ -1,5 +1,6 @@
 ---
 title: 'Life-Changing! A Summary of Masterpieces and Recommended Business Books You Absolutely Must Read'
+date: "2026-09-24T19:44:38+09:00"
 slug: "RecommendationのBusiness Book"
 date: 2023-03-19T18:13:14+09:00
 tags: ["Business Books", "Books"]

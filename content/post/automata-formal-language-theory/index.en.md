@@ -1,5 +1,6 @@
 ---
 title: "Automata and Formal Language Theory: Behind Regular Expressions and the Chomsky Hierarchy"
+date: "2026-09-24T19:44:38+09:00"
 description: "An in-depth dive into 'automata' and 'formal language theory' behind regular expressions and programming language compilers, exploring the Chomsky Hierarchy."
 slug: automata-formal-language-theory
 date: 2026-09-21T02:35:46+09:00

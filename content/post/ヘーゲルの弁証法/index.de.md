@@ -1,5 +1,6 @@
 ---
 title: 'Was ist Hegels Dialektik? Das Konzept der Aufhebung und seine Anwendung im Alltag und bei der Programmierung'
+date: "2026-09-24T19:44:38+09:00"
 slug: "HegelのDialektik"
 date: 2022-09-09T23:13:19+09:00
 tags: ["Philosophie", "Hegel", "Dialektik"]

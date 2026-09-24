@@ -1,5 +1,6 @@
 ---
 title: 'O Paradoxo dos Dois Envelopes: O Colapso Lógico e a Armadilha da Tomada de Decisão Causados pela Esperança Matemática Infinita'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'two-envelopes-paradox'
 description: 'Dois envelopes à sua frente. Um contém o dobro do dinheiro do outro. Se você trocar sem abrir o seu, sempre terá vantagem na esperança matemática? Através do "Paradoxo dos Dois Envelopes", onde a intuição e a matemática colidem violentamente, explicaremos detalhadamente as armadilhas do valor esperado e o conceito do infinito.'
 date: '2026-09-10T00:00:00+09:00'

@@ -1,5 +1,6 @@
 ---
 title: 'Hugoの組み込みショートコード一覧：YouTubeやTwitterの埋め込み'
+date: "2026-09-24T19:44:38+09:00"
 slug: "HUGOで使えるショートコード"
 date: 2022-09-11T22:59:52+09:00
 tags: ["HUGO"]

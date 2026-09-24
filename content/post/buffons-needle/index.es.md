@@ -1,5 +1,6 @@
 ---
 title: "La aguja de Buffon - El clásico problema de probabilidad donde dejar caer una aguja encuentra Pi"
+date: "2026-09-24T19:44:38+09:00"
 description: "¿Puedes encontrar Pi (π) solo dejando caer una aguja en el suelo? Explicamos en detalle el asombroso problema clásico de la teoría de la probabilidad propuesto en el siglo XVIII, La aguja de Buffon, desde su demostración matemática hasta la simulación."
 slug: "buffons-needle"
 date: 2026-09-14T13:20:38+09:00

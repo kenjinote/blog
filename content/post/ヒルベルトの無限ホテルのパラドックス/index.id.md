@@ -1,5 +1,6 @@
 ---
 title: 'Hotel Tak Terhingga Hilbert: Cara Menampung Jumlah Tamu Tak Terhingga Lagi di Hotel yang Sudah Penuh'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'hilberts-grand-hotel'
 description: 'Sebuah "Hotel Tak Terhingga" dengan jumlah kamar yang tak terhingga tidak akan pernah menolak tamu baru, bahkan jika hotel tersebut sudah penuh. Pelajari trik logika luar biasa (sifat himpunan tak terhingga) yang memungkinkan hotel untuk menampung satu, sejuta, atau bahkan bus berisi jumlah tamu tak terhingga.'
 date: '2026-09-10T06:00:00+09:00'

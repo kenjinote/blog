@@ -1,5 +1,6 @@
 ---
 title: "拜占庭將軍問題與共識演算法的深淵：Paxos, Raft, BFT 的機制"
+date: "2026-09-24T19:44:38+09:00"
 description: "我們將深入探討構成分散式系統核心的共識演算法，從拜占庭將軍問題的起源，到 Paxos、Raft，以及能抵抗惡意節點的 BFT，並結合原理、數學公式與程式碼實作進行徹底剖析。"
 slug: byzantine-generals-problem-consensus
 date: 2026-09-21T02:45:54+09:00

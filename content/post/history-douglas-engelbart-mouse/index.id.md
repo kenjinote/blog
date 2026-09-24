@@ -1,5 +1,6 @@
 ---
 title: "Lahirnya \"Mouse\" dan Douglas Engelbart: Jejak Pionir yang Mendefinisikan Ulang Interaksi Manusia dan Komputer"
+date: "2026-09-24T19:44:38+09:00"
 description: "Bagaimana \"mouse\", yang kini tak terpisahkan dari pengoperasian komputer, lahir? Dari gagasan \"Peningkatan Kecerdasan Manusia (Augmenting Human Intellect)\" milik Douglas Engelbart hingga The Mother of All Demos pada tahun 1968, mari kita bahas sejarah besarnya secara mendalam."
 slug: "history-douglas-engelbart-mouse"
 categories: ["history"]

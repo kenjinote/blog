@@ -8,6 +8,7 @@
 
 
 title: 'Google One(Gemini)을 해지할 수 없다? 올바른 탈퇴 방법 해설'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Google One （Gemini）が解約できない時の대처 방법"
 date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "해지", "대처 방법"]

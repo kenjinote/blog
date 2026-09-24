@@ -1,5 +1,6 @@
 ---
 title: "巴勃羅·畢卡索：在破壞與創造中循環的20世紀最偉大天才"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["pablo-picasso", "history"]

@@ -1,5 +1,6 @@
 ---
 title: 'Le problème de la Belle au bois dormant : La probabilité de la pièce est-elle de 1/2 ou 1/3 ? Le casse-tête qui divise la théorie des probabilités'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'sleeping-beauty-paradox'
 description: '"Maintenant que vous êtes réveillé, quelle est la probabilité que le résultat du tirage au sort soit pile ?" Malgré une configuration très simple, nous expliquons ce récent paradoxe sur lequel les mathématiciens et philosophes du monde entier, divisés en "partisans de 1/2" et "partisans de 1/3", continuent de débattre.'
 date: '2026-09-10T09:00:00+09:00'

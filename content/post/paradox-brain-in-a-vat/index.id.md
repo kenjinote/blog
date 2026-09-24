@@ -1,5 +1,6 @@
 ---
 title: "【Otak di dalam Tong dan Hipotesis Simulasi】Apakah Realitas Kita Asli?"
+date: "2026-09-24T19:44:38+09:00"
 description: "Membahas secara mendalam tentang eksperimen pikiran 'Otak di dalam Tong' dan hipotesis simulasi dari sudut pandang filsafat, mekanika kuantum, dan teori informasi. Apakah dunia tempat kita hidup ini adalah realitas ataukah realitas virtual tingkat lanjut? Sebuah eksplorasi mendetail yang mendekati pertanyaan ultimat umat manusia."
 slug: "paradox-brain-in-a-vat"
 categories: ["philosophy"]

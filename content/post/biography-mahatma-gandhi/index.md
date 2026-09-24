@@ -1,5 +1,6 @@
 ---
 title: "平和の使徒・マハトマ・ガンディー：非暴力不服従が変えた世界"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["mahatma-gandhi", "history"]

@@ -7,6 +7,7 @@
 
 
 title: 'Por qué no es necesario llamar a DestroyIcon para los iconos obtenidos con la función LoadIcon'
+date: "2026-09-24T19:44:38+09:00"
 slug: "LoadIconはDestroyIconを呼び出す必要はない"
 date: 2024-04-19T01:55:17+09:00
 tags: ["icono", "LoadIcon", "DestroyIcon", "Programación en Windows"]

@@ -1,5 +1,6 @@
 ---
 title: 'Le paradoxe de Richard : la contradiction provoquée par les nombres décimaux infinis et l''"argument de la diagonale"'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'richards-paradox'
 description: 'Lister tous les nombres réels définissables par des mots, puis créer un nouveau nombre réel différent de tous les autres. Nous expliquons de manière simple le "paradoxe de Richard", qui a ébranlé les fondements des mathématiques, ainsi que l''intuition de Gödel pour le surmonter.'
 date: '2026-09-10T12:00:00+09:00'

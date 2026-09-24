@@ -7,6 +7,7 @@
 
 
 title: 'winget 명령어로 PowerToys를 설치 및 제거하는 방법'
+date: "2026-09-24T19:44:38+09:00"
 slug: "PowerToysの설치"
 date: 2023-09-30T21:23:00+09:00
 tags: ["cmd", "명령 프롬프트", "PowerToys", "winget"]

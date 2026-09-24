@@ -1,5 +1,6 @@
 ---
 title: "欧拉恒等式（Euler's Identity） - 连接5个不同数学常数的“人类至宝公式”"
+date: "2026-09-24T19:44:38+09:00"
 description: "深入解析被誉为数学史上最美的欧拉恒等式的背景与意义。"
 slug: "eulers-identity"
 date: 2026-09-14T13:00:00+09:00

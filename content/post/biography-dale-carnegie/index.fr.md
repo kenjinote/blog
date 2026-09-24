@@ -1,5 +1,6 @@
 ---
 title: "L'homme qui a établi les principes des relations humaines : la vie et la philosophie de Dale Carnegie"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:59:58+09:00
 categories: ["biography"]
 tags: ["dale-carnegie", "history"]

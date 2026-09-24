@@ -1,5 +1,6 @@
 ---
 title: 'Chrome・Edgeを劇的に便利にするおすすめブラウザ拡張機能まとめ'
+date: "2026-09-24T19:44:38+09:00"
 slug: "おすすめの Chorme 拡張"
 date: 2023-03-19T02:54:30+09:00
 tags: ["Chorme拡張", "ブラウザ", "Chrome", "Edge"]

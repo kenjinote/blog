@@ -1,5 +1,6 @@
 ---
 title: "Полное руководство по Docker и контейнерным технологиям: от Namespace и cgroups до слоев образов"
+date: "2026-09-24T19:44:38+09:00"
 description: "Выходя за рамки простого использования инструментов, мы детально разбираем внутренние механизмы контейнеров с использованием функций ядра Linux (Namespace, cgroups, OverlayFS)."
 slug: "docker-container-namespace-cgroups-layers"
 date: 2026-09-21T09:00:00+09:00

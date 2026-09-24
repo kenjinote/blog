@@ -1,5 +1,6 @@
 ---
 title: 'Paradoks Dua Amplop: Runtuhnya Logika dan Perangkap Pengambilan Keputusan akibat Nilai Harapan Tak Terhingga'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'two-envelopes-paradox'
 description: 'Ada dua amplop di depan Anda. Salah satunya berisi uang dua kali lipat dari yang lain. Jika Anda menukarnya tanpa membuka amplop Anda sendiri, apakah Anda akan selalu untung secara nilai harapan? Melalui "Paradoks Dua Amplop" yang memicu benturan keras antara intuisi dan matematika, kami akan menjelaskan secara tuntas jebakan nilai harapan dan konsep tak terhingga.'
 date: '2026-09-10T00:00:00+09:00'

@@ -1,5 +1,6 @@
 ---
 title: "Teori Kekacauan dan Efek Kupu-kupu - Bagaimana Perbedaan Sedikit pada Nilai Awal Membuat Masa Depan Tidak Dapat Diprediksi"
+date: "2026-09-24T19:44:38+09:00"
 description: "Panduan komprehensif tentang teori kekacauan dan efek kupu-kupu, sistem dinamis nonlinier dengan ketergantungan sensitif pada kondisi awal, mulai dari latar belakang sejarah hingga dasar matematika, fraktal, dan aplikasi dunia nyata."
 slug: "chaos-theory"
 date: 2026-09-14T13:20:38+09:00

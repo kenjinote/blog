@@ -1,5 +1,6 @@
 ---
 title: 'Benar-benar Bermanfaat! Rangkuman Pilihan Aplikasi iOS yang Direkomendasikan'
+date: "2026-09-24T19:44:38+09:00"
 slug: "RekomendasiiOSAplikasi"
 date: 2024-09-18T23:31:20+09:00
 tags: ["iOS", "Aplikasi", "Rekomendasi"]

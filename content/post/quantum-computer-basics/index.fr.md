@@ -1,5 +1,6 @@
 ---
 title: 'Qu''est-ce qu''un ordinateur quantique ? Explication des principes de calcul ultimes tels que la superposition et l''intrication quantique à partir de zéro'
+date: "2026-09-24T19:44:38+09:00"
 slug: "quantum-computer-basics"
 date: 2026-09-05T22:10:00+09:00
 tags: ["Ordinateur quantique", "Physique", "Technologie"]

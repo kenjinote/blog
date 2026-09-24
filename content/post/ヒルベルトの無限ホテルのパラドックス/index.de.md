@@ -1,5 +1,6 @@
 ---
 title: 'Hilberts Hotel: Wie man in einem voll besetzten Hotel unendlich viele weitere Gäste unterbringt'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'hilberts-grand-hotel'
 description: 'Ein "unendliches Hotel" mit unendlich vielen Zimmern weist niemals neue Gäste ab, selbst wenn es voll belegt ist. Wir erklären den erstaunlichen logischen Trick (Eigenschaften unendlicher Mengen), mit dem man einen, eine Million oder sogar einen Bus mit "unendlich vielen" neuen Gästen unterbringen kann.'
 date: '2026-09-10T06:00:00+09:00'

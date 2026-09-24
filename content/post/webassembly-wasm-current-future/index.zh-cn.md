@@ -1,5 +1,6 @@
 ---
 title: "WebAssembly(Wasm)的现在与未来：C/Rust在浏览器中运行的机制"
+date: "2026-09-24T19:44:38+09:00"
 description: "全面解析WebAssembly的架构、编译过程、与JS的协作，以及在浏览器外（WASI）的可能性，彻底讲解Wasm的一切。"
 slug: "webassembly-wasm-current-future"
 date: 2026-09-20T17:10:00+09:00

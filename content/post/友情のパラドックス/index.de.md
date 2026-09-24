@@ -1,5 +1,6 @@
 ---
 title: "Deine Freunde haben mehr Freunde als du: Das Freundschaftsparadoxon"
+date: "2026-09-24T19:44:38+09:00"
 description: "Du musst dir keine Sorgen machen, dass du zu wenig Freunde hast. Es ist eine mathematisch bewiesene Eigenschaft von Netzwerken."
 date: 2026-09-10T21:00:00+09:00
 draft: false

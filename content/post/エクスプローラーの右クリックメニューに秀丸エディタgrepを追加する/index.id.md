@@ -1,5 +1,6 @@
 ---
 title: 'Cara Menambahkan Fitur grep Hidemaru Editor ke Menu Klik Kanan di Windows'
+date: "2026-09-24T19:44:38+09:00"
 slug: "PenjelajahのMenu Klik KananにEditor Hidemarugrepを追加する"
 date: 2024-04-03T00:00:46+09:00
 tags: ["Hidemaru Editor", "File Explorer", "Menu klik kanan", "grep", "Registry"]

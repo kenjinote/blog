@@ -1,5 +1,6 @@
 ---
 title: "A Origem do Vale do Silício: O Santuário da Inovação Criado pelos \"Oito Traidores\""
+date: "2026-09-24T19:44:38+09:00"
 description: "O Vale do Silício é o atual epicentro da indústria de TI. Por trás de seu nascimento, houve um drama épico envolvendo a tirania de um gênio e oito jovens engenheiros que se rebelaram contra ele, os \"Oito Traidores\" (Traitorous Eight). Explicaremos sua trajetória em detalhes."
 slug: "history-silicon-valley-traitorous-eight"
 categories: ["history"]

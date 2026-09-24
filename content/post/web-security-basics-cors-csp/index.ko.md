@@ -1,5 +1,6 @@
 ---
 title: "웹 보안의 기초와 최신 동향: XSS, CSRF부터 CORS, CSP까지"
+date: "2026-09-24T19:44:38+09:00"
 description: "웹 애플리케이션을 위협으로부터 보호하기 위한 보안 대책. 고전적인 XSS나 CSRF부터, 현대의 필수 기술인 CORS, CSP, SameSite Cookie까지 망라하여 해설합니다."
 slug: "web-security-basics-cors-csp"
 date: 2026-09-20T17:10:00+09:00

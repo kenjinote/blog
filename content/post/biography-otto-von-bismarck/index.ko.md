@@ -1,5 +1,6 @@
 ---
 title: "철혈 재상 오토 폰 비스마르크: 독일 통일의 주역과 그의 현실 정치"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["otto-von-bismarck", "history"]

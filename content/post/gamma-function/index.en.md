@@ -1,5 +1,6 @@
 ---
 title: "The Gamma Function: Euler's Masterpiece Extending the Factorial to Continuous Reals and Complex Numbers"
+date: "2026-09-24T19:44:38+09:00"
 description: "The Gamma Function connects discrete factorials to a smooth curve. We deeply explore its definition, properties, Euler's discovery, analytic continuation, Stirling's approximation, and its applications in modern science."
 slug: "gamma-function"
 date: 2026-09-20T14:40:00+09:00

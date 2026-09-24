@@ -1,5 +1,6 @@
 ---
 title: 'Quels sont les 5 principaux composants d''un ordinateur ? Connaissances de base sur le matériel et les logiciels pour les débutants en informatique'
+date: "2026-09-24T19:44:38+09:00"
 slug: "OrdinateurのConnaissances de base"
 date: 2024-09-19T01:10:20+09:00
 tags: ["Ordinateur", "Connaissances de base"]

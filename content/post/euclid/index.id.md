@@ -1,5 +1,6 @@
 ---
 title: "Euklides: Bapak Geometri dan Warisan Besarnya"
+date: "2026-09-24T19:44:38+09:00"
 description: "Pandangan mendalam tentang kehidupan matematikawan Yunani kuno Euklides, dampak mahakaryanya 'Elemen' pada generasi selanjutnya, dan pencapaian matematikanya seperti algoritma Euklides."
 slug: "euclid"
 date: 2026-09-20T18:40:00+09:00

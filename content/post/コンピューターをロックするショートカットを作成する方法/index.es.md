@@ -7,6 +7,7 @@
 
 
 title: '¡Bloquea tu PC Windows en 1 segundo! Cómo crear y usar un acceso directo práctico'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Bloquear computadoraするAtajoを作成する方法"
 date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "Bloquear la computadora", "Acceso directo"]

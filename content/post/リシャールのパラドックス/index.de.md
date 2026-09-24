@@ -1,5 +1,6 @@
 ---
 title: 'Das Richard-Paradoxon: Der Widerspruch, der durch unendliche Dezimalzahlen und das "Diagonalargument" entsteht'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'richards-paradox'
 description: 'Alle reellen Zahlen auflisten, die mit Worten definiert werden können, und dann eine völlig neue reelle Zahl erschaffen, die sich davon unterscheidet. Wir erklären das "Richard-Paradoxon", das die Grundlagen der Mathematik erschütterte, und Gödels Geistesblitz zur Überwindung dieses Paradoxons auf leicht verständliche Weise.'
 date: '2026-09-10T12:00:00+09:00'

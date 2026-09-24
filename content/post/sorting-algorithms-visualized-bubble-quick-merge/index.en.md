@@ -1,5 +1,6 @@
 ---
 title: "Sorting Algorithms Visualized (Bubble, Quick, Merge Sort)"
+date: "2026-09-24T19:44:38+09:00"
 description: "Sorting algorithms are the foundation of programming. From bubble sort to quick sort and merge sort, we comprehensively explain them with visualizations and code."
 slug: "sorting-algorithms-visualized-bubble-quick-merge"
 date: 2026-09-22T01:00:00+09:00

@@ -4,6 +4,7 @@
 
 
 title: 'macOS에서 .DS_Store의 자동 생성을 비활성화 및 정지하는 터미널 명령'
+date: "2026-09-24T19:44:38+09:00"
 slug: "macOSで.DS_Storeを自動生成しないようにする명령어"
 date: 2022-09-12T16:03:42+09:00
 tags: ["macOS"]

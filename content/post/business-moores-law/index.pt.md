@@ -1,5 +1,6 @@
 ---
 title: "A Lei de Moore: O Futuro Tecido pelos Semicondutores e a Evolução Exponencial"
+date: "2026-09-24T19:44:38+09:00"
 description: "Como a 'Lei de Moore' impulsionou a indústria de semicondutores e realizou a evolução tecnológica exponencial na sociedade moderna. Uma análise aprofundada de sua história, mecanismos, limites e tecnologias futuras."
 slug: "business-moores-law"
 categories: ["business"]

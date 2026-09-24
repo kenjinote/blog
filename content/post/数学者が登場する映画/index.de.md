@@ -1,5 +1,6 @@
 ---
 title: 'Geniale Mathematiker in der Hauptrolle! Empfohlene Film-Meisterwerke und Geschichten über Entschlüsselung'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Mathematikerが登場するFilm"
 date: 2022-09-05T10:41:00+09:00
 tags: ["Filme", "Mathematiker"]

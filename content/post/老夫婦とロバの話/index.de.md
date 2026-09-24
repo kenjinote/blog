@@ -1,5 +1,6 @@
 ---
 title: 'Lernen aus der Geschichte des alten Paares und des Esels: Wie man lebt, ohne sich von den Meinungen anderer beeinflussen zu lassen'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Die Geschichte vom alten Ehepaar und dem Esel"
 date: 2024-09-18T00:56:59+09:00
 tags: ["Die Geschichte vom alten Ehepaar und dem Esel", "Satire"]

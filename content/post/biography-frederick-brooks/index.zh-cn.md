@@ -1,5 +1,6 @@
 ---
 title: "软件工程的巨星：弗雷德里克·布鲁克斯的一生与哲学"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["frederick-brooks", "history"]

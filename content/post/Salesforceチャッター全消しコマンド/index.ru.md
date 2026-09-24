@@ -1,5 +1,6 @@
 ---
 title: 'Salesforce: Команда для полного удаления постов и вложений в Chatter'
+date: "2026-09-24T19:44:38+09:00"
 slug: "SalesforceДребезг контактов全消しКоманда"
 date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "Chatter"]

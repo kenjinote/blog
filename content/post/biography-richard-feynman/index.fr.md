@@ -1,5 +1,6 @@
 ---
 title: "Richard Feynman : La curiosité incarnée qui a dévoilé les vérités de l'univers et la façon de vivre humaine"
+date: "2026-09-24T19:44:38+09:00"
 description: "Le lauréat du prix Nobel de physique, Richard Feynman. De l'élaboration de l'électrodynamique quantique à l'enquête sur l'accident de la navette Challenger, en passant par le perçage de coffres-forts et la pratique du bongo, nous expliquons en détail sa vie non conventionnelle, pleine d'une curiosité insatiable et du \"plaisir de découvrir\"."
 slug: "biography-richard-feynman"
 categories: ["biography"]

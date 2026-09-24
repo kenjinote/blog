@@ -1,5 +1,6 @@
 ---
 title: "Ecuaciones de Yang-Mills y el problema del salto de masa - Fundamentos matemáticos del 'Modelo Estándar' de la física de partículas"
+date: "2026-09-24T19:44:38+09:00"
 description: "Explicamos de forma sencilla los antecedentes físicos y las dificultades matemáticas de las 'Ecuaciones de Yang-Mills y el problema del salto de masa', uno de los Problemas del Milenio."
 slug: "yang-mills-mass-gap"
 date: 2026-09-14T13:11:25+09:00

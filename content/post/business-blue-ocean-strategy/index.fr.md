@@ -1,5 +1,6 @@
 ---
 title: "【Stratégie Océan Bleu : La théorie commerciale ultime pour créer des marchés inexploités sans concurrence】"
+date: "2026-09-24T19:44:38+09:00"
 description: "【Échappez à l'océan rouge (le marché concurrentiel sanglant) et découvrez une explication approfondie des cadres spécifiques et des stratégies pratiques pour ouvrir un nouvel espace de marché sans concurrence (l'océan bleu).】"
 slug: "business-blue-ocean-strategy"
 categories: ["business"]

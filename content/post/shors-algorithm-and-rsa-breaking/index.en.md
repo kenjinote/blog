@@ -1,5 +1,6 @@
 ---
 title: 'Will Quantum Computers Break RSA Encryption? Explaining Shor''s Algorithm'
+date: "2026-09-24T19:44:38+09:00"
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["Quantum Computer", "Cryptanalysis", "Shor's Algorithm", "RSA"]
 image: "eyecatch.jpg"

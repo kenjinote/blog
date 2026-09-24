@@ -1,5 +1,6 @@
 ---
 title: "Srinivasa Ramanujan: Penyihir India yang Merangkai Intuisi dan Ketidakterbatasan"
+date: "2026-09-24T19:44:38+09:00"
 description: "Membahas secara detail kehidupan dan pencapaian Srinivasa Ramanujan, matematikawan jenius yang dijuluki \"Penyihir India\", yang menemukan banyak rumus tak dikenal hanya melalui intuisi, serta pengaruhnya terhadap matematika modern."
 slug: "biography-srinivasa-ramanujan"
 categories: ["biography"]

@@ -1,5 +1,6 @@
 ---
 title: '量子コンピュータはRSA暗号を破るか？ショアのアルゴリズムを解説'
+date: "2026-09-24T19:44:38+09:00"
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["量子コンピュータ", "暗号解読", "Shorのアルゴリズム", "RSA"]
 image: "eyecatch.jpg"

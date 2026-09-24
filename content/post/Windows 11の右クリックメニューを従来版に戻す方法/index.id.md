@@ -1,5 +1,6 @@
 ---
 title: 'Cara Mengembalikan Menu Klik Kanan Windows 11 ke Versi Klasik (Spesifikasi Lama) [Pengaturan Registri]'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Windows 11のMenu Klik Kananを従来版に戻す方法"
 date: 2024-03-30T13:13:36+09:00
 tags: ["Windows11", "File Explorer"]

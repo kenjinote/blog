@@ -1,5 +1,6 @@
 ---
 title: '使用 winget 指令安裝與解除安裝 PowerToys 的方法'
+date: "2026-09-24T19:44:38+09:00"
 slug: "PowerToysの安裝"
 date: 2023-09-30T21:23:00+09:00
 tags: ["cmd", "命令提示字元", "PowerToys", "winget"]

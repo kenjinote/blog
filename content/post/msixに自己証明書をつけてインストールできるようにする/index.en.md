@@ -1,5 +1,6 @@
 ---
 title: 'A Must-See for Windows App Developers! How to Attach a Self-Signed Certificate to MSIX and Install Locally'
+date: "2026-09-24T19:44:38+09:00"
 slug: "msixにSelf-Signed CertificateをつけてInstallできるようにする"
 date: 2025-08-30T04:18:04+09:00
 tags: ["msix", "self-signed certificate", "installation"]

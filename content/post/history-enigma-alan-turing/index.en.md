@@ -1,5 +1,6 @@
 ---
 title: "The Enigma Codebreaking War and Alan Turing: The Genius and the Machine That Saved the World"
+date: "2026-09-24T19:44:38+09:00"
 description: "The Enigma codebreaking that determined the outcome of World War II. We explain in detail the unknown battle of genius mathematician Alan Turing and the codebreakers at Bletchley Park."
 slug: "history-enigma-alan-turing"
 categories: ["history"]

@@ -1,5 +1,6 @@
 ---
 title: "Mekanisme Perenderan Peramban: Anatomi Lengkap dari Pohon DOM hingga Paint"
+date: "2026-09-24T19:44:38+09:00"
 description: "Menganalisis secara lengkap mekanisme mesin perenderan (seperti Blink, WebKit) dari saat peramban memuat HTML/CSS/JS hingga menggambar piksel di layar."
 slug: "browser-rendering-mechanism-dom-paint"
 date: 2026-09-20T17:10:00+09:00

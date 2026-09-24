@@ -1,5 +1,6 @@
 ---
 title: "本田宗一郎：不斷追尋夢想的技術者之魂與其遺產"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:59:56+09:00
 categories: ["biography"]
 tags: ["soichiro-honda", "history"]

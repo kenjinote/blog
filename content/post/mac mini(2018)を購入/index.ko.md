@@ -4,6 +4,7 @@
 
 
 title: 'iOS 앱 개발용으로 중고 Mac mini(2018)를 구매한 이유와 스펙'
+date: "2026-09-24T19:44:38+09:00"
 slug: "mac mini(2018)を購入"
 date: 2023-04-02T18:05:30+09:00
 tags: ["Apple", "mac mini", "xcode"]

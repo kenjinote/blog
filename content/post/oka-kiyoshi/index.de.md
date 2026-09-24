@@ -1,5 +1,6 @@
 ---
 title: "Kiyosi Oka: Das einsame Genie der Emotion und der Funktionentheorie mehrerer komplexer Veränderlicher"
+date: "2026-09-24T19:44:38+09:00"
 description: "Kiyosi Oka, ein Mathematiker, auf den Japan stolz ist. Wir vertiefen uns in Episoden seines Lebens und seine mathematischen Errungenschaften, einschließlich der Lösung der drei großen Probleme der Funktionentheorie mehrerer komplexer Veränderlicher. Wir erforschen seine Philosophie, dass Mathematik Emotion ist."
 slug: "oka-kiyoshi"
 date: 2026-09-20T20:20:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: 'Setting Method to Switch Apps Windows-Style (Alt+Tab) on Mac'
+date: "2026-09-24T19:44:38+09:00"
 slug: "macでWindowsライク（Alt+Tab）にApplication Switchingする方法"
 date: 2023-04-05T02:20:12+09:00
 tags: ["macos", "mac", "shortcut keys", "application switching"]

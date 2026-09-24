@@ -1,5 +1,6 @@
 ---
 title: "The Axiom of Choice and Zorn's Lemma - The Concept of 'Choice' That Shook the Foundations of Mathematics"
+date: "2026-09-24T19:44:38+09:00"
 description: "A deep dive into the Axiom of Choice and Zorn's Lemma, from their intuitive meaning to mathematical formalization and their importance in modern mathematics."
 slug: "axiom-of-choice-and-zorns-lemma"
 date: 2026-09-14T13:20:37+09:00

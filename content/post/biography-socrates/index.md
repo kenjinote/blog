@@ -1,5 +1,6 @@
 ---
 title: "ソクラテス：無知の知と対話が切り拓いた西洋哲学の原点"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["socrates", "history"]

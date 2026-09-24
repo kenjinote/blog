@@ -1,5 +1,6 @@
 ---
 title: "스티브 잡스: 세상을 바꾼 이단아의 궤적과 철학"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["steve-jobs", "history"]

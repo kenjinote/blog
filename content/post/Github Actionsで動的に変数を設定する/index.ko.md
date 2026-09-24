@@ -3,6 +3,7 @@
 
 
 title: 'GitHub Actions에서 동적으로 환경 변수를 설정하는 방법【Windows 환경】'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Github Actionsで動的に変数を設定する"
 date: 2022-10-02T02:33:35+09:00
 tags: ["GitHub", "GitHub Actions", "git"]

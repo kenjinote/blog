@@ -1,5 +1,6 @@
 ---
 title: 'Como resolver o problema do caixeiro-viajante (TSP) com o Mathematica'
+date: "2026-09-24T19:44:38+09:00"
 slug: "MathematicaでProblema do Caixeiro Viajanteを解く"
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "Problema do Caixeiro Viajante", "Algoritmo", "Matemática"]

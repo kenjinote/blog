@@ -1,5 +1,6 @@
 ---
 title: "日本资本主义之父涩泽荣一：致力于道德与经济合一的一生"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["eiichi-shibusawa", "history"]

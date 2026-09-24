@@ -8,6 +8,7 @@
 
 
 title: 'El muro del desarrollo de IA era alto... La razón y la realidad de por qué "crear una aplicación es un infierno a partir del 80%"'
+date: "2026-09-24T19:44:38+09:00"
 slug: "AI開発のPared"
 date: 2025-07-20T21:52:42+09:00
 tags: ["IA", "Desarrollo", "Barrera", "Poema"]

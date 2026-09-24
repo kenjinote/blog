@@ -1,5 +1,6 @@
 ---
 title: 'Cara Mudah Membuat .gitignore untuk Proyek Menggunakan Perintah dotnet'
+date: "2026-09-24T19:44:38+09:00"
 slug: "dotnetPerintahで.gitignoreを生成する"
 date: 2022-09-13T00:25:12+09:00
 tags: ["dotnet","git"]

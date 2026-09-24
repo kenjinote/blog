@@ -1,5 +1,6 @@
 ---
 title: 'مقارنة شاملة لواجهات برمجة التطبيقات (API) لـ ChatGPT و Gemini و Claude! أيهم يجب أن تختار؟'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'chatgpt-gemini-claude-api-comparison'
 date: '2026-09-11T12:00:00+09:00'
 image: 'img/eyecatch.jpg'

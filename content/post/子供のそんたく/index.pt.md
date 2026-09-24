@@ -1,5 +1,6 @@
 ---
 title: 'Emocionado com a gentileza de uma criança de 2 anos! Um episódio reconfortante sobre ler o ambiente e a consideração de uma criança'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Criançaのそんたく"
 date: 2022-09-07T04:40:52+09:00
 tags: ["Criança"]

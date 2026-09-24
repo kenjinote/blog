@@ -1,5 +1,6 @@
 ---
 title: "ネルソン・マンデラ：不屈の精神と「赦し」が築いた新しい南アフリカ"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["nelson-mandela", "history"]

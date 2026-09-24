@@ -1,5 +1,6 @@
 ---
 title: "Esmeraldas são verdes ou 'grue'? O Novo Enigma da Indução de Goodman"
+date: "2026-09-24T19:44:38+09:00"
 description: "Amanhã, todas as esmeraldas do mundo podem ficar azuis. O paradoxo 'grue' que abala os fundamentos das previsões científicas."
 date: 2026-09-10T21:00:00+09:00
 draft: false

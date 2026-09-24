@@ -2,6 +2,7 @@
 
 
 title: 'Características y precios del servicio de fuentes web "FONTPLUS"'
+date: "2026-09-24T19:44:38+09:00"
 slug: "fontplus.jp"
 date: 2023-02-07T20:59:01+09:00
 tags: ["fuente","fontplus"]

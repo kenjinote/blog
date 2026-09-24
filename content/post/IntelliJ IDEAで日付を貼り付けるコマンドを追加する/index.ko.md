@@ -4,6 +4,7 @@
 
 
 title: 'IntelliJ IDEA에서 현재 날짜를 삽입하는 바로 가기 생성 방법'
+date: "2026-09-24T19:44:38+09:00"
 slug: "IntelliJ IDEAで날짜を貼り付ける명령어を追加する"
 date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]

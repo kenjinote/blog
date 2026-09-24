@@ -1,5 +1,6 @@
 ---
 title: 'John von Neumann: Jejak "Otak Iblis" yang Membangun Sains Modern'
+date: "2026-09-24T19:44:38+09:00"
 description: 'Penjelasan mendetail tentang kehidupan ahli matematika jenius John von Neumann, pencapaiannya yang menakjubkan dari teori permainan hingga mekanika kuantum dan ilmu komputer, serta berbagai anekdot di sekitarnya.'
 slug: 'von-neumann'
 date: '2026-09-20T20:20:00+09:00'

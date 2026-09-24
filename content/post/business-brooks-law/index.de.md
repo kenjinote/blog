@@ -1,5 +1,6 @@
 ---
 title: "Brooks' Gesetz umfassend analysiert: Warum das Hinzufügen von Personal zu einem verspäteten Projekt Öl ins Feuer gießt"
+date: "2026-09-24T19:44:38+09:00"
 description: "\"Wenn man einem verspäteten Projekt Personen hinzufügt, verspätet es sich noch mehr.\" Wir befassen uns eingehend mit Brooks' Gesetz, das im Software-Engineering-Klassiker \"The Mythical Man-Month\" vorgeschlagen wurde, seinen Hintergründen, Ursachen und Gegenmaßnahmen in der modernen agilen Entwicklung."
 slug: "business-brooks-law"
 categories: ["business"]

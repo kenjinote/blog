@@ -1,5 +1,6 @@
 ---
 title: 'O Paradoxo de Newcomb: Você Consegue Vencer um Super-humano que Vê o Futuro?'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'newcombs-paradox'
 description: '"Uma caixa transparente com 100 mil ienes" e "uma caixa opaca com 100 milhões de ienes ou vazia". Em um jogo preparado por um super-ser que prevê perfeitamente o futuro, qual você escolheria? Explicamos o maior dilema da filosofia moderna, onde o livre-arbítrio e o determinismo colidem.'
 date: '2026-09-10T08:00:00+09:00'

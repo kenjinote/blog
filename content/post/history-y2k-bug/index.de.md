@@ -1,5 +1,6 @@
 ---
 title: "Die Wahrheit über das Y2K-Problem und das Debugging-Drama: Der Kampf der namenlosen Programmierer, die die Welt retteten"
+date: "2026-09-24T19:44:38+09:00"
 description: "Ende 1999 geriet die Welt wegen des \"Y2K-Bugs\" (Jahr-2000-Problem) in Panik. War es nur ein Medienhype? Nein, es gab ein dramatisches Debugging, bei dem Programmierer Tag und Nacht mit dem Code kämpften, um einen weltweiten Systemkollaps zu verhindern. Wir nähern uns der Wahrheit jener Zeit."
 slug: "history-y2k-bug"
 categories: ["history"]

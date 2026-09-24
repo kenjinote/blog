@@ -1,5 +1,6 @@
 ---
 title: 'The Overly Beautiful World of Mathematics: A Collection of Favorite Formulas Like Wilson''s Theorem and Euler''s Formula'
+date: "2026-09-24T19:44:38+09:00"
 slug: "好きなFormula"
 date: 2022-10-05T13:24:50+09:00
 tags: ["Mathematics"]

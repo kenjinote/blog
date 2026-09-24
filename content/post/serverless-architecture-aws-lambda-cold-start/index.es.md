@@ -1,5 +1,6 @@
 ---
 title: "Luces y sombras de la arquitectura serverless: El funcionamiento interno de AWS Lambda y el cold start"
+date: "2026-09-24T19:44:38+09:00"
 description: "Exploramos en profundidad no solo las ventajas de serverless, sino también los mecanismos de los contenedores subyacentes, el problema del cold start y sus soluciones (como SnapStart)."
 slug: "serverless-architecture-aws-lambda-cold-start"
 date: 2026-09-21T09:00:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: "Grundlagen der Web-Sicherheit und aktuelle Trends: Von XSS, CSRF bis CORS, CSP"
+date: "2026-09-24T19:44:38+09:00"
 description: "Sicherheitsmaßnahmen zum Schutz von Webanwendungen vor Bedrohungen. Umfassende Erklärung von klassischen XSS und CSRF bis hin zu den in der modernen Webentwicklung unerlässlichen Techniken wie CORS, CSP und SameSite Cookies."
 slug: "web-security-basics-cors-csp"
 date: 2026-09-20T17:10:00+09:00

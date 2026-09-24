@@ -1,5 +1,6 @@
 ---
 title: 'Wie hat sich der Umfang der Software verändert? Die Geschichte und Entwicklung von Quellcode-Zeilen'
+date: "2026-09-24T19:44:38+09:00"
 slug: "QuellcodeのZeilenanzahl"
 date: 2025-04-17T10:33:02+09:00
 tags: ["Quellcode", "Codezeilen"]

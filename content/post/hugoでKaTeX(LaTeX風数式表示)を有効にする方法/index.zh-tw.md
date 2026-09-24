@@ -1,5 +1,6 @@
 ---
 title: '在Hugo中導入KaTeX，顯示LaTeX風格優美數學公式的方法'
+date: "2026-09-24T19:44:38+09:00"
 slug: "hugoでKaTeX(LaTeX風數式表示)を有効にする方法"
 date: 2023-03-31T23:11:26+09:00
 tags: ["KaTeX", "LaTeX", "公式", "數學", "hugo"]

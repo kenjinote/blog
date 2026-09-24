@@ -8,6 +8,7 @@
 
 
 title: '프로그래밍의 등용문 ''FizzBuzz 문제''란? Python 작성법 해설'
+date: "2026-09-24T19:44:38+09:00"
 slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "알고리즘"]

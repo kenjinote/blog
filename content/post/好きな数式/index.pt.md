@@ -1,5 +1,6 @@
 ---
 title: 'O belo mundo da matemática: Coleção de fórmulas favoritas como o Teorema de Wilson e a Fórmula de Euler'
+date: "2026-09-24T19:44:38+09:00"
 slug: "好きなFórmula Matemática"
 date: 2022-10-05T13:24:50+09:00
 tags: ["Matemática"]

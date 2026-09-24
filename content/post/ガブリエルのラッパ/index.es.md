@@ -1,5 +1,6 @@
 ---
 title: "¿Se puede llenar de pintura, pero no se puede pintar su superficie? El cuerno de Gabriel"
+date: "2026-09-24T19:44:38+09:00"
 description: "La extraña paradoja de un sólido aportado por el cálculo que tiene un 'volumen finito' y un 'área de superficie infinita' al mismo tiempo."
 date: 2026-09-10T21:00:00+09:00
 draft: false

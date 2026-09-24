@@ -1,5 +1,6 @@
 ---
 title: 'VSCode推荐扩展程序合集！大幅提升开发效率的插件一览'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Visual Studio Code推荐扩展功能"
 date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "扩展", "插件"]

@@ -7,6 +7,7 @@
 
 
 title: 'Cómo generar códigos QR en el símbolo del sistema usando el comando curl'
+date: "2026-09-24T19:44:38+09:00"
 slug: "curlでCódigo QR生成"
 date: 2024-04-16T00:42:27+09:00
 tags: ["Código QR", "curl", "Símbolo del sistema"]

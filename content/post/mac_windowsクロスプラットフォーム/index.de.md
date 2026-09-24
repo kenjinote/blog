@@ -1,5 +1,6 @@
 ---
 title: 'Dinge, die bei der plattformübergreifenden Entwicklung für Mac und Windows zu beachten sind'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'cross-platform-development-mac-windows'
 date: '2026-09-13T08:00:00+09:00'
 image: 'img/eyecatch.jpg'

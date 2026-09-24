@@ -1,5 +1,6 @@
 ---
 title: "A Batalha de Quebra de Código do Enigma e Alan Turing: O Gênio e a Máquina que Salvaram o Mundo"
+date: "2026-09-24T19:44:38+09:00"
 description: "A quebra do código Enigma que determinou o rumo da Segunda Guerra Mundial. Uma explicação detalhada da batalha desconhecida do matemático genial Alan Turing e dos decifradores de Bletchley Park."
 slug: "history-enigma-alan-turing"
 categories: ["history"]

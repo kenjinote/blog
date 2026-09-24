@@ -1,5 +1,6 @@
 ---
 title: "卡爾·馬克思：抨擊資本主義矛盾、推動歷史進程的思想家"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["karl-marx", "history"]

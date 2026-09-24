@@ -1,5 +1,6 @@
 ---
 title: "[The Truth About the Ringelmann Effect (Social Loafing) and a Complete Guide to Maximizing Organizational Productivity]"
+date: "2026-09-24T19:44:38+09:00"
 description: "\"People slack off in groups.\" This comprehensive guide thoroughly explains the causes of the \"Ringelmann Effect (Social Loafing)\" discovered by French agricultural engineer Maximilien Ringelmann, its negative impact on business, and specific measures to protect your organization."
 slug: "business-ringelmann-effect"
 categories: ["business"]

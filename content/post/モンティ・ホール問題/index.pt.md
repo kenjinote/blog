@@ -1,5 +1,6 @@
 ---
 title: 'O Problema de Monty Hall: A Armadilha da Probabilidade que Desafia a Intuição e a Solução Completa por Inferência Bayesiana'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'monty-hall-problem'
 description: 'Um jogo de programa de TV onde você escolhe um prêmio entre 3 portas. Após o apresentador abrir uma porta sem prêmio, você deveria mudar sua escolha? Vamos desvendar completamente o "Problema de Monty Hall", que foi o centro de uma grande controvérsia envolvendo matemáticos de todo o mundo, sob as perspectivas da teoria das probabilidades, inferência bayesiana e psicologia cognitiva.'
 date: '2026-09-10T00:00:00+09:00'

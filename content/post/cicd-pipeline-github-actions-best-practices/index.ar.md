@@ -1,5 +1,6 @@
 ---
 title: "مسار CI/CD و GitHub Actions: أفضل الممارسات للتكامل المستمر"
+date: "2026-09-24T19:44:38+09:00"
 description: "نغطي مبادئ CI/CD التي تسرع دورة حياة تطوير البرمجيات، والخبرة العملية في بناء مسار باستخدام GitHub Actions."
 slug: "cicd-pipeline-github-actions-best-practices"
 date: 2026-09-21T09:00:00+09:00

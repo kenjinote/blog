@@ -1,5 +1,6 @@
 ---
 title: "비잔틴 장군 문제와 합의 알고리즘의 심연: Paxos, Raft, BFT의 구조"
+date: "2026-09-24T19:44:38+09:00"
 description: "분산 시스템의 근간을 이루는 합의 알고리즘에 대해 비잔틴 장군 문제의 기원부터 Paxos, Raft, 그리고 악의적인 노드에 내성을 가지는 BFT까지 이론, 수식, 코드 구현을 섞어 철저하게 깊이 파고듭니다."
 slug: byzantine-generals-problem-consensus
 date: 2026-09-21T02:45:54+09:00

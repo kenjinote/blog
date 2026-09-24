@@ -1,5 +1,6 @@
 ---
 title: "La révolution open source et \"La Cathédrale et le Bazar\" : un changement de paradigme qui a transformé l'histoire du développement logiciel"
+date: "2026-09-24T19:44:38+09:00"
 description: "Une explication détaillée de la manière dont \"La Cathédrale et le Bazar\" a jeté les bases du développement moderne de logiciels open source, depuis son contexte historique jusqu'à son impact sur le génie logiciel contemporain."
 slug: "history-open-source-revolution"
 categories: ["history"]

@@ -8,6 +8,7 @@
 
 
 title: '양자 컴퓨터는 RSA 암호를 깰 것인가? 쇼어의 알고리즘 설명'
+date: "2026-09-24T19:44:38+09:00"
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["양자 컴퓨터", "암호 해독", "Shor의 알고리즘", "RSA"]
 image: "eyecatch.jpg"

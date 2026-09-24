@@ -1,5 +1,6 @@
 ---
 title: "Maxwells Dämon: Das ultimative Gedankenexperiment zum Zweiten Hauptsatz der Thermodynamik und wie Information zu Wärme wird"
+date: "2026-09-24T19:44:38+09:00"
 description: "Das berühmteste Paradoxon in der Geschichte der Physik, \"Maxwells Dämon\". Wie entstand dieser Dämon, der den Zweiten Hauptsatz der Thermodynamik zu brechen schien, und wie wurde er nach mehr als einem Jahrhundert besiegt? Eine ausführliche Erklärung des Weges zur Informationsthermodynamik."
 slug: "paradox-maxwells-demon"
 categories: ["science"]

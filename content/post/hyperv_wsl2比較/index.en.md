@@ -1,5 +1,6 @@
 ---
 title: 'Hyper-V vs WSL2: Comparing Virtualization Technologies on Windows'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'hyper-v-vs-wsl2-windows-virtualization'
 date: '2026-09-13T07:00:00+09:00'
 image: 'img/eyecatch.jpg'

@@ -1,5 +1,6 @@
 ---
 title: 'Chosen by an Active Engineer! Recommended PC Peripherals to Skyrocket Your Work Efficiency'
+date: "2026-09-24T19:44:38+09:00"
 slug: "RecommendationのPC周辺機器"
 date: 2023-02-28T00:51:49+09:00
 tags: ["Keyboard", "Trackball", "Display"]

@@ -1,5 +1,6 @@
 ---
 title: "Was ist die Dunbar-Zahl? Eine umfassende Erklärung der kognitiven Grenzen menschlicher Beziehungen und ihrer Anwendung im Organisationsdesign"
+date: "2026-09-24T19:44:38+09:00"
 description: "Die Dunbar-Zahl besagt, dass Menschen maximal 150 stabile Beziehungen aufrechterhalten können. In diesem Artikel gehen wir tief auf diese vom Evolutionspsychologen Robin Dunbar aufgestellte Regel ein – von ihren biologischen Grundlagen über menschliche Beziehungen im Zeitalter der sozialen Medien bis hin zur Anwendung im Organisationsdesign bei der Skalierung von Unternehmen."
 slug: "business-dunbars-number"
 categories: ["business"]

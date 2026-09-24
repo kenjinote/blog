@@ -1,5 +1,6 @@
 ---
 title: 'Paradoks Russell: Apakah "Himpunan dari Semua Himpunan yang Tidak Memuat Dirinya Sendiri" Memuat Dirinya Sendiri?'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'russells-paradox'
 description: '"Apakah tukang cukur yang mencukur semua penduduk desa yang tidak mencukur janggutnya sendiri, mencukur janggutnya sendiri?" Kami akan menjelaskan paradoks mengerikan dari Bertrand Russell yang mengguncang "Teori Himpunan" sebagai fondasi matematika, dan mengubah sejarah logika.'
 date: '2026-09-10T04:00:00+09:00'

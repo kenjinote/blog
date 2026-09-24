@@ -1,5 +1,6 @@
 ---
 title: "孤独なる預言者：フリードリヒ・ニーチェの生涯と哲学の深淵"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["friedrich-nietzsche", "history"]

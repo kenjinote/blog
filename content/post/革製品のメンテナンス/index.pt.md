@@ -1,5 +1,6 @@
 ---
 title: 'Para iniciantes: Suprimentos de manutenção recomendados e métodos de cuidado para produtos de couro'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Produtos de Couroのメンテナンス"
 date: 2024-10-30T00:31:46+09:00
 tags: ["produtos de couro", "hobby"]

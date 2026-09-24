@@ -1,5 +1,6 @@
 ---
 title: 'La Paradoja de Banach-Tarski: ¿Cortar una esfera produce dos esferas del mismo tamaño?'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'banach-tarski-paradox'
 description: '¿Si cortas un guisante y lo reensamblas como un rompecabezas, puede llegar a ser del tamaño del sol? Explicamos el extraño mundo de la "Paradoja de Banach-Tarski", una consecuencia del "Axioma de Elección" de la matemática moderna que desafía la intuición, pero que es completamente correcta desde un punto de vista lógico.'
 date: '2026-09-10T02:00:00+09:00'

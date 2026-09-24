@@ -1,5 +1,6 @@
 ---
 title: "Prométhée Moderne : La Trajectoire de Bill Gates et le Monde Changé par la Technologie"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["bill-gates", "history"]

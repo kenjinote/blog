@@ -4,6 +4,7 @@
 
 
 title: 'Mac에 CocoaPods를 설치하는 방법과 오류 대처법'
+date: "2026-09-24T19:44:38+09:00"
 slug: "macにCocoaPodsを설치する方法"
 date: 2023-04-09T03:25:54+09:00
 tags: ["mac", "CocoaPods", "macOS", "xcode"]

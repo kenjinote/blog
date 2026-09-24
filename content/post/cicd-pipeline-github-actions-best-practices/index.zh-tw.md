@@ -1,5 +1,6 @@
 ---
 title: "CI/CD 管線與 GitHub Actions：持續整合的最佳實務"
+date: "2026-09-24T19:44:38+09:00"
 description: "全面涵蓋加速軟體開發生命週期的 CI/CD 原則，以及使用 GitHub Actions 建置實用管線的技術訣竅。"
 slug: "cicd-pipeline-github-actions-best-practices"
 date: 2026-09-21T09:00:00+09:00

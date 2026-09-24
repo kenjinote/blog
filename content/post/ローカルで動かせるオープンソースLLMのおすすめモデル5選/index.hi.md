@@ -1,5 +1,6 @@
 ---
 title: 'स्थानीय रूप से चलाने योग्य 5 बेहतरीन ओपन सोर्स LLM मॉडल'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'top-5-open-source-local-llms'
 date: '2026-09-11T03:00:00+09:00'
 image: 'img/eyecatch.jpg'

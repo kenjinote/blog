@@ -1,5 +1,6 @@
 ---
 title: "L'héritage de Steve McConnell : Le maître qui a élevé le développement logiciel au rang d'« Ingénierie »"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:18:01+09:00
 categories: ["biography"]
 tags: ["steve-mcconnell", "history"]

@@ -1,5 +1,6 @@
 ---
 title: "Turingmaschinen und Berechenbarkeitstheorie: Alan Turings Gedankenexperiment und das „Halteproblem“"
+date: "2026-09-24T19:44:38+09:00"
 description: "Was sind die Grenzen der Berechnung? Wir befassen uns eingehend mit dem Konzept der von Alan Turing vorgeschlagenen Turingmaschine und dem „Halteproblem“, einem Meilenstein der Berechenbarkeitstheorie, aus mathematischer und programmiertechnischer Sicht."
 slug: turing-machine-computability
 date: 2026-09-21T02:35:46+09:00

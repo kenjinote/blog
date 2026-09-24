@@ -1,5 +1,6 @@
 ---
 title: "中国剩余定理（Chinese Remainder Theorem） - 从古代算术到支撑现代RSA加密的大定理"
+date: "2026-09-24T19:44:38+09:00"
 description: "详细解说起源于古代中国算术书的中国剩余定理（CRT），从其数学原理到其在现代公开密钥加密（RSA加密）中的重要应用。"
 slug: "chinese-remainder-theorem"
 date: 2026-09-14T13:11:25+09:00

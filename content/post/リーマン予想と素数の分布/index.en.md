@@ -1,5 +1,6 @@
 ---
 title: 'The Riemann Hypothesis and the Distribution of Prime Numbers: A Deep Connection with Modern Cryptography'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'riemann-hypothesis-prime-distribution-cryptography'
 date: '2026-09-11T16:00:00+09:00'
 image: 'img/eyecatch.jpg'

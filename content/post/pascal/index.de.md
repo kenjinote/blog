@@ -1,5 +1,6 @@
 ---
 title: "Blaise Pascal: Der Werdegang und die großen Errungenschaften eines Genies der Mathematik, Physik und Philosophie"
+date: "2026-09-24T19:44:38+09:00"
 description: "Blaise Pascal, bekannt für 'Der Mensch ist ein denkendes Schilfrohr'. Wir detaillieren sein turbulentes Leben und seine Errungenschaften, vom Satz von Pascal, dem Pascalschen Dreieck und der Begründung der Wahrscheinlichkeitstheorie bis zum Beweis des Vakuums in der Physik und seinem philosophischen Ziel 'Pensées'."
 slug: "pascal"
 date: 2026-09-20T19:00:00+09:00

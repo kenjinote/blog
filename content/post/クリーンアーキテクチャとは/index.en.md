@@ -1,5 +1,6 @@
 ---
 title: 'Software Architecture Basics: What is Clean Architecture?'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'clean-architecture-basics-guide'
 date: '2026-09-12T12:00:00+09:00'
 image: 'img/eyecatch.jpg'

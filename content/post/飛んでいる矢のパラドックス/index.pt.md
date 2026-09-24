@@ -1,5 +1,6 @@
 ---
 title: "A flecha em voo está parada? O Paradoxo da 'Flecha em Voo' de Zenão"
+date: "2026-09-24T19:44:38+09:00"
 description: "Uma flecha em voo está em repouso em todos os instantes. Então, o movimento não existe? O maior quebra-cabeça lógico da Grécia Antiga."
 date: 2026-09-10T21:00:00+09:00
 draft: false

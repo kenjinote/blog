@@ -1,5 +1,6 @@
 ---
 title: "Karl Marx: Der Denker, der die Widersprüche des Kapitalismus angriff und die Geschichte bewegte"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["karl-marx", "history"]

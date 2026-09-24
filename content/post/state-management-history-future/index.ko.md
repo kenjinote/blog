@@ -1,5 +1,6 @@
 ---
 title: "상태 관리의 역사와 미래: Redux에서 Signals, Reactivity의 진화"
+date: "2026-09-24T19:44:38+09:00"
 description: "프론트엔드 개발의 역사에서 가장 큰 과제인 '상태 관리'. MVC부터 Flux, Redux, Context API, 그리고 Signals와 세립도 리액티비티(Fine-grained Reactivity)에 이르기까지의 변천과 미래를 깊이 파헤치는 완전한 가이드."
 slug: state-management-history-future
 date: 2026-09-21T12:00:00+09:00

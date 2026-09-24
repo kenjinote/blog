@@ -1,5 +1,6 @@
 ---
 title: 'Como Configurar a Troca de Aplicativos no Estilo Windows (Alt+Tab) no Mac'
+date: "2026-09-24T19:44:38+09:00"
 slug: "macでWindowsライク（Alt+Tab）にAlternância de Aplicativosする方法"
 date: 2023-04-05T02:20:12+09:00
 tags: ["macos", "mac", "teclas de atalho", "alternar aplicativos"]

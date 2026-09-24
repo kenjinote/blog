@@ -1,5 +1,6 @@
 ---
 title: "A Função Gama: A Obra-Prima de Euler que Estende o Fatorial para Números Reais e Complexos"
+date: "2026-09-24T19:44:38+09:00"
 description: "A Função Gama conecta fatoriais discretos a uma curva suave. Exploramos profundamente sua definição, propriedades, a história de sua descoberta por Euler, a continuação analítica, a aproximação de Stirling e suas aplicações na ciência moderna."
 slug: "gamma-function"
 date: 2026-09-20T14:40:00+09:00

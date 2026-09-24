@@ -1,5 +1,6 @@
 ---
 title: '编程入门的敲门砖“FizzBuzz问题”是什么？讲解Python的写法'
+date: "2026-09-24T19:44:38+09:00"
 slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "算法"]

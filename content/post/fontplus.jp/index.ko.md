@@ -3,6 +3,7 @@
 
 
 title: '웹 폰트 서비스 ''FONTPLUS(폰트플러스)''의 특징과 요금'
+date: "2026-09-24T19:44:38+09:00"
 slug: "fontplus.jp"
 date: 2023-02-07T20:59:01+09:00
 tags: ["font","fontplus"]

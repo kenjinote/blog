@@ -1,5 +1,6 @@
 ---
 title: "Hodge Conjecture - The Millennium Prize Problem Bridging Algebraic Geometry and Topology"
+date: "2026-09-24T19:44:38+09:00"
 description: "A comprehensive guide to the Hodge Conjecture, one of the Clay Mathematics Institute's Millennium Prize Problems, exploring its role as a bridge between algebraic geometry and topology and its deep mathematical background."
 slug: "hodge-conjecture"
 date: 2026-09-14T13:04:13+09:00

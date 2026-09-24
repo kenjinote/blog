@@ -1,5 +1,6 @@
 ---
 title: '无需Python！仅用C++构建AI推理引擎'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'building-ai-inference-engine-cpp-only'
 date: '2026-09-11T17:00:00+09:00'
 image: 'img/eyecatch.jpg'

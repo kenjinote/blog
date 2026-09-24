@@ -1,5 +1,6 @@
 ---
 title: "搜尋演算法（線性、二元搜尋與雜湊表原理）"
+date: "2026-09-24T19:44:38+09:00"
 description: "從資料中找出目標值的搜尋演算法。從線性搜尋、二元搜尋的基礎，到實現高速搜尋的雜湊表原理，為您深入解析。"
 slug: "search-algorithms-linear-binary-hash-table-principles"
 date: 2026-09-22T02:00:00+09:00

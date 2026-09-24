@@ -1,5 +1,6 @@
 ---
 title: 'The Birthday Paradox: Over 50% with just 23 people? The magic of "combinations" that deceives intuition'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'birthday-paradox'
 description: 'Whether it is a school class or a company department, when just 23 people gather, the probability of two people sharing the same birthday exceeds 50%. We explain visually and mathematically using probability theory and graphs how easily human intuition overlooks this "combinatorial explosion".'
 date: '2026-09-10T00:00:00+09:00'

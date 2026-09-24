@@ -1,5 +1,6 @@
 ---
 title: '用C++实现一般数域筛法（GNFS）｜RSA解密算法机制'
+date: "2026-09-24T19:44:38+09:00"
 slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "数学", "密码学"]

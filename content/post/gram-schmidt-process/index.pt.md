@@ -1,5 +1,6 @@
 ---
 title: 'Processo de Gram-Schmidt: Um algoritmo para realinhar vetores de base distorcidos em vetores nítidos e mutuamente ortogonais'
+date: "2026-09-24T19:44:38+09:00"
 description: 'Um guia abrangente sobre o processo de ortogonalização de Gram-Schmidt em álgebra linear, cobrindo a intuição geométrica, formulação matemática, versões modificadas numericamente estáveis, implementação em Python e aplicações em espaços polinomiais.'
 slug: 'gram-schmidt-process'
 date: '2026-09-20T14:40:00+09:00'

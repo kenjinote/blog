@@ -1,5 +1,6 @@
 ---
 title: "【그레이스 호퍼: 프로그래밍의 미래를 개척한 \"COBOL의 어머니\"의 생애와 유산】"
+date: "2026-09-24T19:44:38+09:00"
 description: "\"COBOL의 어머니\"로 알려진 미 해군 소장 그레이스 호퍼. 컴파일러의 발명부터 최초의 컴퓨터 버그 발견까지, 현대 IT 사회의 초석을 다진 그녀의 파란만장한 생애와 위대한 업적을 철저히 해설합니다."
 slug: "biography-grace-hopper"
 categories: ["biography"]

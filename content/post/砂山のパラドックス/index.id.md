@@ -1,5 +1,6 @@
 ---
 title: "Jika Anda Menghilangkan Satu Butir Pasir, Kapan Gundukan Pasir Berhenti Menjadi Gundukan Pasir?: Paradoks Gundukan Pasir"
+date: "2026-09-24T19:44:38+09:00"
 description: "Di mana batas antara 'gundukan pasir' dan 'bukan gundukan pasir'? Sebuah paradoks filosofis sejak zaman Yunani Kuno yang menantang esensi keambiguan."
 date: 2026-09-10T21:00:00+09:00
 draft: false

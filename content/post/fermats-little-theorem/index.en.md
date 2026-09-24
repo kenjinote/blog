@@ -1,5 +1,6 @@
 ---
 title: "Fermat's Little Theorem: The Nature of Primes and the Foundation of Modern Cryptography (RSA)"
+date: "2026-09-24T19:44:38+09:00"
 description: "A detailed explanation of Fermat's Little Theorem, from an intuitive understanding to its mathematical proof, and its practical application in RSA cryptography."
 slug: "fermats-little-theorem"
 date: 2026-09-20T15:00:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: 'Sejarah Matematika dan Masalah Sulit di Zaman Kuno: Mempelajari Tiga Masalah Konstruksi Besar dan Spiral Archimedes'
+date: "2026-09-24T19:44:38+09:00"
 slug: "MatematikaのSejarah"
 date: 2023-07-22T15:25:10+09:00
 tags: ["matematika", "sejarah"]

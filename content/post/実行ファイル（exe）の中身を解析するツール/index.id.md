@@ -1,5 +1,6 @@
 ---
 title: '4 Alat Praktis untuk Menganalisis dan Mengekstrak Isi File Executable (exe) Windows'
+date: "2026-09-24T19:44:38+09:00"
 slug: "File Eksekusi（exe）の中身をAnalisisするAlat"
 date: 2023-04-05T23:31:06+09:00
 tags: ["windows", "exe", "file executable", "analisis"]

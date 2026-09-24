@@ -1,5 +1,6 @@
 ---
 title: "Maxwells Dämon: Die Energie der „Information“, die den gesunden Menschenverstand der Physik bricht"
+date: "2026-09-24T19:44:38+09:00"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "Ein Gedankenexperiment, das den Zweiten Hauptsatz der Thermodynamik zu brechen scheint: „Maxwells Dämon“. Wie dieses Paradoxon durch die „Physik der Information“ gelöst wurde, erklären wir ausführlich mit Formeln und Diagrammen."

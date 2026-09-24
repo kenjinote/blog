@@ -1,5 +1,6 @@
 ---
 title: "Alexander Grothendieck: A Vida e as Conquistas do Maior Matemático do Século XX"
+date: "2026-09-24T19:44:38+09:00"
 description: "Uma explicação detalhada da vida extraordinária e das conquistas revolucionárias na geometria algébrica de Alexander Grothendieck. Exploramos como os seus pensamentos e filosofia influenciaram a matemática moderna."
 slug: "grothendieck"
 date: 2026-09-20T20:30:00+09:00

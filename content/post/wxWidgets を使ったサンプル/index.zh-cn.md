@@ -1,5 +1,6 @@
 ---
 title: 'wxWidgets使用指南：从安装方法到创建示例项目'
+date: "2026-09-24T19:44:38+09:00"
 slug: "wxWidgets を使った示例"
 date: 2023-04-18T00:18:22+09:00
 tags: ["wxWidgets", "示例"]

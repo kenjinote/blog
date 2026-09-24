@@ -1,5 +1,6 @@
 ---
 title: 'Achilles and the Tortoise: Can He Catch Up or Not? The Paradox of "Infinity" from Ancient Greece'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'achilles-and-the-tortoise'
 description: 'Can the swift hero Achilles never catch up to the slow-footed tortoise? The most famous of Zeno''s paradoxes has troubled philosophers and mathematicians for over 2,000 years. We will mathematically unravel the trick of this logic using the concepts of the sum of infinite series and limits.'
 date: '2026-09-10T01:00:00+09:00'

@@ -1,5 +1,6 @@
 ---
 title: "O Problema dos Generais Bizantinos: Como obter consenso numa rede com traidores?"
+date: "2026-09-24T19:44:38+09:00"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "Explicaremos de forma fácil de entender o 'Problema dos Generais Bizantinos', um dos principais desafios em sistemas distribuídos, desde o seu conceito até à prova matemática e à sua aplicação em blockchain, utilizando exemplos concretos e diagramas."

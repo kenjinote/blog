@@ -3,6 +3,7 @@
 
 
 title: 'Cómo mostrar un cuadro de mensaje de Windows (MessageBox) usando Rust y winapi'
+date: "2026-09-24T19:44:38+09:00"
 slug: "RustでMessageBoxを表示する"
 date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]

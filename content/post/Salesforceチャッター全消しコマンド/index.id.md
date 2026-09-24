@@ -1,5 +1,6 @@
 ---
 title: 'Salesforce: Perintah untuk Menghapus Semua Postingan Chatter dan Lampiran'
+date: "2026-09-24T19:44:38+09:00"
 slug: "SalesforceCeloteh全消しPerintah"
 date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "Chatter"]

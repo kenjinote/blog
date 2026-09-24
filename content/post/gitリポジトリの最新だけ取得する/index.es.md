@@ -7,6 +7,7 @@
 
 
 title: 'Cómo descargar solo el último commit de un repositorio con Git clone'
+date: "2026-09-24T19:44:38+09:00"
 slug: "gitRepositorioの最新だけ取得する"
 date: 2024-04-27T02:54:12+09:00
 tags: ["git", "repositorio", "comando"]

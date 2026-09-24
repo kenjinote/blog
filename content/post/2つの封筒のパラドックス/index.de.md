@@ -1,5 +1,6 @@
 ---
 title: 'Das Zwei-Umschläge-Paradoxon: Der logische Zusammenbruch und die Entscheidungsfalle, die durch unendliche Erwartungswerte verursacht werden'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'two-envelopes-paradox'
 description: 'Zwei Umschläge liegen vor Ihnen. Der eine enthält doppelt so viel Geld wie der andere. Wenn Sie tauschen, ohne Ihren Umschlag zu öffnen, gewinnen Sie dann in Bezug auf den Erwartungswert immer? Durch das "Zwei-Umschläge-Paradoxon", bei dem Intuition und Mathematik heftig aufeinanderprallen, erklären wir gründlich die Fallstricke des Erwartungswertes und das Konzept der Unendlichkeit.'
 date: '2026-09-10T00:00:00+09:00'

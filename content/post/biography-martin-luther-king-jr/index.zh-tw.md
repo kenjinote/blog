@@ -1,5 +1,6 @@
 ---
 title: "馬丁·路德·金：以非暴力改變世界的夢想化身"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["martin-luther-king-jr", "history"]

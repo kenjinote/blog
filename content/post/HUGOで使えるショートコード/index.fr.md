@@ -1,5 +1,6 @@
 ---
 title: 'Liste des shortcodes intégrés de Hugo : Intégration de YouTube et Twitter'
+date: "2026-09-24T19:44:38+09:00"
 slug: "HUGOで使えるCourtコード"
 date: 2022-09-11T22:59:52+09:00
 tags: ["HUGO"]

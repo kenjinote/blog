@@ -1,5 +1,6 @@
 ---
 title: "完全理解 Docker 與容器技術：從 Namespace, cgroups 到映像檔層"
+date: "2026-09-24T19:44:38+09:00"
 description: "超越單純的工具使用方法，徹底剖析利用 Linux 核心功能（Namespace、cgroups、OverlayFS）的容器背後運作機制。"
 slug: "docker-container-namespace-cgroups-layers"
 date: 2026-09-21T09:00:00+09:00

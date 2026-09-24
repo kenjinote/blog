@@ -1,5 +1,6 @@
 ---
 title: "인간관계의 원칙을 세운 남자: 데일 카네기의 생애와 철학"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:59:58+09:00
 categories: ["biography"]
 tags: ["dale-carnegie", "history"]

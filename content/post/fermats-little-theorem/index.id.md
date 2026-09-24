@@ -1,5 +1,6 @@
 ---
 title: "Teorema Kecil Fermat: Sifat Bilangan Prima dan Fondasi Kriptografi Modern (RSA)"
+date: "2026-09-24T19:44:38+09:00"
 description: "Penjelasan mendetail tentang Teorema Kecil Fermat, dari pemahaman intuitif hingga pembuktian matematisnya, dan aplikasi praktisnya dalam kriptografi RSA."
 slug: "fermats-little-theorem"
 date: 2026-09-20T15:00:00+09:00

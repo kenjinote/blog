@@ -1,5 +1,6 @@
 ---
 title: "美国开国元勋与全才：本杰明·富兰克林的一生与哲学"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:46:04+09:00
 categories: ["biography"]
 tags: ["benjamin-franklin", "history"]

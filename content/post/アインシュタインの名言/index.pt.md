@@ -1,5 +1,6 @@
 ---
 title: 'Não perca para as críticas! Dicas para viver forte através de citações de Einstein'
+date: "2026-09-24T19:44:38+09:00"
 slug: "EinsteinのCitação"
 date: 2024-08-24T18:38:47+09:00
 tags: ["Einstein", "Citações", "Filosofia", "Ciência", "Física"]

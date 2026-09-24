@@ -1,5 +1,6 @@
 ---
 title: "Die Tiefen des Problems der byzantinischen Generäle und Konsensalgorithmen: Wie Paxos, Raft und BFT funktionieren"
+date: "2026-09-24T19:44:38+09:00"
 description: "Wir untersuchen Konsensalgorithmen, die das Rückgrat verteilter Systeme bilden, tiefgehend mit Theorie, mathematischen Formeln und Code-Implementierungen – von den Ursprüngen des Problems der byzantinischen Generäle über Paxos und Raft bis hin zur BFT, die resistent gegen böswillige Knoten ist."
 slug: byzantine-generals-problem-consensus
 date: 2026-09-21T02:45:54+09:00

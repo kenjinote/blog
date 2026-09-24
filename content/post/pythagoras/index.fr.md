@@ -1,5 +1,6 @@
 ---
 title: 'Pythagore : Le carrefour des mathematiques et du mysticisme'
+date: "2026-09-24T19:44:38+09:00"
 description: 'Une exploration approfondie de la vie du mathematicien de la Grece antique Pythagore, du theoreme de Pythagore et de la philosophie selon laquelle tout est nombre.'
 slug: 'pythagoras'
 date: '2026-09-20T18:40:00+09:00'

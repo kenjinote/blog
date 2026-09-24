@@ -4,6 +4,7 @@
 
 
 title: '¡El resultado de cambiar de FLET''S Hikari a J:COM! Impresiones reales sobre precios y velocidad de conexión'
+date: "2026-09-24T19:44:38+09:00"
 slug: "ネット環境をFLET'S Hikari→JCOMに変えた"
 date: 2022-09-05T22:48:51+09:00
 tags: ["J:COM","Flets Hikari","Conexión a internet"]

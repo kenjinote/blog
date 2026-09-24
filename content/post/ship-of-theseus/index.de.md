@@ -1,5 +1,6 @@
 ---
 title: "Das Schiff des Theseus: Ist ein Schiff, bei dem alles ersetzt wurde, noch „dasselbe Schiff“? Eine Betrachtung der Identität aus Sicht der Softwaretechnik"
+date: "2026-09-24T19:44:38+09:00"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "Anhand des Paradoxons „Das Schiff des Theseus“ aus der griechischen Philosophie betrachten wir Refactoring in der Softwareentwicklung, Systemersatz und die „Identität“ in der objektorientierten Programmierung genauer."

@@ -1,5 +1,6 @@
 ---
 title: 'Gefangenendilemma: Warum wir Entscheidungen treffen, bei denen "jeder verliert"?'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'prisoners-dilemma'
 description: 'Warum betrügen sich Menschen gegenseitig, obwohl sie wissen, dass "Zusammenarbeit für beide das beste Ergebnis bringt"? Anhand des "Gefangenendilemmas", dem berühmtesten Modell der Spieltheorie, erklären wir mathematisch und psychologisch den Mechanismus, wie individuelle Rationalität zu gesellschaftlicher Irrationalität führt.'
 date: '2026-09-10T03:00:00+09:00'

@@ -1,5 +1,6 @@
 ---
 title: "Turing Machines and Computability Theory: Alan Turing's Thought Experiment and the 'Halting Problem'"
+date: "2026-09-24T19:44:38+09:00"
 description: "What are the limits of computation? We delve deeply into the concept of the Turing machine proposed by Alan Turing and the 'halting problem', a monumental pillar of computability theory, from mathematical and programmatic perspectives."
 slug: turing-machine-computability
 date: 2026-09-21T02:35:46+09:00

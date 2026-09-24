@@ -1,5 +1,6 @@
 ---
 title: "樹狀結構與圖結構的搜尋（DFS, BFS, Dijkstra 演算法）"
+date: "2026-09-24T19:44:38+09:00"
 description: "表達複雜資料關係的樹狀結構與圖結構。從深度優先搜尋(DFS)、廣度優先搜尋(BFS)到最短路徑問題(Dijkstra演算法)徹底解說。"
 slug: "tree-graph-data-structures-search-dfs-bfs-dijkstra"
 date: 2026-09-22T03:00:00+09:00

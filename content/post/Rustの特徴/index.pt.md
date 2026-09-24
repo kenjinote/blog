@@ -1,5 +1,6 @@
 ---
 title: 'Quais são os 5 principais recursos da linguagem de programação Rust?'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Rustの特徴"
 date: 2022-10-03T22:47:20+09:00
 tags: ["Rust"]

@@ -1,5 +1,6 @@
 ---
 title: "¿Mercader de la muerte o mensajero de la paz? El verdadero legado de Alfred Nobel"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["alfred-nobel", "history"]

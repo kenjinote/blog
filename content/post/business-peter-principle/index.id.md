@@ -1,5 +1,6 @@
 ---
 title: "Prinsip Peter: Mengapa Orang Kompeten Terus Dipromosikan Hingga Menjadi Tidak Kompeten? Membedah Tuntas Jebakan Organisasi dan Solusinya"
+date: "2026-09-24T19:44:38+09:00"
 description: "\"Karyawan biasa yang kompeten menjadi manajer yang tidak kompeten\". Kami akan membahas secara mendalam tentang \"Prinsip Peter\", sebuah fenomena universal dalam organisasi, mulai dari mekanismenya hingga solusi konkretnya. Apa kebijaksanaan untuk bertahan dari takdir masyarakat hierarkis?"
 slug: "business-peter-principle"
 categories: ["business"]

@@ -1,5 +1,6 @@
 ---
 title: "Does 'Testing Positive' = 'Sick'? The Base Rate Fallacy"
+date: "2026-09-24T19:44:38+09:00"
 description: "Even if a test with 99% accuracy is positive, the actual probability of having the disease might be less than 1%? Explaining the 'Base Rate Fallacy' where human intuition is deceived by statistical data."
 date: 2026-09-10T21:00:00+09:00
 draft: false

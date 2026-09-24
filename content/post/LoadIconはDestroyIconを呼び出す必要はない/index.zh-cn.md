@@ -1,5 +1,6 @@
 ---
 title: '使用LoadIcon函数获取的图标不需要DestroyIcon的理由'
+date: "2026-09-24T19:44:38+09:00"
 slug: "LoadIconはDestroyIconを呼び出す必要はない"
 date: 2024-04-19T01:55:17+09:00
 tags: ["图标", "LoadIcon", "DestroyIcon", "Windows编程"]

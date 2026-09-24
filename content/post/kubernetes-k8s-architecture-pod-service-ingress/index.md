@@ -1,5 +1,6 @@
 ---
 title: "Kubernetes(K8s)のアーキテクチャ：Pod, Service, Ingressとコントロールプレーン"
+date: "2026-09-24T19:44:38+09:00"
 description: "コンテナオーケストレーションのデファクトスタンダードであるKubernetesの全体像。コントロールプレーンの仕組みから、各種リソースの役割までを詳解します。"
 slug: "kubernetes-k8s-architecture-pod-service-ingress"
 date: 2026-09-21T09:00:00+09:00

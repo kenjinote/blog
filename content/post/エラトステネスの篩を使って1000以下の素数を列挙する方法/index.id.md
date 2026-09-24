@@ -1,5 +1,6 @@
 ---
 title: 'Apa Itu Saringan Eratosthenes? Algoritma dan Implementasi Daftar Bilangan Prima di Bawah 1000'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Saringan Eratosthenesを使って1000以下のBilangan Primaを列挙する方法"
 date: 2023-04-09T12:54:24+09:00
 tags: ["Saringan Eratosthenes", "Bilangan Prima", "Matematika", "Rust"]

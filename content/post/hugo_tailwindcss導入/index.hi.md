@@ -1,5 +1,6 @@
 ---
 title: 'Hugo थीम कस्टमाइज़ेशन: Tailwind CSS को लागू करने का तरीका'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'hugo-tailwind-css-customization-guide'
 date: '2026-09-13T03:00:00+09:00'
 image: 'img/eyecatch.jpg'

@@ -1,5 +1,6 @@
 ---
 title: "'죽음의 상인'인가 '평화의 사자'인가: 알프레드 노벨이 남긴 진정한 유산"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["alfred-nobel", "history"]

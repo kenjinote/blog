@@ -1,5 +1,6 @@
 ---
 title: 'Pros and Cons of Anti-Vaxxers and Epidemiology Lessons: The ''Illusion of Causality'' Highlighted by the Pandemic'
+date: "2026-09-24T19:44:38+09:00"
 slug: "反ワクチンの功罪"
 date: 2026-01-24T15:41:23+09:00
 tags: ["Social Issues", "Health", "Information Literacy"]

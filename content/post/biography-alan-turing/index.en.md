@@ -1,5 +1,6 @@
 ---
 title: "Alan Turing: The Father of AI and His Tragic End"
+date: "2026-09-24T19:44:38+09:00"
 description: "A deep dive into the life, achievements, and legacy of Alan Turing, the genius mathematician who built the foundations of modern computer science and artificial intelligence, yet met a tragic end at the mercy of his times."
 slug: "biography-alan-turing"
 categories: ["biography"]

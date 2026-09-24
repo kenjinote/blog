@@ -1,5 +1,6 @@
 ---
 title: "树形结构与图结构的搜索（DFS, BFS, Dijkstra算法）"
+date: "2026-09-24T19:44:38+09:00"
 description: "表达复杂数据关系的树形结构与图结构。从深度优先搜索(DFS)、广度优先搜索(BFS)到最短路径问题(Dijkstra算法)，为您进行全面解析。"
 slug: "tree-graph-data-structures-search-dfs-bfs-dijkstra"
 date: 2026-09-22T03:00:00+09:00

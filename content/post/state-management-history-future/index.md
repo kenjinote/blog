@@ -1,5 +1,6 @@
 ---
 title: "状態管理の歴史と未来: ReduxからSignals, Reactivityの進化"
+date: "2026-09-24T19:44:38+09:00"
 description: "フロントエンド開発の歴史における最大の課題「状態管理」。MVCからFlux、Redux、Context API、そしてSignalsや細粒度リアクティビティに至るまでの変遷と未来を深く掘り下げる約2万字の完全ガイド。"
 slug: state-management-history-future
 date: 2026-09-21T12:00:00+09:00

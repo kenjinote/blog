@@ -1,5 +1,6 @@
 ---
 title: 'Wie man japanische Schriftarten in der Rust GUI-Bibliothek „egui“ lädt und anzeigt'
+date: "2026-09-24T19:44:38+09:00"
 slug: "eguiでJapanischを表示する方法"
 date: 2023-04-01T03:17:52+09:00
 tags: ["rust", "egui", "GUI-Bibliothek", "Japanisch"]

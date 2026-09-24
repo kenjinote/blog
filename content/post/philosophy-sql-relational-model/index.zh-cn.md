@@ -1,5 +1,6 @@
 ---
 title: "SQL与关系模型：埃德加·F·科德集合论方法的深渊与哲学"
+date: "2026-09-24T19:44:38+09:00"
 description: "深入剖析作为SQL基础的关系模型与科德的集合论。这是一篇完全保存版的长篇长文，从数据库的历史背景、数学基础，一直详解到现代应用程序设计中的哲学含义。"
 slug: "philosophy-sql-relational-model"
 categories: ["philosophy"]

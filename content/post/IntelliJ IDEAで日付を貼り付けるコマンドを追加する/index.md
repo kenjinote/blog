@@ -1,5 +1,6 @@
 ---
 title: 'IntelliJ IDEAで現在の日付を挿入するショートカットの作成方法'
+date: "2026-09-24T19:44:38+09:00"
 slug: "IntelliJ IDEAで日付を貼り付けるコマンドを追加する"
 date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]

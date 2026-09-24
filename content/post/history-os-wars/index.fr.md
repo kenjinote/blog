@@ -1,5 +1,6 @@
 ---
 title: "L'histoire complète des guerres de religion des OS : la lutte pour la technologie et la philosophie entre Windows, Mac et Linux"
+date: "2026-09-24T19:44:38+09:00"
 description: "Une plongée approfondie dans les « guerres de religion des OS » qui durent depuis des décennies. Nous explorons la philosophie, le contexte historique, ainsi que la coexistence moderne et l'avenir de Windows, Mac et Linux."
 slug: "history-os-wars"
 categories: ["history"]

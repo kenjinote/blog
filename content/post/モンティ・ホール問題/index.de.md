@@ -1,5 +1,6 @@
 ---
 title: 'Monty-Hall-Problem: Die Falle der Wahrscheinlichkeitstheorie, die die Intuition täuscht, und die vollständige Lösung durch Bayes-Schätzung'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'monty-hall-problem'
 description: 'Ein Spiel aus einer Fernsehsendung, bei dem Sie aus 3 Türen den Treffer wählen. Sollten Sie Ihre Wahl ändern, nachdem der Moderator eine Tür mit einer Niete geöffnet hat? Wir erklären das "Monty-Hall-Problem", das unter Mathematikern weltweit eine große Kontroverse auslöste, gründlich aus der Perspektive der Wahrscheinlichkeitstheorie, der Bayes-Schätzung und der kognitiven Psychologie.'
 date: '2026-09-10T00:00:00+09:00'

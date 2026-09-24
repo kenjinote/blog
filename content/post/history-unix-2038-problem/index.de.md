@@ -1,5 +1,6 @@
 ---
 title: "Das Gesamtbild des UNIX-\"Jahr-2038-Problems\": Die Zeitbombe der digitalen Welt und die Evolution der Systemarchitektur"
+date: "2026-09-24T19:44:38+09:00"
 description: "Am 19. Januar 2038 wird die UNIX-Zeit, die als vorzeichenbehaftete 32-Bit-Ganzzahl verwaltet wird, überlaufen, was zu Fehlfunktionen vieler Computersysteme führen wird. Wir erklären dieses \"Jahr-2038-Problem\" im Detail – von seinen Mechanismen und der Geschichte über die Grundursachen bis hin zu Lösungsansätzen."
 slug: "history-unix-2038-problem"
 categories: ["history"]

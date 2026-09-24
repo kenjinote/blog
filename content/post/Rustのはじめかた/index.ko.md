@@ -4,6 +4,7 @@
 
 
 title: 'Rust 언어 입문: 특징부터 설치, Hello World까지의 시작 방법'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Rustのはじめかた"
 date: 2022-09-06T00:12:36+09:00
 tags: ["Rust"]

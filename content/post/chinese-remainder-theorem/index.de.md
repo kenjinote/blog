@@ -1,5 +1,6 @@
 ---
 title: "Chinesischer Restsatz - Vom antiken Rechnen zum großen Theorem, das die moderne RSA-Kryptographie unterstützt"
+date: "2026-09-24T19:44:38+09:00"
 description: "Eine detaillierte Erklärung des Chinesischen Restsatzes (CRT), der auf antiken chinesischen Rechenbüchern basiert, von seinen mathematischen Prinzipien bis hin zu seinen wichtigen Anwendungen in der modernen Public-Key-Kryptographie (RSA-Kryptographie)."
 slug: "chinese-remainder-theorem"
 date: 2026-09-14T13:11:25+09:00

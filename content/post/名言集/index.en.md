@@ -1,5 +1,6 @@
 ---
 title: 'Quotes to Enrich Your Life: A Collection of Inspiring Words from Historical Figures and Celebrities'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Quotes"
 date: 2022-10-15T17:00:43+09:00
 tags: ["Quotes"]

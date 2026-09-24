@@ -1,5 +1,6 @@
 ---
 title: "The Halting Problem: The Ultimate Program That Can Never Be Created"
+date: "2026-09-24T19:44:38+09:00"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "We explain the Halting Problem, one of the most famous (and proven) unsolved problems in computer science. It is explained easily using proof by contradiction, intuitive concrete examples, formulas, and diagrams."

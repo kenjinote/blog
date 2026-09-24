@@ -1,5 +1,6 @@
 ---
 title: 'Achilles und die Schildkröte: Kann er sie niemals einholen oder doch? Das "Unendlichkeits"-Paradoxon aus dem antiken Griechenland'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'achilles-and-the-tortoise'
 description: 'Kann der flinke Held Achilles eine langsame Schildkröte niemals einholen? Diese berühmteste Frage aus Zenons Paradoxon bereitet Philosophen und Mathematikern seit über 2000 Jahren Kopfzerbrechen. Wir lüften diesen logischen Trick mathematisch mithilfe von unendlichen Reihen und Grenzwerten.'
 date: '2026-09-10T01:00:00+09:00'

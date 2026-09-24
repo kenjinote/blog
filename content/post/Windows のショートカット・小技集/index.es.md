@@ -3,6 +3,7 @@
 
 
 title: '[Windows 11/10] Colección de teclas de acceso rápido y trucos que mejoran drásticamente la eficiencia del trabajo'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Windows のAtajo・Truco集"
 date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "Trucos", "Atajos"]

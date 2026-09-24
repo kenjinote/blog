@@ -1,5 +1,6 @@
 ---
 title: "Le bateau de Thésée : un bateau entièrement remplacé est-il le « bateau d'origine » ? Décrypter l'identité à travers le génie logiciel"
+date: "2026-09-24T19:44:38+09:00"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "À travers le paradoxe philosophique grec du « bateau de Thésée », nous menons une réflexion approfondie sur le remaniement (refactoring), le remplacement de systèmes informatiques et la notion d'« identité » dans la programmation orientée objet."

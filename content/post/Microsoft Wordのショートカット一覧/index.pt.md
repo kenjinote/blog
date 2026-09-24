@@ -1,5 +1,6 @@
 ---
 title: '[Aumento de eficiência] Lista de teclas de atalho úteis do Microsoft Word'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Microsoft WordのAtalho一覧"
 date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "Atalhos"]

@@ -1,5 +1,6 @@
 ---
 title: "「発明王」トーマス・エジソンの生涯と哲学：失敗を恐れないイノベーションの軌跡"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["thomas-edison", "history"]

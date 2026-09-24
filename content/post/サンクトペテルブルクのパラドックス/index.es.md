@@ -1,5 +1,6 @@
 ---
 title: 'La paradoja de San Petersburgo: ¿Cuánto pagarías por un juego con un valor esperado "infinito"?'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'st-petersburg-paradox'
 description: 'Un juego que matemáticamente debería hacerte "ganar dinero infinitamente". Sin embargo, nadie en la realidad pagaría una gran suma por él. Explicaremos esta histórica paradoja que puso de manifiesto la discrepancia entre la teoría de la probabilidad y la psicología humana (utilidad), convirtiéndose en la base de la economía moderna.'
 date: '2026-09-10T05:00:00+09:00'

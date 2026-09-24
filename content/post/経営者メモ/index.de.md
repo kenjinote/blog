@@ -1,5 +1,6 @@
 ---
 title: 'Das Geheimnis erfolgreicher Geschäftsauswahl und Systematisierung: Praxisnahe Notizen für Führungskräfte'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Managerメモ"
 date: 2022-09-07T02:36:11+09:00
 tags: ["Manager"]

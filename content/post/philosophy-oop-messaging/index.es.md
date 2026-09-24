@@ -1,5 +1,6 @@
 ---
 title: "El mito y la verdad de la Orientación a Objetos: El \"Mensaje\" que Alan Kay quería transmitir como esencia"
+date: "2026-09-24T19:44:38+09:00"
 description: "La Programación Orientada a Objetos (POO) a menudo se malinterpreta como \"clases\" y \"herencia\", pero su verdadera esencia reside en los \"mensajes\". Explicamos a fondo la verdad de la POO a partir de la visión de Alan Kay y la metáfora celular."
 slug: "philosophy-oop-messaging"
 categories: ["philosophy"]

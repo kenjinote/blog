@@ -1,5 +1,6 @@
 ---
 title: "Teorema Terakhir Fermat - Hingga Misteri yang Tertinggal di Margin Terselesaikan Setelah 360 Tahun"
+date: "2026-09-24T19:44:38+09:00"
 description: "Masalah tak terpecahkan paling terkenal dalam sejarah matematika, \"Teorema Terakhir Fermat\". Bagaimana teka-teki sulit yang menolak tantangan dari banyak matematikawan jenius selama 360 tahun setelah kematian Pierre de Fermat ini akhirnya dibuktikan oleh Andrew Wiles. Kami menjelaskan secara rinci sejarah dramatis dan latar belakang matematikanya."
 slug: "fermats-last-theorem"
 date: 2026-09-14T13:04:13+09:00

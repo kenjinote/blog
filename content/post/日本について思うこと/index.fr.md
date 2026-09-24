@@ -1,5 +1,6 @@
 ---
 title: 'Enjeux et malaises de la société japonaise : Baisse de la natalité et théorie de la responsabilité individuelle vue à travers le problème des bourses d''études'
+date: "2026-09-24T19:44:38+09:00"
 slug: "日本についてPensées"
 date: 2022-09-06T02:24:11+09:00
 tags: ["Divers"]

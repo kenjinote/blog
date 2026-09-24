@@ -1,5 +1,6 @@
 ---
 title: "Cálculo Lambda (Lambda Calculus) e as Origens da Programação Funcional: Da Teoria de Alonzo Church ao Lisp e Haskell"
+date: "2026-09-24T19:44:38+09:00"
 description: "Como o cálculo lambda, a teoria fundamental da computação, evoluiu para as modernas linguagens de programação funcional. Uma explicação completa da história e dos fundamentos matemáticos, desde a teoria de Alonzo Church até o nascimento do Lisp e do Haskell."
 slug: lambda-calculus-functional-programming
 date: 2026-09-21T02:35:46+09:00

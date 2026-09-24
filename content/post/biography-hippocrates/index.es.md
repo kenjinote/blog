@@ -1,5 +1,6 @@
 ---
 title: "El padre de la medicina, Hipócrates: su vida y la filosofía que perdura en la actualidad"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:32+09:00
 categories: ["biography"]
 tags: ["hippocrates", "history"]

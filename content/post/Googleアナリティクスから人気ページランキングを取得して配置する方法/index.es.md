@@ -2,6 +2,7 @@
 
 
 title: 'Cómo mostrar el ranking de artículos populares desde Google Analytics usando Ranklet'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Google Analyticsから人気ページランキングを取得して配置する方法"
 date: 2023-04-10T20:26:57+09:00
 tags: ["Google Analytics", "Ranklet", "HUGO"]

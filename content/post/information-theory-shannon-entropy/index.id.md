@@ -1,5 +1,6 @@
 ---
 title: "Teori Informasi dan Entropi Shannon: Mengeksplorasi Batasan Kompresi Data dan Komunikasi"
+date: "2026-09-24T19:44:38+09:00"
 description: "Penjelasan mendetail mulai dari dasar teori informasi yang diusulkan oleh Claude Shannon, konsep entropi, batasan kompresi data, hingga aplikasinya dalam komunikasi modern."
 slug: information-theory-shannon-entropy
 date: 2026-09-21T02:45:54+09:00

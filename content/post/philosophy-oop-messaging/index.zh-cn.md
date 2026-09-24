@@ -1,5 +1,6 @@
 ---
 title: "面向对象的误解与真相：艾伦·凯想要传达的“消息传递”核心"
+date: "2026-09-24T19:44:38+09:00"
 description: "面向对象（OOP）经常被误解为“类”和“继承”，但其真正的核心在于“消息传递”。本文将从艾伦·凯的愿景和细胞隐喻出发，为你深度解析OOP的真相。"
 slug: "philosophy-oop-messaging"
 categories: ["philosophy"]

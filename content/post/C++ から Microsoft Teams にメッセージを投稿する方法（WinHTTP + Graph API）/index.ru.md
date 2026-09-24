@@ -1,5 +1,6 @@
 ---
 title: '【Автоматизация】Отправка сообщений в Teams из C++! Шаги по реализации с Graph API и WinHTTP'
+date: "2026-09-24T19:44:38+09:00"
 slug: "C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）"
 date: 2025-07-14T23:40:15+09:00
 tags: ["C++", "Microsoft Teams", "Graph API", "WinHTTP"]

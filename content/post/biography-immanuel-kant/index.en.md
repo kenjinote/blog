@@ -1,5 +1,6 @@
 ---
 title: "Immanuel Kant: The Trajectory of the 'Copernican Revolution' at the Pinnacle of Modern Philosophy"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["immanuel-kant", "history"]

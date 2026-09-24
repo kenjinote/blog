@@ -1,5 +1,6 @@
 ---
 title: "Nikola Tesla: Die Zukunft, gezeichnet von Wechselstrom und dem Weltsystem"
+date: "2026-09-24T19:44:38+09:00"
 description: "Eine tiefgehende Betrachtung des Lebens des genialen Erfinders Nikola Tesla, des \"Stromkrieges\" mit Edison und seines unvollendeten großen Traums, des \"Weltsystems\", mit technischem Hintergrund."
 slug: "biography-nikola-tesla"
 categories: ["biography"]

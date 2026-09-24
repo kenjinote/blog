@@ -1,5 +1,6 @@
 ---
 title: "René Descartes: Father of Modern Philosophy and Founder of Analytic Geometry"
+date: "2026-09-24T19:44:38+09:00"
 description: "René Descartes is famous for 'I think, therefore I am'. We explore his extraordinary life and the birth of analytic geometry that revolutionized the history of mathematics."
 slug: "descartes"
 date: 2026-09-20T18:50:00+09:00

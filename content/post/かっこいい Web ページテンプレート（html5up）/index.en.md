@@ -1,5 +1,6 @@
 ---
 title: 'How to Use and the Appeal of Cool Web Page Templates (html5up)'
+date: "2026-09-24T19:44:38+09:00"
 slug: "かっこいい Web ページTemplate（html5up）"
 date: 2023-04-17T00:26:55+09:00
 tags: ["html5up", "Web page template"]

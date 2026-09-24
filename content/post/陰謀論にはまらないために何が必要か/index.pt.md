@@ -1,5 +1,6 @@
 ---
 title: '6 medidas para não cair em teorias da conspiração | Vamos aumentar a segurança da mente'
+date: "2026-09-24T19:44:38+09:00"
 slug: "陰謀論にはまらないために何が必要か"
 date: 2025-05-26T22:23:34+09:00
 tags: ["Teoria da conspiração", "Poema"]

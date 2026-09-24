@@ -1,5 +1,6 @@
 ---
 title: "大数定律（Law of Large Numbers） - 赌场为何必赚以及概率收敛的机制"
+date: "2026-09-24T19:44:38+09:00"
 description: "深入解析概率论中极其重要的定理“大数定律”。从赌场的盈利结构到严格的数学定义（弱定律和强定律），结合图解与Python代码进行全面探讨。"
 slug: "law-of-large-numbers"
 date: 2026-09-14

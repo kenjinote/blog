@@ -1,5 +1,6 @@
 ---
 title: '[PQC] Ancaman Komputer Kuantum dan Gambaran Utuh Kriptografi Pasca-Kuantum Generasi Berikutnya'
+date: "2026-09-24T19:44:38+09:00"
 slug: "post-quantum-cryptography"
 tags: ["Teknologi Kriptografi", "PQC", "Keamanan", "Teknologi Generasi Berikutnya"]
 image: "eyecatch.jpg"

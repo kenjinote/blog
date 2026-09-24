@@ -1,5 +1,6 @@
 ---
 title: '[For Beginners] How to Easily Make a Remote Desktop Connection with TeamViewer'
+date: "2026-09-24T19:44:38+09:00"
 slug: "TeamViewerで簡単Remote Connection"
 date: 2023-01-13T01:45:00+09:00
 tags: ["TeamViewer", "Command", "Remote Connection"]

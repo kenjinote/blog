@@ -1,5 +1,6 @@
 ---
 title: "HTTP/3 與 QUIC 協定：TCP 的極限與 UDP 的革新"
+date: "2026-09-24T19:44:38+09:00"
 description: "詳細解析 HTTP/3 與 QUIC 協定為何誕生、Head-of-Line Blocking 問題的解決、連線建立的高速化等次世代網頁通訊協定。"
 slug: "http3-quic-protocol-tcp-udp"
 date: 2026-09-20T17:10:00+09:00

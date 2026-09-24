@@ -1,5 +1,6 @@
 ---
 title: "O Ancestral da Internet \"ARPANET\": A História Completa da Rede que Mudou o Mundo, Nascida da Pesquisa Militar na Guerra Fria"
+date: "2026-09-24T19:44:38+09:00"
 description: "A ARPANET, a origem direta da internet moderna. Mergulhamos na história da gênese da internet através de uma explicação detalhada, desde o nascimento da tecnologia de comutação de pacotes, o desenvolvimento do IMP, a comunicação histórica de 1969 até a evolução para o TCP/IP."
 slug: "history-arpanet"
 categories: ["history"]

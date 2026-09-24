@@ -4,6 +4,7 @@
 
 
 title: 'Problemas y sensación de incongruencia en la sociedad japonesa: Una mirada a la disminución de la natalidad y a la teoría de la responsabilidad individual a través del problema de los préstamos estudiantiles'
+date: "2026-09-24T19:44:38+09:00"
 slug: "日本についてPensamientos"
 date: 2022-09-06T02:24:11+09:00
 tags: ["Miscelánea"]

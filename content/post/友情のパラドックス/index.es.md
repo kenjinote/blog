@@ -1,5 +1,6 @@
 ---
 title: "Tus amigos tienen más amigos que tú: La paradoja de la amistad"
+date: "2026-09-24T19:44:38+09:00"
 description: "No hay necesidad de preocuparse de que 'quizás tengo pocos amigos'. Esta es una propiedad de las redes probada matemáticamente."
 date: 2026-09-10T21:00:00+09:00
 draft: false

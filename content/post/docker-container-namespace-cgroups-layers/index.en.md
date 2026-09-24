@@ -1,5 +1,6 @@
 ---
 title: "Complete Understanding of Docker and Container Technology: From Namespace and cgroups to Image Layers"
+date: "2026-09-24T19:44:38+09:00"
 description: "Going beyond mere tool usage, we thoroughly dissect the mechanisms behind containers using Linux kernel features (Namespace, cgroups, OverlayFS)."
 slug: "docker-container-namespace-cgroups-layers"
 date: 2026-09-21T09:00:00+09:00

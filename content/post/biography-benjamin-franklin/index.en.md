@@ -1,5 +1,6 @@
 ---
 title: "Founding Father of America and Universal Genius: The Life and Philosophy of Benjamin Franklin"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:46:04+09:00
 categories: ["biography"]
 tags: ["benjamin-franklin", "history"]

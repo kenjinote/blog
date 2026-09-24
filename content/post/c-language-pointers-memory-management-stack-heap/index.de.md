@@ -1,5 +1,6 @@
 ---
 title: "Vollständiges Verständnis von C und Zeigern (Grundlagen der Speicherverwaltung, Adressen, Heap und Stack)"
+date: "2026-09-24T19:44:38+09:00"
 description: "Wir erklären ausführlich Zeiger, die größte Hürde in der C-Programmierung, vom Konzept der Speicheradressen über die Unterschiede zwischen Stack und Heap bis hin zur dynamischen Speicherzuweisung. Ein vollständiger Leitfaden für alle, die ein tiefes Verständnis von C anstreben."
 slug: "c-language-pointers-memory-management-stack-heap"
 date: 2026-09-21T14:51:08+09:00

@@ -1,5 +1,6 @@
 ---
 title: "Doomsday-Argument (Endzeit-Argument): Das „Zeitlimit für das Aussterben der Menschheit“ abgeleitet durch die Wahrscheinlichkeitstheorie"
+date: "2026-09-24T19:44:38+09:00"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "An welchem Punkt der menschlichen Geschichte befinden wir uns? Wir erklären das „Doomsday-Argument“, das das kopernikanische Prinzip und die Bayes'sche Inferenz nutzt, um den Zeitpunkt des Aussterbens der Menschheit probabilistisch vorherzusagen, mit Formeln und Diagrammen."

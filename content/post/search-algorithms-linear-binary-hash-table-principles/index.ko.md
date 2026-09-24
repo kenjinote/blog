@@ -1,5 +1,6 @@
 ---
 title: "탐색 알고리즘 (선형, 이진 탐색과 해시 테이블의 원리)"
+date: "2026-09-24T19:44:38+09:00"
 description: "데이터 중에서 목적하는 값을 찾아내는 탐색 알고리즘. 선형 탐색, 이진 탐색의 기초부터 고속 검색을 실현하는 해시 테이블의 원리까지 해설합니다."
 slug: "search-algorithms-linear-binary-hash-table-principles"
 date: 2026-09-22T02:00:00+09:00

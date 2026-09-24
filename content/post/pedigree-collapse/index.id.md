@@ -1,5 +1,6 @@
 ---
 title: "Paradoks Leluhur: Matematika dan Genetika dari Keruntuhan Silsilah (Pedigree Collapse)"
+date: "2026-09-24T19:44:38+09:00"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "'Paradoks Leluhur' di mana jumlah leluhur melebihi populasi dunia pada saat itu jika kita menelusuri generasi ke belakang. Kami akan menjelaskan secara rinci tentang 'Keruntuhan Silsilah (Pedigree Collapse)' yang memecahkan misteri ini dari pendekatan matematis dan perspektif genetika."

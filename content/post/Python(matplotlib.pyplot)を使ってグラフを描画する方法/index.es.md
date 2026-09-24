@@ -3,6 +3,7 @@
 
 
 title: 'Cómo dibujar gráficos con Python y matplotlib 【Compatible con Google Colab】'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Python(matplotlib.pyplot)を使ってGráficoを描画する方法"
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "Gráfico", "Matemáticas", "matplotlib", "pyplot", "Google Colaboratory"]

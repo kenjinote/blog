@@ -1,5 +1,6 @@
 ---
 title: "SQL e o Modelo Relacional: O Abismo e a Filosofia da Abordagem Baseada na Teoria dos Conjuntos de Edgar F. Codd"
+date: "2026-09-24T19:44:38+09:00"
 description: "Um mergulho profundo no modelo relacional e na teoria dos conjuntos de Codd que formam a base do SQL. Um artigo longo em edição definitiva que detalha desde o contexto histórico do banco de dados até a base matemática e as implicações filosóficas no design moderno de aplicações."
 slug: "philosophy-sql-relational-model"
 categories: ["philosophy"]

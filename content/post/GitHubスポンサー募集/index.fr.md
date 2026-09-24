@@ -1,5 +1,6 @@
 ---
 title: 'Annonce de recherche de sponsors GitHub | Demande de soutien au développement'
+date: "2026-09-24T19:44:38+09:00"
 slug: "GitHubSponsor募集"
 date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "Sponsor"]

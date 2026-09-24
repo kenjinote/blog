@@ -1,5 +1,6 @@
 ---
 title: 'Handbuch zur Einrichtung einer lokalen Umgebung für KI-Bildgenerierungs-Tools (Stable Diffusion, etc.)'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'local-ai-image-generation-setup'
 date: '2026-09-11T19:00:00+09:00'
 image: 'img/eyecatch.jpg'

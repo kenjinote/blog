@@ -1,5 +1,6 @@
 ---
 title: 'An Easy-to-Understand Explanation of ''General Number Field Sieve (GNFS)'', Humanity''s Strongest Math for Breaking Ciphers'
+date: "2026-09-24T19:44:38+09:00"
 slug: "インターネットのCryptographyを破る人類最強のMathematics「一般数体篩法（GNFS）」とは？"
 date: 2026-09-05T02:09:08+09:00
 tags: ["Math", "Cryptography", "RSA", "GNFS"]

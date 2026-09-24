@@ -1,5 +1,6 @@
 ---
 title: "La Cinta de Möbius y la Botella de Klein: El Fascinante Mundo de las Superficies sin 'Interior' ni 'Exterior'"
+date: "2026-09-24T19:44:38+09:00"
 description: "Una explicación profunda de las superficies no orientables en topología, específicamente la cinta de Möbius y la botella de Klein, usando fórmulas matemáticas y diagramas."
 slug: "mobius-strip-and-klein-bottle"
 date: 2026-09-20T15:15:00+09:00

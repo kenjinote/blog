@@ -1,5 +1,6 @@
 ---
 title: "Your Friends Have More Friends Than You Do: The Friendship Paradox"
+date: "2026-09-24T19:44:38+09:00"
 description: "There's no need to worry that you 'don't have enough friends.' It's a mathematically proven property of networks."
 date: 2026-09-10T21:00:00+09:00
 draft: false

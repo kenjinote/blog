@@ -1,5 +1,6 @@
 ---
 title: "\"Menganalisis Secara Mendalam Hukum Brooks: Mengapa Menambah Personel pada Proyek yang Terlambat Hanya Akan Memperburuk Keadaan\""
+date: "2026-09-24T19:44:38+09:00"
 description: "\"Menambah orang pada proyek yang terlambat akan membuatnya semakin terlambat. Kita akan menggali secara mendalam Hukum Brooks yang diajukan dalam karya klasik rekayasa perangkat lunak 'The Mythical Man-Month', mengenai latar belakang, penyebab, hingga langkah-langkah antisipasi dalam pengembangan Agile modern.\""
 slug: "business-brooks-law"
 categories: ["business"]

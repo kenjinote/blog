@@ -1,5 +1,6 @@
 ---
 title: "奉献给“穷人中最穷的人”的一生：特蕾莎修女的轨迹与哲学"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:46:04+09:00
 categories: ["biography"]
 tags: ["mother-teresa", "history"]

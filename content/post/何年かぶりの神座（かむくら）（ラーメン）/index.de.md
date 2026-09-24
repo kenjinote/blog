@@ -1,5 +1,6 @@
 ---
 title: '„Kamukura“ nach mehreren Jahren! Den empfohlenen Frühlingszwiebel-Kimchi-Ramen genießen'
+date: "2026-09-24T19:44:38+09:00"
 slug: "何年かぶりのKamukura（かむくら）（Ramen）"
 date: 2022-09-09T21:45:19+09:00
 tags: ["Ramen", "Kamukura"]

@@ -1,5 +1,6 @@
 ---
 title: 'J''ai rassemblé les écrans de boîte de dialogue d''informations sur la version de divers logiciels'
+date: "2026-09-24T19:44:38+09:00"
 slug: "いろんなInformations sur la versionダイアログ集めてみた"
 date: 2024-03-02T21:32:11+09:00
 tags: ["Informations de Version", "Windows", "MacOS"]

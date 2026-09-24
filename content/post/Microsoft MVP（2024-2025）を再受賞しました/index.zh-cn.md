@@ -1,5 +1,6 @@
 ---
 title: '再次荣获Microsoft MVP（2024-2025）！附MVP制度解说'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Microsoft MVP（2024-2025）を再获奖しました"
 date: 2024-09-03T21:25:20+09:00
 tags: ["Microsoft MVP"]

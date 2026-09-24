@@ -1,5 +1,6 @@
 ---
 title: "「死の商人」か「平和の使者」か：アルフレッド・ノーベルが遺した真の遺産"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["alfred-nobel", "history"]

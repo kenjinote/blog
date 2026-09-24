@@ -4,6 +4,7 @@
 
 
 title: 'Las mejores extensiones de navegador para hacer Chrome y Edge drásticamente más convenientes'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Recomendaciónの Chorme 拡張"
 date: 2023-03-19T02:54:30+09:00
 tags: ["Extensiones de Chrome", "Navegador", "Chrome", "Edge"]

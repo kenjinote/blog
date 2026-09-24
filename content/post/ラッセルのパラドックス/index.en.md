@@ -1,5 +1,6 @@
 ---
 title: 'Russell''s Paradox: Does the "set of all sets that do not contain themselves" contain itself?'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'russells-paradox'
 description: '“Does the barber who shaves all those in the town who do not shave themselves, shave himself?” This article explains Bertrand Russell''s terrifying paradox that shook the foundations of mathematics, “set theory”, and changed the history of logic.'
 date: '2026-09-10T04:00:00+09:00'

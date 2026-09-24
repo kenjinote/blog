@@ -1,5 +1,6 @@
 ---
 title: "Augustin-Louis Cauchy: Der Vater der strengen Analysis und sein turbulentes Leben"
+date: "2026-09-24T19:44:38+09:00"
 description: "Eine detaillierte Untersuchung des Lebens des großen französischen Mathematikers Augustin-Louis Cauchy und seiner zahlreichen mathematischen Errungenschaften in der Analysis und der komplexen Funktionentheorie."
 slug: "cauchy"
 date: 2026-09-20T19:20:00+09:00

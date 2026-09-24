@@ -1,5 +1,6 @@
 ---
 title: 'Salesforce का विकास तेज़ होगा! अनुशंसित Chrome एक्सटेंशन की सूची'
+date: "2026-09-24T19:44:38+09:00"
 slug: "SalesforceअनुशंसाChrome एक्सटेंशन"
 date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Chrome एक्सटेंशन"]

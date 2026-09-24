@@ -1,5 +1,6 @@
 ---
 title: "El algoritmo de Euclides: Cálculo rápido del MCD y el algoritmo más antiguo de la humanidad"
+date: "2026-09-24T19:44:38+09:00"
 description: "Una guía completa sobre el algoritmo de Euclides para calcular el máximo común divisor (MCD), que abarca su mecánica, implementación, complejidad, el teorema de Lamé, el algoritmo de Euclides extendido y sus aplicaciones en la criptografía RSA."
 slug: "euclidean-algorithm"
 date: 2026-09-20T15:00:00+09:00

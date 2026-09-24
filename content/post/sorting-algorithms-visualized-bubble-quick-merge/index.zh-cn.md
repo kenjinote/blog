@@ -1,5 +1,6 @@
 ---
 title: "排序算法图解（从冒泡、快速到归并排序）"
+date: "2026-09-24T19:44:38+09:00"
 description: "编程基础之排序算法。从冒泡排序到快速排序、归并排序，通过图解和代码进行全面讲解。"
 slug: "sorting-algorithms-visualized-bubble-quick-merge"
 date: 2026-09-22T01:00:00+09:00

@@ -4,6 +4,7 @@ date: 2026-09-23T19:18:01+09:00
 image: eyecatch.jpg
 tags: ["marc-andreessen", "history"]
 title: "L'homme qui crée l'avenir depuis l'aube d'Internet : La vie et la philosophie de Marc Andreessen"
+date: "2026-09-24T19:44:38+09:00"
 slug: "biography-marc-andreessen"
 description: "L'homme qui a rendu l'Internet moderne omniprésent et qui continue de façonner le monde en investissant massivement dans l'avenir de la technologie : il s'"
 ---

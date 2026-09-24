@@ -1,5 +1,6 @@
 ---
 title: "O Abismo da Viagem no Tempo: Um Guia Completo para o Paradoxo do Avô e Suas Soluções"
+date: "2026-09-24T19:44:38+09:00"
 description: "Uma explicação detalhada do paradoxo do avô, o maior desafio na viagem no tempo, sob as perspectivas da física e da filosofia, cobrindo a relatividade, mecânica quântica, a interpretação de muitos mundos e o princípio de autoconsistência de Novikov."
 slug: "paradox-grandfather-paradox"
 categories: ["science"]

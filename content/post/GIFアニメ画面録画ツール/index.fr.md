@@ -1,5 +1,6 @@
 ---
 title: 'Facile ! Comment utiliser et télécharger l''outil d''enregistrement d''écran pour GIF animés'
+date: "2026-09-24T19:44:38+09:00"
 slug: "GIFアニメ画面録画Outil"
 date: 2024-02-08T01:23:01+09:00
 tags: ["Outil", "Enregistrement d'écran", "GIF"]

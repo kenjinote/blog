@@ -1,5 +1,6 @@
 ---
 title: '如何通过CSS自定义Hugo PaperMod主题的图片大小与对齐方式'
+date: "2026-09-24T19:44:38+09:00"
 slug: "PaperModの图像の配置変更"
 date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]

@@ -1,5 +1,6 @@
 ---
 title: '解說 llama.cpp 的量化技術（GGUF）機制'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'llama-cpp-quantization-gguf'
 date: '2026-09-11T00:00:00+09:00'
 image: 'img/eyecatch.jpg'

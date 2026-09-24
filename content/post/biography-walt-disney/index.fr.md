@@ -1,5 +1,6 @@
 ---
 title: "L'homme qui a façonné les rêves : La vie de Walt Disney et son parcours créatif"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["walt-disney", "history"]

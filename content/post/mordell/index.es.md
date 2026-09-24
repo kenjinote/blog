@@ -1,5 +1,6 @@
 ---
 title: "Louis Mordell: Un Gigante de la Teoría de Números y su Trayectoria"
+date: "2026-09-24T19:44:38+09:00"
 description: "Una explicación detallada de la vida y las contribuciones matemáticas de Louis Mordell, conocido por su trabajo pionero en ecuaciones diofánticas, curvas elípticas y la 'Conjetura de Mordell'."
 slug: "mordell"
 date: 2026-09-20T20:10:00+09:00

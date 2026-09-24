@@ -1,5 +1,6 @@
 ---
 title: "Nikola Tesla: Masa Depan yang Digambarkan oleh Arus Bolak-balik dan Sistem Dunia"
+date: "2026-09-24T19:44:38+09:00"
 description: "Eksplorasi mendalam tentang kehidupan penemu jenius Nikola Tesla, \"Perang Arus\" melawan Edison, dan impian besarnya yang belum selesai, \"Sistem Dunia\", beserta latar belakang teknologinya."
 slug: "biography-nikola-tesla"
 categories: ["biography"]

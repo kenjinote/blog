@@ -1,5 +1,6 @@
 ---
 title: "Existence and Smoothness of the Navier-Stokes Equations - The Ultimate Mystery in the Fundamental Equations of Fluid Dynamics"
+date: "2026-09-24T19:44:38+09:00"
 description: "A deep dive into the existence and smoothness of the Navier-Stokes equations, one of the Millennium Prize Problems of the Clay Mathematics Institute."
 slug: "navier-stokes-equations"
 date: 2026-09-14T13:11:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: 'So überprüfen Sie den Aktivierungsstatus der Windows-Lizenz! Einfache Überprüfung mit einem einzigen Befehl'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Windows のLizenzの状態を確認するBefehl"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "Lizenz", "Eingabeaufforderung"]

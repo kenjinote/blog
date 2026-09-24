@@ -3,6 +3,7 @@
 
 
 title: '¡Mejora el desarrollo en Salesforce! Resumen de las mejores extensiones de Chrome'
+date: "2026-09-24T19:44:38+09:00"
 slug: "SalesforceRecomendaciónExtensión de Chrome"
 date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Extensiones de Chrome"]

@@ -1,5 +1,6 @@
 ---
 title: "Suchalgorithmen (Prinzipien der linearen und binären Suche sowie von Hash-Tabellen)"
+date: "2026-09-24T19:44:38+09:00"
 description: "Suchalgorithmen zum Finden von Zielwerten in Daten. Wir erklären die Grundlagen der linearen und binären Suche bis hin zu den Prinzipien von Hash-Tabellen, die schnelle Suchen ermöglichen."
 slug: "search-algorithms-linear-binary-hash-table-principles"
 date: 2026-09-22T02:00:00+09:00

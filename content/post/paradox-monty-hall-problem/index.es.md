@@ -1,5 +1,6 @@
 ---
 title: "La divergencia entre la intuición y la probabilidad: explorando el abismo del problema de Monty Hall"
+date: "2026-09-24T19:44:38+09:00"
 description: "El \"problema de Monty Hall\", un clásico de la teoría de la probabilidad que desafía la intuición. ¿Por qué la intuición humana difiere tanto de la probabilidad? Explicamos a fondo todo el panorama de la paradoja, desde las pruebas matemáticas hasta el trasfondo psicológico."
 slug: "paradox-monty-hall-problem"
 categories: ["science"]

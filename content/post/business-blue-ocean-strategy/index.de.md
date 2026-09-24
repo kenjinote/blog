@@ -1,5 +1,6 @@
 ---
 title: "【Blue-Ocean-Strategie: Die ultimative Unternehmenstheorie zur Schaffung konkurrenzloser, unerschlossener Märkte】"
+date: "2026-09-24T19:44:38+09:00"
 description: "【Eine umfassende Erklärung der spezifischen Frameworks und praktischen Strategien, um dem Red Ocean (blutiger Verdrängungswettbewerb) zu entkommen und einen neuen, wettbewerbsfreien Marktraum (Blue Ocean) zu erschließen.】"
 slug: "business-blue-ocean-strategy"
 categories: ["business"]

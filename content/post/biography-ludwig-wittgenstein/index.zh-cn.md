@@ -1,5 +1,6 @@
 ---
 title: "路德维希·维特根斯坦：在沉默与日常之间生活的天才哲学家"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["ludwig-wittgenstein", "history"]

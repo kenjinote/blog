@@ -1,5 +1,6 @@
 ---
 title: "Carl Friedrich Gauß: Leben und Leistungen des Fürsten der Mathematiker"
+date: "2026-09-24T19:44:38+09:00"
 description: "Eine detaillierte Erklärung des Lebens, erstaunlicher Episoden und der immensen Beiträge zur modernen Wissenschaft von Carl Friedrich Gauß, bekannt als der 'Fürst der Mathematiker'."
 slug: "gauss"
 date: 2026-09-20T19:10:00+09:00

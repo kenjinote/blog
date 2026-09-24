@@ -1,5 +1,6 @@
 ---
 title: "El Argumento del Juicio Final (Doomsday Argument): 'El tiempo límite para la extinción de la humanidad' derivado por la teoría de la probabilidad"
+date: "2026-09-24T19:44:38+09:00"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "¿En qué punto de la historia humana nos encontramos? Explicamos, mediante fórmulas y diagramas, el 'Argumento del Juicio Final', que predice probabilísticamente el momento de la extinción de la humanidad utilizando el principio de Copérnico y la inferencia bayesiana."

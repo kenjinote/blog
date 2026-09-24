@@ -1,5 +1,6 @@
 ---
 title: 'Ich habe Dialogfenster mit Versionsinformationen für verschiedene Software gesammelt'
+date: "2026-09-24T19:44:38+09:00"
 slug: "いろんなVersionsinformationダイアログ集めてみた"
 date: 2024-03-02T21:32:11+09:00
 tags: ["Versionsinformationen", "Windows", "MacOS"]

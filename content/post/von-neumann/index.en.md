@@ -1,5 +1,6 @@
 ---
 title: 'John von Neumann: The Trajectory of the Demonic Brain Who Built Modern Science'
+date: "2026-09-24T19:44:38+09:00"
 description: 'A detailed explanation of the life of genius mathematician John von Neumann, his astonishing achievements from game theory to quantum mechanics and computer science, and numerous anecdotes surrounding him.'
 slug: 'von-neumann'
 date: '2026-09-20T20:20:00+09:00'

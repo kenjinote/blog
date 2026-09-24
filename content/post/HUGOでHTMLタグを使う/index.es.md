@@ -3,6 +3,7 @@
 
 
 title: 'Cómo habilitar las etiquetas HTML en Hugo (Configuración de config.toml)'
+date: "2026-09-24T19:44:38+09:00"
 slug: "HUGOでHTMLタグを使う"
 date: 2023-01-17T19:20:32+09:00
 tags: ["HUGO", "HTML"]

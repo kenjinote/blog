@@ -1,5 +1,6 @@
 ---
 title: "Kembali dari Luar Angkasa, Adik Jadi Lebih Tua? Paradoks Kembar"
+date: "2026-09-24T19:44:38+09:00"
 description: "Fenomena \'dilasi waktu\' yang diprediksi oleh Teori Relativitas Einstein. Penjelasan tentang paradoks di mana usia kakak kembar yang bepergian dengan roket mendekati kecepatan cahaya tertukar dengan usia adik yang tinggal di Bumi."
 date: 2026-09-10T21:00:00+09:00
 draft: false

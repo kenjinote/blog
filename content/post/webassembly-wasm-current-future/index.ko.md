@@ -1,5 +1,6 @@
 ---
 title: "WebAssembly(Wasm)의 현재와 미래：브라우저에서 C/Rust가 동작하는 원리"
+date: "2026-09-24T19:44:38+09:00"
 description: "WebAssembly의 아키텍처, 컴파일 프로세스, JS와의 연동, 그리고 브라우저 외부(WASI)에서의 가능성까지, Wasm의 모든 것을 철저히 해설합니다."
 slug: "webassembly-wasm-current-future"
 date: 2026-09-20T17:10:00+09:00

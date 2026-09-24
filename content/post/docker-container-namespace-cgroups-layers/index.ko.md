@@ -1,5 +1,6 @@
 ---
 title: "Docker와 컨테이너 기술의 완전한 이해: Namespace, cgroups부터 이미지 레이어까지"
+date: "2026-09-24T19:44:38+09:00"
 description: "단순한 도구 사용법을 넘어, Linux 커널의 기능(Namespace, cgroups, OverlayFS)을 이용한 컨테이너 이면의 메커니즘을 철저히 해부합니다."
 slug: "docker-container-namespace-cgroups-layers"
 date: 2026-09-21T09:00:00+09:00

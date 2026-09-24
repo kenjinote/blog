@@ -1,5 +1,6 @@
 ---
 title: 'The Prisoner''s Dilemma: Why Do We Make Choices Where "Everyone Loses"?'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'prisoners-dilemma'
 description: 'Even when we know that "cooperating with each other yields the best result", why do humans end up betraying each other? Through "The Prisoner''s Dilemma", the most famous model in game theory, we will explain mathematically and psychologically the mechanism by which individual rationality creates collective irrationality.'
 date: '2026-09-10T03:00:00+09:00'

@@ -1,5 +1,6 @@
 ---
 title: 'Rangkuman Lagu Barat Terkenal Rekomendasi: Lagu Hit Klasik Sepanjang Masa'
+date: "2026-09-24T19:44:38+09:00"
 slug: "好きなMusik Barat"
 date: 2024-01-05T00:14:22+09:00
 tags: ["Musik Barat", "Musik"]

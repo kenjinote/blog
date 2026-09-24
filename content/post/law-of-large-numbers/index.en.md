@@ -1,5 +1,6 @@
 ---
 title: "Law of Large Numbers - Why Casinos Always Win and How Probabilities Converge"
+date: "2026-09-24T19:44:38+09:00"
 description: "An explanation of the Law of Large Numbers, a crucial theorem in probability theory. We delve deep into casino profit structures, rigorous mathematical definitions (weak and strong laws), with diagrams and Python code."
 slug: "law-of-large-numbers"
 date: 2026-09-14

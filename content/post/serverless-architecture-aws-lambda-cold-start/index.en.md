@@ -1,5 +1,6 @@
 ---
 title: "The Light and Shadow of Serverless Architecture: Behind AWS Lambda and Cold Starts"
+date: "2026-09-24T19:44:38+09:00"
 description: "We deeply explore not only the benefits of serverless, but also the mechanisms of containers running behind the scenes, the cold start problem, and its countermeasures (such as SnapStart)."
 slug: "serverless-architecture-aws-lambda-cold-start"
 date: 2026-09-21T09:00:00+09:00

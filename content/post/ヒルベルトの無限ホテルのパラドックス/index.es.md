@@ -1,5 +1,6 @@
 ---
 title: 'El Gran Hotel de Hilbert: Cómo alojar infinitos huéspedes adicionales en un hotel lleno'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'hilberts-grand-hotel'
 description: 'El "Hotel Infinito" con infinitas habitaciones nunca rechaza a un nuevo huésped, incluso cuando está lleno. Descubra el asombroso truco lógico (propiedades de los conjuntos infinitos) que permite alojar a 1, a un millón o incluso a un autobús con infinitos pasajeros.'
 date: '2026-09-10T06:00:00+09:00'

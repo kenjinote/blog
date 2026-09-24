@@ -1,5 +1,6 @@
 ---
 title: "El panorama completo del problema «P vs NP» y las clases de complejidad computacional: explicación del Problema del Milenio y su importancia en la programación"
+date: "2026-09-24T19:44:38+09:00"
 description: "Profundizamos en el problema «P vs NP», uno de los Problemas del Milenio, desde los fundamentos de las clases de complejidad computacional (P, NP, NP-completo, NP-difícil) hasta las últimas tendencias de investigación y su impacto en la programación y la criptografía."
 slug: p-vs-np-problem
 date: 2026-09-21T02:35:46+09:00

@@ -1,5 +1,6 @@
 ---
 title: 'Die Funktionsweise von OAuth 2.0 illustriert: Lernen durch die Implementierung einer Slack-App-Integration'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'oauth2-architecture-slack-app-integration'
 date: '2026-09-13T12:00:00+09:00'
 image: 'img/eyecatch.jpg'

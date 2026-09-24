@@ -1,5 +1,6 @@
 ---
 title: "Eksistensi dan Kelancaran Solusi Persamaan Navier-Stokes - Misteri Pamungkas dalam Persamaan Dasar Mekanika Fluida"
+date: "2026-09-24T19:44:38+09:00"
 description: "Penyelidikan mendalam tentang eksistensi dan kelancaran solusi persamaan Navier-Stokes, yang merupakan salah satu dari Millennium Prize Problems dari Clay Mathematics Institute."
 slug: "navier-stokes-equations"
 date: 2026-09-14T13:11:00+09:00

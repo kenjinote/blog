@@ -1,5 +1,6 @@
 ---
 title: "Théorème de Cayley-Hamilton : La propriété étonnante d'une matrice qui satisfait sa propre « équation caractéristique »"
+date: "2026-09-24T19:44:38+09:00"
 description: "Une explication détaillée du théorème de Cayley-Hamilton, l'un des résultats les plus surprenants de l'algèbre linéaire, de sa signification intuitive à sa démonstration et ses applications."
 slug: "cayley-hamilton-theorem"
 date: 2026-09-20T14:50:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: "Chaos Theory and the Butterfly Effect - How Slight Differences in Initial Values Make the Future Unpredictable"
+date: "2026-09-24T19:44:38+09:00"
 description: "A comprehensive guide to chaos theory and the butterfly effect, nonlinear dynamical systems with sensitive dependence on initial conditions, covering their historical background, mathematical foundations, fractals, and real-world applications."
 slug: "chaos-theory"
 date: 2026-09-14T13:20:38+09:00

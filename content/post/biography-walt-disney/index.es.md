@@ -1,5 +1,6 @@
 ---
 title: "El hombre que dio forma a los sueños: La vida de Walt Disney y la trayectoria de su creación"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:51:46+09:00
 categories: ["biography"]
 tags: ["walt-disney", "history"]

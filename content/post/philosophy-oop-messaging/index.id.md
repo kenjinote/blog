@@ -1,5 +1,6 @@
 ---
 title: "Kesalahpahaman dan Fakta Berorientasi Objek: \"Messaging\" sebagai Inti yang Ingin Disampaikan Alan Kay"
+date: "2026-09-24T19:44:38+09:00"
 description: "Object-Oriented Programming (OOP) sering disalahpahami sebagai \"kelas\" dan \"pewarisan\", padahal inti sebenarnya ada pada \"messaging\". Kami mengupas tuntas kebenaran OOP dari visi dan metafora sel Alan Kay."
 slug: "philosophy-oop-messaging"
 categories: ["philosophy"]

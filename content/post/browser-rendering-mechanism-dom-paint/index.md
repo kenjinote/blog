@@ -1,5 +1,6 @@
 ---
 title: "ブラウザレンダリングの仕組み：DOMツリーからPaintまでの完全解剖"
+date: "2026-09-24T19:44:38+09:00"
 description: "ブラウザがHTML/CSS/JSを読み込み、画面にピクセルを描画するまでのレンダリングエンジン（Blink, WebKit等）の仕組みを完全に解剖します。"
 slug: "browser-rendering-mechanism-dom-paint"
 date: 2026-09-20T17:10:00+09:00

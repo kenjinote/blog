@@ -1,5 +1,6 @@
 ---
 title: "Les sept ponts de Königsberg - Les origines de la théorie des graphes et de la topologie"
+date: "2026-09-24T19:44:38+09:00"
 description: "Le problème des « sept ponts de Königsberg » résolu par le mathématicien du 18ème siècle Leonhard Euler. Cet article explore en profondeur l'histoire et le contexte mathématique de la façon dont ce problème a ouvert de nouveaux domaines des mathématiques modernes tels que la théorie des graphes et la topologie."
 slug: "seven-bridges-of-konigsberg"
 date: 2026-09-14T13:11:25+09:00

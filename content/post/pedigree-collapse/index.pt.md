@@ -1,5 +1,6 @@
 ---
 title: "O Paradoxo do Ancestral: A Matemática e a Genética do Colapso do Pedigree"
+date: "2026-09-24T19:44:38+09:00"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "O 'Paradoxo do Ancestral', onde o número de ancestrais ao recuarmos gerações excede a população mundial da época. Explicaremos detalhadamente o 'Colapso do Pedigree' (Pedigree Collapse) que desvenda este mistério, através de uma abordagem matemática e da perspectiva da genética."

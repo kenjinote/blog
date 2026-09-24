@@ -1,5 +1,6 @@
 ---
 title: "Hippocrate, le Père de la Médecine : Sa vie et sa philosophie dans le monde moderne"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:32+09:00
 categories: ["biography"]
 tags: ["hippocrates", "history"]

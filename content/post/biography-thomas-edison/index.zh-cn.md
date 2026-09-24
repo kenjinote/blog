@@ -1,5 +1,6 @@
 ---
 title: "“发明大王”托马斯·爱迪生的生平与哲学：无惧失败的创新轨迹"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["thomas-edison", "history"]

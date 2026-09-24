@@ -1,5 +1,6 @@
 ---
 title: 'Un résumé des extensions de navigateur recommandées pour rendre Chrome et Edge considérablement plus pratiques'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Recommandationの Chorme 拡張"
 date: 2023-03-19T02:54:30+09:00
 tags: ["Extensions Chrome", "Navigateur", "Chrome", "Edge"]

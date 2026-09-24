@@ -1,5 +1,6 @@
 ---
 title: 'Résumé des chefs-d''œuvre recommandés de la musique occidentale : Des tubes classiques aimés à travers les époques'
+date: "2026-09-24T19:44:38+09:00"
 slug: "好きなMusique occidentale"
 date: 2024-01-05T00:14:22+09:00
 tags: ["Musique Occidentale", "Musique"]

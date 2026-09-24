@@ -1,5 +1,6 @@
 ---
 title: "卡尔·马克思：抨击资本主义矛盾、推动历史进程的思想家"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["karl-marx", "history"]

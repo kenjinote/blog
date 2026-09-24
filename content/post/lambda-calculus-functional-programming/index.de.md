@@ -1,5 +1,6 @@
 ---
 title: "Lambda-Kalkül und der Ursprung der funktionalen Programmierung: Von Alonzo Churchs Theorie zu Lisp und Haskell"
+date: "2026-09-24T19:44:38+09:00"
 description: "Wie sich das Lambda-Kalkül, die fundamentale Theorie der Berechnung, zur modernen funktionalen Programmierung entwickelte. Eine umfassende Erklärung von Alonzo Churchs Theorie bis zur Geburt von Lisp und Haskell und ihrer mathematischen Grundlage."
 slug: lambda-calculus-functional-programming
 date: 2026-09-21T02:35:46+09:00

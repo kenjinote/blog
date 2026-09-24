@@ -1,5 +1,6 @@
 ---
 title: 'yt-dlp使用教程：如何下载与保存YouTube视频和音频'
+date: "2026-09-24T19:44:38+09:00"
 slug: "yt-dlp.exe による YouTube 视频の下载方法"
 date: 2024-09-03T14:09:26+09:00
 tags: ["YouTube", "下载"]

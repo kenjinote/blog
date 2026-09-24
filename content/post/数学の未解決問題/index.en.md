@@ -1,5 +1,6 @@
 ---
 title: 'Fascinating Unsolved Math Problems: What are Perfect Numbers, Goldbach''s Conjecture, and the Riemann Hypothesis?'
+date: "2026-09-24T19:44:38+09:00"
 slug: "MathematicsのUnsolved Problem"
 date: 2024-03-02T22:57:36+09:00
 tags: ["Mathematics", "Unsolved Problems"]

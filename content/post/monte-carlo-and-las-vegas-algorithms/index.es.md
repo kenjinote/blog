@@ -1,5 +1,6 @@
 ---
 title: "Algoritmos de Montecarlo y Las Vegas: Los algoritmos 'definitivos' usando números aleatorios"
+date: "2026-09-24T19:44:38+09:00"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "Explicamos dos algoritmos probabilísticos representativos que utilizan números aleatorios: el método de Montecarlo y el de Las Vegas. Resumimos sus implementaciones específicas y las diferencias entre ellos de manera comprensible."

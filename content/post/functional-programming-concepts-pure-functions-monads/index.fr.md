@@ -1,5 +1,6 @@
 ---
 title: "Fondamentaux et avantages de la programmation fonctionnelle (fonctions pures, immuabilité et monades)"
+date: "2026-09-24T19:44:38+09:00"
 description: Une plongée approfondie dans le paradigme de la programmation fonctionnelle, expliquant en détail ses avantages à travers les concepts de fonctions pures, d'immuabilité et de monades.
 slug: functional-programming-concepts-pure-functions-monads
 date: 2026-09-21T14:51:08+09:00

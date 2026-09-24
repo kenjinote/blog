@@ -1,5 +1,6 @@
 ---
 title: 'Realmente úteis! Um resumo selecionado de aplicativos iOS recomendados'
+date: "2026-09-24T19:44:38+09:00"
 slug: "RecomendaçãoiOSAplicativo"
 date: 2024-09-18T23:31:20+09:00
 tags: ["iOS", "Aplicativo", "Recomendado"]

@@ -1,5 +1,6 @@
 ---
 title: '[JS] Wie man alle Kontrollkästchen auf einer Webseite auf einmal auswählt (mit Bookmarklet)'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Webページ内のすべてのチェックボックスを全チェックする"
 date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "automatisierung"]

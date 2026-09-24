@@ -1,5 +1,6 @@
 ---
 title: "O Mito e a Verdade da Orientação a Objetos: O Núcleo do \"Messaging\" que Alan Kay Queria Transmitir"
+date: "2026-09-24T19:44:38+09:00"
 description: "A Orientação a Objetos (OOP) costuma ser mal compreendida como \"classes\" e \"herança\", mas o seu verdadeiro núcleo está nas \"mensagens\". Explicamos em profundidade a verdade da OOP a partir da visão de Alan Kay e da metáfora da célula."
 slug: "philosophy-oop-messaging"
 categories: ["philosophy"]

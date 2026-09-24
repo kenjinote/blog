@@ -1,5 +1,6 @@
 ---
 title: "拿破仑·波拿巴：革命之子还是独裁者？"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:46:03+09:00
 categories: ["biography"]
 tags: ["napoleon-bonaparte", "history"]

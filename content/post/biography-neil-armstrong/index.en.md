@@ -1,5 +1,6 @@
 ---
 title: "Neil Armstrong: The Life and Philosophy of the First Man to Walk on the Moon"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:51:47+09:00
 categories: ["biography"]
 tags: ["neil-armstrong", "history"]

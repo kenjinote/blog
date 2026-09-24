@@ -1,5 +1,6 @@
 ---
 title: '[Untuk Pemula] Cara Mudah Menghubungkan ke Desktop Jarak Jauh dengan TeamViewer'
+date: "2026-09-24T19:44:38+09:00"
 slug: "TeamViewerで簡単Koneksi Jarak Jauh"
 date: 2023-01-13T01:45:00+09:00
 tags: ["TeamViewer", "Perintah", "Koneksi Jarak Jauh"]

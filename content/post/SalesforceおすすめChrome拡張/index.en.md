@@ -1,5 +1,6 @@
 ---
 title: 'Boost Your Salesforce Development! A Summary of Recommended Chrome Extensions'
+date: "2026-09-24T19:44:38+09:00"
 slug: "SalesforceRecommendationChrome Extension"
 date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Chrome Extension"]

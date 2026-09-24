@@ -1,5 +1,6 @@
 ---
 title: "L'Hôtel Infini de Hilbert : comment loger une infinité de nouveaux clients dans un hôtel complet"
+date: "2026-09-24T19:44:38+09:00"
 slug: 'hilberts-grand-hotel'
 description: "L'« Hôtel Infini », qui possède une infinité de chambres, ne refuse jamais de nouveaux clients, même lorsqu'il est complet. Découvrez l'incroyable astuce logique (une propriété des ensembles infinis) qui permet de loger tout le monde, qu'il s'agisse d'une personne, d'un million, ou même d'un bus contenant une infinité de passagers."
 date: '2026-09-10T06:00:00+09:00'

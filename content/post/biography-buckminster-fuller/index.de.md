@@ -1,5 +1,6 @@
 ---
 title: "Buckminster Fuller und das Konzept vom \"Raumschiff Erde\": Das unorthodoxe Genie, das die Zukunft entwarf"
+date: "2026-09-24T19:44:38+09:00"
 description: "Buckminster Fuller schlug das Konzept des \"Raumschiffs Erde\" vor und erfand die geodätische Kuppel. Wir befassen uns eingehend mit seinem turbulenten Leben und seiner Philosophie, die Hinweise auf eine nachhaltige Zukunft bietet."
 slug: "biography-buckminster-fuller"
 categories: ["biography"]

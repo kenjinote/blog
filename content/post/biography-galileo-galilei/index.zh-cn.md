@@ -1,5 +1,6 @@
 ---
 title: "近代科学之父：伽利略·伽利莱的生平与哲学遗产"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["galileo-galilei", "history"]

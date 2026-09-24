@@ -1,5 +1,6 @@
 ---
 title: "The Truth and Debugging Drama of the Y2K Bug: The Battle of the Nameless Programmers Who Saved the World"
+date: "2026-09-24T19:44:38+09:00"
 description: "At the end of 1999, the world fell into a panic over the \"Y2K Bug\" 2000 problem. Was it just media hype? No, there was an epic debugging drama of programmers who fought day and night with code to prevent a global system collapse. We close in on the truth of that time."
 slug: "history-y2k-bug"
 categories: ["history"]

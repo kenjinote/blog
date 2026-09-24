@@ -1,5 +1,6 @@
 ---
 title: "Central Limit Theorem - The Miracle That Any Data Approaches a Normal Distribution When Added Together"
+date: "2026-09-24T19:44:38+09:00"
 description: "A detailed explanation of the Central Limit Theorem, one of the most important theorems in statistics, from intuitive understanding to mathematical proof and Python simulation."
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"

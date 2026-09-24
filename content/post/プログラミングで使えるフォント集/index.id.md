@@ -1,5 +1,6 @@
 ---
 title: 'Kumpulan Font Rekomendasi untuk Pemrograman | Font Gratis yang Mudah Dibaca dan Meningkatkan Efisiensi Pengembangan'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Pemrogramanで使えるFont集"
 date: 2024-03-30T02:21:31+09:00
 tags: ["Pemrograman", "Font"]

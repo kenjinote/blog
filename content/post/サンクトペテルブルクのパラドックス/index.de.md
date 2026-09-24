@@ -1,5 +1,6 @@
 ---
 title: 'Das Sankt-Petersburg-Paradoxon: Wie viel würden Sie für ein Glücksspiel mit "unendlichem" Erwartungswert zahlen?'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'st-petersburg-paradox'
 description: 'Ein Glücksspiel, das mathematisch gesehen "unendlich viel Profit" abwerfen sollte. In der Realität würde jedoch niemand viel Geld dafür bezahlen. Wir erklären das historische Paradoxon, das die Diskrepanz zwischen Wahrscheinlichkeitstheorie und menschlicher Psychologie (Nutzen) aufzeigt und zur Grundlage der modernen Wirtschaftswissenschaften wurde.'
 date: '2026-09-10T05:00:00+09:00'

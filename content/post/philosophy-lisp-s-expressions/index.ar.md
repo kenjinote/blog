@@ -1,5 +1,6 @@
 ---
 title: "Lisp و\"لغة الإله\" - جمال تعبيرات S وفلسفة الكود كبيانات"
+date: "2026-09-24T19:44:38+09:00"
 description: "لماذا تُسمى لغة البرمجة Lisp بـ \"لغة الإله\"؟ مقال فلسفي تقني يبحث بعمق في جوهرها: جمال تعبيرات S، التماثل البنيوي (Homoiconicity)، وأعماق البرمجة الميتية (Metaprogramming) باستخدام الماكرو."
 slug: "philosophy-lisp-s-expressions"
 categories: ["philosophy"]

@@ -1,5 +1,6 @@
 ---
 title: "Complexidade de Tempo e Espaço (Introdução à Notação Big O e Exemplos Práticos)"
+date: "2026-09-24T19:44:38+09:00"
 description: "Uma explicação abrangente sobre a notação O (Big O notation), essencial para avaliar o desempenho de algoritmos, desde a diferença entre complexidade de tempo e espaço até exemplos práticos."
 slug: "time-space-complexity-big-o-notation-examples"
 date: 2026-09-22T00:00:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: 'Apprendre sur l''IA générative ! Vidéos de cours recommandées par des professeurs de l''Université de Tokyo'
+date: "2026-09-24T19:44:38+09:00"
 slug: "IA générativeについて"
 date: 2024-04-16T02:13:56+09:00
 tags: ["IA générative", "YouTube", "Conférence"]

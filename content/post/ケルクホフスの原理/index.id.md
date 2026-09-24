@@ -1,5 +1,6 @@
 ---
 title: 'Apa Itu Prinsip Kerckhoffs? Penjelasan Mudah Konsep Penting yang Mendukung Keamanan Kriptografi'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Prinsip Kerckhoffs"
 date: 2025-04-16T23:53:08+09:00
 tags: ["Prinsip Kerckhoffs", "Kriptografi"]

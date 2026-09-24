@@ -1,5 +1,6 @@
 ---
 title: "Jarum Buffon - Masalah probabilitas klasik di mana menjatuhkan jarum menemukan Pi"
+date: "2026-09-24T19:44:38+09:00"
 description: "Bisakah Anda menemukan Pi (π) hanya dengan menjatuhkan jarum di lantai? Kami menjelaskan secara rinci masalah klasik teori probabilitas yang menakjubkan yang diusulkan pada abad ke-18, Jarum Buffon, dari pembuktian matematisnya hingga simulasi."
 slug: "buffons-needle"
 date: 2026-09-14T13:20:38+09:00

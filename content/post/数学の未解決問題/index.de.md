@@ -1,5 +1,6 @@
 ---
 title: 'Faszinierende ungelöste mathematische Probleme: Was sind vollkommene Zahlen, die Goldbachsche Vermutung und die Riemannsche Vermutung?'
+date: "2026-09-24T19:44:38+09:00"
 slug: "MathematikのUngelöstes Problem"
 date: 2024-03-02T22:57:36+09:00
 tags: ["Mathematik","Ungelöste Probleme"]

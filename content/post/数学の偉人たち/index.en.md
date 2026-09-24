@@ -1,5 +1,6 @@
 ---
 title: 'Great Mathematicians Who Changed History: From Pythagoras to Archimedes and Euclid'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Mathematicsの偉人たち"
 date: 2022-09-22T23:06:37+09:00
 tags: ["Mathematicians"]

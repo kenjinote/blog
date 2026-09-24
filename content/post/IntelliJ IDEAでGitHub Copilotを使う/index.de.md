@@ -1,5 +1,6 @@
 ---
 title: 'Wie man GitHub Copilot in IntelliJ IDEA einführt und aktiviert'
+date: "2026-09-24T19:44:38+09:00"
 slug: "IntelliJ IDEAでGitHub Copilotを使う"
 date: 2022-09-10T09:44:55+09:00
 tags: ["IntelliJ IDEA","GitHub Copilot"]

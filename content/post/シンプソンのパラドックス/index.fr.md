@@ -1,5 +1,6 @@
 ---
 title: 'Le paradoxe de Simpson : un phénomène mystérieux où l''on gagne par parties, mais où l''on perd au global'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'simpsons-paradox'
 description: 'Bien que le "taux de réussite" soit meilleur dans chaque département, en calculant le "taux de réussite total" de toute l''entreprise, la tendance s''inverse et l''on est perdant !? Explication simple du "paradoxe de Simpson", un piège redoutable où les données statistiques nous trompent.'
 date: '2026-09-10T07:00:00+09:00'

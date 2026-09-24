@@ -1,5 +1,6 @@
 ---
 title: '[Berdasarkan Bahasa] Berjalan di Browser! Rangkuman Lingkungan Eksekusi Kode Pemrograman Online Gratis'
+date: "2026-09-24T19:44:38+09:00"
 slug: "OnlineのLingkungan Eksekusi Kodeまとめ"
 date: 2023-04-09T14:01:00+09:00
 tags: ["online", "lingkungan eksekusi kode", "pemrograman"]

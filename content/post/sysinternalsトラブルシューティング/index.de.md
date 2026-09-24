@@ -1,5 +1,6 @@
 ---
 title: 'Erweiterte Windows-Fehlerbehebung mit Sysinternals-Tools'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'sysinternals-advanced-windows-troubleshooting'
 date: '2026-09-13T05:00:00+09:00'
 image: 'img/eyecatch.jpg'

@@ -1,5 +1,6 @@
 ---
 title: '[Nach Sprache] Funktioniert im Browser! Zusammenfassung kostenloser Online-Programmierausführungsumgebungen'
+date: "2026-09-24T19:44:38+09:00"
 slug: "OnlineのCode-Ausführungsumgebungまとめ"
 date: 2023-04-09T14:01:00+09:00
 tags: ["Online", "Code-Ausführungsumgebung", "Programmierung"]

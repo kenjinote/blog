@@ -1,5 +1,6 @@
 ---
 title: "Peut-on la remplir de peinture sans pouvoir en peindre la surface ? : La Trompette de Gabriel"
+date: "2026-09-24T19:44:38+09:00"
 description: "Un curieux paradoxe tridimensionnel issu du calcul infinitésimal, possédant à la fois un \'volume fini\' et une \'surface infinie\'."
 date: 2026-09-10T21:00:00+09:00
 draft: false

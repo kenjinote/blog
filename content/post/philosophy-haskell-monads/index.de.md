@@ -1,5 +1,6 @@
 ---
 title: "Haskell und die Philosophie rein funktionaler Sprachen: Die Welt der Monaden und ihre Abgründe"
+date: "2026-09-24T19:44:38+09:00"
 description: "Ein vollständiger Leitfaden, der tief in die Philosophie der rein funktionaler Sprache Haskell und die wahre Natur der oft als komplex empfundenen \"Monaden (Monad)\" eintaucht. Wir erklären die Isolierung von Seiteneffekten, Funktoren, Applikative und die Schönheit der abstrakten Welt, die von Monaden gewoben wird."
 slug: "philosophy-haskell-monads"
 categories: ["philosophy"]

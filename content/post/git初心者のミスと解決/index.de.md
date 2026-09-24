@@ -1,5 +1,6 @@
 ---
 title: 'Häufige Fehler von Git-Anfängern und eine Sammlung von Lösungsbefehlen (Konfliktlösung etc.)'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'git-beginners-mistakes-and-solutions'
 date: '2026-09-12T17:00:00+09:00'
 image: 'img/eyecatch.jpg'

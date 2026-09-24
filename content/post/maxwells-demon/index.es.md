@@ -1,5 +1,6 @@
 ---
 title: "El demonio de Maxwell: La energía de la 'información' que rompe el sentido común de la física"
+date: "2026-09-24T19:44:38+09:00"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "El 'Demonio de Maxwell' es un experimento mental que parece violar la segunda ley de la termodinámica. Explicaremos en detalle, utilizando fórmulas y diagramas, cómo se resolvió esta paradoja a través de la 'física de la información'."

@@ -1,5 +1,6 @@
 ---
 title: "Galileis Paradoxon: Das Mysterium der Mathematik, gewoben von der Unendlichkeit"
+date: "2026-09-24T19:44:38+09:00"
 description: "Ist die Anzahl der „natürlichen Zahlen“ gleich der ihrer „Quadratzahlen“? Eine ausführliche Erklärung von Galileo Galileis tiefen Gedanken zur „Unendlichkeit“ in seinen späten Jahren bis hin zur Verbindung zur modernen Mengenlehre. Ein langer Artikel, der den Wundern und dem Reiz der Unendlichkeit auf den Grund geht."
 slug: "paradox-galileos-paradox"
 categories: ["science"]

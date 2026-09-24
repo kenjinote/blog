@@ -1,5 +1,6 @@
 ---
 title: "데니스 리치: 현대 컴퓨팅의 조용한 거성"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:18:00+09:00
 categories: ["biography"]
 tags: ["dennis-ritchie", "history"]

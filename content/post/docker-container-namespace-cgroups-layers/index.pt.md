@@ -1,5 +1,6 @@
 ---
 title: "Compreensão completa sobre Docker e tecnologia de contêineres: do Namespace, cgroups até as camadas de imagem"
+date: "2026-09-24T19:44:38+09:00"
 description: "Além do uso simples da ferramenta, dissecaremos completamente os mecanismos por trás dos contêineres usando as funções do kernel Linux (Namespace, cgroups, OverlayFS)."
 slug: "docker-container-namespace-cgroups-layers"
 date: 2026-09-21T09:00:00+09:00

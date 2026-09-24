@@ -1,5 +1,6 @@
 ---
 title: "L'ancêtre d'Internet, \"ARPANET\" : l'histoire complète du réseau qui a changé le monde, né de la recherche militaire pendant la guerre froide"
+date: "2026-09-24T19:44:38+09:00"
 description: "ARPANET, l'origine directe de l'Internet moderne. De la naissance de la technologie de commutation de paquets, au développement de l'IMP, à la communication historique de 1969 et à l'évolution vers TCP/IP, nous plongeons dans l'histoire de la genèse d'Internet avec une explication détaillée de plusieurs milliers de mots."
 slug: "history-arpanet"
 categories: ["history"]

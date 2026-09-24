@@ -1,5 +1,6 @@
 ---
 title: 'Ich habe einen Blog mit dem statischen Website-Generator Hugo gestartet! Aufzeichnung von Alltag und technischen Notizen'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Blog、はじめてみました"
 date: 2022-09-02T07:23:00+09:00
 tags: ["Verschiedenes"]

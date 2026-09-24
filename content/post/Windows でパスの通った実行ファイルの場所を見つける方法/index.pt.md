@@ -1,5 +1,6 @@
 ---
 title: 'Como encontrar a localização (caminho) do arquivo executável no PATH do Windows [comando where]'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Windows でCaminhoの通ったArquivo Executávelの場所を見つける方法"
 date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "Caminho", "Arquivo executável", "Prompt de Comando"]

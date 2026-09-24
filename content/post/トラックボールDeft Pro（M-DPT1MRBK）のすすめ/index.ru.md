@@ -1,5 +1,6 @@
 ---
 title: 'Обзор Elecom Deft Pro! Плюсы и минусы мыши-трекбола с 8 кнопками'
+date: "2026-09-24T19:44:38+09:00"
 slug: "ТрекболDeft Pro（M-DPT1MRBK）のすすめ"
 date: 2023-05-02T23:28:33+09:00
 tags: ["Трекбол", "Deft Pro", "M-DPT1MRBK", "Elecom"]

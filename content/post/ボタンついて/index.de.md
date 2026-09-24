@@ -1,5 +1,6 @@
 ---
 title: 'Wie man Buttons (GUI-Steuerelemente) und Ereignisverarbeitung in der Windows API implementiert'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Schaltflächeついて"
 date: 2023-01-14T20:24:00+09:00
 tags: ["Schaltfläche", "GUI"]

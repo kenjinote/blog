@@ -1,5 +1,6 @@
 ---
 title: 'La paradoja de Russell: ¿El "conjunto de todos los conjuntos que no se contienen a sí mismos" se contiene a sí mismo?'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'russells-paradox'
 description: '"¿El barbero que afeita a todos los aldeanos que no se afeitan a sí mismos, se afeita a sí mismo?" Explicamos la aterradora paradoja de Bertrand Russell que sacudió la "teoría de conjuntos", el fundamento de las matemáticas, y cambió la historia de la lógica.'
 date: '2026-09-10T04:00:00+09:00'

@@ -1,5 +1,6 @@
 ---
 title: "Browser Rendering Mechanism: Complete Anatomy from DOM Tree to Paint"
+date: "2026-09-24T19:44:38+09:00"
 description: "A complete anatomy of the rendering engine (Blink, WebKit, etc.) mechanism, from the browser loading HTML/CSS/JS to drawing pixels on the screen."
 slug: "browser-rendering-mechanism-dom-paint"
 date: 2026-09-20T17:10:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: "نيل آرمسترونغ: حياة وفلسفة أول رجل يخطو على سطح القمر"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:51:47+09:00
 categories: ["biography"]
 tags: ["neil-armstrong", "history"]

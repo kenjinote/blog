@@ -8,6 +8,7 @@
 
 
 title: 'Código de muestra en C simple para generar e identificar números primos dentro de un rango especificado'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Número primoを生成するC言語コード"
 date: 2024-08-24T09:38:10+09:00
 tags: ["C", "Números primos", "Algoritmos", "Matemáticas"]

@@ -1,5 +1,6 @@
 ---
 title: "O Problema dos Generais Bizantinos e o Abismo dos Algoritmos de Consenso: O Funcionamento de Paxos, Raft e BFT"
+date: "2026-09-24T19:44:38+09:00"
 description: "Um mergulho profundo nos algoritmos de consenso que formam a base dos sistemas distribuídos, desde a origem do Problema dos Generais Bizantinos até Paxos, Raft e BFT (que resiste a nós maliciosos), mesclando teoria, fórmulas matemáticas e implementações de código."
 slug: byzantine-generals-problem-consensus
 date: 2026-09-21T02:45:54+09:00

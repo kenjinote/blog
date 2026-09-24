@@ -1,5 +1,6 @@
 ---
 title: "A Vida e a Filosofia de Peter Drucker, o Pai da Gestão Moderna"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["peter-drucker", "history"]

@@ -1,5 +1,6 @@
 ---
 title: 'Für Anfänger: Empfohlene Pflegeprodukte und Pflegemethoden für Lederwaren'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Lederwarenのメンテナンス"
 date: 2024-10-30T00:31:46+09:00
 tags: ["Lederprodukte", "Hobby"]

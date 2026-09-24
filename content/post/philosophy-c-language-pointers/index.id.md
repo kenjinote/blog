@@ -1,5 +1,6 @@
 ---
 title: "Filosofi C: Jurang Pemrograman yang Dibawa oleh Pointer dan Kebebasan"
+date: "2026-09-24T19:44:38+09:00"
 description: "Inti dari bahasa C: \"pointer\" dan \"kebebasan\". Bagaimana filosofi mempercayakan segalanya kepada pengembang membuka batas perangkat keras dan mendorong pertumbuhan pemrogram? Sebuah eksplorasi terperinci ke dalam jurang manajemen memori."
 slug: "philosophy-c-language-pointers"
 categories: ["philosophy"]

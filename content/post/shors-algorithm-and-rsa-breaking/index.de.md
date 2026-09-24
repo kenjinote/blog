@@ -1,5 +1,6 @@
 ---
 title: 'Werden Quantencomputer die RSA-Kryptographie knacken? Shors Algorithmus erklärt'
+date: "2026-09-24T19:44:38+09:00"
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["Quantencomputer", "Kryptoanalyse", "Shors Algorithmus", "RSA"]
 image: "eyecatch.jpg"

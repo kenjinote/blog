@@ -1,5 +1,6 @@
 ---
 title: 'Pitágoras: A Interseção da Matemática e do Misticismo'
+date: "2026-09-24T19:44:38+09:00"
 description: 'Uma exploração profunda da vida do matemático da Grécia antiga Pitágoras, o teorema de Pitágoras e a filosofia de que tudo é número.'
 slug: 'pythagoras'
 date: '2026-09-20T18:40:00+09:00'

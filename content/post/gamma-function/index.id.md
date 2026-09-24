@@ -1,5 +1,6 @@
 ---
 title: "Fungsi Gamma: Mahakarya Euler yang Memperluas Faktorial ke Bilangan Real dan Kompleks Kontinu"
+date: "2026-09-24T19:44:38+09:00"
 description: "Fungsi Gamma menghubungkan faktorial diskrit ke kurva yang mulus. Kita mengeksplorasi secara mendalam definisinya, propertinya, sejarah penemuannya oleh Euler, kelanjutan analitik, aproksimasi Stirling, dan aplikasinya dalam sains modern."
 slug: "gamma-function"
 date: 2026-09-20T14:40:00+09:00

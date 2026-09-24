@@ -1,5 +1,6 @@
 ---
 title: "質數定理（Prime Number Theorem） - 質數的分佈趨近於對數函數的法則"
+date: "2026-09-24T19:44:38+09:00"
 description: "深入解說關於質數出現規律性的數學金字塔：質數定理（Prime Number Theorem）。從質數計數函數到與黎曼猜想的關係。"
 slug: "prime-number-theorem"
 date: 2026-09-14T13:11:00+09:00

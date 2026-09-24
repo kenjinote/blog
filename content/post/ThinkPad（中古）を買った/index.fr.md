@@ -1,5 +1,6 @@
 ---
 title: 'Achat d''un ThinkPad T470s d''occasion ! Un avis honnête sur ses spécifications, sa facilité d''utilisation et ses défauts'
+date: "2026-09-24T19:44:38+09:00"
 slug: "ThinkPad（中古）を買った"
 date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "Ordinateur portable"]

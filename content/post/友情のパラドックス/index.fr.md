@@ -1,5 +1,6 @@
 ---
 title: "Vos amis ont plus d'amis que vous : le paradoxe de l'amitié"
+date: "2026-09-24T19:44:38+09:00"
 description: "Pas besoin de vous inquiéter de ne pas avoir beaucoup d'amis. C'est une propriété des réseaux mathématiquement prouvée."
 date: 2026-09-10T21:00:00+09:00
 draft: false

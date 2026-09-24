@@ -1,5 +1,6 @@
 ---
 title: "Existenz und Glattheit der Navier-Stokes-Gleichungen - Das ultimative Rätsel in den Grundgleichungen der Strömungsmechanik"
+date: "2026-09-24T19:44:38+09:00"
 description: "Ein tiefer Einblick in die Existenz und Glattheit der Lösungen der Navier-Stokes-Gleichungen, eines der Millennium-Probleme des Clay Mathematics Institute."
 slug: "navier-stokes-equations"
 date: 2026-09-14T13:11:00+09:00

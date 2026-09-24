@@ -1,5 +1,6 @@
 ---
 title: "Unix Philosophy (The Essence of Modular Design): The Art of Software Woven by Single Responsibility and Pipes"
+date: "2026-09-24T19:44:38+09:00"
 description: "A deep dive into the essence of 'modular design' underlying the Unix philosophy. A thorough explanation of timeless principles such as programs that do one thing well and coordination through text streams, which are still relevant to modern software engineering."
 slug: "philosophy-unix-modular-design"
 categories: ["philosophy"]

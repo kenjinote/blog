@@ -1,5 +1,6 @@
 ---
 title: 'How to Customize Image Size and Placement in Hugo PaperMod Theme Using CSS'
+date: "2026-09-24T19:44:38+09:00"
 slug: "PaperModのImageの配置変更"
 date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]

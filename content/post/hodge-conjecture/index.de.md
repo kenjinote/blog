@@ -1,5 +1,6 @@
 ---
 title: "Hodge-Vermutung (Hodge Conjecture) - Ein Millennium-Problem, das algebraische Geometrie und Topologie verbindet"
+date: "2026-09-24T19:44:38+09:00"
 description: "Eine detaillierte Erklärung der Hodge-Vermutung, eines der Millennium-Probleme des Clay Mathematics Institute, von ihrer Rolle als Brücke zwischen algebraischer Geometrie und Topologie bis hin zu ihrem tiefen mathematischen Hintergrund."
 slug: "hodge-conjecture"
 date: 2026-09-14T13:04:13+09:00

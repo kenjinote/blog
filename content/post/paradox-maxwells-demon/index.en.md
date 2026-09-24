@@ -1,5 +1,6 @@
 ---
 title: "Maxwell's Demon: The Ultimate Thought Experiment on the Second Law of Thermodynamics and How Information Turns into Heat"
+date: "2026-09-24T19:44:38+09:00"
 description: "Maxwell's Demon, the most famous paradox in the history of physics. How was this demon, which seemed to break the Second Law of Thermodynamics, born, and how was it exterminated over a century later? A thorough explanation of the trajectory to information thermodynamics."
 slug: "paradox-maxwells-demon"
 categories: ["science"]

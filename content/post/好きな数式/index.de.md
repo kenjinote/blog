@@ -1,5 +1,6 @@
 ---
 title: 'Die allzu schöne Welt der Mathematik: Zusammenfassung beliebter mathematischer Formeln wie der Satz von Wilson und die Eulersche Formel'
+date: "2026-09-24T19:44:38+09:00"
 slug: "好きなFormel"
 date: 2022-10-05T13:24:50+09:00
 tags: ["Mathematik"]

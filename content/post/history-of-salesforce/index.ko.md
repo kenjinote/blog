@@ -1,5 +1,6 @@
 ---
 title: "기업사: Salesforce의 역사 - SaaS(클라우드 소프트웨어)의 개척자"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T04:01:41+09:00
 
 image: "eyecatch.jpg"

@@ -1,5 +1,6 @@
 ---
 title: "Chaostheorie und der Schmetterlingseffekt - Wie geringfügige Unterschiede in den Anfangswerten die Zukunft unvorhersehbar machen"
+date: "2026-09-24T19:44:38+09:00"
 description: "Ein umfassender Leitfaden zur Chaostheorie und zum Schmetterlingseffekt, zu nichtlinearen dynamischen Systemen mit sensibler Abhängigkeit von den Anfangsbedingungen, von ihrem historischen Hintergrund bis hin zu mathematischen Grundlagen, Fraktalen und realen Anwendungen."
 slug: "chaos-theory"
 date: 2026-09-14T13:20:38+09:00

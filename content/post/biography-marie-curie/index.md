@@ -1,5 +1,6 @@
 ---
 title: "情熱と放射能：マリー・キュリーの生涯と科学への献身"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["marie-curie", "history"]

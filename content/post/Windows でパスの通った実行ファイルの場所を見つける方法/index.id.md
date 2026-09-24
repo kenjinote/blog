@@ -1,5 +1,6 @@
 ---
 title: 'Cara Mencari Lokasi (Path) File Eksekusi yang Terdaftar di Path pada Windows [Perintah where]'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Windows でJalurの通ったFile Eksekusiの場所を見つける方法"
 date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "path", "file executable", "command prompt"]

@@ -1,5 +1,6 @@
 ---
 title: 'La paradoja del examen sorpresa: El día en que se realiza un examen lógicamente "absolutamente imposible"'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'unexpected-hanging-paradox'
 description: '"La próxima semana, cualquier día de lunes a viernes, les haré un examen sorpresa de forma impredecible" — Ante esta declaración del profesor, los estudiantes demostraron que "un examen sorpresa es lógicamente imposible". Sin embargo...'
 date: '2026-09-10T10:00:00+09:00'

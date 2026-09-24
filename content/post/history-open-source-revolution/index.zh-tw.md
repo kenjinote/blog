@@ -1,5 +1,6 @@
 ---
 title: "開源革命與「大教堂與市集」：改變軟體開發歷史的典範轉移"
+date: "2026-09-24T19:44:38+09:00"
 description: "詳細解說「大教堂與市集」如何奠定現代開源軟體開發的基礎，從其歷史背景到對現代軟體工程的影響。"
 slug: "history-open-source-revolution"
 categories: ["history"]

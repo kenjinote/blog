@@ -1,5 +1,6 @@
 ---
 title: "The Behind the Scenes of WebRTC and Real-Time Communication: P2P, STUN/TURN, Signaling"
+date: "2026-09-24T19:44:38+09:00"
 description: "How WebRTC enables direct browser-to-browser communication. A thorough breakdown of complex behind-the-scenes technologies like NAT traversal (STUN/TURN), signaling servers, and the ICE protocol."
 slug: "webrtc-realtime-communication-p2p"
 date: 2026-09-20T17:10:00+09:00

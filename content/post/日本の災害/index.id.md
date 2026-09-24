@@ -1,5 +1,6 @@
 ---
 title: 'Catatan Bencana Alam yang Terjadi di Jepang: Gempa Bumi Semenanjung Noto 2024 dan Situasi Kerusakan'
+date: "2026-09-24T19:44:38+09:00"
 slug: "日本のBencana"
 date: 2024-01-07T00:50:09+09:00
 tags: ["bencana", "data"]

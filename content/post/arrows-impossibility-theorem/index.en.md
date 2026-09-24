@@ -1,5 +1,6 @@
 ---
 title: "Arrow's Impossibility Theorem: A Perfect 'Democracy (Election)' Does Not Mathematically Exist"
+date: "2026-09-24T19:44:38+09:00"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "Can we create an 'election system that is fair to everyone'? Through 'Arrow's Impossibility Theorem' proven by economist Kenneth Arrow, we explain the mathematical limits of democracy and how we should face elections and decision-making."

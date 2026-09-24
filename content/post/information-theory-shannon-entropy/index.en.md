@@ -1,5 +1,6 @@
 ---
 title: "Information Theory and Shannon Entropy: Exploring the Limits of Data Compression and Communication"
+date: "2026-09-24T19:44:38+09:00"
 description: "A detailed explanation of the basics of information theory proposed by Claude Shannon, the concept of entropy, the limits of data compression, and its application to modern communications."
 slug: information-theory-shannon-entropy
 date: 2026-09-21T02:45:54+09:00

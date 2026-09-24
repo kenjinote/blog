@@ -1,5 +1,6 @@
 ---
 title: "Das Buffonsche Nadelproblem - Das klassische Wahrscheinlichkeitsproblem, bei dem das Fallenlassen einer Nadel Pi findet"
+date: "2026-09-24T19:44:38+09:00"
 description: "Kannst du Pi (π) finden, indem du einfach eine Nadel auf den Boden fallen lässt? Wir erklären im Detail das erstaunliche klassische Problem der Wahrscheinlichkeitstheorie, das im 18. Jahrhundert vorgeschlagen wurde, das Buffonsche Nadelproblem, von seinem mathematischen Beweis bis zur Simulation."
 slug: "buffons-needle"
 date: 2026-09-14T13:20:38+09:00

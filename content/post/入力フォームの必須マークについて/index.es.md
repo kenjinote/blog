@@ -8,6 +8,7 @@
 
 
 title: 'Optimización de la marca de campo obligatorio en formularios | Mejores prácticas basadas en pautas de UI internacionales'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Formulario de entradaの必須マークについて"
 date: 2025-07-14T13:47:51+09:00
 tags: ["Formularios", "Desarrollo Web", "UX"]

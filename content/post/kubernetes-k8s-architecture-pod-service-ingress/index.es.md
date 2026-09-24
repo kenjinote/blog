@@ -1,5 +1,6 @@
 ---
 title: "Arquitectura de Kubernetes (K8s): Pod, Service, Ingress y plano de control"
+date: "2026-09-24T19:44:38+09:00"
 description: "Visión general de Kubernetes, el estándar de facto para la orquestación de contenedores. Explicamos en detalle desde el mecanismo del plano de control hasta el rol de cada recurso."
 slug: "kubernetes-k8s-architecture-pod-service-ingress"
 date: 2026-09-21T09:00:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: '[PQC] La menace des ordinateurs quantiques et le panorama complet de la cryptographie post-quantique de nouvelle génération'
+date: "2026-09-24T19:44:38+09:00"
 slug: "post-quantum-cryptography"
 tags: ["Technologie de chiffrement", "PQC", "Sécurité", "Technologie de nouvelle génération"]
 image: "eyecatch.jpg"

@@ -1,5 +1,6 @@
 ---
 title: "O Axioma da Escolha e o Lema de Zorn – O conceito de 'escolha' que abalou os fundamentos da matemática"
+date: "2026-09-24T19:44:38+09:00"
 description: "Uma análise aprofundada do Axioma da Escolha e do Lema de Zorn, desde seu significado intuitivo até a formalização matemática e sua importância na matemática moderna."
 slug: "axiom-of-choice-and-zorns-lemma"
 date: 2026-09-14T13:20:37+09:00

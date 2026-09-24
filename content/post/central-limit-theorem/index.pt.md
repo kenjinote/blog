@@ -1,5 +1,6 @@
 ---
 title: "Teorema do Limite Central - O Milagre de que Quaisquer Dados se Aproximam de uma Distribuição Normal Quando Somados"
+date: "2026-09-24T19:44:38+09:00"
 description: "Uma explicação detalhada do Teorema do Limite Central, um dos teoremas mais importantes na estatística, desde a compreensão intuitiva até a prova matemática e a simulação usando Python."
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"

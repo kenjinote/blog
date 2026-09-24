@@ -1,5 +1,6 @@
 ---
 title: 'Einfach erklärte stärkste Mathematik der Menschheit zum Knacken von Codes: Das „Zahlkörpersieb“ (GNFS)'
+date: "2026-09-24T19:44:38+09:00"
 slug: "インターネットのKryptographieを破る人類最強のMathematik「一般数体篩法（GNFS）」とは？"
 date: 2026-09-05T02:09:08+09:00
 tags: ["Mathematik", "Kryptographie", "RSA", "GNFS"]

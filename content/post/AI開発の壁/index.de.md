@@ -1,5 +1,6 @@
 ---
 title: 'Die Hürde bei der KI-Entwicklung war hoch... Warum die App-Erstellung „ab der 8. Station die Hölle“ ist und die Realität'
+date: "2026-09-24T19:44:38+09:00"
 slug: "AI開発のWand"
 date: 2025-07-20T21:52:42+09:00
 tags: ["KI", "Entwicklung", "Barriere", "Gedicht"]

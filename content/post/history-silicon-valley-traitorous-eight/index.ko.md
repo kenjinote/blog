@@ -1,5 +1,6 @@
 ---
 title: "실리콘 밸리의 기원: '8인의 반역자'가 만들어낸 혁신의 성지"
+date: "2026-09-24T19:44:38+09:00"
 description: "현재 IT 산업의 진원지인 실리콘 밸리. 그 탄생의 이면에는 한 천재의 폭주와 그에 반기를 든 8명의 젊은 엔지니어 '8인의 반역자(Traitorous Eight)'의 장대한 드라마가 있었습니다. 그들의 궤적을 철저히 해설합니다."
 slug: "history-silicon-valley-traitorous-eight"
 categories: ["history"]

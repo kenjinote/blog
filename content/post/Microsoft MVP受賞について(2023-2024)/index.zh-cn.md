@@ -1,5 +1,6 @@
 ---
 title: '荣获Microsoft MVP（2023-2024）'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Microsoft MVP获奖について(2023-2024)"
 date: 2023-07-31T19:15:14+09:00
 tags: ["Microsoft MVP", "获奖"]

@@ -1,5 +1,6 @@
 ---
 title: 'Você pode se concentrar no trabalho e nos estudos! Coleção de músicas de café elegantes e BGM recomendados'
+date: "2026-09-24T19:44:38+09:00"
 slug: "CaféMúsica"
 date: 2022-09-08T08:39:03+09:00
 tags: ["Café", "Música"]

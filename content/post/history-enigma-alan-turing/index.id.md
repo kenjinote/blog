@@ -1,5 +1,6 @@
 ---
 title: "Pertempuran Memecahkan Kode Enigma dan Alan Turing: Jenius dan Mesin yang Menyelamatkan Dunia"
+date: "2026-09-24T19:44:38+09:00"
 description: "Pemecahan kode Enigma yang menentukan jalannya Perang Dunia II. Menjelaskan secara rinci keseluruhan pertempuran tak dikenal dari ahli matematika jenius Alan Turing dan para pemecah kode di Bletchley Park."
 slug: "history-enigma-alan-turing"
 categories: ["history"]

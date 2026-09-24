@@ -1,5 +1,6 @@
 ---
 title: "Raja Baja Andrew Carnegie: Pria yang Mewujudkan Paradoks Kekayaan dan Filantropi"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["andrew-carnegie", "history"]

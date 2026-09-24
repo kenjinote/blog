@@ -1,5 +1,6 @@
 ---
 title: '[C++20] Exemple de code simple pour afficher l''heure actuelle au format ISO8601 (UTC)'
+date: "2026-09-24T19:44:38+09:00"
 slug: "C++で現在時刻をISO8601フォーマットで出力する方法"
 date: 2023-04-15T19:35:27+09:00
 tags: ["C++", "Date et Heure", "ISO8601"]

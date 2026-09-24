@@ -1,5 +1,6 @@
 ---
 title: "Lisp und die \"Sprache Gottes\" – Die Schönheit der S-Expressions und die Code-as-Data-Philosophie"
+date: "2026-09-24T19:44:38+09:00"
 description: "Warum die Programmiersprache Lisp oft als die \"Sprache Gottes\" bezeichnet wird. Ein technikphilosophischer Essay, der tief in die Schönheit von S-Expressions, die verblüffende Homoikonizität und den Abgrund der Metaprogrammierung eintaucht, den Code-as-Data mit sich bringt."
 slug: "philosophy-lisp-s-expressions"
 categories: ["philosophy"]

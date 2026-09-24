@@ -1,5 +1,6 @@
 ---
 title: "Machine de Turing et théorie de la calculabilité : l'expérience de pensée d'Alan Turing et le « problème de l'arrêt »"
+date: "2026-09-24T19:44:38+09:00"
 description: "Quelles sont les limites du calcul ? Nous explorons en profondeur le concept de la machine de Turing proposé par Alan Turing et le « problème de l'arrêt », une étape importante dans la théorie de la calculabilité, d'un point de vue mathématique et de programmation."
 slug: turing-machine-computability
 date: 2026-09-21T02:35:46+09:00

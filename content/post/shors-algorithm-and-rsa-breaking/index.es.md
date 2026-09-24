@@ -8,6 +8,7 @@
 
 
 title: '¿Romperán los ordenadores cuánticos el cifrado RSA? Explicando el algoritmo de Shor'
+date: "2026-09-24T19:44:38+09:00"
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["Computación cuántica", "Criptoanálisis", "Algoritmo de Shor", "RSA"]
 image: "eyecatch.jpg"

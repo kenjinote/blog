@@ -1,5 +1,6 @@
 ---
 title: "“击垮英格兰银行的男人”乔治·索罗斯：哲学家投资者波澜壮阔的人生轨迹"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["george-soros", "history"]

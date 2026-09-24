@@ -1,5 +1,6 @@
 ---
 title: "Théorème des Nombres Premiers (Prime Number Theorem) - La loi selon laquelle la distribution des nombres premiers se rapproche d'une fonction logarithmique"
+date: "2026-09-24T19:44:38+09:00"
 description: "Une explication approfondie du théorème des nombres premiers (Prime Number Theorem), une pyramide mathématique sur la régularité de l'apparition des nombres premiers. De la fonction de comptage des nombres premiers à la relation avec l'hypothèse de Riemann."
 slug: "prime-number-theorem"
 date: 2026-09-14T13:11:00+09:00

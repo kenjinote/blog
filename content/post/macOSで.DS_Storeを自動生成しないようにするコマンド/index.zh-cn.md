@@ -1,5 +1,6 @@
 ---
 title: 'macOS中禁用・停止自动生成.DS_Store的终端命令'
+date: "2026-09-24T19:44:38+09:00"
 slug: "macOSで.DS_Storeを自動生成しないようにする命令"
 date: 2022-09-12T16:03:42+09:00
 tags: ["macOS"]

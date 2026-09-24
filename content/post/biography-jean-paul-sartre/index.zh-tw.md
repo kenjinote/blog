@@ -1,5 +1,6 @@
 ---
 title: "尚-保羅·沙特：存在主義的巨星及其軌跡"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["jean-paul-sartre", "history"]

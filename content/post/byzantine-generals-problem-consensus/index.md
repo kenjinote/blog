@@ -1,5 +1,6 @@
 ---
 title: "ビザンチン将軍問題とコンセンサスアルゴリズムの深淵：Paxos, Raft, BFTの仕組み"
+date: "2026-09-24T19:44:38+09:00"
 description: "分散システムの根幹をなすコンセンサスアルゴリズムについて、ビザンチン将軍問題の起源からPaxos、Raft、そして悪意あるノードに耐性を持つBFTまで、理論・数式・コード実装を交えて徹底的に深掘りします。"
 slug: byzantine-generals-problem-consensus
 date: 2026-09-21T02:45:54+09:00

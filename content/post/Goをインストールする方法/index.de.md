@@ -1,5 +1,6 @@
 ---
 title: 'Installationsschritte für die Go-Sprache (Golang) und wie Sie Ihr erstes Programm ausführen'
+date: "2026-09-24T19:44:38+09:00"
 slug: "GoをInstallationする方法"
 date: 2022-09-10T00:48:17+09:00
 tags: ["Go", "Installation"]

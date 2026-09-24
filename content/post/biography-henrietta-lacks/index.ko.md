@@ -1,5 +1,6 @@
 ---
 title: "헨리에타 랙스와 불멸의 HeLa 세포: 현대 의학을 형성한 숨겨진 이야기"
+date: "2026-09-24T19:44:38+09:00"
 description: "현대 의학과 생물학에 필수적인 'HeLa 세포'의 심층 분석. 원소유자인 헨리에타 랙스의 삶, 과학적 돌파구, 생명윤리에 미친 지대한 영향을 자세히 설명합니다."
 slug: "biography-henrietta-lacks"
 categories: ["biography"]

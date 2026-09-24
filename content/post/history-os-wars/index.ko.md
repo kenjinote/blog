@@ -1,5 +1,6 @@
 ---
 title: "OS 종교 전쟁의 전모: Windows, Mac, Linux가 엮어내는 기술과 철학의 투쟁사"
+date: "2026-09-24T19:44:38+09:00"
 description: "수십 년에 걸쳐 벌어진 'OS 종교 전쟁'. Windows, Mac, Linux 각각의 사상, 역사적 배경, 그리고 현대의 공존과 미래에 대해 철저하게 깊이 파헤쳐봅니다."
 slug: "history-os-wars"
 categories: ["history"]

@@ -1,5 +1,6 @@
 ---
 title: "Automata dan Teori Bahasa Formal: Di Balik Ekspresi Reguler dan Hierarki Chomsky"
+date: "2026-09-24T19:44:38+09:00"
 description: "Membahas lebih dalam tentang 'automata' dan 'teori bahasa formal' di balik ekspresi reguler dan kompilator bahasa pemrograman, dengan menyertakan Hierarki Chomsky."
 slug: automata-formal-language-theory
 date: 2026-09-21T02:35:46+09:00

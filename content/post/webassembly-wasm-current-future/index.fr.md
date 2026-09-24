@@ -1,5 +1,6 @@
 ---
 title: "Présent et avenir de WebAssembly (Wasm) : Comment C/Rust fonctionnent dans le navigateur"
+date: "2026-09-24T19:44:38+09:00"
 description: "Architecture de WebAssembly, processus de compilation, intégration avec JS, et possibilités en dehors du navigateur (WASI) : on vous explique tout sur Wasm."
 slug: "webassembly-wasm-current-future"
 date: 2026-09-20T17:10:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: "Diofanto: El Padre del Álgebra y su Gran Legado"
+date: "2026-09-24T19:44:38+09:00"
 description: "Una explicación detallada de la vida del antiguo matemático griego Diofanto, su obra maestra 'Arithmetica', las ecuaciones diofánticas y el misterio oculto en su epitafio."
 slug: "diophantus"
 date: 2026-09-20T18:40:00+09:00

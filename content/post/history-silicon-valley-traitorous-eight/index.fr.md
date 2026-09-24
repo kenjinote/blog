@@ -1,5 +1,6 @@
 ---
 title: "L'origine de la Silicon Valley : Le sanctuaire de l'innovation créé par les \"Huit Traîtres\""
+date: "2026-09-24T19:44:38+09:00"
 description: "La Silicon Valley est l'épicentre actuel de l'industrie informatique. Derrière sa naissance se cache un drame épique impliquant le déchaînement d'un génie et les huit jeunes ingénieurs qui se sont rebellés contre lui, connus sous le nom de \"Huit Traîtres\" (Traitorous Eight). Cet article explore leur parcours en profondeur."
 slug: "history-silicon-valley-traitorous-eight"
 categories: ["history"]

@@ -1,5 +1,6 @@
 ---
 title: 'Pour les débutants : Produits d''entretien recommandés et méthodes de soin pour les articles en cuir'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Articles en cuirのメンテナンス"
 date: 2024-10-30T00:31:46+09:00
 tags: ["produits en cuir", "loisir"]

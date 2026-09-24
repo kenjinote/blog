@@ -1,5 +1,6 @@
 ---
 title: "Algorithmes de recherche (Principes de la recherche linéaire, dichotomique et de la table de hachage)"
+date: "2026-09-24T19:44:38+09:00"
 description: "Algorithmes de recherche pour trouver une valeur cible dans des données. Nous expliquons les bases de la recherche linéaire et dichotomique, jusqu'aux principes de la table de hachage pour des recherches ultra-rapides."
 slug: "search-algorithms-linear-binary-hash-table-principles"
 date: 2026-09-22T02:00:00+09:00

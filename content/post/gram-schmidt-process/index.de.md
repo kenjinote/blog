@@ -1,5 +1,6 @@
 ---
 title: 'Gram-Schmidt-Verfahren: Ein Algorithmus zur Neuausrichtung verzerrter Basisvektoren in ordentliche, zueinander orthogonale Vektoren'
+date: "2026-09-24T19:44:38+09:00"
 description: 'Ein umfassender Leitfaden zum Gram-Schmidt-Orthogonalisierungsverfahren in der linearen Algebra, der geometrische Intuition, mathematische Formulierung, numerisch stabile modifizierte Versionen, Python-Implementierung und Anwendungen auf Polynomräume abdeckt.'
 slug: 'gram-schmidt-process'
 date: '2026-09-20T14:40:00+09:00'

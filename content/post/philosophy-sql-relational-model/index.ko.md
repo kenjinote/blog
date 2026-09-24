@@ -1,5 +1,6 @@
 ---
 title: "SQL과 관계형 모델: 에드거 F. 커드의 집합론적 접근의 심연과 철학"
+date: "2026-09-24T19:44:38+09:00"
 description: "SQL의 기초가 되는 관계형 모델과 커드의 집합론에 대해 깊이 파헤친다. 데이터베이스의 역사적 배경부터 수학적 기초, 그리고 현대 애플리케이션 설계에서의 철학적인 의미까지 상세히 해설하는 완전 보존판 장편 기사."
 slug: "philosophy-sql-relational-model"
 categories: ["philosophy"]

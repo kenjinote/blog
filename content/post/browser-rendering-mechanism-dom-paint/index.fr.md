@@ -1,5 +1,6 @@
 ---
 title: "Mécanisme de rendu du navigateur : Anatomie complète de l'arbre DOM jusqu'au Paint"
+date: "2026-09-24T19:44:38+09:00"
 description: "Anatomie complète du mécanisme du moteur de rendu (Blink, WebKit, etc.) du moment où le navigateur charge le HTML/CSS/JS jusqu'au dessin des pixels à l'écran."
 slug: "browser-rendering-mechanism-dom-paint"
 date: 2026-09-20T17:10:00+09:00

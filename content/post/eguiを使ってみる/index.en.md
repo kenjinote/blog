@@ -1,5 +1,6 @@
 ---
 title: 'How to Start and Execute Samples of Rust''s Lightweight GUI Library ''egui'''
+date: "2026-09-24T19:44:38+09:00"
 slug: "eguiを使ってみる"
 date: 2023-03-18T10:27:02+09:00
 tags: ["rust", "egui", "GUI library"]

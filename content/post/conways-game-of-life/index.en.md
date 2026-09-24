@@ -1,5 +1,6 @@
 ---
 title: "Conway's Game of Life: A Cellular Automaton Where Life-Like Complexity Emerges from Simple Rules"
+date: "2026-09-24T19:44:38+09:00"
 description: "\"Conway's Game of Life\" is an incredible cellular automaton that produces life-like complex behaviors from just four simple rules. This article deeply explores its mathematical background, detailed rules, famous patterns, and implementation examples."
 slug: "conways-game-of-life"
 date: 2026-09-15T10:00:00+09:00

@@ -1,5 +1,6 @@
 ---
 title: "Teorema Ketidaklengkapan Gödel: Bukti Matematis dari 'Kebenaran yang Sama Sekali Tidak Dapat Dibuktikan'"
+date: "2026-09-24T19:44:38+09:00"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "Menjelaskan tentang teorema bersejarah yang menunjukkan batas matematika, yaitu Teorema Ketidaklengkapan Gödel, mengenai maknanya dan mekanisme pembuktiannya dengan cara yang mudah dipahami disertai contoh konkret dan ilustrasi."

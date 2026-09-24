@@ -1,5 +1,6 @@
 ---
 title: 'Ein Muss! Eine persönliche Film-TODO-Liste und Aufzeichnungen bereits gesehener empfohlener Werke'
+date: "2026-09-24T19:44:38+09:00"
 slug: "FilmTODOリスト"
 date: 2023-04-17T00:34:13+09:00
 tags: ["Filme", "TODO"]

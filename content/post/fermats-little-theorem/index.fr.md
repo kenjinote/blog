@@ -1,5 +1,6 @@
 ---
 title: "Le Petit Théorème de Fermat : La nature des nombres premiers et le fondement de la cryptographie moderne (RSA)"
+date: "2026-09-24T19:44:38+09:00"
 description: "Une explication détaillée du petit théorème de Fermat, de sa compréhension intuitive à sa démonstration mathématique, et de son application pratique dans la cryptographie RSA."
 slug: "fermats-little-theorem"
 date: 2026-09-20T15:00:00+09:00

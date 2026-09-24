@@ -1,5 +1,6 @@
 ---
 title: "The Open Source Revolution and \"The Cathedral and the Bazaar\": A Paradigm Shift That Changed the History of Software Development"
+date: "2026-09-24T19:44:38+09:00"
 description: "A detailed explanation of how \"The Cathedral and the Bazaar\" laid the foundation for modern open source software development, from its historical background to its impact on modern software engineering."
 slug: "history-open-source-revolution"
 categories: ["history"]

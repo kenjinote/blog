@@ -1,5 +1,6 @@
 ---
 title: "Teori Graf dan Algoritma Dijkstra & A*: Dasar Matematis dan Implementasi Pencarian Jalur"
+date: "2026-09-24T19:44:38+09:00"
 description: "Penjelasan mendalam mulai dari dasar teori graf, latar belakang matematis algoritma Dijkstra dan A* pada masalah jalur terpendek, struktur data, hingga implementasinya dalam Python."
 slug: graph-theory-dijkstra-a-star
 date: 2026-09-21T02:45:54+09:00

@@ -1,5 +1,6 @@
 ---
 title: "Graph Theory and Dijkstra / A* Algorithms: Mathematical Foundations and Implementation of Pathfinding"
+date: "2026-09-24T19:44:38+09:00"
 description: "A comprehensive guide starting from the basics of graph theory, covering the mathematical background, data structures, and Python implementations of Dijkstra's algorithm and the A* algorithm in shortest path problems."
 slug: graph-theory-dijkstra-a-star
 date: 2026-09-21T02:45:54+09:00

@@ -1,5 +1,6 @@
 ---
 title: "Teorema Limit Pusat - Keajaiban Bahwa Data Apa Pun Mendekati Distribusi Normal Saat Dijumlahkan"
+date: "2026-09-24T19:44:38+09:00"
 description: "Penjelasan terperinci tentang Teorema Limit Pusat, salah satu teorema paling penting dalam statistik, dari pemahaman intuitif hingga bukti matematika dan simulasi dengan Python."
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"

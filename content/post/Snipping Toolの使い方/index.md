@@ -1,5 +1,6 @@
 ---
 title: 'Windows標準「Snipping Tool」の使い方と画面録画・キャプチャ方法'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Snipping Toolの使い方"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "画像", "動画", "スクリーンショット", "録画", "キャプチャー"]

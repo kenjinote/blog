@@ -1,5 +1,6 @@
 ---
 title: "サーバーレスアーキテクチャの光と影：AWS Lambdaの裏側とコールドスタート"
+date: "2026-09-24T19:44:38+09:00"
 description: "サーバーレスのメリットだけでなく、背後で動くコンテナの仕組み、コールドスタート問題とその対策（SnapStartなど）を深く掘り下げます。"
 slug: "serverless-architecture-aws-lambda-cold-start"
 date: 2026-09-21T09:00:00+09:00

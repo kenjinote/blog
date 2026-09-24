@@ -1,5 +1,6 @@
 ---
 title: "Docker और कंटेनर तकनीक को पूरी तरह समझना: Namespace, cgroups से लेकर इमेज लेयर्स तक"
+date: "2026-09-24T19:44:38+09:00"
 description: "केवल एक टूल के रूप में उपयोग से परे, Linux कर्नेल के कार्यों (Namespace, cgroups, OverlayFS) का उपयोग करके कंटेनरों के पीछे के तंत्र का गहन विश्लेषण।"
 slug: "docker-container-namespace-cgroups-layers"
 date: 2026-09-21T09:00:00+09:00

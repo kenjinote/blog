@@ -1,5 +1,6 @@
 ---
 title: "O código que levou a humanidade à Lua: Margaret Hamilton e a engenharia de software da Apollo 11"
+date: "2026-09-24T19:44:38+09:00"
 description: "A Apollo 11, que realizou o primeiro pouso lunar tripulado em 1969, teve sucesso graças ao software robusto desenvolvido por Margaret Hamilton e sua equipe. Exploramos suas conquistas, que estabeleceram as bases da engenharia de software moderna, e os detalhes do código-fonte do Apollo Guidance Computer (AGC)."
 slug: "history-apollo-11-margaret-hamilton"
 categories: ["history"]

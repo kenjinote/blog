@@ -1,5 +1,6 @@
 ---
 title: 'Daftar Rangkuman Rekomendasi Saham dengan Dividen Tinggi yang Unggul di Jepang'
+date: "2026-09-24T19:44:38+09:00"
 slug: "高配当Sahamまとめ"
 date: 2024-12-22T00:56:14+09:00
 tags: ["Saham"]

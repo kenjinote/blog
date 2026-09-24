@@ -1,5 +1,6 @@
 ---
 title: "Srinivasa Ramanujan: El mago indio que tejió la intuición y el infinito"
+date: "2026-09-24T19:44:38+09:00"
 description: "Descubrió numerosas fórmulas matemáticas desconocidas basándose únicamente en la intuición. Explicamos detalladamente la vida y obra del genio matemático Srinivasa Ramanujan, conocido como el \"Mago de la India\", y su profundo impacto en las matemáticas modernas."
 slug: "biography-srinivasa-ramanujan"
 categories: ["biography"]

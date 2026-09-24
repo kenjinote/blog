@@ -1,5 +1,6 @@
 ---
 title: "Alexander Grothendieck: Leben und Werk des größten Mathematikers des 20. Jahrhunderts"
+date: "2026-09-24T19:44:38+09:00"
 description: "Eine detaillierte Erklärung des außergewöhnlichen Lebens und der revolutionären Errungenschaften in der algebraischen Geometrie von Alexander Grothendieck. Wir beleuchten, wie seine Philosophie die moderne Mathematik prägte."
 slug: "grothendieck"
 date: 2026-09-20T20:30:00+09:00

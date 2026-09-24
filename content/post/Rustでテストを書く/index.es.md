@@ -3,6 +3,7 @@
 
 
 title: 'Introducción a cómo escribir y ejecutar pruebas en Rust (cargo test)'
+date: "2026-09-24T19:44:38+09:00"
 slug: "RustでPruebaを書く"
 date: 2022-10-01T02:00:59+09:00
 tags: ["Rust","Pruebas"]

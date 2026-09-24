@@ -4,6 +4,7 @@
 
 
 title: 'Salesforce 개발이 순조로워진다! 추천 Chrome 확장 프로그램 정리'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Salesforce추천Chrome 확장"
 date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Chrome 확장 프로그램"]

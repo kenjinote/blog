@@ -1,5 +1,6 @@
 ---
 title: 'Salesforce開発が捗る！おすすめのChrome拡張機能まとめ'
+date: "2026-09-24T19:44:38+09:00"
 slug: "SalesforceおすすめChrome拡張"
 date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Chrome拡張"]

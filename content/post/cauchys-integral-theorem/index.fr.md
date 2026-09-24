@@ -1,5 +1,6 @@
 ---
 title: 'Théorème Intégral de Cauchy : La Magnifique Fondation de l''Analyse Complexe Où les Intégrales Disparaissent'
+date: "2026-09-24T19:44:38+09:00"
 description: 'Une explication détaillée du théorème intégral de Cauchy, l''un des théorèmes les plus importants en analyse complexe, de sa signification intuitive à une esquisse de sa preuve à l''aide du théorème de Green et son application à la formule intégrale.'
 slug: 'cauchys-integral-theorem'
 date: 2026-09-20T14:30:00+09:00

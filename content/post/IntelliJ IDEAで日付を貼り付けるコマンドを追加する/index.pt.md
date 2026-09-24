@@ -1,5 +1,6 @@
 ---
 title: 'Como Criar um Atalho para Inserir a Data Atual no IntelliJ IDEA'
+date: "2026-09-24T19:44:38+09:00"
 slug: "IntelliJ IDEAでDataを貼り付けるComandoを追加する"
 date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]

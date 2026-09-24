@@ -1,5 +1,6 @@
 ---
 title: "[Brain in a Vat and Simulation Hypothesis] Is Our Reality Real?"
+date: "2026-09-24T19:44:38+09:00"
 description: "An in-depth exploration of the 'Brain in a Vat' thought experiment and the Simulation Hypothesis from the perspectives of philosophy, quantum mechanics, and information theory. Is the world we live in reality, or a highly advanced virtual reality? A detailed reflection on humanity's ultimate question."
 slug: "paradox-brain-in-a-vat"
 categories: ["philosophy"]

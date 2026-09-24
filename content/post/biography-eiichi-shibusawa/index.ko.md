@@ -1,5 +1,6 @@
 ---
 title: "일본 자본주의의 아버지 시부사와 에이이치: 도덕과 경제의 합일을 목표로 한 생애"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T20:59:57+09:00
 categories: ["biography"]
 tags: ["eiichi-shibusawa", "history"]

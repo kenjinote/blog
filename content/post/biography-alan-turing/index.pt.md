@@ -1,5 +1,6 @@
 ---
 title: "Alan Turing: O Pai da IA e seu Fim Trágico"
+date: "2026-09-24T19:44:38+09:00"
 description: "Aprofundaremos detalhadamente a vida, as conquistas e o legado de Alan Turing, um matemático genial que lançou as bases da ciência da computação moderna e da inteligência artificial, mas que sofreu um fim trágico à mercê de sua época."
 slug: "biography-alan-turing"
 categories: ["biography"]

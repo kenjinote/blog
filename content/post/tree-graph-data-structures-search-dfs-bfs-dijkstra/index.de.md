@@ -1,5 +1,6 @@
 ---
 title: "Erkundung von Baum- und Graphendatenstrukturen (DFS, BFS, Dijkstra-Algorithmus)"
+date: "2026-09-24T19:44:38+09:00"
 description: "Baum- und Graphenstrukturen zur Darstellung komplexer Datenbeziehungen. Eine umfassende Erklärung der Tiefensuche (DFS), der Breitensuche (BFS) und des Kürzeste-Wege-Problems (Dijkstra-Algorithmus)."
 slug: "tree-graph-data-structures-search-dfs-bfs-dijkstra"
 date: 2026-09-22T03:00:00+09:00

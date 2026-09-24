@@ -1,5 +1,6 @@
 ---
 title: "IaC (Infrastructure as Code)とTerraform：宣言的構成管理の哲学"
+date: "2026-09-24T19:44:38+09:00"
 description: "インフラをコードで管理するIaCの重要性と、Terraformが採用する宣言的アプローチの利点。状態管理（State）の仕組みとベストプラクティスを解説します。"
 slug: "iac-infrastructure-as-code-terraform"
 date: 2026-09-21T09:00:00+09:00

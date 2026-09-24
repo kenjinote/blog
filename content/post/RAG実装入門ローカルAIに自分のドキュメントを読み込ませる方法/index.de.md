@@ -1,5 +1,6 @@
 ---
 title: '【RAG Implementierungsleitfaden】Wie Sie einer lokalen KI Ihre eigenen Dokumente beibringen'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'rag-local-ai-implementation-guide'
 date: '2026-09-11T13:00:00+09:00'
 image: 'img/eyecatch.jpg'

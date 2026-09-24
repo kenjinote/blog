@@ -1,5 +1,6 @@
 ---
 title: "루트비히 비트겐슈타인: 침묵과 일상 사이에 살았던 천재 철학자"
+date: "2026-09-24T19:44:38+09:00"
 date: 2026-09-23T19:53:31+09:00
 categories: ["biography"]
 tags: ["ludwig-wittgenstein", "history"]

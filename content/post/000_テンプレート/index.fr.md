@@ -1,5 +1,6 @@
 ---
 title: '[Version Complète] Modèle de création d''article de blog ! Structure de titres optimisée pour le SEO et astuces de rédaction'
+date: "2026-09-24T19:44:38+09:00"
 slug: "000_Modèle"
 date: 2022-01-01T00:00:00+09:00
 tags: ["Tag 1", "Tag 2"]

@@ -1,5 +1,6 @@
 ---
 title: 'Handling Windows API (Win32) Safely and Modernly in C++'
+date: "2026-09-24T19:44:38+09:00"
 slug: 'modern-cpp-win32-api-safe-handling'
 date: '2026-09-12T06:00:00+09:00'
 image: 'img/eyecatch.jpg'

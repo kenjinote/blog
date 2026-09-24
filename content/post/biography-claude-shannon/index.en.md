@@ -1,5 +1,6 @@
 ---
 title: "Claude Shannon, Father of Information Theory: The Life and Work of the Genius Who Created the Digital Age"
+date: "2026-09-24T19:44:38+09:00"
 description: "Claude Shannon, the \"father of information theory\" who laid the foundation for modern digital communication and computers. From his application of Boolean algebra and the establishment of information theory, to his playful true face loving unicycles and juggling, we deeply explore the whole picture of this genius with detailed explanations."
 slug: "biography-claude-shannon"
 categories: ["biography"]

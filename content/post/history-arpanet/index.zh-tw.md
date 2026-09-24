@@ -1,5 +1,6 @@
 ---
 title: "網際網路之祖「ARPANET」：從冷戰時期軍事研究誕生、改變世界的網路全貌"
+date: "2026-09-24T19:44:38+09:00"
 description: "現代網際網路的直接起源 ARPANET。從封包交換技術的誕生、IMP 的開發、1969 年的歷史性通訊，到 TCP/IP 的進化，透過數千字的詳細解說，深入探討網際網路創世記的歷史。"
 slug: "history-arpanet"
 categories: ["history"]

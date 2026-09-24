@@ -1,5 +1,6 @@
 ---
 title: "Méthodes de Monte-Carlo et Las Vegas : les « meilleurs » algorithmes utilisant des nombres aléatoires"
+date: "2026-09-24T19:44:38+09:00"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "Nous expliquons la méthode de Monte-Carlo et celle de Las Vegas, deux algorithmes probabilistes représentatifs utilisant des nombres aléatoires. Nous en présentons des implémentations concrètes et résumons de façon claire leurs différences."

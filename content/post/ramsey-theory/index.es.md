@@ -1,5 +1,6 @@
 ---
 title: "Teoría de Ramsey: siempre surge el orden del desorden — Demostración de relaciones entre 6 personas con colores"
+date: "2026-09-24T19:44:38+09:00"
 description: "En cualquier grupo de 6 personas, siempre existen 3 que se conocen mutuamente o 3 que no se conocen entre sí. Demostramos el número de Ramsey R(3,3)=6 con diagramas a color, el contraejemplo para 5 personas, la verificación de las 32.768 configuraciones y sus aplicaciones a secuencias y redes."
 date: 2026-09-16T20:05:00+09:00
 image: "eyecatch.jpg"

@@ -1,5 +1,6 @@
 ---
 title: 'Buka Hidemaru Editor Seketika dengan Perintah ''hide''! Cara Pengaturan Praktis di Windows'
+date: "2026-09-24T19:44:38+09:00"
 slug: "Perintah「hide」でEditor Hidemaruを立ち上げる方法"
 date: 2024-03-29T23:45:37+09:00
 tags: ["perintah", "editor Hidemaru", "registry"]
