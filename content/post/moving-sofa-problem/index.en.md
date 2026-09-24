@@ -1,5 +1,5 @@
 ---
-title: "What is the largest sofa that can navigate a corner?: The depths of the unsolved geometric "Sofa Problem""
+title: "What is the largest sofa that can navigate a corner?: The depths of the unsolved geometric 'Sofa Problem'"
 description: "A deep dive into the Moving Sofa Problem..."
 date: "2026-09-25T02:00:00+09:00"
 categories: ["mathematics", "science"]

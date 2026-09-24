@@ -1,5 +1,5 @@
 ---
-title: "Was ist das größte Sofa, das um die Ecke passt?: Die Tiefen des ungelösten geometrischen "Sofa-Problems""
+title: "Was ist das größte Sofa, das um die Ecke passt?: Die Tiefen des ungelösten geometrischen 'Sofa-Problems'"
 description: "Ein tiefer Einblick in das Sofa-Problem..."
 date: "2026-09-25T02:00:00+09:00"
 categories: ["mathematics", "science"]

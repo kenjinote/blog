@@ -1,5 +1,5 @@
 ---
-title: "Quel est le plus grand canapé qui peut tourner un coin ?: Les profondeurs du problème géométrique non résolu du "problème du canapé""
+title: "Quel est le plus grand canapé qui peut tourner un coin ?: Les profondeurs du problème géométrique non résolu du 'problème du canapé'"
 description: "Une plongée profonde dans le problème du canapé..."
 date: "2026-09-25T02:00:00+09:00"
 categories: ["mathematics", "science"]

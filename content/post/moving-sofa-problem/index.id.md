@@ -1,5 +1,5 @@
 ---
-title: "Apa sofa terbesar yang bisa melewati sudut?: Kedalaman masalah geometris yang belum terpecahkan "Masalah Sofa""
+title: "Apa sofa terbesar yang bisa melewati sudut?: Kedalaman masalah geometris yang belum terpecahkan 'Masalah Sofa'"
 description: "Pandangan mendalam pada masalah sofa..."
 date: "2026-09-25T02:00:00+09:00"
 categories: ["mathematics", "science"]

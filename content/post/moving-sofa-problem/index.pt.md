@@ -1,5 +1,5 @@
 ---
-title: "Qual é o maior sofá que pode virar uma esquina?: As profundezas do problema geométrico não resolvido do "Problema do Sofá""
+title: "Qual é o maior sofá que pode virar uma esquina?: As profundezas do problema geométrico não resolvido do 'Problema do Sofá'"
 description: "Um mergulho profundo no problema do sofá..."
 date: "2026-09-25T02:00:00+09:00"
 categories: ["mathematics", "science"]

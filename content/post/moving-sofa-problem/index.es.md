@@ -1,5 +1,5 @@
 ---
-title: "¿Cuál es el sofá más grande que puede doblar una esquina?: Las profundidades del problema geométrico sin resolver del "Problema del sofá""
+title: "¿Cuál es el sofá más grande que puede doblar una esquina?: Las profundidades del problema geométrico sin resolver del 'Problema del sofá'"
 description: "Una mirada profunda al problema del sofá..."
 date: "2026-09-25T02:00:00+09:00"
 categories: ["mathematics", "science"]
