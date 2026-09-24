@@ -1,4 +1,4 @@
-+++
+---
 title: "【Prisoner's Dilemma】How Game Theory Exposes the Limits of Human Rationality and Cooperation"
 description: "A comprehensive guide to the 'Prisoner's Dilemma', game theory's representative paradox. We thoroughly explain the mechanism by which individual rational choices lead to the worst outcome for the whole, and its applications in business, international politics, and biology. Exploring the conditions for mutual cooperation through Tit-for-Tat strategies and evolutionary game theory."
 slug: "paradox-prisoners-dilemma"
@@ -6,7 +6,7 @@ categories: ["philosophy"]
 tags: ["game-theory", "prisoners-dilemma", "strategy"]
 image: "eyecatch.jpg"
 date: "2026-09-24T15:00:00+09:00"
-+++
+---
 
 # The Prisoner's Dilemma: The Ultimate Paradox Posed by Game Theory
 

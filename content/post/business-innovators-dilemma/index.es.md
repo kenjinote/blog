@@ -1,11 +1,11 @@
-+++
+---
 title: "【Guía Completa】¿Qué es el Dilema del Innovador? El mecanismo por el cual las empresas de excelencia fracasan ante la innovación disruptiva y estrategias para superarlo"
 description: "Analizamos en profundidad el \"Dilema del Innovador\" propuesto por Clayton Christensen: desde los mecanismos de la innovación disruptiva y las trampas en las que caen las empresas destacadas, hasta casos reales y estrategias para superarlo."
 slug: "business-innovators-dilemma"
 categories: ["business"]
 tags: ["innovators-dilemma", "innovation", "management"]
 image: "eyecatch.jpg"
-+++
+---
 
 ## Introducción: ¿Por qué fracasan las empresas que llevan a cabo una "gestión perfecta"?
 

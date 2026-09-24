@@ -1,11 +1,11 @@
-+++
+---
 title: "【完全解析】什么是创新者的窘境？优秀企业败给破坏性创新的机制与克服战略"
 description: "关于克莱顿·克里斯坦森提出的“创新者的窘境”，本文以数千字的篇幅，深入浅出地彻底剖析破坏性创新的机制、优秀企业陷入的陷阱，以及从具体案例到克服该窘境的战略。"
 slug: "business-innovators-dilemma"
 categories: ["business"]
 tags: ["innovators-dilemma", "innovation", "management"]
 image: "eyecatch.jpg"
-+++
+---
 
 ## 引言：为什么实施“完美经营”的企业会失败？
 

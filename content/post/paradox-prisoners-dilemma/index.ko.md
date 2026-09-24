@@ -1,4 +1,4 @@
-+++
+---
 title: "【죄수의 딜레마】게임 이론이 밝히는 인간 합리성과 협력의 한계"
 description: "게임 이론의 대표적 역설인 죄수의 딜레마. 개인의 합리적인 선택이 전체에게 최악의 결과를 초래하는 메커니즘부터 비즈니스, 국제 정치, 생물학에 이르기까지의 응용을 철저히 해설합니다. 팃포탯(Tit for Tat) 전략과 진화 게임 이론을 포함하여 우리가 협력하기 위한 조건을 탐구합니다."
 slug: "paradox-prisoners-dilemma"
@@ -6,7 +6,7 @@ categories: ["philosophy"]
 tags: ["game-theory", "prisoners-dilemma", "strategy"]
 image: "eyecatch.jpg"
 date: "2026-09-24T15:00:00+09:00"
-+++
+---
 
 # 죄수의 딜레마(Prisoner's Dilemma): 게임 이론이 제시하는 궁극의 역설
 

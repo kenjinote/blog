@@ -1,11 +1,11 @@
-+++
+---
 title: "【Guia Completo】O que é o Dilema do Inovador? O mecanismo pelo qual excelentes empresas perdem para a inovação disruptiva e estratégias para superá-lo"
 description: "Explicamos profundamente, em milhares de palavras, \"O Dilema do Inovador\" proposto por Clayton Christensen, desde os mecanismos da inovação disruptiva, as armadilhas em que empresas excelentes caem, até estudos de caso específicos e estratégias para superação."
 slug: "business-innovators-dilemma"
 categories: ["business"]
 tags: ["innovators-dilemma", "innovation", "management"]
 image: "eyecatch.jpg"
-+++
+---
 
 ## Introdução: Por que empresas com "gestão perfeita" fracassam?
 

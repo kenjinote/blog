@@ -1,4 +1,4 @@
-+++
+---
 title: "【囚徒困境】賽局理論揭示的人類理性與合作的局限"
 description: "全面解讀賽局理論代表性悖論「囚徒困境」。從個人理性選擇導致集體最壞結果的機制，到其在商業、國際政治和生物學中的應用。結合一報還一報策略和演化賽局理論，探索我們相互合作的條件。"
 slug: "paradox-prisoners-dilemma"
@@ -6,7 +6,7 @@ categories: ["philosophy"]
 tags: ["game-theory", "prisoners-dilemma", "strategy"]
 image: "eyecatch.jpg"
 date: "2026-09-24T15:00:00+09:00"
-+++
+---
 
 # 囚徒困境（Prisoner's Dilemma）：賽局理論提出的終極悖論
 

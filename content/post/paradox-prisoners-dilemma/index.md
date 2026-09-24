@@ -1,4 +1,4 @@
-+++
+---
 title: "【囚人のジレンマ】ゲーム理論が暴く、人間の合理性と協力の限界"
 description: "ゲーム理論の代表的パラドックス「囚人のジレンマ」。個人の合理的な選択が全体にとって最悪の結果を招くメカニズムから、ビジネス、国際政治、生物学への応用までを徹底解説。しっぺ返し戦略や進化ゲーム理論も交え、私たちが協力し合うための条件を探求します。"
 slug: "paradox-prisoners-dilemma"
@@ -6,7 +6,7 @@ categories: ["philosophy"]
 tags: ["game-theory", "prisoners-dilemma", "strategy"]
 image: "eyecatch.jpg"
 date: "2026-09-24T15:00:00+09:00"
-+++
+---
 
 # 囚人のジレンマ（Prisoner's Dilemma）：ゲーム理論が突きつける究極のパラドックス
 

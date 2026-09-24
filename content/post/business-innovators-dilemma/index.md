@@ -1,11 +1,11 @@
-+++
+---
 title: "【完全解説】イノベーターのジレンマとは？優良企業が破壊的イノベーションに敗れるメカニズムと克服の戦略"
 description: "クレイトン・クリステンセンが提唱した「イノベーターのジレンマ」について、破壊的イノベーションのメカニズム、優良企業が陥る罠、具体的な事例から克服のための戦略まで、数千文字のボリュームで徹底的に深掘り解説します。"
 slug: "business-innovators-dilemma"
 categories: ["business"]
 tags: ["innovators-dilemma", "innovation", "management"]
 image: "eyecatch.jpg"
-+++
+---
 
 ## はじめに：なぜ「完璧な経営」を行っている企業が失敗するのか？
 

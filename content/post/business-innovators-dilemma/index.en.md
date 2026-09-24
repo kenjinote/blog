@@ -1,11 +1,11 @@
-+++
+---
 title: "[Complete Guide] What is the Innovator's Dilemma? Mechanisms of Excellent Companies Losing to Disruptive Innovation and Strategies to Overcome It"
 description: "A comprehensive deep dive into the \"Innovator's Dilemma\" proposed by Clayton Christensen. We thoroughly explain the mechanisms of disruptive innovation, the traps that excellent companies fall into, and strategies to overcome them using concrete examples."
 slug: "business-innovators-dilemma"
 categories: ["business"]
 tags: ["innovators-dilemma", "innovation", "management"]
 image: "eyecatch.jpg"
-+++
+---
 
 ## Introduction: Why do companies practicing "perfect management" fail?
 

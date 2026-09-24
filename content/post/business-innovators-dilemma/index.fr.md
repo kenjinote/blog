@@ -1,11 +1,11 @@
-+++
+---
 title: "[Guide Complet] Qu'est-ce que le dilemme de l'innovateur ? Le mécanisme par lequel les grandes entreprises succombent à l'innovation de rupture et les stratégies pour le surmonter"
 description: "Une exploration approfondie du « dilemme de l'innovateur » proposé par Clayton Christensen : le mécanisme de l'innovation de rupture, les pièges dans lesquels tombent les grandes entreprises, des études de cas concrètes et les stratégies pour le surmonter."
 slug: "business-innovators-dilemma"
 categories: ["business"]
 tags: ["innovators-dilemma", "innovation", "management"]
 image: "eyecatch.jpg"
-+++
+---
 
 ## Introduction : Pourquoi les entreprises ayant une « gestion parfaite » échouent-elles ?
 

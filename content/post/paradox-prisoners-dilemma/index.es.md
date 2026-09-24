@@ -1,4 +1,4 @@
-+++
+---
 title: "【El Dilema del Prisionero】Cómo la teoría de juegos revela los límites de la racionalidad humana y la cooperación"
 description: "\"El dilema del prisionero\", una paradoja representativa de la teoría de juegos. Una explicación exhaustiva de cómo las elecciones racionales individuales conducen al peor resultado general, y sus aplicaciones en los negocios, la política internacional y la biología. Exploramos las condiciones para la cooperación a través de la estrategia de \"toma y daca\" (Tit for Tat) y la teoría de juegos evolutivos."
 slug: "paradox-prisoners-dilemma"
@@ -6,7 +6,7 @@ categories: ["philosophy"]
 tags: ["game-theory", "prisoners-dilemma", "strategy"]
 image: "eyecatch.jpg"
 date: "2026-09-24T15:00:00+09:00"
-+++
+---
 
 # El Dilema del Prisionero (Prisoner's Dilemma): La paradoja definitiva planteada por la teoría de juegos
 

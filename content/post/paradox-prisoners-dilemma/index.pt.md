@@ -1,4 +1,4 @@
-+++
+---
 title: "[O Dilema do Prisioneiro] A teoria dos jogos revela os limites da racionalidade humana e da cooperação"
 description: "O \"Dilema do Prisioneiro\", um paradoxo representativo da teoria dos jogos. Uma explicação profunda de como a escolha racional de um indivíduo leva ao pior resultado para o todo, com aplicações nos negócios, política internacional e biologia. Exploraremos as condições para cooperarmos uns com os outros, incluindo a estratégia de retaliação e a teoria dos jogos evolutiva."
 slug: "paradox-prisoners-dilemma"
@@ -6,7 +6,7 @@ categories: ["philosophy"]
 tags: ["game-theory", "prisoners-dilemma", "strategy"]
 image: "eyecatch.jpg"
 date: "2026-09-24T15:00:00+09:00"
-+++
+---
 
 # O Dilema do Prisioneiro (Prisoner's Dilemma): O paradoxo supremo da teoria dos jogos
 

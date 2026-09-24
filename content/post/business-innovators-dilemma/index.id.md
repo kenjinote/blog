@@ -1,11 +1,11 @@
-+++
+---
 title: "[Panduan Lengkap] Apa itu Dilema Inovator? Mekanisme Perusahaan Unggulan Kalah oleh Inovasi Destruktif dan Strategi Mengatasinya"
 description: "Mengenai \"Dilema Inovator\" yang dikemukakan oleh Clayton Christensen, kami membahas secara mendalam mekanisme inovasi disruptif, jebakan yang menjerat perusahaan unggulan, serta strategi mengatasinya melalui studi kasus nyata dalam volume ribuan kata."
 slug: "business-innovators-dilemma"
 categories: ["business"]
 tags: ["innovators-dilemma", "innovation", "management"]
 image: "eyecatch.jpg"
-+++
+---
 
 ## Pendahuluan: Mengapa Perusahaan yang Menjalankan "Manajemen Sempurna" Bisa Gagal?
 

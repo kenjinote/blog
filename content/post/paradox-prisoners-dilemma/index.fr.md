@@ -1,4 +1,4 @@
-+++
+---
 title: "[Le dilemme du prisonnier] La théorie des jeux révèle les limites de la rationalité humaine et de la coopération"
 description: "Le paradoxe représentatif de la théorie des jeux, le \"dilemme du prisonnier\". Une explication approfondie de la façon dont le choix rationnel d'un individu conduit au pire résultat pour l'ensemble, avec des applications dans les affaires, la politique internationale et la biologie. Nous explorons les conditions de notre coopération en abordant la stratégie du tac au tac et la théorie des jeux évolutionniste."
 slug: "paradox-prisoners-dilemma"
@@ -6,7 +6,7 @@ categories: ["philosophy"]
 tags: ["game-theory", "prisoners-dilemma", "strategy"]
 image: "eyecatch.jpg"
 date: "2026-09-24T15:00:00+09:00"
-+++
+---
 
 # Le dilemme du prisonnier (Prisoner's Dilemma) : Le paradoxe ultime posé par la théorie des jeux
 

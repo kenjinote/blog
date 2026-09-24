@@ -1,4 +1,4 @@
-+++
+---
 title: "【囚徒困境】博弈论揭示的人类理性与合作的局限"
 description: "全面解读博弈论代表性悖论“囚徒困境”。从个人理性选择导致集体最坏结果的机制，到其在商业、国际政治和生物学中的应用。结合一报还一报策略和演化博弈论，探索我们相互合作的条件。"
 slug: "paradox-prisoners-dilemma"
@@ -6,7 +6,7 @@ categories: ["philosophy"]
 tags: ["game-theory", "prisoners-dilemma", "strategy"]
 image: "eyecatch.jpg"
 date: "2026-09-24T15:00:00+09:00"
-+++
+---
 
 # 囚徒困境（Prisoner's Dilemma）：博弈论提出的终极悖论
 

@@ -1,4 +1,4 @@
-+++
+---
 title: "【Gefangenendilemma】Wie die Spieltheorie die Grenzen menschlicher Rationalität und Kooperation aufdeckt"
 description: "Das Gefangenendilemma, ein repräsentatives Paradoxon der Spieltheorie. Eine gründliche Erklärung des Mechanismus, durch den rationale individuelle Entscheidungen zum schlechtesten Gesamtergebnis führen, mit Anwendungen in Wirtschaft, internationaler Politik und Biologie. Wir untersuchen die Bedingungen für unsere Kooperation, einschließlich der Tit-for-Tat-Strategie und der evolutionären Spieltheorie."
 slug: "paradox-prisoners-dilemma"
@@ -6,7 +6,7 @@ categories: ["philosophy"]
 tags: ["game-theory", "prisoners-dilemma", "strategy"]
 image: "eyecatch.jpg"
 date: "2026-09-24T15:00:00+09:00"
-+++
+---
 
 # Das Gefangenendilemma (Prisoner's Dilemma): Das ultimative Paradoxon der Spieltheorie
 

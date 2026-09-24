@@ -1,4 +1,4 @@
-+++
+---
 title: "【Dilema Tahanan】Bagaimana Teori Permainan Mengungkap Batas Rasionalitas dan Kerja Sama Manusia"
 description: "Dilema Tahanan, paradoks perwakilan dari teori permainan. Penjelasan menyeluruh tentang mekanisme di mana pilihan rasional individu menyebabkan hasil terburuk bagi keseluruhan, dengan aplikasi dalam bisnis, politik internasional, dan biologi. Menjelajahi kondisi bagi kita untuk bekerja sama, termasuk strategi tit-for-tat dan teori permainan evolusioner."
 slug: "paradox-prisoners-dilemma"
@@ -6,7 +6,7 @@ categories: ["philosophy"]
 tags: ["game-theory", "prisoners-dilemma", "strategy"]
 image: "eyecatch.jpg"
 date: "2026-09-24T15:00:00+09:00"
-+++
+---
 
 # Dilema Tahanan (Prisoner's Dilemma): Paradoks Utama dari Teori Permainan
 
