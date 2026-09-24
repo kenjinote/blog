@@ -1964,8 +1964,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->|"State"|x⟩ | QFT["QFT† (Inverse Quantum Fourier Transform)"]
-    Uf -->|"State"|a^x mod N⟩ | Discard["Do not observe (Entangle with environment)"]
+    Uf -- "State |x⟩" --> QFT["QFT† (Inverse Quantum Fourier Transform)"]
+    Uf -- "State |a^x mod N⟩" --> Discard["Do not observe (Entangle with environment)"]
 
     QFT --> Measure["Measure (k)"]
     Measure --> Classical["Classical post-processing by continued fraction expansion (Derivation of r)"]

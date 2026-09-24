@@ -1964,8 +1964,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->|"Zustand"|x⟩ | QFT["QFT† (Inverse Quanten-Fouriertransformation)"]
-    Uf -->|"Zustand"|a^x mod N⟩ | Discard["Nicht gemessen (Mit Umgebung verschränkt)"]
+    Uf -- "Zustand |x⟩" --> QFT["QFT† (Inverse Quanten-Fouriertransformation)"]
+    Uf -- "Zustand |a^x mod N⟩" --> Discard["Nicht gemessen (Mit Umgebung verschränkt)"]
 
     QFT --> Measure["Messung (k)"]
     Measure --> Classical["Klassische Nachbearbeitung durch Kettenbruchentwicklung (Ableitung von r)"]

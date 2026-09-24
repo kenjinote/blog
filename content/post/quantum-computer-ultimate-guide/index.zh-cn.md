@@ -1963,8 +1963,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->|"状态"|x⟩ | QFT["QFT† (逆量子傅里叶变换)"]
-    Uf -->|"状态"|a^x mod N⟩ | Discard["不进行观测 (与环境纠缠)"]
+    Uf -- "状态 |x⟩" --> QFT["QFT† (逆量子傅里叶变换)"]
+    Uf -- "状态 |a^x mod N⟩" --> Discard["不进行观测 (与环境纠缠)"]
 
     QFT --> Measure["测量 (k)"]
     Measure --> Classical["利用连分数展开进行经典后处理 (推导 r)"]

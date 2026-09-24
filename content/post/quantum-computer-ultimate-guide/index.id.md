@@ -1963,8 +1963,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->|"Keadaan"|x⟩ | QFT["QFT† (Invers Transformasi Fourier Kuantum)"]
-    Uf -->|"Keadaan"|a^x mod N⟩ | Discard["Tidak diukur (Terbelit dengan lingkungan)"]
+    Uf -- "Keadaan |x⟩" --> QFT["QFT† (Invers Transformasi Fourier Kuantum)"]
+    Uf -- "Keadaan |a^x mod N⟩" --> Discard["Tidak diukur (Terbelit dengan lingkungan)"]
 
     QFT --> Measure["Pengukuran (k)"]
     Measure --> Classical["Pemrosesan klasik melalui ekspansi pecahan berlanjut (Derivasi r)"]

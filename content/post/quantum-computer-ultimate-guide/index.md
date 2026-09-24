@@ -1963,8 +1963,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->|"状態"|x⟩ | QFT["QFT† (逆量子フーリエ変換)"]
-    Uf -->|"状態"|a^x mod N⟩ | Discard["観測せず (環境とエンタングル)"]
+    Uf -- "状態 |x⟩" --> QFT["QFT† (逆量子フーリエ変換)"]
+    Uf -- "状態 |a^x mod N⟩" --> Discard["観測せず (環境とエンタングル)"]
 
     QFT --> Measure["測定 (k)"]
     Measure --> Classical["連分数展開による古典的後処理 (r の導出)"]

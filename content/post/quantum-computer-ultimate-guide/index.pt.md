@@ -1964,8 +1964,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->|"Estado"|x⟩ | QFT["QFT† (Transformada de Fourier Quântica Inversa)"]
-    Uf -->|"Estado"|a^x mod N⟩ | Discard["Não observado (Emaranhado com o ambiente)"]
+    Uf -- "Estado |x⟩" --> QFT["QFT† (Transformada de Fourier Quântica Inversa)"]
+    Uf -- "Estado |a^x mod N⟩" --> Discard["Não observado (Emaranhado com o ambiente)"]
 
     QFT --> Measure["Medição (k)"]
     Measure --> Classical["Pós-processamento clássico por expansão em frações contínuas (Derivação de r)"]

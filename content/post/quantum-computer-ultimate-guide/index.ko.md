@@ -1963,8 +1963,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->|"상태"|x⟩ | QFT["QFT† (역양자 푸리에 변환)"]
-    Uf -->|"상태"|a^x mod N⟩ | Discard["관측하지 않음 (환경과 얽힘)"]
+    Uf -- "상태 |x⟩" --> QFT["QFT† (역양자 푸리에 변환)"]
+    Uf -- "상태 |a^x mod N⟩" --> Discard["관측하지 않음 (환경과 얽힘)"]
 
     QFT --> Measure["측정 (k)"]
     Measure --> Classical["연분수 전개를 통한 고전적 후처리 (r의 도출)"]
