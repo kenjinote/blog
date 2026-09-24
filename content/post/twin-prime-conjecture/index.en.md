@@ -2,7 +2,7 @@
 title = "Twin Prime Conjecture - Are There Infinitely Many Pairs of Primes with a Difference of 2?"
 description = "A detailed explanation of the Twin Prime Conjecture, an unsolved problem in mathematics, including its history, partial solutions, and the latest research trends."
 slug = "twin-prime-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date = "2026-09-24T16:08:36+09:00"
 image = "eyecatch.jpg"
 categories = ["mathematics"]
 tags = ["Prime Numbers", "Number Theory", "Unsolved Problems"]

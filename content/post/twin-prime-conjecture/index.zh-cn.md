@@ -2,7 +2,7 @@
 title = "孪生素数猜想（Twin Prime Conjecture） - 差为2的素数对是否无限存在？"
 description = "详细解说数学上的未解之谜——孪生素数猜想的历史、部分解答以及最新研究动向。"
 slug = "twin-prime-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date = "2026-09-24T16:08:36+09:00"
 image = "eyecatch.jpg"
 categories = ["mathematics"]
 tags = ["素数", "数论", "未解之谜"]

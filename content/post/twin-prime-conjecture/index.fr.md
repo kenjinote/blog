@@ -2,7 +2,7 @@
 title = "La Conjecture des Nombres Premiers Jumeaux (Twin Prime Conjecture) - Existe-t-il une infinité de paires de nombres premiers dont la différence est de 2 ?"
 description = "Nous expliquons en détail l'histoire, les résolutions partielles et les dernières tendances de recherche concernant la conjecture des nombres premiers jumeaux, un problème non résolu en mathématiques."
 slug = "twin-prime-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date = "2026-09-24T16:08:36+09:00"
 image = "eyecatch.jpg"
 categories = ["mathematics"]
 tags = ["Nombres Premiers", "Théorie des Nombres", "Problèmes Non Résolus"]

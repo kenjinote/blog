@@ -2,7 +2,7 @@
 title = "쌍둥이 소수 추측 (Twin Prime Conjecture) - 차이가 2인 소수의 쌍은 무한히 존재하는가"
 description = "수학상 미해결 문제인 쌍둥이 소수 추측에 대해, 그 역사, 부분적인 해결, 최신 연구 동향 등을 자세히 해설합니다."
 slug = "twin-prime-conjecture"
-date: "2026-09-24T16:08:36+09:00"
+date = "2026-09-24T16:08:36+09:00"
 image = "eyecatch.jpg"
 categories = ["mathematics"]
 tags = ["소수", "정수론", "미해결 문제"]

@@ -1,6 +1,6 @@
 +++
 title = "溫斯頓·邱吉爾：不屈的領導力與歷史足跡"
-date: "2026-09-24T16:08:36+09:00"
+date = "2026-09-24T16:08:36+09:00"
 categories = ["biography"]
 tags = ["winston-churchill", "history"]
 image = "eyecatch.jpg"
