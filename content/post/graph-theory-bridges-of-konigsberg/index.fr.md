@@ -17,9 +17,9 @@ Au 18ème siècle, dans la ville de Königsberg, située dans le royaume de Prus
 
 Tout le monde s'y essayait lors de promenades, mais personne ne réussissait. De plus, personne ne pouvait expliquer logiquement pourquoi c'était impossible. Connu sous le nom de "Problème des ponts de Königsberg", il a longtemps été considéré comme un puzzle non résolu.
 
-C'est l'éminent mathématicien **Leonhard Euler** qui a jeté une lumière mathématique entièrement nouvelle sur ce qui semblait être un simple jeu de ville. Son approche ne s'est pas limitée à trouver la réponse au puzzle, mais a fondé de vastes domaines mathématiques que l'on appelle aujourd'hui la "théorie des graphes" et la "topologie".
+C'est l'éminent mathématicien **[Leonhard Euler](/fr/p/euler/)** qui a jeté une lumière mathématique entièrement nouvelle sur ce qui semblait être un simple jeu de ville. Son approche ne s'est pas limitée à trouver la réponse au puzzle, mais a fondé de vastes domaines mathématiques que l'on appelle aujourd'hui la "[théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/)" et la "topologie".
 
-Cet article retrace le parcours fascinant depuis la formulation mathématique de la découverte historique d'Euler, jusqu'à la théorie moderne des réseaux et aux algorithmes de recherche d'itinéraire de navigation (algorithme de Dijkstra, algorithme de recherche A*) que nous utilisons quotidiennement.
+Cet article retrace le parcours fascinant depuis la formulation mathématique de la découverte historique d'Euler, jusqu'à la théorie moderne des réseaux et aux [algorithmes de recherche](/fr/p/search-algorithms-linear-binary-hash-table-principles/) d'itinéraire de navigation (algorithme de Dijkstra, algorithme de recherche A*) que nous utilisons quotidiennement.
 
 ---
 
@@ -51,7 +51,7 @@ Un modèle mathématique ainsi composé uniquement de points et de lignes est ap
 
 ## 3. Les conditions mathématiques d'un tracé continu : Cycle eulérien et chemin eulérien
 
-En termes de théorie des graphes, la question des habitants peut être reformulée ainsi :
+En termes de [théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/), la question des habitants peut être reformulée ainsi :
 **« Dans un graphe donné, existe-t-il un chemin qui traverse chaque arête exactement une fois et revient au sommet de départ (cycle eulérien : Eulerian Circuit) ? »**
 
 Pour répondre à ce problème, Euler a introduit un concept extrêmement simple et puissant : **« le degré d'un sommet (Degree) »**. Le degré d'un sommet est "le nombre d'arêtes qui lui sont connectées".
@@ -83,9 +83,9 @@ Vérifions maintenant les degrés du graphe de Königsberg.
 
 ## 4. L'évolution de la théorie des graphes : De la topologie à l'informatique
 
-Après la découverte d'Euler, la théorie des graphes s'est développée pour devenir une branche majeure des mathématiques. De nombreux problèmes difficiles, tels que le problème de coloration de cartes (théorème des quatre couleurs) et le problème du cycle hamiltonien (un chemin qui visite chaque sommet exactement une fois), ont été débattus sur la scène de la théorie des graphes.
+Après la découverte d'Euler, la [théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/) s'est développée pour devenir une branche majeure des mathématiques. De nombreux problèmes difficiles, tels que le problème de coloration de cartes ([théorème des quatre couleurs](/fr/p/four-color-theorem/)) et le problème du cycle hamiltonien (un chemin qui visite chaque sommet exactement une fois), ont été débattus sur la scène de la [théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/).
 
-Cependant, avec l'avènement des ordinateurs dans la seconde moitié du 20ème siècle, la théorie des graphes a dépassé le simple cadre mathématique pour devenir une arme puissante (algorithmes) permettant de résoudre des problèmes du monde réel. Le routage des réseaux de communication, l'analyse des relations sur les réseaux sociaux, l'optimisation des réseaux électriques et bien d'autres infrastructures de la société moderne reposent sur la théorie des graphes.
+Cependant, avec l'avènement des ordinateurs dans la seconde moitié du 20ème siècle, la [théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/) a dépassé le simple cadre mathématique pour devenir une arme puissante (algorithmes) permettant de résoudre des problèmes du monde réel. Le routage des réseaux de communication, l'analyse des relations sur les réseaux sociaux, l'optimisation des réseaux électriques et bien d'autres infrastructures de la société moderne reposent sur la [théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/).
 
 Le problème qui nous touche particulièrement dans notre vie quotidienne est le **problème du plus court chemin (Shortest Path Problem)**.
 Alors qu'Euler se demandait « s'il était possible d'emprunter tous les chemins une fois », ce que résolvent les GPS modernes ou Google Maps est la question : « quel est le parcours dont le coût (distance ou temps) jusqu'à la destination est le plus faible ? ».
@@ -98,7 +98,7 @@ Les algorithmes pour résoudre le problème du plus court chemin ont été affin
 
 ### 5.1 Algorithme de Dijkstra (Dijkstra's Algorithm)
 
-Conçu par Edsger Dijkstra en 1956, cet algorithme trouve la distance la plus courte d'un point de départ à tous les autres sommets dans un graphe où les arêtes ont un poids (coût en distance ou en temps).
+Conçu par [Edsger Dijkstra](/fr/p/biography-edsger-dijkstra/) en 1956, cet algorithme trouve la distance la plus courte d'un point de départ à tous les autres sommets dans un graphe où les arêtes ont un poids (coût en distance ou en temps).
 
 **【Principe de base】**
 1. Fixer la distance du point de départ à 0, et la distance provisoire de tous les autres sommets à l'infini ($\infty$).
@@ -124,7 +124,7 @@ Dans le cas d'un GPS, il est courant d'utiliser « la distance en ligne droite j
 
 ## 6. Traitement des graphes et recherche d'itinéraire en Python
 
-Dans la science des données et l'implémentation d'algorithmes modernes, la bibliothèque standard pour manipuler la théorie des graphes est **NetworkX** en Python.
+Dans la science des données et l'implémentation d'algorithmes modernes, la bibliothèque standard pour manipuler la [théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/) est **NetworkX** en Python.
 Voici un exemple de code utilisant NetworkX pour construire un graphe simple et rechercher un itinéraire avec l'algorithme de Dijkstra et l'algorithme A*.
 
 ```python
@@ -178,8 +178,8 @@ En exécutant ce code, vous pouvez confirmer que l'algorithme de Dijkstra et l'a
 
 ## 7. Épilogue : Les connexions façonnent le monde
 
-Le modeste puzzle auquel les habitants de Königsberg aimaient jouer, vu à travers les yeux du génie Leonhard Euler, s'est transformé en une nouvelle lentille pour appréhender le monde comme « un réseau de points et de lignes ».
+Le modeste puzzle auquel les habitants de Königsberg aimaient jouer, vu à travers les yeux du génie [Leonhard Euler](/fr/p/euler/), s'est transformé en une nouvelle lentille pour appréhender le monde comme « un réseau de points et de lignes ».
 
 Aujourd'hui, si nous pouvons charger instantanément une page web depuis un serveur lointain via Internet, ou si un GPS peut nous guider avec précision dans une zone inconnue, tout cela est le fruit de cette abstraction mathématique qui a commencé avec les vieux ponts de Prusse.
 
-À ce moment précis, la théorie des graphes continue d'être activement utilisée à la pointe de la science et de la technologie, qu'il s'agisse d'identifier des influenceurs sur les réseaux sociaux, de prédire les voies d'infection d'un virus ou de concevoir de nouveaux composés chimiques. En déchiffrant mathématiquement les « connexions », nous pouvons trouver un ordre magnifique et des solutions au sein d'un monde qui semble trop complexe.
+À ce moment précis, la [théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/) continue d'être activement utilisée à la pointe de la science et de la technologie, qu'il s'agisse d'identifier des influenceurs sur les réseaux sociaux, de prédire les voies d'infection d'un virus ou de concevoir de nouveaux composés chimiques. En déchiffrant mathématiquement les « connexions », nous pouvons trouver un ordre magnifique et des solutions au sein d'un monde qui semble trop complexe.

@@ -70,7 +70,7 @@ The security of RSA cryptography relies on the mathematical property that "prime
    Decrypt the ciphertext $C$ using the private key $(d, n)$ to return to the plaintext $M$.
    $$M \equiv C^d \pmod{n}$$
 
-According to "Euler's theorem," which generalizes Fermat's Little Theorem, it is mathematically proven that this decryption will always return to the original plaintext. It is considered impossible even for current supercomputers to calculate $p$ and $q$ from $n$ (prime factorization) within a realistic amount of time.
+According to "Euler's theorem," which generalizes [Fermat's Little Theorem](/en/p/fermats-little-theorem/), it is mathematically proven that this decryption will always return to the original plaintext. It is considered impossible even for current supercomputers to calculate $p$ and $q$ from $n$ (prime factorization) within a realistic amount of time.
 
 ### Simple Python Implementation of the RSA Algorithm
 

@@ -46,7 +46,7 @@ Se o perímetro de um polígono regular inscrito de $n$ lados for $p_n$, e o per
 
 $$ p_n < 2\pi < P_n $$
 
-Para calcular o comprimento dos lados de um polígono regular de $n$ lados, Arquimedes usou repetidamente teoremas geométricos equivalentes às funções trigonométricas modernas (teorema de Pitágoras e o teorema da bissetriz de um ângulo). Expressando isso em notação moderna, o comprimento de um lado do polígono regular inscrito de $n$ lados é $2 \sin(\pi/n)$, e o comprimento do lado do polígono regular circunscrito correspondente é $2 \tan(\pi/n)$. Portanto, usando o semiperímetro, temos:
+Para calcular o comprimento dos lados de um polígono regular de $n$ lados, Arquimedes usou repetidamente teoremas geométricos equivalentes às funções trigonométricas modernas (teorema de [Pitágoras](/pt/p/pythagoras/) e o teorema da bissetriz de um ângulo). Expressando isso em notação moderna, o comprimento de um lado do polígono regular inscrito de $n$ lados é $2 \sin(\pi/n)$, e o comprimento do lado do polígono regular circunscrito correspondente é $2 \tan(\pi/n)$. Portanto, usando o semiperímetro, temos:
 
 $$ n \sin\left(\frac{\pi}{n}\right) < \pi < n \tan\left(\frac{\pi}{n}\right) $$
 
@@ -110,7 +110,7 @@ No século XVII, com a descoberta do cálculo por Newton e Leibniz, os métodos 
 
 ## 3.1 Série de Gregory-Leibniz
 
-Foi a expansão em série infinita da função arco-tangente (arctan) que foi descoberta pelo matemático escocês James Gregory em 1671 e redescoberta independentemente pelo matemático alemão Gottfried Leibniz em 1674.
+Foi a expansão em série infinita da função arco-tangente (arctan) que foi descoberta pelo matemático escocês James Gregory em 1671 e redescoberta independentemente pelo matemático alemão [Gottfried Leibniz](/pt/p/leibniz/) em 1674.
 
 $$ \arctan(x) = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + \cdots = \sum_{k=0}^{\infty} \frac{(-1)^k x^{2k+1}}{2k+1} $$
 
@@ -270,7 +270,7 @@ Quando o código acima é executado, o Pi é calculado a uma velocidade inacredi
 
 Outro algoritmo inovador que não deve ser esquecido no cálculo do Pi é o "Algoritmo de Gauss-Legendre". Este método foi descoberto de forma independente por Richard Brent e Eugene Salamin em 1975.
 
-O alicerce deste algoritmo é a teoria da "Média Aritmético-Geométrica (AGM)" e as integrais elípticas, estudadas por Carl Friedrich Gauss.
+O alicerce deste algoritmo é a teoria da "Média Aritmético-Geométrica (AGM)" e as integrais elípticas, estudadas por [Carl Friedrich Gauss](/pt/p/gauss/).
 
 Dados dois números $a_0, b_0$, cria-se uma sequência de valores aplicando repetidamente a média aritmética (média aditiva) e a média geométrica (média multiplicativa), como segue:
 
@@ -331,6 +331,6 @@ if __name__ == '__main__':
 
 O cálculo do Pi, que começou com os polígonos desenhados na areia por matemáticos antigos, evoluiu para séries infinitas com as poderosas ferramentas do cálculo e, na atualidade, atingiu a precisão formidável de 100 trilhões de dígitos, valendo-se do poder de cálculo de supercomputadores e teorias matemáticas avançadas como as formas modulares e a média aritmético-geométrica.
 
-A corrida para calcular o Pi não é apenas um passatempo em busca de números. Os algoritmos e técnicas de computação desenvolvidos ali (como a multiplicação de números gigantescos usando divisão binária e a Transformada Rápida de Fourier) desempenham papéis vitais em uma ampla gama de campos, como a criptografia moderna, a análise numérica e a avaliação do desempenho de arquiteturas de computadores.
+A corrida para calcular o Pi não é apenas um passatempo em busca de números. Os algoritmos e técnicas de computação desenvolvidos ali (como a multiplicação de números gigantescos usando divisão binária e a [Transformada Rápida de Fourier](/pt/p/fast-fourier-transform-algorithm/)) desempenham papéis vitais em uma ampla gama de campos, como a criptografia moderna, a análise numérica e a avaliação do desempenho de arquiteturas de computadores.
 
 Como o Pi é um número irracional, a sequência dos seus dígitos nunca chegará ao fim. Enquanto houver sabedoria humana e o desenvolvimento dos computadores continuar, a jornada sem fim para calcular o Pi também nunca acabará.

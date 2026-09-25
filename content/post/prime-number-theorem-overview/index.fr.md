@@ -14,13 +14,13 @@ Les nombres premiers (Prime Numbers) sont des entiers naturels qui n'ont pas d'a
 
 Cependant, à première vue, aucun motif régulier ne se dégage de l'apparition des nombres premiers. Parfois, ils apparaissent de manière rapprochée comme les nombres premiers jumeaux 11 et 13, et d'autres fois, il existe des « déserts de nombres premiers » où le nombre premier suivant n'apparaît qu'après des milliers ou des dizaines de milliers de nombres. Cette stochasticité locale et cette imprévisibilité ont longtemps été un grand obstacle pour les mathématiciens.
 
-Malgré cela, il a été découvert qu'une loi incroyablement belle et lisse se cache dans leur comportement global, c'est-à-dire la proportion de nombres premiers dans l'ensemble des nombres. C'est le **Théorème des Nombres Premiers (Prime Number Theorem, PNT)** que nous allons expliquer dans cet article.
+Malgré cela, il a été découvert qu'une loi incroyablement belle et lisse se cache dans leur comportement global, c'est-à-dire la proportion de nombres premiers dans l'ensemble des nombres. C'est le **[Théorème des Nombres Premiers](/fr/p/prime-number-theorem/) ([Prime Number Theorem](/fr/p/prime-number-theorem/), PNT)** que nous allons expliquer dans cet article.
 
 ## 2. Qu'est-ce que le Théorème des Nombres Premiers ? La grande intuition de Gauss
 
-Le théorème des nombres premiers est un théorème qui décrit comment la quantité de nombres premiers inférieurs à un nombre réel donné $x$, notée $\pi(x)$, augmente à mesure que $x$ devient grand.
+Le [théorème des nombres premiers](/fr/p/prime-number-theorem/) est un théorème qui décrit comment la quantité de nombres premiers inférieurs à un nombre réel donné $x$, notée $\pi(x)$, augmente à mesure que $x$ devient grand.
 
-Exprimé mathématiquement, le théorème des nombres premiers s'énonce comme suit :
+Exprimé mathématiquement, le [théorème des nombres premiers](/fr/p/prime-number-theorem/) s'énonce comme suit :
 
 $$
 \lim_{x \to \infty} \frac{\pi(x)}{x / \ln(x)} = 1
@@ -30,7 +30,7 @@ Cela signifie que « le nombre de nombres premiers inférieurs ou égaux à $x$,
 
 ### La découverte de Gauss à l'âge de 15 ans
 
-La première personne à avoir remarqué ce fait surprenant fut le génie Carl Friedrich Gauss, alors âgé de seulement 15 ans. En 1792, Gauss a étudié assidûment les tables de logarithmes et de nombres premiers, et a observé la tendance de la densité des nombres premiers à diminuer de manière inversement proportionnelle au logarithme népérien. Il a conjecturé l'approximation suivante :
+La première personne à avoir remarqué ce fait surprenant fut le génie [Carl Friedrich Gauss](/fr/p/gauss/), alors âgé de seulement 15 ans. En 1792, Gauss a étudié assidûment les tables de logarithmes et de nombres premiers, et a observé la tendance de la densité des nombres premiers à diminuer de manière inversement proportionnelle au logarithme népérien. Il a conjecturé l'approximation suivante :
 
 $$
 \pi(x) \approx \operatorname{Li}(x) = \int_{2}^{x} \frac{dt}{\ln t}
@@ -48,11 +48,11 @@ $$
 0.92129 \frac{x}{\ln x} < \pi(x) < 1.10555 \frac{x}{\ln x}
 $$
 
-Tchebychev a également prouvé que si la limite de $\pi(x) / (x/\ln x)$ existe, elle doit nécessairement être égale à 1. Cependant, il n'est pas parvenu à démontrer l'existence de la limite elle-même (c'est-à-dire la preuve complète du théorème des nombres premiers).
+Tchebychev a également prouvé que si la limite de $\pi(x) / (x/\ln x)$ existe, elle doit nécessairement être égale à 1. Cependant, il n'est pas parvenu à démontrer l'existence de la limite elle-même (c'est-à-dire la preuve complète du [théorème des nombres premiers](/fr/p/prime-number-theorem/)).
 
 ## 4. La fonction zêta de Riemann et l'introduction de l'analyse complexe
 
-La plus grande percée vers la preuve du théorème des nombres premiers a été apportée par Bernhard Riemann. Dans son article révolutionnaire de 1859, « Sur le nombre de nombres premiers inférieurs à une taille donnée », Riemann a montré que la distribution des nombres premiers et le comportement des **fonctions complexes** sont profondément liés.
+La plus grande percée vers la preuve du [théorème des nombres premiers](/fr/p/prime-number-theorem/) a été apportée par [Bernhard Riemann](/fr/p/riemann/). Dans son article révolutionnaire de 1859, « Sur le nombre de nombres premiers inférieurs à une taille donnée », Riemann a montré que la distribution des nombres premiers et le comportement des **fonctions complexes** sont profondément liés.
 
 La fonction qu'il a utilisée est aujourd'hui appelée la **fonction zêta de Riemann**, notée $\zeta(s)$.
 
@@ -74,15 +74,15 @@ graph TD
 
 ## 5. La preuve complète par Hadamard et de La Vallée Poussin
 
-En 1896, environ 40 ans après l'approche révolutionnaire de Riemann, le Français Jacques Hadamard et le Belge Charles de La Vallée Poussin ont réussi, chacun indépendamment, à prouver complètement le théorème des nombres premiers.
+En 1896, environ 40 ans après l'approche révolutionnaire de Riemann, le Français Jacques Hadamard et le Belge Charles de La Vallée Poussin ont réussi, chacun indépendamment, à prouver complètement le [théorème des nombres premiers](/fr/p/prime-number-theorem/).
 
-Le cœur de leur preuve consistait à montrer que « la fonction zêta $\zeta(s)$ n'a pas de zéros sur la droite $\operatorname{Re}(s) = 1$ du plan complexe ». En utilisant des outils puissants de l'analyse complexe (comme le théorème intégral de Cauchy), l'absence de ces zéros permet de déduire le théorème des nombres premiers.
+Le cœur de leur preuve consistait à montrer que « la fonction zêta $\zeta(s)$ n'a pas de zéros sur la droite $\operatorname{Re}(s) = 1$ du plan complexe ». En utilisant des outils puissants de l'analyse complexe (comme le [théorème intégral de Cauchy](/fr/p/cauchys-integral-theorem/)), l'absence de ces zéros permet de déduire le [théorème des nombres premiers](/fr/p/prime-number-theorem/).
 
 Ainsi, la loi de la distribution asymptotique des nombres premiers que Gauss avait conjecturée à l'âge de 15 ans, a finalement été établie comme un véritable « théorème » mathématique après plus de 100 ans.
 
 ## 6. L'hypothèse de Riemann et le terme d'erreur du théorème des nombres premiers
 
-Même après la preuve du théorème des nombres premiers, l'exploration des nombres premiers n'est pas terminée. L'attention se porte actuellement sur la question de savoir « à quel point la différence (l'erreur) entre $\pi(x)$ et $\operatorname{Li}(x)$ est petite ».
+Même après la preuve du [théorème des nombres premiers](/fr/p/prime-number-theorem/), l'exploration des nombres premiers n'est pas terminée. L'attention se porte actuellement sur la question de savoir « à quel point la différence (l'erreur) entre $\pi(x)$ et $\operatorname{Li}(x)$ est petite ».
 
 De La Vallée Poussin a fourni l'évaluation suivante pour le terme d'erreur :
 
@@ -106,7 +106,7 @@ La théorie des nombres premiers ne se limite pas au monde des mathématiques pu
 
 Par exemple, le **chiffrement RSA**, qui permet les communications sécurisées sur Internet, tire parti de la propriété suivante : « il est facile de multiplier deux très grands nombres premiers, mais il est extrêmement difficile de factoriser leur produit pour retrouver les nombres premiers initiaux ».
 
-Pour générer une clé RSA, il est nécessaire de trouver rapidement d'énormes nombres premiers de plusieurs centaines de chiffres (des milliers de bits). C'est là que le théorème des nombres premiers joue un rôle crucial. Selon le théorème, la probabilité qu'un nombre autour de $N$ soit premier est de $1 / \ln(N)$. Par conséquent, si l'on choisit des nombres au hasard autour d'un nombre de 2048 bits (environ $10^{616}$), il suffit d'essayer environ $616 \times \ln(10) \approx 1418$ nombres pour trouver presque certainement un nombre premier. C'est l'existence même du théorème des nombres premiers qui garantit que l'algorithme de recherche de grands nombres premiers se termine dans un temps raisonnable.
+Pour générer une clé RSA, il est nécessaire de trouver rapidement d'énormes nombres premiers de plusieurs centaines de chiffres (des milliers de bits). C'est là que le [théorème des nombres premiers](/fr/p/prime-number-theorem/) joue un rôle crucial. Selon le théorème, la probabilité qu'un nombre autour de $N$ soit premier est de $1 / \ln(N)$. Par conséquent, si l'on choisit des nombres au hasard autour d'un nombre de 2048 bits (environ $10^{616}$), il suffit d'essayer environ $616 \times \ln(10) \approx 1418$ nombres pour trouver presque certainement un nombre premier. C'est l'existence même du [théorème des nombres premiers](/fr/p/prime-number-theorem/) qui garantit que l'algorithme de recherche de grands nombres premiers se termine dans un temps raisonnable.
 
 ### Test de primalité de Miller-Rabin
 
@@ -160,10 +160,10 @@ Cet algorithme est une extension du petit théorème de Fermat. La probabilité 
 
 ## 8. Conclusion : Les nombres premiers, comme code de l'univers
 
-Le théorème des nombres premiers illustre une philosophie profonde en mathématiques : « des éléments qui semblent totalement désordonnés à l'échelle individuelle produisent un ordre extrêmement raffiné lorsqu'ils sont considérés dans leur ensemble ».
+Le [théorème des nombres premiers](/fr/p/prime-number-theorem/) illustre une philosophie profonde en mathématiques : « des éléments qui semblent totalement désordonnés à l'échelle individuelle produisent un ordre extrêmement raffiné lorsqu'ils sont considérés dans leur ensemble ».
 
-Depuis l'intuition de Gauss, jusqu'à l'analyse assidue de Tchebychev, le bond vers le plan complexe de Riemann, et la preuve finale de Hadamard et de La Vallée Poussin, l'histoire du théorème des nombres premiers est véritablement celle de l'intelligence humaine.
+Depuis l'intuition de Gauss, jusqu'à l'analyse assidue de Tchebychev, le bond vers le plan complexe de Riemann, et la preuve finale de Hadamard et de La Vallée Poussin, l'histoire du [théorème des nombres premiers](/fr/p/prime-number-theorem/) est véritablement celle de l'intelligence humaine.
 
 Lorsque nous faisons des achats en toute sécurité sur Internet, des nombres premiers de plusieurs centaines de chiffres sont silencieusement calculés pour protéger nos informations. Les nombres premiers, dont les mathématiciens de la Grèce antique avaient commencé l'étude il y a des milliers d'années, ont évolué pour devenir aujourd'hui une technologie fondamentale soutenant l'infrastructure de la société moderne.
 
-Viendra-t-il un jour où la véritable nature cachée dans la distribution des nombres premiers (l'hypothèse de Riemann) sera complètement élucidée ? Le plus grand code que l'univers nous a laissé n'est toujours pas totalement déchiffré. Cependant, à travers la puissante lentille du théorème des nombres premiers, nous sommes indéniablement capables d'en saisir les belles lois qui s'y dessinent.
+Viendra-t-il un jour où la véritable nature cachée dans la distribution des nombres premiers (l'hypothèse de Riemann) sera complètement élucidée ? Le plus grand code que l'univers nous a laissé n'est toujours pas totalement déchiffré. Cependant, à travers la puissante lentille du [théorème des nombres premiers](/fr/p/prime-number-theorem/), nous sommes indéniablement capables d'en saisir les belles lois qui s'y dessinent.

@@ -70,7 +70,7 @@ La seguridad del cifrado RSA depende de la propiedad matemática de que "factori
    El texto cifrado $C$ se descifra utilizando la clave privada $(d, n)$ para devolverlo al texto plano $M$.
    $$M \equiv C^d \pmod{n}$$
 
-Por el "teorema de Euler", que generaliza el pequeño teorema de Fermat, está matemáticamente demostrado que este descifrado siempre devuelve el texto plano original. Encontrar $p$ y $q$ a partir de $n$ (factorizar) para un atacante se considera imposible en un tiempo práctico, incluso con las supercomputadoras actuales.
+Por el "teorema de Euler", que generaliza [el pequeño teorema de Fermat](/es/p/fermats-little-theorem/), está matemáticamente demostrado que este descifrado siempre devuelve el texto plano original. Encontrar $p$ y $q$ a partir de $n$ (factorizar) para un atacante se considera imposible en un tiempo práctico, incluso con las supercomputadoras actuales.
 
 ### Implementación simple del algoritmo RSA en Python
 

@@ -15,11 +15,11 @@ In the 18th century, the city of Königsberg in the Kingdom of Prussia (now Kali
 An intellectual game was popular among the residents of Königsberg at the time.
 **"Is it possible to start anywhere in the city, cross all seven bridges exactly once, and return to the starting point?"**
 
-Everyone tried their hand at it while taking a walk, but no one succeeded. However, no one could logically explain why it was impossible. This came to be known as the "Seven Bridges of Königsberg" problem and was treated as an unsolved puzzle for a long time.
+Everyone tried their hand at it while taking a walk, but no one succeeded. However, no one could logically explain why it was impossible. This came to be known as the "[Seven Bridges of Königsberg](/en/p/seven-bridges-of-konigsberg/)" problem and was treated as an unsolved puzzle for a long time.
 
-The person who shed a completely new mathematical light on what seemed like a mere town puzzle was the rare genius mathematician **Leonhard Euler**. His consideration went beyond simply finding an answer to the puzzle; it founded the huge mathematical fields later known as "Graph Theory" and "Topology."
+The person who shed a completely new mathematical light on what seemed like a mere town puzzle was the rare genius mathematician **[Leonhard Euler](/en/p/euler/)**. His consideration went beyond simply finding an answer to the puzzle; it founded the huge mathematical fields later known as "[Graph Theory](/en/p/graph-theory-dijkstra-a-star/)" and "Topology."
 
-In this article, we will trace the grand trajectory starting from the mathematical formulation of Euler's historical discovery to modern network theory and the route search algorithms (Dijkstra's algorithm, A* search algorithm) that we use in our car navigation systems daily.
+In this article, we will trace the grand trajectory starting from the mathematical formulation of Euler's historical discovery to modern network theory and the route [search algorithms](/en/p/search-algorithms-linear-binary-hash-table-principles/) (Dijkstra's algorithm, A* search algorithm) that we use in our car navigation systems daily.
 
 ---
 
@@ -51,7 +51,7 @@ A mathematical model composed only of points and lines in this way is called a *
 
 ## 3. Mathematical Conditions for Unicursal Drawing: Eulerian Circuits and Eulerian Paths
 
-In the language of graph theory, the residents' question can be rephrased as follows:
+In the language of [graph theory](/en/p/graph-theory-dijkstra-a-star/), the residents' question can be rephrased as follows:
 **"In a given graph, is there a path (Eulerian Circuit) that traverses every edge exactly once and returns to the starting vertex?"**
 
 For this problem, Euler introduced an extremely simple yet powerful concept called the **"Degree"** of a vertex. The degree of a vertex is "the number of edges connected to that vertex."
@@ -83,9 +83,9 @@ Surprisingly, the degrees of all four vertices are odd (odd vertices). Because i
 
 ## 4. Evolution of Graph Theory: From Topology to Computer Science
 
-Since Euler's discovery, graph theory has developed as an important field of mathematics. Numerous difficult problems, such as the map coloring problem (Four Color Theorem) and the Hamiltonian circuit problem (a path that passes through every vertex exactly once), have been discussed on the stage of graph theory.
+Since Euler's discovery, [graph theory](/en/p/graph-theory-dijkstra-a-star/) has developed as an important field of mathematics. Numerous difficult problems, such as the map coloring problem ([Four Color Theorem](/en/p/four-color-theorem/)) and the Hamiltonian circuit problem (a path that passes through every vertex exactly once), have been discussed on the stage of [graph theory](/en/p/graph-theory-dijkstra-a-star/).
 
-However, with the advent of computers in the late 20th century, graph theory went beyond the boundaries of mere mathematics and evolved into a powerful weapon (algorithm) for solving real-world problems. Much of modern social infrastructure, such as routing in communication networks, analyzing social networks in SNS, and optimizing power grids, is based on graph theory.
+However, with the advent of computers in the late 20th century, [graph theory](/en/p/graph-theory-dijkstra-a-star/) went beyond the boundaries of mere mathematics and evolved into a powerful weapon (algorithm) for solving real-world problems. Much of modern social infrastructure, such as routing in communication networks, analyzing social networks in SNS, and optimizing power grids, is based on [graph theory](/en/p/graph-theory-dijkstra-a-star/).
 
 What is particularly close to our lives is the **Shortest Path Problem**.
 Euler considered "Can we take every road exactly once?", but what modern car navigation systems and Google Maps are solving is the problem of "Which route to the destination has the lowest cost (distance or time)?"
@@ -124,7 +124,7 @@ In the case of a car navigation system, it is common to use the "straight-line d
 
 ## 6. Graph Processing and Route Search Execution with Python
 
-In modern data science and algorithm implementation, the standard library for handling graph theory is Python's **NetworkX**.
+In modern data science and algorithm implementation, the standard library for handling [graph theory](/en/p/graph-theory-dijkstra-a-star/) is Python's **NetworkX**.
 Here, we will introduce a code example that uses NetworkX to build a simple graph and performs route searching with Dijkstra's algorithm and the A* algorithm.
 
 ```python
@@ -178,8 +178,8 @@ Running this code confirms that both Dijkstra's algorithm and the A* search algo
 
 ## 7. Epilogue: Connections Shape the World
 
-The modest puzzle enjoyed by the residents of Königsberg, seen through the eyes of the genius Leonhard Euler, turned into a new lens for recapturing the world as "connections of points and lines."
+The modest puzzle enjoyed by the residents of Königsberg, seen through the eyes of the genius [Leonhard Euler](/en/p/euler/), turned into a new lens for recapturing the world as "connections of points and lines."
 
 Today, the fact that we can instantly load web pages from distant servers on the internet and that car navigation systems accurately guide us through unfamiliar lands are all thanks to the mathematical abstraction that started with that old bridge in Prussia.
 
-Graph theory continues to be active at this very moment in cutting-edge science and technology, such as identifying influencers on social media, predicting the infection routes of viruses, and designing new chemical compounds. By mathematically decoding "connections," we can find beautiful order and solutions in a seemingly overly complex world.
+[Graph theory](/en/p/graph-theory-dijkstra-a-star/) continues to be active at this very moment in cutting-edge science and technology, such as identifying influencers on social media, predicting the infection routes of viruses, and designing new chemical compounds. By mathematically decoding "connections," we can find beautiful order and solutions in a seemingly overly complex world.

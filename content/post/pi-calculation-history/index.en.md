@@ -110,7 +110,7 @@ Entering the 17th century, the discovery of calculus by Newton and Leibniz led t
 
 ## 3.1 The Gregory-Leibniz Series
 
-Discovered in 1671 by the Scottish mathematician James Gregory and independently rediscovered in 1674 by the German mathematician Gottfried Leibniz, this is the infinite series expansion of the arctangent function.
+Discovered in 1671 by the Scottish mathematician James Gregory and independently rediscovered in 1674 by the German mathematician [Gottfried Leibniz](/en/p/leibniz/), this is the infinite series expansion of the arctangent function.
 
 $$ \arctan(x) = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + \cdots = \sum_{k=0}^{\infty} \frac{(-1)^k x^{2k+1}}{2k+1} $$
 
@@ -270,7 +270,7 @@ Executing the code above finds pi at unbelievable speed. It reaches 100 digits o
 
 When discussing pi calculation methods, another innovative algorithm that must not be forgotten is the "Gauss-Legendre algorithm." This was discovered independently by Richard Brent and Eugene Salamin in 1975.
 
-The foundation of this algorithm is the theory of the "Arithmetic-Geometric Mean (AGM)" and elliptic integrals studied by Carl Friedrich Gauss.
+The foundation of this algorithm is the theory of the "Arithmetic-Geometric Mean (AGM)" and elliptic integrals studied by [Carl Friedrich Gauss](/en/p/gauss/).
 
 Given two numbers $a_0$ and $b_0$, we create a sequence by repeatedly applying the arithmetic mean and the geometric mean as follows:
 
@@ -331,6 +331,6 @@ if __name__ == '__main__':
 
 The calculation of pi, which began with ancient mathematicians drawing polygons in the sand, evolved into infinite series with the powerful weapon of calculus. Today, through advanced mathematical theories like modular forms and the arithmetic-geometric mean, combined with the computing power of supercomputers, it has reached an unfathomable precision of 100 trillion digits.
 
-The competition to calculate pi is not just a game of seeking a sequence of numbers. The algorithms and computational techniques cultivated there (such as binary splitting and the multiplication of massive numbers using the Fast Fourier Transform) play crucial roles in a wide range of fields, including modern cryptography, numerical analysis, and the performance evaluation of computer architectures.
+The competition to calculate pi is not just a game of seeking a sequence of numbers. The algorithms and computational techniques cultivated there (such as binary splitting and the multiplication of massive numbers using the [Fast Fourier Transform](/en/p/fast-fourier-transform-algorithm/)) play crucial roles in a wide range of fields, including modern cryptography, numerical analysis, and the performance evaluation of computer architectures.
 
 Because pi is an irrational number, its sequence of digits will never end. As long as human wisdom and the evolution of computers continue, the endless journey to find pi will also never end.

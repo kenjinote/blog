@@ -36,7 +36,7 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 $$ \text{Li}(x) = \int_{2}^{x} \frac{dt}{\ln t} $$
 
-Предположение Гаусса было независимо доказано в 1896 году Жаком Адамаром и Шарлем Жан де ла Валле-Пуссеном, и утвердилось как **Теорема о распределении простых чисел ([Prime Number Theorem](https://kenji.blog/ru/p/prime-number-theorem/), PNT)**.
+Предположение Гаусса было независимо доказано в 1896 году Жаком Адамаром и Шарлем Жан де ла Валле-Пуссеном, и утвердилось как **[Теорема о распределении простых чисел](/ru/p/prime-number-theorem-overview/) ([Prime Number Theorem](https://kenji.blog/ru/p/prime-number-theorem/), PNT)**.
 
 $$ \lim_{x \to \infty} \frac{\pi(x)}{\text{Li}(x)} = 1 $$
 

@@ -57,13 +57,13 @@ Par la suite, en 1896, Jacques Hadamard et Charles de La Vallée Poussin ont cha
 
 ## Une approximation plus précise : Le logarithme intégral $\operatorname{Li}(x)$
 
-Bien que $x / \ln(x)$ exprime simplement le théorème des nombres premiers, le **logarithme intégral** (Logarithmic Integral, $\operatorname{Li}(x)$) introduit par Gauss est bien meilleur pour approximer le nombre réel de nombres premiers $\pi(x)$.
+Bien que $x / \ln(x)$ exprime simplement [le théorème des nombres premiers](/fr/p/prime-number-theorem-overview/), le **logarithme intégral** (Logarithmic Integral, $\operatorname{Li}(x)$) introduit par Gauss est bien meilleur pour approximer le nombre réel de nombres premiers $\pi(x)$.
 
 Le logarithme intégral est défini comme suit :
 
 $$ \operatorname{Li}(x) = \int_{2}^{x} \frac{dt}{\ln(t)} $$
 
-Le théorème des nombres premiers peut également être réécrit comme $\pi(x) \sim \operatorname{Li}(x)$.
+[Le théorème des nombres premiers](/fr/p/prime-number-theorem-overview/) peut également être réécrit comme $\pi(x) \sim \operatorname{Li}(x)$.
 
 $$ \lim_{x \to \infty} \frac{\pi(x)}{\operatorname{Li}(x)} = 1 $$
 
@@ -76,15 +76,15 @@ On peut voir à quel point le logarithme intégral donne une excellente approxim
 
 ## La relation profonde avec l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/)
 
-Le théorème des nombres premiers est indissociablement lié à l'**hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/)** ([Riemann](https://kenji.blog/fr/p/riemann/) Hypothesis), considérée comme le problème non résolu le plus important en mathématiques.
+[Le théorème des nombres premiers](/fr/p/prime-number-theorem-overview/) est indissociablement lié à l'**hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/)** ([Riemann](https://kenji.blog/fr/p/riemann/) Hypothesis), considérée comme le problème non résolu le plus important en mathématiques.
 
 L'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) affirme que "tous les zéros non triviaux de la fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/) $\zeta(s)$ se trouvent sur la droite (ligne critique) dont la partie réelle est $1/2$".
 
-S'il est prouvé que l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) est correcte, nous obtiendrons l'évaluation la plus forte possible concernant le terme d'erreur (la différence entre $\pi(x)$ et $\operatorname{Li}(x)$) dans le théorème des nombres premiers. Plus précisément, on sait qu'il existerait une constante $C$ telle que,
+S'il est prouvé que l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) est correcte, nous obtiendrons l'évaluation la plus forte possible concernant le terme d'erreur (la différence entre $\pi(x)$ et $\operatorname{Li}(x)$) dans [le théorème des nombres premiers](/fr/p/prime-number-theorem-overview/). Plus précisément, on sait qu'il existerait une constante $C$ telle que,
 
 $$ |\pi(x) - \operatorname{Li}(x)| \le C \sqrt{x} \ln(x) $$
 
-Cela signifie que "les nombres premiers sont distribués de manière si régulière qu'ils sont indiscernables d'une distribution complètement aléatoire". En d'autres termes, le théorème des nombres premiers décrit la distribution "moyenne" des nombres premiers, tandis que l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) décrit la limite de leurs "fluctuations (erreurs)".
+Cela signifie que "les nombres premiers sont distribués de manière si régulière qu'ils sont indiscernables d'une distribution complètement aléatoire". En d'autres termes, [le théorème des nombres premiers](/fr/p/prime-number-theorem-overview/) décrit la distribution "moyenne" des nombres premiers, tandis que l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) décrit la limite de leurs "fluctuations (erreurs)".
 
 ## Vérification du théorème des nombres premiers en Python
 
@@ -139,12 +139,12 @@ En exécutant ce code, on peut observer que le ratio $\pi(x) / (x/\ln(x))$ se ra
 
 Les propriétés des nombres premiers ne sont pas seulement un sujet fascinant en mathématiques pures, mais elles sont aussi un élément crucial qui soutient l'infrastructure de sécurité de notre société moderne.
 
-La cryptographie à clé publique, telle que le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/), utilise la propriété selon laquelle "la factorisation en nombres premiers d'entiers gigantesques est extrêmement difficile". Le théorème des nombres premiers garantit la probabilité de trouver un "nombre premier d'une taille appropriée", ce qui est nécessaire pour la génération de clés cryptographiques.
+La cryptographie à clé publique, telle que le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/), utilise la propriété selon laquelle "la factorisation en nombres premiers d'entiers gigantesques est extrêmement difficile". [Le théorème des nombres premiers](/fr/p/prime-number-theorem-overview/) garantit la probabilité de trouver un "nombre premier d'une taille appropriée", ce qui est nécessaire pour la génération de clés cryptographiques.
 
-Par exemple, la probabilité qu'un nombre impair aléatoire de 1024 bits soit premier est estimée à environ $1 / (1024 \times \ln(2) / 2) \approx 1 / 355$. Cela signifie qu'en effectuant le test de primalité quelques centaines de fois, on peut trouver un grand nombre premier nécessaire avec une probabilité élevée, et sans le théorème des nombres premiers, la construction de systèmes cryptographiques efficaces serait impossible.
+Par exemple, la probabilité qu'un nombre impair aléatoire de 1024 bits soit premier est estimée à environ $1 / (1024 \times \ln(2) / 2) \approx 1 / 355$. Cela signifie qu'en effectuant le test de primalité quelques centaines de fois, on peut trouver un grand nombre premier nécessaire avec une probabilité élevée, et sans [le théorème des nombres premiers](/fr/p/prime-number-theorem-overview/), la construction de systèmes cryptographiques efficaces serait impossible.
 
 ## Conclusion
 
-Le théorème des nombres premiers est l'un des plus beaux théorèmes incarnant "l'ordre dans le chaos" en mathématiques. Le fait qu'une loi fondamentale de la nature, telle que la fonction logarithmique, se cache dans la distribution apparemment aléatoire des nombres premiers continue de fasciner de nombreux mathématiciens.
+[Le théorème des nombres premiers](/fr/p/prime-number-theorem-overview/) est l'un des plus beaux théorèmes incarnant "l'ordre dans le chaos" en mathématiques. Le fait qu'une loi fondamentale de la nature, telle que la fonction logarithmique, se cache dans la distribution apparemment aléatoire des nombres premiers continue de fasciner de nombreux mathématiciens.
 
 Ce domaine, défriché par des génies tels que Gauss, [Riemann](https://kenji.blog/fr/p/riemann/) et Hadamard, reste à la pointe des mathématiques modernes à travers le problème colossal et non résolu de l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/). Le mystère des nombres premiers est profond, et la quête se poursuivra probablement jusqu'au jour où nous en comprendrons l'intégralité.

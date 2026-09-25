@@ -57,13 +57,13 @@ Posteriormente, en 1896, Jacques Hadamard y Charles de la Vallée Poussin, de fo
 
 ## Una aproximación de mayor precisión: Integral logarítmica $\operatorname{Li}(x)$
 
-Aunque $x / \ln(x)$ expresa el teorema de los números primos de manera simple, para aproximar la cantidad real de números primos $\pi(x)$, la **integral logarítmica** (Logarithmic Integral, $\operatorname{Li}(x)$) introducida por Gauss es mucho mejor.
+Aunque $x / \ln(x)$ expresa [el teorema de los números primos](/es/p/prime-number-theorem-overview/) de manera simple, para aproximar la cantidad real de números primos $\pi(x)$, la **integral logarítmica** (Logarithmic Integral, $\operatorname{Li}(x)$) introducida por Gauss es mucho mejor.
 
 La integral logarítmica se define de la siguiente manera:
 
 $$ \operatorname{Li}(x) = \int_{2}^{x} \frac{dt}{\ln(dt)} $$
 
-El teorema de los números primos también se puede reescribir como $\pi(x) \sim \operatorname{Li}(x)$.
+[El teorema de los números primos](/es/p/prime-number-theorem-overview/) también se puede reescribir como $\pi(x) \sim \operatorname{Li}(x)$.
 
 $$ \lim_{x \to \infty} \frac{\pi(x)}{\operatorname{Li}(x)} = 1 $$
 
@@ -80,11 +80,11 @@ Inseparablemente ligado al teorema de los números primos está la **Hipótesis 
 
 La hipótesis de [Riemann](https://kenji.blog/es/p/riemann/) afirma que "todos los ceros no triviales de la función zeta de [Riemann](https://kenji.blog/es/p/riemann/) $\zeta(s)$ se encuentran en la recta con parte real igual a $1/2$ (la línea crítica)".
 
-Si se demuestra que la hipótesis de [Riemann](https://kenji.blog/es/p/riemann/) es correcta, se obtendría la estimación más fuerte posible para el término de error (la diferencia entre $\pi(x)$ y $\operatorname{Li}(x)$) en el teorema de los números primos. Específicamente, se sabe que existe una constante $C$ tal que,
+Si se demuestra que la hipótesis de [Riemann](https://kenji.blog/es/p/riemann/) es correcta, se obtendría la estimación más fuerte posible para el término de error (la diferencia entre $\pi(x)$ y $\operatorname{Li}(x)$) en [el teorema de los números primos](/es/p/prime-number-theorem-overview/). Específicamente, se sabe que existe una constante $C$ tal que,
 
 $$ |\pi(x) - \operatorname{Li}(x)| \le C \sqrt{x} \ln(x) $$
 
-se cumple. Esto significa que "los números primos están distribuidos de manera tan extremadamente regular que son indistinguibles de una distribución completamente aleatoria". En otras palabras, el teorema de los números primos habla de la distribución "promedio" de los primos, mientras que la hipótesis de [Riemann](https://kenji.blog/es/p/riemann/) habla de los límites de esa "fluctuación (error)".
+se cumple. Esto significa que "los números primos están distribuidos de manera tan extremadamente regular que son indistinguibles de una distribución completamente aleatoria". En otras palabras, [el teorema de los números primos](/es/p/prime-number-theorem-overview/) habla de la distribución "promedio" de los primos, mientras que la hipótesis de [Riemann](https://kenji.blog/es/p/riemann/) habla de los límites de esa "fluctuación (error)".
 
 ## Comprobando el teorema de los números primos en Python
 
@@ -139,12 +139,12 @@ Al ejecutar este código, se puede observar cómo a medida que $x$ crece, la pro
 
 Las propiedades de los números primos no son solo un objeto fascinante en las matemáticas puras, sino también un elemento crucial que sustenta la infraestructura de seguridad de la sociedad moderna.
 
-Los sistemas de criptografía de clave pública, como el cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/), aprovechan la propiedad de que "es extremadamente difícil factorizar números enteros enormes". El teorema de los números primos garantiza la probabilidad con la que se pueden encontrar "números primos de tamaño adecuado" necesarios para generar claves criptográficas.
+Los sistemas de criptografía de clave pública, como el cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/), aprovechan la propiedad de que "es extremadamente difícil factorizar números enteros enormes". [El teorema de los números primos](/es/p/prime-number-theorem-overview/) garantiza la probabilidad con la que se pueden encontrar "números primos de tamaño adecuado" necesarios para generar claves criptográficas.
 
-Por ejemplo, la probabilidad de que un número impar aleatorio de 1024 bits sea primo se estima en aproximadamente $1 / (1024 \times \ln(2) / 2) \approx 1 / 355$. Esto significa que con unos pocos cientos de pruebas de primalidad, existe una alta probabilidad de encontrar el número primo gigante necesario, y sin el teorema de los números primos, sería imposible construir sistemas criptográficos eficientes.
+Por ejemplo, la probabilidad de que un número impar aleatorio de 1024 bits sea primo se estima en aproximadamente $1 / (1024 \times \ln(2) / 2) \approx 1 / 355$. Esto significa que con unos pocos cientos de pruebas de primalidad, existe una alta probabilidad de encontrar el número primo gigante necesario, y sin [el teorema de los números primos](/es/p/prime-number-theorem-overview/), sería imposible construir sistemas criptográficos eficientes.
 
 ## Conclusión
 
-El teorema de los números primos es uno de los teoremas más hermosos que encarna el "orden dentro del caos" en las matemáticas. El hecho de que una ley fundamental de la naturaleza como la función logarítmica esté oculta en la distribución aparentemente aleatoria de los números primos sigue fascinando a muchos matemáticos.
+[El teorema de los números primos](/es/p/prime-number-theorem-overview/) es uno de los teoremas más hermosos que encarna el "orden dentro del caos" en las matemáticas. El hecho de que una ley fundamental de la naturaleza como la función logarítmica esté oculta en la distribución aparentemente aleatoria de los números primos sigue fascinando a muchos matemáticos.
 
 Este campo, pionero gracias a genios como Gauss, [Riemann](https://kenji.blog/es/p/riemann/) y Hadamard, sigue estando a la vanguardia de las matemáticas modernas a través de ese gigantesco problema sin resolver que es la hipótesis de [Riemann](https://kenji.blog/es/p/riemann/). El misterio de los números primos es profundo, y la exploración continuará hasta el día en que comprendamos el panorama completo.

@@ -70,7 +70,7 @@ Keamanan kriptografi RSA bergantung pada sifat matematika bahwa "memfaktorkan bi
    Dekripsi ciphertext $C$ menggunakan kunci privat $(d, n)$ untuk mengembalikannya ke plaintext $M$.
    $$M \equiv C^d \pmod{n}$$
 
-Berdasarkan "Teorema Euler" yang merupakan generalisasi dari Teorema Kecil Fermat, terbukti secara matematis bahwa dekripsi ini akan selalu kembali ke plaintext asli. Mustahil bagi penyerang untuk menemukan $p$ dan $q$ dari $n$ (memfaktorkan bilangan prima) dalam waktu yang realistis bahkan dengan superkomputer saat ini.
+Berdasarkan "Teorema Euler" yang merupakan generalisasi dari [Teorema Kecil Fermat](/id/p/fermats-little-theorem/), terbukti secara matematis bahwa dekripsi ini akan selalu kembali ke plaintext asli. Mustahil bagi penyerang untuk menemukan $p$ dan $q$ dari $n$ (memfaktorkan bilangan prima) dalam waktu yang realistis bahkan dengan superkomputer saat ini.
 
 ### Implementasi Sederhana Algoritme RSA dengan Python
 
@@ -117,4 +117,4 @@ print(f"Pesan yang didekripsi: {decrypted_message}")
 Dari pergeseran huruf sederhana pada sandi Caesar, struktur mekanik Enigma yang kompleks, hingga teori bilangan tingkat lanjut dari sandi RSA, kriptografi terus berevolusi bersama sejarah umat manusia.
 Namun, kemajuan teknologi tidak akan berhenti. Saat ini, "komputer kuantum", yang memiliki potensi untuk memecahkan faktorisasi prima dengan cepat yang merupakan fondasi kriptografi RSA, sedang dikembangkan. Jika "Algoritme Shor" yang dirancang oleh Peter Shor terwujud, dikatakan bahwa semua kriptografi kunci publik saat ini akan ditembus.
 
-Untuk melawannya, penelitian "kriptografi pasca-kuantum" (Post-Quantum Cryptography/PQC) saat ini sedang berlangsung dengan cepat di seluruh dunia. Teknologi kriptografi generasi berikutnya berdasarkan masalah matematika baru yang sulit, seperti kriptografi berbasis kisi (lattice-based cryptography) dan kriptografi polinomial multivariabel (multivariate polynomial cryptography), akan bertanggung jawab atas keamanan di masa depan. Pertarungan antara "tombak dan perisai" dalam kriptografi akan terus berlangsung di garis depan matematika dan ilmu komputer.
+Untuk melawannya, penelitian "kriptografi pasca-kuantum" (Post-Quantum Cryptography/PQC) saat ini sedang berlangsung dengan cepat di seluruh dunia. Teknologi kriptografi generasi berikutnya berdasarkan masalah matematika baru yang sulit, seperti kriptografi berbasis kisi ([lattice-based cryptography](/id/p/lattice-based-cryptography-math-intuition/)) dan kriptografi polinomial multivariabel (multivariate polynomial cryptography), akan bertanggung jawab atas keamanan di masa depan. Pertarungan antara "tombak dan perisai" dalam kriptografi akan terus berlangsung di garis depan matematika dan ilmu komputer.

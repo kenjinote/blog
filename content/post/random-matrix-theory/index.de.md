@@ -12,7 +12,7 @@ image: eyecatch.jpg
 
 Die Welt mag komplex und unvorhersehbar erscheinen, aber durch die Linse der Mathematik finden wir manchmal überraschende Gemeinsamkeiten in völlig unterschiedlichen Bereichen. Die "Theorie der Zufallsmatrizen" (Random Matrix Theory, RMT) ist genau ein solches mathematisches Rahmenwerk mit einer derartigen Universalität.
 
-Eine Zufallsmatrix ist eine Matrix, deren Elemente durch Zufallsvariablen gegeben sind. Auf den ersten Blick handelt es sich nur um eine zufällige Anordnung von Zahlen, aber wenn die Größe der Matrix gegen unendlich geht, zeigt sich in der Verteilung ihrer [Eigenwerte](/p/eigenvalues-and-eigenvectors/) ein überraschend schönes und universelles Gesetz. Dieses Gesetz verbirgt sich hinter völlig unterschiedlichen Systemen, von der mikroskopischen Welt der Atomkerne, den Rätseln der Primzahlverteilung und den Preisschwankungen auf den Finanzmärkten bis hin zur Lerndynamik modernster Deep-Learning-Modelle.
+Eine Zufallsmatrix ist eine Matrix, deren Elemente durch Zufallsvariablen gegeben sind. Auf den ersten Blick handelt es sich nur um eine zufällige Anordnung von Zahlen, aber wenn die Größe der Matrix gegen unendlich geht, zeigt sich in der Verteilung ihrer [Eigenwerte](/de/p/eigenvalues-and-eigenvectors/) ein überraschend schönes und universelles Gesetz. Dieses Gesetz verbirgt sich hinter völlig unterschiedlichen Systemen, von der mikroskopischen Welt der Atomkerne, den Rätseln der Primzahlverteilung und den Preisschwankungen auf den Finanzmärkten bis hin zur Lerndynamik modernster Deep-Learning-Modelle.
 
 In diesem Artikel, ausgehend vom historischen Hintergrund der Theorie der Zufallsmatrizen, erklären wir ihre mathematische Grundlage wie die Klassifikation von Ensembles (GOE/GUE/GSE), den mathematischen Beweis des Wignerschen Halbkreisgesetzes und sogar ihre unerwartete Verbindung zur Riemannschen Zeta-Funktion. In der zweiten Hälfte tauchen wir tief in moderne Anwendungen ein, wie die Portfolio-Optimierung in der Finanzmathematik und das Problem der Gewichtsinitialisierung in der KI und im Deep Learning, begleitet von praktischen Visualisierungen mit Python-Code.
 
@@ -32,7 +32,7 @@ Betrachtet man experimentell beobachtete Neutronenstreudaten, schienen die Reson
 
 1955 schlug Eugene Wigner eine mutige Idee vor: Anstatt den Hamiltonoperator (die Matrix, die die Energie repräsentiert) dieses komplexen Quantensystems als eine spezifische Matrix mit detaillierter physikalischer Struktur zu behandeln, modellierte er ihn als eine "riesige symmetrische Matrix, deren Elemente zufällige Werte annehmen".
 
-Überraschenderweise stimmte die Abstandsverteilung der [Eigenwerte](/p/eigenvalues-and-eigenvectors/) dieser stark vereinfachten Zufallsmatrix perfekt mit der Abstandsverteilung der Energieniveaus in tatsächlichen Urankernen überein. Wigner entdeckte weiter, dass im Grenzwert, wenn die Matrixgröße $N$ gegen unendlich geht, die Gesamtdichteverteilung der [Eigenwerte](/p/eigenvalues-and-eigenvectors/) die Form eines Halbkreises annimmt. Dies ist das berühmte "Wignersche Halbkreisgesetz".
+Überraschenderweise stimmte die Abstandsverteilung der [Eigenwerte](/de/p/eigenvalues-and-eigenvectors/) dieser stark vereinfachten Zufallsmatrix perfekt mit der Abstandsverteilung der Energieniveaus in tatsächlichen Urankernen überein. Wigner entdeckte weiter, dass im Grenzwert, wenn die Matrixgröße $N$ gegen unendlich geht, die Gesamtdichteverteilung der [Eigenwerte](/de/p/eigenvalues-and-eigenvectors/) die Form eines Halbkreises annimmt. Dies ist das berühmte "Wignersche Halbkreisgesetz".
 
 ---
 
@@ -65,22 +65,22 @@ Das GSE ist eine Menge selbstdualer hermitescher Matrizen, deren Elemente aus Qu
 
 Lassen Sie uns den Prozess des Beweises des Wignerschen Halbkreisgesetzes, des grundlegendsten Ergebnisses der Theorie der Zufallsmatrizen, mit Hilfe der Momentenmethode skizzieren.
 
-Betrachten wir eine reelle symmetrische $N \times N$-Matrix $X$, deren Elemente $X_{ij}$ voneinander unabhängige Zufallsvariablen mit Mittelwert 0 und Varianz 1 sind. Wir suchen den Grenzwert ($N \to \infty$) der [Eigenwertverteilung](/p/eigenvalues-and-eigenvectors/) der skalierten Matrix $W = \frac{1}{\sqrt{N}}X$.
+Betrachten wir eine reelle symmetrische $N \times N$-Matrix $X$, deren Elemente $X_{ij}$ voneinander unabhängige Zufallsvariablen mit Mittelwert 0 und Varianz 1 sind. Wir suchen den Grenzwert ($N \to \infty$) der [Eigenwertverteilung](/de/p/eigenvalues-and-eigenvectors/) der skalierten Matrix $W = \frac{1}{\sqrt{N}}X$.
 
 ## Ansatz über die Momentenmethode
 
-Um die empirische Verteilungsfunktion der [Eigenwerte](/p/eigenvalues-and-eigenvectors/) zu analysieren, berechnen wir das $k$-te Moment $m_k$ der Verteilung. Da die Spur (Summe der Diagonalelemente) einer Matrix gleich der Summe ihrer [Eigenwerte](/p/eigenvalues-and-eigenvectors/) ist, werten wir Folgendes aus:
+Um die empirische Verteilungsfunktion der [Eigenwerte](/de/p/eigenvalues-and-eigenvectors/) zu analysieren, berechnen wir das $k$-te Moment $m_k$ der Verteilung. Da die Spur (Summe der Diagonalelemente) einer Matrix gleich der Summe ihrer [Eigenwerte](/de/p/eigenvalues-and-eigenvectors/) ist, werten wir Folgendes aus:
 $$ m_k = \lim_{N \to \infty} \frac{1}{N} \mathbb{E}[\text{Tr}(W^k)] $$
 
 Die Erweiterung der Spur ergibt:
 $$ \text{Tr}(W^k) = \frac{1}{N^{k/2}} \sum_{i_1, i_2, \dots, i_k} X_{i_1 i_2} X_{i_2 i_3} \cdots X_{i_k i_1} $$
-Bei der Berechnung des Erwartungswerts wird jeder erweiterte Term, in dem ein Element nur einmal vorkommt, einen Erwartungswert von 0 haben, da die Elemente $X_{ij}$ unabhängig sind und einen Mittelwert von 0 haben. Um einen Beitrag ungleich null zu leisten, muss jede Kante auf dem Pfad $i_1 \to i_2 \to \dots \to i_k \to i_1$ mindestens zweimal durchlaufen werden.
+Bei der Berechnung des Erwartungswerts wird jeder erweiterte Term, in dem ein Element nur einmal vorkommt, einen Erwartungswert von 0 haben, da die Elemente $X_{ij}$ unabhängig sind und einen Mittelwert von 0 haben. Um einen Beitrag ungleich null zu leisten, muss jede Kante auf dem [Pfad](/de/p/windows-%E3%81%A7pfad%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9Fausf%C3%BChrbare-datei%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/) $i_1 \to i_2 \to \dots \to i_k \to i_1$ mindestens zweimal durchlaufen werden.
 
 Im Grenzwert $N \to \infty$ stammt der dominante Beitrag von Pfaden mit genau $k$ Schritten, die eine "Baum"-Struktur bilden, bei der neue Knotenpunkte erkundet und entlang jeder durchlaufenen Kante genau einmal zurückgekehrt wird. Dies ist nur möglich, wenn $k$ gerade ist ($k = 2m$), und ungerade Momente werden im Grenzwert zu 0.
 
 ## Verbindung zwischen Catalan-Zahlen und dem Halbkreisgesetz
 
-Die Gesamtzahl solcher Pfade (Dyck-Pfade) der Länge $2m$ ist durch die "[Catalan-Zahlen](/p/catalan-numbers/)" $C_m$ gegeben, die in der Kombinatorik berühmt sind.
+Die Gesamtzahl solcher Pfade (Dyck-Pfade) der Länge $2m$ ist durch die "[Catalan-Zahlen](/de/p/catalan-numbers/)" $C_m$ gegeben, die in der Kombinatorik berühmt sind.
 $$ C_m = \frac{1}{m+1} \binom{2m}{m} $$
 
 Daher sind die Momente der Grenzverteilung:
@@ -98,7 +98,7 @@ Die Theorie der Zufallsmatrizen, die zur Lösung von Problemen in der Physik ent
 
 1972 untersuchte der Zahlentheoretiker Hugh Montgomery die Abstandsverteilung der nicht-trivialen Nullstellen der Riemannschen Zeta-Funktion. Nach der Riemannschen Vermutung liegen all diese Nullstellen auf der "kritischen Gerade" (der Gerade mit Realteil 1/2) in der komplexen Ebene. Montgomery berechnete die Paarkorrelationsfunktion der Nullstellen und leitete ab, dass sie gleich $1 - \left(\frac{\sin(\pi x)}{\pi x}\right)^2$ ist.
 
-Eines Tages während der Teezeit am Institute for Advanced Study in Princeton erwähnte Montgomery dieses Ergebnis gegenüber dem Physiker Freeman Dyson. Dyson war verblüfft. Warum? Weil die Formel exakt mit der Abstandsverteilung der [Eigenwerte](/p/eigenvalues-and-eigenvectors/) des GUE (Gaußsches unitäres Ensemble) übereinstimmte, die Dyson selbst abgeleitet hatte.
+Eines Tages während der Teezeit am Institute for Advanced Study in Princeton erwähnte Montgomery dieses Ergebnis gegenüber dem Physiker Freeman Dyson. Dyson war verblüfft. Warum? Weil die Formel exakt mit der Abstandsverteilung der [Eigenwerte](/de/p/eigenvalues-and-eigenvectors/) des GUE (Gaußsches unitäres Ensemble) übereinstimmte, die Dyson selbst abgeleitet hatte.
 
 ## Die Schnittstelle zwischen Primzahlen und Quantenchaos
 
@@ -120,11 +120,11 @@ Wenn man die empirische Kovarianzmatrix aus den Renditedaten von $N$ Vermögensw
 
 ## Rauschbereinigung mit Zufallsmatrizen
 
-Hier kommt die Theorie der Zufallsmatrizen ins Spiel. 1999 wendeten Bouchaud et al. und Laloux et al. unabhängig voneinander die Theorie der Zufallsmatrizen auf die Kovarianzmatrizen von Finanzmärkten an. Sie verglichen die [Eigenwertverteilung](/p/eigenvalues-and-eigenvectors/) der aus rein zufälligen Zeitreihendaten erhaltenen Kovarianzmatrix (Marchenko-Pastur-Verteilung) mit der [Eigenwertverteilung](/p/eigenvalues-and-eigenvectors/) der Kovarianzmatrix tatsächlicher Marktdaten.
+Hier kommt die Theorie der Zufallsmatrizen ins Spiel. 1999 wendeten Bouchaud et al. und Laloux et al. unabhängig voneinander die Theorie der Zufallsmatrizen auf die Kovarianzmatrizen von Finanzmärkten an. Sie verglichen die [Eigenwertverteilung](/de/p/eigenvalues-and-eigenvectors/) der aus rein zufälligen Zeitreihendaten erhaltenen Kovarianzmatrix (Marchenko-Pastur-Verteilung) mit der [Eigenwertverteilung](/de/p/eigenvalues-and-eigenvectors/) der Kovarianzmatrix tatsächlicher Marktdaten.
 
-Als Ergebnis fanden sie heraus, dass die überwiegende Mehrheit (über 90 %) der [Eigenwerte](/p/eigenvalues-and-eigenvectors/) der Marktdaten innerhalb der theoretischen Grenzen liegt, die von der Theorie der Zufallsmatrizen vorhergesagt werden. Mit anderen Worten: Es handelt sich lediglich um "Rauschen". Andererseits wurde gezeigt, dass nur wenige große [Eigenwerte](/p/eigenvalues-and-eigenvectors/), die die Grenzen weit überschreiten, bedeutsame Informationen enthalten, die die wahre Korrelationsstruktur des Marktes widerspiegeln (wie Marktfaktoren und Sektorfaktoren).
+Als Ergebnis fanden sie heraus, dass die überwiegende Mehrheit (über 90 %) der [Eigenwerte](/de/p/eigenvalues-and-eigenvectors/) der Marktdaten innerhalb der theoretischen Grenzen liegt, die von der Theorie der Zufallsmatrizen vorhergesagt werden. Mit anderen Worten: Es handelt sich lediglich um "Rauschen". Andererseits wurde gezeigt, dass nur wenige große [Eigenwerte](/de/p/eigenvalues-and-eigenvectors/), die die Grenzen weit überschreiten, bedeutsame Informationen enthalten, die die wahre Korrelationsstruktur des Marktes widerspiegeln (wie Marktfaktoren und Sektorfaktoren).
 
-Basierend auf dieser Erkenntnis wurden Methoden entwickelt, um die Kovarianzmatrix zu "bereinigen", indem die dem Rauschen entsprechenden [Eigenwerte](/p/eigenvalues-and-eigenvectors/) herausgefiltert werden (z. B. indem man sie auf null setzt oder durch den Durchschnittswert ersetzt). Dies verbessert die Leistung und Stabilität von Portfolios drastisch und wird derzeit als Standardtechnik in vielen quantitativen Fonds eingesetzt.
+Basierend auf dieser Erkenntnis wurden Methoden entwickelt, um die Kovarianzmatrix zu "bereinigen", indem die dem Rauschen entsprechenden [Eigenwerte](/de/p/eigenvalues-and-eigenvectors/) herausgefiltert werden (z. B. indem man sie auf null setzt oder durch den Durchschnittswert ersetzt). Dies verbessert die Leistung und Stabilität von Portfolios drastisch und wird derzeit als Standardtechnik in vielen quantitativen Fonds eingesetzt.
 
 ---
 
@@ -136,13 +136,13 @@ In den letzten Jahren rückte die Theorie der Zufallsmatrizen auch bei der theor
 
 Beim Training massiver neuronaler Netze ist die Festlegung der Anfangswerte der Gewichtsmatrizen des Netzwerks ein äußerst wichtiges Problem, das über den Erfolg oder Misserfolg des Trainings entscheidet. Wenn die Initialisierung unangemessen ist, kommt es zu einem verschwindenden Gradienten (Gradient Vanishing) oder explodierenden Gradienten (Gradient Exploding), wodurch der Lernprozess gestoppt wird.
 
-Wenn Gewichtsmatrizen mit zufälligen Werten initialisiert werden, handelt es sich exakt um eine Zufallsmatrix. Durch die Anwendung der Theorie der Zufallsmatrizen kann man den Übergang der Varianz des Signals beim Durchlaufen der Schichten und das Verhalten von Gradienten während der Backpropagation streng analysieren. Beispielsweise liefert die Analyse der Auswirkung nichtlinearer Aktivierungsfunktionen auf das Spektrum ([Eigenwertverteilung](/p/eigenvalues-and-eigenvectors/)) von Zufallsmatrizen die theoretische Rechtfertigung für moderne Standard-Initialisierungsmethoden wie die Xavier-Initialisierung und die He-Initialisierung.
+Wenn Gewichtsmatrizen mit zufälligen Werten initialisiert werden, handelt es sich exakt um eine Zufallsmatrix. Durch die Anwendung der Theorie der Zufallsmatrizen kann man den Übergang der Varianz des Signals beim Durchlaufen der Schichten und das Verhalten von Gradienten während der Backpropagation streng analysieren. Beispielsweise liefert die Analyse der Auswirkung nichtlinearer Aktivierungsfunktionen auf das Spektrum ([Eigenwertverteilung](/de/p/eigenvalues-and-eigenvectors/)) von Zufallsmatrizen die theoretische Rechtfertigung für moderne Standard-Initialisierungsmethoden wie die Xavier-Initialisierung und die He-Initialisierung.
 
 ## Eigenwertverteilung der Hesse-Matrix
 
-Das Verständnis der Dynamik des Lernprozesses erfordert im Wesentlichen die Analyse der Hesse-Matrix, die die Krümmung der Verlustfunktion darstellt. Die Hesse-Matrix von [LLMs](/p/large-language-models-llm-transformer-prompt-engineering/) ([Großen Sprachmodellen](/p/large-language-models-llm-transformer-prompt-engineering/)) mit zig Millionen bis Hunderten von Milliarden von Parametern ist eine gigantische Matrix, was es schwierig macht, ihre Eigenschaften direkt zu untersuchen. Mit der Theorie der Zufallsmatrizen lässt sich ihre [Eigenwertverteilung](/p/eigenvalues-and-eigenvectors/) jedoch annähern und vorhersagen.
+Das Verständnis der Dynamik des Lernprozesses erfordert im Wesentlichen die Analyse der Hesse-Matrix, die die Krümmung der Verlustfunktion darstellt. Die Hesse-Matrix von [LLMs](/de/p/large-language-models-llm-transformer-prompt-engineering/) ([Großen Sprachmodellen](/de/p/large-language-models-llm-transformer-prompt-engineering/)) mit zig Millionen bis Hunderten von Milliarden von Parametern ist eine gigantische Matrix, was es schwierig macht, ihre Eigenschaften direkt zu untersuchen. Mit der Theorie der Zufallsmatrizen lässt sich ihre [Eigenwertverteilung](/de/p/eigenvalues-and-eigenvectors/) jedoch annähern und vorhersagen.
 
-Studien haben gezeigt, dass die [Eigenwertverteilung](/p/eigenvalues-and-eigenvectors/) der Hesse-Matrix in tiefen neuronalen Netzen aus einem Bulk (einer großen Anzahl von [Eigenwerten](/p/eigenvalues-and-eigenvectors/) nahe null) und einigen großen Ausreißern (Outliers) besteht. Der Bulk-Teil kann als fehlerbehaftete Zufallsmatrix (z. B. Richtungen mit wenig Informationen) modelliert werden, während die Ausreißer kritische Lernrichtungen anzeigen, die direkt mit der Aufgabe verknüpft sind. Das Verständnis dieser spektralen Struktur liefert äußerst wertvolle Erkenntnisse zur Verbesserung der Konvergenz von Optimierungsalgorithmen (wie SGD und Adam) und zur Optimierung von Zeitplänen für Lernraten.
+Studien haben gezeigt, dass die [Eigenwertverteilung](/de/p/eigenvalues-and-eigenvectors/) der Hesse-Matrix in tiefen neuronalen Netzen aus einem Bulk (einer großen Anzahl von [Eigenwerten](/de/p/eigenvalues-and-eigenvectors/) nahe null) und einigen großen Ausreißern (Outliers) besteht. Der Bulk-Teil kann als fehlerbehaftete Zufallsmatrix (z. B. Richtungen mit wenig Informationen) modelliert werden, während die Ausreißer kritische Lernrichtungen anzeigen, die direkt mit der Aufgabe verknüpft sind. Das Verständnis dieser spektralen Struktur liefert äußerst wertvolle Erkenntnisse zur Verbesserung der Konvergenz von Optimierungsalgorithmen (wie SGD und Adam) und zur Optimierung von Zeitplänen für Lernraten.
 
 ---
 
@@ -195,12 +195,12 @@ plt.tight_layout()
 plt.show()
 ```
 
-Wenn Sie diesen Code ausführen, können Sie bestätigen, dass die [Eigenwerte](/p/eigenvalues-and-eigenvectors/) der zufällig generierten Matrizen in Form eines wunderschönen Halbkreises verteilt sind. Der größte Reiz der Theorie der Zufallsmatrizen liegt darin, dass, obwohl die Elemente der einzelnen Matrizen völlig zufällig sind, insgesamt ein solch geordnetes Gesetz entsteht.
+Wenn Sie diesen Code ausführen, können Sie bestätigen, dass die [Eigenwerte](/de/p/eigenvalues-and-eigenvectors/) der zufällig generierten Matrizen in Form eines wunderschönen Halbkreises verteilt sind. Der größte Reiz der Theorie der Zufallsmatrizen liegt darin, dass, obwohl die Elemente der einzelnen Matrizen völlig zufällig sind, insgesamt ein solch geordnetes Gesetz entsteht.
 
 ---
 
 # Fazit
 
-In diesem Artikel folgten wir der großen Erzählung der Theorie der Zufallsmatrizen, beginnend in der Kernphysik und bis hin zur reinen Mathematik, der Finanzmathematik und den modernen KI-Technologien. Die Tatsache, dass scheinbar unzusammenhängende komplexe Systeme unter extremen Bedingungen mit der gemeinsamen Sprache "der [Eigenwerte](/p/eigenvalues-and-eigenvectors/) von Zufallsmatrizen" kommunizieren können, zeigt die mysteriöse Tiefe, die die Natur und die Mathematik besitzen.
+In diesem Artikel folgten wir der großen Erzählung der Theorie der Zufallsmatrizen, beginnend in der Kernphysik und bis hin zur reinen Mathematik, der Finanzmathematik und den modernen KI-Technologien. Die Tatsache, dass scheinbar unzusammenhängende komplexe Systeme unter extremen Bedingungen mit der gemeinsamen Sprache "der [Eigenwerte](/de/p/eigenvalues-and-eigenvectors/) von Zufallsmatrizen" kommunizieren können, zeigt die mysteriöse Tiefe, die die Natur und die Mathematik besitzen.
 
 In der heutigen Zeit, in der Daten explodieren und Modelle immer weiter enorm anwachsen, entwickelt sich die Theorie der Zufallsmatrizen von einem bloßen Gegenstand der abstrakten Mathematik zu einer mächtigen Waffe zur Lösung praktischer Probleme in der Datenwissenschaft und im maschinellen Lernen. Diese Theorie, die die universellen Wahrheiten erforscht, die sich hinter komplexen Systemen verbergen, wird zweifellos auch in Zukunft ein Licht sein, das unser Verständnis in verschiedenen Bereichen vertieft.

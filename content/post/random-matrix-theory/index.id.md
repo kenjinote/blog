@@ -12,7 +12,7 @@ image: eyecatch.jpg
 
 Dunia ini tampak kompleks dan tak terduga, tetapi melalui lensa matematika, kita kadang menemukan kesamaan yang mengejutkan di bidang yang sama sekali berbeda. "Teori Matriks Acak (Random Matrix Theory, RMT)" adalah salah satu kerangka matematika yang memiliki universalitas seperti itu.
 
-Matriks acak adalah matriks yang elemen-elemennya berupa variabel acak. Sekilas mungkin hanya terlihat seperti susunan angka yang acak, namun saat ukuran matriks mendekati tak terhingga, distribusi [nilai eigen](/p/eigenvalues-and-eigenvectors/)-nya menunjukkan pola yang luar biasa indah dan universal. Hukum ini tersembunyi di balik sistem yang sama sekali berbeda, mulai dari dunia mikroskopis nukleus atom, misteri distribusi bilangan prima, fluktuasi harga di pasar keuangan, hingga dinamika pembelajaran model deep learning mutakhir.
+Matriks acak adalah matriks yang elemen-elemennya berupa variabel acak. Sekilas mungkin hanya terlihat seperti susunan angka yang acak, namun saat ukuran matriks mendekati tak terhingga, distribusi [nilai eigen](/id/p/eigenvalues-and-eigenvectors/)-nya menunjukkan pola yang luar biasa indah dan universal. Hukum ini tersembunyi di balik sistem yang sama sekali berbeda, mulai dari dunia mikroskopis nukleus atom, misteri distribusi bilangan prima, fluktuasi harga di pasar keuangan, hingga dinamika pembelajaran model deep learning mutakhir.
 
 Artikel ini membahas latar belakang sejarah Teori Matriks Acak, klasifikasi ansambel seperti GOE/GUE/GSE yang menjadi dasar matematikanya, bukti matematis Hukum Setengah Lingkaran Wigner, dan hubungan tak terduganya dengan fungsi Zeta Riemann. Di paruh kedua, kita akan menggali lebih dalam aplikasi modern seperti optimasi portofolio dalam rekayasa keuangan dan masalah inisialisasi bobot dalam AI/deep learning, disertai visualisasi praktis menggunakan kode Python.
 
@@ -32,7 +32,7 @@ Melihat data hamburan neutron yang diamati secara eksperimental, tingkat energi 
 
 Pada tahun 1955, Eugene Wigner mengusulkan ide berani untuk memodelkan Hamiltonian (matriks yang mewakili energi) dari sistem kuantum kompleks ini bukan sebagai matriks spesifik dengan struktur fisik rinci, melainkan sebagai "matriks simetris raksasa dengan elemen acak".
 
-Hebatnya, distribusi jarak [nilai eigen](/p/eigenvalues-and-eigenvectors/) dari matriks acak yang sangat disederhanakan ini sangat cocok dengan distribusi jarak tingkat energi sebenarnya dari nukleus uranium. Wigner lebih lanjut menemukan bahwa dalam batas saat ukuran matriks $N$ menuju tak terhingga, kepadatan distribusi keseluruhan [nilai eigen](/p/eigenvalues-and-eigenvectors/) membentuk setengah lingkaran. Ini adalah "Hukum Setengah Lingkaran Wigner (Wigner's semicircle law)" yang terkenal.
+Hebatnya, distribusi jarak [nilai eigen](/id/p/eigenvalues-and-eigenvectors/) dari matriks acak yang sangat disederhanakan ini sangat cocok dengan distribusi jarak tingkat energi sebenarnya dari nukleus uranium. Wigner lebih lanjut menemukan bahwa dalam batas saat ukuran matriks $N$ menuju tak terhingga, kepadatan distribusi keseluruhan [nilai eigen](/id/p/eigenvalues-and-eigenvectors/) membentuk setengah lingkaran. Ini adalah "Hukum Setengah Lingkaran Wigner (Wigner's semicircle law)" yang terkenal.
 
 ---
 
@@ -65,11 +65,11 @@ GSE adalah himpunan matriks Hermitian dual-mandiri yang elemen-elemennya terdiri
 
 Kami akan meninjau proses membuktikan hukum setengah lingkaran Wigner menggunakan Metode Momen (Method of Moments).
 
-Pertimbangkan matriks simetris riil $X$ berukuran $N \times N$, di mana elemen $X_{ij}$ saling independen, dengan rata-rata 0 dan varians 1. Kita mencari limit (saat $N \to \infty$) distribusi [nilai eigen](/p/eigenvalues-and-eigenvectors/) dari matriks yang diskalakan $W = \frac{1}{\sqrt{N}}X$.
+Pertimbangkan matriks simetris riil $X$ berukuran $N \times N$, di mana elemen $X_{ij}$ saling independen, dengan rata-rata 0 dan varians 1. Kita mencari limit (saat $N \to \infty$) distribusi [nilai eigen](/id/p/eigenvalues-and-eigenvectors/) dari matriks yang diskalakan $W = \frac{1}{\sqrt{N}}X$.
 
 ## Pendekatan dengan Metode Momen
 
-Untuk menganalisis fungsi distribusi empiris [nilai eigen](/p/eigenvalues-and-eigenvectors/), kita hitung momen ke-$k$ dari distribusi, $m_k$. Karena jejak (trace, atau jumlah elemen diagonal) dari matriks sama dengan jumlah [nilai eigen](/p/eigenvalues-and-eigenvectors/),
+Untuk menganalisis fungsi distribusi empiris [nilai eigen](/id/p/eigenvalues-and-eigenvectors/), kita hitung momen ke-$k$ dari distribusi, $m_k$. Karena jejak (trace, atau jumlah elemen diagonal) dari matriks sama dengan jumlah [nilai eigen](/id/p/eigenvalues-and-eigenvectors/),
 $$ m_k = \lim_{N \to \infty} \frac{1}{N} \mathbb{E}[\text{Tr}(W^k)] $$
 kita mengevaluasinya.
 
@@ -81,7 +81,7 @@ Kontribusi dominan saat limit $N \to \infty$ adalah jalur sepanjang tepat $k$ la
 
 ## Hubungan antara Bilangan Catalan dan Hukum Setengah Lingkaran
 
-Jumlah jalur seperti ini (Jalur Dyck) dengan panjang $2m$ diberikan oleh "[Bilangan Catalan](/p/catalan-numbers/)" $C_m$, yang terkenal dalam matematika kombinatorik.
+Jumlah jalur seperti ini (Jalur Dyck) dengan panjang $2m$ diberikan oleh "[Bilangan Catalan](/id/p/catalan-numbers/)" $C_m$, yang terkenal dalam matematika kombinatorik.
 $$ C_m = \frac{1}{m+1} \binom{2m}{m} $$
 
 Sehingga, momen distribusi limit adalah:
@@ -99,7 +99,7 @@ Teori matriks acak yang lahir dari pemecahan masalah fisika mengarah pada penemu
 
 Pada tahun 1972, ahli teori bilangan Hugh Montgomery meneliti distribusi jarak dari nol non-trivial fungsi Zeta Riemann. Menurut Hipotesis Riemann, semua nol ini terletak di "garis kritis (garis dengan bagian riil 1/2)" di bidang kompleks. Montgomery menghitung fungsi korelasi pasangan nol dan mendapatkan $1 - \left(\frac{\sin(\pi x)}{\pi x}\right)^2$.
 
-Suatu hari, Montgomery memberi tahu ahli fisika Freeman Dyson tentang hasil ini di waktu minum teh di Institute for Advanced Study, Princeton. Dyson terkejut. Karena rumus tersebut persis sama dengan distribusi jarak [nilai eigen](/p/eigenvalues-and-eigenvectors/) GUE yang diturunkannya.
+Suatu hari, Montgomery memberi tahu ahli fisika Freeman Dyson tentang hasil ini di waktu minum teh di Institute for Advanced Study, Princeton. Dyson terkejut. Karena rumus tersebut persis sama dengan distribusi jarak [nilai eigen](/id/p/eigenvalues-and-eigenvectors/) GUE yang diturunkannya.
 
 ## Persimpangan antara Bilangan Prima dan Kekacauan Kuantum
 
@@ -121,11 +121,11 @@ Saat memperkirakan matriks kovarians dari return historis periode $T$ pada $N$ a
 
 ## Membersihkan Noise dengan Matriks Acak
 
-Di sinilah Teori Matriks Acak berperan. Pada 1999, Bouchaud dkk dan Laloux dkk secara independen menerapkan RMT pada matriks kovarians pasar keuangan. Mereka membandingkan distribusi [nilai eigen](/p/eigenvalues-and-eigenvectors/) matriks kovarians dari deret waktu acak (Distribusi Marchenko-Pastur) dengan distribusi [nilai eigen](/p/eigenvalues-and-eigenvectors/) dari data pasar nyata.
+Di sinilah Teori Matriks Acak berperan. Pada 1999, Bouchaud dkk dan Laloux dkk secara independen menerapkan RMT pada matriks kovarians pasar keuangan. Mereka membandingkan distribusi [nilai eigen](/id/p/eigenvalues-and-eigenvectors/) matriks kovarians dari deret waktu acak (Distribusi Marchenko-Pastur) dengan distribusi [nilai eigen](/id/p/eigenvalues-and-eigenvectors/) dari data pasar nyata.
 
-Hasilnya, mayoritas (lebih dari 90%) [nilai eigen](/p/eigenvalues-and-eigenvectors/) data pasar berada dalam batas teoretis yang diprediksi oleh RMT. Ini berarti mereka hanyalah "noise". Di sisi lain, beberapa [nilai eigen](/p/eigenvalues-and-eigenvectors/) besar di luar batas inilah yang menyimpan informasi bermakna mengenai struktur korelasi pasar yang sebenarnya (faktor pasar dan faktor sektor).
+Hasilnya, mayoritas (lebih dari 90%) [nilai eigen](/id/p/eigenvalues-and-eigenvectors/) data pasar berada dalam batas teoretis yang diprediksi oleh RMT. Ini berarti mereka hanyalah "noise". Di sisi lain, beberapa [nilai eigen](/id/p/eigenvalues-and-eigenvectors/) besar di luar batas inilah yang menyimpan informasi bermakna mengenai struktur korelasi pasar yang sebenarnya (faktor pasar dan faktor sektor).
 
-Berdasarkan ini, teknik "pembersihan (cleaning)" matriks kovarians dikembangkan dengan memfilter [nilai eigen](/p/eigenvalues-and-eigenvectors/) yang merupakan noise. Ini secara dramatis meningkatkan kinerja dan stabilitas portofolio, menjadikannya teknik standar di reksa dana kuantitatif.
+Berdasarkan ini, teknik "pembersihan (cleaning)" matriks kovarians dikembangkan dengan memfilter [nilai eigen](/id/p/eigenvalues-and-eigenvectors/) yang merupakan noise. Ini secara dramatis meningkatkan kinerja dan stabilitas portofolio, menjadikannya teknik standar di reksa dana kuantitatif.
 
 ---
 
@@ -137,13 +137,13 @@ Dalam beberapa tahun terakhir, RMT juga menonjol dalam analisis teoretis Machine
 
 Saat melatih jaringan saraf raksasa, menginisialisasi matriks bobot sangat krusial. Inisialisasi yang tidak tepat akan menyebabkan lenyapnya gradien (Gradient Vanishing) atau meledaknya gradien (Gradient Exploding), sehingga pembelajaran terhenti.
 
-Saat menginisialisasi dengan nilai acak, matriks bobot pada dasarnya adalah matriks acak. RMT memungkinkan analisis yang ketat tentang transisi varians sinyal melalui lapisan demi lapisan dan perilaku gradien pada propagasi mundur. Analisis pengaruh fungsi aktivasi non-linier terhadap spektrum matriks (distribusi [nilai eigen](/p/eigenvalues-and-eigenvectors/)) memberikan justifikasi teoretis untuk metode modern seperti Inisialisasi Xavier dan He.
+Saat menginisialisasi dengan nilai acak, matriks bobot pada dasarnya adalah matriks acak. RMT memungkinkan analisis yang ketat tentang transisi varians sinyal melalui lapisan demi lapisan dan perilaku gradien pada propagasi mundur. Analisis pengaruh fungsi aktivasi non-linier terhadap spektrum matriks (distribusi [nilai eigen](/id/p/eigenvalues-and-eigenvectors/)) memberikan justifikasi teoretis untuk metode modern seperti Inisialisasi Xavier dan He.
 
 ## Distribusi Nilai Eigen Hessian
 
-Untuk memahami dinamika proses pembelajaran, analisis matriks Hessian yang mewakili kelengkungan fungsi kerugian (loss function) amat diperlukan. Pada model raksasa dengan miliaran parameter seperti [LLM](/p/large-language-models-llm-transformer-prompt-engineering/), Hessian adalah matriks raksasa yang sulit diteliti langsung, tetapi RMT memampukan prediksi distribusinya.
+Untuk memahami dinamika proses pembelajaran, analisis matriks Hessian yang mewakili kelengkungan fungsi kerugian (loss function) amat diperlukan. Pada model raksasa dengan miliaran parameter seperti [LLM](/id/p/large-language-models-llm-transformer-prompt-engineering/), Hessian adalah matriks raksasa yang sulit diteliti langsung, tetapi RMT memampukan prediksi distribusinya.
 
-Studi menunjukkan bahwa distribusi [nilai eigen](/p/eigenvalues-and-eigenvectors/) Hessian deep neural network terdiri dari sebuah kelompok besar (bulk) di sekitar nol dan sedikit pencilan besar (outliers). Bulk merepresentasikan arah dengan sedikit informasi yang termodelkan sebagai matriks acak ber-noise, sedangkan outliers mewakili arah kritis yang relevan dengan tugas. Pemahaman ini sangat membantu meningkatkan konvergensi algoritma pengoptimal (seperti SGD dan Adam).
+Studi menunjukkan bahwa distribusi [nilai eigen](/id/p/eigenvalues-and-eigenvectors/) Hessian deep neural network terdiri dari sebuah kelompok besar (bulk) di sekitar nol dan sedikit pencilan besar (outliers). Bulk merepresentasikan arah dengan sedikit informasi yang termodelkan sebagai matriks acak ber-noise, sedangkan outliers mewakili arah kritis yang relevan dengan tugas. Pemahaman ini sangat membantu meningkatkan konvergensi algoritma pengoptimal (seperti SGD dan Adam).
 
 ---
 
@@ -196,12 +196,12 @@ plt.tight_layout()
 plt.show()
 ```
 
-Saat menjalankan kode ini, Anda akan melihat bahwa [nilai eigen](/p/eigenvalues-and-eigenvectors/) dari matriks yang di-generate secara acak akan mendistribusikan pola setengah lingkaran yang indah. Pesona terbesar dari RMT adalah fenomena bahwa meskipun elemen individunya acak, matriks secara keseluruhan membentuk suatu hukum keteraturan yang jelas.
+Saat menjalankan kode ini, Anda akan melihat bahwa [nilai eigen](/id/p/eigenvalues-and-eigenvectors/) dari matriks yang di-generate secara acak akan mendistribusikan pola setengah lingkaran yang indah. Pesona terbesar dari RMT adalah fenomena bahwa meskipun elemen individunya acak, matriks secara keseluruhan membentuk suatu hukum keteraturan yang jelas.
 
 ---
 
 # Penutup
 
-Dalam artikel ini, kita melacak kisah epik Teori Matriks Acak sejak dari fisika nuklir, ke matematika murni, rekayasa keuangan, hingga mencapai puncaknya pada penerapan dalam AI modern. Fakta bahwa sistem rumit dan tampak tak berkaitan ini secara limit dapat diartikan dalam bahasa universal melalui "[nilai eigen](/p/eigenvalues-and-eigenvectors/) matriks acak", menunjukkan betapa dalamnya teka-teki alam dan matematika.
+Dalam artikel ini, kita melacak kisah epik Teori Matriks Acak sejak dari fisika nuklir, ke matematika murni, rekayasa keuangan, hingga mencapai puncaknya pada penerapan dalam AI modern. Fakta bahwa sistem rumit dan tampak tak berkaitan ini secara limit dapat diartikan dalam bahasa universal melalui "[nilai eigen](/id/p/eigenvalues-and-eigenvectors/) matriks acak", menunjukkan betapa dalamnya teka-teki alam dan matematika.
 
 Dalam era di mana data terus melimpah dan model menjadi kian besar, Teori Matriks Acak telah berevolusi dari sebatas abstraksi matematis murni menjadi alat ampuh dalam ilmu data (data science) dan pemecahan masalah empiris dalam Machine Learning. Teori ini akan senantiasa memberi cahaya yang menyingkap tabir bagi pemahaman kita akan sistem kompleks universal di lintas keilmuan.

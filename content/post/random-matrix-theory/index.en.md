@@ -12,7 +12,7 @@ image: eyecatch.jpg
 
 The world may seem complex and unpredictable, but through the lens of mathematics, we sometimes find surprising commonalities across entirely different fields. "Random Matrix Theory (RMT)" is exactly one of those mathematical frameworks with such universality.
 
-A random matrix is a matrix whose elements are given by random variables. At first glance, it is merely a random array of numbers, but as the size of the matrix approaches infinity, a surprisingly beautiful and universal law emerges in the distribution of its [eigenvalues](/p/eigenvalues-and-eigenvectors/). This law lies hidden behind entirely different systems, from the microscopic world of atomic nuclei, the mysteries of prime number distribution, and the price fluctuations in financial markets, to the learning dynamics of state-of-the-art deep learning models.
+A random matrix is a matrix whose elements are given by random variables. At first glance, it is merely a random array of numbers, but as the size of the matrix approaches infinity, a surprisingly beautiful and universal law emerges in the distribution of its [eigenvalues](/en/p/eigenvalues-and-eigenvectors/). This law lies hidden behind entirely different systems, from the microscopic world of atomic nuclei, the mysteries of prime number distribution, and the price fluctuations in financial markets, to the learning dynamics of state-of-the-art deep learning models.
 
 In this article, starting from the historical background of random matrix theory, we will explain its mathematical foundation such as the classification of ensembles (GOE/GUE/GSE), the mathematical proof of Wigner's semicircle law, and even its unexpected connection to the Riemann zeta function. In the latter half, we will delve deeply into modern applications, such as portfolio optimization in financial engineering and the weight initialization problem in AI and deep learning, accompanied by practical visualizations using Python code.
 
@@ -32,7 +32,7 @@ Looking at experimentally observed neutron scattering data, the resonance energy
 
 In 1955, Eugene Wigner proposed a bold idea: instead of treating the Hamiltonian (the matrix representing energy) of this complex quantum system as a specific matrix with detailed physical structure, he modeled it as a "huge symmetric matrix whose elements take random values."
 
-Surprisingly, the spacing distribution of the [eigenvalues](/p/eigenvalues-and-eigenvectors/) of this highly simplified random matrix perfectly matched the spacing distribution of the energy levels in actual uranium nuclei. Wigner further discovered that in the limit as the matrix size $N$ goes to infinity, the overall density distribution of [eigenvalues](/p/eigenvalues-and-eigenvectors/) forms a semicircle shape. This is the famous "Wigner's semicircle law."
+Surprisingly, the spacing distribution of the [eigenvalues](/en/p/eigenvalues-and-eigenvectors/) of this highly simplified random matrix perfectly matched the spacing distribution of the energy levels in actual uranium nuclei. Wigner further discovered that in the limit as the matrix size $N$ goes to infinity, the overall density distribution of [eigenvalues](/en/p/eigenvalues-and-eigenvectors/) forms a semicircle shape. This is the famous "Wigner's semicircle law."
 
 ---
 
@@ -65,11 +65,11 @@ GSE is a set of self-dual Hermitian matrices whose elements consist of quaternio
 
 Let's overview the process of proving Wigner's semicircle law, the most fundamental result of random matrix theory, using the Method of Moments.
 
-Consider an $N \times N$ real symmetric matrix $X$ whose elements $X_{ij}$ are mutually independent random variables with mean 0 and variance 1. We seek the limit ($N \to \infty$) of the [eigenvalue](/p/eigenvalues-and-eigenvectors/) distribution of the scaled matrix $W = \frac{1}{\sqrt{N}}X$.
+Consider an $N \times N$ real symmetric matrix $X$ whose elements $X_{ij}$ are mutually independent random variables with mean 0 and variance 1. We seek the limit ($N \to \infty$) of the [eigenvalue](/en/p/eigenvalues-and-eigenvectors/) distribution of the scaled matrix $W = \frac{1}{\sqrt{N}}X$.
 
 ## Approach via the Method of Moments
 
-To analyze the empirical distribution function of the [eigenvalues](/p/eigenvalues-and-eigenvectors/), we calculate the $k$-th moment $m_k$ of the distribution. Since the trace (sum of diagonal elements) of a matrix equals the sum of its [eigenvalues](/p/eigenvalues-and-eigenvectors/), we evaluate:
+To analyze the empirical distribution function of the [eigenvalues](/en/p/eigenvalues-and-eigenvectors/), we calculate the $k$-th moment $m_k$ of the distribution. Since the trace (sum of diagonal elements) of a matrix equals the sum of its [eigenvalues](/en/p/eigenvalues-and-eigenvectors/), we evaluate:
 $$ m_k = \lim_{N \to \infty} \frac{1}{N} \mathbb{E}[\text{Tr}(W^k)] $$
 
 Expanding the trace gives:
@@ -80,7 +80,7 @@ In the limit $N \to \infty$, the dominant contribution comes from paths of exact
 
 ## Connection Between Catalan Numbers and the Semicircle Law
 
-The total number of such paths (Dyck paths) of length $2m$ is given by the "[Catalan numbers](/p/catalan-numbers/)" $C_m$, famous in combinatorics.
+The total number of such paths (Dyck paths) of length $2m$ is given by the "[Catalan numbers](/en/p/catalan-numbers/)" $C_m$, famous in combinatorics.
 $$ C_m = \frac{1}{m+1} \binom{2m}{m} $$
 
 Therefore, the moments of the limit distribution are:
@@ -98,7 +98,7 @@ Random matrix theory, born to solve problems in physics, brought about a discove
 
 In 1972, number theorist Hugh Montgomery was studying the spacing distribution of the non-trivial zeros of the Riemann zeta function. According to the Riemann hypothesis, all these zeros lie on the "critical line" (the line with real part 1/2) in the complex plane. Montgomery calculated the pair correlation function of the zeros and derived that it equals $1 - \left(\frac{\sin(\pi x)}{\pi x}\right)^2$.
 
-One day, during tea time at the Institute for Advanced Study in Princeton, Montgomery mentioned this result to physicist Freeman Dyson. Dyson was astounded. Why? Because the formula was exactly the same as the spacing distribution of the [eigenvalues](/p/eigenvalues-and-eigenvectors/) of GUE (Gaussian Unitary Ensemble) that Dyson himself had derived.
+One day, during tea time at the Institute for Advanced Study in Princeton, Montgomery mentioned this result to physicist Freeman Dyson. Dyson was astounded. Why? Because the formula was exactly the same as the spacing distribution of the [eigenvalues](/en/p/eigenvalues-and-eigenvectors/) of GUE (Gaussian Unitary Ensemble) that Dyson himself had derived.
 
 ## The Intersection of Prime Numbers and Quantum Chaos
 
@@ -120,11 +120,11 @@ When estimating the sample covariance matrix from the return data of $N$ assets 
 
 ## Noise Cleaning with Random Matrices
 
-This is where random matrix theory comes into play. In 1999, Bouchaud et al. and Laloux et al. independently applied random matrix theory to the covariance matrices of financial markets. They compared the [eigenvalue](/p/eigenvalues-and-eigenvectors/) distribution of the covariance matrix obtained from purely random time-series data (Marchenko-Pastur distribution) with the [eigenvalue](/p/eigenvalues-and-eigenvectors/) distribution of the covariance matrix of actual market data.
+This is where random matrix theory comes into play. In 1999, Bouchaud et al. and Laloux et al. independently applied random matrix theory to the covariance matrices of financial markets. They compared the [eigenvalue](/en/p/eigenvalues-and-eigenvectors/) distribution of the covariance matrix obtained from purely random time-series data (Marchenko-Pastur distribution) with the [eigenvalue](/en/p/eigenvalues-and-eigenvectors/) distribution of the covariance matrix of actual market data.
 
-As a result, they found that the vast majority (over 90%) of the [eigenvalues](/p/eigenvalues-and-eigenvectors/) of market data fall within the theoretical bounds predicted by random matrix theory. In other words, these are merely "noise." On the other hand, it was shown that only a few large [eigenvalues](/p/eigenvalues-and-eigenvectors/) that far exceed the bounds contain meaningful information reflecting the true correlation structure of the market (such as market factors and sector factors).
+As a result, they found that the vast majority (over 90%) of the [eigenvalues](/en/p/eigenvalues-and-eigenvectors/) of market data fall within the theoretical bounds predicted by random matrix theory. In other words, these are merely "noise." On the other hand, it was shown that only a few large [eigenvalues](/en/p/eigenvalues-and-eigenvectors/) that far exceed the bounds contain meaningful information reflecting the true correlation structure of the market (such as market factors and sector factors).
 
-Based on this insight, methods have been developed to "clean" the covariance matrix by filtering the [eigenvalues](/p/eigenvalues-and-eigenvectors/) corresponding to noise (e.g., setting them to zero or replacing them with the average value). This drastically improves the performance and stability of portfolios, and is currently used as a standard technique in many quantitative funds.
+Based on this insight, methods have been developed to "clean" the covariance matrix by filtering the [eigenvalues](/en/p/eigenvalues-and-eigenvectors/) corresponding to noise (e.g., setting them to zero or replacing them with the average value). This drastically improves the performance and stability of portfolios, and is currently used as a standard technique in many quantitative funds.
 
 ---
 
@@ -136,13 +136,13 @@ In recent years, random matrix theory has also been in the spotlight for the the
 
 When training massive neural networks, how to set the initial values of the network's weight matrices is an extremely important problem that determines the success or failure of the training. If the initialization is inappropriate, Gradient Vanishing or Gradient Exploding occurs, halting the learning process.
 
-When initializing weight matrices with random values, it is exactly a random matrix. By applying random matrix theory, one can rigorously analyze the transition of the signal's variance as it passes through layers and the behavior of gradients during backpropagation. For example, analyzing the effect of non-linear activation functions on the spectrum ([eigenvalue](/p/eigenvalues-and-eigenvectors/) distribution) of random matrices provides theoretical justification for modern standard initialization methods like Xavier initialization and He initialization.
+When initializing weight matrices with random values, it is exactly a random matrix. By applying random matrix theory, one can rigorously analyze the transition of the signal's variance as it passes through layers and the behavior of gradients during backpropagation. For example, analyzing the effect of non-linear activation functions on the spectrum ([eigenvalue](/en/p/eigenvalues-and-eigenvectors/) distribution) of random matrices provides theoretical justification for modern standard initialization methods like Xavier initialization and He initialization.
 
 ## Eigenvalue Distribution of the Hessian
 
-Understanding the dynamics of the learning process essentially requires analyzing the Hessian matrix, which represents the curvature of the loss function. The Hessian of [LLMs](/p/large-language-models-llm-transformer-prompt-engineering/) ([Large Language Models](/p/large-language-models-llm-transformer-prompt-engineering/)) with tens of millions to hundreds of billions of parameters is a gigantic matrix, making it difficult to investigate its properties directly, but random matrix theory can be used to approximate and predict its [eigenvalue](/p/eigenvalues-and-eigenvectors/) distribution.
+Understanding the dynamics of the learning process essentially requires analyzing the Hessian matrix, which represents the curvature of the loss function. The Hessian of [LLMs](/en/p/large-language-models-llm-transformer-prompt-engineering/) ([Large Language Models](/en/p/large-language-models-llm-transformer-prompt-engineering/)) with tens of millions to hundreds of billions of parameters is a gigantic matrix, making it difficult to investigate its properties directly, but random matrix theory can be used to approximate and predict its [eigenvalue](/en/p/eigenvalues-and-eigenvectors/) distribution.
 
-Studies have shown that the [eigenvalue](/p/eigenvalues-and-eigenvectors/) distribution of the Hessian in deep neural networks consists of a bulk (a large number of [eigenvalues](/p/eigenvalues-and-eigenvectors/) near zero) and a few large outliers. The bulk part can be modeled as a noisy random matrix (e.g., directions with little information), while the outliers indicate critical learning directions directly tied to the task. Understanding this spectral structure provides extremely valuable insights for improving the convergence of optimization algorithms (like SGD and Adam) and optimizing learning rate schedules.
+Studies have shown that the [eigenvalue](/en/p/eigenvalues-and-eigenvectors/) distribution of the Hessian in deep neural networks consists of a bulk (a large number of [eigenvalues](/en/p/eigenvalues-and-eigenvectors/) near zero) and a few large outliers. The bulk part can be modeled as a noisy random matrix (e.g., directions with little information), while the outliers indicate critical learning directions directly tied to the task. Understanding this spectral structure provides extremely valuable insights for improving the convergence of optimization algorithms (like SGD and Adam) and optimizing learning rate schedules.
 
 ---
 
@@ -195,12 +195,12 @@ plt.tight_layout()
 plt.show()
 ```
 
-When you run this code, you can confirm that the [eigenvalues](/p/eigenvalues-and-eigenvectors/) of the randomly generated matrices are distributed in a beautiful semicircle shape. The greatest appeal of random matrix theory is that, despite the elements of individual matrices being completely random, such an orderly law emerges as a whole.
+When you run this code, you can confirm that the [eigenvalues](/en/p/eigenvalues-and-eigenvectors/) of the randomly generated matrices are distributed in a beautiful semicircle shape. The greatest appeal of random matrix theory is that, despite the elements of individual matrices being completely random, such an orderly law emerges as a whole.
 
 ---
 
 # Conclusion
 
-In this article, we followed the grand narrative of random matrix theory, starting from nuclear physics and extending to pure mathematics, financial engineering, and modern AI technologies. The fact that seemingly unrelated complex systems can communicate using the common language of "the [eigenvalues](/p/eigenvalues-and-eigenvectors/) of random matrices" under extreme conditions demonstrates the mysterious depth possessed by nature and mathematics.
+In this article, we followed the grand narrative of random matrix theory, starting from nuclear physics and extending to pure mathematics, financial engineering, and modern AI technologies. The fact that seemingly unrelated complex systems can communicate using the common language of "the [eigenvalues](/en/p/eigenvalues-and-eigenvectors/) of random matrices" under extreme conditions demonstrates the mysterious depth possessed by nature and mathematics.
 
 In the modern era where data is exploding and models continue to grow enormously, random matrix theory is evolving from a mere subject of abstract mathematics into a powerful weapon for solving practical problems in data science and machine learning. This theory, which explores the universal truths hidden behind complex systems, will undoubtedly continue to be a light that deepens our understanding across various fields in the future.

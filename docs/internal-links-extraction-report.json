@@ -1,20 +1,20 @@
 {
-  "published_articles": 9144,
-  "articles_with_terms": 9144,
+  "published_articles": 9196,
+  "articles_with_terms": 9196,
   "terms_by_language": {
-    "ar": 1286,
-    "de": 1282,
-    "en": 1224,
-    "es": 1227,
-    "fr": 1254,
-    "hi": 1360,
-    "id": 1252,
-    "ja": 1319,
-    "ko": 1301,
-    "pt": 1230,
-    "ru": 1243,
-    "zh-cn": 1299,
-    "zh-tw": 1296
+    "ar": 1292,
+    "de": 1286,
+    "en": 1230,
+    "es": 1233,
+    "fr": 1260,
+    "hi": 1365,
+    "id": 1256,
+    "ja": 1324,
+    "ko": 1307,
+    "pt": 1236,
+    "ru": 1249,
+    "zh-cn": 1304,
+    "zh-tw": 1299
   },
   "ambiguous_terms": [
     {
@@ -123,6 +123,14 @@
       ]
     },
     {
+      "language": "ar",
+      "term": "نظرية الأعداد الأولية",
+      "articles": [
+        "content/post/prime-number-theorem-overview/index.ar.md",
+        "content/post/prime-number-theorem/index.ar.md"
+      ]
+    },
+    {
       "language": "de",
       "term": "alan turing",
       "articles": [
@@ -144,6 +152,22 @@
       "articles": [
         "content/post/paradox-ship-of-theseus/index.de.md",
         "content/post/ship-of-theseus/index.de.md"
+      ]
+    },
+    {
+      "language": "de",
+      "term": "der primzahlsatz",
+      "articles": [
+        "content/post/prime-number-theorem-overview/index.de.md",
+        "content/post/prime-number-theorem/index.de.md"
+      ]
+    },
+    {
+      "language": "de",
+      "term": "die geschichte der kryptographie",
+      "articles": [
+        "content/post/history-of-cryptography-enigma-to-rsa/index.de.md",
+        "content/post/暗号技術の歴史/index.de.md"
       ]
     },
     {
@@ -256,6 +280,14 @@
     },
     {
       "language": "en",
+      "term": "history of cryptography",
+      "articles": [
+        "content/post/history-of-cryptography-enigma-to-rsa/index.en.md",
+        "content/post/暗号技術の歴史/index.en.md"
+      ]
+    },
+    {
+      "language": "en",
       "term": "history of os",
       "articles": [
         "content/post/history-of-linux/index.en.md",
@@ -353,6 +385,14 @@
     },
     {
       "language": "es",
+      "term": "historia de la criptografía",
+      "articles": [
+        "content/post/history-of-cryptography-enigma-to-rsa/index.es.md",
+        "content/post/暗号技術の歴史/index.es.md"
+      ]
+    },
+    {
+      "language": "es",
       "term": "historia de los so",
       "articles": [
         "content/post/history-of-linux/index.es.md",
@@ -417,6 +457,14 @@
       "articles": [
         "content/post/history-of-linux/index.fr.md",
         "content/post/history-of-windows/index.fr.md"
+      ]
+    },
+    {
+      "language": "fr",
+      "term": "histoire de la cryptographie",
+      "articles": [
+        "content/post/history-of-cryptography-enigma-to-rsa/index.fr.md",
+        "content/post/暗号技術の歴史/index.fr.md"
       ]
     },
     {
@@ -524,10 +572,26 @@
     },
     {
       "language": "hi",
+      "term": "अभाज्य संख्या प्रमेय",
+      "articles": [
+        "content/post/prime-number-theorem-overview/index.hi.md",
+        "content/post/prime-number-theorem/index.hi.md"
+      ]
+    },
+    {
+      "language": "hi",
       "term": "एलन ट्यूरिंग",
       "articles": [
         "content/post/biography-alan-turing/index.hi.md",
         "content/post/turing/index.hi.md"
+      ]
+    },
+    {
+      "language": "hi",
+      "term": "क्रिप्टोग्राफी का इतिहास",
+      "articles": [
+        "content/post/history-of-cryptography-enigma-to-rsa/index.hi.md",
+        "content/post/暗号技術の歴史/index.hi.md"
       ]
     },
     {
@@ -627,6 +691,14 @@
     },
     {
       "language": "id",
+      "term": "sejarah kriptografi",
+      "articles": [
+        "content/post/history-of-cryptography-enigma-to-rsa/index.id.md",
+        "content/post/暗号技術の歴史/index.id.md"
+      ]
+    },
+    {
+      "language": "id",
       "term": "sejarah os",
       "articles": [
         "content/post/history-of-linux/index.id.md",
@@ -654,6 +726,14 @@
         "content/post/network-bittorrent/index.id.md",
         "content/post/network-dns/index.id.md",
         "content/post/network-tcp-ip/index.id.md"
+      ]
+    },
+    {
+      "language": "id",
+      "term": "teorema bilangan prima",
+      "articles": [
+        "content/post/prime-number-theorem-overview/index.id.md",
+        "content/post/prime-number-theorem/index.id.md"
       ]
     },
     {
@@ -844,6 +924,14 @@
     },
     {
       "language": "ja",
+      "term": "素数定理",
+      "articles": [
+        "content/post/prime-number-theorem-overview/index.md",
+        "content/post/prime-number-theorem/index.md"
+      ]
+    },
+    {
+      "language": "ja",
       "term": "金融・暗号技術",
       "articles": [
         "content/post/history-electronic-money/index.md",
@@ -975,6 +1063,14 @@
     },
     {
       "language": "ko",
+      "term": "소수 정리",
+      "articles": [
+        "content/post/prime-number-theorem-overview/index.ko.md",
+        "content/post/prime-number-theorem/index.ko.md"
+      ]
+    },
+    {
+      "language": "ko",
       "term": "스리니바사 라마누잔",
       "articles": [
         "content/post/biography-srinivasa-ramanujan/index.ko.md",
@@ -1075,6 +1171,14 @@
       ]
     },
     {
+      "language": "pt",
+      "term": "teorema dos números primos",
+      "articles": [
+        "content/post/prime-number-theorem-overview/index.pt.md",
+        "content/post/prime-number-theorem/index.pt.md"
+      ]
+    },
+    {
       "language": "ru",
       "term": "gnfs",
       "articles": [
@@ -1089,6 +1193,14 @@
       "articles": [
         "content/post/biography-alan-turing/index.ru.md",
         "content/post/turing/index.ru.md"
+      ]
+    },
+    {
+      "language": "ru",
+      "term": "история криптографии",
+      "articles": [
+        "content/post/history-of-cryptography-enigma-to-rsa/index.ru.md",
+        "content/post/暗号技術の歴史/index.ru.md"
       ]
     },
     {
@@ -1189,6 +1301,14 @@
     },
     {
       "language": "zh-cn",
+      "term": "素数定理",
+      "articles": [
+        "content/post/prime-number-theorem-overview/index.zh-cn.md",
+        "content/post/prime-number-theorem/index.zh-cn.md"
+      ]
+    },
+    {
+      "language": "zh-cn",
       "term": "网络技术",
       "articles": [
         "content/post/history-of-http/index.zh-cn.md",
@@ -1267,6 +1387,14 @@
     },
     {
       "language": "zh-tw",
+      "term": "密碼學的歷史",
+      "articles": [
+        "content/post/history-of-cryptography-enigma-to-rsa/index.zh-tw.md",
+        "content/post/暗号技術の歴史/index.zh-tw.md"
+      ]
+    },
+    {
+      "language": "zh-tw",
       "term": "忒修斯之船",
       "articles": [
         "content/post/paradox-ship-of-theseus/index.zh-tw.md",
@@ -1320,6 +1448,14 @@
       "articles": [
         "content/post/biography-alan-turing/index.zh-tw.md",
         "content/post/turing/index.zh-tw.md"
+      ]
+    },
+    {
+      "language": "zh-tw",
+      "term": "質數定理",
+      "articles": [
+        "content/post/prime-number-theorem-overview/index.zh-tw.md",
+        "content/post/prime-number-theorem/index.zh-tw.md"
       ]
     },
     {

@@ -259,7 +259,7 @@ FHEが実用的な速度に到達しつつある今、以下のような分野�
 
 ## 9. 結論：暗号の未来は「見えない計算」へ
 
-1970年代に[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号（[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)）が発明されてインターネット上の安全な通信（HTTPSなど）が可能になったように、Craig GentryによるFHEの発明は、暗号の歴史における最も重要なマイルストーンの一つです。
+1970年代に[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号（[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)）が発明されてインターネット上の安全な通信（HTTPSなど）が可能になったように、Craig GentryによるFHEの発明は、[暗号の歴史](/p/history-of-cryptography-enigma-to-rsa/)における最も重要なマイルストーンの一つです。
 
 現在、完全準同型暗号（FHE）は研究室の理論から飛び出し、Microsoft、IBM、Intel、Google、そして多くのスタートアップが実用化に向けてしのぎを削る段階に入っています。計算コストやデータサイズの課題は依然として存在しますが、アルゴリズムの洗練とハードウェアアクセラレータの進化により、[ムーアの法則](/p/business-moores-law/)を超えるペースで性能向上が続いています。
 

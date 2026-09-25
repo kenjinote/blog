@@ -14,13 +14,13 @@ Primzahlen (Prime Numbers) sind natürliche Zahlen, die keine positiven Teiler a
 
 Betrachtet man jedoch das Auftreten von Primzahlen auf den ersten Blick, so lässt sich keine Regelmäßigkeit erkennen. Manchmal treten sie dicht als Primzahlzwillinge wie 11 und 13 auf, und manchmal gibt es „Primzahlwüsten“, in denen selbst nach Tausenden oder Zehntausenden von Zahlen keine nächste Primzahl erscheint. Diese lokale Zufälligkeit und Unvorhersehbarkeit war eine große Hürde für Mathematiker.
 
-Trotzdem wurde entdeckt, dass sich in ihrem makroskopischen Verhalten, d. h. in der Gesamtbetrachtung „Welchen Anteil machen Primzahlen in der Gesamtheit aller Zahlen aus?“, ein erstaunlich schönes und glattes Gesetz verbirgt. Das ist der **Primzahlsatz (Prime Number Theorem, PNT)**, der in diesem Artikel erläutert wird.
+Trotzdem wurde entdeckt, dass sich in ihrem makroskopischen Verhalten, d. h. in der Gesamtbetrachtung „Welchen Anteil machen Primzahlen in der Gesamtheit aller Zahlen aus?“, ein erstaunlich schönes und glattes Gesetz verbirgt. Das ist der **[Primzahlsatz](/de/p/prime-number-theorem/) ([Prime Number Theorem](/de/p/prime-number-theorem/), PNT)**, der in diesem Artikel erläutert wird.
 
 ## 2. Was ist der Primzahlsatz? Die großartige Intuition von Gauß
 
-Der Primzahlsatz beschreibt, wie die Anzahl der Primzahlen $\pi(x)$, die kleiner oder gleich einer gegebenen reellen Zahl $x$ sind, ansteigt, wenn $x$ größer wird.
+Der [Primzahlsatz](/de/p/prime-number-theorem/) beschreibt, wie die Anzahl der Primzahlen $\pi(x)$, die kleiner oder gleich einer gegebenen reellen Zahl $x$ sind, ansteigt, wenn $x$ größer wird.
 
-Mathematisch ausgedrückt lässt sich der Primzahlsatz wie folgt formulieren:
+Mathematisch ausgedrückt lässt sich der [Primzahlsatz](/de/p/prime-number-theorem/) wie folgt formulieren:
 
 $$
 \lim_{x \to \infty} \frac{\pi(x)}{x / \ln(x)} = 1
@@ -30,7 +30,7 @@ Dies bedeutet, dass „die Anzahl der Primzahlen $\pi(x)$ bis $x$ asymptotisch g
 
 ### Die Entdeckung des 15-jährigen Gauß
 
-Der erste, der diese erstaunliche Tatsache bemerkte, war das damals erst 15-jährige Genie Carl Friedrich Gauß. Im Jahr 1792 untersuchte Gauß intensiv Logarithmentafeln und Primzahltabellen und erkannte die Tendenz, dass die Dichte der Primzahlen umgekehrt proportional zum natürlichen Logarithmus abnimmt. Er vermutete folgende Näherungsformel:
+Der erste, der diese erstaunliche Tatsache bemerkte, war das damals erst 15-jährige Genie [Carl Friedrich Gauß](/de/p/gauss/). Im Jahr 1792 untersuchte Gauß intensiv Logarithmentafeln und Primzahltabellen und erkannte die Tendenz, dass die Dichte der Primzahlen umgekehrt proportional zum natürlichen Logarithmus abnimmt. Er vermutete folgende Näherungsformel:
 
 $$
 \pi(x) \approx \operatorname{Li}(x) = \int_{2}^{x} \frac{dt}{\ln t}
@@ -48,11 +48,11 @@ $$
 0.92129 \frac{x}{\ln x} < \pi(x) < 1.10555 \frac{x}{\ln x}
 $$
 
-Tschebyscheff bewies auch, dass, falls der Grenzwert von $\pi(x) / (x/\ln x)$ existiert, dieser zwingend 1 sein muss. Er konnte jedoch nicht beweisen, dass der Grenzwert selbst existiert (also keinen vollständigen Beweis für den Primzahlsatz liefern).
+Tschebyscheff bewies auch, dass, falls der Grenzwert von $\pi(x) / (x/\ln x)$ existiert, dieser zwingend 1 sein muss. Er konnte jedoch nicht beweisen, dass der Grenzwert selbst existiert (also keinen vollständigen Beweis für den [Primzahlsatz](/de/p/prime-number-theorem/) liefern).
 
 ## 4. Die Riemannsche Zeta-Funktion und die Einführung der komplexen Analysis
 
-Der größte Durchbruch auf dem Weg zum Beweis des Primzahlsatzes wurde von Bernhard Riemann erzielt. In seiner bahnbrechenden Arbeit von 1859, „Ueber die Anzahl der Primzahlen unter einer gegebenen Grösse“, zeigte Riemann, dass die Verteilung der Primzahlen tief mit dem Verhalten **komplexer Funktionen** verbunden ist.
+Der größte Durchbruch auf dem Weg zum Beweis des Primzahlsatzes wurde von [Bernhard Riemann](/de/p/riemann/) erzielt. In seiner bahnbrechenden Arbeit von 1859, „Ueber die Anzahl der Primzahlen unter einer gegebenen Grösse“, zeigte Riemann, dass die Verteilung der Primzahlen tief mit dem Verhalten **komplexer Funktionen** verbunden ist.
 
 Die Funktion, die er verwendete, wird heute als **Riemannsche Zeta-Funktion** $\zeta(s)$ bezeichnet.
 
@@ -74,9 +74,9 @@ graph TD
 
 ## 5. Der vollständige Beweis durch Hadamard und de la Vallée Poussin
 
-Etwa 40 Jahre nach Riemanns bahnbrechendem Ansatz gelang es 1896 dem Franzosen Jacques Hadamard und dem Belgier Charles de la Vallée Poussin jeweils unabhängig voneinander, den Primzahlsatz vollständig zu beweisen.
+Etwa 40 Jahre nach Riemanns bahnbrechendem Ansatz gelang es 1896 dem Franzosen Jacques Hadamard und dem Belgier Charles de la Vallée Poussin jeweils unabhängig voneinander, den [Primzahlsatz](/de/p/prime-number-theorem/) vollständig zu beweisen.
 
-Der Kern ihres Beweises bestand darin zu zeigen, dass „die Zeta-Funktion $\zeta(s)$ keine Nullstellen auf der Geraden $\operatorname{Re}(s) = 1$ in der komplexen Ebene hat“. Durch die Anwendung mächtiger Werkzeuge der komplexen Analysis (wie dem Cauchyschen Integralsatz) lässt sich der Primzahlsatz aus dieser Nichtexistenz von Nullstellen ableiten.
+Der Kern ihres Beweises bestand darin zu zeigen, dass „die Zeta-Funktion $\zeta(s)$ keine Nullstellen auf der Geraden $\operatorname{Re}(s) = 1$ in der komplexen Ebene hat“. Durch die Anwendung mächtiger Werkzeuge der komplexen Analysis (wie dem Cauchyschen Integralsatz) lässt sich der [Primzahlsatz](/de/p/prime-number-theorem/) aus dieser Nichtexistenz von Nullstellen ableiten.
 
 Damit wurde das asymptotische Verteilungsgesetz der Primzahlen, das Gauß im Alter von 15 Jahren vermutete, nach über 100 Jahren endlich als mathematischer „Satz“ etabliert.
 
@@ -106,7 +106,7 @@ Die Theorie der Primzahlen beschränkt sich nicht nur auf die reine Mathematik. 
 
 Zum Beispiel nutzt die **RSA-Verschlüsselung**, die eine sichere Kommunikation im Internet ermöglicht, die Eigenschaft, dass „es einfach ist, zwei riesige Primzahlen miteinander zu multiplizieren, aber extrem schwierig, dieses Produkt wieder in seine ursprünglichen Primfaktoren zu zerlegen“.
 
-Um Schlüssel für die RSA-Verschlüsselung zu generieren, muss man schnell riesige Primzahlen mit Hunderten von Stellen (Tausenden von Bits) finden. Hierbei spielt der Primzahlsatz eine wichtige Rolle. Laut dem Primzahlsatz beträgt die Wahrscheinlichkeit, dass eine Zahl in der Nähe von $N$ eine Primzahl ist, $1 / \ln(N)$. Wählt man also zufällig eine Zahl im Bereich einer 2048-Bit-Zahl (etwa $10^{616}$), muss man ungefähr $616 \times \ln(10) \approx 1418$ Zahlen testen, um fast sicher eine Primzahl zu finden. Dank des Primzahlsatzes ist garantiert, dass Algorithmen zur Suche nach riesigen Primzahlen in realistischer Zeit abgeschlossen werden können.
+Um Schlüssel für die RSA-Verschlüsselung zu generieren, muss man schnell riesige Primzahlen mit Hunderten von Stellen (Tausenden von Bits) finden. Hierbei spielt der [Primzahlsatz](/de/p/prime-number-theorem/) eine wichtige Rolle. Laut dem [Primzahlsatz](/de/p/prime-number-theorem/) beträgt die Wahrscheinlichkeit, dass eine Zahl in der Nähe von $N$ eine Primzahl ist, $1 / \ln(N)$. Wählt man also zufällig eine Zahl im Bereich einer 2048-Bit-Zahl (etwa $10^{616}$), muss man ungefähr $616 \times \ln(10) \approx 1418$ Zahlen testen, um fast sicher eine Primzahl zu finden. Dank des Primzahlsatzes ist garantiert, dass Algorithmen zur Suche nach riesigen Primzahlen in realistischer Zeit abgeschlossen werden können.
 
 ### Der Miller-Rabin-Primzahltest
 
@@ -160,7 +160,7 @@ Dieser Algorithmus ist eine Erweiterung des kleinen Fermatschen Satzes, und die 
 
 ## 8. Fazit: Primzahlen als Code des Universums
 
-Der Primzahlsatz zeigt eine tiefe mathematische Philosophie: „Dinge, die auf individueller Ebene völlig chaotisch erscheinen, können in ihrer Gesamtheit eine äußerst raffinierte Ordnung hervorbringen.“
+Der [Primzahlsatz](/de/p/prime-number-theorem/) zeigt eine tiefe mathematische Philosophie: „Dinge, die auf individueller Ebene völlig chaotisch erscheinen, können in ihrer Gesamtheit eine äußerst raffinierte Ordnung hervorbringen.“
 
 Von der Intuition von Gauß über die beharrlichen Analysen von Tschebyscheff und Riemanns Sprung in die komplexe Ebene bis hin zum endgültigen Beweis durch Hadamard und de la Vallée Poussin ist die Geschichte des Primzahlsatzes wahrlich die Geschichte des menschlichen Intellekts selbst.
 

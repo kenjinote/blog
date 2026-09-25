@@ -31,6 +31,10 @@ def protected_ranges(text: str, protect_paragraphs: bool = True) -> list[tuple[i
     # Paired HTML/shortcodes can span paragraphs. Leave such documents untouched.
     if re.search(r'<[A-Za-z/!]|\{\{[<%]', text[body:]):
         return [(0, len(text))]
+    # Unescaped prices can shift every subsequent single-dollar math pair.
+    # Leave ambiguous documents untouched rather than interpret currency as math.
+    if re.search(r'(?<![\\$])\$\d[\d,.]*[ \t]+[^\W\d_]', text[body:]):
+        return [(0, len(text))]
     fence = None
     offset = body
     for line in text[body:].splitlines(keepends=True):
@@ -228,9 +232,13 @@ def load_rules(config: Path, root: Path, published: dict) -> dict:
     return result
 
 
-def published_pages() -> dict:
-    process = subprocess.run(['hugo', 'list', 'published'], cwd=ROOT, capture_output=True, encoding='utf-8', check=True)
-    rows = list(csv.DictReader(io.StringIO(process.stdout)))
+def published_pages(inventory: Path | None = None) -> dict:
+    if inventory:
+        listing = inventory.read_text(encoding='utf-8-sig')
+    else:
+        process = subprocess.run(['hugo', 'list', 'published'], cwd=ROOT, capture_output=True, encoding='utf-8', check=True)
+        listing = process.stdout
+    rows = list(csv.DictReader(io.StringIO(listing)))
     if not rows or not {'path', 'permalink', 'kind'} <= rows[0].keys():
         raise ValueError('hugo list published のCSVを読み取れませんでした')
     return {(ROOT / row['path']).resolve(): row for row in rows}
@@ -244,8 +252,9 @@ def main() -> int:
     parser.add_argument('--quiet', action='store_true', help='記事ごとのdiffを省略し集計だけ表示')
     parser.add_argument('--report', type=Path, help='言語別・記事別の処理結果をJSONに保存')
     parser.add_argument('--localize-existing', action='store_true', help='既存リンクも公開済みの同じ言語の対応記事へ修正')
+    parser.add_argument('--inventory', type=Path, help='hugo list published の保存済みCSVで対象時点を固定')
     args = parser.parse_args()
-    published = published_pages()
+    published = published_pages(args.inventory)
     rules = load_rules(args.generated, ROOT, published) if args.generated.exists() else {}
     for lang, manual in load_rules(args.config, ROOT, published).items():
         overrides = {key.casefold() for key in manual}
@@ -269,7 +278,7 @@ def main() -> int:
         if protected_ranges(source) == [(0, len(source))]:
             protected_files[lang] += 1
             skipped_articles.append({'article': path.relative_to(ROOT).as_posix(),
-                                     'reason': 'HTML/shortcode or missing/unclosed frontmatter'})
+                                     'reason': 'HTML/shortcode, ambiguous dollar amount, or missing/unclosed frontmatter'})
             continue
         localize = localizer_for(lang)
         needs_localization = args.localize_existing and any(

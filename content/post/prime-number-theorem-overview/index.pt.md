@@ -14,7 +14,7 @@ Os Números Primos (Prime Numbers) são números naturais que não possuem divis
 
 No entanto, à primeira vista, não é possível encontrar qualquer regularidade no padrão de aparecimento dos números primos. Às vezes, eles aparecem densamente agrupados como primos gêmeos, como 11 e 13, e outras vezes existe um "deserto de números primos" onde o próximo número primo não aparece por milhares ou dezenas de milhares de números. Essa aleatoriedade local e imprevisibilidade representaram uma grande barreira para os matemáticos.
 
-Apesar disso, em uma perspectiva macroscópica, ou seja, no comportamento global de "qual é a proporção de números primos entre todos os números", descobriu-se que uma lei surpreendentemente bela e suave está oculta. Esse é o **Teorema dos Números Primos (Prime Number Theorem, PNT)** que será explicado neste artigo.
+Apesar disso, em uma perspectiva macroscópica, ou seja, no comportamento global de "qual é a proporção de números primos entre todos os números", descobriu-se que uma lei surpreendentemente bela e suave está oculta. Esse é o **Teorema dos Números Primos ([Prime Number Theorem](/pt/p/prime-number-theorem/), PNT)** que será explicado neste artigo.
 
 ## 2. O que é o Teorema dos Números Primos? A grande intuição de Gauss
 
@@ -30,7 +30,7 @@ Isso significa que "o número de números primos $\pi(x)$ menores ou iguais a $x
 
 ### A descoberta por Gauss aos 15 anos
 
-O primeiro a perceber esse fato surpreendente foi o gênio Carl Friedrich Gauss, que tinha apenas 15 anos na época. Em 1792, Gauss estudou avidamente as tabelas de logaritmos e de números primos, e interpretou a tendência de que a densidade dos números primos diminuía de forma inversamente proporcional ao logaritmo natural. Ele conjecturou a seguinte equação de aproximação:
+O primeiro a perceber esse fato surpreendente foi o gênio [Carl Friedrich Gauss](/pt/p/gauss/), que tinha apenas 15 anos na época. Em 1792, Gauss estudou avidamente as tabelas de logaritmos e de números primos, e interpretou a tendência de que a densidade dos números primos diminuía de forma inversamente proporcional ao logaritmo natural. Ele conjecturou a seguinte equação de aproximação:
 
 $$
 \pi(x) \approx \operatorname{Li}(x) = \int_{2}^{x} \frac{dt}{\ln t}
@@ -52,7 +52,7 @@ Chebyshev também provou que, se o limite de $\pi(x) / (x/\ln x)$ existe, ele de
 
 ## 4. Função Zeta de Riemann e a introdução da análise complexa
 
-O maior avanço em direção à prova do teorema dos números primos foi trazido por Bernhard Riemann. Em seu artigo revolucionário de 1859, "Sobre o Número de Primos Menores que uma Dada Magnitude", Riemann mostrou que a distribuição dos números primos e o comportamento das **funções complexas** estão profundamente interligados.
+O maior avanço em direção à prova do teorema dos números primos foi trazido por [Bernhard Riemann](/pt/p/riemann/). Em seu artigo revolucionário de 1859, "Sobre o Número de Primos Menores que uma Dada Magnitude", Riemann mostrou que a distribuição dos números primos e o comportamento das **funções complexas** estão profundamente interligados.
 
 O que ele usou foi a função $\zeta(s)$, hoje chamada de **função zeta de Riemann**.
 
@@ -76,7 +76,7 @@ graph TD
 
 Em 1896, cerca de 40 anos após a abordagem revolucionária de Riemann, o francês Jacques Hadamard e o belga Charles de la Vallée Poussin conseguiram, de forma independente, provar completamente o teorema dos números primos.
 
-O núcleo de suas provas consistia em demonstrar que "a função zeta $\zeta(s)$ não possui zeros na reta $\operatorname{Re}(s) = 1$ no plano complexo". Ao utilizar ferramentas poderosas da análise complexa (como o teorema integral de Cauchy), o teorema dos números primos pôde ser derivado a partir da inexistência desses zeros.
+O núcleo de suas provas consistia em demonstrar que "a função zeta $\zeta(s)$ não possui zeros na reta $\operatorname{Re}(s) = 1$ no plano complexo". Ao utilizar ferramentas poderosas da análise complexa (como o [teorema integral de Cauchy](/pt/p/cauchys-integral-theorem/)), o teorema dos números primos pôde ser derivado a partir da inexistência desses zeros.
 
 Com isso, a lei de distribuição assintótica dos números primos, que Gauss havia conjecturado aos 15 anos, finalmente se estabeleceu como um "teorema" matemático após mais de 100 anos.
 

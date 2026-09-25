@@ -103,6 +103,10 @@ class InternalLinksTest(unittest.TestCase):
         self.assertIn(' who ', updated)
         self.assertIn(' ram ', updated)
 
+    def test_currency_does_not_shift_math_pairs(self):
+        source = FM + '$5 cost, followed by $Goldbach$ and more text.\n\nGoldbach'
+        self.assertEqual(link_text(source, RULES), (source, 0))
+
     def test_localization_uses_real_sibling_url(self):
         published = {
             ROOT / 'content/post/test/index.md': {'kind': 'page', 'permalink': 'https://kenji.blog/p/test/'},

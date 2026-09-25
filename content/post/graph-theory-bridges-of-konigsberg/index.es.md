@@ -17,9 +17,9 @@ Entre los habitantes de Königsberg de la época, se popularizó un juego intele
 
 Todos intentaban resolverlo mientras paseaban, pero nadie lograba tener éxito. Sin embargo, tampoco había nadie capaz de explicar lógicamente por qué era imposible. Esto fue conocido como el "Problema de los puentes de Königsberg" y fue tratado durante mucho tiempo como un rompecabezas sin resolver.
 
-Quien arrojó una luz matemática completamente nueva sobre lo que parecía ser un simple juego de la ciudad, fue el excepcional genio matemático **Leonhard Euler**. Sus reflexiones no se limitaron a encontrar la respuesta al rompecabezas, sino que fundaron áreas gigantescas de las matemáticas que luego serían conocidas como la "Teoría de grafos" y la "Topología".
+Quien arrojó una luz matemática completamente nueva sobre lo que parecía ser un simple juego de la ciudad, fue el excepcional genio matemático **[Leonhard Euler](/es/p/euler/)**. Sus reflexiones no se limitaron a encontrar la respuesta al rompecabezas, sino que fundaron áreas gigantescas de las matemáticas que luego serían conocidas como la "[Teoría de grafos](/es/p/graph-theory-dijkstra-a-star/)" y la "Topología".
 
-En este artículo, trazaremos el magnífico recorrido que comienza con la formulación matemática de este descubrimiento histórico de Euler, pasando por la teoría de redes moderna, hasta llegar a los algoritmos de búsqueda de rutas (algoritmo de Dijkstra, algoritmo de búsqueda A*) que utilizamos a diario en nuestros navegadores GPS.
+En este artículo, trazaremos el magnífico recorrido que comienza con la formulación matemática de este descubrimiento histórico de Euler, pasando por la teoría de redes moderna, hasta llegar a los [algoritmos de búsqueda](/es/p/search-algorithms-linear-binary-hash-table-principles/) de rutas (algoritmo de Dijkstra, algoritmo de búsqueda A*) que utilizamos a diario en nuestros navegadores GPS.
 
 ---
 
@@ -51,7 +51,7 @@ Un modelo matemático compuesto únicamente por puntos y líneas de esta manera 
 
 ## 3. Las condiciones matemáticas para el trazado continuo: Ciclo euleriano y camino euleriano
 
-Usando el lenguaje de la teoría de grafos, la pregunta de los habitantes puede reformularse de la siguiente manera:
+Usando el lenguaje de la [teoría de grafos](/es/p/graph-theory-dijkstra-a-star/), la pregunta de los habitantes puede reformularse de la siguiente manera:
 **"En un grafo dado, ¿existe una ruta que pase exactamente una vez por cada arista y regrese al vértice original (Ciclo euleriano: Eulerian Circuit)?"**
 
 Para este problema, Euler introdujo un concepto extremadamente simple y poderoso: el **"Grado de un vértice (Degree)"**. El grado de un vértice es "el número de aristas conectadas a ese vértice".
@@ -83,9 +83,9 @@ Sorprendentemente, el grado de los 4 vértices es impar (vértices impares). Dad
 
 ## 4. La evolución de la teoría de grafos: De la topología a la informática
 
-Tras el descubrimiento de Euler, la teoría de grafos se desarrolló como una importante rama de las matemáticas. Muchos problemas difíciles, como el problema de coloración de mapas (teorema de los cuatro colores) o el problema del ciclo hamiltoniano (una ruta que pasa por todos los vértices exactamente una vez), se debatieron en el escenario de la teoría de grafos.
+Tras el descubrimiento de Euler, la [teoría de grafos](/es/p/graph-theory-dijkstra-a-star/) se desarrolló como una importante rama de las matemáticas. Muchos problemas difíciles, como el problema de coloración de mapas (teorema de los cuatro colores) o el problema del ciclo hamiltoniano (una ruta que pasa por todos los vértices exactamente una vez), se debatieron en el escenario de la [teoría de grafos](/es/p/graph-theory-dijkstra-a-star/).
 
-Sin embargo, con la llegada de las computadoras a finales del siglo XX, la teoría de grafos fue más allá de las meras matemáticas y evolucionó hasta convertirse en una poderosa herramienta (algoritmo) para resolver problemas del mundo real. Gran parte de la infraestructura de la sociedad moderna, como el enrutamiento en redes de comunicación, el análisis de relaciones en redes sociales y la optimización de redes eléctricas, se basa en la teoría de grafos.
+Sin embargo, con la llegada de las computadoras a finales del siglo XX, la [teoría de grafos](/es/p/graph-theory-dijkstra-a-star/) fue más allá de las meras matemáticas y evolucionó hasta convertirse en una poderosa herramienta (algoritmo) para resolver problemas del mundo real. Gran parte de la infraestructura de la sociedad moderna, como el enrutamiento en redes de comunicación, el análisis de relaciones en redes sociales y la optimización de redes eléctricas, se basa en la [teoría de grafos](/es/p/graph-theory-dijkstra-a-star/).
 
 Un problema particularmente cercano a nuestra vida diaria es el **Problema del camino más corto (Shortest Path Problem)**.
 Mientras que Euler se preguntaba si "se puede pasar por todos los caminos exactamente una vez", el problema que resuelven los navegadores GPS modernos o Google Maps es "¿cuál es la ruta con el menor costo (distancia o tiempo) hacia el destino?".
@@ -98,7 +98,7 @@ Los algoritmos para resolver el problema del camino más corto se han perfeccion
 
 ### 5.1 Algoritmo de Dijkstra (Dijkstra's Algorithm)
 
-Este algoritmo, ideado por Edsger Dijkstra en 1956, busca la distancia más corta desde un punto de partida hacia todos los vértices en un grafo donde las aristas tienen pesos (costos de distancia o tiempo).
+Este algoritmo, ideado por [Edsger Dijkstra](/es/p/biography-edsger-dijkstra/) en 1956, busca la distancia más corta desde un punto de partida hacia todos los vértices en un grafo donde las aristas tienen pesos (costos de distancia o tiempo).
 
 **[Mecanismo básico]**
 1. Se establece la distancia del punto de partida en 0 y la distancia provisional de todos los demás vértices en infinito ($\infty$).
@@ -124,7 +124,7 @@ En el caso de los navegadores GPS, es común utilizar la "distancia en línea re
 
 ## 6. Procesamiento de grafos y búsqueda de rutas en Python
 
-En la ciencia de datos y la implementación de algoritmos modernos, la biblioteca estándar para manejar la teoría de grafos es **NetworkX** en Python.
+En la ciencia de datos y la implementación de algoritmos modernos, la biblioteca estándar para manejar la [teoría de grafos](/es/p/graph-theory-dijkstra-a-star/) es **NetworkX** en Python.
 Aquí presentaremos un ejemplo de código donde construimos un grafo simple usando NetworkX y realizamos una búsqueda de rutas utilizando el algoritmo de Dijkstra y el algoritmo A*.
 
 ```python
@@ -178,8 +178,8 @@ Al ejecutar este código, se puede confirmar que tanto el algoritmo de Dijkstra 
 
 ## 7. Epílogo: Las conexiones dan forma al mundo
 
-El modesto rompecabezas con el que se entretenían los habitantes de Königsberg, a través de los ojos de un genio llamado Leonhard Euler, se transformó en una nueva lente para reinterpretar el mundo como una "conexión de puntos y líneas".
+El modesto rompecabezas con el que se entretenían los habitantes de Königsberg, a través de los ojos de un genio llamado [Leonhard Euler](/es/p/euler/), se transformó en una nueva lente para reinterpretar el mundo como una "conexión de puntos y líneas".
 
 Hoy en día, el hecho de que podamos cargar instantáneamente páginas web de servidores lejanos en Internet, o de que un navegador GPS nos guíe con precisión por tierras desconocidas, es fruto de aquella abstracción matemática que comenzó en los antiguos puentes prusianos.
 
-En este mismo momento, la teoría de grafos sigue desempeñando un papel activo en la vanguardia de la ciencia y la tecnología: en la identificación de influencers en redes sociales, la predicción de rutas de infección de virus o el diseño de nuevos compuestos químicos. Al descifrar matemáticamente las "conexiones", podemos encontrar un orden hermoso y soluciones en un mundo que a primera vista parece demasiado complejo.
+En este mismo momento, la [teoría de grafos](/es/p/graph-theory-dijkstra-a-star/) sigue desempeñando un papel activo en la vanguardia de la ciencia y la tecnología: en la identificación de influencers en redes sociales, la predicción de rutas de infección de virus o el diseño de nuevos compuestos químicos. Al descifrar matemáticamente las "conexiones", podemos encontrar un orden hermoso y soluciones en un mundo que a primera vista parece demasiado complejo.

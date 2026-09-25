@@ -14,7 +14,7 @@ Bilangan prima (Prime Numbers) adalah bilangan asli yang tidak memiliki pembagi 
 
 Namun, jika kita melihat sekilas pola kemunculan bilangan prima, tidak ada keteraturan apa pun yang bisa ditemukan di sana. Terkadang mereka muncul berdekatan sebagai bilangan prima kembar seperti 11 dan 13, dan di lain waktu terdapat "gurun bilangan prima" di mana bilangan prima berikutnya tidak muncul meskipun berjarak ribuan atau puluhan ribu angka. Keacakan lokal dan ketidakpastian ini merupakan hambatan besar bagi para matematikawan.
 
-Meskipun demikian, ditemukan bahwa dari perspektif makroskopis, yaitu perilaku global tentang "berapa proporsi bilangan prima yang ada di dalam keseluruhan bilangan", tersembunyi sebuah hukum yang luar biasa indah dan mulus. Itulah yang akan dijelaskan dalam artikel ini, **Teorema Bilangan Prima (Prime Number Theorem, PNT)**.
+Meskipun demikian, ditemukan bahwa dari perspektif makroskopis, yaitu perilaku global tentang "berapa proporsi bilangan prima yang ada di dalam keseluruhan bilangan", tersembunyi sebuah hukum yang luar biasa indah dan mulus. Itulah yang akan dijelaskan dalam artikel ini, **Teorema Bilangan Prima ([Prime Number Theorem](/id/p/prime-number-theorem/), PNT)**.
 
 ## 2. Apa itu Teorema Bilangan Prima? Intuisi Hebat Gauss
 
@@ -30,7 +30,7 @@ Ini berarti bahwa "jumlah bilangan prima $\pi(x)$ yang kurang dari atau sama den
 
 ### Penemuan oleh Gauss yang Berusia 15 Tahun
 
-Orang pertama yang menyadari fakta luar biasa ini adalah seorang jenius yang saat itu baru berusia 15 tahun, Carl Friedrich Gauss. Pada tahun 1792, Gauss mempelajari dengan sungguh-sungguh tabel logaritma dan tabel bilangan prima, lalu membaca kecenderungan di mana kepadatan bilangan prima menurun berbanding terbalik dengan logaritma natural. Dia memprediksi rumus hampiran sebagai berikut.
+Orang pertama yang menyadari fakta luar biasa ini adalah seorang jenius yang saat itu baru berusia 15 tahun, [Carl Friedrich Gauss](/id/p/gauss/). Pada tahun 1792, Gauss mempelajari dengan sungguh-sungguh tabel logaritma dan tabel bilangan prima, lalu membaca kecenderungan di mana kepadatan bilangan prima menurun berbanding terbalik dengan logaritma natural. Dia memprediksi rumus hampiran sebagai berikut.
 
 $$
 \pi(x) \approx \operatorname{Li}(x) = \int_{2}^{x} \frac{dt}{\ln t}
@@ -52,7 +52,7 @@ Chebyshev juga membuktikan bahwa jika limit dari $\pi(x) / (x/\ln x)$ ada, maka 
 
 ## 4. Fungsi Zeta Riemann dan Pengenalan Analisis Kompleks
 
-Terobosan terbesar menuju pembuktian Teorema Bilangan Prima dibawa oleh Bernhard Riemann. Dalam makalah terobosan yang diterbitkan pada tahun 1859, "Tentang Jumlah Bilangan Prima di Bawah Magnitudo Tertentu", Riemann menunjukkan bahwa distribusi bilangan prima terkait erat dengan perilaku **fungsi kompleks**.
+Terobosan terbesar menuju pembuktian Teorema Bilangan Prima dibawa oleh [Bernhard Riemann](/id/p/riemann/). Dalam makalah terobosan yang diterbitkan pada tahun 1859, "Tentang Jumlah Bilangan Prima di Bawah Magnitudo Tertentu", Riemann menunjukkan bahwa distribusi bilangan prima terkait erat dengan perilaku **fungsi kompleks**.
 
 Apa yang dia gunakan adalah fungsi $\zeta(s)$ yang saat ini disebut sebagai **fungsi zeta Riemann**.
 
@@ -76,7 +76,7 @@ graph TD
 
 Sekitar 40 tahun setelah pendekatan terobosan Riemann, pada tahun 1896, Jacques Hadamard dari Prancis dan Charles de la Vallée Poussin dari Belgia, masing-masing secara independen berhasil memberikan pembuktian lengkap untuk Teorema Bilangan Prima.
 
-Inti dari pembuktian mereka adalah menunjukkan bahwa "Fungsi zeta $\zeta(s)$ tidak memiliki titik nol pada garis $\operatorname{Re}(s) = 1$ di bidang kompleks". Dengan menggunakan alat yang kuat dari analisis kompleks (seperti Teorema Integral Cauchy), Teorema Bilangan Prima diturunkan dari ketiadaan titik nol ini.
+Inti dari pembuktian mereka adalah menunjukkan bahwa "Fungsi zeta $\zeta(s)$ tidak memiliki titik nol pada garis $\operatorname{Re}(s) = 1$ di bidang kompleks". Dengan menggunakan alat yang kuat dari analisis kompleks (seperti [Teorema Integral Cauchy](/id/p/cauchys-integral-theorem/)), Teorema Bilangan Prima diturunkan dari ketiadaan titik nol ini.
 
 Dengan ini, hukum distribusi asimtotik dari bilangan prima yang dikonjekturkan oleh Gauss pada usia 15 tahun, setelah melewati waktu lebih dari 100 tahun, akhirnya ditetapkan secara matematis sebagai sebuah "teorema".
 
@@ -156,7 +156,7 @@ print(f"997 is prime? {miller_rabin_test(997)}")
 print(f"1001 is prime? {miller_rabin_test(1001)}")
 ```
 
-Algoritma ini merupakan perluasan dari Teorema Kecil Fermat, dan probabilitas bahwa ia salah mengidentifikasi sebuah bilangan komposit sebagai bilangan prima dapat dikurangi secara eksponensial dengan meningkatkan jumlah tes $k$ (probabilitas kesalahan identifikasi kurang dari atau sama dengan $4^{-k}$).
+Algoritma ini merupakan perluasan dari [Teorema Kecil Fermat](/id/p/fermats-little-theorem/), dan probabilitas bahwa ia salah mengidentifikasi sebuah bilangan komposit sebagai bilangan prima dapat dikurangi secara eksponensial dengan meningkatkan jumlah tes $k$ (probabilitas kesalahan identifikasi kurang dari atau sama dengan $4^{-k}$).
 
 ## 8. Kesimpulan: Bilangan Prima Sebagai Sandi Alam Semesta
 

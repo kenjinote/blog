@@ -46,7 +46,7 @@ Si el perímetro de un polígono regular inscrito de $n$ lados es $p_n$ y el per
 
 $$ p_n < 2\pi < P_n $$
 
-Para calcular la longitud de los lados de un polígono de $n$ lados, Arquímedes aplicó repetidamente teoremas geométricos equivalentes a las funciones trigonométricas modernas (el teorema de Pitágoras y el teorema de la bisectriz del ángulo). Expresado en notación moderna, la longitud de un lado del polígono regular inscrito de $n$ lados es $2 \sin(\pi/n)$, y la longitud de un lado del polígono regular circunscrito de $n$ lados es $2 \tan(\pi/n)$. Por lo tanto, utilizando el semiperímetro obtenemos:
+Para calcular la longitud de los lados de un polígono de $n$ lados, Arquímedes aplicó repetidamente teoremas geométricos equivalentes a las funciones trigonométricas modernas (el teorema de [Pitágoras](/es/p/pythagoras/) y el teorema de la bisectriz del ángulo). Expresado en notación moderna, la longitud de un lado del polígono regular inscrito de $n$ lados es $2 \sin(\pi/n)$, y la longitud de un lado del polígono regular circunscrito de $n$ lados es $2 \tan(\pi/n)$. Por lo tanto, utilizando el semiperímetro obtenemos:
 
 $$ n \sin\left(\frac{\pi}{n}\right) < \pi < n \tan\left(\frac{\pi}{n}\right) $$
 
@@ -270,7 +270,7 @@ Al ejecutar el código anterior, calculará Pi con una velocidad increíble. Alc
 
 En cuanto a los métodos de cálculo de Pi, otro algoritmo innovador que no debemos olvidar es el "algoritmo de Gauss-Legendre". Fue descubierto independientemente por Richard Brent y Eugene Salamin en 1975.
 
-La base de este algoritmo es la teoría de la "media aritmético-geométrica" (AGM) y las integrales elípticas, estudiadas por Carl Friedrich Gauss.
+La base de este algoritmo es la teoría de la "media aritmético-geométrica" (AGM) y las integrales elípticas, estudiadas por [Carl Friedrich Gauss](/es/p/gauss/).
 
 Dados dos números $a_0, b_0$, aplicamos repetidamente la media aritmética y la media geométrica para crear dos secuencias de la siguiente manera:
 

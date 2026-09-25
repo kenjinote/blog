@@ -46,7 +46,7 @@ Wenn der Umfang des einbeschriebenen regulären $n$-Ecks $p_n$ und der Umfang de
 
 $$ p_n < 2\pi < P_n $$
 
-Um die Seitenlängen des regulären $n$-Ecks zu berechnen, wendete Archimedes wiederholt geometrische Theoreme (wie den Satz des Pythagoras oder den Winkelhalbierungssatz) an, die den heutigen trigonometrischen Funktionen entsprechen. In moderner Schreibweise beträgt die Seitenlänge des einbeschriebenen regulären $n$-Ecks $2 \sin(\pi/n)$ und die des umbeschriebenen regulären $n$-Ecks $2 \tan(\pi/n)$. Unter Verwendung des halben Umfangs ergibt sich daher:
+Um die Seitenlängen des regulären $n$-Ecks zu berechnen, wendete Archimedes wiederholt geometrische Theoreme (wie den Satz des [Pythagoras](/de/p/pythagoras/) oder den Winkelhalbierungssatz) an, die den heutigen trigonometrischen Funktionen entsprechen. In moderner Schreibweise beträgt die Seitenlänge des einbeschriebenen regulären $n$-Ecks $2 \sin(\pi/n)$ und die des umbeschriebenen regulären $n$-Ecks $2 \tan(\pi/n)$. Unter Verwendung des halben Umfangs ergibt sich daher:
 
 $$ n \sin\left(\frac{\pi}{n}\right) < \pi < n \tan\left(\frac{\pi}{n}\right) $$
 
@@ -270,7 +270,7 @@ Wenn Sie den obigen Code ausführen, erhalten Sie Pi unglaublich schnell. Nach n
 
 Ein weiterer revolutionärer Algorithmus zur Berechnung von Pi, der nicht vergessen werden darf, ist der "Gauß-Legendre-Algorithmus". Dieser wurde 1975 unabhängig voneinander von Richard Brent und Eugene Salamin entdeckt.
 
-Die Grundlage dieses Algorithmus bilden das "Arithmetisch-geometrische Mittel" (Arithmetic-Geometric Mean, AGM) und die Theorie elliptischer Integrale, die von Carl Friedrich Gauß untersucht wurden.
+Die Grundlage dieses Algorithmus bilden das "Arithmetisch-geometrische Mittel" (Arithmetic-Geometric Mean, AGM) und die Theorie elliptischer Integrale, die von [Carl Friedrich Gauß](/de/p/gauss/) untersucht wurden.
 
 Wenn zwei Zahlen $a_0, b_0$ gegeben sind, wendet man wiederholt das arithmetische Mittel und das geometrische Mittel wie folgt an, um Folgen zu erstellen:
 

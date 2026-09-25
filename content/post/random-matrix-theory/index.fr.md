@@ -12,7 +12,7 @@ image: eyecatch.jpg
 
 Le monde peut sembler complexe et imprévisible, mais à travers le prisme des mathématiques, nous trouvons parfois des similitudes surprenantes dans des domaines complètement différents. La « Théorie des Matrices Aléatoires (RMT) » est précisément l'un de ces cadres mathématiques dotés d'une telle universalité.
 
-Une matrice aléatoire est une matrice dont les éléments sont donnés par des variables aléatoires. À première vue, il ne s'agit que d'un tableau de nombres aléatoires, mais lorsque la taille de la matrice s'approche de l'infini, une loi étonnamment belle et universelle émerge dans la distribution de ses [valeurs propres](/p/eigenvalues-and-eigenvectors/). Cette loi se cache derrière des systèmes entièrement différents, du monde microscopique des noyaux atomiques, aux mystères de la distribution des nombres premiers, en passant par les fluctuations des prix sur les marchés financiers, jusqu'à la dynamique d'apprentissage des modèles d'apprentissage profond de pointe.
+Une matrice aléatoire est une matrice dont les éléments sont donnés par des variables aléatoires. À première vue, il ne s'agit que d'un tableau de nombres aléatoires, mais lorsque la taille de la matrice s'approche de l'infini, une loi étonnamment belle et universelle émerge dans la distribution de ses [valeurs propres](/fr/p/eigenvalues-and-eigenvectors/). Cette loi se cache derrière des systèmes entièrement différents, du monde microscopique des noyaux atomiques, aux mystères de la distribution des nombres premiers, en passant par les fluctuations des prix sur les marchés financiers, jusqu'à la dynamique d'apprentissage des modèles d'apprentissage profond de pointe.
 
 Dans cet article, en partant du contexte historique de la théorie des matrices aléatoires, nous expliquerons ses fondements mathématiques tels que la classification des ensembles (GOE/GUE/GSE), la preuve mathématique de la loi du demi-cercle de Wigner, et même son lien inattendu avec la fonction zêta de Riemann. Dans la seconde moitié, nous plongerons profondément dans des applications modernes, comme l'optimisation de portefeuille en ingénierie financière et le problème d'initialisation des poids dans l'IA et l'apprentissage profond, accompagnés de visualisations pratiques à l'aide de code Python.
 
@@ -32,7 +32,7 @@ En examinant les données de diffusion des neutrons observées expérimentalemen
 
 En 1955, Eugene Wigner proposa une idée audacieuse : au lieu de traiter le hamiltonien (la matrice représentant l'énergie) de ce système quantique complexe comme une matrice spécifique avec une structure physique détaillée, il le modélisa comme une « immense matrice symétrique dont les éléments prennent des valeurs aléatoires ».
 
-Étonnamment, la distribution de l'espacement des [valeurs propres](/p/eigenvalues-and-eigenvectors/) de cette matrice aléatoire hautement simplifiée correspondait parfaitement à la distribution de l'espacement des niveaux d'énergie dans les véritables noyaux d'uranium. Wigner découvrit en outre qu'à la limite où la taille de la matrice $N$ tend vers l'infini, la distribution globale de la densité des [valeurs propres](/p/eigenvalues-and-eigenvectors/) forme un demi-cercle. C'est la célèbre « loi du demi-cercle de Wigner ».
+Étonnamment, la distribution de l'espacement des [valeurs propres](/fr/p/eigenvalues-and-eigenvectors/) de cette matrice aléatoire hautement simplifiée correspondait parfaitement à la distribution de l'espacement des niveaux d'énergie dans les véritables noyaux d'uranium. Wigner découvrit en outre qu'à la limite où la taille de la matrice $N$ tend vers l'infini, la distribution globale de la densité des [valeurs propres](/fr/p/eigenvalues-and-eigenvectors/) forme un demi-cercle. C'est la célèbre « loi du demi-cercle de Wigner ».
 
 ---
 
@@ -65,11 +65,11 @@ Le GSE est un ensemble de matrices hermitiennes auto-duales dont les éléments 
 
 Donnons un aperçu du processus de preuve de la loi du demi-cercle de Wigner, le résultat le plus fondamental de la théorie des matrices aléatoires, en utilisant la méthode des moments.
 
-Considérons une matrice symétrique réelle $X$ de taille $N \times N$ dont les éléments $X_{ij}$ sont des variables aléatoires mutuellement indépendantes de moyenne 0 et de variance 1. Nous cherchons la limite ($N \to \infty$) de la distribution des [valeurs propres](/p/eigenvalues-and-eigenvectors/) de la matrice mise à l'échelle $W = \frac{1}{\sqrt{N}}X$.
+Considérons une matrice symétrique réelle $X$ de taille $N \times N$ dont les éléments $X_{ij}$ sont des variables aléatoires mutuellement indépendantes de moyenne 0 et de variance 1. Nous cherchons la limite ($N \to \infty$) de la distribution des [valeurs propres](/fr/p/eigenvalues-and-eigenvectors/) de la matrice mise à l'échelle $W = \frac{1}{\sqrt{N}}X$.
 
 ## Approche par la Méthode des Moments
 
-Pour analyser la fonction de distribution empirique des [valeurs propres](/p/eigenvalues-and-eigenvectors/), nous calculons le $k$-ième moment $m_k$ de la distribution. Puisque la trace (somme des éléments diagonaux) d'une matrice est égale à la somme de ses [valeurs propres](/p/eigenvalues-and-eigenvectors/), nous évaluons :
+Pour analyser la fonction de distribution empirique des [valeurs propres](/fr/p/eigenvalues-and-eigenvectors/), nous calculons le $k$-ième moment $m_k$ de la distribution. Puisque la trace (somme des éléments diagonaux) d'une matrice est égale à la somme de ses [valeurs propres](/fr/p/eigenvalues-and-eigenvectors/), nous évaluons :
 $$ m_k = \lim_{N \to \infty} \frac{1}{N} \mathbb{E}[\text{Tr}(W^k)] $$
 
 Le développement de la trace donne :
@@ -80,7 +80,7 @@ En prenant l'espérance mathématique, puisque les éléments $X_{ij}$ sont ind�
 
 ## Lien Entre les Nombres de Catalan et la Loi du Demi-Cercle
 
-Le nombre total de tels chemins (chemins de Dyck) de longueur $2m$ est donné par les « [nombres de Catalan](/p/catalan-numbers/) » $C_m$, célèbres en combinatoire.
+Le nombre total de tels chemins (chemins de Dyck) de longueur $2m$ est donné par les « [nombres de Catalan](/fr/p/catalan-numbers/) » $C_m$, célèbres en combinatoire.
 $$ C_m = \frac{1}{m+1} \binom{2m}{m} $$
 
 Par conséquent, les moments de la distribution limite sont :
@@ -98,7 +98,7 @@ La théorie des matrices aléatoires, née pour résoudre des problèmes de phys
 
 En 1972, le théoricien des nombres Hugh Montgomery étudiait la distribution de l'espacement des zéros non triviaux de la fonction zêta de Riemann. Selon l'hypothèse de Riemann, tous ces zéros se trouvent sur la « ligne critique » (la ligne dont la partie réelle est 1/2) dans le plan complexe. Montgomery a calculé la fonction de corrélation de paires des zéros et en a déduit qu'elle est égale à $1 - \left(\frac{\sin(\pi x)}{\pi x}\right)^2$.
 
-Un jour, lors de l'heure du thé à l'Institute for Advanced Study de Princeton, Montgomery a mentionné ce résultat au physicien Freeman Dyson. Dyson fut stupéfait. Pourquoi ? Parce que la formule était exactement la même que la distribution de l'espacement des [valeurs propres](/p/eigenvalues-and-eigenvectors/) du GUE (Ensemble Unitaire Gaussien) que Dyson lui-même avait dérivée.
+Un jour, lors de l'heure du thé à l'Institute for Advanced Study de Princeton, Montgomery a mentionné ce résultat au physicien Freeman Dyson. Dyson fut stupéfait. Pourquoi ? Parce que la formule était exactement la même que la distribution de l'espacement des [valeurs propres](/fr/p/eigenvalues-and-eigenvectors/) du GUE (Ensemble Unitaire Gaussien) que Dyson lui-même avait dérivée.
 
 ## L'Intersection des Nombres Premiers et du Chaos Quantique
 
@@ -120,11 +120,11 @@ Lors de l'estimation de la matrice de covariance empirique à partir des donnée
 
 ## Nettoyage du Bruit avec des Matrices Aléatoires
 
-C'est là qu'intervient la théorie des matrices aléatoires. En 1999, Bouchaud et al. et Laloux et al. ont indépendamment appliqué la théorie des matrices aléatoires aux matrices de covariance des marchés financiers. Ils ont comparé la distribution des [valeurs propres](/p/eigenvalues-and-eigenvectors/) de la matrice de covariance obtenue à partir de données de séries chronologiques purement aléatoires (distribution de Marchenko-Pastur) avec la distribution des [valeurs propres](/p/eigenvalues-and-eigenvectors/) de la matrice de covariance des données de marché réelles.
+C'est là qu'intervient la théorie des matrices aléatoires. En 1999, Bouchaud et al. et Laloux et al. ont indépendamment appliqué la théorie des matrices aléatoires aux matrices de covariance des marchés financiers. Ils ont comparé la distribution des [valeurs propres](/fr/p/eigenvalues-and-eigenvectors/) de la matrice de covariance obtenue à partir de données de séries chronologiques purement aléatoires (distribution de Marchenko-Pastur) avec la distribution des [valeurs propres](/fr/p/eigenvalues-and-eigenvectors/) de la matrice de covariance des données de marché réelles.
 
-En conséquence, ils ont constaté que la grande majorité (plus de 90 %) des [valeurs propres](/p/eigenvalues-and-eigenvectors/) des données de marché se situent dans les limites théoriques prédites par la théorie des matrices aléatoires. En d'autres termes, ce ne sont que des « bruits ». D'autre part, il a été démontré que seules quelques grandes [valeurs propres](/p/eigenvalues-and-eigenvectors/) qui dépassent largement les limites contiennent des informations significatives reflétant la véritable structure de corrélation du marché (telles que les facteurs de marché et les facteurs sectoriels).
+En conséquence, ils ont constaté que la grande majorité (plus de 90 %) des [valeurs propres](/fr/p/eigenvalues-and-eigenvectors/) des données de marché se situent dans les limites théoriques prédites par la théorie des matrices aléatoires. En d'autres termes, ce ne sont que des « bruits ». D'autre part, il a été démontré que seules quelques grandes [valeurs propres](/fr/p/eigenvalues-and-eigenvectors/) qui dépassent largement les limites contiennent des informations significatives reflétant la véritable structure de corrélation du marché (telles que les facteurs de marché et les facteurs sectoriels).
 
-Sur la base de ces connaissances, des méthodes ont été développées pour « nettoyer » la matrice de covariance en filtrant les [valeurs propres](/p/eigenvalues-and-eigenvectors/) correspondant au bruit (par exemple, en les mettant à zéro ou en les remplaçant par la valeur moyenne). Cela améliore considérablement les performances et la stabilité des portefeuilles, et est actuellement utilisé comme technique standard dans de nombreux fonds quantitatifs.
+Sur la base de ces connaissances, des méthodes ont été développées pour « nettoyer » la matrice de covariance en filtrant les [valeurs propres](/fr/p/eigenvalues-and-eigenvectors/) correspondant au bruit (par exemple, en les mettant à zéro ou en les remplaçant par la valeur moyenne). Cela améliore considérablement les performances et la stabilité des portefeuilles, et est actuellement utilisé comme technique standard dans de nombreux fonds quantitatifs.
 
 ---
 
@@ -136,13 +136,13 @@ Ces dernières années, la théorie des matrices aléatoires a également été 
 
 Lors de l'entraînement de réseaux de neurones massifs, la façon de définir les valeurs initiales des matrices de poids du réseau est un problème extrêmement important qui détermine le succès ou l'échec de l'entraînement. Si l'initialisation est inappropriée, il se produit une disparition du gradient (Gradient Vanishing) ou une explosion du gradient (Gradient Exploding), ce qui arrête le processus d'apprentissage.
 
-Lors de l'initialisation des matrices de poids avec des valeurs aléatoires, il s'agit exactement d'une matrice aléatoire. En appliquant la théorie des matrices aléatoires, on peut analyser rigoureusement la transition de la variance du signal lorsqu'il traverse les couches et le comportement des gradients lors de la rétropropagation (backpropagation). Par exemple, l'analyse de l'effet des fonctions d'activation non linéaires sur le spectre (distribution des [valeurs propres](/p/eigenvalues-and-eigenvectors/)) des matrices aléatoires fournit une justification théorique pour les méthodes d'initialisation standard modernes comme l'initialisation de Xavier et l'initialisation de He.
+Lors de l'initialisation des matrices de poids avec des valeurs aléatoires, il s'agit exactement d'une matrice aléatoire. En appliquant la théorie des matrices aléatoires, on peut analyser rigoureusement la transition de la variance du signal lorsqu'il traverse les couches et le comportement des gradients lors de la rétropropagation (backpropagation). Par exemple, l'analyse de l'effet des fonctions d'activation non linéaires sur le spectre (distribution des [valeurs propres](/fr/p/eigenvalues-and-eigenvectors/)) des matrices aléatoires fournit une justification théorique pour les méthodes d'initialisation standard modernes comme l'initialisation de Xavier et l'initialisation de He.
 
 ## Distribution des Valeurs Propres du Hessien
 
-La compréhension de la dynamique du processus d'apprentissage nécessite essentiellement l'analyse de la matrice hessienne, qui représente la courbure de la fonction de perte. Le hessien des [LLM](/p/large-language-models-llm-transformer-prompt-engineering/) (Grands Modèles de Langage) comportant des dizaines de millions à des centaines de milliards de paramètres est une matrice gigantesque, ce qui rend difficile l'étude directe de ses propriétés, mais la théorie des matrices aléatoires peut être utilisée pour approcher et prédire la distribution de ses [valeurs propres](/p/eigenvalues-and-eigenvectors/).
+La compréhension de la dynamique du processus d'apprentissage nécessite essentiellement l'analyse de la matrice hessienne, qui représente la courbure de la fonction de perte. Le hessien des [LLM](/fr/p/large-language-models-llm-transformer-prompt-engineering/) ([Grands Modèles de Langage](/fr/p/large-language-models-llm-transformer-prompt-engineering/)) comportant des dizaines de millions à des centaines de milliards de paramètres est une matrice gigantesque, ce qui rend difficile l'étude directe de ses propriétés, mais la théorie des matrices aléatoires peut être utilisée pour approcher et prédire la distribution de ses [valeurs propres](/fr/p/eigenvalues-and-eigenvectors/).
 
-Des études ont montré que la distribution des [valeurs propres](/p/eigenvalues-and-eigenvectors/) du hessien dans les réseaux de neurones profonds se compose d'une masse (un grand nombre de [valeurs propres](/p/eigenvalues-and-eigenvectors/) proches de zéro) et de quelques valeurs aberrantes importantes (outliers). La partie de masse peut être modélisée comme une matrice aléatoire bruitée (par exemple, des directions contenant peu d'informations), tandis que les valeurs aberrantes indiquent des directions d'apprentissage critiques directement liées à la tâche. La compréhension de cette structure spectrale fournit des informations extrêmement précieuses pour améliorer la convergence des algorithmes d'optimisation (comme SGD et Adam) et optimiser les planifications de taux d'apprentissage.
+Des études ont montré que la distribution des [valeurs propres](/fr/p/eigenvalues-and-eigenvectors/) du hessien dans les réseaux de neurones profonds se compose d'une masse (un grand nombre de [valeurs propres](/fr/p/eigenvalues-and-eigenvectors/) proches de zéro) et de quelques valeurs aberrantes importantes (outliers). La partie de masse peut être modélisée comme une matrice aléatoire bruitée (par exemple, des directions contenant peu d'informations), tandis que les valeurs aberrantes indiquent des directions d'apprentissage critiques directement liées à la tâche. La compréhension de cette structure spectrale fournit des informations extrêmement précieuses pour améliorer la convergence des algorithmes d'optimisation (comme SGD et Adam) et optimiser les planifications de taux d'apprentissage.
 
 ---
 
@@ -195,12 +195,12 @@ plt.tight_layout()
 plt.show()
 ```
 
-Lorsque vous exécutez ce code, vous pouvez confirmer que les [valeurs propres](/p/eigenvalues-and-eigenvectors/) des matrices générées aléatoirement sont distribuées sous la forme d'un magnifique demi-cercle. Le plus grand attrait de la théorie des matrices aléatoires est que, même si les éléments des matrices individuelles sont complètement aléatoires, une loi aussi ordonnée émerge dans son ensemble.
+Lorsque vous exécutez ce code, vous pouvez confirmer que les [valeurs propres](/fr/p/eigenvalues-and-eigenvectors/) des matrices générées aléatoirement sont distribuées sous la forme d'un magnifique demi-cercle. Le plus grand attrait de la théorie des matrices aléatoires est que, même si les éléments des matrices individuelles sont complètement aléatoires, une loi aussi ordonnée émerge dans son ensemble.
 
 ---
 
 # Conclusion
 
-Dans cet article, nous avons suivi le grand récit de la théorie des matrices aléatoires, en partant de la physique nucléaire pour s'étendre aux mathématiques pures, à l'ingénierie financière et aux technologies modernes de l'IA. Le fait que des systèmes complexes apparemment sans rapport puissent communiquer en utilisant le langage commun des « [valeurs propres](/p/eigenvalues-and-eigenvectors/) des matrices aléatoires » dans des conditions extrêmes démontre la profondeur mystérieuse que possèdent la nature et les mathématiques.
+Dans cet article, nous avons suivi le grand récit de la théorie des matrices aléatoires, en partant de la physique nucléaire pour s'étendre aux mathématiques pures, à l'ingénierie financière et aux technologies modernes de l'IA. Le fait que des systèmes complexes apparemment sans rapport puissent communiquer en utilisant le langage commun des « [valeurs propres](/fr/p/eigenvalues-and-eigenvectors/) des matrices aléatoires » dans des conditions extrêmes démontre la profondeur mystérieuse que possèdent la nature et les mathématiques.
 
 À l'ère moderne, où les données explosent et les modèles continuent de croître énormément, la théorie des matrices aléatoires évolue d'un simple sujet de mathématiques abstraites à une arme puissante pour résoudre des problèmes pratiques dans la science des données et l'apprentissage automatique. Cette théorie, qui explore les vérités universelles cachées derrière les systèmes complexes, continuera sans aucun doute d'être une lumière qui approfondira notre compréhension dans divers domaines à l'avenir.

@@ -12,7 +12,7 @@ image: eyecatch.jpg
 
 O mundo parece complexo e imprevisível, mas através da lente da matemática, podemos, por vezes, encontrar pontos em comum surpreendentes em campos completamente diferentes. A "Teoria das Matrizes Aleatórias (Random Matrix Theory, RMT)" é precisamente um desses quadros matemáticos que possuem tal universalidade.
 
-Uma matriz aleatória é uma matriz cujos elementos são dados por variáveis aleatórias. À primeira vista, pode parecer ser apenas um arranjo aleatório de números, mas conforme o tamanho da matriz se aproxima do infinito, a distribuição de seus [autovalores](/p/eigenvalues-and-eigenvectors/) revela leis de uma beleza surpreendente e universais. Essas leis estão ocultas por trás de sistemas completamente distintos, desde o mundo microscópico dos núcleos atômicos e o mistério da distribuição dos números primos, até as flutuações de preços nos mercados financeiros e a dinâmica de aprendizagem dos modelos de aprendizado profundo (deep learning) mais avançados.
+Uma matriz aleatória é uma matriz cujos elementos são dados por variáveis aleatórias. À primeira vista, pode parecer ser apenas um arranjo aleatório de números, mas conforme o tamanho da matriz se aproxima do infinito, a distribuição de seus [autovalores](/pt/p/eigenvalues-and-eigenvectors/) revela leis de uma beleza surpreendente e universais. Essas leis estão ocultas por trás de sistemas completamente distintos, desde o mundo microscópico dos núcleos atômicos e o mistério da distribuição dos números primos, até as flutuações de preços nos mercados financeiros e a dinâmica de aprendizagem dos modelos de aprendizado profundo (deep learning) mais avançados.
 
 Neste artigo, começaremos pelo contexto histórico da Teoria das Matrizes Aleatórias, explicaremos a classificação dos ensembles como GOE/GUE/GSE, que formam sua base matemática, e a prova matemática da Lei do Semicírculo de Wigner, além da ligação inesperada com a função Zeta de Riemann. Na segunda metade, vamos aprofundar nas aplicações modernas, como a otimização de portfólios em engenharia financeira e problemas de inicialização de pesos em IA e deep learning, com visualizações práticas em código Python.
 
@@ -32,7 +32,7 @@ Observando dados experimentais de espalhamento de nêutrons, os níveis de energ
 
 Em 1955, Eugene Wigner propôs a ideia ousada de modelar o Hamiltoniano (a matriz que representa a energia) deste sistema quântico complexo não como uma matriz específica com estruturas físicas detalhadas, mas como uma "matriz simétrica gigante cujos elementos assumem valores aleatórios".
 
-Surpreendentemente, a distribuição do espaçamento dos [autovalores](/p/eigenvalues-and-eigenvectors/) desta matriz aleatória extremamente simplificada combinou perfeitamente com a distribuição do espaçamento dos níveis de energia do próprio núcleo de urânio. Wigner descobriu ainda que no limite, quando o tamanho da matriz $N$ vai para o infinito, a distribuição de densidade global dos [autovalores](/p/eigenvalues-and-eigenvectors/) forma um semicírculo. Esta é a famosa "Lei do Semicírculo de Wigner (Wigner's semicircle law)".
+Surpreendentemente, a distribuição do espaçamento dos [autovalores](/pt/p/eigenvalues-and-eigenvectors/) desta matriz aleatória extremamente simplificada combinou perfeitamente com a distribuição do espaçamento dos níveis de energia do próprio núcleo de urânio. Wigner descobriu ainda que no limite, quando o tamanho da matriz $N$ vai para o infinito, a distribuição de densidade global dos [autovalores](/pt/p/eigenvalues-and-eigenvectors/) forma um semicírculo. Esta é a famosa "Lei do Semicírculo de Wigner (Wigner's semicircle law)".
 
 ---
 
@@ -65,11 +65,11 @@ GSE é um conjunto de matrizes Hermitianas auto-duais cujos elementos são quat�
 
 Esboçaremos o processo de provar a Lei do Semicírculo de Wigner, o resultado mais básico da Teoria das Matrizes Aleatórias, utilizando o Método dos Momentos (Method of Moments).
 
-Considere uma matriz simétrica real $X$ de $N \times N$, onde cada elemento $X_{ij}$ é uma variável aleatória independente com média 0 e variância 1. Queremos encontrar o limite da distribuição dos [autovalores](/p/eigenvalues-and-eigenvectors/) da matriz redimensionada $W = \frac{1}{\sqrt{N}}X$ quando $N \to \infty$.
+Considere uma matriz simétrica real $X$ de $N \times N$, onde cada elemento $X_{ij}$ é uma variável aleatória independente com média 0 e variância 1. Queremos encontrar o limite da distribuição dos [autovalores](/pt/p/eigenvalues-and-eigenvectors/) da matriz redimensionada $W = \frac{1}{\sqrt{N}}X$ quando $N \to \infty$.
 
 ## A Abordagem Pelo Método dos Momentos
 
-Para analisar a função de distribuição empírica dos [autovalores](/p/eigenvalues-and-eigenvectors/), calculamos o $k$-ésimo momento da distribuição, $m_k$. Como o traço (soma dos componentes diagonais) de uma matriz é igual à soma dos [autovalores](/p/eigenvalues-and-eigenvectors/),
+Para analisar a função de distribuição empírica dos [autovalores](/pt/p/eigenvalues-and-eigenvectors/), calculamos o $k$-ésimo momento da distribuição, $m_k$. Como o traço (soma dos componentes diagonais) de uma matriz é igual à soma dos [autovalores](/pt/p/eigenvalues-and-eigenvectors/),
 $$ m_k = \lim_{N \to \infty} \frac{1}{N} \mathbb{E}[\text{Tr}(W^k)] $$
 é avaliado.
 
@@ -81,7 +81,7 @@ No limite $N \to \infty$, a contribuição principal vem dos caminhos de exatame
 
 ## Números de Catalan e A Lei do Semicírculo
 
-O número total de tais caminhos (Caminhos de Dyck) de comprimento $2m$ é dado pelos famosos "[Números de Catalan](/p/catalan-numbers/)" $C_m$ da matemática combinatória.
+O número total de tais caminhos (Caminhos de Dyck) de comprimento $2m$ é dado pelos famosos "[Números de Catalan](/pt/p/catalan-numbers/)" $C_m$ da matemática combinatória.
 $$ C_m = \frac{1}{m+1} \binom{2m}{m} $$
 
 Portanto, os momentos da distribuição limite são:
@@ -99,7 +99,7 @@ A Teoria das Matrizes Aleatórias, criada para resolver problemas de física, le
 
 Em 1972, o teórico dos números Hugh Montgomery estava pesquisando a distribuição dos espaçamentos entre os zeros não triviais da Função Zeta de Riemann. De acordo com a Hipótese de Riemann, todos esses zeros residem na "linha crítica (a reta no plano complexo onde a parte real é 1/2)". Montgomery calculou a função de correlação de pares de zeros e deduziu que ela era dada por $1 - \left(\frac{\sin(\pi x)}{\pi x}\right)^2$.
 
-Um dia, no chá da tarde do Instituto de Estudos Avançados de Princeton, Montgomery discutiu este resultado com o físico Freeman Dyson. Dyson ficou atônito. Aquela fórmula matemática era idêntica à distribuição dos espaçamentos dos [autovalores](/p/eigenvalues-and-eigenvectors/) do GUE (Gaussian Unitary Ensemble) que o próprio Dyson havia derivado.
+Um dia, no chá da tarde do Instituto de Estudos Avançados de Princeton, Montgomery discutiu este resultado com o físico Freeman Dyson. Dyson ficou atônito. Aquela fórmula matemática era idêntica à distribuição dos espaçamentos dos [autovalores](/pt/p/eigenvalues-and-eigenvectors/) do GUE (Gaussian Unitary Ensemble) que o próprio Dyson havia derivado.
 
 ## Interseção de Números Primos e Caos Quântico
 
@@ -121,11 +121,11 @@ Ao estimar a matriz de covariância de amostras a partir de dados de retornos pa
 
 ## Limpeza de Ruído com Matrizes Aleatórias
 
-Aqui é onde a Teoria das Matrizes Aleatórias entra em ação. Em 1999, Bouchaud e colegas e Laloux e colegas aplicaram independentemente a teoria das matrizes aleatórias em matrizes de covariância de mercados financeiros. Eles compararam a distribuição dos [autovalores](/p/eigenvalues-and-eigenvectors/) derivada de séries temporais completamente aleatórias (a distribuição de Marchenko-Pastur) com a distribuição de [autovalores](/p/eigenvalues-and-eigenvectors/) da matriz de covariância dos dados reais do mercado.
+Aqui é onde a Teoria das Matrizes Aleatórias entra em ação. Em 1999, Bouchaud e colegas e Laloux e colegas aplicaram independentemente a teoria das matrizes aleatórias em matrizes de covariância de mercados financeiros. Eles compararam a distribuição dos [autovalores](/pt/p/eigenvalues-and-eigenvectors/) derivada de séries temporais completamente aleatórias (a distribuição de Marchenko-Pastur) com a distribuição de [autovalores](/pt/p/eigenvalues-and-eigenvectors/) da matriz de covariância dos dados reais do mercado.
 
-O resultado mostrou que a vasta maioria dos [autovalores](/p/eigenvalues-and-eigenvectors/) do mercado (mais de 90%) caía dentro das fronteiras teóricas previstas pela Teoria das Matrizes Aleatórias. Isso significa que eles são puramente "ruído". Por outro lado, revelou-se que apenas alguns poucos grandes [autovalores](/p/eigenvalues-and-eigenvectors/) muito além dos limites possuíam informações significativas que refletiam a verdadeira estrutura de correlações do mercado (fatores de mercado e setores).
+O resultado mostrou que a vasta maioria dos [autovalores](/pt/p/eigenvalues-and-eigenvectors/) do mercado (mais de 90%) caía dentro das fronteiras teóricas previstas pela Teoria das Matrizes Aleatórias. Isso significa que eles são puramente "ruído". Por outro lado, revelou-se que apenas alguns poucos grandes [autovalores](/pt/p/eigenvalues-and-eigenvectors/) muito além dos limites possuíam informações significativas que refletiam a verdadeira estrutura de correlações do mercado (fatores de mercado e setores).
 
-Com base nessa descoberta, foram desenvolvidos métodos para "limpar" a matriz de covariância filtrando (zerando ou substituindo por média) os [autovalores](/p/eigenvalues-and-eigenvectors/) que correspondiam a ruído. Essa inovação aprimorou o desempenho e a estabilidade dos portfólios de forma dramática, sendo agora uma técnica padrão usada por muitos fundos quantitativos.
+Com base nessa descoberta, foram desenvolvidos métodos para "limpar" a matriz de covariância filtrando (zerando ou substituindo por média) os [autovalores](/pt/p/eigenvalues-and-eigenvectors/) que correspondiam a ruído. Essa inovação aprimorou o desempenho e a estabilidade dos portfólios de forma dramática, sendo agora uma técnica padrão usada por muitos fundos quantitativos.
 
 ---
 
@@ -137,13 +137,13 @@ Recentemente, a Teoria das Matrizes Aleatórias também ganhou muito destaque em
 
 Ao treinar redes neurais gigantes, configurar os valores iniciais da matriz de pesos é uma decisão vital que determina o sucesso do aprendizado. Inicializações inadequadas levam a gradientes que desaparecem (Gradient Vanishing) ou explodem (Gradient Exploding), paralisando o progresso da rede.
 
-Ao inicializar as matrizes de pesos com valores aleatórios, obtemos essencialmente matrizes aleatórias. Usando RMT, pesquisadores podem analisar rigorosamente como a variância do sinal muda ao longo das camadas ou o comportamento dos gradientes durante a retropropagação (backpropagation). Por exemplo, ao analisar o impacto das funções de ativação não lineares no espectro da matriz aleatória (distribuição de [autovalores](/p/eigenvalues-and-eigenvectors/)), fornece-se validação teórica rigorosa para práticas modernas convencionais como a inicialização de Xavier e de He.
+Ao inicializar as matrizes de pesos com valores aleatórios, obtemos essencialmente matrizes aleatórias. Usando RMT, pesquisadores podem analisar rigorosamente como a variância do sinal muda ao longo das camadas ou o comportamento dos gradientes durante a retropropagação (backpropagation). Por exemplo, ao analisar o impacto das funções de ativação não lineares no espectro da matriz aleatória (distribuição de [autovalores](/pt/p/eigenvalues-and-eigenvectors/)), fornece-se validação teórica rigorosa para práticas modernas convencionais como a inicialização de Xavier e de He.
 
 ## A Distribuição de Autovalores do Hessiano
 
-Compreender a curvatura da função de perda (representada pela matriz Hessiana) é essencial na pesquisa sobre a dinâmica dos processos de aprendizagem. Para grandes modelos, como [LLM](/p/large-language-models-llm-transformer-prompt-engineering/)s com dezenas de milhões a bilhões de parâmetros, calcular o Hessiano diretamente é quase impossível. No entanto, sua distribuição de [autovalores](/p/eigenvalues-and-eigenvectors/) pode ser aproximada e prevista usando a RMT.
+Compreender a curvatura da função de perda (representada pela matriz Hessiana) é essencial na pesquisa sobre a dinâmica dos processos de aprendizagem. Para grandes modelos, como [LLM](/pt/p/large-language-models-llm-transformer-prompt-engineering/)s com dezenas de milhões a bilhões de parâmetros, calcular o Hessiano diretamente é quase impossível. No entanto, sua distribuição de [autovalores](/pt/p/eigenvalues-and-eigenvectors/) pode ser aproximada e prevista usando a RMT.
 
-Estudos constataram que a distribuição de [autovalores](/p/eigenvalues-and-eigenvectors/) do Hessiano no Deep Learning é composta por uma massa "volumosa" (inúmeros [autovalores](/p/eigenvalues-and-eigenvectors/) espalhados próximos a zero) e um número seleto de grandes valores anômalos (outliers). A parte da massa volumosa pode ser caracterizada como uma matriz aleatória cheia de ruídos indicando direções não-informacionais, enquanto os valores anômalos destacam as dimensões cruciais do aprendizado. Entender essa estrutura espectral provê grandes indícios em como aprimorar algoritmos otimizadores (como SGD, Adam) ou modelar esquemas otimizados de aprendizado.
+Estudos constataram que a distribuição de [autovalores](/pt/p/eigenvalues-and-eigenvectors/) do Hessiano no Deep Learning é composta por uma massa "volumosa" (inúmeros [autovalores](/pt/p/eigenvalues-and-eigenvectors/) espalhados próximos a zero) e um número seleto de grandes valores anômalos (outliers). A parte da massa volumosa pode ser caracterizada como uma matriz aleatória cheia de ruídos indicando direções não-informacionais, enquanto os valores anômalos destacam as dimensões cruciais do aprendizado. Entender essa estrutura espectral provê grandes indícios em como aprimorar algoritmos otimizadores (como SGD, Adam) ou modelar esquemas otimizados de aprendizado.
 
 ---
 
@@ -196,12 +196,12 @@ plt.tight_layout()
 plt.show()
 ```
 
-Ao executar este código, poderá confirmar que os [autovalores](/p/eigenvalues-and-eigenvectors/) gerados assumirão magicamente o formato de um semicírculo simétrico. Muito embora os elementos unitários das matrizes sejam genuinamente gerados de forma aleatória, ao olhar em grande escala o aparecimento de uma ordem elegante é certamente a maior fascinância da Teoria das Matrizes Aleatórias.
+Ao executar este código, poderá confirmar que os [autovalores](/pt/p/eigenvalues-and-eigenvectors/) gerados assumirão magicamente o formato de um semicírculo simétrico. Muito embora os elementos unitários das matrizes sejam genuinamente gerados de forma aleatória, ao olhar em grande escala o aparecimento de uma ordem elegante é certamente a maior fascinância da Teoria das Matrizes Aleatórias.
 
 ---
 
 # Conclusão
 
-Ao longo deste texto, traçamos a extraordinária história que parte do nascimento da Teoria das Matrizes Aleatórias nas instalações de pesquisas de físicas nucleares subatômicas, transita pela matemática pura, engrenagens do campo de investimentos financeiros, terminando como um instrumento proeminente nas tecnologias de Inteligência Artificial contemporânea. Esses processos formidáveis confirmam que, embora isolados na superfície, sistemas caóticos complexos conversam num limite idêntico pela linguagem comum de "[autovalores](/p/eigenvalues-and-eigenvectors/) aleatórios" desvendando maravilhas das lógicas inescrutáveis dos mundos matemáticos.
+Ao longo deste texto, traçamos a extraordinária história que parte do nascimento da Teoria das Matrizes Aleatórias nas instalações de pesquisas de físicas nucleares subatômicas, transita pela matemática pura, engrenagens do campo de investimentos financeiros, terminando como um instrumento proeminente nas tecnologias de Inteligência Artificial contemporânea. Esses processos formidáveis confirmam que, embora isolados na superfície, sistemas caóticos complexos conversam num limite idêntico pela linguagem comum de "[autovalores](/pt/p/eigenvalues-and-eigenvectors/) aleatórios" desvendando maravilhas das lógicas inescrutáveis dos mundos matemáticos.
 
 Com o advento contínuo dos bancos de dados gigantescos e na era da expansão maciça do Deep Learning, a Teoria das Matrizes Aleatórias migrou do nicho matemático purista passando a ser uma das ferramentas pragmáticas das ciências algorítmicas no cerne do campo de aprendizado de máquinas. Pesquisar nas tramas complexas as leis matemáticas contidas neste princípio universal vai, muito em breve, iluminar ainda mais nossa compressão das matrizes que controlam incontáveis realidades em inúmeros seguimentos de nossas vidas.

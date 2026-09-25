@@ -14,13 +14,13 @@ Prime numbers are natural numbers that have no positive divisors other than 1 an
 
 However, at first glance, the pattern of prime appearances seems completely devoid of any regularity. Sometimes they appear tightly clustered as twin primes like 11 and 13, while other times there are "prime deserts" where the next prime does not appear for thousands or tens of thousands of numbers. This local randomness and unpredictability presented a massive wall for mathematicians.
 
-Despite this, looking from a macroscopic perspective—the overall behavior of "what proportion of all numbers are primes"—an astonishingly beautiful and smooth law was discovered to be hidden within. This is the **Prime Number Theorem (PNT)**, which we will explore in this article.
+Despite this, looking from a macroscopic perspective—the overall behavior of "what proportion of all numbers are primes"—an astonishingly beautiful and smooth law was discovered to be hidden within. This is the **[Prime Number Theorem](/en/p/prime-number-theorem/) (PNT)**, which we will explore in this article.
 
 ## 2. What is the Prime Number Theorem? Gauss's Great Intuition
 
-The Prime Number Theorem describes how the number of primes less than or equal to a given real number $x$, denoted by $\pi(x)$, increases as $x$ becomes larger.
+The [Prime Number Theorem](/en/p/prime-number-theorem/) describes how the number of primes less than or equal to a given real number $x$, denoted by $\pi(x)$, increases as $x$ becomes larger.
 
-Expressed mathematically, the Prime Number Theorem is stated as follows:
+Expressed mathematically, the [Prime Number Theorem](/en/p/prime-number-theorem/) is stated as follows:
 
 $$
 \lim_{x \to \infty} \frac{\pi(x)}{x / \ln(x)} = 1
@@ -30,7 +30,7 @@ This means that "the number of primes less than or equal to $x$, $\pi(x)$, is as
 
 ### Discovery by 15-Year-Old Gauss
 
-The first person to notice this incredible fact was the young genius Carl Friedrich Gauss when he was just 15 years old. In 1792, Gauss eagerly examined tables of logarithms and prime numbers, observing a trend where the density of primes decreased inversely proportional to the natural logarithm. He conjectured the following approximation formula:
+The first person to notice this incredible fact was the young genius [Carl Friedrich Gauss](/en/p/gauss/) when he was just 15 years old. In 1792, Gauss eagerly examined tables of logarithms and prime numbers, observing a trend where the density of primes decreased inversely proportional to the natural logarithm. He conjectured the following approximation formula:
 
 $$
 \pi(x) \approx \operatorname{Li}(x) = \int_{2}^{x} \frac{dt}{\ln t}
@@ -48,11 +48,11 @@ $$
 0.92129 \frac{x}{\ln x} < \pi(x) < 1.10555 \frac{x}{\ln x}
 $$
 
-Chebyshev also proved that if the limit of $\pi(x) / (x/\ln x)$ exists, it must absolutely be 1. However, he did not manage to show that the limit itself exists (which would be a complete proof of the Prime Number Theorem).
+Chebyshev also proved that if the limit of $\pi(x) / (x/\ln x)$ exists, it must absolutely be 1. However, he did not manage to show that the limit itself exists (which would be a complete proof of the [Prime Number Theorem](/en/p/prime-number-theorem/)).
 
 ## 4. Riemann's Zeta Function and the Introduction of Complex Analysis
 
-The greatest breakthrough toward proving the Prime Number Theorem was brought about by Bernhard Riemann. In his groundbreaking 1859 paper "On the Number of Primes Less Than a Given Magnitude," Riemann demonstrated that the distribution of primes is deeply connected to the behavior of **complex functions**.
+The greatest breakthrough toward proving the [Prime Number Theorem](/en/p/prime-number-theorem/) was brought about by [Bernhard Riemann](/en/p/riemann/). In his groundbreaking 1859 paper "On the Number of Primes Less Than a Given Magnitude," Riemann demonstrated that the distribution of primes is deeply connected to the behavior of **complex functions**.
 
 The function he used is what we call the **Riemann zeta function**, $\zeta(s)$, today.
 
@@ -74,15 +74,15 @@ graph TD
 
 ## 5. Complete Proof by Hadamard and de la Vallée Poussin
 
-In 1896, almost 40 years after Riemann's revolutionary approach, French mathematician Jacques Hadamard and Belgian mathematician Charles de la Vallée Poussin independently succeeded in fully proving the Prime Number Theorem.
+In 1896, almost 40 years after Riemann's revolutionary approach, French mathematician Jacques Hadamard and Belgian mathematician Charles de la Vallée Poussin independently succeeded in fully proving the [Prime Number Theorem](/en/p/prime-number-theorem/).
 
-The core of their proofs was showing that "the zeta function $\zeta(s)$ has no zeros on the line $\operatorname{Re}(s) = 1$ in the complex plane." By utilizing powerful tools of complex analysis (such as Cauchy's integral theorem), the Prime Number Theorem can be derived from the non-existence of these zeros.
+The core of their proofs was showing that "the zeta function $\zeta(s)$ has no zeros on the line $\operatorname{Re}(s) = 1$ in the complex plane." By utilizing powerful tools of complex analysis (such as [Cauchy's integral theorem](/en/p/cauchys-integral-theorem/)), the [Prime Number Theorem](/en/p/prime-number-theorem/) can be derived from the non-existence of these zeros.
 
 With this, the asymptotic distribution law of prime numbers conjectured by Gauss at age 15 was finally established as a mathematical "theorem" after more than 100 years.
 
 ## 6. The Riemann Hypothesis and the Error Term of the Prime Number Theorem
 
-Even after the Prime Number Theorem was proved, the exploration of prime numbers did not end. The current focus is on the problem of "how small is the difference (error) between $\pi(x)$ and $\operatorname{Li}(x)$?"
+Even after the [Prime Number Theorem](/en/p/prime-number-theorem/) was proved, the exploration of prime numbers did not end. The current focus is on the problem of "how small is the difference (error) between $\pi(x)$ and $\operatorname{Li}(x)$?"
 
 De la Vallée Poussin provided the following evaluation for the error term:
 
@@ -106,7 +106,7 @@ The theory of prime numbers is not confined to the world of pure mathematics. In
 
 For instance, the **RSA cryptography** that enables secure communications on the internet leverages the property that "while it is easy to multiply two enormous prime numbers together, it is extremely difficult to factorize their product back into the original primes."
 
-To generate keys for RSA encryption, one must quickly find massive prime numbers that are hundreds of digits (thousands of bits) long. This is where the Prime Number Theorem plays a crucial role. According to the Prime Number Theorem, the probability that a number near $N$ is prime is $1 / \ln(N)$. Therefore, if you randomly pick numbers near a 2048-bit number (about $10^{616}$), you are almost guaranteed to find a prime after checking about $616 \times \ln(10) \approx 1418$ numbers. It is because of the Prime Number Theorem that algorithms to find massive primes are guaranteed to finish in a realistic amount of time.
+To generate keys for RSA encryption, one must quickly find massive prime numbers that are hundreds of digits (thousands of bits) long. This is where the [Prime Number Theorem](/en/p/prime-number-theorem/) plays a crucial role. According to the [Prime Number Theorem](/en/p/prime-number-theorem/), the probability that a number near $N$ is prime is $1 / \ln(N)$. Therefore, if you randomly pick numbers near a 2048-bit number (about $10^{616}$), you are almost guaranteed to find a prime after checking about $616 \times \ln(10) \approx 1418$ numbers. It is because of the [Prime Number Theorem](/en/p/prime-number-theorem/) that algorithms to find massive primes are guaranteed to finish in a realistic amount of time.
 
 ### Miller-Rabin Primality Test
 
@@ -156,14 +156,14 @@ print(f"997 is prime? {miller_rabin_test(997)}")
 print(f"1001 is prime? {miller_rabin_test(1001)}")
 ```
 
-This algorithm is an extension of Fermat's Little Theorem, and the probability of incorrectly determining a composite number as a prime can be made exponentially small by increasing the number of tests $k$ (the probability of error is less than $4^{-k}$).
+This algorithm is an extension of [Fermat's Little Theorem](/en/p/fermats-little-theorem/), and the probability of incorrectly determining a composite number as a prime can be made exponentially small by increasing the number of tests $k$ (the probability of error is less than $4^{-k}$).
 
 ## 8. Conclusion: Primes as the Universe's Cipher
 
-The Prime Number Theorem presents a profound philosophy in mathematics: "Things that appear completely chaotic on an individual level can give rise to extremely elegant order when collected as a whole."
+The [Prime Number Theorem](/en/p/prime-number-theorem/) presents a profound philosophy in mathematics: "Things that appear completely chaotic on an individual level can give rise to extremely elegant order when collected as a whole."
 
-From Gauss's intuition, through Chebyshev's steady analysis and Riemann's leap into the complex plane, down to the final proofs by Hadamard and de la Vallée Poussin, the history of the Prime Number Theorem is truly the history of human intellect itself.
+From Gauss's intuition, through Chebyshev's steady analysis and Riemann's leap into the complex plane, down to the final proofs by Hadamard and de la Vallée Poussin, the history of the [Prime Number Theorem](/en/p/prime-number-theorem/) is truly the history of human intellect itself.
 
 When we shop securely on the internet, prime numbers hundreds of digits long are silently being calculated to protect the security of our information. Prime numbers, whose exploration was begun by ancient Greek mathematicians thousands of years ago, have now evolved into a foundational technology supporting the infrastructure of modern society.
 
-Will the day come when the true nature hidden within the distribution of primes (the Riemann Hypothesis) is completely unraveled? The greatest cipher written by the universe has yet to be fully decoded. However, through the powerful lens of the Prime Number Theorem, we are certainly able to grasp the contours of its beautiful laws.
+Will the day come when the true nature hidden within the distribution of primes (the Riemann Hypothesis) is completely unraveled? The greatest cipher written by the universe has yet to be fully decoded. However, through the powerful lens of the [Prime Number Theorem](/en/p/prime-number-theorem/), we are certainly able to grasp the contours of its beautiful laws.

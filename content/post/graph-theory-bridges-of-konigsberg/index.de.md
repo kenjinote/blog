@@ -17,7 +17,7 @@ Unter den Bewohnern von Königsberg war damals ein intellektuelles Spiel beliebt
 
 Jeder versuchte es bei Spaziergängen, aber niemand war erfolgreich. Doch niemand konnte logisch erklären, warum es unmöglich war. Dies wurde als das "Königsberger Brückenproblem" bekannt und galt lange Zeit als ungelöstes Puzzle.
 
-Es war der außergewöhnlich geniale Mathematiker **Leonhard Euler**, der ein völlig neues mathematisches Licht auf dieses scheinbar einfache Stadtspielzeug warf. Seine Überlegungen gingen weit darüber hinaus, nur die Antwort auf das Rätsel zu finden, und begründeten die riesigen mathematischen Gebiete der "Graphentheorie" und der "Topologie".
+Es war der außergewöhnlich geniale Mathematiker **[Leonhard Euler](/de/p/euler/)**, der ein völlig neues mathematisches Licht auf dieses scheinbar einfache Stadtspielzeug warf. Seine Überlegungen gingen weit darüber hinaus, nur die Antwort auf das Rätsel zu finden, und begründeten die riesigen mathematischen Gebiete der "[Graphentheorie](/de/p/graph-theory-dijkstra-a-star/)" und der "Topologie".
 
 Dieser Artikel verfolgt die epische Reise, beginnend mit der mathematischen Formulierung dieser historischen Entdeckung Eulers bis hin zur modernen Netzwerktheorie und den Routenplanungs-Algorithmen (Dijkstra-Algorithmus, A*-Suchalgorithmus), die wir täglich in unseren Navigationssystemen verwenden.
 
@@ -51,7 +51,7 @@ Ein solches mathematisches Modell, das nur aus Punkten und Linien besteht, nennt
 
 ## 3. Mathematische Bedingungen des Linienzugs: Eulerkreis und Eulerweg
 
-In der Sprache der Graphentheorie lässt sich die Frage der Bewohner wie folgt umformulieren:
+In der Sprache der [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) lässt sich die Frage der Bewohner wie folgt umformulieren:
 **"Gibt es in einem gegebenen Graphen einen Weg, der jede Kante genau einmal durchläuft und zum Ausgangsknoten zurückkehrt (einen Eulerkreis: Eulerian Circuit)?"**
 
 Um dieses Problem zu lösen, führte Euler das äußerst einfache und mächtige Konzept des **"Knotengrades (Degree)"** ein. Der Grad eines Knotens ist die "Anzahl der Kanten, die mit diesem Knoten verbunden sind".
@@ -83,9 +83,9 @@ Lassen Sie uns nun die Knotengrade des Königsberger Graphen überprüfen.
 
 ## 4. Die Evolution der Graphentheorie: Von der Topologie zur Informatik
 
-Nach Eulers Entdeckung entwickelte sich die Graphentheorie zu einem wichtigen Teilgebiet der Mathematik. Viele schwierige Probleme, wie das Problem der Karteneinfärbung (Vier-Farben-Satz) und das Problem des Hamiltonkreises (ein Weg, der jeden Knoten genau einmal durchläuft), wurden auf der Bühne der Graphentheorie diskutiert.
+Nach Eulers Entdeckung entwickelte sich die [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) zu einem wichtigen Teilgebiet der Mathematik. Viele schwierige Probleme, wie das Problem der Karteneinfärbung (Vier-Farben-Satz) und das Problem des Hamiltonkreises (ein Weg, der jeden Knoten genau einmal durchläuft), wurden auf der Bühne der [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) diskutiert.
 
-Mit dem Aufkommen von Computern in der zweiten Hälfte des 20. Jahrhunderts ging die Graphentheorie jedoch über den Rahmen der reinen Mathematik hinaus und entwickelte sich zu einer mächtigen Waffe (Algorithmus) zur Lösung von Problemen der realen Welt. Das Routing in Kommunikationsnetzwerken, die Analyse von Freundschaftsbeziehungen in sozialen Netzwerken, die Optimierung von Stromnetzen und vieles mehr - ein Großteil der Infrastruktur der modernen Gesellschaft basiert auf der Graphentheorie.
+Mit dem Aufkommen von Computern in der zweiten Hälfte des 20. Jahrhunderts ging die [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) jedoch über den Rahmen der reinen Mathematik hinaus und entwickelte sich zu einer mächtigen Waffe (Algorithmus) zur Lösung von Problemen der realen Welt. Das Routing in Kommunikationsnetzwerken, die Analyse von Freundschaftsbeziehungen in sozialen Netzwerken, die Optimierung von Stromnetzen und vieles mehr - ein Großteil der Infrastruktur der modernen Gesellschaft basiert auf der [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/).
 
 Besonders eng mit unserem Leben verbunden ist das **Kürzeste-Wege-Problem (Shortest Path Problem)**.
 Während Euler darüber nachdachte, ob man "alle Wege genau einmal gehen kann", lösen moderne Navigationssysteme und Google Maps das Problem: "Welche Route zum Ziel hat die geringsten Kosten (Entfernung oder Zeit)?"
@@ -124,7 +124,7 @@ Bei einem Navigationssystem ist es üblich, die "Luftlinienentfernung zum Ziel" 
 
 ## 6. Graphverarbeitung und Routenplanung mit Python
 
-In der modernen Datenwissenschaft und Algorithmusimplementierung ist **NetworkX** die Standardbibliothek in Python zur Behandlung der Graphentheorie.
+In der modernen Datenwissenschaft und Algorithmusimplementierung ist **NetworkX** die Standardbibliothek in Python zur Behandlung der [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/).
 Hier zeigen wir ein Code-Beispiel, bei dem wir mit NetworkX einen einfachen Graphen erstellen und Routen mithilfe des Dijkstra-Algorithmus und des A*-Algorithmus suchen.
 
 ```python
@@ -178,8 +178,8 @@ Wenn Sie diesen Code ausführen, können Sie überprüfen, dass sowohl der Dijks
 
 ## 7. Epilog: Verbindungen formen die Welt
 
-Das kleine Puzzle, das die Einwohner von Königsberg genossen, wurde durch die Augen des Genies Leonhard Euler zu einer neuen Linse, um die Welt als "Verbindung von Punkten und Linien" neu zu betrachten.
+Das kleine Puzzle, das die Einwohner von Königsberg genossen, wurde durch die Augen des Genies [Leonhard Euler](/de/p/euler/) zu einer neuen Linse, um die Welt als "Verbindung von Punkten und Linien" neu zu betrachten.
 
 Dass wir heute Webseiten von weit entfernten Servern über das Internet in Sekundenbruchteilen laden können und dass uns das Navigationssystem in unbekannten Gebieten genau führt, ist alles das Ergebnis jener mathematischen Abstraktion, die bei den alten Brücken von Preußen begann.
 
-Die Graphentheorie ist auch in diesem Moment aktiv an den vordersten Fronten der Wissenschaft und Technologie, bei der Identifizierung von Influencern in sozialen Medien, der Vorhersage von Infektionswegen von Viren und dem Entwurf neuer chemischer Verbindungen. Indem wir "Verbindungen" mathematisch entschlüsseln, können wir in einer scheinbar viel zu komplexen Welt eine schöne Ordnung und Lösungen finden.
+Die [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) ist auch in diesem Moment aktiv an den vordersten Fronten der Wissenschaft und Technologie, bei der Identifizierung von Influencern in sozialen Medien, der Vorhersage von Infektionswegen von Viren und dem Entwurf neuer chemischer Verbindungen. Indem wir "Verbindungen" mathematisch entschlüsseln, können wir in einer scheinbar viel zu komplexen Welt eine schöne Ordnung und Lösungen finden.

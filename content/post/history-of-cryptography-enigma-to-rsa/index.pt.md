@@ -12,7 +12,7 @@ A tecnologia de criptografia forma a base da segurança da informação. A segur
 
 ## 1. Os Primórdios da Criptografia: Da Antiguidade à Idade Média
 
-A história da criptografia é antiga, e ela se desenvolveu para que governantes pudessem transmitir segredos militares e diplomáticos.
+[A história da criptografia](/pt/p/history-of-cryptography-caesar-to-pqc/) é antiga, e ela se desenvolveu para que governantes pudessem transmitir segredos militares e diplomáticos.
 
 ### Cifra de César (Caesar Cipher)
 É a criptografia mais clássica, que se diz ter sido usada por Júlio César na Roma Antiga, antes de Cristo. É um tipo de "cifra de substituição", onde o alfabeto é deslocado por um número fixo (por exemplo, 3 letras). "A" é convertido em "D", "B" em "E". O mecanismo é muito simples, mas na época, em que a taxa de alfabetização era baixa, orgulhava-se de uma confidencialidade suficiente.

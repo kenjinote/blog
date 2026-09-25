@@ -15374,7 +15374,6 @@
     {
       "article": "content/post/eigenvalues-and-eigenvectors/index.md",
       "keywords": [
-        "固有値",
         "固有値と固有ベクトル",
         "固有値と固有ベクトル：行列による変換で「向きが変わらない」特別なベクトルとその応用"
       ]
@@ -15396,7 +15395,6 @@
     {
       "article": "content/post/eigenvalues-and-eigenvectors/index.zh-cn.md",
       "keywords": [
-        "特征值",
         "特征值与特征向量",
         "特征值与特征向量：矩阵变换中“方向不变”的特殊向量及其应用"
       ]
@@ -15404,7 +15402,6 @@
     {
       "article": "content/post/eigenvalues-and-eigenvectors/index.zh-tw.md",
       "keywords": [
-        "特徵值",
         "特徵值與特徵向量",
         "特徵值與特徵向量：矩陣變換中「方向不變」的特殊向量及其應用"
       ]
@@ -20885,6 +20882,97 @@
       ]
     },
     {
+      "article": "content/post/graph-theory-bridges-of-konigsberg/index.ar.md",
+      "keywords": [
+        "بداية نظرية البيان",
+        "بداية نظرية البيان: رياضيات رسم جسور كونيغسبرغ بمسار واحد"
+      ]
+    },
+    {
+      "article": "content/post/graph-theory-bridges-of-konigsberg/index.de.md",
+      "keywords": [
+        "Der Beginn der Graphentheorie",
+        "Der Beginn der Graphentheorie: Die Mathematik der Königsberger Brücken"
+      ]
+    },
+    {
+      "article": "content/post/graph-theory-bridges-of-konigsberg/index.en.md",
+      "keywords": [
+        "The Beginning of Graph Theory",
+        "The Beginning of Graph Theory: The Mathematics of the Seven Bridges of Königsberg"
+      ]
+    },
+    {
+      "article": "content/post/graph-theory-bridges-of-konigsberg/index.es.md",
+      "keywords": [
+        "El origen de la teoría de grafos",
+        "El origen de la teoría de grafos: Las matemáticas del trazado continuo sobre los puentes de Königsberg"
+      ]
+    },
+    {
+      "article": "content/post/graph-theory-bridges-of-konigsberg/index.fr.md",
+      "keywords": [
+        "Les débuts de la théorie des graphes",
+        "Les débuts de la théorie des graphes : Les ponts de Königsberg et les mathématiques du tracé continu"
+      ]
+    },
+    {
+      "article": "content/post/graph-theory-bridges-of-konigsberg/index.hi.md",
+      "keywords": [
+        "ग्राफ थ्योरी की शुरुआत",
+        "ग्राफ थ्योरी की शुरुआत: कोनिग्सबर्ग के पुलों को पार करने वाला एक-स्ट्रोक गणित"
+      ]
+    },
+    {
+      "article": "content/post/graph-theory-bridges-of-konigsberg/index.id.md",
+      "keywords": [
+        "Awal Mula Teori Graf",
+        "Awal Mula Teori Graf: Matematika Menggambar Satu Garis Melintasi Jembatan Königsberg"
+      ]
+    },
+    {
+      "article": "content/post/graph-theory-bridges-of-konigsberg/index.ko.md",
+      "keywords": [
+        "그래프 이론의 시작",
+        "그래프 이론의 시작: 쾨니히스베르크의 다리를 건너는 한붓그리기 수학"
+      ]
+    },
+    {
+      "article": "content/post/graph-theory-bridges-of-konigsberg/index.md",
+      "keywords": [
+        "グラフ理論の始まり",
+        "グラフ理論の始まり：ケーニヒスベルクの橋を渡る一筆書きの数学"
+      ]
+    },
+    {
+      "article": "content/post/graph-theory-bridges-of-konigsberg/index.pt.md",
+      "keywords": [
+        "O Início da Teoria dos Grafos",
+        "O Início da Teoria dos Grafos: A Matemática do Desenho de Uma Linha nas Pontes de Königsberg"
+      ]
+    },
+    {
+      "article": "content/post/graph-theory-bridges-of-konigsberg/index.ru.md",
+      "keywords": [
+        "Начало теории графов",
+        "Начало теории графов: математика уникурсального рисования мостов Кёнигсберга"
+      ]
+    },
+    {
+      "article": "content/post/graph-theory-bridges-of-konigsberg/index.zh-cn.md",
+      "keywords": [
+        "图论的开端",
+        "图论的开端：跨越柯尼斯堡七桥的一笔画数学"
+      ]
+    },
+    {
+      "article": "content/post/graph-theory-bridges-of-konigsberg/index.zh-tw.md",
+      "keywords": [
+        "圖論的起源",
+        "圖論的起源：跨越柯尼斯堡橋的一筆畫數學"
+      ]
+    },
+    {
       "article": "content/post/graph-theory-dijkstra-a-star/index.ar.md",
       "keywords": [
         "نظرية الرسوم البيانية",
@@ -23158,6 +23246,89 @@
       "article": "content/post/history-of-bytedance/index.md",
       "keywords": [
         "企業史: ByteDanceの歴史 - TikTokはいかにして世界を席巻したか"
+      ]
+    },
+    {
+      "article": "content/post/history-of-cryptography-enigma-to-rsa/index.ar.md",
+      "keywords": [
+        "تاريخ التشفير",
+        "تاريخ التشفير: من معارك إنجما إلى ولادة تشفير المفتاح العام (RSA)"
+      ]
+    },
+    {
+      "article": "content/post/history-of-cryptography-enigma-to-rsa/index.de.md",
+      "keywords": [
+        "Die Geschichte der Kryptographie: Von der Enigma-Schlacht bis zur Entstehung der Public-Key-Kryptographie (RSA)"
+      ]
+    },
+    {
+      "article": "content/post/history-of-cryptography-enigma-to-rsa/index.en.md",
+      "keywords": [
+        "History of Cryptography: From the Enigma Battles to the Birth of Public-Key Cryptography (RSA)"
+      ]
+    },
+    {
+      "article": "content/post/history-of-cryptography-enigma-to-rsa/index.es.md",
+      "keywords": [
+        "Historia de la criptografía: de la batalla de Enigma al nacimiento de la criptografía de clave pública (RSA)"
+      ]
+    },
+    {
+      "article": "content/post/history-of-cryptography-enigma-to-rsa/index.fr.md",
+      "keywords": [
+        "Histoire de la cryptographie : De la bataille d'Enigma à la naissance de la cryptographie à clé publique (RSA)"
+      ]
+    },
+    {
+      "article": "content/post/history-of-cryptography-enigma-to-rsa/index.hi.md",
+      "keywords": [
+        "क्रिप्टोग्राफी का इतिहास: एनिग्मा के संघर्ष से लेकर सार्वजनिक कुंजी क्रिप्टोग्राफी (RSA) के जन्म तक"
+      ]
+    },
+    {
+      "article": "content/post/history-of-cryptography-enigma-to-rsa/index.id.md",
+      "keywords": [
+        "Sejarah Kriptografi: Dari Pertahanan Enigma hingga Lahirnya Kriptografi Kunci Publik (RSA)"
+      ]
+    },
+    {
+      "article": "content/post/history-of-cryptography-enigma-to-rsa/index.ko.md",
+      "keywords": [
+        "암호의 역사",
+        "암호의 역사: 에니그마의 공방에서 공개키 암호(RSA)의 탄생까지"
+      ]
+    },
+    {
+      "article": "content/post/history-of-cryptography-enigma-to-rsa/index.md",
+      "keywords": [
+        "暗号の歴史",
+        "暗号の歴史：エニグマの攻防から公開鍵暗号（RSA）の誕生まで"
+      ]
+    },
+    {
+      "article": "content/post/history-of-cryptography-enigma-to-rsa/index.pt.md",
+      "keywords": [
+        "História da Criptografia",
+        "História da Criptografia: Da Batalha do Enigma ao Nascimento da Criptografia de Chave Pública (RSA)"
+      ]
+    },
+    {
+      "article": "content/post/history-of-cryptography-enigma-to-rsa/index.ru.md",
+      "keywords": [
+        "История криптографии: от битвы за 'Энигму' до создания криптографии с открытым ключом (RSA)"
+      ]
+    },
+    {
+      "article": "content/post/history-of-cryptography-enigma-to-rsa/index.zh-cn.md",
+      "keywords": [
+        "密码学的历史",
+        "密码学的历史：从恩尼格玛的攻防到公钥密码学（RSA）的诞生"
+      ]
+    },
+    {
+      "article": "content/post/history-of-cryptography-enigma-to-rsa/index.zh-tw.md",
+      "keywords": [
+        "密碼學的歷史：從恩尼格瑪的攻防到公開金鑰密碼（RSA）的誕生"
       ]
     },
     {
@@ -38476,6 +38647,98 @@
       ]
     },
     {
+      "article": "content/post/pi-calculation-history/index.ar.md",
+      "keywords": [
+        "رحلة لا نهاية لها لحساب باي",
+        "رحلة لا نهاية لها لحساب باي: من أرخميدس إلى الحواسيب الخارقة"
+      ]
+    },
+    {
+      "article": "content/post/pi-calculation-history/index.de.md",
+      "keywords": [
+        "Die endlose Reise zur Berechnung von Pi",
+        "Die endlose Reise zur Berechnung von Pi: Von Archimedes bis zum Supercomputer"
+      ]
+    },
+    {
+      "article": "content/post/pi-calculation-history/index.en.md",
+      "keywords": [
+        "The Endless Journey of Calculating Pi",
+        "The Endless Journey of Calculating Pi: From Archimedes to Supercomputers"
+      ]
+    },
+    {
+      "article": "content/post/pi-calculation-history/index.es.md",
+      "keywords": [
+        "El viaje interminable para calcular Pi",
+        "El viaje interminable para calcular Pi: Desde Arquímedes hasta los superordenadores"
+      ]
+    },
+    {
+      "article": "content/post/pi-calculation-history/index.fr.md",
+      "keywords": [
+        "La quête sans fin du calcul de Pi",
+        "La quête sans fin du calcul de Pi : d'Archimède aux superordinateurs"
+      ]
+    },
+    {
+      "article": "content/post/pi-calculation-history/index.hi.md",
+      "keywords": [
+        "पाय",
+        "पाय (Pi) की गणना की अंतहीन यात्रा",
+        "पाय (Pi) की गणना की अंतहीन यात्रा: आर्किमिडीज़ से सुपर कंप्यूटर तक"
+      ]
+    },
+    {
+      "article": "content/post/pi-calculation-history/index.id.md",
+      "keywords": [
+        "Perjalanan Tanpa Akhir Menghitung Pi",
+        "Perjalanan Tanpa Akhir Menghitung Pi: Dari Archimedes hingga Superkomputer"
+      ]
+    },
+    {
+      "article": "content/post/pi-calculation-history/index.ko.md",
+      "keywords": [
+        "원주율을 구하는 끝없는 여정",
+        "원주율을 구하는 끝없는 여정: 아르키메데스부터 슈퍼컴퓨터까지"
+      ]
+    },
+    {
+      "article": "content/post/pi-calculation-history/index.md",
+      "keywords": [
+        "円周率を求める果てしない旅",
+        "円周率を求める果てしない旅：アルキメデスからスパコンまで"
+      ]
+    },
+    {
+      "article": "content/post/pi-calculation-history/index.pt.md",
+      "keywords": [
+        "A jornada sem fim para calcular o Pi",
+        "A jornada sem fim para calcular o Pi: De Arquimedes aos supercomputadores"
+      ]
+    },
+    {
+      "article": "content/post/pi-calculation-history/index.ru.md",
+      "keywords": [
+        "Бесконечное путешествие к вычислению числа пи",
+        "Бесконечное путешествие к вычислению числа пи: от Архимеда до суперкомпьютеров"
+      ]
+    },
+    {
+      "article": "content/post/pi-calculation-history/index.zh-cn.md",
+      "keywords": [
+        "计算圆周率的无尽之旅",
+        "计算圆周率的无尽之旅：从阿基米德到超级计算机"
+      ]
+    },
+    {
+      "article": "content/post/pi-calculation-history/index.zh-tw.md",
+      "keywords": [
+        "計算圓周率的無盡之旅",
+        "計算圓周率的無盡之旅：從阿基米德到超級電腦"
+      ]
+    },
+    {
       "article": "content/post/picks-theorem/index.ar.md",
       "keywords": [
         "مبرهنة بيك",
@@ -39424,7 +39687,6 @@
       "article": "content/post/prime-number-theorem/index.ar.md",
       "keywords": [
         "Prime Number Theorem",
-        "نظرية الأعداد الأولية",
         "نظرية الأعداد الأولية (Prime Number Theorem)",
         "نظرية الأعداد الأولية (Prime Number Theorem) - القاعدة التي تقترب فيها توزيعات الأعداد الأولية من الدالة اللوغاريتمية"
       ]
@@ -39432,7 +39694,6 @@
     {
       "article": "content/post/prime-number-theorem/index.de.md",
       "keywords": [
-        "Der Primzahlsatz",
         "Der Primzahlsatz (Prime Number Theorem)",
         "Der Primzahlsatz (Prime Number Theorem) - Das Gesetz, dass sich die Verteilung von Primzahlen einer logarithmischen Funktion annähert",
         "Prime Number Theorem",
@@ -39468,7 +39729,6 @@
       "article": "content/post/prime-number-theorem/index.hi.md",
       "keywords": [
         "Prime Number Theorem",
-        "अभाज्य संख्या प्रमेय",
         "अभाज्य संख्या प्रमेय (Prime Number Theorem)",
         "अभाज्य संख्या प्रमेय (Prime Number Theorem) - एक नियम कि अभाज्य संख्याओं का वितरण लघुगणकीय फलन के करीब पहुंचता है"
       ]
@@ -39477,7 +39737,6 @@
       "article": "content/post/prime-number-theorem/index.id.md",
       "keywords": [
         "Prime Number Theorem",
-        "Teorema Bilangan Prima",
         "Teorema Bilangan Prima (Prime Number Theorem)",
         "Teorema Bilangan Prima (Prime Number Theorem) - Hukum di mana distribusi bilangan prima mendekati fungsi logaritma"
       ]
@@ -39486,7 +39745,6 @@
       "article": "content/post/prime-number-theorem/index.ko.md",
       "keywords": [
         "Prime Number Theorem",
-        "소수 정리",
         "소수 정리(Prime Number Theorem)",
         "소수 정리(Prime Number Theorem) - 소수의 분포가 로그 함수에 가까워진다는 법칙"
       ]
@@ -39495,7 +39753,6 @@
       "article": "content/post/prime-number-theorem/index.md",
       "keywords": [
         "Prime Number Theorem",
-        "素数定理",
         "素数定理（Prime Number Theorem）",
         "素数定理（Prime Number Theorem） - 素数の分布が対数関数に近づいていくという法則"
       ]
@@ -39504,7 +39761,6 @@
       "article": "content/post/prime-number-theorem/index.pt.md",
       "keywords": [
         "Prime Number Theorem",
-        "Teorema dos Números Primos",
         "Teorema dos Números Primos (Prime Number Theorem)",
         "Teorema dos Números Primos (Prime Number Theorem) - A lei de que a distribuição dos números primos se aproxima de uma função logarítmica"
       ]
@@ -39522,7 +39778,6 @@
       "article": "content/post/prime-number-theorem/index.zh-cn.md",
       "keywords": [
         "Prime Number Theorem",
-        "素数定理",
         "素数定理（Prime Number Theorem）",
         "素数定理（Prime Number Theorem） - 素数分布趋近于对数函数的法则"
       ]
@@ -39531,9 +39786,90 @@
       "article": "content/post/prime-number-theorem/index.zh-tw.md",
       "keywords": [
         "Prime Number Theorem",
-        "質數定理",
         "質數定理（Prime Number Theorem）",
         "質數定理（Prime Number Theorem） - 質數的分佈趨近於對數函數的法則"
+      ]
+    },
+    {
+      "article": "content/post/prime-number-theorem-overview/index.ar.md",
+      "keywords": [
+        "نظرية الأعداد الأولية: القانون الجميل الكامن في التوزيع العشوائي الظاهر للأعداد الأولية"
+      ]
+    },
+    {
+      "article": "content/post/prime-number-theorem-overview/index.de.md",
+      "keywords": [
+        "Der Primzahlsatz: Das schöne Gesetz hinter der scheinbar zufälligen Verteilung von Primzahlen"
+      ]
+    },
+    {
+      "article": "content/post/prime-number-theorem-overview/index.en.md",
+      "keywords": [
+        "The Prime Number Theorem",
+        "The Prime Number Theorem: The Beautiful Law Hidden in the Seemingly Random Distribution of Primes"
+      ]
+    },
+    {
+      "article": "content/post/prime-number-theorem-overview/index.es.md",
+      "keywords": [
+        "El Teorema de los Números Primos",
+        "El Teorema de los Números Primos: La hermosa ley oculta en la distribución aparentemente aleatoria de los números primos"
+      ]
+    },
+    {
+      "article": "content/post/prime-number-theorem-overview/index.fr.md",
+      "keywords": [
+        "Le Théorème des Nombres Premiers",
+        "Le Théorème des Nombres Premiers : La Belle Loi Cachée dans la Distribution Apparemment Aléatoire des Nombres Premiers"
+      ]
+    },
+    {
+      "article": "content/post/prime-number-theorem-overview/index.hi.md",
+      "keywords": [
+        "अभाज्य संख्या प्रमेय: अभाज्य संख्याओं के प्रतीत होने वाले यादृच्छिक वितरण में छिपा सुंदर नियम"
+      ]
+    },
+    {
+      "article": "content/post/prime-number-theorem-overview/index.id.md",
+      "keywords": [
+        "Teorema Bilangan Prima: Hukum Indah di Balik Distribusi Bilangan Prima yang Tampak Acak"
+      ]
+    },
+    {
+      "article": "content/post/prime-number-theorem-overview/index.ko.md",
+      "keywords": [
+        "소수 정리: 무작위처럼 보이는 소수의 분포에 숨겨진 아름다운 법칙"
+      ]
+    },
+    {
+      "article": "content/post/prime-number-theorem-overview/index.md",
+      "keywords": [
+        "素数定理：ランダムに見える素数の分布に潜む美しい法則"
+      ]
+    },
+    {
+      "article": "content/post/prime-number-theorem-overview/index.pt.md",
+      "keywords": [
+        "Teorema dos Números Primos: A bela lei oculta na distribuição de números primos aparentemente aleatórios"
+      ]
+    },
+    {
+      "article": "content/post/prime-number-theorem-overview/index.ru.md",
+      "keywords": [
+        "Теорема о распределении простых чисел",
+        "Теорема о распределении простых чисел: Прекрасная закономерность, скрытая в кажущемся случайным распределении простых чисел"
+      ]
+    },
+    {
+      "article": "content/post/prime-number-theorem-overview/index.zh-cn.md",
+      "keywords": [
+        "素数定理：看似随机的素数分布中隐藏的美丽法则"
+      ]
+    },
+    {
+      "article": "content/post/prime-number-theorem-overview/index.zh-tw.md",
+      "keywords": [
+        "質數定理：看似隨機的質數分佈中隱藏的優美法則"
       ]
     },
     {
@@ -41199,57 +41535,57 @@
     {
       "article": "content/post/random-matrix-theory/index.ar.md",
       "keywords": [
-        "نظرية المصفوفات العشوائية",
-        "نظرية المصفوفات العشوائية: الرياضيات التي تظهر في كل شيء من النوى الذرية إلى أسعار الأسهم والشبكات العصبية"
+        "نظرية المصفوفة العشوائية",
+        "نظرية المصفوفة العشوائية: الرياضيات التي تظهر بدءاً من النوى الذرية وصولاً إلى أسعار الأسهم والشبكات العصبية"
       ]
     },
     {
       "article": "content/post/random-matrix-theory/index.de.md",
       "keywords": [
-        "Zufallsmatrizen-Theorie",
-        "Zufallsmatrizen-Theorie: Die Mathematik, die von Atomkernen bis zu Aktienkursen und neuronalen Netzen auftritt"
+        "Theorie der Zufallsmatrizen",
+        "Theorie der Zufallsmatrizen: Die Mathematik, die von Atomkernen über Aktienkurse bis zu neuronalen Netzen auftaucht"
       ]
     },
     {
       "article": "content/post/random-matrix-theory/index.en.md",
       "keywords": [
         "Random Matrix Theory",
-        "Random Matrix Theory: Mathematics Emerging from Atomic Nuclei to Stock Prices and Neural Networks"
+        "Random Matrix Theory: The Mathematics Appearing from Atomic Nuclei to Stock Prices and Neural Networks"
       ]
     },
     {
       "article": "content/post/random-matrix-theory/index.es.md",
       "keywords": [
         "Teoría de Matrices Aleatorias",
-        "Teoría de Matrices Aleatorias: Matemáticas que aparecen desde núcleos atómicos y precios de acciones hasta redes neuronales"
+        "Teoría de Matrices Aleatorias: Las Matemáticas que Aparecen desde los Núcleos Atómicos hasta los Precios de las Acciones y las Redes Neuronales"
       ]
     },
     {
       "article": "content/post/random-matrix-theory/index.fr.md",
       "keywords": [
-        "Théorie des matrices aléatoires",
-        "Théorie des matrices aléatoires : les mathématiques qui apparaissent des noyaux atomiques aux cours des actions et aux réseaux de neurones"
+        "Théorie des Matrices Aléatoires",
+        "Théorie des Matrices Aléatoires : Les Mathématiques Apparaissant des Noyaux Atomiques aux Prix des Actions et aux Réseaux de Neurones"
       ]
     },
     {
       "article": "content/post/random-matrix-theory/index.hi.md",
       "keywords": [
         "रैंडम मैट्रिक्स थ्योरी",
-        "रैंडम मैट्रिक्स थ्योरी: परमाणु नाभिक से लेकर शेयर की कीमतों और न्यूरल नेटवर्क तक प्रकट होने वाला गणित"
+        "रैंडम मैट्रिक्स थ्योरी: परमाणु नाभिक से लेकर स्टॉक की कीमतों और न्यूरल नेटवर्क तक प्रकट होने वाला गणित"
       ]
     },
     {
       "article": "content/post/random-matrix-theory/index.id.md",
       "keywords": [
         "Teori Matriks Acak",
-        "Teori Matriks Acak: Matematika yang Muncul dari Inti Atom, Harga Saham, hingga Jaringan Saraf Tiruan"
+        "Teori Matriks Acak: Matematika yang Muncul dari Nukleus Atom hingga Harga Saham dan Jaringan Saraf Tiruan"
       ]
     },
     {
       "article": "content/post/random-matrix-theory/index.ko.md",
       "keywords": [
-        "무작위 행렬 이론",
-        "무작위 행렬 이론: 원자핵에서 주가, 신경망까지 나타나는 수학"
+        "랜덤 행렬 이론",
+        "랜덤 행렬 이론: 원자핵에서 주가, 신경망까지 나타나는 수학"
       ]
     },
     {
@@ -41263,28 +41599,28 @@
       "article": "content/post/random-matrix-theory/index.pt.md",
       "keywords": [
         "Teoria das Matrizes Aleatórias",
-        "Teoria das Matrizes Aleatórias: A Matemática Presente de Núcleos Atômicos a Preços de Ações e Redes Neurais"
+        "Teoria das Matrizes Aleatórias: A Matemática que Surge de Núcleos Atômicos a Preços de Ações e Redes Neurais"
       ]
     },
     {
       "article": "content/post/random-matrix-theory/index.ru.md",
       "keywords": [
         "Теория случайных матриц",
-        "Теория случайных матриц: математика, возникающая от атомных ядер до цен на акции и нейронных сетей"
+        "Теория случайных матриц: математика, возникающая от атомных ядер до цен на акции и нейросетей"
       ]
     },
     {
       "article": "content/post/random-matrix-theory/index.zh-cn.md",
       "keywords": [
         "随机矩阵理论",
-        "随机矩阵理论：从原子核到股价、神经网络中显现的数学"
+        "随机矩阵理论：从原子核到股价，再到神经网络中出现的数学"
       ]
     },
     {
       "article": "content/post/random-matrix-theory/index.zh-tw.md",
       "keywords": [
         "隨機矩陣理論",
-        "隨機矩陣理論：從原子核、股價到神經網路中出現的數學"
+        "隨機矩陣理論：從原子核到股價，再到神經網路中出現的數學"
       ]
     },
     {
@@ -59965,42 +60301,36 @@
     {
       "article": "content/post/暗号技術の歴史/index.de.md",
       "keywords": [
-        "Die Geschichte der Kryptographie",
         "Die Geschichte der Kryptographie: Von der Caesar-Chiffre bis zur Post-Quanten-Kryptographie (PQC)"
       ]
     },
     {
       "article": "content/post/暗号技術の歴史/index.en.md",
       "keywords": [
-        "History of Cryptography",
         "History of Cryptography: From Caesar Cipher to Post-Quantum Cryptography (PQC)"
       ]
     },
     {
       "article": "content/post/暗号技術の歴史/index.es.md",
       "keywords": [
-        "Historia de la criptografía",
         "Historia de la criptografía: del cifrado César a la criptografía poscuántica (PQC)"
       ]
     },
     {
       "article": "content/post/暗号技術の歴史/index.fr.md",
       "keywords": [
-        "Histoire de la cryptographie",
         "Histoire de la cryptographie : du chiffre de César à la cryptographie post-quantique (PQC)"
       ]
     },
     {
       "article": "content/post/暗号技術の歴史/index.hi.md",
       "keywords": [
-        "क्रिप्टोग्राफी का इतिहास",
         "क्रिप्टोग्राफी का इतिहास: सीज़र साइफर से पोस्ट-क्वांटम क्रिप्टोग्राफी (PQC) तक"
       ]
     },
     {
       "article": "content/post/暗号技術の歴史/index.id.md",
       "keywords": [
-        "Sejarah Kriptografi",
         "Sejarah Kriptografi: Dari Sandi Caesar hingga Kriptografi Pasca-Kuantum (PQC)"
       ]
     },
@@ -60028,7 +60358,6 @@
     {
       "article": "content/post/暗号技術の歴史/index.ru.md",
       "keywords": [
-        "История криптографии",
         "История криптографии: от шифра Цезаря до постквантовой криптографии (PQC)"
       ]
     },
@@ -60042,7 +60371,6 @@
     {
       "article": "content/post/暗号技術の歴史/index.zh-tw.md",
       "keywords": [
-        "密碼學的歷史",
         "密碼學的歷史：從凱撒密碼到後量子密碼（PQC）"
       ]
     },

@@ -260,7 +260,7 @@ FHE가 실용적인 속도에 도달해가는 지금, 다음과 같은 분야에
 
 ## 9. 결론: 암호의 미래는 '보이지 않는 계산'으로
 
-1970년대에 공개키 암호([RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/))가 발명되어 인터넷 상의 안전한 통신(HTTPS 등)이 가능해진 것처럼, Craig Gentry에 의한 FHE의 발명은 암호의 역사에 있어서 가장 중요한 이정표 중 하나입니다.
+1970년대에 공개키 암호([RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/))가 발명되어 인터넷 상의 안전한 통신(HTTPS 등)이 가능해진 것처럼, Craig Gentry에 의한 FHE의 발명은 [암호의 역사](/ko/p/history-of-cryptography-enigma-to-rsa/)에 있어서 가장 중요한 이정표 중 하나입니다.
 
 현재 완전동형암호(FHE)는 연구실의 이론에서 벗어나 Microsoft, IBM, Intel, Google, 그리고 많은 스타트업들이 실용화를 향해 치열하게 경쟁하는 단계에 접어들었습니다. 계산 비용이나 데이터 크기라는 과제는 여전히 존재하지만 알고리즘의 세련화와 하드웨어 가속기의 진화에 의해 [무어의 법칙](/ko/p/business-moores-law/)을 뛰어넘는 속도로 성능 향상이 이어지고 있습니다.
 

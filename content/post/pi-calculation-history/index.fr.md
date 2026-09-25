@@ -46,7 +46,7 @@ Soit $p_n$ le périmètre du polygone régulier inscrit à $n$ côtés, et $P_n$
 
 $$ p_n < 2\pi < P_n $$
 
-Pour calculer la longueur des côtés des polygones à $n$ côtés, Archimède a utilisé de manière répétitive des théorèmes géométriques équivalant aux fonctions trigonométriques modernes (le théorème de Pythagore et le théorème de la bissectrice). Dans la notation moderne, la longueur d'un côté du polygone régulier inscrit à $n$ côtés est $2 \sin(\pi/n)$, et celle du polygone régulier circonscrit à $n$ côtés est $2 \tan(\pi/n)$. Ainsi, en utilisant le demi-périmètre, nous obtenons :
+Pour calculer la longueur des côtés des polygones à $n$ côtés, Archimède a utilisé de manière répétitive des théorèmes géométriques équivalant aux fonctions trigonométriques modernes (le théorème de [Pythagore](/fr/p/pythagoras/) et le théorème de la bissectrice). Dans la notation moderne, la longueur d'un côté du polygone régulier inscrit à $n$ côtés est $2 \sin(\pi/n)$, et celle du polygone régulier circonscrit à $n$ côtés est $2 \tan(\pi/n)$. Ainsi, en utilisant le demi-périmètre, nous obtenons :
 
 $$ n \sin\left(\frac{\pi}{n}\right) < \pi < n \tan\left(\frac{\pi}{n}\right) $$
 
@@ -110,7 +110,7 @@ Au 17e siècle, avec la découverte du calcul infinitésimal par Newton et Leibn
 
 ## 3.1 Série de Gregory-Leibniz
 
-En 1671, le mathématicien écossais James Gregory a découvert, et le mathématicien allemand Gottfried Leibniz a redécouvert indépendamment en 1674, le développement en série infinie de la fonction arc tangente (arctangente).
+En 1671, le mathématicien écossais James Gregory a découvert, et le mathématicien allemand [Gottfried Leibniz](/fr/p/leibniz/) a redécouvert indépendamment en 1674, le développement en série infinie de la fonction arc tangente (arctangente).
 
 $$ \arctan(x) = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + \cdots = \sum_{k=0}^{\infty} \frac{(-1)^k x^{2k+1}}{2k+1} $$
 
@@ -270,7 +270,7 @@ Lors de l'exécution du code ci-dessus, Pi est calculé à une vitesse incroyabl
 
 Un autre algorithme innovant qui ne doit pas être oublié dans les méthodes de calcul de Pi est l'"algorithme de Gauss-Legendre". Il a été découvert indépendamment en 1975 par Richard Brent et Eugene Salamin.
 
-Cet algorithme est basé sur la théorie de la "moyenne arithmético-géométrique (MAG)" et des intégrales elliptiques étudiées par Carl Friedrich Gauss.
+Cet algorithme est basé sur la théorie de la "moyenne arithmético-géométrique (MAG)" et des intégrales elliptiques étudiées par [Carl Friedrich Gauss](/fr/p/gauss/).
 
 Étant donné deux nombres $a_0, b_0$, on crée une suite en appliquant répétitivement la moyenne arithmétique et la moyenne géométrique de la manière suivante :
 

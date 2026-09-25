@@ -14,13 +14,13 @@ Los números primos (Prime Numbers) son números naturales que no tienen más di
 
 Sin embargo, al observar el patrón de aparición de los números primos a primera vista, no se puede encontrar ninguna regularidad. A veces aparecen agrupados como números primos gemelos, como el 11 y el 13, y otras veces hay "desiertos de números primos" donde no aparece el siguiente número primo incluso después de miles o decenas de miles de números. Esta aleatoriedad local e imprevisibilidad supuso una gran barrera para los matemáticos.
 
-A pesar de esto, desde una perspectiva macroscópica, es decir, en el comportamiento global de "qué proporción de números primos existe en el conjunto de todos los números", se descubrió que se esconde una ley sorprendentemente hermosa y suave. Esto es el **Teorema de los Números Primos (Prime Number Theorem, PNT)**, que se explica en este artículo.
+A pesar de esto, desde una perspectiva macroscópica, es decir, en el comportamiento global de "qué proporción de números primos existe en el conjunto de todos los números", se descubrió que se esconde una ley sorprendentemente hermosa y suave. Esto es el **[Teorema de los Números Primos](/es/p/prime-number-theorem/) ([Prime Number Theorem](/es/p/prime-number-theorem/), PNT)**, que se explica en este artículo.
 
 ## 2. ¿Qué es el Teorema de los Números Primos? La gran intuición de Gauss
 
-El Teorema de los Números Primos es un teorema que describe cómo aumenta la cantidad de números primos $\pi(x)$ menores o iguales a un número real dado $x$, a medida que $x$ se hace más grande.
+El [Teorema de los Números Primos](/es/p/prime-number-theorem/) es un teorema que describe cómo aumenta la cantidad de números primos $\pi(x)$ menores o iguales a un número real dado $x$, a medida que $x$ se hace más grande.
 
-Expresado matemáticamente, el Teorema de los Números Primos se enuncia de la siguiente manera:
+Expresado matemáticamente, el [Teorema de los Números Primos](/es/p/prime-number-theorem/) se enuncia de la siguiente manera:
 
 $$
 \lim_{x \to \infty} \frac{\pi(x)}{x / \ln(x)} = 1
@@ -30,7 +30,7 @@ Esto significa que "la cantidad de números primos $\pi(x)$ menores o iguales a 
 
 ### El descubrimiento de Gauss a los 15 años
 
-El primero en darse cuenta de este sorprendente hecho fue el genio Carl Friedrich Gauss, que entonces tenía solo 15 años. En 1792, Gauss estudió con entusiasmo las tablas de logaritmos y de números primos, y notó la tendencia de que la densidad de los números primos disminuía en proporción inversa al logaritmo natural. Conjeturó la siguiente fórmula de aproximación:
+El primero en darse cuenta de este sorprendente hecho fue el genio [Carl Friedrich Gauss](/es/p/gauss/), que entonces tenía solo 15 años. En 1792, Gauss estudió con entusiasmo las tablas de logaritmos y de números primos, y notó la tendencia de que la densidad de los números primos disminuía en proporción inversa al logaritmo natural. Conjeturó la siguiente fórmula de aproximación:
 
 $$
 \pi(x) \approx \operatorname{Li}(x) = \int_{2}^{x} \frac{dt}{\ln t}
@@ -48,11 +48,11 @@ $$
 0.92129 \frac{x}{\ln x} < \pi(x) < 1.10555 \frac{x}{\ln x}
 $$
 
-Chebyshev también demostró que, si existe el límite de $\pi(x) / (x/\ln x)$, entonces debe ser necesariamente 1. Sin embargo, no llegó a demostrar que el límite en sí existiera (es decir, la demostración completa del Teorema de los Números Primos).
+Chebyshev también demostró que, si existe el límite de $\pi(x) / (x/\ln x)$, entonces debe ser necesariamente 1. Sin embargo, no llegó a demostrar que el límite en sí existiera (es decir, la demostración completa del [Teorema de los Números Primos](/es/p/prime-number-theorem/)).
 
 ## 4. La función zeta de Riemann y la introducción del análisis complejo
 
-El mayor avance hacia la demostración del Teorema de los Números Primos fue aportado por Bernhard Riemann. En su revolucionario artículo de 1859, "Sobre el número de primos menores que una magnitud dada", Riemann demostró que la distribución de los números primos está profundamente conectada con el comportamiento de una **función compleja**.
+El mayor avance hacia la demostración del [Teorema de los Números Primos](/es/p/prime-number-theorem/) fue aportado por [Bernhard Riemann](/es/p/riemann/). En su revolucionario artículo de 1859, "Sobre el número de primos menores que una magnitud dada", Riemann demostró que la distribución de los números primos está profundamente conectada con el comportamiento de una **función compleja**.
 
 Lo que utilizó es la función $\zeta(s)$, que hoy se conoce como la **función zeta de Riemann**.
 
@@ -74,15 +74,15 @@ graph TD
 
 ## 5. La demostración completa por Hadamard y de la Vallée Poussin
 
-En 1896, unos 40 años después del enfoque revolucionario de Riemann, el francés Jacques Hadamard y el belga Charles de la Vallée Poussin lograron, de manera independiente, la demostración completa del Teorema de los Números Primos.
+En 1896, unos 40 años después del enfoque revolucionario de Riemann, el francés Jacques Hadamard y el belga Charles de la Vallée Poussin lograron, de manera independiente, la demostración completa del [Teorema de los Números Primos](/es/p/prime-number-theorem/).
 
-El núcleo de sus demostraciones fue demostrar que "la función zeta $\zeta(s)$ no tiene ceros en la recta $\operatorname{Re}(s) = 1$ en el plano complejo". Utilizando herramientas poderosas del análisis complejo (como el teorema integral de Cauchy), el Teorema de los Números Primos se deriva de la no existencia de estos ceros.
+El núcleo de sus demostraciones fue demostrar que "la función zeta $\zeta(s)$ no tiene ceros en la recta $\operatorname{Re}(s) = 1$ en el plano complejo". Utilizando herramientas poderosas del análisis complejo (como el [teorema integral de Cauchy](/es/p/cauchys-integral-theorem/)), el [Teorema de los Números Primos](/es/p/prime-number-theorem/) se deriva de la no existencia de estos ceros.
 
 De esta manera, la ley de distribución asintótica de los números primos, conjeturada por Gauss a los 15 años, se estableció finalmente como un "teorema" matemático después de más de 100 años.
 
 ## 6. La Hipótesis de Riemann y el término de error del Teorema de los Números Primos
 
-Incluso después de que se demostró el Teorema de los Números Primos, la exploración de los números primos no terminó. El enfoque actual es el problema de "cuán pequeña es la diferencia (error) entre $\pi(x)$ y $\operatorname{Li}(x)$".
+Incluso después de que se demostró el [Teorema de los Números Primos](/es/p/prime-number-theorem/), la exploración de los números primos no terminó. El enfoque actual es el problema de "cuán pequeña es la diferencia (error) entre $\pi(x)$ y $\operatorname{Li}(x)$".
 
 De la Vallée Poussin dio la siguiente evaluación con respecto al término de error:
 
@@ -106,7 +106,7 @@ La teoría de los números primos no se limita al mundo de las matemáticas pura
 
 Por ejemplo, la **criptografía RSA**, que permite la comunicación segura en Internet, utiliza la propiedad de que "multiplicar dos números primos enormes es fácil, pero factorizar su producto en los números primos originales es extremadamente difícil".
 
-Para generar una clave para la criptografía RSA, es necesario encontrar rápidamente números primos gigantes de cientos de dígitos (miles de bits). Aquí es donde el Teorema de los Números Primos juega un papel importante. Según el Teorema de los Números Primos, la probabilidad de que un número cercano a $N$ sea primo es $1 / \ln(N)$. Por lo tanto, si elegimos números al azar cerca de un número de 2048 bits (aproximadamente $10^{616}$), si probamos aproximadamente $616 \times \ln(10) \approx 1418$ números, es casi seguro que encontraremos un número primo. Es gracias al Teorema de los Números Primos que se garantiza que el algoritmo para encontrar números primos enormes termine en un tiempo realista.
+Para generar una clave para la criptografía RSA, es necesario encontrar rápidamente números primos gigantes de cientos de dígitos (miles de bits). Aquí es donde el [Teorema de los Números Primos](/es/p/prime-number-theorem/) juega un papel importante. Según el [Teorema de los Números Primos](/es/p/prime-number-theorem/), la probabilidad de que un número cercano a $N$ sea primo es $1 / \ln(N)$. Por lo tanto, si elegimos números al azar cerca de un número de 2048 bits (aproximadamente $10^{616}$), si probamos aproximadamente $616 \times \ln(10) \approx 1418$ números, es casi seguro que encontraremos un número primo. Es gracias al [Teorema de los Números Primos](/es/p/prime-number-theorem/) que se garantiza que el algoritmo para encontrar números primos enormes termine en un tiempo realista.
 
 ### Test de primalidad de Miller-Rabin
 
@@ -160,10 +160,10 @@ Este algoritmo es una extensión del pequeño teorema de Fermat, y la probabilid
 
 ## 8. Conclusión: Los números primos como el código del universo
 
-El Teorema de los Números Primos demuestra una profunda filosofía en matemáticas: "lo que parece completamente desordenado a nivel individual produce un orden extremadamente refinado cuando se reúne como un todo".
+El [Teorema de los Números Primos](/es/p/prime-number-theorem/) demuestra una profunda filosofía en matemáticas: "lo que parece completamente desordenado a nivel individual produce un orden extremadamente refinado cuando se reúne como un todo".
 
-Desde la intuición de Gauss, pasando por el constante análisis de Chebyshev, el salto de Riemann al plano complejo y, finalmente, la demostración definitiva por Hadamard y de la Vallée Poussin, la historia del Teorema de los Números Primos es verdaderamente la historia del intelecto humano en sí misma.
+Desde la intuición de Gauss, pasando por el constante análisis de Chebyshev, el salto de Riemann al plano complejo y, finalmente, la demostración definitiva por Hadamard y de la Vallée Poussin, la historia del [Teorema de los Números Primos](/es/p/prime-number-theorem/) es verdaderamente la historia del intelecto humano en sí misma.
 
 Cuando compramos de forma segura en Internet, los números primos de cientos de dígitos se calculan silenciosamente allí, protegiendo la seguridad de nuestra información. Los números primos, cuya exploración fue iniciada por los matemáticos griegos de la antigüedad hace miles de años, se han convertido ahora en una tecnología fundamental que sustenta la infraestructura de la sociedad moderna.
 
-¿Llegará el día en que se descifre por completo la verdadera naturaleza oculta en la distribución de los números primos (la Hipótesis de Riemann)? El mayor código dejado por el universo aún no ha sido descifrado por completo. Sin embargo, a través de la poderosa lente del Teorema de los Números Primos, sin duda estamos logrando captar los contornos de sus hermosas leyes.
+¿Llegará el día en que se descifre por completo la verdadera naturaleza oculta en la distribución de los números primos (la Hipótesis de Riemann)? El mayor código dejado por el universo aún no ha sido descifrado por completo. Sin embargo, a través de la poderosa lente del [Teorema de los Números Primos](/es/p/prime-number-theorem/), sin duda estamos logrando captar los contornos de sus hermosas leyes.

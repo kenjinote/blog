@@ -1,6 +1,7 @@
 """Build a reviewable multilingual term dictionary from published Hugo articles."""
 import json
 import re
+import argparse
 from collections import defaultdict, Counter
 from pathlib import Path
 
@@ -68,7 +69,10 @@ def candidates(title, source):
 
 
 def main():
-    published = published_pages()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--inventory', type=Path, help='hugo list published の保存済みCSV')
+    args = parser.parse_args()
+    published = published_pages(args.inventory)
     pages = {path: row for path, row in published.items()
              if path.is_relative_to(ROOT / 'content/post') and row['kind'] == 'page' and path.suffix == '.md'}
     owners = defaultdict(set)

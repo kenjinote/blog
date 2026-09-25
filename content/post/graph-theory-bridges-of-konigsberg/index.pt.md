@@ -17,9 +17,9 @@ Naquela época, um passatempo intelectual tornou-se popular entre os habitantes 
 
 Todos tentaram durante seus passeios, mas ninguém conseguiu. No entanto, ninguém conseguiu explicar logicamente por que era impossível. Isso ficou conhecido como o "Problema das Pontes de Königsberg" e foi tratado como um quebra-cabeça não resolvido por muito tempo.
 
-Foi o brilhante matemático **Leonhard Euler** quem lançou uma luz matemática totalmente nova sobre esse quebra-cabeça de cidade aparentemente simples. Sua análise não apenas forneceu uma resposta ao quebra-cabeça, mas também fundou o enorme campo da matemática mais tarde conhecido como "Teoria dos Grafos" e "Topologia".
+Foi o brilhante matemático **[Leonhard Euler](/pt/p/euler/)** quem lançou uma luz matemática totalmente nova sobre esse quebra-cabeça de cidade aparentemente simples. Sua análise não apenas forneceu uma resposta ao quebra-cabeça, mas também fundou o enorme campo da matemática mais tarde conhecido como "[Teoria dos Grafos](/pt/p/graph-theory-dijkstra-a-star/)" e "Topologia".
 
-Neste artigo, traçaremos a jornada épica desde a formulação matemática da descoberta histórica de Euler até a teoria de redes moderna e os algoritmos de busca de rotas (algoritmo de Dijkstra, algoritmo de busca A*) que usamos diariamente em sistemas de navegação automotiva.
+Neste artigo, traçaremos a jornada épica desde a formulação matemática da descoberta histórica de Euler até a teoria de redes moderna e os [algoritmos de busca](/pt/p/search-algorithms-linear-binary-hash-table-principles/) de rotas (algoritmo de Dijkstra, algoritmo de busca A*) que usamos diariamente em sistemas de navegação automotiva.
 
 ---
 
@@ -51,7 +51,7 @@ Um modelo matemático composto apenas de pontos e linhas como este é chamado de
 
 ## 3. As Condições Matemáticas para um Traço Único: Circuito Euleriano e Caminho Euleriano
 
-Usando a linguagem da teoria dos grafos, a questão dos habitantes pode ser reformulada da seguinte forma:
+Usando a linguagem da [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/), a questão dos habitantes pode ser reformulada da seguinte forma:
 **"Em um determinado grafo, existe um caminho (Circuito Euleriano) que passa por cada aresta exatamente uma vez e retorna ao vértice original?"**
 
 Para esse problema, Euler introduziu o conceito extremamente simples e poderoso de **"Grau do vértice (Degree)"**. O grau de um vértice é "o número de arestas conectadas a esse vértice".
@@ -83,9 +83,9 @@ Surpreendentemente, os graus de todos os quatro vértices são ímpares (vértic
 
 ## 4. A Evolução da Teoria dos Grafos: Da Topologia à Ciência da Computação
 
-Desde a descoberta de Euler, a teoria dos grafos se desenvolveu como um ramo importante da matemática. Vários problemas difíceis, como o problema de coloração de mapas (Teorema das Quatro Cores) e o problema do ciclo hamiltoniano (um caminho que visita cada vértice exatamente uma vez), foram discutidos no palco da teoria dos grafos.
+Desde a descoberta de Euler, a [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/) se desenvolveu como um ramo importante da matemática. Vários problemas difíceis, como o problema de coloração de mapas ([Teorema das Quatro Cores](/pt/p/four-color-theorem/)) e o problema do ciclo hamiltoniano (um caminho que visita cada vértice exatamente uma vez), foram discutidos no palco da [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/).
 
-No entanto, com o advento dos computadores na segunda metade do século XX, a teoria dos grafos transcendeu os limites da mera matemática e evoluiu para uma arma poderosa (algoritmos) para resolver problemas do mundo real. Muitas das infraestruturas da sociedade moderna, como roteamento em redes de comunicação, análise de amizades em redes sociais e otimização de redes elétricas, são baseadas na teoria dos grafos.
+No entanto, com o advento dos computadores na segunda metade do século XX, a [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/) transcendeu os limites da mera matemática e evoluiu para uma arma poderosa (algoritmos) para resolver problemas do mundo real. Muitas das infraestruturas da sociedade moderna, como roteamento em redes de comunicação, análise de amizades em redes sociais e otimização de redes elétricas, são baseadas na [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/).
 
 Um que está particularmente próximo de nossas vidas diárias é o **Problema do Caminho Mais Curto (Shortest Path Problem)**.
 Enquanto Euler ponderou "podemos percorrer cada caminho uma vez?", a questão que os sistemas modernos de navegação automotiva e o Google Maps resolvem é "qual é a rota com o menor custo (distância ou tempo) para o destino?".
@@ -98,7 +98,7 @@ Algoritmos para resolver o problema do caminho mais curto foram refinados ao lon
 
 ### 5.1 Algoritmo de Dijkstra
 
-Criado por Edsger Dijkstra em 1956, esse algoritmo encontra a menor distância de um ponto de partida a todos os vértices em um grafo onde as arestas têm pesos (distância ou custo de tempo).
+Criado por [Edsger Dijkstra](/pt/p/biography-edsger-dijkstra/) em 1956, esse algoritmo encontra a menor distância de um ponto de partida a todos os vértices em um grafo onde as arestas têm pesos (distância ou custo de tempo).
 
 **[Mecanismo Básico]**
 1. Defina a distância do ponto de partida como 0 e a distância provisória de todos os outros vértices como infinito ($\infty$).
@@ -124,7 +124,7 @@ No caso de sistemas de navegação automotiva, é comum usar a "distância em li
 
 ## 6. Processamento de Grafos e Execução de Busca de Rotas com Python
 
-Na ciência de dados moderna e implementações de algoritmos, a biblioteca padrão para lidar com a teoria dos grafos é o **NetworkX** do Python.
+Na ciência de dados moderna e implementações de algoritmos, a biblioteca padrão para lidar com a [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/) é o **NetworkX** do Python.
 Aqui, introduziremos um exemplo de código que constrói um grafo simples usando o NetworkX e realiza buscas de rotas usando o algoritmo de Dijkstra e o algoritmo A*.
 
 ```python
@@ -178,8 +178,8 @@ Ao executar este código, você pode confirmar que tanto o algoritmo de Dijkstra
 
 ## 7. Epílogo: As Conexões Moldam o Mundo
 
-O pequeno quebra-cabeça que os residentes de Königsberg gostavam tornou-se uma nova lente através da qual reimaginar o mundo como "conexões de pontos e linhas", visto através dos olhos do gênio Leonhard Euler.
+O pequeno quebra-cabeça que os residentes de Königsberg gostavam tornou-se uma nova lente através da qual reimaginar o mundo como "conexões de pontos e linhas", visto através dos olhos do gênio [Leonhard Euler](/pt/p/euler/).
 
 Hoje, o fato de podermos carregar páginas da web instantaneamente de servidores distantes na internet e os sistemas de navegação automotiva nos guiarem com precisão por terras desconhecidas são todos o resultado da abstração matemática que começou com aquelas antigas pontes prussianas.
 
-Neste exato momento, a teoria dos grafos continua a ser usada na vanguarda da ciência e tecnologia, como na identificação de influenciadores em redes sociais, previsão de rotas de infecção por vírus e projeto de novos compostos químicos. Ao decifrar matematicamente as "conexões", podemos encontrar ordem e soluções bonitas em um mundo que parece ser excessivamente complexo.
+Neste exato momento, a [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/) continua a ser usada na vanguarda da ciência e tecnologia, como na identificação de influenciadores em redes sociais, previsão de rotas de infecção por vírus e projeto de novos compostos químicos. Ao decifrar matematicamente as "conexões", podemos encontrar ordem e soluções bonitas em um mundo que parece ser excessivamente complexo.

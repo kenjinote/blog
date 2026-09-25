@@ -46,7 +46,7 @@ Jika keliling poligon beraturan segi-$n$ di dalam lingkaran adalah $p_n$, dan ke
 
 $$ p_n < 2\pi < P_n $$
 
-Untuk menghitung panjang sisi poligon segi-$n$, Archimedes berulang kali menggunakan teorema geometris (Teorema Pythagoras dan teorema bisektor sudut) yang sekarang setara dengan fungsi trigonometri. Dalam notasi modern, panjang satu sisi poligon segi-$n$ di dalam adalah $2 \sin(\pi/n)$, sedangkan panjang sisi poligon segi-$n$ di luar adalah $2 \tan(\pi/n)$. Dengan demikian, jika kita menggunakan setengah kelilingnya:
+Untuk menghitung panjang sisi poligon segi-$n$, Archimedes berulang kali menggunakan teorema geometris (Teorema [Pythagoras](/id/p/pythagoras/) dan teorema bisektor sudut) yang sekarang setara dengan fungsi trigonometri. Dalam notasi modern, panjang satu sisi poligon segi-$n$ di dalam adalah $2 \sin(\pi/n)$, sedangkan panjang sisi poligon segi-$n$ di luar adalah $2 \tan(\pi/n)$. Dengan demikian, jika kita menggunakan setengah kelilingnya:
 
 $$ n \sin\left(\frac{\pi}{n}\right) < \pi < n \tan\left(\frac{\pi}{n}\right) $$
 
@@ -110,7 +110,7 @@ Memasuki abad ke-17, penemuan kalkulus oleh Newton dan Leibniz menyebabkan evolu
 
 ## 3.1 Deret Gregory-Leibniz
 
-Pada tahun 1671, matematikawan Skotlandia James Gregory menemukan, dan pada tahun 1674 matematikawan Jerman Gottfried Leibniz secara mandiri menemukan kembali perluasan deret tak terhingga untuk fungsi tangen invers (arctangen).
+Pada tahun 1671, matematikawan Skotlandia James Gregory menemukan, dan pada tahun 1674 matematikawan Jerman [Gottfried Leibniz](/id/p/leibniz/) secara mandiri menemukan kembali perluasan deret tak terhingga untuk fungsi tangen invers (arctangen).
 
 $$ \arctan(x) = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + \cdots = \sum_{k=0}^{\infty} \frac{(-1)^k x^{2k+1}}{2k+1} $$
 
@@ -270,7 +270,7 @@ Menjalankan kode di atas akan menghasilkan Pi dengan kecepatan luar biasa. Hanya
 
 Satu lagi algoritma revolusioner dalam metode perhitungan Pi yang tak boleh dilupakan adalah "Algoritma Gauss-Legendre". Algoritma ini ditemukan secara mandiri oleh Richard Brent dan Eugene Salamin pada tahun 1975.
 
-Dasar dari algoritma ini adalah teori "Rata-rata Aritmetika-Geometri (Arithmetic-Geometric Mean, AGM)" dan integral eliptik yang diteliti oleh Carl Friedrich Gauss.
+Dasar dari algoritma ini adalah teori "Rata-rata Aritmetika-Geometri (Arithmetic-Geometric Mean, AGM)" dan integral eliptik yang diteliti oleh [Carl Friedrich Gauss](/id/p/gauss/).
 
 Ketika diberikan dua bilangan $a_0, b_0$, barisan dibuat dengan menerapkan rata-rata aritmetika (rata-rata hitung) dan rata-rata geometri (rata-rata ukur) secara berulang sebagai berikut:
 
@@ -331,6 +331,6 @@ if __name__ == '__main__':
 
 Perhitungan Pi yang berawal dari poligon yang digambar di atas pasir oleh matematikawan kuno telah berevolusi menjadi deret tak terhingga melalui senjata ampuh bernama kalkulus. Kini di era modern, berkat teori matematika canggih seperti bentuk modular dan rata-rata aritmetika-geometri serta kekuatan komputasi superkomputer, perhitungan ini telah mencapai tingkat presisi luar biasa yaitu 100 triliun digit.
 
-Kompetisi perhitungan Pi bukanlah sekadar permainan menyusun deretan angka belaka. Algoritma dan teknik komputasi yang dikembangkan di dalamnya (seperti pembelahan biner/binary splitting dan perkalian bilangan raksasa melalui Transformasi Fourier Cepat/Fast Fourier Transform) memainkan peran penting dalam berbagai bidang seperti teori kriptografi modern, analisis numerik, dan evaluasi performa arsitektur komputer.
+Kompetisi perhitungan Pi bukanlah sekadar permainan menyusun deretan angka belaka. Algoritma dan teknik komputasi yang dikembangkan di dalamnya (seperti pembelahan biner/binary splitting dan perkalian bilangan raksasa melalui [Transformasi Fourier Cepat](/id/p/fast-fourier-transform-algorithm/)/Fast Fourier Transform) memainkan peran penting dalam berbagai bidang seperti teori kriptografi modern, analisis numerik, dan evaluasi performa arsitektur komputer.
 
 Karena Pi adalah bilangan irasional, deretan angkanya tidak akan pernah berakhir. Selama kebijaksanaan manusia dan evolusi komputer terus berlanjut, perjalanan tak berujung untuk mencari nilai Pi juga tidak akan pernah usai.
