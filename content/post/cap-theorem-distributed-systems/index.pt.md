@@ -290,7 +290,7 @@ flowchart TD
     Payment -->|"3. Evento de pagamento concluído"| MessageBroker
     MessageBroker -->|"4. Notificar evento"| Inventory["Serviço de Estoque"]
     
-    Inventory -- "Em caso de falha" -->|"Transação de compensação"| Compensate["Evento de falha na alocação de estoque"]
+    Inventory -->|"Em caso de falha#quot; / #quot;Transação de compensação"| Compensate["Evento de falha na alocação de estoque"]
     Compensate --> MessageBroker
     MessageBroker -->|"Cancelar"| Order
 ```

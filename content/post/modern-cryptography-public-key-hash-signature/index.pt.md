@@ -324,7 +324,7 @@ graph TD
     CA -->|"Emite certificado (Assina)"| SubCA
     SubCA -->|"Emite certificado (Assina)"| Server
     Server -->|"Apresenta certificado de servidor"| Client
-    Client -.->|"Mantém a chave pública da Root CA com antecedência\n("Embutida no SO ou navegador")"| CA
+    Client -.->|"Mantém a chave pública da Root CA com antecedência\n(Embutida no SO ou navegador)"| CA
     Client -->|"Verifica a cadeia de certificados\nUsando a chave pública da Root CA"| Server
 ```
 

@@ -272,18 +272,25 @@ zoxide 支援 Bash、Zsh 及 PowerShell 等所有 shell，能夠在跨平台間�
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Normal["一般模式 (Normal Mode)"]
-    Normal --> Prefix["前綴模式 (Prefix Mode, Ctrl+B)"]
-    Prefix --> Command["命令提示字元 (:)"]
-    Prefix --> SplitV["垂直分割窗格 (%)"]
-    Prefix --> SplitH["水平分割窗格 (\)"]
-    Prefix --> Switch["切換視窗 (n/p/0-9)"]
-    Prefix --> Detach["卸載工作階段 (d)"]
+    state "一般模式 (Normal Mode)" as Normal
+    state "前綴模式 (Prefix Mode, Ctrl+B)" as Prefix
+    state "命令提示字元 (:)" as Command
+    state "垂直分割窗格 (%)" as SplitV
+    state "水平分割窗格 (\)" as SplitH
+    state "切換視窗 (n/p/0-9)" as Switch
+    state "卸載工作階段 (d)" as Detach
+    [*] --> Normal
+    Normal --> Prefix
+    Prefix --> Command
+    Prefix --> SplitV
+    Prefix --> SplitH
+    Prefix --> Switch
+    Prefix --> Detach
     
-    Command --> Normal["執行 tmux 指令"]
-    SplitV --> Normal["返回一般模式"]
-    SplitH --> Normal["返回一般模式"]
-    Switch --> Normal["返回一般模式"]
+    Command --> Normal : 執行 tmux 指令
+    SplitV --> Normal : 返回一般模式
+    SplitH --> Normal : 返回一般模式
+    Switch --> Normal : 返回一般模式
     Detach --> [*]
 ```
 

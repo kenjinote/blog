@@ -129,14 +129,19 @@ Diagram Mermaid berikut menunjukkan transisi status Service Worker.
 
 ```mermaid
 stateDiagram-v2
+    state "Telah Diurai" as repairedState1
+    state "Sedang Menginstal" as repairedState2
+    state "Telah Terinstal (Menunggu)" as repairedState3
+    state "Sedang Mengaktifkan" as repairedState4
+    state "Telah Diaktifkan" as repairedState5
     direction TB
-    "Telah Diurai" --> "Sedang Menginstal" : "Pendaftaran"
-    "Sedang Menginstal" --> "Telah Terinstal (Menunggu)" : "Sukses"
-    "Sedang Menginstal" --> "Berlebihan" : "Kesalahan"
-    "Telah Terinstal (Menunggu)" --> "Sedang Mengaktifkan" : "Semua klien ditutup / skipWaiting()"
-    "Sedang Mengaktifkan" --> "Telah Diaktifkan" : "Sukses"
-    "Sedang Mengaktifkan" --> "Berlebihan" : "Kesalahan"
-    "Telah Diaktifkan" --> "Berlebihan" : "Digantikan oleh SW baru"
+    repairedState1 --> repairedState2 : "Pendaftaran"
+    repairedState2 --> repairedState3 : "Sukses"
+    repairedState2 --> Berlebihan : "Kesalahan"
+    repairedState3 --> repairedState4 : "Semua klien ditutup / skipWaiting()"
+    repairedState4 --> repairedState5 : "Sukses"
+    repairedState4 --> Berlebihan : "Kesalahan"
+    repairedState5 --> Berlebihan : "Digantikan oleh SW baru"
 ```
 
 1. **Parsed (Telah Diurai)**: Status saat browser telah mengunduh skrip Service Worker dan menyelesaikan penguraian sintaks.
@@ -180,14 +185,15 @@ Ini adalah strategi paling mendasar dan cepat. Pertama-tama ia memeriksa cache, 
 
 ```mermaid
 flowchart TD
-    "Halaman" -->|"1. Permintaan"| "Pekerja Layanan"
-    "Pekerja Layanan" -->|"2. Periksa Cache"| "Cache"
-    "Cache" -->|"3a. Cache Hit"| "Pekerja Layanan"
-    "Pekerja Layanan" -->|"4a. Respons"| "Halaman"
-    "Cache" -->|"3b. Cache Miss"| "Jaringan"
-    "Jaringan" -->|"4b. Respons"| "Pekerja Layanan"
-    "Pekerja Layanan" -->|"5b. Simpan ke Cache"| "Cache"
-    "Pekerja Layanan" -->|"6b. Respons"| "Halaman"
+    repairedNode1["Pekerja Layanan"]
+    Halaman -->|"1. Permintaan"| repairedNode1
+    repairedNode1 -->|"2. Periksa Cache"| Cache
+    Cache -->|"3a. Cache Hit"| repairedNode1
+    repairedNode1 -->|"4a. Respons"| Halaman
+    Cache -->|"3b. Cache Miss"| Jaringan
+    Jaringan -->|"4b. Respons"| repairedNode1
+    repairedNode1 -->|"5b. Simpan ke Cache"| Cache
+    repairedNode1 -->|"6b. Respons"| Halaman
 ```
 
 ### 6.2. Network First (Utamakan Jaringan)
@@ -196,15 +202,16 @@ Strategi ini memprioritaskan untuk selalu mendapatkan data terbaru. Pertama-tama
 
 ```mermaid
 flowchart TD
-    "Halaman" -->|"1. Permintaan"| "Pekerja Layanan"
-    "Pekerja Layanan" -->|"2. Ambil"| "Jaringan"
-    "Jaringan" -->|"3a. Sukses"| "Pekerja Layanan"
-    "Pekerja Layanan" -->|"4a. Simpan ke Cache"| "Cache"
-    "Pekerja Layanan" -->|"5a. Respons"| "Halaman"
-    "Jaringan" -->|"3b. Kesalahan / Luring"| "Pekerja Layanan"
-    "Pekerja Layanan" -->|"4b. Periksa Cache"| "Cache"
-    "Cache" -->|"5b. Cache Hit"| "Pekerja Layanan"
-    "Pekerja Layanan" -->|"6b. Respons Pengganti"| "Halaman"
+    repairedNode1["Pekerja Layanan"]
+    Halaman -->|"1. Permintaan"| repairedNode1
+    repairedNode1 -->|"2. Ambil"| Jaringan
+    Jaringan -->|"3a. Sukses"| repairedNode1
+    repairedNode1 -->|"4a. Simpan ke Cache"| Cache
+    repairedNode1 -->|"5a. Respons"| Halaman
+    Jaringan -->|"3b. Kesalahan / Luring"| repairedNode1
+    repairedNode1 -->|"4b. Periksa Cache"| Cache
+    Cache -->|"5b. Cache Hit"| repairedNode1
+    repairedNode1 -->|"6b. Respons Pengganti"| Halaman
 ```
 
 ### 6.3. Stale-while-revalidate (Mengembalikan Cache Lama Sambil Memperbarui di Latar Belakang)
@@ -214,13 +221,14 @@ Saat ada permintaan, ia segera mengembalikan cache (data lama/basi) untuk menamp
 
 ```mermaid
 flowchart TD
-    "Halaman" -->|"1. Permintaan"| "Pekerja Layanan"
-    "Pekerja Layanan" -->|"2. Periksa Cache"| "Cache"
-    "Cache" -->|"3. Cache Hit (Respons Cepat)"| "Pekerja Layanan"
-    "Pekerja Layanan" -->|"4. Kembalikan Respons Basi"| "Halaman"
-    "Pekerja Layanan" -.->|"5. Ambil (Latar Belakang)"| "Jaringan"
-    "Jaringan" -.->|"6. Respons Jaringan"| "Pekerja Layanan"
-    "Pekerja Layanan" -.->|"7. Perbarui Cache"| "Cache"
+    repairedNode1["Pekerja Layanan"]
+    Halaman -->|"1. Permintaan"| repairedNode1
+    repairedNode1 -->|"2. Periksa Cache"| Cache
+    Cache -->|"3. Cache Hit (Respons Cepat)"| repairedNode1
+    repairedNode1 -->|"4. Kembalikan Respons Basi"| Halaman
+    repairedNode1 -.->|"5. Ambil (Latar Belakang)"| Jaringan
+    Jaringan -.->|"6. Respons Jaringan"| repairedNode1
+    repairedNode1 -.->|"7. Perbarui Cache"| Cache
 ```
 
 ### 6.4. Cache Only / Network Only

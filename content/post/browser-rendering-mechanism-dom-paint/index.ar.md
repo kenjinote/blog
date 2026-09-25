@@ -140,20 +140,20 @@ gantt
 
     section "السكربت العادي"
     "تحليل HTML"       :active, a1, 0, 2s
-    "تنزيل JS" :crit, a2, 2s, 4s
-    "تنفيذ JS"         :crit, a3, 4s, 6s
-    "استئناف تحليل HTML"   :active, a4, 6s, 8s
+    "تنزيل JS" :crit, a2, 2, 4s
+    "تنفيذ JS"         :crit, a3, 4, 6s
+    "استئناف تحليل HTML"   :active, a4, 6, 8s
 
     section "سمة async"
     "تحليل HTML"       :active, b1, 0, 5s
-    "تنزيل JS" :crit, b2, 2s, 4s
-    "تنفيذ JS"         :crit, b3, 5s, 7s
-    "استئناف تحليل HTML"   :active, b4, 7s, 9s
+    "تنزيل JS" :crit, b2, 2, 4s
+    "تنفيذ JS"         :crit, b3, 5, 7s
+    "استئناف تحليل HTML"   :active, b4, 7, 9s
 
     section "سمة defer"
     "تحليل HTML"       :active, c1, 0, 6s
-    "تنزيل JS" :crit, c2, 1s, 4s
-    "تنفيذ JS"         :crit, c3, 6s, 8s
+    "تنزيل JS" :crit, c2, 1, 4s
+    "تنفيذ JS"         :crit, c3, 6, 8s
 ```
 *(※ نظراً لأن `async` الفعلي يُنفذ فور اكتمال التنزيل، فإنه يقاطع التحليل.)*
 

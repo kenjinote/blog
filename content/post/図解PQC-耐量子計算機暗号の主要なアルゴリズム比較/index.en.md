@@ -304,7 +304,7 @@ graph TD
     B -->|"2. Return X25519 Shared Key + Kyber Encapsulated Ciphertext"| A
     A --> C{"Derive Master Secret (KDF)"}
     B --> C
-    C -->|"Input: (X25519 Shared Key)"|| (Kyber Shared Key)| D["Secure Communication Key (AES-256 / ChaCha20)"]
+    C -->|"#quot;Input: (X25519 Shared Key)#quot;#124;#124; (Kyber Shared Key)"| D["Secure Communication Key (AES-256 / ChaCha20)"]
     D -->|"Resistant to both quantum threats & classical vulnerabilities"| E["Secure Hybrid Encrypted Communication (TLS 1.3)"]
 ```
 

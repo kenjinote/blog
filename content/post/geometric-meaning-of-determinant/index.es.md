@@ -80,7 +80,7 @@ En 2D, corresponde a una operación como "darle la vuelta" a una figura dibujada
 flowchart TD
     Original["Espacio original (Sistema diestro)"]
     Reflected["Espacio transformado (Sistema zurdo)"]
-    Original -->|"Transformación con det("A") < 0"| Reflected
+    Original -->|"Transformación con det(A) < 0"| Reflected
     Original -->|"Implica voltear el espacio"| Reflected
 ```
 
@@ -102,7 +102,7 @@ En 2D, significa que los dos vectores base transformados se superponen en la mis
 
 ```mermaid
 flowchart LR
-    Space["Plano 2D"] -->|"Transformación con det("A") = 0"| Line["Comprimido en una línea 1D"]
+    Space["Plano 2D"] -->|"Transformación con det(A) = 0"| Line["Comprimido en una línea 1D"]
 ```
 
 Una matriz cuyo determinante es $0$ tiene una propiedad algebraica muy importante: **no tiene una matriz inversa** (es una matriz singular). Geométricamente, la razón es obvia. Una vez que un espacio ha colapsado a una dimensión inferior, es imposible complementar la información perdida y restaurar el espacio original de mayor dimensión (es decir, realizar una transformación inversa).

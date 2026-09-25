@@ -125,8 +125,8 @@ sequenceDiagram
     participant S2 as "المتغير s2"
     
     S1->>Heap: "يخصص ويملك"
-    Note over S1,S2: "let s2 = s1;"
-    S1--xHeap: "يفقد الملكية (مُبطل)"
+    Note over S1,S2: "let s2 = s1#59;"
+    S1--x Heap: "يفقد الملكية (مُبطل)"
     S2->>Heap: "يأخذ الملكية"
 ```
 
@@ -220,8 +220,8 @@ fn main() {
 ```mermaid
 graph LR
     A["المتغير v (المالك)"] --> B["مصفوفة الكومة [1, 2, 3]"]
-    C["المرجع 'first' (&v[0"])"] -.->|"استعارة غير قابلة للتغيير"| B
-    A -->|"X "استعارة قابلة للتغيير مرفوضة!""| D["v.push(4)"]
+    C["المرجع 'first' (&v[0])"] -.->|"استعارة غير قابلة للتغيير"| B
+    A -->|"X #quot;استعارة قابلة للتغيير مرفوضة!#quot;"| D["v.push(4)"]
     
     style C stroke:#00FF00,stroke-width:2px
     style D stroke:#FF0000,stroke-width:2px

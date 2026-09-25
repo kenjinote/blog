@@ -140,20 +140,20 @@ gantt
 
     section "Skrip Normal"
     "Analisis HTML"       :active, a1, 0, 2s
-    "Unduhan JS"          :crit, a2, 2s, 4s
-    "Eksekusi JS"         :crit, a3, 4s, 6s
-    "Lanjut Analisis HTML":active, a4, 6s, 8s
+    "Unduhan JS"          :crit, a2, 2, 4s
+    "Eksekusi JS"         :crit, a3, 4, 6s
+    "Lanjut Analisis HTML":active, a4, 6, 8s
 
     section "Atribut async"
     "Analisis HTML"       :active, b1, 0, 5s
-    "Unduhan JS"          :crit, b2, 2s, 4s
-    "Eksekusi JS"         :crit, b3, 5s, 7s
-    "Lanjut Analisis HTML":active, b4, 7s, 9s
+    "Unduhan JS"          :crit, b2, 2, 4s
+    "Eksekusi JS"         :crit, b3, 5, 7s
+    "Lanjut Analisis HTML":active, b4, 7, 9s
 
     section "Atribut defer"
     "Analisis HTML"       :active, c1, 0, 6s
-    "Unduhan JS"          :crit, c2, 1s, 4s
-    "Eksekusi JS"         :crit, c3, 6s, 8s
+    "Unduhan JS"          :crit, c2, 1, 4s
+    "Eksekusi JS"         :crit, c3, 6, 8s
 ```
 *(※ `async` yang sebenarnya akan segera dieksekusi setelah pengunduhan selesai, yang akan menyela penguraian.)*
 

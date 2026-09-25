@@ -50,10 +50,12 @@ tags:
 4. 在负极（石墨层的间隙），到达的锂离子与电子再次相遇，潜入其中，变成储存能量的状态。
 
 ```mermaid
+%%{init: {'flowchart': {'wrappingWidth': 400, 'subGraphTitleMargin': {'top': 8, 'bottom': 24}}}}%%
 graph LR
     subgraph "放电时的运动 (使用智能手机时)"
-        Negative["负极 (石墨)"] --|"电子 (e-) 通过导线"| Device(("智能手机"))
-        Device --|"电子 (e-)"| Positive["正极 (金属氧化物)"]
+        direction LR
+        Negative["负极 (石墨)"] -->|"电子 (e-) 通过导线"| Device(("智能手机"))
+        Device -->|"电子 (e-)"| Positive["正极 (金属氧化物)"]
         Negative -.->|"锂离子 (Li+) 通过电解液"| Positive
     end
 ```

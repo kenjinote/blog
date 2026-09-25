@@ -161,7 +161,7 @@ sequenceDiagram
     PeerB->>STUN: Binding Request
     STUN-->>PeerB: Public IP & Port
     PeerB->>PeerA: シグナリング経由でCandidate送信
-    PeerA<-->>PeerB: 接続性チェック (STUN Ping)
+    PeerA<<-->>PeerB: 接続性チェック (STUN Ping)
     PeerA->>PeerB: 最適経路でP2P接続完了
 ```
 

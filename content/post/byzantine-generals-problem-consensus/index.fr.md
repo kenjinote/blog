@@ -174,12 +174,12 @@ Les nœuds prennent toujours l'un des trois états suivants :
 
 ```mermaid
 stateDiagram-v2
-    [*] --> "Follower"
-    "Follower" --> "Candidate" : "Expiration du délai"
-    "Candidate" --> "Candidate" : "Délai d'élection écoulé"
-    "Candidate" --> "Leader" : "Obtient la majorité des votes"
-    "Candidate" --> "Follower" : "Découvre un nouveau leader"
-    "Leader" --> "Follower" : "Découvre un Term supérieur"
+    [*] --> Follower
+    Follower --> Candidate : "Expiration du délai"
+    Candidate --> Candidate : "Délai d'élection écoulé"
+    Candidate --> Leader : "Obtient la majorité des votes"
+    Candidate --> Follower : "Découvre un nouveau leader"
+    Leader --> Follower : "Découvre un Term supérieur"
 ```
 
 ### 4.2 Le mécanisme d'élection du leader

@@ -38,13 +38,13 @@ HTTP/1.1では、1つのTCPコネクション上で1つのリクエスト・レ�
 HTTP/2は、この問題を **ストリーム** による **多重化 (Multiplexing)** で解決しました。1つのTCPコネクションの中に仮想的なストリームを複数作り、リクエストとレスポンスを細かなフレームに分割して同時にやり取りできるようにしたのです。
 
 ```mermaid
-architecture-beta
-    group http2("HTTP/2 Architecture")
-    service tcp("TCP Connection") in http2
-    service s1("Stream 1: HTML") in http2
-    service s2("Stream 2: CSS") in http2
-    service s3("Stream 3: JS") in http2
-    
+flowchart TB
+    subgraph http2 ["HTTP/2 Architecture"]
+        tcp["TCP Connection"]
+        s1["Stream 1: HTML"]
+        s2["Stream 2: CSS"]
+        s3["Stream 3: JS"]
+    end
     s1 --> tcp
     s2 --> tcp
     s3 --> tcp

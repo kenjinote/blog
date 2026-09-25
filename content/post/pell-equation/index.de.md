@@ -75,12 +75,12 @@ Um die Reihe von Prozessen bei der Suche nach einer Lösung zu visualisieren, ha
 ```mermaid
 flowchart TD
     Start["Start: Ganzzahl n eingeben"] --> CheckSquare["Bestimmen, ob n ein perfektes Quadrat ist"]
-    CheckSquare --|"Ja"| Trivial["Nur triviale Lösungen existieren (Ende)"] --> End["Ende"]
-    CheckSquare --|"Nein"| InitContFrac["Rekursion für Kettenbruch initialisieren"]
+    CheckSquare -->|"Ja"| Trivial["Nur triviale Lösungen existieren (Ende)"] --> End["Ende"]
+    CheckSquare -->|"Nein"| InitContFrac["Rekursion für Kettenbruch initialisieren"]
     InitContFrac --> CalcNext["Nächstes Glied a_i und Näherungsbruch (p_i, q_i) berechnen"]
     CalcNext --> CheckEq["Bedingung: p_i^2 - n * q_i^2 == 1 auswerten"]
-    CheckEq --|"Falsch"| CalcNext
-    CheckEq --|"Wahr"| Found["Fundamentallösung (x_1, y_1) = (p_i, q_i) gefunden"] --> End
+    CheckEq -->|"Falsch"| CalcNext
+    CheckEq -->|"Wahr"| Found["Fundamentallösung (x_1, y_1) = (p_i, q_i) gefunden"] --> End
 ```
 
 ## 6. Konkretes Beispiel: Kettenbruchentwicklung und Fundamentallösung für n = 7

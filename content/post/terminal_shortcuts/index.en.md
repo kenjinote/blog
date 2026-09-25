@@ -272,18 +272,25 @@ The following Mermaid state transition diagram shows the basic operation flow of
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Normal["Normal Mode"]
-    Normal --> Prefix["Prefix Mode (Ctrl+B)"]
-    Prefix --> Command["Command Prompt (:)"]
-    Prefix --> SplitV["Split Pane Vertically (%)"]
-    Prefix --> SplitH["Split Pane Horizontally (\)"]
-    Prefix --> Switch["Switch Window (n/p/0-9)"]
-    Prefix --> Detach["Detach Session (d)"]
+    state "Normal Mode" as Normal
+    state "Prefix Mode (Ctrl+B)" as Prefix
+    state "Command Prompt (:)" as Command
+    state "Split Pane Vertically (%)" as SplitV
+    state "Split Pane Horizontally (\)" as SplitH
+    state "Switch Window (n/p/0-9)" as Switch
+    state "Detach Session (d)" as Detach
+    [*] --> Normal
+    Normal --> Prefix
+    Prefix --> Command
+    Prefix --> SplitV
+    Prefix --> SplitH
+    Prefix --> Switch
+    Prefix --> Detach
     
-    Command --> Normal["Execute tmux Command"]
-    SplitV --> Normal["Return to Normal Mode"]
-    SplitH --> Normal["Return to Normal Mode"]
-    Switch --> Normal["Return to Normal Mode"]
+    Command --> Normal : Execute tmux Command
+    SplitV --> Normal : Return to Normal Mode
+    SplitH --> Normal : Return to Normal Mode
+    Switch --> Normal : Return to Normal Mode
     Detach --> [*]
 ```
 

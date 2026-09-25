@@ -98,9 +98,9 @@ graph TD
         App["Главное приложение"]
     end
 
-    App -- target_link_libraries("App PRIVATE MathLib") --> MathLib
-    App -- target_link_libraries("App PUBLIC NetworkLib") --> NetworkLib
-    NetworkLib -- target_link_libraries("NetworkLib INTERFACE HeaderLib") --> HeaderLib
+    App -- "target_link_libraries(App PRIVATE MathLib)" --> MathLib
+    App -- "target_link_libraries(App PUBLIC NetworkLib)" --> NetworkLib
+    NetworkLib -- "target_link_libraries(NetworkLib INTERFACE HeaderLib)" --> HeaderLib
     
     note1["App зависит от реализации MathLib, но не показывает её наружу"]
     note2["NetworkLib открывает интерфейс HeaderLib"]

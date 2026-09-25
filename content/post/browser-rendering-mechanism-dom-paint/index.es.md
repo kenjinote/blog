@@ -140,20 +140,20 @@ gantt
 
     section "Scripts normales"
     "Análisis HTML"       :active, a1, 0, 2s
-    "Descarga JS"         :crit, a2, 2s, 4s
-    "Ejecución JS"        :crit, a3, 4s, 6s
-    "Reanudación de análisis HTML" :active, a4, 6s, 8s
+    "Descarga JS"         :crit, a2, 2, 4s
+    "Ejecución JS"        :crit, a3, 4, 6s
+    "Reanudación de análisis HTML" :active, a4, 6, 8s
 
     section "Atributo async"
     "Análisis HTML"       :active, b1, 0, 5s
-    "Descarga JS"         :crit, b2, 2s, 4s
-    "Ejecución JS"        :crit, b3, 5s, 7s
-    "Reanudación de análisis HTML" :active, b4, 7s, 9s
+    "Descarga JS"         :crit, b2, 2, 4s
+    "Ejecución JS"        :crit, b3, 5, 7s
+    "Reanudación de análisis HTML" :active, b4, 7, 9s
 
     section "Atributo defer"
     "Análisis HTML"       :active, c1, 0, 6s
-    "Descarga JS"         :crit, c2, 1s, 4s
-    "Ejecución JS"        :crit, c3, 6s, 8s
+    "Descarga JS"         :crit, c2, 1, 4s
+    "Ejecución JS"        :crit, c3, 6, 8s
 ```
 *(※Dado que `async` se ejecuta inmediatamente después de que se completa la descarga en realidad, interrumpe el análisis.)*
 

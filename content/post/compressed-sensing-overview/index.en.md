@@ -225,8 +225,8 @@ print(f"Reconstruction Error (L2 norm): {error:.6e}")
 
 ```mermaid
 flowchart LR
-    X["Unknown sparse signal\nx (N dimensions)"] -->|Random observation\nMatrix A| Y["Observation data\ny (M dimensions, M < N)"]
-    Y -->|L1 optimization\n(Convex optimization algorithm)| X_hat["Reconstructed signal\nx^"]
+    X["Unknown sparse signal\nx (N dimensions)"] -->|"Random observation\nMatrix A"| Y["Observation data\ny (M dimensions, M < N)"]
+    Y -->|"L1 optimization\n(Convex optimization algorithm)"| X_hat["Reconstructed signal\nx^"]
     X -. "Exact match guaranteed" .-> X_hat
 ```
 

@@ -121,8 +121,8 @@ El siguiente gráfico muestra la diferencia en el ciclo de vida entre una tecnol
 
 ```mermaid
 xychart-beta
-    title Ciclo de vida de la tecnología y evolución de su evaluación
-    x-axis ["0 meses, 6 meses, 12 meses, 18 meses, 24 meses, 30 meses, 36 meses"]
+    title "Ciclo de vida de la tecnología y evolución de su evaluación"
+    x-axis ["0 meses", "6 meses", "12 meses", "18 meses", "24 meses", "30 meses", "36 meses"]
     y-axis "Menciones / Nivel de entusiasmo en RRSS" 0 --> 100
     line [10, 85, 95, 45, 20, 10, 5]
     line [15, 20, 25, 35, 50, 65, 80]

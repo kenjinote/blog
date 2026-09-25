@@ -290,7 +290,7 @@ flowchart TD
     Payment -->|"3. Event Pembayaran Selesai"| MessageBroker
     MessageBroker -->|"4. Notifikasi Event"| Inventory["Layanan Inventaris"]
     
-    Inventory -- "Jika Gagal" -->|"Transaksi Kompensasi"| Compensate["Event Alokasi Inventaris Gagal"]
+    Inventory -->|"Jika Gagal#quot; / #quot;Transaksi Kompensasi"| Compensate["Event Alokasi Inventaris Gagal"]
     Compensate --> MessageBroker
     MessageBroker -->|"Batal"| Order
 ```

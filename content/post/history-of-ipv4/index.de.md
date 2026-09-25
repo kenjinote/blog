@@ -47,10 +47,10 @@ Stellen Sie sich Ihren heimischen WLAN-Router vor.
 
 ```mermaid
 graph LR
-    "Internet"["Internet"] -->|"1 globale IP (z. B.: 203.0.113.1)"| "Router"["Heimischer WLAN-Router (NAT-Funktion)"]
-    "Router" -->|"Private IP (192.168.1.2)"| "PC"["PC des Vaters"]
-    "Router" -->|"Private IP (192.168.1.3)"| "Smartphone"["Smartphone der Mutter"]
-    "Router" -->|"Private IP (192.168.1.4)"| "TV"["Smart-TV"]
+    Internet["Internet"] -->|"1 globale IP (z. B.: 203.0.113.1)"| Router["Heimischer WLAN-Router (NAT-Funktion)"]
+    Router -->|"Private IP (192.168.1.2)"| PC["PC des Vaters"]
+    Router -->|"Private IP (192.168.1.3)"| Smartphone["Smartphone der Mutter"]
+    Router -->|"Private IP (192.168.1.4)"| TV["Smart-TV"]
 ```
 
 Die „echte Adresse (globale IP-Adresse)“, die der Provider dem Router zuweist, gibt es **nur ein einziges Mal**.

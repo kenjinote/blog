@@ -272,18 +272,25 @@ Le diagramme de transition d'états Mermaid ci-dessous montre le flux opération
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Normal["Mode normal"]
-    Normal --> Prefix["Mode préfixe (Ctrl+B)"]
-    Prefix --> Command["Invite de commande (:)"]
-    Prefix --> SplitV["Diviser le panneau verticalement (%)"]
-    Prefix --> SplitH["Diviser le panneau horizontalement (\)"]
-    Prefix --> Switch["Changer de fenêtre (n/p/0-9)"]
-    Prefix --> Detach["Détacher la session (d)"]
+    state "Mode normal" as Normal
+    state "Mode préfixe (Ctrl+B)" as Prefix
+    state "Invite de commande (:)" as Command
+    state "Diviser le panneau verticalement (%)" as SplitV
+    state "Diviser le panneau horizontalement (\)" as SplitH
+    state "Changer de fenêtre (n/p/0-9)" as Switch
+    state "Détacher la session (d)" as Detach
+    [*] --> Normal
+    Normal --> Prefix
+    Prefix --> Command
+    Prefix --> SplitV
+    Prefix --> SplitH
+    Prefix --> Switch
+    Prefix --> Detach
     
-    Command --> Normal["Exécuter la commande tmux"]
-    SplitV --> Normal["Retour au mode normal"]
-    SplitH --> Normal["Retour au mode normal"]
-    Switch --> Normal["Retour au mode normal"]
+    Command --> Normal : Exécuter la commande tmux
+    SplitV --> Normal : Retour au mode normal
+    SplitH --> Normal : Retour au mode normal
+    Switch --> Normal : Retour au mode normal
     Detach --> [*]
 ```
 

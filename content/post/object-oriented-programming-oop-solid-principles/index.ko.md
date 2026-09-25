@@ -117,22 +117,22 @@ C++ 등 일부 언어에서는 여러 부모 클래스로부터 상속받는 **�
 
 ```mermaid
 classDiagram
-    class "Animal" {
+    class Animal {
         +eat()
     }
-    class "Mammal" {
+    class Mammal {
         +eat()
     }
-    class "WingedAnimal" {
+    class WingedAnimal {
         +eat()
     }
-    class "Bat" {
+    class Bat {
     }
     
-    "Animal" <|-- "Mammal"
-    "Animal" <|-- "WingedAnimal"
-    "Mammal" <|-- "Bat"
-    "WingedAnimal" <|-- "Bat"
+    Animal <|-- Mammal
+    Animal <|-- WingedAnimal
+    Mammal <|-- Bat
+    WingedAnimal <|-- Bat
 ```
 
 Bat가 `eat()` 메서드를 호출했을 때, Mammal과 WingedAnimal 중 어느 구현을 호출해야 할지 모호해진다는 문제입니다. [Java](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)나 C#에서는 클래스의 다중 상속을 금지하고 **인터페이스** 를 사용함으로써 이 문제를 회피하고 있습니다.
@@ -240,23 +240,23 @@ class ReportRepository:
 
 ```mermaid
 classDiagram
-    class "Shape" {
+    class Shape {
         <<interface>>
         +calculateArea() double
     }
-    class "Circle" {
+    class Circle {
         +calculateArea() double
     }
-    class "Rectangle" {
+    class Rectangle {
         +calculateArea() double
     }
-    class "Triangle" {
+    class Triangle {
         +calculateArea() double
     }
     
-    "Shape" <|.. "Circle"
-    "Shape" <|.. "Rectangle"
-    "Shape" <|.. "Triangle"
+    Shape <|.. Circle
+    Shape <|.. Rectangle
+    Shape <|.. Triangle
 ```
 
 ### 3.3 리스코프 치환 원칙(Liskov Substitution Principle: LSP)

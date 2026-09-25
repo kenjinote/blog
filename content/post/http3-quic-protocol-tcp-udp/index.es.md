@@ -39,13 +39,13 @@ En HTTP/1.1, era necesario procesar una solicitud y respuesta en orden a través
 HTTP/2 resolvió este problema mediante la **Multiplexación (Multiplexing)** utilizando **flujos (streams)**. Creó múltiples flujos virtuales dentro de una única conexión TCP, dividiendo las solicitudes y respuestas en pequeños fragmentos para que pudieran intercambiarse simultáneamente.
 
 ```mermaid
-architecture-beta
-    group http2("Arquitectura HTTP/2")
-    service tcp("Conexión TCP") in http2
-    service s1("Flujo 1: HTML") in http2
-    service s2("Flujo 2: CSS") in http2
-    service s3("Flujo 3: JS") in http2
-    
+flowchart TB
+    subgraph http2 ["Arquitectura HTTP/2"]
+        tcp["Conexión TCP"]
+        s1["Flujo 1: HTML"]
+        s2["Flujo 2: CSS"]
+        s3["Flujo 3: JS"]
+    end
     s1 --> tcp
     s2 --> tcp
     s3 --> tcp

@@ -285,14 +285,14 @@ Sagaパターンは、大きな1つのトランザクションを、ローカル
 
 ```mermaid
 flowchart TD
-    Order["注文サービス"] -->|1. 注文作成| MessageBroker(("Message Broker"))
-    MessageBroker -->|2. イベント通知| Payment["決済サービス"]
-    Payment -->|3. 決済完了イベント| MessageBroker
-    MessageBroker -->|4. イベント通知| Inventory["在庫サービス"]
+    Order["注文サービス"] -->|"1. 注文作成"| MessageBroker(("Message Broker"))
+    MessageBroker -->|"2. イベント通知"| Payment["決済サービス"]
+    Payment -->|"3. 決済完了イベント"| MessageBroker
+    MessageBroker -->|"4. イベント通知"| Inventory["在庫サービス"]
     
-    Inventory -- 失敗時 -->|補償トランザクション| Compensate["在庫引き当て失敗イベント"]
+    Inventory -->|"失敗時 / 補償トランザクション"| Compensate["在庫引き当て失敗イベント"]
     Compensate --> MessageBroker
-    MessageBroker -->|キャンセル| Order
+    MessageBroker -->|"キャンセル"| Order
 ```
 
 Sagaパターンでは、強い一貫性を放棄し、 **結果整合性（Eventual [Consistency](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)）** を受け入れます（AP的アプローチ）。途中で処理が失敗した場合は、ロールバックの代わりに **補償トランザクション（Compensating [Transaction](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)）** を発行して、論理的に状態を元に戻す処理を実装します。これにより、高いスケーラビリティと可用性を維持しながら、ビジネス上許容できるレベルの一貫性を実現しているのです。

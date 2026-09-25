@@ -129,14 +129,20 @@ Service Worker имеет свой собственный жизненный ц�
 
 ```mermaid
 stateDiagram-v2
+    state "Проанализирован" as repairedState1
+    state "Установка" as repairedState2
+    state "Установлен (Ожидание)" as repairedState3
+    state "Избыточный" as repairedState4
+    state "Активация" as repairedState5
+    state "Активен" as repairedState6
     direction TB
-    "Проанализирован" --> "Установка" : "Регистрация"
-    "Установка" --> "Установлен (Ожидание)" : "Успех"
-    "Установка" --> "Избыточный" : "Ошибка"
-    "Установлен (Ожидание)" --> "Активация" : "Все клиенты закрыты / skipWaiting()"
-    "Активация" --> "Активен" : "Успех"
-    "Активация" --> "Избыточный" : "Ошибка"
-    "Активен" --> "Избыточный" : "Заменен новым SW"
+    repairedState1 --> repairedState2 : "Регистрация"
+    repairedState2 --> repairedState3 : "Успех"
+    repairedState2 --> repairedState4 : "Ошибка"
+    repairedState3 --> repairedState5 : "Все клиенты закрыты / skipWaiting()"
+    repairedState5 --> repairedState6 : "Успех"
+    repairedState5 --> repairedState4 : "Ошибка"
+    repairedState6 --> repairedState4 : "Заменен новым SW"
 ```
 
 1. **Parsed (Проанализирован)**: состояние, при котором браузер загрузил скрипт Service Worker и завершил синтаксический анализ.
@@ -180,14 +186,18 @@ if ("serviceWorker" in navigator) {
 
 ```mermaid
 flowchart TD
-    "Страница" -->|"1. Запрос"| "Service Worker"
-    "Service Worker" -->|"2. Проверка кэша"| "Кэш"
-    "Кэш" -->|"3a. Попадание в кэш"| "Service Worker"
-    "Service Worker" -->|"4a. Ответ"| "Страница"
-    "Кэш" -->|"3b. Промах кэша"| "Сеть"
-    "Сеть" -->|"4b. Ответ"| "Service Worker"
-    "Service Worker" -->|"5b. Сохранить в кэш"| "Кэш"
-    "Service Worker" -->|"6b. Ответ"| "Страница"
+    repairedNode1["Страница"]
+    repairedNode2["Service Worker"]
+    repairedNode3["Кэш"]
+    repairedNode4["Сеть"]
+    repairedNode1 -->|"1. Запрос"| repairedNode2
+    repairedNode2 -->|"2. Проверка кэша"| repairedNode3
+    repairedNode3 -->|"3a. Попадание в кэш"| repairedNode2
+    repairedNode2 -->|"4a. Ответ"| repairedNode1
+    repairedNode3 -->|"3b. Промах кэша"| repairedNode4
+    repairedNode4 -->|"4b. Ответ"| repairedNode2
+    repairedNode2 -->|"5b. Сохранить в кэш"| repairedNode3
+    repairedNode2 -->|"6b. Ответ"| repairedNode1
 ```
 
 ### 6.2. Network First (Сначала сеть)
@@ -196,15 +206,19 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    "Страница" -->|"1. Запрос"| "Service Worker"
-    "Service Worker" -->|"2. Fetch"| "Сеть"
-    "Сеть" -->|"3a. Успех"| "Service Worker"
-    "Service Worker" -->|"4a. Сохранить в кэш"| "Кэш"
-    "Service Worker" -->|"5a. Ответ"| "Страница"
-    "Сеть" -->|"3b. Ошибка / Офлайн"| "Service Worker"
-    "Service Worker" -->|"4b. Проверка кэша"| "Кэш"
-    "Кэш" -->|"5b. Попадание в кэш"| "Service Worker"
-    "Service Worker" -->|"6b. Ответ (Fallback)"| "Страница"
+    repairedNode1["Страница"]
+    repairedNode2["Service Worker"]
+    repairedNode3["Сеть"]
+    repairedNode4["Кэш"]
+    repairedNode1 -->|"1. Запрос"| repairedNode2
+    repairedNode2 -->|"2. Fetch"| repairedNode3
+    repairedNode3 -->|"3a. Успех"| repairedNode2
+    repairedNode2 -->|"4a. Сохранить в кэш"| repairedNode4
+    repairedNode2 -->|"5a. Ответ"| repairedNode1
+    repairedNode3 -->|"3b. Ошибка / Офлайн"| repairedNode2
+    repairedNode2 -->|"4b. Проверка кэша"| repairedNode4
+    repairedNode4 -->|"5b. Попадание в кэш"| repairedNode2
+    repairedNode2 -->|"6b. Ответ (Fallback)"| repairedNode1
 ```
 
 ### 6.3. Stale-while-revalidate (Возврат старого кэша при обновлении в фоновом режиме)
@@ -214,13 +228,17 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    "Страница" -->|"1. Запрос"| "Service Worker"
-    "Service Worker" -->|"2. Проверка кэша"| "Кэш"
-    "Кэш" -->|"3. Попадание в кэш (Быстрый ответ)"| "Service Worker"
-    "Service Worker" -->|"4. Возврат старого ответа"| "Страница"
-    "Service Worker" -.->|"5. Fetch (Фон)"| "Сеть"
-    "Сеть" -.->|"6. Ответ сети"| "Service Worker"
-    "Service Worker" -.->|"7. Обновить кэш"| "Кэш"
+    repairedNode1["Страница"]
+    repairedNode2["Service Worker"]
+    repairedNode3["Кэш"]
+    repairedNode4["Сеть"]
+    repairedNode1 -->|"1. Запрос"| repairedNode2
+    repairedNode2 -->|"2. Проверка кэша"| repairedNode3
+    repairedNode3 -->|"3. Попадание в кэш (Быстрый ответ)"| repairedNode2
+    repairedNode2 -->|"4. Возврат старого ответа"| repairedNode1
+    repairedNode2 -.->|"5. Fetch (Фон)"| repairedNode4
+    repairedNode4 -.->|"6. Ответ сети"| repairedNode2
+    repairedNode2 -.->|"7. Обновить кэш"| repairedNode3
 ```
 
 ### 6.4. Cache Only / Network Only

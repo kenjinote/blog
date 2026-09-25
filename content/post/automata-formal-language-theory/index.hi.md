@@ -59,19 +59,19 @@ $$
 
 ```mermaid
 flowchart TD
-    "Type0"["प्रकार-0: पुनरावर्ती गणना योग्य भाषा\n(ट्यूरिंग मशीन)"]
-    "Type1"["प्रकार-1: संदर्भ-संवेदनशील भाषा\n(रैखिक बाध्य ऑटोमेटन)"]
-    "Type2"["प्रकार-2: संदर्भ-मुक्त भाषा\n(पुशडाउन ऑटोमेटन)"]
-    "Type3"["प्रकार-3: नियमित भाषा\n(परिमित ऑटोमेटन)"]
+    Type0["प्रकार-0: पुनरावर्ती गणना योग्य भाषा\n(ट्यूरिंग मशीन)"]
+    Type1["प्रकार-1: संदर्भ-संवेदनशील भाषा\n(रैखिक बाध्य ऑटोमेटन)"]
+    Type2["प्रकार-2: संदर्भ-मुक्त भाषा\n(पुशडाउन ऑटोमेटन)"]
+    Type3["प्रकार-3: नियमित भाषा\n(परिमित ऑटोमेटन)"]
 
-    "Type0" --- "Type1"
-    "Type1" --- "Type2"
-    "Type2" --- "Type3"
+    Type0 --- Type1
+    Type1 --- Type2
+    Type2 --- Type3
 
-    style "Type0" fill:#f9f9f9,stroke:#333,stroke-width:2px
-    style "Type1" fill:#e9e9e9,stroke:#333,stroke-width:2px
-    style "Type2" fill:#d9d9d9,stroke:#333,stroke-width:2px
-    style "Type3" fill:#c9c9c9,stroke:#333,stroke-width:2px
+    style Type0 fill:#f9f9f9,stroke:#333,stroke-width:2px
+    style Type1 fill:#e9e9e9,stroke:#333,stroke-width:2px
+    style Type2 fill:#d9d9d9,stroke:#333,stroke-width:2px
+    style Type3 fill:#c9c9c9,stroke:#333,stroke-width:2px
 ```
 
 1.  **प्रकार 3 (नियमित भाषा)** : रेगुलर एक्सप्रेशन द्वारा व्यक्त की जा सकती है, और सीमित ऑटोमेटन (Finite Automaton) द्वारा पहचानने योग्य है।
@@ -105,15 +105,15 @@ flowchart TD
 
 ```mermaid
 stateDiagram-v2
-    [*] --> "q0"
-    "q0" --> "q1" : "1"
-    "q0" --> "q0" : "0"
-    "q1" --> "q2" : "0"
-    "q1" --> "q1" : "1"
-    "q2" --> "q3" : "1"
-    "q2" --> "q0" : "0"
-    "q3" --> "q3" : "0, 1"
-    "q3" --> [*]
+    [*] --> q0
+    q0 --> q1 : "1"
+    q0 --> q0 : "0"
+    q1 --> q2 : "0"
+    q1 --> q1 : "1"
+    q2 --> q3 : "1"
+    q2 --> q0 : "0"
+    q3 --> q3 : "0, 1"
+    q3 --> [*]
 ```
 
 इस अवस्था संक्रमण आरेख को पायथन (Python) प्रोग्राम के रूप में लागू करते हैं।
@@ -261,10 +261,10 @@ print("a:", pda.accepts("a"))           # False
 flowchart LR
     subgraph "Tape"
         direction LR
-        "T1"["..."] --- "T2"["0"] --- "T3"["1"] --- "T4"["1"] --- "T5"["0"] --- "T6"["..."]
+        T1["..."] --- T2["0"] --- T3["1"] --- T4["1"] --- T5["0"] --- T6["..."]
     end
-    "Head"(("Head")) --> "T3"
-    "State"["अवस्था: q_read\n(परिमित नियंत्रण)"] --- "Head"
+    Head(("Head")) --> T3
+    State["अवस्था: q_read\n(परिमित नियंत्रण)"] --- Head
 ```
 
 ### हॉल्टिंग समस्या ( [Halting Problem](https://kenji.blog/hi/p/turing-machine-computability/) )

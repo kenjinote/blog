@@ -71,11 +71,11 @@ El momento en que la curva pasa por el origen, significa exactamente que existe 
 ```mermaid
 flowchart TD
     %% Descripción general del mapeo de curvas
-    A["Círculo grande de radio R centrado en el origen"] -->|"Mapeo por el polinomio P("z")"| B["Curva cerrada en el plano complejo"]
+    A["Círculo grande de radio R centrado en el origen"] -->|"Mapeo por el polinomio P(z)"| B["Curva cerrada en el plano complejo"]
     B -->|"Cuando R es suficientemente grande"| C["Curva que se enrolla alrededor del origen n veces"]
     C -->|"Reduciendo continuamente R a 0"| D["La curva también se encoge continuamente hacia el origen"]
     D -->|"Continuidad topológica"| E["Debe pasar por el origen en el camino"]
-    E -->|"P("z") = 0"| F["Se demuestra la existencia de una raíz"]
+    E -->|"P(z) = 0"| F["Se demuestra la existencia de una raíz"]
 ```
 
 ## Preparación del Análisis Complejo: Teorema de [Liouville](https://kenji.blog/es/p/liouville/)

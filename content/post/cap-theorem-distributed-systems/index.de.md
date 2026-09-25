@@ -290,7 +290,7 @@ flowchart TD
     Payment -->|"3. Zahlungsabschlussereignis"| MessageBroker
     MessageBroker -->|"4. Ereignisbenachrichtigung"| Inventory["Bestandsdienst"]
     
-    Inventory -- "Bei Fehler" -->|"Kompensationstransaktion"| Compensate["Bestandsreservierungs-Fehlerereignis"]
+    Inventory -->|"Bei Fehler#quot; / #quot;Kompensationstransaktion"| Compensate["Bestandsreservierungs-Fehlerereignis"]
     Compensate --> MessageBroker
     MessageBroker -->|"Stornieren"| Order
 ```

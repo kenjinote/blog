@@ -123,15 +123,22 @@ Durante a resolução de sobrecarga (overload resolution) de uma função de tem
 
 ```mermaid
 stateDiagram-v2
+    state "Chamada da função de template" as A
+    state "Dedução de tipo" as B
+    state "Substituição da assinatura" as C
+    state "Substituição bem-sucedida?" as D
+    state "Adicionado aos candidatos" as E
+    state "Descartado dos candidatos sem gerar erro (SFINAE)" as F
+    state "Resolução de sobrecarga" as G
     [*] --> A
-    A["Chamada da função de template"] --> B["Dedução de tipo"]
-    B["Dedução de tipo"] --> C["Substituição da assinatura"]
-    C["Substituição da assinatura"] --> D["Substituição bem-sucedida?"]
-    D["Substituição bem-sucedida?"] --> E["Adicionado aos candidatos"] : Yes
-    D["Substituição bem-sucedida?"] --> F["Descartado dos candidatos sem gerar erro (SFINAE)"] : No
-    E["Adicionado aos candidatos"] --> G["Resolução de sobrecarga"]
-    F["Descartado dos candidatos sem gerar erro (SFINAE)"] --> G["Resolução de sobrecarga"]
-    G["Resolução de sobrecarga"] --> [*]
+    A --> B
+    B --> C
+    C --> D
+    D --> E : Yes
+    D --> F : No
+    E --> G
+    F --> G
+    G --> [*]
 ```
 
 ### 3.2 Compilação condicional utilizando std::enable_if

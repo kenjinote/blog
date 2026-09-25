@@ -324,7 +324,7 @@ graph TD
     CA -->|"Emitir certificado (Firma)"| SubCA
     SubCA -->|"Emitir certificado (Firma)"| Server
     Server -->|"Presentar certificado del servidor"| Client
-    Client -.->|"Mantiene la clave pública de la Root CA de antemano\n("Incorporada en el navegador o SO")"| CA
+    Client -.->|"Mantiene la clave pública de la Root CA de antemano\n(Incorporada en el navegador o SO)"| CA
     Client -->|"Verificar cadena de certificados\nUsando la clave pública de la Root CA"| Server
 ```
 

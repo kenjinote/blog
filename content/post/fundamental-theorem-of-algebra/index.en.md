@@ -71,11 +71,11 @@ The moment the curve passes through the origin, it means exactly that there exis
 ```mermaid
 flowchart TD
     %% Overview of curve mapping
-    A["Large circle of radius R centered at the origin"] -->|"Mapping by polynomial P("z")"| B["Closed curve on the complex plane"]
+    A["Large circle of radius R centered at the origin"] -->|"Mapping by polynomial P(z)"| B["Closed curve on the complex plane"]
     B -->|"When R is sufficiently large"| C["Curve winding around the origin n times"]
     C -->|"Continuously shrinking R to 0"| D["Curve also shrinks continuously towards the origin"]
     D -->|"Topological continuity"| E["Must pass through the origin along the way"]
-    E -->|"P("z") = 0"| F["Existence of a root is proven"]
+    E -->|"P(z) = 0"| F["Existence of a root is proven"]
 ```
 
 ## Preparation from Complex Analysis: [Liouville](https://kenji.blog/en/p/liouville/)'s Theorem

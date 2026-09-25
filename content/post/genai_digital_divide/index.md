@@ -67,8 +67,8 @@ $$
 
 ```mermaid
 xychart-beta
-    title Productivity Divergence Over Time (The Matthew Effect)
-    x-axis ["Year 1, Year 2, Year 3, Year 4, Year 5, Year 6"]
+    title "Productivity Divergence Over Time (The Matthew Effect)"
+    x-axis ["Year 1", "Year 2", "Year 3", "Year 4", "Year 5", "Year 6"]
     y-axis "Output Volume" 0 --> 200
     line [10, 15, 30, 60, 110, 180]
     line [10, 12, 14, 16, 18, 20]

@@ -41,17 +41,17 @@ Furthermore, his contributions were wide-ranging, including the founding of educ
 
 ```mermaid
 graph TD
-    A["Andrew Carnegie"] -->|1. Rising from poverty| B["Experience in railroad and telegraph industries"]
-    B -->|2. Foresight| C["Establishment of Carnegie Steel Company"]
-    C -->|Vertical integration and efficiency| D["Accumulation of immense wealth (Steel King)"]
-    D -->|Business sale (1901)| E["Dedication to philanthropy"]
+    A["Andrew Carnegie"] -->|"1. Rising from poverty"| B["Experience in railroad and telegraph industries"]
+    B -->|"2. Foresight"| C["Establishment of Carnegie Steel Company"]
+    C -->|"Vertical integration and efficiency"| D["Accumulation of immense wealth (Steel King)"]
+    D -->|"Business sale (1901)"| E["Dedication to philanthropy"]
     
-    A -->|Unique philosophy| F["Essay The Gospel of Wealth"]
-    F -->|Moral obligation| E
+    A -->|"Unique philosophy"| F["Essay The Gospel of Wealth"]
+    F -->|"Moral obligation"| E
     
-    E -->|Educational support| G["Establishment of over 2500 public libraries"]
-    E -->|Cultural support| H["Construction of Carnegie Hall"]
-    E -->|Academic and Peace| I["Carnegie Mellon University / Endowment for International Peace"]
+    E -->|"Educational support"| G["Establishment of over 2500 public libraries"]
+    E -->|"Cultural support"| H["Construction of Carnegie Hall"]
+    E -->|"Academic and Peace"| I["Carnegie Mellon University / Endowment for International Peace"]
 ```
 
 ## The Significance of Carnegie in the Modern Era

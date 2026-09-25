@@ -128,14 +128,15 @@ Service Workerは、ページとは独立した独自のライフサイクルを
 
 ```mermaid
 stateDiagram-v2
+    state "Installed (Waiting)" as repairedState1
     direction TB
-    "Parsed" --> "Installing" : "Registration"
-    "Installing" --> "Installed (Waiting)" : "Success"
-    "Installing" --> "Redundant" : "Error"
-    "Installed (Waiting)" --> "Activating" : "All clients closed / skipWaiting()"
-    "Activating" --> "Activated" : "Success"
-    "Activating" --> "Redundant" : "Error"
-    "Activated" --> "Redundant" : "Replaced by new SW"
+    Parsed --> Installing : "Registration"
+    Installing --> repairedState1 : "Success"
+    Installing --> Redundant : "Error"
+    repairedState1 --> Activating : "All clients closed / skipWaiting()"
+    Activating --> Activated : "Success"
+    Activating --> Redundant : "Error"
+    Activated --> Redundant : "Replaced by new SW"
 ```
 
 1. **Parsed (パース済み)** : ブラウザがService Workerのスクリプトをダウンロードし、構文解析を終えた状態。
@@ -179,14 +180,15 @@ Service Workerの最大の醍醐味は、ネットワークリクエスト（ `f
 
 ```mermaid
 flowchart TD
-    "Page" -->|"1. Request"| "Service Worker"
-    "Service Worker" -->|"2. Check Cache"| "Cache"
-    "Cache" -->|"3a. Cache Hit"| "Service Worker"
-    "Service Worker" -->|"4a. Response"| "Page"
-    "Cache" -->|"3b. Cache Miss"| "Network"
-    "Network" -->|"4b. Response"| "Service Worker"
-    "Service Worker" -->|"5b. Save to Cache"| "Cache"
-    "Service Worker" -->|"6b. Response"| "Page"
+    repairedNode1["Service Worker"]
+    Page -->|"1. Request"| repairedNode1
+    repairedNode1 -->|"2. Check Cache"| Cache
+    Cache -->|"3a. Cache Hit"| repairedNode1
+    repairedNode1 -->|"4a. Response"| Page
+    Cache -->|"3b. Cache Miss"| Network
+    Network -->|"4b. Response"| repairedNode1
+    repairedNode1 -->|"5b. Save to Cache"| Cache
+    repairedNode1 -->|"6b. Response"| Page
 ```
 
 ### 6.2. Network First (ネットワークファースト)
@@ -195,15 +197,16 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    "Page" -->|"1. Request"| "Service Worker"
-    "Service Worker" -->|"2. Fetch"| "Network"
-    "Network" -->|"3a. Success"| "Service Worker"
-    "Service Worker" -->|"4a. Save to Cache"| "Cache"
-    "Service Worker" -->|"5a. Response"| "Page"
-    "Network" -->|"3b. Error / Offline"| "Service Worker"
-    "Service Worker" -->|"4b. Check Cache"| "Cache"
-    "Cache" -->|"5b. Cache Hit"| "Service Worker"
-    "Service Worker" -->|"6b. Fallback Response"| "Page"
+    repairedNode1["Service Worker"]
+    Page -->|"1. Request"| repairedNode1
+    repairedNode1 -->|"2. Fetch"| Network
+    Network -->|"3a. Success"| repairedNode1
+    repairedNode1 -->|"4a. Save to Cache"| Cache
+    repairedNode1 -->|"5a. Response"| Page
+    Network -->|"3b. Error / Offline"| repairedNode1
+    repairedNode1 -->|"4b. Check Cache"| Cache
+    Cache -->|"5b. Cache Hit"| repairedNode1
+    repairedNode1 -->|"6b. Fallback Response"| Page
 ```
 
 ### 6.3. Stale-while-revalidate (古いキャッシュを返しつつ裏で更新)
@@ -213,13 +216,14 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    "Page" -->|"1. Request"| "Service Worker"
-    "Service Worker" -->|"2. Check Cache"| "Cache"
-    "Cache" -->|"3. Cache Hit (Fast Response)"| "Service Worker"
-    "Service Worker" -->|"4. Return Stale Response"| "Page"
-    "Service Worker" -.->|"5. Fetch (Background)"| "Network"
-    "Network" -.->|"6. Network Response"| "Service Worker"
-    "Service Worker" -.->|"7. Update Cache"| "Cache"
+    repairedNode1["Service Worker"]
+    Page -->|"1. Request"| repairedNode1
+    repairedNode1 -->|"2. Check Cache"| Cache
+    Cache -->|"3. Cache Hit (Fast Response)"| repairedNode1
+    repairedNode1 -->|"4. Return Stale Response"| Page
+    repairedNode1 -.->|"5. Fetch (Background)"| Network
+    Network -.->|"6. Network Response"| repairedNode1
+    repairedNode1 -.->|"7. Update Cache"| Cache
 ```
 
 ### 6.4. Cache Only / Network Only

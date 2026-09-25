@@ -40,7 +40,7 @@ graph TD
     PeerA <-->|"Pertukaran Bagian 1 dan 2"| PeerB
     PeerB <-->|"Pertukaran Bagian 2 dan 3"| PeerC
     PeerC <-->|"Pertukaran Bagian 3 dan 1"| PeerA
-    Note over PeerA,PeerC: Pengguna saling bertukar bagian yang tidak dimiliki layaknya teka-teki
+    diagramNote["Pengguna saling bertukar bagian yang tidak dimiliki layaknya teka-teki"]
 ```
 
 Dengan mekanisme ini, server asli (seed) tidak perlu mengirimkan file secara penuh kepada semua peserta. Selama setiap bagian diberikan kepada seseorang, sisanya akan diperbanyak oleh sesama peserta yang saling menukar layaknya kepingan teka-teki, yang menghasilkan fenomena magis di mana **"semakin banyak peserta, semakin cepat kecepatan pengunduhan seluruh jaringan"**.

@@ -39,13 +39,13 @@ tags:
 HTTP/2 решил эту проблему с помощью **мультиплексирования (Multiplexing)** через **потоки (streams)**. Внутри одного TCP-соединения создавались виртуальные потоки, а запросы и ответы разбивались на мелкие фреймы, что позволяло обмениваться ими одновременно.
 
 ```mermaid
-architecture-beta
-    group http2("Архитектура HTTP/2")
-    service tcp("TCP-соединение") in http2
-    service s1("Поток 1: HTML") in http2
-    service s2("Поток 2: CSS") in http2
-    service s3("Поток 3: JS") in http2
-    
+flowchart TB
+    subgraph http2 ["Архитектура HTTP/2"]
+        tcp["TCP-соединение"]
+        s1["Поток 1: HTML"]
+        s2["Поток 2: CSS"]
+        s3["Поток 3: JS"]
+    end
     s1 --> tcp
     s2 --> tcp
     s3 --> tcp

@@ -272,18 +272,25 @@ zoxide는 Bash, Zsh, PowerShell 모두를 지원하며, 크로스 플랫폼에�
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Normal["일반 모드"]
-    Normal --> Prefix["접두사 모드 (Ctrl+B)"]
-    Prefix --> Command["명령 프롬프트 (:)"]
-    Prefix --> SplitV["수직 분할 (%)"]
-    Prefix --> SplitH["수평 분할 (\)"]
-    Prefix --> Switch["창 전환 (n/p/0-9)"]
-    Prefix --> Detach["세션 분리 (d)"]
+    state "일반 모드" as Normal
+    state "접두사 모드 (Ctrl+B)" as Prefix
+    state "명령 프롬프트 (:)" as Command
+    state "수직 분할 (%)" as SplitV
+    state "수평 분할 (\)" as SplitH
+    state "창 전환 (n/p/0-9)" as Switch
+    state "세션 분리 (d)" as Detach
+    [*] --> Normal
+    Normal --> Prefix
+    Prefix --> Command
+    Prefix --> SplitV
+    Prefix --> SplitH
+    Prefix --> Switch
+    Prefix --> Detach
     
-    Command --> Normal["tmux 명령어 실행"]
-    SplitV --> Normal["일반 모드로 복귀"]
-    SplitH --> Normal["일반 모드로 복귀"]
-    Switch --> Normal["일반 모드로 복귀"]
+    Command --> Normal : tmux 명령어 실행
+    SplitV --> Normal : 일반 모드로 복귀
+    SplitH --> Normal : 일반 모드로 복귀
+    Switch --> Normal : 일반 모드로 복귀
     Detach --> [*]
 ```
 

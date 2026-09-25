@@ -290,7 +290,7 @@ flowchart TD
     Payment -->|"3. भुगतान पूरा होने का ईवेंट"| MessageBroker
     MessageBroker -->|"4. ईवेंट अधिसूचना"| Inventory["इन्वेंटरी सेवा"]
     
-    Inventory -- "विफलता पर" -->|"क्षतिपूर्ति ट्रांजैक्शन"| Compensate["इन्वेंटरी आवंटन विफलता ईवेंट"]
+    Inventory -->|"विफलता पर#quot; / #quot;क्षतिपूर्ति ट्रांजैक्शन"| Compensate["इन्वेंटरी आवंटन विफलता ईवेंट"]
     Compensate --> MessageBroker
     MessageBroker -->|"रद्द करें"| Order
 ```

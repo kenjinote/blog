@@ -257,9 +257,9 @@ classDiagram
         "class='bg-background text-primary'"
     }
 
-    GlobalCSSVariables <|-- SemanticVariables : ":root & .dark"
-    SemanticVariables <|-- TailwindConfig : "tailwind.config.js"
-    TailwindConfig <.. UIComponents : "Applique les classes utilitaires"
+    GlobalCSSVariables <|-- SemanticVariables : #58;root & .dark
+    SemanticVariables <|-- TailwindConfig : tailwind.config.js
+    TailwindConfig <.. UIComponents : Applique les classes utilitaires
 ```
 
 ### 4.2 Implémentation en Raw SCSS/CSS (Utilisation des Mixins)

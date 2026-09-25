@@ -41,17 +41,17 @@ En outre, ses contributions sont vastes, allant de la fondation de l'établissem
 
 ```mermaid
 graph TD
-    A["Andrew Carnegie"] -->|1. Ascension depuis la pauvreté| B["Expérience dans les chemins de fer et le télégraphe"]
-    B -->|2. Clairvoyance| C["Fondation de la Carnegie Steel Company"]
-    C -->|Intégration verticale et efficacité| D["Accumulation d'une immense richesse (Roi de l'acier)"]
-    D -->|Vente de l'entreprise (1901)| E["Dévouement à la philanthropie"]
+    A["Andrew Carnegie"] -->|"1. Ascension depuis la pauvreté"| B["Expérience dans les chemins de fer et le télégraphe"]
+    B -->|"2. Clairvoyance"| C["Fondation de la Carnegie Steel Company"]
+    C -->|"Intégration verticale et efficacité"| D["Accumulation d'une immense richesse (Roi de l'acier)"]
+    D -->|"Vente de l'entreprise (1901)"| E["Dévouement à la philanthropie"]
     
-    A -->|Philosophie unique| F["Essai L'Évangile de la richesse"]
-    F -->|Devoir moral| E
+    A -->|"Philosophie unique"| F["Essai L'Évangile de la richesse"]
+    F -->|"Devoir moral"| E
     
-    E -->|Soutien à l'éducation| G["Création de plus de 2500 bibliothèques publiques"]
-    E -->|Soutien à la culture| H["Construction du Carnegie Hall"]
-    E -->|Académique et paix| I["Université Carnegie Mellon et Fondation pour la paix internationale"]
+    E -->|"Soutien à l'éducation"| G["Création de plus de 2500 bibliothèques publiques"]
+    E -->|"Soutien à la culture"| H["Construction du Carnegie Hall"]
+    E -->|"Académique et paix"| I["Université Carnegie Mellon et Fondation pour la paix internationale"]
 ```
 
 ## L'importance de Carnegie dans le monde moderne

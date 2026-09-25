@@ -86,7 +86,7 @@ Cohen mengembangkan teknik untuk memperluas model baru dengan menambahkan himpun
 graph TD
     M["Model Dasar (ZFC)"]
     G["Filter Generik"]
-    MG["Perluasan Generik M[G"]"]
+    MG["Perluasan Generik M[G]"]
     M -->|"pemaksaan"| MG
     G -->|"ditambahkan ke"| MG
     MG -->|"memenuhi"| NOT_CH["Bukan CH"]

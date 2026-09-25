@@ -323,7 +323,7 @@ graph TD
     CA -->|"証明書を発行 (署名)"| SubCA
     SubCA -->|"証明書を発行 (署名)"| Server
     Server -->|"サーバー証明書を提示"| Client
-    Client -.->|"あらかじめRoot CAの公開鍵を保持\n("ブラウザやOSに組み込み")"| CA
+    Client -.->|"あらかじめRoot CAの公開鍵を保持\n(ブラウザやOSに組み込み)"| CA
     Client -->|"証明書チェーンを検証\nRoot CAの公開鍵を利用"| Server
 ```
 

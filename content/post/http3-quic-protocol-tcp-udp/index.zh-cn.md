@@ -39,13 +39,13 @@ tags:
 HTTP/2通过使用 **流（Stream）** 的 **多路复用 (Multiplexing)** 解决了这个问题。它在一个TCP连接中创建多个虚拟流，将请求和响应分割成细小的帧以便能够同时交换。
 
 ```mermaid
-architecture-beta
-    group http2("HTTP/2 Architecture")
-    service tcp("TCP Connection") in http2
-    service s1("Stream 1: HTML") in http2
-    service s2("Stream 2: CSS") in http2
-    service s3("Stream 3: JS") in http2
-    
+flowchart TB
+    subgraph http2 ["HTTP/2 Architecture"]
+        tcp["TCP Connection"]
+        s1["Stream 1: HTML"]
+        s2["Stream 2: CSS"]
+        s3["Stream 3: JS"]
+    end
     s1 --> tcp
     s2 --> tcp
     s3 --> tcp
@@ -104,14 +104,14 @@ QUIC最令人惊讶之处在于，它抛弃了长期作为互联网基础的TCP�
 
 ```mermaid
 flowchart TD
-    subgraph "HTTP/3 Stack ["HTTP/3 Stack"]"
+    subgraph "HTTP/3 Stack / HTTP/3 Stack"
         H3["HTTP/3 (HTTP Semantics, QPACK)"]
         QUIC["QUIC (Multiplexing, Congestion Control, TLS 1.3)"]
         UDP["UDP"]
         IP["IP"]
     end
     
-    subgraph "HTTP/2 Stack ["HTTP/2 Stack"]"
+    subgraph "HTTP/2 Stack / HTTP/2 Stack"
         H2["HTTP/2 (HPACK)"]
         TLS["TLS 1.2 / 1.3"]
         TCP["TCP"]

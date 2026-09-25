@@ -119,10 +119,10 @@ stateDiagram-v2
     [*] --> ColdStart : "ट्रिगर उत्पन्न (कोई उपलब्ध कंटेनर नहीं)"
     state ColdStart {
         direction TB
-        CodeDownload["कोड डाउनलोड (S3 से)"]
-        StartVM["MicroVM का स्टार्ट-अप (Firecracker)"]
-        RuntimeInit["रनटाइम आरंभीकरण (Node, Python, Java आदि)"]
-        FunctionInit["फ़ंक्शन आरंभीकरण (ग्लोबल स्कोप का निष्पादन)"]
+        state "कोड डाउनलोड (S3 से)" as CodeDownload
+        state "MicroVM का स्टार्ट-अप (Firecracker)" as StartVM
+        state "रनटाइम आरंभीकरण (Node, Python, Java आदि)" as RuntimeInit
+        state "फ़ंक्शन आरंभीकरण (ग्लोबल स्कोप का निष्पादन)" as FunctionInit
         
         CodeDownload --> StartVM
         StartVM --> RuntimeInit
@@ -132,7 +132,7 @@ stateDiagram-v2
     
     [*] --> WarmInvoke : "ट्रिगर उत्पन्न (वार्म कंटेनर उपलब्ध)"
     state WarmInvoke {
-        ExecuteHandler["हैंडलर का निष्पादन"]
+        state "हैंडलर का निष्पादन" as ExecuteHandler
     }
     
     WarmInvoke --> Idle : "निष्पादन पूर्ण"

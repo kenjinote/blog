@@ -127,8 +127,8 @@ sequenceDiagram
     participant S2 as "Variable s2"
     
     S1->>Heap: "Weist zu & Besitzt"
-    Note over S1,S2: "let s2 = s1;"
-    S1--xHeap: "Verliert Eigentum (Ungültig)"
+    Note over S1,S2: "let s2 = s1#59;"
+    S1--x Heap: "Verliert Eigentum (Ungültig)"
     S2->>Heap: "Übernimmt Eigentum"
 ```
 
@@ -222,8 +222,8 @@ Da [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) auf Compiler
 ```mermaid
 graph LR
     A["Variable v (Eigentümer)"] --> B["Heap Array [1, 2, 3]"]
-    C["Referenz 'first' (&v[0"])"] -.->|"Unveränderliches Ausleihen"| B
-    A -->|"X "Veränderliches Ausleihen verweigert!""| D["v.push(4)"]
+    C["Referenz 'first' (&v[0])"] -.->|"Unveränderliches Ausleihen"| B
+    A -->|"X #quot;Veränderliches Ausleihen verweigert!#quot;"| D["v.push(4)"]
     
     style C stroke:#00FF00,stroke-width:2px
     style D stroke:#FF0000,stroke-width:2px

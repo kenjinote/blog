@@ -129,14 +129,17 @@ Le diagramme Mermaid suivant illustre les transitions d'état du Service Worker.
 
 ```mermaid
 stateDiagram-v2
+    state "En cours d'installation" as repairedState1
+    state "Installé (En attente)" as repairedState2
+    state "En cours d'activation" as repairedState3
     direction TB
-    "Analysé" --> "En cours d'installation" : "Inscription"
-    "En cours d'installation" --> "Installé (En attente)" : "Succès"
-    "En cours d'installation" --> "Redondant" : "Erreur"
-    "Installé (En attente)" --> "En cours d'activation" : "Tous les clients fermés / skipWaiting()"
-    "En cours d'activation" --> "Activé" : "Succès"
-    "En cours d'activation" --> "Redondant" : "Erreur"
-    "Activé" --> "Redondant" : "Remplacé par un nouveau SW"
+    Analysé --> repairedState1 : "Inscription"
+    repairedState1 --> repairedState2 : "Succès"
+    repairedState1 --> Redondant : "Erreur"
+    repairedState2 --> repairedState3 : "Tous les clients fermés / skipWaiting()"
+    repairedState3 --> Activé : "Succès"
+    repairedState3 --> Redondant : "Erreur"
+    Activé --> Redondant : "Remplacé par un nouveau SW"
 ```
 
 1. **Analysé (Parsed)** : L'état où le navigateur a téléchargé le script du Service Worker et terminé son analyse syntaxique.
@@ -180,14 +183,15 @@ C'est la stratégie la plus basique et la plus rapide. Elle vérifie d'abord le 
 
 ```mermaid
 flowchart TD
-    "Page" -->|"1. Requête"| "Service Worker"
-    "Service Worker" -->|"2. Vérifier le cache"| "Cache"
-    "Cache" -->|"3a. Succès du cache"| "Service Worker"
-    "Service Worker" -->|"4a. Réponse"| "Page"
-    "Cache" -->|"3b. Échec du cache"| "Réseau"
-    "Réseau" -->|"4b. Réponse"| "Service Worker"
-    "Service Worker" -->|"5b. Sauvegarder dans le cache"| "Cache"
-    "Service Worker" -->|"6b. Réponse"| "Page"
+    repairedNode1["Service Worker"]
+    Page -->|"1. Requête"| repairedNode1
+    repairedNode1 -->|"2. Vérifier le cache"| Cache
+    Cache -->|"3a. Succès du cache"| repairedNode1
+    repairedNode1 -->|"4a. Réponse"| Page
+    Cache -->|"3b. Échec du cache"| Réseau
+    Réseau -->|"4b. Réponse"| repairedNode1
+    repairedNode1 -->|"5b. Sauvegarder dans le cache"| Cache
+    repairedNode1 -->|"6b. Réponse"| Page
 ```
 
 ### 6.2. Network First (Priorité au réseau)
@@ -196,15 +200,16 @@ C'est une stratégie qui donne la priorité à la récupération systématique d
 
 ```mermaid
 flowchart TD
-    "Page" -->|"1. Requête"| "Service Worker"
-    "Service Worker" -->|"2. Récupérer"| "Réseau"
-    "Réseau" -->|"3a. Succès"| "Service Worker"
-    "Service Worker" -->|"4a. Sauvegarder dans le cache"| "Cache"
-    "Service Worker" -->|"5a. Réponse"| "Page"
-    "Réseau" -->|"3b. Erreur / Hors ligne"| "Service Worker"
-    "Service Worker" -->|"4b. Vérifier le cache"| "Cache"
-    "Cache" -->|"5b. Succès du cache"| "Service Worker"
-    "Service Worker" -->|"6b. Réponse de repli"| "Page"
+    repairedNode1["Service Worker"]
+    Page -->|"1. Requête"| repairedNode1
+    repairedNode1 -->|"2. Récupérer"| Réseau
+    Réseau -->|"3a. Succès"| repairedNode1
+    repairedNode1 -->|"4a. Sauvegarder dans le cache"| Cache
+    repairedNode1 -->|"5a. Réponse"| Page
+    Réseau -->|"3b. Erreur / Hors ligne"| repairedNode1
+    repairedNode1 -->|"4b. Vérifier le cache"| Cache
+    Cache -->|"5b. Succès du cache"| repairedNode1
+    repairedNode1 -->|"6b. Réponse de repli"| Page
 ```
 
 ### 6.3. Stale-while-revalidate (Renvoyer le cache obsolète tout en mettant à jour en arrière-plan)
@@ -214,13 +219,14 @@ Lorsqu'une requête est effectuée, elle renvoie immédiatement le cache (donné
 
 ```mermaid
 flowchart TD
-    "Page" -->|"1. Requête"| "Service Worker"
-    "Service Worker" -->|"2. Vérifier le cache"| "Cache"
-    "Cache" -->|"3. Succès du cache (Réponse rapide)"| "Service Worker"
-    "Service Worker" -->|"4. Retourner une réponse périmée"| "Page"
-    "Service Worker" -.->|"5. Récupérer (Arrière-plan)"| "Réseau"
-    "Réseau" -.->|"6. Réponse du réseau"| "Service Worker"
-    "Service Worker" -.->|"7. Mettre à jour le cache"| "Cache"
+    repairedNode1["Service Worker"]
+    Page -->|"1. Requête"| repairedNode1
+    repairedNode1 -->|"2. Vérifier le cache"| Cache
+    Cache -->|"3. Succès du cache (Réponse rapide)"| repairedNode1
+    repairedNode1 -->|"4. Retourner une réponse périmée"| Page
+    repairedNode1 -.->|"5. Récupérer (Arrière-plan)"| Réseau
+    Réseau -.->|"6. Réponse du réseau"| repairedNode1
+    repairedNode1 -.->|"7. Mettre à jour le cache"| Cache
 ```
 
 ### 6.4. Cache Only / Network Only (Cache uniquement / Réseau uniquement)

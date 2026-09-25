@@ -140,8 +140,8 @@ graph TD
     INPUT_D[/"Ввод: D"/] --> START
     
     %% Подсветка противоречия
-    LOOP -.->|"Противоречит вердикту H("true")!"| FAIL_1(("Противоречие"))
-    HALT -.->|"Противоречит вердикту H("false")!"| FAIL_2(("Противоречие"))
+    LOOP -.->|"Противоречит вердикту H(true)!"| FAIL_1(("Противоречие"))
+    HALT -.->|"Противоречит вердикту H(false)!"| FAIL_2(("Противоречие"))
     
     style FAIL_1 fill:#ff9999,stroke:#cc0000,stroke-width:2px
     style FAIL_2 fill:#ff9999,stroke:#cc0000,stroke-width:2px

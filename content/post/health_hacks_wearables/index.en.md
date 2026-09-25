@@ -251,8 +251,8 @@ Based on the preprocessed data, we will analyze the relationship between health 
 
 ```mermaid
 xychart-beta
-    title HRV vs Daily Coding Hours (Normalized)
-    x-axis ["Mon, Tue, Wed, Thu, Fri, Sat, Sun"]
+    title "HRV vs Daily Coding Hours (Normalized)"
+    x-axis ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
     y-axis "HRV & Coding Output" 10 --> 100
     line [45, 52, 65, 75, 70, 58, 48]
     bar [35, 42, 58, 65, 60, 20, 15]

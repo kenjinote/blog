@@ -129,14 +129,20 @@ Service Worker 拥有独立于页面的自身生命周期。准确理解这个�
 
 ```mermaid
 stateDiagram-v2
+    state "已解析" as repairedState1
+    state "安装中" as repairedState2
+    state "等待中" as repairedState3
+    state "废弃" as repairedState4
+    state "激活中" as repairedState5
+    state "已激活" as repairedState6
     direction TB
-    "已解析" --> "安装中" : "注册"
-    "安装中" --> "等待中" : "成功"
-    "安装中" --> "废弃" : "错误"
-    "等待中" --> "激活中" : "所有客户端关闭 / skipWaiting()"
-    "激活中" --> "已激活" : "成功"
-    "激活中" --> "废弃" : "错误"
-    "已激活" --> "废弃" : "被新SW替换"
+    repairedState1 --> repairedState2 : "注册"
+    repairedState2 --> repairedState3 : "成功"
+    repairedState2 --> repairedState4 : "错误"
+    repairedState3 --> repairedState5 : "所有客户端关闭 / skipWaiting()"
+    repairedState5 --> repairedState6 : "成功"
+    repairedState5 --> repairedState4 : "错误"
+    repairedState6 --> repairedState4 : "被新SW替换"
 ```
 
 1. **已解析 (Parsed)** ：浏览器下载Service Worker脚本并完成语法解析的状态。
@@ -180,14 +186,18 @@ Service Worker 最大的魅力在于它能拦截网络请求（ `fetch` 事件�
 
 ```mermaid
 flowchart TD
-    "页面" -->|"1. 请求"| "Service Worker"
-    "Service Worker" -->|"2. 检查缓存"| "缓存"
-    "缓存" -->|"3a. 命中缓存"| "Service Worker"
-    "Service Worker" -->|"4a. 响应"| "页面"
-    "缓存" -->|"3b. 未命中缓存"| "网络"
-    "网络" -->|"4b. 响应"| "Service Worker"
-    "Service Worker" -->|"5b. 保存至缓存"| "缓存"
-    "Service Worker" -->|"6b. 响应"| "页面"
+    repairedNode1["页面"]
+    repairedNode2["Service Worker"]
+    repairedNode3["缓存"]
+    repairedNode4["网络"]
+    repairedNode1 -->|"1. 请求"| repairedNode2
+    repairedNode2 -->|"2. 检查缓存"| repairedNode3
+    repairedNode3 -->|"3a. 命中缓存"| repairedNode2
+    repairedNode2 -->|"4a. 响应"| repairedNode1
+    repairedNode3 -->|"3b. 未命中缓存"| repairedNode4
+    repairedNode4 -->|"4b. 响应"| repairedNode2
+    repairedNode2 -->|"5b. 保存至缓存"| repairedNode3
+    repairedNode2 -->|"6b. 响应"| repairedNode1
 ```
 
 ### 6.2. Network First (网络优先)
@@ -196,15 +206,19 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    "页面" -->|"1. 请求"| "Service Worker"
-    "Service Worker" -->|"2. 获取"| "网络"
-    "网络" -->|"3a. 成功"| "Service Worker"
-    "Service Worker" -->|"4a. 保存至缓存"| "缓存"
-    "Service Worker" -->|"5a. 响应"| "页面"
-    "网络" -->|"3b. 错误 / 离线"| "Service Worker"
-    "Service Worker" -->|"4b. 检查缓存"| "缓存"
-    "缓存" -->|"5b. 命中缓存"| "Service Worker"
-    "Service Worker" -->|"6b. 降级响应"| "页面"
+    repairedNode1["页面"]
+    repairedNode2["Service Worker"]
+    repairedNode3["网络"]
+    repairedNode4["缓存"]
+    repairedNode1 -->|"1. 请求"| repairedNode2
+    repairedNode2 -->|"2. 获取"| repairedNode3
+    repairedNode3 -->|"3a. 成功"| repairedNode2
+    repairedNode2 -->|"4a. 保存至缓存"| repairedNode4
+    repairedNode2 -->|"5a. 响应"| repairedNode1
+    repairedNode3 -->|"3b. 错误 / 离线"| repairedNode2
+    repairedNode2 -->|"4b. 检查缓存"| repairedNode4
+    repairedNode4 -->|"5b. 命中缓存"| repairedNode2
+    repairedNode2 -->|"6b. 降级响应"| repairedNode1
 ```
 
 ### 6.3. Stale-while-revalidate (返回旧缓存的同时在后台更新)
@@ -214,13 +228,17 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    "页面" -->|"1. 请求"| "Service Worker"
-    "Service Worker" -->|"2. 检查缓存"| "缓存"
-    "缓存" -->|"3. 命中缓存 (快速响应)"| "Service Worker"
-    "Service Worker" -->|"4. 返回旧缓存响应"| "页面"
-    "Service Worker" -.->|"5. 获取 (后台)"| "网络"
-    "网络" -.->|"6. 网络响应"| "Service Worker"
-    "Service Worker" -.->|"7. 更新缓存"| "缓存"
+    repairedNode1["页面"]
+    repairedNode2["Service Worker"]
+    repairedNode3["缓存"]
+    repairedNode4["网络"]
+    repairedNode1 -->|"1. 请求"| repairedNode2
+    repairedNode2 -->|"2. 检查缓存"| repairedNode3
+    repairedNode3 -->|"3. 命中缓存 (快速响应)"| repairedNode2
+    repairedNode2 -->|"4. 返回旧缓存响应"| repairedNode1
+    repairedNode2 -.->|"5. 获取 (后台)"| repairedNode4
+    repairedNode4 -.->|"6. 网络响应"| repairedNode2
+    repairedNode2 -.->|"7. 更新缓存"| repairedNode3
 ```
 
 ### 6.4. Cache Only / Network Only

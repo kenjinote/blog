@@ -272,18 +272,25 @@ O diagrama de estado (Mermaid) abaixo clarifica as operações mais usuais do tm
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Normal["Modo Normal"]
-    Normal --> Prefix["Modo Prefixo (Ctrl+B)"]
-    Prefix --> Command["Prompt de Comando (:)"]
-    Prefix --> SplitV["Dividir Painel Verticalmente (%)"]
-    Prefix --> SplitH["Dividir Painel Horizontalmente (\)"]
-    Prefix --> Switch["Trocar de Janela (n/p/0-9)"]
-    Prefix --> Detach["Desanexar Sessão (d)"]
+    state "Modo Normal" as Normal
+    state "Modo Prefixo (Ctrl+B)" as Prefix
+    state "Prompt de Comando (:)" as Command
+    state "Dividir Painel Verticalmente (%)" as SplitV
+    state "Dividir Painel Horizontalmente (\)" as SplitH
+    state "Trocar de Janela (n/p/0-9)" as Switch
+    state "Desanexar Sessão (d)" as Detach
+    [*] --> Normal
+    Normal --> Prefix
+    Prefix --> Command
+    Prefix --> SplitV
+    Prefix --> SplitH
+    Prefix --> Switch
+    Prefix --> Detach
     
-    Command --> Normal["Executar Comando tmux"]
-    SplitV --> Normal["Retornar ao Modo Normal"]
-    SplitH --> Normal["Retornar ao Modo Normal"]
-    Switch --> Normal["Retornar ao Modo Normal"]
+    Command --> Normal : Executar Comando tmux
+    SplitV --> Normal : Retornar ao Modo Normal
+    SplitH --> Normal : Retornar ao Modo Normal
+    Switch --> Normal : Retornar ao Modo Normal
     Detach --> [*]
 ```
 

@@ -64,25 +64,25 @@ Há uma citação famosa de Joe Armstrong (o criador do Erlang):
 
 ```mermaid
 classDiagram
-    class "GameObject" {
+    class GameObject {
         +Transform transform
         +update()
     }
-    class "Character" {
+    class Character {
         +Health health
         +move()
     }
-    class "Player" {
+    class Player {
         +Inventory inventory
         +handleInput()
     }
-    class "Enemy" {
+    class Enemy {
         +AIController ai
         +attack()
     }
-    "GameObject" <|-- "Character"
-    "Character" <|-- "Player"
-    "Character" <|-- "Enemy"
+    GameObject <|-- Character
+    Character <|-- Player
+    Character <|-- Enemy
 ```
 
 Árvores de herança profundas complicam as dependências de código, tornando extremamente difícil isolar e reutilizar apenas funcionalidades específicas. Além disso, quando vários objetos referenciam e alteram o estado uns dos outros, a previsibilidade de todo o sistema cai drasticamente.
@@ -165,19 +165,19 @@ fn update_positions(positions: &mut [Position], velocities: &[Velocity], dt: f32
 ```mermaid
 graph TD
     subgraph "Data (Components)"
-        "P"["Positions Array"]
-        "V"["Velocities Array"]
-        "H"["Healths Array"]
+        P["Positions Array"]
+        V["Velocities Array"]
+        H["Healths Array"]
     end
 
     subgraph "Logic (Systems)"
-        "PhysicsSystem"
-        "DamageSystem"
+        PhysicsSystem
+        DamageSystem
     end
 
-    "PhysicsSystem" -->|"Reads"| "V"
-    "PhysicsSystem" -->|"Mutates"| "P"
-    "DamageSystem" -->|"Mutates"| "H"
+    PhysicsSystem -->|"Reads"| V
+    PhysicsSystem -->|"Mutates"| P
+    DamageSystem -->|"Mutates"| H
 ```
 
 ### 3.2 Os Limites da DOP: Dificuldade em Aplicar à Lógica de Negócios

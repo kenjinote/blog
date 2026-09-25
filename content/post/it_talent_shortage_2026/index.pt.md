@@ -116,11 +116,11 @@ Como resultado disso, as empresas perceberam que é esmagadoramente menos arrisc
 
 ```mermaid
 xychart-beta
-    title Polarização da demanda de vagas entre níveis júnior e sênior (2021-2026)
-    x-axis ["2021, 2022, 2023, 2024, 2025, 2026"]
+    title "Polarização da demanda de vagas entre níveis júnior e sênior (2021-2026)"
+    x-axis ["2021", "2022", "2023", "2024", "2025", "2026"]
     y-axis "Taxa de oferta de empregos" 0.0 --> 10.0
-    line ["Sênior (Arquiteto/MLOps, etc.)"] [3.0, 3.5, 4.2, 5.8, 7.5, 9.2]
-    line ["Júnior (Inexperiente/1 a 2 anos de experiência)"] [2.5, 2.2, 1.8, 1.2, 0.8, 0.3]
+    line "Sênior (Arquiteto/MLOps, etc.)" [3.0, 3.5, 4.2, 5.8, 7.5, 9.2]
+    line "Júnior (Inexperiente/1 a 2 anos de experiência)" [2.5, 2.2, 1.8, 1.2, 0.8, 0.3]
 ```
 
 ---

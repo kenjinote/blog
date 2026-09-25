@@ -75,12 +75,12 @@ $$ q_i = a_i q_{i-1} + q_{i-2} $$
 ```mermaid
 flowchart TD
     Start["प्रारंभ: पूर्णांक n दर्ज करें"] --> CheckSquare["निर्धारित करें कि n पूर्ण वर्ग है या नहीं"]
-    CheckSquare --|"हाँ"| Trivial["केवल तुच्छ हल मौजूद हैं (अंत)"] --> End["अंत"]
-    CheckSquare --|"नहीं"| InitContFrac["सतत भिन्न के लिए पुनरावृत्ति प्रारंभ करें"]
+    CheckSquare -->|"हाँ"| Trivial["केवल तुच्छ हल मौजूद हैं (अंत)"] --> End["अंत"]
+    CheckSquare -->|"नहीं"| InitContFrac["सतत भिन्न के लिए पुनरावृत्ति प्रारंभ करें"]
     InitContFrac --> CalcNext["अगले पद a_i और अभिसारी (p_i, q_i) की गणना करें"]
     CalcNext --> CheckEq["स्थिति: p_i^2 - n * q_i^2 == 1 का मूल्यांकन करें"]
-    CheckEq --|"गलत"| CalcNext
-    CheckEq --|"सही"| Found["मौलिक हल (x_1, y_1) = (p_i, q_i) मिला"] --> End
+    CheckEq -->|"गलत"| CalcNext
+    CheckEq -->|"सही"| Found["मौलिक हल (x_1, y_1) = (p_i, q_i) मिला"] --> End
 ```
 
 ## 6. विशिष्ट उदाहरण: n = 7 के लिए सतत भिन्न विस्तार और मौलिक हल

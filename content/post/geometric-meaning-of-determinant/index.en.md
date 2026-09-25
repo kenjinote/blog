@@ -80,7 +80,7 @@ In 2D, it corresponds to an operation like "flipping over" a figure drawn on a t
 flowchart TD
     Original["Original space (Right-handed)"]
     Reflected["Transformed space (Left-handed)"]
-    Original -->|"Transformation with det("A") < 0"| Reflected
+    Original -->|"Transformation with det(A) < 0"| Reflected
     Original -->|"Involves flipping the space"| Reflected
 ```
 
@@ -102,7 +102,7 @@ In 2D, it means that the two transformed basis vectors overlap on the same strai
 
 ```mermaid
 flowchart LR
-    Space["2D Plane"] -->|"Transformation with det("A") = 0"| Line["Compressed into a 1D line"]
+    Space["2D Plane"] -->|"Transformation with det(A) = 0"| Line["Compressed into a 1D line"]
 ```
 
 A matrix whose determinant is $0$ has a very important algebraic property: it **does not have an inverse matrix** (it is a singular matrix). Geometrically, the reason is obvious. Once a space has collapsed into a lower dimension, it is impossible to supplement the lost information and restore the original higher-dimensional space (i.e., perform an inverse transformation).

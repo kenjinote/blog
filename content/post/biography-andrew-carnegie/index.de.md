@@ -41,17 +41,17 @@ Darüber hinaus waren seine Beiträge vielfältig und umfassten die Gründung de
 
 ```mermaid
 graph TD
-    A["Andrew Carnegie"] -->|1. Aufstieg aus der Armut| B["Erfahrung in der Eisenbahn- und Telegrafenindustrie"]
-    B -->|2. Weitblick| C["Gründung der Carnegie Steel Company"]
-    C -->|Vertikale Integration und Effizienz| D["Anhäufung immensen Reichtums (Stahlkönig)"]
-    D -->|Verkauf des Unternehmens (1901)| E["Hingabe an philanthropische Aktivitäten"]
+    A["Andrew Carnegie"] -->|"1. Aufstieg aus der Armut"| B["Erfahrung in der Eisenbahn- und Telegrafenindustrie"]
+    B -->|"2. Weitblick"| C["Gründung der Carnegie Steel Company"]
+    C -->|"Vertikale Integration und Effizienz"| D["Anhäufung immensen Reichtums (Stahlkönig)"]
+    D -->|"Verkauf des Unternehmens (1901)"| E["Hingabe an philanthropische Aktivitäten"]
     
-    A -->|Einzigartige Philosophie| F["Essay 'Das Evangelium des Reichtums'"]
-    F -->|Moralische Pflicht| E
+    A -->|"Einzigartige Philosophie"| F["Essay 'Das Evangelium des Reichtums'"]
+    F -->|"Moralische Pflicht"| E
     
-    E -->|Bildungsförderung| G["Gründung von über 2500 öffentlichen Bibliotheken"]
-    E -->|Kulturförderung| H["Bau der Carnegie Hall"]
-    E -->|Wissenschaft und Frieden| I["Carnegie Mellon University und Stiftung für internationalen Frieden"]
+    E -->|"Bildungsförderung"| G["Gründung von über 2500 öffentlichen Bibliotheken"]
+    E -->|"Kulturförderung"| H["Bau der Carnegie Hall"]
+    E -->|"Wissenschaft und Frieden"| I["Carnegie Mellon University und Stiftung für internationalen Frieden"]
 ```
 
 ## Die Bedeutung von Carnegie in der heutigen Zeit

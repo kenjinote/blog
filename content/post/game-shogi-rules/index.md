@@ -65,9 +65,9 @@ graph TD
 
 ```mermaid
 graph TD
-    subgraph 振り飛車の思想
-        RookStart["右辺の飛車"] -.-> |左へ大移動 (振る)| RookEnd["左辺の飛車 (カウンター準備)"]
-        KingStart["左辺の玉"] -.-> |右へ逃げる| KingEnd["右辺の玉 (美濃囲いへ)"]
+    subgraph "振り飛車の思想"
+        RookStart["右辺の飛車"] -.-> |"左へ大移動 (振る)"| RookEnd["左辺の飛車 (カウンター準備)"]
+        KingStart["左辺の玉"] -.-> |"右へ逃げる"| KingEnd["右辺の玉 (美濃囲いへ)"]
     end
 ```
 

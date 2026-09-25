@@ -75,12 +75,12 @@ $$ q_i = a_i q_{i-1} + q_{i-2} $$
 ```mermaid
 flowchart TD
     Start["開始: 整数 n を入力"] --> CheckSquare["n が完全平方数か判定"]
-    CheckSquare --|"Yes"| Trivial["自明な解のみ存在 (終了)"] --> End["終了"]
-    CheckSquare --|"No"| InitContFrac["連分数の漸化式を初期化"]
+    CheckSquare -->|"Yes"| Trivial["自明な解のみ存在 (終了)"] --> End["終了"]
+    CheckSquare -->|"No"| InitContFrac["連分数の漸化式を初期化"]
     InitContFrac --> CalcNext["次の連分数項 a_i と近似分数 (p_i, q_i) を計算"]
     CalcNext --> CheckEq["条件: p_i^2 - n * q_i^2 == 1 を評価"]
-    CheckEq --|"False"| CalcNext
-    CheckEq --|"True"| Found["基本解 (x_1, y_1) = (p_i, q_i) を発見"] --> End
+    CheckEq -->|"False"| CalcNext
+    CheckEq -->|"True"| Found["基本解 (x_1, y_1) = (p_i, q_i) を発見"] --> End
 ```
 
 ## 6. 具体例：n = 7 の場合の連分数展開と基本解の導出

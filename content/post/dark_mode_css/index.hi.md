@@ -257,9 +257,9 @@ classDiagram
         "class='bg-background text-primary'"
     }
 
-    GlobalCSSVariables <|-- SemanticVariables : ":root & .dark"
-    SemanticVariables <|-- TailwindConfig : "tailwind.config.js"
-    TailwindConfig <.. UIComponents : "उपयोगिता कक्षाएं लागू करता है"
+    GlobalCSSVariables <|-- SemanticVariables : #58;root & .dark
+    SemanticVariables <|-- TailwindConfig : tailwind.config.js
+    TailwindConfig <.. UIComponents : उपयोगिता कक्षाएं लागू करता है
 ```
 
 ### 4.2 Raw SCSS/CSS के साथ कार्यान्वयन (Mixin का उपयोग)

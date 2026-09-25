@@ -117,22 +117,22 @@ public class BankAccount {
 
 ```mermaid
 classDiagram
-    class "Animal" {
+    class Animal {
         +eat()
     }
-    class "Mammal" {
+    class Mammal {
         +eat()
     }
-    class "WingedAnimal" {
+    class WingedAnimal {
         +eat()
     }
-    class "Bat" {
+    class Bat {
     }
     
-    "Animal" <|-- "Mammal"
-    "Animal" <|-- "WingedAnimal"
-    "Mammal" <|-- "Bat"
-    "WingedAnimal" <|-- "Bat"
+    Animal <|-- Mammal
+    Animal <|-- WingedAnimal
+    Mammal <|-- Bat
+    WingedAnimal <|-- Bat
 ```
 
 المشكلة هي أنه عندما يستدعي Bat الطريقة `eat()`، يصبح من الغامض أي تطبيق يجب استدعاؤه، ذلك الخاص بـ Mammal أو WingedAnimal. في [Java](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) و C#، يتم حظر الوراثة المتعددة للفئات، ويتم تجنب هذه المشكلة عن طريق استخدام **الواجهات (Interfaces)**.
@@ -240,23 +240,23 @@ class ReportRepository:
 
 ```mermaid
 classDiagram
-    class "Shape" {
+    class Shape {
         <<interface>>
         +calculateArea() double
     }
-    class "Circle" {
+    class Circle {
         +calculateArea() double
     }
-    class "Rectangle" {
+    class Rectangle {
         +calculateArea() double
     }
-    class "Triangle" {
+    class Triangle {
         +calculateArea() double
     }
     
-    "Shape" <|.. "Circle"
-    "Shape" <|.. "Rectangle"
-    "Shape" <|.. "Triangle"
+    Shape <|.. Circle
+    Shape <|.. Rectangle
+    Shape <|.. Triangle
 ```
 
 ### 3.3 مبدأ استبدال ليسكوف (Liskov Substitution Principle: LSP)
@@ -354,7 +354,7 @@ public class MultiFunctionPrinter : IPrinter, IScanner {
 
 ```mermaid
 flowchart TD
-    "A"["BusinessLogic (مستوى أعلى)"] --> "B"["MySQLDatabase (مستوى أدنى/تفاصيل)"]
+    A["BusinessLogic (مستوى أعلى)"] --> B["MySQLDatabase (مستوى أدنى/تفاصيل)"]
 ```
 
 #### التصميم بتطبيق DIP
@@ -362,8 +362,8 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    "A"["BusinessLogic (مستوى أعلى)"] --> "I"["IDatabase (تجريد)"]
-    "B"["MySQLDatabase (مستوى أدنى/تفاصيل)"] -.->|"تنفيذ"| "I"
+    A["BusinessLogic (مستوى أعلى)"] --> I["IDatabase (تجريد)"]
+    B["MySQLDatabase (مستوى أدنى/تفاصيل)"] -.->|"تنفيذ"| I
 ```
 
 ```java

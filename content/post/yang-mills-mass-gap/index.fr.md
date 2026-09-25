@@ -51,8 +51,8 @@ $ g $ est la constante de couplage, et $ f^{abc} $ sont les constantes de struct
 ```mermaid
 graph TD
     A["Théorie de jauge"] -->|"Extension"| B["Théorie de Yang-Mills"]
-    B -->|"Symétrie SU("3")"| C["Chromodynamique quantique (QCD)"]
-    B -->|"Symétrie SU("2")xU("1")"| D["Théorie électrofaible"]
+    B -->|"Symétrie SU(3)"| C["Chromodynamique quantique (QCD)"]
+    B -->|"Symétrie SU(2)xU(1)"| D["Théorie électrofaible"]
     C -->|"Interaction forte"| E["Modèle standard"]
     D -->|"Interaction électromagnétique et faible"| E
 ```

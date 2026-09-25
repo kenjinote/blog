@@ -98,9 +98,9 @@ graph TD
         App["التطبيق الرئيسي"]
     end
 
-    App -- target_link_libraries("App PRIVATE MathLib") --> MathLib
-    App -- target_link_libraries("App PUBLIC NetworkLib") --> NetworkLib
-    NetworkLib -- target_link_libraries("NetworkLib INTERFACE HeaderLib") --> HeaderLib
+    App -- "target_link_libraries(App PRIVATE MathLib)" --> MathLib
+    App -- "target_link_libraries(App PUBLIC NetworkLib)" --> NetworkLib
+    NetworkLib -- "target_link_libraries(NetworkLib INTERFACE HeaderLib)" --> HeaderLib
     
     note1["يعتمد App على تنفيذ MathLib، لكنه لا يعرضه للخارج"]
     note2["تكشف NetworkLib عن واجهة HeaderLib"]

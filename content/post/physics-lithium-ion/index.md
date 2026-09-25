@@ -50,8 +50,10 @@ tags:
 4. 負極（黒鉛の層の隙間）で、到着したリチウムイオンと電子が再び出会い、そこに潜り込んでエネルギーを蓄えた状態になります。
 
 ```mermaid
+%%{init: {'flowchart': {'wrappingWidth': 400, 'subGraphTitleMargin': {'top': 8, 'bottom': 24}}}}%%
 graph LR
-    subgraph 放電時の動き (スマホ使用中)
+    subgraph "放電時の動き (スマホ使用中)"
+        direction LR
         Negative["負極 (黒鉛)"] -- "電子 (e-) は導線を通る" --> Device(("スマホ"))
         Device -- "電子 (e-)" --> Positive["正極 (金属酸化物)"]
         Negative -. "リチウムイオン (Li+) は電解液を通る" .-> Positive

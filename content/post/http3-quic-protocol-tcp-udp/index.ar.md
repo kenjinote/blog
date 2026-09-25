@@ -39,13 +39,13 @@ tags:
 حل HTTP/2 هذه المشكلة من خلال **تعدد الإرسال (Multiplexing)** باستخدام **التيارات (Streams)**. حيث يتم إنشاء عدة تيارات افتراضية داخل اتصال TCP واحد، وتقسيم الطلبات والاستجابات إلى إطارات صغيرة بحيث يمكن تبادلها في نفس الوقت.
 
 ```mermaid
-architecture-beta
-    group http2("بنية HTTP/2")
-    service tcp("اتصال TCP") in http2
-    service s1("تيار 1: HTML") in http2
-    service s2("تيار 2: CSS") in http2
-    service s3("تيار 3: JS") in http2
-    
+flowchart TB
+    subgraph http2 ["بنية HTTP/2"]
+        tcp["اتصال TCP"]
+        s1["تيار 1: HTML"]
+        s2["تيار 2: CSS"]
+        s3["تيار 3: JS"]
+    end
     s1 --> tcp
     s2 --> tcp
     s3 --> tcp
@@ -104,14 +104,14 @@ architecture-beta
 
 ```mermaid
 flowchart TD
-    subgraph "HTTP/3 Stack ["حزمة HTTP/3"]"
+    subgraph "HTTP/3 Stack / حزمة HTTP/3"
         H3["HTTP/3 (دلالات HTTP، QPACK)"]
         QUIC["QUIC (تعدد الإرسال، التحكم في الازدحام، TLS 1.3)"]
         UDP["UDP"]
         IP["IP"]
     end
     
-    subgraph "HTTP/2 Stack ["حزمة HTTP/2"]"
+    subgraph "HTTP/2 Stack / حزمة HTTP/2"
         H2["HTTP/2 (HPACK)"]
         TLS["TLS 1.2 / 1.3"]
         TCP["TCP"]

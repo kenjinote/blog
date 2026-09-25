@@ -121,7 +121,7 @@ $$ p = k \ln \left( \frac{S}{S_0} \right) $$
 
 ```mermaid
 xychart-beta
-    title 蓝光发射光谱对比
+    title "蓝光发射光谱对比"
     x-axis "波长 (nm)" [400, 420, 440, 460, 480, 500]
     y-axis "相对强度" 0 --> 100
     bar "标准LCD (W-LED)" [10, 30, 95, 80, 40, 20]

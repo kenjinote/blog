@@ -129,14 +129,20 @@ El siguiente diagrama Mermaid representa la transición de estados del Service W
 
 ```mermaid
 stateDiagram-v2
+    state "Analizado (Parsed)" as repairedState1
+    state "Instalando (Installing)" as repairedState2
+    state "Instalado/En espera (Installed/Waiting)" as repairedState3
+    state "Redundante (Redundant)" as repairedState4
+    state "Activando (Activating)" as repairedState5
+    state "Activado (Activated)" as repairedState6
     direction TB
-    "Analizado (Parsed)" --> "Instalando (Installing)" : "Registro (Registration)"
-    "Instalando (Installing)" --> "Instalado/En espera (Installed/Waiting)" : "Éxito (Success)"
-    "Instalando (Installing)" --> "Redundante (Redundant)" : "Error"
-    "Instalado/En espera (Installed/Waiting)" --> "Activando (Activating)" : "Todos los clientes cerrados / skipWaiting()"
-    "Activando (Activating)" --> "Activado (Activated)" : "Éxito (Success)"
-    "Activando (Activating)" --> "Redundante (Redundant)" : "Error"
-    "Activado (Activated)" --> "Redundante (Redundant)" : "Reemplazado por un nuevo SW"
+    repairedState1 --> repairedState2 : "Registro (Registration)"
+    repairedState2 --> repairedState3 : "Éxito (Success)"
+    repairedState2 --> repairedState4 : "Error"
+    repairedState3 --> repairedState5 : "Todos los clientes cerrados / skipWaiting()"
+    repairedState5 --> repairedState6 : "Éxito (Success)"
+    repairedState5 --> repairedState4 : "Error"
+    repairedState6 --> repairedState4 : "Reemplazado por un nuevo SW"
 ```
 
 1. ** Analizado (Parsed)** : El estado en el que el navegador ha descargado el script del Service Worker y ha finalizado el análisis sintáctico.
@@ -180,14 +186,15 @@ Es la estrategia más básica y rápida. Primero comprueba la caché, si existe 
 
 ```mermaid
 flowchart TD
-    "Página" -->|"1. Solicitud"| "Service Worker"
-    "Service Worker" -->|"2. Comprobar Caché"| "Caché"
-    "Caché" -->|"3a. Acierto de Caché"| "Service Worker"
-    "Service Worker" -->|"4a. Respuesta"| "Página"
-    "Caché" -->|"3b. Fallo de Caché"| "Red"
-    "Red" -->|"4b. Respuesta"| "Service Worker"
-    "Service Worker" -->|"5b. Guardar en Caché"| "Caché"
-    "Service Worker" -->|"6b. Respuesta"| "Página"
+    repairedNode1["Service Worker"]
+    Página -->|"1. Solicitud"| repairedNode1
+    repairedNode1 -->|"2. Comprobar Caché"| Caché
+    Caché -->|"3a. Acierto de Caché"| repairedNode1
+    repairedNode1 -->|"4a. Respuesta"| Página
+    Caché -->|"3b. Fallo de Caché"| Red
+    Red -->|"4b. Respuesta"| repairedNode1
+    repairedNode1 -->|"5b. Guardar en Caché"| Caché
+    repairedNode1 -->|"6b. Respuesta"| Página
 ```
 
 ### 6.2. Network First (Primero en red)
@@ -196,15 +203,16 @@ Es una estrategia que siempre prioriza obtener los datos más recientes. Primero
 
 ```mermaid
 flowchart TD
-    "Página" -->|"1. Solicitud"| "Service Worker"
-    "Service Worker" -->|"2. Obtener (Fetch)"| "Red"
-    "Red" -->|"3a. Éxito"| "Service Worker"
-    "Service Worker" -->|"4a. Guardar en Caché"| "Caché"
-    "Service Worker" -->|"5a. Respuesta"| "Página"
-    "Red" -->|"3b. Error / Sin conexión"| "Service Worker"
-    "Service Worker" -->|"4b. Comprobar Caché"| "Caché"
-    "Caché" -->|"5b. Acierto de Caché"| "Service Worker"
-    "Service Worker" -->|"6b. Respuesta Alternativa"| "Página"
+    repairedNode1["Service Worker"]
+    Página -->|"1. Solicitud"| repairedNode1
+    repairedNode1 -->|"2. Obtener (Fetch)"| Red
+    Red -->|"3a. Éxito"| repairedNode1
+    repairedNode1 -->|"4a. Guardar en Caché"| Caché
+    repairedNode1 -->|"5a. Respuesta"| Página
+    Red -->|"3b. Error / Sin conexión"| repairedNode1
+    repairedNode1 -->|"4b. Comprobar Caché"| Caché
+    Caché -->|"5b. Acierto de Caché"| repairedNode1
+    repairedNode1 -->|"6b. Respuesta Alternativa"| Página
 ```
 
 ### 6.3. Stale-while-revalidate (Devolver caché antigua mientras se actualiza en segundo plano)
@@ -214,13 +222,14 @@ Cuando ocurre una solicitud, devuelve instantáneamente la caché (datos antiguo
 
 ```mermaid
 flowchart TD
-    "Página" -->|"1. Solicitud"| "Service Worker"
-    "Service Worker" -->|"2. Comprobar Caché"| "Caché"
-    "Caché" -->|"3. Acierto de Caché (Respuesta Rápida)"| "Service Worker"
-    "Service Worker" -->|"4. Devolver Respuesta Antigua"| "Página"
-    "Service Worker" -.->|"5. Obtener (En segundo plano)"| "Red"
-    "Red" -.->|"6. Respuesta de Red"| "Service Worker"
-    "Service Worker" -.->|"7. Actualizar Caché"| "Caché"
+    repairedNode1["Service Worker"]
+    Página -->|"1. Solicitud"| repairedNode1
+    repairedNode1 -->|"2. Comprobar Caché"| Caché
+    Caché -->|"3. Acierto de Caché (Respuesta Rápida)"| repairedNode1
+    repairedNode1 -->|"4. Devolver Respuesta Antigua"| Página
+    repairedNode1 -.->|"5. Obtener (En segundo plano)"| Red
+    Red -.->|"6. Respuesta de Red"| repairedNode1
+    repairedNode1 -.->|"7. Actualizar Caché"| Caché
 ```
 
 ### 6.4. Cache Only / Network Only (Solo Caché / Solo Red)

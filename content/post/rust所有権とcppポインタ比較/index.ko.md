@@ -125,8 +125,8 @@ sequenceDiagram
     participant S2 as "변수 s2"
     
     S1->>Heap: "할당 및 소유"
-    Note over S1,S2: "let s2 = s1;"
-    S1--xHeap: "소유권 상실 (무효화됨)"
+    Note over S1,S2: "let s2 = s1#59;"
+    S1--x Heap: "소유권 상실 (무효화됨)"
     S2->>Heap: "소유권 획득"
 ```
 
@@ -220,8 +220,8 @@ fn main() {
 ```mermaid
 graph LR
     A["변수 v (소유자)"] --> B["힙 배열 [1, 2, 3]"]
-    C["참조 'first' (&v[0"])"] -.->|"불변 차용"| B
-    A -->|"X "가변 차용 거부됨!""| D["v.push(4)"]
+    C["참조 'first' (&v[0])"] -.->|"불변 차용"| B
+    A -->|"X #quot;가변 차용 거부됨!#quot;"| D["v.push(4)"]
     
     style C stroke:#00FF00,stroke-width:2px
     style D stroke:#FF0000,stroke-width:2px

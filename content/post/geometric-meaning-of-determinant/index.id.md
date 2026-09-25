@@ -80,7 +80,7 @@ Dalam 2D, ini sesuai dengan operasi seperti "membalikkan" bangun yang digambar d
 flowchart TD
     Original["Ruang asli (Sistem tangan kanan)"]
     Reflected["Ruang yang ditransformasi (Sistem tangan kiri)"]
-    Original -->|"Transformasi dengan det("A") < 0"| Reflected
+    Original -->|"Transformasi dengan det(A) < 0"| Reflected
     Original -->|"Melibatkan pembalikan ruang"| Reflected
 ```
 
@@ -102,7 +102,7 @@ Dalam 2D, ini berarti bahwa kedua vektor basis yang ditransformasikan tumpang ti
 
 ```mermaid
 flowchart LR
-    Space["Bidang 2D"] -->|"Transformasi dengan det("A") = 0"| Line["Dikompresi menjadi garis 1D"]
+    Space["Bidang 2D"] -->|"Transformasi dengan det(A) = 0"| Line["Dikompresi menjadi garis 1D"]
 ```
 
 Matriks yang determinannya $0$ memiliki sifat aljabar yang sangat penting: ia **tidak memiliki matriks invers** (ini adalah matriks singular). Secara geometris, alasannya jelas. Setelah ruang runtuh menjadi dimensi yang lebih rendah, tidak mungkin melengkapi informasi yang hilang dan mengembalikan ruang berdimensi lebih tinggi yang asli (yaitu, melakukan transformasi invers).

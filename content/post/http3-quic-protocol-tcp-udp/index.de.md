@@ -39,13 +39,13 @@ Bei HTTP/1.1 mussten Anfragen und Antworten sequenziell über eine einzige TCP-V
 HTTP/2 löste dieses Problem durch **Multiplexing (Multiplexing)** mittels **Streams (Streams)**. Es erstellte mehrere virtuelle Streams innerhalb einer einzigen TCP-Verbindung und ermöglichte den gleichzeitigen Austausch von Anfragen und Antworten, indem diese in kleine Frames unterteilt wurden.
 
 ```mermaid
-architecture-beta
-    group http2("HTTP/2 Architecture")
-    service tcp("TCP Connection") in http2
-    service s1("Stream 1: HTML") in http2
-    service s2("Stream 2: CSS") in http2
-    service s3("Stream 3: JS") in http2
-    
+flowchart TB
+    subgraph http2 ["HTTP/2 Architecture"]
+        tcp["TCP Connection"]
+        s1["Stream 1: HTML"]
+        s2["Stream 2: CSS"]
+        s3["Stream 3: JS"]
+    end
     s1 --> tcp
     s2 --> tcp
     s3 --> tcp

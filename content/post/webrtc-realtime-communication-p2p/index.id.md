@@ -162,7 +162,7 @@ sequenceDiagram
     PeerB->>STUN: "Permintaan Binding"
     STUN-->>PeerB: "IP Publik & Port"
     PeerB->>PeerA: "Kirim Kandidat melalui Sinyal"
-    PeerA<-->>PeerB: "Pemeriksaan Konektivitas (STUN Ping)"
+    PeerA<<-->>PeerB: "Pemeriksaan Konektivitas (STUN Ping)"
     PeerA->>PeerB: "Koneksi P2P Selesai dengan Rute Optimal"
 ```
 

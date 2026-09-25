@@ -126,8 +126,8 @@ sequenceDiagram
     participant S2 as "Variabel s2"
     
     S1->>Heap: "Mengalokasikan & Memiliki"
-    Note over S1,S2: "let s2 = s1;"
-    S1--xHeap: "Kehilangan Kepemilikan (Tidak Valid)"
+    Note over S1,S2: "let s2 = s1#59;"
+    S1--x Heap: "Kehilangan Kepemilikan (Tidak Valid)"
     S2->>Heap: "Mengambil Kepemilikan"
 ```
 
@@ -221,8 +221,8 @@ Seperti ini, di [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)
 ```mermaid
 graph LR
     A["Variabel v (Pemilik)"] --> B["Array Heap [1, 2, 3]"]
-    C["Referensi 'first' (&v[0"])"] -.->|"Peminjaman Imutabel"| B
-    A -->|"X "Peminjaman Mutabel Ditolak!""| D["v.push(4)"]
+    C["Referensi 'first' (&v[0])"] -.->|"Peminjaman Imutabel"| B
+    A -->|"X #quot;Peminjaman Mutabel Ditolak!#quot;"| D["v.push(4)"]
     
     style C stroke:#00FF00,stroke-width:2px
     style D stroke:#FF0000,stroke-width:2px

@@ -39,13 +39,13 @@ tags:
 HTTP/2 透過基於 **串流** 的 **多工 (Multiplexing)** 解決了這個問題。在一個 TCP 連線中建立多個虛擬串流，將請求和回應分割成細小的訊框並同時進行收發。
 
 ```mermaid
-architecture-beta
-    group http2("HTTP/2 架構")
-    service tcp("TCP 連線") in http2
-    service s1("串流 1：HTML") in http2
-    service s2("串流 2：CSS") in http2
-    service s3("串流 3：JS") in http2
-    
+flowchart TB
+    subgraph http2 ["HTTP/2 架構"]
+        tcp["TCP 連線"]
+        s1["串流 1：HTML"]
+        s2["串流 2：CSS"]
+        s3["串流 3：JS"]
+    end
     s1 --> tcp
     s2 --> tcp
     s3 --> tcp

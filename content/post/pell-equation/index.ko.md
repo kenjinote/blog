@@ -75,12 +75,12 @@ $$ q_i = a_i q_{i-1} + q_{i-2} $$
 ```mermaid
 flowchart TD
     Start["시작: 정수 n 을 입력"] --> CheckSquare["n 이 완전제곱수인지 판정"]
-    CheckSquare --|"Yes"| Trivial["자명한 해만 존재 (종료)"] --> End["종료"]
-    CheckSquare --|"No"| InitContFrac["연분수의 점화식을 초기화"]
+    CheckSquare -->|"Yes"| Trivial["자명한 해만 존재 (종료)"] --> End["종료"]
+    CheckSquare -->|"No"| InitContFrac["연분수의 점화식을 초기화"]
     InitContFrac --> CalcNext["다음 연분수 항 a_i 와 근사분수 (p_i, q_i) 를 계산"]
     CalcNext --> CheckEq["조건: p_i^2 - n * q_i^2 == 1 을 평가"]
-    CheckEq --|"False"| CalcNext
-    CheckEq --|"True"| Found["기본해 (x_1, y_1) = (p_i, q_i) 를 발견"] --> End
+    CheckEq -->|"False"| CalcNext
+    CheckEq -->|"True"| Found["기본해 (x_1, y_1) = (p_i, q_i) 를 발견"] --> End
 ```
 
 ## 6. 구체적인 예: n = 7 인 경우의 연분수 전개와 기본해 유도

@@ -55,8 +55,8 @@ graph TD
         A["Draw 1 Ball"] -->|"Number was '7'"| B{"What is the Urn?"}
         B -->|"Assume Prior Probabilities are Equal"| C["Hypothesis 1: Urn with 10 Balls"]
         B -->|"Assume Prior Probabilities are Equal"| D["Hypothesis 2: Urn with 1000 Balls"]
-        C -.->|"P("E|H1") = 1/10"| E["Hypothesis 1 has Higher Likelihood"]
-        D -.->|"P("E|H2") = 1/1000"| E
+        C -.->|"P(E#124;H1) = 1/10"| E["Hypothesis 1 has Higher Likelihood"]
+        D -.->|"P(E#124;H2) = 1/1000"| E
     end
 ```
 

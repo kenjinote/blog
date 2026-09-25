@@ -162,7 +162,7 @@ sequenceDiagram
     PeerB->>STUN: "Binding Request"
     STUN-->>PeerB: "Public IP & Port"
     PeerB->>PeerA: "सिग्नलिंग के माध्यम से Candidate भेजें"
-    PeerA<-->>PeerB: "कनेक्टिविटी जांच (STUN Ping)"
+    PeerA<<-->>PeerB: "कनेक्टिविटी जांच (STUN Ping)"
     PeerA->>PeerB: "इष्टतम मार्ग के साथ P2P कनेक्शन पूरा हुआ"
 ```
 

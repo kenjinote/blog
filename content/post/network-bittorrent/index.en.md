@@ -40,7 +40,7 @@ graph TD
     PeerA <-->|"Exchange Pieces 1 and 2"| PeerB
     PeerB <-->|"Exchange Pieces 2 and 3"| PeerC
     PeerC <-->|"Exchange Pieces 3 and 1"| PeerA
-    Note over PeerA,PeerC: Users exchange pieces they don't have with each other like a puzzle
+    diagramNote["Users exchange pieces they don't have with each other like a puzzle"]
 ```
 
 Through this mechanism, the original server (seed) no longer needs to send the full file to every participant. By handing each piece to just one person, the participants then multiply them by exchanging puzzle pieces with each other, creating a magical phenomenon where "**the more participants there are, the faster the download speed of the entire network becomes.**"

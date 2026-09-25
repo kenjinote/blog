@@ -304,7 +304,7 @@ graph TD
     B -->|"② Réponse avec clé partagée X25519 + chiffré encapsulé Kyber"| A
     A --> C{"Dérivation du secret maître (KDF)"}
     B --> C
-    C -->|"Entrée : (Clé partagée X25519)"|| (Clé partagée Kyber) | D["Clé de communication sécurisée (AES-256 / ChaCha20)"]
+    C -->|"#quot;Entrée : (Clé partagée X25519)#quot;#124;#124; (Clé partagée Kyber)"| D["Clé de communication sécurisée (AES-256 / ChaCha20)"]
     D -->|"Résistance aux menaces quantiques ET aux vulnérabilités classiques"| E["Communication chiffrée hybride sécurisée (TLS 1.3)"]
 ```
 

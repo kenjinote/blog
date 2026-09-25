@@ -121,7 +121,7 @@ El siguiente gráfico compara la imagen del espectro de emisión de un monitor L
 
 ```mermaid
 xychart-beta
-    title Comparación del espectro de emisión de luz azul
+    title "Comparación del espectro de emisión de luz azul"
     x-axis "Longitud de onda (nm)" [400, 420, 440, 460, 480, 500]
     y-axis "Intensidad relativa" 0 --> 100
     bar "LCD estándar (W-LED)" [10, 30, 95, 80, 40, 20]

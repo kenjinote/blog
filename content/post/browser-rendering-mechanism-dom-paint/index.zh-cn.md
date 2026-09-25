@@ -140,20 +140,20 @@ gantt
 
     section "普通脚本"
     "HTML 解析"       :active, a1, 0, 2s
-    "JS 下载" :crit, a2, 2s, 4s
-    "JS 执行"         :crit, a3, 4s, 6s
-    "HTML 解析恢复"   :active, a4, 6s, 8s
+    "JS 下载" :crit, a2, 2, 4s
+    "JS 执行"         :crit, a3, 4, 6s
+    "HTML 解析恢复"   :active, a4, 6, 8s
 
     section "async 属性"
     "HTML 解析"       :active, b1, 0, 5s
-    "JS 下载" :crit, b2, 2s, 4s
-    "JS 执行"         :crit, b3, 5s, 7s
-    "HTML 解析恢复"   :active, b4, 7s, 9s
+    "JS 下载" :crit, b2, 2, 4s
+    "JS 执行"         :crit, b3, 5, 7s
+    "HTML 解析恢复"   :active, b4, 7, 9s
 
     section "defer 属性"
     "HTML 解析"       :active, c1, 0, 6s
-    "JS 下载" :crit, c2, 1s, 4s
-    "JS 执行"         :crit, c3, 6s, 8s
+    "JS 下载" :crit, c2, 1, 4s
+    "JS 执行"         :crit, c3, 6, 8s
 ```
 *(※实际的 `async` 会在下载完成后立即执行，因此会中断解析。)*
 

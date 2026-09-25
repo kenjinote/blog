@@ -225,8 +225,8 @@ print(f"Kesalahan rekonstruksi (L2 norm): {error:.6e}")
 
 ```mermaid
 flowchart LR
-    X["Sinyal sparse tak diketahui\nx (Dimensi N)"] -->|Matriks\nobservasi acak A| Y["Data observasi\ny (Dimensi M, M < N)"]
-    Y -->|Optimasi L1\n(Algoritma optimasi cembung)| X_hat["Sinyal yang direkonstruksi\nx^"]
+    X["Sinyal sparse tak diketahui\nx (Dimensi N)"] -->|"Matriks\nobservasi acak A"| Y["Data observasi\ny (Dimensi M, M < N)"]
+    Y -->|"Optimasi L1\n(Algoritma optimasi cembung)"| X_hat["Sinyal yang direkonstruksi\nx^"]
     X -. "Jaminan kecocokan persis" .-> X_hat
 ```
 

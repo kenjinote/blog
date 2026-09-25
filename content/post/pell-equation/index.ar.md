@@ -75,12 +75,12 @@ $$ q_i = a_i q_{i-1} + q_{i-2} $$
 ```mermaid
 flowchart TD
     Start["البداية: أدخل العدد الصحيح n"] --> CheckSquare["تحديد ما إذا كان n مربعًا كاملاً"]
-    CheckSquare --|"نعم"| Trivial["توجد حلول بديهية فقط (النهاية)"] --> End["النهاية"]
-    CheckSquare --|"لا"| InitContFrac["تهيئة التكرار للكسر المستمر"]
+    CheckSquare -->|"نعم"| Trivial["توجد حلول بديهية فقط (النهاية)"] --> End["النهاية"]
+    CheckSquare -->|"لا"| InitContFrac["تهيئة التكرار للكسر المستمر"]
     InitContFrac --> CalcNext["حساب الحد التالي a_i والمتقارب (p_i, q_i)"]
     CalcNext --> CheckEq["الشرط: تقييم p_i^2 - n * q_i^2 == 1"]
-    CheckEq --|"خطأ"| CalcNext
-    CheckEq --|"صحيح"| Found["تم العثور على الحل الأساسي (x_1, y_1) = (p_i, q_i)"] --> End
+    CheckEq -->|"خطأ"| CalcNext
+    CheckEq -->|"صحيح"| Found["تم العثور على الحل الأساسي (x_1, y_1) = (p_i, q_i)"] --> End
 ```
 
 ## 6. مثال محدد: فك الكسر المستمر والحل الأساسي لـ n = 7

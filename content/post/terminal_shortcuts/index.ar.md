@@ -272,18 +272,25 @@ z proj # القفز لحظياً إلى /home/user/workspace/projects/
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Normal["الوضع العادي"]
-    Normal --> Prefix["وضع البادئة (Ctrl+B)"]
-    Prefix --> Command["موجه الأوامر (:)"]
-    Prefix --> SplitV["تقسيم الجزء عموديًا (%)"]
-    Prefix --> SplitH["تقسيم الجزء أفقيًا (\)"]
-    Prefix --> Switch["تبديل النافذة (n/p/0-9)"]
-    Prefix --> Detach["فصل الجلسة (d)"]
+    state "الوضع العادي" as Normal
+    state "وضع البادئة (Ctrl+B)" as Prefix
+    state "موجه الأوامر (:)" as Command
+    state "تقسيم الجزء عموديًا (%)" as SplitV
+    state "تقسيم الجزء أفقيًا (\)" as SplitH
+    state "تبديل النافذة (n/p/0-9)" as Switch
+    state "فصل الجلسة (d)" as Detach
+    [*] --> Normal
+    Normal --> Prefix
+    Prefix --> Command
+    Prefix --> SplitV
+    Prefix --> SplitH
+    Prefix --> Switch
+    Prefix --> Detach
     
-    Command --> Normal["تنفيذ أمر tmux"]
-    SplitV --> Normal["العودة للوضع العادي"]
-    SplitH --> Normal["العودة للوضع العادي"]
-    Switch --> Normal["العودة للوضع العادي"]
+    Command --> Normal : تنفيذ أمر tmux
+    SplitV --> Normal : العودة للوضع العادي
+    SplitH --> Normal : العودة للوضع العادي
+    Switch --> Normal : العودة للوضع العادي
     Detach --> [*]
 ```
 

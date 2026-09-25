@@ -304,7 +304,7 @@ graph TD
     B -->|"② Retorna chave compartilhada X25519 + texto cifrado encapsulado Kyber"| A
     A --> C{"Derivação do Segredo Mestre (KDF)"}
     B --> C
-    C -->|"Entrada: (chave comum X25519)"|| (chave comum Kyber)| D["Chave de comunicação segura (AES-256 / ChaCha20)"]
+    C -->|"#quot;Entrada: (chave comum X25519)#quot;#124;#124; (chave comum Kyber)"| D["Chave de comunicação segura (AES-256 / ChaCha20)"]
     D -->|"Resistente às ameaças quânticas e às vulnerabilidades clássicas"| E["Comunicação segura por criptografia híbrida (TLS 1.3)"]
 ```
 

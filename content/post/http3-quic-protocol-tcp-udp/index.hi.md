@@ -39,13 +39,13 @@ HTTP/1.1 में, एक ही TCP कनेक्शन पर एक के
 HTTP/2 ने इस समस्या को **स्ट्रीम** के माध्यम से **मल्टीप्लेक्सिंग (Multiplexing)** से हल किया। इसने एक एकल TCP कनेक्शन के भीतर कई वर्चुअल स्ट्रीम बनाए, जिससे अनुरोधों और प्रतिक्रियाओं को छोटे फ्रेम में विभाजित करके एक साथ आदान-प्रदान किया जा सके।
 
 ```mermaid
-architecture-beta
-    group http2("HTTP/2 आर्किटेक्चर")
-    service tcp("TCP कनेक्शन") in http2
-    service s1("स्ट्रीम 1: HTML") in http2
-    service s2("स्ट्रीम 2: CSS") in http2
-    service s3("स्ट्रीम 3: JS") in http2
-    
+flowchart TB
+    subgraph http2 ["HTTP/2 आर्किटेक्चर"]
+        tcp["TCP कनेक्शन"]
+        s1["स्ट्रीम 1: HTML"]
+        s2["स्ट्रीम 2: CSS"]
+        s3["स्ट्रीम 3: JS"]
+    end
     s1 --> tcp
     s2 --> tcp
     s3 --> tcp

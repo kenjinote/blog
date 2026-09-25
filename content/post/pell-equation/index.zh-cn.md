@@ -75,12 +75,12 @@ $$ q_i = a_i q_{i-1} + q_{i-2} $$
 ```mermaid
 flowchart TD
     Start["开始: 输入整数 n"] --> CheckSquare["判断 n 是否为完全平方数"]
-    CheckSquare --|"Yes"| Trivial["仅存在平凡解 (结束)"] --> End["结束"]
-    CheckSquare --|"No"| InitContFrac["初始化连分数递推公式"]
+    CheckSquare -->|"Yes"| Trivial["仅存在平凡解 (结束)"] --> End["结束"]
+    CheckSquare -->|"No"| InitContFrac["初始化连分数递推公式"]
     InitContFrac --> CalcNext["计算下一个连分数项 a_i 和渐近分数 (p_i, q_i)"]
     CalcNext --> CheckEq["条件: 评估 p_i^2 - n * q_i^2 == 1"]
-    CheckEq --|"False"| CalcNext
-    CheckEq --|"True"| Found["找到基本解 (x_1, y_1) = (p_i, q_i)"] --> End
+    CheckEq -->|"False"| CalcNext
+    CheckEq -->|"True"| Found["找到基本解 (x_1, y_1) = (p_i, q_i)"] --> End
 ```
 
 ## 6. 具体例子：n = 7 时的连分数展开与基本解的推导

@@ -162,7 +162,7 @@ sequenceDiagram
     PeerB->>STUN: "Binding Request"
     STUN-->>PeerB: "Public IP & Port"
     PeerB->>PeerA: "透過傳遞訊號傳送 Candidate"
-    PeerA<-->>PeerB: "連線能力測試 (STUN Ping)"
+    PeerA<<-->>PeerB: "連線能力測試 (STUN Ping)"
     PeerA->>PeerB: "以最佳路徑完成 P2P 連線"
 ```
 

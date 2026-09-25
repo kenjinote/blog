@@ -290,7 +290,7 @@ flowchart TD
     Payment -->|"3. Événement de paiement réussi"| MessageBroker
     MessageBroker -->|"4. Notification d'événement"| Inventory["Service d'Inventaire"]
     
-    Inventory -- "En cas d'échec" -->|"Transaction de compensation"| Compensate["Événement d'échec de réservation de stock"]
+    Inventory -->|"En cas d'échec#quot; / #quot;Transaction de compensation"| Compensate["Événement d'échec de réservation de stock"]
     Compensate --> MessageBroker
     MessageBroker -->|"Annulation"| Order
 ```

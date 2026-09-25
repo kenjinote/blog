@@ -218,8 +218,8 @@ Grafik di bawah memperlihatkan estimasi VRAM (termasuk perhitungan penggunaan da
 
 ```mermaid
 xychart-beta
-    title Jumlah Parameter dan Kebutuhan VRAM (Asumsi Kuantisasi 4-bit)
-    x-axis "Nama Model" ["Phi-3 Mini (3.8B), Llama 3 (8B), Gemma 2 (9B), Mixtral (8x7B), Qwen 2.5 (32B), Llama 3 (70B)"]
+    title "Jumlah Parameter dan Kebutuhan VRAM (Asumsi Kuantisasi 4-bit)"
+    x-axis "Nama Model" ["Phi-3 Mini (3.8B)", "Llama 3 (8B)", "Gemma 2 (9B)", "Mixtral (8x7B)", "Qwen 2.5 (32B)", "Llama 3 (70B)"]
     y-axis "Kebutuhan VRAM (GB)" 0 --> 45
     bar [3.5, 6.0, 6.5, 26.0, 22.0, 40.0]
 ```

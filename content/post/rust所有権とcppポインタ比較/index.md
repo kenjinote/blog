@@ -125,8 +125,8 @@ sequenceDiagram
     participant S2 as "Variable s2"
     
     S1->>Heap: "Allocates & Owns"
-    Note over S1,S2: "let s2 = s1;"
-    S1--xHeap: "Loses Ownership (Invalidated)"
+    Note over S1,S2: "let s2 = s1#59;"
+    S1--x Heap: "Loses Ownership (Invalidated)"
     S2->>Heap: "Takes Ownership"
 ```
 
@@ -220,8 +220,8 @@ fn main() {
 ```mermaid
 graph LR
     A["Variable v (Owner)"] --> B["Heap Array [1, 2, 3]"]
-    C["Reference 'first' (&v[0"])"] -.->|"Immutable Borrow"| B
-    A -->|"X "Mutable Borrow Denied!""| D["v.push(4)"]
+    C["Reference 'first' (&v[0])"] -.->|"Immutable Borrow"| B
+    A -->|"X #quot;Mutable Borrow Denied!#quot;"| D["v.push(4)"]
     
     style C stroke:#00FF00,stroke-width:2px
     style D stroke:#FF0000,stroke-width:2px

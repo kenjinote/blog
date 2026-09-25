@@ -272,18 +272,25 @@ Diagram transisi status Mermaid berikut menunjukkan alur pengoperasian dasar dar
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Normal["Mode Normal"]
-    Normal --> Prefix["Mode Awalan (Ctrl+B)"]
-    Prefix --> Command["Prompt Perintah (:)"]
-    Prefix --> SplitV["Pisahkan Panel Vertikal (%)"]
-    Prefix --> SplitH["Pisahkan Panel Horizontal (\)"]
-    Prefix --> Switch["Ganti Jendela (n/p/0-9)"]
-    Prefix --> Detach["Lepaskan Sesi (d)"]
+    state "Mode Normal" as Normal
+    state "Mode Awalan (Ctrl+B)" as Prefix
+    state "Prompt Perintah (:)" as Command
+    state "Pisahkan Panel Vertikal (%)" as SplitV
+    state "Pisahkan Panel Horizontal (\)" as SplitH
+    state "Ganti Jendela (n/p/0-9)" as Switch
+    state "Lepaskan Sesi (d)" as Detach
+    [*] --> Normal
+    Normal --> Prefix
+    Prefix --> Command
+    Prefix --> SplitV
+    Prefix --> SplitH
+    Prefix --> Switch
+    Prefix --> Detach
     
-    Command --> Normal["Jalankan Perintah tmux"]
-    SplitV --> Normal["Kembali ke Mode Normal"]
-    SplitH --> Normal["Kembali ke Mode Normal"]
-    Switch --> Normal["Kembali ke Mode Normal"]
+    Command --> Normal : Jalankan Perintah tmux
+    SplitV --> Normal : Kembali ke Mode Normal
+    SplitH --> Normal : Kembali ke Mode Normal
+    Switch --> Normal : Kembali ke Mode Normal
     Detach --> [*]
 ```
 

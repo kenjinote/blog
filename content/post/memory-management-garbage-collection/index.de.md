@@ -43,19 +43,19 @@ Die Verwaltung des Heaps ist komplex und erfordert, dass der Programmierer oder 
 
 ```mermaid
 graph TD
-    "OS"["Betriebssystem"] --> "MMU"["Speicherverwaltungseinheit / MMU"]
-    "MMU" --> "VM"["Virtueller Adressraum des Prozesses"]
+    OS["Betriebssystem"] --> MMU["Speicherverwaltungseinheit / MMU"]
+    MMU --> VM["Virtueller Adressraum des Prozesses"]
     
     subgraph "Virtuelle Speicherabbildung"
-        "VM" --> "Text"["Textsegment (Read-Only)"]
-        "VM" --> "Data"["Daten- / BSS-Segment"]
-        "VM" --> "Heap"["Heapsegment ↓ Dynamisch erweitert"]
-        "VM" --> "Gap"["Nicht zugewiesener Raum"]
-        "VM" --> "Stack"["Stacksegment ↑ Dynamisch erweitert"]
+        VM --> Text["Textsegment (Read-Only)"]
+        VM --> Data["Daten- / BSS-Segment"]
+        VM --> Heap["Heapsegment ↓ Dynamisch erweitert"]
+        VM --> Gap["Nicht zugewiesener Raum"]
+        VM --> Stack["Stacksegment ↑ Dynamisch erweitert"]
     end
     
-    "Heap" -.->|"Verwaltung durch Allokator"| "Frag"["Auftreten interner / externer Fragmentierung"]
-    "Stack" -.->|"Übermäßige rekursive Aufrufe"| "Overflow"["Stack Overflow"]
+    Heap -.->|"Verwaltung durch Allokator"| Frag["Auftreten interner / externer Fragmentierung"]
+    Stack -.->|"Übermäßige rekursive Aufrufe"| Overflow["Stack Overflow"]
 ```
 
 ---
@@ -137,27 +137,27 @@ Der klassischste und grundlegendste Algorithmus ist "Mark-and-Sweep".
 ```mermaid
 graph TD
     subgraph "GC Roots"
-        "ThreadStack"["Thread-Stack"]
-        "StaticClass"["Statische Klassenvariablen"]
+        ThreadStack["Thread-Stack"]
+        StaticClass["Statische Klassenvariablen"]
     end
     
-    "ThreadStack" --> "ObjA"["Objekt A (Markiert)"]
-    "StaticClass" --> "ObjB"["Objekt B (Markiert)"]
+    ThreadStack --> ObjA["Objekt A (Markiert)"]
+    StaticClass --> ObjB["Objekt B (Markiert)"]
     
-    "ObjA" --> "ObjC"["Objekt C (Markiert)"]
-    "ObjB" --> "ObjD"["Objekt D (Markiert)"]
+    ObjA --> ObjC["Objekt C (Markiert)"]
+    ObjB --> ObjD["Objekt D (Markiert)"]
     
-    "ObjE"["Objekt E (Nicht erreichbar)"] --> "ObjF"["Objekt F (Nicht erreichbar)"]
+    ObjE["Objekt E (Nicht erreichbar)"] --> ObjF["Objekt F (Nicht erreichbar)"]
     
-    style "ObjA" fill:#9f9,stroke:#333
-    style "ObjB" fill:#9f9,stroke:#333
-    style "ObjC" fill:#9f9,stroke:#333
-    style "ObjD" fill:#9f9,stroke:#333
-    style "ObjE" fill:#f99,stroke:#333,stroke-dasharray: 5 5
-    style "ObjF" fill:#f99,stroke:#333,stroke-dasharray: 5 5
+    style ObjA fill:#9f9,stroke:#333
+    style ObjB fill:#9f9,stroke:#333
+    style ObjC fill:#9f9,stroke:#333
+    style ObjD fill:#9f9,stroke:#333
+    style ObjE fill:#f99,stroke:#333,stroke-dasharray: 5 5
+    style ObjF fill:#f99,stroke:#333,stroke-dasharray: 5 5
     
     classDef unreach fill:#f99,stroke:#333,stroke-dasharray: 5 5;
-    class "ObjE","ObjF" unreach;
+    class ObjE,ObjF unreach;
 ```
 
 Im obigen Diagramm werden die grünen Objekte als erreichbar markiert und geschützt. Andererseits wird für die als rote gestrichelte Linien dargestellte Objektmenge automatisch der Speicher in der Sweep-Phase zurückgewonnen, da sie von nirgendwoher referenziert wird.
@@ -270,17 +270,17 @@ fn main() {
 
 ```mermaid
 stateDiagram-v2
-    [*] --> "Unborrowed": "Deklaration der Variablen T"
+    [*] --> Unborrowed: "Deklaration der Variablen T"
     
-    "Unborrowed" --> "ImmutableBorrowed": "Erzeugung unveränderbarer Referenz (&T)"
-    "ImmutableBorrowed" --> "ImmutableBorrowed": "Weitere unveränderbare Referenz hinzufügen"
+    Unborrowed --> ImmutableBorrowed: "Erzeugung unveränderbarer Referenz (&T)"
+    ImmutableBorrowed --> ImmutableBorrowed: "Weitere unveränderbare Referenz hinzufügen"
     
-    "Unborrowed" --> "MutableBorrowed": "Erzeugung veränderbarer Referenz (&mut T)"
+    Unborrowed --> MutableBorrowed: "Erzeugung veränderbarer Referenz (&mut T)"
     
-    "ImmutableBorrowed" --> "Error": "Versuch, veränderbare Referenz zu erzeugen"
-    "MutableBorrowed" --> "Error": "Versuch, weitere Referenz (unveränderbar/veränderbar) zu erzeugen"
+    ImmutableBorrowed --> Error: "Versuch, veränderbare Referenz zu erzeugen"
+    MutableBorrowed --> Error: "Versuch, weitere Referenz (unveränderbar/veränderbar) zu erzeugen"
     
-    note right of "Error": "Kompilierfehler durch Borrow Checker!\nDadurch werden Datenkonflikte (Data Races) im Vorfeld verhindert."
+    note right of Error: "Kompilierfehler durch Borrow Checker!\nDadurch werden Datenkonflikte (Data Races) im Vorfeld verhindert."
 ```
 
 ---

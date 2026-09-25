@@ -40,7 +40,7 @@ graph TD
     PeerA <-->|"Troca dos Pedaços 1 e 2"| PeerB
     PeerB <-->|"Troca dos Pedaços 2 e 3"| PeerC
     PeerC <-->|"Troca dos Pedaços 3 e 1"| PeerA
-    Note over PeerA,PeerC: "Os usuários trocam peças que não possuem como um quebra-cabeça"
+    diagramNote["Os usuários trocam peças que não possuem como um quebra-cabeça"]
 ```
 
 Com esse mecanismo, o servidor original (Seed) não precisa mais enviar o arquivo completo para todos os participantes. Se ele passar cada pedaço para apenas uma pessoa, os participantes então os multiplicarão como se estivessem trocando peças de um quebra-cabeça. Ocorre o fenômeno mágico de que "**quanto mais participantes houver, mais rápida se tornará a velocidade de download de toda a rede**".

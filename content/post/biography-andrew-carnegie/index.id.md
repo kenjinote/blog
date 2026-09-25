@@ -41,17 +41,17 @@ Selain itu, kontribusinya sangat luas, termasuk pendirian institusi pendidikan y
 
 ```mermaid
 graph TD
-    A["Andrew Carnegie"] -->|1. Bangkit dari Kemiskinan| B["Pengalaman di Industri Kereta Api & Telegraf"]
-    B -->|2. Pandangan ke Depan| C["Pendirian Perusahaan Baja Carnegie"]
-    C -->|Integrasi Vertikal & Efisiensi| D["Akumulasi Kekayaan Besar (Raja Baja)"]
-    D -->|Penjualan Bisnis (1901)| E["Dedikasi pada Aktivitas Filantropi"]
+    A["Andrew Carnegie"] -->|"1. Bangkit dari Kemiskinan"| B["Pengalaman di Industri Kereta Api & Telegraf"]
+    B -->|"2. Pandangan ke Depan"| C["Pendirian Perusahaan Baja Carnegie"]
+    C -->|"Integrasi Vertikal & Efisiensi"| D["Akumulasi Kekayaan Besar (Raja Baja)"]
+    D -->|"Penjualan Bisnis (1901)"| E["Dedikasi pada Aktivitas Filantropi"]
     
-    A -->|Filosofi Unik| F["Esai 'Injil Kekayaan'"]
-    F -->|Kewajiban Moral| E
+    A -->|"Filosofi Unik"| F["Esai 'Injil Kekayaan'"]
+    F -->|"Kewajiban Moral"| E
     
-    E -->|Dukungan Pendidikan| G["Pendirian Lebih dari 2.500 Perpustakaan Umum"]
-    E -->|Dukungan Budaya| H["Pembangunan Carnegie Hall"]
-    E -->|Akademik & Perdamaian| I["Universitas Carnegie Mellon & Yayasan Perdamaian Internasional"]
+    E -->|"Dukungan Pendidikan"| G["Pendirian Lebih dari 2.500 Perpustakaan Umum"]
+    E -->|"Dukungan Budaya"| H["Pembangunan Carnegie Hall"]
+    E -->|"Akademik & Perdamaian"| I["Universitas Carnegie Mellon & Yayasan Perdamaian Internasional"]
 ```
 
 ## Signifikansi Carnegie di Era Modern

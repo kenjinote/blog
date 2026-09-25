@@ -55,8 +55,8 @@ graph TD
         A["Extraer una bola"] -->|"El número era '7'"| B{"¿Qué urna es?"}
         B -->|"Asumir probabilidades a priori iguales"| C["Hipótesis 1: Urna con 10 bolas"]
         B -->|"Asumir probabilidades a priori iguales"| D["Hipótesis 2: Urna con 1000 bolas"]
-        C -.->|"P("E|H1") = 1/10"| E["La Hipótesis 1 tiene mayor verosimilitud"]
-        D -.->|"P("E|H2") = 1/1000"| E
+        C -.->|"P(E#124;H1) = 1/10"| E["La Hipótesis 1 tiene mayor verosimilitud"]
+        D -.->|"P(E#124;H2) = 1/1000"| E
     end
 ```
 

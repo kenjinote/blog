@@ -257,9 +257,9 @@ classDiagram
         "class='bg-background text-primary'"
     }
 
-    GlobalCSSVariables <|-- SemanticVariables : ":root & .dark"
-    SemanticVariables <|-- TailwindConfig : "tailwind.config.js"
-    TailwindConfig <.. UIComponents : "تطبيق فئات المنفعة"
+    GlobalCSSVariables <|-- SemanticVariables : #58;root & .dark
+    SemanticVariables <|-- TailwindConfig : tailwind.config.js
+    TailwindConfig <.. UIComponents : تطبيق فئات المنفعة
 ```
 
 ### 4.2 التنفيذ باستخدام Raw SCSS/CSS (الاستفادة من Mixin)

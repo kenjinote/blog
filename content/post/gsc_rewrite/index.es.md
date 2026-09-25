@@ -38,8 +38,8 @@ El siguiente gráfico es una imagen que muestra la discrepancia entre el CTR esp
 
 ```mermaid
 xychart-beta
-    title CTR Esperado vs CTR Real por Posición
-    x-axis ["1, 2, 3, 4, 5, 6, 7, 8, 9, 10"]
+    title "CTR Esperado vs CTR Real por Posición"
+    x-axis ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
     y-axis "CTR (%)" 0 --> 35
     line [30.5, 15.2, 10.1, 7.5, 5.2, 4.1, 3.2, 2.5, 2.0, 1.5]
     bar [32.1, 14.0, 8.5, 4.0, 5.0, 2.1, 1.5, 1.0, 1.2, 0.5]

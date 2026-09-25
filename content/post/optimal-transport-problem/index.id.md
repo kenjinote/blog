@@ -28,7 +28,7 @@ Biaya biasanya direpresentasikan sebagai produk dari "jumlah pasir yang dipindah
 ```mermaid
 flowchart LR
     A["Tumpukan Pasir (Pasokan)"] -->|"Transportasi"| B["Lubang (Permintaan)"]
-    C["Lokasi x"] -->|"Jarak d("x, y")"| D["Lokasi y"]
+    C["Lokasi x"] -->|"Jarak d(x, y)"| D["Lokasi y"]
 ```
 
 Dinyatakan secara matematis, misalkan distribusi tumpukan pasir asli adalah ukuran probabilitas $\mu$ pada $X$, dan distribusi lubang adalah ukuran probabilitas $\nu$ pada $Y$.

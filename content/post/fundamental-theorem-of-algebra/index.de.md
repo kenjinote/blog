@@ -71,11 +71,11 @@ Der Moment, in dem die Kurve durch den Ursprung verläuft, bedeutet genau, dass 
 ```mermaid
 flowchart TD
     %% Übersicht über die Kurvenabbildung
-    A["Großer Kreis mit Radius R, zentriert im Ursprung"] -->|"Abbildung durch das Polynom P("z")"| B["Geschlossene Kurve in der komplexen Ebene"]
+    A["Großer Kreis mit Radius R, zentriert im Ursprung"] -->|"Abbildung durch das Polynom P(z)"| B["Geschlossene Kurve in der komplexen Ebene"]
     B -->|"Wenn R groß genug ist"| C["Kurve, die sich n-mal um den Ursprung windet"]
     C -->|"Kontinuierliches Schrumpfen von R auf 0"| D["Kurve schrumpft ebenfalls kontinuierlich in Richtung des Ursprungs"]
     D -->|"Topologische Kontinuität"| E["Muss auf dem Weg durch den Ursprung verlaufen"]
-    E -->|"P("z") = 0"| F["Die Existenz einer Wurzel ist bewiesen"]
+    E -->|"P(z) = 0"| F["Die Existenz einer Wurzel ist bewiesen"]
 ```
 
 ## Vorbereitung aus der Komplexen Analysis: Satz von [Liouville](https://kenji.blog/de/p/liouville/)

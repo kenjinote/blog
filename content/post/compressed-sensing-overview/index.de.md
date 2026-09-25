@@ -225,8 +225,8 @@ print(f"Wiederherstellungsfehler (L2 norm): {error:.6e}")
 
 ```mermaid
 flowchart LR
-    X["Unbekanntes sparse Signal\nx (N-dimensional)"] -->|Zufällige Beobachtungs-\nmatrix A| Y["Beobachtungsdaten\ny (M-dimensional, M < N)"]
-    Y -->|L1-Optimierung\n(Konvexer Optimierungsalgorithmus)| X_hat["Wiederhergestelltes Signal\nx^"]
+    X["Unbekanntes sparse Signal\nx (N-dimensional)"] -->|"Zufällige Beobachtungs-\nmatrix A"| Y["Beobachtungsdaten\ny (M-dimensional, M < N)"]
+    Y -->|"L1-Optimierung\n(Konvexer Optimierungsalgorithmus)"| X_hat["Wiederhergestelltes Signal\nx^"]
     X -. "Exakte Übereinstimmung garantiert" .-> X_hat
 ```
 

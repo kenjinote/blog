@@ -41,17 +41,17 @@ Además, sus contribuciones fueron muy diversas e incluyeron la fundación de la
 
 ```mermaid
 graph TD
-    A["Andrew Carnegie"] -->|1. Ascenso desde la pobreza| B["Experiência en la industria del ferrocarril y el telégrafo"]
-    B -->|2. Visión de futuro| C["Fundación de la Carnegie Steel Company"]
-    C -->|Integración vertical y eficiencia| D["Acumulación de inmensa riqueza (Rey del Acero)"]
-    D -->|Venta del negocio (1901)| E["Dedicación a la filantropía"]
+    A["Andrew Carnegie"] -->|"1. Ascenso desde la pobreza"| B["Experiência en la industria del ferrocarril y el telégrafo"]
+    B -->|"2. Visión de futuro"| C["Fundación de la Carnegie Steel Company"]
+    C -->|"Integración vertical y eficiencia"| D["Acumulación de inmensa riqueza (Rey del Acero)"]
+    D -->|"Venta del negocio (1901)"| E["Dedicación a la filantropía"]
     
-    A -->|Filosofía propia| F["Ensayo El Evangelio de la Riqueza"]
-    F -->|Obligación moral| E
+    A -->|"Filosofía propia"| F["Ensayo El Evangelio de la Riqueza"]
+    F -->|"Obligación moral"| E
     
-    E -->|Apoyo educativo| G["Fundación de más de 2500 bibliotecas públicas"]
-    E -->|Apoyo cultural| H["Construcción del Carnegie Hall"]
-    E -->|Académico y paz| I["Universidad Carnegie Mellon y Fondo para la Paz Internacional"]
+    E -->|"Apoyo educativo"| G["Fundación de más de 2500 bibliotecas públicas"]
+    E -->|"Apoyo cultural"| H["Construcción del Carnegie Hall"]
+    E -->|"Académico y paz"| I["Universidad Carnegie Mellon y Fondo para la Paz Internacional"]
 ```
 
 ## El significado de Carnegie en la actualidad

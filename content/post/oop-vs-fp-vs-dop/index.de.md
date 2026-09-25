@@ -64,25 +64,25 @@ Ein berühmtes Zitat von Joe Armstrong (dem Erfinder von Erlang) lautet:
 
 ```mermaid
 classDiagram
-    class "Spielobjekt" {
+    class Spielobjekt {
         +Transformation transformation
         +aktualisieren()
     }
-    class "Charakter" {
+    class Charakter {
         +Gesundheit gesundheit
         +bewegen()
     }
-    class "Spieler" {
+    class Spieler {
         +Inventar inventar
         +eingabeVerarbeiten()
     }
-    class "Feind" {
+    class Feind {
         +KIController ki
         +angreifen()
     }
-    "Spielobjekt" <|-- "Charakter"
-    "Charakter" <|-- "Spieler"
-    "Charakter" <|-- "Feind"
+    Spielobjekt <|-- Charakter
+    Charakter <|-- Spieler
+    Charakter <|-- Feind
 ```
 
 Ein tiefer Vererbungsbaum verkompliziert die Code-Abhängigkeiten und macht es extrem schwierig, nur bestimmte Funktionen zu isolieren und wiederzuverwenden. Da zudem mehrere Objekte gegenseitig aufeinander verweisen und gegenseitig Zustände ändern, nimmt die Vorhersagbarkeit des gesamten Systems drastisch ab.

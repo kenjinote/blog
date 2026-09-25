@@ -140,20 +140,20 @@ gantt
 
     section "Normales Skript"
     "HTML-Analyse"         :active, a1, 0, 2s
-    "JS-Download"          :crit, a2, 2s, 4s
-    "JS-Ausführung"        :crit, a3, 4s, 6s
-    "HTML-Analyse fortsetzen" :active, a4, 6s, 8s
+    "JS-Download"          :crit, a2, 2, 4s
+    "JS-Ausführung"        :crit, a3, 4, 6s
+    "HTML-Analyse fortsetzen" :active, a4, 6, 8s
 
     section "async-Attribut"
     "HTML-Analyse"         :active, b1, 0, 5s
-    "JS-Download"          :crit, b2, 2s, 4s
-    "JS-Ausführung"        :crit, b3, 5s, 7s
-    "HTML-Analyse fortsetzen" :active, b4, 7s, 9s
+    "JS-Download"          :crit, b2, 2, 4s
+    "JS-Ausführung"        :crit, b3, 5, 7s
+    "HTML-Analyse fortsetzen" :active, b4, 7, 9s
 
     section "defer-Attribut"
     "HTML-Analyse"         :active, c1, 0, 6s
-    "JS-Download"          :crit, c2, 1s, 4s
-    "JS-Ausführung"        :crit, c3, 6s, 8s
+    "JS-Download"          :crit, c2, 1, 4s
+    "JS-Ausführung"        :crit, c3, 6, 8s
 ```
 *(※Da das tatsächliche `async` unmittelbar nach Abschluss des Downloads ausgeführt wird, unterbricht es das Parsen.)*
 

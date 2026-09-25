@@ -28,11 +28,11 @@ Une structure en arbre se compose des éléments suivants :
 
 ```mermaid
 graph TD
-  "Racine" --> "NoeudA"
-  "Racine" --> "NoeudB"
-  "NoeudA" --> "Feuille1"
-  "NoeudA" --> "Feuille2"
-  "NoeudB" --> "Feuille3"
+  Racine --> NoeudA
+  Racine --> NoeudB
+  NoeudA --> Feuille1
+  NoeudA --> Feuille2
+  NoeudB --> Feuille3
 ```
 
 Comme base de l'exploration dans une structure en arbre, il y a la recherche en profondeur (DFS) et la recherche en largeur (BFS).
@@ -98,12 +98,12 @@ Il existe les types de graphes suivants :
 
 ```mermaid
 graph LR
-  "A" -- "5" --> "B"
-  "A" -- "2" --> "C"
-  "B" -- "1" --> "D"
-  "C" -- "8" --> "D"
-  "C" -- "4" --> "E"
-  "D" -- "3" --> "E"
+  A -- "5" --> B
+  A -- "2" --> C
+  B -- "1" --> D
+  C -- "8" --> D
+  C -- "4" --> E
+  D -- "3" --> E
 ```
 
 ## 5. Algorithme de Dijkstra (Dijkstra's Algorithm)

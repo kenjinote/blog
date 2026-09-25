@@ -140,20 +140,20 @@ gantt
 
     section "Обычный скрипт"
     "Анализ HTML"       :active, a1, 0, 2s
-    "Загрузка JS" :crit, a2, 2s, 4s
-    "Выполнение JS"         :crit, a3, 4s, 6s
-    "Возобновление анализа HTML"   :active, a4, 6s, 8s
+    "Загрузка JS" :crit, a2, 2, 4s
+    "Выполнение JS"         :crit, a3, 4, 6s
+    "Возобновление анализа HTML"   :active, a4, 6, 8s
 
     section "Атрибут async"
     "Анализ HTML"       :active, b1, 0, 5s
-    "Загрузка JS" :crit, b2, 2s, 4s
-    "Выполнение JS"         :crit, b3, 5s, 7s
-    "Возобновление анализа HTML"   :active, b4, 7s, 9s
+    "Загрузка JS" :crit, b2, 2, 4s
+    "Выполнение JS"         :crit, b3, 5, 7s
+    "Возобновление анализа HTML"   :active, b4, 7, 9s
 
     section "Атрибут defer"
     "Анализ HTML"       :active, c1, 0, 6s
-    "Загрузка JS" :crit, c2, 1s, 4s
-    "Выполнение JS"         :crit, c3, 6s, 8s
+    "Загрузка JS" :crit, c2, 1, 4s
+    "Выполнение JS"         :crit, c3, 6, 8s
 ```
 *(※Фактический `async` выполняется сразу после завершения загрузки, поэтому он прерывает парсинг.)*
 

@@ -257,9 +257,9 @@ classDiagram
         "class='bg-background text-primary'"
     }
 
-    GlobalCSSVariables <|-- SemanticVariables : ":root & .dark"
-    SemanticVariables <|-- TailwindConfig : "tailwind.config.js"
-    TailwindConfig <.. UIComponents : "套用工具類別"
+    GlobalCSSVariables <|-- SemanticVariables : #58;root & .dark
+    SemanticVariables <|-- TailwindConfig : tailwind.config.js
+    TailwindConfig <.. UIComponents : 套用工具類別
 ```
 
 ### 4.2 原生 SCSS/CSS 的實作（活用 Mixin）

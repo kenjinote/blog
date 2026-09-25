@@ -129,14 +129,18 @@ Das folgende Mermaid-Diagramm veranschaulicht die [Zustand](https://kenji.blog/d
 
 ```mermaid
 stateDiagram-v2
+    state "Wird installiert" as repairedState1
+    state "Installiert (Wartend)" as repairedState2
+    state "Überflüssig" as repairedState3
+    state "Wird aktiviert" as repairedState4
     direction TB
-    "Geparst" --> "Wird installiert" : "Registrierung"
-    "Wird installiert" --> "Installiert (Wartend)" : "Erfolg"
-    "Wird installiert" --> "Überflüssig" : "Fehler"
-    "Installiert (Wartend)" --> "Wird aktiviert" : "Alle Clients geschlossen / skipWaiting()"
-    "Wird aktiviert" --> "Aktiviert" : "Erfolg"
-    "Wird aktiviert" --> "Überflüssig" : "Fehler"
-    "Aktiviert" --> "Überflüssig" : "Durch neuen SW ersetzt"
+    Geparst --> repairedState1 : "Registrierung"
+    repairedState1 --> repairedState2 : "Erfolg"
+    repairedState1 --> repairedState3 : "Fehler"
+    repairedState2 --> repairedState4 : "Alle Clients geschlossen / skipWaiting()"
+    repairedState4 --> Aktiviert : "Erfolg"
+    repairedState4 --> repairedState3 : "Fehler"
+    Aktiviert --> repairedState3 : "Durch neuen SW ersetzt"
 ```
 
 1. **Geparst (Parsed)**: Der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/), in dem der Browser das Service-Worker-Skript heruntergeladen und das Parsing abgeschlossen hat.
@@ -180,14 +184,15 @@ Dies ist die grundlegendste und schnellste Strategie. Sie prüft zuerst den Cach
 
 ```mermaid
 flowchart TD
-    "Seite" -->|"1. Anfrage"| "Service Worker"
-    "Service Worker" -->|"2. Cache prüfen"| "Cache"
-    "Cache" -->|"3a. Cache-Treffer"| "Service Worker"
-    "Service Worker" -->|"4a. Antwort"| "Seite"
-    "Cache" -->|"3b. Cache-Fehler"| "Netzwerk"
-    "Netzwerk" -->|"4b. Antwort"| "Service Worker"
-    "Service Worker" -->|"5b. Im Cache speichern"| "Cache"
-    "Service Worker" -->|"6b. Antwort"| "Seite"
+    repairedNode1["Service Worker"]
+    Seite -->|"1. Anfrage"| repairedNode1
+    repairedNode1 -->|"2. Cache prüfen"| Cache
+    Cache -->|"3a. Cache-Treffer"| repairedNode1
+    repairedNode1 -->|"4a. Antwort"| Seite
+    Cache -->|"3b. Cache-Fehler"| Netzwerk
+    Netzwerk -->|"4b. Antwort"| repairedNode1
+    repairedNode1 -->|"5b. Im Cache speichern"| Cache
+    repairedNode1 -->|"6b. Antwort"| Seite
 ```
 
 ### 6.2. Network First (Netzwerk-zuerst)
@@ -196,15 +201,16 @@ Eine Strategie, die das Abrufen der neuesten Daten priorisiert. Sie sendet zuers
 
 ```mermaid
 flowchart TD
-    "Seite" -->|"1. Anfrage"| "Service Worker"
-    "Service Worker" -->|"2. Abrufen"| "Netzwerk"
-    "Netzwerk" -->|"3a. Erfolg"| "Service Worker"
-    "Service Worker" -->|"4a. Im Cache speichern"| "Cache"
-    "Service Worker" -->|"5a. Antwort"| "Seite"
-    "Netzwerk" -->|"3b. Fehler / Offline"| "Service Worker"
-    "Service Worker" -->|"4b. Cache prüfen"| "Cache"
-    "Cache" -->|"5b. Cache-Treffer"| "Service Worker"
-    "Service Worker" -->|"6b. Fallback-Antwort"| "Seite"
+    repairedNode1["Service Worker"]
+    Seite -->|"1. Anfrage"| repairedNode1
+    repairedNode1 -->|"2. Abrufen"| Netzwerk
+    Netzwerk -->|"3a. Erfolg"| repairedNode1
+    repairedNode1 -->|"4a. Im Cache speichern"| Cache
+    repairedNode1 -->|"5a. Antwort"| Seite
+    Netzwerk -->|"3b. Fehler / Offline"| repairedNode1
+    repairedNode1 -->|"4b. Cache prüfen"| Cache
+    Cache -->|"5b. Cache-Treffer"| repairedNode1
+    repairedNode1 -->|"6b. Fallback-Antwort"| Seite
 ```
 
 ### 6.3. Stale-while-revalidate (Veralteten Cache zurückgeben und im Hintergrund aktualisieren)
@@ -214,13 +220,14 @@ Wenn eine Anfrage auftritt, gibt sie sofort den zwischengespeicherten (alten/ver
 
 ```mermaid
 flowchart TD
-    "Seite" -->|"1. Anfrage"| "Service Worker"
-    "Service Worker" -->|"2. Cache prüfen"| "Cache"
-    "Cache" -->|"3. Cache-Treffer (Schnelle Antwort)"| "Service Worker"
-    "Service Worker" -->|"4. Veraltete Antwort zurückgeben"| "Seite"
-    "Service Worker" -.->|"5. Abrufen (Hintergrund)"| "Netzwerk"
-    "Netzwerk" -.->|"6. Netzwerk-Antwort"| "Service Worker"
-    "Service Worker" -.->|"7. Cache aktualisieren"| "Cache"
+    repairedNode1["Service Worker"]
+    Seite -->|"1. Anfrage"| repairedNode1
+    repairedNode1 -->|"2. Cache prüfen"| Cache
+    Cache -->|"3. Cache-Treffer (Schnelle Antwort)"| repairedNode1
+    repairedNode1 -->|"4. Veraltete Antwort zurückgeben"| Seite
+    repairedNode1 -.->|"5. Abrufen (Hintergrund)"| Netzwerk
+    Netzwerk -.->|"6. Netzwerk-Antwort"| repairedNode1
+    repairedNode1 -.->|"7. Cache aktualisieren"| Cache
 ```
 
 ### 6.4. Cache Only / Network Only

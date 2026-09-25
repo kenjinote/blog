@@ -28,11 +28,11 @@ tags: ["algorithms", "graph", "tree", "dfs", "bfs", "dijkstra"]
 
 ```mermaid
 graph TD
-  "Root" --> "NodeA"
-  "Root" --> "NodeB"
-  "NodeA" --> "Leaf1"
-  "NodeA" --> "Leaf2"
-  "NodeB" --> "Leaf3"
+  Root --> NodeA
+  Root --> NodeB
+  NodeA --> Leaf1
+  NodeA --> Leaf2
+  NodeB --> Leaf3
 ```
 
 作为树形结构中搜索的基础，主要有深度优先搜索（DFS）和广度优先搜索（BFS）。
@@ -98,12 +98,12 @@ bfs_tree(root)
 
 ```mermaid
 graph LR
-  "A" -- "5" --> "B"
-  "A" -- "2" --> "C"
-  "B" -- "1" --> "D"
-  "C" -- "8" --> "D"
-  "C" -- "4" --> "E"
-  "D" -- "3" --> "E"
+  A -- "5" --> B
+  A -- "2" --> C
+  B -- "1" --> D
+  C -- "8" --> D
+  C -- "4" --> E
+  D -- "3" --> E
 ```
 
 ## 5. Dijkstra算法（Dijkstra's Algorithm）

@@ -1,3 +1,4 @@
 <div class="mermaid" align="{{ if .Get "align" }}{{ .Get "align" }}{{ else }}center{{ end }}">
-    {{ safeHTML .Inner }}
+    {{ .Inner | htmlEscape | safeHTML }}
 </div>
+{{ .Page.Store.Set "hasMermaid" true }}

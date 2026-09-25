@@ -55,8 +55,8 @@ graph TD
         A["Extrai-se 1 bola"] -->|"O número era '7'"| B{"Qual é a urna?"}
         B -->|"Probabilidades a priori são iguais"| C["Hipótese 1: Urna c/ 10 bolas"]
         B -->|"Probabilidades a priori são iguais"| D["Hipótese 2: Urna c/ 1000 bolas"]
-        C -.->|"P("E|H1") = 1/10"| E["A verosimilhança da Hipótese 1 é maior"]
-        D -.->|"P("E|H2") = 1/1000"| E
+        C -.->|"P(E#124;H1) = 1/10"| E["A verosimilhança da Hipótese 1 é maior"]
+        D -.->|"P(E#124;H2) = 1/1000"| E
     end
 ```
 

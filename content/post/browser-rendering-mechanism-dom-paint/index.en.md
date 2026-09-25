@@ -140,20 +140,20 @@ gantt
 
     section Normal Script
     HTML Analysis       :active, a1, 0, 2s
-    JS Download :crit, a2, 2s, 4s
-    JS Execution         :crit, a3, 4s, 6s
-    HTML Analysis Resume   :active, a4, 6s, 8s
+    JS Download :crit, a2, 2, 4s
+    JS Execution         :crit, a3, 4, 6s
+    HTML Analysis Resume   :active, a4, 6, 8s
 
     section async Attribute
     HTML Analysis       :active, b1, 0, 5s
-    JS Download :crit, b2, 2s, 4s
-    JS Execution         :crit, b3, 5s, 7s
-    HTML Analysis Resume   :active, b4, 7s, 9s
+    JS Download :crit, b2, 2, 4s
+    JS Execution         :crit, b3, 5, 7s
+    HTML Analysis Resume   :active, b4, 7, 9s
 
     section defer Attribute
     HTML Analysis       :active, c1, 0, 6s
-    JS Download :crit, c2, 1s, 4s
-    JS Execution         :crit, c3, 6s, 8s
+    JS Download :crit, c2, 1, 4s
+    JS Execution         :crit, c3, 6, 8s
 ```
 *(※ The actual `async` executes immediately after download completes, so it interrupts parsing.)*
 

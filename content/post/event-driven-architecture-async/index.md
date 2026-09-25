@@ -248,14 +248,14 @@ CQRSでは、システムを「状態を変更するコマンドモデル」と�
 
 ```mermaid
 flowchart TD
-    Client -->|Command (Write)| CommandAPI["Command Service"]
-    Client -->|Query (Read)| QueryAPI["Query Service"]
+    Client -->|"Command (Write)"| CommandAPI["Command Service"]
+    Client -->|"Query (Read)"| QueryAPI["Query Service"]
     
-    CommandAPI -->|Update| WriteDB["(Write DB)"]
-    WriteDB -->|Domain Events| EventBus(("Event Bus"))
-    EventBus -->|Consume & Project| ProjectionWorker["Projection Worker"]
-    ProjectionWorker -->|Update| ReadDB["(Read DB)"]
-    ReadDB -->|Fetch| QueryAPI
+    CommandAPI -->|"Update"| WriteDB["(Write DB)"]
+    WriteDB -->|"Domain Events"| EventBus(("Event Bus"))
+    EventBus -->|"Consume & Project"| ProjectionWorker["Projection Worker"]
+    ProjectionWorker -->|"Update"| ReadDB["(Read DB)"]
+    ReadDB -->|"Fetch"| QueryAPI
 ```
 
 ### 5.2 イベントソーシング（Event Sourcing）との組み合わせ

@@ -67,8 +67,8 @@ El siguiente gráfico ilustra visualmente esta divergencia:
 
 ```mermaid
 xychart-beta
-    title Divergencia de productividad a lo largo del tiempo (El efecto Mateo)
-    x-axis ["Año 1, Año 2, Año 3, Año 4, Año 5, Año 6"]
+    title "Divergencia de productividad a lo largo del tiempo (El efecto Mateo)"
+    x-axis ["Año 1", "Año 2", "Año 3", "Año 4", "Año 5", "Año 6"]
     y-axis "Volumen de producción" 0 --> 200
     line [10, 15, 30, 60, 110, 180]
     line [10, 12, 14, 16, 18, 20]

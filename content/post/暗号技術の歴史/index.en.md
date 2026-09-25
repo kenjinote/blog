@@ -127,7 +127,7 @@ graph TD
     subgraph "One Round of AES Processing (SPN Structure)"
         A["Input State (128-bit)"] --> B("SubBytes (Byte Substitution / S-Box)")
         B --> C("ShiftRows (Row Shift)")
-        C --> D("MixColumns (Column Mix / Multiplication over GF("2^8"))")
+        C --> D("MixColumns (Column Mix / Multiplication over GF(2^8))")
         D --> E("AddRoundKey (XOR with Round Key)")
         E --> F["To Next Round"]
     end

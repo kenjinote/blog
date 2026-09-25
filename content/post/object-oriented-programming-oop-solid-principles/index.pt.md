@@ -117,22 +117,22 @@ Em algumas linguagens como C++, a **herança múltipla** a partir de várias cla
 
 ```mermaid
 classDiagram
-    class "Animal" {
+    class Animal {
         +comer()
     }
-    class "Mamifero" {
+    class Mamifero {
         +comer()
     }
-    class "AnimalAlado" {
+    class AnimalAlado {
         +comer()
     }
-    class "Morcego" {
+    class Morcego {
     }
     
-    "Animal" <|-- "Mamifero"
-    "Animal" <|-- "AnimalAlado"
-    "Mamifero" <|-- "Morcego"
-    "AnimalAlado" <|-- "Morcego"
+    Animal <|-- Mamifero
+    Animal <|-- AnimalAlado
+    Mamifero <|-- Morcego
+    AnimalAlado <|-- Morcego
 ```
 
 Quando Morcego (Bat) chama o método `comer()`, surge o problema de ambiguidade sobre se deve chamar a implementação de Mamifero (Mammal) ou AnimalAlado (WingedAnimal). Em [Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/) e C#, a herança múltipla de classes é proibida, evitando este problema usando **interfaces**.
@@ -240,23 +240,23 @@ O exemplo de cálculo de área da forma (Shape) mencionado anteriormente ilustra
 
 ```mermaid
 classDiagram
-    class "Shape" {
+    class Shape {
         <<interface>>
         +calcularArea() double
     }
-    class "Circle" {
+    class Circle {
         +calcularArea() double
     }
-    class "Rectangle" {
+    class Rectangle {
         +calcularArea() double
     }
-    class "Triangle" {
+    class Triangle {
         +calcularArea() double
     }
     
-    "Shape" <|.. "Circle"
-    "Shape" <|.. "Rectangle"
-    "Shape" <|.. "Triangle"
+    Shape <|.. Circle
+    Shape <|.. Rectangle
+    Shape <|.. Triangle
 ```
 
 ### 3.3 Princípio da Substituição de Liskov (Liskov Substitution Principle: LSP)

@@ -64,25 +64,25 @@ Une citation célèbre de Joe Armstrong (le créateur d'Erlang) dit ce qui suit.
 
 ```mermaid
 classDiagram
-    class "GameObject" {
+    class GameObject {
         +Transform transform
         +update()
     }
-    class "Character" {
+    class Character {
         +Health health
         +move()
     }
-    class "Player" {
+    class Player {
         +Inventory inventory
         +handleInput()
     }
-    class "Enemy" {
+    class Enemy {
         +AIController ai
         +attack()
     }
-    "GameObject" <|-- "Character"
-    "Character" <|-- "Player"
-    "Character" <|-- "Enemy"
+    GameObject <|-- Character
+    Character <|-- Player
+    Character <|-- Enemy
 ```
 
 Les arbres d'héritage profonds compliquent les dépendances du code et rendent extrêmement difficile l'extraction et la réutilisation de fonctionnalités spécifiques seules. De plus, avec plusieurs objets se référençant et modifiant leurs états mutuellement, la prévisibilité globale du système diminue considérablement.
@@ -165,19 +165,19 @@ fn update_positions(positions: &mut [Position], velocities: &[Velocity], dt: f32
 ```mermaid
 graph TD
     subgraph "Data (Components)"
-        "P"["Positions Array"]
-        "V"["Velocities Array"]
-        "H"["Healths Array"]
+        P["Positions Array"]
+        V["Velocities Array"]
+        H["Healths Array"]
     end
 
     subgraph "Logic (Systems)"
-        "PhysicsSystem"["PhysicsSystem"]
-        "DamageSystem"["DamageSystem"]
+        PhysicsSystem["PhysicsSystem"]
+        DamageSystem["DamageSystem"]
     end
 
-    "PhysicsSystem" -->|"Reads"| "V"
-    "PhysicsSystem" -->|"Mutates"| "P"
-    "DamageSystem" -->|"Mutates"| "H"
+    PhysicsSystem -->|"Reads"| V
+    PhysicsSystem -->|"Mutates"| P
+    DamageSystem -->|"Mutates"| H
 ```
 
 ### 3.2 Limites de la POD : Difficulté d'application à la logique métier

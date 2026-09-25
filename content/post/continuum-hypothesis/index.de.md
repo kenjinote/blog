@@ -86,7 +86,7 @@ Cohen entwickelte eine Technik, um ein Modell, das ZFC erfüllt, zu erweitern, i
 graph TD
     M["Grundmodell (ZFC)"]
     G["Generischer Filter"]
-    MG["Generische Erweiterung M[G"]"]
+    MG["Generische Erweiterung M[G]"]
     M -->|"Forcing"| MG
     G -->|"hinzugefügt zu"| MG
     MG -->|"erfüllt"| NOT_CH["Nicht CH"]

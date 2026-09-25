@@ -133,7 +133,7 @@ flowchart LR
     C -->|"رسالة"| D("صندوق البريد")
     D --> A
     
-    subgraph "Actor System["نظام الفاعل"]"
+    subgraph "Actor System / نظام الفاعل"
         A
         C
     end

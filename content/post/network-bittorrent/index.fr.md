@@ -40,7 +40,7 @@ graph TD
     PeerA <-->|"Échange des pièces 1 et 2"| PeerB
     PeerB <-->|"Échange des pièces 2 et 3"| PeerC
     PeerC <-->|"Échange des pièces 3 et 1"| PeerA
-    Note over PeerA,PeerC: Les utilisateurs s'échangent les pièces manquantes comme un puzzle
+    diagramNote["Les utilisateurs s'échangent les pièces manquantes comme un puzzle"]
 ```
 
 Grâce à ce mécanisme, le serveur d'origine (Seed) n'a plus besoin de transmettre l'intégralité du fichier à tous les participants. Tant qu'il transmet chaque pièce à au moins une personne, les participants la multiplieront en s'échangeant des pièces de puzzle. Un phénomène magique se produit alors : **« plus il y a de participants, plus la vitesse de téléchargement globale du réseau est rapide »**.

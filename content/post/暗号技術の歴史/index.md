@@ -127,7 +127,7 @@ graph TD
     subgraph "AESの1ラウンドの処理 (SPN構造)"
         A["入力状態 (128-bit)"] --> B("SubBytes (バイト代換 / S-Box)")
         B --> C("ShiftRows (行シフト)")
-        C --> D("MixColumns (列ミックス / GF("2^8")上の乗算)")
+        C --> D("MixColumns (列ミックス / GF(2^8)上の乗算)")
         D --> E("AddRoundKey (ラウンド鍵とのXOR)")
         E --> F["次のラウンドへ"]
     end

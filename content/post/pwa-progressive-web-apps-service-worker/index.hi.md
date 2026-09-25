@@ -129,14 +129,20 @@ Service Worker का पेज से स्वतंत्र अपना ज
 
 ```mermaid
 stateDiagram-v2
+    state "पार्स किया गया (Parsed)" as repairedState1
+    state "स्थापित हो रहा है (Installing)" as repairedState2
+    state "स्थापित (प्रतीक्षारत) (Installed (Waiting))" as repairedState3
+    state "अनावश्यक (Redundant)" as repairedState4
+    state "सक्रिय हो रहा है (Activating)" as repairedState5
+    state "सक्रिय (Activated)" as repairedState6
     direction TB
-    "पार्स किया गया (Parsed)" --> "स्थापित हो रहा है (Installing)" : "पंजीकरण (Registration)"
-    "स्थापित हो रहा है (Installing)" --> "स्थापित (प्रतीक्षारत) (Installed (Waiting))" : "सफलता (Success)"
-    "स्थापित हो रहा है (Installing)" --> "अनावश्यक (Redundant)" : "त्रुटि (Error)"
-    "स्थापित (प्रतीक्षारत) (Installed (Waiting))" --> "सक्रिय हो रहा है (Activating)" : "सभी क्लाइंट बंद / skipWaiting()"
-    "सक्रिय हो रहा है (Activating)" --> "सक्रिय (Activated)" : "सफलता (Success)"
-    "सक्रिय हो रहा है (Activating)" --> "अनावश्यक (Redundant)" : "त्रुटि (Error)"
-    "सक्रिय (Activated)" --> "अनावश्यक (Redundant)" : "नए SW द्वारा प्रतिस्थापित (Replaced by new SW)"
+    repairedState1 --> repairedState2 : "पंजीकरण (Registration)"
+    repairedState2 --> repairedState3 : "सफलता (Success)"
+    repairedState2 --> repairedState4 : "त्रुटि (Error)"
+    repairedState3 --> repairedState5 : "सभी क्लाइंट बंद / skipWaiting()"
+    repairedState5 --> repairedState6 : "सफलता (Success)"
+    repairedState5 --> repairedState4 : "त्रुटि (Error)"
+    repairedState6 --> repairedState4 : "नए SW द्वारा प्रतिस्थापित (Replaced by new SW)"
 ```
 
 1. **पार्स किया गया (Parsed)** : वह स्थिति जब ब्राउज़र Service Worker स्क्रिप्ट डाउनलोड कर लेता है और पार्सिंग (विश्लेषण) समाप्त कर लेता है।
@@ -180,14 +186,18 @@ Service Worker का सबसे अच्छा हिस्सा यह ह
 
 ```mermaid
 flowchart TD
-    "पृष्ठ (Page)" -->|"1. अनुरोध (Request)"| "सर्विस वर्कर (Service Worker)"
-    "सर्विस वर्कर (Service Worker)" -->|"2. कैश जांचें (Check Cache)"| "कैश (Cache)"
-    "कैश (Cache)" -->|"3a. कैश हिट (Cache Hit)"| "सर्विस वर्कर (Service Worker)"
-    "सर्विस वर्कर (Service Worker)" -->|"4a. प्रतिक्रिया (Response)"| "पृष्ठ (Page)"
-    "कैश (Cache)" -->|"3b. कैश मिस (Cache Miss)"| "नेटवर्क (Network)"
-    "नेटवर्क (Network)" -->|"4b. प्रतिक्रिया (Response)"| "सर्विस वर्कर (Service Worker)"
-    "सर्विस वर्कर (Service Worker)" -->|"5b. कैश में सहेजें (Save to Cache)"| "कैश (Cache)"
-    "सर्विस वर्कर (Service Worker)" -->|"6b. प्रतिक्रिया (Response)"| "पृष्ठ (Page)"
+    repairedNode1["पृष्ठ (Page)"]
+    repairedNode2["सर्विस वर्कर (Service Worker)"]
+    repairedNode3["कैश (Cache)"]
+    repairedNode4["नेटवर्क (Network)"]
+    repairedNode1 -->|"1. अनुरोध (Request)"| repairedNode2
+    repairedNode2 -->|"2. कैश जांचें (Check Cache)"| repairedNode3
+    repairedNode3 -->|"3a. कैश हिट (Cache Hit)"| repairedNode2
+    repairedNode2 -->|"4a. प्रतिक्रिया (Response)"| repairedNode1
+    repairedNode3 -->|"3b. कैश मिस (Cache Miss)"| repairedNode4
+    repairedNode4 -->|"4b. प्रतिक्रिया (Response)"| repairedNode2
+    repairedNode2 -->|"5b. कैश में सहेजें (Save to Cache)"| repairedNode3
+    repairedNode2 -->|"6b. प्रतिक्रिया (Response)"| repairedNode1
 ```
 
 ### 6.2. नेटवर्क फर्स्ट (Network First)
@@ -196,15 +206,19 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    "पृष्ठ (Page)" -->|"1. अनुरोध (Request)"| "सर्विस वर्कर (Service Worker)"
-    "सर्विस वर्कर (Service Worker)" -->|"2. प्राप्त करें (Fetch)"| "नेटवर्क (Network)"
-    "नेटवर्क (Network)" -->|"3a. सफलता (Success)"| "सर्विस वर्कर (Service Worker)"
-    "सर्विस वर्कर (Service Worker)" -->|"4a. कैश में सहेजें (Save to Cache)"| "कैश (Cache)"
-    "सर्विस वर्कर (Service Worker)" -->|"5a. प्रतिक्रिया (Response)"| "पृष्ठ (Page)"
-    "नेटवर्क (Network)" -->|"3b. त्रुटि / ऑफ़लाइन (Error / Offline)"| "सर्विस वर्कर (Service Worker)"
-    "सर्विस वर्कर (Service Worker)" -->|"4b. कैश जांचें (Check Cache)"| "कैश (Cache)"
-    "कैश (Cache)" -->|"5b. कैश हिट (Cache Hit)"| "सर्विस वर्कर (Service Worker)"
-    "सर्विस वर्कर (Service Worker)" -->|"6b. फ़ॉलबैक प्रतिक्रिया (Fallback Response)"| "पृष्ठ (Page)"
+    repairedNode1["पृष्ठ (Page)"]
+    repairedNode2["सर्विस वर्कर (Service Worker)"]
+    repairedNode3["नेटवर्क (Network)"]
+    repairedNode4["कैश (Cache)"]
+    repairedNode1 -->|"1. अनुरोध (Request)"| repairedNode2
+    repairedNode2 -->|"2. प्राप्त करें (Fetch)"| repairedNode3
+    repairedNode3 -->|"3a. सफलता (Success)"| repairedNode2
+    repairedNode2 -->|"4a. कैश में सहेजें (Save to Cache)"| repairedNode4
+    repairedNode2 -->|"5a. प्रतिक्रिया (Response)"| repairedNode1
+    repairedNode3 -->|"3b. त्रुटि / ऑफ़लाइन (Error / Offline)"| repairedNode2
+    repairedNode2 -->|"4b. कैश जांचें (Check Cache)"| repairedNode4
+    repairedNode4 -->|"5b. कैश हिट (Cache Hit)"| repairedNode2
+    repairedNode2 -->|"6b. फ़ॉलबैक प्रतिक्रिया (Fallback Response)"| repairedNode1
 ```
 
 ### 6.3. Stale-while-revalidate (पुराना कैश लौटाएं और पृष्ठभूमि में अपडेट करें)
@@ -214,13 +228,17 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    "पृष्ठ (Page)" -->|"1. अनुरोध (Request)"| "सर्विस वर्कर (Service Worker)"
-    "सर्विस वर्कर (Service Worker)" -->|"2. कैश जांचें (Check Cache)"| "कैश (Cache)"
-    "कैश (Cache)" -->|"3. कैश हिट (तेज़ प्रतिक्रिया) (Cache Hit (Fast Response))"| "सर्विस वर्कर (Service Worker)"
-    "सर्विस वर्कर (Service Worker)" -->|"4. पुरानी प्रतिक्रिया लौटाएं (Return Stale Response)"| "पृष्ठ (Page)"
-    "सर्विस वर्कर (Service Worker)" -.->|"5. प्राप्त करें (पृष्ठभूमि) (Fetch (Background))"| "नेटवर्क (Network)"
-    "नेटवर्क (Network)" -.->|"6. नेटवर्क प्रतिक्रिया (Network Response)"| "सर्विस वर्कर (Service Worker)"
-    "सर्विस वर्कर (Service Worker)" -.->|"7. कैश अपडेट करें (Update Cache)"| "कैश (Cache)"
+    repairedNode1["पृष्ठ (Page)"]
+    repairedNode2["सर्विस वर्कर (Service Worker)"]
+    repairedNode3["कैश (Cache)"]
+    repairedNode4["नेटवर्क (Network)"]
+    repairedNode1 -->|"1. अनुरोध (Request)"| repairedNode2
+    repairedNode2 -->|"2. कैश जांचें (Check Cache)"| repairedNode3
+    repairedNode3 -->|"3. कैश हिट (तेज़ प्रतिक्रिया) (Cache Hit (Fast Response))"| repairedNode2
+    repairedNode2 -->|"4. पुरानी प्रतिक्रिया लौटाएं (Return Stale Response)"| repairedNode1
+    repairedNode2 -.->|"5. प्राप्त करें (पृष्ठभूमि) (Fetch (Background))"| repairedNode4
+    repairedNode4 -.->|"6. नेटवर्क प्रतिक्रिया (Network Response)"| repairedNode2
+    repairedNode2 -.->|"7. कैश अपडेट करें (Update Cache)"| repairedNode3
 ```
 
 ### 6.4. केवल कैश (Cache Only) / केवल नेटवर्क (Network Only)

@@ -174,12 +174,12 @@ Raft는 시스템 전체의 상태를 **리더 선출 (Leader Election)** 과 **
 
 ```mermaid
 stateDiagram-v2
-    [*] --> "Follower"
-    "Follower" --> "Candidate" : "타임아웃 발생"
-    "Candidate" --> "Candidate" : "선거 타임아웃"
-    "Candidate" --> "Leader" : "과반수의 표를 획득"
-    "Candidate" --> "Follower" : "새로운 리더를 발견"
-    "Leader" --> "Follower" : "더 높은 Term을 발견"
+    [*] --> Follower
+    Follower --> Candidate : "타임아웃 발생"
+    Candidate --> Candidate : "선거 타임아웃"
+    Candidate --> Leader : "과반수의 표를 획득"
+    Candidate --> Follower : "새로운 리더를 발견"
+    Leader --> Follower : "더 높은 Term을 발견"
 ```
 
 ### 4.2 리더 선출 메커니즘

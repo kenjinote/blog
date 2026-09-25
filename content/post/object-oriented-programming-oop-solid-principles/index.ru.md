@@ -117,22 +117,22 @@ public class BankAccount {
 
 ```mermaid
 classDiagram
-    class "Animal" {
+    class Animal {
         +eat()
     }
-    class "Mammal" {
+    class Mammal {
         +eat()
     }
-    class "WingedAnimal" {
+    class WingedAnimal {
         +eat()
     }
-    class "Bat" {
+    class Bat {
     }
     
-    "Animal" <|-- "Mammal"
-    "Animal" <|-- "WingedAnimal"
-    "Mammal" <|-- "Bat"
-    "WingedAnimal" <|-- "Bat"
+    Animal <|-- Mammal
+    Animal <|-- WingedAnimal
+    Mammal <|-- Bat
+    WingedAnimal <|-- Bat
 ```
 
 Проблема заключается в том, что когда класс Bat вызывает метод `eat()`, становится неясно, какую реализацию вызывать: из Mammal или WingedAnimal. [Java](https://kenji.blog/ru/p/programming-languages-history-paradigm-evolution/) и C# запрещают множественное наследование классов и избегают этой проблемы, используя **интерфейсы**.
@@ -240,23 +240,23 @@ class ReportRepository:
 
 ```mermaid
 classDiagram
-    class "Shape" {
+    class Shape {
         <<interface>>
         +calculateArea() double
     }
-    class "Circle" {
+    class Circle {
         +calculateArea() double
     }
-    class "Rectangle" {
+    class Rectangle {
         +calculateArea() double
     }
-    class "Triangle" {
+    class Triangle {
         +calculateArea() double
     }
     
-    "Shape" <|.. "Circle"
-    "Shape" <|.. "Rectangle"
-    "Shape" <|.. "Triangle"
+    Shape <|.. Circle
+    Shape <|.. Rectangle
+    Shape <|.. Triangle
 ```
 
 ### 3.3 Принцип подстановки Барбары Лисков (Liskov Substitution Principle: LSP)

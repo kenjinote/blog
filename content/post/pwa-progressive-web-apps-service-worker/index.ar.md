@@ -129,14 +129,20 @@ tags:
 
 ```mermaid
 stateDiagram-v2
+    state "تم التحليل (Parsed)" as repairedState1
+    state "قيد التثبيت (Installing)" as repairedState2
+    state "تم التثبيت (Waiting)" as repairedState3
+    state "مستغنى عنه (Redundant)" as repairedState4
+    state "قيد التفعيل (Activating)" as repairedState5
+    state "مُفعل (Activated)" as repairedState6
     direction TB
-    "تم التحليل (Parsed)" --> "قيد التثبيت (Installing)" : "التسجيل (Registration)"
-    "قيد التثبيت (Installing)" --> "تم التثبيت (Waiting)" : "نجاح (Success)"
-    "قيد التثبيت (Installing)" --> "مستغنى عنه (Redundant)" : "خطأ (Error)"
-    "تم التثبيت (Waiting)" --> "قيد التفعيل (Activating)" : "إغلاق جميع العملاء / skipWaiting()"
-    "قيد التفعيل (Activating)" --> "مُفعل (Activated)" : "نجاح (Success)"
-    "قيد التفعيل (Activating)" --> "مستغنى عنه (Redundant)" : "خطأ (Error)"
-    "مُفعل (Activated)" --> "مستغنى عنه (Redundant)" : "استبدال بعامل خدمة جديد"
+    repairedState1 --> repairedState2 : "التسجيل (Registration)"
+    repairedState2 --> repairedState3 : "نجاح (Success)"
+    repairedState2 --> repairedState4 : "خطأ (Error)"
+    repairedState3 --> repairedState5 : "إغلاق جميع العملاء / skipWaiting()"
+    repairedState5 --> repairedState6 : "نجاح (Success)"
+    repairedState5 --> repairedState4 : "خطأ (Error)"
+    repairedState6 --> repairedState4 : "استبدال بعامل خدمة جديد"
 ```
 
 1. ** تم التحليل (Parsed)** : الحالة التي ينتهي فيها المتصفح من تنزيل برنامج Service Worker النصي وتحليله.
@@ -180,14 +186,18 @@ if ("serviceWorker" in navigator) {
 
 ```mermaid
 flowchart TD
-    "الصفحة (Page)" -->|"1. طلب (Request)"| "عامل الخدمة (Service Worker)"
-    "عامل الخدمة (Service Worker)" -->|"2. تحقق من التخزين المؤقت (Check Cache)"| "التخزين المؤقت (Cache)"
-    "التخزين المؤقت (Cache)" -->|"3a. إصابة التخزين المؤقت (Cache Hit)"| "عامل الخدمة (Service Worker)"
-    "عامل الخدمة (Service Worker)" -->|"4a. استجابة (Response)"| "الصفحة (Page)"
-    "التخزين المؤقت (Cache)" -->|"3b. خطأ في التخزين المؤقت (Cache Miss)"| "الشبكة (Network)"
-    "الشبكة (Network)" -->|"4b. استجابة (Response)"| "عامل الخدمة (Service Worker)"
-    "عامل الخدمة (Service Worker)" -->|"5b. حفظ في التخزين المؤقت (Save to Cache)"| "التخزين المؤقت (Cache)"
-    "عامل الخدمة (Service Worker)" -->|"6b. استجابة (Response)"| "الصفحة (Page)"
+    repairedNode1["الصفحة (Page)"]
+    repairedNode2["عامل الخدمة (Service Worker)"]
+    repairedNode3["التخزين المؤقت (Cache)"]
+    repairedNode4["الشبكة (Network)"]
+    repairedNode1 -->|"1. طلب (Request)"| repairedNode2
+    repairedNode2 -->|"2. تحقق من التخزين المؤقت (Check Cache)"| repairedNode3
+    repairedNode3 -->|"3a. إصابة التخزين المؤقت (Cache Hit)"| repairedNode2
+    repairedNode2 -->|"4a. استجابة (Response)"| repairedNode1
+    repairedNode3 -->|"3b. خطأ في التخزين المؤقت (Cache Miss)"| repairedNode4
+    repairedNode4 -->|"4b. استجابة (Response)"| repairedNode2
+    repairedNode2 -->|"5b. حفظ في التخزين المؤقت (Save to Cache)"| repairedNode3
+    repairedNode2 -->|"6b. استجابة (Response)"| repairedNode1
 ```
 
 ### 6.2. الشبكة أولاً (Network First)
@@ -196,15 +206,19 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    "الصفحة (Page)" -->|"1. طلب (Request)"| "عامل الخدمة (Service Worker)"
-    "عامل الخدمة (Service Worker)" -->|"2. جلب (Fetch)"| "الشبكة (Network)"
-    "الشبكة (Network)" -->|"3a. نجاح (Success)"| "عامل الخدمة (Service Worker)"
-    "عامل الخدمة (Service Worker)" -->|"4a. حفظ في التخزين المؤقت (Save to Cache)"| "التخزين المؤقت (Cache)"
-    "عامل الخدمة (Service Worker)" -->|"5a. استجابة (Response)"| "الصفحة (Page)"
-    "الشبكة (Network)" -->|"3b. خطأ / غير متصل (Error / Offline)"| "عامل الخدمة (Service Worker)"
-    "عامل الخدمة (Service Worker)" -->|"4b. تحقق من التخزين المؤقت (Check Cache)"| "التخزين المؤقت (Cache)"
-    "التخزين المؤقت (Cache)" -->|"5b. إصابة التخزين المؤقت (Cache Hit)"| "عامل الخدمة (Service Worker)"
-    "عامل الخدمة (Service Worker)" -->|"6b. استجابة التراجع (Fallback Response)"| "الصفحة (Page)"
+    repairedNode1["الصفحة (Page)"]
+    repairedNode2["عامل الخدمة (Service Worker)"]
+    repairedNode3["الشبكة (Network)"]
+    repairedNode4["التخزين المؤقت (Cache)"]
+    repairedNode1 -->|"1. طلب (Request)"| repairedNode2
+    repairedNode2 -->|"2. جلب (Fetch)"| repairedNode3
+    repairedNode3 -->|"3a. نجاح (Success)"| repairedNode2
+    repairedNode2 -->|"4a. حفظ في التخزين المؤقت (Save to Cache)"| repairedNode4
+    repairedNode2 -->|"5a. استجابة (Response)"| repairedNode1
+    repairedNode3 -->|"3b. خطأ / غير متصل (Error / Offline)"| repairedNode2
+    repairedNode2 -->|"4b. تحقق من التخزين المؤقت (Check Cache)"| repairedNode4
+    repairedNode4 -->|"5b. إصابة التخزين المؤقت (Cache Hit)"| repairedNode2
+    repairedNode2 -->|"6b. استجابة التراجع (Fallback Response)"| repairedNode1
 ```
 
 ### 6.3. القديم أثناء التحقق من الصحة (Stale-while-revalidate)
@@ -214,13 +228,17 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    "الصفحة (Page)" -->|"1. طلب (Request)"| "عامل الخدمة (Service Worker)"
-    "عامل الخدمة (Service Worker)" -->|"2. تحقق من التخزين المؤقت (Check Cache)"| "التخزين المؤقت (Cache)"
-    "التخزين المؤقت (Cache)" -->|"3. إصابة التخزين المؤقت (Cache Hit)"| "عامل الخدمة (Service Worker)"
-    "عامل الخدمة (Service Worker)" -->|"4. إرجاع استجابة قديمة (Return Stale Response)"| "الصفحة (Page)"
-    "عامل الخدمة (Service Worker)" -.->|"5. جلب في الخلفية (Fetch - Background)"| "الشبكة (Network)"
-    "الشبكة (Network)" -.->|"6. استجابة الشبكة (Network Response)"| "عامل الخدمة (Service Worker)"
-    "عامل الخدمة (Service Worker)" -.->|"7. تحديث التخزين المؤقت (Update Cache)"| "التخزين المؤقت (Cache)"
+    repairedNode1["الصفحة (Page)"]
+    repairedNode2["عامل الخدمة (Service Worker)"]
+    repairedNode3["التخزين المؤقت (Cache)"]
+    repairedNode4["الشبكة (Network)"]
+    repairedNode1 -->|"1. طلب (Request)"| repairedNode2
+    repairedNode2 -->|"2. تحقق من التخزين المؤقت (Check Cache)"| repairedNode3
+    repairedNode3 -->|"3. إصابة التخزين المؤقت (Cache Hit)"| repairedNode2
+    repairedNode2 -->|"4. إرجاع استجابة قديمة (Return Stale Response)"| repairedNode1
+    repairedNode2 -.->|"5. جلب في الخلفية (Fetch - Background)"| repairedNode4
+    repairedNode4 -.->|"6. استجابة الشبكة (Network Response)"| repairedNode2
+    repairedNode2 -.->|"7. تحديث التخزين المؤقت (Update Cache)"| repairedNode3
 ```
 
 ### 6.4. التخزين المؤقت فقط / الشبكة فقط (Cache Only / Network Only)

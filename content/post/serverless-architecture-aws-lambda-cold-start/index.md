@@ -82,15 +82,15 @@ Firecrackerは、KVM（Kernel-based Virtual Machine）を利用して、軽量�
 
 ```mermaid
 graph TD
-    subgraph Host_OS [Host OS (EC2 Bare Metal)]
+    subgraph Host_OS ["Host OS (EC2 Bare Metal)"]
         KVM["KVM - Kernel-based Virtual Machine"]
-        subgraph Firecracker_Process_1 [Firecracker Process (MicroVM 1)]
+        subgraph Firecracker_Process_1 ["Firecracker Process (MicroVM 1)"]
             GuestOS_1["Guest OS / Minimal Linux"]
             Runtime_1["Lambda Runtime"]
             Function_1["User Function Code"]
             GuestOS_1 --> Runtime_1 --> Function_1
         end
-        subgraph Firecracker_Process_2 [Firecracker Process (MicroVM 2)]
+        subgraph Firecracker_Process_2 ["Firecracker Process (MicroVM 2)"]
             GuestOS_2["Guest OS / Minimal Linux"]
             Runtime_2["Lambda Runtime"]
             Function_2["User Function Code"]

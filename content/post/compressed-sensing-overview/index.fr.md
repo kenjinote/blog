@@ -225,8 +225,8 @@ print(f"Erreur de reconstruction (norme L2) : {error:.6e}")
 
 ```mermaid
 flowchart LR
-    X["Signal parcimonieux inconnu\nx (Dimension N)"] -->|Matrice d'observation\naléatoire A| Y["Données d'observation\ny (Dimension M, M < N)"]
-    Y -->|Optimisation L1\n(Algorithme d'optimisation convexe)| X_hat["Signal reconstruit\nx^"]
+    X["Signal parcimonieux inconnu\nx (Dimension N)"] -->|"Matrice d'observation\naléatoire A"| Y["Données d'observation\ny (Dimension M, M < N)"]
+    Y -->|"Optimisation L1\n(Algorithme d'optimisation convexe)"| X_hat["Signal reconstruit\nx^"]
     X -. "Garantie de correspondance parfaite" .-> X_hat
 ```
 

@@ -148,7 +148,7 @@ Dengan mempertimbangkan implementasi sirkuit yang dioptimalkan dalam beberapa ta
 
 ```mermaid
 graph LR
-  A["Algoritma Klasik (GNFS)"] -->|"Batas"| B["Waktu Sub-eksponensial L_n[1/3"]"]
+  A["Algoritma Klasik (GNFS)"] -->|"Batas"| B["Waktu Sub-eksponensial L_n[1/3]"]
   C["Algoritma Kuantum (Shor)"] -->|"Terobosan"| D["Waktu Polinomial O((log n)^3)"]
   B --> E["Penggunaan Lanjutan RSA (Peningkatan Panjang Kunci)"]
   D --> F["Keruntuhan Total Kriptografi RSA"]

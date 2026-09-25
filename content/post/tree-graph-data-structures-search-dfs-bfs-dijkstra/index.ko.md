@@ -28,11 +28,11 @@ tags: ["algorithms", "graph", "tree", "dfs", "bfs", "dijkstra"]
 
 ```mermaid
 graph TD
-  "Root" --> "NodeA"
-  "Root" --> "NodeB"
-  "NodeA" --> "Leaf1"
-  "NodeA" --> "Leaf2"
-  "NodeB" --> "Leaf3"
+  Root --> NodeA
+  Root --> NodeB
+  NodeA --> Leaf1
+  NodeA --> Leaf2
+  NodeB --> Leaf3
 ```
 
 트리 구조에서의 탐색의 기본으로서 깊이 우선 탐색(DFS)과 너비 우선 탐색(BFS)이 있습니다.
@@ -98,12 +98,12 @@ bfs_tree(root)
 
 ```mermaid
 graph LR
-  "A" -- "5" --> "B"
-  "A" -- "2" --> "C"
-  "B" -- "1" --> "D"
-  "C" -- "8" --> "D"
-  "C" -- "4" --> "E"
-  "D" -- "3" --> "E"
+  A -- "5" --> B
+  A -- "2" --> C
+  B -- "1" --> D
+  C -- "8" --> D
+  C -- "4" --> E
+  D -- "3" --> E
 ```
 
 ## 5. 다익스트라 알고리즘(Dijkstra's Algorithm)

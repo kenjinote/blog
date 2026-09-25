@@ -75,12 +75,12 @@ Untuk memvisualisasikan serangkaian proses dalam mencari solusi, kami telah meny
 ```mermaid
 flowchart TD
     Start["Mulai: Masukkan bilangan bulat n"] --> CheckSquare["Tentukan apakah n adalah kuadrat sempurna"]
-    CheckSquare --|"Ya"| Trivial["Hanya solusi trivial yang ada (Selesai)"] --> End["Selesai"]
-    CheckSquare --|"Tidak"| InitContFrac["Inisialisasi rekurensi untuk pecahan berlanjut"]
+    CheckSquare -->|"Ya"| Trivial["Hanya solusi trivial yang ada (Selesai)"] --> End["Selesai"]
+    CheckSquare -->|"Tidak"| InitContFrac["Inisialisasi rekurensi untuk pecahan berlanjut"]
     InitContFrac --> CalcNext["Hitung suku berikutnya a_i dan konvergen (p_i, q_i)"]
     CalcNext --> CheckEq["Kondisi: Evaluasi p_i^2 - n * q_i^2 == 1"]
-    CheckEq --|"Salah"| CalcNext
-    CheckEq --|"Benar"| Found["Menemukan solusi fundamental (x_1, y_1) = (p_i, q_i)"] --> End
+    CheckEq -->|"Salah"| CalcNext
+    CheckEq -->|"Benar"| Found["Menemukan solusi fundamental (x_1, y_1) = (p_i, q_i)"] --> End
 ```
 
 ## 6. Contoh Khusus: Ekspansi Pecahan Berlanjut dan Solusi Fundamental untuk n = 7

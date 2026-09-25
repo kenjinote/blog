@@ -140,20 +140,20 @@ gantt
 
     section "일반 스크립트"
     "HTML 해석"       :active, a1, 0, 2s
-    "JS 다운로드" :crit, a2, 2s, 4s
-    "JS 실행"         :crit, a3, 4s, 6s
-    "HTML 해석 재개"   :active, a4, 6s, 8s
+    "JS 다운로드" :crit, a2, 2, 4s
+    "JS 실행"         :crit, a3, 4, 6s
+    "HTML 해석 재개"   :active, a4, 6, 8s
 
     section "async 속성"
     "HTML 해석"       :active, b1, 0, 5s
-    "JS 다운로드" :crit, b2, 2s, 4s
-    "JS 실행"         :crit, b3, 5s, 7s
-    "HTML 해석 재개"   :active, b4, 7s, 9s
+    "JS 다운로드" :crit, b2, 2, 4s
+    "JS 실행"         :crit, b3, 5, 7s
+    "HTML 해석 재개"   :active, b4, 7, 9s
 
     section "defer 속성"
     "HTML 해석"       :active, c1, 0, 6s
-    "JS 다운로드" :crit, c2, 1s, 4s
-    "JS 실행"         :crit, c3, 6s, 8s
+    "JS 다운로드" :crit, c2, 1, 4s
+    "JS 실행"         :crit, c3, 6, 8s
 ```
 *(※실제 `async` 는 다운로드 완료 후 바로 실행하기 때문에 파싱을 중단시킵니다.)*
 

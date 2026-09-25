@@ -218,8 +218,8 @@ O gráfico a seguir mostra uma estimativa da VRAM necessária (incluindo o overh
 
 ```mermaid
 xychart-beta
-    title Número de Parâmetros vs VRAM Necessária (Assumindo quantização de 4-bit)
-    x-axis "Nome do Modelo" ["Phi-3 Mini (3.8B), Llama 3 (8B), Gemma 2 (9B), Mixtral (8x7B), Qwen 2.5 (32B), Llama 3 (70B)"]
+    title "Número de Parâmetros vs VRAM Necessária (Assumindo quantização de 4-bit)"
+    x-axis "Nome do Modelo" ["Phi-3 Mini (3.8B)", "Llama 3 (8B)", "Gemma 2 (9B)", "Mixtral (8x7B)", "Qwen 2.5 (32B)", "Llama 3 (70B)"]
     y-axis "VRAM Necessária (GB)" 0 --> 45
     bar [3.5, 6.0, 6.5, 26.0, 22.0, 40.0]
 ```

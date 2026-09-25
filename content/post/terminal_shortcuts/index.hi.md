@@ -272,18 +272,25 @@ zoxide सभी Bash, Zsh और PowerShell का समर्थन करत
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Normal["सामान्य मोड"]
-    Normal --> Prefix["प्रिफिक्स मोड (Ctrl+B)"]
-    Prefix --> Command["कमांड प्रॉम्प्ट (:)"]
-    Prefix --> SplitV["पेन को लंबवत विभाजित करें (%)"]
-    Prefix --> SplitH["पेन को क्षैतिज रूप से विभाजित करें (\)"]
-    Prefix --> Switch["विंडो स्विच करें (n/p/0-9)"]
-    Prefix --> Detach["सत्र को डिटैच करें (d)"]
+    state "सामान्य मोड" as Normal
+    state "प्रिफिक्स मोड (Ctrl+B)" as Prefix
+    state "कमांड प्रॉम्प्ट (:)" as Command
+    state "पेन को लंबवत विभाजित करें (%)" as SplitV
+    state "पेन को क्षैतिज रूप से विभाजित करें (\)" as SplitH
+    state "विंडो स्विच करें (n/p/0-9)" as Switch
+    state "सत्र को डिटैच करें (d)" as Detach
+    [*] --> Normal
+    Normal --> Prefix
+    Prefix --> Command
+    Prefix --> SplitV
+    Prefix --> SplitH
+    Prefix --> Switch
+    Prefix --> Detach
     
-    Command --> Normal["tmux कमांड निष्पादित करें"]
-    SplitV --> Normal["सामान्य मोड पर लौटें"]
-    SplitH --> Normal["सामान्य मोड पर लौटें"]
-    Switch --> Normal["सामान्य मोड पर लौटें"]
+    Command --> Normal : tmux कमांड निष्पादित करें
+    SplitV --> Normal : सामान्य मोड पर लौटें
+    SplitH --> Normal : सामान्य मोड पर लौटें
+    Switch --> Normal : सामान्य मोड पर लौटें
     Detach --> [*]
 ```
 

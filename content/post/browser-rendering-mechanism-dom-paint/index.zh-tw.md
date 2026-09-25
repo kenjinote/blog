@@ -140,20 +140,20 @@ gantt
 
     section "一般腳本"
     "HTML解析"       :active, a1, 0, 2s
-    "JS下載" :crit, a2, 2s, 4s
-    "JS執行"         :crit, a3, 4s, 6s
-    "HTML解析恢復"   :active, a4, 6s, 8s
+    "JS下載" :crit, a2, 2, 4s
+    "JS執行"         :crit, a3, 4, 6s
+    "HTML解析恢復"   :active, a4, 6, 8s
 
     section "async屬性"
     "HTML解析"       :active, b1, 0, 5s
-    "JS下載" :crit, b2, 2s, 4s
-    "JS執行"         :crit, b3, 5s, 7s
-    "HTML解析恢復"   :active, b4, 7s, 9s
+    "JS下載" :crit, b2, 2, 4s
+    "JS執行"         :crit, b3, 5, 7s
+    "HTML解析恢復"   :active, b4, 7, 9s
 
     section "defer屬性"
     "HTML解析"       :active, c1, 0, 6s
-    "JS下載" :crit, c2, 1s, 4s
-    "JS執行"         :crit, c3, 6s, 8s
+    "JS下載" :crit, c2, 1, 4s
+    "JS執行"         :crit, c3, 6, 8s
 ```
 *(※實際的 `async` 會在下載完成後立刻執行，因此會中斷解析。)*
 

@@ -40,7 +40,7 @@ graph TD
     PeerA <-->|"Intercambio de piezas 1 y 2"| PeerB
     PeerB <-->|"Intercambio de piezas 2 y 3"| PeerC
     PeerC <-->|"Intercambio de piezas 3 y 1"| PeerA
-    Note over PeerA,PeerC: Los usuarios intercambian entre sí las piezas que les faltan como si fueran un rompecabezas
+    diagramNote["Los usuarios intercambian entre sí las piezas que les faltan como si fueran un rompecabezas"]
 ```
 
 Gracias a este mecanismo, el servidor original (semilla o *seed*) ya no necesita enviar el archivo completo a todos los participantes. Siempre que pase cada pieza a una sola persona, los participantes la multiplicarán intercambiando las piezas del rompecabezas entre sí. Por lo tanto, ocurre el fenómeno mágico de que **"cuantos más participantes haya, más rápida será la velocidad de descarga de toda la red"**.

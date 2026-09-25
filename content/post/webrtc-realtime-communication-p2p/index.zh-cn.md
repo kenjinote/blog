@@ -162,7 +162,7 @@ sequenceDiagram
     PeerB->>STUN: "Binding Request"
     STUN-->>PeerB: "Public IP & Port"
     PeerB->>PeerA: "通过信令发送Candidate"
-    PeerA<-->>PeerB: "连接性检查 (STUN Ping)"
+    PeerA<<-->>PeerB: "连接性检查 (STUN Ping)"
     PeerA->>PeerB: "通过最佳路径完成P2P连接"
 ```
 

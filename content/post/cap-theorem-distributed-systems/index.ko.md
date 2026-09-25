@@ -290,7 +290,7 @@ flowchart TD
     Payment -->|"3. 결제 완료 이벤트"| MessageBroker
     MessageBroker -->|"4. 이벤트 알림"| Inventory["재고 서비스"]
     
-    Inventory -- "실패 시" -->|"보상 트랜잭션"| Compensate["재고 확보 실패 이벤트"]
+    Inventory -->|"실패 시#quot; / #quot;보상 트랜잭션"| Compensate["재고 확보 실패 이벤트"]
     Compensate --> MessageBroker
     MessageBroker -->|"취소"| Order
 ```

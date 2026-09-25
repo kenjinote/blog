@@ -216,13 +216,13 @@ graph TD
     P2("Product: Mouse<br>(price: 50)")
 
     %% 边（关系）的定义
-    U1 --|"FOLLOWS<br>{since: 2023}"| U2
-    U1 --|"FOLLOWS<br>{since: 2024}"| U3
-    U2 --|"FOLLOWS<br>{since: 2022}"| U1
+    U1 -->|"FOLLOWS<br>{since: 2023}"| U2
+    U1 -->|"FOLLOWS<br>{since: 2024}"| U3
+    U2 -->|"FOLLOWS<br>{since: 2022}"| U1
     
-    U1 --|"PURCHASED<br>{date: '2025-01-10'}"| P1
-    U3 --|"PURCHASED<br>{date: '2025-02-15'}"| P1
-    U3 --|"PURCHASED<br>{date: '2025-02-15'}"| P2
+    U1 -->|"PURCHASED<br>{date: '2025-01-10'}"| P1
+    U3 -->|"PURCHASED<br>{date: '2025-02-15'}"| P1
+    U3 -->|"PURCHASED<br>{date: '2025-02-15'}"| P2
     
     %% 样式设置
     classDef userNode fill:#d4e157,stroke:#9e9d24,stroke-width:2px;

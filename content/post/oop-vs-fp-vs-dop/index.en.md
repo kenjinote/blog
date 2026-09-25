@@ -64,25 +64,25 @@ There is a famous quote by Joe Armstrong (the creator of Erlang):
 
 ```mermaid
 classDiagram
-    class "GameObject" {
+    class GameObject {
         +Transform transform
         +update()
     }
-    class "Character" {
+    class Character {
         +Health health
         +move()
     }
-    class "Player" {
+    class Player {
         +Inventory inventory
         +handleInput()
     }
-    class "Enemy" {
+    class Enemy {
         +AIController ai
         +attack()
     }
-    "GameObject" <|-- "Character"
-    "Character" <|-- "Player"
-    "Character" <|-- "Enemy"
+    GameObject <|-- Character
+    Character <|-- Player
+    Character <|-- Enemy
 ```
 
 Deep inheritance trees complicate code dependencies and make it extremely difficult to extract and reuse specific functionality. Also, when multiple objects reference and modify each other's states, the predictability of the entire system drops significantly.
@@ -165,19 +165,19 @@ fn update_positions(positions: &mut [Position], velocities: &[Velocity], dt: f32
 ```mermaid
 graph TD
     subgraph "Data (Components)"
-        "P"["Positions Array"]
-        "V"["Velocities Array"]
-        "H"["Healths Array"]
+        P["Positions Array"]
+        V["Velocities Array"]
+        H["Healths Array"]
     end
 
     subgraph "Logic (Systems)"
-        "PhysicsSystem"
-        "DamageSystem"
+        PhysicsSystem
+        DamageSystem
     end
 
-    "PhysicsSystem" -->|"Reads"| "V"
-    "PhysicsSystem" -->|"Mutates"| "P"
-    "DamageSystem" -->|"Mutates"| "H"
+    PhysicsSystem -->|"Reads"| V
+    PhysicsSystem -->|"Mutates"| P
+    DamageSystem -->|"Mutates"| H
 ```
 
 ### 3.2 Limitations of DOP: Difficulty in Applying to Business Logic

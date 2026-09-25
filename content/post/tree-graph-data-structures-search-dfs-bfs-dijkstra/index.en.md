@@ -28,11 +28,11 @@ A tree structure consists of the following elements:
 
 ```mermaid
 graph TD
-  "Root" --> "NodeA"
-  "Root" --> "NodeB"
-  "NodeA" --> "Leaf1"
-  "NodeA" --> "Leaf2"
-  "NodeB" --> "Leaf3"
+  Root --> NodeA
+  Root --> NodeB
+  NodeA --> Leaf1
+  NodeA --> Leaf2
+  NodeB --> Leaf3
 ```
 
 As the basics of searching in tree structures, there are Depth-First Search (DFS) and Breadth-First Search (BFS).
@@ -98,12 +98,12 @@ Graphs have the following types:
 
 ```mermaid
 graph LR
-  "A" -- "5" --> "B"
-  "A" -- "2" --> "C"
-  "B" -- "1" --> "D"
-  "C" -- "8" --> "D"
-  "C" -- "4" --> "E"
-  "D" -- "3" --> "E"
+  A -- "5" --> B
+  A -- "2" --> C
+  B -- "1" --> D
+  C -- "8" --> D
+  C -- "4" --> E
+  D -- "3" --> E
 ```
 
 ## 5. Dijkstra's Algorithm

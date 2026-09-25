@@ -37,8 +37,8 @@ Las grandes empresas luchan en el sangriento océano rojo sobre mercados gigante
 
 ```mermaid
 xychart-beta
-    title Distribución del tamaño del mercado y objetivo del desarrollador en solitario
-  x-axis ["Masivo A, Masivo B, Nicho C, Nicho D, Nicho E, Nicho F, Nicho G"]
+    title "Distribución del tamaño del mercado y objetivo del desarrollador en solitario"
+  x-axis ["Masivo A", "Masivo B", "Nicho C", "Nicho D", "Nicho E", "Nicho F", "Nicho G"]
   y-axis "Valor del mercado" 0 --> 100
   bar [95, 60, 20, 10, 5, 3, 2]
   line [95, 60, 20, 10, 5, 3, 2]

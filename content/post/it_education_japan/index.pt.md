@@ -210,8 +210,8 @@ O gráfico a seguir descreve conceitualmente as enormes discrepâncias entre o n
 
 ```mermaid
 xychart-beta
-    title Habilidades Entregues nas Escolas Japonesas vs Habilidades Exigidas na Indústria
-    x-axis ["Linguagem Visual, Sintaxe Básica/Variáveis, Algoritmo/Complexidade, SO/Rede, DB/Design de Sistema, Nuvem/Arquitetura Distribuída"]
+    title "Habilidades Entregues nas Escolas Japonesas vs Habilidades Exigidas na Indústria"
+    x-axis ["Linguagem Visual", "Sintaxe Básica/Variáveis", "Algoritmo/Complexidade", "SO/Rede", "DB/Design de Sistema", "Nuvem/Arquitetura Distribuída"]
     y-axis "Nível de Realização / Nível Requerido (%)" 0 --> 100
     line "Nível Alcançado no Atual Ensino Escolar" [95, 60, 15, 5, 2, 0]
     line "Nível Exigido pela Indústria/Empresas Tech" [0, 20, 85, 90, 95, 100]

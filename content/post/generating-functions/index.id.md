@@ -131,7 +131,7 @@ $$
 
 ```mermaid
 graph TD
-    S["Relasi Rekurensi Fibonacci"] -->|"Definisikan Fungsi Pembangkit F("x")"| EQ["Rumuskan Persamaan Fungsi"]
+    S["Relasi Rekurensi Fibonacci"] -->|"Definisikan Fungsi Pembangkit F(x)"| EQ["Rumuskan Persamaan Fungsi"]
     EQ -->|"Selesaikan Secara Aljabar"| GF["F(x) = x / (1 - x - x^2)"]
     GF -->|"Dekomposisi Pecahan Parsial"| PF["(A / (1 - αx)) + (B / (1 - βx))"]
     PF -->|"Ekspansi Deret Pangkat & Perbandingan Koefisien"| AN["Suku Umum (Rumus Binet)"]

@@ -35,10 +35,10 @@ Arsitektur pemrosesan cloud menggunakan FHE sama sekali berbeda dari arsitektur 
 
 ```mermaid
 graph TD
-    A["Klien (Menyimpan kunci privat)"] -->|"1. Enkripsi plaintext x: E("x")"| B["Server Cloud (Hanya data terenkripsi)"]
-    B -->|"2. Terapkan fungsi f pada ciphertext: E("f(x"))"| B
-    B -->|"3. Ciphertext dari hasil perhitungan E("y")"| A
-    A -->|"4. Dekripsi dengan kunci privat: y = f("x")"| A
+    A["Klien (Menyimpan kunci privat)"] -->|"1. Enkripsi plaintext x: E(x)"| B["Server Cloud (Hanya data terenkripsi)"]
+    B -->|"2. Terapkan fungsi f pada ciphertext: E(f(x))"| B
+    B -->|"3. Ciphertext dari hasil perhitungan E(y)"| A
+    A -->|"4. Dekripsi dengan kunci privat: y = f(x)"| A
     
     style A fill:#d4edda,stroke:#28a745
     style B fill:#f8d7da,stroke:#dc3545

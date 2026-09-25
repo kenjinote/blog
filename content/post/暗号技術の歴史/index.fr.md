@@ -127,7 +127,7 @@ graph TD
     subgraph "Traitement d'un tour de AES (Structure SPN)"
         A["État d'entrée (128-bit)"] --> B("SubBytes (Substitution d'octets / S-Box)")
         B --> C("ShiftRows (Décalage de lignes)")
-        C --> D("MixColumns (Mélange de colonnes / Multiplication sur GF("2^8"))")
+        C --> D("MixColumns (Mélange de colonnes / Multiplication sur GF(2^8))")
         D --> E("AddRoundKey (XOR avec la clé de tour)")
         E --> F["Au tour suivant"]
     end

@@ -125,8 +125,8 @@ sequenceDiagram
     participant S2 as "चर s2"
     
     S1->>Heap: "आवंटित करता है और स्वामित्व रखता है"
-    Note over S1,S2: "let s2 = s1;"
-    S1--xHeap: "स्वामित्व खो देता है (अमान्य)"
+    Note over S1,S2: "let s2 = s1#59;"
+    S1--x Heap: "स्वामित्व खो देता है (अमान्य)"
     S2->>Heap: "स्वामित्व ले लेता है"
 ```
 
@@ -220,8 +220,8 @@ fn main() {
 ```mermaid
 graph LR
     A["चर v (स्वामी)"] --> B["हीप ऐरे [1, 2, 3]"]
-    C["संदर्भ 'first' (&v[0"])"] -.->|"अपरिवर्तनीय उधार"| B
-    A -->|"X "परिवर्तनीय उधार अस्वीकृत!""| D["v.push(4)"]
+    C["संदर्भ 'first' (&v[0])"] -.->|"अपरिवर्तनीय उधार"| B
+    A -->|"X #quot;परिवर्तनीय उधार अस्वीकृत!#quot;"| D["v.push(4)"]
     
     style C stroke:#00FF00,stroke-width:2px
     style D stroke:#FF0000,stroke-width:2px

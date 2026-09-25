@@ -304,7 +304,7 @@ graph TD
     B -->|"② Antwortet mit geteiltem Schlüssel von X25519 + gekapseltem Chiffretext von Kyber"| A
     A --> C{"Ableitung des Master-Secrets (KDF)"}
     B --> C
-    C -->|"Eingabe: (X25519 gemeinsamer Schlüssel)"|| (Kyber gemeinsamer Schlüssel)| D["Sicherer Kommunikationsschlüssel (AES-256 / ChaCha20)"]
+    C -->|"#quot;Eingabe: (X25519 gemeinsamer Schlüssel)#quot;#124;#124; (Kyber gemeinsamer Schlüssel)"| D["Sicherer Kommunikationsschlüssel (AES-256 / ChaCha20)"]
     D -->|"Widerstandsfähig gegen Quantenbedrohungen UND klassische Schwachstellen"| E["Sichere hybride verschlüsselte Kommunikation (TLS 1.3)"]
 ```
 

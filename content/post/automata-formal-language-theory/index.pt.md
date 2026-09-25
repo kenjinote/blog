@@ -59,19 +59,19 @@ A hierarquia é classificada da seguinte forma (do Tipo-0 ao Tipo-3). Quanto mai
 
 ```mermaid
 flowchart TD
-    "Type0"["Type-0: Linguagens Recursivamente Enumeráveis\n(Máquina de Turing)"]
-    "Type1"["Type-1: Linguagens Sensíveis ao Contexto\n(Autômato Linearmente Limitado)"]
-    "Type2"["Type-2: Linguagens Livres de Contexto\n(Autômato com Pilha)"]
-    "Type3"["Type-3: Linguagens Regulares\n(Autômato Finito)"]
+    Type0["Type-0: Linguagens Recursivamente Enumeráveis\n(Máquina de Turing)"]
+    Type1["Type-1: Linguagens Sensíveis ao Contexto\n(Autômato Linearmente Limitado)"]
+    Type2["Type-2: Linguagens Livres de Contexto\n(Autômato com Pilha)"]
+    Type3["Type-3: Linguagens Regulares\n(Autômato Finito)"]
 
-    "Type0" --- "Type1"
-    "Type1" --- "Type2"
-    "Type2" --- "Type3"
+    Type0 --- Type1
+    Type1 --- Type2
+    Type2 --- Type3
 
-    style "Type0" fill:#f9f9f9,stroke:#333,stroke-width:2px
-    style "Type1" fill:#e9e9e9,stroke:#333,stroke-width:2px
-    style "Type2" fill:#d9d9d9,stroke:#333,stroke-width:2px
-    style "Type3" fill:#c9c9c9,stroke:#333,stroke-width:2px
+    style Type0 fill:#f9f9f9,stroke:#333,stroke-width:2px
+    style Type1 fill:#e9e9e9,stroke:#333,stroke-width:2px
+    style Type2 fill:#d9d9d9,stroke:#333,stroke-width:2px
+    style Type3 fill:#c9c9c9,stroke:#333,stroke-width:2px
 ```
 
 1.  **Tipo-3 (Linguagens Regulares)**: Expressas por expressões regulares e reconhecíveis por autômatos finitos.
@@ -105,15 +105,15 @@ Considere um DFA que reconhece cadeias que contêm "101" como substring, dentro 
 
 ```mermaid
 stateDiagram-v2
-    [*] --> "q0"
-    "q0" --> "q1" : "1"
-    "q0" --> "q0" : "0"
-    "q1" --> "q2" : "0"
-    "q1" --> "q1" : "1"
-    "q2" --> "q3" : "1"
-    "q2" --> "q0" : "0"
-    "q3" --> "q3" : "0, 1"
-    "q3" --> [*]
+    [*] --> q0
+    q0 --> q1 : "1"
+    q0 --> q0 : "0"
+    q1 --> q2 : "0"
+    q1 --> q1 : "1"
+    q2 --> q3 : "1"
+    q2 --> q0 : "0"
+    q3 --> q3 : "0, 1"
+    q3 --> [*]
 ```
 
 Este diagrama de transição de estados pode ser implementado como um programa Python.
@@ -261,10 +261,10 @@ A máquina de Turing é composta por uma "fita" infinita, um "cabeçote" que se 
 flowchart LR
     subgraph "Tape"
         direction LR
-        "T1"["..."] --- "T2"["0"] --- "T3"["1"] --- "T4"["1"] --- "T5"["0"] --- "T6"["..."]
+        T1["..."] --- T2["0"] --- T3["1"] --- T4["1"] --- T5["0"] --- T6["..."]
     end
-    "Head"(("Head")) --> "T3"
-    "State"["State: q_read\n(Finite Control)"] --- "Head"
+    Head(("Head")) --> T3
+    State["State: q_read\n(Finite Control)"] --- Head
 ```
 
 ### O Problema da Parada ([Halting Problem](https://kenji.blog/pt/p/turing-machine-computability/))

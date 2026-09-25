@@ -290,7 +290,7 @@ flowchart TD
     Payment -->|"3. 支付完成事件"| MessageBroker
     MessageBroker -->|"4. 事件通知"| Inventory["庫存服務"]
     
-    Inventory -- "失敗時" -->|"補償交易"| Compensate["庫存保留失敗事件"]
+    Inventory -->|"失敗時#quot; / #quot;補償交易"| Compensate["庫存保留失敗事件"]
     Compensate --> MessageBroker
     MessageBroker -->|"取消"| Order
 ```

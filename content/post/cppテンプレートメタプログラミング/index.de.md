@@ -123,15 +123,22 @@ Bei der Überladungsauflösung von Template-Funktionen leitet der Compiler die T
 
 ```mermaid
 stateDiagram-v2
+    state "Aufruf der Template-Funktion" as A
+    state "Typableitung" as B
+    state "Ersetzung der Signatur" as C
+    state "Ersetzung erfolgreich?" as D
+    state "Zum Kandidaten hinzufügen" as E
+    state "Als Kandidat ausschließen (nicht als Fehler) (SFINAE)" as F
+    state "Überladungsauflösung" as G
     [*] --> A
-    A["Aufruf der Template-Funktion"] --> B["Typableitung"]
-    B["Typableitung"] --> C["Ersetzung der Signatur"]
-    C["Ersetzung der Signatur"] --> D["Ersetzung erfolgreich?"]
-    D["Ersetzung erfolgreich?"] --> E["Zum Kandidaten hinzufügen"] : Yes
-    D["Ersetzung erfolgreich?"] --> F["Als Kandidat ausschließen (nicht als Fehler) (SFINAE)"] : No
-    E["Zum Kandidaten hinzufügen"] --> G["Überladungsauflösung"]
-    F["Als Kandidat ausschließen (nicht als Fehler) (SFINAE)"] --> G["Überladungsauflösung"]
-    G["Überladungsauflösung"] --> [*]
+    A --> B
+    B --> C
+    C --> D
+    D --> E : Yes
+    D --> F : No
+    E --> G
+    F --> G
+    G --> [*]
 ```
 
 ### 3.2 Bedingte Kompilierung mit std::enable_if

@@ -55,8 +55,8 @@ graph TD
         A["Menarik 1 bola"] -->|"Nomor bola adalah '7'"| B{"Apa isi guci tersebut?"}
         B -->|"Asumsikan probabilitas prior sama"| C["Hipotesis 1: Guci berisi 10 bola"]
         B -->|"Asumsikan probabilitas prior sama"| D["Hipotesis 2: Guci berisi 1000 bola"]
-        C -.->|"P("E|H1") = 1/10"| E["Hipotesis 1 memiliki likelihood lebih tinggi"]
-        D -.->|"P("E|H2") = 1/1000"| E
+        C -.->|"P(E#124;H1) = 1/10"| E["Hipotesis 1 memiliki likelihood lebih tinggi"]
+        D -.->|"P(E#124;H2) = 1/1000"| E
     end
 ```
 

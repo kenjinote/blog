@@ -75,12 +75,12 @@ Pour visualiser la série de processus de recherche d'une solution, nous avons p
 ```mermaid
 flowchart TD
     Start["Début : Entrer l'entier n"] --> CheckSquare["Déterminer si n est un carré parfait"]
-    CheckSquare --|"Oui"| Trivial["Seules des solutions triviales existent (Fin)"] --> End["Fin"]
-    CheckSquare --|"Non"| InitContFrac["Initialiser la récurrence pour la fraction continue"]
+    CheckSquare -->|"Oui"| Trivial["Seules des solutions triviales existent (Fin)"] --> End["Fin"]
+    CheckSquare -->|"Non"| InitContFrac["Initialiser la récurrence pour la fraction continue"]
     InitContFrac --> CalcNext["Calculer le terme suivant a_i et la réduite (p_i, q_i)"]
     CalcNext --> CheckEq["Condition : Évaluer p_i^2 - n * q_i^2 == 1"]
-    CheckEq --|"Faux"| CalcNext
-    CheckEq --|"Vrai"| Found["Trouvé la solution fondamentale (x_1, y_1) = (p_i, q_i)"] --> End
+    CheckEq -->|"Faux"| CalcNext
+    CheckEq -->|"Vrai"| Found["Trouvé la solution fondamentale (x_1, y_1) = (p_i, q_i)"] --> End
 ```
 
 ## 6. Exemple spécifique : Développement en fraction continue et solution fondamentale pour n = 7

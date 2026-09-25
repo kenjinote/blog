@@ -272,18 +272,25 @@ Das folgende Mermaid-[Zustand](https://kenji.blog/de/p/state-management-history-
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Normal["Normaler Modus"]
-    Normal --> Prefix["Präfix-Modus (Ctrl+B)"]
-    Prefix --> Command["Kommandozeile (:)"]
-    Prefix --> SplitV["Fenster vertikal teilen (%)"]
-    Prefix --> SplitH["Fenster horizontal teilen (\)"]
-    Prefix --> Switch["Fenster wechseln (n/p/0-9)"]
-    Prefix --> Detach["Sitzung trennen (d)"]
+    state "Normaler Modus" as Normal
+    state "Präfix-Modus (Ctrl+B)" as Prefix
+    state "Kommandozeile (:)" as Command
+    state "Fenster vertikal teilen (%)" as SplitV
+    state "Fenster horizontal teilen (\)" as SplitH
+    state "Fenster wechseln (n/p/0-9)" as Switch
+    state "Sitzung trennen (d)" as Detach
+    [*] --> Normal
+    Normal --> Prefix
+    Prefix --> Command
+    Prefix --> SplitV
+    Prefix --> SplitH
+    Prefix --> Switch
+    Prefix --> Detach
     
-    Command --> Normal["tmux-Befehl ausführen"]
-    SplitV --> Normal["Zum normalen Modus zurückkehren"]
-    SplitH --> Normal["Zum normalen Modus zurückkehren"]
-    Switch --> Normal["Zum normalen Modus zurückkehren"]
+    Command --> Normal : tmux-Befehl ausführen
+    SplitV --> Normal : Zum normalen Modus zurückkehren
+    SplitH --> Normal : Zum normalen Modus zurückkehren
+    Switch --> Normal : Zum normalen Modus zurückkehren
     Detach --> [*]
 ```
 

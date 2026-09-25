@@ -41,17 +41,17 @@ Além disso, as suas contribuições abrangeram diversas áreas, incluindo a fun
 
 ```mermaid
 graph TD
-    A["Andrew Carnegie"] -->|1. Ascensão a partir da pobreza| B["Experiência na indústria ferroviária e telegráfica"]
-    B -->|2. Visão de futuro| C["Fundação da Carnegie Steel Company"]
-    C -->|Integração vertical e eficiência| D["Acumulação de enorme riqueza (Rei do Aço)"]
-    D -->|Venda da empresa (1901)| E["Dedicação à filantropia"]
+    A["Andrew Carnegie"] -->|"1. Ascensão a partir da pobreza"| B["Experiência na indústria ferroviária e telegráfica"]
+    B -->|"2. Visão de futuro"| C["Fundação da Carnegie Steel Company"]
+    C -->|"Integração vertical e eficiência"| D["Acumulação de enorme riqueza (Rei do Aço)"]
+    D -->|"Venda da empresa (1901)"| E["Dedicação à filantropia"]
     
-    A -->|Filosofia única| F["Artigo 'O Evangelho da Riqueza'"]
-    F -->|Dever moral| E
+    A -->|"Filosofia única"| F["Artigo 'O Evangelho da Riqueza'"]
+    F -->|"Dever moral"| E
     
-    E -->|Apoio à educação| G["Fundação de mais de 2500 bibliotecas públicas"]
-    E -->|Apoio à cultura| H["Construção do Carnegie Hall"]
-    E -->|Academia e Paz| I["Univ. Carnegie Mellon e Fundação para a Paz Internacional"]
+    E -->|"Apoio à educação"| G["Fundação de mais de 2500 bibliotecas públicas"]
+    E -->|"Apoio à cultura"| H["Construção do Carnegie Hall"]
+    E -->|"Academia e Paz"| I["Univ. Carnegie Mellon e Fundação para a Paz Internacional"]
 ```
 
 ## O Significado de Carnegie nos Dias Atuais

@@ -34,10 +34,10 @@ ICカードの内部を透かして見ると、縁に沿って何周もぐるぐ
 
 ```mermaid
 graph LR
-    subgraph 改札機 (リーダー/ライター)
+    subgraph "改札機 (リーダー/ライター)"
         ReaderCoil["コイル"] -- "磁界(電波)を放射" --> Air((空間))
     end
-    subgraph ICカード (Suica等)
+    subgraph "ICカード (Suica等)"
         Air -- "磁界の変化" --> CardCoil["アンテナコイル"]
         CardCoil -- "電磁誘導で発電" --> Chip["ICチップ起動"]
     end

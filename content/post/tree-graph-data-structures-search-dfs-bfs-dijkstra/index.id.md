@@ -28,11 +28,11 @@ Struktur pohon terdiri dari elemen-elemen berikut:
 
 ```mermaid
 graph TD
-  "Akar" --> "SimpulA"
-  "Akar" --> "SimpulB"
-  "SimpulA" --> "Daun1"
-  "SimpulA" --> "Daun2"
-  "SimpulB" --> "Daun3"
+  Akar --> SimpulA
+  Akar --> SimpulB
+  SimpulA --> Daun1
+  SimpulA --> Daun2
+  SimpulB --> Daun3
 ```
 
 Sebagai dasar pencarian dalam struktur pohon, terdapat pencarian mendalam pertama (DFS) dan pencarian melebar pertama (BFS).
@@ -98,12 +98,12 @@ Terdapat jenis-jenis graf berikut:
 
 ```mermaid
 graph LR
-  "A" -- "5" --> "B"
-  "A" -- "2" --> "C"
-  "B" -- "1" --> "D"
-  "C" -- "8" --> "D"
-  "C" -- "4" --> "E"
-  "D" -- "3" --> "E"
+  A -- "5" --> B
+  A -- "2" --> C
+  B -- "1" --> D
+  C -- "8" --> D
+  C -- "4" --> E
+  D -- "3" --> E
 ```
 
 ## 5. Algoritma Dijkstra (Dijkstra's Algorithm)

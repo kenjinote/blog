@@ -290,7 +290,7 @@ flowchart TD
     Payment -->|"3. حدث اكتمال الدفع"| MessageBroker
     MessageBroker -->|"4. إشعار الحدث"| Inventory["خدمة المخزون"]
     
-    Inventory -- "عند الفشل" -->|"معاملة تعويضية"| Compensate["حدث فشل تخصيص المخزون"]
+    Inventory -->|"عند الفشل#quot; / #quot;معاملة تعويضية"| Compensate["حدث فشل تخصيص المخزون"]
     Compensate --> MessageBroker
     MessageBroker -->|"إلغاء"| Order
 ```

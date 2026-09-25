@@ -162,7 +162,7 @@ sequenceDiagram
     PeerB->>STUN: "Petición de Enlace"
     STUN-->>PeerB: "IP Pública y Puerto"
     PeerB->>PeerA: "Enviar Candidate vía señalización"
-    PeerA<-->>PeerB: "Comprobación de conectividad (STUN Ping)"
+    PeerA<<-->>PeerB: "Comprobación de conectividad (STUN Ping)"
     PeerA->>PeerB: "Conexión P2P completada en la ruta óptima"
 ```
 

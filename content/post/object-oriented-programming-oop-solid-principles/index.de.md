@@ -117,22 +117,22 @@ In einigen Sprachen wie C++ ist die **Mehrfachvererbung**, bei der von mehreren 
 
 ```mermaid
 classDiagram
-    class "Animal" {
+    class Animal {
         +eat()
     }
-    class "Mammal" {
+    class Mammal {
         +eat()
     }
-    class "WingedAnimal" {
+    class WingedAnimal {
         +eat()
     }
-    class "Bat" {
+    class Bat {
     }
     
-    "Animal" <|-- "Mammal"
-    "Animal" <|-- "WingedAnimal"
-    "Mammal" <|-- "Bat"
-    "WingedAnimal" <|-- "Bat"
+    Animal <|-- Mammal
+    Animal <|-- WingedAnimal
+    Mammal <|-- Bat
+    WingedAnimal <|-- Bat
 ```
 
 Wenn Bat die Methode `eat()` aufruft, entsteht das Problem der Mehrdeutigkeit, ob die Implementierung von Mammal oder von WingedAnimal aufgerufen werden soll. In [Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) oder C# wird die Mehrfachvererbung von Klassen untersagt, und dieses Problem wird durch die Verwendung von **Interfaces** umgangen.
@@ -240,23 +240,23 @@ Das vorherige Beispiel der Flächenberechnung von Formen (Shape) erfüllt das OC
 
 ```mermaid
 classDiagram
-    class "Shape" {
+    class Shape {
         <<interface>>
         +calculateArea() double
     }
-    class "Circle" {
+    class Circle {
         +calculateArea() double
     }
-    class "Rectangle" {
+    class Rectangle {
         +calculateArea() double
     }
-    class "Triangle" {
+    class Triangle {
         +calculateArea() double
     }
     
-    "Shape" <|.. "Circle"
-    "Shape" <|.. "Rectangle"
-    "Shape" <|.. "Triangle"
+    Shape <|.. Circle
+    Shape <|.. Rectangle
+    Shape <|.. Triangle
 ```
 
 ### 3.3 Liskovsches Substitutionsprinzip (Liskov Substitution Principle: LSP)

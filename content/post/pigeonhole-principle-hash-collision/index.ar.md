@@ -82,9 +82,9 @@ graph TD
     end
 
     subgraph "فضاء التجزئة المحدود (الأعشاش)"
-        V1("Hash("A")")
-        V2("Hash("B") = Hash("C")")
-        V3("Hash("D")")
+        V1("Hash(A)")
+        V2("Hash(B) = Hash(C)")
+        V3("Hash(D)")
     end
 
     A -->|"تجزئة"| H
@@ -152,7 +152,7 @@ graph LR
         F1("ملف عقد PDF عادي")
         F2("ملف عقد PDF خبيث")
         H{"دالة تجزئة SHA-1"}
-        V("نفس قيمة التجزئة\n("38762cf7f55934b34d179ae6a4c80cadccbb7f0a")")
+        V("نفس قيمة التجزئة\n(38762cf7f55934b34d179ae6a4c80cadccbb7f0a)")
     end
 
     F1 -->|"إدخال"| H

@@ -251,8 +251,8 @@ Com base nos dados pré-processados, vamos analisar a relação entre os indicad
 
 ```mermaid
 xychart-beta
-    title VFC vs Horas Diárias de Codificação (Normalizado)
-    x-axis ["Seg, Ter, Qua, Qui, Sex, Sáb, Dom"]
+    title "VFC vs Horas Diárias de Codificação (Normalizado)"
+    x-axis ["Seg", "Ter", "Qua", "Qui", "Sex", "Sáb", "Dom"]
     y-axis "VFC e Saída de Código" 10 --> 100
     line [45, 52, 65, 75, 70, 58, 48]
     bar [35, 42, 58, 65, 60, 20, 15]

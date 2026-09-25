@@ -221,8 +221,8 @@ graph TD
 
 ```mermaid
 xychart-beta
-    title 參數數量與所需 VRAM（假設 4-bit 量化）
-    x-axis "模型名稱" ["Phi-3 Mini (3.8B), Llama 3 (8B), Gemma 2 (9B), Mixtral (8x7B), Qwen 2.5 (32B), Llama 3 (70B)"]
+    title "參數數量與所需 VRAM（假設 4-bit 量化）"
+    x-axis "模型名稱" ["Phi-3 Mini (3.8B)", "Llama 3 (8B)", "Gemma 2 (9B)", "Mixtral (8x7B)", "Qwen 2.5 (32B)", "Llama 3 (70B)"]
     y-axis "所需 VRAM (GB)" 0 --> 45
     bar [3.5, 6.0, 6.5, 26.0, 22.0, 40.0]
 ```

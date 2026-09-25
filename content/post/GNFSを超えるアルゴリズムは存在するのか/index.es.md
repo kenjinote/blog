@@ -148,7 +148,7 @@ Teniendo en cuenta las implementaciones de circuitos optimizadas recientemente, 
 
 ```mermaid
 graph LR
-  A["Algoritmo clásico (GNFS)"] -->|"Límite"| B["Tiempo subexponencial L_n[1/3"]"]
+  A["Algoritmo clásico (GNFS)"] -->|"Límite"| B["Tiempo subexponencial L_n[1/3]"]
   C["Algoritmo cuántico (Shor)"] -->|"Gran avance"| D["Tiempo polinómico O((log n)^3)"]
   B --> E["Uso continuo del cifrado RSA (Aumento de longitud de clave)"]
   D --> F["Colapso total del cifrado RSA"]

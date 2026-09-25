@@ -162,7 +162,7 @@ sequenceDiagram
     PeerB->>STUN: "Binding Request"
     STUN-->>PeerB: "IP publique & Port"
     PeerB->>PeerA: "Envoyer le candidat via signalisation"
-    PeerA<-->>PeerB: "Vérification de connectivité (STUN Ping)"
+    PeerA<<-->>PeerB: "Vérification de connectivité (STUN Ping)"
     PeerA->>PeerB: "Connexion P2P établie via le chemin optimal"
 ```
 

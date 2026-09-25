@@ -82,9 +82,9 @@ graph TD
     end
 
     subgraph "As Fronteiras estritas de Limites / Universo base Finito (As Casas / O ninho)"
-        V1("Outputs ao cômputo e valor - Hash("A")")
-        V2("Outputs e valores colapsados à Matrizes - Hash("B") = O Equivalente à Hash("C")")
-        V3("Outputs cômputo valor à - Hash("D")")
+        V1("Outputs ao cômputo e valor - Hash(A)")
+        V2("Outputs e valores colapsados à Matrizes - Hash(B) = O Equivalente à Hash(C)")
+        V3("Outputs cômputo valor à - Hash(D)")
     end
 
     A -->|"Formatações Avaliativas em - Hashing"| H
@@ -154,7 +154,7 @@ graph LR
         F1("No arquivo de Input Base A (O original Fiável em forma a 'Contrato PDF')")
         F2("No arquivo do Input na Base B (Com a alteração do 'Contrato em modelagem para as corrupções no Ficheiro do PDF - Fraudulento')")
         H{"Avaliador de base Hash a - (O SHA-1 formatador do Output)"}
-        V("A Equivalência do Valor na matriz d'Output\n("Colisões das Saída exata a = '38762cf7f55934b34d179ae6a4c80cadccbb7f0a'")")
+        V("A Equivalência do Valor na matriz d'Output\n(Colisões das Saída exata a = '38762cf7f55934b34d179ae6a4c80cadccbb7f0a')")
     end
 
     F1 -->|"No provimento do (Input à Entrada base Data)"| H

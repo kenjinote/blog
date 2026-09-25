@@ -51,15 +51,15 @@ Dalam banyak kasus, karena jarak dan waktu tidak bisa bernilai negatif, kita men
 
 ```mermaid
 graph LR
-    "A"(("A")) -->|"4"| "B"(("B"))
-    "A" -->|"2"| "C"(("C"))
-    "B" -->|"5"| "D"(("D"))
-    "C" -->|"1"| "B"
-    "C" -->|"8"| "D"
-    "C" -->|"10"| "E"(("E"))
-    "D" -->|"2"| "E"
-    "D" -->|"6"| "Z"(("Z"))
-    "E" -->|"3"| "Z"
+    A(("A")) -->|"4"| B(("B"))
+    A -->|"2"| C(("C"))
+    B -->|"5"| D(("D"))
+    C -->|"1"| B
+    C -->|"8"| D
+    C -->|"10"| E(("E"))
+    D -->|"2"| E
+    D -->|"6"| Z(("Z"))
+    E -->|"3"| Z
 ```
 
 Gambar di atas adalah contoh graf berarah berbobot dari simpul $ A $ hingga $ Z $. Angka pada sisi (edge) mewakili biaya (bobot).
@@ -262,21 +262,21 @@ Diagram Mermaid berikut adalah gambaran perbandingan jangkauan pencarian algorit
 ```mermaid
 graph TD
     subgraph "Dijkstra"
-        "S1"(("Start")) --> "A1"((" "))
-        "S1" --> "B1"((" "))
-        "S1" --> "C1"((" "))
-        "A1" --> "D1"((" "))
-        "B1" --> "Goal1"(("Goal"))
-        "C1" --> "E1"((" "))
-        style "S1" fill:#4a9,stroke:#333
-        style "Goal1" fill:#f94,stroke:#333
+        S1(("Start")) --> A1((" "))
+        S1 --> B1((" "))
+        S1 --> C1((" "))
+        A1 --> D1((" "))
+        B1 --> Goal1(("Goal"))
+        C1 --> E1((" "))
+        style S1 fill:#4a9,stroke:#333
+        style Goal1 fill:#f94,stroke:#333
     end
 
     subgraph "A_Star"
-        "S2"(("Start")) --> "B2"((" "))
-        "B2" --> "Goal2"(("Goal"))
-        style "S2" fill:#4a9,stroke:#333
-        style "Goal2" fill:#f94,stroke:#333
+        S2(("Start")) --> B2((" "))
+        B2 --> Goal2(("Goal"))
+        style S2 fill:#4a9,stroke:#333
+        style Goal2 fill:#f94,stroke:#333
     end
 ```
 

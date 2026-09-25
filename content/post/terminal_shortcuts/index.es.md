@@ -272,18 +272,25 @@ El siguiente diagrama de transición de estado de Mermaid muestra el flujo de op
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Normal["Modo normal"]
-    Normal --> Prefix["Modo de prefijo (Ctrl+B)"]
-    Prefix --> Command["Símbolo del sistema (:)"]
-    Prefix --> SplitV["Dividir panel verticalmente (%)"]
-    Prefix --> SplitH["Dividir panel horizontalmente (\)"]
-    Prefix --> Switch["Cambiar de ventana (n/p/0-9)"]
-    Prefix --> Detach["Desconectar sesión (d)"]
+    state "Modo normal" as Normal
+    state "Modo de prefijo (Ctrl+B)" as Prefix
+    state "Símbolo del sistema (:)" as Command
+    state "Dividir panel verticalmente (%)" as SplitV
+    state "Dividir panel horizontalmente (\)" as SplitH
+    state "Cambiar de ventana (n/p/0-9)" as Switch
+    state "Desconectar sesión (d)" as Detach
+    [*] --> Normal
+    Normal --> Prefix
+    Prefix --> Command
+    Prefix --> SplitV
+    Prefix --> SplitH
+    Prefix --> Switch
+    Prefix --> Detach
     
-    Command --> Normal["Ejecutar comando de tmux"]
-    SplitV --> Normal["Volver al modo normal"]
-    SplitH --> Normal["Volver al modo normal"]
-    Switch --> Normal["Volver al modo normal"]
+    Command --> Normal : Ejecutar comando de tmux
+    SplitV --> Normal : Volver al modo normal
+    SplitH --> Normal : Volver al modo normal
+    Switch --> Normal : Volver al modo normal
     Detach --> [*]
 ```
 

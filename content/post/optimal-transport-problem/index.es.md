@@ -28,7 +28,7 @@ El costo suele representarse como el producto de la "cantidad de arena movida" p
 ```mermaid
 flowchart LR
     A["Montón de arena (Oferta)"] -->|"Transporte"| B["Hoyo (Demanda)"]
-    C["Ubicación x"] -->|"Distancia d("x, y")"| D["Ubicación y"]
+    C["Ubicación x"] -->|"Distancia d(x, y)"| D["Ubicación y"]
 ```
 
 Expresado matemáticamente, sea la distribución del montón de arena original una medida de probabilidad $\mu$ en $X$, y la distribución del hoyo una medida de probabilidad $\nu$ en $Y$.

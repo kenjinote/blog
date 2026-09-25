@@ -162,7 +162,7 @@ sequenceDiagram
     PeerB->>STUN: "Binding Request"
     STUN-->>PeerB: "Public IP & Port"
     PeerB->>PeerA: "Отправка Candidate через сигнализацию"
-    PeerA<-->>PeerB: "Проверка связности (STUN Ping)"
+    PeerA<<-->>PeerB: "Проверка связности (STUN Ping)"
     PeerA->>PeerB: "Установка P2P соединения по оптимальному маршруту"
 ```
 

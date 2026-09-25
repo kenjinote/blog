@@ -67,8 +67,8 @@ O gráfico abaixo ilustra visualmente essa divergência.
 
 ```mermaid
 xychart-beta
-    title Productivity Divergence Over Time (The Matthew Effect)
-    x-axis ["Ano 1, Ano 2, Ano 3, Ano 4, Ano 5, Ano 6"]
+    title "Productivity Divergence Over Time (The Matthew Effect)"
+    x-axis ["Ano 1", "Ano 2", "Ano 3", "Ano 4", "Ano 5", "Ano 6"]
     y-axis "Volume de Saída" 0 --> 200
     line [10, 15, 30, 60, 110, 180]
     line [10, 12, 14, 16, 18, 20]

@@ -218,8 +218,8 @@ graph TD
 
 ```mermaid
 xychart-beta
-    title पैरामीटर्स की संख्या और आवश्यक VRAM (4-bit क्वांटाइजेशन अनुमानित)
-    x-axis "मॉडल का नाम" ["Phi-3 Mini (3.8B), Llama 3 (8B), Gemma 2 (9B), Mixtral (8x7B), Qwen 2.5 (32B), Llama 3 (70B)"]
+    title "पैरामीटर्स की संख्या और आवश्यक VRAM (4-bit क्वांटाइजेशन अनुमानित)"
+    x-axis "मॉडल का नाम" ["Phi-3 Mini (3.8B)", "Llama 3 (8B)", "Gemma 2 (9B)", "Mixtral (8x7B)", "Qwen 2.5 (32B)", "Llama 3 (70B)"]
     y-axis "आवश्यक VRAM (GB)" 0 --> 45
     bar [3.5, 6.0, 6.5, 26.0, 22.0, 40.0]
 ```

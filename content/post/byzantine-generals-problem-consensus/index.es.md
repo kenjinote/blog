@@ -174,12 +174,12 @@ Un nodo siempre asume uno de los siguientes tres estados:
 
 ```mermaid
 stateDiagram-v2
-    [*] --> "Follower"
-    "Follower" --> "Candidate" : "Ocurre tiempo de espera"
-    "Candidate" --> "Candidate" : "Tiempo de espera de elección"
-    "Candidate" --> "Leader" : "Gana mayoría de votos"
-    "Candidate" --> "Follower" : "Descubre un nuevo líder"
-    "Leader" --> "Follower" : "Descubre un Term mayor"
+    [*] --> Follower
+    Follower --> Candidate : "Ocurre tiempo de espera"
+    Candidate --> Candidate : "Tiempo de espera de elección"
+    Candidate --> Leader : "Gana mayoría de votos"
+    Candidate --> Follower : "Descubre un nuevo líder"
+    Leader --> Follower : "Descubre un Term mayor"
 ```
 
 ### 4.2 Mecanismo de elección de líder

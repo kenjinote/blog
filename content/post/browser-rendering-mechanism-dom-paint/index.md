@@ -139,20 +139,20 @@ gantt
 
     section 通常のスクリプト
     HTML解析       :active, a1, 0, 2s
-    JSダウンロード :crit, a2, 2s, 4s
-    JS実行         :crit, a3, 4s, 6s
-    HTML解析再開   :active, a4, 6s, 8s
+    JSダウンロード :crit, a2, 2, 4s
+    JS実行         :crit, a3, 4, 6s
+    HTML解析再開   :active, a4, 6, 8s
 
     section async属性
     HTML解析       :active, b1, 0, 5s
-    JSダウンロード :crit, b2, 2s, 4s
-    JS実行         :crit, b3, 5s, 7s
-    HTML解析再開   :active, b4, 7s, 9s
+    JSダウンロード :crit, b2, 2, 4s
+    JS実行         :crit, b3, 5, 7s
+    HTML解析再開   :active, b4, 7, 9s
 
     section defer属性
     HTML解析       :active, c1, 0, 6s
-    JSダウンロード :crit, c2, 1s, 4s
-    JS実行         :crit, c3, 6s, 8s
+    JSダウンロード :crit, c2, 1, 4s
+    JS実行         :crit, c3, 6, 8s
 ```
 *(※実際の `async` はダウンロード完了後すぐに実行するため、パースを中断させます。)*
 

@@ -51,8 +51,8 @@ $ g $ is the coupling constant, and $ f^{abc} $ are the structure constants of t
 ```mermaid
 graph TD
     A["Gauge Theory"] -->|"Extension"| B["Yang-Mills Theory"]
-    B -->|"SU("3") Symmetry"| C["Quantum Chromodynamics (QCD)"]
-    B -->|"SU("2")xU("1") Symmetry"| D["Electroweak Theory"]
+    B -->|"SU(3) Symmetry"| C["Quantum Chromodynamics (QCD)"]
+    B -->|"SU(2)xU(1) Symmetry"| D["Electroweak Theory"]
     C -->|"Strong Interaction"| E["Standard Model"]
     D -->|"Electromagnetic & Weak Interaction"| E
 ```

@@ -210,8 +210,8 @@ Le graphique ci-dessous illustre conceptuellement le gouffre désespérant entre
 
 ```mermaid
 xychart-beta
-    title Compétences enseignées à l'école au Japon vs Niveau requis par l'industrie
-    x-axis ["Langages visuels, Syntaxe de base/variables, Algorithmes/Complexité, OS/Réseaux, DB/Conception de systèmes, Cloud/Architecture distribuée"]
+    title "Compétences enseignées à l'école au Japon vs Niveau requis par l'industrie"
+    x-axis ["Langages visuels", "Syntaxe de base/variables", "Algorithmes/Complexité", "OS/Réseaux", "DB/Conception de systèmes", "Cloud/Architecture distribuée"]
     y-axis "Niveau d'atteinte / Exigence (%)" 0 --> 100
     line "Niveau atteint dans l'enseignement scolaire actuel" [95, 60, 15, 5, 2, 0]
     line "Niveau exigé par l'industrie et la tech" [0, 20, 85, 90, 95, 100]

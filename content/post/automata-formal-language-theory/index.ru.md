@@ -59,19 +59,19 @@ $$
 
 ```mermaid
 flowchart TD
-    "Type0"["Тип-0: Рекурсивно перечислимые языки\n(Машина Тьюринга)"]
-    "Type1"["Тип-1: Контекстно-зависимые языки\n(Линейно ограниченный автомат)"]
-    "Type2"["Тип-2: Контекстно-свободные языки\n(Магазинный автомат)"]
-    "Type3"["Тип-3: Регулярные языки\n(Конечный автомат)"]
+    Type0["Тип-0: Рекурсивно перечислимые языки\n(Машина Тьюринга)"]
+    Type1["Тип-1: Контекстно-зависимые языки\n(Линейно ограниченный автомат)"]
+    Type2["Тип-2: Контекстно-свободные языки\n(Магазинный автомат)"]
+    Type3["Тип-3: Регулярные языки\n(Конечный автомат)"]
 
-    "Type0" --- "Type1"
-    "Type1" --- "Type2"
-    "Type2" --- "Type3"
+    Type0 --- Type1
+    Type1 --- Type2
+    Type2 --- Type3
 
-    style "Type0" fill:#f9f9f9,stroke:#333,stroke-width:2px
-    style "Type1" fill:#e9e9e9,stroke:#333,stroke-width:2px
-    style "Type2" fill:#d9d9d9,stroke:#333,stroke-width:2px
-    style "Type3" fill:#c9c9c9,stroke:#333,stroke-width:2px
+    style Type0 fill:#f9f9f9,stroke:#333,stroke-width:2px
+    style Type1 fill:#e9e9e9,stroke:#333,stroke-width:2px
+    style Type2 fill:#d9d9d9,stroke:#333,stroke-width:2px
+    style Type3 fill:#c9c9c9,stroke:#333,stroke-width:2px
 ```
 
 1.  **Тип 3 (Регулярные языки)** : Могут быть выражены регулярными выражениями и распознаны конечным автоматом.
@@ -105,15 +105,15 @@ flowchart TD
 
 ```mermaid
 stateDiagram-v2
-    [*] --> "q0"
-    "q0" --> "q1" : "1"
-    "q0" --> "q0" : "0"
-    "q1" --> "q2" : "0"
-    "q1" --> "q1" : "1"
-    "q2" --> "q3" : "1"
-    "q2" --> "q0" : "0"
-    "q3" --> "q3" : "0, 1"
-    "q3" --> [*]
+    [*] --> q0
+    q0 --> q1 : "1"
+    q0 --> q0 : "0"
+    q1 --> q2 : "0"
+    q1 --> q1 : "1"
+    q2 --> q3 : "1"
+    q2 --> q0 : "0"
+    q3 --> q3 : "0, 1"
+    q3 --> [*]
 ```
 
 Давайте реализуем эту диаграмму переходов состояний в виде программы на Python.
@@ -261,10 +261,10 @@ print("a:", pda.accepts("a"))           # False
 flowchart LR
     subgraph "Tape"
         direction LR
-        "T1"["..."] --- "T2"["0"] --- "T3"["1"] --- "T4"["1"] --- "T5"["0"] --- "T6"["..."]
+        T1["..."] --- T2["0"] --- T3["1"] --- T4["1"] --- T5["0"] --- T6["..."]
     end
-    "Head"(("Head")) --> "T3"
-    "State"["Состояние: q_read\n(Конечное управление)"] --- "Head"
+    Head(("Head")) --> T3
+    State["Состояние: q_read\n(Конечное управление)"] --- Head
 ```
 
 ### Проблема остановки ([Halting Problem](https://kenji.blog/ru/p/turing-machine-computability/))

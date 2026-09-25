@@ -129,14 +129,20 @@ Service Worker는 페이지와는 독립적인 자체 수명 주기를 가집니
 
 ```mermaid
 stateDiagram-v2
+    state "파싱됨" as repairedState1
+    state "설치 중" as repairedState2
+    state "설치됨 (대기 중)" as repairedState3
+    state "폐기됨" as repairedState4
+    state "활성화 중" as repairedState5
+    state "활성화됨" as repairedState6
     direction TB
-    "파싱됨" --> "설치 중" : "등록"
-    "설치 중" --> "설치됨 (대기 중)" : "성공"
-    "설치 중" --> "폐기됨" : "에러"
-    "설치됨 (대기 중)" --> "활성화 중" : "모든 클라이언트 종료 / skipWaiting()"
-    "활성화 중" --> "활성화됨" : "성공"
-    "활성화 중" --> "폐기됨" : "에러"
-    "활성화됨" --> "폐기됨" : "새로운 서비스 워커로 교체됨"
+    repairedState1 --> repairedState2 : "등록"
+    repairedState2 --> repairedState3 : "성공"
+    repairedState2 --> repairedState4 : "에러"
+    repairedState3 --> repairedState5 : "모든 클라이언트 종료 / skipWaiting()"
+    repairedState5 --> repairedState6 : "성공"
+    repairedState5 --> repairedState4 : "에러"
+    repairedState6 --> repairedState4 : "새로운 서비스 워커로 교체됨"
 ```
 
 1. **파싱됨 (Parsed)** : 브라우저가 Service Worker 스크립트를 다운로드하고 구문 분석을 마친 상태.
@@ -180,14 +186,18 @@ Service Worker의 가장 큰 묘미는 네트워크 요청( `fetch` 이벤트)�
 
 ```mermaid
 flowchart TD
-    "페이지" -->|"1. 요청"| "서비스 워커"
-    "서비스 워커" -->|"2. 캐시 확인"| "캐시"
-    "캐시" -->|"3a. 캐시 적중"| "서비스 워커"
-    "서비스 워커" -->|"4a. 응답"| "페이지"
-    "캐시" -->|"3b. 캐시 미스"| "네트워크"
-    "네트워크" -->|"4b. 응답"| "서비스 워커"
-    "서비스 워커" -->|"5b. 캐시에 저장"| "캐시"
-    "서비스 워커" -->|"6b. 응답"| "페이지"
+    repairedNode1["페이지"]
+    repairedNode2["서비스 워커"]
+    repairedNode3["캐시"]
+    repairedNode4["네트워크"]
+    repairedNode1 -->|"1. 요청"| repairedNode2
+    repairedNode2 -->|"2. 캐시 확인"| repairedNode3
+    repairedNode3 -->|"3a. 캐시 적중"| repairedNode2
+    repairedNode2 -->|"4a. 응답"| repairedNode1
+    repairedNode3 -->|"3b. 캐시 미스"| repairedNode4
+    repairedNode4 -->|"4b. 응답"| repairedNode2
+    repairedNode2 -->|"5b. 캐시에 저장"| repairedNode3
+    repairedNode2 -->|"6b. 응답"| repairedNode1
 ```
 
 ### 6.2. Network First (네트워크 우선)
@@ -196,15 +206,19 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    "페이지" -->|"1. 요청"| "서비스 워커"
-    "서비스 워커" -->|"2. 가져오기"| "네트워크"
-    "네트워크" -->|"3a. 성공"| "서비스 워커"
-    "서비스 워커" -->|"4a. 캐시에 저장"| "캐시"
-    "서비스 워커" -->|"5a. 응답"| "페이지"
-    "네트워크" -->|"3b. 에러 / 오프라인"| "서비스 워커"
-    "서비스 워커" -->|"4b. 캐시 확인"| "캐시"
-    "캐시" -->|"5b. 캐시 적중"| "서비스 워커"
-    "서비스 워커" -->|"6b. 폴백 응답"| "페이지"
+    repairedNode1["페이지"]
+    repairedNode2["서비스 워커"]
+    repairedNode3["네트워크"]
+    repairedNode4["캐시"]
+    repairedNode1 -->|"1. 요청"| repairedNode2
+    repairedNode2 -->|"2. 가져오기"| repairedNode3
+    repairedNode3 -->|"3a. 성공"| repairedNode2
+    repairedNode2 -->|"4a. 캐시에 저장"| repairedNode4
+    repairedNode2 -->|"5a. 응답"| repairedNode1
+    repairedNode3 -->|"3b. 에러 / 오프라인"| repairedNode2
+    repairedNode2 -->|"4b. 캐시 확인"| repairedNode4
+    repairedNode4 -->|"5b. 캐시 적중"| repairedNode2
+    repairedNode2 -->|"6b. 폴백 응답"| repairedNode1
 ```
 
 ### 6.3. Stale-while-revalidate (오래된 캐시를 반환하며 백그라운드에서 업데이트)
@@ -214,13 +228,17 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    "페이지" -->|"1. 요청"| "서비스 워커"
-    "서비스 워커" -->|"2. 캐시 확인"| "캐시"
-    "캐시" -->|"3. 캐시 적중 (빠른 응답)"| "서비스 워커"
-    "서비스 워커" -->|"4. 오래된 응답 반환"| "페이지"
-    "서비스 워커" -.->|"5. 가져오기 (백그라운드)"| "네트워크"
-    "네트워크" -.->|"6. 네트워크 응답"| "서비스 워커"
-    "서비스 워커" -.->|"7. 캐시 업데이트"| "캐시"
+    repairedNode1["페이지"]
+    repairedNode2["서비스 워커"]
+    repairedNode3["캐시"]
+    repairedNode4["네트워크"]
+    repairedNode1 -->|"1. 요청"| repairedNode2
+    repairedNode2 -->|"2. 캐시 확인"| repairedNode3
+    repairedNode3 -->|"3. 캐시 적중 (빠른 응답)"| repairedNode2
+    repairedNode2 -->|"4. 오래된 응답 반환"| repairedNode1
+    repairedNode2 -.->|"5. 가져오기 (백그라운드)"| repairedNode4
+    repairedNode4 -.->|"6. 네트워크 응답"| repairedNode2
+    repairedNode2 -.->|"7. 캐시 업데이트"| repairedNode3
 ```
 
 ### 6.4. Cache Only / Network Only

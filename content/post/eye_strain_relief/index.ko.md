@@ -121,7 +121,7 @@ $$ p = k \ln \left( \frac{S}{S_0} \right) $$
 
 ```mermaid
 xychart-beta
-    title 블루라이트 방출 스펙트럼 비교
+    title "블루라이트 방출 스펙트럼 비교"
     x-axis "파장 (nm)" [400, 420, 440, 460, 480, 500]
     y-axis "상대 강도" 0 --> 100
     bar "표준 LCD (W-LED)" [10, 30, 95, 80, 40, 20]

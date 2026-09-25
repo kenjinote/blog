@@ -127,7 +127,7 @@ graph TD
     subgraph "AES의 1라운드 처리 (SPN 구조)"
         A["입력 상태 (128-bit)"] --> B("SubBytes (바이트 대체 / S-Box)")
         B --> C("ShiftRows (행 시프트)")
-        C --> D("MixColumns (열 믹스 / GF("2^8") 상의 곱셈)")
+        C --> D("MixColumns (열 믹스 / GF(2^8) 상의 곱셈)")
         D --> E("AddRoundKey (라운드 키와의 XOR)")
         E --> F["다음 라운드로"]
     end

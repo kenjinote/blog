@@ -125,8 +125,8 @@ sequenceDiagram
     participant S2 as "Variable s2"
     
     S1->>Heap: "Asigna y Posee"
-    Note over S1,S2: "let s2 = s1;"
-    S1--xHeap: "Pierde la Propiedad (Invalidado)"
+    Note over S1,S2: "let s2 = s1#59;"
+    S1--x Heap: "Pierde la Propiedad (Invalidado)"
     S2->>Heap: "Toma la Propiedad"
 ```
 
@@ -220,8 +220,8 @@ De esta manera, en [Rust](https://kenji.blog/es/p/webassembly-wasm-current-futur
 ```mermaid
 graph LR
     A["Variable v (Propietario)"] --> B["Matriz en el Montículo [1, 2, 3]"]
-    C["Referencia 'first' (&v[0"])"] -.->|"Préstamo Inmutable"| B
-    A -->|"X "¡Préstamo Mutable Denegado!""| D["v.push(4)"]
+    C["Referencia 'first' (&v[0])"] -.->|"Préstamo Inmutable"| B
+    A -->|"X #quot;¡Préstamo Mutable Denegado!#quot;"| D["v.push(4)"]
     
     style C stroke:#00FF00,stroke-width:2px
     style D stroke:#FF0000,stroke-width:2px

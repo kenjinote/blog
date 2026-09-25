@@ -39,13 +39,13 @@ Pada HTTP/1.1, satu permintaan dan respons harus diproses secara berurutan pada 
 HTTP/2 memecahkan masalah ini dengan **pemultipleksan (Multiplexing)** melalui **aliran (stream)**. Ini membuat beberapa aliran virtual dalam satu koneksi TCP, memecah permintaan dan respons menjadi bingkai-bingkai kecil, dan memungkinkan mereka dikirim secara bersamaan.
 
 ```mermaid
-architecture-beta
-    group http2("Arsitektur HTTP/2")
-    service tcp("Koneksi TCP") in http2
-    service s1("Aliran 1: HTML") in http2
-    service s2("Aliran 2: CSS") in http2
-    service s3("Aliran 3: JS") in http2
-    
+flowchart TB
+    subgraph http2 ["Arsitektur HTTP/2"]
+        tcp["Koneksi TCP"]
+        s1["Aliran 1: HTML"]
+        s2["Aliran 2: CSS"]
+        s3["Aliran 3: JS"]
+    end
     s1 --> tcp
     s2 --> tcp
     s3 --> tcp

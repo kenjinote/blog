@@ -82,9 +82,9 @@ $$
 ```mermaid
 graph TD
     A["람다 식"] --> B{"평가 가능한가?"}
-    B --|"Yes"|--> C["베타 간약"]
+    B -->|"Yes"| C["베타 간약"]
     C --> A
-    B --|"No"|--> D["정규형 Normal Form"]
+    B -->|"No"| D["정규형 Normal Form"]
     
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style D fill:#bbf,stroke:#333,stroke-width:2px

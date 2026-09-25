@@ -58,8 +58,8 @@ graph TD
         A["Ziehe 1 Kugel"] -->|"Die Nummer war '7'"| B{"Was ist in der Urne?"}
         B -->|"Angenommen, Vorab-Wahrscheinlichkeiten sind gleich"| C["Hypothese 1: Urne mit 10 Kugeln"]
         B -->|"Angenommen, Vorab-Wahrscheinlichkeiten sind gleich"| D["Hypothese 2: Urne mit 1000 Kugeln"]
-        C -.->|"P("E|H1") = 1/10"| E["Hypothese 1 hat eine viel höhere Wahrscheinlichkeit"]
-        D -.->|"P("E|H2") = 1/1000"| E
+        C -.->|"P(E#124;H1) = 1/10"| E["Hypothese 1 hat eine viel höhere Wahrscheinlichkeit"]
+        D -.->|"P(E#124;H2) = 1/1000"| E
     end
 ```
 

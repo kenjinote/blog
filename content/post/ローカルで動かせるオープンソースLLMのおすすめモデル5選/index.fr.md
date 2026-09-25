@@ -218,8 +218,8 @@ Le graphique ci-dessous indique une estimation de la VRAM requise lors de l'inf�
 
 ```mermaid
 xychart-beta
-    title Nombre de paramètres et VRAM requise (Estimation pour quantification 4-bit)
-    x-axis "Nom du modèle" ["Phi-3 Mini (3.8B), Llama 3 (8B), Gemma 2 (9B), Mixtral (8x7B), Qwen 2.5 (32B), Llama 3 (70B)"]
+    title "Nombre de paramètres et VRAM requise (Estimation pour quantification 4-bit)"
+    x-axis "Nom du modèle" ["Phi-3 Mini (3.8B)", "Llama 3 (8B)", "Gemma 2 (9B)", "Mixtral (8x7B)", "Qwen 2.5 (32B)", "Llama 3 (70B)"]
     y-axis "VRAM requise (Go)" 0 --> 45
     bar [3.5, 6.0, 6.5, 26.0, 22.0, 40.0]
 ```

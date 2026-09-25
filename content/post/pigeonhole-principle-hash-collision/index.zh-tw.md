@@ -82,9 +82,9 @@ graph TD
     end
 
     subgraph "有限的雜湊空間（鴿籠）"
-        V1("Hash("A")")
-        V2("Hash("B") = Hash("C")")
-        V3("Hash("D")")
+        V1("Hash(A)")
+        V2("Hash(B) = Hash(C)")
+        V3("Hash(D)")
     end
 
     A -->|"雜湊化"| H
@@ -152,7 +152,7 @@ graph LR
         F1("正常的PDF合約書")
         F2("惡意的PDF合約書")
         H{"SHA-1 雜湊函數"}
-        V("相同的雜湊值\n("38762cf7f55934b34d179ae6a4c80cadccbb7f0a")")
+        V("相同的雜湊值\n(38762cf7f55934b34d179ae6a4c80cadccbb7f0a)")
     end
 
     F1 -->|"輸入"| H

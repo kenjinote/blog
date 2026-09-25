@@ -82,9 +82,9 @@ graph TD
     end
 
     subgraph "有限のハッシュ空間（巣）"
-        V1("Hash("A")")
-        V2("Hash("B") = Hash("C")")
-        V3("Hash("D")")
+        V1("Hash(A)")
+        V2("Hash(B) = Hash(C)")
+        V3("Hash(D)")
     end
 
     A -->|"ハッシュ化"| H
@@ -152,7 +152,7 @@ graph LR
         F1("正常なPDF契約書")
         F2("悪意あるPDF契約書")
         H{"SHA-1 ハッシュ関数"}
-        V("同一のハッシュ値\n("38762cf7f55934b34d179ae6a4c80cadccbb7f0a")")
+        V("同一のハッシュ値\n(38762cf7f55934b34d179ae6a4c80cadccbb7f0a)")
     end
 
     F1 -->|"入力"| H

@@ -34,10 +34,10 @@ Jika kita melihat ke dalam kartu IC, kita dapat melihat "kumparan antena", yaitu
 
 ```mermaid
 graph LR
-    subgraph Gerbang Tiket (Pembaca/Penulis)
+    subgraph "Gerbang Tiket (Pembaca/Penulis)"
         ReaderCoil["Kumparan"] -- "Memancarkan medan magnet (gelombang radio)" --> Air(("Ruang"))
     end
-    subgraph Kartu IC (Suica, dll.)
+    subgraph "Kartu IC (Suica, dll.)"
         Air -- "Perubahan medan magnet" --> CardCoil["Kumparan antena"]
         CardCoil -- "Menghasilkan listrik melalui induksi elektromagnetik" --> Chip["Memulai chip IC"]
     end

@@ -140,8 +140,8 @@ graph TD
     INPUT_D[/"المدخل: D"/] --> START
     
     %% تمييز التناقض
-    LOOP -.->|"يتناقض مع حكم H("true")!"| FAIL_1(("تناقض"))
-    HALT -.->|"يتناقض مع حكم H("false")!"| FAIL_2(("تناقض"))
+    LOOP -.->|"يتناقض مع حكم H(true)!"| FAIL_1(("تناقض"))
+    HALT -.->|"يتناقض مع حكم H(false)!"| FAIL_2(("تناقض"))
     
     style FAIL_1 fill:#ff9999,stroke:#cc0000,stroke-width:2px
     style FAIL_2 fill:#ff9999,stroke:#cc0000,stroke-width:2px

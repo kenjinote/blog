@@ -129,10 +129,10 @@ classDiagram
     class ChauveSouris {
     }
     
-    "Animal" <|-- "Mammifere"
-    "Animal" <|-- "AnimalAile"
-    "Mammifere" <|-- "ChauveSouris"
-    "AnimalAile" <|-- "ChauveSouris"
+    Animal <|-- Mammifere
+    Animal <|-- AnimalAile
+    Mammifere <|-- ChauveSouris
+    AnimalAile <|-- ChauveSouris
 ```
 
 Lorsque ChauveSouris appelle la méthode `manger()`, il devient ambigu de savoir quelle implémentation appeler entre celle de Mammifere et celle d'AnimalAile. [Java](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) et C# évitent ce problème en interdisant l'héritage multiple de classes et en utilisant des **interfaces**.
@@ -254,9 +254,9 @@ classDiagram
         +calculerAire() double
     }
     
-    "Forme" <|.. "Cercle"
-    "Forme" <|.. "Rectangle"
-    "Forme" <|.. "Triangle"
+    Forme <|.. Cercle
+    Forme <|.. Rectangle
+    Forme <|.. Triangle
 ```
 
 ### 3.3 Principe de substitution de Liskov (Liskov Substitution Principle : LSP)

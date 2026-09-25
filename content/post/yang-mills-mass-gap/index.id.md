@@ -51,8 +51,8 @@ $ g $ adalah konstanta kopling, dan $ f^{abc} $ adalah konstanta struktur dari a
 ```mermaid
 graph TD
     A["Teori Gauge"] -->|"Perluasan"| B["Teori Yang-Mills"]
-    B -->|"Simetri SU("3")"| C["Kromodinamika Kuantum (QCD)"]
-    B -->|"Simetri SU("2")xU("1")"| D["Teori Elektrolemah"]
+    B -->|"Simetri SU(3)"| C["Kromodinamika Kuantum (QCD)"]
+    B -->|"Simetri SU(2)xU(1)"| D["Teori Elektrolemah"]
     C -->|"Interaksi Kuat"| E["Model Standar"]
     D -->|"Interaksi Elektromagnetik & Interaksi Lemah"| E
 ```

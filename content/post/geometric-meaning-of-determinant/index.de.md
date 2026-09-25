@@ -80,7 +80,7 @@ In 2D entspricht dies einer Operation wie dem "Umdrehen" einer auf einer transpa
 flowchart TD
     Original["Ursprünglicher Raum (Rechtssystem)"]
     Reflected["Transformierter Raum (Linkssystem)"]
-    Original -->|"Transformation mit det("A") < 0"| Reflected
+    Original -->|"Transformation mit det(A) < 0"| Reflected
     Original -->|"Beinhaltet das Umdrehen des Raumes"| Reflected
 ```
 
@@ -102,7 +102,7 @@ In 2D bedeutet dies, dass sich die beiden transformierten Basisvektoren auf ders
 
 ```mermaid
 flowchart LR
-    Space["2D-Ebene"] -->|"Transformation mit det("A") = 0"| Line["Komprimiert in eine 1D-Linie"]
+    Space["2D-Ebene"] -->|"Transformation mit det(A) = 0"| Line["Komprimiert in eine 1D-Linie"]
 ```
 
 Eine Matrix, deren Determinante $0$ ist, hat eine sehr wichtige algebraische Eigenschaft: Sie **hat keine inverse Matrix** (sie ist eine singuläre Matrix). Geometrisch ist der Grund offensichtlich. Sobald ein Raum in eine niedrigere Dimension kollabiert ist, ist es unmöglich, die verlorenen Informationen zu ergänzen und den ursprünglichen höherdimensionalen Raum wiederherzustellen (d. h. eine inverse Transformation durchzuführen).

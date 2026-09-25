@@ -140,20 +140,20 @@ gantt
 
     section "सामान्य स्क्रिप्ट"
     "HTML विश्लेषण"       :active, a1, 0, 2s
-    "JS डाउनलोड" :crit, a2, 2s, 4s
-    "JS निष्पादन"         :crit, a3, 4s, 6s
-    "HTML विश्लेषण फिर से शुरू"   :active, a4, 6s, 8s
+    "JS डाउनलोड" :crit, a2, 2, 4s
+    "JS निष्पादन"         :crit, a3, 4, 6s
+    "HTML विश्लेषण फिर से शुरू"   :active, a4, 6, 8s
 
     section "async विशेषता"
     "HTML विश्लेषण"       :active, b1, 0, 5s
-    "JS डाउनलोड" :crit, b2, 2s, 4s
-    "JS निष्पादन"         :crit, b3, 5s, 7s
-    "HTML विश्लेषण फिर से शुरू"   :active, b4, 7s, 9s
+    "JS डाउनलोड" :crit, b2, 2, 4s
+    "JS निष्पादन"         :crit, b3, 5, 7s
+    "HTML विश्लेषण फिर से शुरू"   :active, b4, 7, 9s
 
     section "defer विशेषता"
     "HTML विश्लेषण"       :active, c1, 0, 6s
-    "JS डाउनलोड" :crit, c2, 1s, 4s
-    "JS निष्पादन"         :crit, c3, 6s, 8s
+    "JS डाउनलोड" :crit, c2, 1, 4s
+    "JS निष्पादन"         :crit, c3, 6, 8s
 ```
 *(※ वास्तविक `async` डाउनलोड पूरा होने के तुरंत बाद निष्पादित होता है, जो पार्सिंग को बाधित करता है।)*
 

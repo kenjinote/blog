@@ -290,7 +290,7 @@ flowchart TD
     Payment -->|"3. Событие завершения платежа"| MessageBroker
     MessageBroker -->|"4. Уведомление о событии"| Inventory["Сервис запасов"]
     
-    Inventory -- "При ошибке" -->|"Компенсирующая транзакция"| Compensate["Событие ошибки резервирования запасов"]
+    Inventory -->|"При ошибке#quot; / #quot;Компенсирующая транзакция"| Compensate["Событие ошибки резервирования запасов"]
     Compensate --> MessageBroker
     MessageBroker -->|"Отмена"| Order
 ```

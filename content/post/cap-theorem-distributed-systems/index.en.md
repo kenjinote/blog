@@ -293,7 +293,7 @@ flowchart TD
     Payment -->|"3. Payment Complete Event"| MessageBroker
     MessageBroker -->|"4. Event Notification"| Inventory["Inventory Service"]
     
-    Inventory -- "On Failure" -->|"Compensating Transaction"| Compensate["Inventory Allocation Failed Event"]
+    Inventory -->|"On Failure#quot; / #quot;Compensating Transaction"| Compensate["Inventory Allocation Failed Event"]
     Compensate --> MessageBroker
     MessageBroker -->|"Cancel"| Order
 ```

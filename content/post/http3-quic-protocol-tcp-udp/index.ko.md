@@ -39,13 +39,13 @@ HTTP/1.1에서는 1개의 TCP 커넥션 상에서 1개의 요청・응답을 순
 HTTP/2는 이 문제를 **스트림** 에 의한 **다중화 (Multiplexing)** 로 해결했습니다. 1개의 TCP 커넥션 안에 가상적인 스트림을 여러 개 만들고, 요청과 응답을 미세한 프레임으로 분할하여 동시에 주고받을 수 있게 한 것입니다.
 
 ```mermaid
-architecture-beta
-    group http2("HTTP/2 아키텍처")
-    service tcp("TCP 커넥션") in http2
-    service s1("스트림 1: HTML") in http2
-    service s2("스트림 2: CSS") in http2
-    service s3("스트림 3: JS") in http2
-    
+flowchart TB
+    subgraph http2 ["HTTP/2 아키텍처"]
+        tcp["TCP 커넥션"]
+        s1["스트림 1: HTML"]
+        s2["스트림 2: CSS"]
+        s3["스트림 3: JS"]
+    end
     s1 --> tcp
     s2 --> tcp
     s3 --> tcp

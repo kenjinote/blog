@@ -304,7 +304,7 @@ graph TD
     B -->|"② Membalas Kunci Bersama X25519 + Cipherteks Enkapsulasi Kyber"| A
     A --> C{"Derivasi Rahasia Utama (KDF)"}
     B --> C
-    C -->|"Input: (Kunci Simetris X25519)"|| (Kunci Simetris Kyber)| D["Kunci Komunikasi Aman (AES-256 / ChaCha20)"]
+    C -->|"#quot;Input: (Kunci Simetris X25519)#quot;#124;#124; (Kunci Simetris Kyber)"| D["Kunci Komunikasi Aman (AES-256 / ChaCha20)"]
     D -->|"Tahan Terhadap Ancaman Kuantum & Kerentanan Klasik Sekaligus"| E["Komunikasi Kriptografi Hibrida yang Aman (TLS 1.3)"]
 ```
 

@@ -162,7 +162,7 @@ sequenceDiagram
     PeerB->>STUN: "طلب ربط"
     STUN-->>PeerB: "عنوان IP العام والمنفذ"
     PeerB->>PeerA: "إرسال Candidate عبر الإشارات"
-    PeerA<-->>PeerB: "فحص الاتصال (STUN Ping)"
+    PeerA<<-->>PeerB: "فحص الاتصال (STUN Ping)"
     PeerA->>PeerB: "اكتمل اتصال P2P بأفضل مسار"
 ```
 

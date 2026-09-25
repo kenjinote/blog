@@ -129,10 +129,10 @@ classDiagram
     class Bat {
     }
     
-    "Animal" <|-- "Mammal"
-    "Animal" <|-- "WingedAnimal"
-    "Mammal" <|-- "Bat"
-    "WingedAnimal" <|-- "Bat"
+    Animal <|-- Mammal
+    Animal <|-- WingedAnimal
+    Mammal <|-- Bat
+    WingedAnimal <|-- Bat
 ```
 
 當 Bat 呼叫 `eat()` 方法時，會產生應該呼叫 Mammal 還是 WingedAnimal 實作的歧義問題。[Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 和 C# 透過禁止類別的多重繼承，並使用 **介面（Interface）** 來迴避這個問題。
@@ -254,9 +254,9 @@ classDiagram
         +calculateArea() double
     }
     
-    "Shape" <|.. "Circle"
-    "Shape" <|.. "Rectangle"
-    "Shape" <|.. "Triangle"
+    Shape <|.. Circle
+    Shape <|.. Rectangle
+    Shape <|.. Triangle
 ```
 
 ### 3.3 里氏替換原則（Liskov Substitution Principle: LSP）

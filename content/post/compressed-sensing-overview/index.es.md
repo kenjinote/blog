@@ -225,8 +225,8 @@ print(f"Error de recuperación (norma L2): {error:.6e}")
 
 ```mermaid
 flowchart LR
-    X["Señal dispersa desconocida\nx (N dimensiones)"] -->|Matriz de\nobservación aleatoria A| Y["Datos observados\ny (M dimensiones, M < N)"]
-    Y -->|Optimización L1\n(Algoritmo de optimización convexa)| X_hat["Señal recuperada\nx^"]
+    X["Señal dispersa desconocida\nx (N dimensiones)"] -->|"Matriz de\nobservación aleatoria A"| Y["Datos observados\ny (M dimensiones, M < N)"]
+    Y -->|"Optimización L1\n(Algoritmo de optimización convexa)"| X_hat["Señal recuperada\nx^"]
     X -. "Garantiza una coincidencia perfecta" .-> X_hat
 ```
 

@@ -39,13 +39,13 @@ Dans HTTP/1.1, il fallait traiter une requête/réponse de manière séquentiell
 HTTP/2 a résolu ce problème par le **multiplexage (Multiplexing)** basé sur des **flux (streams)**. Il créait plusieurs flux virtuels au sein d'une seule connexion TCP, divisait les requêtes et les réponses en petits blocs (frames), et permettait de les échanger simultanément.
 
 ```mermaid
-architecture-beta
-    group http2("Architecture HTTP/2")
-    service tcp("Connexion TCP") in http2
-    service s1("Flux 1 : HTML") in http2
-    service s2("Flux 2 : CSS") in http2
-    service s3("Flux 3 : JS") in http2
-    
+flowchart TB
+    subgraph http2 ["Architecture HTTP/2"]
+        tcp["Connexion TCP"]
+        s1["Flux 1 : HTML"]
+        s2["Flux 2 : CSS"]
+        s3["Flux 3 : JS"]
+    end
     s1 --> tcp
     s2 --> tcp
     s3 --> tcp

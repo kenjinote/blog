@@ -39,13 +39,13 @@ In HTTP/1.1, it was necessary to process one request and response sequentially o
 HTTP/2 solved this problem with **Multiplexing** using **streams**. It created multiple virtual streams within a single TCP connection, dividing requests and responses into fine frames so they could be exchanged simultaneously.
 
 ```mermaid
-architecture-beta
-    group http2("HTTP/2 Architecture")
-    service tcp("TCP Connection") in http2
-    service s1("Stream 1: HTML") in http2
-    service s2("Stream 2: CSS") in http2
-    service s3("Stream 3: JS") in http2
-    
+flowchart TB
+    subgraph http2 ["HTTP/2 Architecture"]
+        tcp["TCP Connection"]
+        s1["Stream 1: HTML"]
+        s2["Stream 2: CSS"]
+        s3["Stream 3: JS"]
+    end
     s1 --> tcp
     s2 --> tcp
     s3 --> tcp

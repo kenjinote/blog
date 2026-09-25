@@ -272,18 +272,25 @@ zoxide совместим с Bash, Zsh и PowerShell, обеспечивая о�
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Normal["Нормальный режим"]
-    Normal --> Prefix["Режим префикса (Ctrl+B)"]
-    Prefix --> Command["Командная строка (:)"]
-    Prefix --> SplitV["Вертикальное разделение панели (%)"]
-    Prefix --> SplitH["Горизонтальное разделение панели (\)"]
-    Prefix --> Switch["Переключение окон (n/p/0-9)"]
-    Prefix --> Detach["Отсоединение сессии (d)"]
+    state "Нормальный режим" as Normal
+    state "Режим префикса (Ctrl+B)" as Prefix
+    state "Командная строка (:)" as Command
+    state "Вертикальное разделение панели (%)" as SplitV
+    state "Горизонтальное разделение панели (\)" as SplitH
+    state "Переключение окон (n/p/0-9)" as Switch
+    state "Отсоединение сессии (d)" as Detach
+    [*] --> Normal
+    Normal --> Prefix
+    Prefix --> Command
+    Prefix --> SplitV
+    Prefix --> SplitH
+    Prefix --> Switch
+    Prefix --> Detach
     
-    Command --> Normal["Выполнение команды tmux"]
-    SplitV --> Normal["Возврат в нормальный режим"]
-    SplitH --> Normal["Возврат в нормальный режим"]
-    Switch --> Normal["Возврат в нормальный режим"]
+    Command --> Normal : Выполнение команды tmux
+    SplitV --> Normal : Возврат в нормальный режим
+    SplitH --> Normal : Возврат в нормальный режим
+    Switch --> Normal : Возврат в нормальный режим
     Detach --> [*]
 ```
 

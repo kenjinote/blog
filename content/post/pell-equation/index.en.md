@@ -75,12 +75,12 @@ To visualize the series of processes in searching for a solution, we have prepar
 ```mermaid
 flowchart TD
     Start["Start: Input integer n"] --> CheckSquare["Determine if n is a perfect square"]
-    CheckSquare --|"Yes"| Trivial["Only trivial solutions exist (End)"] --> End["End"]
-    CheckSquare --|"No"| InitContFrac["Initialize recurrence for continued fraction"]
+    CheckSquare -->|"Yes"| Trivial["Only trivial solutions exist (End)"] --> End["End"]
+    CheckSquare -->|"No"| InitContFrac["Initialize recurrence for continued fraction"]
     InitContFrac --> CalcNext["Calculate next term a_i and convergent (p_i, q_i)"]
     CalcNext --> CheckEq["Condition: Evaluate p_i^2 - n * q_i^2 == 1"]
-    CheckEq --|"False"| CalcNext
-    CheckEq --|"True"| Found["Found fundamental solution (x_1, y_1) = (p_i, q_i)"] --> End
+    CheckEq -->|"False"| CalcNext
+    CheckEq -->|"True"| Found["Found fundamental solution (x_1, y_1) = (p_i, q_i)"] --> End
 ```
 
 ## 6. Specific Example: Continued Fraction Expansion and Fundamental Solution for n = 7

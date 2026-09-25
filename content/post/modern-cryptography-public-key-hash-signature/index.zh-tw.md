@@ -324,7 +324,7 @@ graph TD
     CA -->|"核發憑證 (簽章)"| SubCA
     SubCA -->|"核發憑證 (簽章)"| Server
     Server -->|"出示伺服器憑證"| Client
-    Client -.->|"預先持有Root CA的公開金鑰\n("內建於瀏覽器或OS")"| CA
+    Client -.->|"預先持有Root CA的公開金鑰\n(內建於瀏覽器或OS)"| CA
     Client -->|"驗證憑證鏈\n使用Root CA的公開金鑰"| Server
 ```
 

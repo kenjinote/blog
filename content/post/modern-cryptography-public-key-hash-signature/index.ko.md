@@ -324,7 +324,7 @@ graph TD
     CA -->|"인증서 발급 (서명)"| SubCA
     SubCA -->|"인증서 발급 (서명)"| Server
     Server -->|"서버 인증서 제시"| Client
-    Client -.->|"사전에 Root CA의 공개키를 보유\n("브라우저나 OS에 내장")"| CA
+    Client -.->|"사전에 Root CA의 공개키를 보유\n(브라우저나 OS에 내장)"| CA
     Client -->|"인증서 체인 검증\nRoot CA의 공개키를 이용"| Server
 ```
 

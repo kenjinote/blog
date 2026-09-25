@@ -86,7 +86,7 @@ Cohen desarrolló un método para expandir un modelo que satisface ZFC añadién
 graph TD
     M["Modelo Base (ZFC)"]
     G["Filtro Genérico"]
-    MG["Extensión Genérica M[G"]"]
+    MG["Extensión Genérica M[G]"]
     M -->|"forcing"| MG
     G -->|"añadido a"| MG
     MG -->|"satisface"| NOT_CH["No CH"]

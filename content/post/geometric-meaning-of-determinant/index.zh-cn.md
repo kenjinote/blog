@@ -80,7 +80,7 @@ $$
 flowchart TD
     Original["原始空间 (右手系)"]
     Reflected["变换后的空间 (左手系)"]
-    Original -->|"det("A") < 0 的变换"| Reflected
+    Original -->|"det(A) < 0 的变换"| Reflected
     Original -->|"伴随着空间的翻转"| Reflected
 ```
 
@@ -102,7 +102,7 @@ $$
 
 ```mermaid
 flowchart LR
-    Space["二维平面"] -->|"det("A") = 0 的变换"| Line["被压缩成一维的直线"]
+    Space["二维平面"] -->|"det(A) = 0 的变换"| Line["被压缩成一维的直线"]
 ```
 
 行列式为 $0$ 的矩阵具有一个非常重要的代数性质：它 **没有逆矩阵** （奇异矩阵）。从几何学角度思考，原因显而易见。一旦空间坍塌到了更低的维度，就再也不可能补充丢失的信息来还原原始的高维空间（即执行逆变换）了。

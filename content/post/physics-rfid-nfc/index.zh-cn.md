@@ -34,10 +34,10 @@ tags:
 
 ```mermaid
 graph LR
-    subgraph 闸机 (读卡器/写卡器)
+    subgraph "闸机 (读卡器/写卡器)"
         ReaderCoil["线圈"] -->|"放射磁场（电波）"| Air(("空间"))
     end
-    subgraph IC卡 (Suica等)
+    subgraph "IC卡 (Suica等)"
         Air -->|"磁场的变化"| CardCoil["天线线圈"]
         CardCoil -->|"通过电磁感应发电"| Chip["启动IC芯片"]
     end

@@ -121,7 +121,7 @@ Le graphique suivant compare le spectre d'émission d'un écran LCD standard ave
 
 ```mermaid
 xychart-beta
-    title Comparaison du spectre d'émission de la lumière bleue
+    title "Comparaison du spectre d'émission de la lumière bleue"
     x-axis "Longueur d'onde (nm)" [400, 420, 440, 460, 480, 500]
     y-axis "Intensité relative" 0 --> 100
     bar "LCD Standard (W-LED)" [10, 30, 95, 80, 40, 20]

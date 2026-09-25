@@ -127,7 +127,7 @@ graph TD
     subgraph "AES का 1 राउंड प्रोसेस (SPN संरचना)"
         A["इनपुट स्थिति (128-बिट)"] --> B("SubBytes (बाइट प्रतिस्थापन / S-Box)")
         B --> C("ShiftRows (पंक्ति शिफ्ट)")
-        C --> D("MixColumns (कॉलम मिक्स / GF("2^8") पर गुणा)")
+        C --> D("MixColumns (कॉलम मिक्स / GF(2^8) पर गुणा)")
         D --> E("AddRoundKey (राउंड कुंजी के साथ XOR)")
         E --> F["अगले राउंड की ओर"]
     end

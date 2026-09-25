@@ -346,22 +346,31 @@ Der Lebenszyklus der im Zettelkasten angesammelten Ideen bis hin zur endgültige
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Capture["Idea Capture (Ideenerfassung)"]
+    state "Idea Capture (Ideenerfassung)" as Capture
+    state "Fleeting Notes (Flüchtige Notizen)" as Fleeting
+    state "Permanent Notes (Dauerhafte Notizen)" as Permanent
+    state "Brainstorming (Semantische KI-Suche)" as Brainstorming
+    state "Memorization (Anki-Wiederholung)" as Memorization
+    state "Outlining (Struktur und Gliederung)" as Outlining
+    state "Drafting (Erster Entwurf)" as Drafting
+    state "Review & Edit (Überprüfung und Korrektur)" as Review
+    state "Published (Blog-Veröffentlichung)" as Published
+    [*] --> Capture
     
-    Capture["Idea Capture (Ideenerfassung)"] --> Fleeting["Fleeting Notes (Flüchtige Notizen)"]
-    Fleeting["Fleeting Notes (Flüchtige Notizen)"] --> Permanent["Permanent Notes (Dauerhafte Notizen)"]
+    Capture --> Fleeting
+    Fleeting --> Permanent
     
-    Permanent["Permanent Notes (Dauerhafte Notizen)"] --> Brainstorming["Brainstorming (Semantische KI-Suche)"]
-    Permanent["Permanent Notes (Dauerhafte Notizen)"] --> Memorization["Memorization (Anki-Wiederholung)"]
-    Memorization["Memorization (Anki-Wiederholung)"] --> Brainstorming["Brainstorming (Semantische KI-Suche)"]
+    Permanent --> Brainstorming
+    Permanent --> Memorization
+    Memorization --> Brainstorming
     
-    Brainstorming["Brainstorming (Semantische KI-Suche)"] --> Outlining["Outlining (Struktur und Gliederung)"]
-    Outlining["Outlining (Struktur und Gliederung)"] --> Drafting["Drafting (Erster Entwurf)"]
+    Brainstorming --> Outlining
+    Outlining --> Drafting
     
-    Drafting["Drafting (Erster Entwurf)"] --> Review["Review & Edit (Überprüfung und Korrektur)"]
-    Review["Review & Edit (Überprüfung und Korrektur)"] --> Published["Published (Blog-Veröffentlichung)"]
+    Drafting --> Review
+    Review --> Published
     
-    Published["Published (Blog-Veröffentlichung)"] --> [*]
+    Published --> [*]
 ```
 
 Indem man sich dieses [Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s bewusst wird, wird auch klarer, "in welcher Phase man gerade feststeckt". Wenn Ihnen die Ideen ausgehen, kehren Sie einfach zu den Phasen "Capture" oder "Permanent" zurück und überprüfen, ob Ihre Input-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) ordnungsgemäß funktioniert.
