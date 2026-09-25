@@ -1,0 +1,2233 @@
+{
+  "mode": "write",
+  "scanned": 9444,
+  "changed_articles": 146,
+  "replacements": 352,
+  "validation": "Exact rendered HTML equality except the listed strong emphasis",
+  "articles": [
+    {
+      "path": "content/post/ai-othello/index.md",
+      "changes": [
+        {
+          "line": 74,
+          "text": "「オセロは双方が最善手を打ち続けた場合、最終結果は必ず引き分け（32対32）になる」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/bgp-border-gateway-protocol-explained/index.ko.md",
+      "changes": [
+        {
+          "line": 63,
+          "text": "의도나 비즈니스적 요구사항(정책)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/bgp-border-gateway-protocol-explained/index.md",
+      "changes": [
+        {
+          "line": 63,
+          "text": "意図やビジネス上の都合（ポリシー）"
+        }
+      ]
+    },
+    {
+      "path": "content/post/biography-henrietta-lacks/index.md",
+      "changes": [
+        {
+          "line": 47,
+          "text": "「HeLa（ヒーラ）」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/biography-henrietta-lacks/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 47,
+          "text": "“HeLa（海拉）”"
+        }
+      ]
+    },
+    {
+      "path": "content/post/biography-henrietta-lacks/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 47,
+          "text": "「HeLa（海拉）」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/biography-otto-von-bismarck/index.ko.md",
+      "changes": [
+        {
+          "line": 30,
+          "text": "현실 정치(리얼폴리틱스)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/biography-otto-von-bismarck/index.md",
+      "changes": [
+        {
+          "line": 30,
+          "text": "現実政治（リアルポリティクス）"
+        }
+      ]
+    },
+    {
+      "path": "content/post/biography-socrates/index.md",
+      "changes": [
+        {
+          "line": 22,
+          "text": "「無知の知（不知の自覚）」"
+        },
+        {
+          "line": 24,
+          "text": "「魂の配慮」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/biography-socrates/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 22,
+          "text": "“无知之知”（对无知的自知）"
+        },
+        {
+          "line": 24,
+          "text": "“灵魂的关怀”"
+        }
+      ]
+    },
+    {
+      "path": "content/post/biography-socrates/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 22,
+          "text": "「無知之知」（對無知的自知）"
+        },
+        {
+          "line": 24,
+          "text": "「靈魂的關懷」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/bsd-conjecture/index.md",
+      "changes": [
+        {
+          "line": 245,
+          "text": "「すべての楕円曲線のうち、少なくとも66%はBSD予想を満たす」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/business-brooks-law/index.md",
+      "changes": [
+        {
+          "line": 67,
+          "text": "「妊婦が9人いても、1ヶ月で赤ちゃんを出産することはできない」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/business-innovators-dilemma/index.md",
+      "changes": [
+        {
+          "line": 15,
+          "text": "「まさにその『正しい経営』を完璧に実行しているからこそ、偉大な企業は新興企業に敗れ去る」"
+        },
+        {
+          "line": 54,
+          "text": "「合理的な意思決定プロセスの結果」"
+        },
+        {
+          "line": 139,
+          "text": "「現在の成功を支えている強みそのものが、未来の致命的な弱点になる」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/business-innovators-dilemma/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 54,
+          "text": "“合理决策过程的结果”"
+        }
+      ]
+    },
+    {
+      "path": "content/post/business-innovators-dilemma/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 15,
+          "text": "「正因為完美執行了這些『正確的經營』，偉大的企業才會敗給新興企業。」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/business-pareto-principle/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 48,
+          "text": "集中投入資源："
+        }
+      ]
+    },
+    {
+      "path": "content/post/business-parkinsons-law/index.md",
+      "changes": [
+        {
+          "line": 89,
+          "text": "「組織は、些細な物事に対して、不釣り合いなほど多くの時間を費やす」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/business-parkinsons-law/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 89,
+          "text": "“组织会对微不足道的事情花费与其不成比例的大量时间”"
+        }
+      ]
+    },
+    {
+      "path": "content/post/business-parkinsons-law/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 89,
+          "text": "「組織會對瑣碎的事物，花費不成比例的大量時間」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/business-peter-principle/index.md",
+      "changes": [
+        {
+          "line": 114,
+          "text": "「自分の能力の限界と適性を正確に把握し、自分が最も輝ける場所を見つけることの重要性」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/business-peter-principle/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 114,
+          "text": "“准确把握自己能力的极限和适配度，找到自己最能大放异彩的位置是多么重要”"
+        }
+      ]
+    },
+    {
+      "path": "content/post/business-peter-principle/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 114,
+          "text": "「正確了解自己能力的極限與適任性，並找到最能讓自己發光發熱的地方的重要性」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/compressed-sensing-overview/index.ko.md",
+      "changes": [
+        {
+          "line": 41,
+          "text": "희소성(Sparsity)"
+        },
+        {
+          "line": 115,
+          "text": "랜덤 행렬(가우스 분포나 베르누이 분포를 따르는 난수 행렬)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/compressed-sensing-overview/index.md",
+      "changes": [
+        {
+          "line": 41,
+          "text": "スパース性（Sparsity、疎性）"
+        },
+        {
+          "line": 115,
+          "text": "ランダム行列（ガウス分布やベルヌーイ分布に従う乱数行列）"
+        }
+      ]
+    },
+    {
+      "path": "content/post/content-credentials-c2pa-explained/index.ko.md",
+      "changes": [
+        {
+          "line": 21,
+          "text": "탐지(Detection)"
+        },
+        {
+          "line": 23,
+          "text": "내력 증명(Provenance)"
+        },
+        {
+          "line": 67,
+          "text": "보안 엔클레이브(Secure Enclave) / TEE(Trusted Execution Environment)"
+        },
+        {
+          "line": 74,
+          "text": "JUMBF(ISO/IEC 19566-5)"
+        },
+        {
+          "line": 93,
+          "text": "CRL(Certificate Revocation List)"
+        },
+        {
+          "line": 93,
+          "text": "OCSP(Online Certificate Status Protocol)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/crdt-local-first-software/index.ko.md",
+      "changes": [
+        {
+          "line": 13,
+          "text": "CRDT(Conflict-free Replicated Data Type: 충돌 없는 복제 데이터 타입)"
+        },
+        {
+          "line": 38,
+          "text": "OT(Operational Transformation: 연산 변환)"
+        },
+        {
+          "line": 55,
+          "text": "CvRDT(Convergent Replicated Data Type: 상태 기반)"
+        },
+        {
+          "line": 55,
+          "text": "CmRDT(Commutative Replicated Data Type: 조작 기반)"
+        },
+        {
+          "line": 60,
+          "text": "부분 순서 집합(Partially Ordered Set / Join Semilattice)"
+        },
+        {
+          "line": 92,
+          "text": "논리적 클록(Logical Clock)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/diagonalization-and-jordan-normal-form/index.ko.md",
+      "changes": [
+        {
+          "line": 125,
+          "text": "가제어성(Controllability)"
+        },
+        {
+          "line": 125,
+          "text": "가관측성(Observability)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/eulers-identity/index.md",
+      "changes": [
+        {
+          "line": 130,
+          "text": "複素数平面（ガウス平面）"
+        }
+      ]
+    },
+    {
+      "path": "content/post/event-driven-architecture-message-queue-kafka-rabbitmq/index.md",
+      "changes": [
+        {
+          "line": 37,
+          "text": "「送信者と受信者がお互いを知る必要がない（空間的・時間的な分離）」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/fast-fourier-transform-algorithm/index.ko.md",
+      "changes": [
+        {
+          "line": 13,
+          "text": "푸리에 변환(Fourier Transform)"
+        },
+        {
+          "line": 17,
+          "text": "고속 푸리에 변환(FFT: Fast Fourier Transform)"
+        },
+        {
+          "line": 90,
+          "text": "나비 연산(Butterfly Operation)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/fast-fourier-transform-algorithm/index.md",
+      "changes": [
+        {
+          "line": 13,
+          "text": "フーリエ変換（Fourier Transform）"
+        },
+        {
+          "line": 17,
+          "text": "高速フーリエ変換（FFT: Fast Fourier Transform）"
+        },
+        {
+          "line": 90,
+          "text": "バタフライ演算（Butterfly Operation）"
+        }
+      ]
+    },
+    {
+      "path": "content/post/fast-fourier-transform-algorithm/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 13,
+          "text": "傅里叶变换（Fourier Transform）"
+        }
+      ]
+    },
+    {
+      "path": "content/post/game-rubiks-cube/index.md",
+      "changes": [
+        {
+          "line": 22,
+          "text": "「約4325京（43,252,003,274,489,856,000）通り」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/graph-theory-bridges-of-konigsberg/index.md",
+      "changes": [
+        {
+          "line": 28,
+          "text": "「どの陸地とどの陸地が、いくつの橋で結ばれているか」"
+        },
+        {
+          "line": 48,
+          "text": "グラフ (Graph)"
+        },
+        {
+          "line": 57,
+          "text": "「頂点の次数（Degree）」"
+        },
+        {
+          "line": 78,
+          "text": "「7つの橋をすべて1度ずつ渡って戻ることは不可能である」"
+        },
+        {
+          "line": 115,
+          "text": "「ヒューリスティック関数 (Heuristic Function)」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/graph-theory-bridges-of-konigsberg/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 28,
+          "text": "“哪块陆地和哪块陆地，由多少座桥连接”"
+        },
+        {
+          "line": 78,
+          "text": "“恰好走过七座桥各一次并回到原点是不可能的”"
+        },
+        {
+          "line": 115,
+          "text": "“启发函数 (Heuristic Function)”"
+        }
+      ]
+    },
+    {
+      "path": "content/post/graph-theory-bridges-of-konigsberg/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 28,
+          "text": "「哪塊陸地與哪塊陸地，由幾座橋樑連接」"
+        },
+        {
+          "line": 78,
+          "text": "「要將7座橋都剛好走過1次並回到原點是不可能的」"
+        },
+        {
+          "line": 115,
+          "text": "「啟發函數 (Heuristic Function)」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/history-deep-blue-kasparov/index.ko.md",
+      "changes": [
+        {
+          "line": 46,
+          "text": "1초에 2억 수(2억 국면)"
+        },
+        {
+          "line": 80,
+          "text": "무차별 대입 탐색(브루트 포스)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/history-deep-blue-kasparov/index.md",
+      "changes": [
+        {
+          "line": 46,
+          "text": "1秒間に2億手（2億局面）"
+        },
+        {
+          "line": 80,
+          "text": "力任せの全探索（ブルートフォース）"
+        }
+      ]
+    },
+    {
+      "path": "content/post/history-deep-blue-kasparov/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 80,
+          "text": "暴力全搜索（Brute-force）"
+        }
+      ]
+    },
+    {
+      "path": "content/post/history-deep-blue-kasparov/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 46,
+          "text": "每秒鐘搜尋2億步（2億個局面）"
+        },
+        {
+          "line": 80,
+          "text": "暴力搜尋（Brute-force search）"
+        }
+      ]
+    },
+    {
+      "path": "content/post/history-electronic-money/index.md",
+      "changes": [
+        {
+          "line": 29,
+          "text": "「完全な匿名性」を持ったデジタル通貨"
+        },
+        {
+          "line": 39,
+          "text": "FeliCa（フェリカ）"
+        }
+      ]
+    },
+    {
+      "path": "content/post/history-of-android/index.md",
+      "changes": [
+        {
+          "line": 49,
+          "text": "サムスン（Samsung）"
+        }
+      ]
+    },
+    {
+      "path": "content/post/history-of-ipv4/index.md",
+      "changes": [
+        {
+          "line": 21,
+          "text": "ネットワーク上の「住所（番地）」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/history-of-udp/index.md",
+      "changes": [
+        {
+          "line": 48,
+          "text": "致命的な時間的遅延（レイテンシ）"
+        }
+      ]
+    },
+    {
+      "path": "content/post/history-of-wasan-japanese-mathematics/index.md",
+      "changes": [
+        {
+          "line": 13,
+          "text": "「和算（Wasan）」"
+        },
+        {
+          "line": 49,
+          "text": "建部賢弘（たけべ かたひろ）"
+        },
+        {
+          "line": 51,
+          "text": "「円理（えんり）」"
+        },
+        {
+          "line": 59,
+          "text": "「算額（Sangaku）」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/history-of-wasan-japanese-mathematics/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 13,
+          "text": "“和算（Wasan）”"
+        },
+        {
+          "line": 51,
+          "text": "“圆理”"
+        },
+        {
+          "line": 59,
+          "text": "“算额（Sangaku）”"
+        }
+      ]
+    },
+    {
+      "path": "content/post/history-of-wasan-japanese-mathematics/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 13,
+          "text": "「和算（Wasan）」"
+        },
+        {
+          "line": 51,
+          "text": "「圓理」"
+        },
+        {
+          "line": 59,
+          "text": "「算額（Sangaku）」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/history-of-winny/index.ko.md",
+      "changes": [
+        {
+          "line": 16,
+          "text": "P2P(Peer-to-Peer)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/history-silicon-valley-traitorous-eight/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 17,
+          "text": "「八叛逆（Traitorous Eight）」"
+        },
+        {
+          "line": 63,
+          "text": "「八叛逆（Traitorous Eight）」"
+        },
+        {
+          "line": 77,
+          "text": "「仙童半導體（Fairchild Semiconductor）」"
+        },
+        {
+          "line": 83,
+          "text": "「矽谷式企業文化」"
+        },
+        {
+          "line": 97,
+          "text": "「仙童之子（Fairchildren）」"
+        },
+        {
+          "line": 112,
+          "text": "「反叛的企業家精神」、「透過員工認股權的激勵」、「由創投公司提供風險資金」、「扁平的組織文化」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/history-y2k-bug/index.ko.md",
+      "changes": [
+        {
+          "line": 153,
+          "text": "2038년 1월 19일 03:14:07(UTC)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/history-y2k-bug/index.md",
+      "changes": [
+        {
+          "line": 153,
+          "text": "2038年1月19日 03:14:07 (UTC)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/how-cdn-content-delivery-network-works/index.ko.md",
+      "changes": [
+        {
+          "line": 19,
+          "text": "CDN(Content Delivery Network, 콘텐츠 전송 네트워크)"
+        },
+        {
+          "line": 40,
+          "text": "PoP(Point of Presence)"
+        },
+        {
+          "line": 77,
+          "text": "애니캐스트(Anycast)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/how-cdn-content-delivery-network-works/index.md",
+      "changes": [
+        {
+          "line": 19,
+          "text": "CDN (Content Delivery Network)"
+        },
+        {
+          "line": 40,
+          "text": "PoP (Point of Presence)"
+        },
+        {
+          "line": 77,
+          "text": "Anycast（エニーキャスト）"
+        }
+      ]
+    },
+    {
+      "path": "content/post/how-search-engines-work/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 327,
+          "text": "它整理能观察到的信息，在有限时间内构造有助于回答问题的顺序。"
+        }
+      ]
+    },
+    {
+      "path": "content/post/how-search-engines-work/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 327,
+          "text": "它整理能觀察的資訊，在有限時間內，建立有助於問題的順序。"
+        }
+      ]
+    },
+    {
+      "path": "content/post/how-ssd-nand-flash-work/index.md",
+      "changes": [
+        {
+          "line": 48,
+          "text": "SLC（Single-Level Cell）"
+        },
+        {
+          "line": 76,
+          "text": "「すでにデータが書かれているページに、直接データを上書きできない」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/how-ssd-nand-flash-work/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 48,
+          "text": "SLC（Single-Level Cell）"
+        }
+      ]
+    },
+    {
+      "path": "content/post/how-touch-screens-work/index.md",
+      "changes": [
+        {
+          "line": 64,
+          "text": "電界の乱れ:"
+        }
+      ]
+    },
+    {
+      "path": "content/post/knot-theory-introduction/index.ko.md",
+      "changes": [
+        {
+          "line": 15,
+          "text": "양끝이 붙어 있다는 점(폐곡선이라는 점)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/knot-theory-introduction/index.md",
+      "changes": [
+        {
+          "line": 15,
+          "text": "両端がくっついている（閉曲線である）"
+        },
+        {
+          "line": 77,
+          "text": "「DNAの鎖を一度ハサミのように切断し、別の鎖をその隙間に通してから、再び繋ぎ合わせる」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/knot-theory-introduction/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 77,
+          "text": "「像剪刀一樣先剪斷 DNA 鏈，讓另一條鏈穿過這個空隙，然後再重新連接起來」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/network-bittorrent/index.md",
+      "changes": [
+        {
+          "line": 46,
+          "text": "「参加者が増えれば増えるほど、ネットワーク全体のダウンロード速度が高速になる」"
+        },
+        {
+          "line": 63,
+          "text": "「自分にたくさんデータをくれる相手にだけ、お返しとして自分のデータを優先的に送信する（Choke/Unchoke）」"
+        },
+        {
+          "line": 72,
+          "text": "DHT（Distributed Hash Table：分散ハッシュテーブル）"
+        }
+      ]
+    },
+    {
+      "path": "content/post/network-ssl-tls/index.md",
+      "changes": [
+        {
+          "line": 23,
+          "text": "「ハガキ」のように裏表丸見えのまま"
+        },
+        {
+          "line": 48,
+          "text": "「通信の最初だけ公開鍵暗号を使って安全に共通鍵を渡し、その後の実際の通信は速い共通鍵暗号を使う」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/ntp-network-time-protocol-sync/index.ko.md",
+      "changes": [
+        {
+          "line": 13,
+          "text": "NTP(Network Time Protocol)"
+        },
+        {
+          "line": 77,
+          "text": "PTP(Precision Time Protocol: IEEE 1588)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/ntp-network-time-protocol-sync/index.md",
+      "changes": [
+        {
+          "line": 13,
+          "text": "NTP（Network Time Protocol）"
+        },
+        {
+          "line": 77,
+          "text": "PTP（Precision Time Protocol: IEEE 1588）"
+        }
+      ]
+    },
+    {
+      "path": "content/post/ntp-network-time-protocol-sync/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 13,
+          "text": "NTP（Network Time Protocol，网络时间协议）"
+        },
+        {
+          "line": 77,
+          "text": "PTP（Precision Time Protocol: IEEE 1588，精确时间协议）"
+        }
+      ]
+    },
+    {
+      "path": "content/post/ntp-network-time-protocol-sync/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 77,
+          "text": "PTP（Precision Time Protocol: IEEE 1588）"
+        }
+      ]
+    },
+    {
+      "path": "content/post/paradox-fermi-paradox/index.md",
+      "changes": [
+        {
+          "line": 21,
+          "text": "「フェルミのパラドックス」"
+        },
+        {
+          "line": 107,
+          "text": "「このフィルターは私たちの過去にあるのか、それとも未来にあるのか？」"
+        },
+        {
+          "line": 166,
+          "text": "「他の文明を発見次第、即座に、相手に悟られる前に破壊すること」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/paradox-fermi-paradox/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 21,
+          "text": "“费米悖论”"
+        }
+      ]
+    },
+    {
+      "path": "content/post/paradox-fermi-paradox/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 21,
+          "text": "「費米悖論」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/paradox-galileos-paradox/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 33,
+          "text": "“整体大于部分”"
+        },
+        {
+          "line": 61,
+          "text": "“自然数的个数”和“平方数的个数”完全相等"
+        },
+        {
+          "line": 89,
+          "text": "“一一对应（双射：Bijection）”"
+        },
+        {
+          "line": 97,
+          "text": "“与自然数大小相同的无限”"
+        },
+        {
+          "line": 131,
+          "text": "“实数（数轴上的所有数）”"
+        },
+        {
+          "line": 133,
+          "text": "“康托尔对角线论证法”"
+        }
+      ]
+    },
+    {
+      "path": "content/post/paradox-maxwells-demon/index.md",
+      "changes": [
+        {
+          "line": 49,
+          "text": "「悪魔」"
+        },
+        {
+          "line": 52,
+          "text": "「速い分子」"
+        },
+        {
+          "line": 53,
+          "text": "「遅い分子」"
+        },
+        {
+          "line": 54,
+          "text": "「遅い分子」"
+        },
+        {
+          "line": 55,
+          "text": "「速い分子」"
+        },
+        {
+          "line": 108,
+          "text": "「情報の消去」"
+        },
+        {
+          "line": 110,
+          "text": "「消去（初期化）」"
+        },
+        {
+          "line": 121,
+          "text": "「消去（忘却）」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/paradox-maxwells-demon/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 49,
+          "text": "“恶魔”"
+        },
+        {
+          "line": 52,
+          "text": "“快分子”"
+        },
+        {
+          "line": 53,
+          "text": "“慢分子”"
+        },
+        {
+          "line": 54,
+          "text": "“慢分子”"
+        },
+        {
+          "line": 55,
+          "text": "“快分子”"
+        },
+        {
+          "line": 108,
+          "text": "“信息的擦除”"
+        }
+      ]
+    },
+    {
+      "path": "content/post/paradox-maxwells-demon/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 49,
+          "text": "「惡魔」"
+        },
+        {
+          "line": 52,
+          "text": "「快分子」"
+        },
+        {
+          "line": 53,
+          "text": "「慢分子」"
+        },
+        {
+          "line": 54,
+          "text": "「慢分子」"
+        },
+        {
+          "line": 55,
+          "text": "「快分子」"
+        },
+        {
+          "line": 108,
+          "text": "「資訊的抹除」"
+        },
+        {
+          "line": 110,
+          "text": "「抹除（初始化）」"
+        },
+        {
+          "line": 121,
+          "text": "「抹除（遺忘）」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/paradox-ship-of-theseus/index.md",
+      "changes": [
+        {
+          "line": 81,
+          "text": "「心理的連続性（Psychological Continuity）」"
+        },
+        {
+          "line": 100,
+          "text": "「同一性（アイデンティティ）とは、事物に内在する絶対的な性質ではなく、私たちがそれをどう認識するかという合意や概念に過ぎない」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/paradox-ship-of-theseus/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 81,
+          "text": "“心理连续性（Psychological Continuity）”"
+        }
+      ]
+    },
+    {
+      "path": "content/post/paradox-ship-of-theseus/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 81,
+          "text": "「心理連續性（Psychological Continuity）」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/philosophy-agile-manifesto/index.md",
+      "changes": [
+        {
+          "line": 23,
+          "text": "重量級プロセス（Heavyweight Processes）"
+        },
+        {
+          "line": 35,
+          "text": "「アジャイル（Agile）」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/philosophy-agile-manifesto/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 35,
+          "text": "「敏捷（Agile）」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/philosophy-oop-messaging/index.md",
+      "changes": [
+        {
+          "line": 19,
+          "text": "「メッセージング（Messaging）」"
+        },
+        {
+          "line": 23,
+          "text": "「生物の細胞（Cell）」"
+        },
+        {
+          "line": 49,
+          "text": "「関数呼び出し（Function Call）」の構文糖衣"
+        },
+        {
+          "line": 99,
+          "text": "「アクターモデル（Actor Model）」"
+        },
+        {
+          "line": 101,
+          "text": "「非同期メッセージの送信」"
+        },
+        {
+          "line": 119,
+          "text": "「マイクロサービスアーキテクチャ（Microservices Architecture）」"
+        },
+        {
+          "line": 127,
+          "text": "「メッセージング」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/philosophy-oop-messaging/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 19,
+          "text": "“消息传递（Messaging）”"
+        },
+        {
+          "line": 23,
+          "text": "“生物细胞（Cell）”"
+        },
+        {
+          "line": 49,
+          "text": "“函数调用（Function Call）”的语法糖"
+        },
+        {
+          "line": 99,
+          "text": "“Actor 模型（Actor Model）”"
+        },
+        {
+          "line": 101,
+          "text": "“发送异步消息”"
+        }
+      ]
+    },
+    {
+      "path": "content/post/philosophy-oop-messaging/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 19,
+          "text": "「訊息傳遞（Messaging）」"
+        },
+        {
+          "line": 23,
+          "text": "「生物細胞（Cell）」"
+        },
+        {
+          "line": 49,
+          "text": "「函式呼叫（Function Call）」的語法糖"
+        },
+        {
+          "line": 99,
+          "text": "「Actor 模型 Actor Model」"
+        },
+        {
+          "line": 101,
+          "text": "「非同步訊息的發送」"
+        },
+        {
+          "line": 127,
+          "text": "「訊息傳遞」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/philosophy-python-zen/index.ko.md",
+      "changes": [
+        {
+          "line": 11,
+          "text": "「The Zen of Python (Python의 선)」"
+        },
+        {
+          "line": 33,
+          "text": "PEP 20 (Python Enhancement Proposal 20)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/philosophy-python-zen/index.md",
+      "changes": [
+        {
+          "line": 11,
+          "text": "「The Zen of Python（Pythonの禅）」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/philosophy-python-zen/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 11,
+          "text": "“The Zen of Python（Python之禅）”"
+        },
+        {
+          "line": 33,
+          "text": "PEP 20 (Python Enhancement Proposal 20)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/philosophy-python-zen/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 11,
+          "text": "「The Zen of Python（Python 之禪）」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/physics-rfid-nfc/index.md",
+      "changes": [
+        {
+          "line": 31,
+          "text": "「コイル（ぐるぐると巻いた導線）の中を通る磁界（磁力線）が変化すると、その変化を打ち消そうとしてコイルに電流が流れる」"
+        },
+        {
+          "line": 73,
+          "text": "「約0.1秒（100ミリ秒）」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/queuing-theory-basics/index.ko.md",
+      "changes": [
+        {
+          "line": 19,
+          "text": "아그너 크라루프 얼랑(Agner Krarup Erlang)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/takagi-teiji/index.ko.md",
+      "changes": [
+        {
+          "line": 20,
+          "text": "유체론(Class Field Theory)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/technology-blockchain/index.md",
+      "changes": [
+        {
+          "line": 38,
+          "text": "ハッシュ関数（SHA-256など）"
+        },
+        {
+          "line": 63,
+          "text": "マイニング（採掘）"
+        },
+        {
+          "line": 72,
+          "text": "「人間の経済的な欲望とゲーム理論」を利用してネットワークの安全性を担保している"
+        }
+      ]
+    },
+    {
+      "path": "content/post/technology-cloud-computing/index.md",
+      "changes": [
+        {
+          "line": 24,
+          "text": "「必要な時に」「必要な分だけ」「従量課金で」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/technology-deep-learning/index.md",
+      "changes": [
+        {
+          "line": 23,
+          "text": "「データさえ大量に与えれば、AIが自ら勝手に特徴を見つけ出す」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/technology-gps/index.md",
+      "changes": [
+        {
+          "line": 20,
+          "text": "GPS（Global Positioning System: 全地球測位システム）"
+        },
+        {
+          "line": 23,
+          "text": "「自分（衛星）の現在位置」と「現在時刻」の電波を地球に向かって垂れ流し続けている"
+        }
+      ]
+    },
+    {
+      "path": "content/post/technology-quantum-computer/index.md",
+      "changes": [
+        {
+          "line": 31,
+          "text": "「0であり、かつ1でもある」という曖昧な状態（確率的な重ね合わせ）"
+        }
+      ]
+    },
+    {
+      "path": "content/post/biography-henrietta-lacks/index.ko.md",
+      "changes": [
+        {
+          "line": 13,
+          "text": "헨리에타 랙스(Henrietta Lacks)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/bsd-conjecture/index.ko.md",
+      "changes": [
+        {
+          "line": 81,
+          "text": "랭크(계수)"
+        },
+        {
+          "line": 216,
+          "text": "합동수 문제(Congruent number problem)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/business-dunbars-number/index.md",
+      "changes": [
+        {
+          "line": 21,
+          "text": "「人間が安定した社会的な関係を維持できる人数の上限は、およそ150人である」"
+        },
+        {
+          "line": 26,
+          "text": "「148」"
+        },
+        {
+          "line": 156,
+          "text": "「有限であるからこそ、関係性をデザインし、大切に育む必要がある」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/business-dunbars-number/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 21,
+          "text": "“人类能够维持稳定社交关系的人数上限大约为150人”"
+        },
+        {
+          "line": 26,
+          "text": "“148”"
+        }
+      ]
+    },
+    {
+      "path": "content/post/business-dunbars-number/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 21,
+          "text": "「人類能夠維持穩定社會關係的人數上限，大約為150人」"
+        },
+        {
+          "line": 26,
+          "text": "「148」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/business-moores-law/index.md",
+      "changes": [
+        {
+          "line": 43,
+          "text": "「幾何級数的進化（指数関数的成長：Exponential Growth）」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/business-moores-law/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 43,
+          "text": "“几何级数进化（指数级增长：Exponential Growth）”"
+        }
+      ]
+    },
+    {
+      "path": "content/post/business-moores-law/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 43,
+          "text": "「幾何級數進化（指數級成長：Exponential Growth）」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/business-ringelmann-effect/index.md",
+      "changes": [
+        {
+          "line": 35,
+          "text": "「集団の人数が増えるほど、一人ひとりが発揮する力は反比例して低下する」"
+        },
+        {
+          "line": 119,
+          "text": "「誰もが全力を出したくなる、あるいは全力を出さざるを得ない環境」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/business-ringelmann-effect/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 119,
+          "text": "“建立一个让任何人都想全力以赴，或者不得不全力以赴的环境”"
+        }
+      ]
+    },
+    {
+      "path": "content/post/business-ringelmann-effect/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 119,
+          "text": "「讓任何人都會想全力以赴，或者不得不全力以赴的環境」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/crdt-local-first-software/index.md",
+      "changes": [
+        {
+          "line": 13,
+          "text": "CRDT（Conflict-free Replicated Data Type：競合なし複製データ型）"
+        },
+        {
+          "line": 38,
+          "text": "OT（Operational Transformation：操作変換）"
+        },
+        {
+          "line": 60,
+          "text": "半順序集合（Partially Ordered Set / Join Semilattice）"
+        },
+        {
+          "line": 92,
+          "text": "論理クロック（Logical Clock）"
+        }
+      ]
+    },
+    {
+      "path": "content/post/graph-theory-bridges-of-konigsberg/index.ko.md",
+      "changes": [
+        {
+          "line": 48,
+          "text": "그래프 (Graph)"
+        },
+        {
+          "line": 90,
+          "text": "최단 경로 문제 (Shortest Path Problem)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/history-apollo-11-margaret-hamilton/index.ko.md",
+      "changes": [
+        {
+          "line": 15,
+          "text": "마거릿 해밀턴(Margaret Hamilton)"
+        },
+        {
+          "line": 23,
+          "text": "아폴로 유도 컴퓨터(AGC)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/history-apollo-11-margaret-hamilton/index.md",
+      "changes": [
+        {
+          "line": 15,
+          "text": "マーガレット・ハミルトン（Margaret Hamilton）"
+        },
+        {
+          "line": 23,
+          "text": "アポロ誘導コンピュータ（AGC）"
+        },
+        {
+          "line": 38,
+          "text": "「コアロープメモリ（Core Rope Memory）」"
+        },
+        {
+          "line": 52,
+          "text": "「ソフトウェアエンジニアリング」"
+        },
+        {
+          "line": 68,
+          "text": "「非同期のエグゼクティブ（Asynchronous Executive）」"
+        },
+        {
+          "line": 87,
+          "text": "「BAILOUT（緊急脱出）」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/history-apollo-11-margaret-hamilton/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 52,
+          "text": "“软件工程”"
+        },
+        {
+          "line": 68,
+          "text": "“异步执行程序（Asynchronous Executive）”"
+        },
+        {
+          "line": 87,
+          "text": "“BAILOUT（紧急逃生）”"
+        }
+      ]
+    },
+    {
+      "path": "content/post/history-apollo-11-margaret-hamilton/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 38,
+          "text": "「磁芯繩記憶體（Core Rope Memory）」"
+        },
+        {
+          "line": 52,
+          "text": "「軟體工程（Software Engineering）」"
+        },
+        {
+          "line": 68,
+          "text": "「非同步執行程序（Asynchronous Executive）」"
+        },
+        {
+          "line": 124,
+          "text": "「已捨棄不必要的任務，將所有資源集中於重要的著陸控制並重新啟動」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/history-of-unix/index.md",
+      "changes": [
+        {
+          "line": 15,
+          "text": "「UNIX（ユニックス）」"
+        },
+        {
+          "line": 23,
+          "text": "「Multics（Multiplexed Information and Computing Service）」"
+        },
+        {
+          "line": 41,
+          "text": "「C言語」"
+        },
+        {
+          "line": 45,
+          "text": "「移植性（ポータビリティ）」"
+        },
+        {
+          "line": 70,
+          "text": "「BSD（Berkeley Software Distribution）」"
+        },
+        {
+          "line": 72,
+          "text": "「System V（システム・ファイブ）」"
+        },
+        {
+          "line": 74,
+          "text": "「UNIX戦争（UNIX Wars）」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/history-of-wasan-japanese-mathematics/index.ko.md",
+      "changes": [
+        {
+          "line": 37,
+          "text": "세키 타카카즈(関孝和)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/history-silicon-valley-traitorous-eight/index.ko.md",
+      "changes": [
+        {
+          "line": 98,
+          "text": "인텔(Intel)"
+        },
+        {
+          "line": 98,
+          "text": "AMD(Advanced Micro Devices)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/history-silicon-valley-traitorous-eight/index.md",
+      "changes": [
+        {
+          "line": 77,
+          "text": "「フェアチャイルド半導体（Fairchild Semiconductor）」"
+        },
+        {
+          "line": 83,
+          "text": "「シリコンバレー的な企業文化」"
+        },
+        {
+          "line": 112,
+          "text": "「反逆的な起業家精神」「ストックオプションによるインセンティブ」「ベンチャーキャピタルによるリスクマネーの供給」「フラットな組織文化」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/history-silicon-valley-traitorous-eight/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 77,
+          "text": "“仙童半导体”（Fairchild Semiconductor）"
+        },
+        {
+          "line": 83,
+          "text": "“硅谷式企业文化”"
+        }
+      ]
+    },
+    {
+      "path": "content/post/how-ssd-nand-flash-work/index.ko.md",
+      "changes": [
+        {
+          "line": 48,
+          "text": "SLC(Single-Level Cell)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/kakeya-conjecture-explained/index.md",
+      "changes": [
+        {
+          "line": 17,
+          "text": "「カケヤ予想（Kakeya Conjecture）」"
+        },
+        {
+          "line": 70,
+          "text": "「カケヤ予想（掛谷予想）」"
+        },
+        {
+          "line": 82,
+          "text": "「調和解析（フーリエ解析）」"
+        },
+        {
+          "line": 96,
+          "text": "偏微分方程式（PDE）"
+        },
+        {
+          "line": 102,
+          "text": "「加法的組合せ論（Additive Combinatorics）」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/kakeya-conjecture-explained/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 17,
+          "text": "“挂谷猜想（Kakeya Conjecture）”"
+        },
+        {
+          "line": 70,
+          "text": "“挂谷猜想”"
+        },
+        {
+          "line": 82,
+          "text": "“调和分析（傅里叶分析）”"
+        },
+        {
+          "line": 96,
+          "text": "偏微分方程（PDE）"
+        },
+        {
+          "line": 102,
+          "text": "“加性组合学（Additive Combinatorics）”"
+        }
+      ]
+    },
+    {
+      "path": "content/post/kakeya-conjecture-explained/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 82,
+          "text": "「調和分析（傅立葉分析）」"
+        },
+        {
+          "line": 96,
+          "text": "偏微分方程（PDE）"
+        },
+        {
+          "line": 102,
+          "text": "「加性組合數學（Additive Combinatorics）」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/paradox-galileos-paradox/index.md",
+      "changes": [
+        {
+          "line": 33,
+          "text": "「全体は部分より大きい」"
+        },
+        {
+          "line": 89,
+          "text": "「一対一対応（全単射：Bijection）」"
+        },
+        {
+          "line": 97,
+          "text": "「自然数と同じ大きさの無限」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/paradox-galileos-paradox/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 61,
+          "text": "「自然數的個數」與「平方數的個數」完全相等"
+        },
+        {
+          "line": 89,
+          "text": "「一對一對應（雙射：Bijection）」"
+        },
+        {
+          "line": 97,
+          "text": "「與自然數大小相同的無限」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/paradox-monty-hall-problem/index.ko.md",
+      "changes": [
+        {
+          "line": 50,
+          "text": "2/3(약 66.7%)"
+        },
+        {
+          "line": 50,
+          "text": "1/3(약 33.3%)"
+        },
+        {
+          "line": 207,
+          "text": "불과 약 1% 미만(약 0.98%)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/paradox-monty-hall-problem/index.md",
+      "changes": [
+        {
+          "line": 175,
+          "text": "「司会者のモンティはランダムにドアを開けているわけではない」"
+        },
+        {
+          "line": 207,
+          "text": "わずか約1%弱（約0.98%）"
+        },
+        {
+          "line": 224,
+          "text": "「自分の直感を盲信せず、論理と数学という道具を使って、立ち止まって考え直すことの重要性」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/paradox-monty-hall-problem/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 50,
+          "text": "1/3（约33.3%）"
+        }
+      ]
+    },
+    {
+      "path": "content/post/paradox-monty-hall-problem/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 50,
+          "text": "1/3（約33.3%）"
+        },
+        {
+          "line": 175,
+          "text": "「主持人蒙提並不是隨機打開門的」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/paradox-prisoners-dilemma/index.ko.md",
+      "changes": [
+        {
+          "line": 29,
+          "text": "무죄(석방)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/paradox-prisoners-dilemma/index.md",
+      "changes": [
+        {
+          "line": 67,
+          "text": "「支配戦略」"
+        },
+        {
+          "line": 70,
+          "text": "「ナッシュ均衡」"
+        },
+        {
+          "line": 102,
+          "text": "「しっぺ返し戦略（Tit for Tat）」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/paradox-prisoners-dilemma/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 67,
+          "text": "“占优策略”"
+        },
+        {
+          "line": 70,
+          "text": "“纳什均衡”"
+        },
+        {
+          "line": 102,
+          "text": "“一报还一报策略（Tit for Tat）”"
+        }
+      ]
+    },
+    {
+      "path": "content/post/paradox-prisoners-dilemma/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 67,
+          "text": "「優勢策略」"
+        },
+        {
+          "line": 70,
+          "text": "「納許均衡」"
+        },
+        {
+          "line": 102,
+          "text": "「一報還一報策略（Tit for Tat）」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/philosophy-agile-manifesto/index.ko.md",
+      "changes": [
+        {
+          "line": 23,
+          "text": "중량급 프로세스(Heavyweight Processes)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/philosophy-lisp-s-expressions/index.ko.md",
+      "changes": [
+        {
+          "line": 13,
+          "text": "Lisp(List Processing)"
+        },
+        {
+          "line": 27,
+          "text": "S식(Symbolic Expressions)"
+        },
+        {
+          "line": 39,
+          "text": "추상 구문 트리(AST: Abstract Syntax Tree)"
+        },
+        {
+          "line": 54,
+          "text": "동형성(Homoiconicity)"
+        },
+        {
+          "line": 58,
+          "text": "코드-애즈-데이터(Code as Data)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/philosophy-lisp-s-expressions/index.md",
+      "changes": [
+        {
+          "line": 13,
+          "text": "Lisp（List Processing）"
+        },
+        {
+          "line": 27,
+          "text": "S式（Symbolic Expressions）"
+        },
+        {
+          "line": 39,
+          "text": "抽象構文木（AST: Abstract Syntax Tree）"
+        },
+        {
+          "line": 58,
+          "text": "コード・アズ・データ（Code as Data）"
+        },
+        {
+          "line": 83,
+          "text": "「Lispの呪い（The Lisp Curse）」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/philosophy-lisp-s-expressions/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 39,
+          "text": "抽象语法树（AST: Abstract Syntax Tree）"
+        },
+        {
+          "line": 58,
+          "text": "代码即数据（Code as Data）"
+        },
+        {
+          "line": 83,
+          "text": "“Lisp的诅咒（The Lisp Curse）”"
+        }
+      ]
+    },
+    {
+      "path": "content/post/philosophy-lisp-s-expressions/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 64,
+          "text": "「在編譯期執行的 Lisp 程式」"
+        },
+        {
+          "line": 83,
+          "text": "「Lisp 的詛咒 (The Lisp Curse)」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/philosophy-sql-relational-model/index.ko.md",
+      "changes": [
+        {
+          "line": 67,
+          "text": "튜플의 순서(행의 순서)"
+        },
+        {
+          "line": 67,
+          "text": "속성의 순서(열의 순서)"
+        },
+        {
+          "line": 75,
+          "text": "관계 대수(Relational Algebra)"
+        },
+        {
+          "line": 104,
+          "text": "3치 논리(Three-Valued Logic)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/philosophy-sql-relational-model/index.md",
+      "changes": [
+        {
+          "line": 25,
+          "text": "「ナビゲーショナル（航海的）」"
+        },
+        {
+          "line": 48,
+          "text": "「テーブルそのもの（厳密にはタプルの集合）」"
+        },
+        {
+          "line": 67,
+          "text": "タプルの順序（行の順番）"
+        },
+        {
+          "line": 67,
+          "text": "属性の順序（列の順番）"
+        },
+        {
+          "line": 75,
+          "text": "リレーショナル代数（Relational Algebra）"
+        },
+        {
+          "line": 104,
+          "text": "3値論理（Three-Valued Logic）"
+        }
+      ]
+    },
+    {
+      "path": "content/post/philosophy-sql-relational-model/index.zh-cn.md",
+      "changes": [
+        {
+          "line": 25,
+          "text": "“导航式（Navigational）”"
+        },
+        {
+          "line": 48,
+          "text": "“表本身（严格来说是元组的集合）”"
+        },
+        {
+          "line": 75,
+          "text": "关系代数（Relational Algebra）"
+        },
+        {
+          "line": 79,
+          "text": "“闭包性（Closure Property）”"
+        }
+      ]
+    },
+    {
+      "path": "content/post/philosophy-sql-relational-model/index.zh-tw.md",
+      "changes": [
+        {
+          "line": 25,
+          "text": "「導航式 (Navigational)」"
+        },
+        {
+          "line": 48,
+          "text": "「資料表本身 (嚴格來說是元組的集合)」"
+        },
+        {
+          "line": 75,
+          "text": "關聯代數 (Relational Algebra)"
+        },
+        {
+          "line": 79,
+          "text": "「閉包性 (Closure Property)」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/physics-electromagnetic-induction/index.md",
+      "changes": [
+        {
+          "line": 88,
+          "text": "ACインダクションモーター（誘導電動機）"
+        },
+        {
+          "line": 94,
+          "text": "回生ブレーキ（Regenerative Braking）"
+        }
+      ]
+    },
+    {
+      "path": "content/post/physics-laser/index.md",
+      "changes": [
+        {
+          "line": 62,
+          "text": "「光共振器（Optical Resonator または Optical Cavity）」"
+        },
+        {
+          "line": 70,
+          "text": "「レーザービーム」"
+        },
+        {
+          "line": 74,
+          "text": "発振閾値（Threshold）"
+        },
+        {
+          "line": 76,
+          "text": "レート方程式（Rate Equations）"
+        },
+        {
+          "line": 109,
+          "text": "超短パルスレーザー（フェムト秒レーザーやアト秒レーザー）"
+        }
+      ]
+    },
+    {
+      "path": "content/post/physics-quantum-mechanics/index.md",
+      "changes": [
+        {
+          "line": 48,
+          "text": "「干渉縞」"
+        },
+        {
+          "line": 61,
+          "text": "「波動関数（Wave function）」"
+        }
+      ]
+    },
+    {
+      "path": "content/post/rdbms-transaction-acid-isolation-level-lock/index.ko.md",
+      "changes": [
+        {
+          "line": 23,
+          "text": "트랜잭션 격리 수준(Isolation Level)"
+        },
+        {
+          "line": 23,
+          "text": "비관적 잠금(Pessimistic Lock)"
+        },
+        {
+          "line": 23,
+          "text": "MVCC(다중 버전 동시성 제어)"
+        },
+        {
+          "line": 41,
+          "text": "데이터 불일치(정합성 오류)"
+        },
+        {
+          "line": 90,
+          "text": "데이터 불일치(이상 현상, Anomaly)"
+        },
+        {
+          "line": 127,
+          "text": "기존 행의 갱신(UPDATE)"
+        },
+        {
+          "line": 127,
+          "text": "행의 추가나 삭제(INSERT/DELETE)"
+        },
+        {
+          "line": 181,
+          "text": "데드락(Deadlock)"
+        },
+        {
+          "line": 276,
+          "text": "갱신 건수(Affected Rows)"
+        },
+        {
+          "line": 291,
+          "text": "격리 수준(Isolation Level)"
+        }
+      ]
+    },
+    {
+      "path": "content/post/technology-credit-card/index.md",
+      "changes": [
+        {
+          "line": 34,
+          "text": "国際ブランド（決済ネットワーク）"
+        },
+        {
+          "line": 82,
+          "text": "AI（不正検知システム）"
+        }
+      ]
+    },
+    {
+      "path": "content/post/time-space-complexity-big-o-notation-examples/index.md",
+      "changes": [
+        {
+          "line": 70,
+          "text": "二分探索（Binary Search）"
+        },
+        {
+          "line": 245,
+          "text": "トレードオフ（Time-Memory Trade-off）"
+        },
+        {
+          "line": 247,
+          "text": "キャッシュ（メモ化）"
+        }
+      ]
+    }
+  ],
+  "skipped_render_mismatch": [
+    "content/post/biography-henrietta-lacks/index.ko.md",
+    "content/post/biography-richard-feynman/index.ko.md",
+    "content/post/biography-richard-feynman/index.md",
+    "content/post/biography-richard-feynman/index.zh-cn.md",
+    "content/post/biography-richard-feynman/index.zh-tw.md",
+    "content/post/biography-socrates/index.ko.md",
+    "content/post/bsd-conjecture/index.ko.md",
+    "content/post/business-brooks-law/index.ko.md",
+    "content/post/business-dunbars-number/index.ko.md",
+    "content/post/business-dunbars-number/index.md",
+    "content/post/business-dunbars-number/index.zh-cn.md",
+    "content/post/business-dunbars-number/index.zh-tw.md",
+    "content/post/business-innovators-dilemma/index.ko.md",
+    "content/post/business-moores-law/index.ko.md",
+    "content/post/business-moores-law/index.md",
+    "content/post/business-moores-law/index.zh-cn.md",
+    "content/post/business-moores-law/index.zh-tw.md",
+    "content/post/business-parkinsons-law/index.ko.md",
+    "content/post/business-peter-principle/index.ko.md",
+    "content/post/business-ringelmann-effect/index.ko.md",
+    "content/post/business-ringelmann-effect/index.md",
+    "content/post/business-ringelmann-effect/index.zh-cn.md",
+    "content/post/business-ringelmann-effect/index.zh-tw.md",
+    "content/post/crdt-local-first-software/index.md",
+    "content/post/crdt-local-first-software/index.zh-cn.md",
+    "content/post/crdt-local-first-software/index.zh-tw.md",
+    "content/post/fermat/index.ko.md",
+    "content/post/graph-theory-bridges-of-konigsberg/index.ko.md",
+    "content/post/history-apollo-11-margaret-hamilton/index.ko.md",
+    "content/post/history-apollo-11-margaret-hamilton/index.md",
+    "content/post/history-apollo-11-margaret-hamilton/index.zh-cn.md",
+    "content/post/history-apollo-11-margaret-hamilton/index.zh-tw.md",
+    "content/post/history-of-https/index.md",
+    "content/post/history-of-macos/index.md",
+    "content/post/history-of-unix/index.md",
+    "content/post/history-of-wasan-japanese-mathematics/index.ko.md",
+    "content/post/history-silicon-valley-traitorous-eight/index.ar.md",
+    "content/post/history-silicon-valley-traitorous-eight/index.ko.md",
+    "content/post/history-silicon-valley-traitorous-eight/index.md",
+    "content/post/history-silicon-valley-traitorous-eight/index.zh-cn.md",
+    "content/post/how-ssd-nand-flash-work/index.ko.md",
+    "content/post/kakeya-conjecture-explained/index.ar.md",
+    "content/post/kakeya-conjecture-explained/index.ko.md",
+    "content/post/kakeya-conjecture-explained/index.md",
+    "content/post/kakeya-conjecture-explained/index.zh-cn.md",
+    "content/post/kakeya-conjecture-explained/index.zh-tw.md",
+    "content/post/method-of-least-squares/index.ko.md",
+    "content/post/noether/index.ko.md",
+    "content/post/paradox-fermi-paradox/index.ko.md",
+    "content/post/paradox-galileos-paradox/index.ko.md",
+    "content/post/paradox-galileos-paradox/index.md",
+    "content/post/paradox-galileos-paradox/index.zh-tw.md",
+    "content/post/paradox-maxwells-demon/index.ko.md",
+    "content/post/paradox-monty-hall-problem/index.ko.md",
+    "content/post/paradox-monty-hall-problem/index.md",
+    "content/post/paradox-monty-hall-problem/index.zh-cn.md",
+    "content/post/paradox-monty-hall-problem/index.zh-tw.md",
+    "content/post/paradox-prisoners-dilemma/index.ko.md",
+    "content/post/paradox-prisoners-dilemma/index.md",
+    "content/post/paradox-prisoners-dilemma/index.zh-cn.md",
+    "content/post/paradox-prisoners-dilemma/index.zh-tw.md",
+    "content/post/paradox-schrodingers-cat/index.ar.md",
+    "content/post/paradox-schrodingers-cat/index.ko.md",
+    "content/post/paradox-schrodingers-cat/index.md",
+    "content/post/paradox-schrodingers-cat/index.zh-cn.md",
+    "content/post/paradox-schrodingers-cat/index.zh-tw.md",
+    "content/post/paradox-ship-of-theseus/index.ko.md",
+    "content/post/philosophy-agile-manifesto/index.ko.md",
+    "content/post/philosophy-lisp-s-expressions/index.ko.md",
+    "content/post/philosophy-lisp-s-expressions/index.md",
+    "content/post/philosophy-lisp-s-expressions/index.zh-cn.md",
+    "content/post/philosophy-lisp-s-expressions/index.zh-tw.md",
+    "content/post/philosophy-oop-messaging/index.ko.md",
+    "content/post/philosophy-sql-relational-model/index.ko.md",
+    "content/post/philosophy-sql-relational-model/index.md",
+    "content/post/philosophy-sql-relational-model/index.zh-cn.md",
+    "content/post/philosophy-sql-relational-model/index.zh-tw.md",
+    "content/post/physics-electromagnetic-induction/index.md",
+    "content/post/physics-laser/index.md",
+    "content/post/physics-quantum-mechanics/index.md",
+    "content/post/rdbms-transaction-acid-isolation-level-lock/index.ko.md",
+    "content/post/technology-credit-card/index.md",
+    "content/post/time-space-complexity-big-o-notation-examples/index.md",
+    "content/post/tree-graph-data-structures-search-dfs-bfs-dijkstra/index.md"
+  ]
+}
