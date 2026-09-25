@@ -1,0 +1,4 @@
+Start building sites … 
+hugo v0.139.0-dacef0df92a9a20072b4eaa42003e1a63ace8f41+extended windows/amd64 BuildDate=2024-11-18T16:17:45Z VendorInfo=gohugoio
+
+WARN  found no layout file for "json" for kind "home": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
