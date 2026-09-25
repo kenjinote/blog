@@ -11,7 +11,7 @@ tags: ["Solo Developer", "Micro-SaaS", "Serverless", "Agility"]
 
 # 序論：巨人たちに挑む「持たざる者」の戦い方
 
-ソフトウェア開発の歴史において、かつてないほど個人開発者（インディーデベロッパー）にとって有利な時代が到来しています。AWSやGCPといったクラウドインフラの民主化、VercelやSupabaseをはじめとするBaaS（Backend as a [Service](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)）の台頭、そして何よりLLM（[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）の進化によるコーディングの自動化。これら全てが、個人が「巨人」たる大手テック企業と真っ向から勝負できる土壌を作り上げました。
+ソフトウェア開発の歴史において、かつてないほど個人開発者（インディーデベロッパー）にとって有利な時代が到来しています。AWSやGCPといったクラウドインフラの民主化、VercelやSupabaseをはじめとするBaaS（Backend as a [Service](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)）の台頭、そして何より[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)（[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）の進化によるコーディングの自動化。これら全てが、個人が「巨人」たる大手テック企業と真っ向から勝負できる土壌を作り上げました。
 
 しかし、技術的リソースがフラットになったからといって、大手企業と同じ戦略をとって勝てるわけではありません。資本力、マーケティング力、そしてブランド力において、個人は圧倒的に不利です。個人開発者が生き残り、そして勝つためには、独自の「サバイバル戦略」が不可欠です。
 
@@ -27,7 +27,7 @@ tags: ["Solo Developer", "Micro-SaaS", "Serverless", "Agility"]
 
 ## [ジップの法則](https://kenji.blog/p/zipfs-law/)（[Zipf's Law](https://kenji.blog/p/zipfs-law/)）と市場分布
 
-市場の規模と数の関係は、しばしば[ジップの法則](https://kenji.blog/p/zipfs-law/)やパレートの法則に従います。市場のランクを $k$、その市場規模（売上ポテンシャル）を $P(k)$ とすると、次のような冪乗則（べきじょうそく）モデルで表現できます。
+市場の規模と数の関係は、しばしば[ジップの法則](https://kenji.blog/p/zipfs-law/)や[パレートの法則](/p/business-pareto-principle/)に従います。市場のランクを $k$、その市場規模（売上ポテンシャル）を $P(k)$ とすると、次のような冪乗則（べきじょうそく）モデルで表現できます。
 
 $$ P(k) \propto \frac{1}{k^\alpha} $$
 
@@ -248,7 +248,7 @@ export async function getUserByEmail(email: string) {
 
 # 7. プログラマティックSEOとAI生成コンテンツ
 
-マーケティング予算がない個人開発者が戦うための最強の武器が「SEO（検索エンジン最適化）」です。近年では、自社のデータベースと[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)を組み合わせて、数千から数万のランディングページを動的に生成する「プログラマティックSEO」が注目されています。
+マーケティング予算がない個人開発者が戦うための最強の武器が「SEO（[検索エンジン](/p/how-search-engines-work/)最適化）」です。近年では、自社のデータベースと[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)を組み合わせて、数千から数万のランディングページを動的に生成する「プログラマティックSEO」が注目されています。
 
 トラフィックの分布もまた冪乗則に従います。特定のビッグキーワードを狙うのではなく、検索ボリュームは小さくてもコンバージョン率が高い「ロングテールキーワード」を大量にカバーすることで、全体のアクセス数を底上げします。
 

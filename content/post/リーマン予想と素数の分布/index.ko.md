@@ -15,9 +15,9 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 그 소수의 수수께끼에 가장 근접한 것이 1859년 독일의 수학자 [베른하르트 리만](https://kenji.blog/ko/p/riemann/)(Bernhard Riemann)이 제안한 **'리만 가설([Riemann](https://kenji.blog/ko/p/riemann/) Hypothesis)'** 입니다. 리만 가설은 현대 수학에서 가장 중요하고 미해결된 난제 중 하나이며, 클레이 수학연구소가 정한 밀레니엄 현상 문제 중 하나로 100만 달러의 상금이 걸려 있습니다.
 
-언뜻 보기에 소수의 분포에 관한 순수 수학의 난제는 우리의 일상생활과는 무관해 보일지도 모릅니다. 하지만 현대 사회의 인프라를 지탱하는 인터넷 보안, 특히 **[RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호나 타원곡선암호(ECC) 같은 현대 암호 기술** 은 거대한 소수의 성질에 깊이 의존하고 있습니다.
+언뜻 보기에 소수의 분포에 관한 순수 수학의 난제는 우리의 일상생활과는 무관해 보일지도 모릅니다. 하지만 현대 사회의 인프라를 지탱하는 인터넷 보안, 특히 **[RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호나 타원곡선암호([ECC](/ko/p/elliptic-curve-cryptography-math-cpp/)) 같은 현대 암호 기술** 은 거대한 소수의 성질에 깊이 의존하고 있습니다.
 
-이 글에서는 소수의 분포에서 소수 정리, 리만 제타 함수, 그리고 리만 가설의 핵심에 이르는 수학적 여정을 떠나며, 그것이 어떻게 현대 암호 기술과 연결되어 있는지, 그리고 만약 리만 가설이 증명된다면 세상은 어떻게 될지에 대해 매우 상세하고 깊이 있게 파헤쳐 설명합니다.
+이 글에서는 소수의 분포에서 [소수 정리](/ko/p/prime-number-theorem/), 리만 제타 함수, 그리고 리만 가설의 핵심에 이르는 수학적 여정을 떠나며, 그것이 어떻게 현대 암호 기술과 연결되어 있는지, 그리고 만약 리만 가설이 증명된다면 세상은 어떻게 될지에 대해 매우 상세하고 깊이 있게 파헤쳐 설명합니다.
 
 ---
 
@@ -36,7 +36,7 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 $$ \text{Li}(x) = \int_{2}^{x} \frac{dt}{\ln t} $$
 
-가우스의 예상은 훗날 1896년 자크 아다마르와 샤를 장 드 라 발레 푸생에 의해 독립적으로 증명되었고, **소수 정리([Prime Number Theorem](https://kenji.blog/ko/p/prime-number-theorem/), PNT)** 로서 확립되었습니다.
+가우스의 예상은 훗날 1896년 자크 아다마르와 샤를 장 드 라 발레 푸생에 의해 독립적으로 증명되었고, **[소수 정리](/ko/p/prime-number-theorem/)([Prime Number Theorem](https://kenji.blog/ko/p/prime-number-theorem/), PNT)** 로서 확립되었습니다.
 
 $$ \lim_{x \to \infty} \frac{\pi(x)}{\text{Li}(x)} = 1 $$
 
@@ -50,7 +50,7 @@ $$ \pi(x) \sim \frac{x}{\ln x} $$
 
 # 3. 리만 제타 함수와 오일러 곱
 
-소수의 분포를 분석하는 데 있어 가장 강력한 무기가 되는 것이 **리만 제타 함수([Riemann](https://kenji.blog/ko/p/riemann/) Zeta Function)** 입니다. 원래는 레온하르트 오일러([Leonhard Euler](https://kenji.blog/ko/p/euler/))에 의해 실수 $s > 1$ 에 대해 정의된 무한급수였습니다.
+소수의 분포를 분석하는 데 있어 가장 강력한 무기가 되는 것이 **리만 제타 함수([Riemann](https://kenji.blog/ko/p/riemann/) Zeta Function)** 입니다. 원래는 [레온하르트 오일러](/ko/p/euler/)([Leonhard Euler](https://kenji.blog/ko/p/euler/))에 의해 실수 $s > 1$ 에 대해 정의된 무한급수였습니다.
 
 $$ \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = 1 + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + \dots $$
 
@@ -110,9 +110,9 @@ graph TD
 $$ \psi(x) = x - \sum_{\rho} \frac{x^\rho}{\rho} - \ln(2\pi) - \frac{1}{2}\ln(1 - x^{-2}) $$
 
 여기서 $\rho$ 는 제타 함수의 모든 비자명한 영점을 지나는 합입니다.
-주항은 $x$ (이것은 소수 정리에 대응)이며, 거기서 영점 $\rho$ 에 의존하는 파동 같은 항을 더하고 뺌으로써 소수의 계단형태의 정확한 분포가 복원되는 것입니다. 비자명한 영점은 소수 분포의 '주파수(파동)'를 나타낸다고 할 수 있습니다.
+주항은 $x$ (이것은 [소수 정리](/ko/p/prime-number-theorem/)에 대응)이며, 거기서 영점 $\rho$ 에 의존하는 파동 같은 항을 더하고 뺌으로써 소수의 계단형태의 정확한 분포가 복원되는 것입니다. 비자명한 영점은 소수 분포의 '주파수(파동)'를 나타낸다고 할 수 있습니다.
 
-만약 리만 가설이 맞고, 모든 비자명한 영점 $\rho$ 의 실수부가 정확히 $1/2$ 이라면, 소수 정리의 오차항은 이론상 상상할 수 있는 최소 범위 내에 수렴하게 됩니다.
+만약 리만 가설이 맞고, 모든 비자명한 영점 $\rho$ 의 실수부가 정확히 $1/2$ 이라면, [소수 정리](/ko/p/prime-number-theorem/)의 오차항은 이론상 상상할 수 있는 최소 범위 내에 수렴하게 됩니다.
 
 $$ |\pi(x) - \text{Li}(x)| \le \frac{1}{8\pi} \sqrt{x} \ln x \quad \text{for} \quad x \ge 2657 $$
 
@@ -124,7 +124,7 @@ $$ |\pi(x) - \text{Li}(x)| \le \frac{1}{8\pi} \sqrt{x} \ln x \quad \text{for} \q
 
 여기까지는 심오한 순수 수학의 세계였지만, 이 소수의 성질은 현대의 디지털 사회를 근본적으로 지탱하고 있습니다. 그 대표적인 예가 **[RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호** 를 비롯한 공개키 암호 방식입니다.
 
-인터넷에서의 신용카드 결제, 비밀번호 전송, 블록체인의 전자 서명 등 모든 통신의 안전성은 '소수'에 의존하고 있습니다.
+인터넷에서의 신용카드 결제, 비밀번호 전송, [블록체인](/ko/p/blockchain-technology-smart-contract-distributed-ledger/)의 전자 서명 등 모든 통신의 안전성은 '소수'에 의존하고 있습니다.
 
 ### RSA 암호의 원리
 RSA 암호의 안전성은 '자릿수가 큰 합성수의 소인수분해는 매우 어렵다'는 수학적 사실(소인수분해 문제)에 기반하고 있습니다.
@@ -186,12 +186,12 @@ GRH가 참이라면, 밀러-라빈 판별법에서의 테스트 횟수 상한이
 하지만 그 영향이 제로는 아닙니다.
 리만 가설이 증명되는 과정에서 **'새로운 수학적 도구'나 '미지의 해석 기법'이 발견될 가능성** 이 매우 높기 때문입니다. 역사를 보더라도, [페르마의 마지막 정리](https://kenji.blog/ko/p/fermats-last-theorem/)나 [푸앵카레 추측](https://kenji.blog/ko/p/poincare-conjecture/)이 증명되었을 때 그 과정에서 개발된 새로운 이론이 수학 전체를 크게 도약시켰습니다.
 
-만약 리만 제타 함수의 영점의 성질을 완전히 조작할 수 있는 미지의 대수 기하학적 기법이나, 비가환 기하의 기법이 확립된다면, 그것이 결과적으로 소인수분해의 획기적인 알고리즘(예를 들어, 계산 복잡도를 다항 시간으로 줄이는 고전 알고리즘)의 발견으로 이어질 가능성은 부정할 수 없습니다. 그런 의미에서 암호학자들은 리만 가설의 동향에서 결코 눈을 뗄 수 없는 것입니다.
+만약 리만 제타 함수의 영점의 성질을 완전히 조작할 수 있는 미지의 대수 기하학적 기법이나, 비가환 기하의 기법이 확립된다면, 그것이 결과적으로 소인수분해의 획기적인 알고리즘(예를 들어, 계산 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)를 다항 시간으로 줄이는 고전 알고리즘)의 발견으로 이어질 가능성은 부정할 수 없습니다. 그런 의미에서 암호학자들은 리만 가설의 동향에서 결코 눈을 뗄 수 없는 것입니다.
 
 ### 양자 컴퓨터와 쇼어의 알고리즘
 암호 기술에 있어 보다 직접적이고 현실적인 위협은 리만 가설의 증명이 아니라 **양자 컴퓨터** 입니다. 1994년 피터 쇼어(Peter Shor)가 발표한 '쇼어의 알고리즘'은 충분한 성능을 가진 양자 컴퓨터가 있다면 소인수분해를 다항 시간에 풀 수 있음을 증명했습니다. 이로 인해 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호나 타원곡선암호는 근본적으로 뚫리게 됩니다.
 
-현재 전 세계적으로 양자 컴퓨터로도 해독할 수 없는 '양자 내성 암호(Post-Quantum [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy, PQC)'로의 전환(격자 암호 등)이 추진되고 있습니다. 소수에 의존한 암호 기술은 어떤 의미에서 황금기를 끝내려 하고 있는지도 모르지만, 소수 그 자체의 수학적 가치가 사라지는 일은 영원히 없을 것입니다.
+현재 전 세계적으로 양자 컴퓨터로도 해독할 수 없는 '양자 내성 암호(Post-Quantum [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy, PQC)'로의 전환([격자 암호](/ko/p/lattice-based-cryptography-math-intuition/) 등)이 추진되고 있습니다. 소수에 의존한 암호 기술은 어떤 의미에서 황금기를 끝내려 하고 있는지도 모르지만, 소수 그 자체의 수학적 가치가 사라지는 일은 영원히 없을 것입니다.
 
 ---
 

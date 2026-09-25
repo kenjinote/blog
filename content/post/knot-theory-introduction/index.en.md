@@ -83,7 +83,7 @@ From a mathematical perspective, this is nothing less than an artificial operati
 
 ## Future Technology: Anyons and Topological Quantum Computing
 
-Today, knot theory is one of the most important themes toward realizing "quantum computers," the next-generation computers.
+Today, knot theory is one of the most important themes toward realizing "quantum computers," the [next-generation computers](/en/p/technology-quantum-computer/).
 
 Normal quantum computers are extremely vulnerable to noise (heat and electromagnetic waves) and have a fatal flaw of being prone to calculation errors. The idea to overcome this is "Topological Quantum Computing."
 

@@ -27,7 +27,7 @@ flowchart TD
   E -- "Projet IBM" --> F["Deep Blue (1997)"]
 ```
 
-Dans les années 1950, Claude Shannon a publié un article monumental sur les programmes d'échecs, jetant les bases des algorithmes de recherche fondés sur l'algorithme minimax. Par la suite, dans les années 1970 et 1980, des machines équipées de matériel dédié aux échecs ont commencé à apparaître. « Belle » des Bell Labs utilisait des circuits dédiés pour analyser des dizaines de milliers de positions par seconde, se targuant d'un niveau de maître.
+Dans les années 1950, Claude Shannon a publié un article monumental sur les programmes d'échecs, jetant les bases des [algorithmes de recherche](/fr/p/search-algorithms-linear-binary-hash-table-principles/) fondés sur l'algorithme minimax. Par la suite, dans les années 1970 et 1980, des machines équipées de matériel dédié aux échecs ont commencé à apparaître. « Belle » des Bell Labs utilisait des circuits dédiés pour analyser des dizaines de milliers de positions par seconde, se targuant d'un niveau de maître.
 
 Ensuite, « Deep Thought », développé par des étudiants de l'Université Carnegie Mellon, est devenu le premier ordinateur à vaincre un grand maître. IBM a repris ce projet, y injectant des fonds colossaux et l'ingénierie la plus avancée, pour donner naissance à « Deep Blue ».
 

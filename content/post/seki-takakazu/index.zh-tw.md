@@ -12,7 +12,7 @@ tags: ["關孝和", "和算", "江戶時代", "數學史", "微積分", "行列�
 
 在日本江戶時代，有一位將獨立發展的數學「和算」推向了前所未有高度的人物。他就是 **[關孝和](https://kenji.blog/zh-tw/p/seki-takakazu/)** （生於1640年代? - 卒於1708年）。他後來被尊稱為「算聖」，在日本數學史上被定位為最重要的人物之一。
 
-在同一時期的歐洲，[艾薩克·牛頓](https://kenji.blog/zh-tw/p/newton/)和戈特弗里德·萊布尼茨正在建立微積分學，而[關孝和](https://kenji.blog/zh-tw/p/seki-takakazu/)也在獨立進行著極高水準的數學發現。本文將結合歷史背景，深入探討他的一生軼事以及世界頂尖水準的數學成就。
+在同一時期的歐洲，[艾薩克·牛頓](https://kenji.blog/zh-tw/p/newton/)和[戈特弗里德·萊布尼茨](/zh-tw/p/leibniz/)正在建立微積分學，而[關孝和](https://kenji.blog/zh-tw/p/seki-takakazu/)也在獨立進行著極高水準的數學發現。本文將結合歷史背景，深入探討他的一生軼事以及世界頂尖水準的數學成就。
 
 # 2. 和算的黎明期與[關孝和](https://kenji.blog/zh-tw/p/seki-takakazu/)登場前的日本數學
 
@@ -65,11 +65,11 @@ $$
 
 # 5. 行列式的發現：領先於西方的壯舉
 
-[關孝和](https://kenji.blog/zh-tw/p/seki-takakazu/)最著名的世界級成就是發現了 **行列式** （Determinant）的概念。他在1683年的著作《解伏題之法》中，描述了作為從線性聯立方程式中消去未知數的通用公式的行列式展開方法。
+[關孝和](https://kenji.blog/zh-tw/p/seki-takakazu/)最著名的世界級成就是發現了 **[行列式](/zh-tw/p/geometric-meaning-of-determinant/)** （Determinant）的概念。他在1683年的著作《解伏題之法》中，描述了作為從線性聯立方程式中消去未知數的通用公式的[行列式](/zh-tw/p/geometric-meaning-of-determinant/)展開方法。
 
-令人驚訝的是，這被認為與歐洲的[戈特弗里德·萊布尼茨](https://kenji.blog/zh-tw/p/leibniz/)得出行列式概念的時間（約1683年）相同，甚至稍微早一些。當時的日本處於鎖國狀態，西方數學資訊幾乎沒有進入的餘地。因此，[關孝和](https://kenji.blog/zh-tw/p/seki-takakazu/)是完全獨立地得出這一偉大發現的。
+令人驚訝的是，這被認為與歐洲的[戈特弗里德·萊布尼茨](https://kenji.blog/zh-tw/p/leibniz/)得出[行列式](/zh-tw/p/geometric-meaning-of-determinant/)概念的時間（約1683年）相同，甚至稍微早一些。當時的日本處於鎖國狀態，西方數學資訊幾乎沒有進入的餘地。因此，[關孝和](https://kenji.blog/zh-tw/p/seki-takakazu/)是完全獨立地得出這一偉大發現的。
 
-[關孝和](https://kenji.blog/zh-tw/p/seki-takakazu/)正確地展示了 $n=2, 3, 4, 5$ 情況下的行列式展開（儘管在 $n=5$ 的情況下存在一些符號錯誤，但基本概念已經確立）。他領先於世界，推導出了相當於薩呂法則（Sarrus' rule）的計算方法。
+[關孝和](https://kenji.blog/zh-tw/p/seki-takakazu/)正確地展示了 $n=2, 3, 4, 5$ 情況下的[行列式](/zh-tw/p/geometric-meaning-of-determinant/)展開（儘管在 $n=5$ 的情況下存在一些符號錯誤，但基本概念已經確立）。他領先於世界，推導出了相當於薩呂法則（Sarrus' rule）的計算方法。
 
 $$
 D = \begin{vmatrix} 
@@ -143,7 +143,7 @@ graph LR
 
 在處於鎖國狀態、來自外界的資訊極其有限的日本，[關孝和](https://kenji.blog/zh-tw/p/seki-takakazu/)使用自己獨特的語言和記號，構建了世界最前沿的數學。他的存在展示了人類智慧的潛力是多麼廣闊。
 
-他獨立發現了現代科學和工程不可或缺的數學工具，如行列式、伯努利數、艾特肯加速法以及作為微積分基礎的圓理，這一事實讓今天的我們感到極大的驚嘆和自豪。
+他獨立發現了現代科學和工程不可或缺的數學工具，如[行列式](/zh-tw/p/geometric-meaning-of-determinant/)、伯努利數、艾特肯加速法以及作為微積分基礎的圓理，這一事實讓今天的我們感到極大的驚嘆和自豪。
 
 他所創立的和算在明治時代引入西方數學後結束了其使命。然而，由和算培養出的高度數學素養和邏輯思維能力，成為了日本快速發展為近代國家時強大的知識基礎。
 

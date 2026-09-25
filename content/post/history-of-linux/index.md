@@ -93,7 +93,7 @@ Linuxの開発スタイルは、当時のソフトウェア工学の常識を覆
 
 最も象徴的なのが、Googleが主導して開発したスマートフォンOS「Android」です。Androidの中核（カーネル）にはLinuxが採用されており、現在世界で稼働している何十億台ものスマートフォンが、実質的にLinux上で動いていることになります。
 
-さらに、現代のITインフラの主流であるAWS（Amazon Web Services）などの「クラウドコンピューティング」環境において、稼働している仮想マシンの大半はLinuxです。DockerやKubernetesといった現代のコンテナ技術やクラウドネイティブ技術も、Linuxのカーネル機能（cgroupsやnamespaceなど）を基盤として成り立っています。
+さらに、現代のITインフラの主流であるAWS（Amazon Web Services）などの「クラウドコンピューティング」環境において、稼働している仮想マシンの大半はLinuxです。Dockerや[Kubernetes](/p/kubernetes-k8s-architecture-pod-service-ingress/)といった現代のコンテナ技術やクラウドネイティブ技術も、Linuxのカーネル機能（cgroupsやnamespaceなど）を基盤として成り立っています。
 
 また、世界最速のスーパーコンピューターのランキング（TOP500）において、現在ランクインしているシステムの100%がLinuxを採用しています。
 

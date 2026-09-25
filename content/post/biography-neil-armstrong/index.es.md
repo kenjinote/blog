@@ -20,7 +20,7 @@ Después de la guerra, trabajó como piloto de pruebas, participando en numerosa
 
 ## Activo en la NASA: De Gemini a Apolo
 
-Seleccionado como parte del segundo grupo de astronautas de la NASA en 1962, Armstrong se desempeñó como piloto al mando del Gemini 8 en 1966. En esta misión, logró el primer acoplamiento orbital de la humanidad, pero inmediatamente después, la nave espacial cayó en una crisis desesperada de giros violentos. En ese momento, controló los propulsores con una calma asombrosa y regresó a la Tierra a salvo. Esta fuerza mental para no entrar en pánico fue muy bien valorada y se convirtió en el factor decisivo para que fuera elegido como comandante del Apolo 11, es decir, el "primer hombre en caminar sobre la Luna".
+Seleccionado como parte del segundo grupo de astronautas de la NASA en 1962, Armstrong se desempeñó como piloto al mando del [Gemini](/es/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEm%C3%A9todo-de-resoluci%C3%B3n/) 8 en 1966. En esta misión, logró el primer acoplamiento orbital de la humanidad, pero inmediatamente después, la nave espacial cayó en una crisis desesperada de giros violentos. En ese momento, controló los propulsores con una calma asombrosa y regresó a la Tierra a salvo. Esta fuerza mental para no entrar en pánico fue muy bien valorada y se convirtió en el factor decisivo para que fuera elegido como comandante del Apolo 11, es decir, el "primer hombre en caminar sobre la Luna".
 
 ## Apolo 11: Aterrizaje en el Mar de la Tranquilidad
 

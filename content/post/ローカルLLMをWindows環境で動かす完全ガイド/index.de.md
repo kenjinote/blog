@@ -15,13 +15,13 @@ Im Jahr 2026 hat die Entwicklung generativer KI und großer Sprachmodelle (LLMs)
 
 Besonders im Windows-Umfeld ist die Entwicklung des Ökosystems für lokale LLMs bemerkenswert. Noch vor einigen Jahren galt "KI-Entwicklung und -Ausführung gleich Linux" als gängige Regel, doch im Jahr 2026 hat sich Windows zu einer äußerst leistungsstarken und zugänglichen KI-Plattform gewandelt.
 
-In diesem Artikel bieten wir einen vollständigen Leitfaden zur Einrichtung, zum Betrieb und zur Optimierung lokaler LLMs in einer Windows-Umgebung, basierend auf den neuesten Technologietrends von 2026. Von der einfachen Einrichtung für Anfänger mit Ollama über die extreme Optimierung für Fortgeschrittene mithilfe von llama.cpp bis hin zu tiefergehenden mathematischen Ansätzen zur VRAM-Berechnung, dem Verständnis der Architektur und lokalem Fine-Tuning – wir erklären alles ausführlich und in gewaltigem Umfang.
+In diesem Artikel bieten wir einen vollständigen Leitfaden zur Einrichtung, zum Betrieb und zur Optimierung lokaler LLMs in einer Windows-Umgebung, basierend auf den neuesten Technologietrends von 2026. Von der einfachen Einrichtung [für Anfänger](/de/p/lederwaren%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/) mit Ollama über die extreme Optimierung für Fortgeschrittene mithilfe von llama.cpp bis hin zu tiefergehenden mathematischen Ansätzen zur VRAM-Berechnung, dem Verständnis der Architektur und lokalem Fine-Tuning – wir erklären alles ausführlich und in gewaltigem Umfang.
 
 ## 1.1 Technologietrends rund um lokale LLMs im Jahr 2026
 
 Die wichtigsten Trends, die das aktuelle Ökosystem für lokale LLMs prägen, sind:
 
-1. **Vollständige Verbreitung des GGUF-Formats**: GGUF (GPT-Generated Unified Format), das Metadaten und Tensoren in einer einzigen Datei vereint, hat sich vollständig als De-facto-Standard etabliert. Dadurch genügt es, eine einzige Datei von Hugging Face herunterzuladen, um sie in beliebigen Umgebungen auszuführen.
+1. **Vollständige Verbreitung des [GGUF](/de/p/llama-cpp-quantization-gguf/)-Formats**: [GGUF](/de/p/llama-cpp-quantization-gguf/) (GPT-Generated Unified Format), das Metadaten und Tensoren in einer einzigen Datei vereint, hat sich vollständig als De-facto-Standard etabliert. Dadurch genügt es, eine einzige Datei von Hugging Face herunterzuladen, um sie in beliebigen Umgebungen auszuführen.
 2. **Demokratisierung der MoE-Architektur (Mixture of Experts)**: Es wurden zahlreiche kleine, aber leistungsstarke MoE-Modelle veröffentlicht. Indem während der Inferenz nur ein Teil der Experten aktiviert wird, erreichen sie die Leistung riesiger Modelle, während die Rechenlast für Consumer-PCs gering gehalten wird.
 3. **Fortgeschrittene Abstraktion und Optimierung von Inferenz-Engines**: Tools wie Ollama, LM Studio und AnythingLLM wurden so verfeinert, dass sich der Benutzer nicht mehr um komplexe Abhängigkeiten wie die Installation von CUDA-Treibern kümmern muss. Zudem hat die native Windows-Unterstützung von FlashAttention 3 die Inferenzgeschwindigkeit drastisch erhöht.
 4. **Nutzung von NPUs und der Aufstieg von Windows Copilot+ PCs**: Die Technologie zur Ausführung kleiner LLMs (SLM: Small Language Models) mit geringem Stromverbrauch unter Nutzung der verbauten NPU (Neural Processing Unit) hat auch bei Laptops ohne GPU die Praxisreife erreicht.
@@ -314,7 +314,7 @@ Häufig auftretende Probleme und deren Lösungen.
 
 # 10. Zusammenfassung und zukünftige Aussichten
 
-Im Jahr 2026 ist der Aufbau lokaler LLMs unter Windows kein Privileg mehr für eine kleine Gruppe von Ingenieuren. Durch den De-facto-Standard des GGUF-Formats, das Erscheinen ausgereifter Ökosysteme wie Ollama und LM Studio und Hardware-Optimierungen wie FlashAttention kann heute jeder ganz einfach eine KI-Umgebung auf Unternehmensniveau einrichten.
+Im Jahr 2026 ist der Aufbau lokaler LLMs unter Windows kein Privileg mehr für eine kleine Gruppe von Ingenieuren. Durch den De-facto-Standard des [GGUF](/de/p/llama-cpp-quantization-gguf/)-Formats, das Erscheinen ausgereifter Ökosysteme wie Ollama und LM Studio und Hardware-Optimierungen wie FlashAttention kann heute jeder ganz einfach eine KI-Umgebung auf Unternehmensniveau einrichten.
 
 Bitte nutzen Sie die in diesem Artikel erläuterten Punkte:
 

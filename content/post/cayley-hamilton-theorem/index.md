@@ -17,7 +17,7 @@ tags:
 
 線形代数学を学んでいると、多くの美しい定理や公式に出会います。その中でも、 **[ケーリー・ハミルトンの定理](https://kenji.blog/p/cayley-hamilton-theorem/)** (Cayley-Hamilton theorem) は、初見では非常に不思議で、まるで魔法のように感じられる結果の一つです。
 
-この定理は一言で言えば、「すべての正方行列は、自分自身の特性方程式を満たす」というものです。特性方程式とは、行列の固有値を求めるために解く代数方程式のことですが、その変数に行列自身を代入すると、零行列になるという驚くべき主張をしています。行列という数の配列が、自分自身の性質から導き出される多項式の根になっているというのは、非常に興味深い現象です。
+この定理は一言で言えば、「すべての正方行列は、自分自身の特性方程式を満たす」というものです。特性方程式とは、行列の[固有値](/p/eigenvalues-and-eigenvectors/)を求めるために解く代数方程式のことですが、その変数に行列自身を代入すると、零行列になるという驚くべき主張をしています。行列という数の配列が、自分自身の性質から導き出される多項式の根になっているというのは、非常に興味深い現象です。
 
 本記事では、この **[ケーリー・ハミルトンの定理](https://kenji.blog/p/cayley-hamilton-theorem/)** について、基礎的な概念の復習から始まり、直感的な意味、厳密な証明、そして行列の累乗や逆行列を計算する際の応用例まで、豊富な具体例を交えながら詳しく解説します。
 
@@ -29,9 +29,9 @@ tags:
 
 ## 3. 特性方程式と固有値の復習
 
-定理を理解するために、まずは **特性方程式** (characteristic equation) と **固有値** (eigenvalues) について復習しましょう。
+定理を理解するために、まずは **特性方程式** (characteristic equation) と **[固有値](/p/eigenvalues-and-eigenvectors/)** (eigenvalues) について復習しましょう。
 
-$n$ 次正方行列 $A$ に対して、スカラー $\lambda$ とゼロでないベクトル $\mathbf{x}$ が存在して、以下の関係を満たすとき、$\lambda$ を行列 $A$ の固有値、$\mathbf{x}$ を固有ベクトルと呼びます。
+$n$ 次正方行列 $A$ に対して、スカラー $\lambda$ とゼロでないベクトル $\mathbf{x}$ が存在して、以下の関係を満たすとき、$\lambda$ を行列 $A$ の[固有値](/p/eigenvalues-and-eigenvectors/)、$\mathbf{x}$ を固有ベクトルと呼びます。
 
 $$
 A \mathbf{x} = \lambda \mathbf{x}
@@ -43,13 +43,13 @@ $$
 (\lambda I - A) \mathbf{x} = \mathbf{0}
 $$
 
-ベクトル $\mathbf{x}$ がゼロベクトルでない（自明でない）解を持つための必要十分条件は、係数行列 $(\lambda I - A)$ が逆行列を持たないこと、つまりその行列式がゼロになることです。
+ベクトル $\mathbf{x}$ がゼロベクトルでない（自明でない）解を持つための必要十分条件は、係数行列 $(\lambda I - A)$ が逆行列を持たないこと、つまりその[行列式](/p/geometric-meaning-of-determinant/)がゼロになることです。
 
 $$
 \det(\lambda I - A) = 0
 $$
 
-この方程式を、行列 $A$ の **特性方程式** と呼びます。また、左辺の多項式 $p(\lambda) = \det(\lambda I - A)$ を **特性多項式** (characteristic polynomial) と呼びます。行列式の定義から、$p(\lambda)$ は $\lambda$ についての $n$ 次多項式になります。
+この方程式を、行列 $A$ の **特性方程式** と呼びます。また、左辺の多項式 $p(\lambda) = \det(\lambda I - A)$ を **特性多項式** (characteristic polynomial) と呼びます。[行列式](/p/geometric-meaning-of-determinant/)の定義から、$p(\lambda)$ は $\lambda$ についての $n$ 次多項式になります。
 
 $$
 p(\lambda) = \lambda^n + c_{n-1}\lambda^{n-1} + \dots + c_1\lambda + c_0
@@ -96,7 +96,7 @@ p(\lambda) &= \det(\lambda I - A) \\
 \end{aligned}
 $$
 
-ここで、$a + d$ は行列 $A$ の **トレース** (trace)、$ad - bc$ は行列 $A$ の **行列式** (determinant) です。それぞれ $\text{tr}(A)$、$\det(A)$ と書くと、特性方程式は以下のようになります。
+ここで、$a + d$ は行列 $A$ の **トレース** (trace)、$ad - bc$ は行列 $A$ の **[行列式](/p/geometric-meaning-of-determinant/)** (determinant) です。それぞれ $\text{tr}(A)$、$\det(A)$ と書くと、特性方程式は以下のようになります。
 
 $$
 p(\lambda) = \lambda^2 - \text{tr}(A)\lambda + \det(A)
@@ -137,10 +137,10 @@ $$
 > $p(A) = \det(A I - A) = \det(A - A) = \det(O) = 0$
 > よって証明された。
 
-この推論は **完全に間違い** です。なぜなら、$p(\lambda)$ はあくまで「スカラー値（多項式）」を出力する関数であり、$\lambda$ に行列を代入するという操作 $p(A)$ は、多項式の各項に $A$ を代入して「行列」を作る操作だからです。一方、上の誤った証明では、行列式の中にそのまま行列 $A$ を代入してスカラーの $0$ を導き出しており、左辺（行列）と右辺（スカラー）で型が一致していません。
+この推論は **完全に間違い** です。なぜなら、$p(\lambda)$ はあくまで「スカラー値（多項式）」を出力する関数であり、$\lambda$ に行列を代入するという操作 $p(A)$ は、多項式の各項に $A$ を代入して「行列」を作る操作だからです。一方、上の誤った証明では、[行列式](/p/geometric-meaning-of-determinant/)の中にそのまま行列 $A$ を代入してスカラーの $0$ を導き出しており、左辺（行列）と右辺（スカラー）で型が一致していません。
 
-直感的には、行列 $A$ が対角化可能な場合を考えると分かりやすいです。
-行列 $A$ が $A = P D P^{-1}$ （$D$ は固有値 $\lambda_1, \dots, \lambda_n$ が対角に並ぶ対角行列）と対角化できる場合を考えます。
+直感的には、行列 $A$ が[対角化](/p/diagonalization-and-jordan-normal-form/)可能な場合を考えると分かりやすいです。
+行列 $A$ が $A = P D P^{-1}$ （$D$ は[固有値](/p/eigenvalues-and-eigenvectors/) $\lambda_1, \dots, \lambda_n$ が対角に並ぶ対角行列）と[対角化](/p/diagonalization-and-jordan-normal-form/)できる場合を考えます。
 
 $$ p(A) = p(P D P^{-1}) = P p(D) P^{-1} $$
 
@@ -150,9 +150,9 @@ $$
 p(D) = \begin{pmatrix} p(\lambda_1) & & 0 \\ & \ddots & \\ 0 & & p(\lambda_n) \end{pmatrix}
 $$
 
-となります。特性多項式の定義から、各固有値 $\lambda_i$ は $p(\lambda_i) = 0$ を満たします。したがって、$p(D)$ は零行列となり、$p(A) = P O P^{-1} = O$ が導かれます。
+となります。特性多項式の定義から、各[固有値](/p/eigenvalues-and-eigenvectors/) $\lambda_i$ は $p(\lambda_i) = 0$ を満たします。したがって、$p(D)$ は零行列となり、$p(A) = P O P^{-1} = O$ が導かれます。
 
-しかし、すべての行列が対角化可能とは限らないため（ジョルダン標準形を持たない場合など）、この説明は完全な証明にはなりません。一般的な証明には別の手法が必要です。
+しかし、すべての行列が[対角化](/p/diagonalization-and-jordan-normal-form/)可能とは限らないため（ジョルダン標準形を持たない場合など）、この説明は完全な証明にはなりません。一般的な証明には別の手法が必要です。
 
 ## 7. [ケーリー・ハミルトンの定理](https://kenji.blog/p/cayley-hamilton-theorem/)の厳密な証明
 
@@ -164,7 +164,7 @@ $$
 (\lambda I - A) B(\lambda) = \det(\lambda I - A) I = p(\lambda) I
 $$
 
-行列 $\lambda I - A$ の各成分は $\lambda$ の1次以下の多項式なので、その余因子行列 $B(\lambda)$ の各成分の行列式は $\lambda$ の $(n-1)$ 次以下の多項式になります。したがって、$B(\lambda)$ は行列を係数とする $\lambda$ の多項式として次のように表せます。
+行列 $\lambda I - A$ の各成分は $\lambda$ の1次以下の多項式なので、その余因子行列 $B(\lambda)$ の各成分の[行列式](/p/geometric-meaning-of-determinant/)は $\lambda$ の $(n-1)$ 次以下の多項式になります。したがって、$B(\lambda)$ は行列を係数とする $\lambda$ の多項式として次のように表せます。
 
 $$
 B(\lambda) = B_{n-1}\lambda^{n-1} + B_{n-2}\lambda^{n-2} + \dots + B_1\lambda + B_0
@@ -281,7 +281,7 @@ $$
 本記事では、線形代数のハイライトの一つである **[ケーリー・ハミルトンの定理](https://kenji.blog/p/cayley-hamilton-theorem/)** について詳しく解説しました。
 
 * 特性多項式 $p(\lambda)$ に行列自身を代入すると零行列になるという驚くべき性質（$p(A) = O$）。
-* 直感的な対角化による理解と、スカラー代入の混同というよくある誤解。
+* 直感的な[対角化](/p/diagonalization-and-jordan-normal-form/)による理解と、スカラー代入の混同というよくある誤解。
 * 余因子行列を用いた恒等式を利用した美しく厳密な証明。
 * 多項式の除算を利用した行列の高次累乗の高速計算や、逆行列の表現といった実用的な応用。
 

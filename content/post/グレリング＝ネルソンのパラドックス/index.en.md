@@ -83,11 +83,11 @@ graph TD
 
 ## Connection to Math and Logic: A Relative of Russell's Paradox
 
-This paradox is not a simple miscalculation or illusion like the "Missing Dollar Riddle." It shares essentially the same structure as **Russell's Paradox** ("Does the set of all sets that do not contain themselves contain itself?"), which shook the foundations of mathematics.
+This paradox is not a simple miscalculation or illusion like the "Missing Dollar Riddle." It shares essentially the same structure as **[Russell's Paradox](/en/p/russells-paradox/)** ("Does the set of all sets that do not contain themselves contain itself?"), which shook the foundations of mathematics.
 
-The Grelling-Nelson Paradox can be considered the semantic (word meaning) version of Russell's Paradox.
+The Grelling-Nelson Paradox can be considered the semantic (word meaning) version of [Russell's Paradox](/en/p/russells-paradox/).
 
-Russell's Paradox in set theory:
+[Russell's Paradox](/en/p/russells-paradox/) in set theory:
 When defining a set
 $$ R = \\{ x \mid x \notin x \\} $$
 asking whether $R \in R$ or $R \notin R$ leads to a contradiction.

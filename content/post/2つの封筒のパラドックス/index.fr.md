@@ -141,7 +141,7 @@ Il s'agit de se demander : peut-on vraiment dire que 5 000 yens et 20 000 yens o
 
 Par exemple, supposons que le budget maximum du jeu soit de 100 millions de yens. Si vous ouvrez l'enveloppe A et y trouvez « 60 millions de yens », la probabilité que l'enveloppe B contienne « 120 millions de yens » est de zéro (car cela dépasse le budget). En d'autres termes, plus le montant de l'enveloppe A est élevé, plus la probabilité que l'enveloppe B contienne « le double » devrait diminuer, et la probabilité qu'elle contienne « la moitié » devrait augmenter.
 
-En supposant une distribution a priori arbitraire $P(x)$, et en calculant l'espérance à l'aide du théorème de Bayes, il a été mathématiquement prouvé que **pour toute distribution de probabilité réaliste (dont la somme est égale à 1), il n'existe aucune distribution magique pour laquelle il est "plus avantageux d'échanger" pour tous les montants $X$**.
+En supposant une distribution a priori arbitraire $P(x)$, et en calculant l'espérance à l'aide du [théorème de Bayes](/fr/p/bayes-theorem/), il a été mathématiquement prouvé que **pour toute distribution de probabilité réaliste (dont la somme est égale à 1), il n'existe aucune distribution magique pour laquelle il est "plus avantageux d'échanger" pour tous les montants $X$**.
 
 ---
 

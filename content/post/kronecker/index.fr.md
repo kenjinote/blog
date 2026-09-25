@@ -60,7 +60,7 @@ Lorsqu'on discute de la vie de [Kronecker](https://kenji.blog/fr/p/kronecker/), 
 
 [Kronecker](https://kenji.blog/fr/p/kronecker/) avait la forte conviction que "seules les choses qui peuvent être explicitement calculées et construites en un nombre fini d'opérations existent mathématiquement". Il méprisait farouchement les preuves d'existence non constructives par l'absurde (la logique selon laquelle "si nous supposons que cela n'existe pas, une contradiction survient ; par conséquent, cela existe").
 
-Par exemple, en ce qui concerne le théorème fondamental de l'algèbre, il soutenait qu'il ne suffisait pas de prouver qu'"une racine existe" ; un algorithme détaillant "comment construire explicitement la racine" devait l'accompagner.
+Par exemple, en ce qui concerne le [théorème fondamental de l'algèbre](/fr/p/fundamental-theorem-of-algebra/), il soutenait qu'il ne suffisait pas de prouver qu'"une racine existe" ; un algorithme détaillant "comment construire explicitement la racine" devait l'accompagner.
 
 ## 3.2. Affrontements avec Cantor et Weierstrass
 

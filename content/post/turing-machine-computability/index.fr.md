@@ -160,7 +160,7 @@ Avec la machine de Turing universelle, on s'attendait à ce que « n'importe que
 
 ### 4.1 Qu'est-ce que le problème de l'arrêt ?
 
-Le problème de l'arrêt est la question suivante :
+[Le problème de l'arrêt](/fr/p/halting-problem/) est la question suivante :
 
 > Étant donné un programme arbitraire $P$ et son entrée $x$, si le programme $P$ est exécuté avec l'entrée $x$, **existe-t-il un algorithme (programme) qui détermine avant l'exécution si le calcul se terminera et s'arrêtera dans un temps fini, ou s'il tombera dans une boucle infinie et ne s'arrêtera jamais ?**
 
@@ -200,7 +200,7 @@ paradox(paradox)
 2.  Si `halts(paradox, paradox)` évalue à `False` (boucle infinie) :
     La fonction `paradox` entre dans le bloc `else` et **s'arrête immédiatement**. Cela contredit également le résultat de l'évaluation.
 
-Puisqu'une contradiction survient dans les deux cas, la prémisse initiale **« il existe une fonction `halts` parfaite » était fausse**. Par conséquent, il n'existe pas d'algorithme pour résoudre le problème de l'arrêt.
+Puisqu'une contradiction survient dans les deux cas, la prémisse initiale **« il existe une fonction `halts` parfaite » était fausse**. Par conséquent, il n'existe pas d'algorithme pour résoudre [le problème de l'arrêt](/fr/p/halting-problem/).
 
 ### 4.3 Expression par formule mathématique
 
@@ -231,7 +231,7 @@ Ainsi, il est prouvé que la fonction $h$ est non calculable (Uncomputable).
 
 ## 5. L'impact de la théorie de la calculabilité
 
-Le fait que le problème de l'arrêt soit « insoluble » a également un impact direct sur le développement de logiciels modernes.
+Le fait que [le problème de l'arrêt](/fr/p/halting-problem/) soit « insoluble » a également un impact direct sur le développement de logiciels modernes.
 
 Par exemple, les compilateurs et les outils d'analyse statique de code vérifient s'il y a des bogues dans le code ou s'il tombe dans une boucle infinie, mais ils fonctionnent sous la contrainte qu'**« il est en principe impossible de détecter les boucles infinies avec une précision de 100 % pour tous les programmes »**. Par conséquent, les outils d'analyse pratiques adoptent des compromis en utilisant des heuristiques et des délais d'attente (timeouts).
 

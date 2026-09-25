@@ -11,13 +11,13 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 # 1. Introducción: El misterio cósmico de los números primos y la Hipótesis de [Riemann](https://kenji.blog/es/p/riemann/)
 
-Los "números primos" (Prime Numbers) son números naturales divisibles únicamente por 1 y por sí mismos, y también se les llama los "átomos" del mundo de las matemáticas. Esta secuencia que continúa con 2, 3, 5, 7, 11, 13... parece a primera vista aparecer de manera caótica y aleatoria. Desde que el matemático de la antigua Grecia, [Euclides](https://kenji.blog/p/euclid/), demostró que "los números primos son infinitos", innumerables matemáticos han intentado desentrañar la regularidad oculta en esta disposición de números primos.
+Los "números primos" (Prime Numbers) son números naturales divisibles únicamente por 1 y por sí mismos, y también se les llama los "átomos" del mundo de las matemáticas. Esta secuencia que continúa con 2, 3, 5, 7, 11, 13... parece a primera vista aparecer de manera caótica y aleatoria. Desde que el matemático de la antigua Grecia, [Euclides](https://kenji.blog/es/p/euclid/), demostró que "los números primos son infinitos", innumerables matemáticos han intentado desentrañar la regularidad oculta en esta disposición de números primos.
 
 Quien más se acercó a este misterio de los números primos fue el matemático alemán [Bernhard Riemann](https://kenji.blog/es/p/riemann/), quien en 1859 propuso la **"Hipótesis de Riemann" (Riemann Hypothesis)**. La Hipótesis de [Riemann](https://kenji.blog/es/p/riemann/) es uno de los problemas más importantes y no resueltos de las matemáticas modernas, y tiene una recompensa de 1 millón de dólares al ser uno de los Problemas del Milenio establecidos por el Instituto Clay de Matemáticas.
 
-A primera vista, un problema tan difícil de matemáticas puras relacionado con la distribución de los números primos puede parecer ajeno a nuestra vida diaria. Sin embargo, la seguridad de Internet que sustenta la infraestructura de la sociedad moderna, en particular **las tecnologías criptográficas modernas como la criptografía [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) y la criptografía de curva elíptica (ECC)**, dependen profundamente de las propiedades de los números primos gigantes.
+A primera vista, un problema tan difícil de matemáticas puras relacionado con la distribución de los números primos puede parecer ajeno a nuestra vida diaria. Sin embargo, la seguridad de Internet que sustenta la infraestructura de la sociedad moderna, en particular **las tecnologías criptográficas modernas como la criptografía [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) y la criptografía de curva elíptica ([ECC](/es/p/elliptic-curve-cryptography-math-cpp/))**, dependen profundamente de las propiedades de los números primos gigantes.
 
-En este artículo, emprenderemos un viaje matemático desde la distribución de los números primos, pasando por el Teorema de los Números Primos, la función zeta de [Riemann](https://kenji.blog/es/p/riemann/), hasta llegar al núcleo de la Hipótesis de Riemann. Profundizaremos en detalle sobre cómo se relaciona con la criptografía moderna y qué sucedería en el mundo si se demostrara la Hipótesis de [Riemann](https://kenji.blog/es/p/riemann/).
+En este artículo, emprenderemos un viaje matemático desde la distribución de los números primos, pasando por el [Teorema de los Números Primos](/es/p/prime-number-theorem/), la función zeta de [Riemann](https://kenji.blog/es/p/riemann/), hasta llegar al núcleo de la Hipótesis de Riemann. Profundizaremos en detalle sobre cómo se relaciona con la criptografía moderna y qué sucedería en el mundo si se demostrara la Hipótesis de [Riemann](https://kenji.blog/es/p/riemann/).
 
 ---
 
@@ -36,7 +36,7 @@ La expresión de esto utilizando integrales es la **integral logarítmica (Logar
 
 $$ \text{Li}(x) = \int_{2}^{x} \frac{dt}{\ln t} $$
 
-La conjetura de Gauss fue demostrada de forma independiente en 1896 por Jacques Hadamard y Charles-Jean de La Vallée Poussin, y se estableció como el **Teorema de los Números Primos ([Prime Number Theorem](https://kenji.blog/es/p/prime-number-theorem/), PNT)**.
+La conjetura de Gauss fue demostrada de forma independiente en 1896 por Jacques Hadamard y Charles-Jean de La Vallée Poussin, y se estableció como el **[Teorema de los Números Primos](/es/p/prime-number-theorem/) ([Prime Number Theorem](https://kenji.blog/es/p/prime-number-theorem/), PNT)**.
 
 $$ \lim_{x \to \infty} \frac{\pi(x)}{\text{Li}(x)} = 1 $$
 
@@ -74,7 +74,7 @@ Además, dedujo una hermosa ecuación funcional (Functional equation) que satisf
 
 $$ \zeta(s) = 2^s \pi^{s-1} \sin\left(\frac{\pi s}{2}\right) \Gamma(1-s) \zeta(1-s) $$
 
-Donde $\Gamma(x)$ es la función gamma. A través de esta ecuación, podemos conocer las propiedades del semiplano izquierdo a partir de las propiedades del semiplano derecho.
+Donde $\Gamma(x)$ es [la función gamma](/es/p/gamma-function/). A través de esta ecuación, podemos conocer las propiedades del semiplano izquierdo a partir de las propiedades del semiplano derecho.
 
 ### Ceros de la Función Zeta (Zeros of the Zeta Function)
 Los números complejos $s$ para los cuales el valor de la función zeta se vuelve 0 se denominan "ceros".
@@ -110,9 +110,9 @@ graph TD
 $$ \psi(x) = x - \sum_{\rho} \frac{x^\rho}{\rho} - \ln(2\pi) - \frac{1}{2}\ln(1 - x^{-2}) $$
 
 Aquí, $\rho$ es la suma sobre todos los ceros no triviales de la función zeta.
-El término principal es $x$ (que corresponde al Teorema de los Números Primos), y al sumar y restar los términos ondulatorios que dependen de los ceros $\rho$, se restaura la distribución precisa en forma de escalera de los números primos. Se puede decir que los ceros no triviales representan la "frecuencia (onda)" de la distribución de los números primos.
+El término principal es $x$ (que corresponde al [Teorema de los Números Primos](/es/p/prime-number-theorem/)), y al sumar y restar los términos ondulatorios que dependen de los ceros $\rho$, se restaura la distribución precisa en forma de escalera de los números primos. Se puede decir que los ceros no triviales representan la "frecuencia (onda)" de la distribución de los números primos.
 
-Si la Hipótesis de [Riemann](https://kenji.blog/es/p/riemann/) es correcta y la parte real de todos los ceros no triviales $\rho$ es exactamente $1/2$, entonces el término de error del Teorema de los Números Primos se mantendrá dentro del rango mínimo teóricamente concebible.
+Si la Hipótesis de [Riemann](https://kenji.blog/es/p/riemann/) es correcta y la parte real de todos los ceros no triviales $\rho$ es exactamente $1/2$, entonces el término de error del [Teorema de los Números Primos](/es/p/prime-number-theorem/) se mantendrá dentro del rango mínimo teóricamente concebible.
 
 $$ |\pi(x) - \text{Li}(x)| \le \frac{1}{8\pi} \sqrt{x} \ln x \quad \text{for} \quad x \ge 2657 $$
 
@@ -124,7 +124,7 @@ En otras palabras, **si la Hipótesis de [Riemann](https://kenji.blog/es/p/riema
 
 Hasta aquí hemos estado en el profundo mundo de las matemáticas puras, pero las propiedades de estos números primos sostienen desde sus cimientos a la sociedad digital moderna. El principal representante de esto es la criptografía de clave pública, liderada por la **criptografía [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)**.
 
-La seguridad de todas las comunicaciones, como los pagos con tarjeta de crédito en Internet, la transmisión de contraseñas y las firmas digitales de blockchain, depende de los "números primos".
+La seguridad de todas las comunicaciones, como los pagos con tarjeta de crédito en Internet, la transmisión de contraseñas y las firmas digitales de [blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/), depende de los "números primos".
 
 ### Funcionamiento de la criptografía RSA
 La seguridad de la criptografía RSA se basa en el hecho matemático de que "la factorización en números primos de números compuestos de muchos dígitos es extremadamente difícil" (el problema de la factorización de enteros).
@@ -152,7 +152,7 @@ graph LR
     F -.-> G["Si p y q son desconocidos, d es incalculable"]
 ```
 
-Para romper la criptografía [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/), es necesario encontrar los números primos originales $p$ y $q$ a partir del enorme $N$ (factorización prima). Incluso utilizando los algoritmos convencionales actuales (como la criba general del cuerpo de números: GNFS, por sus siglas en inglés), factorizar un número de cientos de dígitos tomaría un tiempo que supera con creces la edad del universo, incluso utilizando supercomputadoras.
+Para romper la criptografía [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/), es necesario encontrar los números primos originales $p$ y $q$ a partir del enorme $N$ (factorización prima). Incluso utilizando los algoritmos convencionales actuales (como la [criba general del cuerpo de números](/es/p/beyond-gnfs-integer-factorization-algorithms/): GNFS, por sus siglas en inglés), factorizar un número de cientos de dígitos tomaría un tiempo que supera con creces la edad del universo, incluso utilizando supercomputadoras.
 
 ---
 

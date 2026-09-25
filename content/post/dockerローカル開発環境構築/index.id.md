@@ -13,7 +13,7 @@ tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 
 Dalam dunia pengembangan perangkat lunak, masalah "Di lingkungan saya berjalan normal (It works on my machine)" yang disebabkan oleh perbedaan lingkungan antar pengembang, telah lama menjadi faktor yang membuang-buang waktu dalam banyak proyek. Perbedaan OS, versi bahasa yang diinstal, dependensi pustaka, konflik dengan alat yang diinstal secara global, dll. membuat lingkungan lokal selalu dihadapkan pada "ketidakpastian status".
 
-Hal yang dapat menyelesaikan masalah ini dari akarnya adalah teknologi kontainer seperti **[Docker](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)**, dan paradigma **Infrastructure as Code ([IaC](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/))**. Dengan mengontainerisasi lingkungan pengembangan lokal, kita dapat mewujudkan isolasi di tingkat OS, serta memungkinkan sistem kontrol versi pada lingkungan itu sendiri bersama dengan basis kode.
+Hal yang dapat menyelesaikan masalah ini dari akarnya adalah teknologi kontainer seperti **[Docker](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)**, dan paradigma **[Infrastructure as Code](/id/p/iac-infrastructure-as-code-terraform/) ([IaC](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/))**. Dengan mengontainerisasi lingkungan pengembangan lokal, kita dapat mewujudkan isolasi di tingkat OS, serta memungkinkan sistem kontrol versi pada lingkungan itu sendiri bersama dengan basis kode.
 
 Dalam artikel ini, kita akan membahas secara mendalam, lengkap dengan perspektif matematis dan mekanisme teknis yang mendasarinya, mengenai langkah-langkah membangun **"lingkungan pengembangan lokal yang dapat direproduksi, sehingga siapa pun, kapan pun, dan di mesin mana pun ketika dihidupkan, akan menghasilkan kondisi yang persis sama"**, dengan memanfaatkan Docker, Docker Compose, dan VSCode Dev[Container](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)s.
 
@@ -23,13 +23,13 @@ Dalam artikel ini, kita akan membahas secara mendalam, lengkap dengan perspektif
 
 ### Prinsip IaC dan Penerapannya di Lingkungan Lokal
 
-Infrastructure as Code (IaC) adalah pendekatan di mana pengelolaan dan penyediaan konfigurasi infrastruktur dilakukan melalui file definisi yang dapat dibaca mesin, bukan melalui proses manual. Prinsip inti IaC mencakup elemen-elemen berikut:
+[Infrastructure as Code](/id/p/iac-infrastructure-as-code-terraform/) ([IaC](/id/p/iac-infrastructure-as-code-terraform/)) adalah pendekatan di mana pengelolaan dan penyediaan konfigurasi infrastruktur dilakukan melalui file definisi yang dapat dibaca mesin, bukan melalui proses manual. Prinsip inti [IaC](/id/p/iac-infrastructure-as-code-terraform/) mencakup elemen-elemen berikut:
 
 1. **Pendekatan Deklaratif (Declarative Approach)**: Mendefinisikan "seperti apa status akhir seharusnya" daripada "bagaimana cara mengubah status tersebut".
 2. **Idempotensi (Idempotency)**: Tidak peduli seberapa sering skrip dieksekusi, hasil yang sama (status) selalu terjamin.
 3. **Kontrol Versi (Version Control)**: Status infrastruktur disimpan sebagai kode dalam VCS seperti Git, yang memungkinkan pelacakan riwayat perubahan dan tinjauan rekan (peer review).
 
-Mempraktikkan IaC dalam lingkungan pengembangan lokal berarti mengodekan "bentuk ideal" dari lingkungan pengembangan menggunakan `Dockerfile`, `docker-compose.yml`, dan `devcontainer.json`. Dengan ini, anggota baru yang bergabung dalam tim dapat merasakan pengalaman pengenalan (onboarding) di mana mereka hanya perlu meng-clone repositori dan menjalankan satu perintah untuk dapat langsung memulai pengembangan.
+Mempraktikkan [IaC](/id/p/iac-infrastructure-as-code-terraform/) dalam lingkungan pengembangan lokal berarti mengodekan "bentuk ideal" dari lingkungan pengembangan menggunakan `Dockerfile`, `docker-compose.yml`, dan `devcontainer.json`. Dengan ini, anggota baru yang bergabung dalam tim dapat merasakan pengalaman pengenalan (onboarding) di mana mereka hanya perlu meng-clone repositori dan menjalankan satu perintah untuk dapat langsung memulai pengembangan.
 
 ### Fitur Kernel yang Mendukung Teknologi Kontainer
 
@@ -356,7 +356,7 @@ Dengan begitu, nilai harapan untuk waktu respon rerata bisa dirumuskan menjadi:
 
 $$ T_{\text{total}} = T_{\text{net}} + T_{\text{app}} + T_{\text{cache}} + p_{\text{miss}} \times (T_{\text{db}} + T_{\text{cache\_write}}) $$
 
-Untuk lingkungan pengembangan lokal (di dalam [Docker](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)), $T_{\text{net}}$ nilainya akan nyaris 0. Namun, ada aspek yang butuh perhatian serius: **performa I/O saat melakukan Bind Mount**. Pada Docker Desktop versi Windows atau macOS, waktu tunda (overhead) akibat aktivitas berbagi file antara host OS dan mesin virtual (kontainer) berisiko membengkakkan $T_{\text{app}}$ (waktu bacaan kode dll.). Sebagai solusi atas masalah ini, kami sangat merekomendasikan pemakaian Dev[Container](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)s seperti dibahas di atas agar seluruh kode sumber ditampung pada named volume, atau memosisikan Docker Engine supaya berjalan secara asli pada sistem WSL2 (Windows Subsystem for Linux 2).
+Untuk lingkungan pengembangan lokal (di dalam [Docker](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)), $T_{\text{net}}$ nilainya akan nyaris 0. Namun, ada aspek yang butuh perhatian serius: **performa I/O saat melakukan Bind Mount**. Pada Docker Desktop versi Windows atau macOS, waktu tunda (overhead) akibat aktivitas berbagi file antara host OS dan mesin virtual (kontainer) berisiko membengkakkan $T_{\text{app}}$ (waktu bacaan kode dll.). Sebagai solusi atas masalah ini, kami sangat merekomendasikan pemakaian Dev[Container](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)s seperti dibahas di atas agar seluruh kode sumber ditampung pada named volume, atau memosisikan Docker Engine supaya berjalan secara asli pada sistem WSL2 ([Windows Subsystem for Linux](/id/p/wsl2-ultimate-development-setup-guide/) 2).
 
 ---
 
@@ -413,7 +413,7 @@ Berikut daftar masalah dan solusi yang lazim ditemukan sewaktu menjalankan ekosi
 
 Pemaduan [Docker](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/), Docker Compose, serta VSCode Dev[Container](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)s berhasil menciptakan ruang kerja lokal tangguh dan kebal masalah, sebuah metode sempurna yang membuat **"siapa pun yang merilis lingkungan, kondisinya akan tetap sama dengan sebelumnya"**.
 
-Hadirnya pendekatan [IaC](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) (Infrastructure as Code) di ekosistem pengembangan tidak melulu demi mempersingkat langkah-langkah pengaturan pada tahap pertama. Konsep ini justru berfungsi sebagai tameng yang menghapus kecemasan terhadap resiko yang menyertai tiap perubahan setup, membuat eksplorasi teknologi baru bertambah gampang, memfasilitasi peralihan secara mulus ke proses [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/), dan secara menakjubkan mendongkrak laju sekaligus standar siklus proyek.
+Hadirnya pendekatan [IaC](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) ([Infrastructure as Code](/id/p/iac-infrastructure-as-code-terraform/)) di ekosistem pengembangan tidak melulu demi mempersingkat langkah-langkah pengaturan pada tahap pertama. Konsep ini justru berfungsi sebagai tameng yang menghapus kecemasan terhadap resiko yang menyertai tiap perubahan setup, membuat eksplorasi teknologi baru bertambah gampang, memfasilitasi peralihan secara mulus ke proses [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/), dan secara menakjubkan mendongkrak laju sekaligus standar siklus proyek.
 
 Praktikkan segala panduan mengenai penyederhanaan kapasitas citra dengan build multi-tahap, pengelolaan status via healthcheck, ataupun pemanfaatan cache di Dockerfile yang semuanya sudah terjabarkan di dalam esai ini. Cobalah secepatnya untuk menciptakan pengalaman pengembangan (DX: Developer Experience) bermutu tinggi bagi karya-karyamu.
 

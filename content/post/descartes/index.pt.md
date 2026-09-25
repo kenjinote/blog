@@ -59,7 +59,7 @@ $$
 
 A ideia de [Descartes](https://kenji.blog/pt/p/descartes/) tornou possível reduzir problemas geométricos difíceis a cálculos algébricos. Além disso, a notação para expressões literais também foi organizada por [Descartes](https://kenji.blog/pt/p/descartes/). O uso de $x, y, z$ para incógnitas e $a, b, c$ para valores conhecidos, bem como a notação que expressa expoentes escrevendo pequenos números no canto superior direito, como $x^2, x^3$, também foram introduzidos por ele na "Geometria".
 
-Abaixo está a fórmula para encontrar a distância entre dois pontos em um plano de coordenadas. A distância $d$ entre o ponto $A(x_1, y_1)$ e o ponto $B(x_2, y_2)$ é expressa da seguinte forma usando o teorema de Pitágoras:
+Abaixo está a fórmula para encontrar a distância entre dois pontos em um plano de coordenadas. A distância $d$ entre o ponto $A(x_1, y_1)$ e o ponto $B(x_2, y_2)$ é expressa da seguinte forma usando o teorema de [Pitágoras](/pt/p/pythagoras/):
 
 $$
 d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \quad \text{(Distância entre dois pontos)}
@@ -67,7 +67,7 @@ $$
 
 ## 4. Impacto na Filosofia e na Ciência
 
-A geometria analítica de [Descartes](https://kenji.blog/pt/p/descartes/) tornou-se uma base indispensável para o desenvolvimento subsequente da matemática e da física. Pode-se dizer que a criação do cálculo por Isaac Newton e [Gottfried Leibniz](https://kenji.blog/pt/p/leibniz/) só foi possível por causa do cenário fornecido pelo sistema de coordenadas cartesianas.
+A geometria analítica de [Descartes](https://kenji.blog/pt/p/descartes/) tornou-se uma base indispensável para o desenvolvimento subsequente da matemática e da física. Pode-se dizer que a criação do cálculo por [Isaac Newton](/pt/p/newton/) e [Gottfried Leibniz](https://kenji.blog/pt/p/leibniz/) só foi possível por causa do cenário fornecido pelo sistema de coordenadas cartesianas.
 
 Além disso, sua "dúvida metódica" na filosofia, uma abordagem para encontrar verdades certas depois de duvidar de tudo, estabeleceu o espírito do racionalismo que serve de base para a investigação científica.
 

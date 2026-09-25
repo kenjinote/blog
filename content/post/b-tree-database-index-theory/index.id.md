@@ -77,14 +77,14 @@ Dalam praktiknya, [RDBMS](https://kenji.blog/id/p/rdbms-transaction-acid-isolati
 
 ### 4.1 Perbedaan Antara B-Tree dan B+Tree
 
-Pada B-Tree, data aktual (atau pointer menuju data) disimpan baik pada simpul internal maupun simpul daun. Di sisi lain, **B+Tree** memiliki karakteristik sebagai berikut.
+Pada B-Tree, data aktual (atau [pointer](/id/p/c-language-pointers-memory-management-stack-heap/) menuju data) disimpan baik pada simpul internal maupun simpul daun. Di sisi lain, **B+Tree** memiliki karakteristik sebagai berikut.
 
 1. **Semua data hanya disimpan pada simpul daun**. Simpul internal hanya menyimpan kunci (indeks) untuk perutean.
-2. **Setiap simpul daun saling terhubung dengan linked list (pointer)**. Hal ini membuat akses sekuensial dan pencarian rentang (Range Query) menjadi sangat cepat.
+2. **Setiap simpul daun saling terhubung dengan linked list ([pointer](/id/p/c-language-pointers-memory-management-stack-heap/))**. Hal ini membuat akses sekuensial dan pencarian rentang (Range Query) menjadi sangat cepat.
 
 ### 4.2 Alasan Memilih B+Tree
 
-Dengan menghilangkan pointer ke data aktual dari simpul internal, sebuah simpul internal (halaman) dapat memuat lebih banyak kunci. Hal ini lebih lanjut meningkatkan jumlah percabangan (Fan-out), sehingga tinggi pohon $ h $ dapat ditekan menjadi lebih rendah, dan jumlah I/O disk semakin berkurang.
+Dengan menghilangkan [pointer](/id/p/c-language-pointers-memory-management-stack-heap/) ke data aktual dari simpul internal, sebuah simpul internal (halaman) dapat memuat lebih banyak kunci. Hal ini lebih lanjut meningkatkan jumlah percabangan (Fan-out), sehingga tinggi pohon $ h $ dapat ditekan menjadi lebih rendah, dan jumlah I/O disk semakin berkurang.
 
 Selain itu, pada pencarian rentang seperti `WHERE id BETWEEN 10 AND 100` yang sering digunakan dalam SQL, jika menggunakan B-[Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) kita harus melintasi pohon berkali-kali. Namun dengan **B+Tree**, setelah menemukan simpul daun sebagai titik awal sebanyak satu kali, kita dapat membaca data secara berurutan hanya dengan menelusuri tautan antar simpul daun.
 
@@ -118,7 +118,7 @@ graph TD
 
 ## 5. Contoh Implementasi B-Tree (Simulasi dengan Python)
 
-Di sini, kita akan memperdalam pemahaman dengan mengimplementasikan struktur simpul dasar serta algoritma pencarian dan penyisipan B-Tree menggunakan Python.
+Di sini, kita akan memperdalam pemahaman dengan mengimplementasikan struktur simpul dasar serta [algoritma pencarian](/id/p/search-algorithms-linear-binary-hash-table-principles/) dan penyisipan B-Tree menggunakan Python.
 
 ```python
 class BTreeNode:
@@ -215,7 +215,7 @@ Seperti yang bisa dilihat dari implementasi ini, proses penyisipan pada B-[Tree]
 
 ## 6. Kesimpulan dan Perkembangan
 
-**B-Tree** dan **B+Tree** bisa dibilang sebagai struktur data mahakarya yang dirancang dengan tujuan meminimalkan biaya I/O pada sistem berbasis disk. Sifat-sifat perangkat fisik serta algoritma matematis menyatu dengan indah dalam bentuk struktur pohon yang dangkal berkat jumlah percabangan yang tinggi, serta optimasi akses sekuensial.
+**B-Tree** dan **B+Tree** bisa dibilang sebagai struktur data mahakarya yang dirancang dengan tujuan meminimalkan biaya I/O pada sistem berbasis disk. Sifat-sifat perangkat fisik serta algoritma matematis menyatu dengan indah dalam bentuk [struktur pohon](/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) yang dangkal berkat jumlah percabangan yang tinggi, serta optimasi akses sekuensial.
 
 Dalam beberapa tahun terakhir, dengan semakin populernya SSD, struktur data baru seperti **LSM-Tree** (Log-Structured Merge-Tree) telah bermunculan untuk menekan amplifikasi penulisan (Write Amplification). Namun, dalam hal keseimbangan antara performa membaca dan pencarian rentang, serta stabilitas pemrosesan transaksi, **B+Tree** masih terus menduduki takhtanya sebagai penguasa absolut dalam basis data relasional.
 

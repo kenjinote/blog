@@ -127,7 +127,7 @@ Der Satz von Hahn-Banach garantiert, dass ein beschränktes lineares Funktional,
 
 ## 5. Das vom Auswahlaxiom hervorgerufene Paradoxon: Der Satz von Banach-Tarski
 
-Während das Auswahlaxiom der Mathematik enorme Macht verleiht, führt es auch zu Ergebnissen, die unsere räumliche Intuition vollständig zerstören. Das berühmteste Beispiel ist das **Banach-Tarski-Paradoxon** (Banach-Tarski Paradox).
+Während das Auswahlaxiom der Mathematik enorme Macht verleiht, führt es auch zu Ergebnissen, die unsere räumliche Intuition vollständig zerstören. Das berühmteste Beispiel ist das **[Banach-Tarski-Paradoxon](/de/p/banach-tarski-paradox/)** (Banach-Tarski Paradox).
 
 ### 5.1. Der Inhalt des Paradoxons
 

@@ -18,7 +18,7 @@ tags:
 
 Em Sistemas de Gerenciamento de Bancos de Dados Relacionais (RDBMS), o conceito mais fundamental e importante para proteger a integridade e consistência dos dados e garantir a confiabilidade do sistema é a **transação** (Transaction).
 
-Em aplicações web modernas e sistemas corporativos, um grande número de usuários lê e grava no banco de dados simultaneamente. Compreender profundamente os mecanismos para garantir que os dados sejam processados correta e consistentemente nesse ambiente de processamento simultâneo é uma habilidade essencial para engenheiros de backend e administradores de banco de dados.
+Em aplicações web modernas e sistemas corporativos, um grande número de usuários lê e grava no banco de dados simultaneamente. Compreender profundamente os mecanismos para garantir que os dados sejam processados correta e consistentemente nesse ambiente de processamento simultâneo é uma habilidade essencial [para engenheiros](/pt/p/prompt-engineering-for-engineers/) de backend e administradores de banco de dados.
 
 Neste artigo, explicaremos de forma abrangente e muito detalhada as **Propriedades ACID** , que formam a teoria básica que suporta transações de banco de dados, várias **anomalias (Anomaly)** que podem ocorrer quando várias transações são executadas simultaneamente, e os **níveis de isolamento da transação (Isolation Level)** , que definem como evitar essas anomalias. Além disso, aprofundaremos as técnicas de implementação específicas para proteger os dados contra concorrência: **bloqueio pessimista** e **bloqueio otimista** , bem como o **MVCC (Controle de Concorrência Multiversão)** , que é amplamente adotado em RDBMS modernos.
 
@@ -292,4 +292,4 @@ As **transações** no banco de dados não são apenas uma extensão do SQL, mas
 - Compreenda as características dos **bloqueios pessimistas** e **bloqueios otimistas** , a fim de incorporar os controles exclusivos ideais no sistema com base na lógica de negócios e nos padrões de uso de dados (frequência de ocorrência de problemas).
 
 Ao combinar o conhecimento e a tecnologia, será possível criar sistemas formidáveis, dimensionáveis com excelente desempenho sem gerar desarmonia nas informações.
-No nosso próximo artigo, temos a intenção de falar sobre a evolução desse tratamento nas arquiteturas de sistemas distribuídos e de microsserviços (padrão Saga, 2PC, etc.). Fique ligado!
+No nosso próximo artigo, temos a intenção de falar sobre a evolução desse tratamento nas arquiteturas de [sistemas distribuídos](/pt/p/cap-theorem-distributed-systems-tradeoff/) e de microsserviços (padrão Saga, 2PC, etc.). Fique ligado!

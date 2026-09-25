@@ -15,17 +15,17 @@ tags: ["Generative AI", "DDD", "Architecture", "Future of Work"]
 
 このような時代において、多くのエンジニアが「自分の仕事はAIに奪われてしまうのではないか」という不安を抱くのは自然なことです。確かに、定型的なCRUDアプリケーションのボイラープレート作成、単純なアルゴリズムの実装、あるいはよく知られたライブラリのAPI呼び出しといった「単なるコーディング作業（Typing Code）」は急速にコモディティ化しています。
 
-しかし、ソフトウェアエンジニアリングの本質は「コードを打ち込むこと」ではありません。ビジネスの課題を技術によって解決し、スケーラブルで保守可能なシステムを構築することです。本記事では、AIがコードを書く時代にこそ価値が高まる「人間ならではのエンジニアスキル」について、LLMの技術的な限界、ドメイン駆動設計（DDD）、システムアーキテクチャ、[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)のデバッグといった観点から、極めて詳細かつ技術的に深掘りして考察します。
+しかし、ソフトウェアエンジニアリングの本質は「コードを打ち込むこと」ではありません。ビジネスの課題を技術によって解決し、スケーラブルで保守可能なシステムを構築することです。本記事では、AIがコードを書く時代にこそ価値が高まる「人間ならではのエンジニアスキル」について、[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)の技術的な限界、ドメイン駆動設計（DDD）、システムアーキテクチャ、[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)のデバッグといった観点から、極めて詳細かつ技術的に深掘りして考察します。
 
 ---
 
 ## 1. [大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）の構造的な限界を理解する
 
-AIの能力を正しく評価し、人間がどの領域で価値を発揮すべきかを見極めるためには、まずAI（特にLLM）の構造的な限界を数理的・アーキテクチャ的な観点から理解する必要があります。
+AIの能力を正しく評価し、人間がどの領域で価値を発揮すべきかを見極めるためには、まずAI（特に[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)）の構造的な限界を数理的・アーキテクチャ的な観点から理解する必要があります。
 
 ### 1.1 [Transformer](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)アーキテクチャにおける計算量とコンテキストの限界
 
-現在のLLMの大部分は、Googleが2017年に発表した「Transformer」アーキテクチャに基づいています。Transformerの核心は「自己アテンション機構（Self-Attention Mechanism）」にあります。自己アテンション機構は、入力されたシーケンス内の各トークンが、他のすべてのトークンとどの程度関連しているかを計算します。
+現在の[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)の大部分は、Googleが2017年に発表した「Transformer」アーキテクチャに基づいています。Transformerの核心は「自己アテンション機構（Self-Attention Mechanism）」にあります。自己アテンション機構は、入力されたシーケンス内の各トークンが、他のすべてのトークンとどの程度関連しているかを計算します。
 
 このアテンションの計算式は次のように表されます。
 
@@ -38,16 +38,16 @@ $$ \text{Complexity} = O(N^2 \cdot d) $$
 
 近年では、FlashAttentionのようなハードウェアレベルの最適化や、Sparse Attention、さらにはMamba（[State](https://kenji.blog/p/iac-infrastructure-as-code-terraform/) Space Models）などの線形時間 $O(N)$ で処理可能な代替アーキテクチャの研究が進んでいますが、依然として「無限のコンテキストを完全に理解し、全体最適化された出力を生成する」ことは極めて困難です。
 
-さらに、コンテキストウィンドウを物理的に拡大できたとしても、「Lost in the Middle（中間情報の喪失）」と呼ばれる現象が発生します。[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)はプロンプトの先頭と末尾の情報に強く影響を受けやすく、中間に配置された重要な要件や制約を無視してしまう傾向があります。数万行に及ぶエンタープライズシステムのソースコード全体をLLMに読み込ませて「最適なリファクタリングをせよ」と指示しても、局所的には正しいが全体としては破綻しているコードが生成されるのはこのためです。
+さらに、コンテキストウィンドウを物理的に拡大できたとしても、「Lost in the Middle（中間情報の喪失）」と呼ばれる現象が発生します。[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)はプロンプトの先頭と末尾の情報に強く影響を受けやすく、中間に配置された重要な要件や制約を無視してしまう傾向があります。数万行に及ぶエンタープライズシステムのソースコード全体を[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)に読み込ませて「最適なリファクタリングをせよ」と指示しても、局所的には正しいが全体としては破綻しているコードが生成されるのはこのためです。
 
 ### 1.2 確率論的生成モデルの特性と「ハルシネーション」
 
-LLMの本質は、入力されたコンテキスト（プロンプト）とこれまでの生成結果に基づいて、次に出現する確率が最も高いトークンを予測する「確率論的生成モデル」です。
+[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)の本質は、入力されたコンテキスト（プロンプト）とこれまでの生成結果に基づいて、次に出現する確率が最も高いトークンを予測する「確率論的生成モデル」です。
 
 $$ P(w_t | w_{1:t-1}) = \text{softmax}(W \cdot h_t) $$
 
 モデルは膨大な訓練データから「言葉の統計的な共起関係」を学習しているだけであり、生成されるコードの「意味（Semantics）」や「実行結果の実世界での影響」を理解しているわけではありません。これにより発生するのが「ハルシネーション（幻覚）」です。
-存在しない架空のライブラリ関数を呼び出したり、型が微妙に一致しない変数を渡したりするバグは、LLMが「文法的にそれらしい（確率が高い）トークン列」を生成した結果に過ぎません。
+存在しない架空のライブラリ関数を呼び出したり、型が微妙に一致しない変数を渡したりするバグは、[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)が「文法的にそれらしい（確率が高い）トークン列」を生成した結果に過ぎません。
 
 ### 1.3 実世界グラウンディング（Grounding）の欠如
 
@@ -120,7 +120,7 @@ AIに「システム全体を作って」と指示するのではなく、人間
 
 ### 4.1 [CAP定理](https://kenji.blog/p/cap-theorem-distributed-systems/)とトレードオフの判断
 
-[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)を設計する際、エンジニアは常に「[CAP定理](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)」に直面します。CAP定理とは、分散システムは以下の3つの特性のうち、同時に2つしか満たすことができないという原則です。
+[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)を設計する際、エンジニアは常に「[CAP定理](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)」に直面します。CAP定理とは、[分散システム](/p/cap-theorem-distributed-systems-tradeoff/)は以下の3つの特性のうち、同時に2つしか満たすことができないという原則です。
 
 - **[Consistency](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)（一貫性）**: すべてのノードで同時に同じデータが見えるか
 - **[Availability](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)（可用性）**: ノードの一部に障害が起きてもシステムが応答し続けるか
@@ -134,7 +134,7 @@ AIは「Cを優先するコード」や「Aを優先するコード」を書く�
 
 ### 4.2 非同期通信と結果整合性（[Eventual Consistency](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)）
 
-システムが大規模になると、サービス間の連携は[REST API](https://kenji.blog/p/graphql-vs-rest-api-overfetching-type-safety/)による同期通信から、メッセージキュー（Kafka, RabbitMQなど）を用いた非同期通信へと移行します。ここでのデータ整合性は、即時整合性から「結果整合性（Eventual [Consistency](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)）」へと変化します。
+システムが大規模になると、サービス間の連携は[REST API](https://kenji.blog/p/graphql-vs-rest-api-overfetching-type-safety/)による同期通信から、メッセージキュー（[Kafka, RabbitMQ](/p/event-driven-architecture-message-queue-kafka-rabbitmq/)など）を用いた非同期通信へと移行します。ここでのデータ整合性は、即時整合性から「結果整合性（Eventual [Consistency](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)）」へと変化します。
 Sagaパターンや[CQRS](https://kenji.blog/p/event-driven-architecture-async/)（Command Query Responsibility Segregation）といった高度なアーキテクチャパターンをどのタイミングで導入するべきか。これらの複雑な意思決定とシステム全体の青写真を描くことは、まさにシニアエンジニアの真骨頂です。
 
 ```mermaid
@@ -201,7 +201,7 @@ AI時代において、エンジニアは「コードのタイピスト」から
 
 ## 7. おわりに：進化を拒むのではなく、波を乗りこなす
 
-「AIがコードを書く時代」は、エンジニアにとって脅威ではなく、歴史上最大のチャンスです。かつて[アセンブリ](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)言語からC言語への移行が起こり、メモリのポインタ管理からJavaの[ガベージコレクション](https://kenji.blog/p/memory-management-garbage-collection/)への進化が起こったように、AIによるコード生成は「抽象化のレベルが一つ上がった」に過ぎません。
+「AIがコードを書く時代」は、エンジニアにとって脅威ではなく、歴史上最大のチャンスです。かつて[アセンブリ](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)言語からC言語への移行が起こり、メモリの[ポインタ](/p/c-language-pointers-memory-management-stack-heap/)管理からJavaの[ガベージコレクション](https://kenji.blog/p/memory-management-garbage-collection/)への進化が起こったように、AIによるコード生成は「抽象化のレベルが一つ上がった」に過ぎません。
 
 これからのエンジニアは、特定の[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の細かな仕様やフレームワークのバージョンアップに一喜一憂するのではなく、 **「ビジネスの課題は何か」「データをどう分割し、どう連携させるか」「システムが停止した際にどう素早く復旧させるか」** といった、より本質的で、人間らしい高次な問題解決にリソースを集中させることができます。
 

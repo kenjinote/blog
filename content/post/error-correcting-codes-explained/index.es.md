@@ -10,9 +10,9 @@ image: eyecatch.jpg
 
 # ¿Qué son los códigos de corrección de errores?
 
-En la sociedad digital, los datos están constantemente expuestos a la amenaza del ruido. Los arañazos en un CD, los datos de las sondas transmitidos desde el espacio o los códigos QR que escaneamos a diario. Estos datos no se destruyen por completo por un poco de pérdida o ruido porque existe un poderoso mecanismo matemático llamado "códigos de corrección de errores" (Error-Correcting Codes, ECC).
+En la sociedad digital, los datos están constantemente expuestos a la amenaza del ruido. Los arañazos en un CD, los datos de las sondas transmitidos desde el espacio o los códigos QR que escaneamos a diario. Estos datos no se destruyen por completo por un poco de pérdida o ruido porque existe un poderoso mecanismo matemático llamado "códigos de corrección de errores" (Error-Correcting Codes, [ECC](/es/p/elliptic-curve-cryptography-math-cpp/)).
 
-En este artículo, desentrañaremos en detalle cómo funcionan, comenzando con los conceptos propuestos por Claude Shannon, el padre de la teoría de la información, hasta los fundamentos de la comprobación de paridad, la representación matricial de los códigos de Hamming y los códigos de Reed-Solomon que hacen pleno uso de los campos de Galois.
+En este artículo, desentrañaremos en detalle cómo funcionan, comenzando con los conceptos propuestos por [Claude Shannon, el padre de la teoría de la información](/es/p/biography-claude-shannon/), hasta los fundamentos de la comprobación de paridad, la representación matricial de los códigos de Hamming y los códigos de Reed-Solomon que hacen pleno uso de los campos de Galois.
 
 ## 1. La teoría de la información de Shannon y el teorema de codificación de canales
 

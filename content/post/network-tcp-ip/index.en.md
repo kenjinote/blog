@@ -77,7 +77,7 @@ This is the idea that "equipment such as routers on the network path should only
 Japan's old telephone network (NTT) and others were "smart networks" where the central telephone exchange held all the functions (billing, control, error handling).
 On the other hand, the Internet is just a "dumb pipe" (clay pipe) that simply carries data, and the smart ones are our PCs and smartphones connected to its ends.
 
-Because of this simple design that "the network side is just a dumb pipe," the Internet was not tied down by a specific administrator, and anyone could freely create new applications (Web, video streaming, P2P, blockchain, etc.) on the end terminals and deploy them worldwide, growing into an "infrastructure of innovation."
+Because of this simple design that "the network side is just a dumb pipe," the Internet was not tied down by a specific administrator, and anyone could freely create new applications (Web, video streaming, P2P, [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/), etc.) on the end terminals and deploy them worldwide, growing into an "infrastructure of innovation."
 
 ## 6. Conclusion
 

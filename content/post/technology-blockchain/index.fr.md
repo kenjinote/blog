@@ -22,20 +22,20 @@ Si je pouvais copier les « données numériques d'un billet de 10 000 yens » q
 
 Jusqu'à présent, le seul moyen d'empêcher ce problème de double dépense était que « **des administrateurs centraux en qui tout le monde a confiance, comme les banques et les sociétés de cartes de crédit, gèrent strictement les soldes des comptes (registres) de tout le monde** ».
 
-Cependant, en 2008, un article publié par une personne (ou un groupe) mystérieuse se faisant appeler Satoshi Nakamoto a donné naissance, pour la première fois dans l'histoire, à « une monnaie numérique qui ne peut absolument pas être contrefaite ou dépensée deux fois, même en l'absence d'un administrateur central ». Il s'agit du **Bitcoin**, et la technologie qui en constitue le fondement est la **blockchain**.
+Cependant, en 2008, un article publié par une personne (ou un groupe) mystérieuse se faisant appeler Satoshi Nakamoto a donné naissance, pour la première fois dans l'histoire, à « une monnaie numérique qui ne peut absolument pas être contrefaite ou dépensée deux fois, même en l'absence d'un administrateur central ». Il s'agit du **Bitcoin**, et la technologie qui en constitue le fondement est la **[blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/)**.
 
 ## 2. Qu'est-ce que la blockchain ? (Registre distribué)
 
-En un mot, la blockchain est « **un système dans lequel tous les participants du monde entier partagent une copie du même registre de transactions (grand livre) et se surveillent mutuellement** ».
+En un mot, la [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/) est « **un système dans lequel tous les participants du monde entier partagent une copie du même registre de transactions (grand livre) et se surveillent mutuellement** ».
 
 Lorsque quelqu'un effectue une transaction (transaction) telle que « envoyer 1 Bitcoin de A à B », cette information est diffusée aux ordinateurs (nœuds) du monde entier via un réseau P2P.
-Un lot de transactions survenues dans le monde entier en l'espace d'environ 10 minutes est regroupé dans une seule boîte (**bloc**). Ensuite, cette boîte est attachée derrière les boîtes précédentes comme une « chaîne » (**chaîne**) et conservée. C'est l'origine du nom « blockchain ».
+Un lot de transactions survenues dans le monde entier en l'espace d'environ 10 minutes est regroupé dans une seule boîte (**bloc**). Ensuite, cette boîte est attachée derrière les boîtes précédentes comme une « chaîne » (**chaîne**) et conservée. C'est l'origine du nom « [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/) ».
 
 Une fois qu'un bloc est attaché à la chaîne, son contenu (les enregistrements des transactions passées) ne peut absolument pas être réécrit par la suite. Pourquoi est-ce possible ?
 
 ## 3. Les « fonctions de hachage cryptographique » qui rendent la falsification impossible
 
-La nature « absolument inaltérable » de la blockchain repose sur une technologie cryptographique appelée **fonction de hachage (comme le SHA-256)**.
+La nature « absolument inaltérable » de la [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/) repose sur une technologie cryptographique appelée **fonction de hachage (comme le SHA-256)**.
 
 Une fonction de hachage est une « machine à calculer qui sort toujours une chaîne de caractères aléatoire (valeur de hachage) de longueur fixe, quelle que soit la longueur des données introduites ».
 Sa particularité réside dans le fait que « si la donnée d'origine change d'un seul caractère, la valeur de hachage produite changera radicalement pour devenir complètement différente ». De plus, il est impossible de retrouver les données d'origine à partir de la valeur de hachage produite (fonction à sens unique).
@@ -73,6 +73,6 @@ Plutôt que de dépenser d'énormes sommes d'argent (frais d'électricité) pour
 
 ## 6. Conclusion : Vers un monde "Trustless" (sans besoin de confiance)
 
-La blockchain est une invention révolutionnaire où, « même sans avoir à faire confiance à qui que ce soit de spécifique (Trustless), un consensus correct est formé à l'échelle du système grâce au pouvoir des mathématiques, de la cryptographie et des incitations économiques ».
+La [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/) est une invention révolutionnaire où, « même sans avoir à faire confiance à qui que ce soit de spécifique (Trustless), un consensus correct est formé à l'échelle du système grâce au pouvoir des mathématiques, de la cryptographie et des incitations économiques ».
 
 Le Bitcoin n'en est que la première application. Aujourd'hui, en appliquant ce mécanisme de « registre distribué absolument inaltérable », il sert de base à d'immenses innovations pour construire la prochaine forme d'Internet (Web3), telles que les contrats intelligents (exécution automatique de contrats), les NFT (preuve de propriété numérique), ainsi que la finance décentralisée (DeFi) et de nouvelles formes d'organisations (DAO).

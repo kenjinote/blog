@@ -83,7 +83,7 @@ Par conséquent, votre taux de victoire si vous changez de porte est de $\frac{2
 
 ## 3. Preuve rigoureuse par le théorème de Bayes
 
-Pour résoudre mathématiquement ce problème de manière rigoureuse, nous utilisons le « théorème de Bayes » pour calculer les probabilités conditionnelles.
+Pour résoudre mathématiquement ce problème de manière rigoureuse, nous utilisons le « [théorème de Bayes](/fr/p/bayes-theorem/) » pour calculer les probabilités conditionnelles.
 
 $$ P(H|E) = \frac{P(E|H) P(H)}{P(E)} $$
 
@@ -113,7 +113,7 @@ Ensuite, nous trouvons la probabilité totale $P(M_B)$ que le présentateur ouvr
 $$ P(M_B) = P(M_B|C_A)P(C_A) + P(M_B|C_B)P(C_B) + P(M_B|C_C)P(C_C) $$
 $$ P(M_B) = \left(\frac{1}{2} \times \frac{1}{3}\right) + \left(0 \times \frac{1}{3}\right) + \left(1 \times \frac{1}{3}\right) = \frac{1}{6} + 0 + \frac{1}{3} = \frac{1}{2} $$
 
-Nous appliquons enfin le théorème de Bayes pour calculer les probabilités a posteriori pour la porte A et la porte C.
+Nous appliquons enfin le [théorème de Bayes](/fr/p/bayes-theorem/) pour calculer les probabilités a posteriori pour la porte A et la porte C.
 
 **Probabilité que la voiture soit derrière la porte A (si vous ne changez pas) :**
 $$ P(C_A|M_B) = \frac{P(M_B|C_A) P(C_A)}{P(M_B)} = \frac{\frac{1}{2} \times \frac{1}{3}}{\frac{1}{2}} = \frac{1}{3} $$

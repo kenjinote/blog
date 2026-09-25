@@ -58,8 +58,8 @@ $$ 500 \text{次/天} \times 2 \text{秒} = 1000 \text{秒/天} \approx 16.6 \te
 
 - **`Ctrl + A`** : 移动到行首（Start of line）。使用频率极高。
 - **`Ctrl + E`** : 移动到行尾（End of line）。
-- **`Alt + B`** (Meta+B) : 后退一个单词（Backward word）。以斜杠或空格为分隔符，按单词为单位进行高速移动。
-- **`Alt + F`** (Meta+F) : 前进一个单词（Forward word）。
+- **`Alt + B`** ([Meta](/zh-cn/p/history-of-meta-facebook/)+B) : 后退一个单词（Backward word）。以斜杠或空格为分隔符，按单词为单位进行高速移动。
+- **`Alt + F`** ([Meta](/zh-cn/p/history-of-meta-facebook/)+F) : 前进一个单词（Forward word）。
 
 ```mermaid
 flowchart LR
@@ -76,7 +76,7 @@ flowchart LR
 - **`Ctrl + U`** : 从光标位置 Kill（删除）到行首。在密码输入错误或想要从头重写命令时，可以瞬间清空。
 - **`Ctrl + K`** : 从光标位置 Kill 到行尾。
 - **`Ctrl + W`** : 从光标位置 Kill 前面的一个单词。在删除一个参数并重写时非常有用。
-- **`Alt + D`** (Meta+D) : 从光标位置 Kill 后面的一个单词。
+- **`Alt + D`** ([Meta](/zh-cn/p/history-of-meta-facebook/)+D) : 从光标位置 Kill 后面的一个单词。
 - **`Ctrl + Y`** : Yank（粘贴）最后一次 Kill 的内容。这允许进行高级操作，例如在用 `Ctrl+U` 删除命令后移动到另一个目录，然后用 `Ctrl+Y` 将其恢复。
 - **`Ctrl + _`** (或 `Ctrl + x, Ctrl + u`) : 撤销（Undo）。如果不小心删除了内容，可以将其恢复。
 

@@ -39,7 +39,7 @@ Dans les années 1970, Kay a rejoint le Xerox Palo Alto Research Center (PARC) e
 
 C'est de là qu'est né le langage de programmation "Smalltalk". Smalltalk traitait chaque élément comme un "objet" et a mis en œuvre pour la première fois au monde le concept de "programmation orientée objet", où les programmes s'exécutaient en envoyant des "messages" entre eux.
 
-Simultanément, l'interface graphique (GUI) utilisant des fenêtres, des icônes, une souris et un pointeur a été développée comme environnement d'exploitation pour Smalltalk. De plus, le "Xerox Alto" est né comme prototype matériel pour exécuter ces logiciels. Les réalisations historiques de ce PARC ont fortement inspiré Steve Jobs d'Apple lorsqu'il a visité le laboratoire en 1979, conduisant plus tard à la naissance du Lisa et du Macintosh.
+Simultanément, l'interface graphique (GUI) utilisant des fenêtres, des icônes, une souris et un pointeur a été développée comme environnement d'exploitation pour Smalltalk. De plus, le "Xerox Alto" est né comme prototype matériel pour exécuter ces logiciels. Les réalisations historiques de ce PARC ont fortement inspiré [Steve Jobs](/fr/p/biography-steve-jobs/) d'Apple lorsqu'il a visité le laboratoire en 1979, conduisant plus tard à la naissance du Lisa et du Macintosh.
 
 ```mermaid
 graph TD

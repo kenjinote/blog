@@ -48,7 +48,7 @@ Sua ideologia conservadora e personalidade intransigente às vezes causavam atri
 
 ## Revolução na Matemática: A Busca pelo Rigor
 
-A maior conquista de [Cauchy](https://kenji.blog/pt/p/cauchy/) foi fornecer uma base rigorosa para a análise matemática. Ele reconstruiu conceitos como limites, continuidade, diferenciação e integração usando definições rigorosas que levaram aos argumentos épsilon-delta (mais tarde aperfeiçoados por Weierstrass) que aprendemos hoje.
+A maior conquista de [Cauchy](https://kenji.blog/pt/p/cauchy/) foi fornecer uma base rigorosa para a análise matemática. Ele reconstruiu conceitos como limites, continuidade, diferenciação e integração usando definições rigorosas que levaram aos argumentos [épsilon-delta](/pt/p/epsilon-delta-definition/) (mais tarde aperfeiçoados por Weierstrass) que aprendemos hoje.
 
 Aqui estão algumas das realizações importantes que levam seu nome.
 

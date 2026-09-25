@@ -29,7 +29,7 @@ El mayor encanto de la obra de Lewis Carroll reside en la fusión de "lógica ex
 
 Como Dodgson, era un lógico riguroso que escribió libros especializados como "Tratado elemental de los determinantes" (1867) y "Lógica simbólica" (1896). Su literatura del absurdo es un juego intelectual que utiliza hábilmente la ambigüedad de las palabras, las falacias silogísticas y la distorsión del tiempo y el espacio. Su técnica de desmantelar el significado absoluto de las "palabras" y liberar a los lectores de los confines del sentido común tiene una profundidad que conecta con la filosofía del lenguaje moderna.
 
-Por ejemplo, la famosa escena en la que Humpty Dumpty afirma: "Cuando yo uso una palabra, significa exactamente lo que yo decido que signifique", es una aguda perspicacia sobre la arbitrariedad del lenguaje y la naturaleza de la comunicación. Se dice que influyó en filósofos posteriores como Ludwig Wittgenstein. Para él, la "lógica" era tanto la ley absoluta que definía el mundo como el "juguete" definitivo que podía crear un universo paralelo completamente diferente con solo modificar ligeramente las condiciones.
+Por ejemplo, la famosa escena en la que Humpty Dumpty afirma: "Cuando yo uso una palabra, significa exactamente lo que yo decido que signifique", es una aguda perspicacia sobre la arbitrariedad del lenguaje y la naturaleza de la comunicación. Se dice que influyó en filósofos posteriores como [Ludwig Wittgenstein](/es/p/biography-ludwig-wittgenstein/). Para él, la "lógica" era tanto la ley absoluta que definía el mundo como el "juguete" definitivo que podía crear un universo paralelo completamente diferente con solo modificar ligeramente las condiciones.
 
 ## Legado: Repercusiones en la literatura, la cultura y la ciencia
 

@@ -267,11 +267,11 @@ If you run `(48 ** 103) % 143` on a calculator, the result wonderfully turns out
 
 ---
 
-## 8. How to Find the Private Key $d$: Extended [Euclide](https://kenji.blog/p/euclid/)an Algorithm
+## 8. How to Find the Private Key $d$: Extended [Euclide](https://kenji.blog/en/p/euclid/)an Algorithm
 
-In the hand calculation example, we found $d=103$ by guessing to find $k$, but this method is impossible when the numbers are hundreds of digits long. In actual programs, an algorithm called the **"Extended [Euclide](https://kenji.blog/p/euclid/)an Algorithm"** is used.
+In the hand calculation example, we found $d=103$ by guessing to find $k$, but this method is impossible when the numbers are hundreds of digits long. In actual programs, an algorithm called the **"Extended [Euclide](https://kenji.blog/en/p/euclid/)an Algorithm"** is used.
 
-Solving $7d \equiv 1 \pmod{120}$ is the same as finding integers $d, y$ that satisfy $7d + 120y = 1$. By working backwards through the [Euclide](https://kenji.blog/p/euclid/)an Algorithm, this can be calculated mechanically.
+Solving $7d \equiv 1 \pmod{120}$ is the same as finding integers $d, y$ that satisfy $7d + 120y = 1$. By working backwards through the [Euclide](https://kenji.blog/en/p/euclid/)an Algorithm, this can be calculated mechanically.
 
 1. $120 \div 7 = 17$ remainder $1$ 
 2. Transforming this, $1 = 120 - 17 \times 7$

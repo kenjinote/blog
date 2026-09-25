@@ -10,7 +10,7 @@ tags: ["Gabriel Lamé", "History of Mathematics", "Number Theory", "Elasticity",
 
 ## 1. Introduction: Who was [Gabriel Lamé](https://kenji.blog/en/p/lame/)?
 
-[Gabriel Lamé](https://kenji.blog/en/p/lame/) (July 22, 1795 – May 1, 1870) was a prominent French mathematician, physicist, and engineer of the 19th century. His contributions spanned a vast range, from pure mathematics to applied mathematics, and even practical civil engineering. Today, his name remains deeply etched in mathematics and physics textbooks through the **Lamé curve** (superellipse), **Lamé's Theorem** in the Euclidean algorithm, and the **[Lamé](https://kenji.blog/en/p/lame/) parameters** in the theory of elasticity.
+[Gabriel Lamé](https://kenji.blog/en/p/lame/) (July 22, 1795 – May 1, 1870) was a prominent French mathematician, physicist, and engineer of the 19th century. His contributions spanned a vast range, from pure mathematics to applied mathematics, and even practical civil engineering. Today, his name remains deeply etched in mathematics and physics textbooks through the **Lamé curve** (superellipse), **Lamé's Theorem** in [the Euclidean algorithm](/en/p/euclidean-algorithm/), and the **[Lamé](https://kenji.blog/en/p/lame/) parameters** in the theory of elasticity.
 
 In this article, we will trace the eventful trajectory of [Lamé](https://kenji.blog/en/p/lame/)'s life while comprehensively and systematically explaining the groundbreaking mathematical and physical achievements he left behind. Understanding his life and thought processes provides a highly valuable perspective on how 19th-century science laid the foundations for the modern era.
 
@@ -95,15 +95,15 @@ def calculate_lame_curve(a, b, n, num_points=100):
     return points
 ```
 
-## 4. Contributions to Number Theory: [Lamé](https://kenji.blog/en/p/lame/)'s Theorem and the [Euclide](https://kenji.blog/p/euclid/)an Algorithm
+## 4. Contributions to Number Theory: [Lamé](https://kenji.blog/en/p/lame/)'s Theorem and the [Euclide](https://kenji.blog/en/p/euclid/)an Algorithm
 
 In computer science and number theory, what makes [Lamé](https://kenji.blog/en/p/lame/)'s name most famous is **[Lamé](https://kenji.blog/en/p/lame/)'s Theorem**. This is known as one of the earliest examples in history of mathematically and rigorously evaluating the computational complexity (execution time) of an algorithm.
 
 ### 4.1 Overview and Significance of the Theorem
 
-The **[Euclide](https://kenji.blog/p/euclid/)an algorithm**, passed down from ancient Greece, is an efficient algorithm for finding the greatest common divisor of two natural numbers. However, until Lamé in 1844, no one had accurately proven exactly "how fast" this algorithm finishes. [Lamé](https://kenji.blog/en/p/lame/)'s theorem states the following:
+The **[Euclide](https://kenji.blog/en/p/euclid/)an algorithm**, passed down from ancient Greece, is an efficient algorithm for finding the greatest common divisor of two natural numbers. However, until Lamé in 1844, no one had accurately proven exactly "how fast" this algorithm finishes. [Lamé](https://kenji.blog/en/p/lame/)'s theorem states the following:
 
-> "When finding the greatest common divisor of two integers using the [Euclide](https://kenji.blog/p/euclid/)an algorithm, the number of required divisions (steps) never exceeds 5 times the number of decimal digits of the smaller number."
+> "When finding the greatest common divisor of two integers using the [Euclide](https://kenji.blog/en/p/euclid/)an algorithm, the number of required divisions (steps) never exceeds 5 times the number of decimal digits of the smaller number."
 
 Expressed as a formula, it is:
 
@@ -111,7 +111,7 @@ $$ \text{Number of steps} \le 5 \times \text{Number of digits of the smaller num
 
 ### 4.2 Deep Connection with the [Fibonacci](https://kenji.blog/en/p/fibonacci/) Sequence
 
-In the process of proving this theorem, [Lamé](https://kenji.blog/en/p/lame/) discovered that the worst-case scenario (meaning the one taking the most steps) for the Euclidean algorithm occurs when the inputs are two consecutive **Fibonacci numbers**. By utilizing the growth rate of the Fibonacci sequence and the properties of the golden ratio, he derived this beautiful upper bound. Due to this achievement, [Lamé](https://kenji.blog/en/p/lame/) is considered one of the "fathers of complexity theory" in modern computer science.
+In the process of proving this theorem, [Lamé](https://kenji.blog/en/p/lame/) discovered that the worst-case scenario (meaning the one taking the most steps) for [the Euclidean algorithm](/en/p/euclidean-algorithm/) occurs when the inputs are two consecutive **Fibonacci numbers**. By utilizing the growth rate of the Fibonacci sequence and the properties of the golden ratio, he derived this beautiful upper bound. Due to this achievement, [Lamé](https://kenji.blog/en/p/lame/) is considered one of the "fathers of complexity theory" in modern computer science.
 
 ## 5. Contributions to Physics: Elasticity Theory and [Lamé](https://kenji.blog/en/p/lame/) Parameters
 
@@ -139,9 +139,9 @@ In particular, to solve **Laplace's equation**, which describes heat conduction 
 
 ## 7. Challenge and Setback with [Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/)
 
-A dramatic episode in [Lamé](https://kenji.blog/en/p/lame/)'s life was his attempt to prove **Fermat's Last Theorem** in 1847. In March of that year, Lamé proudly announced at the French Academy of Sciences that he had "completely proven [Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/)." His proof involved a highly innovative and powerful approach for the time: factoring the equation using cyclotomic complex numbers.
+A dramatic episode in [Lamé](https://kenji.blog/en/p/lame/)'s life was his attempt to prove **[Fermat's Last Theorem](/en/p/fermats-last-theorem/)** in 1847. In March of that year, Lamé proudly announced at the French Academy of Sciences that he had "completely proven [Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/)." His proof involved a highly innovative and powerful approach for the time: factoring the equation using cyclotomic complex numbers.
 
-However, immediately after his presentation, his colleague, mathematician Joseph [Liouville](https://kenji.blog/en/p/liouville/), sharply pointed out that "the proof rests on the unproven, tacit assumption that 'unique prime factorization' also holds in the realm of complex numbers." Shortly after, a letter arrived from German mathematician Ernst Kummer indicating that "unique prime factorization does not generally hold," effectively rendering [Lamé](https://kenji.blog/en/p/lame/)'s proof invalid.
+However, immediately after his presentation, his colleague, mathematician Joseph [Liouville](https://kenji.blog/en/p/liouville/), sharply pointed out that "the proof rests on the unproven, tacit assumption that 'unique prime factorization' also holds in the realm of complex numbers." Shortly after, a letter arrived from German mathematician [Ernst Kummer](/en/p/kummer/) indicating that "unique prime factorization does not generally hold," effectively rendering [Lamé](https://kenji.blog/en/p/lame/)'s proof invalid.
 
 This was a major setback for [Lamé](https://kenji.blog/en/p/lame/), but this series of discussions sparked the birth of Kummer's theory of "ideal numbers" (ideals), which later opened up the massive mathematical field of algebraic number theory. [Lamé](https://kenji.blog/en/p/lame/)'s bold challenge ultimately pushed the history of mathematics significantly forward.
 

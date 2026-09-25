@@ -23,7 +23,7 @@ At the time, Budapest was a global center of culture and scholarship, producing 
 
 ## 3. Contributions to the Foundations of Mathematics: Axiomatic Set Theory
 
-One of von Neumann's most important early achievements was his research on the axiomatization of set theory. Set theory, founded by [Georg Cantor](https://kenji.blog/en/p/cantor/), was expected to be the foundation of mathematics, but it faced logical contradictions (paradoxes) such as Russell's paradox. To solve this problem, Ernst Zermelo, Adolf Fraenkel, and others were constructing axiomatic set theory, but von Neumann took a different approach.
+One of von Neumann's most important early achievements was his research on the axiomatization of set theory. Set theory, founded by [Georg Cantor](https://kenji.blog/en/p/cantor/), was expected to be the foundation of mathematics, but it faced logical contradictions (paradoxes) such as [Russell's paradox](/en/p/russells-paradox/). To solve this problem, Ernst Zermelo, Adolf Fraenkel, and others were constructing axiomatic set theory, but von Neumann took a different approach.
 
 He introduced the concept of "classes" and brilliantly avoided the paradoxes by strictly distinguishing between normal sets and classes that are too large to be sets (proper classes). This system was later improved by Paul Bernays and [Kurt Gödel](https://kenji.blog/en/p/godel/), and is now known as the **von Neumann–Bernays–Gödel set theory** (NBG set theory).
 
@@ -89,7 +89,7 @@ Von Neumann participated in the EDVAC development project at the University of P
 
 ## 7. Cellular [Automata](https://kenji.blog/en/p/automata-formal-language-theory/) and the Theory of Self-Reproducing Machines
 
-In his later years, von Neumann took a strong interest in mathematically modeling the mechanisms of biological self-reproduction. With the advice of his colleague Stanislaw Ulam, he devised the concept of **cellular automata**, in which space is divided into a grid, and each grid cell changes its state according to a certain rule.
+In his later years, von Neumann took a strong interest in mathematically modeling the mechanisms of biological self-reproduction. With the advice of his colleague Stanislaw Ulam, he devised the concept of **cellular [automata](/en/p/automata-formal-language-theory/)**, in which space is divided into a grid, and each grid cell changes its state according to a certain rule.
 
 Using cells with 29 states, he rigorously proved that a self-reproducing machine (universal constructor) is theoretically possible. This was before the discovery of the double helix structure of DNA, and it can be said that he predicted the genetic mechanisms and information transmission systems of life from the perspective of information science. After his death, this theory led to research in artificial life.
 
@@ -137,7 +137,7 @@ The following is a detailed timeline summarizing the life and major achievements
 * **1943**: Participated in the Manhattan Project, leading the calculations for explosive lenses.
 * **1944**: Published "Theory of Games and Economic Behavior."
 * **1945**: Wrote the "First Draft of a Report on the EDVAC," proposing the stored-program concept.
-* **1948**: Announced the theory of cellular automata and the concept of self-reproducing machines.
+* **1948**: Announced the theory of cellular [automata](/en/p/automata-formal-language-theory/) and the concept of self-reproducing machines.
 * **1951**: Became president of the American Mathematical Society.
 * **1954**: Appointed as a member of the United States Atomic Energy Commission.
 * **1955**: Diagnosed with bone cancer (or pancreatic cancer) and entered a battle with the disease.

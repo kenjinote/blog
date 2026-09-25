@@ -127,7 +127,7 @@ O Teorema de Hahn-Banach garante que um funcional linear limitado definido em um
 
 ## 5. O paradoxo gerado pelo Axioma da Escolha: o Teorema de Banach-Tarski
 
-Embora o Axioma da Escolha confira um poder formidável à matemática, ele também conduz a resultados que desafiam completamente nossa intuição espacial. O exemplo mais famoso é o **Paradoxo de Banach-Tarski** (Banach-Tarski Paradox).
+Embora o Axioma da Escolha confira um poder formidável à matemática, ele também conduz a resultados que desafiam completamente nossa intuição espacial. O exemplo mais famoso é o **[Paradoxo de Banach-Tarski](/pt/p/banach-tarski-paradox/)** (Banach-Tarski Paradox).
 
 ### 5.1. O conteúdo do paradoxo
 
@@ -153,7 +153,7 @@ $$
 
 ### Por que o ZFC foi aceito?
 
-A razão é simples. Se o Axioma da Escolha for rejeitado (adotando-se apenas o sistema axiomático ZF), os resultados matemáticos perdidos são significativos demais. As bases de todos os espaços vetoriais, a compacidade dos espaços produto em topologia e muitas propriedades úteis da medida de Lebesgue se desmoronariam. Mesmo ao «custo» do Paradoxo de Banach-Tarski, o Axioma da Escolha foi aceito para manter o sistema rico e belo da matemática abstrata moderna.
+A razão é simples. Se o Axioma da Escolha for rejeitado (adotando-se apenas o sistema axiomático ZF), os resultados matemáticos perdidos são significativos demais. As bases de todos os espaços vetoriais, a compacidade dos espaços produto em topologia e muitas propriedades úteis da medida de Lebesgue se desmoronariam. Mesmo ao «custo» do [Paradoxo de Banach-Tarski](/pt/p/banach-tarski-paradox/), o Axioma da Escolha foi aceito para manter o sistema rico e belo da matemática abstrata moderna.
 
 ## 7. Conclusão: uma ponte sobre o abismo do infinito
 

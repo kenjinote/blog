@@ -304,19 +304,19 @@ Inmediatamente después de aprender un nuevo concepto, $S$ es pequeña y, a medi
 El software que calcula automáticamente este momento óptimo de repaso mediante algoritmos (como SuperMemo 2) y lo presenta como tarjetas de memoria (flashcards) es "Anki".
 
 Un enfoque poderoso para crear ideas para el blog técnico es **convertir el contenido de las Permanent Notes de Obsidian en tarjetas de Anki**.
-Por ejemplo, registrar en Anki preguntas relacionadas con fundamentos técnicos como "¿Cuáles son los 3 elementos del teorema CAP?" o "¿Por qué los índices [B-Tree](https://kenji.blog/es/p/b-tree-database-index-theory/) tienen un rendimiento de búsqueda de O(log N)?" y repasarlas como parte de tu rutina diaria. Cuando el conocimiento se indexa en el cerebro como memoria a largo plazo, la información se conectará inconscientemente mientras te bañas o caminas, generando momentos de inspiración (momentos Eureka) como: "Ah, creo que podría escribir un artículo sobre los algoritmos de consenso en sistemas distribuidos".
+Por ejemplo, registrar en Anki preguntas relacionadas con fundamentos técnicos como "¿Cuáles son los 3 elementos del teorema CAP?" o "¿Por qué los índices [B-Tree](https://kenji.blog/es/p/b-tree-database-index-theory/) tienen un rendimiento de búsqueda de O(log N)?" y repasarlas como parte de tu rutina diaria. Cuando el conocimiento se indexa en el cerebro como memoria a largo plazo, la información se conectará inconscientemente mientras te bañas o caminas, generando momentos de inspiración (momentos Eureka) como: "Ah, creo que podría escribir un artículo sobre los algoritmos de consenso en [sistemas distribuidos](/es/p/cap-theorem-distributed-systems-tradeoff/)".
 
 ## 7. Creatividad combinatoria (Combinatorial Creativity)
 
 En el pipeline desarrollado hasta ahora hemos logrado la "entrada de información diversa", la "organización con Zettelkasten y búsqueda con IA" y la "consolidación en la memoria a largo plazo con Anki". El último paso es la "creatividad combinatoria (Combinatorial Creativity)", que consiste en multiplicar estos elementos para generar ideas completamente nuevas para artículos técnicos.
 
-Se dice que la innovación y la creatividad no nacen de crear algo de la nada, sino de nuevas combinaciones de elementos existentes. Es famosa la cita de Steve Jobs: "La creatividad es simplemente conectar cosas (Creativity is just connecting things.)".
+Se dice que la innovación y la creatividad no nacen de crear algo de la nada, sino de nuevas combinaciones de elementos existentes. Es famosa la cita de [Steve Jobs](/es/p/biography-steve-jobs/): "La creatividad es simplemente conectar cosas (Creativity is just connecting things.)".
 
 Como patrones de combinación en blogs técnicos, se puede considerar la siguiente matriz:
 
-1. **[Tecnología antigua] × [Nuevo paradigma]**: Ejemplo: "Aprendiendo de la arquitectura de COBOL: Antipatrones en el diseño de microservicios modernos".
+1. **[Tecnología antigua] × [Nuevo paradigma]**: Ejemplo: "Aprendiendo de la arquitectura de COBOL: Antipatrones en el diseño de [microservicios](/es/p/microservices-architecture-bff-api-gateway/) modernos".
 2. **[Frontend] × [Concepto de backend]**: Ejemplo: "Explicando el algoritmo de actualización del DOM virtual de React desde la perspectiva de los niveles de aislamiento de transacciones de bases de datos".
-3. **[Matemáticas abstractas y teorías] × [Implementación concreta]**: Ejemplo: "Descifrando la optimización de la programación (scheduling) de Pods en [Kubernetes](https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/) con la teoría de grafos".
+3. **[Matemáticas abstractas y teorías] × [Implementación concreta]**: Ejemplo: "Descifrando la optimización de la programación (scheduling) de Pods en [Kubernetes](https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/) con la [teoría de grafos](/es/p/graph-theory-dijkstra-a-star/)".
 
 Para generar estas combinaciones intencionadamente, puedes usar el sistema de búsqueda semántica de Pinecone que construimos anteriormente para extraer dos conceptos aleatorios, A y B. Luego, pasándole a una IA (como ChatGPT) un prompt diciendo: "Propón 5 títulos y borradores de índice para un blog técnico que combine estos dos", podrás generar infinitamente ideas de artículos con enfoques novedosos que no se te habrían ocurrido por tu cuenta.
 

@@ -56,7 +56,7 @@ graph TD
 
 ## 2. Antecedentes matemáticos de la criptografía de clave pública
 
-La seguridad de la criptografía de clave pública se basa en las **funciones unidireccionales** (One-way function), donde "un cierto cálculo es fácil, pero el cálculo inverso es muy difícil", y las **funciones unidireccionales con trampa** (Trapdoor one-way function), que permiten el cálculo inverso si se conoce cierta información (la trampa). Aquí profundizaremos en el representativo cifrado RSA y la criptografía de curva elíptica (ECC).
+La seguridad de la criptografía de clave pública se basa en las **funciones unidireccionales** (One-way function), donde "un cierto cálculo es fácil, pero el cálculo inverso es muy difícil", y las **funciones unidireccionales con trampa** (Trapdoor one-way function), que permiten el cálculo inverso si se conoce cierta información (la trampa). Aquí profundizaremos en el representativo cifrado RSA y la criptografía de curva elíptica ([ECC](/es/p/elliptic-curve-cryptography-math-cpp/)).
 
 ### 2.1. El mecanismo de la criptografía RSA
 
@@ -73,7 +73,7 @@ La generación de claves RSA se realiza en los siguientes pasos.
 4. Elegir un entero $e$ que cumpla $1 < e < \phi(N)$ y que sea coprimo con $\phi(N)$. (Generalmente, se utiliza a menudo $e = 65537$)
 5. Calcular $d$ que satisfaga la siguiente congruencia.
    $ e \times d \equiv 1 \pmod{\phi(N)} $
-   Esto se puede calcular utilizando el algoritmo de Euclides extendido.
+   Esto se puede calcular utilizando [el algoritmo de Euclides](/es/p/euclidean-algorithm/) extendido.
 
 Aquí, $(N, e)$ es la **clave pública**, y $d$ es la **clave privada** ($p$ y $q$ se descartan o se mantienen estrictamente en secreto).
 
@@ -96,7 +96,7 @@ La criptografía RSA es segura, pero requiere una longitud de clave muy larga (p
 
 #### 2.2.1. Curvas elípticas y el problema del logaritmo discreto
 
-La seguridad de ECC depende de la dificultad del **problema del logaritmo discreto sobre curvas elípticas** (ECDLP).
+La seguridad de [ECC](/es/p/elliptic-curve-cryptography-math-cpp/) depende de la dificultad del **problema del logaritmo discreto sobre curvas elípticas** (ECDLP).
 Una curva elíptica sobre un cuerpo finito $\mathbb{F}_p$ utilizada para criptografía se expresa generalmente en la forma normal de Weierstrass.
 
 $ y^2 \equiv x^3 + ax + b \pmod{p} $
@@ -109,7 +109,7 @@ Sea $P$ el punto resultante de sumar un punto base de referencia $G$ consigo mis
 $ P = k \times G $
 
 Aquí, el problema de encontrar el valor escalar $k$ dados $G$ y $P$ se llama el **problema del logaritmo discreto de curva elíptica**. Si $k$ es lo suficientemente grande, es extremadamente difícil calcularlo a la inversa.
-En ECC, $k$ es la **clave privada** y $P$ es la **clave pública**.
+En [ECC](/es/p/elliptic-curve-cryptography-math-cpp/), $k$ es la **clave privada** y $P$ es la **clave pública**.
 
 ### 2.3. Ejemplo de implementación de criptografía de clave pública en Python
 
@@ -337,7 +337,7 @@ Incluso al acceder a sitios "https://" con un navegador, este mecanismo PKI est�
 La sociedad digital moderna se basa en una combinación exquisita de las **tecnologías criptográficas** explicadas esta vez.
 
 - Encriptación de datos a alta velocidad con **criptografía de clave simétrica**
-- Intercambio seguro de claves y realización de asimetría con **criptografía de clave pública** (RSA y ECC)
+- Intercambio seguro de claves y realización de asimetría con **criptografía de clave pública** (RSA y [ECC](/es/p/elliptic-curve-cryptography-math-cpp/))
 - Extracción de huellas digitales de datos con **funciones hash** (SHA-2/3)
 - Prueba de integridad y autenticación con **firmas digitales**
 - Garantía de la autenticidad de las claves públicas con **PKI y autoridades de certificación**

@@ -49,7 +49,7 @@ graph TD
     Mersenne <-->|"Acoustique"| Huygens
 ```
 
-Au centre de ce réseau, lorsque quelqu'un découvrait un nouveau théorème, [Mersenne](https://kenji.blog/fr/p/mersenne/) le transmettait à d'autres savants, encourageant la critique et la vérification. Par exemple, c'est Mersenne qui a communiqué les découvertes mathématiques de Pierre de Fermat à [Descartes](https://kenji.blog/fr/p/descartes/), déclenchant un débat féroce entre les deux. Il est également connu pour avoir traduit en français les œuvres de Galileo Galilei (comme le *Dialogue sur les deux grands systèmes du monde*), les faisant largement connaître malgré la stricte censure de l'Église catholique. Certains historiens estiment que sans lui, la révolution scientifique du XVIIe siècle aurait pu être retardée de plusieurs décennies.
+Au centre de ce réseau, lorsque quelqu'un découvrait un nouveau théorème, [Mersenne](https://kenji.blog/fr/p/mersenne/) le transmettait à d'autres savants, encourageant la critique et la vérification. Par exemple, c'est Mersenne qui a communiqué les découvertes mathématiques de [Pierre de Fermat](/fr/p/fermat/) à [Descartes](https://kenji.blog/fr/p/descartes/), déclenchant un débat féroce entre les deux. Il est également connu pour avoir traduit en français les œuvres de Galileo Galilei (comme le *Dialogue sur les deux grands systèmes du monde*), les faisant largement connaître malgré la stricte censure de l'Église catholique. Certains historiens estiment que sans lui, la révolution scientifique du XVIIe siècle aurait pu être retardée de plusieurs décennies.
 
 ## Réalisations mathématiques : les nombres premiers de [Mersenne](https://kenji.blog/fr/p/mersenne/)
 

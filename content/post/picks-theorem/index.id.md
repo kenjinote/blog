@@ -20,7 +20,7 @@ Di bidang geometri dalam matematika, tema mencari luas suatu bangun telah dipela
 
 Namun, jika semua titik sudut dari suatu poligon terletak pada **titik kisi** (titik di mana koordinat $x$ dan $y$ keduanya adalah bilangan bulat), ada rumus ajaib yang memungkinkan Anda menghitung luas hanya dengan menggunakan operasi aritmatika yang sangat sederhana, tanpa mengukur panjang atau melakukan perkalian yang rumit atau perhitungan akar kuadrat. Itu adalah **[Teorema Pick](https://kenji.blog/id/p/picks-theorem/)**, yang akan kita jelaskan secara detail kali ini.
 
-[Teorema Pick](https://kenji.blog/id/p/picks-theorem/) bukan sekadar "rumus yang nyaman dan misterius untuk menemukan luas dengan mudah", melainkan memiliki latar belakang yang sangat dalam yang menghubungkan topologi, teori graf, dan geometri aljabar dalam matematika modern. Dalam artikel ini, kita akan menggali lebih dalam teorema Pick dari berbagai sudut, mulai dari cara menggunakannya pada dasarnya, hingga bukti matematis mengapa rumus sesederhana itu berlaku, latar belakang historisnya, dan bahkan keterbatasan teorema dan kemungkinan perluasannya ke 3D.
+[Teorema Pick](https://kenji.blog/id/p/picks-theorem/) bukan sekadar "rumus yang nyaman dan misterius untuk menemukan luas dengan mudah", melainkan memiliki latar belakang yang sangat dalam yang menghubungkan topologi, [teori graf](/id/p/graph-theory-dijkstra-a-star/), dan geometri aljabar dalam matematika modern. Dalam artikel ini, kita akan menggali lebih dalam teorema Pick dari berbagai sudut, mulai dari cara menggunakannya pada dasarnya, hingga bukti matematis mengapa rumus sesederhana itu berlaku, latar belakang historisnya, dan bahkan keterbatasan teorema dan kemungkinan perluasannya ke 3D.
 
 ## 2. Georg Alexander Pick dan Latar Belakang Sejarah
 
@@ -115,7 +115,7 @@ Namun, jika Anda menggunakan teorema Pick, Anda dapat secara instan menghitung l
 
 ## 5. Pembuktian Menggunakan Rumus Polihedron Euler
 
-Mengapa rumus ajaib seperti itu berlaku? Ada beberapa cara untuk membuktikan teorema Pick, tetapi di sini kita akan menyajikan gagasan pembuktian yang elegan dengan menggunakan teorema terkenal dalam teori graf, **Rumus Polihedron Euler**.
+Mengapa rumus ajaib seperti itu berlaku? Ada beberapa cara untuk membuktikan teorema Pick, tetapi di sini kita akan menyajikan gagasan pembuktian yang elegan dengan menggunakan teorema terkenal dalam [teori graf](/id/p/graph-theory-dijkstra-a-star/), **Rumus Polihedron Euler**.
 
 Menurut teorema Euler, untuk graf terhubung (jaringan) yang digambar pada suatu bidang, jika jumlah titik sudut (simpul) adalah $V$, jumlah tepi (sisi) adalah $E$, dan jumlah muka (bidang) adalah $F$, maka hubungan berikut ini berlaku:
 

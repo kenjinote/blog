@@ -18,11 +18,11 @@ tags:
 
 # 1. Pengantar ke Arsitektur Event-Driven
 
-Sistem perangkat lunak modern memiliki skala dan kompleksitas yang belum pernah ada sebelumnya. Di tengah tren arsitektur microservices, cara merancang komunikasi antar layanan menjadi elemen yang sangat krusial yang menentukan performa, ketersediaan, dan skalabilitas seluruh sistem. Dalam konteks ini, ** Arsitektur Event-Driven ** (Event-Driven Architecture: EDA) telah mengukuhkan posisinya sebagai paradigma yang kuat untuk menurunkan tingkat ketergantungan antar sistem dan mewujudkan skalabilitas yang tinggi.
+Sistem perangkat lunak modern memiliki skala dan kompleksitas yang belum pernah ada sebelumnya. Di tengah tren [arsitektur microservices](/id/p/microservices-architecture-bff-api-gateway/), cara merancang komunikasi antar layanan menjadi elemen yang sangat krusial yang menentukan performa, ketersediaan, dan skalabilitas seluruh sistem. Dalam konteks ini, ** Arsitektur Event-Driven ** (Event-Driven Architecture: EDA) telah mengukuhkan posisinya sebagai paradigma yang kuat untuk menurunkan tingkat ketergantungan antar sistem dan mewujudkan skalabilitas yang tinggi.
 
 # 2. Tantangan Komunikasi Sinkron (REST / gRPC)
 
-Pendekatan paling intuitif untuk komunikasi antar layanan dalam sistem terdistribusi adalah komunikasi sinkron menggunakan REST API dengan HTTP request/response, atau gRPC yang lebih cepat. Namun, komunikasi sinkron memiliki beberapa tantangan yang mendasar.
+Pendekatan paling intuitif untuk komunikasi antar layanan dalam [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/) adalah komunikasi sinkron menggunakan REST API dengan HTTP request/response, atau gRPC yang lebih cepat. Namun, komunikasi sinkron memiliki beberapa tantangan yang mendasar.
 
 ## 2.1 Ketergantungan Erat dan Kegagalan Beruntun (Cascade Failure)
 Dalam komunikasi sinkron, pemanggil (klien) dan yang dipanggil (server) terikat kuat secara waktu. Klien harus menunggu sampai server memberikan respons, dan jika server mengalami kegagalan atau respons melambat karena beban tinggi, dampaknya akan meluas ke klien. Jika hal ini terjadi secara berantai, ada risiko menyebabkan ** kegagalan beruntun ** yang membuat seluruh sistem down.
@@ -218,7 +218,7 @@ run();
 
 # 6. Penutup
 
-Arsitektur Event-Driven adalah metode yang kuat untuk menjaga sistem tetap fleksibel dan skalabel. Sebagai message broker yang menjadi intinya, RabbitMQ dan Kafka masing-masing memiliki filosofi desain yang berbeda. Kunci untuk membangun sistem terdistribusi yang sukses adalah memilih teknologi yang tepat sesuai dengan kebutuhan proyek: RabbitMQ jika Anda membutuhkan fleksibilitas routing dan manajemen status yang pasti, atau Kafka jika Anda membutuhkan throughput yang luar biasa serta persistensi dan kemampuan memutar ulang data.
+Arsitektur Event-Driven adalah metode yang kuat untuk menjaga sistem tetap fleksibel dan skalabel. Sebagai message broker yang menjadi intinya, RabbitMQ dan Kafka masing-masing memiliki filosofi desain yang berbeda. Kunci untuk membangun [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/) yang sukses adalah memilih teknologi yang tepat sesuai dengan kebutuhan proyek: RabbitMQ jika Anda membutuhkan fleksibilitas routing dan manajemen status yang pasti, atau Kafka jika Anda membutuhkan throughput yang luar biasa serta persistensi dan kemampuan memutar ulang data.
 
 # 7. Pola Desain Lanjutan dan Operasional dalam Arsitektur Event-Driven
 
@@ -226,7 +226,7 @@ Ketika menerapkan arsitektur event-driven dalam sistem perusahaan nyata, tantang
 
 ## 7.1 Transaksi Terdistribusi dengan Pola Saga
 
-Dalam arsitektur microservices, mengelola transaksi yang melibatkan beberapa layanan dengan sinkronisasi Two-Phase Commit (2PC) akan menyebabkan penurunan ketersediaan dan performa. Sebagai alternatif, ** Pola Saga ** digunakan.
+Dalam [arsitektur microservices](/id/p/microservices-architecture-bff-api-gateway/), mengelola transaksi yang melibatkan beberapa layanan dengan sinkronisasi Two-Phase Commit (2PC) akan menyebabkan penurunan ketersediaan dan performa. Sebagai alternatif, ** Pola Saga ** digunakan.
 
 Dalam pola Saga, transaksi terdistribusi direpresentasikan sebagai serangkaian transaksi lokal. Setiap layanan mengeksekusi transaksi lokal dan, setelah selesai, menerbitkan event untuk memicu langkah berikutnya. Jika suatu langkah gagal, sistem menerbitkan event untuk mengeksekusi "Transaksi Kompensasi (Compensating [Transaction](https://kenji.blog/id/p/rdbms-transaction-acid-isolation-level-lock/))" guna membatalkan transaksi yang telah selesai.
 
@@ -252,7 +252,7 @@ Producer Kafka tidak mengirim pesan satu per satu, melainkan mengelompokkannya s
 
 ## 7.4 Memastikan Kemampuan Observasi (Observability)
 
-Pada sistem dengan pemrosesan asinkron yang berantai, pemecahan masalah (troubleshooting) saat terjadi kegagalan menjadi sangat sulit. Untuk melacak antrean mana yang mengalami penumpukan pesan atau layanan mana yang mengalami error, sangat penting untuk menerapkan ** Distributed Tracing ** (seperti OpenTelemetry, Jaeger, dll). Menyematkan `traceId` unik ke setiap pesan dan mengaitkannya dengan log serta metrik guna membangun landasan untuk memvisualisasikan aliran event adalah praktik terbaik dalam operasional EDA.
+Pada sistem dengan [pemrosesan asinkron](/id/p/event-driven-architecture-async/) yang berantai, pemecahan masalah (troubleshooting) saat terjadi kegagalan menjadi sangat sulit. Untuk melacak antrean mana yang mengalami penumpukan pesan atau layanan mana yang mengalami error, sangat penting untuk menerapkan ** Distributed Tracing ** (seperti OpenTelemetry, Jaeger, dll). Menyematkan `traceId` unik ke setiap pesan dan mengaitkannya dengan log serta metrik guna membangun landasan untuk memvisualisasikan aliran event adalah praktik terbaik dalam operasional EDA.
 
 # 7. Pola Desain Lanjutan dan Operasional dalam Arsitektur Event-Driven
 
@@ -260,4 +260,4 @@ Ketika menerapkan arsitektur event-driven dalam sistem perusahaan nyata, tantang
 
 ## 7.4 Memastikan Kemampuan Observasi (Observability)
 
-Pada sistem dengan pemrosesan asinkron yang berantai, pemecahan masalah (troubleshooting) saat terjadi kegagalan menjadi sangat sulit. Untuk melacak antrean mana yang mengalami penumpukan pesan atau layanan mana yang mengalami error, sangat penting untuk menerapkan ** Distributed Tracing ** (seperti OpenTelemetry, Jaeger, dll). Menyematkan `traceId` unik ke setiap pesan dan mengaitkannya dengan log serta metrik guna membangun landasan untuk memvisualisasikan aliran event adalah praktik terbaik dalam operasional EDA.
+Pada sistem dengan [pemrosesan asinkron](/id/p/event-driven-architecture-async/) yang berantai, pemecahan masalah (troubleshooting) saat terjadi kegagalan menjadi sangat sulit. Untuk melacak antrean mana yang mengalami penumpukan pesan atau layanan mana yang mengalami error, sangat penting untuk menerapkan ** Distributed Tracing ** (seperti OpenTelemetry, Jaeger, dll). Menyematkan `traceId` unik ke setiap pesan dan mengaitkannya dengan log serta metrik guna membangun landasan untuk memvisualisasikan aliran event adalah praktik terbaik dalam operasional EDA.

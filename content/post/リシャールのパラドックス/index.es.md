@@ -106,7 +106,7 @@ A pesar de esto, $X$ está hecho de manera que no coincida con ningún número d
 
 ## 4. ¿Por qué se derrumbó la lógica? (La trampa del metalenguaje)
 
-La causa de esta paradoja, al igual que la paradoja de Berry, radica en haber confundido la "jerarquía de los lenguajes".
+La causa de esta paradoja, al igual que [la paradoja de Berry](/es/p/berry-paradox/), radica en haber confundido la "jerarquía de los lenguajes".
 
 Para hacer matemáticas rigurosamente, se debe separar claramente la "lista de números objetivo (lenguaje objeto)" y "las reglas que hablan desde el exterior sobre las propiedades de esa lista (metalenguaje)".
 

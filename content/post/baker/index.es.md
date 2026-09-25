@@ -122,5 +122,5 @@ flowchart TD
 
 Con la aparición de [Alan Baker](https://kenji.blog/es/p/baker/), la teoría de números —especialmente el estudio de la teoría de números trascendentes y las ecuaciones diofánticas— entró en una era completamente nueva. Los "métodos de computación efectivos" que presentó llevaron enfoques algorítmicos a las matemáticas puras abstractas y ahora sirven como parte del fundamento matemático que sustenta la informática y la criptografía modernas.
 
-Su investigación sobre la delimitación de las soluciones a las ecuaciones diofánticas también proporcionó un puente hacia teorías más profundas, como la **conjetura abc**, que sigue siendo hoy uno de los mayores problemas sin resolver en la teoría de números.
+Su investigación sobre la delimitación de las soluciones a las ecuaciones diofánticas también proporcionó un puente hacia teorías más profundas, como la **[conjetura abc](/es/p/abc-conjecture/)**, que sigue siendo hoy uno de los mayores problemas sin resolver en la teoría de números.
 Un gran matemático que combinó una intuición brillante con un abrumador poder lógico para completar pruebas altamente complejas y técnicas, [Alan Baker](https://kenji.blog/es/p/baker/) dejó un legado de teoremas y una pasión por la teoría de números que, sin duda, seguirá brillando en la historia de las matemáticas sin desvanecerse jamás.

@@ -139,7 +139,7 @@ Durch die Verwendung der homomorphen Verschlüsselung werden die folgenden Eigen
 $$ E(m_1 + m_2) = E(m_1) \oplus E(m_2) $$
 $$ E(m_1 \times m_2) = E(m_1) \otimes E(m_2) $$
 
-Die homomorphe Verschlüsselung wird in eine „partiell homomorphe Verschlüsselung (Partially Homomorphic Encryption: PHE)“, die entweder nur Addition oder nur Multiplikation zulässt, und eine „vollständig homomorphe Verschlüsselung (Fully Homomorphic Encryption: FHE)“, die unendlich viele Additionen und Multiplikationen zulässt, unterteilt. Seit Craig Gentry 2009 das erste FHE-Schema unter Verwendung gitterbasierter Kryptographie (Lattice-based cryptography) entwickelte, war dies ein großer Durchbruch in der Kryptographie.
+Die homomorphe Verschlüsselung wird in eine „partiell homomorphe Verschlüsselung (Partially Homomorphic Encryption: PHE)“, die entweder nur Addition oder nur Multiplikation zulässt, und eine „vollständig homomorphe Verschlüsselung (Fully Homomorphic Encryption: [FHE](/de/p/fully-homomorphic-encryption-fhe-explained/))“, die unendlich viele Additionen und Multiplikationen zulässt, unterteilt. Seit Craig Gentry 2009 das erste [FHE](/de/p/fully-homomorphic-encryption-fhe-explained/)-Schema unter Verwendung gitterbasierter Kryptographie ([Lattice-based cryptography](/de/p/lattice-based-cryptography-math-intuition/)) entwickelte, war dies ein großer Durchbruch in der Kryptographie.
 
 Obwohl derzeit noch Herausforderungen in Bezug auf Rechenkosten und eine Zunahme der Größe des Chiffretextes (Overhead) bestehen, wird eine Anwendung auf die sichere Analyse medizinischer Daten in der Cloud und vertrauliche Berechnungen zwischen Finanzinstituten erwartet.
 

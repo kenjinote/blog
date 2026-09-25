@@ -50,7 +50,7 @@ $$
 
 ### 2.2 使用深度學習的推薦模型 (DLRM)
 
-近年來，以 Meta（原 Facebook）等公司為中心普及的，是以 Deep Learning Recommendation Model (DLRM) 為代表的基於深度學習的架構。DLRM 接收使用者過去的行為歷史、項目的後設資料等各式各樣的特徵量（Feature）作為輸入，並預測點擊率（CTR：Click-Through Rate）等。
+近年來，以 [Meta](/zh-tw/p/history-of-meta-facebook/)（原 Facebook）等公司為中心普及的，是以 Deep Learning Recommendation Model (DLRM) 為代表的基於深度學習的架構。DLRM 接收使用者過去的行為歷史、項目的後設資料等各式各樣的特徵量（Feature）作為輸入，並預測點擊率（CTR：Click-Through Rate）等。
 
 DLRM 的特徵在於，它將稀疏的類別特徵量（例如：使用者 ID、追蹤的標籤）透過「嵌入表（Embedding Table）」轉換為稠密向量（Dense Vector），並將其與連續值的稠密特徵量（例如：帳號建立以來的天數、過去的平均停留時間）結合起來。
 
@@ -93,7 +93,7 @@ $$
 
 在網路理論中，相似者容易互相連結的性質稱為「同質性（Homophily）」。在圖 $G=(V, E)$ 中，節點（使用者）之間的邊緣（追蹤關係或資訊傳播），在屬性相似度越高時越容易形成。
 
-SNS 的推薦演算法會人工地加速這種同質性。例如，假設有一個推廣「無伺服器架構（[Serverless](https://kenji.blog/zh-tw/p/serverless-architecture-aws-lambda-cold-start/) Architecture）」的工程師社群，和一個支持「地端裸機（On-premises Bare Metal）」的社群。演算法會降低不同社群間邊緣（Cross-cutting ties）的權重，並學習強化同一社群內的邊緣（因為對立的意見通常會引起使用者的流失，有降低互動的風險。或是相反地，有時也會引發極端憤怒的互動，但在技術圈中往往是前者居多）。
+SNS 的推薦演算法會人工地加速這種同質性。例如，假設有一個推廣「[無伺服器架構](/zh-tw/p/serverless-architecture-aws-lambda-cold-start/)（[Serverless](https://kenji.blog/zh-tw/p/serverless-architecture-aws-lambda-cold-start/) Architecture）」的工程師社群，和一個支持「地端裸機（On-premises Bare Metal）」的社群。演算法會降低不同社群間邊緣（Cross-cutting ties）的權重，並學習強化同一社群內的邊緣（因為對立的意見通常會引起使用者的流失，有降低互動的風險。或是相反地，有時也會引發極端憤怒的互動，但在技術圈中往往是前者居多）。
 
 結果就是，在你的時間軸上看起來像是「全世界的企業都在轉向無伺服器」，而在另一個人的時間軸上看起來則是「脫離雲端（Cloud Repatriation）才是世界的趨勢」，從而創造出完全分裂的技術現實。
 
@@ -115,7 +115,7 @@ graph TD
     F --> A
 ```
 
-在這個迴圈中最可怕的是， **「頻率錯覺（Baader-Meinhof phenomenon）」** 是被演算法刻意引發的。當你第一次看到某個新的狀態管理函式庫的名稱時，演算法會將其視為訊號，並從隔天開始用關於該函式庫的話題填滿你的動態消息。人類的大腦會將這誤認為是「世界級的大流行」。
+在這個迴圈中最可怕的是， **「頻率錯覺（Baader-Meinhof phenomenon）」** 是被演算法刻意引發的。當你第一次看到某個新的[狀態管理](/zh-tw/p/state-management-history-redux-context-recoil-zustand/)函式庫的名稱時，演算法會將其視為訊號，並從隔天開始用關於該函式庫的話題填滿你的動態消息。人類的大腦會將這誤認為是「世界級的大流行」。
 
 以下的圖表，顯示了在 SNS 上被過度炒作（誇大宣傳）的技術，與不起眼、無聊但穩健的技術（Boring Technology）在生命週期上的差異。
 
@@ -141,12 +141,12 @@ xychart-beta
 
 最可靠的防禦策略，是將資訊來源從 SNS 的聚合器轉移至 **第一手資訊（Primary Sources）** 。
 
-1. **閱讀原始碼：** 與其相信 SNS 上「這個函式庫超快」的貼文，不如實際打開 GitHub，確認核心邏輯的計算複雜度與記憶體配置的機制。
+1. **閱讀原始碼：** 與其相信 SNS 上「這個函式庫超快」的貼文，不如實際打開 GitHub，確認核心邏輯的計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)與記憶體配置的機制。
 2. **追蹤 RFC (Request for Comments)：** 許多成熟的開源專案（如 React, [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/), Python 等），在導入新功能時會採用 RFC 流程。在 RFC 中，會淡淡地、有邏輯地記載「為什麼需要這個功能」、「設計上有什麼權衡」、「替代方案是什麼」，而無須去在意演算法的互動率。這裡面才沉睡著真正的技術價值。
 
 ### 5.2 精讀論文（Academic Papers）與白皮書
 
-在涉及分散式系統、資料庫、機器學習模型架構等基礎技術的選型時，與其看 SNS 上的幾行總結，更應該直接閱讀 ACM、IEEE 或 arXiv 上公開的論文，或是企業公開的詳細白皮書（例如：Google 的 Spanner 論文、Amazon 的 Dynamo 論文）。
+在涉及[分散式系統](/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)、資料庫、機器學習模型架構等基礎技術的選型時，與其看 SNS 上的幾行總結，更應該直接閱讀 ACM、IEEE 或 arXiv 上公開的論文，或是企業公開的詳細白皮書（例如：Google 的 Spanner 論文、Amazon 的 Dynamo 論文）。
 
 SNS 的貼文是為了「奪取讀者的注意力（Attention）」而最佳化的，但經過同行審查的論文則是為了「事實的正確性與可重複性」而最佳化的。兩者的評估函數完全不同。
 

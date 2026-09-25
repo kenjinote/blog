@@ -231,7 +231,7 @@ Hasil percobaan ini memiliki rata-rata 29,2929 pengambilan, median 27, dan 63,27
 
 *Gambar 3. Batang menunjukkan proporsi simulasi; lingkaran menunjukkan peluang teoretis dari selisih peluang kumulatif. Keduanya memakai interval lima pengambilan, dengan semua hasil 100 atau lebih masuk ke interval terakhir.*
 
-Banyak percobaan selesai dekat rata-rata, tetapi sebagian memerlukan waktu lebih lama. Angka 29,3 merangkum variasi ini, bukan janji bahwa semua orang selesai sekitar pengambilan ke-29. **Hukum bilangan besar** membantu menjelaskan hubungan rata-rata eksperimen dengan nilai harapan teoretis.
+Banyak percobaan selesai dekat rata-rata, tetapi sebagian memerlukan waktu lebih lama. Angka 29,3 merangkum variasi ini, bukan janji bahwa semua orang selesai sekitar pengambilan ke-29. **[Hukum bilangan besar](/id/p/law-of-large-numbers/)** membantu menjelaskan hubungan rata-rata eksperimen dengan nilai harapan teoretis.
 
 ## 8. Seberapa besar variasinya?
 

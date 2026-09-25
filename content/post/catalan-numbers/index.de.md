@@ -134,7 +134,7 @@ Wir können diese Formel mit Hilfe von Dyck-Pfaden beweisen.
 Die Gesamtzahl der kürzesten Pfade von $(0,0)$ nach $(n,n)$ ist $\binom{2n}{n}$, weil wir aus insgesamt $2n$ Schritten $n$ Schritte auswählen müssen, um uns nach rechts zu bewegen.
 
 Davon müssen wir die Pfade abziehen, die die Bedingung verletzen (d.h. solche, die die Gerade $y = x$ überqueren und die Gerade $y = x + 1$ berühren).
-Sei $P$ der erste Punkt, an dem ein verletzender Pfad $y = x + 1$ berührt. Wir spiegeln den Teil des Pfades vom Punkt $P$ bis zum Endpunkt $(n,n)$ an der Geraden $y = x + 1$.
+Sei $P$ der erste Punkt, an dem ein verletzender [Pfad](/de/p/windows-%E3%81%A7pfad%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9Fausf%C3%BChrbare-datei%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/) $y = x + 1$ berührt. Wir spiegeln den Teil des Pfades vom Punkt $P$ bis zum Endpunkt $(n,n)$ an der Geraden $y = x + 1$.
 Der ursprüngliche Endpunkt $(n,n)$ wird auf einen neuen Endpunkt bei $(n-1, n+1)$ gespiegelt.
 
 Bemerkenswerterweise gibt es eine perfekte Eins-zu-Eins-Entsprechung (Bijektion) zwischen "ungültigen Pfaden von $(0,0)$ nach $(n,n)$" und "ALLEN Pfaden von $(0,0)$ nach $(n-1, n+1)$".

@@ -23,7 +23,7 @@ Les nombres premiers jumeaux (Twin Primes) sont des paires de nombres premiers d
 - $(29, 31)$
 - $(41, 43)$
 
-Le [Théorème des Nombres Premiers (Prime Number Theorem)](https://kenji.blog/p/prime-number-theorem/) indique qu'à mesure que les nombres deviennent plus grands, la fréquence d'apparition des nombres premiers eux-mêmes diminue. Par conséquent, la fréquence d'apparition des nombres premiers jumeaux diminue également. Cependant, les mathématiciens supposent depuis longtemps que, peu importe la grandeur des nombres, ces "paires de nombres premiers avec une différence de 2" continueront d'apparaître indéfiniment.
+Le [Théorème des Nombres Premiers (Prime Number Theorem)](https://kenji.blog/fr/p/prime-number-theorem/) indique qu'à mesure que les nombres deviennent plus grands, la fréquence d'apparition des nombres premiers eux-mêmes diminue. Par conséquent, la fréquence d'apparition des nombres premiers jumeaux diminue également. Cependant, les mathématiciens supposent depuis longtemps que, peu importe la grandeur des nombres, ces "paires de nombres premiers avec une différence de 2" continueront d'apparaître indéfiniment.
 
 C'est la **Conjecture des Nombres Premiers Jumeaux** .
 
@@ -48,7 +48,7 @@ graph LR
     D -->|"Exemple"| E("(3,5), (11,13)...")
 ```
 
-Selon le théorème des nombres premiers, le nombre de nombres premiers inférieurs ou égaux à $x$, $\pi(x)$, est asymptotique à environ $x / \ln(x)$. Concernant le nombre de nombres premiers jumeaux $\pi_2(x)$, il existe une conjecture quantitative plus forte appelée la conjecture de Hardy-Littlewood (première conjecture de Hardy-Littlewood).
+Selon le [théorème des nombres premiers](/fr/p/prime-number-theorem/), le nombre de nombres premiers inférieurs ou égaux à $x$, $\pi(x)$, est asymptotique à environ $x / \ln(x)$. Concernant le nombre de nombres premiers jumeaux $\pi_2(x)$, il existe une conjecture quantitative plus forte appelée la conjecture de Hardy-Littlewood (première conjecture de Hardy-Littlewood).
 
 ### Conjecture de Hardy-Littlewood
 

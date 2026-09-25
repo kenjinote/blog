@@ -46,9 +46,9 @@ graph LR
 
 ## 2. 객체 지향 프로그래밍에서의 '동일성'
 
-코드 레벨에서 '동일성'을 생각했을 때 가장 관련이 깊은 것이 ** 객체 지향 프로그래밍([OOP](https://kenji.blog/ko/p/object-oriented-programming-oop-solid-principles/)) ** 의 개념입니다. OOP에서는 동일성을 판정하기 위해 크게 2가지 기준이 존재합니다.
+코드 레벨에서 '동일성'을 생각했을 때 가장 관련이 깊은 것이 ** [객체 지향 프로그래밍](/ko/p/object-oriented-programming-oop-solid-principles/)([OOP](https://kenji.blog/ko/p/object-oriented-programming-oop-solid-principles/)) ** 의 개념입니다. [OOP](/ko/p/object-oriented-programming-oop-solid-principles/)에서는 동일성을 판정하기 위해 크게 2가지 기준이 존재합니다.
 
-1. ** 참조의 등가성(Reference Equality) ** : 메모리 상의 같은 위치를 가리키고 있는지(포인터가 같은지)
+1. ** 참조의 등가성(Reference Equality) ** : 메모리 상의 같은 위치를 가리키고 있는지([포인터](/ko/p/c-language-pointers-memory-management-stack-heap/)가 같은지)
 2. ** 값의 등가성(Value Equality) ** : 유지하고 있는 속성(데이터)이 모두 같은지
 
 [테세우스의 배](https://kenji.blog/ko/p/ship-of-theseus/)에서 '부품이 모두 교체되었으니 다른 배다'라고 주장하는 것은 ** 값의 등가성 ** 에 무게를 두는 사고방식입니다. 반면에 '역사적·사회적 맥락이 연속되어 있으니 같은 배다'라고 주장하는 것은 일종의 ** 참조의 등가성 ** 에 가깝다고 할 수 있을 것입니다.

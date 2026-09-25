@@ -17,7 +17,7 @@ tags:
 
 ## 1. Pahlawan di Balik Layar Revolusi Seluler
 
-Pada tahun 1990-an, ponsel berevolusi secara dramatis dari "telepon bahu" yang besar dan berat menjadi ukuran yang pas di saku. Teknologi yang mendasari "revolusi seluler" ini adalah "**baterai lithium-ion**" yang dikomersialkan untuk pertama kalinya di dunia oleh Sony pada tahun 1991.
+Pada tahun 1990-an, ponsel berevolusi secara dramatis dari "telepon bahu" yang besar dan berat menjadi ukuran yang pas di saku. Teknologi yang mendasari "[revolusi seluler](/id/p/history-of-iphone/)" ini adalah "**baterai lithium-ion**" yang dikomersialkan untuk pertama kalinya di dunia oleh Sony pada tahun 1991.
 
 Dibandingkan dengan baterai nikel-kadmium dan baterai asam timbal yang merupakan arus utama pada saat itu, baterai lithium-ion memiliki performa impian, yaitu "sangat ringan, kecil, dan memiliki tegangan tinggi". Saat ini, tidak hanya terbatas pada ponsel pintar dan laptop, baterai ini telah berkembang menjadi teknologi kunci untuk masyarakat dekarbonisasi sebagai jantung dari kendaraan listrik (EV) seperti Tesla. Pada tahun 2019, Penghargaan Nobel Kimia dianugerahkan kepada Akira Yoshino dan lainnya yang berkontribusi pada pengembangannya.
 

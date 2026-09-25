@@ -77,14 +77,14 @@ Nos [RDBMS](https://kenji.blog/pt/p/rdbms-transaction-acid-isolation-level-lock/
 
 ### 4.1 Diferenças entre a Árvore B e a Árvore B+
 
-Na Árvore B, os dados reais (ou ponteiros para os dados) são armazenados tanto nos nós internos quanto nos nós folha. Por outro lado, a **Árvore B+** tem as seguintes características:
+Na Árvore B, os dados reais (ou [ponteiros](/pt/p/c-language-pointers-memory-management-stack-heap/) para os dados) são armazenados tanto nos nós internos quanto nos nós folha. Por outro lado, a **Árvore B+** tem as seguintes características:
 
 1. **Todos os dados são armazenados apenas nos nós folha** . Os nós internos mantêm apenas chaves (índices) para roteamento.
-2. **Os nós folha estão conectados uns aos outros através de uma lista encadeada (ponteiros)** . Isso torna o acesso sequencial e as buscas em faixa (Range Query) extremamente rápidos.
+2. **Os nós folha estão conectados uns aos outros através de uma lista encadeada ([ponteiros](/pt/p/c-language-pointers-memory-management-stack-heap/))** . Isso torna o acesso sequencial e as buscas em faixa (Range Query) extremamente rápidos.
 
 ### 4.2 Razões para Adotar a Árvore B+
 
-Ao remover os ponteiros para os dados reais dos nós internos, tornou-se possível empacotar mais chaves em um único nó interno (página). Isso aumenta ainda mais o número de ramificações (Fan-out), mantendo a altura da árvore $ h $ mais baixa e reduzindo o número de E/S de disco.
+Ao remover os [ponteiros](/pt/p/c-language-pointers-memory-management-stack-heap/) para os dados reais dos nós internos, tornou-se possível empacotar mais chaves em um único nó interno (página). Isso aumenta ainda mais o número de ramificações (Fan-out), mantendo a altura da árvore $ h $ mais baixa e reduzindo o número de E/S de disco.
 
 Além disso, em buscas em faixa, que são frequentemente usadas em SQL, como `WHERE id BETWEEN 10 AND 100`, a Árvore B requer a travessia da árvore várias vezes. Na **Árvore B+**, no entanto, uma vez que o nó folha inicial é encontrado, os dados podem ser lidos continuamente apenas seguindo as conexões (links) entre os nós folha.
 
@@ -118,7 +118,7 @@ graph TD
 
 ## 5. Exemplo de Implementação da Árvore B (Simulação em Python)
 
-Aqui, implementaremos a estrutura básica de um nó da Árvore B e os algoritmos de busca e inserção em Python para aprofundar nossa compreensão.
+Aqui, implementaremos a estrutura básica de um nó da Árvore B e os [algoritmos de busca](/pt/p/search-algorithms-linear-binary-hash-table-principles/) e inserção em Python para aprofundar nossa compreensão.
 
 ```python
 class BTreeNode:

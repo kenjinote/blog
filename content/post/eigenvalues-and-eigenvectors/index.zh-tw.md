@@ -10,7 +10,7 @@ tags: ["線性代數", "特徵值", "特徵向量", "數學", "機器學習", "p
 
 ## 引言
 
-在學習線性代數時，許多人遇到的第一個難關可能是「矩陣乘法」或「行列式」。然而，跨越這些障礙之後，真正的威力源泉在於 **特徵值** (Eigenvalue) 與 **特徵向量** (Eigenvector)，它們正是線性代數在現代科學與工程中發揮巨大作用的核心。
+在學習線性代數時，許多人遇到的第一個難關可能是「矩陣乘法」或「[行列式](/zh-tw/p/geometric-meaning-of-determinant/)」。然而，跨越這些障礙之後，真正的威力源泉在於 **特徵值** (Eigenvalue) 與 **特徵向量** (Eigenvector)，它們正是線性代數在現代科學與工程中發揮巨大作用的核心。
 
 從機器學習中的降維技術 (PCA)、支撐Google搜尋引擎的PageRank演算法，到建築物的抗震設計以及量子力學中的薛丁格方程式，特徵值和特徵向量無處不在。
 
@@ -50,7 +50,7 @@ $$ A\mathbf{v} = \lambda I\mathbf{v} $$
 $$ A\mathbf{v} - \lambda I\mathbf{v} = \mathbf{0} $$
 $$ (A - \lambda I)\mathbf{v} = \mathbf{0} $$
 
-為了讓滿足此方程式的非零向量 $\mathbf{v}$ 存在，其充要條件是矩陣 $(A - \lambda I)$ 沒有反矩陣，也就是說它的行列式必須為零。
+為了讓滿足此方程式的非零向量 $\mathbf{v}$ 存在，其充要條件是矩陣 $(A - \lambda I)$ 沒有反矩陣，也就是說它的[行列式](/zh-tw/p/geometric-meaning-of-determinant/)必須為零。
 
 $$ \det(A - \lambda I) = 0 $$
 
@@ -74,7 +74,7 @@ $$
 A - \lambda I = \begin{pmatrix} 4 & 1 \\ 2 & 3 \end{pmatrix} - \begin{pmatrix} \lambda & 0 \\ 0 & \lambda \end{pmatrix} = \begin{pmatrix} 4-\lambda & 1 \\ 2 & 3-\lambda \end{pmatrix}
 $$
 
-計算其行列式：
+計算其[行列式](/zh-tw/p/geometric-meaning-of-determinant/)：
 
 $$
 \det(A - \lambda I) = (4-\lambda)(3-\lambda) - (1)(2) = (\lambda^2 - 7\lambda + 12) - 2 = \lambda^2 - 7\lambda + 10
@@ -152,7 +152,7 @@ NumPy的 `np.linalg.eig` 函式返回的是標準化（長度為1）後的特徵
 
 ## 矩陣的對角化及其強大優勢
 
-特徵值和特徵向量最重要的應用之一是 **矩陣的對角化**。對角化是指將一個複雜的矩陣 $A$ 利用一個容易計算的對角矩陣 $D$ 分解為如下形式：
+特徵值和特徵向量最重要的應用之一是 **矩陣的[對角化](/zh-tw/p/diagonalization-and-jordan-normal-form/)**。[對角化](/zh-tw/p/diagonalization-and-jordan-normal-form/)是指將一個複雜的矩陣 $A$ 利用一個容易計算的對角矩陣 $D$ 分解為如下形式：
 
 $$ A = P D P^{-1} $$
 
@@ -164,9 +164,9 @@ $$
 P = \begin{pmatrix} 1 & 1 \\ -2 & 1 \end{pmatrix}, \quad D = \begin{pmatrix} 2 & 0 \\ 0 & 5 \end{pmatrix}
 $$
 
-為什麼這種對角化如此重要？那是因為 **它使矩陣的次方運算變得極其簡單**。
+為什麼這種[對角化](/zh-tw/p/diagonalization-and-jordan-normal-form/)如此重要？那是因為 **它使矩陣的次方運算變得極其簡單**。
 
-例如，假設你想計算 $A$ 的 $100$ 次方。直接計算 $A^{100}$ 的計算量大得驚人。但是，如果利用對角化：
+例如，假設你想計算 $A$ 的 $100$ 次方。直接計算 $A^{100}$ 的計算量大得驚人。但是，如果利用[對角化](/zh-tw/p/diagonalization-and-jordan-normal-form/)：
 
 $$
 A^{100} = (P D P^{-1})(P D P^{-1}) \dots (P D P^{-1}) = P D^{100} P^{-1}

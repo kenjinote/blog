@@ -9,7 +9,7 @@ tags: ["Problema dos Generais Bizantinos", "Blockchain", "Consenso", "Algoritmo"
 slug: "byzantine-generals-problem"
 ---
 
-Ao estudar sistemas distribuídos e tecnologia blockchain, um conceito que inevitavelmente se depara é o **Problema dos Generais Bizantinos** ([Byzantine Generals](https://kenji.blog/pt/p/byzantine-generals-problem-consensus/) Problem). Este aborda um tema extremamente importante: como um sistema como um todo pode formar um consenso correto numa situação em que existem "traidores" ou "nós defeituosos" na rede.
+Ao estudar [sistemas distribuídos](/pt/p/cap-theorem-distributed-systems-tradeoff/) e tecnologia [blockchain](/pt/p/blockchain-technology-smart-contract-distributed-ledger/), um conceito que inevitavelmente se depara é o **Problema dos Generais Bizantinos** ([Byzantine Generals](https://kenji.blog/pt/p/byzantine-generals-problem-consensus/) Problem). Este aborda um tema extremamente importante: como um sistema como um todo pode formar um consenso correto numa situação em que existem "traidores" ou "nós defeituosos" na rede.
 
 Neste artigo, explicaremos detalhadamente este **Problema dos Generais Bizantinos**, desde os fundamentos até as aplicações, incluindo histórias concretas, fórmulas matemáticas e diagramas.
 
@@ -121,7 +121,7 @@ Neste modelo, torna-se impossível adulterar as ordens emitidas pelo comandante 
 
 A resistência a este Problema dos Generais Bizantinos é designada por **Tolerância a Falhas Bizantinas** (Byzantine Fault Tolerance, BFT). É um indicador crucial de que um sistema distribuído pode resistir a falhas e ataques maliciosos e continuar a funcionar normalmente.
 
-O facto de este problema ter voltado a ganhar destaque deve-se ao surgimento da **tecnologia blockchain**. Uma vez que a blockchain é uma rede [P2P](https://kenji.blog/pt/p/webrtc-realtime-communication-p2p/) sem administrador central, existe a possibilidade de os participantes maliciosos (nós) transmitirem históricos de transações falsos. Este é exatamente o Problema dos Generais Bizantinos.
+O facto de este problema ter voltado a ganhar destaque deve-se ao surgimento da **tecnologia [blockchain](/pt/p/blockchain-technology-smart-contract-distributed-ledger/)**. Uma vez que a [blockchain](/pt/p/blockchain-technology-smart-contract-distributed-ledger/) é uma rede [P2P](https://kenji.blog/pt/p/webrtc-realtime-communication-p2p/) sem administrador central, existe a possibilidade de os participantes maliciosos (nós) transmitirem históricos de transações falsos. Este é exatamente o Problema dos Generais Bizantinos.
 
 ### Como funciona o PBFT (Practical Byzantine Fault Tolerance)
 
@@ -158,11 +158,11 @@ No Consenso Nakamoto, apenas aquele que vence a competição de cálculo matemá
 
 Embora o Consenso Nakamoto tenha sido revolucionário, apresentou o problema de consumir imensa energia para a mineração. Para resolver isso, surgiu o **Proof of Stake** (PoS), que atribui o direito de propor blocos consoante a quantidade de ativos criptográficos (stake) detida por um nó.
 
-A maioria dos algoritmos PoS modernos, como o Casper da Ethereum e o Tendermint da Cosmos, são projetados com base nesta BFT. O Tendermint, por exemplo, refina o conceito de PBFT mencionado acima, e forma consenso através de uma rede de "validadores (aprovadores)" que usam ponderação pelo valor do stake. A menos que mais de 2/3 dos validadores tenham assinado, o bloco seguinte não é gerado, o que é um excelente exemplo da condição $n \ge 3m + 1$ (menos de 1/3 de traidores) concretizada numa blockchain pública moderna.
+A maioria dos algoritmos PoS modernos, como o Casper da Ethereum e o Tendermint da Cosmos, são projetados com base nesta BFT. O Tendermint, por exemplo, refina o conceito de PBFT mencionado acima, e forma consenso através de uma rede de "validadores (aprovadores)" que usam ponderação pelo valor do stake. A menos que mais de 2/3 dos validadores tenham assinado, o bloco seguinte não é gerado, o que é um excelente exemplo da condição $n \ge 3m + 1$ (menos de 1/3 de traidores) concretizada numa [blockchain](/pt/p/blockchain-technology-smart-contract-distributed-ledger/) pública moderna.
 
 ## 5. Modelação Matemática e Aplicação da BFT
 
-No design de sistemas distribuídos mais avançados, as transições de estado do sistema são estritamente definidas para provar a validade do algoritmo BFT.
+No design de [sistemas distribuídos](/pt/p/cap-theorem-distributed-systems-tradeoff/) mais avançados, as transições de estado do sistema são estritamente definidas para provar a validade do algoritmo BFT.
 
 Por exemplo, seja $\mathcal{N} = \{1, 2, \dots, n\}$ o conjunto de nós e $f$ o número máximo de nós traidores. Num dado momento (round) $r$, cada nó $i$ detém um estado $s_i^{(r)}$ e efetua a troca de mensagens com os outros nós.
 
@@ -180,6 +180,6 @@ $$
 
 ## 6. Conclusão
 
-Este **Problema dos Generais Bizantinos** é uma teoria fundamental para garantir a fiabilidade dos sistemas distribuídos. A questão: "Num ambiente onde não se sabe em quem confiar, como se toma a decisão correta como um todo?", aplica-se a toda a infraestrutura de TI moderna, desde tecnologias basilares de ativos criptográficos a sistemas de controlo de aeronaves e computação na cloud.
+Este **Problema dos Generais Bizantinos** é uma teoria fundamental para garantir a fiabilidade dos [sistemas distribuídos](/pt/p/cap-theorem-distributed-systems-tradeoff/). A questão: "Num ambiente onde não se sabe em quem confiar, como se toma a decisão correta como um todo?", aplica-se a toda a infraestrutura de TI moderna, desde tecnologias basilares de ativos criptográficos a sistemas de controlo de aeronaves e computação na cloud.
 
-A evolução dos algoritmos para impedir a interrupção do sistema sob a premissa de que existem traidores não parará. Para engenheiros envolvidos na conceção de sistemas distribuídos, entender as provas matemáticas e os algoritmos por trás deste problema será uma arma muito forte.
+A evolução dos algoritmos para impedir a interrupção do sistema sob a premissa de que existem traidores não parará. [Para engenheiros](/pt/p/prompt-engineering-for-engineers/) envolvidos na conceção de [sistemas distribuídos](/pt/p/cap-theorem-distributed-systems-tradeoff/), entender as provas matemáticas e os algoritmos por trás deste problema será uma arma muito forte.

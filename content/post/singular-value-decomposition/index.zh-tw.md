@@ -28,9 +28,9 @@ $$A = U \Sigma V^T \quad (\text{矩陣的奇異值分解})$$
 
 ## 2. 與特徵值分解的區別
 
-對於方陣，特徵值分解 $A = P \[Lambda](https://kenji.blog/zh-tw/p/serverless-architecture-aws-lambda-cold-start/) P^{-1}$ 廣為人知。然而，特徵值分解有以下侷限性：
+對於方陣，[特徵值](/zh-tw/p/eigenvalues-and-eigenvectors/)分解 $A = P \[Lambda](https://kenji.blog/zh-tw/p/serverless-architecture-aws-lambda-cold-start/) P^{-1}$ 廣為人知。然而，[特徵值](/zh-tw/p/eigenvalues-and-eigenvectors/)分解有以下侷限性：
 - 只能應用於方陣（$n \times n$）。
-- 即使是方陣，也不總是可對角化的。
+- 即使是方陣，也不總是可[對角化](/zh-tw/p/diagonalization-and-jordan-normal-form/)的。
 
 另一方面， **奇異值分解** 始終存在於任何 $m \times n$ 矩陣中，即使它不是方陣。這也是 SVD 在資料分析中極為有用的原因之一。
 

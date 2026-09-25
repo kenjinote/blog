@@ -15,13 +15,13 @@ Em 2026, a evolução da IA generativa e dos Grandes Modelos de Linguagem (LLM) 
 
 Particularmente no ambiente Windows, a evolução do ecossistema de LLM local tem sido notável. Até poucos anos atrás, "Desenvolvimento e execução de IA significa Linux" era o senso comum, mas em 2026, o Windows se transformou em uma plataforma de IA extremamente poderosa e acessível.
 
-Neste artigo, com base nas últimas tendências tecnológicas de 2026, forneceremos um guia completo para construir, operar e otimizar LLMs locais em ambientes Windows. Explicaremos detalhadamente, com um volume esmagador, desde configurações simples com o Ollama para iniciantes, passando por otimizações extremas usando o llama.cpp para usuários avançados, até abordagens matemáticas para cálculo de VRAM, compreensão profunda da arquitetura e fine-tuning local.
+Neste artigo, com base nas últimas tendências tecnológicas de 2026, forneceremos um guia completo para construir, operar e otimizar LLMs locais em ambientes Windows. Explicaremos detalhadamente, com um volume esmagador, desde configurações simples com o Ollama [para iniciantes](/pt/p/produtos-de-couro%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/), passando por otimizações extremas usando o llama.cpp para usuários avançados, até abordagens matemáticas para cálculo de VRAM, compreensão profunda da arquitetura e fine-tuning local.
 
 ## 1.1 Tendências Tecnológicas de LLM Local em 2026
 
 As principais tendências que moldam o atual ecossistema de LLM local são as seguintes:
 
-1. **Adoção total do formato GGUF**: O GGUF (GPT-Generated Unified Format), que integra metadados e tensores em um único arquivo, tornou-se completamente o padrão de fato. Isso permite a execução em qualquer ambiente apenas baixando um único arquivo do Hugging Face.
+1. **Adoção total do formato [GGUF](/pt/p/llama-cpp-quantization-gguf/)**: O [GGUF](/pt/p/llama-cpp-quantization-gguf/) (GPT-Generated Unified Format), que integra metadados e tensores em um único arquivo, tornou-se completamente o padrão de fato. Isso permite a execução em qualquer ambiente apenas baixando um único arquivo do Hugging Face.
 2. **Democratização da arquitetura MoE (Mixture of Experts)**: Vários modelos MoE pequenos, porém de alto desempenho, foram lançados. Ao ativar apenas alguns especialistas durante a inferência, eles alcançam um desempenho comparável ao de modelos gigantes, mantendo a carga computacional baixa em PCs de consumo.
 3. **Abstração avançada e otimização de motores de inferência**: Ferramentas como Ollama, LM Studio e AnythingLLM foram refinadas, eliminando a necessidade de os usuários se preocuparem com dependências complexas, como a instalação de drivers CUDA. Além disso, o suporte nativo do FlashAttention 3 para Windows melhorou drasticamente a velocidade de inferência.
 4. **Utilização da NPU e a ascensão dos PCs Windows Copilot+**: Mesmo em laptops sem GPU, a tecnologia para executar pequenos LLMs (SLMs: Small Language Models) com baixo consumo de energia usando a NPU (Neural Processing Unit) integrada entrou em fase prática.
@@ -314,7 +314,7 @@ Abaixo, encontre os problemas comumente encontrados e suas soluções.
 
 # 10. Resumo e Perspectivas Futuras
 
-Em 2026, criar um ambiente local de [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) no Windows não é mais privilégio de apenas alguns engenheiros. Devido à padronização do formato GGUF, à ascensão de ecossistemas refinados como Ollama e LM Studio, e a otimizações de hardware como FlashAttention, qualquer pessoa pode obter um ambiente de IA corporativo com extrema facilidade.
+Em 2026, criar um ambiente local de [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) no Windows não é mais privilégio de apenas alguns engenheiros. Devido à padronização do formato [GGUF](/pt/p/llama-cpp-quantization-gguf/), à ascensão de ecossistemas refinados como Ollama e LM Studio, e a otimizações de hardware como FlashAttention, qualquer pessoa pode obter um ambiente de IA corporativo com extrema facilidade.
 
 Aproveite ao máximo os seguintes pontos detalhados neste artigo:
 

@@ -17,13 +17,13 @@ tags:
 
 Na sociedade moderna, estamos constantemente conectados a algo. Quer seja a comunicação entre computadores através da internet, as complexas relações humanas nas redes sociais (SNS), as vastas redes rodoviárias e ferroviárias que ligam as cidades, as cadeias de abastecimento globais para a logística, ou as inúmeras conexões neurais dentro dos nossos próprios cérebros – não é exagero dizer que o mundo é composto por inúmeras redes.
 
-Fornecendo uma estrutura poderosa para representar e analisar de forma simples e matematicamente rigorosa estas redes, que à primeira vista parecem altamente complexas e até caóticas, está a **Teoria dos Grafos** ([Graph Theory](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/)). Ao utilizar a teoria dos grafos, podemos desvendar as estruturas e propriedades ocultas em sistemas complexos, encontrar rotas de comunicação ideais e avaliar a vulnerabilidade de redes inteiras.
+Fornecendo uma estrutura poderosa para representar e analisar de forma simples e matematicamente rigorosa estas redes, que à primeira vista parecem altamente complexas e até caóticas, está a **[Teoria dos Grafos](/pt/p/graph-theory-dijkstra-a-star/)** ([Graph Theory](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/)). Ao utilizar a [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/), podemos desvendar as estruturas e propriedades ocultas em sistemas complexos, encontrar rotas de comunicação ideais e avaliar a vulnerabilidade de redes inteiras.
 
-Este artigo explicará de forma abrangente e sistemática a teoria dos grafos, começando por suas origens históricas, abrangendo definições matemáticas básicas e estruturas de dados para programação de computadores, e introduzindo algoritmos representativos que sustentam a base da tecnologia moderna.
+Este artigo explicará de forma abrangente e sistemática a [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/), começando por suas origens históricas, abrangendo definições matemáticas básicas e estruturas de dados para programação de computadores, e introduzindo algoritmos representativos que sustentam a base da tecnologia moderna.
 
 ## 2. O Nascimento da Teoria dos Grafos: [As Sete Pontes de Königsberg](https://kenji.blog/pt/p/seven-bridges-of-konigsberg/)
 
-A história da teoria dos grafos remonta ao século XVIII. Em 1736, o brilhante matemático suíço [Leonhard Euler](https://kenji.blog/pt/p/euler/) resolveu com elegância um famoso quebra-cabeças matemático, marcando o início deste campo. Este quebra-cabeças é conhecido como as "Sete Pontes de Königsberg".
+A história da [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/) remonta ao século XVIII. Em 1736, o brilhante matemático suíço [Leonhard Euler](https://kenji.blog/pt/p/euler/) resolveu com elegância um famoso quebra-cabeças matemático, marcando o início deste campo. Este quebra-cabeças é conhecido como as "Sete Pontes de Königsberg".
 
 Na bela cidade de Königsberg, no Reino da Prússia (atual Kaliningrado, Rússia), fluía o rio Pregel, com duas ilhas no meio e um total de sete pontes que as ligavam às margens do rio. Um jogo tornou-se popular entre os cidadãos: "É possível atravessar cada ponte exatamente uma vez e voltar ao ponto de partida original?" Muitas pessoas tentaram, mas ninguém teve sucesso.
 
@@ -44,11 +44,11 @@ Euler percebeu que para "passar através" de um ponto, deve haver sempre um par 
 
 No grafo abstrato das pontes de Königsberg, o número de pontes conectadas a todas as quatro massas de terra (pontos) era "ímpar" (3 ou 5). Portanto, concluiu-se que é impossível traçar uma linha contínua cruzando todas as pontes exatamente uma vez.
 
-Esta descoberta de Euler foi o momento exato em que a **Teoria dos Grafos** nasceu. Ao descartar o complexo terreno físico e concentrar-se apenas nas relações de conexão (topologia) de pontos e linhas, ele abriu um campo da matemática totalmente novo.
+Esta descoberta de Euler foi o momento exato em que a **[Teoria dos Grafos](/pt/p/graph-theory-dijkstra-a-star/)** nasceu. Ao descartar o complexo terreno físico e concentrar-se apenas nas relações de conexão (topologia) de pontos e linhas, ele abriu um campo da matemática totalmente novo.
 
 ## 3. Conceitos Básicos e Definições Matemáticas da Teoria dos Grafos
 
-Na teoria dos grafos, um "grafo" não se refere a métodos de visualização de dados estatísticos como gráficos de linhas ou de pizza. Refere-se a uma estrutura matemática que representa um conjunto de objetos e as relações entre eles.
+Na [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/), um "grafo" não se refere a métodos de visualização de dados estatísticos como gráficos de linhas ou de pizza. Refere-se a uma estrutura matemática que representa um conjunto de objetos e as relações entre eles.
 
 ### 3.1. Estrutura Básica de um Grafo: Vértices e Arestas
 
@@ -105,7 +105,7 @@ Além disso, se sempre houver um caminho entre quaisquer dois vértices arbitrá
 
 ## 4. Estruturas de Dados para Lidar com Grafos em Computadores
 
-Para implementar os conceitos matemáticos da teoria dos grafos como programas e fazer com que os computadores os calculem rapidamente, é necessário representar grafos na memória usando estruturas de dados apropriadas. Na prática, dois métodos principais são usados: "Matriz de Adjacência" e "Lista de Adjacência".
+Para implementar os conceitos matemáticos da [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/) como programas e fazer com que os computadores os calculem rapidamente, é necessário representar grafos na memória usando estruturas de dados apropriadas. Na prática, dois métodos principais são usados: "Matriz de Adjacência" e "Lista de Adjacência".
 
 ### 4.1. Matriz de Adjacência (Adjacency Matrix)
 
@@ -120,7 +120,7 @@ A_{i,j} = \begin{cases}
 \end{cases}
 $$
 
-*   **Prós**: É possível determinar imediatamente se existe uma aresta entre quaisquer dois vértices em $\mathcal{O}(1)$ (tempo constante). Também se vincula diretamente à análise algébrica de grafos (como a teoria espectral de grafos) usando multiplicação de matrizes.
+*   **Prós**: É possível determinar imediatamente se existe uma aresta entre quaisquer dois vértices em $\mathcal{O}(1)$ (tempo constante). Também se vincula diretamente à análise algébrica de grafos (como a [teoria espectral de grafos](/pt/p/spectral-graph-theory/)) usando multiplicação de matrizes.
 *   **Contras**: O consumo de memória é de $\mathcal{O}(N^2)$ para o número de vértices $N$, o que esgotará a memória para grafos gigantes. Particularmente para **Grafos Esparsos (Sparse Graphs)**, onde o número de arestas é muito pequeno em comparação com o quadrado do número de vértices, a maior parte da matriz se torna $0$, tornando-o altamente ineficiente.
 
 ### 4.2. Lista de Adjacência (Adjacency List)
@@ -260,7 +260,7 @@ Cada aresta (tubo ou cabo) que compõe a rede tem uma "Capacidade (Capacity)" es
 
 ## 6. Grafos Bipartidos e Problemas de Emparelhamento
 
-Ocupando uma posição única dentro da teoria dos grafos está o **Grafo Bipartido (Bipartite [Graph](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))**. Um grafo bipartido é um grafo onde, quando todos os vértices são divididos em dois grupos (por exemplo, grupo $U$ e grupo $V$), todas as arestas ligam sempre um vértice em $U$ e um vértice em $V$, e não há absolutamente nenhuma aresta que ligue vértices dentro do mesmo grupo.
+Ocupando uma posição única dentro da [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/) está o **Grafo Bipartido (Bipartite [Graph](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))**. Um grafo bipartido é um grafo onde, quando todos os vértices são divididos em dois grupos (por exemplo, grupo $U$ e grupo $V$), todas as arestas ligam sempre um vértice em $U$ e um vértice em $V$, e não há absolutamente nenhuma aresta que ligue vértices dentro do mesmo grupo.
 
 Os grafos bipartidos são ideais para modelar relações entre dois conjuntos com propriedades diferentes, tais como "candidatos a emprego" e "empresas de recrutamento", "estudantes" e "laboratórios", ou "táxis" e "passageiros".
 
@@ -268,7 +268,7 @@ Um dos problemas mais importantes em grafos bipartidos é o **Problema de Empare
 
 ## 7. Aplicações da Teoria dos Grafos na Sociedade Moderna
 
-A teoria dos grafos não se restringe à matemática abstrata num quadro; ela é utilizada numa grande variedade de domínios como uma tecnologia de infraestrutura que suporta fundamentalmente o nosso dia a dia.
+A [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/) não se restringe à matemática abstrata num quadro; ela é utilizada numa grande variedade de domínios como uma tecnologia de infraestrutura que suporta fundamentalmente o nosso dia a dia.
 
 ### 7.1. Motores de Busca e o Algoritmo PageRank
 
@@ -281,7 +281,7 @@ Na base do PageRank está a ideia de avaliação recursiva de que "uma página p
 
 ### 7.2. Análise Estrutural de Redes Sociais
 
-Plataformas de SNS, como Twitter, Facebook, LinkedIn e Instagram, formam enormes **Grafos Sociais (Social Graphs)** que expressam as ligações entre as pessoas, ou entre as pessoas e o conteúdo. Aplicando a teoria dos grafos, a estrutura das grandes comunidades pode ser analisada com precisão.
+Plataformas de SNS, como Twitter, Facebook, LinkedIn e Instagram, formam enormes **Grafos Sociais (Social Graphs)** que expressam as ligações entre as pessoas, ou entre as pessoas e o conteúdo. Aplicando a [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/), a estrutura das grandes comunidades pode ser analisada com precisão.
 
 Por exemplo, para responder à questão "Quem é a figura central (influenciador) com mais influência em toda a rede?", usa-se o conceito de **Centralidade (Centrality)**. Ao calcular várias métricas, tais como a "centralidade de grau", baseada no simples número de arestas ligadas a um vértice, a "centralidade de intermediação" (betweenness), que mede a frequência com que se aparece nos caminhos mais curtos da rede, e a "centralidade de proximidade" (closeness), que avalia a facilidade de acesso a todos os outros vértices, são realizadas atividades como a identificação de influenciadores, a previsão de rotas de difusão de informações e a detecção de fenómenos de câmara de eco.
 
@@ -295,8 +295,8 @@ As GNNs ultrapassaram esta barreira ao propagar e aprender simultaneamente as in
 
 ## 8. Conclusão e Perspetivas Futuras
 
-Neste artigo, traçámos como a **Teoria dos Grafos**, nascida de um simples quebra-cabeças em Königsberg no século XVIII, evoluiu para se tornar a "ferramenta definitiva" para desvendar as redes extremamente complexas da sociedade moderna.
+Neste artigo, traçámos como a **[Teoria dos Grafos](/pt/p/graph-theory-dijkstra-a-star/)**, nascida de um simples quebra-cabeças em Königsberg no século XVIII, evoluiu para se tornar a "ferramenta definitiva" para desvendar as redes extremamente complexas da sociedade moderna.
 
-Embora os grafos sejam compostos apenas pelos elementos mais simples e abstratos possíveis: pontos (vértices) e linhas (arestas), o mundo das teorias matemáticas e dos algoritmos de cálculo que lhes são aplicados é tão profundo como o universo e encerra um poder avassalador. Para engenheiros de software, cientistas de dados ou qualquer pessoa interessada em sistemas complexos, o conhecimento sistemático da teoria dos grafos melhorará exponencialmente a capacidade de abstração de alto nível perante problemas difíceis e o pensamento lógico para derivar as soluções ideais.
+Embora os grafos sejam compostos apenas pelos elementos mais simples e abstratos possíveis: pontos (vértices) e linhas (arestas), o mundo das teorias matemáticas e dos algoritmos de cálculo que lhes são aplicados é tão profundo como o universo e encerra um poder avassalador. [Para engenheiros](/pt/p/prompt-engineering-for-engineers/) de software, cientistas de dados ou qualquer pessoa interessada em sistemas complexos, o conhecimento sistemático da [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/) melhorará exponencialmente a capacidade de abstração de alto nível perante problemas difíceis e o pensamento lógico para derivar as soluções ideais.
 
-Se estiver a aprender programação, utilize este artigo como trampolim e tente efetivamente codificar e executar no seu próprio computador algoritmos como o de [Dijkstra](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/) ou a busca em largura. Quando experienciar o processo em que redes invisíveis e complexas são desvendadas de forma vívida através do código que escreveu, compreenderá verdadeiramente a autêntica beleza e o fascínio da teoria dos grafos. O mundo está cheio de grafos mais belos e computáveis do que poderia pensar.
+Se estiver a aprender programação, utilize este artigo como trampolim e tente efetivamente codificar e executar no seu próprio computador algoritmos como o de [Dijkstra](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/) ou a busca em largura. Quando experienciar o processo em que redes invisíveis e complexas são desvendadas de forma vívida através do código que escreveu, compreenderá verdadeiramente a autêntica beleza e o fascínio da [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/). O mundo está cheio de grafos mais belos e computáveis do que poderia pensar.

@@ -43,7 +43,7 @@ graph TD;
 
 ## Historical Background: From Gauss's Conjecture to Proof
 
-The history of the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/) dates back to the late 18th century. The 15-year-old genius mathematician Carl Friedrich Gauss, while looking at a table of prime numbers, noticed that the frequency of prime numbers is related to a logarithmic function. Around the same time, [Adrien-Marie Legendre](https://kenji.blog/en/p/legendre/) independently formulated a similar conjecture.
+The history of the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/) dates back to the late 18th century. The 15-year-old genius mathematician [Carl Friedrich Gauss](/en/p/gauss/), while looking at a table of prime numbers, noticed that the frequency of prime numbers is related to a logarithmic function. Around the same time, [Adrien-Marie Legendre](https://kenji.blog/en/p/legendre/) independently formulated a similar conjecture.
 
 However, they could not strictly prove this.
 

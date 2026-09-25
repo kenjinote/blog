@@ -29,7 +29,7 @@ De la misma manera que se cambia madera podrida por madera nueva, los módulos a
 
 ### Patrón Strangler Fig (Strangler Fig Pattern)
 
-Un patrón arquitectónico representativo en el reemplazo de sistemas es el **Patrón Strangler Fig**. Este es un método en el que un sistema heredado grande y complejo (monolito) no se reemplaza todo a la vez, sino que las funciones se migran gradualmente a un nuevo sistema (por ejemplo, microservicios).
+Un patrón arquitectónico representativo en el reemplazo de sistemas es el **Patrón Strangler Fig**. Este es un método en el que un sistema heredado grande y complejo (monolito) no se reemplaza todo a la vez, sino que las funciones se migran gradualmente a un nuevo sistema (por ejemplo, [microservicios](/es/p/microservices-architecture-bff-api-gateway/)).
 
 ```mermaid
 graph LR

@@ -77,8 +77,8 @@ Edge AI에서는 네트워크 전송이 수반되지 않으므로 $T_{network\_u
   Google이 제공하는 Edge TPU는 매우 소형이면서도 강력한 추론 능력을 갖춘 보조 프로세서입니다. 불과 2W의 소비 전력으로 4 TOPS (Tera Operations Per Second: 1초당 4조 번의 연산)의 성능을 발휘합니다. 이를 통해 Raspberry Pi와 같은 경량 SBC(싱글 보드 컴퓨터)에 USB로 연결하는 것만으로, 모바일에 최적화된 TensorFlow Lite 모델을 실시간으로 실행 가능하게 합니다.
 - **Raspberry Pi AI Kit (Hailo-8L 탑재)**:
   최근 출시된 Raspberry Pi AI Kit은 Hailo사의 AI 가속기 'Hailo-8L'을 탑재하고 있습니다. Hailo의 아키텍처는 신경망 구조를 칩의 하드웨어 구조에 매핑함으로써 메모리 접근 병목 현상을 해소하고, 수 와트의 전력 한도 내에서 최대 13 TOPS라는 경이로운 추론 성능을 구현합니다.
-- **NVIDIA Jetson 시리즈**:
-  Jetson Nano, Xavier, Orin 시리즈는 ARM CPU와 NVIDIA의 강력한 GPU 코어를 통합한 SoC입니다. CUDA 생태계를 그대로 활용할 수 있기 때문에, 클라우드에서 학습시킨 PyTorch나 TensorFlow 모델을 TensorRT를 통해 에지에 배포하는 것이 매우 쉽습니다.
+- **[NVIDIA](/ko/p/history-of-nvidia/) Jetson 시리즈**:
+  Jetson Nano, Xavier, Orin 시리즈는 ARM CPU와 [NVIDIA](/ko/p/history-of-nvidia/)의 강력한 GPU 코어를 통합한 SoC입니다. CUDA 생태계를 그대로 활용할 수 있기 때문에, 클라우드에서 학습시킨 PyTorch나 TensorFlow 모델을 TensorRT를 통해 에지에 배포하는 것이 매우 쉽습니다.
 
 ### TOPS와 전력 효율 (TOPS/W)
 Edge AI 하드웨어를 평가할 때 가장 중요한 지표는 'TOPS/W(1와트당 TOPS)'입니다. IoT 디바이스는 배터리 구동이나 PoE(Power over Ethernet) 등 엄격한 전력 제약 조건에서 가동되기 때문에, 단순한 연산 성능(TOPS)뿐만 아니라 얼마나 적은 전력 정력으로 AI 추론을 수행할 수 있는지가 핵심이 됩니다.
@@ -241,8 +241,8 @@ Edge AI는 이미 다양한 산업 분야에서 실용화되어 극적인 패러
 
 Edge AI 기술은 급속도로 발전하고 있지만 여전히 많은 과제와 흥미로운 미래 전망이 존재합니다.
 
-**1. 에지에서의 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)(대규모 언어 모델) 구동**:
-최근 가장 큰 화두는 생성형 AI나 LLM을 에지에서 구동하는 'Edge LLM' 시도입니다. 수백억 개의 파라미터를 가진 모델을 그대로 에지에 올리는 것은 불가능하지만, llama.cpp와 같은 최적화 프레임워크나 4비트/2비트의 극한 양자화(AWQ, GPTQ 등), 나아가 Microsoft의 Phi-3 같은 작고 고성능인 SLM(Small Language Models)의 등장으로 스마트폰이나 Raspberry Pi 상에서도 자연어 처리가 오프라인으로 완결되는 시대가 오고 있습니다.
+**1. 에지에서의 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)([대규모 언어 모델](/ko/p/large-language-models-llm-transformer-prompt-engineering/)) 구동**:
+최근 가장 큰 화두는 생성형 AI나 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 에지에서 구동하는 'Edge [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)' 시도입니다. 수백억 개의 파라미터를 가진 모델을 그대로 에지에 올리는 것은 불가능하지만, llama.cpp와 같은 최적화 프레임워크나 4비트/2비트의 극한 양자화(AWQ, GPTQ 등), 나아가 Microsoft의 Phi-3 같은 작고 고성능인 SLM(Small Language Models)의 등장으로 스마트폰이나 Raspberry Pi 상에서도 자연어 처리가 오프라인으로 완결되는 시대가 오고 있습니다.
 
 **2. 뉴로모픽 컴퓨팅과 SNN**:
 궁극의 저전력 Edge AI로 기대되는 것이 인간 두뇌의 신경 회로망 작동을 물리적으로 모방한 '뉴로모픽 칩(예: Intel Loihi)'과 '스파이킹 신경망(SNN: Spiking Neural Network)'입니다. SNN은 데이터가 변화한 시점(스파이크)에서만 계산이 이루어지는 이벤트 기반 방식이기 때문에 기존 딥러닝 모델과 비교해 소비 전력을 자릿수가 다르게(수십 분의 1에서 수백 분의 1까지) 줄이는 것이 이론상 가능하다고 알려져 있습니다.

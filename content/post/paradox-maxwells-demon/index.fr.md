@@ -95,7 +95,7 @@ Léon Brillouin a davantage concrétisé l'idée de Szilard. Il a considéré qu
 
 Pour voir des molécules dans une boîte sombre, il faut utiliser des photons ayant une énergie supérieure à celle du rayonnement du corps noir (rayonnement thermique) de fond. En calculant la consommation d'énergie pour cet « éclairage » et la production d'entropie due à la diffusion des photons, il a été prouvé que l'augmentation de l'entropie causée par l'utilisation de la lumière est toujours supérieure à l'information acquise par le démon (la diminution de l'entropie par le tri des molécules).
 
-Avec cela, le démon de Maxwell semblait avoir été définitivement enterré. L'explication selon laquelle « l'entropie augmente parce qu'on utilise de la lumière pour voir les molécules » était intuitive, facile à comprendre, et a été incluse dans de nombreux manuels.
+Avec cela, [le démon de Maxwell](/fr/p/maxwells-demon/) semblait avoir été définitivement enterré. L'explication selon laquelle « l'entropie augmente parce qu'on utilise de la lumière pour voir les molécules » était intuitive, facile à comprendre, et a été incluse dans de nombreux manuels.
 
 Cependant, le combat n'était pas encore terminé.
 
@@ -141,11 +141,11 @@ Le démon libéré par Maxwell au 19ème siècle a finalement été vaincu plus 
 
 # Chapitre 4 : Les démons à l'époque moderne (réalisations expérimentales et applications)
 
-Le démon de Maxwell n'est plus une simple « expérience de pensée ». Au 21ème siècle, grâce aux progrès spectaculaires des nanotechnologies et des technologies de l'information quantique, les scientifiques sont désormais capables de créer de véritables « démons de Maxwell artificiels » en laboratoire, permettant de vérifier le principe de Landauer et les lois de la thermodynamique de l'information.
+[Le démon de Maxwell](/fr/p/maxwells-demon/) n'est plus une simple « expérience de pensée ». Au 21ème siècle, grâce aux progrès spectaculaires des nanotechnologies et des technologies de l'information quantique, les scientifiques sont désormais capables de créer de véritables « démons de Maxwell artificiels » en laboratoire, permettant de vérifier le principe de Landauer et les lois de la thermodynamique de l'information.
 
 ## Le démon en laboratoire
 
-En 2010, le Dr Takahiro Sagawa (aujourd'hui professeur à l'Université de Tokyo) et le Dr Masahito Ueda de l'Université de Chuo ont dérivé une équation généralisée pour la « thermodynamique de l'information » (l'équation Sagawa-Ueda), formulant de manière rigoureuse la relation entre l'information et l'entropie. Suite à cela, des expériences simulant le moteur de Szilard et le démon de Maxwell à l'aide de particules nanométriques ou d'électrons uniques ont été menées dans des laboratoires du monde entier.
+En 2010, le Dr Takahiro Sagawa (aujourd'hui professeur à l'Université de Tokyo) et le Dr Masahito Ueda de l'Université de Chuo ont dérivé une équation généralisée pour la « thermodynamique de l'information » (l'équation Sagawa-Ueda), formulant de manière rigoureuse la relation entre l'information et l'entropie. Suite à cela, des expériences simulant le moteur de Szilard et [le démon de Maxwell](/fr/p/maxwells-demon/) à l'aide de particules nanométriques ou d'électrons uniques ont été menées dans des laboratoires du monde entier.
 
 Ces expériences ont prouvé expérimentalement qu'« il est possible de convertir l'énergie thermique en travail en utilisant l'information ». Bien sûr, si l'on prend en compte la production totale d'entropie impliquée dans le traitement et l'effacement de l'information, la deuxième loi de la thermodynamique n'est pas violée, mais il a été démontré que dans les systèmes microscopiques, il est possible d'utiliser « l'information » comme une sorte de « carburant » pour obtenir de l'énergie motrice.
 
@@ -154,13 +154,13 @@ Ces expériences ont prouvé expérimentalement qu'« il est possible de convert
 Fait intéressant, il existe de nombreux mécanismes très similaires au « démon de Maxwell » dans les systèmes biologiques.
 Par exemple, les protéines motrices comme la « kinésine » et la « dynéine », qui transportent des substances à l'intérieur des cellules. L'intérieur d'une cellule est balayé par une tempête de mouvements thermiques moléculaires (mouvement brownien), mais ces protéines motrices utilisent l'hydrolyse de l'ATP comme source d'énergie tout en exploitant habilement les fluctuations thermiques environnantes (mouvements aléatoires) pour générer un mouvement ordonné unidirectionnel.
 
-C'est ce qu'on appelle le mécanisme de cliquet brownien, un dispositif au niveau moléculaire similaire au démon de Maxwell. La vie, tout en acceptant pleinement les contraintes thermodynamiques auxquelles le démon de Maxwell est confronté, traite habilement l'information microscopique pour maintenir un « ordre » qui semble défier la loi de l'augmentation de l'entropie. La phrase « se nourrir d'entropie négative pour vivre » utilisée par Schrödinger dans son livre « Qu'est-ce que la vie ? » suggérait précisément ce lien entre l'information et la thermodynamique.
+C'est ce qu'on appelle le mécanisme de cliquet brownien, un dispositif au niveau moléculaire similaire au démon de Maxwell. La vie, tout en acceptant pleinement les contraintes thermodynamiques auxquelles [le démon de Maxwell](/fr/p/maxwells-demon/) est confronté, traite habilement l'information microscopique pour maintenir un « ordre » qui semble défier la loi de l'augmentation de l'entropie. La phrase « se nourrir d'entropie négative pour vivre » utilisée par Schrödinger dans son livre « Qu'est-ce que la vie ? » suggérait précisément ce lien entre l'information et la thermodynamique.
 
 ---
 
 # Conclusion : Ce que le démon nous a appris
 
-Le démon de Maxwell n'a pas réussi à briser la deuxième loi de la thermodynamique. Cependant, la physique a tiré d'immenses bénéfices de l'existence de ce démon.
+[Le démon de Maxwell](/fr/p/maxwells-demon/) n'a pas réussi à briser la deuxième loi de la thermodynamique. Cependant, la physique a tiré d'immenses bénéfices de l'existence de ce démon.
 
 1. **Établissement de la mécanique statistique** : La perspective pressentie par Maxwell et Boltzmann, selon laquelle « les lois macroscopiques (thermodynamique) découlent du comportement statistique des particules microscopiques », s'est établie.
 2. **Matérialisation de l'information** : L'« information » a été intégrée aux lois physiques par Szilard, Landauer, Bennett et d'autres. Cela a révélé les limites physiques de la consommation d'énergie des ordinateurs.

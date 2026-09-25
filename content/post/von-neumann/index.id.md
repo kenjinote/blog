@@ -11,7 +11,7 @@ tags: ['John von Neumann', 'Mekanika Kuantum', 'Teori Permainan', 'Ilmu Komputer
 
 ## 1. Pengantar
 
-John von Neumann (1903–1957) adalah seorang ahli matematika jenius yang mewakili abad ke-20 dan memiliki dampak yang tak terukur pada semua bidang sains modern. Pencapaiannya jauh melampaui matematika murni, meluas ke mekanika kuantum, teori permainan, ilmu komputer, ekonomi, meteorologi, dan bahkan pengembangan bom atom. Karena kemampuan perhitungan dan pemikiran logisnya yang luar biasa, orang-orang sezamannya takut dan menghormatinya, memanggilnya "Otak Iblis" dan "Orang Mars".
+John von Neumann (1903–1957) adalah seorang ahli matematika jenius yang mewakili abad ke-20 dan memiliki dampak yang tak terukur pada semua bidang sains modern. Pencapaiannya jauh melampaui matematika murni, meluas ke mekanika kuantum, teori permainan, ilmu komputer, ekonomi, meteorologi, dan bahkan pengembangan bom atom. Karena kemampuan perhitungan dan pemikiran logisnya yang luar biasa, orang-orang sezamannya takut dan menghormatinya, memanggilnya "[Otak Iblis](/id/p/biography-john-von-neumann/)" dan "Orang Mars".
 
 Artikel ini akan menjelaskan secara rinci kehidupan von Neumann, pencapaiannya yang luar biasa, dan banyak anekdot yang ditinggalkannya. Mari kita jelajahi secara mendalam pemikiran seperti apa yang dia miliki dan bagaimana dia membangun fondasi masyarakat modern. Menelusuri jejak langkahnya tidak lain adalah menelusuri sejarah perkembangan sains modern itu sendiri.
 
@@ -23,7 +23,7 @@ Pada saat itu, Budapest adalah pusat budaya dan keilmuan global, menghasilkan ba
 
 ## 3. Kontribusi pada Fondasi Matematika: Teori Himpunan Aksiomatik
 
-Salah satu pencapaian awal von Neumann yang paling penting adalah penelitiannya tentang aksiomatisasi teori himpunan. Teori himpunan, yang didirikan oleh [Georg Cantor](https://kenji.blog/id/p/cantor/), diharapkan menjadi fondasi matematika, tetapi menghadapi kontradiksi logis (paradoks) seperti paradoks Russell. Untuk menyelesaikan masalah ini, Ernst Zermelo, Adolf Fraenkel, dan lainnya membangun teori himpunan aksiomatik, tetapi von Neumann mengambil pendekatan yang berbeda.
+Salah satu pencapaian awal von Neumann yang paling penting adalah penelitiannya tentang aksiomatisasi teori himpunan. Teori himpunan, yang didirikan oleh [Georg Cantor](https://kenji.blog/id/p/cantor/), diharapkan menjadi fondasi matematika, tetapi menghadapi kontradiksi logis (paradoks) seperti [paradoks Russell](/id/p/russells-paradox/). Untuk menyelesaikan masalah ini, Ernst Zermelo, Adolf Fraenkel, dan lainnya membangun teori himpunan aksiomatik, tetapi von Neumann mengambil pendekatan yang berbeda.
 
 Ia memperkenalkan konsep "kelas" dan dengan cemerlang menghindari paradoks dengan membedakan secara ketat antara himpunan normal dan kelas yang terlalu besar untuk menjadi himpunan (kelas sebenarnya). Sistem ini kemudian disempurnakan oleh Paul Bernays dan [Kurt Gödel](https://kenji.blog/id/p/godel/), dan sekarang dikenal sebagai **teori himpunan von Neumann-Bernays-Gödel** (teori himpunan NBG).
 
@@ -89,7 +89,7 @@ Von Neumann berpartisipasi dalam proyek pengembangan EDVAC di Universitas Pennsy
 
 ## 7. [Automata](https://kenji.blog/id/p/automata-formal-language-theory/) Seluler dan Teori Mesin yang Berkembang Biak Sendiri
 
-Pada tahun-tahun terakhirnya, von Neumann menaruh minat yang kuat dalam memodelkan secara matematis mekanisme reproduksi biologis. Atas saran rekannya Stanislaw Ulam, ia merancang konsep **automata seluler**, di mana ruang dibagi menjadi kisi, dan setiap sel kisi mengubah keadaannya menurut aturan tertentu.
+Pada tahun-tahun terakhirnya, von Neumann menaruh minat yang kuat dalam memodelkan secara matematis mekanisme reproduksi biologis. Atas saran rekannya Stanislaw Ulam, ia merancang konsep **[automata](/id/p/automata-formal-language-theory/) seluler**, di mana ruang dibagi menjadi kisi, dan setiap sel kisi mengubah keadaannya menurut aturan tertentu.
 
 Menggunakan sel dengan 29 keadaan, ia secara ketat membuktikan bahwa mesin yang dapat berkembang biak sendiri (konstruktor universal) secara teoritis dimungkinkan. Ini sebelum penemuan struktur heliks ganda DNA, dan dapat dikatakan bahwa ia memprediksi mekanisme genetik dan sistem transmisi informasi kehidupan dari perspektif ilmu informasi. Setelah kematiannya, teori ini mengarah pada penelitian kehidupan buatan.
 
@@ -137,7 +137,7 @@ Berikut adalah garis waktu terperinci yang merangkum kehidupan dan pencapaian ut
 * **1943**: Berpartisipasi dalam Proyek Manhattan, memimpin perhitungan lensa peledak.
 * **1944**: Menerbitkan "Teori Permainan dan Perilaku Ekonomi."
 * **1945**: Menulis "Draf Pertama Laporan tentang EDVAC," mengusulkan konsep program tersimpan.
-* **1948**: Mengumumkan teori automata seluler dan konsep mesin yang berkembang biak sendiri.
+* **1948**: Mengumumkan teori [automata](/id/p/automata-formal-language-theory/) seluler dan konsep mesin yang berkembang biak sendiri.
 * **1951**: Menjadi presiden American Mathematical Society.
 * **1954**: Diangkat sebagai anggota Komisi Energi Atom Amerika Serikat.
 * **1955**: Didiagnosis menderita kanker tulang (atau kanker pankreas) dan memulai pertempuran dengan penyakit tersebut.
@@ -145,5 +145,5 @@ Berikut adalah garis waktu terperinci yang merangkum kehidupan dan pencapaian ut
 
 ## 12. Kesimpulan
 
-John von Neumann meninggal pada tahun 1957 di usia muda 53 tahun karena kanker. Namun, warisan intelektual yang ditinggalkannya masih bertahan kuat hingga saat ini sebagai fondasi matematika, fisika, ekonomi, dan teknologi informasi modern. Dari ponsel pintar dan komputer yang kita gunakan setiap hari hingga teknologi kecerdasan buatan (AI) mutakhir dan metode analisis dalam ilmu sosial, sekilas tentang "Otak Iblis" von Neumann dapat dilihat di mana-mana. Merefleksikan kehidupannya membuat kita sekali lagi menyadari kemungkinan tak terbatas dari kecerdasan manusia dan besarnya dampaknya terhadap dunia. Dalam sejarah umat manusia, tidak ada orang lain yang menyebabkan perubahan paradigma mendasar dalam berbagai bidang seluas dia.
+John von Neumann meninggal pada tahun 1957 di usia muda 53 tahun karena kanker. Namun, warisan intelektual yang ditinggalkannya masih bertahan kuat hingga saat ini sebagai fondasi matematika, fisika, ekonomi, dan teknologi informasi modern. Dari ponsel pintar dan komputer yang kita gunakan setiap hari hingga teknologi kecerdasan buatan (AI) mutakhir dan metode analisis dalam ilmu sosial, sekilas tentang "[Otak Iblis](/id/p/biography-john-von-neumann/)" von Neumann dapat dilihat di mana-mana. Merefleksikan kehidupannya membuat kita sekali lagi menyadari kemungkinan tak terbatas dari kecerdasan manusia dan besarnya dampaknya terhadap dunia. Dalam sejarah umat manusia, tidak ada orang lain yang menyebabkan perubahan paradigma mendasar dalam berbagai bidang seluas dia.
 

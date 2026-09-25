@@ -148,11 +148,11 @@ Les accomplissements de [Fibonacci](https://kenji.blog/fr/p/fibonacci/) ne se so
 
 ### "Liber Quadratorum" (Le livre des carrés)
 
-Écrit en 1225, ce livre est un traité avancé sur les équations diophantiennes (équations cherchant des solutions entières). Il explore le concept de "nombres congruents" et montre des aperçus profonds sur le théorème de Pythagore. Il est hautement considéré comme le plus grand chef-d'œuvre de la théorie des nombres dans l'Europe médiévale.
+Écrit en 1225, ce livre est un traité avancé sur les équations diophantiennes (équations cherchant des solutions entières). Il explore le concept de "nombres congruents" et montre des aperçus profonds sur le théorème de [Pythagore](/fr/p/pythagoras/). Il est hautement considéré comme le plus grand chef-d'œuvre de la théorie des nombres dans l'Europe médiévale.
 
 ### "Practica Geometriae" (Géométrie pratique)
 
-Rédigé en 1220, ce livre détaille l'arpentage et la géométrie. Il a fourni des méthodes rigoureuses pour calculer la surface et le volume, et des applications pratiques des principes de la géométrie euclidienne grecque antique, en faisant une ressource précieuse pour les ingénieurs et les arpenteurs de l'époque.
+Rédigé en 1220, ce livre détaille l'arpentage et la géométrie. Il a fourni des méthodes rigoureuses pour calculer la surface et le volume, et des applications pratiques des principes de la géométrie euclidienne grecque antique, en faisant une ressource précieuse [pour les ingénieurs](/fr/p/prompt-engineering-for-engineers/) et les arpenteurs de l'époque.
 
 ## La société moderne et l'héritage de [Fibonacci](https://kenji.blog/fr/p/fibonacci/)
 
@@ -160,7 +160,7 @@ Les découvertes de [Fibonacci](https://kenji.blog/fr/p/fibonacci/), qui a vécu
 
 ### Applications en informatique
 
-Dans les algorithmes informatiques, la suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/) est très utile. L'algorithme appelé "recherche de Fibonacci" peut rechercher des données plus efficacement que la recherche binaire dans des conditions spécifiques. De plus, une structure de données connue sous le nom de "tas de Fibonacci" est indispensable pour accélérer les algorithmes de la théorie des graphes comme l'algorithme de [Dijkstra](https://kenji.blog/fr/p/graph-theory-dijkstra-a-star/).
+Dans les algorithmes informatiques, la suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/) est très utile. L'algorithme appelé "recherche de Fibonacci" peut rechercher des données plus efficacement que la recherche binaire dans des conditions spécifiques. De plus, une structure de données connue sous le nom de "tas de Fibonacci" est indispensable pour accélérer les algorithmes de la [théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/) comme l'algorithme de [Dijkstra](https://kenji.blog/fr/p/graph-theory-dijkstra-a-star/).
 
 ### Retracement de [Fibonacci](https://kenji.blog/fr/p/fibonacci/) sur les marchés financiers
 

@@ -95,4 +95,4 @@ Si le nombre d'utilisateurs devient trop important, des « effets de réseau né
 
 Bien qu'il s'agisse d'un modèle simplifié, la loi de Metcalfe décrit parfaitement la dynamique du « gagnant rafle tout » (Winner-takes-all) des plateformes.
 
-Les dirigeants d'entreprises et les entrepreneurs doivent toujours placer la manière dont leurs produits créent des effets de réseau, et la rapidité avec laquelle ils peuvent franchir la masse critique, au cœur de leur conception. Même à l'ère de l'IA et de la blockchain (Web3), la manière dont les nœuds se connectent et échangent de la valeur repose toujours, silencieusement mais puissamment, sur la loi de Metcalfe.
+Les dirigeants d'entreprises et les entrepreneurs doivent toujours placer la manière dont leurs produits créent des effets de réseau, et la rapidité avec laquelle ils peuvent franchir la masse critique, au cœur de leur conception. Même à l'ère de l'IA et de la [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/) (Web3), la manière dont les nœuds se connectent et échangent de la valeur repose toujours, silencieusement mais puissamment, sur la loi de Metcalfe.

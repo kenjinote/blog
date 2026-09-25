@@ -72,7 +72,7 @@ This is the most standard configuration. When placed side by side, the bezel is 
 A configuration with the main monitor in front and subs on the left and right, or a configuration with one monitor placed vertically (portrait). Log monitoring, documentation, and coding can be completely separated.
 
 - **Pros:** Overwhelming amount of information. No bezel in the center.
-- **Cons:** Consumes a lot of desk space. Susceptible to graphics board output terminal and bandwidth limitations.
+- **Cons:** Consumes a lot of desk space. Susceptible to graphics board output [terminal](/en/p/terminal-efficiency-powershell-bash-shortcuts/) and bandwidth limitations.
 
 ### 2.3 Ultrawide Monitors (e.g., 49-inch 5120x1440)
 

@@ -24,7 +24,7 @@ In seiner Jugend zog die Familie nach Berlin, wo er eine hochwertige Grund- und 
 
 ## 3. Universitätszeit und [Kronecker](https://kenji.blog/de/p/kronecker/)s Einfluss
 
-[Hensel](https://kenji.blog/de/p/hensel/) studierte Mathematik an den Universitäten Bonn und Berlin. Damals war die Universität Berlin eines der weltweiten Zentren für mathematische Forschung, an dem Größen wie **Karl Weierstraß** und **Leopold [Kronecker](https://kenji.blog/de/p/kronecker/)** lehrten.
+[Hensel](https://kenji.blog/de/p/hensel/) studierte Mathematik an den Universitäten Bonn und Berlin. Damals war die Universität Berlin eines der weltweiten Zentren für mathematische Forschung, an dem Größen wie **[Karl Weierstraß](/de/p/weierstrass/)** und **Leopold [Kronecker](https://kenji.blog/de/p/kronecker/)** lehrten.
 
 Unter ihnen hatte [Kronecker](https://kenji.blog/de/p/kronecker/) den stärksten Einfluss auf Hensel. Wie sein berühmtes Zitat „Die ganzen Zahlen hat der liebe Gott gemacht, alles andere ist Menschenwerk“ zeigt, war Kronecker fest davon überzeugt, dass die gesamte Mathematik streng auf der Grundlage ganzer Zahlen rekonstruiert werden sollte. Unter Kroneckers Anleitung widmete sich [Hensel](https://kenji.blog/de/p/hensel/) tief der Algebra und Zahlentheorie.
 

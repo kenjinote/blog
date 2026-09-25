@@ -88,7 +88,7 @@ Bien qu'on vous ait déclaré « positif », la probabilité que vous soyez en b
 
 ## Pourquoi notre intuition se trompe-t-elle ?
 
-Ce phénomène est expliqué mathématiquement par le **« théorème de Bayes »**, qui calcule les probabilités conditionnelles, mais le cerveau humain est très mauvais pour ce type de calcul.
+Ce phénomène est expliqué mathématiquement par le **« [théorème de Bayes](/fr/p/bayes-theorem/) »**, qui calcule les probabilités conditionnelles, mais le cerveau humain est très mauvais pour ce type de calcul.
 
 La raison pour laquelle nous faisons des erreurs est que nous sommes distraits par les informations spécifiques et frappantes fournies dans l'immédiat (« Votre résultat de test est positif ! La précision est de 99 % ! ») et ignorons les données statistiques de fond massives et ennuyeuses (« À l'origine, seule 1 personne sur 10 000 est atteinte de cette maladie (taux de base) »).
 

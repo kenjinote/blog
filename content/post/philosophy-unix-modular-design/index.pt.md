@@ -12,7 +12,7 @@ image: "eyecatch.jpg"
 
 Na engenharia de software moderna, não se passa um dia sem ouvir termos como "design modular", "Princípio da Responsabilidade Única (Single Responsibility Principle)" e "baixo acoplamento". Esses conceitos são tratados como regras de ouro para manter uma base de código limpa e construir sistemas escaláveis e fáceis de manter. No entanto, esses conceitos não nasceram nos últimos anos. Rastreados até suas raízes, chegamos a um único sistema operacional que nasceu nos Bell Labs no início dos anos 1970: o "Unix".
 
-O Unix não era apenas um sistema operacional. Foi a personificação da ideia de "como construir um software excelente", ou seja, a "Filosofia Unix". Essa filosofia, construída por gigantes como Ken Thompson, Dennis Ritchie e Doug McIlroy, continua viva nas arquiteturas nativas da nuvem e microsserviços de hoje, meio século depois.
+O Unix não era apenas um sistema operacional. Foi a personificação da ideia de "como construir um software excelente", ou seja, a "Filosofia Unix". Essa filosofia, construída por gigantes como Ken Thompson, [Dennis Ritchie](/pt/p/biography-dennis-ritchie/) e Doug McIlroy, continua viva nas arquiteturas nativas da nuvem e microsserviços de hoje, meio século depois.
 
 Neste artigo, vamos mergulhar fundo na essência do "design modular" no núcleo da filosofia Unix, e desvendar por que essa ideia continua sendo apoiada através do tempo.
 
@@ -91,7 +91,7 @@ A tecnologia de contêineres, representada pelo Docker, também está profundame
 
 ### Programação Funcional e Pipelines de Dados
 
-A composição de funções na programação funcional (usando a saída de uma função como entrada de outra) tem uma semelhança matemática com o conceito de pipelines Unix. O processamento de fluxo no processamento de big data, como o Apache Kafka, também é uma aplicação do conceito de fluxo de texto em sistemas distribuídos.
+A composição de funções na [programação funcional](/pt/p/lambda-calculus-functional-programming/) (usando a saída de uma função como entrada de outra) tem uma semelhança matemática com o conceito de pipelines Unix. O processamento de fluxo no processamento de big data, como o Apache Kafka, também é uma aplicação do conceito de fluxo de texto em [sistemas distribuídos](/pt/p/cap-theorem-distributed-systems-tradeoff/).
 
 ```mermaid
 graph LR

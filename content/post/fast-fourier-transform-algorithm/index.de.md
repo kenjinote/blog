@@ -48,7 +48,7 @@ Wenn man versucht, diese DFT naiv zu berechnen, sind für jedes $k$ $N$ Multipli
 
 ## 3. Mathematische Ableitung des FFT-Algorithmus: Cooley-Tukey-Typ
 
-Der 1965 von James Cooley und John Tukey wiederentdeckte Algorithmus (es wird gesagt, dass Carl Friedrich Gauß bereits 1805 eine ähnliche Methode entdeckt hatte) ist der heutzutage am häufigsten verwendete FFT-Algorithmus. Hier leiten wir die Radix-2 Decimation-in-Time (DIT) FFT für den Fall ab, dass die Anzahl der Daten $N$ eine Zweierpotenz ist ($N = 2^m$).
+Der 1965 von James Cooley und John Tukey wiederentdeckte Algorithmus (es wird gesagt, dass [Carl Friedrich Gauß](/de/p/gauss/) bereits 1805 eine ähnliche Methode entdeckt hatte) ist der heutzutage am häufigsten verwendete FFT-Algorithmus. Hier leiten wir die Radix-2 Decimation-in-Time (DIT) FFT für den Fall ab, dass die Anzahl der Daten $N$ eine Zweierpotenz ist ($N = 2^m$).
 
 ### Aufteilung in Gerade und Ungerade (Teile und Herrsche)
 

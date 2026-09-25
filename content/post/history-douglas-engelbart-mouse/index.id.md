@@ -178,7 +178,7 @@ Di PARC, penelitian diarahkan untuk mewujudkan visi "personal computing" yang di
 
 ## Transfer Teknologi dari Xerox ke Apple (Macintosh)
 
-Pada tahun 1979, salah satu pendiri Apple Computer, Steve Jobs, mendapat kesempatan untuk mengunjungi Xerox PARC. Jobs sangat terkesan dengan GUI dan kemudahan penggunaan mouse Alto, serta meyakini bahwa "inilah masa depan komputer", lalu dia secara paksa memasukkan konsep tersebut ke dalam proyek pengembangan perusahaannya sendiri.
+Pada tahun 1979, salah satu pendiri Apple Computer, [Steve Jobs](/id/p/biography-steve-jobs/), mendapat kesempatan untuk mengunjungi Xerox PARC. Jobs sangat terkesan dengan GUI dan kemudahan penggunaan mouse Alto, serta meyakini bahwa "inilah masa depan komputer", lalu dia secara paksa memasukkan konsep tersebut ke dalam proyek pengembangan perusahaannya sendiri.
 
 Para insinyur Apple mendesain ulang mouse Xerox yang mahal dan rumit menjadi mouse dengan hanya satu tombol, yang dapat diproduksi secara massal dengan harga murah, dan dapat bergerak mulus di atas meja apapun. Melalui perilisan "Lisa" pada tahun 1983 dan "Macintosh" pada tahun 1984, mouse bertransformasi dari sekadar alat bagi segelintir peneliti, menjadi perangkat input standar yang digunakan konsumen umum di rumah dengan penyebaran yang sangat pesat.
 

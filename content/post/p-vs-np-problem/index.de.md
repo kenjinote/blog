@@ -11,7 +11,7 @@ tags: ["complexity-theory", "p-vs-np", "np-complete", "millennium-prize", "pytho
 
 In der Informatik und in der modernen Mathematik gibt es ein ungelöstes Problem, das als das berühmteste und wichtigste gilt. Es ist das **P-vs-NP-Problem** .
 
-Im Jahr 2000 lobte das Clay Mathematics Institute für jedes von sieben ungelösten mathematischen Problemen ein Preisgeld von 1 Million Dollar aus. Diese werden als **Millennium-Probleme** bezeichnet. Während einige, wie die Poincaré-Vermutung, bereits gelöst wurden, ist beim **P-vs-NP-Problem** noch nicht einmal ansatzweise ein Lösungsweg in Sicht.
+Im Jahr 2000 lobte das Clay Mathematics Institute für jedes von sieben ungelösten mathematischen Problemen ein Preisgeld von 1 Million Dollar aus. Diese werden als **Millennium-Probleme** bezeichnet. Während einige, wie [die Poincaré-Vermutung](/de/p/poincare-conjecture/), bereits gelöst wurden, ist beim **P-vs-NP-Problem** noch nicht einmal ansatzweise ein Lösungsweg in Sicht.
 
 In diesem Artikel werden wir das gesamte **P-vs-NP-Problem** detailliert und tiefgreifend erklären – von den Grundlagen der Komplexitätsklassen (P, NP, NP-vollständig, NP-schwer) über die praktische Bedeutung für die Programmierung bis hin zu den Auswirkungen auf die Welt, falls es gelöst werden sollte.
 

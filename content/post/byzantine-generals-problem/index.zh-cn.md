@@ -9,7 +9,7 @@ tags: ["拜占庭将军问题", "区块链", "共识机制", "算法"]
 slug: "byzantine-generals-problem"
 ---
 
-在学习分布式系统或区块链技术时，必然会面临的一个问题就是 **[拜占庭将军问题](https://kenji.blog/zh-cn/p/byzantine-generals-problem/)** ([Byzantine Generals](https://kenji.blog/zh-cn/p/byzantine-generals-problem-consensus/) Problem)。它探讨的是在网络中存在“叛徒”或“故障节点”的情况下，整个系统该如何达成正确的共识这一极其重要的课题。
+在学习[分布式系统](/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)或[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)技术时，必然会面临的一个问题就是 **[拜占庭将军问题](https://kenji.blog/zh-cn/p/byzantine-generals-problem/)** ([Byzantine Generals](https://kenji.blog/zh-cn/p/byzantine-generals-problem-consensus/) Problem)。它探讨的是在网络中存在“叛徒”或“故障节点”的情况下，整个系统该如何达成正确的共识这一极其重要的课题。
 
 本文将结合具体的故事场景、数学条件公式以及图解，对这个 **[拜占庭将军问题](https://kenji.blog/zh-cn/p/byzantine-generals-problem/)** 进行从基础到应用的详细解说。
 
@@ -119,9 +119,9 @@ end
 
 ## 4. 区块链与拜占庭容错
 
-对[拜占庭将军问题](https://kenji.blog/zh-cn/p/byzantine-generals-problem/)的抵御能力被称为 **拜占庭容错** (Byzantine Fault Tolerance, BFT)。它是衡量分布式系统在遭受故障或恶意攻击时，能否继续正常运行的重要指标。
+对[拜占庭将军问题](https://kenji.blog/zh-cn/p/byzantine-generals-problem/)的抵御能力被称为 **拜占庭容错** (Byzantine Fault Tolerance, BFT)。它是衡量[分布式系统](/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)在遭受故障或恶意攻击时，能否继续正常运行的重要指标。
 
-近年来，这个问题再次受到极大关注，这归功于 **区块链技术** 的出现。因为区块链是一个没有中央管理者的 [P2P](https://kenji.blog/zh-cn/p/webrtc-realtime-communication-p2p/) 网络，恶意参与者（节点）有可能会散布虚假的交易历史。这正是典型的[拜占庭将军问题](https://kenji.blog/zh-cn/p/byzantine-generals-problem/)。
+近年来，这个问题再次受到极大关注，这归功于 **[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)技术** 的出现。因为[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)是一个没有中央管理者的 [P2P](https://kenji.blog/zh-cn/p/webrtc-realtime-communication-p2p/) 网络，恶意参与者（节点）有可能会散布虚假的交易历史。这正是典型的[拜占庭将军问题](https://kenji.blog/zh-cn/p/byzantine-generals-problem/)。
 
 ### PBFT (实用拜占庭容错) 的原理
 
@@ -162,7 +162,7 @@ end
 
 ## 5. BFT的数学建模与应用
 
-在更高级的分布式系统设计中，会严格定义系统的状态转换，以证明 BFT 算法的正确性。
+在更高级的[分布式系统](/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)设计中，会严格定义系统的状态转换，以证明 BFT 算法的正确性。
 
 例如，设节点集合为 $\mathcal{N} = \{1, 2, \dots, n\}$ ，最大的叛徒节点数为 $f$ 。在某一轮 $r$ 中，每个节点 $i$ 保持状态 $s_i^{(r)}$ ，并与其他节点交换消息。
 
@@ -180,6 +180,6 @@ $$
 
 ## 6. 结语
 
-这个 **[拜占庭将军问题](https://kenji.blog/zh-cn/p/byzantine-generals-problem/)** 是确保分布式系统可靠性的核心理论。“在不知该信任谁的环境中，如何做出总体上正确的决定”——这个课题如今已被应用到从加密资产底层技术、到航空器控制系统、再到云计算的各种现代IT基础设施中。
+这个 **[拜占庭将军问题](https://kenji.blog/zh-cn/p/byzantine-generals-problem/)** 是确保[分布式系统](/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)可靠性的核心理论。“在不知该信任谁的环境中，如何做出总体上正确的决定”——这个课题如今已被应用到从加密资产底层技术、到航空器控制系统、再到云计算的各种现代IT基础设施中。
 
-在必须假设存在叛徒的情况下、依然保证系统不中断的算法演进，今后也不会停止。对于参与分布式系统设计的工程师来说，理解这个问题背后的数学证明和算法原理，将成为非常有力的武器。
+在必须假设存在叛徒的情况下、依然保证系统不中断的算法演进，今后也不会停止。对于参与[分布式系统](/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)设计的工程师来说，理解这个问题背后的数学证明和算法原理，将成为非常有力的武器。

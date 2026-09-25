@@ -14,7 +14,7 @@ description: 'Der Mangel an VRAM (GPU-Speicher) ist das größte Hindernis beim 
 
 In den letzten Jahren hat die generative KI-Technologie, wie große Sprachmodelle (LLMs) und Diffusionsmodelle (Diffusion Models), rasante Fortschritte gemacht. Wenn jedoch Entwickler und Forscher versuchen, diese modernsten KI-Modelle in lokalen Umgebungen zu trainieren (Fine-Tuning) oder auszuführen (Inference), stoßen viele auf ein sehr physisches Hindernis: **"GPU-Speichermangel (VRAM)"**.
 
-Selbst bei High-End-GPUs für Endverbraucher, wie der NVIDIA GeForce RTX 4090, beträgt der maximale VRAM 24 GB, was es völlig unmöglich macht, ein riesiges Modell wie Llama 3 70B direkt zu laden. GPUs für Rechenzentren wie H100 (80 GB) oder B200 (192 GB) sind extrem teuer und für Einzelpersonen oder kleine Teams nicht leicht zugänglich. Wenn man diese "VRAM-Wand (The Wall of VRAM)" nicht durchbrechen kann, kann man modernste Modelle gar nicht erst berühren.
+Selbst bei High-End-GPUs für Endverbraucher, wie der NVIDIA [GeForce](/de/p/history-of-nvidia/) RTX 4090, beträgt der maximale VRAM 24 GB, was es völlig unmöglich macht, ein riesiges Modell wie Llama 3 70B direkt zu laden. GPUs für Rechenzentren wie H100 (80 GB) oder B200 (192 GB) sind extrem teuer und für Einzelpersonen oder kleine Teams nicht leicht zugänglich. Wenn man diese "VRAM-Wand (The Wall of VRAM)" nicht durchbrechen kann, kann man modernste Modelle gar nicht erst berühren.
 
 In diesem Artikel werden wir fortgeschrittene Techniken gründlich erläutern, um diese physische Einschränkung des VRAM-Limits durch software- und hardwarearchitektonische Kniffe sowohl beim Training als auch bei der Inferenz zu überwinden. Wir werden CPU-Offloading, KV-Cache-Optimierung, Gradient Checkpointing und neueste Unified-Memory-Architekturen anhand von mathematischen Formeln und Diagrammen vertiefen. Wenn Sie diesen Artikel lesen, werden Sie das Verhalten von VRAM tiefgreifend verstehen und praktisches Wissen erwerben, um riesige Modelle mit begrenzten Ressourcen zu handhaben.
 
@@ -32,7 +32,7 @@ Die im Deep Learning häufig verwendeten Datentypen und die Anzahl der Bytes pro
 - **FP32 (einfache Genauigkeit):** 4 Bytes (Standardgenauigkeit für Training)
 - **FP16 / BF16 (halbe Genauigkeit):** 2 Bytes (allgemeine Inferenz und Mixed-Precision-Training)
 - **INT8 (8-Bit-Ganzzahl):** 1 Byte (quantisierte Modelle)
-- **INT4 (4-Bit-Ganzzahl-Quantisierung):** 0,5 Bytes (extreme Quantisierung wie GPTQ, AWQ, GGUF)
+- **INT4 (4-Bit-Ganzzahl-Quantisierung):** 0,5 Bytes (extreme Quantisierung wie GPTQ, AWQ, [GGUF](/de/p/llama-cpp-quantization-gguf/))
 
 Wenn die Anzahl der Parameter des gesamten Modells $P$ ist, wird die Basisspeichermenge $M_{weights}$, die von den Gewichten selbst belegt wird, durch die folgende Formel ausgedrückt:
 

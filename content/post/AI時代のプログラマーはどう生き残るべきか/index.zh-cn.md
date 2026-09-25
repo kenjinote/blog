@@ -11,7 +11,7 @@ tags: ["Career", "AI", "Future", "Programming"]
 
 # AI时代的程序员该如何生存？编码的终结与新工程学的开端
 
-2026年现在，软件开发领域正处于前所未有的剧变期。就在几年前，“AI写代码”的概念顶多还停留在生成样板代码（Boilerplate）或函数自动补全等作为程序员“辅助工具”的角色。然而，随着大型语言模型（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的惊人进化，情况发生了根本性的颠覆。现代的AI不仅仅是一台“聪明的打字机”，只要提供需求定义文档，从前端到后端逻辑、数据库的Schema设计，甚至到[CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)流水线的构建，它都已经蜕变成为能够在瞬间自主组建整个系统的“自主型初级工程师”。
+2026年现在，软件开发领域正处于前所未有的剧变期。就在几年前，“AI写代码”的概念顶多还停留在生成样板代码（Boilerplate）或函数自动补全等作为程序员“辅助工具”的角色。然而，随着[大型语言模型](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的惊人进化，情况发生了根本性的颠覆。现代的AI不仅仅是一台“聪明的打字机”，只要提供需求定义文档，从前端到后端逻辑、数据库的Schema设计，甚至到[CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)流水线的构建，它都已经蜕变成为能够在瞬间自主组建整个系统的“自主型初级工程师”。
 
 在这样的时代，我们“程序员”或“软件工程师”该如何生存下来？在“写代码”这一行为本身的经济价值正在急剧通货紧缩的过程中，仅仅了解特定编程语言的语法（Syntax）、熟悉特定框架API的“编码员（Coder）”，正迅速被市场淘汰。
 
@@ -25,7 +25,7 @@ tags: ["Career", "AI", "Future", "Programming"]
 
 早期的计算机科学家使用打孔卡片直接操作物理硬件的开关，用机器代码（0和1的排列）给计算机下达指令。之后汇编语言登场，人类开始能够用容易理解的助记符来操作硬件。随着时代的发展，C语言、Fortran等高级语言出现，成功地将内存管理、CPU寄存器等硬件的复杂细节封装了起来。紧接着[Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)、Python、Ruby、TypeScript等现代语言的问世，让程序员能够将精力更多地集中在“想让计算机做什么（What）”上，而不是“如何让计算机运行（How）”。
 
-AI（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的出现，是这部抽象化历史中最新也是最大的一次范式转移。如果说编程语言的进化是“硬件的隐藏”，那么LLM的进化就是“语法（Syntax）的隐藏”。
+AI（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的出现，是这部抽象化历史中最新也是最大的一次范式转移。如果说编程语言的进化是“硬件的隐藏”，那么[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)的进化就是“语法（Syntax）的隐藏”。
 
 ```mermaid
 graph TD
@@ -50,7 +50,7 @@ graph TD
 
 $$ P_{traditional} = c_1 \cdot S + c_2 \cdot E + c_3 \cdot T $$
 
-然而，在利用AI的现代开发中，AI的能力 $A(t)$ 成为放大人类能力的“强大杠杆（Multiplier）”。由于AI的能力会随着时间 $t$ 的推移呈指数级增长（AI版的摩尔定律），因此AI时代的生产力 $P_{AI}(t)$ 可以用以下方程式来表示。
+然而，在利用AI的现代开发中，AI的能力 $A(t)$ 成为放大人类能力的“强大杠杆（Multiplier）”。由于AI的能力会随着时间 $t$ 的推移呈指数级增长（AI版的[摩尔定律](/zh-cn/p/business-moores-law/)），因此AI时代的生产力 $P_{AI}(t)$ 可以用以下方程式来表示。
 
 $$ P_{AI}(t) = \alpha \cdot S_{core} \cdot e^{\beta \cdot A(t)} $$
 
@@ -175,7 +175,7 @@ sequenceDiagram
 基于以上的分析，我们提出程序员在AI时代生存的具体行动计划。
 
 1.  **彻底重新学习技术的“基础”**: 框架的使用方法交给AI即可。但是，对操作系统的机制、网络协议（[TCP](https://kenji.blog/zh-cn/p/http3-quic-protocol-tcp-udp/)/IP, HTTP/3）、数据库的内部结构（[B-Tree](https://kenji.blog/zh-cn/p/b-tree-database-index-theory/), 事务隔离级别）、数据结构与算法的深刻理解是绝对必要的。为了判断AI的输出是否正确，坚实的计算机科学基础不可或缺。
-2.  **掌握云架构与分布式系统**: 不要将精力放在个别代码上，而应专注于如何组合AWS、GCP、Azure等云资源来构建可扩展的系统。理解[Terraform](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/)等[IaC](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/)（基础设施即代码）的概念，培养将整个系统作为代码进行设计的能力。
+2.  **掌握云架构与[分布式系统](/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)**: 不要将精力放在个别代码上，而应专注于如何组合AWS、GCP、Azure等云资源来构建可扩展的系统。理解[Terraform](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/)等[IaC](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/)（[基础设施即代码](/zh-cn/p/iac-infrastructure-as-code-terraform/)）的概念，培养将整个系统作为代码进行设计的能力。
 3.  **成为业务领域的专家**: 深入学习自己所在行业的商业模式、法律法规以及用户的行为心理。要超越工程师的局限，具备接近产品经理（PM）的视角。
 4.  **磨炼沟通与引导的技能**: 解决人与人之间的“模糊性”并达成共识的过程，是AI无法替代的。与利益相关者对话，发现真正课题的软技能，将成为最有价值的技能。
 5.  **将AI作为“同事”充分利用**: 不要害怕AI工具的进化，而要将其作为最强大的武器来利用。在日常工作中频繁使用最新的[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)和AI编程代理，积累关于“AI在哪里会失败”、“如何调整提示词才能发挥其最佳性能”的“隐性知识”。

@@ -16,7 +16,7 @@ En este artículo, partiremos de la filosofía detrás del lenguaje Haskell y ex
 
 ## 1. El paradigma de la programación puramente funcional
 
-En la base de la programación funcional está la idea de "tratar el cálculo como la evaluación de funciones matemáticas". Especialmente en lenguajes "puramente" funcionales como Haskell, esta regla se sigue muy estrictamente.
+En la base de la [programación funcional](/es/p/lambda-calculus-functional-programming/) está la idea de "tratar el cálculo como la evaluación de funciones matemáticas". Especialmente en lenguajes "puramente" funcionales como Haskell, esta regla se sigue muy estrictamente.
 
 ### Transparencia referencial (Referential Transparency)
 

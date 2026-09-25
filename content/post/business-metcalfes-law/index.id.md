@@ -95,4 +95,4 @@ Jika pengguna terlalu banyak, fenomena "Efek Jaringan Negatif" dapat terjadi, se
 
 Meskipun merupakan model yang disederhanakan, Hukum Metcalfe dengan luar biasa merepresentasikan dinamika "Pemenang mengambil semua" (Winner-takes-all) dalam bisnis platform.
 
-Para pemimpin bisnis dan wirausahawan harus selalu menempatkan pada pusat perancangan tentang bagaimana produk mereka akan menciptakan efek jaringan, dan bagaimana cara menembus Massa Kritis secepat mungkin. Bahkan di era AI dan blockchain (Web3), Hukum Metcalfe masih terus bekerja secara diam-diam namun kuat sebagai dasar bagaimana node-node terhubung dan bertukar nilai.
+Para pemimpin bisnis dan wirausahawan harus selalu menempatkan pada pusat perancangan tentang bagaimana produk mereka akan menciptakan efek jaringan, dan bagaimana cara menembus Massa Kritis secepat mungkin. Bahkan di era AI dan [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/) (Web3), Hukum Metcalfe masih terus bekerja secara diam-diam namun kuat sebagai dasar bagaimana node-node terhubung dan bertukar nilai.

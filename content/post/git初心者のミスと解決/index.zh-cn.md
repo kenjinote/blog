@@ -68,17 +68,17 @@ Git的分支，仅仅是一个指向特定提交的轻量级指针（文件）�
 
 Git默认的差异检测算法是由Eugene W. Myers提出的算法。当有2个文本文件 $A$ 和 $B$ 时，寻找将 $A$ 转换为 $B$ 的“最小编辑步骤（插入和删除）”的问题，可以在图论中建模为最短路径问题。
 
-设字符串的长度分别为 $N, M$，总和为 $V = N + M$。在Myers算法中，我们要寻找编辑距离（Edit Distance） $D$。该算法的时间复杂度由以下公式表示：
+设字符串的长度分别为 $N, M$，总和为 $V = N + M$。在Myers算法中，我们要寻找编辑距离（Edit Distance） $D$。该算法的时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)由以下公式表示：
 
 $$ \mathcal{O}(V \cdot D) $$
 
-这里，当文件间的差异较小（即 $D$ 较小）时，算法会以非常快的 $\mathcal{O}(V)$ 速度运行。但是，如果文件完全不同，则 $D \approx V$，最坏情况的时间复杂度变为 $\mathcal{O}(V^2)$。
+这里，当文件间的差异较小（即 $D$ 较小）时，算法会以非常快的 $\mathcal{O}(V)$ 速度运行。但是，如果文件完全不同，则 $D \approx V$，最坏情况的时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)变为 $\mathcal{O}(V^2)$。
 
 ### 3.2 Patience Diff 与 Histogram Diff
 
 Myers算法非常优秀，但在大幅度改变函数或类的顺序时，有时会生成对人类来说不直观（缺乏意义）的差异。为了解决这个问题，Git实现了 `Patience Diff` 和 `Histogram Diff`。
 
-Patience Diff 着眼于“在两个文件中只出现一次的唯一行”，并寻找它们的最长公共子序列（Longest Common Subsequence: LCS）。假设唯一元素的数量为 $U$，则LCS的计算可以用以下时间复杂度解决：
+Patience Diff 着眼于“在两个文件中只出现一次的唯一行”，并寻找它们的最长公共子序列（Longest Common Subsequence: LCS）。假设唯一元素的数量为 $U$，则LCS的计算可以用以下时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)解决：
 
 $$ \mathcal{O}(U \log U) $$
 
@@ -86,7 +86,7 @@ $$ \mathcal{O}(U \log U) $$
 
 ### 3.3 SHA-1与碰撞概率
 
-Git通过SHA-1散列值来管理所有对象。散列空间的大小为 $2^{160}$。关于散列碰撞（不同的内容具有相同的散列值）的概率，使用生日悖论（Birthday Paradox）进行近似，碰撞概率 $p$ 达到50%所需的对象数量 $k$ 如下：
+Git通过SHA-1散列值来管理所有对象。散列空间的大小为 $2^{160}$。关于散列碰撞（不同的内容具有相同的散列值）的概率，使用[生日悖论](/zh-cn/p/birthday-paradox/)（Birthday Paradox）进行近似，碰撞概率 $p$ 达到50%所需的对象数量 $k$ 如下：
 
 $$ k \approx \sqrt{2 \ln(2)} \cdot 2^{80} \approx 1.2 \times 2^{80} $$
 
@@ -334,7 +334,7 @@ squash 3c4d5e6 添加测试
 
 ### 解决方案：通过二分查找定位Bug
 
-Git内置了一个工具，可以通过数学上的二分查找（[Binary Search](https://kenji.blog/zh-cn/p/search-algorithms-linear-binary-hash-table-principles/)）来找出混入Bug的提交。由于时间复杂度为 $\mathcal{O}(\log N)$，即使有1000个提交，只需大约10次测试就能定位出来。
+Git内置了一个工具，可以通过数学上的二分查找（[Binary Search](https://kenji.blog/zh-cn/p/search-algorithms-linear-binary-hash-table-principles/)）来找出混入Bug的提交。由于时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)为 $\mathcal{O}(\log N)$，即使有1000个提交，只需大约10次测试就能定位出来。
 
 ```bash
 # 开始查找

@@ -14,11 +14,11 @@ In unserem täglichen Leben fungiert die "Intuition" als ein sehr mächtiges Wer
 
 Die Wahrscheinlichkeitstheorie ist ein mathematischer Rahmen zur quantitativen Bewertung unsicherer Ereignisse, aber ihre Schlussfolgerungen kollidieren oft heftig mit unserer Intuition. Dieses Phänomen wird seit langem in den Bereichen Psychologie, Verhaltensökonomie und Mathematikunterricht als "kognitive Verzerrung" (Cognitive Bias) oder "Diskrepanz zwischen Intuition und Logik" untersucht.
 
-In diesem Artikel behandeln wir das berühmteste Paradoxon, das diese Diskrepanz zwischen Intuition und Wahrscheinlichkeit symbolisiert: das "Monty-Hall-Problem" (Ziegenproblem). Trotz seiner scheinbaren Einfachheit löste dieses Problem eine massive Kontroverse aus, an der namhafte Mathematiker und Wissenschaftler weltweit beteiligt waren. Durch die Frage "Warum tappen wir in eine so einfache Wahrscheinlichkeitsfalle?" werden wir die Grenzen der menschlichen kognitiven Struktur und die Bedeutung des logischen Denkens tief und gründlich erforschen.
+In diesem Artikel behandeln wir das berühmteste Paradoxon, das diese Diskrepanz zwischen Intuition und Wahrscheinlichkeit symbolisiert: das "[Monty-Hall-Problem](/de/p/monty-hall-problem/)" (Ziegenproblem). Trotz seiner scheinbaren Einfachheit löste dieses Problem eine massive Kontroverse aus, an der namhafte Mathematiker und Wissenschaftler weltweit beteiligt waren. Durch die Frage "Warum tappen wir in eine so einfache Wahrscheinlichkeitsfalle?" werden wir die Grenzen der menschlichen kognitiven Struktur und die Bedeutung des logischen Denkens tief und gründlich erforschen.
 
 ## Kapitel 1: Was ist das Monty-Hall-Problem?
 
-Das Monty-Hall-Problem ist ein Wahrscheinlichkeitsparadoxon, das nach Monty Hall, dem Moderator der langjährigen amerikanischen Fernseh-Spielshow "Let's Make a Deal", benannt wurde. Dieses Problem wurde der breiten Öffentlichkeit im Jahr 1990 bekannt, als es in der Kolumne "Ask Marilyn" der Nachrichtenzeitschrift "Parade" vorgestellt wurde.
+Das [Monty-Hall-Problem](/de/p/monty-hall-problem/) ist ein Wahrscheinlichkeitsparadoxon, das nach Monty Hall, dem Moderator der langjährigen amerikanischen Fernseh-Spielshow "Let's Make a Deal", benannt wurde. Dieses Problem wurde der breiten Öffentlichkeit im Jahr 1990 bekannt, als es in der Kolumne "Ask Marilyn" der Nachrichtenzeitschrift "Parade" vorgestellt wurde.
 
 ### Problemstellung
 
@@ -121,7 +121,7 @@ Daher beträgt die erwartete Gewinnrate für die Strategie des Wechselns der Wah
 
 ## Kapitel 3: Strenge Lösung mit dem Satz von Bayes
 
-Das Monty-Hall-Problem kann durch die Verwendung des "Satzes von Bayes" (Bayes'sches Theorem) zur Berechnung der bedingten Wahrscheinlichkeit mathematisch strenger gelöst werden. Die Bayes'sche Inferenz ist ein mächtiges Werkzeug, das zeigt, wie vorherige Wahrscheinlichkeiten (A-priori-Wahrscheinlichkeiten) aktualisiert werden sollten (A-posteriori-Wahrscheinlichkeiten), wenn neue Informationen (Beweise) gewonnen werden.
+Das [Monty-Hall-Problem](/de/p/monty-hall-problem/) kann durch die Verwendung des "Satzes von Bayes" (Bayes'sches Theorem) zur Berechnung der bedingten Wahrscheinlichkeit mathematisch strenger gelöst werden. Die Bayes'sche Inferenz ist ein mächtiges Werkzeug, das zeigt, wie vorherige Wahrscheinlichkeiten (A-priori-Wahrscheinlichkeiten) aktualisiert werden sollten (A-posteriori-Wahrscheinlichkeiten), wenn neue Informationen (Beweise) gewonnen werden.
 
 Wir definieren die Ereignisse wie folgt:
 - $C_i$: Das Ereignis, dass das neue Auto hinter Tür $i$ ist ($i \in \{A, B, C\}$)
@@ -140,7 +140,7 @@ Montys Verhaltensregeln (bedingte Wahrscheinlichkeiten $P(M_B|C_i)$) sind wie fo
 2. Wenn das neue Auto hinter Tür B ist ($C_B$), kann Monty B absolut nicht öffnen, also $P(M_B|C_B) = 0$
 3. Wenn das neue Auto hinter Tür C ist ($C_C$), kann Monty C nicht öffnen, und A kann nicht geöffnet werden, weil der Spieler es gewählt hat. Daher ist er gezwungen, B zu öffnen, also $P(M_B|C_C) = 1$
 
-Die Formel für den Satz von Bayes lautet:
+Die Formel für den [Satz von Bayes](/de/p/bayes-theorem/) lautet:
 $P(C_i|M_B) = \frac{P(M_B|C_i) P(C_i)}{P(M_B)}$
 
 Wir berechnen den Nenner $P(M_B)$ (die totale Wahrscheinlichkeit, dass Monty Tür B öffnet) mit dem Gesetz der totalen Wahrscheinlichkeit:
@@ -164,13 +164,13 @@ Egal wie oft ihnen der mathematische Beweis gezeigt wird, viele Menschen fühlen
 ### 1. Gleichwahrscheinlichkeits-Bias (Equiprobability Bias)
 
 Menschen haben eine starke unbewusste Tendenz, in zufälligen Ereignissen oder unsicheren Situationen anzunehmen, dass "wenn Optionen übrig bleiben, ihre Wahrscheinlichkeiten alle gleich sein müssen".
-Beim Monty-Hall-Problem bleiben am Ende zwei Optionen, "Tür A" und "Tür C", übrig. In dem Moment, in dem das Gehirn diese visuelle und situative Information der "zwei Optionen" verarbeitet, wird eine starke Heuristik ausgelöst: "Da es zwei sind, beträgt die Wahrscheinlichkeit jeweils 1/2".
+Beim [Monty-Hall-Problem](/de/p/monty-hall-problem/) bleiben am Ende zwei Optionen, "Tür A" und "Tür C", übrig. In dem Moment, in dem das Gehirn diese visuelle und situative Information der "zwei Optionen" verarbeitet, wird eine starke Heuristik ausgelöst: "Da es zwei sind, beträgt die Wahrscheinlichkeit jeweils 1/2".
 Unser Gehirn trennt den historischen Kontext (die Tatsache, dass es ursprünglich drei waren und dass Monty absichtlich eine Niete geöffnet hat) - diese "asymmetrische Information" - von der "aktuellen Situation" und ignoriert ihn einfach.
 
 ### 2. Kausalität und das Missverständnis von "Absicht"
 
 Wir versuchen, Kausalzusammenhänge auf lineare Weise zu verstehen.
-Es ähnelt dem "Spielerfehlschluss" (Gambler's Fallacy), bei dem man, nachdem beim Roulette fünfmal hintereinander Rot gefallen ist, denkt: "Als nächstes muss Schwarz kommen", aber beim Monty-Hall-Problem unterschätzen wir stattdessen das "Aktualisieren von Informationen".
+Es ähnelt dem "Spielerfehlschluss" (Gambler's Fallacy), bei dem man, nachdem beim Roulette fünfmal hintereinander Rot gefallen ist, denkt: "Als nächstes muss Schwarz kommen", aber beim [Monty-Hall-Problem](/de/p/monty-hall-problem/) unterschätzen wir stattdessen das "Aktualisieren von Informationen".
 
 Der wichtige Punkt ist, dass **"der Moderator Monty die Tür nicht zufällig öffnet"**.
 Wenn der Moderator nichts wüsste und zufällig eine Tür öffnete und diese "zufällig eine Ziege" wäre, läge die Wahrscheinlichkeit für die verblebeiten zwei Türen tatsächlich bei 1/2 (dies wird als das "Unwissender-Moderator-Problem" bezeichnet).
@@ -195,7 +195,7 @@ flowchart LR
 
 ## Kapitel 5: Lektionen des Paradoxons im täglichen Leben
 
-Das Monty-Hall-Problem ist nicht nur ein einfaches Quiz oder ein mathematisches Rätsel. Die Lektionen, die dieses Paradoxon uns lehrt, haben universellen Wert, der in verschiedenen Bereichen wie unserem täglichen Leben, in der Wirtschaft, in der Medizin und bei der KI-Entwicklung angewendet werden kann.
+Das [Monty-Hall-Problem](/de/p/monty-hall-problem/) ist nicht nur ein einfaches Quiz oder ein mathematisches Rätsel. Die Lektionen, die dieses Paradoxon uns lehrt, haben universellen Wert, der in verschiedenen Bereichen wie unserem täglichen Leben, in der Wirtschaft, in der Medizin und bei der KI-Entwicklung angewendet werden kann.
 
 ### Der Konflikt zwischen Daten und Intuition (Das Problem der Falsch-Positiven in der Medizin)
 
@@ -204,7 +204,7 @@ Nehmen wir zum Beispiel an, es gibt eine "seltene Krankheit, die 1 von 10.000 Me
 Wenn Sie diesen Test machen und als "positiv" beurteilt werden, wie hoch ist die Wahrscheinlichkeit, dass Sie tatsächlich an dieser seltenen Krankheit leiden?
 
 Intuitiv könnten Sie verzweifeln und denken: "Da die Genauigkeit 99 % beträgt, liegt die Wahrscheinlichkeit, dass ich krank bin, ebenfalls bei 99 %."
-Wenn Sie es jedoch mit dem Satz von Bayes berechnen, beträgt die Wahrscheinlichkeit, dass Sie tatsächlich erkrankt sind, **nur knapp 1 % (ca. 0,98 %)**. Da 1 % (etwa 100 Personen) der überwältigenden Mehrheit der "gesunden Personen (9.999 Personen)" "falsch positiv" sein werden, machen echte Patienten (fast nur 1 Person) in der Gruppe der Personen, die positiv getestet wurden, eine sehr kleine Minderheit aus.
+Wenn Sie es jedoch mit dem [Satz von Bayes](/de/p/bayes-theorem/) berechnen, beträgt die Wahrscheinlichkeit, dass Sie tatsächlich erkrankt sind, **nur knapp 1 % (ca. 0,98 %)**. Da 1 % (etwa 100 Personen) der überwältigenden Mehrheit der "gesunden Personen (9.999 Personen)" "falsch positiv" sein werden, machen echte Patienten (fast nur 1 Person) in der Gruppe der Personen, die positiv getestet wurden, eine sehr kleine Minderheit aus.
 
 Auf diese Weise besteht bei einer solch massiven Diskrepanz zwischen der intuitiven Wahrscheinlichkeitsschätzung (99 %) und der mathematischen Wahrheit (1 %) die Gefahr, dass sie zu unnötiger Panik oder falschen medizinischen Entscheidungen bei den Menschen führt. Das Verständnis des Monty-Hall-Problems ist der erste Schritt zum Erwerb der Kompetenz, solche "Informationsasymmetrie und A-priori-Wahrscheinlichkeit" richtig zu bewerten.
 
@@ -216,12 +216,12 @@ Werden Sie in diesem Moment "hartnäckig an Ihrer ursprünglichen Strategie fest
 
 ## Fazit: Intelligenz ist der Mut, "an der Intuition zu zweifeln"
 
-Das Monty-Hall-Problem ist so faszinierend und gleichzeitig so beängstigend, weil es die "Grenzen der menschlichen Intelligenz" wunderbar aufzeigt. Selbst Experten mit Doktortiteln wurden von ihrer ersten Intuition getäuscht und reagierten emotional gegen den richtigen Beweis.
+Das [Monty-Hall-Problem](/de/p/monty-hall-problem/) ist so faszinierend und gleichzeitig so beängstigend, weil es die "Grenzen der menschlichen Intelligenz" wunderbar aufzeigt. Selbst Experten mit Doktortiteln wurden von ihrer ersten Intuition getäuscht und reagierten emotional gegen den richtigen Beweis.
 
 Wir leben in der Abhängigkeit von der mächtigen Waffe der "Intuition", die wir uns im Laufe der Evolution angeeignet haben. In der heutigen komplexen und datengesteuerten Gesellschaft müssen wir uns jedoch bewusst sein, dass diese Intuition uns manchmal in die Falle locken kann.
 
-Das Monty-Hall-Problem vermittelt uns eine wichtige Botschaft.
+Das [Monty-Hall-Problem](/de/p/monty-hall-problem/) vermittelt uns eine wichtige Botschaft.
 Es ist **"die Bedeutung, sich nicht blind auf die eigene Intuition zu verlassen, sondern innezuhalten und das Problem mit den Werkzeugen von Logik und Mathematik zu überdenken"**. Es erfordert intellektuelle Bescheidenheit und den Mut, unsere Vorurteile zu aktualisieren, um eine Wahrheit zu akzeptieren, die auf den ersten Blick kontraintuitiv erscheint.
 
-Wenn Sie das nächste Mal in Ihrem Leben eine wichtige Entscheidung treffen müssen und neue Informationen erhalten (eine geöffnete Tür), denken Sie bitte an das Monty-Hall-Problem. Hat sich die Wahrscheinlichkeit aufgrund dieser Information nicht geändert? Sind Sie nicht im Status-quo-Bias gefangen?
+Wenn Sie das nächste Mal in Ihrem Leben eine wichtige Entscheidung treffen müssen und neue Informationen erhalten (eine geöffnete Tür), denken Sie bitte an das [Monty-Hall-Problem](/de/p/monty-hall-problem/). Hat sich die Wahrscheinlichkeit aufgrund dieser Information nicht geändert? Sind Sie nicht im Status-quo-Bias gefangen?
 Die logisch abgeleitete Entscheidung, "die Wahl zu ändern", könnte Ihnen direkt das neue Auto vor die Nase setzen.

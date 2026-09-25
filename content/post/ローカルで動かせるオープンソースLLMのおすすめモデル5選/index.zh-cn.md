@@ -13,17 +13,17 @@ description: '在保护隐私的同时免费使用的本地LLM。本文将从技
 
 # 引言
 
-近年来，大型语言模型（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的技术发展突飞猛进，像ChatGPT和Claude等基于云的AI服务已经得到广泛普及。然而，与此同时，“不想将公司的机密数据发送到外部服务器”、“希望降低API使用费”以及“希望构建完全离线运行的AI系统”的需求也在快速增加。
+近年来，[大型语言模型](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的技术发展突飞猛进，像ChatGPT和Claude等基于云的AI服务已经得到广泛普及。然而，与此同时，“不想将公司的机密数据发送到外部服务器”、“希望降低API使用费”以及“希望构建完全离线运行的AI系统”的需求也在快速增加。
 
-为了满足这些需求，可以直接下载到自己的PC或公司内部服务器上运行的“本地LLM（开源LLM）”应运而生。直到2023年左右，在本地实现实用的准确度还很困难，但随着模型架构的进步和量化（Quantization）技术的发展，现在即使是消费级GPU（如NVIDIA RTX 3090 / 4090或Mac的Apple Silicon等），也可以十分流畅地运行非常高性能的LLM。
+为了满足这些需求，可以直接下载到自己的PC或公司内部服务器上运行的“本地[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)（开源[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）”应运而生。直到2023年左右，在本地实现实用的准确度还很困难，但随着模型架构的进步和量化（Quantization）技术的发展，现在即使是消费级GPU（如[NVIDIA](/zh-cn/p/history-of-nvidia/) RTX 3090 / 4090或Mac的Apple Silicon等），也可以十分流畅地运行非常高性能的[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)。
 
-本文将从众多的开源LLM中，挑选出在2026年的当下被评价为特别优秀的“5款推荐模型”，并从极具技术深度的视角，对它们各自的架构特点、参数量、GGUF量化对内存的要求，乃至具体的应用场景，进行彻底的比较和解析。
+本文将从众多的开源[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)中，挑选出在2026年的当下被评价为特别优秀的“5款推荐模型”，并从极具技术深度的视角，对它们各自的架构特点、参数量、[GGUF](/zh-cn/p/llama-cpp-quantization-gguf/)量化对内存的要求，乃至具体的应用场景，进行彻底的比较和解析。
 
 ---
 
 # 为什么要运行本地LLM？
 
-引入本地LLM拥有许多云端API所不具备的独特优势。
+引入本地[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)拥有许多云端API所不具备的独特优势。
 
 ### 1. 确保完全的隐私和安全
 使用云端API时，输入的提示词和数据会被发送到外部公司的服务器上。这在处理个人隐私或企业机密信息时会带来严重的风险。如果使用本地LLM，数据完全在终端内部进行处理，因此可以将数据外泄的风险降至零。
@@ -38,11 +38,11 @@ description: '在保护隐私的同时免费使用的本地LLM。本文将从技
 
 # 运行本地LLM的基础知识
 
-在介绍模型之前，我们先从数学层面梳理一下在本地环境运行LLM所无法避开的“显存（VRAM）要求”和“量化（Quantization）”概念。
+在介绍模型之前，我们先从数学层面梳理一下在本地环境运行[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)所无法避开的“显存（VRAM）要求”和“量化（Quantization）”概念。
 
 ## 显存（VRAM）与量化的数学基础
 
-为了在GPU上推理LLM，必须将模型的参数（权重）加载到显存（VRAM）中。模型的内存需求 $M$ 可以用以下公式来近似计算：
+为了在GPU上推理[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)，必须将模型的参数（权重）加载到显存（VRAM）中。模型的内存需求 $M$ 可以用以下公式来近似计算：
 
 $$ M = \frac{P \times B}{8} + C $$
 
@@ -60,24 +60,24 @@ $$ M_{FP16} = \frac{8 \times 16}{8} = 16 \text{ GB} $$
 
 这时，“量化（Quantization）”技术就派上用场了。通过将参数的精度从FP16降低到8-bit、4-bit，甚至极端情况下的2-bit，可以将模型性能下降降至最低，同时大幅减少所需的内存。
 
-目前最普及的格式是由Georgi Gerganov（llama.cpp的开发者）设计的 **GGUF (GPT-Generated Unified Format)** 。GGUF是一种能够同时在CPU和GPU上进行高效推理的二进制格式，特别值得一提的是，它与Mac (Apple Silicon)的统一内存（Unified Memory）架构非常契合。
+目前最普及的格式是由Georgi Gerganov（llama.cpp的开发者）设计的 **[GGUF](/zh-cn/p/llama-cpp-quantization-gguf/) (GPT-Generated Unified Format)** 。[GGUF](/zh-cn/p/llama-cpp-quantization-gguf/)是一种能够同时在CPU和GPU上进行高效推理的二进制格式，特别值得一提的是，它与Mac (Apple Silicon)的统一内存（Unified Memory）架构非常契合。
 
 如果将8B模型进行4-bit（例如：Q4_K_M）量化，内存计算如下：
 
 $$ M_{4bit} = \frac{8 \times 4.5}{8} = 4.5 \text{ GB} $$
 ※因为Q4_K_M为部分权重保留了较高的精度，所以实际有效位数约为4.5位。
 
-因此，即使是只有8GB显存的入门级GPU或普通笔记本电脑，也能在本地流畅运行8B级别的高性能LLM。
+因此，即使是只有8GB显存的入门级GPU或普通笔记本电脑，也能在本地流畅运行8B级别的高性能[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)。
 
 ---
 
 # 5款推荐的本地LLM模型
 
-接下来，为您介绍目前在全世界开发者和AI研究人员中获得极高评价的5款开源LLM。
+接下来，为您介绍目前在全世界开发者和AI研究人员中获得极高评价的5款开源[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)。
 
 ## 1. Llama 3 (Meta)
 
-由Meta公司开发，已成为开源LLM事实标准（De facto standard）的，就是“Llama 3”系列。
+由[Meta](/zh-cn/p/history-of-meta-facebook/)公司开发，已成为开源[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)事实标准（De facto standard）的，就是“Llama 3”系列。
 
 ### 架构演进与特点
 
@@ -105,7 +105,7 @@ graph TD
 - **Llama 3 8B**: 80亿参数。在4-bit量化下约需5GB内存即可运行。响应速度极快，非常适合作为PC上的个人助理或本地RAG（检索增强生成）系统的核心。
 - **Llama 3 70B**: 700亿参数。在4-bit量化下约需40GB显存（或Apple Silicon的统一内存）。性能逼近云端的GPT-4，在高级推理、复杂编码、数据分析等方面表现出色。
 
-Llama 3拥有最雄厚的社区支持，其一大优势在于能够立即使用GGUF、AWQ、EXL2等几乎所有量化格式。
+Llama 3拥有最雄厚的社区支持，其一大优势在于能够立即使用[GGUF](/zh-cn/p/llama-cpp-quantization-gguf/)、AWQ、EXL2等几乎所有量化格式。
 
 ---
 
@@ -150,7 +150,7 @@ Gemma 2采用了一些与其他[LLM](https://kenji.blog/zh-cn/p/large-language-m
 - **Logit Soft-capping**: 一项防止生成异常大Logit值的技术，从而提高训练和推理的稳定性。
 - **Sliding Window Attention (SWA) 与 Local Attention的混合**: 并非在所有层进行全注意力计算，而是交替使用仅关注局部上下文的层和关注全局的层。
 
-SWA带来的计算量削减可以用数学方式表示如下：相较于普通Self-Attention的 $O(N^2)$ 计算复杂度，使用窗口大小 $W$ 的SWA计算复杂度如下：
+SWA带来的计算量削减可以用数学方式表示如下：相较于普通Self-Attention的 $O(N^2)$ 计算[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)，使用窗口大小 $W$ 的SWA计算[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)如下：
 
 $$ \text{Complexity}_{SWA} = O(N \times W) $$
 
@@ -187,8 +187,8 @@ Qwen 2.5使用了海量的多语言语料库进行预训练，除了英语和中
 
 ### SLM（小规模语言模型）的革命
 
-近年来的LLM开发主要是“一味增加参数量和数据量”的堆算力做法，但微软证明了：“如果将喂给模型的数据质量（高质量的教科书数据或合成数据）提升到极致，即使是很小的参数量也能拥有媲美GPT-3.5级别的智能。”
-Phi-3不被称为LLM（Large Language Model），而是被称为 **SLM（Small Language Model）** 。
+近年来的[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)开发主要是“一味增加参数量和数据量”的堆算力做法，但微软证明了：“如果将喂给模型的数据质量（高质量的教科书数据或合成数据）提升到极致，即使是很小的参数量也能拥有媲美GPT-3.5级别的智能。”
+Phi-3不被称为[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)（Large Language Model），而是被称为 **SLM（Small Language Model）** 。
 
 ```mermaid
 graph TD
@@ -238,7 +238,7 @@ $$ T = \frac{\text{BW}}{M_{\text{weights}}} $$
 - $\text{BW}$: GPU的实际有效内存带宽 (GB/s)
 - $M_{\text{weights}}$: 模型加载后的大小 (GB)
 
-例如，在NVIDIA RTX 4090（内存带宽 1,008 GB/s）上运行Llama 3 8B的4-bit版本（约 4.5 GB）的情况。如果假设实际有效带宽为理论值的约80%（约 800 GB/s）：
+例如，在[NVIDIA](/zh-cn/p/history-of-nvidia/) RTX 4090（内存带宽 1,008 GB/s）上运行Llama 3 8B的4-bit版本（约 4.5 GB）的情况。如果假设实际有效带宽为理论值的约80%（约 800 GB/s）：
 
 $$ T \approx \frac{800}{4.5} \approx 177 \text{ Tokens/sec} $$
 
@@ -248,7 +248,7 @@ $$ T \approx \frac{800}{4.5} \approx 177 \text{ Tokens/sec} $$
 
 # 运行本地LLM的工具
 
-如今，用于在本地环境中运行这些强大开源LLM的软件生态系统也已经非常完善。下面介绍3款代表性的工具。
+如今，用于在本地环境中运行这些强大开源[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)的软件生态系统也已经非常完善。下面介绍3款代表性的工具。
 
 ### 1. Ollama
 目前最简单也最受欢迎的工具。就像[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/)一样，只需输入一条命令就能完成模型的下载和运行。全面支持Mac、Windows和Linux。
@@ -269,7 +269,7 @@ ollama run llama3
 
 # 总结与未来展望
 
-本文介绍了在2026年当下最顶级的5款开源本地LLM，并对其架构和技术背景进行了解析。根据不同目的的选型指南总结如下：
+本文介绍了在2026年当下最顶级的5款开源本地[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)，并对其架构和技术背景进行了解析。根据不同目的的选型指南总结如下：
 
 1. **重视综合平衡与生态系统**: `Llama 3 (8B / 70B)`
 2. **想在Mac等大容量统一内存环境中进行高速推理**: `Mixtral 8x7B`

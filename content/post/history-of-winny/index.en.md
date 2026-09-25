@@ -140,7 +140,7 @@ The case concerned whether providing the software constituted criminal assistanc
 
 Separating metadata from content, reusing copies, and connecting participants with similar interests can use resources efficiently. Yet more copies make recall harder, while additional relays change latency and observation points. Benefits and costs arise from the same mechanisms.
 
-Ask five questions of modern distributed systems too: **How is the first peer found? Where does search happen? Who sends the contents? What is hidden from whom? Who retains control after publication?** Winny provides a concrete way to examine these questions separately.
+Ask five questions of modern [distributed systems](/en/p/cap-theorem-distributed-systems-tradeoff/) too: **How is the first peer found? Where does search happen? Who sends the contents? What is hidden from whom? Who retains control after publication?** Winny provides a concrete way to examine these questions separately.
 
 ## Sources
 

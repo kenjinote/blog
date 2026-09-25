@@ -10,7 +10,7 @@ tags: ["Hilbert", "História da Matemática", "Geometria", "Análise Funcional",
 
 ## 1. Introdução: O Pai da Matemática Moderna
 
-[David Hilbert](https://kenji.blog/pt/p/hilbert/) (23 de janeiro de 1862 – 14 de fevereiro de 1943) foi um matemático alemão, amplamente reconhecido como um dos mais influentes e brilhantes matemáticos do final do século XIX e início do século XX. Frequentemente comparado ao seu brilhante contemporâneo francês Henri Poincaré, Hilbert enfatizava a lógica estrita e o formalismo, em contraste com a dependência de Poincaré da intuição. [Hilbert](https://kenji.blog/pt/p/hilbert/) influenciou profundamente quase todos os campos da matemática moderna, ganhando o apelido de **"O Rei da Matemática"**.
+[David Hilbert](https://kenji.blog/pt/p/hilbert/) (23 de janeiro de 1862 – 14 de fevereiro de 1943) foi um matemático alemão, amplamente reconhecido como um dos mais influentes e brilhantes matemáticos do final do século XIX e início do século XX. Frequentemente comparado ao seu brilhante contemporâneo francês [Henri Poincaré](/pt/p/poincare/), Hilbert enfatizava a lógica estrita e o formalismo, em contraste com a dependência de Poincaré da intuição. [Hilbert](https://kenji.blog/pt/p/hilbert/) influenciou profundamente quase todos os campos da matemática moderna, ganhando o apelido de **"O Rei da Matemática"**.
 
 Suas contribuições abrangem a teoria dos invariantes, teoria dos números algébricos, axiomatização da geometria, equações integrais, análise funcional (espaços de [Hilbert](https://kenji.blog/pt/p/hilbert/)) e física teórica (os fundamentos matemáticos da relatividade geral). Seu maior legado reside não apenas na resolução de problemas em aberto isolados, mas em reimaginar fundamentalmente a estrutura e a natureza da própria matemática, estabelecendo os novos paradigmas do axiomatismo e formalismo. Neste artigo, damos uma olhada profunda e detalhada nos episódios dramáticos da vida de [Hilbert](https://kenji.blog/pt/p/hilbert/) e em suas brilhantes realizações.
 
@@ -18,7 +18,7 @@ Suas contribuições abrangem a teoria dos invariantes, teoria dos números alg�
 
 [Hilbert](https://kenji.blog/pt/p/hilbert/) nasceu em 23 de janeiro de 1862, em Wehlau, perto de Königsberg (agora Kaliningrado, Rússia), a capital da Província da Prússia Oriental no Reino da Prússia. Seu pai, Otto Hilbert, era um rígido juiz distrital. Sua mãe, Maria Therese, era uma mulher bem-educada com um profundo interesse em filosofia e astronomia. Diz-se que [Hilbert](https://kenji.blog/pt/p/hilbert/) herdou seu pensamento lógico e sede de conhecimento de seus pais.
 
-Königsberg era uma cidade com raízes acadêmicas profundas; foi o local de nascimento do grande filósofo Immanuel Kant e famosa pelo problema das "Sete Pontes de Königsberg" resolvido por [Leonhard Euler](https://kenji.blog/pt/p/euler/). Durante seus dias de escola, as notas de [Hilbert](https://kenji.blog/pt/p/hilbert/) não eram notáveis, mas ele possuía uma intuição e paixão especiais pela matemática. Ele detestava a memorização mecânica, preferindo resolver problemas construindo a lógica do zero em sua própria mente. Essa abordagem — construir a partir de fundamentos lógicos em vez de depender da memorização — tornou-se o núcleo de seu estilo matemático posterior.
+Königsberg era uma cidade com raízes acadêmicas profundas; foi o local de nascimento do grande filósofo [Immanuel Kant](/pt/p/biography-immanuel-kant/) e famosa pelo problema das "Sete Pontes de Königsberg" resolvido por [Leonhard Euler](https://kenji.blog/pt/p/euler/). Durante seus dias de escola, as notas de [Hilbert](https://kenji.blog/pt/p/hilbert/) não eram notáveis, mas ele possuía uma intuição e paixão especiais pela matemática. Ele detestava a memorização mecânica, preferindo resolver problemas construindo a lógica do zero em sua própria mente. Essa abordagem — construir a partir de fundamentos lógicos em vez de depender da memorização — tornou-se o núcleo de seu estilo matemático posterior.
 
 ### "Caminhadas Matemáticas" e Amigos Para a Vida Toda
 
@@ -47,21 +47,21 @@ Reza a lenda que, ao ver essa prova abstrata completamente desprovida de cálcul
 
 Seguindo seu sucesso na teoria dos invariantes, [Hilbert](https://kenji.blog/pt/p/hilbert/) voltou-se para a teoria dos números algébricos. Encarregado pela Sociedade Matemática Alemã em 1897, ele foi o autor do "Zahlbericht" (Relatório sobre os Números), uma obra monumental que sintetizou o conhecimento existente da teoria dos números algébricos e a reconstruiu a partir de uma perspectiva totalmente nova.
 
-Neste relatório, ele aplicou a teoria de [Galois](https://kenji.blog/pt/p/galois/) à teoria dos números, estabelecendo as bases para a teoria dos corpos de classes de Hilbert. A teoria dos corpos de classes, mais tarde aperfeiçoada por Teiji Takagi e Emil Artin, é considerada uma das mais belas teorias da teoria dos números do século XX. [Hilbert](https://kenji.blog/pt/p/hilbert/) conseguiu unificar resultados aparentemente díspares na teoria dos números sob leis superiores e belas.
+Neste relatório, ele aplicou a teoria de [Galois](https://kenji.blog/pt/p/galois/) à teoria dos números, estabelecendo as bases para a teoria dos corpos de classes de Hilbert. A teoria dos corpos de classes, mais tarde aperfeiçoada por [Teiji Takagi](/pt/p/takagi-teiji/) e Emil Artin, é considerada uma das mais belas teorias da teoria dos números do século XX. [Hilbert](https://kenji.blog/pt/p/hilbert/) conseguiu unificar resultados aparentemente díspares na teoria dos números sob leis superiores e belas.
 
 ## 5. Axiomatização da Geometria: A Filosofia de "Mesas, Cadeiras e Canecas de Cerveja"
 
 Em 1899, [Hilbert](https://kenji.blog/pt/p/hilbert/) publicou o livro "Grundlagen der Geometrie" (Fundamentos da Geometria). Ele reconstruiu completamente o sistema axiomático da geometria euclidiana, que tinha sido o alicerce absoluto da geometria por mais de 2000 anos, de uma perspectiva moderna.
 
-Os "Elementos" de [Euclides](https://kenji.blog/p/euclid/) continham várias suposições implícitas e elementos que dependiam da intuição visual. [Hilbert](https://kenji.blog/pt/p/hilbert/) os eliminou rigorosamente, apresentando um sistema axiomático estritamente definido composto por cinco grupos: axiomas de incidência, ordem, congruência, paralelismo e continuidade.
+Os "Elementos" de [Euclides](https://kenji.blog/pt/p/euclid/) continham várias suposições implícitas e elementos que dependiam da intuição visual. [Hilbert](https://kenji.blog/pt/p/hilbert/) os eliminou rigorosamente, apresentando um sistema axiomático estritamente definido composto por cinco grupos: axiomas de incidência, ordem, congruência, paralelismo e continuidade.
 
 Ele declarou famosamente: **"Deve-se sempre poder dizer — em vez de pontos, linhas retas e planos — mesas, cadeiras e canecas de cerveja."** Esta foi uma declaração retumbante do **formalismo**, despojando a geometria de qualquer realidade intuitiva ou física sobre o que são os objetos, e estabelecendo apenas as relações lógicas entre os objetos como a base da matemática. Esta abordagem inovadora tornou-se o estilo padrão do método axiomático na matemática moderna.
 
 ## 6. Convite para a Universidade de Göttingen e o Amanhecer de uma Era de Ouro
 
-Em 1895, graças à forte recomendação de Felix Klein, um peso-pesado da matemática alemã, [Hilbert](https://kenji.blog/pt/p/hilbert/) foi nomeado professor na Universidade de Göttingen. Göttingen já era conhecida como um solo sagrado para a matemática, tendo abrigado Carl Friedrich Gauss e [Bernhard Riemann](https://kenji.blog/pt/p/riemann/) no passado.
+Em 1895, graças à forte recomendação de Felix Klein, um peso-pesado da matemática alemã, [Hilbert](https://kenji.blog/pt/p/hilbert/) foi nomeado professor na Universidade de Göttingen. Göttingen já era conhecida como um solo sagrado para a matemática, tendo abrigado [Carl Friedrich Gauss](/pt/p/gauss/) e [Bernhard Riemann](https://kenji.blog/pt/p/riemann/) no passado.
 
-Com a chegada de [Hilbert](https://kenji.blog/pt/p/hilbert/), Göttingen se restabeleceu firmemente como o principal centro matemático do mundo. Suas palestras eram sempre claras e transbordantes de paixão por novas ideias matemáticas, atraindo estudantes brilhantes e pesquisadores de todo o globo. Muitas superestrelas que mais tarde liderariam a matemática do século XX, como Emmy Noether, Hermann Weyl, Richard Courant e John von Neumann, foram orientados por [Hilbert](https://kenji.blog/pt/p/hilbert/).
+Com a chegada de [Hilbert](https://kenji.blog/pt/p/hilbert/), Göttingen se restabeleceu firmemente como o principal centro matemático do mundo. Suas palestras eram sempre claras e transbordantes de paixão por novas ideias matemáticas, atraindo estudantes brilhantes e pesquisadores de todo o globo. Muitas superestrelas que mais tarde liderariam a matemática do século XX, como [Emmy Noether](/pt/p/noether/), Hermann Weyl, Richard Courant e [John von Neumann](/pt/p/von-neumann/), foram orientados por [Hilbert](https://kenji.blog/pt/p/hilbert/).
 
 A anedota sobre [Emmy Noether](https://kenji.blog/pt/p/noether/) é particularmente famosa. Na época, as regras da universidade proibiam mulheres de ocupar cargos acadêmicos. [Hilbert](https://kenji.blog/pt/p/hilbert/), valorizando muito o seu excepcional talento em álgebra, protestou ferozmente na reunião do conselho de professores, declarando: **"O senado da universidade não é uma casa de banhos, portanto o sexo não importa!"** Esta declaração ilustra vividamente o seu caráter progressista, meritocrático e sem preconceitos.
 
@@ -71,7 +71,7 @@ Em 1900, no segundo Congresso Internacional de Matemáticos (ICM) realizado em P
 
 Estes problemas englobavam todos os campos da matemática na época e serviram como uma enorme força motriz para o desenvolvimento matemático subsequente. Aqui estão alguns dos mais famosos:
 
-1. **A Hipótese do Contínuo** (1º Problema): Existe um conjunto cuja cardinalidade está estritamente entre a dos inteiros e a dos números reais? Mais tarde, Gödel e Cohen provaram que isto é independente dos axiomas padrão ZFC.
+1. **A [Hipótese do Contínuo](/pt/p/continuum-hypothesis/)** (1º Problema): Existe um conjunto cuja cardinalidade está estritamente entre a dos inteiros e a dos números reais? Mais tarde, Gödel e Cohen provaram que isto é independente dos axiomas padrão ZFC.
 2. **A Consistência dos Axiomas da Aritmética** (2º Problema): Prove que os axiomas da aritmética são consistentes usando apenas métodos finitistas.
 3. **A Igualdade de Volumes de Dois Tetraedros com Bases e Alturas Iguais** (3º Problema): Podem dois desses poliedros sempre ser particionados em um número finito de peças e remontados um no outro? Isso foi resolvido negativamente por seu aluno Max Dehn.
 6. **Axiomatização da Física** (6º Problema): Axiomatizar ramos da física onde a matemática desempenha um papel crucial, como a teoria das probabilidades e a mecânica.
@@ -95,7 +95,7 @@ $$
 
 Aqui, $x, y, x_1, x_2 \in \mathcal{H}$ e $a, b \in \mathbb{C}$ (números complexos), e $\overline{\langle y, x \rangle}$ denota o complexo conjugado. A norma é induzida por $\|x\| = \sqrt{\langle x, x \rangle}$.
 
-Surpreendentemente, essa teoria abstrata, que [Hilbert](https://kenji.blog/pt/p/hilbert/) construiu por pura curiosidade matemática, provou-se, décadas depois, ser a linguagem matemática perfeita para descrever os estados dos sistemas físicos na nascente mecânica quântica. Quando Werner Heisenberg formulou a mecânica matricial e Erwin Schrödinger formulou a mecânica ondulatória, a teoria dos espaços de [Hilbert](https://kenji.blog/pt/p/hilbert/) tornou-se uma ferramenta indispensável, principalmente através do trabalho de John von Neumann. É um exemplo impressionante da matemática antecipando a física.
+Surpreendentemente, essa teoria abstrata, que [Hilbert](https://kenji.blog/pt/p/hilbert/) construiu por pura curiosidade matemática, provou-se, décadas depois, ser a linguagem matemática perfeita para descrever os estados dos sistemas físicos na nascente mecânica quântica. Quando Werner Heisenberg formulou a mecânica matricial e Erwin Schrödinger formulou a mecânica ondulatória, a teoria dos espaços de [Hilbert](https://kenji.blog/pt/p/hilbert/) tornou-se uma ferramenta indispensável, principalmente através do trabalho de [John von Neumann](/pt/p/von-neumann/). É um exemplo impressionante da matemática antecipando a física.
 
 ## 9. Incursão na Física e a Ação de Einstein-[Hilbert](https://kenji.blog/pt/p/hilbert/)
 
@@ -113,7 +113,7 @@ Embora uma disputa de prioridade pudesse ter surgido entre Einstein e [Hilbert](
 
 ## 10. O Programa de [Hilbert](https://kenji.blog/pt/p/hilbert/): A Busca Pela Consistência Absoluta na Matemática
 
-Após a Primeira Guerra Mundial, em resposta à "crise dos fundamentos da matemática" desencadeada por paradoxos na teoria dos conjuntos (como o paradoxo de Russell), [Hilbert](https://kenji.blog/pt/p/hilbert/) propôs o projeto mais ambicioso de sua vida: **O Programa de [Hilbert](https://kenji.blog/pt/p/hilbert/)**.
+Após a Primeira Guerra Mundial, em resposta à "crise dos fundamentos da matemática" desencadeada por paradoxos na teoria dos conjuntos (como o [paradoxo de Russell](/pt/p/russells-paradox/)), [Hilbert](https://kenji.blog/pt/p/hilbert/) propôs o projeto mais ambicioso de sua vida: **O Programa de [Hilbert](https://kenji.blog/pt/p/hilbert/)**.
 
 Ele procurou reconstruir toda a matemática como um "sistema formal", tratando todas as proposições matemáticas como cadeias de símbolos sem sentido e manipulando-as de acordo com regras mecânicas de inferência. O seu objetivo era provar matematicamente — usando apenas o raciocínio finitista e seguro — que contradições como " $0 = 1$ " absolutamente nunca poderiam ser derivadas dentro daquele sistema (consistência).
 

@@ -47,7 +47,7 @@ Di Git, "salinan repositori yang lengkap" ada di mesin lokal setiap orang. Bahka
 
 Konsep paling penting untuk memahami struktur internal Git adalah "DAG (Directed Acyclic Graph: Grafik Asiklik Berarah)". Git tidak mengelola riwayat sekadar sebagai "serangkaian patch (perbedaan)", melainkan membangun hubungan antar snapshot sebagai DAG.
 
-Setiap commit memiliki pointer (tree) ke snapshot dari keseluruhan proyek pada saat itu, dan pointer ke satu atau lebih "commit induk". Melalui rangkaian struktur data sederhana ini, Git merepresentasikan percabangan dan penggabungan riwayat yang kompleks sebagai grafik yang konsisten secara matematis.
+Setiap commit memiliki [pointer](/id/p/c-language-pointers-memory-management-stack-heap/) (tree) ke snapshot dari keseluruhan proyek pada saat itu, dan [pointer](/id/p/c-language-pointers-memory-management-stack-heap/) ke satu atau lebih "commit induk". Melalui rangkaian struktur data sederhana ini, Git merepresentasikan percabangan dan penggabungan riwayat yang kompleks sebagai grafik yang konsisten secara matematis.
 
 Keindahan pendekatan ini terletak pada bagaimana riwayat diekspresikan secara alami, bukan sebagai "satu garis lurus", melainkan sebagai "beberapa garis waktu yang berjalan secara paralel". Pengembang bebas mencabangkan riwayat, bereksperimen, dan membuang cabang tersebut jika gagal, atau menggabungkannya ke arus utama jika berhasil. Riwayat bukan sekadar catatan masa lalu, melainkan menjadi "jejak pemikiran" dari pengembang itu sendiri.
 
@@ -55,7 +55,7 @@ Keindahan pendekatan ini terletak pada bagaimana riwayat diekspresikan secara al
 
 Dalam SVN, membuat cabang berarti menyalin direktori, yang merupakan operasi berat serta menghabiskan waktu dan ruang disk. Oleh karena itu, membuat cabang adalah peristiwa khusus dengan hambatan psikologis yang tinggi.
 
-Namun di Git, cabang hanyalah "pointer dinamis yang menunjuk ke commit tertentu (nilai hash 40 karakter dalam sebuah file)". Biaya untuk membuat cabang secara harfiah mendekati nol.
+Namun di Git, cabang hanyalah "[pointer](/id/p/c-language-pointers-memory-management-stack-heap/) dinamis yang menunjuk ke commit tertentu (nilai hash 40 karakter dalam sebuah file)". Biaya untuk membuat cabang secara harfiah mendekati nol.
 
 Desain "Cabang Murah" (Cheap Branches) ini mengubah metodologi pengembangan itu sendiri. Konsep-konsep seperti cabang fitur (feature branch) dan cabang topik (topic branch) lahir, dan praktik "sekecil apa pun perubahannya, buat cabang terlebih dahulu untuk bereksperimen" menjadi mapan. Ini memberi pengembang "kebebasan untuk mencoba dan membuat kesalahan tanpa takut gagal".
 
@@ -78,7 +78,7 @@ graph TD
 
 Jika konten file berubah walau hanya 1 byte, nilai hash file tersebut akan berubah, nilai hash dari tree yang menyertainya akan berubah, dan pada akhirnya nilai hash dari commit juga akan berubah. Dengan kata lain, secara kriptografi mustahil untuk memalsukan sebagian dari riwayat secara diam-diam.
 
-Linus Torvalds, dalam merancang Git, memiliki tekad yang kuat bahwa "perusakan atau pemalsuan data sama sekali tidak dapat ditoleransi". Model hash Git mewujudkan bentuk pamungkas dari desentralisasi—mirip dengan blockchain—yang menanamkan kepercayaan pada data itu sendiri tanpa bergantung pada otoritas pusat (server).
+Linus Torvalds, dalam merancang Git, memiliki tekad yang kuat bahwa "perusakan atau pemalsuan data sama sekali tidak dapat ditoleransi". Model hash Git mewujudkan bentuk pamungkas dari desentralisasi—mirip dengan [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/)—yang menanamkan kepercayaan pada data itu sendiri tanpa bergantung pada otoritas pusat (server).
 
 ## 5. Penggabungan dan Dialog: Pemrograman sebagai Proses Sosial
 

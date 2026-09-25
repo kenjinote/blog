@@ -38,7 +38,7 @@ Pero esto, **realmente es más del 50%.**
 
 ## ¿Por qué ocurre esto?
 
-Este fenómeno se llama la "paradoja del cumpleaños".
+Este fenómeno se llama la "[paradoja del cumpleaños](/es/p/birthday-paradox/)".
 El nombre incluye "paradoja", pero tiene una razón matemática sólida.
 
 Si el número de personas es "n", **la probabilidad de que nadie comparta cumpleaños** se puede calcular con la siguiente fórmula:
@@ -68,7 +68,7 @@ Parece bastante aplicable a una clase en la escuela o a una reunión en el traba
 
 ## Resumen: La brecha entre la intuición y las matemáticas es interesante
 
-La "paradoja del cumpleaños" es un ejemplo interesante de cómo nuestra intuición y la probabilidad matemática real difieren.
+La "[paradoja del cumpleaños](/es/p/birthday-paradox/)" es un ejemplo interesante de cómo nuestra intuición y la probabilidad matemática real difieren.
 ¡Saber este tipo de cosas puede ser divertido para una charla casual o un juego de preguntas!
 
 ---

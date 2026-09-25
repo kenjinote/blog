@@ -12,9 +12,9 @@ description: 'LLM 학습 및 추론에서 가장 큰 장벽이 되는 VRAM(GPU �
 
 # 서론: AI 개발과 'VRAM의 벽'
 
-최근 대규모 언어 모델([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))이나 확산 모델(Diffusion Models) 등 생성형 AI 기술이 급속한 발전을 이루고 있습니다. 하지만 이러한 최첨단 AI 모델을 로컬 환경에서 학습(파인 튜닝)하거나 추론(Inference)을 실행할 때, 많은 개발자와 연구자가 직면하는 것이 **'GPU 메모리(VRAM) 부족'** 이라는 극히 물리적인 장벽입니다.
+최근 [대규모 언어 모델](/ko/p/large-language-models-llm-transformer-prompt-engineering/)([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))이나 확산 모델(Diffusion Models) 등 생성형 AI 기술이 급속한 발전을 이루고 있습니다. 하지만 이러한 최첨단 AI 모델을 로컬 환경에서 학습(파인 튜닝)하거나 추론(Inference)을 실행할 때, 많은 개발자와 연구자가 직면하는 것이 **'GPU 메모리(VRAM) 부족'** 이라는 극히 물리적인 장벽입니다.
 
-NVIDIA GeForce RTX 4090과 같은 소비자용 하이엔드 GPU라 하더라도 VRAM은 최대 24GB이며, Llama 3 70B와 같은 거대한 모델을 그대로 로드하는 것은 도저히 불가능합니다. 데이터 센터용인 H100(80GB)나 B200(192GB) 등은 매우 고가여서, 개인이나 소규모 팀이 쉽게 다룰 수 있는 것이 아닙니다. 이 'VRAM의 벽(The Wall of VRAM)'을 돌파하지 못하면 최첨단 모델을 만져볼 수조차 없습니다.
+[NVIDIA](/ko/p/history-of-nvidia/) GeForce RTX 4090과 같은 소비자용 하이엔드 GPU라 하더라도 VRAM은 최대 24GB이며, Llama 3 70B와 같은 거대한 모델을 그대로 로드하는 것은 도저히 불가능합니다. 데이터 센터용인 H100(80GB)나 B200(192GB) 등은 매우 고가여서, 개인이나 소규모 팀이 쉽게 다룰 수 있는 것이 아닙니다. 이 'VRAM의 벽(The Wall of VRAM)'을 돌파하지 못하면 최첨단 모델을 만져볼 수조차 없습니다.
 
 본 기사에서는 이 VRAM 제한이라는 물리적인 제약을 소프트웨어 및 하드웨어 아키텍처의 연구를 통해 타파하기 위한 고도의 테크닉을 추론과 학습 양면에서 철저하게 해설합니다. CPU 오프로딩, KV 캐시 최적화, 그래디언트 체크포인트(Gradient Checkpointing), 그리고 최신 통합 메모리(Unified Memory) 아키텍처까지 수식과 도해를 곁들여 깊이 파헤쳐 보겠습니다. 이 기사를 읽으면 VRAM의 동작을 깊이 이해하고, 한정된 리소스로 거대한 모델을 다루기 위한 실천적인 지식을 얻을 수 있습니다.
 
@@ -32,13 +32,13 @@ AI 모델을 구성하는 파라미터(Weights)가 소비하는 기본적인 메
 - **FP32 (단정밀도 부동소수점):** 4 bytes (표준적인 학습 시의 정밀도)
 - **FP16 / BF16 (반정밀도 부동소수점):** 2 bytes (일반적인 추론 및 혼합 정밀도 학습)
 - **INT8 (8비트 정수):** 1 byte (양자화 모델)
-- **INT4 (4비트 정수 양자화):** 0.5 bytes (GPTQ, AWQ, GGUF 등의 극단적인 양자화)
+- **INT4 (4비트 정수 양자화):** 0.5 bytes (GPTQ, AWQ, [GGUF](/ko/p/llama-cpp-quantization-gguf/) 등의 극단적인 양자화)
 
 모델 전체의 파라미터 수를 $P$라고 할 때, 가중치 자체가 점유하는 베이스 메모리 양 $M_{weights}$는 다음 수식으로 표현됩니다.
 
 $$ M_{weights} = P \times B $$
 
-예를 들어, Meta가 공개한 'Llama 3 8B' 모델(약 80억 파라미터)을 FP16(반정밀도)으로 로드할 경우 다음과 같이 계산됩니다.
+예를 들어, [Meta](/ko/p/history-of-meta-facebook/)가 공개한 'Llama 3 8B' 모델(약 80억 파라미터)을 FP16(반정밀도)으로 로드할 경우 다음과 같이 계산됩니다.
 
 $$ M_{weights} = 8,000,000,000 \times 2 \text{ bytes} \approx 16,000,000,000 \text{ bytes} \approx 16 \text{ GB} $$
 
@@ -46,7 +46,7 @@ $$ M_{weights} = 8,000,000,000 \times 2 \text{ bytes} \approx 16,000,000,000 \te
 
 ## 1.2 추론 시의 메모리 소비: KV 캐시의 증대
 
-LLM의 추론(특히 자기회귀적인 텍스트 생성)에서 가중치와 같거나 그 이상으로 VRAM을 강하게 압박하는 것이 **KV 캐시([Key-Value](https://kenji.blog/ko/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache)** 입니다.
+[LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 추론(특히 자기회귀적인 텍스트 생성)에서 가중치와 같거나 그 이상으로 VRAM을 강하게 압박하는 것이 **KV 캐시([Key-Value](https://kenji.blog/ko/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache)** 입니다.
 [Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 아키텍처에서는 과거에 생성·처리한 토큰의 정보를 재계산하는 것을 방지하기 위해, 각 어텐션 층에서의 Key와 Value 텐서를 VRAM에 계속 캐시합니다. 이로 인해 계산 속도(Compute)는 향상되지만, 컨텍스트 길이(입력 프롬프트 길이 + 생성 길이)가 길어짐에 따라 메모리 소비량이 선형적으로 폭발적으로 증가합니다.
 
 1 토큰을 처리할 때 소비되는 KV 캐시의 메모리 양 $M_{kv\_token}$은 모델의 아키텍처를 기반으로 다음 수식으로 엄밀하게 계산됩니다.

@@ -14,7 +14,7 @@ Die Erde hat eine Form, die einer dreidimensionalen Kugel nahekommt (streng geno
 
 ## 1. Das mathematische Dilemma, eine Kugel auf einer Ebene zu zeichnen
 
-Um über die Geschichte der Kartenprojektionen zu sprechen, müssen wir zunächst die grundlegende mathematische Prämisse verstehen, die von "Carl Friedrich Gauß" bewiesen wurde. Der große Mathematiker Gauß aus dem 19. Jahrhundert leitete einen Lehrsatz der Differentialgeometrie ab, der als "Theorema Egregium" (Hervorragender Satz) bezeichnet wird. Nach diesem Satz hat die Gaußsche Krümmung einer Fläche die Eigenschaft, dass sie sich nicht ändert, selbst wenn die Fläche gebogen wird.
+Um über die Geschichte der Kartenprojektionen zu sprechen, müssen wir zunächst die grundlegende mathematische Prämisse verstehen, die von "[Carl Friedrich Gauß](/de/p/gauss/)" bewiesen wurde. Der große Mathematiker Gauß aus dem 19. Jahrhundert leitete einen Lehrsatz der Differentialgeometrie ab, der als "Theorema Egregium" (Hervorragender Satz) bezeichnet wird. Nach diesem Satz hat die Gaußsche Krümmung einer Fläche die Eigenschaft, dass sie sich nicht ändert, selbst wenn die Fläche gebogen wird.
 
 Die Gaußsche Krümmung einer Kugel wie der Erde ist positiv, während die Gaußsche Krümmung einer Ebene null ist. Daher ist es mathematisch unmöglich, Flächen mit unterschiedlichen Gaußschen Krümmungen ohne Dehnung, Schrumpfung oder Risse aufeinander abzubilden. Es ist dasselbe Prinzip wie die Tatsache, dass man eine Mandarinenschale nicht schälen und nahtlos zu einem einzigen flachen Rechteck ausdehnen kann.
 

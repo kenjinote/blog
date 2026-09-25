@@ -77,14 +77,14 @@ Lo que se usa en los [RDBMS](https://kenji.blog/es/p/rdbms-transaction-acid-isol
 
 ### 4.1 Diferencias entre B-Tree y B+Tree
 
-En un B-Tree, los datos reales (o punteros a los datos) se almacenan tanto en los nodos internos como en los nodos hoja. Por otro lado, el **B+Tree** tiene las siguientes características.
+En un B-Tree, los datos reales (o [punteros](/es/p/c-language-pointers-memory-management-stack-heap/) a los datos) se almacenan tanto en los nodos internos como en los nodos hoja. Por otro lado, el **B+Tree** tiene las siguientes características.
 
 1. **Todos los datos se almacenan únicamente en los nodos hoja**. Los nodos internos solo mantienen las claves (índices) para el enrutamiento.
-2. **Los nodos hoja están conectados entre sí mediante una lista enlazada (punteros)**. Esto hace que el acceso secuencial y las consultas de rango (Range Query) sean extremadamente rápidos.
+2. **Los nodos hoja están conectados entre sí mediante una lista enlazada ([punteros](/es/p/c-language-pointers-memory-management-stack-heap/))**. Esto hace que el acceso secuencial y las consultas de rango (Range Query) sean extremadamente rápidos.
 
 ### 4.2 Razones para adoptar el B+Tree
 
-Al eliminar los punteros a datos reales de los nodos internos, es posible empaquetar más claves en un solo nodo interno (página). Esto incrementa aún más el número de ramificaciones (Fan-out), mantiene la altura del árbol $ h $ más baja y reduce la cantidad de I/O de disco.
+Al eliminar los [punteros](/es/p/c-language-pointers-memory-management-stack-heap/) a datos reales de los nodos internos, es posible empaquetar más claves en un solo nodo interno (página). Esto incrementa aún más el número de ramificaciones (Fan-out), mantiene la altura del árbol $ h $ más baja y reduce la cantidad de I/O de disco.
 
 Además, en búsquedas de rango que se utilizan con frecuencia en SQL como `WHERE id BETWEEN 10 AND 100`, un B-[Tree](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) requiere atravesar el árbol muchas veces. Sin embargo, con un **B+Tree**, una vez que se encuentra el nodo hoja de inicio, los datos se pueden leer continuamente simplemente siguiendo los enlaces de los nodos hoja.
 
@@ -118,7 +118,7 @@ graph TD
 
 ## 5. Ejemplo de implementación del B-Tree (Simulación en Python)
 
-Aquí implementaremos en Python la estructura básica del nodo de un B-Tree, y los algoritmos de búsqueda e inserción para profundizar nuestra comprensión.
+Aquí implementaremos en Python la estructura básica del nodo de un B-Tree, y los [algoritmos de búsqueda](/es/p/search-algorithms-linear-binary-hash-table-principles/) e inserción para profundizar nuestra comprensión.
 
 ```python
 class BTreeNode:

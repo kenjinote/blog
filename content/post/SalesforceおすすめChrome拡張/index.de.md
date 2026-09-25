@@ -26,6 +26,6 @@ Es ist auch praktisch, SOQL vor Ort erstellen zu können.
 
 ![img.png](img.webp)
 
-Nützlich bei der Suche nach Salesforce-Code.
+Nützlich bei der Suche nach [Salesforce](/de/p/salesforcechatter%E5%85%A8%E6%B6%88%E3%81%97befehl/)-Code.
 
 [Salesforce advanced Code searcher](https://chrome.google.com/webstore/detail/salesforce-advanced-code/lnkgcmpjkkkeffambkllliefdpjdklmi)

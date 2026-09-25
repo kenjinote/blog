@@ -92,7 +92,7 @@ Bakat Gauss tidak terbatas pada matematika murni; ia juga mencapai hasil yang fe
 
 Pada tanggal 1 Januari 1801, astronom Italia Giuseppe Piazzi menemukan benda langit baru (kemudian disebut planet katai Ceres). Namun, setelah beberapa hari observasi, benda langit itu bersembunyi di balik matahari dan hilang dari pandangan. Para astronom pada waktu itu berusaha memprediksi orbitnya selanjutnya hanya dari beberapa hari data observasi, namun semuanya gagal.
 
-Di sinilah Gauss masuk. Ia menghitung orbit Ceres menggunakan teknik matematika baru yang secara rahasia telah ia bangun selama beberapa waktu, **"[Metode Kuadrat Terkecil](https://kenji.blog/id/p/method-of-least-squares/)"**. Metode kuadrat terkecil adalah teknik untuk memperkirakan parameter yang paling mungkin untuk meminimalkan kesalahan yang terkandung dalam data pengamatan.
+Di sinilah Gauss masuk. Ia menghitung orbit Ceres menggunakan teknik matematika baru yang secara rahasia telah ia bangun selama beberapa waktu, **"[Metode Kuadrat Terkecil](https://kenji.blog/id/p/method-of-least-squares/)"**. [Metode kuadrat terkecil](/id/p/method-of-least-squares/) adalah teknik untuk memperkirakan parameter yang paling mungkin untuk meminimalkan kesalahan yang terkandung dalam data pengamatan.
 
 Dengan asumsi nilai yang diamati adalah $y_i$ dan nilai teoritisnya adalah $f(x_i, \boldsymbol{\theta})$, kita menemukan parameter $\boldsymbol{\theta}$ yang meminimalkan jumlah kesalahan kuadrat $S$.
 
@@ -128,7 +128,7 @@ Menurut teorema ini, terbukti secara matematis bahwa, misalnya, tidak peduli bag
 
 ## 6. Distribusi Gaussian dan Elektromagnetisme
 
-**"Distribusi Normal"**, distribusi yang paling penting dalam statistik, sering disebut **"Distribusi Gaussian"**. Dalam membenarkan metode kuadrat terkecil yang disebutkan di atas, Gauss mengasumsikan bahwa kesalahan observasi mengikuti distribusi normal. Fungsi kepadatan probabilitas $f(x)$ dinyatakan dengan rumus berikut:
+**"Distribusi Normal"**, distribusi yang paling penting dalam statistik, sering disebut **"Distribusi Gaussian"**. Dalam membenarkan [metode kuadrat terkecil](/id/p/method-of-least-squares/) yang disebutkan di atas, Gauss mengasumsikan bahwa kesalahan observasi mengikuti distribusi normal. Fungsi kepadatan probabilitas $f(x)$ dinyatakan dengan rumus berikut:
 
 $$
 f(x) = \frac{1}{\sigma \sqrt{2\pi}} \exp\left( -\frac{1}{2} \left( \frac{x-\mu}{\sigma} \right)^2 \right)
@@ -158,7 +158,7 @@ Episode yang menunjukkan pandangan ke depan Gauss yang menakjubkan adalah anekdo
 
 Dalam catatan-catatannya yang tidak dipublikasikan, Gauss sepenuhnya sadar akan keberadaan geometri baru (geometri hiperbolik) di mana postulat paralel tidak berlaku, dan telah membangun sistemnya. Namun, dalam lingkaran filosofis konservatif pada saat itu (era di mana filsafat Kantian adalah arus utama), ia khawatir terlibat dalam kritik dan kontroversi yang tidak dipahami (dalam kata-kata Gauss, "teriakan orang-orang Boeotia") jika ia menerbitkan sebuah teori yang menyangkal keabsolutan ruang, sehingga ia tidak pernah mempublikasikannya selama hidupnya.
 
-Kemudian, ketika Nikolai Lobachevsky dan János Bolyai secara independen menerbitkan geometri non-[Euclide](https://kenji.blog/id/p/euclid/)an, Gauss, setelah menerima makalah dari ayah Bolyai (teman lama Gauss), menjawab, "Memujinya sama dengan memuji diri saya sendiri. Karena keseluruhan isi karya tersebut hampir persis sama dengan renungan saya sendiri yang telah memenuhi pikiran saya selama tiga puluh hingga tiga puluh lima tahun." Dikatakan bahwa Bolyai muda sangat kecewa dengan hal ini, tetapi pada saat yang sama, ini berfungsi sebagai bukti betapa jauh di depan zamannya Gauss.
+Kemudian, ketika [Nikolai Lobachevsky](/id/p/biography-nikolai-lobachevsky/) dan János Bolyai secara independen menerbitkan geometri non-[Euclide](https://kenji.blog/id/p/euclid/)an, Gauss, setelah menerima makalah dari ayah Bolyai (teman lama Gauss), menjawab, "Memujinya sama dengan memuji diri saya sendiri. Karena keseluruhan isi karya tersebut hampir persis sama dengan renungan saya sendiri yang telah memenuhi pikiran saya selama tiga puluh hingga tiga puluh lima tahun." Dikatakan bahwa Bolyai muda sangat kecewa dengan hal ini, tetapi pada saat yang sama, ini berfungsi sebagai bukti betapa jauh di depan zamannya Gauss.
 
 ## 8. Tahun-tahun Terakhir dan Warisan
 

@@ -26,6 +26,6 @@ description: 'Представляем рекомендуемые расшире
 
 ![img.png](img.webp)
 
-Это удобно при поиске кода Salesforce.
+Это удобно при поиске кода [Salesforce](/ru/p/salesforce%D0%B4%D1%80%D0%B5%D0%B1%D0%B5%D0%B7%D0%B3-%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%BE%D0%B2%E5%85%A8%E6%B6%88%E3%81%97%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0/).
 
 [Salesforce advanced Code searcher](https://chrome.google.com/webstore/detail/salesforce-advanced-code/lnkgcmpjkkkeffambkllliefdpjdklmi)

@@ -27,7 +27,7 @@ Em contraste, a força dos desenvolvedores solo reside no fato de que o **"ponto
 
 ## [A Lei de Zipf](https://kenji.blog/pt/p/zipfs-law/) ([Zipf's Law](https://kenji.blog/pt/p/zipfs-law/)) e a Distribuição de Mercado
 
-A relação entre o tamanho e o número de mercados frequentemente segue a Lei de Zipf ou o Princípio de Pareto. Seja $k$ a classificação do mercado e $P(k)$ o seu tamanho (potencial de vendas), ela pode ser expressa pelo seguinte modelo de lei de potência:
+A relação entre o tamanho e o número de mercados frequentemente segue [a Lei de Zipf](/pt/p/zipfs-law/) ou o Princípio de Pareto. Seja $k$ a classificação do mercado e $P(k)$ o seu tamanho (potencial de vendas), ela pode ser expressa pelo seguinte modelo de lei de potência:
 
 $$ P(k) \propto \frac{1}{k^\alpha} $$
 
@@ -52,7 +52,7 @@ Os desenvolvedores solo devem focar deliberadamente em problemas altamente espec
 
 Os sistemas das grandes empresas são projetados com "estabilidade" e "escalabilidade" como prioridade máxima, razão pela qual adotam [Kubernetes](https://kenji.blog/pt/p/kubernetes-k8s-architecture-pod-service-ingress/) e arquiteturas de microsserviços. No entanto, se um desenvolvedor solo fizesse o mesmo, os recursos seriam esgotados apenas na manutenção da infraestrutura (Ops).
 
-A palavra de ordem para a stack de tecnologia de um desenvolvedor solo é **"No-Ops" (Zero Operações)**. Utilize a arquitetura serverless ao limite e concentre-se exclusivamente em escrever a lógica de negócios.
+A palavra de ordem para a stack de tecnologia de um desenvolvedor solo é **"No-Ops" (Zero Operações)**. Utilize a [arquitetura serverless](/pt/p/serverless-architecture-aws-lambda-cold-start/) ao limite e concentre-se exclusivamente em escrever a lógica de negócios.
 
 ## Comparação de Arquitetura: Grandes Empresas vs Desenvolvedores Solo
 

@@ -27,7 +27,7 @@ flowchart TD
   E -- "Projeto da IBM" --> F["Deep Blue (1997)"]
 ```
 
-Na década de 1950, Claude Shannon publicou um artigo monumental sobre programas de xadrez, estabelecendo as bases para algoritmos de busca baseados no método Minimax. Posteriormente, entre as décadas de 1970 e 1980, começaram a surgir máquinas equipadas com hardware dedicado ao xadrez. O "Belle" do Bell Labs utilizava circuitos dedicados para examinar dezenas de milhares de posições por segundo, ostentando uma força equivalente à de um mestre.
+Na década de 1950, Claude Shannon publicou um artigo monumental sobre programas de xadrez, estabelecendo as bases para [algoritmos de busca](/pt/p/search-algorithms-linear-binary-hash-table-principles/) baseados no método Minimax. Posteriormente, entre as décadas de 1970 e 1980, começaram a surgir máquinas equipadas com hardware dedicado ao xadrez. O "Belle" do Bell Labs utilizava circuitos dedicados para examinar dezenas de milhares de posições por segundo, ostentando uma força equivalente à de um mestre.
 
 Em seguida, o "Deep Thought", desenvolvido por estudantes da Universidade Carnegie Mellon, tornou-se o primeiro computador a derrotar um grande mestre. A IBM assumiu este projeto, investindo enormes fundos e engenharia de ponta para criar o "Deep Blue".
 

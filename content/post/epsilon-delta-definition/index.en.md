@@ -170,7 +170,7 @@ flowchart LR
 
 ## 7. Conclusion
 
-The intuitive explanation that "$x$ approaches infinitely close to $a$" is highly effective for beginners to grasp the concept of a limit. However, it was insufficient to provide the "absolute certainty" that mathematics requires as a foundation for its structure.
+The intuitive explanation that "$x$ approaches infinitely close to $a$" is highly effective [for beginners](/en/p/leather-goods%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/) to grasp the concept of a limit. However, it was insufficient to provide the "absolute certainty" that mathematics requires as a foundation for its structure.
 
 At first glance, the $\varepsilon-\delta$ definition looks like a daunting string of inequalities, but its essence lies in the **static check of a condition: "Can the error be controlled to be arbitrarily small?"** Replacing the ambiguous concept involving a temporal element of "dynamically approaching" with a logical, static state of "there exists a range satisfying an inequality" was a magnificent paradigm shift by 19th-century mathematicians.
 

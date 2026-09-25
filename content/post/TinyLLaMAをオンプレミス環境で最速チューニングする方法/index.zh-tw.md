@@ -12,7 +12,7 @@ description: '在本地環境中高效且最快地微調 TinyLLaMA 的完整指�
 
 ## 1. 前言：為什麼現在要選擇 TinyLLaMA 與本地部署？
 
-大型語言模型 ([LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)) 的進化正以驚人的速度發展，隨之而來的是模型參數數量也持續膨脹至數千億規模。儘管 GPT-4 或 Claude 3 這樣超巨大的模型擁有無與倫比的效能，但對於企業而言，推論和訓練所需的運算成本，以及使用外部 API 時對安全性與資料隱私的擔憂，已成為巨大的障礙。特別是在處理高度機密的內部資料或個人資訊的業務中，基於合規性（如 GDPR 或 APPI 等）的考量，將資料傳送至雲端上的公開 LLM API 往往是不被允許的。
+[大型語言模型](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) ([LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)) 的進化正以驚人的速度發展，隨之而來的是模型參數數量也持續膨脹至數千億規模。儘管 GPT-4 或 Claude 3 這樣超巨大的模型擁有無與倫比的效能，但對於企業而言，推論和訓練所需的運算成本，以及使用外部 API 時對安全性與資料隱私的擔憂，已成為巨大的障礙。特別是在處理高度機密的內部資料或個人資訊的業務中，基於合規性（如 GDPR 或 APPI 等）的考量，將資料傳送至雲端上的公開 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) API 往往是不被允許的。
 
 因此， **小型語言模型 (SLM: Small Language Models)** 與 ** 在本地環境中進行區域網路運作**正逐漸受到矚目。其中，「 **TinyLLaMA** 」雖然僅有 1.1B（11 億）參數的精簡大小，卻使用了約 3 兆個 Token 的龐大資料集進行預訓練，與同級別的模型相比，展現出驚人的效能。
 
@@ -22,7 +22,7 @@ description: '在本地環境中高效且最快地微調 TinyLLaMA 的完整指�
 
 ## 2. TinyLLaMA 的架構與特徵
 
-TinyLLaMA 沿用了 Meta 公司開發的 LLaMA (Large Language Model Meta AI) 架構。在將參數數量控制在 1.1B 的同時，因為使用了與 LLaMA 2 相同的技術堆疊，其特徵在於生態系統的相容性非常高。
+TinyLLaMA 沿用了 [Meta](/zh-tw/p/history-of-meta-facebook/) 公司開發的 LLaMA (Large Language Model [Meta](/zh-tw/p/history-of-meta-facebook/) AI) 架構。在將參數數量控制在 1.1B 的同時，因為使用了與 LLaMA 2 相同的技術堆疊，其特徵在於生態系統的相容性非常高。
 
 ### 主要架構元件
 
@@ -100,7 +100,7 @@ QLoRA 進一步推廣了 LoRA 的方法，將基礎模型 $W_0$ 以 4-bit 精度
 QLoRA 整合了三個關鍵技術：
 1. **4-bit NormalFloat (NF4) 量化:** 針對服從常態分佈的權重所最佳化，為理論上最佳的資料型態。
 2. **Double Quantization (雙重量化):** 透過將量化常數（縮放因子）本身也進行量化，進一步節省記憶體。
-3. **Paged Optimizers:** 利用 NVIDIA 的統一記憶體功能，當 VRAM 不足時，將最佳化器的狀態暫時轉移至 CPU 的 RAM 上的機制。
+3. **Paged Optimizers:** 利用 [NVIDIA](/zh-tw/p/history-of-nvidia/) 的統一記憶體功能，當 VRAM 不足時，將最佳化器的狀態暫時轉移至 CPU 的 RAM 上的機制。
 
 藉此，通常需要 16GB 至 24GB VRAM 的微調，現在即使是在消費級 GPU（如 RTX 3060 12GB 或 RTX 4070 等）上也能游刃有餘地執行。
 
@@ -357,5 +357,5 @@ python -m vllm.entrypoints.openai.api_server \
 - 靈活運用 **Flash Attention 2** 與 **Gradient Checkpointing** ，將訓練時間與 VRAM 消耗最佳化至極限。
 - 透過活用 **vLLM** 進行部署，在正式環境中也能實現高吞吐量。
 
-在本地運作的 Local LLM，不僅能保護資料的機密性，更是能以低成本建構專注於特定領域（法務、醫療、公司內部規定等）之專業 AI 的最強武器。請務必參考本指南，試著培育出專屬於貴公司的 TinyLLaMA 吧。
+在本地運作的 Local [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)，不僅能保護資料的機密性，更是能以低成本建構專注於特定領域（法務、醫療、公司內部規定等）之專業 AI 的最強武器。請務必參考本指南，試著培育出專屬於貴公司的 TinyLLaMA 吧。
 

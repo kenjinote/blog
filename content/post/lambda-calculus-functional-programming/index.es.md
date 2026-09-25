@@ -27,7 +27,7 @@ En este artículo, exploraremos en detalle el desarrollo histórico y teórico d
 
 ### 2.1 El desafío del problema de decisión (Entscheidungsproblem)
 
-En 1928, el matemático David Hilbert planteó el "problema de decisión (Entscheidungsproblem)". Esta es la pregunta: "Dada una proposición matemática, ¿existe un algoritmo que pueda determinar mecánicamente si es verdadera o falsa?"
+En 1928, el matemático [David Hilbert](/es/p/hilbert/) planteó el "problema de decisión (Entscheidungsproblem)". Esta es la pregunta: "Dada una proposición matemática, ¿existe un algoritmo que pueda determinar mecánicamente si es verdadera o falsa?"
 
 Para responder a esta pregunta, primero fue necesario definir estrictamente qué significa ser "computable" o que "exista un algoritmo". En 1936, hubo dos genios que resolvieron este problema de forma independiente. Uno fue Alan Turing, y el otro fue su supervisor académico, Alonzo Church.
 

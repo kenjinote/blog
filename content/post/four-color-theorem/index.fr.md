@@ -10,7 +10,7 @@ tags: ["Théorème des quatre couleurs", "Théorie des graphes", "Preuve assist�
 
 ## 1. Qu'est-ce que le problème des quatre couleurs ?
 
-Le théorème des quatre couleurs ([Four Color Theorem](https://kenji.blog/fr/p/four-color-theorem/)) est l'un des problèmes les plus célèbres et fascinants des mathématiques, en particulier de la théorie des graphes et de la topologie. Son affirmation est très simple et suffisamment intuitive pour qu'un élève du primaire la comprenne. Elle stipule que « pour colorier n'importe quelle carte sur un plan de telle sorte que les régions adjacentes soient de couleurs différentes, un maximum de **4 couleurs** suffit ».
+Le théorème des quatre couleurs ([Four Color Theorem](https://kenji.blog/fr/p/four-color-theorem/)) est l'un des problèmes les plus célèbres et fascinants des mathématiques, en particulier de la [théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/) et de la topologie. Son affirmation est très simple et suffisamment intuitive pour qu'un élève du primaire la comprenne. Elle stipule que « pour colorier n'importe quelle carte sur un plan de telle sorte que les régions adjacentes soient de couleurs différentes, un maximum de **4 couleurs** suffit ».
 
 Ici, « adjacent » ne désigne pas un point, mais un état de partage d'une ligne de démarcation. S'ils ne se touchent qu'en un point, ce n'est pas un problème de les colorier de la même couleur. Cette hypothèse intuitive a été proposée pour la première fois en 1852 par Francis Guthrie. En coloriant une carte des comtés d'Angleterre, il s'est rendu compte que, quelle que soit la complexité de leurs frontières, quatre couleurs suffisaient pour les distinguer.
 
@@ -28,7 +28,7 @@ Cependant, en 1890, Percy Heawood découvrit un défaut fatal dans la preuve de 
 
 ## 4. Conversion à la théorie des graphes
 
-Afin de traiter le problème des quatre couleurs avec rigueur mathématique, le problème est traduit dans le langage de la théorie des graphes. Chaque région de la carte est un « Sommet » (Vertex) et les régions qui partagent une frontière sont reliées par une « Arête » (Edge). Le graphe ainsi créé est appelé un « graphe planaire » (Planar [Graph](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)).
+Afin de traiter le problème des quatre couleurs avec rigueur mathématique, le problème est traduit dans le langage de la [théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/). Chaque région de la carte est un « Sommet » (Vertex) et les régions qui partagent une frontière sont reliées par une « Arête » (Edge). Le graphe ainsi créé est appelé un « graphe planaire » (Planar [Graph](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)).
 
 Un graphe planaire est un graphe qui peut être dessiné sur un plan sans que ses arêtes ne se croisent. Le problème des quatre couleurs se réduit au problème selon lequel « les sommets de tous les graphes planaires peuvent être coloriés avec **4 couleurs** de telle sorte que les sommets adjacents aient des couleurs différentes ».
 
@@ -59,7 +59,7 @@ Aujourd'hui, la preuve assistée par ordinateur est largement reconnue comme un 
 
 ## 7. Conclusion
 
-Le problème des quatre couleurs est le meilleur exemple montrant « comment un problème apparemment simple peut cacher une structure mathématique profonde et complexe ». Ce problème, commencé avec l'idée ludique de colorier une carte, a eu un impact incommensurable en développant la théorie des graphes et même en transformant la nature même de la preuve mathématique.
+Le problème des quatre couleurs est le meilleur exemple montrant « comment un problème apparemment simple peut cacher une structure mathématique profonde et complexe ». Ce problème, commencé avec l'idée ludique de colorier une carte, a eu un impact incommensurable en développant la [théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/) et même en transformant la nature même de la preuve mathématique.
 
 L'exploration de ce problème nous enseigne à quel point l'intuition humaine est puissante, et combien d'efforts et de nouvelles technologies sont nécessaires pour la prouver rigoureusement.
 

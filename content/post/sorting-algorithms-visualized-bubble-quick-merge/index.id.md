@@ -776,7 +776,7 @@ Untuk mencegah situasi ini, metode seperti Randomized Quick Sort yang memilih pi
 
 ## 5. Pengurutan Gabung (Merge Sort)
 
-Ditemukan oleh John von Neumann, algoritma ini adalah contoh utama pengurutan eksternal yang stabil. Berdasarkan metode divide-and-conquer, array dibagi menjadi bagian-bagian kecil lalu digabungkan (merge) sambil mempertahankan urutan yang terurut.
+Ditemukan oleh [John von Neumann](/id/p/von-neumann/), algoritma ini adalah contoh utama pengurutan eksternal yang stabil. Berdasarkan metode divide-and-conquer, array dibagi menjadi bagian-bagian kecil lalu digabungkan (merge) sambil mempertahankan urutan yang terurut.
 
 ### Kompleksitas Waktu dan Karakteristik
 

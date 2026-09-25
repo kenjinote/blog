@@ -14,7 +14,7 @@ description: 'Visual Studio Code (VSCode) को और अधिक सुव�
 
 | श्रेणी | नाम | प्रदाता | विवरण |
 |----|----|-----|-----|
-| वर्चुअल और कंटेनर प्रबंधन | Remote Devlopment | Microsoft | SSH कनेक्शन के माध्यम से वर्चुअल कंटेनर/WSL से जुड़कर रिमोट विकास का समर्थन करता है |
+| वर्चुअल और कंटेनर प्रबंधन | [Remote](/hi/p/git%E3%81%A7%E3%82%BF%E3%82%B0%E3%82%92%E6%B6%88%E3%81%99/) Devlopment | Microsoft | SSH कनेक्शन के माध्यम से वर्चुअल कंटेनर/WSL से जुड़कर रिमोट विकास का समर्थन करता है |
 | वर्चुअल और कंटेनर प्रबंधन | [Docker](https://kenji.blog/hi/p/docker-container-namespace-[cgroups](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft | Docker कंटेनरों के प्रबंधन का समर्थन करता है |
 | कोड प्रबंधन | GitHub Pull Requests | GitHub | VSCode पर GitHub के पुल रिक्वेस्ट का प्रबंधन करता है |
 | कोड प्रबंधन | GitHub Copilot | GitHub | AI द्वारा कोड पूरा करने का समर्थन करता है |

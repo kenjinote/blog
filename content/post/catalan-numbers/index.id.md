@@ -22,7 +22,7 @@ Dinamakan dari matematikawan Belgia Eugène Charles Catalan, deret Catalan dimul
 
 $$ C_0 = 1, \quad C_1 = 1, \quad C_2 = 2, \quad C_3 = 5, \quad C_4 = 14, \quad C_5 = 42, \quad C_6 = 132, \quad C_7 = 429, \quad \dots $$
 
-Deret ini muncul sebagai solusi untuk berbagai macam masalah kombinatorika yang sangat beragam. Dalam artikel ini, kita akan memperkenalkan empat contoh terkenal yang melibatkan bilangan Catalan (urutan kurung yang valid, pohon biner, triangulasi poligon, dan lintasan Dyck). Kita akan menguraikan struktur rekursif di baliknya untuk memahami mengapa semuanya menghasilkan deret yang sama persis. Selain itu, kita akan mendalami algoritma komputasi menggunakan Pemrograman Dinamis ([DP](https://kenji.blog/id/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) dan derivasi matematika melalui fungsi pembangkit.
+Deret ini muncul sebagai solusi untuk berbagai macam masalah kombinatorika yang sangat beragam. Dalam artikel ini, kita akan memperkenalkan empat contoh terkenal yang melibatkan bilangan Catalan (urutan kurung yang valid, pohon biner, triangulasi poligon, dan lintasan Dyck). Kita akan menguraikan struktur rekursif di baliknya untuk memahami mengapa semuanya menghasilkan deret yang sama persis. Selain itu, kita akan mendalami algoritma komputasi menggunakan Pemrograman Dinamis ([DP](https://kenji.blog/id/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) dan derivasi matematika melalui [fungsi pembangkit](/id/p/generating-functions/).
 
 ## 2. Empat Contoh Konkret [Bilangan Catalan](https://kenji.blog/id/p/catalan-numbers/)
 
@@ -150,8 +150,8 @@ $$ C_n = \binom{2n}{n} - \frac{n}{n+1} \binom{2n}{n} = \left( 1 - \frac{n}{n+1} 
 
 ### 4.2. Pendekatan melalui [Fungsi Pembangkit](https://kenji.blog/id/p/generating-functions/) ([Generating Functions](https://kenji.blog/id/p/generating-functions/))
 
-Misalkan fungsi pembangkit untuk bilangan Catalan adalah $C(x) = \sum_{n=0}^\infty C_n x^n$.
-Menggunakan relasi perulangan $C_{n} = \sum_{i=0}^{n-1} C_i C_{n-1-i}$, kita menemukan bahwa fungsi pembangkit memenuhi persamaan berikut:
+Misalkan [fungsi pembangkit](/id/p/generating-functions/) untuk bilangan Catalan adalah $C(x) = \sum_{n=0}^\infty C_n x^n$.
+Menggunakan relasi perulangan $C_{n} = \sum_{i=0}^{n-1} C_i C_{n-1-i}$, kita menemukan bahwa [fungsi pembangkit](/id/p/generating-functions/) memenuhi persamaan berikut:
 
 $$ C(x) = 1 + x [C(x)]^2 $$
 
@@ -163,7 +163,7 @@ Untuk memenuhi kondisi $C(0) = 1$ saat $x \to 0$, kita harus memilih tanda negat
 
 $$ C(x) = \frac{1 - \sqrt{1 - 4x}}{2x} $$
 
-Dengan mengekspansi $\sqrt{1 - 4x} = (1 - 4x)^{1/2}$ menggunakan teorema binomial umum (deret Taylor) dan membandingkan koefisiennya, kita sampai pada kesimpulan $C_n = \frac{1}{n+1} \binom{2n}{n}$.
+Dengan mengekspansi $\sqrt{1 - 4x} = (1 - 4x)^{1/2}$ menggunakan teorema binomial umum ([deret Taylor](/id/p/taylor-and-maclaurin-series/)) dan membandingkan koefisiennya, kita sampai pada kesimpulan $C_n = \frac{1}{n+1} \binom{2n}{n}$.
 
 ## 5. Algoritma Komputasi untuk [Bilangan Catalan](https://kenji.blog/id/p/catalan-numbers/)
 

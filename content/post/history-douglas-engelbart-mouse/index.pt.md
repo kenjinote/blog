@@ -178,7 +178,7 @@ No PARC, a pesquisa prosseguiu em direção à visão da "computação pessoal" 
 
 ## Transferência de Tecnologia da Xerox para a Apple (Macintosh)
 
-Em 1979, o co-fundador da Apple Computer, Steve Jobs, teve a oportunidade de visitar o Xerox PARC. Jobs, que ficou impressionado com a operabilidade da GUI e do mouse do Alto, estava convencido de que "esse é o futuro dos computadores", e implementou o conceito à força em seu próprio projeto de desenvolvimento.
+Em 1979, o co-fundador da Apple Computer, [Steve Jobs](/pt/p/biography-steve-jobs/), teve a oportunidade de visitar o Xerox PARC. Jobs, que ficou impressionado com a operabilidade da GUI e do mouse do Alto, estava convencido de que "esse é o futuro dos computadores", e implementou o conceito à força em seu próprio projeto de desenvolvimento.
 
 Os engenheiros da Apple redesenharam o caro e complexo mouse da Xerox de modo que, com apenas um botão, ele pudesse ser produzido em massa de forma barata e funcionasse perfeitamente em qualquer mesa. Com o lançamento do "Lisa" em 1983 e do "Macintosh" em 1984, o mouse daria um grande salto de ser uma ferramenta para alguns pesquisadores a um dispositivo de entrada padrão usado pelos consumidores comuns em casa.
 

@@ -293,7 +293,7 @@ Dalam komputer klasik, pada kasus terburuk membutuhkan evaluasi fungsi sebanyak 
 
 ### 6.2 Algoritma Grover
 
-Dalam masalah pencarian data tertentu dari basis data tidak terurut yang berisi $N$ elemen, algoritma klasik rata-rata membutuhkan $N/2$ perhitungan, sedangkan Algoritma Grover dapat menemukan data target dalam $\sqrt{N}$ kali pencarian.
+Dalam masalah pencarian data tertentu dari basis data tidak terurut yang berisi $N$ elemen, algoritma klasik rata-rata membutuhkan $N/2$ perhitungan, sedangkan [Algoritma Grover](/id/p/grovers-algorithm-quantum-search/) dapat menemukan data target dalam $\sqrt{N}$ kali pencarian.
 Algoritma ini menggunakan kotak hitam yang disebut "Oracle" untuk membalikkan fase solusi target, dan kemudian melakukan "Amplifikasi Amplitudo (Amplitude Amplification)" untuk secara dramatis meningkatkan probabilitas ditemukannya solusi target.
 
 ```mermaid

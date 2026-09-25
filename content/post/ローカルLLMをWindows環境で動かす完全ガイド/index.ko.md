@@ -11,35 +11,35 @@ tags: ["LLM", "Windows", "Local AI", "Ollama", "llama.cpp"]
 
 # 1. 소개: 왜 지금 Windows에서 로컬 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)인가?
 
-2026년 현재, 생성형 AI와 대규모 언어 모델(LLM)의 진화는 클라우드 상의 거대한 API 서비스에서 개인 PC나 온프레미스 환경에서 동작하는 '로컬 LLM'으로 큰 패러다임 전환을 보여주고 있습니다. OpenAI의 GPT-5나 Anthropic의 Claude 3.5와 같은 클라우드 AI는 매우 강력하지만, 기업이나 개인이 모든 데이터를 클라우드로 전송할 수 있는 것은 아닙니다. 개인정보 보호, 보안, 대기 시간(레이턴시), 그리고 장기적이고 지속 가능한 비용 관점에서 로컬 LLM에 대한 수요는 그 어느 때보다 폭발적으로 증가하고 있습니다.
+2026년 현재, 생성형 AI와 [대규모 언어 모델](/ko/p/large-language-models-llm-transformer-prompt-engineering/)([LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 진화는 클라우드 상의 거대한 API 서비스에서 개인 PC나 온프레미스 환경에서 동작하는 '로컬 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)'으로 큰 패러다임 전환을 보여주고 있습니다. OpenAI의 GPT-5나 Anthropic의 Claude 3.5와 같은 클라우드 AI는 매우 강력하지만, 기업이나 개인이 모든 데이터를 클라우드로 전송할 수 있는 것은 아닙니다. 개인정보 보호, 보안, 대기 시간(레이턴시), 그리고 장기적이고 지속 가능한 비용 관점에서 로컬 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)에 대한 수요는 그 어느 때보다 폭발적으로 증가하고 있습니다.
 
-특히 Windows 환경에서 로컬 LLM 생태계의 발전은 눈부십니다. 몇 년 전까지만 해도 "AI 개발 및 실행은 Linux"라는 것이 상식이었지만, 2026년 현재 Windows는 매우 강력하고 편리한 AI 플랫폼으로 변모했습니다.
+특히 Windows 환경에서 로컬 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/) 생태계의 발전은 눈부십니다. 몇 년 전까지만 해도 "AI 개발 및 실행은 Linux"라는 것이 상식이었지만, 2026년 현재 Windows는 매우 강력하고 편리한 AI 플랫폼으로 변모했습니다.
 
-본 기사에서는 2026년 최신 기술 동향을 바탕으로 Windows 환경에서 로컬 LLM을 구축, 운영 및 최적화하기 위한 완전한 가이드를 제공합니다. 초보자를 위한 Ollama를 사용한 간단한 구축부터, 고급 사용자를 위한 llama.cpp를 활용한 극한의 최적화, 나아가 VRAM 계산의 수학적 접근 및 아키텍처에 대한 깊은 이해, 그리고 로컬에서의 파인튜닝(미세조정)까지 압도적인 분량으로 철저하게 해설합니다.
+본 기사에서는 2026년 최신 기술 동향을 바탕으로 Windows 환경에서 로컬 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 구축, 운영 및 최적화하기 위한 완전한 가이드를 제공합니다. 초보자를 위한 Ollama를 사용한 간단한 구축부터, 고급 사용자를 위한 llama.cpp를 활용한 극한의 최적화, 나아가 VRAM 계산의 수학적 접근 및 아키텍처에 대한 깊은 이해, 그리고 로컬에서의 파인튜닝(미세조정)까지 압도적인 분량으로 철저하게 해설합니다.
 
 ## 1.1 2026년 로컬 LLM을 둘러싼 기술 트렌드
 
-현재의 로컬 LLM 생태계를 형성하는 주요 트렌드는 다음과 같습니다.
+현재의 로컬 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/) 생태계를 형성하는 주요 트렌드는 다음과 같습니다.
 
-1. **GGUF 포맷의 완전한 보급**: 메타데이터와 텐서를 단일 파일로 통합한 GGUF(GPT-Generated Unified Format)가 완전히 사실상 표준(De facto standard)이 되었습니다. 이를 통해 Hugging Face에서 파일 하나를 다운로드하는 것만으로 어떤 환경에서든 실행할 수 있게 되었습니다.
+1. **[GGUF](/ko/p/llama-cpp-quantization-gguf/) 포맷의 완전한 보급**: 메타데이터와 텐서를 단일 파일로 통합한 [GGUF](/ko/p/llama-cpp-quantization-gguf/)(GPT-Generated Unified Format)가 완전히 사실상 표준(De facto standard)이 되었습니다. 이를 통해 Hugging Face에서 파일 하나를 다운로드하는 것만으로 어떤 환경에서든 실행할 수 있게 되었습니다.
 2. **MoE(Mixture of Experts) 아키텍처의 대중화**: 소규모이면서도 고성능인 MoE 모델이 다수 출시되었으며, 추론 시 일부 전문가(Expert)만 활성화함으로써 일반 소비자용 PC의 계산 부하를 억제하면서 거대 모델에 필적하는 성능을 내고 있습니다.
 3. **추론 엔진의 고도화된 추상화 및 최적화**: Ollama, LM Studio, AnythingLLM 등의 도구가 세련되어져서 사용자가 CUDA 드라이버 설치 등 복잡한 의존성을 신경 쓸 필요가 없어졌습니다. 또한 FlashAttention 3의 Windows 네이티브 지원으로 추론 속도가 극적으로 향상되었습니다.
-4. **NPU 활용과 Windows Copilot+ PC의 대두**: GPU가 없는 노트북에서도 탑재된 NPU(Neural Processing Unit)를 활용하여 소규모 LLM(SLM: Small Language Models)을 저전력으로 구동하는 기술이 실용화 단계에 접어들었습니다.
+4. **NPU 활용과 Windows Copilot+ PC의 대두**: GPU가 없는 노트북에서도 탑재된 NPU(Neural Processing Unit)를 활용하여 소규모 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)(SLM: Small Language Models)을 저전력으로 구동하는 기술이 실용화 단계에 접어들었습니다.
 
 ---
 
 # 2. 하드웨어 요구 사항 및 OS 준비
 
-로컬 LLM을 실용적인 속도(초당 15~30 토큰 이상)로 구동하기 위해서는 하드웨어 선택이 가장 중요합니다.
+로컬 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 실용적인 속도(초당 15~30 토큰 이상)로 구동하기 위해서는 하드웨어 선택이 가장 중요합니다.
 
 ## 2.1 권장 하드웨어 구성
 
 AI PC의 진화에 따라 요구 스펙도 변화하고 있습니다.
 
-- **OS**: Windows 11 Pro (24H2 이후). WSL2의 완전한 기능과 고급 메모리 관리, 나아가 DirectML의 최신 API를 활용하기 위해 필수적입니다.
+- **OS**: Windows 11 Pro (24H2 이후). [WSL2](/ko/p/wsl2-ultimate-development-setup-guide/)의 완전한 기능과 고급 메모리 관리, 나아가 DirectML의 최신 API를 활용하기 위해 필수적입니다.
 - **CPU**: Intel Core Ultra 200 시리즈 이상 또는 AMD Ryzen 9000 시리즈 이상. CPU 추론을 병행할 경우, 광대역 메모리 통신이 필수적입니다.
 - **RAM**: 최소 32GB, 권장 64GB 이상. 메인 메모리의 대역폭(MB/s)이 CPU 추론 시나 오프로드(Offload) 시 결정적인 병목 지점이 됩니다. DDR5-6000 이상의 고속 메모리가 이상적입니다.
-- **GPU**: NVIDIA RTX 4000/5000 시리즈. 로컬 LLM에서 가장 중요한 것은 연산 성능이 아니라 'VRAM 용량'입니다.
+- **GPU**: [NVIDIA](/ko/p/history-of-nvidia/) RTX 4000/5000 시리즈. 로컬 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)에서 가장 중요한 것은 연산 성능이 아니라 'VRAM 용량'입니다.
   - **엔트리**: RTX 4060 Ti (16GB 버전) - 가성비 최강. 8B~14B 클래스의 모델에 최적입니다.
   - **미들레인지**: RTX 4070 Ti SUPER (16GB) / RTX 4080 SUPER (16GB)
   - **하이엔드**: RTX 4090 (24GB) / RTX 5090 (32GB) - 30B~70B 클래스의 양자화 모델을 구동하기 위해 필요합니다.
@@ -47,7 +47,7 @@ AI PC의 진화에 따라 요구 스펙도 변화하고 있습니다.
 
 ## 2.2 WSL2 (Windows Subsystem for Linux 2) 설정
 
-많은 GUI 도구는 Windows 네이티브로 동작하지만, Python을 사용한 개발, 최신 도구 컴파일, 후술할 LoRA 파인튜닝에는 WSL2가 매우 편리합니다. Windows 11의 최신 환경에서는 호스트 쪽에 NVIDIA 드라이버를 설치하는 것만으로 WSL2에서 투명하게 GPU(CUDA)를 사용할 수 있습니다.
+많은 GUI 도구는 Windows 네이티브로 동작하지만, Python을 사용한 개발, 최신 도구 컴파일, 후술할 LoRA 파인튜닝에는 [WSL2](/ko/p/wsl2-ultimate-development-setup-guide/)가 매우 편리합니다. Windows 11의 최신 환경에서는 호스트 쪽에 [NVIDIA](/ko/p/history-of-nvidia/) 드라이버를 설치하는 것만으로 [WSL2](/ko/p/wsl2-ultimate-development-setup-guide/)에서 투명하게 GPU(CUDA)를 사용할 수 있습니다.
 
 관리자 권한으로 PowerShell을 열고 다음을 실행합니다.
 
@@ -59,7 +59,7 @@ wsl --install -d Ubuntu-24.04
 wsl --update
 ```
 
-설치 후 WSL2 터미널 내에서 `nvidia-smi`를 실행하여 GPU가 정상적으로 인식되면 성공입니다.
+설치 후 [WSL2](/ko/p/wsl2-ultimate-development-setup-guide/) 터미널 내에서 `nvidia-smi`를 실행하여 GPU가 정상적으로 인식되면 성공입니다.
 
 ---
 
@@ -67,7 +67,7 @@ wsl --update
 
 로컬 환경에서 모델이 어떻게 텍스트를 생성하는지, 그 내부 구조를 이해하는 것은 문제 해결(트러블슈팅)이나 최적화에 매우 유용합니다.
 
-다음 Mermaid 다이어그램은 전형적인 로컬 LLM의 추론 파이프라인을 보여줍니다.
+다음 Mermaid 다이어그램은 전형적인 로컬 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 추론 파이프라인을 보여줍니다.
 
 ```mermaid
 graph TD
@@ -162,7 +162,7 @@ $V_{kv} = 2 \times 1 \times 8192 \times 32 \times 8 \times 128 \times 2 \div 10^
 
 # 5. 실전 1: Ollama를 이용한 가장 빠르고 짧은 설정
 
-이론을 이해했으니, 실제로 Windows 환경에서 LLM을 구동해 봅시다.
+이론을 이해했으니, 실제로 Windows 환경에서 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 구동해 봅시다.
 2026년 현재 가장 사용자 친화적인 도구가 'Ollama'입니다. [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/)와 유사한 직관적인 CLI를 제공합니다.
 
 ## 5.1 설치 및 실행
@@ -279,9 +279,9 @@ AnythingLLM 데스크톱 버전(Windows)을 사용하면 설정 화면에서 Oll
 
 # 8. Windows WSL2 상에서의 파인튜닝 (LoRA)
 
-로컬에서 구동할 뿐만 아니라 내 데이터로 모델을 똑똑하게 만들고 싶다면, LoRA(Low-Rank Adaptation)를 이용한 파인튜닝이 가능합니다. 2026년 현재 'Unsloth'라는 라이브러리를 사용하면 Windows의 WSL2 환경에서 16GB VRAM으로도 8B 모델의 학습을 몇 시간 만에 완료할 수 있습니다.
+로컬에서 구동할 뿐만 아니라 내 데이터로 모델을 똑똑하게 만들고 싶다면, LoRA(Low-Rank Adaptation)를 이용한 파인튜닝이 가능합니다. 2026년 현재 'Unsloth'라는 라이브러리를 사용하면 Windows의 [WSL2](/ko/p/wsl2-ultimate-development-setup-guide/) 환경에서 16GB VRAM으로도 8B 모델의 학습을 몇 시간 만에 완료할 수 있습니다.
 
-WSL2의 Ubuntu 내에서 다음을 실행하여 환경을 구축합니다.
+[WSL2](/ko/p/wsl2-ultimate-development-setup-guide/)의 Ubuntu 내에서 다음을 실행하여 환경을 구축합니다.
 
 ```bash
 conda create --name unsloth_env python=3.11
@@ -314,7 +314,7 @@ Unsloth는 CUDA 커널을 극한까지 최적화하여, 표준 Hugging Face 라�
 
 # 10. 요약 및 향후 전망
 
-2026년, Windows 환경에서의 로컬 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 구축은 더 이상 일부 엔지니어들만의 특권이 아닙니다. GGUF 포맷의 사실상 표준화, Ollama나 LM Studio와 같이 세련된 생태계의 등장, 그리고 FlashAttention을 비롯한 하드웨어 최적화 덕분에 누구나 쉽게 엔터프라이즈급 AI 환경을 구축할 수 있게 되었습니다.
+2026년, Windows 환경에서의 로컬 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 구축은 더 이상 일부 엔지니어들만의 특권이 아닙니다. [GGUF](/ko/p/llama-cpp-quantization-gguf/) 포맷의 사실상 표준화, Ollama나 LM Studio와 같이 세련된 생태계의 등장, 그리고 FlashAttention을 비롯한 하드웨어 최적화 덕분에 누구나 쉽게 엔터프라이즈급 AI 환경을 구축할 수 있게 되었습니다.
 
 이 기사에서 설명한 다음 요점들을 꼭 활용해 보시기 바랍니다.
 
@@ -322,7 +322,7 @@ Unsloth는 CUDA 커널을 극한까지 최적화하여, 표준 Hugging Face 라�
 2. **Ollama** 를 사용하여 가장 빠르게 환경을 구축하고, AI 에디터와 연동하여 생산성을 극적으로 향상시킨다.
 3. **llama.cpp** 의 고급 파라미터 제어로 하드웨어의 한계 성능을 끌어낸다.
 4. **AnythingLLM** 으로 기밀 데이터를 다루는 안전한 로컬 RAG 시스템을 구축한다.
-5. **Unsloth (WSL2)** 를 활용하여 나만의 전문 지식을 가진 커스텀 AI를 육성한다.
+5. **Unsloth ([WSL2](/ko/p/wsl2-ultimate-development-setup-guide/))** 를 활용하여 나만의 전문 지식을 가진 커스텀 AI를 육성한다.
 
 AI의 '대중화'는 더 이상 버즈워드가 아니라 여러분의 Windows 데스크톱에서 작동하는 현실의 시스템입니다. 클라우드 API 사용 비용이나 정보 유출 위험에서 벗어나, 자유롭고 강력한 프라이빗 AI의 세계로 지금 당장 발을 들여놓아 보시기 바랍니다.
 

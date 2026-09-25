@@ -68,17 +68,17 @@ Git 的分支，不過是一個指向特定提交的輕量級指標（檔案）�
 
 Git 預設的差異檢測演算法是由 Eugene W. Myers 發明的。當有兩個文字檔 $A$ 和 $B$ 時，找到將 $A$ 轉換為 $B$ 的「最小編輯步驟（插入與刪除）」的問題，可以建模為圖論中的最短路徑問題。
 
-假設字串的長度分別為 $N, M$，總和為 $V = N + M$。在 Myers 演算法中，會尋找編輯距離（Edit Distance） $D$。這個演算法的時間複雜度可以用以下公式表示：
+假設字串的長度分別為 $N, M$，總和為 $V = N + M$。在 Myers 演算法中，會尋找編輯距離（Edit Distance） $D$。這個演算法的時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)可以用以下公式表示：
 
 $$ \mathcal{O}(V \cdot D) $$
 
-這裡，如果檔案之間的差異很小（也就是 $D$ 很小），演算法的執行速度會非常快，達到 $\mathcal{O}(V)$。然而，如果檔案完全不同，則 $D \approx V$，最壞情況下的時間複雜度會變成 $\mathcal{O}(V^2)$。
+這裡，如果檔案之間的差異很小（也就是 $D$ 很小），演算法的執行速度會非常快，達到 $\mathcal{O}(V)$。然而，如果檔案完全不同，則 $D \approx V$，最壞情況下的時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)會變成 $\mathcal{O}(V^2)$。
 
 ### 3.2 Patience Diff 與 Histogram Diff
 
 雖然 Myers 演算法很優秀，但當函數或類別的順序發生大幅改變時，它可能會產生對人類來說不直觀（無意義）的差異。為了解決這個問題，Git 實作了 `Patience Diff` 和 `Histogram Diff`。
 
-Patience Diff 著眼於「在兩個檔案中只出現過一次的唯一行」，並找出它們的最長共同子序列（Longest Common Subsequence: LCS）。假設唯一元素的數量為 $U$，計算 LCS 的複雜度可以用以下公式來解決：
+Patience Diff 著眼於「在兩個檔案中只出現過一次的唯一行」，並找出它們的最長共同子序列（Longest Common Subsequence: LCS）。假設唯一元素的數量為 $U$，計算 LCS 的[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)可以用以下公式來解決：
 
 $$ \mathcal{O}(U \log U) $$
 
@@ -86,7 +86,7 @@ $$ \mathcal{O}(U \log U) $$
 
 ### 3.3 SHA-1 與碰撞機率
 
-Git 使用 SHA-1 雜湊值來管理所有物件。雜湊空間的大小為 $2^{160}$。關於雜湊碰撞（不同的內容擁有相同的雜湊值）發生的機率，如果我們使用生日悖論（Birthday Paradox）來近似，碰撞機率 $p$ 達到 50% 所需的物件數量 $k$ 如下：
+Git 使用 SHA-1 雜湊值來管理所有物件。雜湊空間的大小為 $2^{160}$。關於雜湊碰撞（不同的內容擁有相同的雜湊值）發生的機率，如果我們使用[生日悖論](/zh-tw/p/birthday-paradox/)（Birthday Paradox）來近似，碰撞機率 $p$ 達到 50% 所需的物件數量 $k$ 如下：
 
 $$ k \approx \sqrt{2 \ln(2)} \cdot 2^{80} \approx 1.2 \times 2^{80} $$
 
@@ -334,7 +334,7 @@ squash 3c4d5e6 新增測試
 
 ### 解決方案：使用二元搜尋來定位 bug
 
-Git 內建了一個能透過數學上的二元搜尋（[Binary Search](https://kenji.blog/zh-tw/p/search-algorithms-linear-binary-hash-table-principles/)）來找出混入 bug 的提交的工具。因為時間複雜度是 $\mathcal{O}(\log N)$，即使有 1000 個提交，大約也只需要 10 次測試就能定位出來。
+Git 內建了一個能透過數學上的二元搜尋（[Binary Search](https://kenji.blog/zh-tw/p/search-algorithms-linear-binary-hash-table-principles/)）來找出混入 bug 的提交的工具。因為時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)是 $\mathcal{O}(\log N)$，即使有 1000 個提交，大約也只需要 10 次測試就能定位出來。
 
 ```bash
 # 開始搜尋

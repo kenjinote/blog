@@ -293,7 +293,7 @@ Un ordinateur classique nécessite dans le pire des cas $2^{n-1} + 1$ évaluatio
 
 ### 6.2 Algorithme de Grover (Grover's Algorithm)
 
-Dans le problème de recherche d'une donnée spécifique parmi $N$ bases de données non triées, alors qu'un algorithme classique nécessite en moyenne $N/2$ calculs, l'algorithme de Grover permet de trouver la donnée cible en $\sqrt{N}$ fois.
+Dans le problème de recherche d'une donnée spécifique parmi $N$ bases de données non triées, alors qu'un algorithme classique nécessite en moyenne $N/2$ calculs, [l'algorithme de Grover](/fr/p/grovers-algorithm-quantum-search/) permet de trouver la donnée cible en $\sqrt{N}$ fois.
 Cet algorithme utilise une boîte noire appelée "Oracle (Oracle)" pour inverser la phase de la solution cible, puis effectue une "amplification d'amplitude (Amplitude Amplification)" pour augmenter considérablement la probabilité que la solution cible soit observée.
 
 ```mermaid

@@ -18,7 +18,7 @@ Dalam artikel ini, kita akan menggali lebih dalam mengapa Lisp begitu dicintai d
 
 Pada tahun 1950-an, komputer utamanya diakui sebagai mesin hitung raksasa untuk komputasi numerik. Sementara FORTRAN lahir untuk komputasi ilmiah dan teknis, dan COBOL dirancang untuk keperluan bisnis, John McCarthy memiliki sudut pandang yang sama sekali berbeda. Ia mencari cara untuk mengekspresikan dan memanipulasi "Pemrosesan Simbolik (Symbolic Processing)", yaitu pemikiran dan logika manusia itu sendiri di dalam komputer.
 
-McCarthy, terinspirasi oleh "Kalkulus Lambda (Lambda Calculus)" karya Alonzo Church, membangun dasar teoretis untuk sebuah bahasa yang dapat mendeskripsikan fungsi matematika murni. Hasilnya adalah Lisp, yang mengekspresikan struktur program dengan struktur data yang sangat sederhana yaitu list.
+McCarthy, terinspirasi oleh "[Kalkulus Lambda](/id/p/lambda-calculus-functional-programming/) ([Lambda Calculus](/id/p/lambda-calculus-functional-programming/))" karya Alonzo Church, membangun dasar teoretis untuk sebuah bahasa yang dapat mendeskripsikan fungsi matematika murni. Hasilnya adalah Lisp, yang mengekspresikan struktur program dengan struktur data yang sangat sederhana yaitu list.
 
 Sejak lahirnya, Lisp segera mengukuhkan posisinya sebagai bahasa standar dalam penelitian Kecerdasan Buatan (AI). Hal ini karena untuk memodelkan proses berpikir manusia, diperlukan struktur data fleksibel (list) yang dapat berubah dan berkembang secara dinamis selama eksekusi program, daripada struktur data statis yang didefinisikan sebelumnya.
 

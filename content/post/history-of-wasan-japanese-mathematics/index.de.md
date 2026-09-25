@@ -12,7 +12,7 @@ image: "eyecatch.jpg"
 
 Von dem 17. Jahrhundert bis zur Mitte des 19. Jahrhunderts verfolgte Japan eine strikte Politik der nationalen Isolation, bekannt als "Sakoku". In dieser Zeit, als der Austausch mit westlicher Wissenschaft und Kultur extrem eingeschränkt war, ereignete sich in Japan ein einzigartiges Phänomen. Es war die Blüte einer eigenständigen, hochentwickelten mathematischen Kultur Japans: **"Wasan" (japanische Mathematik)**.
 
-Zur gleichen Zeit wurde in Europa durch Isaac Newton und Gottfried Leibniz die Infinitesimalrechnung begründet und die moderne Mathematik entwickelte sich rasant. Erstaunlicherweise entstanden auch in Japan, einem Inselstaat im Fernen Osten, völlig unabhängig davon hochentwickelte mathematische Konzepte, die der Infinitesimalrechnung ebenbürtig waren.
+Zur gleichen Zeit wurde in Europa durch [Isaac Newton](/de/p/newton/) und [Gottfried Leibniz](/de/p/leibniz/) die Infinitesimalrechnung begründet und die moderne Mathematik entwickelte sich rasant. Erstaunlicherweise entstanden auch in Japan, einem Inselstaat im Fernen Osten, völlig unabhängig davon hochentwickelte mathematische Konzepte, die der Infinitesimalrechnung ebenbürtig waren.
 
 In diesem Artikel werden wir die Geschichte des Wasan detailliert entwirren, das von praktischer Vermessung und Berechnung ausging und sich schließlich zu reinen intellektuellen Spielen und einer Art Kunst erhob. Wir betrachten die genialen Mathematiker, die diese Entwicklung vorantrieben, sowie die weltweit einzigartige Kultur der "Sangaku".
 

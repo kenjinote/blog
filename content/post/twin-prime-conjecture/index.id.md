@@ -23,7 +23,7 @@ Bilangan Prima Kembar (Twin Primes) adalah pasangan bilangan prima yang selisihn
 - $(29, 31)$
 - $(41, 43)$
 
-Seiring bertambah besarnya bilangan, frekuensi kemunculan bilangan prima itu sendiri akan menurun, seperti yang diketahui dari [Teorema Bilangan Prima (Prime Number Theorem)](https://kenji.blog/p/prime-number-theorem/). Seiring dengan itu, frekuensi kemunculan bilangan prima kembar juga menurun. Namun, tidak peduli seberapa besar bilangannya, para matematikawan telah lama menduga bahwa "pasangan bilangan prima dengan selisih 2" ini akan terus muncul tanpa henti.
+Seiring bertambah besarnya bilangan, frekuensi kemunculan bilangan prima itu sendiri akan menurun, seperti yang diketahui dari [Teorema Bilangan Prima (Prime Number Theorem)](https://kenji.blog/id/p/prime-number-theorem/). Seiring dengan itu, frekuensi kemunculan bilangan prima kembar juga menurun. Namun, tidak peduli seberapa besar bilangannya, para matematikawan telah lama menduga bahwa "pasangan bilangan prima dengan selisih 2" ini akan terus muncul tanpa henti.
 
 Inilah **Konjektur Bilangan Prima Kembar**.
 
@@ -48,7 +48,7 @@ graph LR
     D -->|"Contoh"| E("(3,5), (11,13)...")
 ```
 
-Menurut Teorema Bilangan Prima, jumlah bilangan prima $\pi(x)$ yang kurang dari atau sama dengan $x$ asimtotik terhadap $x / \ln(x)$. Mengenai jumlah bilangan prima kembar $\pi_2(x)$, ada konjektur kuantitatif yang lebih kuat yang disebut Konjektur Hardy-Littlewood (Konjektur Hardy-Littlewood Pertama).
+Menurut [Teorema Bilangan Prima](/id/p/prime-number-theorem/), jumlah bilangan prima $\pi(x)$ yang kurang dari atau sama dengan $x$ asimtotik terhadap $x / \ln(x)$. Mengenai jumlah bilangan prima kembar $\pi_2(x)$, ada konjektur kuantitatif yang lebih kuat yang disebut Konjektur Hardy-Littlewood (Konjektur Hardy-Littlewood Pertama).
 
 ### Konjektur Hardy-Littlewood
 

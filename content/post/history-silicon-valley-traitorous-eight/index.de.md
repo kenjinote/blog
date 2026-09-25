@@ -12,7 +12,7 @@ image: "eyecatch.jpg"
 
 In der modernen Welt sind "Halbleiter" die Grundlage aller Technologien wie Smartphones, Computer, Internet und KI. Und das Zentrum dieser Halbleiterindustrie, das Innovations-Mekka, nach dem sich Unternehmer auf der ganzen Welt sehnen, ist das "Silicon Valley" im Norden Kaliforniens.
 
-Dieses Gebiet, in dem sich riesige Technologieunternehmen wie Google, Apple, Meta (ehemals Facebook) und Netflix drängen, sah nicht von Anfang an so aus. Früher war es nur eine ruhige, von Obstgärten geprägte landwirtschaftliche Gegend, das "Santa Clara Valley". Warum hat es sich in das weltweit führende Technologiezentrum verwandelt?
+Dieses Gebiet, in dem sich riesige Technologieunternehmen wie Google, Apple, Meta ([ehemals Facebook](/de/p/history-of-meta-facebook/)) und Netflix drängen, sah nicht von Anfang an so aus. Früher war es nur eine ruhige, von Obstgärten geprägte landwirtschaftliche Gegend, das "Santa Clara Valley". Warum hat es sich in das weltweit führende Technologiezentrum verwandelt?
 
 Der Ursprung von all dem kann als ein "Verrats"-Vorfall im Jahr 1957 bezeichnet werden. Acht junge, brillante Ingenieure, die sich um einen genialen Wissenschaftler versammelt hatten, verließen ihn und gründeten ihr eigenes Unternehmen. Sie wurden später als die **"Acht Verräter (Traitorous Eight)"** bekannt.
 

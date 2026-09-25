@@ -99,7 +99,7 @@ $$
 X_k = \sum_{n=0}^{N-1} x_n e^{-i \frac{2\pi}{N} k n} \quad \text{for } k = 0, 1, \dots, N-1
 $$
 
-게다가, 이 DFT의 계산 복잡도를 $O(N^2)$ 에서 $O(N \log N)$ 으로 획기적으로 줄여주는 알고리즘이 **고속 푸리에 변환 (FFT)** 입니다. FFT의 등장으로 디지털 신호 처리(DSP) 분야는 폭발적인 발전을 이룩했습니다. 스마트폰의 음성 인식이나 JPEG 이미지 압축과 같이 우리에게 친숙한 기술들 중 다수가 FFT의 혜택을 받고 있습니다.
+게다가, 이 DFT의 계산 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)를 $O(N^2)$ 에서 $O(N \log N)$ 으로 획기적으로 줄여주는 알고리즘이 **[고속 푸리에 변환](/ko/p/fast-fourier-transform-algorithm/) ([FFT](/ko/p/fast-fourier-transform-algorithm/))** 입니다. [FFT](/ko/p/fast-fourier-transform-algorithm/)의 등장으로 디지털 신호 처리(DSP) 분야는 폭발적인 발전을 이룩했습니다. 스마트폰의 음성 인식이나 JPEG 이미지 압축과 같이 우리에게 친숙한 기술들 중 다수가 [FFT](/ko/p/fast-fourier-transform-algorithm/)의 혜택을 받고 있습니다.
 
 ```python
 import numpy as np

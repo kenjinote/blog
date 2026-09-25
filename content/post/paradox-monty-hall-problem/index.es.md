@@ -18,7 +18,7 @@ En este artículo abordaremos la paradoja más famosa que simboliza esta diverge
 
 ## Capítulo 1: ¿Qué es el problema de Monty Hall?
 
-El problema de Monty Hall es una paradoja de probabilidad que recibe su nombre de Monty Hall, el presentador del antiguo programa de televisión estadounidense "Let's Make a Deal". El problema se dio a conocer ampliamente al público en 1990, cuando apareció en la columna "Ask Marilyn" de la revista de noticias Parade.
+[El problema de Monty Hall](/es/p/monty-hall-problem/) es una paradoja de probabilidad que recibe su nombre de Monty Hall, el presentador del antiguo programa de televisión estadounidense "Let's Make a Deal". El problema se dio a conocer ampliamente al público en 1990, cuando apareció en la columna "Ask Marilyn" de la revista de noticias Parade.
 
 ### Configuración del problema
 
@@ -121,7 +121,7 @@ Por lo tanto, la probabilidad esperada de ganar con la estrategia de cambiar la 
 
 ## Capítulo 3: Solución rigurosa mediante el teorema de Bayes
 
-El problema de Monty Hall se puede resolver matemáticamente de manera más rigurosa utilizando el "Teorema de Bayes" para calcular la probabilidad condicional. La estimación bayesiana es una herramienta poderosa que indica cómo actualizar una probabilidad previa (probabilidad a priori) cuando se obtiene nueva información (evidencia) para llegar a una probabilidad posterior (probabilidad a posteriori).
+[El problema de Monty Hall](/es/p/monty-hall-problem/) se puede resolver matemáticamente de manera más rigurosa utilizando el "[Teorema de Bayes](/es/p/bayes-theorem/)" para calcular la probabilidad condicional. La estimación bayesiana es una herramienta poderosa que indica cómo actualizar una probabilidad previa (probabilidad a priori) cuando se obtiene nueva información (evidencia) para llegar a una probabilidad posterior (probabilidad a posteriori).
 
 Definamos los eventos de la siguiente manera:
 - $C_i$ : Evento en el que el coche nuevo está en la puerta $i$ ($i \in \{A, B, C\}$)
@@ -140,7 +140,7 @@ Las reglas de comportamiento de Monty (probabilidad condicional $P(M_B|C_i)$) so
 2. Si el coche nuevo está en la Puerta B ($C_B$), Monty nunca puede abrir la B, por lo que $P(M_B|C_B) = 0$
 3. Si el coche nuevo está en la Puerta C ($C_C$), Monty no puede abrir la C, ni la A porque el jugador la eligió. Por lo tanto, se ve obligado a abrir la B, lo que significa que $P(M_B|C_C) = 1$
 
-La fórmula del teorema de Bayes es la siguiente:
+La fórmula del [teorema de Bayes](/es/p/bayes-theorem/) es la siguiente:
 $P(C_i|M_B) = \frac{P(M_B|C_i) P(C_i)}{P(M_B)}$
 
 Calculamos el denominador $P(M_B)$ (la probabilidad total de que Monty abra la puerta B) usando el teorema de la probabilidad total:
@@ -155,7 +155,7 @@ $P(C_A|M_B) = \frac{P(M_B|C_A) P(C_A)}{P(M_B)} = \frac{(1/2) \times (1/3)}{1/2} 
 **Probabilidad de que el coche nuevo esté en la Puerta C (cambiar la elección):**
 $P(C_C|M_B) = \frac{P(M_B|C_C) P(C_C)}{P(M_B)} = \frac{1 \times (1/3)}{1/2} = 2/3$
 
-De esta manera, usando el teorema de Bayes, se demuestra matemáticamente y a la perfección que la probabilidad se actualiza mediante nueva información (el hecho de que Monty abriera la puerta B), y que la probabilidad de la Puerta C salta a 2/3.
+De esta manera, usando el [teorema de Bayes](/es/p/bayes-theorem/), se demuestra matemáticamente y a la perfección que la probabilidad se actualiza mediante nueva información (el hecho de que Monty abriera la puerta B), y que la probabilidad de la Puerta C salta a 2/3.
 
 ## Capítulo 4: ¿Por qué se equivoca la intuición humana? (Factores psicológicos y cognitivos)
 
@@ -164,13 +164,13 @@ Sin importar cuántas veces se les muestre la prueba matemática, muchas persona
 ### 1. Sesgo de equiprobabilidad (Equiprobability Bias)
 
 Los seres humanos tienen una fuerte tendencia inconsciente a asumir que "cuando hay opciones disponibles, sus probabilidades deben ser iguales" en eventos aleatorios o situaciones inciertas.
-En el problema de Monty Hall, finalmente quedan dos opciones: la "Puerta A" y la "Puerta C". En el momento en que esta información visual y situacional de "dos opciones" ingresa al cerebro, se activa una heurística poderosa: "Como hay dos opciones, la probabilidad es de 1/2 para cada una".
+En [el problema de Monty Hall](/es/p/monty-hall-problem/), finalmente quedan dos opciones: la "Puerta A" y la "Puerta C". En el momento en que esta información visual y situacional de "dos opciones" ingresa al cerebro, se activa una heurística poderosa: "Como hay dos opciones, la probabilidad es de 1/2 para cada una".
 Nuestro cerebro aísla e ignora de la "situación actual" la "información asimétrica" de su contexto histórico (el hecho de que inicialmente había tres puertas y que Monty abrió intencionalmente una incorrecta).
 
 ### 2. Confusión entre causalidad e "intención"
 
 Tendemos a tratar de entender la causalidad de las cosas de forma lineal.
-De manera similar a la "falacia del jugador" (Gambler's fallacy), donde alguien piensa "pronto saldrá negro" después de que salga rojo 5 veces seguidas en la ruleta, en el problema de Monty Hall subestimamos la "actualización de la información".
+De manera similar a la "falacia del jugador" (Gambler's fallacy), donde alguien piensa "pronto saldrá negro" después de que salga rojo 5 veces seguidas en la ruleta, en [el problema de Monty Hall](/es/p/monty-hall-problem/) subestimamos la "actualización de la información".
 
 Lo importante aquí es que **"el presentador Monty no abre una puerta al azar"**.
 Si el presentador no supiera nada, abriera una puerta al azar y "resultara ser una cabra", la probabilidad de las dos puertas restantes sería realmente de 1/2 (esto se llama el "problema del presentador ignorante").
@@ -195,7 +195,7 @@ flowchart LR
 
 ## Capítulo 5: Las lecciones de la paradoja en la vida diaria
 
-El problema de Monty Hall es más que un simple concurso de preguntas o un acertijo matemático. Las lecciones que nos enseña esta paradoja tienen un valor universal que se puede aplicar a varios campos, como nuestra vida cotidiana, los negocios, la medicina y el desarrollo de IA.
+[El problema de Monty Hall](/es/p/monty-hall-problem/) es más que un simple concurso de preguntas o un acertijo matemático. Las lecciones que nos enseña esta paradoja tienen un valor universal que se puede aplicar a varios campos, como nuestra vida cotidiana, los negocios, la medicina y el desarrollo de IA.
 
 ### Conflicto entre datos e intuición (el problema de los falsos positivos en medicina)
 
@@ -204,9 +204,9 @@ Por ejemplo, supongamos que hay "una enfermedad intratable que afecta a 1 de cad
 Si te haces esta prueba y das "positivo", ¿cuál es la probabilidad de que realmente tengas la enfermedad intratable?
 
 Intuitivamente, puedes desesperarte y pensar: "Como la precisión es del 99%, la probabilidad de que esté enfermo también debe ser del 99%".
-Sin embargo, al calcularlo con el teorema de Bayes, la probabilidad de estar realmente enfermo es **solo un poco menos del 1% (alrededor del 0.98%)**. Como el 1% (alrededor de 100 personas) de la abrumadora mayoría de "personas sanas (9,999 personas)" serán "falsos positivos", dentro del grupo de personas que dieron positivo, los pacientes reales (casi 1 persona) serán una minoría absoluta.
+Sin embargo, al calcularlo con el [teorema de Bayes](/es/p/bayes-theorem/), la probabilidad de estar realmente enfermo es **solo un poco menos del 1% (alrededor del 0.98%)**. Como el 1% (alrededor de 100 personas) de la abrumadora mayoría de "personas sanas (9,999 personas)" serán "falsos positivos", dentro del grupo de personas que dieron positivo, los pacientes reales (casi 1 persona) serán una minoría absoluta.
 
-Esta enorme divergencia entre la evaluación de probabilidad intuitiva (99%) y la verdad matemática (1%) corre el riesgo de causar pánico innecesario y decisiones médicas erróneas en las personas. Entender el problema de Monty Hall es el primer paso para adquirir los conocimientos necesarios para evaluar correctamente esta "asimetría de información y probabilidad a priori".
+Esta enorme divergencia entre la evaluación de probabilidad intuitiva (99%) y la verdad matemática (1%) corre el riesgo de causar pánico innecesario y decisiones médicas erróneas en las personas. Entender [el problema de Monty Hall](/es/p/monty-hall-problem/) es el primer paso para adquirir los conocimientos necesarios para evaluar correctamente esta "asimetría de información y probabilidad a priori".
 
 ### El valor de la información en la estrategia empresarial
 
@@ -216,11 +216,11 @@ En ese momento, ¿"te aferras obstinadamente a la estrategia original (sesgo del
 
 ## Conclusión: La inteligencia es el coraje de "dudar de tu intuición"
 
-Lo que hace que el problema de Monty Hall sea tan fascinante y aterrador es que resalta maravillosamente "los límites de la inteligencia humana". Incluso expertos con doctorados se dejaron engañar por su primera intuición y reaccionaron emocionalmente contra la prueba correcta.
+Lo que hace que [el problema de Monty Hall](/es/p/monty-hall-problem/) sea tan fascinante y aterrador es que resalta maravillosamente "los límites de la inteligencia humana". Incluso expertos con doctorados se dejaron engañar por su primera intuición y reaccionaron emocionalmente contra la prueba correcta.
 
 Vivimos dependiendo de una poderosa arma llamada "intuición" que hemos adquirido en nuestro proceso evolutivo. Sin embargo, en la sociedad moderna compleja y llena de datos, debemos darnos cuenta de que nuestra intuición a veces puede tendernos una trampa.
 
-El problema de Monty Hall nos transmite un mensaje importante.
+[El problema de Monty Hall](/es/p/monty-hall-problem/) nos transmite un mensaje importante.
 Ese mensaje es **"la importancia de no confiar ciegamente en nuestra intuición, sino detenernos y reconsiderar utilizando las herramientas de la lógica y las matemáticas"**. Aceptar verdades que a primera vista parecen contraintuitivas requiere humildad intelectual y el coraje para actualizar nuestras propias suposiciones.
 
 La próxima vez que te enfrentes a una decisión crucial en la vida y obtengas nueva información (una puerta abierta), por favor, recuerda este problema de Monty Hall. ¿No ha cambiado la probabilidad con esa información? ¿No estás atrapado por el sesgo del statu quo?

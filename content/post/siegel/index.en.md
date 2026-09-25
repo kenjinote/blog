@@ -40,7 +40,7 @@ However, as the 1930s began, the Nazis (National Socialist German Workers' Party
 
 As the research and living environment in Germany under the Nazi regime deteriorated drastically, and with his own personal safety at risk, Siegel finally made the decision to leave his homeland. In 1940, shortly after the outbreak of World War II, he managed to escape to the United States via a dangerous route through Denmark and Norway.
 
-In the United States, he was welcomed at the Institute for Advanced Study (IAS) in Princeton, New Jersey. At the time, the IAS had become a sanctuary for the greatest minds fleeing the war in Europe, and Siegel enjoyed a fulfilling research life alongside the likes of Albert Einstein, John von Neumann, and Hermann Weyl. During his American years, Siegel's research extended beyond number theory; he successively produced extremely important results in the fields of celestial mechanics and analytic function theory.
+In the United States, he was welcomed at the Institute for Advanced Study (IAS) in Princeton, New Jersey. At the time, the IAS had become a sanctuary for the greatest minds fleeing the war in Europe, and Siegel enjoyed a fulfilling research life alongside the likes of Albert Einstein, [John von Neumann](/en/p/von-neumann/), and Hermann Weyl. During his American years, Siegel's research extended beyond number theory; he successively produced extremely important results in the fields of celestial mechanics and analytic function theory.
 
 ### 2.4 Return to Göttingen and Later Years
 
@@ -68,7 +68,7 @@ This result was groundbreaking regarding the finiteness of solutions to Diophant
 
 ### 3.2 Siegel Zero
 
-In analytic number theory, the distribution of zeros of Dirichlet's $L$-function $L(s, \chi)$ is extremely important for natural extensions of the prime number theorem and the theorem on arithmetic progressions. According to the Generalized [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis (GRH), all zeros in the critical strip with a real part between $0$ and $1$ are supposed to lie on the line where the real part is $1/2$.
+In analytic number theory, the distribution of zeros of Dirichlet's $L$-function $L(s, \chi)$ is extremely important for natural extensions of the [prime number theorem](/en/p/prime-number-theorem/) and the theorem on arithmetic progressions. According to the Generalized [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis (GRH), all zeros in the critical strip with a real part between $0$ and $1$ are supposed to lie on the line where the real part is $1/2$.
 
 However, for a real character (of a real quadratic field) $\chi$, the possibility that there exists a real zero with a real part very close to $1$ has not been ruled out by current mathematics. Such a hypothetical counterexample zero is called a **Siegel zero** or an exceptional zero.
 

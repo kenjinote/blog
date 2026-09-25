@@ -21,7 +21,7 @@ https://github.com/zyedidia/micro/releases
 
 1. `Win की` + `R की` दबाएं, `sysdm.cpl` टाइप करें और `Enter की` दबाएं।
 2. `सिस्टम गुण` (System Properties) के `सिस्टम गुण` पर क्लिक करें।
-3. `पर्यावरण चर` (Environment Variables) पर क्लिक करें।
+3. `पर्यावरण चर` ([Environment Variables](/hi/p/cli%E0%A4%9F%E0%A5%87%E0%A4%95%E0%A5%8D%E0%A4%B8%E0%A5%8D%E0%A4%9F-%E0%A4%8F%E0%A4%A1%E0%A4%BF%E0%A4%9F%E0%A4%B0nano%E3%82%92windows%E3%81%AB%E0%A4%87%E0%A4%82%E0%A4%B8%E0%A5%8D%E0%A4%9F%E0%A5%89%E0%A4%B2%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/)) पर क्लिक करें।
 4. `सिस्टम चर` (System variables) में `Path` चुनें और `संपादित करें` (Edit) पर क्लिक करें।
 5. `नया` (New) पर क्लिक करें और उस फ़ोल्डर का पथ जोड़ें जिसमें `micro.exe` है।
 6. सभी संवाद बॉक्स बंद करने के लिए `OK` पर क्लिक करें।

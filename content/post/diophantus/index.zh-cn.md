@@ -17,7 +17,7 @@ tags:
 
 ## 1. 引言
 
-在数学史上，有一位被尊称为“代数之父”的人物。他就是活跃于古亚历山大港的 **[丢番图](https://kenji.blog/zh-cn/p/diophantus/)**（Diophantus of Alexandria）。他的著作《算术》（Arithmetica）对后世伊斯兰世界的数学家以及文艺复兴时期欧洲的数学家产生了深远的影响。特别是皮埃尔·德·费马（Pierre de Fermat）写在《算术》空白处的“[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)”，更是名垂千古。
+在数学史上，有一位被尊称为“代数之父”的人物。他就是活跃于古亚历山大港的 **[丢番图](https://kenji.blog/zh-cn/p/diophantus/)**（Diophantus of Alexandria）。他的著作《算术》（Arithmetica）对后世伊斯兰世界的数学家以及文艺复兴时期欧洲的数学家产生了深远的影响。特别是[皮埃尔·德·费马](/zh-cn/p/fermat/)（Pierre de Fermat）写在《算术》空白处的“[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)”，更是名垂千古。
 
 本文将深入探讨[丢番图](https://kenji.blog/zh-cn/p/diophantus/)的生平、他的数学成就、代表作《算术》的详细内容，以及以他名字命名的“[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程”。此外，我们还将解开能够推算出他寿命的“墓志铭”之谜。
 
@@ -29,7 +29,7 @@ tags:
 
 ### 2.2 希腊化文化与亚历山大港
 
-当时的亚历山大港是希腊化文化和学术的中心，拥有庞大的图书馆（亚历山大图书馆），是众多学者聚集的智慧枢纽。在这个汇聚了希腊、埃及、巴比伦甚至印度知识的城市里，[丢番图](https://kenji.blog/zh-cn/p/diophantus/)能够接触到大量过去的数学遗产。与欧几里得（Euclid）、阿基米德（Archimedes）、阿波罗尼奥斯（Apollonius）等伟大希腊数学家建立的几何学传统不同，有理论认为[丢番图](https://kenji.blog/zh-cn/p/diophantus/)受到了巴比伦代数方法的强烈影响。
+当时的亚历山大港是希腊化文化和学术的中心，拥有庞大的图书馆（亚历山大图书馆），是众多学者聚集的智慧枢纽。在这个汇聚了希腊、埃及、巴比伦甚至印度知识的城市里，[丢番图](https://kenji.blog/zh-cn/p/diophantus/)能够接触到大量过去的数学遗产。与[欧几里得](/zh-cn/p/euclid/)（Euclid）、阿基米德（Archimedes）、阿波罗尼奥斯（Apollonius）等伟大希腊数学家建立的几何学传统不同，有理论认为[丢番图](https://kenji.blog/zh-cn/p/diophantus/)受到了巴比伦代数方法的强烈影响。
 
 ```mermaid
 timeline
@@ -86,19 +86,19 @@ $$
 
 ### 4.2 勾股数与非线性[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程
 
-我们熟知的勾股定理（毕达哥拉斯定理）方程也是一种[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程。
+我们熟知的[勾股定理](/zh-cn/p/diverse-proofs-of-pythagorean-theorem/)（[毕达哥拉斯](/zh-cn/p/pythagoras/)定理）方程也是一种[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程。
 
 $$
 x^2 + y^2 = z^2
 $$
 
-满足这个方程的正整数 $(x, y, z)$ 组合被称为 **勾股数（毕达哥拉斯三元组）**。著名的有 $(3, 4, 5)$ 和 $(5, 12, 13)$ 等。[丢番图](https://kenji.blog/zh-cn/p/diophantus/)在《算术》第II卷第8题中，探讨了将一个给定的平方数分为两个平方数之和的问题（例如寻找有理数 $x, y$ 使得 $16 = x^2 + y^2$）。
+满足这个方程的正整数 $(x, y, z)$ 组合被称为 **勾股数（[毕达哥拉斯](/zh-cn/p/pythagoras/)三元组）**。著名的有 $(3, 4, 5)$ 和 $(5, 12, 13)$ 等。[丢番图](https://kenji.blog/zh-cn/p/diophantus/)在《算术》第II卷第8题中，探讨了将一个给定的平方数分为两个平方数之和的问题（例如寻找有理数 $x, y$ 使得 $16 = x^2 + y^2$）。
 
 在这个问题的空白处，17世纪的法国法官兼业余数学家[皮埃尔·德·费马](https://kenji.blog/zh-cn/p/fermat/)留下了如下笔记：
 
 > “将一个立方数分为两个立方数之和，或一个四次幂分为两个四次幂之和，或者一般地，将一个高于二次的幂分为两个同次幂之和，这是不可能的。对此，我确信已发现了一个美妙的证法，可惜这里的空白处太小，写不下。”
 
-这就是著名的 **[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)**（即 $x^n + y^n = z^n \ (n \ge 3)$ 没有正整数解）。这个定理自提出以来，在约350年的时间里击退了全世界天才数学家们的挑战，直到1995年才被安德鲁·怀尔斯最终证明。如果没有[丢番图](https://kenji.blog/zh-cn/p/diophantus/)的著作，这场伟大的数学剧也许就不会发生。
+这就是著名的 **[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)**（即 $x^n + y^n = z^n \ (n \ge 3)$ 没有正整数解）。这个定理自提出以来，在约350年的时间里击退了全世界天才数学家们的挑战，直到1995年才被[安德鲁·怀尔斯](/zh-cn/p/wiles/)最终证明。如果没有[丢番图](https://kenji.blog/zh-cn/p/diophantus/)的著作，这场伟大的数学剧也许就不会发生。
 
 ```mermaid
 graph TD
@@ -179,7 +179,7 @@ $$
 
 进入16世纪，随着文艺复兴时期欧洲对希腊古典著作的重新发现，《算术》也被翻译成了拉丁语。1621年由克劳德·加斯帕尔·巴谢（[Claude Gaspard Bachet](https://kenji.blog/zh-cn/p/bachet/) de Méziriac）出版的希腊语和拉丁语对照本被广泛阅读。正是这本巴谢版的《算术》，被费马仔细研读，从而成为了开启新数学大门的契机。
 
-此后，[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程的理论被莱昂哈德·欧拉（Leonhard Euler）、约瑟夫·路易·拉格朗日（Joseph-Louis Lagrange）、卡尔·弗里德里希·高斯（Carl Friedrich Gauss）等巨匠深入研究。他们的研究成长为现代“代数数论”和“代数几何学”等庞大的数学领域。希尔伯特23个问题中的第10个问题是“寻找一个通用的算法来判定任意丢番图方程是否可解”，1970年尤里·马季亚谢维奇证明了“这样的算法不存在”。[丢番图](https://kenji.blog/zh-cn/p/diophantus/)的名字，深深镌刻在现代数学的最前沿。
+此后，[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程的理论被[莱昂哈德·欧拉](/zh-cn/p/euler/)（Leonhard Euler）、[约瑟夫·路易·拉格朗日](/zh-cn/p/lagrange/)（Joseph-Louis Lagrange）、[卡尔·弗里德里希·高斯](/zh-cn/p/gauss/)（Carl Friedrich Gauss）等巨匠深入研究。他们的研究成长为现代“代数数论”和“代数几何学”等庞大的数学领域。希尔伯特23个问题中的第10个问题是“寻找一个通用的算法来判定任意丢番图方程是否可解”，1970年尤里·马季亚谢维奇证明了“这样的算法不存在”。[丢番图](https://kenji.blog/zh-cn/p/diophantus/)的名字，深深镌刻在现代数学的最前沿。
 
 ## 7. 结语
 

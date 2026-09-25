@@ -20,7 +20,7 @@ tags:
 
 하지만 만약 다각형의 모든 꼭짓점이 **격자점** ( $x$ 좌표와 $y$ 좌표가 모두 정수인 점) 위에 존재한다면, 길이를 재거나 복잡한 곱셈이나 제곱근의 계산을 하지 않고도 극히 단순한 사칙연산만으로 넓이를 산출할 수 있는 마법 같은 공식이 존재합니다. 그것이 바로 이번에 자세히 해설할 **[픽의 정리](https://kenji.blog/ko/p/picks-theorem/) ([Pick's Theorem](https://kenji.blog/ko/p/picks-theorem/))** 입니다.
 
-[픽의 정리](https://kenji.blog/ko/p/picks-theorem/)는 단순히 "넓이를 쉽게 구할 수 있는 편리하고 신기한 공식"일 뿐만 아니라, 현대 수학에서의 위상수학(토폴로지)이나 그래프 이론, 그리고 대수기하학으로 이어지는 매우 깊은 배경을 가지고 있습니다. 이 글에서는 [픽의 정리](https://kenji.blog/ko/p/picks-theorem/)의 기본적인 사용법부터, 왜 이런 단순한 공식이 성립하는지 그 수학적 증명, 역사적 배경, 그리고 정리가 가지는 한계와 3차원으로의 확장 가능성에 이르기까지 다각도로 깊이 있게 파헤쳐 해설해 보겠습니다.
+[픽의 정리](https://kenji.blog/ko/p/picks-theorem/)는 단순히 "넓이를 쉽게 구할 수 있는 편리하고 신기한 공식"일 뿐만 아니라, 현대 수학에서의 위상수학(토폴로지)이나 [그래프 이론](/ko/p/graph-theory-dijkstra-a-star/), 그리고 대수기하학으로 이어지는 매우 깊은 배경을 가지고 있습니다. 이 글에서는 [픽의 정리](https://kenji.blog/ko/p/picks-theorem/)의 기본적인 사용법부터, 왜 이런 단순한 공식이 성립하는지 그 수학적 증명, 역사적 배경, 그리고 정리가 가지는 한계와 3차원으로의 확장 가능성에 이르기까지 다각도로 깊이 있게 파헤쳐 해설해 보겠습니다.
 
 ## 2. 게오르그 알렉산더 픽과 역사적 배경
 
@@ -115,7 +115,7 @@ flowchart LR
 
 ## 5. [오일러의 다면체 정리](https://kenji.blog/ko/p/eulers-polyhedron-formula/)를 이용한 증명
 
-왜 이처럼 마법 같은 공식이 성립하는 것일까요? [픽의 정리](https://kenji.blog/ko/p/picks-theorem/)의 증명에는 여러 가지 방법이 있지만, 여기에서는 그래프 이론의 유명한 정리인 **[오일러의 다면체 정리](https://kenji.blog/ko/p/eulers-polyhedron-formula/) (Euler's Polyhedral Formula)** 를 이용한, 매우 우아한 증명 아이디어를 소개합니다.
+왜 이처럼 마법 같은 공식이 성립하는 것일까요? [픽의 정리](https://kenji.blog/ko/p/picks-theorem/)의 증명에는 여러 가지 방법이 있지만, 여기에서는 [그래프 이론](/ko/p/graph-theory-dijkstra-a-star/)의 유명한 정리인 **[오일러의 다면체 정리](https://kenji.blog/ko/p/eulers-polyhedron-formula/) (Euler's Polyhedral Formula)** 를 이용한, 매우 우아한 증명 아이디어를 소개합니다.
 
 오일러의 정리에 따르면, 평면상에 그려진 연결된 그래프(네트워크)에 대해, 꼭짓점의 수를 $V$ , 변의 수를 $E$ , 면의 수를 $F$ 라고 했을 때, 다음의 관계식이 성립합니다.
 

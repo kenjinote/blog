@@ -39,7 +39,7 @@ graph TD
     style F fill:#fbb,stroke:#333,stroke-width:2px
 ```
 
-Masa di mana para pengembang (developer) mengkhawatirkan kebocoran memori sambil memanipulasi pointer, atau menulis ratusan baris kode standar hanya untuk melakukan parsing JSON, kini telah berakhir. Menggunakan bahasa alami (seperti bahasa Indonesia atau Inggris)—bahasa dengan tingkat abstraksi tertinggi bagi umat manusia—untuk mendefinisikan sebuah sistem telah menjadi standar "pemrograman" di tahun 2026.
+Masa di mana para pengembang (developer) mengkhawatirkan kebocoran memori sambil memanipulasi [pointer](/id/p/c-language-pointers-memory-management-stack-heap/), atau menulis ratusan baris kode standar hanya untuk melakukan parsing JSON, kini telah berakhir. Menggunakan bahasa alami (seperti bahasa Indonesia atau Inggris)—bahasa dengan tingkat abstraksi tertinggi bagi umat manusia—untuk mendefinisikan sebuah sistem telah menjadi standar "pemrograman" di tahun 2026.
 
 ---
 
@@ -50,7 +50,7 @@ Dalam pengembangan perangkat lunak tradisional, produktivitas individu $P_{tradi
 
 $$ P_{traditional} = c_1 \cdot S + c_2 \cdot E + c_3 \cdot T $$
 
-Namun, dalam pengembangan modern yang memanfaatkan AI, kemampuan AI $A(t)$ berfungsi sebagai "pengganda (Multiplier) yang kuat" yang memperkuat kemampuan manusia. Karena kemampuan AI tumbuh secara eksponensial seiring waktu $t$ (versi AI dari Hukum Moore), produktivitas di era AI $P_{AI}(t)$ dapat diekspresikan dengan persamaan berikut:
+Namun, dalam pengembangan modern yang memanfaatkan AI, kemampuan AI $A(t)$ berfungsi sebagai "pengganda (Multiplier) yang kuat" yang memperkuat kemampuan manusia. Karena kemampuan AI tumbuh secara eksponensial seiring waktu $t$ (versi AI dari [Hukum Moore](/id/p/business-moores-law/)), produktivitas di era AI $P_{AI}(t)$ dapat diekspresikan dengan persamaan berikut:
 
 $$ P_{AI}(t) = \alpha \cdot S_{core} \cdot e^{\beta \cdot A(t)} $$
 
@@ -175,7 +175,7 @@ Lebih dari sekadar keterampilan "menulis", manusia perlu memaksimalkan keterampi
 Berdasarkan analisis yang telah kita bahas sejauh ini, kami menyajikan rencana aksi konkret bagi programmer untuk bertahan hidup di era AI:
 
 1.  **Mempelajari Kembali "Dasar-Dasar" Teknologi Secara Menyeluruh**: Biarkan AI menangani cara menggunakan framework. Namun, pemahaman mendalam tentang cara kerja sistem operasi (OS), protokol jaringan ([TCP](https://kenji.blog/id/p/http3-quic-protocol-tcp-udp/)/IP, HTTP/3), struktur internal database ([B-Tree](https://kenji.blog/id/p/b-tree-database-index-theory/), tingkat isolasi transaksi), serta struktur data dan algoritma, sangatlah mutlak. Fondasi ilmu komputer yang kokoh sangat penting untuk menilai apakah keluaran dari AI sudah benar.
-2.  **Kuasai Arsitektur Cloud dan Sistem Terdistribusi**: Fokus bukan pada kode individual, melainkan pada bagaimana menggabungkan sumber daya cloud seperti AWS, GCP, dan Azure untuk membangun sistem yang dapat diskalakan (scalable). Pahami konsep [Infrastructure as Code](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) (IaC) seperti [Terraform](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/), dan kembangkan kemampuan untuk mendesain keseluruhan sistem sebagai sebuah kode.
+2.  **Kuasai Arsitektur Cloud dan [Sistem Terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/)**: Fokus bukan pada kode individual, melainkan pada bagaimana menggabungkan sumber daya cloud seperti AWS, GCP, dan Azure untuk membangun sistem yang dapat diskalakan (scalable). Pahami konsep [Infrastructure as Code](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) ([IaC](/id/p/iac-infrastructure-as-code-terraform/)) seperti [Terraform](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/), dan kembangkan kemampuan untuk mendesain keseluruhan sistem sebagai sebuah kode.
 3.  **Menjadi Pakar di Domain Bisnis**: Pelajari lebih dalam model bisnis, kerangka regulasi, dan psikologi perilaku pengguna di industri tempat Anda berada. Melampaui batas sebagai seorang insinyur dan milikilah perspektif yang mirip dengan Product Manager (PM).
 4.  **Pertajam Keterampilan Komunikasi dan Fasilitasi**: Proses penyelesaian "ambiguitas" antara manusia ke manusia dan membangun konsensus tidak dapat digantikan oleh AI. Keterampilan lunak (soft skills) untuk berkomunikasi dengan pemangku kepentingan (stakeholders) dan menemukan masalah yang sesungguhnya akan menjadi keterampilan yang paling berharga.
 5.  **Manfaatkan AI Sebagai "Rekan Kerja" Sepenuhnya**: Alih-alih takut akan evolusi alat AI, gunakanlah itu sebagai senjata terkuat Anda. Gunakan [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) terbaru dan agen coding AI setiap hari, lalu kumpulkan "pengetahuan implisit" tentang di mana AI akan gagal dan bagaimana mengubah prompt Anda untuk mengeluarkan kinerja terbaik.

@@ -125,7 +125,7 @@ gitGraph
 
 當整合目標與整合來源的分支各自擁有獨立的提交時，Git 會執行三方合併。此時，Git 會探索 DAG，並找出兩個分支的「共同祖先（Lowest Common Ancestor, LCA）」。
 
-找出 LCA 的演算法時間複雜度 $T_{\text{LCA}}$，相對於頂點數 $|V|$ 與邊數 $|E|$，可以在線性時間內執行完成：
+找出 LCA 的演算法時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/) $T_{\text{LCA}}$，相對於頂點數 $|V|$ 與邊數 $|E|$，可以在線性時間內執行完成：
 
 $$
 T_{\text{LCA}} = \mathcal{O}(|V| + |E|)

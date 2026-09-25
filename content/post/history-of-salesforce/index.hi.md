@@ -9,7 +9,7 @@ slug: "history-of-salesforce"
 ---
 # कंपनी का इतिहास: Salesforce का इतिहास - SaaS (क्लाउड सॉफ्टवेयर) का अग्रणी
 
-Salesforce SaaS का अग्रणी है।
+[Salesforce](/hi/p/salesforce%E3%81%AEsoql%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%A6%E6%97%A5%E5%88%A5%E3%81%AE%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%90%E6%95%B0%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/) SaaS का अग्रणी है।
 
 ## क्लाउड कंप्यूटिंग का विकास
 

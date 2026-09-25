@@ -61,7 +61,7 @@ flowchart LR
 
 ## 2. コンセンサスアルゴリズムの深い探究
 
-ネットワークに中央管理者がいないため、「どの[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)が正しいか」「次のブロックを誰が生成するか」をノード間で合意（コンセンサス）するためのアルゴリズムが不可欠です。これが分散コンピューティングにおける ** ビザンチン将軍問題 ** を解決するための鍵となります。
+ネットワークに中央管理者がいないため、「どの[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)が正しいか」「次のブロックを誰が生成するか」をノード間で合意（コンセンサス）するためのアルゴリズムが不可欠です。これが分散コンピューティングにおける ** [ビザンチン将軍問題](/p/byzantine-generals-problem/) ** を解決するための鍵となります。
 
 ### 2.1 Proof of Work (PoW)
 
@@ -80,7 +80,7 @@ $$
 P = \frac{T}{2^{256}}
 $$
 
-1回のハッシュ計算で条件を満たす確率は極めて低いため、マイナーは総当たり戦（ブルートフォース）で計算を繰り返します。莫大な電力を消費して計算競争に勝ったマイナーのみが、新しいブロックを追加し、報酬（マイニング報酬とトランザクション手数料）を得ることができます。攻撃者がチェーンを改ざんするには、ネットワーク全体の計算力の51%以上（51%攻撃）を支配する必要があり、現実的には莫大なコストがかかります。
+1回のハッシュ計算で条件を満たす確率は極めて低いため、マイナーは総当たり戦（ブルートフォース）で計算を繰り返します。莫大な電力を消費して計算競争に勝ったマイナーのみが、新しいブロックを追加し、報酬（マイニング報酬と[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)手数料）を得ることができます。攻撃者がチェーンを改ざんするには、ネットワーク全体の計算力の51%以上（51%攻撃）を支配する必要があり、現実的には莫大なコストがかかります。
 
 ### 2.2 Proof of Stake (PoS)
 
@@ -106,11 +106,11 @@ $$
 S_{t+1} = \Upsilon(S_t, T)
 $$
 
-上記の式において、$S_t$ は現在のイーサリアムのグローバルな状態（各アカウントの残高やコントラクトのストレージ）、$T$ はトランザクション、$\Upsilon$ はEVMによる状態遷移関数、そして $S_{t+1}$ はトランザクション実行後の新しい状態を示します。
+上記の式において、$S_t$ は現在のイーサリアムのグローバルな状態（各アカウントの残高やコントラクトのストレージ）、$T$ は[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)、$\Upsilon$ はEVMによる状態遷移関数、そして $S_{t+1}$ は[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)実行後の新しい状態を示します。
 
 EVMの内部構造は、主に以下の領域に分かれています。
 - ** [スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/) ([Stack](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)) ** : 最大1024要素のLIFO（後入れ先出し）データ構造。256ビット長のワードサイズ。各種演算のオペランドを保持します。
-- ** メモリ (Memory) ** : トランザクション実行中のみ一時的に保持される揮発性のバイト配列。
+- ** メモリ (Memory) ** : [トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)実行中のみ一時的に保持される揮発性のバイト配列。
 - ** ストレージ (Storage) ** : コントラクトごとに割り当てられる永続的なデータ領域。キー・バリュー型（256-bit to 256-bit）のデータベースで構成されており、書き込み操作に高いガス（手数料）コストがかかります。
 
 ## 4. Solidityによるスマートコントラクトの実装
@@ -249,7 +249,7 @@ contract SecureBank {
 ### 5.2 その他の[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)
 
 - ** オーバーフロー / アンダーフロー ** : Solidity 0.8.0以前では、整数の最大値・最小値を超えた計算が行われると値がラップアラウンドする脆弱性がありました。現在ではコンパイラレベルでパニックエラーとなるよう保護されています。
-- ** フロントランニング (Front-running) ** : ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーンの[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)は一時的に公開の待機プール（Mempool）に保持されます。攻撃者はMempoolを監視し、ターゲットのトランザクションよりも高いガス代を設定して自身のトランザクションを先に処理させ、利益をかすめ取ります（サンドイッチ攻撃など）。
+- ** フロントランニング (Front-running) ** : ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーンの[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)は一時的に公開の待機プール（Mempool）に保持されます。攻撃者はMempoolを監視し、ターゲットの[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)よりも高いガス代を設定して自身の[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)を先に処理させ、利益をかすめ取ります（サンドイッチ攻撃など）。
 
 ## 6. まとめ
 

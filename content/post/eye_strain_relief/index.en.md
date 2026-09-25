@@ -101,7 +101,7 @@ When programmers choose a monitor, they should absolutely select one where the s
 The refresh rate is a numerical value (Hz) indicating how many times the monitor redraws the screen per second.
 Standard office monitors are $60 \text{ Hz}$, but high refresh rate monitors like $120 \text{ Hz}$ or $144 \text{ Hz}$ have become popular in recent years. This is extremely beneficial not only for gamers but also for programmers.
 
-When scrolling through massive amounts of code or when a large volume of logs flows in the terminal, a $60 \text{ Hz}$ display will experience "motion blur" (afterimages) combined with the limitations of pixel response times. The eye unconsciously tries to capture the shape of the text and keep it in focus even during scrolling, but if the characters are blurred, the processing load on the brain's visual cortex spikes dramatically.
+When scrolling through massive amounts of code or when a large volume of logs flows in the [terminal](/en/p/terminal-efficiency-powershell-bash-shortcuts/), a $60 \text{ Hz}$ display will experience "motion blur" (afterimages) combined with the limitations of pixel response times. The eye unconsciously tries to capture the shape of the text and keep it in focus even during scrolling, but if the characters are blurred, the processing load on the brain's visual cortex spikes dramatically.
 With a display of $120 \text{ Hz}$ or higher, text remains clearly visible even while scrolling, significantly reducing the burden of these unconscious eye movements and focus adjustments.
 
 ## 2.3 Panel Types and Contrast Ratio (IPS, VA, OLED)

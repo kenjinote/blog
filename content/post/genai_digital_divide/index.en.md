@@ -104,7 +104,7 @@ $$
 VRAM_{required} \approx \left( \frac{P \times bits\_per\_weight}{8} \right) + Context\_Memory
 $$
 
-Even with high-end GPUs available to general consumers (like the NVIDIA RTX 4090), VRAM is limited to 24GB, making it impossible to run a 70B class model as is. Here, "Quantization" technologies like AWQ and GGUF have emerged, and a technical struggle is taking place to find a compromise by compressing weights to 4-bit or 8-bit, but performance degradation (worsening of Perplexity) due to quantization is inevitable.
+Even with high-end GPUs available to general consumers (like the NVIDIA RTX 4090), VRAM is limited to 24GB, making it impossible to run a 70B class model as is. Here, "Quantization" technologies like AWQ and [GGUF](/en/p/llama-cpp-quantization-gguf/) have emerged, and a technical struggle is taking place to find a compromise by compressing weights to 4-bit or 8-bit, but performance degradation (worsening of Perplexity) due to quantization is inevitable.
 
 Furthermore, in recent years, "AI PCs" equipped with NPUs (Neural Processing Units) have appeared, but the TOPS (Tera Operations Per Second) of current NPUs can only handle lightweight, small-scale models (SLMs: Small Language Models) at best. To truly perform highly advanced inference locally, you need the capital to build a multi-GPU environment costing millions of yen. This is the true nature of the "capital-intensive digital divide" in AI.
 

@@ -10,7 +10,7 @@ image: eyecatch.jpg
 
 # Apa itu Kode Koreksi Kesalahan?
 
-Dalam masyarakat digital, data selalu terancam oleh gangguan (noise). Goresan pada CD, data wahana antariksa yang dikirim dari luar angkasa, atau kode QR yang biasa kita pindai setiap hari. Data-data ini tidak hancur sepenuhnya oleh sedikit kehilangan atau gangguan berkat adanya mekanisme matematika kuat yang disebut "Kode Koreksi Kesalahan (Error-Correcting Codes, ECC)".
+Dalam masyarakat digital, data selalu terancam oleh gangguan (noise). Goresan pada CD, data wahana antariksa yang dikirim dari luar angkasa, atau kode QR yang biasa kita pindai setiap hari. Data-data ini tidak hancur sepenuhnya oleh sedikit kehilangan atau gangguan berkat adanya mekanisme matematika kuat yang disebut "Kode Koreksi Kesalahan (Error-Correcting Codes, [ECC](/id/p/elliptic-curve-cryptography-math-cpp/))".
 
 Artikel ini akan mengungkap secara rinci cara kerjanya, mulai dari konsep yang digagas oleh bapak teori informasi Claude Shannon, dasar-dasar pemeriksaan paritas, representasi matriks kode Hamming, hingga kode Reed-Solomon yang memanfaatkan lapangan Galois.
 

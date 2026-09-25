@@ -79,7 +79,7 @@ $$
 ax + by = 1
 $$
 
-يمكن حساب $x, y$ تحديدًا عن طريق توسيع [خوارزمية إقليدس](https://kenji.blog/ar/p/euclidean-algorithm/) (خوارزمية إقليدس الموسعة)، وقد أصبحت نظرية أساسية لا غنى عنها في التشفير الحديث (مثل تشفير [RSA](https://kenji.blog/ar/p/modern-cryptography-public-key-hash-signature/)). في السياقات التي تقدر الدقة التاريخية، يطلق عليها أحيانًا **مبرهنة باشيه**.
+يمكن حساب $x, y$ تحديدًا عن طريق توسيع [خوارزمية إقليدس](https://kenji.blog/ar/p/euclidean-algorithm/) ([خوارزمية إقليدس](/ar/p/euclidean-algorithm/) الموسعة)، وقد أصبحت نظرية أساسية لا غنى عنها في التشفير الحديث (مثل تشفير [RSA](https://kenji.blog/ar/p/modern-cryptography-public-key-hash-signature/)). في السياقات التي تقدر الدقة التاريخية، يطلق عليها أحيانًا **مبرهنة باشيه**.
 
 ## الخلاصة
 

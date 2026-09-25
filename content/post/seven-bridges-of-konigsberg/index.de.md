@@ -15,7 +15,7 @@ In der Geschichte der Mathematik kommt es manchmal vor, dass alltägliche, trivi
 
 Im 18. Jahrhundert floss durch die preußische Stadt Königsberg (das heutige Kaliningrad in der Russischen Föderation) der große Fluss Pregel. Es gab sieben Brücken, die die Flussinseln mit beiden Ufern verbanden. Die damaligen Bürger erdachten sich bei ihren abendlichen Spaziergängen folgendes Spiel: "Ist es möglich, einen Spaziergang zu machen, bei dem man alle sieben Brücken der Stadt genau einmal überquert und zum Ausgangspunkt zurückkehrt?"
 
-Als dieses scheinbar bloße Rätsel in die Hände des genialen Mathematikers **[Leonhard Euler](https://kenji.blog/de/p/euler/)** (Leonhard Euler) fiel, kam es zu einer Revolution in der Welt der Mathematik. Euler bewies nicht nur, dass dieses Problem unlösbar ist, sondern betrachtete in diesem Prozess die Eigenschaften des Raumes aus einer völlig neuen Perspektive und legte den Grundstein für zwei in der modernen Mathematik äußerst wichtige Gebiete: die **Graphentheorie** ([Graph Theory](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/)) und die **Topologie** (Topology).
+Als dieses scheinbar bloße Rätsel in die Hände des genialen Mathematikers **[Leonhard Euler](https://kenji.blog/de/p/euler/)** ([Leonhard Euler](/de/p/euler/)) fiel, kam es zu einer Revolution in der Welt der Mathematik. Euler bewies nicht nur, dass dieses Problem unlösbar ist, sondern betrachtete in diesem Prozess die Eigenschaften des Raumes aus einer völlig neuen Perspektive und legte den Grundstein für zwei in der modernen Mathematik äußerst wichtige Gebiete: die **[Graphentheorie](/de/p/graph-theory-dijkstra-a-star/)** ([Graph Theory](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/)) und die **Topologie** (Topology).
 
 In diesem Artikel werden wir den historischen Hintergrund des Problems der sieben Brücken von Königsberg, Eulers brillante Lösung und wie dies mit moderner Wissenschaft und Technologie zusammenhängt, mit mathematischen Details tiefgehend untersuchen. Genießen Sie nicht nur die historische Einführung, sondern auch die Schönheit der dahinterliegenden mathematischen Struktur.
 
@@ -52,7 +52,7 @@ Er ignorierte aus der präzisen Landkarte des realen Königsbergs völlig physik
 1. **Landmassen (Inseln und Ufer)** werden als bloße "Punkte" ohne Größe dargestellt. In der modernen Terminologie nennt man dies einen **Knoten** (Vertex) oder **Node** (Node).
 2. **Brücken** werden als "Linien" dargestellt, die Knoten miteinander verbinden. Dies nennt man eine **Kante** (Edge) oder einen **Link** (Link). Die Krümmung oder Länge der Linie spielt keine Rolle.
 
-Eine solche diskrete Struktur, die als Menge von endlich vielen Knoten und sie verbindenden Kanten dargestellt wird, nennt man in der Mathematik einen **[Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)** (Graph). Dies war genau der Moment der Geburt des Gebiets, das wir heute "Graphentheorie" nennen.
+Eine solche diskrete Struktur, die als Menge von endlich vielen Knoten und sie verbindenden Kanten dargestellt wird, nennt man in der Mathematik einen **[Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)** (Graph). Dies war genau der Moment der Geburt des Gebiets, das wir heute "[Graphentheorie](/de/p/graph-theory-dijkstra-a-star/)" nennen.
 
 Das folgende Mermaid-Diagramm zeigt, wie die geografische Karte der Stadt Königsberg in eine abstrakte Graphendarstellung umgewandelt wurde.
 
@@ -73,17 +73,17 @@ graph TD
     C -->|"Brücke g"| D
 ```
 
-Durch diese kraftvolle Abstraktion wurde die alltägliche Frage der Bürger, "ob es eine Route gibt, um jede der sieben Brücken der Stadt einmal zu überqueren", vollständig in ein rein logisches und streng mathematisches Problem umgewandelt: "Gibt es in einem gegebenen Graphen einen kontinuierlichen Pfad (einen Eulerschen Weg), der jede Kante genau einmal durchläuft?"
+Durch diese kraftvolle Abstraktion wurde die alltägliche Frage der Bürger, "ob es eine Route gibt, um jede der sieben Brücken der Stadt einmal zu überqueren", vollständig in ein rein logisches und streng mathematisches Problem umgewandelt: "Gibt es in einem gegebenen Graphen einen kontinuierlichen [Pfad](/de/p/windows-%E3%81%A7pfad%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9Fausf%C3%BChrbare-datei%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/) (einen Eulerschen Weg), der jede Kante genau einmal durchläuft?"
 
 ## Der Grad der Knoten und der Satz vom Eulerweg: Eulers Beweis
 
 Nachdem er das Problem in Form eines Graphen formuliert hatte, entdeckte Euler ein sehr einfaches, aber extrem mächtiges universelles Gesetz. Der Schlüssel zu seinem Beweis war die Einführung des neuen Konzepts des **Grades** (Degree).
 
-In der Graphentheorie wird der **Grad** eines Knotens $v$ als $d(v)$ oder $\text{deg}(v)$ bezeichnet und bedeutet "die Gesamtzahl der direkt mit diesem Knoten verbundenen Kanten".
+In der [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) wird der **Grad** eines Knotens $v$ als $d(v)$ oder $\text{deg}(v)$ bezeichnet und bedeutet "die Gesamtzahl der direkt mit diesem Knoten verbundenen Kanten".
 
-Euler überlegte logisch, welche Einschränkungen der Akt, einen "Pfad, der alle Kanten genau einmal durchläuft (Eulerweg)" auf einem Graphen zu zeichnen, dem Grad jedes Knotens auferlegt.
+Euler überlegte logisch, welche Einschränkungen der Akt, einen "[Pfad](/de/p/windows-%E3%81%A7pfad%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9Fausf%C3%BChrbare-datei%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/), der alle Kanten genau einmal durchläuft (Eulerweg)" auf einem Graphen zu zeichnen, dem Grad jedes Knotens auferlegt.
 
-Nehmen wir an, es gäbe einen Pfad, der den gesamten Graphen abzeichnet, indem er alle Kanten genau einmal durchläuft. Betrachten wir im Verlauf dieses Pfades einen Knoten, der ein "Durchgangspunkt" (ein Knoten, der weder Start- noch Endpunkt ist) ist. Um in den Knoten "hineinzukommen", muss der Pfad eine Kante benutzen, und um aus dem Knoten "herauszukommen", muss er eine andere Kante benutzen.
+Nehmen wir an, es gäbe einen [Pfad](/de/p/windows-%E3%81%A7pfad%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9Fausf%C3%BChrbare-datei%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/), der den gesamten Graphen abzeichnet, indem er alle Kanten genau einmal durchläuft. Betrachten wir im Verlauf dieses Pfades einen Knoten, der ein "Durchgangspunkt" (ein Knoten, der weder Start- noch Endpunkt ist) ist. Um in den Knoten "hineinzukommen", muss der [Pfad](/de/p/windows-%E3%81%A7pfad%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9Fausf%C3%BChrbare-datei%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/) eine Kante benutzen, und um aus dem Knoten "herauszukommen", muss er eine andere Kante benutzen.
 Das heißt, jedes Mal, wenn man einen Knoten als Durchgangspunkt besucht, verbraucht man zwangsläufig **zwei Kanten als Paar**.
 
 Daher müssen an Knoten, die nur im Verlauf des Pfades passiert werden, die Kanten zum Betreten und Verlassen immer paarweise vorhanden sein, sodass die Gesamtzahl der mit diesem Knoten verbundenen Kanten (der Grad) immer **gerade** (Even) sein muss.
@@ -93,12 +93,12 @@ Die einzigen möglichen Ausnahmen sind die Knoten, die dem "Startpunkt" und dem 
 Hierbei lassen sich die Muster des Pfades in die folgenden zwei Kategorien einteilen:
 
 1. **Eulerkreis (Eulerian Circuit)**: Wenn der Startpunkt und der Endpunkt derselbe Knoten sind.
-   In diesem Fall macht der Pfad eine volle Runde und kehrt zum ursprünglichen Knoten zurück. Daher werden praktisch **alle Knoten**, einschließlich Startpunkt = Endpunkt, wie "Durchgangspunkte" behandelt. Da das Ein- und Austreten vollständig gepaart ist, muss **der Grad aller Knoten im Graphen gerade sein**.
+   In diesem Fall macht der [Pfad](/de/p/windows-%E3%81%A7pfad%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9Fausf%C3%BChrbare-datei%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/) eine volle Runde und kehrt zum ursprünglichen Knoten zurück. Daher werden praktisch **alle Knoten**, einschließlich Startpunkt = Endpunkt, wie "Durchgangspunkte" behandelt. Da das Ein- und Austreten vollständig gepaart ist, muss **der Grad aller Knoten im Graphen gerade sein**.
 
 2. **Eulerweg (Eulerian Path)**: Wenn der Startpunkt und der Endpunkt unterschiedliche Knoten sind.
    In diesem Fall wird am Startpunkt eine zusätzliche Kante "für das erste Hinausgehen" benötigt, und am Endpunkt wird eine zusätzliche Kante "für das letzte Hineinkommen" benötigt. Daher sind nur bei den zwei Knoten von Start- und Endpunkt die Kantenpaare nicht vollständig, und sie haben einen **ungeraden** (Odd) Grad. Die Grade aller anderen Durchgangspunkte müssen gerade sein.
 
-Dies ist der grundlegendste und berühmteste Satz in der Graphentheorie (Eulerscher Satz), den Euler streng bewies.
+Dies ist der grundlegendste und berühmteste Satz in der [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) (Eulerscher Satz), den Euler streng bewies.
 
 Strenger mathematisch ausgedrückt mit Hilfe von Formeln für einen zusammenhängenden ungerichteten Graphen $G = (V, E)$:
 
@@ -123,10 +123,10 @@ Zählen wir den Grad jedes der 4 abstrahierten Landmassen (Knoten $A, B, C, D$).
 
 Zusammenfassend sind die Grade der 4 Knoten im Königsberger Graphen "3, 3, 3, 5". Erstaunlicherweise ist **der Grad aller Knoten ungerade**.
 
-Nach dem Eulerschen Satz muss die Anzahl der Knoten mit ungeradem Grad zwingend "0" oder "2" sein, damit ein Pfad möglich ist, der alle Kanten genau einmal durchläuft. Im Königsberger Graphen gibt es jedoch "4" Knoten mit ungeradem Grad.
+Nach dem Eulerschen Satz muss die Anzahl der Knoten mit ungeradem Grad zwingend "0" oder "2" sein, damit ein [Pfad](/de/p/windows-%E3%81%A7pfad%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9Fausf%C3%BChrbare-datei%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/) möglich ist, der alle Kanten genau einmal durchläuft. Im Königsberger Graphen gibt es jedoch "4" Knoten mit ungeradem Grad.
 
 Aufgrund dieser Tatsache zog Euler die folgende endgültige Schlussfolgerung:
-**"Es gibt absolut keinen Pfad, bei dem man alle sieben Brücken von Königsberg genau einmal überqueren kann."**
+**"Es gibt absolut keinen [Pfad](/de/p/windows-%E3%81%A7pfad%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9Fausf%C3%BChrbare-datei%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/), bei dem man alle sieben Brücken von Königsberg genau einmal überqueren kann."**
 
 Dies war ein äußerst wichtiger Moment in der Geschichte der Mathematik. Denn Euler hatte die Unmöglichkeit nicht dadurch bestätigt, dass er alle beinahe unendlich vielen denkbaren Spazierwege einzeln abgelaufen war. Er bewies die Unmöglichkeit auf elegante Weise, indem er sich nur auf die rein logischen und universellen Eigenschaften der "Graphenstruktur" und der "Parität (Gerade/Ungerade-Eigenschaft)" stützte. Genau dieser deduktive Ansatz ist die wahre Essenz der modernen Mathematik.
 
@@ -142,7 +142,7 @@ Euler selbst entdeckte daraufhin im Jahr 1750 ein erstaunliches universelles Ges
 
 ## Anwendung und Verbreitung der Graphentheorie in der modernen Gesellschaft
 
-Die Graphentheorie und die Topologie, die aus der reinen intellektuellen Suche der Mathematiker des 18. Jahrhunderts hervorgegangen sind, blieben keineswegs im Elfenbeinturm der Wissenschaft. Sie haben sich mittlerweile zu äußerst praktischen und unverzichtbaren Werkzeugen entwickelt, die das Fundament unserer hochgradig informatisierten Gesellschaft und Technologie stützen.
+Die [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) und die Topologie, die aus der reinen intellektuellen Suche der Mathematiker des 18. Jahrhunderts hervorgegangen sind, blieben keineswegs im Elfenbeinturm der Wissenschaft. Sie haben sich mittlerweile zu äußerst praktischen und unverzichtbaren Werkzeugen entwickelt, die das Fundament unserer hochgradig informatisierten Gesellschaft und Technologie stützen.
 
 ### 1. Computernetzwerke und das Internet
 Die physische und logische Struktur des Internets, das wir täglich nutzen, ist genau das: ein riesiger [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) auf globaler Ebene. Einzelne Router, Server und Computer sind die Knoten, und die sie verbindenden Glasfaser- oder drahtlosen Kommunikationsleitungen werden als Kanten dargestellt. Routing-Protokolle (wie etwa der [Dijkstra](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/)-Algorithmus), um Datenpakete am schnellsten und effizientesten an ihr Ziel zu bringen und dabei Staus zu vermeiden, sind alle als graphentheoretische Algorithmen konzipiert.

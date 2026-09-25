@@ -64,7 +64,7 @@ $$
 
 ## 5. 数学成就：求解[佩尔方程](https://kenji.blog/zh-cn/p/pell-equation/)
 
-另一项重要成就是对所谓 **[佩尔方程](https://kenji.blog/zh-cn/p/pell-equation/)** 的求解。佩尔方程是针对非完全平方数的正整数 $n$ 的以下形式的[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程（具有整数系数的多项式方程）：
+另一项重要成就是对所谓 **[佩尔方程](https://kenji.blog/zh-cn/p/pell-equation/)** 的求解。[佩尔方程](/zh-cn/p/pell-equation/)是针对非完全平方数的正整数 $n$ 的以下形式的[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程（具有整数系数的多项式方程）：
 
 $$
 x^2 - n y^2 = 1 \quad (\text{其中 } x, y \text{ 为整数})

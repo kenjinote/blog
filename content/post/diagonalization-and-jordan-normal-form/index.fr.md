@@ -148,7 +148,7 @@ Le **polynôme minimal** $m(\lambda)$ est celui de plus bas degré tel que $m(A)
 
 ## Différence avec la décomposition en valeurs singulières (SVD)
 
-La SVD s'applique à toute matrice $m \times n$ : $A = U \Sigma V^*$ (avec matrices orthogonales). La diagonalisation est réservée aux matrices carrées pour les itérations.
+La [SVD](/fr/p/singular-value-decomposition/) s'applique à toute matrice $m \times n$ : $A = U \Sigma V^*$ (avec matrices orthogonales). La diagonalisation est réservée aux matrices carrées pour les itérations.
 
 ```mermaid
 graph LR

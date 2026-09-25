@@ -174,8 +174,8 @@ Además, dado que el par original $(a, b)$ fue creado correspondientemente en la
 El resto es rezar para que $X$ e $Y$ no sean una solución trivial ($X \equiv \pm Y$), y calcular:
 **$\gcd(X - Y, N)$**
 
-Si es una solución no trivial, el algoritmo de [Euclides](https://kenji.blog/p/euclid/) correrá en 0.001 segundos e imprimirá en la pantalla de salida el corazón del cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/): los primos secretos $p$ y $q$.
+Si es una solución no trivial, el algoritmo de [Euclides](https://kenji.blog/es/p/euclid/) correrá en 0.001 segundos e imprimirá en la pantalla de salida el corazón del cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/): los primos secretos $p$ y $q$.
 
 ---
 
-Esta es la **forma completa de la "Criba General del Cuerpo de Números (GNFS)"**, que reúne lo mejor de las matemáticas modernas.
+Esta es la **forma completa de la "[Criba General del Cuerpo de Números](/es/p/beyond-gnfs-integer-factorization-algorithms/) (GNFS)"**, que reúne lo mejor de las matemáticas modernas.

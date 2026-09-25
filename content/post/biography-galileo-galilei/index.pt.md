@@ -50,7 +50,7 @@ Também é importante notar que ele praticou o "método científico" de verifica
 
 ## Imenso Impacto na Posteridade e Significado Moderno
 
-Os horizontes que Galileu abriu tiveram uma influência decisiva nas gerações seguintes. As leis sobre o movimento que ele apresentou (especialmente a lei da queda dos corpos e o conceito de inércia) foram integradas por Isaac Newton, culminando no magnífico sistema da mecânica clássica. Quando Newton disse: "Se vi mais longe, foi por estar de pé sobre ombros de gigantes", não há dúvida de que um desses gigantes era Galileu.
+Os horizontes que Galileu abriu tiveram uma influência decisiva nas gerações seguintes. As leis sobre o movimento que ele apresentou (especialmente a lei da queda dos corpos e o conceito de inércia) foram integradas por [Isaac Newton](/pt/p/newton/), culminando no magnífico sistema da mecânica clássica. Quando Newton disse: "Se vi mais longe, foi por estar de pé sobre ombros de gigantes", não há dúvida de que um desses gigantes era Galileu.
 
 Além disso, a tragédia de sua supressão pela Inquisição ainda oferece uma lição histórica importante sobre a relação entre ciência e religião, ou verdade e poder. Em 1992, o Papa João Paulo II admitiu formalmente os erros da Igreja no julgamento de Galileu e o reabilitou. Foi um momento em que a verdade triunfou sobre a autoridade após mais de 350 anos.
 

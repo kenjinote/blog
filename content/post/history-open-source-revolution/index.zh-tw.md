@@ -127,7 +127,7 @@ graph TD
 
 ### 敏捷開發與 CI/CD
 
-「及早發布，頻繁發布」的市集模式哲學，與現代敏捷軟體開發和 DevOps 的思想緊密相連。透過短暫的迭代持續改善軟體，並透過 CI/CD（持續整合／持續交付）管線自動進行測試和部署的手法，可以說是市集模式的進化型態。
+「及早發布，頻繁發布」的市集模式哲學，與現代敏捷軟體開發和 DevOps 的思想緊密相連。透過短暫的迭代持續改善軟體，並透過 [CI/CD](/zh-tw/p/cicd-pipeline-github-actions-best-practices/)（持續整合／持續交付）管線自動進行測試和部署的手法，可以說是市集模式的進化型態。
 
 ```mermaid
 graph LR
@@ -146,7 +146,7 @@ graph LR
 
 ## 7. 現代市集：企業的參與與生態系統的形成
 
-就連曾經說過「開源是癌症」的 Microsoft，現在也收購了 GitHub，成為開源最大的貢獻企業之一。Google、Meta（Facebook）、Amazon 等大型科技企業也將自家的基礎技術（如 Kubernetes、React、PyTorch）以開源形式公開，採取掌握業界標準（事實標準）的策略。
+就連曾經說過「開源是癌症」的 Microsoft，現在也收購了 GitHub，成為開源最大的貢獻企業之一。Google、[Meta](/zh-tw/p/history-of-meta-facebook/)（Facebook）、Amazon 等大型科技企業也將自家的基礎技術（如 [Kubernetes](/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/)、React、PyTorch）以開源形式公開，採取掌握業界標準（事實標準）的策略。
 
 現代的市集已經不再只是純粹志願駭客們的場所。從企業獲得報酬的專業工程師全職投入，而強大的基金會（如 Linux Foundation 和 Apache Software Foundation）管理著專案的治理和資金，已經演變成一個巨大且複雜的生態系統。
 

@@ -369,7 +369,7 @@ QDK 在執行環境的目標平台之一內建了「資源估算器（Resource E
 
 - [Microsoft Azure Quantum 官方文件](https://learn.microsoft.com/azure/quantum/)：QDK 與 Azure Quantum 的綜合文件入口網站。
 - [Q# 使用者指南與參考手冊](https://learn.microsoft.com/azure/quantum/user-guide/)：Q# 語法、型別系統與標準函式庫的完整參考手冊。
-- [Quantum Katas](https://quantum.microsoft.com/en-us/experience/quantum-katas)：微軟提供的開源教學系列。以測試驅動開發（TDD）的形式，在實際撰寫 Q# 程式碼的同時，互動式地自學量子運算基本概念（量子閘、測量、演算法建構），是個絕佳的資源。
+- [Quantum Katas](https://quantum.microsoft.com/en-us/experience/quantum-katas)：微軟提供的開源教學系列。以測試驅動開發（[TDD](/zh-tw/p/tdd-cpp-googletest-introduction/)）的形式，在實際撰寫 Q# 程式碼的同時，互動式地自學量子運算基本概念（量子閘、測量、演算法建構），是個絕佳的資源。
 - [Q# GitHub 儲存庫](https://github.com/microsoft/qsharp-compiler)：Q# 語言編譯器與標準函式庫本身也作為開源專案活耀地開發中。對編譯器內部結構有興趣的人絕不能錯過。
 
 量子運算的未來才剛剛開始，充滿著無限的可能性。請抱持著享受新程式設計典範的心情，務必挑戰看看用 Q# 寫程式吧！

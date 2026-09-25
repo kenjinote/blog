@@ -56,12 +56,12 @@ Karena toko tidak perlu menyiapkan terminal pembaca FeliCa yang mahal dan hanya 
 
 Sementara itu, di dunia internet, semangat untuk mewujudkan "mata uang digital tanpa pengelola pusat" yang diimpikan oleh David Chaum belum padam.
 
-Pada tahun 2008, **Bitcoin** yang diumumkan oleh Satoshi Nakamoto melengkapi mata uang digital yang tidak dapat dipalsukan atau dihabiskan ganda (double-spending), bahkan tanpa adanya perusahaan atau bank tertentu (pengelola pusat) sama sekali, dengan menggunakan teknologi *blockchain* dan PoW (Proof of Work).
+Pada tahun 2008, **Bitcoin** yang diumumkan oleh Satoshi Nakamoto melengkapi mata uang digital yang tidak dapat dipalsukan atau dihabiskan ganda (double-spending), bahkan tanpa adanya perusahaan atau bank tertentu (pengelola pusat) sama sekali, dengan menggunakan teknologi *[blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/)* dan PoW (Proof of Work).
 Meskipun uang elektronik seperti Suica dan PayPay pada akhirnya adalah sistem terpusat yang "mempercayai server perusahaan pengelola (JR atau perusahaan PayPay)", Bitcoin berbeda dalam paradigma dasarnya karena ia adalah sistem "terdesentralisasi" yang diawasi bersama oleh semua peserta.
 
 ## 6. Kesimpulan: Arah dari Nilai yang Didataifikasi
 
-Upaya untuk "mengubah uang menjadi data" dimulai dari kegagalan para ahli kriptografi pada tahun 1990-an, melewati aplikasi praktis di gerbang tiket Jepang (FeliCa) dan berevolusi menjadi pembayaran berbasis *cloud* (kode QR) dengan penyebaran ponsel pintar, hingga akhirnya mencapai mata uang terdesentralisasi pamungkas yaitu *blockchain*.
+Upaya untuk "mengubah uang menjadi data" dimulai dari kegagalan para ahli kriptografi pada tahun 1990-an, melewati aplikasi praktis di gerbang tiket Jepang (FeliCa) dan berevolusi menjadi pembayaran berbasis *cloud* (kode QR) dengan penyebaran ponsel pintar, hingga akhirnya mencapai mata uang terdesentralisasi pamungkas yaitu *[blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/)*.
 
 Saat ini, bank sentral di seluruh dunia sedang serius melakukan penelitian tentang "CBDC (Mata Uang Digital Bank Sentral)", mata uang fiat digital yang diterbitkan oleh negara itu sendiri.
 Ketika uang sepenuhnya digantikan oleh "data tanpa massa", bagaimana konsep kita tentang "nilai" akan berubah? Sejarah uang elektronik akhirnya menuju babak terakhirnya.

@@ -14,7 +14,7 @@ description: '영지식 증명(ZKP)의 수학적 기초부터 zk-SNARKs, zk-STAR
 
 현대 디지털 사회에서 데이터 프라이버시와 확장성(scalability)은 가장 중요한 두 가지 과제가 되었습니다. 개인정보 유출이나 부정 사용의 위험이 높아지는 가운데, "자신에 관한 정보를 상대방에게 밝히지 않고 자신이 그 정보를 가지고 있음을 증명하는" 기술이 강력하게 요구되고 있습니다. 이를 실현하는 것이 **영지식 증명(Zero-Knowledge Proof: ZKP)** 입니다.
 
-영지식 증명은 1980년대에 Shafi Goldwasser, Silvio Micali, Charles Rackoff에 의해 처음 제창된 암호 이론의 개념이지만, 오랫동안 이론적인 연구에 머물러 있었습니다. 그러나 블록체인 기술과 Web3의 대두로 상황은 완전히 바뀌었습니다. 이더리움(Ethereum) 등의 퍼블릭 블록체인이 직면한 확장성 문제(처리 능력의 한계)와 프라이버시 문제(모든 트랜잭션이 공개되는 것)를 동시에 해결하는 "마법의 지팡이"로서 ZKP는 일약 각광받게 되었습니다.
+영지식 증명은 1980년대에 Shafi Goldwasser, Silvio Micali, Charles Rackoff에 의해 처음 제창된 암호 이론의 개념이지만, 오랫동안 이론적인 연구에 머물러 있었습니다. 그러나 [블록체인](/ko/p/blockchain-technology-smart-contract-distributed-ledger/) 기술과 Web3의 대두로 상황은 완전히 바뀌었습니다. 이더리움(Ethereum) 등의 퍼블릭 [블록체인](/ko/p/blockchain-technology-smart-contract-distributed-ledger/)이 직면한 확장성 문제(처리 능력의 한계)와 프라이버시 문제(모든 트랜잭션이 공개되는 것)를 동시에 해결하는 "마법의 지팡이"로서 ZKP는 일약 각광받게 되었습니다.
 
 본 기사에서는 영지식 증명의 기본적인 개념부터 현재 주류를 이루고 있는 **zk-SNARKs** 및 **zk-STARKs** 의 심오한 수학적·암호학적 메커니즘, 그리고 ZK-Rollups나 분산형 신원 증명(DID)과 같은 최신 Web3·보안 응용 사례에 이르기까지 매우 상세하고 기술적으로 깊이 있게 해설합니다.
 
@@ -60,7 +60,7 @@ sequenceDiagram
     Note over Prover, Verifier: "※정확도를 높이기 위해 이를 수십 번 반복함"
 ```
 
-이 방법은 강력하지만, 검증자가 온라인 상태여야 하므로 블록체인과 같은 비동기적인 분산 시스템에 적용하기에는 불편합니다. 블록체인에서는 누구나 언제든지 과거의 증명을 검증할 수 있어야 합니다.
+이 방법은 강력하지만, 검증자가 온라인 상태여야 하므로 [블록체인](/ko/p/blockchain-technology-smart-contract-distributed-ledger/)과 같은 비동기적인 [분산 시스템](/ko/p/cap-theorem-distributed-systems-tradeoff/)에 적용하기에는 불편합니다. [블록체인](/ko/p/blockchain-technology-smart-contract-distributed-ledger/)에서는 누구나 언제든지 과거의 증명을 검증할 수 있어야 합니다.
 
 #### 피아트-샤미르 변환과 비대화화
 
@@ -166,7 +166,7 @@ graph TD
 
 ### 1. ZK-Rollups를 통한 이더리움의 궁극적 스케일링
 
-이더리움과 같은 L1(레이어1) 블록체인은 탈중앙화와 보안을 중시한 나머지 확장성에 큰 제약(트릴레마)을 안고 있습니다. 이를 해결하는 L2(레이어2) 솔루션의 결정판이 **ZK-Rollups** 입니다.
+이더리움과 같은 L1(레이어1) [블록체인](/ko/p/blockchain-technology-smart-contract-distributed-ledger/)은 탈중앙화와 보안을 중시한 나머지 확장성에 큰 제약(트릴레마)을 안고 있습니다. 이를 해결하는 L2(레이어2) 솔루션의 결정판이 **ZK-Rollups** 입니다.
 
 ZK-Rollup에서는 수천 개의 트랜잭션을 오프체인(L2)에서 실행 및 처리하고, 그것들이 모두 올바르게 실행되었음을 나타내는 "하나의 ZKP(Validity Proof)"를 생성합니다. L1 체인 상의 스마트 컨트랙트는 이 증명만 검증하면 됩니다.
 
@@ -192,7 +192,7 @@ Worldcoin과 같은 인류 증명(Proof of Personhood) 프로젝트에서도 홍
 
 ### 3. 기밀 스마트 컨트랙트와 기업 활용
 
-퍼블릭 블록체인의 "모든 데이터가 공개된다"는 특성은 기업이 기밀 거래나 공급망 정보를 블록체인에서 다룰 때 큰 장벽이었습니다.
+퍼블릭 [블록체인](/ko/p/blockchain-technology-smart-contract-distributed-ledger/)의 "모든 데이터가 공개된다"는 특성은 기업이 기밀 거래나 공급망 정보를 [블록체인](/ko/p/blockchain-technology-smart-contract-distributed-ledger/)에서 다룰 때 큰 장벽이었습니다.
 
 ZKP 기술(예: Aleo나 Aztec 같은 프라이버시 특화 네트워크)을 사용하면 트랜잭션의 입력값, 출력값, 나아가 실행되는 스마트 컨트랙트의 로직 자체를 암호화한 채 상태 업데이트의 정당성만을 퍼블릭 체인에 기록할 수 있습니다. 이를 통해 DeFi(탈중앙화 금융)에서의 선행 매매(Front-running, MEV) 방지나 기업 간의 기밀 컨소시엄 네트워크 구축이 퍼블릭 체인의 높은 보안을 누리면서도 실현 가능해집니다.
 
@@ -203,13 +203,13 @@ ZKP 기술(예: Aleo나 Aztec 같은 프라이버시 특화 네트워크)을 사
 ZKP는 틀림없는 차세대 기반 기술이지만, 몇 가지 과제도 남아 있습니다.
 
 1. **증명 생성의 계산 비용과 하드웨어 가속**
-   ZKP의 생성에는 방대한 다항식 연산이나 FFT(고속 푸리에 변환), MSM(다중 스칼라 곱셈)이 필요합니다. 현재 이 증명 생성을 가속하기 위한 전용 하드웨어(FPGA나 ASIC)의 개발, 이른바 **ZKP 마이닝**(Prover Network) 연구가 빠르게 진행되고 있습니다.
+   ZKP의 생성에는 방대한 다항식 연산이나 [FFT](/ko/p/fast-fourier-transform-algorithm/)([고속 푸리에 변환](/ko/p/fast-fourier-transform-algorithm/)), MSM(다중 스칼라 곱셈)이 필요합니다. 현재 이 증명 생성을 가속하기 위한 전용 하드웨어(FPGA나 ASIC)의 개발, 이른바 **ZKP 마이닝**(Prover Network) 연구가 빠르게 진행되고 있습니다.
 2. **표준화와 개발자 경험(DX) 향상**
    Circom, Cairo, Noir, Leo 등 ZKP 회로를 작성하기 위한 전용 언어가 난립하고 있습니다. 이들을 통일하는 표준 규격이나 기존의 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)나 C++에서 자동으로 ZKP 회로를 생성하는 컴파일러의 성숙이 일반 소프트웨어 엔지니어들의 ZKP 도입에 핵심이 될 것입니다.
 
 ## 마무리
 
-영지식 증명(ZKP)은 단순한 "[암호화폐](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)의 익명성을 높이는 기술"에서 "인터넷 전체의 신뢰(Trust)를 재정의하는 범용 기술"로 진화했습니다. 수식과 암호 이론의 깊은 곳에서 계산된 작은 증명이 블록체인의 확장성을 무한히 넓히고 우리의 프라이버시를 강력하게 지키는 방패가 됩니다.
+영지식 증명(ZKP)은 단순한 "[암호화폐](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)의 익명성을 높이는 기술"에서 "인터넷 전체의 신뢰(Trust)를 재정의하는 범용 기술"로 진화했습니다. 수식과 암호 이론의 깊은 곳에서 계산된 작은 증명이 [블록체인](/ko/p/blockchain-technology-smart-contract-distributed-ledger/)의 확장성을 무한히 넓히고 우리의 프라이버시를 강력하게 지키는 방패가 됩니다.
 
 Web3의 진정한 대중화(Mass Adoption), 그리고 안전하고 프라이빗한 차세대 인터넷 구축을 향해 영지식 증명은 가장 중요한 퍼즐 조각으로 계속 기능할 것입니다. 앞으로의 ZKP 기술 진화에서 눈을 뗄 수 없습니다.
 

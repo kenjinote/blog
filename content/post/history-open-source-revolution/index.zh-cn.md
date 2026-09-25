@@ -127,7 +127,7 @@ graph TD
 
 ### 敏捷开发与CI/CD
 
-“尽早发布，频繁发布”的集市模式哲学，与现代敏捷软件开发和DevOps的思想紧密相连。在短迭代中持续改进软件，并通过CI/CD（持续集成/持续交付）流水线自动进行测试和部署的方法，可以说是集市模式的进化版。
+“尽早发布，频繁发布”的集市模式哲学，与现代敏捷软件开发和DevOps的思想紧密相连。在短迭代中持续改进软件，并通过[CI/CD](/zh-cn/p/cicd-pipeline-github-actions-best-practices/)（持续集成/持续交付）流水线自动进行测试和部署的方法，可以说是集市模式的进化版。
 
 ```mermaid
 graph LR
@@ -146,7 +146,7 @@ graph LR
 
 ## 7. 现代的集市：企业的参与和生态系统的形成
 
-甚至连曾经声称“开源是毒瘤”的微软，现在也收购了GitHub，成为了开源最大的贡献企业之一。谷歌、Meta（Facebook）、亚马逊等科技巨头也将自家的基础技术（Kubernetes、React、PyTorch等）作为开源发布，采取了掌握行业标准（事实标准）的战略。
+甚至连曾经声称“开源是毒瘤”的微软，现在也收购了GitHub，成为了开源最大的贡献企业之一。谷歌、[Meta](/zh-cn/p/history-of-meta-facebook/)（Facebook）、亚马逊等科技巨头也将自家的基础技术（[Kubernetes](/zh-cn/p/kubernetes-k8s-architecture-pod-service-ingress/)、React、PyTorch等）作为开源发布，采取了掌握行业标准（事实标准）的战略。
 
 现代的集市早已不再仅仅是纯粹志愿黑客们的专属阵地。它已经演变成一个庞大而复杂的生态系统，有拿着企业薪水、全职提交代码的专业工程师，也有管理项目治理和资金的强大基金会（如Linux基金会和Apache软件基金会）。
 

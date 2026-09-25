@@ -46,7 +46,7 @@ Isto é exatamente o próprio **Navio de Teseu**. Apesar de todos os componentes
 
 ## 2. A "Identidade" na Programação Orientada a Objetos
 
-Ao analisar a "identidade" a nível do código, a disciplina com maior relevância é a **Programação Orientada a Objetos (POO)**. Em POO, geralmente existem dois critérios principais para avaliar a identidade de algo.
+Ao analisar a "identidade" a nível do código, a disciplina com maior relevância é a **Programação Orientada a Objetos ([POO](/pt/p/object-oriented-programming-oop-solid-principles/))**. Em [POO](/pt/p/object-oriented-programming-oop-solid-principles/), geralmente existem dois critérios principais para avaliar a identidade de algo.
 
 1. **Igualdade por Referência (Reference Equality)**: Se ambos apontam para o mesmo espaço de memória (o apontador é o mesmo).
 2. **Igualdade de Valores (Value Equality)**: Se todos os atributos (dados) que armazenam são os mesmos.

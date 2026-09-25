@@ -63,7 +63,7 @@ Il a placé la "simplicité" et l'"élégance" comme les valeurs les plus élev�
 
 > "Il y a deux façons de concevoir un logiciel : la première est de le rendre si simple qu'il n'y a manifestement aucune lacune, et la seconde est de le rendre si compliqué qu'il n'y a pas de lacunes évidentes. La première méthode est beaucoup plus difficile."
 
-Ces mots anticipent remarquablement la situation actuelle où les architectures de microservices et la programmation fonctionnelle recherchent à nouveau la "simplicité" dans le développement de logiciels modernes et de plus en plus complexes.
+Ces mots anticipent remarquablement la situation actuelle où les architectures de microservices et la [programmation fonctionnelle](/fr/p/lambda-calculus-functional-programming/) recherchent à nouveau la "simplicité" dans le développement de logiciels modernes et de plus en plus complexes.
 
 ## Un Pont entre le Milieu Académique et l'Industrie
 
@@ -77,4 +77,4 @@ La mort de Tony Hoare pourrait marquer la fin d'une grande époque de l'informat
 
 Derrière le fait que nous puissions utiliser confortablement des applications sur nos smartphones se cache le traitement de données à grande vitesse par Quicksort. Derrière le fait que l'infrastructure cloud puisse gérer des dizaines de milliers de requêtes simultanément se cache l'architecture de traitement simultané qui a hérité du concept de CSP. Et derrière le fait que les avions et les voitures autonomes dans lesquels nous circulons fonctionnent de manière sûre se cache la technologie de preuve de correction de programme développée à partir de la Logique de Hoare.
 
-Sir Tony Hoare ne nous a pas seulement laissé la technique d'écriture de code, mais une réponse à la question fondamentale de "ce que devrait être le logiciel". Son héritage intellectuel continuera sans aucun doute à soutenir les fondements de notre société numérique en tant que guide pour les ingénieurs du monde entier.
+Sir Tony Hoare ne nous a pas seulement laissé la technique d'écriture de code, mais une réponse à la question fondamentale de "ce que devrait être le logiciel". Son héritage intellectuel continuera sans aucun doute à soutenir les fondements de notre société numérique en tant que guide [pour les ingénieurs](/fr/p/prompt-engineering-for-engineers/) du monde entier.

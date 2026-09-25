@@ -14,7 +14,7 @@ Cuando escuchas la palabra "infinito", ¿qué imagen te viene a la mente? Un uni
 
 Nuestra intuición diaria se cultiva en un mundo finito. Como "hay 3 manzanas" o "leer un libro de 100 páginas", los números siempre se tratan como si tuvieran un final. Sin embargo, al entrar en el mundo de las matemáticas, debemos enfrentarnos de frente al tremendo concepto de "infinito".
 
-Esta vez, profundizaremos en una extraña paradoja planteada por Galileo Galilei (1564-1642), conocido como el padre de la ciencia, en su obra tardía "Discursos y demostraciones matemáticas en torno a dos nuevas ciencias". Se le llama la "Paradoja de Galileo" y se convirtió en una clave importante para abrir la puerta al infinito, conectando con matemáticos posteriores, especialmente con la "teoría de conjuntos" de Georg Cantor.
+Esta vez, profundizaremos en una extraña paradoja planteada por Galileo Galilei (1564-1642), conocido como el padre de la ciencia, en su obra tardía "Discursos y demostraciones matemáticas en torno a dos nuevas ciencias". Se le llama la "Paradoja de Galileo" y se convirtió en una clave importante para abrir la puerta al infinito, conectando con matemáticos posteriores, especialmente con la "teoría de conjuntos" de [Georg Cantor](/es/p/cantor/).
 
 En este artículo, a lo largo de miles de palabras, explicaremos con el mayor detalle posible las maravillas del concepto de "infinito", la discrepancia con la intuición matemática y la sabiduría humana que la superó. Por favor, acompáñame en este viaje de aventura intelectual.
 
@@ -30,7 +30,7 @@ La "paradoja del infinito" de la que se dio cuenta comienza con una pregunta muy
 
 Siguiendo nuestra intuición, la respuesta es clara. Los "números naturales" deberían ser "abrumadoramente más numerosos". Esto se debe a que entre los números naturales hay muchísimos números que no son cuadrados perfectos (2, 3, 5, 6, 7, 8...). Los cuadrados perfectos parecen ser solo "una pequeña parte" de la enorme colección llamada números naturales.
 
-En los axiomas del famoso matemático griego Euclides también se encuentra la frase **"el todo es mayor que la parte"**. Este axioma es una verdad absoluta e inquebrantable en un mundo finito. Si sacas 3 manzanas de un grupo de 10, te quedan 7. Los 10 originales (el todo) son obviamente mayores que los 3 que sacaste (la parte).
+En los axiomas del famoso matemático griego [Euclides](/es/p/euclid/) también se encuentra la frase **"el todo es mayor que la parte"**. Este axioma es una verdad absoluta e inquebrantable en un mundo finito. Si sacas 3 manzanas de un grupo de 10, te quedan 7. Los 10 originales (el todo) son obviamente mayores que los 3 que sacaste (la parte).
 
 Sin embargo, Galileo se da cuenta de un hecho en este punto.
 
@@ -78,7 +78,7 @@ En otras palabras, Galileo pensó que "en el mundo del infinito, la idea misma d
 
 En el marco matemático de la época, esta fue la decisión más razonable y sensata. Se puede decir que su intuición de que es peligroso llevar las reglas del mundo finito (el todo es mayor que la parte) al mundo infinito fue correcta en cierto sentido.
 
-Sin embargo, la historia de las matemáticas no se detuvo ahí. Aproximadamente 250 años después, a finales del siglo XIX, un matemático genio se enfrentó a este monstruo llamado "infinito" de frente. Fue Georg Cantor.
+Sin embargo, la historia de las matemáticas no se detuvo ahí. Aproximadamente 250 años después, a finales del siglo XIX, un matemático genio se enfrentó a este monstruo llamado "infinito" de frente. Fue [Georg Cantor](/es/p/cantor/).
 
 ---
 
@@ -114,7 +114,7 @@ Cantor nombró el tamaño infinito de los conjuntos que tienen una correspondenc
 
 ### El colapso del axioma "El todo es mayor que la parte"
 
-Aquí quedó claro que el axioma de Euclides de "el todo es mayor que la parte", que era de sentido común en el mundo finito, no se sostiene en el mundo infinito.
+Aquí quedó claro que el axioma de [Euclides](/es/p/euclid/) de "el todo es mayor que la parte", que era de sentido común en el mundo finito, no se sostiene en el mundo infinito.
 
 En las matemáticas modernas (teoría de conjuntos), un conjunto infinito a veces se define de la siguiente manera:
 **"Un conjunto se llama infinito si puede establecer una correspondencia uno a uno con un subconjunto propio suyo (una parte estrictamente menor que el todo)"**
@@ -157,7 +157,7 @@ La paradoja de Galileo no es un mero juego de palabras o sofistería. Nos enseñ
 
 La "misteriosa relación entre los números naturales y los cuadrados perfectos" escrita por Galileo Galilei en el siglo XVII floreció a través de los siglos hacia las matemáticas modernas que manejan el infinito.
 
-El concepto de infinito todavía encierra muchos misterios en la actualidad. La pregunta "¿Existe otro tamaño de infinito entre el infinito de los números naturales y el infinito de los números reales?" (la hipótesis del continuo) ha llegado a la sorprendente conclusión de que "no se puede demostrar ni refutar" bajo el sistema axiomático matemático actual.
+El concepto de infinito todavía encierra muchos misterios en la actualidad. La pregunta "¿Existe otro tamaño de infinito entre el infinito de los números naturales y el infinito de los números reales?" (la [hipótesis del continuo](/es/p/continuum-hypothesis/)) ha llegado a la sorprendente conclusión de que "no se puede demostrar ni refutar" bajo el sistema axiomático matemático actual.
 
 ¿Cómo es el fin del universo? ¿El tiempo continuará por siempre? ¿Y qué hay más allá de la jerarquía infinita que se extiende en el mundo de las matemáticas? La paradoja de Galileo es un episodio que simboliza la maravilla de la inteligencia humana, que puede alcanzar el "infinito" a través del pensamiento a pesar de ser seres finitos.
 

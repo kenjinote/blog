@@ -152,7 +152,7 @@ NumPy's `np.linalg.eig` function returns normalized eigenvectors (with a length 
 
 ## Matrix Diagonalization and Its Powerful Benefits
 
-One of the most important applications of eigenvalues and eigenvectors is **matrix diagonalization**. Diagonalization is the process of decomposing a complex matrix $A$ using an easily calculable diagonal matrix $D$ as follows:
+One of the most important applications of eigenvalues and eigenvectors is **matrix [diagonalization](/en/p/diagonalization-and-jordan-normal-form/)**. [Diagonalization](/en/p/diagonalization-and-jordan-normal-form/) is the process of decomposing a complex matrix $A$ using an easily calculable diagonal matrix $D$ as follows:
 
 $$ A = P D P^{-1} $$
 
@@ -164,9 +164,9 @@ $$
 P = \begin{pmatrix} 1 & 1 \\ -2 & 1 \end{pmatrix}, \quad D = \begin{pmatrix} 2 & 0 \\ 0 & 5 \end{pmatrix}
 $$
 
-Why is this diagonalization so important? Because **it makes calculating matrix powers dramatically easier**.
+Why is this [diagonalization](/en/p/diagonalization-and-jordan-normal-form/) so important? Because **it makes calculating matrix powers dramatically easier**.
 
-For instance, suppose you want to calculate $A$ to the power of 100. Calculating $A^{100}$ directly is an enormous amount of computation. However, using diagonalization:
+For instance, suppose you want to calculate $A$ to the power of 100. Calculating $A^{100}$ directly is an enormous amount of computation. However, using [diagonalization](/en/p/diagonalization-and-jordan-normal-form/):
 
 $$
 A^{100} = (P D P^{-1})(P D P^{-1}) \dots (P D P^{-1}) = P D^{100} P^{-1}
@@ -178,7 +178,7 @@ $$
 D^{100} = \begin{pmatrix} 2^{100} & 0 \\ 0 & 5^{100} \end{pmatrix}
 $$
 
-This property is an indispensable technique when predicting long-term states in probability models like Markov chains, when solving systems of differential equations, or even when finding the general term of the [Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence.
+This property is an indispensable technique when predicting long-term states in probability models like [Markov chains](/en/p/markov-chain/), when solving systems of differential equations, or even when finding the general term of the [Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence.
 
 ## Real-World Applications of [Eigenvalues and Eigenvectors](https://kenji.blog/en/p/eigenvalues-and-eigenvectors/)
 

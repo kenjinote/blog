@@ -63,7 +63,7 @@ graph TD
 
 ## 3. 莫德尔定理与秩 (Rank)
 
-1922年，[路易斯·莫德尔](https://kenji.blog/zh-cn/p/mordell/) (Louis Mordell) 证明了关于有理点群 $E(\mathbb{Q})$ 结构的一个决定性定理。后来安德烈·韦伊 ([André Weil](https://kenji.blog/zh-cn/p/weil/)) 将其扩展到更一般的代数数域和阿贝尔流形上，被称为莫德尔-韦伊定理。
+1922年，[路易斯·莫德尔](https://kenji.blog/zh-cn/p/mordell/) (Louis Mordell) 证明了关于有理点群 $E(\mathbb{Q})$ 结构的一个决定性定理。后来[安德烈·韦伊](/zh-cn/p/weil/) ([André Weil](https://kenji.blog/zh-cn/p/weil/)) 将其扩展到更一般的代数数域和阿贝尔流形上，被称为莫德尔-韦伊定理。
 
 ### 3.1. 莫德尔定理 (Mordell's Theorem)
 
@@ -183,7 +183,7 @@ $$
 
 出现在这个公式中的不变量如下：
 1. **$\Omega_E$ (实周期)** : 由椭圆曲线在实数域上的积分 $\int_{E(\mathbb{R})} \frac{dx}{|2y + a_1x + a_3|}$ 确定的超越数。
-2. **$\mathrm{Reg}(E)$ (调节子)** : 对于秩为 $r$ 的无限阶有理点生成元 $P_1, \dots, P_r$，由它们之间的内伦-泰特高度配对 (Néron-Tate height pairing) $\langle P_i, P_j \rangle$ 构成的 $r \times r$ 矩阵的行列式。它是衡量点“大小”的指标。
+2. **$\mathrm{Reg}(E)$ (调节子)** : 对于秩为 $r$ 的无限阶有理点生成元 $P_1, \dots, P_r$，由它们之间的内伦-泰特高度配对 (Néron-Tate height pairing) $\langle P_i, P_j \rangle$ 构成的 $r \times r$ 矩阵的[行列式](/zh-cn/p/geometric-meaning-of-determinant/)。它是衡量点“大小”的指标。
 3. **$|E(\mathbb{Q})_{\text{tors}}|$** : 挠子群的阶。
 4. **$c_p$ (玉河数)** : 对于坏还原素数 $p$ 的局部修正系数。由局部域的伽罗瓦群作用计算得出。
 5. **$\text{Sha}(E)$ (泰特-沙法列维奇群, $\text{\textcyrillic{Sh}}$)** : 极其重要的对象，稍后详述。

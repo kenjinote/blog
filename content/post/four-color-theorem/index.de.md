@@ -10,7 +10,7 @@ tags: ["Four Color Theorem", "Graph Theory", "Computer-assisted Proof", "Topolog
 
 ## 1. Was ist der Vier-Farben-Satz?
 
-[Der Vier-Farben-Satz (Four Color Theorem)](https://kenji.blog/de/p/four-color-theorem/) ist eines der berühmtesten und faszinierendsten Probleme in der Mathematik, insbesondere in der Graphentheorie und Topologie. Seine Behauptung ist sehr einfach und intuitiv genug, um von einem Grundschüler verstanden zu werden: "Für jede Karte auf einer Ebene reichen maximal **4 Farben** aus, um benachbarte Regionen so einzufärben, dass sie unterschiedliche Farben haben."
+[Der Vier-Farben-Satz (Four Color Theorem)](https://kenji.blog/de/p/four-color-theorem/) ist eines der berühmtesten und faszinierendsten Probleme in der Mathematik, insbesondere in der [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) und Topologie. Seine Behauptung ist sehr einfach und intuitiv genug, um von einem Grundschüler verstanden zu werden: "Für jede Karte auf einer Ebene reichen maximal **4 Farben** aus, um benachbarte Regionen so einzufärben, dass sie unterschiedliche Farben haben."
 
 Hier bedeutet "benachbart", dass eine Grenze und nicht nur ein Punkt geteilt wird. Wenn sie sich nur an einem Punkt berühren, ist es kein Problem, sie mit derselben Farbe zu färben. Diese intuitive Hypothese wurde erstmals 1852 von Francis Guthrie aufgestellt. Als er die Landkreise auf einer Karte von England einfärbte, stellte er fest, dass unabhängig davon, wie komplex die Grenzen waren, 4 Farben ausreichten.
 
@@ -28,7 +28,7 @@ Im Jahr 1879 veröffentlichte ein Mathematiker namens Alfred Kempe einen Beweis 
 
 ## 4. Konvertierung in die Graphentheorie
 
-Um den Vier-Farben-Satz mathematisch streng zu behandeln, wird das Problem in die Sprache der Graphentheorie übersetzt. Jede Region auf der Karte wird als "Knoten (Vertex)" betrachtet, und Regionen, die eine Grenze teilen, werden durch eine "Kante (Edge)" verbunden. Ein auf diese Weise erstellter [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) wird als "planarer Graph (Planar Graph)" bezeichnet.
+Um den Vier-Farben-Satz mathematisch streng zu behandeln, wird das Problem in die Sprache der [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) übersetzt. Jede Region auf der Karte wird als "Knoten (Vertex)" betrachtet, und Regionen, die eine Grenze teilen, werden durch eine "Kante (Edge)" verbunden. Ein auf diese Weise erstellter [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) wird als "planarer Graph (Planar Graph)" bezeichnet.
 
 Ein planarer Graph ist ein Graph, der in einer Ebene gezeichnet werden kann, ohne dass sich die Kanten schneiden. Der Vier-Farben-Satz reduziert sich auf das Problem: "Alle Knoten jedes planaren Graphen können mit **4 Farben** so gefärbt werden, dass benachbarte Knoten unterschiedliche Farben haben."
 
@@ -59,7 +59,7 @@ Heute sind computergestützte Beweise als mächtiges Werkzeug in der Mathematik 
 
 ## 7. Fazit
 
-Der Vier-Farben-Satz ist das beste Beispiel dafür, "wie tief und komplex eine mathematische Struktur in einem scheinbar einfachen Problem verborgen ist". Dieses Problem, das aus dem spielerischen Färben einer Karte entstand, entwickelte die Graphentheorie und hatte sogar tiefgreifende Auswirkungen, indem es die Natur des mathematischen Beweises selbst veränderte.
+Der Vier-Farben-Satz ist das beste Beispiel dafür, "wie tief und komplex eine mathematische Struktur in einem scheinbar einfachen Problem verborgen ist". Dieses Problem, das aus dem spielerischen Färben einer Karte entstand, entwickelte die [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) und hatte sogar tiefgreifende Auswirkungen, indem es die Natur des mathematischen Beweises selbst veränderte.
 
 Die Erforschung dieses Problems lehrt uns, wie mächtig die menschliche Intuition ist und wie viel Aufwand und neue Technologie erforderlich sind, um sie rigoros zu beweisen.
 

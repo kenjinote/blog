@@ -20,7 +20,7 @@ Dans le domaine de la géométrie en mathématiques, le thème du calcul de l'ai
 
 Cependant, si tous les sommets d'un polygone se trouvent sur des **points d'un quadrillage** (points où les coordonnées $x$ et $y$ sont toutes deux des nombres entiers), il existe une formule magique qui vous permet de calculer l'aire en utilisant uniquement des opérations arithmétiques extrêmement simples, sans mesurer de longueurs ni effectuer de multiplications complexes ou de calculs de racine carrée. C'est le **[Théorème de Pick](https://kenji.blog/fr/p/picks-theorem/)**, que nous allons expliquer en détail cette fois.
 
-Le théorème de Pick n'est pas seulement une "formule pratique et mystérieuse pour trouver facilement l'aire", mais il possède un arrière-plan très profond qui se connecte à la topologie, à la théorie des graphes et à la géométrie algébrique dans les mathématiques modernes. Dans cet article, nous approfondirons le théorème de Pick sous plusieurs angles, de la façon de l'utiliser de base à la démonstration mathématique de la raison pour laquelle une formule aussi simple s'applique, son contexte historique, et même les limites du théorème et la possibilité de son extension en 3D.
+Le théorème de Pick n'est pas seulement une "formule pratique et mystérieuse pour trouver facilement l'aire", mais il possède un arrière-plan très profond qui se connecte à la topologie, à la [théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/) et à la géométrie algébrique dans les mathématiques modernes. Dans cet article, nous approfondirons le théorème de Pick sous plusieurs angles, de la façon de l'utiliser de base à la démonstration mathématique de la raison pour laquelle une formule aussi simple s'applique, son contexte historique, et même les limites du théorème et la possibilité de son extension en 3D.
 
 ## 2. Georg Alexander Pick et Contexte Historique
 
@@ -115,7 +115,7 @@ Cependant, si vous utilisez le théorème de Pick, vous pouvez calculer l'aire e
 
 ## 5. Démonstration à l'aide de la Formule Polyédrique d'Euler
 
-Pourquoi une formule aussi magique fonctionne-t-elle ? Il existe plusieurs façons de prouver le théorème de Pick, mais nous présenterons ici une idée de preuve élégante utilisant un célèbre théorème de la théorie des graphes, la **Formule Polyédrique d'Euler**.
+Pourquoi une formule aussi magique fonctionne-t-elle ? Il existe plusieurs façons de prouver le théorème de Pick, mais nous présenterons ici une idée de preuve élégante utilisant un célèbre théorème de la [théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/), la **Formule Polyédrique d'Euler**.
 
 Selon le théorème d'Euler, pour un graphe connexe (réseau) tracé sur un plan, si le nombre de sommets est $V$, le nombre d'arêtes est $E$ et le nombre de faces est $F$, la relation suivante est vraie :
 

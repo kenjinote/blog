@@ -22,7 +22,7 @@ In this article, we will thoroughly explain how Shor's algorithm performs intege
 
 # 2. Dramatic Shift in Computational Complexity: From Exponential to Polynomial Time
 
-Why is prime factorization so difficult? Even if we use the "General Number Field Sieve (GNFS)," known as the best factorization algorithm for classical computers, its computational complexity is sub-exponential.
+Why is prime factorization so difficult? Even if we use the "[General Number Field Sieve](/en/p/beyond-gnfs-integer-factorization-algorithms/) (GNFS)," known as the best factorization algorithm for classical computers, its computational complexity is sub-exponential.
 
 The time complexity to factorize a composite number of $N$ digits using classical methods is as follows:
 
@@ -84,7 +84,7 @@ $$ a^r - 1 \equiv 0 \pmod N $$
 If $r$ is even, we can factor it using the difference of squares formula:
 $$ (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod N $$
 
-This means that $N$ shares a common divisor with either $(a^{r/2} - 1)$ or $(a^{r/2} + 1)$ (provided that the condition $a^{r/2} \not\equiv -1 \pmod N$ is met). Therefore, using the [Euclide](https://kenji.blog/p/euclid/)an algorithm to calculate:
+This means that $N$ shares a common divisor with either $(a^{r/2} - 1)$ or $(a^{r/2} + 1)$ (provided that the condition $a^{r/2} \not\equiv -1 \pmod N$ is met). Therefore, using the [Euclide](https://kenji.blog/en/p/euclid/)an algorithm to calculate:
 
 $$ p = \gcd(a^{r/2} - 1, N) $$
 $$ q = \gcd(a^{r/2} + 1, N) $$
@@ -339,9 +339,9 @@ To break 2048-bit RSA encryption, it is estimated that thousands of perfect logi
 
 In preparation for the arrival of "Q-Day" (the day quantum computers break cryptography), cryptographers around the world, spearheaded by the National Institute of Standards and Technology (NIST) in the US, are pushing forward with the standardization of **Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC)**.
 
-PQC is based on new mathematical problems (such as lattice problems, multivariate polynomial problems, and hash-based functions) that are mathematically considered inefficient to solve even using Shor's algorithm (or Grover's algorithm). Algorithms like "CRYSTALS-Kyber" and "CRYSTALS-Dilithium" have already been selected as standard specifications, and their integration into Apple's iMessage and various web browser communication protocols is gradually beginning.
+PQC is based on new mathematical problems (such as lattice problems, multivariate polynomial problems, and hash-based functions) that are mathematically considered inefficient to solve even using Shor's algorithm (or [Grover's algorithm](/en/p/grovers-algorithm-quantum-search/)). Algorithms like "CRYSTALS-Kyber" and "CRYSTALS-Dilithium" have already been selected as standard specifications, and their integration into Apple's iMessage and various web browser communication protocols is gradually beginning.
 
-For engineers managing IT infrastructure, building "crypto-agility" (the ability to quickly switch cryptographic methods) into systems to transition from existing [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) or elliptic curve cryptography to PQC will be a major mission going forward.
+[For engineers](/en/p/prompt-engineering-for-engineers/) managing IT infrastructure, building "crypto-agility" (the ability to quickly switch cryptographic methods) into systems to transition from existing [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) or elliptic curve cryptography to PQC will be a major mission going forward.
 
 ---
 

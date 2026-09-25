@@ -30,7 +30,7 @@ $$
 x^n + y^n = z^n \quad (\text{di mana } n \ge 3 \text{ adalah bilangan bulat})
 $$
 
-Ini menyatakan bahwa tidak ada solusi bilangan bulat positif $(x, y, z)$ yang memenuhi persamaan ini. Ketika $n = 2$, ini terkenal sebagai teorema [Pythagoras](https://kenji.blog/id/p/pythagoras/), dan ada solusi yang tak terbatas (triple Pythagoras). Namun, [Fermat](https://kenji.blog/id/p/fermat/) mengklaim bahwa ketika $n$ adalah 3 atau lebih besar, itu tidak pernah berlaku.
+Ini menyatakan bahwa tidak ada solusi bilangan bulat positif $(x, y, z)$ yang memenuhi persamaan ini. Ketika $n = 2$, ini terkenal sebagai teorema [Pythagoras](https://kenji.blog/id/p/pythagoras/), dan ada solusi yang tak terbatas (triple [Pythagoras](/id/p/pythagoras/)). Namun, [Fermat](https://kenji.blog/id/p/fermat/) mengklaim bahwa ketika $n$ adalah 3 atau lebih besar, itu tidak pernah berlaku.
 
 Meskipun proposisi tersebut tampaknya dapat dipahami bahkan oleh siswa sekolah menengah, itu menolak bukti lengkap bahkan oleh matematikawan jenius yang meninggalkan jejak mereka dalam sejarah, seperti Euler, Sophie Germain, dan [Kummer](https://kenji.blog/id/p/kummer/).
 

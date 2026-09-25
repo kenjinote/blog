@@ -94,7 +94,7 @@ Para programação, 1000Hz é mais do que suficiente, e traz a tranquilidade de 
 
 **N-Key Rollover (NKRO)** é o recurso que permite que várias teclas sejam reconhecidas corretamente quando pressionadas simultaneamente. No passado, restrições na conexão USB impunham limites como "até 6 teclas", mas os teclados de alta qualidade atuais implementam truques no relatório HID do USB para alcançar o reconhecimento simultâneo praticamente ilimitado (Full NKRO).
 
-Para engenheiros que usam muitos atalhos complexos (ex: `Ctrl + Shift + Alt + Qualquer Tecla`) em editores como Vim ou Emacs, o NKRO completo é um requisito fundamental.
+[Para engenheiros](/pt/p/prompt-engineering-for-engineers/) que usam muitos atalhos complexos (ex: `Ctrl + Shift + Alt + Qualquer Tecla`) em editores como Vim ou Emacs, o NKRO completo é um requisito fundamental.
 
 ### 2.3 Atraso de Debounce (Debounce Delay)
 
@@ -102,7 +102,7 @@ Switches mecânicos com contatos de metal sofrem o "fenômeno de bounce (ressalt
 
 ## 3. Firmware e Personalização (QMK / VIA)
 
-Se o hardware é o "corpo", o firmware é o "cérebro" do teclado. Os modernos teclados premium para engenheiros não se limitam a enviar códigos de teclas, eles possuem a capacidade de executar programas avançados.
+Se o hardware é o "corpo", o firmware é o "cérebro" do teclado. Os modernos teclados premium [para engenheiros](/pt/p/prompt-engineering-for-engineers/) não se limitam a enviar códigos de teclas, eles possuem a capacidade de executar programas avançados.
 
 ### 3.1 Firmware QMK
 
@@ -151,7 +151,7 @@ Originária de Hong Kong, a Keychron é líder no boom atual dos teclados person
 - **Switches:** Mecânicos (Hot-swappable. Possibilita a troca livre de switches)
 - **Firmware:** Suporte total para QMK/VIA
 - **Características:** Chave de alternância entre macOS/Windows. Escolha do layout preferido, incluindo a série Q8 com layout Alice e Q1 no formato 75%.
-- **Vantagens para engenheiros:** Apesar de ser um produto pronto, proporciona direto da caixa uma excelente experiência de digitação e personalização comparável a teclados montados do zero. Ideal para usar VIA e configurar uma camada de setas no estilo Vim.
+- **Vantagens [para engenheiros](/pt/p/prompt-engineering-for-engineers/):** Apesar de ser um produto pronto, proporciona direto da caixa uma excelente experiência de digitação e personalização comparável a teclados montados do zero. Ideal para usar VIA e configurar uma camada de setas no estilo Vim.
 
 ---
 
@@ -161,7 +161,7 @@ Originária de Hong Kong, a Keychron é líder no boom atual dos teclados person
 
 - **Switches:** Switches mecânicos silenciosos lineares (fabricados pela Kailh, Hot-swappable)
 - **Características:** Pointing stick (Trackpoint) no centro do teclado, e 4 pads de gestos (Gesture Pads).
-- **Vantagens para engenheiros:** Você pode controlar o cursor do mouse, fazer scroll e alternar janelas sem remover as mãos da posição base. Uma vez experimentada "a experiência de ter tudo na ponta dos dedos", é difícil querer voltar a levar a mão direita até um mouse.
+- **Vantagens [para engenheiros](/pt/p/prompt-engineering-for-engineers/):** Você pode controlar o cursor do mouse, fazer scroll e alternar janelas sem remover as mãos da posição base. Uma vez experimentada "a experiência de ter tudo na ponta dos dedos", é difícil querer voltar a levar a mão direita até um mouse.
 
 ---
 
@@ -172,7 +172,7 @@ O ápice dos teclados divididos desenvolvidos pela ZSA do Canadá. O lado esquer
 - **Switches:** Mecânicos (Compatíveis com Cherry MX, Hot-swappable)
 - **Firmware:** Baseado em QMK (com sua própria ferramenta gráfica poderosa, o "Oryx")
 - **Características:** [Layout](https://kenji.blog/pt/p/browser-rendering-mechanism-dom-paint/) Columnar Staggered, botões específicos agrupados para o polegar, pés padrão (tenting legs) para inclinação.
-- **Vantagens para engenheiros:** Atribuir as teclas Enter, Space, Backspace, e mudanças de Layer aos polegares alivia extremamente os dedos mínimos que têm menos força. É o dispositivo que salvará engenheiros que sofrem da Síndrome do Túnel do Carpo.
+- **Vantagens [para engenheiros](/pt/p/prompt-engineering-for-engineers/):** Atribuir as teclas Enter, Space, Backspace, e mudanças de Layer aos polegares alivia extremamente os dedos mínimos que têm menos força. É o dispositivo que salvará engenheiros que sofrem da Síndrome do Túnel do Carpo.
 
 ---
 
@@ -182,7 +182,7 @@ Uma obra-prima japonesa da qual a Topre se orgulha. Seu histórico de ser usado 
 
 - **Switches:** Capacitivos Sem Contato (Topre)
 - **Características:** A funcionalidade APC (Actuation Point Changer) permite definir o ponto de atuação individual por tecla, entre 0,8 mm, 1,5 mm, 2,2 mm, e 3,0 mm.
-- **Vantagens para engenheiros:** A suavidade no toque resultante de não haver contato físico é apelidada de "feather touch", reduzindo o stress e a resistência nos dedos mesmo ao codificar durante muito tempo. Você pode personalizar as teclas usadas com o dedo mínimo (como o "A" ou "Enter") para reagir a uma pressão mais rasa (0,8 mm), acionando-as com o menor toque.
+- **Vantagens [para engenheiros](/pt/p/prompt-engineering-for-engineers/):** A suavidade no toque resultante de não haver contato físico é apelidada de "feather touch", reduzindo o stress e a resistência nos dedos mesmo ao codificar durante muito tempo. Você pode personalizar as teclas usadas com o dedo mínimo (como o "A" ou "Enter") para reagir a uma pressão mais rasa (0,8 mm), acionando-as com o menor toque.
 
 ---
 
@@ -192,7 +192,7 @@ Originalmente desenvolvido para jogadores de e-sports, a sua tecnologia inovador
 
 - **Switches:** Lekker Switch (Switches magnéticos de efeito Hall)
 - **Características:** Recurso de Rapid Trigger, ajustável o ponto de atuação de 0,1 mm a 4,0 mm, num incremento de 0,1 mm.
-- **Vantagens para engenheiros:** Graças ao input analógico, é possível fazer configurações não convencionais (Dynamic Keystroke), como "escrever uma letra minúscula num leve toque, e uma letra maiúscula (combinação com Shift) se pressionar mais fundo". Além disso, ele desliga o acionamento (key off) assim que você soltar um pouco o dedo, evitando comandos em sucessão indesejados e provendo uma experiência insuperavelmente precisa para datilógrafos rápidos.
+- **Vantagens [para engenheiros](/pt/p/prompt-engineering-for-engineers/):** Graças ao input analógico, é possível fazer configurações não convencionais (Dynamic Keystroke), como "escrever uma letra minúscula num leve toque, e uma letra maiúscula (combinação com Shift) se pressionar mais fundo". Além disso, ele desliga o acionamento (key off) assim que você soltar um pouco o dedo, evitando comandos em sucessão indesejados e provendo uma experiência insuperavelmente precisa para datilógrafos rápidos.
 
 ## Conclusão
 

@@ -14,7 +14,7 @@ La Tierra tiene una forma cercana a una esfera tridimensional (estrictamente hab
 
 ## 1. El dilema matemático de dibujar una esfera en un plano
 
-Para hablar de la historia de las proyecciones cartográficas, la primera premisa matemática que hay que entender es la demostrada por "Carl Friedrich Gauss". En el siglo XIX, el gran matemático Gauss derivó un teorema de la geometría diferencial llamado "Teorema Egregium" (Teorema Destacable). Según este teorema, la curvatura gaussiana de una superficie tiene la propiedad de que no cambia incluso si la superficie se dobla.
+Para hablar de la historia de las proyecciones cartográficas, la primera premisa matemática que hay que entender es la demostrada por "[Carl Friedrich Gauss](/es/p/gauss/)". En el siglo XIX, el gran matemático Gauss derivó un teorema de la geometría diferencial llamado "Teorema Egregium" (Teorema Destacable). Según este teorema, la curvatura gaussiana de una superficie tiene la propiedad de que no cambia incluso si la superficie se dobla.
 
 La curvatura gaussiana de una superficie esférica como la Tierra es positiva, pero la de un plano es cero. Por tanto, es matemáticamente imposible cartografiar superficies con diferente curvatura gaussiana entre sí sin estirarlas, encogerlas o romperlas. Es el mismo principio por el que no se puede pelar una mandarina y estirar su cáscara en un solo rectángulo plano sin dejar huecos.
 

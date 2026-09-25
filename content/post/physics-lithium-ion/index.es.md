@@ -17,7 +17,7 @@ tags:
 
 ## 1. El héroe anónimo de la revolución móvil
 
-En la década de 1990, los teléfonos móviles experimentaron una evolución dramática, pasando de ser enormes y pesados teléfonos de hombro a tener un tamaño que cabía en el bolsillo. La tecnología que sustentó fundamentalmente esta "revolución móvil" fue la "**batería de iones de litio**", comercializada por primera vez en el mundo por Sony en 1991.
+En la década de 1990, los teléfonos móviles experimentaron una evolución dramática, pasando de ser enormes y pesados teléfonos de hombro a tener un tamaño que cabía en el bolsillo. La tecnología que sustentó fundamentalmente esta "[revolución móvil](/es/p/history-of-iphone/)" fue la "**batería de iones de litio**", comercializada por primera vez en el mundo por Sony en 1991.
 
 En comparación con las baterías de níquel-cadmio y de plomo-ácido que predominaban hasta entonces, las baterías de iones de litio tenían un rendimiento de ensueño: eran "abrumadoramente más ligeras, más pequeñas y tenían un voltaje más alto". En la actualidad, han crecido hasta convertirse en una tecnología clave para una sociedad descarbonizada, no solo para teléfonos inteligentes y computadoras portátiles, sino también como el corazón de los vehículos eléctricos (VE) como los de Tesla. En 2019, Akira Yoshino y otros investigadores fueron galardonados con el Premio Nobel de Química por sus contribuciones a su desarrollo.
 

@@ -14,7 +14,7 @@ description: 'Une explication détaillée allant des fondements mathématiques d
 
 Dans la société numérique moderne, la confidentialité des données et l'évolutivité sont devenues deux des enjeux les plus importants. Face aux risques croissants de fuite et d'utilisation abusive des informations personnelles, il y a une forte demande pour une technologie qui permette de « prouver que l'on possède une information sans la révéler à l'autre partie ». C'est ce que réalise la **preuve à divulgation nulle de connaissance (Zero-Knowledge Proof : ZKP)**.
 
-La preuve à divulgation nulle de connaissance est un concept de théorie cryptographique proposé pour la première fois dans les années 1980 par Shafi Goldwasser, Silvio Micali et Charles Rackoff, mais qui est longtemps resté au stade de la recherche théorique. Cependant, avec l'émergence de la technologie blockchain et du Web3, la situation a radicalement changé. Le ZKP est soudainement apparu sur le devant de la scène comme une « baguette magique » permettant de résoudre simultanément les problèmes d'évolutivité (limites de capacité de traitement) et de confidentialité (le fait que toutes les transactions soient publiques) auxquels sont confrontées les blockchains publiques comme Ethereum.
+La preuve à divulgation nulle de connaissance est un concept de théorie cryptographique proposé pour la première fois dans les années 1980 par Shafi Goldwasser, Silvio Micali et Charles Rackoff, mais qui est longtemps resté au stade de la recherche théorique. Cependant, avec l'émergence de la technologie [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/) et du Web3, la situation a radicalement changé. Le ZKP est soudainement apparu sur le devant de la scène comme une « baguette magique » permettant de résoudre simultanément les problèmes d'évolutivité (limites de capacité de traitement) et de confidentialité (le fait que toutes les transactions soient publiques) auxquels sont confrontées les blockchains publiques comme Ethereum.
 
 Dans cet article, nous explorerons en détail et en profondeur les concepts fondamentaux des preuves à divulgation nulle, les mécanismes mathématiques et cryptographiques profonds des **zk-SNARKs** et **zk-STARKs** actuellement dominants, ainsi que des exemples d'applications récentes dans le Web3 et la sécurité, tels que les ZK-Rollups et l'identité décentralisée (DID).
 
@@ -60,7 +60,7 @@ sequenceDiagram
     Note over Prover, Verifier: "※ Répéter cela des dizaines de fois pour augmenter la certitude"
 ```
 
-Cette méthode est puissante, mais elle exige que le vérificateur soit en ligne et s'avère peu pratique à appliquer à des systèmes distribués asynchrones comme la blockchain. Dans une blockchain, n'importe qui doit pouvoir vérifier une preuve passée à tout moment.
+Cette méthode est puissante, mais elle exige que le vérificateur soit en ligne et s'avère peu pratique à appliquer à des [systèmes distribués](/fr/p/cap-theorem-distributed-systems-tradeoff/) asynchrones comme la [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/). Dans une [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/), n'importe qui doit pouvoir vérifier une preuve passée à tout moment.
 
 #### Transformation de Fiat-Shamir (Fiat-Shamir Heuristic) et non-interactivité
 
@@ -192,7 +192,7 @@ Même dans les projets de preuve d'humanité (Proof of Personhood) comme Worldco
 
 ### 3. Contrats intelligents confidentiels et utilisation en entreprise
 
-La nature publique des blockchains (« toutes les données sont publiques ») constituait un obstacle majeur pour les entreprises souhaitant traiter des transactions confidentielles et des informations sur les chaînes d'approvisionnement sur la blockchain.
+La nature publique des blockchains (« toutes les données sont publiques ») constituait un obstacle majeur pour les entreprises souhaitant traiter des transactions confidentielles et des informations sur les chaînes d'approvisionnement sur la [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/).
 
 En utilisant la technologie ZKP (par exemple des réseaux axés sur la confidentialité comme Aleo et Aztec), il est possible de graver uniquement la validité des mises à jour de l'état sur la chaîne publique, tout en gardant les valeurs d'entrée et de sortie des transactions, voire la logique même du contrat intelligent exécuté, sous forme chiffrée. Cela empêche le front-running (MEV) dans la finance décentralisée (DeFi) et permet la construction de réseaux de consortiums confidentiels entre entreprises, tout en bénéficiant de la haute sécurité de la chaîne publique.
 
@@ -203,13 +203,13 @@ En utilisant la technologie ZKP (par exemple des réseaux axés sur la confident
 Le ZKP est indéniablement une technologie fondamentale de la prochaine génération, mais il reste quelques défis.
 
 1. **Coût de calcul de la génération de preuve et accélération matérielle**
-   La génération de ZKP nécessite des opérations polynomiales massives, des FFT (transformées de Fourier rapides) et des MSM (multiplications multi-scalaires). Actuellement, la recherche avance rapidement sur le développement de matériel dédié (FPGA ou ASIC) pour accélérer cette génération de preuves, ce que l'on appelle le **minage ZKP** (Réseau de Prouveurs).
+   La génération de ZKP nécessite des opérations polynomiales massives, des [FFT](/fr/p/fast-fourier-transform-algorithm/) (transformées de Fourier rapides) et des MSM (multiplications multi-scalaires). Actuellement, la recherche avance rapidement sur le développement de matériel dédié (FPGA ou ASIC) pour accélérer cette génération de preuves, ce que l'on appelle le **minage ZKP** (Réseau de Prouveurs).
 2. **Standardisation et amélioration de l'expérience développeur (DX)**
    Des langages dédiés pour écrire des circuits ZKP tels que Circom, Cairo, Noir et Leo se multiplient. Des normes unifiées pour les rassembler et la maturation de compilateurs capables de générer automatiquement des circuits ZKP à partir de [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) ou C++ existants seront la clé pour l'adoption du ZKP par les ingénieurs logiciels en général.
 
 ## Conclusion
 
-La preuve à divulgation nulle de connaissance (ZKP) a évolué d'une simple « technologie pour accroître l'anonymat des cryptomonnaies » vers une « technologie à usage général qui redéfinit la confiance (Trust) sur l'ensemble d'Internet ». Les petites preuves calculées dans les profondeurs des équations et de la théorie cryptographique élargissent infiniment l'évolutivité de la blockchain et agissent comme un bouclier robuste pour protéger notre vie privée.
+La preuve à divulgation nulle de connaissance (ZKP) a évolué d'une simple « technologie pour accroître l'anonymat des cryptomonnaies » vers une « technologie à usage général qui redéfinit la confiance (Trust) sur l'ensemble d'Internet ». Les petites preuves calculées dans les profondeurs des équations et de la théorie cryptographique élargissent infiniment l'évolutivité de la [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/) et agissent comme un bouclier robuste pour protéger notre vie privée.
 
 Vers la véritable adoption massive du Web3 et la construction d'un Internet de nouvelle génération sécurisé et privé, la preuve à divulgation nulle de connaissance continuera de fonctionner comme la pièce la plus vitale. Il faudra garder un œil sur l'évolution future de la technologie ZKP.
 

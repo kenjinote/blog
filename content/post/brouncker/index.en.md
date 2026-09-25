@@ -12,7 +12,7 @@ tags: ["William Brouncker", "Pi", "Continued Fraction", "Pell's Equation", "Roya
 
 17th-century Europe was in the midst of a scientific revolution. It was an era when mathematics and physics made dramatic leaps forward, as epitomized by the discovery of calculus by [Isaac Newton](https://kenji.blog/en/p/newton/) and Gottfried Wilhelm Leibniz. Amidst this, the institution that played a central role in the development of British academia was **The Royal Society**.
 
-This article provides a detailed explanation of the life and remarkable mathematical achievements of **[William Brouncker](https://kenji.blog/en/p/brouncker/)**, who served as the first President of the Royal Society and made his mark in history as a mathematician with his "continued fraction representation of Pi" and "solution to Pell's equation". [Brouncker](https://kenji.blog/en/p/brouncker/) interacted with the top minds of Europe at the time and tackled numerous challenging problems. His achievements contributed significantly to laying the foundation for mathematically rigorous treatment of the concept of infinity.
+This article provides a detailed explanation of the life and remarkable mathematical achievements of **[William Brouncker](https://kenji.blog/en/p/brouncker/)**, who served as the first President of the Royal Society and made his mark in history as a mathematician with his "continued fraction representation of Pi" and "solution to [Pell's equation](/en/p/pell-equation/)". [Brouncker](https://kenji.blog/en/p/brouncker/) interacted with the top minds of Europe at the time and tackled numerous challenging problems. His achievements contributed significantly to laying the foundation for mathematically rigorous treatment of the concept of infinity.
 
 ## 2. Early Life and Career
 
@@ -64,7 +64,7 @@ Continued fractions are highly powerful tools for approximating irrational numbe
 
 ## 5. Mathematical Achievement: Solving [Pell's Equation](https://kenji.blog/en/p/pell-equation/)
 
-Another significant achievement is the solution to the so-called **Pell's equation**. Pell's equation is a Diophantine equation (a polynomial equation with integer coefficients) of the following form for a positive integer $n$ that is not a perfect square:
+Another significant achievement is the solution to the so-called **[Pell's equation](/en/p/pell-equation/)**. [Pell's equation](/en/p/pell-equation/) is a Diophantine equation (a polynomial equation with integer coefficients) of the following form for a positive integer $n$ that is not a perfect square:
 
 $$
 x^2 - n y^2 = 1 \quad (\text{where } x, y \text{ are integers})
@@ -98,7 +98,7 @@ $$
 x = 1766319049, \quad y = 226153980
 $$
 
-[Brouncker](https://kenji.blog/en/p/brouncker/) demonstrated that even such gigantic solutions could be systematically derived using his method. Ironically, due to a misunderstanding by Leonhard Euler, this equation was later named after English mathematician John Pell, but the greatest contribution to establishing the solution method undeniably belongs to [Brouncker](https://kenji.blog/en/p/brouncker/).
+[Brouncker](https://kenji.blog/en/p/brouncker/) demonstrated that even such gigantic solutions could be systematically derived using his method. Ironically, due to a misunderstanding by [Leonhard Euler](/en/p/euler/), this equation was later named after English mathematician John Pell, but the greatest contribution to establishing the solution method undeniably belongs to [Brouncker](https://kenji.blog/en/p/brouncker/).
 
 ## 6. Other Achievements and Later Years
 
@@ -118,6 +118,6 @@ In his later years, even after stepping down as President of the Royal Society, 
 
 ## 7. Conclusion
 
-[William Brouncker](https://kenji.blog/en/p/brouncker/) was an outstanding leader and an original mathematician who drove the 17th-century British scientific community. His achievements in laying the foundations of modern science as the first President of the Royal Society are immeasurable. In addition, his mathematical achievements, such as the continued fraction representation of Pi and the solution to Pell's equation, became significant milestones in the development of analysis, which deals with the concept of infinity, and number theory.
+[William Brouncker](https://kenji.blog/en/p/brouncker/) was an outstanding leader and an original mathematician who drove the 17th-century British scientific community. His achievements in laying the foundations of modern science as the first President of the Royal Society are immeasurable. In addition, his mathematical achievements, such as the continued fraction representation of Pi and the solution to [Pell's equation](/en/p/pell-equation/), became significant milestones in the development of analysis, which deals with the concept of infinity, and number theory.
 
 His approach symbolizes the transition period from rigorous geometry to analysis utilizing algebra and infinite series. While his name is often overshadowed by giants like Newton and [Fermat](https://kenji.blog/en/p/fermat/), without the existence of **[Brouncker](https://kenji.blog/en/p/brouncker/)**, the richness of mathematics today cannot be discussed. His intellectual curiosity and spirit of inquiry continue to shine before us as the beauty of mathematics even hundreds of years later.

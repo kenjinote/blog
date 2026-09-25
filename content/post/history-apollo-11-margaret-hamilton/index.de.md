@@ -10,7 +10,7 @@ image: "eyecatch.jpg"
 
 # 1. Einleitung: Die beispiellose Herausforderung der Mondlandung
 
-Am 20. Juli 1969 landete Apollo 11 im Meer der Ruhe und Kommandant Neil Armstrong betrat als erster Mensch den Mond. Diese historische Meisterleistung war das Ergebnis hardwaretechnischer Fortschritte in Raketentechnik, Materialwissenschaft und Himmelsmechanik sowie ein Triumph der für damalige Verhältnisse äußerst innovativen "Software".
+Am 20. Juli 1969 landete Apollo 11 im Meer der Ruhe und Kommandant [Neil Armstrong](/de/p/biography-neil-armstrong/) betrat als erster Mensch den Mond. Diese historische Meisterleistung war das Ergebnis hardwaretechnischer Fortschritte in Raketentechnik, Materialwissenschaft und Himmelsmechanik sowie ein Triumph der für damalige Verhältnisse äußerst innovativen "Software".
 
 Im Zentrum dieser Softwareentwicklung stand **Margaret Hamilton**, die die Softwareentwicklung für den Apollo Guidance Computer (AGC) am Instrumentation Laboratory des MIT (Massachusetts Institute of Technology) leitete. Computer bestanden damals aus Röhren, die riesige Räume füllten, und die Miniaturisierung durch Transistoren hatte gerade erst begonnen. Die Speicherkapazität war winzig und die Rechengeschwindigkeit im Vergleich zu modernen Smartphones unvorstellbar langsam.
 

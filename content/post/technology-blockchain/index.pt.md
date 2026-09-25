@@ -22,20 +22,20 @@ Se eu pudesse copiar os "dados digitais de 10.000 ienes" que possuo e enviá-los
 
 Até agora, a única maneira de evitar esse problema de gasto duplo era "**um administrador central em quem todos confiam, como um banco ou operadora de cartão de crédito, gerenciar estritamente os saldos das contas (livro-razão) de todos**".
 
-No entanto, em 2008, um artigo publicado por uma pessoa misteriosa (ou grupo) chamada Satoshi Nakamoto deu origem, pela primeira vez na história, a "uma moeda digital que não pode ser absolutamente falsificada ou gasta duas vezes, mesmo sem a existência de um administrador central". Isso é o **Bitcoin**, e a tecnologia fundamental por trás dele é o **Blockchain**.
+No entanto, em 2008, um artigo publicado por uma pessoa misteriosa (ou grupo) chamada Satoshi Nakamoto deu origem, pela primeira vez na história, a "uma moeda digital que não pode ser absolutamente falsificada ou gasta duas vezes, mesmo sem a existência de um administrador central". Isso é o **Bitcoin**, e a tecnologia fundamental por trás dele é o **[Blockchain](/pt/p/blockchain-technology-smart-contract-distributed-ledger/)**.
 
 ## 2. O Que é Blockchain? (Livro-Razão Distribuído)
 
-Em uma palavra, o blockchain é um "**mecanismo onde todos os participantes do mundo compartilham uma cópia do mesmo registro de transações (livro-razão) e monitoram uns aos outros**".
+Em uma palavra, o [blockchain](/pt/p/blockchain-technology-smart-contract-distributed-ledger/) é um "**mecanismo onde todos os participantes do mundo compartilham uma cópia do mesmo registro de transações (livro-razão) e monitoram uns aos outros**".
 
 Quando alguém realiza uma transação, como "enviar 1 Bitcoin da Pessoa A para a Pessoa B", essa informação é espalhada para computadores (nós) em todo o mundo através da rede P2P.
-O conjunto de transações que ocorreram no mundo ao longo de cerca de 10 minutos é empacotado em uma caixa (**bloco**). Em seguida, essa caixa é armazenada conectada atrás das caixas anteriores como uma "corrente (**chain**)". Esta é a origem do nome "blockchain".
+O conjunto de transações que ocorreram no mundo ao longo de cerca de 10 minutos é empacotado em uma caixa (**bloco**). Em seguida, essa caixa é armazenada conectada atrás das caixas anteriores como uma "corrente (**chain**)". Esta é a origem do nome "[blockchain](/pt/p/blockchain-technology-smart-contract-distributed-ledger/)".
 
 Uma vez que um bloco é conectado à corrente, seu conteúdo (registros de transações passadas) nunca pode ser reescrito posteriormente. Por que isso é possível?
 
 ## 3. "Função Hash Criptográfica" que Torna a Adulteração Impossível
 
-O que sustenta a propriedade de "absolutamente não reescrevível" do blockchain é a tecnologia criptográfica chamada **função hash (como SHA-256)**.
+O que sustenta a propriedade de "absolutamente não reescrevível" do [blockchain](/pt/p/blockchain-technology-smart-contract-distributed-ledger/) é a tecnologia criptográfica chamada **função hash (como SHA-256)**.
 
 Uma função hash é uma "calculadora que, independentemente do comprimento dos dados inseridos, sempre produz uma string aleatória (valor hash) de um comprimento fixo".
 Como característica, ela tem a propriedade de que "se os dados originais mudarem em até um único caractere, o valor hash de saída mudará drasticamente para algo completamente diferente". Além disso, é impossível calcular reversamente os dados originais a partir do valor hash de saída (função de via única).
@@ -73,6 +73,6 @@ Em vez de gastar uma enorme quantia de dinheiro (conta de eletricidade) para com
 
 ## 6. Conclusão: Rumo a um Mundo "Trustless" (Sem Necessidade de Confiança)
 
-O blockchain é uma invenção revolucionária onde "mesmo sem confiar em alguém específico (Trustless), um consenso correto é formado como um sistema como um todo pelo poder da matemática, tecnologia criptográfica e incentivos econômicos".
+O [blockchain](/pt/p/blockchain-technology-smart-contract-distributed-ledger/) é uma invenção revolucionária onde "mesmo sem confiar em alguém específico (Trustless), um consenso correto é formado como um sistema como um todo pelo poder da matemática, tecnologia criptográfica e incentivos econômicos".
 
 O Bitcoin é apenas sua primeira aplicação. Hoje, o mecanismo deste "livro-razão distribuído absolutamente não adulterável" é aplicado para formar a base de enormes inovações para criar a próxima forma da internet (Web3), como contratos inteligentes (execução automática de contratos), NFTs (prova de propriedade digital), finanças descentralizadas (DeFi) e novas formas organizacionais (DAOs).

@@ -104,7 +104,7 @@ The ironclad rule is not to "add people," but to "increase time" or "reduce what
 
 The "Two-Pizza Team" rule proposed by Amazon's Jeff Bezos is one of the perfect answers to Brooks's Law. The rule is that "the number of people on a team should be capped at the number who can share two pizzas (roughly 6 to 8 people)."
 
-Keeping teams small prevents the explosion of communication paths. When building a large-scale system, rather than creating one giant team, the system is divided into loosely coupled components using microservices architecture, and independent small teams are assigned to each component.
+Keeping teams small prevents the explosion of communication paths. When building a large-scale system, rather than creating one giant team, the system is divided into loosely coupled components using [microservices architecture](/en/p/microservices-architecture-bff-api-gateway/), and independent small teams are assigned to each component.
 
 ```mermaid
 graph LR

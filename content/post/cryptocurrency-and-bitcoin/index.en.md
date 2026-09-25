@@ -51,7 +51,7 @@ This was a headline from the British newspaper "The Times" at the time. It serve
 
 ## 3. [Blockchain](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/) Architecture
 
-The core technology that supports Bitcoin is the "Blockchain". Blockchain is a form of [Distributed Ledger](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/) Technology (DLT) where data is grouped into units called "blocks", which are cryptographically linked together like a chain.
+The core technology that supports Bitcoin is the "[Blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/)". [Blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/) is a form of [Distributed Ledger](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/) Technology (DLT) where data is grouped into units called "blocks", which are cryptographically linked together like a chain.
 
 ```mermaid
 flowchart TD
@@ -75,7 +75,7 @@ The Block Header includes the following information:
 
 ### Merkle Trees
 
-In a blockchain, a data structure called a **Merkle [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)** is used to efficiently detect data tampering while keeping the block size down. A Merkle Tree is a type of binary tree where the leaf nodes contain the hash values of each transaction, and parent nodes are created by concatenating and hashing the hash values of their child nodes.
+In a [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/), a data structure called a **Merkle [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)** is used to efficiently detect data tampering while keeping the block size down. A Merkle Tree is a type of binary tree where the leaf nodes contain the hash values of each transaction, and parent nodes are created by concatenating and hashing the hash values of their child nodes.
 
 ```mermaid
 flowchart TD
@@ -114,7 +114,7 @@ When Alice sends Bitcoin to Bob, Alice uses her private key to create a **Digita
 
 ### Elliptic Curve Cryptography (ECC) and secp256k1
 
-For Bitcoin's public key generation and digital signatures, **Elliptic Curve Cryptography (ECC)** is adopted instead of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption. ECC has the advantage of providing an equivalent level of security with a much shorter key length compared to RSA.
+For Bitcoin's public key generation and digital signatures, **[Elliptic Curve Cryptography (ECC)](/en/p/elliptic-curve-cryptography-math-cpp/)** is adopted instead of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption. [ECC](/en/p/elliptic-curve-cryptography-math-cpp/) has the advantage of providing an equivalent level of security with a much shorter key length compared to RSA.
 
 The specific elliptic curve parameters used in Bitcoin are called **secp256k1**. This curve is defined over a finite field $\mathbb{F}_p$ and is represented by the following equation:
 
@@ -154,7 +154,7 @@ In the verification process, the following calculations are performed using the 
 
 ## 5. [Consensus Algorithm](https://kenji.blog/en/p/byzantine-generals-problem-consensus/)s and Proof of Work ([PoW](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/))
 
-In a decentralized network, the consensus algorithm is the mechanism by which everyone agrees on the state of the same ledger.
+In a decentralized network, the [consensus algorithm](/en/p/byzantine-generals-problem-consensus/) is the mechanism by which everyone agrees on the state of the same ledger.
 
 ### [Byzantine Generals](https://kenji.blog/en/p/byzantine-generals-problem-consensus/) Problem
 
@@ -172,7 +172,7 @@ $$
 
 Because the output of a hash function appears completely random, there is no efficient algorithm to find a nonce that meets the condition. The only way is to use a brute-force attack, changing the value of the nonce and repeating the hash calculation.
 
-The smaller the target value, the lower the probability of finding a hash that meets the condition. If the target requires $k$ leading zeros, the average number of calculations required to find that block is $2^k$. This massive investment of computational energy makes it impossible to tamper with past records on the blockchain.
+The smaller the target value, the lower the probability of finding a hash that meets the condition. If the target requires $k$ leading zeros, the average number of calculations required to find that block is $2^k$. This massive investment of computational energy makes it impossible to tamper with past records on the [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/).
 
 ### Difficulty Adjustment
 
@@ -215,7 +215,7 @@ Bitcoin is an extremely robust and secure system, but at the cost of significant
 
 ### Forks: Soft Forks and Hard Forks
 
-When upgrading the blockchain protocol, an event called a "fork" may occur.
+When upgrading the [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/) protocol, an event called a "fork" may occur.
 - **Soft Fork**: A backward-compatible upgrade. Nodes following older rules still consider blocks following the new rules to be valid (e.g., the introduction of SegWit).
 - **Hard Fork**: A non-backward-compatible upgrade. Blocks following the new rules are rejected by older nodes, potentially splitting the network completely into two (e.g., the birth of Bitcoin Cash).
 
@@ -223,17 +223,17 @@ When upgrading the blockchain protocol, an event called a "fork" may occur.
 
 A promising approach to solving scalability issues is the **Layer 2** solution known as the Lightning Network.
 
-In the Lightning Network, participants open a "Payment Channel" off the blockchain (off-chain). Within the channel, as long as both parties agree, funds can be exchanged instantly and almost for free an unlimited number of times without recording transactions on the blockchain. Transactions are recorded on the blockchain (Layer 1) only when the final balance is settled.
+In the Lightning Network, participants open a "Payment Channel" off the [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/) (off-chain). Within the channel, as long as both parties agree, funds can be exchanged instantly and almost for free an unlimited number of times without recording transactions on the [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/). Transactions are recorded on the [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/) (Layer 1) only when the final balance is settled.
 
 ### Comparison with Proof of Stake ([PoS](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/))
 
-Another major challenge with [PoW](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/) is the massive power consumption from mining. As a countermeasure to this environmental issue, networks like Ethereum have transitioned to another consensus algorithm called **Proof of Stake (PoS)**.
+Another major challenge with [PoW](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/) is the massive power consumption from mining. As a countermeasure to this environmental issue, networks like Ethereum have transitioned to another [consensus algorithm](/en/p/byzantine-generals-problem-consensus/) called **Proof of Stake (PoS)**.
 
 In PoS, the right to generate the next block (validators) is probabilistically assigned based on the amount of cryptocurrency held (stake) and the holding period, rather than computing power (hash rate). This reduces power consumption by over 99%, but there are also criticisms such as "isn't it a system where the rich get richer?" or "might it compromise true decentralization?". No matter how much it is criticized, Bitcoin continues to adhere to the philosophy of PoW: "securing physical security through the consumption of energy."
 
 ## 8. The Abyss of Cryptographic Theory: Mathematical Proofs and Protocol Robustness
 
-Behind SHA-256 and Elliptic Curve [Cryptography](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) (ECC) explained in the previous chapters, there are two paradigms: information-theoretic security and computational security. Modern cryptocurrencies, including Bitcoin, primarily rely on Computational Security.
+Behind SHA-256 and Elliptic Curve [Cryptography](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) ([ECC](/en/p/elliptic-curve-cryptography-math-cpp/)) explained in the previous chapters, there are two paradigms: information-theoretic security and computational security. Modern cryptocurrencies, including Bitcoin, primarily rely on Computational Security.
 
 ### Computational Security and the Discrete Logarithm Problem
 
@@ -247,12 +247,12 @@ In Bitcoin's secp256k1, $p \approx 2^{256}$, so cracking it would require about 
 ### The Threat of Quantum Computers and Post-Quantum Cryptography
 
 However, there is one major concern regarding computational security. That is the rise of **Quantum Computers**.
-"[Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)", published by Peter Shor in 1994, mathematically proved that if a quantum computer is used, problems such as the prime factorization problem (the foundation of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography) and the discrete logarithm problem (the foundation of ECC) can be solved in polynomial time $\mathcal{O}(n^3)$.
+"[Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)", published by Peter Shor in 1994, mathematically proved that if a quantum computer is used, problems such as the prime factorization problem (the foundation of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography) and the discrete logarithm problem (the foundation of [ECC](/en/p/elliptic-curve-cryptography-math-cpp/)) can be solved in polynomial time $\mathcal{O}(n^3)$.
 
 If a practical, large-scale quantum computer with sufficient Qubits and a low error rate is completed, there will be a risk that private keys could be reverse-engineered from Bitcoin public keys.
 The Bitcoin network's defense measures against this are as follows:
 
-1. **Protection of [Hash Function](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)s**: A Bitcoin address is not the public key itself, but the result of applying the SHA-256 and RIPEMD-160 hash functions to the public key. Even using a quantum computer, reversing a hash function (even using Grover's algorithm, the computational complexity is $\mathcal{O}(\sqrt{N})$) remains difficult. Therefore, until a transaction is made and the public key is exposed to the network, the contents of the address can be considered safe even from quantum computers.
+1. **Protection of [Hash Function](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)s**: A Bitcoin address is not the public key itself, but the result of applying the SHA-256 and RIPEMD-160 hash functions to the public key. Even using a quantum computer, reversing a hash function (even using [Grover's algorithm](/en/p/grovers-algorithm-quantum-search/), the computational complexity is $\mathcal{O}(\sqrt{N})$) remains difficult. Therefore, until a transaction is made and the public key is exposed to the network, the contents of the address can be considered safe even from quantum computers.
 2. **Transition to Post-Quantum [Cryptography](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) (PQC)**: There is discussion about hard forking the Bitcoin protocol before quantum computers become practical to transition to new signature algorithms that are difficult even for quantum computers to crack, such as lattice-based cryptography or multivariate polynomial cryptography, which are being selected by NIST (National Institute of Standards and Technology).
 
 ## 9. Network Topology and [P2P](https://kenji.blog/en/p/webrtc-realtime-communication-p2p/) Protocol Details
@@ -263,8 +263,8 @@ The Bitcoin network is not just a collection of servers and clients, but is cons
 
 Computers participating in the network are called "Nodes". There are several types of nodes, each with a different role.
 
-- **Full Node**: A node that downloads and verifies all blockchain data (over hundreds of GB) from the Genesis Block to the latest block. They are the backbone of network security, independently checking the validity of transactions and looking for double spending.
-- **SPV Node (Simplified Payment Verification Node)**: A lightweight node that downloads only block headers rather than the entire blockchain. It is mainly used in smartphone wallets. It can verify whether its own transactions are included in a block (verifying the Merkle Path), but it does not have the verification capability of a full node.
+- **Full Node**: A node that downloads and verifies all [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/) data (over hundreds of GB) from the Genesis Block to the latest block. They are the backbone of network security, independently checking the validity of transactions and looking for double spending.
+- **SPV Node (Simplified Payment Verification Node)**: A lightweight node that downloads only block headers rather than the entire [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/). It is mainly used in smartphone wallets. It can verify whether its own transactions are included in a block (verifying the Merkle Path), but it does not have the verification capability of a full node.
 - **Mining Node**: A node that performs [PoW](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/) calculations and generates new blocks. Today, huge "mining pools," which bundle specialized mining hardware called ASICs (Application Specific Integrated Circuits), take on this role.
 
 ### [Transaction](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/) Propagation Process (Gossip Protocol)
@@ -298,7 +298,7 @@ This disinflationary money supply model mimics the mining of gold and serves as 
 
 ### Game-Theoretic Analysis of a 51% Attack
 
-The biggest threat to a blockchain is known as a **51% Attack**. If a single malicious entity were to control more than half (51% or more) of the network's overall computing power (hash rate), the following would become possible:
+The biggest threat to a [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/) is known as a **51% Attack**. If a single malicious entity were to control more than half (51% or more) of the network's overall computing power (hash rate), the following would become possible:
 
 1. Reversing their own past transactions (double spending)
 2. Refusing to approve specific transactions (censorship)
@@ -310,7 +310,7 @@ Even if an attacker spent massive amounts of money (hundreds of billions of yen 
 
 In this article, we thoroughly dissected the mathematical, technical, and economic mechanisms behind Bitcoin and cryptocurrencies.
 
-While blockchain technology may seem like a complex mass of math and code at first glance, its essence is nothing less than **"a new consensus-building system for humanity that does not rely on authority, but takes mathematics and the laws of physics as the basis for trust."**
+While [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/) technology may seem like a complex mass of math and code at first glance, its essence is nothing less than **"a new consensus-building system for humanity that does not rely on authority, but takes mathematics and the laws of physics as the basis for trust."**
 
 The financial system we use every day has collapsed time and again throughout its long history, and has undergone patchwork fixes each time. The solution presented by Satoshi Nakamoto is by no means perfect. There are countless hurdles to overcome, including scalability issues, environmental concerns, and national regulations and legal frameworks.
 
@@ -318,7 +318,7 @@ However, once unleashed from Pandora's box, the concept of a "trustless decentra
 
 ## Appendix: Resources and References for Deeper Learning
 
-For those who wish to learn more deeply about blockchain technology and cryptographic theory after reading this article, here are some recommended resources.
+For those who wish to learn more deeply about [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/) technology and cryptographic theory after reading this article, here are some recommended resources.
 
 ### Must-Read Whitepapers
 - **Bitcoin: A Peer-to-Peer Electronic Cash System** (Satoshi Nakamoto, 2008)
@@ -335,4 +335,4 @@ To truly understand the blockchain, knowledge of information security and applie
 > **Warning: Investment Disclaimer**
 > This article was created for the purpose of explaining the underlying technology, history, and mathematical structure of cryptocurrencies, and does not recommend or solicit investment in any cryptocurrency. The prices of cryptocurrencies are extremely volatile, and investing carries significant risks, including the loss of principal.
 
-The technical exploration of blockchain is an intellectual frontier where computer science, economics, and sociology intersect. By reading code, setting up a node yourself, and trying to generate transactions on a testnet, you will be able to feel the true potential and limits of this technology firsthand.
+The technical exploration of [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/) is an intellectual frontier where computer science, economics, and sociology intersect. By reading code, setting up a node yourself, and trying to generate transactions on a testnet, you will be able to feel the true potential and limits of this technology firsthand.

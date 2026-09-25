@@ -24,7 +24,7 @@ En 2005, cuando se encontraban en dificultades financieras, fueron adquiridos po
 
 ## 2. 2007, la llegada del iPhone y el rediseño desde cero
 
-En enero de 2007, Steve Jobs anunció el primer iPhone.
+En enero de 2007, [Steve Jobs](/es/p/biography-steve-jobs/) anunció el primer iPhone.
 El prototipo "Sooner" que el equipo de Android estaba desarrollando en ese momento era un diseño antiguo con un teclado físico similar al de BlackBerry. Se dice que al ver la innovadora pantalla multitáctil del iPhone, Andy Rubin, mientras escuchaba la presentación en su coche, se dio cuenta y dijo: "**Lo que estábamos haciendo es basura. Tenemos que volver a crearlo**".
 
 Volvieron a empezar el desarrollo completamente desde cero y dieron un gran giro hacia el desarrollo de un nuevo sistema operativo optimizado para pantallas táctiles, "Dream".
@@ -48,7 +48,7 @@ En particular, "**Android 4.0 (Ice Cream Sandwich)**", lanzado en 2011, es conoc
 
 Entre los fabricantes que recibieron Android de forma gratuita, el que logró el mayor éxito fue el surcoreano **Samsung**. La serie "Galaxy S" reinó como un poderoso rival del iPhone, y siempre impulsó las tendencias de hardware mediante la adopción de pantallas gigantes (phablets) y pantallas OLED.
 
-Sin embargo, Apple no iba a quedarse de brazos cruzados viendo la rápida expansión de Android. El difunto Steve Jobs se enfureció diciendo: "Android es un producto robado del iPhone. Estoy dispuesto a ir a una guerra termonuclear para destruirlo", y estalló una sucia guerra de litigios por patentes (guerra de patentes de teléfonos inteligentes) en todo el mundo. Esta disputa continuó durante varios años, pero finalmente concluyó con un acuerdo entre ambas empresas, que se habían vuelto demasiado grandes.
+Sin embargo, Apple no iba a quedarse de brazos cruzados viendo la rápida expansión de Android. El difunto [Steve Jobs](/es/p/biography-steve-jobs/) se enfureció diciendo: "Android es un producto robado del iPhone. Estoy dispuesto a ir a una guerra termonuclear para destruirlo", y estalló una sucia guerra de litigios por patentes (guerra de patentes de teléfonos inteligentes) en todo el mundo. Esta disputa continuó durante varios años, pero finalmente concluyó con un acuerdo entre ambas empresas, que se habían vuelto demasiado grandes.
 
 ## 6. Resumen: Los dos gigantes del ecosistema móvil
 

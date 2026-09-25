@@ -281,7 +281,7 @@ Thus, the problem of finding an inverse matrix is reduced to calculations comple
 In this article, we thoroughly explained the **Cayley-Hamilton theorem**, one of the highlights of linear algebra.
 
 * The astonishing property that substituting a matrix into its own characteristic polynomial $p(\lambda)$ yields the zero matrix ($p(A) = O$).
-* Intuitive understanding through diagonalization, along with the common misconception of mixing up scalar substitution.
+* Intuitive understanding through [diagonalization](/en/p/diagonalization-and-jordan-normal-form/), along with the common misconception of mixing up scalar substitution.
 * An elegant and rigorous proof utilizing the identity with the adjugate matrix.
 * Practical applications such as high-speed computation of matrix powers using polynomial division, and expressions for finding inverse matrices.
 

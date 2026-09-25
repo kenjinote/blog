@@ -178,7 +178,7 @@ Au PARC, des recherches ont été menées en vue de la vision de l'« informatiq
 
 ## Transfert de technologie de Xerox vers Apple (Macintosh)
 
-En 1979, le cofondateur d'Apple Computer, Steve Jobs, a eu l'opportunité de visiter le Xerox PARC. Frappé par la GUI de l'Alto et l'opérabilité de la souris, Jobs a acquis la certitude que « c'était là l'avenir de l'informatique » et a imposé ce concept dans les projets de développement de son entreprise.
+En 1979, le cofondateur d'Apple Computer, [Steve Jobs](/fr/p/biography-steve-jobs/), a eu l'opportunité de visiter le Xerox PARC. Frappé par la GUI de l'Alto et l'opérabilité de la souris, Jobs a acquis la certitude que « c'était là l'avenir de l'informatique » et a imposé ce concept dans les projets de développement de son entreprise.
 
 Les ingénieurs d'Apple ont repensé la souris chère et complexe de Xerox pour qu'elle puisse être produite en série à bas prix avec un seul bouton, et qu'elle se déplace en douceur sur n'importe quel bureau. Avec la sortie du « Lisa » en 1983, puis du « Macintosh » en 1984, la souris est passée d'un outil réservé à quelques chercheurs à un périphérique de saisie standard largement adopté par les consommateurs ordinaires pour un usage domestique.
 

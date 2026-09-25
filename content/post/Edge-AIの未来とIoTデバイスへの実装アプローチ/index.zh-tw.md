@@ -13,7 +13,7 @@ tags: ["Edge AI", "IoT", "ONNX", "NPU"]
 
 ## 1. 前言：為什麼現在需要邊緣AI（Edge AI）？
 
-隨著物聯網（IoT，Internet of Things）裝置的普及，我們進入了一個世界上所有實體物品都連接到網際網路的時代。伴隨著感測器技術的進步，裝置產生的數據量正呈現爆炸性的成長。過去，這些龐大的數據會被傳送到雲端，並使用雲端上強大的運算資源（如巨大的GPU叢集）透過AI模型進行推論。這就是一般的「雲端AI」方法。
+隨著[物聯網](/zh-tw/p/technology-iot/)（IoT，Internet of Things）裝置的普及，我們進入了一個世界上所有實體物品都連接到網際網路的時代。伴隨著感測器技術的進步，裝置產生的數據量正呈現爆炸性的成長。過去，這些龐大的數據會被傳送到雲端，並使用雲端上強大的運算資源（如巨大的GPU叢集）透過AI模型進行推論。這就是一般的「雲端AI」方法。
 
 然而，將所有數據傳送到雲端，在雲端處理後再將結果傳回裝置的架構，存在一些重大的限制。
 1. **延遲（Latency）問題** ：在自動駕駛車、工業機器人、無人機等需要毫秒級即時判斷的系統中，網路的通訊延遲可能會導致致命的事故。
@@ -77,8 +77,8 @@ $$ T_{total} \approx T_{edge\_compute} $$
   Google提供的Edge TPU是一款非常小巧卻擁有強大推論能力的協同處理器。僅需2W的功耗就能發揮 4 TOPS（Tera Operations Per Second：每秒4兆次運算）的效能。這使得像Raspberry Pi這樣輕量級的SBC（單板電腦），只要透過USB連接，就能即時執行針對行動裝置最佳化的TensorFlow Lite模型。
 - **Raspberry Pi AI Kit (搭載Hailo-8L)**:
   近年推出的Raspberry Pi AI Kit搭載了Hailo公司的AI加速器「Hailo-8L」。Hailo的架構是將神經網路的結構映射到晶片的硬體結構上，藉此消除記憶體存取的瓶頸，在數瓦的功耗範圍內實現了最高13 TOPS的驚人推論效能。
-- **NVIDIA Jetson 系列**:
-  Jetson Nano、Xavier、Orin系列是整合了ARM CPU與NVIDIA強大GPU核心的SoC。因為可以直接使用CUDA生態系統，所以非常容易將在雲端訓練好的PyTorch或TensorFlow模型，透過TensorRT部署到邊緣裝置上。
+- **[NVIDIA](/zh-tw/p/history-of-nvidia/) Jetson 系列**:
+  Jetson Nano、Xavier、Orin系列是整合了ARM CPU與[NVIDIA](/zh-tw/p/history-of-nvidia/)強大GPU核心的SoC。因為可以直接使用CUDA生態系統，所以非常容易將在雲端訓練好的PyTorch或TensorFlow模型，透過TensorRT部署到邊緣裝置上。
 
 ### TOPS與能源效率（TOPS/W）
 評估Edge AI硬體最重要的指標是「TOPS/W（每瓦的TOPS）」。因為IoT裝置是在電池供電或PoE（Power over Ethernet）等嚴格的電力限制下運作，所以不僅僅是單純的運算效能（TOPS），如何以更少的電力進行AI推論才是關鍵。
@@ -241,8 +241,8 @@ Edge AI已經在各種產業中實用化，並引起了劇烈的典範轉移。
 
 儘管Edge AI的技術正在快速發展，但仍然存在許多挑戰與令人期待的未來展望。
 
-**1. 在邊緣執行[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)（大型語言模型）**:
-近年來最熱門的話題，就是嘗試在邊緣裝置上運行生成式AI或LLM的「Edge LLM」。要把數百億參數的模型直接放上邊緣裝置是不可能的，但隨著llama.cpp等最佳化框架、達到極限的4位元/2位元量化（AWQ、GPTQ等），甚至是微軟的Phi-3等小型且高效能的SLM（小型語言模型, Small Language Models）的出現，在智慧型手機或Raspberry Pi上也能離線完成自然語言處理的時代即將到來。
+**1. 在邊緣執行[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)（[大型語言模型](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）**:
+近年來最熱門的話題，就是嘗試在邊緣裝置上運行生成式AI或[LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)的「Edge [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)」。要把數百億參數的模型直接放上邊緣裝置是不可能的，但隨著llama.cpp等最佳化框架、達到極限的4位元/2位元量化（AWQ、GPTQ等），甚至是微軟的Phi-3等小型且高效能的SLM（小型語言模型, Small Language Models）的出現，在智慧型手機或Raspberry Pi上也能離線完成自然語言處理的時代即將到來。
 
 **2. 神經形態運算與SNN**:
 被期待作為終極省電Edge AI的，是物理性模仿人類大腦神經迴路運作的「神經形態晶片（例如：Intel Loihi）」與「脈衝神經網路（SNN, Spiking Neural Network）」。SNN屬於事件驅動型，只有在數據發生變化時（產生脈衝時）才會進行計算，因此與傳統的深度學習模型相比，理論上能將功耗降低數個數量級（從幾十分之一到幾百分之一）。

@@ -79,7 +79,7 @@ $$
 ax + by = 1
 $$
 
-通过扩展[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)（扩展欧几里得算法）可以具体计算出 $x$ 和 $y$，这已成为现代密码学（如 [RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)）中不可或缺的基础定理。在重视历史准确性的语境中，这有时被称为 **巴谢定理** 。
+通过扩展[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)（扩展[欧几里得算法](/zh-cn/p/euclidean-algorithm/)）可以具体计算出 $x$ 和 $y$，这已成为[现代密码学](/zh-cn/p/modern-cryptography-public-key-hash-signature/)（如 [RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)）中不可或缺的基础定理。在重视历史准确性的语境中，这有时被称为 **巴谢定理** 。
 
 ## 结论
 

@@ -63,7 +63,7 @@ $$
 f(x) = \frac{1}{1-x} \cdot \frac{1}{1-x^2} \cdot \frac{1}{1-x^5}
 $$
 
-也就是说，不需要使用复杂的递推公式或循环计算，只需计算这个函数的泰勒展开系数，就能得到任意 $n$ 对应的组合数。在编程领域，这种思想也是动态规划 ([DP](https://kenji.blog/zh-cn/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) 的重要基础。
+也就是说，不需要使用复杂的递推公式或循环计算，只需计算这个函数的泰勒展开系数，就能得到任意 $n$ 对应的组合数。在编程领域，这种思想也是[动态规划](/zh-cn/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) ([DP](https://kenji.blog/zh-cn/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) 的重要基础。
 
 ### 卷积与多项式乘积
 
@@ -160,7 +160,7 @@ $$
 在现代计算机科学和竞技编程中，[生成函数](https://kenji.blog/zh-cn/p/generating-functions/)常常被作为 **形式幂级数** (Formal Power Series, FPS) 来实现。
 在 FPS 中，我们不关心将具体的数值代入 $x$ 后是否收敛（解析性质），而是将重点放在将“系数序列”作为多项式进行代数操作上。
 
-利用快速傅里叶变换 (FFT) 或数论变换 (NTT)，可以在 $\mathcal{O}(N \log N)$ 的时间复杂度内求出两个 $N$ 次多项式的乘积（即长度为 $N$ 的数列的卷积）。这使得原本用动态规划需要 $\mathcal{O}(N^2)$ 的计算得到了极大的加速。
+利用[快速傅里叶变换](/zh-cn/p/fast-fourier-transform-algorithm/) ([FFT](/zh-cn/p/fast-fourier-transform-algorithm/)) 或数论变换 (NTT)，可以在 $\mathcal{O}(N \log N)$ 的时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)内求出两个 $N$ 次多项式的乘积（即长度为 $N$ 的数列的卷积）。这使得原本用[动态规划](/zh-cn/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)需要 $\mathcal{O}(N^2)$ 的计算得到了极大的加速。
 
 ## 6. 总结
 

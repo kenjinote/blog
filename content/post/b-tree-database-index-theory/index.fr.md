@@ -77,14 +77,14 @@ Dans les SGBDR réels (comme InnoDB de MySQL ou PostgreSQL), c'est l' **arbre B+
 
 ### 4.1 Différences entre l'arbre B et l'arbre B+
 
-Dans un arbre B, les données réelles (ou les pointeurs vers ces données) sont stockées à la fois dans les nœuds internes et les nœuds feuilles. En revanche, l' **arbre B+** présente les caractéristiques suivantes :
+Dans un arbre B, les données réelles (ou les [pointeurs](/fr/p/c-language-pointers-memory-management-stack-heap/) vers ces données) sont stockées à la fois dans les nœuds internes et les nœuds feuilles. En revanche, l' **arbre B+** présente les caractéristiques suivantes :
 
 1. **Toutes les données sont stockées uniquement dans les nœuds feuilles.** Les nœuds internes ne contiennent que les clés (index) pour le routage.
-2. **Les nœuds feuilles sont reliés entre eux par une liste chaînée (pointeurs).** Cela rend les accès séquentiels et les recherches par plage (Range Query) extrêmement rapides.
+2. **Les nœuds feuilles sont reliés entre eux par une liste chaînée ([pointeurs](/fr/p/c-language-pointers-memory-management-stack-heap/)).** Cela rend les accès séquentiels et les recherches par plage (Range Query) extrêmement rapides.
 
 ### 4.2 Raisons de l'adoption de l'arbre B+
 
-L'élimination des pointeurs vers les données réelles dans les nœuds internes permet d'entasser davantage de clés dans un seul nœud interne (page). Cela augmente encore le facteur de ramification (Fan-out), maintient la hauteur de l'arbre $ h $ encore plus basse et réduit le nombre d'E/S disque.
+L'élimination des [pointeurs](/fr/p/c-language-pointers-memory-management-stack-heap/) vers les données réelles dans les nœuds internes permet d'entasser davantage de clés dans un seul nœud interne (page). Cela augmente encore le facteur de ramification (Fan-out), maintient la hauteur de l'arbre $ h $ encore plus basse et réduit le nombre d'E/S disque.
 
 De plus, pour des recherches par plage souvent utilisées en SQL telles que `WHERE id BETWEEN 10 AND 100`, un arbre B nécessiterait de parcourir l'arbre plusieurs fois, alors qu'avec un **arbre B+**, une fois le nœud feuille de départ trouvé, il suffit de suivre les liens des nœuds feuilles pour lire les données de manière continue.
 
@@ -118,7 +118,7 @@ graph TD
 
 ## 5. Exemple d'implémentation d'un arbre B (Simulation en Python)
 
-Ici, nous allons approfondir notre compréhension en implémentant la structure de base d'un nœud d'arbre B et les algorithmes de recherche et d'insertion en Python.
+Ici, nous allons approfondir notre compréhension en implémentant la structure de base d'un nœud d'arbre B et les [algorithmes de recherche](/fr/p/search-algorithms-linear-binary-hash-table-principles/) et d'insertion en Python.
 
 ```python
 class BTreeNode:

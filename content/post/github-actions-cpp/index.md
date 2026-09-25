@@ -12,27 +12,27 @@ tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 
 # [GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)を使ったC++プロジェクトのCI/CD[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)構築：完全ガイド
 
-現代のソフトウェア開発パラダイムにおいて、継続的インテグレーション（Continuous Integration: CI）と継続的デリバリー/デプロイメント（Continuous Delivery/Deployment: CD）は、アジャイルな開発プロセスと高品質なソフトウェアの維持に不可欠な要素です。数多くの[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)が存在する中で、C++におけるCI/CDパイプラインの構築は、他の言語（例えばPython、JavaScript、[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)など）と比較して独特の難しさと複雑さを伴います。
+現代のソフトウェア開発パラダイムにおいて、継続的インテグレーション（Continuous Integration: CI）と継続的デリバリー/デプロイメント（Continuous Delivery/Deployment: CD）は、アジャイルな開発プロセスと高品質なソフトウェアの維持に不可欠な要素です。数多くの[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)が存在する中で、C++における[CI/CD](/p/cicd-pipeline-github-actions-best-practices/)パイプラインの構築は、他の言語（例えばPython、JavaScript、[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)など）と比較して独特の難しさと複雑さを伴います。
 
-本記事では、GitHub Actionsを活用して、C++プロジェクトのための堅牢で実用的なCI/CDパイプラインをゼロから構築する方法を、極めて詳細に解説します。クロスプラットフォーム（Windows、Linux、macOS）でのマトリックスビルド、CMakeを利用したビルドシステムの統合、CTestを用いた自動テスト、静的・動的解析の自動化、カバレッジの計測、そしてGitHub Releasesを通じたコンパイル済みバイナリの自動デリバリーまで、あらゆる実践的テクニックを網羅します。
+本記事では、GitHub Actionsを活用して、C++プロジェクトのための堅牢で実用的な[CI/CD](/p/cicd-pipeline-github-actions-best-practices/)パイプラインをゼロから構築する方法を、極めて詳細に解説します。クロスプラットフォーム（Windows、Linux、macOS）でのマトリックスビルド、CMakeを利用したビルドシステムの統合、CTestを用いた自動テスト、静的・動的解析の自動化、カバレッジの計測、そしてGitHub Releasesを通じたコンパイル済みバイナリの自動デリバリーまで、あらゆる実践的テクニックを網羅します。
 
 ## 1. C++プロジェクトにおけるCI/CDの意義と特有の課題
 
 Webアプリケーションやスクリプト言語を用いた開発では、単一の[Docker](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)上でのテストやビルドで十分なケースが大半です。しかし、C++はネイティブにコンパイルされる言語であり、実行環境のハードウェアアーキテクチャやオペレーティングシステムに強く依存します。
 
-C++プロジェクトにCI/CDを導入する際、直面する主な課題は以下の通りです。
+C++プロジェクトに[CI/CD](/p/cicd-pipeline-github-actions-best-practices/)を導入する際、直面する主な課題は以下の通りです。
 
-1. **プラットフォームの多様性**: Windows、Linux、macOSといった異なるOSごとにAPI（Windows API、POSIXなど）が異なります。開発者のローカル環境（例えばmacOS）で動作しても、LinuxやWindows上でコンパイルエラーになることは日常茶飯事です。
+1. **プラットフォームの多様性**: Windows、Linux、macOSといった異なるOSごとにAPI（[Windows API](/p/modern-cpp-win32-api-safe-handling/)、POSIXなど）が異なります。開発者のローカル環境（例えばmacOS）で動作しても、LinuxやWindows上でコンパイルエラーになることは日常茶飯事です。
 2. **コンパイラの差異**: Microsoft Visual C++ (MSVC)、GNU Compiler Collection (GCC)、Clangといった主要なコンパイラは、C++標準（C++17、C++20、C++23）の実装度合いや解釈、警告の厳しさが異なります。
 3. **ビルド時間**: 大規模なC++プロジェクトでは、ビルドに数十分から数時間かかることも珍しくありません。CI環境では限られたコンピューティングリソースで効率よくビルドを行うためのキャッシュ戦略や並列化が求められます。
 4. **依存関係管理**: C++には npm や pip のような絶対的な標準パッケージマネージャーが存在しません。vcpkg、Conan、あるいはCMakeの `FetchContent` などを用いて、CI環境上で毎回正しくライブラリを解決する必要があります。
-5. **[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)と未定義動作**: ポインタ操作や手動の[メモリ管理](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)が伴うため、単なるロジックのテストだけでなく、メモリリークや未定義動作（Undefined Behavior）の検知も自動化する必要があります。
+5. **[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)と未定義動作**: [ポインタ](/p/c-language-pointers-memory-management-stack-heap/)操作や手動の[メモリ管理](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)が伴うため、単なるロジックのテストだけでなく、メモリリークや未定義動作（Undefined Behavior）の検知も自動化する必要があります。
 
 これらの課題を解決するためには、様々なOS仮想マシンをオンデマンドでプロビジョニングでき、複雑なワークフローをコードで定義（Configuration as Code）できる[GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)が最適なソリューションとなります。
 
 ## 2. [CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)のアーキテクチャ概要
 
-これから構築するCI/CDパイプラインの全体像を視覚化してみましょう。以下のMermaidシーケンス図は、コードのPushからリリースまでのワークフローを示しています。
+これから構築する[CI/CD](/p/cicd-pipeline-github-actions-best-practices/)パイプラインの全体像を視覚化してみましょう。以下のMermaidシーケンス図は、コードのPushからリリースまでのワークフローを示しています。
 
 ```mermaid
 sequenceDiagram
@@ -455,5 +455,5 @@ C++プロジェクトにおける[CI/CD](https://kenji.blog/p/cicd-pipeline-gith
 
 本記事で解説したマトリックス戦略を用いたクロスプラットフォーム検証、サニタイザーを用いた実行時バグの検出、カバレッジ計測、そしてGitHub Releasesへの自動デプロイメントは、商用レベルのオープンソースプロジェクトでも広く採用されているベストプラクティスです。
 
-自動化されたCI/CDパイプラインは、開発者が「バグ探し」や「手動ビルド・リリース作業」に費やす時間を最小化し、本来のクリエイティブなコーディング活動に集中するための最強の武器となります。ぜひあなたのC++プロジェクトにも導入し、アジャイルで安心感のある開発ライフを実現してください。
+自動化された[CI/CD](/p/cicd-pipeline-github-actions-best-practices/)パイプラインは、開発者が「バグ探し」や「手動ビルド・リリース作業」に費やす時間を最小化し、本来のクリエイティブなコーディング活動に集中するための最強の武器となります。ぜひあなたのC++プロジェクトにも導入し、アジャイルで安心感のある開発ライフを実現してください。
 

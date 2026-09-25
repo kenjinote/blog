@@ -32,13 +32,13 @@ Diese glückliche Zeit war jedoch nur von kurzer Dauer. Im Februar 1930 verstarb
 
 ## 2. Die Universität Cambridge und die Geburt der "Turingmaschine"
 
-Im Jahr 1931 begann Turing sein Studium am King's College der Universität Cambridge und widmete sich intensiv der Erforschung von Mathematik und Logik. Hier kam er mit den Gedanken von Spitzenwissenschaftlern wie John von Neumann und Max Born in Berührung und erweiterte seine akademischen Horizonte erheblich.
+Im Jahr 1931 begann Turing sein Studium am King's College der Universität Cambridge und widmete sich intensiv der Erforschung von Mathematik und Logik. Hier kam er mit den Gedanken von Spitzenwissenschaftlern wie [John von Neumann](/de/p/von-neumann/) und Max Born in Berührung und erweiterte seine akademischen Horizonte erheblich.
 
 1936, im Alter von 24 Jahren, veröffentlichte er seine monumentale Arbeit "On Computable Numbers, with an Application to the Entscheidungsproblem" (Über berechenbare Zahlen, mit einer Anwendung auf das Entscheidungsproblem), die hell in der Wissenschaftsgeschichte des 20. Jahrhunderts erstrahlt.
 
 ### Das Konzept der Turingmaschine
 
-In dieser Arbeit lieferte Turing einen Beweis, der das vom Mathematiker David Hilbert aufgeworfene "Entscheidungsproblem" (Können alle mathematischen Aussagen durch einen Algorithmus auf ihre Richtigkeit überprüft werden?) mit "Nein" beantwortete. Der wahre Wert dieser Arbeit lag jedoch in dem Gedankenexperiment-Modell der "Turingmaschine" (Turing Machine), das er im Zuge dieses Beweises entwarf.
+In dieser Arbeit lieferte Turing einen Beweis, der das vom Mathematiker [David Hilbert](/de/p/hilbert/) aufgeworfene "Entscheidungsproblem" (Können alle mathematischen Aussagen durch einen Algorithmus auf ihre Richtigkeit überprüft werden?) mit "Nein" beantwortete. Der wahre Wert dieser Arbeit lag jedoch in dem Gedankenexperiment-Modell der "Turingmaschine" (Turing Machine), das er im Zuge dieses Beweises entwarf.
 
 Die Turingmaschine ist eine extrem einfache virtuelle Maschine, bestehend aus einem unendlich langen Band, einem Kopf zum Lesen und Schreiben auf dem Band, einem Register zum Speichern des internen Zustands und einer Regeltabelle, die das Verhalten bestimmt.
 

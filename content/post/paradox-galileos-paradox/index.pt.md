@@ -14,7 +14,7 @@ Quando você ouve a palavra "infinito", que tipo de imagem vem à sua mente? Um 
 
 A nossa intuição diária é cultivada num mundo finito. Como "existem 3 maçãs" ou "ler um livro de 100 páginas", os números são sempre tratados como algo que tem um fim. No entanto, quando entramos no mundo da matemática, temos que enfrentar de frente o conceito formidável de "infinito".
 
-Desta vez, vamos explorar um estranho paradoxo levantado pelo pai da ciência, Galileu Galilei (1564-1642), em seus últimos anos, no seu livro "Duas Novas Ciências". Conhecido como o "Paradoxo de Galileu", ele se tornou a chave importante que abriu a porta para o infinito, levando aos matemáticos posteriores, especialmente à "teoria dos conjuntos" de Georg Cantor.
+Desta vez, vamos explorar um estranho paradoxo levantado pelo pai da ciência, Galileu Galilei (1564-1642), em seus últimos anos, no seu livro "Duas Novas Ciências". Conhecido como o "Paradoxo de Galileu", ele se tornou a chave importante que abriu a porta para o infinito, levando aos matemáticos posteriores, especialmente à "teoria dos conjuntos" de [Georg Cantor](/pt/p/cantor/).
 
 Neste artigo, ao longo de vários milhares de palavras, explicaremos o mais detalhadamente possível o mistério do conceito de "infinito", o desvio da intuição matemática e a sabedoria da humanidade que o superou. Por favor, junte-se a nós nesta jornada de aventura intelectual.
 
@@ -30,7 +30,7 @@ O "paradoxo do infinito" que ele percebeu começa com uma questão muito simples
 
 Se seguirmos a nossa intuição, a resposta é óbvia. "Os números naturais devem ser esmagadoramente mais numerosos". Porque os números naturais contêm uma enorme quantidade de números que não são quadrados perfeitos (2, 3, 5, 6, 7, 8...). Os quadrados perfeitos parecem ser apenas "uma pequena parte" do enorme grupo dos números naturais.
 
-O famoso axioma do matemático grego Euclides também afirma que **"o todo é maior que a parte"**. Este axioma é uma verdade inabalável num mundo finito. Se tirarmos 3 maçãs de 10, restam 7. As 10 maçãs originais (o todo) são claramente maiores do que as 3 que foram retiradas (a parte).
+O famoso axioma do matemático grego [Euclides](/pt/p/euclid/) também afirma que **"o todo é maior que a parte"**. Este axioma é uma verdade inabalável num mundo finito. Se tirarmos 3 maçãs de 10, restam 7. As 10 maçãs originais (o todo) são claramente maiores do que as 3 que foram retiradas (a parte).
 
 No entanto, Galileu percebe aqui um fato.
 
@@ -78,7 +78,7 @@ Em outras palavras, Galileu pensou que "no mundo do infinito, a própria ideia d
 
 Dentro do quadro matemático da época, este era o julgamento mais razoável e sábio. Pode-se dizer que a sua intuição de que é perigoso trazer as regras do mundo finito (o todo é maior que a parte) para o mundo infinito estava certa de certa forma.
 
-Mas a história da matemática não parou por aí. Cerca de 250 anos depois, na segunda metade do século 19, um matemático genial enfrentou de frente este monstro chamado "infinito". Foi Georg Cantor.
+Mas a história da matemática não parou por aí. Cerca de 250 anos depois, na segunda metade do século 19, um matemático genial enfrentou de frente este monstro chamado "infinito". Foi [Georg Cantor](/pt/p/cantor/).
 
 ---
 
@@ -114,7 +114,7 @@ Cantor nomeou o tamanho infinito dos conjuntos que têm correspondência biunív
 
 ### O colapso do axioma "o todo é maior que a parte"
 
-Aqui, ficou claro que o axioma de Euclides de que "o todo é maior que a parte", que era senso comum no mundo finito, não se sustenta no mundo infinito.
+Aqui, ficou claro que o axioma de [Euclides](/pt/p/euclid/) de que "o todo é maior que a parte", que era senso comum no mundo finito, não se sustenta no mundo infinito.
 
 Na matemática moderna (teoria dos conjuntos), um conjunto infinito é frequentemente definido da seguinte forma:
 **"Um conjunto é chamado de infinito se puder ser colocado em correspondência biunívoca com um subconjunto próprio de si mesmo (uma parte estritamente menor que o todo)."**
@@ -130,7 +130,7 @@ Quando descobrimos que números naturais, números pares, inteiros e racionais s
 
 No entanto, Cantor fez uma descoberta ainda mais chocante. Ele provou que o conjunto dos **"números reais (todos os números na reta numérica)"** é **estritamente maior** do que o conjunto dos números naturais.
 
-Para provar isso, ele usou o famoso **"Argumento de diagonalização de Cantor"**.
+Para provar isso, ele usou o famoso **"Argumento de [diagonalização](/pt/p/diagonalization-and-jordan-normal-form/) de Cantor"**.
 Simplificando, é uma prova por contradição que afirma: "Se assumirmos que todos os números reais (aqui, decimais entre 0 e 1) pudessem ser listados em uma correspondência 1 para 1 com os números naturais, sempre seria possível criar um novo número real que escaparia dessa lista."
 
 Com esta descoberta, ficou confirmado que o infinito tem "tamanhos".
@@ -157,7 +157,7 @@ O Paradoxo de Galileu não é apenas um jogo de palavras ou uma sutileza. Ele no
 
 A "estranha relação entre números naturais e quadrados perfeitos" que Galileu Galilei deixou por escrito no século 17, através de centenas de anos, floresceu na matemática moderna que lida com o infinito.
 
-O conceito de infinito ainda guarda muitos mistérios. A questão de saber "se existe outro tamanho de infinito entre o infinito dos números naturais e o infinito dos números reais?" (a Hipótese do Contínuo) chegou à surpreendente conclusão de que "não pode ser provada nem refutada" no sistema de axiomas da matemática atual.
+O conceito de infinito ainda guarda muitos mistérios. A questão de saber "se existe outro tamanho de infinito entre o infinito dos números naturais e o infinito dos números reais?" (a [Hipótese do Contínuo](/pt/p/continuum-hypothesis/)) chegou à surpreendente conclusão de que "não pode ser provada nem refutada" no sistema de axiomas da matemática atual.
 
 O que acontece no fim do universo? O tempo continuará para sempre? E o que existe além das hierarquias infinitas que se expandem no mundo da matemática? O Paradoxo de Galileu é um episódio que simboliza o esplendor da inteligência humana de que, apesar de sermos seres finitos, podemos tocar o "infinito" através do pensamento.
 

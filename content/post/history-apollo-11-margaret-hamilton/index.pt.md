@@ -10,7 +10,7 @@ image: "eyecatch.jpg"
 
 # 1. Introdução: O desafio sem precedentes de pousar na Lua
 
-Em 20 de julho de 1969, a Apollo 11 pousou no Mar da Tranquilidade, e o comandante Neil Armstrong se tornou o primeiro ser humano a pisar na superfície lunar. Este feito histórico foi o resultado de avanços de hardware em engenharia de foguetes, ciência dos materiais e mecânica celeste, mas ao mesmo tempo, foi também um triunfo do "software", que era extremamente inovador para a época.
+Em 20 de julho de 1969, a Apollo 11 pousou no Mar da Tranquilidade, e o comandante [Neil Armstrong](/pt/p/biography-neil-armstrong/) se tornou o primeiro ser humano a pisar na superfície lunar. Este feito histórico foi o resultado de avanços de hardware em engenharia de foguetes, ciência dos materiais e mecânica celeste, mas ao mesmo tempo, foi também um triunfo do "software", que era extremamente inovador para a época.
 
 No centro desse desenvolvimento de software estava **Margaret Hamilton**, que liderou o desenvolvimento de software para o Apollo Guidance Computer (AGC) no Instrumentation Laboratory do MIT (Instituto de Tecnologia de Massachusetts). Os computadores da época estavam apenas começando a fazer a transição de massas de tubos de vácuo que ocupavam salas inteiras para sistemas miniaturizados usando transistores. A capacidade de memória era minúscula, e a velocidade de computação era incomparavelmente mais lenta do que a dos smartphones modernos.
 

@@ -9,7 +9,7 @@ categories: ["수학", "전기"]
 tags: ["그로텐디크", "대수기하학", "스킴 이론", "범주론"]
 ---
 
-# [알렉산더 그로텐디크: 20세기 위대한 수학자의 생애와 업적](https://kenji.blog/p/grothendieck/)
+# [알렉산더 그로텐디크: 20세기 위대한 수학자의 생애와 업적](https://kenji.blog/ko/p/grothendieck/)
 
 [알렉산더 그로텐디크](https://kenji.blog/ko/p/grothendieck/)([Alexander Grothendieck](https://kenji.blog/ko/p/grothendieck/))는 20세기 후반 수학계, 특히 대수기하학 분야에서 근본적인 패러다임의 전환을 가져온 역사상 최고의 수학자 중 한 명입니다. 그의 업적은 단순히 개별적인 미해결 문제를 해결한 수준에 그치지 않고, 수학이라는 학문 자체의 언어와 개념적 틀을 근본부터 재구성한 것이었습니다. 본 기사에서는 그의 기구하고 극적인 생애와 현대 수학에 미친 헤아릴 수 없는 영향에 대해 자세히 해설합니다.
 

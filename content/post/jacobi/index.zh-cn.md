@@ -16,7 +16,7 @@ tags:
 
 # 1. 引言：纯粹思想的探索者
 
-[卡尔·古斯塔夫·雅各布·雅可比](https://kenji.blog/zh-cn/p/jacobi/)（[Carl Gustav Jacob Jacobi](https://kenji.blog/zh-cn/p/jacobi/), 1804–1851）是19世纪的一位 **德国数学家** ，在代数、分析、数论和力学等广泛领域做出了决定性的贡献。他与尼尔斯·亨利克·阿贝尔一起被誉为“椭圆函数的发现者”，也是今天我们在多元微积分中经常遇到的“雅可比矩阵（雅可比行列式）”的命名由来。
+[卡尔·古斯塔夫·雅各布·雅可比](https://kenji.blog/zh-cn/p/jacobi/)（[Carl Gustav Jacob Jacobi](https://kenji.blog/zh-cn/p/jacobi/), 1804–1851）是19世纪的一位 **德国数学家** ，在代数、分析、数论和力学等广泛领域做出了决定性的贡献。他与尼尔斯·亨利克·阿贝尔一起被誉为“椭圆函数的发现者”，也是今天我们在多元微积分中经常遇到的“雅可比矩阵（雅可比[行列式](/zh-cn/p/geometric-meaning-of-determinant/)）”的命名由来。
 
 他认为数学本身的优美和人类精神的荣耀远高于其实用性。在本文中，我们将深入探讨雅可比的一生、他的主要数学成就以及他留下的著名轶事。
 
@@ -61,11 +61,11 @@ $$ \vartheta(z, \tau) = \sum_{n=-\infty}^{\infty} e^{\pi i n^2 \tau + 2 \pi i n 
 
 在大学的微积分课程中，当学习多重积分中的变量代换（例如极坐标变换）时，每个人都会遇到“雅可比”这个词。这也来源于雅可比。
 
-当考虑从 $n$ 个变量 $x_1, x_2, \dots, x_n$ 到 $n$ 个变量 $y_1, y_2, \dots, y_n$ 的变换时，由它们的偏导数组成的矩阵的行列式被称为雅可比行列式。
+当考虑从 $n$ 个变量 $x_1, x_2, \dots, x_n$ 到 $n$ 个变量 $y_1, y_2, \dots, y_n$ 的变换时，由它们的偏导数组成的矩阵的[行列式](/zh-cn/p/geometric-meaning-of-determinant/)被称为雅可比[行列式](/zh-cn/p/geometric-meaning-of-determinant/)。
 
 $$ J = \det \begin{pmatrix} \frac{\partial y_1}{\partial x_1} & \cdots & \frac{\partial y_1}{\partial x_n} \\ \vdots & \ddots & \vdots \\ \frac{\partial y_m}{\partial x_1} & \cdots & \frac{\partial y_m}{\partial x_n} \end{pmatrix} $$
 
-雅可比清楚地表明，这个行列式代表了变量代换下体积元素的缩放因子，并且他证明了它在推广反函数定理和隐函数定理中的核心作用。
+雅可比清楚地表明，这个[行列式](/zh-cn/p/geometric-meaning-of-determinant/)代表了变量代换下体积元素的缩放因子，并且他证明了它在推广反函数定理和隐函数定理中的核心作用。
 
 # 6. 分析力学：哈密顿-雅可比方程
 

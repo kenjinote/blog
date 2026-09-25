@@ -13,17 +13,17 @@ description: '兼顧隱私保護且可免費使用的本地LLM。本文將從技
 
 # 前言
 
-近年來，大型語言模型（[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）的技術進化顯著，如 ChatGPT 和 Claude 等基於雲端的 AI 服務已廣泛普及。然而，與此同時，對於「不想將公司的機密數據發送到外部伺服器」、「希望降低 API 的使用費用」、「想要建構完全離線運行的 AI 系統」等需求也正快速增加。
+近年來，[大型語言模型](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）的技術進化顯著，如 ChatGPT 和 Claude 等基於雲端的 AI 服務已廣泛普及。然而，與此同時，對於「不想將公司的機密數據發送到外部伺服器」、「希望降低 API 的使用費用」、「想要建構完全離線運行的 AI 系統」等需求也正快速增加。
 
-為了滿足這些需求，「本地 LLM（開源 LLM）」應運而生，你可以直接下載並運行在自己的電腦或公司內部的伺服器上。直到 2023 年左右，要在本地實現實用的精確度依然很困難，但隨著模型架構的進化和量化（Quantization）技術的發展，現在即便是消費級的 GPU（如 NVIDIA RTX 3090 / 4090 或 Mac 的 Apple Silicon 等），也能流暢地運行非常高效的 LLM。
+為了滿足這些需求，「本地 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)（開源 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）」應運而生，你可以直接下載並運行在自己的電腦或公司內部的伺服器上。直到 2023 年左右，要在本地實現實用的精確度依然很困難，但隨著模型架構的進化和量化（Quantization）技術的發展，現在即便是消費級的 GPU（如 [NVIDIA](/zh-tw/p/history-of-nvidia/) RTX 3090 / 4090 或 Mac 的 Apple Silicon 等），也能流暢地運行非常高效的 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)。
 
-本文將從眾多的開源 LLM 中，挑選出截至 2026 年評價特別高的「推薦 5 款模型」，並從極其詳細且技術性的角度，深入比較與解析它們的架構特徵、參數數量、基於 GGUF 量化的記憶體需求，以及具體的使用案例。
+本文將從眾多的開源 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 中，挑選出截至 2026 年評價特別高的「推薦 5 款模型」，並從極其詳細且技術性的角度，深入比較與解析它們的架構特徵、參數數量、基於 [GGUF](/zh-tw/p/llama-cpp-quantization-gguf/) 量化的記憶體需求，以及具體的使用案例。
 
 ---
 
 # 為什麼要在本地運行 LLM？
 
-導入本地 LLM 擁有許多雲端 API 所不具備的獨特優勢。
+導入本地 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 擁有許多雲端 API 所不具備的獨特優勢。
 
 ### 1. 確保完全的隱私與安全性
 使用雲端 API 時，輸入的提示詞與數據會被發送至外部企業的伺服器。在處理個人資訊或企業機密數據時，這將構成重大的風險。如果是本地 LLM，數據將完全在終端設備內進行處理，因此能將數據外洩至外部的風險降至為零。
@@ -38,11 +38,11 @@ description: '兼顧隱私保護且可免費使用的本地LLM。本文將從技
 
 # 運行本地 LLM 的基礎知識
 
-在介紹模型之前，讓我們先從數學角度整理一下在本地環境中運行 LLM 時不可避免的「VRAM 需求」與「量化（Quantization）」概念。
+在介紹模型之前，讓我們先從數學角度整理一下在本地環境中運行 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 時不可避免的「VRAM 需求」與「量化（Quantization）」概念。
 
 ## VRAM（視訊記憶體）與量化的數學基礎
 
-為了讓 LLM 在 GPU 上進行推論，必須將模型的參數（權重）載入至 VRAM 中。模型的記憶體需求 $M$ 可以用以下公式進行近似計算：
+為了讓 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 在 GPU 上進行推論，必須將模型的參數（權重）載入至 VRAM 中。模型的記憶體需求 $M$ 可以用以下公式進行近似計算：
 
 $$ M = \frac{P \times B}{8} + C $$
 
@@ -62,7 +62,7 @@ $$ M_{FP16} = \frac{8 \times 16}{8} = 16 \text{ GB} $$
 
 為此，「量化（Quantization）」技術應運而生。透過將參數的精度從 FP16 降低至 8-bit、4-bit，甚至在極端情況下降至 2-bit，可以在將模型效能下降降至最低的同時，大幅減少所需的記憶體量。
 
-目前最普及的格式是由 Georgi Gerganov（llama.cpp 的開發者）所構思的 **GGUF (GPT-Generated Unified Format)** 。GGUF 是一種為了在 CPU 與 GPU 上進行高效推論的二進制格式，特別值得一提的是，它與 Mac (Apple Silicon) 的統一記憶體（Unified Memory）架構相容性極佳。
+目前最普及的格式是由 Georgi Gerganov（llama.cpp 的開發者）所構思的 **[GGUF](/zh-tw/p/llama-cpp-quantization-gguf/) (GPT-Generated Unified Format)** 。[GGUF](/zh-tw/p/llama-cpp-quantization-gguf/) 是一種為了在 CPU 與 GPU 上進行高效推論的二進制格式，特別值得一提的是，它與 Mac (Apple Silicon) 的統一記憶體（Unified Memory）架構相容性極佳。
 
 如果將 8B 模型進行 4-bit（例如：Q4_K_M）量化，記憶體的計算如下：
 
@@ -70,17 +70,17 @@ $$ M_{4bit} = \frac{8 \times 4.5}{8} = 4.5 \text{ GB} $$
 
 ※由於 Q4_K_M 對部分權重保留了較高的精度，因此實際有效位元數約為 4.5 位元。
 
-如此一來，即使是只有 8GB VRAM 的入門級 GPU 或一般的筆記型電腦，也能夠在本地流暢地運行 8B 等級的強大 LLM。
+如此一來，即使是只有 8GB VRAM 的入門級 GPU 或一般的筆記型電腦，也能夠在本地流暢地運行 8B 等級的強大 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)。
 
 ---
 
 # 推薦的本地 LLM 模型 5 選
 
-接下來，我們將介紹 5 款目前在全球開發者及 AI 研究人員中獲得極高支持的開源 LLM。
+接下來，我們將介紹 5 款目前在全球開發者及 AI 研究人員中獲得極高支持的開源 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)。
 
 ## 1. Llama 3 (Meta)
 
-由 Meta 公司開發，已成為開源 LLM 實質上業界標準（De facto standard）的，正是「Llama 3」系列。
+由 [Meta](/zh-tw/p/history-of-meta-facebook/) 公司開發，已成為開源 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 實質上業界標準（De facto standard）的，正是「Llama 3」系列。
 
 ### 架構的進化與特徵
 
@@ -108,7 +108,7 @@ graph TD
 - **Llama 3 8B**: 80 億參數。4-bit 量化下僅需約 5GB 記憶體即可運行。回應速度極快，非常適合作為電腦上的個人助理，或本地 RAG（檢索增強生成）系統的核心。
 - **Llama 3 70B**: 700 億參數。4-bit 量化下需要約 40GB 的 VRAM（或 Apple Silicon 的統一記憶體）。擁有逼近雲端 GPT-4 的效能，在進階推論、複雜程式編寫、數據分析等方面能發揮強大威力。
 
-Llama 3 擁有最深厚的社群支援，而且能立即使用 GGUF、AWQ、EXL2 等所有的量化格式，這也是它的一大優勢。
+Llama 3 擁有最深厚的社群支援，而且能立即使用 [GGUF](/zh-tw/p/llama-cpp-quantization-gguf/)、AWQ、EXL2 等所有的量化格式，這也是它的一大優勢。
 
 ---
 
@@ -190,8 +190,8 @@ Qwen 2.5 在龐大的多語言語料庫上進行了預訓練，除了英文與�
 
 ### SLM（小型語言模型）的革命
 
-近年來的 LLM 開發主流是「無論如何都要增加參數數量與數據量」的暴力美學，但 Microsoft 證明了「只要將輸入模型的數據品質（高品質的教科書數據或合成數據）提升到極致，即便參數數量很少，也能擁有媲美 GPT-3.5 等級的智慧」。
-Phi-3 並非 LLM（Large Language Model），而是被稱為 **SLM（Small Language Model）** 。
+近年來的 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 開發主流是「無論如何都要增加參數數量與數據量」的暴力美學，但 Microsoft 證明了「只要將輸入模型的數據品質（高品質的教科書數據或合成數據）提升到極致，即便參數數量很少，也能擁有媲美 GPT-3.5 等級的智慧」。
+Phi-3 並非 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)（Large Language Model），而是被稱為 **SLM（Small Language Model）** 。
 
 ```mermaid
 graph TD
@@ -241,7 +241,7 @@ $$ T = \frac{\text{BW}}{M_{\text{weights}}} $$
 - $\text{BW}$: GPU 的有效記憶體頻寬 (GB/s)
 - $M_{\text{weights}}$: 已載入模型的大小 (GB)
 
-舉例來說，計算在 NVIDIA RTX 4090（記憶體頻寬 1,008 GB/s）上運行 Llama 3 8B 4-bit 版（約 4.5 GB）的情況。假設有效頻寬約為理論值的 80%（約 800 GB/s）：
+舉例來說，計算在 [NVIDIA](/zh-tw/p/history-of-nvidia/) RTX 4090（記憶體頻寬 1,008 GB/s）上運行 Llama 3 8B 4-bit 版（約 4.5 GB）的情況。假設有效頻寬約為理論值的 80%（約 800 GB/s）：
 
 $$ T \approx \frac{800}{4.5} \approx 177 \text{ Tokens/sec} $$
 
@@ -251,7 +251,7 @@ $$ T \approx \frac{800}{4.5} \approx 177 \text{ Tokens/sec} $$
 
 # 運行本地 LLM 的工具
 
-目前，用於在本地環境中運行這些強大開源 LLM 的軟體生態系也非常豐富。以下介紹 3 款代表性工具。
+目前，用於在本地環境中運行這些強大開源 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的軟體生態系也非常豐富。以下介紹 3 款代表性工具。
 
 ### 1. Ollama
 目前最簡單且最受歡迎的工具。它像 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 一樣，只需一行指令就能完成從下載模型到運行的過程。支援 Mac、Windows 及 Linux。
@@ -272,7 +272,7 @@ ollama run llama3
 
 # 總結與未來展望
 
-本文介紹了截至 2026 年最高水準的 5 款開源本地 LLM，並解說了其架構與技術背景。依照目的區分的選擇方式總結如下：
+本文介紹了截至 2026 年最高水準的 5 款開源本地 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)，並解說了其架構與技術背景。依照目的區分的選擇方式總結如下：
 
 1. **重視整體平衡與生態系**: `Llama 3 (8B / 70B)`
 2. **想在 Mac 等大容量統一記憶體環境中進行高速推論**: `Mixtral 8x7B`

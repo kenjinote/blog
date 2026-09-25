@@ -112,7 +112,7 @@ description: 'Presentamos una cuidada selección de citas inspiradoras de person
 
 > Y sin embargo, se mueve (Galileo Galilei)
 
-> No hay camino real hacia la geometría ([Euclides](https://kenji.blog/p/euclid/))
+> No hay camino real hacia la geometría ([Euclides](https://kenji.blog/es/p/euclid/))
 
 > Dame un punto de apoyo y moveré el mundo (Arquímedes)
 

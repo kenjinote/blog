@@ -315,7 +315,7 @@ Existem centenas de temas (config) disponíveis, e também é possível criar os
 
 # 7. A Teoria da Evolução do Prompt 2: Fusão da Arquitetura WSL2 e Starship
 
-O WSL2 (Windows Subsystem for Linux 2), que permite rodar um verdadeiro kernel do Linux no Windows, é indispensável para o desenvolvimento web moderno e o desenvolvimento nativo em nuvem (cloud-native). O "**Starship**" é a melhor solução para personalizar os prompts de shells no WSL (como Bash ou Zsh).
+O WSL2 ([Windows Subsystem for Linux](/pt/p/wsl2-ultimate-development-setup-guide/) 2), que permite rodar um verdadeiro kernel do Linux no Windows, é indispensável para o desenvolvimento web moderno e o desenvolvimento nativo em nuvem (cloud-native). O "**Starship**" é a melhor solução para personalizar os prompts de shells no WSL (como Bash ou Zsh).
 
 Starship é um prompt cross-shell escrito em [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/), extremamente rápido e altamente personalizável. Sua principal vantagem é a capacidade de reproduzir exatamente o mesmo prompt em qualquer shell, seja Bash, Zsh ou Fish, escrevendo um único arquivo de configuração (TOML).
 
@@ -411,7 +411,7 @@ O significado de cada variável e o tempo típico exigido são os seguintes:
 - $ T_{hw\_input} $: Atraso de hardware desde que a chave mecânica do teclado é acionada, pesquisada pelo controlador USB, até que o sinal de interrupção seja enviado (cerca de 1 a 5 ms).
 - $ T_{os} $: Atraso no processamento da fila de mensagens pela camada do driver HID (Human Interface Device) do SO (cerca de 1 a 2 ms).
 - $ T_{pty} $: Atraso de buffer e conversão de codificação de caracteres (como UTF-8 para UTF-16) pelo ConPTY (pseudoterminal) (cerca de 2 a 10 ms).
-- $ T_{app} $: Tempo de processamento para interpretação de comandos e determinação da saída na tela pelo shell (PowerShell/Bash). O tempo de processamento para obter o status do Git com Oh My Posh ou Starship também está incluído aqui (cerca de 10 a 50 ms).
+- $ T_{app} $: Tempo de processamento para interpretação de comandos e determinação da saída na tela pelo shell ([PowerShell/Bash](/pt/p/terminal-efficiency-powershell-bash-shortcuts/)). O tempo de processamento para obter o status do Git com Oh My Posh ou Starship também está incluído aqui (cerca de 10 a 50 ms).
 - $ T_{render} $: Atraso de renderização desde que o Windows Terminal (DirectWrite/DirectX) rasteriza os glifos de texto como texturas, os transfere para a memória da GPU e inverte a cadeia de troca (swap chain) (cerca de 2 a 8 ms).
 - $ T_{display} $: Atraso de exibição desde o envio do sinal do buffer de quadros da GPU para o monitor até que os cristais líquidos respondam fisicamente e mudem seu estado de emissão de luz (como o tempo de resposta GtG. Cerca de 5 a 20 ms).
 
@@ -427,7 +427,7 @@ Como resultado, mesmo em situações onde grandes quantidades de logs fluem para
 
 # 9. Resolução de Problemas Avançada e Métodos de Depuração
 
-Conforme você personaliza o Windows Terminal ao máximo, pode se deparar com problemas inesperados, como erros de sintaxe no arquivo de configuração ou problemas de renderização de fontes. Aqui, apresentamos métodos avançados de resolução de problemas para engenheiros.
+Conforme você personaliza o Windows Terminal ao máximo, pode se deparar com problemas inesperados, como erros de sintaxe no arquivo de configuração ou problemas de renderização de fontes. Aqui, apresentamos métodos avançados de resolução de problemas [para engenheiros](/pt/p/prompt-engineering-for-engineers/).
 
 ## 9.1 Validação do JSON Schema do settings.json
 A estrutura do `settings.json` é rigorosamente definida, e é recomendado usar o JSON Schema para realizar verificações de sintaxe em tempo real em seu editor (como o VS Code). Quando você abre o `settings.json` no VS Code, o esquema do Windows Terminal é aplicado por padrão, e avisos com sublinhado ondulado aparecem imediatamente em nomes de propriedades inválidas ou erros de tipo (por exemplo, quando uma string é usada onde um número é esperado).

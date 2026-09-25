@@ -47,7 +47,7 @@ En Git, existe una "copia completa del repositorio" en la máquina local de cada
 
 El concepto más importante para entender la estructura interna de Git es el "DAG (Directed Acyclic Graph: Grafo Acíclico Dirigido)". Git no gestiona el historial como una simple "secuencia de parches (diferencias)", sino que construye las relaciones entre las instantáneas (snapshots) como un DAG.
 
-Cada commit tiene un puntero (árbol) a una instantánea de todo el proyecto en ese momento, y punteros a uno o más "commits padres". Mediante esta simple cadena de estructuras de datos, Git expresa historiales complejos de bifurcación de ramas y fusiones como un grafo matemáticamente libre de contradicciones.
+Cada commit tiene un puntero (árbol) a una instantánea de todo el proyecto en ese momento, y [punteros](/es/p/c-language-pointers-memory-management-stack-heap/) a uno o más "commits padres". Mediante esta simple cadena de estructuras de datos, Git expresa historiales complejos de bifurcación de ramas y fusiones como un grafo matemáticamente libre de contradicciones.
 
 La belleza de este enfoque radica en que el historial se expresa naturalmente no como "una sola línea", sino como "múltiples líneas de tiempo que avanzan en paralelo". Los desarrolladores pueden bifurcar libremente la historia, experimentar, y si fallan pueden descartar esa bifurcación, o si tienen éxito, pueden fusionarla con la corriente principal. El historial no es un simple registro del pasado, sino la "trayectoria de pensamiento" del propio desarrollador.
 
@@ -78,7 +78,7 @@ graph TD
 
 Si cambia un solo byte del contenido de un archivo, cambiará el valor hash de ese archivo, lo que cambiará el valor hash del árbol que lo contiene, y como resultado, el valor hash del commit también cambiará. En otras palabras, modificar secretamente parte del historial es criptográficamente imposible.
 
-Al diseñar Git, Linus Torvalds tenía la firme intención de "no permitir bajo ninguna circunstancia la destrucción o falsificación de datos". El modelo de hashes de Git encarna la forma definitiva de descentralización, similar a la cadena de bloques (blockchain), donde la confianza reside intrínsecamente en los datos mismos sin depender de una autoridad central (servidor).
+Al diseñar Git, Linus Torvalds tenía la firme intención de "no permitir bajo ninguna circunstancia la destrucción o falsificación de datos". El modelo de hashes de Git encarna la forma definitiva de descentralización, similar a la cadena de bloques ([blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/)), donde la confianza reside intrínsecamente en los datos mismos sin depender de una autoridad central (servidor).
 
 ## 5. Fusión y Diálogo: La Programación como Proceso Social
 

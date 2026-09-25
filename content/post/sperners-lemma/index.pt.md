@@ -110,11 +110,11 @@ Portanto, está claro que o número de portas que levam ao exterior é um **núm
 
 ## 5.3. Calculando Graus Usando o Lema do Aperto de Mãos
 
-É aqui que a teoria dos grafos entra.
+É aqui que a [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/) entra.
 - Vértices do grafo: Cada pequeno triângulo (sala) e o exterior.
 - Arestas do grafo: Portas (arestas de cor 1 e 2). Quando duas salas compartilham uma porta, conecte seus vértices com uma aresta.
 
-De acordo com o "Lema do Aperto de Mãos", um teorema fundamental na teoria dos grafos, a soma dos "graus" (número de arestas conectadas) de todos os vértices deve ser sempre um número par (o dobro do número de arestas).
+De acordo com o "Lema do Aperto de Mãos", um teorema fundamental na [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/), a soma dos "graus" (número de arestas conectadas) de todos os vértices deve ser sempre um número par (o dobro do número de arestas).
 
 $$ \sum_{v \in V} \text{deg}(v) = 2|E| $$
 

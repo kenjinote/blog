@@ -77,7 +77,7 @@ FHEは長らく「暗号界の聖杯」と呼ばれ、実現不可能ではな�
 
 ## 3. FHEの数学的基盤：LWE問題とRing-LWE
 
-現在の主流となっているFHEスキームの多くは、耐量子計算機暗号（Post-Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy）としても知られる「格子暗号（Lattice-based [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy）」の数学的難問である **LWE (Learning With Errors) 問題** に基づいています。
+現在の主流となっているFHEスキームの多くは、耐量子計算機暗号（Post-Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy）としても知られる「[格子暗号](/p/lattice-based-cryptography-math-intuition/)（Lattice-based [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy）」の数学的難問である **LWE (Learning With Errors) 問題** に基づいています。
 
 ### LWE問題の直感的な理解
 連立一次方程式を解くことは、[ガウス](https://kenji.blog/p/gauss/)の消去法などを用いれば簡単です。
@@ -230,13 +230,13 @@ print(f"復号された乗算結果: {res_mul}")
 
 FHEは理論的に完璧なセキュリティを提供しますが、実用化における最大の課題は **「パフォーマンスのオーバーヘッド」** です。
 
-1.  **計算のオーバーヘッド**: 平文での計算に比べ、暗号文での計算はCPU上で数千倍〜数万倍遅くなります。多項式の乗算やブートストラッピングには膨大なFFT（高速フーリエ変換）やNTT（数論変換）の計算が必要です。
+1.  **計算のオーバーヘッド**: 平文での計算に比べ、暗号文での計算はCPU上で数千倍〜数万倍遅くなります。多項式の乗算やブートストラッピングには膨大な[FFT](/p/fast-fourier-transform-algorithm/)（[高速フーリエ変換](/p/fast-fourier-transform-algorithm/)）やNTT（数論変換）の計算が必要です。
 2.  **データサイズの膨張 (Ciphertext Expansion)**: 数バイトの平文が、[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)されると数メガバイトになることがあります。これはメモリ帯域やネットワーク帯域を強く圧迫します。
 
 ### ハードウェアによる解決へのアプローチ
 このオーバーヘッドを克服するため、世界中でFHE専用のハードウェアアクセラレータ（ASIC, FPGA, GPU対応）の開発が進められています。
 
-*   **GPUアクセラレーション**: NVIDIAなどの強力なGPUを用いて、NTT演算やブートストラッピングを並列化する取り組みが進んでおり、ソフトウェア実装に対して数十倍の高速化が報告されています（例：100x.ai, ZamaのTFHE-rs CUDA backend）。
+*   **GPUアクセラレーション**: [NVIDIA](/p/history-of-nvidia/)などの強力なGPUを用いて、NTT演算やブートストラッピングを並列化する取り組みが進んでおり、ソフトウェア実装に対して数十倍の高速化が報告されています（例：100x.ai, ZamaのTFHE-rs CUDA backend）。
 *   **DARPA DPRIVE プロジェクト**: 米国防高等研究計画局（DARPA）は、FHEの計算速度を平文処理の実行速度と同等レベル（オーバーヘッド10倍以内）に引き上げるための専用ハードウェア開発プロジェクト「DPRIVE (Data Protection in Virtual Environments)」を推進しており、IntelやMicrosoft、Intellectual Venturesなどが参加しています。
 *   **FPU (FHE Processing Unit) の登場**: CornamiやOptalysysといったスタートアップが、光コンピューティングや特殊なシリコンアーキテクチャを用いたFHE専用チップの開発に乗り出しています。
 
@@ -261,7 +261,7 @@ FHEが実用的な速度に到達しつつある今、以下のような分野�
 
 1970年代に[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号（[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)）が発明されてインターネット上の安全な通信（HTTPSなど）が可能になったように、Craig GentryによるFHEの発明は、暗号の歴史における最も重要なマイルストーンの一つです。
 
-現在、完全準同型暗号（FHE）は研究室の理論から飛び出し、Microsoft、IBM、Intel、Google、そして多くのスタートアップが実用化に向けてしのぎを削る段階に入っています。計算コストやデータサイズの課題は依然として存在しますが、アルゴリズムの洗練とハードウェアアクセラレータの進化により、ムーアの法則を超えるペースで性能向上が続いています。
+現在、完全準同型暗号（FHE）は研究室の理論から飛び出し、Microsoft、IBM、Intel、Google、そして多くのスタートアップが実用化に向けてしのぎを削る段階に入っています。計算コストやデータサイズの課題は依然として存在しますが、アルゴリズムの洗練とハードウェアアクセラレータの進化により、[ムーアの法則](/p/business-moores-law/)を超えるペースで性能向上が続いています。
 
 数年後、「データを暗号化したまま計算する」ことは特別なことではなく、クラウドサービスにおける標準的なデータ保護のベストプラクティスとなるでしょう。FHEは、データ駆動型社会における **究極のプライバシーとデータ利活用の両立** を実現する、次世代セキュリティの要なのです。
 

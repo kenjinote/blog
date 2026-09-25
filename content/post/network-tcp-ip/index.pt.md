@@ -77,7 +77,7 @@ Esta é a filosofia de que "equipamentos como roteadores no caminho da rede deve
 Antigas redes telefônicas no Japão (como a NTT) eram "redes inteligentes", onde as centrais de comutação nas agências telefônicas centrais possuíam todas as funções (faturamento, controle, tratamento de erros).
 Por outro lado, a internet é simplesmente um "cano" que transporta dados, e quem é inteligente são os nossos computadores e smartphones conectados em suas extremidades.
 
-Foi exatamente por causa desse design simples de que "o lado da rede é apenas um cano" que a internet não foi limitada a um administrador específico, permitindo-lhe crescer e se tornar uma "infraestrutura de inovação", onde qualquer pessoa pode lançar livremente novas aplicações (Web, streaming de vídeo, P2P, blockchain, etc.) em todo o mundo, apenas desenvolvendo-as nos dispositivos finais.
+Foi exatamente por causa desse design simples de que "o lado da rede é apenas um cano" que a internet não foi limitada a um administrador específico, permitindo-lhe crescer e se tornar uma "infraestrutura de inovação", onde qualquer pessoa pode lançar livremente novas aplicações (Web, streaming de vídeo, P2P, [blockchain](/pt/p/blockchain-technology-smart-contract-distributed-ledger/), etc.) em todo o mundo, apenas desenvolvendo-as nos dispositivos finais.
 
 ## 6. Conclusão
 

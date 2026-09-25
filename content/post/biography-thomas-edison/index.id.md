@@ -47,7 +47,7 @@ Dia tidak memiliki konsep "kegagalan". Ketika sebuah eksperimen tidak berjalan d
 
 ## Perang Arus dan Dampak pada Anak Cucu
 
-Di balik kesuksesannya yang spektakuler, Edison juga menghadapi kemunduran besar. Ini adalah "Perang Arus" yang diperjuangkan melawan Nikola Tesla dan George Westinghouse. Edison mempromosikan sistem "arus searah" (DC), dengan alasan keamanannya, tetapi pada akhirnya menderita kekalahan dari sistem "arus bolak-balik" (AC), yang lebih unggul untuk transmisi daya jarak jauh.
+Di balik kesuksesannya yang spektakuler, Edison juga menghadapi kemunduran besar. Ini adalah "Perang Arus" yang diperjuangkan melawan [Nikola Tesla](/id/p/biography-nikola-tesla/) dan George Westinghouse. Edison mempromosikan sistem "arus searah" (DC), dengan alasan keamanannya, tetapi pada akhirnya menderita kekalahan dari sistem "arus bolak-balik" (AC), yang lebih unggul untuk transmisi daya jarak jauh.
 
 Namun, kekalahan ini tidak mengurangi reputasinya. Perusahaan-perusahaan yang didirikannya bergabung menjadi General Electric (GE) saat ini, berkembang menjadi salah satu konglomerat terbesar di dunia. Lebih jauh lagi, satu penemuannya telah melahirkan seluruh industri besar, seperti penciptaan industri musik oleh fonograf dan awal mula industri film oleh kamera gambar bergerak (Kinetoskop).
 

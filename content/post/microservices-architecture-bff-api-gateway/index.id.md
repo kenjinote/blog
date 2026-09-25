@@ -69,7 +69,7 @@ Microservices memiliki "cahaya" (manfaat) sebagai berikut:
 
 ## 3. "Bayangan" Microservices: Tantangan Operasional
 
-Namun, microservices bukanlah "peluru perak". Dengan mendistribusikan sistem, muncul "bayangan" berupa kompleksitas yang khas pada sistem terdistribusi.
+Namun, microservices bukanlah "peluru perak". Dengan mendistribusikan sistem, muncul "bayangan" berupa kompleksitas yang khas pada [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/).
 
 ### 3.1. Latensi Jaringan dan Kompleksitas Komunikasi
 Proses yang pada monolitik cukup diselesaikan dengan pemanggilan fungsi di dalam memori, kini berubah menjadi komunikasi melalui jaringan (HTTP/REST, gRPC, dll.). Hal ini menimbulkan **latensi jaringan** dan risiko menurunnya kecepatan respons sistem secara keseluruhan. Selain itu, karena jaringan tidak selalu stabil, kita harus mengimplementasikan kontrol komunikasi yang kompleks seperti timeout, kontrol retry, dan circuit breaker.
@@ -219,7 +219,7 @@ Dengan implementasi ini, klien hanya perlu menjalankan satu query GraphQL bernam
 
 ## 7. Penutup
 
-Arsitektur Microservices adalah pendekatan yang sangat kuat untuk mengembangkan sistem berskala besar menjadi bentuk yang dapat diperluas, namun kita juga harus siap menghadapi tantangan "bayangan" yang unik dari sistem terdistribusi.
+Arsitektur Microservices adalah pendekatan yang sangat kuat untuk mengembangkan sistem berskala besar menjadi bentuk yang dapat diperluas, namun kita juga harus siap menghadapi tantangan "bayangan" yang unik dari [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/).
 
 Sebagai sarana untuk mengatasi tantangan tersebut dan mengoptimalkan komunikasi antara klien dan backend, **API Gateway** dan pola **BFF** menjadi sangat penting. Secara khusus, BFF, yang menyediakan endpoint khusus untuk setiap jenis klien, adalah arsitektur luar biasa yang membebaskan kecepatan evolusi UI dari kendala backend.
 

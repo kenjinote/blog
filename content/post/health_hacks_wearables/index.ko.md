@@ -12,7 +12,7 @@ description: 'Oura Ring 등 스마트 링이나 Apple Watch에서 수집한 HRV,
 
 ## 1. 서론: 소프트웨어 엔지니어링과 바이오해킹의 교차점
 
-현대의 소프트웨어 엔지니어링은 극도의 인지적 부하와 장시간의 좌식 생활(Sedentary Lifestyle)을 동반하는 가혹한 지식 노동입니다. 끊임없이 변화하는 기술 스택을 따라잡고, 복잡한 분산 시스템의 버그를 추적하며, 마감 기한의 압박에 시달립니다. 이를 극복하기 위해서는 단순히 '기합'이나 '근성'으로 버티는 것이 아니라, 시스템을 디버깅하듯 자신의 신체라는 하드웨어를 튜닝하는 접근법, 즉 '바이오해킹(Biohacking)'이 필수적입니다.
+현대의 소프트웨어 엔지니어링은 극도의 인지적 부하와 장시간의 좌식 생활(Sedentary Lifestyle)을 동반하는 가혹한 지식 노동입니다. 끊임없이 변화하는 기술 스택을 따라잡고, 복잡한 [분산 시스템](/ko/p/cap-theorem-distributed-systems-tradeoff/)의 버그를 추적하며, 마감 기한의 압박에 시달립니다. 이를 극복하기 위해서는 단순히 '기합'이나 '근성'으로 버티는 것이 아니라, 시스템을 디버깅하듯 자신의 신체라는 하드웨어를 튜닝하는 접근법, 즉 '바이오해킹(Biohacking)'이 필수적입니다.
 
 과거에는 '오늘은 왠지 컨디션이 좋다/나쁘다'와 같은 주관적인 감각(휴리스틱)에 의존했지만, 현대에는 Oura Ring, Apple Watch, Garmin 등 고성능 웨어러블 기기가 보급되면서 생체 데이터를 24시간 365일 비침습적으로 수집할 수 있게 되었습니다. 본 기사에서는 생체 데이터(HRV, RHR, 수면 아키텍처)와 생산성 데이터(WakaTime 등을 통한 코딩 메트릭스)를 API를 통해 가져와 Python과 Pandas를 사용하여 데이터 과학적 접근으로 상관 분석을 수행하는 방법을 설명합니다. 또한, 일주기 리듬(Circadian Rhythm)의 수리 모델이나 카페인 대사의 반감기에 기반한 최적의 커피 섭취 타이밍 등 과학적 근거에 바탕을 둔 [엔지니어를 위한](https://kenji.blog/ko/p/エンジニア向け[プロンプトエンジニアリング](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)の基本と開発への応用/) 건강 핵을 매우 상세히 파헤쳐 봅니다.
 
@@ -358,7 +358,7 @@ def check_and_ventilate():
 
 ## 13. 결론: 인체라는 시스템의 [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)
 
-자신의 몸을 하나의 복잡한 분산 시스템으로 간주해 보십시오. 웨어러블 기기(Oura Ring)는 모니터링용 메트릭스 익스포터(Prometheus), Python/Pandas 스크립트는 로그 분석 파이프라인(Logstash/Fluentd), 그리고 매일의 컨디션 변화와 퍼포먼스는 대시보드(Grafana/Streamlit)에 표시되는 시스템의 건전성입니다.
+자신의 몸을 하나의 복잡한 [분산 시스템](/ko/p/cap-theorem-distributed-systems-tradeoff/)으로 간주해 보십시오. 웨어러블 기기(Oura Ring)는 모니터링용 메트릭스 익스포터(Prometheus), Python/Pandas 스크립트는 로그 분석 파이프라인(Logstash/Fluentd), 그리고 매일의 컨디션 변화와 퍼포먼스는 대시보드(Grafana/Streamlit)에 표시되는 시스템의 건전성입니다.
 
 '수면 시간을 줄여가며 일하는' 것은 기술 부채(Technical Debt)를 무시하고 기능 추가를 강행하는 것과 같습니다. 단기적으로는 릴리스 일정에 맞출 수 있을지 모르지만, 장기적으로는 반드시 시스템 다운(번아웃이나 심각한 건강 악화, 우울증)을 초래합니다.
 

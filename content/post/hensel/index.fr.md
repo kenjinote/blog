@@ -24,7 +24,7 @@ Dans sa jeunesse, sa famille a déménagé à Berlin, où il a reçu un enseigne
 
 ## 3. Années d'université et l'influence de [Kronecker](https://kenji.blog/fr/p/kronecker/)
 
-[Hensel](https://kenji.blog/fr/p/hensel/) a étudié les mathématiques aux universités de Bonn et de Berlin. À l'époque, l'Université de Berlin était l'un des centres mondiaux de la recherche mathématique, avec des géants tels que **Karl Weierstrass** et **Leopold [Kronecker](https://kenji.blog/fr/p/kronecker/)** qui y enseignaient.
+[Hensel](https://kenji.blog/fr/p/hensel/) a étudié les mathématiques aux universités de Bonn et de Berlin. À l'époque, l'Université de Berlin était l'un des centres mondiaux de la recherche mathématique, avec des géants tels que **[Karl Weierstrass](/fr/p/weierstrass/)** et **Leopold [Kronecker](https://kenji.blog/fr/p/kronecker/)** qui y enseignaient.
 
 Parmi eux, [Kronecker](https://kenji.blog/fr/p/kronecker/) a eu l'influence la plus profonde sur Hensel. Comme le montre sa célèbre citation : « Dieu a fait les nombres entiers, tout le reste est l'œuvre de l'homme », Kronecker croyait fermement que toutes les mathématiques devaient être rigoureusement reconstruites sur la base des nombres entiers. Sous la direction de Kronecker, [Hensel](https://kenji.blog/fr/p/hensel/) s'est profondément consacré à l'algèbre et à la théorie des nombres.
 

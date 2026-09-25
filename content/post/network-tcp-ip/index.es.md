@@ -77,7 +77,7 @@ Esta es la idea de que «los dispositivos como los enrutadores en la ruta de la 
 Las antiguas redes telefónicas, como la de Japón (NTT), eran «redes inteligentes» en las que la centralita de la oficina telefónica central albergaba todas las funciones (facturación, control, procesamiento de errores).
 Por otro lado, Internet es simplemente una «tubería» que transporta datos, y los que son inteligentes son nuestros ordenadores o teléfonos inteligentes conectados a sus extremos.
 
-Precisamente por tener este diseño simple donde «el lado de la red es solo una tubería», Internet no se limitó a administradores específicos, sino que se convirtió en una «infraestructura de innovación» que cualquier persona podía implementar en todo el mundo simplemente creando nuevas aplicaciones (Web, transmisión de video, P2P, blockchain, etc.) en los dispositivos terminales.
+Precisamente por tener este diseño simple donde «el lado de la red es solo una tubería», Internet no se limitó a administradores específicos, sino que se convirtió en una «infraestructura de innovación» que cualquier persona podía implementar en todo el mundo simplemente creando nuevas aplicaciones (Web, transmisión de video, P2P, [blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/), etc.) en los dispositivos terminales.
 
 ## 6. Conclusión
 

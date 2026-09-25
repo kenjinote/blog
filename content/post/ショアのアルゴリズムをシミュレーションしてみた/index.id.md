@@ -22,7 +22,7 @@ Dalam artikel ini, kami akan menjelaskan secara detail dan menyeluruh tentang ba
 
 # 2. Perubahan Drastis dalam Kompleksitas Komputasi: Dari Fungsi Eksponensial ke Waktu Polinomial
 
-Mengapa faktorisasi prima itu sulit? Bahkan jika kita menggunakan "General Number Field Sieve (GNFS)", yang dikenal sebagai algoritma faktorisasi prima terbaik di komputer klasik, kompleksitas komputasinya menjadi sub-eksponensial.
+Mengapa faktorisasi prima itu sulit? Bahkan jika kita menggunakan "[General Number Field Sieve](/id/p/beyond-gnfs-integer-factorization-algorithms/) (GNFS)", yang dikenal sebagai algoritma faktorisasi prima terbaik di komputer klasik, kompleksitas komputasinya menjadi sub-eksponensial.
 
 Kompleksitas waktu yang dibutuhkan untuk memfaktorkan bilangan komposit dengan $N$ digit menggunakan metode klasik adalah sebagai berikut:
 
@@ -49,7 +49,7 @@ graph TD
 
 # 3. Gambaran Keseluruhan Algoritma dan Latar Belakang Matematis
 
-Algoritma Shor sebenarnya tidak melakukan semuanya di komputer kuantum. Ia dibangun atas kerja sama antara pra-pemrosesan dan pasca-pemrosesan oleh komputer klasik, dan bagian inti (algoritma pencarian periode) oleh komputer kuantum.
+Algoritma Shor sebenarnya tidak melakukan semuanya di komputer kuantum. Ia dibangun atas kerja sama antara pra-pemrosesan dan pasca-pemrosesan oleh komputer klasik, dan bagian inti ([algoritma pencarian](/id/p/search-algorithms-linear-binary-hash-table-principles/) periode) oleh komputer kuantum.
 
 Alur keseluruhan algoritma adalah sebagai berikut:
 
@@ -84,7 +84,7 @@ $$ a^r - 1 \equiv 0 \pmod N $$
 Jika $r$ adalah bilangan genap, kita dapat memfaktorkannya menggunakan rumus selisih kuadrat:
 $$ (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod N $$
 
-Ini berarti bahwa $N$ memiliki pembagi persekutuan dengan $(a^{r/2} - 1)$ atau $(a^{r/2} + 1)$ (dengan syarat kondisi $a^{r/2} \not\equiv -1 \pmod N$ terpenuhi). Oleh karena itu, dengan menggunakan [Algoritma Euclidean](https://kenji.blog/p/euclidean-algorithm/) ([Euclide](https://kenji.blog/p/euclid/)an algorithm),
+Ini berarti bahwa $N$ memiliki pembagi persekutuan dengan $(a^{r/2} - 1)$ atau $(a^{r/2} + 1)$ (dengan syarat kondisi $a^{r/2} \not\equiv -1 \pmod N$ terpenuhi). Oleh karena itu, dengan menggunakan [Algoritma Euclidean](https://kenji.blog/id/p/euclidean-algorithm/) ([Euclide](https://kenji.blog/id/p/euclid/)an algorithm),
 
 $$ p = \gcd(a^{r/2} - 1, N) $$
 $$ q = \gcd(a^{r/2} + 1, N) $$
@@ -339,7 +339,7 @@ Diperkirakan untuk mematahkan enkripsi RSA 2048-bit, ribuan qubit logis yang sem
 
 Untuk bersiap menghadapi datangnya "Q-Day (Hari di mana komputer kuantum mematahkan kriptografi)", ahli kriptografi dari seluruh dunia, dipimpin oleh Institut Nasional Standar dan Teknologi (NIST) di Amerika Serikat, sedang merumuskan **Kriptografi Pasca-Kuantum (Post-Quantum [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy, PQC)**.
 
-PQC didasarkan pada masalah matematis baru (seperti masalah kisi (lattice-based), polinomial multivariat, dan berbasis fungsi hash) yang secara matematis dianggap tidak dapat diselesaikan secara efisien bahkan jika menggunakan Algoritma Shor (ataupun Algoritma Grover). Algoritma seperti "CRYSTALS-Kyber" dan "CRYSTALS-Dilithium" telah dipilih sebagai standar, dan penerapannya secara bertahap mulai dilakukan pada iMessage milik Apple dan berbagai protokol komunikasi browser web.
+PQC didasarkan pada masalah matematis baru (seperti masalah kisi (lattice-based), polinomial multivariat, dan berbasis fungsi hash) yang secara matematis dianggap tidak dapat diselesaikan secara efisien bahkan jika menggunakan Algoritma Shor (ataupun [Algoritma Grover](/id/p/grovers-algorithm-quantum-search/)). Algoritma seperti "CRYSTALS-Kyber" dan "CRYSTALS-Dilithium" telah dipilih sebagai standar, dan penerapannya secara bertahap mulai dilakukan pada iMessage milik Apple dan berbagai protokol komunikasi browser web.
 
 Bagi teknisi yang mengelola infrastruktur TI, memasukkan "crypto-agility" (ketangkasan kriptografi: desain di mana metode kriptografi dapat dialihkan dengan cepat) dari enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) atau kurva eliptik yang ada ke PQC ke dalam sistem mereka, akan menjadi misi utama yang sangat penting di masa depan.
 

@@ -15,10 +15,10 @@ tags:
 
 # 1. Introduction : Le changement de paradigme de la programmation fonctionnelle
 
-Dans le développement de logiciels moderne, la **programmation fonctionnelle (Functional Programming, FP)** n'est plus seulement confinée au domaine académique, mais est largement reconnue comme un paradigme pratique.
-Comparée à la programmation impérative ou orientée objet, qui ont été historiquement dominantes, la programmation fonctionnelle adopte une approche fondamentalement différente, consistant à "considérer le calcul comme l'évaluation de fonctions mathématiques et à éviter les changements d'état et les données mutables".
+Dans le développement de logiciels moderne, la **[programmation fonctionnelle](/fr/p/lambda-calculus-functional-programming/) (Functional Programming, FP)** n'est plus seulement confinée au domaine académique, mais est largement reconnue comme un paradigme pratique.
+Comparée à la programmation impérative ou orientée objet, qui ont été historiquement dominantes, la [programmation fonctionnelle](/fr/p/lambda-calculus-functional-programming/) adopte une approche fondamentalement différente, consistant à "considérer le calcul comme l'évaluation de fonctions mathématiques et à éviter les changements d'état et les données mutables".
 
-Cet article explique de manière systématique et extrêmement détaillée les concepts de base de la programmation fonctionnelle, tels que les fonctions pures et l'immuabilité, jusqu'au concept avancé de "monade" sur lequel de nombreux apprenants butent.
+Cet article explique de manière systématique et extrêmement détaillée les concepts de base de la [programmation fonctionnelle](/fr/p/lambda-calculus-functional-programming/), tels que les fonctions pures et l'immuabilité, jusqu'au concept avancé de "monade" sur lequel de nombreux apprenants butent.
 
 ## 1.1 Classification des paradigmes de programmation
 
@@ -34,7 +34,7 @@ flowchart TD
 
 ## 1.2 Calcul lambda : Les fondations mathématiques
 
-Les fondations théoriques de la programmation fonctionnelle reposent sur le **calcul lambda (Lambda Calculus)**, inventé par Alonzo Church et ses collègues dans les années 1930.
+Les fondations théoriques de la [programmation fonctionnelle](/fr/p/lambda-calculus-functional-programming/) reposent sur le **calcul lambda ([Lambda Calculus](/fr/p/lambda-calculus-functional-programming/))**, inventé par Alonzo Church et ses collègues dans les années 1930.
 Ce modèle de calcul, basé sur l'application de fonctions et la liaison de variables, a une capacité de calcul équivalente à celle d'une machine de Turing.
 
 Mathématiquement, une expression lambda est définie comme suit :
@@ -47,7 +47,7 @@ Ici, $x$ représente une variable, $\lambda x. E$ représente une abstraction (d
 
 # 2. Fonctions pures (Pure Functions)
 
-Le concept le plus important, au cœur de la programmation fonctionnelle, est celui de **fonction pure**.
+Le concept le plus important, au cœur de la [programmation fonctionnelle](/fr/p/lambda-calculus-functional-programming/), est celui de **fonction pure**.
 
 ## 2.1 Définition d'une fonction pure
 
@@ -90,7 +90,7 @@ L'immuabilité est la propriété selon laquelle une structure de données ou un
 
 ## 3.1 Éviter les changements d'état
 
-Dans la programmation impérative, le calcul progresse en mettant à jour la valeur des variables, mais dans la programmation fonctionnelle, au lieu de modifier les données existantes, on adopte l'approche de **créer et renvoyer de nouvelles données**.
+Dans la programmation impérative, le calcul progresse en mettant à jour la valeur des variables, mais dans la [programmation fonctionnelle](/fr/p/lambda-calculus-functional-programming/), au lieu de modifier les données existantes, on adopte l'approche de **créer et renvoyer de nouvelles données**.
 
 ```python
 # Approche impérative (modification destructive)
@@ -118,7 +118,7 @@ Ainsi, la nouvelle liste réutilise les nœuds existants.
 
 # 4. Le concept de monade (Monads)
 
-Le plus grand obstacle dans l'apprentissage de la programmation fonctionnelle est souvent considéré comme étant la **monade (Monad)**.
+Le plus grand obstacle dans l'apprentissage de la [programmation fonctionnelle](/fr/p/lambda-calculus-functional-programming/) est souvent considéré comme étant la **monade (Monad)**.
 
 ## 4.1 Qu'est-ce qu'une monade ?
 
@@ -156,11 +156,11 @@ Pour qu'elle se comporte comme une monade, elle doit satisfaire les trois règle
 
 # 5. Avantages de la programmation fonctionnelle et perspectives futures
 
-Grâce à son style déclaratif et à ses solides fondations mathématiques, la programmation fonctionnelle permet de construire des logiciels avec moins de bugs, plus faciles à tester et hautement évolutifs.
+Grâce à son style déclaratif et à ses solides fondations mathématiques, la [programmation fonctionnelle](/fr/p/lambda-calculus-functional-programming/) permet de construire des logiciels avec moins de bugs, plus faciles à tester et hautement évolutifs.
 
 -   **Modularité** : En combinant des fonctions pures, on peut créer des composants réutilisables.
 -   **Facilité de débogage** : Le besoin de suivre les changements d'état est réduit.
 
 ## Conclusion
 
-Les concepts de la programmation fonctionnelle tels que les fonctions pures, l'immuabilité et les monades peuvent sembler difficiles au début. Cependant, en comprenant et en appliquant ces concepts, il devient possible d'écrire un code plus robuste et plus facile à maintenir. Dans le développement des systèmes complexes d'aujourd'hui, l'importance de la programmation fonctionnelle ne fera que croître à l'avenir.
+Les concepts de la [programmation fonctionnelle](/fr/p/lambda-calculus-functional-programming/) tels que les fonctions pures, l'immuabilité et les monades peuvent sembler difficiles au début. Cependant, en comprenant et en appliquant ces concepts, il devient possible d'écrire un code plus robuste et plus facile à maintenir. Dans le développement des systèmes complexes d'aujourd'hui, l'importance de la [programmation fonctionnelle](/fr/p/lambda-calculus-functional-programming/) ne fera que croître à l'avenir.

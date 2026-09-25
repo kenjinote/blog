@@ -315,7 +315,7 @@ Il y a des centaines de thèmes (config) disponibles. Vous pouvez également cr�
 
 # 7. Évolution du prompt 2 : Architecture WSL2 et fusion avec Starship
 
-WSL2 (Windows Subsystem for Linux 2), qui permet d'exécuter un véritable noyau Linux sur Windows, est indispensable pour le développement Web moderne et le développement cloud natif. "**Starship**" est la solution optimale pour personnaliser le prompt dans le shell (Bash ou Zsh) au sein de WSL.
+WSL2 ([Windows Subsystem for Linux](/fr/p/wsl2-ultimate-development-setup-guide/) 2), qui permet d'exécuter un véritable noyau Linux sur Windows, est indispensable pour le développement Web moderne et le développement cloud natif. "**Starship**" est la solution optimale pour personnaliser le prompt dans le shell (Bash ou Zsh) au sein de WSL.
 
 Starship est un prompt multi-shell extrêmement rapide, écrit en langage [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) et hautement personnalisable. Son principal avantage est que vous pouvez reproduire le même prompt, quel que soit le shell (Bash, Zsh, Fish, etc.), avec un seul fichier de configuration (TOML).
 
@@ -411,7 +411,7 @@ La signification de chaque variable et les temps d'exécution typiques sont les 
 - $ T_{hw\_input} $ : Le délai matériel entre le moment où l'interrupteur mécanique du clavier s'active, est sondé via le contrôleur USB, et un signal d'interruption est envoyé (environ 1 à 5 ms).
 - $ T_{os} $ : Le délai de traitement de la file d'attente des messages par la couche de pilotes HID (Human Interface Device) du système d'exploitation (environ 1 à 2 ms).
 - $ T_{pty} $ : Le délai dû à la mise en mémoire tampon et à la conversion d'encodage des caractères (par exemple de UTF-8 à UTF-16) par ConPTY (pseudo-terminal) (environ 2 à 10 ms).
-- $ T_{app} $ : Le temps de traitement pour l'interprétation des commandes du côté du shell (PowerShell/Bash) et la détermination de la sortie d'écran. Cela inclut également le temps de traitement de Oh My Posh ou Starship pour l'acquisition du statut Git, par exemple (environ 10 à 50 ms).
+- $ T_{app} $ : Le temps de traitement pour l'interprétation des commandes du côté du shell ([PowerShell/Bash](/fr/p/terminal-efficiency-powershell-bash-shortcuts/)) et la détermination de la sortie d'écran. Cela inclut également le temps de traitement de Oh My Posh ou Starship pour l'acquisition du statut Git, par exemple (environ 10 à 50 ms).
 - $ T_{render} $ : Le délai de rendu pris par Windows Terminal (DirectWrite/DirectX) pour rastériser les glyphes du texte sous forme de textures, les transférer dans la mémoire du GPU et faire basculer (flip) la chaîne d'échange (swap chain) (environ 2 à 8 ms).
 - $ T_{display} $ : Le délai d'affichage à partir du tampon de trame (frame buffer) du GPU jusqu'à l'envoi du signal au moniteur et la modification de l'émission de lumière par les molécules de cristaux liquides (par exemple, temps de réponse GtG. Environ 5 à 20 ms).
 
@@ -427,7 +427,7 @@ Par conséquent, même lorsque des journaux massifs défilent sur la sortie stan
 
 # 9. Dépannage avancé et méthodes de débogage
 
-Lorsque vous poussez la personnalisation de Windows Terminal à son maximum, vous pouvez rencontrer des problèmes inattendus tels que des erreurs de syntaxe dans le fichier de configuration ou des bugs de rendu des polices. Nous présenterons ici des méthodes de dépannage avancées pour les ingénieurs.
+Lorsque vous poussez la personnalisation de Windows Terminal à son maximum, vous pouvez rencontrer des problèmes inattendus tels que des erreurs de syntaxe dans le fichier de configuration ou des bugs de rendu des polices. Nous présenterons ici des méthodes de dépannage avancées [pour les ingénieurs](/fr/p/prompt-engineering-for-engineers/).
 
 ## 9.1 Validation JSON Schema de settings.json
 La structure de `settings.json` est strictement définie. Il est recommandé de vérifier la syntaxe en temps réel avec JSON Schema dans un éditeur tel que VS Code. Lorsque vous ouvrez `settings.json` avec VS Code, le schéma de Windows Terminal est appliqué par défaut, et les noms de propriétés non valides ou les erreurs de type de valeur (par exemple, spécifier une chaîne de caractères à un endroit qui attend une valeur numérique) sont immédiatement signalés par un soulignement ondulé.

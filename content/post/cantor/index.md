@@ -24,7 +24,7 @@ tags:
 
 [ゲオルク・カントール](https://kenji.blog/p/cantor/)は1845年、ロシアのサンクトペテルブルクで生まれました。父親はデンマーク出身の裕福な商人で、母親はロシア出身の音楽家でした。幼い頃から数学に対して非凡な才能を示した彼は、やがてドイツに移住し、ベルリン大学で数学を学びます。
 
-ベルリン大学では、当時の数学界の重鎮であった **[カール・ワイエルシュトラス](https://kenji.blog/p/weierstrass/)** （Karl Weierstrass）や **レオポルト・クロネッカー** （Leopold Kronecker）の指導を受けました。特に[クロネッカー](https://kenji.blog/p/kronecker/)は、後にカントールの最大の論敵となります。
+ベルリン大学では、当時の数学界の重鎮であった **[カール・ワイエルシュトラス](https://kenji.blog/p/weierstrass/)** （Karl Weierstrass）や **[レオポルト・クロネッカー](/p/kronecker/)** （Leopold Kronecker）の指導を受けました。特に[クロネッカー](https://kenji.blog/p/kronecker/)は、後にカントールの最大の論敵となります。
 
 ### 無限への探求と[クロネッカー](https://kenji.blog/p/kronecker/)との対立
 
@@ -111,9 +111,9 @@ graph TD
 
 ## 連続体仮説
 
-自然数の濃度 $\aleph_0$ と実数の濃度 $\mathfrak{c}$ の間には、中間の濃度が存在するのでしょうか？ カントールは「そのような中間の濃度は存在しない」と予想しました。これが **連続体仮説** （[Continuum Hypothesis](https://kenji.blog/p/continuum-hypothesis/), CH）です。
+自然数の濃度 $\aleph_0$ と実数の濃度 $\mathfrak{c}$ の間には、中間の濃度が存在するのでしょうか？ カントールは「そのような中間の濃度は存在しない」と予想しました。これが **[連続体仮説](/p/continuum-hypothesis/)** （[Continuum Hypothesis](https://kenji.blog/p/continuum-hypothesis/), CH）です。
 
-カントールはこの仮説の証明に晩年の多くの時間を費やしましたが、ついに解決することはできませんでした。後に、[クルト・ゲーデル](https://kenji.blog/p/godel/)とポール・コーエンの研究により、連続体仮説は通常の集合論の公理系（ZFC公理系）からは「証明も反証もできない」独立した命題であることが判明し、数学界に再び大きな衝撃を与えました。
+カントールはこの仮説の証明に晩年の多くの時間を費やしましたが、ついに解決することはできませんでした。後に、[クルト・ゲーデル](https://kenji.blog/p/godel/)とポール・コーエンの研究により、[連続体仮説](/p/continuum-hypothesis/)は通常の集合論の公理系（ZFC公理系）からは「証明も反証もできない」独立した命題であることが判明し、数学界に再び大きな衝撃を与えました。
 
 ## 結び
 

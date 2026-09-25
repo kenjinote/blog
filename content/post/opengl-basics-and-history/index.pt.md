@@ -39,7 +39,7 @@ graph TD
     C -- "Cálculo de Cor do Pixel" --> D["Framebuffer"]
 ```
 
-Embora essa abordagem fosse acessível para iniciantes, era extremamente difícil implementar sombreamentos personalizados (como cel shading / toon rendering) ou efeitos visuais avançados. Para suprir essa demanda, o OpenGL 2.0 (2004) introduziu o "GLSL (OpenGL Shading Language)", evoluindo para um "pipeline programável" no qual os desenvolvedores podiam programar diretamente as operações da GPU. Hoje, as funções fixas foram descontinuadas ou completamente removidas, e a renderização flexível por meio de shaders tornou-se a norma absoluta.
+Embora essa abordagem fosse acessível [para iniciantes](/pt/p/produtos-de-couro%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/), era extremamente difícil implementar sombreamentos personalizados (como cel shading / toon rendering) ou efeitos visuais avançados. Para suprir essa demanda, o OpenGL 2.0 (2004) introduziu o "GLSL (OpenGL Shading Language)", evoluindo para um "pipeline programável" no qual os desenvolvedores podiam programar diretamente as operações da GPU. Hoje, as funções fixas foram descontinuadas ou completamente removidas, e a renderização flexível por meio de shaders tornou-se a norma absoluta.
 
 # 3. O Pipeline do OpenGL Moderno
 

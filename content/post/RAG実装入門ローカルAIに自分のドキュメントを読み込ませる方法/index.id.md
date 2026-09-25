@@ -78,7 +78,7 @@ Dalam ruang multidimensi (ruang laten) ini, telah dipelajari bahwa kalimat denga
 
 ## Latar Belakang Matematis Perhitungan Kemiripan: Kesamaan Kosinus
 
-Ketika database vektor mencari dokumen yang relevan, metrik jarak yang paling umum digunakan adalah **Kesamaan Kosinus (Cosine Similarity)**. Berbeda dengan jarak [Euclide](https://kenji.blog/p/euclid/)an (jarak spasial absolut), Kesamaan Kosinus berfokus pada "sudut antara dua vektor". Karena tidak terlalu terpengaruh oleh panjang kalimat (norma vektor), metrik ini sangat cocok untuk menghitung kemiripan teks.
+Ketika database vektor mencari dokumen yang relevan, metrik jarak yang paling umum digunakan adalah **Kesamaan Kosinus (Cosine Similarity)**. Berbeda dengan jarak [Euclide](https://kenji.blog/id/p/euclid/)an (jarak spasial absolut), Kesamaan Kosinus berfokus pada "sudut antara dua vektor". Karena tidak terlalu terpengaruh oleh panjang kalimat (norma vektor), metrik ini sangat cocok untuk menghitung kemiripan teks.
 
 Dinyatakan secara matematis, Kesamaan Kosinus dari vektor $\mathbf{A}$ dan $\mathbf{B}$ adalah sebagai berikut.
 
@@ -276,7 +276,7 @@ Selain itu, dalam teknik yang disebut "Parent Document Retriever (Pencarian Doku
 Saat membangun dan mengoperasikan RAG di lingkungan lokal, terdapat beberapa hambatan tertentu.
 
 - **Kehabisan VRAM (Memori Video)**:
-  Untuk menjalankan LLM lokal pada kecepatan praktis (puluhan token per detik), model tersebut harus dimuat ke dalam VRAM GPU. Menjalankan model kelas 8B dalam fp16 (titik kambang 16-bit) memerlukan sekitar 16GB VRAM, tetapi dengan menggunakan teknologi **Kuantisasi (Quantization)** (teknologi kompresi menjadi 4-bit atau 8-bit, seperti format GGUF atau AWQ), kecepatan operasi yang memadai dapat dicapai bahkan pada 8GB VRAM (seperti pada PC gaming biasa). Llama.cpp dan Ollama mendukung format kuantisasi ini secara standar.
+  Untuk menjalankan LLM lokal pada kecepatan praktis (puluhan token per detik), model tersebut harus dimuat ke dalam VRAM GPU. Menjalankan model kelas 8B dalam fp16 (titik kambang 16-bit) memerlukan sekitar 16GB VRAM, tetapi dengan menggunakan teknologi **Kuantisasi (Quantization)** (teknologi kompresi menjadi 4-bit atau 8-bit, seperti format [GGUF](/id/p/llama-cpp-quantization-gguf/) atau AWQ), kecepatan operasi yang memadai dapat dicapai bahkan pada 8GB VRAM (seperti pada PC gaming biasa). Llama.cpp dan Ollama mendukung format kuantisasi ini secara standar.
 - **Batasan Jendela Konteks**:
   Jika jumlah konteks yang diperoleh melalui pencarian terlalu banyak, dapat melampaui batas input LLM (batas token) atau menyebabkan model melupakan bagian tengah dari informasi tersebut (fenomena Lost in the middle). Menyesuaikan jumlah chunk yang diekstrak dan menyeleksinya secara ketat dengan teknik pemeringkatan ulang (re-ranking) yang disebutkan sebelumnya adalah suatu keharusan.
 - **Manajemen Kesegaran Data**:

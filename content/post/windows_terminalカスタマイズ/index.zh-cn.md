@@ -315,7 +315,7 @@ Import-Module -Name Terminal-Icons
 
 # 7. 提示符进化论 2：WSL2 架构与 Starship 的融合
 
-能在 Windows 上运行真正 Linux 内核的 WSL2（Windows Subsystem for Linux 2），对于现代 Web 开发和云原生开发是不可或缺的。要定制 WSL 内的 Shell（Bash 或 Zsh）提示符，“ **Starship** ”无疑是最佳选择。
+能在 Windows 上运行真正 Linux 内核的 [WSL2](/zh-cn/p/wsl2-ultimate-development-setup-guide/)（[Windows Subsystem for Linux](/zh-cn/p/wsl2-ultimate-development-setup-guide/) 2），对于现代 Web 开发和云原生开发是不可或缺的。要定制 WSL 内的 Shell（Bash 或 Zsh）提示符，“ **Starship** ”无疑是最佳选择。
 
 Starship 是用 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 语言编写的，极快且定制性极强的跨 Shell 提示符。它最大的优势在于只需编写一个配置文件（TOML），就能在 Bash、Zsh、Fish 等任何 Shell 中重现完全相同的提示符。
 
@@ -411,7 +411,7 @@ $$
 - $ T_{hw\_input} $：键盘机械轴触发后，通过 USB 控制器轮询并发送中断信号的硬件延迟（约 1〜5 ms）。
 - $ T_{os} $：操作系统 HID（Human Interface Device）驱动层的消息队列处理延迟（约 1〜2 ms）。
 - $ T_{pty} $：ConPTY（伪终端）带来的缓冲与字符编码（如 UTF-8 到 UTF-16）转换延迟（约 2〜10 ms）。
-- $ T_{app} $：Shell（PowerShell/Bash）端的命令解析以及决定画面输出的处理时间。Oh My Posh 或 Starship 获取 Git 状态等的处理时间也包含在内（约 10〜50 ms）。
+- $ T_{app} $：Shell（[PowerShell/Bash](/zh-cn/p/terminal-efficiency-powershell-bash-shortcuts/)）端的命令解析以及决定画面输出的处理时间。Oh My Posh 或 Starship 获取 Git 状态等的处理时间也包含在内（约 10〜50 ms）。
 - $ T_{render} $：Windows Terminal（DirectWrite/DirectX）将文本字形光栅化为纹理，并传输至 GPU 内存、翻转交换链的渲染延迟（约 2〜8 ms）。
 - $ T_{display} $：从 GPU 帧缓冲区输出信号到显示器，直到液晶分子响应使物理发光状态发生改变的显示器延迟（如 GtG 响应时间。约 5〜20 ms）。
 

@@ -139,7 +139,7 @@ L'utilisation du chiffrement homomorphe permet d'obtenir les propriétés suivan
 $$ E(m_1 + m_2) = E(m_1) \oplus E(m_2) $$
 $$ E(m_1 \times m_2) = E(m_1) \otimes E(m_2) $$
 
-Le chiffrement homomorphe se divise en « chiffrement partiellement homomorphe (Partially Homomorphic Encryption : PHE) », qui ne permet que l'addition ou la multiplication, et en « chiffrement totalement homomorphe (Fully Homomorphic Encryption : FHE) », qui autorise à la fois l'addition et la multiplication un nombre infini de fois. La construction du premier schéma FHE basé sur la cryptographie sur les réseaux euclidiens (Lattice-based cryptography) par Craig Gentry en 2009 a marqué une avancée majeure en cryptographie.
+Le chiffrement homomorphe se divise en « chiffrement partiellement homomorphe (Partially Homomorphic Encryption : PHE) », qui ne permet que l'addition ou la multiplication, et en « chiffrement totalement homomorphe (Fully Homomorphic Encryption : [FHE](/fr/p/fully-homomorphic-encryption-fhe-explained/)) », qui autorise à la fois l'addition et la multiplication un nombre infini de fois. La construction du premier schéma [FHE](/fr/p/fully-homomorphic-encryption-fhe-explained/) basé sur la cryptographie sur les réseaux euclidiens ([Lattice-based cryptography](/fr/p/lattice-based-cryptography-math-intuition/)) par Craig Gentry en 2009 a marqué une avancée majeure en cryptographie.
 
 Actuellement, bien que des défis subsistent en matière de coûts de calcul et d'augmentation de la taille des textes chiffrés (surcharge), on attend beaucoup de ses applications pour l'analyse sécurisée de données médicales sur le cloud ou le calcul sécurisé multiparti entre institutions financières.
 

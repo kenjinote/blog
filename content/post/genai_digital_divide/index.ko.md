@@ -14,13 +14,13 @@ tags: ["Generative AI", "Digital Divide", "LLM", "Productivity"]
 
 인터넷의 보급 이후, 우리는 '디지털 격차(디지털 디바이드, 정보 격차)'라는 단어를 여러 번 들어왔습니다. 초기의 디지털 격차는 주로 '물리적인 접근 권한'에 관한 것이었습니다. 즉, 컴퓨터나 고속 인터넷 회선을 가지고 있는지 여부가 정보에 대한 접근과 경제적 기회를 좌우한다는 단순한 구도입니다. 그 후 스마트폰과 브로드밴드 회선이 보편화됨에 따라, 격차의 초점은 'IT 리터러시(정보 활용 능력)'로 이동했습니다. 검색 엔진을 사용하여 적절하게 정보를 찾아낼 수 있는지, 소프트웨어를 능숙하게 다룰 수 있는지와 같은 소프트웨어적, 인지적인 측면입니다.
 
-하지만 2020년대에 돌연히 일어난 생성형 AI(Generative AI)와 대규모 언어 모델([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/): [Large Language Models](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 진화는 이 디지털 격차의 개념을 근본부터 뒤엎고 있습니다. 지금 우리가 직면하고 있는 것은 단순한 '정보에 대한 접근 격차'나 '소프트웨어 조작 기술의 격차'가 아닙니다. 그것은 'AI를 오케스트레이션(지휘 및 통합)하는 능력의 격차'이며, 개인의 생산성을 지수함수적으로 증폭시킬 것인가, 아니면 AI의 진화에 뒤처져 상대적 가치를 잃을 것인가 하는 매우 심각하고 비가역적인 '제3차 디지털 격차'인 것입니다.
+하지만 2020년대에 돌연히 일어난 생성형 AI(Generative AI)와 [대규모 언어 모델](/ko/p/large-language-models-llm-transformer-prompt-engineering/)([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/): [Large Language Models](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 진화는 이 디지털 격차의 개념을 근본부터 뒤엎고 있습니다. 지금 우리가 직면하고 있는 것은 단순한 '정보에 대한 접근 격차'나 '소프트웨어 조작 기술의 격차'가 아닙니다. 그것은 'AI를 오케스트레이션(지휘 및 통합)하는 능력의 격차'이며, 개인의 생산성을 지수함수적으로 증폭시킬 것인가, 아니면 AI의 진화에 뒤처져 상대적 가치를 잃을 것인가 하는 매우 심각하고 비가역적인 '제3차 디지털 격차'인 것입니다.
 
 본고에서는 생성형 AI가 가져오는 이 새로운 디지털 격차의 정체를 생산성의 수리 모델, 하드웨어의 아키텍처와 비용, 그리고 인간의 인지적 측면이라는 세 가지 레이어에서 매우 상세하게 밝혀낼 것입니다.
 
 ## 2. "접근"에서 "오케스트레이션"으로: 제3차 디지털 격차의 도래
 
-과거의 소프트웨어 도구는 본질적으로 '수동적인 도구'였습니다. 사용자의 명시적인 입력에 대해 결정론적인 결과를 반환하는 것이 기존 소프트웨어의 한계였습니다(예: 스프레드시트 소프트웨어에서 수식을 입력하여 계산 결과를 얻는 것). 그러나 현재의 생성형 AI, 특히 [Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 아키텍처를 기반으로 하는 LLM(GPT-4, Claude 3.5, Llama 3 등)은 '능동적인 지능의 파편'으로 기능합니다.
+과거의 소프트웨어 도구는 본질적으로 '수동적인 도구'였습니다. 사용자의 명시적인 입력에 대해 결정론적인 결과를 반환하는 것이 기존 소프트웨어의 한계였습니다(예: 스프레드시트 소프트웨어에서 수식을 입력하여 계산 결과를 얻는 것). 그러나 현재의 생성형 AI, 특히 [Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 아키텍처를 기반으로 하는 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)(GPT-4, Claude 3.5, Llama 3 등)은 '능동적인 지능의 파편'으로 기능합니다.
 
 이 패러다임 전환으로 인해 인간에게 요구되는 스킬 세트는 '도구를 조작하는 능력'에서 '여러 AI 에이전트나 도구를 결합하여 자율적인 워크플로우를 설계하고 지휘하는 능력(AI Orchestration)'으로 극적으로 변화했습니다. 이를 'AI 오케스트레이션 리터러시'라고 부를 수 있습니다.
 
@@ -82,7 +82,7 @@ xychart-beta
 
 제3차 디지털 격차는 소프트웨어 스킬뿐만 아니라 최첨단 AI 모델을 가동하기 위한 '컴퓨팅(계산 자원)에 대한 접근'이라는 새로운 하드웨어 격차도 만들어내고 있습니다.
 
-대규모 언어 모델을 이용하려면 주로 2가지 접근 방식이 있습니다. '클라우드 API를 이용하는 것'과 '로컬에서 모델을 추론(Inference)하는 것'입니다. 둘 다 일장일단이 있으며, 이것이 새로운 경제적·물리적인 장벽이 되고 있습니다.
+[대규모 언어 모델](/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 이용하려면 주로 2가지 접근 방식이 있습니다. '클라우드 API를 이용하는 것'과 '로컬에서 모델을 추론(Inference)하는 것'입니다. 둘 다 일장일단이 있으며, 이것이 새로운 경제적·물리적인 장벽이 되고 있습니다.
 
 ### 클라우드 API의 한계와 유지 비용
 OpenAI나 Anthropic, Google이 제공하는 최첨단 프론티어 모델(GPT-4o, Claude 3.5 Sonnet 등)은 API를 통해 접근하는 것이 일반적입니다. 하지만 고도화된 자율형 에이전트(Agentic [Workflow](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/))를 구축하고 하루에 수만 번의 API 호출을 발생시키면 비용은 폭발적으로 증가하게 됩니다.
@@ -99,13 +99,13 @@ $$
 ### 로컬 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)과 VRAM의 장벽
 클라우드 비용 회피와 데이터 프라이버시 관점에서 Meta의 Llama 3나 Mistral과 같은 오픈 웨이트 모델을 로컬에서 구동하려는 수요가 높아지고 있습니다. 하지만 여기서 'VRAM(Video RAM)의 장벽'이라는 물리적인 격차가 가로막습니다.
 
-LLM의 추론 속도는 GPU의 연산 성능(FLOPS)보다 메모리 대역폭(Memory Bandwidth)에 강하게 의존합니다(Memory-bound 한 특성). 모델의 매개변수 수를 $P$, 정밀도를 16bit(2바이트)라고 했을 때, 모델을 메모리에 로드하는 것만으로도 최소 $2P$ 바이트의 VRAM이 필요합니다. 예를 들어 700억(70B) 매개변수의 모델은 140GB 이상의 VRAM을 요구합니다.
+[LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 추론 속도는 GPU의 연산 성능(FLOPS)보다 메모리 대역폭(Memory Bandwidth)에 강하게 의존합니다(Memory-bound 한 특성). 모델의 매개변수 수를 $P$, 정밀도를 16bit(2바이트)라고 했을 때, 모델을 메모리에 로드하는 것만으로도 최소 $2P$ 바이트의 VRAM이 필요합니다. 예를 들어 700억(70B) 매개변수의 모델은 140GB 이상의 VRAM을 요구합니다.
 
 $$
 VRAM_{required} \approx \left( \frac{P \times bits\_per\_weight}{8} \right) + Context\_Memory
 $$
 
-일반 소비자가 구매할 수 있는 하이엔드 GPU(NVIDIA RTX 4090)에서도 VRAM은 24GB에 머물러 있어, 70B 수준의 모델을 그대로 구동하는 것은 불가능합니다. 여기서 AWQ나 GGUF와 같은 '양자화 기술(Quantization)'이 등장하여 가중치를 4bit나 8bit로 압축해 타협점을 찾는 기술적 분투가 이루어지고 있지만, 양자화로 인한 성능 저하(Perplexity의 악화)는 피할 수 없습니다.
+일반 소비자가 구매할 수 있는 하이엔드 GPU([NVIDIA](/ko/p/history-of-nvidia/) RTX 4090)에서도 VRAM은 24GB에 머물러 있어, 70B 수준의 모델을 그대로 구동하는 것은 불가능합니다. 여기서 AWQ나 [GGUF](/ko/p/llama-cpp-quantization-gguf/)와 같은 '양자화 기술(Quantization)'이 등장하여 가중치를 4bit나 8bit로 압축해 타협점을 찾는 기술적 분투가 이루어지고 있지만, 양자화로 인한 성능 저하(Perplexity의 악화)는 피할 수 없습니다.
 
 또한, 최근에는 NPU(Neural Processing Unit)를 탑재한 'AI PC'가 등장하고 있지만, 현재 NPU의 TOPS(Tera Operations Per Second)는 경량의 소규모 모델(SLM: Small Language Models)을 구동하는 것이 한계이며, 진정으로 고도화된 추론을 로컬에서 수행하려면 수백만 엔 규모의 멀티 GPU 환경을 구축할 수 있는 자본력이 필요합니다. 이것이 AI에 있어 '자본 집약적인 디지털 격차'의 정체입니다.
 

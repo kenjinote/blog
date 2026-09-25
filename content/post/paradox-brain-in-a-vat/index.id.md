@@ -18,7 +18,7 @@ Pertanyaan ini merupakan misteri ultimat yang tak henti-hentinya memikat daya pi
 
 ## Bab 1: Kejutan dari Eksperimen Pikiran "Otak di dalam Tong"
 
-"Otak di dalam Tong (Brain in a vat)" adalah eksperimen pikiran yang diusulkan oleh filsuf Hilary Putnam pada tahun 1981. Namun, pertanyaan mendasar mengenai "sejauh mana pemahaman kita bisa dipercaya" dapat ditelusuri kembali ke argumen abad ke-17 dari René Descartes mengenai "Roh Jahat (Tuhan penipu)".
+"Otak di dalam Tong (Brain in a vat)" adalah eksperimen pikiran yang diusulkan oleh filsuf Hilary Putnam pada tahun 1981. Namun, pertanyaan mendasar mengenai "sejauh mana pemahaman kita bisa dipercaya" dapat ditelusuri kembali ke argumen abad ke-17 dari [René Descartes](/id/p/descartes/) mengenai "Roh Jahat (Tuhan penipu)".
 
 ### 1-1. Apa Itu Otak di dalam Tong?
 

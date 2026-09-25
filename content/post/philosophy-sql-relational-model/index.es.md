@@ -22,16 +22,16 @@ En este artículo, volveremos a los orígenes del "modelo relacional" propuesto 
 
 Para comprender el verdadero valor del modelo relacional, debemos saber "qué resolvió". En la década de 1960, los modelos de bases de datos dominantes se denominaban "modelos jerárquicos" y "modelos de red" (los ejemplos representativos incluyen IMS de IBM y sistemas de bases de datos conformes a CODASYL).
 
-Estos sistemas se denominaban **"navegacionales" (navigational)**. Las relaciones entre datos estaban codificadas mediante punteros físicos (referencias a direcciones de memoria). Para recuperar los datos, los propios programadores debían ser conscientes de su estructura física y escribir código procedimental que "siguiera los punteros y se moviera del registro padre al registro hijo".
+Estos sistemas se denominaban **"navegacionales" (navigational)**. Las relaciones entre datos estaban codificadas mediante [punteros](/es/p/c-language-pointers-memory-management-stack-heap/) físicos (referencias a direcciones de memoria). Para recuperar los datos, los propios programadores debían ser conscientes de su estructura física y escribir código procedimental que "siguiera los [punteros](/es/p/c-language-pointers-memory-management-stack-heap/) y se moviera del registro padre al registro hijo".
 
 ### Problemas fatales de las bases de datos navegacionales
 
 1. **Falta de independencia de los datos (Lack of Data Independence)**
-   La estructura de datos física (presencia de índices, cómo se conectaban los punteros, etc.) estaba estrechamente acoplada con el código de la aplicación. Por lo tanto, si la estructura de la base de datos se modificaba en lo más mínimo, era necesario reescribir todo el código de la aplicación que dependía de ella.
+   La estructura de datos física (presencia de índices, cómo se conectaban los [punteros](/es/p/c-language-pointers-memory-management-stack-heap/), etc.) estaba estrechamente acoplada con el código de la aplicación. Por lo tanto, si la estructura de la base de datos se modificaba en lo más mínimo, era necesario reescribir todo el código de la aplicación que dependía de ella.
 2. **Complejidad de las consultas y dependencia de personas específicas**
    Cuando existían múltiples rutas (rutas de acceso) para recuperar un conjunto de datos específico, el programador debía determinar cuál era la más eficiente y escribir el código en consecuencia. Esto requería un alto grado de habilidad artesanal.
 3. **Dificultad de consultas ad hoc**
-   Realizar búsquedas bajo condiciones no previstas (por ejemplo, "listar empleados que pertenecen a cierto departamento y cuyo salario supera cierta cantidad") era poco realista o requería un costo inmenso debido a la estructura de punteros.
+   Realizar búsquedas bajo condiciones no previstas (por ejemplo, "listar empleados que pertenecen a cierto departamento y cuyo salario supera cierta cantidad") era poco realista o requería un costo inmenso debido a la estructura de [punteros](/es/p/c-language-pointers-memory-management-stack-heap/).
 
 Los datos estaban atrapados en el "pantano" de las restricciones de hardware y representaciones físicas.
 

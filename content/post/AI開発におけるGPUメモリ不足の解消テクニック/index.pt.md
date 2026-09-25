@@ -14,7 +14,7 @@ description: 'A falta de VRAM (memória da GPU) é a maior barreira no treinamen
 
 Nos últimos anos, tecnologias de IA generativa, como Modelos de Linguagem de Grande Escala ([LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/)) e Modelos de Difusão (Diffusion Models), têm alcançado um rápido desenvolvimento. No entanto, ao treinar (fine-tuning) ou executar inferência (Inference) desses modelos de IA de ponta em ambientes locais, muitos desenvolvedores e pesquisadores enfrentam uma barreira extremamente física: a **"falta de memória da GPU (VRAM)"**.
 
-Mesmo em GPUs de ponta para consumidores, como a NVIDIA GeForce RTX 4090, a VRAM é de no máximo 24 GB, o que torna completamente impossível carregar um modelo gigante como o Llama 3 70B em sua forma original. GPUs voltadas para data centers, como H100 (80GB) e B200 (192GB), são extremamente caras e não são algo que indivíduos ou pequenas equipes possam acessar facilmente. Se não conseguirmos superar essa "Barreira da VRAM (The Wall of VRAM)", não poderemos sequer tocar nos modelos mais avançados.
+Mesmo em GPUs de ponta para consumidores, como a NVIDIA [GeForce](/pt/p/history-of-nvidia/) RTX 4090, a VRAM é de no máximo 24 GB, o que torna completamente impossível carregar um modelo gigante como o Llama 3 70B em sua forma original. GPUs voltadas para data centers, como H100 (80GB) e B200 (192GB), são extremamente caras e não são algo que indivíduos ou pequenas equipes possam acessar facilmente. Se não conseguirmos superar essa "Barreira da VRAM (The Wall of VRAM)", não poderemos sequer tocar nos modelos mais avançados.
 
 Neste artigo, explicaremos detalhadamente técnicas avançadas para quebrar essa restrição física de limite de VRAM por meio de inovações na arquitetura de software e hardware, tanto na perspectiva da inferência quanto do treinamento. Exploraremos a fundo, com fórmulas matemáticas e diagramas, o CPU offloading, otimização de cache KV, gradient checkpointing e a mais recente arquitetura de Memória Unificada (Unified Memory). Ao ler este artigo, você entenderá profundamente o comportamento da VRAM e adquirirá conhecimentos práticos para lidar com modelos gigantescos usando recursos limitados.
 
@@ -32,7 +32,7 @@ Os tipos de dados comumente usados em deep learning e o número de bytes por par
 - **FP32 (Ponto flutuante de precisão simples):** 4 bytes (precisão padrão durante o treinamento)
 - **FP16 / BF16 (Ponto flutuante de meia precisão):** 2 bytes (inferência geral e treinamento de precisão mista)
 - **INT8 (Inteiro de 8 bits):** 1 byte (modelos quantizados)
-- **INT4 (Quantização de inteiro de 4 bits):** 0.5 bytes (quantização extrema como GPTQ, AWQ, GGUF)
+- **INT4 (Quantização de inteiro de 4 bits):** 0.5 bytes (quantização extrema como GPTQ, AWQ, [GGUF](/pt/p/llama-cpp-quantization-gguf/))
 
 Considerando o número total de parâmetros do modelo inteiro como $P$, a quantidade de memória base $M_{weights}$ ocupada pelos próprios pesos é expressa pela seguinte fórmula:
 

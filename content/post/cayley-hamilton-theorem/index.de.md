@@ -281,7 +281,7 @@ Somit reduziert sich das Problem, eine inverse Matrix zu finden, auf Berechnunge
 In diesem Artikel haben wir den **[Satz von Cayley-Hamilton](https://kenji.blog/de/p/cayley-hamilton-theorem/)**, einen der Höhepunkte der linearen Algebra, ausführlich erklärt.
 
 * Die erstaunliche Eigenschaft, dass das Einsetzen einer Matrix in ihr eigenes charakteristisches Polynom $p(\lambda)$ die Nullmatrix ergibt ($p(A) = O$).
-* Das intuitive Verständnis durch Diagonalisierung sowie das häufige Missverständnis einer Verwechslung mit einer skalaren Substitution.
+* Das intuitive Verständnis durch [Diagonalisierung](/de/p/diagonalization-and-jordan-normal-form/) sowie das häufige Missverständnis einer Verwechslung mit einer skalaren Substitution.
 * Ein eleganter und strenger Beweis, der Identitäten mit der Adjunkten nutzt.
 * Praktische Anwendungen wie die schnelle Berechnung von Matrixpotenzen mittels Polynomdivision und Formeln zur Bestimmung der Inversen.
 

@@ -63,7 +63,7 @@ Situó la "simplicidad" y la "elegancia" como los valores más altos en el dise�
 
 > "Hay dos maneras de construir el diseño de un software: Una es hacerlo tan simple que obviamente no haya deficiencias, y la otra es hacerlo tan complicado que no haya deficiencias obvias. El primer método es mucho más difícil".
 
-Estas palabras prevén notablemente la situación actual donde las arquitecturas de microservicios y la programación funcional buscan nuevamente la "simplicidad" en el desarrollo de software moderno y cada vez más complejo.
+Estas palabras prevén notablemente la situación actual donde las arquitecturas de [microservicios](/es/p/microservices-architecture-bff-api-gateway/) y la [programación funcional](/es/p/lambda-calculus-functional-programming/) buscan nuevamente la "simplicidad" en el desarrollo de software moderno y cada vez más complejo.
 
 ## Un Puente de la Academia a la Industria
 

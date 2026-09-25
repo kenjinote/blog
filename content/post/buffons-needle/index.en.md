@@ -134,7 +134,7 @@ $$
 This equation means that if only the probability $P$ is known, Pi $\pi$ can be calculated. Of course, the true probability $P$ cannot be known without an infinite number of trials, but by dropping the needle many times in an actual experiment, an approximate value of $P$ can be obtained.
 
 Let $N$ be the total number of times the needle is dropped, and $C$ be the number of times the needle crossed a line.
-If the number of trials $N$ is large enough, by the law of large numbers, the empirical probability $\frac{C}{N}$ approaches the theoretical probability $P$.
+If the number of trials $N$ is large enough, by the [law of large numbers](/en/p/law-of-large-numbers/), the empirical probability $\frac{C}{N}$ approaches the theoretical probability $P$.
 
 $$
 P \approx \frac{C}{N}

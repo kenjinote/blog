@@ -256,6 +256,6 @@ Wie war es? In diesem Artikel haben wir am Beispiel der Anzahl der Halskettendes
 *   Unter Verwendung des **Lemmas von Burnside** kann die Anzahl der im Wesentlichen unterschiedlichen Muster durch das mechanische Verfahren der "Mittelung der Anzahl von Fixpunkten in jeder Operation" berechnet werden.
 *   Dieser Lehrsatz basiert auf einer tiefen Eigenschaft der Gruppentheorie, die als Bahnensatz (Orbit-Stabilisator-Satz) bezeichnet wird.
 
-Das [Lemma von Burnside](https://kenji.blog/de/p/burnsides-lemma/) ist ein sehr praktischer Lehrsatz, der in einer Vielzahl von Bereichen angewendet wird, wie z.B. bei der Zählung von molekularen Isomeren in der Chemie, der Bestimmung der Graphenisomorphie in der Graphentheorie und sogar in der statistischen Mechanik der Physik.
+Das [Lemma von Burnside](https://kenji.blog/de/p/burnsides-lemma/) ist ein sehr praktischer Lehrsatz, der in einer Vielzahl von Bereichen angewendet wird, wie z.B. bei der Zählung von molekularen Isomeren in der Chemie, der Bestimmung der Graphenisomorphie in der [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) und sogar in der statistischen Mechanik der Physik.
 
 Wir hoffen, dass Sie durch die diesmal vorgestellten Grundlagen einen Einblick gewinnen konnten, wie das oft abstrakt erscheinende Feld der Mathematik namens "Gruppentheorie" konkrete reale Probleme brillant lösen kann.

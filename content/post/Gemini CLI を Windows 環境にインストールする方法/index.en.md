@@ -12,14 +12,14 @@ description: 'A beginner-friendly explanation on how to install the ''Gemini CLI
 
 # [For Beginners] How to Install Gemini CLI on Windows
 
-"Gemini CLI" allows you to use Google's generative AI "Gemini" from the command line.
-In this article, we will explain the steps to install Gemini CLI in a Windows environment as easily as possible.
+"[Gemini](/en/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEworkaround/) CLI" allows you to use Google's generative AI "[Gemini](/en/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEworkaround/)" from the command line.
+In this article, we will explain the steps to install [Gemini](/en/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEworkaround/) CLI in a Windows environment as easily as possible.
 
 ---
 
 ## 1. Preparation: Install Node.js and npm
 
-First, since Gemini CLI runs on an environment called "Node.js", you need to have the following installed:
+First, since [Gemini](/en/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEworkaround/) CLI runs on an environment called "Node.js", you need to have the following installed:
 
 * **Node.js**
 * **npm (Package management tool included with Node.js)**
@@ -40,7 +40,7 @@ npm -v
 
 ## 2. Launch PowerShell
 
-To use Gemini CLI on Windows, it is common to operate it using PowerShell.
+To use [Gemini](/en/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEworkaround/) CLI on Windows, it is common to operate it using PowerShell.
 Type "PowerShell" in the Start menu to launch it.
 
 ---
@@ -53,7 +53,7 @@ Copy and paste the following command into PowerShell and execute it:
 npx @google/gemini-cli
 ```
 
-This command temporarily executes the Gemini CLI package published by Google.
+This command temporarily executes the [Gemini](/en/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEworkaround/) CLI package published by Google.
 You may be prompted for initial setup or login if necessary.
 
 * Note: It may take a few minutes the first time. If you encounter an error, please double-check your Node.js or network environment.
@@ -62,8 +62,8 @@ You may be prompted for initial setup or login if necessary.
 
 ## 4. Installation Complete! What to do next
 
-Now, Gemini CLI has been installed on Windows.
-From now on, you will be able to perform various operations using Gemini from the command line, such as text generation and code completion.
+Now, [Gemini](/en/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEworkaround/) CLI has been installed on Windows.
+From now on, you will be able to perform various operations using [Gemini](/en/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEworkaround/) from the command line, such as text generation and code completion.
 
 If you want to check the official documentation or help, you can also utilize commands like the following.
 
@@ -75,7 +75,7 @@ npx @google/gemini-cli --help
 
 ## Conclusion
 
-Let's review the steps to introduce Gemini CLI to Windows.
+Let's review the steps to introduce [Gemini](/en/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEworkaround/) CLI to Windows.
 
 1. Install Node.js and npm
 2. Launch PowerShell

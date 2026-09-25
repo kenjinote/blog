@@ -197,9 +197,9 @@ rsa_example()
 
 [RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)密码虽然强大，但随着计算机性能的提高，为了保持安全性，必须增加密钥长度（目前通常为2048或3072比特），这就导致了计算成本激增的问题。
 
-因此，1985年有人提出了“椭圆曲线密码（Elliptic Curve [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy: ECC）”。它利用了有限域上椭圆曲线（通常形式为 $y^2 = x^3 + ax + b$）上点的加法运算。
+因此，1985年有人提出了“椭圆曲线密码（Elliptic Curve [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy: [ECC](/zh-cn/p/elliptic-curve-cryptography-math-cpp/)）”。它利用了有限域上椭圆曲线（通常形式为 $y^2 = x^3 + ax + b$）上点的加法运算。
 
-众所周知，椭圆曲线上的离散对数问题（ECDLP）比素数分解问题更难求解。 **利用ECC，仅需256比特的密钥长度就能实现与3072比特[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)相当的安全性** 。这也使得在智能手机或物联网（IoT）设备等计算资源有限的环境下，仍能实现高速且安全的加密通信（如ECDSA或ECDH等）。
+众所周知，椭圆曲线上的离散对数问题（ECDLP）比素数分解问题更难求解。 **利用[ECC](/zh-cn/p/elliptic-curve-cryptography-math-cpp/)，仅需256比特的密钥长度就能实现与3072比特[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)相当的安全性** 。这也使得在智能手机或[物联网](/zh-cn/p/technology-iot/)（IoT）设备等计算资源有限的环境下，仍能实现高速且安全的加密通信（如ECDSA或ECDH等）。
 
 ---
 
@@ -207,7 +207,7 @@ rsa_example()
 
 密码技术曾经显得坚不可摧，但1994年彼得·秀尔（Peter Shor）发表的“秀尔算法”却带来了巨大冲击。
 
-量子计算机利用量子力学中“叠加态”与“量子纠缠”的特性进行计算。数学上已经证明，若在性能足够强大的量子计算机上运行秀尔算法，就能在“多项式时间”内解决素数分解问题和离散对数问题。这意味着，在实用的量子计算机问世之日（Q-Day），目前广泛使用的RSA、ECC等公钥密码将会在瞬间被攻破。
+量子计算机利用量子力学中“叠加态”与“量子纠缠”的特性进行计算。数学上已经证明，若在性能足够强大的量子计算机上运行秀尔算法，就能在“多项式时间”内解决素数分解问题和离散对数问题。这意味着，在实用的量子计算机问世之日（Q-Day），目前广泛使用的RSA、[ECC](/zh-cn/p/elliptic-curve-cryptography-math-cpp/)等公钥密码将会在瞬间被攻破。
 
 ## PQC（后量子密码/抗量子密码）的登场
 为了应对这一前所未有的威胁，基于量子计算机也难以破解的新数学难题的“抗量子密码（PQC）”研究正在紧锣密鼓地进行。NIST（美国国家标准技术研究所）多年来一直在推进PQC的标准化进程，目前主要有以下几种被寄予厚望的数学方法：

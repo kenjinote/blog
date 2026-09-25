@@ -12,7 +12,7 @@ image: "eyecatch.jpg"
 
 在現代世界中，支撐智慧型手機、電腦、網際網路、AI 等所有科技根基的正是「半導體」。而作為半導體產業的中心地，並成為全世界創業者所嚮往的創新聖地的，正是位於加州北部的「矽谷（Silicon Valley）」。
 
-這個擠滿了 Google、Apple、Meta（原 Facebook）、Netflix 等巨大科技公司的地方，並非從一開始就是現在的樣貌。過去這裡不過是果園綿延、寧靜的農業地帶「聖塔克拉拉谷（Santa Clara Valley）」。那為什麼它會蛻變為世界最頂尖的科技樞紐呢？
+這個擠滿了 Google、Apple、[Meta](/zh-tw/p/history-of-meta-facebook/)（原 Facebook）、Netflix 等巨大科技公司的地方，並非從一開始就是現在的樣貌。過去這裡不過是果園綿延、寧靜的農業地帶「聖塔克拉拉谷（Santa Clara Valley）」。那為什麼它會蛻變為世界最頂尖的科技樞紐呢？
 
 可以說一切的開端，都源自 1957 年發生的一起「背叛」事件。聚集在一位天才科學家麾下的 8 位年輕優秀工程師，離開了他並創立了自己的公司。他們後來被稱為**「八叛逆（Traitorous Eight）」**。
 
@@ -33,7 +33,7 @@ image: "eyecatch.jpg"
 其中，包含了後來被稱為「八叛逆」的以下 8 人：
 
 1. **羅伯特·諾伊斯（Robert Noyce）**：擁有非凡領導力的物理學家。後來創立了 Intel，被稱為「矽谷的市長」。
-2. **高登·摩爾（Gordon Moore）**：沉默寡言且深思熟慮的化學家。著名的「摩爾定律」提出者，與諾伊斯共同創立 Intel。
+2. **高登·摩爾（Gordon Moore）**：沉默寡言且深思熟慮的化學家。著名的「[摩爾定律](/zh-tw/p/business-moores-law/)」提出者，與諾伊斯共同創立 Intel。
 3. **金·赫爾尼（Jean Hoerni）**：瑞士出身的理論物理學家。後來發明了製造積體電路（IC）不可或缺的「平面工藝（Planar process）」。
 4. **尤金·克萊納（Eugene Kleiner）**：奧地利出身的機械工程師。後來設立了代表矽谷的創投公司「克萊納·珀金斯（Kleiner Perkins）」。
 5. **朱利亞斯·布蘭克（Julius Blank）**：克萊納的朋友，優秀的機械工程師。

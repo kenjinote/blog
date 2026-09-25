@@ -35,7 +35,7 @@ image: "eyecatch.jpg"
 為了解決這個問題，一種全新的通訊概念幾乎在同一時間被多方提出。這就是「封包交換（Packet switching）」方式。
 
 隸屬於美國蘭德公司（RAND Corporation）的保羅·巴蘭（Paul Baran），為了提高軍事通訊的生存能力，建構了將資料細分，並透過網狀網路分別從不同路徑傳輸的「分散式網路」理論。
-另一方面，英國國家物理實驗室（NPL）的唐納德·戴維斯（Donald Davies）也獨立得出類似的概念，並將分割後的資料區塊命名為「封包（Packet）」。此外，麻省理工學院（MIT）的倫納德·克萊因羅克（Leonard Kleinrock）利用數學上的排隊理論（Queueing theory）證明了這種資料傳輸方式的效率。
+另一方面，英國國家物理實驗室（NPL）的唐納德·戴維斯（Donald Davies）也獨立得出類似的概念，並將分割後的資料區塊命名為「封包（Packet）」。此外，麻省理工學院（MIT）的倫納德·克萊因羅克（Leonard Kleinrock）利用數學上的[排隊理論](/zh-tw/p/queuing-theory-basics/)（Queueing theory）證明了這種資料傳輸方式的效率。
 
 ```mermaid
 graph TD

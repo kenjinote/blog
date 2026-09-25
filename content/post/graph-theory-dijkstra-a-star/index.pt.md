@@ -293,7 +293,7 @@ Os algoritmos de [Dijkstra](https://kenji.blog/pt/p/tree-graph-data-structures-s
 3. **JPS** (Jump Point Search):
    Um método para acelerar ainda mais a busca do A* em mapas de grade uniformes. Nós desnecessários são ignorados usando simetria.
 
-Os algoritmos de busca de caminho representam um campo onde a beleza matemática da teoria dos grafos e a eficiência algorítmica da ciência da computação se fundem perfeitamente.
+Os [algoritmos de busca](/pt/p/search-algorithms-linear-binary-hash-table-principles/) de caminho representam um campo onde a beleza matemática da teoria dos grafos e a eficiência algorítmica da ciência da computação se fundem perfeitamente.
 
 ## 6. Conclusão
 

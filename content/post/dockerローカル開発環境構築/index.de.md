@@ -13,7 +13,7 @@ tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 
 In der Softwareentwicklung ist das Problem "Auf meiner Maschine funktioniert es" (It works on my machine), das auf unterschiedliche Umgebungen zwischen Entwicklern zurückzuführen ist, seit langem ein Faktor, der in vielen Projekten Zeit verschwendet. Aufgrund von Unterschieden im Betriebssystem, Versionen installierter Sprachen, Bibliotheksabhängigkeiten und Konflikten zwischen global installierten Tools ist die lokale Umgebung ständig einer "[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sunsicherheit" ausgesetzt.
 
-Was diese Probleme von Grund auf löst, sind [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-Technologien wie **Docker-layers/)** und das Paradigma von **Infrastructure as Code ([IaC](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/))**. Durch die Containerisierung der lokalen Entwicklungsumgebung wird eine Isolierung auf Betriebssystemebene erreicht, was es ermöglicht, die Umgebung selbst zusammen mit der Codebasis zu versionieren.
+Was diese Probleme von Grund auf löst, sind [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-Technologien wie **Docker-layers/)** und das Paradigma von **[Infrastructure as Code](/de/p/iac-infrastructure-as-code-terraform/) ([IaC](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/))**. Durch die Containerisierung der lokalen Entwicklungsumgebung wird eine Isolierung auf Betriebssystemebene erreicht, was es ermöglicht, die Umgebung selbst zusammen mit der Codebasis zu versionieren.
 
 In diesem Artikel erklären wir ausführlich die Schritte zum Aufbau einer **"reproduzierbaren lokalen Entwicklungsumgebung, die immer in exakt demselben [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) startet, unabhängig davon, wer sie wann und auf welcher Maschine startet"**, unter Verwendung von Docker, Docker Compose und VSCode DevContainers. Wir beleuchten auch die tiefgreifenden technischen Mechanismen dahinter, einschließlich einer mathematischen Perspektive.
 
@@ -23,13 +23,13 @@ In diesem Artikel erklären wir ausführlich die Schritte zum Aufbau einer **"re
 
 ### Prinzipien von IaC und deren Anwendung auf lokale Umgebungen
 
-Infrastructure as Code (IaC) ist ein Ansatz zur Verwaltung der Konfiguration und Bereitstellung von Infrastruktur durch maschinenlesbare Definitionsdateien anstelle von manuellen Prozessen. Zu den Kernprinzipien von IaC gehören folgende Elemente:
+[Infrastructure as Code](/de/p/iac-infrastructure-as-code-terraform/) ([IaC](/de/p/iac-infrastructure-as-code-terraform/)) ist ein Ansatz zur Verwaltung der Konfiguration und Bereitstellung von Infrastruktur durch maschinenlesbare Definitionsdateien anstelle von manuellen Prozessen. Zu den Kernprinzipien von [IaC](/de/p/iac-infrastructure-as-code-terraform/) gehören folgende Elemente:
 
 1. **Deklarativer Ansatz (Declarative Approach)**: Definiert "wie der Endzustand sein soll", anstatt "wie der Zustand geändert werden soll".
 2. **Idempotenz (Idempotency)**: Egal wie oft das Skript ausgeführt wird, es wird immer dasselbe Ergebnis (Zustand) garantiert.
 3. **Versionskontrolle (Version Control)**: Der Zustand der Infrastruktur wird als Code in einem VCS wie Git gespeichert, was die Verfolgung des Änderungsverlaufs und Peer-Reviews ermöglicht.
 
-Die Umsetzung von IaC in einer lokalen Entwicklungsumgebung bedeutet, den "idealen Zustand" der Entwicklungsumgebung mit `Dockerfile`, `docker-compose.yml` und `devcontainer.json` in Code zu fassen. Dadurch wird ein Onboarding-Erlebnis geschaffen, bei dem neue Teammitglieder einfach das Repository klonen und einen einzigen Befehl ausführen können, um sofort mit der Entwicklung zu beginnen.
+Die Umsetzung von [IaC](/de/p/iac-infrastructure-as-code-terraform/) in einer lokalen Entwicklungsumgebung bedeutet, den "idealen Zustand" der Entwicklungsumgebung mit `Dockerfile`, `docker-compose.yml` und `devcontainer.json` in Code zu fassen. Dadurch wird ein Onboarding-Erlebnis geschaffen, bei dem neue Teammitglieder einfach das Repository klonen und einen einzigen Befehl ausführen können, um sofort mit der Entwicklung zu beginnen.
 
 ### Kernel-Funktionen, die die [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-Technologie unterstützen
 
@@ -356,7 +356,7 @@ Dann wird die durchschnittliche Antwortzeit durch die folgende Erwartungswertfor
 
 $$ T_{\text{total}} = T_{\text{net}} + T_{\text{app}} + T_{\text{cache}} + p_{\text{miss}} \times (T_{\text{db}} + T_{\text{cache\_write}}) $$
 
-In einer lokalen Entwicklungsumgebung (innerhalb von [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)) liegt $T_{\text{net}}$ nahe bei 0. Beachtenswert ist jedoch die **I/O-Leistung bei Bind Mounts**. Insbesondere bei der Verwendung von Docker Desktop auf Windows/macOS tendiert $T_{\text{app}}$ (wie z. B. die Zeit zum Laden von Code) dazu, aufgrund des Overhead bei der Dateifreigabe zwischen dem Host-Betriebssystem und der VM (Container) anzusteigen. Um diesen Engpass zu beheben, wird dringend eine Architektur empfohlen, bei der entweder die gesamten Quellcodes in einem benannten Volume mit den zuvor erwähnten DevContainers abgelegt werden oder die Docker-Engine nativ in einer WSL2-Umgebung (Windows Subsystem for Linux 2) ausgeführt wird.
+In einer lokalen Entwicklungsumgebung (innerhalb von [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)) liegt $T_{\text{net}}$ nahe bei 0. Beachtenswert ist jedoch die **I/O-Leistung bei Bind Mounts**. Insbesondere bei der Verwendung von Docker Desktop auf Windows/macOS tendiert $T_{\text{app}}$ (wie z. B. die Zeit zum Laden von Code) dazu, aufgrund des Overhead bei der Dateifreigabe zwischen dem Host-Betriebssystem und der VM (Container) anzusteigen. Um diesen Engpass zu beheben, wird dringend eine Architektur empfohlen, bei der entweder die gesamten Quellcodes in einem benannten Volume mit den zuvor erwähnten DevContainers abgelegt werden oder die Docker-Engine nativ in einer WSL2-Umgebung ([Windows Subsystem for Linux](/de/p/wsl2-ultimate-development-setup-guide/) 2) ausgeführt wird.
 
 ---
 

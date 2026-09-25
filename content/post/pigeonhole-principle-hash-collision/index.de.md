@@ -91,16 +91,16 @@ Das heißt: **„Die Kollisionen existieren sicher, aber das Universum wird eher
 
 Bisher haben wir darüber gesprochen, wie schwierig es ist, „einen Hash-Wert zu finden, der mit einer bestimmten Zieldatei kollidiert“ (Preimage-Resistenz).
 
-Wenn man jedoch nur „**irgendein Paar von Dateien** finden möchte, das den gleichen Hash-Wert hat (Kollisionsresistenz)“, sinkt die Schwierigkeit dramatisch. Dieses Phänomen ist als das **Geburtstagsparadoxon (Birthday Paradox)** bekannt.
+Wenn man jedoch nur „**irgendein Paar von Dateien** finden möchte, das den gleichen Hash-Wert hat (Kollisionsresistenz)“, sinkt die Schwierigkeit dramatisch. Dieses Phänomen ist als das **[Geburtstagsparadoxon](/de/p/birthday-paradox/) (Birthday Paradox)** bekannt.
 
-Das Geburtstagsparadoxon stellt die Frage: „Wie viele Personen müssen in einem Raum versammelt sein, damit die Wahrscheinlichkeit, dass mindestens zwei am selben Tag Geburtstag haben, über 50 % liegt?“ Intuitiv würde man an $365 \div 2 \approx 183$ Personen denken, aber die korrekte mathematische Antwort lautet **nur 23 Personen**. Da es bei einer Gruppe von 23 Personen $\frac{23 \times 22}{2} = 253$ mögliche Paare gibt, steigt die Wahrscheinlichkeit, dass sich Geburtstage überschneiden, rapide an.
+Das [Geburtstagsparadoxon](/de/p/birthday-paradox/) stellt die Frage: „Wie viele Personen müssen in einem Raum versammelt sein, damit die Wahrscheinlichkeit, dass mindestens zwei am selben Tag Geburtstag haben, über 50 % liegt?“ Intuitiv würde man an $365 \div 2 \approx 183$ Personen denken, aber die korrekte mathematische Antwort lautet **nur 23 Personen**. Da es bei einer Gruppe von 23 Personen $\frac{23 \times 22}{2} = 253$ mögliche Paare gibt, steigt die Wahrscheinlichkeit, dass sich Geburtstage überschneiden, rapide an.
 
 Wendet man dies auf Hash-Funktionen an, so beträgt die Wahrscheinlichkeit, dass unter $N$ Taubenschlägen eine Kollision auftritt, bei etwa $\sqrt{N}$ Versuchen über 50 %.
 
 Für SHA-256 (Anzahl der Fächer $N = 2^{256}$) bedeutet dies, dass man etwa $2^{128}$ Dateien hashen müsste, um „irgendein Kollisionspaar“ zu finden.
 $2^{128}$ ist immer noch eine unvorstellbar große Zahl (etwa $3.4 \times 10^{38}$), und selbst dies ist mit aktuellen Computern unmöglich zu berechnen. Daher bleibt SHA-256 vorerst sicher.
 
-Aus diesem Grund wählt man in der Kryptografie einen Ausgabe-Bit-Bereich, der doppelt so groß ist wie die eigentlich angestrebte Sicherheitsstärke (z. B. 256 Bit, um 128 Bit Sicherheit zu gewährleisten), um dem Geburtstagsparadoxon entgegenzuwirken.
+Aus diesem Grund wählt man in der Kryptografie einen Ausgabe-Bit-Bereich, der doppelt so groß ist wie die eigentlich angestrebte Sicherheitsstärke (z. B. 256 Bit, um 128 Bit Sicherheit zu gewährleisten), um dem [Geburtstagsparadoxon](/de/p/birthday-paradox/) entgegenzuwirken.
 
 ## Fazit
 

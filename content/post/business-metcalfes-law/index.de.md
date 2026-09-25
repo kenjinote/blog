@@ -95,4 +95,4 @@ Wenn es zu viele Nutzer gibt, können „negative Netzwerkeffekte“ auftreten �
 
 Obwohl das Metcalfesche Gesetz ein vereinfachtes Modell ist, stellt es die „Winner-takes-all“-Dynamik (Der Gewinner bekommt alles) von Plattformgeschäften brillant dar.
 
-Führungskräfte und Unternehmer sollten immer die Frage in den Mittelpunkt ihres Designs stellen, wie ihr Produkt Netzwerkeffekte erzeugen wird und wie schnell es die kritische Masse durchbrechen kann. Selbst im Zeitalter von KI und Blockchain (Web3) wirkt das Metcalfesche Gesetz im Verborgenen – aber kraftvoll – als grundlegendes Prinzip dafür, wie Knoten miteinander in Verbindung treten und Werte austauschen.
+Führungskräfte und Unternehmer sollten immer die Frage in den Mittelpunkt ihres Designs stellen, wie ihr Produkt Netzwerkeffekte erzeugen wird und wie schnell es die kritische Masse durchbrechen kann. Selbst im Zeitalter von KI und [Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/) (Web3) wirkt das Metcalfesche Gesetz im Verborgenen – aber kraftvoll – als grundlegendes Prinzip dafür, wie Knoten miteinander in Verbindung treten und Werte austauschen.

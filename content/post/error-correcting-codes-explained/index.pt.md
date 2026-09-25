@@ -10,7 +10,7 @@ image: eyecatch.jpg
 
 # O que são Códigos de Correção de Erros?
 
-Na sociedade digital, os dados estão constantemente expostos à ameaça de ruído. Arranhões em um CD, dados de sondas espaciais transmitidos do espaço sideral ou os códigos QR que escaneamos diariamente. A razão pela qual esses dados não são completamente destruídos por uma pequena perda ou ruído é a existência de um poderoso mecanismo matemático chamado "Códigos de Correção de Erros (Error-Correcting Codes, ECC)".
+Na sociedade digital, os dados estão constantemente expostos à ameaça de ruído. Arranhões em um CD, dados de sondas espaciais transmitidos do espaço sideral ou os códigos QR que escaneamos diariamente. A razão pela qual esses dados não são completamente destruídos por uma pequena perda ou ruído é a existência de um poderoso mecanismo matemático chamado "Códigos de Correção de Erros (Error-Correcting Codes, [ECC](/pt/p/elliptic-curve-cryptography-math-cpp/))".
 
 Neste artigo, desvendaremos detalhadamente seu funcionamento, começando pelos conceitos propostos por Claude Shannon, o pai da teoria da informação, passando pelos fundamentos da verificação de paridade, a representação matricial do código de Hamming, até chegar aos códigos de Reed-Solomon que utilizam Corpos de Galois.
 

@@ -124,7 +124,7 @@ Die Ergebnisse zeigten, dass es weltweit einen starken utilitaristischen Konsens
 
 Sollten KI-Entwickler ihre Autos so programmieren, dass sie "andere retten, selbst wenn sie den Besitzer opfern"? Und wenn sie das tun, würden die Verbraucher ein Auto kaufen, das sie möglicherweise tötet? (In vielen Umfragen antworteten die Menschen, dass sie "selbstfahrende Autos wünschen, die sich im Sinne der Gesellschaft utilitaristisch verhalten", zeigten aber gleichzeitig den Widerspruch, dass sie "ein solches Auto nicht für sich selbst kaufen möchten (sie möchten ein Auto, das sie selbst priorisiert schützt)").
 
-Das Trolley-Problem ist längst keine bloße Spielerei im Philosophieunterricht mehr, sondern eine drängende praktische Aufgabe für Ingenieure, Juristen und politische Entscheidungsträger.
+Das Trolley-Problem ist längst keine bloße Spielerei im Philosophieunterricht mehr, sondern eine drängende praktische Aufgabe [für Ingenieure](/de/p/prompt-engineering-for-engineers/), Juristen und politische Entscheidungsträger.
 
 ## 8. Weitere praktische Anwendungen und Variationen
 

@@ -92,7 +92,7 @@ Los talentos de Gauss no se limitaron a las matemáticas puras; también logró 
 
 El 1 de enero de 1801, el astrónomo italiano Giuseppe Piazzi descubrió un nuevo cuerpo celeste (más tarde llamado planeta enano Ceres). Sin embargo, después de unos días de observación, el cuerpo celeste se escondió detrás del sol y se perdió de vista. Los astrónomos de la época intentaron predecir su órbita posterior a partir de solo unos pocos días de datos de observación, pero todos fracasaron.
 
-Aquí es donde entró Gauss. Calculó la órbita de Ceres utilizando una nueva técnica matemática que había estado construyendo en secreto durante algún tiempo, el **"[Método de Mínimos Cuadrados](https://kenji.blog/es/p/method-of-least-squares/)"**. El método de mínimos cuadrados es una técnica para estimar los parámetros más probables para minimizar los errores contenidos en los datos de observación.
+Aquí es donde entró Gauss. Calculó la órbita de Ceres utilizando una nueva técnica matemática que había estado construyendo en secreto durante algún tiempo, el **"[Método de Mínimos Cuadrados](https://kenji.blog/es/p/method-of-least-squares/)"**. El [método de mínimos cuadrados](/es/p/method-of-least-squares/) es una técnica para estimar los parámetros más probables para minimizar los errores contenidos en los datos de observación.
 
 Suponiendo que el valor observado es $y_i$ y el valor teórico es $f(x_i, \boldsymbol{\theta})$, encontramos el parámetro $\boldsymbol{\theta}$ que minimiza la suma de errores al cuadrado $S$.
 
@@ -128,7 +128,7 @@ Según este teorema, se demuestra matemáticamente que, por ejemplo, no importa 
 
 ## 6. Distribución Gaussiana y Electromagnetismo
 
-La **"Distribución Normal"**, la distribución más importante en estadística, a menudo se llama **"Distribución de Gauss"**. Al justificar el método de mínimos cuadrados mencionado anteriormente, Gauss asumió que los errores de observación siguen una distribución normal. La función de densidad de probabilidad $f(x)$ se expresa mediante la siguiente fórmula:
+La **"Distribución Normal"**, la distribución más importante en estadística, a menudo se llama **"Distribución de Gauss"**. Al justificar el [método de mínimos cuadrados](/es/p/method-of-least-squares/) mencionado anteriormente, Gauss asumió que los errores de observación siguen una distribución normal. La función de densidad de probabilidad $f(x)$ se expresa mediante la siguiente fórmula:
 
 $$
 f(x) = \frac{1}{\sigma \sqrt{2\pi}} \exp\left( -\frac{1}{2} \left( \frac{x-\mu}{\sigma} \right)^2 \right)

@@ -18,7 +18,7 @@ tags:
 
 Dans un SGBDR (Système de Gestion de Base de Données Relationnelle), le concept le plus fondamental et important pour protéger l'intégrité et la cohérence des données et assurer la fiabilité du système est la **transaction** (Transaction).
 
-Dans les applications Web et les systèmes d'entreprise modernes, de nombreux utilisateurs lisent et écrivent simultanément dans la base de données. Comprendre en profondeur les mécanismes qui garantissent que les données sont traitées correctement et sans incohérence dans un tel environnement de traitement concurrent est une compétence indispensable pour les ingénieurs backend et les administrateurs de bases de données.
+Dans les applications Web et les systèmes d'entreprise modernes, de nombreux utilisateurs lisent et écrivent simultanément dans la base de données. Comprendre en profondeur les mécanismes qui garantissent que les données sont traitées correctement et sans incohérence dans un tel environnement de traitement concurrent est une compétence indispensable [pour les ingénieurs](/fr/p/prompt-engineering-for-engineers/) backend et les administrateurs de bases de données.
 
 Cet article explique de manière très détaillée et exhaustive les **propriétés ACID**, qui sont la théorie de base soutenant les transactions de base de données, les diverses **anomalies (Anomaly)** qui peuvent survenir lorsque plusieurs transactions s'exécutent simultanément, et les **niveaux d'isolement de transaction (Isolation Level)** qui définissent comment empêcher ces anomalies. De plus, nous approfondirons les méthodes d'implémentation spécifiques pour protéger les données des conflits, telles que le **verrouillage pessimiste** et le **verrouillage optimiste**, ainsi que le **MVCC (Multi-Version Concurrency Control)**, largement adopté dans les SGBDR modernes.
 
@@ -292,4 +292,4 @@ Les **transactions** de base de données ne sont pas une simple extension du SQL
 - Comprendre les caractéristiques du **verrouillage pessimiste** et du **verrouillage optimiste**, et implémenter dans l'application le contrôle d'exclusion optimal en fonction de la logique métier et des caractéristiques du trafic (fréquence des conflits).
 
 C'est en combinant ces connaissances et ces techniques qu'il devient possible de construire des systèmes robustes capables d'évoluer avec des performances élevées tout en ne provoquant pas d'incohérences de données.
-Dans le prochain article, nous prévoyons d'expliquer comment ce contrôle de transaction a évolué dans les systèmes distribués et l'architecture des microservices (le pattern Saga, le commit en 2 phases (2PC), etc.). Restez à l'écoute !
+Dans le prochain article, nous prévoyons d'expliquer comment ce contrôle de transaction a évolué dans les [systèmes distribués](/fr/p/cap-theorem-distributed-systems-tradeoff/) et l'architecture des microservices (le pattern Saga, le commit en 2 phases (2PC), etc.). Restez à l'écoute !

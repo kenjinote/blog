@@ -92,7 +92,7 @@ Les talents de Gauss ne se limitaient pas aux mathématiques pures ; il a égale
 
 Le 1er janvier 1801, l'astronome italien Giuseppe Piazzi découvre un nouveau corps céleste (appelé plus tard la planète naine Cérès). Cependant, après quelques jours d'observation, le corps céleste s'est caché derrière le soleil et a été perdu de vue. Les astronomes de l'époque ont tenté de prédire son orbite ultérieure à partir de quelques jours seulement de données d'observation, mais tous ont échoué.
 
-C'est là qu'intervient Gauss. Il calcula l'orbite de Cérès en utilisant une nouvelle technique mathématique qu'il avait secrètement mise au point pendant un certain temps, la **"[Méthode des moindres carrés](https://kenji.blog/fr/p/method-of-least-squares/)"**. La méthode des moindres carrés est une technique permettant d'estimer les paramètres les plus probables pour minimiser les erreurs contenues dans les données d'observation.
+C'est là qu'intervient Gauss. Il calcula l'orbite de Cérès en utilisant une nouvelle technique mathématique qu'il avait secrètement mise au point pendant un certain temps, la **"[Méthode des moindres carrés](https://kenji.blog/fr/p/method-of-least-squares/)"**. La [méthode des moindres carrés](/fr/p/method-of-least-squares/) est une technique permettant d'estimer les paramètres les plus probables pour minimiser les erreurs contenues dans les données d'observation.
 
 En supposant que la valeur observée est $y_i$ et la valeur théorique est $f(x_i, \boldsymbol{\theta})$, nous trouvons le paramètre $\boldsymbol{\theta}$ qui minimise la somme des erreurs au carré $S$.
 
@@ -128,7 +128,7 @@ Selon ce théorème, il est mathématiquement prouvé que, par exemple, quelle q
 
 ## 6. Distribution gaussienne et électromagnétisme
 
-La **"Distribution normale"**, la distribution la plus importante en statistique, est souvent appelée **"Distribution de Gauss"**. En justifiant la méthode des moindres carrés susmentionnée, Gauss a supposé que les erreurs d'observation suivaient une distribution normale. La fonction de densité de probabilité $f(x)$ est exprimée par la formule suivante :
+La **"Distribution normale"**, la distribution la plus importante en statistique, est souvent appelée **"Distribution de Gauss"**. En justifiant la [méthode des moindres carrés](/fr/p/method-of-least-squares/) susmentionnée, Gauss a supposé que les erreurs d'observation suivaient une distribution normale. La fonction de densité de probabilité $f(x)$ est exprimée par la formule suivante :
 
 $$
 f(x) = \frac{1}{\sigma \sqrt{2\pi}} \exp\left( -\frac{1}{2} \left( \frac{x-\mu}{\sigma} \right)^2 \right)

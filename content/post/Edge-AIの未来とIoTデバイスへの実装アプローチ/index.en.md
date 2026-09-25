@@ -258,7 +258,7 @@ Edge AI has evolved from being merely a "cloud complementary technology" to a co
 
 The software-side lightweighting technologies such as model quantization and pruning, together with the phenomenal hardware-side evolution of NPUs, TPUs, and Hailo, are serving as the two wheels of progress. Deep learning models that once required supercomputers are now running on devices in the palms of our hands with just a few milliwatts of power.
 
-Furthermore, with decentralized training approaches like Federated Learning and the operation of generative AI (SLMs) on the edge, the technological frontier is rapidly expanding. For engineers and architects, relying not only on massive cloud resources but also pursuing "how to exert maximum intelligence on the edge with limited resources" will become the most challenging and exciting task in the future.
+Furthermore, with decentralized training approaches like Federated Learning and the operation of generative AI (SLMs) on the edge, the technological frontier is rapidly expanding. [For engineers](/en/p/prompt-engineering-for-engineers/) and architects, relying not only on massive cloud resources but also pursuing "how to exert maximum intelligence on the edge with limited resources" will become the most challenging and exciting task in the future.
 
 At the forefront of IoT, where the physical and digital worlds merge, Edge AI will undoubtedly become the central nervous system driving the future.
 

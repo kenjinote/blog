@@ -19,7 +19,7 @@ Lorsqu'il est entré à la prestigieuse Université de Harvard, le monde commen�
 
 L'expression "Move Fast and Break Things" (Agir vite et casser des choses) est le symbole de la philosophie de gestion de Zuckerberg. Plutôt que de passer beaucoup de temps à construire quelque chose de parfait, l'approche consiste à le lancer en premier et à l'améliorer rapidement en fonction des retours des utilisateurs. On peut dire que c'est l'essence même du "Hacker Way" dans la Silicon Valley.
 
-Il a placé l'esprit hacker d'amélioration continue des systèmes et de dépassement des limites au cœur de sa culture d'entreprise. Derrière la croissance rapide de Facebook, ses acquisitions successives d'Instagram et de WhatsApp, et l'expansion continue de son écosystème se cache cette philosophie de "ne jamais se satisfaire du statu quo et de toujours poursuivre l'innovation de rupture".
+Il a placé l'esprit hacker d'amélioration continue des systèmes et de [dépassement](/fr/p/hegel%E3%81%AEdialectique/) des limites au cœur de sa culture d'entreprise. Derrière la croissance rapide de Facebook, ses acquisitions successives d'Instagram et de WhatsApp, et l'expansion continue de son écosystème se cache cette philosophie de "ne jamais se satisfaire du statu quo et de toujours poursuivre l'innovation de rupture".
 
 ```mermaid
 graph TD

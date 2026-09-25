@@ -14,7 +14,7 @@ The Earth has a shape close to a three-dimensional sphere (strictly speaking, an
 
 ## 1. The Mathematical Dilemma of Drawing a Sphere on a Flat Surface
 
-When talking about the history of map projections, what must first be understood is the major mathematical premise proven by "Carl Friedrich Gauss." The great 19th-century mathematician Gauss derived a theorem in differential geometry known as the "Theorema Egregium (Remarkable Theorem)." According to this theorem, the Gaussian curvature of a surface possesses the property that it does not change even if the surface is bent.
+When talking about the history of map projections, what must first be understood is the major mathematical premise proven by "[Carl Friedrich Gauss](/en/p/gauss/)." The great 19th-century mathematician Gauss derived a theorem in differential geometry known as the "Theorema Egregium (Remarkable Theorem)." According to this theorem, the Gaussian curvature of a surface possesses the property that it does not change even if the surface is bent.
 
 The Gaussian curvature of a sphere like the Earth is positive, but the Gaussian curvature of a plane is zero. Therefore, it is mathematically impossible to map surfaces with different Gaussian curvatures onto each other without stretching, shrinking, or tearing. It is the exact same principle as not being able to peel an orange and stretch the peel out perfectly flat into a rectangle without any gaps.
 

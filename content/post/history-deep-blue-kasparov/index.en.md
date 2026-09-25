@@ -27,7 +27,7 @@ flowchart TD
   E -- "IBM Project" --> F["Deep Blue (1997)"]
 ```
 
-In the 1950s, Claude Shannon published a monumental paper on chess programming, laying the foundation for search algorithms based on the minimax method. Later, from the 1970s through the 1980s, machines equipped with dedicated chess hardware began to emerge. Bell Labs' "Belle" used specialized circuitry to evaluate tens of thousands of positions per second, boasting master-class strength.
+In the 1950s, Claude Shannon published a monumental paper on chess programming, laying the foundation for [search algorithms](/en/p/search-algorithms-linear-binary-hash-table-principles/) based on the minimax method. Later, from the 1970s through the 1980s, machines equipped with dedicated chess hardware began to emerge. Bell Labs' "Belle" used specialized circuitry to evaluate tens of thousands of positions per second, boasting master-class strength.
 
 Then, "Deep Thought," developed by students at Carnegie Mellon University, became the first computer to defeat a grandmaster. IBM took over this project, pouring massive funding and top-tier engineering into it to create "Deep Blue."
 

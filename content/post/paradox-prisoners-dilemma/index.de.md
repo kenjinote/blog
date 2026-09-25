@@ -12,9 +12,9 @@ date: "2026-09-24T15:00:00+09:00"
 
 "Warum verraten wir einander, obwohl wir wissen, dass alles gut gehen würde, wenn wir zusammenarbeiten?"
 
-Auf diese grundlegende Frage gibt das **"Gefangenendilemma (Prisoner's Dilemma)"** in der Spieltheorie die klarste und zugleich grausamste Antwort aus Sicht von Mathematik und Logik. In den 1950er Jahren von Merrill Flood und Melvin Dresher erdacht und von Albert W. Tucker in die heutige "Gefangenengeschichte" formuliert, hat dieses Konzept einen enormen Einfluss auf alles von Wirtschaft und Politikwissenschaft bis hin zu Psychologie und Evolutionsbiologie gehabt.
+Auf diese grundlegende Frage gibt das **"[Gefangenendilemma](/de/p/prisoners-dilemma/) (Prisoner's Dilemma)"** in der Spieltheorie die klarste und zugleich grausamste Antwort aus Sicht von Mathematik und Logik. In den 1950er Jahren von Merrill Flood und Melvin Dresher erdacht und von Albert W. Tucker in die heutige "Gefangenengeschichte" formuliert, hat dieses Konzept einen enormen Einfluss auf alles von Wirtschaft und Politikwissenschaft bis hin zu Psychologie und Evolutionsbiologie gehabt.
 
-In diesem Artikel werden wir das "Gefangenendilemma" sehr detailliert untersuchen, von den grundlegenden Mechanismen über Fachkonzepte wie das Nash-Gleichgewicht und die Pareto-Optimalität bis hin zu konkreten Beispielen in der realen Welt und der Evolution von Kooperation in "wiederholten Spielen".
+In diesem Artikel werden wir das "[Gefangenendilemma](/de/p/prisoners-dilemma/)" sehr detailliert untersuchen, von den grundlegenden Mechanismen über Fachkonzepte wie das Nash-Gleichgewicht und die Pareto-Optimalität bis hin zu konkreten Beispielen in der realen Welt und der Evolution von Kooperation in "wiederholten Spielen".
 
 ---
 
@@ -95,9 +95,9 @@ Das Wettrüsten mit Atomwaffen zwischen den Vereinigten Staaten und der Sowjetun
 
 ## 4. Wiederholte Spiele und die "Tit for Tat"-Strategie
 
-In einem einmaligen Gefangenendilemma war "Verrat" die rationale Wahl. In der realen Gesellschaft ist es jedoch üblich, mehrfach mit derselben Partei zu interagieren. In der Spieltheorie wird dies als **"wiederholtes Gefangenendilemma (Iterated Prisoner's Dilemma)"** bezeichnet.
+In einem einmaligen [Gefangenendilemma](/de/p/prisoners-dilemma/) war "Verrat" die rationale Wahl. In der realen Gesellschaft ist es jedoch üblich, mehrfach mit derselben Partei zu interagieren. In der Spieltheorie wird dies als **"wiederholtes [Gefangenendilemma](/de/p/prisoners-dilemma/) (Iterated Prisoner's Dilemma)"** bezeichnet.
 
-In den 1980er Jahren lud der Politikwissenschaftler Robert Axelrod Computerprogramme von Experten weltweit zu einem Turnier ein, um herauszufinden, welche Strategie im wiederholten Gefangenendilemma die stärkste ist.
+In den 1980er Jahren lud der Politikwissenschaftler Robert Axelrod Computerprogramme von Experten weltweit zu einem Turnier ein, um herauszufinden, welche Strategie im wiederholten [Gefangenendilemma](/de/p/prisoners-dilemma/) die stärkste ist.
 
 Das Ergebnis war, dass die einfachste Strategie, die die höchste Punktzahl erreichte, die von Anatol Rapoport eingereichte **"Tit for Tat-Strategie (Wie du mir, so ich dir)"** war.
 
@@ -138,9 +138,9 @@ In Evolutionssimulationen wurde bewiesen, dass wenn eine kleine Gruppe von "Tit 
 
 ## 6. Fazit: Wie man das Dilemma überwindet
 
-Das Gefangenendilemma lehrt uns die harte Realität, dass am Ende alle verlieren, wenn wir unsere Eigeninteressen zu sehr verfolgen. Gleichzeitig zeigen Untersuchungen zu wiederholten Spielen jedoch, dass wir kooperative Beziehungen aufbauen können, wenn wir kontinuierliche Beziehungen und ein angemessenes Feedback-System haben.
+Das [Gefangenendilemma](/de/p/prisoners-dilemma/) lehrt uns die harte Realität, dass am Ende alle verlieren, wenn wir unsere Eigeninteressen zu sehr verfolgen. Gleichzeitig zeigen Untersuchungen zu wiederholten Spielen jedoch, dass wir kooperative Beziehungen aufbauen können, wenn wir kontinuierliche Beziehungen und ein angemessenes Feedback-System haben.
 
-Um das Gefangenendilemma in der realen Gesellschaft zu überwinden, sind folgende Ansätze erforderlich:
+Um das [Gefangenendilemma](/de/p/prisoners-dilemma/) in der realen Gesellschaft zu überwinden, sind folgende Ansätze erforderlich:
 - **Änderung von Regeln (Rechtsstaatlichkeit)**: Institutionalisierung von Strafen für Verrat, um die Vorteile zu beseitigen. (Beispiel: Kartellrecht und Umweltsteuern)
 - **Sicherstellung von Kommunikation**: Gelegenheiten bieten, um die Absichten des anderen zu bestätigen und Vertrauen aufzubauen.
 - **Betonung langfristiger Beziehungen**: Bewusstsein für die Zukunft schaffen: "Wenn du dieses Mal verrätst, gibt es keine zukünftigen Transaktionen mehr."

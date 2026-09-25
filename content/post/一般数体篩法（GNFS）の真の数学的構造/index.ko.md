@@ -174,7 +174,7 @@ $$X = V \pmod N$$
 이제 이 $X$와 $Y$가 자명한 해($X \equiv \pm Y$)가 아니기를 기도하며,
 **$\gcd(X - Y, N)$** 을 계산합니다.
 
-비자명한 해라면, [유클리드 호제법](https://kenji.blog/p/euclidean-algorithm/)이 0.001초 만에 실행되며 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호의 심장부인 비밀 소수 $p$와 $q$가 출력 화면에 인쇄됩니다.
+비자명한 해라면, [유클리드 호제법](https://kenji.blog/ko/p/euclidean-algorithm/)이 0.001초 만에 실행되며 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호의 심장부인 비밀 소수 $p$와 $q$가 출력 화면에 인쇄됩니다.
 
 ---
 

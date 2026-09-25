@@ -15,7 +15,7 @@ Dalam beberapa tahun terakhir, dengan evolusi dramatis AI Generatif (Generative 
 
 Di era seperti ini, wajar bagi banyak insinyur untuk merasa cemas bahwa "pekerjaan saya mungkin akan direbut oleh AI." Memang benar bahwa "sekadar pekerjaan pengkodean (Typing Code)" seperti membuat boilerplate untuk aplikasi CRUD standar, mengimplementasikan algoritma sederhana, atau memanggil API dari pustaka terkenal, dengan cepat menjadi komoditas.
 
-Namun, esensi dari rekayasa perangkat lunak bukanlah "mengetik kode." Ini tentang menyelesaikan tantangan bisnis melalui teknologi dan membangun sistem yang skalabel dan dapat dipelihara. Dalam artikel ini, kita akan membahas "keterampilan insinyur khas manusia" yang nilainya semakin meningkat justru di era saat AI menulis kode. Kita akan menelaahnya secara sangat rinci dan teknis dari sudut pandang keterbatasan teknis LLM, Domain-Driven Design (DDD), arsitektur sistem, dan proses debug sistem terdistribusi.
+Namun, esensi dari rekayasa perangkat lunak bukanlah "mengetik kode." Ini tentang menyelesaikan tantangan bisnis melalui teknologi dan membangun sistem yang skalabel dan dapat dipelihara. Dalam artikel ini, kita akan membahas "keterampilan insinyur khas manusia" yang nilainya semakin meningkat justru di era saat AI menulis kode. Kita akan menelaahnya secara sangat rinci dan teknis dari sudut pandang keterbatasan teknis LLM, Domain-Driven Design (DDD), arsitektur sistem, dan proses debug [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/).
 
 ---
 
@@ -116,11 +116,11 @@ Paradigma dasar pengembangan perangkat lunak di masa depan bukanlah menginstruks
 
 ## 4. Keterampilan Khas Manusia ③: Desain Arsitektur dan Penskalaan Sistem Terdistribusi
 
-Perangkat lunak modern telah berevolusi dari monolit yang berjalan pada satu server ke arsitektur layanan mikro (microservices) cloud-native dan arsitektur event-driven (berbasis peristiwa). Merancang sistem terdistribusi seperti itu adalah area yang sangat sulit bagi AI, yang hanya mampu mengoptimalkan logika secara lokal.
+Perangkat lunak modern telah berevolusi dari monolit yang berjalan pada satu server ke arsitektur layanan mikro (microservices) cloud-native dan arsitektur event-driven (berbasis peristiwa). Merancang [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/) seperti itu adalah area yang sangat sulit bagi AI, yang hanya mampu mengoptimalkan logika secara lokal.
 
 ### 4.1 Teorema CAP dan Penilaian Trade-off
 
-Saat merancang sistem terdistribusi, insinyur selalu dihadapkan pada "Teorema CAP". Teorema CAP adalah prinsip yang menyatakan bahwa sebuah sistem terdistribusi hanya dapat memenuhi dua dari tiga karakteristik berikut secara bersamaan:
+Saat merancang [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/), insinyur selalu dihadapkan pada "Teorema CAP". Teorema CAP adalah prinsip yang menyatakan bahwa sebuah [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/) hanya dapat memenuhi dua dari tiga karakteristik berikut secara bersamaan:
 
 - **[Consistency](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/) (Konsistensi)**: Apakah semua node melihat data yang sama pada waktu yang sama?
 - **[Availability](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/) (Ketersediaan)**: Apakah sistem terus merespons meskipun beberapa node mengalami kegagalan?
@@ -134,7 +134,7 @@ Meskipun AI dapat menulis "kode yang memprioritaskan C" atau "kode yang memprior
 
 ### 4.2 Komunikasi Asinkron dan Konsistensi Akhir ([Eventual Consistency](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/))
 
-Ketika sistem menjadi berskala besar, koordinasi antar layanan beralih dari komunikasi sinkron melalui [REST API](https://kenji.blog/id/p/graphql-vs-rest-api-overfetching-type-safety/) ke komunikasi asinkron menggunakan message queue (seperti Kafka, RabbitMQ). Konsistensi data di sini berubah dari konsistensi instan menjadi "konsistensi akhir" (Eventual [Consistency](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/)).
+Ketika sistem menjadi berskala besar, koordinasi antar layanan beralih dari komunikasi sinkron melalui [REST API](https://kenji.blog/id/p/graphql-vs-rest-api-overfetching-type-safety/) ke komunikasi asinkron menggunakan message queue (seperti [Kafka, RabbitMQ](/id/p/event-driven-architecture-message-queue-kafka-rabbitmq/)). Konsistensi data di sini berubah dari konsistensi instan menjadi "konsistensi akhir" (Eventual [Consistency](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/)).
 Kapan pola arsitektur tingkat lanjut seperti Saga Pattern atau [CQRS](https://kenji.blog/id/p/event-driven-architecture-async/) (Command Query Responsibility Segregation) harus diperkenalkan? Membuat keputusan kompleks ini dan menggambar cetak biru keseluruhan sistem adalah kompetensi utama dari insinyur senior (senior engineer).
 
 ```mermaid
@@ -201,7 +201,7 @@ Di era AI, insinyur ditingkatkan dari "pengetik kode" menjadi "konduktor yang me
 
 ## 7. Kesimpulan: Jangan Menolak Evolusi, Kendarailah Gelombangnya
 
-"Era di mana AI menulis kode" bukanlah ancaman bagi insinyur, melainkan peluang terbesar dalam sejarah. Sama seperti transisi dari bahasa assembly ke bahasa C di masa lalu, atau evolusi dari manajemen pointer memori ke garbage collection di [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), pembuatan kode oleh AI hanyalah "satu tingkat abstraksi yang naik."
+"Era di mana AI menulis kode" bukanlah ancaman bagi insinyur, melainkan peluang terbesar dalam sejarah. Sama seperti transisi dari bahasa assembly ke bahasa C di masa lalu, atau evolusi dari manajemen [pointer](/id/p/c-language-pointers-memory-management-stack-heap/) memori ke garbage collection di [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), pembuatan kode oleh AI hanyalah "satu tingkat abstraksi yang naik."
 
 Insinyur masa depan tidak perlu khawatir tentang detail spesifikasi bahasa pemrograman tertentu atau pembaruan versi dari kerangka kerja (framework), tetapi dapat memusatkan sumber daya mereka pada penyelesaian masalah yang lebih esensial dan tingkat tinggi yang khas manusia, seperti **"Apa masalah bisnisnya?", "Bagaimana data harus dibagi dan dihubungkan?", dan "Bagaimana cara memulihkan dengan cepat saat sistem mati?"**
 

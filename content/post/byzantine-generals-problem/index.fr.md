@@ -9,7 +9,7 @@ tags: ["Problème des généraux byzantins", "Blockchain", "Consensus", "Algorit
 slug: "byzantine-generals-problem"
 ---
 
-Lorsque l'on étudie les systèmes distribués et la technologie blockchain, on est presque inévitablement confronté au **problème des généraux byzantins** ([Byzantine Generals](https://kenji.blog/fr/p/byzantine-generals-problem-consensus/) Problem). Ce problème traite d'un thème crucial : comment un système global parvient-il à former un consensus correct lorsqu'il y a des « traîtres » ou des « nœuds défaillants » au sein du réseau ?
+Lorsque l'on étudie les [systèmes distribués](/fr/p/cap-theorem-distributed-systems-tradeoff/) et la technologie [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/), on est presque inévitablement confronté au **problème des généraux byzantins** ([Byzantine Generals](https://kenji.blog/fr/p/byzantine-generals-problem-consensus/) Problem). Ce problème traite d'un thème crucial : comment un système global parvient-il à former un consensus correct lorsqu'il y a des « traîtres » ou des « nœuds défaillants » au sein du réseau ?
 
 Dans cet article, nous allons expliquer en détail ce **problème des généraux byzantins**, de ses concepts de base à ses applications, en utilisant des histoires concrètes, des formules mathématiques et des schémas.
 
@@ -121,7 +121,7 @@ Dans ce modèle, l'ordre émis par le commandant ne peut pas être altéré en c
 
 La résistance au problème des généraux byzantins est appelée la **Tolérance aux pannes byzantines** (Byzantine Fault Tolerance, BFT). Il s'agit d'un indicateur clé permettant à un système distribué de continuer à fonctionner normalement même face à des pannes ou des attaques malveillantes.
 
-Ces dernières années, ce problème est revenu sur le devant de la scène grâce à l'apparition de la **technologie blockchain**. La blockchain étant un réseau [P2P](https://kenji.blog/fr/p/webrtc-realtime-communication-p2p/) sans autorité centrale, des participants malveillants (nœuds) peuvent diffuser de faux historiques de transactions. Il s'agit précisément du problème des généraux byzantins.
+Ces dernières années, ce problème est revenu sur le devant de la scène grâce à l'apparition de la **technologie [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/)**. La [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/) étant un réseau [P2P](https://kenji.blog/fr/p/webrtc-realtime-communication-p2p/) sans autorité centrale, des participants malveillants (nœuds) peuvent diffuser de faux historiques de transactions. Il s'agit précisément du problème des généraux byzantins.
 
 ### Le mécanisme de PBFT (Practical Byzantine Fault Tolerance)
 
@@ -162,7 +162,7 @@ De nombreux algorithmes PoS récents, tels que Casper pour Ethereum ou Tendermin
 
 ## 5. Modélisation mathématique et applications de la BFT
 
-Dans la conception de systèmes distribués plus avancés, les transitions d'état du système sont définies de manière stricte afin de prouver la validité de l'algorithme BFT.
+Dans la conception de [systèmes distribués](/fr/p/cap-theorem-distributed-systems-tradeoff/) plus avancés, les transitions d'état du système sont définies de manière stricte afin de prouver la validité de l'algorithme BFT.
 
 Par exemple, supposons que l'ensemble des nœuds soit $\mathcal{N} = \{1, 2, \dots, n\}$ et que le nombre maximum de nœuds traîtres soit $f$. Lors d'un round $r$, chaque nœud $i$ maintient un état $s_i^{(r)}$ et échange des messages avec les autres nœuds.
 
@@ -180,6 +180,6 @@ $$
 
 ## 6. Conclusion
 
-Le **problème des généraux byzantins** est la théorie fondamentale qui garantit la fiabilité des systèmes distribués. La question « Comment prendre des décisions collectives correctes dans un environnement où l'on ne sait pas à qui faire confiance ? » est aujourd'hui appliquée dans toutes les infrastructures informatiques modernes, des fondations technologiques des crypto-monnaies aux systèmes de contrôle des avions et au cloud computing.
+Le **problème des généraux byzantins** est la théorie fondamentale qui garantit la fiabilité des [systèmes distribués](/fr/p/cap-theorem-distributed-systems-tradeoff/). La question « Comment prendre des décisions collectives correctes dans un environnement où l'on ne sait pas à qui faire confiance ? » est aujourd'hui appliquée dans toutes les infrastructures informatiques modernes, des fondations technologiques des crypto-monnaies aux systèmes de contrôle des avions et au cloud computing.
 
-En supposant l'existence de traîtres, l'évolution des algorithmes conçus pour empêcher l'arrêt des systèmes ne s'arrêtera jamais. [Pour les ingénieurs](https://kenji.blog/fr/p/prompt-engineering-for-engineers/) impliqués dans la conception de systèmes distribués, comprendre les preuves mathématiques et les algorithmes sous-jacents à ce problème sera une arme redoutable.
+En supposant l'existence de traîtres, l'évolution des algorithmes conçus pour empêcher l'arrêt des systèmes ne s'arrêtera jamais. [Pour les ingénieurs](https://kenji.blog/fr/p/prompt-engineering-for-engineers/) impliqués dans la conception de [systèmes distribués](/fr/p/cap-theorem-distributed-systems-tradeoff/), comprendre les preuves mathématiques et les algorithmes sous-jacents à ce problème sera une arme redoutable.

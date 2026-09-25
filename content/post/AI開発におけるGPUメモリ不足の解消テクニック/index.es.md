@@ -14,7 +14,7 @@ description: 'La escasez de VRAM (memoria de GPU) es la mayor barrera en el entr
 
 En los últimos años, tecnologías de IA generativa como los Grandes Modelos de Lenguaje ([LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/)) y los Modelos de Difusión (Diffusion Models) han experimentado un rápido desarrollo. Sin embargo, al entrenar (ajuste fino / fine-tuning) o ejecutar la inferencia (Inference) de estos modelos de IA de vanguardia en entornos locales, muchos desarrolladores e investigadores se enfrentan a una barrera extremadamente física: **la falta de memoria de GPU (VRAM)**.
 
-Incluso con las GPUs de gama alta para consumidores, como la NVIDIA GeForce RTX 4090, la VRAM máxima es de 24 GB, lo que hace completamente imposible cargar directamente modelos gigantescos como Llama 3 70B. Las opciones orientadas a centros de datos, como la H100 (80 GB) o la B200 (192 GB), son extremadamente costosas y no están fácilmente al alcance de individuos o equipos pequeños. Si no se puede atravesar este "Muro de la VRAM (The Wall of VRAM)", ni siquiera será posible experimentar con los modelos más avanzados.
+Incluso con las GPUs de gama alta para consumidores, como la NVIDIA [GeForce](/es/p/history-of-nvidia/) RTX 4090, la VRAM máxima es de 24 GB, lo que hace completamente imposible cargar directamente modelos gigantescos como Llama 3 70B. Las opciones orientadas a centros de datos, como la H100 (80 GB) o la B200 (192 GB), son extremadamente costosas y no están fácilmente al alcance de individuos o equipos pequeños. Si no se puede atravesar este "Muro de la VRAM (The Wall of VRAM)", ni siquiera será posible experimentar con los modelos más avanzados.
 
 En este artículo, explicaremos exhaustivamente desde la perspectiva tanto de la inferencia como del entrenamiento, las técnicas avanzadas para superar esta restricción física de la VRAM mediante ingenios en la arquitectura de software y hardware. Profundizaremos usando fórmulas matemáticas e ilustraciones en temas como la descarga de CPU, la optimización de la caché KV, los puntos de control de gradiente (Gradient Checkpointing) y las arquitecturas más recientes de memoria unificada (Unified Memory). Al leer este artículo, comprenderás profundamente el comportamiento de la VRAM y adquirirás conocimientos prácticos para manejar modelos gigantescos con recursos limitados.
 
@@ -32,7 +32,7 @@ Los tipos de datos comúnmente utilizados en el aprendizaje profundo y el númer
 - **FP32 (Punto flotante de precisión simple):** 4 bytes (precisión estándar durante el entrenamiento)
 - **FP16 / BF16 (Punto flotante de media precisión):** 2 bytes (inferencia general y entrenamiento de precisión mixta)
 - **INT8 (Entero de 8 bits):** 1 byte (modelos cuantizados)
-- **INT4 (Cuantización de enteros de 4 bits):** 0.5 bytes (cuantización extrema como GPTQ, AWQ, GGUF)
+- **INT4 (Cuantización de enteros de 4 bits):** 0.5 bytes (cuantización extrema como GPTQ, AWQ, [GGUF](/es/p/llama-cpp-quantization-gguf/))
 
 Si el número de parámetros de todo el modelo es $P$, la cantidad base de memoria $M_{weights}$ ocupada por los pesos en sí se expresa con la siguiente fórmula:
 

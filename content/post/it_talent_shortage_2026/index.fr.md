@@ -144,7 +144,7 @@ Le concept de 'MLOps', qui vise à maintenir en production les modèles d'IA gé
 
 ## 5. Stratégie de survie pour les ingénieurs : Comment survivre après 2026
 
-Dans une telle situation, comment nous, ingénieurs, devrions-nous construire notre carrière ? La situation peut sembler désespérée, en particulier pour les ingénieurs peu expérimentés. Cependant, selon votre stratégie, il existe de nombreuses voies de réussite.
+Dans une telle situation, comment nous, ingénieurs, devrions-nous construire notre carrière ? La situation peut sembler désespérée, en particulier [pour les ingénieurs](/fr/p/prompt-engineering-for-engineers/) peu expérimentés. Cependant, selon votre stratégie, il existe de nombreuses voies de réussite.
 
 ### Stratégie 1 : Viser à devenir un 'Orchestrateur IA'
 Plutôt que de devenir un expert d'un seul langage ou framework, il s'agit d'affiner sa capacité en tant qu''orchestrateur' qui construit le système global en combinant plusieurs outils ou agents d'IA. Il est nécessaire de réduire le temps passé à écrire soi-même du code, et d'adopter une 'perspective de niveau supérieur' pour connecter les composants générés par l'IA et superviser l'architecture globale.
@@ -176,7 +176,7 @@ graph LR
 
 Vous avez sans doute compris que la réalité du 'problème de 2026' et de la pénurie de talents informatiques qui l'accompagne n'est pas un simple 'manque d'effectifs', mais une 'inadéquation due à l'évolution dramatique des compétences requises'.
 
-Le fardeau des systèmes legacy, l'épuisement des ingénieurs de données et le changement de paradigme provoqué par l'IA générative. Ces vagues constituent une menace pour les ingénieurs traditionnels, mais pour ceux qui peuvent accepter le changement et mettre à jour leurs propres compétences, c'est aussi une opportunité colossale et sans précédent.
+Le fardeau des systèmes legacy, l'épuisement des ingénieurs de données et le changement de paradigme provoqué par l'IA générative. Ces vagues constituent une menace [pour les ingénieurs](/fr/p/prompt-engineering-for-engineers/) traditionnels, mais pour ceux qui peuvent accepter le changement et mettre à jour leurs propres compétences, c'est aussi une opportunité colossale et sans précédent.
 
 L'IA ne va pas nous voler notre travail, ce n'est qu'un outil qui nous permet de nous concentrer sur un travail plus avancé et créatif. Se libérer de la 'tâche' qu'est le codage pour se concentrer sur la 'conception' de systèmes et la 'création de valeur' commerciale. C'est la seule voie pour survivre et prospérer dans l'industrie informatique au-delà de 2026.
 

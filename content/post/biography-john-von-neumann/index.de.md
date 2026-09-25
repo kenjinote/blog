@@ -10,7 +10,7 @@ image: "eyecatch.jpg"
 
 # Einleitung: Der Mann, der als "Marsianer" gefürchtet wurde
 
-Im Laufe der Menschheitsgeschichte gab es viele Individuen, die als "Genies" bezeichnet wurden. Große Persönlichkeiten wie Albert Einstein, Isaac Newton und Leonardo da Vinci zeigten alle herausragendes Talent in bestimmten Bereichen. Es wird jedoch gesagt, dass ein bestimmter Wissenschaftler, der im 20. Jahrhundert lebte, eine "Intelligenz aus einer anderen Dimension" besaß, die sie alle übertraf. Das war John von Neumann (1903 - 1957).
+Im Laufe der Menschheitsgeschichte gab es viele Individuen, die als "Genies" bezeichnet wurden. Große Persönlichkeiten wie Albert Einstein, [Isaac Newton](/de/p/newton/) und Leonardo da Vinci zeigten alle herausragendes Talent in bestimmten Bereichen. Es wird jedoch gesagt, dass ein bestimmter Wissenschaftler, der im 20. Jahrhundert lebte, eine "Intelligenz aus einer anderen Dimension" besaß, die sie alle übertraf. Das war [John von Neumann](/de/p/von-neumann/) (1903 - 1957).
 
 Sein Gehirn war so weit jenseits des Menschlichen, dass seine wissenschaftlichen Kollegen halbscherzhaft flüsterten, er sei ein "Marsianer, der sich als Mensch ausgibt" oder habe das "Gehirn des Teufels". Es gibt viele Anekdoten darüber, dass selbst Nobelpreisträger vor von Neumann die Grenzen ihres eigenen Intellekts erkannten und keine andere Wahl hatten, als sich wie Kinder zu verhalten.
 
@@ -35,7 +35,7 @@ Im damaligen Budapest wurden neben von Neumann ein herausragendes jüdisches Tal
 ### Die Universität Göttingen und David Hilbert
 In seiner Jugend studierte von Neumann Mathematik an der Universität Budapest und gleichzeitig Chemieingenieurwesen an der Universität Berlin und der ETH Zürich (weil sein Vater befürchtete, er könne von der Mathematik allein nicht leben). Als er mit nur 22 Jahren in Mathematik promovierte, ging er an die Universität Göttingen in Deutschland, dem damaligen Zentrum der mathematischen Welt.
 
-Dort diente er als Assistent von David Hilbert, der damaligen absoluten Autorität in der mathematischen Welt. Hilbert förderte das "Hilbert-Programm", um die "Vollständigkeit und Konsistenz der Mathematik" zu beweisen, und von Neumann engagierte sich zutiefst in diesem großen Plan und leistete entscheidende Beiträge auf dem Gebiet der axiomatischen Mengenlehre.
+Dort diente er als Assistent von [David Hilbert](/de/p/hilbert/), der damaligen absoluten Autorität in der mathematischen Welt. Hilbert förderte das "Hilbert-Programm", um die "Vollständigkeit und Konsistenz der Mathematik" zu beweisen, und von Neumann engagierte sich zutiefst in diesem großen Plan und leistete entscheidende Beiträge auf dem Gebiet der axiomatischen Mengenlehre.
 
 ### Mathematische Grundlagen der Quantenmechanik
 In den späten 1920er Jahren entstand in der Welt der Physik eine neue Theorie namens Quantenmechanik, die große Verwirrung stiftete. Zwei Theorien, Werner Heisenbergs "Matrizenmechanik" und Erwin Schrödingers "Wellenmechanik", die in Aussehen und Ansatz völlig unterschiedlich aussahen, standen Seite an Seite.
@@ -47,7 +47,7 @@ Hier bewies von Neumann seine überwältigende mathematische Intuition. Indem er
 ### Der Aufstieg der Nazis und die Flucht nach Amerika
 In den 1930er Jahren kamen in Deutschland die von Adolf Hitler geführten Nazis an die Macht, und die Verfolgung der Juden begann. Von Neumann ahnte die Krise und floh früh nach Amerika. Er wurde an das neu gegründete "Institute for Advanced Study (IAS)" in Princeton, New Jersey, eingeladen.
 
-Dieses Institut versammelte die größten Köpfe aus der ganzen Welt, darunter Einstein und Kurt Gödel. Von Neumann wurde im jungen Alter von 29 Jahren ordentlicher Professor am Institut (zusammen mit Einstein und anderen war er der jüngste ordentliche Professor).
+Dieses Institut versammelte die größten Köpfe aus der ganzen Welt, darunter Einstein und [Kurt Gödel](/de/p/godel/). Von Neumann wurde im jungen Alter von 29 Jahren ordentlicher Professor am Institut (zusammen mit Einstein und anderen war er der jüngste ordentliche Professor).
 
 ### Ein unorthodoxer Spielstil
 In Princeton verhielt sich von Neumann völlig anders als die anderen ruhigen Gelehrten. Er löste schwierige mathematische Probleme, während er laute deutsche Märsche hörte, veranstaltete häufig rauschende Partys, fuhr Autos mit halsbrecherischer Geschwindigkeit und demolierte fast jedes Jahr ein neues Auto (die Kreuzung, an der er häufig Unfälle verursachte, wurde sogar "von-Neumann-Kreuzung" genannt). Während Einstein ein einfaches und einsames Leben bevorzugte, trug von Neumann immer tadellose Anzüge und genoss weltliche Freuden sehr.
@@ -127,11 +127,11 @@ Dies geschah noch vor der Entdeckung der Doppelhelixstruktur der DNA (1953). Unt
 
 ## Fazit: Eine für die Menschheit zu frühe Intelligenz
 
-Am 8. Februar 1957 starb John von Neumann im jungen Alter von 53 Jahren in einem Krankenhaus in Washington D.C. an Krebs. Aus Angst, er könne unbewusst militärische Geheimnisse preisgeben, soll das Militär jederzeit Militärpolizei in seinem Krankenzimmer stationiert gehabt haben.
+Am 8. Februar 1957 starb [John von Neumann](/de/p/von-neumann/) im jungen Alter von 53 Jahren in einem Krankenhaus in Washington D.C. an Krebs. Aus Angst, er könne unbewusst militärische Geheimnisse preisgeben, soll das Militär jederzeit Militärpolizei in seinem Krankenzimmer stationiert gehabt haben.
 
 Sein Gehirn arbeitete bis zum letzten Moment ununterbrochen weiter, aber er hatte große Angst davor, mit fortschreitendem Krebs allmählich sein Gedächtnis zu verlieren. Der Prozess eines Mannes, der einst ein ganzes Buch auswendig lernen konnte und nicht einmal mehr einfache Additionen durchführen konnte, war für jeden in seiner Umgebung ein grausamer Anblick.
 
-John von Neumann. Er durchlief und schuf die Grundlagen für Bereiche, für deren Erschließung die Menschheit Hunderte von Jahren hätte brauchen sollen – von Mathematik, Physik, Wirtschaftswissenschaften, Meteorologie bis hin zur Informatik – in nur einem einzigen Leben.
+[John von Neumann](/de/p/von-neumann/). Er durchlief und schuf die Grundlagen für Bereiche, für deren Erschließung die Menschheit Hunderte von Jahren hätte brauchen sollen – von Mathematik, Physik, Wirtschaftswissenschaften, Meteorologie bis hin zur Informatik – in nur einem einzigen Leben.
 
 Weil seine Errungenschaften so vielfältig und tiefgreifend sind, ist es immer noch kaum zu glauben, dass sie von einem einzigen Menschen vollbracht wurden. Ob er ein "Marsianer" war oder nicht, ist ungewiss, aber seine Klone namens "Von-Neumann-Architektur" rechnen in diesem Moment auf der ganzen Welt unaufhörlich weiter.
 

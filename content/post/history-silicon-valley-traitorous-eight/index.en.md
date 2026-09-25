@@ -12,7 +12,7 @@ image: "eyecatch.jpg"
 
 In the modern world, "semiconductors" support the foundation of every technology, such as smartphones, computers, the Internet, and AI. The center of this semiconductor industry, and the innovation mecca admired by entrepreneurs worldwide, is "Silicon Valley," located in northern California.
 
-This place, crowded with giant technology companies like Google, Apple, Meta (formerly Facebook), and Netflix, did not look like it does today from the start. Once, it was merely the "Santa Clara Valley," a quiet agricultural area filled with orchards. Why did it transform into the world's premier technology hub?
+This place, crowded with giant technology companies like Google, Apple, Meta ([formerly Facebook](/en/p/history-of-meta-facebook/)), and Netflix, did not look like it does today from the start. Once, it was merely the "Santa Clara Valley," a quiet agricultural area filled with orchards. Why did it transform into the world's premier technology hub?
 
 The beginning of it all can be traced back to a single "betrayal" incident in 1957. Eight young, brilliant engineers who had gathered under a genius scientist left him to start their own company. They would later be called the **"Traitorous Eight."**
 
@@ -33,7 +33,7 @@ Leveraging his massive fame and charisma as a Nobel laureate (the award was deci
 Among them were the following eight individuals, who would later be called the "Traitorous Eight."
 
 1. **Robert Noyce**: A physicist with charismatic leadership. He later founded Intel and was called the "Mayor of Silicon Valley."
-2. **Gordon Moore**: A quiet and thoughtful chemist. The proponent of the famous "Moore's Law," he co-founded Intel with Noyce.
+2. **Gordon Moore**: A quiet and thoughtful chemist. The proponent of the famous "[Moore's Law](/en/p/business-moores-law/)," he co-founded Intel with Noyce.
 3. **Jean Hoerni**: A theoretical physicist from Switzerland. He later invented the "planar process," essential for manufacturing integrated circuits (ICs).
 4. **Eugene Kleiner**: A mechanical engineer from Austria. He later established "Kleiner Perkins," a representative venture capital firm of Silicon Valley.
 5. **Julius Blank**: A brilliant mechanical engineer and friend of Kleiner.

@@ -104,7 +104,7 @@ $$
 VRAM_{required} \approx \left( \frac{P \times bits\_per\_weight}{8} \right) + Context\_Memory
 $$
 
-Bahkan GPU kelas atas (NVIDIA RTX 4090) yang dapat dibeli konsumen umum hanya memiliki 24GB VRAM, sehingga mustahil untuk menjalankan model kelas 70B apa adanya. Di sinilah "teknologi kuantisasi (Quantization)" seperti AWQ dan GGUF muncul, dan pergulatan teknis terjadi untuk menemukan jalan tengah dengan mengompresi bobot menjadi 4-bit atau 8-bit, tetapi degradasi kinerja (memburuknya Perplexity) akibat kuantisasi tidak dapat dihindari.
+Bahkan GPU kelas atas (NVIDIA RTX 4090) yang dapat dibeli konsumen umum hanya memiliki 24GB VRAM, sehingga mustahil untuk menjalankan model kelas 70B apa adanya. Di sinilah "teknologi kuantisasi (Quantization)" seperti AWQ dan [GGUF](/id/p/llama-cpp-quantization-gguf/) muncul, dan pergulatan teknis terjadi untuk menemukan jalan tengah dengan mengompresi bobot menjadi 4-bit atau 8-bit, tetapi degradasi kinerja (memburuknya Perplexity) akibat kuantisasi tidak dapat dihindari.
 
 Selain itu, "AI PC" yang dilengkapi dengan NPU (Neural Processing Unit) baru-baru ini telah muncul, tetapi TOPS (Tera Operations Per Second) NPU saat ini berada pada batas menjalankan model skala kecil yang ringan (SLM: Small Language Models). Untuk melakukan inferensi yang benar-benar canggih secara lokal, diperlukan kekuatan modal yang dapat membangun lingkungan multi-GPU skala jutaan yen. Inilah sifat sebenarnya dari "kesenjangan digital padat modal" dalam AI.
 

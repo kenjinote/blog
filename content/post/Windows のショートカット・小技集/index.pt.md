@@ -9,7 +9,7 @@ image: "img.webp"
 categories: ["pc-gadgets"]
 description: 'Apresentamos uma seleção cuidadosa de teclas de atalho úteis e truques que melhoram a eficiência do trabalho no Windows 11 e Windows 10. É uma coleção de técnicas essenciais úteis para o uso diário, de iniciantes a usuários avançados, incluindo operação de janela, exibição na área de trabalho, entrada de voz e captura de tela.'
 ---
-Esta é uma coleção de pequenas dicas e atalhos úteis para o uso diário do Windows. Espero que seja útil para iniciantes.
+Esta é uma coleção de pequenas dicas e atalhos úteis para o uso diário do Windows. Espero que seja útil [para iniciantes](/pt/p/produtos-de-couro%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/).
 Embora seja focado no Windows 11, a maioria também deve funcionar no Windows 10.
 
 ## Fechar janela

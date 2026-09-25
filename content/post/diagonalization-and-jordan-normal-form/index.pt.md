@@ -117,7 +117,7 @@ O **polinômio mínimo** $m(\lambda)$ tem raízes que determinam a diagonalizaç
 
 ## Diferença da [Decomposição em Valores Singulares (SVD)](https://kenji.blog/pt/p/singular-value-decomposition/)
 
-A SVD ($A = U \Sigma V^*$) aplica-se a matrizes $m \times n$. Diagonalização só a quadradas para iterações.
+A [SVD](/pt/p/singular-value-decomposition/) ($A = U \Sigma V^*$) aplica-se a matrizes $m \times n$. Diagonalização só a quadradas para iterações.
 
 ```mermaid
 graph LR
@@ -155,4 +155,4 @@ print(np.round(T, 4))
 
 ## Conclusão
 
-Entender esses métodos permite analisar o comportamento assintótico de sistemas dinâmicos e cadeias de Markov no mundo real.
+Entender esses métodos permite analisar o comportamento assintótico de sistemas dinâmicos e [cadeias de Markov](/pt/p/markov-chain/) no mundo real.

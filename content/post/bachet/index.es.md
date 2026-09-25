@@ -79,7 +79,7 @@ $$
 ax + by = 1
 $$
 
-$x$ y $y$ se pueden calcular de manera concreta expandiendo el algoritmo de [Euclides](https://kenji.blog/es/p/euclid/) (el algoritmo de Euclides extendido), que se ha convertido en un teorema fundamental indispensable en la criptografía moderna (como RSA). En contextos que valoran la precisión histórica, esto a veces se llama el **teorema de [Bachet](https://kenji.blog/es/p/bachet/)**.
+$x$ y $y$ se pueden calcular de manera concreta expandiendo el algoritmo de [Euclides](https://kenji.blog/es/p/euclid/) ([el algoritmo de Euclides](/es/p/euclidean-algorithm/) extendido), que se ha convertido en un teorema fundamental indispensable en la criptografía moderna (como RSA). En contextos que valoran la precisión histórica, esto a veces se llama el **teorema de [Bachet](https://kenji.blog/es/p/bachet/)**.
 
 ## Conclusión
 

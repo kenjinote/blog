@@ -8,7 +8,7 @@ categories: ["mathematics", "biography"]
 tags: ["Yutaka Taniyama", "Mathematik", "Großer Fermatscher Satz", "Taniyama-Shimura-Vermutung", "Elliptische Kurven", "Modulformen"]
 ---
 
-# [Yutaka Taniyama: Das Leben und die Errungenschaften des genialen Mathematikers, der ungelöste Probleme herausforderte](https://kenji.blog/p/taniyama-yutaka/)
+# [Yutaka Taniyama: Das Leben und die Errungenschaften des genialen Mathematikers, der ungelöste Probleme herausforderte](https://kenji.blog/de/p/taniyama-yutaka/)
 
 Der Beweis des **Großen [Fermat](https://kenji.blog/de/p/fermat/)schen Satzes** ist eine der dramatischsten und wichtigsten Entwicklungen in der modernen Mathematik. Hinter dieser monumentalen Errungenschaft verbirgt sich eine erstaunliche Vermutung, die von zwei japanischen Mathematikern aufgestellt wurde. Einer von ihnen war **[Yutaka Taniyama](https://kenji.blog/de/p/taniyama-yutaka/)** (1927 - 1958), der in jungen Jahren verstarb. In diesem Artikel tauchen wir tief in die große Vision ein, die hinter der von ihm vorgeschlagenen "Taniyama-Shimura-Vermutung" steht, sowie in sein eigenes turbulentes Leben.
 

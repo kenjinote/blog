@@ -68,15 +68,15 @@ En 2008, comenzó una nueva historia del P2P con la publicación de un documento
 Se trata de **Bitcoin**.
 
 Los sistemas P2P tradicionales se utilizaban para "compartir archivos" o "distribuir el procesamiento computacional", pero Bitcoin utilizó la red P2P para "la **distribución de la confianza**".
-Incluso sin un banco central o administrador, los innumerables nodos que participan en la red P2P supervisan los registros de transacciones (el libro mayor) de los demás, y combinando la criptografía (funciones hash y criptografía de clave pública) con los algoritmos de consenso (Proof of Work), construyeron un "sistema distribuido donde la alteración de datos es prácticamente imposible: la **blockchain**".
+Incluso sin un banco central o administrador, los innumerables nodos que participan en la red P2P supervisan los registros de transacciones (el libro mayor) de los demás, y combinando la criptografía (funciones hash y criptografía de clave pública) con los algoritmos de consenso (Proof of Work), construyeron un "sistema distribuido donde la alteración de datos es prácticamente imposible: la **[blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/)**".
 
 Esta idea de una "red descentralizada autónoma que no depende de un administrador específico" está directamente vinculada al movimiento actual llamado "Web3 (Web Descentralizada)".
 
 ## 5. Retos y futuro de la tecnología P2P
 
 El P2P es una tecnología maravillosa, pero también presenta desafíos.
-Uno de ellos es el problema de los "**polizones (free riders)**". Si aumenta el número de usuarios que solo reciben datos pero no los proporcionan, la red declina. Para resolver este problema, se están investigando mecanismos como el otorgamiento de derechos de descarga prioritaria en función de la cantidad proporcionada, o incentivos económicos (tokens) como en la blockchain.
+Uno de ellos es el problema de los "**polizones (free riders)**". Si aumenta el número de usuarios que solo reciben datos pero no los proporcionan, la red declina. Para resolver este problema, se están investigando mecanismos como el otorgamiento de derechos de descarga prioritaria en función de la cantidad proporcionada, o incentivos económicos (tokens) como en la [blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/).
 
 Otro es "**la gobernanza y la seguridad**". Dado que no hay un administrador central, si un nodo malicioso difunde datos falsos o virus, es difícil bloquearlo de inmediato.
 
-El P2P no es solo una tecnología de "software para compartir archivos". Es el pináculo de los "sistemas distribuidos" en la informática y una arquitectura con una fuerte filosofía de no concentrar el poder en un solo punto. En el futuro, la tecnología P2P continuará evolucionando como base para la comunicación entre dispositivos IoT y la infraestructura de internet descentralizada de próxima generación.
+El P2P no es solo una tecnología de "software para compartir archivos". Es el pináculo de los "[sistemas distribuidos](/es/p/cap-theorem-distributed-systems-tradeoff/)" en la informática y una arquitectura con una fuerte filosofía de no concentrar el poder en un solo punto. En el futuro, la tecnología P2P continuará evolucionando como base para la comunicación entre dispositivos IoT y la infraestructura de internet descentralizada de próxima generación.

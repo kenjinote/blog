@@ -292,4 +292,4 @@ Las **transacciones** en las bases de datos no son simplemente una extensión de
 - Comprender las características del **bloqueo pesimista** y el **bloqueo optimista**, e implementar en la aplicación el control de exclusión óptimo adaptado a la lógica de negocio y las características del tráfico (frecuencia de conflictos).
 
 Combinando este conocimiento y estas tecnologías, es posible construir sistemas robustos que "escalen con alto rendimiento y sin generar inconsistencias de datos".
-En el próximo artículo, tenemos planeado explicar cómo este control de transacciones ha evolucionado en sistemas distribuidos y arquitecturas de microservicios (como el patrón Saga y 2PC). ¡No te lo pierdas!
+En el próximo artículo, tenemos planeado explicar cómo este control de transacciones ha evolucionado en [sistemas distribuidos](/es/p/cap-theorem-distributed-systems-tradeoff/) y arquitecturas de [microservicios](/es/p/microservices-architecture-bff-api-gateway/) (como el patrón Saga y 2PC). ¡No te lo pierdas!

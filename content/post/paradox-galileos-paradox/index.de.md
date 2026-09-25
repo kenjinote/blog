@@ -14,7 +14,7 @@ Welches Bild kommt Ihnen in den Sinn, wenn Sie das Wort „Unendlichkeit“ hör
 
 Unsere alltägliche Intuition wird in einer endlichen Welt geprägt. Zahlen werden stets als etwas betrachtet, das ein Ende hat, wie zum Beispiel „es gibt drei Äpfel“ oder „ein Buch mit 100 Seiten lesen“. Betritt man jedoch die Welt der Mathematik, muss man sich mit dem enormen Konzept der „Unendlichkeit“ auseinandersetzen.
 
-Dieses Mal werden wir uns eingehend mit einem seltsamen Paradoxon befassen, das von Galileo Galilei (1564-1642), der als Vater der Wissenschaft gilt, in seinen späten Jahren in seinem Buch „Discorsi e dimostrazioni matematiche, intorno a due nuove scienze“ (Unterredungen und mathematische Demonstrationen über zwei neue Wissenszweige) aufgeworfen wurde. Es wird das „Galilei-Paradoxon“ genannt und war ein wichtiger Schlüssel zum Öffnen der Tür zur Unendlichkeit, was zu späteren Mathematikern und insbesondere zur „Mengenlehre“ von Georg Cantor führte.
+Dieses Mal werden wir uns eingehend mit einem seltsamen Paradoxon befassen, das von Galileo Galilei (1564-1642), der als Vater der Wissenschaft gilt, in seinen späten Jahren in seinem Buch „Discorsi e dimostrazioni matematiche, intorno a due nuove scienze“ (Unterredungen und mathematische Demonstrationen über zwei neue Wissenszweige) aufgeworfen wurde. Es wird das „Galilei-Paradoxon“ genannt und war ein wichtiger Schlüssel zum Öffnen der Tür zur Unendlichkeit, was zu späteren Mathematikern und insbesondere zur „Mengenlehre“ von [Georg Cantor](/de/p/cantor/) führte.
 
 In diesem Artikel werden wir auf mehreren tausend Zeichen die Wunder des Begriffs der „Unendlichkeit“, die Diskrepanz zur mathematischen Intuition und die Weisheit der Menschheit, die diese überwunden hat, so detailliert wie möglich erklären. Begleiten Sie uns auf diesem intellektuellen Abenteuer.
 
@@ -30,7 +30,7 @@ Das „Paradoxon der Unendlichkeit“, das ihm auffiel, beginnt mit einer sehr e
 
 Wenn wir unserer Intuition folgen, ist die Antwort offensichtlich. „Es sollte überwältigend mehr natürliche Zahlen geben.“ Denn es gibt viele Zahlen (2, 3, 5, 6, 7, 8 ...), die keine Quadratzahlen unter den natürlichen Zahlen sind. Quadratzahlen scheinen nur ein „winziger Teil“ der riesigen Ansammlung natürlicher Zahlen zu sein.
 
-In den Axiomen des berühmten griechischen Mathematikers Euklid steht auch der Satz: **„Das Ganze ist größer als der Teil“**. Dieses Axiom ist eine absolut unerschütterliche Wahrheit in einer endlichen Welt. Nimmt man 3 Äpfel von 10 weg, bleiben 7 übrig. Die ursprünglichen 10 (das Ganze) sind offensichtlich größer als die weggenommenen 3 (der Teil).
+In den Axiomen des berühmten griechischen Mathematikers [Euklid](/de/p/euclid/) steht auch der Satz: **„Das Ganze ist größer als der Teil“**. Dieses Axiom ist eine absolut unerschütterliche Wahrheit in einer endlichen Welt. Nimmt man 3 Äpfel von 10 weg, bleiben 7 übrig. Die ursprünglichen 10 (das Ganze) sind offensichtlich größer als die weggenommenen 3 (der Teil).
 
 Allerdings erkannte Galilei hier eine bestimmte Tatsache.
 
@@ -78,7 +78,7 @@ Mit anderen Worten: Galilei dachte: „In der Welt des Unendlichen bricht die Id
 
 Im mathematischen Rahmen jener Zeit war dies das vernünftigste und klügste Urteil. In gewisser Weise war die Intuition richtig, dass es gefährlich ist, die Regeln der endlichen Welt (das Ganze ist größer als der Teil) in die Welt der Unendlichkeit zu übertragen.
 
-Die Geschichte der Mathematik endete hier jedoch nicht. Etwa 250 Jahre später, in der zweiten Hälfte des 19. Jahrhunderts, stellte sich ein geniales Mathematik-Genie dem Monster der „Unendlichkeit“ frontal entgegen. Das war Georg Cantor.
+Die Geschichte der Mathematik endete hier jedoch nicht. Etwa 250 Jahre später, in der zweiten Hälfte des 19. Jahrhunderts, stellte sich ein geniales Mathematik-Genie dem Monster der „Unendlichkeit“ frontal entgegen. Das war [Georg Cantor](/de/p/cantor/).
 
 ---
 
@@ -157,7 +157,7 @@ Galileis Paradoxon ist kein bloßes Wortspiel oder Haarspalterei. Es zeigt uns, 
 
 Die im 17. Jahrhundert von Galileo Galilei niedergeschriebene „mysteriöse Beziehung zwischen natürlichen Zahlen und Quadratzahlen“ hat hunderte von Jahren überdauert und ist in der modernen Mathematik erblüht, die sich mit der Unendlichkeit befasst.
 
-Das Konzept der Unendlichkeit birgt immer noch viele Geheimnisse. Die Frage: „Gibt es eine andere Unendlichkeit zwischen der Unendlichkeit der natürlichen Zahlen und der Unendlichkeit der reellen Zahlen?“ (Kontinuumshypothese) hat die erstaunliche Schlussfolgerung erreicht, dass sie im Axiomensystem der aktuellen Mathematik „weder bewiesen noch widerlegt werden kann“.
+Das Konzept der Unendlichkeit birgt immer noch viele Geheimnisse. Die Frage: „Gibt es eine andere Unendlichkeit zwischen der Unendlichkeit der natürlichen Zahlen und der Unendlichkeit der reellen Zahlen?“ ([Kontinuumshypothese](/de/p/continuum-hypothesis/)) hat die erstaunliche Schlussfolgerung erreicht, dass sie im Axiomensystem der aktuellen Mathematik „weder bewiesen noch widerlegt werden kann“.
 
 Wie sieht es am Ende des Universums aus? Wird die Zeit ewig weitergehen? Und was liegt hinter der endlosen Hierarchie der Unendlichkeit, die sich in der Welt der Mathematik ausbreitet? Das Galilei-Paradoxon ist eine Episode, die die Brillanz des menschlichen Intellekts symbolisiert, der in der Lage ist, durch bloße Gedanken die „Unendlichkeit“ zu berühren, obwohl wir endliche Wesen sind.
 

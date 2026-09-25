@@ -83,11 +83,11 @@ graph TD
 
 ## Vínculo con las matemáticas y la lógica: Prima de la paradoja de Russell
 
-Esta paradoja no es un simple error de cálculo o una ilusión como "el misterio del dólar perdido". Tiene esencialmente la misma estructura que la **Paradoja de Russell** ("¿El conjunto de todos los conjuntos que no se contienen a sí mismos, se contiene a sí mismo?"), que sacudió los cimientos de las matemáticas.
+Esta paradoja no es un simple error de cálculo o una ilusión como "[el misterio del dólar perdido](/es/p/missing-dollar/)". Tiene esencialmente la misma estructura que la **Paradoja de Russell** ("¿El conjunto de todos los conjuntos que no se contienen a sí mismos, se contiene a sí mismo?"), que sacudió los cimientos de las matemáticas.
 
-Se puede decir que la paradoja de Grelling-Nelson es la versión semántica (del significado de las palabras) de la paradoja de Russell.
+Se puede decir que la paradoja de Grelling-Nelson es la versión semántica (del significado de las palabras) de [la paradoja de Russell](/es/p/russells-paradox/).
 
-La paradoja de Russell en la teoría de conjuntos:
+[La paradoja de Russell](/es/p/russells-paradox/) en la teoría de conjuntos:
 Al definir un conjunto $$ R = \\{ x \mid x \notin x \\} $$,
 preguntar si $R \in R$ o $R \notin R$ lleva a una contradicción.
 

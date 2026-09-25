@@ -95,7 +95,7 @@ Diese einfache Struktur beschleunigt den Dekodierungs- und Verifizierungsprozess
 
 In C und [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) werden Speicheroperationen häufig mit Zeigern durchgeführt. Um dies zu ermöglichen, verwendet WebAssembly das Konzept des **linearen Speichers (Linear Memory)**.
 
-Linearer Speicher ist ein zusammenhängendes Byte-Array, auf das von einer WebAssembly-Instanz aus zugegriffen werden kann. Aus der Sicht von JavaScript sieht es wie ein `ArrayBuffer` oder `SharedArrayBuffer` aus. Ein Zeiger in Wasm ist lediglich ein Index (ein ganzzahliger Wert) in dieses Array.
+Linearer Speicher ist ein zusammenhängendes Byte-Array, auf das von einer WebAssembly-Instanz aus zugegriffen werden kann. Aus der Sicht von JavaScript sieht es wie ein `ArrayBuffer` oder `SharedArrayBuffer` aus. Ein [Zeiger](/de/p/c-language-pointers-memory-management-stack-heap/) in Wasm ist lediglich ein Index (ein ganzzahliger Wert) in dieses Array.
 
 ```mermaid
 flowchart LR

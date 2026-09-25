@@ -17,7 +17,7 @@ tags:
 
 ## 1. Daftar Angka yang Dapat Didefinisikan dengan Kata-kata
 
-"Paradoks Richard" yang diterbitkan oleh matematikawan Prancis Jules Richard pada tahun 1905 adalah kerabat dari "Paradoks Berry" yang telah diperkenalkan sebelumnya. Namun, paradoks ini lebih matematis dan mengandung kontradiksi mendalam yang seolah mengintip ke dalam ketakterhinggaan.
+"Paradoks Richard" yang diterbitkan oleh matematikawan Prancis Jules Richard pada tahun 1905 adalah kerabat dari "[Paradoks Berry](/id/p/berry-paradox/)" yang telah diperkenalkan sebelumnya. Namun, paradoks ini lebih matematis dan mengandung kontradiksi mendalam yang seolah mengintip ke dalam ketakterhinggaan.
 
 Pertama, bayangkan kita mengumpulkan semua **"bilangan real (desimal) antara 0 dan 1 yang dapat didefinisikan secara sempurna dalam kalimat bahasa Indonesia"**.
 
@@ -106,7 +106,7 @@ Sebuah kontradiksi yang sempurna! Inilah Paradoks Richard.
 
 ## 4. Mengapa Logikanya Runtuh? (Jebakan Bahasa Meta)
 
-Penyebab lahirnya paradoks ini, sama seperti Paradoks Berry, terletak pada pencampuran "hierarki bahasa".
+Penyebab lahirnya paradoks ini, sama seperti [Paradoks Berry](/id/p/berry-paradox/), terletak pada pencampuran "hierarki bahasa".
 
 Untuk melakukan matematika dengan ketat, kita harus memisahkan dengan jelas "daftar angka yang menjadi objek (bahasa objek)" dan "aturan yang berbicara dari luar tentang sifat daftar tersebut (bahasa meta)".
 

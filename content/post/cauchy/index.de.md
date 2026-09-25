@@ -48,7 +48,7 @@ Seine konservative Ideologie und seine kompromisslose Persönlichkeit verursacht
 
 ## Revolution in der Mathematik: Das Streben nach Strenge
 
-[Cauchy](https://kenji.blog/de/p/cauchy/)s größte Errungenschaft war es, der mathematischen Analysis ein strenges Fundament zu geben. Er rekonstruierte Konzepte wie Grenzwerte, Stetigkeit, Differenzierung und Integration mit strengen Definitionen, die zu den Epsilon-Delta-Argumenten führten (die später von Weierstraß perfektioniert wurden), die wir heute lernen.
+[Cauchy](https://kenji.blog/de/p/cauchy/)s größte Errungenschaft war es, der mathematischen Analysis ein strenges Fundament zu geben. Er rekonstruierte Konzepte wie Grenzwerte, Stetigkeit, Differenzierung und Integration mit strengen Definitionen, die zu den [Epsilon-Delta](/de/p/epsilon-delta-definition/)-Argumenten führten (die später von Weierstraß perfektioniert wurden), die wir heute lernen.
 
 Hier sind einige der wichtigsten Errungenschaften, die seinen Namen tragen.
 

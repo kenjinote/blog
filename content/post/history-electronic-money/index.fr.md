@@ -56,12 +56,12 @@ Les commerçants n'ayant plus besoin de terminaux de lecture FeliCa coûteux, il
 
 D'un autre côté, dans le monde d'Internet, la passion pour une « monnaie numérique sans administrateur central », dont rêvait David Chaum, ne s'était pas éteinte.
 
-Le **Bitcoin**, présenté en 2008 par Satoshi Nakamoto, a utilisé la technologie de la blockchain et la preuve de travail (PoW) pour achever la création d'une monnaie numérique impossible à contrefaire ou à dépenser deux fois, et ce, sans qu'aucune entreprise ou banque spécifique (administrateur central) ne soit impliquée.
+Le **Bitcoin**, présenté en 2008 par Satoshi Nakamoto, a utilisé la technologie de la [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/) et la preuve de travail (PoW) pour achever la création d'une monnaie numérique impossible à contrefaire ou à dépenser deux fois, et ce, sans qu'aucune entreprise ou banque spécifique (administrateur central) ne soit impliquée.
 La monnaie électronique telle que Suica ou PayPay reste en fin de compte un système centralisé reposant sur la « confiance envers les serveurs de la société d'exploitation (JR ou PayPay) ». En revanche, le Bitcoin est un système « décentralisé » surveillé par tous ses participants, ce qui constitue un paradigme fondamentalement différent.
 
 ## 6. Conclusion : L'avenir de la valeur numérisée
 
-La tentative de « convertir la monnaie en données » a commencé par les échecs des cryptographes dans les années 1990. Après une mise en œuvre pratique aux portiques des gares au Japon (FeliCa) et une évolution vers les paiements dans le cloud (codes QR) suite à la diffusion des smartphones, elle a finalement abouti à la monnaie décentralisée ultime sous la forme de la blockchain.
+La tentative de « convertir la monnaie en données » a commencé par les échecs des cryptographes dans les années 1990. Après une mise en œuvre pratique aux portiques des gares au Japon (FeliCa) et une évolution vers les paiements dans le cloud (codes QR) suite à la diffusion des smartphones, elle a finalement abouti à la monnaie décentralisée ultime sous la forme de la [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/).
 
 Actuellement, les banques centrales du monde entier intensifient leurs recherches sur les monnaies numériques de banque centrale (MNBC), des monnaies légales numériques émises directement par l'État.
 Lorsque l'argent sera complètement remplacé par des « données sans masse », comment notre conception de la « valeur » va-t-elle évoluer ? L'histoire de la monnaie électronique s'apprête à entrer dans son chapitre final.

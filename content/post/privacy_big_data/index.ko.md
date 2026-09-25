@@ -139,7 +139,7 @@ $$ w_{t+1} = \sum_{k=1}^K \frac{n_k}{n} w_{t+1}^k $$
 $$ E(m_1 + m_2) = E(m_1) \oplus E(m_2) $$
 $$ E(m_1 \times m_2) = E(m_1) \otimes E(m_2) $$
 
-동형 암호는 덧셈 또는 곱셈 중 하나만 가능한 '부분 동형 암호(Partially Homomorphic Encryption: PHE)'와 덧셈과 곱셈 모두 무한 번 가능한 '완전 동형 암호(Fully Homomorphic Encryption: FHE)'로 나뉩니다. 2009년 크레이그 젠트리(Craig Gentry)가 격자 기반 암호(Lattice-based cryptography)를 사용한 최초의 FHE 체계를 구축한 이후 암호학에서 큰 돌파구가 되었습니다.
+동형 암호는 덧셈 또는 곱셈 중 하나만 가능한 '부분 동형 암호(Partially Homomorphic Encryption: PHE)'와 덧셈과 곱셈 모두 무한 번 가능한 '완전 동형 암호(Fully Homomorphic Encryption: [FHE](/ko/p/fully-homomorphic-encryption-fhe-explained/))'로 나뉩니다. 2009년 크레이그 젠트리(Craig Gentry)가 격자 기반 암호([Lattice-based cryptography](/ko/p/lattice-based-cryptography-math-intuition/))를 사용한 최초의 [FHE](/ko/p/fully-homomorphic-encryption-fhe-explained/) 체계를 구축한 이후 암호학에서 큰 돌파구가 되었습니다.
 
 현재 계산 비용이나 암호문 크기의 증가(오버헤드)라는 과제는 남아 있지만, 클라우드 상에서의 의료 데이터의 안전한 분석이나 금융 기관 간의 비밀 계산 등에 응용될 것으로 기대되고 있습니다.
 

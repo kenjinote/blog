@@ -50,7 +50,7 @@ graph TD
 
 ## Impacto na Posteridade e Mensagem para os Engenheiros Modernos
 
-A maior conquista de Martin Fowler é articular "princípios de engenharia universais" independentes de linguagens ou ferramentas específicas e compartilhá-los com a comunidade. Seu blog (martinfowler.com) continua sendo uma das fontes de informação mais confiáveis para engenheiros globalmente, e muitos dos conceitos que ele introduziu se estabeleceram como "senso comum" no desenvolvimento de software moderno.
+A maior conquista de Martin Fowler é articular "princípios de engenharia universais" independentes de linguagens ou ferramentas específicas e compartilhá-los com a comunidade. Seu blog (martinfowler.com) continua sendo uma das fontes de informação mais confiáveis [para engenheiros](/pt/p/prompt-engineering-for-engineers/) globalmente, e muitos dos conceitos que ele introduziu se estabeleceram como "senso comum" no desenvolvimento de software moderno.
 
 "Qualquer tolo consegue escrever código que um computador entenda. Bons programadores escrevem código que humanos possam entender."
 

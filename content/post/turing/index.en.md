@@ -51,7 +51,7 @@ H(x, y) = \begin{cases}
 \end{cases}
 $$
 
-Suppose there exists a Turing machine that computes such a function $H$. In that case, we can construct a program $D(x)$ based on diagonalization as follows:
+Suppose there exists a Turing machine that computes such a function $H$. In that case, we can construct a program $D(x)$ based on [diagonalization](/en/p/diagonalization-and-jordan-normal-form/) as follows:
 
 $$
 D(x) = \begin{cases} 

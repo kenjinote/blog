@@ -13,7 +13,7 @@ tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 
 In the field of software development, the "It works on my machine" problem, caused by differences in developers' environments, has long been a factor in wasting time on many projects. Local environments are constantly exposed to "state uncertainty," such as OS differences, installed language versions, library dependencies, and conflicts between globally installed tools.
 
-What fundamentally solves these issues is container technology like **[Docker](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)** and the **Infrastructure as Code ([IaC](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/))** paradigm. By containerizing the local development environment, OS-level isolation is achieved, and the environment itself can be version-controlled alongside the codebase.
+What fundamentally solves these issues is container technology like **[Docker](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)** and the **[Infrastructure as Code](/en/p/iac-infrastructure-as-code-terraform/) ([IaC](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/))** paradigm. By containerizing the local development environment, OS-level isolation is achieved, and the environment itself can be version-controlled alongside the codebase.
 
 In this article, we will thoroughly explain the steps to build a **"reproducible local development environment that results in the exact same state, no matter who, when, or on what machine it is launched,"** by leveraging Docker, Docker Compose, and VSCode Dev[Container](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)s. We will also explore the deep technical mechanisms behind it from a mathematical perspective.
 
@@ -23,13 +23,13 @@ In this article, we will thoroughly explain the steps to build a **"reproducible
 
 ### IaC Principles and Application to Local Environments
 
-Infrastructure as Code (IaC) is an approach to managing infrastructure configuration and provisioning through machine-readable definition files rather than manual processes. The core principles of IaC include the following elements:
+[Infrastructure as Code](/en/p/iac-infrastructure-as-code-terraform/) ([IaC](/en/p/iac-infrastructure-as-code-terraform/)) is an approach to managing infrastructure configuration and provisioning through machine-readable definition files rather than manual processes. The core principles of [IaC](/en/p/iac-infrastructure-as-code-terraform/) include the following elements:
 
 1. **Declarative Approach**: Defines "what the final state should be" rather than "how to change the state."
 2. **Idempotency**: Guarantees the exact same result (state) no matter how many times the script is executed.
 3. **Version Control**: The infrastructure state is stored as code in a VCS like Git, enabling change history tracking and peer reviews.
 
-Practicing IaC in a local development environment means codifying the "ideal state" of the development environment using `Dockerfile`, `docker-compose.yml`, and `devcontainer.json`. This provides an onboarding experience where new team members can clone the repository and start developing immediately by running a single command.
+Practicing [IaC](/en/p/iac-infrastructure-as-code-terraform/) in a local development environment means codifying the "ideal state" of the development environment using `Dockerfile`, `docker-compose.yml`, and `devcontainer.json`. This provides an onboarding experience where new team members can clone the repository and start developing immediately by running a single command.
 
 ### Kernel Features Supporting [Container](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/) Technology
 
@@ -129,7 +129,7 @@ In this way, introducing multi-stage builds can reduce the image size by about h
 
 ## 4. Orchestrating Multiple [Container](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)s with [Docker](https://kenji.blog/en/p/docker-container-namespace-[cgroups](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)-layers/) Compose
 
-In modern web application development, a microservices architecture where multiple components like web servers, databases, and cache servers collaborate is common. We use `docker-compose.yml` to centrally manage these in a local environment.
+In modern web application development, a [microservices architecture](/en/p/microservices-architecture-bff-api-gateway/) where multiple components like web servers, databases, and cache servers collaborate is common. We use `docker-compose.yml` to centrally manage these in a local environment.
 
 Here, we will build a 3-tier system locally consisting of "Web (FastAPI)," "Database (PostgreSQL)," and "Cache ([Redis](https://kenji.blog/en/p/nosql-database-selection-kvs-document-graph-wide-column/))."
 
@@ -356,7 +356,7 @@ At this time, the average response time is represented by the following expected
 
 $$ T_{\text{total}} = T_{\text{net}} + T_{\text{app}} + T_{\text{cache}} + p_{\text{miss}} \times (T_{\text{db}} + T_{\text{cache\_write}}) $$
 
-In a local development environment (inside [Docker](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)), $T_{\text{net}}$ is close to 0, but what's noteworthy is the **I/O performance during bind mounts**. Especially when using Docker Desktop on Windows/macOS, the file sharing overhead between the host OS and the VM (container) tends to bloat $T_{\text{app}}$ (such as code load time). To eliminate this bottleneck, it is highly recommended to use the aforementioned Dev[Container](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)s to place the entire source code inside a named volume, or to adopt an architecture that runs the Docker engine natively on a WSL2 (Windows Subsystem for Linux 2) environment.
+In a local development environment (inside [Docker](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)), $T_{\text{net}}$ is close to 0, but what's noteworthy is the **I/O performance during bind mounts**. Especially when using Docker Desktop on Windows/macOS, the file sharing overhead between the host OS and the VM (container) tends to bloat $T_{\text{app}}$ (such as code load time). To eliminate this bottleneck, it is highly recommended to use the aforementioned Dev[Container](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)s to place the entire source code inside a named volume, or to adopt an architecture that runs the Docker engine natively on a WSL2 ([Windows Subsystem for Linux](/en/p/wsl2-ultimate-development-setup-guide/) 2) environment.
 
 ---
 

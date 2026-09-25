@@ -88,7 +88,7 @@ graph TD
 
 # 3. 機械式密碼與世界大戰：恩尼格瑪密碼機與其破解
 
-進入 20 世紀後，通訊手段從書信轉變為電報與無線電，對加密的速度與複雜度也產生了更高的需求。這時結合了轉子（旋轉盤）的「機械式密碼」便應運而生。
+進入 20 世紀後，通訊手段從書信轉變為電報與無線電，對加密的速度與[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)也產生了更高的需求。這時結合了轉子（旋轉盤）的「機械式密碼」便應運而生。
 
 ## 恩尼格瑪密碼機（Enigma）的威脅
 第二次世界大戰期間，納粹德國使用的「恩尼格瑪密碼機（Enigma）」是密碼學史上最著名的密碼機。恩尼格瑪密碼機由多個轉子（通常為 3 到 4 個）、用來交換字母線路的接線板（Steckerbrett），以及反射器（反轉轉子）所構成。
@@ -197,9 +197,9 @@ rsa_example()
 
 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密雖然強大，但隨著電腦效能的提升，為了維持安全性必須加長金鑰長度（目前為 2048 位元或 3072 位元），這導致了運算成本增加的問題。
 
-因此在 1985 年提出了「橢圓曲線密碼學（Elliptic Curve [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy: ECC）」。這利用了有限體上橢圓曲線（通常為 $y^2 = x^3 + ax + b$ 形式）的點加法。
+因此在 1985 年提出了「[橢圓曲線密碼學](/zh-tw/p/elliptic-curve-cryptography-math-cpp/)（Elliptic Curve [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy: [ECC](/zh-tw/p/elliptic-curve-cryptography-math-cpp/)）」。這利用了有限體上橢圓曲線（通常為 $y^2 = x^3 + ax + b$ 形式）的點加法。
 
-橢圓曲線上的離散對數問題（ECDLP）已知比質因數分解問題更難求解， **ECC 只要 256 位元的金鑰長度，就能實現與 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 3072 位元同等的安全性** 。這使得在智慧型手機或 IoT 裝置等運算資源有限的環境中，也能進行高速且安全的加密通訊（如 ECDSA 或 ECDH 等）。
+橢圓曲線上的離散對數問題（ECDLP）已知比質因數分解問題更難求解， **[ECC](/zh-tw/p/elliptic-curve-cryptography-math-cpp/) 只要 256 位元的金鑰長度，就能實現與 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 3072 位元同等的安全性** 。這使得在智慧型手機或 IoT 裝置等運算資源有限的環境中，也能進行高速且安全的加密通訊（如 ECDSA 或 ECDH 等）。
 
 ---
 
@@ -207,7 +207,7 @@ rsa_example()
 
 密碼技術看似堅若磐石，但 1994 年由彼得・秀爾（Peter Shor）發表的「秀爾演算法」卻帶來了巨大的衝擊。
 
-量子電腦利用量子力學的「疊加」與「量子纏結」特性來進行運算。在數學上已經證明，如果在效能足夠的量子電腦上執行秀爾演算法，質因數分解問題與離散對數問題就能在「多項式時間」內被解開。也就是說，在實用的量子電腦問世的那一天（Q-Day），現在所使用的 RSA 或 ECC 等公開金鑰加密都將在瞬間崩潰。
+量子電腦利用量子力學的「疊加」與「量子纏結」特性來進行運算。在數學上已經證明，如果在效能足夠的量子電腦上執行秀爾演算法，質因數分解問題與離散對數問題就能在「多項式時間」內被解開。也就是說，在實用的量子電腦問世的那一天（Q-Day），現在所使用的 RSA 或 [ECC](/zh-tw/p/elliptic-curve-cryptography-math-cpp/) 等公開金鑰加密都將在瞬間崩潰。
 
 ## PQC（後量子密碼學）的登場
 為防範這個前所未有的威脅，基於連量子電腦也難以破解的新數學問題的「後量子密碼學（PQC）」研究正快馬加鞭地進行著。NIST（美國國家標準暨技術研究院）長年來持續推動 PQC 的標準化流程，主要以下列數學方法最具潛力。

@@ -112,7 +112,7 @@ description: 'Apresentaremos cuidadosamente citações que tocam o coração, di
 
 > E, no entanto, ela se move (Galileu Galilei)
 
-> Não há estrada real para a geometria ([Euclides](https://kenji.blog/p/euclid/))
+> Não há estrada real para a geometria ([Euclides](https://kenji.blog/pt/p/euclid/))
 
 > Dê-me um ponto de apoio e moverei a Terra (Arquimedes)
 

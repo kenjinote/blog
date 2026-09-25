@@ -50,7 +50,7 @@ It is also important that he practiced the "scientific method" of verifying hypo
 
 ## Immense Influence on Later Generations and Significance Today
 
-The horizons opened up by Galileo had a decisive influence on later generations. The laws regarding motion he presented (especially the law of falling bodies and the concept of inertia) were integrated by Isaac Newton, culminating in the grand system of classical mechanics. When Newton said, "If I have seen further it is by standing on the shoulders of Giants," there is no doubt that one of those giants was Galileo.
+The horizons opened up by Galileo had a decisive influence on later generations. The laws regarding motion he presented (especially the law of falling bodies and the concept of inertia) were integrated by [Isaac Newton](/en/p/newton/), culminating in the grand system of classical mechanics. When Newton said, "If I have seen further it is by standing on the shoulders of Giants," there is no doubt that one of those giants was Galileo.
 
 Furthermore, the tragedy of suppression by the Inquisition continues to provide an important historical lesson in considering the relationship between science and religion, or truth and authority. In 1992, Pope John Paul II officially acknowledged the Church's error in Galileo's trial and rehabilitated him. It was a moment when, after more than 350 years, truth defeated authority.
 

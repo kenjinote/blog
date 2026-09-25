@@ -78,7 +78,7 @@ In this multi-dimensional space (latent space), the model is trained so that sen
 
 ## Mathematical Background of Similarity Calculation: Cosine Similarity
 
-When a vector database searches for relevant documents, the most commonly used distance metric is **Cosine Similarity**. Unlike [Euclide](https://kenji.blog/p/euclid/)an distance (absolute spatial distance), cosine similarity focuses on the "angle between two vectors". Since it is less affected by the length of the sentence (the norm of the vector), it is highly suitable for calculating text similarity.
+When a vector database searches for relevant documents, the most commonly used distance metric is **Cosine Similarity**. Unlike [Euclide](https://kenji.blog/en/p/euclid/)an distance (absolute spatial distance), cosine similarity focuses on the "angle between two vectors". Since it is less affected by the length of the sentence (the norm of the vector), it is highly suitable for calculating text similarity.
 
 Expressed mathematically, the cosine similarity between vectors $\mathbf{A}$ and $\mathbf{B}$ is as follows:
 
@@ -101,7 +101,7 @@ Recent Vector DBs (Chroma, FAISS, Qdrant, etc.) employ an Approximate Nearest Ne
 
 To build a fully local RAG that does not rely on the cloud, we leverage the open-source ecosystem. The recommended technology stack is introduced below.
 
-1. **Large Language Model ([LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/))**
+1. **[Large Language Model](/en/p/large-language-models-llm-transformer-prompt-engineering/) ([LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/))**
    - Tools: `Ollama` or `Llama.cpp`
    - Models: Lightweight, high-performance open models like `Llama-3-8B-Instruct`, `Gemma-2-9B-It`, `Qwen2-7B-Instruct`. For Japanese tasks, Japanese-tuned models like `Llama-3-ELYZA-JP-8B` are suitable.
 2. **Embedding Model (Embedding)**
@@ -276,7 +276,7 @@ Also, in the "Parent Document Retriever" technique, you vectorize in very small 
 There are unique hurdles when building and operating RAG in a local environment.
 
 - **VRAM (Video Memory) Exhaustion**:
-  To run a Local LLM at a practical speed (dozens of tokens per second), you need to load the model into the GPU's VRAM. Running an 8B class model in fp16 (16-bit floating point) requires about 16GB of VRAM, but by using **Quantization** technologies (compressing to 4-bit or 8-bit, such as GGUF or AWQ formats), it is possible to run it fast enough even with 8GB of VRAM (like a standard gaming PC). Llama.cpp and Ollama support these quantization formats by default.
+  To run a Local LLM at a practical speed (dozens of tokens per second), you need to load the model into the GPU's VRAM. Running an 8B class model in fp16 (16-bit floating point) requires about 16GB of VRAM, but by using **Quantization** technologies (compressing to 4-bit or 8-bit, such as [GGUF](/en/p/llama-cpp-quantization-gguf/) or AWQ formats), it is possible to run it fast enough even with 8GB of VRAM (like a standard gaming PC). Llama.cpp and Ollama support these quantization formats by default.
 - **Context Window Limits**:
   If the amount of retrieved context is too large, it may exceed the LLM's input limit (token limit), or the model might forget the middle part of the information (Lost in the middle phenomenon). Adjusting the number of chunks to extract and carefully selecting them through the aforementioned re-ranking techniques are essential.
 - **Data Freshness Management**:

@@ -32,7 +32,7 @@ fn main() {
 }
 ```
 
-When you run `rustc main.rs` from the command prompt or terminal, it will be compiled, and running `./main` (`main.exe` on Windows) will output `Hello, world!`.
+When you run `rustc main.rs` from the command prompt or [terminal](/en/p/terminal-efficiency-powershell-bash-shortcuts/), it will be compiled, and running `./main` (`main.exe` on Windows) will output `Hello, world!`.
 
 # Japanese Documentation
 

@@ -11,7 +11,7 @@ tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 
 # Einführung: Warum benötigen wir lokale LLMs?
 
-Mit dem Aufstieg von [Large Language Models](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs) haben sich unser Leben und unsere Entwicklungsmethoden dramatisch verändert. Leistungsstarke Cloud-basierte KI-Dienste wie ChatGPT, Claude und Gemini entwickeln sich täglich weiter und bieten hoch entwickelte Schlussfolgerungsfähigkeiten. Dennoch sind Cloud-LLMs nicht für jeden Anwendungsfall optimal. Bei Cloud-LLMs bestehen folgende Herausforderungen:
+Mit dem Aufstieg von [Large Language Models](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs) haben sich unser Leben und unsere Entwicklungsmethoden dramatisch verändert. Leistungsstarke Cloud-basierte KI-Dienste wie ChatGPT, Claude und [Gemini](/de/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEl%C3%B6sung/) entwickeln sich täglich weiter und bieten hoch entwickelte Schlussfolgerungsfähigkeiten. Dennoch sind Cloud-LLMs nicht für jeden Anwendungsfall optimal. Bei Cloud-LLMs bestehen folgende Herausforderungen:
 
 1. **Datenschutz- und Sicherheitsprobleme**: Das Senden von Daten mit vertraulichen oder persönlichen Informationen an externe Server ist aus Compliance- und Sicherheitssicht für Unternehmen oft inakzeptabel.
 2. **Kostenunsicherheit**: Da die API-Nutzungsgebühren von der Anzahl der Token abhängen, besteht bei Systemen, die große Datenmengen verarbeiten oder häufige Anfragen stellen, das Risiko unbegrenzt steigender laufender Kosten.
@@ -26,7 +26,7 @@ In diesem Artikel werden wir das Tool "**Ollama**", mit dem sich lokale LLMs ers
 
 # Was ist Ollama? Die interne Architektur
 
-Ollama ist eine Plattform zur einfachen Ausführung und Verwaltung von quelloffenen [Large Language Models](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) (wie Llama 3, Phi-3, Mistral, Gemma usw.) in einer lokalen Umgebung. Um eine lokale [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Umgebung aufzubauen, waren bisher sehr komplizierte Schritte erforderlich: die Einrichtung einer Python-Umgebung, die Installation des CUDA-Toolkits, das Auflösen von PyTorch-Abhängigkeiten, das Herunterladen riesiger Modelldateien von Hugging Face und die Formatkonvertierung (z. B. von Safetensors nach GGUF).
+Ollama ist eine Plattform zur einfachen Ausführung und Verwaltung von quelloffenen [Large Language Models](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) (wie Llama 3, Phi-3, Mistral, Gemma usw.) in einer lokalen Umgebung. Um eine lokale [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Umgebung aufzubauen, waren bisher sehr komplizierte Schritte erforderlich: die Einrichtung einer Python-Umgebung, die Installation des CUDA-Toolkits, das Auflösen von PyTorch-Abhängigkeiten, das Herunterladen riesiger Modelldateien von Hugging Face und die Formatkonvertierung (z. B. von Safetensors nach [GGUF](/de/p/llama-cpp-quantization-gguf/)).
 
 Ollama verbirgt diese Komplexität und ermöglicht den Umgang mit LLMs mit einer Benutzerfreundlichkeit, die an [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/) erinnert. Mit einem einzigen Befehl können Modelle heruntergeladen (`pull`), ausgeführt (`run`) und als HTTP-Server gestartet werden.
 
@@ -120,7 +120,7 @@ In der Modellbibliothek von Ollama können Sie die Version und das Quantisierung
 
 Lassen Sie uns hier kurz auf die Quantisierung eingehen. Ein gewöhnliches [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) speichert einen Gewichtsparameter als 16-Bit-Gleitkommazahl (FP16). Bei einem Modell mit 8 Milliarden (8B) Parametern verbrauchen allein die Gewichte etwa 16 GB VRAM. Die Quantisierung ist eine Technik, die diese Werte in 4-Bit (Q4) oder 8-Bit (Q8) Integer komprimiert.
 
-Durch Quantisierung lassen sich der erforderliche Speicherplatz und die Speicherbandbreite drastisch reduzieren, während die Genauigkeitsverluste des Modells minimiert werden. Die von Ollama bereitgestellten Modelle liegen standardmäßig im GGUF-Format vor, bei dem eine optimale Quantisierung (meistens 4-Bit) bereits angewendet wurde.
+Durch Quantisierung lassen sich der erforderliche Speicherplatz und die Speicherbandbreite drastisch reduzieren, während die Genauigkeitsverluste des Modells minimiert werden. Die von Ollama bereitgestellten Modelle liegen standardmäßig im [GGUF](/de/p/llama-cpp-quantization-gguf/)-Format vor, bei dem eine optimale Quantisierung (meistens 4-Bit) bereits angewendet wurde.
 
 ## 3. Anzeigen von Modellen (`list`)
 

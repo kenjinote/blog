@@ -58,7 +58,7 @@ description: 'Google Chrome और Microsoft Edge की ब्राउज़�
 
 ![img_1.png](img_1.webp)
 
-एक एक्सटेंशन जो Salesforce विकास के लिए उपयोगी सुविधाएँ जोड़ता है।
-मुझे लगता है कि यह उन लोगों के लिए अनावश्यक है जो Salesforce का उपयोग नहीं करते हैं।
+एक एक्सटेंशन जो [Salesforce](/hi/p/salesforce%E3%81%AEsoql%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%A6%E6%97%A5%E5%88%A5%E3%81%AE%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%90%E6%95%B0%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/) विकास के लिए उपयोगी सुविधाएँ जोड़ता है।
+मुझे लगता है कि यह उन लोगों के लिए अनावश्यक है जो [Salesforce](/hi/p/salesforce%E3%81%AEsoql%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%A6%E6%97%A5%E5%88%A5%E3%81%AE%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%90%E6%95%B0%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/) का उपयोग नहीं करते हैं।
 
 - [Salesforce DevTools](https://chrome.google.com/webstore/detail/salesforce-devtools/ehgmhinnhggigkogkbhnbodhbfjgncjf)

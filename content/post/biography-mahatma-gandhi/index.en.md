@@ -13,7 +13,7 @@ description: "\"An eye for an eye will only make the whole world blind.\""
 
 "An eye for an eye will only make the whole world blind."
 
-Mohandas Karamchand Gandhi (commonly known as Mahatma Gandhi), who left these words, is one of the most influential leaders of the 20th century. His philosophy of "nonviolent civil disobedience (Satyagraha)" not only led India to independence from British colonial rule but also profoundly influenced civil rights and liberation movements worldwide, including those of Martin Luther King Jr. and Nelson Mandela. This article delves into his life and philosophy, exploring how he came to be called the "Great Soul (Mahatma)."
+Mohandas Karamchand Gandhi (commonly known as Mahatma Gandhi), who left these words, is one of the most influential leaders of the 20th century. His philosophy of "nonviolent civil disobedience (Satyagraha)" not only led India to independence from British colonial rule but also profoundly influenced civil rights and liberation movements worldwide, including those of [Martin Luther King Jr.](/en/p/biography-martin-luther-king-jr/) and [Nelson Mandela](/en/p/biography-nelson-mandela/). This article delves into his life and philosophy, exploring how he came to be called the "Great Soul (Mahatma)."
 
 ## Studies in London and Awakening in South Africa
 
@@ -45,7 +45,7 @@ However, on January 30, 1948, just half a year after independence, Gandhi was as
 
 Gandhi's life proved how the "power of the spirit" held by a single human being can move a giant empire. His philosophy of "nonviolent civil disobedience" has transcended borders and eras, passed down to future generations.
 
-Martin Luther King Jr., who led the American civil rights movement, said, "Christ furnished the spirit and motivation, while Gandhi furnished the method," and launched a movement to abolish racial discrimination through nonviolence. Furthermore, many peace leaders, such as Nelson Mandela, who fought against South Africa's apartheid policy, and the 14th Dalai Lama of Tibet, have been profoundly influenced by Gandhi's philosophy.
+[Martin Luther King Jr.](/en/p/biography-martin-luther-king-jr/), who led the American civil rights movement, said, "Christ furnished the spirit and motivation, while Gandhi furnished the method," and launched a movement to abolish racial discrimination through nonviolence. Furthermore, many peace leaders, such as [Nelson Mandela](/en/p/biography-nelson-mandela/), who fought against South Africa's apartheid policy, and the 14th Dalai Lama of Tibet, have been profoundly influenced by Gandhi's philosophy.
 
 Even in modern society, against the many challenges we face, such as conflicts, divisions, and environmental issues, Gandhi's teaching, "Be the change you wish to see in the world," continues to resonate without fading.
 

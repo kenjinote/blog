@@ -35,9 +35,9 @@ Git verwendet hauptsächlich drei Objekte, um den Status des Repositorys darzust
 1. **Blob (Binary Large Object)**
    Dieses Objekt speichert den eigentlichen Inhalt der Datei. Informationen wie Dateinamen oder Berechtigungen sind hier nicht enthalten. Reine Bytefolgen werden mit zlib komprimiert und durch einen SHA-1-Hashwert (40-stellige hexadezimale Zahl) identifiziert.
 2. **[Tree](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
-   Dieses Objekt stellt die Verzeichnisstruktur dar. Ein Tree-Objekt enthält Zeiger (SHA-1-Hashwerte) auf andere Tree-Objekte (Unterverzeichnisse) oder Blob-Objekte (Dateien) sowie deren Dateinamen und Zugriffsrechte. Es fungiert ähnlich wie ein UNIX-Verzeichnis.
+   Dieses Objekt stellt die Verzeichnisstruktur dar. Ein Tree-Objekt enthält [Zeiger](/de/p/c-language-pointers-memory-management-stack-heap/) (SHA-1-Hashwerte) auf andere Tree-Objekte (Unterverzeichnisse) oder Blob-Objekte (Dateien) sowie deren Dateinamen und Zugriffsrechte. Es fungiert ähnlich wie ein UNIX-Verzeichnis.
 3. **Commit**
-   Dies enthält einen Zeiger auf das oberste Tree-Objekt des gesamten Repositorys zu einem bestimmten Zeitpunkt, zusammen mit Metadaten (Autor, Commit-Datum, Commit-Nachricht) sowie einem Zeiger auf den vorherigen Commit (Eltern-Commit).
+   Dies enthält einen [Zeiger](/de/p/c-language-pointers-memory-management-stack-heap/) auf das oberste Tree-Objekt des gesamten Repositorys zu einem bestimmten Zeitpunkt, zusammen mit Metadaten (Autor, Commit-Datum, Commit-Nachricht) sowie einem [Zeiger](/de/p/c-language-pointers-memory-management-stack-heap/) auf den vorherigen Commit (Eltern-Commit).
 
 ```mermaid
 graph TD
@@ -57,7 +57,7 @@ ref: refs/heads/main
 ```
 
 Dies bedeutet: „Der aktuelle Status befindet sich an der Spitze des `main`-Branches.“ Wenn Sie dann `.git/refs/heads/main` öffnen, finden Sie dort einen 40-stelligen SHA-1-Hash, der auf das neueste Commit-Objekt zeigt.
-Ein Git-Branch ist lediglich ein leichtgewichtiger Zeiger (eine Datei), der auf einen bestimmten Commit zeigt. Wenn man diese Tatsache kennt, verschwindet die Angst, dass „alle Dateien gelöscht werden, wenn ich den Branch lösche“.
+Ein Git-Branch ist lediglich ein leichtgewichtiger [Zeiger](/de/p/c-language-pointers-memory-management-stack-heap/) (eine Datei), der auf einen bestimmten Commit zeigt. Wenn man diese Tatsache kennt, verschwindet die Angst, dass „alle Dateien gelöscht werden, wenn ich den Branch lösche“.
 
 ---
 
@@ -67,7 +67,7 @@ Wenn Git Konflikte erkennt oder Dateiunterschiede anzeigt, laufen im Hintergrund
 
 ### 3.1 Myers Diff-Algorithmus
 
-Der standardmäßige Diff-Algorithmus in Git wurde von Eugene W. Myers entwickelt. Wenn wir zwei Textdateien $A$ und $B$ haben, kann das Problem, die „minimale Folge von Bearbeitungsschritten (Einfügungen und Löschungen)“ zu finden, um $A$ in $B$ umzuwandeln, als Problem des kürzesten Pfades in der Graphentheorie modelliert werden.
+Der standardmäßige Diff-Algorithmus in Git wurde von Eugene W. Myers entwickelt. Wenn wir zwei Textdateien $A$ und $B$ haben, kann das Problem, die „minimale Folge von Bearbeitungsschritten (Einfügungen und Löschungen)“ zu finden, um $A$ in $B$ umzuwandeln, als Problem des kürzesten Pfades in der [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) modelliert werden.
 
 Seien die Längen der Zeichenfolgen $N$ bzw. $M$, und die Summe $V = N + M$. Der Myers-Algorithmus sucht nach der Bearbeitungsdistanz (Edit Distance) $D$. Die Zeitkomplexität dieses Algorithmus wird durch folgende Formel ausgedrückt:
 
@@ -102,7 +102,7 @@ Sie haben nicht bemerkt, dass Sie im `main`-Branch arbeiten, haben zügig Code f
 
 ### Lösung: `git reset` und Branch-Erstellung
 
-In Git sind Commits unabhängige Objekte, und Branches sind nur Zeiger. Daher kann dieses Problem sofort mit der Operation „Einen neuen Branch erstellen und dann den Zeiger des aktuellen Branches zurückdrehen“ gelöst werden.
+In Git sind Commits unabhängige Objekte, und Branches sind nur [Zeiger](/de/p/c-language-pointers-memory-management-stack-heap/). Daher kann dieses Problem sofort mit der Operation „Einen neuen Branch erstellen und dann den [Zeiger](/de/p/c-language-pointers-memory-management-stack-heap/) des aktuellen Branches zurückdrehen“ gelöst werden.
 
 ```bash
 # 1. Einen neuen Branch erstellen, der auf den aktuellen Commit (den versehentlich erstellten) zeigt
@@ -118,7 +118,7 @@ $ git checkout feature/login
 
 ### Illustration: Was ist intern passiert?
 
-Lassen Sie uns die Verschiebung der Branch-Zeiger in diesem Moment mit `gitGraph` von Mermaid visualisieren.
+Lassen Sie uns die Verschiebung der Branch-[Zeiger](/de/p/c-language-pointers-memory-management-stack-heap/) in diesem Moment mit `gitGraph` von Mermaid visualisieren.
 
 ```mermaid
 gitGraph
@@ -369,7 +369,7 @@ $ git reflog
 
 ## 12. Fazit
 
-Wir haben ausführlich erläutert, welche Fehler Git-Anfänger häufig machen, welche Mechanismen in Git dahinterstecken und wie man sie behebt. Das Committen auf dem falschen Branch, das Rückgängigmachen gepushter Commits, die Verwendung von Stash, das Überleben bei einem Detached HEAD und das Lösen von Konflikten. Bei all diesen Dingen ist es wichtig, sich vorzustellen, „welche Objekte und Zeiger Git im Hintergrund manipuliert“.
+Wir haben ausführlich erläutert, welche Fehler Git-Anfänger häufig machen, welche Mechanismen in Git dahinterstecken und wie man sie behebt. Das Committen auf dem falschen Branch, das Rückgängigmachen gepushter Commits, die Verwendung von Stash, das Überleben bei einem Detached HEAD und das Lösen von Konflikten. Bei all diesen Dingen ist es wichtig, sich vorzustellen, „welche Objekte und [Zeiger](/de/p/c-language-pointers-memory-management-stack-heap/) Git im Hintergrund manipuliert“.
 
 Dateidifferenzen werden durch einen strengen Diff-Algorithmus berechnet, der als mathematische Formel ausgedrückt werden kann, und die Konsistenz der Historie wird durch kryptografische Hash-Funktionen gewährleistet. Wenn Sie diese schöne Designphilosophie verstehen, werden Sie erkennen, dass Git keineswegs eine „unheimliche Blackbox“ ist, sondern der stärkste Schild zum Schutz Ihres Quellcodes.
 

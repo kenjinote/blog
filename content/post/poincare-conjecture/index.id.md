@@ -18,7 +18,7 @@ Dalam artikel ini, kita akan menggali lebih dalam mulai dari makna [Konjektur Po
 
 Untuk memahami [Konjektur Poincaré](https://kenji.blog/id/p/poincare-conjecture/), pertama-tama kita perlu mengetahui tentang bidang matematika yang disebut **Topologi** . Topologi sering juga disebut sebagai "geometri karet".
 
-Dalam geometri biasa (geometri [Euklides](https://kenji.blog/p/euclid/)), sifat-sifat seperti panjang, sudut, dan luas sangatlah penting, tetapi dalam topologi hal-hal ini diabaikan. Topologi hanya mempelajari sifat-sifat (sifat topologis) yang dipertahankan bahkan ketika suatu objek mengalami deformasi kontinu seperti "diregangkan", "dibengkokkan", atau "diciutkan". Namun, operasi seperti "memotong", "menempelkan", atau "melubangi" tidak diperbolehkan.
+Dalam geometri biasa (geometri [Euklides](https://kenji.blog/id/p/euclid/)), sifat-sifat seperti panjang, sudut, dan luas sangatlah penting, tetapi dalam topologi hal-hal ini diabaikan. Topologi hanya mempelajari sifat-sifat (sifat topologis) yang dipertahankan bahkan ketika suatu objek mengalami deformasi kontinu seperti "diregangkan", "dibengkokkan", atau "diciutkan". Namun, operasi seperti "memotong", "menempelkan", atau "melubangi" tidak diperbolehkan.
 
 Contoh yang terkenal adalah "cangkir kopi dan donat".
 

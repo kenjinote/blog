@@ -10,13 +10,13 @@ image: "eyecatch.jpg"
 
 ## 1. Pendahuluan: Apakah "Pemrograman Berorientasi Objek" yang Kita Kenal Asli?
 
-Dalam pengembangan perangkat lunak modern, tidak ada hari tanpa mendengar istilah "Pemrograman Berorientasi Objek" (OOP: Object-Oriented Programming). Sebagian besar bahasa pemrograman utama seperti Java, C#, Python, Ruby, dan C++ mengadopsi paradigma berorientasi objek, menjadikannya pengetahuan wajib bagi para pengembang.
+Dalam pengembangan perangkat lunak modern, tidak ada hari tanpa mendengar istilah "Pemrograman Berorientasi Objek" ([OOP](/id/p/object-oriented-programming-oop-solid-principles/): Object-Oriented Programming). Sebagian besar bahasa pemrograman utama seperti Java, C#, Python, Ruby, dan C++ mengadopsi paradigma berorientasi objek, menjadikannya pengetahuan wajib bagi para pengembang.
 
-Namun, tahukah Anda bahwa "Tiga Elemen Utama Pemrograman Berorientasi Objek" yang sering dipelajari pertama kali oleh banyak pengembang—yaitu "Enkapsulasi" (Encapsulation), "Pewarisan" (Inheritance), dan "Polimorfisme" (Polymorphism)—sebenarnya sangat menyimpang dari esensi yang dimaksudkan oleh Alan Kay, yang bisa disebut sebagai bapak pemrograman berorientasi objek?
+Namun, tahukah Anda bahwa "[Tiga Elemen Utama Pemrograman Berorientasi Objek](/id/p/object-oriented-programming-oop-solid-principles/)" yang sering dipelajari pertama kali oleh banyak pengembang—yaitu "Enkapsulasi" (Encapsulation), "Pewarisan" (Inheritance), dan "Polimorfisme" (Polymorphism)—sebenarnya sangat menyimpang dari esensi yang dimaksudkan oleh Alan Kay, yang bisa disebut sebagai bapak pemrograman berorientasi objek?
 
 Gaya yang biasa kita tulis sehari-hari—mendefinisikan kelas, membuat instans, dan memanggil metode dengan notasi titik—memang merupakan salah satu bentuk berorientasi objek yang dibangun oleh bahasa tertentu (seperti C++ atau Java). Namun, itu hanyalah sebagian kecil dari konsep luas pemrograman berorientasi objek, atau sekadar interpretasi spesifik.
 
-Dalam artikel ini, kita akan kembali ke sejarah awal munculnya istilah berorientasi objek dan visi yang sebenarnya ingin dicapai oleh Alan Kay. Kata kuncinya adalah **"Messaging"** (Penyampaian Pesan). Dengan memahami konsep messaging secara benar, wawasan desain sistem Anda akan meluas, dan Anda akan mendapatkan pemahaman mendalam yang relevan dengan desain sistem terdistribusi modern seperti arsitektur microservices atau model aktor.
+Dalam artikel ini, kita akan kembali ke sejarah awal munculnya istilah berorientasi objek dan visi yang sebenarnya ingin dicapai oleh Alan Kay. Kata kuncinya adalah **"Messaging"** (Penyampaian Pesan). Dengan memahami konsep messaging secara benar, wawasan desain sistem Anda akan meluas, dan Anda akan mendapatkan pemahaman mendalam yang relevan dengan desain [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/) modern seperti [arsitektur microservices](/id/p/microservices-architecture-bff-api-gateway/) atau model aktor.
 
 ## 2. Visi Alan Kay: Inspirasi dari Biologi
 
@@ -72,7 +72,7 @@ Karakteristik dari messaging adalah sebagai berikut:
 2. **Delegasi dan Pengabaian Pesan**
    Jika objek menerima pesan yang tidak dipahaminya, ia tidak sekadar menjadikannya error, melainkan bisa bereaksi secara otonom dan fleksibel, seperti meneruskannya (forward) ke objek lain atau mengabaikannya.
 3. **Transparansi pada Jaringan**
-   Paradigma messaging memungkinkan kita memperlakukan objek yang berada di ruang memori (proses) yang sama atau objek di server terpisah melalui jaringan dengan cara yang identik. Pemanggilan metode sangat bergantung pada kondisi berada di ruang memori yang sama, namun messaging memiliki sifat alami untuk dapat diskalakan dalam sistem terdistribusi.
+   Paradigma messaging memungkinkan kita memperlakukan objek yang berada di ruang memori (proses) yang sama atau objek di server terpisah melalui jaringan dengan cara yang identik. Pemanggilan metode sangat bergantung pada kondisi berada di ruang memori yang sama, namun messaging memiliki sifat alami untuk dapat diskalakan dalam [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/).
 
 ## 4. Mengapa "Kelas" dan "Pewarisan" Menjadi Akar Kesalahpahaman?
 
@@ -116,7 +116,7 @@ flowchart LR
 
 Dalam Erlang/Elixir, ratusan ribu aktor ringan (proses) berjalan secara paralel dan saling mengirim pesan untuk membangun sistem yang masif. Bahkan jika satu aktor gagal (crash), sistem dapat mencapai toleransi kesalahan yang sangat tinggi, misalnya dengan mengirim pesan ke aktor lain untuk me-restart-nya (prinsip "Let it crash").
 
-Lebih jauh lagi, **"Arsitektur Microservices" (Microservices Architecture)** modern pada dasarnya bisa dianggap sebagai versi raksasa dari pemrograman berorientasi objek yang berorientasi pada pesan (message-oriented). Jika kita menganggap setiap microservice sebagai sebuah "objek" raksasa, mereka benar-benar menyembunyikan basis data mereka sendiri (status internal) dan membangun seluruh sistem melalui pertukaran "pesan" via REST API, gRPC, atau Kafka.
+Lebih jauh lagi, **"[Arsitektur Microservices](/id/p/microservices-architecture-bff-api-gateway/)" (Microservices Architecture)** modern pada dasarnya bisa dianggap sebagai versi raksasa dari pemrograman berorientasi objek yang berorientasi pada pesan (message-oriented). Jika kita menganggap setiap microservice sebagai sebuah "objek" raksasa, mereka benar-benar menyembunyikan basis data mereka sendiri (status internal) dan membangun seluruh sistem melalui pertukaran "pesan" via REST API, gRPC, atau Kafka.
 
 Visi yang diimpikan Alan Kay—di mana "objek-objek yang tersebar di node yang berbeda di jaringan saling berkirim pesan"—tanpa disadari telah terwujud di era cloud-native dalam bentuk microservices.
 
@@ -129,7 +129,7 @@ Namun, untuk mengelola kompleksitas sistem dan menghasilkan desain yang fleksibe
 1. **Jangan mengekspos data dan perilaku secara sembarangan** (melindungi dinding sel).
 2. **Kirim pesan sebagai "permintaan" daripada memanggil metode** (menghargai otonomi).
 3. **Sadari fleksibilitas pada saat runtime dan pengikatan lambat (late binding)**.
-4. **Pahami arsitektur dengan metafora yang sama, dari dalam proses hingga sistem terdistribusi**.
+4. **Pahami arsitektur dengan metafora yang sama, dari dalam proses hingga [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/)**.
 
 Saat Anda menulis kode atau memikirkan desain sistem Anda di masa depan, cobalah untuk mengambil sudut pandang: "Pesan seperti apa yang harus dikirimkan objek ini ke objek lain?" Dengan berfokus pada "jaringan dan komunikasi objek" alih-alih "hierarki kelas", desain Anda akan menjadi lebih elegan, tangguh terhadap perubahan, dan berorientasi objek dalam arti yang sebenarnya.
 

@@ -18,7 +18,7 @@ tags:
 
 ## 1. [콘웨이의 생명 게임](https://kenji.blog/ko/p/conways-game-of-life/)이란?
 
-**[콘웨이의 생명 게임](https://kenji.blog/ko/p/conways-game-of-life/)** ([Conway's Game of Life](https://kenji.blog/ko/p/conways-game-of-life/))은 1970년 영국의 수학자 존 호튼 콘웨이(John Horton Conway)가 고안한 **셀룰러 오토마타**(Cellular Automaton)의 일종입니다. 게임이라는 이름이 붙어 있지만, 초기 상태를 설정한 후에는 규칙에 따라 자동으로 세대가 진행되는 '제로 플레이어 게임'입니다.
+**[콘웨이의 생명 게임](https://kenji.blog/ko/p/conways-game-of-life/)** ([Conway's Game of Life](https://kenji.blog/ko/p/conways-game-of-life/))은 1970년 영국의 수학자 존 호튼 콘웨이(John Horton Conway)가 고안한 **셀룰러 [오토마타](/ko/p/automata-formal-language-theory/)**(Cellular Automaton)의 일종입니다. 게임이라는 이름이 붙어 있지만, 초기 상태를 설정한 후에는 규칙에 따라 자동으로 세대가 진행되는 '제로 플레이어 게임'입니다.
 
 이 시스템의 가장 큰 매력은 **극히 단순한 결정론적 규칙에서 예측 불가능하고 복잡한 생명과 같은 행동(창발)이 만들어진다**는 점에 있습니다.
 

@@ -20,7 +20,7 @@ tags:
 From the personal computers we use every day to the world's fastest supercomputer, "Fugaku," all classical computers process information using a unit called a "**Bit**."
 A bit can only hold one of two states: a switch turned "on" (1) or "off" (0). Complex calculations and massive images are all processed sequentially as a "vast sequence of 0s and 1s."
 
-However, as the miniaturization of semiconductors approaches the size of atoms today, "Moore's Law" (the improvement of semiconductor performance) is facing physical limits (such as current leakage due to the quantum tunneling effect).
+However, as the miniaturization of semiconductors approaches the size of atoms today, "[Moore's Law](/en/p/business-moores-law/)" (the improvement of semiconductor performance) is facing physical limits (such as current leakage due to the quantum tunneling effect).
 To break through this limit, an approach that performs calculations using entirely different laws of physics is the "**Quantum Computer**."
 
 ## 2. The Magic of Quantum Mechanics: "Superposition"

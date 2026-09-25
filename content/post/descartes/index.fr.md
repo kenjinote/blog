@@ -59,7 +59,7 @@ $$
 
 L'idée de [Descartes](https://kenji.blog/fr/p/descartes/) a permis de réduire des problèmes géométriques difficiles à des calculs algébriques. De plus, la notation des expressions littérales a également été organisée par [Descartes](https://kenji.blog/fr/p/descartes/). L'utilisation de $x, y, z$ pour les inconnues et $a, b, c$ pour les valeurs connues, ainsi que la notation exprimant les exposants en écrivant de petits nombres en haut à droite, comme $x^2, x^3$, ont également été introduites par lui dans la "Géométrie".
 
-Ci-dessous se trouve la formule pour trouver la distance entre deux points sur un plan de coordonnées. La distance $d$ entre le point $A(x_1, y_1)$ et le point $B(x_2, y_2)$ s'exprime comme suit en utilisant le théorème de Pythagore :
+Ci-dessous se trouve la formule pour trouver la distance entre deux points sur un plan de coordonnées. La distance $d$ entre le point $A(x_1, y_1)$ et le point $B(x_2, y_2)$ s'exprime comme suit en utilisant le théorème de [Pythagore](/fr/p/pythagoras/) :
 
 $$
 d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \quad \text{(Distance entre deux points)}
@@ -67,7 +67,7 @@ $$
 
 ## 4. Impact sur la philosophie et la science
 
-La géométrie analytique de [Descartes](https://kenji.blog/fr/p/descartes/) est devenue une fondation indispensable pour le développement ultérieur des mathématiques et de la physique. On peut dire que la création du calcul infinitésimal par Isaac Newton et [Gottfried Leibniz](https://kenji.blog/fr/p/leibniz/) n'a été possible qu'en raison du décor fourni par le système de coordonnées cartésiennes.
+La géométrie analytique de [Descartes](https://kenji.blog/fr/p/descartes/) est devenue une fondation indispensable pour le développement ultérieur des mathématiques et de la physique. On peut dire que la création du calcul infinitésimal par [Isaac Newton](/fr/p/newton/) et [Gottfried Leibniz](https://kenji.blog/fr/p/leibniz/) n'a été possible qu'en raison du décor fourni par le système de coordonnées cartésiennes.
 
 De plus, son "doute méthodique" en philosophie, une approche pour trouver des vérités certaines après avoir douté de tout, a établi l'esprit de rationalisme qui sert de fondement à la recherche scientifique.
 

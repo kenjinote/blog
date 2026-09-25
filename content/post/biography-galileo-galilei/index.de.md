@@ -50,7 +50,7 @@ Es ist auch bedeutsam, dass er die „wissenschaftliche Methode“ praktizierte,
 
 ## Der immense Einfluss auf spätere Generationen und die moderne Bedeutung
 
-Die von Galileo eröffneten Horizonte hatten einen entscheidenden Einfluss auf nachfolgende Generationen. Die von ihm vorgestellten Bewegungsgesetze (insbesondere das Fallgesetz und das Konzept der Trägheit) wurden von Isaac Newton integriert und mündeten in das großartige System der klassischen Mechanik. Als Newton sagte: „Wenn ich weiter sehen konnte, so deshalb, weil ich auf den Schultern von Riesen stand“, so war zweifellos Galileo einer dieser Riesen.
+Die von Galileo eröffneten Horizonte hatten einen entscheidenden Einfluss auf nachfolgende Generationen. Die von ihm vorgestellten Bewegungsgesetze (insbesondere das Fallgesetz und das Konzept der Trägheit) wurden von [Isaac Newton](/de/p/newton/) integriert und mündeten in das großartige System der klassischen Mechanik. Als Newton sagte: „Wenn ich weiter sehen konnte, so deshalb, weil ich auf den Schultern von Riesen stand“, so war zweifellos Galileo einer dieser Riesen.
 
 Darüber hinaus bietet die Tragödie seiner Unterdrückung durch den Inquisitionsprozess bis heute wichtige historische Lehren für das Nachdenken über die Beziehung zwischen Wissenschaft und Religion oder Wahrheit und Macht. Im Jahr 1992 erkannte Papst Johannes Paul II. offiziell den Irrtum der Kirche im Prozess gegen Galileo an und rehabilitierte ihn. Es war der Moment, in dem die Wahrheit nach über 350 Jahren die Macht besiegte.
 

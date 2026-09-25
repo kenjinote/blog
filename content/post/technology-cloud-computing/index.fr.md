@@ -40,7 +40,7 @@ Le cloud computing est globalement classé en 3 modèles selon « jusqu'où l'ut
 3. **SaaS (Software as a Service)**
    - **Contenu** : Le logiciel lui-même est utilisé en tant que service via Internet. Les utilisateurs n'ont rien à gérer.
    - **Exemple de la pizza** : C'est comme appeler une pizzeria, se faire livrer une pizza cuite et la manger tout simplement.
-   - **Exemples représentatifs** : Gmail, Slack, Salesforce, Microsoft 365
+   - **Exemples représentatifs** : Gmail, Slack, [Salesforce](/fr/p/salesforcechatter%E5%85%A8%E6%B6%88%E3%81%97commande/), Microsoft 365
 
 ## 3. La « technologie de virtualisation » qui soutient le cloud
 

@@ -230,7 +230,7 @@ Wie aus dem obigen Code ersichtlich ist, können Sie Berechnungen zwischen Gehei
 
 Während FHE theoretisch perfekte Sicherheit bietet, ist die größte Herausforderung bei seiner praktischen Anwendung der **"Leistungs-Overhead"**.
 
-1.  **Rechenaufwand**: Im Vergleich zu Berechnungen mit Klartexten sind Berechnungen mit Geheimtexten auf CPUs Tausende bis Zehntausende Male langsamer. Polynommultiplikation und Bootstrapping erfordern massive Mengen an FFT- (Fast Fourier Transform) oder NTT- (Number Theoretic Transform) Berechnungen.
+1.  **Rechenaufwand**: Im Vergleich zu Berechnungen mit Klartexten sind Berechnungen mit Geheimtexten auf CPUs Tausende bis Zehntausende Male langsamer. Polynommultiplikation und Bootstrapping erfordern massive Mengen an [FFT](/de/p/fast-fourier-transform-algorithm/)- (Fast Fourier Transform) oder NTT- (Number Theoretic Transform) Berechnungen.
 2.  **Datenexpansion (Ciphertext Expansion)**: Ein paar Byte Klartext können im verschlüsselten [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) zu mehreren Megabyte werden. Dies übt großen Druck auf die Speicherbandbreite und die Netzwerkbandbreite aus.
 
 ### Ansätze für Hardware-Lösungen

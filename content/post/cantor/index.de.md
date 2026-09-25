@@ -24,7 +24,7 @@ Seine Schaffung der "Mengenlehre" ist zur Grundlage jedes Bereichs der modernen 
 
 [Georg Cantor](https://kenji.blog/de/p/cantor/) wurde 1845 in St. Petersburg, Russland, geboren. Sein Vater war ein wohlhabender Kaufmann aus Dänemark und seine Mutter eine russische Musikerin. Da er von klein auf ein außergewöhnliches Talent für Mathematik zeigte, zog er schließlich nach Deutschland und studierte Mathematik an der Universität Berlin.
 
-An der Universität Berlin wurde er von den damals führenden Persönlichkeiten der mathematischen Welt, **[Karl Weierstraß](https://kenji.blog/de/p/weierstrass/)** und **Leopold Kronecker**, betreut. Insbesondere [Kronecker](https://kenji.blog/de/p/kronecker/) sollte später zu Cantors größtem Gegner werden.
+An der Universität Berlin wurde er von den damals führenden Persönlichkeiten der mathematischen Welt, **[Karl Weierstraß](https://kenji.blog/de/p/weierstrass/)** und **[Leopold Kronecker](/de/p/kronecker/)**, betreut. Insbesondere [Kronecker](https://kenji.blog/de/p/kronecker/) sollte später zu Cantors größtem Gegner werden.
 
 ### Die Suche nach Unendlichkeit und der Konflikt mit [Kronecker](https://kenji.blog/de/p/kronecker/)
 
@@ -111,9 +111,9 @@ graph TD
 
 ## Die Kontinuumshypothese
 
-Gibt es eine mittlere Mächtigkeit zwischen der Mächtigkeit der natürlichen Zahlen $\aleph_0$ und der Mächtigkeit der reellen Zahlen $\mathfrak{c}$? Cantor stellte die Hypothese auf, dass "keine solche mittlere Mächtigkeit existiert". Dies ist die **Kontinuumshypothese (CH)**.
+Gibt es eine mittlere Mächtigkeit zwischen der Mächtigkeit der natürlichen Zahlen $\aleph_0$ und der Mächtigkeit der reellen Zahlen $\mathfrak{c}$? Cantor stellte die Hypothese auf, dass "keine solche mittlere Mächtigkeit existiert". Dies ist die **[Kontinuumshypothese](/de/p/continuum-hypothesis/) (CH)**.
 
-Cantor verbrachte einen Großteil seiner späten Jahre damit, diese Hypothese zu beweisen, konnte sie jedoch letztendlich nicht lösen. Später wurde durch die Forschungen von [Kurt Gödel](https://kenji.blog/de/p/godel/) und Paul Cohen entdeckt, dass die Kontinuumshypothese eine unabhängige Aussage ist, die aus den Standardaxiomen der Mengenlehre (ZFC-Axiome) "weder bewiesen noch widerlegt" werden kann, was der mathematischen Welt erneut einen großen Schock versetzte.
+Cantor verbrachte einen Großteil seiner späten Jahre damit, diese Hypothese zu beweisen, konnte sie jedoch letztendlich nicht lösen. Später wurde durch die Forschungen von [Kurt Gödel](https://kenji.blog/de/p/godel/) und Paul Cohen entdeckt, dass die [Kontinuumshypothese](/de/p/continuum-hypothesis/) eine unabhängige Aussage ist, die aus den Standardaxiomen der Mengenlehre (ZFC-Axiome) "weder bewiesen noch widerlegt" werden kann, was der mathematischen Welt erneut einen großen Schock versetzte.
 
 ## Fazit
 

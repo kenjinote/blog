@@ -99,7 +99,7 @@ $$
 X_k = \sum_{n=0}^{N-1} x_n e^{-i \frac{2\pi}{N} k n} \quad \text{untuk } k = 0, 1, \dots, N-1
 $$
 
-Selanjutnya, algoritma yang secara dramatis mengurangi kompleksitas komputasi DFT ini dari $O(N^2)$ menjadi $O(N \log N)$ adalah **Transformasi Fourier Cepat (FFT)**. Dengan munculnya FFT, bidang pemrosesan sinyal digital (DSP) telah mengalami perkembangan pesat. Banyak teknologi yang kita kenal, seperti pengenalan suara di ponsel pintar dan kompresi gambar JPEG, mendapat manfaat dari FFT.
+Selanjutnya, algoritma yang secara dramatis mengurangi kompleksitas komputasi DFT ini dari $O(N^2)$ menjadi $O(N \log N)$ adalah **[Transformasi Fourier Cepat (FFT)](/id/p/fast-fourier-transform-algorithm/)**. Dengan munculnya [FFT](/id/p/fast-fourier-transform-algorithm/), bidang pemrosesan sinyal digital (DSP) telah mengalami perkembangan pesat. Banyak teknologi yang kita kenal, seperti pengenalan suara di ponsel pintar dan kompresi gambar JPEG, mendapat manfaat dari [FFT](/id/p/fast-fourier-transform-algorithm/).
 
 ```python
 import numpy as np

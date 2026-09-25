@@ -50,7 +50,7 @@ $$
 
 ### 2.2 基于深度学习的推荐模型 (DLRM)
 
-近年来，以 Meta（原 Facebook）等为中心普及的是以深度学习推荐模型（Deep Learning Recommendation Model，DLRM）为代表的架构。DLRM 接收用户的过去行为历史、项目的元数据等多种多样的特征（Feature）作为输入，预测点击率（CTR：Click-Through Rate）等指标。
+近年来，以 [Meta](/zh-cn/p/history-of-meta-facebook/)（[原 Facebook](/zh-cn/p/history-of-meta-facebook/)）等为中心普及的是以深度学习推荐模型（Deep Learning Recommendation Model，DLRM）为代表的架构。DLRM 接收用户的过去行为历史、项目的元数据等多种多样的特征（Feature）作为输入，预测点击率（CTR：Click-Through Rate）等指标。
 
 DLRM 的特点在于，它通过“嵌入表（Embedding Table）”将稀疏的类别特征（如用户 ID、关注的话题标签）转换为稠密向量（Dense Vector），并将其与连续的稠密特征（如账号注册以来的天数、过去平均停留时间）结合起来。
 
@@ -93,7 +93,7 @@ $$
 
 在网络理论中，相似者更容易相互连接的性质被称为“同质性（Homophily）”。在图 $G=(V, E)$ 中，节点（用户）之间的边（关注关系或信息传播），其属性相似度越高越容易形成。
 
-SNS 的推荐算法人为地加速了这种同质性。例如，假设有一个推广“无服务器架构（[Serverless](https://kenji.blog/zh-cn/p/serverless-architecture-aws-lambda-cold-start/) Architecture）”的工程师社区，以及一个支持“本地裸金属服务器（On-Premises Bare Metal）”的社区。算法会学习降低不同社区之间边（Cross-cutting ties）的权重，并强化同一社区内的边（因为对立的意见通常会引起用户的流失，存在降低参与度的风险。或者反过来说，有时极端的愤怒也会引发参与度，但在技术圈内前者更为常见）。
+SNS 的推荐算法人为地加速了这种同质性。例如，假设有一个推广“[无服务器架构](/zh-cn/p/serverless-architecture-aws-lambda-cold-start/)（[Serverless](https://kenji.blog/zh-cn/p/serverless-architecture-aws-lambda-cold-start/) Architecture）”的工程师社区，以及一个支持“本地裸金属服务器（On-Premises Bare Metal）”的社区。算法会学习降低不同社区之间边（Cross-cutting ties）的权重，并强化同一社区内的边（因为对立的意见通常会引起用户的流失，存在降低参与度的风险。或者反过来说，有时极端的愤怒也会引发参与度，但在技术圈内前者更为常见）。
 
 结果，在你的时间线上，看起来“全世界的企业都在向无服务器迁移”；而在另一个人的时间线上，看起来“逃离云端（Cloud Repatriation）才是世界趋势”，这就创造了完全割裂的技术现实。
 
@@ -115,7 +115,7 @@ graph TD
     F --> A
 ```
 
-这个循环中最可怕的是， **“频率错觉（Baader-Meinhof phenomenon）”** 是被算法有意引发的。当你看到某个新的状态管理库的名字一次，算法就会将其作为信号捕捉，从第二天起你的信息流就会被关于该库的话题填满。人类的大脑会将其误认为“全球性的大流行”。
+这个循环中最可怕的是， **“频率错觉（Baader-Meinhof phenomenon）”** 是被算法有意引发的。当你看到某个新的[状态管理](/zh-cn/p/state-management-history-redux-context-recoil-zustand/)库的名字一次，算法就会将其作为信号捕捉，从第二天起你的信息流就会被关于该库的话题填满。人类的大脑会将其误认为“全球性的大流行”。
 
 以下图表展示了在 SNS 上被过度炒作（Hype）的技术与朴实无华但稳健的技术（Boring Technology）在生命周期上的差异。
 
@@ -141,12 +141,12 @@ xychart-beta
 
 最稳妥的防御策略是将信息源从 SNS 的聚合，转移到 **一手信息（Primary Sources）** 。
 
-1. **阅读源代码：** 与其相信 SNS 上“这个库速度极快”的帖子，不如实际打开 GitHub，检查核心逻辑的时间复杂度和内存分配机制。
+1. **阅读源代码：** 与其相信 SNS 上“这个库速度极快”的帖子，不如实际打开 GitHub，检查核心逻辑的时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)和内存分配机制。
 2. **追踪 RFC (Request for Comments)：** 许多成熟的开源项目（React、[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)、Python 等）在引入新功能时都采用了 RFC 流程。在 RFC 中，“为什么需要这个功能”、“有哪些设计上的权衡”、“替代方案是什么”等内容，都会在不顾及算法参与度的情况下被客观、有逻辑地记录下来。这里才沉睡着真正的技术价值。
 
 ### 5.2 精读论文（Academic Papers）与白皮书
 
-在分布式系统、数据库、机器学习模型架构等核心技术选型中，不应依赖 SNS 上的几行总结，而应该直接阅读 ACM、IEEE 或 arXiv 上公开的论文，或是企业发布的详细白皮书（例如 Google 的 Spanner 论文，Amazon 的 Dynamo 论文）。
+在[分布式系统](/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)、数据库、机器学习模型架构等核心技术选型中，不应依赖 SNS 上的几行总结，而应该直接阅读 ACM、IEEE 或 arXiv 上公开的论文，或是企业发布的详细白皮书（例如 Google 的 Spanner 论文，Amazon 的 Dynamo 论文）。
 
 SNS 的帖子是针对“夺取读者的注意力”而优化的，但经过同行评审的论文则是针对“事实的准确性和可重复性”而优化的。它们的评估函数完全不同。
 

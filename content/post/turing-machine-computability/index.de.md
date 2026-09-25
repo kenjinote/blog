@@ -160,7 +160,7 @@ Mit der universellen Turingmaschine erwartete man: „Könnte nicht jede Berechn
 
 ### 4.1 Was ist das Halteproblem?
 
-Das Halteproblem ist folgende Frage:
+[Das Halteproblem](/de/p/halting-problem/) ist folgende Frage:
 
 > Gegeben sei ein beliebiges Programm $P$ und seine Eingabe $x$. Gibt es einen Algorithmus (Programm), der vor der Ausführung bestimmen kann, ob das Programm $P$ bei Eingabe $x$ **die Berechnung innerhalb einer endlichen Zeit beendet und hält, oder in eine Endlosschleife gerät und niemals hält?** 
 
@@ -200,7 +200,7 @@ paradox(paradox)
 2. Wenn `halts(paradox, paradox)` als `False` (Endlosschleife) bestimmt wird:
    Die `paradox`-Funktion betritt den `else`-Block und **hält sofort an**. Auch das widerspricht dem Bestimmungsergebnis.
 
-Da in beiden Fällen ein Widerspruch entsteht, war die anfängliche Annahme, **„dass eine perfekte `halts`-Funktion existiert“, falsch**. Daher gibt es keinen Algorithmus, der das Halteproblem löst.
+Da in beiden Fällen ein Widerspruch entsteht, war die anfängliche Annahme, **„dass eine perfekte `halts`-Funktion existiert“, falsch**. Daher gibt es keinen Algorithmus, der [das Halteproblem](/de/p/halting-problem/) löst.
 
 ### 4.3 Mathematische Darstellung
 
@@ -231,7 +231,7 @@ Dadurch wird bewiesen, dass die Funktion $h$ unberechenbar (Uncomputable) ist.
 
 ## 5. Auswirkungen der Berechenbarkeitstheorie
 
-Die Tatsache, dass das Halteproblem „ungelöst“ ist, hat direkte Auswirkungen auf die moderne Softwareentwicklung.
+Die Tatsache, dass [das Halteproblem](/de/p/halting-problem/) „ungelöst“ ist, hat direkte Auswirkungen auf die moderne Softwareentwicklung.
 
 Beispielsweise prüfen Compiler und statische Code-Analyse-Tools, ob Code Fehler aufweist oder in Endlosschleifen gerät, aber diese arbeiten unter der Einschränkung, dass **„es prinzipiell unmöglich ist, Endlosschleifen für alle Programme 100% genau zu erkennen“** . Aus diesem Grund verwenden praktische Analyse-Tools Heuristiken und Timeouts als Kompromisslösung.
 

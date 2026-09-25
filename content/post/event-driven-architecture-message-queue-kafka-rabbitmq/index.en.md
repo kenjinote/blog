@@ -22,7 +22,7 @@ Modern software systems are unprecedented in scale and complexity. As microservi
 
 # 2. Challenges of Synchronous Communication (REST / gRPC)
 
-The most intuitive approach to inter-service communication in distributed systems is **synchronous communication**, such as REST APIs using HTTP requests/responses or the faster gRPC. However, synchronous communication has several inherent challenges.
+The most intuitive approach to inter-service communication in [distributed systems](/en/p/cap-theorem-distributed-systems-tradeoff/) is **synchronous communication**, such as REST APIs using HTTP requests/responses or the faster gRPC. However, synchronous communication has several inherent challenges.
 
 ## 2.1 Tight Coupling and Cascading Failures
 In synchronous communication, the caller (client) and the callee (server) are strongly coupled in time. The client must wait until the server returns a response, and if the server experiences a failure or delays responding due to high load, the impact ripples through to the client. If this occurs in a chain reaction, there is a danger of causing **cascading failures** that take down the entire system.
@@ -218,7 +218,7 @@ run();
 
 # 6. Conclusion
 
-Event-driven architecture is a powerful method for keeping systems flexible and scalable. As the message brokers that play a central role, RabbitMQ and Kafka each have different design philosophies. Selecting the appropriate technology to match your project requirements—RabbitMQ for routing flexibility and reliable state management, or Kafka for overwhelming throughput and data persistence/replayability—is the key to building a successful distributed system.
+Event-driven architecture is a powerful method for keeping systems flexible and scalable. As the message brokers that play a central role, RabbitMQ and Kafka each have different design philosophies. Selecting the appropriate technology to match your project requirements—RabbitMQ for routing flexibility and reliable [state management](/en/p/state-management-history-redux-context-recoil-zustand/), or Kafka for overwhelming throughput and data persistence/replayability—is the key to building a successful distributed system.
 
 # 7. Advanced Design Patterns and Operations in Event-Driven Architecture
 
@@ -252,4 +252,4 @@ Kafka producers do not send messages one by one but rather batch them together a
 
 ## 7.4 Ensuring Observability
 
-In systems where asynchronous processing is chained, troubleshooting during a failure becomes extremely difficult. To track which queue a message is stuck in or which service encountered an error, introducing **distributed tracing** (e.g., OpenTelemetry, Jaeger) is mandatory. The best practice for operating an EDA is to construct a foundation that visualizes the flow of events by assigning a unique `traceId` to each message and linking it with logs and metrics.
+In systems where [asynchronous processing](/en/p/event-driven-architecture-async/) is chained, troubleshooting during a failure becomes extremely difficult. To track which queue a message is stuck in or which service encountered an error, introducing **distributed tracing** (e.g., OpenTelemetry, Jaeger) is mandatory. The best practice for operating an EDA is to construct a foundation that visualizes the flow of events by assigning a unique `traceId` to each message and linking it with logs and metrics.

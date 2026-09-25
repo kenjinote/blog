@@ -47,7 +47,7 @@ Dans Git, une « copie complète du dépôt » existe sur la machine locale de c
 
 Le concept le plus important pour comprendre la structure interne de Git est le « DAG (Directed Acyclic Graph : Graphe orienté acyclique) ». Git ne gère pas l'historique comme une simple « succession de correctifs (différences) », mais construit les relations entre les instantanés (snapshots) sous forme de DAG.
 
-Chaque commit possède un pointeur (tree) vers un instantané de l'ensemble du projet à ce moment-là, ainsi que des pointeurs vers un ou plusieurs « commits parents ». Grâce à cette simple chaîne de structures de données, Git représente l'historique complexe des bifurcations et des fusions de branches comme un graphe mathématiquement cohérent.
+Chaque commit possède un pointeur (tree) vers un instantané de l'ensemble du projet à ce moment-là, ainsi que des [pointeurs](/fr/p/c-language-pointers-memory-management-stack-heap/) vers un ou plusieurs « commits parents ». Grâce à cette simple chaîne de structures de données, Git représente l'historique complexe des bifurcations et des fusions de branches comme un graphe mathématiquement cohérent.
 
 La beauté de cette approche réside dans le fait que l'historique s'exprime naturellement non pas comme une « ligne unique », mais comme « plusieurs chronologies avançant en parallèle ». Les développeurs peuvent librement bifurquer l'historique, expérimenter, puis abandonner la branche en cas d'échec, ou la fusionner avec la branche principale en cas de succès. L'historique n'est pas simplement un enregistrement du passé, mais devient la « trace de la pensée » même du développeur.
 
@@ -78,7 +78,7 @@ graph TD
 
 Si le contenu d'un fichier change d'un seul octet, la valeur de hachage de ce fichier change, la valeur de hachage du tree qui le contient change, et par conséquent la valeur de hachage du commit change également. En d'autres termes, il est cryptographiquement impossible de falsifier secrètement une partie de l'historique.
 
-Linus Torvalds, lors de la conception de Git, avait la ferme volonté de « ne jamais permettre la destruction ou la falsification des données ». Le modèle de hachage de Git incarne la forme ultime de la décentralisation, comparable à la blockchain, où la confiance est inhérente aux données elles-mêmes, sans dépendre d'une autorité centrale (serveur).
+Linus Torvalds, lors de la conception de Git, avait la ferme volonté de « ne jamais permettre la destruction ou la falsification des données ». Le modèle de hachage de Git incarne la forme ultime de la décentralisation, comparable à la [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/), où la confiance est inhérente aux données elles-mêmes, sans dépendre d'une autorité centrale (serveur).
 
 ## 5. Fusion et dialogue : la programmation comme processus social
 

@@ -10,7 +10,7 @@ tags: ["रैखिक-बीजगणित", "आइगेनवैल्य�
 
 ## परिचय
 
-रैखिक बीजगणित (linear algebra) सीखते समय, बहुत से लोगों को सबसे पहली बाधा "मैट्रिक्स गुणन" (matrix multiplication) या "सारणिक" (determinants) लग सकती है। हालांकि, उन बाधाओं से परे আধুনিক विज्ञान और इंजीनियरिंग में रैखिक बीजगणित की अपार शक्ति का वास्तविक स्रोत है: **आइगेनवैल्यू** (Eigenvalues) और **आइगेनवेक्टर** (Eigenvectors)।
+रैखिक बीजगणित (linear algebra) सीखते समय, बहुत से लोगों को सबसे पहली बाधा "मैट्रिक्स गुणन" (matrix multiplication) या "[सारणिक](/hi/p/geometric-meaning-of-determinant/)" (determinants) लग सकती है। हालांकि, उन बाधाओं से परे আধুনিক विज्ञान और इंजीनियरिंग में रैखिक बीजगणित की अपार शक्ति का वास्तविक स्रोत है: **आइगेनवैल्यू** (Eigenvalues) और **आइगेनवेक्टर** (Eigenvectors)।
 
 मशीन लर्निंग में डायमेंशनलिटी रिडक्शन (PCA) और Google के सर्च इंजन को संचालित करने वाले PageRank एल्गोरिदम से लेकर इमारतों के भूकंपीय डिजाइन और क्वांटम यांत्रिकी में श्रोडिंगर समीकरण तक, [आइगेनवैल्यू और आइगेनवेक्टर](https://kenji.blog/hi/p/eigenvalues-and-eigenvectors/) हर जगह दिखाई देते हैं।
 
@@ -50,7 +50,7 @@ $$ A\mathbf{v} = \lambda I\mathbf{v} $$
 $$ A\mathbf{v} - \lambda I\mathbf{v} = \mathbf{0} $$
 $$ (A - \lambda I)\mathbf{v} = \mathbf{0} $$
 
-एक गैर-शून्य वेक्टर $\mathbf{v}$ के इस समीकरण को संतुष्ट करने के लिए आवश्यक और पर्याप्त शर्त यह है कि मैट्रिक्स $(A - \lambda I)$ का कोई व्युत्क्रम (inverse) नहीं है, जिसका अर्थ है कि इसका सारणिक (determinant) शून्य होना चाहिए।
+एक गैर-शून्य वेक्टर $\mathbf{v}$ के इस समीकरण को संतुष्ट करने के लिए आवश्यक और पर्याप्त शर्त यह है कि मैट्रिक्स $(A - \lambda I)$ का कोई व्युत्क्रम (inverse) नहीं है, जिसका अर्थ है कि इसका [सारणिक](/hi/p/geometric-meaning-of-determinant/) ([determinant](/hi/p/geometric-meaning-of-determinant/)) शून्य होना चाहिए।
 
 $$ \det(A - \lambda I) = 0 $$
 
@@ -74,7 +74,7 @@ $$
 A - \lambda I = \begin{pmatrix} 4 & 1 \\ 2 & 3 \end{pmatrix} - \begin{pmatrix} \lambda & 0 \\ 0 & \lambda \end{pmatrix} = \begin{pmatrix} 4-\lambda & 1 \\ 2 & 3-\lambda \end{pmatrix}
 $$
 
-हम इसके सारणिक की गणना करते हैं:
+हम इसके [सारणिक](/hi/p/geometric-meaning-of-determinant/) की गणना करते हैं:
 
 $$
 \det(A - \lambda I) = (4-\lambda)(3-\lambda) - (1)(2) = (\lambda^2 - 7\lambda + 12) - 2 = \lambda^2 - 7\lambda + 10

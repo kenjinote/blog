@@ -39,7 +39,7 @@ graph TD
     style F fill:#fbb,stroke:#333,stroke-width:2px
 ```
 
-The era where developers operated pointers while worrying about memory leaks, or wrote hundreds of lines of boilerplate code to parse JSON, is over. Using natural language (such as English or Japanese), the language with the highest level of abstraction for humanity, to define systems has become the standard of "programming" in 2026.
+The era where developers operated [pointers](/en/p/c-language-pointers-memory-management-stack-heap/) while worrying about memory leaks, or wrote hundreds of lines of boilerplate code to parse JSON, is over. Using natural language (such as English or Japanese), the language with the highest level of abstraction for humanity, to define systems has become the standard of "programming" in 2026.
 
 ---
 
@@ -50,7 +50,7 @@ Individual productivity in traditional software development, $P_{traditional}$, 
 
 $$ P_{traditional} = c_1 \cdot S + c_2 \cdot E + c_3 \cdot T $$
 
-However, in modern development utilizing AI, the capability of AI, $A(t)$, acts as a "powerful multiplier (Leverage)" that amplifies human capabilities. Because AI capabilities grow exponentially over time $t$ (an AI version of Moore's Law), productivity in the AI era, $P_{AI}(t)$, can be expressed by the following equation:
+However, in modern development utilizing AI, the capability of AI, $A(t)$, acts as a "powerful multiplier (Leverage)" that amplifies human capabilities. Because AI capabilities grow exponentially over time $t$ (an AI version of [Moore's Law](/en/p/business-moores-law/)), productivity in the AI era, $P_{AI}(t)$, can be expressed by the following equation:
 
 $$ P_{AI}(t) = \alpha \cdot S_{core} \cdot e^{\beta \cdot A(t)} $$
 
@@ -175,7 +175,7 @@ More than the skill of "writing," humans need to push their skills of "Code Read
 Based on the analysis so far, here is a concrete action plan for programmers to survive in the AI era.
 
 1.  **Thoroughly Relearn the "Fundamentals" of Technology**: You can leave the usage of frameworks to AI. However, a deep understanding of how OS works, network protocols ([TCP](https://kenji.blog/en/p/http3-quic-protocol-tcp-udp/)/IP, HTTP/3), internal database structures ([B-Tree](https://kenji.blog/en/p/b-tree-database-index-theory/), transaction isolation levels), and data structures and algorithms is absolutely necessary. To judge whether AI's output is correct, a solid foundation in computer science is indispensable.
-2.  **Master Cloud Architecture and [Distributed System](https://kenji.blog/en/p/cap-theorem-distributed-systems/)s**: Focus on how to combine cloud resources like AWS, GCP, and Azure to build scalable systems, rather than individual pieces of code. Understand the concept of IaC (Infrastructure as Code) such as [Terraform](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/), and cultivate the ability to design an entire system as code.
+2.  **Master Cloud Architecture and [Distributed System](https://kenji.blog/en/p/cap-theorem-distributed-systems/)s**: Focus on how to combine cloud resources like AWS, GCP, and Azure to build scalable systems, rather than individual pieces of code. Understand the concept of [IaC](/en/p/iac-infrastructure-as-code-terraform/) ([Infrastructure as Code](/en/p/iac-infrastructure-as-code-terraform/)) such as [Terraform](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/), and cultivate the ability to design an entire system as code.
 3.  **Become an Expert in a Business Domain**: Deeply study the business models, legal regulations, and behavioral psychology of the users in the industry you belong to. [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) beyond the boundaries of an engineer and acquire a perspective closer to that of a Product Manager (PM).
 4.  **Polish Communication and Facilitation Skills**: The process of resolving the "ambiguity" between humans and building consensus cannot be replaced by AI. Soft skills to communicate with stakeholders and discover real issues will become the most valuable skills.
 5.  **Use AI to the Fullest as a "Colleague"**: Do not fear the evolution of AI tools, but utilize them as your most powerful weapons. Use the latest LLMs and AI coding agents on a daily basis to accumulate the "tacit knowledge" of where AI fails and how to tweak prompts to draw out the best performance.

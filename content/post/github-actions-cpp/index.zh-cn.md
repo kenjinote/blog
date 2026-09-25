@@ -12,15 +12,15 @@ tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 
 # 使用[GitHub Actions](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)构建C++项目的[CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)流水线：完全指南
 
-在现代软件开发范式中，持续集成（Continuous Integration: CI）和持续交付/部署（Continuous Delivery/Deployment: CD）是敏捷开发过程和维持高质量软件不可或缺的要素。在众多编程语言中，相比于其他语言（例如Python、JavaScript、[Go](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)等），构建C++的CI/CD流水线伴随着独特的难度与复杂性。
+在现代软件开发范式中，持续集成（Continuous Integration: CI）和持续交付/部署（Continuous Delivery/Deployment: CD）是敏捷开发过程和维持高质量软件不可或缺的要素。在众多编程语言中，相比于其他语言（例如Python、JavaScript、[Go](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)等），构建C++的[CI/CD](/zh-cn/p/cicd-pipeline-github-actions-best-practices/)流水线伴随着独特的难度与复杂性。
 
-本文将极其详细地讲解如何利用GitHub Actions，从零开始为C++项目构建坚固且实用的CI/CD流水线。内容涵盖跨平台（Windows、Linux、macOS）的矩阵构建（Matrix Build）、整合CMake构建系统、使用CTest进行自动化测试、自动化静态与动态分析、覆盖率测量，以及通过GitHub Releases自动交付已编译二进制文件等所有实践技巧。
+本文将极其详细地讲解如何利用GitHub Actions，从零开始为C++项目构建坚固且实用的[CI/CD](/zh-cn/p/cicd-pipeline-github-actions-best-practices/)流水线。内容涵盖跨平台（Windows、Linux、macOS）的矩阵构建（Matrix Build）、整合CMake构建系统、使用CTest进行自动化测试、自动化静态与动态分析、覆盖率测量，以及通过GitHub Releases自动交付已编译二进制文件等所有实践技巧。
 
 ## 1. C++项目中CI/CD的意义与特有问题
 
 在Web应用程序或使用脚本语言的开发中，通常在单个[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/)容器上进行测试和构建就足够了。然而，C++作为一种本地编译语言，强烈依赖于运行环境的硬件架构和操作系统。
 
-在为C++项目引入CI/CD时，面临的主要挑战如下：
+在为C++项目引入[CI/CD](/zh-cn/p/cicd-pipeline-github-actions-best-practices/)时，面临的主要挑战如下：
 
 1. **平台的多样性** ：不同操作系统（如Windows、Linux、macOS）的API（Windows API、POSIX等）各不相同。即使在开发者的本地环境（例如macOS）中能正常运行，在Linux或Windows上出现编译错误也是家常便饭。
 2. **编译器的差异** ：Microsoft Visual C++ (MSVC)、GNU Compiler Collection (GCC)、Clang等主流编译器，在对C++标准（C++17、C++20、C++23）的实现程度、解释以及警告的严格程度上都存在差异。
@@ -32,7 +32,7 @@ tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 
 ## 2. [CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)流水线架构概述
 
-让我们来可视化即将构建的CI/CD流水线全貌。以下的Mermaid时序图展示了从代码Push到发布（Release）的工作流。
+让我们来可视化即将构建的[CI/CD](/zh-cn/p/cicd-pipeline-github-actions-best-practices/)流水线全貌。以下的Mermaid时序图展示了从代码Push到发布（Release）的工作流。
 
 ```mermaid
 sequenceDiagram
@@ -455,6 +455,6 @@ jobs:
 
 本文所讲解的基于矩阵策略的跨平台验证、基于Sanitizer的运行时Bug检测、覆盖率测量，以及自动部署到GitHub Releases，都是在商业级开源项目中被广泛采用的最佳实践。
 
-自动化的CI/CD流水线是最小化开发者在“寻找Bug”和“手动构建/发布”上所耗费的时间，使其能够专注于本质的创造性编码活动的最强武器。请务必也引入到您的C++项目中，实现敏捷且充满安心感的开发生活。
+自动化的[CI/CD](/zh-cn/p/cicd-pipeline-github-actions-best-practices/)流水线是最小化开发者在“寻找Bug”和“手动构建/发布”上所耗费的时间，使其能够专注于本质的创造性编码活动的最强武器。请务必也引入到您的C++项目中，实现敏捷且充满安心感的开发生活。
 
 

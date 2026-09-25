@@ -120,7 +120,7 @@ graph TD
     VPC --> SG
 ```
 
-Durch diesen auf der Graphentheorie basierenden Ansatz erreicht Terraform Folgendes:
+Durch diesen auf der [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) basierenden Ansatz erreicht Terraform Folgendes:
 - **Parallele Erstellung** von Ressourcen ohne Abhängigkeiten (Beschleunigung).
 - Erstellung, Aktualisierung und Löschung von Ressourcen in der richtigen Reihenfolge.
 

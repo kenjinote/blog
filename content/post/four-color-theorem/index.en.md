@@ -10,7 +10,7 @@ tags: ["Four Color Theorem", "Graph Theory", "Computer-assisted Proof", "Topolog
 
 ## 1. What is the [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/)?
 
-The [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) is one of the most famous and fascinating problems in mathematics, particularly in graph theory and topology. Its assertion is very simple, intuitive enough for an elementary school student to understand. It states that "for any map on a plane, a maximum of **4 colors** is sufficient to color it so that adjacent regions have different colors."
+The [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) is one of the most famous and fascinating problems in mathematics, particularly in [graph theory](/en/p/graph-theory-dijkstra-a-star/) and topology. Its assertion is very simple, intuitive enough for an elementary school student to understand. It states that "for any map on a plane, a maximum of **4 colors** is sufficient to color it so that adjacent regions have different colors."
 
 Here, "adjacent" refers to a state of sharing a boundary line, not a point. If they only touch at a point, there is no problem painting them the same color. This intuitive hypothesis was first proposed by Francis Guthrie in 1852. While coloring a map of the counties of England, he noticed that no matter how complex the boundary lines of the counties were, they could be colored with just 4 colors.
 
@@ -28,13 +28,13 @@ However, in 1890, Percy Heawood discovered a fatal flaw in Kempe's proof. While 
 
 ## 4. Conversion to [Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)
 
-To handle the [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) mathematically strictly, the problem is translated into the language of graph theory. Each region on the map is treated as a "Vertex," and regions sharing a boundary line are connected by an "Edge." The graph created in this way is called a "Planar [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)."
+To handle the [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) mathematically strictly, the problem is translated into the language of [graph theory](/en/p/graph-theory-dijkstra-a-star/). Each region on the map is treated as a "Vertex," and regions sharing a boundary line are connected by an "Edge." The graph created in this way is called a "Planar [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)."
 
 A planar graph is a graph that can be drawn on a plane without edges crossing. The [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) reduces to the problem that "the vertices of every planar graph can be colored with **4 colors** such that adjacent vertices have different colors."
 
 Expressed using mathematical formulas, for a graph $G = (V, E)$, it means showing that there exists a coloring function $c: V \rightarrow \{1, 2, 3, 4\}$ such that for all edges $(u, v) \in E$, $c(u) \neq c(v)$.
 
-Here, Euler's polyhedron formula $V - E + F = 2$ (where $V$ is the number of vertices, $E$ is the number of edges, and $F$ is the number of faces) plays an important role in investigating the properties of planar graphs.
+Here, [Euler's polyhedron formula](/en/p/eulers-polyhedron-formula/) $V - E + F = 2$ (where $V$ is the number of vertices, $E$ is the number of edges, and $F$ is the number of faces) plays an important role in investigating the properties of planar graphs.
 
 ```mermaid
 graph TD
@@ -59,7 +59,7 @@ Today, computer-assisted proofs are widely recognized as powerful tools in mathe
 
 ## 7. Conclusion
 
-The [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) is the best example showing "how deeply complex mathematical structures are hidden within seemingly simple problems." This problem, which started from the playful act of coloring a map, has had an immeasurable impact by developing graph theory and even transforming the very nature of mathematical proofs.
+The [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) is the best example showing "how deeply complex mathematical structures are hidden within seemingly simple problems." This problem, which started from the playful act of coloring a map, has had an immeasurable impact by developing [graph theory](/en/p/graph-theory-dijkstra-a-star/) and even transforming the very nature of mathematical proofs.
 
 The exploration of this problem teaches us how powerful human intuition is, and how much effort and new technology are required to rigorously prove it.
 

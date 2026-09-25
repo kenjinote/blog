@@ -205,6 +205,6 @@ if solution:
 
 ## 11. 总结
 
-在本文中，我们深入探讨了[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程中特别迷人的**[佩尔方程](https://kenji.blog/zh-cn/p/pell-equation/)**，从其基础到应用进行了详细讲解。我们解释了对于任何非完全平方数 $n$，方程始终存在无限非平凡解的惊人事实，利用连分数展开的高效搜索算法，以及利用矩阵从已生成的基本解不断合成新解的动态过程。
+在本文中，我们深入探讨了[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程中特别迷人的**[佩尔方程](https://kenji.blog/zh-cn/p/pell-equation/)**，从其基础到应用进行了详细讲解。我们解释了对于任何非完全平方数 $n$，方程始终存在无限非平凡解的惊人事实，利用连分数展开的高效[搜索算法](/zh-cn/p/search-algorithms-linear-binary-hash-table-principles/)，以及利用矩阵从已生成的基本解不断合成新解的动态过程。
 
 几百年前费马和婆罗摩笈多思考的经典问题，如今能够被优雅地实现为现代计算机算法，并进一步连接到高级代数数论，这一事实令人不禁感受到超越时代的深邃的数学浪漫。希望您能以此为契机，利用 Python 代码探索不同 $n$ 值下的[佩尔方程](https://kenji.blog/zh-cn/p/pell-equation/)世界，并感受数字深奥的性质。

@@ -18,7 +18,7 @@ Cet article aborde le paradoxe le plus célèbre symbolisant cette divergence en
 
 ## Chapitre 1 : Qu'est-ce que le problème de Monty Hall ?
 
-Le problème de Monty Hall est un paradoxe probabiliste nommé d'après Monty Hall, le présentateur de la célèbre émission de télévision américaine *Let's Make a Deal*. Ce problème a été largement connu du public en 1990 lorsqu'il a été présenté dans la chronique « Ask Marilyn » du magazine d'information *Parade*.
+[Le problème de Monty Hall](/fr/p/monty-hall-problem/) est un paradoxe probabiliste nommé d'après Monty Hall, le présentateur de la célèbre émission de télévision américaine *Let's Make a Deal*. Ce problème a été largement connu du public en 1990 lorsqu'il a été présenté dans la chronique « Ask Marilyn » du magazine d'information *Parade*.
 
 ### Paramètres du problème
 
@@ -121,7 +121,7 @@ Par conséquent, la probabilité de victoire attendue pour la stratégie consist
 
 ## Chapitre 3 : Solution stricte par le théorème de Bayes
 
-Le problème de Monty Hall peut être résolu mathématiquement de manière plus rigoureuse à l'aide du « théorème de Bayes » pour le calcul des probabilités conditionnelles. L'inférence bayésienne est un outil puissant montrant comment mettre à jour une probabilité préalable (probabilité a priori) lorsqu'une nouvelle information (preuve) est obtenue (probabilité a posteriori).
+[Le problème de Monty Hall](/fr/p/monty-hall-problem/) peut être résolu mathématiquement de manière plus rigoureuse à l'aide du « [théorème de Bayes](/fr/p/bayes-theorem/) » pour le calcul des probabilités conditionnelles. L'inférence bayésienne est un outil puissant montrant comment mettre à jour une probabilité préalable (probabilité a priori) lorsqu'une nouvelle information (preuve) est obtenue (probabilité a posteriori).
 
 Définissons les événements comme suit :
 - $C_i$ : L'événement où la voiture est derrière la porte $i$ ($i \in \{A, B, C\}$)
@@ -140,7 +140,7 @@ Les règles de comportement de Monty (probabilité conditionnelle $P(M_B|C_i)$) 
 2. Si la voiture est derrière la Porte B ($C_B$), Monty ne peut absolument pas ouvrir la B, donc $P(M_B|C_B) = 0$
 3. Si la voiture est derrière la Porte C ($C_C$), Monty ne peut pas ouvrir la C, et la A a été choisie par le joueur, donc il ne peut pas l'ouvrir non plus. Il est donc obligé d'ouvrir la B, donc $P(M_B|C_C) = 1$
 
-La formule du théorème de Bayes est la suivante :
+La formule du [théorème de Bayes](/fr/p/bayes-theorem/) est la suivante :
 $P(C_i|M_B) = \frac{P(M_B|C_i) P(C_i)}{P(M_B)}$
 
 Nous calculons le dénominateur $P(M_B)$ (la probabilité totale que Monty ouvre la Porte B) (théorème des probabilités totales) :
@@ -155,7 +155,7 @@ $P(C_A|M_B) = \frac{P(M_B|C_A) P(C_A)}{P(M_B)} = \frac{(1/2) \times (1/3)}{1/2} 
 **Probabilité que la voiture soit derrière la Porte C (changer de choix) :**
 $P(C_C|M_B) = \frac{P(M_B|C_C) P(C_C)}{P(M_B)} = \frac{1 \times (1/3)}{1/2} = 2/3$
 
-Ainsi, en utilisant le théorème de Bayes, il est mathématiquement prouvé de manière exhaustive que les probabilités sont mises à jour par la nouvelle information (le fait que Monty ouvre la Porte B), faisant grimper la probabilité pour la Porte C à 2/3.
+Ainsi, en utilisant le [théorème de Bayes](/fr/p/bayes-theorem/), il est mathématiquement prouvé de manière exhaustive que les probabilités sont mises à jour par la nouvelle information (le fait que Monty ouvre la Porte B), faisant grimper la probabilité pour la Porte C à 2/3.
 
 ## Chapitre 4 : Pourquoi l'intuition humaine se trompe-t-elle ? (Facteurs psychologiques et cognitifs)
 
@@ -164,13 +164,13 @@ Peu importe combien de fois on leur montre la preuve mathématique, beaucoup de 
 ### 1. Biais d'équiprobabilité (Equiprobability Bias)
 
 Les humains ont une forte tendance inconsciente à supposer dans des situations incertaines ou aléatoires que « s'il reste des options disponibles, leurs probabilités doivent toutes être égales ».
-Dans le problème de Monty Hall, deux options, la « Porte A » et la « Porte C », restent à la fin. Au moment où cette information visuelle et situationnelle de « deux options » est saisie par le cerveau, une puissante heuristique se déclenche : « Puisqu'il y en a deux, la probabilité est de 1/2 chacune ».
+Dans [le problème de Monty Hall](/fr/p/monty-hall-problem/), deux options, la « Porte A » et la « Porte C », restent à la fin. Au moment où cette information visuelle et situationnelle de « deux options » est saisie par le cerveau, une puissante heuristique se déclenche : « Puisqu'il y en a deux, la probabilité est de 1/2 chacune ».
 Notre cerveau sépare l'historique (le fait qu'il y en avait trois au départ, et que Monty a intentionnellement ouvert un mauvais choix), qui est une « information asymétrique », de la « situation actuelle » et l'ignore.
 
 ### 2. Relation de cause à effet et perception erronée de « l'intention »
 
 Nous essayons de comprendre les relations de cause à effet de manière linéaire.
-Ceci s'apparente à l'« erreur du parieur » (Gambler's fallacy) qui fait penser « Le noir devrait bientôt sortir » après que le rouge est sorti 5 fois de suite à la roulette. Dans le problème de Monty Hall, nous sous-évaluons au contraire la « mise à jour de l'information ».
+Ceci s'apparente à l'« erreur du parieur » (Gambler's fallacy) qui fait penser « Le noir devrait bientôt sortir » après que le rouge est sorti 5 fois de suite à la roulette. Dans [le problème de Monty Hall](/fr/p/monty-hall-problem/), nous sous-évaluons au contraire la « mise à jour de l'information ».
 
 Le point crucial est que **« l'animateur Monty n'ouvre pas les portes au hasard »**.
 Si l'animateur ouvrait une porte au hasard sans rien savoir, et qu'elle « s'avérait être une chèvre », la probabilité des deux portes restantes serait véritablement de 1/2 (c'est ce qu'on appelle le « problème de l'animateur ignorant »).
@@ -195,7 +195,7 @@ flowchart LR
 
 ## Chapitre 5 : Leçons du paradoxe dans la vie quotidienne
 
-Le problème de Monty Hall va bien au-delà d'un simple quiz ou d'un puzzle mathématique. Les leçons enseignées par ce paradoxe ont une valeur universelle qui peut être appliquée à divers domaines, y compris notre vie quotidienne, les affaires, la médecine et le développement de l'IA.
+[Le problème de Monty Hall](/fr/p/monty-hall-problem/) va bien au-delà d'un simple quiz ou d'un puzzle mathématique. Les leçons enseignées par ce paradoxe ont une valeur universelle qui peut être appliquée à divers domaines, y compris notre vie quotidienne, les affaires, la médecine et le développement de l'IA.
 
 ### Le conflit entre les données et l'intuition (Le problème des faux positifs en médecine)
 
@@ -204,9 +204,9 @@ Par exemple, supposons qu'il y ait « une maladie incurable touchant 1 personne 
 Si vous passez ce test et qu'il est déclaré « positif », quelle est la probabilité que vous soyez réellement atteint de cette maladie incurable ?
 
 Intuitivement, vous pourriez désespérer en pensant : « Puisque la précision est de 99 %, la probabilité que je sois malade doit être de 99 % ».
-Cependant, lorsqu'elle est calculée par le théorème de Bayes, la probabilité d'être réellement atteint n'est que d'**un peu moins de 1 % (environ 0,98 %)**. En effet, 1 % (environ 100 personnes) de la très grande majorité des « personnes en bonne santé (9 999 personnes) » produiront un « faux positif », de sorte que les vrais patients (environ 1 personne) constituent une infime minorité au sein du groupe de personnes testées positives.
+Cependant, lorsqu'elle est calculée par le [théorème de Bayes](/fr/p/bayes-theorem/), la probabilité d'être réellement atteint n'est que d'**un peu moins de 1 % (environ 0,98 %)**. En effet, 1 % (environ 100 personnes) de la très grande majorité des « personnes en bonne santé (9 999 personnes) » produiront un « faux positif », de sorte que les vrais patients (environ 1 personne) constituent une infime minorité au sein du groupe de personnes testées positives.
 
-Ainsi, l'écart considérable entre l'évaluation intuitive de la probabilité (99 %) et la vérité mathématique (1 %) risque de provoquer une panique inutile ou de mauvaises décisions médicales. Comprendre le problème de Monty Hall est la première étape pour acquérir les compétences nécessaires à l'évaluation correcte de cette « asymétrie de l'information et des probabilités a priori ».
+Ainsi, l'écart considérable entre l'évaluation intuitive de la probabilité (99 %) et la vérité mathématique (1 %) risque de provoquer une panique inutile ou de mauvaises décisions médicales. Comprendre [le problème de Monty Hall](/fr/p/monty-hall-problem/) est la première étape pour acquérir les compétences nécessaires à l'évaluation correcte de cette « asymétrie de l'information et des probabilités a priori ».
 
 ### La valeur de l'information dans la stratégie d'entreprise
 
@@ -216,11 +216,11 @@ Supposons que votre entreprise choisisse une certaine stratégie (Porte A). Par 
 
 ## Conclusion : L'intelligence, c'est le courage de « douter de son intuition »
 
-Si le problème de Monty Hall est si fascinant et si terrifiant, c'est parce qu'il met brillamment en évidence les « limites de l'intelligence humaine ». Même les experts titulaires de doctorats se sont laissé tromper par leur intuition initiale et ont réagi émotionnellement face à la preuve correcte.
+Si [le problème de Monty Hall](/fr/p/monty-hall-problem/) est si fascinant et si terrifiant, c'est parce qu'il met brillamment en évidence les « limites de l'intelligence humaine ». Même les experts titulaires de doctorats se sont laissé tromper par leur intuition initiale et ont réagi émotionnellement face à la preuve correcte.
 
 Nous vivons en nous appuyant sur notre « intuition », une arme puissante que nous avons acquise au cours de l'évolution. Cependant, dans notre société moderne, complexe et inondée de données, nous devons réaliser que cette intuition peut parfois nous piéger.
 
-Le problème de Monty Hall nous livre un message important :
+[Le problème de Monty Hall](/fr/p/monty-hall-problem/) nous livre un message important :
 C'est **« l'importance de ne pas croire aveuglément en son intuition, mais de s'arrêter pour y repenser en utilisant les outils de la logique et des mathématiques »**. Accepter une vérité qui semble intuitivement contraire exige une humilité intellectuelle et le courage de mettre à jour ses propres idées préconçues.
 
 La prochaine fois que vous serez confronté à un choix crucial dans votre vie et que vous recevrez de nouvelles informations (une porte ouverte), s'il vous plaît, souvenez-vous du problème de Monty Hall. La probabilité a-t-elle changé en raison de cette information ? Êtes-vous prisonnier du biais du statu quo ?

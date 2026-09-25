@@ -70,8 +70,8 @@ signtool sign /fd SHA256 /f "D:\pfx\cert.pfx" /p "password" "C:\installer\instal
 
 * `/fd SHA256` يحدد خوارزمية التوقيع.
 * حدد ملف PFX باستخدام `/f` ومرر كلمة المرور باستخدام `/p`.
-* أخيراً، حدد مسار ملف MSIX.
-* إذا لم يتم العثور على مسار signtool، فحدده بالمسار الكامل. في بيئتي، كان في الموقع التالي.
+* أخيراً، حدد [مسار](/ar/p/windows-%E3%81%A7%D9%85%D8%B3%D8%A7%D8%B1%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%D9%85%D9%84%D9%81-%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/) ملف MSIX.
+* إذا لم يتم العثور على [مسار](/ar/p/windows-%E3%81%A7%D9%85%D8%B3%D8%A7%D8%B1%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%D9%85%D9%84%D9%81-%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/) signtool، فحدده بالمسار الكامل. في بيئتي، كان في الموقع التالي.
 
 ```
 "C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\microsoft.windows.sdk.buildtools\10.0.26100.1742\bin\10.0.26100.0\x64\signtool.exe"

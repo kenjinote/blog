@@ -17,7 +17,7 @@ tags:
 
 ## 1. 2007 : « Aujourd'hui, Apple va réinventer le téléphone »
 
-Le 9 janvier 2007, sur la scène de la Macworld Expo, Steve Jobs a fait une présentation légendaire qui restera dans l'histoire de la technologie.
+Le 9 janvier 2007, sur la scène de la Macworld Expo, [Steve Jobs](/fr/p/biography-steve-jobs/) a fait une présentation légendaire qui restera dans l'histoire de la technologie.
 Il a déclaré : « Aujourd'hui, nous introduisons trois produits révolutionnaires : un iPod avec des commandes tactiles, un téléphone mobile révolutionnaire et un appareil de communication Internet révolutionnaire », révélant qu'il ne s'agissait pas de trois appareils distincts, mais d'un seul appareil, l'**iPhone**.
 
 À l'époque, les téléphones mobiles (comme le BlackBerry) avaient de petits claviers physiques qui occupaient la moitié de l'appareil. L'iPhone a adopté un design que l'on pourrait qualifier de fou pour l'époque, supprimant tous ces claviers et transformant presque toute la face avant en un « écran en verre multi-touch ». Cet « écran qui se transforme librement grâce au logiciel » a véritablement marqué le début de la révolution mobile.
@@ -33,7 +33,7 @@ Cette plateforme, qui permettait aux développeurs de créer librement des appli
 
 Annoncé en 2010, l'**iPhone 4** a renouvelé son design avec une forme plate en verre et en acier inoxydable, et a été équipé d'un **écran Retina** haute définition qui dépasse les limites de la rétine humaine. Le choc de voir du texte à l'écran de manière aussi nette que s'il était imprimé a relevé la norme pour les smartphones qui ont suivi.
 
-L'année suivante, en 2011, l'**iPhone 4S** a été le premier à intégrer l'assistant vocal **Siri**. Il a montré un avenir où l'on pouvait « parler à son smartphone pour le contrôler », mais le lendemain de cette annonce, Steve Jobs est décédé. L'iPhone 4S a été le dernier iPhone dont Jobs a pu être témoin.
+L'année suivante, en 2011, l'**iPhone 4S** a été le premier à intégrer l'assistant vocal **Siri**. Il a montré un avenir où l'on pouvait « parler à son smartphone pour le contrôler », mais le lendemain de cette annonce, [Steve Jobs](/fr/p/biography-steve-jobs/) est décédé. L'iPhone 4S a été le dernier iPhone dont Jobs a pu être témoin.
 
 ## 4. Des écrans plus grands et l'évolution de l'authentification biométrique (2012-2017)
 

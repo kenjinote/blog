@@ -48,7 +48,7 @@ Jika kita mencoba menghitung DFT ini secara naif, ia memerlukan $N$ operasi perk
 
 ## 3. Derivasi Matematis dari Algoritma FFT: Tipe Cooley-Tukey
 
-Ditemukan kembali oleh James Cooley dan John Tukey pada tahun 1965 (sebenarnya Carl Friedrich Gauss dikatakan telah menemukan metode serupa pada tahun 1805), algoritma ini adalah algoritma FFT yang paling umum digunakan saat ini. Di sini, kita akan menurunkan FFT Decimation-in-Time (DIT) radix-2 ketika jumlah data $N$ adalah pangkat dari 2 ($N = 2^m$).
+Ditemukan kembali oleh James Cooley dan John Tukey pada tahun 1965 (sebenarnya [Carl Friedrich Gauss](/id/p/gauss/) dikatakan telah menemukan metode serupa pada tahun 1805), algoritma ini adalah algoritma FFT yang paling umum digunakan saat ini. Di sini, kita akan menurunkan FFT Decimation-in-Time (DIT) radix-2 ketika jumlah data $N$ adalah pangkat dari 2 ($N = 2^m$).
 
 ### Pemisahan menjadi Genap dan Ganjil (Metode Divide and Conquer)
 

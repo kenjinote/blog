@@ -197,9 +197,9 @@ rsa_example()
 
 Die [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie ist mächtig, aber mit der Verbesserung der Computerleistung wurde es notwendig, die Schlüssellängen zu verlängern, um die Sicherheit aufrechtzuerhalten (derzeit 2048 Bit oder 3072 Bit), was zu dem Problem erhöhter Rechenkosten führte.
 
-Daher wurde 1985 die "Elliptische Kurvenkryptographie (Elliptic Curve [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy: ECC)" vorgeschlagen. Sie nutzt die Addition von Punkten auf einer elliptischen Kurve über einem endlichen Körper (im Allgemeinen in der Form $y^2 = x^3 + ax + b$).
+Daher wurde 1985 die "Elliptische Kurvenkryptographie (Elliptic Curve [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy: [ECC](/de/p/elliptic-curve-cryptography-math-cpp/))" vorgeschlagen. Sie nutzt die Addition von Punkten auf einer elliptischen Kurve über einem endlichen Körper (im Allgemeinen in der Form $y^2 = x^3 + ax + b$).
 
-Es ist bekannt, dass das Problem des diskreten Logarithmus auf elliptischen Kurven (ECDLP) noch schwerer zu lösen ist als das Primfaktorzerlegungsproblem, und **ECC kann dieselbe Sicherheit wie [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/) mit 3072 Bit mit einer Schlüssellänge von nur 256 Bit erreichen**. Dies ermöglichte eine schnelle und sichere kryptographische Kommunikation (wie ECDSA und ECDH) auch in Umgebungen mit begrenzten Rechenressourcen, wie Smartphones und IoT-Geräten.
+Es ist bekannt, dass das Problem des diskreten Logarithmus auf elliptischen Kurven (ECDLP) noch schwerer zu lösen ist als das Primfaktorzerlegungsproblem, und **[ECC](/de/p/elliptic-curve-cryptography-math-cpp/) kann dieselbe Sicherheit wie [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/) mit 3072 Bit mit einer Schlüssellänge von nur 256 Bit erreichen**. Dies ermöglichte eine schnelle und sichere kryptographische Kommunikation (wie ECDSA und ECDH) auch in Umgebungen mit begrenzten Rechenressourcen, wie Smartphones und IoT-Geräten.
 
 ---
 
@@ -207,7 +207,7 @@ Es ist bekannt, dass das Problem des diskreten Logarithmus auf elliptischen Kurv
 
 Die Kryptographie schien unerschütterlich, bis Peter Shor 1994 "Shors Algorithmus" veröffentlichte, was einen gewaltigen Schock auslöste.
 
-Quantencomputer führen Berechnungen durch, indem sie die quantenmechanischen Eigenschaften der "Superposition" und der "Quantenverschränkung" ausnutzen. Wenn Shors Algorithmus auf einem ausreichend leistungsstarken Quantencomputer ausgeführt wird, wurde mathematisch bewiesen, dass das Primfaktorzerlegungsproblem und das diskrete Logarithmusproblem in "polynomieller Zeit" gelöst werden können. Das bedeutet, dass an dem Tag, an dem ein praktischer Quantencomputer fertiggestellt wird (Q-Day), alle derzeit verwendeten Public-Key-Kryptographien wie RSA und ECC sofort zusammenbrechen werden.
+Quantencomputer führen Berechnungen durch, indem sie die quantenmechanischen Eigenschaften der "Superposition" und der "Quantenverschränkung" ausnutzen. Wenn Shors Algorithmus auf einem ausreichend leistungsstarken Quantencomputer ausgeführt wird, wurde mathematisch bewiesen, dass das Primfaktorzerlegungsproblem und das diskrete Logarithmusproblem in "polynomieller Zeit" gelöst werden können. Das bedeutet, dass an dem Tag, an dem ein praktischer Quantencomputer fertiggestellt wird (Q-Day), alle derzeit verwendeten Public-Key-Kryptographien wie RSA und [ECC](/de/p/elliptic-curve-cryptography-math-cpp/) sofort zusammenbrechen werden.
 
 ## Die Entstehung von PQC (Post-Quantum [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy)
 Um sich auf diese beispiellose Bedrohung vorzubereiten, schreitet die Forschung an "Post-Quanten-Kryptographie (PQC)" in schnellem Tempo voran, basierend auf neuen mathematischen Problemen, die selbst für Quantencomputer schwer zu lösen sind. Das NIST (National Institute of Standards and Technology der USA) führt seit vielen Jahren einen PQC-Standardisierungsprozess durch, bei dem hauptsächlich die folgenden mathematischen Ansätze als vielversprechend angesehen werden.

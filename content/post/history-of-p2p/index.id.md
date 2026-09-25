@@ -68,14 +68,14 @@ Pada tahun 2008, sejarah baru P2P dimulai dari sebuah makalah yang diterbitkan o
 Itu adalah "**Bitcoin**".
 
 Sementara sistem P2P tradisional digunakan untuk "berbagi file" atau "mendistribusikan proses komputasi", Bitcoin menggunakan jaringan P2P untuk "**mendistribusikan kepercayaan**".
-Bahkan tanpa bank sentral atau administrator, node tak terhitung jumlahnya yang berpartisipasi dalam jaringan P2P saling mengawasi catatan transaksi (buku besar) satu sama lain. Dengan menggabungkan teknologi kriptografi (fungsi hash dan kriptografi kunci publik) dan algoritma konsensus (Proof of Work), mereka membangun "sistem terdesentralisasi di mana perusakan data hampir tidak mungkin dilakukan = **Blockchain**".
+Bahkan tanpa bank sentral atau administrator, node tak terhitung jumlahnya yang berpartisipasi dalam jaringan P2P saling mengawasi catatan transaksi (buku besar) satu sama lain. Dengan menggabungkan teknologi kriptografi (fungsi hash dan kriptografi kunci publik) dan [algoritma konsensus](/id/p/byzantine-generals-problem-consensus/) (Proof of Work), mereka membangun "sistem terdesentralisasi di mana perusakan data hampir tidak mungkin dilakukan = **[Blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/)**".
 
 Konsep "jaringan terdesentralisasi otonom yang tidak bergantung pada administrator tertentu" ini terhubung langsung ke gerakan "**Web3** (web terdesentralisasi)" saat ini.
 
 ## 5. Tantangan dan Masa Depan Teknologi P2P
 
 Meskipun P2P adalah teknologi yang luar biasa, ada juga tantangan yang harus dihadapi.
-Salah satunya adalah masalah "**Free Rider (Penumpang Gratis)**". Jika ada banyak pengguna yang hanya menerima data tanpa menyediakannya dari diri mereka sendiri, jaringan akan menurun. Untuk mengatasi masalah ini, sedang diteliti mekanisme yang memberikan hak prioritas unduhan sesuai dengan jumlah data yang disediakan, atau mekanisme yang memberikan insentif moneter (token) seperti blockchain.
+Salah satunya adalah masalah "**Free Rider (Penumpang Gratis)**". Jika ada banyak pengguna yang hanya menerima data tanpa menyediakannya dari diri mereka sendiri, jaringan akan menurun. Untuk mengatasi masalah ini, sedang diteliti mekanisme yang memberikan hak prioritas unduhan sesuai dengan jumlah data yang disediakan, atau mekanisme yang memberikan insentif moneter (token) seperti [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/).
 
 Tantangan lainnya adalah "**Tata Kelola dan Keamanan**". Karena tidak ada administrator pusat, jika node jahat menyebarkan data palsu atau virus, akan sulit untuk memblokirnya dengan segera.
 

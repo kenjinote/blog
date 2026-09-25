@@ -33,7 +33,7 @@ Untuk membangun lingkungan lokal dan mengatur parameter dengan tepat, sangat ber
 
 Prinsip dasar model difusi terdiri dari "Forward Process", yang secara bertahap menambahkan Gaussian noise ke data asli (gambar) hingga akhirnya menjadi noise murni, dan "Reverse Process", yang memulihkan gambar asli dari noise tersebut.
 
-Forward Process didefinisikan sebagai rantai Markov, dan status $x_t$ pada langkah $t$ dinyatakan dengan persamaan berikut:
+Forward Process didefinisikan sebagai [rantai Markov](/id/p/markov-chain/), dan status $x_t$ pada langkah $t$ dinyatakan dengan persamaan berikut:
 
 $$ q(x_t | x_{t-1}) = \mathcal{N}(x_t; \sqrt{1 - \beta_t} x_{t-1}, \beta_t I) $$
 
@@ -266,6 +266,6 @@ Berikut adalah kesalahan umum dan solusinya selama pembangunan dan pengoperasian
 
 Gerakan pembuatan gambar AI sumber terbuka, yang dimulai dengan Stable Diffusion, terus berkembang menjadi SDXL dan arsitektur generasi mendatang seperti Stable Diffusion 3 dan [Flux](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/).1. Jumlah parameter model telah berkembang pesat dari miliaran menjadi puluhan miliar, dan di masa depan, lingkungan GPU dengan VRAM 24GB atau lebih akan semakin dibutuhkan.
 
-Namun, teknologi optimalisasi lokal seperti TensorRT, kuantisasi (Quantization), dan GGUF juga mempercepat evolusi mereka, membentuk ekosistem yang memungkinkan inferensi yang memadai bahkan pada perangkat keras untuk konsumen umum.
+Namun, teknologi optimalisasi lokal seperti TensorRT, kuantisasi (Quantization), dan [GGUF](/id/p/llama-cpp-quantization-gguf/) juga mempercepat evolusi mereka, membentuk ekosistem yang memungkinkan inferensi yang memadai bahkan pada perangkat keras untuk konsumen umum.
 
 Penyiapan lingkungan CUDA, optimalisasi VRAM, dan pemahaman pipeline seperti ComfyUI yang dijelaskan dalam panduan ini adalah fondasi universal yang akan berlaku tidak peduli bagaimana tren teknologi AI berubah. Kami berharap kreativitas Anda akan dimaksimalkan dalam lingkungan lokal yang tak terbatas.

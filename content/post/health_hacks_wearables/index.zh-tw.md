@@ -12,7 +12,7 @@ description: "將從 'Oura Ring' 等智慧戒指或 'Apple Watch' 取得的 HRV�
 
 ## 1. 前言：軟體工程師與生物駭客的交會點
 
-現代的軟體工程是一項伴隨著極度認知負荷與長時間久坐（Sedentary Lifestyle）的嚴酷知識型勞動。隨時都要跟上不斷變化的技術堆疊、在複雜的分散式系統中尋找 Bug，以及面對交期的壓力。為了克服這些挑戰，不能單靠「氣魄」或「毅力」硬撐，而是必須採用像對系統進行除錯一樣，對自身身體這個硬體進行調校的方法，也就是所謂的「生物駭客（Biohacking）」。
+現代的軟體工程是一項伴隨著極度認知負荷與長時間久坐（Sedentary Lifestyle）的嚴酷知識型勞動。隨時都要跟上不斷變化的技術堆疊、在複雜的[分散式系統](/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)中尋找 Bug，以及面對交期的壓力。為了克服這些挑戰，不能單靠「氣魄」或「毅力」硬撐，而是必須採用像對系統進行除錯一樣，對自身身體這個硬體進行調校的方法，也就是所謂的「生物駭客（Biohacking）」。
 
 過去我們只能依賴「今天總覺得身體狀況不錯或不好」這種主觀感覺（捷思法），但在現代，隨著 Oura Ring、Apple Watch、Garmin 等高效能穿戴式裝置的普及，我們已經能夠 24 小時 365 天以非侵入式的方法取得生理數據。本文將解說如何透過 API 取得生理數據（HRV、RHR、睡眠結構）與生產力數據（透過 WakaTime 等取得的寫程式指標），並利用 Python 與 Pandas 以資料科學的方法進行相關性分析。此外，也將基於生理時鐘的數學模型，以及根據咖啡因代謝半衰期找出最佳喝咖啡時機等科學根據，為工程師極其詳細地剖析健康駭客技巧。
 
@@ -358,11 +358,11 @@ def check_and_ventilate():
 
 ## 13. 結論：將人體視為系統的 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/)
 
-試著將自己的身體視為一個複雜的分散式系統。穿戴式裝置（Oura Ring）是用於監控的指標匯出器（Prometheus）；Python/Pandas 腳本是日誌分析管線（Logstash/Fluentd）；而每天的身體變化與表現，就是顯示在儀表板（Grafana/Streamlit）上的系統健康狀態。
+試著將自己的身體視為一個複雜的[分散式系統](/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)。穿戴式裝置（Oura Ring）是用於監控的指標匯出器（Prometheus）；Python/Pandas 腳本是日誌分析管線（Logstash/Fluentd）；而每天的身體變化與表現，就是顯示在儀表板（Grafana/Streamlit）上的系統健康狀態。
 
 「削減睡眠時間來工作」，就像是無視技術債（Technical Debt）強行追加功能一樣。短期內或許趕得上發布期限，但長期下來必定會導致系統停機（職業倦怠、嚴重的健康損害或憂鬱症）。
 
-監控 HRV、檢查 RHR 的趨勢，並最佳化睡眠結構。然後一邊觀察與 WakaTime 生產力數據的相關性，一邊每天微調飲食、運動、睡眠、環境等「超參數（Hyperparameters）」。這無疑就是針對人體進行的 **CI/CD（持續整合與持續交付）** 流程。
+監控 HRV、檢查 RHR 的趨勢，並最佳化睡眠結構。然後一邊觀察與 WakaTime 生產力數據的相關性，一邊每天微調飲食、運動、睡眠、環境等「超參數（Hyperparameters）」。這無疑就是針對人體進行的 **[CI/CD](/zh-tw/p/cicd-pipeline-github-actions-best-practices/)（持續整合與持續交付）** 流程。
 
 善用資料科學與 API，來設計出能發揮最佳表現的健康狀態吧。因為你所寫的程式碼品質，直接取決於你自身生理系統的健康程度。
 

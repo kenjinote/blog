@@ -13,7 +13,7 @@ tags: ["algorithms", "sorting", "quick-sort", "merge-sort", "bubble-sort"]
 
 Na ciência da computação, "ordenar" (classificar) dados em uma ordem específica (crescente ou decrescente) é uma das operações mais fundamentais e importantes. Algoritmos de ordenação são utilizados como etapa preliminar para todo o processamento de dados, como acelerar buscas, agrupar dados e detectar duplicatas.
 
-Neste artigo, explicamos detalhadamente os algoritmos de ordenação representativos, desde os simples, fáceis para iniciantes, até os rápidos usados na prática. Entenderemos a mecânica de cada algoritmo visualmente por meio de diagramas no **Mermaid**, verificaremos a implementação real em código Python e compararemos o desempenho, como a complexidade de tempo. Além disso, para compreender totalmente como os algoritmos funcionam, incluímos rastreamentos completos de execução usando um array de 50 elementos. Isso permitirá que você entenda detalhadamente o comportamento dos algoritmos.
+Neste artigo, explicamos detalhadamente os algoritmos de ordenação representativos, desde os simples, fáceis [para iniciantes](/pt/p/produtos-de-couro%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/), até os rápidos usados na prática. Entenderemos a mecânica de cada algoritmo visualmente por meio de diagramas no **Mermaid**, verificaremos a implementação real em código Python e compararemos o desempenho, como a complexidade de tempo. Além disso, para compreender totalmente como os algoritmos funcionam, incluímos rastreamentos completos de execução usando um array de 50 elementos. Isso permitirá que você entenda detalhadamente o comportamento dos algoritmos.
 
 ## Métricas de Avaliação de Algoritmos
 
@@ -776,7 +776,7 @@ Para evitar tal situação, o Quick Sort randomizado (escolhendo um pivô aleato
 
 ## 5. Merge Sort (Ordenação por Mesclagem)
 
-Concebido por John von Neumann, é um dos mais representativos da ordenação externa estável. Baseado em divisão e conquista, ele divide finamente os arrays, e depois os mescla (merge) enquanto mantém a ordem classificada.
+Concebido por [John von Neumann](/pt/p/von-neumann/), é um dos mais representativos da ordenação externa estável. Baseado em divisão e conquista, ele divide finamente os arrays, e depois os mescla (merge) enquanto mantém a ordem classificada.
 
 ### Complexidade e Características
 

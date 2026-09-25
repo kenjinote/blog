@@ -246,7 +246,7 @@ Werbung und reguläre Ergebnisse sind ebenfalls zu unterscheiden. Bezahlte Platz
 
 ## 15. Einen riesigen Index schnell durchsuchen
 
-Eine einzelne Maschine begrenzt Kapazität, Durchsatz und Ausfallsicherheit. Verteilte Systeme zerlegen den Index, durchsuchen Teile auf mehreren Rechnern und führen Ergebnisse zusammen. Die Teile heißen häufig Shards.
+Eine einzelne Maschine begrenzt Kapazität, Durchsatz und Ausfallsicherheit. [Verteilte Systeme](/de/p/cap-theorem-distributed-systems-tradeoff/) zerlegen den Index, durchsuchen Teile auf mehreren Rechnern und führen Ergebnisse zusammen. Die Teile heißen häufig Shards.
 
 Bei dokumentweiser Aufteilung geht eine Anfrage an die Shards, die jeweils aussichtsreiche Kandidaten liefern. Ein Koordinator vergleicht sie für das Gesamtranking. Unterschiedliche lokale Dokumenthäufigkeiten können allerdings die Vergleichbarkeit der Werte beeinflussen. Lokale und globale Statistik betrifft daher auch die Qualität. [Lehrbuch: verteilte Indizes][distributed]
 

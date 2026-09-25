@@ -40,7 +40,7 @@ Cependant, au début des années 1930, les nazis (Parti national-socialiste des 
 
 L'environnement de recherche et de vie en Allemagne sous le régime nazi s'étant considérablement détérioré, et sa sécurité personnelle étant menacée, Siegel a finalement pris la décision de quitter son pays natal. En 1940, peu de temps après le déclenchement de la Seconde Guerre mondiale, il réussit à s'enfuir aux États-Unis en empruntant un itinéraire dangereux passant par le Danemark et la Norvège.
 
-Aux États-Unis, il est accueilli à l'Institute for Advanced Study (IAS) de Princeton, dans le New Jersey. À l'époque, l'IAS était devenu un sanctuaire pour les plus grands esprits fuyant la guerre en Europe, et Siegel a profité d'une vie de recherche épanouissante aux côtés de figures telles qu'Albert Einstein, John von Neumann et Hermann Weyl. Au cours de ses années américaines, les recherches de Siegel se sont étendues au-delà de la théorie des nombres ; il a successivement produit des résultats extrêmement importants dans les domaines de la mécanique céleste et de la théorie des fonctions analytiques.
+Aux États-Unis, il est accueilli à l'Institute for Advanced Study (IAS) de Princeton, dans le New Jersey. À l'époque, l'IAS était devenu un sanctuaire pour les plus grands esprits fuyant la guerre en Europe, et Siegel a profité d'une vie de recherche épanouissante aux côtés de figures telles qu'Albert Einstein, [John von Neumann](/fr/p/von-neumann/) et Hermann Weyl. Au cours de ses années américaines, les recherches de Siegel se sont étendues au-delà de la théorie des nombres ; il a successivement produit des résultats extrêmement importants dans les domaines de la mécanique céleste et de la théorie des fonctions analytiques.
 
 ### 2.4 Retour à Göttingen et dernières années
 
@@ -68,7 +68,7 @@ Ce résultat a été révolutionnaire concernant la finitude des solutions des �
 
 ### 3.2 Zéro de Siegel
 
-En théorie analytique des nombres, la distribution des zéros de la fonction $L$ de Dirichlet $L(s, \chi)$ est extrêmement importante pour les extensions naturelles du théorème des nombres premiers et du théorème sur les progressions arithmétiques. Selon l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) généralisée (GRH), tous les zéros de la bande critique dont la partie réelle est comprise entre $0$ et $1$ sont censés se trouver sur la droite où la partie réelle est de $1/2$.
+En théorie analytique des nombres, la distribution des zéros de la fonction $L$ de Dirichlet $L(s, \chi)$ est extrêmement importante pour les extensions naturelles du [théorème des nombres premiers](/fr/p/prime-number-theorem/) et du théorème sur les progressions arithmétiques. Selon l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) généralisée (GRH), tous les zéros de la bande critique dont la partie réelle est comprise entre $0$ et $1$ sont censés se trouver sur la droite où la partie réelle est de $1/2$.
 
 Cependant, pour un caractère réel (d'un corps quadratique réel) $\chi$, la possibilité qu'il existe un zéro réel avec une partie réelle très proche de $1$ n'a pas été exclue par les mathématiques actuelles. Un tel zéro contre-exemple hypothétique est appelé un **zéro de Siegel** (Siegel zero) ou zéro exceptionnel.
 
@@ -107,7 +107,7 @@ Dans le domaine de la théorie des nombres transcendants également, il a prouv�
 
 L'assertion du théorème est la suivante : "Dans un système d'équations linéaires simultanées où les coefficients sont des entiers, si le nombre d'inconnues $N$ est suffisamment supérieur au nombre d'équations $M$ ( $N > M$ ), il existe toujours une solution entière non triviale où la valeur absolue de chaque composante est relativement petite (de manière appropriée majorée selon la taille des coefficients)."
 
-Ayant une preuve élégante utilisant le principe des tiroirs (principe de la boîte de Dirichlet), ce lemme est fréquemment utilisé comme un outil de base indispensable dans la théorie moderne de la transcendance, par exemple dans la construction de nombres transcendants, les approximations diophantiennes, et plus tard dans la théorie d'[Alan Baker](https://kenji.blog/fr/p/baker/) sur les formes linéaires de logarithmes.
+Ayant une preuve élégante utilisant [le principe des tiroirs](/fr/p/pigeonhole-principle-hash-collision/) (principe de la boîte de Dirichlet), ce lemme est fréquemment utilisé comme un outil de base indispensable dans la théorie moderne de la transcendance, par exemple dans la construction de nombres transcendants, les approximations diophantiennes, et plus tard dans la théorie d'[Alan Baker](https://kenji.blog/fr/p/baker/) sur les formes linéaires de logarithmes.
 
 ### 3.5 Mécanique céleste et problème des petits diviseurs
 

@@ -230,7 +230,7 @@ Seperti yang bisa dilihat dari kode di atas, perhitungan antara ciphertext dapat
 
 Meskipun FHE memberikan keamanan yang secara teoritis sempurna, tantangan terbesar dalam implementasi praktisnya adalah **"overhead kinerja (performance overhead)"**.
 
-1.  **Overhead Komputasi**: Dibandingkan dengan komputasi pada plaintext, komputasi pada ciphertext membutuhkan waktu ribuan hingga puluhan ribu kali lebih lambat di CPU. Perkalian polinomial dan bootstrapping memerlukan perhitungan FFT (Fast Fourier Transform) dan NTT (Number Theoretic Transform) dalam jumlah yang sangat besar.
+1.  **Overhead Komputasi**: Dibandingkan dengan komputasi pada plaintext, komputasi pada ciphertext membutuhkan waktu ribuan hingga puluhan ribu kali lebih lambat di CPU. Perkalian polinomial dan bootstrapping memerlukan perhitungan [FFT](/id/p/fast-fourier-transform-algorithm/) (Fast Fourier Transform) dan NTT (Number Theoretic Transform) dalam jumlah yang sangat besar.
 2.  **Ekspansi Ukuran Data (Ciphertext Expansion)**: Plaintext yang hanya berukuran beberapa byte bisa membengkak menjadi beberapa megabyte saat dienkripsi. Ini sangat membebani bandwidth memori dan bandwidth jaringan.
 
 ### Pendekatan Solusi melalui Hardware
@@ -259,9 +259,9 @@ Sekarang setelah FHE mendekati kecepatan yang praktis, inovasi destruktif dihara
 
 ## 9. Kesimpulan: Masa Depan Kriptografi menuju "Komputasi Tak Terlihat"
 
-Sama seperti penemuan kriptografi kunci publik ([RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)) pada tahun 1970-an yang memungkinkan komunikasi aman di internet (seperti HTTPS), penemuan FHE oleh Craig Gentry adalah salah satu tonggak sejarah paling penting dalam sejarah kriptografi.
+Sama seperti penemuan kriptografi kunci publik ([RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)) pada tahun 1970-an yang memungkinkan komunikasi aman di internet (seperti HTTPS), penemuan FHE oleh Craig Gentry adalah salah satu tonggak sejarah paling penting dalam [sejarah kriptografi](/id/p/history-of-cryptography-caesar-to-pqc/).
 
-Saat ini, Fully Homomorphic Encryption (FHE) telah melompat dari teori di laboratorium, dan memasuki tahap di mana Microsoft, IBM, Intel, Google, dan banyak startup bersaing keras menuju implementasi praktisnya. Walaupun tantangan dalam biaya komputasi dan ukuran data masih ada, perbaikan kinerja terus berlanjut melampaui Hukum Moore berkat penyempurnaan algoritma dan evolusi akselerator hardware.
+Saat ini, Fully Homomorphic Encryption (FHE) telah melompat dari teori di laboratorium, dan memasuki tahap di mana Microsoft, IBM, Intel, Google, dan banyak startup bersaing keras menuju implementasi praktisnya. Walaupun tantangan dalam biaya komputasi dan ukuran data masih ada, perbaikan kinerja terus berlanjut melampaui [Hukum Moore](/id/p/business-moores-law/) berkat penyempurnaan algoritma dan evolusi akselerator hardware.
 
 Beberapa tahun dari sekarang, "komputasi data sambil tetap terenkripsi" tidak akan menjadi sesuatu yang istimewa, melainkan akan menjadi praktik perlindungan data standar dalam layanan cloud. FHE adalah kunci keamanan generasi berikutnya yang merealisasikan **keseimbangan tertinggi antara privasi absolut dan pemanfaatan data** dalam masyarakat yang digerakkan oleh data.
 

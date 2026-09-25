@@ -10,13 +10,13 @@ image: "eyecatch.jpg"
 
 ## 1. Introduction : La programmation orientée objet que nous connaissons est-elle la vraie ?
 
-Dans le développement logiciel moderne, il ne se passe pas un jour sans entendre parler de programmation orientée objet (POO : Object-Oriented Programming). La plupart des langages de programmation grand public, tels que Java, C#, Python, Ruby ou C++, ont adopté le paradigme de l'orienté objet, devenant ainsi des connaissances indispensables pour les développeurs.
+Dans le développement logiciel moderne, il ne se passe pas un jour sans entendre parler de programmation orientée objet ([POO](/fr/p/object-oriented-programming-oop-solid-principles/) : Object-Oriented Programming). La plupart des langages de programmation grand public, tels que Java, C#, Python, Ruby ou C++, ont adopté le paradigme de l'orienté objet, devenant ainsi des connaissances indispensables pour les développeurs.
 
 Cependant, saviez-vous que les trois grands principes de l'orienté objet que de nombreux développeurs apprennent en premier — à savoir l'encapsulation, l'héritage et le polymorphisme — s'écartent grandement de l'essence voulue par Alan Kay, que l'on peut considérer comme le père de l'orienté objet ?
 
 Le style que nous écrivons au quotidien : définir une classe, créer une instance et appeler une méthode avec la notation point, est certes une forme d'orienté objet construite par certains langages (comme C++ ou Java). Mais ce n'est qu'une infime partie, ou plutôt une interprétation spécifique, du vaste concept qu'est l'orienté objet.
 
-Dans cet article, nous revenons à l'histoire des débuts du terme orienté objet et à la vision qu'Alan Kay voulait réellement concrétiser. Le mot-clé en est le **messaging**. En comprenant correctement ce concept de messaging, votre vision de la conception de systèmes s'élargira considérablement, vous offrant des perspectives profondes qui rejoignent la conception des systèmes distribués modernes, tels que l'architecture microservices ou le modèle d'acteur.
+Dans cet article, nous revenons à l'histoire des débuts du terme orienté objet et à la vision qu'Alan Kay voulait réellement concrétiser. Le mot-clé en est le **messaging**. En comprenant correctement ce concept de messaging, votre vision de la conception de systèmes s'élargira considérablement, vous offrant des perspectives profondes qui rejoignent la conception des [systèmes distribués](/fr/p/cap-theorem-distributed-systems-tradeoff/) modernes, tels que l'[architecture microservices](/fr/p/microservices-architecture-bff-api-gateway/) ou le modèle d'acteur.
 
 ## 2. La vision d'Alan Kay : l'inspiration tirée de la biologie
 
@@ -72,7 +72,7 @@ Les caractéristiques du messaging sont les suivantes :
 2. **Délégation et ignorance des messages**
    Lorsqu'un objet reçoit un message qu'il ne comprend pas, au lieu de déclencher une simple erreur, il peut réagir de manière autonome et flexible, par exemple en le transférant (forwarding) à un autre objet ou en l'ignorant.
 3. **Transparence sur le réseau**
-   Le paradigme du messaging peut être traité de la même manière que les objets se trouvent dans le même espace mémoire (processus) ou sur des serveurs distincts via le réseau. L'appel de méthode présuppose que tout se trouve dans le même espace mémoire, mais le messaging possède la propriété de s'adapter naturellement aux systèmes distribués.
+   Le paradigme du messaging peut être traité de la même manière que les objets se trouvent dans le même espace mémoire (processus) ou sur des serveurs distincts via le réseau. L'appel de méthode présuppose que tout se trouve dans le même espace mémoire, mais le messaging possède la propriété de s'adapter naturellement aux [systèmes distribués](/fr/p/cap-theorem-distributed-systems-tradeoff/).
 
 ## 4. Pourquoi les classes et l'héritage ont-ils conduit à des malentendus ?
 
@@ -116,7 +116,7 @@ flowchart LR
 
 Dans Erlang/Elixir, des centaines de milliers de petits acteurs (processus) légers s'exécutent en parallèle, construisant des systèmes massifs en s'envoyant mutuellement des messages. Même si un acteur plante, il permet d'atteindre une tolérance aux pannes extrêmement élevée, par exemple en envoyant un message à d'autres acteurs pour le redémarrer (la philosophie du Let it crash).
 
-De plus, l'**architecture microservices (Microservices Architecture)** moderne peut également être considérée comme une version géante de l'orienté objet basé sur le messaging. Si l'on considère chaque microservice comme un grand objet, ils masquent entièrement leur propre base de données (état interne) et construisent le système global via l'échange de messages en utilisant des API REST, gRPC ou Kafka.
+De plus, l'**[architecture microservices](/fr/p/microservices-architecture-bff-api-gateway/) (Microservices Architecture)** moderne peut également être considérée comme une version géante de l'orienté objet basé sur le messaging. Si l'on considère chaque microservice comme un grand objet, ils masquent entièrement leur propre base de données (état interne) et construisent le système global via l'échange de messages en utilisant des API REST, gRPC ou Kafka.
 
 La vision d'Alan Kay, rêvant que des objets dispersés sur différents nœuds d'un réseau s'envoient mutuellement des messages, s'est involontairement réalisée à l'ère du cloud-native sous la forme des microservices.
 
@@ -129,7 +129,7 @@ Cependant, pour gérer la complexité des systèmes et réaliser des conceptions
 1. **Ne pas exposer inutilement les données et les comportements** (protéger la paroi de la cellule).
 2. **Envoyer des messages en tant que requêtes plutôt que de faire des appels de méthode** (respecter l'autonomie).
 3. **Être conscient de la flexibilité à l'exécution et de la liaison tardive**.
-4. **Appréhender l'architecture avec une métaphore commune, allant du cœur du processus aux systèmes distribués**.
+4. **Appréhender l'architecture avec une métaphore commune, allant du cœur du processus aux [systèmes distribués](/fr/p/cap-theorem-distributed-systems-tradeoff/)**.
 
 La prochaine fois que vous écrirez du code, ou que vous réfléchirez à la conception d'un système, essayez d'adopter cette perspective : Quel message cet objet devrait-il envoyer à d'autres objets ? En vous concentrant sur le réseau et la communication des objets plutôt que sur la hiérarchie des classes, votre conception deviendra plus raffinée, résiliente aux changements et véritablement orientée objet.
 

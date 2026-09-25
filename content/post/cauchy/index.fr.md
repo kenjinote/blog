@@ -48,7 +48,7 @@ Son idéologie conservatrice et sa personnalité intransigeante ont parfois caus
 
 ## Révolution dans les Mathématiques : La Quête de la Rigueur
 
-La plus grande réalisation de [Cauchy](https://kenji.blog/fr/p/cauchy/) a été de fournir un fondement rigoureux à l'analyse mathématique. Il a reconstruit des concepts tels que les limites, la continuité, la dérivation et l'intégration en utilisant des définitions rigoureuses qui ont conduit aux arguments epsilon-delta (perfectionnés plus tard par Weierstrass) que nous apprenons aujourd'hui.
+La plus grande réalisation de [Cauchy](https://kenji.blog/fr/p/cauchy/) a été de fournir un fondement rigoureux à l'analyse mathématique. Il a reconstruit des concepts tels que les limites, la continuité, la dérivation et l'intégration en utilisant des définitions rigoureuses qui ont conduit aux arguments [epsilon-delta](/fr/p/epsilon-delta-definition/) (perfectionnés plus tard par Weierstrass) que nous apprenons aujourd'hui.
 
 Voici quelques-unes des réalisations importantes qui portent son nom.
 

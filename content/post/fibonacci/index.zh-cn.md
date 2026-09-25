@@ -148,7 +148,7 @@ stateDiagram-v2
 
 ### 《平方数之书》（Liber Quadratorum）
 
-写于1225年的这本书是一部关于[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程（求整数解的方程）的高级研究著作。它探讨了“同余数（Congruent number）”的概念，展现了对勾股定理的深刻洞察。它被广泛认为是中世纪欧洲数论的最大杰作。
+写于1225年的这本书是一部关于[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程（求整数解的方程）的高级研究著作。它探讨了“同余数（Congruent number）”的概念，展现了对[勾股定理](/zh-cn/p/diverse-proofs-of-pythagorean-theorem/)的深刻洞察。它被广泛认为是中世纪欧洲数论的最大杰作。
 
 ### 《实用几何学》（Practica Geometriae）
 

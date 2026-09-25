@@ -146,7 +146,7 @@ graph LR
 
 ## 7. 현대의 시장: 기업의 참여와 생태계의 형성
 
-한때 "오픈소스는 암이다"라고까지 발언했던 Microsoft조차 현재는 GitHub를 인수하고 오픈소스에 가장 크게 기여하는 기업 중 하나가 되었습니다. Google, Meta(Facebook), Amazon 등의 거대 기술 기업들도 자사의 기반 기술(Kubernetes, React, PyTorch 등)을 오픈소스로 공개하여 업계 표준(디팩토 스탠더드)을 쥐는 전략을 취하고 있습니다.
+한때 "오픈소스는 암이다"라고까지 발언했던 Microsoft조차 현재는 GitHub를 인수하고 오픈소스에 가장 크게 기여하는 기업 중 하나가 되었습니다. Google, [Meta](/ko/p/history-of-meta-facebook/)(Facebook), Amazon 등의 거대 기술 기업들도 자사의 기반 기술([Kubernetes](/ko/p/kubernetes-k8s-architecture-pod-service-ingress/), React, PyTorch 등)을 오픈소스로 공개하여 업계 표준(디팩토 스탠더드)을 쥐는 전략을 취하고 있습니다.
 
 현대의 시장은 더 이상 순수한 자원봉사 해커들만의 장소가 아닙니다. 기업으로부터 보수를 받는 프로 엔지니어들이 풀타임으로 커밋하고, 강력한 재단(Linux Foundation이나 Apache Software Foundation 등)이 프로젝트의 거버넌스와 자금을 관리하는 거대하고 복잡한 생태계로 진화하고 있습니다.
 

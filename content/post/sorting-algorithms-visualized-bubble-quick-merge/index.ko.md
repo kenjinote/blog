@@ -13,14 +13,14 @@ tags: ["algorithms", "sorting", "quick-sort", "merge-sort", "bubble-sort"]
 
 컴퓨터 과학에서 데이터를 특정 순서(오름차순 또는 내림차순)로 재배치하는 '정렬(Sort)'은 가장 기본적이고 중요한 작업 중 하나입니다. 검색 속도 향상, 데이터 그룹화, 중복 감지 등 모든 데이터 처리의 사전 단계로서 정렬 알고리즘이 활약합니다.
 
-이 글에서는 초보자도 이해하기 쉬운 간단한 알고리즘부터 실무에서 활약하는 고속 알고리즘까지, 대표적인 정렬 알고리즘을 망라하여 해설합니다. 각 알고리즘의 원리를 **Mermaid** 도해를 통해 시각적으로 이해하고, Python 코드로 실제 구현을 확인하며, 시간 복잡도 등 성능을 비교해 봅니다. 게다가 알고리즘의 동작을 완벽하게 파악하기 위해 요소 수 50개인 배열을 사용한 완전한 실행 추적(Trace)도 수록했습니다. 이를 통해 알고리즘의 세세한 동작을 손에 잡히듯 이해할 수 있을 것입니다.
+이 글에서는 초보자도 이해하기 쉬운 간단한 알고리즘부터 실무에서 활약하는 고속 알고리즘까지, 대표적인 정렬 알고리즘을 망라하여 해설합니다. 각 알고리즘의 원리를 **Mermaid** 도해를 통해 시각적으로 이해하고, Python 코드로 실제 구현을 확인하며, 시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/) 등 성능을 비교해 봅니다. 게다가 알고리즘의 동작을 완벽하게 파악하기 위해 요소 수 50개인 배열을 사용한 완전한 실행 추적(Trace)도 수록했습니다. 이를 통해 알고리즘의 세세한 동작을 손에 잡히듯 이해할 수 있을 것입니다.
 
 ## 알고리즘의 평가 지표
 
 각 알고리즘을 평가할 때는 다음 지표가 중요합니다.
 
-- **시간 복잡도 (Time Complexity)**: 데이터의 요소 수 $n$ 에 대해 처리 시간이 어떻게 증가하는지를 나타냅니다. $\text{O}(n^2)$ 이나 $\text{O}(n \log n)$ 등의 빅오 표기법(Big-O notation)이 사용됩니다. 수식 내에서 텍스트를 다룰 경우에는 $\text{best}$ 처럼 표기합니다.
-- **공간 복잡도 (Space Complexity)**: 실행 시에 얼마나 많은 추가 메모리를 필요로 하는지를 나타냅니다. 제자리(In-place) 알고리즘은 추가 메모리를 거의 필요로 하지 않습니다.
+- **시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/) (Time Complexity)**: 데이터의 요소 수 $n$ 에 대해 처리 시간이 어떻게 증가하는지를 나타냅니다. $\text{O}(n^2)$ 이나 $\text{O}(n \log n)$ 등의 빅오 표기법(Big-O notation)이 사용됩니다. 수식 내에서 텍스트를 다룰 경우에는 $\text{best}$ 처럼 표기합니다.
+- **공간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/) (Space Complexity)**: 실행 시에 얼마나 많은 추가 메모리를 필요로 하는지를 나타냅니다. 제자리(In-place) 알고리즘은 추가 메모리를 거의 필요로 하지 않습니다.
 - **안정성 (Stability)**: 같은 값을 가진 요소의 상대적인 순서가 정렬 전후로 유지되는지를 나타냅니다. 안정 정렬에서는 원래의 순서가 유지됩니다.
 
 ---
@@ -31,10 +31,10 @@ tags: ["algorithms", "sorting", "quick-sort", "merge-sort", "bubble-sort"]
 
 ### 계산량과 특성
 
-- **시간 복잡도 (최선)**: $\text{O}(n)$
-- **시간 복잡도 (평균)**: $\text{O}(n^2)$
-- **시간 복잡도 (최악)**: $\text{O}(n^2)$
-- **공간 복잡도**: $\text{O}(1)$
+- **시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/) (최선)**: $\text{O}(n)$
+- **시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/) (평균)**: $\text{O}(n^2)$
+- **시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/) (최악)**: $\text{O}(n^2)$
+- **공간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)**: $\text{O}(1)$
 - **안정성**: 안정
 
 ### 도해 (Mermaid)
@@ -347,10 +347,10 @@ def bubble_sort(arr):
 
 ### 계산량과 특성
 
-- **시간 복잡도 (최선)**: $\text{O}(n)$
-- **시간 복잡도 (평균)**: $\text{O}(n^2)$
-- **시간 복잡도 (최악)**: $\text{O}(n^2)$
-- **공간 복잡도**: $\text{O}(1)$
+- **시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/) (최선)**: $\text{O}(n)$
+- **시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/) (평균)**: $\text{O}(n^2)$
+- **시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/) (최악)**: $\text{O}(n^2)$
+- **공간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)**: $\text{O}(1)$
 - **안정성**: 안정
 
 ### 도해 (Mermaid)
@@ -686,10 +686,10 @@ def insertion_sort(arr):
 
 ### 계산량과 특성
 
-- **시간 복잡도 (최선)**: $\text{O}(n \log n)$
-- **시간 복잡도 (평균)**: $\text{O}(n \log n)$
-- **시간 복잡도 (최악)**: $\text{O}(n^2)$
-- **공간 복잡도**: $\text{O}(\log n)$
+- **시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/) (최선)**: $\text{O}(n \log n)$
+- **시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/) (평균)**: $\text{O}(n \log n)$
+- **시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/) (최악)**: $\text{O}(n^2)$
+- **공간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)**: $\text{O}(\log n)$
 - **안정성**: 불안정
 
 ### 도해 (Mermaid)
@@ -720,7 +720,7 @@ def quick_sort(arr):
     return quick_sort(left) + middle + quick_sort(right)
 ```
 
-퀵 정렬은 실무에서 가장 빈번하게 사용되는 알고리즘 중 하나입니다. 최악 시간 복잡도는 $\text{O}(n^2)$ 이지만, 적절한 피벗 선택 전략(예: Median-of-Three)을 사용함으로써 실질적으로는 항상 $\text{O}(n \log n)$ 으로 동작합니다. Python의 내장 정렬 함수인 `list.sort()`는 퀵 정렬이 아니라, 병합 정렬과 삽입 정렬을 조합한 **TimSort(팀소트)** 라는 알고리즘을 채택하고 있습니다.
+퀵 정렬은 실무에서 가장 빈번하게 사용되는 알고리즘 중 하나입니다. 최악 시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)는 $\text{O}(n^2)$ 이지만, 적절한 피벗 선택 전략(예: Median-of-Three)을 사용함으로써 실질적으로는 항상 $\text{O}(n \log n)$ 으로 동작합니다. Python의 내장 정렬 함수인 `list.sort()`는 퀵 정렬이 아니라, 병합 정렬과 삽입 정렬을 조합한 **TimSort(팀소트)** 라는 알고리즘을 채택하고 있습니다.
 
 ### 피벗 선택의 중요성에 관하여
 
@@ -754,15 +754,15 @@ def quick_sort(arr):
 
 퀵 정렬의 성능은 피벗을 어떻게 선택하느냐에 크게 의존합니다. 이상적으로는 항상 배열의 중앙값을 피벗으로 선택할 수 있다면, 배열은 매번 정확히 절반으로 분할되어 재귀 깊이가 $\text{O}(\log n)$ 이 되고, 완벽한 $\text{O}(n \log n)$ 계산량이 보장됩니다. 하지만 진정한 중앙값을 엄밀하게 찾아내려면 추가 계산 비용이 들기 때문에, 실용적으로는 상수 시간에 선택할 수 있는 근사 기법이 사용됩니다.
 
-만약 배열이 이미 정렬된 상태에서 항상 첫 번째 요소를 피벗으로 선택한다면, 분할된 배열의 한쪽은 요소 수가 0, 다른 한쪽은 $n-1$이 되어 재귀 깊이가 $n$에 달하게 됩니다. 이로 인해 시간 복잡도는 최악의 $\text{O}(n^2)$ 이 되고, 경우에 따라 스택 오버플로우를 유발할 위험도 있습니다.
+만약 배열이 이미 정렬된 상태에서 항상 첫 번째 요소를 피벗으로 선택한다면, 분할된 배열의 한쪽은 요소 수가 0, 다른 한쪽은 $n-1$이 되어 재귀 깊이가 $n$에 달하게 됩니다. 이로 인해 시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)는 최악의 $\text{O}(n^2)$ 이 되고, 경우에 따라 스택 오버플로우를 유발할 위험도 있습니다.
 
-만약 배열이 이미 정렬된 상태에서 항상 첫 번째 요소를 피벗으로 선택한다면, 분할된 배열의 한쪽은 요소 수가 0, 다른 한쪽은 $n-1$이 되어 재귀 깊이가 $n$에 달하게 됩니다. 이로 인해 시간 복잡도는 최악의 $\text{O}(n^2)$ 이 되고, 경우에 따라 스택 오버플로우를 유발할 위험도 있습니다.
+만약 배열이 이미 정렬된 상태에서 항상 첫 번째 요소를 피벗으로 선택한다면, 분할된 배열의 한쪽은 요소 수가 0, 다른 한쪽은 $n-1$이 되어 재귀 깊이가 $n$에 달하게 됩니다. 이로 인해 시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)는 최악의 $\text{O}(n^2)$ 이 되고, 경우에 따라 스택 오버플로우를 유발할 위험도 있습니다.
 
-만약 배열이 이미 정렬된 상태에서 항상 첫 번째 요소를 피벗으로 선택한다면, 분할된 배열의 한쪽은 요소 수가 0, 다른 한쪽은 $n-1$이 되어 재귀 깊이가 $n$에 달하게 됩니다. 이로 인해 시간 복잡도는 최악의 $\text{O}(n^2)$ 이 되고, 경우에 따라 스택 오버플로우를 유발할 위험도 있습니다.
+만약 배열이 이미 정렬된 상태에서 항상 첫 번째 요소를 피벗으로 선택한다면, 분할된 배열의 한쪽은 요소 수가 0, 다른 한쪽은 $n-1$이 되어 재귀 깊이가 $n$에 달하게 됩니다. 이로 인해 시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)는 최악의 $\text{O}(n^2)$ 이 되고, 경우에 따라 스택 오버플로우를 유발할 위험도 있습니다.
 
-만약 배열이 이미 정렬된 상태에서 항상 첫 번째 요소를 피벗으로 선택한다면, 분할된 배열의 한쪽은 요소 수가 0, 다른 한쪽은 $n-1$이 되어 재귀 깊이가 $n$에 달하게 됩니다. 이로 인해 시간 복잡도는 최악의 $\text{O}(n^2)$ 이 되고, 경우에 따라 스택 오버플로우를 유발할 위험도 있습니다.
+만약 배열이 이미 정렬된 상태에서 항상 첫 번째 요소를 피벗으로 선택한다면, 분할된 배열의 한쪽은 요소 수가 0, 다른 한쪽은 $n-1$이 되어 재귀 깊이가 $n$에 달하게 됩니다. 이로 인해 시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)는 최악의 $\text{O}(n^2)$ 이 되고, 경우에 따라 스택 오버플로우를 유발할 위험도 있습니다.
 
-만약 배열이 이미 정렬된 상태에서 항상 첫 번째 요소를 피벗으로 선택한다면, 분할된 배열의 한쪽은 요소 수가 0, 다른 한쪽은 $n-1$이 되어 재귀 깊이가 $n$에 달하게 됩니다. 이로 인해 시간 복잡도는 최악의 $\text{O}(n^2)$ 이 되고, 경우에 따라 스택 오버플로우를 유발할 위험도 있습니다.
+만약 배열이 이미 정렬된 상태에서 항상 첫 번째 요소를 피벗으로 선택한다면, 분할된 배열의 한쪽은 요소 수가 0, 다른 한쪽은 $n-1$이 되어 재귀 깊이가 $n$에 달하게 됩니다. 이로 인해 시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)는 최악의 $\text{O}(n^2)$ 이 되고, 경우에 따라 스택 오버플로우를 유발할 위험도 있습니다.
 
 이러한 사태를 막기 위해 피벗을 무작위로 선택하는 무작위 퀵 정렬이나, 배열의 처음·중간·끝 3개 요소의 중앙값을 피벗으로 채택하는 방식이 일반적으로 사용됩니다. 이를 통해 어떤 입력 데이터에 대해서도 안정적으로 빠른 정렬 처리를 구현할 수 있게 됩니다.
 
@@ -776,14 +776,14 @@ def quick_sort(arr):
 
 ## 5. 병합 정렬 (Merge Sort)
 
-존 폰 노이만(John von Neumann)에 의해 고안된 안정적인 외부 정렬의 대표격입니다. 분할 정복법에 기초하여 배열을 잘게 분할한 후, 이를 정렬된 순서를 유지하면서 병합(Merge)해 나갑니다.
+[존 폰 노이만](/ko/p/von-neumann/)(John von Neumann)에 의해 고안된 안정적인 외부 정렬의 대표격입니다. 분할 정복법에 기초하여 배열을 잘게 분할한 후, 이를 정렬된 순서를 유지하면서 병합(Merge)해 나갑니다.
 
 ### 계산량과 특성
 
-- **시간 복잡도 (최선)**: $\text{O}(n \log n)$
-- **시간 복잡도 (평균)**: $\text{O}(n \log n)$
-- **시간 복잡도 (최악)**: $\text{O}(n \log n)$
-- **공간 복잡도**: $\text{O}(n)$
+- **시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/) (최선)**: $\text{O}(n \log n)$
+- **시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/) (평균)**: $\text{O}(n \log n)$
+- **시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/) (최악)**: $\text{O}(n \log n)$
+- **공간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)**: $\text{O}(n)$
 - **안정성**: 안정
 
 ### 도해 (Mermaid)
@@ -882,7 +882,7 @@ def merge_sort(arr):
 
 - 데이터 양이 매우 적거나 거의 정렬된 데이터에는 **삽입 정렬** 이 효과적입니다.
 - 일반적인 용도에서 가장 빠른 속도를 요구할 때는 **퀵 정렬** 이 최적입니다.
-- 안정성이 필요하거나 최악 시간 복잡도를 보장하고 싶을 때는 **병합 정렬** 을 선택합니다.
+- 안정성이 필요하거나 최악 시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)를 보장하고 싶을 때는 **병합 정렬** 을 선택합니다.
 - 메모리 제약이 엄격하여 제자리 정렬로 안정적인 성능을 내고 싶을 때는 **힙 정렬** 이 적합합니다.
 
 현대적인 프로그래밍 언어(Python, [Java](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/), [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 등)의 표준 라이브러리에서는 이러한 알고리즘의 장점을 결합한 하이브리드 기법(TimSort나 IntroSort 등)이 채택되고 있어, 개발자가 직접 정렬 알고리즘을 처음부터 구현할 기회는 줄어들고 있습니다. 하지만 그 내부에서 어떠한 트레이드오프가 고려되고 있는지 이해하는 것은, 성능이 더 좋고 견고한 소프트웨어를 설계하기 위한 중요한 기반이 됩니다.

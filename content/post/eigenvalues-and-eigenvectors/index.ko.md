@@ -10,7 +10,7 @@ tags: ["선형대수학", "고윳값", "고유벡터", "수학", "머신러닝",
 
 ## 서론
 
-선형대수학을 배울 때 많은 사람들이 처음 겪는 장벽은 아마도 '행렬의 곱셈'이나 '행렬식'일 것입니다. 하지만 이러한 장벽을 넘어섰을 때 만나는 **고윳값** (Eigenvalue) 과 **고유벡터** (Eigenvector) 야말로 선형대수학이 현대 과학과 공학에서 막강한 위력을 발휘하는 근원입니다.
+선형대수학을 배울 때 많은 사람들이 처음 겪는 장벽은 아마도 '행렬의 곱셈'이나 '[행렬식](/ko/p/geometric-meaning-of-determinant/)'일 것입니다. 하지만 이러한 장벽을 넘어섰을 때 만나는 **고윳값** (Eigenvalue) 과 **고유벡터** (Eigenvector) 야말로 선형대수학이 현대 과학과 공학에서 막강한 위력을 발휘하는 근원입니다.
 
 머신러닝에서의 차원 축소 (PCA), 구글의 검색 엔진을 지탱한 PageRank 알고리즘, 건물의 내진 설계부터 양자역학의 슈뢰딩거 방정식에 이르기까지 [고윳값과 고유벡터](https://kenji.blog/ko/p/eigenvalues-and-eigenvectors/)는 어디에나 등장합니다.
 
@@ -50,7 +50,7 @@ $$ A\mathbf{v} = \lambda I\mathbf{v} $$
 $$ A\mathbf{v} - \lambda I\mathbf{v} = \mathbf{0} $$
 $$ (A - \lambda I)\mathbf{v} = \mathbf{0} $$
 
-이 방정식을 만족하는 영이 아닌 벡터 $\mathbf{v}$ 가 존재하기 위한 필요충분조건은 행렬 $(A - \lambda I)$ 가 역행렬을 가지지 않는 것, 즉 그 행렬식이 0이 되는 것입니다.
+이 방정식을 만족하는 영이 아닌 벡터 $\mathbf{v}$ 가 존재하기 위한 필요충분조건은 행렬 $(A - \lambda I)$ 가 역행렬을 가지지 않는 것, 즉 그 [행렬식](/ko/p/geometric-meaning-of-determinant/)이 0이 되는 것입니다.
 
 $$ \det(A - \lambda I) = 0 $$
 
@@ -74,7 +74,7 @@ $$
 A - \lambda I = \begin{pmatrix} 4 & 1 \\ 2 & 3 \end{pmatrix} - \begin{pmatrix} \lambda & 0 \\ 0 & \lambda \end{pmatrix} = \begin{pmatrix} 4-\lambda & 1 \\ 2 & 3-\lambda \end{pmatrix}
 $$
 
-행렬식을 계산합니다.
+[행렬식](/ko/p/geometric-meaning-of-determinant/)을 계산합니다.
 
 $$
 \det(A - \lambda I) = (4-\lambda)(3-\lambda) - (1)(2) = (\lambda^2 - 7\lambda + 12) - 2 = \lambda^2 - 7\lambda + 10
@@ -156,7 +156,7 @@ NumPy의 `np.linalg.eig` 함수는 정규화된 (길이가 1인) 고유벡터를
 
 ## 행렬의 대각화와 그 강력한 이점
 
-[고윳값과 고유벡터](https://kenji.blog/ko/p/eigenvalues-and-eigenvectors/)의 가장 중요한 응용 중 하나가 **행렬의 대각화** 입니다. 대각화란 복잡한 행렬 $A$ 를 계산이 쉬운 대각행렬 $D$ 를 사용하여 다음과 같이 분해하는 것입니다.
+[고윳값과 고유벡터](https://kenji.blog/ko/p/eigenvalues-and-eigenvectors/)의 가장 중요한 응용 중 하나가 **행렬의 [대각화](/ko/p/diagonalization-and-jordan-normal-form/)** 입니다. [대각화](/ko/p/diagonalization-and-jordan-normal-form/)란 복잡한 행렬 $A$ 를 계산이 쉬운 대각행렬 $D$ 를 사용하여 다음과 같이 분해하는 것입니다.
 
 $$ A = P D P^{-1} $$
 
@@ -168,9 +168,9 @@ $$
 P = \begin{pmatrix} 1 & 1 \\ -2 & 1 \end{pmatrix}, \quad D = \begin{pmatrix} 2 & 0 \\ 0 & 5 \end{pmatrix}
 $$
 
-가 됩니다. 이 대각화가 왜 중요한 것일까요? 그것은 **행렬의 거듭제곱 계산이 획기적으로 쉬워지기 때문** 입니다.
+가 됩니다. 이 [대각화](/ko/p/diagonalization-and-jordan-normal-form/)가 왜 중요한 것일까요? 그것은 **행렬의 거듭제곱 계산이 획기적으로 쉬워지기 때문** 입니다.
 
-예를 들어, $A$ 를 $100$ 제곱하고 싶다고 가정해 봅시다. $A^{100}$ 을 직접 계산하는 것은 매우 엄청난 계산량이 됩니다. 하지만 대각화를 이용하면,
+예를 들어, $A$ 를 $100$ 제곱하고 싶다고 가정해 봅시다. $A^{100}$ 을 직접 계산하는 것은 매우 엄청난 계산량이 됩니다. 하지만 [대각화](/ko/p/diagonalization-and-jordan-normal-form/)를 이용하면,
 
 $$
 A^{100} = (P D P^{-1})(P D P^{-1}) \dots (P D P^{-1}) = P D^{100} P^{-1}

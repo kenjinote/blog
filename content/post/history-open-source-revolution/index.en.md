@@ -146,7 +146,7 @@ Today, no developer builds a new web service or application entirely from scratc
 
 ## 7. The Modern Bazaar: Corporate Entry and Ecosystem Formation
 
-Even Microsoft, which once stated that "Linux is a cancer," has now acquired GitHub and become one of the largest corporate contributors to open source. Tech giants like Google, Meta (Facebook), and Amazon also employ strategies of publishing their foundational technologies (such as Kubernetes, React, and PyTorch) as open source to seize industry standards (de facto standards).
+Even Microsoft, which once stated that "Linux is a cancer," has now acquired GitHub and become one of the largest corporate contributors to open source. Tech giants like Google, Meta (Facebook), and Amazon also employ strategies of publishing their foundational technologies (such as [Kubernetes](/en/p/kubernetes-k8s-architecture-pod-service-ingress/), React, and PyTorch) as open source to seize industry standards (de facto standards).
 
 The modern bazaar is no longer just a place for pure volunteer hackers. It has evolved into a massive and complex ecosystem where professional engineers paid by companies commit full-time, and powerful foundations (like the Linux Foundation and the Apache Software Foundation) manage project governance and funding.
 

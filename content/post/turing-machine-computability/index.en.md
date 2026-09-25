@@ -160,7 +160,7 @@ With the Universal Turing Machine, it was anticipated that "any computation migh
 
 ### 4.1 What is the Halting Problem?
 
-The halting problem asks the following question:
+[The halting problem](/en/p/halting-problem/) asks the following question:
 
 > Given an arbitrary program $P$ and an input $x$ for that program, **does there exist an algorithm (program) that can determine before execution whether running $P$ with input $x$ will finish computing and halt in finite time, or if it will fall into an infinite loop and never halt?**
 
@@ -200,7 +200,7 @@ paradox(paradox)
 2. If `halts(paradox, paradox)` determines `False` (it infinitely loops):
    The `paradox` function enters the `else` block and **halts immediately**. This also contradicts the evaluation result.
 
-Since a contradiction arises in either case, our initial assumption that **"a perfect `halts` function exists" must be incorrect**. Therefore, there is no algorithm to solve the halting problem.
+Since a contradiction arises in either case, our initial assumption that **"a perfect `halts` function exists" must be incorrect**. Therefore, there is no algorithm to solve [the halting problem](/en/p/halting-problem/).
 
 ### 4.3 Representation by Mathematical Formulas
 
@@ -231,11 +231,11 @@ This proves that the function $h$ is uncomputable.
 
 ## 5. The Impact of Computability Theory
 
-The fact that the halting problem is "unsolvable" has a direct impact on modern software development.
+The fact that [the halting problem](/en/p/halting-problem/) is "unsolvable" has a direct impact on modern software development.
 
 For example, compilers and static code analysis tools check for bugs or infinite loops in code, but these operate under the constraint that **"it is theoretically impossible to perfectly detect infinite loops for all programs with 100% accuracy."** Because of this, practical analysis tools compromise by using heuristics and timeouts.
 
-There is also a deep connection with **Gödel's incompleteness theorems**. The discovery that "there are propositions that are true but unprovable" in an axiomatic system of mathematics, and that "there are problems that are computable but undecidable," were two sides of the same coin in logic and computer science.
+There is also a deep connection with **[Gödel's incompleteness theorems](/en/p/godels-incompleteness-theorems/)**. The discovery that "there are propositions that are true but unprovable" in an axiomatic system of mathematics, and that "there are problems that are computable but undecidable," were two sides of the same coin in logic and computer science.
 
 ## 6. Conclusion
 

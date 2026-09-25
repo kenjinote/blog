@@ -32,13 +32,13 @@ Sin embargo, este tiempo de felicidad fue breve; en febrero de 1930, Morcom fall
 
 ## 2. La Universidad de Cambridge y el nacimiento de la "Máquina de Turing"
 
-En 1931, Turing ingresó al King's College de la Universidad de Cambridge y se sumergió seriamente en el estudio de las matemáticas y la lógica. Allí, entró en contacto con las ideas de científicos de primer nivel como John von Neumann y Max Born, expandiendo enormemente sus horizontes académicos.
+En 1931, Turing ingresó al King's College de la Universidad de Cambridge y se sumergió seriamente en el estudio de las matemáticas y la lógica. Allí, entró en contacto con las ideas de científicos de primer nivel como [John von Neumann](/es/p/von-neumann/) y Max Born, expandiendo enormemente sus horizontes académicos.
 
 Y en 1936, a la edad de 24 años, publicó un artículo monumental que brilla en la historia de la ciencia del siglo XX: "Sobre los números computables, con una aplicación al Entscheidungsproblem" (On Computable Numbers, with an Application to the Entscheidungsproblem).
 
 ### El concepto de la máquina de Turing
 
-En este artículo, Turing dio una prueba negativa al "Entscheidungsproblem" (problema de decisión: ¿se puede determinar la verdad o falsedad de todas las proposiciones matemáticas mediante un algoritmo?) planteado por el matemático David Hilbert. Sin embargo, el verdadero valor de este artículo residía en el modelo de experimento mental que ideó en el proceso de esa prueba: la "Máquina de Turing" (Turing Machine).
+En este artículo, Turing dio una prueba negativa al "Entscheidungsproblem" (problema de decisión: ¿se puede determinar la verdad o falsedad de todas las proposiciones matemáticas mediante un algoritmo?) planteado por el matemático [David Hilbert](/es/p/hilbert/). Sin embargo, el verdadero valor de este artículo residía en el modelo de experimento mental que ideó en el proceso de esa prueba: la "Máquina de Turing" (Turing Machine).
 
 Una máquina de Turing es una máquina virtual extremadamente simple que consta de una cinta infinitamente larga, un cabezal para leer y escribir en la cinta, un registro para recordar su estado interno y una tabla de reglas que determina sus acciones.
 

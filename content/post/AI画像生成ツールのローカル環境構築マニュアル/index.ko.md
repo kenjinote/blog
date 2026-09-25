@@ -208,7 +208,7 @@ stable-diffusion-webui/
 ### 7.1 Attention 메커니즘 최적화 (xFormers / SDP Attention)
 Stable Diffusion 계산의 대부분은 U-Net 내의 Cross-Attention에 소비됩니다. 기본 Attention 계산은 메모리 소비가 크기 때문에 다음 접근법으로 최적화합니다.
 
-*   **xFormers (`--xformers`)**: Meta가 개발한 메모리 효율이 좋은 Attention 구현체(Memory Efficient Attention). VRAM 소비를 대폭 줄이고 속도도 향상되지만, 계산의 비결정성으로 인해 '완전히 같은 시드 값이라도 미묘하게 다른 이미지가 나온다'는 특징이 있습니다.
+*   **xFormers (`--xformers`)**: [Meta](/ko/p/history-of-meta-facebook/)가 개발한 메모리 효율이 좋은 Attention 구현체(Memory Efficient Attention). VRAM 소비를 대폭 줄이고 속도도 향상되지만, 계산의 비결정성으로 인해 '완전히 같은 시드 값이라도 미묘하게 다른 이미지가 나온다'는 특징이 있습니다.
 *   **SDP Attention (`--opt-sdp-attention`)**: PyTorch 2.0부터 기본 탑재된 Scaled Dot Product Attention. xFormers와 동등한 속도 및 VRAM 절감 효과를 가지면서도 의존성이 적다는 것이 장점입니다. 비결정성이 없는 `--opt-sub-quad-attention` 등의 변형도 있습니다.
 
 ### 7.2 VRAM 절약 시작 옵션
@@ -266,7 +266,7 @@ ControlNet은 학습된 Stable Diffusion 모델의 가중치를 고정한 채로
 
 Stable Diffusion에서 시작된 오픈소스 AI 이미지 생성의 움직임은 SDXL, 그리고 Stable Diffusion 3나 [Flux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/).1과 같은 차세대 아키텍처로 진화를 거듭하고 있습니다. 모델의 파라미터 수는 수십억에서 백억 개 수준으로 거대해지고 있으며, 앞으로는 VRAM 24GB 이상의 GPU 환경이 더욱 요구될 것입니다.
 
-하지만 TensorRT나 양자화 기술(Quantization), GGUF 등의 로컬 최적화 기술 역시 빠르게 발전하고 있어, 일반 소비자용 하드웨어에서도 충분한 추론이 가능해지는 생태계가 형성되고 있습니다.
+하지만 TensorRT나 양자화 기술(Quantization), [GGUF](/ko/p/llama-cpp-quantization-gguf/) 등의 로컬 최적화 기술 역시 빠르게 발전하고 있어, 일반 소비자용 하드웨어에서도 충분한 추론이 가능해지는 생태계가 형성되고 있습니다.
 
 본 매뉴얼에서 해설한 CUDA 환경 구축, VRAM 최적화, 그리고 ComfyUI 등의 파이프라인에 대한 이해는, AI 기술 트렌드가 어떻게 변화하더라도 통용되는 보편적인 기반 지식이 될 것입니다. 여러분의 창의력이 제한 없는 로컬 환경에서 최대한으로 발휘되기를 바랍니다.
 

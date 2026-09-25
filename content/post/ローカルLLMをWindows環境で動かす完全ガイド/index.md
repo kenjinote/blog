@@ -11,35 +11,35 @@ tags: ["LLM", "Windows", "Local AI", "Ollama", "llama.cpp"]
 
 # 1. はじめに：なぜ今、Windowsでローカル[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)なのか？
 
-2026年現在、生成AIと[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（LLM）の進化は、クラウド上の巨大なAPIサービスから、個人のPCやオンプレミス環境で動作する「ローカルLLM」へと大きなパラダイムシフトを見せています。OpenAIのGPT-5やAnthropicのClaude 3.5といったクラウドAIは非常に強力ですが、企業や個人がすべてのデータをクラウドに送信できるわけではありません。プライバシー、セキュリティ、レイテンシ、そして長期的・持続的なコストの観点から、ローカルLLMの需要はかつてなく爆発的に高まっています。
+2026年現在、生成AIと[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)）の進化は、クラウド上の巨大なAPIサービスから、個人のPCやオンプレミス環境で動作する「ローカル[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)」へと大きなパラダイムシフトを見せています。OpenAIのGPT-5やAnthropicのClaude 3.5といったクラウドAIは非常に強力ですが、企業や個人がすべてのデータをクラウドに送信できるわけではありません。プライバシー、セキュリティ、レイテンシ、そして長期的・持続的なコストの観点から、ローカル[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)の需要はかつてなく爆発的に高まっています。
 
-特にWindows環境におけるローカルLLMのエコシステムの進化は目覚ましいものがあります。数年前までは「AI開発・実行といえばLinux」が常識でしたが、2026年現在ではWindowsが非常に強力かつ手軽なAIプラットフォームへと変貌を遂げました。
+特にWindows環境におけるローカル[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)のエコシステムの進化は目覚ましいものがあります。数年前までは「AI開発・実行といえばLinux」が常識でしたが、2026年現在ではWindowsが非常に強力かつ手軽なAIプラットフォームへと変貌を遂げました。
 
-本記事では、2026年最新の技術動向を踏まえ、Windows環境でローカルLLMを構築・運用・最適化するための完全なガイドを提供します。初心者向けのOllamaを用いた簡単な構築から、上級者向けのllama.cppを活用した極限の最適化、さらにはVRAM計算の数学的アプローチやアーキテクチャの深い理解、そしてローカルでのファインチューニングまで、圧倒的なボリュームで徹底解説します。
+本記事では、2026年最新の技術動向を踏まえ、Windows環境でローカル[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)を構築・運用・最適化するための完全なガイドを提供します。初心者向けのOllamaを用いた簡単な構築から、上級者向けのllama.cppを活用した極限の最適化、さらにはVRAM計算の数学的アプローチやアーキテクチャの深い理解、そしてローカルでのファインチューニングまで、圧倒的なボリュームで徹底解説します。
 
 ## 1.1 2026年のローカルLLMを取り巻く技術トレンド
 
-現在のローカルLLMエコシステムを形作る主要なトレンドは以下の通りです。
+現在のローカル[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)エコシステムを形作る主要なトレンドは以下の通りです。
 
-1. **GGUFフォーマットの完全普及**: メタデータとテンソルを単一のファイルに統合したGGUF（GPT-Generated Unified Format）が完全にデファクトスタンダード化しました。これにより、Hugging Faceから一つのファイルをダウンロードするだけで、どのような環境でも実行可能になっています。
+1. **[GGUF](/p/llama-cpp-quantization-gguf/)フォーマットの完全普及**: メタデータとテンソルを単一のファイルに統合した[GGUF](/p/llama-cpp-quantization-gguf/)（GPT-Generated Unified Format）が完全にデファクトスタンダード化しました。これにより、Hugging Faceから一つのファイルをダウンロードするだけで、どのような環境でも実行可能になっています。
 2. **MoE（Mixture of Experts）アーキテクチャの民主化**: 小規模ながら高性能なMoEモデルが多数リリースされ、推論時に一部のエキスパートのみをアクティブにすることで、コンシューマーPCの計算負荷を抑えながら巨大モデルに匹敵する性能を叩き出しています。
 3. **推論エンジンの高度な抽象化と最適化**: Ollama、LM Studio、AnythingLLMなどのツールが洗練され、CUDAドライバのインストールなどの複雑な依存関係をユーザーが意識する必要がなくなりました。また、FlashAttention 3のWindowsネイティブ対応により、推論速度が劇的に向上しています。
-4. **NPUの活用とWindows Copilot+ PCの台頭**: GPUを持たないノートPCでも、搭載されているNPU（Neural Processing Unit）を利用して小規模なLLM（SLM: Small Language Models）を低消費電力で動かす技術が実用段階に入りました。
+4. **NPUの活用とWindows Copilot+ PCの台頭**: GPUを持たないノートPCでも、搭載されているNPU（Neural Processing Unit）を利用して小規模な[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)（SLM: Small Language Models）を低消費電力で動かす技術が実用段階に入りました。
 
 ---
 
 # 2. ハードウェア要件とOSの準備
 
-ローカルLLMを実用的な速度（1秒間に15〜30トークン以上）で動作させるためには、ハードウェアの選定が最も重要です。
+ローカル[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)を実用的な速度（1秒間に15〜30トークン以上）で動作させるためには、ハードウェアの選定が最も重要です。
 
 ## 2.1 推奨ハードウェア構成
 
 AI PCの進化に伴い、要求スペックも変化しています。
 
-- **OS**: Windows 11 Pro (24H2以降)。WSL2の完全な機能と高度な[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)、さらにはDirectMLの最新APIを利用するために必須です。
+- **OS**: Windows 11 Pro (24H2以降)。[WSL2](/p/wsl2-ultimate-development-setup-guide/)の完全な機能と高度な[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)、さらにはDirectMLの最新APIを利用するために必須です。
 - **CPU**: Intel Core Ultra 200シリーズ以上、またはAMD Ryzen 9000シリーズ以上。CPU推論を併用する場合、広帯域メモリ通信が不可欠です。
 - **RAM**: 最低32GB、推奨64GB以上。メインメモリの帯域幅（MB/s）がCPU推論時やオフロード時の決定的なボトルネックになります。DDR5-6000以上の高速メモリが理想的です。
-- **GPU**: NVIDIA RTX 4000/5000シリーズ。ローカル[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)において最も重要なのは演算性能ではなく「VRAM容量」です。
+- **GPU**: [NVIDIA](/p/history-of-nvidia/) RTX 4000/5000シリーズ。ローカル[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)において最も重要なのは演算性能ではなく「VRAM容量」です。
   - **エントリー**: RTX 4060 Ti (16GB版) - コスパ最強。8B〜14Bクラスのモデルに最適。
   - **ミドルレンジ**: RTX 4070 Ti SUPER (16GB) / RTX 4080 SUPER (16GB)
   - **ハイエンド**: RTX 4090 (24GB) / RTX 5090 (32GB) - 30B〜70Bクラスの量子化モデルを動かすために必要です。
@@ -47,7 +47,7 @@ AI PCの進化に伴い、要求スペックも変化しています。
 
 ## 2.2 WSL2 (Windows Subsystem for Linux 2) のセットアップ
 
-多くのGUIツールはWindowsネイティブで動作しますが、Pythonを用いた開発、最新ツールのコンパイル、後述するLoRAファインチューニングにはWSL2が非常に便利です。Windows 11の最新環境では、ホスト側にNVIDIAドライバを入れるだけで、WSL2から透過的にGPU（CUDA）が利用できます。
+多くのGUIツールはWindowsネイティブで動作しますが、Pythonを用いた開発、最新ツールのコンパイル、後述するLoRAファインチューニングには[WSL2](/p/wsl2-ultimate-development-setup-guide/)が非常に便利です。Windows 11の最新環境では、ホスト側に[NVIDIA](/p/history-of-nvidia/)ドライバを入れるだけで、[WSL2](/p/wsl2-ultimate-development-setup-guide/)から透過的にGPU（CUDA）が利用できます。
 
 管理者権限でPowerShellを開き、以下を実行します。
 
@@ -59,7 +59,7 @@ wsl --install -d Ubuntu-24.04
 wsl --update
 ```
 
-インストール後、WSL2ターミナル内で `nvidia-smi` を実行し、GPUが正常に認識されていれば成功です。
+インストール後、[WSL2](/p/wsl2-ultimate-development-setup-guide/)ターミナル内で `nvidia-smi` を実行し、GPUが正常に認識されていれば成功です。
 
 ---
 
@@ -67,7 +67,7 @@ wsl --update
 
 ローカル環境でモデルがどのようにテキストを生成するのか、その内部構造を理解することは、トラブルシューティングや最適化において非常に有用です。
 
-以下のMermaid図は、典型的なローカルLLMの推論[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)を示しています。
+以下のMermaid図は、典型的なローカル[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)の推論[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)を示しています。
 
 ```mermaid
 graph TD
@@ -162,7 +162,7 @@ $V_{kv} = 2 \times 1 \times 8192 \times 32 \times 8 \times 128 \times 2 \div 10^
 
 # 5. 実践1：Ollamaを用いた最速・最短セットアップ
 
-理論を理解したところで、実際にWindows環境でLLMを動かしてみましょう。
+理論を理解したところで、実際にWindows環境で[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)を動かしてみましょう。
 2026年現在、最もユーザーフレンドリーなツールが「Ollama」です。[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)ライクな直感的なCLIを提供します。
 
 ## 5.1 インストールと実行
@@ -279,9 +279,9 @@ AnythingLLMデスクトップ版（Windows）を使えば、設定画面からOl
 
 # 8. Windows WSL2上でのファインチューニング (LoRA)
 
-ローカルで動かすだけでなく、自分のデータでモデルを賢くしたい場合、LoRA（Low-Rank Adaptation）を用いたファインチューニングが可能です。2026年現在、「Unsloth」というライブラリを使えば、WindowsのWSL2環境において、16GBのVRAMでも8Bモデルの学習が数時間で完了します。
+ローカルで動かすだけでなく、自分のデータでモデルを賢くしたい場合、LoRA（Low-Rank Adaptation）を用いたファインチューニングが可能です。2026年現在、「Unsloth」というライブラリを使えば、Windowsの[WSL2](/p/wsl2-ultimate-development-setup-guide/)環境において、16GBのVRAMでも8Bモデルの学習が数時間で完了します。
 
-WSL2のUbuntu内で以下を実行して環境を構築します。
+[WSL2](/p/wsl2-ultimate-development-setup-guide/)のUbuntu内で以下を実行して環境を構築します。
 
 ```bash
 conda create --name unsloth_env python=3.11
@@ -314,7 +314,7 @@ UnslothはCUDAカーネルを極限まで最適化しており、標準のHuggin
 
 # 10. まとめと今後の展望
 
-2026年、Windows環境におけるローカル[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)の構築は、限られた一部のエンジニアだけの特権ではなくなりました。GGUFフォーマットのデファクト化、OllamaやLM Studioといった洗練されたエコシステムの登場、そしてFlashAttentionをはじめとするハードウェア最適化により、誰でも簡単にエンタープライズ級のAI環境を手に入れることができます。
+2026年、Windows環境におけるローカル[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)の構築は、限られた一部のエンジニアだけの特権ではなくなりました。[GGUF](/p/llama-cpp-quantization-gguf/)フォーマットのデファクト化、OllamaやLM Studioといった洗練されたエコシステムの登場、そしてFlashAttentionをはじめとするハードウェア最適化により、誰でも簡単にエンタープライズ級のAI環境を手に入れることができます。
 
 本記事で解説した以下のポイントを是非活用してください。
 
@@ -322,7 +322,7 @@ UnslothはCUDAカーネルを極限まで最適化しており、標準のHuggin
 2. **Ollama** を使って最速で環境を構築し、AIエディタと連携させて生産性を劇的に向上させる。
 3. **llama.cpp** の高度なパラメータ制御で、ハードウェアの限界性能を引き出す。
 4. **AnythingLLM** で機密データを扱うセキュアなローカルRAGシステムを構築する。
-5. **Unsloth (WSL2)** を活用し、自分だけの専門知識を持ったカスタムAIを育成する。
+5. **Unsloth ([WSL2](/p/wsl2-ultimate-development-setup-guide/))** を活用し、自分だけの専門知識を持ったカスタムAIを育成する。
 
 AIの「民主化」は、もはやバズワードではなく、あなたのWindowsデスクトップ上で稼働する現実のシステムです。クラウドAPIの利用コストや情報漏洩リスクから解放され、自由で強力なプライベートAIの世界へ、今すぐ足を踏み入れてみてください。
 

@@ -12,7 +12,7 @@ image: "eyecatch.jpg"
 
 From the 17th century to the mid-19th century, Japan adopted a strict policy of national isolation known as "Sakoku." During this era, when interactions with Western science and culture were extremely restricted, a unique phenomenon unparalleled in the world occurred within Japan. This was the blossoming of Japan's own advanced mathematical culture, **"Wasan"**.
 
-Around the same time in Europe, calculus was founded by Isaac Newton and Gottfried Leibniz, leading to the rapid development of modern mathematics. Surprisingly, in the Far Eastern island nation of Japan, highly advanced mathematical concepts comparable to calculus were born completely independently.
+Around the same time in Europe, calculus was founded by [Isaac Newton](/en/p/newton/) and [Gottfried Leibniz](/en/p/leibniz/), leading to the rapid development of modern mathematics. Surprisingly, in the Far Eastern island nation of Japan, highly advanced mathematical concepts comparable to calculus were born completely independently.
 
 In this article, we will closely unravel the history of Wasan, which began with practical surveying and calculation, eventually evolving into pure intellectual amusement and a kind of art. We will also introduce the genius mathematicians who drove its development, and the unique culture of "Sangaku" that has no parallel in the world.
 

@@ -22,16 +22,16 @@ Artikel ini kembali ke asal mula "model relasional" yang diusulkan oleh Edgar F.
 
 Untuk memahami nilai sebenarnya dari model relasional, kita perlu mengetahui "apa yang diselesaikannya". Pada tahun 1960-an, model basis data arus utama adalah apa yang disebut "model hierarkis" dan "model jaringan" (contoh perwakilannya adalah IBM IMS dan sistem basis data yang mematuhi CODASYL).
 
-Sistem-sistem ini disebut sebagai **"navigasional"**. Hubungan antardata dikodekan secara kaku (hard-coded) menggunakan pointer fisik (referensi ke alamat memori), dan untuk mengambil data, programmer sendiri harus menyadari struktur fisik tersebut dan menulis kode prosedural seperti "berpindah dengan menelusuri pointer dari record induk ke record anak".
+Sistem-sistem ini disebut sebagai **"navigasional"**. Hubungan antardata dikodekan secara kaku (hard-coded) menggunakan [pointer](/id/p/c-language-pointers-memory-management-stack-heap/) fisik (referensi ke alamat memori), dan untuk mengambil data, programmer sendiri harus menyadari struktur fisik tersebut dan menulis kode prosedural seperti "berpindah dengan menelusuri [pointer](/id/p/c-language-pointers-memory-management-stack-heap/) dari record induk ke record anak".
 
 ### Masalah Fatal dari Basis Data Navigasional
 
 1. **Kurangnya Independensi Data (Lack of Data Independence)**
-   Struktur data fisik (ada tidaknya indeks, bagaimana pointer dihubungkan, dll.) terikat erat (tightly coupled) dengan kode aplikasi. Oleh karena itu, bahkan sedikit saja perubahan pada struktur basis data akan mengharuskan penulisan ulang semua kode aplikasi yang bergantung padanya.
+   Struktur data fisik (ada tidaknya indeks, bagaimana [pointer](/id/p/c-language-pointers-memory-management-stack-heap/) dihubungkan, dll.) terikat erat (tightly coupled) dengan kode aplikasi. Oleh karena itu, bahkan sedikit saja perubahan pada struktur basis data akan mengharuskan penulisan ulang semua kode aplikasi yang bergantung padanya.
 2. **Kompleksitas Query dan Ketergantungan pada Individu**
    Jika ada beberapa rute (jalur akses) untuk mengambil himpunan data tertentu, programmer harus menentukan rute mana yang paling efisien dan menulis kodenya. Hal ini membutuhkan keterampilan tingkat tinggi.
 3. **Kesulitan dalam Query Ad-Hoc**
-   Melakukan pencarian dengan kondisi yang tidak diperkirakan sebelumnya (misalnya, "buat daftar karyawan yang tergabung dalam departemen tertentu dan memiliki gaji di atas jumlah tertentu") adalah hal yang tidak realistis secara struktural akibat pointer, atau memerlukan biaya yang sangat besar.
+   Melakukan pencarian dengan kondisi yang tidak diperkirakan sebelumnya (misalnya, "buat daftar karyawan yang tergabung dalam departemen tertentu dan memiliki gaji di atas jumlah tertentu") adalah hal yang tidak realistis secara struktural akibat [pointer](/id/p/c-language-pointers-memory-management-stack-heap/), atau memerlukan biaya yang sangat besar.
 
 Data terpenjara dalam "rawa" pembatasan perangkat keras dan metode representasi fisik.
 

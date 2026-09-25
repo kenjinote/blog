@@ -29,7 +29,7 @@ Daya tarik terbesar karya Lewis Carroll terletak pada perpaduan antara "logika y
 
 Sebagai Dodgson, ia adalah seorang ahli logika yang ketat dan menulis buku-buku khusus seperti "An Elementary Treatise on Determinants" (1867) dan "Symbolic Logic" (1896). Sastra omong kosongnya adalah permainan intelektual yang dengan cerdik memanfaatkan ambiguitas kata, kesalahan silogisme, serta distorsi ruang dan waktu. Tekniknya dalam membongkar makna absolut "kata-kata" dan membebaskan pembaca dari batas akal sehat memiliki kedalaman yang berhubungan dengan filsafat bahasa modern.
 
-Misalnya, adegan terkenal di mana Humpty Dumpty menegaskan, "Ketika saya menggunakan sebuah kata, artinya tepat seperti yang saya pilih," adalah wawasan tajam tentang kesewenang-wenangan bahasa dan sifat komunikasi. Hal ini dikatakan telah memengaruhi filsuf-filsuf di kemudian hari seperti Ludwig Wittgenstein. Baginya, "logika" adalah hukum mutlak yang mendefinisikan dunia sekaligus "mainan" utama yang dapat menciptakan alam semesta paralel yang sama sekali berbeda hanya dengan sedikit mengubah kondisi.
+Misalnya, adegan terkenal di mana Humpty Dumpty menegaskan, "Ketika saya menggunakan sebuah kata, artinya tepat seperti yang saya pilih," adalah wawasan tajam tentang kesewenang-wenangan bahasa dan sifat komunikasi. Hal ini dikatakan telah memengaruhi filsuf-filsuf di kemudian hari seperti [Ludwig Wittgenstein](/id/p/biography-ludwig-wittgenstein/). Baginya, "logika" adalah hukum mutlak yang mendefinisikan dunia sekaligus "mainan" utama yang dapat menciptakan alam semesta paralel yang sama sekali berbeda hanya dengan sedikit mengubah kondisi.
 
 ## Warisan: Dampak pada Sastra, Budaya, dan Sains
 

@@ -22,20 +22,20 @@ If the "digital data of 10,000 yen" I have could be copied and sent to both Pers
 
 Until now, the only way to prevent this double-spending problem was for "**a central authority trusted by everyone, such as a bank or credit card company, to strictly manage everyone's account balances (the ledger)**."
 
-However, in 2008, a paper published by a mysterious person (or group) calling themselves Satoshi Nakamoto gave birth to the first digital currency in history where "forgeries and double-spending are absolutely impossible even without a central administrator." That is **Bitcoin**, and the technology forming its foundation is the **blockchain**.
+However, in 2008, a paper published by a mysterious person (or group) calling themselves Satoshi Nakamoto gave birth to the first digital currency in history where "forgeries and double-spending are absolutely impossible even without a central administrator." That is **Bitcoin**, and the technology forming its foundation is the **[blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/)**.
 
 ## 2. What is a Blockchain? (Distributed Ledger)
 
-In a word, a blockchain is "**a mechanism where all participants worldwide share a copy of the same transaction record (ledger) and monitor each other**."
+In a word, a [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/) is "**a mechanism where all participants worldwide share a copy of the same transaction record (ledger) and monitor each other**."
 
 When someone conducts a transaction saying "Send 1 Bitcoin from Person A to Person B," that information is broadcasted to computers (nodes) around the world through a P2P network.
-The bundle of transactions that occurred globally over about 10 minutes is packed into a single box (a **block**). Then, that box is connected and stored behind past boxes like a "**chain**." This is the origin of the name "blockchain."
+The bundle of transactions that occurred globally over about 10 minutes is packed into a single box (a **block**). Then, that box is connected and stored behind past boxes like a "**chain**." This is the origin of the name "[blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/)."
 
 Once the contents of a block (past transaction records) are connected to the chain, they can absolutely never be rewritten later. Why is such a thing possible?
 
 ## 3. "Cryptographic Hash Functions" That Make Tampering Impossible
 
-Supporting the "absolutely unrewritable nature" of the blockchain is a cryptographic technology called a **hash function (such as SHA-256)**.
+Supporting the "absolutely unrewritable nature" of the [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/) is a cryptographic technology called a **hash function (such as SHA-256)**.
 
 A hash function is a "calculator that always outputs a random string of a fixed length (hash value) no matter what length of data is put in."
 As a characteristic, it has the property that "even if the original data changes by a single character, the output hash value changes drastically into something completely different." Also, it is impossible to reverse-calculate the original data from the output hash value (one-way function).
@@ -73,6 +73,6 @@ Rather than spending a massive amount of money (electricity bills) to commit a b
 
 ## 6. Conclusion: Toward a Trustless World
 
-The blockchain is an epoch-making invention where "**a correct consensus is formed for the system as a whole through the power of mathematics, cryptographic technology, and economic incentives, without needing to trust any specific person (Trustless)**."
+The [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/) is an epoch-making invention where "**a correct consensus is formed for the system as a whole through the power of mathematics, cryptographic technology, and economic incentives, without needing to trust any specific person (Trustless)**."
 
 Bitcoin is merely its first application. Today, applying this mechanism of an "absolutely untamperable distributed ledger" has become the foundation for massive innovation to build the next form of the Internet (Web3), such as smart contracts (automated contract execution), NFTs (proof of digital ownership), decentralized finance (DeFi), and new organizational forms (DAOs).

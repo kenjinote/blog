@@ -29,7 +29,7 @@ Casi no quedan registros exactos sobre cuándo nació [Diofanto](https://kenji.b
 
 ### 2.2 La Cultura Helenística y Alejandría
 
-En esa época, Alejandría era el centro de la cultura y el aprendizaje helenísticos, jactándose de una biblioteca masiva (la Biblioteca de Alejandría) y sirviendo como un nexo de conocimiento donde se reunían muchos eruditos. En esta ciudad donde se cruzaban los conocimientos de Grecia, Egipto, Babilonia e incluso la India, se cree que [Diofanto](https://kenji.blog/es/p/diophantus/) tuvo acceso a una vasta herencia matemática del pasado. A diferencia de la tradición geométrica establecida por grandes matemáticos griegos como Euclides, Arquímedes y Apolonio, algunas teorías sugieren que [Diofanto](https://kenji.blog/es/p/diophantus/) estuvo fuertemente influenciado por el enfoque algebraico de Babilonia.
+En esa época, Alejandría era el centro de la cultura y el aprendizaje helenísticos, jactándose de una biblioteca masiva (la Biblioteca de Alejandría) y sirviendo como un nexo de conocimiento donde se reunían muchos eruditos. En esta ciudad donde se cruzaban los conocimientos de Grecia, Egipto, Babilonia e incluso la India, se cree que [Diofanto](https://kenji.blog/es/p/diophantus/) tuvo acceso a una vasta herencia matemática del pasado. A diferencia de la tradición geométrica establecida por grandes matemáticos griegos como [Euclides](/es/p/euclid/), Arquímedes y Apolonio, algunas teorías sugieren que [Diofanto](https://kenji.blog/es/p/diophantus/) estuvo fuertemente influenciado por el enfoque algebraico de Babilonia.
 
 ```mermaid
 timeline
@@ -86,7 +86,7 @@ Además, la solución general se puede expresar como $x = 2 + 3k, y = -2k$ (dond
 
 ### 4.2 Ternas Pitagóricas y Ecuaciones Diofánticas No Lineales
 
-La ecuación familiar del teorema de Pitágoras también es un tipo de ecuación diofántica.
+La ecuación familiar del teorema de [Pitágoras](/es/p/pythagoras/) también es un tipo de ecuación diofántica.
 
 $$
 x^2 + y^2 = z^2
@@ -98,7 +98,7 @@ En el margen junto a este problema, [Pierre de Fermat](https://kenji.blog/es/p/f
 
 > "Es imposible separar un cubo en dos cubos, o una cuarta potencia en dos cuartas potencias, o en general, cualquier potencia mayor que la segunda, en dos potencias iguales. He descubierto una demostración verdaderamente maravillosa de esto, que este margen es demasiado estrecho para contener."
 
-Este es el famoso **Último Teorema de [Fermat](https://kenji.blog/es/p/fermat/)** (que $x^n + y^n = z^n \ (n \ge 3)$ no tiene soluciones enteras positivas). Este teorema continuó rechazando los desafíos de matemáticos geniales de todo el mundo durante unos 350 años después de haber sido propuesto, hasta que finalmente fue demostrado por Andrew Wiles en 1995. Sin el libro de [Diofanto](https://kenji.blog/es/p/diophantus/), este gran drama podría no haber ocurrido nunca.
+Este es el famoso **Último Teorema de [Fermat](https://kenji.blog/es/p/fermat/)** (que $x^n + y^n = z^n \ (n \ge 3)$ no tiene soluciones enteras positivas). Este teorema continuó rechazando los desafíos de matemáticos geniales de todo el mundo durante unos 350 años después de haber sido propuesto, hasta que finalmente fue demostrado por [Andrew Wiles](/es/p/wiles/) en 1995. Sin el libro de [Diofanto](https://kenji.blog/es/p/diophantus/), este gran drama podría no haber ocurrido nunca.
 
 ```mermaid
 graph TD
@@ -179,7 +179,7 @@ En particular, los matemáticos de Bagdad en el siglo IX tradujeron la *Arithmet
 
 En el siglo XVI, a medida que se redescubrían los clásicos griegos en la Europa del Renacimiento, la *Arithmetica* se tradujo al latín. Una edición bilingüe en griego y latín publicada por [Claude Gaspard Bachet](https://kenji.blog/es/p/bachet/) de Méziriac en 1621 fue muy leída. Fue esta edición de Bachet de la *Arithmetica* la que [Fermat](https://kenji.blog/es/p/fermat/) estudió cuidadosamente, lo que desencadenó la apertura de una nueva puerta en las matemáticas.
 
-La teoría de las ecuaciones diofánticas fue posteriormente profundamente estudiada por gigantes como [Leonhard Euler](https://kenji.blog/es/p/euler/), Joseph-Louis Lagrange y Carl Friedrich Gauss. Su investigación creció hasta convertirse en los vastos campos matemáticos de la "teoría algebraica de números" y la "geometría algebraica" modernas. El décimo de los 23 problemas de Hilbert fue "encontrar un algoritmo general para determinar si una ecuación diofántica dada es resoluble", y en 1970 Yuri Matiyasevich demostró que "tal algoritmo no existe". El nombre de [Diofanto](https://kenji.blog/es/p/diophantus/) está profundamente grabado en la vanguardia de las matemáticas modernas.
+La teoría de las ecuaciones diofánticas fue posteriormente profundamente estudiada por gigantes como [Leonhard Euler](https://kenji.blog/es/p/euler/), [Joseph-Louis Lagrange](/es/p/lagrange/) y [Carl Friedrich Gauss](/es/p/gauss/). Su investigación creció hasta convertirse en los vastos campos matemáticos de la "teoría algebraica de números" y la "geometría algebraica" modernas. El décimo de los 23 problemas de Hilbert fue "encontrar un algoritmo general para determinar si una ecuación diofántica dada es resoluble", y en 1970 Yuri Matiyasevich demostró que "tal algoritmo no existe". El nombre de [Diofanto](https://kenji.blog/es/p/diophantus/) está profundamente grabado en la vanguardia de las matemáticas modernas.
 
 ## 7. Conclusión
 

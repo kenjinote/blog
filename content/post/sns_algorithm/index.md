@@ -50,7 +50,7 @@ $$
 
 ### 2.2 深層学習を用いた推薦モデル (DLRM)
 
-近年、Meta（旧Facebook）などを中心に普及しているのが、Deep Learning Recommendation Model (DLRM)に代表される深層学習ベースのアーキテクチャです。DLRMは、ユーザーの過去の行動履歴やアイテムのメタデータなど、多種多様な特徴量（Feature）を入力として受け取り、クリック率（CTR：Click-Through Rate）などを予測します。
+近年、[Meta](/p/history-of-meta-facebook/)（[旧Facebook](/p/history-of-meta-facebook/)）などを中心に普及しているのが、Deep Learning Recommendation Model (DLRM)に代表される深層学習ベースのアーキテクチャです。DLRMは、ユーザーの過去の行動履歴やアイテムのメタデータなど、多種多様な特徴量（Feature）を入力として受け取り、クリック率（CTR：Click-Through Rate）などを予測します。
 
 DLRMの特徴は、スパースなカテゴリカル特徴量（例：ユーザーID、フォローしているハッシュタグ）を「埋め込みテーブル（Embedding Table）」を通じて密なベクトル（Dense Vector）に変換し、連続値の密な特徴量（例：アカウント開設からの日数、過去の平均滞在時間）と組み合わせる点にあります。
 

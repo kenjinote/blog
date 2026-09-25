@@ -40,7 +40,7 @@ Cloud Computing wird grob in drei Modelle unterteilt, je nachdem, "wie viel der 
 3. **SaaS (Software as a Service)**
    - **Inhalt**: Die Software selbst wird über das Internet als Dienst genutzt. Der Nutzer muss nichts verwalten.
    - **Pizza-Beispiel**: Man ruft bei der Pizzeria an, lässt sich die fertig gebackene Pizza liefern und isst sie einfach nur.
-   - **Typische Beispiele**: Gmail, Slack, Salesforce, Microsoft 365
+   - **Typische Beispiele**: Gmail, Slack, [Salesforce](/de/p/salesforcechatter%E5%85%A8%E6%B6%88%E3%81%97befehl/), Microsoft 365
 
 ## 3. Die "Virtualisierungstechnologie" hinter der Cloud
 

@@ -33,7 +33,7 @@ description: '盘点能让Visual Studio Code（VSCode）更加好用的推荐扩
 | 数据库 | PostgreSQL | Chris Kolkman | 支持PostgreSQL开发 |
 | 嵌入式 | PlatformIO | PlatformIO | 支持PlatformIO开发 |
 | 嵌入式 | Arduino | Microsoft | 支持Arduino开发 |
-| 嵌入式 | WorkBench | Particle | 支持Particle提供的开发环境，从固件、库、云连接等全面支持物联网开发 |
+| 嵌入式 | WorkBench | Particle | 支持Particle提供的开发环境，从固件、库、云连接等全面支持[物联网](/zh-cn/p/technology-iot/)开发 |
 | C/C++ | C/C++ Extension Pack | Microsoft | 支持C/C++开发 |
 | C/C++ | C/C++ Runner | franneck94 | 运行C/C++代码（支持gcc、msvc、cuda nvccc编译器） |
 | C/C++ | Cortex-Debug | marus25 | 支持Cortex-A/R/M微控制器的调试 |

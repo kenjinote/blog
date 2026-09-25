@@ -17,7 +17,7 @@ In den letzten Jahren war die technologische Entwicklung von [Large Language Mod
 
 Diese Anforderungen werden von "lokalen LLMs (Open-Source-LLMs)" erfüllt, die direkt auf den eigenen PC oder Unternehmensserver heruntergeladen und ausgeführt werden können. Bis etwa 2023 war es schwierig, lokal eine praktikable Genauigkeit zu erreichen, aber durch die Weiterentwicklung der Modellarchitekturen und Fortschritte in der Quantisierungstechnologie (Quantization) ist es heute möglich, selbst auf Consumer-GPUs (wie NVIDIA RTX 3090 / 4090 oder Apples Apple Silicon im Mac) sehr leistungsstarke LLMs flüssig auszuführen.
 
-In diesem Artikel wählen wir aus der Vielzahl von Open-Source-LLMs die "Top 5 der empfohlenen Modelle" aus, die ab 2026 als besonders herausragend bewertet werden. Wir werden die architektonischen Merkmale, die Anzahl der Parameter, die Speicheranforderungen aufgrund von GGUF-Quantisierung und konkrete Anwendungsfälle aus einer äußerst detaillierten und technischen Perspektive gründlich vergleichen und erläutern.
+In diesem Artikel wählen wir aus der Vielzahl von Open-Source-LLMs die "Top 5 der empfohlenen Modelle" aus, die ab 2026 als besonders herausragend bewertet werden. Wir werden die architektonischen Merkmale, die Anzahl der Parameter, die Speicheranforderungen aufgrund von [GGUF](/de/p/llama-cpp-quantization-gguf/)-Quantisierung und konkrete Anwendungsfälle aus einer äußerst detaillierten und technischen Perspektive gründlich vergleichen und erläutern.
 
 ---
 
@@ -62,7 +62,7 @@ Wenn man zusätzlich den KV-Cache und anderes berücksichtigt, werden fast 18 GB
 
 Hier kommt die "Quantisierung (Quantization)" ins Spiel. Durch die Reduzierung der Genauigkeit der Parameter von FP16 auf 8-Bit, 4-Bit oder im Extremfall 2-Bit kann der benötigte Speicherplatz drastisch reduziert werden, während die Leistungsverschlechterung des Modells auf ein Minimum beschränkt bleibt.
 
-Das derzeit am weitesten verbreitete Format ist **GGUF (GPT-Generated Unified Format)**, das von Georgi Gerganov (dem Entwickler von llama.cpp) entworfen wurde. GGUF ist ein Binärformat für effiziente Inferenz sowohl auf CPU als auch auf GPU und zeichnet sich durch eine besonders gute Kompatibilität mit der Unified Memory-Architektur von Macs (Apple Silicon) aus.
+Das derzeit am weitesten verbreitete Format ist **[GGUF](/de/p/llama-cpp-quantization-gguf/) (GPT-Generated Unified Format)**, das von Georgi Gerganov (dem Entwickler von llama.cpp) entworfen wurde. [GGUF](/de/p/llama-cpp-quantization-gguf/) ist ein Binärformat für effiziente Inferenz sowohl auf CPU als auch auf GPU und zeichnet sich durch eine besonders gute Kompatibilität mit der Unified Memory-Architektur von Macs (Apple Silicon) aus.
 
 Die Speicherberechnung bei der Quantisierung eines 8B-Modells auf 4-Bit (z. B. Q4_K_M) sieht wie folgt aus:
 
@@ -108,7 +108,7 @@ graph TD
 - **Llama 3 8B**: 8 Milliarden Parameter. Läuft mit 4-Bit-Quantisierung bei ca. 5 GB Speicher. Reagiert extrem schnell und eignet sich ideal als persönlicher Assistent auf dem PC oder als Kern eines lokalen RAG-Systems (Retrieval-Augmented Generation).
 - **Llama 3 70B**: 70 Milliarden Parameter. Benötigt mit 4-Bit-Quantisierung ca. 40 GB VRAM (oder Unified Memory bei Apple Silicon). Es bietet eine Leistung, die dem Cloud-basierten GPT-4 nahekommt, und ist hervorragend für fortgeschrittenes logisches Denken, komplexe Programmierung, Datenanalyse usw. geeignet.
 
-Llama 3 hat die stärkste Community-Unterstützung, und ein weiterer Vorteil ist, dass alle Quantisierungsformate wie GGUF, AWQ und EXL2 sofort verfügbar sind.
+Llama 3 hat die stärkste Community-Unterstützung, und ein weiterer Vorteil ist, dass alle Quantisierungsformate wie [GGUF](/de/p/llama-cpp-quantization-gguf/), AWQ und EXL2 sofort verfügbar sind.
 
 ---
 
@@ -144,7 +144,7 @@ Der größte Vorteil dieser Architektur liegt darin, dass "obwohl die Anzahl der
 
 ## 3. Gemma 2 (Google)
 
-Die "Gemma"-Serie besteht aus offenen Modellen, die Google unter Nutzung der Technologie seines modernsten "Gemini"-Modells entwickelt hat. Gemma 2 ist die zweite Generation und bringt bedeutende architektonische Änderungen mit sich.
+Die "Gemma"-Serie besteht aus offenen Modellen, die Google unter Nutzung der Technologie seines modernsten "[Gemini](/de/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEl%C3%B6sung/)"-Modells entwickelt hat. Gemma 2 ist die zweite Generation und bringt bedeutende architektonische Änderungen mit sich.
 
 ### Einzigartiges Architekturdesign
 

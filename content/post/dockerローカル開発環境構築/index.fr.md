@@ -13,7 +13,7 @@ tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 
 Dans le développement logiciel, le problème du « Ça marche sur ma machine » (It works on my machine), dû aux différences d'environnements entre les développeurs, est depuis longtemps un facteur de perte de temps dans de nombreux projets. En raison des différences de systèmes d'exploitation, de versions de langages installées, des dépendances de bibliothèques, ou des conflits d'outils installés globalement, l'environnement local est toujours exposé à une « incertitude d'état ».
 
-Ce qui résout fondamentalement ces défis, c'est la technologie des conteneurs, notamment **[Docker](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)**, et le paradigme d'**Infrastructure as Code ([IaC](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/))**. Conteneuriser l'environnement de développement local permet une isolation au niveau du système d'exploitation et de versionner l'environnement lui-même avec la base de code.
+Ce qui résout fondamentalement ces défis, c'est la technologie des conteneurs, notamment **[Docker](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)**, et le paradigme d'**[Infrastructure as Code](/fr/p/iac-infrastructure-as-code-terraform/) ([IaC](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/))**. Conteneuriser l'environnement de développement local permet une isolation au niveau du système d'exploitation et de versionner l'environnement lui-même avec la base de code.
 
 Cet article explique en détail, avec des perspectives mathématiques, la méthode pour construire **« un environnement de développement local reproductible qui reste exactement le même peu importe qui, quand, et sur quelle machine il est lancé »**, en tirant parti de Docker, Docker Compose, et VSCode Dev[Container](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)s.
 
@@ -23,13 +23,13 @@ Cet article explique en détail, avec des perspectives mathématiques, la métho
 
 ### Principes de l'IaC et son application à l'environnement local
 
-L'Infrastructure as Code (IaC) est une approche qui gère la configuration et le provisionnement de l'infrastructure via des fichiers de définition lisibles par machine, plutôt que par un processus manuel. Les principes fondamentaux de l'IaC incluent :
+L'[Infrastructure as Code](/fr/p/iac-infrastructure-as-code-terraform/) ([IaC](/fr/p/iac-infrastructure-as-code-terraform/)) est une approche qui gère la configuration et le provisionnement de l'infrastructure via des fichiers de définition lisibles par machine, plutôt que par un processus manuel. Les principes fondamentaux de l'[IaC](/fr/p/iac-infrastructure-as-code-terraform/) incluent :
 
 1. **Approche déclarative (Declarative Approach)** : On définit « quel devrait être l'état final » plutôt que « comment changer l'état ».
 2. **Idempotence (Idempotency)** : Quel que soit le nombre d'exécutions du script, le même résultat (état) est toujours garanti.
 3. **Contrôle de version (Version Control)** : L'état de l'infrastructure est stocké sous forme de code dans des systèmes comme Git, ce qui permet le suivi de l'historique et la revue par les pairs.
 
-Pratiquer l'IaC dans un environnement de développement local signifie coder « l'état idéal » de l'environnement de développement à l'aide de `Dockerfile`, `docker-compose.yml`, et `devcontainer.json`. Cela permet aux nouveaux membres de l'équipe de commencer immédiatement le développement en clonant simplement le dépôt et en exécutant une seule commande, offrant ainsi une excellente expérience d'intégration (onboarding).
+Pratiquer l'[IaC](/fr/p/iac-infrastructure-as-code-terraform/) dans un environnement de développement local signifie coder « l'état idéal » de l'environnement de développement à l'aide de `Dockerfile`, `docker-compose.yml`, et `devcontainer.json`. Cela permet aux nouveaux membres de l'équipe de commencer immédiatement le développement en clonant simplement le dépôt et en exécutant une seule commande, offrant ainsi une excellente expérience d'intégration (onboarding).
 
 ### Fonctionnalités du noyau derrière la technologie des conteneurs
 
@@ -356,7 +356,7 @@ Le temps de réponse moyen est exprimé par l'équation d'espérance mathématiq
 
 $$ T_{\text{total}} = T_{\text{net}} + T_{\text{app}} + T_{\text{cache}} + p_{\text{miss}} \times (T_{\text{db}} + T_{\text{cache\_write}}) $$
 
-Dans l'environnement de développement local (dans [Docker](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)), $T_{\text{net}}$ est proche de 0, mais ce qui requiert notre attention, ce sont **les performances d'E/S du bind mount**. En particulier, lors de l'utilisation de Docker Desktop sous Windows/macOS, la surcharge de partage de fichiers entre l'OS hôte et la VM (conteneur) a tendance à gonfler $T_{\text{app}}$ (comme les temps de lecture du code). Pour résoudre ce goulot d'étranglement, il est fortement recommandé d'utiliser Dev[Container](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)s pour placer l'intégralité du code source dans un volume nommé, ou d'adopter une architecture exécutant le moteur Docker de manière native dans l'environnement WSL2 (Windows Subsystem for Linux 2).
+Dans l'environnement de développement local (dans [Docker](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)), $T_{\text{net}}$ est proche de 0, mais ce qui requiert notre attention, ce sont **les performances d'E/S du bind mount**. En particulier, lors de l'utilisation de Docker Desktop sous Windows/macOS, la surcharge de partage de fichiers entre l'OS hôte et la VM (conteneur) a tendance à gonfler $T_{\text{app}}$ (comme les temps de lecture du code). Pour résoudre ce goulot d'étranglement, il est fortement recommandé d'utiliser Dev[Container](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)s pour placer l'intégralité du code source dans un volume nommé, ou d'adopter une architecture exécutant le moteur Docker de manière native dans l'environnement WSL2 ([Windows Subsystem for Linux](/fr/p/wsl2-ultimate-development-setup-guide/) 2).
 
 ---
 

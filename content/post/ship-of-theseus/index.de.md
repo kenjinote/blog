@@ -51,9 +51,9 @@ Das ist genau das **Schiff des Theseus**. Selbst wenn alle Komponenten (Teile), 
 
 ## 2. „Identität“ in der objektorientierten Programmierung
 
-Wenn wir über „Identität“ auf Code-Ebene nachdenken, ist das Konzept, das am engsten damit verbunden ist, die **objektorientierte Programmierung ([OOP](https://kenji.blog/de/p/object-oriented-programming-oop-solid-principles/))**. In der OOP gibt es grob zwei Kriterien, um Identität zu bestimmen:
+Wenn wir über „Identität“ auf Code-Ebene nachdenken, ist das Konzept, das am engsten damit verbunden ist, die **objektorientierte Programmierung ([OOP](https://kenji.blog/de/p/object-oriented-programming-oop-solid-principles/))**. In der [OOP](/de/p/object-oriented-programming-oop-solid-principles/) gibt es grob zwei Kriterien, um Identität zu bestimmen:
 
-1. **Referenzgleichheit (Reference Equality)**: Verweisen sie auf denselben Ort im Speicher (ist der Zeiger derselbe)?
+1. **Referenzgleichheit (Reference Equality)**: Verweisen sie auf denselben Ort im Speicher (ist der [Zeiger](/de/p/c-language-pointers-memory-management-stack-heap/) derselbe)?
 2. **Wertegleichheit (Value Equality)**: Sind alle gehaltenen Attribute (Daten) gleich?
 
 Wenn man beim Schiff des Theseus argumentiert, „es ist ein anderes Schiff, weil alle Teile ausgetauscht wurden“, dann ist das eine Denkweise, die großen Wert auf die **Wertegleichheit**. Wenn man hingegen argumentiert, „es ist dasselbe Schiff, weil der historische und gesellschaftliche Kontext kontinuierlich ist“, kommt das einer Art **Referenzgleichheit** nahe.

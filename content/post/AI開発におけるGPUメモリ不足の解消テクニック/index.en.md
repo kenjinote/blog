@@ -14,7 +14,7 @@ description: "VRAM (GPU memory) shortage is the biggest barrier in LLM training 
 
 In recent years, generative AI technologies such as [Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs) and Diffusion Models have achieved rapid development. However, when trying to train (fine-tune) or perform inference with these cutting-edge AI models in a local environment, a very physical barrier that many developers and researchers face is the **"shortage of GPU memory (VRAM)"**.
 
-Even a high-end consumer GPU like the NVIDIA GeForce RTX 4090 has a maximum VRAM of 24GB, making it completely impossible to load a massive model like Llama 3 70B as it is. Data center GPUs like the H100 (80GB) or B200 (192GB) are extremely expensive and not easily accessible to individuals or small teams. If we cannot break through this "Wall of VRAM," we cannot even touch the most advanced models.
+Even a high-end consumer GPU like the NVIDIA [GeForce](/en/p/history-of-nvidia/) RTX 4090 has a maximum VRAM of 24GB, making it completely impossible to load a massive model like Llama 3 70B as it is. Data center GPUs like the H100 (80GB) or B200 (192GB) are extremely expensive and not easily accessible to individuals or small teams. If we cannot break through this "Wall of VRAM," we cannot even touch the most advanced models.
 
 In this article, we will thoroughly explain advanced techniques from both inference and training perspectives to break down this physical constraint of limited VRAM through software and hardware architectural ingenuity. Let's delve deep into CPU offloading, KV cache optimization, Gradient Checkpointing, and the latest Unified Memory architectures, interspersed with mathematical formulas and diagrams. By reading this article, you will gain a deep understanding of VRAM behavior and practical knowledge for handling massive models with limited resources.
 
@@ -32,7 +32,7 @@ The data types commonly used in deep learning and their byte size per parameter 
 - **FP32 (Single Precision Floating-Point):** 4 bytes (Standard precision for training)
 - **FP16 / BF16 (Half Precision Floating-Point):** 2 bytes (Common for inference and mixed precision training)
 - **INT8 (8-bit Integer):** 1 byte (Quantized models)
-- **INT4 (4-bit Integer Quantization):** 0.5 bytes (Extreme quantization like GPTQ, AWQ, GGUF)
+- **INT4 (4-bit Integer Quantization):** 0.5 bytes (Extreme quantization like GPTQ, AWQ, [GGUF](/en/p/llama-cpp-quantization-gguf/))
 
 Let $P$ be the total number of parameters in the model. The base memory amount $M_{weights}$ occupied by the weights themselves is expressed by the following formula:
 

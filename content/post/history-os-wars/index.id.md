@@ -54,7 +54,7 @@ Dari tahun 1990-an hingga 2000-an, pertarungan pangsa pasar OS menjadi sangat se
 ### 2.1 Dampak dan Dominasi Mutlak Windows 95
 Windows 95, yang dirilis pada tahun 1995, memicu fenomena sosial. Dasar-dasar PC modern, seperti GUI berskala penuh, fitur koneksi internet (yang kemudian menjadi Internet Explorer), dan plug-and-play, disempurnakan di sini. Melalui kesuksesan Windows 95, Microsoft membangun monopoli absolut di pasar PC.
 
-Menghadapi dominasi yang luar biasa ini, Apple sempat jatuh ke dalam krisis manajemen yang parah. Namun, dengan kembalinya Steve Jobs pada tahun 1997 dan kesuksesan "iMac" setelahnya, Apple berhasil bangkit kembali di pasar khusus (niche) unik mereka yang menekankan desain dan gaya hidup.
+Menghadapi dominasi yang luar biasa ini, Apple sempat jatuh ke dalam krisis manajemen yang parah. Namun, dengan kembalinya [Steve Jobs](/id/p/biography-steve-jobs/) pada tahun 1997 dan kesuksesan "iMac" setelahnya, Apple berhasil bangkit kembali di pasar khusus (niche) unik mereka yang menekankan desain dan gaya hidup.
 
 ### 2.2 Perang Peramban (Browser) dan Kebangkitan Web
 Medan pertempuran utama dalam perang OS pada akhirnya bergeser ke ruang internet. Perang peramban pertama antara Netscape dan Internet Explorer mendefinisikan ulang nilai OS sebagai sebuah platform. Microsoft mendapatkan keunggulan dengan membundel IE ke dalam Windows, tetapi hal ini juga memicu persidangan pelanggaran undang-undang antimonopoli.
@@ -90,7 +90,7 @@ graph LR
 
 ## Bab 4: Akhir dari Pertempuran dan Paradigma Baru (Sejak 2010-an)
 
-Perang agama OS yang telah berlangsung lama ini mengalami perubahan besar dalam lanskapnya memasuki tahun 2010-an. Dengan revolusi seluler dan kebangkitan cloud, pertanyaan mengenai "OS desktop mana yang Anda gunakan" telah kehilangan maknanya.
+Perang agama OS yang telah berlangsung lama ini mengalami perubahan besar dalam lanskapnya memasuki tahun 2010-an. Dengan [revolusi seluler](/id/p/history-of-iphone/) dan kebangkitan cloud, pertanyaan mengenai "OS desktop mana yang Anda gunakan" telah kehilangan maknanya.
 
 ### 4.1 Transisi ke Seluler dan Sistem Bipolar Baru
 Dengan munculnya iPhone (iOS) dan Android, pusat komputasi orang-orang bergeser dari PC ke ponsel pintar (smartphone). Menariknya, di dunia seluler pun tercipta struktur yang tampaknya mengulang sejarah masa lalu, yaitu pendekatan tertutup dari Apple (iOS) dan pendekatan terbuka yang dipimpin oleh Google (Android berbasis Linux).

@@ -149,7 +149,7 @@ Le temps nécessaire au démarrage à froid se divise principalement en **initia
 
 ### 4.2. Le démarrage à froid du point de vue de la théorie des probabilités
 
-En utilisant la théorie des files d'attente (comme le modèle M/M/c), on peut modéliser mathématiquement la probabilité d'occurrence d'un démarrage à froid.
+En utilisant la [théorie des files d'attente](/fr/p/queuing-theory-basics/) (comme le modèle M/M/c), on peut modéliser mathématiquement la probabilité d'occurrence d'un démarrage à froid.
 Le taux d'arrivée des requêtes étant $\lambda$, la durée de vie du conteneur chaud étant $T_w$, et le temps de traitement étant $\mu$, alors lors d'un pic de trafic, le nombre d'exécutions parallèles nécessaires (nombre de conteneurs) augmente fortement, ce qui fait monter la probabilité d'un démarrage à froid.
 
 En régime permanent, la probabilité $P_{warm}$ qu'un conteneur chaud soit réutilisé peut être approximée comme suit :

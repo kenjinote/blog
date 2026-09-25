@@ -292,4 +292,4 @@ When executing this UPDATE statement, the application side checks the **Affected
 - Understand the characteristics of **pessimistic locking** and **optimistic locking**, and implement the optimal exclusive control in the application according to the business logic and traffic characteristics (frequency of contention).
 
 By combining these knowledge and technologies, it becomes possible for the first time to build a robust system that "scales to high performance without causing data inconsistencies."
-In the next article, we plan to explain how this transaction control is evolving in distributed systems and microservice architectures (such as the Saga pattern and 2PC). Stay tuned.
+In the next article, we plan to explain how this transaction control is evolving in [distributed systems](/en/p/cap-theorem-distributed-systems-tradeoff/) and microservice architectures (such as the Saga pattern and 2PC). Stay tuned.

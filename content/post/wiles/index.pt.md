@@ -30,7 +30,7 @@ $$
 x^n + y^n = z^n \quad (\text{onde } n \ge 3 \text{ é um número inteiro})
 $$
 
-Ele afirma que não existem soluções inteiras positivas $(x, y, z)$ que satisfaçam esta equação. Quando $n = 2$, é bem conhecido como o teorema de Pitágoras, e existem infinitas soluções (trios pitagóricos). No entanto, [Fermat](https://kenji.blog/pt/p/fermat/) afirmou que quando $n$ é 3 ou maior, isso nunca se sustenta.
+Ele afirma que não existem soluções inteiras positivas $(x, y, z)$ que satisfaçam esta equação. Quando $n = 2$, é bem conhecido como o teorema de [Pitágoras](/pt/p/pythagoras/), e existem infinitas soluções (trios pitagóricos). No entanto, [Fermat](https://kenji.blog/pt/p/fermat/) afirmou que quando $n$ é 3 ou maior, isso nunca se sustenta.
 
 Embora a proposição pareça compreensível até para um aluno do ensino médio, ela resistiu a uma prova completa, mesmo por matemáticos geniais que deixaram sua marca na história, como Euler, Sophie Germain e [Kummer](https://kenji.blog/pt/p/kummer/).
 

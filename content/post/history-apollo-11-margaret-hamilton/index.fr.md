@@ -10,7 +10,7 @@ image: "eyecatch.jpg"
 
 # 1. Introduction : Le défi sans précédent de l'alunissage
 
-Le 20 juillet 1969, Apollo 11 a atterri dans la mer de la Tranquillité, et le commandant Neil Armstrong est devenu le premier humain à poser le pied sur la Lune. Cet exploit historique était le résultat d'avancées matérielles telles que l'ingénierie des fusées, la science des matériaux et la mécanique céleste, mais c'était aussi le triomphe d'un "logiciel" extrêmement innovant pour l'époque.
+Le 20 juillet 1969, Apollo 11 a atterri dans la mer de la Tranquillité, et le commandant [Neil Armstrong](/fr/p/biography-neil-armstrong/) est devenu le premier humain à poser le pied sur la Lune. Cet exploit historique était le résultat d'avancées matérielles telles que l'ingénierie des fusées, la science des matériaux et la mécanique céleste, mais c'était aussi le triomphe d'un "logiciel" extrêmement innovant pour l'époque.
 
 Au centre du développement de ce logiciel se trouvait **Margaret Hamilton**, qui a dirigé le développement du logiciel de l'Apollo Guidance Computer (AGC) au Instrumentation Laboratory du MIT (Massachusetts Institute of Technology). À cette époque, les ordinateurs commençaient tout juste à être miniaturisés avec des transistors, passant d'énormes masses de tubes à vide occupant des pièces entières. La capacité de mémoire était minuscule et la vitesse de calcul était incomparablement plus lente que celle des smartphones modernes.
 

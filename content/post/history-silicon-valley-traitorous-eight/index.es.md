@@ -12,7 +12,7 @@ image: "eyecatch.jpg"
 
 En el mundo moderno, la "tecnología de semiconductores" es la base de tecnologías como los teléfonos inteligentes, las computadoras, Internet y la IA. Y el centro de esta industria de semiconductores, la meca de la innovación que los emprendedores de todo el mundo anhelan, es "Silicon Valley", ubicado en el norte de California.
 
-Este lugar, donde se concentran gigantes tecnológicos como Google, Apple, Meta (anteriormente Facebook) y Netflix, no siempre fue como es hoy. Alguna vez fue solo una zona agrícola tranquila llena de huertos, el "Valle de Santa Clara". ¿Por qué se transformó en el centro tecnológico más grande del mundo?
+Este lugar, donde se concentran gigantes tecnológicos como Google, Apple, Meta ([anteriormente Facebook](/es/p/history-of-meta-facebook/)) y Netflix, no siempre fue como es hoy. Alguna vez fue solo una zona agrícola tranquila llena de huertos, el "Valle de Santa Clara". ¿Por qué se transformó en el centro tecnológico más grande del mundo?
 
 Se puede decir que todo comenzó con un incidente de "traición" en 1957. Ocho jóvenes ingenieros brillantes, que se habían reunido en torno a un científico genio, lo dejaron para fundar su propia empresa. Más tarde serían conocidos como los **"Ocho Traidores" (Traitorous Eight)**.
 

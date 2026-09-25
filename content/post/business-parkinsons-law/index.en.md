@@ -113,7 +113,7 @@ Large tasks (e.g., "Create a project plan") tend to expand because there is a la
 
 ### 3. The Spirit of "Done is better than perfect"
 
-Time expands because you aim for perfection. Be conscious of the famous words of Mark Zuckerberg, founder of Facebook (now Meta): "Done is better than perfect." It is important to adopt "prototype thinking," where you first give it shape as fast as possible, even if the result is only 60 points, and use the remaining time to polish it.
+Time expands because you aim for perfection. Be conscious of the famous words of [Mark Zuckerberg](/en/p/biography-mark-zuckerberg/), founder of Facebook (now Meta): "Done is better than perfect." It is important to adopt "prototype thinking," where you first give it shape as fast as possible, even if the result is only 60 points, and use the remaining time to polish it.
 
 ## [Diagram] Workflow Changes by Overcoming Approaches
 

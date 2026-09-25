@@ -12,7 +12,7 @@ image: "eyecatch.jpg"
 
 Du 17e siècle jusqu'au milieu du 19e siècle, le Japon a adopté une politique d'isolement strict appelée "Sakoku". Durant cette époque où les échanges avec les sciences et la culture occidentales étaient extrêmement limités, un phénomène singulier et sans précédent dans le monde s'est produit au Japon. C'est l'éclosion d'une culture mathématique avancée et propre au Japon, le **« Wasan » (Wasan)**.
 
-À la même époque en Europe, le calcul infinitésimal était fondé par Isaac Newton et Gottfried Leibniz, et les mathématiques modernes se développaient rapidement. De manière surprenante, dans ce pays insulaire d'Extrême-Orient qu'est le Japon, des concepts mathématiques avancés comparables au calcul différentiel et intégral naissaient de manière totalement indépendante.
+À la même époque en Europe, le calcul infinitésimal était fondé par [Isaac Newton](/fr/p/newton/) et [Gottfried Leibniz](/fr/p/leibniz/), et les mathématiques modernes se développaient rapidement. De manière surprenante, dans ce pays insulaire d'Extrême-Orient qu'est le Japon, des concepts mathématiques avancés comparables au calcul différentiel et intégral naissaient de manière totalement indépendante.
 
 Dans cet article, nous examinerons en détail l'histoire du Wasan, qui a commencé par des mesures et des calculs pratiques pour s'élever au rang de pur jeu intellectuel puis d'une forme d'art, les mathématiciens de génie qui ont mené ce développement, et la culture unique au monde du "Sangaku".
 

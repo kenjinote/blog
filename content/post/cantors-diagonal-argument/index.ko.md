@@ -169,9 +169,9 @@ $$
 
 여기서 칸토어는 하나의 거대한 의문에 직면했습니다. **"$\aleph_0$ 과 $2^{\aleph_0}$ 의 중간 농도를 가진 무한 집합은 존재하는가?"** 
 
-"중간 농도는 존재하지 않는다"고 하는 가설을 **연속체 가설 ([Continuum Hypothesis](https://kenji.blog/ko/p/continuum-hypothesis/), CH)** 이라고 부릅니다. 칸토어는 이 증명에 생애를 바쳤으나, 해결할 수는 없었습니다.
+"중간 농도는 존재하지 않는다"고 하는 가설을 **[연속체 가설](/ko/p/continuum-hypothesis/) ([Continuum Hypothesis](https://kenji.blog/ko/p/continuum-hypothesis/), CH)** 이라고 부릅니다. 칸토어는 이 증명에 생애를 바쳤으나, 해결할 수는 없었습니다.
 
-나중에 [쿠르트 괴델](https://kenji.blog/ko/p/godel/)([Kurt Gödel](https://kenji.blog/ko/p/godel/))과 폴 코언(Paul Cohen)에 의해, 연속체 가설은 **"현재 수학의 공리계(ZFC)에서는 증명도 반증도 할 수 없다(독립적이다)"** 는 것이 증명되었습니다. 이것은 20세기 수학에 있어서 가장 심오한 발견 중 하나입니다.
+나중에 [쿠르트 괴델](https://kenji.blog/ko/p/godel/)([Kurt Gödel](https://kenji.blog/ko/p/godel/))과 폴 코언(Paul Cohen)에 의해, [연속체 가설](/ko/p/continuum-hypothesis/)은 **"현재 수학의 공리계(ZFC)에서는 증명도 반증도 할 수 없다(독립적이다)"** 는 것이 증명되었습니다. 이것은 20세기 수학에 있어서 가장 심오한 발견 중 하나입니다.
 
 ---
 
@@ -183,4 +183,4 @@ $$
 2. 유리수까지는 자연수와 같은 크기(가산 무한)이다.
 3. 대각선을 비껴가며 새로운 수를 만드는 논법을 통해, 실수가 자연수보다 많음(비가산 무한)이 증명된다.
 
-이 직관에 반하는, 그러나 절대적인 논리의 아름다움이야말로 수학이라는 학문의 최대 매력이라고 할 수 있을 것입니다. 대각선 논법은 나중에 [앨런 튜링](https://kenji.blog/ko/p/turing/)(Alan Turing)의 정지 문제나 [괴델의 불완전성 정리](https://kenji.blog/ko/p/godels-incompleteness-theorems/) 증명 등 컴퓨터 과학이나 수리 논리학의 근간을 이루는 이론에도 응용되게 됩니다.
+이 직관에 반하는, 그러나 절대적인 논리의 아름다움이야말로 수학이라는 학문의 최대 매력이라고 할 수 있을 것입니다. 대각선 논법은 나중에 [앨런 튜링](https://kenji.blog/ko/p/turing/)(Alan Turing)의 [정지 문제](/ko/p/halting-problem/)나 [괴델의 불완전성 정리](https://kenji.blog/ko/p/godels-incompleteness-theorems/) 증명 등 컴퓨터 과학이나 수리 논리학의 근간을 이루는 이론에도 응용되게 됩니다.

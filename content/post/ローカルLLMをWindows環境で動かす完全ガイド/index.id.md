@@ -21,7 +21,7 @@ Artikel ini memberikan panduan lengkap untuk membangun, mengoperasikan, dan meng
 
 Tren utama yang membentuk ekosistem LLM lokal saat ini adalah sebagai berikut:
 
-1. **Adopsi Penuh Format GGUF**: GGUF (GPT-Generated Unified Format), yang mengintegrasikan metadata dan tensor ke dalam satu file, telah sepenuhnya menjadi standar de facto. Ini memungkinkan eksekusi di lingkungan mana pun hanya dengan mengunduh satu file dari Hugging Face.
+1. **Adopsi Penuh Format [GGUF](/id/p/llama-cpp-quantization-gguf/)**: [GGUF](/id/p/llama-cpp-quantization-gguf/) (GPT-Generated Unified Format), yang mengintegrasikan metadata dan tensor ke dalam satu file, telah sepenuhnya menjadi standar de facto. Ini memungkinkan eksekusi di lingkungan mana pun hanya dengan mengunduh satu file dari Hugging Face.
 2. **Demokratisasi Arsitektur MoE (Mixture of Experts)**: Banyak model MoE berskala kecil namun berkinerja tinggi telah dirilis. Dengan hanya mengaktifkan beberapa "ahli" selama inferensi, ini mencapai kinerja yang sebanding dengan model raksasa sambil menekan beban komputasi PC konsumen.
 3. **Abstraksi dan Optimasi Lanjutan dari Mesin Inferensi**: Alat seperti Ollama, LM Studio, dan AnythingLLM telah disempurnakan, sehingga pengguna tidak perlu lagi peduli dengan dependensi kompleks seperti instalasi driver CUDA. Selain itu, dengan dukungan asli Windows untuk FlashAttention 3, kecepatan inferensi meningkat secara dramatis.
 4. **Pemanfaatan NPU dan Kemunculan PC Windows Copilot+**: Bahkan pada laptop tanpa GPU, teknologi yang menggunakan NPU (Neural Processing Unit) bawaan untuk menjalankan LLM skala kecil (SLM: Small Language Models) dengan konsumsi daya rendah telah mencapai tahap praktis.
@@ -314,7 +314,7 @@ Ini adalah masalah umum dan solusinya.
 
 # 10. Kesimpulan dan Prospek Masa Depan
 
-Pada tahun 2026, membangun [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) lokal di lingkungan Windows tidak lagi menjadi hak istimewa eksklusif segelintir insinyur. Melalui standar de facto format GGUF, munculnya ekosistem yang disempurnakan seperti Ollama dan LM Studio, serta pengoptimalan perangkat keras termasuk FlashAttention, siapa pun kini dapat dengan mudah memperoleh lingkungan AI tingkat perusahaan (enterprise).
+Pada tahun 2026, membangun [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) lokal di lingkungan Windows tidak lagi menjadi hak istimewa eksklusif segelintir insinyur. Melalui standar de facto format [GGUF](/id/p/llama-cpp-quantization-gguf/), munculnya ekosistem yang disempurnakan seperti Ollama dan LM Studio, serta pengoptimalan perangkat keras termasuk FlashAttention, siapa pun kini dapat dengan mudah memperoleh lingkungan AI tingkat perusahaan (enterprise).
 
 Silakan manfaatkan poin-poin yang dijelaskan dalam artikel ini:
 

@@ -256,6 +256,6 @@ Calculando el número de puntos fijos (coloraciones donde los colores no cambian
 *   Usando el **[Lema de Burnside](https://kenji.blog/es/p/burnsides-lemma/)**, el número de patrones esencialmente diferentes se puede calcular mediante el procedimiento mecánico de "promediar el número de puntos fijos en cada operación".
 *   Este teorema se basa en una propiedad profunda de la teoría de grupos llamada el Teorema de órbita-estabilizador.
 
-El [Lema de Burnside](https://kenji.blog/es/p/burnsides-lemma/) es un teorema muy práctico aplicado en una amplia gama de campos, como la enumeración de isómeros moleculares en química, la determinación del isomorfismo de grafos en la teoría de grafos e incluso la mecánica estadística en física.
+El [Lema de Burnside](https://kenji.blog/es/p/burnsides-lemma/) es un teorema muy práctico aplicado en una amplia gama de campos, como la enumeración de isómeros moleculares en química, la determinación del isomorfismo de grafos en la [teoría de grafos](/es/p/graph-theory-dijkstra-a-star/) e incluso la mecánica estadística en física.
 
 A través de los conceptos básicos introducidos esta vez, esperamos que haya podido vislumbrar cómo el campo de las matemáticas llamado "Teoría de Grupos", que tiende a parecer abstracto, puede resolver brillantemente problemas concretos del mundo real.

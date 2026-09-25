@@ -9,7 +9,7 @@ slug: "biography-georg-wilhelm-friedrich-hegel"
 description: "In der Geschichte der abendländischen Philosophie ist der Denker, der den Höhepunkt des deutschen Idealismus des 19."
 ---
 
-In der Geschichte der abendländischen Philosophie ist der Denker, der den Höhepunkt des deutschen Idealismus des 19. Jahrhunderts erreichte, beginnend mit Immanuel Kant, Georg Wilhelm Friedrich Hegel (1770–1831). Sein schwer verständliches und grandioses Gedankensystem, das sich auf die „Dialektik“ und den „absoluten Geist“ konzentriert, übte nicht nur zu seiner Zeit einen enormen Einfluss aus, sondern auch auf Karl Marx, den Existenzialismus und bis in die moderne Politik- und Geschichtswissenschaft hinein. In diesem Artikel werden wir Hegels Leben nachzeichnen und tief in die Essenz seiner Philosophie und deren Auswirkungen auf spätere Generationen eintauchen.
+In der Geschichte der abendländischen Philosophie ist der Denker, der den Höhepunkt des deutschen Idealismus des 19. Jahrhunderts erreichte, beginnend mit [Immanuel Kant](/de/p/biography-immanuel-kant/), Georg Wilhelm Friedrich Hegel (1770–1831). Sein schwer verständliches und grandioses Gedankensystem, das sich auf die „Dialektik“ und den „absoluten Geist“ konzentriert, übte nicht nur zu seiner Zeit einen enormen Einfluss aus, sondern auch auf [Karl Marx](/de/p/biography-karl-marx/), den Existenzialismus und bis in die moderne Politik- und Geschichtswissenschaft hinein. In diesem Artikel werden wir Hegels Leben nachzeichnen und tief in die Essenz seiner Philosophie und deren Auswirkungen auf spätere Generationen eintauchen.
 
 ## Der Weg vom Musterschüler des Seminars zum großen Philosophen
 
@@ -43,7 +43,7 @@ Im Jahr 1831, infiziert durch die in Berlin wütende Cholera (oder möglicherwei
 
 Die Hegelsche Schule spaltete sich in die „Althegelianer“ (Hegelsche Rechte), die sein System konservativ auslegten und den preußischen Staat bejahten, und die „Junghegelianer“ (Hegelsche Linke), die die Logik der dialektischen Entwicklung radikal interpretierten und den bestehenden Staat sowie die Religion kritisierten.
 
-Insbesondere der Einfluss der letzteren bewegte die Geschichte stark. Über die Religionskritik von Ludwig Feuerbach traten Karl Marx und Friedrich Engels auf den Plan. Marx kritisierte Hegels idealistische Dialektik als „auf dem Kopf stehend“, übernahm jedoch die Logik ihrer Entwicklung und entwickelte sie zum „Historischen Materialismus“ weiter. Mit anderen Worten, er glaubte, dass es nicht der „Geist“ ist, der die Geschichte bewegt, sondern die Widersprüche in der materiellen „ökonomischen Basis“.
+Insbesondere der Einfluss der letzteren bewegte die Geschichte stark. Über die Religionskritik von Ludwig Feuerbach traten [Karl Marx](/de/p/biography-karl-marx/) und Friedrich Engels auf den Plan. Marx kritisierte Hegels idealistische Dialektik als „auf dem Kopf stehend“, übernahm jedoch die Logik ihrer Entwicklung und entwickelte sie zum „Historischen Materialismus“ weiter. Mit anderen Worten, er glaubte, dass es nicht der „Geist“ ist, der die Geschichte bewegt, sondern die Widersprüche in der materiellen „ökonomischen Basis“.
 
 ```mermaid
 graph TD

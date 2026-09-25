@@ -18,7 +18,7 @@ In diesem Artikel werden wir die Geschichte dieses endlosen Kampfes enträtseln 
 
 ## Kapitel 1: Der dreigeteilte Beginn und ihre jeweiligen Philosophien
 
-Die Geschichte der Betriebssysteme begann in den späten 1970er und 1980er Jahren, als sich Computer in etwas Persönliches verwandelten. Jedes OS wurde mit völlig unterschiedlichen Hintergründen und Philosophien geboren.
+[Die Geschichte der Betriebssysteme](/de/p/history-of-linux/) begann in den späten 1970er und 1980er Jahren, als sich Computer in etwas Persönliches verwandelten. Jedes OS wurde mit völlig unterschiedlichen Hintergründen und Philosophien geboren.
 
 ### 1.1 Mac: Der Knotenpunkt von Technologie und Kunst
 1984 stellte Apple den ersten Macintosh vor. Die von Steve Jobs vertretene Philosophie lautete: "Computer in die Hände aller Menschen". Während Computer damals üblicherweise über komplexe Befehlszeilen bedient wurden, machte der Mac die grafische Benutzeroberfläche (GUI) und die Maus populär.
@@ -54,7 +54,7 @@ In den 1990er und 2000er Jahren war der Kampf um Marktanteile bei Betriebssystem
 ### 2.1 Der Schock und die überwältigende Dominanz von Windows 95
 Das 1995 veröffentlichte Windows 95 löste ein gesellschaftliches Phänomen aus. Eine vollwertige GUI, Internetkonnektivität (später Internet Explorer) und Plug-and-Play vollendeten hier die Grundlage für moderne PCs. Der Erfolg von Windows 95 verschaffte Microsoft ein absolutes Monopol auf dem PC-Markt.
 
-Angesichts dieser überwältigenden Dominanz geriet Apple vorübergehend in eine schwere Finanzkrise. Mit der Rückkehr von Steve Jobs im Jahr 1997 und dem anschließenden Erfolg des "iMac" erlebte Apple jedoch ein Comeback in seinem eigenen Nischenmarkt, der Wert auf Design und Lifestyle legt.
+Angesichts dieser überwältigenden Dominanz geriet Apple vorübergehend in eine schwere Finanzkrise. Mit der Rückkehr von [Steve Jobs](/de/p/biography-steve-jobs/) im Jahr 1997 und dem anschließenden Erfolg des "iMac" erlebte Apple jedoch ein Comeback in seinem eigenen Nischenmarkt, der Wert auf Design und Lifestyle legt.
 
 ### 2.2 Der Browserkrieg und der Aufstieg des Webs
 Das Hauptschlachtfeld des OS-Krieges verlagerte sich schließlich in den Internetraum. Der erste Browserkrieg zwischen Netscape und dem Internet Explorer definierte den Wert des OS als Plattform neu. Microsoft erlangte durch die Bündelung des IE mit Windows einen Vorteil, was jedoch auch zu Kartellrechtsklagen führte.

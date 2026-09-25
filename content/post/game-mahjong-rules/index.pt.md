@@ -16,7 +16,7 @@ tags:
 
 ## 1. Um jogo de quebra-cabeça competitivo para 4 jogadores usando 136 peças
 
-O Mahjong é um jogo de mesa originário da China que evoluiu de forma única no Japão como "Mahjong Riichi (立直)". Nos últimos anos, tem se profissionalizado cada vez mais, através de competições como a M-League, e seu aspecto como um esporte mental altamente sofisticado tem sido reavaliado.
+O Mahjong é um jogo de mesa originário da China que evoluiu de forma única no Japão como "Mahjong Riichi (立直)". Nos últimos anos, tem se profissionalizado cada vez mais, através de competições como a M-League, e seu aspecto como um [esporte mental](/pt/p/game-poker-rules/) altamente sofisticado tem sido reavaliado.
 
 À primeira vista, pode parecer difícil por ter muitas peças (tiles) com caracteres chineses e símbolos, mas em sua essência é um **jogo de quebra-cabeça de combinação de conjuntos**, assim como o "Poker" ou o "Rummy" de cartas.
 As regras básicas são muito simples: "**Aquele que combinar 14 peças e formar o padrão pré-determinado (a mão vencedora) mais rápido que os outros vence (ganha pontos)**".

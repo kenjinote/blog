@@ -27,7 +27,7 @@ Neste artigo, exploraremos em detalhes o desenvolvimento histórico e teórico a
 
 ### 2.1 O Desafio do Problema de Decisão (Entscheidungsproblem)
 
-Em 1928, o matemático David Hilbert propôs o "problema de decisão" (Entscheidungsproblem). A questão era: "Dado um problema matemático, existe um algoritmo que determina mecanicamente se ele é verdadeiro ou falso?"
+Em 1928, o matemático [David Hilbert](/pt/p/hilbert/) propôs o "problema de decisão" (Entscheidungsproblem). A questão era: "Dado um problema matemático, existe um algoritmo que determina mecanicamente se ele é verdadeiro ou falso?"
 
 Para responder a essa pergunta, primeiro era necessário definir estritamente o que significava ser "computável" ou "ter um algoritmo". Em 1936, dois gênios deram respostas a esse problema de forma independente. Um deles foi Alan Turing, e o outro foi seu orientador, Alonzo Church.
 
@@ -169,7 +169,7 @@ O Lisp tinha tipagem dinâmica e não era o cálculo lambda teórico em si, mas 
 
 ## 7. Cálculo [Lambda](https://kenji.blog/pt/p/serverless-architecture-aws-lambda-cold-start/) Tipado e o Isomorfismo de Curry-Howard
 
-Embora o cálculo lambda puro (cálculo lambda não tipado) seja poderoso, ele permitia passar qualquer argumento para qualquer função, o que poderia levar a paradoxos devido à autoaplicação (ex: Paradoxo de Russell). Para evitar isso, Church introduziu mais tarde o **Cálculo Lambda Simplesmente Tipado** (Simply Typed Lambda Calculus).
+Embora o cálculo lambda puro (cálculo lambda não tipado) seja poderoso, ele permitia passar qualquer argumento para qualquer função, o que poderia levar a paradoxos devido à autoaplicação (ex: [Paradoxo de Russell](/pt/p/russells-paradox/)). Para evitar isso, Church introduziu mais tarde o **Cálculo Lambda Simplesmente Tipado** (Simply Typed Lambda Calculus).
 
 ### 7.1 Isomorfismo de Curry-Howard
 

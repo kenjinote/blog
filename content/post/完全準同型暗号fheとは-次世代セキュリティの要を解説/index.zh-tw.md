@@ -230,13 +230,13 @@ print(f"解密後的乘法結果: {res_mul}")
 
 雖然 FHE 在理論上提供了完美的安全性，但實用化上的最大課題在於 **「效能的負擔（Overhead）」** 。
 
-1.  **計算的負擔**: 與在明文下計算相比，密文下的計算在 CPU 上會慢了數千到數萬倍。多項式的乘法或自舉需要進行龐大的 FFT（快速傅立葉轉換）或 NTT（數論轉換）計算。
+1.  **計算的負擔**: 與在明文下計算相比，密文下的計算在 CPU 上會慢了數千到數萬倍。多項式的乘法或自舉需要進行龐大的 [FFT](/zh-tw/p/fast-fourier-transform-algorithm/)（快速傅立葉轉換）或 NTT（數論轉換）計算。
 2.  **資料容量膨脹 (Ciphertext Expansion)**: 只有幾個位元組的明文，在加密後可能會變成幾十 MB。這會對記憶體頻寬與網路頻寬造成巨大的壓力。
 
 ### 透過硬體解決的方法
 為克服這種效能負擔，世界各地正積極開發專門針對 FHE 的硬體加速器（支援 ASIC、FPGA、GPU）。
 
-*   **GPU 加速**: 使用 NVIDIA 等強大的 GPU，以平行化處理 NTT 運算或自舉的技術正持續發展，已有報告指出比軟體實作快上數十倍（例如：100x.ai、Zama 的 TFHE-rs CUDA backend）。
+*   **GPU 加速**: 使用 [NVIDIA](/zh-tw/p/history-of-nvidia/) 等強大的 GPU，以平行化處理 NTT 運算或自舉的技術正持續發展，已有報告指出比軟體實作快上數十倍（例如：100x.ai、Zama 的 TFHE-rs CUDA backend）。
 *   **DARPA DPRIVE 專案**: 美國國防高等研究計劃署（DARPA）正在推動名為「DPRIVE (Data Protection in Virtual Environments)」的專屬硬體開發專案，目標是將 FHE 的計算速度提升至與明文處理相同的等級（負擔在 10 倍以內），參與者包括 Intel、Microsoft、Intellectual Ventures 等。
 *   **FPU (FHE Processing Unit) 的出現**: Cornami 與 Optalysys 等新創公司，已經開始著手開發運用光學運算或特殊矽架構的 FHE 專用晶片。
 
@@ -261,7 +261,7 @@ print(f"解密後的乘法結果: {res_mul}")
 
 就像 1970 年代發明了公開金鑰加密（[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)）後，網際網路上的安全通訊（如 HTTPS 等）才得以實現一樣，Craig Gentry 發明 FHE 的創舉，同樣是密碼學歷史上最重要的里程碑之一。
 
-現在，完全同態加密（FHE）已走出實驗室的理論階段，並進入 Microsoft、IBM、Intel、Google 以及許多新創公司為了商業化而激烈競爭的階段。儘管計算成本與資料容量的課題依然存在，但隨著演算法的精進與硬體加速器的發展，其效能正以超越摩爾定律的速度持續提升中。
+現在，完全同態加密（FHE）已走出實驗室的理論階段，並進入 Microsoft、IBM、Intel、Google 以及許多新創公司為了商業化而激烈競爭的階段。儘管計算成本與資料容量的課題依然存在，但隨著演算法的精進與硬體加速器的發展，其效能正以超越[摩爾定律](/zh-tw/p/business-moores-law/)的速度持續提升中。
 
 幾年之後，「將資料加密並維持該狀態進行計算」將不再是什麼特別的事情，而是會成為雲端服務中保護資料的標準最佳實踐。FHE 正是在數據驅動的社會中，能夠實現 **極致隱私與資料活用兼得** 的次世代資安核心技術。
 

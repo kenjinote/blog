@@ -18,7 +18,7 @@ Saat ini, kriptografi yang paling banyak digunakan di dunia adalah "Sandi [RSA](
 Inti dari pertahanan Sandi RSA sangatlah sederhana. Ia memanfaatkan sifat matematika bahwa **"faktorisasi prima dari angka yang sangat besar tidak dapat dipecahkan bahkan oleh komputer sekalipun"** .
 Sebagai contoh, untuk "15", kita langsung tahu bahwa itu adalah "3 × 5", tetapi saat angkanya menjadi "270 digit", menggabungkan seluruh superkomputer di dunia pun akan memakan waktu ratusan juta tahun untuk memecahkannya.
 
-Namun, para matematikawan tidak tinggal diam. Untuk menembus pertahanan sandi yang tak tertembus ini, umat manusia telah menciptakan sebuah algoritma (prosedur perhitungan) ajaib yang disebut **"General Number Field Sieve (GNFS)"** .
+Namun, para matematikawan tidak tinggal diam. Untuk menembus pertahanan sandi yang tak tertembus ini, umat manusia telah menciptakan sebuah algoritma (prosedur perhitungan) ajaib yang disebut **"[General Number Field Sieve](/id/p/beyond-gnfs-integer-factorization-algorithms/) (GNFS)"** .
 
 Dalam artikel ini, tanpa menggunakan istilah teknis sama sekali, hanya dengan pengetahuan **matematika sekolah menengah pertama (faktorisasi prima, aljabar, faktor persekutuan terbesar)** , kami akan menjelaskan langkah demi langkah secara lengkap bagaimana "algoritma terkuat umat manusia" ini memecahkan sandi!
 
@@ -51,7 +51,7 @@ Dengan asumsi hanya bilangan prima $p$ yang masuk ke ruangan $(X - Y)$, mari kit
 * Isi $N$ = $p \times q$
   Satu-satunya komponen yang sama adalah **"$p$"** !
 
-Artinya, saat kita menghitung faktor persekutuan terbesar, bilangan prima rahasia $p$ akan langsung terungkap, dan sandi akan berhasil dipecahkan sepenuhnya. (*Faktor persekutuan terbesar bisa dihitung dalam sekejap bahkan menggunakan ponsel dengan "[Algoritma Euclidean](https://kenji.blog/p/euclidean-algorithm/)"*)
+Artinya, saat kita menghitung faktor persekutuan terbesar, bilangan prima rahasia $p$ akan langsung terungkap, dan sandi akan berhasil dipecahkan sepenuhnya. (*Faktor persekutuan terbesar bisa dihitung dalam sekejap bahkan menggunakan ponsel dengan "[Algoritma Euclidean](https://kenji.blog/id/p/euclidean-algorithm/)"*)
 
 **[Kolom Singkat: Mengapa Pangkat Dua? Pangkat Tiga atau Dikali Dua Tidak Bisa?]** 
 > Jika "$2X - 2Y$", hasilnya adalah $2(X - Y)$, sehingga hanya ada satu ruangan dan bilangan prima tidak dapat dipisahkan. Jika "$X^3 - Y^3$", ukuran ruangan akan tidak seimbang, sehingga perhitungan menjadi sia-sia dan berat. Untuk memisahkan dua bilangan prima, membaginya dengan indah menjadi dua ruangan "pangkat dua" adalah yang paling efisien.
@@ -100,7 +100,7 @@ Jika angka sandi $N$ berukuran hingga sekitar "100 digit", metode ini (disebut Q
 
 Jika angkanya terlalu besar, "angka yang hanya terdiri dari bilangan prima kecil (serbuk emas)" akan berhenti muncul. Ini menjadi lebih sulit daripada mencari lensa kontak di padang pasir, dan kita tidak bisa mengumpulkan kartu sama sekali untuk memecahkan teka-teki.
 
-Di sinilah akhirnya senjata pamungkas umat manusia, **"General Number Field Sieve (GNFS)"** , muncul.
+Di sinilah akhirnya senjata pamungkas umat manusia, **"[General Number Field Sieve](/id/p/beyond-gnfs-integer-factorization-algorithms/) (GNFS)"** , muncul.
 
 ---
 

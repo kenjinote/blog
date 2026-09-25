@@ -63,7 +63,7 @@ graph TD
 
 ## 3. 莫德爾定理與秩（Rank）
 
-1922年，[路易斯·莫德爾](https://kenji.blog/zh-tw/p/mordell/)（Louis Mordell）證明了關於有理點群 $E(\mathbb{Q})$ 結構的決定性定理。後來安德烈·韋伊（[André Weil](https://kenji.blog/zh-tw/p/weil/)）將其推廣到更一般的代數體和阿貝爾簇，被稱為莫德爾-韋伊定理。
+1922年，[路易斯·莫德爾](https://kenji.blog/zh-tw/p/mordell/)（Louis Mordell）證明了關於有理點群 $E(\mathbb{Q})$ 結構的決定性定理。後來[安德烈·韋伊](/zh-tw/p/weil/)（[André Weil](https://kenji.blog/zh-tw/p/weil/)）將其推廣到更一般的代數體和阿貝爾簇，被稱為莫德爾-韋伊定理。
 
 ### 3.1. 莫德爾定理 (Mordell's Theorem)
 
@@ -183,7 +183,7 @@ $$
 
 出現在這個公式中的不變量如下：
 1. **$\Omega_E$ (實週期)** : 由橢圓曲線在實數體上的積分 $\int_{E(\mathbb{R})} \frac{dx}{|2y + a_1x + a_3|}$ 決定的超越數。
-2. **$\mathrm{Reg}(E)$ (調節子)** : 對於秩為 $r$ 的無限階有理點生成元 $P_1, \dots, P_r$，將內龍-泰特高度配對（Néron-Tate height pairing） $\langle P_i, P_j \rangle$ 排列而成的 $r \times r$ 矩陣的行列式。這是衡量點的「大小」的指標。
+2. **$\mathrm{Reg}(E)$ (調節子)** : 對於秩為 $r$ 的無限階有理點生成元 $P_1, \dots, P_r$，將內龍-泰特高度配對（Néron-Tate height pairing） $\langle P_i, P_j \rangle$ 排列而成的 $r \times r$ 矩陣的[行列式](/zh-tw/p/geometric-meaning-of-determinant/)。這是衡量點的「大小」的指標。
 3. **$|E(\mathbb{Q})_{\text{tors}}|$** : 扭子群的階。
 4. **$c_p$ (玉河數)** : 針對具有壞還原的質數 $p$ 的局部修正係數。由局部體的伽羅瓦群作用計算得出。
 5. **$\text{Sha}(E)$ (泰特-沙法列維奇群，$\text{\textcyrillic{Sh}}$)** : 由於這是一個極為重要的對象，稍後將詳細說明。

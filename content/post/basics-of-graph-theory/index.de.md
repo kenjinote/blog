@@ -17,13 +17,13 @@ tags:
 
 In der modernen Gesellschaft sind wir ständig mit irgendetwas verbunden. Sei es die Kommunikation zwischen Computern über das Internet, komplexe menschliche Beziehungen in sozialen Netzwerken (SNS), riesige Straßen- und Eisenbahnnetze, die Städte verbinden, globale Lieferketten für die Logistik oder die unzähligen neuronalen Verbindungen in unseren eigenen Gehirnen – es ist keine Übertreibung zu sagen, dass die Welt aus unzähligen Netzwerken besteht.
 
-Einen leistungsstarken Rahmen zu bieten, um diese Netzwerke, die auf den ersten Blick hochkomplex und sogar chaotisch erscheinen, einfach und mathematisch streng darzustellen und zu analysieren, ist die Aufgabe der **Graphentheorie**. Durch die Anwendung der Graphentheorie können wir die verborgenen Strukturen und Eigenschaften in komplexen Systemen entschlüsseln, optimale Kommunikationswege finden und die Anfälligkeit ganzer Netzwerke bewerten.
+Einen leistungsstarken Rahmen zu bieten, um diese Netzwerke, die auf den ersten Blick hochkomplex und sogar chaotisch erscheinen, einfach und mathematisch streng darzustellen und zu analysieren, ist die Aufgabe der **[Graphentheorie](/de/p/graph-theory-dijkstra-a-star/)**. Durch die Anwendung der [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) können wir die verborgenen Strukturen und Eigenschaften in komplexen Systemen entschlüsseln, optimale Kommunikationswege finden und die Anfälligkeit ganzer Netzwerke bewerten.
 
-Dieser Artikel erklärt die Graphentheorie umfassend und systematisch, beginnend bei ihren historischen Ursprüngen, über grundlegende mathematische Definitionen und Datenstrukturen für die Computerprogrammierung bis hin zur Vorstellung repräsentativer Algorithmen, die das Fundament der modernen Technologie bilden.
+Dieser Artikel erklärt die [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) umfassend und systematisch, beginnend bei ihren historischen Ursprüngen, über grundlegende mathematische Definitionen und Datenstrukturen für die Computerprogrammierung bis hin zur Vorstellung repräsentativer Algorithmen, die das Fundament der modernen Technologie bilden.
 
 ## 2. Die Geburt der Graphentheorie: [Die sieben Brücken von Königsberg](https://kenji.blog/de/p/seven-bridges-of-konigsberg/)
 
-Die Geschichte der Graphentheorie reicht bis ins 18. Jahrhundert zurück. Im Jahr 1736 löste der brillante Schweizer Mathematiker [Leonhard Euler](https://kenji.blog/de/p/euler/) auf elegante Weise ein berühmtes mathematisches Rätsel und markierte damit den Beginn dieses Bereichs. Dieses Rätsel ist als die „Sieben Brücken von Königsberg“ bekannt.
+Die Geschichte der [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) reicht bis ins 18. Jahrhundert zurück. Im Jahr 1736 löste der brillante Schweizer Mathematiker [Leonhard Euler](https://kenji.blog/de/p/euler/) auf elegante Weise ein berühmtes mathematisches Rätsel und markierte damit den Beginn dieses Bereichs. Dieses Rätsel ist als die „Sieben Brücken von Königsberg“ bekannt.
 
 In der schönen Stadt Königsberg im Königreich Preußen (heute Kaliningrad, Russland) floss der Fluss Pregel, in dessen Mitte sich zwei Inseln befanden, die durch insgesamt sieben Brücken mit den Flussufern verbunden waren. Unter den Bürgern wurde ein Spiel populär: „Ist es möglich, jede Brücke genau einmal zu überqueren und zum ursprünglichen Startpunkt zurückzukehren?“ Viele Menschen versuchten es, aber niemand war erfolgreich.
 
@@ -44,11 +44,11 @@ Euler erkannte, dass es, um einen Punkt zu „durchqueren“, immer ein Paar aus
 
 In dem abstrakten Graphen der Königsberger Brücken war die Anzahl der angeschlossenen Brücken an allen vier Landmassen (Punkten) „ungerade“ (entweder 3 oder 5). Daher kam man zu dem Schluss, dass es unmöglich ist, eine durchgehende Linie zu ziehen, die alle Brücken genau einmal überquert.
 
-Diese Entdeckung Eulers war der genaue Moment, in dem die **Graphentheorie** geboren wurde. Indem er das komplexe physische Terrain verwarf und sich ausschließlich auf die Verbindungsbeziehungen (Topologie) von Punkten und Linien konzentrierte, eröffnete er ein völlig neues Teilgebiet der Mathematik.
+Diese Entdeckung Eulers war der genaue Moment, in dem die **[Graphentheorie](/de/p/graph-theory-dijkstra-a-star/)** geboren wurde. Indem er das komplexe physische Terrain verwarf und sich ausschließlich auf die Verbindungsbeziehungen (Topologie) von Punkten und Linien konzentrierte, eröffnete er ein völlig neues Teilgebiet der Mathematik.
 
 ## 3. Grundkonzepte und mathematische Definitionen der Graphentheorie
 
-In der Graphentheorie bezieht sich ein „[Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)“ nicht auf Methoden zur Visualisierung statistischer Daten wie Liniendiagramme oder Kreisdiagramme. Es bezieht sich auf eine mathematische Struktur, die eine Menge von Objekten und die Beziehungen zwischen ihnen darstellt.
+In der [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) bezieht sich ein „[Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)“ nicht auf Methoden zur Visualisierung statistischer Daten wie Liniendiagramme oder Kreisdiagramme. Es bezieht sich auf eine mathematische Struktur, die eine Menge von Objekten und die Beziehungen zwischen ihnen darstellt.
 
 ### 3.1. Grundstruktur eines Graphen: Knoten und Kanten
 
@@ -105,7 +105,7 @@ Wenn außerdem zwischen zwei beliebigen Knoten in einem Graphen immer ein Weg ex
 
 ## 4. Datenstrukturen zur Handhabung von Graphen in Computern
 
-Um die mathematischen Konzepte der Graphentheorie als Programme zu implementieren und sie von Computern schnell berechnen zu lassen, ist es notwendig, Graphen mithilfe geeigneter Datenstrukturen im Speicher darzustellen. In der Praxis werden hauptsächlich zwei Methoden verwendet: „Adjazenzmatrix“ und „Adjazenzliste“.
+Um die mathematischen Konzepte der [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) als Programme zu implementieren und sie von Computern schnell berechnen zu lassen, ist es notwendig, Graphen mithilfe geeigneter Datenstrukturen im Speicher darzustellen. In der Praxis werden hauptsächlich zwei Methoden verwendet: „Adjazenzmatrix“ und „Adjazenzliste“.
 
 ### 4.1. Adjazenzmatrix (Adjacency Matrix)
 
@@ -120,7 +120,7 @@ A_{i,j} = \begin{cases}
 \end{cases}
 $$
 
-*   **Vorteile**: Es ist möglich, in $\mathcal{O}(1)$ (konstanter Zeit) sofort festzustellen, ob eine Kante zwischen zwei beliebigen Knoten existiert. Sie ist außerdem direkt mit der algebraischen Graphenanalyse (wie der spektralen Graphentheorie) verbunden, die Matrixmultiplikation verwendet.
+*   **Vorteile**: Es ist möglich, in $\mathcal{O}(1)$ (konstanter Zeit) sofort festzustellen, ob eine Kante zwischen zwei beliebigen Knoten existiert. Sie ist außerdem direkt mit der algebraischen Graphenanalyse (wie der spektralen [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/)) verbunden, die Matrixmultiplikation verwendet.
 *   **Nachteile**: Der Speicherverbrauch beträgt $\mathcal{O}(N^2)$ für die Anzahl der Knoten $N$, was den Speicher bei riesigen Graphen erschöpft. Insbesondere bei **Dünn besetzten Graphen (Sparse Graphs)**, bei denen die Anzahl der Kanten im Vergleich zum Quadrat der Anzahl der Knoten sehr klein ist, wird der größte Teil der Matrix $0$, was sie höchst ineffizient macht.
 
 ### 4.2. Adjazenzliste (Adjacency List)
@@ -260,7 +260,7 @@ Jede Kante (Rohr oder Kabel), aus der das Netzwerk besteht, hat eine streng defi
 
 ## 6. Bipartite Graphen und Matching-Probleme
 
-Eine Sonderstellung innerhalb der Graphentheorie nimmt der **Bipartite Graph** ein. Ein bipartiter Graph ist ein Graph, bei dem, wenn alle Knoten in zwei Gruppen (z. B. Gruppe $U$ und Gruppe $V$) unterteilt werden, jede Kante immer einen Knoten in $U$ und einen Knoten in $V$ verbindet und es absolut keine Kanten gibt, die Knoten innerhalb derselben Gruppe verbinden.
+Eine Sonderstellung innerhalb der [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) nimmt der **Bipartite Graph** ein. Ein bipartiter Graph ist ein Graph, bei dem, wenn alle Knoten in zwei Gruppen (z. B. Gruppe $U$ und Gruppe $V$) unterteilt werden, jede Kante immer einen Knoten in $U$ und einen Knoten in $V$ verbindet und es absolut keine Kanten gibt, die Knoten innerhalb derselben Gruppe verbinden.
 
 Bipartite Graphen eignen sich ideal zur Modellierung von Beziehungen zwischen zwei Mengen mit unterschiedlichen Eigenschaften, wie „Arbeitssuchende“ und „Personalvermittler“, „Studenten“ und „Labore“ oder „Taxis“ und „Passagiere“.
 
@@ -268,7 +268,7 @@ Eines der wichtigsten Probleme in bipartiten Graphen ist das **Matching-Problem*
 
 ## 7. Anwendungen der Graphentheorie in der modernen Gesellschaft
 
-Die Graphentheorie ist nicht auf abstrakte Mathematik an einer Tafel beschränkt; sie wird in den unterschiedlichsten Bereichen als Infrastrukturtechnologie eingesetzt, die unser tägliches Leben grundlegend stützt.
+Die [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) ist nicht auf abstrakte Mathematik an einer Tafel beschränkt; sie wird in den unterschiedlichsten Bereichen als Infrastrukturtechnologie eingesetzt, die unser tägliches Leben grundlegend stützt.
 
 ### 7.1. Suchmaschinen und der PageRank-Algorithmus
 
@@ -277,11 +277,11 @@ Der Suchmaschinenmechanismus von Google, der unzählige über die ganze Welt ver
 *   **Knoten**: Einzelne Webseiten im Internet
 *   **Kante**: Hyperlinks, die von Seite zu Seite springen
 
-Die Wurzel von PageRank ist die rekursive Bewertungsidee, dass „eine Seite, die von vielen qualitativ hochwertigen Webseiten verlinkt wird, mit hoher Wahrscheinlichkeit selbst eine qualitativ hochwertige Seite ist“. Indem sie die Linkstruktur als massive Adjazenzmatrix darstellten und den primären Eigenvektor dieser Matrix berechneten (eine Anwendung der spektralen Graphentheorie), gelang es ihnen, die relative Bedeutung von Internetinformationen aus Hunderten von Milliarden Seiten mathematisch und objektiv zu berechnen.
+Die Wurzel von PageRank ist die rekursive Bewertungsidee, dass „eine Seite, die von vielen qualitativ hochwertigen Webseiten verlinkt wird, mit hoher Wahrscheinlichkeit selbst eine qualitativ hochwertige Seite ist“. Indem sie die Linkstruktur als massive Adjazenzmatrix darstellten und den primären Eigenvektor dieser Matrix berechneten (eine Anwendung der spektralen [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/)), gelang es ihnen, die relative Bedeutung von Internetinformationen aus Hunderten von Milliarden Seiten mathematisch und objektiv zu berechnen.
 
 ### 7.2. Strukturanalyse sozialer Netzwerke
 
-SNS-Plattformen wie Twitter, Facebook, LinkedIn und Instagram bilden massive **Social Graphs**, die Verbindungen zwischen Menschen oder Menschen und Inhalten ausdrücken. Durch die Anwendung der Graphentheorie kann die Struktur massiver Gemeinschaften präzise analysiert werden.
+SNS-Plattformen wie Twitter, Facebook, LinkedIn und Instagram bilden massive **Social Graphs**, die Verbindungen zwischen Menschen oder Menschen und Inhalten ausdrücken. Durch die Anwendung der [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) kann die Struktur massiver Gemeinschaften präzise analysiert werden.
 
 Um beispielsweise die Frage „Wer ist die zentrale Figur (Influencer) mit dem größten Einfluss im gesamten Netzwerk?“ zu beantworten, wird das Konzept der **Zentralität (Centrality)** verwendet. Durch die Berechnung verschiedener Metriken wie der „Gradzentralität“ basierend auf der einfachen Anzahl von Kanten, die mit einem Knoten verbunden sind, der „Betweenness-Zentralität“, die misst, wie häufig jemand auf den kürzesten Wegen im Netzwerk erscheint, und der „Closeness-Zentralität“, die die Leichtigkeit des Zugangs zu allen anderen Knoten bewertet, werden Aktivitäten wie Influencer-Identifizierung, Vorhersage von Informationsverbreitungswegen und die Erkennung von Echokammer-Phänomenen durchgeführt.
 
@@ -295,8 +295,8 @@ GNNs durchbrachen diese Barriere, indem sie gleichzeitig die Merkmalsgrößeninf
 
 ## 8. Fazit und Zukunftsaussichten
 
-In diesem Artikel haben wir skizziert, wie sich die **Graphentheorie**, die aus einem einfachen Rätsel im Königsberg des 18. Jahrhunderts hervorgegangen ist, zum „ultimativen Werkzeug“ zur Entschlüsselung der extrem komplexen Netzwerke der modernen Gesellschaft entwickelt hat.
+In diesem Artikel haben wir skizziert, wie sich die **[Graphentheorie](/de/p/graph-theory-dijkstra-a-star/)**, die aus einem einfachen Rätsel im Königsberg des 18. Jahrhunderts hervorgegangen ist, zum „ultimativen Werkzeug“ zur Entschlüsselung der extrem komplexen Netzwerke der modernen Gesellschaft entwickelt hat.
 
-Obwohl Graphen nur aus den einfachsten und abstraktesten Elementen bestehen, die möglich sind: Punkten (Knoten) und Linien (Kanten), ist die Welt der mathematischen Theorien und Berechnungsalgorithmen, die auf sie angewendet werden, so tief wie das Universum und birgt eine überwältigende Macht. Für Softwareentwickler, Datenwissenschaftler oder jeden, der sich für komplexe Systeme interessiert, werden systematische Kenntnisse der Graphentheorie die Fähigkeit zur abstrakten Problemlösung und das logische Denken zur Ableitung optimaler Lösungen exponentiell verbessern.
+Obwohl Graphen nur aus den einfachsten und abstraktesten Elementen bestehen, die möglich sind: Punkten (Knoten) und Linien (Kanten), ist die Welt der mathematischen Theorien und Berechnungsalgorithmen, die auf sie angewendet werden, so tief wie das Universum und birgt eine überwältigende Macht. Für Softwareentwickler, Datenwissenschaftler oder jeden, der sich für komplexe Systeme interessiert, werden systematische Kenntnisse der [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) die Fähigkeit zur abstrakten Problemlösung und das logische Denken zur Ableitung optimaler Lösungen exponentiell verbessern.
 
-Wenn Sie das Programmieren lernen, nutzen Sie diesen Artikel bitte als Sprungbrett und versuchen Sie, Algorithmen wie [Dijkstra](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/) oder die Breitensuche tatsächlich auf Ihrem eigenen Computer zu programmieren und auszuführen. Wenn Sie erleben, wie unsichtbare, komplexe Netzwerke durch den von Ihnen geschriebenen Code anschaulich entwirrt werden, werden Sie die wahre Schönheit und Faszination der Graphentheorie wirklich erkennen. Die Welt ist voller schönerer und berechenbarerer Graphen, als Sie vielleicht denken.
+Wenn Sie das Programmieren lernen, nutzen Sie diesen Artikel bitte als Sprungbrett und versuchen Sie, Algorithmen wie [Dijkstra](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/) oder die Breitensuche tatsächlich auf Ihrem eigenen Computer zu programmieren und auszuführen. Wenn Sie erleben, wie unsichtbare, komplexe Netzwerke durch den von Ihnen geschriebenen Code anschaulich entwirrt werden, werden Sie die wahre Schönheit und Faszination der [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) wirklich erkennen. Die Welt ist voller schönerer und berechenbarerer Graphen, als Sie vielleicht denken.

@@ -185,7 +185,7 @@ Les compilateurs modernes, les outils d'analyse de code statique ou les logiciel
 
 - **Heuristiques** : Abandon de la certitude à 100 %, on déduit à partir de schémas fréquents qu'il y a « probablement un bug » ou qu'il s'agit « probablement d'un comportement malveillant ».
 - **Langages restreints** : L'utilisation de langages non Turing-complet (où il est impossible d'écrire une boucle infinie) ou de systèmes de types pour garantir certaines sécurités.
-- **Dépassement de délai (Timeout)** : Si le calcul n'est pas terminé après un certain temps, le traitement est forcé de s'interrompre (Timeout).
+- **[Dépassement](/fr/p/hegel%E3%81%AEdialectique/) de délai (Timeout)** : Si le calcul n'est pas terminé après un certain temps, le traitement est forcé de s'interrompre (Timeout).
 
 ## Résumé
 

@@ -24,7 +24,7 @@ Sua criação da "Teoria dos Conjuntos" tornou-se a base de todos os campos da m
 
 [Georg Cantor](https://kenji.blog/pt/p/cantor/) nasceu em 1845 em São Petersburgo, Rússia. Seu pai era um rico comerciante da Dinamarca e sua mãe uma musicista russa. Mostrando um talento extraordinário para a matemática desde tenra idade, ele acabou se mudando para a Alemanha e estudando matemática na Universidade de Berlim.
 
-Na Universidade de Berlim, ele foi guiado pelas principais figuras do mundo matemático da época, **[Karl Weierstrass](https://kenji.blog/pt/p/weierstrass/)** e **Leopold Kronecker**. [Kronecker](https://kenji.blog/pt/p/kronecker/), em particular, se tornaria mais tarde o maior oponente de Cantor.
+Na Universidade de Berlim, ele foi guiado pelas principais figuras do mundo matemático da época, **[Karl Weierstrass](https://kenji.blog/pt/p/weierstrass/)** e **[Leopold Kronecker](/pt/p/kronecker/)**. [Kronecker](https://kenji.blog/pt/p/kronecker/), em particular, se tornaria mais tarde o maior oponente de Cantor.
 
 ### A Busca pelo Infinito e o Conflito com [Kronecker](https://kenji.blog/pt/p/kronecker/)
 
@@ -72,7 +72,7 @@ Ainda mais surpreendente, Cantor provou que o conjunto dos números racionais (n
 
 ### [O Argumento de Diagonalização de Cantor](https://kenji.blog/pt/p/cantors-diagonal-argument/)
 
-Então, todos os conjuntos infinitos têm o mesmo tamanho que os números naturais? Cantor respondeu "Não" a esta pergunta. Ele provou que o conjunto dos números reais $\mathbb{R}$ tem uma cardinalidade "estritamente maior" do que o conjunto dos números naturais. O que foi usado para essa prova é o famoso **Argumento de diagonalização**.
+Então, todos os conjuntos infinitos têm o mesmo tamanho que os números naturais? Cantor respondeu "Não" a esta pergunta. Ele provou que o conjunto dos números reais $\mathbb{R}$ tem uma cardinalidade "estritamente maior" do que o conjunto dos números naturais. O que foi usado para essa prova é o famoso **Argumento de [diagonalização](/pt/p/diagonalization-and-jordan-normal-form/)**.
 
 Representando os números reais entre 0 e 1 como decimais infinitos, suponha que eles possam ter uma correspondência biunívoca com os números naturais.
 
@@ -111,9 +111,9 @@ graph TD
 
 ## A Hipótese do Contínuo
 
-Existe uma cardinalidade intermediária entre a cardinalidade dos números naturais $\aleph_0$ e a cardinalidade dos números reais $\mathfrak{c}$? Cantor levantou a hipótese de que "nenhuma cardinalidade intermediária existe". Esta é a **Hipótese do Contínuo (HC)**.
+Existe uma cardinalidade intermediária entre a cardinalidade dos números naturais $\aleph_0$ e a cardinalidade dos números reais $\mathfrak{c}$? Cantor levantou a hipótese de que "nenhuma cardinalidade intermediária existe". Esta é a **[Hipótese do Contínuo](/pt/p/continuum-hypothesis/) (HC)**.
 
-Cantor passou grande parte de seus últimos anos tentando provar essa hipótese, mas ele foi incapaz de resolvê-la. Mais tarde, por meio da pesquisa de [Kurt Gödel](https://kenji.blog/pt/p/godel/) e Paul Cohen, descobriu-se que a hipótese do contínuo é uma proposição independente que "não pode ser provada nem refutada" a partir dos axiomas padrão da teoria dos conjuntos (axiomas ZFC), dando mais uma vez um grande choque à comunidade matemática.
+Cantor passou grande parte de seus últimos anos tentando provar essa hipótese, mas ele foi incapaz de resolvê-la. Mais tarde, por meio da pesquisa de [Kurt Gödel](https://kenji.blog/pt/p/godel/) e Paul Cohen, descobriu-se que a [hipótese do contínuo](/pt/p/continuum-hypothesis/) é uma proposição independente que "não pode ser provada nem refutada" a partir dos axiomas padrão da teoria dos conjuntos (axiomas ZFC), dando mais uma vez um grande choque à comunidade matemática.
 
 ## Conclusão
 

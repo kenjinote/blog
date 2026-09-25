@@ -20,7 +20,7 @@ Après la guerre, il a participé à de nombreuses missions de vol dangereuses e
 
 ## Les années de gloire à la NASA : De Gemini à Apollo
 
-Sélectionné dans le deuxième groupe d'astronautes de la NASA en 1962, Armstrong a été le commandant de Gemini 8 en 1966. Bien que la mission ait réussi le premier amarrage orbital de l'histoire, elle a été immédiatement suivie d'une crise désespérée lorsque le vaisseau spatial s'est mis à tourner violemment sur lui-même. À ce moment-là, avec un calme incroyable, il a contrôlé les propulseurs et a réussi à ramener l'équipage sur Terre en toute sécurité. Sa force mentale pour ne pas céder à la panique a été très appréciée et a été le facteur décisif dans sa sélection comme commandant d'Apollo 11, c'est-à-dire le « premier homme à marcher sur la Lune ».
+Sélectionné dans le deuxième groupe d'astronautes de la NASA en 1962, Armstrong a été le commandant de [Gemini](/fr/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEsolution/) 8 en 1966. Bien que la mission ait réussi le premier amarrage orbital de l'histoire, elle a été immédiatement suivie d'une crise désespérée lorsque le vaisseau spatial s'est mis à tourner violemment sur lui-même. À ce moment-là, avec un calme incroyable, il a contrôlé les propulseurs et a réussi à ramener l'équipage sur Terre en toute sécurité. Sa force mentale pour ne pas céder à la panique a été très appréciée et a été le facteur décisif dans sa sélection comme commandant d'Apollo 11, c'est-à-dire le « premier homme à marcher sur la Lune ».
 
 ## Apollo 11 : Atterrissage dans la mer de la Tranquillité
 

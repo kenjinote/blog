@@ -246,7 +246,7 @@ Iklan berbeda dari hasil biasa. Penempatan berbayar dan peringkat organik menggu
 
 ## 15. Menelusuri indeks besar dengan cepat
 
-Satu mesin membatasi kapasitas, kinerja, dan ketahanan gangguan. Sistem terdistribusi membagi indeks, mencari bagian-bagiannya di mesin berbeda, lalu menggabungkan hasil. Bagian tersebut sering disebut shard.
+Satu mesin membatasi kapasitas, kinerja, dan ketahanan gangguan. [Sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/) membagi indeks, mencari bagian-bagiannya di mesin berbeda, lalu menggabungkan hasil. Bagian tersebut sering disebut shard.
 
 Pada pembagian menurut dokumen, kueri dikirim ke setiap shard yang mengembalikan kandidat unggulan. Koordinator membandingkannya. Statistik frekuensi lokal dapat berbeda, sehingga kesetaraan skor perlu diperhatikan. Pilihan statistik lokal atau global juga memengaruhi kualitas. [Buku rujukan: indeks terdistribusi][distributed]
 

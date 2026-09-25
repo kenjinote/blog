@@ -27,7 +27,7 @@ description: '공개키 암호는 양자 컴퓨터의 실용화로 인해 향후
 
 ## 들어가며: 양자 컴퓨터가 가져올 암호 기술에 대한 '위협'
 
-현재 우리가 인터넷상에서 일상적으로 수행하는 통신——온라인 뱅킹 결제, 웹사이트 탐색(HTTPS), 메시지 앱에서의 주고받기, 그리고 블록체인이나 [암호화폐](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/) 거래에 이르기까지——그 중 많은 것들이 '공개키 암호'라고 불리는 기술에 의해 보호받고 있습니다. 구체적으로는 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호나 타원곡선 암호(ECC)와 같은 알고리즘이 현대 디지털 사회의 신뢰성을 지탱하는 근간이 되고 있습니다.
+현재 우리가 인터넷상에서 일상적으로 수행하는 통신——온라인 뱅킹 결제, 웹사이트 탐색(HTTPS), 메시지 앱에서의 주고받기, 그리고 [블록체인](/ko/p/blockchain-technology-smart-contract-distributed-ledger/)이나 [암호화폐](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/) 거래에 이르기까지——그 중 많은 것들이 '공개키 암호'라고 불리는 기술에 의해 보호받고 있습니다. 구체적으로는 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호나 [타원곡선 암호](/ko/p/elliptic-curve-cryptography-math-cpp/)([ECC](/ko/p/elliptic-curve-cryptography-math-cpp/))와 같은 알고리즘이 현대 디지털 사회의 신뢰성을 지탱하는 근간이 되고 있습니다.
 
 이러한 암호 방식은 '거대한 수의 소인수 분해'나 '이산 대수 문제'와 같이, 현재의 고전적 컴퓨터(슈퍼컴퓨터를 포함한)로는 푸는 데 천문학적인 시간이 걸리는 수학적 난제를 안전성의 근거로 삼고 있습니다. 하지만 최근 눈부신 발전을 거듭하고 있는 **'양자 컴퓨터'** 가 실용화되면 이러한 전제가 근본부터 뒤집히게 됩니다.
 
@@ -45,7 +45,7 @@ description: '공개키 암호는 양자 컴퓨터의 실용화로 인해 향후
 
 자주 혼동하기 쉬운 기술로 '양자 암호(Quantum [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy)'나 '양자 키 분배(QKD)'가 있습니다만, 이들은 전혀 다른 접근 방식입니다. 양자 암호(QKD)는 양자 역학의 물리 법칙(관측하면 상태가 변화하는 성질 등)을 이용하여 통신 경로상의 도청을 물리적으로 불가능하게 만드는 하드웨어 기반 기술입니다. 전용 광케이블이나 특수 기기가 필요하며, 도입 비용이나 거리 제한이라는 과제가 있습니다.
 
-반면, **PQC는 어디까지나 '수학'을 기반으로 한 소프트웨어 기반의 암호 기술** 입니다. 따라서 기존의 인터넷 인프라, 서버, 스마트폰, 브라우저 등에 소프트웨어 업데이트로 통합하는 것이 가능하여, 현실 사회로의 적용성이 매우 높은 것이 특징입니다. 전 세계의 IT 기업이나 정부 기관은 현재 사용하고 있는 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/)나 ECC를 이 PQC로 교체(마이그레이션)하는 것을 급선무로 삼고 있습니다.
+반면, **PQC는 어디까지나 '수학'을 기반으로 한 소프트웨어 기반의 암호 기술** 입니다. 따라서 기존의 인터넷 인프라, 서버, 스마트폰, 브라우저 등에 소프트웨어 업데이트로 통합하는 것이 가능하여, 현실 사회로의 적용성이 매우 높은 것이 특징입니다. 전 세계의 IT 기업이나 정부 기관은 현재 사용하고 있는 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/)나 [ECC](/ko/p/elliptic-curve-cryptography-math-cpp/)를 이 PQC로 교체(마이그레이션)하는 것을 급선무로 삼고 있습니다.
 
 ---
 
@@ -74,14 +74,14 @@ graph LR
 
 ### 1. 격자 기반 암호(Lattice-based [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy)
 
-현재 PQC 분야에서 가장 유망하게 여겨지며 주류가 되고 있는 것이 이 '격자 암호'입니다. 격자 암호는 다차원 공간에 규칙적으로 배열된 점(격자점)에 관한 문제를 안전성의 근거로 삼고 있습니다. 유명한 문제로는 '최단 벡터 문제(SVP: Shortest Vector Problem)'나 'LWE 문제(Learning With Errors)' 등이 있습니다.
+현재 PQC 분야에서 가장 유망하게 여겨지며 주류가 되고 있는 것이 이 '[격자 암호](/ko/p/lattice-based-cryptography-math-intuition/)'입니다. [격자 암호](/ko/p/lattice-based-cryptography-math-intuition/)는 다차원 공간에 규칙적으로 배열된 점(격자점)에 관한 문제를 안전성의 근거로 삼고 있습니다. 유명한 문제로는 '최단 벡터 문제(SVP: Shortest Vector Problem)'나 'LWE 문제(Learning With Errors)' 등이 있습니다.
 
 **구조 개요:** 
 매우 차원이 높은(수백～수천 차원) 공간 내에 무수히 많은 점이 격자 모양으로 배열되어 있다고 상상해 보십시오. 어느 특정 격자점을 찾는 것은 2차원이나 3차원이라면 간단하지만, 수백 차원이 되면 고전 컴퓨터든 양자 컴퓨터든 효율적으로 찾아내는 알고리즘은 발견되지 않았습니다. 특히 LWE 문제는 '연립 일차 방정식에 의도적으로 작은 노이즈(오차)를 더하면, 원래 변수를 추측하는 것이 극적으로 어려워진다'는 성질을 이용하고 있습니다.
 
 **장점:** 
 - 키 캡슐화(KEM)와 디지털 서명 모두에 적용 가능.
-- 처리 속도가 매우 빠름([RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/)나 ECC보다 빠를 수도 있음).
+- 처리 속도가 매우 빠름([RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/)나 [ECC](/ko/p/elliptic-curve-cryptography-math-cpp/)보다 빠를 수도 있음).
 - 키 크기나 암호문 크기가 비교적 작고 균형이 좋음.
 
 현재 NIST가 표준화하고 있는 알고리즘의 상당수(ML-KEM이나 ML-DSA 등)가 이 격자 기반 암호를 채택하고 있습니다.
@@ -91,7 +91,7 @@ graph LR
 해시 기반 암호는 디지털 서명에 특화된 PQC 알고리즘입니다. 안전성의 근거는 SHA-2나 SHA-3과 같은 안전한 '암호학적 해시 함수'가 가진 충돌 내성이나 일방향성에만 의존합니다.
 
 **구조 개요:** 
-'램포트 서명(Lamport Signature)'이라고 불리는, 한 번밖에 쓸 수 없는 일회용 서명 방식(원타임 서명)을 출발점으로 삼습니다. 이를 '머클 트리(Merkle [Tree](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))'라고 불리는 트리 구조의 데이터 형식으로 묶음으로써, 1개의 키 쌍으로 여러 번의 서명을 가능하게 합니다.
+'램포트 서명(Lamport Signature)'이라고 불리는, 한 번밖에 쓸 수 없는 일회용 서명 방식(원타임 서명)을 출발점으로 삼습니다. 이를 '머클 트리(Merkle [Tree](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))'라고 불리는 [트리 구조](/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)의 데이터 형식으로 묶음으로써, 1개의 키 쌍으로 여러 번의 서명을 가능하게 합니다.
 
 **장점:** 
 - 보안의 근거가 지극히 견고하며, '해시 함수가 안전한 한 안전하다'는 강력한 증명이 있음.
@@ -145,28 +145,28 @@ NIST는 상태 비저장 해시 기반 서명으로 'SLH-DSA(구 SPHINCS+)'를 �
 
 1. **FIPS 203: ML-KEM (구 명칭: CRYSTALS-Kyber)** 
    - **용도:** 키 캡슐화 메커니즘(KEM) / 암호화·키 공유
-   - **기반 기술:** 격자 암호(Module-LWE)
+   - **기반 기술:** [격자 암호](/ko/p/lattice-based-cryptography-math-intuition/)(Module-LWE)
    - **특징:** 키 크기나 속도의 밸런스가 매우 좋아, 웹 통신(TLS)이나 안전한 메시징 앱 등 일반적인 인터넷 용도의 기본 PQC 키 공유로 기능합니다.
 
 2. **FIPS 204: ML-DSA (구 명칭: CRYSTALS-Dilithium)** 
    - **용도:** 디지털 서명
-   - **기반 기술:** 격자 암호(Module-LWE)
+   - **기반 기술:** [격자 암호](/ko/p/lattice-based-cryptography-math-intuition/)(Module-LWE)
    - **특징:** 디지털 서명의 주요 표준. 효율적인 처리가 가능하여, 소프트웨어 서명이나 문서 인증 등 모든 전자 서명 용도의 새로운 표준이 됩니다.
 
 3. **FIPS 205: SLH-DSA (구 명칭: SPHINCS+)** 
    - **용도:** 디지털 서명
    - **기반 기술:** 해시 기반 암호(상태 비저장)
-   - **특징:** 만약 장래에 격자 암호에서 취약성이 발견될 경우의 백업으로 기능하기 때문에 극히 중요한 역할을 담당합니다. 서명 크기는 커지지만, 장기적인 신뢰성이 요구되는 용도에 적합합니다.
+   - **특징:** 만약 장래에 [격자 암호](/ko/p/lattice-based-cryptography-math-intuition/)에서 취약성이 발견될 경우의 백업으로 기능하기 때문에 극히 중요한 역할을 담당합니다. 서명 크기는 커지지만, 장기적인 신뢰성이 요구되는 용도에 적합합니다.
 
 ### 더욱 다양한 방식의 추구
 
-NIST는 최초의 표준화 프로세스를 완료한 한편, 더 많은 알고리즘의 탐색을 계속하고 있습니다. 특히 '격자 암호'에 표준이 편중되어 있기 때문에, **알고리즘의 다양성([Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/) Diversity)** 을 확보하는 것이 중요하게 여겨지고 있습니다. 키 공유의 백업 표준으로서 부호 기반 암호 등의 평가가 진행되고 있으며, PQC의 기반은 향후 더욱 견고해질 예정입니다.
+NIST는 최초의 표준화 프로세스를 완료한 한편, 더 많은 알고리즘의 탐색을 계속하고 있습니다. 특히 '[격자 암호](/ko/p/lattice-based-cryptography-math-intuition/)'에 표준이 편중되어 있기 때문에, **알고리즘의 다양성([Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/) Diversity)** 을 확보하는 것이 중요하게 여겨지고 있습니다. 키 공유의 백업 표준으로서 부호 기반 암호 등의 평가가 진행되고 있으며, PQC의 기반은 향후 더욱 견고해질 예정입니다.
 
 ---
 
 ## PQC로의 이행 시나리오와 과제: '암호 민첩성'의 중요성
 
-NIST로부터 정식 표준 규격이 릴리스됨에 따라, 전 세계의 정부 기관, 금융 기관, 테크 기업은 기존의 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/)/ECC에서 PQC로의 이행(마이그레이션)을 본격화할 것입니다. NSA(미국 국가안보국) 등의 가이드라인에서도 조기 이행 완료가 권장되고 있습니다.
+NIST로부터 정식 표준 규격이 릴리스됨에 따라, 전 세계의 정부 기관, 금융 기관, 테크 기업은 기존의 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/)/[ECC](/ko/p/elliptic-curve-cryptography-math-cpp/)에서 PQC로의 이행(마이그레이션)을 본격화할 것입니다. NSA(미국 국가안보국) 등의 가이드라인에서도 조기 이행 완료가 권장되고 있습니다.
 
 ### 하이브리드 접근법의 채택
 

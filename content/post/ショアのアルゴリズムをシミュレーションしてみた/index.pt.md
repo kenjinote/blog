@@ -84,7 +84,7 @@ $$ a^r - 1 \equiv 0 \pmod N $$
 Se $r$ for par, podemos fatorá-la usando a fórmula da diferença de quadrados:
 $$ (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod N $$
 
-Isso significa que $N$ compartilha um divisor comum com $(a^{r/2} - 1)$ ou com $(a^{r/2} + 1)$ (desde que satisfaça a condição de que $a^{r/2} \not\equiv -1 \pmod N$). Portanto, usando o algoritmo de [Euclides](https://kenji.blog/p/euclid/), podemos calcular:
+Isso significa que $N$ compartilha um divisor comum com $(a^{r/2} - 1)$ ou com $(a^{r/2} + 1)$ (desde que satisfaça a condição de que $a^{r/2} \not\equiv -1 \pmod N$). Portanto, usando o algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/), podemos calcular:
 
 $$ p = \gcd(a^{r/2} - 1, N) $$
 $$ q = \gcd(a^{r/2} + 1, N) $$
@@ -339,7 +339,7 @@ Para quebrar a criptografia RSA de 2048 bits, estima-se que sejam necessários m
 
 Em preparação para a chegada desse "Q-Day (O dia em que os computadores quânticos quebrarão a criptografia)", os pesquisadores de criptografia do mundo todo, liderados pelo Instituto Nacional de Padrões e Tecnologia dos EUA (NIST), estão avançando no desenvolvimento da **Criptografia Pós-Quântica (Post-Quantum [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy, PQC)**.
 
-A PQC se baseia em novos problemas matemáticos (como problemas de reticulados, polinômios multivariados, funções hash, etc.) que são matematicamente considerados como ineficientes de se resolver, mesmo utilizando o algoritmo de Shor (ou o algoritmo de Grover). Já foram escolhidos algoritmos como "CRYSTALS-Kyber" e "CRYSTALS-Dilithium" como normas padrão, e sua introdução gradual começou em serviços como o iMessage da Apple e em protocolos de comunicação de vários navegadores da web.
+A PQC se baseia em novos problemas matemáticos (como problemas de reticulados, polinômios multivariados, funções hash, etc.) que são matematicamente considerados como ineficientes de se resolver, mesmo utilizando o algoritmo de Shor (ou o [algoritmo de Grover](/pt/p/grovers-algorithm-quantum-search/)). Já foram escolhidos algoritmos como "CRYSTALS-Kyber" e "CRYSTALS-Dilithium" como normas padrão, e sua introdução gradual começou em serviços como o iMessage da Apple e em protocolos de comunicação de vários navegadores da web.
 
 Para os engenheiros que gerenciam a infraestrutura de TI, incorporar a "Cripto-Agilidade ([Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)-Agility: a capacidade de alterar o esquema de criptografia rapidamente)" em seus sistemas para fazer a transição da criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) e de curvas elípticas existente para a PQC será uma grande missão nos próximos anos.
 

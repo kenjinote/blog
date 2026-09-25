@@ -98,7 +98,7 @@ $$
 x = 1766319049, \quad y = 226153980
 $$
 
-[Brouncker](https://kenji.blog/de/p/brouncker/) demonstrierte, dass mit seiner Methode selbst solch gigantische Lösungen systematisch abgeleitet werden können. Ironischerweise wurde diese Gleichung später aufgrund eines Missverständnisses von Leonhard Euler nach dem englischen Mathematiker John Pell benannt, aber der größte Beitrag zur Etablierung der Lösungsmethode gehört unbestreitbar [Brouncker](https://kenji.blog/de/p/brouncker/).
+[Brouncker](https://kenji.blog/de/p/brouncker/) demonstrierte, dass mit seiner Methode selbst solch gigantische Lösungen systematisch abgeleitet werden können. Ironischerweise wurde diese Gleichung später aufgrund eines Missverständnisses von [Leonhard Euler](/de/p/euler/) nach dem englischen Mathematiker John Pell benannt, aber der größte Beitrag zur Etablierung der Lösungsmethode gehört unbestreitbar [Brouncker](https://kenji.blog/de/p/brouncker/).
 
 ## 6. Weitere Errungenschaften und späte Jahre
 

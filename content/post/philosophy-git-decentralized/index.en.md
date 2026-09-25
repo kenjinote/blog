@@ -47,7 +47,7 @@ In Git, a "complete copy of the repository" exists on every individual's local m
 
 The most important concept for understanding Git's internal structure is the "DAG (Directed Acyclic Graph)." Git does not manage history merely as a "sequence of patches (diffs)"; rather, it constructs the relationships between snapshots as a DAG.
 
-Each commit holds a pointer (tree) to a snapshot of the entire project at that moment, as well as pointers to one or more "parent commits." Through this simple chain of data structures, Git mathematically expresses complex branching and merging history as an inconsistent-free graph.
+Each commit holds a pointer (tree) to a snapshot of the entire project at that moment, as well as [pointers](/en/p/c-language-pointers-memory-management-stack-heap/) to one or more "parent commits." Through this simple chain of data structures, Git mathematically expresses complex branching and merging history as an inconsistent-free graph.
 
 The beauty of this approach lies in the fact that history is naturally represented not as a "single line" but as "multiple timelines advancing in parallel." Developers can freely branch history, experiment, discard the branch if it fails, or merge it into the main stream if it succeeds. History becomes not just a record of the past, but the very "trail of the developer's thought process."
 
@@ -78,7 +78,7 @@ graph TD
 
 If even a single byte of a file's content changes, the file's hash value changes, the tree's hash value containing it changes, and consequently, the commit's hash value changes as well. In other words, secretly tampering with part of the history is cryptographically impossible.
 
-In designing Git, Linus Torvalds had a strong resolve to "never allow data corruption or tampering." Git's hash model embodies the ultimate form of decentralization—akin to blockchain—where trust is intrinsic to the data itself, without relying on a central authority (server).
+In designing Git, Linus Torvalds had a strong resolve to "never allow data corruption or tampering." Git's hash model embodies the ultimate form of decentralization—akin to [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/)—where trust is intrinsic to the data itself, without relying on a central authority (server).
 
 ## 5. Merging and Dialogue: Programming as a Social Process
 

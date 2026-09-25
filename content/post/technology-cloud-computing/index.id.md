@@ -40,7 +40,7 @@ Cloud computing secara garis besar diklasifikasikan menjadi tiga model berdasark
 3. **SaaS (Software as a Service)**
    - **Konten**: Menggunakan perangkat lunak itu sendiri sebagai layanan melalui internet. Pengguna tidak perlu mengelola apa pun.
    - **Contoh Pizza**: Seperti menelepon restoran pizza, meminta pizza yang sudah matang diantar, dan hanya tinggal memakannya.
-   - **Contoh Representatif**: Gmail, Slack, Salesforce, Microsoft 365
+   - **Contoh Representatif**: Gmail, Slack, [Salesforce](/id/p/salesforceceloteh%E5%85%A8%E6%B6%88%E3%81%97perintah/), Microsoft 365
 
 ## 3. "Teknologi Virtualisasi" yang Mendukung Cloud
 

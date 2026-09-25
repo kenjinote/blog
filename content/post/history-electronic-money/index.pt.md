@@ -56,12 +56,12 @@ As lojas não precisavam adquirir terminais de leitura FeliCa caros; elas podiam
 
 Por outro lado, no mundo da internet, a paixão pela "moeda digital sem um administrador central", com a qual David Chaum sonhava, não havia desaparecido.
 
-Em 2008, o **Bitcoin**, anunciado por Satoshi Nakamoto, concluiu uma moeda digital que não poderia ser falsificada ou gasta duas vezes, utilizando a tecnologia blockchain e PoW (Proof of Work), mesmo sem a existência de qualquer empresa ou banco específico (administrador central).
+Em 2008, o **Bitcoin**, anunciado por Satoshi Nakamoto, concluiu uma moeda digital que não poderia ser falsificada ou gasta duas vezes, utilizando a tecnologia [blockchain](/pt/p/blockchain-technology-smart-contract-distributed-ledger/) e PoW (Proof of Work), mesmo sem a existência de qualquer empresa ou banco específico (administrador central).
 Dinheiros eletrônicos como Suica e PayPay são, no fim das contas, sistemas centralizados que dependem de "confiar nos servidores da empresa operadora (JR ou PayPay)", mas o Bitcoin é um sistema "descentralizado" monitorado por todos os participantes, o que representa um paradigma fundamentalmente diferente.
 
 ## 6. Conclusão: O Destino do Valor Transformado em Dados
 
-A tentativa de "transformar dinheiro em dados" começou com o fracasso de criptógrafos na década de 1990, passou pela aplicação prática nas catracas do Japão (FeliCa) e pela evolução para pagamentos em nuvem (códigos QR) com a popularização dos smartphones, até finalmente alcançar o blockchain, a moeda descentralizada definitiva.
+A tentativa de "transformar dinheiro em dados" começou com o fracasso de criptógrafos na década de 1990, passou pela aplicação prática nas catracas do Japão (FeliCa) e pela evolução para pagamentos em nuvem (códigos QR) com a popularização dos smartphones, até finalmente alcançar o [blockchain](/pt/p/blockchain-technology-smart-contract-distributed-ledger/), a moeda descentralizada definitiva.
 
 Atualmente, bancos centrais em todo o mundo estão intensificando suas pesquisas sobre as "CBDC" (Moeda Digital do Banco Central), uma moeda fiduciária digital emitida pelo próprio Estado.
 Quando o dinheiro for completamente substituído por "dados sem massa", como nosso conceito de "valor" mudará? A história do dinheiro eletrônico está finalmente caminhando para o seu capítulo final.

@@ -18,7 +18,7 @@ This question is an ultimate mystery that has fascinated human intellect, from t
 
 ## Chapter 1: The Impact of the "Brain in a Vat" Thought Experiment
 
-The "Brain in a Vat" is a thought experiment proposed by philosopher Hilary Putnam in 1981. However, the underlying question of "how far can we trust our perception?" can be traced back to the 17th-century debate of René Descartes' "evil demon (deceiving god)."
+The "Brain in a Vat" is a thought experiment proposed by philosopher Hilary Putnam in 1981. However, the underlying question of "how far can we trust our perception?" can be traced back to the 17th-century debate of [René Descartes](/en/p/descartes/)' "evil demon (deceiving god)."
 
 ### 1-1. What is the Brain in a Vat?
 

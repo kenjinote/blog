@@ -17,7 +17,7 @@ description: "\"Linux,\" the OS that underpins modern IT infrastructure and runs
 
 Linus Torvalds was born in Helsinki, Finland, in 1969. Raised by journalist parents, he showed a strong interest in mathematics and computers from a young age. A Commodore VIC-20, which he encountered through his grandfather's influence, opened the door to programming for him, and he later went on to study computer science at the University of Helsinki.
 
-His first opportunity to leave his mark on history came in 1991 while he was still a university student. Dissatisfied with the licensing restrictions of "MINIX," an educational OS widely used at the time, he began developing a terminal emulator for PC/AT compatible machines as a personal hobby. This eventually evolved into an operating system (OS) kernel and was released to the world as "Linux."
+His first opportunity to leave his mark on history came in 1991 while he was still a university student. Dissatisfied with the licensing restrictions of "MINIX," an educational OS widely used at the time, he began developing a [terminal](/en/p/terminal-efficiency-powershell-bash-shortcuts/) emulator for PC/AT compatible machines as a personal hobby. This eventually evolved into an operating system (OS) kernel and was released to the world as "Linux."
 
 In August of the same year, he posted a famous message to a Usenet newsgroup stating that he was creating a "little free operating system." Initially, it was just a personal project, but by adopting the GPL (GNU General Public License) and releasing the source code, hackers from all over the world began to participate in its development. Aided by the era of widespread internet adoption, Linux evolved rapidly.
 

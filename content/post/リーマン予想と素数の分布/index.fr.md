@@ -11,13 +11,13 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 # 1. Introduction : Le mystère cosmique des nombres premiers et l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/)
 
-Les « nombres premiers » (Prime Numbers) sont des entiers naturels qui ne sont divisibles que par 1 et par eux-mêmes, et sont souvent appelés les « atomes » du monde mathématique. La suite 2, 3, 5, 7, 11, 13... semble à première vue désordonnée et aléatoire. Depuis que le mathématicien grec antique [Euclide](https://kenji.blog/p/euclid/) a prouvé qu'« il existe une infinité de nombres premiers », d'innombrables mathématiciens ont tenté de percer les régularités cachées dans cette suite de nombres premiers.
+Les « nombres premiers » (Prime Numbers) sont des entiers naturels qui ne sont divisibles que par 1 et par eux-mêmes, et sont souvent appelés les « atomes » du monde mathématique. La suite 2, 3, 5, 7, 11, 13... semble à première vue désordonnée et aléatoire. Depuis que le mathématicien grec antique [Euclide](https://kenji.blog/fr/p/euclid/) a prouvé qu'« il existe une infinité de nombres premiers », d'innombrables mathématiciens ont tenté de percer les régularités cachées dans cette suite de nombres premiers.
 
-Celle qui s'est le plus rapprochée du mystère des nombres premiers est l'**« Hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) » (Riemann Hypothesis)**, proposée en 1859 par le mathématicien allemand Bernhard Riemann. L'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) est l'un des problèmes les plus importants et non résolus des mathématiques modernes, et elle fait partie des Problèmes du prix du millénaire définis par l'Institut de mathématiques Clay, avec une récompense d'un million de dollars.
+Celle qui s'est le plus rapprochée du mystère des nombres premiers est l'**« Hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) » (Riemann Hypothesis)**, proposée en 1859 par le mathématicien allemand [Bernhard Riemann](/fr/p/riemann/). L'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) est l'un des problèmes les plus importants et non résolus des mathématiques modernes, et elle fait partie des Problèmes du prix du millénaire définis par l'Institut de mathématiques Clay, avec une récompense d'un million de dollars.
 
-À première vue, un problème difficile de mathématiques pures concernant la distribution des nombres premiers peut sembler sans rapport avec notre vie quotidienne. Cependant, la sécurité de l'infrastructure d'Internet qui soutient la société moderne, en particulier **les technologies de cryptographie moderne telles que le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) et la cryptographie sur les courbes elliptiques (ECC)**, dépend profondément des propriétés des nombres premiers géants.
+À première vue, un problème difficile de mathématiques pures concernant la distribution des nombres premiers peut sembler sans rapport avec notre vie quotidienne. Cependant, la sécurité de l'infrastructure d'Internet qui soutient la société moderne, en particulier **les technologies de cryptographie moderne telles que le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) et la cryptographie sur les courbes elliptiques ([ECC](/fr/p/elliptic-curve-cryptography-math-cpp/))**, dépend profondément des propriétés des nombres premiers géants.
 
-Dans cet article, nous entreprendrons un voyage mathématique allant de la distribution des nombres premiers au théorème des nombres premiers, à la fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/), pour atteindre le cœur de l'hypothèse de Riemann. Nous explorerons en profondeur comment elle est liée à la cryptographie moderne et ce qu'il adviendrait du monde si l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) venait à être prouvée.
+Dans cet article, nous entreprendrons un voyage mathématique allant de la distribution des nombres premiers au [théorème des nombres premiers](/fr/p/prime-number-theorem/), à la fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/), pour atteindre le cœur de l'hypothèse de Riemann. Nous explorerons en profondeur comment elle est liée à la cryptographie moderne et ce qu'il adviendrait du monde si l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) venait à être prouvée.
 
 ---
 
@@ -36,7 +36,7 @@ L'expression de cela à l'aide d'une intégrale est le **logarithme intégral (L
 
 $$ \text{Li}(x) = \int_{2}^{x} \frac{dt}{\ln t} $$
 
-La conjecture de Gauss a ensuite été prouvée indépendamment en 1896 par Jacques Hadamard et Charles-Jean de La Vallée Poussin, et a été établie en tant que **théorème des nombres premiers ([Prime Number Theorem](https://kenji.blog/fr/p/prime-number-theorem/), PNT)**.
+La conjecture de Gauss a ensuite été prouvée indépendamment en 1896 par Jacques Hadamard et Charles-Jean de La Vallée Poussin, et a été établie en tant que **[théorème des nombres premiers](/fr/p/prime-number-theorem/) ([Prime Number Theorem](https://kenji.blog/fr/p/prime-number-theorem/), PNT)**.
 
 $$ \lim_{x \to \infty} \frac{\pi(x)}{\text{Li}(x)} = 1 $$
 
@@ -74,7 +74,7 @@ Il a en outre dérivé une magnifique équation fonctionnelle (Functional equati
 
 $$ \zeta(s) = 2^s \pi^{s-1} \sin\left(\frac{\pi s}{2}\right) \Gamma(1-s) \zeta(1-s) $$
 
-Où $\Gamma(x)$ est la fonction gamma. Cette équation nous permet de connaître les propriétés du demi-plan gauche à partir des propriétés du demi-plan droit.
+Où $\Gamma(x)$ est [la fonction gamma](/fr/p/gamma-function/). Cette équation nous permet de connaître les propriétés du demi-plan gauche à partir des propriétés du demi-plan droit.
 
 ### Zéros (Zeros of the Zeta Function)
 Les nombres complexes $s$ où la valeur de la fonction zêta devient 0 sont appelés « zéros ».
@@ -110,9 +110,9 @@ Pourquoi l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) est-elle si
 $$ \psi(x) = x - \sum_{\rho} \frac{x^\rho}{\rho} - \ln(2\pi) - \frac{1}{2}\ln(1 - x^{-2}) $$
 
 Où $\rho$ est la somme sur tous les zéros non triviaux de la fonction zêta.
-Le terme principal est $x$ (qui correspond au théorème des nombres premiers), et en ajoutant et en soustrayant des termes ondulatoires dépendant des zéros $\rho$, la distribution en escalier exacte des nombres premiers est restaurée. On peut dire que les zéros non triviaux représentent les « fréquences (ondes) » de la distribution des nombres premiers.
+Le terme principal est $x$ (qui correspond au [théorème des nombres premiers](/fr/p/prime-number-theorem/)), et en ajoutant et en soustrayant des termes ondulatoires dépendant des zéros $\rho$, la distribution en escalier exacte des nombres premiers est restaurée. On peut dire que les zéros non triviaux représentent les « fréquences (ondes) » de la distribution des nombres premiers.
 
-Si l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) est vraie, et que la partie réelle de tous les zéros non triviaux $\rho$ est exactement de $1/2$, alors le terme d'erreur du théorème des nombres premiers se situera dans la plus petite plage théoriquement concevable.
+Si l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) est vraie, et que la partie réelle de tous les zéros non triviaux $\rho$ est exactement de $1/2$, alors le terme d'erreur du [théorème des nombres premiers](/fr/p/prime-number-theorem/) se situera dans la plus petite plage théoriquement concevable.
 
 $$ |\pi(x) - \text{Li}(x)| \le \frac{1}{8\pi} \sqrt{x} \ln x \quad \text{for} \quad x \ge 2657 $$
 
@@ -124,7 +124,7 @@ En d'autres termes, **si l'hypothèse de [Riemann](https://kenji.blog/fr/p/riema
 
 Jusqu'ici, nous étions dans le monde profond des mathématiques pures, mais ces propriétés des nombres premiers soutiennent fondamentalement la société numérique moderne. Le représentant de cela est la cryptographie à clé publique telle que le **chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)**.
 
-La sécurité de toutes les communications, y compris les paiements par carte de crédit sur Internet, la transmission de mots de passe et les signatures numériques de la blockchain, dépend des « nombres premiers ».
+La sécurité de toutes les communications, y compris les paiements par carte de crédit sur Internet, la transmission de mots de passe et les signatures numériques de la [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/), dépend des « nombres premiers ».
 
 ### Fonctionnement du chiffrement RSA
 La sécurité du chiffrement RSA est basée sur le fait mathématique (problème de la factorisation) qu'« il est très difficile de factoriser un nombre composé avec un grand nombre de chiffres ».

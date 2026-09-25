@@ -14,7 +14,7 @@ description: "Kekurangan VRAM (memori GPU) yang menjadi hambatan terbesar dalam 
 
 Dalam beberapa tahun terakhir, teknologi AI generatif seperti [Large Language Models](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) ([LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)) dan Diffusion Models telah mengalami perkembangan yang sangat pesat. Namun, ketika melatih (fine-tuning) atau menjalankan inferensi model-model AI mutakhir ini di lingkungan lokal, banyak pengembang dan peneliti menghadapi hambatan fisik yang sangat besar, yaitu **"kekurangan memori GPU (VRAM)"**.
 
-Meskipun menggunakan GPU high-end untuk konsumen seperti NVIDIA GeForce RTX 4090, VRAM maksimal yang tersedia hanyalah 24GB, sehingga mustahil untuk memuat model raksasa seperti Llama 3 70B secara langsung. GPU untuk data center seperti H100 (80GB) dan B200 (192GB) sangatlah mahal, dan tidak mudah dijangkau oleh individu atau tim skala kecil. Jika kita tidak dapat menembus 'Tembok VRAM (The Wall of VRAM)' ini, kita bahkan tidak akan bisa menyentuh model-model mutakhir tersebut.
+Meskipun menggunakan GPU high-end untuk konsumen seperti NVIDIA [GeForce](/id/p/history-of-nvidia/) RTX 4090, VRAM maksimal yang tersedia hanyalah 24GB, sehingga mustahil untuk memuat model raksasa seperti Llama 3 70B secara langsung. GPU untuk data center seperti H100 (80GB) dan B200 (192GB) sangatlah mahal, dan tidak mudah dijangkau oleh individu atau tim skala kecil. Jika kita tidak dapat menembus 'Tembok VRAM (The Wall of VRAM)' ini, kita bahkan tidak akan bisa menyentuh model-model mutakhir tersebut.
 
 Dalam artikel ini, kami akan menjelaskan secara mendalam dari sisi inferensi maupun pembelajaran mengenai teknik-teknik canggih untuk mematahkan kendala fisik batasan VRAM ini melalui rekayasa perangkat lunak dan arsitektur perangkat keras. Mari kita bahas lebih dalam menggunakan rumus matematika dan diagram untuk teknik seperti CPU offloading, optimasi cache KV, gradient checkpointing, hingga arsitektur Unified Memory terbaru. Dengan membaca artikel ini, Anda akan memahami perilaku VRAM secara mendalam dan memperoleh pengetahuan praktis untuk menangani model raksasa dengan sumber daya yang terbatas.
 
@@ -32,7 +32,7 @@ Tipe data yang umum digunakan dalam deep learning dan jumlah byte per parameter 
 - **FP32 (Single-precision floating-point format):** 4 byte (presisi standar saat pembelajaran)
 - **FP16 / BF16 (Half-precision floating-point format):** 2 byte (inferensi umum dan mixed-precision training)
 - **INT8 (Integer 8-bit):** 1 byte (model yang dikuantisasi)
-- **INT4 (Kuantisasi integer 4-bit):** 0.5 byte (kuantisasi ekstrem seperti GPTQ, AWQ, GGUF)
+- **INT4 (Kuantisasi integer 4-bit):** 0.5 byte (kuantisasi ekstrem seperti GPTQ, AWQ, [GGUF](/id/p/llama-cpp-quantization-gguf/))
 
 Jika total jumlah parameter dari keseluruhan model adalah $P$, maka jumlah memori dasar yang ditempati oleh bobot itu sendiri, $M_{weights}$, dapat dinyatakan dengan rumus berikut:
 

@@ -17,8 +17,8 @@ tags:
 
 ## 1. What Happens During Those Few Seconds of a "Beep"
 
-After dining at a restaurant, when you insert your credit card into the terminal and enter your PIN, the "Approved (Payment Complete)" sign appears in just a few seconds.
-For us, this is a common, everyday scene, but during these mere few seconds, complex data communication spanning the globe takes place, extending from the store's terminal to the card issuer (which might be on the other side of the planet).
+After dining at a restaurant, when you insert your credit card into the [terminal](/en/p/terminal-efficiency-powershell-bash-shortcuts/) and enter your PIN, the "Approved (Payment Complete)" sign appears in just a few seconds.
+For us, this is a common, everyday scene, but during these mere few seconds, complex data communication spanning the globe takes place, extending from the store's [terminal](/en/p/terminal-efficiency-powershell-bash-shortcuts/) to the card issuer (which might be on the other side of the planet).
 
 If this network were to stop for even an hour, economic activities worldwide would plunge into chaos. Let's take a peek behind the scenes of the "credit card payment network," which is the most robust in the world and requires the fastest response times.
 
@@ -55,11 +55,11 @@ sequenceDiagram
     Acq-->>Shop: "8. Display payment complete sign"
 ```
 
-1. **Reading the Card**: The store's terminal (CAT/CCT terminal) reads encrypted data from the card's IC chip.
+1. **Reading the Card**: The store's [terminal](/en/p/terminal-efficiency-powershell-bash-shortcuts/) (CAT/CCT [terminal](/en/p/terminal-efficiency-powershell-bash-shortcuts/)) reads encrypted data from the card's IC chip.
 2. **Networks like CAFIS**: In Japan, data from the store reaches the acquirer through domestic relay networks like "CAFIS" and "CARDNET".
 3. **Racing Through the Brand Network**: The acquirer looks at the first digits of the card number (BIN code), determines that "This is a VISA card," and throws the data into VISA's international network (such as VisaNet).
 4. **Judgment at the Issuer**: The data arrives at the host computer of the company that issued your card (the issuer). Here, it instantaneously calculates "Has the credit limit been exceeded?", "Has a theft report been filed?", and "Does it get flagged by the fraud detection system (AI)?", and returns an approval code.
-5. **Response to the Store**: The approval code returns at breakneck speed along the path it came, and "Approved (OK)" is displayed on the store's terminal.
+5. **Response to the Store**: The approval code returns at breakneck speed along the path it came, and "Approved (OK)" is displayed on the store's [terminal](/en/p/terminal-efficiency-powershell-bash-shortcuts/).
 
 This incredibly complex relay is performed in just a few seconds.
 

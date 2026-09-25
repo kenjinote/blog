@@ -16,7 +16,7 @@ tags:
 
 # 1. 서론: 순수한 사고의 탐구자
 
-[카를 구스타프 야코프 야코비](https://kenji.blog/ko/p/jacobi/)(Carl Gustav Jacob Jacobi, 1804–1851)는 19세기의 **독일 수학자** 로서, 대수학, 해석학, 정수론, 역학 등 다방면에 걸쳐 결정적인 공헌을 했습니다. [닐스 헨리크 아벨](https://kenji.blog/ko/p/abel/)과 함께 '타원 함수의 발견자'로 나란히 불리며, 또한 오늘날 우리가 다변수 미적분학에서 자주 접하는 '야코비안(야코비 행렬식)'의 어원이 된 인물이기도 합니다.
+[카를 구스타프 야코프 야코비](https://kenji.blog/ko/p/jacobi/)(Carl Gustav Jacob Jacobi, 1804–1851)는 19세기의 **독일 수학자** 로서, 대수학, 해석학, 정수론, 역학 등 다방면에 걸쳐 결정적인 공헌을 했습니다. [닐스 헨리크 아벨](https://kenji.blog/ko/p/abel/)과 함께 '타원 함수의 발견자'로 나란히 불리며, 또한 오늘날 우리가 다변수 미적분학에서 자주 접하는 '야코비안(야코비 [행렬식](/ko/p/geometric-meaning-of-determinant/))'의 어원이 된 인물이기도 합니다.
 
 그는 실용성보다 수학 자체의 아름다움과 인간 정신의 영광을 중요시했습니다. 본 기사에서는 야코비의 생애, 주요 수학적 업적, 그리고 그가 남긴 유명한 일화에 대해 깊이 파헤쳐 보겠습니다.
 
@@ -61,11 +61,11 @@ $$ \vartheta(z, \tau) = \sum_{n=-\infty}^{\infty} e^{\pi i n^2 \tau + 2 \pi i n 
 
 대학의 미적분학 수업에서 다중 적분의 변수 변환(예를 들어 극좌표 변환 등)을 배울 때 누구나 '야코비안'이라는 단어와 만나게 됩니다. 이것도 야코비에서 유래했습니다.
 
-$n$ 개의 변수 $x_1, x_2, \dots, x_n$ 에서 $n$ 개의 변수 $y_1, y_2, \dots, y_n$ 으로의 변환을 생각할 때, 그 편미분으로 이루어진 행렬의 행렬식을 야코비 행렬식(야코비안)이라고 부릅니다.
+$n$ 개의 변수 $x_1, x_2, \dots, x_n$ 에서 $n$ 개의 변수 $y_1, y_2, \dots, y_n$ 으로의 변환을 생각할 때, 그 편미분으로 이루어진 행렬의 [행렬식](/ko/p/geometric-meaning-of-determinant/)을 야코비 [행렬식](/ko/p/geometric-meaning-of-determinant/)(야코비안)이라고 부릅니다.
 
 $$ J = \det \begin{pmatrix} \frac{\partial y_1}{\partial x_1} & \cdots & \frac{\partial y_1}{\partial x_n} \\ \vdots & \ddots & \vdots \\ \frac{\partial y_m}{\partial x_1} & \cdots & \frac{\partial y_m}{\partial x_n} \end{pmatrix} $$
 
-야코비는 이 행렬식이 변수 변환에 있어서 부피 요소의 확대·축소율을 나타냄을 명확히 제시하였고, 역함수 정리 및 음함수 정리의 일반화에 있어 중심적인 역할을 한다는 것을 증명했습니다.
+야코비는 이 [행렬식](/ko/p/geometric-meaning-of-determinant/)이 변수 변환에 있어서 부피 요소의 확대·축소율을 나타냄을 명확히 제시하였고, 역함수 정리 및 음함수 정리의 일반화에 있어 중심적인 역할을 한다는 것을 증명했습니다.
 
 # 6. 해석 역학: 해밀턴-야코비 방정식
 

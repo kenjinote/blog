@@ -12,7 +12,7 @@ image: "eyecatch.jpg"
 
 Dans l'ingénierie logicielle moderne, il ne se passe pas un jour sans entendre des termes comme « Design Modulaire », « Principe de Responsabilité Unique » et « Couplage Faible ». Ceux-ci sont traités comme des règles d'or pour maintenir des bases de code propres et construire des systèmes évolutifs et maintenables. Cependant, ces concepts ne sont pas nés ces dernières années. Retracer leurs origines nous mène à « Unix », un système d'exploitation né aux Bell Labs au début des années 1970.
 
-Unix n'était pas seulement un OS. Il incarnait une philosophie de « comment construire un excellent logiciel » — la « Philosophie Unix ». Cette philosophie, bâtie par des géants comme Ken Thompson, Dennis Ritchie et Doug McIlroy, respire profondément même dans les architectures cloud-natives modernes et les microservices, un demi-siècle plus tard.
+Unix n'était pas seulement un OS. Il incarnait une philosophie de « comment construire un excellent logiciel » — la « Philosophie Unix ». Cette philosophie, bâtie par des géants comme Ken Thompson, [Dennis Ritchie](/fr/p/biography-dennis-ritchie/) et Doug McIlroy, respire profondément même dans les architectures cloud-natives modernes et les microservices, un demi-siècle plus tard.
 
 Cet article explore en profondeur l'essence du « design modulaire » au cœur de la philosophie Unix et révèle pourquoi son idéologie continue d'être soutenue de manière transcendante.
 
@@ -91,7 +91,7 @@ Les technologies de conteneurs représentées par Docker ont également des lien
 
 ### Programmation Fonctionnelle et Pipelines de Données
 
-La composition de fonctions en programmation fonctionnelle (prendre la sortie d'une fonction comme entrée d'une autre) partage une similitude mathématique avec le concept de pipelines Unix. Le traitement des flux dans le traitement du Big Data, comme Apache Kafka, est également une application du concept de flux de texte aux systèmes distribués.
+La composition de fonctions en [programmation fonctionnelle](/fr/p/lambda-calculus-functional-programming/) (prendre la sortie d'une fonction comme entrée d'une autre) partage une similitude mathématique avec le concept de pipelines Unix. Le traitement des flux dans le traitement du Big Data, comme Apache Kafka, est également une application du concept de flux de texte aux [systèmes distribués](/fr/p/cap-theorem-distributed-systems-tradeoff/).
 
 ```mermaid
 graph LR

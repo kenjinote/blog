@@ -110,11 +110,11 @@ Por lo tanto, está claro que el número de puertas que conducen al exterior es 
 
 ## 5.3. Calculando Grados Usando el Lema del Apretón de Manos
 
-Aquí es donde entra la teoría de grafos.
+Aquí es donde entra la [teoría de grafos](/es/p/graph-theory-dijkstra-a-star/).
 - Vértices del grafo: Cada pequeño triángulo (habitación) y el exterior.
 - Aristas del grafo: Puertas (aristas de color 1 y 2). Cuando dos habitaciones comparten una puerta, conecta sus vértices con una arista.
 
-Según el "Lema del Apretón de Manos", un teorema fundamental en la teoría de grafos, la suma de los "grados" (número de aristas conectadas) de todos los vértices debe ser siempre un número par (el doble del número de aristas).
+Según el "Lema del Apretón de Manos", un teorema fundamental en la [teoría de grafos](/es/p/graph-theory-dijkstra-a-star/), la suma de los "grados" (número de aristas conectadas) de todos los vértices debe ser siempre un número par (el doble del número de aristas).
 
 $$ \sum_{v \in V} \text{deg}(v) = 2|E| $$
 

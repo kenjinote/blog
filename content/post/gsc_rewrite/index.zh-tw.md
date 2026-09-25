@@ -179,7 +179,7 @@ ORDER BY
 利用這個結果，我們可以依照以下矩陣將要重新撰寫的對象進行分類：
 
 1. **High Impression, Low CTR, High Engagement**:
-   只要在搜尋結果中被點擊，讀者就會感到滿意的文章。應將 **修改標題與 Meta Description** 列為最優先事項。
+   只要在搜尋結果中被點擊，讀者就會感到滿意的文章。應將 **修改標題與 [Meta](/zh-tw/p/history-of-meta-facebook/) Description** 列為最優先事項。
 2. **High CTR, Low Engagement**:
    雖然會被點擊，但內容不如預期而導致讀者離開的文章。需要進行大規模的內文重新撰寫，例如 **改善前言、更新至最新的程式碼，以及提升資訊的完整度 (新增 H2/H3)** 。
 

@@ -18,11 +18,11 @@ tags:
 
 # 1. 事件驅動架構的引言
 
-現代軟體系統擁有前所未有的規模與複雜度。在微服務架構成為主流的當下，如何設計服務間的通訊，是左右整體系統效能、可用性及可維護性的極關鍵要素。在這樣的脈絡下， **事件驅動架構** (Event-Driven Architecture: EDA) 作為降低系統間耦合度、實現高擴展性的強大典範，已確立了其堅固的地位。
+現代軟體系統擁有前所未有的規模與[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)。在[微服務架構](/zh-tw/p/microservices-architecture-bff-api-gateway/)成為主流的當下，如何設計服務間的通訊，是左右整體系統效能、可用性及可維護性的極關鍵要素。在這樣的脈絡下， **事件驅動架構** (Event-Driven Architecture: EDA) 作為降低系統間耦合度、實現高擴展性的強大典範，已確立了其堅固的地位。
 
 # 2. 同步通訊 (REST / gRPC) 的挑戰
 
-在分散式系統中，服務間通訊最直覺的方法是使用 HTTP 請求/回應的 REST API，或是更高速的 gRPC 進行 **同步通訊** 。然而，同步通訊存在一些本質上的挑戰。
+在[分散式系統](/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)中，服務間通訊最直覺的方法是使用 HTTP 請求/回應的 [REST API](/zh-tw/p/graphql-vs-rest-api-overfetching-type-safety/)，或是更高速的 gRPC 進行 **同步通訊** 。然而，同步通訊存在一些本質上的挑戰。
 
 ## 2.1 緊密耦合與串聯故障
 在同步通訊中，呼叫端 (客戶端) 與被呼叫端 (伺服器) 在時間上是緊密耦合的。客戶端必須等待伺服器回傳回應，若伺服器發生故障或因高負載導致回應延遲，其影響將波及客戶端。若這種情況連鎖發生，就有可能引發導致整個系統停機的 **串聯故障** (Cascading Failure)。
@@ -218,7 +218,7 @@ run();
 
 # 6. 結語
 
-事件驅動架構是讓系統保持彈性且具擴展性的強大手法。作為擔任其核心的訊息代理，RabbitMQ 與 Kafka 各自擁有不同的設計理念。若追求路由的彈性與確實的狀態管理就選擇 RabbitMQ，若追求壓倒性的吞吐量與資料的持久化/可重播性則選擇 Kafka，配合專案的需求選擇適當的技術，是成功建構分散式系統的關鍵。
+事件驅動架構是讓系統保持彈性且具擴展性的強大手法。作為擔任其核心的訊息代理，RabbitMQ 與 Kafka 各自擁有不同的設計理念。若追求路由的彈性與確實的[狀態管理](/zh-tw/p/state-management-history-redux-context-recoil-zustand/)就選擇 RabbitMQ，若追求壓倒性的吞吐量與資料的持久化/可重播性則選擇 Kafka，配合專案的需求選擇適當的技術，是成功建構[分散式系統](/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)的關鍵。
 
 # 7. 事件驅動架構中的進階設計模式與維運
 
@@ -226,7 +226,7 @@ run();
 
 ## 7.1 使用 Saga 模式進行分散式交易
 
-在微服務架構中，以同步的二階層認可 (2PC) 來管理橫跨多個服務的交易，會導致可用性與效能下降。作為替代方案，會使用 **Saga 模式** 。
+在[微服務架構](/zh-tw/p/microservices-architecture-bff-api-gateway/)中，以同步的二階層認可 (2PC) 來管理橫跨多個服務的交易，會導致可用性與效能下降。作為替代方案，會使用 **Saga 模式** 。
 
 在 Saga 模式中，分散式交易會被表現為一連串的本地交易。每個服務會執行本地交易，並在完成時發布事件以觸發下一個步驟。若在某個步驟失敗，則發布事件以執行「補償交易 (Compensating [Transaction](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/))」，藉此取消已經完成的交易。
 
@@ -252,4 +252,4 @@ Kafka 生產者不會逐一傳送訊息，而是將其打包成批次傳送給�
 
 ## 7.4 確保可觀測性 (Observability)
 
-在非同步處理串聯的系統中，發生故障時的故障排除將變得極度困難。為了追蹤訊息停滯在哪個佇列中、在哪個服務發生了錯誤，必須導入 **分散式追蹤** (OpenTelemetry、Jaeger 等)。賦予每則訊息一個唯一的 `traceId`，並將其與日誌及指標 (Metrics) 關聯，以建立將事件流程視覺化的基礎設施，這正是 EDA 維運的最佳實踐。
+在[非同步處理](/zh-tw/p/event-driven-architecture-async/)串聯的系統中，發生故障時的故障排除將變得極度困難。為了追蹤訊息停滯在哪個佇列中、在哪個服務發生了錯誤，必須導入 **分散式追蹤** (OpenTelemetry、Jaeger 等)。賦予每則訊息一個唯一的 `traceId`，並將其與日誌及指標 (Metrics) 關聯，以建立將事件流程視覺化的基礎設施，這正是 EDA 維運的最佳實踐。

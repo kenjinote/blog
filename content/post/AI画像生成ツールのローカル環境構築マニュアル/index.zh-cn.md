@@ -208,7 +208,7 @@ stable-diffusion-webui/
 ### 7.1 注意力机制（Attention）优化（xFormers / SDP Attention）
 Stable Diffusion 的大部分计算都花在了 U-Net 内的 Cross-Attention 上。由于默认的 Attention 计算非常消耗内存，可以采用以下方法进行优化：
 
-*   **xFormers (`--xformers`)**：Meta 开发的高效内存 Attention 实现（Memory Efficient Attention）。大幅减少VRAM消耗，并提高速度，但由于计算的非确定性，具有“即使种子值完全相同，生成的图像也会有微妙差异”的特点。
+*   **xFormers (`--xformers`)**：[Meta](/zh-cn/p/history-of-meta-facebook/) 开发的高效内存 Attention 实现（Memory Efficient Attention）。大幅减少VRAM消耗，并提高速度，但由于计算的非确定性，具有“即使种子值完全相同，生成的图像也会有微妙差异”的特点。
 *   **SDP Attention (`--opt-sdp-attention`)**：从 PyTorch 2.0 开始作为标准搭载的 Scaled Dot Product Attention。它具备与 xFormers 相当的速度和节省 VRAM 的效果，同时优点是依赖项较少。也有消除非确定性的变体，如 `--opt-sub-quad-attention`。
 
 ### 7.2 节省VRAM的启动选项
@@ -266,7 +266,7 @@ ControlNet 具有这样一种架构：在保持预训练的 Stable Diffusion 模
 
 以 Stable Diffusion 为开端的开源 AI 图像生成运动，正持续向 SDXL，以及 Stable Diffusion 3、[Flux](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/).1 等次世代架构进化。模型的参数量已经从数十亿扩大到了百亿级别，未来对 24GB 以上 VRAM 的 GPU 环境的需求将进一步增加。
 
-然而，TensorRT 以及量化技术（Quantization）、GGUF 等本地优化技术也在同样加快其进化的步伐，一个即使在面向普通消费者的硬件上也能进行充分推理的生态系统正在形成。
+然而，TensorRT 以及量化技术（Quantization）、[GGUF](/zh-cn/p/llama-cpp-quantization-gguf/) 等本地优化技术也在同样加快其进化的步伐，一个即使在面向普通消费者的硬件上也能进行充分推理的生态系统正在形成。
 
 本指南中所讲解的 CUDA 环境的搭建、VRAM 的优化以及对 ComfyUI 等管线的理解，无论 AI 的技术趋势如何变化，都将成为通用的基础知识。希望大家的创造力能在没有限制的本地环境中得到最大程度的发挥。
 

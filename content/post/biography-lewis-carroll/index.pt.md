@@ -29,7 +29,7 @@ O maior encanto do trabalho de Lewis Carroll reside na fusão de "lógica exaust
 
 Como Dodgson, ele era um lógico rigoroso que foi autor de livros especializados como "Tratado Elementar sobre Determinantes" (1867) e "Lógica Simbólica" (1896). Sua literatura do nonsense é um jogo intelectual que utiliza habilmente a ambiguidade das palavras, as falácias silogísticas e a distorção do tempo e do espaço. Sua técnica de desmantelar o significado absoluto das "palavras" e libertar os leitores dos limites do senso comum tem uma profundidade que se conecta com a moderna filosofia da linguagem.
 
-Por exemplo, a famosa cena em que Humpty Dumpty afirma: "Quando eu uso uma palavra, ela significa exatamente o que eu escolho que ela signifique", é uma percepção aguda sobre a arbitrariedade da linguagem e a natureza da comunicação. Diz-se que isso influenciou filósofos posteriores como Ludwig Wittgenstein. Para ele, a "lógica" era tanto a lei absoluta que definia o mundo quanto o "brinquedo" definitivo que poderia criar um universo paralelo completamente diferente apenas ajustando levemente as condições.
+Por exemplo, a famosa cena em que Humpty Dumpty afirma: "Quando eu uso uma palavra, ela significa exatamente o que eu escolho que ela signifique", é uma percepção aguda sobre a arbitrariedade da linguagem e a natureza da comunicação. Diz-se que isso influenciou filósofos posteriores como [Ludwig Wittgenstein](/pt/p/biography-ludwig-wittgenstein/). Para ele, a "lógica" era tanto a lei absoluta que definia o mundo quanto o "brinquedo" definitivo que poderia criar um universo paralelo completamente diferente apenas ajustando levemente as condições.
 
 ## Legado: Repercussões na Literatura, Cultura e Ciência
 

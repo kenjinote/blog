@@ -28,13 +28,13 @@ Initialement, il s'est spécialisé en théologie protestante, mais sous l'influ
 
 Après l'obtention de son diplôme, [Kummer](https://kenji.blog/fr/p/kummer/) n'a pas pu obtenir immédiatement un poste universitaire. Il a donc travaillé pendant une dizaine d'années comme professeur de mathématiques et de physique dans un gymnase à Liegnitz ( **Liegnitz** ), près de sa ville natale. Cette période d'enseignement n'était en aucun cas une perte de temps. Il avait une profonde passion d'éducateur et a formé des étudiants exceptionnels.
 
-L'un de ces étudiants était Leopold [Kronecker](https://kenji.blog/fr/p/kronecker/) ( **Leopold Kronecker** ), qui deviendra plus tard le collègue et l'ami de toujours de Kummer. Kummer a reconnu le talent extraordinaire de Kronecker, lui a enseigné les mathématiques avancées et l'a mis sur la voie de la recherche. Tout en travaillant comme professeur de gymnase, [Kummer](https://kenji.blog/fr/p/kummer/) a poursuivi ses propres recherches, publiant une série d'articles exceptionnels dans des revues universitaires à Berlin.
+L'un de ces étudiants était Leopold [Kronecker](https://kenji.blog/fr/p/kronecker/) ( **[Leopold Kronecker](/fr/p/kronecker/)** ), qui deviendra plus tard le collègue et l'ami de toujours de Kummer. Kummer a reconnu le talent extraordinaire de Kronecker, lui a enseigné les mathématiques avancées et l'a mis sur la voie de la recherche. Tout en travaillant comme professeur de gymnase, [Kummer](https://kenji.blog/fr/p/kummer/) a poursuivi ses propres recherches, publiant une série d'articles exceptionnels dans des revues universitaires à Berlin.
 
 ### La gloire en tant que professeur d'université
 
-Ses remarquables résultats de recherche ont attiré l'attention des plus grands mathématiciens de l'époque. En 1842, sur recommandation de [Carl Gustav Jacob Jacobi](https://kenji.blog/fr/p/jacobi/) ( **Carl Gustav Jacob Jacobi** ) et de Peter Gustav Lejeune Dirichlet ( **Peter Gustav Lejeune Dirichlet** ), [Kummer](https://kenji.blog/fr/p/kummer/) devient professeur titulaire à l'Université de Breslau. De plus, en 1855, il est nommé professeur à l'Université de Berlin pour succéder à Dirichlet, parti pour Göttingen.
+Ses remarquables résultats de recherche ont attiré l'attention des plus grands mathématiciens de l'époque. En 1842, sur recommandation de [Carl Gustav Jacob Jacobi](https://kenji.blog/fr/p/jacobi/) ( **[Carl Gustav Jacob Jacobi](/fr/p/jacobi/)** ) et de Peter Gustav Lejeune Dirichlet ( **Peter Gustav Lejeune Dirichlet** ), [Kummer](https://kenji.blog/fr/p/kummer/) devient professeur titulaire à l'Université de Breslau. De plus, en 1855, il est nommé professeur à l'Université de Berlin pour succéder à Dirichlet, parti pour Göttingen.
 
-À l'Université de Berlin, [Kummer](https://kenji.blog/fr/p/kummer/), avec Karl Weierstrass ( **Karl Weierstrass** ) et son ancien élève [Kronecker](https://kenji.blog/fr/p/kronecker/), a fait de Berlin un centre mondial des mathématiques. Ses cours étaient extrêmement clairs et passionnés, attirant de nombreux étudiants brillants de toute l'Europe.
+À l'Université de Berlin, [Kummer](https://kenji.blog/fr/p/kummer/), avec [Karl Weierstrass](/fr/p/weierstrass/) ( **[Karl Weierstrass](/fr/p/weierstrass/)** ) et son ancien élève [Kronecker](https://kenji.blog/fr/p/kronecker/), a fait de Berlin un centre mondial des mathématiques. Ses cours étaient extrêmement clairs et passionnés, attirant de nombreux étudiants brillants de toute l'Europe.
 
 ---
 
@@ -64,7 +64,7 @@ $$
 
 Il n'existe aucune solution entière positive $(x, y, z)$ satisfaisant cette équation.
 
-En 1847, les mathématiciens français [Gabriel Lamé](https://kenji.blog/fr/p/lame/) ( **Gabriel Lamé** ) et Augustin-Louis Cauchy ( **[Augustin-Louis Cauchy](https://kenji.blog/fr/p/cauchy/)** ) annoncèrent avoir réussi à prouver ce théorème. Leur approche consistait à étendre la factorisation dans le domaine des nombres complexes (corps cyclotomiques).
+En 1847, les mathématiciens français [Gabriel Lamé](https://kenji.blog/fr/p/lame/) ( **[Gabriel Lamé](/fr/p/lame/)** ) et [Augustin-Louis Cauchy](/fr/p/cauchy/) ( **[Augustin-Louis Cauchy](https://kenji.blog/fr/p/cauchy/)** ) annoncèrent avoir réussi à prouver ce théorème. Leur approche consistait à étendre la factorisation dans le domaine des nombres complexes (corps cyclotomiques).
 
 En utilisant la racine primitive $p$-ième de l'unité $\zeta$ (où $\zeta^p = 1, \zeta \neq 1$), l'équation $x^p + y^p = z^p$ peut être factorisée comme suit :
 

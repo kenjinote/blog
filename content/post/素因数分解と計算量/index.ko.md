@@ -23,7 +23,7 @@ tags: ["Big O Notation", "Prime Factorization", "Algorithms", "RSA"]
 
 알고리즘의 성능이나 효율을 평가할 때, 단순히 '프로그램의 실행 시간(초)'을 측정하는 것만으로는 불충분합니다. 왜냐하면 실행 시간은 사용하는 컴퓨터의 성능(CPU 클럭 수나 메모리 속도 등)이나 프로그래밍 언어, 컴파일러의 최적화에 크게 의존하기 때문입니다.
 
-따라서 하드웨어나 환경에 의존하지 않는 보편적인 평가 지표로 사용되는 것이 **시간 복잡도(Time Complexity)** 이며, 이를 표현하기 위한 표기법이 ** 빅오 표기법(Big-O Notation)** 입니다. 빅오 표기법은 입력 데이터의 크기 $N$이 매우 커졌을 때, 알고리즘의 실행 시간(혹은 실행 단계 수)이 $N$에 대해 어떻게 증가해 가는지(점근적 증가율)를 나타내는 수학적인 표기법입니다.
+따라서 하드웨어나 환경에 의존하지 않는 보편적인 평가 지표로 사용되는 것이 **시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)(Time Complexity)** 이며, 이를 표현하기 위한 표기법이 ** 빅오 표기법(Big-O Notation)** 입니다. 빅오 표기법은 입력 데이터의 크기 $N$이 매우 커졌을 때, 알고리즘의 실행 시간(혹은 실행 단계 수)이 $N$에 대해 어떻게 증가해 가는지(점근적 증가율)를 나타내는 수학적인 표기법입니다.
 
 ## 점근적 표기법의 수학적 정의
 
@@ -206,12 +206,12 @@ GNFS는 매우 복잡하지만 대체로 다음과 같은 단계로 진행됩니
 ### 일반 수체 체의 계산량: 준지수 시간 (Sub-exponential time)
 
 GNFS의 최대 공적은 소인수분해의 계산량을 '순수한 지수 시간'에서 **'준지수 시간(Sub-exponential time)'** 으로 낮춘 것입니다.
-GNFS의 점근적 시간 복잡도는 L 표기법(L-notation)이라고 불리는 특별한 표기법을 사용하여 다음과 같이 표현됩니다.
+GNFS의 점근적 시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)는 L 표기법(L-notation)이라고 불리는 특별한 표기법을 사용하여 다음과 같이 표현됩니다.
 
 $$ L_N[\gamma, c] = \exp\left( (c + o(1)) (\ln N)^\gamma (\ln \ln N)^{1-\gamma} \right) $$
 
 여기서 $N$은 분해하고 싶은 수, $\ln$은 자연로그입니다.
-$\gamma$는 $0 \le \gamma \le 1$의 값을 갖는 매개변수로, 알고리즘 복잡도의 '정도'를 나타냅니다.
+$\gamma$는 $0 \le \gamma \le 1$의 값을 갖는 매개변수로, 알고리즘 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)의 '정도'를 나타냅니다.
 - $\gamma = 0$일 때, $L_N[0, c]$는 $(\ln N)^c$가 되어 다항식 시간 $\mathcal{O}(n^c)$를 의미합니다. (효율적)
 - $\gamma = 1$일 때, $L_N[1, c]$는 $e^{c \ln N} = N^c$가 되어 지수 시간 $\mathcal{O}(2^{cn})$을 의미합니다. (비효율적)
 
@@ -240,7 +240,7 @@ $$ \mathcal{O}\left( \exp\left( 1.923 \cdot n^{1/3} (\ln n)^{2/3} \right) \right
 소인수분해 문제는 NP(답이 주어지면 다항식 시간 안에 정답 여부를 검증할 수 있는 문제 클래스)에 속해 있지만, NP-완전(NP 중에서 가장 어려운 문제 클래스)이라고는 증명되지 않았습니다.
 또한 P(다항식 시간에 풀 수 있는 문제 클래스)에 속하는지(즉, 다항식 시간 알고리즘이 존재하는지) 여부도 미해결입니다.
 
-많은 연구자들은 소인수분해가 P도 아니고 NP-완전도 아닌 중간 클래스에 속해 있다고(NP-intermediate) 예상합니다. 만약 소인수분해를 고전 컴퓨터에서 다항식 시간에 푸는 알고리즘(예를 들어 $\mathcal{O}(n^3)$ 등)이 발견된다면 전 세계의 암호 시스템이 붕괴되는 대사건이 되겠지만, 현재까지 그러한 알고리즘은 발견되지 않았습니다. 2048비트 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호 해독에는 고전 컴퓨터의 성능 향상이 무어의 법칙을 따른다고 해도 우주의 수명보다 더 오랜 시간이 걸릴 것으로 추산됩니다.
+많은 연구자들은 소인수분해가 P도 아니고 NP-완전도 아닌 중간 클래스에 속해 있다고(NP-intermediate) 예상합니다. 만약 소인수분해를 고전 컴퓨터에서 다항식 시간에 푸는 알고리즘(예를 들어 $\mathcal{O}(n^3)$ 등)이 발견된다면 전 세계의 암호 시스템이 붕괴되는 대사건이 되겠지만, 현재까지 그러한 알고리즘은 발견되지 않았습니다. 2048비트 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호 해독에는 고전 컴퓨터의 성능 향상이 [무어의 법칙](/ko/p/business-moores-law/)을 따른다고 해도 우주의 수명보다 더 오랜 시간이 걸릴 것으로 추산됩니다.
 
 ## 양자 컴퓨터라는 '게임 체인저': 쇼어의 알고리즘
 
@@ -270,7 +270,7 @@ graph LR
 쇼어의 알고리즘에서는 고전적인 알고리즘에서 병목이 되었던 '주기 발견'이라는 프로세스를 양자 얽힘과 양자 중첩을 사용한 '양자 푸리에 변환(QFT)'을 통해 병렬적이고 순식간에 계산해 버립니다.
 실용적인 규모의(노이즈가 적고 충분한 수의 논리 양자 비트를 가지는) 양자 컴퓨터상에서 실행할 수 있게 되면, 현재 안전하다고 여겨지는 2048비트 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호는 몇 시간에서 며칠 만에 완전히 해독되어 버릴 가능성이 있습니다.
 
-이러한 위협에 대비해 현재 전 세계의 암호학자들과 NIST(미국 국립표준기술연구소)는 양자 컴퓨터로도 해독이 어려운 '양자 내성 암호(Post-Quantum [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy: PQC)'로의 이전을 위한 표준화 작업을 빠른 속도로 진행하고 있습니다. 격자 기반 암호(Lattice-based cryptography) 등이 그 대표적인 예이며, 이들은 소인수분해 문제와는 완전히 다른 수학적 난제(예를 들어 최단 벡터 문제 등)에 안전성의 근거를 두고 있습니다.
+이러한 위협에 대비해 현재 전 세계의 암호학자들과 NIST(미국 국립표준기술연구소)는 양자 컴퓨터로도 해독이 어려운 '양자 내성 암호(Post-Quantum [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy: PQC)'로의 이전을 위한 표준화 작업을 빠른 속도로 진행하고 있습니다. 격자 기반 암호([Lattice-based cryptography](/ko/p/lattice-based-cryptography-math-intuition/)) 등이 그 대표적인 예이며, 이들은 소인수분해 문제와는 완전히 다른 수학적 난제(예를 들어 최단 벡터 문제 등)에 안전성의 근거를 두고 있습니다.
 
 ---
 

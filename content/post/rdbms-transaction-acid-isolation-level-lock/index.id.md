@@ -292,4 +292,4 @@ Ketika menjalankan pernyataan UPDATE ini, sisi aplikasi akan memeriksa nilai kem
 - Memahami karakteristik **Pessimistic Lock** dan **Optimistic Lock**, serta mengimplementasikan kontrol eksklusif yang paling optimal pada aplikasi sesuai dengan logika bisnis dan sifat lalu lintas data (frekuensi konflik).
 
 Hanya dengan menggabungkan pengetahuan dan teknik ini, kita baru bisa membangun sistem yang kokoh dengan semboyan "mampu berkembang dengan performa tinggi tanpa menyebabkan inkonsistensi data".
-Pada artikel selanjutnya, kami akan membahas bagaimana kontrol transaksi berevolusi pada arsitektur sistem terdistribusi dan layanan mikro ([Microservices](https://kenji.blog/id/p/microservices-architecture-bff-api-gateway/)), seperti pola Saga dan 2PC. Selamat menantikan.
+Pada artikel selanjutnya, kami akan membahas bagaimana kontrol transaksi berevolusi pada arsitektur [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/) dan layanan mikro ([Microservices](https://kenji.blog/id/p/microservices-architecture-bff-api-gateway/)), seperti pola Saga dan 2PC. Selamat menantikan.

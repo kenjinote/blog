@@ -246,7 +246,7 @@ La publicité se distingue également des résultats ordinaires. Placement payan
 
 ## 15. Interroger rapidement un index immense
 
-Une seule machine limite stockage, débit et résistance aux pannes. Les systèmes distribués divisent l'index, interrogent différentes machines puis fusionnent les réponses. Ces partitions sont souvent appelées fragments, ou shards.
+Une seule machine limite stockage, débit et résistance aux pannes. Les [systèmes distribués](/fr/p/cap-theorem-distributed-systems-tradeoff/) divisent l'index, interrogent différentes machines puis fusionnent les réponses. Ces partitions sont souvent appelées fragments, ou shards.
 
 Avec un découpage par documents, chaque fragment reçoit la requête et renvoie ses candidats prometteurs. Un coordinateur les compare. Des statistiques locales différentes peuvent cependant rendre les scores moins comparables. Le choix entre statistiques locales et globales concerne aussi la qualité. [Manuel : distribution des index][distributed]
 

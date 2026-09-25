@@ -10,7 +10,7 @@ tags: ["Euler", "Geschichte der Mathematik", "Genie", "Physik"]
 
 ## Einleitung
 
-Wenn man auf die Geschichte der Mathematik zurückblickt, ist es absolut unmöglich, den Namen **[Leonhard Euler](https://kenji.blog/de/p/euler/)** (1707–1783) wegzulassen. Er ist weithin als einer der produktivsten und einflussreichsten Mathematiker der Menschheitsgeschichte anerkannt. Von der Analysis und Zahlentheorie bis hin zu Graphentheorie, Mechanik, Optik und Astronomie erstreckt sich sein Forscherdrang und seine Spuren über jeden Bereich der Wissenschaft.
+Wenn man auf die Geschichte der Mathematik zurückblickt, ist es absolut unmöglich, den Namen **[Leonhard Euler](https://kenji.blog/de/p/euler/)** (1707–1783) wegzulassen. Er ist weithin als einer der produktivsten und einflussreichsten Mathematiker der Menschheitsgeschichte anerkannt. Von der Analysis und Zahlentheorie bis hin zu [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/), Mechanik, Optik und Astronomie erstreckt sich sein Forscherdrang und seine Spuren über jeden Bereich der Wissenschaft.
 
 In diesem Artikel werden wir tief in das turbulente Leben des Genies Euler und die brillanten Errungenschaften, die er der Nachwelt hinterlassen hat, eintauchen. Die von ihm entdeckten Gesetze und Formeln bilden die Grundlage der heutigen Wissenschaft und Technologie und sind für uns, die wir in der modernen Welt leben, keineswegs bedeutungslos.
 
@@ -91,11 +91,11 @@ graph TD
 
 Er bewies mathematisch, dass für die Existenz eines Pfades, der jede Brücke genau einmal überquert (ein sogenannter Eulerweg), die Anzahl der Landmassen mit einer ungeraden Anzahl von angeschlossenen Brücken (ungerade Knoten) genau 0 oder 2 sein muss. Im Fall von Königsberg waren alle Landmassen ungerade Knoten, was bewies, dass die Aufgabe unmöglich war.
 
-Diese Entdeckung war bahnbrechend und legte den Grundstein für die moderne **Graphentheorie** und **Topologie**.
+Diese Entdeckung war bahnbrechend und legte den Grundstein für die moderne **[Graphentheorie](/de/p/graph-theory-dijkstra-a-star/)** und **Topologie**.
 
 ### 4.3 Die Eulersche Identität
 
-Oft als die „schönste Formel“ der Mathematik gepriesen, ist die **Eulersche Identität**.
+Oft als die „schönste Formel“ der Mathematik gepriesen, ist die **[Eulersche Identität](/de/p/eulers-identity/)**.
 
 $$
 e^{i\pi} + 1 = 0 \quad (\text{Eulersche Identität})
@@ -109,7 +109,7 @@ Diese kurze Gleichung verbindet auf elegante Weise fünf zutiefst wichtige mathe
 - $e$ (Eulersche Zahl: Analysis)
 - $i$ (imaginäre Einheit: Algebra)
 
-Die Tatsache, dass Konstanten, die aus völlig verschiedenen Bereichen stammen, in einer einzigen, einfachen Gleichung perfekt vereint sind, repräsentiert das tiefe Geheimnis und die Harmonie der Mathematik. Der Physiker Richard Feynman nannte dies berühmt „unser Juwel“ und „die bemerkenswerteste Formel der Mathematik“.
+Die Tatsache, dass Konstanten, die aus völlig verschiedenen Bereichen stammen, in einer einzigen, einfachen Gleichung perfekt vereint sind, repräsentiert das tiefe Geheimnis und die Harmonie der Mathematik. Der Physiker [Richard Feynman](/de/p/biography-richard-feynman/) nannte dies berühmt „unser Juwel“ und „die bemerkenswerteste Formel der Mathematik“.
 
 ## 5. Beiträge zur Physik und anderen Bereichen
 

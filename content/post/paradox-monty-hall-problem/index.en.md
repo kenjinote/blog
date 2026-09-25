@@ -121,7 +121,7 @@ Therefore, the expected win rate of the strategy to change choices is 2/3 × 100
 
 ## Chapter 3: Strict Solution Using Bayes' Theorem
 
-The Monty Hall problem can be solved more mathematically and strictly by using "Bayes' theorem" to calculate conditional probabilities. Bayesian inference is a powerful tool that shows how a prior probability should be updated (posterior probability) when new information (evidence) is obtained.
+The Monty Hall problem can be solved more mathematically and strictly by using "[Bayes' theorem](/en/p/bayes-theorem/)" to calculate conditional probabilities. Bayesian inference is a powerful tool that shows how a prior probability should be updated (posterior probability) when new information (evidence) is obtained.
 
 Let the events be defined as follows:
 - $C_i$ : The event that the new car is behind door $i$ ($i \in \{A, B, C\}$)
@@ -140,7 +140,7 @@ Monty's rules of action (conditional probabilities $P(M_B|C_i)$) are as follows:
 2. If the new car is behind Door B ($C_B$), Monty can never open B, so $P(M_B|C_B) = 0$
 3. If the new car is behind Door C ($C_C$), Monty cannot open C, and he cannot open A because the player chose it. Therefore, he is forced to open B, so $P(M_B|C_C) = 1$
 
-The formula for Bayes' theorem is as follows:
+The formula for [Bayes' theorem](/en/p/bayes-theorem/) is as follows:
 $P(C_i|M_B) = \frac{P(M_B|C_i) P(C_i)}{P(M_B)}$
 
 We calculate the denominator $P(M_B)$ (the total probability that Monty opens Door B) (Law of Total Probability).
@@ -155,7 +155,7 @@ $P(C_A|M_B) = \frac{P(M_B|C_A) P(C_A)}{P(M_B)} = \frac{(1/2) \times (1/3)}{1/2} 
 **Probability that the new car is behind Door C (changing choice):**
 $P(C_C|M_B) = \frac{P(M_B|C_C) P(C_C)}{P(M_B)} = \frac{1 \times (1/3)}{1/2} = 2/3$
 
-In this way, using Bayes' theorem mathematically perfectly proves that the probability is updated by the new information (Monty opening Door B), and the probability of Door C jumps to 2/3.
+In this way, using [Bayes' theorem](/en/p/bayes-theorem/) mathematically perfectly proves that the probability is updated by the new information (Monty opening Door B), and the probability of Door C jumps to 2/3.
 
 ## Chapter 4: Why Does Human Intuition Get It Wrong? (Psychological and Cognitive Factors)
 
@@ -204,7 +204,7 @@ For example, suppose there is an "intractable disease that affects 1 in 10,000 p
 If you take this test and are judged "positive", what is the probability that you actually have that intractable disease?
 
 Intuitively, you might despair, thinking, "Since the accuracy is 99%, the probability that I am sick must also be 99%."
-However, calculating with Bayes' theorem, the probability that you are actually afflicted is **only just under 1% (about 0.98%)**. This is because 1% (about 100 people) of the overwhelming majority of "healthy people (9,999 people)" will be "false positives", so within the group of people who tested positive, the genuine patients (almost 1 person) become a tiny minority.
+However, calculating with [Bayes' theorem](/en/p/bayes-theorem/), the probability that you are actually afflicted is **only just under 1% (about 0.98%)**. This is because 1% (about 100 people) of the overwhelming majority of "healthy people (9,999 people)" will be "false positives", so within the group of people who tested positive, the genuine patients (almost 1 person) become a tiny minority.
 
 In this way, the overwhelming divergence between intuitive probability evaluation (99%) and mathematical truth (1%) risks bringing unnecessary panic or wrong medical decisions to people. Understanding the Monty Hall problem is the first step to acquiring the literacy to correctly evaluate such "information asymmetry and prior probability".
 

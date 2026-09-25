@@ -10,13 +10,13 @@ image: "eyecatch.jpg"
 
 ## 1. Introduction: Is the "Object-Oriented Programming" We Know Authentic?
 
-In modern software development, not a day goes by without hearing the term "Object-Oriented Programming (OOP)". Most mainstream programming languages, such as Java, C#, Python, Ruby, and C++, have adopted the object-oriented paradigm, making it essential knowledge for developers.
+In modern software development, not a day goes by without hearing the term "Object-Oriented Programming ([OOP](/en/p/object-oriented-programming-oop-solid-principles/))". Most mainstream programming languages, such as Java, C#, Python, Ruby, and C++, have adopted the object-oriented paradigm, making it essential knowledge for developers.
 
 However, did you know that the "three major elements of object-oriented programming" that many developers learn first—namely "Encapsulation", "Inheritance", and "Polymorphism"—actually deviate significantly from the original essence intended by Alan Kay, who is considered the father of object-oriented programming?
 
 The style we routinely write, "defining a class, generating an instance, and calling a method using dot notation", is certainly one form of object-oriented programming built by specific languages (e.g., C++ and Java). But that is only a small part, or rather a specific interpretation, of the vast concept of object-oriented programming.
 
-In this article, we will return to the early history when the term object-oriented was born and the vision Alan Kay truly wanted to realize. The key word here is **"Messaging"**. By correctly understanding the concept of messaging, your perspective on system design will greatly expand, providing you with deep insights that connect to modern distributed system designs such as microservices architecture and the actor model.
+In this article, we will return to the early history when the term object-oriented was born and the vision Alan Kay truly wanted to realize. The key word here is **"Messaging"**. By correctly understanding the concept of messaging, your perspective on system design will greatly expand, providing you with deep insights that connect to modern distributed system designs such as [microservices architecture](/en/p/microservices-architecture-bff-api-gateway/) and the actor model.
 
 ## 2. Alan Kay's Vision: Inspiration from Biology
 
@@ -71,7 +71,7 @@ The characteristics of messaging are as follows:
 2. **Delegation and Ignoring of Messages**
    When an object receives a message it does not understand, it can autonomously respond flexibly, such as by forwarding it to another object or ignoring it, rather than just treating it as an error.
 3. **Network Transparency**
-   The paradigm of messaging allows objects within the same memory space (process) or objects on entirely separate servers across a network to be treated in the same way. While method invocation presupposes being in the same memory space, messaging has the property of naturally scaling to distributed systems.
+   The paradigm of messaging allows objects within the same memory space (process) or objects on entirely separate servers across a network to be treated in the same way. While method invocation presupposes being in the same memory space, messaging has the property of naturally scaling to [distributed systems](/en/p/cap-theorem-distributed-systems-tradeoff/).
 
 ## 4. Why Did "Classes" and "Inheritance" Become the Source of Misunderstanding?
 
@@ -115,7 +115,7 @@ flowchart LR
 
 In Erlang/Elixir, hundreds of thousands of lightweight actors (processes) run concurrently and build huge systems by sending messages to each other. Even if one actor crashes, it achieves extremely high fault tolerance by sending a message to another actor to restart it (the "Let it crash" philosophy).
 
-Furthermore, the modern **"Microservices Architecture"** is essentially a giant version of messaging-oriented OOP. If each microservice is viewed as one massive "object", they completely hide their own databases (internal state) and build the entire system through the exchange of "messages" via REST APIs, gRPC, Kafka, and the like.
+Furthermore, the modern **"[Microservices Architecture](/en/p/microservices-architecture-bff-api-gateway/)"** is essentially a giant version of messaging-oriented [OOP](/en/p/object-oriented-programming-oop-solid-principles/). If each microservice is viewed as one massive "object", they completely hide their own databases (internal state) and build the entire system through the exchange of "messages" via REST APIs, gRPC, Kafka, and the like.
 
 The vision Alan Kay dreamed of, "objects scattered across different nodes on a network sending messages to each other", has unexpectedly been realized in the cloud-native era in the form of microservices.
 
@@ -128,7 +128,7 @@ However, in order to manage system complexity and perform flexible, scalable des
 1. **Do not needlessly expose data and behavior** (protect the cell wall).
 2. **Send messages as "requests", not as method invocations** (respect autonomy).
 3. **Be conscious of runtime flexibility and late binding**.
-4. **Understand architecture through a common metaphor, from within a process to distributed systems**.
+4. **Understand architecture through a common metaphor, from within a process to [distributed systems](/en/p/cap-theorem-distributed-systems-tradeoff/)**.
 
 The next time you write code or think about system design, try to have the perspective of "What kind of messages should this object send to other objects?". By focusing on "the network and communication of objects" rather than "class hierarchies", your design should become more refined, resilient to change, and truly "object-oriented".
 

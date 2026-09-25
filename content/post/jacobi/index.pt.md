@@ -16,7 +16,7 @@ tags:
 
 # 1. Introdução: Um Buscador do Pensamento Puro
 
-[Carl Gustav Jacob Jacobi](https://kenji.blog/pt/p/jacobi/) (1804–1851) foi um **matemático alemão** do século XIX que fez contribuições decisivas para diversos campos como álgebra, análise, teoria dos números e mecânica. Junto com Niels Henrik Abel, ele é celebrado como o "descobridor das funções elípticas", e é o homônimo do "[Jacobi](https://kenji.blog/pt/p/jacobi/)ano" (determinante jacobiano) que frequentemente encontramos no cálculo multivariável hoje.
+[Carl Gustav Jacob Jacobi](https://kenji.blog/pt/p/jacobi/) (1804–1851) foi um **matemático alemão** do século XIX que fez contribuições decisivas para diversos campos como álgebra, análise, teoria dos números e mecânica. Junto com [Niels Henrik Abel](/pt/p/abel/), ele é celebrado como o "descobridor das funções elípticas", e é o homônimo do "[Jacobi](https://kenji.blog/pt/p/jacobi/)ano" (determinante jacobiano) que frequentemente encontramos no cálculo multivariável hoje.
 
 Ele valorizava a beleza da matemática em si e a honra do espírito humano acima da utilidade prática. Neste artigo, nos aprofundaremos na vida de [Jacobi](https://kenji.blog/pt/p/jacobi/), suas principais conquistas matemáticas e os famosos episódios que ele deixou para trás.
 

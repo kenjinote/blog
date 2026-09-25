@@ -52,7 +52,7 @@ Este era el titular del periódico británico "The Times" de la época, y serví
 
 ## 3. Arquitectura [Blockchain](https://kenji.blog/es/p/blockchain-technology-smart-contract-distributed-ledger/)
 
-La tecnología central que soporta Bitcoin es la "Cadena de bloques" (Blockchain). Blockchain es una forma de Tecnología de Libro Mayor Distribuido ([Distributed Ledger](https://kenji.blog/es/p/blockchain-technology-smart-contract-distributed-ledger/) Technology: DLT), que tiene una estructura donde los datos se agrupan en unidades llamadas "bloques" y están vinculados criptográficamente como una cadena.
+La tecnología central que soporta Bitcoin es la "Cadena de bloques" ([Blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/)). [Blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/) es una forma de Tecnología de Libro Mayor Distribuido ([Distributed Ledger](https://kenji.blog/es/p/blockchain-technology-smart-contract-distributed-ledger/) Technology: DLT), que tiene una estructura donde los datos se agrupan en unidades llamadas "bloques" y están vinculados criptográficamente como una cadena.
 
 ```mermaid
 flowchart TD
@@ -76,7 +76,7 @@ La cabecera de bloque contiene la siguiente información:
 
 ### Árboles de Merkle (Merkle Trees)
 
-En blockchain, se utiliza una estructura de datos llamada **Árbol de Merkle (Merkle [Tree](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** para detectar eficientemente la manipulación de datos mientras se mantiene bajo el tamaño del bloque. El Árbol de Merkle es un tipo de árbol binario donde los nodos hoja contienen el valor hash de cada transacción, y los nodos padre son los valores hash concatenados de sus nodos hijos, aplicándoseles hash nuevamente.
+En [blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/), se utiliza una estructura de datos llamada **Árbol de Merkle (Merkle [Tree](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** para detectar eficientemente la manipulación de datos mientras se mantiene bajo el tamaño del bloque. El Árbol de Merkle es un tipo de árbol binario donde los nodos hoja contienen el valor hash de cada transacción, y los nodos padre son los valores hash concatenados de sus nodos hijos, aplicándoseles hash nuevamente.
 
 ```mermaid
 flowchart TD
@@ -115,7 +115,7 @@ Cuando Alice envía Bitcoin a Bob, Alice usa su clave privada para crear una **f
 
 ### Criptografía de Curva Elíptica (Elliptic Curve Cryptography: ECC) y secp256k1
 
-Para la generación de claves públicas de Bitcoin y firmas digitales, se emplea **criptografía de curva elíptica (ECC)** en lugar del cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/). ECC tiene la ventaja de proporcionar niveles de seguridad equivalentes con tamaños de clave mucho más cortos en comparación con RSA.
+Para la generación de claves públicas de Bitcoin y firmas digitales, se emplea **criptografía de curva elíptica ([ECC](/es/p/elliptic-curve-cryptography-math-cpp/))** en lugar del cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/). [ECC](/es/p/elliptic-curve-cryptography-math-cpp/) tiene la ventaja de proporcionar niveles de seguridad equivalentes con tamaños de clave mucho más cortos en comparación con RSA.
 
 Los parámetros específicos de la curva elíptica utilizada en Bitcoin se llaman **secp256k1**. Esta curva está definida sobre un campo finito $\mathbb{F}_p$ y se expresa mediante la siguiente ecuación:
 
@@ -216,7 +216,7 @@ Bitcoin es un sistema extremadamente robusto y seguro, pero a cambio enfrenta de
 
 ### Bifurcaciones (Forks): Soft Fork y Hard Fork
 
-Al actualizar el protocolo blockchain, puede ocurrir un evento llamado "bifurcación" (Fork).
+Al actualizar el protocolo [blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/), puede ocurrir un evento llamado "bifurcación" (Fork).
 - **Bifurcación suave (Soft Fork)**: Una actualización retrocompatible. Incluso los nodos con las reglas antiguas consideran válidos los bloques con las nuevas reglas (Ej. Introducción de SegWit).
 - **Bifurcación dura (Hard Fork)**: Una actualización que no es retrocompatible. Los bloques con las nuevas reglas son rechazados por los nodos antiguos, por lo que la red puede dividirse completamente en dos (Ej. El nacimiento de Bitcoin Cash).
 
@@ -234,7 +234,7 @@ En PoS, el derecho a generar el siguiente bloque (validador) se asigna probabil�
 
 ## 8. El Abismo de la Teoría Criptográfica: Demostraciones Matemáticas y Robustez del Protocolo
 
-Detrás de SHA-256 y la criptografía de curva elíptica (ECC) explicadas en los capítulos anteriores, hay dos paradigmas: seguridad de la información teórica y seguridad computacional. Las criptomonedas modernas, incluido Bitcoin, se basan principalmente en la seguridad computacional (Computational Security).
+Detrás de SHA-256 y la criptografía de curva elíptica ([ECC](/es/p/elliptic-curve-cryptography-math-cpp/)) explicadas en los capítulos anteriores, hay dos paradigmas: seguridad de la información teórica y seguridad computacional. Las criptomonedas modernas, incluido Bitcoin, se basan principalmente en la seguridad computacional (Computational Security).
 
 ### Seguridad Computacional y el Problema del Logaritmo Discreto
 
@@ -248,13 +248,13 @@ Dado que $p \approx 2^{256}$ en secp256k1 de Bitcoin, el descifrado requiere alr
 ### La Amenaza de las Computadoras Cuánticas y la Criptografía Poscúantica
 
 Sin embargo, hay una gran preocupación con la seguridad computacional. Ese es el surgimiento de las **computadoras cuánticas (Quantum Computers)**.
-En 1994, Peter Shor publicó el "[Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/)" (Shor's Algorithm), que demostró matemáticamente que las computadoras cuánticas pueden resolver el problema de factorización de enteros (la base del cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)) y el problema del logaritmo discreto (la base de ECC) en tiempo polinomial $\mathcal{O}(n^3)$.
+En 1994, Peter Shor publicó el "[Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/)" (Shor's Algorithm), que demostró matemáticamente que las computadoras cuánticas pueden resolver el problema de factorización de enteros (la base del cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)) y el problema del logaritmo discreto (la base de [ECC](/es/p/elliptic-curve-cryptography-math-cpp/)) en tiempo polinomial $\mathcal{O}(n^3)$.
 
 Si se completan computadoras cuánticas prácticas a gran escala con suficientes qubits y bajas tasas de error, existe el riesgo de que la clave privada pueda ser calculada inversamente a partir de la clave pública de Bitcoin.
 Las medidas de defensa de la red de Bitcoin contra esto son las siguientes:
 
-1. **Protección de funciones hash**: Una dirección de Bitcoin no es la clave pública en sí, sino el resultado de aplicar las funciones hash SHA-256 y RIPEMD-160 a la clave pública. Incluso utilizando computadoras cuánticas, invertir una función hash (incluso con el algoritmo de Grover, la complejidad es $\mathcal{O}(\sqrt{N})$) sigue siendo difícil. Por lo tanto, hasta que se realice una transacción y la clave pública se exponga a la red, el contenido de la dirección se considera seguro incluso contra computadoras cuánticas.
-2. **Migración a Criptografía Poscúantica (Post-Quantum [Cryptography](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/): PQC)**: Se está discutiendo realizar una bifurcación dura en el protocolo de Bitcoin antes de que las computadoras cuánticas se vuelvan prácticas, con el fin de migrar a nuevos algoritmos de firma que sean difíciles de descifrar incluso para las computadoras cuánticas, como la criptografía basada en retículos (Lattice-based cryptography) y la criptografía polinómica multivariable (Multivariate polynomial cryptography) seleccionadas por el NIST (Instituto Nacional de Estándares y Tecnología de EE. UU.).
+1. **Protección de funciones hash**: Una dirección de Bitcoin no es la clave pública en sí, sino el resultado de aplicar las funciones hash SHA-256 y RIPEMD-160 a la clave pública. Incluso utilizando computadoras cuánticas, invertir una función hash (incluso con [el algoritmo de Grover](/es/p/grovers-algorithm-quantum-search/), la complejidad es $\mathcal{O}(\sqrt{N})$) sigue siendo difícil. Por lo tanto, hasta que se realice una transacción y la clave pública se exponga a la red, el contenido de la dirección se considera seguro incluso contra computadoras cuánticas.
+2. **Migración a Criptografía Poscúantica (Post-Quantum [Cryptography](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/): PQC)**: Se está discutiendo realizar una bifurcación dura en el protocolo de Bitcoin antes de que las computadoras cuánticas se vuelvan prácticas, con el fin de migrar a nuevos algoritmos de firma que sean difíciles de descifrar incluso para las computadoras cuánticas, como la criptografía basada en retículos ([Lattice-based cryptography](/es/p/lattice-based-cryptography-math-intuition/)) y la criptografía polinómica multivariable (Multivariate polynomial cryptography) seleccionadas por el NIST (Instituto Nacional de Estándares y Tecnología de EE. UU.).
 
 ## 9. Topología de Red y Detalles del Protocolo [P2P](https://kenji.blog/es/p/webrtc-realtime-communication-p2p/)
 
@@ -311,7 +311,7 @@ Incluso si uno invierte costos enormes (miles de millones de dólares en hardwar
 
 En este artículo, hemos analizado exhaustivamente los mecanismos matemáticos, técnicos y económicos detrás de Bitcoin y las criptomonedas.
 
-A primera vista, la tecnología blockchain puede parecer una masa compleja de matemáticas y código, pero su esencia no es otra que **"un nuevo sistema de consenso para la humanidad que se basa en las matemáticas y las leyes de la física como base de la confianza, sin depender de la autoridad"**.
+A primera vista, la tecnología [blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/) puede parecer una masa compleja de matemáticas y código, pero su esencia no es otra que **"un nuevo sistema de consenso para la humanidad que se basa en las matemáticas y las leyes de la física como base de la confianza, sin depender de la autoridad"**.
 
 El sistema financiero que utilizamos como algo habitual todos los días ha colapsado muchas veces a lo largo de su larga historia, y en cada ocasión se ha corregido con parches. La solución propuesta por Satoshi Nakamoto no es de ninguna manera perfecta. Existen innumerables obstáculos por superar, como los problemas de escalabilidad, los problemas ambientales y las regulaciones nacionales junto con el marco legal.
 
@@ -319,7 +319,7 @@ Sin embargo, el concepto de un "sistema descentralizado sin confianza", una vez 
 
 ## Apéndice: Recursos y Referencias para un Aprendizaje Profundo
 
-Para aquellos que leyeron este artículo y desean aprender más profundamente sobre la tecnología blockchain y la teoría criptográfica, a continuación se presentan algunos recursos recomendados.
+Para aquellos que leyeron este artículo y desean aprender más profundamente sobre la tecnología [blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/) y la teoría criptográfica, a continuación se presentan algunos recursos recomendados.
 
 ### Artículos Originales de Lectura Obligatoria (Whitepapers)
 - **Bitcoin: A Peer-to-Peer Electronic Cash System** (Satoshi Nakamoto, 2008)
@@ -336,4 +336,4 @@ Para comprender verdaderamente la cadena de bloques, es esencial el conocimiento
 > **Warning: Descargo de responsabilidad sobre la inversión**
 > Este artículo fue creado con el propósito de explicar la tecnología subyacente de las criptomonedas, así como su historia y estructura matemática, y no recomienda ni solicita inversión en ninguna criptomoneda. El precio de las criptomonedas es extremadamente volátil y la inversión conlleva riesgos significativos, incluida la pérdida del capital.
 
-La exploración tecnológica de blockchain es una frontera de conocimiento donde se cruzan las ciencias de la computación, la economía y la sociología. Al leer el código, configurar tu propio nodo y crear transacciones en la red de prueba (testnet), podrás sentir verdaderamente el verdadero potencial y las limitaciones de esta tecnología de primera mano.
+La exploración tecnológica de [blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/) es una frontera de conocimiento donde se cruzan las ciencias de la computación, la economía y la sociología. Al leer el código, configurar tu propio nodo y crear transacciones en la red de prueba (testnet), podrás sentir verdaderamente el verdadero potencial y las limitaciones de esta tecnología de primera mano.

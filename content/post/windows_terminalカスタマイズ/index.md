@@ -315,7 +315,7 @@ Import-Module -Name Terminal-Icons
 
 # 7. プロンプトの進化論2：WSL2アーキテクチャとStarshipの融合
 
-Windows上で本物のLinuxカーネルを実行できるWSL2（Windows Subsystem for Linux 2）は、モダンなWeb開発やクラウドネイティブ開発に不可欠です。WSL内のシェル（BashやZsh）のプロンプトをカスタマイズするには、「 **Starship** 」が最適解となります。
+Windows上で本物のLinuxカーネルを実行できる[WSL2](/p/wsl2-ultimate-development-setup-guide/)（[Windows Subsystem for Linux](/p/wsl2-ultimate-development-setup-guide/) 2）は、モダンなWeb開発やクラウドネイティブ開発に不可欠です。WSL内のシェル（BashやZsh）のプロンプトをカスタマイズするには、「 **Starship** 」が最適解となります。
 
 Starshipは[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)言語で記述された、極めて高速でカスタマイズ性に優れたクロスシェルプロンプトです。設定ファイル（TOML）を一つ書くだけで、Bash、Zsh、Fishなどどのシェルでも全く同じプロンプトを再現できるのが強みです。
 
@@ -411,7 +411,7 @@ $$
 - $ T_{hw\_input} $: キーボードのメカニカルスイッチがオンになり、USBコントローラ経由でポーリングされ、割り込み信号が送られるまでのハードウェア遅延（約 1〜5 ms）。
 - $ T_{os} $: OSのHID（Human Interface Device）ドライバ層による[メッセージキュー](https://kenji.blog/p/event-driven-architecture-message-queue-kafka-rabbitmq/)処理遅延（約 1〜2 ms）。
 - $ T_{pty} $: ConPTY（擬似ターミナル）によるバッファリングと文字エンコーディング（UTF-8からUTF-16など）変換の遅延（約 2〜10 ms）。
-- $ T_{app} $: シェル（PowerShell/Bash）側のコマンド解釈と、画面出力を決定する処理時間。Oh My PoshやStarshipによるGitステータス取得などの処理時間もここに含まれます（約 10〜50 ms）。
+- $ T_{app} $: シェル（[PowerShell/Bash](/p/terminal-efficiency-powershell-bash-shortcuts/)）側のコマンド解釈と、画面出力を決定する処理時間。Oh My PoshやStarshipによるGitステータス取得などの処理時間もここに含まれます（約 10〜50 ms）。
 - $ T_{render} $: Windows Terminal（DirectWrite/DirectX）がテキストグリフをテクスチャとしてラスタライズし、GPUメモリに転送、スワップチェーンをフリップするまでのレンダリング遅延（約 2〜8 ms）。
 - $ T_{display} $: GPUのフレームバッファからモニターへ信号が出力され、液晶分子が応答して物理的に発光状態が変わるまでのディスプレイ遅延（GtG応答速度など。約 5〜20 ms）。
 

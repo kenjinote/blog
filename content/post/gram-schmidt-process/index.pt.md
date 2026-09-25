@@ -214,7 +214,7 @@ flowchart LR
     D --> E
 ```
 
-No contexto do aprendizado de máquina, a decomposição QR é utilizada para realizar os cálculos do "método dos mínimos quadrados" de forma estável e rápida para encontrar parâmetros ideais na análise de regressão múltipla. A abordagem de resolver a equação normal ($A^T A \mathbf{x} = A^T \mathbf{b}$) diretamente é evitada como padrão na prática porque o número de condição da matriz $A^T A$ piora facilmente, tornando-a extremamente vulnerável a erros numéricos. Em vez disso, a prática padrão é decompô-la como $A=QR$ e resolver $R \mathbf{x} = Q^T \mathbf{b}$ via substituição reversa.
+No contexto do aprendizado de máquina, a decomposição QR é utilizada para realizar os cálculos do "[método dos mínimos quadrados](/pt/p/method-of-least-squares/)" de forma estável e rápida para encontrar parâmetros ideais na análise de regressão múltipla. A abordagem de resolver a equação normal ($A^T A \mathbf{x} = A^T \mathbf{b}$) diretamente é evitada como padrão na prática porque o número de condição da matriz $A^T A$ piora facilmente, tornando-a extremamente vulnerável a erros numéricos. Em vez disso, a prática padrão é decompô-la como $A=QR$ e resolver $R \mathbf{x} = Q^T \mathbf{b}$ via substituição reversa.
 
 ## 9. Conclusão: A Beleza de um Espaço Realinhado
 

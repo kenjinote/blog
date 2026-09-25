@@ -16,7 +16,7 @@ tags:
 
 ## Einleitung: Das Genie des 17. Jahrhunderts, das die Unendlichkeit symbolisierte
 
-Das Symbol für die **Unendlichkeit** ( $\infty$ ) begegnet uns regelmäßig. Die erste Person, die dieses wunderschöne und mysteriöse Symbol in die Welt der Mathematik einführte, war der englische Mathematiker **[John Wallis](https://kenji.blog/de/p/wallis/)** (1616–1703) aus dem 17. Jahrhundert. Er ist bekannt als eine Figur, die eine äußerst wichtige Rolle in der Geschichte der Mathematik spielte und eine Brücke zwischen der analytischen Geometrie von René Descartes und der Infinitesimalrechnung von [Isaac Newton](https://kenji.blog/de/p/newton/) schlug.
+Das Symbol für die **Unendlichkeit** ( $\infty$ ) begegnet uns regelmäßig. Die erste Person, die dieses wunderschöne und mysteriöse Symbol in die Welt der Mathematik einführte, war der englische Mathematiker **[John Wallis](https://kenji.blog/de/p/wallis/)** (1616–1703) aus dem 17. Jahrhundert. Er ist bekannt als eine Figur, die eine äußerst wichtige Rolle in der Geschichte der Mathematik spielte und eine Brücke zwischen der analytischen Geometrie von [René Descartes](/de/p/descartes/) und der Infinitesimalrechnung von [Isaac Newton](https://kenji.blog/de/p/newton/) schlug.
 
 Europa im 17. Jahrhundert erlebte die Ära der „Wissenschaftlichen Revolution“, in der Persönlichkeiten wie Galileo Galilei, Johannes Kepler und [René Descartes](https://kenji.blog/de/p/descartes/) die Grundlagen der modernen Wissenschaft und Mathematik schufen. In dieser Zeit durchbrach Wallis die Grenzen der klassischen griechischen Geometrie und eröffnete eine neue Grenze in der Mathematik, indem er algebraische und analytische Methoden in die Geometrie einführte. In diesem Artikel tauchen wir tief in das turbulente Leben von [Wallis](https://kenji.blog/de/p/wallis/) ein, von seinem einzigartigen Hintergrund als Kryptoanalytiker bis hin zu seinen mathematischen und physikalischen Errungenschaften, die spätere Generationen stark beeinflusst haben.
 
@@ -127,7 +127,7 @@ Während seiner Studentenzeit an der Universität Cambridge las Newton [Wallis](
 
 Hätte [Wallis](https://kenji.blog/de/p/wallis/)' „Arithmetica Infinitorum“ nicht existiert, hätte sich Newtons Entdeckung der Infinitesimalrechnung möglicherweise erheblich verzögert, oder sie hätte eine völlig andere Form angenommen.
 
-[Wallis](https://kenji.blog/de/p/wallis/) selbst lobte Newtons außergewöhnliches Talent in höchsten Tönen und drängte ihn nachdrücklich, seine Forschungsergebnisse zur Infinitesimalrechnung zu veröffentlichen. Später, als der erbitterte Streit um die „Priorität der Infinitesimalrechnung“ zwischen Newton und Gottfried Leibniz ausbrach, unterstützte [Wallis](https://kenji.blog/de/p/wallis/) Newton als mächtiger Fürsprecher der britischen Seite voll und ganz.
+[Wallis](https://kenji.blog/de/p/wallis/) selbst lobte Newtons außergewöhnliches Talent in höchsten Tönen und drängte ihn nachdrücklich, seine Forschungsergebnisse zur Infinitesimalrechnung zu veröffentlichen. Später, als der erbitterte Streit um die „Priorität der Infinitesimalrechnung“ zwischen Newton und [Gottfried Leibniz](/de/p/leibniz/) ausbrach, unterstützte [Wallis](https://kenji.blog/de/p/wallis/) Newton als mächtiger Fürsprecher der britischen Seite voll und ganz.
 
 ## Fazit: Eine große Brücke in der Geschichte der Mathematik
 

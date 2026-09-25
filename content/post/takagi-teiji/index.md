@@ -110,7 +110,7 @@ graph TD
 - **『初等整数論講義』** : 整数論の基礎から[ガウス](https://kenji.blog/p/gauss/)の相互法則までを解説した教科書。
 - **『近世数学史談』** : 19世紀の数学者たちの群像を生き生きと描いた歴史書。数学の発展のドラマを伝えてくれます。
 
-彼が蒔いた種は、[小平邦彦](https://kenji.blog/p/kodaira-kunihiko/)や伊藤清、さらには志村五郎や[谷山豊](https://kenji.blog/p/taniyama-yutaka/)といった、後に世界で活躍する日本の数学者たちへと受け継がれていきました。
+彼が蒔いた種は、[小平邦彦](https://kenji.blog/p/kodaira-kunihiko/)や[伊藤清](/p/ito-kiyosi/)、さらには[志村五郎](/p/shimura-goro/)や[谷山豊](https://kenji.blog/p/taniyama-yutaka/)といった、後に世界で活躍する日本の数学者たちへと受け継がれていきました。
 
 ## おわりに
 

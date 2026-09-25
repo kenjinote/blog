@@ -135,7 +135,7 @@ $$
 E[\bar X_n]=\mu,\qquad \operatorname{Var}(\bar X_n)=\frac{\sigma^2}{n},\qquad \operatorname{SE}(\bar X_n)=\frac{\sigma}{\sqrt n}.
 $$
 
-将样本量增加至4倍，标准误将减半。大数定律阐述了样本均值趋近于 $\mu$，而中心极限定理则描述了其周围的波动放大 $\sqrt{n}$ 倍后的分布形状。
+将样本量增加至4倍，标准误将减半。[大数定律](/zh-cn/p/law-of-large-numbers/)阐述了样本均值趋近于 $\mu$，而中心极限定理则描述了其周围的波动放大 $\sqrt{n}$ 倍后的分布形状。
 
 ### 附录 4：基于特征函数证明的补充
 

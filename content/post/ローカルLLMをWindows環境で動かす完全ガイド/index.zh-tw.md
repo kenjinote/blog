@@ -11,35 +11,35 @@ tags: ["LLM", "Windows", "Local AI", "Ollama", "llama.cpp"]
 
 # 1. 簡介：為什麼現在要在 Windows 上運行本地 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)？
 
-2026年的今天，生成式 AI 與大型語言模型（LLM）的進化，展現出從雲端上巨大的 API 服務，轉向在個人 PC 與地端環境運作的「本地 LLM」的巨大典範轉移。雖然 OpenAI 的 GPT-5 與 Anthropic 的 Claude 3.5 等雲端 AI 非常強大，但企業與個人並不能將所有數據都傳送到雲端。從隱私、安全性、延遲，以及長期、可持續性成本的觀點來看，對本地 LLM 的需求正迎來前所未有的爆發性增長。
+2026年的今天，生成式 AI 與[大型語言模型](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）的進化，展現出從雲端上巨大的 API 服務，轉向在個人 PC 與地端環境運作的「本地 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)」的巨大典範轉移。雖然 OpenAI 的 GPT-5 與 Anthropic 的 Claude 3.5 等雲端 AI 非常強大，但企業與個人並不能將所有數據都傳送到雲端。從隱私、安全性、延遲，以及長期、可持續性成本的觀點來看，對本地 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的需求正迎來前所未有的爆發性增長。
 
-尤其在 Windows 環境下，本地 LLM 生態系統的進化更是令人矚目。幾年前，「說到 AI 開發與執行就是 Linux」還是常識，但到了 2026 年的今天，Windows 已經蛻變成一個非常強大且易於使用的 AI 平台。
+尤其在 Windows 環境下，本地 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 生態系統的進化更是令人矚目。幾年前，「說到 AI 開發與執行就是 Linux」還是常識，但到了 2026 年的今天，Windows 已經蛻變成一個非常強大且易於使用的 AI 平台。
 
-本文將基於 2026 年最新的技術趨勢，為您提供在 Windows 環境下建置、營運與最佳化本地 LLM 的完全指南。從適合初學者的 Ollama 簡易建置，到適合進階使用者的 llama.cpp 極限最佳化，再到 VRAM 計算的數學方法、架構的深入理解，以及本地的微調（Fine-tuning），將以壓倒性的豐富內容為您進行徹底解說。
+本文將基於 2026 年最新的技術趨勢，為您提供在 Windows 環境下建置、營運與最佳化本地 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的完全指南。從適合初學者的 Ollama 簡易建置，到適合進階使用者的 llama.cpp 極限最佳化，再到 VRAM 計算的數學方法、架構的深入理解，以及本地的微調（Fine-tuning），將以壓倒性的豐富內容為您進行徹底解說。
 
 ## 1.1 2026 年本地 LLM 的相關技術趨勢
 
-塑造當前本地 LLM 生態系統的主要趨勢如下：
+塑造當前本地 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 生態系統的主要趨勢如下：
 
-1. **GGUF 格式的全面普及** ：將元數據（Metadata）與張量（Tensor）整合到單一檔案的 GGUF（GPT-Generated Unified Format）已經完全成為業界標準（De facto standard）。這使得使用者只需從 Hugging Face 下載一個檔案，就能在任何環境下執行。
+1. **[GGUF](/zh-tw/p/llama-cpp-quantization-gguf/) 格式的全面普及** ：將元數據（Metadata）與張量（Tensor）整合到單一檔案的 [GGUF](/zh-tw/p/llama-cpp-quantization-gguf/)（GPT-Generated Unified Format）已經完全成為業界標準（De facto standard）。這使得使用者只需從 Hugging Face 下載一個檔案，就能在任何環境下執行。
 2. **MoE（Mixture of Experts）架構的民主化** ：市面上發布了許多小規模卻高效能的 MoE 模型，透過在推論時僅啟動部分專家網路（Expert），在降低消費級 PC 運算負載的同時，展現出足以媲美巨大模型的效能。
 3. **推論引擎的高度抽象化與最佳化** ：Ollama、LM Studio、AnythingLLM 等工具變得更加完善，使用者不再需要擔心安裝 CUDA 驅動程式等複雜的依賴關係。此外，隨著 FlashAttention 3 對 Windows 提供原生支援，推論速度也獲得了戲劇性的提升。
-4. **NPU 的應用與 Windows Copilot+ PC 的崛起** ：即使是沒有配備 GPU 的筆記型電腦，利用內建的 NPU（神經網絡處理單元）以低功耗運行小型 LLM（SLM: Small Language Models）的技術也已進入實用階段。
+4. **NPU 的應用與 Windows Copilot+ PC 的崛起** ：即使是沒有配備 GPU 的筆記型電腦，利用內建的 NPU（神經網絡處理單元）以低功耗運行小型 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)（SLM: Small Language Models）的技術也已進入實用階段。
 
 ---
 
 # 2. 硬體需求與作業系統準備
 
-為了讓本地 LLM 能以實用的速度（每秒 15 到 30 個 Token 以上）運行，硬體的選擇是最為重要的。
+為了讓本地 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 能以實用的速度（每秒 15 到 30 個 Token 以上）運行，硬體的選擇是最為重要的。
 
 ## 2.1 建議硬體配置
 
 隨著 AI PC 的進化，硬體規格的要求也隨之改變。
 
-- **作業系統 (OS)** ：Windows 11 Pro (24H2 或更高版本)。為了使用 WSL2 的完整功能、進階記憶體管理，以及 DirectML 的最新 API，這是必備的。
+- **作業系統 (OS)** ：Windows 11 Pro (24H2 或更高版本)。為了使用 [WSL2](/zh-tw/p/wsl2-ultimate-development-setup-guide/) 的完整功能、進階記憶體管理，以及 DirectML 的最新 API，這是必備的。
 - **處理器 (CPU)** ：Intel Core Ultra 200 系列或更高版本，或 AMD Ryzen 9000 系列或更高版本。若要同時使用 CPU 進行推論，高頻寬記憶體通訊是不可或缺的。
 - **記憶體 (RAM)** ：最低 32GB，建議 64GB 以上。主記憶體的頻寬（MB/s）在 CPU 推論或卸載（Offload）時會成為決定性的瓶頸。DDR5-6000 以上的高速記憶體是最理想的。
-- **顯示卡 (GPU)** ：NVIDIA RTX 4000 / 5000 系列。對於本地 LLM 來說，最重要的不是運算效能，而是「VRAM（顯示記憶體）容量」。
+- **顯示卡 (GPU)** ：[NVIDIA](/zh-tw/p/history-of-nvidia/) RTX 4000 / 5000 系列。對於本地 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 來說，最重要的不是運算效能，而是「VRAM（顯示記憶體）容量」。
   - **入門級** ：RTX 4060 Ti (16GB 版) - CP值最高。非常適合 8B 到 14B 等級的模型。
   - **中階** ：RTX 4070 Ti SUPER (16GB) / RTX 4080 SUPER (16GB)
   - **高階** ：RTX 4090 (24GB) / RTX 5090 (32GB) - 要運行 30B 到 70B 等級的量化模型會需要用到。
@@ -47,7 +47,7 @@ tags: ["LLM", "Windows", "Local AI", "Ollama", "llama.cpp"]
 
 ## 2.2 WSL2 (Windows Subsystem for Linux 2) 設定
 
-雖然許多 GUI 工具能在 Windows 原生環境下運行，但對於使用 Python 進行開發、編譯最新工具，以及後續會提到的 LoRA 微調來說，WSL2 會非常方便。在 Windows 11 的最新環境中，只需在主機端安裝 NVIDIA 驅動程式，即可在 WSL2 中透通地使用 GPU (CUDA)。
+雖然許多 GUI 工具能在 Windows 原生環境下運行，但對於使用 Python 進行開發、編譯最新工具，以及後續會提到的 LoRA 微調來說，[WSL2](/zh-tw/p/wsl2-ultimate-development-setup-guide/) 會非常方便。在 Windows 11 的最新環境中，只需在主機端安裝 [NVIDIA](/zh-tw/p/history-of-nvidia/) 驅動程式，即可在 [WSL2](/zh-tw/p/wsl2-ultimate-development-setup-guide/) 中透通地使用 GPU (CUDA)。
 
 以系統管理員身分開啟 PowerShell，並執行以下命令：
 
@@ -59,7 +59,7 @@ wsl --install -d Ubuntu-24.04
 wsl --update
 ```
 
-安裝完成後，在 WSL2 終端機內執行 `nvidia-smi`，如果能正常辨識到 GPU，即代表成功。
+安裝完成後，在 [WSL2](/zh-tw/p/wsl2-ultimate-development-setup-guide/) 終端機內執行 `nvidia-smi`，如果能正常辨識到 GPU，即代表成功。
 
 ---
 
@@ -67,7 +67,7 @@ wsl --update
 
 了解模型在本地環境中是如何生成文字的內部結構，對於疑難排解和效能最佳化非常有用。
 
-以下的 Mermaid 圖表展示了典型的本地 LLM 推論流程。
+以下的 Mermaid 圖表展示了典型的本地 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 推論流程。
 
 ```mermaid
 graph TD
@@ -162,7 +162,7 @@ $V_{kv} = 2 \times 1 \times 8192 \times 32 \times 8 \times 128 \times 2 \div 10^
 
 # 5. 實踐 1：使用 Ollama 進行最快、最短的環境建置
 
-理解了理論之後，讓我們實際在 Windows 環境中運行 LLM 看看。
+理解了理論之後，讓我們實際在 Windows 環境中運行 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 看看。
 在 2026 年的今天，最對使用者友善的工具非「Ollama」莫屬。它提供了類似 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 般直覺的 CLI（命令列介面）。
 
 ## 5.1 安裝與執行
@@ -279,9 +279,9 @@ graph LR
 
 # 8. 在 Windows WSL2 上進行微調 (LoRA)
 
-不僅是在本地運行，如果您還想用自己的資料讓模型變得更聰明，可以使用 LoRA（Low-Rank Adaptation）來進行微調（Fine-tuning）。在 2026 年的今天，只要使用「Unsloth」這個函式庫，在 Windows 的 WSL2 環境下，即使只有 16GB 的 VRAM，也能在數小時內完成 8B 模型的訓練。
+不僅是在本地運行，如果您還想用自己的資料讓模型變得更聰明，可以使用 LoRA（Low-Rank Adaptation）來進行微調（Fine-tuning）。在 2026 年的今天，只要使用「Unsloth」這個函式庫，在 Windows 的 [WSL2](/zh-tw/p/wsl2-ultimate-development-setup-guide/) 環境下，即使只有 16GB 的 VRAM，也能在數小時內完成 8B 模型的訓練。
 
-在 WSL2 的 Ubuntu 內執行以下命令來建立環境：
+在 [WSL2](/zh-tw/p/wsl2-ultimate-development-setup-guide/) 的 Ubuntu 內執行以下命令來建立環境：
 
 ```bash
 conda create --name unsloth_env python=3.11
@@ -314,7 +314,7 @@ Unsloth 將 CUDA 核心優化到了極致，與標準的 Hugging Face 函式庫�
 
 # 10. 總結與未來展望
 
-在 2026 年，於 Windows 環境下建置本地 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 已不再是少部分工程師的特權。隨著 GGUF 格式成為業界標準、Ollama 與 LM Studio 等完善生態系統的出現，以及以 FlashAttention 為首的硬體最佳化，任何人都可以輕易打造出企業級的 AI 環境。
+在 2026 年，於 Windows 環境下建置本地 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 已不再是少部分工程師的特權。隨著 [GGUF](/zh-tw/p/llama-cpp-quantization-gguf/) 格式成為業界標準、Ollama 與 LM Studio 等完善生態系統的出現，以及以 FlashAttention 為首的硬體最佳化，任何人都可以輕易打造出企業級的 AI 環境。
 
 請務必活用本文所解說的以下重點：
 
@@ -322,7 +322,7 @@ Unsloth 將 CUDA 核心優化到了極致，與標準的 Hugging Face 函式庫�
 2. 使用 **Ollama** 以最快的速度建置環境，並與 AI 編輯器整合，大幅提升生產力。
 3. 透過 **llama.cpp** 的進階參數控制，發揮硬體的極限效能。
 4. 使用 **AnythingLLM** 建置能處理機密資料、安全可靠的本地 RAG 系統。
-5. 活用 **Unsloth (WSL2)** ，培育出擁有您專屬專業知識的客製化 AI。
+5. 活用 **Unsloth ([WSL2](/zh-tw/p/wsl2-ultimate-development-setup-guide/))** ，培育出擁有您專屬專業知識的客製化 AI。
 
 AI 的「民主化」不再只是一個流行語（Buzzword），而是真實在您的 Windows 桌面系統上運作的系統。擺脫雲端 API 的使用成本與資料外洩風險，現在就踏入自由且強大的私有 AI 世界吧。
 

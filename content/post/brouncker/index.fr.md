@@ -12,7 +12,7 @@ tags: ["William Brouncker", "Pi", "Fraction continue", "Équation de Pell", "Roy
 
 L'Europe du 17ème siècle était au cœur d'une révolution scientifique. Ce fut une époque où les mathématiques et la physique firent des bonds spectaculaires en avant, comme l'illustre la découverte du calcul infinitésimal par [Isaac Newton](https://kenji.blog/fr/p/newton/) et Gottfried Wilhelm Leibniz. Dans ce contexte, l'institution qui a joué un rôle central dans le développement du monde universitaire britannique fut **La Royal Society**.
 
-Cet article fournit une explication détaillée de la vie et des réalisations mathématiques remarquables de **[William Brouncker](https://kenji.blog/fr/p/brouncker/)**, qui fut le premier président de la Royal Society et qui a marqué l'histoire en tant que mathématicien grâce à sa « représentation en fraction continue de Pi » et sa « solution de l'équation de Pell ». [Brouncker](https://kenji.blog/fr/p/brouncker/) a interagi avec les plus grands esprits de l'Europe de l'époque et s'est attaqué à de nombreux problèmes ardus. Ses réalisations ont grandement contribué à jeter les bases d'un traitement mathématiquement rigoureux du concept d'infini.
+Cet article fournit une explication détaillée de la vie et des réalisations mathématiques remarquables de **[William Brouncker](https://kenji.blog/fr/p/brouncker/)**, qui fut le premier président de la Royal Society et qui a marqué l'histoire en tant que mathématicien grâce à sa « représentation en fraction continue de Pi » et sa « solution de l'[équation de Pell](/fr/p/pell-equation/) ». [Brouncker](https://kenji.blog/fr/p/brouncker/) a interagi avec les plus grands esprits de l'Europe de l'époque et s'est attaqué à de nombreux problèmes ardus. Ses réalisations ont grandement contribué à jeter les bases d'un traitement mathématiquement rigoureux du concept d'infini.
 
 ## 2. Jeunesse et début de carrière
 
@@ -64,7 +64,7 @@ Les fractions continues sont des outils très puissants pour approximer les nomb
 
 ## 5. Réalisation mathématique : Résolution de l'équation de Pell
 
-Une autre réalisation importante est la solution de ce qu'on appelle **l'équation de Pell**. L'équation de Pell est une équation diophantienne (une équation polynomiale à coefficients entiers) de la forme suivante pour un entier positif $n$ qui n'est pas un carré parfait :
+Une autre réalisation importante est la solution de ce qu'on appelle **l'[équation de Pell](/fr/p/pell-equation/)**. L'[équation de Pell](/fr/p/pell-equation/) est une équation diophantienne (une équation polynomiale à coefficients entiers) de la forme suivante pour un entier positif $n$ qui n'est pas un carré parfait :
 
 $$
 x^2 - n y^2 = 1 \quad (\text{où } x, y \text{ sont des entiers})
@@ -98,7 +98,7 @@ $$
 x = 1766319049, \quad y = 226153980
 $$
 
-[Brouncker](https://kenji.blog/fr/p/brouncker/) a démontré que même des solutions aussi gigantesques pouvaient être dérivées de manière systématique en utilisant sa méthode. Ironiquement, en raison d'un malentendu de Leonhard Euler, cette équation a été nommée plus tard d'après le mathématicien anglais John Pell, mais la plus grande contribution à l'établissement de la méthode de résolution appartient indéniablement à [Brouncker](https://kenji.blog/fr/p/brouncker/).
+[Brouncker](https://kenji.blog/fr/p/brouncker/) a démontré que même des solutions aussi gigantesques pouvaient être dérivées de manière systématique en utilisant sa méthode. Ironiquement, en raison d'un malentendu de [Leonhard Euler](/fr/p/euler/), cette équation a été nommée plus tard d'après le mathématicien anglais John Pell, mais la plus grande contribution à l'établissement de la méthode de résolution appartient indéniablement à [Brouncker](https://kenji.blog/fr/p/brouncker/).
 
 ## 6. Autres réalisations et dernières années
 
@@ -118,6 +118,6 @@ Dans ses dernières années, même après avoir quitté son poste de président 
 
 ## 7. Conclusion
 
-[William Brouncker](https://kenji.blog/fr/p/brouncker/) était un leader exceptionnel et un mathématicien original qui a stimulé la communauté scientifique britannique du 17ème siècle. Ses réalisations dans l'établissement des fondations de la science moderne en tant que premier président de la Royal Society sont incommensurables. De plus, ses réalisations mathématiques, telles que la représentation en fraction continue de Pi et la solution de l'équation de Pell, sont devenues des jalons importants dans le développement de l'analyse, qui traite du concept d'infini, et de la théorie des nombres.
+[William Brouncker](https://kenji.blog/fr/p/brouncker/) était un leader exceptionnel et un mathématicien original qui a stimulé la communauté scientifique britannique du 17ème siècle. Ses réalisations dans l'établissement des fondations de la science moderne en tant que premier président de la Royal Society sont incommensurables. De plus, ses réalisations mathématiques, telles que la représentation en fraction continue de Pi et la solution de l'[équation de Pell](/fr/p/pell-equation/), sont devenues des jalons importants dans le développement de l'analyse, qui traite du concept d'infini, et de la théorie des nombres.
 
 Son approche symbolise la période de transition de la géométrie rigoureuse à l'analyse utilisant l'algèbre et les séries infinies. Bien que son nom soit souvent éclipsé par des géants comme Newton et [Fermat](https://kenji.blog/fr/p/fermat/), sans l'existence de **[Brouncker](https://kenji.blog/fr/p/brouncker/)**, la richesse des mathématiques d'aujourd'hui ne peut être discutée. Sa curiosité intellectuelle et son esprit de recherche continuent de briller devant nous comme la beauté des mathématiques, même des centaines d'années plus tard.

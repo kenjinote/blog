@@ -118,7 +118,7 @@ $a \equiv b \pmod N$ かつ $c \equiv d \pmod N$ のとき、以下が成り立�
 
 ## 4. RSA暗号を支える数学的基礎3：[オイラー](https://kenji.blog/p/euler/)関数と[オイラー](https://kenji.blog/p/euler/)の定理
 
-ここからが[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の核心となる魔法の数学です。「フェルマーの小定理」の一般化である「[オイラー](https://kenji.blog/p/euler/)の定理」が登場します。
+ここからが[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の核心となる魔法の数学です。「[フェルマーの小定理](/p/fermats-little-theorem/)」の一般化である「[オイラー](https://kenji.blog/p/euler/)の定理」が登場します。
 
 ### 4.1 [オイラー](https://kenji.blog/p/euler/)のトーティエント関数 $\phi(N)$
 

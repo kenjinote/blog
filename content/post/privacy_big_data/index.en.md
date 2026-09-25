@@ -139,7 +139,7 @@ By using homomorphic encryption, the following properties are achieved. Letting 
 $$ E(m_1 + m_2) = E(m_1) \oplus E(m_2) $$
 $$ E(m_1 \times m_2) = E(m_1) \otimes E(m_2) $$
 
-Homomorphic encryption is divided into "Partially Homomorphic Encryption (PHE)," which allows either addition or multiplication, and "Fully Homomorphic Encryption (FHE)," which allows both addition and multiplication an unlimited number of times. Since Craig Gentry constructed the first FHE scheme using lattice-based cryptography in 2009, it has been a major breakthrough in cryptography.
+Homomorphic encryption is divided into "Partially Homomorphic Encryption (PHE)," which allows either addition or multiplication, and "Fully Homomorphic Encryption ([FHE](/en/p/fully-homomorphic-encryption-fhe-explained/))," which allows both addition and multiplication an unlimited number of times. Since Craig Gentry constructed the first [FHE](/en/p/fully-homomorphic-encryption-fhe-explained/) scheme using lattice-based cryptography in 2009, it has been a major breakthrough in cryptography.
 
 Currently, challenges such as computational cost and increased ciphertext size (overhead) remain, but it is expected to be applied to the secure analysis of medical data on the cloud and secure multi-party computation among financial institutions.
 

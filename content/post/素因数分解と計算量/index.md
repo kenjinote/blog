@@ -240,7 +240,7 @@ $$ \mathcal{O}\left( \exp\left( 1.923 \cdot n^{1/3} (\ln n)^{2/3} \right) \right
 素因数分解問題は、NP（答えを与えられれば多項式時間で正しさを検証できる問題のクラス）に属していますが、[NP完全](https://kenji.blog/p/p-vs-np-problem/)（NPの中で最も難しい問題のクラス）であるとは証明されていません。
 また、P（多項式時間で解ける問題のクラス）に属する（つまり多項式時間のアルゴリズムが存在する）かどうかも未解決です。
 
-多くの研究者は、素因数分解は P でも NP完全 でもない中間のクラスに属している（NP-intermediate）と予想しています。もし素因数分解を古典コンピュータで多項式時間で解くアルゴリズム（例えば $\mathcal{O}(n^3)$ など）が発見されれば、世界中の暗号システムが崩壊する大事件となりますが、現在までのところそのようなアルゴリズムは発見されていません。2048ビットの[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の解読には、古典コンピュータの性能向上がムーアの法則に従ったとしても、宇宙の寿命より長い時間がかかると見積もられています。
+多くの研究者は、素因数分解は P でも NP完全 でもない中間のクラスに属している（NP-intermediate）と予想しています。もし素因数分解を古典コンピュータで多項式時間で解くアルゴリズム（例えば $\mathcal{O}(n^3)$ など）が発見されれば、世界中の暗号システムが崩壊する大事件となりますが、現在までのところそのようなアルゴリズムは発見されていません。2048ビットの[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の解読には、古典コンピュータの性能向上が[ムーアの法則](/p/business-moores-law/)に従ったとしても、宇宙の寿命より長い時間がかかると見積もられています。
 
 ## 量子コンピュータという「ゲームチェンジャー」：[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)
 
@@ -270,7 +270,7 @@ graph LR
 [ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)では、古典的なアルゴリズムでボトルネックとなっていた「周期発見」というプロセスを、量子もつれと量子重ね合わせを用いた「量子フーリエ変換（QFT）」によって並列的かつ一瞬で計算してしまいます。
 実用的な規模の（ノイズが少なく十分な数の論理量子ビットを持つ）[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)上で実行できるようになると、現在安全とされている2048ビットの[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号は、数時間から数日で完全に解読されてしまう可能性があります。
 
-この脅威に備え、現在世界中の暗号学者やNIST（米国国立標準技術研究所）は、量子コンピュータでも解読が困難な「耐量子計算機暗号（Post-Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy: PQC）」への移行に向けた標準化作業を急ピッチで進めています。格子暗号（Lattice-based cryptography）などがその代表例であり、これらは素因数分解問題とは全く異なる数学的困難さ（例えば最短ベクトル問題など）に安全性の根拠を置いています。
+この脅威に備え、現在世界中の暗号学者やNIST（米国国立標準技術研究所）は、量子コンピュータでも解読が困難な「耐量子計算機暗号（Post-Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy: PQC）」への移行に向けた標準化作業を急ピッチで進めています。[格子暗号](/p/lattice-based-cryptography-math-intuition/)（[Lattice-based cryptography](/p/lattice-based-cryptography-math-intuition/)）などがその代表例であり、これらは素因数分解問題とは全く異なる数学的困難さ（例えば最短ベクトル問題など）に安全性の根拠を置いています。
 
 ---
 

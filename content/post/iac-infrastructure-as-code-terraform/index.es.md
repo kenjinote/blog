@@ -120,7 +120,7 @@ graph TD
     VPC --> SG
 ```
 
-Mediante este enfoque basado en la teoría de grafos, Terraform logra lo siguiente:
+Mediante este enfoque basado en la [teoría de grafos](/es/p/graph-theory-dijkstra-a-star/), Terraform logra lo siguiente:
 - **Creación en paralelo** de recursos sin dependencias (mayor velocidad).
 - Creación, actualización y eliminación de recursos en el orden correcto.
 

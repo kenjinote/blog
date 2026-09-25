@@ -28,14 +28,14 @@ description: 'Google의 생성형 AI ''Gemini''를 명령줄에서 사용할 수
 
 # 【초보자용】 Windows에 Gemini CLI를 설치하는 방법
 
-Google의 생성형 AI 'Gemini'를 커맨드라인에서 사용할 수 있게 해주는 'Gemini CLI'.
-이 글에서는 Windows 환경에 Gemini CLI를 설치하는 과정을 최대한 알기 쉽게 설명합니다.
+Google의 생성형 AI '[Gemini](/ko/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AE%EB%8C%80%EC%B2%98-%EB%B0%A9%EB%B2%95/)'를 커맨드라인에서 사용할 수 있게 해주는 '[Gemini](/ko/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AE%EB%8C%80%EC%B2%98-%EB%B0%A9%EB%B2%95/) CLI'.
+이 글에서는 Windows 환경에 [Gemini](/ko/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AE%EB%8C%80%EC%B2%98-%EB%B0%A9%EB%B2%95/) CLI를 설치하는 과정을 최대한 알기 쉽게 설명합니다.
 
 ---
 
 ## 1. 사전 준비: Node.js 및 npm 설치
 
-먼저, Gemini CLI는 'Node.js'라는 환경에서 작동하므로 다음 항목들을 설치해야 합니다.
+먼저, [Gemini](/ko/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AE%EB%8C%80%EC%B2%98-%EB%B0%A9%EB%B2%95/) CLI는 'Node.js'라는 환경에서 작동하므로 다음 항목들을 설치해야 합니다.
 
 * **Node.js**
 * **npm (Node.js에 포함된 패키지 관리 도구)**
@@ -56,7 +56,7 @@ npm -v
 
 ## 2. PowerShell 실행하기
 
-Windows에서 Gemini CLI를 사용하려면 PowerShell을 이용해 조작하는 것이 일반적입니다.
+Windows에서 [Gemini](/ko/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AE%EB%8C%80%EC%B2%98-%EB%B0%A9%EB%B2%95/) CLI를 사용하려면 PowerShell을 이용해 조작하는 것이 일반적입니다.
 시작 메뉴에서 'PowerShell'을 입력하여 실행하세요.
 
 ---
@@ -69,7 +69,7 @@ Windows에서 Gemini CLI를 사용하려면 PowerShell을 이용해 조작하는
 npx @google/gemini-cli
 ```
 
-이 명령어는 Google이 공개한 Gemini CLI 패키지를 임시로 실행하기 위한 것입니다.
+이 명령어는 Google이 공개한 [Gemini](/ko/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AE%EB%8C%80%EC%B2%98-%EB%B0%A9%EB%B2%95/) CLI 패키지를 임시로 실행하기 위한 것입니다.
 필요에 따라 초기 설정이나 로그인이 요구될 수도 있습니다.
 
 ※ 처음에는 몇 분 정도 걸릴 수 있습니다. 오류가 발생할 경우 Node.js나 네트워크 환경을 다시 확인해 보세요.
@@ -78,8 +78,8 @@ npx @google/gemini-cli
 
 ## 4. 설치 완료! 다음으로 할 일
 
-이것으로 Windows에 Gemini CLI가 설치되었습니다.
-앞으로는 커맨드라인에서 Gemini를 사용하여 텍스트 생성이나 코드 완성 등 다양한 작업이 가능해집니다.
+이것으로 Windows에 [Gemini](/ko/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AE%EB%8C%80%EC%B2%98-%EB%B0%A9%EB%B2%95/) CLI가 설치되었습니다.
+앞으로는 커맨드라인에서 [Gemini](/ko/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AE%EB%8C%80%EC%B2%98-%EB%B0%A9%EB%B2%95/)를 사용하여 텍스트 생성이나 코드 완성 등 다양한 작업이 가능해집니다.
 
 공식 문서나 도움말을 확인하고 싶다면 아래와 같은 명령어도 활용할 수 있습니다.
 
@@ -91,7 +91,7 @@ npx @google/gemini-cli --help
 
 ## 마무리
 
-Windows에 Gemini CLI를 도입하는 과정을 복습해 보겠습니다.
+Windows에 [Gemini](/ko/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AE%EB%8C%80%EC%B2%98-%EB%B0%A9%EB%B2%95/) CLI를 도입하는 과정을 복습해 보겠습니다.
 
 1. Node.js 및 npm 설치
 2. PowerShell 실행

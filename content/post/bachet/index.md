@@ -29,7 +29,7 @@ flowchart TD
 
 ## [ディオファントス](https://kenji.blog/p/diophantus/)『算術』のラテン語訳
 
-[バシェ](https://kenji.blog/p/bachet/)の最もよく知られた業績の一つは、古代ギリシャの数学者ディオファントス ([Diophantus](https://kenji.blog/p/diophantus/)) の著書『算術 (Arithmetica)』をラテン語に翻訳し、注釈を加えて1621年に出版したことです。
+[バシェ](https://kenji.blog/p/bachet/)の最もよく知られた業績の一つは、古代ギリシャの数学者[ディオファントス](/p/diophantus/) ([Diophantus](https://kenji.blog/p/diophantus/)) の著書『算術 (Arithmetica)』をラテン語に翻訳し、注釈を加えて1621年に出版したことです。
 
 この翻訳本は、当時のヨーロッパの数学者たちにとって、古代の代数学や整数論を学ぶための標準的なテキストとなりました。中でも最も有名なエピソードは、[ピエール・ド・フェルマー](https://kenji.blog/p/fermat/) (Pierre de Fermat) がこのバシェ版『算術』の余白に、あの有名な「[フェルマーの最終定理](https://kenji.blog/p/fermats-last-theorem/)」を書き込んだことです。
 
@@ -79,7 +79,7 @@ $$
 ax + by = 1
 $$
 
-これは[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)を拡張することで具体的に $x, y$ を計算することができ（拡張ユークリッドの互除法）、現代の暗号理論（例えばRSA暗号など）においても不可欠な基礎定理となっています。歴史的な正確さを重んじる文脈では、これを **[バシェ](https://kenji.blog/p/bachet/)の定理** と呼ぶこともあります。
+これは[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)を拡張することで具体的に $x, y$ を計算することができ（拡張[ユークリッドの互除法](/p/euclidean-algorithm/)）、現代の暗号理論（例えばRSA暗号など）においても不可欠な基礎定理となっています。歴史的な正確さを重んじる文脈では、これを **[バシェ](https://kenji.blog/p/bachet/)の定理** と呼ぶこともあります。
 
 ## まとめ
 

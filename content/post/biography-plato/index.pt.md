@@ -9,17 +9,17 @@ slug: "biography-plato"
 description: "Platão, um dos filósofos mais proeminentes da Grécia Antiga, lançou as bases da filosofia ocidental."
 ---
 
-Platão, um dos filósofos mais proeminentes da Grécia Antiga, lançou as bases da filosofia ocidental. Como aluno de Sócrates e professor de Aristóteles, ele deixou inúmeras ideias para as gerações futuras através dos seus diálogos. Conceitos como a "Teoria das Ideias" influenciaram profundamente não apenas a filosofia, mas também a ciência política, a ética e a teologia. A sua presença é tão avassaladora que o filósofo britânico A.N. Whitehead comentou a famosa frase: "A caracterização geral mais segura da tradição filosófica europeia é que ela consiste numa série de notas de rodapé a Platão".
+Platão, um dos filósofos mais proeminentes da Grécia Antiga, lançou as bases da filosofia ocidental. Como aluno de [Sócrates](/pt/p/biography-socrates/) e professor de Aristóteles, ele deixou inúmeras ideias para as gerações futuras através dos seus diálogos. Conceitos como a "Teoria das Ideias" influenciaram profundamente não apenas a filosofia, mas também a ciência política, a ética e a teologia. A sua presença é tão avassaladora que o filósofo britânico A.N. Whitehead comentou a famosa frase: "A caracterização geral mais segura da tradição filosófica europeia é que ela consiste numa série de notas de rodapé a Platão".
 
 Neste artigo, aprofundamo-nos na vida de Platão, nas suas ideias filosóficas centrais e no seu impacto nas gerações posteriores.
 
 ## A Vida de Platão: O Encontro com Sócrates e a Fundação da Academia
 
-Platão (c. 427 a.C. - c. 347 a.C.) nasceu numa poderosa família aristocrática em Atenas. Na sua juventude, ambicionava tornar-se político, mas a sua vida foi alterada de forma decisiva pelo seu encontro com o filósofo Sócrates. Profundamente impressionado com os pensamentos e o modo de vida de Sócrates, Platão tornou-se seu aluno dedicado.
+Platão (c. 427 a.C. - c. 347 a.C.) nasceu numa poderosa família aristocrática em Atenas. Na sua juventude, ambicionava tornar-se político, mas a sua vida foi alterada de forma decisiva pelo seu encontro com o filósofo [Sócrates](/pt/p/biography-socrates/). Profundamente impressionado com os pensamentos e o modo de vida de [Sócrates](/pt/p/biography-socrates/), Platão tornou-se seu aluno dedicado.
 
-No entanto, em 399 a.C., o seu professor Sócrates foi julgado num tribunal popular ateniense sob a acusação de "corromper a juventude e não acreditar nos deuses do Estado", e foi condenado à morte. Este evento absurdo foi um choque imensurável para o jovem Platão. Agudamente consciente das limitações da democracia (que na época via como o governo da multidão), abandonou o seu caminho na política e decidiu dedicar-se à filosofia para buscar a verdadeira justiça.
+No entanto, em 399 a.C., o seu professor [Sócrates](/pt/p/biography-socrates/) foi julgado num tribunal popular ateniense sob a acusação de "corromper a juventude e não acreditar nos deuses do Estado", e foi condenado à morte. Este evento absurdo foi um choque imensurável para o jovem Platão. Agudamente consciente das limitações da democracia (que na época via como o governo da multidão), abandonou o seu caminho na política e decidiu dedicar-se à filosofia para buscar a verdadeira justiça.
 
-Após a morte de Sócrates, Platão viajou para lugares como Egito e Itália, aprendendo matemática e doutrinas religiosas com os pitagóricos. Ao retornar a Atenas por volta de 387 a.C., fundou a "Academia". Esta é frequentemente considerada a primeira instituição de ensino superior da história ocidental, e mais tarde reuniu muitos estudiosos brilhantes, incluindo Aristóteles, contribuindo grandemente para o avanço do conhecimento.
+Após a morte de [Sócrates](/pt/p/biography-socrates/), Platão viajou para lugares como Egito e Itália, aprendendo matemática e doutrinas religiosas com os pitagóricos. Ao retornar a Atenas por volta de 387 a.C., fundou a "Academia". Esta é frequentemente considerada a primeira instituição de ensino superior da história ocidental, e mais tarde reuniu muitos estudiosos brilhantes, incluindo Aristóteles, contribuindo grandemente para o avanço do conhecimento.
 
 ## Ideias Filosóficas Centrais: A Teoria das Ideias e o Rei Filósofo
 
@@ -27,7 +27,7 @@ No cerne da filosofia de Platão está a "Teoria das Ideias" (ou Teoria das Form
 
 Por exemplo, ele explicava que as várias "coisas belas" existentes no mundo real só são belas porque partilham (participam) imperfeitamente da "Ideia de Beleza" que existe no mundo das Ideias. Argumentava que a alma humana residiu outrora no mundo das Ideias e reconheceu a verdade, mas esqueceu-a ao entrar no corpo físico. Buscar a verdade através da filosofia não é outra coisa senão "recordar" (anamnese) essas Ideias esquecidas.
 
-Além disso, no seu pensamento político, idealizou o "Rei Filósofo". Na sua obra principal, *A República*, Platão afirmou que, a menos que os verdadeiros sábios (filósofos) que podem perceber as Ideias governem o Estado, ou os governantes estudem sinceramente a filosofia, as misérias do Estado nunca terminarão. Esta foi também uma crítica contundente ao sistema político ateniense da sua época que tinha levado o seu mestre Sócrates à morte.
+Além disso, no seu pensamento político, idealizou o "Rei Filósofo". Na sua obra principal, *A República*, Platão afirmou que, a menos que os verdadeiros sábios (filósofos) que podem perceber as Ideias governem o Estado, ou os governantes estudem sinceramente a filosofia, as misérias do Estado nunca terminarão. Esta foi também uma crítica contundente ao sistema político ateniense da sua época que tinha levado o seu mestre [Sócrates](/pt/p/biography-socrates/) à morte.
 
 ## Diagrama Mermaid: Relações e Influência em Torno de Platão
 

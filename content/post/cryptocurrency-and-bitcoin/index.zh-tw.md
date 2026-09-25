@@ -52,7 +52,7 @@ tags: ["比特幣", "密碼學", "區塊鏈"]
 
 ## 3. 區塊鏈的架構
 
-支撐比特幣的核心技術是「區塊鏈（[Blockchain](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)）」。區塊鏈是分散式帳本技術（[Distributed Ledger](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/) Technology: DLT）的一種形式，數據被打包成稱為「區塊」的單位，並且它們以密碼學的方式像鏈條一樣連接在一起。
+支撐比特幣的核心技術是「[區塊鏈](/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)（[Blockchain](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)）」。[區塊鏈](/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)是分散式帳本技術（[Distributed Ledger](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/) Technology: DLT）的一種形式，數據被打包成稱為「區塊」的單位，並且它們以密碼學的方式像鏈條一樣連接在一起。
 
 ```mermaid
 flowchart TD
@@ -76,7 +76,7 @@ flowchart TD
 
 ### 默克爾樹（Merkle Trees）
 
-在區塊鏈中，為了在控制區塊大小的同時有效檢測數據篡改，使用了名為 **默克爾樹（Merkle [Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）** 的數據結構。默克爾樹是一種二元樹，葉節點包含每筆交易的哈希值，而父節點則是將子節點的哈希值連接並再次進行哈希計算而得。
+在[區塊鏈](/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)中，為了在控制區塊大小的同時有效檢測數據篡改，使用了名為 **默克爾樹（Merkle [Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）** 的數據結構。默克爾樹是一種二元樹，葉節點包含每筆交易的哈希值，而父節點則是將子節點的哈希值連接並再次進行哈希計算而得。
 
 ```mermaid
 flowchart TD
@@ -92,7 +92,7 @@ flowchart TD
 
 ## 4. 數學與密碼學基礎
 
-比特幣的穩健性是由高度的數學基礎所支撐的。在這裡，我們將深入探討構成其核心的哈希函數、公開金鑰密碼學以及橢圓曲線密碼學。
+比特幣的穩健性是由高度的數學基礎所支撐的。在這裡，我們將深入探討構成其核心的哈希函數、公開金鑰密碼學以及[橢圓曲線密碼學](/zh-tw/p/elliptic-curve-cryptography-math-cpp/)。
 
 ### SHA-256（Secure Hash Algorithm 256-bit）
 
@@ -115,7 +115,7 @@ flowchart TD
 
 ### 橢圓曲線密碼學（Elliptic Curve Cryptography: ECC）與 secp256k1
 
-在比特幣的公開金鑰生成與數位簽章中，採用的不是 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密，而是 **橢圓曲線密碼學（ECC）**。ECC 的優勢在於能以比 RSA 短得多的金鑰長度提供同等的安全級別。
+在比特幣的公開金鑰生成與數位簽章中，採用的不是 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密，而是 **[橢圓曲線密碼學](/zh-tw/p/elliptic-curve-cryptography-math-cpp/)（[ECC](/zh-tw/p/elliptic-curve-cryptography-math-cpp/)）**。[ECC](/zh-tw/p/elliptic-curve-cryptography-math-cpp/) 的優勢在於能以比 RSA 短得多的金鑰長度提供同等的安全級別。
 
 比特幣中使用的特定橢圓曲線參數被稱為 **secp256k1**。此曲線定義在有限體 $\mathbb{F}_p$ 上，並以下列方程式表示：
 
@@ -155,11 +155,11 @@ $$
 
 ## 5. 共識演算法與工作量證明（[PoW](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)）
 
-在去中心化網路中，讓所有人對相同帳本狀態達成一致的機制就是共識演算法。
+在去中心化網路中，讓所有人對相同帳本狀態達成一致的機制就是[共識演算法](/zh-tw/p/byzantine-generals-problem-consensus/)。
 
 ### 拜占庭將軍問題（[Byzantine Generals](https://kenji.blog/zh-tw/p/byzantine-generals-problem-consensus/) Problem）
 
-分散式計算中一個經典的問題是「拜占庭將軍問題」。多位將軍包圍了一座敵方城市，他們必須在攻擊或撤退上達成一致意見，但將軍中可能會有叛徒發送假訊息。在這種情況下，問題在於如何僅讓誠實的將軍們達成正確的共識。
+分散式計算中一個經典的問題是「[拜占庭將軍問題](/zh-tw/p/byzantine-generals-problem/)」。多位將軍包圍了一座敵方城市，他們必須在攻擊或撤退上達成一致意見，但將軍中可能會有叛徒發送假訊息。在這種情況下，問題在於如何僅讓誠實的將軍們達成正確的共識。
 
 比特幣透過結合 **工作量證明（[PoW](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)）** 與 **最長鏈規則（Longest Chain Rule）**，實質上解決了這個問題。
 
@@ -173,7 +173,7 @@ $$
 
 由於哈希函數的輸出看起來完全是隨機的，因此不存在能有效找到滿足條件隨機數的演算法。唯一的方法就是只能不斷更改隨機數的值並重複進行哈希計算的暴力破解（Brute-force）。
 
-目標值越小，找到滿足條件哈希值的機率就越低。如果目標值是要求開頭有 $k$ 個零的數值，那麼找到該區塊所需的平均計算次數將是 $2^k$ 次。正是這種龐大計算能量的投入，使得篡改區塊鏈過去的記錄變得不可能。
+目標值越小，找到滿足條件哈希值的機率就越低。如果目標值是要求開頭有 $k$ 個零的數值，那麼找到該區塊所需的平均計算次數將是 $2^k$ 次。正是這種龐大計算能量的投入，使得篡改[區塊鏈](/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)過去的記錄變得不可能。
 
 ### 難度調整（Difficulty Adjustment）
 
@@ -216,7 +216,7 @@ $$
 
 ### 分叉（Forks）：軟分叉與硬分叉
 
-在升級區塊鏈協議時，可能會發生被稱為「分叉」的事件：
+在升級[區塊鏈](/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)協議時，可能會發生被稱為「分叉」的事件：
 - **軟分叉（Soft Fork）**： 具有向後相容性的升級。即使是舊規則的節點，也會將新規則的區塊視為有效（例如：隔離見證 SegWit 的導入）。
 - **硬分叉（Hard Fork）**： 沒有向後相容性的升級。由於新規則的區塊會被舊節點拒絕，因此網路可能會完全分裂成兩個（例如：比特幣現金 Bitcoin Cash 的誕生）。
 
@@ -224,37 +224,37 @@ $$
 
 解決可擴展性問題的一個有力方法是作為 **第二層（Layer 2）** 解決方案的閃電網路。
 
-在閃電網路中，參與者之間會在區塊鏈外（鏈下）開設「支付通道（Payment Channel）」。在通道內，只要雙方同意，就可以在不將交易記錄在區塊鏈上的情況下，瞬間且幾乎免費地進行無數次資金交換。只有在進行最終餘額結算時，才會將交易記錄在區塊鏈（第一層）上。
+在閃電網路中，參與者之間會在[區塊鏈](/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)外（鏈下）開設「支付通道（Payment Channel）」。在通道內，只要雙方同意，就可以在不將交易記錄在[區塊鏈](/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)上的情況下，瞬間且幾乎免費地進行無數次資金交換。只有在進行最終餘額結算時，才會將交易記錄在[區塊鏈](/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)（第一層）上。
 
 ### 與權益證明（[PoS](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)）的比較
 
-[PoW](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/) 的另一個重大挑戰是挖礦造成的龐大電力消耗。作為對此環境問題的對策，以太坊等已經轉向被稱為 **權益證明（Proof of Stake: PoS）** 的另一種共識演算法。
+[PoW](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/) 的另一個重大挑戰是挖礦造成的龐大電力消耗。作為對此環境問題的對策，以太坊等已經轉向被稱為 **權益證明（Proof of Stake: PoS）** 的另一種[共識演算法](/zh-tw/p/byzantine-generals-problem-consensus/)。
 
 在 PoS 中，不是根據計算能力（算力），而是根據持有的加密貨幣數量（權益）與持有期間，以機率分配生成下一個區塊的權利（驗證者）。雖然這可以減少 99% 以上的電力消耗，但也存在著「這是否是一個讓富者更富的系統？」、「完全去中心化是否會受到損害？」的批評。而比特幣無論受到多少批評，仍堅持著「透過消耗能源來提供物理安全性保障」的 PoW 哲學。
 
 ## 8. 密碼學理論的深淵：數學證明與協議的穩健性
 
-在前幾章中解說的 SHA-256 與橢圓曲線密碼學（ECC）的背後，存在著資訊理論安全性與計算複雜度安全性兩種範式。包括比特幣在內的現代加密貨幣，主要依賴於計算複雜度安全性（Computational Security）。
+在前幾章中解說的 SHA-256 與[橢圓曲線密碼學](/zh-tw/p/elliptic-curve-cryptography-math-cpp/)（[ECC](/zh-tw/p/elliptic-curve-cryptography-math-cpp/)）的背後，存在著資訊理論安全性與計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)安全性兩種範式。包括比特幣在內的現代加密貨幣，主要依賴於計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)安全性（Computational Security）。
 
 ### 計算複雜度安全性與離散對數問題
 
-計算複雜度安全性是指基於「為了解密某個密碼，需要比宇宙壽命更長的時間以及天文數字般的計算資源，因此實質上無法解密」這一前提的安全性。
+計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)安全性是指基於「為了解密某個密碼，需要比宇宙壽命更長的時間以及天文數字般的計算資源，因此實質上無法解密」這一前提的安全性。
 
 讓我們用數學公式再次確認保障比特幣公開金鑰密碼學安全性的橢圓曲線離散對數問題（ECDLP）。
 這是一個求未知整數 $k$ 的問題，使得點 $P$ 與 $Q$ 在橢圓曲線 $E(\mathbb{F}_p)$ 上，並滿足 $Q = kP$。
-當使用古典電腦時，解決此問題的最佳演算法（如 Pollard 的 $\rho$ 演算法等）的計算複雜度為 $\mathcal{O}(\sqrt{p})$。
+當使用古典電腦時，解決此問題的最佳演算法（如 Pollard 的 $\rho$ 演算法等）的計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)為 $\mathcal{O}(\sqrt{p})$。
 在比特幣的 secp256k1 中，因為 $p \approx 2^{256}$，所以解密需要約 $2^{128}$ 次運算。這是即使動員目前地球上所有的電腦，也需要花費宇宙壽命（約 138 億年）數兆倍時間的計算量。
 
 ### 量子電腦的威脅與抗量子密碼學
 
-然而，計算複雜度安全性有一個巨大的隱憂。那就是 **量子電腦（Quantum Computer）** 的崛起。
-Peter Shor 於 1994 年發表的「Shor 演算法（[Shor's Algorithm](https://kenji.blog/zh-tw/p/quantum-computing-shors-algorithm/)）」在數學上證明了，如果使用量子電腦，就可以在多項式時間 $\mathcal{O}(n^3)$ 內解決質因數分解問題（[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密的基礎）與離散對數問題（ECC 的基礎）。
+然而，計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)安全性有一個巨大的隱憂。那就是 **量子電腦（Quantum Computer）** 的崛起。
+Peter Shor 於 1994 年發表的「Shor 演算法（[Shor's Algorithm](https://kenji.blog/zh-tw/p/quantum-computing-shors-algorithm/)）」在數學上證明了，如果使用量子電腦，就可以在多項式時間 $\mathcal{O}(n^3)$ 內解決質因數分解問題（[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密的基礎）與離散對數問題（[ECC](/zh-tw/p/elliptic-curve-cryptography-math-cpp/) 的基礎）。
 
 如果完成具有足夠量子位元（Qubits）且錯誤率低的實用大規模量子電腦，就會產生從比特幣公開金鑰反推私有金鑰的風險。
 對此，比特幣網路的防禦對策如下：
 
-1. **哈希函數的保護**： 比特幣地址不是公開金鑰本身，而是將 SHA-256 與 RIPEMD-160 兩種哈希函數應用於公開金鑰的結果。即使使用量子電腦，逆向計算哈希函數（即使使用 Grover 演算法，計算量也為 $\mathcal{O}(\sqrt{N})$）仍然很困難。因此，在進行交易並將公開金鑰暴露給網路之前，地址的內容對於量子電腦來說仍然是安全的。
-2. **向抗量子密碼學（Post-Quantum [Cryptography](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/): PQC）過渡**： 目前正在討論，在量子電腦實用化之前，對比特幣協議進行硬分叉，轉向 NIST（美國國家標準暨技術研究院）所選定的基於格子的密碼學（Lattice-based cryptography）或多變量多項式密碼學（Multivariate polynomial cryptography）等，即使是量子電腦也難以破解的新簽章演算法。
+1. **哈希函數的保護**： 比特幣地址不是公開金鑰本身，而是將 SHA-256 與 RIPEMD-160 兩種哈希函數應用於公開金鑰的結果。即使使用量子電腦，逆向計算哈希函數（即使使用 [Grover 演算法](/zh-tw/p/grovers-algorithm-quantum-search/)，計算量也為 $\mathcal{O}(\sqrt{N})$）仍然很困難。因此，在進行交易並將公開金鑰暴露給網路之前，地址的內容對於量子電腦來說仍然是安全的。
+2. **向抗量子密碼學（Post-Quantum [Cryptography](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/): PQC）過渡**： 目前正在討論，在量子電腦實用化之前，對比特幣協議進行硬分叉，轉向 NIST（美國國家標準暨技術研究院）所選定的基於格子的密碼學（[Lattice-based cryptography](/zh-tw/p/lattice-based-cryptography-math-intuition/)）或多變量多項式密碼學（Multivariate polynomial cryptography）等，即使是量子電腦也難以破解的新簽章演算法。
 
 ## 9. 網路拓撲與 [P2P](https://kenji.blog/zh-tw/p/webrtc-realtime-communication-p2p/) 協議的詳細內容
 
@@ -264,8 +264,8 @@ Peter Shor 於 1994 年發表的「Shor 演算法（[Shor's Algorithm](https://k
 
 參與網路的電腦被稱為「節點（Node）」。節點有幾種類型，各自的作用也不同：
 
-- **全節點（Full Node）**： 下載並驗證從創世區塊到最新區塊的所有區塊鏈數據（數百 GB 以上）的節點。因為它獨立檢查交易的合法性與是否存在雙重支付，所以擔負著網路安全的根基。
-- **SPV 節點（Simplified Payment Verification Node）**： 這是一種只下載區塊標頭而不下載整個區塊鏈的輕量節點。主要用於智慧型手機的錢包等。它可以確認自身的交易是否包含在區塊中（默克爾路徑的驗證），但沒有全節點那樣的驗證能力。
+- **全節點（Full Node）**： 下載並驗證從創世區塊到最新區塊的所有[區塊鏈](/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)數據（數百 GB 以上）的節點。因為它獨立檢查交易的合法性與是否存在雙重支付，所以擔負著網路安全的根基。
+- **SPV 節點（Simplified Payment Verification Node）**： 這是一種只下載區塊標頭而不下載整個[區塊鏈](/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)的輕量節點。主要用於智慧型手機的錢包等。它可以確認自身的交易是否包含在區塊中（默克爾路徑的驗證），但沒有全節點那樣的驗證能力。
 - **挖礦節點（Mining Node）**： 執行 [PoW](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/) 計算並生成新區塊的節點。現在，這項任務主要由整合了被稱為 ASIC（特殊應用積體電路）的挖礦專用硬體的巨大「礦池」來承擔。
 
 ### 交易的傳播過程（Gossip Protocol）
@@ -299,7 +299,7 @@ Peter Shor 於 1994 年發表的「Shor 演算法（[Shor's Algorithm](https://k
 
 ### 對 51% 攻擊（51% Attack）的賽局理論分析
 
-作為區塊鏈最大的威脅，首推 **51% 攻擊**。如果單一惡意實體掌握了整個網路過半數（51% 以上）的計算能力（算力），將能做到以下幾點：
+作為[區塊鏈](/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)最大的威脅，首推 **51% 攻擊**。如果單一惡意實體掌握了整個網路過半數（51% 以上）的計算能力（算力），將能做到以下幾點：
 
 1. 取消自己過去的交易（雙重支付）
 2. 拒絕承認特定的交易（審查）
@@ -311,7 +311,7 @@ Peter Shor 於 1994 年發表的「Shor 演算法（[Shor's Algorithm](https://k
 
 在本文中，我們徹底解剖了比特幣與加密貨幣背後的數學、技術以及經濟學機制。
 
-區塊鏈技術乍看之下像是複雜數學與程式碼的集合體，但其本質無非是 **「不依賴權威，以數學與物理法則為信任依據，人類全新的共識建立系統」**。
+[區塊鏈](/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)技術乍看之下像是複雜數學與程式碼的集合體，但其本質無非是 **「不依賴權威，以數學與物理法則為信任依據，人類全新的共識建立系統」**。
 
 我們每天理所當然使用的金融系統，在漫長歷史中曾屢次崩潰，每次都只能反覆進行拼湊式的修補。中本聰提出的解答絕非完美無缺。可擴展性問題、環境問題，以及國家的監管與法律制定等，有著無數需要克服的障礙。
 
@@ -319,7 +319,7 @@ Peter Shor 於 1994 年發表的「Shor 演算法（[Shor's Algorithm](https://k
 
 ## 附錄：供深入學習的資源與參考文獻
 
-為閱讀本文後想進一步深入學習區塊鏈技術或密碼學理論的讀者，我們介紹幾個推薦資源：
+為閱讀本文後想進一步深入學習[區塊鏈](/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)技術或密碼學理論的讀者，我們介紹幾個推薦資源：
 
 ### 必讀原典（Whitepapers）
 - **Bitcoin: A Peer-to-Peer Electronic Cash System** (Satoshi Nakamoto, 2008)
@@ -336,4 +336,4 @@ Peter Shor 於 1994 年發表的「Shor 演算法（[Shor's Algorithm](https://k
 > **Warning: 投資相關免責聲明**
 > 本文旨在解說加密貨幣的底層技術及其歷史、數學結構，並非推薦或勸誘對任何加密貨幣進行投資。加密貨幣的價格波動極大，投資伴隨著包括跌破本金在內的巨大風險。
 
-區塊鏈的技術探索，是電腦科學、經濟學、社會學交匯的知識最前線。透過閱讀程式碼、親自架設節點，並嘗試在測試網上生成交易，您將能親身感受到這項技術的真正潛力與其極限。
+[區塊鏈](/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)的技術探索，是電腦科學、經濟學、社會學交匯的知識最前線。透過閱讀程式碼、親自架設節點，並嘗試在測試網上生成交易，您將能親身感受到這項技術的真正潛力與其極限。

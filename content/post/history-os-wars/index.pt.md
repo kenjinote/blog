@@ -54,7 +54,7 @@ Entre os anos 1990 e 2000, a batalha pela participação no mercado de sistemas 
 ### 2.1 O Impacto do Windows 95 e Seu Domínio Esmagador
 Lançado em 1995, o Windows 95 causou um fenômeno social. Com uma GUI completa, recursos de conectividade com a Internet (posteriormente Internet Explorer) e plug-and-play, as bases dos PCs modernos foram estabelecidas aqui. O sucesso do Windows 95 permitiu à Microsoft construir um monopólio absoluto no mercado de PCs.
 
-Em resposta a esse domínio esmagador, a Apple mergulhou temporariamente em uma grave crise financeira. No entanto, com o retorno de Steve Jobs em 1997 e o subsequente sucesso do "iMac", a Apple encenou um renascimento em seu próprio nicho de mercado, que enfatiza design e estilo de vida.
+Em resposta a esse domínio esmagador, a Apple mergulhou temporariamente em uma grave crise financeira. No entanto, com o retorno de [Steve Jobs](/pt/p/biography-steve-jobs/) em 1997 e o subsequente sucesso do "iMac", a Apple encenou um renascimento em seu próprio nicho de mercado, que enfatiza design e estilo de vida.
 
 ### 2.2 A Guerra dos Navegadores e a Ascensão da Web
 O principal campo de batalha da guerra dos sistemas operacionais logo mudou para o espaço da Internet. A primeira guerra de navegadores entre o Netscape e o Internet Explorer redefiniu o valor do sistema operacional como plataforma. A Microsoft ganhou vantagem ao agrupar o IE com o Windows, mas isso também levou a processos judiciais por violação antitruste.
@@ -90,7 +90,7 @@ graph LR
 
 ## Capítulo 4: O Fim da Batalha e o Novo Paradigma (Década de 2010 em diante)
 
-Embora as guerras religiosas dos sistemas operacionais tenham durado muito tempo, seu panorama mudou drasticamente na década de 2010. Com a revolução móvel e a ascensão da nuvem, a própria questão de "qual sistema operacional de desktop você usa" perdeu seu significado.
+Embora as guerras religiosas dos sistemas operacionais tenham durado muito tempo, seu panorama mudou drasticamente na década de 2010. Com a [revolução móvel](/pt/p/history-of-iphone/) e a ascensão da nuvem, a própria questão de "qual sistema operacional de desktop você usa" perdeu seu significado.
 
 ### 4.1 A Mudança para o Dispositivo Móvel e o Novo Sistema Bipolar
 Com o surgimento do iPhone (iOS) e do Android, o centro da computação para as pessoas mudou dos PCs para os smartphones. Ironicamente, o mundo móvel viu uma repetição da história com a abordagem fechada da Apple (iOS) e a abordagem aberta liderada pelo Google (Android baseado em Linux).

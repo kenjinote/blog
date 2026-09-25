@@ -19,7 +19,7 @@ Plato (sekitar 427 SM - sekitar 347 SM) lahir di keluarga bangsawan yang kuat di
 
 Namun, pada tahun 399 SM, gurunya Sokrates diadili di pengadilan rakyat Athena atas tuduhan "merusak kaum muda dan tidak percaya pada dewa-dewa negara," dan dijatuhi hukuman mati. Peristiwa yang tidak masuk akal ini merupakan kejutan yang tak terukur bagi Plato muda. Sangat menyadari keterbatasan demokrasi (yang ia pandang sebagai kekuasaan massa pada saat itu), ia melepaskan jalannya di bidang politik dan memutuskan untuk mengejar filsafat guna mencari keadilan sejati.
 
-Setelah kematian Sokrates, Plato bepergian ke tempat-tempat seperti Mesir dan Italia, belajar matematika dan doktrin agama dari kelompok Pythagoras. Kembali ke Athena sekitar tahun 387 SM, ia mendirikan "Akademi". Tempat ini sering dianggap sebagai institusi pendidikan tinggi pertama dalam sejarah Barat, dan kemudian mengumpulkan banyak sarjana brilian, termasuk Aristoteles, yang memberikan kontribusi besar pada kemajuan pembelajaran.
+Setelah kematian Sokrates, Plato bepergian ke tempat-tempat seperti Mesir dan Italia, belajar matematika dan doktrin agama dari kelompok [Pythagoras](/id/p/pythagoras/). Kembali ke Athena sekitar tahun 387 SM, ia mendirikan "Akademi". Tempat ini sering dianggap sebagai institusi pendidikan tinggi pertama dalam sejarah Barat, dan kemudian mengumpulkan banyak sarjana brilian, termasuk Aristoteles, yang memberikan kontribusi besar pada kemajuan pembelajaran.
 
 ## Ide-ide Filosofis Inti: Teori Bentuk dan Raja Filsuf
 

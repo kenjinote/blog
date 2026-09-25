@@ -175,7 +175,7 @@ Ketika menggunakan VPN tradisional, bahkan saat insinyur yang bekerja dari jarak
 
 ## Pergeseran Paradigma Berkat Zero Trust ([BeyondCorp](https://kenji.blog/id/p/zero-trust-network-architecture-beyond-corp/))
 
-Yang berhasil menembus batasan jaringan tersebut serta mewujudkan "lingkungan di mana orang-orang dapat bekerja dengan nyaman dan aman dari mana saja" dengan sesungguhnya adalah **Arsitektur Jaringan Zero Trust (Zero Trust Network Architecture: ZTNA)**, yang mana salah satu pelopornya adalah "BeyondCorp" dari Google.
+Yang berhasil menembus batasan jaringan tersebut serta mewujudkan "lingkungan di mana orang-orang dapat bekerja dengan nyaman dan aman dari mana saja" dengan sesungguhnya adalah **[Arsitektur Jaringan Zero Trust](/id/p/zero-trust-network-architecture-beyond-corp/) (Zero Trust Network Architecture: ZTNA)**, yang mana salah satu pelopornya adalah "BeyondCorp" dari Google.
 
 Inti dari Zero Trust adalah "tidak menjadikan batas jaringan (apakah di dalam atau di luar jaringan perusahaan) sebagai dasar dari kepercayaan."
 
@@ -230,7 +230,7 @@ Produktivitas insinyur secara keseluruhan dapat digambarkan sebagai fungsi kompl
 
 Perdebatan "Kerja Jarak Jauh vs. Kembali ke Kantor" acapkali disinggung sebagai sebuah konflik antara "Hak-hak tenaga kerja vs. Kehendak manajemen akan sebuah kontrol", tetapi hakikat dari perdebatan ini sebetulnya bukan di situ.
 
-Pihak manajemen harus membuang pandangan yang tidak rasional bahwa "sekadar mengumpulkan pekerja di sebuah kantor akan memunculkan inovasi-inovasi seperti sebuah trik sulap". Apabila di sisi lain pemaksaan masuk kantor diberlakukan dengan pengabaian desain organisasi demi menjadikan Hukum Conway sebagai sebuah keuntungan pada pengerjaan sistem terdistribusi, serta ketiadaan investasi ke infrastruktur-infrastruktur modern macam Zero Trust, keputusan itu niscaya justru hanya akan melemahkan partisipasi serta kemampuan produktif sang insinyur.
+Pihak manajemen harus membuang pandangan yang tidak rasional bahwa "sekadar mengumpulkan pekerja di sebuah kantor akan memunculkan inovasi-inovasi seperti sebuah trik sulap". Apabila di sisi lain pemaksaan masuk kantor diberlakukan dengan pengabaian desain organisasi demi menjadikan Hukum Conway sebagai sebuah keuntungan pada pengerjaan [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/), serta ketiadaan investasi ke infrastruktur-infrastruktur modern macam Zero Trust, keputusan itu niscaya justru hanya akan melemahkan partisipasi serta kemampuan produktif sang insinyur.
 
 Sebaliknya, pihak insinyur (terutama kalangan senior) juga tidak boleh berpandangan arogan dan berpikir "Saya bisa jadi lebih produktif jika mengoding dari rumah, dan kantor pun sama sekali tidak ada gunanya". Rekayasa perangkat lunak adalah semacam olahraga beregu yang menanggung serangkaian beban mulai dari rancangan infrastruktur komprehensif, pendidikan terhadap kalangan junior, dan koordinasi ketika masalah mendesak terjadi, yang tentunya lebih dari sekadar efisiensi pemrograman kode. Adakalanya komunikasi yang erat dalam ruang yang nyata memang diperlukan dalam mencegah kegagalan proyek yang sedang dijalankan.
 

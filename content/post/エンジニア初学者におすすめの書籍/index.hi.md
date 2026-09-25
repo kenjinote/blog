@@ -26,7 +26,7 @@ description: 'प्रोग्रामिंग के शुरुआती 
 ![img_9.png](img_9.webp)
 8. डॉकर प्रैक्टिकल गाइड
 ![img_8.png](img_8.webp)
-9. कुबेरनेट्स संपूर्ण गाइड
+9. [कुबेरनेट्स](/hi/p/kubernetes-k8s-architecture-pod-service-ingress/) संपूर्ण गाइड
 ![img_7.png](img_7.webp)
 10. कोड कम्प्लीट दूसरा संस्करण
 ![img_5.png](img_5.webp)
@@ -39,5 +39,5 @@ description: 'प्रोग्रामिंग के शुरुआती 
 ![img_2.png](img_2.webp)
 14. बीइंग गीक
 ![img_1.png](img_1.webp)
-15. ऑब्जेक्ट-ओरिएंटेड प्रोग्रामिंग क्यों?
+15. [ऑब्जेक्ट-ओरिएंटेड प्रोग्रामिंग](/hi/p/object-oriented-programming-oop-solid-principles/) क्यों?
 ![img_16.png](img_16.webp)

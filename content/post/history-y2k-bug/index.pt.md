@@ -10,7 +10,7 @@ image: "eyecatch.jpg"
 
 ## Prólogo: A bomba-relógio digital enfrentada pela humanidade
 
-Em 31 de dezembro de 1999, enquanto o mundo se preparava para celebrar a chegada do novo milênio, algumas pessoas prendiam a respiração por um motivo completamente diferente. Em vez de taças de champanhe, eles seguravam xícaras de café e teclados, aguardando o momento em que os ponteiros do relógio em seus monitores marcariam "00:00:00".
+Em 31 de dezembro de 1999, enquanto o mundo se preparava para celebrar a chegada do novo milênio, algumas pessoas prendiam a respiração por um motivo completamente diferente. Em vez de taças de champanhe, eles seguravam xícaras de café e teclados, aguardando o momento em que os [ponteiros](/pt/p/c-language-pointers-memory-management-stack-heap/) do relógio em seus monitores marcariam "00:00:00".
 
 Esse foi o clímax da batalha contra o "Problema Y2K" Year 2000 —— comumente conhecido como o "Bug do Milênio".
 

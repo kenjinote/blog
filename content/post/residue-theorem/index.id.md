@@ -42,7 +42,7 @@ flowchart TD
 
 ## Deret Laurent dan Residu
 
-Fungsi kompleks dapat diekspansi di sekitar singularitas menggunakan **deret Laurent**, yang merupakan generalisasi dari deret Taylor. Ekspansi Laurent dari $f(z)$ di sekitar singularitas $z_0$ dinyatakan sebagai berikut:
+Fungsi kompleks dapat diekspansi di sekitar singularitas menggunakan **deret Laurent**, yang merupakan generalisasi dari [deret Taylor](/id/p/taylor-and-maclaurin-series/). Ekspansi Laurent dari $f(z)$ di sekitar singularitas $z_0$ dinyatakan sebagai berikut:
 
 $$
 f(z) = \sum_{n=0}^{\infty} a_n (z - z_0)^n + \sum_{n=1}^{\infty} \frac{b_n}{(z - z_0)^n}
@@ -181,4 +181,4 @@ $$
 
 Teorema residu adalah lambang keanggunan matematika, yang secara ahli menghubungkan "kutub kompleks" dan "integral riil" yang tampaknya tidak berhubungan. Untuk memecahkan masalah fungsi riil, Anda untuk sementara melompat ke dunia bidang kompleks yang lebih luas, memeriksa hanya sifat-sifat (residu) dari "hambatan" (singularitas), dan ketika Anda kembali ke dunia asal, masalahnya terpecahkan dengan cemerlang.
 
-Konsep ini melampaui sekadar teknik perhitungan dan diterapkan di setiap kancah sains dan teknologi modern, seperti transformasi Laplace terbalik, mengevaluasi diagram Feynman dalam teori medan kuantum, dan teori penyaringan dalam pemrosesan sinyal. Dunia analisis kompleks memberikan sudut pandang tertinggi untuk melihat hamparan dunia bilangan riil.
+Konsep ini melampaui sekadar teknik perhitungan dan diterapkan di setiap kancah sains dan teknologi modern, seperti [transformasi Laplace](/id/p/laplace-transform/) terbalik, mengevaluasi diagram Feynman dalam teori medan kuantum, dan teori penyaringan dalam pemrosesan sinyal. Dunia analisis kompleks memberikan sudut pandang tertinggi untuk melihat hamparan dunia bilangan riil.

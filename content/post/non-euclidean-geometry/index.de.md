@@ -35,7 +35,7 @@ graph TD
 
 ## 3. Die Entdeckung des „gekrümmten Raums“: Die Geburt der hyperbolischen Geometrie
 
-Zu Beginn des 19. Jahrhunderts kam es schließlich zu einer Revolution. Drei Männer – der Deutsche [Carl Friedrich Gauss](https://kenji.blog/de/p/gauss/), der Ungar János Bolyai und der Russe Nikolai Lobatschewski – kamen unabhängig voneinander zu dem Schluss: „Das 5. Postulat ist unabhängig von den anderen Postulaten, und es gibt eine völlig neue Geometrie, in der dieses nicht gilt.“
+Zu Beginn des 19. Jahrhunderts kam es schließlich zu einer Revolution. Drei Männer – der Deutsche [Carl Friedrich Gauss](https://kenji.blog/de/p/gauss/), der Ungar János Bolyai und der Russe [Nikolai Lobatschewski](/de/p/biography-nikolai-lobachevsky/) – kamen unabhängig voneinander zu dem Schluss: „Das 5. Postulat ist unabhängig von den anderen Postulaten, und es gibt eine völlig neue Geometrie, in der dieses nicht gilt.“
 
 Die Geometrie, die sie entdeckten, wird heute als **hyperbolische Geometrie** bezeichnet. In diesem Raum gibt es „unendlich viele“ parallele Linien, die durch einen einzelnen Punkt außerhalb einer geraden Linie verlaufen. Außerdem ist die Summe der Innenwinkel eines Dreiecks immer kleiner als 180 Grad.
 

@@ -16,7 +16,7 @@ tags:
 
 # 1. はじめに：純粋な思考の探求者
 
-[カール・グスタフ・ヤコブ・ヤコビ](https://kenji.blog/p/jacobi/)（Carl Gustav Jacob Jacobi, 1804–1851）は、19世紀の **ドイツの数学者** であり、代数学、解析学、数論、力学といった多岐にわたる分野で決定的な貢献を果たしました。ニールス・ヘンリック・アーベルとともに「楕円関数の発見者」として並び称され、また今日私たちが多変数微積分で頻繁に目にする「ヤコビアン（[ヤコビ](https://kenji.blog/p/jacobi/)行列式）」の語源となった人物でもあります。
+[カール・グスタフ・ヤコブ・ヤコビ](https://kenji.blog/p/jacobi/)（Carl Gustav Jacob Jacobi, 1804–1851）は、19世紀の **ドイツの数学者** であり、代数学、解析学、数論、力学といった多岐にわたる分野で決定的な貢献を果たしました。[ニールス・ヘンリック・アーベル](/p/abel/)とともに「楕円関数の発見者」として並び称され、また今日私たちが多変数微積分で頻繁に目にする「ヤコビアン（[ヤコビ](https://kenji.blog/p/jacobi/)[行列式](/p/geometric-meaning-of-determinant/)）」の語源となった人物でもあります。
 
 彼は実用性よりも数学そのものの美しさと人間の精神の栄光を重んじました。本記事では、[ヤコビ](https://kenji.blog/p/jacobi/)の生涯、主要な数学的業績、そして彼が残した有名なエピソードについて深く掘り下げていきます。
 
@@ -61,11 +61,11 @@ $$ \vartheta(z, \tau) = \sum_{n=-\infty}^{\infty} e^{\pi i n^2 \tau + 2 \pi i n 
 
 大学の微分積分の授業で、多重積分における変数変換（例えば極座標変換など）を学ぶ際、誰もが「[ヤコビ](https://kenji.blog/p/jacobi/)アン」という言葉に出会うはずです。これも[ヤコビ](https://kenji.blog/p/jacobi/)に由来しています。
 
-$n$ 個の変数 $x_1, x_2, \dots, x_n$ から $n$ 個の変数 $y_1, y_2, \dots, y_n$ への変換を考えるとき、その偏微分からなる行列の行列式を[ヤコビ](https://kenji.blog/p/jacobi/)行列式（[ヤコビ](https://kenji.blog/p/jacobi/)アン）と呼びます。
+$n$ 個の変数 $x_1, x_2, \dots, x_n$ から $n$ 個の変数 $y_1, y_2, \dots, y_n$ への変換を考えるとき、その偏微分からなる行列の[行列式](/p/geometric-meaning-of-determinant/)を[ヤコビ](https://kenji.blog/p/jacobi/)[行列式](/p/geometric-meaning-of-determinant/)（[ヤコビ](https://kenji.blog/p/jacobi/)アン）と呼びます。
 
 $$ J = \det \begin{pmatrix} \frac{\partial y_1}{\partial x_1} & \cdots & \frac{\partial y_1}{\partial x_n} \\ \vdots & \ddots & \vdots \\ \frac{\partial y_m}{\partial x_1} & \cdots & \frac{\partial y_m}{\partial x_n} \end{pmatrix} $$
 
-[ヤコビ](https://kenji.blog/p/jacobi/)は、この行列式が変数変換において体積要素の拡大・縮小率を表すことを明確に示し、逆関数定理や陰関数定理の一般化において中心的な役割を果たすことを証明しました。
+[ヤコビ](https://kenji.blog/p/jacobi/)は、この[行列式](/p/geometric-meaning-of-determinant/)が変数変換において体積要素の拡大・縮小率を表すことを明確に示し、逆関数定理や陰関数定理の一般化において中心的な役割を果たすことを証明しました。
 
 # 6. 解析力学：ハミルトン・[ヤコビ](https://kenji.blog/p/jacobi/)方程式
 

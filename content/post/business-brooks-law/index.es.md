@@ -105,7 +105,7 @@ La regla de oro es "aumentar el tiempo" o "reducir lo que se va a hacer", en lug
 
 La regla de "los dos equipos de pizza" (Two-Pizza Team) propuesta por Jeff Bezos de Amazon es una de las respuestas perfectas a la Ley de Brooks. La regla establece que "el número de miembros en un equipo no debe superar a los que pueden compartir dos pizzas (generalmente alrededor de 6 a 8 personas como máximo)".
 
-Al mantener los equipos pequeños, se evita la explosión de canales de comunicación. Cuando se construyen sistemas a gran escala, en lugar de crear un solo equipo gigante, el sistema se divide de forma poco acoplada utilizando una arquitectura de microservicios, y pequeños equipos independientes se hacen cargo de cada componente.
+Al mantener los equipos pequeños, se evita la explosión de canales de comunicación. Cuando se construyen sistemas a gran escala, en lugar de crear un solo equipo gigante, el sistema se divide de forma poco acoplada utilizando una arquitectura de [microservicios](/es/p/microservices-architecture-bff-api-gateway/), y pequeños equipos independientes se hacen cargo de cada componente.
 
 ```mermaid
 graph LR

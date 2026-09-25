@@ -11,15 +11,15 @@ tags: ["Lattice", "PQC", "LWE", "Cryptography", "Math"]
 
 # 1. 導入：後量子密碼學（PQC）的黎明與格子密碼學的崛起
 
-支撐現代社會數位基礎設施的是以 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 密碼和橢圓曲線密碼（ECC）為首的公鑰密碼技術。這些密碼系統是將安全性的基礎建立在「質因數分解問題」與「離散對數問題」等數學難題上，人們相信傳統古典電腦無法有效率地解決這些問題（需要指數級時間）。
+支撐現代社會數位基礎設施的是以 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 密碼和橢圓曲線密碼（[ECC](/zh-tw/p/elliptic-curve-cryptography-math-cpp/)）為首的公鑰密碼技術。這些密碼系統是將安全性的基礎建立在「質因數分解問題」與「離散對數問題」等數學難題上，人們相信傳統古典電腦無法有效率地解決這些問題（需要指數級時間）。
 
-然而，彼得·秀爾（Peter Shor）於1994年發表的「秀爾演算法（Shor's algorithm）」在密碼學界引發了震撼。該演算法在數學上證明了，一旦大規模的量子電腦問世，就能在多項式時間內解決質因數分解問題與離散對數問題。這意味著目前被廣泛使用的公鑰密碼學，在未來將完全可能被破解。
+然而，彼得·秀爾（Peter Shor）於1994年發表的「秀爾演算法（[Shor's algorithm](/zh-tw/p/shors-algorithm-and-rsa-breaking/)）」在密碼學界引發了震撼。該演算法在數學上證明了，一旦大規模的量子電腦問世，就能在多項式時間內解決質因數分解問題與離散對數問題。這意味著目前被廣泛使用的公鑰密碼學，在未來將完全可能被破解。
 
 為了對抗這種「量子威脅（Quantum Threat）」，迫切需要研究即使使用量子電腦也難以破解的新型密碼系統。這就是被稱為「後量子密碼學（Post-Quantum [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy: PQC）」或「抗量子計算密碼學」的領域。
 
-PQC 有幾個有力的候選方案。包括基於雜湊的密碼學、基於編碼的密碼學、多變數多項式密碼學以及同源密碼學等，但其中目前最受矚目，且處於 NIST（美國國家標準暨技術研究院）PQC 標準化流程核心的，就是「格子密碼學（Lattice-based cryptography）」。與其他方法相比，格子密碼學具有極快的加密和解密處理速度，並具備一個在密碼理論中極為強大的安全性證明：將「最壞情況複雜度（Worst-case complexity）」歸約至「平均情況複雜度（Average-case complexity）」。
+PQC 有幾個有力的候選方案。包括基於雜湊的密碼學、基於編碼的密碼學、多變數多項式密碼學以及同源密碼學等，但其中目前最受矚目，且處於 NIST（美國國家標準暨技術研究院）PQC 標準化流程核心的，就是「格子密碼學（Lattice-based cryptography）」。與其他方法相比，格子密碼學具有極快的加密和解密處理速度，並具備一個在密碼理論中極為強大的安全性證明：將「最壞情況[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)（Worst-case complexity）」歸約至「平均情況[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)（Average-case complexity）」。
 
-本文將從作為格子密碼學基礎的「格子（Lattice）」的數學定義出發，深入淺出地解說格子上的困難問題，如 SVP（最短向量問題）和 CVP（最近點向量問題），以及可說是現代格子密碼學心臟的「LWE 問題（Learning With Errors，容錯學習問題）」。文中將結合數學公式、幾何直觀，以及具體的數值範例來進行徹底且深入的解說。
+本文將從作為格子密碼學基礎的「格子（Lattice）」的數學定義出發，[深入淺出](/zh-tw/p/quantum-annealing-vs-gate-model-explained/)地解說格子上的困難問題，如 SVP（最短向量問題）和 CVP（最近點向量問題），以及可說是現代格子密碼學心臟的「LWE 問題（Learning With Errors，容錯學習問題）」。文中將結合數學公式、幾何直觀，以及具體的數值範例來進行徹底且深入的解說。
 
 # 2. 格子（Lattice）的數學定義與幾何直觀
 
@@ -46,7 +46,7 @@ $$
 
 例如，前面提到的由基底 $\mathbf{b}_1 = (1, 0)^T, \mathbf{b}_2 = (0, 1)^T$ 生成的 $\mathbb{Z}^2$ 格子，如果使用 $\mathbf{b}'_1 = (1, 1)^T, \mathbf{b}'_2 = (2, 3)^T$ 這個基底，也會生成完全相同的格子 $\mathbb{Z}^2$。
 
-某個基底 $B$ 和另一個基底 $B'$ 能生成相同格子的充分必要條件是：存在一個元素均為整數的矩陣 $U \in \mathbb{Z}^{n \times n}$，其行列式為 $\det(U) = \pm 1$，並且可以表示為：
+某個基底 $B$ 和另一個基底 $B'$ 能生成相同格子的充分必要條件是：存在一個元素均為整數的矩陣 $U \in \mathbb{Z}^{n \times n}$，其[行列式](/zh-tw/p/geometric-meaning-of-determinant/)為 $\det(U) = \pm 1$，並且可以表示為：
 $$ B' = B U $$
 這樣的矩陣 $U$ 被稱為「么模矩陣（Unimodular matrix）」。
 
@@ -85,7 +85,7 @@ CVP 也是格子密碼學中極為重要的問題。
 
 # 4. LWE 問題（Learning With Errors）的數學形式化
 
-現代大部分的格子密碼學都基於 2005 年由 Oded Regev 所提出的「LWE 問題（Learning With Errors，容錯學習問題）」。LWE 問題的絕妙之處在於其形式化的簡單性，以及擁有「將最壞情況複雜度歸約為平均情況複雜度」這項強大的數學證明。
+現代大部分的格子密碼學都基於 2005 年由 Oded Regev 所提出的「LWE 問題（Learning With Errors，容錯學習問題）」。LWE 問題的絕妙之處在於其形式化的簡單性，以及擁有「將最壞情況[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)歸約為平均情況[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)」這項強大的數學證明。
 
 ## 4.1 無雜訊的線性方程組
 為了理解 LWE 問題，首先讓我們先考慮一個沒有雜訊的簡單線性方程組。
@@ -298,7 +298,7 @@ $$ D = v - \mathbf{s}^T \mathbf{u} = 1 - 9 = -8 \pmod{17} $$
 方程式會變成如下所示：
 $$ b(x) = a(x) \cdot s(x) + e(x) \pmod q $$
 
-因為這是多項式的乘法，所以可以透過使用類似於快速傅立葉變換（FFT）的「數論轉換（Number Theoretic Transform: NTT）」，將計算量大幅縮減至 $\mathcal{O}(n \log n)$。此外，因為公鑰的容量也從矩陣縮減成了單一多項式，所以資料大小減少到了 $\mathcal{O}(n)$。這在通訊頻寬上帶來了壓倒性的優勢。
+因為這是多項式的乘法，所以可以透過使用類似於[快速傅立葉變換（FFT）](/zh-tw/p/fast-fourier-transform-algorithm/)的「數論轉換（Number Theoretic Transform: NTT）」，將計算量大幅縮減至 $\mathcal{O}(n \log n)$。此外，因為公鑰的容量也從矩陣縮減成了單一多項式，所以資料大小減少到了 $\mathcal{O}(n)$。這在通訊頻寬上帶來了壓倒性的優勢。
 
 從數學角度來看，Ring-LWE 解決的不再是一般的格子，而是歸約到具有特殊對稱性，被稱為「理想格子（Ideal Lattice）」上的問題。
 
@@ -312,7 +312,7 @@ Ring-LWE 雖然效率很高，但卻也令人擔心理想格子特殊的代數�
 
 最後，我們來探討一個核心問題：「為什麼格子密碼學被認為即使使用量子電腦也無法破解？」
 
-量子電腦用來破解 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 密碼與橢圓曲線密碼的秀爾演算法，本質上是一個用於解決「隱含子群問題（Hidden Subgroup Problem: HSP）」的演算法。RSA 或 ECC 背後的數學結構（有限阿貝爾群）具有週期性，透過使用名為量子傅立葉變換（QFT）的量子演算法特有操作，可以一次萃取出這個週期（隱含的子群）。
+量子電腦用來破解 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 密碼與橢圓曲線密碼的秀爾演算法，本質上是一個用於解決「隱含子群問題（Hidden Subgroup Problem: HSP）」的演算法。RSA 或 [ECC](/zh-tw/p/elliptic-curve-cryptography-math-cpp/) 背後的數學結構（有限阿貝爾群）具有週期性，透過使用名為量子傅立葉變換（QFT）的量子演算法特有操作，可以一次萃取出這個週期（隱含的子群）。
 
 然而，格子問題卻截然不同。格子雖然也有週期性，但在 SVP 或 CVP 中要求出的是「最短距離」或「消除雜訊」這種幾何學上的非線性性質。即使直接套用像秀爾演算法這種「阿貝爾群上的量子傅立葉變換」，也無法有效率地萃取出對解答格子問題有用的資訊。截至目前為止，尚未發現能在多項式時間內解決 SVP 或 LWE 的量子演算法，學界普遍相信，即使擁有量子電腦的平行計算能力，也只有類似於暴力破解的搜尋方式（透過葛羅夫演算法（Grover's algorithm）達成的平方根加速程度）才是有效的手段。
 

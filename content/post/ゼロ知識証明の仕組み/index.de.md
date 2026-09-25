@@ -60,7 +60,7 @@ sequenceDiagram
     Note over Prover, Verifier: "※ Um die Sicherheit zu erhöhen, wird dies dutzende Male wiederholt"
 ```
 
-Diese Methode ist leistungsstark, erfordert jedoch, dass der Verifizierer online ist, was für asynchrone verteilte Systeme wie [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)s unpraktisch ist. In einer Blockchain muss jeder in der Lage sein, vergangene Beweise jederzeit zu verifizieren.
+Diese Methode ist leistungsstark, erfordert jedoch, dass der Verifizierer online ist, was für asynchrone [verteilte Systeme](/de/p/cap-theorem-distributed-systems-tradeoff/) wie [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)s unpraktisch ist. In einer [Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/) muss jeder in der Lage sein, vergangene Beweise jederzeit zu verifizieren.
 
 #### Fiat-Shamir-Heuristik und Nicht-Interaktivität
 
@@ -192,9 +192,9 @@ Auch Proof of Personhood-Projekte (Beweis der Menschlichkeit) wie Worldcoin spei
 
 ### 3. Vertrauliche [Smart Contract](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)s und Unternehmensnutzung
 
-Die Eigenschaft öffentlicher [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)s, dass "alle Daten öffentlich sind", war ein großes Hindernis für Unternehmen, die vertrauliche Transaktionen oder Lieferketteninformationen auf der Blockchain verarbeiten wollen.
+Die Eigenschaft öffentlicher [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)s, dass "alle Daten öffentlich sind", war ein großes Hindernis für Unternehmen, die vertrauliche Transaktionen oder Lieferketteninformationen auf der [Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/) verarbeiten wollen.
 
-Durch den Einsatz von ZKP-Technologie (wie bei datenschutzorientierten Netzwerken wie Aleo oder Aztec) können die Eingabewerte, die Ausgabewerte und sogar die Logik des ausgeführten Smart Contracts selbst verschlüsselt bleiben, während nur die Korrektheit der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)saktualisierung auf der öffentlichen Blockchain festgehalten wird. Dies ermöglicht die Verhinderung von Front-Running (MEV) im DeFi-Bereich (Decentralized Finance) und den Aufbau vertraulicher Konsortium-Netzwerke zwischen Unternehmen, wobei gleichzeitig die hohe Sicherheit einer öffentlichen Blockchain genutzt wird.
+Durch den Einsatz von ZKP-Technologie (wie bei datenschutzorientierten Netzwerken wie Aleo oder Aztec) können die Eingabewerte, die Ausgabewerte und sogar die Logik des ausgeführten Smart Contracts selbst verschlüsselt bleiben, während nur die Korrektheit der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)saktualisierung auf der öffentlichen [Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/) festgehalten wird. Dies ermöglicht die Verhinderung von Front-Running (MEV) im DeFi-Bereich (Decentralized Finance) und den Aufbau vertraulicher Konsortium-Netzwerke zwischen Unternehmen, wobei gleichzeitig die hohe Sicherheit einer öffentlichen [Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/) genutzt wird.
 
 ---
 
@@ -203,7 +203,7 @@ Durch den Einsatz von ZKP-Technologie (wie bei datenschutzorientierten Netzwerke
 ZKP ist zweifellos eine Basistechnologie der nächsten Generation, es bleiben jedoch einige Herausforderungen.
 
 1. **Rechenkosten für die Beweisgenerierung und Hardwarebeschleunigung**
-   Die Generierung eines ZKP erfordert enorme Polynomoperationen, FFT (Fast Fourier Transform) und MSM (Multi-Scalar Multiplication). Derzeit schreitet die Erforschung spezieller Hardware (FPGA und ASIC) zur Beschleunigung dieser Beweisgenerierung, auch bekannt als **ZKP-Mining** (Prover Network), rasant voran.
+   Die Generierung eines ZKP erfordert enorme Polynomoperationen, [FFT](/de/p/fast-fourier-transform-algorithm/) (Fast Fourier Transform) und MSM (Multi-Scalar Multiplication). Derzeit schreitet die Erforschung spezieller Hardware (FPGA und ASIC) zur Beschleunigung dieser Beweisgenerierung, auch bekannt als **ZKP-Mining** (Prover Network), rasant voran.
 2. **Standardisierung und Verbesserung der Developer Experience (DX)**
    Es gibt eine Vielzahl spezialisierter Sprachen zum Schreiben von ZKP-Schaltkreisen, wie Circom, Cairo, Noir und Leo. Standardisierungen, die diese vereinheitlichen, sowie die Ausreifung von Compilern, die automatisch ZKP-Schaltkreise aus bestehendem [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)- oder C++-Code generieren, werden der Schlüssel für die Einführung von ZKP durch gewöhnliche Softwareentwickler sein.
 

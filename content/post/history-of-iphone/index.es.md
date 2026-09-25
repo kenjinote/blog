@@ -17,7 +17,7 @@ tags:
 
 ## 1. 2007: "Hoy, Apple reinventa el teléfono"
 
-El 9 de enero de 2007, en el escenario de la Macworld Expo, Steve Jobs realizó una presentación legendaria que pasaría a la historia de la tecnología.
+El 9 de enero de 2007, en el escenario de la Macworld Expo, [Steve Jobs](/es/p/biography-steve-jobs/) realizó una presentación legendaria que pasaría a la historia de la tecnología.
 Dirigiéndose al público, dijo: "Hoy, presentamos tres productos revolucionarios. Un iPod con controles táctiles, un teléfono móvil revolucionario y un dispositivo de comunicación por internet innovador". Luego reveló que no se trataba de tres dispositivos diferentes, sino de un solo dispositivo: el "**iPhone**".
 
 En aquel entonces, los teléfonos móviles (como BlackBerry) tenían la mitad de su cuerpo ocupado por un pequeño teclado físico. El iPhone eliminó todos esos teclados y adoptó un diseño que en ese momento parecía una locura: convertir casi toda la parte frontal en una "pantalla de cristal con soporte multitáctil". Una "pantalla que cambia libremente mediante software" fue el verdadero comienzo de la revolución móvil.
@@ -33,7 +33,7 @@ Esta plataforma, que permitía a los desarrolladores crear aplicaciones libremen
 
 El "**iPhone 4**", presentado en 2010, renovó el diseño con una forma plana de cristal y acero inoxidable, e incorporó la "**pantalla Retina**" de alta definición, que superaba los límites de la retina humana. El impacto de ver el texto en la pantalla con una nitidez similar a la de un material impreso elevó el estándar de los teléfonos inteligentes a partir de entonces.
 
-En el "**iPhone 4S**" de 2011, se incorporó por primera vez el asistente de voz "**Siri**". Mostró un futuro en el que se podía "operar hablando" al teléfono inteligente, pero al día siguiente de este anuncio, Steve Jobs falleció. El iPhone 4S fue el último iPhone que Jobs vio nacer.
+En el "**iPhone 4S**" de 2011, se incorporó por primera vez el asistente de voz "**Siri**". Mostró un futuro en el que se podía "operar hablando" al teléfono inteligente, pero al día siguiente de este anuncio, [Steve Jobs](/es/p/biography-steve-jobs/) falleció. El iPhone 4S fue el último iPhone que Jobs vio nacer.
 
 ## 4. Pantallas más grandes y la evolución de la autenticación biométrica (2012-2017)
 

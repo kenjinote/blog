@@ -20,7 +20,7 @@ tags:
 
 在現代計算機科學中， **圖論** ([Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Theory) 為了對網路結構建立模型，提供了強大的數學框架。在我們的日常生活中，無論是汽車導航、鐵路轉乘指南、網際網路路由，甚至是遊戲 AI 的路徑搜尋等各種場景，都運用了計算「最短路徑」的技術。
 
-本文將從作為路徑搜尋基礎的圖論數學定義開始，網羅並徹底解說代表性的搜尋演算法 **[Dijkstra](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 演算法** (Dijkstra's Algorithm) ，以及將其進一步發展的 **A* 演算法** (A-Star Algorithm) 的運作機制、數學證明，還有使用 Python 進行實作的方法。
+本文將從作為路徑搜尋基礎的圖論數學定義開始，網羅並徹底解說代表性的[搜尋演算法](/zh-tw/p/search-algorithms-linear-binary-hash-table-principles/) **[Dijkstra](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 演算法** (Dijkstra's Algorithm) ，以及將其進一步發展的 **A* 演算法** (A-Star Algorithm) 的運作機制、數學證明，還有使用 Python 進行實作的方法。
 
 ## 2. 圖論基礎
 
@@ -79,7 +79,7 @@ $$
 
 ## 3. [Dijkstra](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 演算法 (Dijkstra's Algorithm)
 
-由艾茲赫爾·戴克斯特拉 (Edsger W. Dijkstra) 提出的 **Dijkstra 演算法** ，是在擁有非負權重的圖中，求得單一起點到所有頂點的最短路徑之演算法。
+由[艾茲赫爾·戴克斯特拉](/zh-tw/p/biography-edsger-dijkstra/) (Edsger W. Dijkstra) 提出的 **Dijkstra 演算法** ，是在擁有非負權重的圖中，求得單一起點到所有頂點的最短路徑之演算法。
 
 ### 3.1 演算法的直觀理解
 
@@ -144,7 +144,7 @@ def dijkstra(graph, start):
 ### 3.4 關於時間複雜度
 
 若使用二元樹堆積 (Binary [Heap](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)) 作為優先權佇列，每個頂點會從佇列中取出 1 次，每條邊會被鬆弛 1 次。
-因此，時間複雜度為 $ O((|V| + |E|) \log |V|) $。若使用費波那契堆積 (Fibonacci Heap)，理論上可改善至 $ O(|E| + |V| \log |V|) $，但實務上大多使用二元樹堆積。
+因此，時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)為 $ O((|V| + |E|) \log |V|) $。若使用費波那契堆積 (Fibonacci Heap)，理論上可改善至 $ O(|E| + |V| \log |V|) $，但實務上大多使用二元樹堆積。
 
 ---
 
@@ -193,7 +193,7 @@ $$
   $$
   h(n) = |x_n - x_{goal}| + |y_n - y_{goal}|
   $$
-- **歐幾里得距離** (Euclidean Distance)：可朝任意方向直線移動時
+- **[歐幾里得](/zh-tw/p/euclid/)距離** (Euclidean Distance)：可朝任意方向直線移動時
   $$
   h(n) = \sqrt{(x_n - x_{goal})^2 + (y_n - y_{goal})^2}
   $$
@@ -293,7 +293,7 @@ graph TD
 3. **JPS** (Jump Point Search)：
    在均勻的網格地圖上，進一步加速 A* 搜尋的手法。利用對稱性跳過不必要的節點。
 
-路徑搜尋演算法完美融合了圖論的數學美感與計算機科學的演算法效率，是一個令人著迷的領域。
+路徑[搜尋演算法](/zh-tw/p/search-algorithms-linear-binary-hash-table-principles/)完美融合了圖論的數學美感與計算機科學的演算法效率，是一個令人著迷的領域。
 
 ## 6. 總結
 

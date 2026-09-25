@@ -17,7 +17,7 @@ tags:
 
 ## 1. 2007: „Heute erfindet Apple das Telefon neu“
 
-Am 9. Januar 2007 hielt Steve Jobs auf der Bühne der Macworld Expo eine legendäre Präsentation, die in die Geschichte der Technologie eingehen sollte.
+Am 9. Januar 2007 hielt [Steve Jobs](/de/p/biography-steve-jobs/) auf der Bühne der Macworld Expo eine legendäre Präsentation, die in die Geschichte der Technologie eingehen sollte.
 Er sagte: „Heute stellen wir drei revolutionäre Produkte vor: einen iPod mit Touch-Bedienung, ein revolutionäres Mobiltelefon und ein bahnbrechendes Internet-Kommunikationsgerät“, und enthüllte, dass es sich dabei nicht um drei separate Geräte handelte, sondern um ein einziges Gerät: das „**iPhone**“.
 
 Die damaligen Mobiltelefone (wie BlackBerry) waren zur Hälfte von kleinen physischen Tastaturen eingenommen. Das iPhone schaffte all diese Tastaturen ab und führte ein für die damalige Zeit verrücktes Design ein, bei dem fast die gesamte Vorderseite aus einem „Multi-Touch-fähigen Glasbildschirm“ bestand. Ein „Bildschirm, der sich durch Software frei verändern lässt“, war der wahre Beginn der mobilen Revolution.
@@ -33,7 +33,7 @@ Diese Plattform, auf der Entwickler frei Apps erstellen und direkt an Nutzer wel
 
 Das 2010 eingeführte „**iPhone 4**“ erneuerte das Design zu einer flachen Form aus Glas und Edelstahl und war mit einem hochauflösenden „**Retina-Display**“ ausgestattet, das die Grenzen der menschlichen Netzhaut (Retina) überschritt. Der Schock darüber, dass der Text auf dem Bildschirm so scharf wie bei gedruckten Materialien aussah, hob den Standard für zukünftige Smartphones an.
 
-Im darauffolgenden Jahr 2011 wurde mit dem „**iPhone 4S**“ erstmals der Sprachassistent „**Siri**“ integriert. Es zeigte die Zukunft auf, in der man ein Smartphone „durch Sprechen bedienen“ konnte. Einen Tag nach dieser Ankündigung verstarb Steve Jobs. Das iPhone 4S wurde das letzte iPhone, dessen Veröffentlichung Jobs noch miterlebte.
+Im darauffolgenden Jahr 2011 wurde mit dem „**iPhone 4S**“ erstmals der Sprachassistent „**Siri**“ integriert. Es zeigte die Zukunft auf, in der man ein Smartphone „durch Sprechen bedienen“ konnte. Einen Tag nach dieser Ankündigung verstarb [Steve Jobs](/de/p/biography-steve-jobs/). Das iPhone 4S wurde das letzte iPhone, dessen Veröffentlichung Jobs noch miterlebte.
 
 ## 4. Größere Bildschirme und die Evolution der biometrischen Authentifizierung (2012-2017)
 

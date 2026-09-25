@@ -58,7 +58,7 @@ Jika teks apa pun dipilih pada halaman, teks tersebut akan langsung disalin ke p
 
 ![img_1.png](img_1.webp)
 
-Ekstensi yang menambahkan fitur berguna untuk pengembangan Salesforce.
-Saya rasa ini tidak perlu bagi mereka yang tidak menggunakan Salesforce.
+Ekstensi yang menambahkan fitur berguna untuk pengembangan [Salesforce](/id/p/salesforceceloteh%E5%85%A8%E6%B6%88%E3%81%97perintah/).
+Saya rasa ini tidak perlu bagi mereka yang tidak menggunakan [Salesforce](/id/p/salesforceceloteh%E5%85%A8%E6%B6%88%E3%81%97perintah/).
 
 - [Salesforce DevTools](https://chrome.google.com/webstore/detail/salesforce-devtools/ehgmhinnhggigkogkbhnbodhbfjgncjf)

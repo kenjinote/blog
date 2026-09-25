@@ -158,9 +158,9 @@ $$X = V \pmod N$$
 الآن، كل ما علينا فعله هو أن نصلي ألا يكون $X$ و $Y$ حلولاً بديهية ($X \equiv \pm Y$)، ثم نحسب:
 **$\gcd(X - Y, N)$**
 
-إذا كان حلاً غير بديهي، فستعمل [خوارزمية إقليدس](https://kenji.blog/p/euclidean-algorithm/) في 0.001 ثانية، وسيتم طباعة الأعداد الأولية السرية $p$ و $q$، والتي تعد قلب تشفير [RSA](https://kenji.blog/ar/p/modern-cryptography-public-key-hash-signature/)، على شاشة الإخراج.
+إذا كان حلاً غير بديهي، فستعمل [خوارزمية إقليدس](https://kenji.blog/ar/p/euclidean-algorithm/) في 0.001 ثانية، وسيتم طباعة الأعداد الأولية السرية $p$ و $q$، والتي تعد قلب تشفير [RSA](https://kenji.blog/ar/p/modern-cryptography-public-key-hash-signature/)، على شاشة الإخراج.
 
 ---
 
-هذا هو الشكل الكامل لـ **"غربال حقل الأعداد العام (GNFS)"** الذي يجمع خلاصة الرياضيات الحديثة.
+هذا هو الشكل الكامل لـ **"[غربال حقل الأعداد العام](/ar/p/beyond-gnfs-integer-factorization-algorithms/) (GNFS)"** الذي يجمع خلاصة الرياضيات الحديثة.
 

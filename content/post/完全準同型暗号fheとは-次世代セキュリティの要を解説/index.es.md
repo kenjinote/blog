@@ -239,7 +239,7 @@ Como se puede ver en el código anterior, los operadores normales de Python como
 
 Aunque el FHE proporciona una seguridad teóricamente perfecta, el mayor desafío en su implementación práctica es la **"sobrecarga de rendimiento (overhead)"**.
 
-1.  **Sobrecarga computacional**: Comparado con los cálculos en texto plano, los cálculos en texto cifrado son de miles a decenas de miles de veces más lentos en una CPU. La multiplicación de polinomios y el bootstrapping requieren cálculos masivos de FFT (Transformada Rápida de Fourier) o NTT (Transformada Teórica de Números).
+1.  **Sobrecarga computacional**: Comparado con los cálculos en texto plano, los cálculos en texto cifrado son de miles a decenas de miles de veces más lentos en una CPU. La multiplicación de polinomios y el bootstrapping requieren cálculos masivos de [FFT](/es/p/fast-fourier-transform-algorithm/) ([Transformada Rápida de Fourier](/es/p/fast-fourier-transform-algorithm/)) o NTT (Transformada Teórica de Números).
 2.  **Expansión del tamaño de los datos (Ciphertext Expansion)**: Unos pocos bytes de texto plano pueden convertirse en megabytes una vez cifrados. Esto ejerce una fuerte presión sobre el ancho de banda de la memoria y la red.
 
 ### Enfoques para soluciones a través del hardware
@@ -269,9 +269,9 @@ A medida que el FHE se acerca a velocidades prácticas, se esperan innovaciones 
 
 ## 9. Conclusión: El futuro de la criptografía avanza hacia el "cálculo invisible"
 
-Al igual que la invención de la criptografía de clave pública ([RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)) en la década de 1970 hizo posible la comunicación segura en Internet (como HTTPS), la invención del FHE por parte de Craig Gentry es uno de los hitos más importantes en la historia de la criptografía.
+Al igual que la invención de la criptografía de clave pública ([RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)) en la década de 1970 hizo posible la comunicación segura en Internet (como HTTPS), la invención del FHE por parte de Craig Gentry es uno de los hitos más importantes en la [historia de la criptografía](/es/p/history-of-cryptography-caesar-to-pqc/).
 
-Hoy en día, el cifrado totalmente homomórfico (FHE) ha saltado de la teoría de los laboratorios y ha entrado en una fase en la que Microsoft, IBM, Intel, Google y muchas startups compiten ferozmente por su aplicación práctica. Aunque los desafíos del coste computacional y el tamaño de los datos aún persisten, el rendimiento continúa mejorando a un ritmo que supera la Ley de Moore, gracias al refinamiento de los algoritmos y la evolución de los aceleradores de hardware.
+Hoy en día, el cifrado totalmente homomórfico (FHE) ha saltado de la teoría de los laboratorios y ha entrado en una fase en la que Microsoft, IBM, Intel, Google y muchas startups compiten ferozmente por su aplicación práctica. Aunque los desafíos del coste computacional y el tamaño de los datos aún persisten, el rendimiento continúa mejorando a un ritmo que supera [la Ley de Moore](/es/p/business-moores-law/), gracias al refinamiento de los algoritmos y la evolución de los aceleradores de hardware.
 
 En unos pocos años, "calcular datos mientras están cifrados" ya no será algo extraordinario, sino que se convertirá en una de las mejores prácticas estándar de protección de datos en los servicios en la nube. El FHE es verdaderamente la clave de la seguridad de la próxima generación, al materializar **el equilibrio definitivo entre la privacidad y la utilización de los datos** en nuestra sociedad impulsada por los datos.
 

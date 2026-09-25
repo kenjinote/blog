@@ -10,7 +10,7 @@ image: "eyecatch.jpg"
 
 # Introduction: The Man Feared as a "Martian"
 
-Throughout human history, there have been many individuals called "geniuses." Great figures like Albert Einstein, Isaac Newton, and Leonardo da Vinci all demonstrated outstanding talent in specific fields. However, a certain scientist who lived in the 20th century is said to have possessed an "otherworldly intelligence" that surpassed even them. That was John von Neumann (1903 - 1957).
+Throughout human history, there have been many individuals called "geniuses." Great figures like Albert Einstein, [Isaac Newton](/en/p/newton/), and Leonardo da Vinci all demonstrated outstanding talent in specific fields. However, a certain scientist who lived in the 20th century is said to have possessed an "otherworldly intelligence" that surpassed even them. That was [John von Neumann](/en/p/von-neumann/) (1903 - 1957).
 
 His brain was so far beyond human that his fellow scientists half-jokingly whispered that he was a "Martian pretending to be human" or had a "Devil's Brain." There are many anecdotes of even Nobel laureates realizing the limits of their own intellects in front of von Neumann and having no choice but to act like children.
 
@@ -35,7 +35,7 @@ In Budapest at that time, outstanding Jewish talents were being born one after a
 ### The University of Göttingen and David Hilbert
 Entering his youth, von Neumann studied mathematics at the University of Budapest, and chemical engineering simultaneously at the University of Berlin and ETH Zurich (this was because his father worried he couldn't make a living on mathematics alone). Earning his PhD in mathematics at just 22, he headed to the University of Göttingen in Germany, the center of the mathematical world at the time.
 
-There he served as an assistant to David Hilbert, the absolute authority in the mathematical world at the time. Hilbert was promoting the "Hilbert Program" to prove the "completeness and consistency of mathematics," and von Neumann deeply involved himself in this grand plan, making decisive contributions in the field of axiomatic set theory.
+There he served as an assistant to [David Hilbert](/en/p/hilbert/), the absolute authority in the mathematical world at the time. Hilbert was promoting the "Hilbert Program" to prove the "completeness and consistency of mathematics," and von Neumann deeply involved himself in this grand plan, making decisive contributions in the field of axiomatic set theory.
 
 ### Mathematical Foundations of Quantum Mechanics
 In the late 1920s, a new theory called quantum mechanics was born in the world of physics, causing great confusion. Two theories, Werner Heisenberg's "Matrix Mechanics" and Erwin Schrödinger's "Wave Mechanics," which looked completely different in appearance and approach, stood side by side.
@@ -47,7 +47,7 @@ Here, von Neumann demonstrated his overwhelming mathematical intuition. By using
 ### The Rise of the Nazis and Flight to America
 In the 1930s, the Nazis led by Adolf Hitler rose to power in Germany, and the persecution of Jews began. Sensing the crisis, von Neumann fled to America early on. He was invited to the newly established "Institute for Advanced Study (IAS)" in Princeton, New Jersey.
 
-This institute gathered the greatest minds from all over the world, including Einstein and Kurt Gödel. Von Neumann became a tenured professor at the institute at the young age of 29 (alongside Einstein and others, he was the youngest tenured professor).
+This institute gathered the greatest minds from all over the world, including Einstein and [Kurt Gödel](/en/p/godel/). Von Neumann became a tenured professor at the institute at the young age of 29 (alongside Einstein and others, he was the youngest tenured professor).
 
 ### An Unorthodox Playstyle
 At Princeton, von Neumann acted completely differently from the other quiet scholars. He solved difficult mathematical problems while listening to loud German marches, frequently threw lavish parties, drove cars at breakneck speeds, and totaled a new car almost every year (the intersection where he frequently caused accidents was even called "von Neumann's intersection"). While Einstein preferred a simple and solitary life, von Neumann always wore crisp suits and greatly enjoyed worldly pleasures.
@@ -127,11 +127,11 @@ This happened before the discovery of the double helix structure of DNA (1953). 
 
 ## Conclusion: An Intelligence Too Early for Humanity
 
-On February 8, 1957, John von Neumann passed away from cancer at a hospital in Washington D.C. at the young age of 53. Fearing that he might unconsciously leak military secrets, the military is said to have kept military police stationed in his hospital room at all times.
+On February 8, 1957, [John von Neumann](/en/p/von-neumann/) passed away from cancer at a hospital in Washington D.C. at the young age of 53. Fearing that he might unconsciously leak military secrets, the military is said to have kept military police stationed in his hospital room at all times.
 
 His brain continued to work without stopping until the final moment, but he held deep terror over gradually losing his memory as the cancer progressed. The process of a man who could once memorize an entire book becoming unable to do even simple addition was a cruel sight for anyone around him.
 
-John von Neumann. He raced through and built the foundations for areas that humanity should have taken hundreds of years to pioneer—from mathematics, physics, economics, meteorology, to computer science—in just a single lifetime.
+[John von Neumann](/en/p/von-neumann/). He raced through and built the foundations for areas that humanity should have taken hundreds of years to pioneer—from mathematics, physics, economics, meteorology, to computer science—in just a single lifetime.
 
 Because his achievements are so diverse and profound, it is still hard to believe that they were accomplished by a single human being. Whether he was a "Martian" or not is uncertain, but his clones named "Von Neumann Architecture" continue to calculate without rest all over the world at this very moment.
 

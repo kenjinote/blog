@@ -214,7 +214,7 @@ flowchart LR
     D --> E
 ```
 
-Dans le contexte de l'apprentissage automatique, la décomposition QR est utilisée pour effectuer les calculs de la « méthode des moindres carrés » de manière stable et rapide afin de trouver des paramètres optimaux dans l'analyse de régression multiple. L'approche consistant à résoudre directement l'équation normale ($A^T A \mathbf{x} = A^T \mathbf{b}$) est couramment évitée dans la pratique car le conditionnement de la matrice $A^T A$ se détériore facilement, ce qui la rend extrêmement vulnérable aux erreurs numériques. Au lieu de cela, la pratique standard consiste à la décomposer sous la forme $A=QR$ et à résoudre $R \mathbf{x} = Q^T \mathbf{b}$ par substitution arrière.
+Dans le contexte de l'apprentissage automatique, la décomposition QR est utilisée pour effectuer les calculs de la « [méthode des moindres carrés](/fr/p/method-of-least-squares/) » de manière stable et rapide afin de trouver des paramètres optimaux dans l'analyse de régression multiple. L'approche consistant à résoudre directement l'équation normale ($A^T A \mathbf{x} = A^T \mathbf{b}$) est couramment évitée dans la pratique car le conditionnement de la matrice $A^T A$ se détériore facilement, ce qui la rend extrêmement vulnérable aux erreurs numériques. Au lieu de cela, la pratique standard consiste à la décomposer sous la forme $A=QR$ et à résoudre $R \mathbf{x} = Q^T \mathbf{b}$ par substitution arrière.
 
 ## 9. Conclusion : La beauté d'un espace réaligné
 

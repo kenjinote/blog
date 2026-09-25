@@ -26,7 +26,7 @@ O que sustentou a indústria de TI japonesa por muitos anos foi o modelo SIer (S
 
 No entanto, em 2026, esse modelo atingiu seu limite. Como a essência da DX (Transformação Digital) mudou de "simples informatização" para "transformação do modelo de negócios", o desenvolvimento em cascata (waterfall), com sua baixa agilidade, não consegue mais acompanhar as mudanças do mercado.
 
-O processo de desenvolvimento moderno pressupõe ser **nativo em nuvem** e **orientado por IA**. A conteinerização ([Docker](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)/Kubernetes), a arquitetura de microsserviços e a automação de pipelines de [CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) não são mais "tecnologias especiais", mas sim "infraestrutura padrão".
+O processo de desenvolvimento moderno pressupõe ser **nativo em nuvem** e **orientado por IA**. A conteinerização ([Docker](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)/Kubernetes), a [arquitetura de microsserviços](/pt/p/microservices-architecture-bff-api-gateway/) e a automação de pipelines de [CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) não são mais "tecnologias especiais", mas sim "infraestrutura padrão".
 
 ```mermaid
 graph TD
@@ -144,7 +144,7 @@ O conceito de "MLOps", que consiste em manter continuamente a operação de IA g
 
 ## 5. Estratégia de Sobrevivência para Engenheiros: Como Sobreviver a partir de 2026
 
-Nesse cenário, como nós, engenheiros, devemos construir nossa carreira? Especialmente para engenheiros inexperientes, a situação pode parecer desesperadora. No entanto, dependendo da estratégia, há grandes possibilidades de avançar.
+Nesse cenário, como nós, engenheiros, devemos construir nossa carreira? Especialmente [para engenheiros](/pt/p/prompt-engineering-for-engineers/) inexperientes, a situação pode parecer desesperadora. No entanto, dependendo da estratégia, há grandes possibilidades de avançar.
 
 ### Estratégia 1: Visar ser um "Orquestrador de IA"
 Em vez de se tornar um especialista em uma única linguagem ou framework, aprimore sua capacidade de atuar como um "orquestrador" que constrói todo o sistema combinando múltiplas ferramentas e agentes de IA. É necessário reduzir o tempo que você mesmo passa escrevendo o código à mão, conectar os componentes escritos pela IA e ter uma "perspectiva superior" que supervisione toda a arquitetura.

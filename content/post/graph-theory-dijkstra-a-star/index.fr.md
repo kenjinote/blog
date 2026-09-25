@@ -20,7 +20,7 @@ tags:
 
 Dans l'informatique moderne, la **théorie des graphes** ([Graph](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Theory) fournit un cadre mathématique puissant pour modéliser les structures de réseaux. Dans notre vie quotidienne, les technologies de calcul du « plus court chemin » sont utilisées dans de nombreuses situations, comme la navigation automobile, les applications de guidage pour les correspondances ferroviaires, le routage sur Internet, ou encore la recherche de chemin par les IA dans les jeux vidéo.
 
-Dans cet article, nous expliquerons de manière exhaustive les bases de la théorie des graphes qui sous-tend la recherche de chemin, depuis sa définition mathématique, en passant par le célèbre **algorithme de [Dijkstra](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)** (Dijkstra's Algorithm) et son évolution, l'**algorithme A*** (A-Star Algorithm), jusqu'à leurs mécanismes, leurs preuves mathématiques et leurs méthodes d'implémentation pratiques en Python.
+Dans cet article, nous expliquerons de manière exhaustive les [bases de la théorie des graphes](/fr/p/basics-of-graph-theory/) qui sous-tend la recherche de chemin, depuis sa définition mathématique, en passant par le célèbre **algorithme de [Dijkstra](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)** (Dijkstra's Algorithm) et son évolution, l'**algorithme A*** (A-Star Algorithm), jusqu'à leurs mécanismes, leurs preuves mathématiques et leurs méthodes d'implémentation pratiques en Python.
 
 ## 2. Bases de la théorie des graphes
 
@@ -293,7 +293,7 @@ L'algorithme de [Dijkstra](https://kenji.blog/fr/p/tree-graph-data-structures-se
 3. **JPS** (Jump Point Search) :
    Une méthode pour accélérer encore davantage la recherche A* sur des cartes en grille uniformes. Elle exploite la symétrie pour ignorer les nœuds inutiles.
 
-Les algorithmes de recherche de chemin constituent un domaine où la beauté mathématique de la théorie des graphes et l'efficacité algorithmique de l'informatique fusionnent à merveille.
+Les [algorithmes de recherche](/fr/p/search-algorithms-linear-binary-hash-table-principles/) de chemin constituent un domaine où la beauté mathématique de la théorie des graphes et l'efficacité algorithmique de l'informatique fusionnent à merveille.
 
 ## 6. Conclusion
 

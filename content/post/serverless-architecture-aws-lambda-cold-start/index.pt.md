@@ -149,7 +149,7 @@ O tempo gasto no cold start pode ser dividido principalmente em **inicializaçã
 
 ### 4.2. O Cold Start Visto a partir da Teoria das Probabilidades
 
-Podemos usar a teoria das filas (como o modelo M/M/c) para modelar matematicamente a probabilidade de ocorrência de um cold start.
+Podemos usar a [teoria das filas](/pt/p/queuing-theory-basics/) (como o modelo M/M/c) para modelar matematicamente a probabilidade de ocorrência de um cold start.
 Seja a taxa de chegada de solicitações $\lambda$, o tempo de sobrevivência do contêiner quente $T_w$, e o tempo de processamento $\mu$. Quando ocorrem picos de tráfego, o número de paralelismos necessários (número de contêineres) aumenta rapidamente e a probabilidade de cold start sobe.
 
 Em estado estacionário, a probabilidade de um contêiner quente ser reutilizado $P_{warm}$ pode ser aproximada da seguinte forma:

@@ -32,7 +32,7 @@ Pendant la deuxième guerre punique (218 av. J.-C. - 201 av. J.-C.), Syracuse fu
 
 Les armes qu'il aurait conçues comprennent les suivantes :
 
-- **La Griffe d'Archimède** (The Claw of [Archimedes](https://kenji.blog/fr/p/archimedes/)) : Une machine géante en forme de grue qui aurait soulevé les navires ennemis hors de la mer et les aurait fait chavirer.
+- **La Griffe d'Archimède** (The Claw of [Archimedes](https://kenji.blog/fr/p/archimedes/)) : Une machine géante en forme de [grue](/fr/p/grue-paradox/) qui aurait soulevé les navires ennemis hors de la mer et les aurait fait chavirer.
 - **Rayon Ardent** (Heat Ray) : Une légende selon laquelle il aurait utilisé un grand nombre de miroirs pour collecter la lumière du soleil et la concentrer sur les navires de guerre romains, les faisant prendre feu. L'authenticité de cela continue d'être débattue aujourd'hui.
 - **Catapultes Puissantes** (Catapults) : Elles projetaient d'énormes pierres avec précision à distance, détruisant les formations ennemies.
 

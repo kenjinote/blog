@@ -171,7 +171,7 @@ $$ C(x) = \frac{1 - \sqrt{1 - 4x}}{2x} $$
 
 ### 5.1. 단순 재귀 (Naive Recursion)
 
-이는 점화식을 직접 구현하는 방법입니다. 하지만 동일한 값을 반복해서 계산하기 때문에 시간 복잡도가 기하급수적으로 증가하여 큰 $n$ 에는 적합하지 않습니다.
+이는 점화식을 직접 구현하는 방법입니다. 하지만 동일한 값을 반복해서 계산하기 때문에 시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)가 기하급수적으로 증가하여 큰 $n$ 에는 적합하지 않습니다.
 
 ```python
 def catalan_recursive(n):
@@ -187,7 +187,7 @@ def catalan_recursive(n):
 
 ### 5.2. 동적 계획법 ([Dynamic Programming](https://kenji.blog/ko/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))
 
-메모이제이션(또는 상향식 동적 계획법)을 활용하여 계산 결과를 배열에 저장함으로써 시간 복잡도를 $O(n^2)$ 으로 줄일 수 있습니다.
+메모이제이션(또는 상향식 동적 계획법)을 활용하여 계산 결과를 배열에 저장함으로써 시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)를 $O(n^2)$ 으로 줄일 수 있습니다.
 
 ```python
 def catalan_dp(n):
@@ -209,7 +209,7 @@ for i in range(7):
 
 ### 5.3. 닫힌 형태의 공식 (Closed-Form Formula)
 
-이 공식을 사용하면 팩토리얼 계산만 수행하여 $O(n)$ 의 시간 복잡도로 결과를 도출할 수 있습니다.
+이 공식을 사용하면 팩토리얼 계산만 수행하여 $O(n)$ 의 시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)로 결과를 도출할 수 있습니다.
 
 ```python
 import math

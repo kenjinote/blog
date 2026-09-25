@@ -17,7 +17,7 @@ description: "艾倫·凱（Alan Kay）是一位美國計算機科學家，被�
 
 艾倫·凱於1940年出生在麻薩諸塞州斯普林菲爾德。他從幼年起就展現出天才般的智慧，3歲就能流利地閱讀，高中時期更以爵士音樂家的身分登上專業舞台，展現了多才多藝的一面。
 
-在他的職業生涯中，值得一提的是他並非只是一名單純的計算機科學家，而是具備了生物學、哲學、音樂、教育學等廣泛的知識。他在大學時主修數學與分子生物學，而生物學中「細胞（Cell）」的概念，便成為了他後來構想「物件導向程式設計（Object-Oriented Programming）」的根基。如同細胞能獨立運作，並透過互相傳遞訊息來維持生命一樣，他認為軟體也可以被建構為由獨立物件組成的網路。
+在他的職業生涯中，值得一提的是他並非只是一名單純的計算機科學家，而是具備了生物學、哲學、音樂、教育學等廣泛的知識。他在大學時主修數學與分子生物學，而生物學中「細胞（Cell）」的概念，便成為了他後來構想「[物件導向程式設計](/zh-tw/p/object-oriented-programming-oop-solid-principles/)（Object-Oriented Programming）」的根基。如同細胞能獨立運作，並透過互相傳遞訊息來維持生命一樣，他認為軟體也可以被建構為由獨立物件組成的網路。
 
 進入猶他大學研究所後，凱在那裡接觸到了伊凡·蘇澤蘭（Ivan Sutherland）的「Sketchpad」以及道格拉斯·恩格爾巴特（Douglas Engelbart）的「NLS」等先進系統。透過這些接觸，他開始確信電腦不應只是單純的計算機，而是能夠從根本上擴展人類思考與表達能力的「新媒體（動態媒體）」。
 
@@ -37,9 +37,9 @@ description: "艾倫·凱（Alan Kay）是一位美國計算機科學家，被�
 
 1970年代，凱作為創始成員加入了全錄（Xerox）的帕羅奧多研究中心（PARC）。在這裡，他帶領「學習研究小組（Learning Research Group, LRG）」，致力於能實現Dynabook構想的軟硬體研究。
 
-在這樣的背景下，程式語言「Smalltalk」誕生了。Smalltalk將所有元素都視為「物件（Object）」，並透過它們之間互相發送「訊息（Message）」來讓程式運作，這是世界上第一個完全實作了「物件導向程式設計」概念的語言。
+在這樣的背景下，程式語言「Smalltalk」誕生了。Smalltalk將所有元素都視為「物件（Object）」，並透過它們之間互相發送「訊息（Message）」來讓程式運作，這是世界上第一個完全實作了「[物件導向程式設計](/zh-tw/p/object-oriented-programming-oop-solid-principles/)」概念的語言。
 
-同時，作為Smalltalk的操作環境，也開發出了使用視窗、圖示、滑鼠及指標的「GUI（圖形使用者介面）」。此外，為了運行這些軟體，更誕生了原型硬體「Xerox Alto」。PARC的這些歷史性成果，對1979年來訪的蘋果公司（Apple）創辦人史蒂夫·賈伯斯（Steve Jobs）產生了強烈的啟發，並直接促成了後來Lisa與Macintosh的誕生。
+同時，作為Smalltalk的操作環境，也開發出了使用視窗、圖示、滑鼠及指標的「GUI（圖形使用者介面）」。此外，為了運行這些軟體，更誕生了原型硬體「Xerox Alto」。PARC的這些歷史性成果，對1979年來訪的蘋果公司（Apple）創辦人[史蒂夫·賈伯斯](/zh-tw/p/biography-steve-jobs/)（Steve Jobs）產生了強烈的啟發，並直接促成了後來Lisa與Macintosh的誕生。
 
 ```mermaid
 graph TD
@@ -58,7 +58,7 @@ graph TD
 
 艾倫·凱所播下的種子，如今在現代IT社會的各個角落綻放。
 
-1. **物件導向程式設計的普及**
+1. **[物件導向程式設計](/zh-tw/p/object-oriented-programming-oop-solid-principles/)的普及**
    Java、Python、Ruby、C++等現代主流程式語言，大多以某種形式採用了凱所提倡並在Smalltalk中具現化的物件導向概念。這使得開發大規模且複雜的軟體變得更加高效與靈活。
 
 2. **個人電腦與GUI的標準化**

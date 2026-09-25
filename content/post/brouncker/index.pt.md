@@ -12,7 +12,7 @@ tags: ["William Brouncker", "Pi", "Fração Contínua", "Equação de Pell", "Ro
 
 A Europa do século XVII estava no meio de uma revolução científica. Foi uma era em que a matemática e a física deram saltos dramáticos, como resumido pela descoberta do cálculo por [Isaac Newton](https://kenji.blog/pt/p/newton/) e Gottfried Wilhelm Leibniz. Em meio a isso, a instituição que desempenhou um papel central no desenvolvimento do mundo acadêmico britânico foi **A Royal Society**.
 
-Este artigo fornece uma explicação detalhada da vida e das notáveis conquistas matemáticas de **[William Brouncker](https://kenji.blog/pt/p/brouncker/)**, que serviu como o primeiro Presidente da Royal Society e deixou sua marca na história como um matemático com sua "representação em fração contínua de Pi" e "solução para a equação de Pell". [Brouncker](https://kenji.blog/pt/p/brouncker/) interagiu com as mentes mais brilhantes da Europa da época e abordou vários problemas desafiadores. Suas conquistas contribuíram significativamente para estabelecer as bases para um tratamento matematicamente rigoroso do conceito de infinito.
+Este artigo fornece uma explicação detalhada da vida e das notáveis conquistas matemáticas de **[William Brouncker](https://kenji.blog/pt/p/brouncker/)**, que serviu como o primeiro Presidente da Royal Society e deixou sua marca na história como um matemático com sua "representação em fração contínua de Pi" e "solução para a [equação de Pell](/pt/p/pell-equation/)". [Brouncker](https://kenji.blog/pt/p/brouncker/) interagiu com as mentes mais brilhantes da Europa da época e abordou vários problemas desafiadores. Suas conquistas contribuíram significativamente para estabelecer as bases para um tratamento matematicamente rigoroso do conceito de infinito.
 
 ## 2. Início de Vida e Carreira
 
@@ -64,7 +64,7 @@ As frações contínuas são ferramentas muito poderosas para aproximar números
 
 ## 5. Conquista Matemática: Resolvendo a [Equação de Pell](https://kenji.blog/pt/p/pell-equation/)
 
-Outra conquista significativa é a solução para a chamada **equação de Pell**. A equação de Pell é uma equação diofantina (uma equação polinomial com coeficientes inteiros) da seguinte forma para um número inteiro positivo $n$ que não é um quadrado perfeito:
+Outra conquista significativa é a solução para a chamada **[equação de Pell](/pt/p/pell-equation/)**. A [equação de Pell](/pt/p/pell-equation/) é uma equação diofantina (uma equação polinomial com coeficientes inteiros) da seguinte forma para um número inteiro positivo $n$ que não é um quadrado perfeito:
 
 $$
 x^2 - n y^2 = 1 \quad (\text{onde } x, y \text{ são inteiros})
@@ -98,7 +98,7 @@ $$
 x = 1766319049, \quad y = 226153980
 $$
 
-[Brouncker](https://kenji.blog/pt/p/brouncker/) demonstrou que mesmo soluções tão gigantescas poderiam ser derivadas sistematicamente usando seu método. Ironicamente, devido a um mal-entendido de Leonhard Euler, esta equação foi mais tarde batizada com o nome do matemático inglês John Pell, mas a maior contribuição para estabelecer o método de solução pertence inegavelmente a [Brouncker](https://kenji.blog/pt/p/brouncker/).
+[Brouncker](https://kenji.blog/pt/p/brouncker/) demonstrou que mesmo soluções tão gigantescas poderiam ser derivadas sistematicamente usando seu método. Ironicamente, devido a um mal-entendido de [Leonhard Euler](/pt/p/euler/), esta equação foi mais tarde batizada com o nome do matemático inglês John Pell, mas a maior contribuição para estabelecer o método de solução pertence inegavelmente a [Brouncker](https://kenji.blog/pt/p/brouncker/).
 
 ## 6. Outras Conquistas e Anos Posteriores
 
@@ -118,6 +118,6 @@ Em seus anos posteriores, mesmo após deixar a Presidência da Royal Society, [B
 
 ## 7. Conclusão
 
-[William Brouncker](https://kenji.blog/pt/p/brouncker/) foi um líder notável e um matemático original que impulsionou a comunidade científica britânica do século XVII. Suas conquistas ao lançar as bases da ciência moderna como primeiro Presidente da Royal Society são imensuráveis. Além disso, suas conquistas matemáticas, como a representação em fração contínua de Pi e a solução da equação de Pell, tornaram-se marcos significativos no desenvolvimento da análise, que lida com o conceito do infinito, e da teoria dos números.
+[William Brouncker](https://kenji.blog/pt/p/brouncker/) foi um líder notável e um matemático original que impulsionou a comunidade científica britânica do século XVII. Suas conquistas ao lançar as bases da ciência moderna como primeiro Presidente da Royal Society são imensuráveis. Além disso, suas conquistas matemáticas, como a representação em fração contínua de Pi e a solução da [equação de Pell](/pt/p/pell-equation/), tornaram-se marcos significativos no desenvolvimento da análise, que lida com o conceito do infinito, e da teoria dos números.
 
 Sua abordagem simboliza o período de transição da rigorosa geometria para a análise utilizando álgebra e séries infinitas. Embora seu nome seja muitas vezes ofuscado por gigantes como Newton e [Fermat](https://kenji.blog/pt/p/fermat/), sem a existência de **[Brouncker](https://kenji.blog/pt/p/brouncker/)**, não se pode discutir a riqueza da matemática de hoje. Sua curiosidade intelectual e espírito de investigação continuam a brilhar diante de nós como a beleza da matemática, mesmo centenas de anos depois.

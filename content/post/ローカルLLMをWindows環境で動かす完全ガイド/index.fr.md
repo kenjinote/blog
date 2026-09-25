@@ -15,13 +15,13 @@ En 2026, l'évolution de l'IA générative et des grands modèles linguistiques 
 
 L'évolution de l'écosystème des LLM locaux, en particulier dans l'environnement Windows, est remarquable. Il y a quelques années, il était de notoriété publique que "le développement et l'exécution de l'IA se font sous Linux", mais en 2026, Windows s'est transformé en une plateforme d'IA extrêmement puissante et facile d'accès.
 
-Cet article fournit un guide complet pour configurer, exploiter et optimiser les LLM locaux dans un environnement Windows, sur la base des dernières tendances technologiques de 2026. Nous expliquerons tout en détail avec un volume impressionnant, de la configuration facile avec Ollama pour les débutants, à l'optimisation extrême utilisant llama.cpp pour les utilisateurs avancés, en passant par l'approche mathématique des calculs VRAM, la compréhension approfondie de l'architecture et le fine-tuning (ajustement fin) en local.
+Cet article fournit un guide complet pour configurer, exploiter et optimiser les LLM locaux dans un environnement Windows, sur la base des dernières tendances technologiques de 2026. Nous expliquerons tout en détail avec un volume impressionnant, de la configuration facile avec Ollama [pour les débutants](/fr/p/articles-en-cuir%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/), à l'optimisation extrême utilisant llama.cpp pour les utilisateurs avancés, en passant par l'approche mathématique des calculs VRAM, la compréhension approfondie de l'architecture et le fine-tuning (ajustement fin) en local.
 
 ## 1.1 Tendances technologiques entourant les LLM locaux en 2026
 
 Les principales tendances qui façonnent l'écosystème actuel des LLM locaux sont les suivantes :
 
-1. **Adoption complète du format GGUF** : GGUF (GPT-Generated Unified Format), qui intègre les métadonnées et les tenseurs dans un seul fichier, est devenu le standard de facto absolu. Ainsi, en téléchargeant un seul fichier depuis Hugging Face, il peut être exécuté dans n'importe quel environnement.
+1. **Adoption complète du format [GGUF](/fr/p/llama-cpp-quantization-gguf/)** : [GGUF](/fr/p/llama-cpp-quantization-gguf/) (GPT-Generated Unified Format), qui intègre les métadonnées et les tenseurs dans un seul fichier, est devenu le standard de facto absolu. Ainsi, en téléchargeant un seul fichier depuis Hugging Face, il peut être exécuté dans n'importe quel environnement.
 2. **Démocratisation de l'architecture MoE (Mixture of Experts)** : De nombreux modèles MoE, petits mais performants, ont été publiés. En activant seulement certains experts lors de l'inférence, ils atteignent des performances comparables aux modèles géants tout en réduisant la charge de calcul sur les PC grand public.
 3. **Abstraction et optimisation avancées des moteurs d'inférence** : Des outils comme Ollama, LM Studio et AnythingLLM ont été affinés, éliminant le besoin pour les utilisateurs de se soucier des dépendances complexes telles que l'installation des pilotes CUDA. De plus, la prise en charge native de FlashAttention 3 sous Windows a considérablement amélioré la vitesse d'inférence.
 4. **Utilisation des NPU et essor des PC Windows Copilot+** : La technologie permettant d'exécuter de petits LLM (SLM : Small Language Models) avec une faible consommation d'énergie en utilisant le NPU (Neural Processing Unit) intégré, même sur les ordinateurs portables sans GPU, est entrée dans la phase pratique.
@@ -314,7 +314,7 @@ Voici les problèmes fréquemment rencontrés et leurs solutions.
 
 # 10. Conclusion et perspectives d'avenir
 
-En 2026, la mise en place d'un [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) local dans un environnement Windows n'est plus un privilège réservé à une poignée d'ingénieurs. Avec l'adoption généralisée du format GGUF, l'émergence d'écosystèmes raffinés comme Ollama et LM Studio, ainsi que les optimisations matérielles telles que FlashAttention, n'importe qui peut facilement obtenir un environnement d'IA de niveau entreprise.
+En 2026, la mise en place d'un [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) local dans un environnement Windows n'est plus un privilège réservé à une poignée d'ingénieurs. Avec l'adoption généralisée du format [GGUF](/fr/p/llama-cpp-quantization-gguf/), l'émergence d'écosystèmes raffinés comme Ollama et LM Studio, ainsi que les optimisations matérielles telles que FlashAttention, n'importe qui peut facilement obtenir un environnement d'IA de niveau entreprise.
 
 N'hésitez pas à tirer parti des points expliqués dans cet article :
 

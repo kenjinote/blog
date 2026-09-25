@@ -15,7 +15,7 @@ In recent years, the landscape of software engineering has changed dramatically 
 
 In such an era, it is natural for many engineers to harbor anxiety that "my job might be taken away by AI." Indeed, "mere coding work (Typing Code)" such as creating boilerplate for routine CRUD applications, implementing simple algorithms, or calling APIs of well-known libraries is rapidly becoming commoditized.
 
-However, the essence of software engineering is not about "typing code." It is about solving business challenges through technology and building scalable, maintainable systems. In this article, we will explore in profound and technical depth the "human-specific engineering skills" that become even more valuable in the era of AI writing code, looking at it from perspectives such as the technical limitations of LLMs, Domain-Driven Design (DDD), system architecture, and debugging distributed systems.
+However, the essence of software engineering is not about "typing code." It is about solving business challenges through technology and building scalable, maintainable systems. In this article, we will explore in profound and technical depth the "human-specific engineering skills" that become even more valuable in the era of AI writing code, looking at it from perspectives such as the technical limitations of LLMs, Domain-Driven Design (DDD), system architecture, and debugging [distributed systems](/en/p/cap-theorem-distributed-systems-tradeoff/).
 
 ---
 
@@ -115,7 +115,7 @@ Rather than instructing AI to "build the entire system", humans will delegate im
 
 ## 4. Human-Specific Skill 3: [Distributed System](https://kenji.blog/en/p/cap-theorem-distributed-systems/) Architecture Design and Scaling
 
-Modern software is evolving from monoliths running on a single server to cloud-native microservices architectures and event-driven architectures. Designing such distributed systems is a profoundly difficult area for AI, which can only perform localized logic optimization.
+Modern software is evolving from monoliths running on a single server to cloud-native microservices architectures and event-driven architectures. Designing such [distributed systems](/en/p/cap-theorem-distributed-systems-tradeoff/) is a profoundly difficult area for AI, which can only perform localized logic optimization.
 
 ### 4.1 The [CAP Theorem](https://kenji.blog/en/p/cap-theorem-distributed-systems/) and Judging Trade-offs
 
@@ -163,7 +163,7 @@ Engineers must appropriately build the "three pillars of observability"—Logs, 
 
 "Bugs that don't reproduce in local or test environments, but only occur during peak times in the production environment"—for instance, memory leaks, database deadlocks, connection pool exhaustion, or network packet loss—can never be found simply by static analysis of the source code.
 
-Human engineers form hypotheses while glaring at production environment metrics, analyze thread dumps and heap dumps, and identify bottlenecks. AI cannot tap away at a terminal to directly profile a production server process (nor should it be permitted to do so, as a security requirement).
+Human engineers form hypotheses while glaring at production environment metrics, analyze thread dumps and heap dumps, and identify bottlenecks. AI cannot tap away at a [terminal](/en/p/terminal-efficiency-powershell-bash-shortcuts/) to directly profile a production server process (nor should it be permitted to do so, as a security requirement).
 As systems become more complex, the value of engineers possessing "low-level knowledge" of physical infrastructure, network protocols, and OS kernel tuning, along with "intuitive hypothesis-driven reasoning skills", will skyrocket.
 
 ---

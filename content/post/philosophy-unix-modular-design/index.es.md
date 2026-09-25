@@ -12,7 +12,7 @@ image: "eyecatch.jpg"
 
 En la ingeniería de software moderna, no pasa un día sin escuchar términos como "Diseño Modular", "Principio de Responsabilidad Única" y "Acoplamiento Débil". Estos se tratan como reglas de oro para mantener bases de código limpias y construir sistemas escalables y mantenibles. Sin embargo, estos conceptos no nacieron en los últimos años. Rastrear sus orígenes nos lleva a "Unix", un sistema operativo nacido en los Laboratorios Bell a principios de la década de 1970.
 
-Unix no era solo un sistema operativo. Encarnaba una filosofía de "cómo construir excelente software": la "Filosofía Unix". Esta filosofía, construida por gigantes como Ken Thompson, Dennis Ritchie y Doug McIlroy, respira profundamente incluso en las arquitecturas nativas de la nube y los microservicios modernos medio siglo después.
+Unix no era solo un sistema operativo. Encarnaba una filosofía de "cómo construir excelente software": la "Filosofía Unix". Esta filosofía, construida por gigantes como Ken Thompson, [Dennis Ritchie](/es/p/biography-dennis-ritchie/) y Doug McIlroy, respira profundamente incluso en las arquitecturas nativas de la nube y los [microservicios](/es/p/microservices-architecture-bff-api-gateway/) modernos medio siglo después.
 
 Este artículo explora a fondo la esencia del "diseño modular" en el núcleo de la filosofía Unix y revela por qué su ideología sigue siendo apoyada de manera trascendental.
 
@@ -83,7 +83,7 @@ Sin embargo, el espíritu del "diseño modular" en la filosofía Unix se ha tran
 
 ### Arquitectura de Microservicios
 
-Los microservicios dividen las enormes aplicaciones monolíticas en una colección de servicios pequeños que se pueden implementar de forma independiente. Se puede decir que esta es una versión a mayor escala de la filosofía Unix de conectar "programas que hacen bien una cosa" con protocolos comunes como HTTP y gRPC (versiones modernas de las tuberías).
+Los [microservicios](/es/p/microservices-architecture-bff-api-gateway/) dividen las enormes aplicaciones monolíticas en una colección de servicios pequeños que se pueden implementar de forma independiente. Se puede decir que esta es una versión a mayor escala de la filosofía Unix de conectar "programas que hacen bien una cosa" con protocolos comunes como HTTP y gRPC (versiones modernas de las tuberías).
 
 ### Tecnología de Contenedores (Docker)
 
@@ -91,7 +91,7 @@ Las tecnologías de contenedores representadas por Docker también tienen conexi
 
 ### Programación Funcional y Tuberías de Datos
 
-La composición de funciones en la programación funcional (tomar la salida de una función como entrada de otra) comparte una similitud matemática con el concepto de tuberías de Unix. El procesamiento de flujos en el procesamiento de big data, como Apache Kafka, también es una aplicación del concepto de flujo de texto a sistemas distribuidos.
+La composición de funciones en la [programación funcional](/es/p/lambda-calculus-functional-programming/) (tomar la salida de una función como entrada de otra) comparte una similitud matemática con el concepto de tuberías de Unix. El procesamiento de flujos en el procesamiento de big data, como Apache Kafka, también es una aplicación del concepto de flujo de texto a [sistemas distribuidos](/es/p/cap-theorem-distributed-systems-tradeoff/).
 
 ```mermaid
 graph LR

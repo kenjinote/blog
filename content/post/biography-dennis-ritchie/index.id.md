@@ -9,7 +9,7 @@ slug: "biography-dennis-ritchie"
 description: "Dennis MacAlistair Ritchie (9 September 1941 - 12 Oktober 2011) adalah salah satu tokoh paling penting dan berpengaruh dalam ilmu komputer modern."
 ---
 
-Dennis MacAlistair Ritchie (9 September 1941 - 12 Oktober 2011) adalah salah satu tokoh paling penting dan berpengaruh dalam ilmu komputer modern. Meskipun ia jarang mendapat sorotan yang mencolok seperti Steve Jobs atau Bill Gates, warisan yang ditinggalkannya adalah fondasi dari setiap teknologi yang kita gunakan saat ini. Bahasa "C" dan sistem operasi "UNIX" yang sangat ia kembangkan secara mendalam, terus berdetak di mana-mana di dunia digital modern, dari server internet hingga ponsel cerdas, superkomputer, dan bahkan peralatan rumah tangga.
+Dennis MacAlistair Ritchie (9 September 1941 - 12 Oktober 2011) adalah salah satu tokoh paling penting dan berpengaruh dalam ilmu komputer modern. Meskipun ia jarang mendapat sorotan yang mencolok seperti [Steve Jobs](/id/p/biography-steve-jobs/) atau Bill Gates, warisan yang ditinggalkannya adalah fondasi dari setiap teknologi yang kita gunakan saat ini. Bahasa "C" dan sistem operasi "UNIX" yang sangat ia kembangkan secara mendalam, terus berdetak di mana-mana di dunia digital modern, dari server internet hingga ponsel cerdas, superkomputer, dan bahkan peralatan rumah tangga.
 
 ## Latar Belakang dan Hari-hari di Bell Labs
 
@@ -25,7 +25,7 @@ Setelah kehilangan lingkungan pengembangan yang sangat baik, keduanya mencari si
 
 Awalnya, UNIX ditulis dalam bahasa assembly, sehingga bergantung sepenuhnya pada arsitektur perangkat keras tertentu. Untuk mengatasi hal ini dan memungkinkan sistem untuk di-porting ke komputer lain, Ritchie menyempurnakan "Bahasa B" yang dikembangkan oleh Thompson, dan menciptakan "Bahasa C" pada tahun 1972.
 
-Revolusi terbesar dari bahasa C adalah kemampuannya untuk mengoperasikan memori tingkat rendah perangkat keras (seperti pointer), sementara secara bersamaan menyeimbangkannya dengan sempurna dengan karakteristik bahasa tingkat tinggi (seperti pemrograman terstruktur) yang secara logis mudah dibaca dan ditulis oleh manusia.
+Revolusi terbesar dari bahasa C adalah kemampuannya untuk mengoperasikan memori tingkat rendah perangkat keras (seperti [pointer](/id/p/c-language-pointers-memory-management-stack-heap/)), sementara secara bersamaan menyeimbangkannya dengan sempurna dengan karakteristik bahasa tingkat tinggi (seperti pemrograman terstruktur) yang secara logis mudah dibaca dan ditulis oleh manusia.
 
 Pada tahun 1973, Ritchie dan Thompson sepenuhnya menulis ulang bagian inti (kernel) UNIX dengan bahasa C ini. Melalui pendekatan penulisan sistem operasi dalam bahasa tingkat tinggi alih-alih bahasa assembly yang bergantung pada perangkat keras — sebuah pendekatan yang tidak biasa untuk saat itu — UNIX berevolusi secara dramatis menjadi sistem yang sangat portabel yang dapat di-porting ke perangkat keras apa pun.
 
@@ -33,7 +33,7 @@ Pada tahun 1973, Ritchie dan Thompson sepenuhnya menulis ulang bagian inti (kern
 
 Di pusat filosofi desain Dennis Ritchie selalu ada "Kesederhanaan (Simplicity)" dan "Keanggunan (Elegance)". Bahasa C dirancang untuk tidak memiliki fitur bahasa yang sangat besar itu sendiri, melainkan untuk menyediakan fungsi sederhana yang sangat penting, menyerahkan sisanya pada kebijaksanaan pemrogram. Sebagaimana sering dikatakan, "Bahasa C dibangun dengan premis bahwa pemrogram tahu persis apa yang mereka coba lakukan", itu adalah alat tajam dengan tingkat kebebasan yang tinggi bagi para profesional.
 
-Filosofi ini juga terukir dalam-dalam pada filosofi desain UNIX, yang disebut "Filosofi UNIX". Prinsip-prinsip seperti "Biarkan satu program melakukan satu hal dengan baik" dan "Hubungkan program dengan pipa dan gunakan aliran teks sebagai antarmuka universal" adalah lambang modularitas dan kolaborasi: alih-alih membangun sistem raksasa yang kompleks, gabungkan alat-alat sederhana dan independen untuk memecahkan masalah yang kompleks.
+Filosofi ini juga terukir dalam-dalam pada filosofi desain UNIX, yang disebut "[Filosofi UNIX](/id/p/philosophy-unix-modular-design/)". Prinsip-prinsip seperti "Biarkan satu program melakukan satu hal dengan baik" dan "Hubungkan program dengan pipa dan gunakan aliran teks sebagai antarmuka universal" adalah lambang modularitas dan kolaborasi: alih-alih membangun sistem raksasa yang kompleks, gabungkan alat-alat sederhana dan independen untuk memecahkan masalah yang kompleks.
 
 ## Dampak pada Generasi Mendatang dan Warisan Bintang Raksasa yang Tenang
 
@@ -43,9 +43,9 @@ Bahasa pemrograman seperti C++, Java, C#, Objective-C, Go, dan Rust, yang dituru
 
 Berkat pencapaiannya yang luar biasa, ia dianugerahi Penghargaan Turing, yang sering disebut sebagai Penghargaan Nobel di bidang komputasi, bersama Ken Thompson pada tahun 1983, dan menerima Medali Teknologi Nasional AS dari Presiden Clinton pada tahun 1999, di antara penghargaan-penghargaan tertinggi lainnya. Namun, ia sendiri sangat rendah hati, tidak suka menonjolkan diri di depan umum, dan tetap menjadi insinyur dengan mentalitas peretas sepanjang hidupnya.
 
-Pada 12 Oktober 2011, hanya seminggu setelah kematian Steve Jobs, Dennis Ritchie meninggal dengan tenang di rumahnya di New Jersey. Sementara kematian Jobs diliput secara luas di seluruh dunia dan membawa banyak orang pada air mata, kematian Ritchie tidak terlalu menarik perhatian publik umum. Namun, dalam komunitas TI global, itu diterima dengan tenang, namun dengan rasa terima kasih dan kesedihan yang tak terkira.
+Pada 12 Oktober 2011, hanya seminggu setelah kematian [Steve Jobs](/id/p/biography-steve-jobs/), Dennis Ritchie meninggal dengan tenang di rumahnya di New Jersey. Sementara kematian Jobs diliput secara luas di seluruh dunia dan membawa banyak orang pada air mata, kematian Ritchie tidak terlalu menarik perhatian publik umum. Namun, dalam komunitas TI global, itu diterima dengan tenang, namun dengan rasa terima kasih dan kesedihan yang tak terkira.
 
-"Steve Jobs memberi kita jendela (produk) yang indah, tetapi Dennis Ritchie membangun fondasi dan alat untuk membangun rumah itu."
+"[Steve Jobs](/id/p/biography-steve-jobs/) memberi kita jendela (produk) yang indah, tetapi Dennis Ritchie membangun fondasi dan alat untuk membangun rumah itu."
 
 Kutipan ini berbicara tentang besarnya kontribusi praktisnya bagi masyarakat modern. Dunia digital modern dibangun di atas fondasi yang kuat dan elegan yang ia bangun. Prestasi Dennis Ritchie yang tenang tidak akan pernah pudar; itu akan hidup selamanya sebagai dasar komputasi.
 

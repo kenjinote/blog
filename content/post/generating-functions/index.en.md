@@ -160,7 +160,7 @@ Using this property, the number of ways to arrange elements or the number of per
 In modern computer science and competitive programming, generating functions are implemented as **Formal Power Series (FPS)**.
 In FPS, we don't care whether substituting a specific numerical value into $x$ converges (analytical properties); the focus is simply on manipulating the "sequence of coefficients" algebraically as polynomials.
 
-By using the Fast Fourier Transform (FFT) or Number Theoretic Transform (NTT), the product of two polynomials of degree $N$ (i.e., the convolution of sequences of length $N$) can be found with a computational complexity of $\mathcal{O}(N \log N)$. This allows calculations that would take $\mathcal{O}(N^2)$ with dynamic programming to be dramatically accelerated.
+By using the [Fast Fourier Transform (FFT)](/en/p/fast-fourier-transform-algorithm/) or Number Theoretic Transform (NTT), the product of two polynomials of degree $N$ (i.e., the convolution of sequences of length $N$) can be found with a computational complexity of $\mathcal{O}(N \log N)$. This allows calculations that would take $\mathcal{O}(N^2)$ with dynamic programming to be dramatically accelerated.
 
 ## 6. Conclusion
 

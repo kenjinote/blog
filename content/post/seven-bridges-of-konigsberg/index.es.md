@@ -15,7 +15,7 @@ En la historia de las matemáticas, dudas triviales o juegos cotidianos a veces 
 
 En el siglo XVIII, en la ciudad de Königsberg, en el Reino de Prusia (actualmente Kaliningrado, en la Federación Rusa), fluía un gran río llamado Pregel. Había siete puentes construidos para conectar las islas del río (islotes) y ambas orillas. Los ciudadanos de la época, durante sus paseos al atardecer, idearon el siguiente juego: "¿Sería posible cruzar los siete puentes de la ciudad, pasando por cada uno exactamente una vez, y regresar al punto de partida original?"
 
-Cuando este problema, que a primera vista parecía un simple rompecabezas, llegó a manos del genio matemático **[Leonhard Euler](https://kenji.blog/es/p/euler/)**, se produjo una revolución en el mundo de las matemáticas. Euler no solo demostró que este problema era imposible, sino que en el proceso reinterpretó la naturaleza del espacio desde una perspectiva completamente nueva, sentando las bases de la **Teoría de grafos** ([Graph Theory](https://kenji.blog/es/p/graph-theory-dijkstra-a-star/)) y la **Topología** (Topology), dos campos extremadamente importantes en las matemáticas modernas.
+Cuando este problema, que a primera vista parecía un simple rompecabezas, llegó a manos del genio matemático **[Leonhard Euler](https://kenji.blog/es/p/euler/)**, se produjo una revolución en el mundo de las matemáticas. Euler no solo demostró que este problema era imposible, sino que en el proceso reinterpretó la naturaleza del espacio desde una perspectiva completamente nueva, sentando las bases de la **[Teoría de grafos](/es/p/graph-theory-dijkstra-a-star/)** ([Graph Theory](https://kenji.blog/es/p/graph-theory-dijkstra-a-star/)) y la **Topología** (Topology), dos campos extremadamente importantes en las matemáticas modernas.
 
 En este artículo, profundizaremos en el contexto histórico del problema de los Siete Puentes de Königsberg, la brillante solución de Euler y cómo se conecta esto con la ciencia y la tecnología modernas, intercalando detalles matemáticos. No te limites a una simple introducción histórica; disfruta de la belleza de la estructura matemática que subyace en él.
 
@@ -52,7 +52,7 @@ Ignoró por completo la forma y el tamaño físicos de la tierra firme, la anchu
 1. Representar las **áreas de tierra firme (islas y orillas)** simplemente como "puntos" sin tamaño. En la terminología moderna, esto se llama **vértice** (Vertex) o **nodo** (Node).
 2. Representar los **puentes** como "líneas" que conectan los vértices. A esto se le llama **arista** (Edge) o **enlace** (Link). La curvatura y la longitud de la línea no importan.
 
-De esta manera, una estructura discreta representada como un conjunto de un número finito de vértices y aristas que los conectan se llama **grafo** ([Graph](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) en matemáticas. Este fue el momento exacto del nacimiento del campo que ahora llamamos "Teoría de grafos".
+De esta manera, una estructura discreta representada como un conjunto de un número finito de vértices y aristas que los conectan se llama **grafo** ([Graph](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) en matemáticas. Este fue el momento exacto del nacimiento del campo que ahora llamamos "[Teoría de grafos](/es/p/graph-theory-dijkstra-a-star/)".
 
 El siguiente diagrama de Mermaid muestra cómo el mapa geográfico de la ciudad de Königsberg se convirtió en una representación gráfica abstracta.
 
@@ -79,7 +79,7 @@ Gracias a esta poderosa abstracción, la pregunta cotidiana de los ciudadanos de
 
 Después de formular el problema en forma de grafo, Euler descubrió una ley universal muy simple pero extremadamente poderosa. La clave de su demostración fue la introducción de un nuevo concepto llamado **grado** (Degree).
 
-En la teoría de grafos, el **grado** de un vértice $v$ se denota como $d(v)$ o $\text{deg}(v)$, lo que significa "el número total de aristas directamente conectadas a ese vértice".
+En la [teoría de grafos](/es/p/graph-theory-dijkstra-a-star/), el **grado** de un vértice $v$ se denota como $d(v)$ o $\text{deg}(v)$, lo que significa "el número total de aristas directamente conectadas a ese vértice".
 
 Euler consideró lógicamente qué tipo de restricción impone el acto de dibujar un "camino que atraviesa cada arista exactamente una vez (dibujo de un solo trazo)" en el grado de cada vértice.
 
@@ -98,7 +98,7 @@ Aquí, los patrones de ruta se clasifican en los dos siguientes:
 2. **Camino euleriano (Eulerian Path)**: Cuando el punto de partida y el punto final son vértices diferentes.
    En este caso, se necesita una arista adicional para "salir primero" del punto de partida, y se necesita una arista adicional para "entrar al final" en el punto final. Por lo tanto, solo estos dos vértices (el punto de partida y el punto final) no tendrán pares completos de aristas, y tendrán un grado **impar** (Odd). Los grados de todos los demás puntos de paso deben ser pares.
 
-Este es el teorema más fundamental y famoso de la teoría de grafos (el Teorema de Euler) rigurosamente demostrado por Euler.
+Este es el teorema más fundamental y famoso de la [teoría de grafos](/es/p/graph-theory-dijkstra-a-star/) (el Teorema de Euler) rigurosamente demostrado por Euler.
 
 Expresando este teorema de manera más rigurosa usando fórmulas matemáticas, en un grafo no dirigido conexo $G = (V, E)$:
 
@@ -142,7 +142,7 @@ El propio Euler descubrió posteriormente, en 1750, una ley universal sorprenden
 
 ## Aplicación y expansión de la teoría de grafos en la sociedad moderna
 
-La teoría de grafos y la topología, que nacieron de la pura investigación intelectual de un matemático del siglo XVIII, nunca se limitaron a estudios en una torre de marfil. Hoy en día han florecido como herramientas extremadamente prácticas e indispensables que sustentan la base de nuestra sociedad y tecnología altamente informatizadas.
+La [teoría de grafos](/es/p/graph-theory-dijkstra-a-star/) y la topología, que nacieron de la pura investigación intelectual de un matemático del siglo XVIII, nunca se limitaron a estudios en una torre de marfil. Hoy en día han florecido como herramientas extremadamente prácticas e indispensables que sustentan la base de nuestra sociedad y tecnología altamente informatizadas.
 
 ### 1. Redes de computadoras e Internet
 La estructura física y lógica de Internet que usamos a diario es exactamente un enorme grafo a escala mundial. Los enrutadores individuales, los servidores y las computadoras se convierten en vértices, y los cables de fibra óptica y las líneas de comunicación inalámbrica que los conectan se representan como aristas. Los protocolos de enrutamiento (por ejemplo, el algoritmo de [Dijkstra](https://kenji.blog/es/p/graph-theory-dijkstra-a-star/)) para entregar paquetes de datos a sus destinos de la manera más rápida y eficiente, evitando la congestión, están diseñados como algoritmos en la teoría de grafos.

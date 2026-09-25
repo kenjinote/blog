@@ -11,21 +11,21 @@ tags: ["Generative AI", "DDD", "Architecture", "Future of Work"]
 
 # [AI가 코드를 작성하는 시대에 요구되는 '인간 고유의 엔지니어 스킬'](https://kenji.blog/ko/p/human_engineer_skills/)
 
-최근 Generative AI(생성형 AI)와 대규모 언어 모델([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 비약적인 발전으로, 소프트웨어 엔지니어링의 풍경은 극적으로 변화했습니다. GitHub Copilot이나 각종 AI 코딩 어시스턴트가 일상적으로 사용되면서, "자연어로 지시를 내리면 AI가 순식간에 코드를 생성한다"는 현상은 더 이상 미래의 SF가 아닌 오늘의 현실이 되었습니다.
+최근 Generative AI(생성형 AI)와 [대규모 언어 모델](/ko/p/large-language-models-llm-transformer-prompt-engineering/)([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 비약적인 발전으로, 소프트웨어 엔지니어링의 풍경은 극적으로 변화했습니다. GitHub Copilot이나 각종 AI 코딩 어시스턴트가 일상적으로 사용되면서, "자연어로 지시를 내리면 AI가 순식간에 코드를 생성한다"는 현상은 더 이상 미래의 SF가 아닌 오늘의 현실이 되었습니다.
 
 이러한 시대에 많은 엔지니어들이 "내 일자리를 AI에게 빼앗기는 것은 아닐까" 하는 불안감을 갖는 것은 자연스러운 일입니다. 확실히 정형화된 CRUD 애플리케이션의 보일러플레이트 작성, 단순한 알고리즘의 구현, 혹은 잘 알려진 라이브러리의 API 호출과 같은 "단순한 코딩 작업(Typing Code)"은 급속도로 범용화되고 있습니다.
 
-하지만 소프트웨어 엔지니어링의 본질은 "코드를 입력하는 것"이 아닙니다. 비즈니스의 과제를 기술을 통해 해결하고, 확장 가능하며 유지보수하기 쉬운 시스템을 구축하는 것입니다. 본 기사에서는 AI가 코드를 작성하는 시대일수록 그 가치가 더욱 높아지는 '인간 고유의 엔지니어 스킬'에 대해 LLM의 기술적인 한계, 도메인 주도 설계(DDD), 시스템 아키텍처, 분산 시스템의 디버깅 등 다양한 관점에서 매우 상세하고 기술적으로 깊이 있게 고찰해 봅니다.
+하지만 소프트웨어 엔지니어링의 본질은 "코드를 입력하는 것"이 아닙니다. 비즈니스의 과제를 기술을 통해 해결하고, 확장 가능하며 유지보수하기 쉬운 시스템을 구축하는 것입니다. 본 기사에서는 AI가 코드를 작성하는 시대일수록 그 가치가 더욱 높아지는 '인간 고유의 엔지니어 스킬'에 대해 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 기술적인 한계, 도메인 주도 설계(DDD), 시스템 아키텍처, [분산 시스템](/ko/p/cap-theorem-distributed-systems-tradeoff/)의 디버깅 등 다양한 관점에서 매우 상세하고 기술적으로 깊이 있게 고찰해 봅니다.
 
 ---
 
 ## 1. 대규모 언어 모델(LLM)의 구조적인 한계를 이해하기
 
-AI의 능력을 올바르게 평가하고, 인간이 어느 영역에서 가치를 발휘해야 할지 판별하기 위해서는, 먼저 AI(특히 LLM)의 구조적인 한계를 수리적・아키텍처적 관점에서 이해할 필요가 있습니다.
+AI의 능력을 올바르게 평가하고, 인간이 어느 영역에서 가치를 발휘해야 할지 판별하기 위해서는, 먼저 AI(특히 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 구조적인 한계를 수리적・아키텍처적 관점에서 이해할 필요가 있습니다.
 
 ### 1.1 [Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 아키텍처에서의 계산량과 컨텍스트의 한계
 
-현재 LLM의 대부분은 Google이 2017년에 발표한 'Transformer' 아키텍처를 기반으로 하고 있습니다. Transformer의 핵심은 '자기 주의 메커니즘(Self-Attention Mechanism)'에 있습니다. 자기 주의 메커니즘은 입력된 시퀀스 내의 각 토큰이 다른 모든 토큰과 어느 정도 연관되어 있는지를 계산합니다.
+현재 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 대부분은 Google이 2017년에 발표한 'Transformer' 아키텍처를 기반으로 하고 있습니다. Transformer의 핵심은 '자기 주의 메커니즘(Self-Attention Mechanism)'에 있습니다. 자기 주의 메커니즘은 입력된 시퀀스 내의 각 토큰이 다른 모든 토큰과 어느 정도 연관되어 있는지를 계산합니다.
 
 이 어텐션의 계산식은 다음과 같이 표현됩니다.
 
@@ -38,16 +38,16 @@ $$ \text{Complexity} = O(N^2 \cdot d) $$
 
 최근에는 FlashAttention과 같은 하드웨어 수준의 최적화나, Sparse Attention, 나아가 Mamba([State](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/) Space Models) 등의 선형 시간 $O(N)$으로 처리 가능한 대체 아키텍처 연구가 진행되고 있지만, 여전히 "무한한 컨텍스트를 완전히 이해하고 전체적으로 최적화된 출력을 생성하는 것"은 매우 어렵습니다.
 
-더욱이 컨텍스트 윈도우를 물리적으로 확장할 수 있다고 해도, 'Lost in the Middle(중간 정보의 소실)'이라고 불리는 현상이 발생합니다. [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)은 프롬프트의 시작과 끝부분의 정보에 강하게 영향을 받기 쉬우며, 중간에 배치된 중요한 요건이나 제약을 무시해 버리는 경향이 있습니다. 수만 줄에 달하는 엔터프라이즈 시스템의 소스 코드 전체를 LLM에게 읽게 하고 "최적의 리팩터링을 해라"라고 지시해도, 국소적으로는 옳지만 전체적으로는 파탄 난 코드가 생성되는 이유가 바로 이 때문입니다.
+더욱이 컨텍스트 윈도우를 물리적으로 확장할 수 있다고 해도, 'Lost in the Middle(중간 정보의 소실)'이라고 불리는 현상이 발생합니다. [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)은 프롬프트의 시작과 끝부분의 정보에 강하게 영향을 받기 쉬우며, 중간에 배치된 중요한 요건이나 제약을 무시해 버리는 경향이 있습니다. 수만 줄에 달하는 엔터프라이즈 시스템의 소스 코드 전체를 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)에게 읽게 하고 "최적의 리팩터링을 해라"라고 지시해도, 국소적으로는 옳지만 전체적으로는 파탄 난 코드가 생성되는 이유가 바로 이 때문입니다.
 
 ### 1.2 확률론적 생성 모델의 특성과 '할루시네이션'
 
-LLM의 본질은 입력된 컨텍스트(프롬프트)와 지금까지의 생성 결과를 바탕으로, 다음에 출현할 확률이 가장 높은 토큰을 예측하는 '확률론적 생성 모델'입니다.
+[LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 본질은 입력된 컨텍스트(프롬프트)와 지금까지의 생성 결과를 바탕으로, 다음에 출현할 확률이 가장 높은 토큰을 예측하는 '확률론적 생성 모델'입니다.
 
 $$ P(w_t | w_{1:t-1}) = \text{softmax}(W \cdot h_t) $$
 
 모델은 방대한 훈련 데이터로부터 "단어의 통계적인 공기(Co-occurrence) 관계"를 학습하고 있을 뿐이며, 생성되는 코드의 "의미(Semantics)"나 "실행 결과가 현실 세계에 미치는 영향"을 이해하고 있는 것은 아닙니다. 이로 인해 발생하는 것이 '할루시네이션(환각)'입니다.
-존재하지 않는 가상의 라이브러리 함수를 호출하거나, 타입이 미묘하게 일치하지 않는 변수를 전달하는 버그는, LLM이 "문법적으로 그럴듯한(확률이 높은) 토큰 열"을 생성한 결과에 불과합니다.
+존재하지 않는 가상의 라이브러리 함수를 호출하거나, 타입이 미묘하게 일치하지 않는 변수를 전달하는 버그는, [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)이 "문법적으로 그럴듯한(확률이 높은) 토큰 열"을 생성한 결과에 불과합니다.
 
 ### 1.3 현실 세계 그라운딩(Grounding)의 부재
 
@@ -116,11 +116,11 @@ AI에게 "시스템 전체를 만들어 줘"라고 지시하는 것이 아니라
 
 ## 4. 인간 고유의 스킬 ③: 분산 시스템의 아키텍처 설계와 스케일
 
-현대의 소프트웨어는 단일 서버에서 동작하는 모놀리스에서, 클라우드 네이티브한 마이크로서비스 아키텍처, 이벤트 주도 아키텍처로 진화하고 있습니다. 이러한 분산 시스템의 설계는 국소적인 로직의 최적화밖에 할 수 없는 AI에게는 매우 어려운 영역입니다.
+현대의 소프트웨어는 단일 서버에서 동작하는 모놀리스에서, 클라우드 네이티브한 [마이크로서비스 아키텍처](/ko/p/microservices-architecture-bff-api-gateway/), 이벤트 주도 아키텍처로 진화하고 있습니다. 이러한 [분산 시스템](/ko/p/cap-theorem-distributed-systems-tradeoff/)의 설계는 국소적인 로직의 최적화밖에 할 수 없는 AI에게는 매우 어려운 영역입니다.
 
 ### 4.1 CAP 정리와 트레이드오프의 판단
 
-분산 시스템을 설계할 때, 엔지니어는 항상 'CAP 정리'에 직면합니다. CAP 정리란 분산 시스템은 아래의 3가지 특성 중 동시에 2가지만을 만족시킬 수 있다는 원칙입니다.
+[분산 시스템](/ko/p/cap-theorem-distributed-systems-tradeoff/)을 설계할 때, 엔지니어는 항상 'CAP 정리'에 직면합니다. CAP 정리란 [분산 시스템](/ko/p/cap-theorem-distributed-systems-tradeoff/)은 아래의 3가지 특성 중 동시에 2가지만을 만족시킬 수 있다는 원칙입니다.
 
 - **[Consistency](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/)(일관성)**: 모든 노드에서 동시에 같은 데이터가 보이는가
 - **[Availability](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/)(가용성)**: 노드의 일부에 장애가 발생해도 시스템이 계속해서 응답하는가
@@ -134,7 +134,7 @@ AI는 "C를 우선하는 코드"나 "A를 우선하는 코드"를 작성할 수�
 
 ### 4.2 비동기 통신과 결과적 일관성([Eventual Consistency](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/))
 
-시스템의 규모가 커지면 서비스 간의 연동은 [REST API](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)에 의한 동기 통신에서 메시지 큐(Kafka, RabbitMQ 등)를 활용한 비동기 통신으로 이행합니다. 여기서의 데이터 일관성은 즉각적 일관성에서 '결과적 일관성(Eventual [Consistency](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/))'으로 변화합니다.
+시스템의 규모가 커지면 서비스 간의 연동은 [REST API](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)에 의한 동기 통신에서 메시지 큐([Kafka, RabbitMQ](/ko/p/event-driven-architecture-message-queue-kafka-rabbitmq/) 등)를 활용한 비동기 통신으로 이행합니다. 여기서의 데이터 일관성은 즉각적 일관성에서 '결과적 일관성(Eventual [Consistency](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/))'으로 변화합니다.
 Saga 패턴이나 [CQRS](https://kenji.blog/ko/p/event-driven-architecture-async/)(Command Query Responsibility Segregation)와 같은 고도화된 아키텍처 패턴을 어느 타이밍에 도입해야 할까. 이러한 복잡한 의사결정과 시스템 전체의 청사진을 그리는 것은 그야말로 시니어 엔지니어의 진면목입니다.
 
 ```mermaid
@@ -201,7 +201,7 @@ AI 시대에 엔지니어는 "코드 타이피스트"에서 "시스템 전체를
 
 ## 7. 맺음말: 진화를 거부하는 대신 파도를 타고 넘기
 
-"AI가 코드를 작성하는 시대"는 엔지니어에게 위협이 아니라 역사상 최대의 기회입니다. 과거 어셈블리 언어에서 C 언어로의 전환이 일어났고, 메모리 포인터 관리에서 [Java](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)의 가비지 컬렉션으로의 진화가 일어났듯이, AI에 의한 코드 생성은 "추상화의 레벨이 한 단계 올라간 것"에 불과합니다.
+"AI가 코드를 작성하는 시대"는 엔지니어에게 위협이 아니라 역사상 최대의 기회입니다. 과거 어셈블리 언어에서 C 언어로의 전환이 일어났고, 메모리 [포인터](/ko/p/c-language-pointers-memory-management-stack-heap/) 관리에서 [Java](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)의 가비지 컬렉션으로의 진화가 일어났듯이, AI에 의한 코드 생성은 "추상화의 레벨이 한 단계 올라간 것"에 불과합니다.
 
 앞으로의 엔지니어는 특정 프로그래밍 언어의 세세한 사양이나 프레임워크의 버전업에 일희일비하는 것이 아니라, **"비즈니스 과제는 무엇인가", "데이터를 어떻게 분할하고 어떻게 연동시킬 것인가", "시스템이 다운되었을 때 어떻게 빠르게 복구할 정인가"** 와 같은, 보다 본질적이고 인간다운 고차원적인 문제 해결에 리소스를 집중할 수 있습니다.
 

@@ -14,11 +14,11 @@ Dalam kehidupan sehari-hari, "intuisi" berfungsi sebagai alat pengambilan keputu
 
 Teori probabilitas adalah kerangka matematis untuk mengevaluasi kejadian yang tidak pasti secara kuantitatif, namun kesimpulannya sering kali bertentangan keras dengan intuisi kita. Fenomena ini telah lama diteliti di bidang psikologi, ekonomi perilaku, dan pendidikan matematika sebagai "bias kognitif" atau "kesenjangan antara intuisi dan logika".
 
-Dalam artikel ini, kami akan mengangkat paradoks paling terkenal yang melambangkan kesenjangan antara intuisi dan probabilitas ini, yaitu "Masalah Monty Hall (Monty Hall problem)". Meskipun terlihat sederhana, masalah ini telah memicu perdebatan besar yang melibatkan matematikawan dan ilmuwan ternama di seluruh dunia. Melalui pertanyaan "Mengapa kita bisa jatuh ke dalam jebakan probabilitas yang begitu sederhana?", kita akan mengeksplorasi secara mendalam dan tuntas tentang keterbatasan struktur kognitif manusia serta pentingnya pemikiran logis.
+Dalam artikel ini, kami akan mengangkat paradoks paling terkenal yang melambangkan kesenjangan antara intuisi dan probabilitas ini, yaitu "[Masalah Monty Hall](/id/p/monty-hall-problem/) (Monty Hall problem)". Meskipun terlihat sederhana, masalah ini telah memicu perdebatan besar yang melibatkan matematikawan dan ilmuwan ternama di seluruh dunia. Melalui pertanyaan "Mengapa kita bisa jatuh ke dalam jebakan probabilitas yang begitu sederhana?", kita akan mengeksplorasi secara mendalam dan tuntas tentang keterbatasan struktur kognitif manusia serta pentingnya pemikiran logis.
 
 ## Bab 1: Apa itu Masalah Monty Hall?
 
-Masalah Monty Hall adalah paradoks probabilitas yang dinamai dari pembawa acara program televisi Amerika yang berumur panjang 'Let's Make a Deal', Monty Hall. Masalah ini mulai dikenal luas oleh publik setelah diangkat pada tahun 1990 dalam kolom "Ask Marilyn" di majalah berita Parade.
+[Masalah Monty Hall](/id/p/monty-hall-problem/) adalah paradoks probabilitas yang dinamai dari pembawa acara program televisi Amerika yang berumur panjang 'Let's Make a Deal', Monty Hall. Masalah ini mulai dikenal luas oleh publik setelah diangkat pada tahun 1990 dalam kolom "Ask Marilyn" di majalah berita Parade.
 
 ### Pengaturan Masalah
 
@@ -124,7 +124,7 @@ Oleh karena itu, probabilitas kemenangan yang diharapkan dari strategi mengubah 
 
 ## Bab 3: Solusi Eksak dengan Teorema Bayes
 
-Masalah Monty Hall dapat diselesaikan dengan lebih matematis dan eksak dengan menggunakan "Teorema Bayes (Bayes' theorem)" untuk menghitung probabilitas bersyarat. Estimasi Bayes adalah alat yang sangat kuat yang menunjukkan bagaimana probabilitas sebelumnya (probabilitas apriori) harus diperbarui (probabilitas aposteriori) ketika informasi (bukti) baru diperoleh.
+[Masalah Monty Hall](/id/p/monty-hall-problem/) dapat diselesaikan dengan lebih matematis dan eksak dengan menggunakan "[Teorema Bayes](/id/p/bayes-theorem/) (Bayes' theorem)" untuk menghitung probabilitas bersyarat. Estimasi Bayes adalah alat yang sangat kuat yang menunjukkan bagaimana probabilitas sebelumnya (probabilitas apriori) harus diperbarui (probabilitas aposteriori) ketika informasi (bukti) baru diperoleh.
 
 Mari kita definisikan peristiwanya sebagai berikut:
 - $C_i$ : Kejadian mobil baru berada di pintu $i$ ($i \in \{A, B, C\}$)
@@ -143,7 +143,7 @@ Aturan tindakan Monty (probabilitas bersyarat $P(M_B|C_i)$) adalah sebagai berik
 2. Jika mobil baru ada di Pintu B ($C_B$), Monty sama sekali tidak bisa membuka B, sehingga $P(M_B|C_B) = 0$
 3. Jika mobil baru ada di Pintu C ($C_C$), Monty tidak bisa membuka C, dan A tidak bisa dibuka karena dipilih oleh pemain. Oleh karena itu, ia terpaksa harus membuka B, sehingga $P(M_B|C_C) = 1$
 
-Rumus Teorema Bayes adalah sebagai berikut:
+Rumus [Teorema Bayes](/id/p/bayes-theorem/) adalah sebagai berikut:
 $P(C_i|M_B) = \frac{P(M_B|C_i) P(C_i)}{P(M_B)}$
 
 Mari kita hitung penyebut $P(M_B)$ (probabilitas total Monty membuka Pintu B) (Teorema Probabilitas Total).
@@ -158,7 +158,7 @@ $P(C_A|M_B) = \frac{P(M_B|C_A) P(C_A)}{P(M_B)} = \frac{(1/2) \times (1/3)}{1/2} 
 **Probabilitas mobil baru ada di Pintu C (mengubah pilihan):**
 $P(C_C|M_B) = \frac{P(M_B|C_C) P(C_C)}{P(M_B)} = \frac{1 \times (1/3)}{1/2} = 2/3$
 
-Dengan cara ini, menggunakan Teorema Bayes, secara matematis terbukti dengan sempurna bahwa probabilitas diperbarui oleh informasi baru (fakta bahwa Monty membuka Pintu B), dan probabilitas Pintu C melonjak menjadi 2/3.
+Dengan cara ini, menggunakan [Teorema Bayes](/id/p/bayes-theorem/), secara matematis terbukti dengan sempurna bahwa probabilitas diperbarui oleh informasi baru (fakta bahwa Monty membuka Pintu B), dan probabilitas Pintu C melonjak menjadi 2/3.
 
 ## Bab 4: Mengapa Intuisi Manusia Salah? (Faktor Psikologis dan Kognitif)
 
@@ -167,13 +167,13 @@ Meskipun diperlihatkan pembuktian matematis berulang kali, banyak orang masih me
 ### 1. Bias Probabilitas Setara (Equiprobability Bias)
 
 Manusia memiliki kecenderungan kuat secara tak sadar untuk menganggap bahwa dalam situasi acak atau tidak pasti, "jika ada pilihan yang tersisa, maka probabilitas semuanya pasti setara".
-Dalam Masalah Monty Hall, pada akhirnya tersisa 2 pilihan: "Pintu A" dan "Pintu C". Begitu informasi visual dan situasional "2 pilihan" ini masuk ke otak, heuristik yang kuat "karena ada 2 pilihan, probabilitasnya masing-masing 1/2" langsung terpicu.
+Dalam [Masalah Monty Hall](/id/p/monty-hall-problem/), pada akhirnya tersisa 2 pilihan: "Pintu A" dan "Pintu C". Begitu informasi visual dan situasional "2 pilihan" ini masuk ke otak, heuristik yang kuat "karena ada 2 pilihan, probabilitasnya masing-masing 1/2" langsung terpicu.
 Otak kita memisahkan dan mengabaikan "informasi asimetris" dari kronologi masa lalu (fakta bahwa awalnya ada 3 pilihan dan Monty secara sengaja membuka zonk) dari "situasi saat ini".
 
 ### 2. Kesalahpahaman Tentang Hubungan Kausalitas dan "Niat"
 
 Kita cenderung mencoba memahami hubungan kausalitas suatu hal secara linear.
-Ini mirip dengan "Kekeliruan Penjudi (Gambler's fallacy)" di mana seseorang berpikir "selanjutnya pasti hitam yang akan keluar" setelah warna merah keluar 5 kali berturut-turut pada rolet, namun pada masalah Monty Hall yang terjadi sebaliknya, kita justru meremehkan "pembaruan informasi".
+Ini mirip dengan "Kekeliruan Penjudi (Gambler's fallacy)" di mana seseorang berpikir "selanjutnya pasti hitam yang akan keluar" setelah warna merah keluar 5 kali berturut-turut pada rolet, namun pada [masalah Monty Hall](/id/p/monty-hall-problem/) yang terjadi sebaliknya, kita justru meremehkan "pembaruan informasi".
 
 Yang penting adalah fakta bahwa **"Pembawa acara Monty tidak membuka pintu secara acak"**.
 Jika pembawa acara membuka pintu secara acak tanpa mengetahui apa-apa dan "kebetulan itu adalah kambing", maka probabilitas dari 2 pintu yang tersisa memang benar-benar menjadi 1/2 (ini disebut "Masalah Pembawa Acara yang Bodoh").
@@ -198,7 +198,7 @@ flowchart LR
 
 ## Bab 5: Pelajaran dari Paradoks dalam Kehidupan Sehari-hari
 
-Masalah Monty Hall tidak terbatas hanya pada kuis atau teka-teki matematika belaka. Pelajaran yang diajarkan oleh paradoks ini memiliki nilai universal yang dapat diterapkan pada berbagai bidang seperti kehidupan kita sehari-hari, bisnis, dunia medis, hingga pengembangan AI.
+[Masalah Monty Hall](/id/p/monty-hall-problem/) tidak terbatas hanya pada kuis atau teka-teki matematika belaka. Pelajaran yang diajarkan oleh paradoks ini memiliki nilai universal yang dapat diterapkan pada berbagai bidang seperti kehidupan kita sehari-hari, bisnis, dunia medis, hingga pengembangan AI.
 
 ### Konflik Antara Data dan Intuisi (Masalah Positif Palsu dalam Dunia Medis)
 
@@ -207,9 +207,9 @@ Sebagai contoh, misalkan ada "penyakit langka yang diderita oleh 1 dari 10.000 o
 Jika Anda menjalani tes ini dan dinyatakan "positif", berapakah probabilitas Anda benar-benar menderita penyakit langka tersebut?
 
 Secara intuitif, Anda mungkin akan merasa putus asa dan berpikir, "Karena akurasinya 99%, probabilitas saya sakit pasti 99% juga."
-Namun, jika dihitung dengan Teorema Bayes, probabilitas Anda benar-benar menderita penyakit tersebut **hanya kurang dari 1% (sekitar 0,98%)**. Hal ini karena 1% (sekitar 100 orang) dari mayoritas mutlak "orang sehat (9.999 orang)" akan menjadi "positif palsu", sehingga di dalam kelompok orang yang dinyatakan positif, pasien yang sebenarnya (hampir 1 orang) akan menjadi minoritas yang sangat kecil.
+Namun, jika dihitung dengan [Teorema Bayes](/id/p/bayes-theorem/), probabilitas Anda benar-benar menderita penyakit tersebut **hanya kurang dari 1% (sekitar 0,98%)**. Hal ini karena 1% (sekitar 100 orang) dari mayoritas mutlak "orang sehat (9.999 orang)" akan menjadi "positif palsu", sehingga di dalam kelompok orang yang dinyatakan positif, pasien yang sebenarnya (hampir 1 orang) akan menjadi minoritas yang sangat kecil.
 
-Seperti ini, perbedaan yang luar biasa antara evaluasi probabilitas intuitif (99%) dan kebenaran matematis (1%) memiliki bahaya menimbulkan kepanikan yang tidak perlu atau keputusan medis yang salah bagi orang-orang. Memahami masalah Monty Hall adalah langkah pertama untuk membangun literasi dalam mengevaluasi "asimetri informasi dan probabilitas apriori" dengan benar.
+Seperti ini, perbedaan yang luar biasa antara evaluasi probabilitas intuitif (99%) dan kebenaran matematis (1%) memiliki bahaya menimbulkan kepanikan yang tidak perlu atau keputusan medis yang salah bagi orang-orang. Memahami [masalah Monty Hall](/id/p/monty-hall-problem/) adalah langkah pertama untuk membangun literasi dalam mengevaluasi "asimetri informasi dan probabilitas apriori" dengan benar.
 
 ### Nilai Informasi dalam Strategi Bisnis
 
@@ -219,12 +219,12 @@ Pada saat ini, apakah Anda akan "keras kepala mempertahankan strategi awal (Bias
 
 ## Penutup: Kecerdasan adalah Keberanian untuk "Meragukan Intuisi"
 
-Apa yang membuat Masalah Monty Hall begitu menarik, dan sekaligus menakutkan, adalah karena ia menyoroti "keterbatasan kecerdasan manusia" dengan sangat brilian. Bahkan para ahli bergelar Ph.D. pun tertipu oleh intuisi awal mereka dan bereaksi secara emosional menentang pembuktian yang benar.
+Apa yang membuat [Masalah Monty Hall](/id/p/monty-hall-problem/) begitu menarik, dan sekaligus menakutkan, adalah karena ia menyoroti "keterbatasan kecerdasan manusia" dengan sangat brilian. Bahkan para ahli bergelar Ph.D. pun tertipu oleh intuisi awal mereka dan bereaksi secara emosional menentang pembuktian yang benar.
 
 Kita hidup dengan mengandalkan senjata ampuh bernama "intuisi" yang kita peroleh selama proses evolusi. Namun, dalam masyarakat modern yang semakin kompleks dan dibanjiri data, kita harus sadar bahwa intuisi tersebut terkadang bisa menjerumuskan kita ke dalam jebakan.
 
-Masalah Monty Hall menyampaikan satu pesan penting kepada kita.
+[Masalah Monty Hall](/id/p/monty-hall-problem/) menyampaikan satu pesan penting kepada kita.
 Yaitu, **"pentingnya untuk tidak mempercayai intuisi sendiri secara buta, melainkan berhenti sejenak dan berpikir ulang menggunakan alat berupa logika dan matematika"**. Untuk menerima kebenaran yang sekilas tampak berlawanan dengan intuisi, dibutuhkan kerendahan hati intelektual dan keberanian untuk memperbarui asumsi kita sendiri.
 
-Lain kali saat Anda dihadapkan pada pilihan penting dalam hidup, dan Anda mendapatkan informasi baru (pintu yang terbuka), tolong ingatlah masalah Monty Hall ini. Apakah probabilitasnya telah berubah akibat informasi tersebut? Apakah Anda sedang terjebak oleh Bias Mempertahankan Status Quo? 
+Lain kali saat Anda dihadapkan pada pilihan penting dalam hidup, dan Anda mendapatkan informasi baru (pintu yang terbuka), tolong ingatlah [masalah Monty Hall](/id/p/monty-hall-problem/) ini. Apakah probabilitasnya telah berubah akibat informasi tersebut? Apakah Anda sedang terjebak oleh Bias Mempertahankan Status Quo? 
 Keputusan logis untuk "mengubah pilihan" mungkin saja akan menghadirkan mobil baru tepat di depan mata Anda.

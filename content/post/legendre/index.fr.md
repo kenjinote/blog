@@ -42,7 +42,7 @@ Les réalisations de [Legendre](https://kenji.blog/fr/p/legendre/) couvrent pres
 
 ### 2.1 Passion pour la théorie des nombres et le symbole de [Legendre](https://kenji.blog/fr/p/legendre/)
 
-[Legendre](https://kenji.blog/fr/p/legendre/) était profondément fasciné par la théorie des nombres, initiée par des prédécesseurs tels que Pierre de Fermat et [Leonhard Euler](https://kenji.blog/fr/p/euler/). L'une de ses plus grandes réalisations est son travail sur la "Loi de réciprocité quadratique". Cette loi est l'un des théorèmes les plus beaux et les plus importants de la théorie des nombres pour déterminer si un nombre premier est congruent à un carré modulo un autre nombre premier.
+[Legendre](https://kenji.blog/fr/p/legendre/) était profondément fasciné par la théorie des nombres, initiée par des prédécesseurs tels que [Pierre de Fermat](/fr/p/fermat/) et [Leonhard Euler](https://kenji.blog/fr/p/euler/). L'une de ses plus grandes réalisations est son travail sur la "Loi de réciprocité quadratique". Cette loi est l'un des théorèmes les plus beaux et les plus importants de la théorie des nombres pour déterminer si un nombre premier est congruent à un carré modulo un autre nombre premier.
 
 Il a formulé cette loi et en a donné une preuve partielle (une preuve complète a ensuite été fournie par le jeune Gauss). De plus, pour exprimer cette recherche de manière concise et élégante, il a introduit une notation connue aujourd'hui sous le nom de **symbole de [Legendre](https://kenji.blog/fr/p/legendre/)**.
 
@@ -77,9 +77,9 @@ Ces polynômes sont devenus un outil indispensable dans toutes sortes de calculs
 
 ### 2.3 'Éléments de géométrie' et son grand impact sur l'enseignement des mathématiques
 
-Parallèlement à ses activités de recherche, [Legendre](https://kenji.blog/fr/p/legendre/) était également un éducateur exceptionnel. Son livre "Éléments de géométrie", publié en 1794, a réorganisé les "Éléments" d'[Euclide](https://kenji.blog/p/euclid/) pour les rendre plus accessibles et rigoureux pour les étudiants de son époque.
+Parallèlement à ses activités de recherche, [Legendre](https://kenji.blog/fr/p/legendre/) était également un éducateur exceptionnel. Son livre "Éléments de géométrie", publié en 1794, a réorganisé les "Éléments" d'[Euclide](https://kenji.blog/fr/p/euclid/) pour les rendre plus accessibles et rigoureux pour les étudiants de son époque.
 
-Ce manuel a connu un succès phénoménal, étant traduit en anglais et dans d'autres langues et lu dans le monde entier, pas seulement en France. Il a été largement adopté aux États-Unis et est resté la norme absolue pour l'enseignement de la géométrie tout au long du XIXe siècle. Dans ce livre, il a continuellement tenté de prouver le postulat des parallèles (le cinquième postulat d'[Euclide](https://kenji.blog/p/euclid/)), ajoutant de nouvelles preuves à chaque édition, bien qu'en fin de compte elles se soient toutes révélées imparfaites. Cependant, sa persévérance est devenue l'une des forces motrices importantes incitant la naissance de la géométrie non euclidienne.
+Ce manuel a connu un succès phénoménal, étant traduit en anglais et dans d'autres langues et lu dans le monde entier, pas seulement en France. Il a été largement adopté aux États-Unis et est resté la norme absolue pour l'enseignement de la géométrie tout au long du XIXe siècle. Dans ce livre, il a continuellement tenté de prouver le postulat des parallèles (le cinquième postulat d'[Euclide](https://kenji.blog/fr/p/euclid/)), ajoutant de nouvelles preuves à chaque édition, bien qu'en fin de compte elles se soient toutes révélées imparfaites. Cependant, sa persévérance est devenue l'une des forces motrices importantes incitant [la naissance de la géométrie non euclidienne](/fr/p/non-euclidean-geometry/).
 
 ### 2.4 Défi au théorème des nombres premiers
 
@@ -91,13 +91,13 @@ $$
 
 Sur la base de ses propres données calculées à la main, il a déduit que la constante $ A $ était d'environ $ 1.08366 $ (dans l'édition de 1808 de sa 'Théorie des Nombres'). Cette formule suggérait qu'au fur et à mesure que $ x $ grandit, la densité de la distribution des nombres premiers s'approche de $ \frac{1}{\ln(x)} $, une vision extrêmement avancée pour les mathématiques de l'époque.
 
-Il a été révélé plus tard que Gauss avait également fait une conjecture similaire en utilisant le logarithme intégral $ \text{Li}(x) $, et finalement, en 1896, le théorème des nombres premiers a été complètement et indépendamment prouvé par Jacques Hadamard et Charles de la Vallée Poussin. Bien qu'une preuve rigoureuse ait été hors de sa portée, cela montre à quel point l'intuition de [Legendre](https://kenji.blog/fr/p/legendre/) était fondamentalement correcte.
+Il a été révélé plus tard que Gauss avait également fait une conjecture similaire en utilisant le logarithme intégral $ \text{Li}(x) $, et finalement, en 1896, le [théorème des nombres premiers](/fr/p/prime-number-theorem/) a été complètement et indépendamment prouvé par Jacques Hadamard et Charles de la Vallée Poussin. Bien qu'une preuve rigoureuse ait été hors de sa portée, cela montre à quel point l'intuition de [Legendre](https://kenji.blog/fr/p/legendre/) était fondamentalement correcte.
 
 ## 3. Querelle avec Gauss : La tragédie autour de la découverte des moindres carrés
 
-En discutant de la vie de [Legendre](https://kenji.blog/fr/p/legendre/), on ne peut éviter le féroce différend de priorité, en particulier concernant la **méthode des moindres carrés**, avec [Carl Friedrich Gauss](https://kenji.blog/fr/p/gauss/), le "prince des mathématiques" allemand.
+En discutant de la vie de [Legendre](https://kenji.blog/fr/p/legendre/), on ne peut éviter le féroce différend de priorité, en particulier concernant la **[méthode des moindres carrés](/fr/p/method-of-least-squares/)**, avec [Carl Friedrich Gauss](https://kenji.blog/fr/p/gauss/), le "prince des mathématiques" allemand.
 
-En 1805, dans son livre sur le calcul des orbites des comètes, [Legendre](https://kenji.blog/fr/p/legendre/) annonça publiquement pour la première fois au monde la "méthode des moindres carrés" — une méthode pour trouver la valeur la plus probable en minimisant les erreurs des données d'observation. C'était une technique révolutionnaire qui forme la base de tous les domaines traitant des données, de l'astronomie et de la géodésie aux statistiques modernes et à l'apprentissage automatique.
+En 1805, dans son livre sur le calcul des orbites des comètes, [Legendre](https://kenji.blog/fr/p/legendre/) annonça publiquement pour la première fois au monde la "[méthode des moindres carrés](/fr/p/method-of-least-squares/)" — une méthode pour trouver la valeur la plus probable en minimisant les erreurs des données d'observation. C'était une technique révolutionnaire qui forme la base de tous les domaines traitant des données, de l'astronomie et de la géodésie aux statistiques modernes et à l'apprentissage automatique.
 
 ```mermaid
 flowchart LR
@@ -106,11 +106,11 @@ flowchart LR
     C -->|"Prédiction d'orbite, etc."| D["Applications"]
 ```
 
-Cependant, quatre ans plus tard en 1809, Gauss utilisa largement la méthode des moindres carrés dans son propre livre sur la mécanique céleste, affirmant : "J'utilise cette méthode de façon routinière depuis 1795." D'après les preuves historiques, on considère que l'affirmation de Gauss était vraie, mais la priorité académique de la publication appartenait incontestablement à [Legendre](https://kenji.blog/fr/p/legendre/).
+Cependant, quatre ans plus tard en 1809, Gauss utilisa largement la [méthode des moindres carrés](/fr/p/method-of-least-squares/) dans son propre livre sur la mécanique céleste, affirmant : "J'utilise cette méthode de façon routinière depuis 1795." D'après les preuves historiques, on considère que l'affirmation de Gauss était vraie, mais la priorité académique de la publication appartenait incontestablement à [Legendre](https://kenji.blog/fr/p/legendre/).
 
 Le comportement de Gauss a profondément blessé la fierté de [Legendre](https://kenji.blog/fr/p/legendre/). Legendre envoya une lettre à Gauss exigeant qu'il reconnaisse sa publication antérieure, mais Gauss maintint une attitude froide. Dans l'annexe de son propre travail, [Legendre](https://kenji.blog/fr/p/legendre/) exprima explicitement sa colère intense envers Gauss, déclarant qu'"une certaine personne revendique la découverte d'un autre comme sienne."
 
-De plus, concernant le théorème des nombres premiers (la conjecture de [Legendre](https://kenji.blog/fr/p/legendre/) de $ \pi(x) \approx \frac{x}{\ln x - 1.08366} $) et la loi de réciprocité quadratique, bien que Legendre les ait découverts et formulés en premier, Gauss les prouva complètement et les généralisa plus profondément, ce qui fit que tous les éloges publics se concentrèrent sur Gauss. Pour [Legendre](https://kenji.blog/fr/p/legendre/), Gauss était un mur trop haut qui lui arracha toutes ses réalisations, devenant son ennemi juré pour la vie.
+De plus, concernant le [théorème des nombres premiers](/fr/p/prime-number-theorem/) (la conjecture de [Legendre](https://kenji.blog/fr/p/legendre/) de $ \pi(x) \approx \frac{x}{\ln x - 1.08366} $) et la loi de réciprocité quadratique, bien que Legendre les ait découverts et formulés en premier, Gauss les prouva complètement et les généralisa plus profondément, ce qui fit que tous les éloges publics se concentrèrent sur Gauss. Pour [Legendre](https://kenji.blog/fr/p/legendre/), Gauss était un mur trop haut qui lui arracha toutes ses réalisations, devenant son ennemi juré pour la vie.
 
 ## 4. Le mystère du portrait : Un grand malentendu de 200 ans
 
@@ -131,6 +131,6 @@ Là, au lieu du profil sévère du politicien Louis [Legendre](https://kenji.blo
 
 [Adrien-Marie Legendre](https://kenji.blog/fr/p/legendre/) a terminé sa vie à Paris en 1833. Dans ses dernières années, il a fait face à des événements malheureux, comme la suspension de sa pension en raison de son opposition aux politiques gouvernementales.
 
-Il est souvent traité comme une "figure de l'ombre" devant la brillance écrasante des génies de premier plan de son époque, comme Gauss et Laplace. Cependant, le rôle qu'il a joué dans la construction des fondations des mathématiques modernes est incommensurable. L'héritage qu'il a laissé, comme les polynômes de [Legendre](https://kenji.blog/fr/p/legendre/), le symbole de [Legendre](https://kenji.blog/fr/p/legendre/) et la formulation de la méthode des moindres carrés, continue de soutenir le cœur de la science et de la technologie modernes.
+Il est souvent traité comme une "figure de l'ombre" devant la brillance écrasante des génies de premier plan de son époque, comme Gauss et Laplace. Cependant, le rôle qu'il a joué dans la construction des fondations des mathématiques modernes est incommensurable. L'héritage qu'il a laissé, comme les polynômes de [Legendre](https://kenji.blog/fr/p/legendre/), le symbole de [Legendre](https://kenji.blog/fr/p/legendre/) et la formulation de la [méthode des moindres carrés](/fr/p/method-of-least-squares/), continue de soutenir le cœur de la science et de la technologie modernes.
 
 Sa vie a été colorée par un destin étrange, incluant non seulement des succès spectaculaires, mais aussi des tourments sur la priorité et la confusion posthume de son portrait. Lorsque nous rencontrons le nom de **[Legendre](https://kenji.blog/fr/p/legendre/)** dans les formules de mathématiques et de physique, ne le considérez pas seulement comme un symbole, mais prenez un moment pour réfléchir à la vie de ce grand mathématicien qui possédait un esprit indomptable et profondément humain.

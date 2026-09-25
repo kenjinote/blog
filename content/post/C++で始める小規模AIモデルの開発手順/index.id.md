@@ -64,7 +64,7 @@ Menggunakan mmap memungkinkan konten file dipetakan langsung ke dalam ruang memo
 * **Zero-copy (Tanpa Salinan)**: Data dibaca langsung dari disk ke dalam tembolok halaman kernel, dan tidak ada salinan ekstra ke ruang pengguna yang terjadi.
 * **On-demand Load (Page Fault)**: Tepat saat CPU mengakses alamat memori tersebut, *page fault* terjadi, dan hanya *chunk* yang diperlukan (biasanya 4KB) yang dimuat ke dalam memori fisik.
 
-Di lingkungan Windows, API Win32 `CreateFileMapping` dan `MapViewOfFile` digunakan sebagai pengganti POSIX `mmap`.
+Di lingkungan Windows, API [Win32](/id/p/modern-cpp-win32-api-safe-handling/) `CreateFileMapping` dan `MapViewOfFile` digunakan sebagai pengganti POSIX `mmap`.
 
 ```mermaid
 sequenceDiagram
@@ -81,9 +81,9 @@ sequenceDiagram
 
 ### 3.2 Struktur Biner Format GGUF
 
-**GGUF (GPT-Generated Unified Format)**, yang dikonversi dari format seperti `.safetensors` Hugging Face, adalah format pamungkas untuk inferensi. GGUF memiliki tata letak biner ketat berikut:
+**[GGUF](/id/p/llama-cpp-quantization-gguf/) (GPT-Generated Unified Format)**, yang dikonversi dari format seperti `.safetensors` Hugging Face, adalah format pamungkas untuk inferensi. [GGUF](/id/p/llama-cpp-quantization-gguf/) memiliki tata letak biner ketat berikut:
 
-1. **Magic Bytes**: `0x46554747` (GGUF).
+1. **Magic Bytes**: `0x46554747` ([GGUF](/id/p/llama-cpp-quantization-gguf/)).
 2. **Version**: Nomor versi format.
 3. **Tensor Count & Metadata Count**: Jumlah tensor dan jumlah pasangan kunci-nilai metadata.
 4. **Metadata ([Key-Value](https://kenji.blog/id/p/nosql-database-selection-kvs-document-graph-wide-column/) Pairs)**: Kunci dengan prefiks panjang string, dan nilai yang diketik.

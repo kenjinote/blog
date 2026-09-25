@@ -12,9 +12,9 @@ description: 'Uma técnica de gerenciamento de saúde baseada em dados para maxi
 
 ## 1. Introdução: A Interseção entre Engenharia de Software e Biohacking
 
-A engenharia de software moderna é um trabalho intelectual rigoroso que envolve extrema carga cognitiva e longas horas de estilo de vida sedentário (Sedentary Lifestyle). Acompanhar as pilhas de tecnologia em constante mudança, caçar bugs em sistemas distribuídos complexos e a pressão dos prazos. Para superar isso, não basta simplesmente usar "força de vontade" ou "determinação"; é indispensável uma abordagem de ajustar o próprio corpo - o seu hardware - da mesma forma como se depura um sistema, ou seja, o "Biohacking".
+A engenharia de software moderna é um trabalho intelectual rigoroso que envolve extrema carga cognitiva e longas horas de estilo de vida sedentário (Sedentary Lifestyle). Acompanhar as pilhas de tecnologia em constante mudança, caçar bugs em [sistemas distribuídos](/pt/p/cap-theorem-distributed-systems-tradeoff/) complexos e a pressão dos prazos. Para superar isso, não basta simplesmente usar "força de vontade" ou "determinação"; é indispensável uma abordagem de ajustar o próprio corpo - o seu hardware - da mesma forma como se depura um sistema, ou seja, o "Biohacking".
 
-No passado, dependíamos de sentimentos subjetivos (heurísticas) como "Hoje, de alguma forma, me sinto bem/mal", mas hoje, com a popularização de dispositivos vestíveis de alto desempenho, como Oura Ring, Apple Watch e Garmin, podemos obter dados biométricos de forma não invasiva 24 horas por dia, 365 dias por ano. Neste artigo, explicarei como obter dados biométricos (VFC, FCR, arquitetura do sono) e dados de produtividade (métricas de codificação por meio do WakaTime, etc.) via API, e analisá-los correlacionalmente através de uma abordagem de ciência de dados usando Python e Pandas. Além disso, irei desvendar com muitos detalhes os hacks de saúde para engenheiros baseados em evidências científicas, como o modelo matemático dos ritmos circadianos e o momento ideal para a ingestão de café com base na meia-vida do metabolismo da cafeína.
+No passado, dependíamos de sentimentos subjetivos (heurísticas) como "Hoje, de alguma forma, me sinto bem/mal", mas hoje, com a popularização de dispositivos vestíveis de alto desempenho, como Oura Ring, Apple Watch e Garmin, podemos obter dados biométricos de forma não invasiva 24 horas por dia, 365 dias por ano. Neste artigo, explicarei como obter dados biométricos (VFC, FCR, arquitetura do sono) e dados de produtividade (métricas de codificação por meio do WakaTime, etc.) via API, e analisá-los correlacionalmente através de uma abordagem de ciência de dados usando Python e Pandas. Além disso, irei desvendar com muitos detalhes os hacks de saúde [para engenheiros](/pt/p/prompt-engineering-for-engineers/) baseados em evidências científicas, como o modelo matemático dos ritmos circadianos e o momento ideal para a ingestão de café com base na meia-vida do metabolismo da cafeína.
 
 ## 2. O que não se pode medir, não se pode gerenciar: Hardware para Aquisição de Dados Biométricos
 
@@ -106,7 +106,7 @@ flowchart TD
     F --> H["Web App Streamlit (Monitoramento Diário)"]
 ```
 
-Com essa arquitetura, você poderá monitorar de forma automática, todos os dias, a correlação entre sua condição física (input) e seu desempenho de programação (output).
+Com essa arquitetura, você poderá monitorar de forma automática, todos os dias, a correlação entre sua condição física (input) e seu desempenho de programação ([output](/pt/p/reading-hard-tech-books/)).
 
 Além disso, vejamos em detalhes a sequência entre os sistemas.
 

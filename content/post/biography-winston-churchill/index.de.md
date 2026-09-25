@@ -56,7 +56,7 @@ Das größte Merkmal, das Churchill von vielen anderen Politikern unterscheidet,
 
 Bei den Unterhauswahlen 1945, unmittelbar nach dem Sieg im Krieg, erlitt die von ihm geführte Konservative Partei eine unerwartete, vernichtende Niederlage. Doch auch nach seinem Rücktritt ließ sein internationaler Einfluss nicht nach. In einer Rede in Fulton, Missouri, USA, im Jahr 1946 wies er auf die osteuropäischen Länder unter sowjetischem Einfluss hin und sagte: „Von Stettin an der Ostsee bis Triest an der Adria ist ein ‚Eiserner Vorhang (Iron Curtain)‘ über den Kontinent niedergegangen.“ Diese Worte wurden zum bestimmenden Konzept für die neue Weltordnung des darauffolgenden Kalten Krieges.
 
-Später kehrte er 1951 in das Amt des Premierministers zurück und trug die Last der nationalen Politik, bis er sich 1955 aus gesundheitlichen Gründen zurückzog. Als er 1965 im Alter von 90 Jahren verstarb, verabschiedete sich das Vereinigte Königreich mit einem Staatsbegräbnis von ihm. Ein Staatsbegräbnis für eine Person außerhalb der königlichen Familie war eine außergewöhnliche Ehre, die es seit Isaac Newton und Horatio Nelson nicht mehr gegeben hatte.
+Später kehrte er 1951 in das Amt des Premierministers zurück und trug die Last der nationalen Politik, bis er sich 1955 aus gesundheitlichen Gründen zurückzog. Als er 1965 im Alter von 90 Jahren verstarb, verabschiedete sich das Vereinigte Königreich mit einem Staatsbegräbnis von ihm. Ein Staatsbegräbnis für eine Person außerhalb der königlichen Familie war eine außergewöhnliche Ehre, die es seit [Isaac Newton](/de/p/newton/) und Horatio Nelson nicht mehr gegeben hatte.
 
 ## Fazit: Die Philosophie, die Churchill der modernen Welt hinterließ
 

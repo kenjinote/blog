@@ -276,7 +276,7 @@ Além disso, com a técnica de "Pesquisa do Documento Pai (Parent Document Retri
 Existem obstáculos específicos ao construir e operar uma RAG em um ambiente local.
 
 - **Esgotamento da VRAM (Memória de Vídeo)**:
-  Para executar LLMs locais a velocidades práticas (dezenas de tokens por segundo), é necessário carregar o modelo na VRAM da GPU. Um modelo de classe 8B requer aproximadamente 16GB de VRAM para rodar em fp16 (ponto flutuante de 16 bits), mas ao usar tecnologias de **Quantização (Quantization)** (formatos GGUF ou AWQ, que comprimem os modelos para 4 ou 8 bits), é possível executá-los com rapidez satisfatória com apenas 8GB de VRAM (como em um PC gamer comum). O Llama.cpp e o Ollama já suportam nativamente esses formatos de quantização.
+  Para executar LLMs locais a velocidades práticas (dezenas de tokens por segundo), é necessário carregar o modelo na VRAM da GPU. Um modelo de classe 8B requer aproximadamente 16GB de VRAM para rodar em fp16 (ponto flutuante de 16 bits), mas ao usar tecnologias de **Quantização (Quantization)** (formatos [GGUF](/pt/p/llama-cpp-quantization-gguf/) ou AWQ, que comprimem os modelos para 4 ou 8 bits), é possível executá-los com rapidez satisfatória com apenas 8GB de VRAM (como em um PC gamer comum). O Llama.cpp e o Ollama já suportam nativamente esses formatos de quantização.
 - **Limite da Janela de Contexto**:
   Se a quantidade de contexto recuperado for muito grande, o LLM pode exceder seu limite máximo de entrada (limite de tokens) ou o modelo pode "esquecer" informações do meio (o fenômeno "Lost in the middle"). O ajuste do número de chunks extraídos e a seleção cuidadosa usando as tecnologias de reclassificação mencionadas acima são fundamentais.
 - **Gestão da Atualidade dos Dados**:

@@ -76,4 +76,4 @@ Al colaborar las PC de los millones de usuarios que participan en la red para co
 
 BitTorrent es una tecnología que abandonó el concepto del siglo XX de "un servidor central gigante que distribuye a todos", encarnando de manera brillante la filosofía original de descentralización autónoma de Internet de "reunir el poder de los individuos formando un enjambre".
 
-La lógica subyacente de "romper el archivo en pedazos finos", "recolectar desde lo más raro" y "recompensar a los que cooperan", continúa teniendo una gran influencia en el diseño de las tecnologías blockchain y el almacenamiento en la nube distribuido de hoy en día.
+La lógica subyacente de "romper el archivo en pedazos finos", "recolectar desde lo más raro" y "recompensar a los que cooperan", continúa teniendo una gran influencia en el diseño de las tecnologías [blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/) y el almacenamiento en la nube distribuido de hoy en día.

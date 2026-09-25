@@ -16,7 +16,7 @@ tags:
 
 # 1. Introduction: A Seeker of Pure Thought
 
-[Carl Gustav Jacob Jacobi](https://kenji.blog/en/p/jacobi/) (1804–1851) was a 19th-century **German mathematician** who made decisive contributions to diverse fields such as algebra, analysis, number theory, and mechanics. Along with Niels Henrik Abel, he is celebrated as the "discoverer of elliptic functions", and he is the namesake of the "Jacobian" ([Jacobi](https://kenji.blog/en/p/jacobi/)an determinant) that we frequently encounter in multivariable calculus today.
+[Carl Gustav Jacob Jacobi](https://kenji.blog/en/p/jacobi/) (1804–1851) was a 19th-century **German mathematician** who made decisive contributions to diverse fields such as algebra, analysis, number theory, and mechanics. Along with [Niels Henrik Abel](/en/p/abel/), he is celebrated as the "discoverer of elliptic functions", and he is the namesake of the "Jacobian" ([Jacobi](https://kenji.blog/en/p/jacobi/)an determinant) that we frequently encounter in multivariable calculus today.
 
 He valued the beauty of mathematics itself and the honor of the human spirit over practical utility. In this article, we will delve deeply into [Jacobi](https://kenji.blog/en/p/jacobi/)'s life, his major mathematical achievements, and the famous episodes he left behind.
 

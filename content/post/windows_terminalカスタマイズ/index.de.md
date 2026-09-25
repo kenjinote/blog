@@ -315,7 +315,7 @@ Hunderte von Themes (configs) sind verfügbar, und es ist auch möglich, Ihr eig
 
 # 7. Evolution des Prompts 2: WSL2-Architektur und die Fusion mit Starship
 
-WSL2 (Windows Subsystem for Linux 2), das einen echten Linux-Kernel auf Windows ausführen kann, ist für die moderne Webentwicklung und Cloud-native Entwicklung unerlässlich. Um den Prompt von Shells in WSL (Bash oder Zsh) anzupassen, ist „ **Starship** “ die optimale Lösung.
+WSL2 ([Windows Subsystem for Linux](/de/p/wsl2-ultimate-development-setup-guide/) 2), das einen echten Linux-Kernel auf Windows ausführen kann, ist für die moderne Webentwicklung und Cloud-native Entwicklung unerlässlich. Um den Prompt von Shells in WSL (Bash oder Zsh) anzupassen, ist „ **Starship** “ die optimale Lösung.
 
 Starship ist ein in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) geschriebener, extrem schneller und in hohem Maße anpassbarer plattformübergreifender Prompt. Seine Stärke liegt darin, dass Sie in jeder Shell wie Bash, Zsh, Fish usw. denselben Prompt reproduzieren können, indem Sie einfach eine einzige Konfigurationsdatei (TOML) schreiben.
 
@@ -411,7 +411,7 @@ Die Bedeutung und die typische Dauer jeder Variablen sind wie folgt:
 - $ T_{hw\_input} $: Die Hardwareverzögerung von der Aktivierung des mechanischen Schalters der Tastatur bis zum Abfragen über den USB-Controller und dem Senden des Interrupt-[Signals](https://kenji.blog/de/p/state-management-history-future/) (ca. 1–5 ms).
 - $ T_{os} $: Die Nachrichtenwarteschlangen-Verarbeitungsverzögerung durch die OS HID (Human Interface Device) Treiberschicht (ca. 1–2 ms).
 - $ T_{pty} $: Die Verzögerung der Pufferung und der Zeichencodierungskonvertierung (z.B. UTF-8 in UTF-16) durch ConPTY (Pseudo-Terminal) (ca. 2–10 ms).
-- $ T_{app} $: Die Verarbeitungszeit für die Befehlsinterpretation auf der Shell-Seite (PowerShell/Bash) und die Bestimmung der Bildschirmausgabe. Dies schließt auch die Verarbeitungszeit für Aufgaben wie das Abrufen des Git-Status durch Oh My Posh oder Starship ein (ca. 10–50 ms).
+- $ T_{app} $: Die Verarbeitungszeit für die Befehlsinterpretation auf der Shell-Seite ([PowerShell/Bash](/de/p/terminal-efficiency-powershell-bash-shortcuts/)) und die Bestimmung der Bildschirmausgabe. Dies schließt auch die Verarbeitungszeit für Aufgaben wie das Abrufen des Git-Status durch Oh My Posh oder Starship ein (ca. 10–50 ms).
 - $ T_{render} $: Die Rendering-Verzögerung, bei der Windows Terminal (DirectWrite/DirectX) die Text-Glyphen als Texturen rastern, in den GPU-Speicher übertragen und die Swap-Chain spiegeln (flippen) (ca. 2–8 ms).
 - $ T_{display} $: Die Display-Verzögerung, von der Ausgabe des Signals aus dem GPU-Frame-Puffer zum Monitor bis zur Änderung des physikalischen Leuchtzustands durch die Reaktion der Flüssigkristallmoleküle (z. B. GtG-Reaktionszeit. ca. 5–20 ms).
 
@@ -427,7 +427,7 @@ Aus diesem Grund kann Windows Terminal selbst unter Bedingungen, in denen eine g
 
 # 9. Fortgeschrittene Fehlerbehebung und Debugging-Techniken
 
-Wenn Sie das Windows Terminal auf das Äußerste anpassen, können Sie auf unerwartete Probleme stoßen, wie z. B. Syntaxfehler in Einstellungsdateien oder Fehler bei der Schriftartdarstellung. Hier stellen wir einige fortgeschrittene Fehlerbehebungstechniken für Ingenieure vor.
+Wenn Sie das Windows Terminal auf das Äußerste anpassen, können Sie auf unerwartete Probleme stoßen, wie z. B. Syntaxfehler in Einstellungsdateien oder Fehler bei der Schriftartdarstellung. Hier stellen wir einige fortgeschrittene Fehlerbehebungstechniken [für Ingenieure](/de/p/prompt-engineering-for-engineers/) vor.
 
 ## 9.1 JSON-Schema-Validierung für settings.json
 Die Struktur der `settings.json` ist streng definiert, und es wird empfohlen, Editoren (wie VS Code) zu verwenden, die Echtzeit-Syntaxprüfungen mittels JSON Schema durchführen. Wenn Sie `settings.json` in VS Code öffnen, wird standardmäßig das Schema für Windows Terminal angewendet. Ungültige Eigenschaftsnamen oder Fehler beim Werttyp (z. B. Angabe eines Strings, wo eine Zahl erwartet wird) werden sofort mit einer geschwungenen Linie gewarnt.

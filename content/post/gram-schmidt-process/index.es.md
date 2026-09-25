@@ -214,7 +214,7 @@ flowchart LR
     D --> E
 ```
 
-En el contexto del aprendizaje automático, la descomposición QR se utiliza para realizar los cálculos del "método de mínimos cuadrados" de forma estable y rápida para encontrar parámetros óptimos en el análisis de regresión múltiple. El enfoque de resolver la ecuación normal ($A^T A \mathbf{x} = A^T \mathbf{b}$) directamente se evita de forma habitual en la práctica porque el número de condición de la matriz $A^T A$ empeora con facilidad, haciéndola extremadamente vulnerable a errores numéricos. En cambio, la práctica habitual es descomponerla como $A=QR$ y resolver $R \mathbf{x} = Q^T \mathbf{b}$ mediante sustitución hacia atrás.
+En el contexto del aprendizaje automático, la descomposición QR se utiliza para realizar los cálculos del "[método de mínimos cuadrados](/es/p/method-of-least-squares/)" de forma estable y rápida para encontrar parámetros óptimos en el análisis de regresión múltiple. El enfoque de resolver la ecuación normal ($A^T A \mathbf{x} = A^T \mathbf{b}$) directamente se evita de forma habitual en la práctica porque el número de condición de la matriz $A^T A$ empeora con facilidad, haciéndola extremadamente vulnerable a errores numéricos. En cambio, la práctica habitual es descomponerla como $A=QR$ y resolver $R \mathbf{x} = Q^T \mathbf{b}$ mediante sustitución hacia atrás.
 
 ## 9. Conclusión: La belleza de un espacio realineado
 

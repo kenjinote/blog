@@ -10,9 +10,9 @@ tags: ["linear-algebra", "eigenvalue", "eigenvector", "math", "machine-learning"
 
 ## はじめに
 
-線形代数を学ぶ際、多くの人が最初の壁として感じるのが「行列の乗算」や「行列式」かもしれません。しかし、それらを乗り越えた先にある **固有値** (Eigenvalue) と **固有ベクトル** (Eigenvector) こそが、線形代数が現代の科学や工学において絶大な威力を発揮する源泉です。
+線形代数を学ぶ際、多くの人が最初の壁として感じるのが「行列の乗算」や「[行列式](/p/geometric-meaning-of-determinant/)」かもしれません。しかし、それらを乗り越えた先にある **固有値** (Eigenvalue) と **固有ベクトル** (Eigenvector) こそが、線形代数が現代の科学や工学において絶大な威力を発揮する源泉です。
 
-機械学習における次元圧縮 (PCA)、Googleの検索エンジンを支えたPageRankアルゴリズム、建物の耐震設計から量子力学のシュレーディンガー方程式に至るまで、[固有値と固有ベクトル](https://kenji.blog/p/eigenvalues-and-eigenvectors/)はあらゆる場所で顔を出します。本記事では、数式を追うだけでなく、その「幾何学的な意味」を直感的に理解することを目標とし、実践的な計算手法から実世界での応用までを網羅的に解説します。
+機械学習における次元圧縮 (PCA)、Googleの[検索エンジン](/p/how-search-engines-work/)を支えたPageRankアルゴリズム、建物の耐震設計から量子力学のシュレーディンガー方程式に至るまで、[固有値と固有ベクトル](https://kenji.blog/p/eigenvalues-and-eigenvectors/)はあらゆる場所で顔を出します。本記事では、数式を追うだけでなく、その「幾何学的な意味」を直感的に理解することを目標とし、実践的な計算手法から実世界での応用までを網羅的に解説します。
 
 ## 行列による線形変換と幾何学的直観
 
@@ -48,7 +48,7 @@ $$ A\mathbf{v} = \lambda I\mathbf{v} $$
 $$ A\mathbf{v} - \lambda I\mathbf{v} = \mathbf{0} $$
 $$ (A - \lambda I)\mathbf{v} = \mathbf{0} $$
 
-この方程式を満たす非ゼロのベクトル $\mathbf{v}$ が存在するための必要十分条件は、行列 $(A - \lambda I)$ が逆行列を持たないこと、すなわちその行列式がゼロになることです。
+この方程式を満たす非ゼロのベクトル $\mathbf{v}$ が存在するための必要十分条件は、行列 $(A - \lambda I)$ が逆行列を持たないこと、すなわちその[行列式](/p/geometric-meaning-of-determinant/)がゼロになることです。
 
 $$ \det(A - \lambda I) = 0 $$
 
@@ -72,7 +72,7 @@ $$
 A - \lambda I = \begin{pmatrix} 4 & 1 \\ 2 & 3 \end{pmatrix} - \begin{pmatrix} \lambda & 0 \\ 0 & \lambda \end{pmatrix} = \begin{pmatrix} 4-\lambda & 1 \\ 2 & 3-\lambda \end{pmatrix}
 $$
 
-行列式を計算します。たすき掛けの要領で計算します。
+[行列式](/p/geometric-meaning-of-determinant/)を計算します。たすき掛けの要領で計算します。
 
 $$
 \det(A - \lambda I) = (4-\lambda)(3-\lambda) - (1)(2) = (\lambda^2 - 7\lambda + 12) - 2 = \lambda^2 - 7\lambda + 10
@@ -154,7 +154,7 @@ NumPyの `np.linalg.eig` 関数は、正規化された（長さが1の）固有
 
 ## 行列の対角化とその強力な恩恵
 
-[固有値と固有ベクトル](https://kenji.blog/p/eigenvalues-and-eigenvectors/)の最も重要な応用のひとつが **行列の対角化** です。対角化とは、複雑な行列 $A$ を、計算が容易な対角行列 $D$ を用いて次のように分解することです。
+[固有値と固有ベクトル](https://kenji.blog/p/eigenvalues-and-eigenvectors/)の最も重要な応用のひとつが **行列の[対角化](/p/diagonalization-and-jordan-normal-form/)** です。[対角化](/p/diagonalization-and-jordan-normal-form/)とは、複雑な行列 $A$ を、計算が容易な対角行列 $D$ を用いて次のように分解することです。
 
 $$ A = P D P^{-1} $$
 
@@ -166,9 +166,9 @@ $$
 P = \begin{pmatrix} 1 & 1 \\ -2 & 1 \end{pmatrix}, \quad D = \begin{pmatrix} 2 & 0 \\ 0 & 5 \end{pmatrix}
 $$
 
-となります。この対角化がなぜ重要なのでしょうか？それは、**行列の累乗計算が劇的に簡単になる** からです。
+となります。この[対角化](/p/diagonalization-and-jordan-normal-form/)がなぜ重要なのでしょうか？それは、**行列の累乗計算が劇的に簡単になる** からです。
 
-たとえば、$A$ を $100$ 乗したいとします。$A^{100}$ を直接計算するのは非常に大変な計算量となります。しかし、対角化を利用すると、
+たとえば、$A$ を $100$ 乗したいとします。$A^{100}$ を直接計算するのは非常に大変な計算量となります。しかし、[対角化](/p/diagonalization-and-jordan-normal-form/)を利用すると、
 
 $$
 A^{100} = (P D P^{-1})(P D P^{-1}) \dots (P D P^{-1}) = P D^{100} P^{-1}
@@ -208,7 +208,7 @@ flowchart TD
 
 ### 2. GoogleのPageRankアルゴリズム
 
-インターネット黎明期、Googleの検索エンジンを世界一に押し上げたのは **PageRank (ページランク)** というアルゴリズムです。ウェブページ間のリンク構造を巨大な行列として表現し、「重要なページからリンクされているページもまた重要である」という考え方を数理モデル化しました。
+インターネット黎明期、Googleの[検索エンジン](/p/how-search-engines-work/)を世界一に押し上げたのは **PageRank (ページランク)** というアルゴリズムです。ウェブページ間のリンク構造を巨大な行列として表現し、「重要なページからリンクされているページもまた重要である」という考え方を数理モデル化しました。
 
 驚くべきことに、各ウェブページの「重要度スコア」は、この巨大なリンク行列（または推移確率行列）の **最大の固有値 1 に対応する固有ベクトル** そのものなのです。Googleの初期のシステムは、数十億もの次元を持つ巨大な行列の固有ベクトルを求めるための巨大な反復計算システムでした。
 

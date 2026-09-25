@@ -12,7 +12,7 @@ image: "eyecatch.jpg"
 
 In modern software engineering, not a day goes by without hearing terms like "Modular Design", "Single Responsibility Principle", and "Loose Coupling". These are treated as golden rules for maintaining clean codebases and building scalable, maintainable systems. However, these concepts were not born in recent years. Tracing their origins leads to "Unix", an operating system born at Bell Labs in the early 1970s.
 
-Unix was not just an OS. It embodied a philosophy of "how to build excellent software"—the "Unix Philosophy". This philosophy, built by giants like Ken Thompson, Dennis Ritchie, and Doug McIlroy, breathes deeply even in modern cloud-native architectures and microservices half a century later.
+Unix was not just an OS. It embodied a philosophy of "how to build excellent software"—the "Unix Philosophy". This philosophy, built by giants like Ken Thompson, [Dennis Ritchie](/en/p/biography-dennis-ritchie/), and Doug McIlroy, breathes deeply even in modern cloud-native architectures and microservices half a century later.
 
 This article thoroughly explores the essence of "modular design" at the core of the Unix philosophy and reveals why its ideology continues to be supported transcendently.
 
@@ -89,7 +89,7 @@ Container technologies represented by Docker also have deep connections with the
 
 ### Functional Programming and Data Pipelines
 
-Function composition in functional programming (taking the output of a function as the input of another) shares a mathematical similarity with the concept of Unix pipelines. Stream processing in big data processing, like Apache Kafka, is also an application of the text stream concept to distributed systems.
+Function composition in [functional programming](/en/p/lambda-calculus-functional-programming/) (taking the output of a function as the input of another) shares a mathematical similarity with the concept of Unix pipelines. Stream processing in big data processing, like Apache Kafka, is also an application of the text stream concept to [distributed systems](/en/p/cap-theorem-distributed-systems-tradeoff/).
 
 ```mermaid
 graph LR

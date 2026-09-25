@@ -11,7 +11,7 @@ description: 'A criptografia de chave pública corre o risco de ser quebrada no 
 
 ## Introdução: A "Ameaça" dos Computadores Quânticos à Criptografia
 
-Atualmente, muitas das comunicações que realizamos diariamente na internet —— desde pagamentos em serviços bancários online, navegação em sites (HTTPS), troca de mensagens em aplicativos, até transações de blockchain e criptomoedas —— são protegidas por uma tecnologia chamada "criptografia de chave pública". Especificamente, algoritmos como a criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) e a criptografia de curva elíptica (ECC) são os pilares que sustentam a confiabilidade da nossa sociedade digital moderna.
+Atualmente, muitas das comunicações que realizamos diariamente na internet —— desde pagamentos em serviços bancários online, navegação em sites (HTTPS), troca de mensagens em aplicativos, até transações de [blockchain](/pt/p/blockchain-technology-smart-contract-distributed-ledger/) e criptomoedas —— são protegidas por uma tecnologia chamada "criptografia de chave pública". Especificamente, algoritmos como a criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) e a criptografia de curva elíptica ([ECC](/pt/p/elliptic-curve-cryptography-math-cpp/)) são os pilares que sustentam a confiabilidade da nossa sociedade digital moderna.
 
 Esses métodos de criptografia baseiam sua segurança em problemas matemáticos complexos, como a "fatoração de números primos gigantes" e o "problema do logaritmo discreto", que levariam um tempo astronômico para serem resolvidos por computadores clássicos atuais (incluindo supercomputadores). No entanto, com a concretização dos **"computadores quânticos"** , que têm feito progressos notáveis nos últimos anos, essa premissa será fundamentalmente derrubada.
 
@@ -29,7 +29,7 @@ A Criptografia Pós-Quântica (Post-Quantum [Crypto](https://kenji.blog/pt/p/cry
 
 Tecnologias frequentemente confundidas com ela são a "Criptografia Quântica (Quantum [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy)" e a "Distribuição Quântica de Chaves (QKD)", mas estas são abordagens completamente diferentes. A criptografia quântica (QKD) é uma tecnologia baseada em hardware que utiliza as leis físicas da mecânica quântica (como a propriedade de que o estado muda ao ser observado) para tornar a espionagem nos canais de comunicação fisicamente impossível. Ela requer fibras ópticas dedicadas e equipamentos especiais, enfrentando desafios como custos de implementação e limitações de distância.
 
-Por outro lado, **a PQC é uma tecnologia de criptografia baseada em software, fundamentada puramente em "matemática"** . Portanto, ela pode ser incorporada à infraestrutura de internet existente, servidores, smartphones, navegadores, etc., como uma atualização de software, sendo altamente aplicável ao mundo real. Empresas de TI e governos de todo o mundo consideram urgente substituir (migrar) o [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) e o ECC atualmente em uso por esta PQC.
+Por outro lado, **a PQC é uma tecnologia de criptografia baseada em software, fundamentada puramente em "matemática"** . Portanto, ela pode ser incorporada à infraestrutura de internet existente, servidores, smartphones, navegadores, etc., como uma atualização de software, sendo altamente aplicável ao mundo real. Empresas de TI e governos de todo o mundo consideram urgente substituir (migrar) o [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) e o [ECC](/pt/p/elliptic-curve-cryptography-math-cpp/) atualmente em uso por esta PQC.
 
 ---
 
@@ -65,7 +65,7 @@ Imagine que inumeráveis pontos estão dispostos em forma de grade (reticulado) 
 
 **Vantagens:** 
 - Aplicável tanto ao compartilhamento de chaves (KEM) quanto às assinaturas digitais.
-- A velocidade de processamento é muito rápida (em alguns casos, mais rápida que [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) e ECC).
+- A velocidade de processamento é muito rápida (em alguns casos, mais rápida que [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) e [ECC](/pt/p/elliptic-curve-cryptography-math-cpp/)).
 - O tamanho da chave e o tamanho do texto cifrado são relativamente pequenos, oferecendo um bom equilíbrio.
 
 Muitos dos algoritmos atualmente sendo padronizados pelo NIST (como ML-KEM e ML-DSA) adotam essa criptografia baseada em reticulados.
@@ -150,7 +150,7 @@ Embora o NIST tenha concluído o processo inicial de padronização, ele continu
 
 ## Cenários e Desafios da Transição para a PQC: A Importância da "Agilidade Criptográfica"
 
-Com o lançamento de padrões oficiais pelo NIST, agências governamentais, instituições financeiras e empresas de tecnologia em todo o mundo acelerarão a transição (migração) do [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)/ECC existente para a PQC. Diretrizes de agências como a NSA (Agência de Segurança Nacional dos EUA) também recomendam a conclusão antecipada dessa transição.
+Com o lançamento de padrões oficiais pelo NIST, agências governamentais, instituições financeiras e empresas de tecnologia em todo o mundo acelerarão a transição (migração) do [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)/[ECC](/pt/p/elliptic-curve-cryptography-math-cpp/) existente para a PQC. Diretrizes de agências como a NSA (Agência de Segurança Nacional dos EUA) também recomendam a conclusão antecipada dessa transição.
 
 ### Adoção da Abordagem Híbrida
 

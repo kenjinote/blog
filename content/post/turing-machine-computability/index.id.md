@@ -19,9 +19,9 @@ tags:
 
 Komputer yang kita gunakan setiap hari, dari ponsel pintar hingga superkomputer, memiliki kekuatan pemrosesan yang menakjubkan. Namun, bagaimana Anda akan menjawab pertanyaan mendasar: **"Apakah ada hal yang tidak bisa dilakukan oleh komputer?"**
 
-Jawaban matematis lengkap untuk pertanyaan ini diberikan oleh ahli matematika Inggris dan bapak ilmu komputer, **Alan Turing**. Dalam makalahnya yang diterbitkan pada tahun 1936, ia mengemukakan model komputasi teoretis yang disebut **Mesin Turing** dan membuktikan bahwa ada "masalah yang pada prinsipnya tidak dapat dipecahkan oleh komputer apa pun" di dunia ini.
+Jawaban matematis lengkap untuk pertanyaan ini diberikan oleh ahli matematika Inggris dan [bapak ilmu komputer](/id/p/biography-donald-knuth/), **Alan Turing**. Dalam makalahnya yang diterbitkan pada tahun 1936, ia mengemukakan model komputasi teoretis yang disebut **Mesin Turing** dan membuktikan bahwa ada "masalah yang pada prinsipnya tidak dapat dipecahkan oleh komputer apa pun" di dunia ini.
 
-Dalam artikel ini, kami akan menjelaskan secara rinci bagaimana Mesin Turing bekerja dan apa itu **"Masalah Penghentian"** (Halting Problem), yang sangat penting dalam teori komputabilitas.
+Dalam artikel ini, kami akan menjelaskan secara rinci bagaimana Mesin Turing bekerja dan apa itu **"[Masalah Penghentian](/id/p/halting-problem/)"** ([Halting Problem](/id/p/halting-problem/)), yang sangat penting dalam teori komputabilitas.
 
 ## 2. Apa itu Mesin Turing?
 
@@ -156,11 +156,11 @@ Yang penting di sini adalah **Komputabilitas** (Computability). Menurut definisi
 
 ## 4. Masalah Penghentian (The Halting Problem)
 
-Dengan Mesin Turing Universal, ada harapan bahwa "perhitungan apa pun dapat dilakukan tergantung pada programnya, bukan?". Namun, dengan menggunakan modelnya sendiri, Turing membuktikan secara matematis bahwa ada **"masalah yang tidak dapat dihitung"**. Contoh utamanya adalah **Masalah Penghentian**.
+Dengan Mesin Turing Universal, ada harapan bahwa "perhitungan apa pun dapat dilakukan tergantung pada programnya, bukan?". Namun, dengan menggunakan modelnya sendiri, Turing membuktikan secara matematis bahwa ada **"masalah yang tidak dapat dihitung"**. Contoh utamanya adalah **[Masalah Penghentian](/id/p/halting-problem/)**.
 
 ### 4.1 Apa itu Masalah Penghentian?
 
-Masalah Penghentian adalah pertanyaan berikut:
+[Masalah Penghentian](/id/p/halting-problem/) adalah pertanyaan berikut:
 
 > Mengingat sembarang program $P$ dan input $x$ ke program tersebut, ketika program $P$ dieksekusi dengan input $x$, **apakah ada algoritma (program) yang dapat menentukan sebelum eksekusi apakah program tersebut akan selesai dan berhenti dalam waktu berhingga, atau apakah akan jatuh ke dalam loop tak terbatas dan tidak pernah berhenti?**
 
@@ -200,7 +200,7 @@ paradox(paradox)
 2.  Jika `halts(paradox, paradox)` dinilai sebagai `False` (loop tak terbatas):
     Fungsi `paradox` memasuki blok `else` dan **segera berhenti**. Ini juga bertentangan dengan hasil penentuan.
 
-Karena kontradiksi muncul bagaimanapun caranya, premis awal bahwa **"ada fungsi `halts` yang sempurna" adalah salah**. Oleh karena itu, tidak ada algoritma untuk memecahkan masalah penghentian.
+Karena kontradiksi muncul bagaimanapun caranya, premis awal bahwa **"ada fungsi `halts` yang sempurna" adalah salah**. Oleh karena itu, tidak ada algoritma untuk memecahkan [masalah penghentian](/id/p/halting-problem/).
 
 ### 4.3 Representasi Matematika
 
@@ -231,11 +231,11 @@ Ini membuktikan bahwa fungsi $h$ tidak dapat dihitung (Uncomputable).
 
 ## 5. Dampak Teori Komputabilitas
 
-Fakta bahwa masalah penghentian "tidak dapat dipecahkan" memiliki dampak langsung pada pengembangan perangkat lunak modern.
+Fakta bahwa [masalah penghentian](/id/p/halting-problem/) "tidak dapat dipecahkan" memiliki dampak langsung pada pengembangan perangkat lunak modern.
 
 Misalnya, kompiler dan alat analisis kode statis memeriksa kode kita untuk mencari bug atau potensi loop tak terbatas, tetapi mereka beroperasi di bawah batasan bahwa **"pada prinsipnya tidak mungkin untuk mendeteksi loop tak terbatas dengan akurasi 100% untuk semua program"**. Oleh karena itu, alat analisis praktis mengadopsi kompromi menggunakan heuristik dan waktu tunggu (timeout).
 
-Itu juga terkait erat dengan **Teorema Ketidaklengkapan Gödel**. Fakta bahwa "ada proposisi yang benar tetapi tidak dapat dibuktikan" dalam sistem aksioma matematika, dan bahwa "ada masalah yang dapat dihitung tetapi tidak dapat ditentukan", adalah dua sisi dari mata uang yang sama yang ditemukan dalam logika dan ilmu komputer.
+Itu juga terkait erat dengan **[Teorema Ketidaklengkapan Gödel](/id/p/godels-incompleteness-theorems/)**. Fakta bahwa "ada proposisi yang benar tetapi tidak dapat dibuktikan" dalam sistem aksioma matematika, dan bahwa "ada masalah yang dapat dihitung tetapi tidak dapat ditentukan", adalah dua sisi dari mata uang yang sama yang ditemukan dalam logika dan ilmu komputer.
 
 ## 6. Kesimpulan
 
@@ -243,7 +243,7 @@ Mesin Turing adalah model matematika yang indah yang secara sempurna menangkap e
 
 -   **Mesin Turing** hanya terdiri dari pita tak terhingga dan aturan transisi keadaan, serta memiliki daya komputasi yang setara dengan komputer modern.
 -   **Mesin Turing Universal** melahirkan konsep perangkat lunak (program) dan meletakkan dasar bagi komputer modern.
--   **Masalah Penghentian** membuktikan bahwa "tidak ada algoritma universal yang dapat dengan pasti menganalisis semua program", yang dengan jelas menunjukkan batas komputasi.
+-   **[Masalah Penghentian](/id/p/halting-problem/)** membuktikan bahwa "tidak ada algoritma universal yang dapat dengan pasti menganalisis semua program", yang dengan jelas menunjukkan batas komputasi.
 
 Dalam tantangan pemrograman yang kita hadapi setiap hari, dan dalam diskusi tentang seberapa jauh kecerdasan buatan dapat berevolusi, mengetahui **"batas komputasi"** yang ditarik oleh Alan Turing adalah pendidikan yang sangat penting.
 

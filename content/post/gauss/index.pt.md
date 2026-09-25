@@ -92,7 +92,7 @@ Os talentos de Gauss não se limitaram à matemática pura; ele também alcanço
 
 Em 1º de janeiro de 1801, o astrônomo italiano Giuseppe Piazzi descobriu um novo corpo celeste (mais tarde chamado de planeta anão Ceres). No entanto, após alguns dias de observação, o corpo celeste escondeu-se atrás do sol e foi perdido de vista. Os astrônomos da época tentaram prever sua órbita subsequente com base em apenas alguns dias de dados de observação, mas todos falharam.
 
-É aqui que entra Gauss. Ele calculou a órbita de Ceres usando uma nova técnica matemática que construiu secretamente por algum tempo, o **"[Método dos Mínimos Quadrados](https://kenji.blog/pt/p/method-of-least-squares/)"**. O método dos mínimos quadrados é uma técnica para estimar os parâmetros mais prováveis para minimizar os erros contidos nos dados de observação.
+É aqui que entra Gauss. Ele calculou a órbita de Ceres usando uma nova técnica matemática que construiu secretamente por algum tempo, o **"[Método dos Mínimos Quadrados](https://kenji.blog/pt/p/method-of-least-squares/)"**. O [método dos mínimos quadrados](/pt/p/method-of-least-squares/) é uma técnica para estimar os parâmetros mais prováveis para minimizar os erros contidos nos dados de observação.
 
 Assumindo que o valor observado é $y_i$ e o valor teórico é $f(x_i, \boldsymbol{\theta})$, encontramos o parâmetro $\boldsymbol{\theta}$ que minimiza a soma dos erros quadráticos $S$.
 
@@ -128,7 +128,7 @@ De acordo com este teorema, é matematicamente provado que, por exemplo, não im
 
 ## 6. Distribuição Gaussiana e Eletromagnetismo
 
-A **"Distribuição Normal"**, a distribuição mais importante em estatística, é frequentemente chamada de **"Distribuição de Gauss"**. Ao justificar o método dos mínimos quadrados mencionado acima, Gauss assumiu que os erros de observação seguem uma distribuição normal. A função de densidade de probabilidade $f(x)$ é expressa pela seguinte fórmula:
+A **"Distribuição Normal"**, a distribuição mais importante em estatística, é frequentemente chamada de **"Distribuição de Gauss"**. Ao justificar o [método dos mínimos quadrados](/pt/p/method-of-least-squares/) mencionado acima, Gauss assumiu que os erros de observação seguem uma distribuição normal. A função de densidade de probabilidade $f(x)$ é expressa pela seguinte fórmula:
 
 $$
 f(x) = \frac{1}{\sigma \sqrt{2\pi}} \exp\left( -\frac{1}{2} \left( \frac{x-\mu}{\sigma} \right)^2 \right)
@@ -158,7 +158,7 @@ Um episódio que mostra a incrível visão de futuro de Gauss é a anedota sobre
 
 Nas suas notas não publicadas, Gauss estava totalmente ciente da existência de uma nova geometria (geometria hiperbólica) na qual o postulado das paralelas não se sustenta, e havia construído seu sistema. No entanto, nos círculos filosóficos conservadores da época (uma era em que a filosofia kantiana era predominante), ele temia se envolver em críticas e controvérsias incompreensíveis (nas palavras de Gauss, "o clamor dos beócios") se publicasse uma teoria que negasse a absolutidade do espaço, por isso ele nunca a publicou em vida.
 
-Mais tarde, quando Nikolai Lobachevsky e János Bolyai publicaram de forma independente a geometria não euclidiana, Gauss, ao receber um artigo do pai de Bolyai (um velho amigo de Gauss), respondeu: "Elogiá-lo equivaleria a elogiar a mim mesmo. Pois todo o conteúdo do trabalho coincide quase exatamente com as minhas próprias meditações que ocuparam a minha mente por trinta a trinta e cinco anos." Diz-se que o jovem Bolyai ficou profundamente decepcionado com isso, mas ao mesmo tempo serve como prova de quão à frente de seu tempo Gauss estava.
+Mais tarde, quando [Nikolai Lobachevsky](/pt/p/biography-nikolai-lobachevsky/) e János Bolyai publicaram de forma independente a geometria não euclidiana, Gauss, ao receber um artigo do pai de Bolyai (um velho amigo de Gauss), respondeu: "Elogiá-lo equivaleria a elogiar a mim mesmo. Pois todo o conteúdo do trabalho coincide quase exatamente com as minhas próprias meditações que ocuparam a minha mente por trinta a trinta e cinco anos." Diz-se que o jovem Bolyai ficou profundamente decepcionado com isso, mas ao mesmo tempo serve como prova de quão à frente de seu tempo Gauss estava.
 
 ## 8. Últimos Anos e Legado
 

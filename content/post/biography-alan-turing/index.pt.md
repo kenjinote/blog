@@ -32,13 +32,13 @@ No entanto, esse momento feliz foi curto e, em fevereiro de 1930, Morcom faleceu
 
 ## 2. Universidade de Cambridge e o Nascimento da "Máquina de Turing"
 
-Em 1931, Turing ingressou no King's College, na Universidade de Cambridge, onde se dedicou intensamente à pesquisa de matemática e lógica. Lá ele entrou em contato com os pensamentos de cientistas de alto nível, como John von Neumann e Max Born, ampliando significativamente suas asas acadêmicas.
+Em 1931, Turing ingressou no King's College, na Universidade de Cambridge, onde se dedicou intensamente à pesquisa de matemática e lógica. Lá ele entrou em contato com os pensamentos de cientistas de alto nível, como [John von Neumann](/pt/p/von-neumann/) e Max Born, ampliando significativamente suas asas acadêmicas.
 
 E, em 1936, aos 24 anos, ele publicou o artigo monumental "Sobre os Números Computáveis, com uma Aplicação ao Entscheidungsproblem (Problema da Decisão)", que brilha na história da ciência do século XX.
 
 ### O Conceito da Máquina de Turing
 
-Neste artigo, Turing forneceu uma prova negativa ao "Entscheidungsproblem (Problema da Decisão: todos os enunciados matemáticos podem ser julgados como verdadeiros ou falsos por um algoritmo)", proposto pelo matemático David Hilbert. No entanto, o verdadeiro valor deste artigo estava no modelo de experimento mental que ele inventou no processo dessa prova: a "Máquina de Turing (Turing Machine)".
+Neste artigo, Turing forneceu uma prova negativa ao "Entscheidungsproblem (Problema da Decisão: todos os enunciados matemáticos podem ser julgados como verdadeiros ou falsos por um algoritmo)", proposto pelo matemático [David Hilbert](/pt/p/hilbert/). No entanto, o verdadeiro valor deste artigo estava no modelo de experimento mental que ele inventou no processo dessa prova: a "Máquina de Turing (Turing Machine)".
 
 A Máquina de Turing é uma máquina virtual extremamente simples que consiste em uma fita infinitamente longa, uma cabeça para ler e escrever na fita, um registro para armazenar o estado interno e uma tabela de regras para determinar suas ações.
 

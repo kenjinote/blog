@@ -27,7 +27,7 @@ Dalam artikel ini, kita akan menjelajahi secara rinci sejarah dan perkembangan t
 
 ### 2.1 Tantangan terhadap Masalah Keputusan (Entscheidungsproblem)
 
-Pada tahun 1928, matematikawan David Hilbert mengajukan "Masalah Keputusan (Entscheidungsproblem)". Pertanyaan ini berbunyi: "Mengingat suatu proposisi matematika, adakah algoritma mekanis yang dapat menentukan apakah proposisi tersebut benar atau salah?"
+Pada tahun 1928, matematikawan [David Hilbert](/id/p/hilbert/) mengajukan "Masalah Keputusan (Entscheidungsproblem)". Pertanyaan ini berbunyi: "Mengingat suatu proposisi matematika, adakah algoritma mekanis yang dapat menentukan apakah proposisi tersebut benar atau salah?"
 
 Untuk menjawab pertanyaan ini, pertama-tama perlu mendefinisikan dengan ketat apa yang dimaksud dengan "dapat dikomputasi" atau "memiliki algoritma". Pada tahun 1936, ada dua jenius yang secara independen memberikan jawaban untuk masalah ini. Satu adalah Alan Turing, dan yang lainnya adalah Alonzo Church, yang juga merupakan penasihat akademik Turing.
 
@@ -169,7 +169,7 @@ Lisp diketik secara dinamis (dynamically typed) dan tidak sepenuhnya sama dengan
 
 ## 7. Kalkulus [Lambda](https://kenji.blog/id/p/serverless-architecture-aws-lambda-cold-start/) Berjenis (Typed Lambda Calculus) dan Korespondensi Curry-Howard
 
-Kalkulus lambda murni (kalkulus lambda tanpa tipe) memang kuat, tetapi karena argumen apa pun dapat diteruskan ke fungsi apa pun, hal itu dapat menyebabkan paradoks melalui aplikasi diri (contoh: Paradoks Russell). Untuk mencegah hal ini, Church kemudian memperkenalkan **Kalkulus Lambda Berjenis Sederhana** (Simply Typed Lambda Calculus).
+Kalkulus lambda murni (kalkulus lambda tanpa tipe) memang kuat, tetapi karena argumen apa pun dapat diteruskan ke fungsi apa pun, hal itu dapat menyebabkan paradoks melalui aplikasi diri (contoh: [Paradoks Russell](/id/p/russells-paradox/)). Untuk mencegah hal ini, Church kemudian memperkenalkan **Kalkulus Lambda Berjenis Sederhana** (Simply Typed Lambda Calculus).
 
 ### 7.1 Korespondensi Curry-Howard
 

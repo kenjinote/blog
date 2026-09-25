@@ -179,7 +179,7 @@ ORDER BY
 使用此结果，可通过以下矩阵对重写目标进行分类：
 
 1. **High Impression, Low CTR, High Engagement**:
-   只要在搜索结果中被点击，读者就会感到满意的文章。应将 **修改标题和元描述（Meta Description）** 作为最高优先级。
+   只要在搜索结果中被点击，读者就会感到满意的文章。应将 **修改标题和元描述（[Meta](/zh-cn/p/history-of-meta-facebook/) Description）** 作为最高优先级。
 2. **High CTR, Low Engagement**:
    虽然有点击，但内容未达到期望导致用户离开的文章。需要进行大规模的正文重写，如 **改善引言、更新到最新代码、提高信息的全面性（添加H2/H3）** 等。
 

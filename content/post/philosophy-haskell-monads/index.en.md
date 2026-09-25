@@ -16,7 +16,7 @@ In this article, starting from the philosophy behind the language Haskell, we wi
 
 ## 1. The Paradigm of Purely Functional Programming
 
-At the root of functional programming is the idea of "treating computation as the evaluation of mathematical functions." This rule is observed extremely strictly, especially in "pure" functional languages like Haskell.
+At the root of [functional programming](/en/p/lambda-calculus-functional-programming/) is the idea of "treating computation as the evaluation of mathematical functions." This rule is observed extremely strictly, especially in "pure" functional languages like Haskell.
 
 ### Referential Transparency
 

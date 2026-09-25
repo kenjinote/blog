@@ -18,7 +18,7 @@ Neste artigo, abordaremos o paradoxo mais famoso que simboliza essa divergência
 
 ## Capítulo 1: O Que é o Problema de Monty Hall?
 
-O Problema de Monty Hall é um paradoxo probabilístico que leva o nome de Monty Hall, o apresentador do antigo programa de televisão americano *Let's Make a Deal*. O problema tornou-se amplamente conhecido do público após ser apresentado em 1990 na coluna "Ask Marilyn" da revista de notícias *Parade*.
+[O Problema de Monty Hall](/pt/p/monty-hall-problem/) é um paradoxo probabilístico que leva o nome de Monty Hall, o apresentador do antigo programa de televisão americano *Let's Make a Deal*. O problema tornou-se amplamente conhecido do público após ser apresentado em 1990 na coluna "Ask Marilyn" da revista de notícias *Parade*.
 
 ### Configuração do Problema
 
@@ -121,7 +121,7 @@ Portanto, a taxa de vitória esperada para a estratégia de mudar a escolha é 2
 
 ## Capítulo 3: Solução Rigorosa pelo Teorema de Bayes
 
-O Problema de Monty Hall pode ser resolvido de forma matemática mais rigorosa usando o "Teorema de Bayes" (Bayes' theorem) para calcular probabilidades condicionais. A inferência bayesiana é uma ferramenta poderosa que mostra como atualizar a probabilidade anterior (probabilidade a priori) quando novas informações (evidências) são obtidas (probabilidade a posteriori).
+[O Problema de Monty Hall](/pt/p/monty-hall-problem/) pode ser resolvido de forma matemática mais rigorosa usando o "[Teorema de Bayes](/pt/p/bayes-theorem/)" (Bayes' theorem) para calcular probabilidades condicionais. A inferência bayesiana é uma ferramenta poderosa que mostra como atualizar a probabilidade anterior (probabilidade a priori) quando novas informações (evidências) são obtidas (probabilidade a posteriori).
 
 Definimos os eventos da seguinte forma:
 - $C_i$ : O evento de o carro novo estar na porta $i$ ($i \in \{A, B, C\}$)
@@ -140,7 +140,7 @@ As regras de comportamento de Monty (probabilidade condicional $P(M_B|C_i)$) sã
 2. Se o carro novo estiver na Porta B ($C_B$), Monty nunca poderá abrir B, então $P(M_B|C_B) = 0$
 3. Se o carro novo estiver na Porta C ($C_C$), Monty não pode abrir C, e não pode abrir A porque o jogador a escolheu. Portanto, ele é forçado a abrir B, logo $P(M_B|C_C) = 1$
 
-A fórmula do Teorema de Bayes é:
+A fórmula do [Teorema de Bayes](/pt/p/bayes-theorem/) é:
 $P(C_i|M_B) = \frac{P(M_B|C_i) P(C_i)}{P(M_B)}$
 
 Vamos calcular o denominador $P(M_B)$ (a probabilidade total de Monty abrir a Porta B) (Teorema da Probabilidade Total).
@@ -155,7 +155,7 @@ $P(C_A|M_B) = \frac{P(M_B|C_A) P(C_A)}{P(M_B)} = \frac{(1/2) \times (1/3)}{1/2} 
 **Probabilidade de o carro novo estar na Porta C (mudar a escolha):**
 $P(C_C|M_B) = \frac{P(M_B|C_C) P(C_C)}{P(M_B)} = \frac{1 \times (1/3)}{1/2} = 2/3$
 
-Assim, usando o Teorema de Bayes, está matematicamente comprovado que a probabilidade salta para 2/3 na Porta C porque a probabilidade é atualizada pela nova informação (Monty abrindo a Porta B).
+Assim, usando o [Teorema de Bayes](/pt/p/bayes-theorem/), está matematicamente comprovado que a probabilidade salta para 2/3 na Porta C porque a probabilidade é atualizada pela nova informação (Monty abrindo a Porta B).
 
 ## Capítulo 4: Por Que a Intuição Humana Falha? (Fatores Psicológicos e Cognitivos)
 
@@ -195,7 +195,7 @@ flowchart LR
 
 ## Capítulo 5: Lições do Paradoxo na Vida Cotidiana
 
-O Problema de Monty Hall é mais do que apenas um quiz ou um quebra-cabeça matemático. A lição que este paradoxo ensina tem valor universal que pode ser aplicado a vários campos, como vida cotidiana, negócios, medicina e desenvolvimento de IA.
+[O Problema de Monty Hall](/pt/p/monty-hall-problem/) é mais do que apenas um quiz ou um quebra-cabeça matemático. A lição que este paradoxo ensina tem valor universal que pode ser aplicado a vários campos, como vida cotidiana, negócios, medicina e desenvolvimento de IA.
 
 ### O Conflito Entre Dados e Intuição (O Problema dos Falsos Positivos na Medicina)
 
@@ -204,9 +204,9 @@ Por exemplo, suponha que exista uma "doença intratável que afeta 1 em cada 10.
 Se você fizer este teste e der "positivo", qual é a probabilidade de você realmente ter essa doença intratável?
 
 Intuitivamente, você pode se desesperar, pensando, "A precisão é de 99%, então a probabilidade de eu estar doente também deve ser de 99%".
-No entanto, calculado pelo Teorema de Bayes, a probabilidade real de ter a doença é de **menos de 1% (cerca de 0,98%)**. Como 1% (cerca de 100 pessoas) da esmagadora maioria de "pessoas saudáveis (9.999 pessoas)" se tornam "falsos positivos", pacientes reais (quase 1) são uma pequena minoria no grupo de pessoas com teste positivo.
+No entanto, calculado pelo [Teorema de Bayes](/pt/p/bayes-theorem/), a probabilidade real de ter a doença é de **menos de 1% (cerca de 0,98%)**. Como 1% (cerca de 100 pessoas) da esmagadora maioria de "pessoas saudáveis (9.999 pessoas)" se tornam "falsos positivos", pacientes reais (quase 1) são uma pequena minoria no grupo de pessoas com teste positivo.
 
-Essa diferença esmagadora entre avaliações probabilísticas intuitivas (99%) e verdades matemáticas (1%) carrega o risco de causar pânico desnecessário e decisões médicas incorretas. Entender o Problema de Monty Hall é o primeiro passo para adquirir o letramento de avaliar corretamente essa "assimetria de informação e probabilidades a priori".
+Essa diferença esmagadora entre avaliações probabilísticas intuitivas (99%) e verdades matemáticas (1%) carrega o risco de causar pânico desnecessário e decisões médicas incorretas. Entender [o Problema de Monty Hall](/pt/p/monty-hall-problem/) é o primeiro passo para adquirir o letramento de avaliar corretamente essa "assimetria de informação e probabilidades a priori".
 
 ### O Valor da Informação na Estratégia de Negócios
 
@@ -216,11 +216,11 @@ Neste momento, você deve "persistir na estratégia original a qualquer custo (v
 
 ## Conclusão: Inteligência é a Coragem de "Duvidar da Sua Intuição"
 
-A razão pela qual o Problema de Monty Hall é tão fascinante e aterrorizante é porque destaca perfeitamente as "limitações da inteligência humana". Até mesmo especialistas com doutorado foram enganados por suas intuições iniciais e reagiram emocionalmente contra a prova correta.
+A razão pela qual [o Problema de Monty Hall](/pt/p/monty-hall-problem/) é tão fascinante e aterrorizante é porque destaca perfeitamente as "limitações da inteligência humana". Até mesmo especialistas com doutorado foram enganados por suas intuições iniciais e reagiram emocionalmente contra a prova correta.
 
 Vivemos confiando na poderosa arma da "intuição" que adquirimos ao longo da evolução. No entanto, em uma sociedade moderna que está se tornando cada vez mais complexa e inundada de dados, devemos estar cientes de que essa mesma intuição às vezes pode nos levar a armadilhas.
 
-O Problema de Monty Hall transmite uma mensagem importante para nós.
+[O Problema de Monty Hall](/pt/p/monty-hall-problem/) transmite uma mensagem importante para nós.
 Isto é, **"A importância de parar e repensar usando ferramentas de lógica e matemática, em vez de confiar cegamente na própria intuição"**. Requer humildade intelectual e coragem para atualizar as próprias suposições, a fim de aceitar uma verdade que, à primeira vista, vai contra a intuição.
 
 Da próxima vez que você for forçado a fazer uma escolha importante na vida e tiver novas informações (uma porta aberta) em mãos, por favor, lembre-se deste Problema de Monty Hall. Essa informação mudou a probabilidade? Você está preso pelo viés de status quo?

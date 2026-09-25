@@ -63,7 +63,7 @@ graph TD
 
 ## 3. 모델의 정리와 랭크(계수)
 
-1922년, [루이스 모델](https://kenji.blog/ko/p/mordell/)(Louis Mordell)은 유리점 군 $E(\mathbb{Q})$의 구조에 관한 결정적인 정리를 증명했습니다. 나중에 앙드레 베유([André Weil](https://kenji.blog/ko/p/weil/))가 더 일반적인 대수체와 아벨 다양체로 확장하여, 모델-베유의 정리로 알려져 있습니다.
+1922년, [루이스 모델](https://kenji.blog/ko/p/mordell/)(Louis Mordell)은 유리점 군 $E(\mathbb{Q})$의 구조에 관한 결정적인 정리를 증명했습니다. 나중에 [앙드레 베유](/ko/p/weil/)([André Weil](https://kenji.blog/ko/p/weil/))가 더 일반적인 대수체와 아벨 다양체로 확장하여, 모델-베유의 정리로 알려져 있습니다.
 
 ### 3.1. 모델의 정리 (Mordell's Theorem)
 
@@ -184,7 +184,7 @@ $$
 
 이 공식에 등장하는 불변량들은 다음과 같습니다.
 1. **$\Omega_E$ (실주기)** : 타원 곡선의 실수체 상에서의 적분 $\int_{E(\mathbb{R})} \frac{dx}{|2y + a_1x + a_3|}$로부터 결정되는 초월수.
-2. **$\mathrm{Reg}(E)$ (레귤레이터)** : 랭크 $r$인 무한 위수의 유리점의 생성원 $P_1, \dots, P_r$에 대해, 네롱-테이트 높이 짝지음(Néron-Tate height pairing) $\langle P_i, P_j \rangle$를 나열한 $r \times r$ 행렬의 행렬식. 점의 '크기'를 측정하는 지표입니다.
+2. **$\mathrm{Reg}(E)$ (레귤레이터)** : 랭크 $r$인 무한 위수의 유리점의 생성원 $P_1, \dots, P_r$에 대해, 네롱-테이트 높이 짝지음(Néron-Tate height pairing) $\langle P_i, P_j \rangle$를 나열한 $r \times r$ 행렬의 [행렬식](/ko/p/geometric-meaning-of-determinant/). 점의 '크기'를 측정하는 지표입니다.
 3. **$|E(\mathbb{Q})_{\text{tors}}|$** : 꼬임 부분군의 위수.
 4. **$c_p$ (타마가와 수)** : 나쁜 환원을 가지는 소수 $p$에 대한 국소적인 보정 계수. 국소체의 갈루아 군의 작용으로부터 계산됩니다.
 5. **$\text{Sha}(E)$ (테이트-샤파레비치 군, $\text{\textcyrillic{Sh}}$)** : 극도로 중요한 대상이므로 뒤에 서술합니다.

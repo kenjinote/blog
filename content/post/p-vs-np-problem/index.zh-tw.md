@@ -11,19 +11,19 @@ tags: ["complexity-theory", "p-vs-np", "np-complete", "millennium-prize", "pytho
 
 在電腦科學以及現代數學中，有一個最著名且最重要的未解決問題。那就是 **P vs NP問題** 。
 
-2000年，克雷數學研究所針對7個數學上的未解決問題各懸賞了100萬美元。這些被稱為 **千禧年大獎難題** 。雖然像龐加萊猜想等已經被解決，但 **P vs NP問題** 至今甚至連解決的線索都尚未完全浮現。
+2000年，克雷數學研究所針對7個數學上的未解決問題各懸賞了100萬美元。這些被稱為 **千禧年大獎難題** 。雖然像[龐加萊猜想](/zh-tw/p/poincare-conjecture/)等已經被解決，但 **P vs NP問題** 至今甚至連解決的線索都尚未完全浮現。
 
-在本文中，我們將詳細深入探討這個 **P vs NP問題** 的全貌，從計算複雜度類別（P、NP、NP完全、NP困難）的基礎，到在程式設計中的實務意義，甚至是如果被解開的話對世界的影響。
+在本文中，我們將詳細深入探討這個 **P vs NP問題** 的全貌，從計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)類別（P、NP、NP完全、NP困難）的基礎，到在程式設計中的實務意義，甚至是如果被解開的話對世界的影響。
 
 ---
 
 ## 1. 計算複雜度理論與演算法的基礎
 
-為了解 **P vs NP問題** ，首先必須了解「演算法的計算複雜度」這個概念。電腦為了解決某個問題會進行一步步的計算，而當輸入的大小 $n$ 變大時，計算所需的時間（步數）和記憶體（空間）會如何增加，這就稱為 **計算複雜度（Computational Complexity）** 。
+為了解 **P vs NP問題** ，首先必須了解「演算法的計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)」這個概念。電腦為了解決某個問題會進行一步步的計算，而當輸入的大小 $n$ 變大時，計算所需的時間（步數）和記憶體（空間）會如何增加，這就稱為 **計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)（Computational Complexity）** 。
 
 ### 蘭道符號（Big-O Notation）
 
-表示計算複雜度時常用的就是 $O$ 記號。這表示相對於輸入大小 $n$ 的最壞計算複雜度上限。
+表示計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)時常用的就是 $O$ 記號。這表示相對於輸入大小 $n$ 的最壞計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)上限。
 
 - $O(1)$: 常數時間。不依賴輸入大小。
 - $O(\log n)$: 對數時間。如二元搜尋等。
@@ -46,7 +46,7 @@ xychart-beta
 ```
 *(最下方表示 $O(n)$ ，中間表示 $O(n^2)$ ，最上方表示 $O(2^n)$ 。可以看出指數時間爆發性的增加。)*
 
-在計算複雜度理論中，以 $O(n^k)$ （ $k$ 為常數）表示的時間稱為 **多項式時間（Polynomial Time）** ，並被視為可在實用時間內計算的一個基準。另一方面，像 $O(2^n)$ 等指數時間，只要 $n$ 達到數十，就需要超過宇宙壽命的計算時間，因此實質上被視為「無法解開」。
+在計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)理論中，以 $O(n^k)$ （ $k$ 為常數）表示的時間稱為 **多項式時間（Polynomial Time）** ，並被視為可在實用時間內計算的一個基準。另一方面，像 $O(2^n)$ 等指數時間，只要 $n$ 達到數十，就需要超過宇宙壽命的計算時間，因此實質上被視為「無法解開」。
 
 ---
 
@@ -62,7 +62,7 @@ xychart-beta
 - **最短路徑問題**：像汽車導航一樣，尋找兩點之間的最短路線（使用[Dijkstra](https://kenji.blog/zh-tw/p/graph-theory-dijkstra-a-star/)演算法為 $O(E + V \log V)$ ）。
 - **質數判定問題**：判定某個數是否為質數（已證明可藉由AKS質數測試在多項式時間內解開）。
 
-以下是P類別代表例，即二元搜尋演算法的Python實作。
+以下是P類別代表例，即二元[搜尋演算法](/zh-tw/p/search-algorithms-linear-binary-hash-table-principles/)的Python實作。
 
 ```python
 def binary_search(arr, target):
@@ -88,7 +88,7 @@ sorted_data = [1, 3, 5, 7, 9, 11, 13, 15]
 print("Index:", binary_search(sorted_data, 7)) # Output: 3
 ```
 
-這些問題即使輸入大小變大，計算複雜度也不會爆發，能夠以可擴展的方式解開。
+這些問題即使輸入大小變大，計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)也不會爆發，能夠以可擴展的方式解開。
 
 ---
 
@@ -218,7 +218,7 @@ graph TD
 
 ### 旅行推銷員問題（TSP）的實作範例與近似演算法
 
-嘗試嚴格解開屬於NP困難（最佳化問題版）的旅行推銷員問題會導致計算複雜度爆發。讓我們用以下的Python程式碼，來比較嚴格解（暴力搜尋）與實用的近似解（貪婪法）。
+嘗試嚴格解開屬於NP困難（最佳化問題版）的旅行推銷員問題會導致計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)爆發。讓我們用以下的Python程式碼，來比較嚴格解（暴力搜尋）與實用的近似解（貪婪法）。
 
 ```python
 import itertools
@@ -282,7 +282,7 @@ print(f"近似解: 距離 {dist_greedy:.2f}, 路線 {path_greedy}")
 
 ## 7. 如果 P = NP，世界會變成怎樣？
 
-目前，世界上的密碼系統（如網購使用的SSL/TLS，或是比特幣等區塊鏈），都是利用了 **「解開需要極長的時間，但驗證只需一瞬間」** 的非對稱性。
+目前，世界上的密碼系統（如網購使用的SSL/TLS，或是比特幣等[區塊鏈](/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)），都是利用了 **「解開需要極長的時間，但驗證只需一瞬間」** 的非對稱性。
 
 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)密碼核心的質因數分解也是其中之一。
 如果有人證明了 $P = NP$ ，並建構了在多項式時間內解開NP問題的魔法演算法（建構性證明），那將會引發以下 **人類社會的典範轉移** ：
@@ -300,7 +300,7 @@ print(f"近似解: 距離 {dist_greedy:.2f}, 路線 {path_greedy}")
 
 近年來，隨著量子電腦的出現，產生了「量子電腦是不是就能解開NP完全問題？」的誤解。
 
-在計算複雜度理論中，量子電腦能在多項式時間內解開的問題類別被稱為 **BQP (Bounded-error Quantum Polynomial time)** 。藉由彼得·秀爾構思的「秀爾演算法」，證明了質因數分解屬於BQP（量子電腦能快速解開）。
+在計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)理論中，量子電腦能在多項式時間內解開的問題類別被稱為 **BQP (Bounded-error Quantum Polynomial time)** 。藉由彼得·秀爾構思的「秀爾演算法」，證明了質因數分解屬於BQP（量子電腦能快速解開）。
 
 然而，目前計算機科學界的共識是， **不認為 $NP完全 \subseteq BQP$** 。
 也就是說，即使是量子電腦，也被認為無法在多項式時間內解開如旅行推銷員問題或背包問題等NP完全問題。量子電腦並非魔法棒，它只有對具有特定數學結構的問題（如尋找週期性等）才能發揮壓倒性速度的機器。
@@ -331,7 +331,7 @@ graph TD
 
 我們軟體工程師在日常中面臨的業務課題（如排班表、配送路線最佳化、雲端資源分配、裝箱問題），其中絕大部分都是 **NP困難** 的問題。
 
-當商業端要求「請做一個能給出這個問題最佳解的系統」時，如果沒有計算複雜度理論的知識，你將會寫出一個永遠跑不完的程式，並導致伺服器當機。
+當商業端要求「請做一個能給出這個問題最佳解的系統」時，如果沒有計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)理論的知識，你將會寫出一個永遠跑不完的程式，並導致伺服器當機。
 
 **P vs NP問題** （以及NP完全性理論）帶給程式設計師最大的教訓如下：
 
@@ -376,7 +376,7 @@ print(f"背包的最大價值: {knapsack_dp(weights, values, capacity)}")
 
 克雷數學研究所那100萬美元的懸賞金，若考慮到這個問題的重要性，或許太便宜了。如果你完成了 $P = NP$ 的證明演算法，在領取獎金之前，你甚至能將所有的加密貨幣轉進自己的錢包（當然，在道德上絕對不能這麼做）。
 
-未來的研究突破，是否能讓我們在有生之年看到這個問題的結果呢？還是會像哥德爾的不完備定理一樣，被證明為「既無法證明也無法反證」呢？計算複雜度理論的最前線，今後也將持續令人矚目。
+未來的研究突破，是否能讓我們在有生之年看到這個問題的結果呢？還是會像哥德爾的不完備定理一樣，被證明為「既無法證明也無法反證」呢？計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)理論的最前線，今後也將持續令人矚目。
 
 > **參考文獻 / 相關連結**
 > - 克雷數學研究所 千禧年大獎難題 (Clay Mathematics Institute)

@@ -76,4 +76,4 @@ Indem die PCs von Millionen teilnehmenden Nutzern im Netzwerk kooperieren und ei
 
 BitTorrent ist eine Technologie, die die Philosophie des Internet – die autonome Dezentralisierung – perfekt verkörpert. Es verwirft den Ansatz des 20. Jahrhunderts, bei dem „ein riesiger zentraler Server an alle verteilt“, und setzt stattdessen darauf, „die Kraft der Individuen, die einen Schwarm bilden, zu bündeln“.
 
-Die zugrundeliegende Logik – „Dateien in kleine Teile zerlegen“, „seltene Teile sammeln“ und „Kooperation belohnen“ – übt bis heute einen enormen Einfluss auf das Design von Blockchain-Technologien und dezentralen Cloud-Speichern aus.
+Die zugrundeliegende Logik – „Dateien in kleine Teile zerlegen“, „seltene Teile sammeln“ und „Kooperation belohnen“ – übt bis heute einen enormen Einfluss auf das Design von [Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/)-Technologien und dezentralen Cloud-Speichern aus.

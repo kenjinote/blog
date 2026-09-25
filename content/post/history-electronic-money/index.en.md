@@ -56,12 +56,12 @@ Stores did not need to prepare expensive FeliCa reading terminals; they could in
 
 Meanwhile, in the Internet world, the passion for a "digital currency without a central administrator," which David Chaum dreamed of, had not disappeared.
 
-In 2008, **Bitcoin**, announced by Satoshi Nakamoto, used blockchain technology and PoW (Proof of Work) to complete a digital currency that cannot be forged or double-spent, even without any specific companies or banks (central administrators) existing.
+In 2008, **Bitcoin**, announced by Satoshi Nakamoto, used [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/) technology and PoW (Proof of Work) to complete a digital currency that cannot be forged or double-spent, even without any specific companies or banks (central administrators) existing.
 Electronic money like Suica and PayPay are ultimately centralized systems based on "trusting the servers of the operating companies (JR or PayPay Corp)," whereas Bitcoin operates on a fundamentally different paradigm, being a "decentralized" system monitored mutually by all participants.
 
 ## 6. Conclusion: The Future of Digitized Value
 
-The attempt to turn "currency into data" began with the failures of cryptographers in the 1990s, passed through practical application at Japanese ticket gates (FeliCa), evolved into cloud-based (QR code) payments due to the spread of smartphones, and finally reached the ultimate decentralized currency: the blockchain.
+The attempt to turn "currency into data" began with the failures of cryptographers in the 1990s, passed through practical application at Japanese ticket gates (FeliCa), evolved into cloud-based (QR code) payments due to the spread of smartphones, and finally reached the ultimate decentralized currency: the [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/).
 
 Currently, central banks around the world are fully researching "CBDC (Central Bank Digital Currency)," a digital fiat currency issued by the state itself.
 When money is completely replaced by "massless data," how will our concept of "value" change? The history of electronic money is finally approaching its final chapter.

@@ -199,7 +199,7 @@ primes = [2, 3, 5]
 print(f"結果: {count_multiples(M, primes)}")
 ```
 
-該演算法的時間複雜度為 $O(n \cdot 2^n)$ ，如果 $n$ 最大為20左右，其執行速度足夠快。
+該演算法的時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)為 $O(n \cdot 2^n)$ ，如果 $n$ 最大為20左右，其執行速度足夠快。
 
 ## 9. 結論
 

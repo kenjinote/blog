@@ -112,7 +112,7 @@ So wurde die Tatsache, dass "allgemeine Gleichungen vom Grad 5 oder höher nicht
 
 ## 3. Das Vermächtnis von [Galois](https://kenji.blog/de/p/galois/) und sein Einfluss auf die moderne Mathematik
 
-Nach dem Tod von [Galois](https://kenji.blog/de/p/galois/) wurden seine Briefe von seinem engen Freund Chevalier aufbewahrt und allmählich unter Mathematikern bekannt. Im Jahr 1846 organisierte dann der französische Mathematiker Joseph Liouville die Schriften von Galois und veröffentlichte sie in einer mathematischen Zeitschrift mit eigenen Kommentaren, womit die [Galois](https://kenji.blog/de/p/galois/)-Theorie schließlich ans Licht gebracht wurde.
+Nach dem Tod von [Galois](https://kenji.blog/de/p/galois/) wurden seine Briefe von seinem engen Freund Chevalier aufbewahrt und allmählich unter Mathematikern bekannt. Im Jahr 1846 organisierte dann der französische Mathematiker [Joseph Liouville](/de/p/liouville/) die Schriften von Galois und veröffentlichte sie in einer mathematischen Zeitschrift mit eigenen Kommentaren, womit die [Galois](https://kenji.blog/de/p/galois/)-Theorie schließlich ans Licht gebracht wurde.
 
 Das von [Galois](https://kenji.blog/de/p/galois/) eingeführte Konzept der "Gruppe" wurde in der Folge nicht nur zur Grundsprache der Algebra, sondern aller wissenschaftlichen Bereiche, einschließlich der Geometrie, der Topologie und der Physik (wie der Teilchenphysik und der Kristallographie). Heute ist die abstrakte Algebra, die algebraische Systeme wie "[Gruppen, Ringe und Körper](https://kenji.blog/de/p/groups-rings-and-fields/)" untersucht, zu einer der wichtigsten Säulen der modernen Mathematik geworden.
 

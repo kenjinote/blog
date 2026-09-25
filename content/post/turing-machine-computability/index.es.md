@@ -21,7 +21,7 @@ Las computadoras que usamos a diario, desde los teléfonos inteligentes hasta la
 
 Quien proporcionó una respuesta matemáticamente completa a esta pregunta fue el matemático británico y padre de la informática, **Alan Turing**. En un artículo publicado en 1936, ideó un modelo computacional virtual llamado **máquina de Turing** y demostró que existen "problemas que, en principio, no pueden resolverse con ninguna computadora" en este mundo.
 
-En este artículo, explicaremos en detalle cómo funciona la máquina de Turing y qué es el **"problema de la parada"** (Halting problem), el cual es extremadamente importante en la teoría de la computabilidad.
+En este artículo, explicaremos en detalle cómo funciona la máquina de Turing y qué es el **"problema de la parada"** ([Halting problem](/es/p/halting-problem/)), el cual es extremadamente importante en la teoría de la computabilidad.
 
 ## 2. ¿Qué es una máquina de Turing?
 
@@ -160,7 +160,7 @@ Con la máquina de Turing universal, se esperaba que "¿no sería posible cualqu
 
 ### 4.1 ¿Qué es el problema de la parada?
 
-El problema de la parada es la siguiente pregunta:
+[El problema de la parada](/es/p/halting-problem/) es la siguiente pregunta:
 
 > Dada cualquier programa $P$ y su entrada $x$, cuando el programa $P$ se ejecuta con la entrada $x$, **¿existe un algoritmo (programa) que pueda determinar antes de la ejecución si terminará y se detendrá en un tiempo finito, o si caerá en un bucle infinito y nunca se detendrá?**
 
@@ -200,7 +200,7 @@ paradox(paradox)
 2.  Si `halts(paradox, paradox)` evalúa a `False` (bucle infinito):
     La función `paradox` entra en el bloque `else` y **se detiene de inmediato**. Esto también contradice el resultado de la evaluación.
 
-Pase lo que pase, surge una contradicción, lo que significa que la suposición inicial de que **"existe una función `halts` perfecta" era incorrecta**. Por lo tanto, no existe un algoritmo que resuelva el problema de la parada.
+Pase lo que pase, surge una contradicción, lo que significa que la suposición inicial de que **"existe una función `halts` perfecta" era incorrecta**. Por lo tanto, no existe un algoritmo que resuelva [el problema de la parada](/es/p/halting-problem/).
 
 ### 4.3 Expresión mediante fórmulas matemáticas
 
@@ -231,7 +231,7 @@ A través de esto, se demuestra que la función $h$ es incomputable (Uncomputabl
 
 ## 5. El impacto de la teoría de la computabilidad
 
-El hecho de que el problema de la parada sea "irresoluble" tiene un impacto directo en el desarrollo de software moderno.
+El hecho de que [el problema de la parada](/es/p/halting-problem/) sea "irresoluble" tiene un impacto directo en el desarrollo de software moderno.
 
 Por ejemplo, los compiladores y las herramientas de análisis de código estático verifican si hay errores en el código o si caen en bucles infinitos, pero operan bajo la restricción de que **"es en principio imposible detectar bucles infinitos con 100% de precisión para todos los programas"**. Por lo tanto, las herramientas de análisis prácticas adoptan compromisos utilizando heurísticas y tiempos de espera (timeouts).
 

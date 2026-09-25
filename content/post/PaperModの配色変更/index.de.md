@@ -13,7 +13,7 @@ Ich habe das Farbschema des PaperMod-Themas geändert. Für die Änderungsmethod
 
 https://github.com/adityatelange/hugo-PaperMod/discussions/645
 
-Der CSS-Pfad lautet wie folgt.
+Der CSS-[Pfad](/de/p/windows-%E3%81%A7pfad%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9Fausf%C3%BChrbare-datei%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/) lautet wie folgt.
 
 `themes/PaperMod/assets/css/extended/blank.css`
 

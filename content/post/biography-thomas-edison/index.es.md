@@ -47,7 +47,7 @@ El rasgo más notable de Edison fue su abrumador "número de intentos". Para enc
 
 ## La guerra de las corrientes y el impacto en la posteridad
 
-Detrás de su espectacular éxito, Edison también enfrentó grandes reveses. Esta fue la "Guerra de las corrientes" librada contra Nikola Tesla y George Westinghouse. Edison promovió el sistema de "corriente continua" (CC), argumentando su seguridad, pero finalmente sufrió la derrota ante el sistema de "corriente alterna" (CA), que era superior para la transmisión de energía a larga distancia.
+Detrás de su espectacular éxito, Edison también enfrentó grandes reveses. Esta fue la "Guerra de las corrientes" librada contra [Nikola Tesla](/es/p/biography-nikola-tesla/) y George Westinghouse. Edison promovió el sistema de "corriente continua" (CC), argumentando su seguridad, pero finalmente sufrió la derrota ante el sistema de "corriente alterna" (CA), que era superior para la transmisión de energía a larga distancia.
 
 Sin embargo, esta derrota no disminuyó su reputación. Las empresas que fundó se fusionaron para convertirse en la actual General Electric (GE), creciendo hasta ser uno de los conglomerados más grandes del mundo. Además, un solo invento suyo ha dado a luz a industrias masivas enteras, como la creación de la industria musical por el fonógrafo y los albores de la industria cinematográfica por la cámara de cine (Kinetoscopio).
 

@@ -65,7 +65,7 @@ Les GPU, conçus à l'origine pour le rendu des images des jeux 3D, sont prévus
 
 Le deep learning a d'abord obtenu d'excellents résultats dans la « reconnaissance d'images (CNN) ». Par la suite, il a également atteint une précision supérieure à celle des humains dans des domaines tels que la « reconnaissance vocale » et la « traduction (RNN) ».
 
-Aujourd'hui, une architecture appelée « Transformer », qui est une évolution de ce deep learning, est apparue, donnant naissance à de gigantesques réseaux de neurones ayant appris à partir d'immenses quantités de données textuelles sur Internet. Il s'agit des **« grands modèles de langage (LLM) »**, qui sont la véritable nature de l'« IA générative » comme **ChatGPT**, que nous utilisons quotidiennement.
+Aujourd'hui, une architecture appelée « Transformer », qui est une évolution de ce deep learning, est apparue, donnant naissance à de gigantesques réseaux de neurones ayant appris à partir d'immenses quantités de données textuelles sur Internet. Il s'agit des **« [grands modèles de langage](/fr/p/large-language-models-llm-transformer-prompt-engineering/) (LLM) »**, qui sont la véritable nature de l'« IA générative » comme **ChatGPT**, que nous utilisons quotidiennement.
 
 ## 6. Conclusion
 

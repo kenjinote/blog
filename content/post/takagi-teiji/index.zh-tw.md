@@ -110,7 +110,7 @@ graph TD
 - **《初等數論講義》** ：一本從數論基礎一直講解到高斯互反律的教科書。
 - **《近世數學史談》** ：一部生動描繪了19世紀數學家群像的歷史書。它傳遞了數學發展的戲劇性。
 
-他播下的種子，傳承給了[小平邦彥](https://kenji.blog/zh-tw/p/kodaira-kunihiko/)、伊藤清，乃至志村五郎和[谷山豐](https://kenji.blog/zh-tw/p/taniyama-yutaka/)等後來在世界上大放異彩的日本數學家們。
+他播下的種子，傳承給了[小平邦彥](https://kenji.blog/zh-tw/p/kodaira-kunihiko/)、[伊藤清](/zh-tw/p/ito-kiyosi/)，乃至[志村五郎](/zh-tw/p/shimura-goro/)和[谷山豐](https://kenji.blog/zh-tw/p/taniyama-yutaka/)等後來在世界上大放異彩的日本數學家們。
 
 ## 結語
 

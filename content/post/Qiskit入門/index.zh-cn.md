@@ -293,7 +293,7 @@ print("\n测量结果:", counts)
 
 ### 6.2 Grover 算法（Grover's Algorithm）
 
-在从 $N$ 个未排序的数据库中寻找特定数据的搜索问题中，经典算法平均需要 $N/2$ 次计算，而Grover算法只需 $\sqrt{N}$ 次即可找到目标数据。
+在从 $N$ 个未排序的数据库中寻找特定数据的搜索问题中，经典算法平均需要 $N/2$ 次计算，而[Grover算法](/zh-cn/p/grovers-algorithm-quantum-search/)只需 $\sqrt{N}$ 次即可找到目标数据。
 该算法使用称为“神谕（Oracle）”的黑盒来反转目标解的相位，然后进行“振幅放大（Amplitude Amplification）”，从而极大地提高观测到目标解的概率。
 
 ```mermaid

@@ -10,7 +10,7 @@ image: "eyecatch.jpg"
 
 # 1. Introducción: El desafío sin precedentes del alunizaje
 
-El 20 de julio de 1969, el Apolo 11 aterrizó en el Mar de la Tranquilidad, y el comandante Neil Armstrong se convirtió en el primer ser humano en pisar la Luna. Esta hazaña histórica fue el resultado de avances en hardware como la ingeniería de cohetes, la ciencia de materiales y la mecánica celeste, pero al mismo tiempo, fue el triunfo de un "software" extremadamente innovador para la época.
+El 20 de julio de 1969, el Apolo 11 aterrizó en el Mar de la Tranquilidad, y el comandante [Neil Armstrong](/es/p/biography-neil-armstrong/) se convirtió en el primer ser humano en pisar la Luna. Esta hazaña histórica fue el resultado de avances en hardware como la ingeniería de cohetes, la ciencia de materiales y la mecánica celeste, pero al mismo tiempo, fue el triunfo de un "software" extremadamente innovador para la época.
 
 En el centro del desarrollo de ese software estaba **Margaret Hamilton**, quien dirigió el desarrollo del software para el Computador de Navegación del Apolo (Apollo Guidance Computer, abreviado AGC) en el Laboratorio de Instrumentación del MIT (Instituto de Tecnología de Massachusetts). En aquella época, las computadoras eran enormes masas de tubos de vacío que ocupaban habitaciones enteras, y recién comenzaba la miniaturización mediante transistores. La capacidad de memoria era minúscula y la velocidad de cálculo era incomparablemente más lenta que la de los teléfonos inteligentes actuales.
 

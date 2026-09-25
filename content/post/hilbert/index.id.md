@@ -10,7 +10,7 @@ tags: ["Hilbert", "Sejarah Matematika", "Geometri", "Analisis Fungsional", "Fisi
 
 ## 1. Pendahuluan: Bapak Matematika Modern
 
-[David Hilbert](https://kenji.blog/id/p/hilbert/) (23 Januari 1862 – 14 Februari 1943) adalah seorang matematikawan Jerman, diakui secara luas sebagai salah satu matematikawan paling berpengaruh dan terhebat pada akhir abad ke-19 dan awal abad ke-20. Sering dibandingkan dengan rekannya yang brilian dari Prancis, Henri Poincaré, Hilbert menekankan logika dan formalisme yang ketat, berbeda dengan ketergantungan Poincaré pada intuisi. [Hilbert](https://kenji.blog/id/p/hilbert/) sangat memengaruhi hampir setiap bidang matematika modern, membuatnya mendapat julukan **"Raja Matematika"**.
+[David Hilbert](https://kenji.blog/id/p/hilbert/) (23 Januari 1862 – 14 Februari 1943) adalah seorang matematikawan Jerman, diakui secara luas sebagai salah satu matematikawan paling berpengaruh dan terhebat pada akhir abad ke-19 dan awal abad ke-20. Sering dibandingkan dengan rekannya yang brilian dari Prancis, [Henri Poincaré](/id/p/poincare/), Hilbert menekankan logika dan formalisme yang ketat, berbeda dengan ketergantungan Poincaré pada intuisi. [Hilbert](https://kenji.blog/id/p/hilbert/) sangat memengaruhi hampir setiap bidang matematika modern, membuatnya mendapat julukan **"Raja Matematika"**.
 
 Kontribusinya membentang di seluruh teori invarian, teori bilangan aljabar, aksiomatisasi geometri, persamaan integral, analisis fungsional (ruang [Hilbert](https://kenji.blog/id/p/hilbert/)), dan fisika teoretis (dasar-dasar matematika relativitas umum). Warisan terbesarnya tidak hanya terletak pada pemecahan masalah terbuka yang terisolasi, tetapi dalam membayangkan kembali struktur dan sifat matematika itu sendiri secara mendasar, membangun paradigma baru aksiomatisme dan formalisme. Dalam artikel ini, kita akan melihat lebih dalam dan mendetail pada episode kehidupan dramatis [Hilbert](https://kenji.blog/id/p/hilbert/) dan pencapaiannya yang cemerlang.
 
@@ -18,7 +18,7 @@ Kontribusinya membentang di seluruh teori invarian, teori bilangan aljabar, aksi
 
 [Hilbert](https://kenji.blog/id/p/hilbert/) lahir pada tanggal 23 Januari 1862, di Wehlau, dekat Königsberg (sekarang Kaliningrad, Rusia), ibu kota Provinsi Prusia Timur di Kerajaan Prusia. Ayahnya, Otto Hilbert, adalah seorang hakim distrik yang tegas. Ibunya, Maria Therese, adalah wanita berpendidikan baik dengan minat mendalam pada filsafat dan astronomi. Dikatakan bahwa [Hilbert](https://kenji.blog/id/p/hilbert/) mewarisi pemikiran logis dan kehausannya akan pengetahuan dari orang tuanya.
 
-Königsberg adalah kota dengan akar akademik yang dalam; itu adalah tempat kelahiran filsuf besar Immanuel Kant dan terkenal dengan masalah "[Tujuh Jembatan Königsberg](https://kenji.blog/id/p/seven-bridges-of-konigsberg/)" yang diselesaikan oleh Leonhard Euler. Selama masa sekolahnya, nilai [Hilbert](https://kenji.blog/id/p/hilbert/) tidak luar biasa, tetapi ia memiliki intuisi dan hasrat khusus pada matematika. Dia membenci hafalan, lebih suka memecahkan masalah dengan membangun logika dari awal dalam pikirannya sendiri. Pendekatan ini—membangun dari fondasi logis daripada mengandalkan hafalan—menjadi inti gaya matematikanya di kemudian hari.
+Königsberg adalah kota dengan akar akademik yang dalam; itu adalah tempat kelahiran filsuf besar [Immanuel Kant](/id/p/biography-immanuel-kant/) dan terkenal dengan masalah "[Tujuh Jembatan Königsberg](https://kenji.blog/id/p/seven-bridges-of-konigsberg/)" yang diselesaikan oleh [Leonhard Euler](/id/p/euler/). Selama masa sekolahnya, nilai [Hilbert](https://kenji.blog/id/p/hilbert/) tidak luar biasa, tetapi ia memiliki intuisi dan hasrat khusus pada matematika. Dia membenci hafalan, lebih suka memecahkan masalah dengan membangun logika dari awal dalam pikirannya sendiri. Pendekatan ini—membangun dari fondasi logis daripada mengandalkan hafalan—menjadi inti gaya matematikanya di kemudian hari.
 
 ### "Jalan-jalan Matematika" dan Teman Seumur Hidup
 
@@ -47,21 +47,21 @@ Legenda mengatakan bahwa setelah melihat bukti abstrak yang sama sekali tanpa pe
 
 Menyusul kesuksesannya dalam teori invarian, [Hilbert](https://kenji.blog/id/p/hilbert/) beralih ke teori bilangan aljabar. Ditugaskan oleh Masyarakat Matematika Jerman pada tahun 1897, ia menulis "Zahlbericht" (Laporan tentang Bilangan), sebuah karya monumental yang menyintesis pengetahuan yang ada tentang teori bilangan aljabar dan merekonstruksinya dari perspektif yang sama sekali baru.
 
-Dalam laporan ini, ia menerapkan teori [Galois](https://kenji.blog/id/p/galois/) pada teori bilangan, meletakkan dasar untuk teori medan kelas Hilbert. Teori medan kelas, yang kemudian disempurnakan oleh Teiji Takagi dan Emil Artin, dianggap sebagai salah satu teori paling indah dalam teori bilangan abad ke-20. [Hilbert](https://kenji.blog/id/p/hilbert/) berhasil menyatukan hasil-hasil yang tampaknya berbeda dalam teori bilangan di bawah hukum-hukum yang lebih tinggi dan indah.
+Dalam laporan ini, ia menerapkan teori [Galois](https://kenji.blog/id/p/galois/) pada teori bilangan, meletakkan dasar untuk teori medan kelas Hilbert. Teori medan kelas, yang kemudian disempurnakan oleh [Teiji Takagi](/id/p/takagi-teiji/) dan Emil Artin, dianggap sebagai salah satu teori paling indah dalam teori bilangan abad ke-20. [Hilbert](https://kenji.blog/id/p/hilbert/) berhasil menyatukan hasil-hasil yang tampaknya berbeda dalam teori bilangan di bawah hukum-hukum yang lebih tinggi dan indah.
 
 ## 5. Aksiomatisasi Geometri: Filosofi "Meja, Kursi, dan Gelas Bir"
 
-Pada tahun 1899, [Hilbert](https://kenji.blog/id/p/hilbert/) menerbitkan buku "Grundlagen der Geometrie" (Dasar-dasar Geometri). Buku itu sepenuhnya merekonstruksi sistem aksioma geometri [Euklides](https://kenji.blog/p/euclid/), yang telah menjadi fondasi absolut geometri selama lebih dari 2000 tahun, dari sudut pandang modern.
+Pada tahun 1899, [Hilbert](https://kenji.blog/id/p/hilbert/) menerbitkan buku "Grundlagen der Geometrie" (Dasar-dasar Geometri). Buku itu sepenuhnya merekonstruksi sistem aksioma geometri [Euklides](https://kenji.blog/id/p/euclid/), yang telah menjadi fondasi absolut geometri selama lebih dari 2000 tahun, dari sudut pandang modern.
 
-"Elemen" [Euklides](https://kenji.blog/p/euclid/) berisi beberapa asumsi dan elemen implisit yang bergantung pada intuisi visual. [Hilbert](https://kenji.blog/id/p/hilbert/) menyingkirkan hal-hal ini dengan cermat, menghadirkan sistem aksioma yang didefinisikan secara ketat yang terdiri dari lima kelompok: aksioma insiden, urutan, kekongruenan, kesejajaran, dan kontinuitas.
+"Elemen" [Euklides](https://kenji.blog/id/p/euclid/) berisi beberapa asumsi dan elemen implisit yang bergantung pada intuisi visual. [Hilbert](https://kenji.blog/id/p/hilbert/) menyingkirkan hal-hal ini dengan cermat, menghadirkan sistem aksioma yang didefinisikan secara ketat yang terdiri dari lima kelompok: aksioma insiden, urutan, kekongruenan, kesejajaran, dan kontinuitas.
 
 Ia terkenal menyatakan: **"Seseorang harus selalu bisa mengatakan — alih-alih titik, garis lurus, dan bidang — meja, kursi, dan gelas bir."** Ini adalah deklarasi **formalisme** yang bergema, melucuti geometri dari realitas intuitif atau fisik apa pun mengenai apa benda itu, dan menetapkan hanya hubungan logis antar benda sebagai fondasi matematika. Pendekatan inovatif ini menjadi gaya standar metode aksiomatik dalam matematika modern.
 
 ## 6. Undangan ke Universitas Göttingen dan Fajar Zaman Keemasan
 
-Pada tahun 1895, berkat rekomendasi kuat dari Felix Klein, tokoh kelas berat dalam matematika Jerman, [Hilbert](https://kenji.blog/id/p/hilbert/) diangkat menjadi profesor di Universitas Göttingen. Göttingen sudah terkenal sebagai tanah suci bagi matematika, pernah menjadi rumah bagi Carl Friedrich Gauss dan [Bernhard Riemann](https://kenji.blog/id/p/riemann/).
+Pada tahun 1895, berkat rekomendasi kuat dari Felix Klein, tokoh kelas berat dalam matematika Jerman, [Hilbert](https://kenji.blog/id/p/hilbert/) diangkat menjadi profesor di Universitas Göttingen. Göttingen sudah terkenal sebagai tanah suci bagi matematika, pernah menjadi rumah bagi [Carl Friedrich Gauss](/id/p/gauss/) dan [Bernhard Riemann](https://kenji.blog/id/p/riemann/).
 
-Dengan kedatangan [Hilbert](https://kenji.blog/id/p/hilbert/), Göttingen dengan mantap membangun kembali dirinya sebagai pusat matematika utama dunia. Kuliahnya selalu jelas dan penuh gairah akan ide-ide matematika baru, menarik para mahasiswa dan peneliti brilian dari seluruh dunia. Banyak superstar yang nantinya akan memimpin matematika abad ke-20, seperti Emmy Noether, Hermann Weyl, Richard Courant, dan John von Neumann, dibimbing oleh [Hilbert](https://kenji.blog/id/p/hilbert/).
+Dengan kedatangan [Hilbert](https://kenji.blog/id/p/hilbert/), Göttingen dengan mantap membangun kembali dirinya sebagai pusat matematika utama dunia. Kuliahnya selalu jelas dan penuh gairah akan ide-ide matematika baru, menarik para mahasiswa dan peneliti brilian dari seluruh dunia. Banyak superstar yang nantinya akan memimpin matematika abad ke-20, seperti [Emmy Noether](/id/p/noether/), Hermann Weyl, Richard Courant, dan [John von Neumann](/id/p/von-neumann/), dibimbing oleh [Hilbert](https://kenji.blog/id/p/hilbert/).
 
 Anekdot mengenai [Emmy Noether](https://kenji.blog/id/p/noether/) sangat terkenal. Pada saat itu, peraturan universitas melarang wanita memegang posisi akademis. [Hilbert](https://kenji.blog/id/p/hilbert/), yang sangat menghargai bakat luar biasanya dalam aljabar, memprotes keras pada rapat fakultas, menyatakan: **"Senat universitas bukanlah pemandian, jadi gender tidak masalah!"** Pernyataan ini dengan jelas menggambarkan karakternya yang progresif, meritokratis, dan tanpa prasangka.
 
@@ -71,7 +71,7 @@ Pada tahun 1900, di Kongres Internasional Matematikawan (ICM) kedua yang diadaka
 
 Masalah-masalah ini mencakup semua bidang matematika pada saat itu dan berfungsi sebagai kekuatan pendorong besar bagi perkembangan matematika selanjutnya. Berikut adalah beberapa yang paling terkenal:
 
-1. **Hipotesis Kontinum** (Masalah ke-1): Apakah ada himpunan yang kardinalitasnya benar-benar berada di antara bilangan bulat dan bilangan real? Belakangan, Gödel dan Cohen membuktikan bahwa ini independen dari aksioma ZFC standar.
+1. **[Hipotesis Kontinum](/id/p/continuum-hypothesis/)** (Masalah ke-1): Apakah ada himpunan yang kardinalitasnya benar-benar berada di antara bilangan bulat dan bilangan real? Belakangan, Gödel dan Cohen membuktikan bahwa ini independen dari aksioma ZFC standar.
 2. **Konsistensi Aksioma Aritmatika** (Masalah ke-2): Buktikan bahwa aksioma aritmatika konsisten dengan hanya menggunakan metode finitis.
 3. **Kesamaan Volume Dua Tetrahedron dengan Basis dan Ketinggian yang Sama** (Masalah ke-3): Bisakah dua polihedron semacam itu selalu dipartisi menjadi potongan-potongan yang jumlahnya terbatas dan dipasang kembali satu sama lain? Ini diselesaikan secara negatif oleh muridnya Max Dehn.
 6. **Aksiomatisasi Fisika** (Masalah ke-6): Aksiomatisasi cabang-cabang fisika di mana matematika memainkan peran penting, seperti teori probabilitas dan mekanika.
@@ -84,7 +84,7 @@ Masalah-masalah [Hilbert](https://kenji.blog/id/p/hilbert/) tetap menjadi penunj
 
 Memasuki tahun 1900-an, minat [Hilbert](https://kenji.blog/id/p/hilbert/) bergeser dari aljabar dan geometri ke analisis. Ia mempelajari secara mendalam teori persamaan integral dari matematikawan Swedia Ivar Fredholm dan membangun teori spektral dalam ruang berdimensi tak terhingga.
 
-Melalui proses ini, ia memperkenalkan konsep **ruang [Hilbert](https://kenji.blog/id/p/hilbert/)**, generalisasi ruang Euklides berdimensi terhingga ke dalam dimensi tak terhingga. Hasil kali dalam $\langle x, y \rangle$ dalam ruang hasil kali dalam $\mathcal{H}$ didefinisikan secara ketat sebagai ruang yang memiliki linearitas dan simetri Hermitian, serta memenuhi kelengkapan (semua barisan [Cauchy](https://kenji.blog/id/p/cauchy/) konvergen). Diungkapkan secara matematis, hasil kali dalam memenuhi:
+Melalui proses ini, ia memperkenalkan konsep **ruang [Hilbert](https://kenji.blog/id/p/hilbert/)**, generalisasi ruang [Euklides](/id/p/euclid/) berdimensi terhingga ke dalam dimensi tak terhingga. Hasil kali dalam $\langle x, y \rangle$ dalam ruang hasil kali dalam $\mathcal{H}$ didefinisikan secara ketat sebagai ruang yang memiliki linearitas dan simetri Hermitian, serta memenuhi kelengkapan (semua barisan [Cauchy](https://kenji.blog/id/p/cauchy/) konvergen). Diungkapkan secara matematis, hasil kali dalam memenuhi:
 
 $$
 \langle a x_1 + b x_2, y \rangle = a \langle x_1, y \rangle + b \langle x_2, y \rangle
@@ -95,7 +95,7 @@ $$
 
 Di sini, $x, y, x_1, x_2 \in \mathcal{H}$ dan $a, b \in \mathbb{C}$ (bilangan kompleks), dan $\overline{\langle y, x \rangle}$ menunjukkan konjugat kompleks. Norma diinduksi oleh $\|x\| = \sqrt{\langle x, x \rangle}$.
 
-Hebatnya, teori abstrak yang dibangun [Hilbert](https://kenji.blog/id/p/hilbert/) dari rasa keingintahuan matematika murni ini, beberapa dekade kemudian ternyata menjadi bahasa matematika yang sempurna untuk menggambarkan keadaan sistem fisik dalam mekanika kuantum yang baru lahir. Ketika Werner Heisenberg merumuskan mekanika matriks dan Erwin Schrödinger merumuskan mekanika gelombang, teori ruang [Hilbert](https://kenji.blog/id/p/hilbert/) menjadi alat yang sangat diperlukan, terutama melalui karya John von Neumann. Ini adalah contoh luar biasa dari matematika yang mengantisipasi fisika.
+Hebatnya, teori abstrak yang dibangun [Hilbert](https://kenji.blog/id/p/hilbert/) dari rasa keingintahuan matematika murni ini, beberapa dekade kemudian ternyata menjadi bahasa matematika yang sempurna untuk menggambarkan keadaan sistem fisik dalam mekanika kuantum yang baru lahir. Ketika Werner Heisenberg merumuskan mekanika matriks dan Erwin Schrödinger merumuskan mekanika gelombang, teori ruang [Hilbert](https://kenji.blog/id/p/hilbert/) menjadi alat yang sangat diperlukan, terutama melalui karya [John von Neumann](/id/p/von-neumann/). Ini adalah contoh luar biasa dari matematika yang mengantisipasi fisika.
 
 ## 9. Penjelajahan ke Fisika dan Aksi Einstein-[Hilbert](https://kenji.blog/id/p/hilbert/)
 
@@ -113,7 +113,7 @@ Sementara perselisihan prioritas antara Einstein dan [Hilbert](https://kenji.blo
 
 ## 10. Program [Hilbert](https://kenji.blog/id/p/hilbert/): Pencarian Konsistensi Mutlak dalam Matematika
 
-Setelah Perang Dunia I, menanggapi "krisis dasar-dasar matematika" yang dipicu oleh paradoks dalam teori himpunan (seperti paradoks Russell), [Hilbert](https://kenji.blog/id/p/hilbert/) mengusulkan proyek paling ambisius dalam hidupnya: **Program [Hilbert](https://kenji.blog/id/p/hilbert/)**.
+Setelah Perang Dunia I, menanggapi "krisis dasar-dasar matematika" yang dipicu oleh paradoks dalam teori himpunan (seperti [paradoks Russell](/id/p/russells-paradox/)), [Hilbert](https://kenji.blog/id/p/hilbert/) mengusulkan proyek paling ambisius dalam hidupnya: **Program [Hilbert](https://kenji.blog/id/p/hilbert/)**.
 
 Ia berusaha untuk merekonstruksi seluruh matematika sebagai "sistem formal", memperlakukan semua proposisi matematika sebagai untaian simbol yang tidak berarti dan memanipulasinya menurut aturan inferensi mekanis. Tujuannya adalah untuk membuktikan secara matematis—hanya menggunakan penalaran finitis yang aman—bahwa kontradiksi seperti " $0 = 1$ " mutlak tidak akan pernah dapat diturunkan di dalam sistem itu (konsistensi).
 

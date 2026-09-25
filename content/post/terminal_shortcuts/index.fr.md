@@ -153,7 +153,7 @@ Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 ```
 
-Grâce à cela, même dans un environnement Windows, vous pouvez construire, rechercher et exécuter des commandes de manière intuitive avec exactement les mêmes mouvements de doigts que dans un environnement Linux. Standardiser la charge cognitive ($M$) entre les plateformes est extrêmement important pour les ingénieurs DevOps.
+Grâce à cela, même dans un environnement Windows, vous pouvez construire, rechercher et exécuter des commandes de manière intuitive avec exactement les mêmes mouvements de doigts que dans un environnement Linux. Standardiser la charge cognitive ($M$) entre les plateformes est extrêmement important [pour les ingénieurs](/fr/p/prompt-engineering-for-engineers/) DevOps.
 
 ---
 

@@ -12,7 +12,7 @@ description: "Un guide complet pour affiner TinyLLaMA de manière efficace et ul
 
 ## 1. Introduction : Pourquoi TinyLLaMA et le sur site aujourd'hui ?
 
-L'évolution des grands modèles de langage ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)) progresse à une vitesse fulgurante, et avec elle, le nombre de paramètres des modèles continue de s'étendre pour atteindre des centaines de milliards. Si des modèles gigantesques comme GPT-4 et Claude 3 offrent des performances inégalées, les coûts de calcul pour l'inférence et l'apprentissage, ainsi que les problèmes de sécurité et de confidentialité des données lors de l'utilisation d'API externes, constituent des obstacles majeurs pour les entreprises. En particulier pour les tâches impliquant des données internes hautement confidentielles ou des informations personnelles, l'envoi de données à des API LLM publiques dans le cloud est souvent inacceptable du point de vue de la conformité (RGPD, APPI, etc.).
+L'évolution des [grands modèles de langage](/fr/p/large-language-models-llm-transformer-prompt-engineering/) ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)) progresse à une vitesse fulgurante, et avec elle, le nombre de paramètres des modèles continue de s'étendre pour atteindre des centaines de milliards. Si des modèles gigantesques comme GPT-4 et Claude 3 offrent des performances inégalées, les coûts de calcul pour l'inférence et l'apprentissage, ainsi que les problèmes de sécurité et de confidentialité des données lors de l'utilisation d'API externes, constituent des obstacles majeurs pour les entreprises. En particulier pour les tâches impliquant des données internes hautement confidentielles ou des informations personnelles, l'envoi de données à des API LLM publiques dans le cloud est souvent inacceptable du point de vue de la conformité (RGPD, APPI, etc.).
 
 C'est là que les **petits modèles de langage (SLM : Small Language Models)** et le **déploiement local dans des environnements sur site** (on-premises) entrent en jeu. Parmi eux, "**TinyLLaMA**" se distingue. Avec une taille compacte de seulement 1,1B (1,1 milliard) de paramètres, il a été pré-entraîné sur un ensemble de données massif d'environ 3 billions de jetons (tokens), offrant des performances exceptionnelles par rapport aux modèles de la même catégorie.
 
@@ -284,7 +284,7 @@ Voici les problèmes courants rencontrés lors de l'exécution de l'apprentissag
    - Raccourcissez `max_seq_length` de `2048` à `1024` ou `512`.
 2. **La perte (Loss) ne diminue pas / diverge :**
    - Le taux d'apprentissage (`learning_rate`) peut être trop élevé. Essayez de le réduire de `2e-4` à environ `5e-5`.
-   - Si vous utilisez Float16 au lieu de Bfloat16, un sous-dépassement de gradient peut se produire. Vérifiez `bf16=True`.
+   - Si vous utilisez Float16 au lieu de Bfloat16, un sous-[dépassement](/fr/p/hegel%E3%81%AEdialectique/) de gradient peut se produire. Vérifiez `bf16=True`.
 3. **Des chaînes de caractères mystérieuses sont générées lors de l'inférence :**
    - Assurez-vous que `padding_side="right"` est correctement défini. Il est également nécessaire de vérifier si le format du jeu de données (les tokens spéciaux comme `<|im_start|>`) est cohérent avec celui de la phase de pré-entraînement du modèle de base.
 

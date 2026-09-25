@@ -14,7 +14,7 @@ Bien que la Terre ait une forme proche de celle d'une sphère tridimensionnelle 
 
 ## 1. Le dilemme mathématique du dessin d'une sphère sur un plan
 
-Pour parler de l'histoire des projections cartographiques, il faut d'abord comprendre la prémisse mathématique majeure démontrée par Carl Friedrich Gauss. Le grand mathématicien du 19ème siècle, Gauss, a dérivé un théorème de géométrie différentielle appelé « Theorema Egregium » (le théorème remarquable). Selon ce théorème, la courbure de Gauss d'une surface a la propriété de ne pas changer même si l'on plie cette surface.
+Pour parler de l'histoire des projections cartographiques, il faut d'abord comprendre la prémisse mathématique majeure démontrée par [Carl Friedrich Gauss](/fr/p/gauss/). Le grand mathématicien du 19ème siècle, Gauss, a dérivé un théorème de géométrie différentielle appelé « Theorema Egregium » (le théorème remarquable). Selon ce théorème, la courbure de Gauss d'une surface a la propriété de ne pas changer même si l'on plie cette surface.
 
 La courbure de Gauss d'une surface sphérique comme la Terre est positive, tandis que la courbure de Gauss d'un plan est nulle. Par conséquent, il est mathématiquement impossible de cartographier sans étirement, contraction ou déchirure des surfaces ayant des courbures de Gauss différentes. C'est le même principe qui fait qu'il est impossible d'éplucher une mandarine et de l'étaler sans espace pour en faire un rectangle plat.
 

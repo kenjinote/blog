@@ -15,7 +15,7 @@ En los últimos años, la rápida evolución de la IA Generativa y los Grandes M
 
 En esta era, es natural que muchos ingenieros alojen la preocupación de que "sus trabajos puedan ser arrebatados por la IA". De hecho, la "simple tarea de codificar (Typing Code)" - como crear el código repetitivo para aplicaciones CRUD típicas, implementar algoritmos simples o llamar a APIs de bibliotecas conocidas - se está comoditizando rápidamente.
 
-Sin embargo, la esencia de la ingeniería de software no es "teclear código". Es resolver problemas de negocio a través de la tecnología y construir sistemas escalables y mantenibles. En este artículo, exploraremos profundamente y desde un punto de vista técnico las "habilidades de ingeniería exclusivas de los humanos" cuyo valor aumenta precisamente en la era en que la IA escribe código, desde la perspectiva de las limitaciones técnicas de los LLM, el Diseño Guiado por el Dominio (DDD), la arquitectura de sistemas y la depuración de sistemas distribuidos.
+Sin embargo, la esencia de la ingeniería de software no es "teclear código". Es resolver problemas de negocio a través de la tecnología y construir sistemas escalables y mantenibles. En este artículo, exploraremos profundamente y desde un punto de vista técnico las "habilidades de ingeniería exclusivas de los humanos" cuyo valor aumenta precisamente en la era en que la IA escribe código, desde la perspectiva de las limitaciones técnicas de los LLM, el Diseño Guiado por el Dominio (DDD), la arquitectura de sistemas y la depuración de [sistemas distribuidos](/es/p/cap-theorem-distributed-systems-tradeoff/).
 
 ---
 
@@ -116,11 +116,11 @@ En lugar de instruir a la IA para que "construya todo el sistema", se delega la 
 
 ## 4. Habilidad humana ③: Diseño de arquitectura de sistemas distribuidos y escalamiento
 
-El software moderno ha evolucionado desde monolitos que se ejecutan en un solo servidor hasta arquitecturas de microservicios nativas de la nube y arquitecturas orientadas a eventos. Diseñar tales sistemas distribuidos es un dominio muy difícil para la IA, que solo puede optimizar lógica localizada.
+El software moderno ha evolucionado desde monolitos que se ejecutan en un solo servidor hasta arquitecturas de [microservicios](/es/p/microservices-architecture-bff-api-gateway/) nativas de la nube y arquitecturas orientadas a eventos. Diseñar tales [sistemas distribuidos](/es/p/cap-theorem-distributed-systems-tradeoff/) es un dominio muy difícil para la IA, que solo puede optimizar lógica localizada.
 
 ### 4.1 Teorema CAP y juicio de compensaciones (trade-offs)
 
-Al diseñar sistemas distribuidos, los ingenieros siempre enfrentan el "Teorema CAP". El teorema CAP es el principio de que un sistema distribuido solo puede satisfacer simultáneamente dos de las tres propiedades siguientes:
+Al diseñar [sistemas distribuidos](/es/p/cap-theorem-distributed-systems-tradeoff/), los ingenieros siempre enfrentan el "Teorema CAP". El teorema CAP es el principio de que un sistema distribuido solo puede satisfacer simultáneamente dos de las tres propiedades siguientes:
 
 - **[Consistency](https://kenji.blog/es/p/cap-theorem-distributed-systems-tradeoff/) (Consistencia)**: ¿Se ven los mismos datos al mismo tiempo en todos los nodos?
 - **[Availability](https://kenji.blog/es/p/cap-theorem-distributed-systems-tradeoff/) (Disponibilidad)**: ¿Sigue respondiendo el sistema incluso si fallan algunos de los nodos?
@@ -134,7 +134,7 @@ La IA puede escribir "código que prioriza C" o "código que prioriza A", pero n
 
 ### 4.2 Comunicación asíncrona y Consistencia Eventual ([Eventual Consistency](https://kenji.blog/es/p/cap-theorem-distributed-systems-tradeoff/))
 
-A medida que los sistemas crecen, la coordinación entre servicios pasa de la comunicación síncrona a través de [REST API](https://kenji.blog/es/p/graphql-vs-rest-api-overfetching-type-safety/) a la comunicación asíncrona utilizando colas de mensajes (Kafka, RabbitMQ, etc.). La consistencia de datos aquí cambia de consistencia inmediata a "consistencia eventual (Eventual [Consistency](https://kenji.blog/es/p/cap-theorem-distributed-systems-tradeoff/))".
+A medida que los sistemas crecen, la coordinación entre servicios pasa de la comunicación síncrona a través de [REST API](https://kenji.blog/es/p/graphql-vs-rest-api-overfetching-type-safety/) a la comunicación asíncrona utilizando colas de mensajes ([Kafka, RabbitMQ](/es/p/event-driven-architecture-message-queue-kafka-rabbitmq/), etc.). La consistencia de datos aquí cambia de consistencia inmediata a "consistencia eventual (Eventual [Consistency](https://kenji.blog/es/p/cap-theorem-distributed-systems-tradeoff/))".
 ¿En qué momento se deben introducir patrones arquitectónicos avanzados como el patrón Saga o [CQRS](https://kenji.blog/es/p/event-driven-architecture-async/) (Command Query Responsibility Segregation)? Tomar estas decisiones complejas y dibujar el plano arquitectónico general del sistema es la verdadera esencia de un ingeniero senior.
 
 ```mermaid
@@ -157,7 +157,7 @@ A medida que aumenta el código generado por IA, también lo hace el riesgo de q
 
 ### 5.1 Diseño de Observabilidad (Observability)
 
-Para resolver incidentes de sistemas rápidamente, no es suficiente simplemente pegar registros de errores en la IA. En un entorno de microservicios, una sola solicitud atraviesa decenas de servicios.
+Para resolver incidentes de sistemas rápidamente, no es suficiente simplemente pegar registros de errores en la IA. En un entorno de [microservicios](/es/p/microservices-architecture-bff-api-gateway/), una sola solicitud atraviesa decenas de servicios.
 Los ingenieros deben incorporar adecuadamente los "tres pilares de la observabilidad" - registros (Logs), métricas (Metrics) y trazas (Traces) - en el sistema. Utilizar herramientas como OpenTelemetry para crear una base donde se pueda identificar "qué consulta de base de datos en qué servicio está causando latencia" a través del rastreo distribuido es un rol para humanos.
 
 ### 5.2 Errores dependientes del entorno e Ingeniería del Caos
@@ -201,7 +201,7 @@ En la era de la IA, los ingenieros ascienden de ser "mecanógrafos de código" a
 
 ## 7. Conclusión: No rechaces la evolución, surfea la ola
 
-La "era en que la IA escribe código" no es una amenaza para los ingenieros, sino la mayor oportunidad de la historia. Al igual que ocurrió la transición del lenguaje ensamblador a C, o la evolución de la gestión de punteros de memoria a la recolección de basura de [Java](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/), la generación de código por IA es simplemente "una subida en el nivel de abstracción".
+La "era en que la IA escribe código" no es una amenaza para los ingenieros, sino la mayor oportunidad de la historia. Al igual que ocurrió la transición del lenguaje ensamblador a C, o la evolución de la gestión de [punteros](/es/p/c-language-pointers-memory-management-stack-heap/) de memoria a la recolección de basura de [Java](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/), la generación de código por IA es simplemente "una subida en el nivel de abstracción".
 
 Los ingenieros del futuro ya no se preocuparán por cada detalle en las especificaciones de un lenguaje de programación específico o actualizaciones de marcos de trabajo, sino que podrán concentrar sus recursos en resoluciones de problemas de orden superior, más esenciales y más humanos: **"¿Cuáles son los problemas del negocio?", "¿Cómo se deben dividir e integrar los datos?" y "¿Cómo nos recuperamos rápidamente si el sistema se detiene?"**.
 

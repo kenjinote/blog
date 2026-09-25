@@ -17,7 +17,7 @@ tags:
 
 ## 1. Introduction
 
-In the history of mathematics, there is a figure known as the "Father of Algebra". That figure is **[Diophantus](https://kenji.blog/en/p/diophantus/)** (Diophantus of Alexandria), who was active in ancient Alexandria. His major work, *Arithmetica*, had a profound influence on later mathematicians in the Islamic world and mathematicians in Renaissance Europe. In particular, "Fermat's Last Theorem", which [Pierre de Fermat](https://kenji.blog/en/p/fermat/) wrote in the margins of *Arithmetica*, is extremely famous.
+In the history of mathematics, there is a figure known as the "Father of Algebra". That figure is **[Diophantus](https://kenji.blog/en/p/diophantus/)** (Diophantus of Alexandria), who was active in ancient Alexandria. His major work, *Arithmetica*, had a profound influence on later mathematicians in the Islamic world and mathematicians in Renaissance Europe. In particular, "[Fermat's Last Theorem](/en/p/fermats-last-theorem/)", which [Pierre de Fermat](https://kenji.blog/en/p/fermat/) wrote in the margins of *Arithmetica*, is extremely famous.
 
 In this article, we will delve into the life of [Diophantus](https://kenji.blog/en/p/diophantus/), his mathematical achievements, the details of his masterpiece *Arithmetica*, and the "Diophantine equations" that bear his name. Furthermore, we will also unravel the mystery of his "epitaph", from which his lifespan can be deduced.
 
@@ -29,7 +29,7 @@ There are almost no accurate records remaining regarding when [Diophantus](https
 
 ### 2.2 Hellenistic Culture and Alexandria
 
-At the time, Alexandria was the center of Hellenistic culture and learning, boasting a massive library (the Library of Alexandria) and serving as a nexus of knowledge where many scholars gathered. In this city where knowledge from Greece, Egypt, Babylonia, and even India intersected, [Diophantus](https://kenji.blog/en/p/diophantus/) is thought to have had access to a vast mathematical heritage of the past. Unlike the geometric tradition established by great Greek mathematicians like Euclid, Archimedes, and Apollonius, some theories suggest that [Diophantus](https://kenji.blog/en/p/diophantus/) was strongly influenced by the algebraic approach of Babylonia.
+At the time, Alexandria was the center of Hellenistic culture and learning, boasting a massive library (the Library of Alexandria) and serving as a nexus of knowledge where many scholars gathered. In this city where knowledge from Greece, Egypt, Babylonia, and even India intersected, [Diophantus](https://kenji.blog/en/p/diophantus/) is thought to have had access to a vast mathematical heritage of the past. Unlike the geometric tradition established by great Greek mathematicians like [Euclid](/en/p/euclid/), Archimedes, and Apollonius, some theories suggest that [Diophantus](https://kenji.blog/en/p/diophantus/) was strongly influenced by the algebraic approach of Babylonia.
 
 ```mermaid
 timeline
@@ -98,7 +98,7 @@ In the margin next to this problem, [Pierre de Fermat](https://kenji.blog/en/p/f
 
 > "It is impossible to separate a cube into two cubes, or a fourth power into two fourth powers, or in general, any power higher than the second, into two like powers. I have discovered a truly marvelous proof of this, which this margin is too narrow to contain."
 
-This is the famous **[Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/)** (that $x^n + y^n = z^n \ (n \ge 3)$ has no positive integer solutions). This theorem continued to reject the challenges of genius mathematicians around the world for about 350 years after it was proposed, until it was finally proved by Andrew Wiles in 1995. Without [Diophantus](https://kenji.blog/en/p/diophantus/)'s book, this great drama might never have occurred.
+This is the famous **[Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/)** (that $x^n + y^n = z^n \ (n \ge 3)$ has no positive integer solutions). This theorem continued to reject the challenges of genius mathematicians around the world for about 350 years after it was proposed, until it was finally proved by [Andrew Wiles](/en/p/wiles/) in 1995. Without [Diophantus](https://kenji.blog/en/p/diophantus/)'s book, this great drama might never have occurred.
 
 ```mermaid
 graph TD
@@ -179,7 +179,7 @@ In particular, 9th-century mathematicians in Baghdad translated *Arithmetica* in
 
 In the 16th century, as Greek classics were rediscovered in Renaissance Europe, *Arithmetica* was translated into Latin. A bilingual Greek and Latin edition published by [Claude Gaspard Bachet](https://kenji.blog/en/p/bachet/) de Méziriac in 1621 became widely read. It was this Bachet edition of *Arithmetica* that [Fermat](https://kenji.blog/en/p/fermat/) studied carefully, which triggered the opening of a new door in mathematics.
 
-The theory of Diophantine equations was subsequently deeply studied by giants such as [Leonhard Euler](https://kenji.blog/en/p/euler/), Joseph-Louis Lagrange, and Carl Friedrich Gauss. Their research grew into the vast mathematical fields of modern "algebraic number theory" and "algebraic geometry". The 10th of Hilbert's 23 problems was "to find a general algorithm to determine whether a given Diophantine equation is solvable," and in 1970 Yuri Matiyasevich proved that "no such algorithm exists." The name of [Diophantus](https://kenji.blog/en/p/diophantus/) is deeply engraved at the cutting edge of modern mathematics.
+The theory of Diophantine equations was subsequently deeply studied by giants such as [Leonhard Euler](https://kenji.blog/en/p/euler/), [Joseph-Louis Lagrange](/en/p/lagrange/), and [Carl Friedrich Gauss](/en/p/gauss/). Their research grew into the vast mathematical fields of modern "algebraic number theory" and "algebraic geometry". The 10th of Hilbert's 23 problems was "to find a general algorithm to determine whether a given Diophantine equation is solvable," and in 1970 Yuri Matiyasevich proved that "no such algorithm exists." The name of [Diophantus](https://kenji.blog/en/p/diophantus/) is deeply engraved at the cutting edge of modern mathematics.
 
 ## 7. Conclusion
 

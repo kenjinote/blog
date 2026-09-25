@@ -11,7 +11,7 @@ slug: "pigeonhole-principle-hash-collision"
 Konsep yang tidak dapat dihindari saat mempelajari ilmu komputer, keamanan informasi, dan kriptografi adalah **"Prinsip Sarang Merpati (Pigeonhole Principle)"** dan **"Kolisi Hash (Hash Collision)"**.
 Prinsip Sarang Merpati itu sendiri sangat sederhana, ia hanya menyatakan hal yang sangat jelas dan dapat dipahami secara intuitif bahkan oleh anak sekolah dasar. Namun, meskipun tampaknya seperti prinsip matematika yang sederhana, dampaknya pada desain keamanan fungsi hash dan sistem kriptografi yang mendasari masyarakat internet modern sangatlah besar.
 
-Dalam artikel ini, kita akan mulai dari konsep dasar Prinsip Sarang Merpati, mekanisme kolisi hash, dampaknya pada kompleksitas komputasi melalui paradoks ulang tahun, studi kasus kolisi nyata pada algoritma kriptografi masa lalu (seperti SHA-1), hingga penerapannya untuk evaluasi keamanan teknologi kriptografi di masa depan. Semuanya akan dibahas secara detail dengan menyertakan rumus matematika dan diagram.
+Dalam artikel ini, kita akan mulai dari konsep dasar Prinsip Sarang Merpati, mekanisme kolisi hash, dampaknya pada kompleksitas komputasi melalui [paradoks ulang tahun](/id/p/birthday-paradox/), studi kasus kolisi nyata pada algoritma kriptografi masa lalu (seperti SHA-1), hingga penerapannya untuk evaluasi keamanan teknologi kriptografi di masa depan. Semuanya akan dibahas secara detail dengan menyertakan rumus matematika dan diagram.
 
 ## 1. Dasar-dasar Prinsip Sarang Merpati (Pigeonhole Principle)
 
@@ -60,7 +60,7 @@ Sekarang, mari kita terapkan Prinsip Sarang Merpati tadi pada fungsi hash.
 * **Merpati**: Himpunan data input. Karena kombinasi isi file atau teks bisa tak terbatas, maka jumlah elemen $|A|$ secara praktis adalah "tak terhingga".
 * **Sarang**: Himpunan nilai hash. Karena nilai hash memiliki panjang tetap, maka jumlah elemen $|B|$ adalah "terbatas".
 
-Sebagai contoh, output dari SHA-256, yang digunakan dalam teknologi blockchain seperti [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/), adalah 256 bit. Dengan demikian, jenis nilai hash yang mungkin dihasilkan ada sebanyak $2^{256}$ (sekitar $1.15 \times 10^{77}$). Meskipun ini adalah angka yang sangat besar dan mendekati total jumlah atom di alam semesta yang dapat diamati, pada akhirnya angka ini adalah **terbatas**.
+Sebagai contoh, output dari SHA-256, yang digunakan dalam teknologi [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/) seperti [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/), adalah 256 bit. Dengan demikian, jenis nilai hash yang mungkin dihasilkan ada sebanyak $2^{256}$ (sekitar $1.15 \times 10^{77}$). Meskipun ini adalah angka yang sangat besar dan mendekati total jumlah atom di alam semesta yang dapat diamati, pada akhirnya angka ini adalah **terbatas**.
 
 Di sisi lain, variasi dokumen atau file gambar yang dapat dianggap sebagai data input jumlahnya **tak terbatas**.
 Oleh karena itu, karena pertidaksamaan "Total data input" > "Total nilai hash" selalu benar, berdasarkan Prinsip Sarang Merpati, **pasti akan ada dua data input berbeda yang menghasilkan nilai hash yang sama**. Fenomena inilah yang disebut dengan **"Kolisi Hash (Hash Collision)"**.
@@ -103,7 +103,7 @@ Pada diagram di atas, "Data B" dan "Data C" yang dimasukkan dialokasikan ke nila
 
 ## 3. Serangan Ulang Tahun (Birthday Attack) dan Ancaman Peluang Kolisi
 
-Dari Prinsip Sarang Merpati, jelas bahwa kolisi hash secara teoretis tidak dapat dihindari, namun muncul pertanyaan praktis: "Lalu, seberapa sulitkah untuk benar-benar menemukan kolisi tersebut?" Di sinilah muncul **"Paradoks Ulang Tahun (Birthday Paradox)"** dan **"Serangan Ulang Tahun (Birthday Attack)"** yang memanfaatkan sifat matematisnya.
+Dari Prinsip Sarang Merpati, jelas bahwa kolisi hash secara teoretis tidak dapat dihindari, namun muncul pertanyaan praktis: "Lalu, seberapa sulitkah untuk benar-benar menemukan kolisi tersebut?" Di sinilah muncul **"[Paradoks Ulang Tahun](/id/p/birthday-paradox/) (Birthday Paradox)"** dan **"Serangan Ulang Tahun (Birthday Attack)"** yang memanfaatkan sifat matematisnya.
 
 ### Apa itu Paradoks Ulang Tahun?
 
@@ -192,7 +192,7 @@ Dengan memperpanjang jumlah bit, jumlah komputasi yang dibutuhkan untuk menyeran
 | SHA-512 | 512 bit | $2^{256}$ | Sangat aman |
 | SHA-3 (Keccak) | 256/512 bit | $2^{128} / 2^{256}$ | Sangat aman (Strukturnya berbeda) |
 
-Dalam memilih teknologi kriptografi, penting untuk mengantisipasi peningkatan performa komputer penyerang (seperti Hukum Moore) dan munculnya komputer kuantum di masa depan, sehingga algoritma dengan **"Margin Keamanan"** yang cukup memadai mutlak dipilih.
+Dalam memilih teknologi kriptografi, penting untuk mengantisipasi peningkatan performa komputer penyerang (seperti [Hukum Moore](/id/p/business-moores-law/)) dan munculnya komputer kuantum di masa depan, sehingga algoritma dengan **"Margin Keamanan"** yang cukup memadai mutlak dipilih.
 
 ### Perlindungan Kata Sandi Melalui Salt dan Stretching
 
@@ -223,8 +223,8 @@ Dengan cara ini, biaya yang harus dikeluarkan penyerang untuk melakukan komputas
 Pada artikel kali ini, kami telah menjelaskan bagaimana teorema matematika yang sederhana dan intuitif yakni **"Prinsip Sarang Merpati"** menyebabkan fenomena **"Kolisi Hash"** yang tak terhindarkan, serta dampaknya terhadap perancangan keamanan pada teknologi kriptografi.
 
 * **Keniscayaan Prinsip Sarang Merpati**: Fungsi hash dengan input tak terbatas dan output terbatas pasti secara matematis memiliki kolisi.
-* **Ancaman Serangan Ulang Tahun**: Karena paradoks ulang tahun, kolisi untuk ruang nilai hash $N$ dapat ditemukan hanya dalam jumlah komputasi sekitar $\sqrt{N}$ kali.
+* **Ancaman Serangan Ulang Tahun**: Karena [paradoks ulang tahun](/id/p/birthday-paradox/), kolisi untuk ruang nilai hash $N$ dapat ditemukan hanya dalam jumlah komputasi sekitar $\sqrt{N}$ kali.
 * **Filosofi Desain Kriptografi Modern**: Karena mengurangi peluang kolisi menjadi nol adalah hal yang mustahil, kita membuat penemuan kolisi tidak memungkinkan secara komputasi dengan membuat panjang output cukup besar.
 
-Pemahaman yang mendalam tentang prinsip-prinsip ini berkaitan langsung dengan pemahaman tentang fondasi sistem keamanan modern seperti blockchain, tanda tangan digital, dan manajemen kata sandi.
+Pemahaman yang mendalam tentang prinsip-prinsip ini berkaitan langsung dengan pemahaman tentang fondasi sistem keamanan modern seperti [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/), tanda tangan digital, dan manajemen kata sandi.
 Teknologi kriptografi yang pada pandangan pertama mungkin terlihat rumit dan sulit dimengerti ternyata menyembunyikan probabilitas dan prinsip yang sangat dekat dengan kita, seperti "Merpati dan Sarangnya" atau "Ulang Tahun". Itulah hal yang paling dalam dan menarik dari ilmu komputer.

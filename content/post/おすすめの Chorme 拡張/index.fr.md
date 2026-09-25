@@ -58,7 +58,7 @@ S'il y a du texte sélectionné sur la page, il est copié directement dans la z
 
 ![img_1.png](img_1.webp)
 
-Une extension qui ajoute des fonctionnalités utiles pour le développement Salesforce.
-Je pense que ce n'est pas nécessaire pour ceux qui n'utilisent pas Salesforce.
+Une extension qui ajoute des fonctionnalités utiles pour le développement [Salesforce](/fr/p/salesforcechatter%E5%85%A8%E6%B6%88%E3%81%97commande/).
+Je pense que ce n'est pas nécessaire pour ceux qui n'utilisent pas [Salesforce](/fr/p/salesforcechatter%E5%85%A8%E6%B6%88%E3%81%97commande/).
 
 - [Salesforce DevTools](https://chrome.google.com/webstore/detail/salesforce-devtools/ehgmhinnhggigkogkbhnbodhbfjgncjf)

@@ -206,4 +206,4 @@ A complexidade de tempo desse algoritmo é $O(n \cdot 2^n)$, que é executado co
 O [Princípio da Inclusão-Exclusão](https://kenji.blog/pt/p/inclusion-exclusion-principle/) é uma fórmula matemática mágica que divide as sobreposições de conjuntos aparentemente complexas em uma repetição simples e mecânica de adição e subtração.
 
 Sua gama de aplicações é excepcionalmente ampla, abrangendo desde problemas básicos de probabilidade a programação competitiva avançada e o cálculo da função totiente de Euler relacionada à criptografia.
-Dominar essa técnica poderosa melhorará drasticamente suas habilidades de resolução de problemas em matemática e algoritmos. Não deixe de tentar aplicá-lo a vários problemas e experimentar o seu poder.
+Dominar essa técnica poderosa melhorará drasticamente suas habilidades de resolução de problemas em [matemática e algoritmos](/pt/p/reading-hard-tech-books/). Não deixe de tentar aplicá-lo a vários problemas e experimentar o seu poder.

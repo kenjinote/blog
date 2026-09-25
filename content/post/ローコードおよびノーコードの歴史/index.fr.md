@@ -74,8 +74,8 @@ Ces dernières années, les outils low-code / no-code basés sur le cloud ont é
 * **Power Platform (Microsoft)**
   Une plateforme intégrée de développement d'applications d'entreprise et d'automatisation comprenant "Power Apps", "Power [Automate](https://kenji.blog/fr/p/automata-formal-language-theory/)", etc. Les processus métiers des entreprises peuvent être construits visuellement par glisser-déposer.
 
-* **Salesforce Lightning Platform**
-  La base de développement d'applications fournie par Salesforce, un CRM. Les applications métiers peuvent être créées via une interface graphique, et l'intégration avec d'autres services Salesforce est facile.
+* **[Salesforce](/fr/p/salesforcechatter%E5%85%A8%E6%B6%88%E3%81%97commande/) Lightning Platform**
+  La base de développement d'applications fournie par [Salesforce](/fr/p/salesforcechatter%E5%85%A8%E6%B6%88%E3%81%97commande/), un CRM. Les applications métiers peuvent être créées via une interface graphique, et l'intégration avec d'autres services [Salesforce](/fr/p/salesforcechatter%E5%85%A8%E6%B6%88%E3%81%97commande/) est facile.
 
 * **Zapier / IFTTT**
   Des outils d'automatisation qui permettent de créer des connexions entre plusieurs services cloud sans coder. Par exemple, des flux de travail comme "Notifier Slack lors d'une saisie dans Google Forms" peuvent être facilement mis en place.

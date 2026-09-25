@@ -58,7 +58,7 @@ description: 'نقدم إضافات المتصفح الموصى بها التي 
 
 ![img_1.png](img_1.webp)
 
-إضافة تضيف ميزات مفيدة لتطوير Salesforce.
-أعتقد أن هذا غير ضروري لأولئك الذين لا يستخدمون Salesforce.
+إضافة تضيف ميزات مفيدة لتطوير [Salesforce](/ar/p/salesforce%D8%AB%D8%B1%D8%AB%D8%B1%D8%A9%E5%85%A8%E6%B6%88%E3%81%97%D8%A3%D9%85%D8%B1/).
+أعتقد أن هذا غير ضروري لأولئك الذين لا يستخدمون [Salesforce](/ar/p/salesforce%D8%AB%D8%B1%D8%AB%D8%B1%D8%A9%E5%85%A8%E6%B6%88%E3%81%97%D8%A3%D9%85%D8%B1/).
 
 - [Salesforce DevTools](https://chrome.google.com/webstore/detail/salesforce-devtools/ehgmhinnhggigkogkbhnbodhbfjgncjf)

@@ -64,7 +64,7 @@ O mmap permite mapear o conteúdo de um arquivo diretamente para o espaço de me
 * **Zero-copy**: Os dados são lidos diretamente do disco para o cache de página do kernel, sem causar cópias extras para o espaço do usuário.
 * **Carregamento sob Demanda (Page Fault)**: No exato momento em que a CPU acessa aquele endereço de memória, ocorre uma falha de página, e apenas o pedaço necessário (geralmente 4KB) é carregado na memória física.
 
-No ambiente Windows, usa-se as APIs Win32 `CreateFileMapping` e `MapViewOfFile` em vez do `mmap` POSIX.
+No ambiente Windows, usa-se as APIs [Win32](/pt/p/modern-cpp-win32-api-safe-handling/) `CreateFileMapping` e `MapViewOfFile` em vez do `mmap` POSIX.
 
 ```mermaid
 sequenceDiagram
@@ -81,9 +81,9 @@ sequenceDiagram
 
 ### 3.2 Estrutura Binária do Formato GGUF
 
-O **GGUF (GPT-Generated Unified Format)**, convertido a partir de formatos como `.safetensors` do Hugging Face, é o formato definitivo para inferência. Ele possui o seguinte layout binário estrito:
+O **[GGUF](/pt/p/llama-cpp-quantization-gguf/) (GPT-Generated Unified Format)**, convertido a partir de formatos como `.safetensors` do Hugging Face, é o formato definitivo para inferência. Ele possui o seguinte layout binário estrito:
 
-1. **Magic Bytes**: `0x46554747` (GGUF).
+1. **Magic Bytes**: `0x46554747` ([GGUF](/pt/p/llama-cpp-quantization-gguf/)).
 2. **Version**: Número da versão do formato.
 3. **Tensor Count & Metadata Count**: Número de tensores e número de pares chave-valor de metadados.
 4. **Metadata ([Key-Value](https://kenji.blog/pt/p/nosql-database-selection-kvs-document-graph-wide-column/) Pairs)**: Chaves com prefixo de comprimento de string e valores tipados.

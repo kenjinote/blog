@@ -304,13 +304,13 @@ $$ R = e^{-\frac{t}{S}} $$
 自动计算出这个最佳的复习时机（通过 SuperMemo 2 等算法）并以抽认卡形式展示给你的软件就是“Anki”。
 
 作为产生技术博客灵感的强大方法， **将 Obsidian 的 Permanent Notes 内容转换为 Anki 的抽认卡** 是一个极好的选择。
-例如，将“CAP 定理的三个要素是什么？”“[B-Tree](https://kenji.blog/zh-cn/p/b-tree-database-index-theory/) 索引具备 O(log N) 搜索性能的原因是什么？”这类涉及技术根基的问题录入 Anki，并作为日常习惯进行复习。当这些知识作为长期记忆在你的大脑中建立索引后，在洗澡或散步时，信息会在潜意识下相互碰撞，产生“啊，我好像可以写一篇关于分布式系统共识算法的文章”的灵感（尤里卡时刻）。
+例如，将“CAP 定理的三个要素是什么？”“[B-Tree](https://kenji.blog/zh-cn/p/b-tree-database-index-theory/) 索引具备 O(log N) 搜索性能的原因是什么？”这类涉及技术根基的问题录入 Anki，并作为日常习惯进行复习。当这些知识作为长期记忆在你的大脑中建立索引后，在洗澡或散步时，信息会在潜意识下相互碰撞，产生“啊，我好像可以写一篇关于[分布式系统](/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)[共识算法](/zh-cn/p/byzantine-generals-problem-consensus/)的文章”的灵感（尤里卡时刻）。
 
 ## 7. 组合创造力 (Combinatorial Creativity)
 
 通过之前的管道，我们实现了“多样化信息的输入”、“通过 Zettelkasten 进行整理和 AI 搜索”、“通过 Anki 巩固长期记忆”。最后一步就是将这些要素结合起来，产生完全新的技术文章创意的“组合创造力（Combinatorial Creativity）”。
 
-创新和创造力被认为并非凭空产生，而是通过对现有元素的全新组合而诞生的。史蒂夫·乔布斯（Steve Jobs）的一句名言十分经典：“Creativity is just connecting things.”（创造力仅仅是把事物联系起来）。
+创新和创造力被认为并非凭空产生，而是通过对现有元素的全新组合而诞生的。[史蒂夫·乔布斯](/zh-cn/p/biography-steve-jobs/)（Steve Jobs）的一句名言十分经典：“Creativity is just connecting things.”（创造力仅仅是把事物联系起来）。
 
 在技术博客中，组合的模式可以考虑如下矩阵：
 

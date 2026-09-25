@@ -135,7 +135,7 @@ $$
 E[\bar X_n]=\mu,\qquad \operatorname{Var}(\bar X_n)=\frac{\sigma^2}{n},\qquad \operatorname{SE}(\bar X_n)=\frac{\sigma}{\sqrt n}.
 $$
 
-Melipatgandakan ukuran sampel menjadi empat kali lipat akan mengurangi setengah kesalahan standar. Hukum bilangan besar menyatakan bahwa rata-rata sampel mendekati $\mu$, dan [Teorema Limit Pusat](https://kenji.blog/id/p/central-limit-theorem/) menggambarkan bentuk distribusi dengan mengalikan fluktuasi di sekitarnya dengan $\sqrt{n}$.
+Melipatgandakan ukuran sampel menjadi empat kali lipat akan mengurangi setengah kesalahan standar. [Hukum bilangan besar](/id/p/law-of-large-numbers/) menyatakan bahwa rata-rata sampel mendekati $\mu$, dan [Teorema Limit Pusat](https://kenji.blog/id/p/central-limit-theorem/) menggambarkan bentuk distribusi dengan mengalikan fluktuasi di sekitarnya dengan $\sqrt{n}$.
 
 ### Lampiran 4: Bukti Tambahan Menggunakan Fungsi Karakteristik
 
@@ -145,7 +145,7 @@ $$
 \phi_Y(t)=E[e^{itY}]=1-\frac{t^2}{2}+o(t^2)\quad(t\to0).
 $$
 
-Dari independensi, diperoleh persamaan berikut. Karena batasnya adalah fungsi karakteristik dari distribusi normal standar, konvergensi dalam distribusi mengikuti dari teorema kontinuitas Lévy. Fungsi karakteristik dan fungsi pembangkit momen adalah hal yang berbeda, dan keberadaan fungsi pembangkit momen tidak diperlukan untuk bukti ini.
+Dari independensi, diperoleh persamaan berikut. Karena batasnya adalah fungsi karakteristik dari distribusi normal standar, konvergensi dalam distribusi mengikuti dari teorema kontinuitas Lévy. Fungsi karakteristik dan [fungsi pembangkit](/id/p/generating-functions/) momen adalah hal yang berbeda, dan keberadaan [fungsi pembangkit](/id/p/generating-functions/) momen tidak diperlukan untuk bukti ini.
 
 $$
 \phi_{Z_n}(t)=\left[\phi_Y\!\left(\frac{t}{\sqrt n}\right)\right]^n

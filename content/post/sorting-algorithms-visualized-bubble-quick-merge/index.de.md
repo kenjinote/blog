@@ -13,14 +13,14 @@ tags: ["algorithms", "sorting", "quick-sort", "merge-sort", "bubble-sort"]
 
 コンピュータサイエンスにおいて、データを特定の順序（昇順または降順）に並べ替える「ソート（整列）」は、最も基本的かつ重要な操作の一つです。検索の高速化、データのグループ化、重複の検出など、あらゆるデータ処理の前段階としてソートアルゴリズムが活躍します。
 
-本記事では、初心者にもわかりやすいシンプルなアルゴリズムから、実務で活躍する高速なアルゴリズムまで、代表的なソートアルゴリズムを網羅的に解説します。各アルゴリズムの仕組みを ** Mermaid ** による図解で視覚的に理解し、Pythonコードで実際の実装を確認し、[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)などのパフォーマンスを比較していきます。さらに、アルゴリズムの動作を完全に把握するために、要素数50の配列を用いた完全な実行トレースも収録しています。これにより、アルゴリズムの細かな挙動を手にとるように理解できるでしょう。
+本記事では、初心者にもわかりやすいシンプルなアルゴリズムから、実務で活躍する高速なアルゴリズムまで、代表的なソートアルゴリズムを網羅的に解説します。各アルゴリズムの仕組みを ** Mermaid ** による図解で視覚的に理解し、Pythonコードで実際の実装を確認し、[時間計算量](https://kenji.blog/de/p/time-space-complexity-big-o-notation-examples/)などのパフォーマンスを比較していきます。さらに、アルゴリズムの動作を完全に把握するために、要素数50の配列を用いた完全な実行トレースも収録しています。これにより、アルゴリズムの細かな挙動を手にとるように理解できるでしょう。
 
 ## アルゴリズムの評価指標
 
 各アルゴリズムを評価する際には、以下の指標が重要になります。
 
 - ** 時間計算量 (Time Complexity) ** : データの要素数 $n$ に対して、処理時間がどのように増加するかを表します。 $\text{O}(n^2)$ や $\text{O}(n \log n)$ などのオーダー記法（Big-O notation）が使われます。数式内でテキストを扱う場合は $\text{best}$ のように記述します。
-- ** [空間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/) (Space Complexity) ** : 実行時にどれだけの追加メモリを必要とするかを表します。インプレース（In-place）アルゴリズムは追加メモリをほとんど必要としません。
+- ** [空間計算量](https://kenji.blog/de/p/time-space-complexity-big-o-notation-examples/) (Space Complexity) ** : 実行時にどれだけの追加メモリを必要とするかを表します。インプレース（In-place）アルゴリズムは追加メモリをほとんど必要としません。
 - ** 安定性 (Stability) ** : 同じ値を持つ要素の相対的な順序が、ソート前後で保たれるかどうかを示します。安定なソートでは、元の順序が維持されます。
 
 ---
@@ -347,10 +347,10 @@ def bubble_sort(arr):
 
 ### 計算量と特性
 
-- ** [時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)（最良） ** : $\text{O}(n)$
+- ** [時間計算量](https://kenji.blog/de/p/time-space-complexity-big-o-notation-examples/)（最良） ** : $\text{O}(n)$
 - ** 時間計算量（平均） ** : $\text{O}(n^2)$
 - ** 時間計算量（最悪） ** : $\text{O}(n^2)$
-- ** [空間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/) ** : $\text{O}(1)$
+- ** [空間計算量](https://kenji.blog/de/p/time-space-complexity-big-o-notation-examples/) ** : $\text{O}(1)$
 - ** 安定性 ** : 安定
 
 ### 図解 (Mermaid)
@@ -686,10 +686,10 @@ def insertion_sort(arr):
 
 ### 計算量と特性
 
-- ** [時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)（最良） ** : $\text{O}(n \log n)$
+- ** [時間計算量](https://kenji.blog/de/p/time-space-complexity-big-o-notation-examples/)（最良） ** : $\text{O}(n \log n)$
 - ** 時間計算量（平均） ** : $\text{O}(n \log n)$
 - ** 時間計算量（最悪） ** : $\text{O}(n^2)$
-- ** [空間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/) ** : $\text{O}(\log n)$
+- ** [空間計算量](https://kenji.blog/de/p/time-space-complexity-big-o-notation-examples/) ** : $\text{O}(\log n)$
 - ** 安定性 ** : 不安定
 
 ### 図解 (Mermaid)
@@ -754,7 +754,7 @@ def quick_sort(arr):
 
 クイックソートのパフォーマンスは、ピボットの選び方に大きく依存します。理想的には、常に配列の中央値（メジアン）をピボットとして選択できれば、配列は毎回正確に半分に分割され、再帰の深さは $\text{O}(\log n)$ となり、完璧な $\text{O}(n \log n)$ の計算量が保証されます。しかし、真の中央値を厳密に見つけ出すには追加の計算コストがかかるため、実用上は定数時間で選択できる近似手法が採用されます。
 
-もし配列がすでにソートされている状態で、常に先頭の要素をピボットとして選択した場合、分割された配列の片方は要素数が0、もう片方は $n-1$ となり、再帰の深さが $n$ に達してしまいます。これにより、[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)は最悪の $\text{O}(n^2)$ となり、場合によっては[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)オーバーフローを引き起こす危険性もあります。
+もし配列がすでにソートされている状態で、常に先頭の要素をピボットとして選択した場合、分割された配列の片方は要素数が0、もう片方は $n-1$ となり、再帰の深さが $n$ に達してしまいます。これにより、[時間計算量](https://kenji.blog/de/p/time-space-complexity-big-o-notation-examples/)は最悪の $\text{O}(n^2)$ となり、場合によっては[スタック](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)オーバーフローを引き起こす危険性もあります。
 
 もし配列がすでにソートされている状態で、常に先頭の要素をピボットとして選択した場合、分割された配列の片方は要素数が0、もう片方は $n-1$ となり、再帰の深さが $n$ に達してしまいます。これにより、時間計算量は最悪の $\text{O}(n^2)$ となり、場合によってはスタックオーバーフローを引き起こす危険性もあります。
 
@@ -783,7 +783,7 @@ def quick_sort(arr):
 - ** 時間計算量（最良） ** : $\text{O}(n \log n)$
 - ** 時間計算量（平均） ** : $\text{O}(n \log n)$
 - ** 時間計算量（最悪） ** : $\text{O}(n \log n)$
-- ** [空間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/) ** : $\text{O}(n)$
+- ** [空間計算量](https://kenji.blog/de/p/time-space-complexity-big-o-notation-examples/) ** : $\text{O}(n)$
 - ** 安定性 ** : 安定
 
 ### 図解 (Mermaid)
@@ -883,8 +883,8 @@ def merge_sort(arr):
 - データ量が非常に少ない場合や、ほぼソート済みのデータには ** 挿入ソート ** が効果的です。
 - 一般的な用途で最高速を求める場合は ** クイックソート ** が最適です。
 - 安定性が必要な場合や、最悪計算量を保証したい場合は ** マージソート ** が選ばれます。
-- メモリ制約が厳しく、インプレースで安定した性能を出したい場合は ** [ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ソート ** が適しています。
+- メモリ制約が厳しく、インプレースで安定した性能を出したい場合は ** [ヒープ](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)ソート ** が適しています。
 
-近代的な[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)（Python, Java, [Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)など）の標準ライブラリでは、これらのアルゴリズムの長所を組み合わせたハイブリッド手法（TimSortやIntroSortなど）が採用されており、開発者が自分でソートアルゴリズムをゼロから実装する機会は減っています。しかし、その内部でどのようなトレードオフが考慮されているかを理解することは、よりパフォーマンスの高い堅牢なソフトウェアを設計するための重要な基盤となります。
+近代的な[プログラミング言語](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/)（Python, Java, [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/)など）の標準ライブラリでは、これらのアルゴリズムの長所を組み合わせたハイブリッド手法（TimSortやIntroSortなど）が採用されており、開発者が自分でソートアルゴリズムをゼロから実装する機会は減っています。しかし、その内部でどのようなトレードオフが考慮されているかを理解することは、よりパフォーマンスの高い堅牢なソフトウェアを設計するための重要な基盤となります。
 
 この記事が、あなたのアルゴリズム学習と実務開発の助けになることを願っています。

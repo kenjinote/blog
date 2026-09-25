@@ -135,7 +135,7 @@ $$
 E[\bar X_n]=\mu,\qquad \operatorname{Var}(\bar X_n)=\frac{\sigma^2}{n},\qquad \operatorname{SE}(\bar X_n)=\frac{\sigma}{\sqrt n}.
 $$
 
-표본 수를 4배로 늘리면 표준오차는 절반이 됩니다. 대수의 법칙은 표본평균이 $\mu$ 에 가까워짐을 말하고, 중심극한정리는 그 주위의 변동을 $\sqrt{n}$ 배 한 분포의 형태를 말합니다.
+표본 수를 4배로 늘리면 표준오차는 절반이 됩니다. [대수의 법칙](/ko/p/law-of-large-numbers/)은 표본평균이 $\mu$ 에 가까워짐을 말하고, 중심극한정리는 그 주위의 변동을 $\sqrt{n}$ 배 한 분포의 형태를 말합니다.
 
 ### 부록 4: 특성함수에 의한 증명 보충
 

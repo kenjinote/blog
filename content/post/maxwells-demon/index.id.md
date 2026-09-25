@@ -166,7 +166,7 @@ $$
 \Delta S_{total} = \Delta S_{gas} + \Delta S_{memory\_erasure} \ge 0
 $$
 
-Semakin pintar iblis tersebut bertindak dan mengurangi ketidakteraturan di dalam kotak, semakin banyak ketidakteraturan bernama informasi menumpuk di otak iblis. Lalu, pada saat ia mencoba mengatur (menghapus) isi pikirannya, ketidakteraturan itu akan tersebar ke alam semesta dalam bentuk panas.
+Semakin pintar iblis tersebut bertindak dan mengurangi ketidakteraturan di dalam kotak, semakin banyak ketidakteraturan bernama informasi menumpuk di [otak iblis](/id/p/biography-john-von-neumann/). Lalu, pada saat ia mencoba mengatur (menghapus) isi pikirannya, ketidakteraturan itu akan tersebar ke alam semesta dalam bentuk panas.
 
 ```mermaid
 graph LR

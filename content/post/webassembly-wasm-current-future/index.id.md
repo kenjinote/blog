@@ -93,7 +93,7 @@ Struktur sederhana ini mempercepat proses dekode dan validasi, sehingga kompilas
 
 ## 2.3 Model Memori (Memori Linear)
 
-Di bahasa C dan [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), operasi memori menggunakan pointer sangat sering dilakukan. Untuk mewujudkan hal ini, WebAssembly mengadopsi konsep **Memori Linear (Linear Memory)**.
+Di bahasa C dan [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), operasi memori menggunakan [pointer](/id/p/c-language-pointers-memory-management-stack-heap/) sangat sering dilakukan. Untuk mewujudkan hal ini, WebAssembly mengadopsi konsep **Memori Linear (Linear Memory)**.
 
 Memori linear adalah susunan byte berurutan yang dapat diakses oleh instance WebAssembly. Dari JavaScript, ini terlihat sebagai `ArrayBuffer` atau `SharedArrayBuffer`. [Pointer](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/) dalam Wasm hanyalah indeks (nilai integer) dari array ini.
 

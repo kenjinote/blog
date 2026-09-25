@@ -10,7 +10,7 @@ categories: ["pc-gadgets"]
 description: 'We introduce a terminal command to prevent unnecessary ''.DS_Store'' files from being automatically generated on network drives, etc. in a macOS environment. Procedures to revert to original settings and restart Finder are also summarized.'
 ---
 The command to prevent the automatic generation of .DS_Store on macOS is as follows.
-Please execute it in the terminal.
+Please execute it in the [terminal](/en/p/terminal-efficiency-powershell-bash-shortcuts/).
 ```bash
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 ```

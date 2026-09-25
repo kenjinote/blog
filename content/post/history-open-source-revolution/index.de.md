@@ -146,7 +146,7 @@ Heute erstellt kaum noch ein Entwickler einen neuen Webservice oder eine neue An
 
 ## 7. Der moderne Basar: Unternehmenseinstieg und die Bildung von Ökosystemen
 
-Selbst Microsoft, das Open Source einst als "Krebsgeschwür" bezeichnete, hat GitHub übernommen und ist heute einer der größten Beitragsleister im Open-Source-Bereich. Riesige Tech-Konzerne wie Google, Meta (Facebook) und Amazon verfolgen die Strategie, ihre grundlegenden Technologien (Kubernetes, React, PyTorch etc.) als Open Source freizugeben und so die De-facto-Standards der Branche zu dominieren.
+Selbst Microsoft, das Open Source einst als "Krebsgeschwür" bezeichnete, hat GitHub übernommen und ist heute einer der größten Beitragsleister im Open-Source-Bereich. Riesige Tech-Konzerne wie Google, Meta (Facebook) und Amazon verfolgen die Strategie, ihre grundlegenden Technologien ([Kubernetes](/de/p/kubernetes-k8s-architecture-pod-service-ingress/), React, PyTorch etc.) als Open Source freizugeben und so die De-facto-Standards der Branche zu dominieren.
 
 Der moderne Basar ist kein Ort mehr nur für reine Hobby-Hacker. Er hat sich zu einem riesigen und komplexen Ökosystem entwickelt, in dem von Unternehmen bezahlte Profi-Ingenieure Vollzeit beitragen und mächtige Stiftungen (wie die Linux Foundation oder die Apache Software Foundation) die Leitung (Governance) und die Finanzierung von Projekten übernehmen.
 

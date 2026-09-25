@@ -315,7 +315,7 @@ Tersedia ratusan jenis tema (config), dan juga memungkinkan untuk membuatnya sen
 
 # 7. Teori Evolusi Prompt 2: Fusi Arsitektur WSL2 dan Starship
 
-WSL2 (Windows Subsystem for Linux 2), yang dapat menjalankan kernel Linux asli di Windows, sangat diperlukan untuk pengembangan web modern atau pengembangan cloud-native. Untuk mengustomisasi prompt shell (Bash atau Zsh) di dalam WSL, "**Starship**" adalah solusi terbaik.
+WSL2 ([Windows Subsystem for Linux](/id/p/wsl2-ultimate-development-setup-guide/) 2), yang dapat menjalankan kernel Linux asli di Windows, sangat diperlukan untuk pengembangan web modern atau pengembangan cloud-native. Untuk mengustomisasi prompt shell (Bash atau Zsh) di dalam WSL, "**Starship**" adalah solusi terbaik.
 
 Starship adalah prompt lintas shell yang ditulis dalam bahasa [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), yang sangat cepat dan sangat dapat dikustomisasi. Kelebihannya adalah dapat mereproduksi prompt yang sama persis di shell apa pun seperti Bash, Zsh, atau Fish hanya dengan menulis satu file konfigurasi (TOML).
 
@@ -411,7 +411,7 @@ Makna dan waktu yang dibutuhkan masing-masing variabel adalah sebagai berikut:
 - $ T_{hw\_input} $: Keterlambatan perangkat keras (sekitar 1-5 ms) dari sakelar mekanis keyboard yang menyala, melalui poling pengontrol USB, hingga sinyal interupsi dikirim.
 - $ T_{os} $: Keterlambatan pemrosesan antrean pesan oleh lapisan driver HID (Human Interface Device) sistem operasi (sekitar 1-2 ms).
 - $ T_{pty} $: Keterlambatan konversi penyandian karakter (seperti UTF-8 ke UTF-16) dan buffering oleh ConPTY (API Konsol Pseudoterminal) (sekitar 2-10 ms).
-- $ T_{app} $: Waktu pemrosesan penafsiran perintah di shell (PowerShell/Bash) dan penentuan keluaran layar. Waktu pemrosesan seperti pengambilan status Git oleh Oh My Posh atau Starship juga termasuk di sini (sekitar 10-50 ms).
+- $ T_{app} $: Waktu pemrosesan penafsiran perintah di shell ([PowerShell/Bash](/id/p/terminal-efficiency-powershell-bash-shortcuts/)) dan penentuan keluaran layar. Waktu pemrosesan seperti pengambilan status Git oleh Oh My Posh atau Starship juga termasuk di sini (sekitar 10-50 ms).
 - $ T_{render} $: Keterlambatan rendering (sekitar 2-8 ms) di mana Windows Terminal (DirectWrite/DirectX) melakukan rasterisasi karakter glyph sebagai tekstur, mentransfernya ke memori GPU, dan membalikkan rantai swap.
 - $ T_{display} $: Keterlambatan layar dari keluaran sinyal buffer frame GPU ke monitor, di mana molekul kristal cair bereaksi secara fisik mengubah kondisi pencahayaan (waktu respons GtG dll. sekitar 5-20 ms).
 

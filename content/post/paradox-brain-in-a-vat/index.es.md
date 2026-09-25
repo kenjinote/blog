@@ -18,7 +18,7 @@ Esta pregunta es el misterio definitivo que ha fascinado el intelecto humano, de
 
 ## Capítulo 1: El impacto del experimento mental "El cerebro en una cubeta"
 
-"El cerebro en una cubeta" (Brain in a vat) es un experimento mental propuesto por el filósofo Hilary Putnam en 1981. Sin embargo, la pregunta subyacente de "hasta qué punto podemos confiar en nuestra percepción" se remonta al argumento del "genio maligno" (o dios engañador) de René Descartes en el siglo XVII.
+"El cerebro en una cubeta" (Brain in a vat) es un experimento mental propuesto por el filósofo Hilary Putnam en 1981. Sin embargo, la pregunta subyacente de "hasta qué punto podemos confiar en nuestra percepción" se remonta al argumento del "genio maligno" (o dios engañador) de [René Descartes](/es/p/descartes/) en el siglo XVII.
 
 ### 1-1. ¿Qué es el cerebro en una cubeta?
 

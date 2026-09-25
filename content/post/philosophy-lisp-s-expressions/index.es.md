@@ -18,7 +18,7 @@ En este artículo, profundizaremos en por qué Lisp es amado con tanto fervor y 
 
 En la década de 1950, las computadoras eran percibidas principalmente como máquinas gigantes para cálculos numéricos. Mientras FORTRAN nacía para el cálculo científico y técnico, y COBOL se diseñaba para uso comercial, John McCarthy tenía una perspectiva completamente diferente. Él buscaba una forma de "Procesamiento Simbólico (Symbolic Processing)", es decir, cómo expresar y manipular el pensamiento humano y la lógica misma en una computadora.
 
-Inspirado en el "Cálculo Lambda (Lambda Calculus)" de Alonzo Church, McCarthy construyó la base teórica de un lenguaje que podía describir funciones matemáticas puras. El resultado fue Lisp, que expresa la estructura de los programas utilizando una estructura de datos extremadamente simple llamada lista (List).
+Inspirado en el "Cálculo Lambda ([Lambda Calculus](/es/p/lambda-calculus-functional-programming/))" de Alonzo Church, McCarthy construyó la base teórica de un lenguaje que podía describir funciones matemáticas puras. El resultado fue Lisp, que expresa la estructura de los programas utilizando una estructura de datos extremadamente simple llamada lista (List).
 
 Desde su creación, Lisp estableció su posición como el lenguaje estándar en la investigación de Inteligencia Artificial (IA). Esto se debió a que, para modelar el proceso de pensamiento humano, era indispensable contar con una estructura de datos flexible (listas) que pudiera cambiar y crecer dinámicamente durante la ejecución del programa, en lugar de una estructura de datos estática definida de antemano.
 

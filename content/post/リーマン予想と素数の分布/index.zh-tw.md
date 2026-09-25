@@ -15,9 +15,9 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 最逼近這個質數之謎的，是1859年由德國數學家[波恩哈德·黎曼](https://kenji.blog/zh-tw/p/riemann/)（Bernhard Riemann）所提出的 **「黎曼猜想（[Riemann](https://kenji.blog/zh-tw/p/riemann/) Hypothesis）」** 。黎曼猜想是現代數學中最重要且未解決的難題之一，被克雷數學研究所列為千禧年大獎難題之一，並懸賞了100萬美元的獎金。
 
-乍看之下，關於質數分佈的純數學難題，似乎與我們的日常生活毫無關聯。然而，支撐現代社會基礎設施的網際網路安全，特別是 **[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)加密和橢圓曲線密碼學（ECC）等現代密碼技術** ，都深深依賴於巨大質數的性質。
+乍看之下，關於質數分佈的純數學難題，似乎與我們的日常生活毫無關聯。然而，支撐現代社會基礎設施的網際網路安全，特別是 **[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)加密和[橢圓曲線密碼學](/zh-tw/p/elliptic-curve-cryptography-math-cpp/)（[ECC](/zh-tw/p/elliptic-curve-cryptography-math-cpp/)）等現代密碼技術** ，都深深依賴於巨大質數的性質。
 
-本篇文章將帶領讀者踏上一段數學之旅，從質數分佈、質數定理、黎曼ζ函數，一路探討到黎曼猜想的核心，並極為詳細且深入地解說它如何與現代密碼技術相結合，以及如果黎曼猜想被證明，世界將會發生什麼樣的變化。
+本篇文章將帶領讀者踏上一段數學之旅，從質數分佈、[質數定理](/zh-tw/p/prime-number-theorem/)、黎曼ζ函數，一路探討到黎曼猜想的核心，並極為詳細且深入地解說它如何與現代密碼技術相結合，以及如果黎曼猜想被證明，世界將會發生什麼樣的變化。
 
 ---
 
@@ -36,7 +36,7 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 $$ \text{Li}(x) = \int_{2}^{x} \frac{dt}{\ln t} $$
 
-高斯的猜想後來在1896年由雅克·阿達馬和夏爾-讓·德拉瓦萊·普桑各自獨立證明，並確立為 **質數定理（[Prime Number Theorem](https://kenji.blog/zh-tw/p/prime-number-theorem/), PNT）** 。
+高斯的猜想後來在1896年由雅克·阿達馬和夏爾-讓·德拉瓦萊·普桑各自獨立證明，並確立為 **[質數定理](/zh-tw/p/prime-number-theorem/)（[Prime Number Theorem](https://kenji.blog/zh-tw/p/prime-number-theorem/), PNT）** 。
 
 $$ \lim_{x \to \infty} \frac{\pi(x)}{\text{Li}(x)} = 1 $$
 
@@ -110,9 +110,9 @@ graph TD
 $$ \psi(x) = x - \sum_{\rho} \frac{x^\rho}{\rho} - \ln(2\pi) - \frac{1}{2}\ln(1 - x^{-2}) $$
 
 這裡的 $\rho$ 遍歷ζ函數的所有非平凡零點。
-主項是 $x$（這對應於質數定理），從中加上或減去依賴於零點 $\rho$ 的波狀項，就能精確還原質數階梯狀的分佈。可以說，非平凡零點代表了質數分佈的「頻率（波）」。
+主項是 $x$（這對應於[質數定理](/zh-tw/p/prime-number-theorem/)），從中加上或減去依賴於零點 $\rho$ 的波狀項，就能精確還原質數階梯狀的分佈。可以說，非平凡零點代表了質數分佈的「頻率（波）」。
 
-如果黎曼猜想是正確的，也就是所有非平凡零點 $\rho$ 的實部恰好都是 $1/2$，那麼質數定理的誤差項將會在理論上可預期的最小範圍內。
+如果黎曼猜想是正確的，也就是所有非平凡零點 $\rho$ 的實部恰好都是 $1/2$，那麼[質數定理](/zh-tw/p/prime-number-theorem/)的誤差項將會在理論上可預期的最小範圍內。
 
 $$ |\pi(x) - \text{Li}(x)| \le \frac{1}{8\pi} \sqrt{x} \ln x \quad \text{for} \quad x \ge 2657 $$
 
@@ -124,7 +124,7 @@ $$ |\pi(x) - \text{Li}(x)| \le \frac{1}{8\pi} \sqrt{x} \ln x \quad \text{for} \q
 
 到目前為止，我們探討的是深奧的純數學世界，但這些質數的性質，卻從根本上支撐著現代數位社會。其代表性例子，便是以 **[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)加密** 為首的公開金鑰密碼系統。
 
-網際網路上的信用卡支付、密碼傳輸、區塊鏈的數位簽章等，所有通訊的安全性都依賴於「質數」。
+網際網路上的信用卡支付、密碼傳輸、[區塊鏈](/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)的數位簽章等，所有通訊的安全性都依賴於「質數」。
 
 ### RSA加密的運作原理
 RSA加密的安全性，建立在「將位數極大的合成數進行質因數分解是非常困難的」這個數學事實（質因數分解問題）之上。
@@ -186,7 +186,7 @@ graph LR
 然而，這並不代表影響為零。
 因為在證明黎曼猜想的過程中， **極有可能性會發現「新的數學工具」或「未知的解析手法」** 。回顧歷史，當[費馬最後定理](https://kenji.blog/zh-tw/p/fermats-last-theorem/)或[龐加萊猜想](https://kenji.blog/zh-tw/p/poincare-conjecture/)被證明時，在此過程中發展出的新理論，都讓整個數學領域有了大幅度的飛躍。
 
-如果確立了能夠完全操作黎曼ζ函數零點性質的未知代數幾何手法，或是非交換幾何的手法，我們不能否認，這最終可能導致劃時代的質因數分解演算法（例如將計算複雜度降至多項式時間的古典演算法）被發現。就這個意義而言，密碼學家絕不能對黎曼猜想的動向掉以輕心。
+如果確立了能夠完全操作黎曼ζ函數零點性質的未知代數幾何手法，或是非交換幾何的手法，我們不能否認，這最終可能導致劃時代的質因數分解演算法（例如將計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)降至多項式時間的古典演算法）被發現。就這個意義而言，密碼學家絕不能對黎曼猜想的動向掉以輕心。
 
 ### 量子電腦與秀爾演算法
 對密碼技術而言，更直接、更具現實威脅的不是黎曼猜想的證明，而是 **量子電腦** 。1994年彼得·秀爾（Peter Shor）發表的「秀爾演算法」證明了，只要擁有足夠效能的量子電腦，就能在多項式時間內解決質因數分解問題。這將導致[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)加密和橢圓曲線密碼學從根本上被破解。

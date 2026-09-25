@@ -10,7 +10,7 @@ tags: ["Hilbert", "History of Mathematics", "Geometry", "Functional Analysis", "
 
 ## 1. Introduction: The Father of Modern Mathematics
 
-[David Hilbert](https://kenji.blog/en/p/hilbert/) (January 23, 1862 – February 14, 1943) was a German mathematician, widely recognized as one of the most influential and greatest mathematicians of the late 19th and early 20th centuries. Often compared to his brilliant French contemporary Henri Poincaré, Hilbert emphasized strict logic and formalism, in contrast to Poincaré's reliance on intuition. [Hilbert](https://kenji.blog/en/p/hilbert/) profoundly influenced almost every field of modern mathematics, earning him the moniker **"The King of Mathematics"**.
+[David Hilbert](https://kenji.blog/en/p/hilbert/) (January 23, 1862 – February 14, 1943) was a German mathematician, widely recognized as one of the most influential and greatest mathematicians of the late 19th and early 20th centuries. Often compared to his brilliant French contemporary [Henri Poincaré](/en/p/poincare/), Hilbert emphasized strict logic and formalism, in contrast to Poincaré's reliance on intuition. [Hilbert](https://kenji.blog/en/p/hilbert/) profoundly influenced almost every field of modern mathematics, earning him the moniker **"The King of Mathematics"**.
 
 His contributions span invariant theory, algebraic number theory, the axiomatization of geometry, integral equations, functional analysis ([Hilbert](https://kenji.blog/en/p/hilbert/) spaces), and theoretical physics (the mathematical foundations of general relativity). His greatest legacy lies not merely in solving isolated open problems, but in fundamentally reimagining the structure and nature of mathematics itself, establishing the new paradigms of axiomatism and formalism. In this article, we take a deep and detailed look back at the dramatic life episodes of [Hilbert](https://kenji.blog/en/p/hilbert/) and his brilliant achievements.
 
@@ -18,7 +18,7 @@ His contributions span invariant theory, algebraic number theory, the axiomatiza
 
 [Hilbert](https://kenji.blog/en/p/hilbert/) was born on January 23, 1862, in Wehlau, near Königsberg (now Kaliningrad, Russia), the capital of the Province of East Prussia in the Kingdom of Prussia. His father, Otto Hilbert, was a strict district judge. His mother, Maria Therese, was a well-educated woman with a deep interest in philosophy and astronomy. It is said that [Hilbert](https://kenji.blog/en/p/hilbert/) inherited his logical thinking and thirst for knowledge from his parents.
 
-Königsberg was a city with deep academic roots; it was the birthplace of the great philosopher Immanuel Kant and was famous for the "[Seven Bridges of Königsberg](https://kenji.blog/en/p/seven-bridges-of-konigsberg/)" problem solved by Leonhard Euler. During his school days, [Hilbert](https://kenji.blog/en/p/hilbert/)'s grades were unremarkable, but he possessed a special intuition and passion for mathematics. He loathed rote memorization, preferring to solve problems by constructing logic from scratch in his own mind. This approach—building from logical foundations rather than relying on memorization—became the core of his later mathematical style.
+Königsberg was a city with deep academic roots; it was the birthplace of the great philosopher [Immanuel Kant](/en/p/biography-immanuel-kant/) and was famous for the "[Seven Bridges of Königsberg](https://kenji.blog/en/p/seven-bridges-of-konigsberg/)" problem solved by [Leonhard Euler](/en/p/euler/). During his school days, [Hilbert](https://kenji.blog/en/p/hilbert/)'s grades were unremarkable, but he possessed a special intuition and passion for mathematics. He loathed rote memorization, preferring to solve problems by constructing logic from scratch in his own mind. This approach—building from logical foundations rather than relying on memorization—became the core of his later mathematical style.
 
 ### "Mathematical Walks" and Lifelong Friends
 
@@ -47,11 +47,11 @@ Legend has it that upon seeing this abstract proof completely devoid of calculat
 
 Following his success in invariant theory, [Hilbert](https://kenji.blog/en/p/hilbert/) turned to algebraic number theory. Commissioned by the German Mathematical Society in 1897, he authored the "Zahlbericht" (Report on Numbers), a monumental work that synthesized existing knowledge of algebraic number theory and reconstructed it from an entirely new perspective.
 
-In this report, he applied [Galois theory](https://kenji.blog/en/p/galois-theory/) to number theory, laying the foundations for Hilbert's class field theory. Class field theory, later perfected by Teiji Takagi and Emil Artin, is considered one of the most beautiful theories in 20th-century number theory. [Hilbert](https://kenji.blog/en/p/hilbert/) managed to unify seemingly disparate results in number theory under higher, beautiful laws.
+In this report, he applied [Galois theory](https://kenji.blog/en/p/galois-theory/) to number theory, laying the foundations for Hilbert's class field theory. Class field theory, later perfected by [Teiji Takagi](/en/p/takagi-teiji/) and Emil Artin, is considered one of the most beautiful theories in 20th-century number theory. [Hilbert](https://kenji.blog/en/p/hilbert/) managed to unify seemingly disparate results in number theory under higher, beautiful laws.
 
 ## 5. Axiomatization of Geometry: The Philosophy of "Tables, Chairs, and Beer Mugs"
 
-In 1899, [Hilbert](https://kenji.blog/en/p/hilbert/) published the book "Grundlagen der Geometrie" (Foundations of Geometry). It completely reconstructed the axiom system of [Euclide](https://kenji.blog/p/euclid/)an geometry, which had been the absolute foundation of geometry for over 2000 years, from a modern perspective.
+In 1899, [Hilbert](https://kenji.blog/en/p/hilbert/) published the book "Grundlagen der Geometrie" (Foundations of Geometry). It completely reconstructed the axiom system of [Euclide](https://kenji.blog/en/p/euclid/)an geometry, which had been the absolute foundation of geometry for over 2000 years, from a modern perspective.
 
 [Euclid](https://kenji.blog/en/p/euclid/)'s "Elements" contained several implicit assumptions and elements reliant on visual intuition. [Hilbert](https://kenji.blog/en/p/hilbert/) rigorously eliminated these, presenting a strictly defined axiom system consisting of five groups: axioms of incidence, order, congruence, parallels, and continuity.
 
@@ -59,9 +59,9 @@ He famously stated, **"One must be able to say at all times—instead of points,
 
 ## 6. Invitation to the University of Göttingen and the Dawn of a Golden Age
 
-In 1895, thanks to the strong recommendation of Felix Klein, a heavyweight in German mathematics, [Hilbert](https://kenji.blog/en/p/hilbert/) was appointed professor at the University of Göttingen. Göttingen was already renowned as a sacred ground for mathematics, having once been home to Carl Friedrich Gauss and [Bernhard Riemann](https://kenji.blog/en/p/riemann/).
+In 1895, thanks to the strong recommendation of Felix Klein, a heavyweight in German mathematics, [Hilbert](https://kenji.blog/en/p/hilbert/) was appointed professor at the University of Göttingen. Göttingen was already renowned as a sacred ground for mathematics, having once been home to [Carl Friedrich Gauss](/en/p/gauss/) and [Bernhard Riemann](https://kenji.blog/en/p/riemann/).
 
-With [Hilbert](https://kenji.blog/en/p/hilbert/)'s arrival, Göttingen firmly reestablished itself as the world's premier mathematical center. His lectures were always clear and brimming with passion for new mathematical ideas, attracting brilliant students and researchers from around the globe. Many superstars who would later lead 20th-century mathematics, such as Emmy Noether, Hermann Weyl, Richard Courant, and John von Neumann, were mentored by [Hilbert](https://kenji.blog/en/p/hilbert/).
+With [Hilbert](https://kenji.blog/en/p/hilbert/)'s arrival, Göttingen firmly reestablished itself as the world's premier mathematical center. His lectures were always clear and brimming with passion for new mathematical ideas, attracting brilliant students and researchers from around the globe. Many superstars who would later lead 20th-century mathematics, such as [Emmy Noether](/en/p/noether/), Hermann Weyl, Richard Courant, and [John von Neumann](/en/p/von-neumann/), were mentored by [Hilbert](https://kenji.blog/en/p/hilbert/).
 
 The anecdote regarding [Emmy Noether](https://kenji.blog/en/p/noether/) is particularly famous. At the time, university rules prohibited women from holding academic positions. [Hilbert](https://kenji.blog/en/p/hilbert/), highly valuing her exceptional talent in algebra, fiercely protested at the faculty meeting, declaring, **"The university senate is not a bathhouse, so gender does not matter!"** This statement vividly illustrates his progressive, meritocratic, and unprejudiced character.
 
@@ -95,7 +95,7 @@ $$
 
 Here, $x, y, x_1, x_2 \in \mathcal{H}$ and $a, b \in \mathbb{C}$ (complex numbers), and $\overline{\langle y, x \rangle}$ denotes the complex conjugate. The norm is induced by $\|x\| = \sqrt{\langle x, x \rangle}$.
 
-Astonishingly, this abstract theory, which [Hilbert](https://kenji.blog/en/p/hilbert/) constructed out of pure mathematical curiosity, turned out decades later to be the perfect mathematical language for describing the states of physical systems in the newly born quantum mechanics. When Werner Heisenberg formulated matrix mechanics and Erwin Schrödinger formulated wave mechanics, the theory of [Hilbert](https://kenji.blog/en/p/hilbert/) spaces became an indispensable tool, primarily through the work of John von Neumann. It is a stunning example of mathematics anticipating physics.
+Astonishingly, this abstract theory, which [Hilbert](https://kenji.blog/en/p/hilbert/) constructed out of pure mathematical curiosity, turned out decades later to be the perfect mathematical language for describing the states of physical systems in the newly born quantum mechanics. When Werner Heisenberg formulated matrix mechanics and Erwin Schrödinger formulated wave mechanics, the theory of [Hilbert](https://kenji.blog/en/p/hilbert/) spaces became an indispensable tool, primarily through the work of [John von Neumann](/en/p/von-neumann/). It is a stunning example of mathematics anticipating physics.
 
 ## 9. Foray into Physics and the Einstein-[Hilbert](https://kenji.blog/en/p/hilbert/) Action
 
@@ -113,7 +113,7 @@ While a priority dispute between Einstein and [Hilbert](https://kenji.blog/en/p/
 
 ## 10. [Hilbert](https://kenji.blog/en/p/hilbert/)'s Program: The Quest for Absolute [Consistency](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/) in Mathematics
 
-Following World War I, in response to the "crisis in the foundations of mathematics" sparked by paradoxes in set theory (such as Russell's paradox), [Hilbert](https://kenji.blog/en/p/hilbert/) proposed the most ambitious project of his life: **[Hilbert](https://kenji.blog/en/p/hilbert/)'s Program**.
+Following World War I, in response to the "crisis in the foundations of mathematics" sparked by paradoxes in set theory (such as [Russell's paradox](/en/p/russells-paradox/)), [Hilbert](https://kenji.blog/en/p/hilbert/) proposed the most ambitious project of his life: **[Hilbert](https://kenji.blog/en/p/hilbert/)'s Program**.
 
 He sought to reconstruct all of mathematics as a "formal system," treating all mathematical propositions as meaningless strings of symbols and manipulating them according to mechanical rules of inference. His goal was to mathematically prove—using only secure, finitistic reasoning—that contradictions such as " $0 = 1$ " could absolutely never be derived within that system (consistency).
 

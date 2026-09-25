@@ -11,28 +11,28 @@ tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 
 # 前言：为什么需要本地[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)？
 
-随着大型语言模型（LLM）的崛起，我们的生活和开发方式发生了巨大的变化。ChatGPT、Claude和Gemini等基于云的强大AI服务在不断发展，提供了非常高级的推理能力。然而，云端LLM并非在所有用例中都是最佳选择。云端LLM存在以下问题：
+随着[大型语言模型](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的崛起，我们的生活和开发方式发生了巨大的变化。ChatGPT、Claude和Gemini等基于云的强大AI服务在不断发展，提供了非常高级的推理能力。然而，云端[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)并非在所有用例中都是最佳选择。云端[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)存在以下问题：
 
 1. **隐私和安全问题** ：从企业合规性和安全性的角度来看，将包含机密或个人信息的数据发送到外部服务器通常是不可接受的。
 2. **成本的不确定性** ：API使用费取决于Token数量，在处理大规模数据或频繁请求的系统中，运行成本存在无底洞的风险。
 3. **延迟和网络依赖** ：在离线环境中使用，或者在要求极低延迟的边缘设备上运行时，网络通信会成为瓶颈。
 4. **供应商锁定** ：依赖特定提供商的模型，可能会受到未来服务终止、条款变更或模型更新导致意外行为变化的影响。
 
-作为解决这些问题的一种手段，“本地LLM”正备受瞩目。通过在自己的硬件上运行模型，您可以完全不向外部发送数据，也不必担心每月的费用，自由地利用AI。
+作为解决这些问题的一种手段，“本地[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)”正备受瞩目。通过在自己的硬件上运行模型，您可以完全不向外部发送数据，也不必担心每月的费用，自由地利用AI。
 
-本文将深入探讨“ **Ollama** ”——一个能够极其简单地引入、管理和API集成落地本地LLM的工具。我们将从基础知识、内部架构、使用Python和Node.js进行高级API集成，一直讲解到性能调优的计算公式。
+本文将深入探讨“ **Ollama** ”——一个能够极其简单地引入、管理和API集成落地本地[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)的工具。我们将从基础知识、内部架构、使用Python和Node.js进行高级API集成，一直讲解到性能调优的计算公式。
 
 ---
 
 # 什么是Ollama？其内部架构
 
-Ollama是一个可以让你在本地环境中轻松运行和管理开源大型语言模型（如Llama 3, Phi-3, Mistral, Gemma等）的平台。以前，为了搭建本地LLM环境，需要极其繁琐的步骤，比如配置Python环境、安装CUDA工具包、解决PyTorch的依赖关系，以及从Hugging Face下载巨大的模型文件并进行格式转换（例如从Safetensors转换为GGUF）等。
+Ollama是一个可以让你在本地环境中轻松运行和管理开源[大型语言模型](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)（如Llama 3, Phi-3, Mistral, Gemma等）的平台。以前，为了搭建本地[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)环境，需要极其繁琐的步骤，比如配置Python环境、安装CUDA工具包、解决PyTorch的依赖关系，以及从Hugging Face下载巨大的模型文件并进行格式转换（例如从Safetensors转换为[GGUF](/zh-cn/p/llama-cpp-quantization-gguf/)）等。
 
 Ollama隐藏了这些复杂性，让你可以像使用[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)一样方便地处理[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)。只需一条命令，即可下载（`pull`）、运行（`run`）模型，并将其作为HTTP服务器启动。
 
 ## 核心技术：llama.cpp的包装器
 
-作为Ollama推理引擎后端运行的，是使用C/C++实现的高速[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)推理库“ **llama.cpp** ”。即使是在Apple Silicon（Metal）、NVIDIA GPU（CUDA）、AMD GPU（ROCm），甚至仅有CPU的环境中，llama.cpp也具备最大限度发挥硬件性能来运行模型的能力。
+作为Ollama推理引擎后端运行的，是使用C/C++实现的高速[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)推理库“ **llama.cpp** ”。即使是在Apple Silicon（Metal）、[NVIDIA](/zh-cn/p/history-of-nvidia/) GPU（CUDA）、AMD GPU（ROCm），甚至仅有CPU的环境中，llama.cpp也具备最大限度发挥硬件性能来运行模型的能力。
 
 Ollama内置了llama.cpp，采用了由[Go](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)语言编写的服务器进程提供[REST API](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)，并在后台调用llama.cpp推理引擎的架构。
 
@@ -58,7 +58,7 @@ Ollama的安装非常简单。它为各种操作系统提供了经过优化的�
 
 ## macOS / Windows
 
-只需从官网（https://ollama.com/）下载安装程序并运行即可。macOS版本会自动识别Apple Silicon的Metal API，Windows版本会自动识别NVIDIA GPU（CUDA），并在可用时启用硬件加速。
+只需从官网（https://ollama.com/）下载安装程序并运行即可。macOS版本会自动识别Apple Silicon的Metal API，Windows版本会自动识别[NVIDIA](/zh-cn/p/history-of-nvidia/) GPU（CUDA），并在可用时启用硬件加速。
 
 ## Linux
 
@@ -77,7 +77,7 @@ ollama --version
 
 ## 使用[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/)运行
 
-如果不想污染现有环境，或者想将其集成到基于容器的基础设施中，也可以使用官方的Docker镜像。如果要使用GPU，则需要安装NVIDIA [Container](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/) Toolkit。
+如果不想污染现有环境，或者想将其集成到基于容器的基础设施中，也可以使用官方的Docker镜像。如果要使用GPU，则需要安装[NVIDIA](/zh-cn/p/history-of-nvidia/) [Container](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/) Toolkit。
 
 ```bash
 # 仅使用CPU运行
@@ -103,7 +103,7 @@ Ollama最大的魅力在于模型管理非常直观。你可以像操作[Docker]
 ollama run llama3.1
 ```
 
-执行上述命令后，Meta的最新模型Llama 3.1（8B参数版）将启动。在提示符中输入消息，模型的回复将以流式显示。要退出，请输入 `/bye` 或按 `Ctrl+D`。
+执行上述命令后，[Meta](/zh-cn/p/history-of-meta-facebook/)的最新模型Llama 3.1（8B参数版）将启动。在提示符中输入消息，模型的回复将以流式显示。要退出，请输入 `/bye` 或按 `Ctrl+D`。
 
 ## 2. 下载模型 (`pull`)
 
@@ -120,7 +120,7 @@ ollama pull mistral:v0.3
 
 这里稍微提及一下量化。普通的[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)使用16位浮点数（FP16）等格式保存一个权重参数。对于具有80亿（8B）参数的模型，仅权重就会消耗约16GB的VRAM。量化就是一种将其压缩为4位（Q4）或8位（Q8）整数类型的技术。
 
-通过量化，可以在将模型精度下降控制在最低限度的同时，大幅减少所需的内存量和内存带宽。在Ollama中分发的模型，默认采用了经过最优化量化（通常为4位）的GGUF格式。
+通过量化，可以在将模型精度下降控制在最低限度的同时，大幅减少所需的内存量和内存带宽。在Ollama中分发的模型，默认采用了经过最优化量化（通常为4位）的[GGUF](/zh-cn/p/llama-cpp-quantization-gguf/)格式。
 
 ## 3. 列出模型 (`list`)
 
@@ -199,7 +199,7 @@ ollama run kansai-coder
 
 # Ollama [REST API](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) 彻底解析
 
-虽然CLI交互很方便，但在实际的应用程序开发中，Ollama真正的价值在于其强大的REST API。通过向服务器进程（默认是 `http://localhost:11434`）发送HTTP请求，可以获取推理结果。
+虽然CLI交互很方便，但在实际的应用程序开发中，Ollama真正的价值在于其强大的[REST API](/zh-cn/p/graphql-vs-rest-api-overfetching-type-safety/)。通过向服务器进程（默认是 `http://localhost:11434`）发送HTTP请求，可以获取推理结果。
 
 主要有以下3个端点：
 1. `/api/generate`：从单一提示词生成文本
@@ -425,7 +425,7 @@ app.listen(3000, () => {
 
 ## Token 生成速度的计算模型
 
-直接关系到用户体验的 LLM 响应时间，大致可以分解为“ **首个 Token 耗时 (Time To First Token, TTFT)** ”和“ **每个输出 Token 耗时 (Time Per Output Token, TPOT)** ”。
+直接关系到用户体验的 [LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) 响应时间，大致可以分解为“ **首个 Token 耗时 (Time To First Token, TTFT)** ”和“ **每个输出 Token 耗时 (Time Per Output Token, TPOT)** ”。
 
 如果将生成的 Token 数设为 $N$，则总生成时间 $T_{total}$ 可以公式化如下：
 
@@ -499,7 +499,7 @@ $$
 
 Ollama 的出现，极大地降低了引入本地 [LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) 的门槛。类似操作 Docker-layers/) 容器的简单命令体系，加上能从外部应用程序轻松调用的 [REST API](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)，这种组合可以说是当今本地 AI 开发事实上的标准。
 
-如果您是一位正苦恼于云端 [LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) 的成本或安全限制的开发者，请务必参考本文介绍的步骤，使用 Ollama 搭建本地 LLM 环境，并将其集成到您的应用程序中。您一定会感受到 AI 带来的无限可能，而且这种体验会变得更加自由和触手可及。
+如果您是一位正苦恼于云端 [LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) 的成本或安全限制的开发者，请务必参考本文介绍的步骤，使用 Ollama 搭建本地 [LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) 环境，并将其集成到您的应用程序中。您一定会感受到 AI 带来的无限可能，而且这种体验会变得更加自由和触手可及。
 
 
 

@@ -12,7 +12,7 @@ description: 'Manajemen kesehatan berbasis data untuk memaksimalkan performa, me
 
 ## 1. Pendahuluan: Titik Temu antara Rekayasa Perangkat Lunak dan Biohacking
 
-Rekayasa perangkat lunak modern adalah kerja intelektual yang berat dengan beban kognitif yang ekstrem dan jam kerja yang panjang dengan posisi duduk (Sedentary Lifestyle). Mengejar tumpukan teknologi yang selalu berubah, berburu bug di sistem terdistribusi yang kompleks, dan tekanan tenggat waktu. Untuk mengatasi hal ini, sekadar mengandalkan "semangat" atau "tekad" saja tidak cukup. Diperlukan pendekatan untuk menyetel perangkat keras berupa tubuh kita sendiri layaknya melakukan debugging pada sistem, yaitu "Biohacking".
+Rekayasa perangkat lunak modern adalah kerja intelektual yang berat dengan beban kognitif yang ekstrem dan jam kerja yang panjang dengan posisi duduk (Sedentary Lifestyle). Mengejar tumpukan teknologi yang selalu berubah, berburu bug di [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/) yang kompleks, dan tekanan tenggat waktu. Untuk mengatasi hal ini, sekadar mengandalkan "semangat" atau "tekad" saja tidak cukup. Diperlukan pendekatan untuk menyetel perangkat keras berupa tubuh kita sendiri layaknya melakukan debugging pada sistem, yaitu "Biohacking".
 
 Dulu kita mungkin mengandalkan perasaan subjektif (heuristik) seperti "hari ini entah kenapa merasa baik/buruk", tetapi saat ini berkat meluasnya perangkat wearable berkinerja tinggi seperti Oura Ring, Apple Watch, dan Garmin, kita dapat memperoleh data biometrik selama 24 jam sehari, 365 hari setahun, secara non-invasif. Artikel ini akan menjelaskan cara memperoleh data biometrik (HRV, RHR, arsitektur tidur) dan data produktivitas (metrik coding dari WakaTime dll.) melalui API, serta menganalisis korelasinya menggunakan pendekatan ilmu data dengan Python dan Pandas. Selain itu, artikel ini juga akan mengupas secara sangat rinci berbagai tips kesehatan (health hack) untuk para insinyur yang didasarkan pada bukti ilmiah, seperti model matematis ritme sirkadian dan waktu optimal konsumsi kopi berdasarkan waktu paruh metabolisme kafein.
 
@@ -358,7 +358,7 @@ Dengan mengeksekusi skrip semacam ini secara berkala menggunakan Cron, sebuah si
 
 ## 13. Kesimpulan: [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) pada Sistem Tubuh Manusia
 
-Cobalah untuk menganggap tubuh Anda sendiri sebagai sebuah sistem terdistribusi yang kompleks. Perangkat wearable (Oura Ring) adalah metrics exporter (Prometheus) untuk pemantauan, skrip Python/Pandas adalah pipa analisis log (Logstash/Fluentd), dan perubahan kondisi fisik serta performa sehari-hari adalah kesehatan sistem yang ditampilkan di dasbor (Grafana/Streamlit).
+Cobalah untuk menganggap tubuh Anda sendiri sebagai sebuah [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/) yang kompleks. Perangkat wearable (Oura Ring) adalah metrics exporter (Prometheus) untuk pemantauan, skrip Python/Pandas adalah pipa analisis log (Logstash/Fluentd), dan perubahan kondisi fisik serta performa sehari-hari adalah kesehatan sistem yang ditampilkan di dasbor (Grafana/Streamlit).
 
 "Bekerja dengan memotong waktu tidur" sama halnya dengan memaksakan penambahan fitur tanpa menghiraukan utang teknis (Technical Debt). Dalam jangka pendek, mungkin Anda bisa mengejar waktu rilis, tetapi dalam jangka panjang, hal itu pasti akan menyebabkan kerusakan sistem (burnout, masalah kesehatan serius, dan depresi).
 

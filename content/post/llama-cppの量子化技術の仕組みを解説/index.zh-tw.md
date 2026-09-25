@@ -13,9 +13,9 @@ description: '我們將結合數學公式與架構圖，非常詳細地解說 ll
 
 ## 1. 前言：為什麼 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 需要量化？
 
-近年來大型語言模型（LLM: [Large Language Models](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）的發展雖然令人矚目，但其背後卻浮現了「運算資源枯竭」與「記憶體頻寬瓶頸」等嚴重的問題。例如，若將像 Llama 3 這樣擁有 70B（700 億）參數的模型，以標準的 16 位元浮點數（FP16）載入記憶體中，光是參數就會消耗約 140GB 的 VRAM/RAM。如果再加上推論時的上下文（KV 快取），除非將多台資料中心用的高階 GPU（NVIDIA A100 80GB 或 H100 80GB）組成叢集，否則根本無法運作。
+近年來[大型語言模型](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/): [Large Language Models](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）的發展雖然令人矚目，但其背後卻浮現了「運算資源枯竭」與「記憶體頻寬瓶頸」等嚴重的問題。例如，若將像 Llama 3 這樣擁有 70B（700 億）參數的模型，以標準的 16 位元浮點數（FP16）載入記憶體中，光是參數就會消耗約 140GB 的 VRAM/RAM。如果再加上推論時的上下文（KV 快取），除非將多台資料中心用的高階 GPU（[NVIDIA](/zh-tw/p/history-of-nvidia/) A100 80GB 或 H100 80GB）組成叢集，否則根本無法運作。
 
-為了讓個人開發者與邊緣裝置（MacBook 或一般的電競 PC）也能夠執行 LLM，作為救星登場的就是 **llama.cpp** 以及其核心的 ** 量化（Quantization）技術**。尤其是被稱為 **GGUF (GPT-Generated Unified Format)** 的檔案格式，以及名為 **k-quants** 的進階區塊層級量化演算法，這是一種在將模型準確度（Perplexity）下降程度抑制到極限的同時，將模型大小壓縮至數分之一的革命性手法。
+為了讓個人開發者與邊緣裝置（MacBook 或一般的電競 PC）也能夠執行 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)，作為救星登場的就是 **llama.cpp** 以及其核心的 ** 量化（Quantization）技術**。尤其是被稱為 **GGUF (GPT-Generated Unified Format)** 的檔案格式，以及名為 **k-quants** 的進階區塊層級量化演算法，這是一種在將模型準確度（Perplexity）下降程度抑制到極限的同時，將模型大小壓縮至數分之一的革命性手法。
 
 本文將從 llama.cpp 中量化的數學背景開始，徹底解說與 GGML 格式的差異、GGUF 格式的詳細結構，乃至於 k-quants 的內部機制。
 
@@ -23,7 +23,7 @@ description: '我們將結合數學公式與架構圖，非常詳細地解說 ll
 
 ## 2. 量化（Quantization）的數學基礎
 
-在 LLM 的語境中，量化是指將連續的值（或高精度的浮點數）映射到較少位元數（INT8, INT4, INT3 等）的離散值的操作。
+在 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的語境中，量化是指將連續的值（或高精度的浮點數）映射到較少位元數（INT8, INT4, INT3 等）的離散值的操作。
 
 ### 2.1. 線性量化的基本數學公式
 
@@ -188,7 +188,7 @@ llama.cpp 在 CPU 推論上擁有驚人速度的原因，在於組合語言層�
 
 ### 5.2. 在 GPU 環境 (cuBLAS / CUDA) 的卸載 (Offload)
 
-最近的 llama.cpp 不僅支援 CPU，對 NVIDIA GPU 也有強大的支援（CUBLAS / CUDA）。
+最近的 llama.cpp 不僅支援 CPU，對 [NVIDIA](/zh-tw/p/history-of-nvidia/) GPU 也有強大的支援（CUBLAS / CUDA）。
 可以將 GGUF 檔案的部分或全部網路層卸載到 VRAM 中（`--n-gpu-layers` 選項）。
 
 ```mermaid

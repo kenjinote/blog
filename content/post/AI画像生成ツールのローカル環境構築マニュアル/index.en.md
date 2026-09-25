@@ -266,6 +266,6 @@ Frequently occurring errors in local environment setup and operation, along with
 
 The open-source AI image generation movement that began with Stable Diffusion continues to evolve into next-generation architectures like SDXL, and Stable Diffusion 3 or [Flux](https://kenji.blog/en/p/state-management-history-redux-context-recoil-zustand/).1. The number of parameters in models has grown immensely from billions to tens of billions, and moving forward, GPU environments with 24GB of VRAM or more will become increasingly necessary.
 
-However, local optimization technologies such as TensorRT, Quantization, and GGUF are also accelerating their speed of evolution, and an ecosystem is forming where sufficient inference becomes possible even on hardware for general consumers.
+However, local optimization technologies such as TensorRT, Quantization, and [GGUF](/en/p/llama-cpp-quantization-gguf/) are also accelerating their speed of evolution, and an ecosystem is forming where sufficient inference becomes possible even on hardware for general consumers.
 
 The CUDA environment setup, VRAM optimization, and pipeline understanding of ComfyUI and others explained in this manual serve as a universal foundation of knowledge that will remain relevant regardless of how AI technology trends change. We hope that your creativity is maximized in a local environment free of limitations.

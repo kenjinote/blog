@@ -17,9 +17,9 @@ Hinweis: Diese Methode wurde unter `Windows 10/11` getestet.
 1. Öffnen Sie den Registrierungs-Editor.
 2. Navigieren Sie zu `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths`.
 3. Erstellen Sie unter `App Paths` einen Schlüssel namens `hide.exe`. **Der Teil vor `.exe` im Namen dieses Schlüssels wird zum Befehlsnamen.**
-4. Setzen Sie den Wert `(Standard)` des Schlüssels `hide.exe` auf den Pfad der ausführbaren Datei des Hidemaru Editors. In meiner Umgebung war dies `"C:\Program Files (x86)\Hidemaru\Hidemaru.exe"`.
+4. Setzen Sie den Wert `(Standard)` des Schlüssels `hide.exe` auf den [Pfad](/de/p/windows-%E3%81%A7pfad%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9Fausf%C3%BChrbare-datei%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/) der ausführbaren Datei des Hidemaru Editors. In meiner Umgebung war dies `"C:\Program Files (x86)\Hidemaru\Hidemaru.exe"`.
 5. Erstellen Sie einen Zeichenfolgenwert namens `Path` im Schlüssel `hide.exe`.
-6. Setzen Sie die Daten von `Path` auf den Pfad des Ordners, der die ausführbare Datei des Hidemaru Editors enthält. In meiner Umgebung war dies `"C:\Program Files (x86)\Hidemaru"`.
+6. Setzen Sie die Daten von `Path` auf den [Pfad](/de/p/windows-%E3%81%A7pfad%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9Fausf%C3%BChrbare-datei%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/) des Ordners, der die ausführbare Datei des Hidemaru Editors enthält. In meiner Umgebung war dies `"C:\Program Files (x86)\Hidemaru"`.
 7. Nun können Sie im Dialogfeld **Ausführen** (geöffnet durch Drücken der `Win`-Taste + `R`-Taste) den Hidemaru Editor mit dem Befehl `hide` starten. Darüber hinaus können Sie ihn in der Eingabeaufforderung mit dem Befehl `start hide` starten.
 
 ```

@@ -77,10 +77,10 @@ In tatsächlichen [RDBMS](https://kenji.blog/de/p/rdbms-transaction-acid-isolati
 
 ### 4.1 Unterschiede zwischen B-Baum und B+-Baum
 
-Beim B-Baum werden die eigentlichen Daten (oder Zeiger auf Daten) sowohl in den inneren Knoten als auch in den Blattknoten gespeichert. Im Gegensatz dazu weist der **B+-Baum** die folgenden Merkmale auf:
+Beim B-Baum werden die eigentlichen Daten (oder [Zeiger](/de/p/c-language-pointers-memory-management-stack-heap/) auf Daten) sowohl in den inneren Knoten als auch in den Blattknoten gespeichert. Im Gegensatz dazu weist der **B+-Baum** die folgenden Merkmale auf:
 
 1. **Die Daten werden nur in den Blattknoten gespeichert**. Innere Knoten enthalten nur Schlüssel (Indizes) für das Routing.
-2. **Die Blattknoten sind durch eine verkettete Liste (Zeiger) miteinander verbunden**. Dadurch werden sequenzielle Zugriffe und Bereichssuchen (Range Queries) extrem schnell.
+2. **Die Blattknoten sind durch eine verkettete Liste ([Zeiger](/de/p/c-language-pointers-memory-management-stack-heap/)) miteinander verbunden**. Dadurch werden sequenzielle Zugriffe und Bereichssuchen (Range Queries) extrem schnell.
 
 ### 4.2 Gründe für die Verwendung des B+-Baums
 

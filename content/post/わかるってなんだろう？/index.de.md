@@ -37,7 +37,7 @@ Dennoch sollten wir das „Verstehen“ nicht auf die leichte Schulter nehmen. W
 
 Es gibt viele Dinge auf der Welt, die noch nicht geklärt sind. Zum Beispiel die Mechanismen der menschlichen Emotionen und des Bewusstseins, der Ursprung des Universums usw. Dies sind Bereiche, die trotz des Fortschritts der Wissenschaft noch nicht vollständig „verstanden“ werden.
 
-Selbst in der Welt der Mathematik gibt es ungelöste Probleme, die einfach erscheinen, wie die „Goldbachsche Vermutung“.
+Selbst in der Welt der Mathematik gibt es ungelöste Probleme, die einfach erscheinen, wie die „[Goldbachsche Vermutung](/de/p/goldbachs-conjecture/)“.
 
 ---
 

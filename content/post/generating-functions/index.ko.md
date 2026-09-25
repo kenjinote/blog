@@ -160,7 +160,7 @@ $$
 현대 컴퓨터 과학이나 경쟁 프로그래밍에서 [생성함수](https://kenji.blog/ko/p/generating-functions/)는 **형식적 멱급수** (Formal Power Series, FPS) 로 구현됩니다.
 FPS에서는 $x$ 에 구체적인 수치를 대입하여 수렴하는지 여부(해석적 성질)는 신경 쓰지 않고, 단순히 '계수열'을 다항식으로서 대수적으로 조작하는 데 주안점을 둡니다.
 
-고속 푸리에 변환(FFT)이나 수론 변환(NTT)을 사용하면, 두 개의 $N$ 차 다항식의 곱(즉, 길이 $N$ 인 수열의 합성곱)을 $\mathcal{O}(N \log N)$ 의 계산 복잡도로 구할 수 있습니다. 이로 인해 동적 계획법으로 $\mathcal{O}(N^2)$ 가 걸리던 계산을 극적으로 고속화할 수 있게 됩니다.
+[고속 푸리에 변환(FFT)](/ko/p/fast-fourier-transform-algorithm/)이나 수론 변환(NTT)을 사용하면, 두 개의 $N$ 차 다항식의 곱(즉, 길이 $N$ 인 수열의 합성곱)을 $\mathcal{O}(N \log N)$ 의 계산 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)로 구할 수 있습니다. 이로 인해 동적 계획법으로 $\mathcal{O}(N^2)$ 가 걸리던 계산을 극적으로 고속화할 수 있게 됩니다.
 
 ## 6. 요약
 

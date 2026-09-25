@@ -22,7 +22,7 @@ tags:
 
 $$ C_0 = 1, \quad C_1 = 1, \quad C_2 = 2, \quad C_3 = 5, \quad C_4 = 14, \quad C_5 = 42, \quad C_6 = 132, \quad C_7 = 429, \quad \dots $$
 
-这个数列作为各种组合问题的解频繁出现。在本文中，我们将介绍四个涉及[卡塔兰数](https://kenji.blog/zh-cn/p/catalan-numbers/)的著名例子（合法括号序列、二叉树、多边形三角剖分和迪克路径）。我们将剖析它们背后的递归结构，以了解为什么它们对应着完全相同的数列。此外，我们还将详细介绍使用动态规划 ([DP](https://kenji.blog/zh-cn/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) 的计算算法以及使用母函数的数学推导。
+这个数列作为各种组合问题的解频繁出现。在本文中，我们将介绍四个涉及[卡塔兰数](https://kenji.blog/zh-cn/p/catalan-numbers/)的著名例子（合法括号序列、二叉树、多边形三角剖分和迪克路径）。我们将剖析它们背后的递归结构，以了解为什么它们对应着完全相同的数列。此外，我们还将详细介绍使用[动态规划](/zh-cn/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) ([DP](https://kenji.blog/zh-cn/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) 的计算算法以及使用母函数的数学推导。
 
 ## 2. [卡塔兰数](https://kenji.blog/zh-cn/p/catalan-numbers/)出现的四个具体例子
 
@@ -171,7 +171,7 @@ $$ C(x) = \frac{1 - \sqrt{1 - 4x}}{2x} $$
 
 ### 5.1. 简单递归 (Naive Recursion)
 
-这涉及直接实现递推关系。然而，由于它重复计算相同的值，时间复杂度呈指数级增长，因此不适合较大的 $n$。
+这涉及直接实现递推关系。然而，由于它重复计算相同的值，时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)呈指数级增长，因此不适合较大的 $n$。
 
 ```python
 def catalan_recursive(n):
@@ -187,7 +187,7 @@ def catalan_recursive(n):
 
 ### 5.2. 动态规划 ([Dynamic Programming](https://kenji.blog/zh-cn/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))
 
-通过利用记忆化（或自底向上的动态规划）将计算结果存储在数组中，我们可以将时间复杂度降低到 $O(n^2)$。
+通过利用记忆化（或自底向上的[动态规划](/zh-cn/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)）将计算结果存储在数组中，我们可以将时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)降低到 $O(n^2)$。
 
 ```python
 def catalan_dp(n):
@@ -209,7 +209,7 @@ for i in range(7):
 
 ### 5.3. 闭合公式 (Closed-Form Formula)
 
-使用该公式，我们只需执行阶乘计算，即可在 $O(n)$ 的时间复杂度内计算出结果。
+使用该公式，我们只需执行阶乘计算，即可在 $O(n)$ 的时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)内计算出结果。
 
 ```python
 import math
@@ -227,4 +227,4 @@ for i in range(7):
 
 [卡塔兰数](https://kenji.blog/zh-cn/p/catalan-numbers/)列 $C_n$ 是一个迷人的数列，它统一地出现在众多看似不同的问题中，例如合法括号序列、二叉树形状、多边形三角剖分和迪克路径。这些问题得出相同数量的原因在于它们都体现了一个共同的递归结构：**“将整体分割为两个子问题并将它们组合”**。
 
-在学习算法和数据结构时，理解这些数学背景能培养看透问题本质的能力。它也是动态规划的极佳练习，所以一定要尝试自己编写代码进行实验！
+在学习算法和数据结构时，理解这些数学背景能培养看透问题本质的能力。它也是[动态规划](/zh-cn/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)的极佳练习，所以一定要尝试自己编写代码进行实验！

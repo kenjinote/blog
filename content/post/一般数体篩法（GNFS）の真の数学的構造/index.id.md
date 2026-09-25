@@ -158,8 +158,8 @@ Lebih jauh lagi, karena pasangan asli $(a, b)$ dibentuk dengan cara yang berkore
 Sekarang, tinggal berdoa agar $X$ dan $Y$ bukan merupakan solusi trivial ($X \equiv \pm Y$), lalu kita hitung:
 **$\gcd(X - Y, N)$**
 
-Jika itu adalah solusi non-trivial, algoritma [Euclide](https://kenji.blog/p/euclid/)an akan melesat dalam 0,001 detik, dan bilangan prima rahasia $p$ dan $q$, yang merupakan jantung kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/), akan dicetak di layar keluaran.
+Jika itu adalah solusi non-trivial, algoritma [Euclide](https://kenji.blog/id/p/euclid/)an akan melesat dalam 0,001 detik, dan bilangan prima rahasia $p$ dan $q$, yang merupakan jantung kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/), akan dicetak di layar keluaran.
 
 ---
 
-Inilah bentuk utuh dari **"General Number Field Sieve (GNFS)"** yang mengumpulkan intisari matematika modern.
+Inilah bentuk utuh dari **"[General Number Field Sieve](/id/p/beyond-gnfs-integer-factorization-algorithms/) (GNFS)"** yang mengumpulkan intisari matematika modern.

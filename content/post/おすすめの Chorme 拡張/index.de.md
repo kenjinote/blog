@@ -58,7 +58,7 @@ Wenn ein Text auf der Seite markiert ist, wird dieser direkt in die Frage kopier
 
 ![img_1.png](img_1.webp)
 
-Eine Erweiterung, die nützliche Funktionen für die Salesforce-Entwicklung hinzufügt.
-Ich denke, dies ist für diejenigen, die Salesforce nicht verwenden, nicht erforderlich.
+Eine Erweiterung, die nützliche Funktionen für die [Salesforce](/de/p/salesforcechatter%E5%85%A8%E6%B6%88%E3%81%97befehl/)-Entwicklung hinzufügt.
+Ich denke, dies ist für diejenigen, die [Salesforce](/de/p/salesforcechatter%E5%85%A8%E6%B6%88%E3%81%97befehl/) nicht verwenden, nicht erforderlich.
 
 - [Salesforce DevTools](https://chrome.google.com/webstore/detail/salesforce-devtools/ehgmhinnhggigkogkbhnbodhbfjgncjf)

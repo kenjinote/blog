@@ -13,7 +13,7 @@ tags: ["Gamma Function", "Euler", "Complex Analysis", "Calculus"]
 
 数学を学んでいると、時として「離散的な概念を連続的なものに拡張できないか？」という疑問に直面します。その最も美しく、かつ重要な例の一つが **[ガンマ関数](https://kenji.blog/p/gamma-function/)（Gamma Function）** です。
 
-[ガンマ関数](https://kenji.blog/p/gamma-function/)は、自然数に対して定義される「階乗（$n!$）」を、正の実数、さらには複素数全体へと拡張した関数です。18世紀の偉大な数学者レオンハルト・オイラー（[Leonhard Euler](https://kenji.blog/p/euler/)）によって発見されたこの関数は、解析学、確率論、統計学、そして物理学に至るまで、あらゆる分野で顔を出します。
+[ガンマ関数](https://kenji.blog/p/gamma-function/)は、自然数に対して定義される「階乗（$n!$）」を、正の実数、さらには複素数全体へと拡張した関数です。18世紀の偉大な数学者[レオンハルト・オイラー](/p/euler/)（[Leonhard Euler](https://kenji.blog/p/euler/)）によって発見されたこの関数は、解析学、確率論、統計学、そして物理学に至るまで、あらゆる分野で顔を出します。
 
 本記事では、[ガンマ関数](https://kenji.blog/p/gamma-function/)の基礎からその深遠な性質までを詳しく見ていきましょう。
 

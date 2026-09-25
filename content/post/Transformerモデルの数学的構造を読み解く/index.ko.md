@@ -11,7 +11,7 @@ tags: ["Transformer", "Deep Learning", "Attention", "Math"]
 
 # 머리말: 왜 [Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 수학을 배우는가?
 
-현대 자연어 처리(NLP), 그리고 AI 전체의 역사를 새로 썼다고 해도 과언이 아닌 아키텍처가 바로 'Transformer'입니다. 2017년 Google 연구진이 발표한 논문 『Attention Is All You Need』에서 처음 제안된 이 모델은, OpenAI의 GPT 시리즈(ChatGPT의 기반 기술)나 Google의 BERT, Anthropic의 Claude 등 현재 세계를 휩쓸고 있는 대규모 언어 모델([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 심장부로 기능하고 있습니다.
+현대 자연어 처리(NLP), 그리고 AI 전체의 역사를 새로 썼다고 해도 과언이 아닌 아키텍처가 바로 'Transformer'입니다. 2017년 Google 연구진이 발표한 논문 『Attention Is All You Need』에서 처음 제안된 이 모델은, OpenAI의 GPT 시리즈(ChatGPT의 기반 기술)나 Google의 BERT, Anthropic의 Claude 등 현재 세계를 휩쓸고 있는 [대규모 언어 모델](/ko/p/large-language-models-llm-transformer-prompt-engineering/)([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 심장부로 기능하고 있습니다.
 
 하지만 Transformer의 원리에 대해 'Attention(주의 메커니즘)을 사용하여 문맥을 이해한다'와 같은 정성적인 설명은 자주 볼 수 있지만, 그 이면에 있는 **수학적인 구조** 에 대해 초보자를 위해 깊이 파고든 해설은 의외로 적은 것이 현실입니다. AI가 어떻게 '언어'를 '수식'으로 처리하고 놀라울 정도로 자연스러운 문장을 생성해 내는지 진정으로 이해하기 위해서는, 그 수학적 메커니즘을 파헤치는 것이 필수적입니다.
 

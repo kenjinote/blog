@@ -17,7 +17,7 @@ tags:
 
 ## 1. Tahun 2007: "Hari ini, Apple menemukan kembali telepon"
 
-Pada 9 Januari 2007, di panggung Macworld Expo, Steve Jobs memberikan presentasi legendaris yang akan selalu dikenang dalam sejarah teknologi.
+Pada 9 Januari 2007, di panggung Macworld Expo, [Steve Jobs](/id/p/biography-steve-jobs/) memberikan presentasi legendaris yang akan selalu dikenang dalam sejarah teknologi.
 Ia berkata, "Hari ini, kami memperkenalkan tiga produk revolusioner: iPod dengan kontrol sentuh, ponsel revolusioner, dan perangkat komunikasi internet yang inovatif," lalu mengungkapkan bahwa ketiganya bukanlah perangkat yang terpisah, melainkan hanya satu perangkat, yaitu **iPhone**.
 
 Ponsel pada masa itu (seperti BlackBerry) sebagian besar bodinya dipenuhi oleh keyboard fisik berukuran kecil. iPhone menyingkirkan semua keyboard tersebut dan mengadopsi desain yang dianggap gila pada saat itu, dengan mengubah hampir seluruh bagian depan menjadi "layar kaca multi-sentuh". "Layar yang dapat berubah secara fleksibel melalui perangkat lunak" ini adalah awal mula yang sesungguhnya dari revolusi seluler.
@@ -33,7 +33,7 @@ Platform yang memungkinkan para pengembang untuk membuat aplikasi secara bebas d
 
 **iPhone 4** yang diumumkan pada tahun 2010 memperbarui desainnya menjadi bentuk datar (flat) yang terbuat dari kaca dan baja tahan karat, serta dilengkapi dengan **Layar Retina** (Retina Display) beresolusi tinggi yang melampaui batas retina manusia. Kejutan bahwa teks di layar dapat terlihat sejelas materi cetakan telah meningkatkan standar dasar bagi ponsel pintar setelahnya.
 
-Pada **iPhone 4S** yang dirilis tahun 2011, asisten suara **Siri** disematkan untuk pertama kalinya. Fitur ini memperlihatkan masa depan ponsel pintar yang "dioperasikan dengan cara diajak bicara", namun sehari setelah pengumuman ini, Steve Jobs meninggal dunia. iPhone 4S pun menjadi iPhone terakhir yang disaksikan oleh Jobs.
+Pada **iPhone 4S** yang dirilis tahun 2011, asisten suara **Siri** disematkan untuk pertama kalinya. Fitur ini memperlihatkan masa depan ponsel pintar yang "dioperasikan dengan cara diajak bicara", namun sehari setelah pengumuman ini, [Steve Jobs](/id/p/biography-steve-jobs/) meninggal dunia. iPhone 4S pun menjadi iPhone terakhir yang disaksikan oleh Jobs.
 
 ## 4. Layar yang Semakin Besar dan Evolusi Autentikasi Biometrik (2012-2017)
 

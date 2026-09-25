@@ -66,7 +66,7 @@ Este año, me he centrado en la difusión de información con una conciencia de 
 
 Sobre todo, publicar código en GitHub ha sido muy memorable porque a veces recibo comentarios como "¡Estaba atascado en lo mismo, así que me salvó!", lo que me hizo darme cuenta de que mis esfuerzos están ayudando al desarrollo de otras personas.
 
-Además, en mis presentaciones en eventos, a veces recibo comentarios como "Fue fácil de entender incluso para principiantes", lo que también sirvió como una buena oportunidad para pensar en "¿Qué hace que una explicación técnica se transmita bien?".
+Además, en mis presentaciones en eventos, a veces recibo comentarios como "Fue fácil de entender incluso [para principiantes](/es/p/productos-de-cuero%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/)", lo que también sirvió como una buena oportunidad para pensar en "¿Qué hace que una explicación técnica se transmita bien?".
 
 ---
 

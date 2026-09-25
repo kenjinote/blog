@@ -13,7 +13,7 @@ tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 
 소프트웨어 개발 현장에서 개발자 간의 환경 차이로 인해 발생하는 "내 환경에서는 되는데(It works on my machine)"라는 문제는 오랫동안 많은 프로젝트에서 시간을 낭비하게 만드는 요인이었습니다. OS의 차이, 설치된 언어의 버전, 라이브러리의 의존성, 전역으로 설치된 도구의 충돌 등 로컬 환경은 항상 '상태의 불확실성'에 노출되어 있습니다.
 
-이러한 과제를 근본적으로 해결하는 것이 **[Docker](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)** 를 비롯한 컨테이너 기술과 **Infrastructure as Code ([IaC](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/))** 패러다임입니다. 로컬 개발 환경을 컨테이너화함으로써 OS 수준에서의 격리를 실현하고, 코드베이스와 함께 환경 자체를 버전 관리하는 것이 가능해집니다.
+이러한 과제를 근본적으로 해결하는 것이 **[Docker](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)** 를 비롯한 컨테이너 기술과 **[Infrastructure as Code](/ko/p/iac-infrastructure-as-code-terraform/) ([IaC](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/))** 패러다임입니다. 로컬 개발 환경을 컨테이너화함으로써 OS 수준에서의 격리를 실현하고, 코드베이스와 함께 환경 자체를 버전 관리하는 것이 가능해집니다.
 
 본 문서에서는 Docker, Docker Compose, 그리고 VSCode Dev[Container](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)s를 활용하여 **"누가, 언제, 어떤 머신에서 실행하더라도 한 치의 오차 없이 동일한 상태가 되는 재현 가능한 로컬 개발 환경"** 을 구축하기 위한 단계와 그 이면에 있는 깊은 기술적 메커니즘에 대해 수리적 관점도 곁들여 철저하게 해설합니다.
 
@@ -23,13 +23,13 @@ tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 
 ### IaC의 원칙과 로컬 환경에의 적용
 
-Infrastructure as Code (IaC) 란 인프라스트럭처의 설정이나 프로비저닝을 수동 프로세스가 아닌 기계가 읽을 수 있는 정의 파일을 통해 관리하는 접근 방식입니다. IaC의 핵심이 되는 원칙에는 다음 요소들이 포함됩니다.
+[Infrastructure as Code](/ko/p/iac-infrastructure-as-code-terraform/) ([IaC](/ko/p/iac-infrastructure-as-code-terraform/)) 란 인프라스트럭처의 설정이나 프로비저닝을 수동 프로세스가 아닌 기계가 읽을 수 있는 정의 파일을 통해 관리하는 접근 방식입니다. [IaC](/ko/p/iac-infrastructure-as-code-terraform/)의 핵심이 되는 원칙에는 다음 요소들이 포함됩니다.
 
 1. **선언적 접근 (Declarative Approach)**: '어떻게 상태를 변경할 것인가'가 아니라 '최종적으로 어떤 상태여야 하는가'를 정의합니다.
 2. **멱등성 (Idempotency)**: 스크립트를 몇 번 실행하더라도 항상 동일한 결과(상태)가 보장됩니다.
 3. **버전 관리 (Version Control)**: 인프라의 상태가 코드로서 Git 등의 VCS에 저장되어, 변경 이력 추적이나 피어 리뷰가 가능해집니다.
 
-로컬 개발 환경에서 IaC를 실천한다는 것은 `Dockerfile`이나 `docker-compose.yml`, `devcontainer.json`을 사용하여 개발 환경의 '이상적인 모습'을 코드화하는 것을 의미합니다. 이를 통해 새로 팀에 합류한 멤버도 리포지토리를 클론하고 명령어 하나를 실행하는 것만으로 즉시 개발을 시작할 수 있는 온보딩 경험을 실현할 수 있습니다.
+로컬 개발 환경에서 [IaC](/ko/p/iac-infrastructure-as-code-terraform/)를 실천한다는 것은 `Dockerfile`이나 `docker-compose.yml`, `devcontainer.json`을 사용하여 개발 환경의 '이상적인 모습'을 코드화하는 것을 의미합니다. 이를 통해 새로 팀에 합류한 멤버도 리포지토리를 클론하고 명령어 하나를 실행하는 것만으로 즉시 개발을 시작할 수 있는 온보딩 경험을 실현할 수 있습니다.
 
 ### 컨테이너 기술을 지탱하는 커널 기능
 
@@ -129,7 +129,7 @@ $$ R = \left( 1 - \frac{195}{385} \right) \times 100 \approx 49.35\% $$
 
 ## 4. [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/) Compose를 통한 여러 컨테이너 오케스트레이션
 
-최신 웹 애플리케이션 개발에서는 웹 서버, 데이터베이스, 캐시 서버 등 여러 구성 요소가 연동하는 마이크로서비스 아키텍처가 일반적입니다. 로컬 환경에서 이들을 일원화하여 관리하기 위해 `docker-compose.yml`을 사용합니다.
+최신 웹 애플리케이션 개발에서는 웹 서버, 데이터베이스, 캐시 서버 등 여러 구성 요소가 연동하는 [마이크로서비스 아키텍처](/ko/p/microservices-architecture-bff-api-gateway/)가 일반적입니다. 로컬 환경에서 이들을 일원화하여 관리하기 위해 `docker-compose.yml`을 사용합니다.
 
 이번에는 "Web (FastAPI)", "Database (PostgreSQL)", "Cache ([Redis](https://kenji.blog/ko/p/nosql-database-selection-kvs-document-graph-wide-column/))"의 3계층 구조 시스템을 로컬에 구축합니다.
 
@@ -356,7 +356,7 @@ sequenceDiagram
 
 $$ T_{\text{total}} = T_{\text{net}} + T_{\text{app}} + T_{\text{cache}} + p_{\text{miss}} \times (T_{\text{db}} + T_{\text{cache\_write}}) $$
 
-로컬 개발 환경([Docker](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/) 내부)에서는 $T_{\text{net}}$은 거의 0에 가까워지지만, 주목해야 할 것은 **바인드 마운트 시의 I/O 성능** 입니다. 특히 Windows/macOS 상에서 Docker Desktop을 사용하는 경우, 호스트 OS와 VM(컨테이너) 간의 파일 공유 오버헤드로 인해 $T_{\text{app}}$(코드 읽어들이는 시간 등)이 비대해지는 경향이 있습니다. 이 병목 현상을 해소하기 위해 앞서 언급한 Dev[Container](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)s를 이용하여 소스 코드 전체를 명명된 볼륨 내에 배치하거나, WSL2 (Windows Subsystem for Linux 2) 환경 네이티브에서 Docker 엔진을 동작시키는 아키텍처가 강력히 권장됩니다.
+로컬 개발 환경([Docker](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/) 내부)에서는 $T_{\text{net}}$은 거의 0에 가까워지지만, 주목해야 할 것은 **바인드 마운트 시의 I/O 성능** 입니다. 특히 Windows/macOS 상에서 Docker Desktop을 사용하는 경우, 호스트 OS와 VM(컨테이너) 간의 파일 공유 오버헤드로 인해 $T_{\text{app}}$(코드 읽어들이는 시간 등)이 비대해지는 경향이 있습니다. 이 병목 현상을 해소하기 위해 앞서 언급한 Dev[Container](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)s를 이용하여 소스 코드 전체를 명명된 볼륨 내에 배치하거나, [WSL2](/ko/p/wsl2-ultimate-development-setup-guide/) ([Windows Subsystem for Linux](/ko/p/wsl2-ultimate-development-setup-guide/) 2) 환경 네이티브에서 Docker 엔진을 동작시키는 아키텍처가 강력히 권장됩니다.
 
 ---
 

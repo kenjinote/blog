@@ -104,7 +104,7 @@ $$
 VRAM_{required} \approx \left( \frac{P \times bits\_per\_weight}{8} \right) + Context\_Memory
 $$
 
-Incluso con las GPU de gama alta (como la NVIDIA RTX 4090) que pueden comprar los consumidores en general, la VRAM está limitada a 24 GB, por lo que es imposible ejecutar directamente un modelo de la clase 70B. Aquí es donde entran en juego tecnologías de "cuantización (Quantization)" como AWQ o GGUF, produciéndose una lucha técnica para comprimir los pesos a 4 u 8 bits y encontrar un punto de equilibrio; sin embargo, es inevitable cierto deterioro del rendimiento (empeoramiento de la perplejidad o Perplexity) debido a la cuantización.
+Incluso con las GPU de gama alta (como la NVIDIA RTX 4090) que pueden comprar los consumidores en general, la VRAM está limitada a 24 GB, por lo que es imposible ejecutar directamente un modelo de la clase 70B. Aquí es donde entran en juego tecnologías de "cuantización (Quantization)" como AWQ o [GGUF](/es/p/llama-cpp-quantization-gguf/), produciéndose una lucha técnica para comprimir los pesos a 4 u 8 bits y encontrar un punto de equilibrio; sin embargo, es inevitable cierto deterioro del rendimiento (empeoramiento de la perplejidad o Perplexity) debido a la cuantización.
 
 Además, en los últimos años han aparecido "AI PCs" equipados con NPU (Neural Processing Units), pero las TOPS (Tera Operations Per Second) de las NPU actuales solo alcanzan para ejecutar pequeños modelos ligeros (SLM: Small Language Models). Para realizar inferencias verdaderamente avanzadas a nivel local, se requiere la capacidad de capital para construir entornos de múltiples GPUs que cuestan cientos de miles de dólares. Esta es la verdadera naturaleza de la "brecha digital intensiva en capital" en la IA.
 

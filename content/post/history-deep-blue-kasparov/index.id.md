@@ -27,7 +27,7 @@ flowchart TD
   E -- "Proyek IBM" --> F["Deep Blue (1997)"]
 ```
 
-Pada tahun 1950-an, Claude Shannon menerbitkan makalah monumental tentang program catur, meletakkan dasar bagi algoritma pencarian berbasis metode Minimax. Kemudian, antara tahun 1970-an dan 80-an, mesin yang dilengkapi perangkat keras khusus untuk catur mulai bermunculan. "Belle" dari Bell Labs memamerkan kekuatan setingkat master dengan menggunakan sirkuit khusus yang mampu mengevaluasi puluhan ribu posisi per detik.
+Pada tahun 1950-an, Claude Shannon menerbitkan makalah monumental tentang program catur, meletakkan dasar bagi [algoritma pencarian](/id/p/search-algorithms-linear-binary-hash-table-principles/) berbasis metode Minimax. Kemudian, antara tahun 1970-an dan 80-an, mesin yang dilengkapi perangkat keras khusus untuk catur mulai bermunculan. "Belle" dari Bell Labs memamerkan kekuatan setingkat master dengan menggunakan sirkuit khusus yang mampu mengevaluasi puluhan ribu posisi per detik.
 
 Lalu, "Deep Thought", yang dikembangkan oleh mahasiswa Universitas Carnegie Mellon, menjadi komputer pertama yang mengalahkan seorang grandmaster. Proyek ini kemudian diambil alih oleh IBM, yang menyuntikkan dana besar dan rekayasa teknik tingkat tertinggi untuk menciptakan "Deep Blue".
 

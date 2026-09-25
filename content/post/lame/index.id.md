@@ -10,7 +10,7 @@ tags: ["Gabriel Lamé", "Sejarah Matematika", "Teori Bilangan", "Elastisitas", "
 
 ## 1. Pendahuluan: Siapakah [Gabriel Lamé](https://kenji.blog/id/p/lame/)?
 
-[Gabriel Lamé](https://kenji.blog/id/p/lame/) (22 Juli 1795 – 1 Mei 1870) adalah seorang matematikawan, fisikawan, dan insinyur Prancis terkemuka abad ke-19. Kontribusinya mencakup rentang yang sangat luas, dari matematika murni hingga matematika terapan, dan bahkan teknik sipil praktis. Saat ini, namanya tetap terukir dalam buku teks matematika dan fisika melalui **kurva Lamé** (superelips), **Teorema Lamé** dalam algoritma Euklides, dan **parameter [Lamé](https://kenji.blog/id/p/lame/)** dalam teori elastisitas.
+[Gabriel Lamé](https://kenji.blog/id/p/lame/) (22 Juli 1795 – 1 Mei 1870) adalah seorang matematikawan, fisikawan, dan insinyur Prancis terkemuka abad ke-19. Kontribusinya mencakup rentang yang sangat luas, dari matematika murni hingga matematika terapan, dan bahkan teknik sipil praktis. Saat ini, namanya tetap terukir dalam buku teks matematika dan fisika melalui **kurva Lamé** (superelips), **Teorema Lamé** dalam algoritma [Euklides](/id/p/euclid/), dan **parameter [Lamé](https://kenji.blog/id/p/lame/)** dalam teori elastisitas.
 
 Dalam artikel ini, kita akan menelusuri lintasan kehidupan [Lamé](https://kenji.blog/id/p/lame/) yang penuh peristiwa sambil menjelaskan secara komprehensif dan sistematis pencapaian matematika dan fisika inovatif yang ia tinggalkan. Memahami kehidupan dan proses pemikirannya memberikan perspektif yang sangat berharga tentang bagaimana sains abad ke-19 meletakkan dasar bagi era modern.
 
@@ -95,15 +95,15 @@ def calculate_lame_curve(a, b, n, num_points=100):
     return points
 ```
 
-## 4. Kontribusi pada Teori Bilangan: Teorema [Lamé](https://kenji.blog/id/p/lame/) dan Algoritma [Euklides](https://kenji.blog/p/euclid/)
+## 4. Kontribusi pada Teori Bilangan: Teorema [Lamé](https://kenji.blog/id/p/lame/) dan Algoritma [Euklides](https://kenji.blog/id/p/euclid/)
 
 Dalam ilmu komputer dan teori bilangan, apa yang membuat nama [Lamé](https://kenji.blog/id/p/lame/) paling terkenal adalah **Teorema [Lamé](https://kenji.blog/id/p/lame/)**. Ini dikenal sebagai salah satu contoh paling awal dalam sejarah yang mengevaluasi kompleksitas komputasi (waktu eksekusi) suatu algoritma secara matematis dan ketat.
 
 ### 4.1 Tinjauan dan Signifikansi Teorema
 
-**Algoritma [Euklides](https://kenji.blog/p/euclid/)**, yang diwariskan dari Yunani kuno, adalah algoritma yang efisien untuk menemukan pembagi persekutuan terbesar dari dua bilangan asli. Namun, hingga Lamé pada tahun 1844, tidak ada seorang pun yang secara akurat membuktikan dengan pasti "seberapa cepat" algoritma ini selesai. Teorema [Lamé](https://kenji.blog/id/p/lame/) menyatakan hal berikut:
+**Algoritma [Euklides](https://kenji.blog/id/p/euclid/)**, yang diwariskan dari Yunani kuno, adalah algoritma yang efisien untuk menemukan pembagi persekutuan terbesar dari dua bilangan asli. Namun, hingga Lamé pada tahun 1844, tidak ada seorang pun yang secara akurat membuktikan dengan pasti "seberapa cepat" algoritma ini selesai. Teorema [Lamé](https://kenji.blog/id/p/lame/) menyatakan hal berikut:
 
-> "Ketika mencari pembagi persekutuan terbesar dari dua bilangan bulat menggunakan algoritma [Euklides](https://kenji.blog/p/euclid/), jumlah pembagian (langkah) yang diperlukan tidak pernah melebihi 5 kali jumlah digit desimal dari bilangan yang lebih kecil."
+> "Ketika mencari pembagi persekutuan terbesar dari dua bilangan bulat menggunakan algoritma [Euklides](https://kenji.blog/id/p/euclid/), jumlah pembagian (langkah) yang diperlukan tidak pernah melebihi 5 kali jumlah digit desimal dari bilangan yang lebih kecil."
 
 Dinyatakan sebagai rumus, yaitu:
 
@@ -111,7 +111,7 @@ $$ \text{Jumlah langkah} \le 5 \times \text{Jumlah digit dari bilangan yang lebi
 
 ### 4.2 Hubungan Mendalam dengan Deret [Fibonacci](https://kenji.blog/id/p/fibonacci/)
 
-Dalam proses pembuktian teorema ini, [Lamé](https://kenji.blog/id/p/lame/) menemukan bahwa skenario terburuk (berarti yang mengambil langkah paling banyak) untuk algoritma Euklides terjadi ketika inputnya adalah dua **bilangan Fibonacci** yang berurutan. Dengan memanfaatkan tingkat pertumbuhan deret Fibonacci dan sifat-sifat rasio emas, ia memperoleh batas atas yang indah ini. Karena pencapaian ini, [Lamé](https://kenji.blog/id/p/lame/) dianggap sebagai salah satu "bapak teori kompleksitas" dalam ilmu komputer modern.
+Dalam proses pembuktian teorema ini, [Lamé](https://kenji.blog/id/p/lame/) menemukan bahwa skenario terburuk (berarti yang mengambil langkah paling banyak) untuk algoritma [Euklides](/id/p/euclid/) terjadi ketika inputnya adalah dua **bilangan Fibonacci** yang berurutan. Dengan memanfaatkan tingkat pertumbuhan deret Fibonacci dan sifat-sifat rasio emas, ia memperoleh batas atas yang indah ini. Karena pencapaian ini, [Lamé](https://kenji.blog/id/p/lame/) dianggap sebagai salah satu "bapak teori kompleksitas" dalam ilmu komputer modern.
 
 ## 5. Kontribusi pada Fisika: Teori Elastisitas dan Parameter [Lamé](https://kenji.blog/id/p/lame/)
 
@@ -139,9 +139,9 @@ Secara khusus, untuk memecahkan **persamaan Laplace**, yang menggambarkan fenome
 
 ## 7. Tantangan dan Kemunduran dengan [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/)
 
-Sebuah episode dramatis dalam kehidupan [Lamé](https://kenji.blog/id/p/lame/) adalah usahanya untuk membuktikan **Teorema Terakhir Fermat** pada tahun 1847. Pada bulan Maret tahun itu, Lamé dengan bangga mengumumkan di Akademi Ilmu Pengetahuan Prancis bahwa ia telah "sepenuhnya membuktikan [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/)." Buktinya melibatkan pendekatan yang sangat inovatif dan kuat pada masa itu: memfaktorkan persamaan menggunakan bilangan kompleks siklotomik.
+Sebuah episode dramatis dalam kehidupan [Lamé](https://kenji.blog/id/p/lame/) adalah usahanya untuk membuktikan **[Teorema Terakhir Fermat](/id/p/fermats-last-theorem/)** pada tahun 1847. Pada bulan Maret tahun itu, Lamé dengan bangga mengumumkan di Akademi Ilmu Pengetahuan Prancis bahwa ia telah "sepenuhnya membuktikan [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/)." Buktinya melibatkan pendekatan yang sangat inovatif dan kuat pada masa itu: memfaktorkan persamaan menggunakan bilangan kompleks siklotomik.
 
-Namun, segera setelah presentasinya, koleganya, matematikawan Joseph [Liouville](https://kenji.blog/id/p/liouville/), dengan tajam menunjukkan bahwa "bukti tersebut bersandar pada asumsi diam-diam yang belum terbukti bahwa 'faktorisasi prima unik' juga berlaku di ranah bilangan kompleks." Tak lama kemudian, sepucuk surat tiba dari matematikawan Jerman Ernst Kummer yang menunjukkan bahwa "faktorisasi prima unik secara umum tidak berlaku," yang secara efektif membuat bukti [Lamé](https://kenji.blog/id/p/lame/) tidak sah.
+Namun, segera setelah presentasinya, koleganya, matematikawan Joseph [Liouville](https://kenji.blog/id/p/liouville/), dengan tajam menunjukkan bahwa "bukti tersebut bersandar pada asumsi diam-diam yang belum terbukti bahwa 'faktorisasi prima unik' juga berlaku di ranah bilangan kompleks." Tak lama kemudian, sepucuk surat tiba dari matematikawan Jerman [Ernst Kummer](/id/p/kummer/) yang menunjukkan bahwa "faktorisasi prima unik secara umum tidak berlaku," yang secara efektif membuat bukti [Lamé](https://kenji.blog/id/p/lame/) tidak sah.
 
 Ini adalah kemunduran besar bagi [Lamé](https://kenji.blog/id/p/lame/), tetapi serangkaian diskusi ini memicu lahirnya teori "bilangan ideal" (ideals) Kummer, yang kemudian membuka bidang matematika masif teori bilangan aljabar. Tantangan berani [Lamé](https://kenji.blog/id/p/lame/) pada akhirnya mendorong sejarah matematika maju secara signifikan.
 

@@ -169,9 +169,9 @@ $$
 
 在這裡，康托爾面臨了一個巨大的疑問： **「是否存在具有介於 $\aleph_0$ 與 $2^{\aleph_0}$ 之間勢的無限集合？」** 
 
-主張「不存在中間的勢」的假設，被稱為 **連續統假設（[Continuum Hypothesis](https://kenji.blog/zh-tw/p/continuum-hypothesis/), CH）** 。康托爾將一生奉獻於這個證明，但始終未能解決。
+主張「不存在中間的勢」的假設，被稱為 **[連續統假設](/zh-tw/p/continuum-hypothesis/)（[Continuum Hypothesis](https://kenji.blog/zh-tw/p/continuum-hypothesis/), CH）** 。康托爾將一生奉獻於這個證明，但始終未能解決。
 
-後來，[庫爾特·哥德爾](https://kenji.blog/zh-tw/p/godel/)（[Kurt Gödel](https://kenji.blog/zh-tw/p/godel/)）與保羅·寇恩（Paul Cohen）證明了連續統假設 **「在目前的數學公理系統（ZFC）中，既無法證明也無法證偽（是獨立的）」** 。這是 20 世紀數學中最深奧的發現之一。
+後來，[庫爾特·哥德爾](https://kenji.blog/zh-tw/p/godel/)（[Kurt Gödel](https://kenji.blog/zh-tw/p/godel/)）與保羅·寇恩（Paul Cohen）證明了[連續統假設](/zh-tw/p/continuum-hypothesis/) **「在目前的數學公理系統（ZFC）中，既無法證明也無法證偽（是獨立的）」** 。這是 20 世紀數學中最深奧的發現之一。
 
 ---
 

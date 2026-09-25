@@ -20,7 +20,7 @@ tags:
 
 網路瀏覽器長期以來一直被 JavaScript 這一單一語言所主導。然而，隨著網頁應用程式變得日益複雜，並要求媲美原生應用程式的效能時，單靠 JavaScript 的極限也逐漸顯現。於是， **WebAssembly (Wasm)** 應運而生。
 
-WebAssembly 是一種能在瀏覽器上以接近原生程式碼的速度執行的新型二進位格式。它由 C、C++、[Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 等程式語言編譯生成，如今不僅在網頁開發，更在伺服器端、邊緣運算，甚至是物聯網（IoT）裝置等廣泛領域帶來了創新。
+WebAssembly 是一種能在瀏覽器上以接近原生程式碼的速度執行的新型二進位格式。它由 C、C++、[Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 等程式語言編譯生成，如今不僅在網頁開發，更在伺服器端、邊緣運算，甚至是[物聯網](/zh-tw/p/technology-iot/)（IoT）裝置等廣泛領域帶來了創新。
 
 本文將從 WebAssembly 的基本概念出發，深入解析 C 與 Rust 如何在瀏覽器內執行的技術原理、與 JavaScript 的協作、效能比較，以及在瀏覽器外世界的應用（WASI），帶您徹底了解 WebAssembly 的現在與未來。
 
@@ -167,7 +167,7 @@ pub fn greet(name: &str) {
 ## 4.1 基準測試：費氏數列
 
 讓我們用簡單的費氏數列計算，來比較 JavaScript 與 Rust (Wasm) 的速度。
-在數學上，它可以由以下的遞迴式表示。其時間複雜度為指數級 `$ O(2^n) $` ，會大量消耗 CPU 資源。
+在數學上，它可以由以下的遞迴式表示。其時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)為指數級 `$ O(2^n) $` ，會大量消耗 CPU 資源。
 
 $$
 F(n) =
@@ -261,7 +261,7 @@ Wasm 具備比容器更輕量、啟動更快（僅需幾毫秒），且不依賴
 目前 WebAssembly 最大的挑戰在於，很難讓以不同語言寫成的 Wasm 模組互相協作（因為字串或複雜資料型別在不同語言中的記憶體表示方式不同）。
 
 為了解決這個問題， **WebAssembly Component Model** 應運而生。
-一旦元件模型實現，就能輕易達成「從 Python 寫成的 Wasm 模組中，無縫呼叫 [Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 寫成的 Wasm 模組」等操作。這蘊含著成為不依賴平台與語言之次世代微服務架構基礎的潛力。
+一旦元件模型實現，就能輕易達成「從 Python 寫成的 Wasm 模組中，無縫呼叫 [Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 寫成的 Wasm 模組」等操作。這蘊含著成為不依賴平台與語言之次世代[微服務架構](/zh-tw/p/microservices-architecture-bff-api-gateway/)基礎的潛力。
 
 ## 8.2 作為外掛程式系統的 Wasm
 現在，Figma、EnvoyProxy、Microsoft Flight Simulator 等眾多軟體，都已採用 WebAssembly 作為其專屬的外掛程式系統。因為它能安全且高速地在應用程式本體內執行使用者所建立的第三方應用程式碼。

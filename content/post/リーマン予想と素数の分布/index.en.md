@@ -14,7 +14,7 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 "Prime Numbers" are natural numbers divisible only by 1 and themselves, often called the "atoms" in the world of mathematics. The sequence of 2, 3, 5, 7, 11, 13... appears at first glance to be unordered and random. Ever since the ancient Greek mathematician [Euclid](https://kenji.blog/en/p/euclid/) proved that "there are infinitely many prime numbers," countless mathematicians have challenged themselves to unravel the regularity hidden in the arrangement of these primes.
 
-The closest anyone has come to the mystery of prime numbers is the **"[Riemann](https://kenji.blog/en/p/riemann/) Hypothesis"** proposed by the German mathematician Bernhard Riemann in 1859. The [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis is one of the most important and unsolved difficult problems in modern mathematics, and carries a $1 million prize as one of the Millennium Prize Problems designated by the Clay Mathematics Institute.
+The closest anyone has come to the mystery of prime numbers is the **"[Riemann](https://kenji.blog/en/p/riemann/) Hypothesis"** proposed by the German mathematician [Bernhard Riemann](/en/p/riemann/) in 1859. The [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis is one of the most important and unsolved difficult problems in modern mathematics, and carries a $1 million prize as one of the Millennium Prize Problems designated by the Clay Mathematics Institute.
 
 At first glance, a difficult problem in pure mathematics regarding the distribution of prime numbers may seem unrelated to our daily lives. However, internet security, which supports the infrastructure of modern society, especially **modern cryptographic technologies such as [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography and Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECC)**, relies deeply on the properties of gigantic prime numbers.
 
@@ -153,7 +153,7 @@ graph LR
     F -.-> G["d cannot be calculated without knowing p and q"]
 ```
 
-To break [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography, one must find (factorize) the original primes $p$ and $q$ from a massive $N$. Even using currently mainstream algorithms (such as the General Number Field Sieve, GNFS), factorizing a number with hundreds of digits would take significantly more time than the age of the universe, even with a supercomputer.
+To break [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography, one must find (factorize) the original primes $p$ and $q$ from a massive $N$. Even using currently mainstream algorithms (such as the [General Number Field Sieve](/en/p/beyond-gnfs-integer-factorization-algorithms/), GNFS), factorizing a number with hundreds of digits would take significantly more time than the age of the universe, even with a supercomputer.
 
 ---
 
@@ -185,7 +185,7 @@ There is an urban legend that says, "If the [Riemann](https://kenji.blog/en/p/ri
 The proof of the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis itself would not immediately yield a magical algorithm that drastically speeds up integer factorization. This is because the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis is ultimately a theorem about the "macroscopic regularity of the distribution" of primes, and it does not directly tell us which primes divide an individual number $N$ (a local property).
 
 However, the impact is not zero.
-This is because, in the process of proving the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis, it is extremely likely that **"new mathematical tools" and "unknown analytical methods"** will be discovered. Looking at history, when Fermat's Last Theorem or the [Poincaré Conjecture](https://kenji.blog/en/p/poincare-conjecture/) were proven, the new theories developed during the process greatly advanced the entirety of mathematics.
+This is because, in the process of proving the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis, it is extremely likely that **"new mathematical tools" and "unknown analytical methods"** will be discovered. Looking at history, when [Fermat's Last Theorem](/en/p/fermats-last-theorem/) or the [Poincaré Conjecture](https://kenji.blog/en/p/poincare-conjecture/) were proven, the new theories developed during the process greatly advanced the entirety of mathematics.
 
 If unknown algebraic geometry methods or non-commutative geometry methods are established that can completely manipulate the properties of the zeros of the [Riemann](https://kenji.blog/en/p/riemann/) Zeta function, it cannot be denied that this might ultimately lead to the discovery of a groundbreaking integer factorization algorithm (for example, a classical algorithm that reduces the computational complexity to polynomial time). In that sense, cryptographers can never take their eyes off the developments surrounding the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis.
 

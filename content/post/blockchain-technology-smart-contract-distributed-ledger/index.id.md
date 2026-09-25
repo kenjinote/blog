@@ -15,7 +15,7 @@ tags:
 
 ---
 
-Di ekonomi digital modern, teknologi **blockchain** dan **smart contract** membawa transformasi disruptif ke berbagai industri, mulai dari keuangan hingga rantai pasokan dan manajemen identitas. Artikel ini akan membahas secara komprehensif dan mendalam mengenai prinsip dasar buku besar terdistribusi yang mendukungnya, latar belakang matematis dari algoritma konsensus, struktur internal Ethereum Virtual Machine (EVM), implementasi smart contract yang beroperasi di dunia nyata, serta kerentanan fatal yang tersembunyi di dalamnya.
+Di ekonomi digital modern, teknologi **blockchain** dan **smart contract** membawa transformasi disruptif ke berbagai industri, mulai dari keuangan hingga rantai pasokan dan manajemen identitas. Artikel ini akan membahas secara komprehensif dan mendalam mengenai prinsip dasar buku besar terdistribusi yang mendukungnya, latar belakang matematis dari [algoritma konsensus](/id/p/byzantine-generals-problem-consensus/), struktur internal Ethereum Virtual Machine (EVM), implementasi smart contract yang beroperasi di dunia nyata, serta kerentanan fatal yang tersembunyi di dalamnya.
 
 ## 1. Prinsip Dasar Blockchain dan Teknologi Buku Besar Terdistribusi (DLT)
 
@@ -58,11 +58,11 @@ flowchart LR
     C2 --> B3
 ```
 
-Misalkan sebuah node jahat memanipulasi data transaksi dari **Block 1** di masa lalu. Maka, berdasarkan sifat fungsi hash, nilai hash baru dari Block 1 akan berubah sepenuhnya dari `0xA1B2...` yang asli. Akibatnya, nilai tersebut tidak lagi cocok dengan `Prev Hash` yang tercatat di **Block 2**, sehingga merusak integritas rantai. Untuk mempertahankan integritas, nilai hash dari semua blok setelah blok yang dimanipulasi harus dihitung ulang. Dikombinasikan dengan algoritma konsensus seperti PoW yang dibahas kemudian, perhitungan ulang ini membutuhkan daya komputasi (biaya) yang astronomis, yang secara praktis membuat manipulasi menjadi tidak mungkin.
+Misalkan sebuah node jahat memanipulasi data transaksi dari **Block 1** di masa lalu. Maka, berdasarkan sifat fungsi hash, nilai hash baru dari Block 1 akan berubah sepenuhnya dari `0xA1B2...` yang asli. Akibatnya, nilai tersebut tidak lagi cocok dengan `Prev Hash` yang tercatat di **Block 2**, sehingga merusak integritas rantai. Untuk mempertahankan integritas, nilai hash dari semua blok setelah blok yang dimanipulasi harus dihitung ulang. Dikombinasikan dengan [algoritma konsensus](/id/p/byzantine-generals-problem-consensus/) seperti PoW yang dibahas kemudian, perhitungan ulang ini membutuhkan daya komputasi (biaya) yang astronomis, yang secara praktis membuat manipulasi menjadi tidak mungkin.
 
 ## 2. Eksplorasi Mendalam tentang Algoritma Konsensus
 
-Karena tidak ada administrator terpusat di jaringan, algoritma untuk menyepakati (konsensus) antar node tentang "transaksi mana yang benar" dan "siapa yang akan menghasilkan blok berikutnya" sangat diperlukan. Ini menjadi kunci untuk menyelesaikan **Masalah Jenderal Bizantium (Byzantine Generals Problem)** dalam komputasi terdistribusi.
+Karena tidak ada administrator terpusat di jaringan, algoritma untuk menyepakati (konsensus) antar node tentang "transaksi mana yang benar" dan "siapa yang akan menghasilkan blok berikutnya" sangat diperlukan. Ini menjadi kunci untuk menyelesaikan **[Masalah Jenderal Bizantium](/id/p/byzantine-generals-problem/) (Byzantine Generals Problem)** dalam komputasi terdistribusi.
 
 ### 2.1 Proof of Work (PoW)
 

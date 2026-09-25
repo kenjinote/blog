@@ -27,7 +27,7 @@ En 1906, a la edad de 18 años, Mordell viajó solo a Inglaterra con muy poco di
 
 El centro de la investigación de Mordell fueron siempre las **ecuaciones diofánticas**. Una ecuación diofántica es un problema en el que se buscan soluciones enteras o racionales a ecuaciones polinómicas con coeficientes enteros. Lleva el nombre del antiguo matemático griego [Diofanto](https://kenji.blog/es/p/diophantus/).
 
-El ejemplo más famoso de ecuación diofántica es la relacionada con el teorema de Pitágoras:
+El ejemplo más famoso de ecuación diofántica es la relacionada con el teorema de [Pitágoras](/es/p/pythagoras/):
 
 $$ x^2 + y^2 = z^2 $$
 

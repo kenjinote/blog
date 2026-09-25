@@ -12,7 +12,7 @@ image: "eyecatch.jpg"
 
 Dalam perang paling kejam dalam sejarah manusia, Perang Dunia II, bukan hanya kekuatan senjata dan jumlah tentara yang menentukan kemenangan. Hal yang sangat memengaruhi jalannya perang adalah senjata tak kasat mata bernama "informasi", dan pertempuran kriptografi sengit yang terjadi di baliknya.
 
-Jerman Nazi memiliki kepercayaan penuh pada mesin sandi "Enigma". Strukturnya yang rumit dan aneh diyakini tidak mungkin dipecahkan oleh manusia atau mesin mana pun pada masa itu. Namun, para jenius yang dikumpulkan di fasilitas sangat rahasia Inggris, "Bletchley Park", menantang masalah sulit yang dianggap mustahil ini. Di pusat upaya tersebut adalah ahli matematika jenius, yang kemudian juga dikenal sebagai "Bapak Ilmu Komputer", Alan Turing.
+Jerman Nazi memiliki kepercayaan penuh pada mesin sandi "Enigma". Strukturnya yang rumit dan aneh diyakini tidak mungkin dipecahkan oleh manusia atau mesin mana pun pada masa itu. Namun, para jenius yang dikumpulkan di fasilitas sangat rahasia Inggris, "Bletchley Park", menantang masalah sulit yang dianggap mustahil ini. Di pusat upaya tersebut adalah ahli matematika jenius, yang kemudian juga dikenal sebagai "[Bapak Ilmu Komputer](/id/p/biography-donald-knuth/)", Alan Turing.
 
 Artikel ini akan mengungkap secara rinci drama epik yang tersembunyi di balik sejarah, mulai dari mekanisme luar biasa Enigma, kontribusi para pendahulu dalam perjalanan menuju pemecahannya, pertempuran mematikan di Bletchley Park yang berpusat pada Turing, hingga akhir tragis sang jenius.
 

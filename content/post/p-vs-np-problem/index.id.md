@@ -11,7 +11,7 @@ tags: ["complexity-theory", "p-vs-np", "np-complete", "millennium-prize", "pytho
 
 Dalam ilmu komputer, dan juga dalam matematika modern, terdapat masalah belum terpecahkan yang paling terkenal dan paling penting. Itu adalah **Masalah P vs NP** .
 
-Pada tahun 2000, Clay Mathematics Institute menawarkan hadiah masing-masing 1 juta dolar untuk 7 masalah matematika yang belum terpecahkan. Ini disebut **Masalah Hadiah Milenium** . Ada yang sudah dipecahkan seperti Konjektur Poincaré, tetapi **Masalah P vs NP** masih belum menunjukkan sedikit pun petunjuk penyelesaian sepenuhnya.
+Pada tahun 2000, Clay Mathematics Institute menawarkan hadiah masing-masing 1 juta dolar untuk 7 masalah matematika yang belum terpecahkan. Ini disebut **Masalah Hadiah Milenium** . Ada yang sudah dipecahkan seperti [Konjektur Poincaré](/id/p/poincare-conjecture/), tetapi **Masalah P vs NP** masih belum menunjukkan sedikit pun petunjuk penyelesaian sepenuhnya.
 
 Dalam artikel ini, kami akan menggali lebih dalam dan menjelaskan seluruh gambaran dari **Masalah P vs NP** ini, mulai dari dasar-dasar kelas kompleksitas komputasi (P, NP, NP-Lengkap, NP-Sulit), signifikansi praktis dalam pemrograman, hingga dampaknya pada dunia jika masalah ini terpecahkan.
 
@@ -62,7 +62,7 @@ Secara sederhana, itu adalah **"masalah di mana komputer dapat menemukan jawaban
 - **Masalah Rute Terpendek**: Seperti navigasi mobil, menemukan rute terpendek antara 2 titik (dengan algoritma [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/) $O(E + V \log V)$).
 - **Masalah Pengujian Primalitas**: Menentukan apakah suatu bilangan adalah bilangan prima (telah dibuktikan bahwa ini dapat dipecahkan dalam waktu polinomial oleh algoritma AKS).
 
-Berikut ini adalah implementasi Python dari algoritma pencarian biner, yang merupakan contoh representatif dari Kelas P.
+Berikut ini adalah implementasi Python dari [algoritma pencarian](/id/p/search-algorithms-linear-binary-hash-table-principles/) biner, yang merupakan contoh representatif dari Kelas P.
 
 ```python
 def binary_search(arr, target):
@@ -282,7 +282,7 @@ Ketika jumlah kota melampaui $N=20$, solusi eksak (brute-force) akan memakan wak
 
 ## 7. Bagaimana Jika P = NP?
 
-Saat ini, sistem kriptografi di seluruh dunia (seperti SSL/TLS yang digunakan dalam belanja online, dan blockchain seperti Bitcoin) memanfaatkan asimetri **"butuh waktu yang sangat lama untuk dipecahkan, tetapi verifikasi dapat dilakukan dalam sekejap"** .
+Saat ini, sistem kriptografi di seluruh dunia (seperti SSL/TLS yang digunakan dalam belanja online, dan [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/) seperti Bitcoin) memanfaatkan asimetri **"butuh waktu yang sangat lama untuk dipecahkan, tetapi verifikasi dapat dilakukan dalam sekejap"** .
 
 Faktorisasi prima yang menjadi inti dari kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) adalah salah satunya.
 Misalkan seseorang membuktikan bahwa $P = NP$ dan membangun algoritma ajaib (pembuktian konstruktif) yang memecahkan masalah NP dalam waktu polinomial. Hal itu akan memicu **pergeseran paradigma dalam peradaban manusia** sebagai berikut.
@@ -376,7 +376,7 @@ print(f"Nilai maksimal ransel: {knapsack_dp(weights, values, capacity)}")
 
 Hadiah 1 juta dolar dari Clay Mathematics Institute mungkin terlalu murah mengingat seberapa pentingnya masalah ini. Jika Anda berhasil menyelesaikan algoritma pembuktian $P = NP$, Anda bahkan bisa mentransfer semua mata uang kripto ke dompet Anda sendiri sebelum menerima hadiahnya (tentu saja, secara etika Anda sama sekali tidak boleh melakukannya).
 
-Akankah kita melihat akhir dari masalah ini di masa hidup kita melalui terobosan penelitian masa depan? Atau akankah dibuktikan bahwa itu "tidak mungkin dibuktikan atau disangkal" seperti Teorema Ketidaklengkapan Gödel? Kita harus terus memantau garis depan dari teori kompleksitas komputasi.
+Akankah kita melihat akhir dari masalah ini di masa hidup kita melalui terobosan penelitian masa depan? Atau akankah dibuktikan bahwa itu "tidak mungkin dibuktikan atau disangkal" seperti [Teorema Ketidaklengkapan Gödel](/id/p/godels-incompleteness-theorems/)? Kita harus terus memantau garis depan dari teori kompleksitas komputasi.
 
 > **Referensi / Tautan Terkait**
 > - Masalah Hadiah Milenium Clay Mathematics Institute (Clay Mathematics Institute)

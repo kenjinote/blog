@@ -34,7 +34,7 @@ tags:
 
 > 定义在代数数域 $K$ 上且亏格 $g \ge 2$ 的代数曲线，在 $K$ 上只有有限多个有理点。
 
-这个猜想与毕达哥拉斯定理和[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)有着深刻的联系，是一个多年来令许多天才数学家挑战并折戟的艰巨问题。
+这个猜想与[毕达哥拉斯](/zh-cn/p/pythagoras/)定理和[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)有着深刻的联系，是一个多年来令许多天才数学家挑战并折戟的艰巨问题。
 
 法尔廷斯巧妙地操纵了[亚历山大·格罗滕迪克](https://kenji.blog/zh-cn/p/grothendieck/)构建的庞大代数几何机器（如概形理论和平展上同调），并进一步引入了称为阿拉克洛夫几何的新框架，从而攻克了这个问题。
 

@@ -16,7 +16,7 @@ No entanto, você sabia que os "três grandes pilares da orientação a objetos"
 
 O estilo que escrevemos diariamente — "definir uma classe, criar uma instância e chamar um método usando a notação de ponto" — é certamente uma forma de orientação a objetos construída por linguagens específicas (como C++ e Java). No entanto, isso é apenas uma pequena parte do vasto conceito de orientação a objetos, ou apenas uma interpretação específica.
 
-Neste artigo, retornaremos à história inicial de como o termo orientação a objetos surgiu e à visão que Alan Kay realmente queria alcançar. A palavra-chave para isso é o **"Messaging" (Troca de Mensagens)**. Ao entender corretamente o conceito de mensagens, a sua visão sobre design de sistemas se expandirá muito, e você obterá percepções profundas que se aplicam ao design de sistemas distribuídos modernos, como arquitetura de microsserviços e o modelo de atores.
+Neste artigo, retornaremos à história inicial de como o termo orientação a objetos surgiu e à visão que Alan Kay realmente queria alcançar. A palavra-chave para isso é o **"Messaging" (Troca de Mensagens)**. Ao entender corretamente o conceito de mensagens, a sua visão sobre design de sistemas se expandirá muito, e você obterá percepções profundas que se aplicam ao design de [sistemas distribuídos](/pt/p/cap-theorem-distributed-systems-tradeoff/) modernos, como [arquitetura de microsserviços](/pt/p/microservices-architecture-bff-api-gateway/) e o modelo de atores.
 
 ## 2. A Visão de Alan Kay: Inspiração na Biologia
 
@@ -72,7 +72,7 @@ As características do messaging são as seguintes:
 2. **Delegação e Ignorar Mensagens**
    Quando um objeto recebe uma mensagem que não entende, ele não precisa apenas gerar um erro; ele pode agir de forma autônoma e flexível, como encaminhar a mensagem para outro objeto ou ignorá-la.
 3. **Transparência de Rede**
-   O paradigma de mensagens pode lidar da mesma forma com objetos que estão no mesmo espaço de memória (processo) ou objetos que estão em servidores separados através de uma rede. Enquanto a chamada de método pressupõe estar no mesmo espaço de memória, o messaging tem a propriedade de escalar naturalmente para sistemas distribuídos.
+   O paradigma de mensagens pode lidar da mesma forma com objetos que estão no mesmo espaço de memória (processo) ou objetos que estão em servidores separados através de uma rede. Enquanto a chamada de método pressupõe estar no mesmo espaço de memória, o messaging tem a propriedade de escalar naturalmente para [sistemas distribuídos](/pt/p/cap-theorem-distributed-systems-tradeoff/).
 
 ## 4. Por que "Classes" e "Herança" causaram mal-entendidos?
 
@@ -116,7 +116,7 @@ flowchart LR
 
 Em Erlang/Elixir, centenas de milhares de atores (processos) leves rodam em paralelo, construindo um sistema enorme através da troca de mensagens entre si. Se um ator falhar, ele envia uma mensagem para outro ator reiniciá-lo (a filosofia "Let it crash"), alcançando uma tolerância a falhas extremamente alta.
 
-Além disso, a moderna **"Arquitetura de Microsserviços (Microservices Architecture)"** também é essencialmente uma versão gigante da orientação a objetos baseada em mensagens. Se considerarmos cada microsserviço como um "objeto" gigante, eles ocultam completamente o seu próprio banco de dados (estado interno) e constroem todo o sistema trocando "mensagens" através de REST APIs, gRPC, Kafka, etc.
+Além disso, a moderna **"[Arquitetura de Microsserviços](/pt/p/microservices-architecture-bff-api-gateway/) (Microservices Architecture)"** também é essencialmente uma versão gigante da orientação a objetos baseada em mensagens. Se considerarmos cada microsserviço como um "objeto" gigante, eles ocultam completamente o seu próprio banco de dados (estado interno) e constroem todo o sistema trocando "mensagens" através de REST APIs, gRPC, Kafka, etc.
 
 A visão com a qual Alan Kay sonhava, onde "objetos espalhados por diferentes nós em uma rede enviam mensagens uns aos outros", foi inesperadamente realizada na forma de microsserviços na era nativa da nuvem.
 

@@ -63,7 +63,7 @@ $$
 f(x) = \frac{1}{1-x} \cdot \frac{1}{1-x^2} \cdot \frac{1}{1-x^5}
 $$
 
-Mit anderen Worten, ohne komplexe Rekursionsgleichungen oder Schleifenberechnungen zu verwenden, können Sie die Anzahl der Kombinationen für jedes $n$ ermitteln, indem Sie einfach die Koeffizienten der Taylor-Entwicklung dieser Funktion finden. In der Programmierung ist dieses Konzept eine wichtige Grundlage für die dynamische Programmierung ([DP](https://kenji.blog/de/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)).
+Mit anderen Worten, ohne komplexe Rekursionsgleichungen oder Schleifenberechnungen zu verwenden, können Sie die Anzahl der Kombinationen für jedes $n$ ermitteln, indem Sie einfach die Koeffizienten der Taylor-Entwicklung dieser Funktion finden. In der Programmierung ist dieses Konzept eine wichtige Grundlage für die [dynamische Programmierung](/de/p/dp-algorithm-master-guide/) ([DP](https://kenji.blog/de/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)).
 
 ### Faltung und Polynommultiplikation
 
@@ -160,7 +160,7 @@ Unter Verwendung dieser Eigenschaft kann die Anzahl der Möglichkeiten, Elemente
 In der modernen Informatik und der wettbewerbsorientierten Programmierung werden erzeugende Funktionen als **formale Potenzreihen** (Formal Power Series, FPS) implementiert.
 Bei FPS ist es uns egal, ob das Einsetzen eines bestimmten numerischen Wertes für $x$ konvergiert (analytische Eigenschaften); der Fokus liegt einfach darauf, die „Folge von Koeffizienten“ algebraisch wie Polynome zu manipulieren.
 
-Unter Verwendung der schnellen Fourier-Transformation (FFT) oder der zahlentheoretischen Transformation (NTT) kann das Produkt zweier Polynome vom Grad $N$ (d. h. die Faltung von Folgen der Länge $N$) mit einer Rechenkomplexität von $\mathcal{O}(N \log N)$ gefunden werden. Dies ermöglicht es, Berechnungen, die mit dynamischer Programmierung $\mathcal{O}(N^2)$ benötigen würden, drastisch zu beschleunigen.
+Unter Verwendung der schnellen Fourier-Transformation ([FFT](/de/p/fast-fourier-transform-algorithm/)) oder der zahlentheoretischen Transformation (NTT) kann das Produkt zweier Polynome vom Grad $N$ (d. h. die Faltung von Folgen der Länge $N$) mit einer Rechenkomplexität von $\mathcal{O}(N \log N)$ gefunden werden. Dies ermöglicht es, Berechnungen, die mit dynamischer Programmierung $\mathcal{O}(N^2)$ benötigen würden, drastisch zu beschleunigen.
 
 ## 6. Fazit
 

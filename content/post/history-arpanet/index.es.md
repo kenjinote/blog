@@ -35,7 +35,7 @@ El mayor desafío técnico al construir la red era "cómo enviar y recibir datos
 Para resolver este problema, se ideó un concepto de comunicación completamente nuevo simultáneamente. Este es el método de "conmutación de paquetes".
 
 Paul Baran, del RAND Corporation en EE. UU., construyó la teoría de una "red distribuida" que divide los datos en partes pequeñas y los transfiere a través de rutas separadas en una red en forma de malla, con el fin de aumentar la supervivencia de las comunicaciones militares.
-Por otro lado, Donald Davies del Laboratorio Nacional de Física (NPL) en el Reino Unido llegó de forma independiente a un concepto similar y nombró a las agrupaciones de datos divididos como "paquetes". Además, Leonard Kleinrock del Instituto de Tecnología de Massachusetts (MIT) demostró matemáticamente la eficiencia de este método de transferencia de datos utilizando la teoría de colas.
+Por otro lado, Donald Davies del Laboratorio Nacional de Física (NPL) en el Reino Unido llegó de forma independiente a un concepto similar y nombró a las agrupaciones de datos divididos como "paquetes". Además, Leonard Kleinrock del Instituto de Tecnología de Massachusetts (MIT) demostró matemáticamente la eficiencia de este método de transferencia de datos utilizando la [teoría de colas](/es/p/queuing-theory-basics/).
 
 ```mermaid
 graph TD

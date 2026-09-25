@@ -14,7 +14,7 @@ description: '从零知识证明（ZKP）的数学基础，到zk-SNARKs、zk-STA
 
 在现代数字社会中，数据隐私和可扩展性已成为最重要的两个课题。随着个人信息泄露和被滥用的风险不断增加，“在不向对方透露关于自己信息的情况下，证明自己拥有该信息”的技术需求变得日益强烈。实现这一点的正是 **零知识证明（Zero-Knowledge Proof: ZKP）** 。
 
-零知识证明是20世纪80年代由Shafi Goldwasser、Silvio Micali和Charles Rackoff首次提出的密码学理论概念，但在很长一段时间内仅停留在理论研究阶段。然而，随着区块链技术和Web3的崛起，情况发生了巨大变化。以太坊等公有链面临着可扩展性问题（处理能力的极限）和隐私问题（所有交易都是公开的），而ZKP作为能同时解决这两大问题的“魔法棒”，一跃成为了众人瞩目的焦点。
+零知识证明是20世纪80年代由Shafi Goldwasser、Silvio Micali和Charles Rackoff首次提出的密码学理论概念，但在很长一段时间内仅停留在理论研究阶段。然而，随着[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)技术和Web3的崛起，情况发生了巨大变化。以太坊等公有链面临着可扩展性问题（处理能力的极限）和隐私问题（所有交易都是公开的），而ZKP作为能同时解决这两大问题的“魔法棒”，一跃成为了众人瞩目的焦点。
 
 本文将极尽详细地、从技术深处探讨零知识证明的基本概念、目前成为主流的 **zk-SNARKs** 及 **zk-STARKs** 深奥的数学和密码学机制，以及ZK-Rollups、去中心化身份（DID）等在Web3与安全领域的最新应用实例。
 
@@ -60,7 +60,7 @@ sequenceDiagram
     Note over Prover, Verifier: "※为了提高准确率，此过程会重复数十次"
 ```
 
-这种方法虽然强大，但要求验证者必须在线，将其应用于区块链这种异步的分布式系统中会非常不便。在区块链中，任何人必须能够随时验证过去的证明。
+这种方法虽然强大，但要求验证者必须在线，将其应用于[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)这种异步的[分布式系统](/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)中会非常不便。在[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)中，任何人必须能够随时验证过去的证明。
 
 #### 菲亚特-沙米尔变换（Fiat-Shamir Heuristic）与非交互化
 
@@ -121,13 +121,13 @@ zk-SNARKs（特别是早期的Groth16等）最大的弱点在于生成秘密点 
 
 ## zk-STARKs的技术细节
 
-为了解决对可信设置的依赖以及量子计算机破解椭圆曲线密码学的风险， **zk-STARKs** （Zero-Knowledge Scalable Transparent Argument of Knowledge，零知识可扩展透明知识论证）应运而生。
+为了解决对可信设置的依赖以及量子计算机破解[椭圆曲线密码学](/zh-cn/p/elliptic-curve-cryptography-math-cpp/)的风险， **zk-STARKs** （Zero-Knowledge Scalable Transparent Argument of Knowledge，零知识可扩展透明知识论证）应运而生。
 
 由Eli Ben-Sasson等人开发的STARKs，正如其“透明性（Transparent）”之名，完全不需要可信设置；而正如其“可扩展性（Scalable）”之名，它具有在计算量增加时，证明体积和验证时间仍能保持高效的特点。
 
 ### 1. 多项式承诺与FRI协议
 
-zk-STARKs不使用椭圆曲线密码学，而是将安全性基础完全建立在 **哈希函数** 上。因此，它具有抗量子计算密码学（Post-Quantum [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）的特性。
+zk-STARKs不使用[椭圆曲线密码学](/zh-cn/p/elliptic-curve-cryptography-math-cpp/)，而是将安全性基础完全建立在 **哈希函数** 上。因此，它具有抗量子计算密码学（Post-Quantum [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）的特性。
 
 计算的验证在被转化为名为AIR（Algebraic Intermediate Representation，代数中间表示）的格式后，利用一维或多维多项式的性质进行。STARKs的核心在于 **FRI（Fast Reed-Solomon Interactive Oracle Proof of Proximity，快速里德-所罗门交互式预言机近似证明）** 协议。
 
@@ -166,7 +166,7 @@ graph TD
 
 ### 1. 采用ZK-Rollups实现以太坊的终极扩容
 
-像以太坊这样的L1（第一层）区块链，因为过于重视去中心化和安全性，在可扩展性上受到了很大的限制（区块链不可能三角）。解决这一问题的L2（第二层）决定性方案就是 **ZK-Rollups** 。
+像以太坊这样的L1（第一层）[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)，因为过于重视去中心化和安全性，在可扩展性上受到了很大的限制（[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)不可能三角）。解决这一问题的L2（第二层）决定性方案就是 **ZK-Rollups** 。
 
 在ZK-Rollup中，数千笔交易在链下（L2）被执行和处理，并生成“一个ZKP（有效性证明）”来证明它们都已被正确执行。L1链上的智能合约只需验证这个证明即可。
 
@@ -192,7 +192,7 @@ ZK-Rollups最大的优势在于，与Optimistic Rollups（如Arbitrum或Optimism
 
 ### 3. 机密智能合约与企业应用
 
-公有链“所有数据都公开”的特性，曾经是企业在区块链上处理机密交易或供应链信息时的巨大障碍。
+公有链“所有数据都公开”的特性，曾经是企业在[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)上处理机密交易或供应链信息时的巨大障碍。
 
 利用ZKP技术（例如Aleo或Aztec等专注于隐私的网络），可以在保持交易输入值、输出值甚至执行的智能合约逻辑本身加密的状态下，仅将状态更新的正确性记录在公有链上。这使得在享受公有链高安全性的同时，能够防止DeFi（去中心化金融）中的抢跑（MEV），或在企业间构建机密联盟网络成为可能。
 
@@ -203,13 +203,13 @@ ZK-Rollups最大的优势在于，与Optimistic Rollups（如Arbitrum或Optimism
 ZKP毫无疑问是下一代的基础技术，但仍存在一些挑战。
 
 1. **证明生成的计算成本与硬件加速**
-   ZKP的生成需要进行庞大的多项式运算、FFT（快速傅里叶变换）以及MSM（多标量乘法）。目前，为加速这一证明生成过程，开发专用硬件（FPGA或ASIC），即所谓的 **ZKP挖矿** （Prover Network）的研究正在迅速推进。
+   ZKP的生成需要进行庞大的多项式运算、[FFT](/zh-cn/p/fast-fourier-transform-algorithm/)（[快速傅里叶变换](/zh-cn/p/fast-fourier-transform-algorithm/)）以及MSM（多标量乘法）。目前，为加速这一证明生成过程，开发专用硬件（FPGA或ASIC），即所谓的 **ZKP挖矿** （Prover Network）的研究正在迅速推进。
 2. **标准化与开发者体验（DX）的提升**
    目前，用于编写ZKP电路的专用语言（如Circom、Cairo、Noir、Leo等）五花八门。统一这些语言的标准规范，以及能从现有的[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)或C++代码自动生成ZKP电路的编译器的成熟，将是普通软件工程师能够广泛应用ZKP的关键。
 
 ## 结语
 
-零知识证明（ZKP）已经从单纯的“提高[加密货币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)匿名性的技术”，进化为“重新定义整个互联网信任机制的通用技术”。在深奥的数学公式与密码学理论中计算出的微小证明，将无限扩展区块链的可扩展性，并成为坚固保护我们隐私的盾牌。
+零知识证明（ZKP）已经从单纯的“提高[加密货币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)匿名性的技术”，进化为“重新定义整个互联网信任机制的通用技术”。在深奥的数学公式与密码学理论中计算出的微小证明，将无限扩展[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)的可扩展性，并成为坚固保护我们隐私的盾牌。
 
 在迈向Web3的真正大规模普及（Mass Adoption）以及构建安全、隐私的下一代互联网的过程中，零知识证明将继续作为最重要的一块拼图发挥作用。ZKP技术的未来发展绝对不容错过。
 

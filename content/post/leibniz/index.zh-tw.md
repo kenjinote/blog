@@ -95,7 +95,7 @@ $$
 
 ### 2.4 行列式與線性方程組
 
-在解線性方程組時，萊布尼茨與日本數學家[關孝和](https://kenji.blog/zh-tw/p/seki-takakazu/)幾乎在同一時期獨立地得出了「行列式（Determinant）」的概念。他將係數作為陣列處理，並設計了系統消除它們的方法，為後來線性代數的發展邁出了重要的一步。
+在解線性方程組時，萊布尼茨與日本數學家[關孝和](https://kenji.blog/zh-tw/p/seki-takakazu/)幾乎在同一時期獨立地得出了「[行列式](/zh-tw/p/geometric-meaning-of-determinant/)（Determinant）」的概念。他將係數作為陣列處理，並設計了系統消除它們的方法，為後來線性代數的發展邁出了重要的一步。
 
 ### 2.5 步進計算器的發明
 

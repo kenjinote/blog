@@ -108,7 +108,7 @@ pie title Probabilitas Saat 23 Orang Berkumpul
 
 Mengingat sangat merepotkan untuk menghitung perkalian 23 kali secara manual, mari kita coba memahami ini secara lebih intuitif menggunakan rumus pendekatan matematis.
 
-Pertimbangkan Deret Taylor dari fungsi eksponensial $e^{-x}$. Ketika $x$ cukup kecil, pendekatan berikut ini berlaku.
+Pertimbangkan [Deret Taylor](/id/p/taylor-and-maclaurin-series/) dari fungsi eksponensial $e^{-x}$. Ketika $x$ cukup kecil, pendekatan berikut ini berlaku.
 $$ e^{-x} \approx 1 - x $$
 
 Jika kita menerapkan ini pada masing-masing suku sebelumnya $\left(1 - \frac{k}{365}\right)$,

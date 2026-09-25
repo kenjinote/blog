@@ -58,8 +58,8 @@ LinuxやmacOSの標準シェルであるBashは、内部的に **GNU Readline** 
 
 - **`Ctrl + A`** : 行の先頭（Start of line）へ移動する。非常に多用します。
 - **`Ctrl + E`** : 行の末尾（End of line）へ移動する。
-- **`Alt + B`** (Meta+B) : 1単語戻る（Backward word）。スラッシュやスペースを区切りとして単語単位で高速に移動します。
-- **`Alt + F`** (Meta+F) : 1単語進む（Forward word）。
+- **`Alt + B`** ([Meta](/p/history-of-meta-facebook/)+B) : 1単語戻る（Backward word）。スラッシュやスペースを区切りとして単語単位で高速に移動します。
+- **`Alt + F`** ([Meta](/p/history-of-meta-facebook/)+F) : 1単語進む（Forward word）。
 
 ```mermaid
 flowchart LR
@@ -76,7 +76,7 @@ Emacs用語では、テキストを切り取る（カット）ことを「キル
 - **`Ctrl + U`** : カーソル位置から行の先頭までをキル（削除）する。パスワード入力ミス時や、コマンドを最初から書き直したい場合に一瞬でクリアできます。
 - **`Ctrl + K`** : カーソル位置から行の末尾までをキルする。
 - **`Ctrl + W`** : カーソル位置から前の1単語をキルする。引数を一つ消して書き直す際に重宝します。
-- **`Alt + D`** (Meta+D) : カーソル位置から後ろの1単語をキルする。
+- **`Alt + D`** ([Meta](/p/history-of-meta-facebook/)+D) : カーソル位置から後ろの1単語をキルする。
 - **`Ctrl + Y`** : 最後にキルした内容をヤンク（貼り付け）する。`Ctrl+U` で消したコマンドを別のディレクトリに移動した後に `Ctrl+Y` で復活させる、といった高度な使い方が可能です。
 - **`Ctrl + _`** (または `Ctrl + x, Ctrl + u`) : アンドゥ（元に戻す）。誤って消してしまった場合に復元できます。
 
@@ -287,7 +287,7 @@ stateDiagram-v2
     Detach --> [*]
 ```
 
-`~/.tmux.conf` を編集することで、プレフィックスキーを押しやすい `Ctrl+A`（GNU Screen風）に変更したり、ペイン移動を Vim 風の `hjkl` にバインドすることが定石です。
+`~/.tmux.conf` を編集することで、プレフィックスキーを押しやすい `Ctrl+A`（GNU Screen風）に変更したり、ペイン移動を [Vim](/p/vim%E5%85%A5%E9%96%80/) 風の `hjkl` にバインドすることが定石です。
 
 ```text
 # ~/.tmux.conf の例

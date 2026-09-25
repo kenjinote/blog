@@ -10,7 +10,7 @@ tags: ["Euler", "História da Matemática", "Gênio", "Física"]
 
 ## Introdução
 
-Ao olharmos para a história da matemática, é absolutamente impossível omitir o nome de **[Leonhard Euler](https://kenji.blog/pt/p/euler/)** (1707–1783). Ele é amplamente reconhecido como um dos matemáticos mais prolíficos e influentes da história da humanidade. Do cálculo e da teoria dos números à teoria dos grafos, mecânica, óptica e astronomia, sua mente curiosa e suas pegadas se estendem a todos os campos da ciência.
+Ao olharmos para a história da matemática, é absolutamente impossível omitir o nome de **[Leonhard Euler](https://kenji.blog/pt/p/euler/)** (1707–1783). Ele é amplamente reconhecido como um dos matemáticos mais prolíficos e influentes da história da humanidade. Do cálculo e da teoria dos números à [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/), mecânica, óptica e astronomia, sua mente curiosa e suas pegadas se estendem a todos os campos da ciência.
 
 Neste artigo, vamos nos aprofundar na vida turbulenta do gênio Euler e nas brilhantes conquistas que ele deixou para as gerações futuras. As leis e fórmulas que ele descobriu formam a base da ciência e tecnologia de hoje, tornando seu trabalho profundamente relevante para aqueles de nós que vivem no mundo moderno.
 
@@ -91,11 +91,11 @@ graph TD
 
 Ele provou matematicamente que para que exista um caminho que atravesse cada ponte exatamente uma vez (um caminho euleriano), o número de massas de terra com um número ímpar de pontes conectadas a elas (nós ímpares) deve ser exatamente 0 ou 2. No caso de Königsberg, todas as massas de terra eram nós ímpares, demonstrando que a tarefa era impossível.
 
-Essa descoberta foi inovadora, estabelecendo a base da **teoria dos grafos** e da **topologia** modernas.
+Essa descoberta foi inovadora, estabelecendo a base da **[teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/)** e da **topologia** modernas.
 
 ### 4.3 A Identidade de Euler
 
-Frequentemente aclamada como a "fórmula mais bela" da matemática está a **Identidade de Euler**.
+Frequentemente aclamada como a "fórmula mais bela" da matemática está a **[Identidade de Euler](/pt/p/eulers-identity/)**.
 
 $$
 e^{i\pi} + 1 = 0 \quad (\text{Identidade de Euler})

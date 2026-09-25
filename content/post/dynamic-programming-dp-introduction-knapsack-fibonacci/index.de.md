@@ -11,14 +11,14 @@ tags: ["algorithms", "dynamic-programming", "dp", "knapsack", "optimization"]
 
 # 1. Einleitung
 
-Wenn man im Bereich Programmierung und Algorithmen fortschreitet, stößt man auf eine große Hürde, mit der viele Lernende konfrontiert werden. Das ist die **Dynamische Programmierung** (Dynamic Programming, kurz **DP**). Wenn man nur den Namen hört, könnte man sich wappnen und denken: "Das klingt irgendwie schwierig" oder "Braucht man dafür mathematisches Fachwissen?". Wenn man jedoch das Wesen versteht, erkennt man, dass DP eine sehr leistungsfähige und zugleich intuitive Methode zur Problemlösung ist.
+Wenn man im Bereich Programmierung und Algorithmen fortschreitet, stößt man auf eine große Hürde, mit der viele Lernende konfrontiert werden. Das ist die **[Dynamische Programmierung](/de/p/dp-algorithm-master-guide/)** (Dynamic Programming, kurz **DP**). Wenn man nur den Namen hört, könnte man sich wappnen und denken: "Das klingt irgendwie schwierig" oder "Braucht man dafür mathematisches Fachwissen?". Wenn man jedoch das Wesen versteht, erkennt man, dass DP eine sehr leistungsfähige und zugleich intuitive Methode zur Problemlösung ist.
 
 In diesem Artikel beginnen wir mit den Grundkonzepten der DP und erklären ausführlich ihre Denkweise und Implementierungsmethoden am Beispiel repräsentativer Probleme wie der "Fibonacci-Folge" und dem "Rucksackproblem". Lassen Sie uns das Verständnis Schritt für Schritt vertiefen, begleitet von Python-Code.
 
 
 # 2. Was ist Dynamische Programmierung (DP)?
 
-Dynamische Programmierung (Dynamic Programming) ist eine Methode, bei der ein komplexes Problem in mehrere kleine Teilprobleme unterteilt wird und die Lösung jedes Teilproblems aufgezeichnet (memoisiert) wird, während man es löst. Dadurch wird die Verschwendung wiederholter gleicher Berechnungen vermieden und die Berechnungszeit drastisch verkürzt.
+[Dynamische Programmierung](/de/p/dp-algorithm-master-guide/) (Dynamic Programming) ist eine Methode, bei der ein komplexes Problem in mehrere kleine Teilprobleme unterteilt wird und die Lösung jedes Teilproblems aufgezeichnet (memoisiert) wird, während man es löst. Dadurch wird die Verschwendung wiederholter gleicher Berechnungen vermieden und die Berechnungszeit drastisch verkürzt.
 
 Der Kern der DP liegt in den folgenden zwei Merkmalen:
 
@@ -254,7 +254,7 @@ Außerdem ist es beim Debuggen von DP am effektivsten, **die bei kleinen Eingabe
 
 # 6. Fazit
 
-Dynamische Programmierung (DP) mag auf den ersten Blick abschreckend wirken. Wenn Sie jedoch mit einem intuitiven Verständnis der "Vermeidung sinnloser Berechnungen" in der Fibonacci-Folge beginnen und schrittweise zu Dingen wie der "Definition von Zuständen und Übergängen" im Rucksackproblem fortschreiten, können Sie es sicher meistern.
+[Dynamische Programmierung](/de/p/dp-algorithm-master-guide/) (DP) mag auf den ersten Blick abschreckend wirken. Wenn Sie jedoch mit einem intuitiven Verständnis der "Vermeidung sinnloser Berechnungen" in der Fibonacci-Folge beginnen und schrittweise zu Dingen wie der "Definition von Zuständen und Übergängen" im Rucksackproblem fortschreiten, können Sie es sicher meistern.
 
 **"Wie man den Zustand definiert"**
 **"Aus welchen kleinen Zuständen dieser Zustand berechnet werden kann (Rekursionsgleichung)"**

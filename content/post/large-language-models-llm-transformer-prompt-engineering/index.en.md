@@ -10,7 +10,7 @@ tags: ["ai", "llm", "transformer", "prompt-engineering"]
 
 # 1. Introduction: The New Era Pioneered by Large Language Models (LLMs)
 
-Entering the 2020s, the field of artificial intelligence (AI) has undergone unprecedented and dramatic evolution. At the center of this is the **Large Language Model** (hereafter **LLM**). Systems with the potential to fundamentally transform our lives and businesses, such as OpenAI's ChatGPT, Google's Gemini, and Anthropic's Claude, are appearing one after another.
+Entering the 2020s, the field of artificial intelligence (AI) has undergone unprecedented and dramatic evolution. At the center of this is the **Large Language Model** (hereafter **LLM**). Systems with the potential to fundamentally transform our lives and businesses, such as OpenAI's ChatGPT, Google's [Gemini](/en/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEworkaround/), and Anthropic's Claude, are appearing one after another.
 
 This article delves into how LLMs understand and generate natural language, focusing on the architecture and mathematical mechanisms of the **Transformer** model that forms their foundation. Furthermore, we will thoroughly explain advanced **Prompt Engineering** techniques to maximize the performance of these models, and how LLMs can be applied to software development and programming, with concrete code examples, in a volume approaching 20,000 characters.
 

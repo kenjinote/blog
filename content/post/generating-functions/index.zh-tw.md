@@ -63,7 +63,7 @@ $$
 f(x) = \frac{1}{1-x} \cdot \frac{1}{1-x^2} \cdot \frac{1}{1-x^5}
 $$
 
-也就是說，不需要使用複雜的遞迴公式或迴圈計算，只需計算這個函數的泰勒展開係數，就能得到任意 $n$ 對應的組合數。在程式設計領域，這種思想也是動態規劃 ([DP](https://kenji.blog/zh-tw/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) 的重要基礎。
+也就是說，不需要使用複雜的遞迴公式或迴圈計算，只需計算這個函數的泰勒展開係數，就能得到任意 $n$ 對應的組合數。在程式設計領域，這種思想也是[動態規劃](/zh-tw/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) ([DP](https://kenji.blog/zh-tw/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) 的重要基礎。
 
 ### 卷積與多項式乘積
 
@@ -160,7 +160,7 @@ $$
 在現代計算機科學和競技程式設計中，[母函數](https://kenji.blog/zh-tw/p/generating-functions/)常常被作為 **形式冪級數** (Formal Power Series, FPS) 來實作。
 在 FPS 中，我們不關心將具體的數值代入 $x$ 後是否收斂（解析性質），而是將重點放在將「係數序列」作為多項式進行代數操作上。
 
-利用快速傅立葉轉換 (FFT) 或數論轉換 (NTT)，可以在 $\mathcal{O}(N \log N)$ 的時間複雜度內求出兩個 $N$ 次多項式的乘積（即長度為 $N$ 的數列的卷積）。這使得原本用動態規劃需要 $\mathcal{O}(N^2)$ 的計算得到了極大的加速。
+利用快速傅立葉轉換 ([FFT](/zh-tw/p/fast-fourier-transform-algorithm/)) 或數論轉換 (NTT)，可以在 $\mathcal{O}(N \log N)$ 的時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)內求出兩個 $N$ 次多項式的乘積（即長度為 $N$ 的數列的卷積）。這使得原本用[動態規劃](/zh-tw/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)需要 $\mathcal{O}(N^2)$ 的計算得到了極大的加速。
 
 ## 6. 總結
 

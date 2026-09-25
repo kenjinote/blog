@@ -24,7 +24,7 @@ Su creación de la "Teoría de conjuntos" se ha convertido en la base de todos l
 
 [Georg Cantor](https://kenji.blog/es/p/cantor/) nació en 1845 en San Petersburgo, Rusia. Su padre era un rico comerciante de Dinamarca y su madre una música rusa. Mostrando un talento extraordinario para las matemáticas desde temprana edad, finalmente se mudó a Alemania y estudió matemáticas en la Universidad de Berlín.
 
-En la Universidad de Berlín, fue guiado por las figuras destacadas del mundo matemático de la época, **[Karl Weierstrass](https://kenji.blog/es/p/weierstrass/)** y **Leopold Kronecker**. [Kronecker](https://kenji.blog/es/p/kronecker/) en particular se convertiría más tarde en el mayor oponente de Cantor.
+En la Universidad de Berlín, fue guiado por las figuras destacadas del mundo matemático de la época, **[Karl Weierstrass](https://kenji.blog/es/p/weierstrass/)** y **[Leopold Kronecker](/es/p/kronecker/)**. [Kronecker](https://kenji.blog/es/p/kronecker/) en particular se convertiría más tarde en el mayor oponente de Cantor.
 
 ### La búsqueda del infinito y el conflicto con [Kronecker](https://kenji.blog/es/p/kronecker/)
 
@@ -111,9 +111,9 @@ graph TD
 
 ## La Hipótesis del Continuo
 
-¿Existe una cardinalidad intermedia entre la cardinalidad de los números naturales $\aleph_0$ y la cardinalidad de los números reales $\mathfrak{c}$? Cantor planteó la hipótesis de que "no existe tal cardinalidad intermedia". Esta es la **Hipótesis del Continuo (HC)**.
+¿Existe una cardinalidad intermedia entre la cardinalidad de los números naturales $\aleph_0$ y la cardinalidad de los números reales $\mathfrak{c}$? Cantor planteó la hipótesis de que "no existe tal cardinalidad intermedia". Esta es la **[Hipótesis del Continuo](/es/p/continuum-hypothesis/) (HC)**.
 
-Cantor pasó gran parte de sus últimos años tratando de probar esta hipótesis, pero finalmente no pudo resolverla. Más tarde, a través de la investigación de [Kurt Gödel](https://kenji.blog/es/p/godel/) y Paul Cohen, se descubrió que la hipótesis del continuo es una proposición independiente que "no puede ser probada ni refutada" a partir de los axiomas estándar de la teoría de conjuntos (axiomas ZFC), dando una vez más una gran conmoción a la comunidad matemática.
+Cantor pasó gran parte de sus últimos años tratando de probar esta hipótesis, pero finalmente no pudo resolverla. Más tarde, a través de la investigación de [Kurt Gödel](https://kenji.blog/es/p/godel/) y Paul Cohen, se descubrió que la [hipótesis del continuo](/es/p/continuum-hypothesis/) es una proposición independiente que "no puede ser probada ni refutada" a partir de los axiomas estándar de la teoría de conjuntos (axiomas ZFC), dando una vez más una gran conmoción a la comunidad matemática.
 
 ## Conclusión
 

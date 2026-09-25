@@ -14,7 +14,7 @@ tags:
 
 ## Apa itu Masalah Sekretaris (Secretary Problem)?
 
-**Masalah Sekretaris** (Secretary Problem) adalah salah satu contoh paling terkenal dan klasik dari **Masalah Penghentian Optimal** (Optimal Stopping Problem) dalam teori peluang terapan. Masalah ini, yang juga dikenal sebagai Masalah Pernikahan (Marriage Problem) atau Masalah Mahar Sultan (Sultan's Dowry Problem), memodelkan dengan sempurna dilema pengambilan keputusan tentang bagaimana membuat **pilihan terbaik** di tengah ketidakpastian.
+**Masalah Sekretaris** (Secretary Problem) adalah salah satu contoh paling terkenal dan klasik dari **[Masalah Penghentian](/id/p/halting-problem/) Optimal** (Optimal Stopping Problem) dalam teori peluang terapan. Masalah ini, yang juga dikenal sebagai Masalah Pernikahan (Marriage Problem) atau Masalah Mahar Sultan (Sultan's Dowry Problem), memodelkan dengan sempurna dilema pengambilan keputusan tentang bagaimana membuat **pilihan terbaik** di tengah ketidakpastian.
 
 Berbagai situasi sehari-hari, seperti "kapan harus membeli rumah," "kapan harus menentukan tempat parkir," dan "kapan harus memilih pasangan," semuanya bisa bermuara pada masalah ini.
 

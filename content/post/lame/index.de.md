@@ -101,7 +101,7 @@ In der Informatik und Zahlentheorie machte der **Satz von [Lamé](https://kenji.
 
 ### 4.1 Übersicht und Bedeutung des Satzes
 
-Der **euklidische Algorithmus**, der seit dem antiken Griechenland überliefert ist, ist ein effizienter Algorithmus zur Bestimmung des größten gemeinsamen Teilers zweier natürlicher Zahlen. Es gab jedoch bis zu [Lamé](https://kenji.blog/de/p/lame/) im Jahr 1844 niemanden, der genau bewies, "wie schnell" dieser Algorithmus endet. Der Satz von [Lamé](https://kenji.blog/de/p/lame/) besagt Folgendes:
+Der **[euklidische Algorithmus](/de/p/euclidean-algorithm/)**, der seit dem antiken Griechenland überliefert ist, ist ein effizienter Algorithmus zur Bestimmung des größten gemeinsamen Teilers zweier natürlicher Zahlen. Es gab jedoch bis zu [Lamé](https://kenji.blog/de/p/lame/) im Jahr 1844 niemanden, der genau bewies, "wie schnell" dieser Algorithmus endet. Der Satz von [Lamé](https://kenji.blog/de/p/lame/) besagt Folgendes:
 
 > "Bei der Bestimmung des größten gemeinsamen Teilers zweier ganzer Zahlen mit dem euklidischen Algorithmus übersteigt die Anzahl der erforderlichen Divisionen (Schritte) niemals das Fünffache der Anzahl der Dezimalstellen der kleineren Zahl."
 
@@ -141,7 +141,7 @@ Insbesondere bei der Lösung der **Laplace-Gleichung**, die das Phänomen der W�
 
 Eine dramatische Episode im Leben [Lamé](https://kenji.blog/de/p/lame/)s war sein Versuch von 1847, **Fermats Letzten Satz** zu beweisen. Im März desselben Jahres verkündete Lamé vor der Französischen Akademie der Wissenschaften mit großem Pomp, er habe "[Fermat](https://kenji.blog/de/p/fermat/)s Letzten Satz vollständig bewiesen". Sein Beweis war ein zu dieser Zeit äußerst innovativer und leistungsstarker Ansatz, der die Faktorisierung von Gleichungen mithilfe komplexer Zahlen zyklotomischer Körper umfasste.
 
-Unmittelbar nach seiner Präsentation wies sein Kollege und Mathematiker Joseph [Liouville](https://kenji.blog/de/p/liouville/) jedoch scharfsinnig darauf hin, dass "dieser Beweis auf der stillschweigenden Annahme beruht, dass die 'Eindeutigkeit der Primfaktorzerlegung' auch im Bereich der komplexen Zahlen gilt, was jedoch nicht bewiesen ist." Kurze Zeit später traf ein Brief des deutschen Mathematikers Ernst Kummer ein, in dem er aufzeigte, dass "die Eindeutigkeit der Primfaktorzerlegung im Allgemeinen nicht gilt", womit [Lamé](https://kenji.blog/de/p/lame/)s Beweis endgültig widerlegt war.
+Unmittelbar nach seiner Präsentation wies sein Kollege und Mathematiker Joseph [Liouville](https://kenji.blog/de/p/liouville/) jedoch scharfsinnig darauf hin, dass "dieser Beweis auf der stillschweigenden Annahme beruht, dass die 'Eindeutigkeit der Primfaktorzerlegung' auch im Bereich der komplexen Zahlen gilt, was jedoch nicht bewiesen ist." Kurze Zeit später traf ein Brief des deutschen Mathematikers [Ernst Kummer](/de/p/kummer/) ein, in dem er aufzeigte, dass "die Eindeutigkeit der Primfaktorzerlegung im Allgemeinen nicht gilt", womit [Lamé](https://kenji.blog/de/p/lame/)s Beweis endgültig widerlegt war.
 
 Dies war ein großer Rückschlag für [Lamé](https://kenji.blog/de/p/lame/), aber diese Reihe von Diskussionen führte zur Entstehung von Kummers Theorie der "idealen Zahlen" (Ideale), die später ein riesiges neues Feld der Mathematik eröffnete: die algebraische Zahlentheorie. [Lamé](https://kenji.blog/de/p/lame/)s kühne Herausforderung trieb somit die Geschichte der Mathematik erheblich voran.
 

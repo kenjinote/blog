@@ -56,7 +56,7 @@ graph TD
 
 ## 2. Mathematischer Hintergrund der Public-Key-Kryptographie
 
-Die Sicherheit der Public-Key-Kryptographie beruht auf **Einwegfunktionen** (One-way functions), bei denen "eine bestimmte Berechnung einfach, aber die Umkehrung extrem schwierig ist", und auf **Einwegfunktionen mit Falltür** (Trapdoor one-way functions), bei denen die Umkehrung möglich wird, wenn man eine bestimmte Information (die Falltür) kennt. Hier betrachten wir die repräsentative RSA-Verschlüsselung und die elliptische Kurven-Kryptographie (ECC) genauer.
+Die Sicherheit der Public-Key-Kryptographie beruht auf **Einwegfunktionen** (One-way functions), bei denen "eine bestimmte Berechnung einfach, aber die Umkehrung extrem schwierig ist", und auf **Einwegfunktionen mit Falltür** (Trapdoor one-way functions), bei denen die Umkehrung möglich wird, wenn man eine bestimmte Information (die Falltür) kennt. Hier betrachten wir die repräsentative RSA-Verschlüsselung und die elliptische Kurven-Kryptographie ([ECC](/de/p/elliptic-curve-cryptography-math-cpp/)) genauer.
 
 ### 2.1. Die Funktionsweise der RSA-Verschlüsselung
 
@@ -96,7 +96,7 @@ Die RSA-Verschlüsselung ist sicher, erfordert jedoch sehr lange Schlüsselläng
 
 #### 2.2.1. Elliptische Kurven und das diskrete Logarithmusproblem
 
-Die Sicherheit von ECC beruht auf der Schwierigkeit des **diskreten Logarithmusproblems auf elliptischen Kurven** (ECDLP).
+Die Sicherheit von [ECC](/de/p/elliptic-curve-cryptography-math-cpp/) beruht auf der Schwierigkeit des **diskreten Logarithmusproblems auf elliptischen Kurven** (ECDLP).
 Eine elliptische Kurve über einem endlichen Körper $\mathbb{F}_p$, die für die Verschlüsselung verwendet wird, wird im Allgemeinen durch die Weierstraß-Normalform dargestellt:
 
 $ y^2 \equiv x^3 + ax + b \pmod{p} $
@@ -109,7 +109,7 @@ Sei $P$ der Punkt, der entsteht, wenn ein bestimmter Basispunkt $G$ $k$-mal zu s
 $ P = k \times G $
 
 Das Problem, den Skalarwert $k$ zu berechnen, wenn $G$ und $P$ gegeben sind, wird als **elliptisches Kurven diskretes Logarithmusproblem** bezeichnet. Wenn $k$ groß genug ist, ist es extrem schwierig, dies rechnerisch rückgängig zu machen.
-Bei ECC ist $k$ der **private Schlüssel** und $P$ der **öffentliche Schlüssel**.
+Bei [ECC](/de/p/elliptic-curve-cryptography-math-cpp/) ist $k$ der **private Schlüssel** und $P$ der **öffentliche Schlüssel**.
 
 ### 2.3. Implementierungsbeispiel der Public-Key-Kryptographie in Python
 
@@ -337,7 +337,7 @@ Auch beim Zugriff auf eine Website mit "https://" im Browser arbeitet dieses PKI
 Die moderne digitale Gesellschaft basiert auf der perfekten Kombination der in diesem Artikel erläuterten **Kryptographietechnologien**.
 
 - Schnelle Datenverschlüsselung durch **symmetrische Kryptographie**
-- Sicherer Schlüsselaustausch und Asymmetrie durch **Public-Key-Kryptographie** (RSA und ECC)
+- Sicherer Schlüsselaustausch und Asymmetrie durch **Public-Key-Kryptographie** (RSA und [ECC](/de/p/elliptic-curve-cryptography-math-cpp/))
 - Extrahieren von Daten-Fingerabdrücken durch **Hash-Funktionen** (SHA-2/3)
 - Nachweis der Integrität und Authentifizierung durch **digitale Signaturen**
 - Gewährleistung der Authentizität öffentlicher Schlüssel durch **PKI und Zertifizierungsstellen**

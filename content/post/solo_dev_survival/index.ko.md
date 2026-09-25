@@ -11,7 +11,7 @@ tags: ["Solo Developer", "Micro-SaaS", "Serverless", "Agility"]
 
 # 서론: 거인들에게 도전하는 '가지지 못한 자'의 싸움 방식
 
-소프트웨어 개발 역사상 그 어느 때보다 개인 개발자(인디 디벨로퍼)에게 유리한 시대가 도래했습니다. AWS나 GCP 같은 클라우드 인프라의 민주화, Vercel이나 Supabase를 비롯한 BaaS(Backend as a [Service](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/))의 대두, 그리고 무엇보다 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)(대규모 언어 모델)의 진화에 따른 코딩의 자동화. 이 모든 것이 개인이 '거인'인 대형 테크 기업과 정면으로 승부할 수 있는 토양을 만들어 냈습니다.
+소프트웨어 개발 역사상 그 어느 때보다 개인 개발자(인디 디벨로퍼)에게 유리한 시대가 도래했습니다. AWS나 GCP 같은 클라우드 인프라의 민주화, Vercel이나 Supabase를 비롯한 BaaS(Backend as a [Service](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/))의 대두, 그리고 무엇보다 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)([대규모 언어 모델](/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 진화에 따른 코딩의 자동화. 이 모든 것이 개인이 '거인'인 대형 테크 기업과 정면으로 승부할 수 있는 토양을 만들어 냈습니다.
 
 하지만 기술적 리소스가 평등해졌다고 해서 대기업과 같은 전략을 취한다고 이길 수 있는 것은 아닙니다. 자본력, 마케팅력, 그리고 브랜드력에서 개인은 압도적으로 불리합니다. 개인 개발자가 살아남고, 그리고 승리하기 위해서는 독자적인 '생존 전략'이 필수적입니다.
 
@@ -25,9 +25,9 @@ tags: ["Solo Developer", "Micro-SaaS", "Serverless", "Agility"]
 
 반면 개인 개발자의 강점은 **"손익분기점이 극단적으로 낮다"** 는 것에 있습니다. 월 수십만 엔의 이익이 발생하면 개인으로서는 충분히 사업으로서 성립합니다. 여기에 '롱테일 이론'의 스위트 스팟이 존재합니다.
 
-## [지프의 법칙(Zipf's Law)](https://kenji.blog/p/zipfs-law/)과 시장 분포
+## [지프의 법칙(Zipf's Law)](https://kenji.blog/ko/p/zipfs-law/)과 시장 분포
 
-시장 규모와 수의 관계는 종종 지프의 법칙이나 파레토의 법칙을 따릅니다. 시장의 순위를 $k$, 그 시장 규모(매출 잠재력)를 $P(k)$ 라고 하면 다음과 같은 멱법칙 모델로 표현할 수 있습니다.
+시장 규모와 수의 관계는 종종 [지프의 법칙](/ko/p/zipfs-law/)이나 [파레토의 법칙](/ko/p/business-pareto-principle/)을 따릅니다. 시장의 순위를 $k$, 그 시장 규모(매출 잠재력)를 $P(k)$ 라고 하면 다음과 같은 멱법칙 모델로 표현할 수 있습니다.
 
 $$ P(k) \propto \frac{1}{k^\alpha} $$
 
@@ -50,9 +50,9 @@ xychart-beta
 
 # 2. 압도적 민첩성을 낳는 아키텍처 설계
 
-대기업의 시스템은 '안정성'과 '확장성'을 최우선으로 설계되기 때문에 [Kubernetes](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/)나 마이크로서비스 아키텍처가 채택됩니다. 하지만 개인 개발자가 똑같이 한다면 인프라의 유지 관리(Ops)만으로 리소스가 고갈됩니다.
+대기업의 시스템은 '안정성'과 '확장성'을 최우선으로 설계되기 때문에 [Kubernetes](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/)나 [마이크로서비스 아키텍처](/ko/p/microservices-architecture-bff-api-gateway/)가 채택됩니다. 하지만 개인 개발자가 똑같이 한다면 인프라의 유지 관리(Ops)만으로 리소스가 고갈됩니다.
 
-개인 개발자 기술 스택의 표어는 **"No-Ops"(운영 제로)** 입니다. 서버리스 아키텍처를 극한까지 활용하여 비즈니스 로직 작성에만 집중합니다.
+개인 개발자 기술 스택의 표어는 **"No-Ops"(운영 제로)** 입니다. [서버리스 아키텍처](/ko/p/serverless-architecture-aws-lambda-cold-start/)를 극한까지 활용하여 비즈니스 로직 작성에만 집중합니다.
 
 ## 대기업 vs 개인 개발자의 아키텍처 비교
 

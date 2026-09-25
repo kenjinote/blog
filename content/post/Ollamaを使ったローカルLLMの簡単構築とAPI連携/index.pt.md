@@ -26,7 +26,7 @@ Neste artigo, explicaremos detalhadamente sobre o "**Ollama**", uma ferramenta q
 
 # O que é o Ollama? Sua Arquitetura Interna
 
-O Ollama é uma plataforma para executar e gerenciar facilmente grandes modelos de linguagem de código aberto (Llama 3, Phi-3, Mistral, Gemma, etc.) em um ambiente local. Anteriormente, a construção de um ambiente [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) local exigia procedimentos extremamente complexos, como configurar o ambiente Python, instalar o kit de ferramentas CUDA, resolver dependências do PyTorch, baixar arquivos de modelos gigantescos do Hugging Face e convertê-los de formato (de Safetensors para GGUF, por exemplo).
+O Ollama é uma plataforma para executar e gerenciar facilmente grandes modelos de linguagem de código aberto (Llama 3, Phi-3, Mistral, Gemma, etc.) em um ambiente local. Anteriormente, a construção de um ambiente [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) local exigia procedimentos extremamente complexos, como configurar o ambiente Python, instalar o kit de ferramentas CUDA, resolver dependências do PyTorch, baixar arquivos de modelos gigantescos do Hugging Face e convertê-los de formato (de Safetensors para [GGUF](/pt/p/llama-cpp-quantization-gguf/), por exemplo).
 
 O Ollama oculta essas complexidades, permitindo que você lide com LLMs com a mesma facilidade de uso do [Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/). Com um único comando, você pode baixar o modelo (`pull`), executá-lo (`run`) e iniciá-lo como um servidor HTTP.
 
@@ -120,7 +120,7 @@ Na biblioteca de modelos do Ollama, você pode especificar a versão ou o nível
 
 Vamos abordar brevemente a quantização aqui. Em LLMs comuns, um único parâmetro de peso é mantido em formato de ponto flutuante de 16 bits (FP16), por exemplo. Para um modelo com 8 bilhões (8B) de parâmetros, apenas os pesos consumiriam cerca de 16 GB de VRAM. A quantização é a técnica que comprime isso em tipos inteiros de 4 bits (Q4) ou 8 bits (Q8).
 
-Com a quantização, o consumo de memória necessário e a largura de banda da memória podem ser reduzidos drasticamente, enquanto a degradação da precisão do modelo é minimizada. Os modelos distribuídos pelo Ollama estão, por padrão, no formato GGUF e aplicam a quantização ideal (na maioria das vezes 4 bits).
+Com a quantização, o consumo de memória necessário e a largura de banda da memória podem ser reduzidos drasticamente, enquanto a degradação da precisão do modelo é minimizada. Os modelos distribuídos pelo Ollama estão, por padrão, no formato [GGUF](/pt/p/llama-cpp-quantization-gguf/) e aplicam a quantização ideal (na maioria das vezes 4 bits).
 
 ## 3. Listagem de Modelos (`list`)
 
@@ -341,7 +341,7 @@ Você pode executar localmente as poderosas funcionalidades de cadeias (*chains*
 
 # Integração com Aplicações Node.js
 
-Para engenheiros front-end e desenvolvedores full-stack, a capacidade de chamar um [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) local a partir do ambiente TypeScript/Node.js é uma enorme vantagem. Utilizaremos o pacote NPM oficial `ollama`.
+[Para engenheiros](/pt/p/prompt-engineering-for-engineers/) front-end e desenvolvedores full-stack, a capacidade de chamar um [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) local a partir do ambiente TypeScript/Node.js é uma enorme vantagem. Utilizaremos o pacote NPM oficial `ollama`.
 
 ## Instalação
 
@@ -425,7 +425,7 @@ Para prover um [LLM](https://kenji.blog/pt/p/large-language-models-llm-transform
 
 ## Modelo de Cálculo para a Velocidade de Geração de Tokens
 
-O tempo de resposta do LLM, que está diretamente ligado à experiência do usuário, pode ser amplamente dividido em "**Tempo para o Primeiro Token (TTFT - Time To First Token)**" e "**Tempo por Token de Saída (TPOT - Time Per Output Token)**".
+O tempo de resposta do LLM, que está diretamente ligado à experiência do usuário, pode ser amplamente dividido em "**Tempo para o Primeiro Token (TTFT - Time To First Token)**" e "**Tempo por Token de Saída (TPOT - Time Per [Output](/pt/p/reading-hard-tech-books/) Token)**".
 
 O tempo total de geração $T_{total}$ pode ser formulado conforme abaixo, supondo que $N$ seja o número de tokens gerados:
 

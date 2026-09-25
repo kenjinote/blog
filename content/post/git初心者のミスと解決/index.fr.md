@@ -34,7 +34,7 @@ Git utilise principalement trois objets pour représenter l'état du dépôt. Ce
 1. **Blob (Binary Large Object)**
    C'est l'objet qui stocke le contenu du fichier lui-même. Les noms de fichiers et les informations d'autorisation n'y sont pas inclus. Il s'agit d'une pure séquence d'octets compressée avec zlib et identifiée par une valeur de hachage SHA-1 (40 caractères hexadécimaux).
 2. **[Tree](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
-   C'est l'objet qui représente la structure du répertoire. Un objet Tree contient des pointeurs (valeurs de hachage SHA-1) vers d'autres objets Tree (sous-répertoires) ou objets Blob (fichiers), ainsi que leurs noms de fichiers et autorisations d'accès. Il joue un rôle similaire à un répertoire UNIX.
+   C'est l'objet qui représente la structure du répertoire. Un objet Tree contient des [pointeurs](/fr/p/c-language-pointers-memory-management-stack-heap/) (valeurs de hachage SHA-1) vers d'autres objets Tree (sous-répertoires) ou objets Blob (fichiers), ainsi que leurs noms de fichiers et autorisations d'accès. Il joue un rôle similaire à un répertoire UNIX.
 3. **Commit**
    Il contient un pointeur vers l'objet Tree de niveau supérieur de l'ensemble du dépôt à un moment donné, des métadonnées (auteur, date du commit, message de commit) et un pointeur vers le commit précédent (commit parent).
 
@@ -66,7 +66,7 @@ Lorsque Git détecte des conflits ou affiche des différences de fichiers, un al
 
 ### 3.1 Algorithme Diff de Myers
 
-L'algorithme de détection de différences par défaut de Git est celui inventé par Eugene W. Myers. Étant donné deux fichiers texte $A$ et $B$, le problème de trouver la "séquence minimale d'édition (insertions et suppressions)" pour convertir $A$ en $B$ peut être modélisé comme un problème de plus court chemin dans la théorie des graphes.
+L'algorithme de détection de différences par défaut de Git est celui inventé par Eugene W. Myers. Étant donné deux fichiers texte $A$ et $B$, le problème de trouver la "séquence minimale d'édition (insertions et suppressions)" pour convertir $A$ en $B$ peut être modélisé comme un problème de plus court chemin dans la [théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/).
 
 Soient $N$ et $M$ les longueurs des chaînes, et $V = N + M$ le total. L'algorithme de Myers recherche la distance d'édition (Edit Distance) $D$. La complexité temporelle de cet algorithme est exprimée par l'équation suivante :
 
@@ -101,7 +101,7 @@ Sans me rendre compte que je travaillais sur la branche `main`, j'ai écrit beau
 
 ### Solution : `git reset` et création de branche
 
-Dans Git, les commits sont des objets indépendants et les branches ne sont que des pointeurs. Par conséquent, cela peut être résolu instantanément par l'opération : "créer une nouvelle branche, puis reculer le pointeur de la branche actuelle".
+Dans Git, les commits sont des objets indépendants et les branches ne sont que des [pointeurs](/fr/p/c-language-pointers-memory-management-stack-heap/). Par conséquent, cela peut être résolu instantanément par l'opération : "créer une nouvelle branche, puis reculer le pointeur de la branche actuelle".
 
 ```bash
 # 1. Créer une nouvelle branche pointant vers le commit actuel (le commit fait par erreur)
@@ -368,7 +368,7 @@ $ git reflog
 
 ## 12. Conclusion
 
-Nous avons expliqué très en détail les erreurs courantes dans lesquelles tombent les débutants sur Git, les mécanismes de Git en arrière-plan et comment les résoudre. Commiter sur la mauvaise branche, annuler un commit déjà poussé, utiliser Stash, survivre à un Detached HEAD et résoudre des conflits. Ce qui est important dans tout cela, c'est d'imaginer "quels objets et pointeurs Git manipule en arrière-plan".
+Nous avons expliqué très en détail les erreurs courantes dans lesquelles tombent les débutants sur Git, les mécanismes de Git en arrière-plan et comment les résoudre. Commiter sur la mauvaise branche, annuler un commit déjà poussé, utiliser Stash, survivre à un Detached HEAD et résoudre des conflits. Ce qui est important dans tout cela, c'est d'imaginer "quels objets et [pointeurs](/fr/p/c-language-pointers-memory-management-stack-heap/) Git manipule en arrière-plan".
 
 Les différences de fichiers sont calculées par un algorithme Diff strict représenté par des formules mathématiques, et la cohérence de l'historique est garantie par des fonctions de hachage cryptographiques. Si vous comprenez cette belle philosophie de conception, vous devriez réaliser que Git n'est en aucun cas une "boîte noire mystérieuse", mais le bouclier le plus puissant pour protéger fermement votre code source.
 

@@ -15,9 +15,9 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 在探索素数之谜的道路上，最接近真相的是1859年由德国数学家[波恩哈德·黎曼](https://kenji.blog/zh-cn/p/riemann/)（Bernhard Riemann）提出的 **“黎曼猜想（[Riemann](https://kenji.blog/zh-cn/p/riemann/) Hypothesis）”** 。黎曼猜想是现代数学中最重要且未解决的难题之一，也是克雷数学研究所设立的千禧年大奖难题之一，悬赏100万美元。
 
-乍看之下，关于素数分布的纯数学难题似乎与我们的日常生活毫不相干。然而，支撑现代社会基础设施的互联网安全，尤其是 **[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密和椭圆曲线密码学（ECC）等现代密码技术** ，都深深依赖于巨大素数的性质。
+乍看之下，关于素数分布的纯数学难题似乎与我们的日常生活毫不相干。然而，支撑现代社会基础设施的互联网安全，尤其是 **[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密和[椭圆曲线密码学](/zh-cn/p/elliptic-curve-cryptography-math-cpp/)（[ECC](/zh-cn/p/elliptic-curve-cryptography-math-cpp/)）等现代密码技术** ，都深深依赖于巨大素数的性质。
 
-本文将带领读者进行一次数学之旅，从素数分布、素数定理、黎曼zeta函数，一直深入到黎曼猜想的核心，并极其详尽地探讨它如何与现代密码技术产生联系，以及如果黎曼猜想被证明，世界将会发生怎样的改变。
+本文将带领读者进行一次数学之旅，从素数分布、[素数定理](/zh-cn/p/prime-number-theorem/)、黎曼zeta函数，一直深入到黎曼猜想的核心，并极其详尽地探讨它如何与现代密码技术产生联系，以及如果黎曼猜想被证明，世界将会发生怎样的改变。
 
 ---
 
@@ -36,7 +36,7 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 $$ \text{Li}(x) = \int_{2}^{x} \frac{dt}{\ln t} $$
 
-高斯的猜想后来在1896年由雅克·阿达马和夏尔-让·德拉瓦莱·普桑分别独立证明，确立为 **素数定理（[Prime Number Theorem](https://kenji.blog/zh-cn/p/prime-number-theorem/), PNT）** 。
+高斯的猜想后来在1896年由雅克·阿达马和夏尔-让·德拉瓦莱·普桑分别独立证明，确立为 **[素数定理](/zh-cn/p/prime-number-theorem/)（[Prime Number Theorem](https://kenji.blog/zh-cn/p/prime-number-theorem/), PNT）** 。
 
 $$ \lim_{x \to \infty} \frac{\pi(x)}{\text{Li}(x)} = 1 $$
 
@@ -50,7 +50,7 @@ $$ \pi(x) \sim \frac{x}{\ln x} $$
 
 # 3. 黎曼zeta函数与欧拉乘积
 
-分析素数分布最强大的武器是 **黎曼zeta函数（[Riemann](https://kenji.blog/zh-cn/p/riemann/) Zeta Function）** 。它最初是由莱昂哈德·欧拉（[Leonhard Euler](https://kenji.blog/zh-cn/p/euler/)）针对实数 $s > 1$ 定义的无穷级数。
+分析素数分布最强大的武器是 **黎曼zeta函数（[Riemann](https://kenji.blog/zh-cn/p/riemann/) Zeta Function）** 。它最初是由[莱昂哈德·欧拉](/zh-cn/p/euler/)（[Leonhard Euler](https://kenji.blog/zh-cn/p/euler/)）针对实数 $s > 1$ 定义的无穷级数。
 
 $$ \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = 1 + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + \dots $$
 
@@ -110,9 +110,9 @@ graph TD
 $$ \psi(x) = x - \sum_{\rho} \frac{x^\rho}{\rho} - \ln(2\pi) - \frac{1}{2}\ln(1 - x^{-2}) $$
 
 这里 $\rho$ 是对zeta函数的所有非平凡零点求和。
-主项是 $x$ （这对应于素数定理），由此加上或减去取决于零点 $\rho$ 的波状项，就能还原出素数呈阶梯状的精确分布。可以说，非平凡零点代表了素数分布的“频率（波）”。
+主项是 $x$ （这对应于[素数定理](/zh-cn/p/prime-number-theorem/)），由此加上或减去取决于零点 $\rho$ 的波状项，就能还原出素数呈阶梯状的精确分布。可以说，非平凡零点代表了素数分布的“频率（波）”。
 
-如果黎曼猜想成立，即所有非平凡零点 $\rho$ 的实部恰好都是 $1/2$，那么理论上素数定理的误差项将被限制在可以想象的最小范围内：
+如果黎曼猜想成立，即所有非平凡零点 $\rho$ 的实部恰好都是 $1/2$，那么理论上[素数定理](/zh-cn/p/prime-number-theorem/)的误差项将被限制在可以想象的最小范围内：
 
 $$ |\pi(x) - \text{Li}(x)| \le \frac{1}{8\pi} \sqrt{x} \ln x \quad \text{for} \quad x \ge 2657 $$
 
@@ -124,7 +124,7 @@ $$ |\pi(x) - \text{Li}(x)| \le \frac{1}{8\pi} \sqrt{x} \ln x \quad \text{for} \q
 
 到此为止都是深奥的纯数学世界，但这素数的性质在根基上支撑着现代的数字社会。其代表就是以 **[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密** 为首的公钥加密方式。
 
-互联网上的信用卡支付、密码传输、区块链电子签名等，所有通信的安全性都依赖于“素数”。
+互联网上的信用卡支付、密码传输、[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)电子签名等，所有通信的安全性都依赖于“素数”。
 
 ### RSA加密的原理
 RSA加密的安全性基于一个数学事实（整数分解问题）：“对大位数的合数进行质因数分解非常困难”。
@@ -152,7 +152,7 @@ graph LR
     F -.-> G["如果不知道p和q，d就无法计算"]
 ```
 
-要破解[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密，就必须从巨大的 $N$ 中找出原来的素数 $p$ 和 $q$（进行质因数分解）。即使使用当前主流的算法（如普通数域筛选法：GNFS等），并动用超级计算机来分解几百位数的数字，据说也需要远远超过宇宙年龄的时间。
+要破解[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密，就必须从巨大的 $N$ 中找出原来的素数 $p$ 和 $q$（进行质因数分解）。即使使用当前主流的算法（如[普通数域筛选法](/zh-cn/p/beyond-gnfs-integer-factorization-algorithms/)：GNFS等），并动用超级计算机来分解几百位数的数字，据说也需要远远超过宇宙年龄的时间。
 
 ---
 
@@ -186,12 +186,12 @@ graph LR
 然而，影响并非为零。
 因为在证明黎曼猜想的过程中， **极有可能发现“新的数学工具”或“未知的分析方法”** 。回顾历史，当[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)或[庞加莱猜想](https://kenji.blog/zh-cn/p/poincare-conjecture/)被证明时，在这个过程中发展出的新理论让整个数学界实现了巨大的飞跃。
 
-如果确立了某种能够完全操控黎曼zeta函数零点性质的未知代数几何学方法或非交换几何学方法，那么这可能会导致发现具有突破性的质因数分解算法（例如将计算复杂度降低到多项式时间的经典算法），这种可能性是无法否认的。正因如此，密码学家们绝对无法将视线从黎曼猜想的动向上移开。
+如果确立了某种能够完全操控黎曼zeta函数零点性质的未知代数几何学方法或非交换几何学方法，那么这可能会导致发现具有突破性的质因数分解算法（例如将计算[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)降低到多项式时间的经典算法），这种可能性是无法否认的。正因如此，密码学家们绝对无法将视线从黎曼猜想的动向上移开。
 
 ### 量子计算机与Shor算法
 对于密码技术而言，更直接、更现实的威胁不是黎曼猜想的证明，而是 **量子计算机** 。彼得·秀尔（Peter Shor）在1994年发表的“Shor算法”证明，如果拥有性能足够强大的量子计算机，就能在多项式时间内解决质因数分解问题。这将导致[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密和椭圆曲线加密被从根本上破解。
 
-目前，全世界都在推进向即使是量子计算机也无法破解的“抗量子密码（Post-Quantum [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy, PQC）”（如格密码等）的过渡。依赖于素数的密码技术在某种意义上可能正在迎来其黄金时代的落幕，但素数本身的数学价值将永远不会消失。
+目前，全世界都在推进向即使是量子计算机也无法破解的“抗量子密码（Post-Quantum [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy, PQC）”（如[格密码](/zh-cn/p/lattice-based-cryptography-math-intuition/)等）的过渡。依赖于素数的密码技术在某种意义上可能正在迎来其黄金时代的落幕，但素数本身的数学价值将永远不会消失。
 
 ---
 

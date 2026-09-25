@@ -197,9 +197,9 @@ rsa_example()
 
 [RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号は強力ですが、コンピュータの性能向上に伴い、安全性を保つために鍵長を長くする（現在では2048ビットや3072ビット）必要があり、計算コストが増大するという問題が生じました。
 
-そこで1985年に提案されたのが「楕円曲線暗号（Elliptic Curve [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy: ECC）」です。これは有限体上の楕円曲線（一般に $y^2 = x^3 + ax + b$ の形）における点の加算を利用したものです。
+そこで1985年に提案されたのが「[楕円曲線暗号](/p/elliptic-curve-cryptography-math-cpp/)（Elliptic Curve [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy: [ECC](/p/elliptic-curve-cryptography-math-cpp/)）」です。これは有限体上の楕円曲線（一般に $y^2 = x^3 + ax + b$ の形）における点の加算を利用したものです。
 
-楕円曲線上の離散対数問題（ECDLP）は、素因数分解問題よりもさらに解くのが困難であることが知られており、 **[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)の3072ビットと同等の安全性を、ECCならわずか256ビットの鍵長で実現** できます。これにより、スマートフォンやIoTデバイスなど、計算リソースが限られた環境でも高速かつ安全な暗号通信（ECDSAやECDHなど）が可能になりました。
+楕円曲線上の離散対数問題（ECDLP）は、素因数分解問題よりもさらに解くのが困難であることが知られており、 **[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)の3072ビットと同等の安全性を、[ECC](/p/elliptic-curve-cryptography-math-cpp/)ならわずか256ビットの鍵長で実現** できます。これにより、スマートフォンやIoTデバイスなど、計算リソースが限られた環境でも高速かつ安全な暗号通信（ECDSAやECDHなど）が可能になりました。
 
 ---
 
@@ -207,7 +207,7 @@ rsa_example()
 
 暗号技術は盤石に思えましたが、1994年にピーター・ショア（Peter Shor）が発表した「[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)」によって大きな衝撃が走ります。
 
-量子コンピュータは「重ね合わせ」と「量子もつれ」という量子力学の性質を利用して計算を行います。ショアのアルゴリズムを十分な性能の量子コンピュータ上で実行すると、素因数分解問題や離散対数問題が「多項式時間」で解けてしまうことが数学的に証明されたのです。つまり、実用的な量子コンピュータが完成した日（Q-Day）、現在使われている[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)やECCなどの[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号はすべて瞬時に破綻します。
+量子コンピュータは「重ね合わせ」と「量子もつれ」という量子力学の性質を利用して計算を行います。ショアのアルゴリズムを十分な性能の量子コンピュータ上で実行すると、素因数分解問題や離散対数問題が「多項式時間」で解けてしまうことが数学的に証明されたのです。つまり、実用的な量子コンピュータが完成した日（Q-Day）、現在使われている[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)や[ECC](/p/elliptic-curve-cryptography-math-cpp/)などの[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号はすべて瞬時に破綻します。
 
 ## PQC（Post-Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy）の登場
 この未曾有の脅威に備え、[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)でも解読が困難な新しい数学的問題に基づく「耐量子計算機暗号（PQC）」の研究が急ピッチで進められています。NIST（米国国立標準技術研究所）は長年にわたりPQCの標準化プロセスを進めており、主に以下の数学的アプローチが有力視されています。

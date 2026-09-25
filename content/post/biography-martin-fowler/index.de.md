@@ -50,7 +50,7 @@ graph TD
 
 ## Einfluss auf die Nachwelt und Botschaft an moderne Ingenieure
 
-Martin Fowlers größte Errungenschaft ist es, sprach- oder werkzeugunabhängige „universelle Ingenieursprinzipien“ zu formulieren und diese mit der Community zu teilen. Sein Blog (martinfowler.com) bleibt weltweit eine der zuverlässigsten Informationsquellen für Ingenieure, und viele der von ihm eingeführten Konzepte haben sich als „gesunder Menschenverstand“ in der modernen Softwareentwicklung etabliert.
+Martin Fowlers größte Errungenschaft ist es, sprach- oder werkzeugunabhängige „universelle Ingenieursprinzipien“ zu formulieren und diese mit der Community zu teilen. Sein Blog (martinfowler.com) bleibt weltweit eine der zuverlässigsten Informationsquellen [für Ingenieure](/de/p/prompt-engineering-for-engineers/), und viele der von ihm eingeführten Konzepte haben sich als „gesunder Menschenverstand“ in der modernen Softwareentwicklung etabliert.
 
 „Jeder Dummkopf kann Code schreiben, den ein Computer verstehen kann. Gute Programmierer schreiben Code, den Menschen verstehen können.“
 

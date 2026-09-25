@@ -97,7 +97,7 @@ Wenn sich dies über Generationen hinweg fortsetzt, nimmt die Wahrscheinlichkeit
 
 $$ F = \sum \left( \frac{1}{2} \right)^{n+1} (1 + F_A) $$
 
-Hierbei ist $n$ die Anzahl der Schritte im Pfad zwischen den Eltern über den gemeinsamen Vorfahren, und $F_A$ ist der Inzuchtkoeffizient des gemeinsamen Vorfahren selbst. Der historische **Ahnenschwund** kann als ein Prozess verstanden werden, bei dem sich der Wert von $F$ mit jeder zurückgehenden Generation zahllos akkumuliert. Selbst wenn der individuelle Beitrag zu $F$ extrem klein ist (z. B. bei einer Heirat von Verwandten 10. Grades), führt die gewaltige Anhäufung dazu, dass die Gesamtzahl der Vorfahren drastisch komprimiert wird.
+Hierbei ist $n$ die Anzahl der Schritte im [Pfad](/de/p/windows-%E3%81%A7pfad%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9Fausf%C3%BChrbare-datei%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/) zwischen den Eltern über den gemeinsamen Vorfahren, und $F_A$ ist der Inzuchtkoeffizient des gemeinsamen Vorfahren selbst. Der historische **Ahnenschwund** kann als ein Prozess verstanden werden, bei dem sich der Wert von $F$ mit jeder zurückgehenden Generation zahllos akkumuliert. Selbst wenn der individuelle Beitrag zu $F$ extrem klein ist (z. B. bei einer Heirat von Verwandten 10. Grades), führt die gewaltige Anhäufung dazu, dass die Gesamtzahl der Vorfahren drastisch komprimiert wird.
 
 # 4. Ein extremes historisches Beispiel: Der Untergang der Habsburger
 

@@ -169,9 +169,9 @@ $$
 
 ここでカントールは一つの巨大な疑問に直面しました。 **「$\aleph_0$ と $2^{\aleph_0}$ の中間の濃度を持つ無限集合は存在するのか？」** 
 
-「中間の濃度は存在しない」とする仮説を **連続体仮説（[Continuum Hypothesis](https://kenji.blog/p/continuum-hypothesis/), CH）** と呼びます。カントールはこの証明に生涯を捧げましたが、解決することはできませんでした。
+「中間の濃度は存在しない」とする仮説を **[連続体仮説](/p/continuum-hypothesis/)（[Continuum Hypothesis](https://kenji.blog/p/continuum-hypothesis/), CH）** と呼びます。カントールはこの証明に生涯を捧げましたが、解決することはできませんでした。
 
-後に、[クルト・ゲーデル](https://kenji.blog/p/godel/)（[Kurt Gödel](https://kenji.blog/p/godel/)）とポール・コーエン（Paul Cohen）によって、連続体仮説は **「現在の数学の公理系（ZFC）では、証明も反証もできない（独立である）」** ことが証明されました。これは20世紀数学における最も深遠な発見の一つです。
+後に、[クルト・ゲーデル](https://kenji.blog/p/godel/)（[Kurt Gödel](https://kenji.blog/p/godel/)）とポール・コーエン（Paul Cohen）によって、[連続体仮説](/p/continuum-hypothesis/)は **「現在の数学の公理系（ZFC）では、証明も反証もできない（独立である）」** ことが証明されました。これは20世紀数学における最も深遠な発見の一つです。
 
 ---
 
@@ -183,4 +183,4 @@ $$
 2. 有理数までは自然数と同じ大きさ（可算無限）である。
 3. 対角線をずらして新しい数を作る論法により、実数が自然数より多い（非可算無限）ことが証明される。
 
-この直感に反する、しかし絶対的な論理の美しさこそが、数学という学問の最大の魅力と言えるでしょう。対角線論法は、のちに[アラン・チューリング](https://kenji.blog/p/turing/)（Alan Turing）の停止性問題や[ゲーデルの不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)の証明など、計算機科学や数理論理学の根幹をなす理論にも応用されることになります。
+この直感に反する、しかし絶対的な論理の美しさこそが、数学という学問の最大の魅力と言えるでしょう。対角線論法は、のちに[アラン・チューリング](https://kenji.blog/p/turing/)（Alan Turing）の[停止性問題](/p/halting-problem/)や[ゲーデルの不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)の証明など、計算機科学や数理論理学の根幹をなす理論にも応用されることになります。

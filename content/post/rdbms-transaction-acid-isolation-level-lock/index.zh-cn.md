@@ -292,4 +292,4 @@ WHERE account_id = 'A'
 - 理解 **悲观锁** 和 **乐观锁** 的特性，结合业务逻辑和流量特性（冲突频率）在应用程序中实现最佳的排他控制。
 
 只有将这些知识和技术结合起来，才可能构建出“既不产生数据不一致，又具备高性能扩展”的健壮系统。
-在下一篇文章中，我们将讲解这种事务控制在分布式系统和微服务架构中是如何演进的（如Saga模式和2PC等）。敬请期待。
+在下一篇文章中，我们将讲解这种事务控制在[分布式系统](/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)和[微服务架构](/zh-cn/p/microservices-architecture-bff-api-gateway/)中是如何演进的（如Saga模式和2PC等）。敬请期待。

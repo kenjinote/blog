@@ -20,7 +20,7 @@ In this article, we will delve deeply into [Fermat](https://kenji.blog/en/p/ferm
 
 In France at the time, judges were encouraged to avoid expanding their social circles too widely to prevent political and social conflicts. Ironically, this isolated environment afforded [Fermat](https://kenji.blog/en/p/fermat/) the quiet time he needed, driving him toward the profound depths of mathematics. For him, mathematics was a pure joy that freed him from the heavy pressures of his duties, not something forced upon him by anyone.
 
-[Fermat](https://kenji.blog/en/p/fermat/) did not like to publish his research as formal papers; he was satisfied with jotting down his ideas and proofs in notebooks or the margins of books, or by exchanging letters with other scholars through Marin Mersenne, a friar in Paris who served as an academic hub at the time. He enjoyed presenting his discoveries as **"problems"** to other mathematicians, provocatively demanding their solutions. He is also known to have engaged in fierce debates with great mathematicians such as René Descartes and [John Wallis](https://kenji.blog/en/p/wallis/).
+[Fermat](https://kenji.blog/en/p/fermat/) did not like to publish his research as formal papers; he was satisfied with jotting down his ideas and proofs in notebooks or the margins of books, or by exchanging letters with other scholars through [Marin Mersenne](/en/p/mersenne/), a friar in Paris who served as an academic hub at the time. He enjoyed presenting his discoveries as **"problems"** to other mathematicians, provocatively demanding their solutions. He is also known to have engaged in fierce debates with great mathematicians such as [René Descartes](/en/p/descartes/) and [John Wallis](https://kenji.blog/en/p/wallis/).
 
 ```mermaid
 flowchart TD
@@ -91,7 +91,7 @@ Though [Fermat](https://kenji.blog/en/p/fermat/) and Pascal each employed entire
 
 ## 5. Pioneering Contributions to Calculus and Physics
 
-Decades before [Isaac Newton](https://kenji.blog/en/p/newton/) and Gottfried Leibniz established calculus, [Fermat](https://kenji.blog/en/p/fermat/) had devised his own methods for drawing tangents to curves and finding the maximum and minimum values of functions.
+Decades before [Isaac Newton](https://kenji.blog/en/p/newton/) and [Gottfried Leibniz](/en/p/leibniz/) established calculus, [Fermat](https://kenji.blog/en/p/fermat/) had devised his own methods for drawing tangents to curves and finding the maximum and minimum values of functions.
 
 He introduced a concept called **"Adequality"**. This is a technique where a value is treated as "almost equal" when a minute quantity $E$ is varied, and the extreme value is found by treating $E$ as $0$ in the final stage of calculation. This is essentially the very idea of modern differentiation, and Newton himself later remarked, "I had the hint of this method from [Fermat](https://kenji.blog/en/p/fermat/)'s way of drawing tangents." Without [Fermat](https://kenji.blog/en/p/fermat/), the completion of calculus might have been delayed even further.
 
@@ -123,7 +123,7 @@ Successive geniuses such as Euler, [Legendre](https://kenji.blog/en/p/legendre/)
 
 For over 350 years after its proposal, this problem reigned as the "greatest unsolved problem in mathematics," solved by no one. In the latter half of the 20th century, as many began to suspect that "[Fermat](https://kenji.blog/en/p/fermat/) hadn't actually proven it (or had made a mistake)," one mathematician finally put an end to this formidable puzzle.
 
-That was the British mathematician [Andrew Wiles](https://kenji.blog/en/p/wiles/). Having encountered the problem in his local library at the age of 10, he vowed to dedicate his life to solving it. He took a grand approach unimaginable in Fermat's time, combining the **Taniyama-Shimura conjecture**—which proposed that "all elliptic curves are modular," put forward by Japanese mathematicians Yutaka Taniyama and [Goro Shimura](https://kenji.blog/en/p/shimura-goro/)—with Ken Ribet's research on Frey curves (the epsilon conjecture).
+That was the British mathematician [Andrew Wiles](https://kenji.blog/en/p/wiles/). Having encountered the problem in his local library at the age of 10, he vowed to dedicate his life to solving it. He took a grand approach unimaginable in Fermat's time, combining the **Taniyama-Shimura conjecture**—which proposed that "all elliptic curves are modular," put forward by Japanese mathematicians [Yutaka Taniyama](/en/p/taniyama-yutaka/) and [Goro Shimura](https://kenji.blog/en/p/shimura-goro/)—with Ken Ribet's research on Frey curves (the epsilon conjecture).
 
 Wiles secluded himself in his attic and, after seven years of solitary research, published the complete proof in 1995. His proof was a culmination of modern mathematics spanning hundreds of pages, entirely different from the 17th-century mathematical methods ("truly marvelous proof") that [Fermat](https://kenji.blog/en/p/fermat/) likely envisioned.
 

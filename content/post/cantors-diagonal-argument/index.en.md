@@ -171,7 +171,7 @@ Here, Cantor faced one massive question: **"Does there exist an infinite set wit
 
 The hypothesis that "no intermediate cardinality exists" is called the **[Continuum Hypothesis](https://kenji.blog/en/p/continuum-hypothesis/) (CH)**. Cantor devoted his life to proving this, but could not solve it.
 
-Later, [Kurt Gödel](https://kenji.blog/en/p/godel/) and Paul Cohen proved that the continuum hypothesis is **"neither provable nor disprovable (it is independent) within the current axiom system of mathematics (ZFC)."** This is one of the most profound discoveries in 20th-century mathematics.
+Later, [Kurt Gödel](https://kenji.blog/en/p/godel/) and Paul Cohen proved that the [continuum hypothesis](/en/p/continuum-hypothesis/) is **"neither provable nor disprovable (it is independent) within the current axiom system of mathematics (ZFC)."** This is one of the most profound discoveries in 20th-century mathematics.
 
 ---
 

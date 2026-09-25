@@ -25,8 +25,8 @@ Git이 이력을 어떻게 통합하는지 이해하기 위해서는 먼저 Git�
 
 Git의 각 커밋은 그 내용을 바탕으로 계산된 SHA-1(Secure Hash Algorithm 1) 해시 함수에 의한 40자리 16진수로 고유하게 식별됩니다. 커밋 객체는 다음 요소들로 구성됩니다:
 
-1. **[Tree](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 객체에 대한 포인터**: 그 시점의 디렉토리 구조와 파일(Blob)의 스냅샷
-2. **부모 커밋에 대한 포인터**: 1개 이상의 부모 커밋의 해시값 (첫 커밋은 부모를 가지지 않으며, 병합 커밋은 2개 이상의 부모를 가집니다)
+1. **[Tree](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 객체에 대한 [포인터](/ko/p/c-language-pointers-memory-management-stack-heap/)**: 그 시점의 디렉토리 구조와 파일(Blob)의 스냅샷
+2. **부모 커밋에 대한 [포인터](/ko/p/c-language-pointers-memory-management-stack-heap/)**: 1개 이상의 부모 커밋의 해시값 (첫 커밋은 부모를 가지지 않으며, 병합 커밋은 2개 이상의 부모를 가집니다)
 3. **작성자 정보(Author)**: 코드를 작성한 사람과 일시
 4. **커미터 정보(Committer)**: 커밋을 생성하고 적용한 사람과 일시
 5. **커밋 메시지**: 변경의 의도를 설명하는 텍스트
@@ -39,7 +39,7 @@ $$
 
 여기서 $\parallel$ 은 데이터의 결합을 나타냅니다. 해시 함수의 특성에 따라, 커밋 메시지를 1글자만 바꾸거나 부모 커밋이 다르기만 해도 전혀 다른 해시값이 생성됩니다. 즉, **커밋은 불변(Immutable)** 입니다. 후술할 `rebase`가 "이력을 조작한다"고 표현되는 것은 실제로는 "내용은 비슷하지만 다른 해시값을 가지는 새로운 커밋을 생성하고 있기" 때문입니다.
 
-해시 공간의 크기는 $2^{160}$ 이며, 충돌(다른 커밋이 같은 해시값을 가지는 것)이 발생할 확률 $P$ 는 생일 문제(Birthday Paradox)의 이론을 사용하면 다음과 같이 근사할 수 있습니다 ($n$ 은 커밋 수)：
+해시 공간의 크기는 $2^{160}$ 이며, 충돌(다른 커밋이 같은 해시값을 가지는 것)이 발생할 확률 $P$ 는 [생일 문제](/ko/p/%E3%83%90%E3%83%BC%E3%82%B9%E3%83%87%E3%82%A4%EC%97%AD%EC%84%A4%E3%81%A8%E3%81%AF/)([Birthday Paradox](/ko/p/%E3%83%90%E3%83%BC%E3%82%B9%E3%83%87%E3%82%A4%EC%97%AD%EC%84%A4%E3%81%A8%E3%81%AF/))의 이론을 사용하면 다음과 같이 근사할 수 있습니다 ($n$ 은 커밋 수)：
 
 $$
 P(\text{collision}) \approx 1 - \exp\left(-\frac{n^2}{2 \times 2^{160}}\right)
@@ -51,11 +51,11 @@ $$
 
 # 3. 그래프 이론과 DAG：Git 이력의 수학적 모델
 
-Git의 커밋 이력은 그래프 이론의 "방향 비순환 그래프(Directed Acyclic [Graph](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), DAG)"로 모델링됩니다.
+Git의 커밋 이력은 [그래프 이론](/ko/p/graph-theory-dijkstra-a-star/)의 "방향 비순환 그래프(Directed Acyclic [Graph](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), DAG)"로 모델링됩니다.
 
 ## 3.1 DAG(방향 비순환 그래프)란
 
-그래프 $G = (V, E)$ 에서, $V$ 는 커밋의 집합(정점), $E$ 는 커밋 간의 부모-자식 관계를 나타내는 방향 간선(Directed Edge)의 집합입니다. Git에서는 간선의 방향이 "자식 커밋에서 부모 커밋"으로 향합니다. 새로운 커밋은 과거의 커밋에 대한 포인터를 가지고 있기 때문입니다.
+그래프 $G = (V, E)$ 에서, $V$ 는 커밋의 집합(정점), $E$ 는 커밋 간의 부모-자식 관계를 나타내는 방향 간선(Directed Edge)의 집합입니다. Git에서는 간선의 방향이 "자식 커밋에서 부모 커밋"으로 향합니다. 새로운 커밋은 과거의 커밋에 대한 [포인터](/ko/p/c-language-pointers-memory-management-stack-heap/)를 가지고 있기 때문입니다.
 
 ```mermaid
 graph BT
@@ -86,7 +86,7 @@ Git의 `git log` 명령어 등으로 이력을 표시할 때, DAG는 위상 정�
 
 ## 4.1 Fast-Forward 병합 (--ff)
 
-통합 대상(예: `main`)의 브랜치가 통합할(예: `feature`) 브랜치의 직접적인 조상일 경우, Git은 "Fast-Forward(빨리 감기)" 병합을 실행합니다. 이는 새로운 커밋을 생성하지 않고 단순히 브랜치의 포인터를 앞으로 이동시키는 작업입니다.
+통합 대상(예: `main`)의 브랜치가 통합할(예: `feature`) 브랜치의 직접적인 조상일 경우, Git은 "Fast-Forward(빨리 감기)" 병합을 실행합니다. 이는 새로운 커밋을 생성하지 않고 단순히 브랜치의 [포인터](/ko/p/c-language-pointers-memory-management-stack-heap/)를 앞으로 이동시키는 작업입니다.
 
 ```mermaid
 gitGraph
@@ -125,7 +125,7 @@ gitGraph
 
 통합 대상과 통합할 브랜치가 각각 독자적인 커밋을 가지고 있는 경우, Git은 3방향 병합을 실행합니다. 이 때 Git은 DAG를 탐색하여 두 브랜치의 "공통 조상(Lowest Common Ancestor, LCA)"을 찾아냅니다.
 
-LCA를 찾기 위한 알고리즘의 시간 복잡도 $T_{\text{LCA}}$ 는 정점 수 $|V|$ 와 간선 수 $|E|$ 에 대해 선형 시간에 실행 가능합니다：
+LCA를 찾기 위한 알고리즘의 시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/) $T_{\text{LCA}}$ 는 정점 수 $|V|$ 와 간선 수 $|E|$ 에 대해 선형 시간에 실행 가능합니다：
 
 $$
 T_{\text{LCA}} = \mathcal{O}(|V| + |E|)
@@ -145,7 +145,7 @@ Git은 "LCA의 상태", "현재 브랜치의 상태", "상대 브랜치의 상�
 
 1. `feature` 브랜치와 `main` 브랜치의 공통 조상(LCA)을 찾는다.
 2. LCA부터 `feature` 브랜치 끝까지의 커밋 차이를 임시 영역에 저장한다.
-3. `feature` 브랜치의 포인터를 `main` 브랜치의 끝으로 이동시킨다.
+3. `feature` 브랜치의 [포인터](/ko/p/c-language-pointers-memory-management-stack-heap/)를 `main` 브랜치의 끝으로 이동시킨다.
 4. 저장해둔 차이를 새로운 베이스(`main`의 끝) 위에 하나씩 순차적으로 적용(Cherry-Pick)하여 새로운 커밋을 생성한다.
 
 ```mermaid

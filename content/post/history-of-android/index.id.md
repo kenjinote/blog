@@ -24,7 +24,7 @@ Google-lah yang mengakuisisi mereka yang saat itu sedang mengalami kesulitan keu
 
 ## 2. Tahun 2007, Kemunculan iPhone dan Perancangan Ulang dari Awal
 
-Pada bulan Januari 2007, Steve Jobs mengumumkan iPhone generasi pertama.
+Pada bulan Januari 2007, [Steve Jobs](/id/p/biography-steve-jobs/) mengumumkan iPhone generasi pertama.
 Prototipe "Sooner" yang sedang dikembangkan oleh tim Android saat itu memiliki desain lama dengan keyboard fisik seperti BlackBerry. Melihat layar multisentuh inovatif iPhone, Andy Rubin, yang mendengarkan presentasi tersebut di dalam mobilnya, dikabarkan menyadari bahwa "**Apa yang kami buat adalah sampah. Kami harus membuatnya ulang.**"
 
 Mereka sepenuhnya membuang desain lama dan mengubah arah secara besar-besaran untuk mengembangkan "Dream", sebuah OS baru yang dioptimalkan untuk layar sentuh.
@@ -48,7 +48,7 @@ Khususnya "**Android 4.0 (Ice Cream Sandwich)**" yang dirilis pada tahun 2011 di
 
 Di antara produsen yang menerima Android secara gratis, yang paling sukses adalah **Samsung** dari Korea Selatan. Seri "Galaxy S" berkuasa sebagai saingan tangguh bagi iPhone, dan selalu memimpin tren perangkat keras dengan memperbesar ukuran layar (phablet) dan mengadopsi layar OLED.
 
-Namun, Apple tidak mungkin diam saja melihat ekspansi pesat Android. Mendiang Steve Jobs sangat marah dan mengatakan, "Android adalah produk curian dari iPhone. Saya bersedia memulai perang nuklir untuk menghancurkan produk ini," dan perang tuntutan hukum paten yang sengit (perang paten smartphone) meletus di seluruh dunia. Konflik ini berlanjut selama beberapa tahun, tetapi pada akhirnya berakhir dengan perdamaian antara kedua pihak yang sudah tumbuh terlalu besar.
+Namun, Apple tidak mungkin diam saja melihat ekspansi pesat Android. Mendiang [Steve Jobs](/id/p/biography-steve-jobs/) sangat marah dan mengatakan, "Android adalah produk curian dari iPhone. Saya bersedia memulai perang nuklir untuk menghancurkan produk ini," dan perang tuntutan hukum paten yang sengit (perang paten smartphone) meletus di seluruh dunia. Konflik ini berlanjut selama beberapa tahun, tetapi pada akhirnya berakhir dengan perdamaian antara kedua pihak yang sudah tumbuh terlalu besar.
 
 ## 6. Kesimpulan: Dua Raksasa Ekosistem Mobile
 

@@ -15,10 +15,10 @@ tags:
 
 # 1. Introduction: The Paradigm Shift of Functional Programming
 
-In modern software development, **Functional Programming (FP)** is no longer confined to the academic realm but is widely recognized as a practical paradigm.
-Compared to historically mainstream imperative and object-oriented programming, functional programming takes a fundamentally different approach of "treating computation as the evaluation of mathematical functions and avoiding state changes and mutable data."
+In modern software development, **[Functional Programming](/en/p/lambda-calculus-functional-programming/) (FP)** is no longer confined to the academic realm but is widely recognized as a practical paradigm.
+Compared to historically mainstream imperative and object-oriented programming, [functional programming](/en/p/lambda-calculus-functional-programming/) takes a fundamentally different approach of "treating computation as the evaluation of mathematical functions and avoiding state changes and mutable data."
 
-In this article, we will thoroughly and systematically explain everything from the fundamental concepts of functional programming, such as pure functions and immutability, to the advanced concept of "monads," which many learners stumble upon.
+In this article, we will thoroughly and systematically explain everything from the fundamental concepts of [functional programming](/en/p/lambda-calculus-functional-programming/), such as pure functions and immutability, to the advanced concept of "monads," which many learners stumble upon.
 
 ## 1.1 Classification of Programming Paradigms
 
@@ -34,7 +34,7 @@ flowchart TD
 
 ## 1.2 Lambda Calculus: Mathematical Foundations
 
-The theoretical foundation of functional programming lies in **Lambda Calculus**, devised by Alonzo Church and others in the 1930s.
+The theoretical foundation of [functional programming](/en/p/lambda-calculus-functional-programming/) lies in **Lambda Calculus**, devised by Alonzo Church and others in the 1930s.
 This computational model, based on function application and variable binding, has computational power equivalent to a Turing machine.
 
 Mathematically, a lambda expression is defined as follows:
@@ -49,7 +49,7 @@ Here, $x$ represents a variable, $\lambda x. E$ represents abstraction (function
 
 # 2. Pure Functions
 
-The most important concept at the core of functional programming is **pure functions**.
+The most important concept at the core of [functional programming](/en/p/lambda-calculus-functional-programming/) is **pure functions**.
 
 ## 2.1 Definition of Pure Functions
 
@@ -92,7 +92,7 @@ Immutability is the property that once a data structure or state is created, it 
 
 ## 3.1 Avoiding State Mutation
 
-In imperative programming, computation proceeds by updating the values of variables, but in functional programming, it takes the approach of **creating and returning new data** instead of modifying existing data.
+In imperative programming, computation proceeds by updating the values of variables, but in [functional programming](/en/p/lambda-calculus-functional-programming/), it takes the approach of **creating and returning new data** instead of modifying existing data.
 
 ```python
 # Imperative approach (destructive modification)
@@ -120,7 +120,7 @@ In this way, the new list reuses existing nodes.
 
 # 4. The Concept of Monads
 
-When learning functional programming, **Monad** is considered the biggest wall.
+When learning [functional programming](/en/p/lambda-calculus-functional-programming/), **Monad** is considered the biggest wall.
 
 ## 4.1 What is a Monad?
 
@@ -158,11 +158,11 @@ To behave as a monad, it must satisfy the following three rules (monad laws).
 
 # 5. Benefits and Future Prospects of Functional Programming
 
-Functional programming, due to its declarative style and powerful mathematical foundation, enables the construction of software that has fewer bugs, is easy to test, and is highly extensible.
+[Functional programming](/en/p/lambda-calculus-functional-programming/), due to its declarative style and powerful mathematical foundation, enables the construction of software that has fewer bugs, is easy to test, and is highly extensible.
 
 -   **Modularity** : Reusable components can be created by combining pure functions.
 -   **Ease of Debugging** : The need to track state changes is reduced.
 
 ## Conclusion
 
-Functional programming concepts such as pure functions, immutability, and monads might seem difficult to understand at first. However, by understanding and practicing these concepts, you will be able to write more robust and maintainable code. In the development of modern complex systems, the importance of functional programming will undoubtedly continue to increase in the future.
+[Functional programming](/en/p/lambda-calculus-functional-programming/) concepts such as pure functions, immutability, and monads might seem difficult to understand at first. However, by understanding and practicing these concepts, you will be able to write more robust and maintainable code. In the development of modern complex systems, the importance of [functional programming](/en/p/lambda-calculus-functional-programming/) will undoubtedly continue to increase in the future.

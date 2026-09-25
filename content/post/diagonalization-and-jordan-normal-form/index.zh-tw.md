@@ -37,7 +37,7 @@ $$
 P^{-1} A P = D
 $$
 
-在這裡，$D$ 的對角元素是 $A$ 的 **特徵值** $\lambda_i$，而 $P$ 的各個行向量是對應的 **特徵向量** $\mathbf{v}_i$。
+在這裡，$D$ 的對角元素是 $A$ 的 **[特徵值](/zh-tw/p/eigenvalues-and-eigenvectors/)** $\lambda_i$，而 $P$ 的各個行向量是對應的 **特徵向量** $\mathbf{v}_i$。
 
 ## 對角化的具體計算示例
 
@@ -51,8 +51,8 @@ A = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-**步驟1：計算特徵值**
-解特徵方程式 $\det(A - \lambda I) = 0$。得到特徵值為 $\lambda = 2$ 和 $\lambda = 9$。
+**步驟1：計算[特徵值](/zh-tw/p/eigenvalues-and-eigenvectors/)**
+解特徵方程式 $\det(A - \lambda I) = 0$。得到[特徵值](/zh-tw/p/eigenvalues-and-eigenvectors/)為 $\lambda = 2$ 和 $\lambda = 9$。
 
 **步驟2：計算特徵向量**
 當 $\lambda = 2$ 時：

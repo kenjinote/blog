@@ -10,7 +10,7 @@ tags: ["Ernst Kummer", "Fermat's Last Theorem", "Ideal Numbers", "Algebraic Numb
 
 # [エルンスト・クンマー](https://kenji.blog/p/kummer/)：理想数の父と代数的整数論の夜明け
 
-数学の歴史において、特定の難問への挑戦が新しい数学の分野を切り開くことは珍しくありません。エルンスト・エドゥアルト・[クンマー](https://kenji.blog/p/kummer/) ( **Ernst Eduard Kummer** ) は、まさにそのような歴史的転換点を生み出した19世紀のドイツの偉大な数学者です。彼は **フェルマーの最終定理** ( **[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)** ) という超難問に挑む過程で **理想数** ( **Ideal Numbers** ) という画期的な概念を導入し、のちの代数的整数論の基礎を築き上げました。
+数学の歴史において、特定の難問への挑戦が新しい数学の分野を切り開くことは珍しくありません。エルンスト・エドゥアルト・[クンマー](https://kenji.blog/p/kummer/) ( **Ernst Eduard Kummer** ) は、まさにそのような歴史的転換点を生み出した19世紀のドイツの偉大な数学者です。彼は **[フェルマーの最終定理](/p/fermats-last-theorem/)** ( **[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)** ) という超難問に挑む過程で **理想数** ( **Ideal Numbers** ) という画期的な概念を導入し、のちの代数的整数論の基礎を築き上げました。
 
 本記事では、[クンマー](https://kenji.blog/p/kummer/)の波乱に満ちた生涯、彼にまつわる人間味あふれるエピソード、そして数学史に燦然と輝く彼の業績について、詳しく深く掘り下げていきます。
 
@@ -28,13 +28,13 @@ tags: ["Ernst Kummer", "Fermat's Last Theorem", "Ideal Numbers", "Algebraic Numb
 
 大学卒業後、[クンマー](https://kenji.blog/p/kummer/)はすぐに大学のポストを得ることができず、故郷に近いリーグニッツ ( **Liegnitz** ) のギムナジウム（中高一貫校）で数学と物理の教師として約10年間働きました。この教師時代は、[クンマー](https://kenji.blog/p/kummer/)にとって決して無駄な時間ではありませんでした。彼は教育者としての情熱を持ち、優れた生徒たちを育て上げました。
 
-その生徒の一人が、後に[クンマー](https://kenji.blog/p/kummer/)の同僚であり終生の友となるレオポルト・クロネッカー ( **Leopold Kronecker** ) でした。クンマーはクロネッカーの非凡な才能を見抜き、彼に高度な数学を教え、研究への道を歩ませました。ギムナジウムの教師でありながら、[クンマー](https://kenji.blog/p/kummer/)自身も研究を続け、ベルリンの学術誌に優れた論文を次々と発表していきました。
+その生徒の一人が、後に[クンマー](https://kenji.blog/p/kummer/)の同僚であり終生の友となる[レオポルト・クロネッカー](/p/kronecker/) ( **Leopold Kronecker** ) でした。クンマーはクロネッカーの非凡な才能を見抜き、彼に高度な数学を教え、研究への道を歩ませました。ギムナジウムの教師でありながら、[クンマー](https://kenji.blog/p/kummer/)自身も研究を続け、ベルリンの学術誌に優れた論文を次々と発表していきました。
 
 ### 大学教授としての栄光
 
 彼の卓越した研究業績は当時の数学界の重鎮たちの注目を集めました。1842年、[カール・グスタフ・ヤコブ・ヤコビ](https://kenji.blog/p/jacobi/) ( **Carl Gustav Jacob Jacobi** ) とペーター・グスタフ・ルジューヌ・ディリクレ ( **Peter Gustav Lejeune Dirichlet** ) の推薦により、[クンマー](https://kenji.blog/p/kummer/)はブレスラウ大学の正教授に就任します。さらに1855年には、ディリクレがゲッティンゲン大学へ移った後任として、ベルリン大学の教授に就任しました。
 
-ベルリン大学での[クンマー](https://kenji.blog/p/kummer/)は、カール・ワイエルシュトラス ( **Karl Weierstrass** ) や教え子の[クロネッカー](https://kenji.blog/p/kronecker/)と共に、ベルリンを世界的な数学の中心地へと押し上げました。彼の講義は非常に明快で情熱的であり、ヨーロッパ中から多くの優秀な学生が集まりました。
+ベルリン大学での[クンマー](https://kenji.blog/p/kummer/)は、[カール・ワイエルシュトラス](/p/weierstrass/) ( **Karl Weierstrass** ) や教え子の[クロネッカー](https://kenji.blog/p/kronecker/)と共に、ベルリンを世界的な数学の中心地へと押し上げました。彼の講義は非常に明快で情熱的であり、ヨーロッパ中から多くの優秀な学生が集まりました。
 
 ---
 
@@ -56,7 +56,7 @@ tags: ["Ernst Kummer", "Fermat's Last Theorem", "Ideal Numbers", "Algebraic Numb
 
 ## [フェルマーの最終定理](https://kenji.blog/p/fermats-last-theorem/)と一意分解の崩壊
 
-[クンマー](https://kenji.blog/p/kummer/)の最大の業績は、数論における **フェルマーの最終定理** へのアプローチです。[フェルマーの最終定理](https://kenji.blog/p/fermats-last-theorem/)とは、次のような命題です。
+[クンマー](https://kenji.blog/p/kummer/)の最大の業績は、数論における **[フェルマーの最終定理](/p/fermats-last-theorem/)** へのアプローチです。[フェルマーの最終定理](https://kenji.blog/p/fermats-last-theorem/)とは、次のような命題です。
 
 $$
 x^n + y^n = z^n \quad (\text{ただし} \ n \ge 3 \ \text{は整数})
@@ -64,7 +64,7 @@ $$
 
 を満たす正の整数の組 $(x, y, z)$ は存在しない。
 
-1847年、フランスの数学者[ガブリエル・ラメ](https://kenji.blog/p/lame/) ( **Gabriel Lamé** ) とオーギュスタン＝ルイ・コーシー ( **[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/)** ) は、この定理の証明に成功したと発表しました。彼らのアプローチは、複素数の世界（円分体）に因数分解を拡張するというものでした。
+1847年、フランスの数学者[ガブリエル・ラメ](https://kenji.blog/p/lame/) ( **Gabriel Lamé** ) と[オーギュスタン＝ルイ・コーシー](/p/cauchy/) ( **[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/)** ) は、この定理の証明に成功したと発表しました。彼らのアプローチは、複素数の世界（円分体）に因数分解を拡張するというものでした。
 
 方程式 $x^p + y^p = z^p$ を、 $1$ の原始 $p$ 乗根 $\zeta$ （ $\zeta^p = 1, \zeta \neq 1$ ）を用いて次のように分解します。
 
@@ -108,7 +108,7 @@ graph LR
 
 ## 正則素数と[フェルマーの最終定理](https://kenji.blog/p/fermats-last-theorem/)への部分証明
 
-理想数の理論を用いて、[クンマー](https://kenji.blog/p/kummer/)はフェルマーの最終定理に大きな一矢を報いました。彼は **正則素数** ( **Regular Primes** ) という概念を定義し、「 $p$ が正則素数であれば、[フェルマーの最終定理](https://kenji.blog/p/fermats-last-theorem/)は成り立つ」という驚異的な結果を証明しました。
+理想数の理論を用いて、[クンマー](https://kenji.blog/p/kummer/)は[フェルマーの最終定理](/p/fermats-last-theorem/)に大きな一矢を報いました。彼は **正則素数** ( **Regular Primes** ) という概念を定義し、「 $p$ が正則素数であれば、[フェルマーの最終定理](https://kenji.blog/p/fermats-last-theorem/)は成り立つ」という驚異的な結果を証明しました。
 
 正則素数とは、円分体 $\mathbb{Q}(\zeta_p)$ の類数 $h_p$ を割り切らない素数 $p$ のことです。類数とは、一意分解がどれくらい崩れているかを測る指標であり、類数が $1$ であれば一意分解が成り立ちます。
 

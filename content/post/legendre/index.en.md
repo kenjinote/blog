@@ -42,7 +42,7 @@ His life was greatly tossed about by the French Revolution, which broke out in 1
 
 ### 2.1 Passion for Number Theory and the [Legendre](https://kenji.blog/en/p/legendre/) Symbol
 
-[Legendre](https://kenji.blog/en/p/legendre/) was deeply fascinated by number theory, pioneered by predecessors like Pierre de Fermat and [Leonhard Euler](https://kenji.blog/en/p/euler/). One of his greatest achievements is his work on the "Law of quadratic reciprocity." This law is one of the most beautiful and important theorems in number theory for determining whether a prime number is congruent to a square modulo another prime number.
+[Legendre](https://kenji.blog/en/p/legendre/) was deeply fascinated by number theory, pioneered by predecessors like [Pierre de Fermat](/en/p/fermat/) and [Leonhard Euler](https://kenji.blog/en/p/euler/). One of his greatest achievements is his work on the "Law of quadratic reciprocity." This law is one of the most beautiful and important theorems in number theory for determining whether a prime number is congruent to a square modulo another prime number.
 
 He formulated this law and gave a partial proof (a complete proof was later provided by the young Gauss). Furthermore, to express this research concisely and elegantly, he introduced a notation known today as the **[Legendre](https://kenji.blog/en/p/legendre/) symbol**.
 
@@ -79,7 +79,7 @@ These polynomials have become an indispensable tool in all kinds of calculations
 
 Alongside his research activities, [Legendre](https://kenji.blog/en/p/legendre/) was also an outstanding educator. His book "Éléments de géométrie" (Elements of Geometry), published in 1794, reorganized [Euclid](https://kenji.blog/en/p/euclid/)'s "Elements" to be more accessible and rigorous for students of his time.
 
-This textbook achieved phenomenal success, being translated into English and other languages and read worldwide, not just in France. It was widely adopted in the United States and remained the absolute standard for geometry education throughout the 19th century. In this book, he continuously attempted to prove the parallel postulate ([Euclid](https://kenji.blog/en/p/euclid/)'s fifth postulate), adding new proofs with each edition, though ultimately they all proved to be flawed. However, his persistence became one of the important driving forces prompting the birth of non-[Euclide](https://kenji.blog/p/euclid/)an geometry.
+This textbook achieved phenomenal success, being translated into English and other languages and read worldwide, not just in France. It was widely adopted in the United States and remained the absolute standard for geometry education throughout the 19th century. In this book, he continuously attempted to prove the parallel postulate ([Euclid](https://kenji.blog/en/p/euclid/)'s fifth postulate), adding new proofs with each edition, though ultimately they all proved to be flawed. However, his persistence became one of the important driving forces prompting the birth of non-[Euclide](https://kenji.blog/en/p/euclid/)an geometry.
 
 ### 2.4 Challenge to the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/)
 
@@ -91,7 +91,7 @@ $$
 
 Based on his own extensive hand-calculated data, he deduced that the constant $ A $ was approximately $ 1.08366 $ (in the 1808 edition of his 'Théorie des Nombres'). This formula suggested that as $ x $ grows larger, the density of the prime number distribution approaches $ \frac{1}{\ln(x)} $, an extremely advanced insight for the mathematics of the time.
 
-It was later revealed that Gauss had also made a similar conjecture using the logarithmic integral $ \text{Li}(x) $, and ultimately, in 1896, the prime number theorem was completely and independently proven by Jacques Hadamard and Charles de la Vallée Poussin. Although a rigorous proof was beyond his reach, it shows how essentially correct [Legendre](https://kenji.blog/en/p/legendre/)'s intuition was.
+It was later revealed that Gauss had also made a similar conjecture using the logarithmic integral $ \text{Li}(x) $, and ultimately, in 1896, the [prime number theorem](/en/p/prime-number-theorem/) was completely and independently proven by Jacques Hadamard and Charles de la Vallée Poussin. Although a rigorous proof was beyond his reach, it shows how essentially correct [Legendre](https://kenji.blog/en/p/legendre/)'s intuition was.
 
 ## 3. Feud with Gauss: The Tragedy Over the Discovery of Least Squares
 
@@ -110,7 +110,7 @@ However, four years later in 1809, Gauss extensively used the method of least sq
 
 Gauss's behavior deeply wounded [Legendre](https://kenji.blog/en/p/legendre/)'s pride. Legendre sent a letter to Gauss demanding he acknowledge his prior publication, but Gauss maintained a cold attitude. In the appendix of his own work, [Legendre](https://kenji.blog/en/p/legendre/) explicitly expressed his intense anger towards Gauss, stating that "a certain person is claiming another's discovery as his own."
 
-Furthermore, regarding the prime number theorem ([Legendre](https://kenji.blog/en/p/legendre/)'s conjecture of $ \pi(x) \approx \frac{x}{\ln x - 1.08366} $) and the law of quadratic reciprocity, even though Legendre had discovered and formulated them first, Gauss completely proved and generalized them deeper, causing all public praise to focus on Gauss. For [Legendre](https://kenji.blog/en/p/legendre/), Gauss was too high a wall who snatched away all his achievements, becoming his lifelong nemesis.
+Furthermore, regarding the [prime number theorem](/en/p/prime-number-theorem/) ([Legendre](https://kenji.blog/en/p/legendre/)'s conjecture of $ \pi(x) \approx \frac{x}{\ln x - 1.08366} $) and the law of quadratic reciprocity, even though Legendre had discovered and formulated them first, Gauss completely proved and generalized them deeper, causing all public praise to focus on Gauss. For [Legendre](https://kenji.blog/en/p/legendre/), Gauss was too high a wall who snatched away all his achievements, becoming his lifelong nemesis.
 
 ## 4. The Portrait Mystery: A Great Misunderstanding of 200 Years
 

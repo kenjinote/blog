@@ -9,7 +9,7 @@ tags: ["Byzantine Generals Problem", "Blockchain", "Consensus Building", "Algori
 slug: "byzantine-generals-problem"
 ---
 
-When studying distributed systems and blockchain technology, you will almost certainly encounter the **[Byzantine Generals](https://kenji.blog/en/p/byzantine-generals-problem-consensus/) Problem**. It deals with the highly important theme of how a system as a whole can form a correct consensus in a situation where "traitors" or "faulty nodes" exist within the network.
+When studying [distributed systems](/en/p/cap-theorem-distributed-systems-tradeoff/) and [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/) technology, you will almost certainly encounter the **[Byzantine Generals](https://kenji.blog/en/p/byzantine-generals-problem-consensus/) Problem**. It deals with the highly important theme of how a system as a whole can form a correct consensus in a situation where "traitors" or "faulty nodes" exist within the network.
 
 In this article, we will explain this **Byzantine Generals Problem** in detail, from basics to applications, mixing in concrete stories, mathematical formulas, and diagrams.
 
@@ -121,7 +121,7 @@ In this model, an order issued by a commander cannot be altered in transit. As a
 
 Tolerance against the Byzantine Generals Problem is called **Byzantine Fault Tolerance** (BFT). It is an important metric for a distributed system to withstand failures or malicious attacks and continue operating normally.
 
-In recent years, this problem has returned to the spotlight largely due to the emergence of **blockchain technology**. Since the blockchain is a [P2P](https://kenji.blog/en/p/webrtc-realtime-communication-p2p/) network without a central administrator, malicious participants (nodes) might broadcast fake transaction histories. This is exactly the Byzantine Generals Problem itself.
+In recent years, this problem has returned to the spotlight largely due to the emergence of **[blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/) technology**. Since the [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/) is a [P2P](https://kenji.blog/en/p/webrtc-realtime-communication-p2p/) network without a central administrator, malicious participants (nodes) might broadcast fake transaction histories. This is exactly the Byzantine Generals Problem itself.
 
 ### The Mechanism of PBFT (Practical Byzantine Fault Tolerance)
 
@@ -180,6 +180,6 @@ $$
 
 ## 6. Conclusion
 
-This **Byzantine Generals Problem** is a foundational theory for ensuring the reliability of distributed systems. The question of "how to make a correct decision as a whole in an environment where you don't know who to trust" is applied to every modern IT infrastructure, from the underlying technology of crypto assets to aircraft control systems and cloud computing.
+This **Byzantine Generals Problem** is a foundational theory for ensuring the reliability of [distributed systems](/en/p/cap-theorem-distributed-systems-tradeoff/). The question of "how to make a correct decision as a whole in an environment where you don't know who to trust" is applied to every modern IT infrastructure, from the underlying technology of crypto assets to aircraft control systems and cloud computing.
 
-The evolution of algorithms to not stop the system even assuming the existence of traitors will not stop in the future. For engineers involved in designing distributed systems, understanding the mathematical proofs and algorithms behind this problem will be an extremely powerful weapon.
+The evolution of algorithms to not stop the system even assuming the existence of traitors will not stop in the future. [For engineers](/en/p/prompt-engineering-for-engineers/) involved in designing [distributed systems](/en/p/cap-theorem-distributed-systems-tradeoff/), understanding the mathematical proofs and algorithms behind this problem will be an extremely powerful weapon.

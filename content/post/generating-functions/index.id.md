@@ -160,7 +160,7 @@ Menggunakan sifat ini, banyaknya cara menyusun elemen atau jumlah permutasi yang
 Dalam ilmu komputer modern dan pemrograman kompetitif, fungsi pembangkit diimplementasikan sebagai **Deret Pangkat Formal** (Formal Power Series, FPS).
 Dalam FPS, kita tidak peduli apakah mensubstitusikan nilai numerik tertentu ke dalam $x$ akan konvergen (sifat analitik); fokusnya hanyalah pada memanipulasi "barisan koefisien" secara aljabar sebagai polinomial.
 
-Dengan menggunakan Transformasi Fourier Cepat (Fast Fourier Transform/FFT) atau Transformasi Teori Bilangan (Number Theoretic Transform/NTT), hasil kali dua polinomial berderajat $N$ (yaitu, konvolusi barisan dengan panjang $N$) dapat ditemukan dengan kompleksitas komputasi $\mathcal{O}(N \log N)$. Hal ini memungkinkan perhitungan yang tadinya memakan waktu $\mathcal{O}(N^2)$ dengan pemrograman dinamis dapat dipercepat secara drastis.
+Dengan menggunakan [Transformasi Fourier Cepat](/id/p/fast-fourier-transform-algorithm/) (Fast Fourier Transform/[FFT](/id/p/fast-fourier-transform-algorithm/)) atau Transformasi Teori Bilangan (Number Theoretic Transform/NTT), hasil kali dua polinomial berderajat $N$ (yaitu, konvolusi barisan dengan panjang $N$) dapat ditemukan dengan kompleksitas komputasi $\mathcal{O}(N \log N)$. Hal ini memungkinkan perhitungan yang tadinya memakan waktu $\mathcal{O}(N^2)$ dengan pemrograman dinamis dapat dipercepat secara drastis.
 
 ## 6. Kesimpulan
 

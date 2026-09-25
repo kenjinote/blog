@@ -14,7 +14,7 @@ tags:
 
 ## 1. Introduction: The Most Famous Mathematical Mystery in the World
 
-In the history of mathematics, there is a problem that has fascinated and tormented the greatest number of people. That is **[Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/)**. From a short note left in the margin of his favorite book, Diophantus's "Arithmetica," by [Pierre de Fermat](https://kenji.blog/en/p/fermat/), a 17th-century French judge and amateur mathematician, a grand mathematical drama spanning 360 years began.
+In the history of mathematics, there is a problem that has fascinated and tormented the greatest number of people. That is **[Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/)**. From a short note left in the margin of his favorite book, [Diophantus](/en/p/diophantus/)'s "Arithmetica," by [Pierre de Fermat](https://kenji.blog/en/p/fermat/), a 17th-century French judge and amateur mathematician, a grand mathematical drama spanning 360 years began.
 
 The content of the theorem itself is simple enough for a junior high school student to understand.
 

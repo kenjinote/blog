@@ -10,7 +10,7 @@ tags: ["Euler", "Sejarah Matematika", "Jenius", "Fisika"]
 
 ## Pendahuluan
 
-Saat menengok kembali sejarah matematika, sangat mustahil untuk mengabaikan nama **[Leonhard Euler](https://kenji.blog/id/p/euler/)** (1707–1783). Ia secara luas diakui sebagai salah satu matematikawan paling produktif dan berpengaruh dalam sejarah manusia. Mulai dari kalkulus dan teori bilangan hingga teori graf, mekanika, optik, dan astronomi, pemikirannya yang kritis dan jejak karyanya meluas ke berbagai bidang sains.
+Saat menengok kembali sejarah matematika, sangat mustahil untuk mengabaikan nama **[Leonhard Euler](https://kenji.blog/id/p/euler/)** (1707–1783). Ia secara luas diakui sebagai salah satu matematikawan paling produktif dan berpengaruh dalam sejarah manusia. Mulai dari kalkulus dan teori bilangan hingga [teori graf](/id/p/graph-theory-dijkstra-a-star/), mekanika, optik, dan astronomi, pemikirannya yang kritis dan jejak karyanya meluas ke berbagai bidang sains.
 
 Dalam artikel ini, kita akan menyelami lebih dalam tentang kehidupan penuh liku si jenius Euler dan pencapaian cemerlang yang ia wariskan untuk generasi mendatang. Hukum dan rumus yang ia temukan membentuk fondasi sains dan teknologi masa kini, menjadikan karyanya sangat relevan bagi kita yang hidup di dunia modern.
 
@@ -91,11 +91,11 @@ graph TD
 
 Ia membuktikan secara matematis bahwa agar ada jalur yang melewati setiap jembatan tepat satu kali (jalur Euler), jumlah daratan yang dihubungkan oleh sejumlah ganjil jembatan (simpul ganjil) harus tepat 0 atau 2. Dalam kasus Königsberg, semua daratan adalah simpul ganjil, yang membuktikan bahwa tugas tersebut mustahil.
 
-Penemuan ini sangat revolusioner, meletakkan dasar bagi **teori graf** dan **topologi** modern.
+Penemuan ini sangat revolusioner, meletakkan dasar bagi **[teori graf](/id/p/graph-theory-dijkstra-a-star/)** dan **topologi** modern.
 
 ### 4.3 Identitas Euler
 
-Sering dipuji sebagai "rumus terindah" dalam matematika adalah **Identitas Euler**.
+Sering dipuji sebagai "rumus terindah" dalam matematika adalah **[Identitas Euler](/id/p/eulers-identity/)**.
 
 $$
 e^{i\pi} + 1 = 0 \quad (\text{Identitas Euler})

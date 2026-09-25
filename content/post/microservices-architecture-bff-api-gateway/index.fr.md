@@ -69,7 +69,7 @@ Les microservices offrent la lumière (avantages) suivante :
 
 ## 3. Les « ombres » des microservices : Les défis opérationnels
 
-Cependant, les microservices ne sont pas une « solution miracle ». La décentralisation du système s'accompagne d'« ombres », à savoir des complexités propres aux systèmes distribués.
+Cependant, les microservices ne sont pas une « solution miracle ». La décentralisation du système s'accompagne d'« ombres », à savoir des complexités propres aux [systèmes distribués](/fr/p/cap-theorem-distributed-systems-tradeoff/).
 
 ### 3.1. Latence du réseau et complexité des communications
 Les traitements qui étaient résolus par des appels de fonctions en mémoire dans un monolithe sont remplacés par des communications via le réseau (HTTP/REST, gRPC, etc.). Cela génère de la **latence réseau** et risque de ralentir le temps de réponse global du système. De plus, le réseau étant toujours instable, il est nécessaire d'implémenter des contrôles de communication complexes tels que des délais d'attente (timeouts), des contrôles de nouvelles tentatives (retries) et des disjoncteurs (circuit breakers).
@@ -219,7 +219,7 @@ Avec cette implémentation, le client peut récupérer simultanément les donné
 
 ## 7. Conclusion
 
-L'architecture microservices est une approche puissante pour faire évoluer de grands systèmes de manière extensible, mais il est nécessaire de faire face aux défis obscurs (« l'ombre ») inhérents aux systèmes distribués.
+L'architecture microservices est une approche puissante pour faire évoluer de grands systèmes de manière extensible, mais il est nécessaire de faire face aux défis obscurs (« l'ombre ») inhérents aux [systèmes distribués](/fr/p/cap-theorem-distributed-systems-tradeoff/).
 
 Pour résoudre ces problèmes et optimiser la communication entre le client et l'arrière-plan, les modèles **API Gateway** et **BFF** sont devenus indispensables. Le BFF, en particulier, qui fournit des points de terminaison dédiés pour chaque type de client, est une excellente architecture qui libère la vitesse d'évolution de l'UI des contraintes de l'arrière-plan.
 

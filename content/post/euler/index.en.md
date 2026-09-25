@@ -10,7 +10,7 @@ tags: ["Euler", "History of Mathematics", "Genius", "Physics"]
 
 ## Introduction
 
-When looking back at the history of mathematics, it is absolutely impossible to omit the name of **[Leonhard Euler](https://kenji.blog/en/p/euler/)** (1707–1783). He is widely recognized as one of the most prolific and influential mathematicians in human history. From calculus and number theory to graph theory, mechanics, optics, and astronomy, his inquisitive mind and footprints extend to every field of science.
+When looking back at the history of mathematics, it is absolutely impossible to omit the name of **[Leonhard Euler](https://kenji.blog/en/p/euler/)** (1707–1783). He is widely recognized as one of the most prolific and influential mathematicians in human history. From calculus and number theory to [graph theory](/en/p/graph-theory-dijkstra-a-star/), mechanics, optics, and astronomy, his inquisitive mind and footprints extend to every field of science.
 
 In this article, we will delve deeply into the turbulent life of the genius Euler and the brilliant achievements he left for future generations. The laws and formulas he discovered form the foundation of today's science and technology, making his work deeply relevant to those of us living in the modern world.
 
@@ -91,7 +91,7 @@ graph TD
 
 He mathematically proved that for a path to cross every bridge exactly once (an Eulerian path to exist), the number of landmasses with an odd number of bridges connected to them (odd nodes) must be exactly 0 or 2. In the case of Königsberg, all the landmasses were odd nodes, demonstrating that the task was impossible.
 
-This discovery was groundbreaking, laying the foundation for modern **graph theory** and **topology**.
+This discovery was groundbreaking, laying the foundation for modern **[graph theory](/en/p/graph-theory-dijkstra-a-star/)** and **topology**.
 
 ### 4.3 [Euler's Identity](https://kenji.blog/en/p/eulers-identity/)
 
@@ -109,7 +109,7 @@ This short equation elegantly connects five deeply important mathematical consta
 - $e$ (Euler's number: calculus)
 - $i$ (imaginary unit: algebra)
 
-The fact that constants born from entirely different fields are perfectly united in a single, simple equation represents the profound mystery and harmony of mathematics. Physicist Richard Feynman famously called this "our jewel" and "the most remarkable formula in mathematics."
+The fact that constants born from entirely different fields are perfectly united in a single, simple equation represents the profound mystery and harmony of mathematics. Physicist [Richard Feynman](/en/p/biography-richard-feynman/) famously called this "our jewel" and "the most remarkable formula in mathematics."
 
 ## 5. Contributions to Physics and Other Fields
 

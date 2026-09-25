@@ -50,7 +50,7 @@ graph TD
 
 ## Impact sur la Postérité et Message aux Ingénieurs Modernes
 
-La plus grande réalisation de Martin Fowler est d'avoir articulé des « principes d'ingénierie universels » indépendants de langages ou d'outils spécifiques et de les avoir partagés avec la communauté. Son blog (martinfowler.com) reste l'une des sources d'information les plus fiables pour les ingénieurs du monde entier, et bon nombre des concepts qu'il a introduits sont devenus une évidence dans le développement logiciel moderne.
+La plus grande réalisation de Martin Fowler est d'avoir articulé des « principes d'ingénierie universels » indépendants de langages ou d'outils spécifiques et de les avoir partagés avec la communauté. Son blog (martinfowler.com) reste l'une des sources d'information les plus fiables [pour les ingénieurs](/fr/p/prompt-engineering-for-engineers/) du monde entier, et bon nombre des concepts qu'il a introduits sont devenus une évidence dans le développement logiciel moderne.
 
 « N'importe quel imbécile peut écrire du code qu'un ordinateur peut comprendre. Les bons programmeurs écrivent du code que les humains peuvent comprendre. »
 

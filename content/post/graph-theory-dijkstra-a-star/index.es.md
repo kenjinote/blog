@@ -79,7 +79,7 @@ El **problema de la ruta más corta** (Shortest Path Problem) es el problema de 
 
 ## 3. Algoritmo de [Dijkstra](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (Dijkstra's Algorithm)
 
-El **algoritmo de Dijkstra**, ideado por Edsger Dijkstra, es un algoritmo para encontrar las rutas más cortas desde un solo punto de inicio hasta todos los vértices en un grafo con pesos no negativos.
+El **algoritmo de Dijkstra**, ideado por [Edsger Dijkstra](/es/p/biography-edsger-dijkstra/), es un algoritmo para encontrar las rutas más cortas desde un solo punto de inicio hasta todos los vértices en un grafo con pesos no negativos.
 
 ### 3.1 Comprensión Intuitiva del Algoritmo
 
@@ -293,7 +293,7 @@ El algoritmo de [Dijkstra](https://kenji.blog/es/p/tree-graph-data-structures-se
 3. **JPS** (Jump Point Search):
    Un método para acelerar aún más la búsqueda de A* en mapas de cuadrícula uniformes. Omite nodos innecesarios aprovechando la simetría.
 
-Los algoritmos de búsqueda de rutas son un campo que combina brillantemente la belleza matemática de la teoría de grafos y la eficiencia algorítmica de la informática.
+Los [algoritmos de búsqueda](/es/p/search-algorithms-linear-binary-hash-table-principles/) de rutas son un campo que combina brillantemente la belleza matemática de la teoría de grafos y la eficiencia algorítmica de la informática.
 
 ## 6. Conclusión
 

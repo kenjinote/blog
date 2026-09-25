@@ -95,4 +95,4 @@ If there are too many users, problems such as an increase in spam, communication
 
 Although a simplified model, Metcalfe's Law beautifully expresses the "Winner-takes-all" dynamics of platform businesses.
 
-Business leaders and entrepreneurs should always center their design on how their product creates network effects and how quickly they can break through the critical mass. Even in the era of AI and Blockchain (Web3), Metcalfe's Law continues to quietly but powerfully act as the foundation for how nodes connect and exchange value.
+Business leaders and entrepreneurs should always center their design on how their product creates network effects and how quickly they can break through the critical mass. Even in the era of AI and [Blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/) (Web3), Metcalfe's Law continues to quietly but powerfully act as the foundation for how nodes connect and exchange value.

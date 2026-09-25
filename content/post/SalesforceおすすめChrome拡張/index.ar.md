@@ -26,6 +26,6 @@ description: 'نعرض إضافات متصفح Chrome الموصى بها وال
 
 ![img.png](img.webp)
 
-مفيد عند البحث عن كود Salesforce.
+مفيد عند البحث عن كود [Salesforce](/ar/p/salesforce%D8%AB%D8%B1%D8%AB%D8%B1%D8%A9%E5%85%A8%E6%B6%88%E3%81%97%D8%A3%D9%85%D8%B1/).
 
 [Salesforce advanced Code searcher](https://chrome.google.com/webstore/detail/salesforce-advanced-code/lnkgcmpjkkkeffambkllliefdpjdklmi)

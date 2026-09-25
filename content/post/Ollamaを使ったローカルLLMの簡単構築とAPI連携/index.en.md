@@ -11,7 +11,7 @@ tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 
 # Introduction: Why do we need local LLMs?
 
-The rise of [Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs) has brought about dramatic changes to our lives and development methodologies. Powerful cloud-based AI services like ChatGPT, Claude, and Gemini continue to evolve daily, offering highly advanced reasoning capabilities. However, cloud-based LLMs are not always the best fit for every use case. Cloud LLMs have the following challenges:
+The rise of [Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs) has brought about dramatic changes to our lives and development methodologies. Powerful cloud-based AI services like ChatGPT, Claude, and [Gemini](/en/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEworkaround/) continue to evolve daily, offering highly advanced reasoning capabilities. However, cloud-based LLMs are not always the best fit for every use case. Cloud LLMs have the following challenges:
 
 1. **Privacy and Security Issues**: Sending data containing confidential or personal information to external servers is often unacceptable from a corporate compliance and security perspective.
 2. **Cost Uncertainty**: Since API usage fees depend on the number of tokens, there is a risk of running costs skyrocketing in systems that process large amounts of data or make frequent requests.
@@ -26,7 +26,7 @@ In this article, we will thoroughly explain "**Ollama**", a tool that makes it s
 
 # What is Ollama? Its Internal Architecture
 
-Ollama is a platform for easily running and managing open-source [Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) (such as Llama 3, Phi-3, Mistral, Gemma, etc.) in a local environment. Until now, building a local [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) environment required highly complicated steps, such as setting up a Python environment, installing the CUDA Toolkit, resolving PyTorch dependencies, and downloading and formatting massive model files from Hugging Face (e.g., converting from Safetensors to GGUF).
+Ollama is a platform for easily running and managing open-source [Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) (such as Llama 3, Phi-3, Mistral, Gemma, etc.) in a local environment. Until now, building a local [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) environment required highly complicated steps, such as setting up a Python environment, installing the CUDA Toolkit, resolving PyTorch dependencies, and downloading and formatting massive model files from Hugging Face (e.g., converting from Safetensors to [GGUF](/en/p/llama-cpp-quantization-gguf/)).
 
 Ollama hides these complexities and allows you to handle LLMs with a usability similar to [Docker](https://kenji.blog/en/p/docker-container-namespace-[cgroups](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)-layers/). With a single command, you can download (`pull`), execute (`run`), and start a model as an HTTP server.
 
@@ -68,7 +68,7 @@ In Linux environments (such as Ubuntu), running the following one-liner command 
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-Once the installation is complete, check the version in the terminal.
+Once the installation is complete, check the version in the [terminal](/en/p/terminal-efficiency-powershell-bash-shortcuts/).
 
 ```bash
 ollama --version
@@ -120,7 +120,7 @@ In the Ollama model library, you can specify the version or quantization level i
 
 Let's briefly touch upon quantization here. A normal [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) holds a single weight parameter in 16-bit floating-point (FP16), etc. In the case of an 8 billion (8B) parameter model, the weights alone would consume about 16GB of VRAM. Quantization is the technology that compresses this into 4-bit (Q4) or 8-bit (Q8) integer types.
 
-By quantizing, you can drastically reduce the required memory capacity and memory bandwidth while minimizing model accuracy degradation. Models distributed by Ollama are, by default, in the GGUF format with optimal quantization applied (often 4-bit).
+By quantizing, you can drastically reduce the required memory capacity and memory bandwidth while minimizing model accuracy degradation. Models distributed by Ollama are, by default, in the [GGUF](/en/p/llama-cpp-quantization-gguf/) format with optimal quantization applied (often 4-bit).
 
 ## 3. Listing Models (`list`)
 

@@ -13,7 +13,7 @@ tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 
 En el ámbito del desarrollo de software, el problema de "en mi máquina funciona" (It works on my machine), causado por las diferencias en los entornos entre desarrolladores, ha sido durante mucho tiempo un factor de pérdida de tiempo en muchos proyectos. Las diferencias en el sistema operativo, las versiones de los lenguajes instalados, las dependencias de bibliotecas y los conflictos entre herramientas instaladas globalmente exponen constantemente a los entornos locales a la "incertidumbre de estado".
 
-Lo que resuelve estos problemas de raíz son las tecnologías de contenedores, como **[Docker](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)**, y el paradigma de **Infrastructure as Code ([IaC](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/))**. Al contenerizar el entorno de desarrollo local, se logra el aislamiento a nivel del sistema operativo, haciendo posible controlar las versiones del propio entorno junto con el código base.
+Lo que resuelve estos problemas de raíz son las tecnologías de contenedores, como **[Docker](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)**, y el paradigma de **[Infrastructure as Code](/es/p/iac-infrastructure-as-code-terraform/) ([IaC](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/))**. Al contenerizar el entorno de desarrollo local, se logra el aislamiento a nivel del sistema operativo, haciendo posible controlar las versiones del propio entorno junto con el código base.
 
 En este artículo, explicaremos exhaustivamente los pasos para construir un **"entorno de desarrollo local reproducible, que tendrá exactamente el mismo estado sin importar quién, cuándo o en qué máquina lo inicie"**, aprovechando Docker, Docker Compose y VSCode Dev[Container](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)s, así como los profundos mecanismos técnicos detrás de ello, incorporando también una perspectiva matemática.
 
@@ -23,13 +23,13 @@ En este artículo, explicaremos exhaustivamente los pasos para construir un **"e
 
 ### Principios de IaC y su aplicación a entornos locales
 
-Infrastructure as Code (IaC) es un enfoque que gestiona la configuración y el aprovisionamiento de la infraestructura a través de archivos de definición legibles por máquina, en lugar de procesos manuales. Los principios fundamentales de IaC incluyen los siguientes elementos:
+[Infrastructure as Code](/es/p/iac-infrastructure-as-code-terraform/) ([IaC](/es/p/iac-infrastructure-as-code-terraform/)) es un enfoque que gestiona la configuración y el aprovisionamiento de la infraestructura a través de archivos de definición legibles por máquina, en lugar de procesos manuales. Los principios fundamentales de [IaC](/es/p/iac-infrastructure-as-code-terraform/) incluyen los siguientes elementos:
 
 1. **Enfoque declarativo (Declarative Approach)**: Define "cuál debería ser el estado final" en lugar de "cómo cambiar el estado".
 2. **Idempotencia (Idempotency)**: No importa cuántas veces se ejecute el script, siempre se garantiza el mismo resultado (estado).
 3. **Control de versiones (Version Control)**: El estado de la infraestructura se guarda como código en un VCS (como Git), lo que permite rastrear el historial de cambios y realizar revisiones por pares.
 
-Practicar IaC en un entorno de desarrollo local significa codificar el "estado ideal" del entorno de desarrollo utilizando `Dockerfile`, `docker-compose.yml` y `devcontainer.json`. Esto permite que los nuevos miembros del equipo logren una experiencia de incorporación donde pueden comenzar a desarrollar inmediatamente con solo clonar el repositorio y ejecutar un comando.
+Practicar [IaC](/es/p/iac-infrastructure-as-code-terraform/) en un entorno de desarrollo local significa codificar el "estado ideal" del entorno de desarrollo utilizando `Dockerfile`, `docker-compose.yml` y `devcontainer.json`. Esto permite que los nuevos miembros del equipo logren una experiencia de incorporación donde pueden comenzar a desarrollar inmediatamente con solo clonar el repositorio y ejecutar un comando.
 
 ### Funciones del kernel que sustentan la tecnología de contenedores
 
@@ -129,7 +129,7 @@ De esta manera, al introducir construcciones en múltiples etapas, el tamaño de
 
 ## 4. Orquestación de múltiples contenedores con [Docker](https://kenji.blog/es/p/docker-container-namespace-[cgroups](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)-layers/) Compose
 
-En el desarrollo de aplicaciones web modernas, es común utilizar una arquitectura de microservicios donde múltiples componentes colaboran, como servidores web, bases de datos y servidores de caché. Usamos `docker-compose.yml` para gestionar esto de forma centralizada en un entorno local.
+En el desarrollo de aplicaciones web modernas, es común utilizar una arquitectura de [microservicios](/es/p/microservices-architecture-bff-api-gateway/) donde múltiples componentes colaboran, como servidores web, bases de datos y servidores de caché. Usamos `docker-compose.yml` para gestionar esto de forma centralizada en un entorno local.
 
 Esta vez, construiremos localmente un sistema de tres capas compuesto por "Web (FastAPI)", "Base de datos (PostgreSQL)" y "Caché ([Redis](https://kenji.blog/es/p/nosql-database-selection-kvs-document-graph-wide-column/))".
 
@@ -356,7 +356,7 @@ Entonces, el tiempo promedio de respuesta se expresa mediante la siguiente fórm
 
 $$ T_{\text{total}} = T_{\text{net}} + T_{\text{app}} + T_{\text{cache}} + p_{\text{miss}} \times (T_{\text{db}} + T_{\text{cache\_write}}) $$
 
-En un entorno de desarrollo local (dentro de [Docker](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)), $T_{\text{net}}$ está cerca de 0. Sin embargo, lo que se debe notar es el **rendimiento de E/S al usar montajes de enlace (bind mounts)**. Especialmente al usar Docker Desktop en Windows/macOS, $T_{\text{app}}$ (tiempo de lectura de código, etc.) tiende a inflarse debido a la sobrecarga de compartir archivos entre el sistema operativo anfitrión y la máquina virtual (contenedor). Para resolver este cuello de botella, se recomienda encarecidamente una arquitectura que coloque todo el código fuente en un volumen nombrado utilizando Dev[Container](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)s, o ejecutar el motor de Docker nativamente en un entorno WSL2 (Windows Subsystem for Linux 2).
+En un entorno de desarrollo local (dentro de [Docker](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)), $T_{\text{net}}$ está cerca de 0. Sin embargo, lo que se debe notar es el **rendimiento de E/S al usar montajes de enlace (bind mounts)**. Especialmente al usar Docker Desktop en Windows/macOS, $T_{\text{app}}$ (tiempo de lectura de código, etc.) tiende a inflarse debido a la sobrecarga de compartir archivos entre el sistema operativo anfitrión y la máquina virtual (contenedor). Para resolver este cuello de botella, se recomienda encarecidamente una arquitectura que coloque todo el código fuente en un volumen nombrado utilizando Dev[Container](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)s, o ejecutar el motor de Docker nativamente en un entorno WSL2 ([Windows Subsystem for Linux](/es/p/wsl2-ultimate-development-setup-guide/) 2).
 
 ---
 

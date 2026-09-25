@@ -15,7 +15,7 @@ Nos últimos anos, com a rápida evolução da IA Generativa e dos Grandes Model
 
 Nessa era, é natural que muitos engenheiros se sintam ansiosos, pensando: "Meu trabalho será roubado pela IA?". Certamente, o "simples ato de codificar (Typing Code)", como criar boilerplate para aplicações CRUD de rotina, implementar algoritmos simples ou chamar APIs de bibliotecas conhecidas, está se tornando comoditizado rapidamente.
 
-No entanto, a essência da engenharia de software não é "digitar código". É resolver problemas de negócios por meio da tecnologia e construir sistemas escaláveis e de fácil manutenção. Neste artigo, exploraremos as "habilidades de engenheiro exclusivas dos humanos" cujo valor aumenta justamente na era em que a IA escreve código, aprofundando de forma muito detalhada e técnica a partir de perspectivas como os limites dos LLMs, Design Orientado a Domínio (DDD), arquitetura de sistemas e depuração de sistemas distribuídos.
+No entanto, a essência da engenharia de software não é "digitar código". É resolver problemas de negócios por meio da tecnologia e construir sistemas escaláveis e de fácil manutenção. Neste artigo, exploraremos as "habilidades de engenheiro exclusivas dos humanos" cujo valor aumenta justamente na era em que a IA escreve código, aprofundando de forma muito detalhada e técnica a partir de perspectivas como os limites dos LLMs, Design Orientado a Domínio (DDD), arquitetura de sistemas e depuração de [sistemas distribuídos](/pt/p/cap-theorem-distributed-systems-tradeoff/).
 
 ---
 
@@ -116,11 +116,11 @@ O paradigma fundamental do desenvolvimento de software daqui para frente não é
 
 ## 4. Habilidade humana ③: Design de Arquitetura e Escalabilidade de Sistemas Distribuídos
 
-O software moderno evoluiu de sistemas monolíticos rodando em um único servidor para arquiteturas nativas em nuvem baseadas em microsserviços e orientadas a eventos. Projetar tais sistemas distribuídos é uma área de imensa dificuldade para a IA, que consegue otimizar apenas lógicas locais.
+O software moderno evoluiu de sistemas monolíticos rodando em um único servidor para arquiteturas nativas em nuvem baseadas em microsserviços e orientadas a eventos. Projetar tais [sistemas distribuídos](/pt/p/cap-theorem-distributed-systems-tradeoff/) é uma área de imensa dificuldade para a IA, que consegue otimizar apenas lógicas locais.
 
 ### 4.1 O Teorema CAP e a avaliação de trade-offs
 
-Ao projetar sistemas distribuídos, engenheiros enfrentam constantemente o "Teorema CAP". Este teorema afirma que um sistema distribuído só pode garantir simultaneamente duas das três propriedades a seguir:
+Ao projetar [sistemas distribuídos](/pt/p/cap-theorem-distributed-systems-tradeoff/), engenheiros enfrentam constantemente o "Teorema CAP". Este teorema afirma que um sistema distribuído só pode garantir simultaneamente duas das três propriedades a seguir:
 
 - **[Consistency](https://kenji.blog/pt/p/cap-theorem-distributed-systems-tradeoff/) (Consistência)**: Todos os nós visualizam os mesmos dados simultaneamente?
 - **[Availability](https://kenji.blog/pt/p/cap-theorem-distributed-systems-tradeoff/) (Disponibilidade)**: O sistema continua respondendo mesmo se alguns nós falharem?
@@ -201,7 +201,7 @@ Na era da IA, o engenheiro eleva-se de "digitador de código" para "maestro resp
 
 ## 7. Conclusão: Navegar pela onda em vez de rejeitar a evolução
 
-A "era da IA que escreve código" não é uma ameaça para o engenheiro, mas sim a maior oportunidade da história. Assim como a passagem da linguagem Assembly para a linguagem C e a evolução do gerenciamento de ponteiros de memória para o [Garbage Collection](https://kenji.blog/pt/p/memory-management-garbage-collection/) no [Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/), a geração de código por IA é apenas "mais uma elevação no nível de abstração".
+A "era da IA que escreve código" não é uma ameaça para o engenheiro, mas sim a maior oportunidade da história. Assim como a passagem da linguagem Assembly para a linguagem C e a evolução do gerenciamento de [ponteiros](/pt/p/c-language-pointers-memory-management-stack-heap/) de memória para o [Garbage Collection](https://kenji.blog/pt/p/memory-management-garbage-collection/) no [Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/), a geração de código por IA é apenas "mais uma elevação no nível de abstração".
 
 O engenheiro do futuro não se preocupará excessivamente com especificações minuciosas de linguagens de programação ou atualizações de versões de frameworks. Pelo contrário, ele concentrará seus recursos na resolução de problemas de mais alto nível e mais humanos, como **"Quais são os problemas do negócio?", "Como devemos segmentar e integrar os dados?"** e **"Como restaurar o sistema rapidamente caso ele saia do ar?"**.
 

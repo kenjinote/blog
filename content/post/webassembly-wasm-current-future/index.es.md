@@ -18,7 +18,7 @@ tags:
 
 # Introducción: El Auge de WebAssembly (Wasm)
 
-Durante mucho tiempo, los navegadores web han estado dominados por un único lenguaje: JavaScript. Sin embargo, a medida que las aplicaciones web se han vuelto más complejas y requieren un rendimiento comparable al de las aplicaciones nativas, los límites de usar solo JavaScript se han hecho evidentes. Aquí es donde entra en juego **WebAssembly (Wasm)**.
+Durante mucho tiempo, los navegadores web han estado dominados por un único lenguaje: JavaScript. Sin embargo, a medida que las aplicaciones web se han vuelto más complejas y requieren un rendimiento comparable al de las aplicaciones nativas, los límites de usar solo JavaScript se han hecho evidentes. Aquí es donde entra en juego **WebAssembly ([Wasm](/es/p/webassembly-wasm-from-cpp-and-rust/))**.
 
 WebAssembly es un nuevo formato binario que puede ejecutarse en el navegador a velocidades cercanas a las del código nativo. Se compila a partir de lenguajes de programación como C, C++ y [Rust](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/), y actualmente está impulsando la innovación no solo en el desarrollo web, sino también en una amplia gama de áreas, incluyendo el lado del servidor, la computación en el borde (edge computing) e incluso en dispositivos IoT.
 
@@ -54,7 +54,7 @@ Entonces, ¿cómo se ejecuta exactamente el código de C o Rust en el navegador?
 
 ## 2.1 La Tubería de Compilación (Compilation [Pipeline](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/))
 
-Los lenguajes como C y [Rust](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/) normalmente se compilan a código máquina dependiente del sistema operativo o la arquitectura de la CPU. Sin embargo, en el caso de WebAssembly, se especifica una arquitectura para Wasm como destino, por ejemplo, "wasm32".
+Los lenguajes como C y [Rust](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/) normalmente se compilan a código máquina dependiente del sistema operativo o la arquitectura de la CPU. Sin embargo, en el caso de WebAssembly, se especifica una arquitectura para [Wasm](/es/p/webassembly-wasm-from-cpp-and-rust/) como destino, por ejemplo, "wasm32".
 
 En muchos casos, se utiliza la infraestructura del compilador LLVM.
 
@@ -73,7 +73,7 @@ De esta manera, el código escrito por los desarrolladores pasa por una represen
 
 WebAssembly adopta una arquitectura de **máquina de pila**. No tiene registros; en su lugar, todos los cálculos se realizan sobre una pila (una estructura de datos LIFO).
 
-Por ejemplo, al realizar una simple suma `$ 1 + 2 $`, la representación de texto de Wasm (WAT) se vería así:
+Por ejemplo, al realizar una simple suma `$ 1 + 2 $`, la representación de texto de [Wasm](/es/p/webassembly-wasm-from-cpp-and-rust/) (WAT) se vería así:
 
 ```wasm
 (module
@@ -93,9 +93,9 @@ Esta estructura simple permite que el proceso de decodificación y validación s
 
 ## 2.3 Modelo de Memoria (Memoria Lineal)
 
-En C y [Rust](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/), las operaciones de memoria usando punteros se realizan con frecuencia. Para lograr esto, WebAssembly adopta el concepto de **Memoria Lineal (Linear Memory)**.
+En C y [Rust](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/), las operaciones de memoria usando [punteros](/es/p/c-language-pointers-memory-management-stack-heap/) se realizan con frecuencia. Para lograr esto, WebAssembly adopta el concepto de **Memoria Lineal (Linear Memory)**.
 
-La memoria lineal es un array contiguo de bytes al que se puede acceder desde una instancia de WebAssembly. Desde JavaScript, esto se ve como un `ArrayBuffer` o `SharedArrayBuffer`. Un puntero dentro de Wasm no es más que un índice (un valor entero) en este array.
+La memoria lineal es un array contiguo de bytes al que se puede acceder desde una instancia de WebAssembly. Desde JavaScript, esto se ve como un `ArrayBuffer` o `SharedArrayBuffer`. Un puntero dentro de [Wasm](/es/p/webassembly-wasm-from-cpp-and-rust/) no es más que un índice (un valor entero) en este array.
 
 ```mermaid
 flowchart LR
@@ -103,7 +103,7 @@ flowchart LR
     C["Motor JavaScript"] --"Acceso mediante TypedArray"--> B
 ```
 
-A través de este mecanismo, se evita que el código Wasm acceda directamente a la memoria del sistema operativo anfitrión, proporcionando un entorno de sandbox robusto.
+A través de este mecanismo, se evita que el código [Wasm](/es/p/webassembly-wasm-from-cpp-and-rust/) acceda directamente a la memoria del sistema operativo anfitrión, proporcionando un entorno de sandbox robusto.
 
 ---
 
@@ -134,8 +134,8 @@ fetch('module.wasm')
 
 ## 3.2 Acceso y Enlaces a las API Web
 
-Wasm por sí mismo no tiene la capacidad de acceder directamente al DOM o a las API Web. Para hacerlo, debe pasar por JavaScript.
-Sin embargo, escribir todo esto manualmente requiere mucho esfuerzo. Por ello, el ecosistema de [Rust](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/) proporciona herramientas como **wasm-bindgen**.
+[Wasm](/es/p/webassembly-wasm-from-cpp-and-rust/) por sí mismo no tiene la capacidad de acceder directamente al DOM o a las API Web. Para hacerlo, debe pasar por JavaScript.
+Sin embargo, escribir todo esto manualmente requiere mucho esfuerzo. Por ello, el ecosistema de [Rust](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/) proporciona herramientas como **[wasm](/es/p/webassembly-wasm-from-cpp-and-rust/)-bindgen**.
 
 ```rust
 // Código Rust (usando wasm-bindgen)
@@ -160,13 +160,13 @@ Al compilar este código, `wasm-bindgen` genera automáticamente el código de e
 
 ¿Por qué WebAssembly es más rápido que JavaScript?
 
-1.  **Velocidad de Análisis (Parsing)** : Como Wasm es un formato binario, se puede decodificar mucho más rápido que analizar el código fuente de texto JS para construir un Árbol de Sintaxis Abstracta (AST).
-2.  **Optimización JIT** : Como JS es un lenguaje de tipado dinámico, el compilador JIT debe inferir los tipos en tiempo de ejecución, y si la inferencia falla, tiene que deshacer la optimización (Deoptimization). Wasm tiene un tipado estático y ya ha pasado por optimizaciones potentes (con LLVM, etc.) en el momento de la compilación, por lo que el navegador puede concentrarse directamente en generar código máquina.
-3.  **Evitar la Recolección de Basura (GC)** : Wasm escrito en C o Rust gestiona la memoria por su cuenta, por lo que no se producen pausas inesperadas causadas por el GC del motor JS (※Las especificaciones de Wasm GC se tratarán más adelante).
+1.  **Velocidad de Análisis (Parsing)** : Como [Wasm](/es/p/webassembly-wasm-from-cpp-and-rust/) es un formato binario, se puede decodificar mucho más rápido que analizar el código fuente de texto JS para construir un Árbol de Sintaxis Abstracta (AST).
+2.  **Optimización JIT** : Como JS es un lenguaje de tipado dinámico, el compilador JIT debe inferir los tipos en tiempo de ejecución, y si la inferencia falla, tiene que deshacer la optimización (Deoptimization). [Wasm](/es/p/webassembly-wasm-from-cpp-and-rust/) tiene un tipado estático y ya ha pasado por optimizaciones potentes (con LLVM, etc.) en el momento de la compilación, por lo que el navegador puede concentrarse directamente en generar código máquina.
+3.  **Evitar la Recolección de Basura (GC)** : [Wasm](/es/p/webassembly-wasm-from-cpp-and-rust/) escrito en C o Rust gestiona la memoria por su cuenta, por lo que no se producen pausas inesperadas causadas por el GC del motor JS (※Las especificaciones de [Wasm](/es/p/webassembly-wasm-from-cpp-and-rust/) GC se tratarán más adelante).
 
 ## 4.1 Benchmark: Sucesión de Fibonacci
 
-Comparemos la velocidad de JavaScript y Rust (Wasm) utilizando un cálculo simple de la sucesión de Fibonacci.
+Comparemos la velocidad de JavaScript y Rust ([Wasm](/es/p/webassembly-wasm-from-cpp-and-rust/)) utilizando un cálculo simple de la sucesión de Fibonacci.
 Matemáticamente se expresa con la siguiente fórmula recursiva. La complejidad computacional es exponencial `$ O(2^n) $`, lo que consume mucha CPU.
 
 $$
@@ -195,7 +195,7 @@ pub fn fib_wasm(n: u32) -> u32 {
 }
 ```
 
-Al calcular para $n=40$, aunque JavaScript (motor V8) se ejecuta bastante rápido debido a las optimizaciones del JIT, el Wasm generado desde [Rust](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/) suele ser **entre 1.5 y más de 2 veces** más rápido en la mayoría de los casos. Especialmente en áreas donde el acceso secuencial a la memoria y las instrucciones SIMD brillan, como los cálculos de matrices o el procesamiento de imágenes, la diferencia es aún más pronunciada.
+Al calcular para $n=40$, aunque JavaScript (motor V8) se ejecuta bastante rápido debido a las optimizaciones del JIT, el [Wasm](/es/p/webassembly-wasm-from-cpp-and-rust/) generado desde [Rust](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/) suele ser **entre 1.5 y más de 2 veces** más rápido en la mayoría de los casos. Especialmente en áreas donde el acceso secuencial a la memoria y las instrucciones SIMD brillan, como los cálculos de matrices o el procesamiento de imágenes, la diferencia es aún más pronunciada.
 
 ---
 
@@ -205,7 +205,7 @@ Los lenguajes más populares como origen para compilar a WebAssembly son C/C++ y
 
 ## 5.1 C++ y Emscripten
 
-Históricamente, C/C++ son los lenguajes que se han utilizado durante más tiempo para portar a la web. **Emscripten** es una cadena de herramientas que utiliza LLVM para convertir código C/C++ a Wasm.
+Históricamente, C/C++ son los lenguajes que se han utilizado durante más tiempo para portar a la web. **Emscripten** es una cadena de herramientas que utiliza LLVM para convertir código C/C++ a [Wasm](/es/p/webassembly-wasm-from-cpp-and-rust/).
 Cuenta con emulación POSIX y una capa de conversión a OpenGL (WebGL) para ejecutar enormes bibliotecas existentes de C/C++ (como SQLite, FFmpeg, OpenCV, motores de juegos, etc.) en el navegador.
 
 ## 5.2 Rust y WebAssembly
@@ -213,8 +213,8 @@ Cuenta con emulación POSIX y una capa de conversión a OpenGL (WebGL) para ejec
 Actualmente, **Rust** es el lenguaje de primera clase que atrae más atención para WebAssembly.
 Las razones por las que se prefiere Rust son las siguientes:
 
-- **Pequeño tiempo de ejecución (runtime)** : Rust no tiene un GC ni un runtime gigantesco, por lo que el tamaño del binario Wasm generado se puede mantener muy pequeño.
-- **wasm-pack / wasm-bindgen** : El ecosistema es muy refinado, permitiendo configurar un proyecto Wasm y publicarlo como un paquete npm con solo unas pocas líneas de comandos.
+- **Pequeño tiempo de ejecución (runtime)** : Rust no tiene un GC ni un runtime gigantesco, por lo que el tamaño del binario [Wasm](/es/p/webassembly-wasm-from-cpp-and-rust/) generado se puede mantener muy pequeño.
+- **[wasm](/es/p/webassembly-wasm-from-cpp-and-rust/)-pack / [wasm](/es/p/webassembly-wasm-from-cpp-and-rust/)-bindgen** : El ecosistema es muy refinado, permitiendo configurar un proyecto [Wasm](/es/p/webassembly-wasm-from-cpp-and-rust/) y publicarlo como un paquete npm con solo unas pocas líneas de comandos.
 - **Seguridad de memoria** : Dado que la seguridad de la memoria está garantizada en el momento de la compilación, el riesgo de corrupción de la memoria debido a errores se reduce, incluso cuando se ejecutan procesos complejos en el navegador.
 
 ---
@@ -236,7 +236,7 @@ Aunque el Wasm tradicional fue diseñado para lenguajes como C y [Rust](https://
 
 # 7. El Mundo Fuera del Navegador: WASI (WebAssembly System Interface)
 
-El potencial de WebAssembly no se limita al navegador. La idea de **"¿Y si pudiéramos usar Wasm como un formato estándar incluso fuera del navegador?"** dio lugar a **WASI (WebAssembly System Interface)**.
+El potencial de WebAssembly no se limita al navegador. La idea de **"¿Y si pudiéramos usar [Wasm](/es/p/webassembly-wasm-from-cpp-and-rust/) como un formato estándar incluso fuera del navegador?"** dio lugar a **WASI (WebAssembly System Interface)**.
 
 ## 7.1 ¿Qué es WASI?
 WASI es una interfaz estándar para que los programas WebAssembly accedan a los recursos del sistema operativo (sistema de archivos, red, variables de entorno, etc.) de forma segura.
@@ -261,7 +261,7 @@ Hoy en día, se están desarrollando activamente proyectos (como Kwasm y Spin) p
 El mayor desafío con WebAssembly en la actualidad es que es difícil hacer que módulos Wasm escritos en diferentes lenguajes colaboren entre sí (porque las representaciones en memoria de cadenas y tipos de datos complejos varían entre lenguajes).
 
 El **WebAssembly Component Model** (Modelo de Componentes) resolverá esto.
-Una vez implementado, será posible llamar a funciones sin problemas desde un "módulo Wasm escrito en [Rust](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/)" a un "módulo Wasm escrito en Python". Esto tiene el potencial de convertirse en la base para la arquitectura de microservicios de próxima generación que sea independiente de la plataforma y el lenguaje.
+Una vez implementado, será posible llamar a funciones sin problemas desde un "módulo [Wasm](/es/p/webassembly-wasm-from-cpp-and-rust/) escrito en [Rust](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/)" a un "módulo [Wasm](/es/p/webassembly-wasm-from-cpp-and-rust/) escrito en Python". Esto tiene el potencial de convertirse en la base para la arquitectura de [microservicios](/es/p/microservices-architecture-bff-api-gateway/) de próxima generación que sea independiente de la plataforma y el lenguaje.
 
 ## 8.2 Wasm como Sistema de Plugins
 Ya hay una gran cantidad de software que ha adoptado WebAssembly como su sistema de plugins, como Figma, EnvoyProxy y Microsoft Flight Simulator. Esto se debe a que el código de terceros creado por los usuarios se puede ejecutar de manera segura y rápida dentro de la aplicación principal.

@@ -22,7 +22,7 @@ Named after the Belgian mathematician Eugène Charles Catalan, the Catalan seque
 
 $$ C_0 = 1, \quad C_1 = 1, \quad C_2 = 2, \quad C_3 = 5, \quad C_4 = 14, \quad C_5 = 42, \quad C_6 = 132, \quad C_7 = 429, \quad \dots $$
 
-This sequence appears as the solution to a surprisingly diverse array of combinatorial problems. In this article, we will introduce four famous examples involving Catalan numbers (valid parentheses, binary trees, polygon triangulation, and Dyck paths). We will unravel the recursive structure behind them to understand why they map to the exact same sequence. Furthermore, we will delve into computational algorithms using [Dynamic Programming](https://kenji.blog/en/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) ([DP](https://kenji.blog/en/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) and mathematical derivations using generating functions.
+This sequence appears as the solution to a surprisingly diverse array of combinatorial problems. In this article, we will introduce four famous examples involving Catalan numbers (valid parentheses, binary trees, polygon triangulation, and Dyck paths). We will unravel the recursive structure behind them to understand why they map to the exact same sequence. Furthermore, we will delve into computational algorithms using [Dynamic Programming](https://kenji.blog/en/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) ([DP](https://kenji.blog/en/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) and mathematical derivations using [generating functions](/en/p/generating-functions/).
 
 ## 2. Four Concrete Examples of [Catalan Numbers](https://kenji.blog/en/p/catalan-numbers/)
 

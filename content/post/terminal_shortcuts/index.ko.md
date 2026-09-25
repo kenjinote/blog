@@ -58,8 +58,8 @@ Linux나 macOS의 표준 셸인 Bash는 내부적으로 **GNU Readline** 이라�
 
 - **`Ctrl + A`** : 줄의 맨 앞(Start of line)으로 이동합니다. 매우 자주 사용합니다.
 - **`Ctrl + E`** : 줄의 맨 끝(End of line)으로 이동합니다.
-- **`Alt + B`** (Meta+B) : 1단어 뒤로 이동(Backward word). 슬래시나 공백을 구분자로 하여 단어 단위로 고속 이동합니다.
-- **`Alt + F`** (Meta+F) : 1단어 앞으로 이동(Forward word).
+- **`Alt + B`** ([Meta](/ko/p/history-of-meta-facebook/)+B) : 1단어 뒤로 이동(Backward word). 슬래시나 공백을 구분자로 하여 단어 단위로 고속 이동합니다.
+- **`Alt + F`** ([Meta](/ko/p/history-of-meta-facebook/)+F) : 1단어 앞으로 이동(Forward word).
 
 ```mermaid
 flowchart LR
@@ -76,7 +76,7 @@ Emacs 용어에서는 텍스트를 잘라내는(컷) 것을 '킬(Kill)', 붙여�
 - **`Ctrl + U`** : 커서 위치부터 줄의 맨 앞까지를 킬(삭제)합니다. 비밀번호 입력 실수 시나 명령어를 처음부터 다시 쓰고 싶을 때 순식간에 지울 수 있습니다.
 - **`Ctrl + K`** : 커서 위치부터 줄의 맨 끝까지를 킬합니다.
 - **`Ctrl + W`** : 커서 위치부터 앞의 1단어를 킬합니다. 인수를 하나 지우고 다시 쓸 때 유용합니다.
-- **`Alt + D`** (Meta+D) : 커서 위치부터 뒤의 1단어를 킬합니다.
+- **`Alt + D`** ([Meta](/ko/p/history-of-meta-facebook/)+D) : 커서 위치부터 뒤의 1단어를 킬합니다.
 - **`Ctrl + Y`** : 마지막으로 킬한 내용을 양크(붙여넣기)합니다. `Ctrl+U`로 지운 명령어를 다른 디렉터리로 이동한 후에 `Ctrl+Y`로 부활시키는 등의 고급 사용법이 가능합니다.
 - **`Ctrl + _`** (또는 `Ctrl + x, Ctrl + u`) : 실행 취소(Undo). 실수로 지운 경우에 복원할 수 있습니다.
 

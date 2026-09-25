@@ -27,7 +27,7 @@ Em 1906, aos 18 anos, Mordell viajou sozinho para a Inglaterra com muito pouco d
 
 No centro da pesquisa de Mordell estavam sempre as **equações diofantinas**. Uma equação diofantina é um problema para encontrar soluções inteiras ou racionais para equações polinomiais com coeficientes inteiros. O nome vem do antigo matemático grego [Diofanto](https://kenji.blog/pt/p/diophantus/).
 
-O exemplo mais famoso de equação diofantina é aquele relacionado ao teorema de Pitágoras:
+O exemplo mais famoso de equação diofantina é aquele relacionado ao teorema de [Pitágoras](/pt/p/pythagoras/):
 
 $$ x^2 + y^2 = z^2 $$
 

@@ -12,9 +12,9 @@ description: "A data-driven health management technique to maximize performance 
 
 ## 1. Introduction: The Intersection of Software Engineering and Biohacking
 
-Modern software engineering is demanding intellectual labor that involves extreme cognitive load and a sedentary lifestyle. Constantly catching up with changing technology stacks, bug hunting in complex distributed systems, and pressure from deadlines. To overcome these, a data-driven approach to tune the hardware that is your own body, like debugging a system, is essential, rather than simply relying on "spirit" or "guts". This is known as "Biohacking".
+Modern software engineering is demanding intellectual labor that involves extreme cognitive load and a sedentary lifestyle. Constantly catching up with changing technology stacks, bug hunting in complex [distributed systems](/en/p/cap-theorem-distributed-systems-tradeoff/), and pressure from deadlines. To overcome these, a data-driven approach to tune the hardware that is your own body, like debugging a system, is essential, rather than simply relying on "spirit" or "guts". This is known as "Biohacking".
 
-In the past, we relied on the subjective feeling (heuristics) of "I feel somewhat good/bad today," but nowadays, with the spread of high-performance wearable devices like Oura Ring, Apple Watch, and Garmin, we can acquire biological data non-invasively, 24/7. In this article, I will explain how to acquire biological data (HRV, RHR, sleep architecture) and productivity data (coding metrics from WakaTime, etc.) via APIs, and perform correlation analysis using a data science approach with Python and Pandas. I will also unravel scientific evidence-based health hacks for engineers in extreme detail, such as mathematical models of circadian rhythms and optimal coffee intake timing based on caffeine metabolism half-life.
+In the past, we relied on the subjective feeling (heuristics) of "I feel somewhat good/bad today," but nowadays, with the spread of high-performance wearable devices like Oura Ring, Apple Watch, and Garmin, we can acquire biological data non-invasively, 24/7. In this article, I will explain how to acquire biological data (HRV, RHR, sleep architecture) and productivity data (coding metrics from WakaTime, etc.) via APIs, and perform correlation analysis using a data science approach with Python and Pandas. I will also unravel scientific evidence-based health hacks [for engineers](/en/p/prompt-engineering-for-engineers/) in extreme detail, such as mathematical models of circadian rhythms and optimal coffee intake timing based on caffeine metabolism half-life.
 
 ## 2. You Can't Manage What You Can't Measure: Hardware for Biological Data Acquisition
 
@@ -50,7 +50,7 @@ Here,
 - $N$ is the total number of measured heartbeats
 - $RR_i$ is the $i$-th RR interval (in milliseconds)
 
-For engineers, if the HRV (RMSSD) upon waking up in the morning is significantly lower than their personal baseline (the moving average of the past few weeks), they can make a data-driven decision: "Today should be a day to avoid high cognitive load architecture design or deploying to the production environment, and instead focus on expanding test codes or writing documentation".
+[For engineers](/en/p/prompt-engineering-for-engineers/), if the HRV (RMSSD) upon waking up in the morning is significantly lower than their personal baseline (the moving average of the past few weeks), they can make a data-driven decision: "Today should be a day to avoid high cognitive load architecture design or deploying to the production environment, and instead focus on expanding test codes or writing documentation".
 
 ### 3.2 RHR (Resting Heart Rate) and Recovery [Signals](https://kenji.blog/en/p/state-management-history-future/)
 RHR is the number of heartbeats per minute when the body is in a state of complete rest (usually during sleep). When the body is allocating energy to internal metabolism or immune responses, such as after drinking alcohol, late-night overeating, or early symptoms of illness (e.g., infections), RHR rises several to over ten bpm above the baseline.

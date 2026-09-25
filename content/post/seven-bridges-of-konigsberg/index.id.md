@@ -15,7 +15,7 @@ Dalam sejarah matematika, pertanyaan kecil atau permainan sehari-hari terkadang 
 
 Pada abad ke-18, di kota Königsberg di Kerajaan Prusia (sekarang Kaliningrad, Federasi Rusia), mengalir sungai besar yang disebut Sungai Pregel, dengan tujuh jembatan yang menghubungkan pulau di tengah sungai dan kedua tepinya. Penduduk kota pada masa itu memikirkan permainan berikut saat mereka berjalan-jalan di sore hari: "Mungkinkah kita berjalan melintasi ketujuh jembatan di kota masing-masing tepat satu kali, lalu kembali ke titik awal?"
 
-Ketika masalah yang sekilas tampak seperti teka-teki sederhana ini jatuh ke tangan matematikawan jenius **[Leonhard Euler](https://kenji.blog/id/p/euler/)**, revolusi terjadi di dunia matematika. Euler tidak hanya membuktikan bahwa masalah ini mustahil, tetapi dalam prosesnya ia juga mendefinisikan ulang sifat-sifat ruang dari perspektif yang sama sekali baru, meletakkan dasar bagi dua bidang yang sangat penting dalam matematika modern: **Teori Graf** ([Graph Theory](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/)) dan **Topologi** (Topology).
+Ketika masalah yang sekilas tampak seperti teka-teki sederhana ini jatuh ke tangan matematikawan jenius **[Leonhard Euler](https://kenji.blog/id/p/euler/)**, revolusi terjadi di dunia matematika. Euler tidak hanya membuktikan bahwa masalah ini mustahil, tetapi dalam prosesnya ia juga mendefinisikan ulang sifat-sifat ruang dari perspektif yang sama sekali baru, meletakkan dasar bagi dua bidang yang sangat penting dalam matematika modern: **[Teori Graf](/id/p/graph-theory-dijkstra-a-star/)** ([Graph Theory](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/)) dan **Topologi** (Topology).
 
 Dalam artikel ini, kita akan menggali lebih dalam tentang latar belakang sejarah masalah [Tujuh Jembatan Königsberg](https://kenji.blog/id/p/seven-bridges-of-konigsberg/), solusi brilian Euler, dan bagaimana hal tersebut terhubung dengan ilmu pengetahuan dan teknologi modern, beserta rincian matematisnya. Jangan hanya berhenti pada pengenalan sejarah, tetapi nikmatilah keindahan struktur matematis di baliknya.
 
@@ -39,9 +39,9 @@ Para cendekiawan dan penduduk Königsberg pada masa itu, sebagai hiburan saat ja
 
 Rumor dari warga kota ini akhirnya sampai ke telinga matematikawan besar asal Swiss, **[Leonhard Euler](https://kenji.blog/id/p/euler/)**, yang saat itu tinggal di Akademi Ilmu Pengetahuan Saint Petersburg di Rusia. Hal itu terjadi pada tahun 1735.
 
-Pada awalnya, Euler sepertinya merasa bahwa masalah ini "bukanlah matematika, melainkan hanya permainan logika belaka." Arus utama matematika pada waktu itu adalah geometri [Euclide](https://kenji.blog/p/euclid/)an (yang membahas panjang, sudut, luas, volume, dll.), aljabar, atau kalkulus yang baru saja diciptakan oleh Newton dan Leibniz. Masalah jembatan Königsberg sama sekali tidak bergantung pada sifat-sifat geometris tradisional seperti berapa meter panjang jembatan, seberapa besar luas pulau-pulau itu, atau pada sudut berapa jembatan itu dibangun terhadap sungai. Yang penting hanyalah relasi **koneksi** (hubungan) murni, yaitu "daratan mana yang terhubung dengan daratan mana, dan oleh berapa banyak jembatan."
+Pada awalnya, Euler sepertinya merasa bahwa masalah ini "bukanlah matematika, melainkan hanya permainan logika belaka." Arus utama matematika pada waktu itu adalah geometri [Euclide](https://kenji.blog/id/p/euclid/)an (yang membahas panjang, sudut, luas, volume, dll.), aljabar, atau kalkulus yang baru saja diciptakan oleh Newton dan Leibniz. Masalah jembatan Königsberg sama sekali tidak bergantung pada sifat-sifat geometris tradisional seperti berapa meter panjang jembatan, seberapa besar luas pulau-pulau itu, atau pada sudut berapa jembatan itu dibangun terhadap sungai. Yang penting hanyalah relasi **koneksi** (hubungan) murni, yaitu "daratan mana yang terhubung dengan daratan mana, dan oleh berapa banyak jembatan."
 
-Ini adalah jenis masalah geometris yang sama sekali baru, yang tidak dapat ditangani dalam kerangka pengukuran geometri [Euclide](https://kenji.blog/p/euclid/)an saat itu. Namun, Euler secara bertahap mulai menyadari kedalaman masalah ini. Ia menyadari bahwa ini merupakan masalah penting yang berkaitan dengan "Analisis Posisi" (Analysis Situs) atau "Geometri Posisi" (Geometria Situs) yang pernah diimpikan oleh Gottfried Wilhelm Leibniz, dan ia pun memutuskan untuk mengatasinya dengan sungguh-sungguh.
+Ini adalah jenis masalah geometris yang sama sekali baru, yang tidak dapat ditangani dalam kerangka pengukuran geometri [Euclide](https://kenji.blog/id/p/euclid/)an saat itu. Namun, Euler secara bertahap mulai menyadari kedalaman masalah ini. Ia menyadari bahwa ini merupakan masalah penting yang berkaitan dengan "Analisis Posisi" (Analysis Situs) atau "Geometri Posisi" (Geometria Situs) yang pernah diimpikan oleh Gottfried Wilhelm Leibniz, dan ia pun memutuskan untuk mengatasinya dengan sungguh-sungguh.
 
 ## Abstraksi Euler: Membuang Informasi yang Tidak Perlu
 
@@ -52,7 +52,7 @@ Dari peta detail Königsberg yang nyata, ia mengabaikan seluruh bentuk fisik dan
 1. Mewakili **daratan (pulau dan tepian)** sekadar sebagai "titik" tanpa ukuran. Dalam istilah modern, ini disebut **simpul** (Vertex) atau **node** (Node).
 2. Mewakili **jembatan** sebagai "garis" yang menghubungkan simpul dengan simpul lainnya. Ini disebut **sisi** (Edge) atau **tautan** (Link). Kelengkungan atau panjang garis tidak menjadi masalah.
 
-Struktur diskrit yang direpresentasikan sebagai himpunan simpul terhingga dan sisi-sisi yang menghubungkannya ini disebut sebagai **graf** ([Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) dalam matematika. Inilah momen lahirnya bidang yang sekarang kita sebut sebagai "Teori Graf".
+Struktur diskrit yang direpresentasikan sebagai himpunan simpul terhingga dan sisi-sisi yang menghubungkannya ini disebut sebagai **graf** ([Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) dalam matematika. Inilah momen lahirnya bidang yang sekarang kita sebut sebagai "[Teori Graf](/id/p/graph-theory-dijkstra-a-star/)".
 
 Diagram Mermaid berikut menunjukkan bagaimana peta geografis kota Königsberg diubah menjadi representasi graf abstrak.
 
@@ -79,7 +79,7 @@ Melalui abstraksi yang kuat ini, pertanyaan sehari-hari warga mengenai "apakah a
 
 Setelah merumuskan masalah ke dalam bentuk graf, Euler menemukan hukum universal yang sangat sederhana namun sangat kuat. Kunci dari buktinya adalah pengenalan konsep baru yaitu **derajat** (Degree).
 
-Dalam teori graf, **derajat** dari sebuah simpul $v$ dinotasikan sebagai $d(v)$ atau $\text{deg}(v)$, yang berarti "jumlah total sisi yang terhubung langsung ke simpul tersebut".
+Dalam [teori graf](/id/p/graph-theory-dijkstra-a-star/), **derajat** dari sebuah simpul $v$ dinotasikan sebagai $d(v)$ atau $\text{deg}(v)$, yang berarti "jumlah total sisi yang terhubung langsung ke simpul tersebut".
 
 Euler secara logis mempertimbangkan bagaimana tindakan "menggambar rute yang melewati setiap sisi tepat satu kali" pada sebuah graf memberikan batasan pada derajat masing-masing simpul.
 
@@ -98,7 +98,7 @@ Di sini, pola rute diklasifikasikan menjadi dua:
 2. **Jalur Eulerian (Eulerian Path)**: Jika titik awal dan titik akhir adalah simpul yang berbeda.
    Dalam kasus ini, diperlukan satu sisi tambahan untuk "keluar pertama kali" dari titik awal, dan diperlukan satu sisi tambahan untuk "masuk terakhir kali" ke titik akhir. Dengan demikian, hanya pada kedua simpul ini (titik awal dan titik akhir) pasangan sisinya tidak lengkap, sehingga keduanya akan memiliki derajat **ganjil** (Odd). Semua simpul transit lainnya harus memiliki derajat genap.
 
-Inilah teorema dasar dan paling terkenal dalam teori graf yang dibuktikan secara ketat oleh Euler (Teorema Euler).
+Inilah teorema dasar dan paling terkenal dalam [teori graf](/id/p/graph-theory-dijkstra-a-star/) yang dibuktikan secara ketat oleh Euler (Teorema Euler).
 
 Dengan menggunakan rumus matematika, teorema ini dapat direpresentasikan dengan lebih ketat pada graf tak berarah yang terhubung $G = (V, E)$:
 
@@ -132,7 +132,7 @@ Ini merupakan momen yang sangat penting dalam sejarah matematika. Karena Euler t
 
 ## Berkembang Menjadi Topologi: Lahirnya Geometri Posisi
 
-Melalui masalah jembatan Königsberg, Euler membuka paradigma geometri yang sama sekali baru, yang subjek studi esensialnya hanya pada "bagaimana bentuk dan ruang terhubung" (hubungan konektivitas dan kontinuitas), tanpa bergantung sedikitpun pada sifat "metrik" geometri [Euclide](https://kenji.blog/p/euclid/)an konvensional seperti jarak, panjang, sudut, atau luas.
+Melalui masalah jembatan Königsberg, Euler membuka paradigma geometri yang sama sekali baru, yang subjek studi esensialnya hanya pada "bagaimana bentuk dan ruang terhubung" (hubungan konektivitas dan kontinuitas), tanpa bergantung sedikitpun pada sifat "metrik" geometri [Euclide](https://kenji.blog/id/p/euclid/)an konvensional seperti jarak, panjang, sudut, atau luas.
 
 Inilah awal mula dari bidang yang kelak dikenal sebagai **Topologi** (Topology). Dalam topologi, yang dipelajari adalah "sifat-sifat yang tidak berubah bahkan jika dideformasi (diubah bentuknya) secara kontinu" (sifat-sifat topologis). Ada lelucon terkenal yang mengatakan bahwa "seorang topolog tidak bisa membedakan antara cangkir kopi dan donat." Keduanya adalah "benda padat dengan satu lubang", dan karena keduanya dapat berubah satu sama lain jika dideformasi secara kontinu seperti tanah liat tanpa dipotong atau direkatkan, keduanya dianggap memiliki "bentuk yang sama" di dunia topologi.
 
@@ -142,7 +142,7 @@ Euler sendiri kemudian, pada tahun 1750, menemukan hukum universal yang menakjub
 
 ## Penerapan dan Perluasan Teori Graf dalam Masyarakat Modern
 
-Lahir dari murni pencarian intelektual seorang matematikawan abad ke-18, teori graf dan topologi sama sekali tidak berhenti sebagai ilmu menara gading. Keduanya kini mekar sebagai alat praktis yang sangat penting dan menopang fondasi masyarakat serta teknologi modern yang sarat informasi secara mendasar.
+Lahir dari murni pencarian intelektual seorang matematikawan abad ke-18, [teori graf](/id/p/graph-theory-dijkstra-a-star/) dan topologi sama sekali tidak berhenti sebagai ilmu menara gading. Keduanya kini mekar sebagai alat praktis yang sangat penting dan menopang fondasi masyarakat serta teknologi modern yang sarat informasi secara mendasar.
 
 ### 1. Jaringan Komputer dan Internet
 Struktur logis dan fisik internet yang kita gunakan setiap hari tak lain adalah graf raksasa berskala global. Router, server, dan komputer individu menjadi simpul, sedangkan serat optik dan jalur komunikasi nirkabel yang menghubungkannya direpresentasikan sebagai sisi. Protokol routing (misalnya, Algoritma [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/)) untuk menyampaikan paket data ke tujuan secepat dan seefisien mungkin sambil menghindari kemacetan, seluruhnya dirancang sebagai algoritma pada teori graf.

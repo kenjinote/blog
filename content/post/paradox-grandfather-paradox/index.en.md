@@ -34,7 +34,7 @@ To physically describe time travel to the past, a spacetime structure called a "
 
 Some famous solutions where CTCs exist include:
 
-1. **Gödel metric**: In 1949, mathematician Kurt Gödel showed that if we assume the entire universe is rotating, the equations of general relativity allow for CTCs.
+1. **Gödel metric**: In 1949, mathematician [Kurt Gödel](/en/p/godel/) showed that if we assume the entire universe is rotating, the equations of general relativity allow for CTCs.
 2. **Tipler cylinder**: In 1974, Frank Tipler showed that one could travel back in time by orbiting in a specific trajectory around an infinitely long, ultra-dense, rapidly rotating cylinder.
 3. **Wormholes**: Kip Thorne and others showed that a tunnel connecting two distant points in spacetime, a "wormhole," could function as a time machine if stabilized by negative energy (exotic matter) and one end is moved at a speed close to light and then returned.
 

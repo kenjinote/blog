@@ -15,7 +15,7 @@ In our modern Internet society, the reason we can safely enjoy online shopping a
 
 At first glance, prime factorization might seem like a simple task of "just breaking down numbers into a multiplication of primes," but as the number of digits grows, it transforms into an ultra-difficult problem that cannot be solved even if the world's fastest supercomputer is run for decades or centuries. The prime factorization we typically learn in school is, at best, a simple process of dividing by $2$, $3$, or $5$. However, when faced with the product of unknown prime numbers spanning hundreds of digits, that simple approach completely breaks down.
 
-In this article, starting from the concept of "computational complexity (Big-O notation: $\mathcal{O}$ notation)," which is a fundamental of information science and computer science, we will explain in detail and mathematically how much computational time various algorithms for solving prime factorization (trial division, Pollard's $\rho$ algorithm, general number field sieve, etc.) require. Furthermore, we will thoroughly unravel why prime factorization of huge numbers is practically impossible on classical computers, how it protects our information and privacy, and even how quantum computers are overturning this premise.
+In this article, starting from the concept of "computational complexity (Big-O notation: $\mathcal{O}$ notation)," which is a fundamental of information science and computer science, we will explain in detail and mathematically how much computational time various algorithms for solving prime factorization (trial division, Pollard's $\rho$ algorithm, [general number field sieve](/en/p/beyond-gnfs-integer-factorization-algorithms/), etc.) require. Furthermore, we will thoroughly unravel why prime factorization of huge numbers is practically impossible on classical computers, how it protects our information and privacy, and even how quantum computers are overturning this premise.
 
 ---
 
@@ -154,7 +154,7 @@ One of the algorithms devised to break through the limits of Trial Division is "
 This method applies a probability concept known as the "Birthday Paradox" and the periodicity of pseudo-random number sequences (the name comes from its resemblance to the shape of the Greek letter $\rho$).
 
 It generates a sequence using a pseudo-random number generation function like $f(x) = (x^2 + 1) \pmod N$, and finds two values in the sequence such that $x_i \equiv x_j \pmod p$ (where $p$ is an unknown prime factor of $N$).
-At this time, since $x_i - x_j$ is a multiple of $p$, by calculating the greatest common divisor $\gcd(|x_i - x_j|, N)$, $p$ (i.e., a prime factor of $N$) can be extracted with high probability. It efficiently computes this while keeping memory usage to $\mathcal{O}(1)$ by combining it with Robert Floyd's cycle-finding algorithm (the tortoise and the hare algorithm).
+At this time, since $x_i - x_j$ is a multiple of $p$, by calculating the greatest common divisor $\gcd(|x_i - x_j|, N)$, $p$ (i.e., a prime factor of $N$) can be extracted with high probability. It efficiently computes this while keeping memory usage to $\mathcal{O}(1)$ by combining it with [Robert Floyd's cycle-finding algorithm](/en/p/floyds-cycle-finding/) (the tortoise and the hare algorithm).
 
 ### Complexity Evaluation
 It is known that the number of steps required for Pollard's $\rho$ algorithm to find a prime factor $p$ is approximately $\mathcal{O}(\sqrt{p})$.
@@ -180,11 +180,11 @@ If such a pair of $x, y$ can be found, $x^2 - y^2 = (x - y)(x + y)$ is a multipl
 
 The Quadratic Sieve finds a large number of $x$'s such that $x^2 \pmod N$ becomes a "number that has only small prime factors" (this is called a $B$-smooth number), and arranges the results of their prime factorization in a matrix form (a system of linear equations over the binary field $\mathbb{F}_2$). Then, it multiplies multiple relations using Gaussian elimination or similar methods, and constructs $x^2 \equiv y^2 \pmod N$ by adjusting the right side to be a perfect square (the exponent of each prime factor is an even number).
 
-The Quadratic Sieve was the world's fastest algorithm until the General Number Field Sieve appeared, and it is still considered the fastest for factoring numbers of 100 digits or less.
+The Quadratic Sieve was the world's fastest algorithm until the [General Number Field Sieve](/en/p/beyond-gnfs-integer-factorization-algorithms/) appeared, and it is still considered the fastest for factoring numbers of 100 digits or less.
 
 ## 5. In-depth Look at the General Number Field Sieve (GNFS)
 
-Currently, the **General Number Field Sieve (GNFS)** is considered the "world's fastest" in prime factorization of huge integers exceeding 100 digits. Devised in the late 1980s, it is an advanced algorithm that further developed the Quadratic Sieve using deep results from algebraic number theory (number fields).
+Currently, the **[General Number Field Sieve](/en/p/beyond-gnfs-integer-factorization-algorithms/) (GNFS)** is considered the "world's fastest" in prime factorization of huge integers exceeding 100 digits. Devised in the late 1980s, it is an advanced algorithm that further developed the Quadratic Sieve using deep results from algebraic number theory (number fields).
 
 In attacks on [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography (prime factorization from the public key), it is always this GNFS that continues to break world records. In 2020, it was reported that the prime factorization of an 829-bit (250-digit) composite number (RSA-250) was successful, but this required running thousands of computers in parallel for a long period.
 
@@ -240,7 +240,7 @@ One of the greatest unsolved problems in computer science is the "P = NP conject
 The prime factorization problem belongs to NP (the class of problems whose correctness can be verified in polynomial time if an answer is given), but it has not been proven to be [NP-complet](https://kenji.blog/en/p/p-vs-np-problem/)e (the class of the most difficult problems in NP).
 Also, whether it belongs to P (the class of problems that can be solved in polynomial time) (i.e., whether a polynomial time algorithm exists) remains unsolved.
 
-Many researchers conjecture that prime factorization belongs to an intermediate class that is neither P nor NP-complete (NP-intermediate). If an algorithm that solves prime factorization on a classical computer in polynomial time (for example, $\mathcal{O}(n^3)$) is discovered, it will be a huge incident that destroys cryptographic systems all over the world, but to date, no such algorithm has been discovered. It is estimated that breaking a 2048-bit [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cipher would take longer than the lifespan of the universe, even if the performance of classical computers improves according to Moore's Law.
+Many researchers conjecture that prime factorization belongs to an intermediate class that is neither P nor NP-complete (NP-intermediate). If an algorithm that solves prime factorization on a classical computer in polynomial time (for example, $\mathcal{O}(n^3)$) is discovered, it will be a huge incident that destroys cryptographic systems all over the world, but to date, no such algorithm has been discovered. It is estimated that breaking a 2048-bit [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cipher would take longer than the lifespan of the universe, even if the performance of classical computers improves according to [Moore's Law](/en/p/business-moores-law/).
 
 ## Quantum Computers as a "Game Changer": [Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)
 
@@ -280,7 +280,7 @@ In this article, starting from the basics of computational complexity (Big-O not
 
 * **Big-O ($\mathcal{O}$) notation** is an important metric showing the growth rate of computational steps against the increase in input size $n$, and there is a massive wall that cannot practically be crossed between polynomial time and exponential time.
 * **Trial Division** and **Pollard's $\rho$ algorithm** are pure "exponential time" algorithms and are powerless against huge numbers.
-* The currently fastest classical algorithm, the **General Number Field Sieve (GNFS)**, achieved "sub-exponential time" by making full use of advanced algebraic number theory, but it still falls short of polynomial time and requires astronomical amounts of time for factoring huge numbers.
+* The currently fastest classical algorithm, the **[General Number Field Sieve](/en/p/beyond-gnfs-integer-factorization-algorithms/) (GNFS)**, achieved "sub-exponential time" by making full use of advanced algebraic number theory, but it still falls short of polynomial time and requires astronomical amounts of time for factoring huge numbers.
 * The fact that **"no classical algorithm exists that solves it in polynomial time (as strongly conjectured)"** guarantees the security of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography and supports modern digital society.
 * However, with the advent of **quantum computers and Shor's algorithm**, prime factorization in polynomial time has theoretically become possible, and cryptographic technology is about to shift to the next era (post-quantum cryptography).
 

@@ -62,7 +62,7 @@ graph TD
 
 ## 4. Formalización matemática mediante Inferencia Bayesiana
 
-Vamos a formalizar estrictamente esta intuición matemática usando la **Inferencia Bayesiana**. El teorema de Bayes nos dice cómo debemos actualizar la probabilidad de una hipótesis (probabilidad a posteriori) al obtener nueva evidencia (datos observados).
+Vamos a formalizar estrictamente esta intuición matemática usando la **Inferencia Bayesiana**. El [teorema de Bayes](/es/p/bayes-theorem/) nos dice cómo debemos actualizar la probabilidad de una hipótesis (probabilidad a posteriori) al obtener nueva evidencia (datos observados).
 
 $$ P(H|E) = \frac{P(E|H) \cdot P(H)}{P(E)} $$
 
@@ -89,7 +89,7 @@ A continuación, calcularemos la verosimilitud $P(E|H)$ bajo cada hipótesis. Se
 $$ P(n | H_{DOOM}) = \frac{1}{N_{DOOM}} = \frac{1}{2 \times 10^{11}} $$
 $$ P(n | H_{BOOM}) = \frac{1}{N_{BOOM}} = \frac{1}{2 \times 10^{13}} $$
 
-Con esto calcularemos la probabilidad a posteriori de $H_{DOOM}$. Expandiendo el teorema de Bayes con la ley de la probabilidad total, nos queda lo siguiente:
+Con esto calcularemos la probabilidad a posteriori de $H_{DOOM}$. Expandiendo el [teorema de Bayes](/es/p/bayes-theorem/) con la ley de la probabilidad total, nos queda lo siguiente:
 
 $$ P(H_{DOOM} | n) = \frac{P(n | H_{DOOM}) P(H_{DOOM})}{P(n | H_{DOOM}) P(H_{DOOM}) + P(n | H_{BOOM}) P(H_{BOOM})} $$
 

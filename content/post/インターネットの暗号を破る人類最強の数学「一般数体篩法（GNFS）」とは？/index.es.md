@@ -34,7 +34,7 @@ Actualmente, el representante del cifrado más utilizado en todo el mundo es el 
 La clave de la defensa del cifrado RSA es muy simple. Utiliza la propiedad matemática de que **"la factorización de números primos gigantescos no puede ser resuelta ni siquiera por computadoras"**.
 Por ejemplo, si es "15", se sabe inmediatamente que es "3 × 5", pero en el momento en que esto se convierte en un "número de 270 dígitos", incluso reuniendo las supercomputadoras de todo el mundo llevaría cientos de millones de años resolverlo.
 
-Sin embargo, los matemáticos tampoco se han quedado callados. Para romper este cifrado inexpugnable, la humanidad ha creado un algoritmo (procedimiento de cálculo) parecido a la magia llamado **"Criba General del Cuerpo de Números (GNFS: General Number Field Sieve)"**.
+Sin embargo, los matemáticos tampoco se han quedado callados. Para romper este cifrado inexpugnable, la humanidad ha creado un algoritmo (procedimiento de cálculo) parecido a la magia llamado **"[Criba General del Cuerpo de Números](/es/p/beyond-gnfs-integer-factorization-algorithms/) (GNFS: General Number Field Sieve)"**.
 
 En este artículo, sin usar términos técnicos en absoluto, explicaremos paso a paso y de manera completa el truco por el cual este "algoritmo más fuerte de la humanidad" rompe el cifrado, solo con conocimientos de **matemáticas de secundaria (factorización de primos, álgebra, máximo común divisor)**!
 
@@ -68,7 +68,7 @@ Con solo el número primo $p$ entrando en la habitación de $(X - Y)$, calculemo
 * Contenido de $N$ = $p \times q$
   ¡La única pieza común es **"$p$"**!
 
-Es decir, en el momento en que se calcula el máximo común divisor, el número primo oculto $p$ cae, ¡y el cifrado se descifra por completo! (*El máximo común divisor se puede calcular en un instante incluso en un teléfono inteligente si usas el "Algoritmo de [Euclides](https://kenji.blog/p/euclid/)").
+Es decir, en el momento en que se calcula el máximo común divisor, el número primo oculto $p$ cae, ¡y el cifrado se descifra por completo! (*El máximo común divisor se puede calcular en un instante incluso en un teléfono inteligente si usas el "Algoritmo de [Euclides](https://kenji.blog/es/p/euclid/)").
 
 **[Breve columna: ¿Por qué al cuadrado? ¿No se puede al cubo o al doble?]**
 > Si es "$2X - 2Y$", se convierte en $2(X - Y)$ y como solo hay una habitación, no se pueden separar los números primos. Si es "$X^3 - Y^3$", el tamaño de las habitaciones se desequilibra y el cálculo se vuelve innecesariamente pesado. Para separar los números primos en dos, la opción más eficiente que se divide bellamente en dos habitaciones es "al cuadrado".
@@ -116,7 +116,7 @@ Si el número $N$ del cifrado tiene hasta "100 dígitos", se puede resolver con 
 
 Cuando los números se vuelven demasiado grandes, de repente dejan de aparecer los "números hechos solo de primos pequeños (polvo de oro)". Se vuelve más difícil que buscar una lente de contacto en el desierto, y ya no se pueden juntar en absoluto las tarjetas para resolver el rompecabezas.
 
-Aquí finalmente aparece el arma definitiva de la humanidad, la **"Criba General del Cuerpo de Números (GNFS)"**.
+Aquí finalmente aparece el arma definitiva de la humanidad, la **"[Criba General del Cuerpo de Números](/es/p/beyond-gnfs-integer-factorization-algorithms/) (GNFS)"**.
 
 ---
 

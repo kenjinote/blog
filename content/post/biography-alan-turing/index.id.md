@@ -12,7 +12,7 @@ image: "eyecatch.jpg"
 
 Ponsel pintar, komputer pribadi, dan kecerdasan buatan (AI) yang berkembang pesat akhir-akhir ini—semua yang biasa kita gunakan saat ini, dibangun di atas fondasi teoretis yang diletakkan oleh seorang matematikawan Inggris. Namanya adalah Alan Mathison Turing.
 
-Ia dikenal sebagai "Bapak Ilmu Komputer" dan "Bapak Kecerdasan Buatan," serta seorang pahlawan yang menyelamatkan jutaan nyawa selama Perang Dunia II melalui pemecahan kodenya. Namun, hidupnya jauh dari kata mulus, dan berakhir dengan tragis dan kejam akibat prasangka masyarakat. Dalam artikel ini, kita akan menelusuri secara rinci kehidupan Turing, dari masa kecilnya, ide-ide revolusionernya yang mengubah dunia, hingga akhir yang tragis.
+Ia dikenal sebagai "[Bapak Ilmu Komputer](/id/p/biography-donald-knuth/)" dan "Bapak Kecerdasan Buatan," serta seorang pahlawan yang menyelamatkan jutaan nyawa selama Perang Dunia II melalui pemecahan kodenya. Namun, hidupnya jauh dari kata mulus, dan berakhir dengan tragis dan kejam akibat prasangka masyarakat. Dalam artikel ini, kita akan menelusuri secara rinci kehidupan Turing, dari masa kecilnya, ide-ide revolusionernya yang mengubah dunia, hingga akhir yang tragis.
 
 ## 1. Masa Kecil dan Masa Pembentukan: Munculnya Bakat Unik
 
@@ -32,13 +32,13 @@ Namun, masa bahagia ini berlangsung singkat. Pada bulan Februari 1930, Morcom me
 
 ## 2. Universitas Cambridge dan Lahirnya "Mesin Turing"
 
-Pada tahun 1931, Turing masuk ke King's College, Universitas Cambridge, tempat ia mendalami matematika dan logika. Di sana ia mengenal pemikiran ilmuwan terkemuka seperti John von Neumann dan Max Born, yang memperluas wawasannya.
+Pada tahun 1931, Turing masuk ke King's College, Universitas Cambridge, tempat ia mendalami matematika dan logika. Di sana ia mengenal pemikiran ilmuwan terkemuka seperti [John von Neumann](/id/p/von-neumann/) dan Max Born, yang memperluas wawasannya.
 
 Dan pada tahun 1936, pada usia 24 tahun, ia menerbitkan makalah bersejarah dalam sejarah sains abad ke-20: "On Computable Numbers, with an Application to the Entscheidungsproblem".
 
 ### Konsep Mesin Turing
 
-Dalam makalah ini, Turing membuktikan bahwa jawaban atas "Entscheidungsproblem" (Masalah Keputusan: apakah semua pernyataan matematis dapat dibuktikan benar atau salah melalui algoritma), yang diajukan oleh matematikawan David Hilbert, adalah "tidak". Namun, nilai sebenarnya dari makalah ini terletak pada model eksperimen pemikiran yang ia temukan selama proses pembuktian, yang dikenal sebagai "Mesin Turing" (Turing Machine).
+Dalam makalah ini, Turing membuktikan bahwa jawaban atas "Entscheidungsproblem" (Masalah Keputusan: apakah semua pernyataan matematis dapat dibuktikan benar atau salah melalui algoritma), yang diajukan oleh matematikawan [David Hilbert](/id/p/hilbert/), adalah "tidak". Namun, nilai sebenarnya dari makalah ini terletak pada model eksperimen pemikiran yang ia temukan selama proses pembuktian, yang dikenal sebagai "Mesin Turing" (Turing Machine).
 
 Mesin Turing adalah mesin virtual yang sangat sederhana, terdiri dari pita yang panjangnya tak terhingga, kepala (head) untuk membaca dan menulis di pita, register untuk mengingat status internal, dan tabel aturan untuk menentukan tindakan.
 

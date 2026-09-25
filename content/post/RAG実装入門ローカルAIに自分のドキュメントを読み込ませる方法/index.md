@@ -11,11 +11,11 @@ tags: ["RAG", "Vector DB", "Embeddings", "Python", "Local AI"]
 
 # はじめに
 
-近年、[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）の進化は目覚ましく、ChatGPTやClaudeなどを筆頭に多くのAIが私たちの生活や業務に浸透しています。しかし、一般的なLLMには明確な弱点が存在します。それは「学習時点での公開情報」しか知らないという点です。社内規程、個人的なメモ、未公開のプロジェクト資料といった「プライベートなドキュメント」に関する質問には、当然ながら答えることができません。無理に答えさせようとすると、事実とは異なるもっともらしい嘘（ハルシネーション）を生成してしまうリスクが高まります。
+近年、[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）の進化は目覚ましく、ChatGPTやClaudeなどを筆頭に多くのAIが私たちの生活や業務に浸透しています。しかし、一般的な[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)には明確な弱点が存在します。それは「学習時点での公開情報」しか知らないという点です。社内規程、個人的なメモ、未公開のプロジェクト資料といった「プライベートなドキュメント」に関する質問には、当然ながら答えることができません。無理に答えさせようとすると、事実とは異なるもっともらしい嘘（ハルシネーション）を生成してしまうリスクが高まります。
 
-そこで現在、世界中で爆発的に普及しているのが **RAG (Retrieval-Augmented Generation: 検索拡張生成)** という技術アーキテクチャです。RAGを用いることで、LLMに独自の知識を外部データベースから動的に与え、それに基づいた正確で根拠のある回答を生成させることが可能になります。
+そこで現在、世界中で爆発的に普及しているのが **RAG (Retrieval-Augmented Generation: 検索拡張生成)** という技術アーキテクチャです。RAGを用いることで、[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)に独自の知識を外部データベースから動的に与え、それに基づいた正確で根拠のある回答を生成させることが可能になります。
 
-さらに、エンタープライズ領域や個人の機密情報を扱う場合、OpenAIなどのクラウドベースのAPIにデータを送信することは、セキュリティポリシー上許容されないことが多々あります。そこで求められるのが、 **ローカルAI** （自分のPCやオンプレミスサーバーで完結して動作するLLM）と組み合わせた「ローカルRAG」の構築です。
+さらに、エンタープライズ領域や個人の機密情報を扱う場合、OpenAIなどのクラウドベースのAPIにデータを送信することは、セキュリティポリシー上許容されないことが多々あります。そこで求められるのが、 **ローカルAI** （自分のPCやオンプレミスサーバーで完結して動作する[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)）と組み合わせた「ローカルRAG」の構築です。
 
 本記事では、RAGの基礎理論から、Pythonを用いたローカルRAGの具体的な実装方法、数学的な背景（ベクトル検索の仕組み）、そしてシステムを本番稼働させるための高度なテクニックまでを、徹底的に解説します。
 
@@ -108,7 +108,7 @@ $$ \text{Cosine Similarity}(\mathbf{A}, \mathbf{B}) = \cos(\theta) = \frac{\math
    - モデル: `intfloat/multilingual-e5-large` または `BAAI/bge-m3`。ローカルで動かす場合、Hugging FaceからダウンロードしてSentence-[Transformer](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)sで実行するのが一般的です。
 3. **ベクトルデータベース (Vector DB)**
    - `ChromaDB`: Pythonベースでセットアップが極めて簡単。ローカル開発に最適。
-   - `FAISS`: Metaが開発した高速なベクトル検索ライブラリ。
+   - `FAISS`: [Meta](/p/history-of-meta-facebook/)が開発した高速なベクトル検索ライブラリ。
    - `Qdrant` / `Milvus`: より大規模で本番環境向け。
 4. **オーケストレーションフレームワーク**
    - `LangChain`: コンポーネントを繋ぎ合わせる（Chain）ためのデファクトスタンダード。
@@ -254,7 +254,7 @@ if __name__ == "__main__":
 2. **再評価 (Re-ranking)**: Cross-Encoderと呼ばれる別のより重い機械学習モデル（例: `bge-reranker` など）を使用して、ユーザーのクエリと取得したチャンクのペアを入力し、意味的適合度のスコアを再計算します。
 3. **選別**: スコアの高い上位3〜5件のみを最終的なコンテキストとして[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)のプロンプトに渡します。
 
-この手法により、無関係なノイズ情報がLLMに渡るのを防ぎ、回答の精度（Precision）を大幅に高めることができます。
+この手法により、無関係なノイズ情報が[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)に渡るのを防ぎ、回答の精度（Precision）を大幅に高めることができます。
 
 ```mermaid
 graph LR
@@ -276,9 +276,9 @@ graph LR
 ローカル環境でRAGを構築・運用する際には、特有のハードルが存在します。
 
 - **VRAM（ビデオメモリ）の枯渇**:
-  ローカルLLMを実用的な速度（1秒間に数十トークン）で動かすには、GPUのVRAMにモデルを載せる必要があります。8Bクラスのモデルをfp16（16ビット浮動小数点）で動かすには約16GBのVRAMが必要ですが、 **量子化（Quantization）** 技術（GGUFやAWQ形式など、4bitや8bitに圧縮する技術）を使うことで、8GBのVRAM（一般的なゲーミングPC等）でも十分に高速動作させることが可能です。Llama.cppやOllamaは標準でこれらの量子化フォーマットに対応しています。
+  ローカル[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)を実用的な速度（1秒間に数十トークン）で動かすには、GPUのVRAMにモデルを載せる必要があります。8Bクラスのモデルをfp16（16ビット浮動小数点）で動かすには約16GBのVRAMが必要ですが、 **量子化（Quantization）** 技術（[GGUF](/p/llama-cpp-quantization-gguf/)やAWQ形式など、4bitや8bitに圧縮する技術）を使うことで、8GBのVRAM（一般的なゲーミングPC等）でも十分に高速動作させることが可能です。Llama.cppやOllamaは標準でこれらの量子化フォーマットに対応しています。
 - **コンテキストウィンドウの制限**:
-  検索して取得したコンテキストの量が多すぎると、LLMの入力上限（トークンリミット）を超えてしまったり、モデルが情報の中間部分を忘れてしまう（Lost in the middle現象）ことがあります。抽出するチャンク数の調整や、前述のリランキング技術による厳選が不可欠です。
+  検索して取得したコンテキストの量が多すぎると、[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)の入力上限（トークンリミット）を超えてしまったり、モデルが情報の中間部分を忘れてしまう（Lost in the middle現象）ことがあります。抽出するチャンク数の調整や、前述のリランキング技術による厳選が不可欠です。
 - **データの鮮度管理**:
   ソースドキュメントが更新された場合、ベクトルデータベース内の該当するドキュメントのベクトルも更新・削除（CRUD操作）する必要があります。ChromaDBではドキュメントIDベースでの更新をサポートしているため、ファイルのハッシュ値を管理し、差分だけを同期するバッチ処理を組むのが実践的です。
 

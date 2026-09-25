@@ -68,7 +68,7 @@ Im Jahr 2008 begann mit der Veröffentlichung eines Papiers durch eine Person, d
 Es ist „**Bitcoin**“.
 
 Bisherige P2P-Systeme wurden für das „Teilen von Dateien“ oder die „Verteilung von Rechenprozessen“ verwendet, aber Bitcoin nutzte das P2P-Netzwerk für die „**Verteilung von Vertrauen**“.
-Selbst ohne eine zentrale Bank oder einen Administrator überwachen unzählige Knoten, die am P2P-Netzwerk teilnehmen, gegenseitig ihre Transaktionsaufzeichnungen (Ledger). Durch die Kombination von Kryptographie (Hash-Funktionen und Public-Key-Verschlüsselung) und Konsensalgorithmen (Proof of Work) bauten sie ein „dezentrales System auf, bei dem die Manipulation von Daten praktisch unmöglich ist = **Blockchain**“.
+Selbst ohne eine zentrale Bank oder einen Administrator überwachen unzählige Knoten, die am P2P-Netzwerk teilnehmen, gegenseitig ihre Transaktionsaufzeichnungen (Ledger). Durch die Kombination von Kryptographie (Hash-Funktionen und Public-Key-Verschlüsselung) und Konsensalgorithmen (Proof of Work) bauten sie ein „dezentrales System auf, bei dem die Manipulation von Daten praktisch unmöglich ist = **[Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/)**“.
 
 Diese Idee eines „autonomen, dezentralen Netzwerks, das nicht von einem bestimmten Administrator abhängig ist“, führt direkt zur aktuellen „Web3 (dezentrales Web)“-Bewegung.
 
@@ -76,7 +76,7 @@ Diese Idee eines „autonomen, dezentralen Netzwerks, das nicht von einem bestim
 
 P2P ist eine großartige Technologie, aber es gibt auch Herausforderungen.
 
-Eine davon ist das „**Trittbrettfahrer (Free Rider)**“-Problem. Wenn es zu viele Benutzer gibt, die nur Daten empfangen, aber nicht selbst bereitstellen, wird das Netzwerk verfallen. Um dieses Problem zu lösen, wird an Mechanismen geforscht, die auf Grundlage der bereitgestellten Datenmenge vorrangige Download-Rechte gewähren, oder an Mechanismen, die finanzielle Anreize (Token) ähnlich der Blockchain bieten.
+Eine davon ist das „**Trittbrettfahrer (Free Rider)**“-Problem. Wenn es zu viele Benutzer gibt, die nur Daten empfangen, aber nicht selbst bereitstellen, wird das Netzwerk verfallen. Um dieses Problem zu lösen, wird an Mechanismen geforscht, die auf Grundlage der bereitgestellten Datenmenge vorrangige Download-Rechte gewähren, oder an Mechanismen, die finanzielle Anreize (Token) ähnlich der [Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/) bieten.
 
 Ein weiteres Problem ist „**Governance und Sicherheit**“. Da es keinen zentralen Administrator gibt, ist es schwierig, böswillige Knoten sofort zu blockieren, wenn sie gefälschte Daten oder Viren verbreiten.
 

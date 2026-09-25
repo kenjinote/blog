@@ -64,7 +64,7 @@ Mit mmap kann der Inhalt einer Datei direkt in den virtuellen Adressraum des Pro
 * **Zero-copy**: Die Daten werden von der Festplatte direkt in den Page-Cache des Kernels geladen, ohne dass eine zusätzliche Kopie in den Userspace erfolgt.
 * **On-Demand-Laden (Page Fault)**: In dem Moment, in dem die CPU tatsächlich auf diese Speicheradresse zugreift, tritt ein Page Fault (Seitenfehler) auf, und nur der benötigte Chunk (normalerweise 4 KB) wird in den physischen Speicher geladen.
 
-In Windows-Umgebungen werden anstelle des POSIX `mmap` die Win32-APIs `CreateFileMapping` und `MapViewOfFile` verwendet.
+In Windows-Umgebungen werden anstelle des POSIX `mmap` die [Win32](/de/p/modern-cpp-win32-api-safe-handling/)-APIs `CreateFileMapping` und `MapViewOfFile` verwendet.
 
 ```mermaid
 sequenceDiagram
@@ -81,9 +81,9 @@ sequenceDiagram
 
 ### 3.2 Binäre Struktur des GGUF-Formats
 
-Das aus Formaten wie `.safetensors` von Hugging Face konvertierte **GGUF (GPT-Generated Unified Format)** ist das ultimative Format für Inferenzen. Es verfügt über das folgende strikte binäre [Layout](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/).
+Das aus Formaten wie `.safetensors` von Hugging Face konvertierte **[GGUF](/de/p/llama-cpp-quantization-gguf/) (GPT-Generated Unified Format)** ist das ultimative Format für Inferenzen. Es verfügt über das folgende strikte binäre [Layout](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/).
 
-1. **Magic Bytes**: `0x46554747` (GGUF).
+1. **Magic Bytes**: `0x46554747` ([GGUF](/de/p/llama-cpp-quantization-gguf/)).
 2. **Version**: Die Versionsnummer des Formats.
 3. **Tensor Count & Metadata Count**: Anzahl der Tensoren und der Metadaten-Schlüssel-Wert-Paare.
 4. **Metadata ([Key-Value](https://kenji.blog/de/p/nosql-database-selection-kvs-document-graph-wide-column/) Pairs)**: Schlüssel mit Präfix für die Zeichenfolgenlänge und typisierte Werte.
@@ -140,7 +140,7 @@ ggml verfolgt einen „Define-and-Run“-Ansatz, bei dem ein statischer Berechnu
 ### 5.1 ggml_context und Arena-Allocator
 
 Die einzigartigste Eigenschaft von ggml ist die „Arena-Allokation“, bei der in der Inferenzschleife keinerlei dynamische Speicherzuweisungen (`malloc` oder `new`) stattfinden.
-Bei der Initialisierung wird ein riesiger zusammenhängender Speicherbereich (die Arena) reserviert, und bei jedem Aufruf von z. B. `ggml_new_tensor` wird der Zeiger dieses Bereichs inkrementiert. Sobald ein Inferenzschritt abgeschlossen ist, wird der Allokationszeiger einfach auf seine Ausgangsposition zurückgesetzt, wodurch die Speicherzuweisung für den nächsten Inferenzschritt sofort abgeschlossen ist.
+Bei der Initialisierung wird ein riesiger zusammenhängender Speicherbereich (die Arena) reserviert, und bei jedem Aufruf von z. B. `ggml_new_tensor` wird der [Zeiger](/de/p/c-language-pointers-memory-management-stack-heap/) dieses Bereichs inkrementiert. Sobald ein Inferenzschritt abgeschlossen ist, wird der Allokationszeiger einfach auf seine Ausgangsposition zurückgesetzt, wodurch die Speicherzuweisung für den nächsten Inferenzschritt sofort abgeschlossen ist.
 
 ### 5.2 Konkretes Beispiel für die Konstruktion eines Graphen
 

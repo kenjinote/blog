@@ -14,7 +14,7 @@ description: 'Se explican en detalle los fundamentos matemáticos de las pruebas
 
 En la sociedad digital actual, la privacidad de los datos y la escalabilidad se han convertido en dos de los problemas más importantes. Con el aumento del riesgo de fuga de información personal y uso no autorizado, existe una fuerte demanda de una tecnología que "demuestre que uno tiene cierta información sin revelar la información en sí a la otra parte". Esto se logra mediante la **Prueba de Conocimiento Cero (Zero-Knowledge Proof: ZKP)**.
 
-La prueba de conocimiento cero es un concepto de teoría criptográfica propuesto por primera vez en la década de 1980 por Shafi Goldwasser, Silvio Micali y Charles Rackoff, pero permaneció como un estudio teórico durante mucho tiempo. Sin embargo, con el surgimiento de la tecnología blockchain y Web3, la situación ha cambiado por completo. Como una "varita mágica" para resolver simultáneamente el problema de escalabilidad (límites de capacidad de procesamiento) y el problema de privacidad (todas las transacciones son públicas) que enfrentan las blockchains públicas como Ethereum, las ZKP de repente fueron el centro de atención.
+La prueba de conocimiento cero es un concepto de teoría criptográfica propuesto por primera vez en la década de 1980 por Shafi Goldwasser, Silvio Micali y Charles Rackoff, pero permaneció como un estudio teórico durante mucho tiempo. Sin embargo, con el surgimiento de la tecnología [blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/) y Web3, la situación ha cambiado por completo. Como una "varita mágica" para resolver simultáneamente el problema de escalabilidad (límites de capacidad de procesamiento) y el problema de privacidad (todas las transacciones son públicas) que enfrentan las blockchains públicas como Ethereum, las ZKP de repente fueron el centro de atención.
 
 En este artículo, profundizaremos técnica y detalladamente desde los conceptos básicos de las pruebas de conocimiento cero, hasta los profundos mecanismos matemáticos y criptográficos de **zk-SNARKs** y **zk-STARKs** (actualmente dominantes), y ejemplos recientes de aplicaciones en Web3 y seguridad, como ZK-Rollups y la identidad descentralizada (DID).
 
@@ -60,7 +60,7 @@ sequenceDiagram
     Note over Prover, Verifier: "※ Para aumentar la precisión, esto se repite decenas de veces"
 ```
 
-Este método es poderoso, pero el verificador debe estar en línea, lo cual es inconveniente para aplicar en sistemas descentralizados asincrónicos como blockchain. En blockchain, cualquiera debe poder verificar pruebas pasadas en cualquier momento.
+Este método es poderoso, pero el verificador debe estar en línea, lo cual es inconveniente para aplicar en sistemas descentralizados asincrónicos como [blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/). En [blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/), cualquiera debe poder verificar pruebas pasadas en cualquier momento.
 
 #### Transformación de Fiat-Shamir (Fiat-Shamir Heuristic) y no interactividad
 
@@ -203,7 +203,7 @@ Usando la tecnología ZKP (por ejemplo, redes especializadas en privacidad como 
 Si bien ZKP es, sin duda, una tecnología fundamental de próxima generación, todavía quedan algunos retos.
 
 1. **Costo computacional de la generación de pruebas y aceleración de hardware**
-   La generación de ZKP requiere un enorme volumen de cálculos de polinomios, FFT (Transformada Rápida de Fourier) y MSM (Multiplicación Multiescalar). Actualmente, el desarrollo de hardware especializado (FPGA y ASIC) para acelerar esta generación de pruebas, es decir, la investigación de la **minería ZKP** (Prover Network), avanza rápidamente.
+   La generación de ZKP requiere un enorme volumen de cálculos de polinomios, [FFT](/es/p/fast-fourier-transform-algorithm/) ([Transformada Rápida de Fourier](/es/p/fast-fourier-transform-algorithm/)) y MSM (Multiplicación Multiescalar). Actualmente, el desarrollo de hardware especializado (FPGA y ASIC) para acelerar esta generación de pruebas, es decir, la investigación de la **minería ZKP** (Prover Network), avanza rápidamente.
 2. **Estandarización y mejora de la experiencia del desarrollador (DX)**
    Existe una proliferación de lenguajes dedicados para describir circuitos ZKP, como Circom, Cairo, Noir, Leo, etc. La madurez de un estándar que unifique todo esto y la creación de compiladores que generen automáticamente circuitos ZKP a partir de lenguajes como [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) o C++ serán la clave para la adopción de ZKP por parte de los ingenieros de software en general.
 

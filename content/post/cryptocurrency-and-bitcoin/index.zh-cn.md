@@ -52,7 +52,7 @@ tags: ["比特币", "密码学", "区块链"]
 
 ## 3. 区块链的架构
 
-支撑比特币的核心技术是“区块链（[Blockchain](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)）”。区块链是分布式账本技术（[Distributed Ledger](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/) Technology: DLT）的一种形式，数据被打包成称为“区块”的单位，它们像链条一样在密码学上连接在一起。
+支撑比特币的核心技术是“[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)（[Blockchain](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)）”。[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)是分布式账本技术（[Distributed Ledger](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/) Technology: DLT）的一种形式，数据被打包成称为“区块”的单位，它们像链条一样在密码学上连接在一起。
 
 ```mermaid
 flowchart TD
@@ -76,7 +76,7 @@ flowchart TD
 
 ### 默克尔树（Merkle Trees）
 
-在区块链中，为了在控制区块大小的同时高效检测数据篡改，使用了 **默克尔树（Merkle [Tree](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）** 这种数据结构。默克尔树是一种二叉树，叶子节点包含每笔交易的哈希值，父节点则是通过连接子节点的哈希值并再次哈希而生成的。
+在[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)中，为了在控制区块大小的同时高效检测数据篡改，使用了 **默克尔树（Merkle [Tree](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）** 这种数据结构。默克尔树是一种二叉树，叶子节点包含每笔交易的哈希值，父节点则是通过连接子节点的哈希值并再次哈希而生成的。
 
 ```mermaid
 flowchart TD
@@ -92,7 +92,7 @@ flowchart TD
 
 ## 4. 数学与密码学基础
 
-比特币的坚固性由高级数学基础支撑。在这里，我们将深入探讨其核心：哈希函数、公钥密码学以及椭圆曲线密码学。
+比特币的坚固性由高级数学基础支撑。在这里，我们将深入探讨其核心：哈希函数、公钥密码学以及[椭圆曲线密码学](/zh-cn/p/elliptic-curve-cryptography-math-cpp/)。
 
 ### SHA-256（Secure Hash Algorithm 256-bit）
 
@@ -115,7 +115,7 @@ flowchart TD
 
 ### 椭圆曲线密码学（Elliptic Curve Cryptography: ECC）与 secp256k1
 
-比特币在公钥生成和数字签名中采用了 **椭圆曲线密码学（ECC）** ，而不是 [RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/) 密码。ECC 的优势在于它能以比 RSA 短得多的密钥长度提供同等水平的安全性。
+比特币在公钥生成和数字签名中采用了 **[椭圆曲线密码学](/zh-cn/p/elliptic-curve-cryptography-math-cpp/)（[ECC](/zh-cn/p/elliptic-curve-cryptography-math-cpp/)）** ，而不是 [RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/) 密码。[ECC](/zh-cn/p/elliptic-curve-cryptography-math-cpp/) 的优势在于它能以比 RSA 短得多的密钥长度提供同等水平的安全性。
 
 比特币中使用的特定椭圆曲线参数被称为 **secp256k1** 。这条曲线定义在有限域 $\mathbb{F}_p$ 上，由以下方程表示：
 
@@ -155,11 +155,11 @@ $$
 
 ## 5. 共识算法与工作量证明（[PoW](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)）
 
-在去中心化网络中，让所有人都对相同的账本状态达成一致的机制就是共识算法。
+在去中心化网络中，让所有人都对相同的账本状态达成一致的机制就是[共识算法](/zh-cn/p/byzantine-generals-problem-consensus/)。
 
 ### 拜占庭将军问题（[Byzantine Generals](https://kenji.blog/zh-cn/p/byzantine-generals-problem-consensus/) Problem）
 
-分布式计算中的一个经典问题是“拜占庭将军问题”。多位将军包围了一座敌方城市，他们必须在进攻或撤退上达成一致意见，但将军中可能有叛徒发送虚假信息。在这个问题中，我们要探讨在这样的情况下，忠诚的将军们如何达成正确的共识。
+分布式计算中的一个经典问题是“[拜占庭将军问题](/zh-cn/p/byzantine-generals-problem/)”。多位将军包围了一座敌方城市，他们必须在进攻或撤退上达成一致意见，但将军中可能有叛徒发送虚假信息。在这个问题中，我们要探讨在这样的情况下，忠诚的将军们如何达成正确的共识。
 
 比特币通过将 **工作量证明（[PoW](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)）** 与 **最长链规则（Longest Chain Rule）** 相结合，实质上解决了这个问题。
 
@@ -173,7 +173,7 @@ $$
 
 因为哈希函数的输出看起来完全是随机的，所以不存在高效的算法来寻找满足条件的随机数。唯一的方法就是进行暴力破解攻击（Brute-force），即不断改变随机数的值并重复进行哈希计算。
 
-目标值越小，找到满足条件的哈希值的概率就越低。如果目标值要求开头有 $k$ 个零，那么找到那个区块所需的平均计算次数为 $2^k$ 次。正是这种巨大的计算能量投入，使得篡改区块链历史记录成为不可能。
+目标值越小，找到满足条件的哈希值的概率就越低。如果目标值要求开头有 $k$ 个零，那么找到那个区块所需的平均计算次数为 $2^k$ 次。正是这种巨大的计算能量投入，使得篡改[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)历史记录成为不可能。
 
 ### 难度调整（Difficulty Adjustment）
 
@@ -216,7 +216,7 @@ $$
 
 ### 分叉（Forks）：软分叉与硬分叉
 
-当升级区块链协议时，有时会发生被称为“分叉（Fork）”的事件。
+当升级[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)协议时，有时会发生被称为“分叉（Fork）”的事件。
 - **软分叉（Soft Fork）** ：向后兼容的升级。即使是运行旧规则的节点也会认为新规则的区块是有效的（例如：SegWit 的引入）。
 - **硬分叉（Hard Fork）** ：不向后兼容的升级。由于新规则的区块会被旧节点拒绝，网络有完全分裂成两部分的可能（例如：Bitcoin Cash 的诞生）。
 
@@ -224,37 +224,37 @@ $$
 
 解决可扩展性问题的一个有力的方案是 **第二层（Layer 2）** 解决方案——闪电网络。
 
-在闪电网络中，参与者之间在区块链之外（链下）建立“支付通道（Payment Channel）”。在通道内，只要双方同意，就可以瞬间且几乎免费地进行无数次资金转移，而无需将交易记录在区块链上。只有在最终结算余额时，才会将交易记录到区块链（第一层）上。
+在闪电网络中，参与者之间在[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)之外（链下）建立“支付通道（Payment Channel）”。在通道内，只要双方同意，就可以瞬间且几乎免费地进行无数次资金转移，而无需将交易记录在[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)上。只有在最终结算余额时，才会将交易记录到[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)（第一层）上。
 
 ### 与权益证明（[PoS](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)）的比较
 
-[PoW](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/) 的另一个巨大挑战是挖矿带来的庞大电力消耗。为了应对这一环境问题，以太坊等项目已经转向了名为 **权益证明（Proof of Stake: PoS）** 的另一种共识算法。
+[PoW](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/) 的另一个巨大挑战是挖矿带来的庞大电力消耗。为了应对这一环境问题，以太坊等项目已经转向了名为 **权益证明（Proof of Stake: PoS）** 的另一种[共识算法](/zh-cn/p/byzantine-generals-problem-consensus/)。
 
 在 PoS 中，决定下一个区块生成权利（验证者）的并非计算能力（哈希率），而是根据所持有的加密资产数量（权益）及其持有时长来概率性地分配。虽然这使电力消耗减少了 99% 以上，但也有批评认为它是一个“富人愈富的系统”，或者“可能会损害完全的去中心化”。无论受到怎样的批评，比特币始终坚持 PoW 的哲学，即“通过消耗能源来提供物理安全性”。
 
 ## 8. 密码理论的深渊：数学证明与协议的坚固性
 
-在前面章节中解释的 SHA-256 和椭圆曲线密码学（ECC）背后，存在着信息论安全性与计算复杂度安全性这两种范式。包括比特币在内的现代加密资产，主要依赖于计算复杂度安全性（Computational Security）。
+在前面章节中解释的 SHA-256 和[椭圆曲线密码学](/zh-cn/p/elliptic-curve-cryptography-math-cpp/)（[ECC](/zh-cn/p/elliptic-curve-cryptography-math-cpp/)）背后，存在着信息论安全性与计算[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)安全性这两种范式。包括比特币在内的现代加密资产，主要依赖于计算[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)安全性（Computational Security）。
 
 ### 计算复杂度安全性与离散对数问题
 
-计算复杂度安全性是基于这样一个前提的安全性：“为了破解某种密码，需要比宇宙寿命更长的时间和天文数字般的计算资源，因此它在现实中是无法破解的。”
+计算[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)安全性是基于这样一个前提的安全性：“为了破解某种密码，需要比宇宙寿命更长的时间和天文数字般的计算资源，因此它在现实中是无法破解的。”
 
 让我们用数学公式重温一下确保比特币公钥密码学安全性的椭圆曲线离散对数问题（ECDLP）。
 已知点 $P$ 和 $Q$ 在椭圆曲线 $E(\mathbb{F}_p)$ 上，且满足 $Q = kP$，问题是求未知的整数 $k$。
-如果使用经典计算机，解决这个问题的最佳算法（如 Pollard 的 $\rho$ 算法）的时间复杂度为 $\mathcal{O}(\sqrt{p})$。
+如果使用经典计算机，解决这个问题的最佳算法（如 Pollard 的 $\rho$ 算法）的时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)为 $\mathcal{O}(\sqrt{p})$。
 在比特币的 secp256k1 中，由于 $p \approx 2^{256}$，破解大约需要进行 $2^{128}$ 次运算。即使动员目前地球上的所有计算机，所需的计算时间也将是宇宙寿命（约 138 亿年）的数万亿倍。
 
 ### 量子计算机的威胁与抗量子密码学
 
-然而，计算复杂度安全性有一个重大隐患，那就是 **量子计算机（Quantum Computer）** 的崛起。
-1994 年，彼得·秀尔（Peter Shor）发表了“秀尔算法（[Shor's Algorithm](https://kenji.blog/zh-cn/p/quantum-computing-shors-algorithm/)）”，在数学上证明了如果使用量子计算机，可以在多项式时间 $\mathcal{O}(n^3)$ 内解决质因数分解问题（[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/) 密码的基础）和离散对数问题（ECC 的基础）。
+然而，计算[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)安全性有一个重大隐患，那就是 **量子计算机（Quantum Computer）** 的崛起。
+1994 年，彼得·秀尔（Peter Shor）发表了“秀尔算法（[Shor's Algorithm](https://kenji.blog/zh-cn/p/quantum-computing-shors-algorithm/)）”，在数学上证明了如果使用量子计算机，可以在多项式时间 $\mathcal{O}(n^3)$ 内解决质因数分解问题（[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/) 密码的基础）和离散对数问题（[ECC](/zh-cn/p/elliptic-curve-cryptography-math-cpp/) 的基础）。
 
 如果研制出具有足够量子比特（Qubits）和低错误率的实用大规模量子计算机，比特币的私钥就有从公钥被逆向推导出的风险。
 针对此，比特币网络的防御策略如下：
 
-1. **哈希函数的保护** ：比特币地址并非公钥本身，而是对公钥应用了 SHA-256 和 RIPEMD-160 哈希函数后生成的值。即使使用量子计算机，逆向推导哈希函数（即使使用格罗弗算法，计算复杂度也是 $\mathcal{O}(\sqrt{N})$）仍然很困难。因此，在进行交易并向网络暴露公钥之前，地址的内容对抗量子计算机可以说是安全的。
-2. **向抗量子密码学（Post-Quantum [Cryptography](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/): PQC）过渡** ：目前正在讨论，在量子计算机投入实用之前，通过硬分叉比特币协议，将其过渡到即使是量子计算机也难以破解的新签名算法，例如 NIST（美国国家标准与技术研究院）正在评选的基于格的密码学（Lattice-based cryptography）或多变量多项式密码学（Multivariate polynomial cryptography）。
+1. **哈希函数的保护** ：比特币地址并非公钥本身，而是对公钥应用了 SHA-256 和 RIPEMD-160 哈希函数后生成的值。即使使用量子计算机，逆向推导哈希函数（即使使用格罗弗算法，计算[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)也是 $\mathcal{O}(\sqrt{N})$）仍然很困难。因此，在进行交易并向网络暴露公钥之前，地址的内容对抗量子计算机可以说是安全的。
+2. **向抗量子密码学（Post-Quantum [Cryptography](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/): PQC）过渡** ：目前正在讨论，在量子计算机投入实用之前，通过硬分叉比特币协议，将其过渡到即使是量子计算机也难以破解的新签名算法，例如 NIST（美国国家标准与技术研究院）正在评选的基于格的密码学（[Lattice-based cryptography](/zh-cn/p/lattice-based-cryptography-math-intuition/)）或多变量多项式密码学（Multivariate polynomial cryptography）。
 
 ## 9. 网络拓扑与 [P2P](https://kenji.blog/zh-cn/p/webrtc-realtime-communication-p2p/) 协议详解
 
@@ -264,8 +264,8 @@ $$
 
 参与网络的计算机被称为“节点（Node）”。节点分为几种类型，各自的作用不同。
 
-- **全节点（Full Node）** ：从创世区块到最新区块，下载并验证所有区块链数据（数百 GB 以上）的节点。因为它们独立检查交易的有效性和是否存在双重支付，全节点承担着网络安全的基础。
-- **SPV 节点（Simplified Payment Verification Node）** ：不下载整个区块链，而只下载区块头的轻量级节点。主要用于智能手机上的钱包等。虽然它可以确认自己的交易是否包含在区块中（验证默克尔路径），但没有全节点那样的验证能力。
+- **全节点（Full Node）** ：从创世区块到最新区块，下载并验证所有[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)数据（数百 GB 以上）的节点。因为它们独立检查交易的有效性和是否存在双重支付，全节点承担着网络安全的基础。
+- **SPV 节点（Simplified Payment Verification Node）** ：不下载整个[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)，而只下载区块头的轻量级节点。主要用于智能手机上的钱包等。虽然它可以确认自己的交易是否包含在区块中（验证默克尔路径），但没有全节点那样的验证能力。
 - **挖矿节点（Mining Node）** ：进行 [PoW](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/) 计算并生成新区块的节点。目前，将被称为 ASIC（专用集成电路）的挖矿专用硬件组合起来的巨大“矿池”承担着这一角色。
 
 ### 交易传播过程（Gossip Protocol）
@@ -299,7 +299,7 @@ $$
 
 ### 51% 攻击（51% Attack）的博弈论分析
 
-区块链的最大威胁是 **51% 攻击** 。如果某个恶意的单一实体控制了整个网络超过半数（51% 以上）的计算能力（哈希率），那么它将能够做到以下几点：
+[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)的最大威胁是 **51% 攻击** 。如果某个恶意的单一实体控制了整个网络超过半数（51% 以上）的计算能力（哈希率），那么它将能够做到以下几点：
 
 1. 撤销自己过去的交易（双重支付）
 2. 拒绝批准特定交易（审查）
@@ -311,7 +311,7 @@ $$
 
 在本文中，我们彻底剖析了比特币和加密资产背后的数学、技术和经济学机制。
 
-乍看之下，区块链技术似乎是复杂数学和代码的集合体，但其本质不过是 **“一种不依赖权威，以数学和物理法则为信任基础的人类新共识系统”** 。
+乍看之下，[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)技术似乎是复杂数学和代码的集合体，但其本质不过是 **“一种不依赖权威，以数学和物理法则为信任基础的人类新共识系统”** 。
 
 我们每天理所当然地使用的金融系统，在漫长的历史中曾多次崩溃，每次崩溃都伴随着修修补补的修复。中本聪提出的解决方案绝不是完美的。可扩展性问题、环境问题、国家监管与立法等，仍有无数的障碍需要跨越。
 
@@ -319,7 +319,7 @@ $$
 
 ## 附录：进一步学习的资源与参考文献
 
-对于那些在阅读本文后希望进一步深入学习区块链技术和密码学理论的人，我们推荐以下资源。
+对于那些在阅读本文后希望进一步深入学习[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)技术和密码学理论的人，我们推荐以下资源。
 
 ### 必读的原始论文（Whitepapers）
 - **Bitcoin: A Peer-to-Peer Electronic Cash System** (Satoshi Nakamoto, 2008)
@@ -336,4 +336,4 @@ $$
 > **Warning: 投资免责声明**
 > 本文的目的是为了讲解加密资产的底层技术及其历史和数学结构，不构成任何对加密资产的投资建议或招揽。加密资产的价格波动极大，投资存在包括损失本金在内的重大风险。
 
-探索区块链技术是一次跨越计算机科学、经济学和社会学边界的知识探险。通过阅读代码、自己建立节点、或者在测试网上进行交易，你将能切身感受到这项技术的真正潜力和局限性。
+探索[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)技术是一次跨越计算机科学、经济学和社会学边界的知识探险。通过阅读代码、自己建立节点、或者在测试网上进行交易，你将能切身感受到这项技术的真正潜力和局限性。

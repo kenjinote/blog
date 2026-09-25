@@ -17,7 +17,7 @@ tags:
 
 ## 1. Der stille Held der mobilen Revolution
 
-In den 1990er Jahren erlebten Mobiltelefone eine dramatische Entwicklung von riesigen und schweren „Schultertelefonen“ hin zu Geräten im Taschenformat. Die Technologie, die diese „mobile Revolution“ im Wesentlichen unterstützte, war die „**Lithium-Ionen-Batterie**“, die 1991 von Sony als Weltneuheit kommerzialisiert wurde.
+In den 1990er Jahren erlebten Mobiltelefone eine dramatische Entwicklung von riesigen und schweren „Schultertelefonen“ hin zu Geräten im Taschenformat. Die Technologie, die diese „[mobile Revolution](/de/p/history-of-iphone/)“ im Wesentlichen unterstützte, war die „**Lithium-Ionen-Batterie**“, die 1991 von Sony als Weltneuheit kommerzialisiert wurde.
 
 Im Vergleich zu den damals vorherrschenden Nickel-Cadmium- und Blei-Säure-Batterien hatten Lithium-Ionen-Batterien eine traumhafte Leistung: Sie waren „überwältigend leicht, klein und hatten eine hohe Spannung“. Heute sind sie nicht nur auf Smartphones und Laptops beschränkt, sondern haben sich als Herzstück von Elektrofahrzeugen (EVs) wie denen von Tesla zu einer Schlüsseltechnologie für eine dekarbonisierte Gesellschaft entwickelt. Im Jahr 2019 erhielten Akira Yoshino und andere Forscher, die zu ihrer Entwicklung beigetragen haben, den Nobelpreis für Chemie.
 

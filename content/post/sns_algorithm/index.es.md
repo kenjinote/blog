@@ -50,7 +50,7 @@ Este algoritmo acerca en el espacio latente a la "Persona A, interesada en [Rust
 
 ### 2.2 Modelos de recomendación usando Aprendizaje Profundo (DLRM)
 
-En los últimos años, arquitecturas basadas en aprendizaje profundo, representadas por el Deep Learning Recommendation Model (DLRM), se han popularizado, impulsadas principalmente por empresas como Meta (anteriormente Facebook). El DLRM recibe una amplia variedad de características (Features) como entrada, tales como el historial de comportamiento del usuario y los metadatos del artículo, para predecir la tasa de clics (CTR: Click-Through Rate) y similares.
+En los últimos años, arquitecturas basadas en aprendizaje profundo, representadas por el Deep Learning Recommendation Model (DLRM), se han popularizado, impulsadas principalmente por empresas como Meta ([anteriormente Facebook](/es/p/history-of-meta-facebook/)). El DLRM recibe una amplia variedad de características (Features) como entrada, tales como el historial de comportamiento del usuario y los metadatos del artículo, para predecir la tasa de clics (CTR: Click-Through Rate) y similares.
 
 La característica del DLRM radica en convertir características categóricas dispersas (ej.: ID de usuario, hashtags seguidos) en vectores densos (Dense Vector) a través de "tablas de incrustación (Embedding Table)", y combinarlas con características densas de valores continuos (ej.: días desde la apertura de la cuenta, tiempo de permanencia promedio pasado).
 
@@ -68,7 +68,7 @@ $$
 $$
 
 **Impacto en la selección tecnológica:**
-Estos enormes modelos como DLRM capturan incluso las señales más mínimas (por ejemplo, un ligero aumento en el tiempo de permanencia en "publicaciones con videos" o "publicaciones que contienen una palabra de moda específica") y las reflejan en la puntuación de predicción. Como resultado, la información tecnológica que incluye "títulos provocativos (ej.: 'React es obsoleto', 'El fin de los microservicios')" o "demostraciones visualmente llamativas" tiende a ser favorecida algorítmicamente.
+Estos enormes modelos como DLRM capturan incluso las señales más mínimas (por ejemplo, un ligero aumento en el tiempo de permanencia en "publicaciones con videos" o "publicaciones que contienen una palabra de moda específica") y las reflejan en la puntuación de predicción. Como resultado, la información tecnológica que incluye "títulos provocativos (ej.: 'React es obsoleto', 'El fin de los [microservicios](/es/p/microservices-architecture-bff-api-gateway/)')" o "demostraciones visualmente llamativas" tiende a ser favorecida algorítmicamente.
 
 ### 2.3 Aprendizaje por Refuerzo y el Problema del Tragamonedas de Múltiples Brazos (Multi-Armed Bandits)
 
@@ -146,7 +146,7 @@ La defensa más segura es cambiar nuestras fuentes de información, pasando de l
 
 ### 5.2 Lectura cuidadosa de artículos académicos (Academic Papers) y Whitepapers
 
-Para selecciones tecnológicas fundamentales como sistemas distribuidos, bases de datos o la arquitectura de modelos de aprendizaje automático, no se deben leer resúmenes de unas pocas líneas en redes sociales, sino los artículos publicados en ACM, IEEE o arXiv, o los informes detallados (Whitepapers) publicados por empresas (ej.: el artículo de Spanner de Google, el artículo de Dynamo de Amazon).
+Para selecciones tecnológicas fundamentales como [sistemas distribuidos](/es/p/cap-theorem-distributed-systems-tradeoff/), bases de datos o la arquitectura de modelos de aprendizaje automático, no se deben leer resúmenes de unas pocas líneas en redes sociales, sino los artículos publicados en ACM, IEEE o arXiv, o los informes detallados (Whitepapers) publicados por empresas (ej.: el artículo de Spanner de Google, el artículo de Dynamo de Amazon).
 
 Las publicaciones en redes sociales están optimizadas para "captar la atención del lector", mientras que los artículos académicos revisados por pares están optimizados para "la precisión y reproducibilidad de los hechos". Sus funciones de evaluación son completamente diferentes.
 

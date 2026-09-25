@@ -28,7 +28,7 @@ mais cela n'a pas encore été prouvé.
 
 ## Conjecture de Goldbach
 
-La conjecture de Goldbach affirme que tout nombre pair strictement supérieur à 2 peut s'écrire comme la somme de deux nombres premiers.
+[La conjecture de Goldbach](/fr/p/goldbachs-conjecture/) affirme que tout nombre pair strictement supérieur à 2 peut s'écrire comme la somme de deux nombres premiers.
 (Un nombre premier est un entier naturel qui n'a d'autres diviseurs que 1 et lui-même.)
 
 Par exemple,

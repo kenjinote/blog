@@ -28,7 +28,7 @@ tags:
 
 ## 3. 歴史的偉業：[モーデル](https://kenji.blog/p/mordell/)予想の解決
 
-[ファルティングス](https://kenji.blog/p/faltings/)の名前を数学の歴史に永遠に刻み込むことになったのは、なんといっても **モーデル予想** の解決です。ルイス・モーデル (Louis Mordell) によって1922年に提唱されたこの予想は、[ディオファントス](https://kenji.blog/p/diophantus/)方程式の有理数解の数に関する非常に深遠な問題でした。
+[ファルティングス](https://kenji.blog/p/faltings/)の名前を数学の歴史に永遠に刻み込むことになったのは、なんといっても **モーデル予想** の解決です。[ルイス・モーデル](/p/mordell/) (Louis Mordell) によって1922年に提唱されたこの予想は、[ディオファントス](https://kenji.blog/p/diophantus/)方程式の有理数解の数に関する非常に深遠な問題でした。
 
 予想の内容は以下の通りです：
 
@@ -36,7 +36,7 @@ tags:
 
 この予想は、[ピタゴラス](https://kenji.blog/p/pythagoras/)の定理や[フェルマーの最終定理](https://kenji.blog/p/fermats-last-theorem/)などとも深く関連しており、長年にわたって多くの天才数学者たちが挑んでは敗れ去ってきた難問でした。
 
-[ファルティングス](https://kenji.blog/p/faltings/)は、アレクサンドル・グロタンディーク ([Alexander Grothendieck](https://kenji.blog/p/grothendieck/)) が築き上げたスキーム理論やエタール・コホモロジーといった巨大な代数幾何学の機械を巧みに操り、さらにアラケロフ幾何学 (Arakelov geometry) と呼ばれる新たな枠組みを導入することで、この問題にアタックしました。
+[ファルティングス](https://kenji.blog/p/faltings/)は、[アレクサンドル・グロタンディーク](/p/grothendieck/) ([Alexander Grothendieck](https://kenji.blog/p/grothendieck/)) が築き上げたスキーム理論やエタール・コホモロジーといった巨大な代数幾何学の機械を巧みに操り、さらにアラケロフ幾何学 (Arakelov geometry) と呼ばれる新たな枠組みを導入することで、この問題にアタックしました。
 
 彼の証明の論理構造は非常に複雑ですが、核となるアイデアは以下の3つの段階（予想の証明）に分けられます。
 

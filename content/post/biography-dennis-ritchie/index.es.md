@@ -9,7 +9,7 @@ slug: "biography-dennis-ritchie"
 description: "Dennis MacAlistair Ritchie (9 de septiembre de 1941 - 12 de octubre de 2011) fue una de las figuras más importantes e influyentes de la informática moderna."
 ---
 
-Dennis MacAlistair Ritchie (9 de septiembre de 1941 - 12 de octubre de 2011) fue una de las figuras más importantes e influyentes de la informática moderna. Aunque rara vez recibió los llamativos reflectores de Steve Jobs o Bill Gates, el legado que dejó es la base de toda la tecnología que utilizamos hoy en día. El "lenguaje C" y el sistema operativo "UNIX", en cuyo desarrollo estuvo profundamente involucrado, laten en cada rincón de nuestra sociedad digital moderna, desde servidores de Internet hasta teléfonos inteligentes, supercomputadoras e incluso electrodomésticos.
+Dennis MacAlistair Ritchie (9 de septiembre de 1941 - 12 de octubre de 2011) fue una de las figuras más importantes e influyentes de la informática moderna. Aunque rara vez recibió los llamativos reflectores de [Steve Jobs](/es/p/biography-steve-jobs/) o Bill Gates, el legado que dejó es la base de toda la tecnología que utilizamos hoy en día. El "lenguaje C" y el sistema operativo "UNIX", en cuyo desarrollo estuvo profundamente involucrado, laten en cada rincón de nuestra sociedad digital moderna, desde servidores de Internet hasta teléfonos inteligentes, supercomputadoras e incluso electrodomésticos.
 
 ## Primeros Años y sus Días en Bell Labs
 
@@ -25,7 +25,7 @@ Habiendo perdido su excelente entorno de desarrollo, los dos buscaban un sistema
 
 Inicialmente, UNIX estaba escrito en lenguaje ensamblador, por lo que dependía completamente de una arquitectura de hardware específica. Para resolver esto y permitir que el sistema fuera portado a otras computadoras, Ritchie mejoró el "lenguaje B" desarrollado por Thompson y creó el "lenguaje C" en 1972.
 
-La mayor revolución del lenguaje C fue que combinaba en perfecto equilibrio la capacidad de realizar operaciones de memoria de bajo nivel en el hardware (como punteros) con las características de los lenguajes de alto nivel (como la programación estructurada), que eran lógicamente fáciles de leer y escribir para los humanos.
+La mayor revolución del lenguaje C fue que combinaba en perfecto equilibrio la capacidad de realizar operaciones de memoria de bajo nivel en el hardware (como [punteros](/es/p/c-language-pointers-memory-management-stack-heap/)) con las características de los lenguajes de alto nivel (como la programación estructurada), que eran lógicamente fáciles de leer y escribir para los humanos.
 
 En 1973, Ritchie y Thompson reescribieron completamente la parte central (el kernel) de UNIX en este lenguaje C. Mediante un enfoque que era inusual para la época (escribir el sistema operativo en un lenguaje de alto nivel en lugar de un lenguaje ensamblador dependiente del hardware), UNIX experimentó una evolución dramática hacia un sistema altamente portátil que podía adaptarse a cualquier hardware.
 
@@ -33,7 +33,7 @@ En 1973, Ritchie y Thompson reescribieron completamente la parte central (el ker
 
 En el corazón de la filosofía de diseño de Dennis Ritchie siempre estuvieron la "simplicidad" (Simplicity) y la "elegancia" (Elegance). El lenguaje C fue diseñado no para tener funciones masivas en el lenguaje en sí, sino para proporcionar las funciones simples y mínimas necesarias, dejando el resto a discreción del programador. Como se dice a menudo, "C asume que el programador sabe exactamente lo que está haciendo"; era una herramienta afilada y altamente flexible para los profesionales.
 
-Esta filosofía suya también está profundamente grabada en la filosofía de diseño de UNIX, la llamada "filosofía UNIX". Los principios como "Haz que cada programa haga una cosa bien" y "Conecta los programas mediante tuberías (pipes) usando flujos de texto como una interfaz universal" fueron el pináculo de la modularidad y la cooperación: resolver problemas complejos combinando herramientas simples e independientes en lugar de construir enormes sistemas complejos.
+Esta filosofía suya también está profundamente grabada en la filosofía de diseño de UNIX, la llamada "[filosofía UNIX](/es/p/philosophy-unix-modular-design/)". Los principios como "Haz que cada programa haga una cosa bien" y "Conecta los programas mediante tuberías (pipes) usando flujos de texto como una interfaz universal" fueron el pináculo de la modularidad y la cooperación: resolver problemas complejos combinando herramientas simples e independientes en lugar de construir enormes sistemas complejos.
 
 ## Influencia en las Generaciones Futuras y el Legado del Gigante Silencioso
 
@@ -43,9 +43,9 @@ Los lenguajes de programación derivados o fuertemente influenciados por C, como
 
 Debido a sus enormes contribuciones, recibió numerosos y máximos honores, como el Premio Turing en 1983 junto con Ken Thompson, a menudo considerado el Premio Nobel de la computación, y la Medalla Nacional de Tecnología otorgada por el presidente Clinton en 1999. Sin embargo, él mismo fue muy modesto, no le gustaba imponerse en público y siguió siendo un ingeniero con espíritu de hacker durante toda su vida.
 
-El 12 de octubre de 2011, solo una semana después de la muerte de Steve Jobs, Dennis Ritchie falleció pacíficamente en su casa de Nueva Jersey. Mientras que la muerte de Jobs fue reportada masivamente en todo el mundo y llevó a muchas personas a derramar lágrimas, la muerte de Ritchie no recibió mucha atención en la sociedad en general. Sin embargo, dentro de la comunidad mundial de TI, fue recibida en silencio y con una gratitud y tristeza inconmensurablemente profundas.
+El 12 de octubre de 2011, solo una semana después de la muerte de [Steve Jobs](/es/p/biography-steve-jobs/), Dennis Ritchie falleció pacíficamente en su casa de Nueva Jersey. Mientras que la muerte de Jobs fue reportada masivamente en todo el mundo y llevó a muchas personas a derramar lágrimas, la muerte de Ritchie no recibió mucha atención en la sociedad en general. Sin embargo, dentro de la comunidad mundial de TI, fue recibida en silencio y con una gratitud y tristeza inconmensurablemente profundas.
 
-"Steve Jobs nos dio una hermosa ventana (productos), pero Dennis Ritchie hizo los cimientos y las herramientas para construir esa casa".
+"[Steve Jobs](/es/p/biography-steve-jobs/) nos dio una hermosa ventana (productos), pero Dennis Ritchie hizo los cimientos y las herramientas para construir esa casa".
 
 Estas palabras ilustran la magnitud de su contribución real a la sociedad moderna. El mundo digital moderno está construido sobre los cimientos sólidos y elegantes que él estableció. La obra silenciosa y monumental de Dennis Ritchie nunca se desvanecerá, sino que vivirá para siempre como la base de la computación.
 

@@ -249,7 +249,7 @@ contract SecureBank {
 
 ### 5.2 Autres Vulnérabilités
 
-- **Dépassement / Sous-dépassement (Overflow / Underflow)** : Avant Solidity 0.8.0, il y avait une vulnérabilité où les valeurs s'enroulaient (wrap around) si un calcul dépassait la valeur maximale ou minimale d'un entier. Actuellement, cela est protégé au niveau du compilateur, ce qui entraîne une erreur de panique (panic error).
+- **[Dépassement](/fr/p/hegel%E3%81%AEdialectique/) / Sous-[dépassement](/fr/p/hegel%E3%81%AEdialectique/) (Overflow / Underflow)** : Avant Solidity 0.8.0, il y avait une vulnérabilité où les valeurs s'enroulaient (wrap around) si un calcul dépassait la valeur maximale ou minimale d'un entier. Actuellement, cela est protégé au niveau du compilateur, ce qui entraîne une erreur de panique (panic error).
 - **Front-running** : Les transactions sur la blockchain sont temporairement conservées dans un pool d'attente public (Mempool). L'attaquant surveille le Mempool, fixe des frais de gaz plus élevés que la transaction cible pour que sa transaction soit traitée en premier, et s'empare des profits (comme dans une attaque sandwich).
 
 ## 6. Conclusion

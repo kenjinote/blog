@@ -26,7 +26,7 @@ tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]
 
 ### 2.2 二元搜尋樹（BST）的極限
 
-在記憶體上的搜尋中， **二元搜尋樹** （[Binary Search](https://kenji.blog/zh-tw/p/search-algorithms-linear-binary-hash-table-principles/) Tree: BST）或 **紅黑樹** （Red-Black Tree）等平衡二元搜尋樹，能夠以 $ O(\log N) $ 的時間複雜度進行高速搜尋。然而，如果將其直接應用於磁碟上的資料庫，將會發生嚴重的問題。
+在記憶體上的搜尋中， **二元搜尋樹** （[Binary Search](https://kenji.blog/zh-tw/p/search-algorithms-linear-binary-hash-table-principles/) Tree: BST）或 **紅黑樹** （Red-Black Tree）等平衡二元搜尋樹，能夠以 $ O(\log N) $ 的時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)進行高速搜尋。然而，如果將其直接應用於磁碟上的資料庫，將會發生嚴重的問題。
 
 二元樹的每個節點最多有 2 個子節點。當元素數量 $ N $ 增加時，樹的高度 $ h $ 會與 $ \log_2 N $ 成正比而變深。例如當 $ N = 1,000,000 $ 時，樹的高度大約是 20。如果假設每個節點都被配置在不同的磁碟頁面上，最壞的情況下將會發生 20 次的隨機磁碟 I/O。這對資料庫來說是致命的延遲。
 
@@ -86,7 +86,7 @@ $$
 
 由於排除了從內部節點指向實際資料的指標，1 個內部節點（頁面）中可以塞入更多的鍵值。這使得分支數（Fan-out）進一步增加，樹的高度 $ h $ 被壓得更低，進而減少了磁碟 I/O 次數。
 
-此外，在 SQL 中頻繁使用的範圍搜尋（如 `WHERE id BETWEEN 10 AND 100` ）中，B-[Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 需要多次遍歷樹狀結構，但如果是 **B+Tree** ，只要找到一次起始點的葉節點後，只需順著葉節點的連結，就能連續讀出資料。
+此外，在 SQL 中頻繁使用的範圍搜尋（如 `WHERE id BETWEEN 10 AND 100` ）中，B-[Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 需要多次遍歷[樹狀結構](/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)，但如果是 **B+Tree** ，只要找到一次起始點的葉節點後，只需順著葉節點的連結，就能連續讀出資料。
 
 ```mermaid
 graph TD
@@ -215,7 +215,7 @@ else:
 
 ## 6. 總結與發展
 
-**B-Tree** 與 **B+Tree** 可以說是為了將基於磁碟系統中的 I/O 成本降至最低而設計的傑作資料結構。透過高分支數帶來的淺層樹狀結構、循序存取的最佳化等，實體裝置的特性與數學演算法完美地結合在一起。
+**B-Tree** 與 **B+Tree** 可以說是為了將基於磁碟系統中的 I/O 成本降至最低而設計的傑作資料結構。透過高分支數帶來的淺層[樹狀結構](/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)、循序存取的最佳化等，實體裝置的特性與數學演算法完美地結合在一起。
 
 近年來，隨著 SSD 的普及，為了抑制寫入放大（Write Amplification），也出現了如 **LSM-Tree** （Log-Structured Merge-Tree）等新資料結構。然而，在讀取效能與範圍搜尋的平衡，以及交易處理的穩定性上， **B+Tree** 依然穩坐關聯式資料庫中絕對王者的寶座。
 

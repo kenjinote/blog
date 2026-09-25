@@ -47,7 +47,7 @@ Ele não tinha o conceito de "fracasso". Quando um experimento não ia bem, rela
 
 ## A Guerra das Correntes e o Impacto na Posteridade
 
-Atrás de seu sucesso espetacular, Edison também enfrentou grandes contratempos. Esta foi a "Guerra das Correntes" travada contra Nikola Tesla e George Westinghouse. Edison promoveu o sistema de "corrente contínua" (CC), argumentando por sua segurança, mas finalmente sofreu uma derrota para o sistema de "corrente alternada" (CA), que era superior para transmissão de energia a longa distância.
+Atrás de seu sucesso espetacular, Edison também enfrentou grandes contratempos. Esta foi a "Guerra das Correntes" travada contra [Nikola Tesla](/pt/p/biography-nikola-tesla/) e George Westinghouse. Edison promoveu o sistema de "corrente contínua" (CC), argumentando por sua segurança, mas finalmente sofreu uma derrota para o sistema de "corrente alternada" (CA), que era superior para transmissão de energia a longa distância.
 
 No entanto, esta derrota não diminuiu sua reputação. As empresas que ele fundou se fundiram para se tornar a atual General Electric (GE), crescendo para se tornar um dos maiores conglomerados do mundo. Além disso, uma única invenção sua deu origem a indústrias massivas inteiras, como a criação da indústria da música pelo fonógrafo e o alvorecer da indústria cinematográfica pela câmera de cinema (Cinetoscópio).
 

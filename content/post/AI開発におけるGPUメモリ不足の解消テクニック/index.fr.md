@@ -12,7 +12,7 @@ description: 'Le manque de VRAM (mémoire GPU) est le plus grand obstacle à l''
 
 # Introduction : Le développement de l'IA et le "Mur de la VRAM"
 
-Ces dernières années, les technologies d'IA générative telles que les grands modèles de langage ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)) et les modèles de diffusion (Diffusion Models) ont connu un développement rapide. Cependant, lors de l'apprentissage (fine-tuning) ou de l'exécution de l'inférence (Inference) de ces modèles d'IA de pointe dans un environnement local, de nombreux développeurs et chercheurs sont confrontés à un obstacle extrêmement physique : **le "manque de mémoire GPU (VRAM)"**.
+Ces dernières années, les technologies d'IA générative telles que les [grands modèles de langage](/fr/p/large-language-models-llm-transformer-prompt-engineering/) ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)) et les modèles de diffusion (Diffusion Models) ont connu un développement rapide. Cependant, lors de l'apprentissage (fine-tuning) ou de l'exécution de l'inférence (Inference) de ces modèles d'IA de pointe dans un environnement local, de nombreux développeurs et chercheurs sont confrontés à un obstacle extrêmement physique : **le "manque de mémoire GPU (VRAM)"**.
 
 Même avec un GPU haut de gamme grand public comme le NVIDIA GeForce RTX 4090, la VRAM maximale est de 24 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/), ce qui rend impossible le chargement d'un modèle gigantesque comme Llama 3 70B tel quel. Les GPU destinés aux centres de données tels que le H100 (80 Go) ou le B200 (192 Go) sont très coûteux et ne sont pas facilement accessibles aux individus ou aux petites équipes. Si l'on ne parvient pas à franchir ce "Mur de la VRAM (The Wall of VRAM)", il est même impossible de toucher aux modèles de pointe.
 
@@ -32,7 +32,7 @@ Les types de données couramment utilisés en Deep Learning et le nombre d'octet
 - **FP32 (Nombre à virgule flottante simple précision) :** 4 octets (précision standard lors de l'apprentissage)
 - **FP16 / BF16 (Nombre à virgule flottante demi-précision) :** 2 octets (inférence générale et apprentissage en précision mixte)
 - **INT8 (Entier 8 bits) :** 1 octet (modèles quantifiés)
-- **INT4 (Quantification entière 4 bits) :** 0,5 octet (quantification extrême comme GPTQ, AWQ, GGUF)
+- **INT4 (Quantification entière 4 bits) :** 0,5 octet (quantification extrême comme GPTQ, AWQ, [GGUF](/fr/p/llama-cpp-quantization-gguf/))
 
 Si le nombre total de paramètres du modèle est $P$, la quantité de mémoire de base occupée par les poids eux-mêmes $M_{weights}$ est exprimée par la formule suivante :
 

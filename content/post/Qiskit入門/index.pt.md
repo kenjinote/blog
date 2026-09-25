@@ -293,7 +293,7 @@ Em um computador clássico, no pior dos casos, seriam necessárias $2^{n-1} + 1$
 
 ### 6.2 Algoritmo de Grover (Grover's Algorithm)
 
-Em um problema de busca onde procuramos por dados específicos em um banco de dados não ordenado de $N$ itens, um algoritmo clássico requer em média $N/2$ cálculos, enquanto o algoritmo de Grover pode encontrar os dados desejados em cerca de $\sqrt{N}$ vezes.
+Em um problema de busca onde procuramos por dados específicos em um banco de dados não ordenado de $N$ itens, um algoritmo clássico requer em média $N/2$ cálculos, enquanto o [algoritmo de Grover](/pt/p/grovers-algorithm-quantum-search/) pode encontrar os dados desejados em cerca de $\sqrt{N}$ vezes.
 Este algoritmo usa uma caixa preta chamada "Oráculo (Oracle)" para inverter a fase da solução desejada e, em seguida, realiza uma "Amplificação de Amplitude (Amplitude Amplification)", o que aumenta drasticamente a probabilidade de a solução desejada ser observada.
 
 ```mermaid

@@ -75,7 +75,7 @@ OAuth 2.0 中，根据客户端的特性定义了多种“授权类型（获取�
 
 ### 2.4 深入探讨: 授权码流程 ＋ PKCE (Proof Key for Code Exchange)
 
-在SPA和移动应用中，无法安全地隐藏客户端密钥。因此，为了防止授权码拦截攻击 (Authorization Code Interception Attack)，引入了 **PKCE** (RFC 7636)。
+在[SPA](/zh-cn/p/micro-frontends-architecture-spa-division/)和移动应用中，无法安全地隐藏客户端密钥。因此，为了防止授权码拦截攻击 (Authorization Code Interception Attack)，引入了 **PKCE** (RFC 7636)。
 
 PKCE的机制如下。
 客户端在发起授权请求之前，生成一个随机字符串 `code_verifier`，并对其进行哈希处理以创建 `code_challenge`。

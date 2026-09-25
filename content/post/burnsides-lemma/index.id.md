@@ -256,6 +256,6 @@ Bagaimana? Dalam artikel ini, dengan menggunakan jumlah desain kalung sebagai co
 *   Dengan menggunakan **[Lema Burnside](https://kenji.blog/id/p/burnsides-lemma/)**, jumlah pola yang secara substansial berbeda dapat dihitung dengan prosedur mekanis "merata-ratakan jumlah titik tetap di setiap operasi".
 *   Teorema ini didasarkan pada properti mendalam dari teori grup yang disebut Teorema Orbit-Penstabil.
 
-[Lema Burnside](https://kenji.blog/id/p/burnsides-lemma/) adalah teorema yang sangat praktis yang diterapkan dalam berbagai bidang, seperti menghitung isomer molekuler dalam bidang kimia, menentukan isomorfisme grafis dalam teori graf, dan bahkan mekanika statistik dalam ilmu fisika.
+[Lema Burnside](https://kenji.blog/id/p/burnsides-lemma/) adalah teorema yang sangat praktis yang diterapkan dalam berbagai bidang, seperti menghitung isomer molekuler dalam bidang kimia, menentukan isomorfisme grafis dalam [teori graf](/id/p/graph-theory-dijkstra-a-star/), dan bahkan mekanika statistik dalam ilmu fisika.
 
 Melalui dasar-dasar yang diperkenalkan kali ini, kami harap Anda dapat melihat sekilas bagaimana bidang matematika yang disebut "Teori Grup", yang cenderung terlihat abstrak, dapat memecahkan masalah dunia nyata yang nyata dengan cemerlang.

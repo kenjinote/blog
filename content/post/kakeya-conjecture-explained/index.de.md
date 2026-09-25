@@ -14,7 +14,7 @@ tags:
 image: eyecatch.jpg
 ---
 
-In der Welt der Mathematik gibt es Themen, die mit einem intuitiv sehr leicht verständlichen Problem beginnen, deren Lösungen und daraus abgeleitete Probleme jedoch zu den tiefgründigsten Bereichen der modernen Mathematik führen. "Fermats letzter Satz" und die "Poincaré-Vermutung" sind typische Beispiele dafür, aber auch die **"Kakeya-Vermutung"**, die an der Schnittstelle von Geometrie und Analysis liegt, ist ein solches faszinierendes Thema.
+In der Welt der Mathematik gibt es Themen, die mit einem intuitiv sehr leicht verständlichen Problem beginnen, deren Lösungen und daraus abgeleitete Probleme jedoch zu den tiefgründigsten Bereichen der modernen Mathematik führen. "[Fermats letzter Satz](/de/p/fermats-last-theorem/)" und die "Poincaré-Vermutung" sind typische Beispiele dafür, aber auch die **"Kakeya-Vermutung"**, die an der Schnittstelle von Geometrie und Analysis liegt, ist ein solches faszinierendes Thema.
 
 In diesem Artikel werden wir das Gesamtbild der Kakeya-Vermutung tiefgehend erläutern – angefangen mit dem "Kakeya-Nadelproblem", das 1917 von dem japanischen Mathematiker Soichi Kakeya aufgeworfen wurde, über die erstaunliche Entdeckung des russischen Mathematikers Abram Besicovitch, bis hin zur Forschung des modernen genialen Mathematikers Terence Tao und anderen.
 

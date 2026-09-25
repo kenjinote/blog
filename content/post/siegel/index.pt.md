@@ -40,7 +40,7 @@ No entanto, com o início da década de 1930, os nazistas (Partido Nacional-Soci
 
 À medida que o ambiente de pesquisa e a vida na Alemanha sob o regime nazista se deterioravam drasticamente, e com sua própria segurança pessoal em risco, Siegel finalmente tomou a decisão de deixar sua terra natal. Em 1940, pouco depois do início da Segunda Guerra Mundial, ele conseguiu escapar para os Estados Unidos através de uma rota perigosa pela Dinamarca e Noruega.
 
-Nos Estados Unidos, foi recebido no Instituto de Estudos Avançados (IAS) em Princeton, Nova Jersey. Naquela época, o IAS havia se tornado um santuário para as maiores mentes que fugiam da guerra na Europa, e Siegel desfrutou de uma vida de pesquisa gratificante ao lado de figuras como Albert Einstein, John von Neumann e Hermann Weyl. Durante seus anos na América, a pesquisa de Siegel estendeu-se além da teoria dos números; ele produziu sucessivamente resultados extremamente importantes nos campos da mecânica celeste e teoria das funções analíticas.
+Nos Estados Unidos, foi recebido no Instituto de Estudos Avançados (IAS) em Princeton, Nova Jersey. Naquela época, o IAS havia se tornado um santuário para as maiores mentes que fugiam da guerra na Europa, e Siegel desfrutou de uma vida de pesquisa gratificante ao lado de figuras como Albert Einstein, [John von Neumann](/pt/p/von-neumann/) e Hermann Weyl. Durante seus anos na América, a pesquisa de Siegel estendeu-se além da teoria dos números; ele produziu sucessivamente resultados extremamente importantes nos campos da mecânica celeste e teoria das funções analíticas.
 
 ### 2.4 Retorno a Göttingen e Últimos Anos
 
@@ -68,7 +68,7 @@ Este resultado foi inovador em relação à finitude das soluções das equaçõ
 
 ### 3.2 Zero de Siegel
 
-Na teoria analítica dos números, a distribuição dos zeros da função $L$ de Dirichlet $L(s, \chi)$ é de extrema importância para as extensões naturais do teorema dos números primos e do teorema sobre progressões aritméticas. De acordo com a Hipótese Generalizada de [Riemann](https://kenji.blog/pt/p/riemann/) (GRH), todos os zeros na faixa crítica com uma parte real entre $0$ e $1$ devem situar-se na reta onde a parte real é $1/2$.
+Na teoria analítica dos números, a distribuição dos zeros da função $L$ de Dirichlet $L(s, \chi)$ é de extrema importância para as extensões naturais do [teorema dos números primos](/pt/p/prime-number-theorem/) e do teorema sobre progressões aritméticas. De acordo com a Hipótese Generalizada de [Riemann](https://kenji.blog/pt/p/riemann/) (GRH), todos os zeros na faixa crítica com uma parte real entre $0$ e $1$ devem situar-se na reta onde a parte real é $1/2$.
 
 No entanto, para um caráter real (de um corpo quadrático real) $\chi$, a matemática atual não excluiu a possibilidade de existir um zero real com uma parte real muito próxima a $1$. Tal hipotético zero de contraexemplo é chamado de **zero de Siegel** (Siegel zero) ou zero excepcional.
 

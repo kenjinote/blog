@@ -13,7 +13,7 @@ description: "« Œil pour œil, et le monde finira aveugle. »"
 
 « Œil pour œil, et le monde finira aveugle. »
 
-Mohandas Karamchand Gandhi (communément appelé Mahatma Gandhi), qui a laissé ces mots, est l'un des dirigeants les plus influents du XXe siècle. Sa philosophie de la « désobéissance civile non violente (Satyagraha) » a non seulement conduit l'Inde à l'indépendance vis-à-vis de la domination coloniale britannique, mais a également profondément influencé les mouvements pour les droits civiques et de libération dans le monde entier, notamment ceux de Martin Luther King Jr. et de Nelson Mandela. Cet article se penche sur sa vie et sa philosophie, explorant comment il en est venu à être appelé la « Grande Âme (Mahatma) ».
+Mohandas Karamchand Gandhi (communément appelé Mahatma Gandhi), qui a laissé ces mots, est l'un des dirigeants les plus influents du XXe siècle. Sa philosophie de la « désobéissance civile non violente (Satyagraha) » a non seulement conduit l'Inde à l'indépendance vis-à-vis de la domination coloniale britannique, mais a également profondément influencé les mouvements pour les droits civiques et de libération dans le monde entier, notamment ceux de [Martin Luther King Jr.](/fr/p/biography-martin-luther-king-jr/) et de [Nelson Mandela](/fr/p/biography-nelson-mandela/). Cet article se penche sur sa vie et sa philosophie, explorant comment il en est venu à être appelé la « Grande Âme (Mahatma) ».
 
 ## Études à Londres et éveil en Afrique du Sud
 
@@ -45,7 +45,7 @@ Pourtant, le 30 janvier 1948, à peine six mois après l'indépendance, Gandhi e
 
 La vie de Gandhi a prouvé que la « force d'esprit » d'un seul être humain peut faire bouger un empire gigantesque. Sa philosophie de la « désobéissance civile non violente » a transcendé les frontières et les époques pour se transmettre aux générations futures.
 
-Martin Luther King Jr., qui a dirigé le mouvement américain pour les droits civiques, a déclaré : « Le Christ a fourni l'esprit et la motivation, tandis que Gandhi a fourni la méthode », et a lancé un mouvement visant à abolir la discrimination raciale par la non-violence. En outre, de nombreux dirigeants pacifistes, tels que Nelson Mandela, qui a lutté contre la politique d'apartheid de l'Afrique du Sud, et le 14e Dalaï Lama du Tibet, ont été profondément influencés par la philosophie de Gandhi.
+[Martin Luther King Jr.](/fr/p/biography-martin-luther-king-jr/), qui a dirigé le mouvement américain pour les droits civiques, a déclaré : « Le Christ a fourni l'esprit et la motivation, tandis que Gandhi a fourni la méthode », et a lancé un mouvement visant à abolir la discrimination raciale par la non-violence. En outre, de nombreux dirigeants pacifistes, tels que [Nelson Mandela](/fr/p/biography-nelson-mandela/), qui a lutté contre la politique d'apartheid de l'Afrique du Sud, et le 14e Dalaï Lama du Tibet, ont été profondément influencés par la philosophie de Gandhi.
 
 Même dans la société moderne, face aux nombreux défis auxquels nous sommes confrontés, tels que les conflits, les divisions et les problèmes environnementaux, l'enseignement de Gandhi, « Soyez le changement que vous voulez voir dans le monde », continue de résonner sans perdre de sa pertinence.
 

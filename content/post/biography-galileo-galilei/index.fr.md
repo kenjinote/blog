@@ -50,7 +50,7 @@ De plus, il est important de noter qu'il a mis en pratique la "méthode scientif
 
 ## Son immense influence sur les générations futures et sa signification aujourd'hui
 
-L'horizon ouvert par Galilée a eu un impact décisif sur les générations futures. Les lois du mouvement qu'il a présentées (notamment la loi de la chute des corps et le concept d'inertie) ont été intégrées par Isaac Newton et ont abouti au grand système de la mécanique classique. Lorsque Newton a dit : "Si j'ai vu plus loin, c'est en me tenant sur les épaules de géants", il ne fait aucun doute que l'un de ces géants était Galilée.
+L'horizon ouvert par Galilée a eu un impact décisif sur les générations futures. Les lois du mouvement qu'il a présentées (notamment la loi de la chute des corps et le concept d'inertie) ont été intégrées par [Isaac Newton](/fr/p/newton/) et ont abouti au grand système de la mécanique classique. Lorsque Newton a dit : "Si j'ai vu plus loin, c'est en me tenant sur les épaules de géants", il ne fait aucun doute que l'un de ces géants était Galilée.
 
 Par ailleurs, la tragédie de l'oppression par l'Inquisition continue de fournir d'importantes leçons historiques pour réfléchir aux relations entre science et religion, ou entre vérité et pouvoir. En 1992, le pape Jean-Paul II a officiellement reconnu les erreurs de l'Église dans le procès de Galilée et l'a réhabilité. Après plus de 350 ans, ce fut le moment où la vérité a triomphé du pouvoir.
 

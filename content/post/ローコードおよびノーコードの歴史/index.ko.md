@@ -90,8 +90,8 @@ description: '1980년대부터 현재에 이르기까지 로우코드·노코드
 * **Power Platform (Microsoft)**
   'Power Apps', 'Power [Automate](https://kenji.blog/ko/p/automata-formal-language-theory/)' 등을 포함한 통합형 업무 앱 개발 및 자동화 플랫폼. 기업의 업무 프로세스를 드래그 앤 드롭으로 시각적으로 구축할 수 있습니다.
 
-* **Salesforce Lightning Platform**
-  CRM인 Salesforce에서 제공하는 앱 개발 기반. GUI로 업무 앱을 제작할 수 있으며, 다른 Salesforce 서비스와의 통합도 용이합니다.
+* **[Salesforce](/ko/p/salesforce%E3%81%AEsoql%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%A6%E6%97%A5%E5%88%A5%E3%81%AE%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%90%E6%95%B0%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/) Lightning Platform**
+  CRM인 [Salesforce](/ko/p/salesforce%E3%81%AEsoql%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%A6%E6%97%A5%E5%88%A5%E3%81%AE%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%90%E6%95%B0%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/)에서 제공하는 앱 개발 기반. GUI로 업무 앱을 제작할 수 있으며, 다른 [Salesforce](/ko/p/salesforce%E3%81%AEsoql%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%A6%E6%97%A5%E5%88%A5%E3%81%AE%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%90%E6%95%B0%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/) 서비스와의 통합도 용이합니다.
 
 * **Zapier / IFTTT**
   여러 클라우드 서비스 간의 연동을 코딩 없이 구축할 수 있는 자동화 도구. 예를 들어 "Google 설문지에 입력되면 Slack으로 알림"과 같은 워크플로우를 쉽게 구현할 수 있습니다.

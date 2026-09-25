@@ -50,7 +50,7 @@ Esse algoritmo aproxima o "Usuário A, interessado em [Rust](https://kenji.blog/
 
 ### 2.2 Modelos de recomendação baseados em Deep Learning (DLRM)
 
-Nos últimos anos, a arquitetura baseada em aprendizado profundo, representada pelo Deep Learning Recommendation Model (DLRM), tem se popularizado, liderada principalmente pela Meta (antigo Facebook). O DLRM recebe uma ampla variedade de características (Features) como entrada, como o histórico de comportamento do usuário e os metadados dos itens, e prevê a taxa de cliques (CTR: Click-Through Rate) e afins.
+Nos últimos anos, a arquitetura baseada em aprendizado profundo, representada pelo Deep Learning Recommendation Model (DLRM), tem se popularizado, liderada principalmente pela Meta ([antigo Facebook](/pt/p/history-of-meta-facebook/)). O DLRM recebe uma ampla variedade de características (Features) como entrada, como o histórico de comportamento do usuário e os metadados dos itens, e prevê a taxa de cliques (CTR: Click-Through Rate) e afins.
 
 A característica do DLRM é que ele converte características categóricas esparsas (ex: ID do usuário, hashtags seguidas) em vetores densos (Dense Vectors) através de "Tabelas de Incorporação (Embedding Tables)" e os combina com características densas de valores contínuos (ex: dias desde a abertura da conta, tempo médio de permanência passado).
 
@@ -115,7 +115,7 @@ graph TD
     F --> A
 ```
 
-O que é assustador neste ciclo é que a **"Ilusão de Frequência (Fenômeno Baader-Meinhof)"** é induzida intencionalmente pelo algoritmo. Uma vez que você vê o nome de uma nova biblioteca de gerenciamento de estado, o algoritmo o percebe como um sinal e, a partir do dia seguinte, preenche seu feed com tópicos sobre essa biblioteca. O cérebro humano interpreta isso equivocadamente como um "grande sucesso mundial".
+O que é assustador neste ciclo é que a **"Ilusão de Frequência (Fenômeno Baader-Meinhof)"** é induzida intencionalmente pelo algoritmo. Uma vez que você vê o nome de uma nova biblioteca de [gerenciamento de estado](/pt/p/state-management-history-redux-context-recoil-zustand/), o algoritmo o percebe como um sinal e, a partir do dia seguinte, preenche seu feed com tópicos sobre essa biblioteca. O cérebro humano interpreta isso equivocadamente como um "grande sucesso mundial".
 
 O gráfico a seguir ilustra a diferença nos ciclos de vida de tecnologias excessivamente badaladas (hype) nas redes sociais em comparação com tecnologias mais modestas, monótonas, mas robustas (Boring Technology).
 
@@ -146,7 +146,7 @@ A defesa mais segura é mudar suas fontes de informação das agregações de re
 
 ### 5.2 Leitura atenta de Artigos Acadêmicos (Academic Papers) e White Papers
 
-Para seleções tecnológicas fundamentais, como sistemas distribuídos, bancos de dados e arquiteturas de modelos de aprendizado de máquina, você não deve ler resumos de poucas linhas em redes sociais, mas sim os artigos acadêmicos publicados na ACM, IEEE ou arXiv, bem como os detalhados *white papers* publicados por empresas (por exemplo, o artigo do Google Spanner, o artigo do Amazon Dynamo).
+Para seleções tecnológicas fundamentais, como [sistemas distribuídos](/pt/p/cap-theorem-distributed-systems-tradeoff/), bancos de dados e arquiteturas de modelos de aprendizado de máquina, você não deve ler resumos de poucas linhas em redes sociais, mas sim os artigos acadêmicos publicados na ACM, IEEE ou arXiv, bem como os detalhados *white papers* publicados por empresas (por exemplo, o artigo do Google Spanner, o artigo do Amazon Dynamo).
 
 As postagens em redes sociais são otimizadas para "capturar a atenção dos leitores", enquanto os artigos revisados por pares são otimizadas para "precisão dos fatos e reprodutibilidade". As funções de avaliação são completamente diferentes.
 

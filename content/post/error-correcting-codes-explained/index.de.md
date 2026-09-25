@@ -10,7 +10,7 @@ image: eyecatch.jpg
 
 # Was sind Fehlerkorrekturcodes?
 
-In der digitalen Gesellschaft sind Daten ständig der Bedrohung durch Rauschen ausgesetzt. Kratzer auf CDs, Daten von Raumsonden aus dem Weltraum oder die QR-Codes, die wir täglich scannen. Dass diese Daten nicht durch kleine Verluste oder Rauschen völlig zerstört werden, liegt an einem mächtigen mathematischen Mechanismus namens "Fehlerkorrekturcodes" (Error-Correcting Codes, ECC).
+In der digitalen Gesellschaft sind Daten ständig der Bedrohung durch Rauschen ausgesetzt. Kratzer auf CDs, Daten von Raumsonden aus dem Weltraum oder die QR-Codes, die wir täglich scannen. Dass diese Daten nicht durch kleine Verluste oder Rauschen völlig zerstört werden, liegt an einem mächtigen mathematischen Mechanismus namens "Fehlerkorrekturcodes" (Error-Correcting Codes, [ECC](/de/p/elliptic-curve-cryptography-math-cpp/)).
 
 Dieser Artikel erklärt im Detail, wie dies funktioniert, beginnend mit den Konzepten von Claude Shannon, dem Vater der Informationstheorie, über die Grundlagen der Paritätsprüfung und die Matrixdarstellung von Hamming-Codes bis hin zu Reed-Solomon-Codes, die Galoiskörper nutzen.
 

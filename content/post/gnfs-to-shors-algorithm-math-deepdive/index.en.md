@@ -13,7 +13,7 @@ description: 'The prime factorization problem that underpins the security of RSA
 
 Information security in the modern internet society is protected by public-key cryptography, such as [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography. The basis for the security of RSA relies on the fact that **"the prime factorization of huge composite numbers is computationally extremely difficult."**
 
-In this article, we will unravel the mathematical mechanism of the **"General Number Field Sieve"** (GNFS), which is the most powerful prime factorization algorithm for classical computers. We will also dive deeply into why it is completely defeated by **"[Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/),"** discovered by Peter Shor, exploring this paradigm shift thoroughly with mathematical formulas and conceptual diagrams.
+In this article, we will unravel the mathematical mechanism of the **"[General Number Field Sieve](/en/p/beyond-gnfs-integer-factorization-algorithms/)"** (GNFS), which is the most powerful prime factorization algorithm for classical computers. We will also dive deeply into why it is completely defeated by **"[Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/),"** discovered by Peter Shor, exploring this paradigm shift thoroughly with mathematical formulas and conceptual diagrams.
 
 ---
 

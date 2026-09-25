@@ -10,7 +10,7 @@ image: eyecatch.jpg
 
 # Qu'est-ce qu'un code correcteur d'erreurs ?
 
-Dans la société numérique, les données sont constamment menacées par le bruit. Les rayures sur un CD, les données d'une sonde spatiale transmises depuis l'espace, ou les codes QR que nous scannons au quotidien. Si ces données ne sont pas complètement détruites par quelques pertes ou bruits, c'est grâce à l'existence d'un puissant mécanisme mathématique appelé « codes correcteurs d'erreurs » (Error-Correcting Codes, ECC).
+Dans la société numérique, les données sont constamment menacées par le bruit. Les rayures sur un CD, les données d'une sonde spatiale transmises depuis l'espace, ou les codes QR que nous scannons au quotidien. Si ces données ne sont pas complètement détruites par quelques pertes ou bruits, c'est grâce à l'existence d'un puissant mécanisme mathématique appelé « codes correcteurs d'erreurs » (Error-Correcting Codes, [ECC](/fr/p/elliptic-curve-cryptography-math-cpp/)).
 
 Cet article dévoile en détail leur fonctionnement, en commençant par les concepts proposés par Claude Shannon, le père de la théorie de l'information, en passant par les bases du contrôle de parité, la représentation matricielle des codes de Hamming, jusqu'aux codes de Reed-Solomon utilisant les corps de Galois.
 

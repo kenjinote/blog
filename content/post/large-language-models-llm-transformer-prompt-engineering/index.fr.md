@@ -10,7 +10,7 @@ tags: ["ai", "llm", "transformer", "prompt-engineering"]
 
 # 1. Introduction : La nouvelle ère inaugurée par les Grands Modèles de Langage (LLM)
 
-Au début des années 2020, le domaine de l'intelligence artificielle (IA) a connu une évolution dramatique sans précédent. Au cœur de cette évolution se trouvent les **Grands Modèles de Langage** (Large Language Models, ci-après **LLM**). Des systèmes tels que ChatGPT d'OpenAI, Gemini de Google, ou Claude d'Anthropic, qui ont le potentiel de transformer fondamentalement nos vies et notre travail, font leur apparition les uns après les autres.
+Au début des années 2020, le domaine de l'intelligence artificielle (IA) a connu une évolution dramatique sans précédent. Au cœur de cette évolution se trouvent les **Grands Modèles de Langage** (Large Language Models, ci-après **LLM**). Des systèmes tels que ChatGPT d'OpenAI, [Gemini](/fr/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEsolution/) de Google, ou Claude d'Anthropic, qui ont le potentiel de transformer fondamentalement nos vies et notre travail, font leur apparition les uns après les autres.
 
 Dans cet article, nous plongerons dans les mécanismes mathématiques et l'architecture du modèle **Transformer**, qui est à la base de la façon dont les LLM comprennent et génèrent le langage naturel. De plus, nous expliquerons en profondeur, avec près de 20 000 caractères et des exemples de code concrets, les techniques avancées d' **ingénierie de prompt** (Prompt Engineering) pour maximiser les performances de ces modèles, ainsi que la manière d'appliquer les LLM au développement de logiciels et à la programmation.
 

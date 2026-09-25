@@ -24,7 +24,7 @@ Namun ini **benar-benar 50% atau lebih.**
 
 ## Mengapa hal seperti itu bisa terjadi?
 
-Fenomena ini disebut "paradoks ulang tahun".
+Fenomena ini disebut "[paradoks ulang tahun](/id/p/birthday-paradox/)".
 Namanya memang "paradoks", tetapi ada alasan matematis yang masuk akal.
 
 Jika jumlah orang adalah "n", maka **probabilitas tidak ada orang yang ulang tahunnya sama** dapat dihitung dengan rumus berikut:
@@ -54,7 +54,7 @@ Sepertinya ini juga sangat berlaku di kelas sekolah atau rapat di tempat kerja.
 
 ## Kesimpulan: Perbedaan antara intuisi dan matematika itu menarik
 
-"Paradoks ulang tahun" adalah contoh menarik di mana intuisi kita berbeda dengan probabilitas matematika yang sebenarnya.
+"[Paradoks ulang tahun](/id/p/birthday-paradox/)" adalah contoh menarik di mana intuisi kita berbeda dengan probabilitas matematika yang sebenarnya.
 Jika Anda mengetahui hal-hal seperti ini, Anda mungkin bisa memeriahkan obrolan ringan atau kuis!
 
 ---

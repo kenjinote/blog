@@ -26,7 +26,7 @@ Lo que ha sustentado la industria de TI japonesa durante muchos años fue el mod
 
 Sin embargo, a partir de 2026, este modelo ha llegado a su límite. Debido a que la esencia de la DX (Transformación Digital) pasó de "mera informatización" a "transformación del modelo de negocio", el desarrollo en cascada (waterfall), con su baja agilidad, ya no puede seguir el ritmo de los cambios del mercado.
 
-Los procesos de desarrollo modernos parten de la premisa de ser **nativos de la nube** y **basados en IA**. La contenerización ([Docker](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)/Kubernetes), la arquitectura de microservicios y la automatización de los procesos de [CI/CD](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/) ya no son "tecnologías especiales", sino "infraestructura estándar".
+Los procesos de desarrollo modernos parten de la premisa de ser **nativos de la nube** y **basados en IA**. La contenerización ([Docker](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)/Kubernetes), la arquitectura de [microservicios](/es/p/microservices-architecture-bff-api-gateway/) y la automatización de los procesos de [CI/CD](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/) ya no son "tecnologías especiales", sino "infraestructura estándar".
 
 ```mermaid
 graph TD
@@ -144,7 +144,7 @@ El concepto de "MLOps" para continuar operando IA generativa y modelos de aprend
 
 ## 5. Estrategia de supervivencia para ingenieros: Para sobrevivir más allá de 2026
 
-Bajo estas circunstancias, ¿cómo deberíamos los ingenieros construir nuestras carreras? Especialmente para ingenieros con poca experiencia, la situación puede parecer desesperada. Sin embargo, dependiendo de la estrategia, hay amplias posibilidades de encontrar un camino.
+Bajo estas circunstancias, ¿cómo deberíamos los ingenieros construir nuestras carreras? Especialmente [para ingenieros](/es/p/prompt-engineering-for-engineers/) con poca experiencia, la situación puede parecer desesperada. Sin embargo, dependiendo de la estrategia, hay amplias posibilidades de encontrar un camino.
 
 ### Estrategia 1: Apuntar a ser un "Orquestador de IA"
 En lugar de convertirse en un experto en un solo lenguaje o framework, refine su capacidad como "orquestador" que combina múltiples herramientas y agentes de IA para construir un sistema completo. Es necesario reducir el tiempo de escritura de código manual, ensamblar componentes escritos por IA y tener una "perspectiva de nivel superior" para supervisar la arquitectura general.

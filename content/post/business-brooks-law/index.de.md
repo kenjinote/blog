@@ -69,7 +69,7 @@ Brooks verwendet in seinem Buch die berühmte Metapher: **"Selbst wenn neun Frau
 - **Vollständig teilbare Aufgaben:** Unkraut jäten auf einem Feld oder einfache Dateneingabe. Verdoppelt man die Anzahl der Personen, halbiert sich die Zeit.
 - **Unteilbare Aufgaben:** Grundlegendes Software-Design, komplexe Fehlerbehebung, Algorithmenentwicklung usw. Das Verständnis des Kontextes und des Gesamtbildes ist erforderlich. Wenn man versucht, solche Aufgaben gewaltsam auf mehrere Personen aufzuteilen, führt dies bei der Integration zu Fehlern oder Inkonsistenzen.
 
-Viele Phasen in der Softwareentwicklung sind voneinander abhängig. Es gibt serielle Abhängigkeiten (Kritischer Pfad), wie z.B., dass Modul B nicht getestet werden kann, bevor Modul A abgeschlossen ist. Auch wenn man hier eine große Anzahl von Personen einsetzt, erhöht sich nur die Wartezeit, ohne dass der Fortschritt beschleunigt wird.
+Viele Phasen in der Softwareentwicklung sind voneinander abhängig. Es gibt serielle Abhängigkeiten (Kritischer [Pfad](/de/p/windows-%E3%81%A7pfad%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9Fausf%C3%BChrbare-datei%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/)), wie z.B., dass Modul B nicht getestet werden kann, bevor Modul A abgeschlossen ist. Auch wenn man hier eine große Anzahl von Personen einsetzt, erhöht sich nur die Wartezeit, ohne dass der Fortschritt beschleunigt wird.
 
 ---
 
@@ -105,7 +105,7 @@ Die eiserne Regel lautet, nicht "Personen hinzuzufügen", sondern "die Zeit zu v
 
 Die von Amazon-Gründer Jeff Bezos vorgeschlagene "Zwei-Pizzen-Regel" (Two-Pizza Team) ist eine der perfekten Antworten auf Brooks' Gesetz. Die Regel besagt: "Die Größe eines Teams sollte auf die Anzahl an Personen begrenzt sein, die sich zwei Pizzen teilen können (etwa 6 bis 8 Personen)."
 
-Indem man Teams klein hält, verhindert man die Explosion der Kommunikationswege. Beim Aufbau großer Systeme bildet man nicht ein einziges riesiges Team, sondern teilt das System lose gekoppelt auf, z.B. mit einer Microservices-Architektur, und weist jede Komponente einem unabhängigen kleinen Team zu.
+Indem man Teams klein hält, verhindert man die Explosion der Kommunikationswege. Beim Aufbau großer Systeme bildet man nicht ein einziges riesiges Team, sondern teilt das System lose gekoppelt auf, z.B. mit einer [Microservices-Architektur](/de/p/microservices-architecture-bff-api-gateway/), und weist jede Komponente einem unabhängigen kleinen Team zu.
 
 ```mermaid
 graph LR

@@ -23,7 +23,7 @@ Um `micro.exe` über die Eingabeaufforderung verwenden zu können, müssen Sie d
 2. Klicken Sie in den `Systemeigenschaften` auf `Erweiterte Systemeinstellungen`.
 3. Klicken Sie auf `Umgebungsvariablen`.
 4. Wählen Sie `Path` unter `Systemvariablen` aus und klicken Sie auf `Bearbeiten`.
-5. Klicken Sie auf `Neu` und fügen Sie den Pfad zum Ordner hinzu, der `micro.exe` enthält.
+5. Klicken Sie auf `Neu` und fügen Sie den [Pfad](/de/p/windows-%E3%81%A7pfad%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9Fausf%C3%BChrbare-datei%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/) zum Ordner hinzu, der `micro.exe` enthält.
 6. Klicken Sie auf `OK`, um alle Dialogfelder zu schließen.
 7. Starten Sie die Eingabeaufforderung neu und geben Sie `nano` ein, um zu überprüfen, ob es ausgeführt werden kann.
 

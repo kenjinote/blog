@@ -69,7 +69,7 @@ gehört, nennt man eine **Hodge-Klasse** (Hodge Class).
 
 Wir sind nun vorbereitet. Die Aussage der Hodge-Vermutung ist sehr einfach, aber erstaunlich mächtig.
 
-> **[Hodge-Vermutung (Hodge Conjecture)](https://kenji.blog/p/hodge-conjecture/)**
+> **[Hodge-Vermutung (Hodge Conjecture)](https://kenji.blog/de/p/hodge-conjecture/)**
 > Jede Hodge-Klasse auf einer nicht-singulären projektiven algebraischen Varietät X über dem Körper der komplexen Zahlen kann als Linearkombination von algebraischen Zykeln mit rationalen Koeffizienten dargestellt werden.
 
 Mit anderen Worten wird behauptet: "Kohomologieklassen (Hodge-Klassen), die aus Sicht der Topologie und komplexen Analysis algebraisch-geometrisch aussehen, stammen tatsächlich von Figuren (algebraischen Zykeln), die durch algebraische Gleichungen konstruiert wurden."
@@ -107,7 +107,7 @@ Eine allgemeine Methode zur Rekonstruktion spezifischer algebraischer Gleichunge
 
 Es gibt verschiedene Verallgemeinerungen und verwandte Vermutungen zur Hodge-Vermutung.
 
-- **Verallgemeinerte Hodge-Vermutung (Generalized [Hodge Conjecture](https://kenji.blog/de/p/hodge-conjecture/))**: Dies ist ein Versuch, die Hodge-Vermutung auf einen allgemeineren Rahmen (z. B. Mannigfaltigkeiten mit Singularitäten oder offene Mannigfaltigkeiten) zu erweitern. Sie wurde von Alexander Grothendieck ([Alexander Grothendieck](https://kenji.blog/de/p/grothendieck/)) und anderen formuliert, aber es wurden Gegenbeispiele gefunden, was die Formulierung selbst zu einer schwierigen Aufgabe macht.
+- **Verallgemeinerte Hodge-Vermutung (Generalized [Hodge Conjecture](https://kenji.blog/de/p/hodge-conjecture/))**: Dies ist ein Versuch, die Hodge-Vermutung auf einen allgemeineren Rahmen (z. B. Mannigfaltigkeiten mit Singularitäten oder offene Mannigfaltigkeiten) zu erweitern. Sie wurde von [Alexander Grothendieck](/de/p/grothendieck/) ([Alexander Grothendieck](https://kenji.blog/de/p/grothendieck/)) und anderen formuliert, aber es wurden Gegenbeispiele gefunden, was die Formulierung selbst zu einer schwierigen Aufgabe macht.
 - **Tate-Vermutung (Tate Conjecture)**: Bekannt als ein zahlentheoretisches Analogon der Hodge-Vermutung. Sie ist nicht für Mannigfaltigkeiten über dem Körper der komplexen Zahlen formuliert, sondern für Mannigfaltigkeiten über endlichen Körpern, unter Verwendung des Konzepts der Étale-Kohomologie (Étale Cohomology). Dies ist ebenfalls ein extrem schwieriges, ungelöstes Problem.
 
 ## 6. Zusammenfassung und zukünftige Aussichten

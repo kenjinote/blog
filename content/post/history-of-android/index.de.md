@@ -24,7 +24,7 @@ Als sie in finanzielle Schwierigkeiten gerieten, wurden sie 2005 für nur 50 Mil
 
 ## 2. 2007: Das Erscheinen des iPhones und der Neuanfang beim Design
 
-Im Januar 2007 stellte Steve Jobs das erste iPhone vor.
+Im Januar 2007 stellte [Steve Jobs](/de/p/biography-steve-jobs/) das erste iPhone vor.
 Der Prototyp „Sooner“, den das damalige Android-Team entwickelte, war ein altes Design mit einer physischen Tastatur wie beim BlackBerry. Als Andy Rubin den revolutionären Multi-Touchscreen des iPhones sah, hörte er sich Berichten zufolge die Präsentation im Auto an und erkannte: „**Was wir gemacht haben, ist Müll. Wir müssen von vorn anfangen.**“
 
 Sie setzten die Entwicklung komplett zurück und änderten ihren Kurs drastisch hin zur Entwicklung eines neuen, auf Touchscreens optimierten Betriebssystems namens „Dream“.
@@ -48,7 +48,7 @@ Insbesondere das 2011 veröffentlichte „**Android 4.0 (Ice Cream Sandwich)**�
 
 Von den Herstellern, denen Android kostenlos zur Verfügung gestellt wurde, war das südkoreanische Unternehmen **Samsung** am erfolgreichsten. Die „Galaxy S“-Serie etablierte sich als mächtiger Rivale des iPhones und war mit großen Bildschirmen (Phablets) und der Einführung von OLED-Displays stets führend bei den Hardware-Trends.
 
-Apple konnte der rasanten Expansion von Android jedoch nicht tatenlos zusehen. Der verstorbene Steve Jobs war wütend und sagte: „Android ist ein gestohlenes Produkt des iPhones. Ich bin bereit, bis zum thermonuklearen Krieg zu gehen, um dieses Produkt zu zerstören.“ Daraufhin entbrannte weltweit ein erbitterter Patentstreit (der Smartphone-Patentkrieg). Dieser Streit dauerte mehrere Jahre an, endete aber schließlich mit einer Einigung zwischen den beiden Giganten, die zu groß geworden waren.
+Apple konnte der rasanten Expansion von Android jedoch nicht tatenlos zusehen. Der verstorbene [Steve Jobs](/de/p/biography-steve-jobs/) war wütend und sagte: „Android ist ein gestohlenes Produkt des iPhones. Ich bin bereit, bis zum thermonuklearen Krieg zu gehen, um dieses Produkt zu zerstören.“ Daraufhin entbrannte weltweit ein erbitterter Patentstreit (der Smartphone-Patentkrieg). Dieser Streit dauerte mehrere Jahre an, endete aber schließlich mit einer Einigung zwischen den beiden Giganten, die zu groß geworden waren.
 
 ## 6. Zusammenfassung: Die zwei Giganten des mobilen Ökosystems
 

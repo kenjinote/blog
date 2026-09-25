@@ -13,9 +13,9 @@ tags: ["Hyper-V", "WSL2", "Linux", "Windows"]
 
 Windows 플랫폼에서의 가상화 기술은 최근 수십 년 동안 극적인 진화를 이루었습니다. 과거에는 서드파티 Type 2 하이퍼바이저(VMware Workstation이나 VirtualBox 등)가 주류였으나, Microsoft가 Windows Server 2008에서 'Hyper-V'를 도입한 이후 Type 1 하이퍼바이저가 데스크톱 OS인 Windows 10/11에도 내장되기 시작했습니다.
 
-그리고 최근 개발자들 사이에서 가장 주목받고 있는 것이 'WSL2 (Windows Subsystem for Linux 2)'입니다. WSL1이 시스템 호출 변환(Translation)에 의존했던 반면, WSL2는 Hyper-V 기술을 응용한 '경량 유틸리티 VM (Lightweight Utility VM)'을 채택하여 완벽한 Linux 호환성과 비약적인 성능 향상을 실현했습니다.
+그리고 최근 개발자들 사이에서 가장 주목받고 있는 것이 '[WSL2](/ko/p/wsl2-ultimate-development-setup-guide/) ([Windows Subsystem for Linux](/ko/p/wsl2-ultimate-development-setup-guide/) 2)'입니다. WSL1이 시스템 호출 변환(Translation)에 의존했던 반면, [WSL2](/ko/p/wsl2-ultimate-development-setup-guide/)는 Hyper-V 기술을 응용한 '경량 유틸리티 VM (Lightweight Utility VM)'을 채택하여 완벽한 Linux 호환성과 비약적인 성능 향상을 실현했습니다.
 
-본 기사에서는 이 두 가지 강력한 가상화 기술, 즉 모든 기능을 갖춘 'Hyper-V'와 개발자 경험에 특화된 'WSL2'의 아키텍처, 성능(CPU, 메모리, 디스크 I/O), 네트워크 구성, 그리고 최적의 사용 사례에 대해 깊이 있는 기술적 세부 사항과 함께 철저하게 비교 및 해설합니다.
+본 기사에서는 이 두 가지 강력한 가상화 기술, 즉 모든 기능을 갖춘 'Hyper-V'와 개발자 경험에 특화된 '[WSL2](/ko/p/wsl2-ultimate-development-setup-guide/)'의 아키텍처, 성능(CPU, 메모리, 디스크 I/O), 네트워크 구성, 그리고 최적의 사용 사례에 대해 깊이 있는 기술적 세부 사항과 함께 철저하게 비교 및 해설합니다.
 
 ---
 
@@ -57,9 +57,9 @@ graph TD
 
 ### 2.3. WSL2와 Lightweight Utility VM의 작동 원리
 
-WSL2는 Hyper-V와 동일한 Type 1 하이퍼바이저 기반 기술을 사용하지만, 모든 기능을 갖춘 Hyper-V 가상 머신과는 다른 '가상 머신 플랫폼(Virtual Machine Platform: VMP)'이라는 서브셋 기능을 이용합니다.
+[WSL2](/ko/p/wsl2-ultimate-development-setup-guide/)는 Hyper-V와 동일한 Type 1 하이퍼바이저 기반 기술을 사용하지만, 모든 기능을 갖춘 Hyper-V 가상 머신과는 다른 '가상 머신 플랫폼(Virtual Machine Platform: VMP)'이라는 서브셋 기능을 이용합니다.
 
-WSL2에 채택된 '경량 유틸리티 VM (Lightweight Utility VM)'은 기존 VM이 갖는 레거시 하드웨어 에뮬레이션(가상 BIOS나 가상 마더보드 등)을 완전히 배제했습니다.
+[WSL2](/ko/p/wsl2-ultimate-development-setup-guide/)에 채택된 '경량 유틸리티 VM (Lightweight Utility VM)'은 기존 VM이 갖는 레거시 하드웨어 에뮬레이션(가상 BIOS나 가상 마더보드 등)을 완전히 배제했습니다.
 
 ```mermaid
 graph TD
@@ -76,7 +76,7 @@ graph TD
     D --> F
 ```
 
-WSL2의 가장 큰 특징은 **빠른 시작 속도 ** 와 **호스트 OS와의 매끄러운 통합** 입니다. 수 초 내에 Linux 커널이 부팅되며, Windows 측의 파일 시스템(NTFS)에는 Plan 9의 `9P` 네트워크 파일 시스템 프로토콜을 통해 접근합니다.
+[WSL2](/ko/p/wsl2-ultimate-development-setup-guide/)의 가장 큰 특징은 **빠른 시작 속도 ** 와 **호스트 OS와의 매끄러운 통합** 입니다. 수 초 내에 Linux 커널이 부팅되며, Windows 측의 파일 시스템(NTFS)에는 Plan 9의 `9P` 네트워크 파일 시스템 프로토콜을 통해 접근합니다.
 
 ---
 
@@ -86,7 +86,7 @@ WSL2의 가장 큰 특징은 **빠른 시작 속도 ** 와 **호스트 OS와의 
 
 ### 3.1. CPU와 컨텍스트 스위치 오버헤드
 
-Hyper-V와 WSL2는 모두 하드웨어 지원 가상화(Intel VT-x / AMD-V)를 사용합니다. CPU 명령어는 기본적으로 네이티브 속도로 실행되지만, 특권 명령어를 실행하거나 I/O를 처리할 때는 'VM Exit'라 불리는 인터럽트가 발생하여 하이퍼바이저로 컨텍스트 스위치가 일어납니다.
+Hyper-V와 [WSL2](/ko/p/wsl2-ultimate-development-setup-guide/)는 모두 하드웨어 지원 가상화(Intel VT-x / AMD-V)를 사용합니다. CPU 명령어는 기본적으로 네이티브 속도로 실행되지만, 특권 명령어를 실행하거나 I/O를 처리할 때는 'VM Exit'라 불리는 인터럽트가 발생하여 하이퍼바이저로 컨텍스트 스위치가 일어납니다.
 
 이때의 CPU 오버헤드 $T_{overhead}$는 다음과 같은 수학적 모델로 표현할 수 있습니다.
 
@@ -98,14 +98,14 @@ $$ T_{overhead} = \sum_{i=1}^{N} (t_{vm\_exit} + t_{hypercall\_process} + t_{vm\
 *   $t_{hypercall\_process}$: VMBus를 통한 I/O 처리 및 인터럽트 처리 시간
 *   $t_{vm\_entry}$: 하이퍼바이저에서 게스트로의 복귀 시간
 
-WSL2는 레거시 에뮬레이션이 없기 때문에 $t_{hypercall\_process}$가 극히 작게 최적화되어 있습니다. 따라서 순수한 CPU 연산(예: 커널 컴파일이나 머신 러닝 모델 추론)에서는 베어메탈 환경과 비교해도 수 퍼센트 이내의 성능 저하에 그칩니다.
+[WSL2](/ko/p/wsl2-ultimate-development-setup-guide/)는 레거시 에뮬레이션이 없기 때문에 $t_{hypercall\_process}$가 극히 작게 최적화되어 있습니다. 따라서 순수한 CPU 연산(예: 커널 컴파일이나 머신 러닝 모델 추론)에서는 베어메탈 환경과 비교해도 수 퍼센트 이내의 성능 저하에 그칩니다.
 
 ### 3.2. 메모리 할당 메커니즘
 
 메모리 관리 기법에 있어서 두 기술은 명확한 설계 철학의 차이를 보입니다.
 
 *   **Hyper-V (동적 메모리)**: 게스트 VM의 메모리 수요에 따라 루트 파티션이 동적으로 메모리를 할당하고 회수합니다. 하지만 게스트 OS 내에서 페이지 캐시로 확보된 메모리는 시스템에 여유가 없는 이상 쉽게 해제되지 않는 경향이 있습니다.
-*   **WSL2 (동적 메모리 회수)**: WSL2는 독자적인 방식을 가지고 있어, Linux VM 내에서 불필요해진 메모리(캐시 포함)를 정기적으로 Windows 호스트에 반환(Reclaim)합니다. 초기 WSL2에서는 Linux의 페이지 캐시가 Windows의 메모리를 모두 소진하는 문제(Vmmem 프로세스 비대화)가 있었으나, 현재는 커널 패치를 통해 개선되었습니다.
+*   **[WSL2](/ko/p/wsl2-ultimate-development-setup-guide/) (동적 메모리 회수)**: [WSL2](/ko/p/wsl2-ultimate-development-setup-guide/)는 독자적인 방식을 가지고 있어, Linux VM 내에서 불필요해진 메모리(캐시 포함)를 정기적으로 Windows 호스트에 반환(Reclaim)합니다. 초기 [WSL2](/ko/p/wsl2-ultimate-development-setup-guide/)에서는 Linux의 페이지 캐시가 Windows의 메모리를 모두 소진하는 문제(Vmmem 프로세스 비대화)가 있었으나, 현재는 커널 패치를 통해 개선되었습니다.
 
 ### 3.3. 디스크 I/O 특성 (VHDX vs ext4.vhdx)
 
@@ -118,27 +118,27 @@ $$ L_{total} = L_{guest\_fs} + L_{vmbus} + L_{host\_fs} + L_{physical\_disk} $$
 **Hyper-V의 경우**:
 일반적인 Hyper-V 게스트는 `VHDX` 포맷의 가상 디스크를 사용합니다. 게스트 OS 내의 파일 시스템(ext4 또는 NTFS)에서 발생한 I/O 요청은 VMBus의 블록 디바이스 스토리지 드라이버(storvsc)를 통과하여 Windows 측 NTFS 상의 VHDX 파일에 대한 접근으로 처리됩니다.
 
-**WSL2의 경우**:
-WSL2의 Linux 배포판은 전용 `ext4.vhdx` 파일 내에 구축된 네이티브 ext4 파일 시스템 위에서 동작합니다. Linux 내에서의 파일 조작(`~` 디렉터리 등)은 위에서 언급한 Hyper-V와 동등한 네이티브 성능을 발휘합니다.
-하지만, **WSL2의 Linux에서 Windows 측의 파일(`/mnt/c/` 등)에 접근할 경우**, 혹은 그 반대의 경우, 처리 방식이 크게 달라집니다. 이러한 크로스 OS 접근에는 `9P (Plan 9 File System Protocol)`가 사용됩니다.
+**[WSL2](/ko/p/wsl2-ultimate-development-setup-guide/)의 경우**:
+[WSL2](/ko/p/wsl2-ultimate-development-setup-guide/)의 Linux 배포판은 전용 `ext4.vhdx` 파일 내에 구축된 네이티브 ext4 파일 시스템 위에서 동작합니다. Linux 내에서의 파일 조작(`~` 디렉터리 등)은 위에서 언급한 Hyper-V와 동등한 네이티브 성능을 발휘합니다.
+하지만, **[WSL2](/ko/p/wsl2-ultimate-development-setup-guide/)의 Linux에서 Windows 측의 파일(`/mnt/c/` 등)에 접근할 경우**, 혹은 그 반대의 경우, 처리 방식이 크게 달라집니다. 이러한 크로스 OS 접근에는 `9P (Plan 9 File System Protocol)`가 사용됩니다.
 
 $$ L_{cross\_os} = L_{9p\_client} + L_{socket\_transfer} + L_{9p\_server} + L_{ntfs} $$
 
 이 9P 프로토콜을 경유한 접근은 직렬화(Serialize) 처리의 오버헤드가 커서, 작은 파일을 대량으로 읽고 쓰는 용도(예: Windows 측 디렉터리에 위치한 Node.js 프로젝트에서의 `npm install`이나 Git 조작)에서는 성능이 현저히 떨어집니다(때로는 10배 이상의 지연 발생).
-그러므로, **WSL2를 사용할 때는 반드시 프로젝트 파일을 Linux의 네이티브 파일 시스템(`~/` 산하)에 배치하는 것이 철칙**입니다.
+그러므로, **[WSL2](/ko/p/wsl2-ultimate-development-setup-guide/)를 사용할 때는 반드시 프로젝트 파일을 Linux의 네이티브 파일 시스템(`~/` 산하)에 배치하는 것이 철칙**입니다.
 
 ---
 
 ## 4. 네트워크 구조: NAT, Default Switch, Bridged
 
-네트워크 기능의 유연성은 Hyper-V와 WSL2의 큰 차이 중 하나입니다.
+네트워크 기능의 유연성은 Hyper-V와 [WSL2](/ko/p/wsl2-ultimate-development-setup-guide/)의 큰 차이 중 하나입니다.
 
 ### 4.1. WSL2의 네트워크 (NAT 기반)
 
-WSL2의 네트워크는 기본적으로 Hyper-V의 가상 스위치 기술을 사용한 'NAT (Network Address Translation)' 구성으로 되어 있습니다.
-Linux VM에는 Windows 호스트와는 다른 사설 IP 주소(예: `172.20.x.x`)가 자동으로 할당됩니다. Windows 호스트에서는 `localhost`를 통해 WSL2 내에서 실행된 서비스(포트)로 포워딩되는 구조가 내장되어 있어, 개발자는 네트워크를 의식하지 않고도 웹 서버 등을 테스트할 수 있습니다.
+[WSL2](/ko/p/wsl2-ultimate-development-setup-guide/)의 네트워크는 기본적으로 Hyper-V의 가상 스위치 기술을 사용한 'NAT (Network Address Translation)' 구성으로 되어 있습니다.
+Linux VM에는 Windows 호스트와는 다른 사설 IP 주소(예: `172.20.x.x`)가 자동으로 할당됩니다. Windows 호스트에서는 `localhost`를 통해 [WSL2](/ko/p/wsl2-ultimate-development-setup-guide/) 내에서 실행된 서비스(포트)로 포워딩되는 구조가 내장되어 있어, 개발자는 네트워크를 의식하지 않고도 웹 서버 등을 테스트할 수 있습니다.
 
-최근 WSL2에는 'Mirrored 모드'라는 새로운 네트워크 모드가 프리뷰 버전으로 도입되었습니다. 이를 통해 IPv6 지원 및 VPN 연결 호환성이 향상되었습니다(`.wslconfig`에서 설정 가능).
+최근 [WSL2](/ko/p/wsl2-ultimate-development-setup-guide/)에는 'Mirrored 모드'라는 새로운 네트워크 모드가 프리뷰 버전으로 도입되었습니다. 이를 통해 IPv6 지원 및 VPN 연결 호환성이 향상되었습니다(`.wslconfig`에서 설정 가능).
 
 ### 4.2. Hyper-V의 가상 스위치 (Virtual Switch)
 
@@ -182,12 +182,12 @@ Get-NetNat
 
 ### 5.1. WSL2를 선택해야 하는 시나리오
 
-WSL2는 '개발자의 생산성 향상'에 특화되어 설계되었습니다. 다음과 같은 용도에 최적입니다.
+[WSL2](/ko/p/wsl2-ultimate-development-setup-guide/)는 '개발자의 생산성 향상'에 특화되어 설계되었습니다. 다음과 같은 용도에 최적입니다.
 
-*   **웹 개발 및 클라우드 네이티브 개발**: [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop(WSL2 백엔드)이나 Podman을 사용한 컨테이너 개발.
+*   **웹 개발 및 클라우드 네이티브 개발**: [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop([WSL2](/ko/p/wsl2-ultimate-development-setup-guide/) 백엔드)이나 Podman을 사용한 컨테이너 개발.
 *   **Linux 전용 도구 사용**: bash, grep, awk, sed 또는 Linux용 GCC나 Clang 컴파일러를 일상적으로 사용하는 경우.
 *   **GUI 애플리케이션 (WSLg)**: Linux의 X11/Wayland 애플리케이션을 Windows 데스크톱 위에서 매끄럽게 실행하고 싶은 경우.
-*   **머신 러닝 및 AI 개발**: GPU 패스스루 기능(NVIDIA CUDA on WSL)을 이용한 TensorFlow나 PyTorch의 고속 학습.
+*   **머신 러닝 및 AI 개발**: GPU 패스스루 기능([NVIDIA](/ko/p/history-of-nvidia/) CUDA on WSL)을 이용한 TensorFlow나 PyTorch의 고속 학습.
 
 **주의점**: 커널을 세밀하게 커스터마이즈하고 싶거나, systemd에 강하게 의존하는 복잡한 서비스(현재 systemd는 지원되지만, 기본적으로 비활성화되어 있거나 제한이 있음)를 구축할 경우에는 제약이 따를 수 있습니다.
 
@@ -215,18 +215,18 @@ $$ S(B) = \frac{B}{L_{setup} + \frac{B}{R_{max}}} $$
 *   $L_{setup}$: I/O 요청 설정 및 컨텍스트 스위치에 수반되는 고정 레이턴시
 *   $R_{max}$: 복사나 디바이스 전송 시 하드웨어의 최대 대역폭
 
-WSL2의 9P 프로토콜을 통한 파일 접근에서는 이 $L_{setup}$이 매우 큽니다(소켓 통신과 프로토콜의 직렬화/역직렬화 때문). 따라서 블록 크기 $B$가 작을 경우(수 KB 정도의 작은 파일에 대한 대량의 읽기/쓰기), 분모에서 $L_{setup}$의 영향이 지배적이게 되어 처리량 $S$는 극적으로 떨어집니다.
+[WSL2](/ko/p/wsl2-ultimate-development-setup-guide/)의 9P 프로토콜을 통한 파일 접근에서는 이 $L_{setup}$이 매우 큽니다(소켓 통신과 프로토콜의 직렬화/역직렬화 때문). 따라서 블록 크기 $B$가 작을 경우(수 KB 정도의 작은 파일에 대한 대량의 읽기/쓰기), 분모에서 $L_{setup}$의 영향이 지배적이게 되어 처리량 $S$는 극적으로 떨어집니다.
 반대로 Hyper-V의 VMBus를 경유하는 VHDX 접근에서는 $L_{setup}$이 하드웨어 인터럽트에 가까운 수준까지 최적화되어 있으므로, 작은 크기의 블록에서도 높은 IOPS를 유지할 수 있습니다.
 
-이러한 수학적 현실이 "WSL2에서는 프로젝트 파일을 Windows 측에 두면 안 된다"는 모범 사례의 논리적 근거가 됩니다.
+이러한 수학적 현실이 "[WSL2](/ko/p/wsl2-ultimate-development-setup-guide/)에서는 프로젝트 파일을 Windows 측에 두면 안 된다"는 모범 사례의 논리적 근거가 됩니다.
 
 ---
 
 ## 7. 결론: 공존하는 두 가지 가상화 기술
 
-Hyper-V와 WSL2는 어느 한쪽이 우수하다는 것이 아니라, **'목적이 다른 두 가지 솔루션'** 입니다.
+Hyper-V와 [WSL2](/ko/p/wsl2-ultimate-development-setup-guide/)는 어느 한쪽이 우수하다는 것이 아니라, **'목적이 다른 두 가지 솔루션'** 입니다.
 
-*   **WSL2** 는 Windows라는 OS의 틀을 깨고, Linux 생태계를 매끄럽고 빠르게 Windows 사용자에게 전달하기 위한 '최고의 통합 도구'입니다. 개발자를 위한 궁극의 CLI 환경이라 해도 과언이 아닙니다.
+*   **[WSL2](/ko/p/wsl2-ultimate-development-setup-guide/)** 는 Windows라는 OS의 틀을 깨고, Linux 생태계를 매끄럽고 빠르게 Windows 사용자에게 전달하기 위한 '최고의 통합 도구'입니다. 개발자를 위한 궁극의 CLI 환경이라 해도 과언이 아닙니다.
 *   **Hyper-V** 는 엔터프라이즈 데이터 센터에서 축적된 강력한 격리성과 관리 기능을 데스크톱으로 가져온 '본격적인 하이퍼바이저'입니다. 네트워크 구축, Windows OS 테스트, 인프라 환경 시뮬레이션에 있어서 타의 추종을 불허합니다.
 
 현대의 Windows 환경에서 이 두 기술은 대등하게 경쟁하는 것이 아니라, 동일한 VM 플랫폼 위에서 아름답게 공존합니다. 목적에 맞게 적재적소에 활용함으로써, Windows는 세계에서 가장 강력하고 유연한 엔지니어링 워크스테이션이 될 것입니다.

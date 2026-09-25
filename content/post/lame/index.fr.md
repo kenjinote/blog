@@ -10,7 +10,7 @@ tags: ["Gabriel Lamé", "Histoire des mathématiques", "Théorie des nombres", "
 
 ## 1. Introduction : Qui était [Gabriel Lamé](https://kenji.blog/fr/p/lame/) ?
 
-[Gabriel Lamé](https://kenji.blog/fr/p/lame/) (22 juillet 1795 – 1er mai 1870) était un éminent mathématicien, physicien et ingénieur français du XIXe siècle. Ses contributions ont couvert un vaste domaine, des mathématiques pures aux mathématiques appliquées, jusqu'au génie civil pratique. Aujourd'hui encore, son nom reste profondément gravé dans les manuels de mathématiques et de physique à travers la **courbe de Lamé** (superellipse), le **théorème de Lamé** dans l'algorithme d'Euclide, et les **coefficients de [Lamé](https://kenji.blog/fr/p/lame/)** dans la théorie de l'élasticité.
+[Gabriel Lamé](https://kenji.blog/fr/p/lame/) (22 juillet 1795 – 1er mai 1870) était un éminent mathématicien, physicien et ingénieur français du XIXe siècle. Ses contributions ont couvert un vaste domaine, des mathématiques pures aux mathématiques appliquées, jusqu'au génie civil pratique. Aujourd'hui encore, son nom reste profondément gravé dans les manuels de mathématiques et de physique à travers la **courbe de Lamé** (superellipse), le **théorème de Lamé** dans [l'algorithme d'Euclide](/fr/p/euclidean-algorithm/), et les **coefficients de [Lamé](https://kenji.blog/fr/p/lame/)** dans la théorie de l'élasticité.
 
 Dans cet article, nous retracerons la trajectoire mouvementée de la vie de [Lamé](https://kenji.blog/fr/p/lame/) tout en expliquant de manière exhaustive et systématique les réalisations mathématiques et physiques révolutionnaires qu'il a laissées derrière lui. Comprendre sa vie et son processus de réflexion offre une perspective extrêmement précieuse sur la façon dont la science du XIXe siècle a jeté les bases de l'ère moderne.
 
@@ -95,15 +95,15 @@ def calculate_lame_curve(a, b, n, num_points=100):
     return points
 ```
 
-## 4. Contributions à la théorie des nombres : Le théorème de [Lamé](https://kenji.blog/fr/p/lame/) et l'algorithme d'[Euclide](https://kenji.blog/p/euclid/)
+## 4. Contributions à la théorie des nombres : Le théorème de [Lamé](https://kenji.blog/fr/p/lame/) et l'algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/)
 
 En informatique et en théorie des nombres, ce qui a rendu le nom de [Lamé](https://kenji.blog/fr/p/lame/) le plus célèbre est le **théorème de [Lamé](https://kenji.blog/fr/p/lame/)**. Il est connu comme l'un des premiers exemples de l'histoire évaluant de manière rigoureuse et mathématique la complexité algorithmique (temps d'exécution) d'un algorithme.
 
 ### 4.1 Aperçu et signification du théorème
 
-L'**algorithme d'[Euclide](https://kenji.blog/p/euclid/)**, transmis depuis la Grèce antique, est un algorithme efficace pour trouver le plus grand commun diviseur (PGCD) de deux entiers naturels. Cependant, jusqu'à Lamé en 1844, personne n'avait prouvé avec précision « à quelle vitesse » cet algorithme se terminait. Le théorème de [Lamé](https://kenji.blog/fr/p/lame/) énonce ce qui suit :
+L'**algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/)**, transmis depuis la Grèce antique, est un algorithme efficace pour trouver le plus grand commun diviseur (PGCD) de deux entiers naturels. Cependant, jusqu'à Lamé en 1844, personne n'avait prouvé avec précision « à quelle vitesse » cet algorithme se terminait. Le théorème de [Lamé](https://kenji.blog/fr/p/lame/) énonce ce qui suit :
 
-> « Lors de la recherche du plus grand commun diviseur de deux nombres entiers à l'aide de l'algorithme d'[Euclide](https://kenji.blog/p/euclid/), le nombre de divisions requises (étapes) ne dépasse jamais 5 fois le nombre de chiffres décimaux du plus petit nombre. »
+> « Lors de la recherche du plus grand commun diviseur de deux nombres entiers à l'aide de l'algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/), le nombre de divisions requises (étapes) ne dépasse jamais 5 fois le nombre de chiffres décimaux du plus petit nombre. »
 
 Exprimé sous forme de formule, cela donne :
 
@@ -111,7 +111,7 @@ $$ \text{Nombre d'étapes} \le 5 \times \text{Nombre de chiffres du plus petit n
 
 ### 4.2 Lien profond avec la suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/)
 
-En prouvant ce théorème, [Lamé](https://kenji.blog/fr/p/lame/) a découvert que le pire des cas (c'est-à-dire celui nécessitant le plus d'étapes) pour l'algorithme d'Euclide se produit lorsque les entrées sont deux **nombres de Fibonacci** consécutifs. En utilisant le taux de croissance de la suite de Fibonacci et les propriétés du nombre d'or, il a dérivé cette magnifique borne supérieure. Grâce à cette réalisation, [Lamé](https://kenji.blog/fr/p/lame/) est considéré comme l'un des « pères de la théorie de la complexité » dans l'informatique moderne.
+En prouvant ce théorème, [Lamé](https://kenji.blog/fr/p/lame/) a découvert que le pire des cas (c'est-à-dire celui nécessitant le plus d'étapes) pour [l'algorithme d'Euclide](/fr/p/euclidean-algorithm/) se produit lorsque les entrées sont deux **nombres de Fibonacci** consécutifs. En utilisant le taux de croissance de la suite de Fibonacci et les propriétés du nombre d'or, il a dérivé cette magnifique borne supérieure. Grâce à cette réalisation, [Lamé](https://kenji.blog/fr/p/lame/) est considéré comme l'un des « pères de la théorie de la complexité » dans l'informatique moderne.
 
 ## 5. Contributions à la physique : Théorie de l'élasticité et coefficients de [Lamé](https://kenji.blog/fr/p/lame/)
 
@@ -141,7 +141,7 @@ En particulier, pour résoudre l'**équation de Laplace**, qui décrit les phén
 
 Un épisode dramatique dans la vie de [Lamé](https://kenji.blog/fr/p/lame/) fut sa tentative de prouver le **dernier théorème de Fermat** en 1847. En mars de cette année-là, Lamé annonça fièrement à l'Académie des sciences qu'il avait « complètement prouvé le dernier théorème de [Fermat](https://kenji.blog/fr/p/fermat/) ». Sa preuve impliquait une approche très innovante et puissante pour l'époque : la factorisation de l'équation à l'aide de nombres complexes cyclotomiques.
 
-Cependant, immédiatement après sa présentation, son collègue, le mathématicien Joseph [Liouville](https://kenji.blog/fr/p/liouville/), souligna judicieusement que « la preuve repose sur l'hypothèse tacite et non prouvée que "l'unicité de la factorisation en nombres premiers" est également valable dans le domaine des nombres complexes ». Peu après, une lettre du mathématicien allemand Ernst Kummer est arrivée indiquant que « l'unicité de la factorisation en nombres premiers n'est généralement pas valable », rendant la preuve de [Lamé](https://kenji.blog/fr/p/lame/) effectivement invalide.
+Cependant, immédiatement après sa présentation, son collègue, le mathématicien Joseph [Liouville](https://kenji.blog/fr/p/liouville/), souligna judicieusement que « la preuve repose sur l'hypothèse tacite et non prouvée que "l'unicité de la factorisation en nombres premiers" est également valable dans le domaine des nombres complexes ». Peu après, une lettre du mathématicien allemand [Ernst Kummer](/fr/p/kummer/) est arrivée indiquant que « l'unicité de la factorisation en nombres premiers n'est généralement pas valable », rendant la preuve de [Lamé](https://kenji.blog/fr/p/lame/) effectivement invalide.
 
 Ce fut un revers majeur pour [Lamé](https://kenji.blog/fr/p/lame/), mais cette série de discussions a déclenché la naissance de la théorie des « nombres idéaux » (idéaux) de Kummer, qui a ensuite ouvert l'immense champ mathématique de la théorie algébrique des nombres. Le défi audacieux de [Lamé](https://kenji.blog/fr/p/lame/) a finalement fait avancer l'histoire des mathématiques de manière significative.
 

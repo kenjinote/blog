@@ -28,7 +28,7 @@ Existem várias melhores práticas e padrões de projeto no mundo da engenharia 
 
 ### Contexto de Nascimento: Tim Peters e PEP 20
 
-O Zen do Python foi escrito por Tim Peters, um desenvolvedor central envolvido no desenvolvimento do Python por muitos anos. Tim sistematizou o "conhecimento tácito" e a "intuição" na concepção de Guido van Rossum, o criador do Python, para que pudessem ser verbalizados e compartilhados com a comunidade.
+O Zen do Python foi escrito por Tim Peters, um desenvolvedor central envolvido no desenvolvimento do Python por muitos anos. Tim sistematizou o "conhecimento tácito" e a "intuição" na concepção de Guido van Rossum, [o criador do Python](/pt/p/biography-guido-van-rossum/), para que pudessem ser verbalizados e compartilhados com a comunidade.
 
 Mais tarde, isso foi documentado oficialmente como **PEP 20 (Python Enhancement Proposal 20)**. Sempre que recursos são adicionados ou alterados no Python, esta PEP 20 serve como ponto de partida ao qual se deve sempre retornar.
 
@@ -121,7 +121,7 @@ O Python odeia esse tipo de comportamento de "ler nas entrelinhas". Se você ten
 Uma linguagem chamada Perl tem a filosofia de "There's more than one way to do it" (TIMTOWTDI: Há mais de uma maneira de fazer isso), mas o Python segue exatamente o oposto.
 
 Para realizar o mesmo processo, é ideal que todos escrevam da mesma forma. Isso reduz drasticamente a carga cognitiva ao ler códigos escritos por outras pessoas.
-Observe que o "holandês" refere-se a Guido van Rossum, o criador do Python. Isso inclui humor sugerindo que pode levar algum tempo para entender completamente as intenções do criador da linguagem.
+Observe que o "holandês" refere-se a Guido van Rossum, [o criador do Python](/pt/p/biography-guido-van-rossum/). Isso inclui humor sugerindo que pode levar algum tempo para entender completamente as intenções do criador da linguagem.
 
 ### Now is better than never. (Agora é melhor que nunca.)
 ### Although never is often better than *right* now. (Embora nunca seja frequentemente melhor do que *exatamente* agora.)

@@ -26,7 +26,7 @@ Pada artikel ini, kita akan membahas secara menyeluruh tentang "**Ollama**", seb
 
 # Apa itu Ollama? Arsitektur Internalnya
 
-Ollama adalah sebuah platform yang memudahkan eksekusi dan pengelolaan large language models (LLM) open source (seperti Llama 3, Phi-3, Mistral, Gemma, dll.) di lingkungan lokal. Sebelumnya, untuk membangun lingkungan LLM lokal, diperlukan langkah-langkah yang sangat rumit seperti menyiapkan lingkungan Python, menginstal toolkit CUDA, menyelesaikan dependensi PyTorch, mengunduh file model besar dari Hugging Face, dan mengonversi format (misalnya dari Safetensors ke GGUF).
+Ollama adalah sebuah platform yang memudahkan eksekusi dan pengelolaan large language models (LLM) open source (seperti Llama 3, Phi-3, Mistral, Gemma, dll.) di lingkungan lokal. Sebelumnya, untuk membangun lingkungan LLM lokal, diperlukan langkah-langkah yang sangat rumit seperti menyiapkan lingkungan Python, menginstal toolkit CUDA, menyelesaikan dependensi PyTorch, mengunduh file model besar dari Hugging Face, dan mengonversi format (misalnya dari Safetensors ke [GGUF](/id/p/llama-cpp-quantization-gguf/)).
 
 Ollama menyembunyikan kompleksitas ini dan memungkinkan Anda untuk menangani LLM dengan kemudahan seperti [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/). Hanya dengan satu perintah, Anda dapat mengunduh model (`pull`), menjalankannya (`run`), dan menyiapkannya sebagai server HTTP.
 
@@ -120,7 +120,7 @@ Pada perpustakaan model Ollama, Anda dapat menentukan versi atau tingkat kuantis
 
 Mari kita bahas sedikit tentang kuantisasi. [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) biasa menyimpan satu parameter bobot sebagai floating-point 16-bit (FP16). Untuk model dengan 8 miliar (8B) parameter, bobotnya saja akan menghabiskan sekitar 16GB VRAM. Teknologi untuk mengompresi ini ke dalam bilangan bulat (integer) 4-bit (Q4) atau 8-bit (Q8) disebut kuantisasi.
 
-Dengan kuantisasi, Anda dapat mengurangi jumlah memori dan bandwidth memori yang dibutuhkan secara drastis sambil meminimalisir penurunan akurasi model. Model yang didistribusikan melalui Ollama secara default berformat GGUF yang mana telah diterapkan kuantisasi optimal (biasanya 4-bit).
+Dengan kuantisasi, Anda dapat mengurangi jumlah memori dan bandwidth memori yang dibutuhkan secara drastis sambil meminimalisir penurunan akurasi model. Model yang didistribusikan melalui Ollama secara default berformat [GGUF](/id/p/llama-cpp-quantization-gguf/) yang mana telah diterapkan kuantisasi optimal (biasanya 4-bit).
 
 ## 3. Menampilkan Daftar Model (`list`)
 

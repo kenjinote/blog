@@ -13,7 +13,7 @@ description: "\"Ojo por ojo, y el mundo acabará ciego.\""
 
 "Ojo por ojo, y el mundo acabará ciego."
 
-Mohandas Karamchand Gandhi (comúnmente conocido como Mahatma Gandhi), quien dejó estas palabras, es uno de los líderes más influyentes del siglo XX. Su filosofía de "desobediencia civil no violenta (Satyagraha)" no solo llevó a la India a la independencia del dominio colonial británico, sino que también influyó profundamente en los movimientos de derechos civiles y de liberación en todo el mundo, incluidos los de Martin Luther King Jr. y Nelson Mandela. Este artículo profundiza en su vida y filosofía, explorando cómo llegó a ser llamado el "Alma Grande (Mahatma)".
+Mohandas Karamchand Gandhi (comúnmente conocido como Mahatma Gandhi), quien dejó estas palabras, es uno de los líderes más influyentes del siglo XX. Su filosofía de "desobediencia civil no violenta (Satyagraha)" no solo llevó a la India a la independencia del dominio colonial británico, sino que también influyó profundamente en los movimientos de derechos civiles y de liberación en todo el mundo, incluidos los de [Martin Luther King Jr.](/es/p/biography-martin-luther-king-jr/) y [Nelson Mandela](/es/p/biography-nelson-mandela/). Este artículo profundiza en su vida y filosofía, explorando cómo llegó a ser llamado el "Alma Grande (Mahatma)".
 
 ## Estudios en Londres y despertar en Sudáfrica
 
@@ -45,7 +45,7 @@ No obstante, el 30 de enero de 1948, apenas medio año después de la independen
 
 La vida de Gandhi demostró cómo el "poder del espíritu" que posee un solo ser humano puede mover a un imperio gigante. Su filosofía de "desobediencia civil no violenta" ha trascendido fronteras y épocas, y ha sido transmitida a las generaciones futuras.
 
-Martin Luther King Jr., quien lideró el movimiento de derechos civiles en los Estados Unidos, dijo: "Cristo dio el espíritu y Gandhi dio el método", e impulsó un movimiento para abolir la discriminación racial mediante la no violencia. Además, muchos líderes pacifistas, como Nelson Mandela, quien luchó contra la política del apartheid de Sudáfrica, y el decimocuarto Dalai Lama del Tíbet, han sido profundamente influenciados por la filosofía de Gandhi.
+[Martin Luther King Jr.](/es/p/biography-martin-luther-king-jr/), quien lideró el movimiento de derechos civiles en los Estados Unidos, dijo: "Cristo dio el espíritu y Gandhi dio el método", e impulsó un movimiento para abolir la discriminación racial mediante la no violencia. Además, muchos líderes pacifistas, como [Nelson Mandela](/es/p/biography-nelson-mandela/), quien luchó contra la política del apartheid de Sudáfrica, y el decimocuarto Dalai Lama del Tíbet, han sido profundamente influenciados por la filosofía de Gandhi.
 
 Incluso en la sociedad moderna, frente a los muchos desafíos que enfrentamos, como los conflictos, las divisiones y los problemas ambientales, la enseñanza de Gandhi: "Sé el cambio que deseas ver en el mundo", sigue resonando sin perder su vigencia.
 

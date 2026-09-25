@@ -38,7 +38,7 @@ graph TD
 
 ### 2.2 Representasi Matematika (Parameterisasi)
 
-Representasi parametrik pita Möbius dalam ruang [Euclide](https://kenji.blog/p/euclid/)an 3 dimensi $\mathbb{R}^3$ adalah sebagai berikut. Ia dinyatakan menggunakan parameter $u$ dan $v$.
+Representasi parametrik pita Möbius dalam ruang [Euclide](https://kenji.blog/id/p/euclid/)an 3 dimensi $\mathbb{R}^3$ adalah sebagai berikut. Ia dinyatakan menggunakan parameter $u$ dan $v$.
 
 $$
 \begin{aligned}

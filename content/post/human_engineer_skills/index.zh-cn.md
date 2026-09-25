@@ -11,43 +11,43 @@ tags: ["Generative AI", "DDD", "Architecture", "Future of Work"]
 
 # AI编写代码时代所需的「人类特有的工程师技能」
 
-近年来，随着生成式AI（Generative AI）和大型语言模型（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的飞跃性进展，软件工程的格局发生了剧烈的变化。GitHub Copilot和各种AI编程助手已经成为日常工具，“用自然语言下达指令，AI瞬间生成代码”这种现象，早已不再是未来的科幻，而是今天的现实。
+近年来，随着生成式AI（Generative AI）和[大型语言模型](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的飞跃性进展，软件工程的格局发生了剧烈的变化。GitHub Copilot和各种AI编程助手已经成为日常工具，“用自然语言下达指令，AI瞬间生成代码”这种现象，早已不再是未来的科幻，而是今天的现实。
 
 在这样的时代，许多工程师会自然而然地产生“我的工作会不会被AI夺走？”的焦虑。的确，编写常规的CRUD应用程序的样板代码、实现简单的算法，或是调用熟知的库API，这类“单纯的编码工作（Typing Code）”正在迅速商品化。
 
-然而，软件工程的本质并不是“敲击代码”。它是通过技术来解决业务问题，并构建可扩展、可维护的系统。在本文中，我们将探讨在AI编写代码的时代价值反而会提升的“人类特有的工程师技能”，并从LLM的技术局限性、领域驱动设计（DDD）、系统架构、分布式系统的调试等角度，进行极为详细且具有技术深度的考察。
+然而，软件工程的本质并不是“敲击代码”。它是通过技术来解决业务问题，并构建可扩展、可维护的系统。在本文中，我们将探讨在AI编写代码的时代价值反而会提升的“人类特有的工程师技能”，并从[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)的技术局限性、领域驱动设计（DDD）、系统架构、[分布式系统](/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)的调试等角度，进行极为详细且具有技术深度的考察。
 
 ---
 
 ## 1. 理解大型语言模型（LLM）的结构性局限
 
-为了正确评估AI的能力，并看清人类应该在哪些领域发挥价值，我们首先必须从数学和架构的角度理解AI（特别是LLM）的结构性局限。
+为了正确评估AI的能力，并看清人类应该在哪些领域发挥价值，我们首先必须从数学和架构的角度理解AI（特别是[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的结构性局限。
 
 ### 1.1 [Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)架构中的计算量与上下文限制
 
-目前大多数的LLM都基于Google在2017年发布的“Transformer”架构。Transformer的核心在于“自注意力机制（Self-Attention Mechanism）”。自注意力机制会计算输入序列中的每个Token与所有其他Token之间的相关程度。
+目前大多数的[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)都基于Google在2017年发布的“Transformer”架构。Transformer的核心在于“自注意力机制（Self-Attention Mechanism）”。自注意力机制会计算输入序列中的每个Token与所有其他Token之间的相关程度。
 
 这种注意力的计算公式可以表示如下：
 
 $$ \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V $$
 
 这里，$Q$（Query）、$K$（Key）、$V$（Value）是输入序列的线性变换，而$d_k$是键的维度数。
-在这个计算中，最大的制约因素就是矩阵乘法 $QK^T$ 所带来的计算量。如果将输入序列（Token数）设为 $N$，这个计算量在时间上和空间（内存）上都会以 $O(N^2)$ 的复杂度增长。
+在这个计算中，最大的制约因素就是矩阵乘法 $QK^T$ 所带来的计算量。如果将输入序列（Token数）设为 $N$，这个计算量在时间上和空间（内存）上都会以 $O(N^2)$ 的[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)增长。
 
 $$ \text{Complexity} = O(N^2 \cdot d) $$
 
 近年来，尽管出现了像FlashAttention这样的硬件级优化，以及Sparse Attention，甚至是Mamba（状态空间模型，[State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) Space Models）等可以在线性时间 $O(N)$ 内处理的替代架构的研究，但要“完全理解无限的上下文并生成全局最优化的输出”仍然极其困难。
 
-此外，即使能够物理上扩大上下文窗口，也会发生所谓的“迷失在中间（Lost in the Middle）”现象。[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)很容易受到提示词开头和结尾信息的强烈影响，而倾向于忽略放置在中间的重要需求或约束。如果让LLM读取数万行的企业级系统源代码并指示它“进行最佳重构”，生成的代码往往局部正确但在全局上却是崩溃的，这就是原因所在。
+此外，即使能够物理上扩大上下文窗口，也会发生所谓的“迷失在中间（Lost in the Middle）”现象。[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)很容易受到提示词开头和结尾信息的强烈影响，而倾向于忽略放置在中间的重要需求或约束。如果让[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)读取数万行的企业级系统源代码并指示它“进行最佳重构”，生成的代码往往局部正确但在全局上却是崩溃的，这就是原因所在。
 
 ### 1.2 概率生成模型的特性与“幻觉”
 
-LLM的本质是一个“概率生成模型”，它根据输入的上下文（提示词）和之前的生成结果，预测下一个出现概率最高的Token。
+[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)的本质是一个“概率生成模型”，它根据输入的上下文（提示词）和之前的生成结果，预测下一个出现概率最高的Token。
 
 $$ P(w_t | w_{1:t-1}) = \text{softmax}(W \cdot h_t) $$
 
 模型仅仅是从海量的训练数据中学习到了“词语的统计共现关系”，并不理解所生成代码的“语义（Semantics）”或“执行结果在现实世界中的影响”。由此产生的就是“幻觉（Hallucination）”。
-调用不存在的虚构库函数，或者传递类型存在细微差异的变量，这些Bug只不过是LLM生成了“语法上看起来很像（概率很高）的Token序列”的结果而已。
+调用不存在的虚构库函数，或者传递类型存在细微差异的变量，这些Bug只不过是[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)生成了“语法上看起来很像（概率很高）的Token序列”的结果而已。
 
 ### 1.3 缺乏现实世界的落地能力（Grounding）
 
@@ -116,11 +116,11 @@ flowchart TD
 
 ## 4. 人类特有的技能③：分布式系统的架构设计与扩展
 
-现代软件正在从运行在单一服务器上的单体架构，向云原生的微服务架构和事件驱动架构演进。对于只能进行局部逻辑优化的AI来说，设计这种分布式系统是一个非常困难的领域。
+现代软件正在从运行在单一服务器上的单体架构，向云原生的[微服务架构](/zh-cn/p/microservices-architecture-bff-api-gateway/)和事件驱动架构演进。对于只能进行局部逻辑优化的AI来说，设计这种[分布式系统](/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)是一个非常困难的领域。
 
 ### 4.1 [CAP定理](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems/)与权衡判断
 
-在设计分布式系统时，工程师始终要面临“[CAP定理](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)”。CAP定理指出，分布式系统在以下三个特性中，同时只能满足两个。
+在设计[分布式系统](/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)时，工程师始终要面临“[CAP定理](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)”。CAP定理指出，[分布式系统](/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)在以下三个特性中，同时只能满足两个。
 
 - **[Consistency](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)（一致性）**: 所有节点在同一时间是否能看到相同的数据
 - **[Availability](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)（可用性）**: 即使部分节点发生故障，系统是否还能继续响应
@@ -134,7 +134,7 @@ AI也许能写出“优先考虑C的代码”或“优先考虑A的代码”，�
 
 ### 4.2 异步通信与最终一致性（[Eventual Consistency](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)）
 
-当系统规模变大时，服务间的协同将从通过[REST API](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-overfetching-type-safety/)进行的同步通信，转变为使用消息队列（Kafka, RabbitMQ等）的异步通信。此时数据的一致性也从强一致性转变为“最终一致性（Eventual [Consistency](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)）”。
+当系统规模变大时，服务间的协同将从通过[REST API](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-overfetching-type-safety/)进行的同步通信，转变为使用消息队列（[Kafka, RabbitMQ](/zh-cn/p/event-driven-architecture-message-queue-kafka-rabbitmq/)等）的异步通信。此时数据的一致性也从强一致性转变为“最终一致性（Eventual [Consistency](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)）”。
 应该在什么时候引入Saga模式或[CQRS](https://kenji.blog/zh-cn/p/event-driven-architecture-async/)（Command Query Responsibility Segregation，命令查询职责分离）等高级架构模式？做出这些复杂的决策并描绘系统整体的蓝图，正是高级工程师的真正价值所在。
 
 ```mermaid

@@ -16,7 +16,7 @@ Dalam artikel ini, kita akan berangkat dari filosofi di balik bahasa Haskell, da
 
 ## 1. Paradigma Pemrograman Fungsional Murni
 
-Akar dari pemrograman fungsional adalah gagasan untuk "memperlakukan komputasi sebagai evaluasi fungsi matematika". Terutama dalam bahasa fungsional "murni" seperti Haskell, aturan ini dipatuhi dengan sangat ketat.
+Akar dari [pemrograman fungsional](/id/p/lambda-calculus-functional-programming/) adalah gagasan untuk "memperlakukan komputasi sebagai evaluasi fungsi matematika". Terutama dalam bahasa fungsional "murni" seperti Haskell, aturan ini dipatuhi dengan sangat ketat.
 
 ### Transparansi Referensial (Referential Transparency)
 

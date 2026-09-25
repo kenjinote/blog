@@ -34,9 +34,9 @@ Git pada dasarnya menggunakan 3 objek untuk merepresentasikan keadaan repositori
 1. **Blob (Binary Large Object)**
    Objek ini menyimpan isi file itu sendiri. Informasi tentang nama file atau izin tidak disertakan di sini. Urutan byte murni dikompresi dengan zlib dan diidentifikasi oleh nilai hash SHA-1 (40 karakter heksadesimal).
 2. **[Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
-   Objek ini merepresentasikan struktur direktori. Objek Tree berisi pointer (nilai hash SHA-1) ke objek Tree lainnya (subdirektori) atau objek Blob (file), beserta nama file dan izin aksesnya. Ini berfungsi mirip dengan direktori pada UNIX.
+   Objek ini merepresentasikan struktur direktori. Objek Tree berisi [pointer](/id/p/c-language-pointers-memory-management-stack-heap/) (nilai hash SHA-1) ke objek Tree lainnya (subdirektori) atau objek Blob (file), beserta nama file dan izin aksesnya. Ini berfungsi mirip dengan direktori pada UNIX.
 3. **Commit**
-   Menyimpan pointer ke objek Tree tingkat atas (top-level) dari seluruh repositori pada titik waktu tertentu, bersama dengan metadata (pembuat, tanggal dan waktu komit, pesan komit), dan pointer ke komit sebelumnya (komit induk).
+   Menyimpan [pointer](/id/p/c-language-pointers-memory-management-stack-heap/) ke objek Tree tingkat atas (top-level) dari seluruh repositori pada titik waktu tertentu, bersama dengan metadata (pembuat, tanggal dan waktu komit, pesan komit), dan [pointer](/id/p/c-language-pointers-memory-management-stack-heap/) ke komit sebelumnya (komit induk).
 
 ```mermaid
 graph TD
@@ -56,7 +56,7 @@ ref: refs/heads/main
 ```
 
 Ini berarti "keadaan saat ini berada di ujung cabang `main`". Dan, jika Anda membuka `.git/refs/heads/main`, Anda akan melihat hash SHA-1 sebanyak 40 karakter tertulis di sana, yang menunjuk ke objek Commit terbaru.
-Cabang Git hanyalah pointer ringan (file) yang menunjuk ke komit tertentu. Hanya dengan mengetahui fakta ini, ketakutan bahwa "jika saya menghapus cabang, apakah semua file akan hilang?" akan sirna.
+Cabang Git hanyalah [pointer](/id/p/c-language-pointers-memory-management-stack-heap/) ringan (file) yang menunjuk ke komit tertentu. Hanya dengan mengetahui fakta ini, ketakutan bahwa "jika saya menghapus cabang, apakah semua file akan hilang?" akan sirna.
 
 ---
 
@@ -66,7 +66,7 @@ Ketika Git mendeteksi konflik atau menampilkan perbedaan pada file, algoritma ti
 
 ### 3.1 Algoritma Diff Myers
 
-Algoritma pendeteksi perbedaan default pada Git adalah algoritma yang dirancang oleh Eugene W. Myers. Ketika ada dua file teks $A$ dan $B$, masalah untuk menemukan "urutan pengeditan minimum (penyisipan dan penghapusan)" untuk mengubah $A$ menjadi $B$ dapat dimodelkan sebagai masalah jalur terpendek dalam teori graf.
+Algoritma pendeteksi perbedaan default pada Git adalah algoritma yang dirancang oleh Eugene W. Myers. Ketika ada dua file teks $A$ dan $B$, masalah untuk menemukan "urutan pengeditan minimum (penyisipan dan penghapusan)" untuk mengubah $A$ menjadi $B$ dapat dimodelkan sebagai masalah jalur terpendek dalam [teori graf](/id/p/graph-theory-dijkstra-a-star/).
 
 Misalkan panjang string masing-masing adalah $N$ dan $M$, dan totalnya adalah $V = N + M$. Dalam algoritma Myers, pencarian Jarak Edit (Edit Distance) $D$ dilakukan. Kompleksitas waktu algoritma ini dinyatakan dengan rumus berikut:
 
@@ -86,7 +86,7 @@ Ketika Anda merasa sulit untuk menyelesaikan konflik, salah satu pendekatannya a
 
 ### 3.3 SHA-1 dan Probabilitas Tabrakan
 
-Git mengelola semua objek menggunakan nilai hash SHA-1. Ukuran ruang hash adalah $2^{160}$. Mengenai probabilitas tabrakan hash (di mana konten yang berbeda memiliki nilai hash yang sama), jika diperkirakan menggunakan Paradoks Ulang Tahun (Birthday Paradox), jumlah objek $k$ yang dibutuhkan agar probabilitas tabrakan $p$ menjadi 50% adalah sebagai berikut:
+Git mengelola semua objek menggunakan nilai hash SHA-1. Ukuran ruang hash adalah $2^{160}$. Mengenai probabilitas tabrakan hash (di mana konten yang berbeda memiliki nilai hash yang sama), jika diperkirakan menggunakan [Paradoks Ulang Tahun](/id/p/birthday-paradox/) (Birthday Paradox), jumlah objek $k$ yang dibutuhkan agar probabilitas tabrakan $p$ menjadi 50% adalah sebagai berikut:
 
 $$ k \approx \sqrt{2 \ln(2)} \cdot 2^{80} \approx 1.2 \times 2^{80} $$
 
@@ -101,7 +101,7 @@ Tanpa sadar bahwa saya sedang bekerja di cabang `main`, saya menulis banyak kode
 
 ### Solusi: `git reset` dan Membuat Cabang Baru
 
-Dalam Git, komit adalah objek independen, dan cabang hanyalah pointer. Oleh karena itu, Anda dapat langsung menyelesaikannya dengan operasi: "buat cabang baru, lalu mundurkan pointer dari cabang saat ini".
+Dalam Git, komit adalah objek independen, dan cabang hanyalah [pointer](/id/p/c-language-pointers-memory-management-stack-heap/). Oleh karena itu, Anda dapat langsung menyelesaikannya dengan operasi: "buat cabang baru, lalu mundurkan [pointer](/id/p/c-language-pointers-memory-management-stack-heap/) dari cabang saat ini".
 
 ```bash
 # 1. Buat cabang baru yang menunjuk ke komit saat ini (komit yang dibuat secara tidak sengaja)
@@ -117,7 +117,7 @@ $ git checkout feature/login
 
 ### Penjelasan Gambar: Apa yang Terjadi di Dalam?
 
-Mari kita visualisasikan pergerakan pointer cabang pada saat ini menggunakan `gitGraph` dari Mermaid.
+Mari kita visualisasikan pergerakan [pointer](/id/p/c-language-pointers-memory-management-stack-heap/) cabang pada saat ini menggunakan `gitGraph` dari Mermaid.
 
 ```mermaid
 gitGraph
@@ -368,7 +368,7 @@ $ git reflog
 
 ## 12. Penutup
 
-Kami telah menjelaskan secara sangat rinci kesalahan yang sering dilakukan oleh pemula Git, mekanisme Git di baliknya, dan cara mengatasinya. Mulai dari melakukan komit ke cabang yang salah, membatalkan komit yang sudah di-push, memanfaatkan Stash, selamat dari Detached HEAD, hingga menyelesaikan konflik. Yang paling penting dalam semua hal ini adalah membayangkan "objek dan pointer apa yang sedang dimanipulasi Git di latar belakang".
+Kami telah menjelaskan secara sangat rinci kesalahan yang sering dilakukan oleh pemula Git, mekanisme Git di baliknya, dan cara mengatasinya. Mulai dari melakukan komit ke cabang yang salah, membatalkan komit yang sudah di-push, memanfaatkan Stash, selamat dari Detached HEAD, hingga menyelesaikan konflik. Yang paling penting dalam semua hal ini adalah membayangkan "objek dan [pointer](/id/p/c-language-pointers-memory-management-stack-heap/) apa yang sedang dimanipulasi Git di latar belakang".
 
 Perbedaan file dihitung menggunakan algoritma Diff yang ketat yang dapat direpresentasikan oleh rumus matematika, dan konsistensi riwayat dijamin oleh fungsi hash kriptografi. Jika Anda memahami filosofi desain yang indah ini, Anda akan menyadari bahwa Git bukanlah "kotak hitam misterius", melainkan perisai terkuat untuk melindungi kode sumber Anda dengan kuat.
 

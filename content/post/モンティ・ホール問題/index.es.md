@@ -112,7 +112,7 @@ A continuación, calculamos la probabilidad total de que el presentador abra la 
 $$ P(M_B) = P(M_B|C_A)P(C_A) + P(M_B|C_B)P(C_B) + P(M_B|C_C)P(C_C) $$
 $$ P(M_B) = \left(\frac{1}{2} \times \frac{1}{3}\right) + \left(0 \times \frac{1}{3}\right) + \left(1 \times \frac{1}{3}\right) = \frac{1}{6} + 0 + \frac{1}{3} = \frac{1}{2} $$
 
-Finalmente, aplicamos el teorema de Bayes para calcular las probabilidades a posteriori para la Puerta A y la Puerta C.
+Finalmente, aplicamos el [teorema de Bayes](/es/p/bayes-theorem/) para calcular las probabilidades a posteriori para la Puerta A y la Puerta C.
 
 **Probabilidad de que el coche esté en la Puerta A (si no cambias):**
 $$ P(C_A|M_B) = \frac{P(M_B|C_A) P(C_A)}{P(M_B)} = \frac{\frac{1}{2} \times \frac{1}{3}}{\frac{1}{2}} = \frac{1}{3} $$

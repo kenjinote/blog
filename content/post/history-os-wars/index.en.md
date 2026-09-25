@@ -18,7 +18,7 @@ In this article, we unravel the history of this endless struggle, thoroughly del
 
 ## Chapter 1: The Three-Way Beginning and Their Respective Philosophies
 
-The history of the OS began in the late 1970s and 1980s when computers transformed into personal devices. Each OS was born with entirely different backgrounds and philosophies.
+The [history of the OS](/en/p/history-of-macos/) began in the late 1970s and 1980s when computers transformed into personal devices. Each OS was born with entirely different backgrounds and philosophies.
 
 ### 1.1 Mac: The Intersection of Technology and Art
 In 1984, Apple announced the first Macintosh. The philosophy championed by Steve Jobs was "putting computers in the hands of everyone." While difficult operations via command line were the norm for computers at the time, the Mac popularized the Graphical User Interface (GUI) and the mouse.
@@ -54,7 +54,7 @@ From the 1990s through the 2000s, the battle for OS market share was extremely f
 ### 2.1 The Impact of Windows 95 and Overwhelming Dominance
 Released in 1995, Windows 95 became a social phenomenon. A full-fledged GUI, Internet connectivity (which later became Internet Explorer), and Plug and Play—the foundation of modern PCs was completed here. With the success of Windows 95, Microsoft established an absolute monopoly in the PC market.
 
-Faced with this overwhelming dominance, Apple temporarily fell into a severe management crisis. However, with the return of Steve Jobs in 1997 and the subsequent success of the "iMac", Apple staged a comeback in a unique niche market emphasizing design and lifestyle.
+Faced with this overwhelming dominance, Apple temporarily fell into a severe management crisis. However, with the return of [Steve Jobs](/en/p/biography-steve-jobs/) in 1997 and the subsequent success of the "iMac", Apple staged a comeback in a unique niche market emphasizing design and lifestyle.
 
 ### 2.2 The Browser Wars and the Rise of the Web
 The main battlefield of the OS wars eventually shifted to the Internet space. The First Browser War between Netscape and Internet Explorer redefined the value of the OS as a platform. Microsoft gained an advantage by bundling IE with Windows, but this also led to an antitrust lawsuit.
@@ -90,7 +90,7 @@ graph LR
 
 ## Chapter 4: The End of the Battle and a New Paradigm (2010s Onward)
 
-The long-lasting OS religious wars underwent a major shift in the 2010s. With the mobile revolution and the rise of the cloud, the very question of "which desktop OS are you using?" became less meaningful.
+The long-lasting OS religious wars underwent a major shift in the 2010s. With [the mobile revolution](/en/p/history-of-iphone/) and the rise of the cloud, the very question of "which desktop OS are you using?" became less meaningful.
 
 ### 4.1 The Shift to Mobile and a New Bipolar System
 With the advent of the iPhone (iOS) and Android, the center of people's computing shifted from PCs to smartphones. Curiously, even in the mobile world, a structure resembling past history emerged: Apple's closed approach (iOS) versus the open approach led by Google (Linux-based Android).
@@ -114,4 +114,4 @@ The "OS Religious Wars" often bred fruitless arguments. However, because systems
 
 The beautiful fonts and GUI of the Mac influenced Windows, the compatibility and massive ecosystem of Windows taught Apple the importance of platform strategy, and the open-source model of Linux became the foundation of software development for all tech giants today.
 
-No matter which OS we choose, the passion and philosophy of countless engineers breathe behind it. Knowing the history of the OS is knowing the very evolution of human thought toward technology.
+No matter which OS we choose, the passion and philosophy of countless engineers breathe behind it. Knowing the [history of the OS](/en/p/history-of-macos/) is knowing the very evolution of human thought toward technology.

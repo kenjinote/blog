@@ -258,7 +258,7 @@ Edge-AI hat sich von einer bloßen "ergänzenden Cloud-Technologie" zur Kerntech
 
 Softwareseitige Komprimierungstechniken wie Modellquantisierung und Pruning gehen Hand in Hand mit der bemerkenswerten hardwareseitigen Entwicklung von NPUs, TPUs und Hailo. Infolgedessen laufen Deep-Learning-Modelle, für die einst Supercomputer erforderlich waren, heute auf Geräten, die in unsere Handfläche passen, mit wenigen Milliwatt Leistung.
 
-Darüber hinaus erweitert sich die technologische Grenze rasend schnell durch verteilte Lernansätze wie Federated Learning und den Betrieb von generativer KI (SLMs) auf der Edge. Für Ingenieure und Architekten wird das Bestreben, "wie man die maximale Intelligenz auf der ressourcenbeschränkten Edge freisetzt", anstatt sich nur auf die riesigen Ressourcen der Cloud zu verlassen, in Zukunft die herausforderndste und aufregendste Aufgabe sein.
+Darüber hinaus erweitert sich die technologische Grenze rasend schnell durch verteilte Lernansätze wie Federated Learning und den Betrieb von generativer KI (SLMs) auf der Edge. [Für Ingenieure](/de/p/prompt-engineering-for-engineers/) und Architekten wird das Bestreben, "wie man die maximale Intelligenz auf der ressourcenbeschränkten Edge freisetzt", anstatt sich nur auf die riesigen Ressourcen der Cloud zu verlassen, in Zukunft die herausforderndste und aufregendste Aufgabe sein.
 
 An vorderster Front des IoT, wo physische und digitale Welten verschmelzen, wird Edge-AI zweifellos zum zentralen Nervensystem, das die Zukunft antreibt.
 

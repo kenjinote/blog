@@ -12,7 +12,7 @@ image: "eyecatch.jpg"
 
 Dalam rekayasa perangkat lunak modern, tidak ada hari tanpa mendengar istilah seperti "desain modular", "Prinsip Tanggung Jawab Tunggal (Single Responsibility Principle)", dan "kopling longgar (loose coupling)". Konsep-konsep ini diperlakukan sebagai aturan emas untuk mempertahankan basis kode yang bersih dan membangun sistem yang terukur serta mudah dipelihara. Namun, konsep-konsep ini sama sekali tidak lahir dalam beberapa tahun terakhir. Jika kita menelusuri akarnya, kita akan sampai pada satu sistem operasi yang lahir di Bell Labs pada awal 1970-an: "Unix".
 
-Unix bukan sekadar sistem operasi. Unix adalah perwujudan dari gagasan "bagaimana membangun perangkat lunak yang sangat baik", yaitu "Filosofi Unix". Filosofi yang dibangun oleh para raksasa seperti Ken Thompson, Dennis Ritchie, dan Doug McIlroy ini, masih hidup dan kuat di dalam arsitektur cloud-native dan layanan mikro saat ini, setengah abad kemudian.
+Unix bukan sekadar sistem operasi. Unix adalah perwujudan dari gagasan "bagaimana membangun perangkat lunak yang sangat baik", yaitu "Filosofi Unix". Filosofi yang dibangun oleh para raksasa seperti Ken Thompson, [Dennis Ritchie](/id/p/biography-dennis-ritchie/), dan Doug McIlroy ini, masih hidup dan kuat di dalam arsitektur cloud-native dan layanan mikro saat ini, setengah abad kemudian.
 
 Dalam artikel ini, kita akan menyelami esensi "desain modular" yang merupakan inti dari filosofi Unix, dan mengungkap mengapa gagasan ini terus didukung melampaui batas waktu.
 
@@ -91,7 +91,7 @@ Teknologi kontainer yang diwakili oleh Docker juga sangat berkaitan dengan filos
 
 ### Pemrograman Fungsional dan Pipa Data
 
-Komposisi fungsi dalam pemrograman fungsional (menggunakan keluaran dari satu fungsi sebagai masukan bagi fungsi lainnya) memiliki kemiripan matematis dengan konsep pipa Unix. Pemrosesan stream pada pengolahan big data seperti Apache Kafka juga merupakan penerapan konsep aliran teks dalam sistem terdistribusi.
+Komposisi fungsi dalam [pemrograman fungsional](/id/p/lambda-calculus-functional-programming/) (menggunakan keluaran dari satu fungsi sebagai masukan bagi fungsi lainnya) memiliki kemiripan matematis dengan konsep pipa Unix. Pemrosesan stream pada pengolahan big data seperti Apache Kafka juga merupakan penerapan konsep aliran teks dalam [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/).
 
 ```mermaid
 graph LR
@@ -120,4 +120,4 @@ Tren teknologi berubah dengan cepat, serta bahasa dan framework baru muncul dan 
 
 Esensi desain modular bukan sekadar membagi kode. Ini adalah seni yang didasarkan pada wawasan mendalam untuk memastikan "fleksibilitas terhadap perubahan di masa depan" dan memungkinkan "kerja sama dengan program yang tidak diketahui".
 
-Kita akan selalu kembali ke filosofi sederhana dan indah yang ditinggalkan oleh Ken Thompson dan para perintis lainnya, setiap kali kita mendesain sistem yang baru. Entah itu saat menulis skrip kecil atau membangun sistem terdistribusi berskala global, filosofi Unix akan selalu menjadi kompas yang memandu kita ke arah yang benar.
+Kita akan selalu kembali ke filosofi sederhana dan indah yang ditinggalkan oleh Ken Thompson dan para perintis lainnya, setiap kali kita mendesain sistem yang baru. Entah itu saat menulis skrip kecil atau membangun [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/) berskala global, filosofi Unix akan selalu menjadi kompas yang memandu kita ke arah yang benar.

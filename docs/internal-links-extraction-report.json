@@ -1,0 +1,1335 @@
+{
+  "published_articles": 9144,
+  "articles_with_terms": 9144,
+  "terms_by_language": {
+    "ar": 1286,
+    "de": 1282,
+    "en": 1224,
+    "es": 1227,
+    "fr": 1254,
+    "hi": 1360,
+    "id": 1252,
+    "ja": 1319,
+    "ko": 1301,
+    "pt": 1230,
+    "ru": 1243,
+    "zh-cn": 1299,
+    "zh-tw": 1296
+  },
+  "ambiguous_terms": [
+    {
+      "language": "ar",
+      "term": "gnfs",
+      "articles": [
+        "content/post/gnfs-cpp-implementation/index.ar.md",
+        "content/post/インターネットの暗号を破る人類最強の数学「一般数体篩法（GNFS）」とは？/index.ar.md"
+      ]
+    },
+    {
+      "language": "ar",
+      "term": "wasm",
+      "articles": [
+        "content/post/webassembly-wasm-current-future/index.ar.md",
+        "content/post/webassembly出力/index.ar.md"
+      ]
+    },
+    {
+      "language": "ar",
+      "term": "آلان تورينج",
+      "articles": [
+        "content/post/biography-alan-turing/index.ar.md",
+        "content/post/turing/index.ar.md"
+      ]
+    },
+    {
+      "language": "ar",
+      "term": "استراتيجية ألعاب اللوح",
+      "articles": [
+        "content/post/game-chess-rules/index.ar.md",
+        "content/post/game-othello-rules/index.ar.md"
+      ]
+    },
+    {
+      "language": "ar",
+      "term": "تاريخ أنظمة التشغيل",
+      "articles": [
+        "content/post/history-of-linux/index.ar.md",
+        "content/post/history-of-macos/index.ar.md",
+        "content/post/history-of-windows/index.ar.md"
+      ]
+    },
+    {
+      "language": "ar",
+      "term": "تقنية الشبكات",
+      "articles": [
+        "content/post/history-of-http/index.ar.md",
+        "content/post/history-of-https/index.ar.md",
+        "content/post/history-of-p2p/index.ar.md",
+        "content/post/history-of-udp/index.ar.md",
+        "content/post/network-bittorrent/index.ar.md",
+        "content/post/network-dns/index.ar.md",
+        "content/post/network-tcp-ip/index.ar.md"
+      ]
+    },
+    {
+      "language": "ar",
+      "term": "حصلت على جائزة microsoft mvp",
+      "articles": [
+        "content/post/Microsoft MVP受賞について(2023-2024)/index.ar.md",
+        "content/post/Microsoft MVP（2024-2025）を再受賞しました/index.ar.md"
+      ]
+    },
+    {
+      "language": "ar",
+      "term": "سرينيفاسا رامانوجان",
+      "articles": [
+        "content/post/biography-srinivasa-ramanujan/index.ar.md",
+        "content/post/ramanujan/index.ar.md"
+      ]
+    },
+    {
+      "language": "ar",
+      "term": "سفينة ثيسيوس",
+      "articles": [
+        "content/post/paradox-ship-of-theseus/index.ar.md",
+        "content/post/ship-of-theseus/index.ar.md"
+      ]
+    },
+    {
+      "language": "ar",
+      "term": "شيطان ماكسويل",
+      "articles": [
+        "content/post/maxwells-demon/index.ar.md",
+        "content/post/paradox-maxwells-demon/index.ar.md"
+      ]
+    },
+    {
+      "language": "ar",
+      "term": "عجائب الفيزياء",
+      "articles": [
+        "content/post/physics-bluetooth/index.ar.md",
+        "content/post/physics-doppler-effect/index.ar.md",
+        "content/post/physics-led-mechanism/index.ar.md",
+        "content/post/physics-noise-cancelling/index.ar.md",
+        "content/post/physics-wifi/index.ar.md"
+      ]
+    },
+    {
+      "language": "ar",
+      "term": "نظرية cap والأنظمة الموزعة",
+      "articles": [
+        "content/post/cap-theorem-distributed-systems-tradeoff/index.ar.md",
+        "content/post/cap-theorem-distributed-systems/index.ar.md"
+      ]
+    },
+    {
+      "language": "de",
+      "term": "alan turing",
+      "articles": [
+        "content/post/biography-alan-turing/index.de.md",
+        "content/post/turing/index.de.md"
+      ]
+    },
+    {
+      "language": "de",
+      "term": "cap-theorem und verteilte systeme",
+      "articles": [
+        "content/post/cap-theorem-distributed-systems-tradeoff/index.de.md",
+        "content/post/cap-theorem-distributed-systems/index.de.md"
+      ]
+    },
+    {
+      "language": "de",
+      "term": "das schiff des theseus",
+      "articles": [
+        "content/post/paradox-ship-of-theseus/index.de.md",
+        "content/post/ship-of-theseus/index.de.md"
+      ]
+    },
+    {
+      "language": "de",
+      "term": "gnfs",
+      "articles": [
+        "content/post/gnfs-cpp-implementation/index.de.md",
+        "content/post/一般数体篩法（GNFS）の真の数学的構造/index.de.md"
+      ]
+    },
+    {
+      "language": "de",
+      "term": "maxwells dämon",
+      "articles": [
+        "content/post/maxwells-demon/index.de.md",
+        "content/post/paradox-maxwells-demon/index.de.md"
+      ]
+    },
+    {
+      "language": "de",
+      "term": "netzwerktechnik",
+      "articles": [
+        "content/post/history-of-https/index.de.md",
+        "content/post/history-of-udp/index.de.md",
+        "content/post/network-tcp-ip/index.de.md"
+      ]
+    },
+    {
+      "language": "de",
+      "term": "netzwerktechnologie",
+      "articles": [
+        "content/post/history-of-http/index.de.md",
+        "content/post/history-of-ipv6/index.de.md",
+        "content/post/history-of-p2p/index.de.md",
+        "content/post/network-bittorrent/index.de.md",
+        "content/post/network-dns/index.de.md"
+      ]
+    },
+    {
+      "language": "de",
+      "term": "physik-wunder",
+      "articles": [
+        "content/post/physics-bluetooth/index.de.md",
+        "content/post/physics-wifi/index.de.md"
+      ]
+    },
+    {
+      "language": "de",
+      "term": "srinivasa ramanujan",
+      "articles": [
+        "content/post/biography-srinivasa-ramanujan/index.de.md",
+        "content/post/ramanujan/index.de.md"
+      ]
+    },
+    {
+      "language": "de",
+      "term": "wasm",
+      "articles": [
+        "content/post/webassembly-wasm-current-future/index.de.md",
+        "content/post/webassembly出力/index.de.md"
+      ]
+    },
+    {
+      "language": "de",
+      "term": "webassembly",
+      "articles": [
+        "content/post/webassembly-wasm-current-future/index.de.md",
+        "content/post/webassembly出力/index.de.md"
+      ]
+    },
+    {
+      "language": "en",
+      "term": "alan turing",
+      "articles": [
+        "content/post/biography-alan-turing/index.en.md",
+        "content/post/turing/index.en.md"
+      ]
+    },
+    {
+      "language": "en",
+      "term": "board game strategy",
+      "articles": [
+        "content/post/game-chess-rules/index.en.md",
+        "content/post/game-othello-rules/index.en.md"
+      ]
+    },
+    {
+      "language": "en",
+      "term": "cap theorem and distributed systems",
+      "articles": [
+        "content/post/cap-theorem-distributed-systems-tradeoff/index.en.md",
+        "content/post/cap-theorem-distributed-systems/index.en.md"
+      ]
+    },
+    {
+      "language": "en",
+      "term": "finance & cryptography",
+      "articles": [
+        "content/post/history-electronic-money/index.en.md",
+        "content/post/technology-blockchain/index.en.md"
+      ]
+    },
+    {
+      "language": "en",
+      "term": "gnfs",
+      "articles": [
+        "content/post/gnfs-cpp-implementation/index.en.md",
+        "content/post/インターネットの暗号を破る人類最強の数学「一般数体篩法（GNFS）」とは？/index.en.md"
+      ]
+    },
+    {
+      "language": "en",
+      "term": "history of os",
+      "articles": [
+        "content/post/history-of-linux/index.en.md",
+        "content/post/history-of-windows/index.en.md"
+      ]
+    },
+    {
+      "language": "en",
+      "term": "maxwell's demon",
+      "articles": [
+        "content/post/maxwells-demon/index.en.md",
+        "content/post/paradox-maxwells-demon/index.en.md"
+      ]
+    },
+    {
+      "language": "en",
+      "term": "network technology",
+      "articles": [
+        "content/post/history-of-http/index.en.md",
+        "content/post/history-of-https/index.en.md",
+        "content/post/history-of-ipv6/index.en.md",
+        "content/post/history-of-p2p/index.en.md",
+        "content/post/history-of-udp/index.en.md",
+        "content/post/network-bittorrent/index.en.md",
+        "content/post/network-dns/index.en.md",
+        "content/post/network-tcp-ip/index.en.md"
+      ]
+    },
+    {
+      "language": "en",
+      "term": "srinivasa ramanujan",
+      "articles": [
+        "content/post/biography-srinivasa-ramanujan/index.en.md",
+        "content/post/ramanujan/index.en.md"
+      ]
+    },
+    {
+      "language": "en",
+      "term": "the ship of theseus",
+      "articles": [
+        "content/post/paradox-ship-of-theseus/index.en.md",
+        "content/post/ship-of-theseus/index.en.md"
+      ]
+    },
+    {
+      "language": "en",
+      "term": "the wonder of physics",
+      "articles": [
+        "content/post/physics-bluetooth/index.en.md",
+        "content/post/physics-doppler-effect/index.en.md",
+        "content/post/physics-led-mechanism/index.en.md",
+        "content/post/physics-noise-cancelling/index.en.md",
+        "content/post/physics-wifi/index.en.md"
+      ]
+    },
+    {
+      "language": "en",
+      "term": "wasm",
+      "articles": [
+        "content/post/webassembly-wasm-current-future/index.en.md",
+        "content/post/webassembly出力/index.en.md"
+      ]
+    },
+    {
+      "language": "es",
+      "term": "alan turing",
+      "articles": [
+        "content/post/biography-alan-turing/index.es.md",
+        "content/post/turing/index.es.md"
+      ]
+    },
+    {
+      "language": "es",
+      "term": "el barco de teseo",
+      "articles": [
+        "content/post/paradox-ship-of-theseus/index.es.md",
+        "content/post/ship-of-theseus/index.es.md"
+      ]
+    },
+    {
+      "language": "es",
+      "term": "finanzas y criptografía",
+      "articles": [
+        "content/post/history-electronic-money/index.es.md",
+        "content/post/technology-blockchain/index.es.md"
+      ]
+    },
+    {
+      "language": "es",
+      "term": "gnfs",
+      "articles": [
+        "content/post/インターネットの暗号を破る人類最強の数学「一般数体篩法（GNFS）」とは？/index.es.md",
+        "content/post/一般数体篩法（GNFS）の真の数学的構造/index.es.md"
+      ]
+    },
+    {
+      "language": "es",
+      "term": "historia de los so",
+      "articles": [
+        "content/post/history-of-linux/index.es.md",
+        "content/post/history-of-windows/index.es.md"
+      ]
+    },
+    {
+      "language": "es",
+      "term": "misterios de la física",
+      "articles": [
+        "content/post/physics-doppler-effect/index.es.md",
+        "content/post/physics-led-mechanism/index.es.md"
+      ]
+    },
+    {
+      "language": "es",
+      "term": "srinivasa ramanujan",
+      "articles": [
+        "content/post/biography-srinivasa-ramanujan/index.es.md",
+        "content/post/ramanujan/index.es.md"
+      ]
+    },
+    {
+      "language": "es",
+      "term": "tecnología de redes",
+      "articles": [
+        "content/post/history-of-http/index.es.md",
+        "content/post/history-of-ipv6/index.es.md",
+        "content/post/history-of-p2p/index.es.md",
+        "content/post/history-of-udp/index.es.md",
+        "content/post/network-bittorrent/index.es.md",
+        "content/post/network-tcp-ip/index.es.md"
+      ]
+    },
+    {
+      "language": "es",
+      "term": "teorema cap y sistemas distribuidos",
+      "articles": [
+        "content/post/cap-theorem-distributed-systems-tradeoff/index.es.md",
+        "content/post/cap-theorem-distributed-systems/index.es.md"
+      ]
+    },
+    {
+      "language": "fr",
+      "term": "alan turing",
+      "articles": [
+        "content/post/biography-alan-turing/index.fr.md",
+        "content/post/turing/index.fr.md"
+      ]
+    },
+    {
+      "language": "fr",
+      "term": "gnfs",
+      "articles": [
+        "content/post/gnfs-cpp-implementation/index.fr.md",
+        "content/post/一般数体篩法（GNFS）の真の数学的構造/index.fr.md"
+      ]
+    },
+    {
+      "language": "fr",
+      "term": "histoire de l'os",
+      "articles": [
+        "content/post/history-of-linux/index.fr.md",
+        "content/post/history-of-windows/index.fr.md"
+      ]
+    },
+    {
+      "language": "fr",
+      "term": "le bateau de thésée",
+      "articles": [
+        "content/post/paradox-ship-of-theseus/index.fr.md",
+        "content/post/ship-of-theseus/index.fr.md"
+      ]
+    },
+    {
+      "language": "fr",
+      "term": "les mystères de la physique",
+      "articles": [
+        "content/post/physics-bluetooth/index.fr.md",
+        "content/post/physics-wifi/index.fr.md"
+      ]
+    },
+    {
+      "language": "fr",
+      "term": "lois de la physique et technologies du quotidien",
+      "articles": [
+        "content/post/physics-lithium-ion/index.fr.md",
+        "content/post/physics-optical-fiber/index.fr.md",
+        "content/post/physics-rfid-nfc/index.fr.md"
+      ]
+    },
+    {
+      "language": "fr",
+      "term": "mystères de la physique",
+      "articles": [
+        "content/post/physics-doppler-effect/index.fr.md",
+        "content/post/physics-led-mechanism/index.fr.md"
+      ]
+    },
+    {
+      "language": "fr",
+      "term": "srinivasa ramanujan",
+      "articles": [
+        "content/post/biography-srinivasa-ramanujan/index.fr.md",
+        "content/post/ramanujan/index.fr.md"
+      ]
+    },
+    {
+      "language": "fr",
+      "term": "technologie réseau",
+      "articles": [
+        "content/post/history-of-http/index.fr.md",
+        "content/post/history-of-https/index.fr.md",
+        "content/post/history-of-ipv6/index.fr.md",
+        "content/post/history-of-p2p/index.fr.md",
+        "content/post/history-of-udp/index.fr.md",
+        "content/post/network-bittorrent/index.fr.md",
+        "content/post/network-dns/index.fr.md",
+        "content/post/network-tcp-ip/index.fr.md"
+      ]
+    },
+    {
+      "language": "fr",
+      "term": "théorème cap et systèmes distribués",
+      "articles": [
+        "content/post/cap-theorem-distributed-systems-tradeoff/index.fr.md",
+        "content/post/cap-theorem-distributed-systems/index.fr.md"
+      ]
+    },
+    {
+      "language": "hi",
+      "term": "cap प्रमेय और वितरित सिस्टम",
+      "articles": [
+        "content/post/cap-theorem-distributed-systems-tradeoff/index.hi.md",
+        "content/post/cap-theorem-distributed-systems/index.hi.md"
+      ]
+    },
+    {
+      "language": "hi",
+      "term": "gnfs",
+      "articles": [
+        "content/post/gnfs-cpp-implementation/index.hi.md",
+        "content/post/インターネットの暗号を破る人類最強の数学「一般数体篩法（GNFS）」とは？/index.hi.md"
+      ]
+    },
+    {
+      "language": "hi",
+      "term": "microsoft mvp",
+      "articles": [
+        "content/post/Microsoft MVP受賞について(2023-2024)/index.hi.md",
+        "content/post/Microsoft MVP（2025-2026）を再受賞しました/index.hi.md"
+      ]
+    },
+    {
+      "language": "hi",
+      "term": "os का इतिहास",
+      "articles": [
+        "content/post/history-of-linux/index.hi.md",
+        "content/post/history-of-macos/index.hi.md"
+      ]
+    },
+    {
+      "language": "hi",
+      "term": "wasm",
+      "articles": [
+        "content/post/webassembly-wasm-current-future/index.hi.md",
+        "content/post/webassembly出力/index.hi.md"
+      ]
+    },
+    {
+      "language": "hi",
+      "term": "एलन ट्यूरिंग",
+      "articles": [
+        "content/post/biography-alan-turing/index.hi.md",
+        "content/post/turing/index.hi.md"
+      ]
+    },
+    {
+      "language": "hi",
+      "term": "थीसियस का जहाज",
+      "articles": [
+        "content/post/paradox-ship-of-theseus/index.hi.md",
+        "content/post/ship-of-theseus/index.hi.md"
+      ]
+    },
+    {
+      "language": "hi",
+      "term": "नेटवर्क तकनीक",
+      "articles": [
+        "content/post/history-of-http/index.hi.md",
+        "content/post/history-of-https/index.hi.md",
+        "content/post/history-of-ipv6/index.hi.md",
+        "content/post/history-of-p2p/index.hi.md",
+        "content/post/history-of-udp/index.hi.md",
+        "content/post/network-bittorrent/index.hi.md",
+        "content/post/network-dns/index.hi.md",
+        "content/post/network-tcp-ip/index.hi.md"
+      ]
+    },
+    {
+      "language": "hi",
+      "term": "बोर्ड गेम रणनीति",
+      "articles": [
+        "content/post/game-chess-rules/index.hi.md",
+        "content/post/game-othello-rules/index.hi.md"
+      ]
+    },
+    {
+      "language": "hi",
+      "term": "भौतिकी का चमत्कार",
+      "articles": [
+        "content/post/physics-doppler-effect/index.hi.md",
+        "content/post/physics-led-mechanism/index.hi.md",
+        "content/post/physics-noise-cancelling/index.hi.md"
+      ]
+    },
+    {
+      "language": "hi",
+      "term": "भौतिकी के नियम और परिचित तकनीक",
+      "articles": [
+        "content/post/physics-lithium-ion/index.hi.md",
+        "content/post/physics-rfid-nfc/index.hi.md"
+      ]
+    },
+    {
+      "language": "hi",
+      "term": "मैक्सवेल का दानव",
+      "articles": [
+        "content/post/maxwells-demon/index.hi.md",
+        "content/post/paradox-maxwells-demon/index.hi.md"
+      ]
+    },
+    {
+      "language": "hi",
+      "term": "श्रीनिवास रामानुजन",
+      "articles": [
+        "content/post/biography-srinivasa-ramanujan/index.hi.md",
+        "content/post/ramanujan/index.hi.md"
+      ]
+    },
+    {
+      "language": "id",
+      "term": "alan turing",
+      "articles": [
+        "content/post/biography-alan-turing/index.id.md",
+        "content/post/turing/index.id.md"
+      ]
+    },
+    {
+      "language": "id",
+      "term": "gnfs",
+      "articles": [
+        "content/post/gnfs-cpp-implementation/index.id.md",
+        "content/post/一般数体篩法（GNFS）の真の数学的構造/index.id.md"
+      ]
+    },
+    {
+      "language": "id",
+      "term": "kapal theseus",
+      "articles": [
+        "content/post/paradox-ship-of-theseus/index.id.md",
+        "content/post/ship-of-theseus/index.id.md"
+      ]
+    },
+    {
+      "language": "id",
+      "term": "keajaiban fisika",
+      "articles": [
+        "content/post/physics-led-mechanism/index.id.md",
+        "content/post/physics-noise-cancelling/index.id.md"
+      ]
+    },
+    {
+      "language": "id",
+      "term": "sejarah os",
+      "articles": [
+        "content/post/history-of-linux/index.id.md",
+        "content/post/history-of-macos/index.id.md",
+        "content/post/history-of-windows/index.id.md"
+      ]
+    },
+    {
+      "language": "id",
+      "term": "srinivasa ramanujan",
+      "articles": [
+        "content/post/biography-srinivasa-ramanujan/index.id.md",
+        "content/post/ramanujan/index.id.md"
+      ]
+    },
+    {
+      "language": "id",
+      "term": "teknologi jaringan",
+      "articles": [
+        "content/post/history-of-http/index.id.md",
+        "content/post/history-of-https/index.id.md",
+        "content/post/history-of-ipv6/index.id.md",
+        "content/post/history-of-p2p/index.id.md",
+        "content/post/history-of-udp/index.id.md",
+        "content/post/network-bittorrent/index.id.md",
+        "content/post/network-dns/index.id.md",
+        "content/post/network-tcp-ip/index.id.md"
+      ]
+    },
+    {
+      "language": "id",
+      "term": "teorema cap dan sistem terdistribusi",
+      "articles": [
+        "content/post/cap-theorem-distributed-systems-tradeoff/index.id.md",
+        "content/post/cap-theorem-distributed-systems/index.id.md"
+      ]
+    },
+    {
+      "language": "id",
+      "term": "wasm",
+      "articles": [
+        "content/post/webassembly-wasm-current-future/index.id.md",
+        "content/post/webassembly出力/index.id.md"
+      ]
+    },
+    {
+      "language": "ja",
+      "term": "cap定理と分散システム",
+      "articles": [
+        "content/post/cap-theorem-distributed-systems-tradeoff/index.md",
+        "content/post/cap-theorem-distributed-systems/index.md"
+      ]
+    },
+    {
+      "language": "ja",
+      "term": "gnfs",
+      "articles": [
+        "content/post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+        "content/post/gnfs-cpp-implementation/index.md",
+        "content/post/インターネットの暗号を破る人類最強の数学「一般数体篩法（GNFS）」とは？/index.md",
+        "content/post/一般数体篩法（GNFS）の真の数学的構造/index.md"
+      ]
+    },
+    {
+      "language": "ja",
+      "term": "microsoft mvp",
+      "articles": [
+        "content/post/Microsoft MVP受賞について(2023-2024)/index.md",
+        "content/post/Microsoft MVP（2024-2025）を再受賞しました/index.md",
+        "content/post/Microsoft MVP（2025-2026）を再受賞しました/index.md"
+      ]
+    },
+    {
+      "language": "ja",
+      "term": "osの歴史",
+      "articles": [
+        "content/post/history-of-linux/index.md",
+        "content/post/history-of-macos/index.md",
+        "content/post/history-of-windows/index.md"
+      ]
+    },
+    {
+      "language": "ja",
+      "term": "wasm",
+      "articles": [
+        "content/post/webassembly-wasm-current-future/index.md",
+        "content/post/webassembly出力/index.md"
+      ]
+    },
+    {
+      "language": "ja",
+      "term": "webassembly",
+      "articles": [
+        "content/post/webassembly-wasm-current-future/index.md",
+        "content/post/webassembly出力/index.md"
+      ]
+    },
+    {
+      "language": "ja",
+      "term": "アラン・チューリング",
+      "articles": [
+        "content/post/biography-alan-turing/index.md",
+        "content/post/turing/index.md"
+      ]
+    },
+    {
+      "language": "ja",
+      "term": "グラフ理論",
+      "articles": [
+        "content/post/basics-of-graph-theory/index.md",
+        "content/post/graph-theory-dijkstra-a-star/index.md"
+      ]
+    },
+    {
+      "language": "ja",
+      "term": "シュリニヴァーサ・ラマヌジャン",
+      "articles": [
+        "content/post/biography-srinivasa-ramanujan/index.md",
+        "content/post/ramanujan/index.md"
+      ]
+    },
+    {
+      "language": "ja",
+      "term": "テセウスの船",
+      "articles": [
+        "content/post/paradox-ship-of-theseus/index.md",
+        "content/post/ship-of-theseus/index.md"
+      ]
+    },
+    {
+      "language": "ja",
+      "term": "ネットワーク技術",
+      "articles": [
+        "content/post/history-of-http/index.md",
+        "content/post/history-of-https/index.md",
+        "content/post/history-of-ipv6/index.md",
+        "content/post/history-of-p2p/index.md",
+        "content/post/history-of-udp/index.md",
+        "content/post/network-bittorrent/index.md",
+        "content/post/network-dns/index.md",
+        "content/post/network-tcp-ip/index.md"
+      ]
+    },
+    {
+      "language": "ja",
+      "term": "ボードゲームとai",
+      "articles": [
+        "content/post/ai-chess/index.md",
+        "content/post/ai-othello/index.md",
+        "content/post/ai-shogi/index.md"
+      ]
+    },
+    {
+      "language": "ja",
+      "term": "ボードゲーム戦略",
+      "articles": [
+        "content/post/game-chess-rules/index.md",
+        "content/post/game-othello-rules/index.md"
+      ]
+    },
+    {
+      "language": "ja",
+      "term": "マクスウェルの悪魔",
+      "articles": [
+        "content/post/maxwells-demon/index.md",
+        "content/post/paradox-maxwells-demon/index.md"
+      ]
+    },
+    {
+      "language": "ja",
+      "term": "一般数体篩法",
+      "articles": [
+        "content/post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+        "content/post/gnfs-cpp-implementation/index.md",
+        "content/post/一般数体篩法（GNFS）の真の数学的構造/index.md"
+      ]
+    },
+    {
+      "language": "ja",
+      "term": "企業史",
+      "articles": [
+        "content/post/history-of-amd/index.md",
+        "content/post/history-of-bytedance/index.md",
+        "content/post/history-of-intel/index.md",
+        "content/post/history-of-salesforce/index.md"
+      ]
+    },
+    {
+      "language": "ja",
+      "term": "動的計画法",
+      "articles": [
+        "content/post/dynamic-programming-dp-introduction-knapsack-fibonacci/index.md",
+        "content/post/動的計画法dpマスター/index.md"
+      ]
+    },
+    {
+      "language": "ja",
+      "term": "物理の不思議",
+      "articles": [
+        "content/post/physics-bluetooth/index.md",
+        "content/post/physics-doppler-effect/index.md",
+        "content/post/physics-led-mechanism/index.md",
+        "content/post/physics-noise-cancelling/index.md",
+        "content/post/physics-wifi/index.md"
+      ]
+    },
+    {
+      "language": "ja",
+      "term": "物理法則と身近な技術",
+      "articles": [
+        "content/post/physics-lithium-ion/index.md",
+        "content/post/physics-optical-fiber/index.md",
+        "content/post/physics-rfid-nfc/index.md"
+      ]
+    },
+    {
+      "language": "ja",
+      "term": "金融・暗号技術",
+      "articles": [
+        "content/post/history-electronic-money/index.md",
+        "content/post/technology-blockchain/index.md"
+      ]
+    },
+    {
+      "language": "ko",
+      "term": "cap 정리와 분산 시스템",
+      "articles": [
+        "content/post/cap-theorem-distributed-systems-tradeoff/index.ko.md",
+        "content/post/cap-theorem-distributed-systems/index.ko.md"
+      ]
+    },
+    {
+      "language": "ko",
+      "term": "gnfs",
+      "articles": [
+        "content/post/GNFSを超えるアルゴリズムは存在するのか/index.ko.md",
+        "content/post/gnfs-cpp-implementation/index.ko.md",
+        "content/post/インターネットの暗号を破る人類最強の数学「一般数体篩法（GNFS）」とは？/index.ko.md",
+        "content/post/一般数体篩法（GNFS）の真の数学的構造/index.ko.md"
+      ]
+    },
+    {
+      "language": "ko",
+      "term": "microsoft mvp",
+      "articles": [
+        "content/post/Microsoft MVP受賞について(2023-2024)/index.ko.md",
+        "content/post/Microsoft MVP（2024-2025）を再受賞しました/index.ko.md",
+        "content/post/Microsoft MVP（2025-2026）を再受賞しました/index.ko.md"
+      ]
+    },
+    {
+      "language": "ko",
+      "term": "os의 역사",
+      "articles": [
+        "content/post/history-of-linux/index.ko.md",
+        "content/post/history-of-macos/index.ko.md",
+        "content/post/history-of-windows/index.ko.md"
+      ]
+    },
+    {
+      "language": "ko",
+      "term": "wasm",
+      "articles": [
+        "content/post/webassembly-wasm-current-future/index.ko.md",
+        "content/post/webassembly出力/index.ko.md"
+      ]
+    },
+    {
+      "language": "ko",
+      "term": "webassembly",
+      "articles": [
+        "content/post/webassembly-wasm-current-future/index.ko.md",
+        "content/post/webassembly出力/index.ko.md"
+      ]
+    },
+    {
+      "language": "ko",
+      "term": "금융·암호 기술",
+      "articles": [
+        "content/post/history-electronic-money/index.ko.md",
+        "content/post/technology-blockchain/index.ko.md"
+      ]
+    },
+    {
+      "language": "ko",
+      "term": "네트워크 기술",
+      "articles": [
+        "content/post/history-of-http/index.ko.md",
+        "content/post/history-of-https/index.ko.md",
+        "content/post/history-of-ipv6/index.ko.md",
+        "content/post/history-of-p2p/index.ko.md",
+        "content/post/history-of-udp/index.ko.md",
+        "content/post/network-bittorrent/index.ko.md",
+        "content/post/network-dns/index.ko.md",
+        "content/post/network-tcp-ip/index.ko.md"
+      ]
+    },
+    {
+      "language": "ko",
+      "term": "동적 계획법",
+      "articles": [
+        "content/post/dynamic-programming-dp-introduction-knapsack-fibonacci/index.ko.md",
+        "content/post/動的計画法dpマスター/index.ko.md"
+      ]
+    },
+    {
+      "language": "ko",
+      "term": "맥스웰의 악마",
+      "articles": [
+        "content/post/maxwells-demon/index.ko.md",
+        "content/post/paradox-maxwells-demon/index.ko.md"
+      ]
+    },
+    {
+      "language": "ko",
+      "term": "물리 법칙과 친숙한 기술",
+      "articles": [
+        "content/post/physics-lithium-ion/index.ko.md",
+        "content/post/physics-rfid-nfc/index.ko.md"
+      ]
+    },
+    {
+      "language": "ko",
+      "term": "물리의 신비",
+      "articles": [
+        "content/post/physics-bluetooth/index.ko.md",
+        "content/post/physics-led-mechanism/index.ko.md"
+      ]
+    },
+    {
+      "language": "ko",
+      "term": "물리학의 신비",
+      "articles": [
+        "content/post/physics-doppler-effect/index.ko.md",
+        "content/post/physics-noise-cancelling/index.ko.md",
+        "content/post/physics-wifi/index.ko.md"
+      ]
+    },
+    {
+      "language": "ko",
+      "term": "보드게임 전략",
+      "articles": [
+        "content/post/game-chess-rules/index.ko.md",
+        "content/post/game-othello-rules/index.ko.md"
+      ]
+    },
+    {
+      "language": "ko",
+      "term": "스리니바사 라마누잔",
+      "articles": [
+        "content/post/biography-srinivasa-ramanujan/index.ko.md",
+        "content/post/ramanujan/index.ko.md"
+      ]
+    },
+    {
+      "language": "ko",
+      "term": "앨런 튜링",
+      "articles": [
+        "content/post/biography-alan-turing/index.ko.md",
+        "content/post/turing/index.ko.md"
+      ]
+    },
+    {
+      "language": "ko",
+      "term": "일반 수체 체",
+      "articles": [
+        "content/post/GNFSを超えるアルゴリズムは存在するのか/index.ko.md",
+        "content/post/gnfs-cpp-implementation/index.ko.md",
+        "content/post/一般数体篩法（GNFS）の真の数学的構造/index.ko.md"
+      ]
+    },
+    {
+      "language": "ko",
+      "term": "테세우스의 배",
+      "articles": [
+        "content/post/paradox-ship-of-theseus/index.ko.md",
+        "content/post/ship-of-theseus/index.ko.md"
+      ]
+    },
+    {
+      "language": "pt",
+      "term": "alan turing",
+      "articles": [
+        "content/post/biography-alan-turing/index.pt.md",
+        "content/post/turing/index.pt.md"
+      ]
+    },
+    {
+      "language": "pt",
+      "term": "estratégia de jogos de tabuleiro",
+      "articles": [
+        "content/post/game-chess-rules/index.pt.md",
+        "content/post/game-othello-rules/index.pt.md"
+      ]
+    },
+    {
+      "language": "pt",
+      "term": "gnfs",
+      "articles": [
+        "content/post/インターネットの暗号を破る人類最強の数学「一般数体篩法（GNFS）」とは？/index.pt.md",
+        "content/post/一般数体篩法（GNFS）の真の数学的構造/index.pt.md"
+      ]
+    },
+    {
+      "language": "pt",
+      "term": "história do os",
+      "articles": [
+        "content/post/history-of-macos/index.pt.md",
+        "content/post/history-of-windows/index.pt.md"
+      ]
+    },
+    {
+      "language": "pt",
+      "term": "o navio de teseu",
+      "articles": [
+        "content/post/paradox-ship-of-theseus/index.pt.md",
+        "content/post/ship-of-theseus/index.pt.md"
+      ]
+    },
+    {
+      "language": "pt",
+      "term": "srinivasa ramanujan",
+      "articles": [
+        "content/post/biography-srinivasa-ramanujan/index.pt.md",
+        "content/post/ramanujan/index.pt.md"
+      ]
+    },
+    {
+      "language": "pt",
+      "term": "tecnologia de redes",
+      "articles": [
+        "content/post/history-of-http/index.pt.md",
+        "content/post/history-of-https/index.pt.md",
+        "content/post/history-of-ipv6/index.pt.md",
+        "content/post/history-of-p2p/index.pt.md",
+        "content/post/history-of-udp/index.pt.md",
+        "content/post/network-tcp-ip/index.pt.md"
+      ]
+    },
+    {
+      "language": "pt",
+      "term": "teorema cap e sistemas distribuídos",
+      "articles": [
+        "content/post/cap-theorem-distributed-systems-tradeoff/index.pt.md",
+        "content/post/cap-theorem-distributed-systems/index.pt.md"
+      ]
+    },
+    {
+      "language": "ru",
+      "term": "gnfs",
+      "articles": [
+        "content/post/gnfs-cpp-implementation/index.ru.md",
+        "content/post/インターネットの暗号を破る人類最強の数学「一般数体篩法（GNFS）」とは？/index.ru.md",
+        "content/post/一般数体篩法（GNFS）の真の数学的構造/index.ru.md"
+      ]
+    },
+    {
+      "language": "ru",
+      "term": "алан тьюринг",
+      "articles": [
+        "content/post/biography-alan-turing/index.ru.md",
+        "content/post/turing/index.ru.md"
+      ]
+    },
+    {
+      "language": "ru",
+      "term": "история ос",
+      "articles": [
+        "content/post/history-of-linux/index.ru.md",
+        "content/post/history-of-macos/index.ru.md",
+        "content/post/history-of-windows/index.ru.md"
+      ]
+    },
+    {
+      "language": "ru",
+      "term": "корабль тесея",
+      "articles": [
+        "content/post/paradox-ship-of-theseus/index.ru.md",
+        "content/post/ship-of-theseus/index.ru.md"
+      ]
+    },
+    {
+      "language": "ru",
+      "term": "сетевые технологии",
+      "articles": [
+        "content/post/history-of-http/index.ru.md",
+        "content/post/history-of-ipv6/index.ru.md",
+        "content/post/history-of-p2p/index.ru.md",
+        "content/post/history-of-udp/index.ru.md",
+        "content/post/network-bittorrent/index.ru.md",
+        "content/post/network-tcp-ip/index.ru.md"
+      ]
+    },
+    {
+      "language": "ru",
+      "term": "финансы и криптография",
+      "articles": [
+        "content/post/history-electronic-money/index.ru.md",
+        "content/post/technology-blockchain/index.ru.md"
+      ]
+    },
+    {
+      "language": "ru",
+      "term": "чудеса физики",
+      "articles": [
+        "content/post/physics-led-mechanism/index.ru.md",
+        "content/post/physics-noise-cancelling/index.ru.md"
+      ]
+    },
+    {
+      "language": "zh-cn",
+      "term": "cap定理与分布式系统",
+      "articles": [
+        "content/post/cap-theorem-distributed-systems-tradeoff/index.zh-cn.md",
+        "content/post/cap-theorem-distributed-systems/index.zh-cn.md"
+      ]
+    },
+    {
+      "language": "zh-cn",
+      "term": "gnfs",
+      "articles": [
+        "content/post/gnfs-cpp-implementation/index.zh-cn.md",
+        "content/post/インターネットの暗号を破る人類最強の数学「一般数体篩法（GNFS）」とは？/index.zh-cn.md"
+      ]
+    },
+    {
+      "language": "zh-cn",
+      "term": "wasm",
+      "articles": [
+        "content/post/webassembly-wasm-current-future/index.zh-cn.md",
+        "content/post/webassembly出力/index.zh-cn.md"
+      ]
+    },
+    {
+      "language": "zh-cn",
+      "term": "忒修斯之船",
+      "articles": [
+        "content/post/paradox-ship-of-theseus/index.zh-cn.md",
+        "content/post/ship-of-theseus/index.zh-cn.md"
+      ]
+    },
+    {
+      "language": "zh-cn",
+      "term": "斯里尼瓦瑟·拉马努金",
+      "articles": [
+        "content/post/biography-srinivasa-ramanujan/index.zh-cn.md",
+        "content/post/ramanujan/index.zh-cn.md"
+      ]
+    },
+    {
+      "language": "zh-cn",
+      "term": "物理的奥秘",
+      "articles": [
+        "content/post/physics-bluetooth/index.zh-cn.md",
+        "content/post/physics-doppler-effect/index.zh-cn.md",
+        "content/post/physics-led-mechanism/index.zh-cn.md",
+        "content/post/physics-noise-cancelling/index.zh-cn.md",
+        "content/post/physics-wifi/index.zh-cn.md"
+      ]
+    },
+    {
+      "language": "zh-cn",
+      "term": "网络技术",
+      "articles": [
+        "content/post/history-of-http/index.zh-cn.md",
+        "content/post/history-of-https/index.zh-cn.md",
+        "content/post/history-of-ipv6/index.zh-cn.md",
+        "content/post/history-of-p2p/index.zh-cn.md",
+        "content/post/history-of-udp/index.zh-cn.md",
+        "content/post/network-bittorrent/index.zh-cn.md",
+        "content/post/network-dns/index.zh-cn.md",
+        "content/post/network-tcp-ip/index.zh-cn.md"
+      ]
+    },
+    {
+      "language": "zh-cn",
+      "term": "艾伦·图灵",
+      "articles": [
+        "content/post/biography-alan-turing/index.zh-cn.md",
+        "content/post/turing/index.zh-cn.md"
+      ]
+    },
+    {
+      "language": "zh-cn",
+      "term": "荣获microsoft mvp",
+      "articles": [
+        "content/post/Microsoft MVP受賞について(2023-2024)/index.zh-cn.md",
+        "content/post/Microsoft MVP（2025-2026）を再受賞しました/index.zh-cn.md"
+      ]
+    },
+    {
+      "language": "zh-cn",
+      "term": "金融与密码学",
+      "articles": [
+        "content/post/history-electronic-money/index.zh-cn.md",
+        "content/post/technology-blockchain/index.zh-cn.md"
+      ]
+    },
+    {
+      "language": "zh-cn",
+      "term": "麦克斯韦妖",
+      "articles": [
+        "content/post/maxwells-demon/index.zh-cn.md",
+        "content/post/paradox-maxwells-demon/index.zh-cn.md"
+      ]
+    },
+    {
+      "language": "zh-tw",
+      "term": "gnfs",
+      "articles": [
+        "content/post/gnfs-cpp-implementation/index.zh-tw.md",
+        "content/post/インターネットの暗号を破る人類最強の数学「一般数体篩法（GNFS）」とは？/index.zh-tw.md"
+      ]
+    },
+    {
+      "language": "zh-tw",
+      "term": "os的歷史",
+      "articles": [
+        "content/post/history-of-linux/index.zh-tw.md",
+        "content/post/history-of-macos/index.zh-tw.md"
+      ]
+    },
+    {
+      "language": "zh-tw",
+      "term": "wasm",
+      "articles": [
+        "content/post/webassembly-wasm-current-future/index.zh-tw.md",
+        "content/post/webassembly出力/index.zh-tw.md"
+      ]
+    },
+    {
+      "language": "zh-tw",
+      "term": "再次榮獲 microsoft mvp",
+      "articles": [
+        "content/post/Microsoft MVP（2024-2025）を再受賞しました/index.zh-tw.md",
+        "content/post/Microsoft MVP（2025-2026）を再受賞しました/index.zh-tw.md"
+      ]
+    },
+    {
+      "language": "zh-tw",
+      "term": "忒修斯之船",
+      "articles": [
+        "content/post/paradox-ship-of-theseus/index.zh-tw.md",
+        "content/post/ship-of-theseus/index.zh-tw.md"
+      ]
+    },
+    {
+      "language": "zh-tw",
+      "term": "斯里尼瓦瑟·拉馬努金",
+      "articles": [
+        "content/post/biography-srinivasa-ramanujan/index.zh-tw.md",
+        "content/post/ramanujan/index.zh-tw.md"
+      ]
+    },
+    {
+      "language": "zh-tw",
+      "term": "桌遊策略",
+      "articles": [
+        "content/post/game-chess-rules/index.zh-tw.md",
+        "content/post/game-othello-rules/index.zh-tw.md"
+      ]
+    },
+    {
+      "language": "zh-tw",
+      "term": "物理的奧秘",
+      "articles": [
+        "content/post/physics-bluetooth/index.zh-tw.md",
+        "content/post/physics-doppler-effect/index.zh-tw.md",
+        "content/post/physics-led-mechanism/index.zh-tw.md",
+        "content/post/physics-noise-cancelling/index.zh-tw.md",
+        "content/post/physics-wifi/index.zh-tw.md"
+      ]
+    },
+    {
+      "language": "zh-tw",
+      "term": "網路技術",
+      "articles": [
+        "content/post/history-of-http/index.zh-tw.md",
+        "content/post/history-of-https/index.zh-tw.md",
+        "content/post/history-of-ipv6/index.zh-tw.md",
+        "content/post/history-of-p2p/index.zh-tw.md",
+        "content/post/history-of-udp/index.zh-tw.md",
+        "content/post/network-bittorrent/index.zh-tw.md",
+        "content/post/network-dns/index.zh-tw.md",
+        "content/post/network-tcp-ip/index.zh-tw.md"
+      ]
+    },
+    {
+      "language": "zh-tw",
+      "term": "艾倫·圖靈",
+      "articles": [
+        "content/post/biography-alan-turing/index.zh-tw.md",
+        "content/post/turing/index.zh-tw.md"
+      ]
+    },
+    {
+      "language": "zh-tw",
+      "term": "馬克士威妖",
+      "articles": [
+        "content/post/maxwells-demon/index.zh-tw.md",
+        "content/post/paradox-maxwells-demon/index.zh-tw.md"
+      ]
+    }
+  ],
+  "articles_without_safe_terms": []
+}

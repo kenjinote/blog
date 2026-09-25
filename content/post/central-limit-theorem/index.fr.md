@@ -145,7 +145,7 @@ $$
 \phi_Y(t)=E[e^{itY}]=1-\frac{t^2}{2}+o(t^2)\quad(t\to0).
 $$
 
-D'après l'indépendance, on obtient l'équation suivante. Puisque la limite est la fonction caractéristique de la distribution normale standard, la convergence en distribution découle du théorème de continuité de Lévy. Les fonctions caractéristiques et les fonctions génératrices de moments sont différentes, et l'existence d'une fonction génératrice de moments n'est pas nécessaire pour cette preuve.
+D'après l'indépendance, on obtient l'équation suivante. Puisque la limite est la fonction caractéristique de la distribution normale standard, la convergence en distribution découle du théorème de continuité de Lévy. Les fonctions caractéristiques et les [fonctions génératrices](/fr/p/generating-functions/) de moments sont différentes, et l'existence d'une fonction génératrice de moments n'est pas nécessaire pour cette preuve.
 
 $$
 \phi_{Z_n}(t)=\left[\phi_Y\!\left(\frac{t}{\sqrt n}\right)\right]^n

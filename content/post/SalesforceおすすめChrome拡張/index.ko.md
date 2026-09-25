@@ -34,6 +34,6 @@ description: 'Salesforce 개발 및 운영을 극적으로 효율화해 주는 �
 
 ![img.png](img.webp)
 
-Salesforce 코드를 검색할 때 편리합니다.
+[Salesforce](/ko/p/salesforce%E3%81%AEsoql%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%A6%E6%97%A5%E5%88%A5%E3%81%AE%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%90%E6%95%B0%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/) 코드를 검색할 때 편리합니다.
 
 [Salesforce advanced Code searcher](https://chrome.google.com/webstore/detail/salesforce-advanced-code/lnkgcmpjkkkeffambkllliefdpjdklmi)

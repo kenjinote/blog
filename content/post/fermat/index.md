@@ -20,7 +20,7 @@ tags: ["フェルマー", "数学史", "フェルマーの最終定理", "整数
 
 当時のフランスでは、裁判官は政治的・社会的な争いを避けるため、あまり人付き合いを広げないことが良しとされていました。この孤立した環境が、皮肉にも[フェルマー](https://kenji.blog/p/fermat/)に静かな時間を与え、彼を数学の深淵へと向かわせることになります。彼にとって数学は、職務の重圧から解放されるための純粋な喜びであり、誰かに強要されるものではありませんでした。
 
-[フェルマー](https://kenji.blog/p/fermat/)は自分の研究成果を論文として出版することを好まず、アイデアや証明をノートや本の余白に書き留めたり、当時の学術的なハブであったパリの修道士マラン・メルセンヌ（Marin Mersenne）を通じて、他の学者たちと手紙のやり取りをするだけで満足していました。彼は自らの発見を **「問題」** として他の数学者に提示し、挑発的に解答を求めることを楽しんでいました。ルネ・デカルト（René Descartes）やジョン・ウォリス（[John Wallis](https://kenji.blog/p/wallis/)）といった大数学者たちとも激しい論争を繰り広げたことで知られています。
+[フェルマー](https://kenji.blog/p/fermat/)は自分の研究成果を論文として出版することを好まず、アイデアや証明をノートや本の余白に書き留めたり、当時の学術的なハブであったパリの修道士[マラン・メルセンヌ](/p/mersenne/)（Marin Mersenne）を通じて、他の学者たちと手紙のやり取りをするだけで満足していました。彼は自らの発見を **「問題」** として他の数学者に提示し、挑発的に解答を求めることを楽しんでいました。[ルネ・デカルト](/p/descartes/)（René Descartes）や[ジョン・ウォリス](/p/wallis/)（[John Wallis](https://kenji.blog/p/wallis/)）といった大数学者たちとも激しい論争を繰り広げたことで知られています。
 
 ```mermaid
 flowchart TD
@@ -35,7 +35,7 @@ flowchart TD
 
 ## 2. 整数論への多大なる貢献
 
-[フェルマー](https://kenji.blog/p/fermat/)の最大の関心事であり、最も深い足跡を残した分野が **整数論** （数の性質を探求する分野）です。古代ギリシャの数学者ディオファントス（[Diophantus](https://kenji.blog/p/diophantus/)）の著書『算術（Arithmetica）』を愛読していた彼は、そこからインスピレーションを得て、数々の画期的な定理を発見しました。
+[フェルマー](https://kenji.blog/p/fermat/)の最大の関心事であり、最も深い足跡を残した分野が **整数論** （数の性質を探求する分野）です。古代ギリシャの数学者[ディオファントス](/p/diophantus/)（[Diophantus](https://kenji.blog/p/diophantus/)）の著書『算術（Arithmetica）』を愛読していた彼は、そこからインスピレーションを得て、数々の画期的な定理を発見しました。
 
 ### 2.1. [フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)
 
@@ -64,7 +64,7 @@ $$
 
 [フェルマー](https://kenji.blog/p/fermat/)は素数を作り出す数式についても考察しました。彼は、 $F_n = 2^{2^n} + 1$ の形で表される数はすべて素数であると予想しました。実際、 $n=0, 1, 2, 3, 4$ のとき、それぞれ $3, 5, 17, 257, 65537$ となり、これらはすべて素数です。これらは **[フェルマー](https://kenji.blog/p/fermat/)素数** と呼ばれます。
 
-しかし、後にレオンハルト・[オイラー](https://kenji.blog/p/euler/)（Leonhard Euler）が $n=5$ のとき $2^{32} + 1 = 4294967297 = 641 \times 6700417$ となることを示し、フェルマーの予想自体は反証されました。それでも、このフェルマー素数は、カール・フリードリヒ・ガウス（[Carl Friedrich Gauss](https://kenji.blog/p/gauss/)）によって「正 $n$ 角形が定規とコンパスで作図可能であるための条件」に深く関わっていることが証明され、後世の幾何学と代数学の融合において極めて重要な役割を果たしました。
+しかし、後にレオンハルト・[オイラー](https://kenji.blog/p/euler/)（Leonhard Euler）が $n=5$ のとき $2^{32} + 1 = 4294967297 = 641 \times 6700417$ となることを示し、フェルマーの予想自体は反証されました。それでも、このフェルマー素数は、[カール・フリードリヒ・ガウス](/p/gauss/)（[Carl Friedrich Gauss](https://kenji.blog/p/gauss/)）によって「正 $n$ 角形が定規とコンパスで作図可能であるための条件」に深く関わっていることが証明され、後世の幾何学と代数学の融合において極めて重要な役割を果たしました。
 
 ## 3. 無限降下法：[フェルマー](https://kenji.blog/p/fermat/)の鋭い剣
 
@@ -82,7 +82,7 @@ $$
 
 ## 4. 確率論の創始者の一人として
 
-[フェルマー](https://kenji.blog/p/fermat/)の類まれなる才能は、整数論だけにとどまりませんでした。1654年、彼は天才思想家・数学者であるブレーズ・パスカル（[Blaise Pascal](https://kenji.blog/p/pascal/)）と数通の手紙を交わします。この往復書簡こそが、近代的な **確率論** （Probability Theory）の幕開けとされています。
+[フェルマー](https://kenji.blog/p/fermat/)の類まれなる才能は、整数論だけにとどまりませんでした。1654年、彼は天才思想家・数学者である[ブレーズ・パスカル](/p/pascal/)（[Blaise Pascal](https://kenji.blog/p/pascal/)）と数通の手紙を交わします。この往復書簡こそが、近代的な **確率論** （Probability Theory）の幕開けとされています。
 
 議論の発端は、シュヴァリエ・ド・メレという人物から[パスカル](https://kenji.blog/p/pascal/)に持ち込まれた **「点数問題」** と呼ばれるギャンブルに関する問いでした。
 「同じ実力の二人のプレイヤーがゲームをして、先に一定回数勝った方が賞金を総取りする。しかし、ゲームが途中で中断されてしまった場合、その時点での勝敗の状況に応じて、どのように賞金を分配するのが公平か？」というものです。
@@ -91,7 +91,7 @@ $$
 
 ## 5. 微分積分学と物理学への先駆的貢献
 
-アイザック・[ニュートン](https://kenji.blog/p/newton/)（Isaac Newton）とゴットフリート・ライプニッツ（Gottfried Leibniz）が微積分学を確立するよりも数十年早く、[フェルマー](https://kenji.blog/p/fermat/)は曲線の接線を引く方法や、関数の最大値・最小値を求める独自の手法を考案していました。
+アイザック・[ニュートン](https://kenji.blog/p/newton/)（Isaac Newton）と[ゴットフリート・ライプニッツ](/p/leibniz/)（Gottfried Leibniz）が微積分学を確立するよりも数十年早く、[フェルマー](https://kenji.blog/p/fermat/)は曲線の接線を引く方法や、関数の最大値・最小値を求める独自の手法を考案していました。
 
 彼は **「擬等式」** （Adequality）と呼ばれる概念を導入しました。これは、ある極小量 $E$ を変化させたときに、値が「ほぼ等しい」と見なし、計算の最終段階で $E$ を $0$ として扱うことで極値を求める手法です。これは本質的に現代の微分法の考え方そのものであり、[ニュートン](https://kenji.blog/p/newton/)自身も後に「私はフェルマーの接線を引く方法からヒントを得た」と語っています。[フェルマー](https://kenji.blog/p/fermat/)がいなければ、微積分学の完成はさらに遅れていたかもしれません。
 
@@ -99,9 +99,9 @@ $$
 
 ## 6. 余白のドラマ：[フェルマーの最終定理](https://kenji.blog/p/fermats-last-theorem/)
 
-これほどまでに数々の偉大な業績を残した[フェルマー](https://kenji.blog/p/fermat/)ですが、彼を歴史上最も有名な数学者たらしめているのは、間違いなく **「フェルマーの最終定理」** （[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)）の存在です。
+これほどまでに数々の偉大な業績を残した[フェルマー](https://kenji.blog/p/fermat/)ですが、彼を歴史上最も有名な数学者たらしめているのは、間違いなく **「[フェルマーの最終定理](/p/fermats-last-theorem/)」** （[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)）の存在です。
 
-[フェルマー](https://kenji.blog/p/fermat/)は、愛読書であるディオファントスの『算術』の第2巻、[ピタゴラス](https://kenji.blog/p/pythagoras/)の定理（ $x^2 + y^2 = z^2$ ）に関する記述の余白に、ラテン語で次のような驚くべきメモを書き込みました。
+[フェルマー](https://kenji.blog/p/fermat/)は、愛読書である[ディオファントス](/p/diophantus/)の『算術』の第2巻、[ピタゴラス](https://kenji.blog/p/pythagoras/)の定理（ $x^2 + y^2 = z^2$ ）に関する記述の余白に、ラテン語で次のような驚くべきメモを書き込みました。
 
 > "Cubum autem in duos cubos, aut quadratoquadratum in duos quadratoquadratos, et generaliter nullam in infinitum ultra quadratum potestatem in duas eiusdem nominis fas est dividere cuius rei demonstrationem mirabilem sane detexi. Hanc marginis exiguitas non caperet."
 > 
@@ -123,7 +123,7 @@ $$
 
 この問題は、提示されてから350年以上もの間、誰にも解かれることなく「数学界最大の未解決問題」として君臨し続けました。「[フェルマー](https://kenji.blog/p/fermat/)は実は証明できていなかったのではないか（あるいは勘違いをしていたのではないか）」と多くの人が疑い始めた20世紀後半、ついに一人の数学者がこの難問に終止符を打ちます。
 
-イギリスの数学者、[アンドリュー・ワイルズ](https://kenji.blog/p/wiles/)（Andrew Wiles）です。彼は10歳のときに地元の図書館でこの問題に出会い、人生をかけて解くことを誓いました。彼は、日本の数学者である谷山豊と志村五郎によって提唱された「すべての楕円曲線はモジュラーである」という **谷山＝志村予想** と、ケン・リベット（Ken Ribet）によるフライ曲線の研究（イプシロン予想）を組み合わせるという、[フェルマー](https://kenji.blog/p/fermat/)の時代には想像もつかなかった壮大なアプローチをとりました。
+イギリスの数学者、[アンドリュー・ワイルズ](https://kenji.blog/p/wiles/)（Andrew Wiles）です。彼は10歳のときに地元の図書館でこの問題に出会い、人生をかけて解くことを誓いました。彼は、日本の数学者である[谷山豊](/p/taniyama-yutaka/)と[志村五郎](/p/shimura-goro/)によって提唱された「すべての楕円曲線はモジュラーである」という **谷山＝志村予想** と、ケン・リベット（Ken Ribet）によるフライ曲線の研究（イプシロン予想）を組み合わせるという、[フェルマー](https://kenji.blog/p/fermat/)の時代には想像もつかなかった壮大なアプローチをとりました。
 
 [ワイルズ](https://kenji.blog/p/wiles/)は屋根裏部屋に引きこもり、7年間の孤独な研究の末、1995年に完全な証明を発表しました。彼の証明は数百ページにも及ぶ現代数学の集大成であり、[フェルマー](https://kenji.blog/p/fermat/)が思い描いたであろう17世紀の数学的手法（「真に驚くべき証明」）とは全く異なるものでした。
 

@@ -105,7 +105,7 @@ A regra de ouro não é "adicionar pessoas", mas sim "adicionar tempo" ou "reduz
 
 A regra da "Equipe de Duas Pizzas" (Two-Pizza Team) proposta por Jeff Bezos, da Amazon, é uma das respostas perfeitas à Lei de Brooks. É a regra de que "o tamanho da equipe deve ser limitado ao número de pessoas que podem compartilhar duas pizzas (cerca de 6 a 8 pessoas)".
 
-Manter as equipes pequenas evita a explosão dos caminhos de comunicação. Ao construir sistemas em grande escala, em vez de criar uma equipe gigante e única, o sistema é dividido em componentes fracamente acoplados, como em uma arquitetura de microsserviços, e cada componente é gerenciado por uma equipe pequena independente.
+Manter as equipes pequenas evita a explosão dos caminhos de comunicação. Ao construir sistemas em grande escala, em vez de criar uma equipe gigante e única, o sistema é dividido em componentes fracamente acoplados, como em uma [arquitetura de microsserviços](/pt/p/microservices-architecture-bff-api-gateway/), e cada componente é gerenciado por uma equipe pequena independente.
 
 ```mermaid
 graph LR

@@ -42,7 +42,7 @@ Los logros de [Legendre](https://kenji.blog/es/p/legendre/) abarcan casi todos l
 
 ### 2.1 Pasión por la teoría de números y el símbolo de [Legendre](https://kenji.blog/es/p/legendre/)
 
-[Legendre](https://kenji.blog/es/p/legendre/) estaba profundamente fascinado por la teoría de números, liderada por predecesores como Pierre de Fermat y [Leonhard Euler](https://kenji.blog/es/p/euler/). Uno de sus mayores logros es su trabajo sobre la "Ley de reciprocidad cuadrática". Esta ley es uno de los teoremas más hermosos e importantes en la teoría de números para determinar si un número primo es congruente con un cuadrado módulo otro número primo.
+[Legendre](https://kenji.blog/es/p/legendre/) estaba profundamente fascinado por la teoría de números, liderada por predecesores como [Pierre de Fermat](/es/p/fermat/) y [Leonhard Euler](https://kenji.blog/es/p/euler/). Uno de sus mayores logros es su trabajo sobre la "Ley de reciprocidad cuadrática". Esta ley es uno de los teoremas más hermosos e importantes en la teoría de números para determinar si un número primo es congruente con un cuadrado módulo otro número primo.
 
 Él formuló esta ley y dio una prueba parcial (una prueba completa fue proporcionada más tarde por el joven Gauss). Además, para expresar esta investigación de manera concisa y elegante, introdujo una notación conocida hoy como el **símbolo de [Legendre](https://kenji.blog/es/p/legendre/)**.
 
@@ -77,9 +77,9 @@ Estos polinomios se han convertido en una herramienta indispensable en todo tipo
 
 ### 2.3 'Éléments de géométrie' y su gran impacto en la educación matemática
 
-Junto a sus actividades de investigación, [Legendre](https://kenji.blog/es/p/legendre/) también fue un educador excepcional. Su libro "Éléments de géométrie" (Elementos de Geometría), publicado en 1794, reorganizó los "Elementos" de [Euclides](https://kenji.blog/p/euclid/) para hacerlos más accesibles y rigurosos a los estudiantes de su tiempo.
+Junto a sus actividades de investigación, [Legendre](https://kenji.blog/es/p/legendre/) también fue un educador excepcional. Su libro "Éléments de géométrie" (Elementos de Geometría), publicado en 1794, reorganizó los "Elementos" de [Euclides](https://kenji.blog/es/p/euclid/) para hacerlos más accesibles y rigurosos a los estudiantes de su tiempo.
 
-Este libro de texto logró un éxito fenomenal, siendo traducido al inglés y otros idiomas y leído en todo el mundo, no solo en Francia. Fue ampliamente adoptado en los Estados Unidos y siguió siendo el estándar absoluto para la educación en geometría a lo largo del siglo XIX. En este libro, intentó continuamente probar el postulado de las paralelas (el quinto postulado de [Euclides](https://kenji.blog/p/euclid/)), agregando nuevas pruebas en cada edición, aunque en última instancia todas resultaron defectuosas. Sin embargo, su persistencia se convirtió en una de las fuerzas motrices importantes que impulsaron el nacimiento de la geometría no euclidiana.
+Este libro de texto logró un éxito fenomenal, siendo traducido al inglés y otros idiomas y leído en todo el mundo, no solo en Francia. Fue ampliamente adoptado en los Estados Unidos y siguió siendo el estándar absoluto para la educación en geometría a lo largo del siglo XIX. En este libro, intentó continuamente probar el postulado de las paralelas (el quinto postulado de [Euclides](https://kenji.blog/es/p/euclid/)), agregando nuevas pruebas en cada edición, aunque en última instancia todas resultaron defectuosas. Sin embargo, su persistencia se convirtió en una de las fuerzas motrices importantes que impulsaron [el nacimiento de la geometría no euclidiana](/es/p/non-euclidean-geometry/).
 
 ### 2.4 Reto al teorema de los números primos
 
@@ -91,7 +91,7 @@ $$
 
 Basándose en sus propios y extensos datos calculados a mano, dedujo que la constante $ A $ era aproximadamente $ 1.08366 $ (en la edición de 1808 de su 'Théorie des Nombres'). Esta fórmula sugería que a medida que $ x $ se hace más grande, la densidad de la distribución de números primos se acerca a $ \frac{1}{\ln(x)} $, una visión extremadamente avanzada para las matemáticas de la época.
 
-Más tarde se reveló que Gauss también había hecho una conjetura similar utilizando la integral logarítmica $ \text{Li}(x) $, y finalmente, en 1896, el teorema de los números primos fue probado completa e independientemente por Jacques Hadamard y Charles de la Vallée Poussin. Aunque una prueba rigurosa estuvo fuera de su alcance, esto demuestra cuán esencialmente correcta era la intuición de [Legendre](https://kenji.blog/es/p/legendre/).
+Más tarde se reveló que Gauss también había hecho una conjetura similar utilizando la integral logarítmica $ \text{Li}(x) $, y finalmente, en 1896, el [teorema de los números primos](/es/p/prime-number-theorem/) fue probado completa e independientemente por Jacques Hadamard y Charles de la Vallée Poussin. Aunque una prueba rigurosa estuvo fuera de su alcance, esto demuestra cuán esencialmente correcta era la intuición de [Legendre](https://kenji.blog/es/p/legendre/).
 
 ## 3. Disputa con Gauss: La tragedia sobre el descubrimiento de los mínimos cuadrados
 
@@ -106,11 +106,11 @@ flowchart LR
     C -->|"Predicción de órbitas, etc."| D["Aplicaciones"]
 ```
 
-Sin embargo, cuatro años más tarde en 1809, Gauss usó extensamente el método de mínimos cuadrados en su propio libro sobre mecánica celeste, afirmando: "He estado usando este método de manera rutinaria desde 1795". Por la evidencia histórica, se considera que la afirmación de Gauss era cierta, pero la prioridad académica de la publicación indudablemente le correspondía a [Legendre](https://kenji.blog/es/p/legendre/).
+Sin embargo, cuatro años más tarde en 1809, Gauss usó extensamente el [método de mínimos cuadrados](/es/p/method-of-least-squares/) en su propio libro sobre mecánica celeste, afirmando: "He estado usando este método de manera rutinaria desde 1795". Por la evidencia histórica, se considera que la afirmación de Gauss era cierta, pero la prioridad académica de la publicación indudablemente le correspondía a [Legendre](https://kenji.blog/es/p/legendre/).
 
 El comportamiento de Gauss hirió profundamente el orgullo de [Legendre](https://kenji.blog/es/p/legendre/). Legendre le envió una carta a Gauss exigiendo que reconociera su publicación previa, pero Gauss mantuvo una actitud fría. En el apéndice de su propia obra, [Legendre](https://kenji.blog/es/p/legendre/) expresó explícitamente su intensa ira hacia Gauss, afirmando que "cierta persona está reclamando el descubrimiento de otro como suyo".
 
-Además, con respecto al teorema de los números primos (la conjetura de [Legendre](https://kenji.blog/es/p/legendre/) de $ \pi(x) \approx \frac{x}{\ln x - 1.08366} $) y la ley de reciprocidad cuadrática, aunque Legendre los había descubierto y formulado primero, Gauss los probó por completo y los generalizó más profundamente, lo que provocó que todos los elogios públicos se centraran en Gauss. Para [Legendre](https://kenji.blog/es/p/legendre/), Gauss era un muro demasiado alto que le arrebataba todos sus logros, convirtiéndose en su némesis de por vida.
+Además, con respecto al [teorema de los números primos](/es/p/prime-number-theorem/) (la conjetura de [Legendre](https://kenji.blog/es/p/legendre/) de $ \pi(x) \approx \frac{x}{\ln x - 1.08366} $) y la ley de reciprocidad cuadrática, aunque Legendre los había descubierto y formulado primero, Gauss los probó por completo y los generalizó más profundamente, lo que provocó que todos los elogios públicos se centraran en Gauss. Para [Legendre](https://kenji.blog/es/p/legendre/), Gauss era un muro demasiado alto que le arrebataba todos sus logros, convirtiéndose en su némesis de por vida.
 
 ## 4. El misterio del retrato: Un gran malentendido de 200 años
 
@@ -131,6 +131,6 @@ Allí, en lugar del severo perfil del político Louis [Legendre](https://kenji.b
 
 [Adrien-Marie Legendre](https://kenji.blog/es/p/legendre/) terminó su vida en París en 1833. En sus últimos años, enfrentó eventos desafortunados, como que se le cortara su pensión debido a su oposición a las políticas del gobierno.
 
-A menudo se le trata como una "figura en la sombra" ante la abrumadora brillantez de genios de primer nivel de su época, como Gauss y Laplace. Sin embargo, el papel que desempeñó en la construcción de los cimientos de las matemáticas modernas es inconmensurable. El legado que dejó, como los polinomios de [Legendre](https://kenji.blog/es/p/legendre/), el símbolo de [Legendre](https://kenji.blog/es/p/legendre/) y la formulación del método de mínimos cuadrados, continúa sustentando el núcleo de la ciencia y la tecnología modernas.
+A menudo se le trata como una "figura en la sombra" ante la abrumadora brillantez de genios de primer nivel de su época, como Gauss y Laplace. Sin embargo, el papel que desempeñó en la construcción de los cimientos de las matemáticas modernas es inconmensurable. El legado que dejó, como los polinomios de [Legendre](https://kenji.blog/es/p/legendre/), el símbolo de [Legendre](https://kenji.blog/es/p/legendre/) y la formulación del [método de mínimos cuadrados](/es/p/method-of-least-squares/), continúa sustentando el núcleo de la ciencia y la tecnología modernas.
 
 Su vida estuvo coloreada por un destino extraño, que incluyó no solo éxitos espectaculares sino también agonías por la prioridad y la confusión póstuma de su retrato. Cuando encontremos el nombre **[Legendre](https://kenji.blog/es/p/legendre/)** en las fórmulas de matemáticas y física, por favor, no lo consideremos simplemente como un símbolo, sino tomémonos un momento para reflexionar sobre la vida de este gran matemático que poseía un espíritu indomable y lleno de humanidad.

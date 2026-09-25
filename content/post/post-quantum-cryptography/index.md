@@ -11,7 +11,7 @@ description: '公開鍵暗号は、量子コンピュータの実用化により
 
 ## はじめに：[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)がもたらす暗号技術への「脅威」
 
-現在、私たちがインターネット上で日常的に行っている通信——オンラインバンキングでの決済、ウェブサイトの閲覧（HTTPS）、メッセージアプリでのやり取り、そして[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)や暗号資産の取引に至るまで——それらの多くは「公開鍵暗号」と呼ばれる技術によって守られています。具体的には、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号や楕円曲線暗号（ECC）といったアルゴリズムが、現代のデジタル社会の信頼性を支える根幹となっています。
+現在、私たちがインターネット上で日常的に行っている通信——オンラインバンキングでの決済、ウェブサイトの閲覧（HTTPS）、メッセージアプリでのやり取り、そして[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)や暗号資産の取引に至るまで——それらの多くは「公開鍵暗号」と呼ばれる技術によって守られています。具体的には、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号や[楕円曲線暗号](/p/elliptic-curve-cryptography-math-cpp/)（[ECC](/p/elliptic-curve-cryptography-math-cpp/)）といったアルゴリズムが、現代のデジタル社会の信頼性を支える根幹となっています。
 
 これらの暗号方式は、「巨大な数の素因数分解」や「離散対数問題」といった、現在の古典的コンピュータ（スーパーコンピュータを含む）では解くのに天文学的な時間がかかる数学的難問を安全性の根拠としています。しかし、近年目覚ましい進歩を遂げている **「[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)」** が実用化されると、この前提が根本から覆されることになります。
 
@@ -29,7 +29,7 @@ description: '公開鍵暗号は、量子コンピュータの実用化により
 
 よく混同されがちな技術に「量子暗号（Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy）」や「量子鍵配送（QKD）」がありますが、これらは全く別のアプローチです。量子暗号（QKD）は、量子力学の物理法則（観測すると状態が変化する性質など）を利用して、通信経路上での盗聴を物理的に不可能にするハードウェアベースの技術です。専用の光ファイバーや特殊な機器が必要であり、導入コストや距離の制限という課題があります。
 
-一方、 **PQCはあくまで「数学」をベースとしたソフトウェアベースの暗号技術** です。そのため、既存のインターネットインフラ、サーバー、スマートフォン、ブラウザなどにソフトウェアのアップデートとして組み込むことが可能であり、現実社会への適用性が非常に高いのが特徴です。世界中のIT企業や政府機関は、現在使用している[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)やECCをこのPQCに置き換える（移行する）ことを急務としています。
+一方、 **PQCはあくまで「数学」をベースとしたソフトウェアベースの暗号技術** です。そのため、既存のインターネットインフラ、サーバー、スマートフォン、ブラウザなどにソフトウェアのアップデートとして組み込むことが可能であり、現実社会への適用性が非常に高いのが特徴です。世界中のIT企業や政府機関は、現在使用している[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)や[ECC](/p/elliptic-curve-cryptography-math-cpp/)をこのPQCに置き換える（移行する）ことを急務としています。
 
 ---
 
@@ -57,14 +57,14 @@ graph LR
 ```
 ### 1. 格子ベース暗号（Lattice-based [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy）
 
-現在、PQCの分野で最も有望視され、主流となっているのがこの「格子暗号」です。格子暗号は、多次元空間上の規則正しく並んだ点（格子点）に関する問題を安全性の根拠としています。有名な問題としては、「最短ベクトル問題（SVP：Shortest Vector Problem）」や「LWE問題（Learning With Errors）」などがあります。
+現在、PQCの分野で最も有望視され、主流となっているのがこの「[格子暗号](/p/lattice-based-cryptography-math-intuition/)」です。[格子暗号](/p/lattice-based-cryptography-math-intuition/)は、多次元空間上の規則正しく並んだ点（格子点）に関する問題を安全性の根拠としています。有名な問題としては、「最短ベクトル問題（SVP：Shortest Vector Problem）」や「LWE問題（Learning With Errors）」などがあります。
 
 **仕組みの概要：** 
 非常に次元の高い（数百〜数千次元）空間内に無数の点が格子状に並んでいると想像してください。ある特定の格子点を見つけるのは、2次元や3次元なら簡単ですが、数百次元になると古典コンピュータでも[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)でも効率的に見つけ出すアルゴリズムは発見されていません。特にLWE問題は、「連立一次方程式に意図的に小さな『ノイズ（誤差）』を加えると、元の変数を推測するのが劇的に難しくなる」という性質を利用しています。
 
 **長所：** 
 - 鍵共有（KEM）とデジタル署名の両方に適用可能。
-- 処理速度が非常に高速（[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)やECCよりも速い場合もある）。
+- 処理速度が非常に高速（[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)や[ECC](/p/elliptic-curve-cryptography-math-cpp/)よりも速い場合もある）。
 - 鍵のサイズや暗号文のサイズが比較的小さく、バランスが良い。
 
 現在NISTが標準化しているアルゴリズムの多く（ML-KEMやML-DSAなど）が、この格子ベース暗号を採用しています。
@@ -104,10 +104,10 @@ NISTは、ステートレスなハッシュベース署名として「SLH-DSA (�
 
 ### 4. 符号ベース暗号（Code-based [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy）
 
-符号ベース暗号は、通信経路上でのエラーを訂正するために使われる「誤り訂正符号」の理論を暗号に応用したものです。1978年に提案された「McEliece（マックエリス）暗号」が最も有名であり、PQCの中でも最も歴史が古いものの一つです。
+符号ベース暗号は、通信経路上でのエラーを訂正するために使われる「[誤り訂正符号](/p/error-correcting-codes-explained/)」の理論を暗号に応用したものです。1978年に提案された「McEliece（マックエリス）暗号」が最も有名であり、PQCの中でも最も歴史が古いものの一つです。
 
 **仕組みの概要：** 
-送信者は、受信者の[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)（特定の構造を隠蔽した誤り訂正符号の生成行列）を用いて平文をエンコードし、さらに意図的なエラー（ノイズ）を付加して送信します。受信者は、秘密鍵を使ってエラーを除去し、平文を取り出します。暗号解読者は、構造を知らないただのランダムな符号からエラーを訂正しなければならず、これは「一般的なシンドローム復号問題」と呼ばれ、[NP困難](https://kenji.blog/p/p-vs-np-problem/)であることが証明されています。
+送信者は、受信者の[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)（特定の構造を隠蔽した[誤り訂正符号](/p/error-correcting-codes-explained/)の生成行列）を用いて平文をエンコードし、さらに意図的なエラー（ノイズ）を付加して送信します。受信者は、秘密鍵を使ってエラーを除去し、平文を取り出します。暗号解読者は、構造を知らないただのランダムな符号からエラーを訂正しなければならず、これは「一般的なシンドローム復号問題」と呼ばれ、[NP困難](https://kenji.blog/p/p-vs-np-problem/)であることが証明されています。
 
 **長所：** 
 - 40年以上の長きにわたり徹底的に研究され、これまで有効な攻撃が見つかっていないため、安全性の信頼性が極めて高い。
@@ -128,28 +128,28 @@ NISTは、ステートレスなハッシュベース署名として「SLH-DSA (�
 
 1. **FIPS 203: ML-KEM（旧名: CRYSTALS-Kyber）** 
    - **用途:** 鍵カプセル化メカニズム（KEM）／暗号化・鍵共有
-   - **ベース技術:** 格子暗号（Module-LWE）
+   - **ベース技術:** [格子暗号](/p/lattice-based-cryptography-math-intuition/)（Module-LWE）
    - **特徴:** 鍵サイズや速度のバランスが非常に良く、Web通信（TLS）やセキュアなメッセージングアプリなど、一般的なインターネット用途におけるデフォルトのPQC鍵共有として機能します。
 
 2. **FIPS 204: ML-DSA（旧名: CRYSTALS-Dilithium）** 
    - **用途:** デジタル署名
-   - **ベース技術:** 格子暗号（Module-LWE）
+   - **ベース技術:** [格子暗号](/p/lattice-based-cryptography-math-intuition/)（Module-LWE）
    - **特徴:** デジタル署名の主要な標準。効率的な処理が可能であり、ソフトウェアの署名やドキュメントの[認証](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)など、あらゆる[電子署名](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)用途の新しい標準となります。
 
 3. **FIPS 205: SLH-DSA（旧名: SPHINCS+）** 
    - **用途:** デジタル署名
    - **ベース技術:** ハッシュベース暗号（ステートレス）
-   - **特徴:** 万が一、将来的に格子暗号に[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)が発見された場合のバックアップとして機能するため、極めて重要な役割を担います。署名サイズは大きくなりますが、長期的な信頼性が求められる用途に適しています。
+   - **特徴:** 万が一、将来的に[格子暗号](/p/lattice-based-cryptography-math-intuition/)に[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)が発見された場合のバックアップとして機能するため、極めて重要な役割を担います。署名サイズは大きくなりますが、長期的な信頼性が求められる用途に適しています。
 
 ### さらなる多様性の追求
 
-NISTは、最初の標準化プロセスを完了した一方で、さらなるアルゴリズムの探索を続けています。特に「格子暗号」に標準が偏っているため、 **アルゴリズムの多様性（[Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/) Diversity）** を確保することが重要視されています。鍵共有のバックアップ標準として、符号ベース暗号などの評価が進められており、PQCの基盤は今後さらに強固なものになっていく予定です。
+NISTは、最初の標準化プロセスを完了した一方で、さらなるアルゴリズムの探索を続けています。特に「[格子暗号](/p/lattice-based-cryptography-math-intuition/)」に標準が偏っているため、 **アルゴリズムの多様性（[Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/) Diversity）** を確保することが重要視されています。鍵共有のバックアップ標準として、符号ベース暗号などの評価が進められており、PQCの基盤は今後さらに強固なものになっていく予定です。
 
 ---
 
 ## PQCへの移行シナリオと課題：「クリプト・アジリティ」の重要性
 
-NISTから正式な標準規格がリリースされたことで、世界中の政府機関、金融機関、テクノロジー企業は、既存の[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)/ECCからPQCへの移行（マイグレーション）を本格化させます。NSA（米国国家安全保障局）などのガイドラインでも、早期の移行完了が推奨されています。
+NISTから正式な標準規格がリリースされたことで、世界中の政府機関、金融機関、テクノロジー企業は、既存の[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)/[ECC](/p/elliptic-curve-cryptography-math-cpp/)からPQCへの移行（マイグレーション）を本格化させます。NSA（米国国家安全保障局）などのガイドラインでも、早期の移行完了が推奨されています。
 
 ### ハイブリッドアプローチの採用
 

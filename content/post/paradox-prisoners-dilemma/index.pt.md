@@ -132,15 +132,15 @@ Essa descoberta sugere que a "moralidade" e a "confiança" na sociedade humana p
 
 ## 5. O surgimento da cooperação na biologia evolutiva
 
-O dilema do prisioneiro e o sucesso da estratégia de "retaliação" também tiveram um impacto profundo na biologia evolutiva (teoria dos jogos evolutiva). Conforme representado em "O Gene Egoísta", de Richard Dawkins, o mundo natural é baseado na lei do mais forte, e cada organismo deve priorizar sua própria sobrevivência e reprodução (traição). Mesmo assim, o mundo natural está repleto de "comportamento altruísta (cooperação)", como o compartilhamento de sangue entre os morcegos-vampiros e a sociabilidade das abelhas.
+[O dilema do prisioneiro](/pt/p/prisoners-dilemma/) e o sucesso da estratégia de "retaliação" também tiveram um impacto profundo na biologia evolutiva (teoria dos jogos evolutiva). Conforme representado em "O Gene Egoísta", de Richard Dawkins, o mundo natural é baseado na lei do mais forte, e cada organismo deve priorizar sua própria sobrevivência e reprodução (traição). Mesmo assim, o mundo natural está repleto de "comportamento altruísta (cooperação)", como o compartilhamento de sangue entre os morcegos-vampiros e a sociabilidade das abelhas.
 
 Em simulações evolutivas, foi provado que quando um pequeno grupo de "retaliadores" é introduzido em uma sociedade onde todos "traem", o grupo retaliador coopera entre si para obter grandes benefícios e gradualmente elimina o grupo traidor. Em outras palavras, na luta de longo prazo pela sobrevivência, o grupo que pode cooperar é o vencedor final.
 
 ## 6. Conclusão: Como superar o dilema
 
-O dilema do prisioneiro nos ensina a dura realidade de que se buscarmos excessivamente nossos próprios interesses, todos acabarão perdendo. Mas, ao mesmo tempo, como as pesquisas em jogos repetidos demonstram, se houver um relacionamento sustentável e mecanismos apropriados de feedback, podemos construir relacionamentos cooperativos.
+[O dilema do prisioneiro](/pt/p/prisoners-dilemma/) nos ensina a dura realidade de que se buscarmos excessivamente nossos próprios interesses, todos acabarão perdendo. Mas, ao mesmo tempo, como as pesquisas em jogos repetidos demonstram, se houver um relacionamento sustentável e mecanismos apropriados de feedback, podemos construir relacionamentos cooperativos.
 
-Para resolver o dilema do prisioneiro no mundo real, são necessárias abordagens como:
+Para resolver [o dilema do prisioneiro](/pt/p/prisoners-dilemma/) no mundo real, são necessárias abordagens como:
 - **Mudança de regras (Estado de direito)**: Institucionalizar as penalidades pela traição e eliminar os benefícios da traição. (Ex: leis antitruste ou impostos ambientais)
 - **Garantir a comunicação**: Oferecer oportunidades para confirmar as intenções uns dos outros e construir relacionamentos de confiança.
 - **Foco nas relações de longo prazo**: Torná-los cientes da sombra do futuro: "Se você trair desta vez, não haverá transações futuras".

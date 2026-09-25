@@ -75,7 +75,7 @@ $$
 3. **and**: 約 2.8% 的出現機率
 4. **to**: 約 2.6% 的出現機率
 
-如此這般，僅僅幾十個高頻詞彙佔據了整個文本近一半的比例，而剩下的幾十萬個單詞卻幾乎從未出現。這種「長尾（Long Tail）」現象，在搜尋引擎的索引建置以及大型語言模型（[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）的詞彙設計中極其重要。在自然語言處理領域，由於頻繁出現的單詞（停用詞）資訊量太低，通常會使用 TF-IDF 等方法來降低其權重。
+如此這般，僅僅幾十個高頻詞彙佔據了整個文本近一半的比例，而剩下的幾十萬個單詞卻幾乎從未出現。這種「長尾（Long Tail）」現象，在搜尋引擎的索引建置以及[大型語言模型](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）的詞彙設計中極其重要。在自然語言處理領域，由於頻繁出現的單詞（停用詞）資訊量太低，通常會使用 TF-IDF 等方法來降低其權重。
 
 ## 4.2. 城市人口分佈
 

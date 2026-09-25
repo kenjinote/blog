@@ -315,7 +315,7 @@ Hay cientos de temas (configuraciones) disponibles y también puedes crear el tu
 
 # 7. La evolución del prompt 2: Arquitectura WSL2 e integración de Starship
 
-WSL2 (Windows Subsystem for Linux 2), que te permite ejecutar un núcleo de Linux real en Windows, es indispensable para el desarrollo web moderno y el desarrollo nativo en la nube. "Starship" es la solución óptima para personalizar la consola de los shells (Bash o Zsh) dentro de WSL.
+WSL2 ([Windows Subsystem for Linux](/es/p/wsl2-ultimate-development-setup-guide/) 2), que te permite ejecutar un núcleo de Linux real en Windows, es indispensable para el desarrollo web moderno y el desarrollo nativo en la nube. "Starship" es la solución óptima para personalizar la consola de los shells (Bash o Zsh) dentro de WSL.
 
 Starship es una consola multi-shell extremadamente rápida y personalizable escrita en [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/). Su mayor ventaja es que puedes reproducir exactamente el mismo prompt en cualquier shell, como Bash, Zsh o Fish, escribiendo un solo archivo de configuración (TOML).
 
@@ -411,7 +411,7 @@ El significado y el tiempo requerido típico de cada variable son los siguientes
 - $ T_{hw\_input} $: Latencia de hardware desde que el interruptor mecánico del teclado se enciende, es escaneado mediante el controlador USB y se envía la señal de interrupción (aproximadamente 1-5 ms).
 - $ T_{os} $: Retraso de procesamiento de la cola de mensajes debido a la capa del controlador HID (Human Interface Device) del sistema operativo (aproximadamente 1-2 ms).
 - $ T_{pty} $: Latencia debido al almacenamiento en búfer y la conversión de codificación de caracteres (como de UTF-8 a UTF-16) por parte del ConPTY (pseudoterminal) (aproximadamente 2-10 ms).
-- $ T_{app} $: Tiempo de procesamiento por parte del shell (PowerShell/Bash) para interpretar el comando y determinar la salida en pantalla. El tiempo empleado en obtener el estado de Git por Oh My Posh o Starship también se incluye aquí (aproximadamente 10-50 ms).
+- $ T_{app} $: Tiempo de procesamiento por parte del shell ([PowerShell/Bash](/es/p/terminal-efficiency-powershell-bash-shortcuts/)) para interpretar el comando y determinar la salida en pantalla. El tiempo empleado en obtener el estado de Git por Oh My Posh o Starship también se incluye aquí (aproximadamente 10-50 ms).
 - $ T_{render} $: Retraso de renderizado por parte de Windows Terminal (DirectWrite/DirectX) desde la rasterización de los glifos de texto como texturas, su transferencia a la memoria de la GPU, hasta el intercambio (flipping) del búfer (swap chain) (aproximadamente 2-8 ms).
 - $ T_{display} $: Latencia de visualización desde que se envía la señal del búfer de fotogramas de la GPU al monitor, hasta que las moléculas de cristal líquido responden y cambian físicamente de estado emitiendo luz (velocidad de respuesta GtG, etc. aproximadamente 5-20 ms).
 
@@ -427,7 +427,7 @@ Como resultado de esto, incluso cuando se envía una gran cantidad de registros 
 
 # 9. Solución de problemas avanzados y técnicas de depuración
 
-Al personalizar Windows Terminal al extremo, es posible que te encuentres con problemas inesperados, como errores de sintaxis en los archivos de configuración o fallos en el renderizado de fuentes. Aquí presentamos técnicas avanzadas de solución de problemas para ingenieros.
+Al personalizar Windows Terminal al extremo, es posible que te encuentres con problemas inesperados, como errores de sintaxis en los archivos de configuración o fallos en el renderizado de fuentes. Aquí presentamos técnicas avanzadas de solución de problemas [para ingenieros](/es/p/prompt-engineering-for-engineers/).
 
 ## 9.1 Validación de JSON Schema de settings.json
 La estructura de `settings.json` está estrictamente definida, y se recomienda emplear un editor (como VS Code) para comprobar la sintaxis en tiempo real usando JSON Schema. Al abrir `settings.json` en VS Code, el esquema de Windows Terminal se aplica de forma predeterminada, advirtiéndote al instante de nombres de propiedades no válidos o errores de tipo en los valores (por ejemplo, si especificas una cadena donde se esperaba un número) mediante subrayados ondulados.

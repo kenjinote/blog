@@ -293,7 +293,7 @@ print("\n測量結果:", counts)
 
 ### 6.2 Grover 演算法（Grover's Algorithm）
 
-在未排序的 $N$ 個資料庫中找出特定資料的搜尋問題中，古典演算法平均需要進行 $N/2$ 次運算，而 Grover 演算法僅需 $\sqrt{N}$ 次即可找出目標資料。
+在未排序的 $N$ 個資料庫中找出特定資料的搜尋問題中，古典演算法平均需要進行 $N/2$ 次運算，而 [Grover 演算法](/zh-tw/p/grovers-algorithm-quantum-search/)僅需 $\sqrt{N}$ 次即可找出目標資料。
 該演算法使用稱為「預言機（Oracle）」的黑盒子將目標解的相位反轉，接著再進行「振幅放大（Amplitude Amplification）」，從而大幅提高觀測到目標解的機率。
 
 ```mermaid

@@ -152,7 +152,7 @@ Fungsi `np.linalg.eig` NumPy mengembalikan vektor eigen yang dinormalisasi (deng
 
 ## Diagonalisasi Matriks dan Manfaatnya yang Sangat Kuat
 
-Salah satu aplikasi paling penting dari nilai eigen dan vektor eigen adalah **diagonalisasi matriks**. Diagonalisasi adalah proses mengurai matriks kompleks $A$ menggunakan matriks diagonal $D$ yang mudah dihitung sebagai berikut:
+Salah satu aplikasi paling penting dari nilai eigen dan vektor eigen adalah **[diagonalisasi](/id/p/diagonalization-and-jordan-normal-form/) matriks**. [Diagonalisasi](/id/p/diagonalization-and-jordan-normal-form/) adalah proses mengurai matriks kompleks $A$ menggunakan matriks diagonal $D$ yang mudah dihitung sebagai berikut:
 
 $$ A = P D P^{-1} $$
 
@@ -164,9 +164,9 @@ $$
 P = \begin{pmatrix} 1 & 1 \\ -2 & 1 \end{pmatrix}, \quad D = \begin{pmatrix} 2 & 0 \\ 0 & 5 \end{pmatrix}
 $$
 
-Mengapa diagonalisasi ini sangat penting? Karena **itu membuat perhitungan pangkat matriks jauh lebih mudah**.
+Mengapa [diagonalisasi](/id/p/diagonalization-and-jordan-normal-form/) ini sangat penting? Karena **itu membuat perhitungan pangkat matriks jauh lebih mudah**.
 
-Misalnya, misalkan Anda ingin menghitung $A$ pangkat 100. Menghitung $A^{100}$ secara langsung merupakan komputasi yang sangat besar. Namun, menggunakan diagonalisasi:
+Misalnya, misalkan Anda ingin menghitung $A$ pangkat 100. Menghitung $A^{100}$ secara langsung merupakan komputasi yang sangat besar. Namun, menggunakan [diagonalisasi](/id/p/diagonalization-and-jordan-normal-form/):
 
 $$
 A^{100} = (P D P^{-1})(P D P^{-1}) \dots (P D P^{-1}) = P D^{100} P^{-1}

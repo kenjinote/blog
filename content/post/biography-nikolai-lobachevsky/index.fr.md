@@ -19,13 +19,13 @@ Comme le mathématicien britannique William Clifford l'a surnommé le « Coperni
 
 Nikolaï Lobatchevski est né en 1792 à Nijni Novgorod, dans l'Empire russe. Son père est mort alors qu'il était encore jeune, plongeant la famille dans une extrême pauvreté. Face à ces conditions de vie difficiles, sa mère a décidé de déménager à Kazan pour l'éducation de ses enfants. Cette décision fut la première étincelle qui donna naissance, plus tard, à un mathématicien de génie.
 
-En 1807, il entra à la toute nouvelle Université de Kazan en tant qu'étudiant boursier. Bien qu'il se destinât initialement à la médecine, sa rencontre avec l'éminent mathématicien Martin Bartels (qui fut également le professeur de Carl Friedrich Gauss) le rendit fasciné par l'attrait profond des mathématiques. Sous la direction de Bartels, Lobatchevski révéla un talent remarquable et obtint son master à seulement 21 ans. Par la suite, il gravit les échelons académiques à une vitesse sans précédent, devenant professeur extraordinaire à 24 ans.
+En 1807, il entra à la toute nouvelle Université de Kazan en tant qu'étudiant boursier. Bien qu'il se destinât initialement à la médecine, sa rencontre avec l'éminent mathématicien Martin Bartels (qui fut également le professeur de [Carl Friedrich Gauss](/fr/p/gauss/)) le rendit fasciné par l'attrait profond des mathématiques. Sous la direction de Bartels, Lobatchevski révéla un talent remarquable et obtint son master à seulement 21 ans. Par la suite, il gravit les échelons académiques à une vitesse sans précédent, devenant professeur extraordinaire à 24 ans.
 
 Sa vie fut intimement liée à l'Université de Kazan. Non seulement en tant que professeur, mais aussi comme directeur de la bibliothèque, directeur de l'observatoire, et recteur de l'université à l'âge précoce de 35 ans, il s'est consacré à la modernisation de l'université et au développement de l'éducation. Lors d'une épidémie de choléra, il a personnellement dirigé l'isolement du campus et la gestion de l'hygiène, sauvant ainsi la vie de nombreux étudiants. Cette anecdote témoigne qu'il n'était pas seulement un habitant de la tour d'ivoire, mais un homme doté d'un profond sens des responsabilités et d'une grande capacité d'action.
 
 ## Le défi du « Postulat des parallèles » : La naissance de la géométrie non euclidienne
 
-Ce qui a immortalisé le nom de Lobatchevski dans l'histoire, c'est son défi lancé au « Postulat des parallèles (le 5e postulat) » dans les *Éléments* d'Euclide.
+Ce qui a immortalisé le nom de Lobatchevski dans l'histoire, c'est son défi lancé au « Postulat des parallèles (le 5e postulat) » dans les *Éléments* d'[Euclide](/fr/p/euclid/).
 
 Depuis le IIIe siècle av. J.-C., ce postulat énonçant que « par un point extérieur à une droite, il ne passe qu'une seule droite parallèle » était considéré comme une vérité évidente. Pendant des siècles, d'innombrables mathématiciens ont tenté de prouver ce postulat à partir des quatre autres axiomes, mais tous ont échoué.
 
@@ -56,7 +56,7 @@ Malgré l'incompréhension et les moqueries de son entourage, Lobatchevski n'a p
 
 Les dernières années de Lobatchevski ne furent nullement heureuses. Il fut injustement démis de ses fonctions de recteur de l'université, perdit son fils bien-aimé et finit par perdre la vue. Devenu aveugle, il dicta la *Pangéométrie* à ses élèves juste avant sa mort, laissant ainsi l'aboutissement de ses théories. En 1856, il mourut à l'âge de 63 ans, sans avoir vu le jour où ses grandes réalisations seraient justement appréciées.
 
-Ce n'est que des décennies après sa mort qu'il reçut sa véritable reconnaissance en tant que « Copernic de la géométrie ». Sa théorie fut généralisée par Bernhard Riemann, évoluant vers la « géométrie riemannienne » qui décrit des espaces courbes multidimensionnels. Et au début du 20e siècle, lorsque Albert Einstein élabora la « Théorie de la relativité générale », c'est précisément ce cadre de géométrie non euclidienne qui fut indispensable pour décrire la vérité de l'univers, à savoir que l'espace-temps est déformé par la gravité.
+Ce n'est que des décennies après sa mort qu'il reçut sa véritable reconnaissance en tant que « Copernic de la géométrie ». Sa théorie fut généralisée par [Bernhard Riemann](/fr/p/riemann/), évoluant vers la « géométrie riemannienne » qui décrit des espaces courbes multidimensionnels. Et au début du 20e siècle, lorsque Albert Einstein élabora la « Théorie de la relativité générale », c'est précisément ce cadre de géométrie non euclidienne qui fut indispensable pour décrire la vérité de l'univers, à savoir que l'espace-temps est déformé par la gravité.
 
 Si Lobatchevski n'avait pas brisé le mur invisible du « sens commun », la physique et la cosmologie modernes auraient été complètement différentes.
 

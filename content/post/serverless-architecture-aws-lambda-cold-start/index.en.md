@@ -149,7 +149,7 @@ The time it takes for a cold start can be broadly divided into **AWS-side initia
 
 ### 4.2. Cold Starts from a Probability Perspective
 
-Using queuing theory (like the M/M/c model), you can mathematically model the probability of a cold start occurring.
+Using [queuing theory](/en/p/queuing-theory-basics/) (like the M/M/c model), you can mathematically model the probability of a cold start occurring.
 If the request arrival rate is $\lambda$, the lifespan of a warm container is $T_w$, and the processing time is $\mu$, when traffic spikes, the required concurrency (number of containers) rapidly increases, raising the cold start probability.
 
 In a steady state, the probability $P_{warm}$ that a warm container is reused can sometimes be approximated as follows.
@@ -274,7 +274,7 @@ However, if you design while ignoring the "shadows" such as cold starts, statele
 What is important is not to forget the basic principle of engineering that **"there is no silver bullet."**
 
 - For **systems with extremely strict latency requirements** (e.g., core logic of online multiplayer games, high-frequency trading in milliseconds), always-on containers (Amazon ECS/EKS) might be more suitable than serverless.
-- For **asynchronous processing with high burst traffic** or **Web APIs where you want to minimize operational costs**, AWS Lambda is the best choice.
+- For **[asynchronous processing](/en/p/event-driven-architecture-async/) with high burst traffic** or **Web APIs where you want to minimize operational costs**, AWS Lambda is the best choice.
 
 Deeply understanding the characteristics of the architecture and selecting the right technology for the right place. That is the only way to maximize the "light" of serverless while controlling its "shadow."
 

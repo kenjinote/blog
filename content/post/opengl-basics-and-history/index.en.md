@@ -39,7 +39,7 @@ graph TD
     C -- "Pixel Color Calculation" --> D["Framebuffer"]
 ```
 
-While this approach was approachable for beginners, implementing custom shading (such as toon rendering) or advanced visual effects was difficult. To address this, OpenGL 2.0 (2004) introduced "GLSL (OpenGL Shading Language)," evolving into a "programmable pipeline" that allowed developers to directly program the GPU's operations. Today, fixed functions are either deprecated or removed, and flexible rendering using shaders is the standard assumption.
+While this approach was approachable [for beginners](/en/p/leather-goods%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/), implementing custom shading (such as toon rendering) or advanced visual effects was difficult. To address this, OpenGL 2.0 (2004) introduced "GLSL (OpenGL Shading Language)," evolving into a "programmable pipeline" that allowed developers to directly program the GPU's operations. Today, fixed functions are either deprecated or removed, and flexible rendering using shaders is the standard assumption.
 
 # 3. Modern OpenGL Pipeline
 

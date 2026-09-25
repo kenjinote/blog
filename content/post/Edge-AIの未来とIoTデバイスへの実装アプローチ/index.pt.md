@@ -258,7 +258,7 @@ A Edge AI evoluiu da sua posição de uma mera "tecnologia complementar à nuvem
 
 As tecnologias de otimização no lado do software, como a quantização e a poda de modelos, e as espantosas evoluções do lado do hardware, como NPUs, TPUs e Hailo, tornaram-se as duas engrenagens dessa engrenagem principal. Modelos de deep learning que antes exigiam supercomputadores agora funcionam em dispositivos que cabem na palma das nossas mãos, usando apenas alguns miliwatts de energia.
 
-Além disso, a fronteira tecnológica está se expandindo rapidamente, com abordagens de aprendizado distribuído como o Federated Learning e a operação de IAs generativas (SLMs) na borda. Para engenheiros e arquitetos, além de depender dos vastos recursos da nuvem, buscar "como extrair o máximo de inteligência na borda com recursos limitados" será o desafio mais desafiador e empolgante no futuro.
+Além disso, a fronteira tecnológica está se expandindo rapidamente, com abordagens de aprendizado distribuído como o Federated Learning e a operação de IAs generativas (SLMs) na borda. [Para engenheiros](/pt/p/prompt-engineering-for-engineers/) e arquitetos, além de depender dos vastos recursos da nuvem, buscar "como extrair o máximo de inteligência na borda com recursos limitados" será o desafio mais desafiador e empolgante no futuro.
 
 Na linha de frente da IoT, onde o mundo físico se funde com o mundo digital, a Edge AI será sem dúvida o sistema nervoso central conduzindo o futuro.
 

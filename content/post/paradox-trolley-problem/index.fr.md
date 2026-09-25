@@ -124,7 +124,7 @@ Les résultats ont révélé qu'il existait une forte tendance utilitariste glob
 
 Les entreprises de développement d'IA devraient-elles implémenter des programmes dans leurs véhicules qui « sacrifieraient le propriétaire pour sauver d'autres personnes » ? S'ils le faisaient, les consommateurs achèteraient-ils « une voiture qui pourrait les tuer » ? (Dans de nombreuses enquêtes, bien que les gens affirment qu'« il est préférable que les voitures autonomes agissent de manière utilitariste pour la société dans son ensemble », ils montrent également des réponses contradictoires en déclarant qu'« ils ne voudraient pas acheter ce genre de voiture pour eux-mêmes (ils veulent une voiture qui les protège en priorité) »).
 
-Le problème du tramway n'est plus un simple jeu de classe de philosophie, mais un défi pratique urgent pour les ingénieurs, les juristes et les décideurs politiques.
+Le problème du tramway n'est plus un simple jeu de classe de philosophie, mais un défi pratique urgent [pour les ingénieurs](/fr/p/prompt-engineering-for-engineers/), les juristes et les décideurs politiques.
 
 ## 8. Autres applications pratiques et variations
 

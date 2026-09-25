@@ -17,7 +17,7 @@ tags:
 
 ## 1. 2007: "Today, Apple is going to reinvent the phone"
 
-On January 9, 2007, on the stage of the Macworld Expo, Steve Jobs delivered a legendary presentation that would go down in technology history.
+On January 9, 2007, on the stage of the Macworld Expo, [Steve Jobs](/en/p/biography-steve-jobs/) delivered a legendary presentation that would go down in technology history.
 He said, "Today, we are announcing three revolutionary products: a touch-controlled iPod, a revolutionary mobile phone, and a breakthrough internet communications device," revealing that these were not three separate devices, but just one device: the **iPhone**.
 
 At that time, cell phones (such as BlackBerry) had half of their bodies occupied by small physical keyboards. The iPhone eliminated all those keyboards, adopting a design that was considered insane at the time, turning almost the entire front face into a "multi-touch capable glass screen." A "screen that changes freely through software" was the true beginning of the mobile revolution.
@@ -33,7 +33,7 @@ This platform, which allowed developers to freely create apps and sell them dire
 
 The **iPhone 4**, announced in 2010, revamped its design into a flat shape made of glass and stainless steel, and featured a high-definition **Retina Display** that exceeded the limits of the human retina. The shock of seeing on-screen text as clearly as printed matter raised the standard for all subsequent smartphones.
 
-In the following year's **iPhone 4S** (2011), the voice assistant **Siri** was featured for the first time. It showed the future of "talking to operate" a smartphone, but the day after this announcement, Steve Jobs passed away. The iPhone 4S became the last iPhone that Jobs saw through to completion.
+In the following year's **iPhone 4S** (2011), the voice assistant **Siri** was featured for the first time. It showed the future of "talking to operate" a smartphone, but the day after this announcement, [Steve Jobs](/en/p/biography-steve-jobs/) passed away. The iPhone 4S became the last iPhone that Jobs saw through to completion.
 
 ## 4. Larger Screens and the Evolution of Biometric Authentication (2012-2017)
 

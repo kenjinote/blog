@@ -25,13 +25,13 @@ tags: ["数论", "莫德尔", "椭圆曲线", "丢番图方程"]
 
 ## 3. 对[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程的热情
 
-莫德尔研究的中心始终是 **[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程** （Diophantine equations）。丢番图方程是指在具有整数系数的多项式方程中，求解整数解或有理数解的问题。它以古希腊数学家[丢番图](https://kenji.blog/zh-cn/p/diophantus/)的名字命名。
+莫德尔研究的中心始终是 **[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程** （Diophantine equations）。[丢番图](/zh-cn/p/diophantus/)方程是指在具有整数系数的多项式方程中，求解整数解或有理数解的问题。它以古希腊数学家[丢番图](https://kenji.blog/zh-cn/p/diophantus/)的名字命名。
 
-最著名的[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程例子是与毕达哥拉斯定理相关的方程：
+最著名的[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程例子是与[毕达哥拉斯](/zh-cn/p/pythagoras/)定理相关的方程：
 
 $$ x^2 + y^2 = z^2 $$
 
-这个方程的整数解被称为毕达哥拉斯三元组，已知它们是无限存在的。然而，随着次数的升高，问题瞬间变得极其困难。因[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)而闻名的以下方程便是一个典型例子：
+这个方程的整数解被称为[毕达哥拉斯](/zh-cn/p/pythagoras/)三元组，已知它们是无限存在的。然而，随着次数的升高，问题瞬间变得极其困难。因[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)而闻名的以下方程便是一个典型例子：
 
 $$ x^n + y^n = z^n \quad (n \ge 3) $$
 
@@ -136,7 +136,7 @@ graph LR
 2. **模形式论** ：在证明拉马努金猜想时使用的方法，成为了延续至现代朗兰兹纲领（Langlands Program）的宏大理论的出发点。
 3. **[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程的解法** ：他具体的解题路径与大量论文，至今仍是使用计算机求解方程的算法基础。
 
-当[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)被安德鲁·怀尔斯（[Andrew Wiles](https://kenji.blog/zh-cn/p/wiles/)）证明时，其理论背景中同样离不开椭圆曲线和模形式这些与莫德尔有着深厚渊源的概念。
+当[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)被[安德鲁·怀尔斯](/zh-cn/p/wiles/)（[Andrew Wiles](https://kenji.blog/zh-cn/p/wiles/)）证明时，其理论背景中同样离不开椭圆曲线和模形式这些与莫德尔有着深厚渊源的概念。
 
 ## 12. 结论
 

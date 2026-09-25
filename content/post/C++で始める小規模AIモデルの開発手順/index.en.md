@@ -64,7 +64,7 @@ Using mmap allows you to map the contents of a file directly into the virtual me
 * **Zero-copy**: Data is loaded directly from the disk into the kernel's page cache, preventing extra copies into user space.
 * **On-Demand Loading (Page Fault)**: The moment the CPU actually accesses that memory address, a page fault occurs, and only the required chunk (usually 4KB) is loaded into physical memory.
 
-In a Windows environment, the Win32 APIs `CreateFileMapping` and `MapViewOfFile` are used instead of POSIX `mmap`.
+In a Windows environment, the [Win32](/en/p/modern-cpp-win32-api-safe-handling/) APIs `CreateFileMapping` and `MapViewOfFile` are used instead of POSIX `mmap`.
 
 ```mermaid
 sequenceDiagram
@@ -81,9 +81,9 @@ sequenceDiagram
 
 ### 3.2 Binary Structure of the GGUF Format
 
-Converted from formats like Hugging Face's `.safetensors`, the **GGUF (GPT-Generated Unified Format)** is the ultimate format for inference. It has the following strict binary layout:
+Converted from formats like Hugging Face's `.safetensors`, the **[GGUF](/en/p/llama-cpp-quantization-gguf/) (GPT-Generated Unified Format)** is the ultimate format for inference. It has the following strict binary layout:
 
-1. **Magic Bytes**: `0x46554747` (GGUF).
+1. **Magic Bytes**: `0x46554747` ([GGUF](/en/p/llama-cpp-quantization-gguf/)).
 2. **Version**: Format version number.
 3. **Tensor Count & Metadata Count**: The number of tensors and key-value metadata pairs.
 4. **Metadata ([Key-Value](https://kenji.blog/en/p/nosql-database-selection-kvs-document-graph-wide-column/) Pairs)**: Typed values and keys with string length prefixes.

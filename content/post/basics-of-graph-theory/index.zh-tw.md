@@ -242,7 +242,7 @@ print(dijkstra(weighted_graph, 'A'))
 
 想像一下，需要以盡可能低的總成本將巨大網路中的所有基地物理連接起來。例如，在建設電網以向新住宅區供電，或在多個城市之間鋪設光纖電纜時，這種情況要求最小化基礎設施建設成本。
 
-這樣，包含圖的所有頂點、絕對沒有環（即樹狀結構）且所使用邊的權重總和最小的子圖稱為 **最小生成樹 (Minimum Spanning [Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), MST)** 。
+這樣，包含圖的所有頂點、絕對沒有環（即[樹狀結構](/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）且所使用邊的權重總和最小的子圖稱為 **最小生成樹 (Minimum Spanning [Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), MST)** 。
 
 尋找這個最小生成樹的代表性演算法之一是 **克魯斯克爾演算法** 。克魯斯克爾演算法是累積局部最佳解的「貪心演算法 (Greedy Algorithm)」的一個典型例子，遵循極其簡單直觀的步驟。
 

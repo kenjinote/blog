@@ -39,7 +39,7 @@ graph TD
     style F fill:#fbb,stroke:#333,stroke-width:2px
 ```
 
-La era en la que los desarrolladores manipulaban punteros preocupándose por las fugas de memoria o escribían cientos de líneas de código repetitivo para el procesamiento de análisis de JSON ha terminado. El estándar de "programación" en 2026 es definir sistemas utilizando el lenguaje natural (japonés, inglés, español, etc.), el lenguaje con el nivel más alto de abstracción para la humanidad.
+La era en la que los desarrolladores manipulaban [punteros](/es/p/c-language-pointers-memory-management-stack-heap/) preocupándose por las fugas de memoria o escribían cientos de líneas de código repetitivo para el procesamiento de análisis de JSON ha terminado. El estándar de "programación" en 2026 es definir sistemas utilizando el lenguaje natural (japonés, inglés, español, etc.), el lenguaje con el nivel más alto de abstracción para la humanidad.
 
 ---
 
@@ -50,7 +50,7 @@ La productividad individual $P_{traditional}$ en el desarrollo de software tradi
 
 $$ P_{traditional} = c_1 \cdot S + c_2 \cdot E + c_3 \cdot T $$
 
-Sin embargo, en el desarrollo moderno impulsado por IA, la capacidad de la IA $A(t)$ actúa como un "poderoso multiplicador (Multiplier)" que amplifica la capacidad humana. Dado que las capacidades de la IA crecen exponencialmente (la versión de IA de la Ley de Moore) a lo largo del tiempo $t$, la productividad en la era de la IA $P_{AI}(t)$ se puede expresar mediante la siguiente ecuación:
+Sin embargo, en el desarrollo moderno impulsado por IA, la capacidad de la IA $A(t)$ actúa como un "poderoso multiplicador (Multiplier)" que amplifica la capacidad humana. Dado que las capacidades de la IA crecen exponencialmente (la versión de IA de [la Ley de Moore](/es/p/business-moores-law/)) a lo largo del tiempo $t$, la productividad en la era de la IA $P_{AI}(t)$ se puede expresar mediante la siguiente ecuación:
 
 $$ P_{AI}(t) = \alpha \cdot S_{core} \cdot e^{\beta \cdot A(t)} $$
 
@@ -76,7 +76,7 @@ $$ P_{auto}(T) = 1 - \exp\left(-\lambda \cdot \frac{\text{Predictability}(T)}{\t
 *   $\text{Context Dependency}(T)$: La fuerza del "contexto implícito (conocimiento específico del dominio o relaciones humanas)" del que depende la tarea
 *   $\lambda$: Tasa de progreso tecnológico de la IA
 
-Las tareas que son altamente predecibles y poco dependientes del contexto, como escribir el procesamiento de enrutamiento de una API o crear una pantalla CRUD simple, tienen un $P_{auto} \approx 1$ y estarán casi completamente automatizadas. Por otro lado, las tareas con una dependencia del contexto extremadamente alta, como "¿cómo integramos de manera segura los sistemas heredados existentes con los nuevos microservicios?" o "¿cómo diseñamos un flujo de autenticación que satisfaga las demandas del departamento legal sin comprometer la experiencia del usuario?", son difíciles de automatizar.
+Las tareas que son altamente predecibles y poco dependientes del contexto, como escribir el procesamiento de enrutamiento de una API o crear una pantalla CRUD simple, tienen un $P_{auto} \approx 1$ y estarán casi completamente automatizadas. Por otro lado, las tareas con una dependencia del contexto extremadamente alta, como "¿cómo integramos de manera segura los sistemas heredados existentes con los nuevos [microservicios](/es/p/microservices-architecture-bff-api-gateway/)?" o "¿cómo diseñamos un flujo de autenticación que satisfaga las demandas del departamento legal sin comprometer la experiencia del usuario?", son difíciles de automatizar.
 
 ---
 
@@ -102,7 +102,7 @@ graph LR
 
 La IA supera a los humanos en la "optimización local". Los humanos no tienen ninguna posibilidad contra la velocidad y precisión con la que se escribe una sola función, una sola clase o un solo módulo. Sin embargo, la IA es muy vulnerable a la "optimización global" y al "contexto faltante (Missing Context)".
 
-Los programadores del futuro deben cambiar su papel de "trabajadores que escriben código" a "arquitectos que orquestan innumerables componentes generados por IA". Tener una visión general del sistema completo, dónde trazar los límites de los microservicios, cómo resolver el compromiso entre disponibilidad y consistencia en el Teorema CAP para adaptarlo al contexto del negocio, y cómo controlar la deuda técnica. Estos son trabajos intelectuales de alto nivel que solo pueden ser realizados por humanos que comprenden el panorama general y los objetivos del negocio.
+Los programadores del futuro deben cambiar su papel de "trabajadores que escriben código" a "arquitectos que orquestan innumerables componentes generados por IA". Tener una visión general del sistema completo, dónde trazar los límites de los [microservicios](/es/p/microservices-architecture-bff-api-gateway/), cómo resolver el compromiso entre disponibilidad y consistencia en el Teorema CAP para adaptarlo al contexto del negocio, y cómo controlar la deuda técnica. Estos son trabajos intelectuales de alto nivel que solo pueden ser realizados por humanos que comprenden el panorama general y los objetivos del negocio.
 
 ---
 
@@ -175,7 +175,7 @@ Los humanos necesitan perfeccionar al máximo la habilidad de "lectura rápida y
 Basado en el análisis realizado hasta ahora, presento un plan de acción concreto para que los programadores sobrevivan a la era de la IA.
 
 1.  **Reaprender a fondo los "fundamentos" de la tecnología**: Puedes dejar cómo usar frameworks a la IA. Sin embargo, un profundo conocimiento de cómo funcionan los sistemas operativos, los protocolos de red ([TCP](https://kenji.blog/es/p/http3-quic-protocol-tcp-udp/)/IP, HTTP/3), la estructura interna de las bases de datos ([B-Tree](https://kenji.blog/es/p/b-tree-database-index-theory/), niveles de aislamiento de transacciones), las estructuras de datos y algoritmos es absolutamente necesario. Para juzgar si el resultado de la IA es correcto, es indispensable una base sólida en ciencias de la computación.
-2.  **Dominar la arquitectura en la nube y los sistemas distribuidos**: Concéntrate en cómo combinar recursos en la nube como AWS, GCP y Azure para construir sistemas escalables, en lugar de código individual. Comprende el concepto de [IaC](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/) (Infrastructure as Code) como [Terraform](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/) y cultiva la capacidad de diseñar todo el sistema como código.
+2.  **Dominar la arquitectura en la nube y los [sistemas distribuidos](/es/p/cap-theorem-distributed-systems-tradeoff/)**: Concéntrate en cómo combinar recursos en la nube como AWS, GCP y Azure para construir sistemas escalables, en lugar de código individual. Comprende el concepto de [IaC](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/) ([Infrastructure as Code](/es/p/iac-infrastructure-as-code-terraform/)) como [Terraform](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/) y cultiva la capacidad de diseñar todo el sistema como código.
 3.  **Conviértete en un experto en tu dominio de negocio**: Aprende profundamente el modelo de negocio, las regulaciones legales y la psicología del comportamiento del usuario de la industria a la que perteneces. Ve más allá de los límites de un ingeniero y ten una perspectiva más cercana a la de un Product Manager (PM).
 4.  **Perfecciona las habilidades de comunicación y facilitación**: El proceso de resolver la "ambigüedad" entre humanos y lograr consensos no puede ser reemplazado por la IA. Las habilidades blandas de interactuar con las partes interesadas y descubrir los verdaderos problemas serán las habilidades más valiosas.
 5.  **Usa la IA al máximo como un "colega"**: En lugar de temer a la evolución de las herramientas de IA, utilízalas como tu arma más poderosa. Utiliza rutinariamente los últimos LLMs y agentes de codificación de IA para acumular el "conocimiento tácito" de dónde falla la IA y cómo ajustar los prompts para extraer el máximo rendimiento.

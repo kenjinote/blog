@@ -76,4 +76,4 @@ By having millions of participating users' own PCs cooperate to build a massive 
 
 BitTorrent is a technology that discards the 20th-century idea of "a massive central server distributing to everyone" and beautifully embodies the internet's original philosophy of autonomous decentralization by "uniting the power of swarming individuals."
 
-The underlying logic of "shattering files into pieces," "collecting the rare ones first," and "rewarding those who cooperate" continues to have a profound impact on the design of today's blockchain technologies and decentralized cloud storage.
+The underlying logic of "shattering files into pieces," "collecting the rare ones first," and "rewarding those who cooperate" continues to have a profound impact on the design of today's [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/) technologies and decentralized cloud storage.

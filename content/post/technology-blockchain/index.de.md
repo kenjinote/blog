@@ -22,20 +22,20 @@ Wenn ich meine "digitalen 10.000 Yen" kopieren und an Person A und Person B glei
 
 Bisher war der einzige Weg, dieses Double-Spending-Problem zu verhindern, dass "**ein zentraler Verwalter, dem alle vertrauen, wie etwa eine Bank oder ein Kreditkartenunternehmen, die Kontostände (das Kassenbuch) aller Beteiligten streng verwaltet**".
 
-Im Jahr 2008 jedoch wurde mit der Veröffentlichung eines Papiers durch eine mysteriöse Person (oder Gruppe) namens Satoshi Nakamoto zum ersten Mal in der Geschichte "eine digitale Währung, die absolut nicht gefälscht oder doppelt ausgegeben werden kann, selbst wenn es keinen zentralen Verwalter gibt", geboren. Das ist **Bitcoin**, und die zugrundeliegende Technologie ist die **Blockchain**.
+Im Jahr 2008 jedoch wurde mit der Veröffentlichung eines Papiers durch eine mysteriöse Person (oder Gruppe) namens Satoshi Nakamoto zum ersten Mal in der Geschichte "eine digitale Währung, die absolut nicht gefälscht oder doppelt ausgegeben werden kann, selbst wenn es keinen zentralen Verwalter gibt", geboren. Das ist **Bitcoin**, und die zugrundeliegende Technologie ist die **[Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/)**.
 
 ## 2. Was ist eine Blockchain? (Distributed Ledger - Dezentrales Kassenbuch)
 
-Kurz gesagt ist die Blockchain ein "**System, bei dem alle Teilnehmer weltweit eine Kopie derselben Transaktionsaufzeichnungen (Ledger/Kassenbuch) teilen und sich gegenseitig überwachen**".
+Kurz gesagt ist die [Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/) ein "**System, bei dem alle Teilnehmer weltweit eine Kopie derselben Transaktionsaufzeichnungen (Ledger/Kassenbuch) teilen und sich gegenseitig überwachen**".
 
 Wenn jemand eine Transaktion durchführt, wie z. B. "1 Bitcoin von Person A an Person B senden", wird diese Information über ein P2P-Netzwerk an Computer (Nodes) auf der ganzen Welt verteilt.
-Ein Bündel von Transaktionen, die weltweit innerhalb von etwa 10 Minuten stattfinden, wird in eine einzelne Box (**Block**) gepackt. Und diese Box wird wie eine Kette (**Chain**) an die vorherigen Boxen angehängt und gespeichert. Das ist der Ursprung des Namens "Blockchain".
+Ein Bündel von Transaktionen, die weltweit innerhalb von etwa 10 Minuten stattfinden, wird in eine einzelne Box (**Block**) gepackt. Und diese Box wird wie eine Kette (**Chain**) an die vorherigen Boxen angehängt und gespeichert. Das ist der Ursprung des Namens "[Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/)".
 
 Sobald der Inhalt eines Blocks (vergangene Transaktionsaufzeichnungen) an die Kette angehängt ist, kann er im Nachhinein absolut nicht mehr umgeschrieben werden. Warum ist so etwas möglich?
 
 ## 3. "Kryptografische Hash-Funktionen", die Manipulationen unmöglich machen
 
-Die Eigenschaft der Blockchain, "absolut nicht umschreibbar" zu sein, wird durch eine kryptografische Technologie namens **Hash-Funktion (wie SHA-256)** unterstützt.
+Die Eigenschaft der [Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/), "absolut nicht umschreibbar" zu sein, wird durch eine kryptografische Technologie namens **Hash-Funktion (wie SHA-256)** unterstützt.
 
 Eine Hash-Funktion ist "ein Rechner, der unabhängig von der Länge der eingegebenen Daten immer eine zufällige Zeichenfolge (Hash-Wert) von fester Länge ausgibt".
 Ein Hauptmerkmal ist, dass "wenn sich auch nur ein einziges Zeichen der ursprünglichen Daten ändert, der ausgegebene Hash-Wert sich drastisch in etwas völlig anderes verwandelt". Außerdem ist es unmöglich, die ursprünglichen Daten aus dem ausgegebenen Hash-Wert zurückzurechnen (Einwegfunktion).
@@ -73,6 +73,6 @@ Anstatt riesige Summen Geld (Stromkosten) auszugeben, um böse Taten (Manipulati
 
 ## 6. Fazit: Hin zu einer Trustless (vertrauenslosen) Welt
 
-Die Blockchain ist eine bahnbrechende Erfindung, bei der "selbst ohne einer bestimmten Person zu vertrauen (Trustless), ein korrekter Konsens für das gesamte System durch die Kraft von Mathematik, Kryptografie und wirtschaftlichen Anreizen gebildet wird".
+Die [Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/) ist eine bahnbrechende Erfindung, bei der "selbst ohne einer bestimmten Person zu vertrauen (Trustless), ein korrekter Konsens für das gesamte System durch die Kraft von Mathematik, Kryptografie und wirtschaftlichen Anreizen gebildet wird".
 
 Bitcoin ist lediglich ihre erste Anwendung. Heute dient dieser Mechanismus des "absolut manipulationssicheren dezentralen Kassenbuchs" als gigantisches Innovationsfundament für den Aufbau der nächsten Form des Internets (Web3), die sich in Smart Contracts (automatische Vertragsausführung), NFTs (Nachweis digitalen Eigentums) sowie in dezentraler Finanzierung (DeFi) und neuen Organisationsformen (DAO) anwenden lässt.

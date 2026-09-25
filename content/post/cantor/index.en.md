@@ -24,7 +24,7 @@ His creation of "Set Theory" has become the foundation of every field in modern 
 
 [Georg Cantor](https://kenji.blog/en/p/cantor/) was born in 1845 in St. Petersburg, Russia. His father was a wealthy merchant from Denmark, and his mother was a Russian musician. Showing an extraordinary talent for mathematics from an early age, he eventually moved to Germany and studied mathematics at the University of Berlin.
 
-At the University of Berlin, he was guided by the leading figures of the mathematical world at the time, **[Karl Weierstrass](https://kenji.blog/en/p/weierstrass/)** and **Leopold Kronecker**. [Kronecker](https://kenji.blog/en/p/kronecker/) in particular would later become Cantor's greatest opponent.
+At the University of Berlin, he was guided by the leading figures of the mathematical world at the time, **[Karl Weierstrass](https://kenji.blog/en/p/weierstrass/)** and **[Leopold Kronecker](/en/p/kronecker/)**. [Kronecker](https://kenji.blog/en/p/kronecker/) in particular would later become Cantor's greatest opponent.
 
 ### The Quest for Infinity and the Conflict with [Kronecker](https://kenji.blog/en/p/kronecker/)
 
@@ -113,7 +113,7 @@ graph TD
 
 Does there exist an intermediate cardinality between the cardinality of natural numbers $\aleph_0$ and the cardinality of real numbers $\mathfrak{c}$? Cantor hypothesized that "no such intermediate cardinality exists". This is the **[Continuum Hypothesis](https://kenji.blog/en/p/continuum-hypothesis/) (CH)**.
 
-Cantor spent much of his later years trying to prove this hypothesis, but he was ultimately unable to resolve it. Later, through the research of [Kurt Gödel](https://kenji.blog/en/p/godel/) and Paul Cohen, it was discovered that the continuum hypothesis is an independent proposition that can "neither be proved nor disproved" from the standard axioms of set theory (ZFC axioms), once again giving a great shock to the mathematical community.
+Cantor spent much of his later years trying to prove this hypothesis, but he was ultimately unable to resolve it. Later, through the research of [Kurt Gödel](https://kenji.blog/en/p/godel/) and Paul Cohen, it was discovered that the [continuum hypothesis](/en/p/continuum-hypothesis/) is an independent proposition that can "neither be proved nor disproved" from the standard axioms of set theory (ZFC axioms), once again giving a great shock to the mathematical community.
 
 ## Conclusion
 

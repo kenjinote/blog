@@ -134,7 +134,7 @@ $$
 Persamaan ini berarti bahwa jika hanya probabilitas $P$ yang diketahui, Pi $\pi$ dapat dihitung. Tentu saja, probabilitas sejati $P$ tidak dapat diketahui tanpa percobaan dalam jumlah tak terbatas, tetapi dengan menjatuhkan jarum berkali-kali dalam eksperimen yang sebenarnya, nilai perkiraan $P$ dapat diperoleh.
 
 Misalkan $N$ menjadi jumlah total jarum yang dijatuhkan, dan $C$ menjadi jumlah jarum yang melintasi garis.
-Jika jumlah percobaan $N$ cukup besar, menurut hukum bilangan besar, probabilitas empiris $\frac{C}{N}$ mendekati probabilitas teoritis $P$.
+Jika jumlah percobaan $N$ cukup besar, menurut [hukum bilangan besar](/id/p/law-of-large-numbers/), probabilitas empiris $\frac{C}{N}$ mendekati probabilitas teoritis $P$.
 
 $$
 P \approx \frac{C}{N}

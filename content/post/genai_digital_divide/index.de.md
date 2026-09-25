@@ -104,7 +104,7 @@ $$
 VRAM_{required} \approx \left( \frac{P \times bits\_per\_weight}{8} \right) + Context\_Memory
 $$
 
-Selbst bei High-End-GPUs, die für allgemeine Verbraucher erhältlich sind (NVIDIA RTX 4090), ist der VRAM auf 24 GB begrenzt, was es unmöglich macht, ein Modell der 70B-Klasse direkt auszuführen. An diesem Punkt kommen "Quantisierungstechnologien" (Quantization) wie AWQ und GGUF ins Spiel, bei denen Gewichte auf 4 Bit oder 8 Bit komprimiert werden, um einen technischen Kompromiss zu finden. Eine Leistungsminderung (Verschlechterung der Perplexity) durch Quantisierung ist jedoch unvermeidlich.
+Selbst bei High-End-GPUs, die für allgemeine Verbraucher erhältlich sind (NVIDIA RTX 4090), ist der VRAM auf 24 GB begrenzt, was es unmöglich macht, ein Modell der 70B-Klasse direkt auszuführen. An diesem Punkt kommen "Quantisierungstechnologien" (Quantization) wie AWQ und [GGUF](/de/p/llama-cpp-quantization-gguf/) ins Spiel, bei denen Gewichte auf 4 Bit oder 8 Bit komprimiert werden, um einen technischen Kompromiss zu finden. Eine Leistungsminderung (Verschlechterung der Perplexity) durch Quantisierung ist jedoch unvermeidlich.
 
 Darüber hinaus sind in den letzten Jahren "AI-PCs" erschienen, die mit einer NPU (Neural Processing Unit) ausgestattet sind. Die aktuellen TOPS (Tera Operations Per Second) dieser NPUs reichen jedoch gerade aus, um leichtgewichtige, kleine Modelle (SLM: Small Language Models) auszuführen. Um wirklich fortschrittliche Inferenz lokal durchführen zu können, bedarf es einer Kapitalstärke, die es ermöglicht, eine Multi-GPU-Umgebung im Wert von mehreren Millionen Yen (Zehntausende von Euro) aufzubauen. Dies ist die wahre Natur der "kapitalintensiven digitalen Kluft" im Bereich der KI.
 

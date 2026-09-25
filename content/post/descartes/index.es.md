@@ -59,7 +59,7 @@ $$
 
 La idea de [Descartes](https://kenji.blog/es/p/descartes/) hizo posible reducir problemas geométricos difíciles a cálculos algebraicos. Además, la notación de las expresiones literales también fue organizada por [Descartes](https://kenji.blog/es/p/descartes/). El uso de $x, y, z$ para las incógnitas y $a, b, c$ para los valores conocidos, así como la notación que expresa los exponentes escribiendo números pequeños en la parte superior derecha, como $x^2, x^3$, también fueron introducidos por él en la "Geometría".
 
-A continuación se muestra la fórmula para encontrar la distancia entre dos puntos en un plano de coordenadas. La distancia $d$ entre el punto $A(x_1, y_1)$ y el punto $B(x_2, y_2)$ se expresa de la siguiente manera utilizando el teorema de Pitágoras:
+A continuación se muestra la fórmula para encontrar la distancia entre dos puntos en un plano de coordenadas. La distancia $d$ entre el punto $A(x_1, y_1)$ y el punto $B(x_2, y_2)$ se expresa de la siguiente manera utilizando el teorema de [Pitágoras](/es/p/pythagoras/):
 
 $$
 d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \quad \text{(Distancia entre dos puntos)}
@@ -67,7 +67,7 @@ $$
 
 ## 4. Impacto en la filosofía y la ciencia
 
-La geometría analítica de [Descartes](https://kenji.blog/es/p/descartes/) se convirtió en un pilar indispensable para el desarrollo posterior de las matemáticas y la física. Se puede decir que la creación del cálculo por Isaac Newton y [Gottfried Leibniz](https://kenji.blog/es/p/leibniz/) solo fue posible gracias al escenario proporcionado por el sistema de coordenadas cartesianas.
+La geometría analítica de [Descartes](https://kenji.blog/es/p/descartes/) se convirtió en un pilar indispensable para el desarrollo posterior de las matemáticas y la física. Se puede decir que la creación del cálculo por [Isaac Newton](/es/p/newton/) y [Gottfried Leibniz](https://kenji.blog/es/p/leibniz/) solo fue posible gracias al escenario proporcionado por el sistema de coordenadas cartesianas.
 
 Además, su "duda metódica" en filosofía, un enfoque para encontrar verdades ciertas después de dudar de todo, estableció el espíritu del racionalismo que sirve de base para la investigación científica.
 

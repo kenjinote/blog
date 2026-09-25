@@ -22,14 +22,14 @@ In diesem Artikel kehren wir zu den Ursprüngen des "relationalen Modells" zurü
 
 Um den wahren Wert des relationalen Modells zu verstehen, muss man wissen, "was es gelöst hat". In den 1960er Jahren waren die vorherrschenden Datenbankmodelle "hierarchische Modelle" und "Netzwerkmodelle" (typische Beispiele sind IBMs IMS und CODASYL-konforme Datenbanksysteme).
 
-Diese Systeme wurden als **"navigational"** (navigatorisch) bezeichnet. Die Beziehungen zwischen den Daten waren durch physische Zeiger (Verweise auf Speicheradressen) fest codiert. Um Daten abzurufen, mussten die Programmierer selbst sich dieser physischen Struktur bewusst sein und prozeduralen Code schreiben, um "über Zeiger vom übergeordneten Datensatz zum untergeordneten Datensatz zu navigieren".
+Diese Systeme wurden als **"navigational"** (navigatorisch) bezeichnet. Die Beziehungen zwischen den Daten waren durch physische [Zeiger](/de/p/c-language-pointers-memory-management-stack-heap/) (Verweise auf Speicheradressen) fest codiert. Um Daten abzurufen, mussten die Programmierer selbst sich dieser physischen Struktur bewusst sein und prozeduralen Code schreiben, um "über [Zeiger](/de/p/c-language-pointers-memory-management-stack-heap/) vom übergeordneten Datensatz zum untergeordneten Datensatz zu navigieren".
 
 ### Fatale Probleme navigationaler Datenbanken
 
 1. **Mangel an Datenunabhängigkeit (Lack of Data Independence)**
-   Die physische Datenstruktur (Vorhandensein von Indizes, Art der Zeiger usw.) war eng mit dem Anwendungscode gekoppelt. Daher erforderte selbst die kleinste Änderung der Datenbankstruktur das Umschreiben des gesamten davon abhängigen Anwendungscodes.
+   Die physische Datenstruktur (Vorhandensein von Indizes, Art der [Zeiger](/de/p/c-language-pointers-memory-management-stack-heap/) usw.) war eng mit dem Anwendungscode gekoppelt. Daher erforderte selbst die kleinste Änderung der Datenbankstruktur das Umschreiben des gesamten davon abhängigen Anwendungscodes.
 2. **Komplexität von Abfragen und Abhängigkeit von Einzelpersonen**
-   Wenn es mehrere Pfade (Zugriffspfade) zum Abrufen eines bestimmten Datensatzes gab, musste der Programmierer beurteilen, welcher Pfad am effizientesten war, und den entsprechenden Code schreiben. Dies erforderte ein hohes Maß an handwerklichem Geschick.
+   Wenn es mehrere Pfade (Zugriffspfade) zum Abrufen eines bestimmten Datensatzes gab, musste der Programmierer beurteilen, welcher [Pfad](/de/p/windows-%E3%81%A7pfad%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9Fausf%C3%BChrbare-datei%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/) am effizientesten war, und den entsprechenden Code schreiben. Dies erforderte ein hohes Maß an handwerklichem Geschick.
 3. **Schwierigkeit von Ad-hoc-Abfragen**
    Die Durchführung von Suchen unter Bedingungen, die nicht im Voraus erwartet wurden (z. B. "Auflisten von Mitarbeitern, die einer bestimmten Abteilung angehören und deren Gehalt einen bestimmten Betrag übersteigt"), war aufgrund der Zeigerstruktur unrealistisch oder extrem kostspielig.
 

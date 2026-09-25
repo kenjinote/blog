@@ -12,7 +12,7 @@ tags: ["Continuum Hypothesis", "Cantor", "Infinity", "Math"]
 
 In the world of mathematics, the concept of "infinity" has long been a subject of philosophical debate. However, until the emergence of [Georg Cantor](https://kenji.blog/en/p/cantor/) in the late 19th century, there was no rigorous mathematical method to compare the sizes of infinity. Cantor founded set theory and proved that there are **different sizes** (cardinalities) even within infinity.
 
-Considering the set of natural numbers $\mathbb{N}$ and the set of real numbers $\mathbb{R}$, Cantor's diagonal argument showed that the set of real numbers is "strictly larger" than the set of natural numbers. The cardinality of the natural numbers is denoted by $\aleph_0$ (aleph-null), and the cardinality of the real numbers by $\mathfrak{c}$ (cardinality of the continuum) or $2^{\aleph_0}$. According to Cantor's theorem, $\aleph_0 < 2^{\aleph_0}$.
+Considering the set of natural numbers $\mathbb{N}$ and the set of real numbers $\mathbb{R}$, [Cantor's diagonal argument](/en/p/cantors-diagonal-argument/) showed that the set of real numbers is "strictly larger" than the set of natural numbers. The cardinality of the natural numbers is denoted by $\aleph_0$ (aleph-null), and the cardinality of the real numbers by $\mathfrak{c}$ (cardinality of the continuum) or $2^{\aleph_0}$. According to Cantor's theorem, $\aleph_0 < 2^{\aleph_0}$.
 
 Here, Cantor had a natural question: "Does there exist a set with a cardinality positioned in the **middle** of the cardinality of the natural numbers and the cardinality of the real numbers?"
 This is the origin of the **[Continuum Hypothesis](https://kenji.blog/en/p/continuum-hypothesis/)** (CH), which would later shake the foundations of mathematics.

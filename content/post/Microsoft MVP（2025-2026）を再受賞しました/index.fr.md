@@ -52,7 +52,7 @@ Cette année, je me suis concentré sur la diffusion d'informations en mettant l
 
 En particulier, la publication de code sur GitHub m'a laissé une forte impression, car j'ai reçu des commentaires tels que "Je luttais avec la même chose, ça m'a sauvé !", et j'ai pu sentir que mes efforts aidaient au développement d'autres personnes.
 
-De plus, lors de mes interventions lors d'événements, j'ai parfois reçu des commentaires indiquant que "c'était facile à comprendre, même pour les débutants", ce qui m'a donné une bonne occasion de réfléchir à "qu'est-ce qu'une explication technique que les gens comprennent ?".
+De plus, lors de mes interventions lors d'événements, j'ai parfois reçu des commentaires indiquant que "c'était facile à comprendre, même [pour les débutants](/fr/p/articles-en-cuir%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/)", ce qui m'a donné une bonne occasion de réfléchir à "qu'est-ce qu'une explication technique que les gens comprennent ?".
 
 ---
 

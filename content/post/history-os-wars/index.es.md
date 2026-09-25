@@ -54,7 +54,7 @@ Desde la década de 1990 hasta la de 2000, la batalla por la cuota de mercado de
 ### 2.1 El impacto y el dominio abrumador de Windows 95
 Windows 95, lanzado en 1995, provocó un fenómeno social. Aquí se completaron los fundamentos de las PC modernas, incluyendo una GUI completa, capacidades de conexión a Internet (más tarde Internet Explorer) y Plug and Play. Con el éxito de Windows 95, Microsoft estableció un monopolio absoluto en el mercado de las PC.
 
-Ante este dominio abrumador, Apple cayó temporalmente en una grave crisis financiera. Sin embargo, con el regreso de Steve Jobs en 1997 y el posterior éxito del "iMac", Apple experimentó un resurgimiento en su propio mercado de nicho centrado en el diseño y el estilo de vida.
+Ante este dominio abrumador, Apple cayó temporalmente en una grave crisis financiera. Sin embargo, con el regreso de [Steve Jobs](/es/p/biography-steve-jobs/) en 1997 y el posterior éxito del "iMac", Apple experimentó un resurgimiento en su propio mercado de nicho centrado en el diseño y el estilo de vida.
 
 ### 2.2 La guerra de los navegadores y el auge de la Web
 El principal campo de batalla de la guerra de los sistemas operativos finalmente se trasladó al espacio de Internet. La primera guerra de navegadores entre Netscape e Internet Explorer redefinió el valor del sistema operativo como plataforma. Microsoft obtuvo ventaja al incluir IE con Windows, pero esto también llevó a juicios antimonopolio.
@@ -90,7 +90,7 @@ graph LR
 
 ## Capítulo 4: El fin de la guerra y un nuevo paradigma (Desde 2010 en adelante)
 
-La larga guerra religiosa de los sistemas operativos cambió drásticamente en la década de 2010. Con la revolución móvil y el auge de la nube, la pregunta de "¿Qué sistema operativo de escritorio estás usando?" perdió su significado en sí misma.
+La larga guerra religiosa de los sistemas operativos cambió drásticamente en la década de 2010. Con la [revolución móvil](/es/p/history-of-iphone/) y el auge de la nube, la pregunta de "¿Qué sistema operativo de escritorio estás usando?" perdió su significado en sí misma.
 
 ### 4.1 La transición al móvil y el nuevo sistema bipolar
 Con la llegada del iPhone (iOS) y Android, el centro de la computación de las personas se trasladó de las PC a los teléfonos inteligentes. Curiosamente, en el mundo móvil, emergió un panorama similar al de la historia pasada, con el enfoque cerrado de Apple (iOS) y el enfoque abierto impulsado por Google (Android basado en Linux).

@@ -20,7 +20,7 @@ tags:
 
 현대 컴퓨터 과학에서 **그래프 이론** ([Graph](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Theory) 은 네트워크 구조를 모델링하기 위한 강력한 수학적 프레임워크를 제공합니다. 우리의 일상생활에서 자동차 내비게이션이나 철도 환승 안내, 인터넷 라우팅, 나아가 게임 AI의 경로 탐색 등 다양한 상황에서 '최단 경로'를 계산하는 기술이 사용되고 있습니다.
 
-본 기사에서는 이 경로 탐색의 기초가 되는 그래프 이론의 수학적 정의부터 시작하여 대표적인 탐색 알고리즘인 **다익스트라법** ([Dijkstra](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)'s Algorithm) 과 이를 더욱 발전시킨 **A* 알고리즘** (A-Star Algorithm) 의 원리, 수학적 증명, 그리고 Python을 사용한 실천적인 구현 방법까지 포괄적으로 해설합니다.
+본 기사에서는 이 경로 탐색의 기초가 되는 그래프 이론의 수학적 정의부터 시작하여 대표적인 [탐색 알고리즘](/ko/p/search-algorithms-linear-binary-hash-table-principles/)인 **다익스트라법** ([Dijkstra](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)'s Algorithm) 과 이를 더욱 발전시킨 **A* 알고리즘** (A-Star Algorithm) 의 원리, 수학적 증명, 그리고 Python을 사용한 실천적인 구현 방법까지 포괄적으로 해설합니다.
 
 ## 2. 그래프 이론의 기초
 
@@ -79,7 +79,7 @@ $$
 
 ## 3. 다익스트라법 ([Dijkstra](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)'s Algorithm)
 
-에츠허르 다익스트라가 고안한 **다익스트라법** 은 음이 아닌 가중치를 가진 그래프에서 단일 시점으로부터 모든 정점까지의 최단 경로를 구하기 위한 알고리즘입니다.
+[에츠허르 다익스트라](/ko/p/biography-edsger-dijkstra/)가 고안한 **다익스트라법** 은 음이 아닌 가중치를 가진 그래프에서 단일 시점으로부터 모든 정점까지의 최단 경로를 구하기 위한 알고리즘입니다.
 
 ### 3.1 알고리즘의 직관적인 이해
 
@@ -144,7 +144,7 @@ def dijkstra(graph, start):
 ### 3.4 시간 복잡도에 대해
 
 우선순위 큐로 이진 힙 (Binary [Heap](https://kenji.blog/ko/p/c-language-pointers-memory-management-stack-heap/)) 을 사용한 경우, 각 정점은 큐에서 1번 꺼내어지고, 각 간선은 1번 완화됩니다.
-따라서 시간 복잡도는 $ O((|V| + |E|) \log |V|) $ 가 됩니다. 피보나치 힙을 사용하면 이론상 $ O(|E| + |V| \log |V|) $ 까지 개선되지만, 실무에서는 이진 힙이 많이 사용됩니다.
+따라서 시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)는 $ O((|V| + |E|) \log |V|) $ 가 됩니다. 피보나치 힙을 사용하면 이론상 $ O(|E| + |V| \log |V|) $ 까지 개선되지만, 실무에서는 이진 힙이 많이 사용됩니다.
 
 ---
 
@@ -193,7 +193,7 @@ A*가 항상 **최단 경로를 찾기 (최적성)** 위해서는 휴리스틱 �
   $$
   h(n) = |x_n - x_{goal}| + |y_n - y_{goal}|
   $$
-- **유클리드 거리** (Euclidean Distance): 임의의 방향으로 직선 이동이 가능한 경우
+- **[유클리드](/ko/p/euclid/) 거리** (Euclidean Distance): 임의의 방향으로 직선 이동이 가능한 경우
   $$
   h(n) = \sqrt{(x_n - x_{goal})^2 + (y_n - y_{goal})^2}
   $$
@@ -293,11 +293,11 @@ graph TD
 3. **JPS** (Jump Point Search):
    균일한 그리드 맵 위에서 A*의 탐색을 더욱 고속화하기 위한 기법. 대칭성을 이용하여 불필요한 노드를 스킵합니다.
 
-경로 탐색 알고리즘은 그래프 이론의 수학적인 아름다움과 컴퓨터 과학의 알고리즘적 효율성이 훌륭하게 융합된 분야입니다.
+경로 [탐색 알고리즘](/ko/p/search-algorithms-linear-binary-hash-table-principles/)은 그래프 이론의 수학적인 아름다움과 컴퓨터 과학의 알고리즘적 효율성이 훌륭하게 융합된 분야입니다.
 
 ## 6. 정리
 
-본 기사에서는 그래프 이론의 기초적인 정의에서 출발하여 다익스트라법과 A* 알고리즘의 수학적 배경, 구체적인 원리, 그리고 Python을 이용한 구현 예에 대해 해설했습니다.
+본 기사에서는 [그래프 이론의 기초](/ko/p/basics-of-graph-theory/)적인 정의에서 출발하여 다익스트라법과 A* 알고리즘의 수학적 배경, 구체적인 원리, 그리고 Python을 이용한 구현 예에 대해 해설했습니다.
 
 - **다익스트라법** 은 모든 노드를 균등하게 평가하고 확실한 최단 경로를 보장합니다.
 - **A* 알고리즘** 은 휴리스틱 함수 $ h(n) $ 을 도입함으로써 목표를 향한 효율적인 탐색을 실현합니다.

@@ -12,9 +12,9 @@ description: 'llama.cppで採用されているGGUFフォーマットとk-quants
 
 ## 1. はじめに：なぜ[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)には量子化が必要なのか？
 
-近年の[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（LLM: [Large Language Models](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）の進化は目覚ましいものがありますが、その裏で「計算資源の枯渇」と「メモリ帯域のボトルネック」という深刻な問題が浮上しています。例えば、Llama 3 のような 70B（700億）パラメータのモデルを、標準的な 16ビット浮動小数点（FP16）でメモリにロードした場合、パラメータだけで約 140GB の VRAM/RAM を消費します。これに推論時のコンテキスト（KVキャッシュ）が加わると、データセンター向けのハイエンドGPU（NVIDIA A100 80GB や H100 80GB）を複数台クラスタリングしなければ動作しません。
+近年の[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](/p/large-language-models-llm-transformer-prompt-engineering/): [Large Language Models](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）の進化は目覚ましいものがありますが、その裏で「計算資源の枯渇」と「メモリ帯域のボトルネック」という深刻な問題が浮上しています。例えば、Llama 3 のような 70B（700億）パラメータのモデルを、標準的な 16ビット浮動小数点（FP16）でメモリにロードした場合、パラメータだけで約 140GB の VRAM/RAM を消費します。これに推論時のコンテキスト（KVキャッシュ）が加わると、データセンター向けのハイエンドGPU（[NVIDIA](/p/history-of-nvidia/) A100 80GB や H100 80GB）を複数台クラスタリングしなければ動作しません。
 
-個人開発者やエッジデバイス（MacBookや一般的なゲーミングPC）でLLMを動作させるための救世主として登場したのが **llama.cpp** とその中核を成す ** 量子化（Quantization）技術 ** です。特に **GGUF (GPT-Generated Unified Format)** というファイルフォーマットと、 **k-quants** と呼ばれる高度なブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)単位の量子化アルゴリズムは、モデルの精度（Perplexity）の低下を極限まで抑えつつ、モデルサイズを数分の一に圧縮する画期的な手法です。
+個人開発者やエッジデバイス（MacBookや一般的なゲーミングPC）で[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)を動作させるための救世主として登場したのが **llama.cpp** とその中核を成す ** 量子化（Quantization）技術 ** です。特に **GGUF (GPT-Generated Unified Format)** というファイルフォーマットと、 **k-quants** と呼ばれる高度なブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)単位の量子化アルゴリズムは、モデルの精度（Perplexity）の低下を極限まで抑えつつ、モデルサイズを数分の一に圧縮する画期的な手法です。
 
 本記事では、この llama.cpp における量子化の数学的背景から、GGML形式との違い、GGUFフォーマットの詳細な構造、そして k-quants の内部メカニズムに至るまで、徹底的に解説します。
 
@@ -187,7 +187,7 @@ llama.cpp がCPU推論において驚異的な速度を誇るのは、[アセン
 
 ### 5.2. GPU環境 (cuBLAS / CUDA) でのオフロード
 
-最近の llama.cpp は CPU だけでなく、NVIDIA GPU に対する強力なサポート（CUBLAS / CUDA）も持っています。
+最近の llama.cpp は CPU だけでなく、[NVIDIA](/p/history-of-nvidia/) GPU に対する強力なサポート（CUBLAS / CUDA）も持っています。
 GGUFファイルの一部または全部の層をVRAMにオフロードすることが可能です（`--n-gpu-layers` オプション）。
 
 ```mermaid

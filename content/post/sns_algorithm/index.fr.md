@@ -50,7 +50,7 @@ Cet algorithme rapproche "l'utilisateur A intéressé par [Rust](https://kenji.b
 
 ### 2.2 Modèles de recommandation utilisant l'apprentissage profond (DLRM)
 
-Ces dernières années, sous l'impulsion d'entreprises comme Meta (anciennement Facebook), les architectures basées sur l'apprentissage profond, représentées par le Deep Learning Recommendation Model (DLRM), se sont répandues. Le DLRM prend en entrée une grande variété de caractéristiques (Features), telles que l'historique de comportement de l'utilisateur et les métadonnées des éléments, pour prédire le taux de clics (CTR : Click-Through Rate) et d'autres indicateurs.
+Ces dernières années, sous l'impulsion d'entreprises comme Meta ([anciennement Facebook](/fr/p/history-of-meta-facebook/)), les architectures basées sur l'apprentissage profond, représentées par le Deep Learning Recommendation Model (DLRM), se sont répandues. Le DLRM prend en entrée une grande variété de caractéristiques (Features), telles que l'historique de comportement de l'utilisateur et les métadonnées des éléments, pour prédire le taux de clics (CTR : Click-Through Rate) et d'autres indicateurs.
 
 La particularité du DLRM réside dans sa capacité à convertir des caractéristiques catégorielles creuses (ex: ID utilisateur, hashtags suivis) en vecteurs denses (Dense Vectors) via des "tables de plongement (Embedding Tables)", et à les combiner avec des caractéristiques denses à valeurs continues (ex: nombre de jours depuis la création du compte, temps moyen passé par le passé).
 
@@ -115,7 +115,7 @@ graph TD
     F --> A
 ```
 
-Ce qui est effrayant dans cette boucle, c'est que l'**illusion de fréquence (Phénomène Baader-Meinhof)** est intentionnellement provoquée par l'algorithme. Une fois que vous voyez le nom d'une nouvelle bibliothèque de gestion d'état, l'algorithme le capte comme un signal et remplit votre fil de discussions sur cette bibliothèque dès le lendemain. Le cerveau humain perçoit cela à tort comme une "pandémie mondiale".
+Ce qui est effrayant dans cette boucle, c'est que l'**illusion de fréquence (Phénomène Baader-Meinhof)** est intentionnellement provoquée par l'algorithme. Une fois que vous voyez le nom d'une nouvelle bibliothèque de [gestion d'état](/fr/p/state-management-history-redux-context-recoil-zustand/), l'algorithme le capte comme un signal et remplit votre fil de discussions sur cette bibliothèque dès le lendemain. Le cerveau humain perçoit cela à tort comme une "pandémie mondiale".
 
 Le graphique suivant illustre la différence de cycle de vie entre une technologie surmédiatisée (Hype) sur les réseaux sociaux et une technologie sobre et ennuyeuse mais robuste (Boring Technology).
 
@@ -146,7 +146,7 @@ La défense la plus sûre est de déplacer la source de nos informations de l'ag
 
 ### 5.2 Lecture attentive des articles académiques (Academic Papers) et des livres blancs
 
-Pour les choix technologiques fondamentaux tels que les systèmes distribués, les bases de données ou les architectures de modèles d'apprentissage automatique, vous devriez lire directement les articles publiés dans l'ACM, l'IEEE ou arXiv, ou les livres blancs détaillés publiés par les entreprises (ex : le document Spanner de Google, le document Dynamo d'Amazon), plutôt que des résumés de quelques lignes sur les réseaux sociaux.
+Pour les choix technologiques fondamentaux tels que les [systèmes distribués](/fr/p/cap-theorem-distributed-systems-tradeoff/), les bases de données ou les architectures de modèles d'apprentissage automatique, vous devriez lire directement les articles publiés dans l'ACM, l'IEEE ou arXiv, ou les livres blancs détaillés publiés par les entreprises (ex : le document Spanner de Google, le document Dynamo d'Amazon), plutôt que des résumés de quelques lignes sur les réseaux sociaux.
 
 Les publications sur les réseaux sociaux sont optimisées pour "capter l'attention des lecteurs", tandis que les articles évalués par des pairs sont optimisés pour "l'exactitude des faits et la reproductibilité". Leurs fonctions d'évaluation sont complètement différentes.
 

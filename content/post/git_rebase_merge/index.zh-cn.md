@@ -125,7 +125,7 @@ gitGraph
 
 如果目标分支和来源分支都各自拥有独有的提交，Git就会执行三方合并。此时，Git会遍历DAG，找出两个分支的“最近公共祖先（Lowest Common Ancestor, LCA）”。
 
-寻找LCA的算法的时间复杂度 $T_{\text{LCA}}$ 相对于顶点数 $|V|$ 和边数 $|E|$ 是线性时间：
+寻找LCA的算法的时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/) $T_{\text{LCA}}$ 相对于顶点数 $|V|$ 和边数 $|E|$ 是线性时间：
 
 $$
 T_{\text{LCA}} = \mathcal{O}(|V| + |E|)

@@ -27,7 +27,7 @@ Dans cet article, nous explorerons en détail l'évolution historique et théori
 
 ### 2.1 Le défi du problème de la décision (Entscheidungsproblem)
 
-En 1928, le mathématicien David Hilbert a soulevé le « problème de la décision (Entscheidungsproblem) ». Il s'agissait de la question suivante : « Étant donné une proposition mathématique, existe-t-il un algorithme permettant de déterminer mécaniquement si elle est vraie ou fausse ? »
+En 1928, le mathématicien [David Hilbert](/fr/p/hilbert/) a soulevé le « problème de la décision (Entscheidungsproblem) ». Il s'agissait de la question suivante : « Étant donné une proposition mathématique, existe-t-il un algorithme permettant de déterminer mécaniquement si elle est vraie ou fausse ? »
 
 Pour répondre à cette question, il fallait d'abord définir rigoureusement ce que signifiait « être calculable » ou « avoir un algorithme ». En 1936, deux génies ont apporté des réponses indépendantes à ce problème. L'un était Alan Turing, et l'autre était Alonzo Church, qui fut d'ailleurs le directeur de thèse de Turing.
 
@@ -169,7 +169,7 @@ Bien que Lisp soit à typage dynamique et ne soit pas exactement le lambda-calcu
 
 ## 7. Le lambda-calcul typé et la correspondance de Curry-Howard
 
-Le lambda-calcul pur (lambda-calcul non typé) est puissant, mais comme toute fonction peut prendre n'importe quel argument, il pouvait entraîner des paradoxes par auto-application (ex. : le paradoxe de Russell). Pour éviter cela, Church a par la suite introduit le **lambda-calcul simplement typé** (Simply Typed [Lambda](https://kenji.blog/fr/p/serverless-architecture-aws-lambda-cold-start/) Calculus).
+Le lambda-calcul pur (lambda-calcul non typé) est puissant, mais comme toute fonction peut prendre n'importe quel argument, il pouvait entraîner des paradoxes par auto-application (ex. : [le paradoxe de Russell](/fr/p/russells-paradox/)). Pour éviter cela, Church a par la suite introduit le **lambda-calcul simplement typé** (Simply Typed [Lambda](https://kenji.blog/fr/p/serverless-architecture-aws-lambda-cold-start/) Calculus).
 
 ### 7.1 La correspondance de Curry-Howard
 

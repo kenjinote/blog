@@ -13,7 +13,7 @@ tags: ["algorithms", "sorting", "quick-sort", "merge-sort", "bubble-sort"]
 
 En informática, ordenar datos en un orden específico (ascendente o descendente) es una de las operaciones más fundamentales e importantes. Los algoritmos de clasificación desempeñan un papel clave como paso previo para todo tipo de procesamiento de datos, como acelerar búsquedas, agrupar datos y detectar duplicados.
 
-Este artículo explica de manera integral algoritmos de clasificación representativos, desde algoritmos simples y fáciles de entender para principiantes hasta algoritmos rápidos que se usan en la práctica. Entenderemos visualmente el mecanismo de cada algoritmo mediante diagramas de **Mermaid**, comprobaremos la implementación real con código Python y compararemos el rendimiento, como la complejidad temporal. Además, para comprender completamente el comportamiento de los algoritmos, también se incluye un rastro de ejecución completo usando una matriz de 50 elementos. Esto te permitirá comprender el comportamiento detallado del algoritmo como si lo tuvieras en tus manos.
+Este artículo explica de manera integral algoritmos de clasificación representativos, desde algoritmos simples y fáciles de entender [para principiantes](/es/p/productos-de-cuero%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/) hasta algoritmos rápidos que se usan en la práctica. Entenderemos visualmente el mecanismo de cada algoritmo mediante diagramas de **Mermaid**, comprobaremos la implementación real con código Python y compararemos el rendimiento, como la complejidad temporal. Además, para comprender completamente el comportamiento de los algoritmos, también se incluye un rastro de ejecución completo usando una matriz de 50 elementos. Esto te permitirá comprender el comportamiento detallado del algoritmo como si lo tuvieras en tus manos.
 
 ## Métricas de evaluación de algoritmos
 
@@ -776,7 +776,7 @@ Para prevenir esta situación, generalmente se utilizan técnicas como Quick Sor
 
 ## 5. Ordenamiento por mezcla (Merge Sort)
 
-Es un método de ordenamiento estable y externo típico, inventado por John von Neumann. Basado en el método de divide y vencerás, divide la matriz en partes pequeñas y luego las fusiona manteniendo su orden.
+Es un método de ordenamiento estable y externo típico, inventado por [John von Neumann](/es/p/von-neumann/). Basado en el método de divide y vencerás, divide la matriz en partes pequeñas y luego las fusiona manteniendo su orden.
 
 ### Complejidad y características
 

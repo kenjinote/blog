@@ -10,7 +10,7 @@ image: "eyecatch.jpg"
 
 # Pendahuluan: Pria yang Ditakuti sebagai "Orang Mars"
 
-Sepanjang sejarah manusia, telah banyak individu yang disebut sebagai "jenius." Tokoh-tokoh besar seperti Albert Einstein, Isaac Newton, dan Leonardo da Vinci semuanya menunjukkan bakat luar biasa di bidang tertentu. Namun, seorang ilmuwan tertentu yang hidup di abad ke-20 dikatakan memiliki "kecerdasan dari dimensi lain" yang melampaui mereka semua. Dia adalah John von Neumann (1903 - 1957).
+Sepanjang sejarah manusia, telah banyak individu yang disebut sebagai "jenius." Tokoh-tokoh besar seperti Albert Einstein, [Isaac Newton](/id/p/newton/), dan Leonardo da Vinci semuanya menunjukkan bakat luar biasa di bidang tertentu. Namun, seorang ilmuwan tertentu yang hidup di abad ke-20 dikatakan memiliki "kecerdasan dari dimensi lain" yang melampaui mereka semua. Dia adalah [John von Neumann](/id/p/von-neumann/) (1903 - 1957).
 
 Otaknya begitu jauh melampaui manusia sehingga rekan-rekan ilmuwannya berbisik setengah bercanda bahwa dia adalah "orang Mars yang berpura-pura menjadi manusia" atau memiliki "Otak Iblis." Ada banyak anekdot tentang bahkan pemenang Hadiah Nobel yang menyadari batas kecerdasan mereka sendiri di depan von Neumann dan tidak punya pilihan selain bertindak seperti anak-anak.
 
@@ -35,7 +35,7 @@ Di Budapest pada waktu itu, bakat-bakat Yahudi yang luar biasa lahir satu demi s
 ### Universitas Göttingen dan David Hilbert
 Memasuki masa mudanya, von Neumann belajar matematika di Universitas Budapest, dan teknik kimia secara bersamaan di Universitas Berlin dan ETH Zurich (ini karena ayahnya khawatir dia tidak bisa mencari nafkah dari matematika saja). Meraih gelar PhD di bidang matematika pada usia 22 tahun, ia menuju ke Universitas Göttingen di Jerman, pusat dunia matematika pada saat itu.
 
-Di sana ia menjabat sebagai asisten David Hilbert, otoritas absolut di dunia matematika pada saat itu. Hilbert sedang mempromosikan "Program Hilbert" untuk membuktikan "kelengkapan dan konsistensi matematika," dan von Neumann sangat melibatkan dirinya dalam rencana besar ini, memberikan kontribusi yang menentukan di bidang teori himpunan aksiomatik.
+Di sana ia menjabat sebagai asisten [David Hilbert](/id/p/hilbert/), otoritas absolut di dunia matematika pada saat itu. Hilbert sedang mempromosikan "Program Hilbert" untuk membuktikan "kelengkapan dan konsistensi matematika," dan von Neumann sangat melibatkan dirinya dalam rencana besar ini, memberikan kontribusi yang menentukan di bidang teori himpunan aksiomatik.
 
 ### Fondasi Matematika dari Mekanika Kuantum
 Pada akhir tahun 1920-an, teori baru yang disebut mekanika kuantum lahir di dunia fisika, menyebabkan kebingungan besar. Dua teori, "Mekanika Matriks" karya Werner Heisenberg dan "Mekanika Gelombang" karya Erwin Schrödinger, yang terlihat sangat berbeda dalam penampilan dan pendekatan, berdiri berdampingan.
@@ -47,7 +47,7 @@ Di sini, von Neumann menunjukkan intuisi matematikanya yang luar biasa. Dengan m
 ### Bangkitnya Nazi dan Pelarian ke Amerika
 Pada tahun 1930-an, Nazi yang dipimpin oleh Adolf Hitler berkuasa di Jerman, dan penganiayaan terhadap orang Yahudi dimulai. Merasakan krisis tersebut, von Neumann melarikan diri ke Amerika lebih awal. Dia diundang ke "Institute for Advanced Study (IAS)" yang baru didirikan di Princeton, New Jersey.
 
-Institut ini mengumpulkan para pemikir terhebat dari seluruh dunia, termasuk Einstein dan Kurt Gödel. Von Neumann menjadi profesor penuh waktu di institut tersebut pada usia muda 29 tahun (bersama Einstein dan lainnya, ia adalah profesor penuh waktu termuda).
+Institut ini mengumpulkan para pemikir terhebat dari seluruh dunia, termasuk Einstein dan [Kurt Gödel](/id/p/godel/). Von Neumann menjadi profesor penuh waktu di institut tersebut pada usia muda 29 tahun (bersama Einstein dan lainnya, ia adalah profesor penuh waktu termuda).
 
 ### Gaya Bermain yang Tidak Ortodoks
 Di Princeton, von Neumann bertindak sangat berbeda dari para sarjana pendiam lainnya. Dia memecahkan masalah matematika yang sulit sambil mendengarkan musik mars Jerman yang keras, sering mengadakan pesta mewah, mengendarai mobil dengan kecepatan sangat tinggi, dan menghancurkan mobil baru hampir setiap tahun (persimpangan di mana dia sering menyebabkan kecelakaan bahkan disebut "persimpangan von Neumann"). Sementara Einstein lebih menyukai kehidupan yang sederhana dan menyendiri, von Neumann selalu mengenakan setelan rapi dan sangat menikmati kesenangan duniawi.
@@ -127,11 +127,11 @@ Ini terjadi sebelum penemuan struktur heliks ganda DNA (1953). Dengan menggunaka
 
 ## Kesimpulan: Kecerdasan yang Terlalu Dini bagi Umat Manusia
 
-Pada tanggal 8 Februari 1957, John von Neumann meninggal karena kanker di sebuah rumah sakit di Washington D.C. pada usia muda 53 tahun. Karena khawatir ia secara tidak sadar membocorkan rahasia militer, militer dikatakan selalu menempatkan polisi militer di kamar rumah sakitnya setiap saat.
+Pada tanggal 8 Februari 1957, [John von Neumann](/id/p/von-neumann/) meninggal karena kanker di sebuah rumah sakit di Washington D.C. pada usia muda 53 tahun. Karena khawatir ia secara tidak sadar membocorkan rahasia militer, militer dikatakan selalu menempatkan polisi militer di kamar rumah sakitnya setiap saat.
 
 Otaknya terus bekerja tanpa henti hingga saat-saat terakhir, tetapi ia sangat ketakutan karena secara bertahap kehilangan ingatannya saat kankernya memburuk. Proses seorang pria yang dulunya dapat menghafal seluruh buku menjadi tidak mampu melakukan penjumlahan sederhana pun merupakan pemandangan yang kejam bagi siapa pun di sekitarnya.
 
-John von Neumann. Ia memelopori dan membangun fondasi bagi area yang seharusnya membutuhkan waktu ratusan tahun bagi umat manusia untuk dijelajahi (dari matematika, fisika, ekonomi, meteorologi hingga ilmu komputer) hanya dalam satu kehidupan.
+[John von Neumann](/id/p/von-neumann/). Ia memelopori dan membangun fondasi bagi area yang seharusnya membutuhkan waktu ratusan tahun bagi umat manusia untuk dijelajahi (dari matematika, fisika, ekonomi, meteorologi hingga ilmu komputer) hanya dalam satu kehidupan.
 
 Karena pencapaiannya begitu beragam dan mendalam, masih sulit dipercaya bahwa semua itu diselesaikan oleh satu manusia saja. Apakah dia benar-benar seorang "orang Mars" atau bukan tidaklah pasti, tetapi klon-klonnya yang bernama "Arsitektur Von Neumann" terus menghitung tanpa istirahat di seluruh dunia pada saat ini juga.
 

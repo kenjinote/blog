@@ -14,7 +14,7 @@ tags:
 image: eyecatch.jpg
 ---
 
-En el mundo de las matemáticas, existen ciertos temas que comienzan con un problema intuitivamente muy fácil de entender, pero cuyas soluciones y problemas derivados se conectan con las áreas más profundas de las matemáticas modernas. El "Último Teorema de Fermat" y la "Conjetura de Poincaré" son ejemplos representativos, pero la **"Conjetura de Kakeya" (Kakeya Conjecture)**, situada en la intersección de la geometría y el análisis matemático, es también uno de esos temas fascinantes.
+En el mundo de las matemáticas, existen ciertos temas que comienzan con un problema intuitivamente muy fácil de entender, pero cuyas soluciones y problemas derivados se conectan con las áreas más profundas de las matemáticas modernas. El "Último Teorema de Fermat" y la "[Conjetura de Poincaré](/es/p/poincare-conjecture/)" son ejemplos representativos, pero la **"Conjetura de Kakeya" (Kakeya Conjecture)**, situada en la intersección de la geometría y el análisis matemático, es también uno de esos temas fascinantes.
 
 En este artículo, exploraremos en profundidad toda la perspectiva de la conjetura de Kakeya, comenzando desde el "Problema de la aguja de Kakeya" planteado en 1917 por el matemático japonés Soichi Kakeya, pasando por el sorprendente descubrimiento del matemático ruso Abram Besicovitch, hasta llegar a las investigaciones de genios matemáticos modernos como Terence Tao.
 

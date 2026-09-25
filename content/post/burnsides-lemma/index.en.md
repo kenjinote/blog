@@ -256,6 +256,6 @@ How was it? In this article, using the number of necklace designs as an example,
 *   Using **[Burnside's Lemma](https://kenji.blog/en/p/burnsides-lemma/)**, the number of essentially different patterns can be calculated by the mechanical procedure of "averaging the number of fixed points in each operation".
 *   This theorem is based on a deep property of group theory called the Orbit-Stabilizer Theorem.
 
-[Burnside's Lemma](https://kenji.blog/en/p/burnsides-lemma/) is a very practical theorem applied in a wide range of fields, such as enumerating molecular isomers in chemistry, determining graph isomorphism in graph theory, and even statistical mechanics in physics.
+[Burnside's Lemma](https://kenji.blog/en/p/burnsides-lemma/) is a very practical theorem applied in a wide range of fields, such as enumerating molecular isomers in chemistry, determining graph isomorphism in [graph theory](/en/p/graph-theory-dijkstra-a-star/), and even statistical mechanics in physics.
 
 Through the basics introduced this time, we hope you could feel a glimpse of how the field of mathematics called "Group Theory", which tends to look abstract, can brilliantly solve concrete real-world problems.

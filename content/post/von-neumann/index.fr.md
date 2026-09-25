@@ -23,7 +23,7 @@ John von Neumann (nom hongrois : Neumann János Lajos) est né en 1903 à Budape
 
 ## 3. Contributions aux fondements des mathématiques : Théorie axiomatique des ensembles
 
-L'une des réalisations initiales les plus importantes de von Neumann a été ses recherches sur l'axiomatisation de la théorie des ensembles. La théorie des ensembles, fondée par [Georg Cantor](https://kenji.blog/fr/p/cantor/), devait être le fondement des mathématiques, mais elle était confrontée à des contradictions logiques (paradoxes) telles que le paradoxe de Russell. Pour résoudre ce problème, Ernst Zermelo, Adolf Fraenkel et d'autres construisaient la théorie axiomatique des ensembles, mais von Neumann a adopté une approche différente.
+L'une des réalisations initiales les plus importantes de von Neumann a été ses recherches sur l'axiomatisation de la théorie des ensembles. La théorie des ensembles, fondée par [Georg Cantor](https://kenji.blog/fr/p/cantor/), devait être le fondement des mathématiques, mais elle était confrontée à des contradictions logiques (paradoxes) telles que [le paradoxe de Russell](/fr/p/russells-paradox/). Pour résoudre ce problème, Ernst Zermelo, Adolf Fraenkel et d'autres construisaient la théorie axiomatique des ensembles, mais von Neumann a adopté une approche différente.
 
 Il a introduit le concept de « classes » et a brillamment évité les paradoxes en distinguant strictement les ensembles normaux des classes qui sont trop grandes pour être des ensembles (classes propres). Ce système a ensuite été amélioré par Paul Bernays et [Kurt Gödel](https://kenji.blog/fr/p/godel/), et est maintenant connu sous le nom de **théorie des ensembles de von Neumann-Bernays-Gödel** (théorie des ensembles NBG).
 

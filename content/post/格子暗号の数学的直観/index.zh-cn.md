@@ -11,13 +11,13 @@ tags: ["Lattice", "PQC", "LWE", "Cryptography", "Math"]
 
 # 1. 引言：后量子密码（PQC）的黎明与格密码的崛起
 
-支撑现代社会数字基础设施的是以[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)密码和椭圆曲线密码（ECC）为首的公钥密码技术。这些密码方案的安全性建立在“整数分解问题”或“离散对数问题”等被认为使用传统经典计算机无法高效求解（需要指数级时间）的数学难题之上。
+支撑现代社会数字基础设施的是以[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)密码和椭圆曲线密码（[ECC](/zh-cn/p/elliptic-curve-cryptography-math-cpp/)）为首的公钥密码技术。这些密码方案的安全性建立在“整数分解问题”或“离散对数问题”等被认为使用传统经典计算机无法高效求解（需要指数级时间）的数学难题之上。
 
 然而，彼得·秀尔（Peter Shor）在1994年提出的“Shor算法”在密码学界引起了轩然大波。该算法在数学上证明了，一旦大规模量子计算机问世，便能在多项式时间内解决整数分解问题和离散对数问题。这意味着目前被广泛使用的公钥密码在未来将变得完全可以被破解。
 
 为了应对这种“量子计算机的威胁（Quantum Threat）”，亟需研究即使使用量子计算机也难以破解的新型密码方案。这就是被称为“后量子密码（Post-Quantum [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy: PQC）”或“抗量子计算密码”的领域。
 
-PQC有几种有力的候选方案。包括基于哈希的密码、基于编码的密码、多变量多项式密码、同源密码等，其中目前最受瞩目、也是NIST（美国国家标准与技术研究院）PQC标准化进程核心的便是“格密码（Lattice-based cryptography）”。与其他方案相比，格密码的加解密处理速度非常快，而且具有被称为“从最坏情况复杂度（Worst-case complexity）归约到平均情况复杂度（Average-case complexity）”的特性，在密码学理论中拥有极强的安全性证明。
+PQC有几种有力的候选方案。包括基于哈希的密码、基于编码的密码、多变量多项式密码、同源密码等，其中目前最受瞩目、也是NIST（美国国家标准与技术研究院）PQC标准化进程核心的便是“格密码（Lattice-based cryptography）”。与其他方案相比，格密码的加解密处理速度非常快，而且具有被称为“从最坏情况[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)（Worst-case complexity）归约到平均情况[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)（Average-case complexity）”的特性，在密码学理论中拥有极强的安全性证明。
 
 本文将从格密码的基础——“格（Lattice）”的数学定义出发，深入剖析格上的困难问题：SVP（最短向量问题）和CVP（最近向量问题），以及作为现代格密码心脏的“LWE问题（Learning With Errors）”，并结合数学公式、几何直觉以及具体的数值计算例子，进行透彻的讲解。
 
@@ -46,7 +46,7 @@ $$
 
 例如，刚才由 $\mathbf{b}_1 = (1, 0)^T, \mathbf{b}_2 = (0, 1)^T$ 生成的 $\mathbb{Z}^2$ 格，即使使用 $\mathbf{b}'_1 = (1, 1)^T, \mathbf{b}'_2 = (2, 3)^T$ 这组基，也会生成完全相同的格 $\mathbb{Z}^2$。
 
-某个基 $B$ 和另一个基 $B'$ 生成相同格的充要条件是，存在一个整数元素构成的矩阵 $U \in \mathbb{Z}^{n \times n}$，其行列式为 $\det(U) = \pm 1$，并且可以表示为：
+某个基 $B$ 和另一个基 $B'$ 生成相同格的充要条件是，存在一个整数元素构成的矩阵 $U \in \mathbb{Z}^{n \times n}$，其[行列式](/zh-cn/p/geometric-meaning-of-determinant/)为 $\det(U) = \pm 1$，并且可以表示为：
 $$ B' = B U $$
 这样的矩阵 $U$ 被称为“幺模矩阵（Unimodular matrix）”。
 
@@ -85,7 +85,7 @@ CVP在格密码中也是极其重要的问题。
 
 # 4. LWE问题（Learning With Errors）的数学公式化
 
-大部分现代格密码都基于Oded Regev在2005年提出的“LWE问题（Learning With Errors）”。LWE问题的美妙之处在于其公式化的简洁性，以及它拥有“从最坏情况复杂度到平均情况复杂度的归约”这一强大的数学证明。
+大部分现代格密码都基于Oded Regev在2005年提出的“LWE问题（Learning With Errors）”。LWE问题的美妙之处在于其公式化的简洁性，以及它拥有“从最坏情况[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)到平均情况[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)的归约”这一强大的数学证明。
 
 ## 4.1 无噪声的线性方程组
 为了理解LWE问题，我们先来考虑一个没有噪声的简单线性方程组。
@@ -298,7 +298,7 @@ Standard LWE的公钥是一个矩阵 $A$，而在Ring-LWE中则使用单一的�
 方程如下所示：
 $$ b(x) = a(x) \cdot s(x) + e(x) \pmod q $$
 
-因为这是多项式的乘法，所以通过使用类似于快速傅里叶变换（FFT）的“数论变换（Number Theoretic Transform: NTT）”，可以将计算量急剧削减到 $\mathcal{O}(n \log n)$。此外，由于公钥的尺寸也从矩阵缩小到了单一的多项式，数据尺寸减少到了 $\mathcal{O}(n)$。这在通信带宽上带来了压倒性的优势。
+因为这是多项式的乘法，所以通过使用类似于[快速傅里叶变换（FFT）](/zh-cn/p/fast-fourier-transform-algorithm/)的“数论变换（Number Theoretic Transform: NTT）”，可以将计算量急剧削减到 $\mathcal{O}(n \log n)$。此外，由于公钥的尺寸也从矩阵缩小到了单一的多项式，数据尺寸减少到了 $\mathcal{O}(n)$。这在通信带宽上带来了压倒性的优势。
 
 从数学上看，Ring-LWE并不是一般的格，而是归结为被称为“理想格（Ideal Lattice）”的具有特殊对称性的格上的问题。
 
@@ -312,9 +312,9 @@ Ring-LWE虽然高效，但也存在着一些担忧，即理想格特殊的代数
 
 最后，我们来探讨一下核心问题：“为什么人们认为格密码即使使用量子计算机也无法被破解？”。
 
-量子计算机能够破解[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)密码和椭圆曲线密码的Shor算法，其本质是一个求解“隐藏子群问题（Hidden Subgroup Problem: HSP）”的算法。RSA和ECC背后的数学结构（有限阿贝尔群）具有周期性，通过使用被称为量子傅里叶变换（QFT）的量子算法特有操作，可以一口气提取出这个周期（隐藏的子群）。
+量子计算机能够破解[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)密码和椭圆曲线密码的Shor算法，其本质是一个求解“隐藏子群问题（Hidden Subgroup Problem: HSP）”的算法。RSA和[ECC](/zh-cn/p/elliptic-curve-cryptography-math-cpp/)背后的数学结构（有限阿贝尔群）具有周期性，通过使用被称为量子傅里叶变换（QFT）的量子算法特有操作，可以一口气提取出这个周期（隐藏的子群）。
 
-然而，格问题有着根本的不同。尽管格也具有周期性，但在SVP和CVP中需要求解的是“最短距离”或“去除噪声”这种几何上的非线性性质。即使直接套用像Shor算法中那样的“阿贝尔群上的量子傅里叶变换”，也无法高效地提取出成为格问题解答的有用信息。迄今为止，尚未发现能够在多项式时间内求解SVP或LWE的量子算法，人们普遍相信，即便拥有量子计算机的并行计算能力，也只有近乎穷举的搜索（如利用Grover算法带来的平方根加速程度）才是有效的手段。
+然而，格问题有着根本的不同。尽管格也具有周期性，但在SVP和CVP中需要求解的是“最短距离”或“去除噪声”这种几何上的非线性性质。即使直接套用像Shor算法中那样的“阿贝尔群上的量子傅里叶变换”，也无法高效地提取出成为格问题解答的有用信息。迄今为止，尚未发现能够在多项式时间内求解SVP或LWE的量子算法，人们普遍相信，即便拥有量子计算机的并行计算能力，也只有近乎穷举的搜索（如利用[Grover算法](/zh-cn/p/grovers-algorithm-quantum-search/)带来的平方根加速程度）才是有效的手段。
 
 # 9. 总结
 

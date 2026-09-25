@@ -56,7 +56,7 @@ The greatest characteristic that sets Churchill apart from many other politician
 
 In the 1945 general election immediately following the victory in the war, the Conservative Party led by him suffered an unexpected, crushing defeat. However, even after stepping down, his international influence did not wane. In a 1946 speech in Fulton, Missouri, USA, he pointed to the Eastern European countries under Soviet influence and said, "From Stettin in the Baltic to Trieste in the Adriatic, an 'Iron Curtain' has descended across the Continent." These words became the defining concept for the new world order of the subsequent Cold War.
 
-He later returned to the post of Prime Minister in 1951 and bore the burden of national politics until he retired for health reasons in 1955. When he passed away in 1965 at the age of 90, the United Kingdom bid him farewell with a state funeral. A state funeral for someone outside the royal family was an exceptional honor not seen since Isaac Newton and Horatio Nelson.
+He later returned to the post of Prime Minister in 1951 and bore the burden of national politics until he retired for health reasons in 1955. When he passed away in 1965 at the age of 90, the United Kingdom bid him farewell with a state funeral. A state funeral for someone outside the royal family was an exceptional honor not seen since [Isaac Newton](/en/p/newton/) and Horatio Nelson.
 
 ## Conclusion: The Philosophy Churchill Left for the Modern World
 

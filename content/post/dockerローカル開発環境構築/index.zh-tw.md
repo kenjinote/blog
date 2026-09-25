@@ -23,13 +23,13 @@ tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 
 ### IaC 的原則與在本地環境的應用
 
-Infrastructure as Code (IaC) 是一種透過機器可讀的定義檔，而非手動流程來管理基礎設施設定與配置（Provisioning）的方法。IaC 的核心原則包含以下要素：
+Infrastructure as Code ([IaC](/zh-tw/p/iac-infrastructure-as-code-terraform/)) 是一種透過機器可讀的定義檔，而非手動流程來管理基礎設施設定與配置（Provisioning）的方法。[IaC](/zh-tw/p/iac-infrastructure-as-code-terraform/) 的核心原則包含以下要素：
 
 1. **宣告式方法 (Declarative Approach)** ：定義「最終應該是什麼狀態」，而非「如何改變狀態」。
 2. **冪等性 (Idempotency)** ：無論執行多少次腳本，都能保證始終得到相同的結果（狀態）。
 3. **版本控制 (Version Control)** ：基礎設施的狀態會作為程式碼儲存於 Git 等版本控制系統 (VCS) 中，從而得以追蹤變更歷史與進行同儕審查（Peer Review）。
 
-在本地開發環境中實踐 IaC，意味著使用 `Dockerfile`、`docker-compose.yml` 及 `devcontainer.json` 來將開發環境「應有的樣貌」程式碼化。如此一來，即便是新加入團隊的成員，只需複製（Clone）儲存庫並敲擊一個指令，就能實現立即開始開發的入職（Onboarding）體驗。
+在本地開發環境中實踐 [IaC](/zh-tw/p/iac-infrastructure-as-code-terraform/)，意味著使用 `Dockerfile`、`docker-compose.yml` 及 `devcontainer.json` 來將開發環境「應有的樣貌」程式碼化。如此一來，即便是新加入團隊的成員，只需複製（Clone）儲存庫並敲擊一個指令，就能實現立即開始開發的入職（Onboarding）體驗。
 
 ### 支撐容器技術的核心功能
 
@@ -129,7 +129,7 @@ $$ R = \left( 1 - \frac{195}{385} \right) \times 100 \approx 49.35\% $$
 
 ## 4. 使用 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) Compose 進行多容器的編排 (Orchestration)
 
-在現代的 Web 應用程式開發中，Web 伺服器、資料庫、快取伺服器等多個元件協同運作的微服務架構已經非常普遍。為了在本地環境集中管理這些元件，我們使用 `docker-compose.yml`。
+在現代的 Web 應用程式開發中，Web 伺服器、資料庫、快取伺服器等多個元件協同運作的[微服務架構](/zh-tw/p/microservices-architecture-bff-api-gateway/)已經非常普遍。為了在本地環境集中管理這些元件，我們使用 `docker-compose.yml`。
 
 本次我們將在本地建置由「Web (FastAPI)」、「Database (PostgreSQL)」、「Cache ([Redis](https://kenji.blog/zh-tw/p/nosql-database-selection-kvs-document-graph-wide-column/))」構成的三層式架構系統。
 
@@ -356,7 +356,7 @@ sequenceDiagram
 
 $$ T_{\text{total}} = T_{\text{net}} + T_{\text{app}} + T_{\text{cache}} + p_{\text{miss}} \times (T_{\text{db}} + T_{\text{cache\_write}}) $$
 
-在本地開發環境（[Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/) 內），$T_{\text{net}}$ 幾乎接近 0，但值得注意的是 **綁定掛載時的 I/O 效能** 。尤其是在 Windows/macOS 上使用 Docker Desktop 的情況下，因為主機作業系統與 VM（容器）之間的檔案共享額外開銷 (Overhead)，$T_{\text{app}}$（程式碼讀取時間等）往往會有變得龐大的趨勢。為了解決這個效能瓶頸，強烈建議利用前述的 Dev[Container](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)s 將整個原始碼配置到具名 Volume 中，或是採用在 WSL2（Windows Subsystem for Linux 2）環境中原生執行 Docker 引擎的架構。
+在本地開發環境（[Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/) 內），$T_{\text{net}}$ 幾乎接近 0，但值得注意的是 **綁定掛載時的 I/O 效能** 。尤其是在 Windows/macOS 上使用 Docker Desktop 的情況下，因為主機作業系統與 VM（容器）之間的檔案共享額外開銷 (Overhead)，$T_{\text{app}}$（程式碼讀取時間等）往往會有變得龐大的趨勢。為了解決這個效能瓶頸，強烈建議利用前述的 Dev[Container](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)s 將整個原始碼配置到具名 Volume 中，或是採用在 [WSL2](/zh-tw/p/wsl2-ultimate-development-setup-guide/)（[Windows Subsystem for Linux](/zh-tw/p/wsl2-ultimate-development-setup-guide/) 2）環境中原生執行 Docker 引擎的架構。
 
 ---
 

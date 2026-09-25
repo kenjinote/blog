@@ -110,7 +110,7 @@ Beyond his mathematical achievements, Teiji [Takagi](https://kenji.blog/en/p/tak
 - **"Lectures on Elementary Number Theory"**: A textbook explaining everything from the basics of number theory to Gauss's law of reciprocity.
 - **"Historical Tales of Modern Mathematics"**: A historical book that vividly depicts the ensemble of mathematicians in the 19th century. It conveys the drama of mathematical development.
 
-The seeds he sowed were passed on to Japanese mathematicians who would later be active worldwide, such as [Kunihiko Kodaira](https://kenji.blog/en/p/kodaira-kunihiko/), Kiyosi Ito, and furthermore, Goro Shimura and [Yutaka Taniyama](https://kenji.blog/en/p/taniyama-yutaka/).
+The seeds he sowed were passed on to Japanese mathematicians who would later be active worldwide, such as [Kunihiko Kodaira](https://kenji.blog/en/p/kodaira-kunihiko/), [Kiyosi Ito](/en/p/ito-kiyosi/), and furthermore, [Goro Shimura](/en/p/shimura-goro/) and [Yutaka Taniyama](https://kenji.blog/en/p/taniyama-yutaka/).
 
 ## Conclusion
 

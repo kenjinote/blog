@@ -69,7 +69,7 @@ graph TD
 
 准备工作就绪。霍奇猜想的主张虽然非常简单，但却惊人地强大。
 
-> **[霍奇猜想 (Hodge Conjecture)](https://kenji.blog/p/hodge-conjecture/)**
+> **[霍奇猜想 (Hodge Conjecture)](https://kenji.blog/zh-cn/p/hodge-conjecture/)**
 > 复数域上的非奇异射影代数簇 X 上的任何霍奇类，都可以表示为代数闭链的有理系数线性组合。
 
 换言之，它主张“从拓扑学和复分析的角度来看像代数几何的上同调类（霍奇类），实际上确实源于由代数方程构成的图形（代数闭链）”。
@@ -107,7 +107,7 @@ sequenceDiagram
 
 霍奇猜想存在着各种推广和相关的猜想。
 
-- **广义霍奇猜想 (Generalized [Hodge Conjecture](https://kenji.blog/zh-cn/p/hodge-conjecture/))**: 试图将霍奇猜想扩展到更一般的框架（例如，带有奇异点的流形、开流形等）。虽然由亚历山大·格罗滕迪克 ([Alexander Grothendieck](https://kenji.blog/zh-cn/p/grothendieck/)) 等人进行了表述，但也发现了反例，因此寻找合适的表述本身就成为了一个困难的课题。
+- **广义霍奇猜想 (Generalized [Hodge Conjecture](https://kenji.blog/zh-cn/p/hodge-conjecture/))**: 试图将霍奇猜想扩展到更一般的框架（例如，带有奇异点的流形、开流形等）。虽然由[亚历山大·格罗滕迪克](/zh-cn/p/grothendieck/) ([Alexander Grothendieck](https://kenji.blog/zh-cn/p/grothendieck/)) 等人进行了表述，但也发现了反例，因此寻找合适的表述本身就成为了一个困难的课题。
 - **塔特猜想 (Tate Conjecture)**: 作为霍奇猜想在数论上的类比，著名的是塔特猜想。它不是针对复数域上的流形，而是针对有限域上的流形，使用平展上同调 (Étale Cohomology) 的概念进行表述。这也是一个极其艰深的未解决问题。
 
 ## 6. 总结与未来展望

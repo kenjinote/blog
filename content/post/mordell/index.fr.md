@@ -27,7 +27,7 @@ En 1906, à l'âge de 18 ans, Mordell voyage seul en Angleterre avec très peu d
 
 Au centre des recherches de Mordell se trouvaient toujours les **équations diophantiennes**. Une équation diophantienne est un problème consistant à trouver des solutions entières ou rationnelles à des équations polynomiales à coefficients entiers. Elle tire son nom de l'ancien mathématicien grec [Diophante](https://kenji.blog/fr/p/diophantus/).
 
-L'exemple le plus célèbre d'équation diophantienne est celui lié au théorème de Pythagore :
+L'exemple le plus célèbre d'équation diophantienne est celui lié au théorème de [Pythagore](/fr/p/pythagoras/) :
 
 $$ x^2 + y^2 = z^2 $$
 

@@ -18,7 +18,7 @@ Currently, the most widely used cryptography in the world is "[RSA](https://kenj
 The cornerstone of RSA cryptography's defense is very simple. It utilizes the mathematical property that **"factoring a gigantic number into primes cannot be solved even by computers."**
 For example, for "15", we immediately know it's "3 × 5", but the moment this becomes a "270-digit number", even if we bundle all the supercomputers in the world, it would take hundreds of millions of years to solve.
 
-However, mathematicians do not stay silent either. To break this ironclad cryptography, humanity created a magical algorithm (calculation procedure) called the **"General Number Field Sieve (GNFS)"**.
+However, mathematicians do not stay silent either. To break this ironclad cryptography, humanity created a magical algorithm (calculation procedure) called the **"[General Number Field Sieve](/en/p/beyond-gnfs-integer-factorization-algorithms/) (GNFS)"**.
 
 In this article, without using any specialized jargon, and only with knowledge of **junior high school math (prime factorization, algebraic expressions, greatest common divisor)**, we will completely explain the mechanism step-by-step by which this "humanity's strongest algorithm" breaks cryptography!
 
@@ -52,7 +52,7 @@ With only the prime number $p$ in the $(X - Y)$ room, let's calculate the **"Gre
 * Contents of $N$ = $p \times q$
   The only common part is **"$p$"**!
 
-In other words, the moment you calculate the greatest common divisor, the hidden prime number $p$ pops out, and the cryptography is completely decrypted. (*The greatest common divisor can be calculated instantly even on a smartphone using the "[Euclide](https://kenji.blog/p/euclid/)an Algorithm".)
+In other words, the moment you calculate the greatest common divisor, the hidden prime number $p$ pops out, and the cryptography is completely decrypted. (*The greatest common divisor can be calculated instantly even on a smartphone using the "[Euclide](https://kenji.blog/en/p/euclid/)an Algorithm".)
 
 **[A Little Column: Why squared? Why not cubed or doubled?]**
 > If it's "$2X - 2Y$", it becomes $2(X - Y)$, and since there's only one room, you can't separate the primes. If it's "$X^3 - Y^3$", the size of the rooms becomes unbalanced, making the calculations unnecessarily heavy. To separate the primes into two, "squaring", which beautifully divides into two rooms, is the most cost-effective.
@@ -101,7 +101,7 @@ If the cryptography number $N$ is up to about "100 digits", it can be solved wit
 
 When the numbers get too huge, "numbers made only of small prime numbers (gold dust)" completely stop appearing. It becomes harder than searching for a contact lens in a desert, and you can't collect the cards to solve the puzzle at all.
 
-Here finally, humanity's ultimate weapon, the **"General Number Field Sieve (GNFS)"**, makes its appearance.
+Here finally, humanity's ultimate weapon, the **"[General Number Field Sieve](/en/p/beyond-gnfs-integer-factorization-algorithms/) (GNFS)"**, makes its appearance.
 
 ---
 

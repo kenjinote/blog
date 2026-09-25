@@ -28,7 +28,7 @@ Bien qu'il existe diverses meilleures pratiques et modèles de conception dans l
 
 ### Le contexte de la création : Tim Peters et la PEP 20
 
-The Zen of Python a été écrit par Tim Peters, un développeur principal (core developer) impliqué dans le développement de Python depuis de nombreuses années. Tim a systématisé les « accords tacites » et les « intuitions » de conception de Guido van Rossum, le créateur de Python, afin qu'ils puissent être verbalisés et partagés au sein de la communauté.
+The Zen of Python a été écrit par Tim Peters, un développeur principal (core developer) impliqué dans le développement de Python depuis de nombreuses années. Tim a systématisé les « accords tacites » et les « intuitions » de conception de Guido van Rossum, [le créateur de Python](/fr/p/biography-guido-van-rossum/), afin qu'ils puissent être verbalisés et partagés au sein de la communauté.
 
 Cela a ensuite été officiellement documenté sous le nom de **PEP 20 (Python Enhancement Proposal 20)**. Lors de l'ajout de fonctionnalités ou de la modification de Python, cette PEP 20 sert toujours de point de départ auquel il faut revenir.
 
@@ -121,7 +121,7 @@ Python déteste ce type de comportement qui consiste à « lire entre les lignes
 Le langage Perl a une philosophie selon laquelle "There's more than one way to do it" (Il y a plus d'une façon de le faire), mais Python prend la direction opposée.
 
 Pour accomplir une tâche, l'idéal est que tout le monde écrive le code de la même manière. Cela réduit considérablement la charge cognitive lors de la lecture du code écrit par d'autres.
-Par ailleurs, le terme « Néerlandais » fait référence à Guido van Rossum, le créateur de Python. C'est une touche d'humour signifiant qu'il peut falloir du temps pour comprendre pleinement l'intention du concepteur du langage.
+Par ailleurs, le terme « Néerlandais » fait référence à Guido van Rossum, [le créateur de Python](/fr/p/biography-guido-van-rossum/). C'est une touche d'humour signifiant qu'il peut falloir du temps pour comprendre pleinement l'intention du concepteur du langage.
 
 ### Now is better than never. (Maintenant est préférable à jamais.)
 ### Although never is often better than *right* now. (Cependant, jamais est souvent préférable à *tout de suite*.)

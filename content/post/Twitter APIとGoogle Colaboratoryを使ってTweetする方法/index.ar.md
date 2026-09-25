@@ -12,13 +12,13 @@ description: 'نشرح خطوات تنفيذ التغريد التلقائي ع�
 
 # المتطلبات
 
-- Twitter API
-- Twitter API SECRET
+- Twitter [API](/ar/p/chatgpt-gemini-claude-api-comparison/)
+- Twitter [API](/ar/p/chatgpt-gemini-claude-api-comparison/) SECRET
 - Twitter ACCESS TOKEN
 - Twitter ACCESS TOKEN SECRET
 - حساب Google
 
-يرجى الرجوع إلى المواقع المرجعية لمعرفة كيفية الحصول على Twitter API.
+يرجى الرجوع إلى المواقع المرجعية لمعرفة كيفية الحصول على Twitter [API](/ar/p/chatgpt-gemini-claude-api-comparison/).
 
 # خطوات التغريد باستخدام API
 
@@ -35,7 +35,7 @@ ACCESS_TOKEN_SECRET = 'pUv81U9GVzZirz5g4AxZPHAJ4GpSXnBo8GUcZ1egtjw9q'
 ```
 import tweepy
 ```
-4. الصق الكود التالي وقم بتشغيله (API v1.1)
+4. الصق الكود التالي وقم بتشغيله ([API](/ar/p/chatgpt-gemini-claude-api-comparison/) v1.1)
 ```
 auth = tweepy.OAuthHandler(API_KEY, API_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
@@ -44,7 +44,7 @@ api.update_status("hello")
 ```
 → سيتم نشر تغريدة `hello`
 
-5. الصق الكود التالي وقم بتشغيله (API v2.0)
+5. الصق الكود التالي وقم بتشغيله ([API](/ar/p/chatgpt-gemini-claude-api-comparison/) v2.0)
 ```
 client = tweepy.Client(consumer_key=API_KEY, consumer_secret=API_SECRET, access_token=ACCESS_TOKEN, access_token_secret=ACCESS_TOKEN_SECRET)
 client.create_tweet(text='hello v2')

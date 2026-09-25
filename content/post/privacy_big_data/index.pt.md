@@ -139,7 +139,7 @@ Ao usar a criptografia homomórfica, as seguintes propriedades são alcançadas:
 $$ E(m_1 + m_2) = E(m_1) \oplus E(m_2) $$
 $$ E(m_1 \times m_2) = E(m_1) \otimes E(m_2) $$
 
-A criptografia homomórfica é dividida em "Criptografia Parcialmente Homomórfica" (Partially Homomorphic Encryption: PHE), que permite apenas adição ou multiplicação, e "Criptografia Totalmente Homomórfica" (Fully Homomorphic Encryption: FHE), que permite infinitas operações de adição e multiplicação. Desde que Craig Gentry construiu o primeiro esquema FHE usando criptografia baseada em reticulados (Lattice-based cryptography) em 2009, tem havido um grande avanço na criptografia.
+A criptografia homomórfica é dividida em "Criptografia Parcialmente Homomórfica" (Partially Homomorphic Encryption: PHE), que permite apenas adição ou multiplicação, e "Criptografia Totalmente Homomórfica" (Fully Homomorphic Encryption: [FHE](/pt/p/fully-homomorphic-encryption-fhe-explained/)), que permite infinitas operações de adição e multiplicação. Desde que Craig Gentry construiu o primeiro esquema [FHE](/pt/p/fully-homomorphic-encryption-fhe-explained/) usando criptografia baseada em reticulados ([Lattice-based cryptography](/pt/p/lattice-based-cryptography-math-intuition/)) em 2009, tem havido um grande avanço na criptografia.
 
 Atualmente, embora ainda existam desafios como o custo computacional e o aumento do tamanho dos textos cifrados (overhead), espera-se que seja aplicado na análise segura de dados médicos na nuvem e em cálculos secretos entre instituições financeiras.
 

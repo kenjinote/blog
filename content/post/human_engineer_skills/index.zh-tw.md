@@ -11,21 +11,21 @@ tags: ["Generative AI", "DDD", "Architecture", "Future of Work"]
 
 # AI 寫程式時代所需要的「人類專屬工程師技能」
 
-近年來，隨著生成式 AI (Generative AI) 與大型語言模型 ([LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)) 的飛躍性進化，軟體工程的風景發生了劇烈變化。GitHub Copilot 及各種 AI 寫程式助手的日常使用，讓「只要用自然語言下達指令，AI 就能瞬間生成程式碼」這件事，不再是未來的科幻情節，而是今日的現實。
+近年來，隨著生成式 AI (Generative AI) 與[大型語言模型](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) ([LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)) 的飛躍性進化，軟體工程的風景發生了劇烈變化。GitHub Copilot 及各種 AI 寫程式助手的日常使用，讓「只要用自然語言下達指令，AI 就能瞬間生成程式碼」這件事，不再是未來的科幻情節，而是今日的現實。
 
 在這樣的時代中，許多工程師會感到「自己的工作是不是會被 AI 奪走」的不安，這是很自然的。確實，像是建立典型 CRUD 應用的樣板 (Boilerplate)、實作簡單演算法，或是呼叫常見函式庫的 API 這些「單純的寫程式工作 (Typing Code)」正在快速商品化 (Commoditization)。
 
-然而，軟體工程的本質並非「打出程式碼」。而是透過技術解決商業課題，並建構出具備可擴展性與可維護性的系統。本篇文章將針對在 AI 寫程式的時代中，價值反而會提高的「人類專屬工程師技能」，從 LLM 的技術限制、領域驅動設計 (DDD)、系統架構、以及分散式系統的除錯等觀點，進行極其詳細且具技術深度的探討。
+然而，軟體工程的本質並非「打出程式碼」。而是透過技術解決商業課題，並建構出具備可擴展性與可維護性的系統。本篇文章將針對在 AI 寫程式的時代中，價值反而會提高的「人類專屬工程師技能」，從 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的技術限制、領域驅動設計 (DDD)、系統架構、以及[分散式系統](/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)的除錯等觀點，進行極其詳細且具技術深度的探討。
 
 ---
 
 ## 1. 理解大型語言模型 (LLM) 的結構性限制
 
-為了正確評估 AI 的能力，並看清人類應該在哪個領域發揮價值，首先必須從數學與架構的觀點，理解 AI（特別是 LLM）的結構性限制。
+為了正確評估 AI 的能力，並看清人類應該在哪個領域發揮價值，首先必須從數學與架構的觀點，理解 AI（特別是 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）的結構性限制。
 
 ### 1.1 [Transformer](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 架構中的運算量與上下文限制
 
-目前大部分的 LLM 都是基於 Google 在 2017 年發表的「Transformer」架構。Transformer 的核心在於「自注意力機制 (Self-Attention Mechanism)」。自注意力機制會計算輸入序列中的每個標記 (Token) 與其他所有標記之間的關聯程度。
+目前大部分的 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 都是基於 Google 在 2017 年發表的「Transformer」架構。Transformer 的核心在於「自注意力機制 (Self-Attention Mechanism)」。自注意力機制會計算輸入序列中的每個標記 (Token) 與其他所有標記之間的關聯程度。
 
 這個注意力機制的計算公式可以表示如下：
 
@@ -38,16 +38,16 @@ $$ \text{Complexity} = O(N^2 \cdot d) $$
 
 近年來，雖然像是 FlashAttention 這種硬體層級的最佳化、Sparse Attention，甚至是 Mamba ([State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) Space Models) 等能以線性時間 $O(N)$ 處理的替代架構研究正在進行，但要「完全理解無限的上下文，並生成整體最佳化的輸出」依然是非常困難的。
 
-此外，即使物理上擴大了上下文視窗 (Context Window)，也會發生被稱為「Lost in the Middle（中間資訊流失）」的現象。[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 很容易受到提示詞 (Prompt) 開頭與結尾資訊的強烈影響，而傾向於忽略配置在中間的重要需求或限制。如果讓 LLM 讀取高達數萬行的企業級系統完整原始碼，並指示它「進行最佳的重構」，最終往往會生成局部正確、但整體邏輯崩潰的程式碼，原因就在於此。
+此外，即使物理上擴大了上下文視窗 (Context Window)，也會發生被稱為「Lost in the Middle（中間資訊流失）」的現象。[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 很容易受到提示詞 (Prompt) 開頭與結尾資訊的強烈影響，而傾向於忽略配置在中間的重要需求或限制。如果讓 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 讀取高達數萬行的企業級系統完整原始碼，並指示它「進行最佳的重構」，最終往往會生成局部正確、但整體邏輯崩潰的程式碼，原因就在於此。
 
 ### 1.2 機率生成模型的特性與「幻覺 (Hallucination)」
 
-LLM 的本質是一個「機率生成模型」，它會根據輸入的上下文（提示詞）與至今為止的生成結果，預測下一個出現機率最高的標記。
+[LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的本質是一個「機率生成模型」，它會根據輸入的上下文（提示詞）與至今為止的生成結果，預測下一個出現機率最高的標記。
 
 $$ P(w_t | w_{1:t-1}) = \text{softmax}(W \cdot h_t) $$
 
 模型只是從龐大的訓練資料中學習「詞彙統計上的共現關係 (Co-occurrence)」，它並未理解所生成的程式碼之「語意 (Semantics)」或「執行結果對現實世界的影響」。由此產生的就是所謂的「幻覺 (Hallucination)」。
-像是呼叫不存在的虛構函式庫，或是傳遞型別不符的變數等 Bug，都只不過是 LLM 生成了「文法上看起來像樣（機率較高）的標記序列」所導致的結果。
+像是呼叫不存在的虛構函式庫，或是傳遞型別不符的變數等 Bug，都只不過是 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 生成了「文法上看起來像樣（機率較高）的標記序列」所導致的結果。
 
 ### 1.3 缺乏現實世界接地 (Grounding)
 
@@ -116,11 +116,11 @@ flowchart TD
 
 ## 4. 人類專屬技能③：分散式系統的架構設計與擴展
 
-現代軟體已經從運行於單一伺服器上的單體架構 (Monolith)，進化到雲端原生的微服務架構 ([Microservices](https://kenji.blog/zh-tw/p/microservices-architecture-bff-api-gateway/) Architecture) 及事件驅動架構 ([Event-Driven](https://kenji.blog/zh-tw/p/event-driven-architecture-async/) Architecture)。設計這種分散式系統，對於只能做到局部邏輯最佳化的 AI 來說，是一個非常困難的領域。
+現代軟體已經從運行於單一伺服器上的單體架構 (Monolith)，進化到雲端原生的[微服務架構](/zh-tw/p/microservices-architecture-bff-api-gateway/) ([Microservices](https://kenji.blog/zh-tw/p/microservices-architecture-bff-api-gateway/) Architecture) 及事件驅動架構 ([Event-Driven](https://kenji.blog/zh-tw/p/event-driven-architecture-async/) Architecture)。設計這種[分散式系統](/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)，對於只能做到局部邏輯最佳化的 AI 來說，是一個非常困難的領域。
 
 ### 4.1 CAP 定理與取捨 (Trade-off) 判斷
 
-在設計分散式系統時，工程師總是會面臨「CAP 定理」。CAP 定理是指，分散式系統在以下三個特性中，最多只能同時滿足兩個：
+在設計[分散式系統](/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)時，工程師總是會面臨「CAP 定理」。CAP 定理是指，[分散式系統](/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)在以下三個特性中，最多只能同時滿足兩個：
 
 - **[Consistency](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/) (一致性)**: 所有節點在同一時間是否能看到相同的資料
 - **[Availability](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/) (可用性)**: 即使部分節點發生故障，系統是否仍能持續回應
@@ -134,7 +134,7 @@ AI 雖然能寫出「優先考慮 C 的程式碼」或「優先考慮 A 的程�
 
 ### 4.2 非同步通訊與最終一致性 ([Eventual Consistency](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/))
 
-當系統規模擴大時，服務間的整合會從基於 [REST API](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-overfetching-type-safety/) 的同步通訊，轉移到使用訊息佇列 (Message Queue，如 Kafka, RabbitMQ) 的非同步通訊。此時，資料一致性就會從即時一致性變為「最終一致性 (Eventual [Consistency](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/))」。
+當系統規模擴大時，服務間的整合會從基於 [REST API](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-overfetching-type-safety/) 的同步通訊，轉移到使用訊息佇列 (Message Queue，如 [Kafka, RabbitMQ](/zh-tw/p/event-driven-architecture-message-queue-kafka-rabbitmq/)) 的非同步通訊。此時，資料一致性就會從即時一致性變為「最終一致性 (Eventual [Consistency](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/))」。
 應該在什麼時機導入 Saga 模式或 [CQRS](https://kenji.blog/zh-tw/p/event-driven-architecture-async/) (Command Query Responsibility Segregation) 等進階架構模式？制定這些複雜的決策與描繪系統整體的藍圖，正是資深工程師的真本領。
 
 ```mermaid

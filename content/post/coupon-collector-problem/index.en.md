@@ -235,7 +235,7 @@ Our run produced a mean of 29.2929 draws, a median of 27, and a completion rate 
 
 *Figure 3. Bars show simulated proportions; circles show theoretical bin probabilities obtained by subtracting values of the cumulative curve. Both use bins of five draws, with all results of 100 draws or more included in the final bin.*
 
-Many experiments finish near the average, while some take considerably longer. The mean of about 29.3 is an average across this variability, not a promise that everyone finishes around draw 29. The **law of large numbers** explains the relationship between repeated experimental averages and the theoretical expectation.
+Many experiments finish near the average, while some take considerably longer. The mean of about 29.3 is an average across this variability, not a promise that everyone finishes around draw 29. The **[law of large numbers](/en/p/law-of-large-numbers/)** explains the relationship between repeated experimental averages and the theoretical expectation.
 
 ## 8. How large is the variation?
 

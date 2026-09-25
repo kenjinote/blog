@@ -27,7 +27,7 @@ En contraste, la fortaleza del desarrollador individual radica en que **"el punt
 
 ## Ley de Zipf y distribución del mercado
 
-La relación entre el tamaño y el número de mercados a menudo sigue la Ley de Zipf o la Ley de Pareto. Si denotamos el rango del mercado como $k$ y el tamaño del mercado (potencial de ventas) como $P(k)$, se puede expresar con un modelo de ley de potencias (power law) como el siguiente:
+La relación entre el tamaño y el número de mercados a menudo sigue [la Ley de Zipf](/es/p/zipfs-law/) o la Ley de Pareto. Si denotamos el rango del mercado como $k$ y el tamaño del mercado (potencial de ventas) como $P(k)$, se puede expresar con un modelo de ley de potencias (power law) como el siguiente:
 
 $$ P(k) \propto \frac{1}{k^\alpha} $$
 
@@ -50,9 +50,9 @@ Los desarrolladores en solitario deben apuntar deliberadamente a problemas de ni
 
 # 2. Diseño de arquitectura que genera una agilidad abrumadora
 
-Los sistemas corporativos están diseñados con la "estabilidad" y la "escalabilidad" como máximas prioridades, por lo que a menudo se adoptan arquitecturas de [Kubernetes](https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/) y microservicios. Sin embargo, si un desarrollador independiente hace lo mismo, sus recursos se agotarán solo con el mantenimiento de la infraestructura (Ops).
+Los sistemas corporativos están diseñados con la "estabilidad" y la "escalabilidad" como máximas prioridades, por lo que a menudo se adoptan arquitecturas de [Kubernetes](https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/) y [microservicios](/es/p/microservices-architecture-bff-api-gateway/). Sin embargo, si un desarrollador independiente hace lo mismo, sus recursos se agotarán solo con el mantenimiento de la infraestructura (Ops).
 
-La consigna del stack tecnológico de un desarrollador en solitario es **"No-Ops" (Cero Operaciones)**. Utiliza la arquitectura serverless (sin servidor) al máximo y concéntrate únicamente en escribir la lógica de negocio.
+La consigna del stack tecnológico de un desarrollador en solitario es **"No-Ops" (Cero Operaciones)**. Utiliza la [arquitectura serverless](/es/p/serverless-architecture-aws-lambda-cold-start/) (sin servidor) al máximo y concéntrate únicamente en escribir la lógica de negocio.
 
 ## Comparación de arquitectura: Grandes Empresas vs. Desarrollador en Solitario
 

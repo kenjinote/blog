@@ -139,7 +139,7 @@ $$ w_{t+1} = \sum_{k=1}^K \frac{n_k}{n} w_{t+1}^k $$
 $$ E(m_1 + m_2) = E(m_1) \oplus E(m_2) $$
 $$ E(m_1 \times m_2) = E(m_1) \otimes E(m_2) $$
 
-同态加密分为只能进行加法或乘法其中之一的“部分同态加密（Partially Homomorphic Encryption: PHE）”，以及可以进行无限次加法和乘法的“全同态加密（Fully Homomorphic Encryption: FHE）”。自2009年Craig Gentry构建了首个基于格密码（Lattice-based cryptography）的FHE方案以来，这成为了密码学上的一次重大突破。
+同态加密分为只能进行加法或乘法其中之一的“部分同态加密（Partially Homomorphic Encryption: PHE）”，以及可以进行无限次加法和乘法的“全同态加密（Fully Homomorphic Encryption: [FHE](/zh-cn/p/fully-homomorphic-encryption-fhe-explained/)）”。自2009年Craig Gentry构建了首个基于[格密码](/zh-cn/p/lattice-based-cryptography-math-intuition/)（[Lattice-based cryptography](/zh-cn/p/lattice-based-cryptography-math-intuition/)）的[FHE](/zh-cn/p/fully-homomorphic-encryption-fhe-explained/)方案以来，这成为了密码学上的一次重大突破。
 
 目前，虽然仍面临计算成本和密文体积增大（开销）的挑战，但其在云端安全分析医疗数据、金融机构间的安全计算等领域的应用备受期待。
 

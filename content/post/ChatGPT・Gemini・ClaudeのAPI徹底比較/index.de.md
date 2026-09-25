@@ -11,7 +11,7 @@ tags: ["ChatGPT", "Gemini", "Claude", "API", "Comparison"]
 
 # Ein umfassender Vergleich der APIs von ChatGPT, Gemini und Claude: Welche sollten Sie wählen?
 
-Die Entwicklung der KI-Technologie ist bemerkenswert, insbesondere im Bereich der großen Sprachmodelle ([LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/): Large Language Model). Hier liefern sich OpenAIs ChatGPT (GPT-Serie), Googles Gemini und Anthropics Claude einen erbitterten Dreikampf um die Vorherrschaft. Im Jahr 2026 veröffentlichen diese Unternehmen im Monats-, wenn nicht gar Wochentakt, neue Modelle und API-Funktionen. Für Entwickler und IT-Architekten von Unternehmen ist die Frage, „welche API in das Produkt integriert werden soll“, zu einer äußerst wichtigen Entscheidung geworden, die über den Erfolg eines Projekts bestimmen kann.
+Die Entwicklung der KI-Technologie ist bemerkenswert, insbesondere im Bereich der großen Sprachmodelle ([LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/): Large Language Model). Hier liefern sich OpenAIs ChatGPT (GPT-Serie), Googles [Gemini](/de/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEl%C3%B6sung/) und Anthropics Claude einen erbitterten Dreikampf um die Vorherrschaft. Im Jahr 2026 veröffentlichen diese Unternehmen im Monats-, wenn nicht gar Wochentakt, neue Modelle und API-Funktionen. Für Entwickler und IT-Architekten von Unternehmen ist die Frage, „welche API in das Produkt integriert werden soll“, zu einer äußerst wichtigen Entscheidung geworden, die über den Erfolg eines Projekts bestimmen kann.
 
 In diesem Artikel werden wir die APIs dieser drei großen KI-Anbieter nicht nur durch eine bloße Aufzählung von Spezifikationen vergleichen und erläutern, sondern auch aus der Perspektive von Entwicklern tiefgreifend auf Aspekte wie Architekturdesign, detaillierte Preisstrukturen, mathematische Analyse der Latenz (Verzögerung), konkrete Implementierungsbeispiele in Python und Node.js sowie die neuesten Methoden zur Kostenoptimierung wie Prompt Caching eingehen.
 
@@ -42,8 +42,8 @@ Wir vergleichen die Spezifikationen der wichtigsten Modelle im Jahr 2026.
 |---|---|---|---|---|
 | **OpenAI** | GPT-4o | 128K | Geschwindigkeit, visuelle Erkennung, Sprachunterstützung | Interaktive Apps, allgemeine Aufgaben |
 | **OpenAI** | o1-preview | 128K | Fortgeschrittenes logisches Denken, Mathematik, Programmieren | Erstellung komplexer Algorithmen, Forschungszwecke |
-| **Google** | Gemini 1.5 Pro | 2.000K | Verarbeitung sehr langer Texte, Multimodal (Video/Audio) | Analyse riesiger Codebasen, Videozusammenfassung |
-| **Google** | Gemini 1.5 Flash | 2.000K | Geringe Latenz, hoher Durchsatz, extrem niedrige Kosten | Echtzeitverarbeitung, Stapelverarbeitung riesiger Datenmengen |
+| **Google** | [Gemini](/de/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEl%C3%B6sung/) 1.5 Pro | 2.000K | Verarbeitung sehr langer Texte, Multimodal (Video/Audio) | Analyse riesiger Codebasen, Videozusammenfassung |
+| **Google** | [Gemini](/de/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEl%C3%B6sung/) 1.5 Flash | 2.000K | Geringe Latenz, hoher Durchsatz, extrem niedrige Kosten | Echtzeitverarbeitung, Stapelverarbeitung riesiger Datenmengen |
 | **Anthropic** | Claude 3.5 Sonnet | 200K | Programmierfähigkeiten, natürliche Textgenerierung | Unterstützung bei der Softwareentwicklung, fortschrittlicher Kundensupport |
 | **Anthropic** | Claude 3.5 Haiku | 200K | Ultraschnelle Reaktion, Kosteneffizienz | Edge AI, Echtzeit-Chatbots |
 
@@ -95,7 +95,7 @@ Die Berechnungskomplexität der Self-Attention in der [Transformer](https://kenj
 $$ \text{Complexity} = O(L^2 \cdot d) $$
 
 Hierbei ist $d$ die Dimensionalität des Einbettungsvektors (Embedding Vector). Aufgrund dieser Einschränkung verschlechtert sich $T_{TTFT}$ normalerweise drastisch, wenn der Prompt länger wird.
-Googles Gemini 1.5 hat jedoch innovative Optimierungsarchitekturen wie „Ring Attention“ und „Block-wise Compute“ eingeführt, wodurch es gelingt, das erste Token in einer realistischen Zeit (wenige Sekunden bis Dutzende von Sekunden) zu generieren, selbst wenn ein langer Text von 2 Millionen Token eingegeben wird.
+Googles [Gemini](/de/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEl%C3%B6sung/) 1.5 hat jedoch innovative Optimierungsarchitekturen wie „Ring Attention“ und „Block-wise Compute“ eingeführt, wodurch es gelingt, das erste Token in einer realistischen Zeit (wenige Sekunden bis Dutzende von Sekunden) zu generieren, selbst wenn ein langer Text von 2 Millionen Token eingegeben wird.
 
 ---
 
@@ -110,7 +110,7 @@ Allerdings haben die neuesten APIs neue Mechanismen eingeführt, um die Kosten d
 ### 5.1 Prompt-Caching (Prompt Caching)
 Es verursacht enorme Kosten, wenn man jedes Mal extrem lange System-Prompts oder riesige Mengen an Dokumenten, die über RAG (Retrieval-Augmented Generation) abgerufen wurden, sendet. Um dem entgegenzuwirken, bieten die Anbieter eine Caching-Funktion an.
 
-Bei Anthropic (Claude) und Google (Gemini) können durch das Caching bestimmter Textblöcke die Eingabekosten erheblich (um bis zu 90 %) gesenkt werden.
+Bei Anthropic (Claude) und Google ([Gemini](/de/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEl%C3%B6sung/)) können durch das Caching bestimmter Textblöcke die Eingabekosten erheblich (um bis zu 90 %) gesenkt werden.
 
 Das Kostenmodell bei Verwendung von Cache sieht wie folgt aus:
 
@@ -140,7 +140,7 @@ Es gibt zwei Zugangswege: über Google Cloud Vertex AI und über AI Studio (Goog
 
 ## 7. Praxis! Implementierung eines Integrationstests mehrerer APIs mit Python
 
-Hier werden wir mit Python ein Skript implementieren, das gleichzeitig asynchrone Anfragen an die drei APIs von OpenAI, Anthropic und Gemini sendet und deren Latenz vergleicht.
+Hier werden wir mit Python ein Skript implementieren, das gleichzeitig asynchrone Anfragen an die drei APIs von OpenAI, Anthropic und [Gemini](/de/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEl%C3%B6sung/) sendet und deren Latenz vergleicht.
 
 ```python
 import asyncio
@@ -266,7 +266,7 @@ async function runAgent() {
 runAgent().catch(console.error);
 ```
 
-Claude 3.5 Sonnet und Gemini 1.5 Pro verfügen ebenfalls über gleichwertige Tool-Calling-Funktionen, und obwohl es leichte Unterschiede in der Art und Weise gibt, wie Schemata definiert werden, ist der grundlegende Ablauf derselbe.
+Claude 3.5 Sonnet und [Gemini](/de/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEl%C3%B6sung/) 1.5 Pro verfügen ebenfalls über gleichwertige Tool-Calling-Funktionen, und obwohl es leichte Unterschiede in der Art und Weise gibt, wie Schemata definiert werden, ist der grundlegende Ablauf derselbe.
 
 ---
 
@@ -305,7 +305,7 @@ sequenceDiagram
 ```
 
 - **OpenAI (GPT-4o)**: Bietet eine extrem hohe Bilderkennungsgenauigkeit und eignet sich hervorragend zum Lesen von handgezeichneten Skizzen oder komplexen Graphen. Die native Sprachinteraktion mit extrem geringer Latenz (einige hundert Millisekunden) über die Realtime-API ist ebenfalls sehr leistungsstark.
-- **Google (Gemini 1.5 Pro)**: **Ist bei der Videoanalyse unübertroffen.** Man kann eine einstündige Videodatei (Frames + Audio) direkt eingeben und punktgenaue Fragen stellen wie: „Wie lautet der Titel des Dokuments, das die Person am rechten Bildschirmrand bei Minute 12:45 in der Hand hält?“.
+- **Google ([Gemini](/de/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEl%C3%B6sung/) 1.5 Pro)**: **Ist bei der Videoanalyse unübertroffen.** Man kann eine einstündige Videodatei (Frames + Audio) direkt eingeben und punktgenaue Fragen stellen wie: „Wie lautet der Titel des Dokuments, das die Person am rechten Bildschirmrand bei Minute 12:45 in der Hand hält?“.
 - **Anthropic (Claude 3.5 Sonnet)**: Die Fähigkeiten zur Bilderkennung (Vision) sind auf dem gleichen Niveau wie bei GPT-4o und äußerst beeindruckend. Es zeigt eine beispiellose Stärke bei der Unterstützung der Frontend-Entwicklung, etwa wenn man einen Screenshot einer Benutzeroberfläche übergibt und anfordert: „Generiere den React-Komponentencode für diesen Bildschirm“.
 
 ---
@@ -332,8 +332,8 @@ Wir haben bisher einen vielseitigen Vergleich angestellt, aber die endgültige A
    Es bietet derzeit die beste Leistung beim Verstehen von Code-Kontexten, beim Refactoring und bei der Erstellung von natürlichem, menschenähnlichem Text. Auch die Benutzerfreundlichkeit der API und die Kosteneffizienz durch Prompt-Caching sind hervorragend.
 
 2. **Analyse von extrem langen Dokumenten / Stapelverarbeitung von Video und Audio**:
-   **👑 Gewinner: Gemini 1.5 Pro (Google)**
-   Das Kontextfenster von 2 Millionen Token ist eine einzigartige Waffe. Bei Aufgaben, die ein Verständnis des Gesamtbildes der Daten erfordern, wie z. B. die Analyse von Hunderten Seiten langen PDF-Handbüchern oder die Zusammenfassung von stundenlangen Besprechungsaufzeichnungen, ist Gemini unübertroffen.
+   **👑 Gewinner: [Gemini](/de/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEl%C3%B6sung/) 1.5 Pro (Google)**
+   Das Kontextfenster von 2 Millionen Token ist eine einzigartige Waffe. Bei Aufgaben, die ein Verständnis des Gesamtbildes der Daten erfordern, wie z. B. die Analyse von Hunderten Seiten langen PDF-Handbüchern oder die Zusammenfassung von stundenlangen Besprechungsaufzeichnungen, ist [Gemini](/de/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEl%C3%B6sung/) unübertroffen.
 
 3. **Vielseitigkeit / Ausführungsgeschwindigkeit / Stabile strukturierte Ausgaben (JSON)**:
    **👑 Gewinner: GPT-4o / GPT-4o-mini (OpenAI)**

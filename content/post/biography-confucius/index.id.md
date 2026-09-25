@@ -8,7 +8,7 @@ slug: "biography-confucius"
 description: "Siapakah influencer paling berpengaruh dalam sejarah? Di zaman modern, Anda mungkin memikirkan Steve Jobs atau Elon Musk, tetapi ada seorang tokoh yang men"
 ---
 
-Siapakah influencer paling berpengaruh dalam sejarah? Di zaman modern, Anda mungkin memikirkan Steve Jobs atau Elon Musk, tetapi ada seorang tokoh yang menyapu bersih seluruh Asia Timur lebih dari 2500 tahun yang lalu, dan pemikirannya masih diwariskan hingga saat ini. Dialah "Konfusius".
+Siapakah influencer paling berpengaruh dalam sejarah? Di zaman modern, Anda mungkin memikirkan [Steve Jobs](/id/p/biography-steve-jobs/) atau Elon Musk, tetapi ada seorang tokoh yang menyapu bersih seluruh Asia Timur lebih dari 2500 tahun yang lalu, dan pemikirannya masih diwariskan hingga saat ini. Dialah "Konfusius".
 
 Dalam artikel ini, dari sudut pandang seorang penulis sejarah profesional, kita akan menggali lebih dalam tentang kehidupan Konfusius yang penuh gejolak, filosofi inovatif yang ia anjurkan, dan pengaruhnya yang sangat besar yang masih relevan dengan masyarakat modern dan bisnis.
 

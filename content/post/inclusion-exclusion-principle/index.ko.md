@@ -199,7 +199,7 @@ primes = [2, 3, 5]
 print(f"결과: {count_multiples(M, primes)}")
 ```
 
-이 알고리즘의 시간 복잡도는 $O(n \cdot 2^n)$ 이 되며, $n$ 이 20 정도까지라면 충분히 빠르게 동작합니다.
+이 알고리즘의 시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)는 $O(n \cdot 2^n)$ 이 되며, $n$ 이 20 정도까지라면 충분히 빠르게 동작합니다.
 
 ## 9. 결론
 

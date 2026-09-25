@@ -97,7 +97,7 @@ La carrera de desarrollo de armas nucleares entre Estados Unidos y la Unión Sov
 
 En un Dilema del Prisionero de una sola vez, la "traición" era la elección racional. Sin embargo, en la sociedad real, es común interactuar repetidamente con la misma persona. En la teoría de juegos, esto se llama un **"Juego Repetido" (Iterated Prisoner's Dilemma)**.
 
-En la década de 1980, el politólogo Robert Axelrod organizó un torneo computacional, solicitando programas de expertos de todo el mundo, para averiguar qué estrategia era la más fuerte en el dilema del prisionero repetido.
+En la década de 1980, el politólogo Robert Axelrod organizó un torneo computacional, solicitando programas de expertos de todo el mundo, para averiguar qué estrategia era la más fuerte en [el dilema del prisionero](/es/p/prisoners-dilemma/) repetido.
 
 El resultado fue que la estrategia más simple, y la que obtuvo la puntuación más alta, fue la estrategia **"Tit for Tat" (Toma y daca o Tal para cual)** presentada por Anatol Rapoport.
 
@@ -132,15 +132,15 @@ Este descubrimiento sugiere que la "moralidad" y la "confianza" en la sociedad h
 
 ## 5. El surgimiento de la cooperación en la biología evolutiva
 
-El Dilema del Prisionero y el éxito de la estrategia "Tit for Tat" también tuvieron un gran impacto en la biología evolutiva (teoría de juegos evolutivos). Como lo representa "El Gen Egoísta" de Richard Dawkins, el mundo natural es de supervivencia del más apto, y los organismos individuales deberían priorizar (traicionar) su propia supervivencia y reproducción. Sin embargo, la naturaleza está llena de "comportamientos altruistas (cooperación)", como compartir sangre entre murciélagos vampiros o la naturaleza social de las abejas.
+[El Dilema del Prisionero](/es/p/prisoners-dilemma/) y el éxito de la estrategia "Tit for Tat" también tuvieron un gran impacto en la biología evolutiva (teoría de juegos evolutivos). Como lo representa "El Gen Egoísta" de Richard Dawkins, el mundo natural es de supervivencia del más apto, y los organismos individuales deberían priorizar (traicionar) su propia supervivencia y reproducción. Sin embargo, la naturaleza está llena de "comportamientos altruistas (cooperación)", como compartir sangre entre murciélagos vampiros o la naturaleza social de las abejas.
 
 En simulaciones evolutivas, se ha demostrado que cuando se introduce una pequeña población "Tit for Tat" en una sociedad donde todos "traicionan", la población Tit for Tat coopera entre sí, obteniendo altos beneficios, y gradualmente elimina a la población de traidores. Es decir, en la lucha por la supervivencia a largo plazo, los grupos capaces de cooperar son los vencedores definitivos.
 
 ## 6. Conclusión: Cómo superar el dilema
 
-El Dilema del Prisionero nos enseña la dura realidad de que, si perseguimos demasiado nuestro propio interés, el resultado es que todos pierden. Pero al mismo tiempo, como muestran las investigaciones sobre los juegos repetidos, podemos construir relaciones cooperativas si existen relaciones sostenidas y un sistema de retroalimentación adecuado.
+[El Dilema del Prisionero](/es/p/prisoners-dilemma/) nos enseña la dura realidad de que, si perseguimos demasiado nuestro propio interés, el resultado es que todos pierden. Pero al mismo tiempo, como muestran las investigaciones sobre los juegos repetidos, podemos construir relaciones cooperativas si existen relaciones sostenidas y un sistema de retroalimentación adecuado.
 
-Para resolver el Dilema del Prisionero en el mundo real, se necesitan enfoques como los siguientes:
+Para resolver [el Dilema del Prisionero](/es/p/prisoners-dilemma/) en el mundo real, se necesitan enfoques como los siguientes:
 - **Cambio de reglas (Imperio de la ley)**: Institucionalizar sanciones contra la traición y eliminar sus beneficios. (Ej. Leyes antimonopolio, impuestos ambientales).
 - **Asegurar la comunicación**: Crear oportunidades para confirmar las intenciones mutuas y construir relaciones de confianza.
 - **Énfasis en las relaciones a largo plazo**: Hacer consciente la sombra del futuro: "Si traiciono esta vez, no habrá futuros tratos".

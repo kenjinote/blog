@@ -56,7 +56,7 @@ La plus grande caractéristique qui distingue Churchill de nombreux autres polit
 
 Lors des élections générales de 1945, immédiatement après la victoire de la guerre, le Parti conservateur qu'il dirigeait a subi une défaite cuisante et inattendue. Cependant, même après avoir quitté ses fonctions, son influence internationale n'a pas faibli. Dans un discours prononcé en 1946 à Fulton, Missouri (États-Unis), il a désigné les pays d'Europe de l'Est sous influence soviétique et a déclaré : « De Stettin dans la Baltique à Trieste dans l'Adriatique, un 'rideau de fer (Iron Curtain)' est descendu à travers le continent. » Ces mots sont devenus le concept déterminant du nouvel ordre mondial de la guerre froide qui a suivi.
 
-Il est ensuite revenu au poste de Premier ministre en 1951 et a assumé le fardeau de la politique nationale jusqu'à ce qu'il se retire pour des raisons de santé en 1955. Lorsqu'il est décédé en 1965 à l'âge de 90 ans, le Royaume-Uni lui a fait ses adieux lors de funérailles nationales. Des funérailles nationales pour une personne extérieure à la famille royale étaient un honneur exceptionnel qui n'avait pas été vu depuis Isaac Newton et Horatio Nelson.
+Il est ensuite revenu au poste de Premier ministre en 1951 et a assumé le fardeau de la politique nationale jusqu'à ce qu'il se retire pour des raisons de santé en 1955. Lorsqu'il est décédé en 1965 à l'âge de 90 ans, le Royaume-Uni lui a fait ses adieux lors de funérailles nationales. Des funérailles nationales pour une personne extérieure à la famille royale étaient un honneur exceptionnel qui n'avait pas été vu depuis [Isaac Newton](/fr/p/newton/) et Horatio Nelson.
 
 ## Conclusion : La philosophie que Churchill a laissée au monde moderne
 

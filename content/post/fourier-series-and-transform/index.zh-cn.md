@@ -99,7 +99,7 @@ $$
 X_k = \sum_{n=0}^{N-1} x_n e^{-i \frac{2\pi}{N} k n} \quad \text{对于 } k = 0, 1, \dots, N-1
 $$
 
-此外，将此 DFT 的计算复杂度从 $O(N^2)$ 显着降低到 $O(N \log N)$ 的算法是 **快速傅里叶变换（FFT）**。随着 FFT 的出现，数字信号处理（DSP）领域经历了爆炸性的发展。我们熟悉的许多技术，例如智能手机上的语音识别和 JPEG 图像压缩，都得益于 FFT。
+此外，将此 DFT 的计算[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)从 $O(N^2)$ 显着降低到 $O(N \log N)$ 的算法是 **[快速傅里叶变换（FFT）](/zh-cn/p/fast-fourier-transform-algorithm/)**。随着 [FFT](/zh-cn/p/fast-fourier-transform-algorithm/) 的出现，数字信号处理（DSP）领域经历了爆炸性的发展。我们熟悉的许多技术，例如智能手机上的语音识别和 JPEG 图像压缩，都得益于 [FFT](/zh-cn/p/fast-fourier-transform-algorithm/)。
 
 ```python
 import numpy as np

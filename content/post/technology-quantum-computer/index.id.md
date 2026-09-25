@@ -20,7 +20,7 @@ tags:
 Dari komputer pribadi yang biasa kita gunakan hingga superkomputer tercepat di dunia, "Fugaku", semua komputer klasik memproses informasi dalam unit yang disebut "**Bit**".
 Sebuah bit hanya dapat memiliki satu dari dua keadaan: sakelar "menyala (1)" atau "mati (0)". Perhitungan yang rumit maupun gambar berukuran besar, semuanya diproses secara berurutan sebagai "rentetan angka 0 dan 1 yang sangat banyak" ini.
 
-Namun, di era modern ini ketika pengecilan semikonduktor semakin mendekati ukuran atom, "Hukum Moore (peningkatan kinerja semikonduktor)" menghadapi batas-batas fisika (seperti kebocoran arus akibat efek terowongan kuantum).
+Namun, di era modern ini ketika pengecilan semikonduktor semakin mendekati ukuran atom, "[Hukum Moore](/id/p/business-moores-law/) (peningkatan kinerja semikonduktor)" menghadapi batas-batas fisika (seperti kebocoran arus akibat efek terowongan kuantum).
 Untuk menembus batas ini, pendekatan yang menggunakan hukum fisika yang sama sekali berbeda untuk melakukan komputasi adalah "**komputer kuantum**".
 
 ## 2. Keajaiban Mekanika Kuantum "Superposisi"

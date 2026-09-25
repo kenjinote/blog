@@ -9,7 +9,7 @@ image: "img_1.webp"
 categories: ["tools-development-environment"]
 description: 'हम .NET SDK में शामिल dotnet कमांड (dotnet new gitignore) का उपयोग करके Visual Studio जैसे विकास परिवेश के लिए उपयुक्त .gitignore फ़ाइल को स्वचालित रूप से उत्पन्न करने के तरीके को स्पष्ट रूप से समझाएंगे。'
 ---
-dotnet.exe कमांड का उपयोग करना उपयोगी है क्योंकि यह आपको सरल प्रोग्राम बनाने की अनुमति भी देता है।
+dotnet[.exe](/hi/p/%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A5%8D%E0%A4%AA%E0%A4%BE%E0%A4%A6%E0%A4%A8-%E0%A4%AF%E0%A5%8B%E0%A4%97%E0%A5%8D%E0%A4%AF-%E0%A4%AB%E0%A4%BC%E0%A4%BE%E0%A4%87%E0%A4%B2exe%E3%81%AE%E4%B8%AD%E8%BA%AB%E3%82%92%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%8D%E0%A4%B2%E0%A5%87%E0%A4%B7%E0%A4%A3%E3%81%99%E3%82%8B%E0%A4%9F%E0%A5%82%E0%A4%B2/) कमांड का उपयोग करना उपयोगी है क्योंकि यह आपको सरल प्रोग्राम बनाने की अनुमति भी देता है।
 
 ## .NET SDK इंस्टॉल करना
 चूंकि dotnet.exe .NET SDK में शामिल है, इसलिए सबसे पहले .NET SDK को इंस्टॉल करें।

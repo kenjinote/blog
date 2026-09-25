@@ -22,19 +22,19 @@ RSA加密安全性的基础依赖于一个数学事实：“ **使用经典计�
 
 # 2. 计算复杂度的剧烈变化：从指数级到多项式时间
 
-为什么质因数分解如此困难？即使使用被称为经典计算机中最好的质因数分解算法的“普通数域筛选法（General Number Field Sieve, GNFS）”，其时间复杂度也是次指数级的。
+为什么质因数分解如此困难？即使使用被称为经典计算机中最好的质因数分解算法的“[普通数域筛选法](/zh-cn/p/beyond-gnfs-integer-factorization-algorithms/)（General Number Field Sieve, GNFS）”，其时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)也是次指数级的。
 
-在经典方法中，对位数为 $N$ 的合数进行质因数分解所需的时间复杂度如下：
+在经典方法中，对位数为 $N$ 的合数进行质因数分解所需的时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)如下：
 
 $$ O\left(\exp\left( c (\log N)^{1/3} (\log \log N)^{2/3} \right)\right) $$
 
 因此，只要增加密钥长度（例如增加到2048位或4096位），在经典计算机上的破解就会耗费数千年、数万年这种不切实际的时间。
 
-但是，如果在量子计算机上使用 **秀尔算法** ，计算复杂度将针对输入的位数 $\log N$ 剧烈降低到多项式时间。
+但是，如果在量子计算机上使用 **秀尔算法** ，计算[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)将针对输入的位数 $\log N$ 剧烈降低到多项式时间。
 
 $$ O((\log N)^3) $$
 
-这意味着，如果将位数翻倍，经典计算机的计算时间会呈天文数字般增长，而在量子计算机上，计算时间最多只会增加约8倍。这种 **从指数级时间到多项式时间的计算复杂度类的降低（被包含在BQP类中）** ，正是秀尔算法的真正厉害之处。
+这意味着，如果将位数翻倍，经典计算机的计算时间会呈天文数字般增长，而在量子计算机上，计算时间最多只会增加约8倍。这种 **从指数级时间到多项式时间的计算[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)类的降低（被包含在BQP类中）** ，正是秀尔算法的真正厉害之处。
 
 ```mermaid
 graph TD
@@ -84,7 +84,7 @@ $$ a^r - 1 \equiv 0 \pmod N $$
 如果 $r$ 是偶数，就可以使用平方差公式进行因式分解：
 $$ (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod N $$
 
-这意味着 $N$ 与 $(a^{r/2} - 1)$ 或 $(a^{r/2} + 1)$ 之一有公约数（但必须满足条件 $a^{r/2} \not\equiv -1 \pmod N$）。因此，使用[欧几里得算法](https://kenji.blog/p/euclidean-algorithm/)计算：
+这意味着 $N$ 与 $(a^{r/2} - 1)$ 或 $(a^{r/2} + 1)$ 之一有公约数（但必须满足条件 $a^{r/2} \not\equiv -1 \pmod N$）。因此，使用[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)计算：
 
 $$ p = \gcd(a^{r/2} - 1, N) $$
 $$ q = \gcd(a^{r/2} + 1, N) $$

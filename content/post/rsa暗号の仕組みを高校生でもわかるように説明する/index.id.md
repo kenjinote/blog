@@ -267,11 +267,11 @@ Jika Anda mengeksekusi `(48 ** 103) % 143` di kalkulator (atau komputer), hasiln
 
 ---
 
-## 8. Cara Mencari Kunci Privat $d$: [Algoritma Euclidean](https://kenji.blog/p/euclidean-algorithm/) Diperluas (Extended [Euclide](https://kenji.blog/p/euclid/)an Algorithm)
+## 8. Cara Mencari Kunci Privat $d$: [Algoritma Euclidean](https://kenji.blog/id/p/euclidean-algorithm/) Diperluas (Extended [Euclide](https://kenji.blog/id/p/euclid/)an Algorithm)
 
-Pada contoh hitung manual, kita menebak nilai $k$ untuk mencari $d=103$, namun saat bilangannya menjadi ratusan digit, cara ini tidak mungkin dilakukan. Dalam program komputer yang nyata, digunakan algoritma yang disebut **"[Algoritma Euclidean](https://kenji.blog/p/euclidean-algorithm/) Diperluas"** (Extended [Euclide](https://kenji.blog/p/euclid/)an Algorithm).
+Pada contoh hitung manual, kita menebak nilai $k$ untuk mencari $d=103$, namun saat bilangannya menjadi ratusan digit, cara ini tidak mungkin dilakukan. Dalam program komputer yang nyata, digunakan algoritma yang disebut **"[Algoritma Euclidean](https://kenji.blog/id/p/euclidean-algorithm/) Diperluas"** (Extended [Euclide](https://kenji.blog/id/p/euclid/)an Algorithm).
 
-Menyelesaikan $7d \equiv 1 \pmod{120}$ sama artinya dengan mencari bilangan bulat $d, y$ yang memenuhi $7d + 120y = 1$. Dengan menghitung balik [Algoritma Euclidean](https://kenji.blog/p/euclidean-algorithm/), hal ini bisa didapatkan secara mekanis.
+Menyelesaikan $7d \equiv 1 \pmod{120}$ sama artinya dengan mencari bilangan bulat $d, y$ yang memenuhi $7d + 120y = 1$. Dengan menghitung balik [Algoritma Euclidean](https://kenji.blog/id/p/euclidean-algorithm/), hal ini bisa didapatkan secara mekanis.
 
 1. $120 \div 7 = 17$ sisa $1$ 
 2. Jika kita ubah persamaannya, $1 = 120 - 17 \times 7$

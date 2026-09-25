@@ -82,7 +82,7 @@ flowchart TD
 
 Setelah memperoleh pemahaman intuitif, kini kami akan memperkenalkan bukti terindah dan paling ketat dalam matematika modern. Bukti ini menggunakan senjata ampuh dari analisis kompleks: **Teorema [Liouville](https://kenji.blog/id/p/liouville/)**.
 
-Analisis kompleks adalah bidang yang membahas kalkulus fungsi variabel kompleks. Tidak seperti fungsi bilangan real, diferensiabilitas (holomorfisme) fungsi kompleks adalah kondisi yang sangat kuat; fungsi kompleks yang dapat dideiferensiasikan meskipun hanya sekali memiliki sifat menakjubkan karena dapat dideiferensiasikan secara tak terhingga dan dapat diekspansi menjadi deret Taylor.
+Analisis kompleks adalah bidang yang membahas kalkulus fungsi variabel kompleks. Tidak seperti fungsi bilangan real, diferensiabilitas (holomorfisme) fungsi kompleks adalah kondisi yang sangat kuat; fungsi kompleks yang dapat dideiferensiasikan meskipun hanya sekali memiliki sifat menakjubkan karena dapat dideiferensiasikan secara tak terhingga dan dapat diekspansi menjadi [deret Taylor](/id/p/taylor-and-maclaurin-series/).
 
 Fungsi yang dapat dideiferensiasikan (holomorfik) di seluruh bidang kompleks disebut **fungsi utuh** (entire function). Polinomial $P(z)$ dan fungsi eksponensial $e^z$ adalah contoh tipikal dari fungsi utuh.
 

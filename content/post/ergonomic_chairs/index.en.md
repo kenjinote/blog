@@ -80,7 +80,7 @@ Here, we compare the structural approaches of representative high-end ergonomic 
 **Feature: Body pressure dispersion and forward tilt using Pellicle (mesh)**
 
 A masterpiece introduced in 1994 that changed the history of office chairs. The unique mesh material called "Pellicle" changes its tension according to the body shape of the sitter, evenly dispersing the pressure on the thighs and buttocks.
-What is particularly noteworthy is the extremely excellent **forward-tilt mechanism**. For engineers who often do work that concentrates on the screen, such as software development, the Aeron Chair, which tilts forward with the seat and stands the pelvis up, is arguably the strongest tool for minimizing the load on the lower back.
+What is particularly noteworthy is the extremely excellent **forward-tilt mechanism**. [For engineers](/en/p/prompt-engineering-for-engineers/) who often do work that concentrates on the screen, such as software development, the Aeron Chair, which tilts forward with the seat and stands the pelvis up, is arguably the strongest tool for minimizing the load on the lower back.
 
 ### Herman Miller Embody Chair
 **Feature: Pixelated support structure and health-positive backward posture**

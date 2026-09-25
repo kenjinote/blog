@@ -47,7 +47,7 @@ Il n'avait pas le concept d'« échec ». Lorsqu'une expérience ne se passait p
 
 ## La guerre des courants et l'impact sur la postérité
 
-Derrière ses succès spectaculaires, Edison a également connu des revers majeurs. Ce fut la « Guerre des courants » menée contre Nikola Tesla et George Westinghouse. Edison a promu le système de « courant continu » (CC), plaidant pour sa sécurité, mais a finalement subi une défaite face au système de « courant alternatif » (CA), qui était supérieur pour la transmission d'énergie sur de longues distances.
+Derrière ses succès spectaculaires, Edison a également connu des revers majeurs. Ce fut la « Guerre des courants » menée contre [Nikola Tesla](/fr/p/biography-nikola-tesla/) et George Westinghouse. Edison a promu le système de « courant continu » (CC), plaidant pour sa sécurité, mais a finalement subi une défaite face au système de « courant alternatif » (CA), qui était supérieur pour la transmission d'énergie sur de longues distances.
 
 Cependant, cette défaite n'a pas diminué sa réputation. Les entreprises qu'il a fondées ont fusionné pour devenir l'actuelle General Electric (GE), devenant ainsi l'un des plus grands conglomérats du monde. De plus, une seule de ses inventions a donné naissance à des industries massives entières, telles que la création de l'industrie de la musique par le phonographe et l'aube de l'industrie cinématographique par la caméra (Kinétoscope).
 

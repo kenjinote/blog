@@ -141,7 +141,7 @@ The question is whether we can truly say that 5,000 yen and 20,000 yen are each 
 
 For example, suppose the maximum budget for the show is 100 million yen. If you open Envelope A and find "60 million yen", the probability that Envelope B contains "120 million yen" is zero (because it's over budget). In other words, as the amount in Envelope A gets larger, the probability that Envelope B is "double" must decrease, and the probability that it is "half" must increase.
 
-When calculating the expected value using Bayes' theorem assuming an arbitrary prior distribution $P(x)$, it has been mathematically proven that **under any realistic probability distribution (where the sum is 1), there is no magical distribution that makes it "better to switch" for all amounts of $X$**.
+When calculating the expected value using [Bayes' theorem](/en/p/bayes-theorem/) assuming an arbitrary prior distribution $P(x)$, it has been mathematically proven that **under any realistic probability distribution (where the sum is 1), there is no magical distribution that makes it "better to switch" for all amounts of $X$**.
 
 ---
 
@@ -151,7 +151,7 @@ There is only one case where it is "better to switch for all $X$".
 That is only if we assume the show's budget is **infinite** and all amounts (1 yen, 2 yen, 4 yen, 8 yen... up to infinity) appear uniformly—an "improper prior distribution" (a distribution whose sum is infinity).
 
 However, in the real world, no television station has infinite assets.
-The bug caused by this "infinite expected value" shares deep roots with the **St. Petersburg paradox** (the problem of how much a person would be willing to pay for a gamble with an infinite expected value).
+The bug caused by this "infinite expected value" shares deep roots with the **[St. Petersburg paradox](/en/p/st-petersburg-paradox/)** (the problem of how much a person would be willing to pay for a gamble with an infinite expected value).
 
 ## 6. Conclusion: The Terrors of Probability and Expected Value
 

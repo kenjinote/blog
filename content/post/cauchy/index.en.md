@@ -48,7 +48,7 @@ His conservative ideology and uncompromising personality sometimes caused fricti
 
 ## Revolution in Mathematics: The Pursuit of Rigor
 
-[Cauchy](https://kenji.blog/en/p/cauchy/)'s greatest achievement was providing a rigorous foundation for mathematical analysis. He reconstructed concepts such as limits, continuity, differentiation, and integration using rigorous definitions that led to the epsilon-delta arguments (later perfected by Weierstrass) that we learn today.
+[Cauchy](https://kenji.blog/en/p/cauchy/)'s greatest achievement was providing a rigorous foundation for mathematical analysis. He reconstructed concepts such as limits, continuity, differentiation, and integration using rigorous definitions that led to the [epsilon-delta](/en/p/epsilon-delta-definition/) arguments (later perfected by Weierstrass) that we learn today.
 
 Here are a few of the important achievements that bear his name.
 

@@ -18,7 +18,7 @@ tags:
 
 ## 1. 什么是[康威生命游戏](https://kenji.blog/zh-cn/p/conways-game-of-life/)？
 
-**[康威生命游戏](https://kenji.blog/zh-cn/p/conways-game-of-life/)**（[Conway's Game of Life](https://kenji.blog/zh-cn/p/conways-game-of-life/)）是英国数学家约翰·何顿·康威（John Horton Conway）于1970年发明的一种**元胞自动机**（Cellular Automaton）。虽然被称为游戏，但它是一个“零玩家游戏”，这意味着它的演化完全由初始状态决定，不需要进一步的输入。
+**[康威生命游戏](https://kenji.blog/zh-cn/p/conways-game-of-life/)**（[Conway's Game of Life](https://kenji.blog/zh-cn/p/conways-game-of-life/)）是英国数学家约翰·何顿·康威（John Horton Conway）于1970年发明的一种**元胞[自动机](/zh-cn/p/automata-formal-language-theory/)**（Cellular Automaton）。虽然被称为游戏，但它是一个“零玩家游戏”，这意味着它的演化完全由初始状态决定，不需要进一步的输入。
 
 这个系统最大的魅力在于：**从极其简单的确定性规则中，能够产生不可预测且复杂的类生命行为（涌现）**。
 

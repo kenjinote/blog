@@ -26,7 +26,7 @@ Gitが履歴をどのように統合するかを理解するためには、ま�
 Gitの各コミットは、その内容を元に計算されたSHA-1（Secure Hash Algorithm 1）ハッシュ関数による40桁の16進数で一意に識別されます。コミットオブジェクトは以下の要素から構成されます：
 
 1. **[Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)オブジェクトへの[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)**: その時点のディレクトリ構造とファイル（Blob）のスナップショット
-2. **親コミットへのポインタ**: 1つ以上の親コミットのハッシュ値（初回コミットは親を持たず、マージコミットは2つ以上の親を持ちます）
+2. **親コミットへの[ポインタ](/p/c-language-pointers-memory-management-stack-heap/)**: 1つ以上の親コミットのハッシュ値（初回コミットは親を持たず、マージコミットは2つ以上の親を持ちます）
 3. **作成者情報（Author）**: コードを書いた人と日時
 4. **コミッター情報（Committer）**: コミットを作成・適用した人と日時
 5. **コミットメッセージ**: 変更の意図を説明するテキスト

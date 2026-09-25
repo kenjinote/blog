@@ -66,14 +66,14 @@ Das obige Diagramm ist ein Beispiel für einen gewichteten gerichteten Graphen v
 
 ### 2.3 Formulierung des Kürzeste-Wege-Problems
 
-Ein Pfad (Path) $ P $ von einem Startknoten (Source) $ s \in V $ zu einem Zielknoten (Target) $ t \in V $ sei eine Folge von Knoten $ (v_0, v_1, \dots, v_k) $ (wobei $ v_0 = s, v_k = t $), und für jedes $ i $ gilt $ (v_i, v_{i+1}) \in E $.
-Die Gesamtkosten $ W(P) $ dieses Pfades $ P $ werden durch die Summe der Kantengewichte auf dem Pfad dargestellt.
+Ein [Pfad](/de/p/windows-%E3%81%A7pfad%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9Fausf%C3%BChrbare-datei%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/) (Path) $ P $ von einem Startknoten (Source) $ s \in V $ zu einem Zielknoten (Target) $ t \in V $ sei eine Folge von Knoten $ (v_0, v_1, \dots, v_k) $ (wobei $ v_0 = s, v_k = t $), und für jedes $ i $ gilt $ (v_i, v_{i+1}) \in E $.
+Die Gesamtkosten $ W(P) $ dieses Pfades $ P $ werden durch die Summe der Kantengewichte auf dem [Pfad](/de/p/windows-%E3%81%A7pfad%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9Fausf%C3%BChrbare-datei%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/) dargestellt.
 
 $$
 W(P) = \sum_{i=0}^{k-1} w(v_i, v_{i+1})
 $$
 
-Das **Kürzeste-Wege-Problem** (Shortest Path Problem) ist das Problem, unter allen möglichen Pfaden $ P $ den Pfad $ P^* $ zu finden, der $ W(P) $ minimiert.
+Das **Kürzeste-Wege-Problem** (Shortest Path Problem) ist das Problem, unter allen möglichen Pfaden $ P $ den [Pfad](/de/p/windows-%E3%81%A7pfad%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9Fausf%C3%BChrbare-datei%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/) $ P^* $ zu finden, der $ W(P) $ minimiert.
 
 ---
 

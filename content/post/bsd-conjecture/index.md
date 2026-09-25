@@ -63,7 +63,7 @@ graph TD
 
 ## 3. [モーデル](https://kenji.blog/p/mordell/)の定理とランク（階数）
 
-1922年、ルイス・[モーデル](https://kenji.blog/p/mordell/)（Louis Mordell）は有理点群 $E(\mathbb{Q})$ の構造に関する決定的な定理を証明しました。のちにアンドレ・ヴェイユ（André Weil）がより一般の代数体とアーベル多様体へと拡張し、モーデル・[ヴェイユ](https://kenji.blog/p/weil/)の定理として知られています。
+1922年、ルイス・[モーデル](https://kenji.blog/p/mordell/)（Louis Mordell）は有理点群 $E(\mathbb{Q})$ の構造に関する決定的な定理を証明しました。のちに[アンドレ・ヴェイユ](/p/weil/)（André Weil）がより一般の代数体とアーベル多様体へと拡張し、モーデル・[ヴェイユ](https://kenji.blog/p/weil/)の定理として知られています。
 
 ### 3.1. [モーデル](https://kenji.blog/p/mordell/)の定理 (Mordell's Theorem)
 
@@ -146,7 +146,7 @@ $$
 $$
 
 ここで $N$ は導手（conductor）と呼ばれる整数で、$w \in \{1, -1\}$ は符号（ルートナンバー）です。
-この解析接続により、$s=1$ における $L(E, s)$ の値やテイラー展開を議論することが数学的に正当化されます。
+この解析接続により、$s=1$ における $L(E, s)$ の値や[テイラー展開](/p/taylor-and-maclaurin-series/)を議論することが数学的に正当化されます。
 
 ## 5. バーチ・スウィンナートン＝ダイアー予想
 
@@ -161,7 +161,7 @@ $$
 **バーチ・スウィンナートン＝ダイアー予想（弱）**
 有理数体 $\mathbb{Q}$ 上の楕円曲線 $E$ のランク（階数） $r$ は、そのL関数 $L(E, s)$ の $s=1$ における零点の位数に等しい。
 
-すなわち、テイラー展開を考えたとき、
+すなわち、[テイラー展開](/p/taylor-and-maclaurin-series/)を考えたとき、
 $$
 L(E, s) = c(s-1)^r + \text{higher order terms} \quad (c \neq 0)
 $$
@@ -176,7 +176,7 @@ $$
 
 ### 5.2. BSD予想（強予想）
 
-さらに彼らは、先ほどのテイラー展開における最初の非零係数 $c$ （つまり $L^{(r)}(E, 1) / r!$）が、楕円曲線の様々な数論的不変量を用いて極めて美しい公式で記述できると予想しました。これが **BSD強予想** です。
+さらに彼らは、先ほどの[テイラー展開](/p/taylor-and-maclaurin-series/)における最初の非零係数 $c$ （つまり $L^{(r)}(E, 1) / r!$）が、楕円曲線の様々な数論的不変量を用いて極めて美しい公式で記述できると予想しました。これが **BSD強予想** です。
 
 $$
 \lim_{s \to 1} \frac{L(E, s)}{(s-1)^r} = \frac{\Omega_E \cdot \mathrm{Reg}(E) \cdot |\text{Sha}(E)| \cdot \prod_{p} c_p}{|E(\mathbb{Q})_{\text{tors}}|^2}
@@ -184,7 +184,7 @@ $$
 
 この公式に登場する不変量は以下の通りです。
 1. **$\Omega_E$ (実周期)** : 楕円曲線の実数体上での積分 $\int_{E(\mathbb{R})} \frac{dx}{|2y + a_1x + a_3|}$ から定まる超越数。
-2. **$\mathrm{Reg}(E)$ (レギュレータ)** : ランク $r$ の無限位数の有理点の生成元 $P_1, \dots, P_r$ に対し、ネロン・テイト高さペアリング（Néron-Tate height pairing） $\langle P_i, P_j \rangle$ を並べた $r \times r$ 行列の行列式。点の「大きさ」を測る指標です。
+2. **$\mathrm{Reg}(E)$ (レギュレータ)** : ランク $r$ の無限位数の有理点の生成元 $P_1, \dots, P_r$ に対し、ネロン・テイト高さペアリング（Néron-Tate height pairing） $\langle P_i, P_j \rangle$ を並べた $r \times r$ 行列の[行列式](/p/geometric-meaning-of-determinant/)。点の「大きさ」を測る指標です。
 3. **$|E(\mathbb{Q})_{\text{tors}}|$** : トーション部分群の位数。
 4. **$c_p$ (玉河数)** : 悪い還元をもつ素数 $p$ に対する局所的な補正係数。局所体の[ガロア](https://kenji.blog/p/galois/)群の作用から計算されます。
 5. **$\text{Sha}(E)$ (テイト・シャファレヴィッチ群、$\text{\textcyrillic{Sh}}$)** : 極めて重要な対象なので後述します。

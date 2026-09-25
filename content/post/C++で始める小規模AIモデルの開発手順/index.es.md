@@ -64,7 +64,7 @@ Al utilizar mmap, el contenido del archivo se puede mapear directamente en el es
 * **Copia cero (Zero-copy)**: Los datos se cargan directamente desde el disco a la caché de páginas del kernel, sin que ocurran copias adicionales al espacio de usuario.
 * **Carga bajo demanda (Page Fault)**: En el instante exacto en que la CPU accede a esa dirección de memoria, se produce un fallo de página y solo el fragmento necesario (típicamente 4KB) se carga en la memoria física.
 
-En un entorno Windows, en lugar del `mmap` de POSIX, se utilizan las API Win32 `CreateFileMapping` y `MapViewOfFile`.
+En un entorno Windows, en lugar del `mmap` de POSIX, se utilizan las API [Win32](/es/p/modern-cpp-win32-api-safe-handling/) `CreateFileMapping` y `MapViewOfFile`.
 
 ```mermaid
 sequenceDiagram
@@ -81,9 +81,9 @@ sequenceDiagram
 
 ### 3.2 Estructura binaria del formato GGUF
 
-**GGUF (GPT-Generated Unified Format)**, convertido a partir de formatos como `.safetensors` de Hugging Face, es el formato definitivo para la inferencia. Tiene un diseño binario estricto como el siguiente:
+**[GGUF](/es/p/llama-cpp-quantization-gguf/) (GPT-Generated Unified Format)**, convertido a partir de formatos como `.safetensors` de Hugging Face, es el formato definitivo para la inferencia. Tiene un diseño binario estricto como el siguiente:
 
-1. **Bytes Mágicos**: `0x46554747` (GGUF).
+1. **Bytes Mágicos**: `0x46554747` ([GGUF](/es/p/llama-cpp-quantization-gguf/)).
 2. **Versión**: Número de versión del formato.
 3. **Conteo de tensores y metadatos**: Número de tensores y pares clave-valor de metadatos.
 4. **Metadatos (Pares clave-valor)**: Claves con prefijo de longitud de cadena y valores tipados.
@@ -240,6 +240,6 @@ cmake --build . --config Release
 
 ## 10. Resumen
 
-Implementar desde cero un motor de inferencia para modelos de IA pequeños como TinyLLaMA usando C++ y ggml es una excelente oportunidad para descubrir la caja negra del aprendizaje profundo y aprender la belleza del control de hardware de bajo nivel. Disfrutemos plenamente de la esencia de la programación de sistemas, como la carga con copia cero mediante mapeo de memoria, la optimización SIMD y la construcción de la caché KV, mientras abrimos camino hacia el futuro de la IA periférica (Edge AI).
+Implementar desde cero un motor de inferencia para modelos de IA pequeños como TinyLLaMA usando C++ y ggml es una excelente oportunidad para descubrir la caja negra del aprendizaje profundo y aprender la belleza del control de hardware de bajo nivel. Disfrutemos plenamente de la esencia de la programación de sistemas, como la carga con copia cero mediante mapeo de memoria, la optimización SIMD y la construcción de la caché KV, mientras abrimos camino hacia el futuro de la IA periférica ([Edge AI](/es/p/edge-ai-future-iot-implementation/)).
 
 

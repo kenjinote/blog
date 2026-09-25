@@ -169,9 +169,9 @@ $$
 
 Ici, Cantor a été confronté à une question gigantesque : **« Existe-t-il un ensemble infini ayant une cardinalité intermédiaire entre $\aleph_0$ et $2^{\aleph_0}$ ? »** 
 
-L'hypothèse selon laquelle « il n'existe pas de cardinalité intermédiaire » est appelée **l'hypothèse du continu** ([Continuum Hypothesis](https://kenji.blog/fr/p/continuum-hypothesis/), CH) . Cantor a consacré sa vie à essayer de la prouver, mais n'a pas pu la résoudre.
+L'hypothèse selon laquelle « il n'existe pas de cardinalité intermédiaire » est appelée **l'[hypothèse du continu](/fr/p/continuum-hypothesis/)** ([Continuum Hypothesis](https://kenji.blog/fr/p/continuum-hypothesis/), CH) . Cantor a consacré sa vie à essayer de la prouver, mais n'a pas pu la résoudre.
 
-Plus tard, [Kurt Gödel](https://kenji.blog/fr/p/godel/) et Paul Cohen ont prouvé que l'hypothèse du continu est **« indécidable (indépendante) et ne peut être ni prouvée ni réfutée dans le système d'axiomes actuel des mathématiques (ZFC) »** . C'est l'une des découvertes les plus profondes des mathématiques du 20ème siècle.
+Plus tard, [Kurt Gödel](https://kenji.blog/fr/p/godel/) et Paul Cohen ont prouvé que l'[hypothèse du continu](/fr/p/continuum-hypothesis/) est **« indécidable (indépendante) et ne peut être ni prouvée ni réfutée dans le système d'axiomes actuel des mathématiques (ZFC) »** . C'est l'une des découvertes les plus profondes des mathématiques du 20ème siècle.
 
 ---
 

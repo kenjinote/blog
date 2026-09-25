@@ -34,7 +34,7 @@ O Git usa principalmente três objetos para representar o estado do repositório
 1. **Blob (Binary Large Object)**
    É o objeto que armazena o próprio conteúdo do arquivo. Informações como nome do arquivo ou permissões não estão incluídas aqui. Sequências de bytes puras são compactadas com zlib e identificadas por um valor de hash SHA-1 (40 caracteres hexadecimais).
 2. **[Tree](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
-   É o objeto que representa a estrutura de diretórios. O objeto Tree contém ponteiros (valores de hash SHA-1) para outros objetos Tree (subdiretórios) ou objetos Blob (arquivos), bem como seus nomes de arquivos e permissões de acesso. Desempenha um papel semelhante a um diretório UNIX.
+   É o objeto que representa a estrutura de diretórios. O objeto Tree contém [ponteiros](/pt/p/c-language-pointers-memory-management-stack-heap/) (valores de hash SHA-1) para outros objetos Tree (subdiretórios) ou objetos Blob (arquivos), bem como seus nomes de arquivos e permissões de acesso. Desempenha um papel semelhante a um diretório UNIX.
 3. **Commit**
    Mantém um ponteiro para o objeto Tree de nível superior do repositório em um determinado momento, metadados (autor, data e hora do commit, mensagem do commit) e um ponteiro para o commit imediatamente anterior (commit pai).
 
@@ -66,7 +66,7 @@ Quando o Git detecta conflitos ou exibe diferenças em arquivos, algoritmos avan
 
 ### 3.1 Algoritmo Diff de Myers
 
-O algoritmo de detecção de diferença padrão do Git é o algoritmo idealizado por Eugene W. Myers. Quando temos dois arquivos de texto $A$ e $B$, o problema de encontrar o "menor procedimento de edição (inserções e exclusões)" para transformar $A$ em $B$ pode ser modelado como o problema do caminho mais curto na teoria dos grafos.
+O algoritmo de detecção de diferença padrão do Git é o algoritmo idealizado por Eugene W. Myers. Quando temos dois arquivos de texto $A$ e $B$, o problema de encontrar o "menor procedimento de edição (inserções e exclusões)" para transformar $A$ em $B$ pode ser modelado como o problema do caminho mais curto na [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/).
 
 Deixe os comprimentos das strings serem $N, M$, respectivamente, e a soma seja $V = N + M$. No algoritmo de Myers, procuramos a distância de edição (Edit Distance) $D$. A complexidade de tempo desse algoritmo é expressa pela seguinte fórmula:
 
@@ -86,7 +86,7 @@ Quando você acha difícil resolver um conflito, usar `git diff --histogram` ou 
 
 ### 3.3 SHA-1 e a probabilidade de colisão
 
-O Git gerencia todos os objetos usando valores de hash SHA-1. O tamanho do espaço de hash é $2^{160}$. Aproximando a probabilidade de colisão de hash (conteúdos diferentes tendo o mesmo valor de hash) usando o Paradoxo do Aniversário (Birthday Paradox), o número de objetos $k$ necessário para que a probabilidade de colisão $p$ chegue a 50% é o seguinte:
+O Git gerencia todos os objetos usando valores de hash SHA-1. O tamanho do espaço de hash é $2^{160}$. Aproximando a probabilidade de colisão de hash (conteúdos diferentes tendo o mesmo valor de hash) usando o [Paradoxo do Aniversário](/pt/p/birthday-paradox/) (Birthday Paradox), o número de objetos $k$ necessário para que a probabilidade de colisão $p$ chegue a 50% é o seguinte:
 
 $$ k \approx \sqrt{2 \ln(2)} \cdot 2^{80} \approx 1.2 \times 2^{80} $$
 
@@ -101,7 +101,7 @@ Sem perceber que estava trabalhando na branch `main`, você escreveu todo o cód
 
 ### Solução: `git reset` e criação de branch
 
-No Git, os commits são objetos independentes e as branches são apenas ponteiros. Portanto, o problema pode ser resolvido instantaneamente com a operação: "criar uma nova branch e retroceder o ponteiro da branch atual".
+No Git, os commits são objetos independentes e as branches são apenas [ponteiros](/pt/p/c-language-pointers-memory-management-stack-heap/). Portanto, o problema pode ser resolvido instantaneamente com a operação: "criar uma nova branch e retroceder o ponteiro da branch atual".
 
 ```bash
 # 1. Crie uma nova branch apontando para o commit atual (o commit feito por engano)
@@ -368,7 +368,7 @@ $ git reflog
 
 ## 12. Conclusão
 
-Explicamos detalhadamente os erros comuns de iniciantes no Git, os mecanismos do Git por trás deles e suas soluções. Fazer commit na branch errada, desfazer commits já enviados (pushed), utilizar o Stash, sobreviver ao Detached HEAD e resolver conflitos. O mais importante em tudo isso é imaginar "que objetos e ponteiros o Git está manipulando nos bastidores".
+Explicamos detalhadamente os erros comuns de iniciantes no Git, os mecanismos do Git por trás deles e suas soluções. Fazer commit na branch errada, desfazer commits já enviados (pushed), utilizar o Stash, sobreviver ao Detached HEAD e resolver conflitos. O mais importante em tudo isso é imaginar "que objetos e [ponteiros](/pt/p/c-language-pointers-memory-management-stack-heap/) o Git está manipulando nos bastidores".
 
 As diferenças dos arquivos são calculadas por algoritmos Diff rigorosos expressos em fórmulas matemáticas, e a consistência histórica é garantida por funções hash criptográficas. Se você entender essa bela filosofia de design, descobrirá que o Git não é de forma alguma uma "caixa preta indescritível", mas sim o escudo mais forte para proteger seu código-fonte.
 

@@ -102,7 +102,7 @@ En los interruptores mecánicos con contactos metálicos, ocurre un "fenómeno d
 
 ## 3. Firmware y personalización (QMK / VIA)
 
-Si el hardware es el "cuerpo", el firmware es el "cerebro" del teclado. Los teclados modernos de alta gama para ingenieros no solo envían códigos de teclas, sino que tienen la capacidad de ejecutar programas avanzados.
+Si el hardware es el "cuerpo", el firmware es el "cerebro" del teclado. Los teclados modernos de alta gama [para ingenieros](/es/p/prompt-engineering-for-engineers/) no solo envían códigos de teclas, sino que tienen la capacidad de ejecutar programas avanzados.
 
 ### 3.1 QMK Firmware
 

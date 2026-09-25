@@ -17,7 +17,7 @@ description: 'El problema de la factorización de enteros que respalda la seguri
 
 La seguridad de la información en la sociedad de Internet moderna está protegida por sistemas de criptografía de clave pública como la criptografía [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/). La base de la seguridad del cifrado RSA depende del hecho de que **"la factorización de números compuestos enormes es computacionalmente muy difícil"**.
 
-En este artículo, desentrañaremos el mecanismo matemático de la **"Criba General del Cuerpo de Números"** (General Number Field Sieve, GNFS), que es el algoritmo de factorización más fuerte en computadoras clásicas, y profundizaremos a través de fórmulas y diagramas conceptuales por qué es completamente derrotado por el **"[Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/)"** descubierto por Peter Shor, y el cambio de paradigma que esto representa.
+En este artículo, desentrañaremos el mecanismo matemático de la **"[Criba General del Cuerpo de Números](/es/p/beyond-gnfs-integer-factorization-algorithms/)"** (General Number Field Sieve, GNFS), que es el algoritmo de factorización más fuerte en computadoras clásicas, y profundizaremos a través de fórmulas y diagramas conceptuales por qué es completamente derrotado por el **"[Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/)"** descubierto por Peter Shor, y el cambio de paradigma que esto representa.
 
 ---
 

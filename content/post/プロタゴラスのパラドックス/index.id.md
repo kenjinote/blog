@@ -87,7 +87,7 @@ Singkatnya, jawaban ini menyatakan bahwa kontradiksi akan terjadi jika paradoks 
 
 ## Hubungannya dengan Paradoks Referensi Diri
 
-Paradoks Protagoras memiliki **struktur referensi diri (self-referential structure)** yang sama dengan "Paradoks Pembohong ('Kalimat ini adalah kebohongan')" dan "Paradoks Russell". Suatu proposisi (kesimpulan pengadilan) memengaruhi kondisi (pemenuhan perjanjian) yang menentukan kebenaran atau kepalsuan dirinya sendiri.
+Paradoks Protagoras memiliki **struktur referensi diri (self-referential structure)** yang sama dengan "Paradoks Pembohong ('Kalimat ini adalah kebohongan')" dan "[Paradoks Russell](/id/p/russells-paradox/)". Suatu proposisi (kesimpulan pengadilan) memengaruhi kondisi (pemenuhan perjanjian) yang menentukan kebenaran atau kepalsuan dirinya sendiri.
 
 Paradoks semacam ini memiliki kaitan yang erat dengan masalah-masalah yang menunjukkan batasan mendasar logika dan komputasi dalam ilmu komputer modern, seperti "[Halting Problem](https://kenji.blog/id/p/turing-machine-computability/) (kita tidak dapat membuat program yang menentukan apakah suatu program akan berhenti atau tidak)" dan [Teorema Ketidaklengkapan Gödel](https://kenji.blog/id/p/godels-incompleteness-theorems/).
 

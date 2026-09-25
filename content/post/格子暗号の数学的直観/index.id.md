@@ -11,7 +11,7 @@ tags: ["Lattice", "PQC", "LWE", "Cryptography", "Math"]
 
 # 1. Pendahuluan: Fajar Kriptografi Pasca-Kuantum (PQC) dan Bangkitnya Kriptografi Berbasis Kisi
 
-Infrastruktur digital masyarakat modern saat ini ditopang oleh teknologi kriptografi kunci publik seperti kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) dan kriptografi kurva eliptik (ECC). Metode kriptografi ini mendasarkan keamanannya pada kesulitan matematis seperti "masalah faktorisasi bilangan bulat" dan "masalah logaritma diskrit", yang diyakini tidak dapat dipecahkan secara efisien (membutuhkan waktu eksponensial) oleh komputer klasik konvensional.
+Infrastruktur digital masyarakat modern saat ini ditopang oleh teknologi kriptografi kunci publik seperti kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) dan kriptografi kurva eliptik ([ECC](/id/p/elliptic-curve-cryptography-math-cpp/)). Metode kriptografi ini mendasarkan keamanannya pada kesulitan matematis seperti "masalah faktorisasi bilangan bulat" dan "masalah logaritma diskrit", yang diyakini tidak dapat dipecahkan secara efisien (membutuhkan waktu eksponensial) oleh komputer klasik konvensional.
 
 Namun, "Algoritma Shor" yang diterbitkan oleh Peter Shor pada tahun 1994, mengirimkan gelombang kejut ke dunia kriptografi. Algoritma ini secara matematis membuktikan bahwa ketika komputer kuantum skala besar terwujud, komputer tersebut akan dapat menyelesaikan masalah faktorisasi bilangan bulat dan masalah logaritma diskrit dalam waktu polinomial. Ini berarti bahwa kriptografi kunci publik yang digunakan secara luas saat ini akan dapat dipecahkan sepenuhnya di masa depan.
 
@@ -60,7 +60,7 @@ Keamanan kriptografi berbasis kisi bergantung pada kesulitan memecahkan masalah 
 SVP adalah masalah yang paling klasik dan terkenal dalam teori kisi.
 
 **Definisi (SVP):**
-Diberikan sembarang basis kisi $B$, temukan vektor $\mathbf{v}$ dengan norma [Euclide](https://kenji.blog/p/euclid/)an (panjang) terkecil di antara vektor-vektor bukan nol yang termasuk dalam kisi $\mathcal{L}(B)$ tersebut.
+Diberikan sembarang basis kisi $B$, temukan vektor $\mathbf{v}$ dengan norma [Euclide](https://kenji.blog/id/p/euclid/)an (panjang) terkecil di antara vektor-vektor bukan nol yang termasuk dalam kisi $\mathcal{L}(B)$ tersebut.
 
 Dinyatakan dalam rumus, ini adalah masalah mencari $\mathbf{v}$ sehingga $\min_{\mathbf{v} \in \mathcal{L}(B) \setminus \{\mathbf{0}\}} \| \mathbf{v} \|$. Panjang minimum ini ditulis sebagai $\lambda_1(\mathcal{L})$ dan disebut "Minimum berurutan pertama (First successive minimum) dari kisi".
 
@@ -298,7 +298,7 @@ Sementara kunci publik dari Standard LWE adalah matriks $A$, Ring-LWE menggunaka
 Persamaannya menjadi sebagai berikut:
 $$ b(x) = a(x) \cdot s(x) + e(x) \pmod q $$
 
-Karena ini adalah perkalian polinomial, dengan menggunakan "Number Theoretic Transform (NTT)", yang mirip dengan Fast Fourier Transform (FFT), kompleksitas komputasi dapat dikurangi secara dramatis menjadi $\mathcal{O}(n \log n)$. Lebih jauh lagi, karena ukuran kunci publik juga berkurang dari matriks menjadi polinomial tunggal, ukuran data berkurang menjadi $\mathcal{O}(n)$. Ini memberikan keuntungan yang luar biasa dalam bandwidth komunikasi.
+Karena ini adalah perkalian polinomial, dengan menggunakan "Number Theoretic Transform (NTT)", yang mirip dengan Fast Fourier Transform ([FFT](/id/p/fast-fourier-transform-algorithm/)), kompleksitas komputasi dapat dikurangi secara dramatis menjadi $\mathcal{O}(n \log n)$. Lebih jauh lagi, karena ukuran kunci publik juga berkurang dari matriks menjadi polinomial tunggal, ukuran data berkurang menjadi $\mathcal{O}(n)$. Ini memberikan keuntungan yang luar biasa dalam bandwidth komunikasi.
 
 Secara matematis, Ring-LWE bukan direduksi menjadi masalah pada kisi umum, melainkan pada kisi dengan simetri khusus yang disebut "Kisi Ideal (Ideal Lattice)".
 
@@ -312,9 +312,9 @@ Saat ini, "CRYSTALS-Kyber" (nama standar: ML-KEM), yang dipilih oleh NIST sebaga
 
 Terakhir, mari kita sentuh bagian inti dari "Mengapa kriptografi berbasis kisi diyakini tidak dapat dipecahkan bahkan menggunakan komputer kuantum?".
 
-Algoritma Shor, yang digunakan komputer kuantum untuk memecahkan kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) dan kriptografi kurva eliptik, pada dasarnya adalah algoritma untuk memecahkan "Masalah Subgrup Tersembunyi (Hidden Subgroup Problem: HSP)". Struktur matematika di balik RSA dan ECC (grup [Abel](https://kenji.blog/id/p/abel/)ian hingga) memiliki periodisitas, dan dengan menggunakan operasi yang unik untuk algoritma kuantum yang disebut Transformasi Fourier Kuantum (Quantum Fourier Transform: QFT), periode ini (subgrup tersembunyi) dapat diekstraksi sekaligus.
+Algoritma Shor, yang digunakan komputer kuantum untuk memecahkan kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) dan kriptografi kurva eliptik, pada dasarnya adalah algoritma untuk memecahkan "Masalah Subgrup Tersembunyi (Hidden Subgroup Problem: HSP)". Struktur matematika di balik RSA dan [ECC](/id/p/elliptic-curve-cryptography-math-cpp/) (grup [Abel](https://kenji.blog/id/p/abel/)ian hingga) memiliki periodisitas, dan dengan menggunakan operasi yang unik untuk algoritma kuantum yang disebut Transformasi Fourier Kuantum (Quantum Fourier Transform: QFT), periode ini (subgrup tersembunyi) dapat diekstraksi sekaligus.
 
-Namun, masalah kisi pada dasarnya berbeda. Meskipun kisi juga memiliki periodisitas, apa yang dicari dalam SVP dan CVP adalah sifat geometris non-linear seperti "jarak terpendek" dan "penghilangan noise". Bahkan jika "transformasi Fourier kuantum pada grup [Abel](https://kenji.blog/id/p/abel/)ian" seperti algoritma Shor diterapkan secara langsung, informasi berguna yang merupakan jawaban dari masalah kisi tidak dapat diekstraksi secara efisien. Hingga saat ini, tidak ada algoritma kuantum yang dapat memecahkan SVP dan LWE dalam waktu polinomial yang telah ditemukan, dan diyakini secara luas bahwa bahkan dengan kekuatan komputasi paralel dari komputer kuantum, satu-satunya metode yang efektif hanyalah pencarian yang mendekati brute force (percepatan akar kuadrat oleh algoritma Grover).
+Namun, masalah kisi pada dasarnya berbeda. Meskipun kisi juga memiliki periodisitas, apa yang dicari dalam SVP dan CVP adalah sifat geometris non-linear seperti "jarak terpendek" dan "penghilangan noise". Bahkan jika "transformasi Fourier kuantum pada grup [Abel](https://kenji.blog/id/p/abel/)ian" seperti algoritma Shor diterapkan secara langsung, informasi berguna yang merupakan jawaban dari masalah kisi tidak dapat diekstraksi secara efisien. Hingga saat ini, tidak ada algoritma kuantum yang dapat memecahkan SVP dan LWE dalam waktu polinomial yang telah ditemukan, dan diyakini secara luas bahwa bahkan dengan kekuatan komputasi paralel dari komputer kuantum, satu-satunya metode yang efektif hanyalah pencarian yang mendekati brute force (percepatan akar kuadrat oleh [algoritma Grover](/id/p/grovers-algorithm-quantum-search/)).
 
 # 9. Kesimpulan
 

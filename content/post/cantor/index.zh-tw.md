@@ -24,7 +24,7 @@ tags:
 
 [格奧爾格·康托爾](https://kenji.blog/zh-tw/p/cantor/)1845年出生於俄羅斯聖彼得堡。他的父親是來自丹麥的富裕商人，母親是俄羅斯音樂家。他從小就對數學展現出非凡的天賦，後來移居德國並在柏林大學學習數學。
 
-在柏林大學，他受到了當時數學界泰斗 **[卡爾·魏爾斯特拉斯](https://kenji.blog/zh-tw/p/weierstrass/)** （Karl Weierstrass）和 **利奧波德·克羅內克** （Leopold [Kronecker](https://kenji.blog/zh-tw/p/kronecker/)）的指導。特別是克羅內克，後來成為了康托爾最大的反對者。
+在柏林大學，他受到了當時數學界泰斗 **[卡爾·魏爾斯特拉斯](https://kenji.blog/zh-tw/p/weierstrass/)** （Karl Weierstrass）和 **[利奧波德·克羅內克](/zh-tw/p/kronecker/)** （Leopold [Kronecker](https://kenji.blog/zh-tw/p/kronecker/)）的指導。特別是克羅內克，後來成為了康托爾最大的反對者。
 
 ### 對無窮的探索與克羅內克的衝突
 
@@ -111,9 +111,9 @@ graph TD
 
 ## 連續統假設
 
-在自然數的基數 $\aleph_0$ 和實數的基數 $\mathfrak{c}$ 之間是否存在中間的基數？康托爾假設「不存在這樣的中間基數」。這就是 **連續統假設（CH）** 。
+在自然數的基數 $\aleph_0$ 和實數的基數 $\mathfrak{c}$ 之間是否存在中間的基數？康托爾假設「不存在這樣的中間基數」。這就是 **[連續統假設](/zh-tw/p/continuum-hypothesis/)（CH）** 。
 
-康托爾在晚年花了大量時間試圖證明這個假設，但他最終未能解決它。後來，通過[庫爾特·哥德爾](https://kenji.blog/zh-tw/p/godel/)和保羅·科恩的研究，發現連續統假設是一個獨立命題，從標準集合論公理（ZFC公理）中「既不能被證明也不能被證偽」，這再次給數學界帶來了巨大的震動。
+康托爾在晚年花了大量時間試圖證明這個假設，但他最終未能解決它。後來，通過[庫爾特·哥德爾](https://kenji.blog/zh-tw/p/godel/)和保羅·科恩的研究，發現[連續統假設](/zh-tw/p/continuum-hypothesis/)是一個獨立命題，從標準集合論公理（ZFC公理）中「既不能被證明也不能被證偽」，這再次給數學界帶來了巨大的震動。
 
 ## 結語
 

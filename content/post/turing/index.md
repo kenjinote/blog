@@ -51,7 +51,7 @@ H(x, y) = \begin{cases}
 \end{cases}
 $$
 
-もしこのような関数 $H$ を計算する[チューリング](https://kenji.blog/p/turing/)マシンが存在すると仮定します。その場合、次のような対角化に基づくプログラム $D(x)$ を構築できます。
+もしこのような関数 $H$ を計算する[チューリング](https://kenji.blog/p/turing/)マシンが存在すると仮定します。その場合、次のような[対角化](/p/diagonalization-and-jordan-normal-form/)に基づくプログラム $D(x)$ を構築できます。
 
 $$
 D(x) = \begin{cases} 

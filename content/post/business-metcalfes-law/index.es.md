@@ -95,4 +95,4 @@ Si el número de usuarios aumenta demasiado, pueden producirse "efectos de red n
 
 Aunque es un modelo simplificado, la Ley de Metcalfe expresa maravillosamente la dinámica de "El ganador se lo lleva todo" (Winner-takes-all) en los negocios de plataformas.
 
-Los líderes empresariales y los emprendedores siempre deben centrar su diseño en cómo su producto crea un efecto de red y cuán rápido puede superar la masa crítica. Incluso en la era de la IA y el Blockchain (Web3), la Ley de Metcalfe sigue actuando silenciosa pero poderosamente como la base de cómo los nodos se conectan e intercambian valor.
+Los líderes empresariales y los emprendedores siempre deben centrar su diseño en cómo su producto crea un efecto de red y cuán rápido puede superar la masa crítica. Incluso en la era de la IA y el [Blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/) (Web3), la Ley de Metcalfe sigue actuando silenciosa pero poderosamente como la base de cómo los nodos se conectan e intercambian valor.

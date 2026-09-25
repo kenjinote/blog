@@ -80,7 +80,7 @@ Usá-las de forma seletiva com base no propósito (ou deixar o roteador alternar
 
 ## 5. "MIMO": Dobrando a Velocidade com Múltiplas Antenas
 
-A razão pela qual os roteadores modernos têm tantas antenas instaladas (ou embutidas) não é apenas para enviar ondas de rádio mais longe. É para usar uma tecnologia mágica chamada "**MIMO (Multiple-Input and Multiple-Output)**".
+A razão pela qual os roteadores modernos têm tantas antenas instaladas (ou embutidas) não é apenas para enviar ondas de rádio mais longe. É para usar uma tecnologia mágica chamada "**MIMO (Multiple-Input and Multiple-[Output](/pt/p/reading-hard-tech-books/))**".
 
 No passado, mesmo com múltiplas antenas, elas eram usadas, na melhor das hipóteses, para enviar os mesmos dados e reduzir erros (diversidade).
 Porém, o MIMO aproveita a característica espacial (as ondas de rádio refletindo nas paredes e tomando várias rotas) para **transmitir simultaneamente dados completamente diferentes de diferentes antenas na mesma frequência**.

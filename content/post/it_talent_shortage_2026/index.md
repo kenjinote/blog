@@ -26,7 +26,7 @@ description: 'IT業界における「2026年問題」の真実。生成AIの台�
 
 しかし、2026年現在、このモデルは限界を迎えています。DX（デジタルトランスフォーメーション）の本質が「単なるIT化」から「ビジネスモデルの変革」へとシフトしたことで、アジリティ（俊敏性）の低いウォーターフォール開発では市場の変化に追いつけなくなりました。
 
-現代の開発プロセスは、 **クラウドネイティブ** であり、 **AI駆動** であることが前提となっています。[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)化（Docker-layers/)/Kubernetes）、マイクロサービスアーキテクチャ、CI/CD[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の自動化はもはや「特別な技術」ではなく「標準的なインフラ」です。
+現代の開発プロセスは、 **クラウドネイティブ** であり、 **AI駆動** であることが前提となっています。[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)化（Docker-layers/)/[Kubernetes](/p/kubernetes-k8s-architecture-pod-service-ingress/)）、マイクロサービスアーキテクチャ、[CI/CD](/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の自動化はもはや「特別な技術」ではなく「標準的なインフラ」です。
 
 ```mermaid
 graph TD

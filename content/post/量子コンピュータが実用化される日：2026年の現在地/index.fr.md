@@ -88,7 +88,7 @@ $$
 S_x = \prod_{i \in \text{star}} X_i, \quad S_z = \prod_{j \in \text{plaquette}} Z_j
 $$
 
-L'avancée majeure de 2026 est le dépassement complet du "seuil de rentabilité (Break-even point)". En d'autres termes, le bruit éliminé par la correction d'erreurs est devenu plus important que le bruit causé par les circuits supplémentaires pour l'effectuer, permettant ainsi à la durée de vie du qubit logique de dépasser de plusieurs ordres de grandeur celle du qubit physique.
+L'avancée majeure de 2026 est le [dépassement](/fr/p/hegel%E3%81%AEdialectique/) complet du "seuil de rentabilité (Break-even point)". En d'autres termes, le bruit éliminé par la correction d'erreurs est devenu plus important que le bruit causé par les circuits supplémentaires pour l'effectuer, permettant ainsi à la durée de vie du qubit logique de dépasser de plusieurs ordres de grandeur celle du qubit physique.
 
 ### 4.2 Cycle de correction d'erreurs quantiques
 

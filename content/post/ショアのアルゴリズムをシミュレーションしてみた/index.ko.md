@@ -84,7 +84,7 @@ $$ a^r - 1 \equiv 0 \pmod N $$
 만약 $r$이 짝수라면, 합차 공식을 사용하여 인수분해할 수 있습니다.
 $$ (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod N $$
 
-이것은 $N$이 $(a^{r/2} - 1)$ 또는 $(a^{r/2} + 1)$ 중 하나와 공약수를 가짐을 의미합니다(단, $a^{r/2} \not\equiv -1 \pmod N$이라는 조건을 만족해야 합니다). 따라서 [유클리드 호제법](https://kenji.blog/p/euclidean-algorithm/)을 사용하여,
+이것은 $N$이 $(a^{r/2} - 1)$ 또는 $(a^{r/2} + 1)$ 중 하나와 공약수를 가짐을 의미합니다(단, $a^{r/2} \not\equiv -1 \pmod N$이라는 조건을 만족해야 합니다). 따라서 [유클리드 호제법](https://kenji.blog/ko/p/euclidean-algorithm/)을 사용하여,
 
 $$ p = \gcd(a^{r/2} - 1, N) $$
 $$ q = \gcd(a^{r/2} + 1, N) $$
@@ -341,7 +341,7 @@ $q = \gcd(7^2 + 1, 15) = \gcd(50, 15) = 5$
 
 PQC는 쇼어의 알고리즘을 사용해도 (혹은 그로버의 알고리즘을 사용해도) 효율적으로 풀 수 없을 것으로 수학적으로 여겨지는 새로운 수학적 문제(격자 문제, 다변수 다항식 문제, 해시 함수 기반 등)를 기반으로 하고 있습니다. 이미 'CRYSTALS-Kyber'나 'CRYSTALS-Dilithium'과 같은 알고리즘이 표준 규격으로 선정되어, Apple의 iMessage나 각종 웹 브라우저의 통신 프로토콜에 도입이 서서히 시작되고 있습니다.
 
-IT 인프라를 관리하는 엔지니어에게 있어, 기존의 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/)나 타원곡선 암호에서 PQC로의 '크립토 어질리티(암호 민첩성: 빠르게 암호 방식을 전환할 수 있는 설계)'를 시스템에 통합하는 것이 향후 큰 과제가 될 것입니다.
+IT 인프라를 관리하는 엔지니어에게 있어, 기존의 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/)나 [타원곡선 암호](/ko/p/elliptic-curve-cryptography-math-cpp/)에서 PQC로의 '크립토 어질리티(암호 민첩성: 빠르게 암호 방식을 전환할 수 있는 설계)'를 시스템에 통합하는 것이 향후 큰 과제가 될 것입니다.
 
 ---
 

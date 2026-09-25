@@ -53,7 +53,7 @@ graph TD
 Die oberen Schichten müssen nicht wissen, "wie genau" die unteren Schichten ihre Arbeit verrichten.
 
 1. **Netzzugangsschicht**: Die Aufgabe besteht darin, "elektrische Signale aus 0 und 1" über physische Kabel oder Wi-Fi-Funkwellen an das benachbarte Gerät zu senden.
-2. **Internetschicht (IP)**: Die Aufgabe besteht darin, anhand der IP-Adresse (Adresse) die Route (den Pfad) zum endgültigen Ziel im weltweiten Netzwerk zu finden und die Pakete zu transportieren.
+2. **Internetschicht (IP)**: Die Aufgabe besteht darin, anhand der IP-Adresse (Adresse) die Route (den [Pfad](/de/p/windows-%E3%81%A7pfad%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9Fausf%C3%BChrbare-datei%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/)) zum endgültigen Ziel im weltweiten Netzwerk zu finden und die Pakete zu transportieren.
 3. **Transportschicht (TCP)**: Die Aufgabe besteht darin, den Daten "Genauigkeit" zu garantieren, indem empfangene Pakete neu geordnet oder verlorene Pakete erneut angefordert werden.
 4. **Anwendungsschicht**: Die Aufgabe besteht darin, das spezifische Datenformat entsprechend der Anwendung festzulegen, wie z. B. für Webbrowser (HTTP) oder E-Mail (SMTP).
 
@@ -77,7 +77,7 @@ Diese Philosophie besagt, dass "Geräte wie Router auf dem Weg des Netzwerks nur
 Ältere Telefonnetze (wie das japanische NTT-Netz) waren "intelligente Netzwerke", in denen die Vermittlungsstellen in den zentralen Telefonämtern alle Funktionen (Abrechnung, Steuerung, Fehlerbehandlung) innehatten.
 Das Internet hingegen ist nur ein "dummes Rohr" (Dumb Pipe), das Daten transportiert, während die Intelligenz in unseren PCs und Smartphones an den Enden liegt.
 
-Gerade wegen dieses einfachen Designs, bei dem "das Netzwerk nur ein Rohr ist", konnte das Internet zu einer "Infrastruktur für Innovationen" heranwachsen, in der jeder neue Anwendungen (Web, Videostreaming, P2P, Blockchain usw.) auf Endgeräten entwickeln und weltweit bereitstellen kann, ohne an bestimmte Administratoren gebunden zu sein.
+Gerade wegen dieses einfachen Designs, bei dem "das Netzwerk nur ein Rohr ist", konnte das Internet zu einer "Infrastruktur für Innovationen" heranwachsen, in der jeder neue Anwendungen (Web, Videostreaming, P2P, [Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/) usw.) auf Endgeräten entwickeln und weltweit bereitstellen kann, ohne an bestimmte Administratoren gebunden zu sein.
 
 ## 6. Zusammenfassung
 

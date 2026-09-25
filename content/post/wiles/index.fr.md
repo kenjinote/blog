@@ -30,7 +30,7 @@ $$
 x^n + y^n = z^n \quad (\text{où } n \ge 3 \text{ est un entier})
 $$
 
-Il stipule qu'il n'y a pas de solutions entières positives $(x, y, z)$ qui satisfont cette équation. Lorsque $n = 2$, il est bien connu sous le nom de théorème de Pythagore, et il existe une infinité de solutions (triplets pythagoriciens). Cependant, [Fermat](https://kenji.blog/fr/p/fermat/) a affirmé que lorsque $n$ est 3 ou plus, cela ne se vérifie jamais.
+Il stipule qu'il n'y a pas de solutions entières positives $(x, y, z)$ qui satisfont cette équation. Lorsque $n = 2$, il est bien connu sous le nom de théorème de [Pythagore](/fr/p/pythagoras/), et il existe une infinité de solutions (triplets pythagoriciens). Cependant, [Fermat](https://kenji.blog/fr/p/fermat/) a affirmé que lorsque $n$ est 3 ou plus, cela ne se vérifie jamais.
 
 Bien que la proposition semble compréhensible même pour un collégien, elle a résisté à une preuve complète même par des mathématiciens de génie qui ont laissé leur marque dans l'histoire, tels qu'Euler, Sophie Germain et [Kummer](https://kenji.blog/fr/p/kummer/).
 

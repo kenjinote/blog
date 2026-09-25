@@ -52,7 +52,7 @@ tags: ["bitcoin", "cryptography", "blockchain"]
 
 ## 3. [ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)のアーキテクチャ
 
-ビットコインを支える中核技術が「ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーン（Blockchain）」です。ブロックチェーンは、分散型台帳技術（Distributed Ledger Technology: DLT）のひとつの形態であり、データが「ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)」と呼ばれる単位でまとめられ、それらが暗号学的にチェーン（鎖）のようにつながった構造をしています。
+ビットコインを支える中核技術が「ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーン（Blockchain）」です。[ブロックチェーン](/p/blockchain-technology-smart-contract-distributed-ledger/)は、[分散型台帳](/p/blockchain-technology-smart-contract-distributed-ledger/)技術（Distributed Ledger Technology: DLT）のひとつの形態であり、データが「ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)」と呼ばれる単位でまとめられ、それらが暗号学的にチェーン（鎖）のようにつながった構造をしています。
 
 ```mermaid
 flowchart TD
@@ -69,7 +69,7 @@ flowchart TD
 ブロックヘッダには以下の情報が含まれます。
 1. **バージョン（Version）**: ソフトウェアのバージョン
 2. **前のブロックのハッシュ（Previous Block Hash）**: 直前のブロックのヘッダをハッシュ化した値
-3. **マークルルート（Merkle Root）**: ブロックに含まれる全トランザクションを要約したハッシュ値
+3. **マークルルート（Merkle Root）**: ブロックに含まれる全[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)を要約したハッシュ値
 4. **タイムスタンプ（Timestamp）**: ブロックが生成された時間
 5. **難易度ターゲット（Difficulty Target, Bits）**: プルーフ・オブ・ワークの難易度を示す値
 6. **ナンス（Nonce）**: マイニング時に条件を満たすハッシュ値を見つけるために変更される任意の数値
@@ -88,11 +88,11 @@ flowchart TD
     H34 --> H4["Hash(Tx4)"]
 ```
 
-[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)のデータが少しでも変更されると、その葉ノードのハッシュが変わり、連鎖的にマークルルートの値も全く違うものになります。これにより、膨大なトランザクションデータの中から、一つでも改ざんがあれば即座に検知することが可能になります。
+[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)のデータが少しでも変更されると、その葉ノードのハッシュが変わり、連鎖的にマークルルートの値も全く違うものになります。これにより、膨大な[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)データの中から、一つでも改ざんがあれば即座に検知することが可能になります。
 
 ## 4. 数理的・暗号学的基盤
 
-ビットコインの堅牢性は、高度な数学的基盤に支えられています。ここでは、その中核をなすハッシュ関数、[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号、および楕円曲線暗号について深く掘り下げます。
+ビットコインの堅牢性は、高度な数学的基盤に支えられています。ここでは、その中核をなすハッシュ関数、[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号、および[楕円曲線暗号](/p/elliptic-curve-cryptography-math-cpp/)について深く掘り下げます。
 
 ### SHA-256（Secure Hash Algorithm 256-bit）
 
@@ -115,7 +115,7 @@ flowchart TD
 
 ### 楕円曲線暗号（Elliptic Curve Cryptography: ECC）と secp256k1
 
-ビットコインの公開鍵生成およびデジタル署名には、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号ではなく **楕円曲線暗号（ECC）** が採用されています。ECCは、RSAに比べてはるかに短い鍵長で同等のセキュリティレベルを提供できるという利点があります。
+ビットコインの公開鍵生成およびデジタル署名には、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号ではなく **[楕円曲線暗号](/p/elliptic-curve-cryptography-math-cpp/)（[ECC](/p/elliptic-curve-cryptography-math-cpp/)）** が採用されています。[ECC](/p/elliptic-curve-cryptography-math-cpp/)は、RSAに比べてはるかに短い鍵長で同等のセキュリティレベルを提供できるという利点があります。
 
 ビットコインで用いられる特定の楕円曲線のパラメータは **secp256k1** と呼ばれます。この曲線は有限体 $\mathbb{F}_p$ 上で定義され、次の方程式で表されます。
 
@@ -138,7 +138,7 @@ $$
 
 ### ECDSA（Elliptic Curve Digital Signature Algorithm）
 
-[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の署名には **ECDSA** が用いられます。メッセージ（トランザクションのハッシュ）を $z$ としたときの署名プロセスは以下の通りです。
+[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の署名には **ECDSA** が用いられます。メッセージ（[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)のハッシュ）を $z$ としたときの署名プロセスは以下の通りです。
 
 1. $1$ から $n-1$ のランダムな整数 $k_e$ （エフェメラル鍵）を選択する。
 2. 曲線上の点 $(x_1, y_1) = k_e \cdot G$ を計算する。
@@ -159,7 +159,7 @@ $$
 
 ### [ビザンチン将軍](https://kenji.blog/p/byzantine-generals-problem-consensus/)問題（[Byzantine Generals](https://kenji.blog/p/byzantine-generals-problem-consensus/) Problem）
 
-分散コンピューティングにおける古典的な問題として「ビザンチン将軍問題」があります。複数の将軍が敵の都市を包囲しており、攻撃か撤退かで意見を一致させなければなりませんが、将軍の中には裏切り者がいて偽のメッセージを送る可能性があります。このような状況下で、いかにして誠実な将軍たちだけで正しい合意に達することができるかという問題です。
+分散コンピューティングにおける古典的な問題として「[ビザンチン将軍問題](/p/byzantine-generals-problem/)」があります。複数の将軍が敵の都市を包囲しており、攻撃か撤退かで意見を一致させなければなりませんが、将軍の中には裏切り者がいて偽のメッセージを送る可能性があります。このような状況下で、いかにして誠実な将軍たちだけで正しい合意に達することができるかという問題です。
 
 ビットコインは、**プルーフ・オブ・ワーク（[PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)）** と **最長チェーンのルール（Longest Chain Rule）** を組み合わせることで、この問題を実質的に解決しました。
 
@@ -187,11 +187,11 @@ $$
 
 ## 6. [トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)とUTXOモデル
 
-ビットコインのトランザクションは、銀行の口座残高（アカウントベース・モデル）のような仕組みではなく、**UTXO（Unspent [Transaction](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/) Output：未使用トランザクションアウトプット）** というモデルを採用しています。
+ビットコインの[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)は、銀行の口座残高（アカウントベース・モデル）のような仕組みではなく、**UTXO（Unspent [Transaction](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/) Output：未使用[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)アウトプット）** というモデルを採用しています。
 
 ### インプットとアウトプット
 
-ビットコインの「コイン」という実体は存在しません。存在するのは、過去のトランザクションで作付されたUTXOの連鎖だけです。各トランザクションは、既存のUTXOを「インプット（入力）」として消費し、新たなUTXOを「アウトプット（出力）」として生成します。
+ビットコインの「コイン」という実体は存在しません。存在するのは、過去の[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)で作付されたUTXOの連鎖だけです。各[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)は、既存のUTXOを「インプット（入力）」として消費し、新たなUTXOを「アウトプット（出力）」として生成します。
 
 ```mermaid
 flowchart LR
@@ -208,11 +208,11 @@ $$
 \sum \text{Inputs} = \sum \text{Outputs} + \text{[Transaction](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)\_Fee}
 $$
 
-このUTXOモデルは、トランザクションの独立性が高いため並列処理がしやすく、またプライバシーの観点（毎回新しいお釣り[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を使うことができる）でも優れています。
+このUTXOモデルは、[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)の独立性が高いため並列処理がしやすく、またプライバシーの観点（毎回新しいお釣り[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を使うことができる）でも優れています。
 
 ## 7. 未来とスケーラビリティ問題
 
-ビットコインは極めて堅牢で安全なシステムですが、その代償としてスケーラビリティ（処理能力の拡張性）に大きな課題を抱えています。現在のビットコインネットワークは、1秒間に約7件のトランザクション（7 TPS）しか処理できません。これは、Visaネットワークの数万TPSに比べると非常に低速です。
+ビットコインは極めて堅牢で安全なシステムですが、その代償としてスケーラビリティ（処理能力の拡張性）に大きな課題を抱えています。現在のビットコインネットワークは、1秒間に約7件の[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)（7 TPS）しか処理できません。これは、Visaネットワークの数万TPSに比べると非常に低速です。
 
 ### フォーク（Forks）：ソフトフォークとハードフォーク
 
@@ -224,7 +224,7 @@ $$
 
 スケーラビリティ問題を解決するための有力なアプローチが、**レイヤー2（Layer 2）** ソリューションであるライトニングネットワークです。
 
-ライトニングネットワークでは、参加者同士がブロックチェーン外（オフチェーン）で「ペイメントチャネル（Payment Channel）」を開設します。チャネル内では、双方が納得する限り、ブロックチェーンに[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を記録することなく、一瞬で、かつほぼ無料で何度でも資金のやり取りが可能です。最終的な残高の精算時のみ、ブロックチェーン（レイヤー1）にトランザクションを記録します。
+ライトニングネットワークでは、参加者同士が[ブロックチェーン](/p/blockchain-technology-smart-contract-distributed-ledger/)外（オフチェーン）で「ペイメントチャネル（Payment Channel）」を開設します。チャネル内では、双方が納得する限り、[ブロックチェーン](/p/blockchain-technology-smart-contract-distributed-ledger/)に[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を記録することなく、一瞬で、かつほぼ無料で何度でも資金のやり取りが可能です。最終的な残高の精算時のみ、[ブロックチェーン](/p/blockchain-technology-smart-contract-distributed-ledger/)（レイヤー1）に[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)を記録します。
 
 ### Proof of Stake（[PoS](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)）との比較
 
@@ -234,7 +234,7 @@ $$
 
 ## 8. 暗号理論の深淵：数学的証明とプロトコルの堅牢性
 
-前章までで解説したSHA-256や楕円曲線暗号（ECC）の背後には、[情報理論](https://kenji.blog/p/information-theory-shannon-entropy/)的安全性と計算量的安全性という二つのパラダイムが存在します。ビットコインをはじめとする現代の暗号資産は、主に計算量的安全性（Computational Security）に依存しています。
+前章までで解説したSHA-256や[楕円曲線暗号](/p/elliptic-curve-cryptography-math-cpp/)（[ECC](/p/elliptic-curve-cryptography-math-cpp/)）の背後には、[情報理論](https://kenji.blog/p/information-theory-shannon-entropy/)的安全性と計算量的安全性という二つのパラダイムが存在します。ビットコインをはじめとする現代の暗号資産は、主に計算量的安全性（Computational Security）に依存しています。
 
 ### 計算量的安全性と離散対数問題
 
@@ -248,13 +248,13 @@ $$
 ### [量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)の脅威と耐量子暗号
 
 しかし、計算量的安全性には一つの大きな懸念があります。それが **量子コンピュータ（Quantum Computer）** の台頭です。
-1994年にピーター・ショア（Peter Shor）が発表した「[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)（Shor's Algorithm）」は、量子コンピュータを用いれば、素因数分解問題（[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の基礎）や離散対数問題（ECCの基礎）を多項式時間 $\mathcal{O}(n^3)$ で解くことができることを数学的に証明しました。
+1994年にピーター・ショア（Peter Shor）が発表した「[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)（Shor's Algorithm）」は、量子コンピュータを用いれば、素因数分解問題（[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の基礎）や離散対数問題（[ECC](/p/elliptic-curve-cryptography-math-cpp/)の基礎）を多項式時間 $\mathcal{O}(n^3)$ で解くことができることを数学的に証明しました。
 
 もし、十分な量子ビット（Qubits）と低いエラー率を持つ実用的な大規模量子コンピュータが完成すれば、ビットコインの[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)から秘密鍵が逆算されるリスクが生じます。
 これに対するビットコインネットワークの防衛策は以下の通りです。
 
-1. **ハッシュ関数の保護**: ビットコイン[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)は公開鍵そのものではなく、公開鍵にSHA-256とRIPEMD-160というハッシュ関数を適用したものです。量子コンピュータを使っても、ハッシュ関数の逆算（グローバーのアルゴリズムを用いたとしても計算量は $\mathcal{O}(\sqrt{N})$）は依然として困難です。そのため、トランザクションを行って公開鍵をネットワークにさらすまでは、[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の中身は量子コンピュータに対しても安全と言えます。
-2. **耐量子暗号（Post-Quantum [Cryptography](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/): PQC）への移行**: 量子コンピュータが実用化される前に、ビットコインのプロトコルをハードフォークさせ、NIST（米国国立標準技術研究所）が選定する格子ベース暗号（Lattice-based cryptography）や多変数多項式暗号（Multivariate polynomial cryptography）といった、量子コンピュータでも解読が困難な新しい署名アルゴリズムに移行することが議論されています。
+1. **ハッシュ関数の保護**: ビットコイン[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)は公開鍵そのものではなく、公開鍵にSHA-256とRIPEMD-160というハッシュ関数を適用したものです。量子コンピュータを使っても、ハッシュ関数の逆算（[グローバーのアルゴリズム](/p/grovers-algorithm-quantum-search/)を用いたとしても計算量は $\mathcal{O}(\sqrt{N})$）は依然として困難です。そのため、[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)を行って公開鍵をネットワークにさらすまでは、[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の中身は量子コンピュータに対しても安全と言えます。
+2. **耐量子暗号（Post-Quantum [Cryptography](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/): PQC）への移行**: 量子コンピュータが実用化される前に、ビットコインのプロトコルをハードフォークさせ、NIST（米国国立標準技術研究所）が選定する格子ベース暗号（[Lattice-based cryptography](/p/lattice-based-cryptography-math-intuition/)）や多変数多項式暗号（Multivariate polynomial cryptography）といった、量子コンピュータでも解読が困難な新しい署名アルゴリズムに移行することが議論されています。
 
 ## 9. ネットワーク・トポロジーと[P2P](https://kenji.blog/p/webrtc-realtime-communication-p2p/)プロトコルの詳細
 
@@ -264,20 +264,20 @@ $$
 
 ネットワークに参加するコンピュータは「ノード（Node）」と呼ばれます。ノードにはいくつか種類があり、それぞれ役割が異なります。
 
-- **フルノード（Full Node）**: ジェネシスブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)から最新のブロックに至るまで、すべてのブロックチェーンデータ（数百GB以上）をダウンロードし、検証するノードです。[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の正当性や二重支払いの有無を独立してチェックするため、ネットワークのセキュリティの根幹を担います。
-- **SPVノード（Simplified Payment Verification Node）**: ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーン全体ではなく、ブロックヘッダのみをダウンロードする軽量ノードです。主にスマートフォン用のウォレットなどで使われます。自身のトランザクションがブロックに含まれているか（マークルパスの検証）は確認できますが、フルノードほどの検証能力はありません。
+- **フルノード（Full Node）**: ジェネシスブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)から最新のブロックに至るまで、すべての[ブロックチェーン](/p/blockchain-technology-smart-contract-distributed-ledger/)データ（数百GB以上）をダウンロードし、検証するノードです。[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の正当性や二重支払いの有無を独立してチェックするため、ネットワークのセキュリティの根幹を担います。
+- **SPVノード（Simplified Payment Verification Node）**: ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーン全体ではなく、ブロックヘッダのみをダウンロードする軽量ノードです。主にスマートフォン用のウォレットなどで使われます。自身の[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)がブロックに含まれているか（マークルパスの検証）は確認できますが、フルノードほどの検証能力はありません。
 - **マイニングノード（Mining Node）**: [PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)の計算を行い、新しいブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を生成するノードです。現在では、ASIC（Application Specific Integrated Circuit）と呼ばれるマイニング専用のハードウェアを束ねた巨大な「マイニングプール」がこの役割を担っています。
 
 ### [トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の伝播プロセス（Gossip Protocol）
 
-あるユーザー（アリス）がビットコインを送金するトランザクションを作成した際、そのデータはどのように世界中に広がるのでしょうか。
+あるユーザー（アリス）がビットコインを送金する[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)を作成した際、そのデータはどのように世界中に広がるのでしょうか。
 
-1. アリスのウォレット（ノード）は、接続されている数個のピア（隣接ノード）に対してトランザクションデータを送信します。
-2. トランザクションを受け取った各ピアは、そのトランザクションが正しいルール（十分な残高があるか、署名が正しいか、書式が合っているか等）に従っているかを検証します。
-3. 検証に成功した場合、そのトランザクションを自身の **メモリプール（Mempool）** に保存し、さらに別の隣接ノードへと転送します（Gossip Protocol / ゴシッププロトコル）。
-4. 不正なトランザクションであれば破棄され、転送されません。
+1. アリスのウォレット（ノード）は、接続されている数個のピア（隣接ノード）に対して[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)データを送信します。
+2. [トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)を受け取った各ピアは、その[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)が正しいルール（十分な残高があるか、署名が正しいか、書式が合っているか等）に従っているかを検証します。
+3. 検証に成功した場合、その[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)を自身の **メモリプール（Mempool）** に保存し、さらに別の隣接ノードへと転送します（Gossip Protocol / ゴシッププロトコル）。
+4. 不正な[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)であれば破棄され、転送されません。
 
-これにより、有効なトランザクションは数秒のうちに世界中のノードのMempoolに行き渡ります。マイナーは、このMempoolの中から手数料（Fee）の高いトランザクションを優先的に選び出し、新しいブロックに詰め込みます。
+これにより、有効な[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)は数秒のうちに世界中のノードのMempoolに行き渡ります。マイナーは、このMempoolの中から手数料（Fee）の高い[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)を優先的に選び出し、新しいブロックに詰め込みます。
 
 ## 10. ブロックチェーンの経済学：ゲーム理論とインセンティブ設計
 
@@ -285,7 +285,7 @@ $$
 
 ### ブロック報酬と半減期（Halving）
 
-マイナーが膨大な電力とハードウェア投資を行ってまでブロックを採掘する理由は、経済的な報酬があるからです。マイナーが新しいブロックの生成に成功すると、**コインベーストランザクション（Coinbase [Transaction](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)）** と呼ばれる特殊なトランザクションを通じて、新たに発行されたビットコインを受け取ります。
+マイナーが膨大な電力とハードウェア投資を行ってまでブロックを採掘する理由は、経済的な報酬があるからです。マイナーが新しいブロックの生成に成功すると、**コインベース[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)（Coinbase [Transaction](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)）** と呼ばれる特殊な[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)を通じて、新たに発行されたビットコインを受け取ります。
 
 ビットコインの総発行枚数はプログラムによって **2,100万枚** に上限が設定されています。また、1ブロックあたりのマイニング報酬は、210,000ブロック（約4年）ごとに半分になる **半減期（Halving）** というメカニズムが組み込まれています。
 
@@ -299,10 +299,10 @@ $$
 
 ### 51%攻撃（51% Attack）のゲーム理論的分析
 
-ブロックチェーンの最大の脅威として **51%攻撃** が挙げられます。もし悪意のある単一の事業者が、ネットワーク全体の計算能力（ハッシュレート）の過半数（51%以上）を支配した場合、以下のことが可能になります。
+[ブロックチェーン](/p/blockchain-technology-smart-contract-distributed-ledger/)の最大の脅威として **51%攻撃** が挙げられます。もし悪意のある単一の事業者が、ネットワーク全体の計算能力（ハッシュレート）の過半数（51%以上）を支配した場合、以下のことが可能になります。
 
 1. 自身の過去の取引を取り消す（二重支払い）
-2. 特定のトランザクションの承認を拒否する（検閲）
+2. 特定の[トランザクション](/p/rdbms-transaction-acid-isolation-level-lock/)の承認を拒否する（検閲）
 
 しかし、ゲーム理論の観点から見ると、現在の大規模なビットコインネットワークで51%攻撃を行うことは極めて非合理的です。
 莫大なコスト（数千億円規模のハードウェアと莫大な電力）をかけてネットワークの過半数を支配したとしても、その攻撃が成功した瞬間にビットコインの信頼は失墜し、価格は暴落します。攻撃者が手に入れたビットコインも無価値になるため、**「システムを攻撃するよりも、その巨大な計算能力をマイニング（正当なルールに従うこと）に使って報酬を得たほうが、はるかに経済的利益が大きい」** というナッシュ均衡が成立しているのです。
@@ -311,7 +311,7 @@ $$
 
 本記事では、ビットコインと暗号資産の裏側にある数理的、技術的、そして経済学的な仕組みを徹底的に解剖しました。
 
-一見すると複雑な数学とコードの塊に見えるブロックチェーン技術ですが、その本質は **「権威に依存せず、数学と物理法則を信頼の根拠とする、人類の新しい合意形成システム」** にほかなりません。
+一見すると複雑な数学とコードの塊に見える[ブロックチェーン](/p/blockchain-technology-smart-contract-distributed-ledger/)技術ですが、その本質は **「権威に依存せず、数学と物理法則を信頼の根拠とする、人類の新しい合意形成システム」** にほかなりません。
 
 私たちが日々当たり前のように使っている金融システムは、長い歴史の中で幾度となく破綻し、その度にパッチワーク的な修正を繰り返してきました。サトシ・ナカモトが提示した解は、決して完璧ではありません。スケーラビリティの問題、環境問題、そして国家による規制と法整備など、越えるべきハードルは無数に存在します。
 
@@ -319,7 +319,7 @@ $$
 
 ## 付録：より深い学習のためのリソースと参考文献
 
-この記事を読んで、さらにブロックチェーン技術や暗号理論について深く学びたい方のために、推奨されるリソースをいくつか紹介します。
+この記事を読んで、さらに[ブロックチェーン](/p/blockchain-technology-smart-contract-distributed-ledger/)技術や暗号理論について深く学びたい方のために、推奨されるリソースをいくつか紹介します。
 
 ### 必読の原論文（Whitepapers）
 - **Bitcoin: A Peer-to-Peer Electronic Cash System** (Satoshi Nakamoto, 2008)

@@ -13,7 +13,7 @@ description: 'Masalah faktorisasi prima yang menopang keamanan sandi RSA. Kami m
 
 Keamanan informasi dalam masyarakat internet modern dilindungi oleh kriptografi kunci publik seperti kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/). Dasar keamanan kriptografi RSA bergantung pada fakta bahwa **"faktorisasi prima dari bilangan komposit yang sangat besar sangatlah sulit secara komputasi"** .
 
-Dalam artikel ini, kita akan mengungkap mekanisme matematis dari **"General Number Field Sieve"** (GNFS), algoritma faktorisasi prima terkuat untuk komputer klasik, dan mendalami mengapa algoritma ini sepenuhnya dikalahkan oleh **"Algoritma Shor"** yang ditemukan oleh Peter Shor. Kita akan mengeksplorasi pergeseran paradigma ini secara mendalam menggunakan rumus dan diagram konseptual.
+Dalam artikel ini, kita akan mengungkap mekanisme matematis dari **"[General Number Field Sieve](/id/p/beyond-gnfs-integer-factorization-algorithms/)"** (GNFS), algoritma faktorisasi prima terkuat untuk komputer klasik, dan mendalami mengapa algoritma ini sepenuhnya dikalahkan oleh **"Algoritma Shor"** yang ditemukan oleh Peter Shor. Kita akan mengeksplorasi pergeseran paradigma ini secara mendalam menggunakan rumus dan diagram konseptual.
 
 ---
 

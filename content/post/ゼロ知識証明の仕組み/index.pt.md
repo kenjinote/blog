@@ -14,7 +14,7 @@ description: 'Uma explicação detalhada desde os fundamentos matemáticos das P
 
 Na sociedade digital moderna, a privacidade de dados e a escalabilidade tornaram-se dois dos desafios mais importantes. Com o aumento do risco de vazamento de informações pessoais e uso não autorizado, há uma forte demanda por tecnologias que permitam "provar que você possui determinada informação sem revelá-la à outra parte". Isso é alcançado pela **Prova de Conhecimento Zero (Zero-Knowledge Proof: ZKP)**.
 
-A Prova de Conhecimento Zero é um conceito de teoria criptográfica proposto pela primeira vez na década de 1980 por Shafi Goldwasser, Silvio Micali e Charles Rackoff, mas que permaneceu restrito à pesquisa teórica por um longo tempo. No entanto, com a ascensão da tecnologia blockchain e da Web3, a situação mudou drasticamente. A ZKP ganhou destaque repentino como a "varinha mágica" para resolver simultaneamente o problema de escalabilidade (limites de capacidade de processamento) e o problema de privacidade (todas as transações sendo públicas) enfrentados por blockchains públicas como o Ethereum.
+A Prova de Conhecimento Zero é um conceito de teoria criptográfica proposto pela primeira vez na década de 1980 por Shafi Goldwasser, Silvio Micali e Charles Rackoff, mas que permaneceu restrito à pesquisa teórica por um longo tempo. No entanto, com a ascensão da tecnologia [blockchain](/pt/p/blockchain-technology-smart-contract-distributed-ledger/) e da Web3, a situação mudou drasticamente. A ZKP ganhou destaque repentino como a "varinha mágica" para resolver simultaneamente o problema de escalabilidade (limites de capacidade de processamento) e o problema de privacidade (todas as transações sendo públicas) enfrentados por blockchains públicas como o Ethereum.
 
 Neste artigo, exploraremos detalhadamente e tecnicamente desde os conceitos fundamentais das Provas de Conhecimento Zero, os profundos mecanismos matemáticos e criptográficos dos atualmente populares **zk-SNARKs** e **zk-STARKs**, até os exemplos mais recentes de aplicações em Web3 e segurança, como ZK-Rollups e Identidade Descentralizada (DID).
 
@@ -60,7 +60,7 @@ sequenceDiagram
     Note over Prover, Verifier: "※Para aumentar a certeza, isso é repetido dezenas de vezes"
 ```
 
-Este método é poderoso, mas o verificador deve estar online, o que o torna inconveniente para aplicação em sistemas distribuídos assíncronos como blockchain. Em uma blockchain, qualquer pessoa deve ser capaz de verificar provas passadas a qualquer momento.
+Este método é poderoso, mas o verificador deve estar online, o que o torna inconveniente para aplicação em [sistemas distribuídos](/pt/p/cap-theorem-distributed-systems-tradeoff/) assíncronos como [blockchain](/pt/p/blockchain-technology-smart-contract-distributed-ledger/). Em uma [blockchain](/pt/p/blockchain-technology-smart-contract-distributed-ledger/), qualquer pessoa deve ser capaz de verificar provas passadas a qualquer momento.
 
 #### Transformação de Fiat-Shamir (Fiat-Shamir Heuristic) e Não Interatividade
 
@@ -192,9 +192,9 @@ Projetos de Prova de Humanidade (Proof of Personhood) como o Worldcoin também n
 
 ### 3. Contratos Inteligentes Confidenciais e Uso Corporativo
 
-A natureza de "todos os dados serem públicos" nas blockchains públicas sempre foi uma barreira importante para as empresas lidarem com transações confidenciais ou informações da cadeia de suprimentos na blockchain.
+A natureza de "todos os dados serem públicos" nas blockchains públicas sempre foi uma barreira importante para as empresas lidarem com transações confidenciais ou informações da cadeia de suprimentos na [blockchain](/pt/p/blockchain-technology-smart-contract-distributed-ledger/).
 
-Utilizando a tecnologia ZKP (por exemplo, redes focadas em privacidade como Aleo e Aztec), é possível registrar na blockchain pública apenas a validade da atualização do estado, mantendo os valores de entrada e saída das transações e até mesmo a própria lógica do contrato inteligente executado criptografados. Isto possibilita prevenir o front-running (MEV) em DeFi (Finanças Descentralizadas) e construir redes de consórcio confidenciais entre empresas, enquanto se desfruta da alta segurança da blockchain pública.
+Utilizando a tecnologia ZKP (por exemplo, redes focadas em privacidade como Aleo e Aztec), é possível registrar na [blockchain](/pt/p/blockchain-technology-smart-contract-distributed-ledger/) pública apenas a validade da atualização do estado, mantendo os valores de entrada e saída das transações e até mesmo a própria lógica do contrato inteligente executado criptografados. Isto possibilita prevenir o front-running (MEV) em DeFi (Finanças Descentralizadas) e construir redes de consórcio confidenciais entre empresas, enquanto se desfruta da alta segurança da [blockchain](/pt/p/blockchain-technology-smart-contract-distributed-ledger/) pública.
 
 ---
 
@@ -203,13 +203,13 @@ Utilizando a tecnologia ZKP (por exemplo, redes focadas em privacidade como Aleo
 A ZKP é inegavelmente uma tecnologia fundamental da próxima geração, mas ainda restam alguns desafios.
 
 1. **Custo Computacional da Geração de Provas e Aceleração de Hardware**
-   A geração da ZKP requer enormes cálculos de polinômios, FFT (Transformada Rápida de Fourier) e MSM (Multiplicação Multi-Escalar). Atualmente, a pesquisa em hardware especializado (FPGA e ASIC) para acelerar essa geração de provas, conhecida como **Mineração ZKP** (Prover Network), está avançando rapidamente.
+   A geração da ZKP requer enormes cálculos de polinômios, [FFT](/pt/p/fast-fourier-transform-algorithm/) ([Transformada Rápida de Fourier](/pt/p/fast-fourier-transform-algorithm/)) e MSM (Multiplicação Multi-Escalar). Atualmente, a pesquisa em hardware especializado (FPGA e ASIC) para acelerar essa geração de provas, conhecida como **Mineração ZKP** (Prover Network), está avançando rapidamente.
 2. **Padronização e Melhoria da Experiência do Desenvolvedor (DX)**
    Múltiplas linguagens dedicadas para escrever circuitos ZKP, como Circom, Cairo, Noir, Leo, estão proliferando. O padrão que as unifica e a maturidade de compiladores que gerem automaticamente circuitos ZKP a partir de [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) ou C++ existentes serão a chave para a adoção da ZKP por engenheiros de software comuns.
 
 ## Conclusão
 
-As Provas de Conhecimento Zero (ZKP) evoluíram de ser apenas uma "tecnologia para aumentar o anonimato das criptomoedas" para uma "tecnologia de propósito geral que redefine a confiança (trust) de toda a Internet". As pequenas provas calculadas nas profundezas da matemática e da teoria da criptografia expandem infinitamente a escalabilidade da blockchain e funcionam como um forte escudo para proteger nossa privacidade.
+As Provas de Conhecimento Zero (ZKP) evoluíram de ser apenas uma "tecnologia para aumentar o anonimato das criptomoedas" para uma "tecnologia de propósito geral que redefine a confiança (trust) de toda a Internet". As pequenas provas calculadas nas profundezas da matemática e da teoria da criptografia expandem infinitamente a escalabilidade da [blockchain](/pt/p/blockchain-technology-smart-contract-distributed-ledger/) e funcionam como um forte escudo para proteger nossa privacidade.
 
 Rumo à verdadeira adoção em massa da Web3 e à construção de uma Internet de próxima geração segura e privada, as Provas de Conhecimento Zero continuarão a funcionar como a peça mais importante. Não podemos tirar os olhos da futura evolução da tecnologia ZKP.
 

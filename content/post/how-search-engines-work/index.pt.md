@@ -246,7 +246,7 @@ Anúncios e resultados naturais também diferem. Publicidade e classificação o
 
 ## 15. Pesquisar rapidamente num índice enorme
 
-Uma máquina limita capacidade, desempenho e tolerância a falhas. Sistemas distribuídos dividem o índice, pesquisam suas partes em máquinas diferentes e combinam respostas. Essas partições costumam ser chamadas de shards.
+Uma máquina limita capacidade, desempenho e tolerância a falhas. [Sistemas distribuídos](/pt/p/cap-theorem-distributed-systems-tradeoff/) dividem o índice, pesquisam suas partes em máquinas diferentes e combinam respostas. Essas partições costumam ser chamadas de shards.
 
 Na divisão por documentos, cada fragmento recebe a consulta e devolve candidatos promissores. Um coordenador compara o conjunto. Estatísticas locais de frequência podem diferir, afetando a comparabilidade das notas. Estatísticas locais e globais influenciam a qualidade, além da velocidade. [Livro de referência: distribuição de índices][distributed]
 

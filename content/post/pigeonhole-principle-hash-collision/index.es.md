@@ -60,7 +60,7 @@ Consideremos el principio del palomar que vimos antes aplicándolo a las funcion
 * **Palomas**: El conjunto de los datos de entrada. Dado que las combinaciones de contenidos de archivos o cadenas de texto son infinitas, el número de elementos $|A|$ es, en efecto, "infinito".
 * **Nidos**: El conjunto de valores hash. Al tener una longitud fija, su número de elementos $|B|$ es "finito".
 
-Por ejemplo, la salida de SHA-256, usada en tecnologías como la blockchain de [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/), es de 256 bits. Por lo tanto, el número de posibles valores hash es de $2^{256}$ variantes (aprox. $1.15 \times 10^{77}$). Esta cifra es monumentalmente enorme, rozando el número total de átomos en el universo observable, pero sigue siendo un **número finito**.
+Por ejemplo, la salida de SHA-256, usada en tecnologías como la [blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/) de [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/), es de 256 bits. Por lo tanto, el número de posibles valores hash es de $2^{256}$ variantes (aprox. $1.15 \times 10^{77}$). Esta cifra es monumentalmente enorme, rozando el número total de átomos en el universo observable, pero sigue siendo un **número finito**.
 
 Por el contrario, el número de variantes posibles de textos o archivos de imagen como datos de entrada es **infinito**.
 Dado que se cumple la desigualdad "número total de datos de entrada" $>$ "número total de valores hash", por el principio del palomar, **necesariamente van a existir dos conjuntos diferentes de datos de entrada que resulten en exactamente el mismo valor de hash**. A este fenómeno se le conoce como **"Colisión Hash" (Hash Collision)**.
@@ -103,7 +103,7 @@ En el diagrama anterior, los "datos B" y los "datos C" de entrada se asignan, me
 
 ## 3. El Ataque de Cumpleaños (Birthday Attack) y la amenaza a las probabilidades de colisión
 
-Queda patente por el principio del palomar que la colisión de un hash es en teoría inevitable; sin embargo, emerge una duda más práctica: "Bueno, entonces ¿qué tan difícil es encontrar en verdad dicha colisión?". Aquí hace su aparición la **"Paradoja del Cumpleaños" (Birthday Paradox)** y el **"Ataque del Cumpleaños" (Birthday Attack)**, que abusa de sus fundamentos matemáticos.
+Queda patente por el principio del palomar que la colisión de un hash es en teoría inevitable; sin embargo, emerge una duda más práctica: "Bueno, entonces ¿qué tan difícil es encontrar en verdad dicha colisión?". Aquí hace su aparición la **"[Paradoja del Cumpleaños](/es/p/birthday-paradox/)" (Birthday Paradox)** y el **"Ataque del Cumpleaños" (Birthday Attack)**, que abusa de sus fundamentos matemáticos.
 
 ### ¿Qué es la paradoja del cumpleaños?
 

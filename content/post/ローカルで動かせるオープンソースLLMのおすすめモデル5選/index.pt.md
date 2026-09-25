@@ -17,7 +17,7 @@ Nos últimos anos, a evolução tecnológica dos [Large Language Models](https:/
 
 O que atende a essa demanda são os "LLMs locais (LLMs de código aberto)" que podem ser baixados e executados diretamente em seu próprio PC ou servidor interno. Até por volta de 2023, era difícil alcançar uma precisão prática localmente, mas com a evolução das arquiteturas de modelo e o desenvolvimento da tecnologia de quantização (Quantization), agora é possível rodar LLMs de altíssimo desempenho de forma suave até mesmo em GPUs voltadas para o consumidor (como NVIDIA RTX 3090 / 4090 e Apple Silicon do Mac).
 
-Neste artigo, selecionamos os "Top 5 modelos recomendados" que são avaliados como particularmente excelentes a partir de 2026, dentre os muitos LLMs de código aberto, e compararemos e explicaremos detalhadamente a partir de uma perspectiva extremamente técnica, abrangendo desde as características de suas arquiteturas, número de parâmetros, requisitos de memória com quantização GGUF e casos de uso específicos.
+Neste artigo, selecionamos os "Top 5 modelos recomendados" que são avaliados como particularmente excelentes a partir de 2026, dentre os muitos LLMs de código aberto, e compararemos e explicaremos detalhadamente a partir de uma perspectiva extremamente técnica, abrangendo desde as características de suas arquiteturas, número de parâmetros, requisitos de memória com quantização [GGUF](/pt/p/llama-cpp-quantization-gguf/) e casos de uso específicos.
 
 ---
 
@@ -60,7 +60,7 @@ Considerando adicionalmente o cache KV e afins, quase 18 GB a 20 GB de VRAM ser�
 
 É aí que entra a "Quantização (Quantization)". Ao reduzir a precisão dos parâmetros de FP16 para 8 bits, 4 bits, ou em casos extremos para 2 bits, é uma tecnologia que minimiza a degradação de desempenho do modelo enquanto reduz drasticamente a quantidade de memória necessária.
 
-O formato mais utilizado atualmente é o **GGUF (GPT-Generated Unified Format)** concebido por Georgi Gerganov (desenvolvedor do llama.cpp). O GGUF é um formato binário para realizar inferências eficientes tanto na CPU quanto na GPU e é caracterizado por ser altamente compatível com a arquitetura de Memória Unificada (Unified Memory) do Mac (Apple Silicon).
+O formato mais utilizado atualmente é o **[GGUF](/pt/p/llama-cpp-quantization-gguf/) (GPT-Generated Unified Format)** concebido por Georgi Gerganov (desenvolvedor do llama.cpp). O [GGUF](/pt/p/llama-cpp-quantization-gguf/) é um formato binário para realizar inferências eficientes tanto na CPU quanto na GPU e é caracterizado por ser altamente compatível com a arquitetura de Memória Unificada (Unified Memory) do Mac (Apple Silicon).
 
 O cálculo de memória ao quantizar um modelo de 8B em 4 bits (por exemplo: Q4_K_M) é o seguinte.
 
@@ -105,7 +105,7 @@ graph TD
 - **Llama 3 8B**: 8 bilhões de parâmetros. Roda em cerca de 5 GB de memória com quantização de 4 bits. Tem respostas extremamente rápidas, tornando-se ideal como assistente pessoal no PC e o núcleo de um sistema RAG (Retrieval-Augmented Generation) local.
 - **Llama 3 70B**: 70 bilhões de parâmetros. Requer cerca de 40 GB de VRAM (ou Memória Unificada do Apple Silicon) com quantização de 4 bits. Tem um desempenho que se aproxima do GPT-4 na nuvem, demonstrando poder em raciocínio avançado, codificação complexa, análise de dados e muito mais.
 
-O Llama 3 possui o maior suporte da comunidade, e sua força também reside no fato de que todos os formatos de quantização como GGUF, AWQ e EXL2 estão prontamente disponíveis para uso.
+O Llama 3 possui o maior suporte da comunidade, e sua força também reside no fato de que todos os formatos de quantização como [GGUF](/pt/p/llama-cpp-quantization-gguf/), AWQ e EXL2 estão prontamente disponíveis para uso.
 
 ---
 

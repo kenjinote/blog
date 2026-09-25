@@ -15,7 +15,7 @@ tags:
 
 # はじめに
 
-整数論の分野において、 **[ペル方程式](https://kenji.blog/p/pell-equation/)** （Pell's equation）は最も美しく、かつ深い理論的背景を持つディオファントス方程式の一つとして知られています。本記事では、この方程式の基本的な定義と性質から始まり、連分数（Continued fractions）を用いたエレガントで効率的な解法、さらには無限に存在する解の生成メカニズムまでを非常に詳細に解説します。数学を愛するすべての方に向けて、数式の導出からアルゴリズムの可視化、そして[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)を用いた実装までを網羅しました。
+整数論の分野において、 **[ペル方程式](https://kenji.blog/p/pell-equation/)** （Pell's equation）は最も美しく、かつ深い理論的背景を持つ[ディオファントス](/p/diophantus/)方程式の一つとして知られています。本記事では、この方程式の基本的な定義と性質から始まり、連分数（Continued fractions）を用いたエレガントで効率的な解法、さらには無限に存在する解の生成メカニズムまでを非常に詳細に解説します。数学を愛するすべての方に向けて、数式の導出からアルゴリズムの可視化、そして[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)を用いた実装までを網羅しました。
 
 ## 1. [ペル方程式](https://kenji.blog/p/pell-equation/)とは何か？
 

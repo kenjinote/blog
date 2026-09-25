@@ -20,7 +20,7 @@ After the war, he worked as a test pilot on various dangerous flight missions, i
 
 ## Achievements at NASA: From Gemini to Apollo
 
-Selected as a second-group astronaut by NASA in 1962, Armstrong served as the command pilot for Gemini 8 in 1966. In this mission, he succeeded in humanity's first orbital docking, but immediately after, the spacecraft fell into a violent spin, facing a desperate crisis. At that time, with astonishing calmness, he controlled the thrusters and safely returned to Earth. This mental strength to avoid panic was highly evaluated, becoming the decisive factor in choosing him as the commander of Apollo 11, the "first man to walk on the moon."
+Selected as a second-group astronaut by NASA in 1962, Armstrong served as the command pilot for [Gemini](/en/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEworkaround/) 8 in 1966. In this mission, he succeeded in humanity's first orbital docking, but immediately after, the spacecraft fell into a violent spin, facing a desperate crisis. At that time, with astonishing calmness, he controlled the thrusters and safely returned to Earth. This mental strength to avoid panic was highly evaluated, becoming the decisive factor in choosing him as the commander of Apollo 11, the "first man to walk on the moon."
 
 ## Apollo 11: Landing on the Sea of Tranquility
 

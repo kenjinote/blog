@@ -56,7 +56,7 @@ graph TD
 
 ## 2. Contexte mathématique de la cryptographie à clé publique
 
-La sécurité de la cryptographie à clé publique repose sur les **fonctions à sens unique** (One-way function), où « un certain calcul est facile, mais le calcul inverse est extrêmement difficile », et les **fonctions à sens unique avec trappe** , où le calcul inverse devient possible si l'on connaît des informations spécifiques (trappe : Trapdoor). Nous allons explorer ici en détail le chiffrement RSA et la cryptographie sur les courbes elliptiques (ECC), qui en sont représentatifs.
+La sécurité de la cryptographie à clé publique repose sur les **fonctions à sens unique** (One-way function), où « un certain calcul est facile, mais le calcul inverse est extrêmement difficile », et les **fonctions à sens unique avec trappe** , où le calcul inverse devient possible si l'on connaît des informations spécifiques (trappe : Trapdoor). Nous allons explorer ici en détail le chiffrement RSA et la cryptographie sur les courbes elliptiques ([ECC](/fr/p/elliptic-curve-cryptography-math-cpp/)), qui en sont représentatifs.
 
 ### 2.1. Le fonctionnement du chiffrement RSA
 
@@ -73,7 +73,7 @@ La génération de clés RSA s'effectue selon les étapes suivantes.
 4. Choisir un entier $e$ tel que $1 < e < \phi(N)$ et qui soit premier avec $\phi(N)$. (Généralement, $e = 65537$ est souvent utilisé).
 5. Calculer $d$ satisfaisant la congruence suivante.
    $ e \times d \equiv 1 \pmod{\phi(N)} $
-   Cela peut être calculé à l'aide de l'algorithme d'Euclide étendu.
+   Cela peut être calculé à l'aide de [l'algorithme d'Euclide](/fr/p/euclidean-algorithm/) étendu.
 
 Ici, $(N, e)$ devient la **clé publique** , et $d$ devient la **clé privée** ($p$ et $q$ sont détruits ou gardés strictement secrets).
 
@@ -96,7 +96,7 @@ Bien que le chiffrement RSA soit sécurisé, il nécessite des longueurs de clé
 
 #### 2.2.1. Courbes elliptiques et problème du logarithme discret
 
-La sécurité de l'ECC repose sur la difficulté du **problème du logarithme discret sur les courbes elliptiques** (ECDLP).
+La sécurité de l'[ECC](/fr/p/elliptic-curve-cryptography-math-cpp/) repose sur la difficulté du **problème du logarithme discret sur les courbes elliptiques** (ECDLP).
 Une courbe elliptique sur un corps fini $\mathbb{F}_p$ utilisé en cryptographie est généralement exprimée sous la forme standard de Weierstrass.
 
 $ y^2 \equiv x^3 + ax + b \pmod{p} $
@@ -109,7 +109,7 @@ Soit $P$ le point obtenu en ajoutant un point de base de référence $G$ un tota
 $ P = k \times G $
 
 Ici, le problème de trouver la valeur scalaire $k$ lorsque $G$ et $P$ sont donnés est appelé le **problème du logarithme discret sur les courbes elliptiques** . Si $k$ est suffisamment grand, il est extrêmement difficile de le calculer par rétro-ingénierie.
-Dans l'ECC, $k$ est la **clé privée** , et $P$ est la **clé publique** .
+Dans l'[ECC](/fr/p/elliptic-curve-cryptography-math-cpp/), $k$ est la **clé privée** , et $P$ est la **clé publique** .
 
 ### 2.3. Exemple d'implémentation de la cryptographie à clé publique en Python
 
@@ -338,7 +338,7 @@ Même lors de l'accès à un site « https:// » avec un navigateur, ce mécanis
 La société numérique moderne repose sur la combinaison exquise des **technologies de cryptographie** expliquées cette fois-ci.
 
 - Chiffrement rapide des données grâce à la **cryptographie à clé symétrique**
-- Échange de clés sécurisé et réalisation de l'asymétrie grâce à la **cryptographie à clé publique** (RSA, ECC)
+- Échange de clés sécurisé et réalisation de l'asymétrie grâce à la **cryptographie à clé publique** (RSA, [ECC](/fr/p/elliptic-curve-cryptography-math-cpp/))
 - Extraction de l'empreinte des données grâce aux **fonctions de hachage** (SHA-2/3)
 - Preuve d'intégrité et authentification grâce aux **signatures numériques**
 - Garantie de l'authenticité des clés publiques grâce à la **PKI et aux autorités de certification**

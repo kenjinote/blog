@@ -95,7 +95,7 @@ $$
 
 ### 2.4 行列式と連立一次方程式
 
-[ライプニッツ](https://kenji.blog/p/leibniz/)は、連立一次方程式の解法において、日本の[関孝和](https://kenji.blog/p/seki-takakazu/)とほぼ同時期に独立して「行列式（Determinant）」の概念に到達していました。彼は係数を配列として扱い、それらを系統的に消去する手法を考案し、後の線形代数学の発展に向けた重要な一歩を踏み出しました。
+[ライプニッツ](https://kenji.blog/p/leibniz/)は、連立一次方程式の解法において、日本の[関孝和](https://kenji.blog/p/seki-takakazu/)とほぼ同時期に独立して「[行列式](/p/geometric-meaning-of-determinant/)（Determinant）」の概念に到達していました。彼は係数を配列として扱い、それらを系統的に消去する手法を考案し、後の線形代数学の発展に向けた重要な一歩を踏み出しました。
 
 ### 2.5 歯車式計算機の発明
 

@@ -13,7 +13,7 @@ tags: ["algorithms", "sorting", "quick-sort", "merge-sort", "bubble-sort"]
 
 En informatique, le « tri », qui consiste à réorganiser des données dans un ordre spécifique (croissant ou décroissant), est l'une des opérations les plus fondamentales et importantes. Les algorithmes de tri sont utilisés comme étape préliminaire dans tout traitement de données, comme l'accélération des recherches, le regroupement de données et la détection de doublons.
 
-Dans cet article, nous expliquons en détail les algorithmes de tri représentatifs, allant des algorithmes simples faciles à comprendre pour les débutants aux algorithmes rapides utilisés dans la pratique. Nous comprendrons visuellement le fonctionnement de chaque algorithme avec des schémas **Mermaid**, vérifierons l'implémentation réelle avec du code Python et comparerons les performances telles que la complexité temporelle. De plus, afin de saisir pleinement le comportement de l'algorithme, nous incluons une trace d'exécution complète utilisant un tableau de 50 éléments. Cela vous permettra de comprendre le comportement détaillé de l'algorithme comme si vous l'aviez entre les mains.
+Dans cet article, nous expliquons en détail les algorithmes de tri représentatifs, allant des algorithmes simples faciles à comprendre [pour les débutants](/fr/p/articles-en-cuir%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/) aux algorithmes rapides utilisés dans la pratique. Nous comprendrons visuellement le fonctionnement de chaque algorithme avec des schémas **Mermaid**, vérifierons l'implémentation réelle avec du code Python et comparerons les performances telles que la complexité temporelle. De plus, afin de saisir pleinement le comportement de l'algorithme, nous incluons une trace d'exécution complète utilisant un tableau de 50 éléments. Cela vous permettra de comprendre le comportement détaillé de l'algorithme comme si vous l'aviez entre les mains.
 
 ## Critères d'évaluation des algorithmes
 
@@ -776,7 +776,7 @@ Afin d'éviter cette situation, le tri rapide randomisé (qui sélectionne le pi
 
 ## 5. Tri fusion (Merge Sort)
 
-Inventé par John von Neumann, c'est le représentant typique du tri externe stable. Basé sur la méthode diviser pour régner, il divise finement le tableau, puis les combine (fusionne) tout en maintenant l'ordre trié.
+Inventé par [John von Neumann](/fr/p/von-neumann/), c'est le représentant typique du tri externe stable. Basé sur la méthode diviser pour régner, il divise finement le tableau, puis les combine (fusionne) tout en maintenant l'ordre trié.
 
 ### Complexité et caractéristiques
 

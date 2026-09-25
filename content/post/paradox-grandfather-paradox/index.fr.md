@@ -34,7 +34,7 @@ Pour décrire physiquement le voyage vers le passé, une structure de l'espace-t
 
 Quelques solutions célèbres où existent des CTC :
 
-1. **Univers de Gödel** : En 1949, le mathématicien Kurt Gödel a montré que si l'on suppose que l'univers entier est en rotation, les équations de la relativité générale permettent l'existence de CTC.
+1. **Univers de Gödel** : En 1949, le mathématicien [Kurt Gödel](/fr/p/godel/) a montré que si l'on suppose que l'univers entier est en rotation, les équations de la relativité générale permettent l'existence de CTC.
 2. **Cylindre de Tipler** : En 1974, Frank Tipler a montré qu'on pouvait remonter le temps en orbitant sur une trajectoire spécifique autour d'un cylindre infiniment long, ultra-dense et en rotation rapide.
 3. **Trous de ver** : Kip Thorne et d'autres ont montré qu'un tunnel reliant deux points distants dans l'espace-temps, un « trou de ver », pourrait fonctionner comme une machine à voyager dans le temps s'il était stabilisé par de l'énergie négative (matière exotique) et qu'une de ses extrémités était déplacée à une vitesse proche de la lumière puis ramenée.
 

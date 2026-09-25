@@ -54,7 +54,7 @@ flowchart LR
 
 Dalam beberapa tahun terakhir, "Model Difusi" telah melampaui GAN dalam hal kualitas dan stabilitas gambar, dan kini menjadi teknologi dasar bagi Midjourney maupun Stable Diffusion. Model Difusi terdiri dari "proses difusi maju" (forward diffusion process), yang secara bertahap menambahkan noise ke data, dan "proses difusi mundur" (reverse diffusion process), yang memulihkan data asli dari noise tersebut.
 
-Dalam **Proses difusi maju (Forward Process)**, gaussian noise ditambahkan ke gambar bersih $x_0$ pada setiap langkah waktu $t$. Proses ini direpresentasikan sebagai rantai Markov dengan persamaan berikut:
+Dalam **Proses difusi maju (Forward Process)**, gaussian noise ditambahkan ke gambar bersih $x_0$ pada setiap langkah waktu $t$. Proses ini direpresentasikan sebagai [rantai Markov](/id/p/markov-chain/) dengan persamaan berikut:
 
 $$
 q(x_t | x_{t-1}) = \mathcal{N}(x_t; \sqrt{1 - \beta_t} x_{t-1}, \beta_t \mathbf{I})

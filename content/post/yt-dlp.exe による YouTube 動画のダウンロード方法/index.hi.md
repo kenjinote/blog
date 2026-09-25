@@ -16,13 +16,13 @@ description: 'कमांड लाइन टूल ''yt-dlp'' का उपय
 
 ## डाउनलोड और इंस्टॉलेशन
 
-1. [yt-dlp रिलीज़ पेज](https://github.com/yt-dlp/yt-dlp/releases) से नवीनतम yt-dlp.exe डाउनलोड करें।
-2. yt-dlp.exe को किसी भी फ़ोल्डर में रखें।
-3. yt-dlp.exe के फ़ोल्डर पथ को पर्यावरण चर Path में जोड़ें।
+1. [yt-dlp रिलीज़ पेज](https://github.com/yt-dlp/yt-dlp/releases) से नवीनतम yt-dlp[.exe](/hi/p/%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A5%8D%E0%A4%AA%E0%A4%BE%E0%A4%A6%E0%A4%A8-%E0%A4%AF%E0%A5%8B%E0%A4%97%E0%A5%8D%E0%A4%AF-%E0%A4%AB%E0%A4%BC%E0%A4%BE%E0%A4%87%E0%A4%B2exe%E3%81%AE%E4%B8%AD%E8%BA%AB%E3%82%92%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%8D%E0%A4%B2%E0%A5%87%E0%A4%B7%E0%A4%A3%E3%81%99%E3%82%8B%E0%A4%9F%E0%A5%82%E0%A4%B2/) डाउनलोड करें।
+2. yt-dlp[.exe](/hi/p/%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A5%8D%E0%A4%AA%E0%A4%BE%E0%A4%A6%E0%A4%A8-%E0%A4%AF%E0%A5%8B%E0%A4%97%E0%A5%8D%E0%A4%AF-%E0%A4%AB%E0%A4%BC%E0%A4%BE%E0%A4%87%E0%A4%B2exe%E3%81%AE%E4%B8%AD%E8%BA%AB%E3%82%92%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%8D%E0%A4%B2%E0%A5%87%E0%A4%B7%E0%A4%A3%E3%81%99%E3%82%8B%E0%A4%9F%E0%A5%82%E0%A4%B2/) को किसी भी फ़ोल्डर में रखें।
+3. yt-dlp[.exe](/hi/p/%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A5%8D%E0%A4%AA%E0%A4%BE%E0%A4%A6%E0%A4%A8-%E0%A4%AF%E0%A5%8B%E0%A4%97%E0%A5%8D%E0%A4%AF-%E0%A4%AB%E0%A4%BC%E0%A4%BE%E0%A4%87%E0%A4%B2exe%E3%81%AE%E4%B8%AD%E8%BA%AB%E3%82%92%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%8D%E0%A4%B2%E0%A5%87%E0%A4%B7%E0%A4%A3%E3%81%99%E3%82%8B%E0%A4%9F%E0%A5%82%E0%A4%B2/) के फ़ोल्डर पथ को पर्यावरण चर Path में जोड़ें।
 
 ## उपयोग कैसे करें
 
-कमांड प्रॉम्प्ट में yt-dlp.exe चलाएँ और YouTube वीडियो का URL निर्दिष्ट करें।
+कमांड प्रॉम्प्ट में yt-dlp[.exe](/hi/p/%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A5%8D%E0%A4%AA%E0%A4%BE%E0%A4%A6%E0%A4%A8-%E0%A4%AF%E0%A5%8B%E0%A4%97%E0%A5%8D%E0%A4%AF-%E0%A4%AB%E0%A4%BC%E0%A4%BE%E0%A4%87%E0%A4%B2exe%E3%81%AE%E4%B8%AD%E8%BA%AB%E3%82%92%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%8D%E0%A4%B2%E0%A5%87%E0%A4%B7%E0%A4%A3%E3%81%99%E3%82%8B%E0%A4%9F%E0%A5%82%E0%A4%B2/) चलाएँ और YouTube वीडियो का URL निर्दिष्ट करें।
 
 ```
 yt-dlp.exe "https://www.youtube.com/watch?v=VIDEO_ID"

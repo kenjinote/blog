@@ -10,7 +10,7 @@ image: "eyecatch.jpg"
 
 # 1. Pendahuluan: Tantangan yang Belum Pernah Terjadi Sebelumnya untuk Mendarat di Bulan
 
-Pada tanggal 20 Juli 1969, Apollo 11 mendarat di Sea of Tranquility, dan Komandan Neil Armstrong menjadi manusia pertama yang menginjakkan kaki di bulan. Pencapaian bersejarah ini tidak hanya merupakan hasil dari kemajuan perangkat keras seperti rekayasa roket, ilmu material, dan mekanika langit, tetapi juga merupakan kemenangan "perangkat lunak" yang sangat inovatif pada saat itu.
+Pada tanggal 20 Juli 1969, Apollo 11 mendarat di Sea of Tranquility, dan Komandan [Neil Armstrong](/id/p/biography-neil-armstrong/) menjadi manusia pertama yang menginjakkan kaki di bulan. Pencapaian bersejarah ini tidak hanya merupakan hasil dari kemajuan perangkat keras seperti rekayasa roket, ilmu material, dan mekanika langit, tetapi juga merupakan kemenangan "perangkat lunak" yang sangat inovatif pada saat itu.
 
 Di pusat pengembangan perangkat lunak ini adalah **Margaret Hamilton**, yang memimpin pengembangan perangkat lunak Apollo Guidance Computer (AGC) di Instrument Laboratory MIT (Massachusetts Institute of Technology). Pada masa itu, komputer adalah sekumpulan tabung vakum yang memenuhi ruangan besar, dan era miniaturisasi menggunakan transistor baru saja dimulai. Kapasitas memori sangat minim, dan kecepatan perhitungannya jauh lebih lambat dibandingkan dengan ponsel pintar modern.
 

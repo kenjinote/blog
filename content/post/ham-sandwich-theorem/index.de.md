@@ -146,7 +146,7 @@ flowchart LR
 
 Der "Schinken-Sandwich-Satz" wird oft als lustiges Thema in der reinen Mathematik erzählt, aber er hat tatsächlich praktische Anwendungen in Bereichen wie der **Algorithmischen Geometrie (Computational Geometry)** und der **Informatik**.
 
-Wenn beispielsweise eine riesige Menge von Datenpunkten (Punktwolken) im Raum existiert, wird manchmal eine algorithmische Version des Schinken-Sandwich-Satzes verwendet, um diese Daten effizient zu partitionieren und zu verarbeiten. Durch das gleichzeitige Halbieren von Daten, die in mehrere Klassen eingeteilt sind, hilft dies beim Aufbau effizienter Datenverarbeitungs- und Suchalgorithmen unter Verwendung des Divide-and-Conquer-Ansatzes.
+Wenn beispielsweise eine riesige Menge von Datenpunkten (Punktwolken) im Raum existiert, wird manchmal eine algorithmische Version des Schinken-Sandwich-Satzes verwendet, um diese Daten effizient zu partitionieren und zu verarbeiten. Durch das gleichzeitige Halbieren von Daten, die in mehrere Klassen eingeteilt sind, hilft dies beim Aufbau effizienter Datenverarbeitungs- und [Suchalgorithmen](/de/p/search-algorithms-linear-binary-hash-table-principles/) unter Verwendung des Divide-and-Conquer-Ansatzes.
 
 ## 7. Fazit
 

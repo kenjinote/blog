@@ -34,7 +34,7 @@ Um die Zeitreise in die Vergangenheit physikalisch zu beschreiben, ist eine Raum
 
 Zu den bekannten Lösungen, bei denen CTCs existieren, gehören:
 
-1. **Gödel-Metrik**: Im Jahr 1949 zeigte der Mathematiker Kurt Gödel, dass die Gleichungen der allgemeinen Relativitätstheorie CTCs zulassen, wenn wir annehmen, dass das gesamte Universum rotiert.
+1. **Gödel-Metrik**: Im Jahr 1949 zeigte der Mathematiker [Kurt Gödel](/de/p/godel/), dass die Gleichungen der allgemeinen Relativitätstheorie CTCs zulassen, wenn wir annehmen, dass das gesamte Universum rotiert.
 2. **Tipler-Zylinder**: Im Jahr 1974 zeigte Frank Tipler, dass man in die Vergangenheit reisen könnte, indem man in einer bestimmten Bahn um einen unendlich langen, ultradichten, schnell rotierenden Zylinder kreist.
 3. **Wurmlöcher**: Kip Thorne und andere zeigten, dass ein Tunnel, der zwei entfernte Punkte in der Raumzeit verbindet (ein "Wurmloch"), als Zeitmaschine funktionieren könnte, wenn er durch negative Energie (exotische Materie) stabilisiert wird.
 

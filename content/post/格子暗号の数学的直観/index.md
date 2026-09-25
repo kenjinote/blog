@@ -11,7 +11,7 @@ tags: ["Lattice", "PQC", "LWE", "Cryptography", "Math"]
 
 # 1. 導入：ポスト量子暗号（PQC）の夜明けと格子暗号の台頭
 
-現代社会のデジタルインフラを支えているのは、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号や楕円曲線暗号（ECC）をはじめとする[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号技術です。これらの暗号方式は、「素因数分解問題」や「離散対数問題」といった、従来の古典コンピュータでは効率的に解くことができない（指数関数的な時間を要する）と信じられている数学的な困難性に安全性の根拠を置いています。
+現代社会のデジタルインフラを支えているのは、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号や[楕円曲線暗号](/p/elliptic-curve-cryptography-math-cpp/)（[ECC](/p/elliptic-curve-cryptography-math-cpp/)）をはじめとする[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号技術です。これらの暗号方式は、「素因数分解問題」や「離散対数問題」といった、従来の古典コンピュータでは効率的に解くことができない（指数関数的な時間を要する）と信じられている数学的な困難性に安全性の根拠を置いています。
 
 しかし、1994年にピーター・ショア（Peter Shor）によって発表された「Shorのアルゴリズム」は、暗号界に激震を走らせました。このアルゴリズムは、大規模な[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)が実現した暁には、素因数分解問題や離散対数問題を多項式時間で解いてしまうことを数学的に証明したのです。これはつまり、現在広く利用されている[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号が、将来的に完全に解読可能になってしまうということを意味しています。
 
@@ -46,7 +46,7 @@ $$
 
 例えば、先ほどの $\mathbf{b}_1 = (1, 0)^T, \mathbf{b}_2 = (0, 1)^T$ という基底が生成する $\mathbb{Z}^2$ 格子は、$\mathbf{b}'_1 = (1, 1)^T, \mathbf{b}'_2 = (2, 3)^T$ という基底を使っても全く同じ格子 $\mathbb{Z}^2$ を生成します。
 
-ある基底 $B$ と別の基底 $B'$ が同じ格子を生成するための必要十分条件は、ある整数成分の行列 $U \in \mathbb{Z}^{n \times n}$ であって、行列式が $\det(U) = \pm 1$ となるものが存在し、
+ある基底 $B$ と別の基底 $B'$ が同じ格子を生成するための必要十分条件は、ある整数成分の行列 $U \in \mathbb{Z}^{n \times n}$ であって、[行列式](/p/geometric-meaning-of-determinant/)が $\det(U) = \pm 1$ となるものが存在し、
 $$ B' = B U $$
 と表せることです。このような行列 $U$ を「ユニモジュラ行列（Unimodular matrix）」と呼びます。
 
@@ -298,7 +298,7 @@ Standard LWEの公開鍵が行列 $A$ であったのに対し、Ring-LWEでは�
 方程式は以下のようになります。
 $$ b(x) = a(x) \cdot s(x) + e(x) \pmod q $$
 
-これは多項式の掛け算なので、高速フーリエ変換（FFT）に類似した「数論変換（Number Theoretic Transform: NTT）」を用いることで、計算量を $\mathcal{O}(n \log n)$ にまで劇的に削減できます。さらに、公開鍵のサイズも行列から単一の多項式へと小さくなるため、データサイズが $\mathcal{O}(n)$ に削減されます。これは通信帯域において圧倒的な優位性をもたらします。
+これは多項式の掛け算なので、[高速フーリエ変換（FFT）](/p/fast-fourier-transform-algorithm/)に類似した「数論変換（Number Theoretic Transform: NTT）」を用いることで、計算量を $\mathcal{O}(n \log n)$ にまで劇的に削減できます。さらに、公開鍵のサイズも行列から単一の多項式へと小さくなるため、データサイズが $\mathcal{O}(n)$ に削減されます。これは通信帯域において圧倒的な優位性をもたらします。
 
 数学的に見ると、Ring-LWEは一般的な格子ではなく、「イデアル格子（Ideal Lattice）」と呼ばれる特殊な対称性を持った格子上の問題に帰着します。
 
@@ -312,9 +312,9 @@ Module-LWEでは、多項式を要素とする小さな行列とベクトルを�
 
 最後に、「なぜ格子暗号は量子コンピュータを用いても解読されないと考えられているのか？」という核心部分に触れておきます。
 
-量子コンピュータが[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号や楕円曲線暗号を破るShorのアルゴリズムは、本質的には「隠れ部分群問題（Hidden Subgroup Problem: HSP）」を解くアルゴリズムです。RSAやECCの背景にある数学的構造（有限[アーベル](https://kenji.blog/p/abel/)群）は周期性を持っており、量子フーリエ変換（QFT）という量子アルゴリズム特Actions:特有の操作を用いることで、この周期（隠れた部分群）を一気に抽出することができます。
+量子コンピュータが[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号や[楕円曲線暗号](/p/elliptic-curve-cryptography-math-cpp/)を破るShorのアルゴリズムは、本質的には「隠れ部分群問題（Hidden Subgroup Problem: HSP）」を解くアルゴリズムです。RSAや[ECC](/p/elliptic-curve-cryptography-math-cpp/)の背景にある数学的構造（有限[アーベル](https://kenji.blog/p/abel/)群）は周期性を持っており、量子フーリエ変換（QFT）という量子アルゴリズム特Actions:特有の操作を用いることで、この周期（隠れた部分群）を一気に抽出することができます。
 
-しかし、格子問題は根本的に異なります。格子にも周期性はありますが、SVPやCVPで求められているのは「最短の距離」や「ノイズの除去」という幾何学的な非線形な性質です。Shorのアルゴリズムのような「[アーベル](https://kenji.blog/p/abel/)群上の量子フーリエ変換」をそのまま適用しても、格子問題の解答となる有用な情報を効率的に抽出することができません。現在までに、SVPやLWEに対して多項式時間で解くことができる量子アルゴリズムは発見されておらず、[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)の並列計算能力をもってしても総当たりに近い探索（グローバーのアルゴリズムによる平方根の高速化程度）しか有効な手段がないと広く信じられています。
+しかし、格子問題は根本的に異なります。格子にも周期性はありますが、SVPやCVPで求められているのは「最短の距離」や「ノイズの除去」という幾何学的な非線形な性質です。Shorのアルゴリズムのような「[アーベル](https://kenji.blog/p/abel/)群上の量子フーリエ変換」をそのまま適用しても、格子問題の解答となる有用な情報を効率的に抽出することができません。現在までに、SVPやLWEに対して多項式時間で解くことができる量子アルゴリズムは発見されておらず、[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)の並列計算能力をもってしても総当たりに近い探索（[グローバーのアルゴリズム](/p/grovers-algorithm-quantum-search/)による平方根の高速化程度）しか有効な手段がないと広く信じられています。
 
 # 9. まとめ
 

@@ -123,7 +123,7 @@ Die wichtigste Monade, die Haskell zu einer praktischen Sprache macht. Sie schli
 
 ## 6. Philosophie der Programmierung: Kategorientheorie und Berechnung
 
-Es gibt ein berühmtes (und für Anfänger verwirrendes) Sprichwort, dass eine Monade nur ein Monoid in der Kategorie der Endofunktoren (A monad is just a monoid in the category of endofunctors) ist, aber für Software-Ingenieure ist das Wichtigste nicht ihre mathematische Strenge, sondern die "Macht der Abstraktion", die sie bringt.
+Es gibt ein berühmtes (und [für Anfänger](/de/p/lederwaren%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/) verwirrendes) Sprichwort, dass eine Monade nur ein Monoid in der Kategorie der Endofunktoren (A monad is just a monoid in the category of endofunctors) ist, aber für Software-Ingenieure ist das Wichtigste nicht ihre mathematische Strenge, sondern die "Macht der Abstraktion", die sie bringt.
 
 Durch die Existenz einer gemeinsamen Schnittstelle (Typklasse) namens Monade können wir völlig unterschiedliche Konzepte wie "Fehler", "Zustand", "Asynchronität", "I/O" und "Nicht-Determinismus (Listen)" mit exakt demselben Operator (`>>=`) und derselben Syntax (`do`-Notation) behandeln. Dies ist ein erstaunlicher Sprung in der Ausdruckskraft.
 

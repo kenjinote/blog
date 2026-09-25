@@ -18,7 +18,7 @@ In this article, we will delve deeply into what the [Poincaré Conjecture](https
 
 To understand the [Poincaré Conjecture](https://kenji.blog/en/p/poincare-conjecture/), you first need to know about the field of mathematics called **topology**. Topology is also known as "rubber-sheet geometry".
 
-In ordinary geometry ([Euclide](https://kenji.blog/p/euclid/)an geometry), properties like length, angle, and area are important, but in topology, these are ignored. It only studies the properties (topological properties) that are preserved even when the object is continuously deformed, such as by "stretching", "bending", or "shrinking". However, operations like "cutting", "gluing", or "making a hole" are not allowed.
+In ordinary geometry ([Euclide](https://kenji.blog/en/p/euclid/)an geometry), properties like length, angle, and area are important, but in topology, these are ignored. It only studies the properties (topological properties) that are preserved even when the object is continuously deformed, such as by "stretching", "bending", or "shrinking". However, operations like "cutting", "gluing", or "making a hole" are not allowed.
 
 A famous example is "a coffee cup and a donut".
 

@@ -15,7 +15,7 @@ Dans l'histoire des mathématiques, des questions futiles ou des jeux du quotidi
 
 Au 18ème siècle, la ville de Königsberg dans le royaume de Prusse (aujourd'hui Kaliningrad, dans la Fédération de Russie), était traversée par un grand fleuve, la Pregolia (Pregel), où sept ponts avaient été construits pour relier les îles (bancs de sable) aux deux rives. Lors de leurs promenades au crépuscule, les habitants de l'époque ont imaginé le jeu suivant : « Est-il possible de se promener dans la ville en traversant chacun des sept ponts une et une seule fois, et de revenir à son point de départ ? »
 
-Lorsque ce problème, qui semblait n'être qu'un simple casse-tête, est parvenu au mathématicien de génie **[Leonhard Euler](https://kenji.blog/fr/p/euler/)** (Leonhard Euler), une révolution s'est produite dans le monde des mathématiques. Euler a non seulement prouvé que ce problème était impossible, mais au cours de ce processus, il a redéfini la nature de l'espace sous une perspective totalement nouvelle, posant ainsi les bases de deux domaines extrêmement importants des mathématiques modernes : la **théorie des graphes** ([Graph Theory](https://kenji.blog/fr/p/graph-theory-dijkstra-a-star/)) et la **topologie** (Topology).
+Lorsque ce problème, qui semblait n'être qu'un simple casse-tête, est parvenu au mathématicien de génie **[Leonhard Euler](https://kenji.blog/fr/p/euler/)** ([Leonhard Euler](/fr/p/euler/)), une révolution s'est produite dans le monde des mathématiques. Euler a non seulement prouvé que ce problème était impossible, mais au cours de ce processus, il a redéfini la nature de l'espace sous une perspective totalement nouvelle, posant ainsi les bases de deux domaines extrêmement importants des mathématiques modernes : la **[théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/)** ([Graph Theory](https://kenji.blog/fr/p/graph-theory-dijkstra-a-star/)) et la **topologie** (Topology).
 
 Dans cet article, nous explorerons en profondeur le contexte historique du problème des sept ponts de Königsberg, la brillante méthode de résolution d'Euler, et comment cela est lié aux sciences et technologies modernes, en incluant des détails mathématiques. Au-delà d'une simple introduction historique, profitez de la beauté de la structure mathématique qui se cache derrière ce problème.
 
@@ -52,7 +52,7 @@ La manifestation la plus remarquable du génie d'Euler résidait dans sa capacit
 1. Les **terres (îles et rives)** sont représentées comme de simples « points » sans dimension. C'est ce qu'on appelle aujourd'hui un **sommet** (Vertex) ou un **nœud** (Node).
 2. Les **ponts** sont représentés comme des « lignes » reliant les sommets. C'est ce qu'on appelle une **arête** (Edge) ou un **lien** (Link). La courbure ou la longueur des lignes n'a pas d'importance.
 
-Ainsi, une structure discrète représentée comme un ensemble fini de sommets et d'arêtes les reliant est appelée un **graphe** ([Graph](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) en mathématiques. Ce fut le moment exact de la naissance de la discipline que nous appelons aujourd'hui la « théorie des graphes ».
+Ainsi, une structure discrète représentée comme un ensemble fini de sommets et d'arêtes les reliant est appelée un **graphe** ([Graph](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) en mathématiques. Ce fut le moment exact de la naissance de la discipline que nous appelons aujourd'hui la « [théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/) ».
 
 Le diagramme Mermaid suivant montre comment la carte géographique de la ville de Königsberg a été transformée en une représentation graphique abstraite.
 
@@ -79,7 +79,7 @@ Grâce à cette puissante abstraction, la question quotidienne des citoyens « E
 
 Après avoir formulé le problème sous forme de graphe, Euler a découvert une loi universelle très simple mais extrêmement puissante. La clé de cette preuve a été l'introduction du nouveau concept de **degré** (Degree).
 
-Dans la théorie des graphes, le **degré** d'un sommet $v$ est noté $d(v)$ ou $\text{deg}(v)$, et cela signifie « le nombre total d'arêtes directement connectées à ce sommet ».
+Dans la [théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/), le **degré** d'un sommet $v$ est noté $d(v)$ ou $\text{deg}(v)$, et cela signifie « le nombre total d'arêtes directement connectées à ce sommet ».
 
 Euler a examiné de manière logique les contraintes que l'action de tracer un chemin qui « parcourt toutes les arêtes une seule fois (tracé continu) » sur le graphe imposerait au degré de chaque sommet.
 
@@ -98,7 +98,7 @@ Ici, les modèles de chemin peuvent être classés en deux catégories :
 2. **Chemin eulérien (Eulerian Path)** : Lorsque le point de départ et le point d'arrivée sont des sommets différents.
    Dans ce cas, une arête supplémentaire est nécessaire au point de départ pour « sortir en premier », et une arête supplémentaire est nécessaire au point d'arrivée pour « entrer en dernier ». Par conséquent, seuls les deux sommets du point de départ et du point d'arrivée n'auront pas de paires d'arêtes complètes et auront un degré **impair** (Odd). Tous les autres points de passage doivent avoir un degré pair.
 
-Ceci est le théorème le plus fondamental et le plus célèbre de la théorie des graphes rigoureusement prouvé par Euler (le théorème d'Euler).
+Ceci est le théorème le plus fondamental et le plus célèbre de la [théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/) rigoureusement prouvé par Euler (le théorème d'Euler).
 
 Si l'on exprime ce théorème plus rigoureusement à l'aide de formules mathématiques, dans un graphe non orienté connexe $G = (V, E)$ :
 
@@ -142,7 +142,7 @@ Plus tard, en 1750, Euler lui-même a découvert une loi universelle surprenante
 
 ## L'application et l'expansion de la théorie des graphes dans la société moderne
 
-La théorie des graphes et la topologie, nées de l'exploration intellectuelle pure d'un mathématicien du 18ème siècle, ne sont jamais restées confinées dans la tour d'ivoire du monde universitaire. Elles s'épanouissent aujourd'hui comme des outils extrêmement pratiques et indispensables, soutenant fondamentalement notre société hautement informatisée et nos technologies.
+La [théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/) et la topologie, nées de l'exploration intellectuelle pure d'un mathématicien du 18ème siècle, ne sont jamais restées confinées dans la tour d'ivoire du monde universitaire. Elles s'épanouissent aujourd'hui comme des outils extrêmement pratiques et indispensables, soutenant fondamentalement notre société hautement informatisée et nos technologies.
 
 ### 1. Réseaux informatiques et Internet
 La structure physique et logique d'Internet que nous utilisons tous les jours est elle-même un immense graphe à l'échelle mondiale. Chaque routeur, serveur et ordinateur est un sommet, et les fibres optiques et les lignes de communication sans fil qui les relient sont représentées comme des arêtes. Les protocoles de routage (par exemple, l'algorithme de [Dijkstra](https://kenji.blog/fr/p/graph-theory-dijkstra-a-star/)) pour acheminer les paquets de données vers leur destination le plus rapidement et le plus efficacement possible tout en évitant la congestion sont tous conçus comme des algorithmes basés sur la théorie des graphes.

@@ -14,7 +14,7 @@ Bumi memiliki bentuk yang mendekati bola tiga dimensi (tepatnya elipsoid referen
 
 ## 1. Dilema Matematis dalam Menggambar Bola pada Bidang Datar
 
-Saat membahas sejarah proyeksi peta, premis utama matematis yang pertama kali harus dipahami adalah apa yang dibuktikan oleh "Carl Friedrich Gauss". Gauss, seorang ahli matematika hebat dari abad ke-19, merumuskan teorema geometri diferensial yang disebut "Teorema Luar Biasa (Theorema Egregium)". Menurut teorema ini, kelengkungan Gauss pada suatu permukaan memiliki sifat yang tidak berubah meskipun permukaan tersebut ditekuk.
+Saat membahas sejarah proyeksi peta, premis utama matematis yang pertama kali harus dipahami adalah apa yang dibuktikan oleh "[Carl Friedrich Gauss](/id/p/gauss/)". Gauss, seorang ahli matematika hebat dari abad ke-19, merumuskan teorema geometri diferensial yang disebut "Teorema Luar Biasa (Theorema Egregium)". Menurut teorema ini, kelengkungan Gauss pada suatu permukaan memiliki sifat yang tidak berubah meskipun permukaan tersebut ditekuk.
 
 Kelengkungan Gauss dari permukaan bola seperti Bumi adalah positif, sedangkan kelengkungan Gauss dari bidang datar adalah nol. Oleh karena itu, secara matematis mustahil untuk memetakan permukaan dengan kelengkungan Gauss yang berbeda satu sama lain tanpa adanya peregangan, penyusutan, atau robekan. Ini adalah prinsip yang sama dengan ketidakmungkinan mengupas kulit jeruk dan membentangkannya ke dalam satu persegi panjang datar tanpa celah.
 

@@ -13,7 +13,7 @@ tags: ["Edge AI", "IoT", "ONNX", "NPU"]
 
 ## 1. 引言：为什么现在是边缘AI（Edge AI）？
 
-随着IoT（物联网）设备的普及，我们进入了世界上所有物理对象都连接到互联网的时代。伴随着传感器技术的进步，设备产生的数据量呈爆炸式增长。过去，这些海量数据被发送到云端，利用云端强大的计算资源（如巨大的GPU集群）通过AI模型进行推理。这就是“云AI”的常规方法。
+随着IoT（[物联网](/zh-cn/p/technology-iot/)）设备的普及，我们进入了世界上所有物理对象都连接到互联网的时代。伴随着传感器技术的进步，设备产生的数据量呈爆炸式增长。过去，这些海量数据被发送到云端，利用云端强大的计算资源（如巨大的GPU集群）通过AI模型进行推理。这就是“云AI”的常规方法。
 
 然而，将所有数据发送到云端，在云端处理后再将结果发送回设备的架构，存在几个重大局限性：
 1. **延迟（Latency）问题** ：在要求毫秒级即时判断的系统中，如自动驾驶汽车、工业机器人和无人机，网络通信延迟可能会导致致命事故。
@@ -77,8 +77,8 @@ $$ T_{total} \approx T_{edge\_compute} $$
   Google提供的Edge TPU是一款体积非常小巧但拥有强大推理能力的协处理器。它在仅2W的功耗下能够发挥 4 TOPS（Tera Operations Per Second：每秒4万亿次运算）的性能。只需将其通过USB连接到像Raspberry Pi这样的轻量级SBC（单板计算机）上，即可实时运行针对移动端优化的TensorFlow Lite模型。
 - **Raspberry Pi AI Kit (搭载Hailo-8L)**:
   近年来发布的Raspberry Pi AI Kit搭载了Hailo公司的AI加速器“Hailo-8L”。Hailo的架构通过将神经网络的结构映射到芯片的硬件结构上，消除了内存访问瓶颈，并在几瓦的功耗范围内实现了高达13 TOPS的惊人推理性能。
-- **NVIDIA Jetson 系列**:
-  Jetson Nano、Xavier、Orin系列是将ARM CPU和NVIDIA强大的GPU核心集成在一起的SoC。因为可以直接利用CUDA生态系统，所以将在云端训练好的PyTorch或TensorFlow模型通过TensorRT部署到边缘设备变得非常容易。
+- **[NVIDIA](/zh-cn/p/history-of-nvidia/) Jetson 系列**:
+  Jetson Nano、Xavier、Orin系列是将ARM CPU和[NVIDIA](/zh-cn/p/history-of-nvidia/)强大的GPU核心集成在一起的SoC。因为可以直接利用CUDA生态系统，所以将在云端训练好的PyTorch或TensorFlow模型通过TensorRT部署到边缘设备变得非常容易。
 
 ### TOPS与能效（TOPS/W）
 评估边缘AI硬件最重要的指标是“TOPS/W（每瓦特的TOPS）”。由于IoT设备在电池供电或PoE（Power over Ethernet）等严苛的功耗限制下运行，因此不仅要看单纯的计算性能（TOPS），关键在于如何以更少的电力进行AI推理。
@@ -241,8 +241,8 @@ $$ w_{t+1} = \sum_{k=1}^{K} \frac{n_k}{N} w_{t+1}^k $$
 
 边缘AI技术正在迅速发展，但仍面临许多挑战和令人期待的未来前景。
 
-**1. 在边缘运行[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)（大型语言模型）**:
-近年来最大的话题是试图在边缘运行生成式AI和LLM的“Edge LLM”。虽然不可能将数百亿参数的模型直接放置到边缘设备中，但随着llama.cpp等优化框架、4位/2位极限缩放量化（AWQ、GPTQ等）以及诸如微软Phi-3等小型高性能SLM（Small Language Models）的出现，在智能手机或Raspberry Pi上也能离线完成自然语言处理的时代正在到来。
+**1. 在边缘运行[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)（[大型语言模型](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）**:
+近年来最大的话题是试图在边缘运行生成式AI和[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)的“Edge [LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)”。虽然不可能将数百亿参数的模型直接放置到边缘设备中，但随着llama.cpp等优化框架、4位/2位极限缩放量化（AWQ、GPTQ等）以及诸如微软Phi-3等小型高性能SLM（Small Language Models）的出现，在智能手机或Raspberry Pi上也能离线完成自然语言处理的时代正在到来。
 
 **2. 神经形态计算与SNN**:
 被寄予厚望的终极节能边缘AI，是物理上模仿人类大脑神经网络运作的“神经形态芯片（例如：Intel Loihi）”和“脉冲神经网络（Spiking Neural Network, SNN）”。由于SNN是一种仅在数据发生变化时（脉冲）才进行计算的事件驱动型模型，与传统深度学习模型相比，理论上能够将功耗降低几个数量级（从几十分之一到数百分之一）。

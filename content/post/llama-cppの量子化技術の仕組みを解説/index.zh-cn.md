@@ -12,9 +12,9 @@ description: '结合数学公式和架构图，非常详细地讲解llama.cpp中
 
 ## 1. 引言：为什么[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)需要量化？
 
-近年来，大规模语言模型（LLM: [Large Language Models](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的进化非常显著，但在其背后，“计算资源枯竭”和“内存带宽瓶颈”这两个严重的问题浮出水面。例如，如果将 Llama 3 这样具有 70B（700亿）参数的模型以标准的 16位浮点数（FP16）加载到内存中，仅参数就会消耗约 140GB 的 VRAM/RAM。如果再加上推理时的上下文（KV缓存），除非将多台面向数据中心的高端GPU（NVIDIA A100 80GB 或 H100 80GB）进行集群，否则无法运行。
+近年来，大规模语言模型（[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/): [Large Language Models](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的进化非常显著，但在其背后，“计算资源枯竭”和“内存带宽瓶颈”这两个严重的问题浮出水面。例如，如果将 Llama 3 这样具有 70B（700亿）参数的模型以标准的 16位浮点数（FP16）加载到内存中，仅参数就会消耗约 140GB 的 VRAM/RAM。如果再加上推理时的上下文（KV缓存），除非将多台面向数据中心的高端GPU（[NVIDIA](/zh-cn/p/history-of-nvidia/) A100 80GB 或 H100 80GB）进行集群，否则无法运行。
 
-为了让个人开发者和边缘设备（MacBook或一般的游戏PC）也能运行LLM， **llama.cpp** 及其核心的 ** 量化（Quantization）技术 ** 作为救世主应运而生。特别是名为 **GGUF (GPT-Generated Unified Format)** 的文件格式以及被称为 **k-quants** 的高级块级量化算法，这是一种在极力抑制模型精度（Perplexity）下降的同时，将模型大小压缩到几分之一的突破性方法。
+为了让个人开发者和边缘设备（MacBook或一般的游戏PC）也能运行[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)， **llama.cpp** 及其核心的 ** 量化（Quantization）技术 ** 作为救世主应运而生。特别是名为 **GGUF (GPT-Generated Unified Format)** 的文件格式以及被称为 **k-quants** 的高级块级量化算法，这是一种在极力抑制模型精度（Perplexity）下降的同时，将模型大小压缩到几分之一的突破性方法。
 
 本文将从 llama.cpp 中量化的数学背景开始，彻底解析它与 GGML 格式的区别、GGUF 格式的详细结构，以及 k-quants 的内部机制。
 
@@ -22,7 +22,7 @@ description: '结合数学公式和架构图，非常详细地讲解llama.cpp中
 
 ## 2. 量化（Quantization）的数学基础
 
-在 LLM 的语境中，量化是指将连续的值（或高精度的浮点数）映射为位数更少（INT8、INT4、INT3 等）的离散值的操作。
+在 [LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) 的语境中，量化是指将连续的值（或高精度的浮点数）映射为位数更少（INT8、INT4、INT3 等）的离散值的操作。
 
 ### 2.1. 线性量化的基本公式
 
@@ -187,7 +187,7 @@ llama.cpp 在 CPU 推理中引以为傲的惊人速度，归功于汇编级别�
 
 ### 5.2. GPU 环境 (cuBLAS / CUDA) 的卸载
 
-最近的 llama.cpp 不仅支持 CPU，还对 NVIDIA GPU 有着强大的支持（CUBLAS / CUDA）。
+最近的 llama.cpp 不仅支持 CPU，还对 [NVIDIA](/zh-cn/p/history-of-nvidia/) GPU 有着强大的支持（CUBLAS / CUDA）。
 可以将 GGUF 文件的部分或全部层卸载（Offload）到 VRAM 中（使用 `--n-gpu-layers` 选项）。
 
 ```mermaid

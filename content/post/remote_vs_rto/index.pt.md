@@ -82,7 +82,7 @@ graph LR
     DB === Data
 ```
 
-Essa formação de silos não é necessariamente ruim. Se você adota uma arquitetura de microsserviços que possui interfaces de API claras e é implementável independentemente, restringir intencionalmente a comunicação entre as equipes e aumentar a independência pode até ser recomendado como uma "Manobra Inversa de Conway (Inverse Conway Maneuver)". Pode-se dizer que o trabalho totalmente remoto é adequado para o desenvolvimento de sistemas frouxamente acoplados com fronteiras claras.
+Essa formação de silos não é necessariamente ruim. Se você adota uma [arquitetura de microsserviços](/pt/p/microservices-architecture-bff-api-gateway/) que possui interfaces de API claras e é implementável independentemente, restringir intencionalmente a comunicação entre as equipes e aumentar a independência pode até ser recomendado como uma "Manobra Inversa de Conway (Inverse Conway Maneuver)". Pode-se dizer que o trabalho totalmente remoto é adequado para o desenvolvimento de sistemas frouxamente acoplados com fronteiras claras.
 
 No entanto, nas fases iniciais de inicialização de um sistema (desenvolvimento do zero ao um), em refatorações em larga escala que abrangem múltiplos componentes ou na solução de problemas para falhas desconhecidas, uma comunicação densa e de alta largura de banda através das fronteiras da equipe é indispensável. A formação excessiva de silos em um ambiente remoto torna a resolução desses problemas monolíticos extremamente difícil.
 
@@ -175,7 +175,7 @@ Ao usar uma VPN tradicional, mesmo quando um engenheiro remoto acessa um SaaS na
 
 ## A Mudança de Paradigma por Zero Trust ([BeyondCorp](https://kenji.blog/pt/p/zero-trust-network-architecture-beyond-corp/))
 
-Para quebrar essa limitação de rede e concretizar um verdadeiro "ambiente de trabalho confortável e seguro de qualquer lugar", o que é necessário é a **Arquitetura de Rede Zero Trust (Zero Trust Network Architecture: ZTNA)**, da qual o "BeyondCorp", proposto pelo Google, é um representante típico.
+Para quebrar essa limitação de rede e concretizar um verdadeiro "ambiente de trabalho confortável e seguro de qualquer lugar", o que é necessário é a **[Arquitetura de Rede Zero Trust](/pt/p/zero-trust-network-architecture-beyond-corp/) (Zero Trust Network Architecture: ZTNA)**, da qual o "BeyondCorp", proposto pelo Google, é um representante típico.
 
 O cerne do Zero Trust é "não tornar os limites da rede (dentro ou fora da empresa) a base da confiança".
 
@@ -216,7 +216,7 @@ No ambiente de escritório, os engenheiros juniores absorvem o conhecimento tác
 Com base na análise até agora, compreende-se que existem trade-offs decisivos tanto no "retorno total ao escritório" quanto no "totalmente remoto".
 
 1. **Vantagens do Totalmente Remoto**: Promoção do trabalho profundo (deep work), eliminação do deslocamento diário, aquisição de um pool de talentos global e acesso rápido e seguro através de infraestrutura Zero Trust.
-2. **Vantagens do Trabalho no Escritório**: Geração de comunicação de alta largura de banda baseada na Curva de Allen, discussões síncronas em design de arquitetura complexa, encurtamento do MTTR e onboarding e transferência de conhecimento tácito para engenheiros juniores.
+2. **Vantagens do Trabalho no Escritório**: Geração de comunicação de alta largura de banda baseada na Curva de Allen, discussões síncronas em design de arquitetura complexa, encurtamento do MTTR e onboarding e transferência de conhecimento tácito [para engenheiros](/pt/p/prompt-engineering-for-engineers/) juniores.
 
 O "modelo híbrido", adotado por muitas das empresas tecnológicas de hoje, não é um mero produto de compromisso, mas uma estratégia racional que tenta extrair o melhor dos dois mundos. No entanto, para que um modelo híbrido seja bem-sucedido, a "operação intencional" é indispensável.
 
@@ -230,7 +230,7 @@ A produtividade geral dos engenheiros é expressa como uma função complexa da 
 
 O debate de "trabalho remoto vs. retorno ao escritório" frequentemente tende a ser enquadrado através de uma estrutura de oposição: "direitos dos trabalhadores vs. desejo de controle por parte da gestão", mas a essência não se encontra aí.
 
-A liderança necessita de descartar a ilusão de que "se as pessoas se reunirem no escritório, a inovação acontecerá de forma mágica". Se obrigarem ao retorno ao escritório sem design organizacional que torne a Lei de Conway uma aliada no desenvolvimento de sistemas distribuídos e sem investir em infraestruturas modernas como o Zero Trust, apenas acabarão diminuindo o engajamento e a produtividade dos engenheiros.
+A liderança necessita de descartar a ilusão de que "se as pessoas se reunirem no escritório, a inovação acontecerá de forma mágica". Se obrigarem ao retorno ao escritório sem design organizacional que torne a Lei de Conway uma aliada no desenvolvimento de [sistemas distribuídos](/pt/p/cap-theorem-distributed-systems-tradeoff/) e sem investir em infraestruturas modernas como o Zero Trust, apenas acabarão diminuindo o engajamento e a produtividade dos engenheiros.
 
 Por outro lado, os engenheiros (especialmente os do escalão sênior) também precisam rever o ponto de vista complacente de que "como a minha produtividade é mais alta a escrever código sozinho, não há necessidade de um escritório". A engenharia é um desporto de equipe e eles assumem uma vasta gama de responsabilidades, não apenas a produtividade do código, mas também o design do sistema da organização como um todo, o desenvolvimento dos membros juniores e a colaboração em caso de emergência. A verdade é que às vezes a comunicação de alta largura de banda no espaço físico pode salvar todo o projeto.
 

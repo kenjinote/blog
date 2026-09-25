@@ -153,7 +153,7 @@ Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 ```
 
-Это позволяет вам интуитивно составлять, искать и выполнять команды даже в среде Windows с точно такими же движениями пальцев, как в Linux. Унификация когнитивной нагрузки ($M$) на разных платформах крайне важна для инженеров DevOps.
+Это позволяет вам интуитивно составлять, искать и выполнять команды даже в среде Windows с точно такими же движениями пальцев, как в Linux. Унификация когнитивной нагрузки ($M$) на разных платформах крайне важна [для инженеров](/ru/p/prompt-engineering-for-engineers/) DevOps.
 
 ---
 

@@ -105,7 +105,7 @@ sequenceDiagram
 
 ホッジ予想には、様々な一般化や関連する予想が存在します。
 
-- **一般化されたホッジ予想 (Generalized [Hodge Conjecture](https://kenji.blog/p/hodge-conjecture/))**: ホッジ予想をより一般的な枠組み (例えば、特異点を持つ多様体や、開多様体など) へと拡張しようとする試みです。アレクサンドル・グロタンディーク ([Alexander Grothendieck](https://kenji.blog/p/grothendieck/)) などによって定式化されましたが、反例が見つかるなど、適切な定式化自体が困難な課題となっています。
+- **一般化されたホッジ予想 (Generalized [Hodge Conjecture](https://kenji.blog/p/hodge-conjecture/))**: ホッジ予想をより一般的な枠組み (例えば、特異点を持つ多様体や、開多様体など) へと拡張しようとする試みです。[アレクサンドル・グロタンディーク](/p/grothendieck/) ([Alexander Grothendieck](https://kenji.blog/p/grothendieck/)) などによって定式化されましたが、反例が見つかるなど、適切な定式化自体が困難な課題となっています。
 - **テイト予想 (Tate Conjecture)**: ホッジ予想の数論的な類似として知られるのがテイト予想です。複素数体上の多様体ではなく、有限体上の多様体について、エタールコホモロジー (Étale Cohomology) という概念を用いて定式化されます。これもまた、極めて難解な未解決問題です。
 
 ## 6. まとめと今後の展望

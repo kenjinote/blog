@@ -40,9 +40,9 @@ Turing secara matematis menunjukkan bahwa fungsi apa pun yang dapat dihitung dap
 
 ## 3.2 Masalah Penghentian dan Ketidaklengkapan
 
-Turing membuktikan bahwa tidak ada algoritme umum untuk menentukan sebelumnya apakah program yang diberikan pada akhirnya akan berhenti untuk masukan yang diberikan, yang berarti **Masalah Penghentian** tidak dapat diputuskan.
+Turing membuktikan bahwa tidak ada algoritme umum untuk menentukan sebelumnya apakah program yang diberikan pada akhirnya akan berhenti untuk masukan yang diberikan, yang berarti **[Masalah Penghentian](/id/p/halting-problem/)** tidak dapat diputuskan.
 
-Secara matematis, mari kita asumsikan fungsi keputusan masalah penghentian $H(x, y)$, di mana $x$ adalah program dan $y$ adalah masukan:
+Secara matematis, mari kita asumsikan fungsi keputusan [masalah penghentian](/id/p/halting-problem/) $H(x, y)$, di mana $x$ adalah program dan $y$ adalah masukan:
 
 $$
 H(x, y) = \begin{cases} 
@@ -51,7 +51,7 @@ H(x, y) = \begin{cases}
 \end{cases}
 $$
 
-Misalkan ada mesin Turing yang menghitung fungsi $H$ seperti itu. Dalam hal itu, kita dapat membangun program $D(x)$ berdasarkan diagonalisasi sebagai berikut:
+Misalkan ada mesin Turing yang menghitung fungsi $H$ seperti itu. Dalam hal itu, kita dapat membangun program $D(x)$ berdasarkan [diagonalisasi](/id/p/diagonalization-and-jordan-normal-form/) sebagai berikut:
 
 $$
 D(x) = \begin{cases} 

@@ -9,7 +9,7 @@ slug: "biography-dennis-ritchie"
 description: "Dennis MacAlistair Ritchie (September 9, 1941 – October 12, 2011) is one of the most important and influential figures in modern computer science."
 ---
 
-Dennis MacAlistair Ritchie (September 9, 1941 – October 12, 2011) is one of the most important and influential figures in modern computer science. Although he rarely bathed in the flashy limelight like Steve Jobs or Bill Gates, the legacy he left behind forms the foundation of all the technology we use today. The "C programming language" and the "UNIX" operating system, which he was deeply involved in developing, pulse everywhere in our modern digital society, from internet servers and smartphones to supercomputers and even home appliances.
+Dennis MacAlistair Ritchie (September 9, 1941 – October 12, 2011) is one of the most important and influential figures in modern computer science. Although he rarely bathed in the flashy limelight like [Steve Jobs](/en/p/biography-steve-jobs/) or Bill Gates, the legacy he left behind forms the foundation of all the technology we use today. The "C programming language" and the "UNIX" operating system, which he was deeply involved in developing, pulse everywhere in our modern digital society, from internet servers and smartphones to supercomputers and even home appliances.
 
 ## Early Life and Days at Bell Labs
 
@@ -25,7 +25,7 @@ Having lost an excellent development environment, the two sought a system that w
 
 Initially, UNIX was written in assembly language, making it entirely dependent on a specific hardware architecture. To solve this and make the system portable to other computers, Ritchie iteratively improved upon the "B language" developed by Thompson, giving birth to the "C language" in 1972.
 
-The greatest revolution of the C language was its perfect balance: it allowed low-level hardware memory manipulation (such as pointers) while simultaneously possessing the characteristics of a high-level language (such as structured programming) that was logically easy for humans to read and write.
+The greatest revolution of the C language was its perfect balance: it allowed low-level hardware memory manipulation (such as [pointers](/en/p/c-language-pointers-memory-management-stack-heap/)) while simultaneously possessing the characteristics of a high-level language (such as structured programming) that was logically easy for humans to read and write.
 
 In 1973, Ritchie and Thompson completely rewrote the core of UNIX (the kernel) in this C language. By taking the then-unconventional approach of writing an operating system in a high-level language rather than hardware-dependent assembly language, UNIX underwent a dramatic evolution into a highly portable system that could be moved across any hardware.
 
@@ -33,7 +33,7 @@ In 1973, Ritchie and Thompson completely rewrote the core of UNIX (the kernel) i
 
 At the heart of Dennis Ritchie's design philosophy were always "Simplicity" and "Elegance." The C language was designed not to have massive built-in features, but to provide the bare minimum of simple functionalities, leaving the rest to the programmer's discretion. "C language is based on the premise that the programmer knows exactly what they are trying to do," as the saying goes, making it a sharp, highly flexible blade for professionals.
 
-This philosophy of his is also deeply etched into the design concept of UNIX, the so-called "UNIX philosophy." Principles such as "Make each program do one thing well" and "Connect programs via pipes and use text streams as a universal interface" were the ultimate expression of modularity and cooperation—solving complex problems by combining simple, independent tools rather than building massive, complex systems.
+This philosophy of his is also deeply etched into the design concept of UNIX, the so-called "[UNIX philosophy](/en/p/philosophy-unix-modular-design/)." Principles such as "Make each program do one thing well" and "Connect programs via pipes and use text streams as a universal interface" were the ultimate expression of modularity and cooperation—solving complex problems by combining simple, independent tools rather than building massive, complex systems.
 
 ## Legacy and the Quiet Giant's Impact on Posterity
 
@@ -43,9 +43,9 @@ Programming languages derived from or heavily influenced by C—such as C++, Jav
 
 For his monumental achievements, he received numerous highest honors, including the Turing Award, known as the Nobel Prize of computing, which he won alongside Ken Thompson in 1983, and the National Medal of Technology awarded by President Clinton in 1999. However, he himself was very modest, did not prefer to assert himself in public, and remained an engineer with a hacker spirit throughout his life.
 
-On October 12, 2011, just one week after the death of Steve Jobs, Dennis Ritchie passed away quietly at his home in New Jersey. While Jobs' death was widely reported around the world and mourned by many, Ritchie's passing received little mainstream attention. However, within the global IT community, it was received quietly, but with immeasurable gratitude and deep sorrow.
+On October 12, 2011, just one week after the death of [Steve Jobs](/en/p/biography-steve-jobs/), Dennis Ritchie passed away quietly at his home in New Jersey. While Jobs' death was widely reported around the world and mourned by many, Ritchie's passing received little mainstream attention. However, within the global IT community, it was received quietly, but with immeasurable gratitude and deep sorrow.
 
-"Steve Jobs gave us the beautiful windows (products), but Dennis Ritchie built the foundation and the tools to build the house."
+"[Steve Jobs](/en/p/biography-steve-jobs/) gave us the beautiful windows (products), but Dennis Ritchie built the foundation and the tools to build the house."
 
 These words illustrate the magnitude of his practical contribution to modern society. The modern digital world is built upon the robust and elegant foundation he constructed. The quiet monumental work of Dennis Ritchie will never fade and will live on forever as the foundation of computing.
 

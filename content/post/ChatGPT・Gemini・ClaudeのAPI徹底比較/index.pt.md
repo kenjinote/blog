@@ -87,7 +87,7 @@ Aqui, cada variável tem o seguinte significado:
 - $T_{network}$: Tempo de ida e volta da rede (RTT).
 - $T_{TTFT}$ (Time To First Token): O tempo até que o primeiro caractere seja gerado. Ele depende fortemente do custo do cálculo da atenção, que é proporcional ao quadrado do comprimento do prompt (número de tokens de entrada).
 - $N$: O número total de tokens gerados na saída.
-- $T_{TPOT}$ (Time Per Output Token): Tempo de geração por token. Por se tratar de um modelo autorregressivo, o cálculo é feito em série dependendo da saída anterior.
+- $T_{TPOT}$ (Time Per [Output](/pt/p/reading-hard-tech-books/) Token): Tempo de geração por token. Por se tratar de um modelo autorregressivo, o cálculo é feito em série dependendo da saída anterior.
 
 ### 4.1 Complexidade Computacional do Mecanismo de Autoatenção
 A complexidade computacional da autoatenção (Self-Attention) na arquitetura [Transformer](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) aumenta de forma quadrática em relação ao comprimento da sequência de entrada $L$.

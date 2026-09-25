@@ -98,7 +98,7 @@ Namun sekarang, 90% dari "tugas-tugas yang biasa ditangani oleh junior" ini dapa
 Mari kita ekspresikan total produktivitas tim pengembang sebelum dan sesudah pengenalan AI dalam rumus matematika.
 
 Misalkan produktivitas dasar adalah $P$.
-Tingkat peningkatan produktivitas engineer senior akibat pengenalan AI generatif adalah $\alpha_{senior}$, dan untuk engineer junior adalah $\alpha_{junior}$.
+Tingkat peningkatan produktivitas engineer senior akibat pengenalan AI generatif adalah $\alpha_{senior}$, dan [untuk engineer](/id/p/prompt-engineering-for-engineers/) junior adalah $\alpha_{junior}$.
 
 $$
 \text{Total Output}_{pre} = N_{senior} \times P_{senior} + N_{junior} \times P_{junior}

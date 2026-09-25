@@ -35,7 +35,7 @@ graph TD
 
 ## 3. Penemuan "Ruang Melengkung": Lahirnya Geometri Hiperbolik
 
-Memasuki abad ke-19, akhirnya terjadi sebuah revolusi. Tiga orang yaitu [Carl Friedrich Gauss](https://kenji.blog/id/p/gauss/) dari Jerman, János Bolyai dari Hungaria, dan Nikolai Lobachevsky dari Rusia, secara independen mencapai kesimpulan bahwa "postulat ke-5 terbebas dari postulat lainnya, dan ada geometri yang sama sekali baru di mana postulat ini tidak berlaku."
+Memasuki abad ke-19, akhirnya terjadi sebuah revolusi. Tiga orang yaitu [Carl Friedrich Gauss](https://kenji.blog/id/p/gauss/) dari Jerman, János Bolyai dari Hungaria, dan [Nikolai Lobachevsky](/id/p/biography-nikolai-lobachevsky/) dari Rusia, secara independen mencapai kesimpulan bahwa "postulat ke-5 terbebas dari postulat lainnya, dan ada geometri yang sama sekali baru di mana postulat ini tidak berlaku."
 
 Geometri yang mereka temukan sekarang disebut sebagai **Geometri Hiperbolik**. Dalam ruang ini, garis sejajar yang melewati 1 titik di luar suatu garis lurus ada "tak terhingga" jumlahnya. Selain itu, jumlah sudut dalam sebuah segitiga selalu kurang dari 180 derajat.
 
@@ -47,11 +47,11 @@ Karena penemuan ini terlalu revolusioner, Gauss menahan diri untuk tidak mempubl
 
 ## 4. Geometri [Riemann](https://kenji.blog/id/p/riemann/): Generalisasi Konsep Ruang
 
-Lompatan selanjutnya dalam geometri non-[Euclide](https://kenji.blog/p/euclid/)an dibawa oleh murid Gauss, yaitu Bernhard Riemann. Dalam kuliah pelantikannya pada tahun 1854, [Riemann](https://kenji.blog/id/p/riemann/) mempresentasikan gagasan terobosan tentang dasar-dasar geometri.
+Lompatan selanjutnya dalam geometri non-[Euclide](https://kenji.blog/id/p/euclid/)an dibawa oleh murid Gauss, yaitu [Bernhard Riemann](/id/p/riemann/). Dalam kuliah pelantikannya pada tahun 1854, [Riemann](https://kenji.blog/id/p/riemann/) mempresentasikan gagasan terobosan tentang dasar-dasar geometri.
 
 Ia memperkenalkan **Tensor Metrik** yang mendefinisikan kelengkungan ruang secara lokal, dan membangun sebuah geometri yang lebih umum (**Geometri [Riemann](https://kenji.blog/id/p/riemann/)ian**), di mana dimensi dan kelengkungan ruang dapat berubah-ubah bergantung pada lokasinya.
 
-Dalam kerangka [Riemann](https://kenji.blog/id/p/riemann/), selain geometri [Euclide](https://kenji.blog/p/euclid/)an (kelengkungan 0) dan geometri hiperbolik (kelengkungan konstan negatif), geometri bola (kelengkungan konstan positif, **Geometri Eliptik**) juga dapat ditangani secara seragam. Dalam geometri eliptik, garis sejajar "tidak ada", dan jumlah sudut dalam sebuah segitiga lebih besar dari 180 derajat.
+Dalam kerangka [Riemann](https://kenji.blog/id/p/riemann/), selain geometri [Euclide](https://kenji.blog/id/p/euclid/)an (kelengkungan 0) dan geometri hiperbolik (kelengkungan konstan negatif), geometri bola (kelengkungan konstan positif, **Geometri Eliptik**) juga dapat ditangani secara seragam. Dalam geometri eliptik, garis sejajar "tidak ada", dan jumlah sudut dalam sebuah segitiga lebih besar dari 180 derajat.
 
 $$
 \text{Jumlah sudut dalam sebuah segitiga pada Geometri Eliptik} > 180^\circ
@@ -81,6 +81,6 @@ Dalam Persamaan Einstein di atas, sisi kiri mewakili struktur geometris (kelengk
 
 ## 6. Penutup
 
-Pencarian geometri non-[Euclide](https://kenji.blog/p/euclid/)an, yang dimulai dari keraguan kecil terhadap postulat ke-5 [Euclid](https://kenji.blog/id/p/euclid/), telah menghancurkan asumsi intuitif manusia tentang ruang dan membuktikan kebebasan matematika. Dan pada akhirnya, hal ini berbuah menjadi Teori Relativitas Umum yang mengungkap struktur fundamental alam semesta.
+Pencarian geometri non-[Euclide](https://kenji.blog/id/p/euclid/)an, yang dimulai dari keraguan kecil terhadap postulat ke-5 [Euclid](https://kenji.blog/id/p/euclid/), telah menghancurkan asumsi intuitif manusia tentang ruang dan membuktikan kebebasan matematika. Dan pada akhirnya, hal ini berbuah menjadi Teori Relativitas Umum yang mengungkap struktur fundamental alam semesta.
 
-Eksplorasi logika murni dalam matematika kelak menjadi bahasa yang tak terpisahkan untuk mendeskripsikan kebenaran terdalam dari dunia fisik. Sejarah geometri non-[Euclide](https://kenji.blog/p/euclid/)an mengajarkan kita tentang kehebatan kecerdasan manusia dan misteri alam yang menakjubkan.
+Eksplorasi logika murni dalam matematika kelak menjadi bahasa yang tak terpisahkan untuk mendeskripsikan kebenaran terdalam dari dunia fisik. Sejarah geometri non-[Euclide](https://kenji.blog/id/p/euclid/)an mengajarkan kita tentang kehebatan kecerdasan manusia dan misteri alam yang menakjubkan.

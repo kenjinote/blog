@@ -83,7 +83,7 @@ Secara matematis, ini tidak lain adalah operasi membalikkan nilai positif/negati
 
 ## Teknologi Masa Depan: Anyon dan Komputasi Kuantum Topologis
 
-Dan di zaman modern, Teori Simpul telah menjadi salah satu tema paling penting menuju realisasi "komputer kuantum", komputer generasi berikutnya.
+Dan di zaman modern, Teori Simpul telah menjadi salah satu tema paling penting menuju realisasi "komputer kuantum", [komputer generasi berikutnya](/id/p/technology-quantum-computer/).
 
 Komputer kuantum biasa sangat rentan terhadap gangguan (panas atau gelombang elektromagnetik) dan memiliki kelemahan fatal yaitu rentan terhadap kesalahan perhitungan. Ide untuk mengatasi hal ini adalah "Komputasi Kuantum Topologis (Topological Quantum Computing)".
 

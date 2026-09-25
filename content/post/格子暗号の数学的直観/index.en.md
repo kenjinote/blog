@@ -11,7 +11,7 @@ tags: ["Lattice", "PQC", "LWE", "Cryptography", "Math"]
 
 # 1. Introduction: The Dawn of Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC) and the Rise of Lattice-based [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
-The digital infrastructure of modern society is supported by public-key cryptography technologies such as [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography and Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECC). These cryptographic schemes base their security on the mathematical difficulty of problems like the "prime factorization problem" and the "discrete logarithm problem," which are believed to be inefficient (requiring exponential time) to solve with conventional classical computers.
+The digital infrastructure of modern society is supported by public-key cryptography technologies such as [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography and Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy ([ECC](/en/p/elliptic-curve-cryptography-math-cpp/)). These cryptographic schemes base their security on the mathematical difficulty of problems like the "prime factorization problem" and the "discrete logarithm problem," which are believed to be inefficient (requiring exponential time) to solve with conventional classical computers.
 
 However, "Shor's algorithm," published by Peter Shor in 1994, sent shockwaves through the cryptographic world. This algorithm mathematically proved that once a large-scale quantum computer is realized, it would be able to solve the prime factorization problem and the discrete logarithm problem in polynomial time. This means that the widely used public-key cryptography of today will become completely decipherable in the future.
 
@@ -60,7 +60,7 @@ The security of lattice-based cryptography depends on the difficulty of solving 
 SVP is the most classical and famous problem in lattice theory.
 
 **Definition (SVP):**
-Given an arbitrary lattice basis $B$, find the vector $\mathbf{v}$ with the minimum [Euclide](https://kenji.blog/p/euclid/)an norm (length) among the non-zero vectors belonging to that lattice $\mathcal{L}(B)$.
+Given an arbitrary lattice basis $B$, find the vector $\mathbf{v}$ with the minimum [Euclide](https://kenji.blog/en/p/euclid/)an norm (length) among the non-zero vectors belonging to that lattice $\mathcal{L}(B)$.
 
 Expressed mathematically, it is the problem of finding $\mathbf{v}$ such that $\min_{\mathbf{v} \in \mathcal{L}(B) \setminus \{\mathbf{0}\}} \| \mathbf{v} \|$. This minimum length is written as $\lambda_1(\mathcal{L})$ and is called the "first successive minimum" of the lattice.
 
@@ -298,7 +298,7 @@ Whereas the public key of Standard LWE was a matrix $A$, Ring-LWE uses a single 
 The equation looks like this:
 $$ b(x) = a(x) \cdot s(x) + e(x) \pmod q $$
 
-Since this is polynomial multiplication, by using the "Number Theoretic Transform (NTT)," which is similar to the Fast Fourier Transform (FFT), the computational complexity can be dramatically reduced to $\mathcal{O}(n \log n)$. Furthermore, because the size of the public key shrinks from a matrix to a single polynomial, the data size is reduced to $\mathcal{O}(n)$. This brings an overwhelming advantage in communication bandwidth.
+Since this is polynomial multiplication, by using the "Number Theoretic Transform (NTT)," which is similar to the [Fast Fourier Transform (FFT)](/en/p/fast-fourier-transform-algorithm/), the computational complexity can be dramatically reduced to $\mathcal{O}(n \log n)$. Furthermore, because the size of the public key shrinks from a matrix to a single polynomial, the data size is reduced to $\mathcal{O}(n)$. This brings an overwhelming advantage in communication bandwidth.
 
 Mathematically speaking, Ring-LWE reduces to a problem on a lattice with a special symmetry called an "Ideal Lattice" rather than a general lattice.
 
@@ -312,9 +312,9 @@ Currently, "CRYSTALS-Kyber" (standardized name: ML-KEM), which NIST selected as 
 
 Finally, let's touch upon the core issue: "Why is lattice-based cryptography considered unbreakable even when using quantum computers?"
 
-Shor's algorithm, which allows quantum computers to break [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography and Elliptic Curve Cryptography, is essentially an algorithm that solves the "Hidden Subgroup Problem (HSP)." The mathematical structure (finite abelian groups) behind [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) and ECC has periodicity, and by using a specific operation of quantum algorithms called the Quantum Fourier Transform (QFT), this period (hidden subgroup) can be extracted all at once.
+Shor's algorithm, which allows quantum computers to break [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography and Elliptic Curve Cryptography, is essentially an algorithm that solves the "Hidden Subgroup Problem (HSP)." The mathematical structure (finite abelian groups) behind [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) and [ECC](/en/p/elliptic-curve-cryptography-math-cpp/) has periodicity, and by using a specific operation of quantum algorithms called the Quantum Fourier Transform (QFT), this period (hidden subgroup) can be extracted all at once.
 
-However, lattice problems are fundamentally different. Although lattices also have periodicity, what is required in SVP and CVP is a geometric, non-linear property such as "shortest distance" or "removal of noise." Even if a "Quantum Fourier Transform over an abelian group" like Shor's algorithm is applied directly, useful information that would be the answer to the lattice problem cannot be efficiently extracted. To date, no quantum algorithm that can solve SVP or LWE in polynomial time has been discovered, and it is widely believed that even with the parallel computing power of quantum computers, the only effective means is near-brute-force search (about the level of square root speedup by Grover's algorithm).
+However, lattice problems are fundamentally different. Although lattices also have periodicity, what is required in SVP and CVP is a geometric, non-linear property such as "shortest distance" or "removal of noise." Even if a "Quantum Fourier Transform over an abelian group" like Shor's algorithm is applied directly, useful information that would be the answer to the lattice problem cannot be efficiently extracted. To date, no quantum algorithm that can solve SVP or LWE in polynomial time has been discovered, and it is widely believed that even with the parallel computing power of quantum computers, the only effective means is near-brute-force search (about the level of square root speedup by [Grover's algorithm](/en/p/grovers-algorithm-quantum-search/)).
 
 # 9. Conclusion
 

@@ -20,7 +20,7 @@ tags:
 
 سيطرت لغة واحدة، وهي JavaScript، على متصفحات الويب لفترة طويلة. ولكن، مع تزايد تعقيد تطبيقات الويب وتطلبها لأداء يضاهي التطبيقات الأصلية (native apps)، بدأت حدود JavaScript وحدها بالظهور. وهنا جاء دور **WebAssembly (Wasm)**.
 
-WebAssembly هي تنسيق ثنائي (binary format) جديد يمكن تنفيذه بسرعة تقارب سرعة الكود الأصلي في المتصفح. يتم تجميعها (compiled) من لغات برمجة مثل C و C++ و [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/)، وتُحدث اليوم ثورة ليس فقط في تطوير الويب، ولكن في مجالات واسعة تمتد من جانب الخادم (server-side) وحوسبة الحافة (edge computing)، وصولاً إلى أجهزة إنترنت الأشياء (IoT).
+WebAssembly هي تنسيق ثنائي (binary format) جديد يمكن تنفيذه بسرعة تقارب سرعة الكود الأصلي في المتصفح. يتم تجميعها (compiled) من لغات برمجة مثل C و C++ و [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/)، وتُحدث اليوم ثورة ليس فقط في تطوير الويب، ولكن في مجالات واسعة تمتد من جانب الخادم (server-side) وحوسبة الحافة (edge computing)، وصولاً إلى أجهزة [إنترنت الأشياء](/ar/p/technology-iot/) (IoT).
 
 في هذا المقال، سنشرح بشكل شامل حاضر ومستقبل WebAssembly، من المفاهيم الأساسية، إلى الآلية التقنية لكيفية عمل C و Rust داخل المتصفح، التكامل مع JavaScript، مقارنة الأداء، وتطبيقاتها في العالم خارج المتصفح (WASI).
 
@@ -134,7 +134,7 @@ fetch('module.wasm')
 
 ## 3.2 الوصول إلى واجهات برمجة تطبيقات الويب (Web APIs) والربط (Binding)
 
-لا تمتلك Wasm نفسها القدرة على الوصول المباشر إلى DOM أو Web API. للوصول إليها، يجب المرور عبر JavaScript.
+لا تمتلك Wasm نفسها القدرة على الوصول المباشر إلى DOM أو Web [API](/ar/p/chatgpt-gemini-claude-api-comparison/). للوصول إليها، يجب المرور عبر JavaScript.
 ولكن، كتابة هذه العمليات يدوياً يتطلب جهداً كبيراً. لذلك، تتوفر أدوات مثل **wasm-bindgen** في النظام البيئي لـ [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/).
 
 ```rust

@@ -12,7 +12,7 @@ description: '详细讲解如何使用C++和ggml在本地环境对TinyLLaMA等�
 
 # 使用C++开发小规模AI模型（如TinyLLaMA）的步骤
 
-近年来，在本地环境运行大型语言模型（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的关注度急剧上升。特别是像TinyLLaMA（1.1B参数）这样的小规模模型，即使在资源有限的边缘设备或普通笔记本电脑（包括Windows环境）上，也能以实用的速度进行推理。虽然使用Python和PyTorch进行开发是主流，但在追求极致性能和内存节省时，C++和基于C语言的张量库“ggml”的组合成为了事实上的标准。
+近年来，在本地环境运行[大型语言模型](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的关注度急剧上升。特别是像TinyLLaMA（1.1B参数）这样的小规模模型，即使在资源有限的边缘设备或普通笔记本电脑（包括Windows环境）上，也能以实用的速度进行推理。虽然使用Python和PyTorch进行开发是主流，但在追求极致性能和内存节省时，C++和基于C语言的张量库“ggml”的组合成为了事实上的标准。
 
 本文将非常详细地讲解如何从零开始构建一个使用C++加载TinyLLaMA并进行文本生成的推理引擎（或者说，深入理解现有的llama.cpp内部结构）的开发步骤。
 
@@ -81,9 +81,9 @@ sequenceDiagram
 
 ### 3.2 GGUF 格式的二进制结构
 
-从Hugging Face等的 `.safetensors` 格式转换而来的 **GGUF (GPT-Generated Unified Format)** 是用于推理的终极格式。它具有以下严格的二进制布局：
+从Hugging Face等的 `.safetensors` 格式转换而来的 **[GGUF](/zh-cn/p/llama-cpp-quantization-gguf/) (GPT-Generated Unified Format)** 是用于推理的终极格式。它具有以下严格的二进制布局：
 
-1. **Magic Bytes**: `0x46554747` (GGUF)。
+1. **Magic Bytes**: `0x46554747` ([GGUF](/zh-cn/p/llama-cpp-quantization-gguf/))。
 2. **Version**: 格式的版本号。
 3. **Tensor Count & Metadata Count**: 张量数量和元数据的键值对数量。
 4. **Metadata ([Key-Value](https://kenji.blog/zh-cn/p/nosql-database-selection-kvs-document-graph-wide-column/) Pairs)**: 带有字符串长度前缀的键和带有类型的值。

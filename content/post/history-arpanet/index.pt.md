@@ -35,7 +35,7 @@ O maior desafio técnico na construção da rede era "como transmitir e receber 
 Para resolver este problema, um conceito de comunicação completamente novo foi concebido de forma simultânea e independente. Este foi o método de "comutação de pacotes".
 
 Paul Baran, afiliado à RAND Corporation nos EUA, desenvolveu a teoria de uma "rede distribuída" que dividia os dados em pequenos pedaços e os transferia por diferentes rotas através de uma rede em forma de malha, a fim de aumentar a capacidade de sobrevivência das comunicações militares.
-Enquanto isso, Donald Davies, do Laboratório Nacional de Física (NPL) no Reino Unido, chegou independentemente a um conceito semelhante e nomeou os blocos de dados divididos como "pacotes". Além disso, Leonard Kleinrock, do Instituto de Tecnologia de Massachusetts (MIT), provou matematicamente a eficiência deste método de transferência de dados usando a teoria das filas.
+Enquanto isso, Donald Davies, do Laboratório Nacional de Física (NPL) no Reino Unido, chegou independentemente a um conceito semelhante e nomeou os blocos de dados divididos como "pacotes". Além disso, Leonard Kleinrock, do Instituto de Tecnologia de Massachusetts (MIT), provou matematicamente a eficiência deste método de transferência de dados usando a [teoria das filas](/pt/p/queuing-theory-basics/).
 
 ```mermaid
 graph TD

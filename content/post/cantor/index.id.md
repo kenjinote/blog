@@ -24,7 +24,7 @@ Penciptaannya tentang "Teori Himpunan" telah menjadi fondasi dari setiap bidang 
 
 [Georg Cantor](https://kenji.blog/id/p/cantor/) lahir pada tahun 1845 di St. Petersburg, Rusia. Ayahnya adalah seorang saudagar kaya dari Denmark, dan ibunya adalah seorang musisi Rusia. Menunjukkan bakat luar biasa dalam matematika sejak usia dini, ia akhirnya pindah ke Jerman dan belajar matematika di Universitas Berlin.
 
-Di Universitas Berlin, ia dibimbing oleh tokoh-tokoh terkemuka dunia matematika pada masa itu, **[Karl Weierstrass](https://kenji.blog/id/p/weierstrass/)** dan **Leopold Kronecker**. [Kronecker](https://kenji.blog/id/p/kronecker/) secara khusus kelak akan menjadi penentang terbesar Cantor.
+Di Universitas Berlin, ia dibimbing oleh tokoh-tokoh terkemuka dunia matematika pada masa itu, **[Karl Weierstrass](https://kenji.blog/id/p/weierstrass/)** dan **[Leopold Kronecker](/id/p/kronecker/)**. [Kronecker](https://kenji.blog/id/p/kronecker/) secara khusus kelak akan menjadi penentang terbesar Cantor.
 
 ### Pencarian Ketakterhinggaan dan Konflik dengan [Kronecker](https://kenji.blog/id/p/kronecker/)
 
@@ -111,9 +111,9 @@ graph TD
 
 ## Hipotesis Kontinum
 
-Apakah ada kardinalitas perantara antara kardinalitas bilangan asli $\aleph_0$ dan kardinalitas bilangan real $\mathfrak{c}$? Cantor berhipotesis bahwa "kardinalitas perantara seperti itu tidak ada". Ini adalah **Hipotesis Kontinum (CH)**.
+Apakah ada kardinalitas perantara antara kardinalitas bilangan asli $\aleph_0$ dan kardinalitas bilangan real $\mathfrak{c}$? Cantor berhipotesis bahwa "kardinalitas perantara seperti itu tidak ada". Ini adalah **[Hipotesis Kontinum](/id/p/continuum-hypothesis/) (CH)**.
 
-Cantor menghabiskan sebagian besar tahun-tahun terakhirnya untuk mencoba membuktikan hipotesis ini, tetapi ia pada akhirnya tidak dapat menyelesaikannya. Belakangan, melalui penelitian [Kurt Gödel](https://kenji.blog/id/p/godel/) dan Paul Cohen, ditemukan bahwa hipotesis kontinum adalah proposisi independen yang "tidak dapat dibuktikan maupun disangkal" dari aksioma standar teori himpunan (aksioma ZFC), sekali lagi memberikan kejutan besar bagi komunitas matematika.
+Cantor menghabiskan sebagian besar tahun-tahun terakhirnya untuk mencoba membuktikan hipotesis ini, tetapi ia pada akhirnya tidak dapat menyelesaikannya. Belakangan, melalui penelitian [Kurt Gödel](https://kenji.blog/id/p/godel/) dan Paul Cohen, ditemukan bahwa [hipotesis kontinum](/id/p/continuum-hypothesis/) adalah proposisi independen yang "tidak dapat dibuktikan maupun disangkal" dari aksioma standar teori himpunan (aksioma ZFC), sekali lagi memberikan kejutan besar bagi komunitas matematika.
 
 ## Kesimpulan
 

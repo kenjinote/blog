@@ -28,12 +28,12 @@ DNS sering diibaratkan sebagai "buku telepon internet". Sama seperti Anda mencar
 Apa yang akan terjadi jika kita mencoba mengelola tabel korespondensi semua nama domain dan alamat IP di seluruh dunia dalam "satu server raksasa"?
 Ratusan juta permintaan dari seluruh dunia akan membanjiri setiap detik dan server akan segera *down*, dan jika server itu rusak, tidak ada seorang pun di dunia yang dapat menggunakan internet.
 
-Oleh karena itu, DNS dirancang sebagai "**basis data terdistribusi hierarkis**" di mana ratusan ribu server di seluruh dunia bekerja sama untuk mengelola data secara terdistribusi. Ini dikatakan sebagai sistem terdistribusi paling sukses dan beroperasi dalam skala terbesar dalam sejarah ilmu komputer.
+Oleh karena itu, DNS dirancang sebagai "**basis data terdistribusi hierarkis**" di mana ratusan ribu server di seluruh dunia bekerja sama untuk mengelola data secara terdistribusi. Ini dikatakan sebagai [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/) paling sukses dan beroperasi dalam skala terbesar dalam sejarah ilmu komputer.
 
 ## 3. Struktur Hierarki Nama Domain (Struktur Pohon)
 
 Untuk memahami mekanisme DNS, Anda perlu mengetahui "struktur" dari nama domain.
-Sebenarnya, nama domain memiliki struktur hierarki (struktur pohon) dari kanan ke kiri.
+Sebenarnya, nama domain memiliki struktur hierarki ([struktur pohon](/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) dari kanan ke kiri.
 
 Misalnya, jika kita mengurai domain `www.example.co.jp.` dari kanan, akan menjadi seperti berikut:
 
@@ -83,6 +83,6 @@ Lebih dari 99% kueri DNS di seluruh dunia diproses secara instan oleh cache ini,
 ## 6. Kesimpulan
 
 DNS adalah "pahlawan tanpa tanda jasa" yang sama sekali tidak kita sadari dalam keseharian kita.
-Namun, tanpa sistem terdistribusi hierarkis yang dirancang oleh Paul Mockapetris dan rekan-rekannya pada tahun 1980-an ini, internet raksasa saat ini tidak akan pernah ada.
+Namun, tanpa [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/) hierarkis yang dirancang oleh Paul Mockapetris dan rekan-rekannya pada tahun 1980-an ini, internet raksasa saat ini tidak akan pernah ada.
 
 Ratusan ribu server DNS yang tersebar di seluruh dunia masing-masing bertanggung jawab atas area tugasnya sendiri, bekerja sama dalam estafet ember. DNS adalah infrastruktur yang paling indah mewujudkan filosofi "otonomi terdistribusi" dari internet.

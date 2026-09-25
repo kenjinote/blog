@@ -14,7 +14,7 @@ description: 'Menjelaskan secara detail mulai dari dasar matematis Zero-Knowledg
 
 Dalam masyarakat digital modern, privasi data dan skalabilitas menjadi dua tantangan yang paling penting. Di tengah meningkatnya risiko kebocoran dan penyalahgunaan informasi pribadi, ada kebutuhan yang kuat akan teknologi yang memungkinkan seseorang untuk "membuktikan bahwa mereka memiliki suatu informasi tanpa mengungkapkan informasi itu sendiri kepada pihak lain". Hal ini diwujudkan oleh **Zero-Knowledge Proof (ZKP) atau Bukti Tanpa Pengetahuan**.
 
-Zero-Knowledge Proof adalah konsep teori kriptografi yang pertama kali diusulkan pada tahun 1980-an oleh Shafi Goldwasser, Silvio Micali, dan Charles Rackoff, namun untuk waktu yang lama hanya sebatas penelitian teoretis. Akan tetapi, dengan munculnya teknologi blockchain dan Web3, situasinya berubah drastis. ZKP kini mendapat sorotan sebagai "tongkat ajaib" yang mampu menyelesaikan sekaligus masalah skalabilitas (batas kapasitas pemrosesan) dan masalah privasi (semua transaksi bersifat publik) yang dihadapi oleh blockchain publik seperti Ethereum.
+Zero-Knowledge Proof adalah konsep teori kriptografi yang pertama kali diusulkan pada tahun 1980-an oleh Shafi Goldwasser, Silvio Micali, dan Charles Rackoff, namun untuk waktu yang lama hanya sebatas penelitian teoretis. Akan tetapi, dengan munculnya teknologi [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/) dan Web3, situasinya berubah drastis. ZKP kini mendapat sorotan sebagai "tongkat ajaib" yang mampu menyelesaikan sekaligus masalah skalabilitas (batas kapasitas pemrosesan) dan masalah privasi (semua transaksi bersifat publik) yang dihadapi oleh [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/) publik seperti Ethereum.
 
 Dalam artikel ini, kami akan menjelaskan secara sangat terperinci dan mendalam dari sudut pandang teknis, mulai dari konsep dasar Zero-Knowledge Proof, mekanisme matematis dan kriptografis yang mendalam dari **zk-SNARKs** dan **zk-STARKs** yang saat ini menjadi arus utama, hingga contoh aplikasi terkininya pada Web3 dan keamanan seperti ZK-Rollups dan Identitas Terdesentralisasi (DID).
 
@@ -60,7 +60,7 @@ sequenceDiagram
     Note over Prover, Verifier: "※Diulang puluhan kali untuk meningkatkan tingkat kepastian"
 ```
 
-Metode ini sangat kuat, tetapi mengharuskan pemverifikasi untuk selalu online, sehingga kurang praktis diterapkan pada sistem terdistribusi asinkron seperti blockchain. Di blockchain, siapa pun harus dapat memverifikasi bukti-bukti masa lalu kapan saja.
+Metode ini sangat kuat, tetapi mengharuskan pemverifikasi untuk selalu online, sehingga kurang praktis diterapkan pada [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/) asinkron seperti [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/). Di [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/), siapa pun harus dapat memverifikasi bukti-bukti masa lalu kapan saja.
 
 #### Transformasi Fiat-Shamir (Fiat-Shamir Heuristic) dan Non-Interaktivitas
 
@@ -192,7 +192,7 @@ Pada proyek Proof of Personhood (bukti kemanusiaan) seperti Worldcoin, data sela
 
 ### 3. [Smart Contract](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/) Rahasia dan Penggunaan di Tingkat Perusahaan (Enterprise)
 
-Sifat blockchain publik di mana "semua data dipublikasikan" sebelumnya menjadi hambatan besar bagi perusahaan ketika mereka ingin mengelola transaksi rahasia atau informasi rantai pasokan di atas blockchain.
+Sifat [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/) publik di mana "semua data dipublikasikan" sebelumnya menjadi hambatan besar bagi perusahaan ketika mereka ingin mengelola transaksi rahasia atau informasi rantai pasokan di atas [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/).
 
 Dengan menggunakan teknologi ZKP (misalnya pada jaringan yang berfokus pada privasi seperti Aleo atau Aztec), kita dapat mengenkripsi nilai masukan transaksi, nilai keluaran, bahkan logika smart contract yang dieksekusi, dan hanya mencatatkan kebenaran dari pembaruan status ke dalam rantai publik. Hal ini memungkinkan pencegahan front-running (MEV) dalam DeFi (Keuangan Terdesentralisasi) serta pembentukan jaringan konsorsium rahasia antarperusahaan, sembari tetap menikmati tingkat keamanan yang tinggi dari rantai publik.
 
@@ -203,13 +203,13 @@ Dengan menggunakan teknologi ZKP (misalnya pada jaringan yang berfokus pada priv
 ZKP tidak diragukan lagi merupakan teknologi dasar generasi berikutnya, tetapi masih menyisakan beberapa tantangan:
 
 1. **Biaya Komputasi Pembuatan Bukti dan Akselerasi Perangkat Keras**
-   Pembuatan ZKP memerlukan operasi polinomial yang sangat besar, FFT (Fast Fourier Transform), dan MSM (Multi-Scalar Multiplication). Saat ini, penelitian tentang pengembangan perangkat keras khusus (FPGA atau ASIC) untuk mempercepat pembuatan bukti ini, atau yang disebut **Penambangan ZKP (Prover Network)**, sedang berkembang pesat.
+   Pembuatan ZKP memerlukan operasi polinomial yang sangat besar, [FFT](/id/p/fast-fourier-transform-algorithm/) (Fast Fourier Transform), dan MSM (Multi-Scalar Multiplication). Saat ini, penelitian tentang pengembangan perangkat keras khusus (FPGA atau ASIC) untuk mempercepat pembuatan bukti ini, atau yang disebut **Penambangan ZKP (Prover Network)**, sedang berkembang pesat.
 2. **Standardisasi dan Peningkatan Pengalaman Pengembang (DX)**
    Banyak bahasa khusus yang bermunculan untuk menulis sirkuit ZKP, seperti Circom, Cairo, Noir, Leo, dan lain-lain. Kemampuan untuk menyatukan standar ini dan kematangan kompiler yang secara otomatis dapat menghasilkan sirkuit ZKP dari bahasa pemrograman yang ada seperti [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) atau C++ akan menjadi kunci bagi para rekayasawan perangkat lunak umum untuk mengadopsi ZKP.
 
 ## Penutup
 
-Zero-Knowledge Proof (ZKP) telah berevolusi dari sekadar "teknologi untuk meningkatkan anonimitas mata uang kripto" menjadi "teknologi serbaguna yang mendefinisikan ulang kepercayaan (trust) di seluruh internet". Bukti kecil yang dihitung dari kedalaman formula matematika dan teori kriptografi ini akan menjadi perisai kuat yang melindungi privasi kita, sekaligus memperluas skalabilitas blockchain tanpa batas.
+Zero-Knowledge Proof (ZKP) telah berevolusi dari sekadar "teknologi untuk meningkatkan anonimitas mata uang kripto" menjadi "teknologi serbaguna yang mendefinisikan ulang kepercayaan (trust) di seluruh internet". Bukti kecil yang dihitung dari kedalaman formula matematika dan teori kriptografi ini akan menjadi perisai kuat yang melindungi privasi kita, sekaligus memperluas skalabilitas [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/) tanpa batas.
 
 Dalam mewujudkan adopsi massal Web3 yang sesungguhnya dan membangun internet generasi mendatang yang aman dan privat, Zero-Knowledge Proof akan terus berfungsi sebagai bagian yang paling penting. Evolusi teknologi ZKP ke depannya sangat patut untuk terus diperhatikan.
 

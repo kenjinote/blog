@@ -56,12 +56,12 @@ Da Geschäfte keine teuren FeliCa-Lesegeräte benötigten und Zahlungen einfach 
 
 In der Zwischenzeit war in der Internetwelt die Leidenschaft für eine "digitale Währung ohne zentrale Autorität", von der David Chaum geträumt hatte, nicht erloschen.
 
-Im Jahr 2008 vollendete **Bitcoin**, angekündigt von Satoshi Nakamoto, eine digitale Währung, die mithilfe der Blockchain-Technologie und PoW (Proof of Work) ohne ein bestimmtes Unternehmen oder eine Bank (zentrale Autorität) nicht gefälscht oder doppelt ausgegeben werden konnte.
+Im Jahr 2008 vollendete **Bitcoin**, angekündigt von Satoshi Nakamoto, eine digitale Währung, die mithilfe der [Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/)-Technologie und PoW (Proof of Work) ohne ein bestimmtes Unternehmen oder eine Bank (zentrale Autorität) nicht gefälscht oder doppelt ausgegeben werden konnte.
 Elektronisches Geld wie Suica oder PayPay ist letztendlich ein zentralisiertes System, bei dem man "dem Server des Betreiberunternehmens (JR oder PayPay) vertraut", wohingegen Bitcoin einen grundlegend anderen Paradigmenwechsel darstellt, da es sich um ein "dezentrales" System handelt, das von allen Teilnehmern gegenseitig überwacht wird.
 
 ## 6. Fazit: Die Zukunft von Wert in Form von Daten
 
-Der Versuch, "Geld in Daten zu verwandeln", begann mit den Misserfolgen der Kryptographen in den 1990er Jahren, erlebte eine praktische Anwendung an japanischen Ticket-Gates (FeliCa), entwickelte sich durch die Verbreitung von Smartphones zu Cloud-basierten (QR-Code) Zahlungen und erreichte schließlich mit der Blockchain die ultimative Form einer dezentralisierten Währung.
+Der Versuch, "Geld in Daten zu verwandeln", begann mit den Misserfolgen der Kryptographen in den 1990er Jahren, erlebte eine praktische Anwendung an japanischen Ticket-Gates (FeliCa), entwickelte sich durch die Verbreitung von Smartphones zu Cloud-basierten (QR-Code) Zahlungen und erreichte schließlich mit der [Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/) die ultimative Form einer dezentralisierten Währung.
 
 Derzeit forcieren Zentralbanken auf der ganzen Welt die Erforschung von "CBDCs (Central Bank Digital Currencies)", digitalen Fiat-Währungen, die vom Staat selbst ausgegeben werden.
 Wie wird sich unser Konzept von "Wert" verändern, wenn Geld vollständig durch "masselose Daten" ersetzt wird? Die Geschichte des elektronischen Geldes steuert nun auf ihr letztes Kapitel zu.

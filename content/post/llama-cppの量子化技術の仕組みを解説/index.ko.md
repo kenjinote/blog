@@ -12,9 +12,9 @@ description: 'llama.cpp에 채택된 GGUF 포맷과 k-quants 양자화 기술의
 
 ## 1. 들어가며: 왜 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)에는 양자화가 필요한가?
 
-최근 대규모 언어 모델(LLM: [Large Language Models](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 발전은 눈부실 정도이지만, 그 이면에는 '컴퓨팅 자원의 고갈'과 '메모리 대역폭의 병목 현상'이라는 심각한 문제가 떠오르고 있습니다. 예를 들어, Llama 3와 같은 70B(700억) 파라미터 모델을 표준적인 16비트 부동소수점(FP16)으로 메모리에 로드할 경우, 파라미터만으로 약 140GB의 VRAM/RAM을 소비합니다. 여기에 추론 시의 컨텍스트(KV 캐시)가 더해지면, 데이터센터용 하이엔드 GPU(NVIDIA A100 80GB나 H100 80GB)를 여러 대 클러스터링하지 않고서는 작동하지 않습니다.
+최근 [대규모 언어 모델](/ko/p/large-language-models-llm-transformer-prompt-engineering/)([LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/): [Large Language Models](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 발전은 눈부실 정도이지만, 그 이면에는 '컴퓨팅 자원의 고갈'과 '메모리 대역폭의 병목 현상'이라는 심각한 문제가 떠오르고 있습니다. 예를 들어, Llama 3와 같은 70B(700억) 파라미터 모델을 표준적인 16비트 부동소수점(FP16)으로 메모리에 로드할 경우, 파라미터만으로 약 140GB의 VRAM/RAM을 소비합니다. 여기에 추론 시의 컨텍스트(KV 캐시)가 더해지면, 데이터센터용 하이엔드 GPU([NVIDIA](/ko/p/history-of-nvidia/) A100 80GB나 H100 80GB)를 여러 대 클러스터링하지 않고서는 작동하지 않습니다.
 
-개인 개발자나 엣지 디바이스(MacBook이나 일반적인 게이밍 PC)에서 LLM을 구동시키기 위한 구세주로 등장한 것이 **llama.cpp** 와 그 핵심을 이루는 **양자화(Quantization) 기술 ** 입니다. 특히 **GGUF (GPT-Generated Unified Format)** 라는 파일 포맷과 **k-quants** 라고 불리는 고도화된 블록 단위의 양자화 알고리즘은, 모델의 정확도(Perplexity) 저하를 극한까지 억제하면서 모델 크기를 몇 분의 일로 압축하는 획기적인 기법입니다.
+개인 개발자나 엣지 디바이스(MacBook이나 일반적인 게이밍 PC)에서 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 구동시키기 위한 구세주로 등장한 것이 **llama.cpp** 와 그 핵심을 이루는 **양자화(Quantization) 기술 ** 입니다. 특히 **GGUF (GPT-Generated Unified Format)** 라는 파일 포맷과 **k-quants** 라고 불리는 고도화된 블록 단위의 양자화 알고리즘은, 모델의 정확도(Perplexity) 저하를 극한까지 억제하면서 모델 크기를 몇 분의 일로 압축하는 획기적인 기법입니다.
 
 본 문서에서는 이 llama.cpp에서의 양자화의 수학적 배경부터 GGML 형식과의 차이, GGUF 포맷의 상세한 구조, 그리고 k-quants의 내부 메커니즘에 이르기까지 철저하게 해설합니다.
 
@@ -22,7 +22,7 @@ description: 'llama.cpp에 채택된 GGUF 포맷과 k-quants 양자화 기술의
 
 ## 2. 양자화(Quantization)의 수학적 기초
 
-LLM의 문맥에서 양자화란, 연속적인 값(또는 고정밀도의 부동소수점 수)을 더 적은 비트 수(INT8, INT4, INT3 등)의 이산적인 값으로 매핑하는 작업을 의미합니다.
+[LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 문맥에서 양자화란, 연속적인 값(또는 고정밀도의 부동소수점 수)을 더 적은 비트 수(INT8, INT4, INT3 등)의 이산적인 값으로 매핑하는 작업을 의미합니다.
 
 ### 2.1. 선형 양자화의 기본 수식
 
@@ -187,7 +187,7 @@ llama.cpp가 CPU 추론에서 경이적인 속도를 자랑하는 것은, 어셈
 
 ### 5.2. GPU 환경 (cuBLAS / CUDA)에서의 오프로드
 
-최근의 llama.cpp는 CPU뿐만 아니라, NVIDIA GPU에 대한 강력한 지원(CUBLAS / CUDA)도 가지고 있습니다.
+최근의 llama.cpp는 CPU뿐만 아니라, [NVIDIA](/ko/p/history-of-nvidia/) GPU에 대한 강력한 지원(CUBLAS / CUDA)도 가지고 있습니다.
 GGUF 파일의 일부 또는 전부의 레이어를 VRAM으로 오프로드하는 것이 가능합니다(`--n-gpu-layers` 옵션).
 
 ```mermaid

@@ -52,7 +52,7 @@ Dies war eine Schlagzeile aus der britischen Zeitung "The Times" und diente nich
 
 ## 3. Die Architektur der [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)
 
-Die Kerntechnologie, die Bitcoin unterstützt, ist die "Blockchain". Die Blockchain ist eine Form der Distributed-Ledger-Technologie (DLT), bei der Daten in Einheiten namens "Blöcken" gebündelt und kryptografisch wie eine Kette miteinander verbunden werden.
+Die Kerntechnologie, die Bitcoin unterstützt, ist die "[Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/)". Die [Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/) ist eine Form der Distributed-Ledger-Technologie (DLT), bei der Daten in Einheiten namens "Blöcken" gebündelt und kryptografisch wie eine Kette miteinander verbunden werden.
 
 ```mermaid
 flowchart TD
@@ -115,7 +115,7 @@ Wenn Alice Bitcoins an Bob sendet, erstellt Alice eine **digitale Signatur ([Dig
 
 ### Elliptische Kurvenkryptografie (Elliptic Curve [Cryptography](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/): ECC) und secp256k1
 
-Für die Erstellung öffentlicher Schlüssel und digitale Signaturen bei Bitcoin wird nicht die [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptografie, sondern die **elliptische Kurvenkryptografie (ECC)** verwendet. ECC bietet den Vorteil, bei deutlich kürzerer Schlüssellänge ein vergleichbares Sicherheitsniveau wie RSA zu bieten.
+Für die Erstellung öffentlicher Schlüssel und digitale Signaturen bei Bitcoin wird nicht die [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptografie, sondern die **elliptische Kurvenkryptografie ([ECC](/de/p/elliptic-curve-cryptography-math-cpp/))** verwendet. [ECC](/de/p/elliptic-curve-cryptography-math-cpp/) bietet den Vorteil, bei deutlich kürzerer Schlüssellänge ein vergleichbares Sicherheitsniveau wie RSA zu bieten.
 
 Die spezifischen Parameter der bei Bitcoin verwendeten elliptischen Kurve werden **secp256k1** genannt. Diese Kurve ist über einem endlichen Körper $\mathbb{F}_p$ definiert und wird durch die folgende Gleichung dargestellt:
 
@@ -224,7 +224,7 @@ Beim Upgrade des [Blockchain](https://kenji.blog/de/p/blockchain-technology-smar
 
 Ein vielversprechender Ansatz zur Lösung des Skalierbarkeitsproblems ist das Lightning Network, eine **Layer-2 (Layer 2)**-Lösung.
 
-Im Lightning Network eröffnen die Teilnehmer "Zahlungskanäle (Payment Channels)" außerhalb der Blockchain (off-chain). Innerhalb des Kanals können Gelder in Sekundenbruchteilen und fast kostenlos beliebig oft hin- und hergeschickt werden, ohne Transaktionen in der Blockchain aufzuzeichnen, solange beide Parteien zustimmen. Erst bei der endgültigen Abrechnung der Salden wird eine Transaktion auf der Blockchain (Layer 1) aufgezeichnet.
+Im Lightning Network eröffnen die Teilnehmer "Zahlungskanäle (Payment Channels)" außerhalb der [Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/) (off-chain). Innerhalb des Kanals können Gelder in Sekundenbruchteilen und fast kostenlos beliebig oft hin- und hergeschickt werden, ohne Transaktionen in der [Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/) aufzuzeichnen, solange beide Parteien zustimmen. Erst bei der endgültigen Abrechnung der Salden wird eine Transaktion auf der [Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/) (Layer 1) aufgezeichnet.
 
 ### Vergleich mit Proof of Stake ([PoS](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/))
 
@@ -234,7 +234,7 @@ Bei PoS wird das Recht zur Generierung des nächsten Blocks (Validatoren) nicht 
 
 ## 8. Die Abgründe der Kryptografie: Mathematische Beweise und die Robustheit des Protokolls
 
-Hinter SHA-256 und der elliptischen Kurvenkryptografie (ECC), die in den vorherigen Kapiteln erklärt wurden, stehen zwei Paradigmen: informationstheoretische Sicherheit und rechentechnische Sicherheit. Moderne Kryptowährungen wie Bitcoin verlassen sich hauptsächlich auf die rechentechnische Sicherheit (Computational Security).
+Hinter SHA-256 und der elliptischen Kurvenkryptografie ([ECC](/de/p/elliptic-curve-cryptography-math-cpp/)), die in den vorherigen Kapiteln erklärt wurden, stehen zwei Paradigmen: informationstheoretische Sicherheit und rechentechnische Sicherheit. Moderne Kryptowährungen wie Bitcoin verlassen sich hauptsächlich auf die rechentechnische Sicherheit (Computational Security).
 
 ### Rechentechnische Sicherheit und das Problem des diskreten Logarithmus
 
@@ -248,13 +248,13 @@ Bei Bitcoins secp256k1 ist $p \approx 2^{256}$, daher erfordert das Knacken etwa
 ### Die Bedrohung durch Quantencomputer und Post-Quanten-Kryptografie
 
 Es gibt jedoch ein großes Bedenken hinsichtlich der rechentechnischen Sicherheit: den Aufstieg von **Quantencomputern (Quantum Computers)**.
-"[Shor's Algorithm](https://kenji.blog/de/p/quantum-computing-shors-algorithm/)us", 1994 von Peter Shor veröffentlicht, bewies mathematisch, dass ein Quantencomputer Probleme wie die Primfaktorzerlegung (die Basis von [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)) und das Problem des diskreten Logarithmus (die Basis von ECC) in Polynomialzeit $\mathcal{O}(n^3)$ lösen kann.
+"[Shor's Algorithm](https://kenji.blog/de/p/quantum-computing-shors-algorithm/)us", 1994 von Peter Shor veröffentlicht, bewies mathematisch, dass ein Quantencomputer Probleme wie die Primfaktorzerlegung (die Basis von [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)) und das Problem des diskreten Logarithmus (die Basis von [ECC](/de/p/elliptic-curve-cryptography-math-cpp/)) in Polynomialzeit $\mathcal{O}(n^3)$ lösen kann.
 
 Wenn praktische und große Quantencomputer mit genügend Qubits und niedrigen Fehlerraten entwickelt werden, besteht das Risiko, dass der private Schlüssel aus dem öffentlichen Schlüssel von Bitcoin zurückgerechnet werden kann.
 Die Verteidigungsmaßnahmen des Bitcoin-Netzwerks dagegen sind wie folgt:
 
-1. **Schutz durch Hash-Funktionen**: Eine Bitcoin-Adresse ist nicht der öffentliche Schlüssel selbst, sondern das Ergebnis der Anwendung der Hash-Funktionen SHA-256 und RIPEMD-160 auf den öffentlichen Schlüssel. Selbst mit Quantencomputern bleibt die Rückrechnung einer Hash-Funktion (sogar mit Grovers Algorithmus beträgt die Komplexität $\mathcal{O}(\sqrt{N})$) schwierig. Daher gilt der Inhalt einer Adresse als quantensicher, bis eine Transaktion durchgeführt und der öffentliche Schlüssel dem Netzwerk offengelegt wird.
-2. **Übergang zur Post-Quanten-Kryptografie (Post-Quantum [Cryptography](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/): PQC)**: Es wird diskutiert, das Bitcoin-Protokoll vor der praktischen Anwendung von Quantencomputern zu "hard forken" und zu neuen Signaturalgorithmen überzugehen, die selbst für Quantencomputer schwer zu knacken sind, wie z.B. gitterbasierte Kryptografie (Lattice-based cryptography) oder multivariate polynomische Kryptografie (Multivariate polynomial cryptography), die vom NIST (National Institute of Standards and Technology) ausgewählt werden.
+1. **Schutz durch Hash-Funktionen**: Eine Bitcoin-Adresse ist nicht der öffentliche Schlüssel selbst, sondern das Ergebnis der Anwendung der Hash-Funktionen SHA-256 und RIPEMD-160 auf den öffentlichen Schlüssel. Selbst mit Quantencomputern bleibt die Rückrechnung einer Hash-Funktion (sogar mit [Grovers Algorithmus](/de/p/grovers-algorithm-quantum-search/) beträgt die Komplexität $\mathcal{O}(\sqrt{N})$) schwierig. Daher gilt der Inhalt einer Adresse als quantensicher, bis eine Transaktion durchgeführt und der öffentliche Schlüssel dem Netzwerk offengelegt wird.
+2. **Übergang zur Post-Quanten-Kryptografie (Post-Quantum [Cryptography](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/): PQC)**: Es wird diskutiert, das Bitcoin-Protokoll vor der praktischen Anwendung von Quantencomputern zu "hard forken" und zu neuen Signaturalgorithmen überzugehen, die selbst für Quantencomputer schwer zu knacken sind, wie z.B. gitterbasierte Kryptografie ([Lattice-based cryptography](/de/p/lattice-based-cryptography-math-intuition/)) oder multivariate polynomische Kryptografie (Multivariate polynomial cryptography), die vom NIST (National Institute of Standards and Technology) ausgewählt werden.
 
 ## 9. Netzwerk-Topologie und Details des [P2P](https://kenji.blog/de/p/webrtc-realtime-communication-p2p/)-Protokolls
 
@@ -265,7 +265,7 @@ Das Bitcoin-Netzwerk ist nicht nur eine Ansammlung von Servern und Clients, sond
 Die Computer, die am Netzwerk teilnehmen, werden "Knoten (Nodes)" genannt. Es gibt verschiedene Arten von Knoten mit jeweils unterschiedlichen Rollen.
 
 - **Vollständiger Knoten (Full Node)**: Ein Knoten, der sämtliche [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)-Daten (Hunderte von GB) vom Genesis-Block bis zum neuesten Block herunterlädt und verifiziert. Er übernimmt den Kern der Netzwerksicherheit, da er unabhängig die Gültigkeit von Transaktionen und das Vorliegen von Double-Spending überprüft.
-- **SPV-Knoten (Simplified Payment Verification Node)**: Ein leichtgewichtiger Knoten, der nur Block-Header statt der gesamten Blockchain herunterlädt. Er wird hauptsächlich in Wallets für Smartphones verwendet. Er kann überprüfen, ob seine eigenen Transaktionen in einem Block enthalten sind (Verifizierung des Merkle-Pfades), hat aber nicht die Verifizierungskapazität eines Full Nodes.
+- **SPV-Knoten (Simplified Payment Verification Node)**: Ein leichtgewichtiger Knoten, der nur Block-Header statt der gesamten [Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/) herunterlädt. Er wird hauptsächlich in Wallets für Smartphones verwendet. Er kann überprüfen, ob seine eigenen Transaktionen in einem Block enthalten sind (Verifizierung des Merkle-Pfades), hat aber nicht die Verifizierungskapazität eines Full Nodes.
 - **Mining-Knoten (Mining Node)**: Ein Knoten, der [PoW](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)-Berechnungen durchführt und neue Blöcke generiert. Heutzutage übernehmen riesige "Mining-Pools", in denen dedizierte Mining-Hardware, sogenannte ASICs (Application Specific Integrated Circuits), gebündelt sind, diese Rolle.
 
 ### Der Verbreitungsprozess von Transaktionen (Gossip-Protokoll)
@@ -299,7 +299,7 @@ Dieses disinflationäre Geldmengenmodell imitiert das Schürfen von Gold und ste
 
 ### Spieltheoretische Analyse des 51%-Angriffs (51% Attack)
 
-Die größte Bedrohung für die Blockchain ist der **51%-Angriff**. Wenn ein einzelner böswilliger Akteur die Mehrheit (51% oder mehr) der Rechenleistung (Hashrate) des gesamten Netzwerks kontrolliert, wird Folgendes möglich:
+Die größte Bedrohung für die [Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/) ist der **51%-Angriff**. Wenn ein einzelner böswilliger Akteur die Mehrheit (51% oder mehr) der Rechenleistung (Hashrate) des gesamten Netzwerks kontrolliert, wird Folgendes möglich:
 
 1. Seine eigenen vergangenen Transaktionen rückgängig machen (Double-Spending)
 2. Die Genehmigung bestimmter Transaktionen ablehnen (Zensur)
@@ -311,7 +311,7 @@ Selbst wenn jemand unter enormen Kosten (Milliarden für Hardware und gewaltiger
 
 In diesem Artikel haben wir die mathematischen, technischen und ökonomischen Mechanismen hinter Bitcoin und Kryptowährungen gründlich seziert.
 
-Obwohl die Blockchain-Technologie auf den ersten Blick wie ein komplexer Haufen aus Mathematik und Code aussieht, ist ihre Essenz nichts anderes als **"ein neues Konsensbildungssystem für die Menschheit, das nicht auf Autorität beruht, sondern Mathematik und physikalische Gesetze als Grundlage des Vertrauens nutzt."**
+Obwohl die [Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/)-Technologie auf den ersten Blick wie ein komplexer Haufen aus Mathematik und Code aussieht, ist ihre Essenz nichts anderes als **"ein neues Konsensbildungssystem für die Menschheit, das nicht auf Autorität beruht, sondern Mathematik und physikalische Gesetze als Grundlage des Vertrauens nutzt."**
 
 Das Finanzsystem, das wir jeden Tag als selbstverständlich nutzen, ist im Laufe seiner langen Geschichte unzählige Male gescheitert und wurde jedes Mal nur notdürftig geflickt. Die von Satoshi Nakamoto präsentierte Lösung ist keineswegs perfekt. Es gibt unzählige Hürden zu überwinden, wie Skalierbarkeitsprobleme, Umweltaspekte sowie staatliche Regulierungen und Gesetzgebungen.
 
@@ -319,7 +319,7 @@ Das Konzept eines "vertrauenslosen, dezentralisierten Systems", das einmal aus d
 
 ## Anhang: Ressourcen und Referenzen für vertiefendes Lernen
 
-Für diejenigen, die nach dem Lesen dieses Artikels tiefer in die Blockchain-Technologie und Kryptografie eintauchen möchten, stellen wir einige empfohlene Ressourcen vor.
+Für diejenigen, die nach dem Lesen dieses Artikels tiefer in die [Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/)-Technologie und Kryptografie eintauchen möchten, stellen wir einige empfohlene Ressourcen vor.
 
 ### Lesenswerte Original-Whitepapers
 - **Bitcoin: A Peer-to-Peer Electronic Cash System** (Satoshi Nakamoto, 2008)
@@ -336,4 +336,4 @@ Um die Blockchain wirklich zu verstehen, sind Kenntnisse in Informationssicherhe
 > **Warning: Haftungsausschluss zu Investitionen**
 > Dieser Artikel wurde zu dem Zweck verfasst, die zugrundeliegende Technologie von Kryptowährungen sowie deren Geschichte und mathematische Struktur zu erklären, und stellt keine Empfehlung oder Aufforderung zur Investition in irgendwelche Kryptowährungen dar. Die Preise von Kryptowährungen sind extrem volatil, und Investitionen bergen erhebliche Risiken, einschließlich des Verlusts des eingesetzten Kapitals.
 
-Die technische Erforschung der Blockchain ist eine intellektuelle Grenze an der Schnittstelle von Informatik, Wirtschaft und Soziologie. Indem Sie Code lesen, Ihren eigenen Knoten einrichten und versuchen, Transaktionen im Testnetz zu generieren, werden Sie das wahre Potenzial und die Grenzen dieser Technologie aus erster Hand erfahren.
+Die technische Erforschung der [Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/) ist eine intellektuelle Grenze an der Schnittstelle von Informatik, Wirtschaft und Soziologie. Indem Sie Code lesen, Ihren eigenen Knoten einrichten und versuchen, Transaktionen im Testnetz zu generieren, werden Sie das wahre Potenzial und die Grenzen dieser Technologie aus erster Hand erfahren.

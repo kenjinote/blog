@@ -197,9 +197,9 @@ rsa_example()
 
 While [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography is powerful, as computer performance improved, it became necessary to increase the key length to maintain security (currently 2048 or 3072 bits), which caused the problem of increased computational cost.
 
-Thus, in 1985, "Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECC)" was proposed. This utilizes point addition on elliptic curves over finite fields (generally of the form $y^2 = x^3 + ax + b$).
+Thus, in 1985, "Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy ([ECC](/en/p/elliptic-curve-cryptography-math-cpp/))" was proposed. This utilizes point addition on elliptic curves over finite fields (generally of the form $y^2 = x^3 + ax + b$).
 
-The Elliptic Curve Discrete Logarithm Problem (ECDLP) is known to be even harder to solve than the integer factorization problem, and **ECC can achieve security equivalent to a 3072-bit [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) key with a key length of only 256 bits**. This made fast and secure encrypted communication (such as ECDSA and ECDH) possible even in environments with limited computational resources, like smartphones and IoT devices.
+The Elliptic Curve Discrete Logarithm Problem (ECDLP) is known to be even harder to solve than the integer factorization problem, and **[ECC](/en/p/elliptic-curve-cryptography-math-cpp/) can achieve security equivalent to a 3072-bit [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) key with a key length of only 256 bits**. This made fast and secure encrypted communication (such as ECDSA and ECDH) possible even in environments with limited computational resources, like smartphones and IoT devices.
 
 ---
 
@@ -207,7 +207,7 @@ The Elliptic Curve Discrete Logarithm Problem (ECDLP) is known to be even harder
 
 [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic technology seemed rock-solid, but in 1994, a massive shockwave hit with the announcement of "[Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)" by Peter Shor.
 
-Quantum computers perform calculations utilizing the properties of quantum mechanics, namely "superposition" and "quantum entanglement." It was mathematically proven that if Shor's algorithm is executed on a sufficiently capable quantum computer, the integer factorization problem and the discrete logarithm problem could be solved in "polynomial time." This means that on the day a practical quantum computer is completed (Q-Day), all currently used public-key cryptosystems like [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) and ECC will instantaneously collapse.
+Quantum computers perform calculations utilizing the properties of quantum mechanics, namely "superposition" and "quantum entanglement." It was mathematically proven that if Shor's algorithm is executed on a sufficiently capable quantum computer, the integer factorization problem and the discrete logarithm problem could be solved in "polynomial time." This means that on the day a practical quantum computer is completed (Q-Day), all currently used public-key cryptosystems like [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) and [ECC](/en/p/elliptic-curve-cryptography-math-cpp/) will instantaneously collapse.
 
 ## The Emergence of PQC (Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy)
 To prepare for this unprecedented threat, research is rapidly progressing on "Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC)," based on new mathematical problems that are difficult to break even for quantum computers. NIST (National Institute of Standards and Technology) has been running a PQC standardization process for many years, and the following mathematical approaches are primarily considered the most promising.

@@ -18,7 +18,7 @@ Esta questão é o mistério derradeiro que tem fascinado o intelecto humano, de
 
 ## Capítulo 1: O Impacto da Experiência de Pensamento do "Cérebro numa Cuba"
 
-O "Cérebro numa cuba" (Brain in a vat) é uma experiência de pensamento proposta pelo filósofo Hilary Putnam em 1981. No entanto, a questão fundamental de "até que ponto podemos confiar na nossa perceção" remonta ao argumento do "Gênio Maligno" de René Descartes no século XVII.
+O "Cérebro numa cuba" (Brain in a vat) é uma experiência de pensamento proposta pelo filósofo Hilary Putnam em 1981. No entanto, a questão fundamental de "até que ponto podemos confiar na nossa perceção" remonta ao argumento do "Gênio Maligno" de [René Descartes](/pt/p/descartes/) no século XVII.
 
 ### 1-1. O que é o Cérebro numa Cuba?
 

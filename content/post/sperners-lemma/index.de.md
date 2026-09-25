@@ -110,11 +110,11 @@ Daher ist klar, dass die Anzahl der Türen, die ins Freie führen, eine **ungera
 
 ## 5.3. Berechnung von Graden mit dem Handschlaglemma
 
-Hier kommt die Graphentheorie ins Spiel.
+Hier kommt die [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) ins Spiel.
 - Knoten des Graphen: Jedes kleine Dreieck (Raum) und das Freie.
 - Kanten des Graphen: Türen (Kanten der Farbe 1 und 2). Wenn zwei Räume eine Tür teilen, verbinden Sie Ihre Knoten mit einer Kante.
 
-Nach dem "Handschlaglemma", einem grundlegenden Satz in der Graphentheorie, muss die Summe der "Grade" (Anzahl der verbundenen Kanten) aller Knoten immer eine gerade Zahl sein (das Doppelte der Anzahl der Kanten).
+Nach dem "Handschlaglemma", einem grundlegenden Satz in der [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/), muss die Summe der "Grade" (Anzahl der verbundenen Kanten) aller Knoten immer eine gerade Zahl sein (das Doppelte der Anzahl der Kanten).
 
 $$ \sum_{v \in V} \text{deg}(v) = 2|E| $$
 

@@ -170,7 +170,7 @@ flowchart LR
 
 ## 7. Conclusão
 
-A explicação intuitiva de que "$x$ se aproxima infinitamente de $a$" é altamente eficaz para iniciantes entenderem o conceito de um limite. No entanto, foi insuficiente para fornecer a "certeza absoluta" que a matemática exige como fundamento para sua estrutura.
+A explicação intuitiva de que "$x$ se aproxima infinitamente de $a$" é altamente eficaz [para iniciantes](/pt/p/produtos-de-couro%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/) entenderem o conceito de um limite. No entanto, foi insuficiente para fornecer a "certeza absoluta" que a matemática exige como fundamento para sua estrutura.
 
 À primeira vista, a definição $\varepsilon-\delta$ parece uma formidável sequência de desigualdades, mas sua essência reside na **verificação estática de uma condição: "O erro pode ser controlado para ser arbitrariamente pequeno?"**. Substituir o conceito ambíguo envolvendo um elemento temporal de "aproximação dinâmica" por um estado lógico e estático de "existe uma faixa satisfazendo uma desigualdade" foi uma magnífica mudança de paradigma pelos matemáticos do século 19.
 

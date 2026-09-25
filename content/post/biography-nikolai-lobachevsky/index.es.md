@@ -19,13 +19,13 @@ Como el matemático británico William Clifford lo llamó el "Copérnico de la G
 
 Nikolái Lobachevski nació en 1792 en Nizhni Nóvgorod, Imperio Ruso. Cuando aún era joven, su padre falleció, sumiendo a la familia en la pobreza extrema. En medio de una vida difícil, su madre se mudó a Kazán para la educación de sus hijos. Esta decisión se convirtió en el primer punto de inflexión que daría lugar al futuro genio matemático.
 
-En 1807, ingresó en la recién fundada Universidad de Kazán con una beca. Inicialmente aspirando a estudiar medicina, conoció a Martin Bartels (también maestro de Carl Friedrich Gauss), un destacado matemático, y quedó cautivado por el profundo encanto de las matemáticas. Bajo la guía de Bartels, Lobachevski floreció su notable talento, obteniendo su maestría a la temprana edad de 21 años. Posteriormente, ascendió en la escala académica a un ritmo excepcionalmente rápido, convirtiéndose en profesor distinguido a los 24 años.
+En 1807, ingresó en la recién fundada Universidad de Kazán con una beca. Inicialmente aspirando a estudiar medicina, conoció a Martin Bartels (también maestro de [Carl Friedrich Gauss](/es/p/gauss/)), un destacado matemático, y quedó cautivado por el profundo encanto de las matemáticas. Bajo la guía de Bartels, Lobachevski floreció su notable talento, obteniendo su maestría a la temprana edad de 21 años. Posteriormente, ascendió en la escala académica a un ritmo excepcionalmente rápido, convirtiéndose en profesor distinguido a los 24 años.
 
 Su vida estuvo entrelazada con la Universidad de Kazán. No solo como profesor sino también como bibliotecario jefe, director del observatorio y convirtiéndose en rector a la temprana edad de 35 años, se dedicó a la modernización de la universidad y al desarrollo de la educación. La anécdota de él dirigiendo personalmente la cuarentena y el manejo sanitario del campus durante un brote de cólera, salvando la vida de muchos estudiantes, nos dice que no era solo un habitante de la torre de marfil, sino una persona dotada de un profundo sentido de responsabilidad y acción.
 
 ## Desafiando el "Postulado de las Paralelas": El nacimiento de la geometría no euclidiana
 
-Lo que inmortalizó el nombre de Lobachevski en la historia fue su desafío al "Postulado de las Paralelas (el Quinto Postulado)" en los "Elementos" de Euclides.
+Lo que inmortalizó el nombre de Lobachevski en la historia fue su desafío al "Postulado de las Paralelas (el Quinto Postulado)" en los "Elementos" de [Euclides](/es/p/euclid/).
 
 Desde el siglo III a. C., este postulado, que establece que "solo hay una línea paralela a una línea dada que pasa a través de un punto que no está en esa línea", había sido considerado evidente. A lo largo de los siglos, innumerables matemáticos intentaron probar este postulado a partir de los otros cuatro axiomas, pero todos fracasaron.
 
@@ -56,7 +56,7 @@ Incluso en medio de la incomprensión y las burlas de quienes lo rodeaban, Lobac
 
 Los últimos años de Lobachevski no fueron en absoluto felices. Fue despedido injustamente de su cargo como rector de la universidad, perdió a su amado hijo y, además, perdió la vista. Ciego, completó "Pangeometría" por dictado a sus discípulos justo antes de su muerte, dejando atrás la culminación de sus teorías. En 1856, falleció a la edad de 63 años sin haber visto el día en que sus grandes logros fueron evaluados con justicia.
 
-No fue hasta décadas después de su muerte que obtuvo verdadero reconocimiento como el "Copérnico de la geometría". Su teoría fue generalizada por Bernhard Riemann y desarrollada en la "Geometría de Riemann", que describe espacios curvos multidimensionales. Y a principios del siglo XX, cuando Albert Einstein construyó la "Teoría general de la relatividad", este mismo marco de la geometría no euclidiana fue esencial para describir la verdad universal de que el espacio-tiempo es distorsionado por la gravedad.
+No fue hasta décadas después de su muerte que obtuvo verdadero reconocimiento como el "Copérnico de la geometría". Su teoría fue generalizada por [Bernhard Riemann](/es/p/riemann/) y desarrollada en la "Geometría de Riemann", que describe espacios curvos multidimensionales. Y a principios del siglo XX, cuando Albert Einstein construyó la "Teoría general de la relatividad", este mismo marco de la geometría no euclidiana fue esencial para describir la verdad universal de que el espacio-tiempo es distorsionado por la gravedad.
 
 Si Lobachevski no hubiera derribado el muro invisible llamado "sentido común", la física y la cosmología modernas habrían sido completamente diferentes.
 

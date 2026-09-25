@@ -8,7 +8,7 @@ categories: ["mathematics", "biography"]
 tags: ["Yutaka Taniyama", "Mathématiques", "Dernier Théorème de Fermat", "Conjecture de Taniyama-Shimura", "Courbes Elliptiques", "Formes Modulaires"]
 ---
 
-# [Yutaka Taniyama : La vie et les réalisations du génie mathématique qui a défié les problèmes non résolus](https://kenji.blog/p/taniyama-yutaka/)
+# [Yutaka Taniyama : La vie et les réalisations du génie mathématique qui a défié les problèmes non résolus](https://kenji.blog/fr/p/taniyama-yutaka/)
 
 La démonstration du **Dernier Théorème de [Fermat](https://kenji.blog/fr/p/fermat/)** est l'un des développements les plus spectaculaires et importants des mathématiques modernes. Derrière cette réalisation monumentale se cache une étonnante conjecture proposée par deux mathématiciens japonais. L'un d'eux était **[Yutaka Taniyama](https://kenji.blog/fr/p/taniyama-yutaka/)** (1927 - 1958), décédé prématurément. Dans cet article, nous plongeons profondément dans la vision grandiose qui sous-tend la "Conjecture de Taniyama-Shimura" qu'il a proposée, et dans sa propre vie tumultueuse.
 

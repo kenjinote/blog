@@ -73,7 +73,7 @@ graph TD
 
 - **Características**: É uma tática de subjugar a força com a suavidade, onde se intercepta o ataque do oponente com um "contra-ataque" usando a Torre movida para a esquerda e o Bispo. O Rei foge para o lado direito, onde a Torre estava inicialmente, para solidificar a defesa. Requer uma boa sensibilidade para observar a situação e o andamento do oponente, sendo muito popular entre os amadores.
 - **Táticas representativas**:
-  - **Shikenbisha (Torre na 4ª Coluna)**: Tática onde se move a Torre para a 4ª coluna a partir da esquerda. É a mais equilibrada e bastante recomendada para iniciantes.
+  - **Shikenbisha (Torre na 4ª Coluna)**: Tática onde se move a Torre para a 4ª coluna a partir da esquerda. É a mais equilibrada e bastante recomendada [para iniciantes](/pt/p/produtos-de-couro%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/).
   - **Nakabisha (Torre Central)**: Uma Furibisha ofensiva que visa o avanço central, movendo a Torre bem para o meio do tabuleiro (5ª coluna).
 - **Castelos representativos**:
   - **Castelo Mino (Mino-gakoi)**: Um belo castelo exclusivo da Furibisha que é extremamente resistente a ataques laterais, apesar de poder ser montado rapidamente com poucas jogadas.

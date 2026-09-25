@@ -10,7 +10,7 @@ image: eyecatch.jpg
 
 # 什麼是錯誤更正碼？
 
-在數位社會中，資料隨時面臨著雜訊的威脅。CD上的刮痕、從宇宙空間傳回的探測器資料，或是我們日常掃描的QR Code。這些資料之所以不會因為些許的缺損或雜訊而完全損毀，是因為有一種名為「錯誤更正碼 (Error-Correcting Codes, ECC)」的強大數學機制存在。
+在數位社會中，資料隨時面臨著雜訊的威脅。CD上的刮痕、從宇宙空間傳回的探測器資料，或是我們日常掃描的QR Code。這些資料之所以不會因為些許的缺損或雜訊而完全損毀，是因為有一種名為「錯誤更正碼 (Error-Correcting Codes, [ECC](/zh-tw/p/elliptic-curve-cryptography-math-cpp/))」的強大數學機制存在。
 
 本文將從資訊理論之父克勞德·夏農所提出的概念開始，為您詳細解析同位元檢查 (Parity Check) 的基礎、漢明碼 (Hamming Code) 的矩陣表示，以及運用伽羅瓦體 (Galois Field) 的里德-所羅門碼 (Reed-Solomon Codes) 的運作原理。
 

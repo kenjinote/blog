@@ -206,4 +206,4 @@ Die Zeitkomplexität dieses Algorithmus beträgt $O(n \cdot 2^n)$, was ausreiche
 Das Inklusions-Exklusions-Prinzip ist eine magische mathematische Formel, die scheinbar komplexe Überlappungen von Mengen in eine einfache und mechanische Wiederholung von Addition und Subtraktion zerlegt.
 
 Ihr Anwendungsbereich ist außergewöhnlich breit und reicht von grundlegenden Wahrscheinlichkeitsproblemen über fortgeschrittenes kompetitives Programmieren bis hin zur Berechnung der Eulerschen Phi-Funktion in der Kryptographie.
-Die Beherrschung dieser mächtigen Technik wird Ihre Problemlösungsfähigkeiten in Mathematik und Algorithmen drastisch verbessern. Versuchen Sie auf jeden Fall, es auf verschiedene Probleme anzuwenden und seine Leistungsfähigkeit zu erleben.
+Die Beherrschung dieser mächtigen Technik wird Ihre Problemlösungsfähigkeiten in [Mathematik und Algorithmen](/de/p/reading-hard-tech-books/) drastisch verbessern. Versuchen Sie auf jeden Fall, es auf verschiedene Probleme anzuwenden und seine Leistungsfähigkeit zu erleben.

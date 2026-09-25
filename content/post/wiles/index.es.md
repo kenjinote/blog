@@ -30,7 +30,7 @@ $$
 x^n + y^n = z^n \quad (\text{donde } n \ge 3 \text{ es un número entero})
 $$
 
-Establece que no hay soluciones enteras positivas $(x, y, z)$ que satisfagan esta ecuación. Cuando $n = 2$, es bien conocido como el teorema de Pitágoras, y hay infinitas soluciones (ternas pitagóricas). Sin embargo, [Fermat](https://kenji.blog/es/p/fermat/) afirmó que cuando $n$ es 3 o mayor, nunca se cumple.
+Establece que no hay soluciones enteras positivas $(x, y, z)$ que satisfagan esta ecuación. Cuando $n = 2$, es bien conocido como el teorema de [Pitágoras](/es/p/pythagoras/), y hay infinitas soluciones (ternas pitagóricas). Sin embargo, [Fermat](https://kenji.blog/es/p/fermat/) afirmó que cuando $n$ es 3 o mayor, nunca se cumple.
 
 Aunque la proposición parece comprensible incluso para un estudiante de secundaria, se resistió a una demostración completa incluso por parte de matemáticos genios que dejaron su huella en la historia, como Euler, Sophie Germain y [Kummer](https://kenji.blog/es/p/kummer/).
 

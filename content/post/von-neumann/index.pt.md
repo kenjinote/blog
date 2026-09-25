@@ -23,7 +23,7 @@ Na época, Budapeste era um centro global de cultura e erudição, produzindo mu
 
 ## 3. Contribuições para os Fundamentos da Matemática: Teoria Axiomática dos Conjuntos
 
-Uma das realizações iniciais mais importantes de von Neumann foi sua pesquisa sobre a axiomatização da teoria dos conjuntos. Esperava-se que a teoria dos conjuntos, fundada por [Georg Cantor](https://kenji.blog/pt/p/cantor/), fosse o fundamento da matemática, mas ela enfrentava contradições lógicas (paradoxos) como o paradoxo de Russell. Para resolver esse problema, Ernst Zermelo, Adolf Fraenkel e outros estavam construindo a teoria axiomática dos conjuntos, mas von Neumann adotou uma abordagem diferente.
+Uma das realizações iniciais mais importantes de von Neumann foi sua pesquisa sobre a axiomatização da teoria dos conjuntos. Esperava-se que a teoria dos conjuntos, fundada por [Georg Cantor](https://kenji.blog/pt/p/cantor/), fosse o fundamento da matemática, mas ela enfrentava contradições lógicas (paradoxos) como o [paradoxo de Russell](/pt/p/russells-paradox/). Para resolver esse problema, Ernst Zermelo, Adolf Fraenkel e outros estavam construindo a teoria axiomática dos conjuntos, mas von Neumann adotou uma abordagem diferente.
 
 Ele introduziu o conceito de "classes" e evitou brilhantemente os paradoxos distinguindo estritamente entre conjuntos normais e classes que são grandes demais para serem conjuntos (classes próprias). Este sistema foi posteriormente melhorado por Paul Bernays e [Kurt Gödel](https://kenji.blog/pt/p/godel/), e agora é conhecido como a **teoria dos conjuntos de von Neumann-Bernays-Gödel** (teoria dos conjuntos NBG).
 
@@ -89,7 +89,7 @@ Von Neumann participou do projeto de desenvolvimento do EDVAC na Universidade da
 
 ## 7. Autômatos Celulares e a Teoria das Máquinas Autorreplicantes
 
-Em seus últimos anos, von Neumann teve um forte interesse em modelar matematicamente os mecanismos da autorreplicação biológica. Com o conselho de seu colega Stanislaw Ulam, ele concebeu o conceito de **autômatos celulares**, em que o espaço é dividido em uma grade e cada célula da grade muda de estado de acordo com uma determinada regra.
+Em seus últimos anos, von Neumann teve um forte interesse em modelar matematicamente os mecanismos da autorreplicação biológica. Com o conselho de seu colega Stanislaw Ulam, ele concebeu o conceito de **[autômatos](/pt/p/automata-formal-language-theory/) celulares**, em que o espaço é dividido em uma grade e cada célula da grade muda de estado de acordo com uma determinada regra.
 
 Usando células com 29 estados, ele provou rigorosamente que uma máquina autorreplicante (construtor universal) é teoricamente possível. Isso foi antes da descoberta da estrutura de dupla hélice do DNA, e pode-se dizer que ele previu os mecanismos genéticos e os sistemas de transmissão de informação da vida a partir da perspectiva da ciência da informação. Após sua morte, esta teoria levou à pesquisa em vida artificial.
 
@@ -118,7 +118,7 @@ Os livros e artigos que von Neumann deixou para trás durante sua vida são dive
    Em coautoria com Oskar Morgenstern. Uma obra-prima que discutiu sistematicamente tudo, desde jogos de soma zero até jogos cooperativos.
 3. **O Computador e o Cérebro (1958)**
    Um manuscrito inacabado publicado postumamente. Uma obra pioneira que compara as redes neurais do cérebro humano com os mecanismos dos computadores digitais.
-4. **Teoria dos Autômatos Autorreplicantes (1966)**
+4. **Teoria dos [Autômatos](/pt/p/automata-formal-language-theory/) Autorreplicantes (1966)**
    Compilado e publicado a partir dos manuscritos póstumos de von Neumann por Arthur Burks.
 
 ## 11. John von Neumann: Breve Cronologia
@@ -137,7 +137,7 @@ A seguir, uma linha do tempo detalhada resumindo a vida e as principais realiza�
 * **1943**: Participa do Projeto Manhattan, liderando os cálculos das lentes explosivas.
 * **1944**: Publica "Teoria dos Jogos e Comportamento Econômico".
 * **1945**: Escreve o "Primeiro Esboço de um Relatório sobre o EDVAC", propondo o conceito de programa armazenado.
-* **1948**: Anuncia a teoria dos autômatos celulares e o conceito de máquinas autorreplicantes.
+* **1948**: Anuncia a teoria dos [autômatos](/pt/p/automata-formal-language-theory/) celulares e o conceito de máquinas autorreplicantes.
 * **1951**: Torna-se presidente da Sociedade Americana de Matemática.
 * **1954**: Nomeado membro da Comissão de Energia Atômica dos Estados Unidos.
 * **1955**: Diagnosticado com câncer ósseo (ou câncer de pâncreas) e inicia uma batalha contra a doença.

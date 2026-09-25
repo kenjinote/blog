@@ -27,7 +27,7 @@ tags: ["Solo Developer", "Micro-SaaS", "Serverless", "Agility"]
 
 ## 齐夫定律（[Zipf's Law](https://kenji.blog/zh-cn/p/zipfs-law/)）与市场分布
 
-市场规模与数量之间的关系通常遵循齐夫定律或帕累托法则。如果将市场的排名设为 $k$，其市场规模（营收潜力）设为 $P(k)$，则可以用如下的幂律（Power Law）模型来表示。
+市场规模与数量之间的关系通常遵循齐夫定律或[帕累托法则](/zh-cn/p/business-pareto-principle/)。如果将市场的排名设为 $k$，其市场规模（营收潜力）设为 $P(k)$，则可以用如下的幂律（Power Law）模型来表示。
 
 $$ P(k) \propto \frac{1}{k^\alpha} $$
 
@@ -50,7 +50,7 @@ xychart-beta
 
 # 2. 创造压倒性敏捷度的架构设计
 
-大企业的系统设计将“稳定性”和“可扩展性”放在首位，因此会采用[Kubernetes](https://kenji.blog/zh-cn/p/kubernetes-k8s-architecture-pod-service-ingress/)和微服务架构。但如果个人开发者效仿这种做法，光是基础设施的维护管理（Ops）就会耗尽资源。
+大企业的系统设计将“稳定性”和“可扩展性”放在首位，因此会采用[Kubernetes](https://kenji.blog/zh-cn/p/kubernetes-k8s-architecture-pod-service-ingress/)和[微服务架构](/zh-cn/p/microservices-architecture-bff-api-gateway/)。但如果个人开发者效仿这种做法，光是基础设施的维护管理（Ops）就会耗尽资源。
 
 个人开发者的技术栈口号是 **"No-Ops"（零运维）** 。将无服务器（[Serverless](https://kenji.blog/zh-cn/p/serverless-architecture-aws-lambda-cold-start/)）架构利用到极致，从而能够专注于编写业务逻辑。
 

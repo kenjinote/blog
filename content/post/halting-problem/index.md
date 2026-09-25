@@ -159,7 +159,7 @@ graph TD
 
 ## [ゲーデルの不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)との深い関係
 
-[停止性問題](https://kenji.blog/p/turing-machine-computability/)の証明の根底にある「自己言及のパラドックス」は、チューリングの少し前、1931年にクルト・ゲーデル（Kurt Gödel）が発表した **「[不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)（Incompleteness Theorems）」** と深い繋がりを持っています。
+[停止性問題](https://kenji.blog/p/turing-machine-computability/)の証明の根底にある「自己言及のパラドックス」は、チューリングの少し前、1931年に[クルト・ゲーデル](/p/godel/)（Kurt Gödel）が発表した **「[不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)（Incompleteness Theorems）」** と深い繋がりを持っています。
 
 [ゲーデル](https://kenji.blog/p/godel/)の第一不完全性定理は、「自然数論を含む十分に強力な公理系の中には、証明も反証もできない真の命題が必ず存在する」というものです。[ゲーデル](https://kenji.blog/p/godel/)はこの定理を証明する際に、「この命題は証明できない」という自己言及的な命題を数学的に構成しました。
 

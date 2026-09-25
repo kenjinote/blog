@@ -20,7 +20,7 @@ tags:
 
 在现代计算机科学中， **图论** ([Graph](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Theory) 为对网络结构进行建模提供了强大的数学框架。在我们的日常生活中，汽车导航、铁路换乘指南、互联网路由，甚至游戏AI的路径搜索等各种场景中，都使用了计算“最短路径”的技术。
 
-本文将从作为路径搜索基础的图论数学定义开始，全面讲解代表性的搜索算法—— **[Dijkstra](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)算法** (Dijkstra's Algorithm)，以及对其进行进一步发展的 **A*算法** (A-Star Algorithm) 的原理、数学证明，以及使用Python进行实践的实现方法。
+本文将从作为路径搜索基础的图论数学定义开始，全面讲解代表性的[搜索算法](/zh-cn/p/search-algorithms-linear-binary-hash-table-principles/)—— **[Dijkstra](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)算法** (Dijkstra's Algorithm)，以及对其进行进一步发展的 **A*算法** (A-Star Algorithm) 的原理、数学证明，以及使用Python进行实践的实现方法。
 
 ## 2. 图论基础
 
@@ -144,7 +144,7 @@ def dijkstra(graph, start):
 ### 3.4 关于时间复杂度
 
 当使用二叉堆 (Binary [Heap](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/)) 作为优先队列时，每个顶点从队列中取出1次，每条边被松弛1次。
-因此，时间复杂度为 $ O((|V| + |E|) \log |V|) $。如果使用斐波那契堆，理论上可以改进到 $ O(|E| + |V| \log |V|) $，但在实际应用中多使用二叉堆。
+因此，时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)为 $ O((|V| + |E|) \log |V|) $。如果使用斐波那契堆，理论上可以改进到 $ O(|E| + |V| \log |V|) $，但在实际应用中多使用二叉堆。
 
 ---
 
@@ -193,7 +193,7 @@ $$
   $$
   h(n) = |x_n - x_{goal}| + |y_n - y_{goal}|
   $$
-- **欧几里得距离** (Euclidean Distance)：当可以向任意方向直线移动时
+- **[欧几里得](/zh-cn/p/euclid/)距离** (Euclidean Distance)：当可以向任意方向直线移动时
   $$
   h(n) = \sqrt{(x_n - x_{goal})^2 + (y_n - y_{goal})^2}
   $$
@@ -293,7 +293,7 @@ graph TD
 3. **JPS** (Jump Point Search)：
    在均匀的网格地图上，进一步加速 A* 搜索的方法。利用对称性跳过不必要的节点。
 
-路径搜索算法是一个将图论的数学美感与计算机科学的算法效率完美融合的领域。
+路径[搜索算法](/zh-cn/p/search-algorithms-linear-binary-hash-table-principles/)是一个将图论的数学美感与计算机科学的算法效率完美融合的领域。
 
 ## 6. 总结
 

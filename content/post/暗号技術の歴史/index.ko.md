@@ -197,9 +197,9 @@ rsa_example()
 
 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호는 강력하지만 컴퓨터의 성능 향상에 따라 안전성을 유지하기 위해 키 길이를 늘려야 했고(현재는 2048비트나 3072비트), 계산 비용이 증가한다는 문제가 발생했습니다.
 
-그래서 1985년에 제안된 것이 '타원 곡선 암호(Elliptic Curve [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy: ECC)'입니다. 이는 유한체 상의 타원 곡선(일반적으로 $y^2 = x^3 + ax + b$ 형태)에서의 점 덧셈을 이용한 것입니다.
+그래서 1985년에 제안된 것이 '타원 곡선 암호(Elliptic Curve [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy: [ECC](/ko/p/elliptic-curve-cryptography-math-cpp/))'입니다. 이는 유한체 상의 타원 곡선(일반적으로 $y^2 = x^3 + ax + b$ 형태)에서의 점 덧셈을 이용한 것입니다.
 
-타원 곡선 상의 이산 로그 문제(ECDLP)는 소인수분해 문제보다 푸는 것이 더 어렵다고 알려져 있으며, **[RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/)의 3072비트와 동등한 안전성을 ECC라면 불과 256비트의 키 길이로 구현** 할 수 있습니다. 이를 통해 스마트폰이나 IoT 기기 등 계산 자원이 제한된 환경에서도 빠르고 안전한 암호 통신(ECDSA나 ECDH 등)이 가능해졌습니다.
+타원 곡선 상의 이산 로그 문제(ECDLP)는 소인수분해 문제보다 푸는 것이 더 어렵다고 알려져 있으며, **[RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/)의 3072비트와 동등한 안전성을 [ECC](/ko/p/elliptic-curve-cryptography-math-cpp/)라면 불과 256비트의 키 길이로 구현** 할 수 있습니다. 이를 통해 스마트폰이나 IoT 기기 등 계산 자원이 제한된 환경에서도 빠르고 안전한 암호 통신(ECDSA나 ECDH 등)이 가능해졌습니다.
 
 ---
 
@@ -207,7 +207,7 @@ rsa_example()
 
 암호 기술은 반석처럼 보였으나, 1994년 피터 쇼어(Peter Shor)가 발표한 '쇼어의 알고리즘'으로 인해 큰 충격이 가해졌습니다.
 
-양자 컴퓨터는 '중첩'과 '양자 얽힘'이라는 양자 역학의 성질을 이용하여 계산을 수행합니다. 쇼어의 알고리즘을 충분한 성능의 양자 컴퓨터에서 실행하면, 소인수분해 문제나 이산 로그 문제가 '다항식 시간' 내에 풀린다는 것이 수학적으로 증명된 것입니다. 즉, 실용적인 양자 컴퓨터가 완성되는 날(Q-Day), 현재 사용되고 있는 RSA나 ECC 같은 공개키 암호는 모두 순식간에 붕괴됩니다.
+양자 컴퓨터는 '중첩'과 '양자 얽힘'이라는 양자 역학의 성질을 이용하여 계산을 수행합니다. 쇼어의 알고리즘을 충분한 성능의 양자 컴퓨터에서 실행하면, 소인수분해 문제나 이산 로그 문제가 '다항식 시간' 내에 풀린다는 것이 수학적으로 증명된 것입니다. 즉, 실용적인 양자 컴퓨터가 완성되는 날(Q-Day), 현재 사용되고 있는 RSA나 [ECC](/ko/p/elliptic-curve-cryptography-math-cpp/) 같은 공개키 암호는 모두 순식간에 붕괴됩니다.
 
 ## PQC(Post-Quantum [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy)의 등장
 이 전대미문의 위협에 대비해, 양자 컴퓨터로도 해독이 어려운 새로운 수학적 문제에 기반한 '양자 내성 암호(PQC)' 연구가 빠른 속도로 진행되고 있습니다. NIST(미국 국립표준기술연구소)는 수년간 PQC의 표준화 과정을 진행해 왔으며, 주로 다음의 수학적 접근 방식이 유력하게 꼽히고 있습니다.

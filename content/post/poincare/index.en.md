@@ -75,15 +75,15 @@ Moreover, [Poincaré](https://kenji.blog/en/p/poincare/) quickly introduced the 
 
 He had been agonizing over a difficult mathematical problem for several months, unable to find a clue to the solution despite repeated conscious calculations and logical reasoning. Exhausted, he decided to step away from his research and joined a geological excursion. Then, during the trip, at the exact moment he was about to board a horse-drawn omnibus in the town of Coutances, a perfect solution suddenly flashed in his mind.
 
-> "At the moment when I put my foot on the step the idea came to me, without anything in my former thoughts seeming to have paved the way for it, that the transformations I had used to define the Fuchsian functions were identical with those of non-[Euclide](https://kenji.blog/p/euclid/)an geometry. I did not verify the idea; I should not have had time, as, upon taking my seat in the omnibus, I went on with a conversation already commenced, but I felt a perfect certainty."
+> "At the moment when I put my foot on the step the idea came to me, without anything in my former thoughts seeming to have paved the way for it, that the transformations I had used to define the Fuchsian functions were identical with those of non-[Euclide](https://kenji.blog/en/p/euclid/)an geometry. I did not verify the idea; I should not have had time, as, upon taking my seat in the omnibus, I went on with a conversation already commenced, but I felt a perfect certainty."
 
 From this experience, [Poincaré](https://kenji.blog/en/p/poincare/) categorized the process of creative discovery into four stages: "Preparation" (conscious effort), "Incubation" (combining information in the unconscious), "Illumination" (sudden intuitive understanding), and "Verification" (logical proof). His insights prove how powerful the unconscious is as a computational resource in the depths of human thought.
 
 ## 6. Philosophy of Science: The Advocacy of Conventionalism
 
-[Poincaré](https://kenji.blog/en/p/poincare/) also left a huge mark in the field of philosophy of science. He advocated a position known as **Conventionalism** . This is the idea that "fundamental axioms and laws in science (such as the axioms of [Euclide](https://kenji.blog/p/euclid/)an geometry) are neither a priori truths nor empirical facts, but merely 'convenient conventions' adopted by humans to describe nature."
+[Poincaré](https://kenji.blog/en/p/poincare/) also left a huge mark in the field of philosophy of science. He advocated a position known as **Conventionalism** . This is the idea that "fundamental axioms and laws in science (such as the axioms of [Euclide](https://kenji.blog/en/p/euclid/)an geometry) are neither a priori truths nor empirical facts, but merely 'convenient conventions' adopted by humans to describe nature."
 
-He stated, "It is not that [Euclide](https://kenji.blog/p/euclid/)an geometry is true and non-Euclidean geometry is false. It is the same as saying that the metric system is not more true than the yard system." This flexible philosophical attitude later became an important ideological foundation when Einstein constructed the General Theory of Relativity using non-[Euclide](https://kenji.blog/p/euclid/)an geometry.
+He stated, "It is not that [Euclide](https://kenji.blog/en/p/euclid/)an geometry is true and non-Euclidean geometry is false. It is the same as saying that the metric system is not more true than the yard system." This flexible philosophical attitude later became an important ideological foundation when Einstein constructed the General Theory of Relativity using non-[Euclide](https://kenji.blog/en/p/euclid/)an geometry.
 
 ## 7. Conclusion: [Poincaré](https://kenji.blog/en/p/poincare/)'s Eternal Legacy
 

@@ -27,7 +27,7 @@ En revanche, les cryptomonnaies visaient un système « sans confiance (Trustles
 
 ## 2. L'histoire des cryptomonnaies : des Cypherpunks à Satoshi Nakamoto
 
-Le Bitcoin n'est pas né comme une mutation soudaine. Derrière lui, se cachent des décennies d'histoire de la cryptographie et un mouvement idéologique de technologues qui valorisent la vie privée.
+Le Bitcoin n'est pas né comme une mutation soudaine. Derrière lui, se cachent des décennies d'[histoire de la cryptographie](/fr/p/history-of-cryptography-caesar-to-pqc/) et un mouvement idéologique de technologues qui valorisent la vie privée.
 
 ### L'idéologie des Cypherpunks
 
@@ -52,7 +52,7 @@ Il s'agissait d'un gros titre du journal britannique *The Times* de l'époque, e
 
 ## 3. L'architecture de la blockchain
 
-La technologie centrale qui soutient le Bitcoin est la « blockchain ([Blockchain](https://kenji.blog/fr/p/blockchain-technology-smart-contract-distributed-ledger/)) ». La blockchain est une forme de technologie de registre distribué ([Distributed Ledger](https://kenji.blog/fr/p/blockchain-technology-smart-contract-distributed-ledger/) Technology : DLT), qui a une structure dans laquelle les données sont regroupées en unités appelées « blocs », et ils sont cryptographiquement connectés comme une chaîne.
+La technologie centrale qui soutient le Bitcoin est la « [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/) ([Blockchain](https://kenji.blog/fr/p/blockchain-technology-smart-contract-distributed-ledger/)) ». La [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/) est une forme de technologie de registre distribué ([Distributed Ledger](https://kenji.blog/fr/p/blockchain-technology-smart-contract-distributed-ledger/) Technology : DLT), qui a une structure dans laquelle les données sont regroupées en unités appelées « blocs », et ils sont cryptographiquement connectés comme une chaîne.
 
 ```mermaid
 flowchart TD
@@ -76,7 +76,7 @@ L'en-tête de bloc contient les informations suivantes :
 
 ### Arbres de Merkle (Merkle Trees)
 
-Dans la blockchain, une structure de données appelée **arbre de Merkle (Merkle [Tree](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** est utilisée pour détecter efficacement la falsification des données tout en gardant la taille du bloc petite. Un arbre de Merkle est un type d'arbre binaire où les nœuds feuilles contiennent la valeur de hachage de chaque transaction, et les nœuds parents sont créés en concaténant les valeurs de hachage de leurs nœuds enfants et en les hachant à nouveau.
+Dans la [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/), une structure de données appelée **arbre de Merkle (Merkle [Tree](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** est utilisée pour détecter efficacement la falsification des données tout en gardant la taille du bloc petite. Un arbre de Merkle est un type d'arbre binaire où les nœuds feuilles contiennent la valeur de hachage de chaque transaction, et les nœuds parents sont créés en concaténant les valeurs de hachage de leurs nœuds enfants et en les hachant à nouveau.
 
 ```mermaid
 flowchart TD
@@ -115,7 +115,7 @@ Lorsqu'Alice envoie du Bitcoin à Bob, Alice utilise sa propre clé privée pour
 
 ### Cryptographie sur les courbes elliptiques (Elliptic Curve Cryptography : ECC) et secp256k1
 
-La **cryptographie sur les courbes elliptiques (ECC)** est adoptée pour la génération de clés publiques et les signatures numériques du Bitcoin, plutôt que le cryptage [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/). L'ECC a l'avantage de fournir un niveau de sécurité équivalent avec une longueur de clé beaucoup plus courte que le RSA.
+La **cryptographie sur les courbes elliptiques ([ECC](/fr/p/elliptic-curve-cryptography-math-cpp/))** est adoptée pour la génération de clés publiques et les signatures numériques du Bitcoin, plutôt que le cryptage [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/). L'[ECC](/fr/p/elliptic-curve-cryptography-math-cpp/) a l'avantage de fournir un niveau de sécurité équivalent avec une longueur de clé beaucoup plus courte que le RSA.
 
 Les paramètres de la courbe elliptique spécifique utilisée dans le Bitcoin sont appelés **secp256k1** . Cette courbe est définie sur un corps fini $\mathbb{F}_p$ et est représentée par l'équation suivante :
 
@@ -173,7 +173,7 @@ $$
 
 Étant donné que la sortie d'une fonction de hachage semble complètement aléatoire, il n'existe pas d'algorithme efficace pour trouver un nonce qui satisfait à la condition. La seule méthode est une attaque par force brute (Brute-force) où la valeur du nonce est modifiée et le calcul du hachage est répété.
 
-Plus la valeur cible est petite, plus la probabilité de trouver un hachage satisfaisant à la condition est faible. Si la cible est une valeur qui nécessite $k$ zéros au début, le nombre moyen de calculs nécessaires pour trouver ce bloc est de $2^k$ fois. L'investissement de cette énorme quantité d'énergie de calcul est ce qui rend impossible la falsification des enregistrements passés de la blockchain.
+Plus la valeur cible est petite, plus la probabilité de trouver un hachage satisfaisant à la condition est faible. Si la cible est une valeur qui nécessite $k$ zéros au début, le nombre moyen de calculs nécessaires pour trouver ce bloc est de $2^k$ fois. L'investissement de cette énorme quantité d'énergie de calcul est ce qui rend impossible la falsification des enregistrements passés de la [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/).
 
 ### Ajustement de la difficulté (Difficulty Adjustment)
 
@@ -216,7 +216,7 @@ Bien que le Bitcoin soit un système extrêmement robuste et sécurisé, il est 
 
 ### Fourches (Forks) : Soft fork et hard fork
 
-Lors de la mise à niveau du protocole blockchain, un événement appelé « fork (bifurcation) » peut se produire.
+Lors de la mise à niveau du protocole [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/), un événement appelé « fork (bifurcation) » peut se produire.
 - **Soft Fork** : Une mise à niveau rétrocompatible. Même les nœuds avec les anciennes règles considèrent les blocs avec les nouvelles règles comme valides (par exemple : l'introduction de SegWit).
 - **Hard Fork** : Une mise à niveau non rétrocompatible. Les blocs avec les nouvelles règles sont rejetés par les anciens nœuds, ce qui peut diviser complètement le réseau en deux (par exemple : la naissance de Bitcoin Cash).
 
@@ -224,7 +224,7 @@ Lors de la mise à niveau du protocole blockchain, un événement appelé « for
 
 Une approche prometteuse pour résoudre le problème d'évolutivité est le Lightning Network, qui est une solution de **couche 2 (Layer 2)** .
 
-Dans le Lightning Network, les participants ouvrent des « canaux de paiement (Payment Channels) » en dehors de la blockchain (off-chain). À l'intérieur du canal, tant que les deux parties sont d'accord, elles peuvent échanger des fonds instantanément et presque gratuitement autant de fois qu'elles le souhaitent, sans enregistrer les transactions sur la blockchain. Ce n'est qu'au moment du règlement du solde final qu'une transaction est enregistrée sur la blockchain (Couche 1).
+Dans le Lightning Network, les participants ouvrent des « canaux de paiement (Payment Channels) » en dehors de la [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/) (off-chain). À l'intérieur du canal, tant que les deux parties sont d'accord, elles peuvent échanger des fonds instantanément et presque gratuitement autant de fois qu'elles le souhaitent, sans enregistrer les transactions sur la [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/). Ce n'est qu'au moment du règlement du solde final qu'une transaction est enregistrée sur la [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/) (Couche 1).
 
 ### Comparaison avec la Preuve d'enjeu ([PoS](https://kenji.blog/fr/p/blockchain-technology-smart-contract-distributed-ledger/))
 
@@ -234,7 +234,7 @@ Dans le PoS, le droit de générer le bloc suivant (validateur) est attribué de
 
 ## 8. Les abysses de la cryptographie : preuves mathématiques et robustesse des protocoles
 
-Derrière SHA-256 et la cryptographie sur les courbes elliptiques (ECC) expliqués dans les chapitres précédents, se trouvent deux paradigmes : la sécurité théorique de l'information et la sécurité calculatoire. Le Bitcoin et les autres cryptomonnaies modernes s'appuient principalement sur la sécurité calculatoire (Computational Security).
+Derrière SHA-256 et la cryptographie sur les courbes elliptiques ([ECC](/fr/p/elliptic-curve-cryptography-math-cpp/)) expliqués dans les chapitres précédents, se trouvent deux paradigmes : la sécurité théorique de l'information et la sécurité calculatoire. Le Bitcoin et les autres cryptomonnaies modernes s'appuient principalement sur la sécurité calculatoire (Computational Security).
 
 ### Sécurité calculatoire et problème du logarithme discret
 
@@ -248,13 +248,13 @@ Dans secp256k1 de Bitcoin, $p \approx 2^{256}$, donc environ $2^{128}$ opératio
 ### La menace des ordinateurs quantiques et la cryptographie post-quantique
 
 Cependant, il existe une préoccupation majeure concernant la sécurité calculatoire. C'est l'essor des **ordinateurs quantiques (Quantum Computers)** .
-L'algorithme de Shor, publié par Peter Shor en 1994, a prouvé mathématiquement qu'un ordinateur quantique pourrait résoudre le problème de factorisation en nombres premiers (le fondement du chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)) et le problème du logarithme discret (le fondement de l'ECC) en temps polynomial $\mathcal{O}(n^3)$.
+L'algorithme de Shor, publié par Peter Shor en 1994, a prouvé mathématiquement qu'un ordinateur quantique pourrait résoudre le problème de factorisation en nombres premiers (le fondement du chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)) et le problème du logarithme discret (le fondement de l'[ECC](/fr/p/elliptic-curve-cryptography-math-cpp/)) en temps polynomial $\mathcal{O}(n^3)$.
 
 Si un ordinateur quantique à grande échelle et pratique avec un nombre suffisant de qubits (Qubits) et un faible taux d'erreur est achevé, il y a un risque que la clé privée puisse être calculée à rebours à partir de la clé publique du Bitcoin.
 Les mesures défensives du réseau Bitcoin contre cela sont les suivantes.
 
-1. **Protection par fonction de hachage** : L'adresse Bitcoin n'est pas la clé publique elle-même, mais les fonctions de hachage SHA-256 et RIPEMD-160 appliquées à la clé publique. Même avec un ordinateur quantique, l'inversion d'une fonction de hachage (même avec l'algorithme de Grover, la complexité de calcul est de $\mathcal{O}(\sqrt{N})$) reste difficile. Par conséquent, jusqu'à ce qu'une transaction soit effectuée et que la clé publique soit exposée au réseau, le contenu de l'adresse peut être considéré comme sûr même contre les ordinateurs quantiques.
-2. **Transition vers la cryptographie post-quantique (Post-Quantum [Cryptography](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) : PQC)** : Il est discuté qu'avant que les ordinateurs quantiques ne deviennent d'usage pratique, le protocole Bitcoin fera l'objet d'un hard fork pour passer à de nouveaux algorithmes de signature difficiles à déchiffrer même pour les ordinateurs quantiques, tels que la cryptographie basée sur les réseaux (Lattice-based cryptography) ou la cryptographie polynomiale multivariée (Multivariate polynomial cryptography) sélectionnées par le NIST (National Institute of Standards and Technology).
+1. **Protection par fonction de hachage** : L'adresse Bitcoin n'est pas la clé publique elle-même, mais les fonctions de hachage SHA-256 et RIPEMD-160 appliquées à la clé publique. Même avec un ordinateur quantique, l'inversion d'une fonction de hachage (même avec [l'algorithme de Grover](/fr/p/grovers-algorithm-quantum-search/), la complexité de calcul est de $\mathcal{O}(\sqrt{N})$) reste difficile. Par conséquent, jusqu'à ce qu'une transaction soit effectuée et que la clé publique soit exposée au réseau, le contenu de l'adresse peut être considéré comme sûr même contre les ordinateurs quantiques.
+2. **Transition vers la cryptographie post-quantique (Post-Quantum [Cryptography](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) : PQC)** : Il est discuté qu'avant que les ordinateurs quantiques ne deviennent d'usage pratique, le protocole Bitcoin fera l'objet d'un hard fork pour passer à de nouveaux algorithmes de signature difficiles à déchiffrer même pour les ordinateurs quantiques, tels que la cryptographie basée sur les réseaux ([Lattice-based cryptography](/fr/p/lattice-based-cryptography-math-intuition/)) ou la cryptographie polynomiale multivariée (Multivariate polynomial cryptography) sélectionnées par le NIST (National Institute of Standards and Technology).
 
 ## 9. Topologie du réseau et détails du protocole [P2P](https://kenji.blog/fr/p/webrtc-realtime-communication-p2p/)
 
@@ -264,8 +264,8 @@ Le réseau Bitcoin n'est pas simplement une collection de serveurs et de clients
 
 Les ordinateurs participant au réseau sont appelés « nœuds (Nodes) ». Il existe plusieurs types de nœuds, chacun ayant des rôles différents.
 
-- **Nœud complet (Full Node)** : Un nœud qui télécharge et vérifie toutes les données de la blockchain (plusieurs centaines de [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) ou plus) du bloc de genèse au dernier bloc. Ils sont au cœur de la sécurité du réseau, car ils vérifient de manière indépendante la validité des transactions et la présence de doubles dépenses.
-- **Nœud SPV (Simplified Payment Verification Node)** : Un nœud léger qui télécharge uniquement l'en-tête de bloc, et non la blockchain entière. Il est principalement utilisé dans les portefeuilles pour smartphones. Il peut vérifier si ses propres transactions sont incluses dans un bloc (vérification du chemin de Merkle), mais n'a pas la même capacité de vérification qu'un nœud complet.
+- **Nœud complet (Full Node)** : Un nœud qui télécharge et vérifie toutes les données de la [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/) (plusieurs centaines de [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) ou plus) du bloc de genèse au dernier bloc. Ils sont au cœur de la sécurité du réseau, car ils vérifient de manière indépendante la validité des transactions et la présence de doubles dépenses.
+- **Nœud SPV (Simplified Payment Verification Node)** : Un nœud léger qui télécharge uniquement l'en-tête de bloc, et non la [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/) entière. Il est principalement utilisé dans les portefeuilles pour smartphones. Il peut vérifier si ses propres transactions sont incluses dans un bloc (vérification du chemin de Merkle), mais n'a pas la même capacité de vérification qu'un nœud complet.
 - **Nœud de minage (Mining Node)** : Un nœud qui effectue le calcul de [PoW](https://kenji.blog/fr/p/blockchain-technology-smart-contract-distributed-ledger/) et génère de nouveaux blocs. Actuellement, d'énormes « pools de minage », qui regroupent des matériels de minage spécialisés appelés ASIC (Application Specific Integrated Circuit), assument ce rôle.
 
 ### Processus de propagation des transactions (Gossip Protocol)
@@ -299,7 +299,7 @@ Ce modèle d'offre de monnaie désinflationniste imite l'extraction de l'or et s
 
 ### Analyse de la théorie des jeux de l'attaque des 51 % (51% Attack)
 
-La plus grande menace pour la blockchain est **l'attaque des 51 %** . Si un acteur malveillant unique contrôle la majorité (51 % ou plus) de la puissance de calcul du réseau global (taux de hachage), les choses suivantes deviennent possibles.
+La plus grande menace pour la [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/) est **l'attaque des 51 %** . Si un acteur malveillant unique contrôle la majorité (51 % ou plus) de la puissance de calcul du réseau global (taux de hachage), les choses suivantes deviennent possibles.
 
 1. Annuler ses propres transactions passées (double dépense)
 2. Refuser d'approuver des transactions spécifiques (censure)
@@ -311,7 +311,7 @@ Même s'ils dépensent un coût énorme (des centaines de milliards de yens de m
 
 Dans cet article, nous avons disséqué en profondeur les mécanismes mathématiques, techniques et économiques derrière le Bitcoin et les cryptomonnaies.
 
-À première vue, la technologie de la blockchain semble être une masse de mathématiques et de code complexes, mais son essence n'est rien de moins qu'**« un nouveau système de consensus de l'humanité qui ne dépend pas de l'autorité, mais repose sur les mathématiques et les lois physiques comme base de confiance »** .
+À première vue, la technologie de la [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/) semble être une masse de mathématiques et de code complexes, mais son essence n'est rien de moins qu'**« un nouveau système de consensus de l'humanité qui ne dépend pas de l'autorité, mais repose sur les mathématiques et les lois physiques comme base de confiance »** .
 
 Le système financier que nous tenons pour acquis dans notre vie quotidienne a fait faillite à maintes reprises au cours de sa longue histoire, et a répété des corrections de fortune à chaque fois. La solution proposée par Satoshi Nakamoto n'est en aucun cas parfaite. Il existe d'innombrables obstacles à surmonter, tels que les problèmes d'évolutivité, les problèmes environnementaux et les réglementations gouvernementales.
 
@@ -319,7 +319,7 @@ Cependant, une fois libéré de la boîte de Pandore, le concept de « système 
 
 ## Annexe : Ressources et références pour un apprentissage plus approfondi
 
-Pour ceux qui ont lu cet article et souhaitent en savoir plus sur la technologie blockchain et la cryptographie, voici quelques ressources recommandées.
+Pour ceux qui ont lu cet article et souhaitent en savoir plus sur la technologie [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/) et la cryptographie, voici quelques ressources recommandées.
 
 ### Articles originaux incontournables (Whitepapers)
 - **Bitcoin: A Peer-to-Peer Electronic Cash System** (Satoshi Nakamoto, 2008)
@@ -336,4 +336,4 @@ Pour véritablement comprendre la blockchain, une connaissance de la sécurité 
 > **Avertissement : Avis de non-responsabilité concernant l'investissement**
 > Cet article a été créé dans le but d'expliquer la technologie sous-jacente des cryptomonnaies, ainsi que leur histoire et leur structure mathématique, et ne recommande ni ne sollicite d'investissement dans des cryptomonnaies quelles qu'elles soient. Le prix des cryptomonnaies est extrêmement volatil, et l'investissement comporte des risques importants, y compris la perte du capital.
 
-L'exploration technique de la blockchain est une frontière de la connaissance où se croisent l'informatique, l'économie et la sociologie. En lisant le code, en lançant vous-même un nœud et en générant des transactions sur le réseau de test, vous pourrez ressentir par vous-même le véritable potentiel de cette technologie et ses limites.
+L'exploration technique de la [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/) est une frontière de la connaissance où se croisent l'informatique, l'économie et la sociologie. En lisant le code, en lançant vous-même un nœud et en générant des transactions sur le réseau de test, vous pourrez ressentir par vous-même le véritable potentiel de cette technologie et ses limites.

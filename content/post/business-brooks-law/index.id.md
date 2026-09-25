@@ -105,7 +105,7 @@ Aturan emasnya adalah "menambah waktu" atau "mengurangi apa yang harus dikerjaka
 
 "Aturan Dua Piza (Two-Pizza Team)" yang diajukan oleh Jeff Bezos dari Amazon adalah salah satu jawaban sempurna untuk Hukum Brooks. Aturannya adalah, "Jumlah anggota tim maksimal haruslah jumlah orang yang bisa berbagi dua loyang piza (sekitar 6 hingga 8 orang)."
 
-Dengan menjaga tim tetap kecil, ledakan jalur komunikasi dapat dicegah. Saat membangun sistem berskala besar, alih-alih membuat satu tim raksasa, sistem dibagi secara longgar (loosely coupled) seperti dengan arsitektur microservices, dan masing-masing komponen ditangani oleh tim kecil yang independen.
+Dengan menjaga tim tetap kecil, ledakan jalur komunikasi dapat dicegah. Saat membangun sistem berskala besar, alih-alih membuat satu tim raksasa, sistem dibagi secara longgar (loosely coupled) seperti dengan [arsitektur microservices](/id/p/microservices-architecture-bff-api-gateway/), dan masing-masing komponen ditangani oleh tim kecil yang independen.
 
 ```mermaid
 graph LR

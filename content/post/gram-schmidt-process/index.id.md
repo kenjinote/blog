@@ -214,7 +214,7 @@ flowchart LR
     D --> E
 ```
 
-Dalam konteks pembelajaran mesin, dekomposisi QR dimanfaatkan untuk melakukan perhitungan "metode kuadrat terkecil (least squares)" secara stabil dan cepat guna menemukan parameter optimal dalam analisis regresi berganda. Pendekatan memecahkan persamaan normal ($A^T A \mathbf{x} = A^T \mathbf{b}$) secara langsung pada umumnya dihindari dalam praktiknya karena bilangan kondisi matriks $A^T A$ mudah memburuk, membuatnya sangat rentan terhadap kesalahan numerik. Sebaliknya, praktik standarnya adalah mendekomposisinya menjadi $A=QR$ dan memecahkan $R \mathbf{x} = Q^T \mathbf{b}$ melalui substitusi balik (back substitution).
+Dalam konteks pembelajaran mesin, dekomposisi QR dimanfaatkan untuk melakukan perhitungan "[metode kuadrat terkecil](/id/p/method-of-least-squares/) (least squares)" secara stabil dan cepat guna menemukan parameter optimal dalam analisis regresi berganda. Pendekatan memecahkan persamaan normal ($A^T A \mathbf{x} = A^T \mathbf{b}$) secara langsung pada umumnya dihindari dalam praktiknya karena bilangan kondisi matriks $A^T A$ mudah memburuk, membuatnya sangat rentan terhadap kesalahan numerik. Sebaliknya, praktik standarnya adalah mendekomposisinya menjadi $A=QR$ dan memecahkan $R \mathbf{x} = Q^T \mathbf{b}$ melalui substitusi balik (back substitution).
 
 ## 9. Kesimpulan: Keindahan Ruang yang Diselaraskan Kembali
 

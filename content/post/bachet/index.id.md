@@ -31,7 +31,7 @@ flowchart TD
 
 Salah satu pencapaian [Bachet](https://kenji.blog/id/p/bachet/) yang paling terkenal adalah terjemahannya atas buku "Arithmetica" oleh matematikawan Yunani kuno [Diophantus](https://kenji.blog/id/p/diophantus/) ke dalam bahasa Latin, menambahkan komentar, dan menerbitkannya pada tahun 1621.
 
-Buku terjemahan ini menjadi teks standar bagi matematikawan Eropa pada saat itu untuk mempelajari aljabar kuno dan teori bilangan. Salah satu anekdot yang paling terkenal adalah bahwa [Pierre de Fermat](https://kenji.blog/id/p/fermat/) menulis "Teorema Terakhir Fermat" yang terkenal di margin salinan edisi [Bachet](https://kenji.blog/id/p/bachet/) miliknya.
+Buku terjemahan ini menjadi teks standar bagi matematikawan Eropa pada saat itu untuk mempelajari aljabar kuno dan teori bilangan. Salah satu anekdot yang paling terkenal adalah bahwa [Pierre de Fermat](https://kenji.blog/id/p/fermat/) menulis "[Teorema Terakhir Fermat](/id/p/fermats-last-theorem/)" yang terkenal di margin salinan edisi [Bachet](https://kenji.blog/id/p/bachet/) miliknya.
 
 [Bachet](https://kenji.blog/id/p/bachet/) tidak berhenti pada sekadar terjemahan; ia menambahkan komentar dan generalisasi yang sangat baik pada masalah-masalah [Diophantus](https://kenji.blog/id/p/diophantus/). Tanpa wawasan matematikanya, perkembangan teori bilangan pada abad ke-17 mungkin akan jauh lebih lambat.
 
@@ -79,7 +79,7 @@ $$
 ax + by = 1
 $$
 
-$x$ dan $y$ dapat dihitung secara konkret dengan memperluas algoritma [Euclide](https://kenji.blog/id/p/euclid/)an (algoritma Euclidean yang diperluas), yang telah menjadi teorema fundamental yang sangat diperlukan dalam kriptografi modern (seperti RSA). Dalam konteks yang menghargai keakuratan sejarah, ini kadang-kadang disebut **Teorema [Bachet](https://kenji.blog/id/p/bachet/)**.
+$x$ dan $y$ dapat dihitung secara konkret dengan memperluas algoritma [Euclide](https://kenji.blog/id/p/euclid/)an ([algoritma Euclidean](/id/p/euclidean-algorithm/) yang diperluas), yang telah menjadi teorema fundamental yang sangat diperlukan dalam kriptografi modern (seperti RSA). Dalam konteks yang menghargai keakuratan sejarah, ini kadang-kadang disebut **Teorema [Bachet](https://kenji.blog/id/p/bachet/)**.
 
 ## Kesimpulan
 

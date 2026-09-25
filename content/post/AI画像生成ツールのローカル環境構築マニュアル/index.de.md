@@ -267,6 +267,6 @@ Dies sind häufig auftretende Fehler beim Aufbau und Betrieb einer lokalen Umgeb
 
 Die Open-Source-Bewegung für die KI-Bildgenerierung, die mit Stable Diffusion begann, entwickelt sich zu Architekturen der nächsten Generation wie SDXL, Stable Diffusion 3 und [Flux](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/).1 weiter. Die Anzahl der Parameter der Modelle wächst in den Milliarden- und Zehnmilliardenbereich, und in Zukunft wird der Bedarf an GPU-Umgebungen mit mehr als 24 GB VRAM wahrscheinlich steigen.
 
-Lokale Optimierungstechnologien wie TensorRT, Quantisierungstechniken (Quantization) und GGUF beschleunigen sich jedoch gleichermaßen, und es bildet sich ein Ökosystem heraus, in dem eine ausreichende Inferenz sogar auf Hardware für den allgemeinen Verbraucher möglich wird.
+Lokale Optimierungstechnologien wie TensorRT, Quantisierungstechniken (Quantization) und [GGUF](/de/p/llama-cpp-quantization-gguf/) beschleunigen sich jedoch gleichermaßen, und es bildet sich ein Ökosystem heraus, in dem eine ausreichende Inferenz sogar auf Hardware für den allgemeinen Verbraucher möglich wird.
 
 Die Einrichtung von CUDA-Umgebungen, die VRAM-Optimierung und das Verständnis von [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s wie ComfyUI, die in diesem Handbuch erläutert werden, bilden universelles Grundlagenwissen, das nützlich bleibt, egal wie sich KI-Technologie-Trends verändern. Wir hoffen, dass Ihre Kreativität in einer grenzenlosen lokalen Umgebung voll zur Geltung kommt.

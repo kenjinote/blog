@@ -19,13 +19,13 @@ As the British mathematician William Clifford called him the "Copernicus of Geom
 
 Nikolai Lobachevsky was born in 1792 in Nizhny Novgorod, Russian Empire. When he was still young, his father passed away, plunging the family into extreme poverty. Amidst a difficult life, his mother moved to Kazan for her children's education. This decision became the first turning point that would give rise to the future genius mathematician.
 
-In 1807, he entered the newly founded Kazan University on a scholarship. Initially aspiring to study medicine, he met Martin Bartels (also the teacher of Carl Friedrich Gauss), an outstanding mathematician, and became captivated by the profound charm of mathematics. Under Bartels' guidance, Lobachevsky blossomed his remarkable talent, obtaining his master's degree at the young age of 21. Subsequently, he climbed the academic ladder at an exceptionally fast pace, becoming a distinguished professor at 24.
+In 1807, he entered the newly founded Kazan University on a scholarship. Initially aspiring to study medicine, he met Martin Bartels (also the teacher of [Carl Friedrich Gauss](/en/p/gauss/)), an outstanding mathematician, and became captivated by the profound charm of mathematics. Under Bartels' guidance, Lobachevsky blossomed his remarkable talent, obtaining his master's degree at the young age of 21. Subsequently, he climbed the academic ladder at an exceptionally fast pace, becoming a distinguished professor at 24.
 
 His life was intertwined with Kazan University. Not only as a professor but also as the head librarian, director of the observatory, and becoming the rector at the young age of 35, he dedicated himself to the modernization of the university and the development of education. The anecdote of him personally directing the quarantine and sanitation management of the campus during a cholera outbreak, saving the lives of many students, tells us that he was not just an inhabitant of the ivory tower but a person endowed with a deep sense of responsibility and action.
 
 ## Challenging the "Parallel Postulate": The Birth of Non-Euclidean Geometry
 
-What immortalized Lobachevsky's name in history was his challenge to the "Parallel Postulate (the Fifth Postulate)" in Euclid's "Elements."
+What immortalized Lobachevsky's name in history was his challenge to the "Parallel Postulate (the Fifth Postulate)" in [Euclid](/en/p/euclid/)'s "Elements."
 
 Since the 3rd century BC, this postulate, which states that "there is only one parallel line to a given line that passes through a point not on that line," had been considered self-evident. Over the centuries, countless mathematicians attempted to prove this postulate from the other four axioms, but all failed.
 
@@ -56,7 +56,7 @@ Even amidst the incomprehension and sneers of those around him, Lobachevsky did 
 
 Lobachevsky's later years were by no means happy. He was unjustly dismissed from his position as rector of the university, lost his beloved son, and furthermore, lost his eyesight. Blind, he completed "Pangeometry" by dictation to his disciples just before his death, leaving behind the culmination of his theories. In 1856, he passed away at the age of 63 without ever seeing the day his great achievements were rightfully evaluated.
 
-It was not until decades after his death that he gained true recognition as the "Copernicus of Geometry." His theory was generalized by Bernhard Riemann and developed into "Riemannian Geometry," which describes multidimensional curved spaces. And in the early 20th century, when Albert Einstein constructed the "General Theory of Relativity," this very framework of non-Euclidean geometry was essential to describe the universal truth that spacetime is distorted by gravity.
+It was not until decades after his death that he gained true recognition as the "Copernicus of Geometry." His theory was generalized by [Bernhard Riemann](/en/p/riemann/) and developed into "Riemannian Geometry," which describes multidimensional curved spaces. And in the early 20th century, when Albert Einstein constructed the "General Theory of Relativity," this very framework of non-Euclidean geometry was essential to describe the universal truth that spacetime is distorted by gravity.
 
 If Lobachevsky had not broken down the invisible wall called "common sense," modern physics and cosmology would have been completely different.
 

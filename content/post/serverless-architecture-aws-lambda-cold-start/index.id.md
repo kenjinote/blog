@@ -149,7 +149,7 @@ Waktu yang dibutuhkan untuk cold start pada garis besarnya dibagi menjadi **inis
 
 ### 4.2. Cold Start dari Sudut Pandang Probabilitas
 
-Dengan menggunakan teori antrean (seperti model M/M/c), kita dapat memodelkan probabilitas terjadinya cold start secara matematis.
+Dengan menggunakan [teori antrean](/id/p/queuing-theory-basics/) (seperti model M/M/c), kita dapat memodelkan probabilitas terjadinya cold start secara matematis.
 Misalkan laju kedatangan permintaan adalah $\lambda$, waktu hidup warm container adalah $T_w$, dan waktu pemrosesan adalah $\mu$, ketika lalu lintas melonjak (spike), jumlah paralel (jumlah kontainer) yang diperlukan akan meningkat drastis, dan probabilitas cold start pun meningkat.
 
 Dalam kondisi stabil (steady state), probabilitas $P_{warm}$ di mana warm container digunakan kembali dapat diaproksimasikan sebagai berikut:
@@ -274,7 +274,7 @@ Namun, jika Anda mendesainnya dengan mengabaikan "bayangan" (kekurangan) seperti
 Yang penting adalah, jangan melupakan prinsip dasar rekayasa bahwa **"Peluru Perak" tidaklah ada**.
 
 - Untuk **sistem dengan persyaratan latensi yang sangat ketat** (contoh: logika inti dari game online multiplayer, atau transaksi frekuensi tinggi dalam hitungan milidetik), menggunakan kontainer yang selalu berjalan (Amazon ECS/EKS) mungkin lebih cocok dibandingkan serverless.
-- Untuk **pemrosesan asinkron dengan banyak lalu lintas burst** atau **Web API dengan biaya operasional yang ingin ditekan seminimal mungkin**, AWS Lambda menjadi pilihan yang terbaik.
+- Untuk **[pemrosesan asinkron](/id/p/event-driven-architecture-async/) dengan banyak lalu lintas burst** atau **Web API dengan biaya operasional yang ingin ditekan seminimal mungkin**, AWS Lambda menjadi pilihan yang terbaik.
 
 Memahami karakteristik arsitektur secara mendalam dan memilih teknologi yang tepat pada tempat yang tepat. Itulah satu-satunya cara untuk mengendalikan "bayangan" sekaligus memaksimalkan cahaya terang dari serverless.
 

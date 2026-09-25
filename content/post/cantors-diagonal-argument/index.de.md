@@ -169,9 +169,9 @@ $$
 
 Hier stand Cantor vor einer großen Frage. **„Gibt es eine unendliche Menge mit einer Mächtigkeit zwischen $\aleph_0$ und $2^{\aleph_0}$ ?“**
 
-Die Hypothese, dass „keine dazwischenliegende Mächtigkeit existiert“, wird als **Kontinuumshypothese ([Continuum Hypothesis](https://kenji.blog/de/p/continuum-hypothesis/), CH)** bezeichnet. Cantor widmete sein Leben diesem Beweis, konnte ihn aber nicht erbringen.
+Die Hypothese, dass „keine dazwischenliegende Mächtigkeit existiert“, wird als **[Kontinuumshypothese](/de/p/continuum-hypothesis/) ([Continuum Hypothesis](https://kenji.blog/de/p/continuum-hypothesis/), CH)** bezeichnet. Cantor widmete sein Leben diesem Beweis, konnte ihn aber nicht erbringen.
 
-Später wurde von [Kurt Gödel](https://kenji.blog/de/p/godel/) und Paul Cohen bewiesen, dass die Kontinuumshypothese **„in den aktuellen Axiomen der Mathematik (ZFC) weder bewiesen noch widerlegt werden kann (sie ist unabhängig)“** . Dies ist eine der tiefgreifendsten Entdeckungen der Mathematik des 20. Jahrhunderts.
+Später wurde von [Kurt Gödel](https://kenji.blog/de/p/godel/) und Paul Cohen bewiesen, dass die [Kontinuumshypothese](/de/p/continuum-hypothesis/) **„in den aktuellen Axiomen der Mathematik (ZFC) weder bewiesen noch widerlegt werden kann (sie ist unabhängig)“** . Dies ist eine der tiefgreifendsten Entdeckungen der Mathematik des 20. Jahrhunderts.
 
 ---
 

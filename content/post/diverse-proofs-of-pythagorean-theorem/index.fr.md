@@ -16,7 +16,7 @@ tags:
 
 ## Introduction
 
-L'un des théorèmes les plus célèbres des mathématiques, et l'un de ceux pour lesquels il existe le plus grand nombre de preuves, est le **théorème de Pythagore**. Ce théorème, qui décrit la relation entre les trois côtés d'un triangle rectangle, porte le nom de l'ancien philosophe grec Pythagore, bien qu'il ait été connu à Babylone, en Chine et ailleurs bien avant son époque.
+L'un des théorèmes les plus célèbres des mathématiques, et l'un de ceux pour lesquels il existe le plus grand nombre de preuves, est le **théorème de [Pythagore](/fr/p/pythagoras/)**. Ce théorème, qui décrit la relation entre les trois côtés d'un triangle rectangle, porte le nom de l'ancien philosophe grec [Pythagore](/fr/p/pythagoras/), bien qu'il ait été connu à Babylone, en Chine et ailleurs bien avant son époque.
 
 L'affirmation de ce théorème est très simple. Lorsque la longueur de l'hypoténuse d'un triangle rectangle est $c$, et que les longueurs des deux autres côtés sont $a$ et $b$, la relation suivante est vérifiée :
 
@@ -118,7 +118,7 @@ Multiplier les deux côtés par 2 et développer donne :
 
 $$ a^2 + 2ab + b^2 = 2ab + c^2 $$
 
-Soustraire $2ab$ des deux côtés permet de déduire brillamment le **théorème de Pythagore** :
+Soustraire $2ab$ des deux côtés permet de déduire brillamment le **théorème de [Pythagore](/fr/p/pythagoras/)** :
 
 $$ a^2 + b^2 = c^2 $$
 
@@ -128,7 +128,7 @@ La preuve de Garfield, créée par quelqu'un qui était à la fois un politicien
 
 ## 4. Preuve d'Albert Einstein par analyse dimensionnelle
 
-Albert Einstein, le plus grand physicien du 20e siècle, aurait également prouvé le théorème de Pythagore à sa manière pendant son enfance. Son approche utilisait le concept **d'analyse dimensionnelle**, une méthode très intuitive caractéristique d'un physicien.
+Albert Einstein, le plus grand physicien du 20e siècle, aurait également prouvé le théorème de [Pythagore](/fr/p/pythagoras/) à sa manière pendant son enfance. Son approche utilisait le concept **d'analyse dimensionnelle**, une méthode très intuitive caractéristique d'un physicien.
 
 ### Idée de l'analyse dimensionnelle
 
@@ -163,6 +163,6 @@ Cette preuve n'a pas été déduite en jouant avec des formules, mais à partir 
 
 ## Conclusion
 
-Le théorème de Pythagore n'est pas simplement une formule mathématique à mémoriser. C'est un merveilleux exemple de l'essence des mathématiques, qui peut être abordée sous **différentes perspectives**, y compris des énigmes géométriques, la manipulation d'équations algébriques, et même le concept physique des dimensions.
+Le théorème de [Pythagore](/fr/p/pythagoras/) n'est pas simplement une formule mathématique à mémoriser. C'est un merveilleux exemple de l'essence des mathématiques, qui peut être abordée sous **différentes perspectives**, y compris des énigmes géométriques, la manipulation d'équations algébriques, et même le concept physique des dimensions.
 
 Au-delà des quatre preuves présentées ici, il existe d'innombrables approches à travers le monde, telles qu'une preuve par Léonard de Vinci et des preuves utilisant l'origami. N'hésitez pas à essayer d'explorer de nouvelles méthodes de preuve par vous-même. Le monde des mathématiques est toujours plein de nouvelles découvertes.

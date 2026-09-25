@@ -17,7 +17,7 @@ tags:
 
 在學習線性代數的過程中，我們會遇到許多優美的定理和公式。其中， **[凱萊-哈密頓定理](https://kenji.blog/zh-tw/p/cayley-hamilton-theorem/)** (Cayley-Hamilton theorem) 初看非常不可思議，甚至讓人感覺像是魔法一般。
 
-簡而言之，該定理指出：「所有方陣都滿足其自身的特徵方程式」。特徵方程式是為了求解矩陣的特徵值而需要解的代數方程式。該定理令人驚訝地斷言，將矩陣自身代入該方程式的變數中，結果將是零矩陣。矩陣這種數字的排列，竟然是其自身性質推導出的多項式的根，這實在是一個非常有趣的現象。
+簡而言之，該定理指出：「所有方陣都滿足其自身的特徵方程式」。特徵方程式是為了求解矩陣的[特徵值](/zh-tw/p/eigenvalues-and-eigenvectors/)而需要解的代數方程式。該定理令人驚訝地斷言，將矩陣自身代入該方程式的變數中，結果將是零矩陣。矩陣這種數字的排列，竟然是其自身性質推導出的多項式的根，這實在是一個非常有趣的現象。
 
 本文將從基礎概念的回顧開始，詳細解讀 **[凱萊-哈密頓定理](https://kenji.blog/zh-tw/p/cayley-hamilton-theorem/)** 的直觀含義、嚴謹證明，並結合豐富的具體例子，探討其在計算矩陣高次冪和逆矩陣時的實際應用。
 
@@ -29,9 +29,9 @@ tags:
 
 ## 3. 特徵方程式與特徵值的回顧
 
-為了理解這個定理，讓我們先回顧一下 **特徵方程式** (characteristic equation) 和 **特徵值** (eigenvalues) 的概念。
+為了理解這個定理，讓我們先回顧一下 **特徵方程式** (characteristic equation) 和 **[特徵值](/zh-tw/p/eigenvalues-and-eigenvectors/)** (eigenvalues) 的概念。
 
-對於 $n$ 階方陣 $A$，如果存在純量 $\lambda$ 和非零向量 $\mathbf{x}$ 滿足以下關係，則稱 $\lambda$ 為矩陣 $A$ 的特徵值，$\mathbf{x}$ 為特徵向量。
+對於 $n$ 階方陣 $A$，如果存在純量 $\lambda$ 和非零向量 $\mathbf{x}$ 滿足以下關係，則稱 $\lambda$ 為矩陣 $A$ 的[特徵值](/zh-tw/p/eigenvalues-and-eigenvectors/)，$\mathbf{x}$ 為特徵向量。
 
 $$
 A \mathbf{x} = \lambda \mathbf{x}
@@ -43,13 +43,13 @@ $$
 (\lambda I - A) \mathbf{x} = \mathbf{0}
 $$
 
-向量 $\mathbf{x}$ 具有非零（非平凡）解的充要條件是係數矩陣 $(\lambda I - A)$ 不可逆，即其行列式必須為零。
+向量 $\mathbf{x}$ 具有非零（非平凡）解的充要條件是係數矩陣 $(\lambda I - A)$ 不可逆，即其[行列式](/zh-tw/p/geometric-meaning-of-determinant/)必須為零。
 
 $$
 \det(\lambda I - A) = 0
 $$
 
-這個方程式被稱為矩陣 $A$ 的 **特徵方程式** 。此外，左側的多項式 $p(\lambda) = \det(\lambda I - A)$ 被稱為 **特徵多項式** (characteristic polynomial)。根據行列式的定義，$p(\lambda)$ 是一個關於 $\lambda$ 的 $n$ 次多項式。
+這個方程式被稱為矩陣 $A$ 的 **特徵方程式** 。此外，左側的多項式 $p(\lambda) = \det(\lambda I - A)$ 被稱為 **特徵多項式** (characteristic polynomial)。根據[行列式](/zh-tw/p/geometric-meaning-of-determinant/)的定義，$p(\lambda)$ 是一個關於 $\lambda$ 的 $n$ 次多項式。
 
 $$
 p(\lambda) = \lambda^n + c_{n-1}\lambda^{n-1} + \dots + c_1\lambda + c_0
@@ -96,7 +96,7 @@ p(\lambda) &= \det(\lambda I - A) \\
 \end{aligned}
 $$
 
-這裡，$a + d$ 是矩陣 $A$ 的 **跡** (trace)，$ad - bc$ 是矩陣 $A$ 的 **行列式** (determinant)。分別記作 $\text{tr}(A)$ 和 $\det(A)$，特徵方程式就變成了：
+這裡，$a + d$ 是矩陣 $A$ 的 **跡** (trace)，$ad - bc$ 是矩陣 $A$ 的 **[行列式](/zh-tw/p/geometric-meaning-of-determinant/)** (determinant)。分別記作 $\text{tr}(A)$ 和 $\det(A)$，特徵方程式就變成了：
 
 $$
 p(\lambda) = \lambda^2 - \text{tr}(A)\lambda + \det(A)
@@ -137,10 +137,10 @@ $$
 > $p(A) = \det(A I - A) = \det(A - A) = \det(O) = 0$。
 > 故定理得證。
 
-這種推理是 **完全錯誤** 的。因為 $p(\lambda)$ 終究是一個輸出「純量值（多項式）」的函數，而將矩陣代入 $\lambda$ 的操作 $p(A)$，是將 $A$ 代入多項式的每一項從而生成「矩陣」的操作。相反，上述錯誤證明直接將矩陣 $A$ 代入行列式內部從而得出純量 $0$，這導致左側（矩陣）和右側（純量）的類型不匹配。
+這種推理是 **完全錯誤** 的。因為 $p(\lambda)$ 終究是一個輸出「純量值（多項式）」的函數，而將矩陣代入 $\lambda$ 的操作 $p(A)$，是將 $A$ 代入多項式的每一項從而生成「矩陣」的操作。相反，上述錯誤證明直接將矩陣 $A$ 代入[行列式](/zh-tw/p/geometric-meaning-of-determinant/)內部從而得出純量 $0$，這導致左側（矩陣）和右側（純量）的類型不匹配。
 
-直觀上，我們可以透過考慮矩陣 $A$ 可對角化的情況來更容易地理解它。
-假設矩陣 $A$ 可以對角化為 $A = P D P^{-1}$ （其中 $D$ 是對角線上排列著特徵值 $\lambda_1, \dots, \lambda_n$ 的對角矩陣）。
+直觀上，我們可以透過考慮矩陣 $A$ 可[對角化](/zh-tw/p/diagonalization-and-jordan-normal-form/)的情況來更容易地理解它。
+假設矩陣 $A$ 可以[對角化](/zh-tw/p/diagonalization-and-jordan-normal-form/)為 $A = P D P^{-1}$ （其中 $D$ 是對角線上排列著[特徵值](/zh-tw/p/eigenvalues-and-eigenvectors/) $\lambda_1, \dots, \lambda_n$ 的對角矩陣）。
 
 $$ p(A) = p(P D P^{-1}) = P p(D) P^{-1} $$
 
@@ -150,9 +150,9 @@ $$
 p(D) = \begin{pmatrix} p(\lambda_1) & & 0 \\ & \ddots & \\ 0 & & p(\lambda_n) \end{pmatrix}
 $$
 
-根據特徵多項式的定義，每個特徵值 $\lambda_i$ 都滿足 $p(\lambda_i) = 0$。因此，$p(D)$ 變成了零矩陣，進而推導出 $p(A) = P O P^{-1} = O$。
+根據特徵多項式的定義，每個[特徵值](/zh-tw/p/eigenvalues-and-eigenvectors/) $\lambda_i$ 都滿足 $p(\lambda_i) = 0$。因此，$p(D)$ 變成了零矩陣，進而推導出 $p(A) = P O P^{-1} = O$。
 
-但是，因為並非所有矩陣都能被對角化（例如不具有完備特徵向量的矩陣），所以這種解釋不能構成完整的證明。一般情況的證明需要另一種方法。
+但是，因為並非所有矩陣都能被[對角化](/zh-tw/p/diagonalization-and-jordan-normal-form/)（例如不具有完備特徵向量的矩陣），所以這種解釋不能構成完整的證明。一般情況的證明需要另一種方法。
 
 ## 7. [凱萊-哈密頓定理](https://kenji.blog/zh-tw/p/cayley-hamilton-theorem/)的嚴謹證明
 
@@ -164,7 +164,7 @@ $$
 (\lambda I - A) B(\lambda) = \det(\lambda I - A) I = p(\lambda) I
 $$
 
-由於矩陣 $\lambda I - A$ 的每個分量都是關於 $\lambda$ 的1次或0次多項式，因此其伴隨矩陣 $B(\lambda)$ 的每個分量的行列式將是關於 $\lambda$ 的 $(n-1)$ 次或更低次的多項式。因此，可以將 $B(\lambda)$ 表示為以矩陣為係數的 $\lambda$ 多項式：
+由於矩陣 $\lambda I - A$ 的每個分量都是關於 $\lambda$ 的1次或0次多項式，因此其伴隨矩陣 $B(\lambda)$ 的每個分量的[行列式](/zh-tw/p/geometric-meaning-of-determinant/)將是關於 $\lambda$ 的 $(n-1)$ 次或更低次的多項式。因此，可以將 $B(\lambda)$ 表示為以矩陣為係數的 $\lambda$ 多項式：
 
 $$
 B(\lambda) = B_{n-1}\lambda^{n-1} + B_{n-2}\lambda^{n-2} + \dots + B_1\lambda + B_0
@@ -281,7 +281,7 @@ $$
 本文詳細解讀了作為線性代數亮點之一的 **[凱萊-哈密頓定理](https://kenji.blog/zh-tw/p/cayley-hamilton-theorem/)** 。
 
 * 將矩陣代入其自身的特徵多項式 $p(\lambda)$ 會得到零矩陣這一驚人性質（$p(A) = O$）。
-* 透過對角化進行的直觀理解，以及混淆純量代入的常見誤區。
+* 透過[對角化](/zh-tw/p/diagonalization-and-jordan-normal-form/)進行的直觀理解，以及混淆純量代入的常見誤區。
 * 利用伴隨矩陣恆等式進行的優美而嚴謹的證明。
 * 利用多項式除法高速計算矩陣高次冪，以及求逆矩陣表達式等實用應用。
 

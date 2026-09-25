@@ -112,7 +112,7 @@ description: 'Nous présentons une sélection de citations inspirantes de grands
 
 > Et pourtant elle tourne (Galilée)
 
-> Il n'y a pas de voie royale en géométrie ([Euclide](https://kenji.blog/p/euclid/))
+> Il n'y a pas de voie royale en géométrie ([Euclide](https://kenji.blog/fr/p/euclid/))
 
 > Donnez-moi un point d'appui et je soulèverai le monde (Archimède)
 

@@ -12,7 +12,7 @@ image: "eyecatch.jpg"
 
 Dari abad ke-17 hingga pertengahan abad ke-19, Jepang mengadopsi kebijakan isolasi ketat yang disebut "Sakoku". Di era ketika pertukaran dengan sains dan budaya Barat sangat dibatasi ini, sebuah fenomena luar biasa yang tak tertandingi di dunia sedang terjadi di dalam Jepang. Itu adalah mekarnya budaya matematika tingkat tinggi yang unik di Jepang, **"Wasan"**.
 
-Pada saat yang sama di Eropa, kalkulus sedang dirintis oleh Isaac Newton dan Gottfried Leibniz, dan matematika modern berkembang pesat. Secara mengejutkan, di negara pulau di Timur Jauh, Jepang, konsep matematika tingkat tinggi yang sebanding dengan kalkulus lahir secara independen.
+Pada saat yang sama di Eropa, kalkulus sedang dirintis oleh [Isaac Newton](/id/p/newton/) dan [Gottfried Leibniz](/id/p/leibniz/), dan matematika modern berkembang pesat. Secara mengejutkan, di negara pulau di Timur Jauh, Jepang, konsep matematika tingkat tinggi yang sebanding dengan kalkulus lahir secara independen.
 
 Artikel ini akan mengungkap secara rinci sejarah Wasan, yang dimulai dari pengukuran dan perhitungan praktis, kemudian perlahan menyublim menjadi permainan intelektual murni, dan bahkan semacam seni, serta para ahli matematika jenius yang mendorong perkembangannya, dan budaya unik "Sangaku" yang tak tertandingi di dunia.
 
@@ -48,7 +48,7 @@ Selain itu, mengenai "Bilangan Bernoulli" yang muncul dalam rumus jumlah pangkat
 
 Setelah kematian Seki Takakazu, murid utamanya **Takebe Katahiro** dan yang lainnya mengembangkan Wasan lebih jauh. Masalah tersulit yang mereka tantang adalah perhitungan yang berkaitan dengan "lingkaran".
 
-Para ahli matematika Wasan merancang sebuah metode bernama **"Enri"**, yang setara dengan kalkulus diferensial dan integral modern. Takebe Katahiro menemukan metode menggunakan ekspansi deret tak terhingga (setara dengan deret Taylor) untuk menghitung panjang busur dan luas tembereng. Melalui perhitungan manual yang melelahkan, ia dikatakan telah menghitung nilai pi $\pi$ secara akurat hingga 41 tempat desimal.
+Para ahli matematika Wasan merancang sebuah metode bernama **"Enri"**, yang setara dengan kalkulus diferensial dan integral modern. Takebe Katahiro menemukan metode menggunakan ekspansi deret tak terhingga (setara dengan [deret Taylor](/id/p/taylor-and-maclaurin-series/)) untuk menghitung panjang busur dan luas tembereng. Melalui perhitungan manual yang melelahkan, ia dikatakan telah menghitung nilai pi $\pi$ secara akurat hingga 41 tempat desimal.
 
 $$ \pi \approx 3.14159265358979323846264338327950288419716\dots $$
 

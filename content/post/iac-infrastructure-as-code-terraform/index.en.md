@@ -19,7 +19,7 @@ tags:
 
 In the world of system development, a paradigm shift has occurred where not only application code but also the infrastructure itself is managed as code. This is **Infrastructure as Code (IaC)**. Manual server construction (so-called "procedure-based construction" or "click operations") has been a breeding ground for human error and has had fatal problems such as a lack of scalability and reproducibility.
 
-This article starts with the concept of IaC and focuses on **Terraform**, which can be said to be its de facto standard. We will explain in great detail the philosophy of "declarative configuration management" adopted by Terraform, its internal architecture, the mechanism of state management (State), and practical best practices.
+This article starts with the concept of IaC and focuses on **Terraform**, which can be said to be its de facto standard. We will explain in great detail the philosophy of "declarative configuration management" adopted by Terraform, its internal architecture, the mechanism of [state management](/en/p/state-management-history-redux-context-recoil-zustand/) (State), and practical best practices.
 
 ---
 
@@ -120,7 +120,7 @@ graph TD
     VPC --> SG
 ```
 
-With this approach based on graph theory, Terraform achieves the following:
+With this approach based on [graph theory](/en/p/graph-theory-dijkstra-a-star/), Terraform achieves the following:
 - **Parallel creation** of resources without dependencies (speed up).
 - Creation, update, and deletion of resources in the correct order.
 

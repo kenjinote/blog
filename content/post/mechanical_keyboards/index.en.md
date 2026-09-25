@@ -94,7 +94,7 @@ For coding, 1000Hz is more than enough performance, but it leads to a sense of s
 
 **N-Key Rollover (NKRO)** is a feature where, when multiple keys are pressed simultaneously, all of them are accurately recognized. In the past, due to USB connection restrictions, there were limits like "up to 6 keys," but modern high-end keyboards have achieved virtually unlimited simultaneous presses (Full NKRO) by cleverly utilizing USB HID reports.
 
-For engineers who heavily use complex shortcuts in editors like Vim or Emacs (e.g., `Ctrl + Shift + Alt + any key`), a complete NKRO is a prerequisite.
+[For engineers](/en/p/prompt-engineering-for-engineers/) who heavily use complex shortcuts in editors like Vim or Emacs (e.g., `Ctrl + Shift + Alt + any key`), a complete NKRO is a prerequisite.
 
 ### 2.3 Debounce Delay
 
@@ -102,7 +102,7 @@ Mechanical switches with metal contacts experience a "bounce phenomenon" where t
 
 ## 3. Firmware and Customizability (QMK / VIA)
 
-If the hardware is the "body", the firmware is the "brain" of the keyboard. Modern high-end keyboards for engineers have the ability not just to send keycodes, but to execute advanced programs.
+If the hardware is the "body", the firmware is the "brain" of the keyboard. Modern high-end keyboards [for engineers](/en/p/prompt-engineering-for-engineers/) have the ability not just to send keycodes, but to execute advanced programs.
 
 ### 3.1 QMK Firmware
 
@@ -151,7 +151,7 @@ Keychron, originating from Hong Kong, is driving the recent custom keyboard boom
 - **Switches:** Mechanical (Hot-swappable. Switches can be freely exchanged)
 - **Firmware:** Fully compatible with QMK/VIA
 - **Features:** A toggle switch for both macOS and Windows compatibility. You can choose your preferred layout, such as the Q8 with an Alice layout or the Q1 with a 75% layout.
-- **Benefits for Engineers:** Despite being a pre-built product, you can immediately experience superb typing feel and customizability comparable to a custom-built keyboard right out of the box. It is ideal for setting up a Vim-like arrow layer using VIA.
+- **Benefits [for Engineers](/en/p/prompt-engineering-for-engineers/):** Despite being a pre-built product, you can immediately experience superb typing feel and customizability comparable to a custom-built keyboard right out of the box. It is ideal for setting up a Vim-like arrow layer using VIA.
 
 ---
 
@@ -161,7 +161,7 @@ The "Happy Hacking Keyboard (HHKB)" is a legendary keyboard born for UNIX progra
 
 - **Switches:** Linear silent mechanical switches (manufactured by Kailh, hot-swappable)
 - **Features:** A pointing stick (TrackPoint) in the center of the keyboard, 4 gesture pads.
-- **Benefits for Engineers:** You can complete mouse cursor operations, scrolling, and window switching without ever taking your hands off the home row. Once you experience this "everything is completed at your fingertips" experience, you can never go back to reaching for a mouse with your right hand.
+- **Benefits [for Engineers](/en/p/prompt-engineering-for-engineers/):** You can complete mouse cursor operations, scrolling, and window switching without ever taking your hands off the home row. Once you experience this "everything is completed at your fingertips" experience, you can never go back to reaching for a mouse with your right hand.
 
 ---
 
@@ -172,7 +172,7 @@ The pinnacle of split keyboards developed by Canada's ZSA. The left and right si
 - **Switches:** Mechanical (Cherry MX compatible, hot-swappable)
 - **Firmware:** QMK based (using its own powerful GUI tool "Oryx")
 - **Features:** Columnar staggered layout, dedicated thumb cluster keys, and legs for tenting (tilting) come standard.
-- **Benefits for Engineers:** By assigning Enter, Space, Backspace, and Layer switching to your thumbs, the burden on the weakest pinky fingers is drastically reduced. It is a savior device for engineers suffering from carpal tunnel syndrome.
+- **Benefits [for Engineers](/en/p/prompt-engineering-for-engineers/):** By assigning Enter, Space, Backspace, and Layer switching to your thumbs, the burden on the weakest pinky fingers is drastically reduced. It is a savior device [for engineers](/en/p/prompt-engineering-for-engineers/) suffering from carpal tunnel syndrome.
 
 ---
 
@@ -182,7 +182,7 @@ A Japanese masterpiece boasted by Topre. The track record of being used for many
 
 - **Switches:** Electrostatic Capacitive Non-Contact (Topre)
 - **Features:** With the APC (Actuation Point Changer) function, the actuation point can be set per key from 0.8mm, 1.5mm, 2.2mm, and 3.0mm.
-- **Benefits for Engineers:** The smooth key touch due to the absence of physical contacts is called "feather touch", and the repulsive stress on the fingers is kept to a minimum even during long coding sessions. It is possible to customize it so that only keys pressed by the pinky (like A or Enter) have a shallow actuation point (0.8mm), allowing them to react with just a light touch.
+- **Benefits [for Engineers](/en/p/prompt-engineering-for-engineers/):** The smooth key touch due to the absence of physical contacts is called "feather touch", and the repulsive stress on the fingers is kept to a minimum even during long coding sessions. It is possible to customize it so that only keys pressed by the pinky (like A or Enter) have a shallow actuation point (0.8mm), allowing them to react with just a light touch.
 
 ---
 
@@ -192,7 +192,7 @@ Originally developed for e-sports gamers, its innovative technology is also high
 
 - **Switches:** Lekker Switch (Hall effect magnetic switch)
 - **Features:** Rapid trigger function, actuation point adjustable in 0.1mm increments from 0.1mm to 4.0mm.
-- **Benefits for Engineers:** Utilizing analog input, eccentric settings (Dynamic Keystroke) like "lowercase if pushed slightly, uppercase if pushed deeply (in combination with Shift)" are possible. In addition, since the key turns off the moment the finger is lifted even slightly, it prevents unintended continuous key inputs during high-speed typing, providing an unparalleled accurate input experience.
+- **Benefits [for Engineers](/en/p/prompt-engineering-for-engineers/):** Utilizing analog input, eccentric settings (Dynamic Keystroke) like "lowercase if pushed slightly, uppercase if pushed deeply (in combination with Shift)" are possible. In addition, since the key turns off the moment the finger is lifted even slightly, it prevents unintended continuous key inputs during high-speed typing, providing an unparalleled accurate input experience.
 
 ## Conclusion
 

@@ -42,7 +42,7 @@ $$ (x - y)(x + y) \equiv 0 \pmod N $$
 
 ## 2. 고전 최강의 알고리즘: '일반 수체 체(GNFS)'의 심연
 
-**'GNFS'** 는 오늘날 알려진 고전 컴퓨터용 소인수분해 알고리즘 중에서 가장 빠른 것입니다. 그 시간 복잡도는 준지수 함수적(Sub-exponential)인 시간을 필요로 합니다.
+**'GNFS'** 는 오늘날 알려진 고전 컴퓨터용 소인수분해 알고리즘 중에서 가장 빠른 것입니다. 그 시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)는 준지수 함수적(Sub-exponential)인 시간을 필요로 합니다.
 
 ### GNFS의 계산량
 
@@ -101,7 +101,7 @@ GNFS가 준지수 함수적인 시간을 필요로 하는 반면, 1994년 피터
 
 ### 쇼어 알고리즘의 계산량
 
-양자 비트 수를 $O(\log N)$이라고 할 때, 시간 복잡도는 다음과 같습니다.
+양자 비트 수를 $O(\log N)$이라고 할 때, 시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)는 다음과 같습니다.
 
 $$ O((\log N)^3) $$
 

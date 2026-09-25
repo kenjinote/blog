@@ -9,7 +9,7 @@ tags: ["Problema de los generales bizantinos", "Cadena de bloques", "Consenso", 
 slug: "byzantine-generals-problem"
 ---
 
-Al estudiar sistemas distribuidos o tecnología blockchain, invariablemente nos encontramos con el **[Problema de los generales bizantinos](https://kenji.blog/es/p/byzantine-generals-problem/)** ([Byzantine Generals](https://kenji.blog/es/p/byzantine-generals-problem-consensus/) Problem). Este aborda un tema crucial: ¿cómo logra el sistema en su conjunto alcanzar un consenso correcto en una situación donde existen "traidores" o "nodos defectuosos" en la red?
+Al estudiar [sistemas distribuidos](/es/p/cap-theorem-distributed-systems-tradeoff/) o tecnología [blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/), invariablemente nos encontramos con el **[Problema de los generales bizantinos](https://kenji.blog/es/p/byzantine-generals-problem/)** ([Byzantine Generals](https://kenji.blog/es/p/byzantine-generals-problem-consensus/) Problem). Este aborda un tema crucial: ¿cómo logra el sistema en su conjunto alcanzar un consenso correcto en una situación donde existen "traidores" o "nodos defectuosos" en la red?
 
 En este artículo, explicaremos detalladamente este **[Problema de los generales bizantinos](https://kenji.blog/es/p/byzantine-generals-problem/)**, desde sus fundamentos hasta sus aplicaciones, utilizando una historia concreta, fórmulas matemáticas y diagramas.
 
@@ -121,7 +121,7 @@ En este modelo, es imposible alterar las órdenes emitidas por el comandante dur
 
 La resistencia al problema de los generales bizantinos se llama **Tolerancia a Fallas Bizantinas** (Byzantine Fault Tolerance, BFT). Es un indicador crucial para que un sistema distribuido pueda soportar fallas y ataques maliciosos y seguir operando con normalidad.
 
-Recientemente, este problema ha vuelto a acaparar gran atención debido a la aparición de la **tecnología Blockchain**. Dado que Blockchain es una red [P2P](https://kenji.blog/es/p/webrtc-realtime-communication-p2p/) sin administrador central, los participantes malintencionados (nodos) podrían difundir historiales de transacciones falsos. Es exactamente el problema de los generales bizantinos.
+Recientemente, este problema ha vuelto a acaparar gran atención debido a la aparición de la **tecnología [Blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/)**. Dado que [Blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/) es una red [P2P](https://kenji.blog/es/p/webrtc-realtime-communication-p2p/) sin administrador central, los participantes malintencionados (nodos) podrían difundir historiales de transacciones falsos. Es exactamente el problema de los generales bizantinos.
 
 ### El mecanismo de PBFT (Practical Byzantine Fault Tolerance)
 
@@ -162,7 +162,7 @@ Muchos de los algoritmos PoS más recientes, como Casper de Ethereum o Tendermin
 
 ## 5. Modelado matemático y aplicaciones de BFT
 
-En el diseño de sistemas distribuidos más avanzados, las transiciones de estado del sistema se definen rigurosamente y se demuestra la corrección de los algoritmos BFT.
+En el diseño de [sistemas distribuidos](/es/p/cap-theorem-distributed-systems-tradeoff/) más avanzados, las transiciones de estado del sistema se definen rigurosamente y se demuestra la corrección de los algoritmos BFT.
 
 Por ejemplo, sea $\mathcal{N} = \{1, 2, \dots, n\}$ el conjunto de nodos y $f$ el número máximo de nodos traidores. En una ronda $r$, cada nodo $i$ mantiene el estado $s_i^{(r)}$ e intercambia mensajes con los demás nodos.
 
@@ -180,6 +180,6 @@ $$
 
 ## 6. Conclusión
 
-Este **[Problema de los generales bizantinos](https://kenji.blog/es/p/byzantine-generals-problem/)** es la teoría fundamental para garantizar la fiabilidad de los sistemas distribuidos. La cuestión de "cómo tomar la decisión correcta como un todo en un entorno donde no sabes en quién confiar" se aplica a toda la infraestructura de TI moderna, desde las tecnologías subyacentes de criptoactivos hasta los sistemas de control de aeronaves y el cloud computing.
+Este **[Problema de los generales bizantinos](https://kenji.blog/es/p/byzantine-generals-problem/)** es la teoría fundamental para garantizar la fiabilidad de los [sistemas distribuidos](/es/p/cap-theorem-distributed-systems-tradeoff/). La cuestión de "cómo tomar la decisión correcta como un todo en un entorno donde no sabes en quién confiar" se aplica a toda la infraestructura de TI moderna, desde las tecnologías subyacentes de criptoactivos hasta los sistemas de control de aeronaves y el cloud computing.
 
-La evolución de los algoritmos diseñados para que el sistema no se detenga, asumiendo la existencia de traidores, no se detendrá en el futuro. Para los ingenieros implicados en el diseño de sistemas distribuidos, la comprensión de las demostraciones matemáticas y los algoritmos que subyacen a este problema será, sin duda, un arma muy poderosa.
+La evolución de los algoritmos diseñados para que el sistema no se detenga, asumiendo la existencia de traidores, no se detendrá en el futuro. Para los ingenieros implicados en el diseño de [sistemas distribuidos](/es/p/cap-theorem-distributed-systems-tradeoff/), la comprensión de las demostraciones matemáticas y los algoritmos que subyacen a este problema será, sin duda, un arma muy poderosa.

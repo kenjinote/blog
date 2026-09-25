@@ -11,7 +11,7 @@ tags: ["Transformer", "Deep Learning", "Attention", "Math"]
 
 # 引言：为什么要学习[Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)的数学原理？
 
-毫不夸张地说，“Transformer”架构改写了现代自然语言处理（NLP）乃至整个AI的历史。该模型在2017年由Google的研究人员们在论文《Attention Is All You Need》中首次提出，目前作为OpenAI的GPT系列（ChatGPT的基础技术）、Google的BERT以及Anthropic的Claude等席卷全球的大型语言模型（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的核心组件而发挥着作用。
+毫不夸张地说，“Transformer”架构改写了现代自然语言处理（NLP）乃至整个AI的历史。该模型在2017年由Google的研究人员们在论文《Attention Is All You Need》中首次提出，目前作为OpenAI的GPT系列（ChatGPT的基础技术）、Google的BERT以及Anthropic的Claude等席卷全球的[大型语言模型](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的核心组件而发挥着作用。
 
 然而，目前的情况是，关于Transformer的工作原理，虽然经常能看到诸如“使用Attention（注意力机制）来理解上下文”这样的定性解释，但针对初学者的关于其背后的 **数学结构** 的深入解说是出乎意料地少的。为了真正理解AI是如何将“语言”作为“数学公式”来处理，并生成令人惊叹的自然文章的，解读其数学机制是不可或缺的。
 
@@ -271,15 +271,15 @@ $$ V_{encoder} = X_{enc} W^V $$
 # 9. 计算复杂度与现代优化的数学
 
 Transformer是一个出色的模型，但也存在源于其数学结构的“弱点”。
-请关注Self-Attention的计算复杂度。在计算得分矩阵 $Q K^T$ 时，因为要将 $(N \times d_k)$ 的矩阵与 $(d_k \times N)$ 的矩阵相乘，所以其计算复杂度为 **$O(N^2 \cdot d_{model})$** 。
+请关注Self-Attention的计算[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)。在计算得分矩阵 $Q K^T$ 时，因为要将 $(N \times d_k)$ 的矩阵与 $(d_k \times N)$ 的矩阵相乘，所以其计算[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)为 **$O(N^2 \cdot d_{model})$** 。
 
-也就是说， **相对于序列长度 $N$，计算复杂度和内存使用量呈平方级增长** 。
+也就是说， **相对于序列长度 $N$，计算[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)和内存使用量呈平方级增长** 。
 如果文章很短则不成问题，但如果想将像一整本书这样超长的上下文输入到[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)中，$N$ 就会达到数万至数十万，在传统的Attention计算下GPU的内存会瞬间耗尽。
 
 为了打破这种 $O(N^2)$ 的诅咒，近年来从数学和硬件方法的角度提出了各种各样的优化方案。
 其中具有代表性的例子就是 **FlashAttention** 。FlashAttention是一种为了将GPU的内存层级（SRAM和HBM）之间的数据传输（内存访问）降至最低，将Attention计算分割成瓦片状（Tiling）来执行的算法。尽管在数学公式上它输出的是与标准Attention完全相同的结果（Exact Attention），但通过硬件级别的优化实现了惊人的速度提升和内存削减，使得GPT-4等长上下文模型的实现成为了可能。
 
-除此之外，将计算复杂度近似为 $O(N \log N)$ 或 $O(N)$ 的 Sparse Attention 和 Linear Attention 等研究也正在积极进行中。
+除此之外，将计算[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)近似为 $O(N \log N)$ 或 $O(N)$ 的 Sparse Attention 和 Linear Attention 等研究也正在积极进行中。
 
 ---
 
@@ -324,7 +324,7 @@ def scaled_dot_product_attention(q, k, v, mask=None):
 
 在本文中，我们解开了[Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)模型深处的数学结构。
 
-将单词映射到多维向量空间的Embedding、通过合成三角波来表示位置信息的Positional Encoding、以及源于信息检索类比的矩阵内积计算——Self-Attention机制。这每一个组件，不过是线性代数、微积分、概率统计等基础数学知识的累积罢了。
+将单词映射到多维向量空间的Embedding、通过合成三角波来表示[位置信息的](/zh-cn/p/technology-gps/)Positional Encoding、以及源于信息检索类比的矩阵内积计算——Self-Attention机制。这每一个组件，不过是线性代数、微积分、概率统计等基础数学知识的累积罢了。
 
 然而，当这些简单的矩阵运算重叠了无数层，通过几十亿、几千亿的参数从庞大的数据集中学习模式时，在那之中就浮现出了仿佛能理解我们的“语言”、进行逻辑推理、时而还能产生创造性想法的“智能的形状”。
 

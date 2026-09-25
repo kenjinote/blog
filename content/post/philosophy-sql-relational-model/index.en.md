@@ -22,12 +22,12 @@ In this article, we will go back to the origins of the "relational model" propos
 
 To appreciate the true value of the relational model, we must understand "what it solved." In the 1960s, the mainstream database models were known as the "hierarchical model" and the "network model" (representative examples include IBM's IMS and CODASYL-compliant database systems).
 
-These systems were called **"navigational"**. The relationships between data were hardcoded by physical pointers (references to memory addresses). To retrieve data, programmers had to be aware of this physical structure themselves and write procedural code to "navigate by following pointers from parent records to child records."
+These systems were called **"navigational"**. The relationships between data were hardcoded by physical [pointers](/en/p/c-language-pointers-memory-management-stack-heap/) (references to memory addresses). To retrieve data, programmers had to be aware of this physical structure themselves and write procedural code to "navigate by following [pointers](/en/p/c-language-pointers-memory-management-stack-heap/) from parent records to child records."
 
 ### Fatal Flaws of Navigational Databases
 
 1. **Lack of Data Independence**
-   Physical data structures (such as the presence of indexes and how pointers were linked) were tightly coupled with the application code. Therefore, even the slightest change to the database structure required rewriting all dependent application code.
+   Physical data structures (such as the presence of indexes and how [pointers](/en/p/c-language-pointers-memory-management-stack-heap/) were linked) were tightly coupled with the application code. Therefore, even the slightest change to the database structure required rewriting all dependent application code.
 2. **Query Complexity and Dependency on Individual Skills**
    When multiple access paths existed to retrieve a specific dataset, the programmer had to determine which path was the most efficient and write the code accordingly. This required advanced craftsmanship.
 3. **Difficulty with Ad-hoc Queries**

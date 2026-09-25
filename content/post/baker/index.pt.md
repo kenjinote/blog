@@ -122,5 +122,5 @@ flowchart TD
 
 Com o surgimento de [Alan Baker](https://kenji.blog/pt/p/baker/), a teoria dos números — especialmente o estudo da teoria dos números transcendentes e das equações diofantinas — entrou em uma era completamente nova. Os "métodos de computação efetivos" que ele apresentou trouxeram abordagens algorítmicas à matemática pura e abstrata, e agora servem como parte da fundação matemática que sustenta a ciência da computação e a criptografia modernas.
 
-Suas pesquisas sobre a limitação das soluções para equações diofantinas também forneceram uma ponte para teorias mais profundas, como a **conjectura abc**, que continua sendo hoje um dos maiores problemas não resolvidos da teoria dos números.
+Suas pesquisas sobre a limitação das soluções para equações diofantinas também forneceram uma ponte para teorias mais profundas, como a **[conjectura abc](/pt/p/abc-conjecture/)**, que continua sendo hoje um dos maiores problemas não resolvidos da teoria dos números.
 Um grande matemático que combinou intuição brilhante com uma força lógica esmagadora para concluir provas altamente complexas e técnicas, [Alan Baker](https://kenji.blog/pt/p/baker/) deixou um legado de teoremas e uma paixão pela teoria dos números que, sem dúvida, continuará a brilhar na história da matemática sem nunca se apagar.

@@ -77,7 +77,7 @@ Ini adalah gagasan bahwa "perangkat di jalur jaringan, seperti router, hanya bol
 Jaringan telepon lama di Jepang (NTT) dan lainnya adalah "jaringan pintar" di mana mesin pertukaran di kantor telepon pusat memiliki semua fungsi (penagihan, kontrol, penanganan kesalahan).
 Di sisi lain, internet hanyalah sebuah "pipa" untuk mengangkut data, dan yang pintar adalah komputer atau ponsel pintar kita yang terhubung ke ujungnya.
 
-Karena desain yang sederhana yaitu "jaringan hanyalah sebuah pipa", internet tidak terikat oleh administrator tertentu, dan siapa pun dapat dengan bebas menciptakan aplikasi baru (Web, streaming video, P2P, blockchain, dll.) di terminal akhir, memungkinkannya tumbuh menjadi "infrastruktur inovasi" yang dapat diluncurkan ke seluruh dunia.
+Karena desain yang sederhana yaitu "jaringan hanyalah sebuah pipa", internet tidak terikat oleh administrator tertentu, dan siapa pun dapat dengan bebas menciptakan aplikasi baru (Web, streaming video, P2P, [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/), dll.) di terminal akhir, memungkinkannya tumbuh menjadi "infrastruktur inovasi" yang dapat diluncurkan ke seluruh dunia.
 
 ## 6. Kesimpulan
 

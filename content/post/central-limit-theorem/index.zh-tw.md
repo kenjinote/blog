@@ -135,7 +135,7 @@ $$
 E[\bar X_n]=\mu,\qquad \operatorname{Var}(\bar X_n)=\frac{\sigma^2}{n},\qquad \operatorname{SE}(\bar X_n)=\frac{\sigma}{\sqrt n}.
 $$
 
-將樣本數增加至4倍，標準誤將減半。大數法則闡述了樣本平均數趨近於 $\mu$，而中央極限定理則描述了其周圍的波動放大 $\sqrt{n}$ 倍後的分配形狀。
+將樣本數增加至4倍，標準誤將減半。[大數法則](/zh-tw/p/law-of-large-numbers/)闡述了樣本平均數趨近於 $\mu$，而中央極限定理則描述了其周圍的波動放大 $\sqrt{n}$ 倍後的分配形狀。
 
 ### 附錄 4：基於特徵函數證明的補充
 

@@ -14,7 +14,7 @@ tags:
 
 ## 비서 문제 (Secretary Problem) 란?
 
-**비서 문제** (Secretary Problem) 는 응용 확률론에서 **최적 정지 문제** (Optimal Stopping Problem) 의 가장 유명하고 고전적인 예 중 하나입니다. 이 문제는 결혼 문제(Marriage Problem)나 술탄의 지참금 문제(Sultan's Dowry Problem) 등으로도 불리며, 불확실성 속에서 어떻게 **최선의 선택** 을 해야 하는가 하는 의사결정의 딜레마를 훌륭하게 모델화하고 있습니다.
+**비서 문제** (Secretary Problem) 는 응용 확률론에서 **최적 [정지 문제](/ko/p/halting-problem/)** (Optimal Stopping Problem) 의 가장 유명하고 고전적인 예 중 하나입니다. 이 문제는 결혼 문제(Marriage Problem)나 술탄의 지참금 문제(Sultan's Dowry Problem) 등으로도 불리며, 불확실성 속에서 어떻게 **최선의 선택** 을 해야 하는가 하는 의사결정의 딜레마를 훌륭하게 모델화하고 있습니다.
 
 일상의 모든 상황, 예를 들어 '언제 집을 사야 할까', '언제 주차 공간을 정해야 할까', '언제 파트너를 정해야 할까'와 같은 상황은 모두 이 문제로 귀결될 수 있습니다.
 

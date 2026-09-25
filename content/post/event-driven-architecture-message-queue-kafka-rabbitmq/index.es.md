@@ -18,11 +18,11 @@ tags:
 
 # 1. Introducción a la arquitectura basada en eventos
 
-Los sistemas de software modernos tienen una escala y complejidad sin precedentes. A medida que la arquitectura de microservicios se convierte en la norma, la forma en que diseñamos la comunicación entre servicios es un factor crítico que determina el rendimiento, la disponibilidad y la mantenibilidad de todo el sistema. En este contexto, la **arquitectura basada en eventos** (Event-Driven Architecture: EDA) ha consolidado su posición como un poderoso paradigma para reducir el acoplamiento entre sistemas y lograr una alta escalabilidad.
+Los sistemas de software modernos tienen una escala y complejidad sin precedentes. A medida que la arquitectura de [microservicios](/es/p/microservices-architecture-bff-api-gateway/) se convierte en la norma, la forma en que diseñamos la comunicación entre servicios es un factor crítico que determina el rendimiento, la disponibilidad y la mantenibilidad de todo el sistema. En este contexto, la **arquitectura basada en eventos** (Event-Driven Architecture: EDA) ha consolidado su posición como un poderoso paradigma para reducir el acoplamiento entre sistemas y lograr una alta escalabilidad.
 
 # 2. Desafíos de la comunicación síncrona (REST / gRPC)
 
-El enfoque más intuitivo para la comunicación entre servicios en sistemas distribuidos es la **comunicación síncrona** mediante API REST con solicitudes/respuestas HTTP, o gRPC, que es más rápido. Sin embargo, la comunicación síncrona presenta algunos desafíos inherentes.
+El enfoque más intuitivo para la comunicación entre servicios en [sistemas distribuidos](/es/p/cap-theorem-distributed-systems-tradeoff/) es la **comunicación síncrona** mediante API REST con solicitudes/respuestas HTTP, o gRPC, que es más rápido. Sin embargo, la comunicación síncrona presenta algunos desafíos inherentes.
 
 ## 2.1 Acoplamiento fuerte y fallas en cascada
 En la comunicación síncrona, el llamador (cliente) y el llamado (servidor) están fuertemente acoplados en el tiempo. El cliente debe esperar hasta que el servidor responda, y si el servidor falla o su respuesta se retrasa debido a una alta carga, el impacto también se extiende al cliente. Si esto ocurre en cadena, existe el riesgo de provocar una **falla en cascada** que derribe todo el sistema.
@@ -226,7 +226,7 @@ Al introducir una arquitectura basada en eventos en sistemas empresariales reale
 
 ## 7.1 Transacciones distribuidas mediante el patrón Saga
 
-En una arquitectura de microservicios, la gestión de transacciones que abarcan varios servicios con confirmación en dos fases (2PC) síncrona conduce a una disminución de la disponibilidad y el rendimiento. Como alternativa a esto, se utiliza el **patrón Saga**.
+En una arquitectura de [microservicios](/es/p/microservices-architecture-bff-api-gateway/), la gestión de transacciones que abarcan varios servicios con confirmación en dos fases (2PC) síncrona conduce a una disminución de la disponibilidad y el rendimiento. Como alternativa a esto, se utiliza el **patrón Saga**.
 
 En el patrón Saga, una transacción distribuida se representa como una serie de transacciones locales. Cada servicio ejecuta una transacción local y, cuando finaliza, publica un evento para desencadenar el siguiente paso. Si un paso falla, se publica un evento para ejecutar una "transacción compensatoria" que deshace la transacción que ya se completó.
 

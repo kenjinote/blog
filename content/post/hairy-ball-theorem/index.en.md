@@ -60,7 +60,7 @@ This point $p_0$ where $V(p_0) = 0$ corresponds to the "cowlick" or the "place w
 
 Behind this theorem lies a topological invariant known as the **Euler characteristic**.
 
-The Euler characteristic $\chi$ of a polyhedron is calculated using the number of vertices ($V$), edges ($E$), and faces ($F$) with the following famous formula (Euler's polyhedron formula):
+The Euler characteristic $\chi$ of a polyhedron is calculated using the number of vertices ($V$), edges ($E$), and faces ($F$) with the following famous formula ([Euler's polyhedron formula](/en/p/eulers-polyhedron-formula/)):
 
 $$
 \chi = V - E + F

@@ -22,7 +22,7 @@ tags:
 
 $$ C_0 = 1, \quad C_1 = 1, \quad C_2 = 2, \quad C_3 = 5, \quad C_4 = 14, \quad C_5 = 42, \quad C_6 = 132, \quad C_7 = 429, \quad \dots $$
 
-這個數列作為各種組合問題的解頻繁出現。在本文中，我們將介紹四個涉及[卡塔蘭數](https://kenji.blog/zh-tw/p/catalan-numbers/)的著名例子（合法括號序列、二元樹、多邊形三角剖分和迪克路徑）。我們將剖析它們背後的遞迴結構，以了解為什麼它們對應著完全相同的數列。此外，我們還將詳細介紹使用動態規劃 (DP) 的計算演算法以及使用[母函數](https://kenji.blog/zh-tw/p/generating-functions/)的數學推導。
+這個數列作為各種組合問題的解頻繁出現。在本文中，我們將介紹四個涉及[卡塔蘭數](https://kenji.blog/zh-tw/p/catalan-numbers/)的著名例子（合法括號序列、二元樹、多邊形三角剖分和迪克路徑）。我們將剖析它們背後的遞迴結構，以了解為什麼它們對應著完全相同的數列。此外，我們還將詳細介紹使用[動態規劃](/zh-tw/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) (DP) 的計算演算法以及使用[母函數](https://kenji.blog/zh-tw/p/generating-functions/)的數學推導。
 
 ## 2. [卡塔蘭數](https://kenji.blog/zh-tw/p/catalan-numbers/)出現的四個具體例子
 
@@ -171,7 +171,7 @@ $$ C(x) = \frac{1 - \sqrt{1 - 4x}}{2x} $$
 
 ### 5.1. 簡單遞迴 (Naive Recursion)
 
-這涉及直接實作遞迴關係。然而，由於它重複計算相同的值，時間複雜度呈指數級增長，因此不適合較大的 $n$。
+這涉及直接實作遞迴關係。然而，由於它重複計算相同的值，時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)呈指數級增長，因此不適合較大的 $n$。
 
 ```python
 def catalan_recursive(n):
@@ -187,7 +187,7 @@ def catalan_recursive(n):
 
 ### 5.2. 動態規劃 ([Dynamic Programming](https://kenji.blog/zh-tw/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))
 
-透過利用記憶化（或由下而上的動態規劃）將計算結果儲存在陣列中，我們可以將時間複雜度降低到 $O(n^2)$。
+透過利用記憶化（或由下而上的[動態規劃](/zh-tw/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)）將計算結果儲存在陣列中，我們可以將時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)降低到 $O(n^2)$。
 
 ```python
 def catalan_dp(n):
@@ -209,7 +209,7 @@ for i in range(7):
 
 ### 5.3. 閉合公式 (Closed-Form Formula)
 
-使用該公式，我們只需執行階乘計算，即可在 $O(n)$ 的時間複雜度內計算出結果。
+使用該公式，我們只需執行階乘計算，即可在 $O(n)$ 的時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)內計算出結果。
 
 ```python
 import math
@@ -227,4 +227,4 @@ for i in range(7):
 
 [卡塔蘭數](https://kenji.blog/zh-tw/p/catalan-numbers/)列 $C_n$ 是一個迷人的數列，它統一地出現在眾多看似不同的問題中，例如合法括號序列、二元樹形狀、多邊形三角剖分和迪克路徑。這些問題得出相同數量的原因在於它們都體現了一個共同的遞迴結構：**「將整體分割為兩個子問題並將它們組合」**。
 
-在學習演算法和資料結構時，理解這些數學背景能培養看透問題本質的能力。它也是動態規劃的極佳練習，所以一定要嘗試自己編寫程式碼進行實驗！
+在學習演算法和資料結構時，理解這些數學背景能培養看透問題本質的能力。它也是[動態規劃](/zh-tw/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)的極佳練習，所以一定要嘗試自己編寫程式碼進行實驗！

@@ -18,7 +18,7 @@ Diese Frage ist ein ultimatives Rätsel, das den menschlichen Intellekt seit den
 
 ## Kapitel 1: Der Schock des Gedankenexperiments "Gehirn im Tank"
 
-"Gehirn im Tank" (Brain in a vat) ist ein Gedankenexperiment, das 1981 vom Philosophen Hilary Putnam vorgeschlagen wurde. Die zugrundeliegende Frage, "Wie weit können wir unserer Wahrnehmung trauen?", lässt sich jedoch bis zur Diskussion über den "bösen Dämon" (genium malignum) von René Descartes im 17. Jahrhundert zurückverfolgen.
+"Gehirn im Tank" (Brain in a vat) ist ein Gedankenexperiment, das 1981 vom Philosophen Hilary Putnam vorgeschlagen wurde. Die zugrundeliegende Frage, "Wie weit können wir unserer Wahrnehmung trauen?", lässt sich jedoch bis zur Diskussion über den "bösen Dämon" (genium malignum) von [René Descartes](/de/p/descartes/) im 17. Jahrhundert zurückverfolgen.
 
 ### 1-1. Was ist das Gehirn im Tank?
 

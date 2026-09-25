@@ -146,7 +146,7 @@ flowchart LR
 
 “[火腿三明治定理](https://kenji.blog/zh-cn/p/ham-sandwich-theorem/)”经常被当作纯数学中的一个有趣话题来讲述，但它实际上在 **计算几何** 和 **计算机科学** 等领域有实际应用。
 
-例如，当空间中存在海量数据点（点云）时，有时会使用[火腿三明治定理](https://kenji.blog/zh-cn/p/ham-sandwich-theorem/)的算法版本来有效地划分和处理这些数据。通过同时平分被分类为多个类别的数据，它有助于使用分治法构建高效的数据处理和搜索算法。
+例如，当空间中存在海量数据点（点云）时，有时会使用[火腿三明治定理](https://kenji.blog/zh-cn/p/ham-sandwich-theorem/)的算法版本来有效地划分和处理这些数据。通过同时平分被分类为多个类别的数据，它有助于使用分治法构建高效的数据处理和[搜索算法](/zh-cn/p/search-algorithms-linear-binary-hash-table-principles/)。
 
 ## 7. 结语
 

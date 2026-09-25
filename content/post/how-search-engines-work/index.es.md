@@ -246,7 +246,7 @@ Los anuncios también se distinguen de los resultados ordinarios. La publicidad 
 
 ## 15. Buscar rápidamente en un índice enorme
 
-Una máquina limita capacidad, rendimiento y tolerancia a fallos. Los sistemas distribuidos dividen el índice, consultan sus partes en distintas máquinas y fusionan respuestas. Esas particiones suelen llamarse fragmentos o shards.
+Una máquina limita capacidad, rendimiento y tolerancia a fallos. Los [sistemas distribuidos](/es/p/cap-theorem-distributed-systems-tradeoff/) dividen el índice, consultan sus partes en distintas máquinas y fusionan respuestas. Esas particiones suelen llamarse fragmentos o shards.
 
 En una división por documentos, cada fragmento recibe la consulta y devuelve candidatos prometedores. Un coordinador compara el conjunto. Las estadísticas locales de frecuencia pueden diferir, afectando la comparabilidad. La elección entre estadísticas locales y globales influye también en la calidad. [Manual: distribución de índices][distributed]
 

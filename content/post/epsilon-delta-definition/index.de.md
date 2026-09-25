@@ -129,7 +129,7 @@ $$ f(x) = \begin{cases} 1 & (\text{wenn } x \text{ rational ist}) \\ 0 & (\text{
 
 Diese Funktion nimmt bei jeder rationalen Zahl den Wert $1$ an und bei jeder irrationalen Zahl den Wert $0$. Da rationale und irrationale Zahlen auf der reellen Zahlengeraden unendlich dicht gemischt sind, ist das Zeichnen dieses Graphen für menschliche Augen visuell unmöglich.
 
-Betrachten wir nun den Grenzwert $\lim_{x \to 0} f(x)$ für $x \to 0$. Mit dem intuitiven Ausdruck "wenn sich $x$ unendlich nah an $0$ annähert" ist es unmöglich festzustellen, ob sich $f(x)$ $1$ oder $0$ annähert. Wenn Sie einen Pfad verfolgen, der sich nur durch rationale Zahlen nähert, ist es $1$; wenn Sie nur irrationale Zahlen verfolgen, ist es $0$.
+Betrachten wir nun den Grenzwert $\lim_{x \to 0} f(x)$ für $x \to 0$. Mit dem intuitiven Ausdruck "wenn sich $x$ unendlich nah an $0$ annähert" ist es unmöglich festzustellen, ob sich $f(x)$ $1$ oder $0$ annähert. Wenn Sie einen [Pfad](/de/p/windows-%E3%81%A7pfad%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9Fausf%C3%BChrbare-datei%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/) verfolgen, der sich nur durch rationale Zahlen nähert, ist es $1$; wenn Sie nur irrationale Zahlen verfolgen, ist es $0$.
 
 Mit der $\varepsilon-\delta$-Definition können wir streng beweisen, dass dieser Grenzwert **nicht existiert**. Die Negation der Aussage, dass der Grenzwert $L$ ist, lautet wie folgt:
 
@@ -170,7 +170,7 @@ flowchart LR
 
 ## 7. Fazit
 
-Die intuitive Erklärung, dass "$x$ sich $a$ unendlich nah annähert", ist für Anfänger sehr effektiv, um das Konzept eines Grenzwerts zu erfassen. Sie reichte jedoch nicht aus, um die "absolute Gewissheit" zu bieten, die die Mathematik als Fundament für ihre Struktur erfordert.
+Die intuitive Erklärung, dass "$x$ sich $a$ unendlich nah annähert", ist [für Anfänger](/de/p/lederwaren%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/) sehr effektiv, um das Konzept eines Grenzwerts zu erfassen. Sie reichte jedoch nicht aus, um die "absolute Gewissheit" zu bieten, die die Mathematik als Fundament für ihre Struktur erfordert.
 
 Auf den ersten Blick sieht die $\varepsilon-\delta$-Definition wie eine entmutigende Kette von Ungleichungen aus, aber ihre Essenz liegt in der **statischen Überprüfung einer Bedingung: "Kann der Fehler so kontrolliert werden, dass er beliebig klein ist?"**. Das Ersetzen des mehrdeutigen Konzepts, das ein zeitliches Element der "dynamischen Annäherung" beinhaltet, durch einen logischen, statischen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) von "es existiert ein Bereich, der eine Ungleichung erfüllt", war ein großartiger Paradigmenwechsel der Mathematiker des 19. Jahrhunderts.
 

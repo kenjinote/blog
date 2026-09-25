@@ -14,7 +14,7 @@ description: 'ゼロ知識証明（ZKP）の数学的基礎から、zk-SNARKs、
 
 現代のデジタル社会において、データプライバシーとスケーラビリティは最も重要な課題の2つとなっています。個人情報の漏洩や不正利用のリスクが高まる中、「自分に関する情報を相手に明かすことなく、自分がその情報を持っていることを証明する」技術が強く求められています。これを実現するのが **ゼロ知識証明（Zero-Knowledge Proof: ZKP）** です。
 
-ゼロ知識証明は、1980年代にShafi Goldwasser、Silvio Micali、Charles Rackoffによって初めて提唱された暗号理論の概念ですが、長らく理論的な研究にとどまっていました。しかし、[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)技術とWeb3の台頭により、状況は一変しました。Ethereumなどのパブリックブロックチェーンが直面するスケーラビリティ問題（処理能力の限界）とプライバシー問題（すべての[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)が公開されること）を同時に解決する「魔法の杖」として、ZKPは一躍脚光を浴びることとなったのです。
+ゼロ知識証明は、1980年代にShafi Goldwasser、Silvio Micali、Charles Rackoffによって初めて提唱された暗号理論の概念ですが、長らく理論的な研究にとどまっていました。しかし、[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)技術とWeb3の台頭により、状況は一変しました。Ethereumなどのパブリック[ブロックチェーン](/p/blockchain-technology-smart-contract-distributed-ledger/)が直面するスケーラビリティ問題（処理能力の限界）とプライバシー問題（すべての[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)が公開されること）を同時に解決する「魔法の杖」として、ZKPは一躍脚光を浴びることとなったのです。
 
 本記事では、ゼロ知識証明の基本的な概念から、現在主流となっている **zk-SNARKs** および **zk-STARKs** の深淵なる数学的・暗号学的メカニズム、そしてZK-Rollupsや分散型アイデンティティ（DID）といった最新のWeb3・セキュリティへの応用例に至るまで、極めて詳細かつ技術的に深く掘り下げて解説します。
 
@@ -60,7 +60,7 @@ sequenceDiagram
     Note over Prover, Verifier: "※確度を高めるため、これを数十回繰り返す"
 ```
 
-この方法は強力ですが、検証者がオンラインでなければならず、[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)のような非同期的な分散システムに適用するには不便です。[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)では、誰もがいつでも過去の証明を検証できなければなりません。
+この方法は強力ですが、検証者がオンラインでなければならず、[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)のような非同期的な[分散システム](/p/cap-theorem-distributed-systems-tradeoff/)に適用するには不便です。[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)では、誰もがいつでも過去の証明を検証できなければなりません。
 
 #### フィアット・シャミア変換（Fiat-Shamir Heuristic）と非対話化
 
@@ -121,13 +121,13 @@ zk-SNARKs（特に初期のGroth16など）の最大の弱点は、秘密の点 
 
 ## zk-STARKsの技術的詳細
 
-トラステッド・セットアップへの依存と、[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)による楕円曲線暗号の解読リスクに対する回答として登場したのが **zk-STARKs** （Zero-Knowledge Scalable Transparent Argument of Knowledge）です。
+トラステッド・セットアップへの依存と、[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)による[楕円曲線暗号](/p/elliptic-curve-cryptography-math-cpp/)の解読リスクに対する回答として登場したのが **zk-STARKs** （Zero-Knowledge Scalable Transparent Argument of Knowledge）です。
 
 Eli Ben-Sassonらによって開発されたSTARKsは、「Transparent（透明性）」の名の通りトラステッド・セットアップを一切必要とせず、「Scalable（スケーラビリティ）」の名の通り、計算量が増えても証明サイズと検証時間が効率的に保たれるという特徴を持っています。
 
 ### 1. 多項式コミットメントとFRIプロトコル
 
-zk-STARKsは楕円曲線暗号ではなく、 **ハッシュ関数のみ** にセキュリティの根拠を置いています。そのため、耐量子計算機暗号（Post-Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy）としての性質を持ちます。
+zk-STARKsは[楕円曲線暗号](/p/elliptic-curve-cryptography-math-cpp/)ではなく、 **ハッシュ関数のみ** にセキュリティの根拠を置いています。そのため、耐量子計算機暗号（Post-Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy）としての性質を持ちます。
 
 計算の検証は、AIR（Algebraic Intermediate Representation）と呼ばれる形式に変換された後、一次元または多次元の多項式の性質を利用して行われます。STARKsの核心は、 **FRI（Fast Reed-Solomon Interactive Oracle Proof of Proximity）** プロトコルにあります。
 
@@ -203,7 +203,7 @@ ZKP技術（例えばAleoやAztecなどのプライバシー特化型ネット�
 ZKPは間違いなく次世代の基盤技術ですが、いくつかの課題も残されています。
 
 1. **証明生成の計算コストとハードウェアアクセラレーション**
-   ZKPの生成には、膨大な多項式演算やFFT（高速フーリエ変換）、MSM（マルチスカラー乗算）が必要です。現在、この証明生成を高速化するための専用ハードウェア（FPGAやASIC）の開発、いわゆる **ZKPマイニング** （Prover Network）の研究が急速に進んでいます。
+   ZKPの生成には、膨大な多項式演算や[FFT](/p/fast-fourier-transform-algorithm/)（[高速フーリエ変換](/p/fast-fourier-transform-algorithm/)）、MSM（マルチスカラー乗算）が必要です。現在、この証明生成を高速化するための専用ハードウェア（FPGAやASIC）の開発、いわゆる **ZKPマイニング** （Prover Network）の研究が急速に進んでいます。
 2. **標準化と開発者体験（DX）の向上**
    Circom、Cairo、Noir、Leoなど、ZKP回路を記述するための専用言語が乱立しています。これらを統一する標準規格や、既存の[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)やC++から自動的にZKP回路を生成するコンパイラの成熟が、一般的なソフトウェアエンジニアによるZKP導入の鍵となるでしょう。
 

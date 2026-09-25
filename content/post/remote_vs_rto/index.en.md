@@ -81,7 +81,7 @@ graph LR
     DB === Data
 ```
 
-This siloing is not necessarily a bad thing. When adopting a microservices architecture with clear API interfaces and independent deployability, intentionally restricting communication between teams to increase their independence is sometimes even recommended as an "Inverse Conway Maneuver." Full remote work can be said to be suitable for developing loosely coupled systems with clear boundaries.
+This siloing is not necessarily a bad thing. When adopting a [microservices architecture](/en/p/microservices-architecture-bff-api-gateway/) with clear API interfaces and independent deployability, intentionally restricting communication between teams to increase their independence is sometimes even recommended as an "Inverse Conway Maneuver." Full remote work can be said to be suitable for developing loosely coupled systems with clear boundaries.
 
 However, during the initial launch phase of a system (zero-to-one development), large-scale refactoring spanning multiple components, or troubleshooting unknown incidents, dense and high-bandwidth communication across team boundaries is essential. Excessive siloing in a remote environment makes solving such monolithic challenges extremely difficult.
 
@@ -174,7 +174,7 @@ When using a traditional VPN, even when a remote engineer accesses cloud-based S
 
 ## The Paradigm Shift Brought by Zero Trust ([BeyondCorp](https://kenji.blog/en/p/zero-trust-network-architecture-beyond-corp/))
 
-Breaking through these network limitations and realizing a true "environment where you can work comfortably and securely from anywhere" is the **Zero Trust Network Architecture (ZTNA)**, pioneered by Google's "BeyondCorp."
+Breaking through these network limitations and realizing a true "environment where you can work comfortably and securely from anywhere" is the **[Zero Trust Network Architecture](/en/p/zero-trust-network-architecture-beyond-corp/) (ZTNA)**, pioneered by Google's "BeyondCorp."
 
 The core of Zero Trust is "not using the network perimeter (whether internal or external) as the basis of trust."
 
@@ -196,7 +196,7 @@ graph TD
 
 In a [Zero Trust](https://kenji.blog/en/p/zero-trust-network-architecture-beyond-corp/) architecture, there are no centralized chokepoints like VPNs. Whether from a home Wi-Fi network or a public cafe LAN, engineers access each resource directly through the shortest path via an Identity-Aware Proxy (IAP), based on strong contexts of device authentication (such as client certificates) and user authentication (MFA).
 
-As a result, the unnecessary distance $D$ and excessive processing delay $T_{proc}$ in the aforementioned latency equation are eliminated, enabling terminal operations and massive data transfers with extremely low latency, entirely comparable to being in the office. The state where "productivity does not drop even when remote" is not just a matter of mentality, but is realized only with the construction of such an advanced Zero Trust foundation.
+As a result, the unnecessary distance $D$ and excessive processing delay $T_{proc}$ in the aforementioned latency equation are eliminated, enabling [terminal](/en/p/terminal-efficiency-powershell-bash-shortcuts/) operations and massive data transfers with extremely low latency, entirely comparable to being in the office. The state where "productivity does not drop even when remote" is not just a matter of mentality, but is realized only with the construction of such an advanced Zero Trust foundation.
 
 ---
 

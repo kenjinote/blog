@@ -90,7 +90,7 @@ Plaçons 5 personnes aux sommets d'un pentagone régulier. Colorions en rouge le
 
 Si l'on n'observe que le sous-graphe rouge, il s'agit d'un cycle qui parcourt le pentagone. Si l'on choisit 3 sommets quelconques, il est impossible de former un triangle fermé uniquement avec des arêtes rouges. Si l'on n'observe que le sous-graphe bleu, il forme une étoile (un pentagramme) ; mais si l'on réordonne l'ordre des sommets, il s'agit également d'un cycle de longueur 5 passant par tous les sommets. Il n'existe donc aucun triangle bleu non plus.
 
-Attention : les points d'intersection des lignes du pentagramme ne constituent pas de nouveaux sommets. Les personnes ne correspondent qu'aux 5 sommets de A à E. Les petits triangles visuels créés par le croisement géométrique des lignes ne sont pas des triangles au sens de la théorie des graphes.
+Attention : les points d'intersection des lignes du pentagramme ne constituent pas de nouveaux sommets. Les personnes ne correspondent qu'aux 5 sommets de A à E. Les petits triangles visuels créés par le croisement géométrique des lignes ne sont pas des triangles au sens de la [théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/).
 
 Puisqu'il est possible d'éviter simultanément tout trio rouge et tout trio bleu, 5 personnes ne permettent pas de garantir la propriété. En combinant ce résultat avec la certitude pour 6 personnes, nous établissons formellement que le nombre minimal requis est 6.
 

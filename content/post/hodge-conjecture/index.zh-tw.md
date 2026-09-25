@@ -69,7 +69,7 @@ graph TD
 
 準備工作完成了。霍奇猜想的主張雖然非常簡單，卻具有驚人的威力。
 
-> **[霍奇猜想 (Hodge Conjecture)](https://kenji.blog/p/hodge-conjecture/)**
+> **[霍奇猜想 (Hodge Conjecture)](https://kenji.blog/zh-tw/p/hodge-conjecture/)**
 > 複數體上非奇異射影代數簇 X 上的任何霍奇類，都可以表示為代數循環之有理數係數的線性組合。
 
 換句話說，它主張「從拓樸學和複分析的觀點來看，似乎是代數幾何學的上同調類 (霍奇類)，實際上是由代數方程式所構成的圖形 (代數循環) 所產生的」。
@@ -107,7 +107,7 @@ sequenceDiagram
 
 霍奇猜想有各種推廣和相關的猜想。
 
-- **廣義霍奇猜想 (Generalized [Hodge Conjecture](https://kenji.blog/zh-tw/p/hodge-conjecture/))**：試圖將霍奇猜想擴展到更一般的框架 (例如，帶有奇異點的流形或開流形等)。由亞歷山大·格羅滕迪克 ([Alexander Grothendieck](https://kenji.blog/zh-tw/p/grothendieck/)) 等人公式化，但由於發現了反例，尋找適當的公式化本身就成了一個艱難的課題。
+- **廣義霍奇猜想 (Generalized [Hodge Conjecture](https://kenji.blog/zh-tw/p/hodge-conjecture/))**：試圖將霍奇猜想擴展到更一般的框架 (例如，帶有奇異點的流形或開流形等)。由[亞歷山大·格羅滕迪克](/zh-tw/p/grothendieck/) ([Alexander Grothendieck](https://kenji.blog/zh-tw/p/grothendieck/)) 等人公式化，但由於發現了反例，尋找適當的公式化本身就成了一個艱難的課題。
 - **泰特猜想 (Tate Conjecture)**：作為霍奇猜想的數論類比而為人所知的是泰特猜想。它不使用複數體上的流形，而是針對有限體上的流形，利用平展上同調 (Étale Cohomology) 的概念來公式化。這也是一個極其深奧的未解決問題。
 
 ## 6. 總結與未來展望

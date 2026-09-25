@@ -17,13 +17,13 @@ tags:
 
 Dalam masyarakat modern, kita terus-menerus terhubung ke suatu hal. Baik itu komunikasi antar komputer melalui internet, hubungan manusia yang kompleks pada layanan jejaring sosial (SNS), jaringan jalan dan kereta api luas yang menghubungkan kota-kota, rantai pasokan global untuk logistik, atau koneksi saraf yang tak terhitung jumlahnya di dalam otak kita sendiri—tidak berlebihan untuk mengatakan bahwa dunia terdiri dari jaringan yang tak terhitung jumlahnya.
 
-Menyediakan kerangka kerja yang kuat untuk merepresentasikan dan menganalisis jaringan-jaringan ini secara sederhana dan ketat secara matematis, yang pada pandangan pertama tampak sangat kompleks dan bahkan kacau, adalah **Teori Graf** ([Graph Theory](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/)). Dengan menggunakan teori graf, kita dapat mengungkap struktur dan sifat tersembunyi di dalam sistem yang kompleks, menemukan rute komunikasi yang optimal, dan mengevaluasi kerentanan seluruh jaringan.
+Menyediakan kerangka kerja yang kuat untuk merepresentasikan dan menganalisis jaringan-jaringan ini secara sederhana dan ketat secara matematis, yang pada pandangan pertama tampak sangat kompleks dan bahkan kacau, adalah **[Teori Graf](/id/p/graph-theory-dijkstra-a-star/)** ([Graph Theory](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/)). Dengan menggunakan [teori graf](/id/p/graph-theory-dijkstra-a-star/), kita dapat mengungkap struktur dan sifat tersembunyi di dalam sistem yang kompleks, menemukan rute komunikasi yang optimal, dan mengevaluasi kerentanan seluruh jaringan.
 
-Artikel ini akan secara komprehensif dan sistematis menjelaskan teori graf, mulai dari asal-usul historisnya, mencakup definisi matematis dasar dan struktur data untuk pemrograman komputer, dan memperkenalkan algoritma representatif yang mendukung fondasi teknologi modern.
+Artikel ini akan secara komprehensif dan sistematis menjelaskan [teori graf](/id/p/graph-theory-dijkstra-a-star/), mulai dari asal-usul historisnya, mencakup definisi matematis dasar dan struktur data untuk pemrograman komputer, dan memperkenalkan algoritma representatif yang mendukung fondasi teknologi modern.
 
 ## 2. Kelahiran Teori Graf: [Tujuh Jembatan Königsberg](https://kenji.blog/id/p/seven-bridges-of-konigsberg/)
 
-Sejarah teori graf berawal pada abad ke-18. Pada tahun 1736, ahli matematika Swiss yang brilian [Leonhard Euler](https://kenji.blog/id/p/euler/) secara elegan memecahkan teka-teki matematika yang terkenal, menandai dimulainya bidang ini. Teka-teki ini dikenal sebagai "[Tujuh Jembatan Königsberg](https://kenji.blog/id/p/seven-bridges-of-konigsberg/)".
+Sejarah [teori graf](/id/p/graph-theory-dijkstra-a-star/) berawal pada abad ke-18. Pada tahun 1736, ahli matematika Swiss yang brilian [Leonhard Euler](https://kenji.blog/id/p/euler/) secara elegan memecahkan teka-teki matematika yang terkenal, menandai dimulainya bidang ini. Teka-teki ini dikenal sebagai "[Tujuh Jembatan Königsberg](https://kenji.blog/id/p/seven-bridges-of-konigsberg/)".
 
 Di kota Königsberg yang indah di Kerajaan Prusia (sekarang Kaliningrad, Rusia), mengalir Sungai Pregel, dengan dua pulau di tengahnya dan total tujuh jembatan yang menghubungkannya ke tepi sungai. Sebuah permainan menjadi populer di kalangan warga: "Apakah mungkin untuk menyeberangi setiap jembatan tepat satu kali dan kembali ke titik awal semula?" Banyak orang mencoba, tetapi tidak ada yang berhasil.
 
@@ -44,11 +44,11 @@ Euler menyadari bahwa untuk "melewati" suatu titik, harus selalu ada sepasang "j
 
 Dalam graf abstrak dari jembatan Königsberg, jumlah jembatan yang terhubung pada keempat daratan (titik) adalah "ganjil" (baik 3 atau 5). Oleh karena itu, disimpulkan bahwa tidak mungkin menggambar garis kontinu melintasi semua jembatan tepat satu kali.
 
-Penemuan Euler inilah saat yang tepat **Teori Graf** lahir. Dengan membuang medan fisik yang kompleks dan hanya berfokus pada hubungan koneksi (topologi) dari titik dan garis, ia membuka bidang matematika yang sama sekali baru.
+Penemuan Euler inilah saat yang tepat **[Teori Graf](/id/p/graph-theory-dijkstra-a-star/)** lahir. Dengan membuang medan fisik yang kompleks dan hanya berfokus pada hubungan koneksi (topologi) dari titik dan garis, ia membuka bidang matematika yang sama sekali baru.
 
 ## 3. Konsep Dasar dan Definisi Matematis Teori Graf
 
-Dalam teori graf, "graf" tidak mengacu pada metode visualisasi data statistik seperti diagram garis atau diagram lingkaran. Ini mengacu pada struktur matematika yang mewakili sekumpulan objek dan hubungan di antara mereka.
+Dalam [teori graf](/id/p/graph-theory-dijkstra-a-star/), "graf" tidak mengacu pada metode visualisasi data statistik seperti diagram garis atau diagram lingkaran. Ini mengacu pada struktur matematika yang mewakili sekumpulan objek dan hubungan di antara mereka.
 
 ### 3.1. Struktur Dasar Graf: Simpul (Vertices) dan Sisi (Edges)
 
@@ -105,7 +105,7 @@ Lebih lanjut, jika selalu ada jalur antara sembarang dua simpul arbitrer dalam s
 
 ## 4. Struktur Data untuk Menangani Graf di Komputer
 
-Untuk mengimplementasikan konsep matematika dari teori graf sebagai program dan meminta komputer menghitungnya dengan cepat, penting untuk merepresentasikan graf dalam memori menggunakan struktur data yang sesuai. Praktisnya, dua metode utama yang digunakan: "Matriks Ketetanggaan" (Adjacency Matrix) dan "Daftar Ketetanggaan" (Adjacency List).
+Untuk mengimplementasikan konsep matematika dari [teori graf](/id/p/graph-theory-dijkstra-a-star/) sebagai program dan meminta komputer menghitungnya dengan cepat, penting untuk merepresentasikan graf dalam memori menggunakan struktur data yang sesuai. Praktisnya, dua metode utama yang digunakan: "Matriks Ketetanggaan" (Adjacency Matrix) dan "Daftar Ketetanggaan" (Adjacency List).
 
 ### 4.1. Matriks Ketetanggaan (Adjacency Matrix)
 
@@ -120,7 +120,7 @@ A_{i,j} = \begin{cases}
 \end{cases}
 $$
 
-*   **Kelebihan**: Hal ini memungkinkan untuk segera menentukan apakah ada sisi antara sembarang dua simpul dalam $\mathcal{O}(1)$ (waktu konstan). Ini juga mengikat langsung ke analisis graf aljabar (seperti teori graf spektral) menggunakan perkalian matriks.
+*   **Kelebihan**: Hal ini memungkinkan untuk segera menentukan apakah ada sisi antara sembarang dua simpul dalam $\mathcal{O}(1)$ (waktu konstan). Ini juga mengikat langsung ke analisis graf aljabar (seperti [teori graf spektral](/id/p/spectral-graph-theory/)) menggunakan perkalian matriks.
 *   **Kekurangan**: Konsumsi memori adalah $\mathcal{O}(N^2)$ untuk jumlah simpul $N$, yang akan menghabiskan memori untuk graf raksasa. Khususnya untuk **Graf Jarang (Sparse Graphs)**, di mana jumlah sisi sangat kecil dibandingkan dengan kuadrat jumlah simpul, sebagian besar matriks menjadi $0$, menjadikannya sangat tidak efisien.
 
 ### 4.2. Daftar Ketetanggaan (Adjacency List)
@@ -242,7 +242,7 @@ print(dijkstra(weighted_graph, 'A'))
 
 Bayangkan kebutuhan untuk menghubungkan secara fisik semua pangkalan di jaringan yang luas dengan total biaya serendah mungkin. Misalnya, ketika membangun jaringan listrik untuk mensuplai listrik ke daerah pemukiman baru, atau memasang kabel serat optik di antara beberapa kota, situasinya menuntut meminimalkan biaya pembangunan infrastruktur.
 
-Dengan cara ini, subgraf yang menyertakan semua simpul graf, sama sekali tidak memiliki siklus (yakni, struktur pohon), dan meminimalkan jumlah bobot tepi yang digunakan disebut **Pohon Rentang Minimum (Minimum Spanning [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), MST)**.
+Dengan cara ini, subgraf yang menyertakan semua simpul graf, sama sekali tidak memiliki siklus (yakni, [struktur pohon](/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)), dan meminimalkan jumlah bobot tepi yang digunakan disebut **Pohon Rentang Minimum (Minimum Spanning [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), MST)**.
 
 Salah satu algoritma representatif untuk menemukan pohon rentang minimum ini adalah **Algoritma Kruskal**. Algoritma Kruskal adalah contoh khas "Algoritma Serakah (Greedy Algorithm)" yang mengakumulasikan solusi optimal lokal, mengikuti langkah-langkah yang sangat sederhana dan intuitif.
 
@@ -260,7 +260,7 @@ Setiap sisi (pipa atau kabel) yang menyusun jaringan memiliki "Kapasitas (Capaci
 
 ## 6. Graf Bipartit dan Masalah Pencocokan (Matching)
 
-Menempati posisi unik dalam teori graf adalah **Graf Bipartit (Bipartite [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))**. Graf bipartit adalah graf yang, ketika semua simpul dibagi menjadi dua kelompok (misalnya, kelompok $U$ dan kelompok $V$), setiap sisi selalu menghubungkan simpul di $U$ dan simpul di $V$, dan sama sekali tidak ada tepi yang menghubungkan simpul dalam grup yang sama.
+Menempati posisi unik dalam [teori graf](/id/p/graph-theory-dijkstra-a-star/) adalah **Graf Bipartit (Bipartite [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))**. Graf bipartit adalah graf yang, ketika semua simpul dibagi menjadi dua kelompok (misalnya, kelompok $U$ dan kelompok $V$), setiap sisi selalu menghubungkan simpul di $U$ dan simpul di $V$, dan sama sekali tidak ada tepi yang menghubungkan simpul dalam grup yang sama.
 
 Graf bipartit ideal untuk memodelkan hubungan antara dua himpunan dengan properti berbeda, seperti "pencari kerja" dan "perusahaan perekrut", "siswa" dan "laboratorium", atau "taksi" dan "penumpang".
 
@@ -268,7 +268,7 @@ Salah satu masalah terpenting dalam graf bipartit adalah **Masalah Pencocokan (M
 
 ## 7. Penerapan Teori Graf dalam Masyarakat Modern
 
-Teori graf tidak terbatas pada matematika abstrak di papan tulis; ia digunakan di berbagai domain sebagai teknologi infrastruktur yang pada dasarnya mendukung kehidupan sehari-hari kita.
+[Teori graf](/id/p/graph-theory-dijkstra-a-star/) tidak terbatas pada matematika abstrak di papan tulis; ia digunakan di berbagai domain sebagai teknologi infrastruktur yang pada dasarnya mendukung kehidupan sehari-hari kita.
 
 ### 7.1. Mesin Pencari dan Algoritma PageRank
 
@@ -277,11 +277,11 @@ Mekanisme mesin pencari Google, yang secara instan mengevaluasi halaman web yang
 *   **Simpul**: Halaman web individual di Internet
 *   **Sisi**: Hyperlink yang melompat dari satu halaman ke halaman lain
 
-Di akar PageRank adalah ide evaluasi rekursif bahwa "halaman yang ditautkan oleh banyak halaman web berkualitas tinggi kemungkinan besar merupakan halaman berkualitas tinggi itu sendiri." Dengan merepresentasikan struktur tautan sebagai matriks ketetanggaan yang masif dan menghitung vektor eigen utama dari matriks tersebut (sebuah penerapan dari teori graf spektral), mereka berhasil menghitung secara matematis dan obyektif kepentingan relatif informasi Internet, yang mencakup ratusan miliar halaman.
+Di akar PageRank adalah ide evaluasi rekursif bahwa "halaman yang ditautkan oleh banyak halaman web berkualitas tinggi kemungkinan besar merupakan halaman berkualitas tinggi itu sendiri." Dengan merepresentasikan struktur tautan sebagai matriks ketetanggaan yang masif dan menghitung vektor eigen utama dari matriks tersebut (sebuah penerapan dari [teori graf spektral](/id/p/spectral-graph-theory/)), mereka berhasil menghitung secara matematis dan obyektif kepentingan relatif informasi Internet, yang mencakup ratusan miliar halaman.
 
 ### 7.2. Analisis Struktural Jejaring Sosial
 
-Platform SNS seperti Twitter, Facebook, LinkedIn, dan Instagram membentuk **Graf Sosial (Social Graphs)** masif yang mengekspresikan koneksi antar individu, atau individu dan konten. Dengan menerapkan teori graf, struktur komunitas masif dapat dianalisis secara akurat.
+Platform SNS seperti Twitter, Facebook, LinkedIn, dan Instagram membentuk **Graf Sosial (Social Graphs)** masif yang mengekspresikan koneksi antar individu, atau individu dan konten. Dengan menerapkan [teori graf](/id/p/graph-theory-dijkstra-a-star/), struktur komunitas masif dapat dianalisis secara akurat.
 
 Misalnya, untuk menjawab pertanyaan "Siapa tokoh sentral (influencer) dengan pengaruh paling besar di seluruh jaringan?", digunakan konsep **Sentralitas (Centrality)**. Dengan menghitung berbagai metrik seperti "sentralitas derajat" (degree centrality) berdasarkan pada jumlah sisi sederhana yang terhubung ke sebuah simpul, "sentralitas keperantaraan" (betweenness centrality) yang mengukur seberapa sering seseorang muncul di jalur terpendek di dalam jaringan, dan "sentralitas kedekatan" (closeness centrality) yang mengevaluasi kemudahan akses ke semua simpul lain, aktivitas seperti identifikasi influencer, prediksi rute penyebaran informasi, dan deteksi fenomena ruang gema (echo chamber) dilakukan.
 
@@ -295,8 +295,8 @@ GNN mendobrak batasan ini dengan menyebarkan dan mempelajari secara bersamaan in
 
 ## 8. Kesimpulan dan Prospek Masa Depan
 
-Dalam artikel ini, kami telah menguraikan bagaimana **Teori Graf**, yang lahir dari teka-teki sederhana di Königsberg pada abad ke-18, telah berevolusi menjadi "alat pamungkas" untuk mengungkap jaringan yang sangat kompleks di masyarakat modern.
+Dalam artikel ini, kami telah menguraikan bagaimana **[Teori Graf](/id/p/graph-theory-dijkstra-a-star/)**, yang lahir dari teka-teki sederhana di Königsberg pada abad ke-18, telah berevolusi menjadi "alat pamungkas" untuk mengungkap jaringan yang sangat kompleks di masyarakat modern.
 
-Meskipun graf hanya terdiri dari elemen yang paling sederhana dan abstrak yang mungkin ada: titik (simpul) dan garis (sisi), dunia teori matematika dan algoritma komputasi yang diterapkan padanya sedalam alam semesta dan menyimpan kekuatan yang luar biasa. Bagi insinyur perangkat lunak, ilmuwan data, atau siapa saja yang tertarik dengan sistem yang kompleks, pengetahuan sistematis tentang teori graf akan secara eksponensial meningkatkan kemampuan untuk melakukan abstraksi tingkat tinggi terhadap masalah-masalah sulit dan pemikiran logis untuk menurunkan solusi optimal.
+Meskipun graf hanya terdiri dari elemen yang paling sederhana dan abstrak yang mungkin ada: titik (simpul) dan garis (sisi), dunia teori matematika dan algoritma komputasi yang diterapkan padanya sedalam alam semesta dan menyimpan kekuatan yang luar biasa. Bagi insinyur perangkat lunak, ilmuwan data, atau siapa saja yang tertarik dengan sistem yang kompleks, pengetahuan sistematis tentang [teori graf](/id/p/graph-theory-dijkstra-a-star/) akan secara eksponensial meningkatkan kemampuan untuk melakukan abstraksi tingkat tinggi terhadap masalah-masalah sulit dan pemikiran logis untuk menurunkan solusi optimal.
 
-Jika Anda sedang belajar pemrograman, silakan gunakan artikel ini sebagai batu loncatan dan cobalah untuk benar-benar membuat kode dan menjalankan algoritma seperti algoritma [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/) atau pencarian melebar-pertama di komputer Anda sendiri. Saat Anda merasakan proses di mana jaringan kompleks dan tidak terlihat diungkap secara jelas dengan kode yang Anda tulis, Anda akan benar-benar menyadari keindahan sejati serta pesona teori graf. Dunia ini dipenuhi dengan graf yang jauh lebih indah dan dapat dihitung daripada yang Anda bayangkan.
+Jika Anda sedang belajar pemrograman, silakan gunakan artikel ini sebagai batu loncatan dan cobalah untuk benar-benar membuat kode dan menjalankan algoritma seperti algoritma [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/) atau pencarian melebar-pertama di komputer Anda sendiri. Saat Anda merasakan proses di mana jaringan kompleks dan tidak terlihat diungkap secara jelas dengan kode yang Anda tulis, Anda akan benar-benar menyadari keindahan sejati serta pesona [teori graf](/id/p/graph-theory-dijkstra-a-star/). Dunia ini dipenuhi dengan graf yang jauh lebih indah dan dapat dihitung daripada yang Anda bayangkan.

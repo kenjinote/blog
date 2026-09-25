@@ -75,7 +75,7 @@ flowchart TD
 
 ### 黎明期と評価関数の手動調整
 
-初期の将棋プログラムは、盤面の有利・不利を数値化する「評価関数（Evaluation Function）」と、先の局面を読む「探索アルゴリズム（Search Algorithm）」で構成されていました。探索には「ミニマックス法」や、それを効率化した「アルファベータ法（Alpha-Beta pruning）」が用いられました。
+初期の将棋プログラムは、盤面の有利・不利を数値化する「評価関数（Evaluation Function）」と、先の局面を読む「[探索アルゴリズム](/p/search-algorithms-linear-binary-hash-table-principles/)（Search Algorithm）」で構成されていました。探索には「ミニマックス法」や、それを効率化した「アルファベータ法（Alpha-Beta pruning）」が用いられました。
 
 しかし、当時のAIの評価関数は人間（開発者や協力棋士）が手動でパラメータを調整しており、将棋の複雑な局面を正確に評価するには限界がありました。
 

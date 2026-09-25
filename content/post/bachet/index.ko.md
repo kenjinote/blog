@@ -79,7 +79,7 @@ $$
 ax + by = 1
 $$
 
-이것은 [유클리드 호제법](https://kenji.blog/ko/p/euclidean-algorithm/)을 확장함으로써 구체적으로 $x, y$ 를 계산할 수 있으며 (확장 유클리드 호제법), 현대의 암호 이론 (예를 들어 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호 등) 에서도 필수불가결한 기초 정리가 되어 있습니다. 역사적 정확성을 중시하는 문맥에서는 이것을 **바셰의 정리** 라고 부르기도 합니다.
+이것은 [유클리드 호제법](https://kenji.blog/ko/p/euclidean-algorithm/)을 확장함으로써 구체적으로 $x, y$ 를 계산할 수 있으며 (확장 [유클리드 호제법](/ko/p/euclidean-algorithm/)), 현대의 암호 이론 (예를 들어 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호 등) 에서도 필수불가결한 기초 정리가 되어 있습니다. 역사적 정확성을 중시하는 문맥에서는 이것을 **바셰의 정리** 라고 부르기도 합니다.
 
 ## 요약
 

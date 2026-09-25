@@ -60,7 +60,7 @@ El desarrollo low-code / no-code es un método de desarrollo que permite crear a
   Originalmente desarrollada como FutureSplash Animator, es una herramienta de creación de animaciones vectoriales. Posteriormente se utilizó para la creación de contenido interactivo para la web, pero su soporte finalizó en 2020 debido a problemas de seguridad.
 
 * **GameMaker (1999)**
-  Herramienta de creación de juegos 2D para principiantes. La colocación de objetos y el control de eventos son posibles mediante arrastrar y soltar. Posteriormente también añadió soporte para scripting (GML) y actualmente ofrece múltiples planes para uso comercial.
+  Herramienta de creación de juegos 2D [para principiantes](/es/p/productos-de-cuero%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/). La colocación de objetos y el control de eventos son posibles mediante arrastrar y soltar. Posteriormente también añadió soporte para scripting (GML) y actualmente ofrece múltiples planes para uso comercial.
 
 ---
 

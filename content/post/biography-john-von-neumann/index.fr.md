@@ -10,7 +10,7 @@ image: "eyecatch.jpg"
 
 # Introduction : L'homme craint comme un "Martien"
 
-Tout au long de l'histoire humaine, il y a eu de nombreux individus appelés "génies". De grandes figures comme Albert Einstein, Isaac Newton et Léonard de Vinci ont tous fait preuve d'un talent exceptionnel dans des domaines spécifiques. Cependant, un certain scientifique qui a vécu au 20ème siècle aurait possédé une "intelligence d'une autre dimension" qui les surpassait même. C'était John von Neumann (1903 - 1957).
+Tout au long de l'histoire humaine, il y a eu de nombreux individus appelés "génies". De grandes figures comme Albert Einstein, [Isaac Newton](/fr/p/newton/) et Léonard de Vinci ont tous fait preuve d'un talent exceptionnel dans des domaines spécifiques. Cependant, un certain scientifique qui a vécu au 20ème siècle aurait possédé une "intelligence d'une autre dimension" qui les surpassait même. C'était [John von Neumann](/fr/p/von-neumann/) (1903 - 1957).
 
 Son cerveau était tellement au-delà de l'humain que ses collègues scientifiques chuchotaient à moitié en plaisantant qu'il était un "Martien se faisant passer pour un humain" ou qu'il avait le "Cerveau du Diable". De nombreuses anecdotes racontent que même des lauréats du prix Nobel réalisaient les limites de leur propre intellect devant von Neumann et n'avaient d'autre choix que d'agir comme des enfants.
 
@@ -35,7 +35,7 @@ La nature de prodige de von Neumann s'est démarquée dès son plus jeune âge.
 ### L'Université de Göttingen et David Hilbert
 Entrant dans sa jeunesse, von Neumann étudie les mathématiques à l'Université de Budapest et le génie chimique simultanément à l'Université de Berlin et à l'ETH de Zurich (parce que son père craignait qu'il ne puisse pas gagner sa vie avec les seules mathématiques). Obtenant son doctorat en mathématiques à seulement 22 ans, il se rend à l'Université de Göttingen en Allemagne, le centre du monde mathématique de l'époque.
 
-Il y a été l'assistant de David Hilbert, l'autorité absolue du monde mathématique de l'époque. Hilbert promouvait le "Programme de Hilbert" pour prouver la "complétude et la cohérence des mathématiques", et von Neumann s'est profondément impliqué dans ce grand plan, apportant des contributions décisives dans le domaine de la théorie axiomatique des ensembles.
+Il y a été l'assistant de [David Hilbert](/fr/p/hilbert/), l'autorité absolue du monde mathématique de l'époque. Hilbert promouvait le "Programme de Hilbert" pour prouver la "complétude et la cohérence des mathématiques", et von Neumann s'est profondément impliqué dans ce grand plan, apportant des contributions décisives dans le domaine de la théorie axiomatique des ensembles.
 
 ### Fondements mathématiques de la mécanique quantique
 À la fin des années 1920, une nouvelle théorie appelée mécanique quantique est née dans le monde de la physique, provoquant une grande confusion. Deux théories, la "mécanique matricielle" de Werner Heisenberg et la "mécanique ondulatoire" d'Erwin Schrödinger, qui semblaient complètement différentes dans leur apparence et leur approche, se côtoyaient.
@@ -47,7 +47,7 @@ Ici, von Neumann a démontré son intuition mathématique écrasante. En utilisa
 ### La montée des nazis et la fuite vers l'Amérique
 Dans les années 1930, les nazis dirigés par Adolf Hitler arrivent au pouvoir en Allemagne et la persécution des Juifs commence. Sentant la crise, von Neumann fuit tôt en Amérique. Il est invité au tout nouvel "Institute for Advanced Study (IAS)" à Princeton, dans le New Jersey.
 
-Cet institut rassemblait les plus grands esprits du monde entier, dont Einstein et Kurt Gödel. Von Neumann devient professeur titulaire à l'institut au jeune âge de 29 ans (avec Einstein et d'autres, il était le plus jeune professeur titulaire).
+Cet institut rassemblait les plus grands esprits du monde entier, dont Einstein et [Kurt Gödel](/fr/p/godel/). Von Neumann devient professeur titulaire à l'institut au jeune âge de 29 ans (avec Einstein et d'autres, il était le plus jeune professeur titulaire).
 
 ### Un style de jeu peu orthodoxe
 À Princeton, von Neumann a agi de manière complètement différente des autres universitaires calmes. Il résolvait des problèmes mathématiques difficiles en écoutant de fortes marches allemandes, organisait fréquemment des fêtes somptueuses, conduisait des voitures à des vitesses vertigineuses et détruisait une nouvelle voiture presque chaque année (l'intersection où il causait fréquemment des accidents était même appelée "l'intersection de von Neumann"). Alors qu'Einstein préférait une vie simple et solitaire, von Neumann portait toujours des costumes impeccables et appréciait beaucoup les plaisirs du monde.
@@ -127,11 +127,11 @@ Cela s'est produit avant la découverte de la structure en double hélice de l'A
 
 ## Conclusion : Une intelligence trop précoce pour l'humanité
 
-Le 8 février 1957, John von Neumann décède d'un cancer dans un hôpital de Washington D.C., au jeune âge de 53 ans. Craignant qu'il ne divulgue inconsciemment des secrets militaires, l'armée aurait maintenu des policiers militaires stationnés dans sa chambre d'hôpital en permanence.
+Le 8 février 1957, [John von Neumann](/fr/p/von-neumann/) décède d'un cancer dans un hôpital de Washington D.C., au jeune âge de 53 ans. Craignant qu'il ne divulgue inconsciemment des secrets militaires, l'armée aurait maintenu des policiers militaires stationnés dans sa chambre d'hôpital en permanence.
 
 Son cerveau a continué à fonctionner sans s'arrêter jusqu'au dernier moment, mais il éprouvait une terreur profonde de perdre progressivement la mémoire au fur et à mesure de l'évolution du cancer. Le processus d'un homme qui pouvait autrefois mémoriser un livre entier et devenir incapable de faire la moindre addition simple a été un spectacle cruel pour tout le monde autour de lui.
 
-John von Neumann. Il a traversé et posé les jalons de domaines que l'humanité aurait dû mettre des centaines d'années à explorer (des mathématiques, de la physique, de l'économie, de la météorologie à l'informatique) au cours d'une seule vie.
+[John von Neumann](/fr/p/von-neumann/). Il a traversé et posé les jalons de domaines que l'humanité aurait dû mettre des centaines d'années à explorer (des mathématiques, de la physique, de l'économie, de la météorologie à l'informatique) au cours d'une seule vie.
 
 Parce que ses réalisations sont si diverses et profondes, il est encore difficile de croire qu'elles ont été accomplies par un seul être humain. Qu'il ait été un "Martien" ou non est incertain, mais ses clones nommés "Architecture de von Neumann" continuent de calculer sans relâche partout dans le monde en ce moment même.
 

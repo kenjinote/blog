@@ -256,6 +256,6 @@ Qu'en avez-vous pensé ? Dans cet article, en utilisant le nombre de modèles de
 *   En utilisant le **[Lemme de Burnside](https://kenji.blog/fr/p/burnsides-lemma/)**, le nombre de modèles essentiellement différents peut être calculé par la procédure mécanique "d'établir la moyenne du nombre de points fixes dans chaque opération".
 *   Ce théorème est basé sur une propriété profonde de la théorie des groupes appelée le Théorème orbite-stabilisateur.
 
-Le [Lemme de Burnside](https://kenji.blog/fr/p/burnsides-lemma/) est un théorème très pratique appliqué dans un large éventail de domaines, tels que le dénombrement des isomères moléculaires en chimie, la détermination de l'isomorphisme de graphe dans la théorie des graphes, et même la mécanique statistique en physique.
+Le [Lemme de Burnside](https://kenji.blog/fr/p/burnsides-lemma/) est un théorème très pratique appliqué dans un large éventail de domaines, tels que le dénombrement des isomères moléculaires en chimie, la détermination de l'isomorphisme de graphe dans la [théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/), et même la mécanique statistique en physique.
 
 À travers les concepts de base introduits cette fois-ci, nous espérons que vous avez pu apercevoir comment le domaine des mathématiques appelé "Théorie des Groupes", qui a tendance à paraître abstrait, peut résoudre brillamment des problèmes concrets du monde réel.

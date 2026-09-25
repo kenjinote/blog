@@ -32,13 +32,13 @@ However, this happy time was short-lived, and in February 1930, Morcom suddenly 
 
 ## 2. Cambridge University and the Birth of the "Turing Machine"
 
-In 1931, Turing entered King's College, Cambridge, and immersed himself in earnest in the study of mathematics and logic. Here, he came into contact with the ideas of top-class scientists such as John von Neumann and Max Born, greatly expanding his academic wings.
+In 1931, Turing entered King's College, Cambridge, and immersed himself in earnest in the study of mathematics and logic. Here, he came into contact with the ideas of top-class scientists such as [John von Neumann](/en/p/von-neumann/) and Max Born, greatly expanding his academic wings.
 
 Then, in 1936, at the age of 24, he published the monumental paper "On Computable Numbers, with an Application to the Entscheidungsproblem," which shines brightly in the history of science in the 20th century.
 
 ### The Concept of the Turing Machine
 
-In this paper, Turing gave a proof of "no" to the "decision problem" (Entscheidungsproblem: can all mathematical propositions be judged true or false by an algorithm?) raised by mathematician David Hilbert. However, the true value of this paper lay in the thought experiment model called the "Turing Machine" that he devised in the process of the proof.
+In this paper, Turing gave a proof of "no" to the "decision problem" (Entscheidungsproblem: can all mathematical propositions be judged true or false by an algorithm?) raised by mathematician [David Hilbert](/en/p/hilbert/). However, the true value of this paper lay in the thought experiment model called the "Turing Machine" that he devised in the process of the proof.
 
 The Turing machine is an extremely simple virtual machine consisting of an infinitely long tape, a head that reads and writes the tape, a register that stores the internal state, and a rule table that determines the operation.
 

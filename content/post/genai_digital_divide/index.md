@@ -12,15 +12,15 @@ tags: ["Generative AI", "Digital Divide", "LLM", "Productivity"]
 
 ## 1. はじめに：デジタルディバイドの歴史的変遷と新たなパラダイム
 
-インターネットの普及以降、私たちは「デジタルディバイド（情報格差）」という言葉を何度も耳にしてきました。初期のデジタルディバイドは、主に「物理的なアクセス権」に関するものでした。つまり、コンピューターや高速インターネット回線を持っているか否かが、情報へのアクセスと経済的機会を左右するという単純な構図です。その後、スマートフォンやブロードバンド回線がコモディティ化するにつれて、ディバイドの焦点は「ITリテラシー（情報活用能力）」へと移行しました。検索エンジンを使って適切に情報を探し出せるか、ソフトウェアを使いこなせるか、といったソフトウェア的・認知的な側面です。
+インターネットの普及以降、私たちは「デジタルディバイド（情報格差）」という言葉を何度も耳にしてきました。初期のデジタルディバイドは、主に「物理的なアクセス権」に関するものでした。つまり、コンピューターや高速インターネット回線を持っているか否かが、情報へのアクセスと経済的機会を左右するという単純な構図です。その後、スマートフォンやブロードバンド回線がコモディティ化するにつれて、ディバイドの焦点は「ITリテラシー（情報活用能力）」へと移行しました。[検索エンジン](/p/how-search-engines-work/)を使って適切に情報を探し出せるか、ソフトウェアを使いこなせるか、といったソフトウェア的・認知的な側面です。
 
-しかし、2020年代に突如として勃興した生成AI（Generative AI）と[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（LLM: [Large Language Models](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）の進化は、このデジタルディバイドの概念を根本から覆しつつあります。いま私たちが直面しているのは、単なる「情報へのアクセス格差」や「ソフトウェアの操作スキルの格差」ではありません。それは、「AIをオーケストレーション（指揮・統合）する能力の格差」であり、個人の生産性を指数関数的に増幅させるか、それともAIの進化に取り残されて相対的価値を失うかという、極めて深刻で不可逆的な「第3次デジタルディバイド」なのです。
+しかし、2020年代に突如として勃興した生成AI（Generative AI）と[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](/p/large-language-models-llm-transformer-prompt-engineering/): [Large Language Models](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）の進化は、このデジタルディバイドの概念を根本から覆しつつあります。いま私たちが直面しているのは、単なる「情報へのアクセス格差」や「ソフトウェアの操作スキルの格差」ではありません。それは、「AIをオーケストレーション（指揮・統合）する能力の格差」であり、個人の生産性を指数関数的に増幅させるか、それともAIの進化に取り残されて相対的価値を失うかという、極めて深刻で不可逆的な「第3次デジタルディバイド」なのです。
 
 本稿では、生成AIがもたらすこの新たなデジタルディバイドの正体を、生産性の数理モデル、ハードウェアのアーキテクチャとコスト、そして人間の認知的側面の3つのレイヤーから極めて詳細に解き明かしていきます。
 
 ## 2. 「アクセス」から「オーケストレーション」へ：第3次デジタルディバイドの到来
 
-過去のソフトウェア・ツールは、本質的に「受動的な道具」でした。ユーザーの明示的な入力に対して、決定論的な結果を返すのが従来のソフトウェアの限界でした（例：表計算ソフトで数式を入力して計算結果を得る）。しかし、現在の生成AI、特に[Transformer](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)アーキテクチャをベースとするLLM（GPT-4、Claude 3.5、Llama 3など）は、「能動的な知能の断片」として振る舞います。
+過去のソフトウェア・ツールは、本質的に「受動的な道具」でした。ユーザーの明示的な入力に対して、決定論的な結果を返すのが従来のソフトウェアの限界でした（例：表計算ソフトで数式を入力して計算結果を得る）。しかし、現在の生成AI、特に[Transformer](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)アーキテクチャをベースとする[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)（GPT-4、Claude 3.5、Llama 3など）は、「能動的な知能の断片」として振る舞います。
 
 このパラダイムシフトにより、人間に求められるスキルセットは「ツールを操作する能力」から「複数のAIエージェントやツールを組み合わせ、自律的なワークフローを設計・指揮する能力（AI Orchestration）」へと劇的に変化しました。これを「AIオーケストレーション・リテラシー」と呼ぶことができます。
 
@@ -98,13 +98,13 @@ $$
 ### ローカル[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)とVRAMの壁
 クラウドコストの回避とデータプライバシーの観点から、MetaのLlama 3やMistralなどのオープンウェイトモデルをローカルで動かす需要が高まっています。しかしここで「VRAM（Video RAM）の壁」という物理的なディバイドが立ちはだかります。
 
-LLMの推論速度は、GPUの演算性能（FLOPS）よりも、メモリ帯域幅（Memory Bandwidth）に強く依存します（Memory-boundな性質）。モデルのパラメータ数を $P$、精度を16bit（2バイト）とした場合、モデルをメモリにロードするだけでも最低 $2P$ バイトのVRAMが必要です。例えば700億（70B）パラメータのモデルは、140GB以上のVRAMを要求します。
+[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)の推論速度は、GPUの演算性能（FLOPS）よりも、メモリ帯域幅（Memory Bandwidth）に強く依存します（Memory-boundな性質）。モデルのパラメータ数を $P$、精度を16bit（2バイト）とした場合、モデルをメモリにロードするだけでも最低 $2P$ バイトのVRAMが必要です。例えば700億（70B）パラメータのモデルは、140GB以上のVRAMを要求します。
 
 $$
 VRAM_{required} \approx \left( \frac{P \times bits\_per\_weight}{8} \right) + Context\_Memory
 $$
 
-一般消費者が購入できるハイエンドGPU（NVIDIA RTX 4090）でもVRAMは24GBにとどまり、70Bクラスのモデルをそのまま動かすことは不可能です。ここで、AWQやGGUFといった「量子化技術（Quantization）」が登場し、ウェイトを4bitや8bitに圧縮して妥協点を探る技術的格闘が行われていますが、量子化による性能劣化（Perplexityの悪化）は避けられません。
+一般消費者が購入できるハイエンドGPU（[NVIDIA](/p/history-of-nvidia/) RTX 4090）でもVRAMは24GBにとどまり、70Bクラスのモデルをそのまま動かすことは不可能です。ここで、AWQや[GGUF](/p/llama-cpp-quantization-gguf/)といった「量子化技術（Quantization）」が登場し、ウェイトを4bitや8bitに圧縮して妥協点を探る技術的格闘が行われていますが、量子化による性能劣化（Perplexityの悪化）は避けられません。
 
 さらに、近年ではNPU（Neural Processing Unit）を搭載した「AI PC」が登場していますが、現在のNPUのTOPS（Tera Operations Per Second）は軽量な小規模モデル（SLM: Small Language Models）を動かすのが限界であり、真に高度な推論をローカルで行うには、数百万円規模のマルチGPU環境を構築できる資本力が必要です。これが、AIにおける「資本集約的なデジタルディバイド」の正体です。
 

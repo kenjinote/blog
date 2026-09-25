@@ -102,7 +102,7 @@ Pada switch mekanikal yang memiliki kontak logam, terdapat "efek pantulan" (boun
 
 ## 3. Firmware dan Kustomisasi (QMK / VIA)
 
-Jika perangkat keras (hardware) adalah "tubuh", maka firmware adalah "otak" dari keyboard. Keyboard high-end modern untuk engineer tidak hanya sekadar mengirimkan kode tombol, tetapi memiliki kemampuan untuk mengeksekusi program yang kompleks.
+Jika perangkat keras (hardware) adalah "tubuh", maka firmware adalah "otak" dari keyboard. Keyboard high-end modern [untuk engineer](/id/p/prompt-engineering-for-engineers/) tidak hanya sekadar mengirimkan kode tombol, tetapi memiliki kemampuan untuk mengeksekusi program yang kompleks.
 
 ### 3.1 QMK Firmware
 
@@ -151,7 +151,7 @@ Keychron yang berbasis di Hong Kong adalah pelopor di balik tren custom keyboard
 - **Switch:** Mekanikal (Hot-swappable. Anda dapat dengan bebas mengganti switch)
 - **Firmware:** Didukung penuh oleh QMK/VIA
 - **Fitur:** Tombol sakelar untuk berpindah antara macOS/Windows. Anda dapat memilih layout sesuai preferensi, seperti Alice layout pada Q8, atau layout 75% pada Q1.
-- **Manfaat untuk Engineer:** Meskipun ini adalah produk jadi, Anda dapat segera merasakan sensasi mengetik yang sangat baik dan kemampuan penyesuaian yang setara dengan custom keyboard rakitan sejak dikeluarkan dari kotaknya. Sangat ideal untuk membuat layer panah ala Vim menggunakan VIA.
+- **Manfaat [untuk Engineer](/id/p/prompt-engineering-for-engineers/):** Meskipun ini adalah produk jadi, Anda dapat segera merasakan sensasi mengetik yang sangat baik dan kemampuan penyesuaian yang setara dengan custom keyboard rakitan sejak dikeluarkan dari kotaknya. Sangat ideal untuk membuat layer panah ala Vim menggunakan VIA.
 
 ---
 
@@ -161,7 +161,7 @@ Keychron yang berbasis di Hong Kong adalah pelopor di balik tren custom keyboard
 
 - **Switch:** Linear / Silent Mechanical Switch (Buatan Kailh, Hot-swappable)
 - **Fitur:** Pointing stick (trackpoint) di tengah keyboard, dan 4 pad gestur.
-- **Manfaat untuk Engineer:** Operasi kursor mouse, scrolling, dan pergantian jendela dapat diselesaikan tanpa perlu mengangkat tangan dari home position. Begitu Anda merasakan "pengalaman di mana semuanya diselesaikan dengan ujung jari" ini, Anda tidak akan pernah bisa kembali meraih mouse dengan tangan kanan Anda.
+- **Manfaat [untuk Engineer](/id/p/prompt-engineering-for-engineers/):** Operasi kursor mouse, scrolling, dan pergantian jendela dapat diselesaikan tanpa perlu mengangkat tangan dari home position. Begitu Anda merasakan "pengalaman di mana semuanya diselesaikan dengan ujung jari" ini, Anda tidak akan pernah bisa kembali meraih mouse dengan tangan kanan Anda.
 
 ---
 
@@ -172,7 +172,7 @@ Inilah puncak dari split keyboard yang dikembangkan oleh ZSA dari Kanada. Sisi k
 - **Switch:** Mekanikal (Kompatibel dengan Cherry MX, Hot-swappable)
 - **Firmware:** Berbasis QMK (Menggunakan alat GUI canggih milik mereka sendiri, "Oryx")
 - **Fitur:** Tata letak Columnar Staggered, cluster tombol khusus untuk ibu jari, dan penyangga kaki untuk mengatur sudut kemiringan (tenting) disertakan sebagai standar.
-- **Manfaat untuk Engineer:** Dengan menempatkan Enter, Space, Backspace, dan Layer Toggle di ibu jari, ini secara dramatis mengurangi beban pada jari kelingking yang paling lemah. Ini adalah perangkat penyelamat bagi engineer yang menderita carpal tunnel syndrome.
+- **Manfaat [untuk Engineer](/id/p/prompt-engineering-for-engineers/):** Dengan menempatkan Enter, Space, Backspace, dan Layer Toggle di ibu jari, ini secara dramatis mengurangi beban pada jari kelingking yang paling lemah. Ini adalah perangkat penyelamat bagi engineer yang menderita carpal tunnel syndrome.
 
 ---
 
@@ -182,7 +182,7 @@ Mahakarya Jepang yang dibanggakan oleh Topre. Rekam jejaknya yang telah lama dig
 
 - **Switch:** Capacitive Switch (Tanpa Kontak / Topre)
 - **Fitur:** Dengan fitur APC (Actuation Point Changer), titik aktuasi dapat diatur secara individual untuk setiap tombol pada 0.8mm, 1.5mm, 2.2mm, dan 3.0mm.
-- **Manfaat untuk Engineer:** Sentuhan tombol mulus karena tidak adanya kontak fisik disebut "Feather Touch", yang meminimalkan stres tolakan pada jari bahkan selama sesi coding yang panjang. Anda bisa mengatur titik aktuasi hanya untuk tombol yang ditekan dengan jari kelingking (seperti A atau Enter) menjadi dangkal (0.8mm) agar bereaksi hanya dengan sentuhan ringan.
+- **Manfaat [untuk Engineer](/id/p/prompt-engineering-for-engineers/):** Sentuhan tombol mulus karena tidak adanya kontak fisik disebut "Feather Touch", yang meminimalkan stres tolakan pada jari bahkan selama sesi coding yang panjang. Anda bisa mengatur titik aktuasi hanya untuk tombol yang ditekan dengan jari kelingking (seperti A atau Enter) menjadi dangkal (0.8mm) agar bereaksi hanya dengan sentuhan ringan.
 
 ---
 
@@ -192,7 +192,7 @@ Awalnya dikembangkan untuk gamer e-sports, teknologi inovatif dari keyboard ini 
 
 - **Switch:** Lekker Switch (Magnetic Switch berbasis efek Hall)
 - **Fitur:** Fitur Rapid Trigger, dan titik aktuasi yang dapat disesuaikan dalam peningkatan 0.1mm mulai dari 0.1mm hingga 4.0mm.
-- **Manfaat untuk Engineer:** Memanfaatkan input analog, Anda dapat membuat pengaturan tidak lazim (Dynamic Keystroke) seperti "huruf kecil jika ditekan sedikit, huruf besar jika ditekan dalam (gabungan dengan Shift)". Selain itu, karena input tombol dimatikan sesaat setelah Anda sedikit saja mengangkat jari, ini mencegah input berulang yang tidak disengaja selama mengetik cepat, menawarkan pengalaman mengetik yang tak tertandingi dan akurat.
+- **Manfaat [untuk Engineer](/id/p/prompt-engineering-for-engineers/):** Memanfaatkan input analog, Anda dapat membuat pengaturan tidak lazim (Dynamic Keystroke) seperti "huruf kecil jika ditekan sedikit, huruf besar jika ditekan dalam (gabungan dengan Shift)". Selain itu, karena input tombol dimatikan sesaat setelah Anda sedikit saja mengangkat jari, ini mencegah input berulang yang tidak disengaja selama mengetik cepat, menawarkan pengalaman mengetik yang tak tertandingi dan akurat.
 
 ## Penutup
 

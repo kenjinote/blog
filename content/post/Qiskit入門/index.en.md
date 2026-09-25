@@ -293,7 +293,7 @@ While a classical computer requires at worst $2^{n-1} + 1$ evaluations of the fu
 
 ### 6.2 Grover's Algorithm
 
-In the search problem of finding specific data from $N$ unsorted database elements, a classical algorithm requires an average of $N/2$ computations, whereas Grover's algorithm can find the target data in $\sqrt{N}$ computations.
+In the search problem of finding specific data from $N$ unsorted database elements, a classical algorithm requires an average of $N/2$ computations, whereas [Grover's algorithm](/en/p/grovers-algorithm-quantum-search/) can find the target data in $\sqrt{N}$ computations.
 This algorithm uses a black box called an "Oracle" to flip the phase of the target solution, and further applies "Amplitude Amplification" to dramatically increase the probability of observing the target solution.
 
 ```mermaid

@@ -12,7 +12,7 @@ description: 'TinyLLaMAをオンプレミス環境で効率的かつ最速でフ
 
 ## 1. はじめに：なぜ今、TinyLLaMAとオンプレミスなのか？
 
-[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）の進化は凄まじいスピードで進んでいますが、それに伴いモデルのパラメータ数も数千億規模へと膨張し続けています。GPT-4やClaude 3のような超巨大モデルは比類なき性能を誇る一方で、推論や学習にかかる計算コスト、そして外部APIを利用する際のセキュリティやデータプライバシーの懸念が企業にとって大きなハードルとなっています。特に機密性の高い社内データや個人情報を扱う業務においては、クラウド上のパブリックなLLM APIへデータを送信することは、コンプライアンス（GDPRやAPPIなど）の観点から許容されないケースが多々あります。
+[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）の進化は凄まじいスピードで進んでいますが、それに伴いモデルのパラメータ数も数千億規模へと膨張し続けています。GPT-4やClaude 3のような超巨大モデルは比類なき性能を誇る一方で、推論や学習にかかる計算コスト、そして外部APIを利用する際のセキュリティやデータプライバシーの懸念が企業にとって大きなハードルとなっています。特に機密性の高い社内データや個人情報を扱う業務においては、クラウド上のパブリックな[LLM](/p/large-language-models-llm-transformer-prompt-engineering/) APIへデータを送信することは、コンプライアンス（GDPRやAPPIなど）の観点から許容されないケースが多々あります。
 
 そこで脚光を浴びているのが、 **小規模言語モデル（SLM: Small Language Models）** と ** オンプレミス環境でのローカル運用 ** です。その中でも「**TinyLLaMA** 」は、わずか1.1B（11億）パラメータというコンパクトなサイズでありながら、約3兆トークンという膨大なデータセットで事前学習されており、同クラスのモデルと比較して驚異的な性能を発揮します。
 
@@ -22,7 +22,7 @@ description: 'TinyLLaMAをオンプレミス環境で効率的かつ最速でフ
 
 ## 2. TinyLLaMAのアーキテクチャと特徴
 
-TinyLLaMAは、Meta社が開発したLLaMA（Large Language Model Meta AI）アーキテクチャを踏襲しています。パラメータ数を1.1Bに抑えつつも、LLaMA 2と同じ技術[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を利用しているため、エコシステムの互換性が非常に高いのが特徴です。
+TinyLLaMAは、[Meta](/p/history-of-meta-facebook/)社が開発したLLaMA（Large Language Model [Meta](/p/history-of-meta-facebook/) AI）アーキテクチャを踏襲しています。パラメータ数を1.1Bに抑えつつも、LLaMA 2と同じ技術[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を利用しているため、エコシステムの互換性が非常に高いのが特徴です。
 
 ### 主要なアーキテクチャコンポーネント
 
@@ -100,7 +100,7 @@ QLoRAは、LoRAのアプローチをさらに推し進め、ベースモデル $
 QLoRAには3つの重要な技術が組み込まれています。
 1. **4-bit NormalFloat (NF4) 量子化:** 正規分布に従う重みに最適化された理論的に最適なデータ型。
 2. **Double Quantization (二重量子化):** 量子化定数（スケールファクタ）自体も量子化することで、さらにメモリを節約。
-3. **Paged Optimizers:** NVIDIAの統合メモリ機能を利用し、VRAMが不足した際にオプティマイザのステータスをCPUのRAMへ一時的に退避させる仕組み。
+3. **Paged Optimizers:** [NVIDIA](/p/history-of-nvidia/)の統合メモリ機能を利用し、VRAMが不足した際にオプティマイザのステータスをCPUのRAMへ一時的に退避させる仕組み。
 
 これにより、通常はVRAMが16GB〜24GB必要なチューニングが、コンシューマー向けのGPU（RTX 3060 12GBやRTX 4070など）でも余裕を持って実行可能になります。
 
@@ -357,5 +357,5 @@ python -m vllm.entrypoints.openai.api_server \
 - **Flash Attention 2** と **Gradient Checkpointing** を駆使することで、学習時間とVRAM消費を極限まで最適化。
 - **vLLM** を活用したデプロイにより、本番環境でも高いスループットを実現。
 
-オンプレミスでのローカルLLM運用は、データの機密性を守るだけでなく、特定のドメイン（法務、医療、社内規程など）に特化した専門AIを低コストで構築するための最強の武器となります。ぜひ本ガイドを参考に、自社専用のTinyLLaMAを育成してみてください。
+オンプレミスでのローカル[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)運用は、データの機密性を守るだけでなく、特定のドメイン（法務、医療、社内規程など）に特化した専門AIを低コストで構築するための最強の武器となります。ぜひ本ガイドを参考に、自社専用のTinyLLaMAを育成してみてください。
 

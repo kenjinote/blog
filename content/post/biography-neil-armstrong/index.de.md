@@ -20,7 +20,7 @@ Nach dem Krieg war er als Testpilot an zahlreichen gefährlichen Flugmissionen b
 
 ## Karriere bei der NASA: Von Gemini zu Apollo
 
-Armstrong wurde 1962 in die zweite Astronautengruppe der NASA gewählt und war 1966 Kommandant der Gemini 8. Bei dieser Mission gelang das erste Andockmanöver der Menschheit in der Erdumlaufbahn, doch kurz darauf geriet das Raumschiff in einen heftigen und lebensbedrohlichen Trudel. In diesem Moment steuerte er die Triebwerke mit erstaunlicher Ruhe und kehrte sicher zur Erde zurück. Diese mentale Stärke, nicht in Panik zu geraten, wurde hoch geschätzt und war der entscheidende Faktor bei seiner Auswahl als Kommandant von Apollo 11, also als "erster Mann, der auf dem Mond spazieren geht".
+Armstrong wurde 1962 in die zweite Astronautengruppe der NASA gewählt und war 1966 Kommandant der [Gemini](/de/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEl%C3%B6sung/) 8. Bei dieser Mission gelang das erste Andockmanöver der Menschheit in der Erdumlaufbahn, doch kurz darauf geriet das Raumschiff in einen heftigen und lebensbedrohlichen Trudel. In diesem Moment steuerte er die Triebwerke mit erstaunlicher Ruhe und kehrte sicher zur Erde zurück. Diese mentale Stärke, nicht in Panik zu geraten, wurde hoch geschätzt und war der entscheidende Faktor bei seiner Auswahl als Kommandant von Apollo 11, also als "erster Mann, der auf dem Mond spazieren geht".
 
 ## Apollo 11: Landung im Meer der Ruhe
 

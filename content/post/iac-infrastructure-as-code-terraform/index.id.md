@@ -120,7 +120,7 @@ graph TD
     VPC --> SG
 ```
 
-Melalui pendekatan berbasis teori graf ini, Terraform mewujudkan hal-hal berikut:
+Melalui pendekatan berbasis [teori graf](/id/p/graph-theory-dijkstra-a-star/) ini, Terraform mewujudkan hal-hal berikut:
 - **Pembuatan Paralel** untuk sumber daya yang tidak saling bergantung (mempercepat proses).
 - Pembuatan, pembaruan, dan penghapusan sumber daya dengan urutan yang benar.
 

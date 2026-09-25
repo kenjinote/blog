@@ -160,7 +160,7 @@ En utilisant cette propriété, le nombre de façons de disposer des éléments 
 Dans l'informatique moderne et la programmation compétitive, les fonctions génératrices sont implémentées sous forme de **séries entières formelles** (Formal Power Series, FPS).
 En FPS, on ne se soucie pas de savoir si la substitution d'une valeur numérique spécifique dans $x$ converge (propriétés analytiques) ; l'accent est simplement mis sur la manipulation de la « suite de coefficients » de manière algébrique comme des polynômes.
 
-En utilisant la transformée de Fourier rapide (FFT) ou la transformée de nombres théoriques (NTT), le produit de deux polynômes de degré $N$ (c'est-à-dire la convolution de suites de longueur $N$) peut être trouvé avec une complexité temporelle de $\mathcal{O}(N \log N)$. Cela permet d'accélérer considérablement les calculs qui prendraient $\mathcal{O}(N^2)$ avec la programmation dynamique.
+En utilisant la transformée de Fourier rapide ([FFT](/fr/p/fast-fourier-transform-algorithm/)) ou la transformée de nombres théoriques (NTT), le produit de deux polynômes de degré $N$ (c'est-à-dire la convolution de suites de longueur $N$) peut être trouvé avec une complexité temporelle de $\mathcal{O}(N \log N)$. Cela permet d'accélérer considérablement les calculs qui prendraient $\mathcal{O}(N^2)$ avec la programmation dynamique.
 
 ## 6. Conclusion
 

@@ -69,7 +69,7 @@ Microservices haben folgendes Licht (Vorteile):
 
 ## 3. Der „Schatten“ von Microservices: Betriebliche Herausforderungen
 
-Microservices sind jedoch keine „Silver Bullet“ (Wunderwaffe). Durch die Dezentralisierung des Systems entsteht der „Schatten“ der für verteilte Systeme typischen Komplexität.
+Microservices sind jedoch keine „Silver Bullet“ (Wunderwaffe). Durch die Dezentralisierung des Systems entsteht der „Schatten“ der für [verteilte Systeme](/de/p/cap-theorem-distributed-systems-tradeoff/) typischen Komplexität.
 
 ### 3.1. Netzwerklatenz und Kommunikationskomplexität
 Prozesse, die bei einem Monolithen noch als Funktionsaufrufe im Speicher abgewickelt wurden, werden durch Kommunikation über ein Netzwerk (HTTP/REST, gRPC etc.) ersetzt. Dies führt zu **Netzwerklatenz** und dem Risiko einer Verschlechterung der Reaktionsgeschwindigkeit des gesamten Systems. Da das Netzwerk zudem immer instabil ist, müssen komplexe Kommunikationssteuerungen wie Timeouts, Retry-Mechanismen und Circuit Breaker implementiert werden.
@@ -219,7 +219,7 @@ Durch diese Implementierung können Clients Daten von mehreren Backend-Services 
 
 ## 7. Fazit
 
-Die Microservices-Architektur ist ein leistungsstarker Ansatz zur Weiterentwicklung großer Systeme in eine skalierbare Form, jedoch muss man sich den Herausforderungen der „Schatten“-Seiten stellen, die für verteilte Systeme einzigartig sind.
+Die Microservices-Architektur ist ein leistungsstarker Ansatz zur Weiterentwicklung großer Systeme in eine skalierbare Form, jedoch muss man sich den Herausforderungen der „Schatten“-Seiten stellen, die für [verteilte Systeme](/de/p/cap-theorem-distributed-systems-tradeoff/) einzigartig sind.
 
 Als Mittel zur Lösung dieser Herausforderungen und zur Optimierung der Kommunikation zwischen Client und Backend sind das **API Gateway** und das **BFF-Pattern** unverzichtbar geworden. Insbesondere das BFF, das dedizierte Endpunkte für jeden Client-Typ bereitstellt, ist eine hervorragende Architektur, die die Geschwindigkeit der UI-Entwicklung von den Einschränkungen des Backends befreit.
 

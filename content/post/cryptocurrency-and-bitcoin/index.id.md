@@ -52,7 +52,7 @@ Ini adalah tajuk utama surat kabar Inggris 『The Times』 pada saat itu, yang b
 
 ## 3. Arsitektur [Blockchain](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/)
 
-Teknologi inti yang mendukung Bitcoin adalah "Blockchain". Blockchain adalah bentuk dari Teknologi Buku Besar Terdistribusi ([Distributed Ledger](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/) Technology: DLT), di mana data dikelompokkan ke dalam unit-unit yang disebut "blok", yang saling terhubung secara kriptografis menyerupai rantai (chain).
+Teknologi inti yang mendukung Bitcoin adalah "[Blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/)". [Blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/) adalah bentuk dari Teknologi Buku Besar Terdistribusi ([Distributed Ledger](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/) Technology: DLT), di mana data dikelompokkan ke dalam unit-unit yang disebut "blok", yang saling terhubung secara kriptografis menyerupai rantai (chain).
 
 ```mermaid
 flowchart TD
@@ -76,7 +76,7 @@ Header blok berisi informasi berikut:
 
 ### Pohon Merkle (Merkle Trees)
 
-Di blockchain, **Pohon Merkle (Merkle [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** digunakan sebagai struktur data untuk secara efisien mendeteksi gangguan data sambil menjaga ukuran blok tetap kecil. Pohon Merkle adalah sejenis pohon biner, di mana nilai hash dari setiap transaksi ditempatkan di simpul daun (leaf nodes), dan simpul induk (parent nodes) adalah hash ulang dari gabungan nilai hash simpul anaknya.
+Di [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/), **Pohon Merkle (Merkle [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** digunakan sebagai struktur data untuk secara efisien mendeteksi gangguan data sambil menjaga ukuran blok tetap kecil. Pohon Merkle adalah sejenis pohon biner, di mana nilai hash dari setiap transaksi ditempatkan di simpul daun (leaf nodes), dan simpul induk (parent nodes) adalah hash ulang dari gabungan nilai hash simpul anaknya.
 
 ```mermaid
 flowchart TD
@@ -115,7 +115,7 @@ Ketika Alice mentransfer Bitcoin ke Bob, Alice menggunakan kunci privatnya untuk
 
 ### Kriptografi Kurva Eliptik (Elliptic Curve Cryptography: ECC) dan secp256k1
 
-Bitcoin menggunakan **Kriptografi Kurva Eliptik (ECC)** alih-alih kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) untuk menghasilkan kunci publik dan tanda tangan digital. ECC memiliki keuntungan menawarkan tingkat keamanan yang setara dengan RSA namun dengan panjang kunci yang jauh lebih pendek.
+Bitcoin menggunakan **Kriptografi Kurva Eliptik ([ECC](/id/p/elliptic-curve-cryptography-math-cpp/))** alih-alih kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) untuk menghasilkan kunci publik dan tanda tangan digital. [ECC](/id/p/elliptic-curve-cryptography-math-cpp/) memiliki keuntungan menawarkan tingkat keamanan yang setara dengan RSA namun dengan panjang kunci yang jauh lebih pendek.
 
 Parameter kurva eliptik tertentu yang digunakan dalam Bitcoin disebut **secp256k1**. Kurva ini didefinisikan di atas medan berhingga (finite field) $\mathbb{F}_p$ dan diwakili oleh persamaan berikut:
 
@@ -155,11 +155,11 @@ Dalam proses verifikasi, perhitungan berikut dilakukan menggunakan kunci publik 
 
 ## 5. Algoritma Konsensus dan Proof of Work ([PoW](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/))
 
-Dalam jaringan terdesentralisasi, mekanisme untuk membuat semua orang menyetujui status buku besar yang sama disebut algoritma konsensus.
+Dalam jaringan terdesentralisasi, mekanisme untuk membuat semua orang menyetujui status buku besar yang sama disebut [algoritma konsensus](/id/p/byzantine-generals-problem-consensus/).
 
 ### Masalah Jenderal Bizantium ([Byzantine Generals](https://kenji.blog/id/p/byzantine-generals-problem-consensus/) Problem)
 
-Sebagai masalah klasik dalam komputasi terdistribusi, ada "Masalah Jenderal Bizantium". Beberapa jenderal mengepung kota musuh dan harus mencapai konsensus apakah akan menyerang atau mundur, tetapi mungkin ada pengkhianat di antara para jenderal yang mengirim pesan palsu. Masalahnya adalah bagaimana mencapai konsensus yang benar hanya di antara jenderal yang jujur dalam situasi seperti itu.
+Sebagai masalah klasik dalam komputasi terdistribusi, ada "[Masalah Jenderal Bizantium](/id/p/byzantine-generals-problem/)". Beberapa jenderal mengepung kota musuh dan harus mencapai konsensus apakah akan menyerang atau mundur, tetapi mungkin ada pengkhianat di antara para jenderal yang mengirim pesan palsu. Masalahnya adalah bagaimana mencapai konsensus yang benar hanya di antara jenderal yang jujur dalam situasi seperti itu.
 
 Bitcoin secara praktis memecahkan masalah ini dengan menggabungkan **Proof of Work ([PoW](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/))** dan **Aturan Rantai Terpanjang (Longest Chain Rule)**.
 
@@ -173,7 +173,7 @@ $$
 
 Karena keluaran fungsi hash tampak sepenuhnya acak, tidak ada algoritma yang efisien untuk menemukan nonce yang memenuhi kondisi tersebut. Satu-satunya metode adalah dengan melakukan serangan brute-force, yaitu mengulang perhitungan hash dengan terus-menerus mengubah nilai nonce.
 
-Semakin kecil nilai target, semakin rendah kemungkinan menemukan hash yang memenuhi kondisi. Jika target mengharuskan $k$ angka nol di awal, jumlah rata-rata perhitungan yang diperlukan untuk menemukan blok tersebut adalah $2^k$. Alokasi energi komputasi yang sangat besar inilah yang membuat catatan masa lalu pada blockchain tidak mungkin dipalsukan.
+Semakin kecil nilai target, semakin rendah kemungkinan menemukan hash yang memenuhi kondisi. Jika target mengharuskan $k$ angka nol di awal, jumlah rata-rata perhitungan yang diperlukan untuk menemukan blok tersebut adalah $2^k$. Alokasi energi komputasi yang sangat besar inilah yang membuat catatan masa lalu pada [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/) tidak mungkin dipalsukan.
 
 ### Penyesuaian Kesulitan (Difficulty Adjustment)
 
@@ -216,7 +216,7 @@ Bitcoin adalah sistem yang sangat kuat dan aman, tetapi konsekuensinya adalah me
 
 ### Fork: Soft Fork dan Hard Fork
 
-Ketika memperbarui protokol blockchain, peristiwa yang disebut "Fork (percabangan)" dapat terjadi.
+Ketika memperbarui protokol [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/), peristiwa yang disebut "Fork (percabangan)" dapat terjadi.
 - **Soft Fork**: Pembaruan yang kompatibel ke belakang (backward-compatible). Node dengan aturan lama masih menganggap blok dengan aturan baru sebagai valid (contoh: penerapan SegWit).
 - **Hard Fork**: Pembaruan yang tidak kompatibel ke belakang. Node lama akan menolak blok dengan aturan baru, sehingga berpotensi membelah jaringan menjadi dua bagian yang terpisah (contoh: lahirnya Bitcoin Cash).
 
@@ -224,17 +224,17 @@ Ketika memperbarui protokol blockchain, peristiwa yang disebut "Fork (percabanga
 
 Pendekatan menjanjikan untuk memecahkan masalah skalabilitas adalah Lightning Network, yang merupakan solusi **Layer 2 (Layer 2)**.
 
-Dalam Lightning Network, para peserta membuka "Saluran Pembayaran (Payment Channel)" di luar blockchain (off-chain). Di dalam saluran tersebut, selama kedua belah pihak setuju, dana dapat ditransfer dalam sekejap dan hampir gratis berkali-kali tanpa harus mencatat transaksi di blockchain. Transaksi hanya dicatat di blockchain (Layer 1) pada saat penyelesaian akhir saldo.
+Dalam Lightning Network, para peserta membuka "Saluran Pembayaran (Payment Channel)" di luar [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/) (off-chain). Di dalam saluran tersebut, selama kedua belah pihak setuju, dana dapat ditransfer dalam sekejap dan hampir gratis berkali-kali tanpa harus mencatat transaksi di [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/). Transaksi hanya dicatat di [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/) (Layer 1) pada saat penyelesaian akhir saldo.
 
 ### Perbandingan dengan Proof of Stake ([PoS](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/))
 
-Masalah besar lain dengan [PoW](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/) adalah konsumsi listrik yang sangat besar untuk penambangan. Sebagai solusi terhadap masalah lingkungan ini, Ethereum dan beberapa lainnya telah beralih ke algoritma konsensus yang berbeda yang disebut **Proof of Stake (PoS)**.
+Masalah besar lain dengan [PoW](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/) adalah konsumsi listrik yang sangat besar untuk penambangan. Sebagai solusi terhadap masalah lingkungan ini, Ethereum dan beberapa lainnya telah beralih ke [algoritma konsensus](/id/p/byzantine-generals-problem-consensus/) yang berbeda yang disebut **Proof of Stake (PoS)**.
 
 Dalam PoS, hak (validator) untuk menghasilkan blok berikutnya dialokasikan secara probabilistik berdasarkan jumlah aset kripto yang dimiliki (stake) dan durasi kepemilikan, bukan berdasarkan kekuatan komputasi (hashrate). Ini mengurangi konsumsi listrik lebih dari 99%, tetapi ada juga kritik bahwa ini adalah "sistem di mana orang kaya menjadi semakin kaya" atau bahwa "desentralisasi yang sebenarnya dapat terganggu". Bitcoin, tidak peduli seberapa banyak dikritik, terus mempertahankan filosofi PoW, yaitu "jaminan keamanan fisik melalui konsumsi energi".
 
 ## 8. Kedalaman Teori Kriptografi: Pembuktian Matematis dan Ketahanan Protokol
 
-Di balik SHA-256 dan Kriptografi Kurva Eliptik (ECC) yang dijelaskan di bab-bab sebelumnya, terdapat dua paradigma: keamanan berbasis teori informasi dan keamanan komputasional. Aset kripto modern seperti Bitcoin pada dasarnya mengandalkan Keamanan Komputasional (Computational Security).
+Di balik SHA-256 dan Kriptografi Kurva Eliptik ([ECC](/id/p/elliptic-curve-cryptography-math-cpp/)) yang dijelaskan di bab-bab sebelumnya, terdapat dua paradigma: keamanan berbasis teori informasi dan keamanan komputasional. Aset kripto modern seperti Bitcoin pada dasarnya mengandalkan Keamanan Komputasional (Computational Security).
 
 ### Keamanan Komputasional dan Masalah Logaritma Diskrit
 
@@ -248,13 +248,13 @@ Dalam secp256k1 Bitcoin, karena $p \approx 2^{256}$, dekripsi membutuhkan sekita
 ### Ancaman Komputer Kuantum dan Kriptografi Tahan Kuantum
 
 Namun, ada satu kekhawatiran besar mengenai keamanan komputasional. Yaitu munculnya **Komputer Kuantum (Quantum Computer)**.
-"Algoritma Shor ([Shor's Algorithm](https://kenji.blog/id/p/quantum-computing-shors-algorithm/))" yang diterbitkan oleh Peter Shor pada tahun 1994, secara matematis membuktikan bahwa jika komputer kuantum digunakan, masalah faktorisasi prima (dasar dari enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)) dan masalah logaritma diskrit (dasar ECC) dapat diselesaikan dalam waktu polinomial $\mathcal{O}(n^3)$.
+"Algoritma Shor ([Shor's Algorithm](https://kenji.blog/id/p/quantum-computing-shors-algorithm/))" yang diterbitkan oleh Peter Shor pada tahun 1994, secara matematis membuktikan bahwa jika komputer kuantum digunakan, masalah faktorisasi prima (dasar dari enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)) dan masalah logaritma diskrit (dasar [ECC](/id/p/elliptic-curve-cryptography-math-cpp/)) dapat diselesaikan dalam waktu polinomial $\mathcal{O}(n^3)$.
 
 Jika komputer kuantum skala besar yang praktis dengan Qubit (Qubits) yang cukup dan tingkat kesalahan yang rendah berhasil dikembangkan, ada risiko bahwa kunci privat dapat dihitung mundur dari kunci publik Bitcoin.
 Langkah-langkah pertahanan jaringan Bitcoin terhadap hal ini adalah sebagai berikut:
 
-1. **Perlindungan Fungsi Hash**: Alamat Bitcoin bukanlah kunci publik itu sendiri, melainkan hasil dari penerapan fungsi hash SHA-256 dan RIPEMD-160 ke kunci publik. Bahkan dengan komputer kuantum, menghitung mundur fungsi hash (bahkan menggunakan algoritma Grover, kompleksitas komputasinya adalah $\mathcal{O}(\sqrt{N})$) masih sulit. Oleh karena itu, alamat tersebut aman terhadap komputer kuantum hingga transaksi dilakukan dan kunci publik diekspos ke jaringan.
-2. **Transisi ke Kriptografi Pasca-Kuantum (Post-Quantum [Cryptography](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/): PQC)**: Sebelum komputer kuantum digunakan secara praktis, ada diskusi untuk melakukan hard fork pada protokol Bitcoin untuk beralih ke algoritma tanda tangan baru yang sulit dipecahkan bahkan oleh komputer kuantum, seperti kriptografi berbasis kisi (Lattice-based cryptography) atau kriptografi polinomial multivariat (Multivariate polynomial cryptography) yang dipilih oleh NIST (Institut Nasional Standar dan Teknologi AS).
+1. **Perlindungan Fungsi Hash**: Alamat Bitcoin bukanlah kunci publik itu sendiri, melainkan hasil dari penerapan fungsi hash SHA-256 dan RIPEMD-160 ke kunci publik. Bahkan dengan komputer kuantum, menghitung mundur fungsi hash (bahkan menggunakan [algoritma Grover](/id/p/grovers-algorithm-quantum-search/), kompleksitas komputasinya adalah $\mathcal{O}(\sqrt{N})$) masih sulit. Oleh karena itu, alamat tersebut aman terhadap komputer kuantum hingga transaksi dilakukan dan kunci publik diekspos ke jaringan.
+2. **Transisi ke Kriptografi Pasca-Kuantum (Post-Quantum [Cryptography](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/): PQC)**: Sebelum komputer kuantum digunakan secara praktis, ada diskusi untuk melakukan hard fork pada protokol Bitcoin untuk beralih ke algoritma tanda tangan baru yang sulit dipecahkan bahkan oleh komputer kuantum, seperti kriptografi berbasis kisi ([Lattice-based cryptography](/id/p/lattice-based-cryptography-math-intuition/)) atau kriptografi polinomial multivariat (Multivariate polynomial cryptography) yang dipilih oleh NIST (Institut Nasional Standar dan Teknologi AS).
 
 ## 9. Topologi Jaringan dan Detail Protokol [P2P](https://kenji.blog/id/p/webrtc-realtime-communication-p2p/)
 
@@ -264,8 +264,8 @@ Jaringan Bitcoin bukanlah sekadar kumpulan server dan klien, melainkan dibangun 
 
 Komputer yang berpartisipasi dalam jaringan disebut "Node". Ada beberapa jenis node, masing-masing dengan peran yang berbeda.
 
-- **Full Node**: Node yang mengunduh dan memverifikasi semua data blockchain (ratusan GB atau lebih) dari Blok Genesis hingga blok terbaru. Node ini secara independen memeriksa validitas transaksi dan ada tidaknya pengeluaran ganda, sehingga memainkan peran inti dalam keamanan jaringan.
-- **Node SPV (Simplified Payment Verification Node)**: Node ringan yang hanya mengunduh header blok, bukan keseluruhan blockchain. Terutama digunakan dalam dompet untuk ponsel cerdas. Node ini dapat memeriksa apakah transaksinya sendiri termasuk dalam blok (verifikasi jalur Merkle), tetapi tidak memiliki kemampuan verifikasi setingkat Full Node.
+- **Full Node**: Node yang mengunduh dan memverifikasi semua data [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/) (ratusan GB atau lebih) dari Blok Genesis hingga blok terbaru. Node ini secara independen memeriksa validitas transaksi dan ada tidaknya pengeluaran ganda, sehingga memainkan peran inti dalam keamanan jaringan.
+- **Node SPV (Simplified Payment Verification Node)**: Node ringan yang hanya mengunduh header blok, bukan keseluruhan [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/). Terutama digunakan dalam dompet untuk ponsel cerdas. Node ini dapat memeriksa apakah transaksinya sendiri termasuk dalam blok (verifikasi jalur Merkle), tetapi tidak memiliki kemampuan verifikasi setingkat Full Node.
 - **Node Penambangan (Mining Node)**: Node yang melakukan perhitungan [PoW](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/) dan menghasilkan blok baru. Saat ini, "kolam penambangan (mining pool)" besar yang menyatukan perangkat keras khusus penambangan yang disebut ASIC (Application Specific Integrated Circuit) memainkan peran ini.
 
 ### Proses Propagasi Transaksi (Gossip Protocol)
@@ -299,7 +299,7 @@ Model pasokan mata uang disinflasi ini meniru penambangan emas, dan merupakan an
 
 ### Analisis Teori Permainan dari Serangan 51% (51% Attack)
 
-Ancaman terbesar terhadap blockchain adalah **Serangan 51% (51% Attack)**. Jika satu entitas jahat mengendalikan mayoritas (51% atau lebih) dari total daya komputasi jaringan (hashrate), hal-hal berikut menjadi mungkin:
+Ancaman terbesar terhadap [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/) adalah **Serangan 51% (51% Attack)**. Jika satu entitas jahat mengendalikan mayoritas (51% atau lebih) dari total daya komputasi jaringan (hashrate), hal-hal berikut menjadi mungkin:
 
 1. Membatalkan transaksi mereka sendiri di masa lalu (Pengeluaran ganda / Double-spending)
 2. Menolak menyetujui transaksi tertentu (Penyensoran)
@@ -311,7 +311,7 @@ Bahkan jika mereka menghabiskan biaya yang sangat besar (ratusan miliar yen untu
 
 Dalam artikel ini, kita telah membedah secara menyeluruh mekanisme matematis, teknis, dan ekonomi di balik Bitcoin dan aset kripto.
 
-Sepintas, teknologi blockchain mungkin terlihat seperti sekumpulan matematika dan kode yang rumit, namun esensinya tidak lain adalah **"sistem pembangunan konsensus manusia yang baru, yang tidak bergantung pada otoritas, dan mendasarkan kepercayaan pada matematika dan hukum fisika"**.
+Sepintas, teknologi [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/) mungkin terlihat seperti sekumpulan matematika dan kode yang rumit, namun esensinya tidak lain adalah **"sistem pembangunan konsensus manusia yang baru, yang tidak bergantung pada otoritas, dan mendasarkan kepercayaan pada matematika dan hukum fisika"**.
 
 Sistem keuangan yang biasa kita gunakan setiap hari telah runtuh berulang kali sepanjang sejarahnya yang panjang, dan setiap saat hanya ditambal dengan perbaikan sementara. Solusi yang disajikan oleh Satoshi Nakamoto sama sekali tidak sempurna. Ada banyak rintangan yang harus diatasi, seperti masalah skalabilitas, masalah lingkungan, serta regulasi dan kerangka hukum oleh negara.
 
@@ -319,7 +319,7 @@ Namun, konsep "sistem terdesentralisasi tanpa kepercayaan", setelah dilepaskan d
 
 ## Lampiran: Sumber Daya dan Referensi untuk Pembelajaran Lebih Lanjut
 
-Bagi mereka yang membaca artikel ini dan ingin mempelajari lebih dalam tentang teknologi blockchain dan teori kriptografi, berikut adalah beberapa sumber yang direkomendasikan.
+Bagi mereka yang membaca artikel ini dan ingin mempelajari lebih dalam tentang teknologi [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/) dan teori kriptografi, berikut adalah beberapa sumber yang direkomendasikan.
 
 ### Makalah Asli Wajib Baca (Whitepapers)
 - **Bitcoin: A Peer-to-Peer Electronic Cash System** (Satoshi Nakamoto, 2008)
@@ -336,4 +336,4 @@ Untuk benar-benar memahami blockchain, pengetahuan tentang keamanan informasi da
 > **Warning: Penafian Investasi**
 > Artikel ini dibuat untuk tujuan menjelaskan teknologi dasar aset kripto serta sejarah dan struktur matematisnya, dan tidak merekomendasikan atau meminta investasi dalam aset kripto mana pun. Harga aset kripto sangat fluktuatif, dan berinvestasi membawa risiko besar termasuk hilangnya pokok investasi.
 
-Eksplorasi teknis dari blockchain adalah perbatasan pengetahuan di mana ilmu komputer, ekonomi, dan sosiologi bersinggungan. Dengan membaca kode, menjalankan node sendiri, dan mencoba membuat transaksi di testnet, Anda akan dapat merasakan potensi sebenarnya dan batasan teknologi ini secara langsung.
+Eksplorasi teknis dari [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/) adalah perbatasan pengetahuan di mana ilmu komputer, ekonomi, dan sosiologi bersinggungan. Dengan membaca kode, menjalankan node sendiri, dan mencoba membuat transaksi di testnet, Anda akan dapat merasakan potensi sebenarnya dan batasan teknologi ini secara langsung.

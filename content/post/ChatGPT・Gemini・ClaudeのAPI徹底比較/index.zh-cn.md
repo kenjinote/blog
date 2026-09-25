@@ -11,11 +11,11 @@ tags: ["ChatGPT", "Gemini", "Claude", "API", "Comparison"]
 
 # ChatGPT・Gemini・Claude的API深度对比！应该选择哪一个？
 
-AI技术的演进令人瞩目，尤其是在大型语言模型（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/): Large Language Model）领域，OpenAI的ChatGPT（GPT系列）、Google的Gemini和Anthropic的Claude正在展开激烈的三足鼎立的霸权争夺。截至2026年，各家公司以几个月甚至几周为单位发布新模型和API功能，对于开发者和企业IT架构师来说，“应该将哪个API集成到产品中”这一问题，已成为左右项目成功与否的极其重要的决策。
+AI技术的演进令人瞩目，尤其是在[大型语言模型](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/): Large Language Model）领域，OpenAI的ChatGPT（GPT系列）、Google的Gemini和Anthropic的Claude正在展开激烈的三足鼎立的霸权争夺。截至2026年，各家公司以几个月甚至几周为单位发布新模型和API功能，对于开发者和企业IT架构师来说，“应该将哪个API集成到产品中”这一问题，已成为左右项目成功与否的极其重要的决策。
 
 本文将从开发者的视角，对这三大AI提供商的API进行深度对比和解读。内容不仅限于简单的规格罗列，还将涵盖架构设计、详细的计费结构、延迟（Latency）的数学分析、使用Python和Node.js的具体实现示例，以及提示词缓存（Prompt Caching）等最新的成本优化方法。
 
-旨在为读者提供一份完整的指南，帮助您为自己的用例选择最合适的LLM API，并构建可扩展且成本高效的AI应用程序。
+旨在为读者提供一份完整的指南，帮助您为自己的用例选择最合适的[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) API，并构建可扩展且成本高效的AI应用程序。
 
 ---
 
@@ -51,7 +51,7 @@ Anthropic是由前OpenAI成员创立的企业，采用了独特的“Constitutio
 
 ## 3. 架构深度剖析：API请求的幕后
 
-调用LLM的API时，后端究竟在进行怎样的处理？为了优化性能，我们必须了解这一架构。
+调用[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)的API时，后端究竟在进行怎样的处理？为了优化性能，我们必须了解这一架构。
 
 以下的Mermaid图表展示了从客户端发送API请求到以流式（Streaming）返回Token的全过程。
 

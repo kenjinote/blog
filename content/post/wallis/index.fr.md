@@ -16,7 +16,7 @@ tags:
 
 ## Introduction : Le génie du XVIIe siècle qui a symbolisé l'infini
 
-Le symbole de **l'infini** ( $\infty$ ) est quelque chose que nous rencontrons régulièrement. La première personne à introduire ce symbole magnifique et mystérieux dans le monde des mathématiques fut le mathématicien anglais du XVIIe siècle **[John Wallis](https://kenji.blog/fr/p/wallis/)** (1616–1703). Il est connu comme une figure ayant joué un rôle extrêmement important dans l'histoire des mathématiques, faisant le pont entre la géométrie analytique de René Descartes et le calcul d'[Isaac Newton](https://kenji.blog/fr/p/newton/).
+Le symbole de **l'infini** ( $\infty$ ) est quelque chose que nous rencontrons régulièrement. La première personne à introduire ce symbole magnifique et mystérieux dans le monde des mathématiques fut le mathématicien anglais du XVIIe siècle **[John Wallis](https://kenji.blog/fr/p/wallis/)** (1616–1703). Il est connu comme une figure ayant joué un rôle extrêmement important dans l'histoire des mathématiques, faisant le pont entre la géométrie analytique de [René Descartes](/fr/p/descartes/) et le calcul d'[Isaac Newton](https://kenji.blog/fr/p/newton/).
 
 L'Europe du XVIIe siècle était l'ère de la « Révolution scientifique », où des figures telles que Galileo Galilei, Johannes Kepler et [René Descartes](https://kenji.blog/fr/p/descartes/) jetaient les bases de la science et des mathématiques modernes. Dans ce contexte, Wallis a brisé les limites de la géométrie grecque classique et a ouvert une nouvelle frontière en mathématiques en introduisant des méthodes algébriques et analytiques dans la géométrie. Dans cet article, nous plongeons profondément dans la vie tumultueuse de [Wallis](https://kenji.blog/fr/p/wallis/), de son parcours unique en tant que cryptographe à ses réalisations mathématiques et physiques qui ont grandement influencé les générations futures.
 
@@ -127,7 +127,7 @@ Pendant ses années d'études à l'Université de Cambridge, Newton a lu attenti
 
 Si l'« Arithmetica Infinitorum » de [Wallis](https://kenji.blog/fr/p/wallis/) n'avait pas existé, la découverte du calcul par Newton aurait pu être considérablement retardée, ou elle aurait pu prendre une forme complètement différente.
 
-[Wallis](https://kenji.blog/fr/p/wallis/) lui-même faisait l'éloge du talent exceptionnel de Newton et l'exhortait vivement à publier ses résultats de recherche sur le calcul. Plus tard, lorsque la violente dispute sur la « priorité du calcul » a éclaté entre Newton et Gottfried Leibniz, [Wallis](https://kenji.blog/fr/p/wallis/) a pleinement soutenu Newton en tant que puissant défenseur du camp britannique.
+[Wallis](https://kenji.blog/fr/p/wallis/) lui-même faisait l'éloge du talent exceptionnel de Newton et l'exhortait vivement à publier ses résultats de recherche sur le calcul. Plus tard, lorsque la violente dispute sur la « priorité du calcul » a éclaté entre Newton et [Gottfried Leibniz](/fr/p/leibniz/), [Wallis](https://kenji.blog/fr/p/wallis/) a pleinement soutenu Newton en tant que puissant défenseur du camp britannique.
 
 ## Conclusion : Un grand pont dans l'histoire des mathématiques
 

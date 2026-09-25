@@ -56,7 +56,7 @@ A maior característica que diferencia Churchill de muitos outros políticos é 
 
 Nas eleições gerais de 1945, imediatamente após a vitória na guerra, o Partido Conservador liderado por ele sofreu uma derrota esmagadora e inesperada. No entanto, mesmo após deixar o cargo, sua influência internacional não diminuiu. Em um discurso em 1946 em Fulton, Missouri, EUA, ele apontou para os países da Europa Oriental sob influência soviética e disse: "De Stettin no Báltico a Trieste no Adriático, uma 'Cortina de Ferro (Iron Curtain)' desceu sobre o Continente". Essas palavras se tornaram o conceito definidor da nova ordem mundial da subsequente Guerra Fria.
 
-Mais tarde, ele retornou ao posto de Primeiro-Ministro em 1951 e suportou o fardo da política nacional até se aposentar por motivos de saúde em 1955. Quando faleceu em 1965 aos 90 anos, o Reino Unido despediu-se com um funeral de estado. Um funeral de estado para alguém fora da família real foi uma honra excepcional não vista desde Isaac Newton e Horatio Nelson.
+Mais tarde, ele retornou ao posto de Primeiro-Ministro em 1951 e suportou o fardo da política nacional até se aposentar por motivos de saúde em 1955. Quando faleceu em 1965 aos 90 anos, o Reino Unido despediu-se com um funeral de estado. Um funeral de estado para alguém fora da família real foi uma honra excepcional não vista desde [Isaac Newton](/pt/p/newton/) e Horatio Nelson.
 
 ## Conclusão: A Filosofia que Churchill Deixou para o Mundo Moderno
 

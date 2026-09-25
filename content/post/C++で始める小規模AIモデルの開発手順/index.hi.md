@@ -64,7 +64,7 @@ mmap का उपयोग करने से, फ़ाइल की सा�
 * **ज़ीरो-कॉपी (Zero-copy)**: डेटा सीधे डिस्क से कर्नेल के पेज कैश में पढ़ा जाता है, जिससे यूज़र स्पेस में कोई अतिरिक्त कॉपी नहीं होती।
 * **ऑन-डिमांड लोड (Page Fault)**: जब CPU वास्तव में उस मेमोरी एड्रेस तक पहुँचता है, तभी एक पेज फॉल्ट होता है, और केवल आवश्यक चंक (आमतौर पर 4KB) भौतिक मेमोरी में लोड होता है।
 
-Windows वातावरण में, POSIX के `mmap` के बजाय Win32 API के `CreateFileMapping` और `MapViewOfFile` का उपयोग किया जाता है।
+Windows वातावरण में, POSIX के `mmap` के बजाय [Win32 API](/hi/p/c-win32-api--winhttp%E3%81%A7slack%E3%81%AB%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8%E3%82%92%E6%8A%95%E7%A8%BF%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95webhook%E5%AF%BE%E5%BF%9C/) के `CreateFileMapping` और `MapViewOfFile` का उपयोग किया जाता है।
 
 ```mermaid
 sequenceDiagram
@@ -81,9 +81,9 @@ sequenceDiagram
 
 ### 3.2 GGUF प्रारूप की बाइनरी संरचना
 
-Hugging Face जैसे प्लेटफार्मों से `.safetensors` प्रारूप से परिवर्तित **GGUF (GPT-Generated Unified Format)** अनुमान के लिए अंतिम प्रारूप है। इसका एक सख्त बाइनरी लेआउट है जैसा कि नीचे दिया गया है:
+Hugging Face जैसे प्लेटफार्मों से `.safetensors` प्रारूप से परिवर्तित **[GGUF](/hi/p/llama-cpp-quantization-gguf/) (GPT-Generated Unified Format)** अनुमान के लिए अंतिम प्रारूप है। इसका एक सख्त बाइनरी लेआउट है जैसा कि नीचे दिया गया है:
 
-1. **मैजिक बाइट्स (Magic Bytes)**: `0x46554747` (GGUF)।
+1. **मैजिक बाइट्स (Magic Bytes)**: `0x46554747` ([GGUF](/hi/p/llama-cpp-quantization-gguf/))।
 2. **संस्करण (Version)**: प्रारूप का संस्करण क्रमांक।
 3. **टेंसर गणना और मेटाडेटा गणना**: टेंसर की संख्या और मेटाडेटा के की-वैल्यू पेयर की संख्या।
 4. **मेटाडेटा ([Key-Value](https://kenji.blog/hi/p/nosql-database-selection-kvs-document-graph-wide-column/) Pairs)**: स्ट्रिंग लेंथ प्रीफिक्स के साथ की (Key), और टाइप की गई वैल्यू।

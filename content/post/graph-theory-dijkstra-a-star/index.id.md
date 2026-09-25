@@ -20,7 +20,7 @@ tags:
 
 Dalam ilmu komputer modern, **Teori Graf** ([Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Theory) menyediakan kerangka matematis yang kuat untuk memodelkan struktur jaringan. Dalam kehidupan kita sehari-hari, teknologi untuk menghitung "jalur terpendek" digunakan dalam berbagai situasi, seperti navigasi mobil, panduan transfer kereta api, perutean internet, hingga pencarian jalur pada AI game.
 
-Artikel ini akan membahas secara komprehensif mulai dari definisi matematis teori graf yang menjadi dasar pencarian jalur ini, cara kerja algoritma pencarian perwakilan yaitu **Algoritma [Dijkstra](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)** (Dijkstra's Algorithm) dan pengembangannya yaitu **Algoritma A*** (A-Star Algorithm), bukti matematisnya, serta metode implementasi praktis menggunakan Python.
+Artikel ini akan membahas secara komprehensif mulai dari definisi matematis teori graf yang menjadi dasar pencarian jalur ini, cara kerja [algoritma pencarian](/id/p/search-algorithms-linear-binary-hash-table-principles/) perwakilan yaitu **Algoritma [Dijkstra](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)** (Dijkstra's Algorithm) dan pengembangannya yaitu **Algoritma A*** (A-Star Algorithm), bukti matematisnya, serta metode implementasi praktis menggunakan Python.
 
 ## 2. Dasar Teori Graf
 
@@ -293,7 +293,7 @@ Algoritma [Dijkstra](https://kenji.blog/id/p/tree-graph-data-structures-search-d
 3. **JPS** (Jump Point Search):
    Metode untuk lebih mempercepat pencarian A* pada peta grid yang seragam. Ini memanfaatkan simetri untuk melewati node yang tidak diperlukan.
 
-Algoritma pencarian jalur merupakan bidang yang menyatukan dengan indah keindahan matematis dari teori graf dan efisiensi algoritmik dari ilmu komputer.
+[Algoritma pencarian](/id/p/search-algorithms-linear-binary-hash-table-principles/) jalur merupakan bidang yang menyatukan dengan indah keindahan matematis dari teori graf dan efisiensi algoritmik dari ilmu komputer.
 
 ## 6. Kesimpulan
 

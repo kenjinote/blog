@@ -110,7 +110,7 @@ Di luar pencapaian matematikanya, Teiji [Takagi](https://kenji.blog/id/p/takagi-
 - **"Pelajaran tentang Teori Bilangan Dasar"**: Buku teks yang menjelaskan semuanya mulai dari dasar-dasar teori bilangan hingga hukum timbal balik Gauss.
 - **"Kisah Sejarah Matematika Modern"**: Buku sejarah yang dengan jelas menggambarkan kelompok matematikawan di abad ke-19. Buku ini menyampaikan drama perkembangan matematika.
 
-Benih yang ditaburnya diwariskan kepada matematikawan Jepang yang nantinya akan aktif di seluruh dunia, seperti [Kunihiko Kodaira](https://kenji.blog/id/p/kodaira-kunihiko/), Kiyoshi Ito, dan selanjutnya, Goro Shimura dan [Yutaka Taniyama](https://kenji.blog/id/p/taniyama-yutaka/).
+Benih yang ditaburnya diwariskan kepada matematikawan Jepang yang nantinya akan aktif di seluruh dunia, seperti [Kunihiko Kodaira](https://kenji.blog/id/p/kodaira-kunihiko/), Kiyoshi Ito, dan selanjutnya, [Goro Shimura](/id/p/shimura-goro/) dan [Yutaka Taniyama](https://kenji.blog/id/p/taniyama-yutaka/).
 
 ## Kesimpulan
 

@@ -181,4 +181,4 @@ $$
 
 The residue theorem is the epitome of mathematical elegance, masterfully connecting seemingly unrelated "complex poles" and "real integrals." To solve a real function problem, you temporarily jump into the broader world of the complex plane, examine only the properties (residues) of the "obstacles" (singularities), and when you return to the original world, the problem is brilliantly solved.
 
-This concept goes beyond mere calculation techniques and is applied in every scene of modern science and technology, such as the inverse Laplace transform, evaluating Feynman diagrams in quantum field theory, and filtering theory in signal processing. The world of complex analysis provides the ultimate vantage point for overlooking the world of real numbers.
+This concept goes beyond mere calculation techniques and is applied in every scene of modern science and technology, such as the inverse [Laplace transform](/en/p/laplace-transform/), evaluating Feynman diagrams in quantum field theory, and filtering theory in signal processing. The world of complex analysis provides the ultimate vantage point for overlooking the world of real numbers.

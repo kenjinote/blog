@@ -12,7 +12,7 @@ tags: ["连续统假设", "康托尔", "无穷", "数学"]
 
 在数学的世界中，“无穷”的概念自古以来就是哲学讨论的焦点。然而，直到19世纪末[格奥尔格·康托尔](https://kenji.blog/zh-cn/p/cantor/)（[Georg Cantor](https://kenji.blog/zh-cn/p/cantor/)）登场为止，并不存在严格比较无穷大小的数学方法。康托尔创立了集合论，证明了无穷也存在 **不同的大小** （基数、势）。
 
-考虑自然数集合 $\mathbb{N}$ 和实数集合 $\mathbb{R}$，根据康托尔的对角线论证，证明了实数集合比自然数集合“真正更大”。自然数的基数记为 $\aleph_0$（阿列夫零），实数的基数记为 $\mathfrak{c}$（连续统基数）或 $2^{\aleph_0}$。根据康托尔定理，$\aleph_0 < 2^{\aleph_0}$。
+考虑自然数集合 $\mathbb{N}$ 和实数集合 $\mathbb{R}$，根据[康托尔的对角线论证](/zh-cn/p/cantors-diagonal-argument/)，证明了实数集合比自然数集合“真正更大”。自然数的基数记为 $\aleph_0$（阿列夫零），实数的基数记为 $\mathfrak{c}$（连续统基数）或 $2^{\aleph_0}$。根据康托尔定理，$\aleph_0 < 2^{\aleph_0}$。
 
 此时康托尔产生了一个自然的问题：“是否存在一个集合，其基数位于自然数基数和实数基数的 **中间** ？”
 这就是后来震撼数学基础论的 **连续统假设** （[Continuum Hypothesis](https://kenji.blog/zh-cn/p/continuum-hypothesis/), CH）的开端。
@@ -43,7 +43,7 @@ $$ |\mathbb{N}| < |\mathcal{P}(\mathbb{N})| = |\mathbb{R}| $$
 
 ## 4. 集合论的公理化：ZFC公理系统
 
-为了证明连续统假设，首先需要严格定义什么是“集合”以及允许进行哪些操作。由恩斯特·策梅洛（Ernst Zermelo）和亚伯拉罕·弗兰克尔（Adolf Fraenkel）整理的 **ZFC公理系统** （包含选择公理的策梅洛-弗兰克尔集合论），成为了现代数学的标准基础。
+为了证明连续统假设，首先需要严格定义什么是“集合”以及允许进行哪些操作。由恩斯特·策梅洛（Ernst Zermelo）和亚伯拉罕·弗兰克尔（Adolf Fraenkel）整理的 **ZFC公理系统** （包含[选择公理](/zh-cn/p/axiom-of-choice-and-zorns-lemma/)的策梅洛-弗兰克尔集合论），成为了现代数学的标准基础。
 
 ZFC公理系统由以下9个公理（或公理模式）组成：
 1. 外延公理
@@ -54,7 +54,7 @@ ZFC公理系统由以下9个公理（或公理模式）组成：
 6. 分离公理（替换公理）
 7. 无穷公理
 8. 正则公理
-9. 选择公理 (Axiom of Choice)
+9. [选择公理](/zh-cn/p/axiom-of-choice-and-zorns-lemma/) (Axiom of Choice)
 
 利用这些公理，数学家们试图判定 CH 的真伪。
 

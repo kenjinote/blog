@@ -11,7 +11,7 @@ tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 
 # 시작하며: 왜 로컬 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)이 필요한가?
 
-대규모 언어 모델(LLM)의 등장으로 우리의 생활과 개발 방식은 극적인 변화를 맞이했습니다. ChatGPT, Claude, Gemini와 같은 클라우드 기반의 강력한 AI 서비스는 나날이 진화를 거듭하며 매우 고도화된 추론 능력을 제공하고 있습니다. 하지만 모든 유스케이스에서 클라우드형 LLM이 최적의 선택인 것은 아닙니다. 클라우드 LLM에는 다음과 같은 과제들이 존재합니다.
+[대규모 언어 모델](/ko/p/large-language-models-llm-transformer-prompt-engineering/)([LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 등장으로 우리의 생활과 개발 방식은 극적인 변화를 맞이했습니다. ChatGPT, Claude, [Gemini](/ko/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AE%EB%8C%80%EC%B2%98-%EB%B0%A9%EB%B2%95/)와 같은 클라우드 기반의 강력한 AI 서비스는 나날이 진화를 거듭하며 매우 고도화된 추론 능력을 제공하고 있습니다. 하지만 모든 유스케이스에서 클라우드형 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)이 최적의 선택인 것은 아닙니다. 클라우드 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)에는 다음과 같은 과제들이 존재합니다.
 
 1. **개인정보 보호 및 보안 문제**: 기밀 정보나 개인 정보를 포함한 데이터를 외부 서버로 전송하는 것은 기업 컴플라이언스나 보안 관점에서 허용되지 않는 경우가 많습니다.
 2. **비용의 불확실성**: API 이용 요금은 토큰 수에 의존하기 때문에, 대규모 데이터 처리나 빈번한 요청이 발생하는 시스템에서는 운영 비용이 한없이 높아질 위험이 있습니다.
@@ -20,19 +20,19 @@ tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 
 이러한 과제들을 해결할 수단으로 주목받고 있는 것이 바로 '로컬 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)'입니다. 자신의 하드웨어 위에서 모델을 구동함으로써, 데이터를 일절 외부로 전송하지 않고 월 사용료 걱정 없이 자유롭게 AI를 활용할 수 있습니다.
 
-본 기사에서는 로컬 LLM을 놀라울 정도로 쉽게 도입, 관리, API 연동할 수 있는 도구인 '**Ollama**'에 대해, 그 기초부터 내부 아키텍처, Python 및 Node.js를 사용한 고급 API 연동, 나아가 성능 튜닝을 위한 계산 공식에 이르기까지 철저하게 해설합니다.
+본 기사에서는 로컬 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 놀라울 정도로 쉽게 도입, 관리, API 연동할 수 있는 도구인 '**Ollama**'에 대해, 그 기초부터 내부 아키텍처, Python 및 Node.js를 사용한 고급 API 연동, 나아가 성능 튜닝을 위한 계산 공식에 이르기까지 철저하게 해설합니다.
 
 ---
 
 # Ollama란 무엇인가? 그 내부 아키텍처
 
-Ollama는 로컬 환경에서 오픈소스 대규모 언어 모델(Llama 3, Phi-3, Mistral, Gemma 등)을 쉽게 실행하고 관리하기 위한 플랫폼입니다. 그동안 로컬 LLM 환경을 구축하기 위해서는 Python 환경 설정, CUDA 툴킷 설치, PyTorch 의존성 해결, Hugging Face로부터의 거대한 모델 파일 다운로드 및 포맷 변환(Safetensors에서 GGUF로 등)과 같은 매우 번거로운 절차가 필요했습니다.
+Ollama는 로컬 환경에서 오픈소스 [대규모 언어 모델](/ko/p/large-language-models-llm-transformer-prompt-engineering/)(Llama 3, Phi-3, Mistral, Gemma 등)을 쉽게 실행하고 관리하기 위한 플랫폼입니다. 그동안 로컬 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/) 환경을 구축하기 위해서는 Python 환경 설정, CUDA 툴킷 설치, PyTorch 의존성 해결, Hugging Face로부터의 거대한 모델 파일 다운로드 및 포맷 변환(Safetensors에서 [GGUF](/ko/p/llama-cpp-quantization-gguf/)로 등)과 같은 매우 번거로운 절차가 필요했습니다.
 
 Ollama는 이러한 복잡성을 숨기고, [Docker](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)와 같은 사용 편의성으로 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 다룰 수 있게 해줍니다. 명령어 하나로 모델을 다운로드(`pull`)하고, 실행(`run`)하며, HTTP 서버로 구동할 수 있습니다.
 
 ## 핵심 기술: llama.cpp의 래퍼(Wrapper)
 
-Ollama의 추론 엔진 백엔드로 기능하는 것은 C/C++로 구현된 고속 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 추론 라이브러리인 '**llama.cpp**'입니다. llama.cpp는 Apple Silicon(Metal), NVIDIA GPU(CUDA), AMD GPU(ROCm), 심지어 CPU 전용 환경에서도 하드웨어의 성능을 최대한 끌어내어 모델을 실행하는 능력을 갖추고 있습니다.
+Ollama의 추론 엔진 백엔드로 기능하는 것은 C/C++로 구현된 고속 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 추론 라이브러리인 '**llama.cpp**'입니다. llama.cpp는 Apple Silicon(Metal), [NVIDIA](/ko/p/history-of-nvidia/) GPU(CUDA), AMD GPU(ROCm), 심지어 CPU 전용 환경에서도 하드웨어의 성능을 최대한 끌어내어 모델을 실행하는 능력을 갖추고 있습니다.
 
 Ollama는 llama.cpp를 내포하고 있으며, [Go](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 언어로 작성된 서버 프로세스가 [REST API](https://kenji.blog/ko/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)를 제공하고 백그라운드에서 llama.cpp의 추론 엔진을 호출하는 아키텍처를 채택하고 있습니다.
 
@@ -58,7 +58,7 @@ Ollama의 설치는 매우 간단합니다. 각 OS에 최적화된 바이너리�
 
 ## macOS / Windows
 
-공식 사이트(https://ollama.com/)에서 인스톨러를 다운로드하여 실행하기만 하면 됩니다. macOS 버전은 Apple Silicon의 Metal API를, Windows 버전은 NVIDIA GPU(CUDA)를 자동으로 인식하여 사용 가능한 경우 하드웨어 가속을 활성화합니다.
+공식 사이트(https://ollama.com/)에서 인스톨러를 다운로드하여 실행하기만 하면 됩니다. macOS 버전은 Apple Silicon의 Metal API를, Windows 버전은 [NVIDIA](/ko/p/history-of-nvidia/) GPU(CUDA)를 자동으로 인식하여 사용 가능한 경우 하드웨어 가속을 활성화합니다.
 
 ## Linux
 
@@ -77,7 +77,7 @@ ollama --version
 
 ## [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/)를 사용한 실행
 
-기존 환경을 어지럽히고 싶지 않거나, 컨테이너 기반 인프라에 통합하고 싶은 경우에는 공식 Docker 이미지를 사용하는 것도 가능합니다. GPU를 이용할 경우에는 NVIDIA [Container](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/) Toolkit의 설치가 필요합니다.
+기존 환경을 어지럽히고 싶지 않거나, 컨테이너 기반 인프라에 통합하고 싶은 경우에는 공식 Docker 이미지를 사용하는 것도 가능합니다. GPU를 이용할 경우에는 [NVIDIA](/ko/p/history-of-nvidia/) [Container](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/) Toolkit의 설치가 필요합니다.
 
 ```bash
 # CPU만으로 실행할 경우
@@ -103,7 +103,7 @@ Ollama의 가장 큰 매력은 모델 관리가 매우 직관적이라는 점입
 ollama run llama3.1
 ```
 
-위 명령어를 실행하면 Meta의 최신 모델인 Llama 3.1(8B 파라미터 버전)이 구동됩니다. 프롬프트에 메시지를 입력하면 모델의 답변이 스트리밍으로 표시됩니다. 종료하려면 `/bye` 또는 `Ctrl+D`를 입력합니다.
+위 명령어를 실행하면 [Meta](/ko/p/history-of-meta-facebook/)의 최신 모델인 Llama 3.1(8B 파라미터 버전)이 구동됩니다. 프롬프트에 메시지를 입력하면 모델의 답변이 스트리밍으로 표시됩니다. 종료하려면 `/bye` 또는 `Ctrl+D`를 입력합니다.
 
 ## 2. 모델 다운로드 (`pull`)
 
@@ -120,7 +120,7 @@ Ollama의 모델 라이브러리에서는 `모델명:태그` 형식으로 버전
 
 여기서 잠시 양자화에 대해 짚고 넘어가겠습니다. 일반적인 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)은 1개의 가중치 파라미터를 16비트 부동소수점(FP16) 등으로 유지합니다. 80억(8B) 파라미터 모델의 경우 가중치만으로 약 16GB의 VRAM을 소비하게 됩니다. 이를 4비트(Q4)나 8비트(Q8) 정수형으로 압축하는 기술이 양자화입니다.
 
-양자화를 통해 모델의 정확도 저하를 최소화하면서 필요한 메모리 용량과 메모리 대역폭을 극적으로 줄일 수 있습니다. Ollama에서 배포되는 모델은 기본적으로 최적의 양자화(대부분 4비트)가 적용된 GGUF 포맷으로 되어 있습니다.
+양자화를 통해 모델의 정확도 저하를 최소화하면서 필요한 메모리 용량과 메모리 대역폭을 극적으로 줄일 수 있습니다. Ollama에서 배포되는 모델은 기본적으로 최적의 양자화(대부분 4비트)가 적용된 [GGUF](/ko/p/llama-cpp-quantization-gguf/) 포맷으로 되어 있습니다.
 
 ## 3. 모델 목록 표시 (`list`)
 
@@ -425,7 +425,7 @@ app.listen(3000, () => {
 
 ## 토큰 생성 속도 계산 모델
 
-사용자 경험과 직결되는 LLM의 응답 시간은 크게 '**Time To First Token (TTFT)**'과 '**Time Per Output Token (TPOT)**'으로 분해할 수 있습니다.
+사용자 경험과 직결되는 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 응답 시간은 크게 '**Time To First Token (TTFT)**'과 '**Time Per Output Token (TPOT)**'으로 분해할 수 있습니다.
 
 전체 생성 시간 $T_{total}$은 생성되는 토큰 수를 $N$이라고 할 때, 다음과 같이 공식화됩니다.
 
@@ -495,7 +495,7 @@ Python이나 셸 스크립트에 Ollama의 API 요청을 통합하여, 로그의
 
 Ollama의 등장으로 로컬 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 도입 장벽은 극적으로 낮아졌습니다. Docker-layers/) 컨테이너를 조작하는 듯한 단순한 명령어 체계와 외부 애플리케이션에서 쉽게 이용할 수 있는 [REST API](https://kenji.blog/ko/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)의 조합은 로컬 AI 개발에 있어 현재의 데팩토 스탠더드(사실상의 표준)라고 해도 과언이 아닙니다.
 
-클라우드 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 비용이나 보안 제약으로 고민하고 있는 개발자라면, 꼭 본 기사에서 소개한 절차를 참고하여 Ollama를 이용한 로컬 LLM 환경을 구축하고 자신의 애플리케이션에 통합해 보시기 바랍니다. AI가 가진 가능성을 더욱 자유롭고 가깝게 느낄 수 있을 것입니다.
+클라우드 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 비용이나 보안 제약으로 고민하고 있는 개발자라면, 꼭 본 기사에서 소개한 절차를 참고하여 Ollama를 이용한 로컬 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/) 환경을 구축하고 자신의 애플리케이션에 통합해 보시기 바랍니다. AI가 가진 가능성을 더욱 자유롭고 가깝게 느낄 수 있을 것입니다.
 
 
 

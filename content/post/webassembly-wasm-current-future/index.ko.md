@@ -93,9 +93,9 @@ WebAssembly는  **스택 머신**  아키텍처를 채택하고 있습니다. �
 
 ## 2.3 메모리 모델 (리니어 메모리)
 
-C나 [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)에서는 포인터를 사용한 메모리 조작이 빈번하게 발생합니다. WebAssembly는 이를 구현하기 위해  **리니어 메모리 (Linear Memory)**  라는 개념을 채택하고 있습니다.
+C나 [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)에서는 [포인터](/ko/p/c-language-pointers-memory-management-stack-heap/)를 사용한 메모리 조작이 빈번하게 발생합니다. WebAssembly는 이를 구현하기 위해  **리니어 메모리 (Linear Memory)**  라는 개념을 채택하고 있습니다.
 
-리니어 메모리는 WebAssembly 인스턴스에서 접근할 수 있는 연속된 바이트 배열입니다. JavaScript에서는 `ArrayBuffer` 또는 `SharedArrayBuffer` 로 보입니다. Wasm 내의 포인터는 단순한 이 배열의 인덱스(정수 값)에 불과합니다.
+리니어 메모리는 WebAssembly 인스턴스에서 접근할 수 있는 연속된 바이트 배열입니다. JavaScript에서는 `ArrayBuffer` 또는 `SharedArrayBuffer` 로 보입니다. Wasm 내의 [포인터](/ko/p/c-language-pointers-memory-management-stack-heap/)는 단순한 이 배열의 인덱스(정수 값)에 불과합니다.
 
 ```mermaid
 flowchart LR
@@ -167,7 +167,7 @@ pub fn greet(name: &str) {
 ## 4.1 벤치마크：피보나치 수열
 
 단순한 피보나치 수열 계산으로 JavaScript와 Rust(Wasm)의 속도를 비교해 봅시다.
-수학적으로는 다음의 재귀식으로 표현됩니다. 계산 복잡도는 지수 함수적인 `$ O(2^n) $` 이 되며, CPU를 많이 소모합니다.
+수학적으로는 다음의 재귀식으로 표현됩니다. 계산 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)는 지수 함수적인 `$ O(2^n) $` 이 되며, CPU를 많이 소모합니다.
 
 $$
 F(n) =
@@ -261,7 +261,7 @@ Wasm은 컨테이너보다 훨씬 가볍고 시작이 빠르며(수 밀리초), 
 현재 WebAssembly의 가장 큰 과제는 서로 다른 언어로 작성된 Wasm 모듈끼리 연동시키는 것이 어렵다는 점입니다(문자열이나 복잡한 데이터 타입의 메모리 표현이 언어에 따라 다르기 때문).
 
 이를 해결하는 것이  **WebAssembly Component Model**  입니다.
-컴포넌트 모델이 실현되면 "[Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)로 작성된 Wasm 모듈"을 "Python으로 작성된 Wasm 모듈"에서 매끄럽게 함수 호출하는 등의 일이 가능해집니다. 이는 플랫폼과 언어에 의존하지 않는 차세대 마이크로서비스 아키텍처의 기반이 될 가능성을 품고 있습니다.
+컴포넌트 모델이 실현되면 "[Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)로 작성된 Wasm 모듈"을 "Python으로 작성된 Wasm 모듈"에서 매끄럽게 함수 호출하는 등의 일이 가능해집니다. 이는 플랫폼과 언어에 의존하지 않는 차세대 [마이크로서비스 아키텍처](/ko/p/microservices-architecture-bff-api-gateway/)의 기반이 될 가능성을 품고 있습니다.
 
 ## 8.2 플러그인 시스템으로서의 Wasm
 이미 Figma나 EnvoyProxy, Microsoft Flight Simulator 등 많은 소프트웨어가 독자적인 플러그인 시스템으로 WebAssembly를 채택하고 있습니다. 사용자가 작성한 서드파티 코드를 안전하고 빠르게 본체 애플리케이션 내에서 실행할 수 있기 때문입니다.

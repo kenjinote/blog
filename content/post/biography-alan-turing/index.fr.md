@@ -12,7 +12,7 @@ image: "eyecatch.jpg"
 
 Les smartphones, les ordinateurs personnels, et l'intelligence artificielle (IA) en développement rapide ces dernières années que nous utilisons aujourd'hui comme une évidence. Le fondement théorique à la base de toutes ces technologies a été construit par un seul mathématicien britannique. Son nom est Alan Mathison Turing.
 
-Il est appelé « le père de l'informatique » et « le père de l'intelligence artificielle », et il est aussi un héros qui a sauvé des millions de vies pendant la Seconde Guerre mondiale grâce au décryptage. Cependant, sa vie n'a pas du tout été un long fleuve tranquille, et s'est tragiquement terminée en raison des préjugés de la société. Dans cet article, nous explorerons sa vie en détail extrême, de son enfance à ses idées révolutionnaires qu'il a apportées au monde, jusqu'à sa fin tragique.
+Il est appelé « [le père de l'informatique](/fr/p/biography-donald-knuth/) » et « le père de l'intelligence artificielle », et il est aussi un héros qui a sauvé des millions de vies pendant la Seconde Guerre mondiale grâce au décryptage. Cependant, sa vie n'a pas du tout été un long fleuve tranquille, et s'est tragiquement terminée en raison des préjugés de la société. Dans cet article, nous explorerons sa vie en détail extrême, de son enfance à ses idées révolutionnaires qu'il a apportées au monde, jusqu'à sa fin tragique.
 
 ## 1. Enfance et années de formation : l'émergence d'un talent singulier
 
@@ -32,13 +32,13 @@ Cependant, ce temps de bonheur fut de courte durée. En février 1930, Morcom es
 
 ## 2. L'Université de Cambridge et la naissance de la « machine de Turing »
 
-En 1931, Turing est entré au King's College de l'Université de Cambridge et s'est plongé sérieusement dans la recherche en mathématiques et en logique. C'est là qu'il a été exposé aux idées de scientifiques de premier plan tels que John von Neumann et Max Born, élargissant grandement ses horizons académiques.
+En 1931, Turing est entré au King's College de l'Université de Cambridge et s'est plongé sérieusement dans la recherche en mathématiques et en logique. C'est là qu'il a été exposé aux idées de scientifiques de premier plan tels que [John von Neumann](/fr/p/von-neumann/) et Max Born, élargissant grandement ses horizons académiques.
 
 Et en 1936, à l'âge de 24 ans, il a publié l'article monumental « Sur les nombres calculables, avec une application au problème de la décision (On Computable Numbers, with an Application to the Entscheidungsproblem) », qui brille brillamment dans l'histoire des sciences du 20e siècle.
 
 ### Le concept de la machine de Turing
 
-Dans cet article, Turing a donné une preuve « négative » au « problème de la décision (Entscheidungsproblem : toute proposition mathématique peut-elle être jugée vraie ou fausse par un algorithme ?) » soulevé par le mathématicien David Hilbert. Cependant, la véritable valeur de cet article résidait dans le modèle d'expérience de pensée de la « machine de Turing (Turing Machine) » qu'il a conçu au cours du processus de preuve.
+Dans cet article, Turing a donné une preuve « négative » au « problème de la décision (Entscheidungsproblem : toute proposition mathématique peut-elle être jugée vraie ou fausse par un algorithme ?) » soulevé par le mathématicien [David Hilbert](/fr/p/hilbert/). Cependant, la véritable valeur de cet article résidait dans le modèle d'expérience de pensée de la « machine de Turing (Turing Machine) » qu'il a conçu au cours du processus de preuve.
 
 La machine de Turing est une machine virtuelle extrêmement simple composée d'un ruban de longueur infinie, d'une tête qui lit et écrit sur le ruban, d'un registre qui mémorise l'état interne et d'un tableau de règles qui détermine les actions.
 

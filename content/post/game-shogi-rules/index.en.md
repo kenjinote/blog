@@ -73,7 +73,7 @@ graph TD
 
 - **Characteristics**: It is a tactic where "softness overcomes hardness", intercepting the opponent's attack with a "counter" using the Rook and Bishop swung to the left. The King escapes to the right side where the Rook used to be to solidify the defense. It requires a sense of waiting (seeing what the opponent does) and is extremely popular among amateurs.
 - **Typical Tactics**:
-  - **Shikenbisha (Fourth File Rook)**: Swinging the Rook to the fourth file from the left. It is the most balanced tactic and recommended for beginners.
+  - **Shikenbisha (Fourth File Rook)**: Swinging the Rook to the fourth file from the left. It is the most balanced tactic and recommended [for beginners](/en/p/leather-goods%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/).
   - **Nakabisha (Central Rook)**: Moving the Rook to the very center of the board (5th file), an aggressive Furibisha aiming for a central breakthrough.
 - **Typical Castles**:
   - **Mino Castle**: A beautiful castle exclusively for Furibisha that can be built quickly with few moves, yet is extremely solid against sideways attacks.

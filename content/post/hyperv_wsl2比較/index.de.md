@@ -13,7 +13,7 @@ tags: ["Hyper-V", "WSL2", "Linux", "Windows"]
 
 Die Virtualisierungstechnologie auf der Windows-Plattform hat sich in den letzten Jahrzehnten dramatisch entwickelt. Früher waren Type-2-Hypervisoren von Drittanbietern (wie VMware Workstation und VirtualBox) der Mainstream, aber seit Microsoft "Hyper-V" in Windows Server 2008 eingeführt hat, sind Type-1-Hypervisoren auch in Desktop-Betriebssysteme wie Windows 10/11 integriert.
 
-In den letzten Jahren hat "WSL2 (Windows Subsystem for Linux 2)" bei Entwicklern die meiste Aufmerksamkeit erregt. Während WSL1 auf die Übersetzung von Systemaufrufen (Translation) angewiesen war, nutzt WSL2 eine "Lightweight Utility VM", die Hyper-V-Technologie anwendet, um vollständige Linux-Kompatibilität und dramatische Leistungsverbesserungen zu erzielen.
+In den letzten Jahren hat "WSL2 ([Windows Subsystem for Linux](/de/p/wsl2-ultimate-development-setup-guide/) 2)" bei Entwicklern die meiste Aufmerksamkeit erregt. Während WSL1 auf die Übersetzung von Systemaufrufen (Translation) angewiesen war, nutzt WSL2 eine "Lightweight Utility VM", die Hyper-V-Technologie anwendet, um vollständige Linux-Kompatibilität und dramatische Leistungsverbesserungen zu erzielen.
 
 In diesem Artikel werden wir die Architektur, Leistung (CPU, Speicher, Festplatten-I/O), Netzwerkkonfiguration und optimale Anwendungsfälle dieser beiden leistungsstarken Virtualisierungstechnologien – der voll ausgestatteten "Hyper-V" und der auf Entwicklererfahrung fokussierten "WSL2" – mit tiefgreifenden technischen Details ausführlich vergleichen und erklären.
 

@@ -24,7 +24,7 @@ Quem os comprou por apenas 50 milhões de dólares em 2005, quando enfrentavam d
 
 ## 2. 2007, a Chegada do iPhone e a Reconstrução do Projeto
 
-Em janeiro de 2007, Steve Jobs anunciou o primeiro iPhone.
+Em janeiro de 2007, [Steve Jobs](/pt/p/biography-steve-jobs/) anunciou o primeiro iPhone.
 O protótipo "Sooner", desenvolvido pela equipe do Android na época, tinha um design antigo com um teclado físico semelhante ao do BlackBerry. Diz-se que, ao ver a inovadora tela multitoque do iPhone, Andy Rubin, enquanto ouvia a apresentação em seu carro, percebeu: "**O que estávamos construindo era lixo. Temos que refazer tudo**".
 
 Eles descartaram completamente o desenvolvimento e mudaram drasticamente o rumo para o desenvolvimento do "Dream", um novo sistema operacional otimizado para telas sensíveis ao toque.
@@ -48,7 +48,7 @@ Em particular, o "**Android 4.0 (Ice Cream Sandwich)**", lançado em 2011, é co
 
 Entre os fabricantes aos quais o Android foi oferecido gratuitamente, a que obteve mais sucesso foi a sul-coreana **Samsung**. A série "Galaxy S" reinou como a principal rival do iPhone e sempre liderou as tendências de hardware, com o aumento do tamanho da tela (phablets) e a adoção de telas OLED.
 
-No entanto, a Apple não poderia assistir em silêncio à rápida expansão do Android. O falecido Steve Jobs ficou furioso, dizendo: "O Android é um roubo do iPhone. Estou disposto a iniciar uma guerra termonuclear para destruir este produto", o que desencadeou batalhas de patentes caóticas em todo o mundo (a guerra de patentes de smartphones). Essa disputa durou vários anos, mas acabou terminando em um acordo quando ambas as partes se tornaram grandes demais.
+No entanto, a Apple não poderia assistir em silêncio à rápida expansão do Android. O falecido [Steve Jobs](/pt/p/biography-steve-jobs/) ficou furioso, dizendo: "O Android é um roubo do iPhone. Estou disposto a iniciar uma guerra termonuclear para destruir este produto", o que desencadeou batalhas de patentes caóticas em todo o mundo (a guerra de patentes de smartphones). Essa disputa durou vários anos, mas acabou terminando em um acordo quando ambas as partes se tornaram grandes demais.
 
 ## 6. Conclusão: Os Dois Gigantes do Ecossistema Móvel
 

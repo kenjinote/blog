@@ -10,7 +10,7 @@ image: "eyecatch.jpg"
 
 # 1. Introduction: The Unprecedented Challenge of a Lunar Landing
 
-On July 20, 1969, Apollo 11 landed on the Sea of Tranquility, and Commander Neil Armstrong became the first human to step onto the lunar surface. This historic achievement was the result of hardware advancements in rocket engineering, materials science, and celestial mechanics, but it was also a triumph of highly innovative "software" for its time.
+On July 20, 1969, Apollo 11 landed on the Sea of Tranquility, and Commander [Neil Armstrong](/en/p/biography-neil-armstrong/) became the first human to step onto the lunar surface. This historic achievement was the result of hardware advancements in rocket engineering, materials science, and celestial mechanics, but it was also a triumph of highly innovative "software" for its time.
 
 At the center of this software development was **Margaret Hamilton**, who directed the software development for the Apollo Guidance Computer (AGC) at MIT's (Massachusetts Institute of Technology) Instrumentation Laboratory. At a time when computers were massive blocks of vacuum tubes taking up entire rooms, miniaturization using transistors had only just begun. Memory capacity was miniscule, and processing speeds were incomparably slower than modern smartphones.
 

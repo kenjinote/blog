@@ -17,7 +17,7 @@ In recent years, the technological evolution of [Large Language Models](https://
 
 Meeting this demand are "Local LLMs (Open Source LLMs)," which you can download and run directly on your own PC or in-house servers. Until around 2023, it was difficult to achieve practical accuracy locally, but with the evolution of model architectures and the development of quantization technologies, it is now possible to run very high-performance LLMs smoothly even on consumer-grade GPUs (such as NVIDIA RTX 3090 / 4090 or Mac's Apple Silicon).
 
-In this article, we have picked out the "Top 5 Recommended Models" that are highly rated as of 2026 from among numerous open source LLMs. We will thoroughly compare and explain each model's architectural features, parameter counts, memory requirements based on GGUF quantization, and specific use cases from an extremely detailed and technical perspective.
+In this article, we have picked out the "Top 5 Recommended Models" that are highly rated as of 2026 from among numerous open source LLMs. We will thoroughly compare and explain each model's architectural features, parameter counts, memory requirements based on [GGUF](/en/p/llama-cpp-quantization-gguf/) quantization, and specific use cases from an extremely detailed and technical perspective.
 
 ---
 
@@ -62,7 +62,7 @@ Furthermore, considering the KV cache, nearly 18GB to 20GB of VRAM will be requi
 
 This is where "Quantization" comes in. It is a technology that drastically reduces the required memory while minimizing model performance degradation by dropping the parameter precision from FP16 to 8-bit, 4-bit, or in extreme cases, 2-bit.
 
-The most widespread format today is **GGUF (GPT-Generated Unified Format)**, devised by Georgi Gerganov (the developer of llama.cpp). GGUF is a binary format for efficient inference on both CPUs and GPUs, and it is particularly characterized by its excellent compatibility with Mac's (Apple Silicon) Unified Memory architecture.
+The most widespread format today is **[GGUF](/en/p/llama-cpp-quantization-gguf/) (GPT-Generated Unified Format)**, devised by Georgi Gerganov (the developer of llama.cpp). [GGUF](/en/p/llama-cpp-quantization-gguf/) is a binary format for efficient inference on both CPUs and GPUs, and it is particularly characterized by its excellent compatibility with Mac's (Apple Silicon) Unified Memory architecture.
 
 The memory calculation when quantizing an 8B model to 4-bit (e.g., Q4_K_M) is as follows:
 
@@ -108,7 +108,7 @@ graph TD
 - **Llama 3 8B**: 8 billion parameters. Runs on about 5GB of memory with 4-bit quantization. Responses are extremely fast, making it ideal as a personal assistant on a PC or as the core of a local RAG (Retrieval-Augmented Generation) system.
 - **Llama 3 70B**: 70 billion parameters. Requires about 40GB of VRAM (or Apple Silicon's Unified Memory) with 4-bit quantization. It possesses capabilities rivaling the cloud's GPT-4, demonstrating its power in advanced reasoning, complex coding, data analysis, and more.
 
-Llama 3 boasts the strongest community support, and its strength lies in the immediate availability of all quantization formats, including GGUF, AWQ, and EXL2.
+Llama 3 boasts the strongest community support, and its strength lies in the immediate availability of all quantization formats, including [GGUF](/en/p/llama-cpp-quantization-gguf/), AWQ, and EXL2.
 
 ---
 
@@ -144,7 +144,7 @@ The greatest advantage of this architecture is that "while the total number of p
 
 ## 3. Gemma 2 (Google)
 
-The "Gemma" series represents open models developed by Google utilizing the technology from their state-of-the-art "Gemini" models. As the second generation, Gemma 2 underwent major architectural revisions.
+The "Gemma" series represents open models developed by Google utilizing the technology from their state-of-the-art "[Gemini](/en/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEworkaround/)" models. As the second generation, Gemma 2 underwent major architectural revisions.
 
 ### Unique Architectural Design
 
@@ -191,7 +191,7 @@ The Phi series was born from the paradigm "Textbook is all you need" advocated b
 ### Revolution of SLMs (Small Language Models)
 
 While recent [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) development has been dominated by the brute-force approach of "just increasing parameter counts and data volume", Microsoft proved that "by maximizing the quality of data fed to the model (high-quality textbook data and synthetic data), even a small number of parameters can possess GPT-3.5 class intelligence".
-Phi-3 is referred to as an **SLM (Small Language Model)** rather than an LLM (Large Language Model).
+Phi-3 is referred to as an **SLM (Small Language Model)** rather than an LLM ([Large Language Model](/en/p/large-language-models-llm-transformer-prompt-engineering/)).
 
 ```mermaid
 graph TD

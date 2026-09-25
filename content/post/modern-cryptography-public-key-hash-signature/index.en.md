@@ -56,7 +56,7 @@ graph TD
 
 ## 2. Mathematical Background of Public-key Cryptography
 
-The security of public-key cryptography relies on a **one-way function**, meaning "a certain calculation is easy, but its reverse is extremely difficult," and a **trapdoor one-way function**, which allows the reverse calculation if you know specific information (a trapdoor). Here we will delve into the representative RSA cryptography and Elliptic Curve Cryptography (ECC).
+The security of public-key cryptography relies on a **one-way function**, meaning "a certain calculation is easy, but its reverse is extremely difficult," and a **trapdoor one-way function**, which allows the reverse calculation if you know specific information (a trapdoor). Here we will delve into the representative RSA cryptography and [Elliptic Curve Cryptography (ECC)](/en/p/elliptic-curve-cryptography-math-cpp/).
 
 ### 2.1. Mechanism of RSA Cryptography
 
@@ -73,7 +73,7 @@ RSA key generation is performed in the following steps.
 4. Choose an integer $e$ such that $1 < e < \phi(N)$ and $e$ is coprime to $\phi(N)$. (Usually, $e = 65537$ is commonly used)
 5. Calculate $d$ that satisfies the following congruence:
    $ e \times d \equiv 1 \pmod{\phi(N)} $
-   This can be calculated using the extended Euclidean algorithm.
+   This can be calculated using the extended [Euclidean algorithm](/en/p/euclidean-algorithm/).
 
 Here, $(N, e)$ is the **public key** and $d$ is the **private key** ($p$ and $q$ are either discarded or strictly kept secret).
 
@@ -96,7 +96,7 @@ RSA cryptography is secure, but to have sufficient strength, the key length must
 
 #### 2.2.1. Elliptic Curves and the Discrete Logarithm Problem
 
-The security of ECC depends on the difficulty of the **Elliptic Curve Discrete Logarithm Problem** (ECDLP).
+The security of [ECC](/en/p/elliptic-curve-cryptography-math-cpp/) depends on the difficulty of the **Elliptic Curve Discrete Logarithm Problem** (ECDLP).
 An elliptic curve over a finite field $\mathbb{F}_p$ used in cryptography is generally represented in Weierstrass normal form:
 
 $ y^2 \equiv x^3 + ax + b \pmod{p} $
@@ -109,7 +109,7 @@ Let a point obtained by adding a base point $G$ together $k$ times be $P$:
 $ P = k \times G $
 
 Here, given $G$ and $P$, the problem of finding the scalar value $k$ is called the **elliptic curve discrete logarithm problem**. If $k$ is sufficiently large, reverse-calculating it is extremely difficult.
-In ECC, $k$ becomes the **private key**, and $P$ becomes the **public key**.
+In [ECC](/en/p/elliptic-curve-cryptography-math-cpp/), $k$ becomes the **private key**, and $P$ becomes the **public key**.
 
 ### 2.3. Public-key Cryptography Implementation Example in Python
 
@@ -337,7 +337,7 @@ Even when accessing "https://" sites in a browser, this PKI mechanism is operati
 Modern digital society is built upon the exquisite combination of the **cryptographic technologies** explained this time.
 
 - Fast data encryption via **symmetric-key cryptography**
-- Secure key exchange and asymmetry realization via **public-key cryptography** (RSA and ECC)
+- Secure key exchange and asymmetry realization via **public-key cryptography** (RSA and [ECC](/en/p/elliptic-curve-cryptography-math-cpp/))
 - Data fingerprint extraction via **hash functions** (SHA-2/3)
 - Proof of integrity and authentication via **digital signatures**
 - Guaranteeing the authenticity of public keys via **PKI and CAs**

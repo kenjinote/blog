@@ -34,7 +34,7 @@ Git utiliza principalmente 3 objetos para representar el estado del repositorio.
 1. **Blob (Binary Large Object)**
    Es el objeto que guarda el contenido del archivo en sí. La información como el nombre del archivo y los permisos no se incluyen aquí. Es puramente una secuencia de bytes comprimida con zlib y se identifica mediante un valor hash SHA-1 (un número hexadecimal de 40 caracteres).
 2. **[Tree](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
-   Es el objeto que representa la estructura del directorio. Un objeto Tree contiene punteros (valores hash SHA-1) a otros objetos Tree (subdirectorios) y objetos Blob (archivos), así como sus nombres de archivo y permisos de acceso. Desempeña un papel similar a un directorio de UNIX.
+   Es el objeto que representa la estructura del directorio. Un objeto Tree contiene [punteros](/es/p/c-language-pointers-memory-management-stack-heap/) (valores hash SHA-1) a otros objetos Tree (subdirectorios) y objetos Blob (archivos), así como sus nombres de archivo y permisos de acceso. Desempeña un papel similar a un directorio de UNIX.
 3. **Commit**
    Contiene un puntero al objeto Tree de nivel superior de todo el repositorio en un momento dado, metadatos (autor, fecha y hora del commit, mensaje del commit) y un puntero al commit inmediatamente anterior (commit padre).
 
@@ -66,7 +66,7 @@ Cuando Git detecta un conflicto o muestra la diferencia entre archivos, se está
 
 ### 3.1 Algoritmo Diff de Myers
 
-El algoritmo de detección de diferencias predeterminado de Git es un algoritmo ideado por Eugene W. Myers. Cuando hay dos archivos de texto $A$ y $B$, el problema de encontrar la "secuencia mínima de ediciones (inserciones y eliminaciones)" para convertir $A$ en $B$ se puede modelar como un problema de la ruta más corta en la teoría de grafos.
+El algoritmo de detección de diferencias predeterminado de Git es un algoritmo ideado por Eugene W. Myers. Cuando hay dos archivos de texto $A$ y $B$, el problema de encontrar la "secuencia mínima de ediciones (inserciones y eliminaciones)" para convertir $A$ en $B$ se puede modelar como un problema de la ruta más corta en la [teoría de grafos](/es/p/graph-theory-dijkstra-a-star/).
 
 Sean las longitudes de las cadenas $N$ y $M$ respectivamente, y la suma sea $V = N + M$. En el algoritmo de Myers, se busca la distancia de edición (Edit Distance) $D$. La complejidad temporal de este algoritmo se expresa con la siguiente fórmula:
 
@@ -86,7 +86,7 @@ Cuando sientas que la resolución de un conflicto es difícil, una opción es us
 
 ### 3.3 SHA-1 y la probabilidad de colisiones
 
-Git gestiona todos los objetos con valores hash SHA-1. El tamaño del espacio hash es $2^{160}$. Si aproximamos la probabilidad de colisión de hash $p$ (que contenidos diferentes tengan el mismo valor hash) usando la paradoja del cumpleaños (Birthday Paradox), el número de objetos $k$ necesarios para que la probabilidad de colisión sea del 50% es el siguiente:
+Git gestiona todos los objetos con valores hash SHA-1. El tamaño del espacio hash es $2^{160}$. Si aproximamos la probabilidad de colisión de hash $p$ (que contenidos diferentes tengan el mismo valor hash) usando la [paradoja del cumpleaños](/es/p/birthday-paradox/) (Birthday Paradox), el número de objetos $k$ necesarios para que la probabilidad de colisión sea del 50% es el siguiente:
 
 $$ k \approx \sqrt{2 \ln(2)} \cdot 2^{80} \approx 1.2 \times 2^{80} $$
 
@@ -101,7 +101,7 @@ Sin darte cuenta de que estabas trabajando en la rama `main`, escribiste mucho c
 
 ### Solución: `git reset` y crear una rama
 
-En Git, los commits son objetos independientes y las ramas son solo punteros. Por lo tanto, puedes resolver esto al instante con la operación de "crear una nueva rama y luego retroceder el puntero de la rama actual".
+En Git, los commits son objetos independientes y las ramas son solo [punteros](/es/p/c-language-pointers-memory-management-stack-heap/). Por lo tanto, puedes resolver esto al instante con la operación de "crear una nueva rama y luego retroceder el puntero de la rama actual".
 
 ```bash
 # 1. Crear una nueva rama que apunte al commit actual (el commit hecho por error)
@@ -117,7 +117,7 @@ $ git checkout feature/login
 
 ### Ilustración: ¿Qué pasó internamente?
 
-Visualicemos el movimiento de los punteros de rama en este momento usando `gitGraph` de Mermaid.
+Visualicemos el movimiento de los [punteros](/es/p/c-language-pointers-memory-management-stack-heap/) de rama en este momento usando `gitGraph` de Mermaid.
 
 ```mermaid
 gitGraph
@@ -368,7 +368,7 @@ $ git reflog
 
 ## 12. Conclusión
 
-Hemos explicado con gran detalle los errores comunes en los que suelen caer los principiantes de Git, los mecanismos de Git detrás de ellos y cómo resolverlos. Commits en la rama equivocada, anular commits ya empujados, aprovechar Stash, sobrevivir a Detached HEAD y resolver conflictos. Lo importante en todo esto es imaginar "qué objetos y punteros está manipulando Git en segundo plano".
+Hemos explicado con gran detalle los errores comunes en los que suelen caer los principiantes de Git, los mecanismos de Git detrás de ellos y cómo resolverlos. Commits en la rama equivocada, anular commits ya empujados, aprovechar Stash, sobrevivir a Detached HEAD y resolver conflictos. Lo importante en todo esto es imaginar "qué objetos y [punteros](/es/p/c-language-pointers-memory-management-stack-heap/) está manipulando Git en segundo plano".
 
 La diferencia de los archivos se calcula mediante un riguroso algoritmo Diff expresado en fórmulas matemáticas, y la integridad de la historia está garantizada por funciones hash criptográficas. Si entiendes esta hermosa filosofía de diseño, te darás cuenta de que Git no es en absoluto una "caja negra incomprensible", sino el escudo más fuerte para proteger firmemente tu código fuente.
 

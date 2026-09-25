@@ -70,8 +70,8 @@ signtool sign /fd SHA256 /f "D:\pfx\cert.pfx" /p "password" "C:\installer\instal
 
 * `/fd SHA256` gibt den Signaturalgorithmus an.
 * Geben Sie die PFX-Datei mit `/f` an und übergeben Sie das Passwort mit `/p`.
-* Geben Sie schließlich den Pfad zur MSIX-Datei an.
-* Wenn der Pfad zu signtool nicht festgelegt ist, geben Sie den vollständigen Pfad an. In meiner Umgebung befand es sich am folgenden Speicherort.
+* Geben Sie schließlich den [Pfad](/de/p/windows-%E3%81%A7pfad%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9Fausf%C3%BChrbare-datei%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/) zur MSIX-Datei an.
+* Wenn der [Pfad](/de/p/windows-%E3%81%A7pfad%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9Fausf%C3%BChrbare-datei%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/) zu signtool nicht festgelegt ist, geben Sie den vollständigen [Pfad](/de/p/windows-%E3%81%A7pfad%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9Fausf%C3%BChrbare-datei%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/) an. In meiner Umgebung befand es sich am folgenden Speicherort.
 
 ```
 "C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\microsoft.windows.sdk.buildtools\10.0.26100.1742\bin\10.0.26100.0\x64\signtool.exe"

@@ -50,7 +50,7 @@ Selain itu, penting juga bahwa ia mempraktikkan "metode ilmiah" untuk menguji hi
 
 ## Pengaruh Besar bagi Generasi Mendatang dan Maknanya di Era Modern
 
-Cakrawala yang dibuka oleh Galileo telah memberikan pengaruh yang menentukan bagi generasi selanjutnya. Hukum-hukum gerak yang ia kemukakan (terutama hukum benda jatuh dan konsep inersia) disatukan oleh Isaac Newton dan membuahkan sistem mekanika klasik yang megah. Ketika Newton berkata, "Jika saya bisa melihat lebih jauh, itu karena saya berdiri di atas bahu raksasa", tidak diragukan lagi bahwa salah satu raksasa tersebut adalah Galileo.
+Cakrawala yang dibuka oleh Galileo telah memberikan pengaruh yang menentukan bagi generasi selanjutnya. Hukum-hukum gerak yang ia kemukakan (terutama hukum benda jatuh dan konsep inersia) disatukan oleh [Isaac Newton](/id/p/newton/) dan membuahkan sistem mekanika klasik yang megah. Ketika Newton berkata, "Jika saya bisa melihat lebih jauh, itu karena saya berdiri di atas bahu raksasa", tidak diragukan lagi bahwa salah satu raksasa tersebut adalah Galileo.
 
 Selain itu, tragedi penindasan melalui pengadilan agama masih memberikan pelajaran sejarah yang penting dalam mempertimbangkan hubungan antara sains dan agama, atau kebenaran dan kekuasaan. Pada tahun 1992, Paus Yohanes Paulus II secara resmi mengakui kesalahan gereja dalam persidangan Galileo dan memulihkan nama baiknya. Setelah lebih dari 350 tahun, itu adalah momen di mana kebenaran menghancurkan kekuasaan.
 

@@ -29,7 +29,7 @@ Quase não existem registos precisos sobre quando [Diofanto](https://kenji.blog/
 
 ### 2.2 A Cultura Helenística e Alexandria
 
-Naquela época, Alexandria era o centro da cultura e da aprendizagem helenísticas, ostentando uma enorme biblioteca (a Biblioteca de Alexandria) e servindo como um nexo de conhecimento onde muitos estudiosos se reuniam. Nesta cidade onde se cruzavam os conhecimentos da Grécia, do Egito, da Babilónia e até da Índia, acredita-se que [Diofanto](https://kenji.blog/pt/p/diophantus/) teve acesso a uma vasta herança matemática do passado. Ao contrário da tradição geométrica estabelecida por grandes matemáticos gregos como Euclides, Arquimedes e Apolónio, algumas teorias sugerem que [Diofanto](https://kenji.blog/pt/p/diophantus/) foi fortemente influenciado pela abordagem algébrica da Babilónia.
+Naquela época, Alexandria era o centro da cultura e da aprendizagem helenísticas, ostentando uma enorme biblioteca (a Biblioteca de Alexandria) e servindo como um nexo de conhecimento onde muitos estudiosos se reuniam. Nesta cidade onde se cruzavam os conhecimentos da Grécia, do Egito, da Babilónia e até da Índia, acredita-se que [Diofanto](https://kenji.blog/pt/p/diophantus/) teve acesso a uma vasta herança matemática do passado. Ao contrário da tradição geométrica estabelecida por grandes matemáticos gregos como [Euclides](/pt/p/euclid/), Arquimedes e Apolónio, algumas teorias sugerem que [Diofanto](https://kenji.blog/pt/p/diophantus/) foi fortemente influenciado pela abordagem algébrica da Babilónia.
 
 ```mermaid
 timeline
@@ -86,7 +86,7 @@ Além disso, a solução geral pode ser expressa como $x = 2 + 3k, y = -2k$ (ond
 
 ### 4.2 Triplos Pitagóricos e Equações Diofantinas Não Lineares
 
-A equação familiar do teorema de Pitágoras também é um tipo de equação diofantina.
+A equação familiar do teorema de [Pitágoras](/pt/p/pythagoras/) também é um tipo de equação diofantina.
 
 $$
 x^2 + y^2 = z^2
@@ -98,7 +98,7 @@ Na margem ao lado deste problema, [Pierre de Fermat](https://kenji.blog/pt/p/fer
 
 > "É impossível separar um cubo em dois cubos, ou uma quarta potência em duas quartas potências, ou em geral, qualquer potência maior que a segunda, em duas potências iguais. Descobri uma demonstração verdadeiramente maravilhosa disto, mas esta margem é demasiado estreita para a conter."
 
-Este é o famoso **Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)** (que $x^n + y^n = z^n \ (n \ge 3)$ não tem soluções inteiras positivas). Este teorema continuou a rejeitar os desafios de matemáticos geniais de todo o mundo durante cerca de 350 anos depois de ter sido proposto, até que foi finalmente provado por Andrew Wiles em 1995. Sem o livro de [Diofanto](https://kenji.blog/pt/p/diophantus/), este grande drama poderia nunca ter ocorrido.
+Este é o famoso **Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)** (que $x^n + y^n = z^n \ (n \ge 3)$ não tem soluções inteiras positivas). Este teorema continuou a rejeitar os desafios de matemáticos geniais de todo o mundo durante cerca de 350 anos depois de ter sido proposto, até que foi finalmente provado por [Andrew Wiles](/pt/p/wiles/) em 1995. Sem o livro de [Diofanto](https://kenji.blog/pt/p/diophantus/), este grande drama poderia nunca ter ocorrido.
 
 ```mermaid
 graph TD
@@ -179,7 +179,7 @@ Em particular, matemáticos em Bagdade no século IX traduziram *Arithmetica* pa
 
 No século XVI, à medida que os clássicos gregos foram redescobertos na Europa renascentista, *Arithmetica* foi traduzida para o latim. Uma edição bilíngue em grego e latim publicada por [Claude Gaspard Bachet](https://kenji.blog/pt/p/bachet/) de Méziriac em 1621 foi muito lida. Foi esta edição de Bachet de *Arithmetica* que [Fermat](https://kenji.blog/pt/p/fermat/) estudou cuidadosamente, o que desencadeou a abertura de uma nova porta na matemática.
 
-A teoria das equações diofantinas foi subsequentemente profundamente estudada por gigantes como [Leonhard Euler](https://kenji.blog/pt/p/euler/), Joseph-Louis Lagrange e Carl Friedrich Gauss. A sua pesquisa transformou-se nos vastos campos matemáticos modernos da "teoria algébrica dos números" e da "geometria algébrica". O 10º dos 23 problemas de Hilbert foi "encontrar um algoritmo geral para determinar se uma dada equação diofantina é solucionável", e em 1970 Yuri Matiyasevich provou que "nenhum algoritmo desse tipo existe". O nome de [Diofanto](https://kenji.blog/pt/p/diophantus/) está profundamente gravado na vanguarda da matemática moderna.
+A teoria das equações diofantinas foi subsequentemente profundamente estudada por gigantes como [Leonhard Euler](https://kenji.blog/pt/p/euler/), [Joseph-Louis Lagrange](/pt/p/lagrange/) e [Carl Friedrich Gauss](/pt/p/gauss/). A sua pesquisa transformou-se nos vastos campos matemáticos modernos da "teoria algébrica dos números" e da "geometria algébrica". O 10º dos 23 problemas de Hilbert foi "encontrar um algoritmo geral para determinar se uma dada equação diofantina é solucionável", e em 1970 Yuri Matiyasevich provou que "nenhum algoritmo desse tipo existe". O nome de [Diofanto](https://kenji.blog/pt/p/diophantus/) está profundamente gravado na vanguarda da matemática moderna.
 
 ## 7. Conclusão
 

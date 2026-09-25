@@ -18,11 +18,11 @@ tags:
 
 # 1. Um convite à Arquitetura Orientada a Eventos
 
-Os sistemas de software modernos possuem uma escala e complexidade sem precedentes. Com a arquitetura de microsserviços se tornando a norma, como projetamos a comunicação entre os serviços é um fator crucial que determina o desempenho, a disponibilidade e a manutenibilidade de todo o sistema. Neste contexto, a ** Arquitetura Orientada a Eventos ** (Event-Driven Architecture: EDA) estabeleceu uma posição firme como um paradigma poderoso para reduzir o acoplamento entre sistemas e alcançar alta escalabilidade.
+Os sistemas de software modernos possuem uma escala e complexidade sem precedentes. Com a [arquitetura de microsserviços](/pt/p/microservices-architecture-bff-api-gateway/) se tornando a norma, como projetamos a comunicação entre os serviços é um fator crucial que determina o desempenho, a disponibilidade e a manutenibilidade de todo o sistema. Neste contexto, a ** Arquitetura Orientada a Eventos ** (Event-Driven Architecture: EDA) estabeleceu uma posição firme como um paradigma poderoso para reduzir o acoplamento entre sistemas e alcançar alta escalabilidade.
 
 # 2. Desafios da Comunicação Síncrona (REST / gRPC)
 
-A abordagem mais intuitiva para a comunicação entre serviços em sistemas distribuídos é a ** comunicação síncrona ** via APIs REST usando requisições/respostas HTTP ou o gRPC, que é mais rápido. No entanto, a comunicação síncrona tem vários desafios inerentes.
+A abordagem mais intuitiva para a comunicação entre serviços em [sistemas distribuídos](/pt/p/cap-theorem-distributed-systems-tradeoff/) é a ** comunicação síncrona ** via APIs REST usando requisições/respostas HTTP ou o gRPC, que é mais rápido. No entanto, a comunicação síncrona tem vários desafios inerentes.
 
 ## 2.1 Alto Acoplamento e Falhas em Cascata
 Na comunicação síncrona, o chamador (cliente) e o chamado (servidor) estão fortemente acoplados no tempo. O cliente deve esperar até que o servidor retorne uma resposta, e se o servidor falhar ou a resposta for atrasada devido à alta carga, o impacto se espalhará para o cliente. Se isso ocorrer em cadeia, corre-se o risco de causar uma ** falha em cascata ** que derrubará todo o sistema.
@@ -226,7 +226,7 @@ Ao introduzir a arquitetura orientada a eventos em sistemas empresariais do mund
 
 ## 7.1 Padrão Saga para Transações Distribuídas
 
-Na arquitetura de microsserviços, gerenciar transações que abrangem vários serviços através do commit de duas fases (2PC) síncrono causa degradação da disponibilidade e do desempenho. O ** Padrão Saga ** é usado como uma abordagem alternativa.
+Na [arquitetura de microsserviços](/pt/p/microservices-architecture-bff-api-gateway/), gerenciar transações que abrangem vários serviços através do commit de duas fases (2PC) síncrono causa degradação da disponibilidade e do desempenho. O ** Padrão Saga ** é usado como uma abordagem alternativa.
 
 No Padrão Saga, uma transação distribuída é representada como uma série de transações locais. Cada serviço executa sua transação local e, após a conclusão, publica um evento para acionar a próxima etapa. Se alguma etapa falhar, ele publica um evento para executar uma "transação de compensação" (Compensating [Transaction](https://kenji.blog/pt/p/rdbms-transaction-acid-isolation-level-lock/)) que desfaz as transações que já foram concluídas.
 
@@ -252,7 +252,7 @@ O producer do Kafka não envia as mensagens uma a uma, mas as agrupa como um bat
 
 ## 7.4 Garantindo a Observabilidade (Observability)
 
-Em sistemas onde o processamento assíncrono é encadeado, o troubleshooting quando ocorre uma falha se torna extremamente difícil. Para rastrear em qual fila as mensagens estão presas e em qual serviço o erro ocorreu, a introdução do ** Distributed Tracing ** (Rastreamento Distribuído) (como OpenTelemetry, Jaeger, etc.) é essencial. A melhor prática para a operação de uma EDA é anexar um `traceId` exclusivo a cada mensagem e vinculá-lo a logs e métricas para construir uma fundação que visualize o fluxo de eventos.
+Em sistemas onde o [processamento assíncrono](/pt/p/event-driven-architecture-async/) é encadeado, o troubleshooting quando ocorre uma falha se torna extremamente difícil. Para rastrear em qual fila as mensagens estão presas e em qual serviço o erro ocorreu, a introdução do ** Distributed Tracing ** (Rastreamento Distribuído) (como OpenTelemetry, Jaeger, etc.) é essencial. A melhor prática para a operação de uma EDA é anexar um `traceId` exclusivo a cada mensagem e vinculá-lo a logs e métricas para construir uma fundação que visualize o fluxo de eventos.
 
 # 7. Padrões de Design Avançados e Operações na Arquitetura Orientada a Eventos
 
@@ -260,4 +260,4 @@ Ao introduzir a arquitetura orientada a eventos em sistemas empresariais do mund
 
 ## 7.4 Garantindo a Observabilidade (Observability)
 
-Em sistemas onde o processamento assíncrono é encadeado, o troubleshooting quando ocorre uma falha se torna extremamente difícil. Para rastrear em qual fila as mensagens estão presas e em qual serviço o erro ocorreu, a introdução do ** Distributed Tracing ** (Rastreamento Distribuído) (como OpenTelemetry, Jaeger, etc.) é essencial. A melhor prática para a operação de uma EDA é anexar um `traceId` exclusivo a cada mensagem e vinculá-lo a logs e métricas para construir uma fundação que visualize o fluxo de eventos.
+Em sistemas onde o [processamento assíncrono](/pt/p/event-driven-architecture-async/) é encadeado, o troubleshooting quando ocorre uma falha se torna extremamente difícil. Para rastrear em qual fila as mensagens estão presas e em qual serviço o erro ocorreu, a introdução do ** Distributed Tracing ** (Rastreamento Distribuído) (como OpenTelemetry, Jaeger, etc.) é essencial. A melhor prática para a operação de uma EDA é anexar um `traceId` exclusivo a cada mensagem e vinculá-lo a logs e métricas para construir uma fundação que visualize o fluxo de eventos.

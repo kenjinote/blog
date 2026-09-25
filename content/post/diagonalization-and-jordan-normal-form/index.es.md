@@ -229,7 +229,7 @@ la matriz es diagonalizable. Si tiene raíces repetidas, no lo es, y su grado co
 
 Similar es la **[Descomposición en Valores Singulares (SVD)](https://kenji.blog/es/p/singular-value-decomposition/)**.
 La diagonalización $A = PDP^{-1}$ aplica solo a matrices cuadradas y es útil para iteraciones y exponenciales.
-La SVD $A = U \Sigma V^*$ aplica a cualquier matriz $m \times n$. Aquí $U$ y $V$ son matrices unitarias. Descompone transformaciones en "rotación", "escalamiento" y "rotación", útil en compresión de datos.
+La [SVD](/es/p/singular-value-decomposition/) $A = U \Sigma V^*$ aplica a cualquier matriz $m \times n$. Aquí $U$ y $V$ son matrices unitarias. Descompone transformaciones en "rotación", "escalamiento" y "rotación", útil en compresión de datos.
 
 ```mermaid
 graph LR

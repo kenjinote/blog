@@ -151,7 +151,7 @@ Originaire de Hong Kong, Keychron est le moteur du boom récent des claviers per
 - **Commutateurs :** Mécaniques (Compatibles Hot-Swap. Les commutateurs peuvent être changés librement)
 - **Micrologiciel :** Entièrement compatible QMK/VIA
 - **Caractéristiques :** Commutateur pour basculer entre macOS/Windows. Vous pouvez choisir votre disposition préférée, comme la disposition Alice Q8 ou la disposition 75% Q1.
-- **Avantages pour les ingénieurs :** Bien qu'il s'agisse d'un produit prêt à l'emploi, vous pouvez immédiatement profiter d'une sensation de frappe exceptionnelle et d'une personnalisation rivalisant avec les claviers faits maison dès la sortie de la boîte. Idéal pour configurer une couche de touches fléchées de type Vim à l'aide de VIA.
+- **Avantages [pour les ingénieurs](/fr/p/prompt-engineering-for-engineers/) :** Bien qu'il s'agisse d'un produit prêt à l'emploi, vous pouvez immédiatement profiter d'une sensation de frappe exceptionnelle et d'une personnalisation rivalisant avec les claviers faits maison dès la sortie de la boîte. Idéal pour configurer une couche de touches fléchées de type Vim à l'aide de VIA.
 
 ---
 
@@ -161,7 +161,7 @@ Le "Happy Hacking Keyboard (HHKB)" est un clavier légendaire né pour les progr
 
 - **Commutateurs :** Commutateurs mécaniques linéaires/silencieux (Fabriqués par Kailh, compatibles Hot-Swap)
 - **Caractéristiques :** Bâton de pointage (trackpoint) au centre du clavier, 4 pads tactiles pour les gestes.
-- **Avantages pour les ingénieurs :** Le contrôle du curseur de la souris, le défilement et le changement de fenêtres peuvent être accomplis sans jamais retirer les mains de la position de repos. Une fois que vous avez goûté à cette "expérience où tout est accompli du bout des doigts", vous ne pourrez plus jamais revenir à la tâche de tendre la main droite vers une souris.
+- **Avantages [pour les ingénieurs](/fr/p/prompt-engineering-for-engineers/) :** Le contrôle du curseur de la souris, le défilement et le changement de fenêtres peuvent être accomplis sans jamais retirer les mains de la position de repos. Une fois que vous avez goûté à cette "expérience où tout est accompli du bout des doigts", vous ne pourrez plus jamais revenir à la tâche de tendre la main droite vers une souris.
 
 ---
 
@@ -172,7 +172,7 @@ Le summum des claviers divisés développés par ZSA au Canada. Étant donné qu
 - **Commutateurs :** Mécaniques (Compatibles Cherry MX, compatibles Hot-Swap)
 - **Micrologiciel :** Basé sur QMK (Utilise leur propre outil GUI puissant "Oryx")
 - **Caractéristiques :** Disposition Column Staggered, groupe de touches dédié aux pouces, pieds fournis en standard pour ajouter une inclinaison (tente).
-- **Avantages pour les ingénieurs :** En attribuant Enter, Space, Backspace et les changements de couche aux pouces, la charge sur l'auriculaire, qui a le moins de force, est considérablement réduite. C'est un appareil qui deviendra le sauveur des ingénieurs souffrant du syndrome du canal carpien.
+- **Avantages [pour les ingénieurs](/fr/p/prompt-engineering-for-engineers/) :** En attribuant Enter, Space, Backspace et les changements de couche aux pouces, la charge sur l'auriculaire, qui a le moins de force, est considérablement réduite. C'est un appareil qui deviendra le sauveur des ingénieurs souffrant du syndrome du canal carpien.
 
 ---
 
@@ -182,7 +182,7 @@ Le chef-d'œuvre japonais dont Topre est fier. Son palmarès d'utilisation penda
 
 - **Commutateurs :** Méthode capacitive sans contact (Topre)
 - **Caractéristiques :** Avec la fonction APC (Actuation Point Changer), le point d'actionnement peut être réglé pour chaque touche à 0,8 mm, 1,5 mm, 2,2 mm, ou 3,0 mm.
-- **Avantages pour les ingénieurs :** Le toucher de touche doux, sans contact physique, est appelé "toucher plume", minimisant le stress de répulsion sur les doigts même pendant de longues sessions de codage. Il est possible de personnaliser les touches pressées par l'auriculaire (comme A et Enter) pour avoir un point d'actionnement très superficiel (0,8 mm) afin qu'elles réagissent à un simple contact léger.
+- **Avantages [pour les ingénieurs](/fr/p/prompt-engineering-for-engineers/) :** Le toucher de touche doux, sans contact physique, est appelé "toucher plume", minimisant le stress de répulsion sur les doigts même pendant de longues sessions de codage. Il est possible de personnaliser les touches pressées par l'auriculaire (comme A et Enter) pour avoir un point d'actionnement très superficiel (0,8 mm) afin qu'elles réagissent à un simple contact léger.
 
 ---
 
@@ -192,7 +192,7 @@ Initialement développé pour les joueurs d'e-sport, sa technologie innovante es
 
 - **Commutateurs :** Lekker Switch (Commutateurs magnétiques à effet Hall)
 - **Caractéristiques :** Fonction Rapid Trigger, point d'actionnement réglable par incréments de 0,1 mm de 0,1 mm à 4,0 mm.
-- **Avantages pour les ingénieurs :** Tirant parti de l'entrée analogique, il permet des configurations folles (Dynamic Keystroke) telles que "lettre minuscule si pressée légèrement, majuscule si pressée profondément (en combinaison avec Shift)". De plus, étant donné que la touche s'éteint au moment même où le doigt est légèrement levé, cela empêche l'entrée continue involontaire de touches lors de la frappe à grande vitesse, offrant une expérience de saisie précise inégalée.
+- **Avantages [pour les ingénieurs](/fr/p/prompt-engineering-for-engineers/) :** Tirant parti de l'entrée analogique, il permet des configurations folles (Dynamic Keystroke) telles que "lettre minuscule si pressée légèrement, majuscule si pressée profondément (en combinaison avec Shift)". De plus, étant donné que la touche s'éteint au moment même où le doigt est légèrement levé, cela empêche l'entrée continue involontaire de touches lors de la frappe à grande vitesse, offrant une expérience de saisie précise inégalée.
 
 ## En conclusion
 

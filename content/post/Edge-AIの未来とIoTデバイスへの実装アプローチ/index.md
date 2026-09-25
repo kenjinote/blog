@@ -77,8 +77,8 @@ Edge AIではネットワーク転送を伴わないため、$T_{network\_up}$ �
   Googleが提供するEdge TPUは、非常に小型でありながら強力な推論能力を持つコプロセッサです。わずか2Wの消費電力で 4 TOPS (Tera Operations Per Second: 1秒間に4兆回の演算) の性能を発揮します。これにより、Raspberry Piのような軽量なSBC（シングルボードコンピュータ）にUSB接続するだけで、モバイル向けに最適化されたTensorFlow Liteモデルをリアルタイムに実行可能にします。
 - **Raspberry Pi AI Kit (Hailo-8L搭載)**:
   近年リリースされたRaspberry Pi AI Kitは、Hailo社のAIアクセラレータ「Hailo-8L」を搭載しています。Hailoのアーキテクチャは、ニューラルネットワークの構造をチップのハードウェア構造にマッピングすることで、メモリへのアクセスボトルネックを解消し、最大13 TOPSという驚異的な推論性能を数ワットの電力枠内で実現しています。
-- **NVIDIA Jetson シリーズ**:
-  Jetson Nano, Xavier, Orinシリーズは、ARM CPUとNVIDIAの強力なGPUコアを統合したSoCです。CUDAエコシステムをそのまま利用できるため、クラウドで学習したPyTorchやTensorFlowのモデルを、TensorRTを通じてエッジにデプロイするのが非常に容易です。
+- **[NVIDIA](/p/history-of-nvidia/) Jetson シリーズ**:
+  Jetson Nano, Xavier, Orinシリーズは、ARM CPUと[NVIDIA](/p/history-of-nvidia/)の強力なGPUコアを統合したSoCです。CUDAエコシステムをそのまま利用できるため、クラウドで学習したPyTorchやTensorFlowのモデルを、TensorRTを通じてエッジにデプロイするのが非常に容易です。
 
 ### TOPSと電力効率（TOPS/W）
 Edge AIハードウェアを評価する上で最も重要な指標は「TOPS/W（1ワットあたりのTOPS）」です。IoTデバイスはバッテリー駆動やPoE（Power over Ethernet）など、厳しい電力制約の下で稼働するため、単純な計算性能（TOPS）だけでなく、いかに少ない電力でAI推論を行えるかが鍵となります。
@@ -242,7 +242,7 @@ Edge AIはすでに様々な産業で実用化され、劇的なパラダイム�
 Edge AIの技術は急速に発展していますが、まだ多くの課題と興味深い未来の展望が存在します。
 
 **1. エッジでの[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）の稼働**:
-近年最大のトピックは、生成AIやLLMをエッジで動かす「Edge LLM」の試みです。数百億パラメータのモデルをそのままエッジに乗せることは不可能ですが、llama.cppのような最適化フレームワークや、4ビット/2ビットの極限までの量子化（AWQ, GPTQ等）、さらにはMicrosoftのPhi-3などの小型で高性能なSLM（Small Language Models）の登場により、スマートフォンやRaspberry Pi上でも自然言語処理が[オフライン](https://kenji.blog/p/pwa-progressive-web-apps-service-worker/)で完結する時代が到来しつつあります。
+近年最大のトピックは、生成AIや[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)をエッジで動かす「Edge [LLM](/p/large-language-models-llm-transformer-prompt-engineering/)」の試みです。数百億パラメータのモデルをそのままエッジに乗せることは不可能ですが、llama.cppのような最適化フレームワークや、4ビット/2ビットの極限までの量子化（AWQ, GPTQ等）、さらにはMicrosoftのPhi-3などの小型で高性能なSLM（Small Language Models）の登場により、スマートフォンやRaspberry Pi上でも自然言語処理が[オフライン](https://kenji.blog/p/pwa-progressive-web-apps-service-worker/)で完結する時代が到来しつつあります。
 
 **2. ニューロモルフィック・コンピューティングとSNN**:
 究極の省電力Edge AIとして期待されているのが、人間の脳の神経回路の働きを物理的に模倣した「ニューロモルフィックチップ（例: Intel Loihi）」と「スパイキング・ニューラル・ネットワーク（SNN）」です。SNNは、データが変化したタイミング（スパイク）でのみ計算が行われる[イベント駆動](https://kenji.blog/p/event-driven-architecture-async/)型であるため、従来のディープラーニングモデルと比較して消費電力を桁違いに（数十分の1から数百分の一まで）抑えることが理論上可能とされています。

@@ -26,7 +26,7 @@ tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]
 
 ### 2.2 二叉搜索树（BST）的局限性
 
-在内存搜索中，诸如 **二叉搜索树** （[Binary Search](https://kenji.blog/zh-cn/p/search-algorithms-linear-binary-hash-table-principles/) Tree: BST）和 **红黑树** （Red-Black Tree）等平衡二叉搜索树能够以 $ O(\log N) $ 的时间复杂度进行高速搜索。然而，如果将其直接应用于磁盘上的数据库，将会产生严重的问题。
+在内存搜索中，诸如 **二叉搜索树** （[Binary Search](https://kenji.blog/zh-cn/p/search-algorithms-linear-binary-hash-table-principles/) Tree: BST）和 **红黑树** （Red-Black Tree）等平衡二叉搜索树能够以 $ O(\log N) $ 的时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)进行高速搜索。然而，如果将其直接应用于磁盘上的数据库，将会产生严重的问题。
 
 二叉树中一个节点最多有两个子节点。随着元素数量 $ N $ 的增加，树的高度 $ h $ 会与 $ \log_2 N $ 成正比变深。例如，当 $ N = 1,000,000 $ 时，树的高度约为20。假设每个节点被分配在不同的磁盘页上，最坏情况下会发生20次随机磁盘I/O。这对于数据库来说是致命的延迟。
 

@@ -13,17 +13,17 @@ description: '프라이버시를 보호하면서 무료로 사용할 수 있는 
 
 # 머리말
 
-최근 대규모 언어 모델([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 기술 발전은 눈부시며, ChatGPT나 Claude와 같은 클라우드 기반 AI 서비스가 널리 보급되고 있습니다. 하지만 한편으로는 "자사의 기밀 데이터를 외부 서버로 전송하고 싶지 않다", "API 이용 요금을 절감하고 싶다", "완전히 오프라인으로 동작하는 AI 시스템을 구축하고 싶다"는 요구가 급속히 높아지고 있습니다.
+최근 [대규모 언어 모델](/ko/p/large-language-models-llm-transformer-prompt-engineering/)([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 기술 발전은 눈부시며, ChatGPT나 Claude와 같은 클라우드 기반 AI 서비스가 널리 보급되고 있습니다. 하지만 한편으로는 "자사의 기밀 데이터를 외부 서버로 전송하고 싶지 않다", "API 이용 요금을 절감하고 싶다", "완전히 오프라인으로 동작하는 AI 시스템을 구축하고 싶다"는 요구가 급속히 높아지고 있습니다.
 
-이러한 요구에 부응하는 것이 자신의 PC나 사내 서버에 직접 다운로드하여 실행할 수 있는 '로컬 LLM(오픈소스 LLM)'입니다. 2023년경까지만 해도 로컬에서 실용적인 정확도를 내는 것은 어려웠지만, 모델 아키텍처의 진화와 양자화(Quantization) 기술의 발전으로 현재는 소비자용 GPU(NVIDIA RTX 3090 / 4090이나 Mac의 Apple Silicon 등)에서도 매우 고성능의 LLM을 원활하게 구동할 수 있게 되었습니다.
+이러한 요구에 부응하는 것이 자신의 PC나 사내 서버에 직접 다운로드하여 실행할 수 있는 '로컬 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)(오픈소스 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/))'입니다. 2023년경까지만 해도 로컬에서 실용적인 정확도를 내는 것은 어려웠지만, 모델 아키텍처의 진화와 양자화(Quantization) 기술의 발전으로 현재는 소비자용 GPU([NVIDIA](/ko/p/history-of-nvidia/) RTX 3090 / 4090이나 Mac의 Apple Silicon 등)에서도 매우 고성능의 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 원활하게 구동할 수 있게 되었습니다.
 
-본 기사에서는 수많은 오픈소스 LLM 중에서 2026년 현재 특히 우수하다고 평가받는 '추천 모델 5선'을 선정하여, 각각의 아키텍처 특징, 파라미터 수, GGUF 양자화에 따른 메모리 요구 사항, 그리고 구체적인 사용 사례에 이르기까지 지극히 상세하고 기술적인 관점에서 철저히 비교·해설합니다.
+본 기사에서는 수많은 오픈소스 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/) 중에서 2026년 현재 특히 우수하다고 평가받는 '추천 모델 5선'을 선정하여, 각각의 아키텍처 특징, 파라미터 수, [GGUF](/ko/p/llama-cpp-quantization-gguf/) 양자화에 따른 메모리 요구 사항, 그리고 구체적인 사용 사례에 이르기까지 지극히 상세하고 기술적인 관점에서 철저히 비교·해설합니다.
 
 ---
 
 # 왜 로컬에서 LLM을 구동하는가?
 
-로컬 LLM 도입에는 클라우드형 API에는 없는 독자적인 장점이 다수 존재합니다.
+로컬 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/) 도입에는 클라우드형 API에는 없는 독자적인 장점이 다수 존재합니다.
 
 ### 1. 완벽한 프라이버시와 보안 확보
 클라우드 API를 사용할 경우, 입력한 프롬프트나 데이터는 외부 기업의 서버로 전송됩니다. 이는 개인정보나 기업의 기밀 정보를 다루는 데 있어 중대한 위험 요소입니다. 로컬 LLM이라면 데이터가 완전히 단말기 내에서 처리되므로, 외부로의 데이터 유출 위험을 제로로 억제할 수 있습니다.
@@ -38,11 +38,11 @@ description: '프라이버시를 보호하면서 무료로 사용할 수 있는 
 
 # 로컬 LLM을 구동하기 위한 기초 지식
 
-모델 소개에 앞서, 로컬 환경에서 LLM을 구동하는 데 있어 피할 수 없는 'VRAM 요구 사항'과 '양자화(Quantization)'에 대해 수학적으로 정리해 봅시다.
+모델 소개에 앞서, 로컬 환경에서 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 구동하는 데 있어 피할 수 없는 'VRAM 요구 사항'과 '양자화(Quantization)'에 대해 수학적으로 정리해 봅시다.
 
 ## VRAM(비디오 메모리)과 양자화의 수학적 기초
 
-LLM을 GPU에서 추론시키기 위해서는 모델의 파라미터(가중치)를 VRAM에 전개해야 합니다. 모델의 메모리 요구 사항 $M$ 은 다음 수식으로 근사할 수 있습니다.
+[LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 GPU에서 추론시키기 위해서는 모델의 파라미터(가중치)를 VRAM에 전개해야 합니다. 모델의 메모리 요구 사항 $M$ 은 다음 수식으로 근사할 수 있습니다.
 
 $$ M = \frac{P \times B}{8} + C $$
 
@@ -60,24 +60,24 @@ $$ M_{FP16} = \frac{8 \times 16}{8} = 16 \text{ GB} $$
 
 그래서 등장한 것이 '양자화(Quantization)'입니다. 파라미터의 정밀도를 FP16에서 8-bit, 4-bit, 극단적인 경우 2-bit 등으로 낮춤으로써 모델의 성능 저하를 최소화하면서 필요한 메모리 양을 획기적으로 줄이는 기술입니다.
 
-현재 가장 널리 보급된 포맷이 Georgi Gerganov(llama.cpp 개발자)가 고안한 **GGUF (GPT-Generated Unified Format)** 입니다. GGUF는 CPU와 GPU 모두에서 효율적으로 추론을 수행하기 위한 바이너리 형식이며, 특히 Mac(Apple Silicon)의 Unified Memory 아키텍처와 매우 궁합이 좋다는 특징이 있습니다.
+현재 가장 널리 보급된 포맷이 Georgi Gerganov(llama.cpp 개발자)가 고안한 **[GGUF](/ko/p/llama-cpp-quantization-gguf/) (GPT-Generated Unified Format)** 입니다. [GGUF](/ko/p/llama-cpp-quantization-gguf/)는 CPU와 GPU 모두에서 효율적으로 추론을 수행하기 위한 바이너리 형식이며, 특히 Mac(Apple Silicon)의 Unified Memory 아키텍처와 매우 궁합이 좋다는 특징이 있습니다.
 
 8B 모델을 4-bit(예: Q4_K_M)로 양자화했을 경우의 메모리 계산은 다음과 같습니다.
 
 $$ M_{4bit} = \frac{8 \times 4.5}{8} = 4.5 \text{ GB} $$
 ※Q4_K_M은 일부 가중치에 높은 정밀도를 남기기 때문에 실효 비트 수는 약 4.5비트가 됩니다.
 
-이로 인해 VRAM이 8GB밖에 없는 엔트리급 GPU나 일반 노트북에서도 8B 클래스의 강력한 LLM을 로컬에서 원활하게 구동할 수 있게 되는 것입니다.
+이로 인해 VRAM이 8GB밖에 없는 엔트리급 GPU나 일반 노트북에서도 8B 클래스의 강력한 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 로컬에서 원활하게 구동할 수 있게 되는 것입니다.
 
 ---
 
 # 추천 로컬 LLM 모델 5선
 
-그러면 현재 전 세계의 개발자나 AI 연구자들로부터 높은 지지를 받고 있는 오픈소스 LLM 5가지를 소개하겠습니다.
+그러면 현재 전 세계의 개발자나 AI 연구자들로부터 높은 지지를 받고 있는 오픈소스 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/) 5가지를 소개하겠습니다.
 
 ## 1. Llama 3 (Meta)
 
-Meta사가 개발하여 오픈소스 LLM의 사실상 업계 표준(디팩토 스탠다드)이 된 것이 'Llama 3' 시리즈입니다.
+[Meta](/ko/p/history-of-meta-facebook/)사가 개발하여 오픈소스 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 사실상 업계 표준(디팩토 스탠다드)이 된 것이 'Llama 3' 시리즈입니다.
 
 ### 아키텍처의 진화와 특징
 
@@ -105,7 +105,7 @@ graph TD
 - **Llama 3 8B**: 80억 파라미터. 4-bit 양자화로 약 5GB의 메모리에서 동작합니다. 응답이 매우 빠르며, PC 상의 개인 비서나 로컬에서의 RAG(Retrieval-Augmented Generation) 시스템의 핵심으로 최적입니다.
 - **Llama 3 70B**: 700억 파라미터. 4-bit 양자화로 약 40GB의 VRAM(또는 Apple Silicon의 Unified Memory)을 필요로 합니다. 클라우드의 GPT-4에 육박하는 성능을 가지며, 고도의 추론, 복잡한 코딩, 데이터 분석 등에 위력을 발휘합니다.
 
-Llama 3는 커뮤니티의 지원이 가장 두터우며, GGUF, AWQ, EXL2 등 모든 양자화 포맷을 즉시 이용할 수 있다는 점도 강점입니다.
+Llama 3는 커뮤니티의 지원이 가장 두터우며, [GGUF](/ko/p/llama-cpp-quantization-gguf/), AWQ, EXL2 등 모든 양자화 포맷을 즉시 이용할 수 있다는 점도 강점입니다.
 
 ---
 
@@ -141,7 +141,7 @@ graph LR
 
 ## 3. Gemma 2 (Google)
 
-Google이 자사의 최첨단 모델 'Gemini'의 기술을 활용하여 개발한 오픈 모델이 'Gemma' 시리즈입니다. Gemma 2는 그 2세대로서 아키텍처에 큰 변화를 주었습니다.
+Google이 자사의 최첨단 모델 '[Gemini](/ko/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AE%EB%8C%80%EC%B2%98-%EB%B0%A9%EB%B2%95/)'의 기술을 활용하여 개발한 오픈 모델이 'Gemma' 시리즈입니다. Gemma 2는 그 2세대로서 아키텍처에 큰 변화를 주었습니다.
 
 ### 독자적인 아키텍처 설계
 
@@ -187,8 +187,8 @@ Microsoft가 제창하는 'Textbook is all you need(교과서가 전부다)'라�
 
 ### SLM (소규모 언어 모델)의 혁명
 
-최근의 LLM 개발은 '무조건 파라미터 수와 데이터 양을 늘린다'는 힘으로 밀어붙이는 방식이 주류였지만, Microsoft는 '모델에 주어지는 데이터의 질(고품질의 교과서 데이터나 합성 데이터)을 극한까지 높이면, 작은 파라미터 수로도 GPT-3.5 급의 지능을 가질 수 있음'을 증명했습니다.
-Phi-3는 LLM(Large Language Model)이 아니라 **SLM(Small Language Model)** 이라고 불립니다.
+최근의 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/) 개발은 '무조건 파라미터 수와 데이터 양을 늘린다'는 힘으로 밀어붙이는 방식이 주류였지만, Microsoft는 '모델에 주어지는 데이터의 질(고품질의 교과서 데이터나 합성 데이터)을 극한까지 높이면, 작은 파라미터 수로도 GPT-3.5 급의 지능을 가질 수 있음'을 증명했습니다.
+Phi-3는 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)(Large Language Model)이 아니라 **SLM(Small Language Model)** 이라고 불립니다.
 
 ```mermaid
 graph TD
@@ -238,7 +238,7 @@ $$ T = \frac{\text{BW}}{M_{\text{weights}}} $$
 - $\text{BW}$: GPU의 실효 메모리 대역폭 (GB/s)
 - $M_{\text{weights}}$: 모델이 로드된 크기 (GB)
 
-예를 들어 NVIDIA RTX 4090(메모리 대역폭 1,008 GB/s)에서 Llama 3 8B의 4-bit 버전(약 4.5 GB)을 구동하는 경우를 계산해 봅니다. 실효 대역폭을 이론값의 약 80%(약 800 GB/s)로 가정하면:
+예를 들어 [NVIDIA](/ko/p/history-of-nvidia/) RTX 4090(메모리 대역폭 1,008 GB/s)에서 Llama 3 8B의 4-bit 버전(약 4.5 GB)을 구동하는 경우를 계산해 봅니다. 실효 대역폭을 이론값의 약 80%(약 800 GB/s)로 가정하면:
 
 $$ T \approx \frac{800}{4.5} \approx 177 \text{ Tokens/sec} $$
 
@@ -248,7 +248,7 @@ $$ T \approx \frac{800}{4.5} \approx 177 \text{ Tokens/sec} $$
 
 # 로컬 LLM을 구동하기 위한 도구
 
-이러한 강력한 오픈소스 LLM을 로컬 환경에서 구동하기 위한 소프트웨어 생태계도 현재 매우 잘 갖춰져 있습니다. 대표적인 도구 3가지를 소개합니다.
+이러한 강력한 오픈소스 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 로컬 환경에서 구동하기 위한 소프트웨어 생태계도 현재 매우 잘 갖춰져 있습니다. 대표적인 도구 3가지를 소개합니다.
 
 ### 1. Ollama
 현재 가장 쉽고 가장 인기 있는 도구입니다. [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/)처럼 명령어 한 줄로 모델의 다운로드부터 실행까지 진행해 줍니다. Mac, Windows, Linux 모두를 지원합니다.
@@ -269,7 +269,7 @@ GUI 기반으로 직관적인 조작을 원하는 분들에게 추천하는 애�
 
 # 요약 및 향후 전망
 
-본 기사에서는 2026년 현재 최고봉에 있는 오픈소스 로컬 LLM 5가지를 소개하고, 그 아키텍처와 기술적 배경에 대해 해설했습니다. 목적별 선택 방법을 요약하면 다음과 같습니다.
+본 기사에서는 2026년 현재 최고봉에 있는 오픈소스 로컬 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/) 5가지를 소개하고, 그 아키텍처와 기술적 배경에 대해 해설했습니다. 목적별 선택 방법을 요약하면 다음과 같습니다.
 
 1. **종합적인 밸런스와 생태계를 중시한다면**: `Llama 3 (8B / 70B)`
 2. **Mac 등 대용량 Unified Memory 환경에서 고속 추론을 원한다면**: `Mixtral 8x7B`

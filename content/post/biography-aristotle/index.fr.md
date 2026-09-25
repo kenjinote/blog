@@ -25,7 +25,7 @@ Après l'accession d'Alexandre au trône, Aristote retourne à Athènes et fonde
 
 ## 2. La philosophie de l'empirisme et de la systématisation
 
-La pensée d'Aristote commence par un dépassement critique de la « théorie des Idées » de son maître Platon.
+La pensée d'Aristote commence par un [dépassement](/fr/p/hegel%E3%81%AEdialectique/) critique de la « théorie des Idées » de son maître Platon.
 
 ### « Forme (Eidos) » et « Matière (Hylé) »
 Alors que Platon pensait que la véritable réalité se trouvait dans un « monde des Idées » séparé de ce monde empirique, Aristote a trouvé de la valeur dans le monde réel lui-même. Il a soutenu que tout ce qui existe est composé de « matière (matériau) » et de « forme (essence, figure) ». Par exemple, une statue de bronze existe parce qu'une « matière » qu'est le bronze reçoit la « forme » d'une personne spécifique. La vérité ne réside pas dans le monde céleste des Idées, mais habite dans chaque chose individuelle devant nos yeux.

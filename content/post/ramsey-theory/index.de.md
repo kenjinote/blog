@@ -98,7 +98,7 @@ Da sich bei 5 Personen sowohl rote als auch blaue Dreiergruppen vermeiden lassen
 
 Färbt man die Kanten eines vollständigen Graphen mit zwei Farben (Rot und Blau), so bezeichnet man die minimale Knotenanzahl, bei der garantiert ein roter $K_s$ oder ein blauer $K_t$ auftritt, als **Ramsey-Zahl** $R(s,t)$.
 
-Ein roter $K_s$ bedeutet, dass sämtliche Kanten zwischen den ausgewählten $s$ Knoten rot sind. Ein einfacher roter Pfad reicht dafür nicht aus. Da $K_3$ ein Dreieck darstellt, lässt sich unsere bisherige Erkenntnis in einer einzigen Gleichung zusammenfassen:
+Ein roter $K_s$ bedeutet, dass sämtliche Kanten zwischen den ausgewählten $s$ Knoten rot sind. Ein einfacher roter [Pfad](/de/p/windows-%E3%81%A7pfad%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9Fausf%C3%BChrbare-datei%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/) reicht dafür nicht aus. Da $K_3$ ein Dreieck darstellt, lässt sich unsere bisherige Erkenntnis in einer einzigen Gleichung zusammenfassen:
 
 $$
 R(3,3)=6

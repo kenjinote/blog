@@ -20,7 +20,7 @@ description: '양자 우월성의 정의부터 Google의 Sycamore 프로세서�
 
 ## 2. 이론적 배경: 양자 계산의 기초와 복잡도 클래스
 
-양자 우월성을 이해하기 위해서는 먼저 양자 계산의 수학적 기초와 계산 복잡도 이론에서의 위치를 이해해야 합니다.
+양자 우월성을 이해하기 위해서는 먼저 양자 계산의 수학적 기초와 계산 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/) 이론에서의 위치를 이해해야 합니다.
 
 ### 양자 비트와 중첩
 
@@ -44,7 +44,7 @@ $$
 
 ### 양자 우월성의 계산 복잡도 이론적 정의
 
-계산 복잡도 이론에서 고전 컴퓨터가 효율적으로(다항 시간 내에) 풀 수 있는 문제의 클래스를 **BPP**(Bounded-error Probabilistic Polynomial time)라고 부릅니다. 반면, 양자 컴퓨터가 효율적으로 풀 수 있는 문제의 클래스는 **BQP**(Bounded-error Quantum Polynomial time)입니다.
+계산 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/) 이론에서 고전 컴퓨터가 효율적으로(다항 시간 내에) 풀 수 있는 문제의 클래스를 **BPP**(Bounded-error Probabilistic Polynomial time)라고 부릅니다. 반면, 양자 컴퓨터가 효율적으로 풀 수 있는 문제의 클래스는 **BQP**(Bounded-error Quantum Polynomial time)입니다.
 
 양자 우월성의 실증이란, "BQP에는 포함되지만 BPP에는 포함되지 않는(혹은 그럴 가능성이 매우 높은) 특정 작업을 실제 양자 하드웨어에서 실행하여, 고전 슈퍼컴퓨터에 의한 시뮬레이션을 시간적·자원적으로 능가하는 것"을 의미합니다. 확장된 처치-튜링 명제("모든 물리적으로 실현 가능한 계산 모델은 확률적 튜링 기계에 의해 다항 시간 내에 시뮬레이션할 수 있다")를 물리적인 실험을 통해 반증하는 역사적인 시도라고 할 수 있습니다.
 

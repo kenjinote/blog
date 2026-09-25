@@ -110,11 +110,11 @@ Oleh karena itu, jelas bahwa jumlah pintu yang mengarah ke luar adalah **bilanga
 
 ## 5.3. Menghitung Derajat Menggunakan Lemma Jabat Tangan
 
-Di sinilah teori graf berperan.
+Di sinilah [teori graf](/id/p/graph-theory-dijkstra-a-star/) berperan.
 - Titik sudut graf: Setiap segitiga kecil (ruangan) dan luar ruangan.
 - Tepi graf: Pintu (tepi warna 1 dan 2). Ketika dua ruangan berbagi pintu, hubungkan titik sudutnya dengan tepi.
 
-Menurut "Lemma Jabat Tangan", sebuah teorema dasar dalam teori graf, jumlah "derajat" (jumlah tepi yang terhubung) dari semua titik sudut harus selalu merupakan bilangan genap (dua kali jumlah tepi).
+Menurut "Lemma Jabat Tangan", sebuah teorema dasar dalam [teori graf](/id/p/graph-theory-dijkstra-a-star/), jumlah "derajat" (jumlah tepi yang terhubung) dari semua titik sudut harus selalu merupakan bilangan genap (dua kali jumlah tepi).
 
 $$ \sum_{v \in V} \text{deg}(v) = 2|E| $$
 

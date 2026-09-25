@@ -64,7 +64,7 @@ $$
 
 ## 5. 수학적 업적: [펠 방정식](https://kenji.blog/ko/p/pell-equation/) 해결
 
-또 다른 중요한 업적은 소위 **[펠 방정식](https://kenji.blog/ko/p/pell-equation/)** 에 대한 해법입니다. 펠 방정식은 완전 제곱수가 아닌 양의 정수 $n$ 에 대하여 다음과 같은 형태의 [디오판토스](https://kenji.blog/ko/p/diophantus/) 방정식(정수 계수를 갖는 다항 방정식)입니다:
+또 다른 중요한 업적은 소위 **[펠 방정식](https://kenji.blog/ko/p/pell-equation/)** 에 대한 해법입니다. [펠 방정식](/ko/p/pell-equation/)은 완전 제곱수가 아닌 양의 정수 $n$ 에 대하여 다음과 같은 형태의 [디오판토스](https://kenji.blog/ko/p/diophantus/) 방정식(정수 계수를 갖는 다항 방정식)입니다:
 
 $$
 x^2 - n y^2 = 1 \quad (\text{단, } x, y \text{ 는 정수})

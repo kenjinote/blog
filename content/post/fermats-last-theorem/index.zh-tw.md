@@ -14,7 +14,7 @@ tags:
 
 ## 1. 前言：世界上最著名的數學之謎
 
-在數學的歷史上，有一個問題讓無數人為之著迷，同時也讓他們備受折磨。那就是 **[費馬最後定理](https://kenji.blog/zh-tw/p/fermats-last-theorem/)** （Fermat's Last Theorem）。17世紀的法國法官、業餘數學家皮埃爾·德·費馬（Pierre de Fermat），在他愛不釋手的[丟番圖](https://kenji.blog/zh-tw/p/diophantus/)《算術》一書的空白處留下了短短的筆記，從此展開了長達360年波瀾壯闊的數學史詩。
+在數學的歷史上，有一個問題讓無數人為之著迷，同時也讓他們備受折磨。那就是 **[費馬最後定理](https://kenji.blog/zh-tw/p/fermats-last-theorem/)** （Fermat's Last Theorem）。17世紀的法國法官、業餘數學家[皮埃爾·德·費馬](/zh-tw/p/fermat/)（Pierre de Fermat），在他愛不釋手的[丟番圖](https://kenji.blog/zh-tw/p/diophantus/)《算術》一書的空白處留下了短短的筆記，從此展開了長達360年波瀾壯闊的數學史詩。
 
 定理的內容本身非常簡單，連國中生都能理解。
 

@@ -149,7 +149,7 @@ El tiempo que toma el cold start se divide a grandes rasgos en la **inicializaci
 
 ### 4.2. El cold start desde la teoría de la probabilidad
 
-La probabilidad de que ocurra un cold start se puede modelar matemáticamente utilizando la teoría de colas (como el modelo M/M/c).
+La probabilidad de que ocurra un cold start se puede modelar matemáticamente utilizando la [teoría de colas](/es/p/queuing-theory-basics/) (como el modelo M/M/c).
 Si definimos la tasa de llegada de peticiones como $\lambda$, el tiempo de vida de un contenedor precalentado como $T_w$, y el tiempo de procesamiento como $\mu$, un pico de tráfico causará un rápido aumento en el número de procesos paralelos requeridos (número de contenedores) e incrementará la probabilidad de cold start.
 
 En estado estacionario, la probabilidad de que un contenedor precalentado sea reutilizado, $P_{warm}$, puede aproximarse como sigue:

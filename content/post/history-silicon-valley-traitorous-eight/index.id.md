@@ -12,7 +12,7 @@ image: "eyecatch.jpg"
 
 Di dunia modern, "semikonduktor" adalah fondasi yang menopang semua teknologi seperti ponsel cerdas, komputer, internet, dan AI. Dan pusat dari industri semikonduktor ini, sekaligus tanah suci inovasi yang diidam-idamkan para wirausahawan di seluruh dunia, adalah "Lembah Silikon" (Silicon Valley) yang terletak di California Utara.
 
-Tempat yang dipenuhi perusahaan teknologi raksasa seperti Google, Apple, Meta (sebelumnya Facebook), dan Netflix ini tidak memiliki bentuk seperti sekarang sejak awal. Dahulu, tempat ini hanyalah daerah pertanian yang tenang dengan kebun buah-buahan, dikenal sebagai "Lembah Santa Clara". Mengapa tempat ini bisa berubah menjadi pusat teknologi terbaik di dunia?
+Tempat yang dipenuhi perusahaan teknologi raksasa seperti Google, Apple, Meta ([sebelumnya Facebook](/id/p/history-of-meta-facebook/)), dan Netflix ini tidak memiliki bentuk seperti sekarang sejak awal. Dahulu, tempat ini hanyalah daerah pertanian yang tenang dengan kebun buah-buahan, dikenal sebagai "Lembah Santa Clara". Mengapa tempat ini bisa berubah menjadi pusat teknologi terbaik di dunia?
 
 Awal dari semua itu dapat dikatakan berasal dari sebuah insiden "pengkhianatan" yang terjadi pada tahun 1957. Delapan insinyur muda dan brilian yang berkumpul di bawah seorang ilmuwan jenius memutuskan untuk meninggalkannya dan mendirikan perusahaan mereka sendiri. Mereka kemudian dikenal sebagai **"Delapan Pengkhianat" (Traitorous Eight)**.
 
@@ -33,7 +33,7 @@ Shockley, memanfaatkan ketenaran dan karisma yang luar biasa sebagai penerima Ha
 Di antara mereka, terdapat delapan orang berikut yang nantinya akan disebut sebagai "Delapan Pengkhianat":
 
 1. **Robert Noyce**: Seorang fisikawan dengan kepemimpinan yang karismatik. Ia kelak mendirikan Intel dan dijuluki "Wali Kota Lembah Silikon".
-2. **Gordon Moore**: Seorang ahli kimia yang pendiam dan bijaksana. Ia adalah penggagas "Hukum Moore" yang terkenal dan ikut mendirikan Intel bersama Noyce.
+2. **Gordon Moore**: Seorang ahli kimia yang pendiam dan bijaksana. Ia adalah penggagas "[Hukum Moore](/id/p/business-moores-law/)" yang terkenal dan ikut mendirikan Intel bersama Noyce.
 3. **Jean Hoerni**: Fisikawan teoretis asal Swiss. Ia kemudian menemukan "teknologi planar", yang sangat penting untuk pembuatan sirkuit terpadu (IC).
 4. **Eugene Kleiner**: Insinyur mesin asal Austria. Ia kelak mendirikan "Kleiner Perkins", perusahaan modal ventura terkemuka di Lembah Silikon.
 5. **Julius Blank**: Teman Kleiner dan insinyur mesin yang brilian.

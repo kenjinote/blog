@@ -35,7 +35,7 @@ Derrière le fait que le travail s'étale jusqu'à occuper tout le temps, les bi
 1. **L'illusion de la complexité**
    Lorsqu'il y a beaucoup de temps, les gens ont tendance à considérer inconsciemment le travail comme "important et complexe". Un rapport qui pourrait être simple se voit ajouter des décorations excessives ou des données inutiles, augmentant ainsi soi-même la difficulté de la tâche.
 2. **Le piège du perfectionnisme**
-   Tant que le temps le permet, on continue de réviser en se disant "Je pourrais faire mieux". Selon la loi de Pareto (loi des 80/20), le temps nécessaire pour obtenir 80% des résultats est de 20%, mais on gaspille 80% de temps pour perfectionner les 20% de qualité restants.
+   Tant que le temps le permet, on continue de réviser en se disant "Je pourrais faire mieux". Selon la loi de Pareto ([loi des 80/20](/fr/p/business-pareto-principle/)), le temps nécessaire pour obtenir 80% des résultats est de 20%, mais on gaspille 80% de temps pour perfectionner les 20% de qualité restants.
 3. **La procrastination**
    Si l'échéance est lointaine, la motivation humaine pour agir diminue. Le sentiment de sécurité que "j'ai encore le temps" enlève la tension, et par conséquent, on ne s'y met pas sérieusement avant la toute dernière minute.
 

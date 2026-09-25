@@ -152,7 +152,7 @@ A função `np.linalg.eig` da biblioteca NumPy retorna autovetores normalizados 
 
 ## Diagonalização de Matrizes e Seus Benefícios Poderosos
 
-Uma das aplicações mais importantes de autovalores e autovetores é a **diagonalização de matrizes**. A diagonalização é o processo de decompor uma matriz complexa $A$ usando uma matriz diagonal $D$ facilmente calculável, da seguinte forma:
+Uma das aplicações mais importantes de autovalores e autovetores é a **[diagonalização](/pt/p/diagonalization-and-jordan-normal-form/) de matrizes**. A [diagonalização](/pt/p/diagonalization-and-jordan-normal-form/) é o processo de decompor uma matriz complexa $A$ usando uma matriz diagonal $D$ facilmente calculável, da seguinte forma:
 
 $$ A = P D P^{-1} $$
 
@@ -164,9 +164,9 @@ $$
 P = \begin{pmatrix} 1 & 1 \\ -2 & 1 \end{pmatrix}, \quad D = \begin{pmatrix} 2 & 0 \\ 0 & 5 \end{pmatrix}
 $$
 
-Por que essa diagonalização é tão importante? Porque **ela torna o cálculo de potências de matrizes dramaticamente mais fácil**.
+Por que essa [diagonalização](/pt/p/diagonalization-and-jordan-normal-form/) é tão importante? Porque **ela torna o cálculo de potências de matrizes dramaticamente mais fácil**.
 
-Por exemplo, suponha que você queira calcular $A$ elevado a 100. Calcular $A^{100}$ diretamente exige uma quantidade imensa de cálculos. No entanto, usando a diagonalização:
+Por exemplo, suponha que você queira calcular $A$ elevado a 100. Calcular $A^{100}$ diretamente exige uma quantidade imensa de cálculos. No entanto, usando a [diagonalização](/pt/p/diagonalization-and-jordan-normal-form/):
 
 $$
 A^{100} = (P D P^{-1})(P D P^{-1}) \dots (P D P^{-1}) = P D^{100} P^{-1}
@@ -178,7 +178,7 @@ $$
 D^{100} = \begin{pmatrix} 2^{100} & 0 \\ 0 & 5^{100} \end{pmatrix}
 $$
 
-Esta propriedade é uma técnica indispensável ao prever estados de longo prazo em modelos de probabilidade como cadeias de Markov, ao resolver sistemas de equações diferenciais, ou mesmo ao procurar o termo geral da sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/).
+Esta propriedade é uma técnica indispensável ao prever estados de longo prazo em modelos de probabilidade como [cadeias de Markov](/pt/p/markov-chain/), ao resolver sistemas de equações diferenciais, ou mesmo ao procurar o termo geral da sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/).
 
 ## Aplicações no Mundo Real de [Autovalores e Autovetores](https://kenji.blog/pt/p/eigenvalues-and-eigenvectors/)
 

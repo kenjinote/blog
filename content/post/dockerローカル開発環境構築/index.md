@@ -13,7 +13,7 @@ tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 
 ソフトウェア開発の現場において、開発者間で環境が異なることに起因する「私の環境では動くのに（It works on my machine）」という問題は、長きにわたり多くのプロジェクトで時間を浪費させる要因となってきました。OSの違い、インストールされている言語のバージョン、ライブラリの依存関係、グローバルにインストールされたツールの競合など、ローカル環境は常に「状態の不確実性」に晒されています。
 
-こうした課題を根本から解決するのが **[Docker](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)** をはじめとするコンテナ技術と、 **Infrastructure as Code ([IaC](https://kenji.blog/p/iac-infrastructure-as-code-terraform/))** のパラダイムです。ローカル開発環境をコンテナ化することで、OSレベルでの分離を実現し、コードベースと共に環境そのものをバージョン管理することが可能になります。
+こうした課題を根本から解決するのが **[Docker](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)** をはじめとするコンテナ技術と、 **[Infrastructure as Code](/p/iac-infrastructure-as-code-terraform/) ([IaC](https://kenji.blog/p/iac-infrastructure-as-code-terraform/))** のパラダイムです。ローカル開発環境をコンテナ化することで、OSレベルでの分離を実現し、コードベースと共に環境そのものをバージョン管理することが可能になります。
 
 本記事では、Docker、Docker Compose、そしてVSCode Dev[Container](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)sを駆使し、 **「誰が、いつ、どのマシンで立ち上げても、寸分違わず同じ状態になる再現可能なローカル開発環境」** を構築するための手順と、その背後にある深い技術的メカニズムについて、数理的な視点も交えながら徹底的に解説します。
 
@@ -23,13 +23,13 @@ tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 
 ### IaCの原則とローカル環境への適用
 
-Infrastructure as Code (IaC) とは、インフラストラクチャの設定やプロビジョニングを、手動のプロセスではなく、機械可読な定義ファイルを通じて管理するアプローチです。IaCのコアとなる原則には以下の要素が含まれます。
+[Infrastructure as Code](/p/iac-infrastructure-as-code-terraform/) ([IaC](/p/iac-infrastructure-as-code-terraform/)) とは、インフラストラクチャの設定やプロビジョニングを、手動のプロセスではなく、機械可読な定義ファイルを通じて管理するアプローチです。[IaC](/p/iac-infrastructure-as-code-terraform/)のコアとなる原則には以下の要素が含まれます。
 
 1. **宣言的アプローチ (Declarative Approach)**: 「どのように状態を変更するか」ではなく「最終的にどのような状態であるべきか」を定義します。
 2. **冪等性 (Idempotency)**: 何度スクリプトを実行しても、常に同じ結果（状態）が保証されます。
 3. **バージョン管理 (Version Control)**: インフラの状態がコードとしてGitなどのVCSに保存され、変更履歴の追跡やピアレビューが可能になります。
 
-ローカル開発環境においてIaCを実践するということは、`Dockerfile` や `docker-compose.yml`、`devcontainer.json` を使って開発環境の「あるべき姿」をコード化することを意味します。これにより、新しくチームに加わったメンバーも、リポジトリをクローンしてコマンドを1つ叩くだけで、即座に開発をスタートできるオンボーディング体験を実現できます。
+ローカル開発環境において[IaC](/p/iac-infrastructure-as-code-terraform/)を実践するということは、`Dockerfile` や `docker-compose.yml`、`devcontainer.json` を使って開発環境の「あるべき姿」をコード化することを意味します。これにより、新しくチームに加わったメンバーも、リポジトリをクローンしてコマンドを1つ叩くだけで、即座に開発をスタートできるオンボーディング体験を実現できます。
 
 ### [コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)技術を支えるカーネル機能
 
@@ -356,7 +356,7 @@ sequenceDiagram
 
 $$ T_{\text{total}} = T_{\text{net}} + T_{\text{app}} + T_{\text{cache}} + p_{\text{miss}} \times (T_{\text{db}} + T_{\text{cache\_write}}) $$
 
-ローカル開発環境（[Docker](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)内）では、$T_{\text{net}}$ はほぼ 0 に近くなりますが、注目すべきは **バインドマウント時のI/Oパフォーマンス** です。特にWindows/macOS上でDocker Desktopを使用している場合、ホストOSとVM（コンテナ）間のファイル共有オーバーヘッドにより、$T_{\text{app}}$（コードの読み込み時間等）が肥大化する傾向があります。このボトルネックを解消するために、前述の Dev[Container](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)s を利用してソースコード全体を名前付きボリューム内に配置するか、WSL2（Windows Subsystem for Linux 2）環境ネイティブでDockerエンジンを動作させるアーキテクチャが強く推奨されます。
+ローカル開発環境（[Docker](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)内）では、$T_{\text{net}}$ はほぼ 0 に近くなりますが、注目すべきは **バインドマウント時のI/Oパフォーマンス** です。特にWindows/macOS上でDocker Desktopを使用している場合、ホストOSとVM（コンテナ）間のファイル共有オーバーヘッドにより、$T_{\text{app}}$（コードの読み込み時間等）が肥大化する傾向があります。このボトルネックを解消するために、前述の Dev[Container](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)s を利用してソースコード全体を名前付きボリューム内に配置するか、[WSL2](/p/wsl2-ultimate-development-setup-guide/)（[Windows Subsystem for Linux](/p/wsl2-ultimate-development-setup-guide/) 2）環境ネイティブでDockerエンジンを動作させるアーキテクチャが強く推奨されます。
 
 ---
 
@@ -413,7 +413,7 @@ COPY ./src /app/src
 
 Docker、Docker Compose、そしてVSCode Dev[Container](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)sを組み合わせることで、「誰が環境を立ち上げても完全に同じ状態になる」堅牢なローカル開発環境が実現します。
 
-[IaC](https://kenji.blog/p/iac-infrastructure-as-code-terraform/)のパラダイムをローカル環境に持ち込むことは、単に最初のセットアップ時間を短縮するだけではありません。インフラストラクチャの設定変更に対する不安を取り除き、新しい技術スタックの実験を容易にし、CI/CD[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)へのスムーズな移行を可能にするなど、開発サイクル全体の速度と品質を飛躍的に向上させます。
+[IaC](https://kenji.blog/p/iac-infrastructure-as-code-terraform/)のパラダイムをローカル環境に持ち込むことは、単に最初のセットアップ時間を短縮するだけではありません。インフラストラクチャの設定変更に対する不安を取り除き、新しい技術スタックの実験を容易にし、[CI/CD](/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)へのスムーズな移行を可能にするなど、開発サイクル全体の速度と品質を飛躍的に向上させます。
 
 本記事で解説したマルチステージビルドによるイメージサイズの最適化や、ヘルスチェックを用いた依存関係の制御、レイヤーキャッシュを意識したDockerfileの記述などのベストプラクティスを活用し、ぜひご自身のプロジェクトにも最高の開発体験（DX: Developer Experience）を導入してみてください。
 

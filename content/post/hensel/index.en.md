@@ -24,7 +24,7 @@ When he was young, his family moved to Berlin, where he received high-quality pr
 
 ## 3. University Days and [Kronecker](https://kenji.blog/en/p/kronecker/)'s Influence
 
-[Hensel](https://kenji.blog/en/p/hensel/) studied mathematics at the Universities of Bonn and Berlin. At the time, the University of Berlin was one of the world's centers for mathematical research, with giants such as **Karl Weierstrass** and **Leopold [Kronecker](https://kenji.blog/en/p/kronecker/)** teaching there.
+[Hensel](https://kenji.blog/en/p/hensel/) studied mathematics at the Universities of Bonn and Berlin. At the time, the University of Berlin was one of the world's centers for mathematical research, with giants such as **[Karl Weierstrass](/en/p/weierstrass/)** and **Leopold [Kronecker](https://kenji.blog/en/p/kronecker/)** teaching there.
 
 Among them, [Kronecker](https://kenji.blog/en/p/kronecker/) had the deepest influence on Hensel. As known from his famous quote, "God made the integers, all else is the work of man," Kronecker held a strong belief that all mathematics should be rigorously reconstructed based on integers. Under Kronecker's guidance, [Hensel](https://kenji.blog/en/p/hensel/) devoted himself deeply to algebra and number theory.
 

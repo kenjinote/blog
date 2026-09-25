@@ -46,7 +46,7 @@ Ini benar-benar mencerminkan **[Kapal Theseus](https://kenji.blog/id/p/ship-of-t
 
 ## 2. "Identitas" dalam Pemrograman Berorientasi Objek
 
-Saat memikirkan "identitas" di tingkat kode, konsep yang paling relevan adalah **Pemrograman Berorientasi Objek ([OOP](https://kenji.blog/id/p/object-oriented-programming-oop-solid-principles/))**. Dalam OOP, secara garis besar terdapat dua kriteria untuk menentukan identitas.
+Saat memikirkan "identitas" di tingkat kode, konsep yang paling relevan adalah **Pemrograman Berorientasi Objek ([OOP](https://kenji.blog/id/p/object-oriented-programming-oop-solid-principles/))**. Dalam [OOP](/id/p/object-oriented-programming-oop-solid-principles/), secara garis besar terdapat dua kriteria untuk menentukan identitas.
 
 1. **Kesetaraan Referensi (Reference Equality)**: Apakah merujuk ke lokasi memori yang sama (apakah pointernya sama)
 2. **Kesetaraan Nilai (Value Equality)**: Apakah semua atribut (data) yang dimiliki sama

@@ -42,7 +42,7 @@ Sein Leben wurde durch die Französische Revolution, die 1789 ausbrach, stark du
 
 ### 2.1 Leidenschaft für Zahlentheorie und das [Legendre](https://kenji.blog/de/p/legendre/)-Symbol
 
-[Legendre](https://kenji.blog/de/p/legendre/) war tief fasziniert von der Zahlentheorie, die von Vorgängern wie Pierre de Fermat und [Leonhard Euler](https://kenji.blog/de/p/euler/) vorangetrieben worden war. Eine seiner größten Errungenschaften ist seine Arbeit am "Quadratischen Reziprozitätsgesetz". Dieses Gesetz ist einer der schönsten und wichtigsten Lehrsätze der Zahlentheorie, um festzustellen, ob eine Primzahl kongruent zu einem Quadrat modulo einer anderen Primzahl ist.
+[Legendre](https://kenji.blog/de/p/legendre/) war tief fasziniert von der Zahlentheorie, die von Vorgängern wie [Pierre de Fermat](/de/p/fermat/) und [Leonhard Euler](https://kenji.blog/de/p/euler/) vorangetrieben worden war. Eine seiner größten Errungenschaften ist seine Arbeit am "Quadratischen Reziprozitätsgesetz". Dieses Gesetz ist einer der schönsten und wichtigsten Lehrsätze der Zahlentheorie, um festzustellen, ob eine Primzahl kongruent zu einem Quadrat modulo einer anderen Primzahl ist.
 
 Er formulierte dieses Gesetz und lieferte einen teilweisen Beweis (ein vollständiger Beweis wurde später vom jungen Gauss geliefert). Darüber hinaus führte er zur prägnanten und eleganten Darstellung dieser Forschung eine Notation ein, die heute als **[Legendre](https://kenji.blog/de/p/legendre/)-Symbol** bekannt ist.
 
@@ -91,11 +91,11 @@ $$
 
 Basierend auf seinen eigenen umfangreichen, handberechneten Daten schloss er, dass die Konstante $ A $ ungefähr $ 1,08366 $ betrug (in der Ausgabe seiner 'Théorie des Nombres' von 1808). Diese Formel legte nahe, dass sich die Dichte der Primzahlverteilung mit zunehmendem $ x $ an $ \frac{1}{\ln(x)} $ annähert, eine äußerst fortschrittliche Erkenntnis für die Mathematik der damaligen Zeit.
 
-Später stellte sich heraus, dass Gauss mit dem logarithmischen Integral $ \text{Li}(x) $ ebenfalls eine ähnliche Vermutung aufgestellt hatte, und schließlich wurde der Primzahlsatz 1896 von Jacques Hadamard und Charles de la Vallée Poussin vollständig und unabhängig bewiesen. Obwohl ihm ein strenger Beweis verwehrt blieb, zeigt es, wie im Kern richtig [Legendre](https://kenji.blog/de/p/legendre/)s Intuition war.
+Später stellte sich heraus, dass Gauss mit dem logarithmischen Integral $ \text{Li}(x) $ ebenfalls eine ähnliche Vermutung aufgestellt hatte, und schließlich wurde [der Primzahlsatz](/de/p/prime-number-theorem/) 1896 von Jacques Hadamard und Charles de la Vallée Poussin vollständig und unabhängig bewiesen. Obwohl ihm ein strenger Beweis verwehrt blieb, zeigt es, wie im Kern richtig [Legendre](https://kenji.blog/de/p/legendre/)s Intuition war.
 
 ## 3. Fehde mit Gauss: Die Tragödie um die Entdeckung der kleinsten Quadrate
 
-Wenn man über das Leben von [Legendre](https://kenji.blog/de/p/legendre/) spricht, kommt man nicht um den erbitterten Prioritätsstreit herum, insbesondere bezüglich der **Methode der kleinsten Quadrate**, mit [Carl Friedrich Gauss](https://kenji.blog/de/p/gauss/), dem "Fürsten der Mathematik" aus Deutschland.
+Wenn man über das Leben von [Legendre](https://kenji.blog/de/p/legendre/) spricht, kommt man nicht um den erbitterten Prioritätsstreit herum, insbesondere bezüglich der **[Methode der kleinsten Quadrate](/de/p/method-of-least-squares/)**, mit [Carl Friedrich Gauss](https://kenji.blog/de/p/gauss/), dem "Fürsten der Mathematik" aus Deutschland.
 
 Im Jahr 1805 kündigte [Legendre](https://kenji.blog/de/p/legendre/) in seinem Buch über die Berechnung der Kometenbahnen zum ersten Mal weltweit die "[Methode der kleinsten Quadrate](https://kenji.blog/de/p/method-of-least-squares/)" an – eine Methode zur Ermittlung des wahrscheinlichsten Wertes durch Minimierung der Fehler von Beobachtungsdaten. Dies war eine revolutionäre Technik, die die Grundlage für jeden Bereich bildet, der sich mit Daten befasst, von Astronomie und Geodäsie bis hin zu moderner Statistik und maschinellem Lernen.
 

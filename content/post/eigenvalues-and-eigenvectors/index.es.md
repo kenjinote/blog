@@ -178,7 +178,7 @@ $$
 D^{100} = \begin{pmatrix} 2^{100} & 0 \\ 0 & 5^{100} \end{pmatrix}
 $$
 
-Esta propiedad es una técnica indispensable al predecir estados a largo plazo en modelos de probabilidad como las cadenas de Markov, al resolver sistemas de ecuaciones diferenciales, o incluso al buscar el término general de la secuencia de [Fibonacci](https://kenji.blog/es/p/fibonacci/).
+Esta propiedad es una técnica indispensable al predecir estados a largo plazo en modelos de probabilidad como las [cadenas de Markov](/es/p/markov-chain/), al resolver sistemas de ecuaciones diferenciales, o incluso al buscar el término general de la secuencia de [Fibonacci](https://kenji.blog/es/p/fibonacci/).
 
 ## Aplicaciones en el mundo real de los valores propios y vectores propios
 

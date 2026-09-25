@@ -40,7 +40,7 @@ Zu Beginn der 1930er Jahre kamen jedoch in Deutschland die Nationalsozialisten (
 
 Da sich die Forschungs- und Lebensbedingungen in Deutschland unter dem Nazi-Regime drastisch verschlechterten und seine eigene persönliche Sicherheit gefährdet war, traf Siegel schließlich die Entscheidung, seine Heimat zu verlassen. Im Jahr 1940, kurz nach Ausbruch des Zweiten Weltkriegs, gelang ihm über eine gefährliche Route durch Dänemark und Norwegen die Flucht in die Vereinigten Staaten.
 
-In den USA wurde er am Institute for Advanced Study (IAS) in Princeton, New Jersey, aufgenommen. Damals war das IAS zu einem Zufluchtsort für die größten Köpfe geworden, die vor dem Krieg in Europa flohen, und Siegel genoss ein erfülltes Forschungsleben an der Seite von Größen wie Albert Einstein, John von Neumann und Hermann Weyl. Während seiner Jahre in Amerika erstreckte sich Siegels Forschung über die Zahlentheorie hinaus; er erzielte nacheinander äußerst wichtige Ergebnisse in den Bereichen der Himmelsmechanik und der Theorie analytischer Funktionen.
+In den USA wurde er am Institute for Advanced Study (IAS) in Princeton, New Jersey, aufgenommen. Damals war das IAS zu einem Zufluchtsort für die größten Köpfe geworden, die vor dem Krieg in Europa flohen, und Siegel genoss ein erfülltes Forschungsleben an der Seite von Größen wie Albert Einstein, [John von Neumann](/de/p/von-neumann/) und Hermann Weyl. Während seiner Jahre in Amerika erstreckte sich Siegels Forschung über die Zahlentheorie hinaus; er erzielte nacheinander äußerst wichtige Ergebnisse in den Bereichen der Himmelsmechanik und der Theorie analytischer Funktionen.
 
 ### 2.4 Rückkehr nach Göttingen und späte Jahre
 

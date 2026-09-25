@@ -83,11 +83,11 @@ graph TD
 
 ## Conexão com a Matemática e a Lógica: Um parente do Paradoxo de Russell
 
-Este paradoxo não é um simples erro de cálculo ou ilusão como o "enigma do dólar desaparecido". Ele possui essencialmente a mesma estrutura do **Paradoxo de Russell** ("O conjunto de todos os conjuntos que não contêm a si mesmos contém a si mesmo?"), que abalou os fundamentos da matemática.
+Este paradoxo não é um simples erro de cálculo ou ilusão como o "enigma do dólar desaparecido". Ele possui essencialmente a mesma estrutura do **[Paradoxo de Russell](/pt/p/russells-paradox/)** ("O conjunto de todos os conjuntos que não contêm a si mesmos contém a si mesmo?"), que abalou os fundamentos da matemática.
 
-O paradoxo de Grelling-Nelson pode ser considerado a versão semântica (do significado das palavras) do paradoxo de Russell.
+O paradoxo de Grelling-Nelson pode ser considerado a versão semântica (do significado das palavras) do [paradoxo de Russell](/pt/p/russells-paradox/).
 
-O Paradoxo de Russell na Teoria dos Conjuntos:
+O [Paradoxo de Russell](/pt/p/russells-paradox/) na Teoria dos Conjuntos:
 $$ R = \{ x \mid x \notin x \} $$
 Ao definir tal conjunto, questionar se $R \in R$ ou $R \notin R$ resulta em uma contradição.
 

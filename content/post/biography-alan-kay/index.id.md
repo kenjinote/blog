@@ -39,7 +39,7 @@ Pada tahun 1970-an, Kay bergabung dengan Pusat Penelitian Palo Alto (PARC) milik
 
 Dari penelitian tersebut, lahirlah bahasa pemrograman "Smalltalk". Smalltalk adalah implementasi lengkap pertama di dunia dari konsep "Pemrograman Berorientasi Objek", di mana semua elemen diperlakukan sebagai "objek" dan program beroperasi melalui objek-objek yang saling mengirim "pesan".
 
-Pada saat yang sama, "GUI (Graphical User Interface)" yang menggunakan jendela, ikon, mouse, dan penunjuk dikembangkan sebagai lingkungan operasi untuk Smalltalk. Selain itu, "Xerox Alto" diciptakan sebagai prototipe perangkat keras untuk menjalankan perangkat lunak ini. Pencapaian bersejarah di PARC ini memberikan inspirasi yang kuat kepada Steve Jobs dari Apple yang mengunjungi laboratorium tersebut pada tahun 1979, yang kemudian berujung pada kelahiran Lisa dan Macintosh.
+Pada saat yang sama, "GUI (Graphical User Interface)" yang menggunakan jendela, ikon, mouse, dan penunjuk dikembangkan sebagai lingkungan operasi untuk Smalltalk. Selain itu, "Xerox Alto" diciptakan sebagai prototipe perangkat keras untuk menjalankan perangkat lunak ini. Pencapaian bersejarah di PARC ini memberikan inspirasi yang kuat kepada [Steve Jobs](/id/p/biography-steve-jobs/) dari Apple yang mengunjungi laboratorium tersebut pada tahun 1979, yang kemudian berujung pada kelahiran Lisa dan Macintosh.
 
 ```mermaid
 graph TD

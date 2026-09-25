@@ -10,7 +10,7 @@ image: "eyecatch.jpg"
 
 ## 1. Einleitung: Ist die "Objektorientierung", die wir kennen, echt?
 
-In der modernen Softwareentwicklung vergeht kaum ein Tag, an dem man nicht den Begriff "Objektorientierte Programmierung (OOP)" hört. Die meisten Mainstream-Programmiersprachen wie Java, C#, Python, Ruby und C++ haben objektorientierte Paradigmen übernommen, was sie zu einem unverzichtbaren Wissen für Entwickler macht.
+In der modernen Softwareentwicklung vergeht kaum ein Tag, an dem man nicht den Begriff "Objektorientierte Programmierung ([OOP](/de/p/object-oriented-programming-oop-solid-principles/))" hört. Die meisten Mainstream-Programmiersprachen wie Java, C#, Python, Ruby und C++ haben objektorientierte Paradigmen übernommen, was sie zu einem unverzichtbaren Wissen für Entwickler macht.
 
 Wussten Sie jedoch, dass die "drei Hauptelemente der Objektorientierung", die viele Entwickler zuerst lernen – nämlich "Kapselung" (Encapsulation), "Vererbung" (Inheritance) und "Polymorphismus" (Polymorphism) –, tatsächlich stark von der Essenz abweichen, die Alan Kay, der Vater der Objektorientierung, ursprünglich beabsichtigte?
 
@@ -72,7 +72,7 @@ Die Merkmale des Messaging sind wie folgt:
 2. **Delegieren und Ignorieren von Nachrichten**
    Wenn ein Objekt eine Nachricht erhält, die es nicht versteht, kann es nicht nur einfach einen Fehler auslösen, sondern autonom und flexibel reagieren, indem es die Nachricht an ein anderes Objekt weiterleitet (Forwarding) oder ignoriert.
 3. **Transparenz im Netzwerk**
-   Das Paradigma des Messaging ermöglicht es, Objekte im selben Speicherraum (Prozess) genau so zu behandeln wie Objekte auf verschiedenen Servern über ein Netzwerk. Während ein Methodenaufruf zwingend den gleichen Speicherraum voraussetzt, besitzt das Messaging die Eigenschaft, natürlich auf verteilte Systeme zu skalieren.
+   Das Paradigma des Messaging ermöglicht es, Objekte im selben Speicherraum (Prozess) genau so zu behandeln wie Objekte auf verschiedenen Servern über ein Netzwerk. Während ein Methodenaufruf zwingend den gleichen Speicherraum voraussetzt, besitzt das Messaging die Eigenschaft, natürlich auf [verteilte Systeme](/de/p/cap-theorem-distributed-systems-tradeoff/) zu skalieren.
 
 ## 4. Warum wurden "Klassen" und "Vererbung" zur Quelle von Missverständnissen?
 
@@ -116,7 +116,7 @@ flowchart LR
 
 In Erlang/Elixir laufen Hunderttausende leichtgewichtige Aktoren (Prozesse) parallel und bilden durch den Austausch von Nachrichten riesige Systeme. Selbst wenn ein Aktor abstürzt, wird eine extrem hohe Fehlertoleranz erreicht, beispielsweise indem andere Aktoren eine Nachricht senden, um ihn neu zu starten (der "Let it crash"-Ansatz).
 
-Darüber hinaus kann die moderne **"Microservices-Architektur"** im Wesentlichen als eine riesige, messaging-orientierte Version der Objektorientierung betrachtet werden. Betrachtet man jeden Microservice als ein riesiges "Objekt", verbergen sie ihre eigenen Datenbanken (innerer Zustand) vollständig und bauen das gesamte System durch den Austausch von "Nachrichten" über REST-APIs, gRPC, Kafka usw. auf.
+Darüber hinaus kann die moderne **"[Microservices-Architektur](/de/p/microservices-architecture-bff-api-gateway/)"** im Wesentlichen als eine riesige, messaging-orientierte Version der Objektorientierung betrachtet werden. Betrachtet man jeden Microservice als ein riesiges "Objekt", verbergen sie ihre eigenen Datenbanken (innerer Zustand) vollständig und bauen das gesamte System durch den Austausch von "Nachrichten" über REST-APIs, gRPC, Kafka usw. auf.
 
 Alan Kays Vision von "Objekten, die über verschiedene Knoten im Netzwerk verteilt sind und sich gegenseitig Nachrichten senden", ist in der Cloud-Native-Ära unerwartet in Form von Microservices Realität geworden.
 

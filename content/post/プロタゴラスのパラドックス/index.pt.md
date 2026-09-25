@@ -87,8 +87,8 @@ Em outras palavras, a resposta é que tentar resolver o paradoxo "simultaneament
 
 ## A Conexão com Paradoxos de Autorreferência
 
-O Paradoxo de Protágoras possui a mesma **estrutura de autorreferência** de paradoxos como o "Paradoxo do Mentiroso ('Esta frase é falsa')" e o "Paradoxo de Russell". Uma determinada proposição (a conclusão do julgamento) afeta a condição (o cumprimento do contrato) que determina a sua própria verdade ou falsidade.
+O Paradoxo de Protágoras possui a mesma **estrutura de autorreferência** de paradoxos como o "Paradoxo do Mentiroso ('Esta frase é falsa')" e o "[Paradoxo de Russell](/pt/p/russells-paradox/)". Uma determinada proposição (a conclusão do julgamento) afeta a condição (o cumprimento do contrato) que determina a sua própria verdade ou falsidade.
 
-Esse tipo de paradoxo tem uma profunda conexão com problemas que demonstram os limites fundamentais da lógica e da computação, como o "Problema da Parada" (a impossibilidade de criar um programa que determine se outro programa irá parar ou não) e os Teoremas da Incompletude de Gödel na ciência da computação moderna.
+Esse tipo de paradoxo tem uma profunda conexão com problemas que demonstram os limites fundamentais da lógica e da computação, como o "Problema da Parada" (a impossibilidade de criar um programa que determine se outro programa irá parar ou não) e [os Teoremas da Incompletude de Gödel](/pt/p/godels-incompleteness-theorems/) na ciência da computação moderna.
 
 O Paradoxo de Protágoras é um aviso de 2.400 anos atrás que nos ensina que os sistemas de regras criados pelo homem (leis e contratos) podem entrar em colapso interno devido a autorreferências engenhosas.

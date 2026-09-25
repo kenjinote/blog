@@ -15,9 +15,9 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 Am nächsten an dieses Rätsel der Primzahlen kam die 1859 von dem deutschen Mathematiker [Bernhard Riemann](https://kenji.blog/de/p/riemann/) aufgestellte **"Riemannsche Vermutung" (Riemann Hypothesis)** heran. Die [Riemann](https://kenji.blog/de/p/riemann/)sche Vermutung ist eines der wichtigsten und ungelösten Probleme der modernen Mathematik und als eines der Millennium-Probleme des Clay Mathematics Institute mit einem Preisgeld von einer Million Dollar dotiert.
 
-Auf den ersten Blick mag ein Problem der reinen Mathematik über die Verteilung von Primzahlen nichts mit unserem Alltag zu tun haben. Die Sicherheit des Internets, das die Infrastruktur der modernen Gesellschaft stützt, insbesondere **moderne Verschlüsselungstechnologien wie die [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie und die Elliptische-Kurven-Kryptographie (ECC)**, hängt jedoch stark von den Eigenschaften riesiger Primzahlen ab.
+Auf den ersten Blick mag ein Problem der reinen Mathematik über die Verteilung von Primzahlen nichts mit unserem Alltag zu tun haben. Die Sicherheit des Internets, das die Infrastruktur der modernen Gesellschaft stützt, insbesondere **moderne Verschlüsselungstechnologien wie die [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie und die Elliptische-Kurven-Kryptographie ([ECC](/de/p/elliptic-curve-cryptography-math-cpp/))**, hängt jedoch stark von den Eigenschaften riesiger Primzahlen ab.
 
-In diesem Artikel begeben wir uns auf eine mathematische Reise von der Verteilung der Primzahlen über den Primzahlsatz und die [Riemann](https://kenji.blog/de/p/riemann/)sche Zeta-Funktion bis hin zum Kern der Riemannschen Vermutung. Wir werden extrem detailliert und tiefgreifend erklären, wie all dies mit der modernen Kryptographie verbunden ist und was mit der Welt passieren würde, wenn die [Riemann](https://kenji.blog/de/p/riemann/)sche Vermutung bewiesen werden sollte.
+In diesem Artikel begeben wir uns auf eine mathematische Reise von der Verteilung der Primzahlen über den [Primzahlsatz](/de/p/prime-number-theorem/) und die [Riemann](https://kenji.blog/de/p/riemann/)sche Zeta-Funktion bis hin zum Kern der Riemannschen Vermutung. Wir werden extrem detailliert und tiefgreifend erklären, wie all dies mit der modernen Kryptographie verbunden ist und was mit der Welt passieren würde, wenn die [Riemann](https://kenji.blog/de/p/riemann/)sche Vermutung bewiesen werden sollte.
 
 ---
 
@@ -36,7 +36,7 @@ Dies wird mit Hilfe eines Integrals als **Integrallogarithmus (Logarithmic integ
 
 $$ \text{Li}(x) = \int_{2}^{x} \frac{dt}{\ln t} $$
 
-Die Vermutung von Gauss wurde später 1896 von Jacques Hadamard und Charles-Jean de La Vallée Poussin unabhängig voneinander bewiesen und als **Primzahlsatz ([Prime Number Theorem](https://kenji.blog/de/p/prime-number-theorem/), PNT)** etabliert.
+Die Vermutung von Gauss wurde später 1896 von Jacques Hadamard und Charles-Jean de La Vallée Poussin unabhängig voneinander bewiesen und als **[Primzahlsatz](/de/p/prime-number-theorem/) ([Prime Number Theorem](https://kenji.blog/de/p/prime-number-theorem/), PNT)** etabliert.
 
 $$ \lim_{x \to \infty} \frac{\pi(x)}{\text{Li}(x)} = 1 $$
 
@@ -110,7 +110,7 @@ Warum ist die [Riemann](https://kenji.blog/de/p/riemann/)sche Vermutung so wicht
 $$ \psi(x) = x - \sum_{\rho} \frac{x^\rho}{\rho} - \ln(2\pi) - \frac{1}{2}\ln(1 - x^{-2}) $$
 
 Hierbei ist $\rho$ die Summe über alle nicht-trivialen Nullstellen der Zeta-Funktion.
-Der Hauptterm ist $x$ (der dem Primzahlsatz entspricht), und durch Addition und Subtraktion von wellenartigen Termen, die von den Nullstellen $\rho$ abhängen, wird die genaue treppenförmige Verteilung der Primzahlen wiederhergestellt. Man kann sagen, dass die nicht-trivialen Nullstellen die "Frequenzen (Wellen)" der Primzahlverteilung darstellen.
+Der Hauptterm ist $x$ (der dem [Primzahlsatz](/de/p/prime-number-theorem/) entspricht), und durch Addition und Subtraktion von wellenartigen Termen, die von den Nullstellen $\rho$ abhängen, wird die genaue treppenförmige Verteilung der Primzahlen wiederhergestellt. Man kann sagen, dass die nicht-trivialen Nullstellen die "Frequenzen (Wellen)" der Primzahlverteilung darstellen.
 
 Wenn die [Riemann](https://kenji.blog/de/p/riemann/)sche Vermutung wahr ist und der Realteil aller nicht-trivialen Nullstellen $\rho$ genau $1/2$ beträgt, dann wird der Fehlerterm des Primzahlsatzes theoretisch auf den kleinstmöglichen Bereich beschränkt sein.
 

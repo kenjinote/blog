@@ -69,7 +69,7 @@ Os microsserviços têm as seguintes luzes (benefícios):
 
 ## 3. A "Sombra" dos Microsserviços: Desafios Operacionais
 
-No entanto, microsserviços não são uma "bala de prata". Ao descentralizar o sistema, a complexidade peculiar dos sistemas distribuídos surge como uma "sombra".
+No entanto, microsserviços não são uma "bala de prata". Ao descentralizar o sistema, a complexidade peculiar dos [sistemas distribuídos](/pt/p/cap-theorem-distributed-systems-tradeoff/) surge como uma "sombra".
 
 ### 3.1. Latência de rede e complexidade de comunicação
 Processos que antes eram chamadas de funções em memória em um monolito, agora se tornam comunicação através da rede (HTTP/REST, gRPC, etc.). Isso gera **latência de rede** e corre-se o risco de diminuir a velocidade de resposta de todo o sistema. Além disso, como as redes são sempre instáveis, é necessário implementar controles de comunicação complexos, como timeouts, controle de tentativas (retries) e circuit breakers.
@@ -219,7 +219,7 @@ Com esta implementação, o cliente só precisa chamar uma consulta GraphQL `use
 
 ## 7. Conclusão
 
-A Arquitetura de Microsserviços é uma abordagem poderosa para evoluir sistemas gigantes para uma forma escalável, mas é necessário enfrentar os desafios da "sombra" que são únicos aos sistemas distribuídos.
+A Arquitetura de Microsserviços é uma abordagem poderosa para evoluir sistemas gigantes para uma forma escalável, mas é necessário enfrentar os desafios da "sombra" que são únicos aos [sistemas distribuídos](/pt/p/cap-theorem-distributed-systems-tradeoff/).
 
 Como meio para resolver esses desafios e otimizar a comunicação entre o cliente e o back-end, o **API Gateway** e o **padrão BFF** tornaram-se indispensáveis. O BFF, em particular, que estabelece endpoints dedicados para cada tipo de cliente, é uma arquitetura fantástica que libera o ritmo de evolução da UI das restrições do back-end.
 

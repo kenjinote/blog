@@ -56,7 +56,7 @@ Karakteristik terbesar yang membedakan Churchill dari banyak politisi lainnya ad
 
 Dalam pemilihan umum tahun 1945 segera setelah kemenangan dalam perang, Partai Konservatif yang dipimpinnya menderita kekalahan telak yang tak terduga. Akan tetapi, bahkan setelah turun dari jabatannya, pengaruh internasionalnya tidak memudar. Dalam pidato tahun 1946 di Fulton, Missouri, AS, ia menunjuk negara-negara Eropa Timur di bawah pengaruh Soviet dan berkata, "Dari Stettin di Baltik hingga Trieste di Adriatik, sebuah 'Tirai Besi (Iron Curtain)' telah turun membentang di Benua ini." Kata-kata ini menjadi konsep penentu bagi tatanan dunia baru dalam Perang Dingin berikutnya.
 
-Ia kemudian kembali ke jabatan Perdana Menteri pada tahun 1951 dan memikul beban politik nasional hingga ia pensiun karena alasan kesehatan pada tahun 1955. Ketika ia meninggal dunia pada tahun 1965 pada usia 90 tahun, Inggris melepas kepergiannya dengan pemakaman kenegaraan. Pemakaman kenegaraan bagi seseorang di luar keluarga kerajaan adalah kehormatan luar biasa yang belum pernah terlihat lagi sejak Isaac Newton dan Horatio Nelson.
+Ia kemudian kembali ke jabatan Perdana Menteri pada tahun 1951 dan memikul beban politik nasional hingga ia pensiun karena alasan kesehatan pada tahun 1955. Ketika ia meninggal dunia pada tahun 1965 pada usia 90 tahun, Inggris melepas kepergiannya dengan pemakaman kenegaraan. Pemakaman kenegaraan bagi seseorang di luar keluarga kerajaan adalah kehormatan luar biasa yang belum pernah terlihat lagi sejak [Isaac Newton](/id/p/newton/) dan Horatio Nelson.
 
 ## Kesimpulan: Filosofi yang Ditinggalkan Churchill untuk Dunia Modern
 

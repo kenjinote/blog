@@ -28,9 +28,9 @@ $$A = U \Sigma V^T \quad (\text{行列の特異値分解})$$
 
 ## 2. 固有値分解との違い
 
-正方行列に対しては、固有値分解 $A = P \[Lambda](https://kenji.blog/p/serverless-architecture-aws-lambda-cold-start/) P^{-1}$ がよく知られています。しかし、固有値分解は以下の制限があります。
+正方行列に対しては、[固有値](/p/eigenvalues-and-eigenvectors/)分解 $A = P \[Lambda](https://kenji.blog/p/serverless-architecture-aws-lambda-cold-start/) P^{-1}$ がよく知られています。しかし、[固有値](/p/eigenvalues-and-eigenvectors/)分解は以下の制限があります。
 - 行列が正方行列（$n \times n$）でなければ適用できない。
-- 正方行列であっても、常に対角化できるとは限らない。
+- 正方行列であっても、常に[対角化](/p/diagonalization-and-jordan-normal-form/)できるとは限らない。
 
 一方で、 **特異値分解** は、正方行列でない $m \times n$ の任意の行列に対しても常に存在します。これが、データ分析において SVD が極めて有用である理由の1つです。
 

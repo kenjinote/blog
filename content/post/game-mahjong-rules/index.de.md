@@ -16,7 +16,7 @@ tags:
 
 ## 1. Ein Puzzle-Spiel für 4 Spieler mit 136 Ziegeln
 
-Mahjong ist ein Tischspiel, das seinen Ursprung in China hat und sich in Japan als eigenständiges "Riichi-Mahjong" weiterentwickelt hat. In den letzten Jahren wird es durch die Professionalisierung, wie etwa die M.League, als hochgradig anspruchsvoller Denksport neu bewertet.
+Mahjong ist ein Tischspiel, das seinen Ursprung in China hat und sich in Japan als eigenständiges "Riichi-Mahjong" weiterentwickelt hat. In den letzten Jahren wird es durch die Professionalisierung, wie etwa die M.League, als hochgradig anspruchsvoller [Denksport](/de/p/game-poker-rules/) neu bewertet.
 
 Auf den ersten Blick mag es aufgrund der vielen Ziegel (Pai) mit chinesischen Schriftzeichen und Symbolen kompliziert wirken, aber im Kern ist es ein **Set-Matching-Puzzlespiel**, ähnlich wie "Poker" oder "Rommé" bei Kartenspielen.
 Die Grundregel ist sehr einfach: "**Wer als Erster durch Kombination von 14 Ziegeln eine bestimmte Form (die Gewinnhand) bildet, gewinnt (und erhält Punkte)**".

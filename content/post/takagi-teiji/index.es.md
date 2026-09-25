@@ -110,7 +110,7 @@ Más allá de sus logros matemáticos, Teiji [Takagi](https://kenji.blog/es/p/ta
 - **"Lecciones de teoría elemental de números"**: Un libro de texto que explica todo, desde los conceptos básicos de la teoría de números hasta la ley de reciprocidad de Gauss.
 - **"Relatos históricos de las matemáticas modernas"**: Un libro histórico que describe vívidamente el conjunto de matemáticos del siglo XIX. Transmite el drama del desarrollo matemático.
 
-Las semillas que sembró se transmitieron a los matemáticos japoneses que más tarde estarían activos en todo el mundo, como [Kunihiko Kodaira](https://kenji.blog/es/p/kodaira-kunihiko/), Kiyoshi Ito, y además, Goro Shimura y [Yutaka Taniyama](https://kenji.blog/es/p/taniyama-yutaka/).
+Las semillas que sembró se transmitieron a los matemáticos japoneses que más tarde estarían activos en todo el mundo, como [Kunihiko Kodaira](https://kenji.blog/es/p/kodaira-kunihiko/), Kiyoshi Ito, y además, [Goro Shimura](/es/p/shimura-goro/) y [Yutaka Taniyama](https://kenji.blog/es/p/taniyama-yutaka/).
 
 ## Conclusión
 

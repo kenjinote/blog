@@ -13,7 +13,7 @@ description: "\"Mata ganti mata hanya akan membuat seluruh dunia buta.\""
 
 "Mata ganti mata hanya akan membuat seluruh dunia buta."
 
-Mohandas Karamchand Gandhi (biasa dikenal sebagai Mahatma Gandhi), yang meninggalkan kata-kata ini, adalah salah satu pemimpin paling berpengaruh di abad ke-20. Filosofinya tentang "pembangkangan sipil tanpa kekerasan (Satyagraha)" tidak hanya memimpin India menuju kemerdekaan dari penjajahan Inggris, tetapi juga sangat memengaruhi gerakan hak-hak sipil dan pembebasan di seluruh dunia, termasuk Martin Luther King Jr. dan Nelson Mandela. Artikel ini menggali lebih dalam kehidupan dan filosofinya, mengeksplorasi bagaimana ia kemudian disebut sebagai "Jiwa Agung (Mahatma)".
+Mohandas Karamchand Gandhi (biasa dikenal sebagai Mahatma Gandhi), yang meninggalkan kata-kata ini, adalah salah satu pemimpin paling berpengaruh di abad ke-20. Filosofinya tentang "pembangkangan sipil tanpa kekerasan (Satyagraha)" tidak hanya memimpin India menuju kemerdekaan dari penjajahan Inggris, tetapi juga sangat memengaruhi gerakan hak-hak sipil dan pembebasan di seluruh dunia, termasuk [Martin Luther King Jr.](/id/p/biography-martin-luther-king-jr/) dan [Nelson Mandela](/id/p/biography-nelson-mandela/). Artikel ini menggali lebih dalam kehidupan dan filosofinya, mengeksplorasi bagaimana ia kemudian disebut sebagai "Jiwa Agung (Mahatma)".
 
 ## Belajar di London dan Pencerahan di Afrika Selatan
 
@@ -45,7 +45,7 @@ Namun, pada tanggal 30 Januari 1948, hanya setengah tahun setelah kemerdekaan, G
 
 Kehidupan Gandhi membuktikan bagaimana "kekuatan roh" yang dimiliki oleh seorang manusia dapat menggerakkan sebuah kerajaan raksasa. Filosofinya tentang "pembangkangan sipil tanpa kekerasan" telah melampaui batas dan era, diwariskan kepada generasi mendatang.
 
-Martin Luther King Jr., yang memimpin gerakan hak-hak sipil Amerika, berkata, "Kristus memberikan semangat dan motivasi, sementara Gandhi memberikan metodenya," dan meluncurkan gerakan untuk menghapus diskriminasi rasial melalui tanpa kekerasan. Lebih jauh, banyak pemimpin perdamaian, seperti Nelson Mandela, yang berjuang melawan kebijakan apartheid Afrika Selatan, dan Dalai Lama ke-14 dari Tibet, sangat dipengaruhi oleh filosofi Gandhi.
+[Martin Luther King Jr.](/id/p/biography-martin-luther-king-jr/), yang memimpin gerakan hak-hak sipil Amerika, berkata, "Kristus memberikan semangat dan motivasi, sementara Gandhi memberikan metodenya," dan meluncurkan gerakan untuk menghapus diskriminasi rasial melalui tanpa kekerasan. Lebih jauh, banyak pemimpin perdamaian, seperti [Nelson Mandela](/id/p/biography-nelson-mandela/), yang berjuang melawan kebijakan apartheid Afrika Selatan, dan Dalai Lama ke-14 dari Tibet, sangat dipengaruhi oleh filosofi Gandhi.
 
 Bahkan dalam masyarakat modern, dalam menghadapi banyak tantangan yang kita hadapi, seperti konflik, perpecahan, dan masalah lingkungan, ajaran Gandhi, "Jadilah perubahan yang ingin Anda lihat di dunia," terus bergema tanpa memudar.
 

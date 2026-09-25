@@ -35,7 +35,7 @@ Die größte technische Herausforderung beim Aufbau des Netzwerks bestand darin,
 Um dieses Problem zu lösen, wurde gleichzeitig und unabhängig voneinander ein völlig neues Kommunikationskonzept entwickelt: das "Paketvermittlungsverfahren" (Packet Switching).
 
 Paul Baran, der für die RAND Corporation in den USA arbeitete, entwickelte die Theorie eines "verteilten Netzwerks", in dem Daten in kleine Stücke zerlegt und über verschiedene Pfade durch ein maschenartiges Netzwerk übertragen werden, um die Überlebensfähigkeit der militärischen Kommunikation zu erhöhen.
-Unabhängig davon gelangte auch Donald Davies vom National Physical Laboratory (NPL) in Großbritannien zu einem ähnlichen Konzept und nannte die Datenblöcke "Pakete". Darüber hinaus bewies Leonard Kleinrock vom Massachusetts Institute of Technology (MIT) die Effizienz dieser Datenübertragungsmethode mathematisch mithilfe der Warteschlangentheorie.
+Unabhängig davon gelangte auch Donald Davies vom National Physical Laboratory (NPL) in Großbritannien zu einem ähnlichen Konzept und nannte die Datenblöcke "Pakete". Darüber hinaus bewies Leonard Kleinrock vom Massachusetts Institute of Technology (MIT) die Effizienz dieser Datenübertragungsmethode mathematisch mithilfe der [Warteschlangentheorie](/de/p/queuing-theory-basics/).
 
 ```mermaid
 graph TD

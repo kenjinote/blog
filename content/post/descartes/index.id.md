@@ -67,7 +67,7 @@ $$
 
 ## 4. Dampak pada Filsafat dan Sains
 
-Geometri analitik [Descartes](https://kenji.blog/id/p/descartes/) menjadi fondasi yang sangat diperlukan untuk perkembangan matematika dan fisika selanjutnya. Dapat dikatakan bahwa penciptaan kalkulus oleh Isaac Newton dan [Gottfried Leibniz](https://kenji.blog/id/p/leibniz/) hanya mungkin terjadi karena panggung yang disediakan oleh sistem koordinat Kartesius.
+Geometri analitik [Descartes](https://kenji.blog/id/p/descartes/) menjadi fondasi yang sangat diperlukan untuk perkembangan matematika dan fisika selanjutnya. Dapat dikatakan bahwa penciptaan kalkulus oleh [Isaac Newton](/id/p/newton/) dan [Gottfried Leibniz](https://kenji.blog/id/p/leibniz/) hanya mungkin terjadi karena panggung yang disediakan oleh sistem koordinat Kartesius.
 
 Selain itu, "keraguan metodologis" miliknya dalam filsafat, sebuah pendekatan untuk menemukan kebenaran yang pasti setelah meragukan segalanya, menetapkan semangat rasionalisme yang berfungsi sebagai dasar penyelidikan ilmiah.
 

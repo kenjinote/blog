@@ -184,7 +184,7 @@ Obsidian의 백링크 기능(`[[노트명]]`)을 사용하면, 예를 들어 '[R
 
 ## 5. 벡터 데이터베이스(Pinecone)와 OpenAI Embeddings를 이용한 시맨틱 검색
 
-노트의 수가 늘어나 수백, 수천 개가 되면, 단순한 키워드 검색(전문 검색)으로는 목적하는 노트를 찾기가 어려워집니다. '키워드는 기억나지 않지만, 개념적으로 비슷한 노트를 찾고 싶다'고 할 때 위력을 발휘하는 것이 대규모 언어 모델([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 Embeddings를 활용한 시맨틱(의미적) 검색입니다.
+노트의 수가 늘어나 수백, 수천 개가 되면, 단순한 키워드 검색(전문 검색)으로는 목적하는 노트를 찾기가 어려워집니다. '키워드는 기억나지 않지만, 개념적으로 비슷한 노트를 찾고 싶다'고 할 때 위력을 발휘하는 것이 [대규모 언어 모델](/ko/p/large-language-models-llm-transformer-prompt-engineering/)([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 Embeddings를 활용한 시맨틱(의미적) 검색입니다.
 
 OpenAI의 `text-embedding-ada-002` 모델(또는 `text-embedding-3-small`)을 사용하여 Obsidian의 각 Markdown 노트를 다차원 벡터(수백~수천 차원의 수치 배열)로 변환합니다. 이러한 벡터 공간에서는 의미가 가까운 문장의 벡터는 물리적인 거리도 가까워집니다.
 
@@ -304,19 +304,19 @@ $$ R = e^{-\frac{t}{S}} $$
 이 최적의 복습 타이밍을 알고리즘(SuperMemo 2 등)으로 자동 계산하여 플래시카드 형태로 제시해 주는 소프트웨어가 바로 'Anki'입니다.
 
 기술 블로그의 소재를 만들기 위한 강력한 접근법으로, **Obsidian의 Permanent Notes 내용을 Anki 플래시카드로 변환하는 것** 을 들 수 있습니다.
-예를 들어, 'CAP 정리의 3요소는 무엇인가?', '[B-Tree](https://kenji.blog/ko/p/b-tree-database-index-theory/) 인덱스가 O(log N)의 검색 성능을 갖는 이유는?' 등 기술적 근간과 관련된 질문을 Anki에 등록하고 매일 루틴으로 복습합니다. 지식이 장기 기억으로서 뇌 내에 인덱싱되면, 샤워를 하거나 산책을 할 때 무의식 속에서 정보가 결합하여 '아, 분산 시스템의 합의 알고리즘에 대한 기사를 쓸 수 있겠다'라는 번뜩임(유레카 모먼트)을 만들어냅니다.
+예를 들어, 'CAP 정리의 3요소는 무엇인가?', '[B-Tree](https://kenji.blog/ko/p/b-tree-database-index-theory/) 인덱스가 O(log N)의 검색 성능을 갖는 이유는?' 등 기술적 근간과 관련된 질문을 Anki에 등록하고 매일 루틴으로 복습합니다. 지식이 장기 기억으로서 뇌 내에 인덱싱되면, 샤워를 하거나 산책을 할 때 무의식 속에서 정보가 결합하여 '아, [분산 시스템](/ko/p/cap-theorem-distributed-systems-tradeoff/)의 [합의 알고리즘](/ko/p/byzantine-generals-problem-consensus/)에 대한 기사를 쓸 수 있겠다'라는 번뜩임(유레카 모먼트)을 만들어냅니다.
 
 ## 7. 조합의 창조성 (Combinatorial Creativity)
 
 지금까지의 파이프라인을 통해 '다양한 정보의 인풋', '제텔카스텐(Zettelkasten)에 의한 정리와 AI 검색', 'Anki를 통한 장기 기억 정착'을 실현했습니다. 마지막 단계는 이러한 요소들을 곱하여 완전히 새로운 기술 기사 아이디어를 생성하는 '조합의 창조성(Combinatorial Creativity)'입니다.
 
-혁신이나 창조성은 무에서 유를 창조하는 것이 아니라, 기존 요소들의 새로운 조합에 의해 탄생한다고 알려져 있습니다. 스티브 잡스의 'Creativity is just connecting things(창조성은 그저 사물들을 연결하는 것이다).'라는 말이 유명합니다.
+혁신이나 창조성은 무에서 유를 창조하는 것이 아니라, 기존 요소들의 새로운 조합에 의해 탄생한다고 알려져 있습니다. [스티브 잡스](/ko/p/biography-steve-jobs/)의 'Creativity is just connecting things(창조성은 그저 사물들을 연결하는 것이다).'라는 말이 유명합니다.
 
 기술 블로그에서의 조합 패턴으로는 다음과 같은 매트릭스를 생각해 볼 수 있습니다.
 
 1. **[오래된 기술] × [새로운 패러다임]**: 예) 'COBOL의 아키텍처에서 배우는 현대 마이크로서비스 설계의 안티 패턴'
 2. **[프론트엔드] × [백엔드 개념]**: 예) 'React의 가상 DOM 업데이트 알고리즘을 데이터베이스 트랜잭션 격리 수준의 관점에서 해설하기'
-3. **[추상적인 수학/이론] × 구체적 구현]**: 예) '그래프 이론으로 풀어보는 [Kubernetes [Pod](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/) 스케줄링의 최적화'
+3. **[추상적인 수학/이론] × 구체적 구현]**: 예) '[그래프 이론](/ko/p/graph-theory-dijkstra-a-star/)으로 풀어보는 [Kubernetes [Pod](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/) 스케줄링의 최적화'
 
 이러한 조합을 의도적으로 발생시키기 위해, 앞서 구축한 Pinecone의 시맨틱 검색 시스템을 이용하여 무작위로 개념 A와 개념 B를 추출하고, AI(ChatGPT 등)에게 '이 두 가지를 조합한 기술 블로그 제목과 목차 초안을 5개 제안해 줘'라고 프롬프트를 던짐으로써, 혼자서는 떠올리기 힘든 참신한 시각의 기사 아이디어를 무한히 생성할 수 있습니다.
 

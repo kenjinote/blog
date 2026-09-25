@@ -95,7 +95,7 @@ Quien concretó aún más la idea de Szilard fue Léon Brillouin. Pensó que par
 
 Para ver una molécula dentro de una caja a oscuras, se deben utilizar fotones con una energía mayor que la radiación de fondo del cuerpo negro (radiación térmica). Al calcular el consumo de energía para esta "iluminación" y la generación de entropía debido a la dispersión de los fotones, se demostró que el aumento de entropía causado por el uso de la luz siempre será mayor que la información obtenida por el demonio (la disminución de entropía debido a la selección de moléculas).
 
-Con esto, parecía que el demonio de Maxwell había sido completamente enterrado. La explicación de que "la entropía aumenta porque se arroja luz para ver las moléculas" era intuitiva, fácil de entender y se incluyó en muchos libros de texto.
+Con esto, parecía que [el demonio de Maxwell](/es/p/maxwells-demon/) había sido completamente enterrado. La explicación de que "la entropía aumenta porque se arroja luz para ver las moléculas" era intuitiva, fácil de entender y se incluyó en muchos libros de texto.
 
 Sin embargo, la batalla aún no había terminado.
 
@@ -141,11 +141,11 @@ El demonio desatado por Maxwell en el siglo XIX fue finalmente derrotado más de
 
 # Capítulo 4: Los Demonios en la Actualidad (Realizaciones Experimentales y Aplicaciones)
 
-El demonio de Maxwell ya no se limita a un "experimento mental". En el siglo XXI, con el avance exponencial de la nanotecnología y la tecnología de la información cuántica, los científicos han podido crear un "demonio de Maxwell artificial" en el laboratorio y verificar el principio de Landauer y las leyes de la termodinámica de la información.
+[El demonio de Maxwell](/es/p/maxwells-demon/) ya no se limita a un "experimento mental". En el siglo XXI, con el avance exponencial de la nanotecnología y la tecnología de la información cuántica, los científicos han podido crear un "demonio de Maxwell artificial" en el laboratorio y verificar el principio de Landauer y las leyes de la termodinámica de la información.
 
 ## Demonios en el Laboratorio
 
-En 2010, el Dr. Takahiro Sagawa de la Universidad de Chuo (actualmente profesor en la Universidad de Tokio) y el Dr. Masahito Ueda derivaron la ecuación generalizada de la "termodinámica de la información" (la Ecuación de Sagawa-Ueda), y formularon rigurosamente la relación entre la información y la entropía. A esto le siguieron experimentos en laboratorios de todo el mundo utilizando partículas a escala nanométrica o electrones individuales para simular el motor de Szilard y el demonio de Maxwell.
+En 2010, el Dr. Takahiro Sagawa de la Universidad de Chuo (actualmente profesor en la Universidad de Tokio) y el Dr. Masahito Ueda derivaron la ecuación generalizada de la "termodinámica de la información" (la Ecuación de Sagawa-Ueda), y formularon rigurosamente la relación entre la información y la entropía. A esto le siguieron experimentos en laboratorios de todo el mundo utilizando partículas a escala nanométrica o electrones individuales para simular el motor de Szilard y [el demonio de Maxwell](/es/p/maxwells-demon/).
 
 A través de estos experimentos, se demostró experimentalmente que "se puede utilizar la información para convertir la energía térmica en trabajo". Por supuesto, si se incluye en el cálculo la generación total de entropía requerida para procesar y eliminar información, la Segunda Ley de la Termodinámica no se rompe, pero se comprobó que en sistemas microscópicos es posible obtener energía utilizando la "información" como una especie de "combustible".
 
@@ -154,13 +154,13 @@ A través de estos experimentos, se demostró experimentalmente que "se puede ut
 Curiosamente, dentro de los sistemas biológicos existen muchos mecanismos que se asemejan al "demonio de Maxwell".
 Por ejemplo, las proteínas motoras como la "quinesina" y la "dineína" que transportan sustancias dentro de las células. Aunque dentro de la célula ruge una tormenta debido al movimiento térmico de las moléculas (movimiento browniano), estas proteínas motoras utilizan la hidrólisis del ATP como fuente de energía mientras aprovechan hábilmente las fluctuaciones térmicas (movimientos aleatorios) de su entorno para generar un movimiento ordenado en una sola dirección.
 
-Esto se conoce como mecanismo de trinquete browniano y es un dispositivo a nivel molecular similar al demonio de Maxwell. La vida acepta plenamente las restricciones termodinámicas que enfrenta el demonio de Maxwell, y procesa hábilmente la información microscópica para mantener un "orden" que parece desafiar la ley del aumento de la entropía. Las palabras que Erwin Schrödinger pronunció en su libro "¿Qué es la vida?", afirmando que los seres vivos se alimentan de "entropía negativa", sugerían precisamente la conexión entre la información y la termodinámica.
+Esto se conoce como mecanismo de trinquete browniano y es un dispositivo a nivel molecular similar al demonio de Maxwell. La vida acepta plenamente las restricciones termodinámicas que enfrenta [el demonio de Maxwell](/es/p/maxwells-demon/), y procesa hábilmente la información microscópica para mantener un "orden" que parece desafiar la ley del aumento de la entropía. Las palabras que Erwin Schrödinger pronunció en su libro "¿Qué es la vida?", afirmando que los seres vivos se alimentan de "entropía negativa", sugerían precisamente la conexión entre la información y la termodinámica.
 
 ---
 
 # Conclusión: Lo que el Demonio nos Enseñó
 
-El demonio de Maxwell no pudo romper la Segunda Ley de la Termodinámica. Sin embargo, gracias a la existencia de este demonio, la física recibió inmensos beneficios.
+[El demonio de Maxwell](/es/p/maxwells-demon/) no pudo romper la Segunda Ley de la Termodinámica. Sin embargo, gracias a la existencia de este demonio, la física recibió inmensos beneficios.
 
 1. **Establecimiento de la mecánica estadística**: Se consolidó la perspectiva, intuida por Maxwell y Boltzmann, de que "las leyes macroscópicas (termodinámica) surgen del comportamiento estadístico de las partículas microscópicas".
 2. **Fisicalización de la información**: Szilard, Landauer, Bennett y otros incorporaron la "información" en las leyes de la física. Con esto, se aclararon los límites físicos del consumo de energía de las computadoras.

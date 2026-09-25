@@ -49,7 +49,7 @@ graph TD
     Mersenne <-->|"Akustik"| Huygens
 ```
 
-Di pusat jaringan ini, ketika seseorang menemukan teorema baru, [Mersenne](https://kenji.blog/id/p/mersenne/) akan menyampaikannya kepada sarjana lain, mendorong kritik dan verifikasi. Misalnya, Mersennyalah yang mengkomunikasikan penemuan matematika Pierre de Fermat kepada [Descartes](https://kenji.blog/id/p/descartes/), yang memicu perdebatan sengit di antara keduanya. Ia juga dikenal karena menerjemahkan karya-karya Galileo Galilei (seperti *Dialog Mengenai Dua Sistem Dunia Utama*) ke dalam bahasa Prancis, memperkenalkannya secara luas meskipun ada penyensoran ketat dari Gereja Katolik. Beberapa sejarawan menilai bahwa tanpa dirinya, Revolusi Ilmiah abad ke-17 mungkin akan tertunda puluhan tahun.
+Di pusat jaringan ini, ketika seseorang menemukan teorema baru, [Mersenne](https://kenji.blog/id/p/mersenne/) akan menyampaikannya kepada sarjana lain, mendorong kritik dan verifikasi. Misalnya, Mersennyalah yang mengkomunikasikan penemuan matematika [Pierre de Fermat](/id/p/fermat/) kepada [Descartes](https://kenji.blog/id/p/descartes/), yang memicu perdebatan sengit di antara keduanya. Ia juga dikenal karena menerjemahkan karya-karya Galileo Galilei (seperti *Dialog Mengenai Dua Sistem Dunia Utama*) ke dalam bahasa Prancis, memperkenalkannya secara luas meskipun ada penyensoran ketat dari Gereja Katolik. Beberapa sejarawan menilai bahwa tanpa dirinya, Revolusi Ilmiah abad ke-17 mungkin akan tertunda puluhan tahun.
 
 ## Pencapaian Matematika: Bilangan Prima [Mersenne](https://kenji.blog/id/p/mersenne/)
 

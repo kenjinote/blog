@@ -47,7 +47,7 @@ He did not have the concept of "failure." When an experiment did not go well, he
 
 ## The War of the Currents and Impact on Posterity
 
-Behind his spectacular success, Edison also faced major setbacks. This was the "War of the Currents" fought against Nikola Tesla and George Westinghouse. Edison promoted the "direct current" (DC) system, arguing for its safety, but ultimately suffered defeat to the "alternating current" (AC) system, which was superior for long-distance power transmission.
+Behind his spectacular success, Edison also faced major setbacks. This was the "War of the Currents" fought against [Nikola Tesla](/en/p/biography-nikola-tesla/) and George Westinghouse. Edison promoted the "direct current" (DC) system, arguing for its safety, but ultimately suffered defeat to the "alternating current" (AC) system, which was superior for long-distance power transmission.
 
 However, this defeat did not diminish his reputation. The companies he founded merged to become today's General Electric (GE), growing into one of the world's largest conglomerates. Furthermore, a single invention of his has given birth to entire massive industries, such as the creation of the music industry by the phonograph and the dawn of the film industry by the motion picture camera (Kinetoscope).
 

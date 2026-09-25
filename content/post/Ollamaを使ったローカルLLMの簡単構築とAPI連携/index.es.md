@@ -11,7 +11,7 @@ tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 
 # Introducción: ¿Por qué necesitamos un [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/) local?
 
-El auge de los Modelos de Lenguaje Grande (LLM) ha transformado drásticamente nuestra vida y los métodos de desarrollo. Servicios de IA potentes basados en la nube como ChatGPT, Claude y Gemini evolucionan a diario, ofreciendo capacidades de razonamiento muy avanzadas. Sin embargo, un LLM en la nube no siempre es la mejor opción para todos los casos de uso. Los LLM en la nube presentan los siguientes desafíos:
+El auge de los Modelos de Lenguaje Grande (LLM) ha transformado drásticamente nuestra vida y los métodos de desarrollo. Servicios de IA potentes basados en la nube como ChatGPT, Claude y [Gemini](/es/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEm%C3%A9todo-de-resoluci%C3%B3n/) evolucionan a diario, ofreciendo capacidades de razonamiento muy avanzadas. Sin embargo, un LLM en la nube no siempre es la mejor opción para todos los casos de uso. Los LLM en la nube presentan los siguientes desafíos:
 
 1. **Problemas de privacidad y seguridad**: Enviar datos que contienen información confidencial o personal a servidores externos suele ser inaceptable desde la perspectiva del cumplimiento corporativo y la seguridad.
 2. **Incertidumbre en los costos**: Dado que las tarifas de uso de API dependen de la cantidad de tokens, existe el riesgo de que los costos operativos se disparen sin límite en sistemas que realizan un procesamiento masivo de datos o solicitudes frecuentes.
@@ -26,7 +26,7 @@ En este artículo, explicaremos exhaustivamente "**Ollama**", una herramienta qu
 
 # ¿Qué es Ollama? Su arquitectura interna
 
-Ollama es una plataforma que facilita la ejecución y gestión de grandes modelos de lenguaje de código abierto (Llama 3, Phi-3, Mistral, Gemma, etc.) en entornos locales. Anteriormente, para configurar un entorno de LLM local, se requerían pasos muy tediosos: configurar el entorno de Python, instalar el kit de herramientas CUDA, resolver las dependencias de PyTorch, descargar archivos de modelos enormes de Hugging Face y convertir formatos (por ejemplo, de Safetensors a GGUF).
+Ollama es una plataforma que facilita la ejecución y gestión de grandes modelos de lenguaje de código abierto (Llama 3, Phi-3, Mistral, Gemma, etc.) en entornos locales. Anteriormente, para configurar un entorno de LLM local, se requerían pasos muy tediosos: configurar el entorno de Python, instalar el kit de herramientas CUDA, resolver las dependencias de PyTorch, descargar archivos de modelos enormes de Hugging Face y convertir formatos (por ejemplo, de Safetensors a [GGUF](/es/p/llama-cpp-quantization-gguf/)).
 
 Ollama oculta estas complejidades, permitiéndole manejar LLMs con una usabilidad similar a [Docker](https://kenji.blog/es/p/docker-container-namespace-[cgroups](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)-layers/). Con un solo comando, puede descargar (`pull`), ejecutar (`run`) e iniciar un modelo como un servidor HTTP.
 
@@ -120,7 +120,7 @@ En la biblioteca de modelos de Ollama, puede especificar la versión y el nivel 
 
 Hablemos un poco sobre la cuantización aquí. Un [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/) normal almacena un parámetro de peso en punto flotante de 16 bits (FP16) o similar. Para un modelo de 8 mil millones (8B) de parámetros, solo los pesos consumirán alrededor de 16 GB de VRAM. La tecnología que comprime esto en tipos enteros de 4 bits (Q4) u 8 bits (Q8) es la cuantización.
 
-Mediante la cuantización, la cantidad de memoria y el ancho de banda de memoria necesarios se pueden reducir drásticamente mientras se minimiza la degradación de la precisión del modelo. Los modelos distribuidos en Ollama están por defecto en formato GGUF con la cuantización óptima aplicada (a menudo de 4 bits).
+Mediante la cuantización, la cantidad de memoria y el ancho de banda de memoria necesarios se pueden reducir drásticamente mientras se minimiza la degradación de la precisión del modelo. Los modelos distribuidos en Ollama están por defecto en formato [GGUF](/es/p/llama-cpp-quantization-gguf/) con la cuantización óptima aplicada (a menudo de 4 bits).
 
 ## 3. Listar modelos (`list`)
 

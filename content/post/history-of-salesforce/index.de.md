@@ -10,7 +10,7 @@ slug: "history-of-salesforce"
 ---
 # Unternehmensgeschichte: Die Geschichte von Salesforce - Pionier von SaaS (Cloud-Software)
 
-Salesforce ist ein Pionier von SaaS.
+[Salesforce](/de/p/salesforcechatter%E5%85%A8%E6%B6%88%E3%81%97befehl/) ist ein Pionier von SaaS.
 
 ## Die Entwicklung des Cloud Computings
 

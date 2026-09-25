@@ -26,6 +26,6 @@ Juga sangat mudah untuk merakit SOQL di tempat.
 
 ![img.png](img.webp)
 
-Berguna saat mencari kode Salesforce.
+Berguna saat mencari kode [Salesforce](/id/p/salesforceceloteh%E5%85%A8%E6%B6%88%E3%81%97perintah/).
 
 [Salesforce advanced Code searcher](https://chrome.google.com/webstore/detail/salesforce-advanced-code/lnkgcmpjkkkeffambkllliefdpjdklmi)

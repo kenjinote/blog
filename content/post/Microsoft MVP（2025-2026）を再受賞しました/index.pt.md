@@ -52,7 +52,7 @@ Este ano, concentrei-me em transmitir informações com foco na **"clareza" e "a
 
 Em particular, a publicação de código no GitHub deixou uma forte impressão em mim porque recebi comentários como "Eu estava lutando com a mesma coisa, isso me salvou!", e pude sentir que meus esforços estão ajudando o desenvolvimento de outras pessoas.
 
-Além disso, ao palestrar em eventos, às vezes recebi feedback de que "era fácil de entender, mesmo para iniciantes", o que me deu uma boa oportunidade para pensar sobre "o que é uma explicação técnica que as pessoas entendem?".
+Além disso, ao palestrar em eventos, às vezes recebi feedback de que "era fácil de entender, mesmo [para iniciantes](/pt/p/produtos-de-couro%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/)", o que me deu uma boa oportunidade para pensar sobre "o que é uma explicação técnica que as pessoas entendem?".
 
 ---
 

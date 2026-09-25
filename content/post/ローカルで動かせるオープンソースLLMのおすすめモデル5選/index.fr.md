@@ -13,11 +13,11 @@ description: 'Des LLM locaux gratuits à utiliser tout en protégeant votre vie 
 
 # Introduction
 
-Ces dernières années, l'évolution technologique des grands modèles de langage ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)) a été remarquable, et les services d'IA basés sur le cloud comme ChatGPT et Claude se sont largement répandus. Cependant, dans le même temps, les besoins tels que "ne pas envoyer les données confidentielles de l'entreprise à des serveurs externes", "réduire les coûts d'utilisation des API" ou "construire un système d'IA fonctionnant de manière totalement hors ligne" augmentent rapidement.
+Ces dernières années, l'évolution technologique des [grands modèles de langage](/fr/p/large-language-models-llm-transformer-prompt-engineering/) ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)) a été remarquable, et les services d'IA basés sur le cloud comme ChatGPT et Claude se sont largement répandus. Cependant, dans le même temps, les besoins tels que "ne pas envoyer les données confidentielles de l'entreprise à des serveurs externes", "réduire les coûts d'utilisation des API" ou "construire un système d'IA fonctionnant de manière totalement hors ligne" augmentent rapidement.
 
 Pour répondre à ces exigences, il existe les "LLM locaux (LLM open source)" que vous pouvez télécharger et exécuter directement sur votre PC ou serveur interne. Jusqu'en 2023 environ, il était difficile d'obtenir une précision pratique en local, mais grâce à l'évolution de l'architecture des modèles et au développement de la technologie de quantification (Quantization), il est désormais possible d'exécuter de manière très fluide des LLM extrêmement performants même sur des GPU grand public (NVIDIA RTX 3090 / 4090 ou Apple Silicon sur Mac, etc.).
 
-Dans cet article, parmi de nombreux LLM open source, nous avons sélectionné "les 5 meilleurs modèles recommandés" qui sont particulièrement bien notés en 2026. Nous comparerons et expliquerons en profondeur, avec une perspective extrêmement détaillée et technique, les caractéristiques de leur architecture, le nombre de paramètres, les exigences en matière de mémoire avec la quantification GGUF, jusqu'aux cas d'utilisation spécifiques.
+Dans cet article, parmi de nombreux LLM open source, nous avons sélectionné "les 5 meilleurs modèles recommandés" qui sont particulièrement bien notés en 2026. Nous comparerons et expliquerons en profondeur, avec une perspective extrêmement détaillée et technique, les caractéristiques de leur architecture, le nombre de paramètres, les exigences en matière de mémoire avec la quantification [GGUF](/fr/p/llama-cpp-quantization-gguf/), jusqu'aux cas d'utilisation spécifiques.
 
 ---
 
@@ -60,7 +60,7 @@ Si l'on tient compte du KV cache, etc., près de 18 Go à 20 Go de VRAM seront n
 
 C'est là qu'intervient la "quantification (Quantization)". Il s'agit d'une technologie qui réduit considérablement la quantité de mémoire requise tout en minimisant la dégradation des performances du modèle, en réduisant la précision des paramètres de FP16 à 8 bits, 4 bits ou dans des cas extrêmes à 2 bits.
 
-Le format actuellement le plus populaire est le **GGUF (GPT-Generated Unified Format)**, conçu par M. Georgi Gerganov (le développeur de llama.cpp). GGUF est un format binaire permettant d'effectuer efficacement des inférences à la fois sur le CPU et le GPU, et se caractérise par une très bonne compatibilité, notamment avec l'architecture Unified Memory des Mac (Apple Silicon).
+Le format actuellement le plus populaire est le **[GGUF](/fr/p/llama-cpp-quantization-gguf/) (GPT-Generated Unified Format)**, conçu par M. Georgi Gerganov (le développeur de llama.cpp). [GGUF](/fr/p/llama-cpp-quantization-gguf/) est un format binaire permettant d'effectuer efficacement des inférences à la fois sur le CPU et le GPU, et se caractérise par une très bonne compatibilité, notamment avec l'architecture Unified Memory des Mac (Apple Silicon).
 
 Le calcul de la mémoire lors de la quantification d'un modèle 8B en 4 bits (par exemple : Q4_K_M) est le suivant.
 
@@ -105,7 +105,7 @@ graph TD
 - **Llama 3 8B** : 8 milliards de paramètres. Il fonctionne avec environ 5 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) de mémoire avec une quantification 4-bit. La réponse est très rapide, ce qui le rend idéal comme assistant personnel sur PC ou au cœur d'un système RAG (Retrieval-Augmented Generation) local.
 - **Llama 3 70B** : 70 milliards de paramètres. Il nécessite environ 40 Go de VRAM (ou d'Unified Memory sur Apple Silicon) avec une quantification 4-bit. Il possède des performances qui rivalisent avec le GPT-4 du cloud et démontre sa puissance dans le raisonnement avancé, le codage complexe, l'analyse de données, etc.
 
-Llama 3 bénéficie du soutien le plus solide de la part de la communauté, et son point fort est que tous les formats de quantification, y compris GGUF, AWQ, et EXL2, sont immédiatement disponibles.
+Llama 3 bénéficie du soutien le plus solide de la part de la communauté, et son point fort est que tous les formats de quantification, y compris [GGUF](/fr/p/llama-cpp-quantization-gguf/), AWQ, et EXL2, sont immédiatement disponibles.
 
 ---
 
@@ -141,7 +141,7 @@ Le plus grand avantage de cette architecture est que "bien que le nombre de para
 
 ## 3. Gemma 2 (Google)
 
-Les modèles ouverts développés par Google en utilisant la technologie de son modèle de pointe "Gemini" sont la série "Gemma". En tant que 2ème génération, Gemma 2 a apporté des modifications majeures à son architecture.
+Les modèles ouverts développés par Google en utilisant la technologie de son modèle de pointe "[Gemini](/fr/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEsolution/)" sont la série "Gemma". En tant que 2ème génération, Gemma 2 a apporté des modifications majeures à son architecture.
 
 ### Conception d'architecture unique
 

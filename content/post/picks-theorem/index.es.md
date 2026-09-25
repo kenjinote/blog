@@ -20,7 +20,7 @@ En el campo de la geometría matemática, el tema de encontrar el área de una f
 
 Sin embargo, si todos los vértices de un polígono se encuentran en **puntos de una cuadrícula** (puntos donde las coordenadas $x$ e $y$ son ambas números enteros), existe una fórmula mágica que le permite calcular el área utilizando solo operaciones aritméticas extremadamente simples, sin medir longitudes ni realizar multiplicaciones complejas o cálculos de raíces cuadradas. Ese es el **[Teorema de Pick](https://kenji.blog/es/p/picks-theorem/)**, que explicaremos en detalle esta vez.
 
-El teorema de Pick no es solo una "fórmula conveniente y misteriosa para encontrar el área fácilmente", sino que tiene un trasfondo muy profundo que se conecta con la topología, la teoría de grafos y la geometría algebraica en las matemáticas modernas. En este artículo, profundizaremos en el teorema de Pick desde múltiples ángulos, desde cómo usarlo de manera básica, hasta la demostración matemática de por qué se cumple una fórmula tan simple, sus antecedentes históricos e incluso las limitaciones del teorema y la posibilidad de su extensión a 3D.
+El teorema de Pick no es solo una "fórmula conveniente y misteriosa para encontrar el área fácilmente", sino que tiene un trasfondo muy profundo que se conecta con la topología, la [teoría de grafos](/es/p/graph-theory-dijkstra-a-star/) y la geometría algebraica en las matemáticas modernas. En este artículo, profundizaremos en el teorema de Pick desde múltiples ángulos, desde cómo usarlo de manera básica, hasta la demostración matemática de por qué se cumple una fórmula tan simple, sus antecedentes históricos e incluso las limitaciones del teorema y la posibilidad de su extensión a 3D.
 
 ## 2. Georg Alexander Pick y los Antecedentes Históricos
 
@@ -115,7 +115,7 @@ Sin embargo, si usa el teorema de Pick, puede calcular el área exacta al instan
 
 ## 5. Demostración Usando la Fórmula Poliédrica de Euler
 
-¿Por qué se cumple una fórmula tan mágica? Existen varias formas de probar el teorema de Pick, pero aquí presentaremos una idea de demostración elegante usando un famoso teorema en la teoría de grafos, la **Fórmula Poliédrica de Euler**.
+¿Por qué se cumple una fórmula tan mágica? Existen varias formas de probar el teorema de Pick, pero aquí presentaremos una idea de demostración elegante usando un famoso teorema en la [teoría de grafos](/es/p/graph-theory-dijkstra-a-star/), la **Fórmula Poliédrica de Euler**.
 
 Según el teorema de Euler, para un grafo conexo (red) dibujado en un plano, si el número de vértices es $V$, el número de aristas es $E$ y el número de caras es $F$, se cumple la siguiente relación:
 

@@ -28,11 +28,11 @@ Zunächst studierte er protestantische Theologie, aber unter dem Einfluss von Pr
 
 Nach seinem Abschluss konnte [Kummer](https://kenji.blog/de/p/kummer/) nicht sofort eine Universitätsstelle sichern, weshalb er etwa zehn Jahre lang als Mathematik- und Physiklehrer an einem Gymnasium in Liegnitz ( **Liegnitz** ), nahe seiner Heimatstadt, arbeitete. Diese Zeit als Lehrer war keineswegs verschwendet. Er hatte eine tiefe Leidenschaft als Pädagoge und bildete außergewöhnliche Schüler aus.
 
-Einer dieser Schüler war Leopold [Kronecker](https://kenji.blog/de/p/kronecker/) ( **Leopold Kronecker** ), der später Kummers Kollege und lebenslanger Freund werden sollte. Kummer erkannte Kroneckers außergewöhnliches Talent, brachte ihm höhere Mathematik bei und brachte ihn auf den Weg der Forschung. Während seiner Zeit als Gymnasiallehrer setzte [Kummer](https://kenji.blog/de/p/kummer/) seine eigenen Forschungen fort und veröffentlichte eine Reihe herausragender Arbeiten in akademischen Zeitschriften in Berlin.
+Einer dieser Schüler war Leopold [Kronecker](https://kenji.blog/de/p/kronecker/) ( **[Leopold Kronecker](/de/p/kronecker/)** ), der später Kummers Kollege und lebenslanger Freund werden sollte. Kummer erkannte Kroneckers außergewöhnliches Talent, brachte ihm höhere Mathematik bei und brachte ihn auf den Weg der Forschung. Während seiner Zeit als Gymnasiallehrer setzte [Kummer](https://kenji.blog/de/p/kummer/) seine eigenen Forschungen fort und veröffentlichte eine Reihe herausragender Arbeiten in akademischen Zeitschriften in Berlin.
 
 ### Ruhm als Universitätsprofessor
 
-Seine bemerkenswerten Forschungsleistungen zogen die Aufmerksamkeit der führenden Mathematiker der damaligen Zeit auf sich. 1842 wurde [Kummer](https://kenji.blog/de/p/kummer/) auf Empfehlung von Carl Gustav Jacob Jacobi ( **[Carl Gustav Jacob Jacobi](https://kenji.blog/de/p/jacobi/)** ) und Peter Gustav Lejeune Dirichlet ( **Peter Gustav Lejeune Dirichlet** ) ordentlicher Professor an der Universität Breslau. Darüber hinaus wurde er 1855 zum Professor an der Universität Berlin ernannt, um Dirichlet nachzufolgen, der nach Göttingen gewechselt war.
+Seine bemerkenswerten Forschungsleistungen zogen die Aufmerksamkeit der führenden Mathematiker der damaligen Zeit auf sich. 1842 wurde [Kummer](https://kenji.blog/de/p/kummer/) auf Empfehlung von [Carl Gustav Jacob Jacobi](/de/p/jacobi/) ( **[Carl Gustav Jacob Jacobi](https://kenji.blog/de/p/jacobi/)** ) und Peter Gustav Lejeune Dirichlet ( **Peter Gustav Lejeune Dirichlet** ) ordentlicher Professor an der Universität Breslau. Darüber hinaus wurde er 1855 zum Professor an der Universität Berlin ernannt, um Dirichlet nachzufolgen, der nach Göttingen gewechselt war.
 
 An der Universität Berlin machte [Kummer](https://kenji.blog/de/p/kummer/) zusammen mit Karl Weierstrass ( **Karl Weierstrass** ) und seinem ehemaligen Schüler [Kronecker](https://kenji.blog/de/p/kronecker/) Berlin zu einem globalen Zentrum der Mathematik. Seine Vorlesungen waren extrem klar und leidenschaftlich und zogen viele brillante Studenten aus ganz Europa an.
 
@@ -64,7 +64,7 @@ $$
 
 Es gibt keine positiven ganzzahligen Lösungen $(x, y, z)$, die diese Gleichung erfüllen.
 
-1847 gaben die französischen Mathematiker [Gabriel Lamé](https://kenji.blog/de/p/lame/) ( **Gabriel Lamé** ) und Augustin-Louis Cauchy ( **[Augustin-Louis Cauchy](https://kenji.blog/de/p/cauchy/)** ) bekannt, dass es ihnen gelungen sei, diesen Satz zu beweisen. Ihr Ansatz bestand darin, die Faktorisierung auf das Reich der komplexen Zahlen (Kreisteilungskörper) auszudehnen.
+1847 gaben die französischen Mathematiker [Gabriel Lamé](https://kenji.blog/de/p/lame/) ( **[Gabriel Lamé](/de/p/lame/)** ) und [Augustin-Louis Cauchy](/de/p/cauchy/) ( **[Augustin-Louis Cauchy](https://kenji.blog/de/p/cauchy/)** ) bekannt, dass es ihnen gelungen sei, diesen Satz zu beweisen. Ihr Ansatz bestand darin, die Faktorisierung auf das Reich der komplexen Zahlen (Kreisteilungskörper) auszudehnen.
 
 Unter Verwendung der primitiven $p$-ten Einheitswurzel $\zeta$ (wobei $\zeta^p = 1, \zeta \neq 1$) kann die Gleichung $x^p + y^p = z^p$ wie folgt faktorisiert werden:
 

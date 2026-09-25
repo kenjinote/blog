@@ -27,7 +27,7 @@ flowchart TD
   E -- "IBM-Projekt" --> F["Deep Blue (1997)"]
 ```
 
-In den 1950er Jahren veröffentlichte Claude Shannon eine monumentale Arbeit über Schachprogramme, die den Grundstein für Suchalgorithmen basierend auf der Minimax-Methode legte. In den 1970er und 80er Jahren erschienen dann zunehmend Maschinen mit spezieller Schach-Hardware. „Belle“ von den Bell Labs nutzte dedizierte Schaltkreise, um zehntausende Stellungen pro Sekunde zu durchsuchen, und erreichte die Spielstärke eines Meisters.
+In den 1950er Jahren veröffentlichte Claude Shannon eine monumentale Arbeit über Schachprogramme, die den Grundstein für [Suchalgorithmen](/de/p/search-algorithms-linear-binary-hash-table-principles/) basierend auf der Minimax-Methode legte. In den 1970er und 80er Jahren erschienen dann zunehmend Maschinen mit spezieller Schach-Hardware. „Belle“ von den Bell Labs nutzte dedizierte Schaltkreise, um zehntausende Stellungen pro Sekunde zu durchsuchen, und erreichte die Spielstärke eines Meisters.
 
 Schließlich wurde „Deep Thought“, entwickelt von Studenten der Carnegie Mellon University, der erste Computer, der einen Großmeister besiegen konnte. IBM übernahm dieses Projekt, investierte immense finanzielle Mittel sowie modernste Ingenieurskunst und erschuf so „Deep Blue“.
 

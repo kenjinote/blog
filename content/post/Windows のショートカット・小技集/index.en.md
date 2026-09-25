@@ -9,7 +9,7 @@ image: "img.webp"
 categories: ["pc-gadgets"]
 description: 'Carefully selected handy shortcut keys and tips to boost your work efficiency in Windows 11 and 10. A collection of essential techniques useful for everyday use, from beginners to advanced users, covering window operations, desktop display, voice typing, and screen capture.'
 ---
-This is a collection of useful little tips and shortcuts I use regularly on Windows. I hope this will be helpful for beginners just starting to use Windows.
+This is a collection of useful little tips and shortcuts I use regularly on Windows. I hope this will be helpful [for beginners](/en/p/leather-goods%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/) just starting to use Windows.
 This assumes Windows 11, but many of them should work on Windows 10 as well.
 
 ## Close Window

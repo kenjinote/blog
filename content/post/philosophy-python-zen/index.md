@@ -28,7 +28,7 @@ import this
 
 ### 誕生の背景：Tim PetersとPEP 20
 
-The Zen of Pythonは、長年Pythonの開発に携わってきたコア・デベロッパーのTim Peters（ティム・ピーターズ）によって書かれました。TimはPythonの生みの親であるGuido van Rossum（グイド・ヴァン・ロッサム）の設計における「暗黙の了解」や「直感」を、言語化してコミュニティで共有できるように体系化しました。
+The Zen of Pythonは、長年Pythonの開発に携わってきたコア・デベロッパーのTim Peters（ティム・ピーターズ）によって書かれました。Timは[Pythonの生みの親](/p/biography-guido-van-rossum/)であるGuido van Rossum（グイド・ヴァン・ロッサム）の設計における「暗黙の了解」や「直感」を、言語化してコミュニティで共有できるように体系化しました。
 
 これはのちに **PEP 20 (Python Enhancement Proposal 20)** として正式に文書化されました。Pythonの機能追加や変更が行われる際、このPEP 20は常に立ち返るべき原点として機能しています。
 
@@ -121,7 +121,7 @@ Pythonはこのような「空気を読む」挙動を嫌います。文字列�
 Perlという言語には "There's more than one way to do it" (TIMTOWTDI: やり方は1つじゃない) という哲学がありますが、Pythonはその真逆を行きます。
 
 同じ処理をするなら、誰もが同じ書き方になるのが理想的です。これにより、他の人の書いたコードを読む時の認知負荷が劇的に下がります。
-なお「オランダ人」というのは、Pythonの生みの親であるGuido van Rossumのことです。言語設計者の意図を完全に理解するには時間がかかるかもしれない、というユーモアが含まれています。
+なお「オランダ人」というのは、[Pythonの生みの親](/p/biography-guido-van-rossum/)であるGuido van Rossumのことです。言語設計者の意図を完全に理解するには時間がかかるかもしれない、というユーモアが含まれています。
 
 ### Now is better than never.（今やることは全くやらないことより良い）
 ### Although never is often better than *right* now.（しかし、全くやらないことは、往々にして「今すぐ」やることより良い）

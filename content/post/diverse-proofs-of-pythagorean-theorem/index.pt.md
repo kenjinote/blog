@@ -16,7 +16,7 @@ tags:
 
 ## Introdução
 
-Um dos teoremas mais famosos da matemática, e um dos que tem mais provas numerosas, é o **Teorema de Pitágoras**. Este teorema, que descreve a relação entre os três lados de um triângulo retângulo, leva o nome do antigo filósofo grego Pitágoras, embora fosse conhecido na Babilônia, na China e em outros lugares muito antes de sua época.
+Um dos teoremas mais famosos da matemática, e um dos que tem mais provas numerosas, é o **Teorema de [Pitágoras](/pt/p/pythagoras/)**. Este teorema, que descreve a relação entre os três lados de um triângulo retângulo, leva o nome do antigo filósofo grego [Pitágoras](/pt/p/pythagoras/), embora fosse conhecido na Babilônia, na China e em outros lugares muito antes de sua época.
 
 A afirmação do teorema é muito simples. Quando o comprimento da hipotenusa de um triângulo retângulo é $c$, e os comprimentos dos outros dois lados são $a$ e $b$, a seguinte relação é válida:
 
@@ -118,7 +118,7 @@ Multiplicando ambos os lados por 2 e expandindo, obtemos:
 
 $$ a^2 + 2ab + b^2 = 2ab + c^2 $$
 
-Subtrair $2ab$ de ambos os lados deriva brilhantemente o **Teorema de Pitágoras**:
+Subtrair $2ab$ de ambos os lados deriva brilhantemente o **Teorema de [Pitágoras](/pt/p/pythagoras/)**:
 
 $$ a^2 + b^2 = c^2 $$
 
@@ -128,7 +128,7 @@ A prova de Garfield, criada por alguém que era tanto um político quanto um tal
 
 ## 4. A Prova de Albert Einstein por Análise Dimensional
 
-Diz-se que Albert Einstein, o maior físico do século 20, também provou o teorema de Pitágoras à sua própria maneira durante a infância. Sua abordagem usou o conceito de **análise dimensional**, um método altamente intuitivo característico de um físico.
+Diz-se que Albert Einstein, o maior físico do século 20, também provou o teorema de [Pitágoras](/pt/p/pythagoras/) à sua própria maneira durante a infância. Sua abordagem usou o conceito de **análise dimensional**, um método altamente intuitivo característico de um físico.
 
 ### Ideia da Análise Dimensional
 
@@ -163,6 +163,6 @@ Essa prova não foi derivada brincando com fórmulas, mas a partir de uma **intu
 
 ## Conclusão
 
-O teorema de Pitágoras não é meramente uma fórmula matemática a ser memorizada. É um exemplo maravilhoso da essência da matemática, que pode ser abordada de **várias perspectivas**, incluindo quebra-cabeças geométricos, a manipulação de equações algébricas e até mesmo o conceito físico de dimensões.
+O teorema de [Pitágoras](/pt/p/pythagoras/) não é meramente uma fórmula matemática a ser memorizada. É um exemplo maravilhoso da essência da matemática, que pode ser abordada de **várias perspectivas**, incluindo quebra-cabeças geométricos, a manipulação de equações algébricas e até mesmo o conceito físico de dimensões.
 
 Além das quatro provas apresentadas aqui, existem incontáveis abordagens em todo o mundo, como uma prova de Leonardo da Vinci e provas usando origami. De qualquer forma, tente explorar novos métodos de prova por conta própria. O mundo da matemática está sempre cheio de novas descobertas.

@@ -11,11 +11,11 @@ tags: ["IA Générative", "DDD", "Architecture", "Avenir du travail"]
 
 # Les "compétences d'ingénieur spécifiques aux humains" requises à l'ère de la programmation par l'IA
 
-Ces dernières années, avec l'évolution fulgurante de l'IA générative (Generative AI) et des grands modèles de langage ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)), le paysage de l'ingénierie logicielle a radicalement changé. GitHub Copilot et divers assistants de codage IA sont désormais utilisés au quotidien, et le phénomène selon lequel "l'IA génère instantanément du code si on lui donne des instructions en langage naturel" n'est plus de la science-fiction, mais la réalité d'aujourd'hui.
+Ces dernières années, avec l'évolution fulgurante de l'IA générative (Generative AI) et des [grands modèles de langage](/fr/p/large-language-models-llm-transformer-prompt-engineering/) ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)), le paysage de l'ingénierie logicielle a radicalement changé. GitHub Copilot et divers assistants de codage IA sont désormais utilisés au quotidien, et le phénomène selon lequel "l'IA génère instantanément du code si on lui donne des instructions en langage naturel" n'est plus de la science-fiction, mais la réalité d'aujourd'hui.
 
 À une telle époque, il est naturel pour de nombreux ingénieurs de s'inquiéter que "leur travail soit volé par l'IA". Il est vrai que le "simple travail de codage (Typing Code)", comme la création de code boilerplate pour des applications CRUD typiques, l'implémentation d'algorithmes simples, ou l'appel d'API de bibliothèques bien connues, se transforme rapidement en commodité.
 
-Cependant, l'essence de l'ingénierie logicielle n'est pas de "taper du code". Elle consiste à résoudre des problèmes métier grâce à la technologie et à construire des systèmes évolutifs et maintenables. Dans cet article, nous explorerons de manière extrêmement détaillée et technique les "compétences d'ingénieur spécifiques aux humains" dont la valeur augmente précisément à l'ère où l'IA écrit du code, du point de vue des limites techniques des LLM, de la conception pilotée par le domaine (DDD), de l'architecture système et du débogage de systèmes distribués.
+Cependant, l'essence de l'ingénierie logicielle n'est pas de "taper du code". Elle consiste à résoudre des problèmes métier grâce à la technologie et à construire des systèmes évolutifs et maintenables. Dans cet article, nous explorerons de manière extrêmement détaillée et technique les "compétences d'ingénieur spécifiques aux humains" dont la valeur augmente précisément à l'ère où l'IA écrit du code, du point de vue des limites techniques des LLM, de la conception pilotée par le domaine (DDD), de l'architecture système et du débogage de [systèmes distribués](/fr/p/cap-theorem-distributed-systems-tradeoff/).
 
 ---
 
@@ -116,11 +116,11 @@ Au lieu d'ordonner à l'IA de "créer le système entier", déléguer l'impléme
 
 ## 4. Compétence humaine n°3 : Conception de l'architecture des systèmes distribués et mise à l'échelle
 
-Les logiciels modernes ont évolué de monolithes fonctionnant sur un seul serveur à des architectures de microservices cloud natives et des architectures pilotées par les événements. La conception de tels systèmes distribués est un domaine très difficile pour l'IA, qui ne peut optimiser que la logique locale.
+Les logiciels modernes ont évolué de monolithes fonctionnant sur un seul serveur à des architectures de microservices cloud natives et des architectures pilotées par les événements. La conception de tels [systèmes distribués](/fr/p/cap-theorem-distributed-systems-tradeoff/) est un domaine très difficile pour l'IA, qui ne peut optimiser que la logique locale.
 
 ### 4.1 Théorème CAP et décisions de compromis
 
-Lors de la conception de systèmes distribués, les ingénieurs sont constamment confrontés au "théorème CAP". Le théorème CAP est un principe stipulant qu'un système distribué ne peut satisfaire simultanément que deux des trois propriétés suivantes :
+Lors de la conception de [systèmes distribués](/fr/p/cap-theorem-distributed-systems-tradeoff/), les ingénieurs sont constamment confrontés au "théorème CAP". Le théorème CAP est un principe stipulant qu'un système distribué ne peut satisfaire simultanément que deux des trois propriétés suivantes :
 
 - **[Consistency](https://kenji.blog/fr/p/cap-theorem-distributed-systems-tradeoff/) (Cohérence)** : Tous les nœuds voient-ils les mêmes données au même moment ?
 - **[Availability](https://kenji.blog/fr/p/cap-theorem-distributed-systems-tradeoff/) (Disponibilité)** : Le système continue-t-il de répondre même si certains nœuds tombent en panne ?
@@ -171,7 +171,7 @@ Plus les systèmes deviennent complexes, plus la valeur des ingénieurs posséda
 
 ## 6. Fonction de valeur et allocation de temps de l'ingénieur à l'ère de l'IA
 
-Comme mentionné jusqu'à présent, les compétences requises pour les ingénieurs à l'ère de l'IA subissent un changement de paradigme majeur. Si nous modélisons cela mathématiquement, la valeur créée par un ingénieur ($V$) peut être exprimée comme suit :
+Comme mentionné jusqu'à présent, les compétences requises [pour les ingénieurs](/fr/p/prompt-engineering-for-engineers/) à l'ère de l'IA subissent un changement de paradigme majeur. Si nous modélisons cela mathématiquement, la valeur créée par un ingénieur ($V$) peut être exprimée comme suit :
 
 $$ V = \left( \sum_{i=1}^{n} \text{DomainKnowledge}_i + \text{ArchitectureSkill} + \text{ProblemSolving} \right) \times \text{AI\_Leverage}^{\alpha} $$
 
@@ -201,7 +201,7 @@ pie title Répartition du temps de l'ingénieur (À l'ère de l'IA)
 
 ## 7. Conclusion : Ne pas refuser l'évolution, mais surfer sur la vague
 
-L'"ère où l'IA écrit du code" n'est pas une menace pour les ingénieurs, mais la plus grande opportunité de l'histoire. Tout comme le passage du langage d'assemblage au langage C a eu lieu autrefois, et l'évolution de la gestion des pointeurs de mémoire au garbage collection de [Java](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) s'est produite, la génération de code par l'IA n'est rien de plus qu'un "niveau d'abstraction supérieur".
+L'"ère où l'IA écrit du code" n'est pas une menace [pour les ingénieurs](/fr/p/prompt-engineering-for-engineers/), mais la plus grande opportunité de l'histoire. Tout comme le passage du langage d'assemblage au langage C a eu lieu autrefois, et l'évolution de la gestion des [pointeurs](/fr/p/c-language-pointers-memory-management-stack-heap/) de mémoire au garbage collection de [Java](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) s'est produite, la génération de code par l'IA n'est rien de plus qu'un "niveau d'abstraction supérieur".
 
 Les ingénieurs de demain ne s'inquiéteront plus des spécifications détaillées d'un langage de programmation particulier ou des mises à jour des frameworks. Ils pourront concentrer leurs ressources sur une résolution de problèmes plus essentielle, de plus haut niveau et plus humaine, telle que **"Quel est le problème métier ?"**, **"Comment diviser et lier les données ?"**, ou **"Comment récupérer rapidement lorsque le système s'arrête ?"**.
 

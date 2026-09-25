@@ -213,7 +213,7 @@ Embora essa enumeração exaustiva seja eficaz para números pequenos, o total d
 
 Substituamos o termo "conhecidos" pela existência de uma conexão direta entre dispositivos. Suponha que tenhamos 6 dispositivos de rede e que cada par apresente ou "uma conexão direta" ou "nenhuma conexão direta". Se os enlaces não forem direcionados, o mesmo teorema se aplica de forma direta.
 
-Assim, garante-se a existência de um grupo de 3 dispositivos no qual todos os pares possuem conexões diretas mútuas, ou de um grupo de 3 dispositivos no qual nenhum par possui conexão direta. Na teoria dos grafos, o primeiro caso corresponde a um **clique** de 3 vértices, e o segundo, a um **conjunto independente** de 3 vértices. Vale notar que "sem conexão direta" não significa que a comunicação seja impossível através de dispositivos intermediários.
+Assim, garante-se a existência de um grupo de 3 dispositivos no qual todos os pares possuem conexões diretas mútuas, ou de um grupo de 3 dispositivos no qual nenhum par possui conexão direta. Na [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/), o primeiro caso corresponde a um **clique** de 3 vértices, e o segundo, a um **conjunto independente** de 3 vértices. Vale notar que "sem conexão direta" não significa que a comunicação seja impossível através de dispositivos intermediários.
 
 Essa perspectiva é útil para analisar compatibilidade entre pares de tarefas ou validar o design de pequenas redes. Por exemplo, se você exigir que "não haja nenhum trio onde todos os pares sejam mutualmente compatíveis, nem nenhum trio onde todos sejam mutualmente incompatíveis", saberá, antes mesmo de iniciar qualquer busca exaustiva, que tal exigência é impossível de satisfazer caso haja 6 elementos no sistema.
 

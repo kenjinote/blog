@@ -9,9 +9,9 @@ categories: ["mathematics", "physics"]
 tags: ["Geometría", "Relatividad", "Historia de la Ciencia", "Matemáticas"]
 ---
 
-## 1. Introducción: La atadura de [Euclides](https://kenji.blog/p/euclid/)
+## 1. Introducción: La atadura de [Euclides](https://kenji.blog/es/p/euclid/)
 
-En el siglo III a.C., el matemático griego antiguo [Euclides](https://kenji.blog/p/euclid/) sistematizó axiomáticamente los conocimientos geométricos de su tiempo en su libro *Los Elementos*. Presentó 5 postulados (demandas), pero el quinto postulado, el llamado **postulado de las paralelas**, era más complejo que los otros cuatro y terminaría atormentando a muchos matemáticos.
+En el siglo III a.C., el matemático griego antiguo [Euclides](https://kenji.blog/es/p/euclid/) sistematizó axiomáticamente los conocimientos geométricos de su tiempo en su libro *Los Elementos*. Presentó 5 postulados (demandas), pero el quinto postulado, el llamado **postulado de las paralelas**, era más complejo que los otros cuatro y terminaría atormentando a muchos matemáticos.
 
 $$
 \text{Quinto postulado: Si una línea recta corta a otras dos rectas y forma de un mismo lado ángulos interiores cuya suma es menor que dos ángulos rectos, las dos rectas, prolongadas indefinidamente, se cortarán del lado en el que están los ángulos menores que dos rectos.}
@@ -81,6 +81,6 @@ En la ecuación de Einstein anterior, el lado izquierdo representa la estructura
 
 ## 6. Conclusión
 
-La exploración de la geometría no euclidiana, que comenzó como una pequeña duda sobre el quinto postulado de [Euclides](https://kenji.blog/p/euclid/), rompió las suposiciones intuitivas humanas sobre el espacio y demostró la libertad de las matemáticas. Y finalmente culminó en la teoría de la relatividad general, que desentraña la estructura fundamental del universo.
+La exploración de la geometría no euclidiana, que comenzó como una pequeña duda sobre el quinto postulado de [Euclides](https://kenji.blog/es/p/euclid/), rompió las suposiciones intuitivas humanas sobre el espacio y demostró la libertad de las matemáticas. Y finalmente culminó en la teoría de la relatividad general, que desentraña la estructura fundamental del universo.
 
 La búsqueda de la lógica pura en las matemáticas se convirtió más tarde en un lenguaje indispensable para describir las verdades más profundas del mundo físico. La historia de la geometría no euclidiana nos enseña la grandeza del intelecto humano y los sorprendentes misterios del mundo natural.

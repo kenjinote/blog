@@ -16,7 +16,7 @@ tags:
 
 ## 1. Un juego de rompecabezas para 4 jugadores usando 136 fichas
 
-El Mahjong es un juego de mesa originario de China que evolucionó en Japón en el "Riichi Mahjong" único. En los últimos años, con la profesionalización de la M.League, ha sido reevaluado por su faceta como un deporte mental de alto nivel.
+El Mahjong es un juego de mesa originario de China que evolucionó en Japón en el "Riichi Mahjong" único. En los últimos años, con la profesionalización de la M.League, ha sido reevaluado por su faceta como un [deporte mental](/es/p/game-poker-rules/) de alto nivel.
 
 A primera vista, puede parecer difícil por la gran cantidad de fichas con caracteres y símbolos chinos, pero en esencia es un **juego de rompecabezas de formar conjuntos**, igual que el "Póker" o el "Rummy" de las cartas.
 Las reglas básicas son muy simples: "**Quien combine 14 fichas y logre la forma predeterminada (forma ganadora o agari) antes que los demás, gana (y recibe puntos)**".

@@ -324,7 +324,7 @@ def scaled_dot_product_attention(q, k, v, mask=None):
 
 本記事では、[Transformer](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)モデルの深奥にある数学的構造を解き明かしてきました。
 
-単語を多次元ベクトル空間にマッピングするEmbedding、位置情報を三角波の合成で表現するPositional Encoding、そして情報検索のアナロジーから生まれた行列の内積計算であるSelf-Attention機構。これら一つ一つのコンポーネントは、線形代数、微積分、確率統計といった基礎的な数学の積み重ねにすぎません。
+単語を多次元ベクトル空間にマッピングするEmbedding、[位置情報](/p/technology-gps/)を三角波の合成で表現するPositional Encoding、そして情報検索のアナロジーから生まれた行列の内積計算であるSelf-Attention機構。これら一つ一つのコンポーネントは、線形代数、微積分、確率統計といった基礎的な数学の積み重ねにすぎません。
 
 しかし、これらの単純な行列演算が何層にも重なり、何十億、何千億というパラメータを通じて巨大なデータセットからパターンを学習するとき、そこには私たちの「言葉」を解し、論理的な推論を行い、時に創造的なアイデアを生み出すかのような「知能の形」が立ち現れます。
 

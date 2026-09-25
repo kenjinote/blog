@@ -10,7 +10,7 @@ tags: ["Teorema Empat Warna", "Teori Graf", "Pembuktian Berbantuan Komputer", "T
 
 ## 1. Apa itu Masalah Empat Warna?
 
-Masalah Empat Warna ([Four Color Theorem](https://kenji.blog/id/p/four-color-theorem/)) adalah salah satu masalah paling terkenal dan menarik dalam matematika, terutama dalam teori graf dan topologi. Klaimnya sangat sederhana dan cukup intuitif untuk dipahami bahkan oleh siswa sekolah dasar. Klaim tersebut adalah bahwa "untuk mewarnai peta mana pun di bidang datar sedemikian rupa sehingga wilayah yang berdekatan memiliki warna yang berbeda, maksimal **4 warna** sudah cukup".
+Masalah Empat Warna ([Four Color Theorem](https://kenji.blog/id/p/four-color-theorem/)) adalah salah satu masalah paling terkenal dan menarik dalam matematika, terutama dalam [teori graf](/id/p/graph-theory-dijkstra-a-star/) dan topologi. Klaimnya sangat sederhana dan cukup intuitif untuk dipahami bahkan oleh siswa sekolah dasar. Klaim tersebut adalah bahwa "untuk mewarnai peta mana pun di bidang datar sedemikian rupa sehingga wilayah yang berdekatan memiliki warna yang berbeda, maksimal **4 warna** sudah cukup".
 
 "Berdekatan" di sini berarti berbagi garis batas, bukan hanya sebuah titik. Jika mereka hanya bersentuhan di satu titik, tidak masalah jika diwarnai dengan warna yang sama. Hipotesis intuitif ini pertama kali diajukan oleh Francis Guthrie pada tahun 1852. Saat mewarnai peta Inggris, ia menyadari bahwa betapapun rumitnya batas-batas suatu wilayah, 4 warna sudah cukup untuk mewarnai semuanya.
 
@@ -28,7 +28,7 @@ Namun, pada tahun 1890, Percy Heawood menemukan kelemahan fatal dalam bukti Kemp
 
 ## 4. Transformasi ke Teori Graf
 
-Untuk menangani Masalah Empat Warna secara matematis dan ketat, masalah ini diterjemahkan ke dalam bahasa teori graf. Setiap wilayah di peta direpresentasikan sebagai "Simpul (Vertex)", dan wilayah yang berbagi batas dihubungkan oleh "Sisi (Edge)". Graf yang terbentuk dengan cara ini disebut "Graf Planar (Planar [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))".
+Untuk menangani Masalah Empat Warna secara matematis dan ketat, masalah ini diterjemahkan ke dalam bahasa [teori graf](/id/p/graph-theory-dijkstra-a-star/). Setiap wilayah di peta direpresentasikan sebagai "Simpul (Vertex)", dan wilayah yang berbagi batas dihubungkan oleh "Sisi (Edge)". Graf yang terbentuk dengan cara ini disebut "Graf Planar (Planar [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))".
 
 Graf Planar adalah graf yang dapat digambar pada bidang datar tanpa ada sisi yang saling bersilangan. Masalah Empat Warna kemudian direduksi menjadi masalah bahwa "simpul dari semua graf planar dapat diwarnai dengan **4 warna** sedemikian rupa sehingga simpul yang berdekatan memiliki warna yang berbeda".
 
@@ -59,7 +59,7 @@ Saat ini, pembuktian berbantuan komputer secara luas diakui sebagai alat yang am
 
 ## 7. Penutup
 
-Masalah Empat Warna adalah contoh terbaik untuk menunjukkan "bagaimana masalah yang tampaknya sederhana menyimpan struktur matematika yang dalam dan kompleks". Masalah ini, yang dimulai dari gagasan iseng mewarnai peta, telah memicu perkembangan teori graf dan bahkan berdampak besar dengan mengubah cara kita memahami pembuktian matematis itu sendiri.
+Masalah Empat Warna adalah contoh terbaik untuk menunjukkan "bagaimana masalah yang tampaknya sederhana menyimpan struktur matematika yang dalam dan kompleks". Masalah ini, yang dimulai dari gagasan iseng mewarnai peta, telah memicu perkembangan [teori graf](/id/p/graph-theory-dijkstra-a-star/) dan bahkan berdampak besar dengan mengubah cara kita memahami pembuktian matematis itu sendiri.
 
 Eksplorasi masalah ini mengajarkan kita betapa kuatnya intuisi manusia, dan berapa banyak upaya serta teknologi baru yang diperlukan untuk membuktikannya secara ketat.
 

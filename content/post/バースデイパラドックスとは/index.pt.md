@@ -24,7 +24,7 @@ Mas isso **realmente é mais de 50%.**
 
 ## Por que isso acontece?
 
-Esse fenômeno é chamado de "Paradoxo do Aniversário".
+Esse fenômeno é chamado de "[Paradoxo do Aniversário](/pt/p/birthday-paradox/)".
 O nome diz "paradoxo" (contra-senso), mas há uma razão matemática sólida.
 
 Quando o número de pessoas é "n", **a probabilidade de ninguém compartilhar o aniversário** é calculada pela seguinte fórmula:
@@ -54,7 +54,7 @@ Isso se aplica facilmente a uma sala de aula ou a uma reunião de trabalho.
 
 ## Resumo: A diferença entre a intuição e a matemática é fascinante
 
-O "Paradoxo do Aniversário" é um exemplo interessante de como nossa intuição e a probabilidade matemática real divergem.
+O "[Paradoxo do Aniversário](/pt/p/birthday-paradox/)" é um exemplo interessante de como nossa intuição e a probabilidade matemática real divergem.
 Saber sobre coisas assim pode animar pequenas conversas e quizzes!
 
 ---

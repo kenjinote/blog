@@ -169,9 +169,9 @@ $$
 
 此时康托尔面临一个巨大的疑问。 **“是否存在势介于 $\aleph_0$ 和 $2^{\aleph_0}$ 之间的无限集合？”** 
 
-“不存在中间势”的假设被称为 **连续统假设（[Continuum Hypothesis](https://kenji.blog/zh-cn/p/continuum-hypothesis/), CH）** 。康托尔为证明此假设倾注了一生，但未能解决。
+“不存在中间势”的假设被称为 **[连续统假设](/zh-cn/p/continuum-hypothesis/)（[Continuum Hypothesis](https://kenji.blog/zh-cn/p/continuum-hypothesis/), CH）** 。康托尔为证明此假设倾注了一生，但未能解决。
 
-后来，[库尔特·哥德尔](https://kenji.blog/zh-cn/p/godel/)（[Kurt Gödel](https://kenji.blog/zh-cn/p/godel/)）和保罗·科恩（Paul Cohen）证明了连续统假设 **“在当前的数学公理系统（ZFC）中，既无法证明也无法证伪（是独立的）”** 。这是 20 世纪数学中最深奥的发现之一。
+后来，[库尔特·哥德尔](https://kenji.blog/zh-cn/p/godel/)（[Kurt Gödel](https://kenji.blog/zh-cn/p/godel/)）和保罗·科恩（Paul Cohen）证明了[连续统假设](/zh-cn/p/continuum-hypothesis/) **“在当前的数学公理系统（ZFC）中，既无法证明也无法证伪（是独立的）”** 。这是 20 世纪数学中最深奥的发现之一。
 
 ---
 
@@ -183,4 +183,4 @@ $$
 2. 直到有理数为止，其大小与自然数相同（可数无限）。
 3. 通过错开对角线构造新数字的论证，证明了实数多于自然数（不可数无限）。
 
-这种违反直觉，却又具有绝对逻辑美的特征，可以说是数学这门学科最大的魅力所在。对角线论证后来也被应用于[艾伦·图灵](https://kenji.blog/zh-cn/p/turing/)（Alan Turing）的停机问题和[哥德尔不完备定理](https://kenji.blog/zh-cn/p/godels-incompleteness-theorems/)的证明等，成为了计算机科学和数理逻辑根基理论的重要组成部分。
+这种违反直觉，却又具有绝对逻辑美的特征，可以说是数学这门学科最大的魅力所在。对角线论证后来也被应用于[艾伦·图灵](https://kenji.blog/zh-cn/p/turing/)（Alan Turing）的[停机问题](/zh-cn/p/halting-problem/)和[哥德尔不完备定理](https://kenji.blog/zh-cn/p/godels-incompleteness-theorems/)的证明等，成为了计算机科学和数理逻辑根基理论的重要组成部分。

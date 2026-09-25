@@ -23,7 +23,7 @@ Zwillingsprimzahlen (Twin Primes) sind Paare von Primzahlen, deren Differenz gen
 - $(29, 31)$
 - $(41, 43)$
 
-Durch den Primzahlsatz ([Prime Number Theorem](https://kenji.blog/de/p/prime-number-theorem/)) ist bekannt, dass die Häufigkeit des Auftretens von Primzahlen selbst abnimmt, je größer die Zahlen werden. Dementsprechend nimmt auch die Häufigkeit des Auftretens von Zwillingsprimzahlen ab. Mathematiker haben jedoch seit langem vermutet, dass dieses "Primzahlpaar mit einer Differenz von 2" unerschöpflich auftaucht, egal wie groß die Zahlen werden.
+Durch den [Primzahlsatz](/de/p/prime-number-theorem/) ([Prime Number Theorem](https://kenji.blog/de/p/prime-number-theorem/)) ist bekannt, dass die Häufigkeit des Auftretens von Primzahlen selbst abnimmt, je größer die Zahlen werden. Dementsprechend nimmt auch die Häufigkeit des Auftretens von Zwillingsprimzahlen ab. Mathematiker haben jedoch seit langem vermutet, dass dieses "Primzahlpaar mit einer Differenz von 2" unerschöpflich auftaucht, egal wie groß die Zahlen werden.
 
 Dies ist die **Zwillingsprimzahlvermutung** .
 
@@ -48,7 +48,7 @@ graph LR
     D -->|"Beispiel"| E("(3,5), (11,13)...")
 ```
 
-Nach dem Primzahlsatz nähert sich die Anzahl der Primzahlen kleiner oder gleich $x$ , bezeichnet als $\pi(x)$ , asymptotisch $x / \ln(x)$ an. Auch für die Anzahl der Zwillingsprimzahlen $\pi_2(x)$ gibt es eine stärkere quantitative Vermutung, die als Hardy-Littlewood-Vermutung (erste Hardy-Littlewood-Vermutung) bekannt ist.
+Nach dem [Primzahlsatz](/de/p/prime-number-theorem/) nähert sich die Anzahl der Primzahlen kleiner oder gleich $x$ , bezeichnet als $\pi(x)$ , asymptotisch $x / \ln(x)$ an. Auch für die Anzahl der Zwillingsprimzahlen $\pi_2(x)$ gibt es eine stärkere quantitative Vermutung, die als Hardy-Littlewood-Vermutung (erste Hardy-Littlewood-Vermutung) bekannt ist.
 
 ### Hardy-Littlewood-Vermutung
 

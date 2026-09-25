@@ -34,7 +34,7 @@ Git mainly uses three objects to represent the state of a repository. These obje
 1. **Blob (Binary Large Object)**
    An object that stores the file content itself. File names and permission information are not included here. Pure byte sequences are compressed with zlib and identified by a SHA-1 hash value (a 40-character hexadecimal number).
 2. **[Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
-   An object that represents the structure of a directory. A Tree object contains pointers (SHA-1 hash values) to other Tree objects (subdirectories) and Blob objects (files), as well as their file names and access permissions. It plays a role similar to a UNIX directory.
+   An object that represents the structure of a directory. A Tree object contains [pointers](/en/p/c-language-pointers-memory-management-stack-heap/) (SHA-1 hash values) to other Tree objects (subdirectories) and Blob objects (files), as well as their file names and access permissions. It plays a role similar to a UNIX directory.
 3. **Commit**
    Holds a pointer to the top-level Tree object of the entire repository at a given point in time, metadata (author, commit date and time, commit message), and a pointer to the immediately preceding commit (parent commit).
 
@@ -66,7 +66,7 @@ When Git detects conflicts or displays file differences, sophisticated algorithm
 
 ### 3.1 Myers' Diff Algorithm
 
-Git's default difference detection algorithm is the one devised by Eugene W. Myers. When there are two text files $A$ and $B$, the problem of finding the "minimum edit script (insertions and deletions)" to transform $A$ into $B$ can be modeled as a shortest path problem in graph theory.
+Git's default difference detection algorithm is the one devised by Eugene W. Myers. When there are two text files $A$ and $B$, the problem of finding the "minimum edit script (insertions and deletions)" to transform $A$ into $B$ can be modeled as a shortest path problem in [graph theory](/en/p/graph-theory-dijkstra-a-star/).
 
 Let the lengths of the strings be $N$ and $M$ respectively, and the sum be $V = N + M$. Myers' algorithm searches for the Edit Distance $D$. The time complexity of this algorithm is expressed by the following formula:
 
@@ -86,7 +86,7 @@ When you feel that conflict resolution is difficult, using `git diff --histogram
 
 ### 3.3 SHA-1 and Collision Probability
 
-Git manages all objects with SHA-1 hash values. The size of the hash space is $2^{160}$. Approximating the probability of hash collision (different contents having the same hash value) using the Birthday Paradox, the number of objects $k$ required for the collision probability $p$ to reach 50% is as follows:
+Git manages all objects with SHA-1 hash values. The size of the hash space is $2^{160}$. Approximating the probability of hash collision (different contents having the same hash value) using [the Birthday Paradox](/en/p/birthday-paradox/), the number of objects $k$ required for the collision probability $p$ to reach 50% is as follows:
 
 $$ k \approx \sqrt{2 \ln(2)} \cdot 2^{80} \approx 1.2 \times 2^{80} $$
 
@@ -117,7 +117,7 @@ $ git checkout feature/login
 
 ### Diagram: What Happened Internally?
 
-Let's visualize the movement of branch pointers at this time using a Mermaid `gitGraph`.
+Let's visualize the movement of branch [pointers](/en/p/c-language-pointers-memory-management-stack-heap/) at this time using a Mermaid `gitGraph`.
 
 ```mermaid
 gitGraph
@@ -368,8 +368,8 @@ $ git reflog
 
 ## 12. Conclusion
 
-We have explained in great detail the mistakes that Git beginners easily fall into, the mechanisms of Git behind them, and how to solve them. Committing to the wrong branch, reverting pushed commits, utilizing Stash, surviving from a Detached HEAD, and resolving conflicts. What is important in all of these is to imagine "what objects and pointers Git is manipulating behind the scenes."
+We have explained in great detail the mistakes that Git beginners easily fall into, the mechanisms of Git behind them, and how to solve them. Committing to the wrong branch, reverting pushed commits, utilizing Stash, surviving from a Detached HEAD, and resolving conflicts. What is important in all of these is to imagine "what objects and [pointers](/en/p/c-language-pointers-memory-management-stack-heap/) Git is manipulating behind the scenes."
 
 File differences are calculated by strict Diff algorithms expressed in mathematical formulas, and the consistency of history is guaranteed by cryptographic hash functions. If you understand this beautiful design philosophy, you should realize that Git is by no means a "mysterious black box," but the strongest shield that firmly protects your source code.
 
-Next time you think "I screwed up!", don't panic and close the terminal, but take a deep breath and type `git status`. Git will surely present you with hints for recovery.
+Next time you think "I screwed up!", don't panic and close the [terminal](/en/p/terminal-efficiency-powershell-bash-shortcuts/), but take a deep breath and type `git status`. Git will surely present you with hints for recovery.

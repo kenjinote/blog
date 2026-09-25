@@ -10,7 +10,7 @@ tags: ["恩斯特·庫默爾", "費馬最後定理", "理想數", "代數數論"
 
 # [恩斯特·庫默爾](https://kenji.blog/zh-tw/p/kummer/)：理想數之父與代數數論的黎明
 
-在數學的歷史上，對某個特定未解之謎的挑戰開啟了全新研究領域的現象並不罕見。恩斯特·愛德華·庫默爾 ( **Ernst Eduard [Kummer](https://kenji.blog/zh-tw/p/kummer/)** ) 就是一位創造了如此歷史轉折點的 19 世紀德國數學巨人。在與 **費馬最後定理** ( **[Fermat's Last Theorem](https://kenji.blog/zh-tw/p/fermats-last-theorem/)** ) 深刻搏鬥的過程中，他引入了具有突破性的 **理想數** ( **Ideal Numbers** ) 概念，為現代代數數論奠定了基礎。
+在數學的歷史上，對某個特定未解之謎的挑戰開啟了全新研究領域的現象並不罕見。恩斯特·愛德華·庫默爾 ( **Ernst Eduard [Kummer](https://kenji.blog/zh-tw/p/kummer/)** ) 就是一位創造了如此歷史轉折點的 19 世紀德國數學巨人。在與 **[費馬最後定理](/zh-tw/p/fermats-last-theorem/)** ( **[Fermat's Last Theorem](https://kenji.blog/zh-tw/p/fermats-last-theorem/)** ) 深刻搏鬥的過程中，他引入了具有突破性的 **理想數** ( **Ideal Numbers** ) 概念，為現代代數數論奠定了基礎。
 
 在本文中，我們將深入探討庫默爾波瀾壯闊的一生、圍繞他的充滿人情味的軼事，以及他在數學史上持續閃耀的輝煌成就。
 
@@ -28,7 +28,7 @@ tags: ["恩斯特·庫默爾", "費馬最後定理", "理想數", "代數數論"
 
 畢業後，庫默爾未能立即獲得大學教職，因此他在離家鄉不遠的利格尼茨 ( **Liegnitz** ) 的一所文理中學擔任了大約十年的數學和物理教師。這段作為教師的時期絕不是浪費時間。他作為教育者懷有深厚的熱情，並培養出了傑出的學生。
 
-其中一位學生就是利奧波德·克羅內克 ( **Leopold [Kronecker](https://kenji.blog/zh-tw/p/kronecker/)** )，他後來成為庫默爾的同事和終生摯友。庫默爾發現了克羅內克非凡的才華，教授他高等數學，並引導他走上了研究之路。在擔任中學教師的同時，庫默爾繼續自己的研究，在柏林的學術期刊上發表了一系列出色的論文。
+其中一位學生就是[利奧波德·克羅內克](/zh-tw/p/kronecker/) ( **Leopold [Kronecker](https://kenji.blog/zh-tw/p/kronecker/)** )，他後來成為庫默爾的同事和終生摯友。庫默爾發現了克羅內克非凡的才華，教授他高等數學，並引導他走上了研究之路。在擔任中學教師的同時，庫默爾繼續自己的研究，在柏林的學術期刊上發表了一系列出色的論文。
 
 ### 作為大學教授的榮耀
 
@@ -64,7 +64,7 @@ $$
 
 不存在滿足該方程式的正整數解 $(x, y, z)$。
 
-1847 年，法國數學家[加布里埃爾·拉梅](https://kenji.blog/zh-tw/p/lame/) ( **Gabriel Lamé** ) 和奧古斯丁-路易·柯西 ( **[Augustin-Louis Cauchy](https://kenji.blog/zh-tw/p/cauchy/)** ) 宣布他們已成功證明了這一定理。他們的方法是將因式分解擴展到複數（分圓域）領域。
+1847 年，法國數學家[加布里埃爾·拉梅](https://kenji.blog/zh-tw/p/lame/) ( **Gabriel Lamé** ) 和[奧古斯丁-路易·柯西](/zh-tw/p/cauchy/) ( **[Augustin-Louis Cauchy](https://kenji.blog/zh-tw/p/cauchy/)** ) 宣布他們已成功證明了這一定理。他們的方法是將因式分解擴展到複數（分圓域）領域。
 
 使用 $1$ 的本原 $p$ 次方根 $\zeta$（其中 $\zeta^p = 1, \zeta \neq 1$），方程式 $x^p + y^p = z^p$ 可以分解如下：
 

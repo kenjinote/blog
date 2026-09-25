@@ -11,7 +11,7 @@ tags: ["Transformer", "Deep Learning", "Attention", "Math"]
 
 # 前言：為什麼要學習[Transformer](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)的數學？
 
-可以毫不誇張地說，「Transformer」是改寫了現代自然語言處理（NLP）乃至整個人工智慧歷史的架構。這個模型首次由Google研究人員在2017年的論文《Attention Is All You Need》中提出，現在作為席捲全球的大型語言模型（[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）——如OpenAI的GPT系列（ChatGPT的底層技術）、Google的BERT以及Anthropic的Claude——的核心運作著。
+可以毫不誇張地說，「Transformer」是改寫了現代自然語言處理（NLP）乃至整個人工智慧歷史的架構。這個模型首次由Google研究人員在2017年的論文《Attention Is All You Need》中提出，現在作為席捲全球的[大型語言模型](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）——如OpenAI的GPT系列（ChatGPT的底層技術）、Google的BERT以及Anthropic的Claude——的核心運作著。
 
 然而，現狀是我們經常看到關於Transformer機制的定性解釋，例如「使用Attention（注意力機制）來理解上下文」，但針對初學者深入探討其背後 **數學結構** 的解說卻意外地少。為了真正理解AI是如何將「語言」作為「數學公式」進行處理，並生成出令人驚訝地自然的文本，解讀其數學機制是不可或缺的。
 
@@ -271,15 +271,15 @@ $$ V_{encoder} = X_{enc} W^V $$
 # 9. 計算複雜度與現代最佳化的數學
 
 Transformer雖然是個很棒的模型，但因為其數學結構也存在著「弱點」。
-請注意 Self-Attention 的計算複雜度。在計算分數矩陣 $Q K^T$ 時，需要將 $(N \times d_k)$ 的矩陣與 $(d_k \times N)$ 的矩陣相乘，因此其計算複雜度為 **$O(N^2 \cdot d_{model})$** 。
+請注意 Self-Attention 的計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)。在計算分數矩陣 $Q K^T$ 時，需要將 $(N \times d_k)$ 的矩陣與 $(d_k \times N)$ 的矩陣相乘，因此其計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)為 **$O(N^2 \cdot d_{model})$** 。
 
-換句話說， **相對於序列長度 $N$，計算複雜度與記憶體使用量會呈平方增長** 。
+換句話說， **相對於序列長度 $N$，計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)與記憶體使用量會呈平方增長** 。
 當文章很短時不會成為問題，但如果想將整本書這樣超長的上下文輸入到 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 時，$N$ 會達到數萬至數十萬，在傳統的 Attention 計算下，GPU的記憶體會瞬間耗盡。
 
 為了解開這個 $O(N^2)$ 的詛咒，近年來從數學與硬體角度提出了各種最佳化方法。
 其中具代表性的例子就是 **FlashAttention** 。FlashAttention 是一種將 Attention 計算以區塊（Tiling）方式分割進行的演算法，藉此將 GPU 記憶體階層（SRAM 與 HBM）之間的資料傳輸（記憶體存取）降到最低。儘管在數學公式上輸出的結果與標準的 Attention 完全相同（Exact Attention），但透過硬體層級的最佳化實現了戲劇性的加速與記憶體節省，使得像 GPT-4 這種長文本模型成為可能。
 
-除此之外，也有許多研究正積極探討將計算複雜度近似為 $O(N \log N)$ 或 $O(N)$ 的 Sparse Attention 與 Linear Attention 等技術。
+除此之外，也有許多研究正積極探討將計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)近似為 $O(N \log N)$ 或 $O(N)$ 的 Sparse Attention 與 Linear Attention 等技術。
 
 ---
 

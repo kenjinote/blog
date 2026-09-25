@@ -17,13 +17,13 @@ tags:
 
 In modern society, we are constantly connected to something. Whether it is communication between computers via the internet, complex human relationships on social networking services (SNS), vast road and railway networks connecting cities, global supply chains for logistics, or the countless neural connections within our own brains—it is no exaggeration to say that the world is composed of countless networks.
 
-Providing a powerful framework to simply and mathematically represent and analyze these networks, which at first glance appear highly complex and even chaotic, is **[Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)**. By using graph theory, we can unravel the hidden structures and properties within complex systems, find optimal communication routes, and evaluate the vulnerability of entire networks.
+Providing a powerful framework to simply and mathematically represent and analyze these networks, which at first glance appear highly complex and even chaotic, is **[Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)**. By using [graph theory](/en/p/graph-theory-dijkstra-a-star/), we can unravel the hidden structures and properties within complex systems, find optimal communication routes, and evaluate the vulnerability of entire networks.
 
-This article will comprehensively and systematically explain graph theory, starting from its historical origins, covering basic mathematical definitions and data structures for computer programming, and introducing representative algorithms that support the foundation of modern technology.
+This article will comprehensively and systematically explain [graph theory](/en/p/graph-theory-dijkstra-a-star/), starting from its historical origins, covering basic mathematical definitions and data structures for computer programming, and introducing representative algorithms that support the foundation of modern technology.
 
 ## 2. The Birth of [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Theory: The [Seven Bridges of Königsberg](https://kenji.blog/en/p/seven-bridges-of-konigsberg/)
 
-The history of graph theory dates back to the 18th century. In 1736, the brilliant Swiss mathematician [Leonhard Euler](https://kenji.blog/en/p/euler/) elegantly solved a famous mathematical puzzle, marking the beginning of this field. This puzzle is known as the "[Seven Bridges of Königsberg](https://kenji.blog/en/p/seven-bridges-of-konigsberg/)".
+The history of [graph theory](/en/p/graph-theory-dijkstra-a-star/) dates back to the 18th century. In 1736, the brilliant Swiss mathematician [Leonhard Euler](https://kenji.blog/en/p/euler/) elegantly solved a famous mathematical puzzle, marking the beginning of this field. This puzzle is known as the "[Seven Bridges of Königsberg](https://kenji.blog/en/p/seven-bridges-of-konigsberg/)".
 
 In the beautiful city of Königsberg in the Kingdom of Prussia (now Kaliningrad, Russia), the Pregel River flowed, with two islands in the middle and a total of seven bridges connecting them to the riverbanks. A game became popular among the citizens: "Is it possible to cross every bridge exactly once and return to the original starting point?" Many people tried, but no one succeeded.
 
@@ -48,7 +48,7 @@ This discovery by Euler was the exact moment **[Graph Theory](https://kenji.blog
 
 ## 3. Basic Concepts and Mathematical Definitions of [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Theory
 
-In graph theory, a "graph" does not refer to statistical data visualization methods like line charts or pie charts. It refers to a mathematical structure that represents a set of objects and the relationships between them.
+In [graph theory](/en/p/graph-theory-dijkstra-a-star/), a "graph" does not refer to statistical data visualization methods like line charts or pie charts. It refers to a mathematical structure that represents a set of objects and the relationships between them.
 
 ### 3.1. Basic Structure of a Graph: Vertices and Edges
 
@@ -105,7 +105,7 @@ Furthermore, if there is always a path between any two arbitrary vertices in a g
 
 ## 4. Data Structures for Handling Graphs in Computers
 
-In order to implement the mathematical concepts of graph theory as programs and have computers calculate them quickly, it is necessary to represent graphs in memory using appropriate data structures. In practice, two main methods are used: "Adjacency Matrix" and "Adjacency List".
+In order to implement the mathematical concepts of [graph theory](/en/p/graph-theory-dijkstra-a-star/) as programs and have computers calculate them quickly, it is necessary to represent graphs in memory using appropriate data structures. In practice, two main methods are used: "Adjacency Matrix" and "Adjacency List".
 
 ### 4.1. Adjacency Matrix
 
@@ -120,7 +120,7 @@ A_{i,j} = \begin{cases}
 \end{cases}
 $$
 
-*   **Pros**: It is possible to immediately determine whether an edge exists between any two vertices in $\mathcal{O}(1)$ (constant time). It also directly ties into algebraic graph analysis (like spectral graph theory) using matrix multiplication.
+*   **Pros**: It is possible to immediately determine whether an edge exists between any two vertices in $\mathcal{O}(1)$ (constant time). It also directly ties into algebraic graph analysis (like [spectral graph theory](/en/p/spectral-graph-theory/)) using matrix multiplication.
 *   **Cons**: The memory consumption is $\mathcal{O}(N^2)$ for the number of vertices $N$, which will exhaust memory for giant graphs. Particularly for **Sparse Graphs**, where the number of edges is very small compared to the square of the number of vertices, most of the matrix becomes $0$, making it highly inefficient.
 
 ### 4.2. Adjacency List
@@ -260,7 +260,7 @@ Each edge (pipe or cable) making up the network has a strictly defined "Capacity
 
 ## 6. Bipartite Graphs and Matching Problems
 
-Occupying a unique position within graph theory is the **Bipartite [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**. A bipartite graph is a graph where, when all vertices are divided into two groups (e.g., group $U$ and group $V$), every edge always connects a vertex in $U$ and a vertex in $V$, and there are absolutely no edges connecting vertices within the same group.
+Occupying a unique position within [graph theory](/en/p/graph-theory-dijkstra-a-star/) is the **Bipartite [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**. A bipartite graph is a graph where, when all vertices are divided into two groups (e.g., group $U$ and group $V$), every edge always connects a vertex in $U$ and a vertex in $V$, and there are absolutely no edges connecting vertices within the same group.
 
 Bipartite graphs are ideal for modeling relationships between two sets with different properties, such as "job seekers" and "recruiting companies," "students" and "laboratories," or "taxis" and "passengers."
 
@@ -277,11 +277,11 @@ Google's search engine mechanism, which instantly evaluates countless web pages 
 *   **Vertex**: Individual web pages on the Internet
 *   **Edge**: Hyperlinks jumping from page to page
 
-At the root of PageRank is the recursive evaluation idea that "a page linked by many high-quality web pages is highly likely to be a high-quality page itself." By representing the link structure as a massive adjacency matrix and calculating the principal eigenvector of that matrix (an application of spectral graph theory), they succeeded in mathematically and objectively calculating the relative importance of Internet information spanning hundreds of billions of pages.
+At the root of PageRank is the recursive evaluation idea that "a page linked by many high-quality web pages is highly likely to be a high-quality page itself." By representing the link structure as a massive adjacency matrix and calculating the principal eigenvector of that matrix (an application of [spectral graph theory](/en/p/spectral-graph-theory/)), they succeeded in mathematically and objectively calculating the relative importance of Internet information spanning hundreds of billions of pages.
 
 ### 7.2. Structural Analysis of Social Networks
 
-SNS platforms such as Twitter, Facebook, LinkedIn, and Instagram form massive **Social Graphs** expressing connections between people, or people and content. By applying graph theory, the structure of massive communities can be precisely analyzed.
+SNS platforms such as Twitter, Facebook, LinkedIn, and Instagram form massive **Social Graphs** expressing connections between people, or people and content. By applying [graph theory](/en/p/graph-theory-dijkstra-a-star/), the structure of massive communities can be precisely analyzed.
 
 For example, to answer the question "Who is the central figure (influencer) with the most influence in the entire network?", the concept of **Centrality** is used. By calculating various metrics such as "degree centrality" based on the simple number of edges connected to a vertex, "betweenness centrality" measuring how frequently one appears on the shortest paths in the network, and "closeness centrality" evaluating the ease of access to all other vertices, activities like influencer identification, information diffusion route prediction, and echo chamber phenomenon detection are performed.
 
@@ -295,8 +295,8 @@ GNNs broke through this barrier by simultaneously propagating and learning the f
 
 ## 8. Conclusion and Future Prospects
 
-In this article, we have outlined how **Graph Theory**, which was born from a simple puzzle in Königsberg in the 18th century, has evolved into the "ultimate tool" for unraveling the extremely complex networks of modern society.
+In this article, we have outlined how **[Graph Theory](/en/p/graph-theory-dijkstra-a-star/)**, which was born from a simple puzzle in Königsberg in the 18th century, has evolved into the "ultimate tool" for unraveling the extremely complex networks of modern society.
 
-Although graphs are composed only of the simplest and most abstract elements possible: points (vertices) and lines (edges), the world of mathematical theories and computational algorithms applied to them is as deep as the universe and harbors overwhelming power. For software engineers, data scientists, or anyone interested in complex systems, systematic knowledge of graph theory will exponentially improve the ability for high-level abstraction against difficult problems and logical thinking to derive optimal solutions.
+Although graphs are composed only of the simplest and most abstract elements possible: points (vertices) and lines (edges), the world of mathematical theories and computational algorithms applied to them is as deep as the universe and harbors overwhelming power. For software engineers, data scientists, or anyone interested in complex systems, systematic knowledge of [graph theory](/en/p/graph-theory-dijkstra-a-star/) will exponentially improve the ability for high-level abstraction against difficult problems and logical thinking to derive optimal solutions.
 
-If you are learning programming, please use this article as a stepping stone and try actually coding and running algorithms like [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)'s or breadth-first search on your own computer. When you experience the process of invisible, complex networks being vividly unraveled by the code you write, you will truly realize the true beauty and fascination of graph theory. The world is filled with more beautiful, computable graphs than you might think.
+If you are learning programming, please use this article as a stepping stone and try actually coding and running algorithms like [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)'s or breadth-first search on your own computer. When you experience the process of invisible, complex networks being vividly unraveled by the code you write, you will truly realize the true beauty and fascination of [graph theory](/en/p/graph-theory-dijkstra-a-star/). The world is filled with more beautiful, computable graphs than you might think.

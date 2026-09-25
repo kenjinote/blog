@@ -74,7 +74,7 @@ As a result, both choose to "Confess," settling on the outcome of **5 years in p
 Herein lies the dilemma. Is the outcome they reached, "5 years in prison for both," the best possible outcome for the whole?
 No. If the two had trusted each other and both stuck to "Silence," they would have only faced "1 year in prison for both."
 
-The state where the overall benefit (in this case, the small total of prison terms) is the highest, that is, the "state where no one's benefit can be increased any further without someone's disadvantage," is called **"Pareto Optimality"**. The core of the Prisoner's Dilemma lies in the fact that **"individual rational choice Nash equilibrium does not match the overall optimal solution Pareto optimality"**.
+The state where the overall benefit (in this case, the small total of prison terms) is the highest, that is, the "state where no one's benefit can be increased any further without someone's disadvantage," is called **"Pareto Optimality"**. The core of [the Prisoner's Dilemma](/en/p/prisoners-dilemma/) lies in the fact that **"individual rational choice Nash equilibrium does not match the overall optimal solution Pareto optimality"**.
 
 ---
 
@@ -132,15 +132,15 @@ This discovery suggests that "morality" and "trust" in human society are not jus
 
 ## 5. The Emergence of Cooperation in Evolutionary Biology
 
-The success of the Prisoner's Dilemma and the "Tit for Tat strategy" also had a great impact on evolutionary biology (evolutionary game theory). As typified by Richard Dawkins' "The Selfish Gene," the natural world is a law of the jungle, and individual organisms should prioritize their own survival and reproduction betray. Nevertheless, the natural world is full of "altruistic behavior cooperate," such as vampire bats sharing blood and the sociality of honeybees.
+The success of [the Prisoner's Dilemma](/en/p/prisoners-dilemma/) and the "Tit for Tat strategy" also had a great impact on evolutionary biology (evolutionary game theory). As typified by Richard Dawkins' "The Selfish Gene," the natural world is a law of the jungle, and individual organisms should prioritize their own survival and reproduction betray. Nevertheless, the natural world is full of "altruistic behavior cooperate," such as vampire bats sharing blood and the sociality of honeybees.
 
 In evolutionary simulations, it has been proven that when a small "Tit for Tat" group is introduced into a society of all "Betrayers", the Tit for Tat group cooperates with each other, gains high profits, and gradually weeds out the betrayer group. In other words, in a long-term struggle for survival, a group that can cooperate with each other will be the ultimate winner.
 
 ## 6. Conclusion: How to Overcome the Dilemma
 
-The Prisoner's Dilemma teaches us the harsh reality that if we pursue our self-interest too much, everyone loses as a result. At the same time, however, as research on repeated games shows, we can build cooperative relationships if we have sustainable relationships and appropriate feedback mechanisms.
+[The Prisoner's Dilemma](/en/p/prisoners-dilemma/) teaches us the harsh reality that if we pursue our self-interest too much, everyone loses as a result. At the same time, however, as research on repeated games shows, we can build cooperative relationships if we have sustainable relationships and appropriate feedback mechanisms.
 
-In order to solve the Prisoner's Dilemma in the real world, the following approaches are necessary:
+In order to solve [the Prisoner's Dilemma](/en/p/prisoners-dilemma/) in the real world, the following approaches are necessary:
 - **Rule Changes Rule of Law**: Institutionalize penalties for betrayal and eliminate the benefits of betrayal. e.g., antitrust laws and environmental taxes.
 - **Ensuring Communication**: Provide opportunities to confirm each other's intentions and build trusting relationships.
 - **Emphasis on Long-Term Relationships**: Make people aware of the shadow of the future that "if we betray this time, there will be no future transactions."

@@ -11,7 +11,7 @@ tags: ["Privacy", "Big Data", "Differential Privacy", "Federated Learning"]
 
 # プライバシーと利便性のトレードオフ：ビッグデータ時代における個人情報の行方
 
-現代のデジタル社会において、私たちは日々の生活の中で膨大な量のデータを生成しています。スマートフォンの位置情報、SNSへの投稿、オンラインショッピングの購買履歴、ウェアラブルデバイスが記録する健康データなど、多岐にわたる「ビッグデータ」が絶え間なく収集されています。これらのデータは、AI（人工知能）の進化やパーソナライズされたサービスの提供に不可欠であり、私たちの生活をより便利で豊かなものにしています。
+現代のデジタル社会において、私たちは日々の生活の中で膨大な量のデータを生成しています。スマートフォンの[位置情報](/p/technology-gps/)、SNSへの投稿、オンラインショッピングの購買履歴、ウェアラブルデバイスが記録する健康データなど、多岐にわたる「ビッグデータ」が絶え間なく収集されています。これらのデータは、AI（人工知能）の進化やパーソナライズされたサービスの提供に不可欠であり、私たちの生活をより便利で豊かなものにしています。
 
 しかし、その一方で、個人情報の収集と利用に伴うプライバシーの侵害リスクが深刻な社会問題として浮上しています。データ漏洩事件や、ユーザーの同意なきデータの第三者提供、さらには国家による監視社会化への懸念など、利便性の裏に潜むリスクは無視できない規模に達しています。本記事では、この「プライバシーと利便性のトレードオフ」という現代のジレンマに対して、テクノロジーと法規制の両面からどのようにアプローチされているのか、最新の動向を交えて極めて詳細に技術的解説を行います。
 
@@ -139,7 +139,7 @@ $$ w_{t+1} = \sum_{k=1}^K \frac{n_k}{n} w_{t+1}^k $$
 $$ E(m_1 + m_2) = E(m_1) \oplus E(m_2) $$
 $$ E(m_1 \times m_2) = E(m_1) \otimes E(m_2) $$
 
-準同型暗号は、加算または乗算のどちらか一方のみが可能な「部分準同型暗号（Partially Homomorphic Encryption: PHE）」と、加算と乗算の両方が無限回可能な「完全準同型暗号（Fully Homomorphic Encryption: FHE）」に分けられます。2009年にCraig Gentryが格子暗号（Lattice-based cryptography）を用いた最初のFHEスキームを構築して以来、暗号学において大きなブレイクスルーとなりました。
+準同型暗号は、加算または乗算のどちらか一方のみが可能な「部分準同型暗号（Partially Homomorphic Encryption: PHE）」と、加算と乗算の両方が無限回可能な「[完全準同型暗号](/p/fully-homomorphic-encryption-fhe-explained/)（Fully Homomorphic Encryption: [FHE](/p/fully-homomorphic-encryption-fhe-explained/)）」に分けられます。2009年にCraig Gentryが[格子暗号](/p/lattice-based-cryptography-math-intuition/)（[Lattice-based cryptography](/p/lattice-based-cryptography-math-intuition/)）を用いた最初の[FHE](/p/fully-homomorphic-encryption-fhe-explained/)スキームを構築して以来、暗号学において大きなブレイクスルーとなりました。
 
 現在、計算コストや暗号文のサイズ増大（オーバーヘッド）という課題は残されていますが、医療データのクラウド上でのセキュアな解析や、金融機関同士の秘密計算などへの応用が期待されています。
 

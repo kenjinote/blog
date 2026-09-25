@@ -20,7 +20,7 @@ Im Bereich der Geometrie in der Mathematik wird das Thema der Flächenberechnung
 
 Wenn jedoch alle Eckpunkte eines Polygons auf **Gitterpunkten** liegen (Punkten, bei denen sowohl die $x$- als auch die $y$-Koordinate ganze Zahlen sind), gibt es eine magische Formel, mit der Sie die Fläche nur mit extrem einfachen arithmetischen Operationen berechnen können, ohne Längen zu messen oder komplexe Multiplikationen oder Quadratwurzelberechnungen durchzuführen. Das ist der **[Satz von Pick](https://kenji.blog/de/p/picks-theorem/)**, den wir diesmal im Detail erklären werden.
 
-Der [Satz von Pick](https://kenji.blog/de/p/picks-theorem/) ist nicht nur eine "bequeme und mysteriöse Formel zum einfachen Finden der Fläche", sondern er hat einen sehr tiefen Hintergrund, der mit Topologie, Graphentheorie und algebraischer Geometrie in der modernen Mathematik verbunden ist. In diesem Artikel werden wir den [Satz von Pick](https://kenji.blog/de/p/picks-theorem/) aus verschiedenen Blickwinkeln eingehend betrachten, angefangen bei seiner grundlegenden Verwendung bis hin zum mathematischen Beweis, warum eine so einfache Formel gilt, seinem historischen Hintergrund und sogar den Grenzen des Satzes und der Möglichkeit seiner Erweiterung auf 3D.
+Der [Satz von Pick](https://kenji.blog/de/p/picks-theorem/) ist nicht nur eine "bequeme und mysteriöse Formel zum einfachen Finden der Fläche", sondern er hat einen sehr tiefen Hintergrund, der mit Topologie, [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) und algebraischer Geometrie in der modernen Mathematik verbunden ist. In diesem Artikel werden wir den [Satz von Pick](https://kenji.blog/de/p/picks-theorem/) aus verschiedenen Blickwinkeln eingehend betrachten, angefangen bei seiner grundlegenden Verwendung bis hin zum mathematischen Beweis, warum eine so einfache Formel gilt, seinem historischen Hintergrund und sogar den Grenzen des Satzes und der Möglichkeit seiner Erweiterung auf 3D.
 
 ## 2. Georg Alexander Pick und der historische Hintergrund
 
@@ -115,7 +115,7 @@ Wenn Sie jedoch den [Satz von Pick](https://kenji.blog/de/p/picks-theorem/) verw
 
 ## 5. Beweis mit Eulerschem Polyedersatz
 
-Warum gilt eine so magische Formel? Es gibt mehrere Möglichkeiten, den [Satz von Pick](https://kenji.blog/de/p/picks-theorem/) zu beweisen, aber hier werden wir eine elegante Beweisidee vorstellen, die einen berühmten Satz aus der Graphentheorie verwendet, die **Eulersche Polyederformel**.
+Warum gilt eine so magische Formel? Es gibt mehrere Möglichkeiten, den [Satz von Pick](https://kenji.blog/de/p/picks-theorem/) zu beweisen, aber hier werden wir eine elegante Beweisidee vorstellen, die einen berühmten Satz aus der [Graphentheorie](/de/p/graph-theory-dijkstra-a-star/) verwendet, die **Eulersche Polyederformel**.
 
 Nach dem eulerschen Polyedersatz gilt für einen zusammenhängenden Graphen (Netzwerk), der auf einer Ebene gezeichnet ist, folgende Beziehung, wenn die Anzahl der Eckpunkte $V$, die Anzahl der Kanten $E$ und die Anzahl der Flächen $F$ ist:
 

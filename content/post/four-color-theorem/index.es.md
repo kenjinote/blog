@@ -10,7 +10,7 @@ tags: ["Teorema de los Cuatro Colores", "Teoría de Grafos", "Prueba asistida po
 
 ## 1. ¿Qué es el problema de los cuatro colores?
 
-El problema de los cuatro colores ([Four Color Theorem](https://kenji.blog/es/p/four-color-theorem/)) es uno de los problemas más famosos y fascinantes de las matemáticas, especialmente en la teoría de grafos y la topología. Su afirmación es muy simple y tan intuitiva que incluso un estudiante de primaria puede entenderla. Afirma que "para cualquier mapa en un plano, un máximo de **4 colores** es suficiente para colorear las regiones adyacentes de modo que tengan colores diferentes".
+El problema de los cuatro colores ([Four Color Theorem](https://kenji.blog/es/p/four-color-theorem/)) es uno de los problemas más famosos y fascinantes de las matemáticas, especialmente en la [teoría de grafos](/es/p/graph-theory-dijkstra-a-star/) y la topología. Su afirmación es muy simple y tan intuitiva que incluso un estudiante de primaria puede entenderla. Afirma que "para cualquier mapa en un plano, un máximo de **4 colores** es suficiente para colorear las regiones adyacentes de modo que tengan colores diferentes".
 
 Aquí, "adyacentes" significa que comparten un límite, no solo un punto. Si solo se tocan en un punto, se pueden colorear con el mismo color sin problema. Esta hipótesis intuitiva fue propuesta por primera vez en 1852 por Francis Guthrie. Mientras coloreaba un mapa de los condados de Inglaterra, se dio cuenta de que sin importar cuán complejos fueran los límites, cuatro colores eran suficientes para colorear el mapa.
 
@@ -28,13 +28,13 @@ Sin embargo, en 1890, Percy Heawood descubrió una falla fatal en la demostraci�
 
 ## 4. Conversión a la teoría de grafos
 
-Para tratar rigurosamente el problema de los cuatro colores matemáticamente, el problema se traduce al lenguaje de la teoría de grafos. Cada región del mapa se considera un "vértice (Vertex)", y las regiones que comparten un límite se conectan mediante una "arista (Edge)". El grafo creado de esta manera se llama "grafo plano (Planar [Graph](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))".
+Para tratar rigurosamente el problema de los cuatro colores matemáticamente, el problema se traduce al lenguaje de la [teoría de grafos](/es/p/graph-theory-dijkstra-a-star/). Cada región del mapa se considera un "vértice (Vertex)", y las regiones que comparten un límite se conectan mediante una "arista (Edge)". El grafo creado de esta manera se llama "grafo plano (Planar [Graph](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))".
 
 Un grafo plano es un grafo que se puede dibujar en un plano sin que sus aristas se crucen. El problema de los cuatro colores se reduce al problema de que "todos los vértices de un grafo plano se pueden colorear con **4 colores** de modo que los vértices adyacentes tengan colores diferentes".
 
 Expresándolo con fórmulas matemáticas, en un grafo $G = (V, E)$, existe una función de coloración $c: V \rightarrow \{1, 2, 3, 4\}$ tal que para toda arista $(u, v) \in E$, se cumple que $c(u) \neq c(v)$.
 
-Aquí, el teorema de los poliedros de Euler $V - E + F = 2$ ($V$ es el número de vértices, $E$ es el número de aristas, $F$ es el número de caras) juega un papel importante en la investigación de las propiedades de los grafos planos.
+Aquí, [el teorema de los poliedros de Euler](/es/p/eulers-polyhedron-formula/) $V - E + F = 2$ ($V$ es el número de vértices, $E$ es el número de aristas, $F$ es el número de caras) juega un papel importante en la investigación de las propiedades de los grafos planos.
 
 ```mermaid
 graph TD
@@ -59,7 +59,7 @@ En la actualidad, las pruebas asistidas por computadora son ampliamente reconoci
 
 ## 7. Conclusión
 
-El problema de los cuatro colores es el mejor ejemplo que muestra "cuán profundas y complejas estructuras matemáticas esconde un problema aparentemente simple". Este problema, que comenzó con la idea lúdica de colorear mapas, desarrolló la teoría de grafos y tuvo un impacto inconmensurable, transformando la naturaleza misma de las demostraciones matemáticas.
+El problema de los cuatro colores es el mejor ejemplo que muestra "cuán profundas y complejas estructuras matemáticas esconde un problema aparentemente simple". Este problema, que comenzó con la idea lúdica de colorear mapas, desarrolló la [teoría de grafos](/es/p/graph-theory-dijkstra-a-star/) y tuvo un impacto inconmensurable, transformando la naturaleza misma de las demostraciones matemáticas.
 
 La exploración de este problema nos enseña cuán poderosa es la intuición humana y cuánto esfuerzo y nuevas tecnologías se necesitan para probarla rigurosamente.
 

@@ -127,7 +127,7 @@ Teorema Hahn-Banach menjamin bahwa fungsional linear terbatas yang didefinisikan
 
 ## 5. Paradoks yang Ditimbulkan Aksioma Pilihan: Teorema Banach-Tarski
 
-Sementara aksioma pilihan memberikan kekuatan besar pada matematika, ia juga menghasilkan hasil yang benar-benar menghancurkan intuisi kita tentang ruang. Contoh paling terkenal adalah **Paradoks Banach-Tarski** (Banach-Tarski Paradox).
+Sementara aksioma pilihan memberikan kekuatan besar pada matematika, ia juga menghasilkan hasil yang benar-benar menghancurkan intuisi kita tentang ruang. Contoh paling terkenal adalah **[Paradoks Banach-Tarski](/id/p/banach-tarski-paradox/)** (Banach-Tarski Paradox).
 
 ### 5.1. Isi Paradoks
 
@@ -153,7 +153,7 @@ $$
 
 ### Mengapa ZFC Diterima?
 
-Alasannya sederhana dan jelas. Jika aksioma pilihan ditolak (hanya mengadopsi sistem aksioma ZF), pencapaian matematis yang hilang terlalu besar. Basis semua ruang vektor, kekompakan hasil kali ruang topologis, banyak sifat berguna dari ukuran Lebesgue — semuanya akan runtuh. Meskipun harus membayar "harga" berupa paradoks Banach-Tarski, aksioma pilihan diterima demi mempertahankan sistem matematika abstrak modern yang kaya dan indah.
+Alasannya sederhana dan jelas. Jika aksioma pilihan ditolak (hanya mengadopsi sistem aksioma ZF), pencapaian matematis yang hilang terlalu besar. Basis semua ruang vektor, kekompakan hasil kali ruang topologis, banyak sifat berguna dari ukuran Lebesgue — semuanya akan runtuh. Meskipun harus membayar "harga" berupa [paradoks Banach-Tarski](/id/p/banach-tarski-paradox/), aksioma pilihan diterima demi mempertahankan sistem matematika abstrak modern yang kaya dan indah.
 
 ## 7. Kesimpulan: Jembatan di Atas Jurang Ketakhinggaan
 

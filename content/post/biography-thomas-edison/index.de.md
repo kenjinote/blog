@@ -47,7 +47,7 @@ Er kannte das Konzept des "Scheiterns" nicht. Wenn ein Experiment nicht gut verl
 
 ## Der Stromkrieg und die Auswirkungen auf die Nachwelt
 
-Hinter seinem spektakulären Erfolg erlebte Edison auch große Rückschläge. Dies war der "Stromkrieg", der gegen Nikola Tesla und George Westinghouse geführt wurde. Edison förderte das "Gleichstrom"-System (DC) und argumentierte mit dessen Sicherheit, erlitt jedoch letztendlich eine Niederlage gegen das "Wechselstrom"-System (AC), das für die Energieübertragung über große Entfernungen überlegen war.
+Hinter seinem spektakulären Erfolg erlebte Edison auch große Rückschläge. Dies war der "Stromkrieg", der gegen [Nikola Tesla](/de/p/biography-nikola-tesla/) und George Westinghouse geführt wurde. Edison förderte das "Gleichstrom"-System (DC) und argumentierte mit dessen Sicherheit, erlitt jedoch letztendlich eine Niederlage gegen das "Wechselstrom"-System (AC), das für die Energieübertragung über große Entfernungen überlegen war.
 
 Diese Niederlage schmälerte jedoch nicht seinen Ruf. Die von ihm gegründeten Unternehmen fusionierten zur heutigen General Electric (GE), die sich zu einem der größten Konglomerate der Welt entwickelte. Darüber hinaus hat eine einzige seiner Erfindungen ganze, riesige Industrien hervorgebracht, wie etwa die Entstehung der Musikindustrie durch den Phonographen und die Anfänge der Filmindustrie durch die Filmkamera (Kinetoskop).
 

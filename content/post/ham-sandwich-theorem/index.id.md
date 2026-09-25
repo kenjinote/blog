@@ -88,7 +88,7 @@ Klaim umum dari teorema Borsuk-Ulam adalah sebagai berikut:
 
 > Untuk setiap pemetaan kontinu $f: S^n \to \mathbb{R}^n$, selalu ada titik $x \in S^n$ sedemikian rupa sehingga $f(x) = f(-x)$.
 
-Di sini, $S^n$ adalah bola berdimensi $n$ dalam ruang berdimensi $(n+1)$ (misalnya, $S^2$ adalah bola biasa seperti permukaan Bumi tempat kita tinggal), dan $\mathbb{R}^n$ adalah ruang [Euclide](https://kenji.blog/p/euclid/)an berdimensi $n$. Juga, $x$ dan $-x$ mengacu pada **titik antipodal** pada bola (titik di sisi berlawanan dari garis lurus yang melewati pusat, seperti Kutub Utara dan Selatan di Bumi, atau Tokyo dan di lepas pantai Brasil).
+Di sini, $S^n$ adalah bola berdimensi $n$ dalam ruang berdimensi $(n+1)$ (misalnya, $S^2$ adalah bola biasa seperti permukaan Bumi tempat kita tinggal), dan $\mathbb{R}^n$ adalah ruang [Euclide](https://kenji.blog/id/p/euclid/)an berdimensi $n$. Juga, $x$ dan $-x$ mengacu pada **titik antipodal** pada bola (titik di sisi berlawanan dari garis lurus yang melewati pusat, seperti Kutub Utara dan Selatan di Bumi, atau Tokyo dan di lepas pantai Brasil).
 
 Jika kita menafsirkan teorema ini dalam kasus yang sudah dikenal dari $n=2$ ( $S^2 \to \mathbb{R}^2$ ), kita dapat menyatakan fakta menarik berikut:
 

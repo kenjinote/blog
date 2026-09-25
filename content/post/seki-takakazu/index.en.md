@@ -12,7 +12,7 @@ tags: ["Takakazu Seki", "Wasan", "Edo Period", "History of Mathematics", "Calcul
 
 In the Edo period of Japan, there was a man who elevated the independently developed mathematics known as "Wasan" to unprecedented heights. That man was **[Takakazu Seki](https://kenji.blog/en/p/seki-takakazu/)** (also known as Seki Kōwa, c. 1640s - 1708). He was later revered as the "Math Sage" (Sansei) and is positioned as one of the most important figures in the history of Japanese mathematics.
 
-During the same period in Europe, [Isaac Newton](https://kenji.blog/en/p/newton/) and Gottfried Leibniz were establishing calculus, but [Takakazu Seki](https://kenji.blog/en/p/seki-takakazu/) was also making extremely advanced mathematical discoveries independently. In this article, we will delve into the episodes of his life and his world-class mathematical achievements, along with their historical background.
+During the same period in Europe, [Isaac Newton](https://kenji.blog/en/p/newton/) and [Gottfried Leibniz](/en/p/leibniz/) were establishing calculus, but [Takakazu Seki](https://kenji.blog/en/p/seki-takakazu/) was also making extremely advanced mathematical discoveries independently. In this article, we will delve into the episodes of his life and his world-class mathematical achievements, along with their historical background.
 
 # 2. The Dawn of Wasan and Japanese Mathematics Before Seki
 

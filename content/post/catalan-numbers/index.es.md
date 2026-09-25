@@ -22,7 +22,7 @@ Nombrada en honor al matemático belga Eugène Charles Catalan, la secuencia de 
 
 $$ C_0 = 1, \quad C_1 = 1, \quad C_2 = 2, \quad C_3 = 5, \quad C_4 = 14, \quad C_5 = 42, \quad C_6 = 132, \quad C_7 = 429, \quad \dots $$
 
-Esta secuencia aparece como solución a una variedad sorprendentemente diversa de problemas combinatorios. En este artículo, presentaremos cuatro ejemplos famosos que involucran los números de Catalan (paréntesis válidos, árboles binarios, triangulación de polígonos y caminos de Dyck). Desentrañaremos la estructura recursiva detrás de ellos para entender por qué todos corresponden exactamente a la misma secuencia. Además, profundizaremos en algoritmos computacionales utilizando Programación Dinámica ([DP](https://kenji.blog/es/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) y derivaciones matemáticas mediante funciones generadoras.
+Esta secuencia aparece como solución a una variedad sorprendentemente diversa de problemas combinatorios. En este artículo, presentaremos cuatro ejemplos famosos que involucran los números de Catalan (paréntesis válidos, árboles binarios, triangulación de polígonos y caminos de Dyck). Desentrañaremos la estructura recursiva detrás de ellos para entender por qué todos corresponden exactamente a la misma secuencia. Además, profundizaremos en algoritmos computacionales utilizando Programación Dinámica ([DP](https://kenji.blog/es/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) y derivaciones matemáticas mediante [funciones generadoras](/es/p/generating-functions/).
 
 ## 2. Cuatro ejemplos concretos de los números de Catalan
 

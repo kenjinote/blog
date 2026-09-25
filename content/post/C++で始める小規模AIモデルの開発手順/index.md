@@ -12,7 +12,7 @@ description: 'C++とggmlを用いて、TinyLLaMAのような小規模AIモデル
 
 # [C++で始める小規模AIモデル（TinyLLaMAなど）の開発手順](https://kenji.blog/p/cpp-small-ai-model-tinyllama-dev-guide/)
 
-近年、[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（LLM）のローカル環境での実行に対する関心が急速に高まっています。特に、TinyLLaMA（1.1Bパラメータ）のような小規模モデルは、限られたリソースのエッジデバイスや一般的なノートPC（Windows環境を含む）上でも実用的な速度で推論が可能です。PythonとPyTorchを用いた開発が主流である一方で、究極のパフォーマンスと省メモリ性を追求する場合、C++と[C言語](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ベースのテンソルライブラリである「ggml」の組み合わせがデファクトスタンダードとなっています。
+近年、[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)）のローカル環境での実行に対する関心が急速に高まっています。特に、TinyLLaMA（1.1Bパラメータ）のような小規模モデルは、限られたリソースのエッジデバイスや一般的なノートPC（Windows環境を含む）上でも実用的な速度で推論が可能です。PythonとPyTorchを用いた開発が主流である一方で、究極のパフォーマンスと省メモリ性を追求する場合、C++と[C言語](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ベースのテンソルライブラリである「ggml」の組み合わせがデファクトスタンダードとなっています。
 
 本記事では、C++を用いてTinyLLaMAをロードし、テキスト生成を行うための推論エンジンをゼロから構築（あるいは既存のllama.cppの内部構造を深く理解）するための非常に詳細な開発手順を解説します。
 
@@ -64,7 +64,7 @@ mmapを使用すると、ファイルの内容をプロセスの仮想メモリ�
 * **ゼロコピー（Zero-copy）**: データはディスクから直接カーネルのページキャッシュに読み込まれ、ユーザー空間への余分なコピーが発生しません。
 * **オンデマンド・ロード（Page Fault）**: 実際にCPUがそのメモリ[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)にアクセスした瞬間に、ページフォールトが発生し、必要なチャンク（通常4KB）だけが物理メモリにロードされます。
 
-Windows環境では、POSIXの `mmap` の代わりにWin32 APIの `CreateFileMapping` と `MapViewOfFile` を使用します。
+Windows環境では、POSIXの `mmap` の代わりに[Win32](/p/modern-cpp-win32-api-safe-handling/) APIの `CreateFileMapping` と `MapViewOfFile` を使用します。
 
 ```mermaid
 sequenceDiagram
@@ -81,9 +81,9 @@ sequenceDiagram
 
 ### 3.2 GGUFフォーマットのバイナリ構造
 
-Hugging Face等の`.safetensors`フォーマットから変換された **GGUF (GPT-Generated Unified Format)** は、推論のための究極のフォーマットです。以下のような厳密なバイナリレイアウトを持っています。
+Hugging Face等の`.safetensors`フォーマットから変換された **[GGUF](/p/llama-cpp-quantization-gguf/) (GPT-Generated Unified Format)** は、推論のための究極のフォーマットです。以下のような厳密なバイナリレイアウトを持っています。
 
-1. **Magic Bytes**: `0x46554747` (GGUF)。
+1. **Magic Bytes**: `0x46554747` ([GGUF](/p/llama-cpp-quantization-gguf/))。
 2. **Version**: フォーマットのバージョン番号。
 3. **Tensor Count & Metadata Count**: テンソル数とメタデータのキーバリューペア数。
 4. **Metadata ([Key-Value](https://kenji.blog/p/nosql-database-selection-kvs-document-graph-wide-column/) Pairs)**: 文字列長プレフィックス付きのキーと、型付けされた値。
@@ -108,7 +108,7 @@ C++で実装する場合、まず配列の二乗和をAVX2の `_mm256_fmadd_ps` 
 
 ### 4.2 RoPE (Rotary Position Embedding)
 
-トークンの位置情報をテンソル空間における回転（Rotate）として適用する技術です。複素数平面上での回転とみなすことができ、ベクトル $x$ の隣り合う次元ペア $(x_1, x_2)$ に対して以下のような回転を適用します。
+トークンの[位置情報](/p/technology-gps/)をテンソル空間における回転（Rotate）として適用する技術です。複素数平面上での回転とみなすことができ、ベクトル $x$ の隣り合う次元ペア $(x_1, x_2)$ に対して以下のような回転を適用します。
 
 $$ \text{RoPE}(x, m) = \begin{pmatrix} x_{1} \cos(m\theta) - x_{2} \sin(m\theta) \\ x_{1} \sin(m\theta) + x_{2} \cos(m\theta) \end{pmatrix} $$
 
@@ -140,7 +140,7 @@ ggmlは、推論のための静的な計算[グラフ](https://kenji.blog/p/tree
 ### 5.1 ggml_context とアリーナアロケータ
 
 ggmlの最もユニークな点は、推論ループ内で動的なメモリ確保（`malloc` や `new`）を一切行わない「アリーナアロケーション」です。
-初期化時に巨大な連続したメモリ領域（アリーナ）を確保し、`ggml_new_tensor` などを呼び出すたびに、この領域の[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)がインクリメントされます。推論の1ステップが完了したら、アロケーションポインタを初期位置にリセットするだけで、次の推論ステップのメモリ確保が即座に完了します。
+初期化時に巨大な連続したメモリ領域（アリーナ）を確保し、`ggml_new_tensor` などを呼び出すたびに、この領域の[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)がインクリメントされます。推論の1ステップが完了したら、アロケーション[ポインタ](/p/c-language-pointers-memory-management-stack-heap/)を初期位置にリセットするだけで、次の推論ステップのメモリ確保が即座に完了します。
 
 ### 5.2 [グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)構築の具体例
 

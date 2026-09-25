@@ -13,7 +13,7 @@ tags: ["algorithms", "sorting", "quick-sort", "merge-sort", "bubble-sort"]
 
 In computer science, sorting data into a specific order (ascending or descending) is one of the most fundamental and important operations. Sorting algorithms play a vital role as a preliminary step in all kinds of data processing, such as speeding up searches, grouping data, and detecting duplicates.
 
-In this article, we comprehensively explain representative sorting algorithms, ranging from simple algorithms easy for beginners to understand, to high-speed algorithms active in practical use. You will visually understand how each algorithm works with **Mermaid** diagrams, check actual implementations in Python code, and compare performance such as time complexity. Furthermore, to fully grasp the behavior of the algorithms, a complete execution trace using an array of 50 elements is included. This will allow you to understand the detailed behavior of the algorithms as if holding them in your hands.
+In this article, we comprehensively explain representative sorting algorithms, ranging from simple algorithms easy [for beginners](/en/p/leather-goods%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/) to understand, to high-speed algorithms active in practical use. You will visually understand how each algorithm works with **Mermaid** diagrams, check actual implementations in Python code, and compare performance such as time complexity. Furthermore, to fully grasp the behavior of the algorithms, a complete execution trace using an array of 50 elements is included. This will allow you to understand the detailed behavior of the algorithms as if holding them in your hands.
 
 ## Algorithm Evaluation Metrics
 
@@ -776,7 +776,7 @@ To prevent such situations, randomized quick sort, which randomly selects a pivo
 
 ## 5. Merge Sort
 
-Invented by John von Neumann, it is a representative stable external sort. Based on the divide-and-conquer method, it finely divides the array and then combines (merges) them while preserving the sorted order.
+Invented by [John von Neumann](/en/p/von-neumann/), it is a representative stable external sort. Based on the divide-and-conquer method, it finely divides the array and then combines (merges) them while preserving the sorted order.
 
 ### Time Complexity and Characteristics
 

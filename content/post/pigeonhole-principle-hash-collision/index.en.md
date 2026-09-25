@@ -11,7 +11,7 @@ slug: "pigeonhole-principle-hash-collision"
 When studying computer science, information security, and cryptography, concepts that cannot be avoided are the **"Pigeonhole Principle"** and **"Hash Collisions."**
 The Pigeonhole Principle itself is extremely simple, stating something so obvious that even an elementary school student can intuitively understand it. However, the impact this seemingly simple mathematical principle has on the security design of hash functions and cryptographic systems that underpin modern internet society is immeasurable.
 
-In this article, starting from the basic concept of the Pigeonhole Principle, we will explain in detail, using formulas and diagrams, the mechanism of hash collisions, the impact on computational complexity by the birthday paradox, actual collision cases in past cryptographic algorithms (like SHA-1), and its application to security evaluation for future cryptographic technologies.
+In this article, starting from the basic concept of the Pigeonhole Principle, we will explain in detail, using formulas and diagrams, the mechanism of hash collisions, the impact on computational complexity by [the birthday paradox](/en/p/birthday-paradox/), actual collision cases in past cryptographic algorithms (like SHA-1), and its application to security evaluation for future cryptographic technologies.
 
 ## 1. Basics of the Pigeonhole Principle
 
@@ -60,7 +60,7 @@ Now, let's apply the Pigeonhole Principle to hash functions and consider it.
 * **Pigeons**: The set of input data. Since combinations of file contents and character strings exist infinitely, the number of elements $|A|$ is virtually "infinite."
 * **Holes**: The set of hash values. Since hash values have a fixed length, the number of elements $|B|$ is "finite."
 
-For example, the output of SHA-256, which is also used in blockchain technologies like [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/), is 256 bits. Therefore, the types of possible hash values are $2^{256}$ (about $1.15 \times 10^{77}$). This is an enormous number approaching the total number of atoms in the observable universe, but it is ultimately a **finite number**.
+For example, the output of SHA-256, which is also used in [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/) technologies like [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/), is 256 bits. Therefore, the types of possible hash values are $2^{256}$ (about $1.15 \times 10^{77}$). This is an enormous number approaching the total number of atoms in the observable universe, but it is ultimately a **finite number**.
 
 On the other hand, the variations of text and image files that can be considered as input data exist **infinitely**.
 Therefore, because the inequality "total number of input data" $>$ "total number of hash values" holds, according to the Pigeonhole Principle, **there will always exist two different input data that result in the same hash value**. This phenomenon is called a **"Hash Collision."**
@@ -192,7 +192,7 @@ When the bit length is lengthened, the computational complexity required for an 
 | SHA-512 | 512 bit | $2^{256}$ | Very secure |
 | SHA-3 (Keccak) | 256/512 bit | $2^{128} / 2^{256}$ | Very secure (different structure) |
 
-In selecting cryptography, it is essential to predict improvements in attacker computer performance (Moore's Law, etc.) and the future rise of quantum computers, and choose algorithms with a sufficient **"security margin."**
+In selecting cryptography, it is essential to predict improvements in attacker computer performance ([Moore's Law](/en/p/business-moores-law/), etc.) and the future rise of quantum computers, and choose algorithms with a sufficient **"security margin."**
 
 ### Password Protection with Salt and Stretching
 
@@ -223,8 +223,8 @@ This intentionally drives up the cost that an attacker must calculate, making br
 This time, we explained how the simple and intuitive mathematical theorem known as the **"Pigeonhole Principle"** inevitably causes the phenomenon of **"Hash Collisions,"** and how that impacts the security design of cryptography.
 
 * **Inevitability of the Pigeonhole Principle**: Hash functions with infinite inputs and finite outputs mathematically always have collisions.
-* **Threat of the Birthday Attack**: Due to the birthday paradox, for a hash value space $N$, a collision can be found with just about $\sqrt{N}$ calculations.
+* **Threat of the Birthday Attack**: Due to [the birthday paradox](/en/p/birthday-paradox/), for a hash value space $N$, a collision can be found with just about $\sqrt{N}$ calculations.
 * **Design Philosophy of Modern [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy**: Since it is impossible to reduce collisions to zero, the output length is made sufficiently large to make collision discovery computationally impossible.
 
-Deeply understanding these principles connects directly to understanding the foundations of modern security systems like blockchain, digital signatures, and password management.
+Deeply understanding these principles connects directly to understanding the foundations of modern security systems like [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/), digital signatures, and password management.
 It is an extremely profound and interesting aspect of information science that cryptographic technologies, which at first glance seem difficult and complex, conceal familiar principles and probability theory like "pigeons and holes" and "birthdays" at their core.

@@ -68,15 +68,15 @@ En 2008, avec la publication d'un article par une personne nommée Satoshi Nakam
 Il s'agit du « **Bitcoin** ».
 
 Les systèmes P2P traditionnels étaient utilisés pour le « partage de fichiers » ou la « distribution de la puissance de calcul », mais le Bitcoin a utilisé le réseau P2P pour la « **distribution de la confiance** ».
-Même en l'absence de banque ou d'administrateur centralisé, les innombrables nœuds participant au réseau P2P surveillent mutuellement leurs historiques de transactions (grands livres), et en combinant la cryptographie (fonctions de hachage et cryptographie à clé publique) avec un algorithme de consensus (Proof of Work), ils ont construit un « système distribué où l'altération des données est virtuellement impossible = **la blockchain** ».
+Même en l'absence de banque ou d'administrateur centralisé, les innombrables nœuds participant au réseau P2P surveillent mutuellement leurs historiques de transactions (grands livres), et en combinant la cryptographie (fonctions de hachage et cryptographie à clé publique) avec un algorithme de consensus (Proof of Work), ils ont construit un « système distribué où l'altération des données est virtuellement impossible = **la [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/)** ».
 
 Cette idée d'un « réseau décentralisé et autonome qui ne dépend pas d'un administrateur spécifique » est directement liée au mouvement actuel du « Web3 (Web décentralisé) ».
 
 ## 5. Les défis et l'avenir de la technologie P2P
 
 Le P2P est une technologie fantastique, mais elle présente aussi des défis.
-L'un d'eux est le problème du « **passager clandestin (Free Rider)** ». Si un trop grand nombre d'utilisateurs ne font que recevoir des données sans les fournir, le réseau dépérit. Pour résoudre ce problème, des recherches portent sur des mécanismes accordant des droits de téléchargement prioritaire en fonction de la quantité fournie, ou des mécanismes offrant des incitations financières (jetons) comme la blockchain.
+L'un d'eux est le problème du « **passager clandestin (Free Rider)** ». Si un trop grand nombre d'utilisateurs ne font que recevoir des données sans les fournir, le réseau dépérit. Pour résoudre ce problème, des recherches portent sur des mécanismes accordant des droits de téléchargement prioritaire en fonction de la quantité fournie, ou des mécanismes offrant des incitations financières (jetons) comme la [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/).
 
 L'autre est la « **gouvernance et sécurité** ». Puisqu'il n'y a pas d'administrateur centralisé, si des nœuds malveillants diffusent de fausses données ou des virus, il est difficile de les bloquer immédiatement.
 
-Le P2P n'est pas simplement une technologie de « logiciel de partage de fichiers ». C'est le sommet des « systèmes distribués » en informatique, et c'est une architecture dotée d'une philosophie forte consistant à ne pas concentrer le pouvoir en un seul point. À l'avenir, la technologie P2P continuera probablement d'évoluer en tant que communication entre les appareils IoT et comme base de l'infrastructure Internet décentralisée de nouvelle génération.
+Le P2P n'est pas simplement une technologie de « logiciel de partage de fichiers ». C'est le sommet des « [systèmes distribués](/fr/p/cap-theorem-distributed-systems-tradeoff/) » en informatique, et c'est une architecture dotée d'une philosophie forte consistant à ne pas concentrer le pouvoir en un seul point. À l'avenir, la technologie P2P continuera probablement d'évoluer en tant que communication entre les appareils IoT et comme base de l'infrastructure Internet décentralisée de nouvelle génération.

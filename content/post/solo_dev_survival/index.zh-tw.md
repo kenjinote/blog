@@ -11,7 +11,7 @@ tags: ["Solo Developer", "Micro-SaaS", "Serverless", "Agility"]
 
 # 緒論：挑戰巨人的「無產者」戰鬥方式
 
-在軟體開發的歷史上，個人開發者（獨立開發者）迎來了前所未有的有利時代。AWS和GCP等雲端基礎設施的民主化，Vercel和Supabase等BaaS（Backend as a [Service](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/)）的崛起，最重要的是[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)（大型語言模型）的進化帶來的程式碼自動化。這一切為個人創造了能夠與作為「巨人」的大型科技企業正面對決的土壤。
+在軟體開發的歷史上，個人開發者（獨立開發者）迎來了前所未有的有利時代。AWS和GCP等雲端基礎設施的民主化，Vercel和Supabase等BaaS（Backend as a [Service](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/)）的崛起，最重要的是[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)（[大型語言模型](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）的進化帶來的程式碼自動化。這一切為個人創造了能夠與作為「巨人」的大型科技企業正面對決的土壤。
 
 然而，即使技術資源變得扁平化，採用與大企業相同的戰略也未必能獲勝。在資本、行銷和品牌影響力方面，個人處於絕對的劣勢。個人開發者若要生存並取得勝利，獨特的「生存戰略」是不可或缺的。
 
@@ -50,9 +50,9 @@ xychart-beta
 
 # 2. 創造壓倒性敏捷力的架構設計
 
-由於大企業的系統將「穩定性」與「可擴展性」放在首位，因此通常會採用[Kubernetes](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/)和微服務架構。然而，如果個人開發者也做同樣的事，光是基礎設施的維護管理（Ops）就會耗盡所有資源。
+由於大企業的系統將「穩定性」與「可擴展性」放在首位，因此通常會採用[Kubernetes](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/)和[微服務架構](/zh-tw/p/microservices-architecture-bff-api-gateway/)。然而，如果個人開發者也做同樣的事，光是基礎設施的維護管理（Ops）就會耗盡所有資源。
 
-個人開發者技術堆疊的口號是 **"No-Ops"（零運營）** 。將無伺服器架構發揮到極致，專注於撰寫業務邏輯即可。
+個人開發者技術堆疊的口號是 **"No-Ops"（零運營）** 。將[無伺服器架構](/zh-tw/p/serverless-architecture-aws-lambda-cold-start/)發揮到極致，專注於撰寫業務邏輯即可。
 
 ## 大企業 vs 個人開發者的架構比較
 

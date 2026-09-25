@@ -36,7 +36,7 @@ Gitは主に3つのオブジェクトを使用してリポジトリの状態を�
 2. **[Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
    ディレクトリの構造を表すオブジェクトです。Treeオブジェクトは、他のTreeオブジェクト（サブディレクトリ）やBlobオブジェクト（ファイル）への[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（SHA-1ハッシュ値）、およびそれらのファイル名、アクセス権限を含みます。UNIXのディレクトリのような役割を果たします。
 3. **Commit**
-   ある時点でのリポジトリ全体のトップレベルのTreeオブジェクトへのポインタと、メタデータ（作成者、コミット日時、コミットメッセージ）、そして直前のコミット（親コミット）へのポインタを保持します。
+   ある時点でのリポジトリ全体のトップレベルのTreeオブジェクトへの[ポインタ](/p/c-language-pointers-memory-management-stack-heap/)と、メタデータ（作成者、コミット日時、コミットメッセージ）、そして直前のコミット（親コミット）への[ポインタ](/p/c-language-pointers-memory-management-stack-heap/)を保持します。
 
 ```mermaid
 graph TD
@@ -101,7 +101,7 @@ $$ k \approx \sqrt{2 \ln(2)} \cdot 2^{80} \approx 1.2 \times 2^{80} $$
 
 ### 解決方法：`git reset` とブランチの作成
 
-Gitでは、コミットは独立したオブジェクトであり、ブランチはただの[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)です。したがって、「新しいブランチを作ってから、現在のブランチのポインタを巻き戻す」という操作で瞬時に解決できます。
+Gitでは、コミットは独立したオブジェクトであり、ブランチはただの[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)です。したがって、「新しいブランチを作ってから、現在のブランチの[ポインタ](/p/c-language-pointers-memory-management-stack-heap/)を巻き戻す」という操作で瞬時に解決できます。
 
 ```bash
 # 1. 現在のコミット（間違えて作ったコミット）を指す新しいブランチを作成する

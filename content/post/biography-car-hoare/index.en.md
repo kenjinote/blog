@@ -63,7 +63,7 @@ He placed "simplicity" and "elegance" as the highest values in software design. 
 
 > "There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies, and the other way is to make it so complicated that there are no obvious deficiencies. The first method is far more difficult."
 
-These words remarkably foresee the current situation where microservice architectures and functional programming are once again seeking "simplicity" in modern, increasingly complex software development.
+These words remarkably foresee the current situation where microservice architectures and [functional programming](/en/p/lambda-calculus-functional-programming/) are once again seeking "simplicity" in modern, increasingly complex software development.
 
 ## A Bridge from Academia to Industry
 
@@ -77,4 +77,4 @@ The death of Tony Hoare may mark the end of a great era in computer science. How
 
 Behind the fact that we can comfortably operate apps on our smartphones is the high-speed data processing by Quicksort. Behind the fact that cloud infrastructure can handle tens of thousands of requests simultaneously is the concurrent processing architecture that inherited the concept of CSP. And behind the fact that the airplanes and self-driving cars we ride operate safely is the program correctness proving technology developed from Hoare Logic.
 
-Sir Tony Hoare left us not just the technique of writing code, but an answer to the fundamental question of "what software should be." His intellectual legacy will undoubtedly continue to support the foundation of our digital society as a guidepost for engineers around the world.
+Sir Tony Hoare left us not just the technique of writing code, but an answer to the fundamental question of "what software should be." His intellectual legacy will undoubtedly continue to support the foundation of our digital society as a guidepost [for engineers](/en/p/prompt-engineering-for-engineers/) around the world.

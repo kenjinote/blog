@@ -34,9 +34,9 @@ Git은 주로 3가지 객체를 사용하여 리포지토리의 상태를 표현
 1. **Blob (Binary Large Object)**
    파일의 내용 자체를 저장하는 객체입니다. 파일 이름이나 권한 정보는 여기에 포함되지 않습니다. 순수한 바이트 열이 zlib으로 압축되며, SHA-1 해시값(40자의 16진수)에 의해 식별됩니다.
 2. **[Tree](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
-   디렉토리의 구조를 나타내는 객체입니다. Tree 객체는 다른 Tree 객체(하위 디렉토리)나 Blob 객체(파일)에 대한 포인터(SHA-1 해시값), 그리고 그 파일들의 이름, 접근 권한을 포함합니다. UNIX의 디렉토리와 같은 역할을 합니다.
+   디렉토리의 구조를 나타내는 객체입니다. Tree 객체는 다른 Tree 객체(하위 디렉토리)나 Blob 객체(파일)에 대한 [포인터](/ko/p/c-language-pointers-memory-management-stack-heap/)(SHA-1 해시값), 그리고 그 파일들의 이름, 접근 권한을 포함합니다. UNIX의 디렉토리와 같은 역할을 합니다.
 3. **Commit**
-   어느 시점에서의 리포지토리 전체의 최상위 Tree 객체에 대한 포인터와, 메타데이터(작성자, 커밋 일시, 커밋 메시지), 그리고 직전 커밋(부모 커밋)에 대한 포인터를 유지합니다.
+   어느 시점에서의 리포지토리 전체의 최상위 Tree 객체에 대한 [포인터](/ko/p/c-language-pointers-memory-management-stack-heap/)와, 메타데이터(작성자, 커밋 일시, 커밋 메시지), 그리고 직전 커밋(부모 커밋)에 대한 [포인터](/ko/p/c-language-pointers-memory-management-stack-heap/)를 유지합니다.
 
 ```mermaid
 graph TD
@@ -56,7 +56,7 @@ ref: refs/heads/main
 ```
 
 이것은 "현재 상태는 `main` 브랜치의 끝에 있다"는 것을 의미합니다. 그리고 `.git/refs/heads/main`을 열면 거기에 40자의 SHA-1 해시가 적혀 있으며, 이것이 최신 Commit 객체를 가리키고 있는 것입니다.
-Git의 브랜치란, 단순히 특정 커밋을 가리키는 가벼운 포인터(파일)에 불과합니다. 이 사실을 알고 있는 것만으로 "브랜치를 삭제하면 파일이 전부 사라지는 거 아냐?" 하는 공포가 사라집니다.
+Git의 브랜치란, 단순히 특정 커밋을 가리키는 가벼운 [포인터](/ko/p/c-language-pointers-memory-management-stack-heap/)(파일)에 불과합니다. 이 사실을 알고 있는 것만으로 "브랜치를 삭제하면 파일이 전부 사라지는 거 아냐?" 하는 공포가 사라집니다.
 
 ---
 
@@ -66,9 +66,9 @@ Git이 충돌을 감지하거나 파일의 차이를 표시할 때, 내부에서
 
 ### 3.1 Myers의 Diff 알고리즘
 
-Git의 기본 차이 감지 알고리즘은 Eugene W. Myers가 고안한 알고리즘입니다. 2개의 텍스트 파일 $A$와 $B$가 있을 때, $A$를 $B$로 변환하기 위한 "최소의 편집 절차(삽입과 삭제)"를 찾는 문제는 그래프 이론에서의 최단 경로 문제로 모델화할 수 있습니다.
+Git의 기본 차이 감지 알고리즘은 Eugene W. Myers가 고안한 알고리즘입니다. 2개의 텍스트 파일 $A$와 $B$가 있을 때, $A$를 $B$로 변환하기 위한 "최소의 편집 절차(삽입과 삭제)"를 찾는 문제는 [그래프 이론](/ko/p/graph-theory-dijkstra-a-star/)에서의 최단 경로 문제로 모델화할 수 있습니다.
 
-문자열의 길이를 각각 $N, M$이라 하고, 합계를 $V = N + M$이라고 합니다. Myers의 알고리즘에서는 편집 거리(Edit Distance) $D$를 탐색합니다. 이 알고리즘의 시간 복잡도는 이하의 식으로 표현됩니다.
+문자열의 길이를 각각 $N, M$이라 하고, 합계를 $V = N + M$이라고 합니다. Myers의 알고리즘에서는 편집 거리(Edit Distance) $D$를 탐색합니다. 이 알고리즘의 시간 [복잡도](/ko/p/time-space-complexity-big-o-notation-examples/)는 이하의 식으로 표현됩니다.
 
 $$ \mathcal{O}(V \cdot D) $$
 
@@ -86,7 +86,7 @@ $$ \mathcal{O}(U \log U) $$
 
 ### 3.3 SHA-1과 충돌 확률
 
-Git은 모든 객체를 SHA-1 해시값으로 관리합니다. 해시 공간의 크기는 $2^{160}$입니다. 해시의 충돌(다른 콘텐츠가 같은 해시값을 가지는 것)이 일어날 확률에 대해 생일 역설(Birthday Paradox)을 사용하여 근사하면, 충돌 확률 $p$가 50%가 되기 위해 필요한 객체 수 $k$는 다음과 같습니다.
+Git은 모든 객체를 SHA-1 해시값으로 관리합니다. 해시 공간의 크기는 $2^{160}$입니다. 해시의 충돌(다른 콘텐츠가 같은 해시값을 가지는 것)이 일어날 확률에 대해 [생일 역설](/ko/p/birthday-paradox/)([Birthday Paradox](/ko/p/%E3%83%90%E3%83%BC%E3%82%B9%E3%83%87%E3%82%A4%EC%97%AD%EC%84%A4%E3%81%A8%E3%81%AF/))을 사용하여 근사하면, 충돌 확률 $p$가 50%가 되기 위해 필요한 객체 수 $k$는 다음과 같습니다.
 
 $$ k \approx \sqrt{2 \ln(2)} \cdot 2^{80} \approx 1.2 \times 2^{80} $$
 
@@ -101,7 +101,7 @@ $$ k \approx \sqrt{2 \ln(2)} \cdot 2^{80} \approx 1.2 \times 2^{80} $$
 
 ### 해결 방법: `git reset`과 브랜치 생성
 
-Git에서 커밋은 독립된 객체이며, 브랜치는 그저 포인터입니다. 따라서 "새로운 브랜치를 만든 다음, 현재 브랜치의 포인터를 되감는" 조작으로 순식간에 해결할 수 있습니다.
+Git에서 커밋은 독립된 객체이며, 브랜치는 그저 [포인터](/ko/p/c-language-pointers-memory-management-stack-heap/)입니다. 따라서 "새로운 브랜치를 만든 다음, 현재 브랜치의 [포인터](/ko/p/c-language-pointers-memory-management-stack-heap/)를 되감는" 조작으로 순식간에 해결할 수 있습니다.
 
 ```bash
 # 1. 현재의 커밋(실수로 만든 커밋)을 가리키는 새로운 브랜치를 생성한다
@@ -117,7 +117,7 @@ $ git checkout feature/login
 
 ### 도해: 내부에서 무슨 일이 일어났을까?
 
-Mermaid의 `gitGraph`를 사용하여 이때의 브랜치 포인터 이동을 시각화해 봅시다.
+Mermaid의 `gitGraph`를 사용하여 이때의 브랜치 [포인터](/ko/p/c-language-pointers-memory-management-stack-heap/) 이동을 시각화해 봅시다.
 
 ```mermaid
 gitGraph
@@ -368,7 +368,7 @@ $ git reflog
 
 ## 12. 마치며
 
-Git 초보자가 빠지기 쉬운 실수와 그 배경에 있는 Git의 구조, 그리고 해결 방법에 대해 매우 상세하게 해설해 보았습니다. 잘못된 브랜치에 커밋, 이미 푸시된 커밋 취소, Stash의 활용, Detached HEAD에서의 생환, 그리고 충돌 해결. 이 모든 것에서 중요한 것은 "Git이 이면에서 어떤 객체와 포인터를 조작하고 있는가"를 이미지화하는 것입니다.
+Git 초보자가 빠지기 쉬운 실수와 그 배경에 있는 Git의 구조, 그리고 해결 방법에 대해 매우 상세하게 해설해 보았습니다. 잘못된 브랜치에 커밋, 이미 푸시된 커밋 취소, Stash의 활용, Detached HEAD에서의 생환, 그리고 충돌 해결. 이 모든 것에서 중요한 것은 "Git이 이면에서 어떤 객체와 [포인터](/ko/p/c-language-pointers-memory-management-stack-heap/)를 조작하고 있는가"를 이미지화하는 것입니다.
 
 수식으로 표현되는 엄격한 Diff 알고리즘에 의해 파일의 차이가 계산되고, 암호학적인 해시 함수에 의해 역사의 정합성이 담보되고 있습니다. 이 아름다운 설계 사상을 이해한다면, Git은 결코 "정체를 알 수 없는 블랙박스"가 아니라 당신의 소스 코드를 굳건히 지키는 최강의 방패라는 것을 알 수 있을 것입니다.
 

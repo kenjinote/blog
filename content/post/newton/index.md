@@ -91,7 +91,7 @@ $$
 (1+x)^\alpha = 1 + \alpha x + \frac{\alpha(\alpha-1)}{2!} x^2 + \frac{\alpha(\alpha-1)(\alpha-2)}{3!} x^3 + \dots
 $$
 
-この一般化された二項定理は、平方根や逆数を無限級数で表現することを可能にし、[ニュートン](https://kenji.blog/p/newton/)が対数関数や三角関数の無限級数展開（テイラー展開の先駆け）を導き出す際の強力な武器となりました。
+この一般化された二項定理は、平方根や逆数を無限級数で表現することを可能にし、[ニュートン](https://kenji.blog/p/newton/)が対数関数や三角関数の無限級数展開（[テイラー展開](/p/taylor-and-maclaurin-series/)の先駆け）を導き出す際の強力な武器となりました。
 
 ### 3. [ニュートン](https://kenji.blog/p/newton/)法 (Newton's Method)
 

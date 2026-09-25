@@ -9,7 +9,7 @@ slug: "biography-georg-wilhelm-friedrich-hegel"
 description: "Dalam sejarah filsafat Barat, pemikir yang mencapai puncak idealisme Jerman abad ke-19, dimulai dengan Immanuel Kant, adalah Georg Wilhelm Friedrich Hegel"
 ---
 
-Dalam sejarah filsafat Barat, pemikir yang mencapai puncak idealisme Jerman abad ke-19, dimulai dengan Immanuel Kant, adalah Georg Wilhelm Friedrich Hegel (1770–1831). Sistem pemikirannya yang hebat dan megah, yang berpusat pada "Dialektika" dan "Roh Absolut", memberikan pengaruh yang sangat luas tidak hanya pada zamannya, tetapi juga pada Karl Marx, eksistensialisme, dan bahkan pada ilmu politik dan sejarah modern hingga saat ini. Dalam artikel ini, kita akan menelusuri kehidupan Hegel dan menggali lebih dalam esensi filsafatnya serta dampaknya pada generasi berikutnya.
+Dalam sejarah filsafat Barat, pemikir yang mencapai puncak idealisme Jerman abad ke-19, dimulai dengan [Immanuel Kant](/id/p/biography-immanuel-kant/), adalah Georg Wilhelm Friedrich Hegel (1770–1831). Sistem pemikirannya yang hebat dan megah, yang berpusat pada "Dialektika" dan "Roh Absolut", memberikan pengaruh yang sangat luas tidak hanya pada zamannya, tetapi juga pada [Karl Marx](/id/p/biography-karl-marx/), eksistensialisme, dan bahkan pada ilmu politik dan sejarah modern hingga saat ini. Dalam artikel ini, kita akan menelusuri kehidupan Hegel dan menggali lebih dalam esensi filsafatnya serta dampaknya pada generasi berikutnya.
 
 ## Jalan dari Siswa Seminari yang Cemerlang Menjadi Filsuf Besar
 
@@ -23,7 +23,7 @@ Pada tahun 1806, di tengah kekacauan invasi pasukan Napoleon ke Jena, ia menyele
 
 Kata kunci terpenting untuk memahami filsafat Hegel adalah "Dialektika" (Dialektik). Dialektika mengacu pada logika pergerakan di mana segala sesuatu berkembang ke keadaan yang lebih tinggi melalui oposisi dan kontradiksi.
 
-Suatu keadaan tertentu (Tesis) menghasilkan keadaan yang berlawanan (Antitesis) melalui kontradiksi internalnya, dan setelah keduanya melalui oposisi dan perjuangan, mereka diintegrasikan ke dalam dimensi yang lebih tinggi (Sintesis) dengan melestarikan elemen dari keduanya. Proses "Aufheben" (Sublasi) ini adalah mekanisme di mana sejarah, dunia, dan kognisi manusia berkembang, menurut Hegel.
+Suatu keadaan tertentu (Tesis) menghasilkan keadaan yang berlawanan (Antitesis) melalui kontradiksi internalnya, dan setelah keduanya melalui oposisi dan perjuangan, mereka diintegrasikan ke dalam dimensi yang lebih tinggi (Sintesis) dengan melestarikan elemen dari keduanya. Proses "Aufheben" ([Sublasi](/id/p/hegel%E3%81%AEdialektika/)) ini adalah mekanisme di mana sejarah, dunia, dan kognisi manusia berkembang, menurut Hegel.
 
 ```mermaid
 graph TD
@@ -43,7 +43,7 @@ Pada tahun 1831, terinfeksi kolera yang merajalela di Berlin (atau mungkin penya
 
 Mazhab Hegelian terpecah menjadi "Mazhab Hegelian Lama" (Hegelian Kanan) yang secara konservatif menafsirkan sistemnya dan menegaskan negara Prusia, dan "Mazhab Hegelian Muda" (Hegelian Kiri) yang secara radikal menafsirkan logika perkembangan dialektis dan mengkritik negara dan agama saat ini.
 
-Pengaruh dari kelompok terakhir ini, khususnya, sangat menggerakkan sejarah. Melalui kritik agama Ludwig Feuerbach, Karl Marx dan Friedrich Engels muncul. Sambil mengkritik dialektika idealis Hegel yang "berdiri di atas kepalanya", Marx mewarisi logika perkembangannya, membalikkannya dan mengembangkannya menjadi "Materialisme Historis". Dengan kata lain, ia percaya bahwa yang menggerakkan sejarah bukanlah "roh", melainkan kontradiksi dalam "infrastruktur ekonomi" material.
+Pengaruh dari kelompok terakhir ini, khususnya, sangat menggerakkan sejarah. Melalui kritik agama Ludwig Feuerbach, [Karl Marx](/id/p/biography-karl-marx/) dan Friedrich Engels muncul. Sambil mengkritik dialektika idealis Hegel yang "berdiri di atas kepalanya", Marx mewarisi logika perkembangannya, membalikkannya dan mengembangkannya menjadi "Materialisme Historis". Dengan kata lain, ia percaya bahwa yang menggerakkan sejarah bukanlah "roh", melainkan kontradiksi dalam "infrastruktur ekonomi" material.
 
 ```mermaid
 graph TD

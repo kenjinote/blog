@@ -20,7 +20,7 @@ Dans cet article, nous plongerons profondément dans la vie de [Fermat](https://
 
 Dans la France de l'époque, les juges étaient encouragés à éviter d'élargir trop leurs cercles sociaux pour prévenir les conflits politiques et sociaux. Ironiquement, cet environnement isolé a offert à [Fermat](https://kenji.blog/fr/p/fermat/) le temps calme dont il avait besoin, le poussant vers les profondeurs des mathématiques. Pour lui, les mathématiques étaient une pure joie qui le libérait des lourdes pressions de ses devoirs, et non quelque chose qui lui était imposé par quiconque.
 
-[Fermat](https://kenji.blog/fr/p/fermat/) n'aimait pas publier ses recherches sous forme d'articles formels ; il se contentait de noter ses idées et ses preuves dans des cahiers ou dans les marges de livres, ou en échangeant des lettres avec d'autres érudits par l'intermédiaire de Marin Mersenne, un moine de Paris qui servait de plaque tournante académique à l'époque. Il aimait présenter ses découvertes comme des **« problèmes »** à d'autres mathématiciens, exigeant leurs solutions de manière provocatrice. Il est également connu pour s'être engagé dans des débats féroces avec de grands mathématiciens tels que René Descartes et [John Wallis](https://kenji.blog/fr/p/wallis/).
+[Fermat](https://kenji.blog/fr/p/fermat/) n'aimait pas publier ses recherches sous forme d'articles formels ; il se contentait de noter ses idées et ses preuves dans des cahiers ou dans les marges de livres, ou en échangeant des lettres avec d'autres érudits par l'intermédiaire de [Marin Mersenne](/fr/p/mersenne/), un moine de Paris qui servait de plaque tournante académique à l'époque. Il aimait présenter ses découvertes comme des **« problèmes »** à d'autres mathématiciens, exigeant leurs solutions de manière provocatrice. Il est également connu pour s'être engagé dans des débats féroces avec de grands mathématiciens tels que [René Descartes](/fr/p/descartes/) et [John Wallis](https://kenji.blog/fr/p/wallis/).
 
 ```mermaid
 flowchart TD
@@ -64,7 +64,7 @@ Par exemple, si $p = 5$, c'est $5 = 1^2 + 2^2$ ; si $p = 13$, c'est $13 = 2^2 + 
 
 [Fermat](https://kenji.blog/fr/p/fermat/) a également considéré des formules mathématiques qui génèrent des nombres premiers. Il a conjecturé que tous les nombres de la forme $F_n = 2^{2^n} + 1$ sont premiers. En effet, pour $n=0, 1, 2, 3, 4$, les résultats sont respectivement $3, 5, 17, 257, 65537$, et tous ceux-ci sont premiers. Ceux-ci sont appelés **Nombres premiers de [Fermat](https://kenji.blog/fr/p/fermat/)**.
 
-Cependant, [Leonhard Euler](https://kenji.blog/fr/p/euler/) a montré plus tard que lorsque $n=5$, $2^{32} + 1 = 4294967297 = 641 \times 6700417$, réfutant ainsi la conjecture même de Fermat. Néanmoins, Carl Friedrich Gauss a prouvé plus tard que ces nombres premiers de [Fermat](https://kenji.blog/fr/p/fermat/) étaient profondément liés aux « conditions pour qu'un polygone régulier à $n$ côtés soit constructible à la règle et au compas », jouant un rôle extrêmement important dans la fusion de la géométrie et de l'algèbre pour les générations futures.
+Cependant, [Leonhard Euler](https://kenji.blog/fr/p/euler/) a montré plus tard que lorsque $n=5$, $2^{32} + 1 = 4294967297 = 641 \times 6700417$, réfutant ainsi la conjecture même de Fermat. Néanmoins, [Carl Friedrich Gauss](/fr/p/gauss/) a prouvé plus tard que ces nombres premiers de [Fermat](https://kenji.blog/fr/p/fermat/) étaient profondément liés aux « conditions pour qu'un polygone régulier à $n$ côtés soit constructible à la règle et au compas », jouant un rôle extrêmement important dans la fusion de la géométrie et de l'algèbre pour les générations futures.
 
 ## 3. La méthode de la descente infinie : l'épée tranchante de [Fermat](https://kenji.blog/fr/p/fermat/)
 
@@ -91,7 +91,7 @@ Bien que [Fermat](https://kenji.blog/fr/p/fermat/) et Pascal aient chacun employ
 
 ## 5. Contributions pionnières au calcul infinitésimal et à la physique
 
-Des décennies avant qu'[Isaac Newton](https://kenji.blog/fr/p/newton/) et Gottfried Leibniz n'établissent le calcul infinitésimal, [Fermat](https://kenji.blog/fr/p/fermat/) avait conçu ses propres méthodes pour tracer des tangentes aux courbes et trouver les valeurs maximales et minimales des fonctions.
+Des décennies avant qu'[Isaac Newton](https://kenji.blog/fr/p/newton/) et [Gottfried Leibniz](/fr/p/leibniz/) n'établissent le calcul infinitésimal, [Fermat](https://kenji.blog/fr/p/fermat/) avait conçu ses propres méthodes pour tracer des tangentes aux courbes et trouver les valeurs maximales et minimales des fonctions.
 
 Il a introduit un concept appelé **« Adéquation »** (Adequality). Il s'agit d'une technique où une valeur est traitée comme « presque égale » lorsqu'une quantité infime $E$ varie, et la valeur extrême est trouvée en traitant $E$ comme $0$ à l'étape finale du calcul. Il s'agit essentiellement de l'idée même de la dérivation moderne, et Newton lui-même a remarqué plus tard : « J'ai eu l'indice de cette méthode à partir de la façon dont [Fermat](https://kenji.blog/fr/p/fermat/) traçait les tangentes. » Sans [Fermat](https://kenji.blog/fr/p/fermat/), l'achèvement du calcul infinitésimal aurait pu être encore plus retardé.
 
@@ -101,7 +101,7 @@ De plus, dans le domaine de la physique (optique), il a proposé le **Principe d
 
 Malgré avoir laissé derrière lui de si nombreuses et grandes réalisations, ce qui fait incontestablement de [Fermat](https://kenji.blog/fr/p/fermat/) le mathématicien le plus célèbre de l'histoire est l'existence du **« Dernier théorème de [Fermat](https://kenji.blog/fr/p/fermat/) »**.
 
-Dans les marges d'un passage concernant le théorème de Pythagore ( $x^2 + y^2 = z^2$ ) dans le volume 2 de son livre préféré, l'*Arithmetica* de [Diophante](https://kenji.blog/fr/p/diophantus/), [Fermat](https://kenji.blog/fr/p/fermat/) a rédigé la note étonnante suivante en latin :
+Dans les marges d'un passage concernant le théorème de [Pythagore](/fr/p/pythagoras/) ( $x^2 + y^2 = z^2$ ) dans le volume 2 de son livre préféré, l'*Arithmetica* de [Diophante](https://kenji.blog/fr/p/diophantus/), [Fermat](https://kenji.blog/fr/p/fermat/) a rédigé la note étonnante suivante en latin :
 
 > "Cubum autem in duos cubos, aut quadratoquadratum in duos quadratoquadratos, et generaliter nullam in infinitum ultra quadratum potestatem in duas eiusdem nominis fas est dividere cuius rei demonstrationem mirabilem sane detexi. Hanc marginis exiguitas non caperet."
 > 
@@ -123,7 +123,7 @@ Des génies successifs tels que Euler, [Legendre](https://kenji.blog/fr/p/legend
 
 Pendant plus de 350 ans après sa proposition, ce problème a régné comme le « plus grand problème non résolu des mathématiques », non résolu par personne. Dans la seconde moitié du 20e siècle, alors que beaucoup commençaient à soupçonner que « [Fermat](https://kenji.blog/fr/p/fermat/) ne l'avait pas réellement prouvé (ou avait fait une erreur) », un mathématicien a finalement mis fin à cette redoutable énigme.
 
-Il s'agissait du mathématicien britannique [Andrew Wiles](https://kenji.blog/fr/p/wiles/). Ayant rencontré le problème dans sa bibliothèque locale à l'âge de 10 ans, il a juré de consacrer sa vie à le résoudre. Il a adopté une approche grandiose, inimaginable à l'époque de Fermat, combinant la **Conjecture de Taniyama-Shimura** — qui proposait que « toutes les courbes elliptiques sont modulaires », avancée par les mathématiciens japonais Yutaka Taniyama et [Goro Shimura](https://kenji.blog/fr/p/shimura-goro/) — avec les recherches de Ken Ribet sur les courbes de Frey (la conjecture epsilon).
+Il s'agissait du mathématicien britannique [Andrew Wiles](https://kenji.blog/fr/p/wiles/). Ayant rencontré le problème dans sa bibliothèque locale à l'âge de 10 ans, il a juré de consacrer sa vie à le résoudre. Il a adopté une approche grandiose, inimaginable à l'époque de Fermat, combinant la **Conjecture de Taniyama-Shimura** — qui proposait que « toutes les courbes elliptiques sont modulaires », avancée par les mathématiciens japonais [Yutaka Taniyama](/fr/p/taniyama-yutaka/) et [Goro Shimura](https://kenji.blog/fr/p/shimura-goro/) — avec les recherches de Ken Ribet sur les courbes de Frey (la conjecture epsilon).
 
 Wiles s'est isolé dans son grenier et, après sept ans de recherches solitaires, a publié la preuve complète en 1995. Sa preuve était l'aboutissement des mathématiques modernes s'étendant sur des centaines de pages, entièrement différente des méthodes mathématiques du 17e siècle (« démonstration véritablement merveilleuse ») que [Fermat](https://kenji.blog/fr/p/fermat/) envisageait probablement.
 

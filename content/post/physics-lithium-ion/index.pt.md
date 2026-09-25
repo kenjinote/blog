@@ -17,7 +17,7 @@ tags:
 
 ## 1. O Herói Oculto da Revolução Móvel
 
-Na década de 1990, os telefones celulares passaram por uma evolução drástica, deixando de ser telefones gigantes e pesados de carregar no ombro para tamanhos que cabem no bolso. A tecnologia que fundamentou essa "revolução móvel" foi a "**bateria de íons de lítio**", comercializada pela primeira vez no mundo pela Sony em 1991.
+Na década de 1990, os telefones celulares passaram por uma evolução drástica, deixando de ser telefones gigantes e pesados de carregar no ombro para tamanhos que cabem no bolso. A tecnologia que fundamentou essa "[revolução móvel](/pt/p/history-of-iphone/)" foi a "**bateria de íons de lítio**", comercializada pela primeira vez no mundo pela Sony em 1991.
 
 Em comparação com as baterias de níquel-cádmio e de chumbo-ácido que dominavam até então, a bateria de íons de lítio possuía o desempenho dos sonhos: era "esmagadoramente mais leve, menor e de maior voltagem". Hoje, ela cresceu além dos smartphones e notebooks, tornando-se o coração de veículos elétricos (EVs) como os da Tesla, sendo uma tecnologia fundamental para uma sociedade descarbonizada. Em 2019, o Prêmio Nobel de Química foi concedido a Akira Yoshino e outros que contribuíram para o seu desenvolvimento.
 

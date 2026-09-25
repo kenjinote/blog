@@ -206,4 +206,4 @@ The time complexity of this algorithm is $O(n \cdot 2^n)$, which runs sufficient
 The [Inclusion-Exclusion Principle](https://kenji.blog/en/p/inclusion-exclusion-principle/) is a magical mathematical formula that breaks down seemingly complex overlaps of sets into a simple and mechanical repetition of addition and subtraction.
 
 Its range of application is exceptionally broad, spanning from basic probability problems to advanced competitive programming, and the calculation of Euler's totient function related to cryptography.
-Mastering this powerful technique will dramatically improve your problem-solving abilities in mathematics and algorithms. By all means, try applying it to various problems and experience its power.
+Mastering this powerful technique will dramatically improve your problem-solving abilities in [mathematics and algorithms](/en/p/reading-hard-tech-books/). By all means, try applying it to various problems and experience its power.

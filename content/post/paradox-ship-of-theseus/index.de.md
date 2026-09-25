@@ -12,7 +12,7 @@ image: "eyecatch.jpg"
 
 Sind „Sie“ dieselbe Person wie „Sie“ vor 10 Jahren?
 
-Es heißt, dass die meisten menschlichen Zellen innerhalb weniger Jahre ersetzt werden. Wenn die physischen Bestandteile völlig andere werden, worauf gründet sich dann unser Glaube, dass wir immer noch „das gleiche Selbst“ sind? Diese tiefgründige Frage wurde nicht durch die moderne Wissenschaft und Technologie aufgeworfen, sondern läuft auf ein philosophisches Paradoxon hinaus, das seit der griechischen Antike diskutiert wird. Das ist das „Schiff des Theseus“.
+Es heißt, dass die meisten menschlichen Zellen innerhalb weniger Jahre ersetzt werden. Wenn die physischen Bestandteile völlig andere werden, worauf gründet sich dann unser Glaube, dass wir immer noch „das gleiche Selbst“ sind? Diese tiefgründige Frage wurde nicht durch die moderne Wissenschaft und Technologie aufgeworfen, sondern läuft auf ein philosophisches Paradoxon hinaus, das seit der griechischen Antike diskutiert wird. Das ist das „[Schiff des Theseus](/de/p/ship-of-theseus/)“.
 
 In diesem Artikel werden wir dieses berühmte Gedankenexperiment des „Schiffs des Theseus“ als Ausgangspunkt nehmen, um persönliche Identität, Materie und Form, und sogar die digitale Identität in der modernen Gesellschaft äußerst detailliert und gründlich zu untersuchen.
 
@@ -23,7 +23,7 @@ Der Ursprung des „Schiffs des Theseus“ geht auf die „Parallelbiographien�
 > „Das Schiff mit dreißig Rudern, auf dem Theseus mit den jungen Athenern zurückkehrte, wurde von den Athenern bis zur Zeit des Demetrios von Phaleron aufbewahrt. Sie entfernten das verrottete Holz und fügten an seiner Stelle neues, starkes Holz ein. Infolgedessen wurde dieses Schiff zu einem hervorragenden Thema für Diskussionen unter den Philosophen über die Logik des ‚Wachstums (oder der Veränderung)‘. Die einen argumentierten, ‚es sei dasselbe Schiff‘, und die anderen argumentierten, ‚es sei nicht mehr dasselbe Schiff‘.“
 
 Das ist die Wurzel des Paradoxons.
-Ein Holzschiff verrottet im Laufe der Zeit. Nehmen wir an, wir reißen ein altes Brett zur Reparatur ab und nageln ein neues Brett fest. An diesem Punkt würde jeder antworten: „Das ist immer noch das Schiff des Theseus.“ Wenn jedoch Jahrzehnte oder Jahrhunderte vergehen und **das ursprüngliche Holz komplett durch neues Holz ersetzt wird**, kann es dann noch „Schiff des Theseus“ genannt werden?
+Ein Holzschiff verrottet im Laufe der Zeit. Nehmen wir an, wir reißen ein altes Brett zur Reparatur ab und nageln ein neues Brett fest. An diesem Punkt würde jeder antworten: „Das ist immer noch das [Schiff des Theseus](/de/p/ship-of-theseus/).“ Wenn jedoch Jahrzehnte oder Jahrhunderte vergehen und **das ursprüngliche Holz komplett durch neues Holz ersetzt wird**, kann es dann noch „[Schiff des Theseus](/de/p/ship-of-theseus/)“ genannt werden?
 
 ```mermaid
 graph TD
@@ -38,7 +38,7 @@ Diese Frage trifft genau die Zweideutigkeit des Wortes „gleich“, das wir all
 
 Im 17. Jahrhundert fügte der englische Philosoph Thomas Hobbes diesem Paradoxon eine weitere Wendung hinzu. In seinem Buch „De Corpore“ präsentierte er folgendes extreme Szenario:
 
-**„Was wäre, wenn jemand all das alte Holz, das vom Schiff des Theseus entfernt wurde, einsammeln, es genau so zusammensetzen und ein anderes Schiff mit der gleichen Form bauen würde – welches wäre das echte Schiff des Theseus?“**
+**„Was wäre, wenn jemand all das alte Holz, das vom [Schiff des Theseus](/de/p/ship-of-theseus/) entfernt wurde, einsammeln, es genau so zusammensetzen und ein anderes Schiff mit der gleichen Form bauen würde – welches wäre das echte [Schiff des Theseus](/de/p/ship-of-theseus/)?“**
 
 Durch dieses Gedankenexperiment wird das Problem noch komplizierter.
 
@@ -51,7 +51,7 @@ graph TD
 ```
 
 In dem von Hobbes präsentierten Szenario gibt es zwei Kandidaten.
-1. **Schiff der Kontinuität (Das restaurierte Schiff)**: Das Schiff, das im Hafen von Athen angebunden blieb, weiterhin funktionierte und von den Menschen weiterhin das „Schiff des Theseus“ genannt wurde (alle Materialien sind neu).
+1. **Schiff der Kontinuität (Das restaurierte Schiff)**: Das Schiff, das im Hafen von Athen angebunden blieb, weiterhin funktionierte und von den Menschen weiterhin das „[Schiff des Theseus](/de/p/ship-of-theseus/)“ genannt wurde (alle Materialien sind neu).
 2. **Schiff des Materials (Das rekonstruierte Schiff)**: Das Schiff, das aus genau denselben physischen Materialien wie das ursprüngliche Schiff besteht.
 
 Wenn „aus dem gleichen Material zu bestehen“ die Bedingung für Identität ist, dann ist letzteres das Original. Wenn jedoch die „räumliche und zeitliche Kontinuität“ die Bedingung für Identität ist, dann ist ersteres das Original. Da es logischerweise unmöglich ist, dass zwei „Schiffe des Theseus“ gleichzeitig existieren, müssen wir uns für eines entscheiden.
@@ -97,8 +97,8 @@ Heutzutage sind Daten keinem physischen Verschleiß unterworfen, aber sie schaff
 
 ## 7. Fazit: Ist „gleich“ nur eine Übereinkunft?
 
-Die größte Lektion, die uns das Schiff des Theseus lehrt, ist, dass **„Identität keine absolute Eigenschaft ist, die den Dingen innewohnt, sondern nur eine Übereinkunft oder ein Konzept darüber, wie wir sie wahrnehmen“**.
+Die größte Lektion, die uns das [Schiff des Theseus](/de/p/ship-of-theseus/) lehrt, ist, dass **„Identität keine absolute Eigenschaft ist, die den Dingen innewohnt, sondern nur eine Übereinkunft oder ein Konzept darüber, wie wir sie wahrnehmen“**.
 
 Wie die „Vergänglichkeit (Impermanenz)“ des Buddhismus zeigt, befindet sich alles auf dieser Welt im Fluss der Veränderung. Das Paradoxon entsteht, weil wir versuchen, eine feste Einheit wie „das gleiche Schiff“ oder „das gleiche Ich“ zu suchen. Was wir „gleich“ nennen, ist nur ein Etikett, das der Einfachheit halber an einen sich ständig verändernden Prozess angehängt wird.
 
-Die Tatsache, dass wir leben, ist wie eine Seereise, genau wie das Schiff des Theseus, bei der wir ständig unser altes Ich ablegen, ein neues Ich integrieren und dennoch weiterhin die Geschichte des „Ich“ weben.
+Die Tatsache, dass wir leben, ist wie eine Seereise, genau wie das [Schiff des Theseus](/de/p/ship-of-theseus/), bei der wir ständig unser altes Ich ablegen, ein neues Ich integrieren und dennoch weiterhin die Geschichte des „Ich“ weben.

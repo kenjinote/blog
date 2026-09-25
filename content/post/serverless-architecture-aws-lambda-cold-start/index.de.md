@@ -149,7 +149,7 @@ Die Zeit, die für einen Kaltstart benötigt wird, kann grob in den **AWS-seitig
 
 ### 4.2. Kaltstarts aus Sicht der Wahrscheinlichkeitstheorie
 
-Mithilfe der Warteschlangentheorie (z. B. dem M/M/c-Modell) kann die Wahrscheinlichkeit eines Kaltstarts mathematisch modelliert werden.
+Mithilfe der [Warteschlangentheorie](/de/p/queuing-theory-basics/) (z. B. dem M/M/c-Modell) kann die Wahrscheinlichkeit eines Kaltstarts mathematisch modelliert werden.
 Angenommen, die Ankunftsrate der Anfragen ist $\lambda$, die Überlebenszeit eines warmen [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)s ist $T_w$ und die Verarbeitungszeit ist $\mu$. Wenn der Datenverkehr ansteigt, nimmt die erforderliche Parallelität (Anzahl der Container) schnell zu, und die Kaltstartwahrscheinlichkeit steigt.
 
 Im stationären [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) kann die Wahrscheinlichkeit $P_{warm}$, dass ein warmer Container wiederverwendet wird, wie folgt approximiert werden:

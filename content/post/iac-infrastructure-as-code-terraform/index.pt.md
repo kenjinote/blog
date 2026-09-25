@@ -19,7 +19,7 @@ tags:
 
 No mundo do desenvolvimento de sistemas, ocorreu há muito tempo uma mudança de paradigma: gerenciar não apenas o código da aplicação, mas também a própria infraestrutura como código. Isso é **Infrastructure as Code (IaC)**. A construção manual de servidores (as chamadas "construções baseadas em manuais" e "operações de clique") era um terreno fértil para erros humanos, sofrendo com problemas fatais como a falta de escalabilidade e reprodutibilidade.
 
-Neste artigo, começaremos pelo conceito de IaC e focaremos em seu padrão de fato, o **Terraform**. Explicaremos em grandes detalhes a filosofia de "gerenciamento de configuração declarativo" adotada pelo Terraform, sua arquitetura interna, o mecanismo de gerenciamento de estado (State) e as melhores práticas aplicáveis.
+Neste artigo, começaremos pelo conceito de IaC e focaremos em seu padrão de fato, o **Terraform**. Explicaremos em grandes detalhes a filosofia de "gerenciamento de configuração declarativo" adotada pelo Terraform, sua arquitetura interna, o mecanismo de [gerenciamento de estado](/pt/p/state-management-history-redux-context-recoil-zustand/) (State) e as melhores práticas aplicáveis.
 
 ---
 
@@ -120,7 +120,7 @@ graph TD
     VPC --> SG
 ```
 
-Através desta abordagem baseada na teoria dos grafos, o Terraform alcança o seguinte:
+Através desta abordagem baseada na [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/), o Terraform alcança o seguinte:
 - **Criação paralela** (aceleração) de recursos que não possuem dependências.
 - Criação, atualização e exclusão de recursos na ordem correta.
 

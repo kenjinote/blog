@@ -48,7 +48,7 @@ If we naively try to calculate this DFT, $N$ multiplications and additions are r
 
 ## 3. Mathematical Derivation of the FFT Algorithm: Cooley-Tukey Type
 
-The algorithm rediscovered by James Cooley and John Tukey in 1965 (it is said that Carl Friedrich Gauss had already discovered a similar method in 1805) is the most commonly used FFT algorithm today. Here, we will derive the radix-2 Decimation-in-Time (DIT) FFT when the number of data points $N$ is a power of 2 ($N = 2^m$).
+The algorithm rediscovered by James Cooley and John Tukey in 1965 (it is said that [Carl Friedrich Gauss](/en/p/gauss/) had already discovered a similar method in 1805) is the most commonly used FFT algorithm today. Here, we will derive the radix-2 Decimation-in-Time (DIT) FFT when the number of data points $N$ is a power of 2 ($N = 2^m$).
 
 ### Splitting into Evens and Odds (Divide and Conquer)
 

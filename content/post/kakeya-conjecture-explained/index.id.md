@@ -14,7 +14,7 @@ tags:
 image: eyecatch.jpg
 ---
 
-Di dunia matematika, terdapat beberapa topik yang berawal dari masalah yang sangat intuitif, namun solusi atau masalah turunannya mengarah pada bidang-bidang terdalam dalam matematika modern. "Teorema Terakhir Fermat" dan "Konjektur Poincaré" adalah contoh utamanya, tetapi **"Konjektur Kakeya (Kakeya Conjecture)"**, yang terletak di persimpangan geometri dan analisis, juga merupakan salah satu tema yang memikat.
+Di dunia matematika, terdapat beberapa topik yang berawal dari masalah yang sangat intuitif, namun solusi atau masalah turunannya mengarah pada bidang-bidang terdalam dalam matematika modern. "[Teorema Terakhir Fermat](/id/p/fermats-last-theorem/)" dan "[Konjektur Poincaré](/id/p/poincare-conjecture/)" adalah contoh utamanya, tetapi **"Konjektur Kakeya (Kakeya Conjecture)"**, yang terletak di persimpangan geometri dan analisis, juga merupakan salah satu tema yang memikat.
 
 Dalam artikel ini, kita akan menggali lebih dalam keseluruhan Konjektur Kakeya, dimulai dari "Masalah Jarum Kakeya" yang diajukan oleh matematikawan Jepang Soichi Kakeya pada tahun 1917, kemudian penemuan mengejutkan oleh matematikawan Rusia Besicovitch, hingga penelitian oleh matematikawan jenius modern Terence Tao dan lainnya.
 

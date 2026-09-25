@@ -18,7 +18,7 @@ tags:
 
 ## Einführung
 
-In der Geschichte der Mathematik war das 19. Jahrhundert eine entscheidende Zeit, in der sich Analysis und Algebra in ihre moderne Form entwickelten. Im Zentrum dieser Bewegung stand der französische Mathematiker **Joseph [Liouville](https://kenji.blog/de/p/liouville/)** (1809–1882). Er etablierte grundlegende Theoreme in der komplexen Analysis und war der erste Mensch in der Geschichte, der die Existenz „transzendenter Zahlen“ konkret bewies. Er ist auch bekannt als der Wohltäter, der die schwierigen Manuskripte von Évariste Galois entschlüsselte und veröffentlichte. In diesem Artikel werden wir tief in das turbulente Leben von [Liouville](https://kenji.blog/de/p/liouville/) und seine zahlreichen **mathematischen Errungenschaften** eintauchen.
+In der Geschichte der Mathematik war das 19. Jahrhundert eine entscheidende Zeit, in der sich Analysis und Algebra in ihre moderne Form entwickelten. Im Zentrum dieser Bewegung stand der französische Mathematiker **Joseph [Liouville](https://kenji.blog/de/p/liouville/)** (1809–1882). Er etablierte grundlegende Theoreme in der komplexen Analysis und war der erste Mensch in der Geschichte, der die Existenz „transzendenter Zahlen“ konkret bewies. Er ist auch bekannt als der Wohltäter, der die schwierigen Manuskripte von [Évariste Galois](/de/p/galois/) entschlüsselte und veröffentlichte. In diesem Artikel werden wir tief in das turbulente Leben von [Liouville](https://kenji.blog/de/p/liouville/) und seine zahlreichen **mathematischen Errungenschaften** eintauchen.
 
 ## Frühes Leben und Ausbildung
 
@@ -28,7 +28,7 @@ Im Jahr 1825 trat er in die renommierte **École Polytechnique** ein, wo er von 
 
 ## Die Rettung der Manuskripte von [Galois](https://kenji.blog/de/p/galois/)
 
-Wenn man über [Liouville](https://kenji.blog/de/p/liouville/) spricht, darf man die Geschichte nicht auslassen, wie er die Manuskripte des jungen Genies **Évariste Galois** rettete. [Galois](https://kenji.blog/de/p/galois/) verlor sein Leben in einem Duell im jungen Alter von 20 Jahren, aber kurz vor seinem Tod vertraute er seine mathematischen Entdeckungen seinem Freund Auguste Chevalier an.
+Wenn man über [Liouville](https://kenji.blog/de/p/liouville/) spricht, darf man die Geschichte nicht auslassen, wie er die Manuskripte des jungen Genies **[Évariste Galois](/de/p/galois/)** rettete. [Galois](https://kenji.blog/de/p/galois/) verlor sein Leben in einem Duell im jungen Alter von 20 Jahren, aber kurz vor seinem Tod vertraute er seine mathematischen Entdeckungen seinem Freund Auguste Chevalier an.
 
 Es war [Liouville](https://kenji.blog/de/p/liouville/), der Licht auf die Theorie von Galois warf, die lange Zeit ignoriert und missverstanden worden war. Im Jahr 1843 studierte er Galois' Papiere gründlich und erkannte, dass sie zutiefst wichtige Entdeckungen bezüglich der Lösbarkeit von algebraischen Gleichungen enthielten. 1846 veröffentlichte Liouville [Galois](https://kenji.blog/de/p/galois/)' Papiere in der von ihm gegründeten Fachzeitschrift *Journal de Mathématiques Pures et Appliquées* und präsentierte sie so der Welt.
 

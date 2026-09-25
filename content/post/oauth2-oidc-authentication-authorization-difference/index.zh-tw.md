@@ -75,7 +75,7 @@ OAuth 2.0 根據用戶端的特性，定義了多種「授權類型（取得權�
 
 ### 2.4 深入探討：授權碼流程 ＋ PKCE (Proof Key for Code Exchange)
 
-在 SPA 或行動應用程式中，無法安全地隱藏用戶端機密。因此，為了防止授權碼攔截攻擊 (Authorization Code Interception Attack)，便導入了 **PKCE** (RFC 7636)。
+在 [SPA](/zh-tw/p/micro-frontends-architecture-spa-division/) 或行動應用程式中，無法安全地隱藏用戶端機密。因此，為了防止授權碼攔截攻擊 (Authorization Code Interception Attack)，便導入了 **PKCE** (RFC 7636)。
 
 PKCE 的運作機制如下：
 用戶端在發起授權請求之前，會先產生一個隨機字串 `code_verifier`，並將其雜湊化以建立 `code_challenge`。

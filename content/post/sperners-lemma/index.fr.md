@@ -110,11 +110,11 @@ Par conséquent, il est clair que le nombre de portes menant à l'extérieur est
 
 ## 5.3. Calcul des Degrés à l'aide du Lemme des Poignées de Main
 
-C'est ici que la théorie des graphes intervient.
+C'est ici que la [théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/) intervient.
 - Sommets du graphe : Chaque petit triangle (pièce) et l'extérieur.
 - Arêtes du graphe : Portes (arêtes de couleur 1 et 2). Lorsque deux pièces partagent une porte, reliez leurs sommets avec une arête.
 
-Selon le "Lemme des poignées de main", un théorème fondamental de la théorie des graphes, la somme des "degrés" (nombre d'arêtes connectées) de tous les sommets doit toujours être un nombre pair (le double du nombre d'arêtes).
+Selon le "Lemme des poignées de main", un théorème fondamental de la [théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/), la somme des "degrés" (nombre d'arêtes connectées) de tous les sommets doit toujours être un nombre pair (le double du nombre d'arêtes).
 
 $$ \sum_{v \in V} \text{deg}(v) = 2|E| $$
 

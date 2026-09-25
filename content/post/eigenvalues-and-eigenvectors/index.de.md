@@ -152,7 +152,7 @@ Die Funktion `np.linalg.eig` von NumPy gibt normalisierte Eigenvektoren (mit der
 
 ## Matrixdiagonalisierung und ihre weitreichenden Vorteile
 
-Eine der wichtigsten Anwendungen von Eigenwerten und Eigenvektoren ist die **Matrixdiagonalisierung**. Die Diagonalisierung ist der Prozess, eine komplexe Matrix $A$ unter Verwendung einer leicht berechenbaren Diagonalmatrix $D$ wie folgt zu zerlegen:
+Eine der wichtigsten Anwendungen von Eigenwerten und Eigenvektoren ist die **Matrixdiagonalisierung**. Die [Diagonalisierung](/de/p/diagonalization-and-jordan-normal-form/) ist der Prozess, eine komplexe Matrix $A$ unter Verwendung einer leicht berechenbaren Diagonalmatrix $D$ wie folgt zu zerlegen:
 
 $$ A = P D P^{-1} $$
 
@@ -164,9 +164,9 @@ $$
 P = \begin{pmatrix} 1 & 1 \\ -2 & 1 \end{pmatrix}, \quad D = \begin{pmatrix} 2 & 0 \\ 0 & 5 \end{pmatrix}
 $$
 
-Warum ist diese Diagonalisierung so wichtig? Weil sie **die Berechnung von Matrixpotenzen drastisch erleichtert**.
+Warum ist diese [Diagonalisierung](/de/p/diagonalization-and-jordan-normal-form/) so wichtig? Weil sie **die Berechnung von Matrixpotenzen drastisch erleichtert**.
 
-Nehmen wir beispielsweise an, Sie möchten $A$ mit 100 potenzieren. Die direkte Berechnung von $A^{100}$ erfordert einen enormen Rechenaufwand. Unter Verwendung der Diagonalisierung gilt jedoch:
+Nehmen wir beispielsweise an, Sie möchten $A$ mit 100 potenzieren. Die direkte Berechnung von $A^{100}$ erfordert einen enormen Rechenaufwand. Unter Verwendung der [Diagonalisierung](/de/p/diagonalization-and-jordan-normal-form/) gilt jedoch:
 
 $$
 A^{100} = (P D P^{-1})(P D P^{-1}) \dots (P D P^{-1}) = P D^{100} P^{-1}

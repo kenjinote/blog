@@ -40,7 +40,7 @@ Sin embargo, al comenzar la década de 1930, los nazis (Partido Nacionalsocialis
 
 Como el entorno de investigación y de vida en Alemania bajo el régimen nazi se deterioró drásticamente, y con su propia seguridad personal en riesgo, Siegel finalmente tomó la decisión de abandonar su tierra natal. En 1940, poco después del estallido de la Segunda Guerra Mundial, logró escapar a los Estados Unidos a través de una ruta peligrosa por Dinamarca y Noruega.
 
-En los Estados Unidos, fue bienvenido en el Instituto de Estudios Avanzados (IAS) en Princeton, Nueva Jersey. En ese momento, el IAS se había convertido en un santuario para las mentes más brillantes que huían de la guerra en Europa, y Siegel disfrutó de una vida de investigación plena junto a figuras como Albert Einstein, John von Neumann y Hermann Weyl. Durante sus años en América, la investigación de Siegel se extendió más allá de la teoría de números; produjo sucesivamente resultados extremadamente importantes en los campos de la mecánica celeste y la teoría de funciones analíticas.
+En los Estados Unidos, fue bienvenido en el Instituto de Estudios Avanzados (IAS) en Princeton, Nueva Jersey. En ese momento, el IAS se había convertido en un santuario para las mentes más brillantes que huían de la guerra en Europa, y Siegel disfrutó de una vida de investigación plena junto a figuras como Albert Einstein, [John von Neumann](/es/p/von-neumann/) y Hermann Weyl. Durante sus años en América, la investigación de Siegel se extendió más allá de la teoría de números; produjo sucesivamente resultados extremadamente importantes en los campos de la mecánica celeste y la teoría de funciones analíticas.
 
 ### 2.4 Regreso a Gotinga y últimos años
 
@@ -68,7 +68,7 @@ Este resultado fue innovador en cuanto a la finitud de las soluciones de las ecu
 
 ### 3.2 Cero de Siegel
 
-En la teoría analítica de números, la distribución de los ceros de la función $L$ de Dirichlet $L(s, \chi)$ es de extrema importancia para extensiones naturales del teorema de los números primos y el teorema sobre progresiones aritméticas. Según la Hipótesis Generalizada de [Riemann](https://kenji.blog/es/p/riemann/) (GRH), todos los ceros en la banda crítica con una parte real entre $0$ y $1$ deberían encontrarse en la recta donde la parte real es $1/2$.
+En la teoría analítica de números, la distribución de los ceros de la función $L$ de Dirichlet $L(s, \chi)$ es de extrema importancia para extensiones naturales del [teorema de los números primos](/es/p/prime-number-theorem/) y el teorema sobre progresiones aritméticas. Según la Hipótesis Generalizada de [Riemann](https://kenji.blog/es/p/riemann/) (GRH), todos los ceros en la banda crítica con una parte real entre $0$ y $1$ deberían encontrarse en la recta donde la parte real es $1/2$.
 
 Sin embargo, para un carácter real (de un cuerpo cuadrático real) $\chi$, las matemáticas actuales no han descartado la posibilidad de que exista un cero real con una parte real muy cercana a $1$. A tal hipotético cero contraejemplo se le llama un **cero de Siegel** (Siegel zero) o cero excepcional.
 
@@ -121,7 +121,7 @@ $$
 \left| \lambda^n - 1 \right| > \frac{C}{n^\nu} \quad (\forall n \ge 1)
 $$
 
-Este resultado fue el primer ejemplo exitoso de superación brillante del problema de los divisores pequeños en sistemas dinámicos, y es un logro decisivo e histórico que sirvió como precursor directo de la **teoría KAM** (teorema KAM) desarrollada más tarde por Andréi Kolmogórov, Vladímir Arnold y Jürgen Moser.
+Este resultado fue el primer ejemplo exitoso de [superación](/es/p/hegel%E3%81%AEdial%C3%A9ctica/) brillante del problema de los divisores pequeños en sistemas dinámicos, y es un logro decisivo e histórico que sirvió como precursor directo de la **teoría KAM** (teorema KAM) desarrollada más tarde por Andréi Kolmogórov, Vladímir Arnold y Jürgen Moser.
 
 ## 4. La filosofía única de Siegel y su visión de las matemáticas
 

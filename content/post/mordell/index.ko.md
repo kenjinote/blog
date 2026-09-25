@@ -25,13 +25,13 @@ tags: ["수론", "모델", "타원 곡선", "디오판토스 방정식"]
 
 ## 3. [디오판토스](https://kenji.blog/ko/p/diophantus/) 방정식에 대한 열정
 
-모델의 연구 중심에는 항상 **[디오판토스](https://kenji.blog/ko/p/diophantus/) 방정식** (Diophantine equations) 이 있었습니다. 디오판토스 방정식이란 정수 계수를 갖는 다항식 방정식에서 정수해나 유리수해를 구하는 문제를 말합니다. 고대 그리스의 수학자 [디오판토스](https://kenji.blog/ko/p/diophantus/)의 이름을 따서 명명되었습니다.
+모델의 연구 중심에는 항상 **[디오판토스](https://kenji.blog/ko/p/diophantus/) 방정식** (Diophantine equations) 이 있었습니다. [디오판토스](/ko/p/diophantus/) 방정식이란 정수 계수를 갖는 다항식 방정식에서 정수해나 유리수해를 구하는 문제를 말합니다. 고대 그리스의 수학자 [디오판토스](https://kenji.blog/ko/p/diophantus/)의 이름을 따서 명명되었습니다.
 
-가장 유명한 [디오판토스](https://kenji.blog/ko/p/diophantus/) 방정식의 예는 피타고라스의 정리와 관련된 방정식입니다.
+가장 유명한 [디오판토스](https://kenji.blog/ko/p/diophantus/) 방정식의 예는 [피타고라스](/ko/p/pythagoras/)의 정리와 관련된 방정식입니다.
 
 $$ x^2 + y^2 = z^2 $$
 
-이 방정식의 정수해는 피타고라스 수라고 불리며, 무한히 존재한다는 것이 알려져 있습니다. 하지만 차수가 올라가면 문제는 순식간에 어려워집니다. [페르마의 마지막 정리](https://kenji.blog/ko/p/fermats-last-theorem/)로 알려진 다음 식은 그 대표적인 예입니다.
+이 방정식의 정수해는 [피타고라스](/ko/p/pythagoras/) 수라고 불리며, 무한히 존재한다는 것이 알려져 있습니다. 하지만 차수가 올라가면 문제는 순식간에 어려워집니다. [페르마의 마지막 정리](https://kenji.blog/ko/p/fermats-last-theorem/)로 알려진 다음 식은 그 대표적인 예입니다.
 
 $$ x^n + y^n = z^n \quad (n \ge 3) $$
 

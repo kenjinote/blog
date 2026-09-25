@@ -58,8 +58,8 @@ $$ 500 \text{次/日} \times 2 \text{秒} = 1000 \text{秒/日} \approx 16.6 \te
 
 - **`Ctrl + A`** : 移動到行首（Start of line）。非常常用。
 - **`Ctrl + E`** : 移動到行尾（End of line）。
-- **`Alt + B`** (Meta+B) : 往回移動一個單字（Backward word）。以斜線或空白為分隔符，以單字為單位進行高速移動。
-- **`Alt + F`** (Meta+F) : 往前移動一個單字（Forward word）。
+- **`Alt + B`** ([Meta](/zh-tw/p/history-of-meta-facebook/)+B) : 往回移動一個單字（Backward word）。以斜線或空白為分隔符，以單字為單位進行高速移動。
+- **`Alt + F`** ([Meta](/zh-tw/p/history-of-meta-facebook/)+F) : 往前移動一個單字（Forward word）。
 
 ```mermaid
 flowchart LR
@@ -76,7 +76,7 @@ flowchart LR
 - **`Ctrl + U`** : 從游標位置 Kill（刪除）到行首。在密碼輸入錯誤，或是想重新輸入指令時，能一瞬間清空。
 - **`Ctrl + K`** : 從游標位置 Kill 到行尾。
 - **`Ctrl + W`** : 刪除游標位置前的一個單字。在刪除一個參數並重寫時非常方便。
-- **`Alt + D`** (Meta+D) : 刪除游標位置後的一個單字。
+- **`Alt + D`** ([Meta](/zh-tw/p/history-of-meta-facebook/)+D) : 刪除游標位置後的一個單字。
 - **`Ctrl + Y`** : Yank（貼上）最後一次 Kill 的內容。可以實現進階用法，例如：移動到另一個目錄後，用 `Ctrl+Y` 恢復剛才用 `Ctrl+U` 刪除的指令。
 - **`Ctrl + _`** (或 `Ctrl + x, Ctrl + u`) : 復原（Undo）。不小心刪除時可以還原。
 
@@ -287,7 +287,7 @@ stateDiagram-v2
     Detach --> [*]
 ```
 
-常見的做法是編輯 `~/.tmux.conf`，將前綴鍵變更為比較好按的 `Ctrl+A`（類似 GNU Screen 的風格），並將窗格移動綁定為類似 Vim 的 `hjkl`。
+常見的做法是編輯 `~/.tmux.conf`，將前綴鍵變更為比較好按的 `Ctrl+A`（類似 GNU Screen 的風格），並將窗格移動綁定為類似 [Vim](/zh-tw/p/vim%E5%85%A5%E9%96%80/) 的 `hjkl`。
 
 ```text
 # ~/.tmux.conf 範例

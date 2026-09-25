@@ -16,7 +16,7 @@ tags:
 
 ## Introducción: El genio del siglo XVII que simbolizó el infinito
 
-El símbolo de **infinito** ( $\infty$ ) es algo que encontramos con regularidad. La primera persona en introducir este hermoso y misterioso símbolo en el mundo de las matemáticas fue el matemático inglés del siglo XVII **[John Wallis](https://kenji.blog/es/p/wallis/)** (1616–1703). Es conocido como una figura que desempeñó un papel de suma importancia en la historia de las matemáticas, sirviendo de puente entre la geometría analítica de René Descartes y el cálculo de [Isaac Newton](https://kenji.blog/es/p/newton/).
+El símbolo de **infinito** ( $\infty$ ) es algo que encontramos con regularidad. La primera persona en introducir este hermoso y misterioso símbolo en el mundo de las matemáticas fue el matemático inglés del siglo XVII **[John Wallis](https://kenji.blog/es/p/wallis/)** (1616–1703). Es conocido como una figura que desempeñó un papel de suma importancia en la historia de las matemáticas, sirviendo de puente entre la geometría analítica de [René Descartes](/es/p/descartes/) y el cálculo de [Isaac Newton](https://kenji.blog/es/p/newton/).
 
 La Europa del siglo XVII fue la era de la "Revolución Científica", donde figuras como Galileo Galilei, Johannes Kepler y [René Descartes](https://kenji.blog/es/p/descartes/) estaban construyendo los cimientos de la ciencia y las matemáticas modernas. En medio de esto, Wallis rompió los límites de la geometría griega clásica y abrió una nueva frontera en las matemáticas al introducir métodos algebraicos y analíticos en la geometría. En este artículo, profundizamos en la turbulenta vida de [Wallis](https://kenji.blog/es/p/wallis/), desde sus singulares antecedentes como criptógrafo hasta sus logros matemáticos y físicos que influyeron enormemente en las generaciones futuras.
 
@@ -127,7 +127,7 @@ Durante sus días de estudiante en la Universidad de Cambridge, Newton leyó ate
 
 Si la "Arithmetica Infinitorum" de [Wallis](https://kenji.blog/es/p/wallis/) no hubiera existido, el descubrimiento del cálculo por parte de Newton podría haberse retrasado significativamente, o podría haber tomado una forma completamente diferente.
 
-El propio [Wallis](https://kenji.blog/es/p/wallis/) elogió enormemente el talento excepcional de Newton y lo instó enérgicamente a publicar los resultados de su investigación sobre el cálculo. Más tarde, cuando estalló la feroz disputa sobre la "prioridad del cálculo" entre Newton y Gottfried Leibniz, [Wallis](https://kenji.blog/es/p/wallis/) apoyó plenamente a Newton como un poderoso defensor del bando británico.
+El propio [Wallis](https://kenji.blog/es/p/wallis/) elogió enormemente el talento excepcional de Newton y lo instó enérgicamente a publicar los resultados de su investigación sobre el cálculo. Más tarde, cuando estalló la feroz disputa sobre la "prioridad del cálculo" entre Newton y [Gottfried Leibniz](/es/p/leibniz/), [Wallis](https://kenji.blog/es/p/wallis/) apoyó plenamente a Newton como un poderoso defensor del bando británico.
 
 ## Conclusión: Un gran puente en la historia de las matemáticas
 

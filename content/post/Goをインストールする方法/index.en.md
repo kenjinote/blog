@@ -49,7 +49,7 @@ func main() {
 }
 ```
 
-If you execute `go run hello.go` from the command prompt or terminal, `Hello, world!` will be output.
+If you execute `go run hello.go` from the command prompt or [terminal](/en/p/terminal-efficiency-powershell-bash-shortcuts/), `Hello, world!` will be output.
 
 If you want to compile, executing `go build hello.go` will generate `hello.exe`.
 Executing `hello.exe` will output `Hello, world!`.

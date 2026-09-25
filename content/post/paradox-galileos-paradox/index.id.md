@@ -14,7 +14,7 @@ Mendengar kata "ketakterhinggaan", bayangan seperti apa yang muncul di pikiran A
 
 Intuisi kita sehari-hari terbentuk di dunia yang terbatas. Sama seperti "ada 3 buah apel" atau "membaca buku setebal 100 halaman", angka selalu diperlakukan sebagai sesuatu yang memiliki akhir. Namun, ketika melangkah ke dunia matematika, kita harus berhadapan langsung dengan konsep luar biasa bernama "ketakterhinggaan".
 
-Kali ini, mari kita gali lebih dalam tentang sebuah paradoks aneh yang diajukan oleh bapak sains, Galileo Galilei (1564-1642) dalam bukunya "Dialog Dua Ilmu Baru" di masa tuanya. Ini disebut "Paradoks Galileo", dan menjadi kunci penting yang membuka pintu ketakterhinggaan, yang kemudian terhubung ke "teori himpunan" oleh para matematikawan generasi berikutnya, khususnya Georg Cantor.
+Kali ini, mari kita gali lebih dalam tentang sebuah paradoks aneh yang diajukan oleh bapak sains, Galileo Galilei (1564-1642) dalam bukunya "Dialog Dua Ilmu Baru" di masa tuanya. Ini disebut "Paradoks Galileo", dan menjadi kunci penting yang membuka pintu ketakterhinggaan, yang kemudian terhubung ke "teori himpunan" oleh para matematikawan generasi berikutnya, khususnya [Georg Cantor](/id/p/cantor/).
 
 Dalam artikel ini, sepanjang ribuan karakter, kita akan menjelaskan sedetail mungkin mengenai keajaiban konsep "ketakterhinggaan", penyimpangannya dari intuisi matematis, dan kebijaksanaan umat manusia dalam mengatasinya. Silakan nikmati perjalanan petualangan intelektual ini.
 
@@ -78,7 +78,7 @@ Dengan kata lain, Galileo berpikir bahwa "dalam dunia ketakterhinggaan, pemikira
 
 Dalam kerangka matematika pada masa itu, ini adalah penilaian yang paling masuk akal dan bijaksana. Bisa dikatakan, intuisi bahwa berbahaya membawa aturan dunia terbatas (keseluruhan lebih besar dari sebagian) ke dunia tak terbatas pada titik tertentu adalah benar.
 
-Namun, sejarah matematika tidak berhenti di situ. Sekitar 250 tahun kemudian, di paruh kedua abad ke-19, seorang matematikawan jenius menghadapi "monster" ketakterhinggaan ini secara langsung. Dia adalah Georg Cantor.
+Namun, sejarah matematika tidak berhenti di situ. Sekitar 250 tahun kemudian, di paruh kedua abad ke-19, seorang matematikawan jenius menghadapi "monster" ketakterhinggaan ini secara langsung. Dia adalah [Georg Cantor](/id/p/cantor/).
 
 ---
 
@@ -130,7 +130,7 @@ Mengetahui bahwa bilangan asli, bilangan genap, bilangan bulat, dan bilangan ras
 
 Namun, Cantor menemukan fakta mengejutkan lainnya. Ia membuktikan bahwa himpunan **"bilangan real (seluruh bilangan pada garis bilangan)"** adalah **benar-benar lebih besar** daripada himpunan bilangan asli.
 
-Untuk membuktikannya, ia menggunakan metode terkenal yang disebut **"Argumen Diagonal Cantor"**.
+Untuk membuktikannya, ia menggunakan metode terkenal yang disebut **"[Argumen Diagonal Cantor](/id/p/cantors-diagonal-argument/)"**.
 Sederhananya, ini adalah pembuktian melalui kontradiksi (reductio ad absurdum) yang menyatakan, "Jika kita mengasumsikan bahwa seluruh bilangan real (misalnya desimal antara 0 dan 1) dapat didaftarkan dengan membuat korespondensi satu-satu dengan bilangan asli, pasti akan tercipta sebuah bilangan real baru yang lolos dari daftar tersebut."
 
 Dengan penemuan ini, dapat dipastikan bahwa ada "besar dan kecil" dalam ketakterhinggaan.
@@ -157,7 +157,7 @@ Paradoks Galileo bukan sekadar permainan kata atau pembenaran belaka. Ini mengaj
 
 "Hubungan misterius antara bilangan asli dan bilangan kuadrat" yang ditulis oleh Galileo Galilei pada abad ke-17 telah melampaui ratusan tahun dan berkembang menjadi matematika modern yang menangani ketakterhinggaan.
 
-Konsep ketakterhinggaan masih menyimpan banyak misteri hingga saat ini. Pertanyaan "Apakah ada ukuran ketakterhinggaan lain di antara ketakterhinggaan bilangan asli dan ketakterhinggaan bilangan real?" (Hipotesis Kontinum) telah mencapai kesimpulan mengejutkan bahwa "hal ini tidak dapat dibuktikan maupun disangkal" dalam sistem aksioma matematika saat ini.
+Konsep ketakterhinggaan masih menyimpan banyak misteri hingga saat ini. Pertanyaan "Apakah ada ukuran ketakterhinggaan lain di antara ketakterhinggaan bilangan asli dan ketakterhinggaan bilangan real?" ([Hipotesis Kontinum](/id/p/continuum-hypothesis/)) telah mencapai kesimpulan mengejutkan bahwa "hal ini tidak dapat dibuktikan maupun disangkal" dalam sistem aksioma matematika saat ini.
 
 Seperti apa ujung dari alam semesta? Apakah waktu akan berlanjut selamanya? Dan apa yang ada di balik tingkatan ketakterhinggaan yang meluas di dunia matematika? Paradoks Galileo adalah sebuah kisah yang melambangkan kehebatan kecerdasan manusia, bahwa meskipun kita adalah makhluk yang terbatas, kita bisa menyentuh "ketakterhinggaan" melalui pemikiran.
 

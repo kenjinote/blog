@@ -19,13 +19,13 @@ Como o matemático britânico William Clifford o chamou de "o Copérnico da Geom
 
 Nikolai Lobachevsky nasceu em Nizhni Novgorod, no Império Russo, em 1792. Quando ainda era jovem, seu pai faleceu, e a família caiu em extrema pobreza. No meio de uma vida difícil, sua mãe mudou-se para Kazan para a educação dos filhos. Essa decisão se tornaria a primeira oportunidade para dar origem a um futuro gênio matemático.
 
-Em 1807, ele ingressou na recém-fundada Universidade de Kazan como bolsista. Inicialmente, aspirava estudar medicina, mas conheceu Martin Bartels (também professor de Carl Friedrich Gauss), um notável matemático, e ficou fascinado pelo profundo encanto da matemática. Sob a orientação de Bartels, Lobachevsky desenvolveu seu talento notável, obtendo um mestrado com apenas 21 anos. Depois disso, subiu os degraus acadêmicos em uma velocidade incomum, tornando-se professor extraordinário aos 24 anos.
+Em 1807, ele ingressou na recém-fundada Universidade de Kazan como bolsista. Inicialmente, aspirava estudar medicina, mas conheceu Martin Bartels (também professor de [Carl Friedrich Gauss](/pt/p/gauss/)), um notável matemático, e ficou fascinado pelo profundo encanto da matemática. Sob a orientação de Bartels, Lobachevsky desenvolveu seu talento notável, obtendo um mestrado com apenas 21 anos. Depois disso, subiu os degraus acadêmicos em uma velocidade incomum, tornando-se professor extraordinário aos 24 anos.
 
 Sua vida esteve atrelada à Universidade de Kazan. Ele não apenas atuou como professor, mas também como diretor da biblioteca, diretor do observatório e, com a tenra idade de 35 anos, reitor, dedicando-se à modernização da universidade e ao desenvolvimento da educação. A anedota de que, durante uma epidemia de cólera, ele próprio dirigiu a quarentena e a gestão sanitária do campus, salvando a vida de muitos estudantes, mostra que ele não era apenas um habitante da torre de marfim, mas uma pessoa com um profundo senso de responsabilidade e ação.
 
 ## O Desafio ao "Postulado das Paralelas": O Nascimento da Geometria Não-Euclidiana
 
-O que tornou o nome de Lobachevsky imortal na história foi o seu desafio ao "postulado das paralelas (o quinto postulado)" nos "Elementos" de Euclides.
+O que tornou o nome de Lobachevsky imortal na história foi o seu desafio ao "postulado das paralelas (o quinto postulado)" nos "Elementos" de [Euclides](/pt/p/euclid/).
 
 Desde o século III a.C., o postulado de que "através de um ponto fora de uma reta, existe apenas uma reta paralela" era considerado uma verdade autoevidente. Durante séculos, incontáveis matemáticos tentaram provar este postulado a partir dos outros quatro axiomas, mas todos falharam.
 
@@ -56,7 +56,7 @@ Apesar da incompreensão e escárnio ao seu redor, Lobachevsky não comprometeu 
 
 Os últimos anos de Lobachevsky não foram felizes. Ele foi injustamente destituído do cargo de reitor da universidade, perdeu seu filho amado e até mesmo perdeu a visão. Cego, ditou a sua "Pangeometria" aos seus discípulos até pouco antes de sua morte, deixando a culminação de sua teoria. Em 1856, sem ver o dia em que suas grandes realizações seriam devidamente apreciadas, faleceu aos 63 anos.
 
-Levaria décadas após sua morte para que ele fosse verdadeiramente reconhecido como o "Copérnico da Geometria". Sua teoria foi generalizada por Bernhard Riemann, desenvolvendo-se na "Geometria Riemanniana" para descrever espaços curvos multidimensionais. E no início do século XX, quando Albert Einstein construiu a "Teoria da Relatividade Geral", o que foi indispensável para descrever a verdade universal de que o espaço-tempo é distorcido pela gravidade foi exatamente essa estrutura da geometria não-euclidiana.
+Levaria décadas após sua morte para que ele fosse verdadeiramente reconhecido como o "Copérnico da Geometria". Sua teoria foi generalizada por [Bernhard Riemann](/pt/p/riemann/), desenvolvendo-se na "Geometria Riemanniana" para descrever espaços curvos multidimensionais. E no início do século XX, quando Albert Einstein construiu a "Teoria da Relatividade Geral", o que foi indispensável para descrever a verdade universal de que o espaço-tempo é distorcido pela gravidade foi exatamente essa estrutura da geometria não-euclidiana.
 
 Se Lobachevsky não tivesse quebrado o muro invisível chamado "senso comum", a física moderna e a cosmologia teriam sido completamente diferentes.
 

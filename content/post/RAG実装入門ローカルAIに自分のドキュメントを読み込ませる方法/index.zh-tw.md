@@ -11,11 +11,11 @@ tags: ["RAG", "Vector DB", "Embeddings", "Python", "Local AI"]
 
 # 前言
 
-近年來，大型語言模型（[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）的進化令人矚目，以 ChatGPT 和 Claude 為首的許多 AI 已經滲透到我們的生活和業務中。然而，一般的 LLM 存在著明顯的弱點。那就是它們只知道「訓練時的公開資訊」。對於公司內部規定、個人筆記、未公開的專案資料等「私有文件」相關的提問，它們自然無法回答。如果硬要它們回答，就會增加產生與事實不符、似是而非的謊言（幻覺，Hallucination）的風險。
+近年來，[大型語言模型](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）的進化令人矚目，以 ChatGPT 和 Claude 為首的許多 AI 已經滲透到我們的生活和業務中。然而，一般的 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 存在著明顯的弱點。那就是它們只知道「訓練時的公開資訊」。對於公司內部規定、個人筆記、未公開的專案資料等「私有文件」相關的提問，它們自然無法回答。如果硬要它們回答，就會增加產生與事實不符、似是而非的謊言（幻覺，Hallucination）的風險。
 
-因此，目前在世界各地爆發性普及的技術架構就是 **RAG（Retrieval-Augmented Generation，檢索增強生成）** 。透過使用 RAG，可以從外部資料庫動態地提供專有知識給 LLM，讓它能基於這些知識產生準確且有根據的回答。
+因此，目前在世界各地爆發性普及的技術架構就是 **RAG（Retrieval-Augmented Generation，檢索增強生成）** 。透過使用 RAG，可以從外部資料庫動態地提供專有知識給 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)，讓它能基於這些知識產生準確且有根據的回答。
 
-此外，在處理企業領域或個人機密資訊時，將資料傳送到 OpenAI 等雲端 API 在資安政策上通常是不被允許的。這時就需要結合 **本機 AI** （在自己的電腦或地端伺服器上獨立運作的 LLM）來建構「本機 RAG（Local RAG）」。
+此外，在處理企業領域或個人機密資訊時，將資料傳送到 OpenAI 等雲端 API 在資安政策上通常是不被允許的。這時就需要結合 **本機 AI** （在自己的電腦或地端伺服器上獨立運作的 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）來建構「本機 RAG（Local RAG）」。
 
 本文將從 RAG 的基礎理論開始，徹底解說使用 Python 實作本機 RAG 的具體方法、數學背景（向量檢索的原理），以及讓系統上線運作的進階技巧。
 
@@ -108,7 +108,7 @@ $$ \text{Cosine Similarity}(\mathbf{A}, \mathbf{B}) = \cos(\theta) = \frac{\math
    - 模型：`intfloat/multilingual-e5-large` 或 `BAAI/bge-m3`。若要在本機執行，通常會從 Hugging Face 下載並透過 Sentence-[Transformer](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)s 執行。
 3. **向量資料庫 (Vector DB)**
    - `ChromaDB`：基於 Python，設定極為簡單。最適合用於本機開發。
-   - `FAISS`：Meta 開發的高速向量檢索函式庫。
+   - `FAISS`：[Meta](/zh-tw/p/history-of-meta-facebook/) 開發的高速向量檢索函式庫。
    - `Qdrant` / `Milvus`：適用於更大規模且正式的生產環境。
 4. **編排框架 (Orchestration Framework)**
    - `LangChain`：用於串聯各個元件（Chain）的業界標準。
@@ -254,7 +254,7 @@ if __name__ == "__main__":
 2. **重新評估 (Re-ranking)** ：使用另一個較為笨重、被稱為 Cross-Encoder 的機器學習模型（例如：`bge-reranker` 等），輸入使用者查詢與取得的分塊配對，重新計算語意適合度的分數。
 3. **篩選** ：僅挑選分數最高的前 3 到 5 筆作為最終的上下文，傳遞給 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的提示詞。
 
-透過這種方法，可以防止無關的雜訊資訊傳入 LLM，大幅提升回答的精準度（Precision）。
+透過這種方法，可以防止無關的雜訊資訊傳入 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)，大幅提升回答的精準度（Precision）。
 
 ```mermaid
 graph LR
@@ -276,9 +276,9 @@ graph LR
 在本地環境建構並維運 RAG 時，會面臨一些特有的挑戰。
 
 - **VRAM（顯示卡記憶體）耗盡** ：
-  若要讓本機 LLM 以實用的速度（每秒數十個 Token）運作，必須將模型載入 GPU 的 VRAM 中。要以 fp16（16 位元浮點數）執行 8B 等級的模型大約需要 16GB 的 VRAM。但透過 **量化（Quantization）** 技術（例如 GGUF 或 AWQ 格式，將其壓縮至 4bit 或 8bit 等），即使是 8GB 的 VRAM（如一般的電競電腦等）也能以足夠快的速度運作。Llama.cpp 或 Ollama 預設都有支援這些量化格式。
+  若要讓本機 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 以實用的速度（每秒數十個 Token）運作，必須將模型載入 GPU 的 VRAM 中。要以 fp16（16 位元浮點數）執行 8B 等級的模型大約需要 16GB 的 VRAM。但透過 **量化（Quantization）** 技術（例如 [GGUF](/zh-tw/p/llama-cpp-quantization-gguf/) 或 AWQ 格式，將其壓縮至 4bit 或 8bit 等），即使是 8GB 的 VRAM（如一般的電競電腦等）也能以足夠快的速度運作。Llama.cpp 或 Ollama 預設都有支援這些量化格式。
 - **上下文視窗的限制** ：
-  如果檢索後取得的上下文數量過多，可能會超過 LLM 的輸入上限（Token 限制），或者模型會忘記資訊中間部分的內容（Lost in the middle 現象）。因此，調整提取的分塊數量，以及導入前述的重新排序（Re-ranking）技術進行嚴格篩選是不可或缺的。
+  如果檢索後取得的上下文數量過多，可能會超過 [LLM](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的輸入上限（Token 限制），或者模型會忘記資訊中間部分的內容（Lost in the middle 現象）。因此，調整提取的分塊數量，以及導入前述的重新排序（Re-ranking）技術進行嚴格篩選是不可或缺的。
 - **資料的新鮮度管理** ：
   當來源文件被更新時，必須同步更新或刪除（CRUD 操作）向量資料庫中相對應的向量資料。因為 ChromaDB 支援基於文件 ID 的更新操作，所以管理檔案的雜湊值（Hash），並撰寫批次處理程式來僅同步差異部分是比較實用的做法。
 

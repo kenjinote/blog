@@ -76,4 +76,4 @@ Jutaan PC pengguna yang berpartisipasi dalam jaringan bekerja sama untuk membuat
 
 BitTorrent adalah teknologi yang membuang pemikiran abad ke-20 di mana "server raksasa terpusat mendistribusikan kepada semua orang", dan secara sempurna mewujudkan filosofi desentralisasi otonom asli internet dengan "mengumpulkan kekuatan individu-individu yang membentuk kawanan".
 
-Logika yang berjalan di dasarnya, yaitu "memecah file menjadi bagian kecil", "mengumpulkan dari yang langka", dan "menghargai mereka yang bekerja sama", terus memberikan pengaruh yang sangat besar pada desain teknologi blockchain dan penyimpanan cloud terdesentralisasi saat ini.
+Logika yang berjalan di dasarnya, yaitu "memecah file menjadi bagian kecil", "mengumpulkan dari yang langka", dan "menghargai mereka yang bekerja sama", terus memberikan pengaruh yang sangat besar pada desain teknologi [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/) dan penyimpanan cloud terdesentralisasi saat ini.

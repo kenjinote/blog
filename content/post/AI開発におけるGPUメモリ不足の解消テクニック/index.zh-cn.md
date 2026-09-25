@@ -12,9 +12,9 @@ description: '在LLM的训练和推理中，最大的障碍就是VRAM（GPU内�
 
 # 引言：AI开发与“VRAM之墙”
 
-近年来，大型语言模型（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）和扩散模型（Diffusion Models）等生成式AI技术取得了飞速的发展。然而，当许多开发者和研究人员在本地环境中对这些最先进的AI模型进行训练（微调）或执行推理（Inference）时，他们面临着一个非常物理的障碍—— **“GPU内存（VRAM）不足”** 。
+近年来，[大型语言模型](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）和扩散模型（Diffusion Models）等生成式AI技术取得了飞速的发展。然而，当许多开发者和研究人员在本地环境中对这些最先进的AI模型进行训练（微调）或执行推理（Inference）时，他们面临着一个非常物理的障碍—— **“GPU内存（VRAM）不足”** 。
 
-即便是面向消费者的旗舰级GPU，例如NVIDIA GeForce RTX 4090，其最大VRAM也只有24GB，根本不可能直接加载像Llama 3 70B这样庞大的模型。而数据中心级别的H100（80GB）或B200（192GB）则非常昂贵，个人或小规模团队难以轻易触及。如果无法突破这堵“VRAM之墙（The Wall of VRAM）”，甚至连接触最先进模型的机会都没有。
+即便是面向消费者的旗舰级GPU，例如[NVIDIA](/zh-cn/p/history-of-nvidia/) [GeForce](/zh-cn/p/history-of-nvidia/) RTX 4090，其最大VRAM也只有24GB，根本不可能直接加载像Llama 3 70B这样庞大的模型。而数据中心级别的H100（80GB）或B200（192GB）则非常昂贵，个人或小规模团队难以轻易触及。如果无法突破这堵“VRAM之墙（The Wall of VRAM）”，甚至连接触最先进模型的机会都没有。
 
 本文将深入探讨如何通过软件和硬件架构层面的创新来打破这种物理上的VRAM限制，从推理和训练两个方面详细解析这些高级技术。我们将结合数学公式和图解，深入探讨CPU卸载、KV缓存优化、梯度检查点（Gradient Checkpointing）以及最新的统一内存（Unified Memory）架构。阅读本文后，您将深入理解VRAM的行为机制，并掌握在有限资源下处理庞大模型的实用知识。
 
@@ -32,13 +32,13 @@ description: '在LLM的训练和推理中，最大的障碍就是VRAM（GPU内�
 - **FP32 (单精度浮点数):** 4 bytes (标准的训练精度)
 - **FP16 / BF16 (半精度浮点数):** 2 bytes (常见的推理及混合精度训练)
 - **INT8 (8位整数):** 1 byte (量化模型)
-- **INT4 (4位整数量化):** 0.5 bytes (GPTQ, AWQ, GGUF等极度量化)
+- **INT4 (4位整数量化):** 0.5 bytes (GPTQ, AWQ, [GGUF](/zh-cn/p/llama-cpp-quantization-gguf/)等极度量化)
 
 假设整个模型的参数量为 $P$，那么纯权重本身占用的基础内存量 $M_{weights}$ 可用以下公式表示：
 
 $$ M_{weights} = P \times B $$
 
-例如，若以FP16（半精度）加载Meta发布的“Llama 3 8B”模型（约80亿参数），计算如下：
+例如，若以FP16（半精度）加载[Meta](/zh-cn/p/history-of-meta-facebook/)发布的“Llama 3 8B”模型（约80亿参数），计算如下：
 
 $$ M_{weights} = 8,000,000,000 \times 2 \text{ bytes} \approx 16,000,000,000 \text{ bytes} \approx 16 \text{ GB} $$
 
@@ -46,7 +46,7 @@ $$ M_{weights} = 8,000,000,000 \times 2 \text{ bytes} \approx 16,000,000,000 \te
 
 ## 1.2 推理时的内存消耗：KV缓存的激增
 
-在LLM的推理（尤其是自回归式的文本生成）过程中， **KV缓存（[Key-Value](https://kenji.blog/zh-cn/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache）** 对VRAM的压力与权重相当，甚至更为剧烈。
+在[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)的推理（尤其是自回归式的文本生成）过程中， **KV缓存（[Key-Value](https://kenji.blog/zh-cn/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache）** 对VRAM的压力与权重相当，甚至更为剧烈。
 在[Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)架构中，为了防止重复计算过去已生成或处理过的Token信息，各注意力层的Key和Value张量会持续缓存在VRAM中。这虽然提高了计算速度（Compute），但随着上下文长度（输入提示长度＋生成长度）的增加，内存消耗量会呈爆炸性的线性增长。
 
 处理1个Token时消耗的KV缓存内存量 $M_{kv\_token}$，可根据模型架构通过以下公式进行精确计算：
@@ -139,12 +139,12 @@ graph LR
 
 ## 2.3 FlashAttention：打破注意力计算的内存复杂性
 
-VRAM不足不仅仅是因为存储数据所需的内存量，计算过程中“临时工作空间（Workspace）”的匮乏也会引发OOM。标准的[Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) Self-Attention机制需要针对序列长度 $N$，在VRAM上实例化（Materialize）一个 $N \times N$ 的巨大注意力矩阵。这使得内存复杂度达到 $O(N^2)$，成为长上下文中导致OOM的主要原因。
+VRAM不足不仅仅是因为存储数据所需的内存量，计算过程中“临时工作空间（Workspace）”的匮乏也会引发OOM。标准的[Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) Self-Attention机制需要针对序列长度 $N$，在VRAM上实例化（Materialize）一个 $N \times N$ 的巨大注意力矩阵。这使得内存[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)达到 $O(N^2)$，成为长上下文中导致OOM的主要原因。
 
 解决这一问题的是 **FlashAttention** （及其后续版本FlashAttention-2, 3）。
 FlashAttention是一种充分利用GPU硬件架构（即容量巨大但速度较慢的HBM，以及容量极小但速度极快的SRAM的层级结构）的算法。它使用一种被称为分块（Tiling）的技术，将数据分块加载到SRAM中并完成注意力计算，从而完全避免了将 $N \times N$ 矩阵写入HBM（VRAM）的操作。
 
-通过这种方式，注意力层的内存复杂度从 $O(N^2)$ 骤降至 $O(N)$（与序列长度成正比），大大放宽了对上下文长度的限制。
+通过这种方式，注意力层的内存[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)从 $O(N^2)$ 骤降至 $O(N)$（与序列长度成正比），大大放宽了对上下文长度的限制。
 
 ## 2.4 统一内存（Unified Memory）的崛起与Apple Silicon
 

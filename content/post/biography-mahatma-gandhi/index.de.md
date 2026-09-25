@@ -13,7 +13,7 @@ description: "„Auge um Auge führt nur dazu, dass die ganze Welt erblindet.“
 
 „Auge um Auge führt nur dazu, dass die ganze Welt erblindet.“
 
-Mohandas Karamchand Gandhi (allgemein bekannt als Mahatma Gandhi), der diese Worte hinterlassen hat, ist einer der einflussreichsten Führer des 20. Jahrhunderts. Seine Philosophie des „gewaltlosen zivilen Ungehorsams (Satyagraha)“ führte Indien nicht nur zur Unabhängigkeit von der britischen Kolonialherrschaft, sondern beeinflusste auch Bürgerrechts- und Befreiungsbewegungen auf der ganzen Welt zutiefst, darunter die von Martin Luther King Jr. und Nelson Mandela. Dieser Artikel befasst sich mit seinem Leben und seiner Philosophie und untersucht, wie er dazu kam, die „Große Seele (Mahatma)“ genannt zu werden.
+Mohandas Karamchand Gandhi (allgemein bekannt als Mahatma Gandhi), der diese Worte hinterlassen hat, ist einer der einflussreichsten Führer des 20. Jahrhunderts. Seine Philosophie des „gewaltlosen zivilen Ungehorsams (Satyagraha)“ führte Indien nicht nur zur Unabhängigkeit von der britischen Kolonialherrschaft, sondern beeinflusste auch Bürgerrechts- und Befreiungsbewegungen auf der ganzen Welt zutiefst, darunter die von [Martin Luther King Jr.](/de/p/biography-martin-luther-king-jr/) und [Nelson Mandela](/de/p/biography-nelson-mandela/). Dieser Artikel befasst sich mit seinem Leben und seiner Philosophie und untersucht, wie er dazu kam, die „Große Seele (Mahatma)“ genannt zu werden.
 
 ## Studium in London und Erwachen in Südafrika
 
@@ -45,7 +45,7 @@ Doch am 30. Januar 1948, nur ein halbes Jahr nach der Unabhängigkeit, wurde Gan
 
 Gandhis Leben hat bewiesen, wie die „Macht des Geistes“, die ein einzelner Mensch besitzt, ein riesiges Imperium bewegen kann. Seine Philosophie des „gewaltlosen zivilen Ungehorsams“ hat Grenzen und Epochen überschritten und wurde an künftige Generationen weitergegeben.
 
-Martin Luther King Jr., der die amerikanische Bürgerrechtsbewegung anführte, sagte: „Christus lieferte den Geist und die Motivation, während Gandhi die Methode lieferte“, und rief eine Bewegung zur Abschaffung der Rassendiskriminierung durch Gewaltlosigkeit ins Leben. Darüber hinaus wurden viele Friedensführer, wie Nelson Mandela, der gegen die Apartheidpolitik Südafrikas kämpfte, und der 14. Dalai Lama von Tibet, zutiefst von Gandhis Philosophie beeinflusst.
+[Martin Luther King Jr.](/de/p/biography-martin-luther-king-jr/), der die amerikanische Bürgerrechtsbewegung anführte, sagte: „Christus lieferte den Geist und die Motivation, während Gandhi die Methode lieferte“, und rief eine Bewegung zur Abschaffung der Rassendiskriminierung durch Gewaltlosigkeit ins Leben. Darüber hinaus wurden viele Friedensführer, wie [Nelson Mandela](/de/p/biography-nelson-mandela/), der gegen die Apartheidpolitik Südafrikas kämpfte, und der 14. Dalai Lama von Tibet, zutiefst von Gandhis Philosophie beeinflusst.
 
 Auch in der modernen Gesellschaft verhallt Gandhis Lehre „Sei du selbst die Veränderung, die du dir für diese Welt wünschst“ angesichts der vielen Herausforderungen, vor denen wir stehen, wie Konflikte, Spaltungen und Umweltprobleme, ohne an Bedeutung zu verlieren.
 

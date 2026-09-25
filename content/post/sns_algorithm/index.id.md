@@ -50,7 +50,7 @@ Algoritma ini membawa "Si A yang tertarik dengan [Rust](https://kenji.blog/id/p/
 
 ### 2.2 Model Rekomendasi Berbasis Pembelajaran Mendalam (DLRM)
 
-Dalam beberapa tahun terakhir, arsitektur berbasis pembelajaran mendalam, yang diwakili oleh Deep Learning Recommendation Model (DLRM), telah dipopulerkan secara luas, terutama oleh Meta (sebelumnya Facebook). DLRM menerima berbagai macam fitur sebagai input, seperti riwayat perilaku pengguna di masa lalu dan metadata item, lalu memprediksi rasio klik-tayang (CTR: Click-Through Rate) dan sejenisnya.
+Dalam beberapa tahun terakhir, arsitektur berbasis pembelajaran mendalam, yang diwakili oleh Deep Learning Recommendation Model (DLRM), telah dipopulerkan secara luas, terutama oleh Meta ([sebelumnya Facebook](/id/p/history-of-meta-facebook/)). DLRM menerima berbagai macam fitur sebagai input, seperti riwayat perilaku pengguna di masa lalu dan metadata item, lalu memprediksi rasio klik-tayang (CTR: Click-Through Rate) dan sejenisnya.
 
 Ciri khas DLRM adalah kemampuannya untuk mengubah fitur kategorikal yang jarang (sparse) (misal: ID pengguna, tagar yang diikuti) menjadi vektor padat (Dense Vector) melalui "tabel penyematan (Embedding Table)", dan menggabungkannya dengan fitur padat bernilai kontinu (misal: jumlah hari sejak akun dibuat, waktu tinggal rata-rata di masa lalu).
 
@@ -146,7 +146,7 @@ Garis pertahanan yang paling pasti adalah memindahkan sumber informasi kita dari
 
 ### 5.2 Membaca Cermat Makalah (Academic Papers) dan Buku Putih (White Papers)
 
-Ketika memilih teknologi inti seperti sistem terdistribusi, basis data, dan arsitektur model pembelajaran mesin, alih-alih membaca rangkuman beberapa baris di SNS, Anda harus langsung membaca makalah yang diterbitkan di ACM, IEEE, atau arXiv, atau buku putih terperinci yang diterbitkan oleh perusahaan (misal: makalah Spanner dari Google, makalah Dynamo dari Amazon).
+Ketika memilih teknologi inti seperti [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/), basis data, dan arsitektur model pembelajaran mesin, alih-alih membaca rangkuman beberapa baris di SNS, Anda harus langsung membaca makalah yang diterbitkan di ACM, IEEE, atau arXiv, atau buku putih terperinci yang diterbitkan oleh perusahaan (misal: makalah Spanner dari Google, makalah Dynamo dari Amazon).
 
 Postingan SNS dioptimalkan untuk "menarik perhatian pembaca", sementara makalah yang ditinjau oleh sejawat dioptimalkan untuk "akurasi faktual dan reproduktifitas". Fungsi evaluasinya benar-benar berbeda.
 

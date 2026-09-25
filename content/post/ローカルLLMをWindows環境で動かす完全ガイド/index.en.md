@@ -15,13 +15,13 @@ As of 2026, the evolution of generative AI and [Large Language Models](https://k
 
 The evolution of the local [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) ecosystem, especially in the Windows environment, is remarkable. Until a few years ago, "Linux for AI development and execution" was common sense, but as of 2026, Windows has transformed into an extremely powerful and accessible AI platform.
 
-In this article, based on the latest technology trends of 2026, we provide a complete guide to building, operating, and optimizing local LLMs in a Windows environment. From easy setup using Ollama for beginners to extreme optimization using llama.cpp for advanced users, and further deep dives into the mathematical approach of VRAM calculation, deep understanding of the architecture, and local fine-tuning, we will explain everything thoroughly with an overwhelming volume.
+In this article, based on the latest technology trends of 2026, we provide a complete guide to building, operating, and optimizing local LLMs in a Windows environment. From easy setup using Ollama [for beginners](/en/p/leather-goods%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/) to extreme optimization using llama.cpp for advanced users, and further deep dives into the mathematical approach of VRAM calculation, deep understanding of the architecture, and local fine-tuning, we will explain everything thoroughly with an overwhelming volume.
 
 ## 1.1 Technology Trends Surrounding Local LLMs in 2026
 
 The major trends shaping the current local LLM ecosystem are as follows:
 
-1. **Complete Popularization of the GGUF Format**: GGUF (GPT-Generated Unified Format), which integrates metadata and tensors into a single file, has completely become the de facto standard. With this, simply downloading a single file from Hugging Face makes it executable in any environment.
+1. **Complete Popularization of the [GGUF](/en/p/llama-cpp-quantization-gguf/) Format**: [GGUF](/en/p/llama-cpp-quantization-gguf/) (GPT-Generated Unified Format), which integrates metadata and tensors into a single file, has completely become the de facto standard. With this, simply downloading a single file from Hugging Face makes it executable in any environment.
 2. **Democratization of the MoE (Mixture of Experts) Architecture**: Many small but high-performance MoE models have been released. By activating only a portion of the experts during inference, they achieve performance comparable to giant models while keeping the computational load on consumer PCs low.
 3. **Advanced Abstraction and Optimization of Inference Engines**: Tools like Ollama, LM Studio, and AnythingLLM have been refined so that users no longer need to be aware of complex dependencies like CUDA driver installations. Also, the native Windows support for FlashAttention 3 has dramatically improved inference speed.
 4. **Utilization of NPUs and the Rise of Windows Copilot+ PCs**: Even on laptops without GPUs, the technology to run small LLMs (SLM: Small Language Models) with low power consumption using the built-in NPU (Neural Processing Unit) has entered the practical stage.
@@ -59,7 +59,7 @@ wsl --install -d Ubuntu-24.04
 wsl --update
 ```
 
-After installation, run `nvidia-smi` inside the WSL2 terminal, and if the GPU is recognized correctly, it is a success.
+After installation, run `nvidia-smi` inside the WSL2 [terminal](/en/p/terminal-efficiency-powershell-bash-shortcuts/), and if the GPU is recognized correctly, it is a success.
 
 ---
 
@@ -174,7 +174,7 @@ As of 2026, the most user-friendly tool is "Ollama". It provides an intuitive [D
 ollama run llama3:8b
 ```
 
-The model will be downloaded on the first run. Once complete, you can interact with it directly in the terminal.
+The model will be downloaded on the first run. Once complete, you can interact with it directly in the [terminal](/en/p/terminal-efficiency-powershell-bash-shortcuts/).
 
 ## 5.2 Creating a Custom AI with a Modelfile
 
@@ -314,7 +314,7 @@ Common problems faced and their solutions.
 
 # 10. Conclusion and Future Prospects
 
-In 2026, building a local [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) in a Windows environment is no longer the privilege of a limited number of engineers. With the de facto standardization of the GGUF format, the emergence of refined ecosystems like Ollama and LM Studio, and hardware optimizations led by FlashAttention, anyone can easily obtain an enterprise-grade AI environment.
+In 2026, building a local [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) in a Windows environment is no longer the privilege of a limited number of engineers. With the de facto standardization of the [GGUF](/en/p/llama-cpp-quantization-gguf/) format, the emergence of refined ecosystems like Ollama and LM Studio, and hardware optimizations led by FlashAttention, anyone can easily obtain an enterprise-grade AI environment.
 
 Please make use of the following points explained in this article:
 

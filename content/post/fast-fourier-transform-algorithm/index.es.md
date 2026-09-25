@@ -48,7 +48,7 @@ Si intentamos calcular esta DFT de forma ingenua, se necesitarán $N$ multiplica
 
 ## 3. Derivación matemática del algoritmo FFT: Tipo Cooley-Tukey
 
-El algoritmo redescubierto en 1965 por James Cooley y John Tukey (se dice que Carl Friedrich Gauss ya había descubierto un método similar en 1805) es el algoritmo FFT más utilizado en la actualidad. Aquí derivaremos la FFT de decimación en el tiempo (Decimation-in-Time, DIT) de base 2 para el caso en que el número de datos $N$ sea una potencia de 2 ($N = 2^m$).
+El algoritmo redescubierto en 1965 por James Cooley y John Tukey (se dice que [Carl Friedrich Gauss](/es/p/gauss/) ya había descubierto un método similar en 1805) es el algoritmo FFT más utilizado en la actualidad. Aquí derivaremos la FFT de decimación en el tiempo (Decimation-in-Time, DIT) de base 2 para el caso en que el número de datos $N$ sea una potencia de 2 ($N = 2^m$).
 
 ### División en pares e impares (Divide y vencerás)
 

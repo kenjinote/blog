@@ -9,7 +9,7 @@ slug: "biography-georg-wilhelm-friedrich-hegel"
 description: "Dans l'histoire de la philosophie occidentale, le penseur qui a commencé avec Emmanuel Kant et atteint le sommet de l'idéalisme allemand au XIXe siècle est"
 ---
 
-Dans l'histoire de la philosophie occidentale, le penseur qui a commencé avec Emmanuel Kant et atteint le sommet de l'idéalisme allemand au XIXe siècle est Georg Wilhelm Friedrich Hegel (1770-1831). Son système de pensée vaste et complexe, caractérisé par la "dialectique" et l'"Esprit Absolu", a exercé une influence extrêmement large non seulement sur son époque, mais aussi sur Karl Marx, l'existentialisme, et jusqu'aux sciences politiques et historiques contemporaines. Dans cet article, nous retracerons la vie de Hegel tout en approfondissant le cœur de sa philosophie et son influence sur la postérité.
+Dans l'histoire de la philosophie occidentale, le penseur qui a commencé avec [Emmanuel Kant](/fr/p/biography-immanuel-kant/) et atteint le sommet de l'idéalisme allemand au XIXe siècle est Georg Wilhelm Friedrich Hegel (1770-1831). Son système de pensée vaste et complexe, caractérisé par la "dialectique" et l'"Esprit Absolu", a exercé une influence extrêmement large non seulement sur son époque, mais aussi sur [Karl Marx](/fr/p/biography-karl-marx/), l'existentialisme, et jusqu'aux sciences politiques et historiques contemporaines. Dans cet article, nous retracerons la vie de Hegel tout en approfondissant le cœur de sa philosophie et son influence sur la postérité.
 
 ## De l'étudiant brillant du séminaire au grand philosophe
 
@@ -23,7 +23,7 @@ En 1806, au milieu du chaos de l'invasion de l'armée de Napoléon à Iéna, il 
 
 Le mot-clé le plus important pour comprendre la philosophie de Hegel est la "dialectique" (Dialektik). La dialectique désigne la logique du mouvement par lequel les choses se développent vers un état supérieur à travers les oppositions et les contradictions.
 
-Un certain état (thèse) engendre son état opposé (antithèse) en raison de ses contradictions internes, et après avoir traversé une opposition et une lutte, les deux sont intégrés à un niveau supérieur tout en conservant les éléments de chacun (synthèse). Hegel considérait que ce processus de "dépassement" (Aufheben) était le mécanisme même par lequel l'histoire, le monde et la connaissance humaine se développent.
+Un certain état (thèse) engendre son état opposé (antithèse) en raison de ses contradictions internes, et après avoir traversé une opposition et une lutte, les deux sont intégrés à un niveau supérieur tout en conservant les éléments de chacun (synthèse). Hegel considérait que ce processus de "[dépassement](/fr/p/hegel%E3%81%AEdialectique/)" (Aufheben) était le mécanisme même par lequel l'histoire, le monde et la connaissance humaine se développent.
 
 ```mermaid
 graph TD
@@ -43,7 +43,7 @@ En 1831, infecté par le choléra qui faisait rage à Berlin (ou, selon certains
 
 L'école hégélienne s'est scindée entre la "droite hégélienne" (les vieux hégéliens), qui interprétait son système de manière conservatrice et affirmait l'État prussien, et la "gauche hégélienne" (les jeunes hégéliens), qui interprétait radicalement la logique du développement dialectique et critiquait l'État et la religion de son époque.
 
-L'influence de ces derniers, en particulier, a considérablement fait bouger l'histoire. Après la critique de la religion par Ludwig Feuerbach, Karl Marx et Friedrich Engels sont apparus. Marx a critiqué la dialectique idéaliste de Hegel comme étant "remise sur la tête", mais en a hérité la logique de développement elle-même, la renversant et la développant en "matérialisme historique". En d'autres termes, il pensait que ce n'était pas l'"Esprit" qui faisait avancer l'histoire, mais les contradictions de la "substructure économique" matérielle.
+L'influence de ces derniers, en particulier, a considérablement fait bouger l'histoire. Après la critique de la religion par Ludwig Feuerbach, [Karl Marx](/fr/p/biography-karl-marx/) et Friedrich Engels sont apparus. Marx a critiqué la dialectique idéaliste de Hegel comme étant "remise sur la tête", mais en a hérité la logique de développement elle-même, la renversant et la développant en "matérialisme historique". En d'autres termes, il pensait que ce n'était pas l'"Esprit" qui faisait avancer l'histoire, mais les contradictions de la "substructure économique" matérielle.
 
 ```mermaid
 graph TD

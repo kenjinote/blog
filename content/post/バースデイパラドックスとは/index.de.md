@@ -24,7 +24,7 @@ Aber es sind **tatsächlich über 50 %.**
 
 ## Warum passiert das?
 
-Dieses Phänomen wird als "Geburtstagsparadoxon" bezeichnet.
+Dieses Phänomen wird als "[Geburtstagsparadoxon](/de/p/birthday-paradox/)" bezeichnet.
 Der Name lautet "Paradoxon", aber es gibt einen fundierten mathematischen Grund.
 
 Wenn die Anzahl der Personen "n" ist, wird **die Wahrscheinlichkeit, dass niemand denselben Geburtstag hat** , durch die folgende Formel berechnet:
@@ -54,7 +54,7 @@ Dies lässt sich durchaus auch auf Schulklassen oder Besprechungen am Arbeitspla
 
 ## Zusammenfassung: Die Diskrepanz zwischen Intuition und Mathematik ist faszinierend
 
-Das "Geburtstagsparadoxon" ist ein interessantes Beispiel dafür, wie unsere Intuition und die tatsächliche mathematische Wahrscheinlichkeit voneinander abweichen.
+Das "[Geburtstagsparadoxon](/de/p/birthday-paradox/)" ist ein interessantes Beispiel dafür, wie unsere Intuition und die tatsächliche mathematische Wahrscheinlichkeit voneinander abweichen.
 Solche Dinge zu wissen, kann eine nette Unterhaltung oder ein Quiz auflockern!
 
 ---

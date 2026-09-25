@@ -22,20 +22,20 @@ Si el "dato digital de 10.000 yenes" que poseo pudiera copiarse y enviarse tanto
 
 Hasta ahora, la única forma de evitar este problema del doble gasto era que "**un administrador central de confianza para todos, como un banco o una compañía de tarjetas de crédito, gestionara estrictamente los saldos de las cuentas (el libro mayor) de todos**".
 
-Sin embargo, en 2008, un artículo publicado por una figura (o grupo) misteriosa llamada Satoshi Nakamoto dio a luz a la primera "moneda digital en la historia que es absolutamente imposible de falsificar o gastar dos veces, incluso sin un administrador central". Eso es **Bitcoin**, y la tecnología subyacente que lo hace posible es **Blockchain**.
+Sin embargo, en 2008, un artículo publicado por una figura (o grupo) misteriosa llamada Satoshi Nakamoto dio a luz a la primera "moneda digital en la historia que es absolutamente imposible de falsificar o gastar dos veces, incluso sin un administrador central". Eso es **Bitcoin**, y la tecnología subyacente que lo hace posible es **[Blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/)**.
 
 ## 2. ¿Qué es Blockchain? (Libro mayor distribuido)
 
-En pocas palabras, blockchain es "**un sistema en el que todos los participantes en todo el mundo comparten una copia del mismo registro de transacciones (libro mayor) y se supervisan mutuamente**".
+En pocas palabras, [blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/) es "**un sistema en el que todos los participantes en todo el mundo comparten una copia del mismo registro de transacciones (libro mayor) y se supervisan mutuamente**".
 
 Cuando alguien realiza una transacción como "enviar 1 bitcoin de la persona A a la persona B", esa información se distribuye a las computadoras (nodos) de todo el mundo a través de una red P2P.
-Un conjunto de transacciones que ocurren en todo el mundo en aproximadamente 10 minutos se empaqueta en una caja (**bloque**). Y esa caja se guarda vinculada detrás de las cajas anteriores como una "cadena" (**chain**). De ahí proviene el nombre "blockchain".
+Un conjunto de transacciones que ocurren en todo el mundo en aproximadamente 10 minutos se empaqueta en una caja (**bloque**). Y esa caja se guarda vinculada detrás de las cajas anteriores como una "cadena" (**chain**). De ahí proviene el nombre "[blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/)".
 
 Una vez que el contenido de un bloque (registros de transacciones pasadas) está vinculado a la cadena, es absolutamente imposible alterarlo posteriormente. ¿Por qué es posible tal cosa?
 
 ## 3. La "función hash criptográfica" que imposibilita la alteración
 
-La tecnología criptográfica que respalda la "naturaleza absolutamente inalterable" de la blockchain es la **función hash (como SHA-256)**.
+La tecnología criptográfica que respalda la "naturaleza absolutamente inalterable" de la [blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/) es la **función hash (como SHA-256)**.
 
 Una función hash es una "calculadora que siempre produce una cadena aleatoria de longitud fija (valor hash) sin importar la longitud de los datos que se introduzcan".
 Como característica, tiene la propiedad de que "si los datos originales cambian aunque sea en un solo carácter, el valor hash de salida cambia drásticamente a algo completamente diferente". Además, es imposible calcular de manera inversa los datos originales a partir del valor hash de salida (función unidireccional).
@@ -73,6 +73,6 @@ En lugar de gastar cantidades masivas de dinero (costos de electricidad) para co
 
 ## 6. Resumen: Hacia un mundo Trustless (sin necesidad de confianza)
 
-Blockchain es un invento revolucionario donde "el consenso correcto se forma como un sistema completo a través del poder de las matemáticas, la criptografía y los incentivos económicos, sin necesidad de confiar en alguien en particular (Trustless)".
+[Blockchain](/es/p/blockchain-technology-smart-contract-distributed-ledger/) es un invento revolucionario donde "el consenso correcto se forma como un sistema completo a través del poder de las matemáticas, la criptografía y los incentivos económicos, sin necesidad de confiar en alguien en particular (Trustless)".
 
 Bitcoin es solo su primera aplicación. Hoy en día, el mecanismo de este "libro mayor distribuido que es absolutamente inalterable" se está aplicando para formar la base de una innovación masiva para construir la próxima forma de internet (Web3), incluyendo contratos inteligentes (ejecución automática de contratos), NFT (prueba de propiedad digital), además de finanzas descentralizadas (DeFi) y nuevas formas de organización (DAO).

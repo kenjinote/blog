@@ -160,7 +160,7 @@ Utilizando esta propiedad, el número de formas de organizar elementos o el núm
 En la informática moderna y la programación competitiva, las funciones generadoras se implementan como **series de potencias formales** (Formal Power Series, FPS).
 En FPS, no nos importa si sustituir un valor numérico específico en $x$ converge (propiedades analíticas); el enfoque se centra simplemente en manipular la "sucesión de coeficientes" algebraicamente como polinomios.
 
-Al usar la Transformada Rápida de Fourier (FFT) o la Transformada Teórica de Números (NTT), el producto de dos polinomios de grado $N$ (es decir, la convolución de sucesiones de longitud $N$) se puede encontrar con una complejidad computacional de $\mathcal{O}(N \log N)$. Esto permite que los cálculos que tomarían $\mathcal{O}(N^2)$ con programación dinámica se aceleren drásticamente.
+Al usar la [Transformada Rápida de Fourier (FFT)](/es/p/fast-fourier-transform-algorithm/) o la Transformada Teórica de Números (NTT), el producto de dos polinomios de grado $N$ (es decir, la convolución de sucesiones de longitud $N$) se puede encontrar con una complejidad computacional de $\mathcal{O}(N \log N)$. Esto permite que los cálculos que tomarían $\mathcal{O}(N^2)$ con programación dinámica se aceleren drásticamente.
 
 ## 6. Conclusión
 

@@ -30,7 +30,7 @@ $$A = U \Sigma V^T \quad (\text{행렬의 특이값 분해})$$
 
 정방행렬에 대해서는 고유값 분해 $A = P \[Lambda](https://kenji.blog/ko/p/serverless-architecture-aws-lambda-cold-start/) P^{-1}$가 잘 알려져 있습니다. 하지만 고유값 분해는 다음과 같은 한계가 있습니다.
 - 행렬이 정방행렬($n \times n$)이어야만 적용할 수 있습니다.
-- 정방행렬이라 할지라도 항상 대각화가 가능한 것은 아닙니다.
+- 정방행렬이라 할지라도 항상 [대각화](/ko/p/diagonalization-and-jordan-normal-form/)가 가능한 것은 아닙니다.
 
 반면, **특이값 분해** 는 정방행렬이 아닌 $m \times n$의 임의의 행렬에 대해서도 항상 존재합니다. 이것이 데이터 분석에서 SVD가 매우 유용한 이유 중 하나입니다.
 

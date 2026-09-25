@@ -40,7 +40,7 @@ Namun, saat memasuki tahun 1930-an, Nazi (Partai Pekerja Sosialis Nasional Jerma
 
 Ketika lingkungan penelitian dan kehidupan di Jerman di bawah rezim Nazi memburuk secara drastis, dan dengan keamanan pribadinya sendiri yang berisiko, Siegel akhirnya membuat keputusan untuk meninggalkan tanah airnya. Pada tahun 1940, tak lama setelah pecahnya Perang Dunia II, ia berhasil melarikan diri ke Amerika Serikat melalui rute berbahaya melewati Denmark dan Norwegia.
 
-Di Amerika Serikat, ia disambut di Institute for Advanced Study (IAS) di Princeton, New Jersey. Pada saat itu, IAS telah menjadi tempat perlindungan bagi pemikir-pemikir hebat yang melarikan diri dari perang di Eropa, dan Siegel menikmati kehidupan penelitian yang memuaskan bersama tokoh-tokoh seperti Albert Einstein, John von Neumann, dan Hermann Weyl. Selama tahun-tahunnya di Amerika, penelitian Siegel meluas melampaui teori bilangan; ia secara berturut-turut menghasilkan hasil yang sangat penting di bidang mekanika benda langit dan teori fungsi analitik.
+Di Amerika Serikat, ia disambut di Institute for Advanced Study (IAS) di Princeton, New Jersey. Pada saat itu, IAS telah menjadi tempat perlindungan bagi pemikir-pemikir hebat yang melarikan diri dari perang di Eropa, dan Siegel menikmati kehidupan penelitian yang memuaskan bersama tokoh-tokoh seperti Albert Einstein, [John von Neumann](/id/p/von-neumann/), dan Hermann Weyl. Selama tahun-tahunnya di Amerika, penelitian Siegel meluas melampaui teori bilangan; ia secara berturut-turut menghasilkan hasil yang sangat penting di bidang mekanika benda langit dan teori fungsi analitik.
 
 ### 2.4 Kembali ke Göttingen dan Tahun-tahun Terakhir
 
@@ -68,7 +68,7 @@ Hasil ini merupakan terobosan mengenai keterhinggaan solusi persamaan Diophantin
 
 ### 3.2 Nol Siegel (Siegel Zero)
 
-Dalam teori bilangan analitik, distribusi nol dari fungsi $L$ Dirichlet $L(s, \chi)$ sangat penting untuk ekstensi alami dari teorema bilangan prima dan teorema tentang barisan aritmatika. Menurut Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) yang Diperumum (GRH), semua nol pada pita kritis dengan bagian real antara $0$ dan $1$ seharusnya terletak pada garis di mana bagian realnya adalah $1/2$.
+Dalam teori bilangan analitik, distribusi nol dari fungsi $L$ Dirichlet $L(s, \chi)$ sangat penting untuk ekstensi alami dari [teorema bilangan prima](/id/p/prime-number-theorem/) dan teorema tentang barisan aritmatika. Menurut Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) yang Diperumum (GRH), semua nol pada pita kritis dengan bagian real antara $0$ dan $1$ seharusnya terletak pada garis di mana bagian realnya adalah $1/2$.
 
 Namun, untuk karakter real (dari suatu lapangan kuadratik real) $\chi$, kemungkinan adanya nol real dengan bagian real yang sangat dekat ke $1$ belum dapat disingkirkan oleh matematika saat ini. Nol pengecualian hipotetis semacam itu disebut **nol Siegel** (Siegel zero) atau nol eksepsional.
 

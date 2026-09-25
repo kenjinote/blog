@@ -93,7 +93,7 @@ This simple structure allows for fast decoding and validation processes, enablin
 
 ## 2.3 Memory Model (Linear Memory)
 
-Memory manipulation using pointers is frequent in C and [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/). To achieve this, WebAssembly adopts the concept of **Linear Memory**.
+Memory manipulation using [pointers](/en/p/c-language-pointers-memory-management-stack-heap/) is frequent in C and [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/). To achieve this, WebAssembly adopts the concept of **Linear Memory**.
 
 Linear memory is a contiguous byte array that can be accessed from a WebAssembly instance. From JavaScript, it appears as an `ArrayBuffer` or `SharedArrayBuffer`. [Pointer](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/)s within Wasm are simply indices (integer values) of this array.
 

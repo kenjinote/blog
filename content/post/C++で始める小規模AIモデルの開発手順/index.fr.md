@@ -12,7 +12,7 @@ description: "Nous expliquons en détail la procédure de développement et l'ar
 
 # [Procédure de développement de petits modèles d'IA (TinyLLaMA, etc.) avec C++](https://kenji.blog/fr/p/cpp-small-ai-model-tinyllama-dev-guide/)
 
-Ces dernières années, l'intérêt pour l'exécution locale de grands modèles de langage ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)) a augmenté rapidement. En particulier, les petits modèles tels que TinyLLaMA (1,1B paramètres) peuvent effectuer des inférences à une vitesse pratique même sur des appareils périphériques aux ressources limitées ou des PC portables standards (y compris les environnements Windows). Bien que le développement utilisant Python et PyTorch soit courant, lorsqu'il s'agit d'atteindre des performances et une efficacité mémoire ultimes, la combinaison du C++ et de « ggml », une bibliothèque de tenseurs basée sur le langage C, est devenue la norme de facto.
+Ces dernières années, l'intérêt pour l'exécution locale de [grands modèles de langage](/fr/p/large-language-models-llm-transformer-prompt-engineering/) ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)) a augmenté rapidement. En particulier, les petits modèles tels que TinyLLaMA (1,1B paramètres) peuvent effectuer des inférences à une vitesse pratique même sur des appareils périphériques aux ressources limitées ou des PC portables standards (y compris les environnements Windows). Bien que le développement utilisant Python et PyTorch soit courant, lorsqu'il s'agit d'atteindre des performances et une efficacité mémoire ultimes, la combinaison du C++ et de « ggml », une bibliothèque de tenseurs basée sur le langage C, est devenue la norme de facto.
 
 Cet article explique en détail la procédure de développement pour construire un moteur d'inférence à partir de zéro (ou comprendre en profondeur l'architecture interne du llama.cpp existant) afin de charger TinyLLaMA et de générer du texte en utilisant C++.
 
@@ -64,7 +64,7 @@ L'utilisation de mmap permet de mapper le contenu d'un fichier directement dans 
 * **Zéro copie (Zero-copy)** : Les données sont lues directement depuis le disque vers le cache de pages du noyau, évitant ainsi des copies supplémentaires vers l'espace utilisateur.
 * **Chargement à la demande (Page Fault)** : Au moment précis où le processeur accède à cette adresse mémoire, un défaut de page (page fault) se produit, et seul le morceau (chunk) requis (généralement 4 Ko) est chargé dans la mémoire physique.
 
-Dans l'environnement Windows, au lieu du `mmap` de POSIX, on utilise les API Win32 `CreateFileMapping` et `MapViewOfFile`.
+Dans l'environnement Windows, au lieu du `mmap` de POSIX, on utilise les API [Win32](/fr/p/modern-cpp-win32-api-safe-handling/) `CreateFileMapping` et `MapViewOfFile`.
 
 ```mermaid
 sequenceDiagram
@@ -81,9 +81,9 @@ sequenceDiagram
 
 ### 3.2 Structure binaire du format GGUF
 
-Converti à partir de formats tels que `.safetensors` de Hugging Face, le **GGUF (GPT-Generated Unified Format)** est le format ultime pour l'inférence. Il possède la disposition binaire stricte suivante.
+Converti à partir de formats tels que `.safetensors` de Hugging Face, le **[GGUF](/fr/p/llama-cpp-quantization-gguf/) (GPT-Generated Unified Format)** est le format ultime pour l'inférence. Il possède la disposition binaire stricte suivante.
 
-1. **Octets magiques (Magic Bytes)** : `0x46554747` (GGUF).
+1. **Octets magiques (Magic Bytes)** : `0x46554747` ([GGUF](/fr/p/llama-cpp-quantization-gguf/)).
 2. **Version** : Numéro de version du format.
 3. **Nombre de tenseurs et de métadonnées** : Nombre de tenseurs et de paires clé-valeur de métadonnées.
 4. **Métadonnées (Paires Clé-Valeur)** : Clés avec préfixe de longueur de chaîne, et valeurs typées.

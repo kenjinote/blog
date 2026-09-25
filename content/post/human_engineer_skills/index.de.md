@@ -201,7 +201,7 @@ Im KI-Zeitalter entwickelt sich der Ingenieur vom „Code-Schreibkraft (Typist)�
 
 ## 7. Fazit: Die Welle reiten, anstatt die Evolution abzulehnen
 
-Das „Zeitalter der KI-Codegenerierung“ ist keine Bedrohung für Ingenieure, sondern die größte Chance der Geschichte. So wie der Übergang von Assemblersprache zu C und die Entwicklung von der Speicherverwaltung mit Zeigern zur [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/) in [Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) stattfanden, ist die Codegenerierung durch KI lediglich ein weiterer Schritt, bei dem „das Abstraktionsniveau um eine Stufe gestiegen ist“.
+Das „Zeitalter der KI-Codegenerierung“ ist keine Bedrohung [für Ingenieure](/de/p/prompt-engineering-for-engineers/), sondern die größte Chance der Geschichte. So wie der Übergang von Assemblersprache zu C und die Entwicklung von der Speicherverwaltung mit Zeigern zur [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/) in [Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) stattfanden, ist die Codegenerierung durch KI lediglich ein weiterer Schritt, bei dem „das Abstraktionsniveau um eine Stufe gestiegen ist“.
 
 Zukünftige Ingenieure sollten sich nicht über kleinere Spezifikationen einer bestimmten Programmiersprache oder Framework-Updates den Kopf zerbrechen, sondern ihre Ressourcen auf wichtigere, menschlichere Problemlösungen konzentrieren, wie: **„Was ist das Geschäftsproblem?“ **, ** „Wie sollten Daten aufgeteilt und verknüpft werden?“ ** und ** „Wie kann das System bei einem Ausfall schnell wiederhergestellt werden?“**
 

@@ -11,11 +11,11 @@ tags: ["RAG", "Vector DB", "Embeddings", "Python", "Local AI"]
 
 # 들어가며
 
-최근 대규모 언어 모델([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 진화는 눈부시며, ChatGPT와 Claude 등을 필두로 많은 AI가 우리의 생활과 업무에 스며들고 있습니다. 하지만 일반적인 LLM에는 명확한 약점이 존재합니다. 바로 '학습 시점의 공개 정보'밖에 모른다는 점입니다. 사내 규정, 개인적인 메모, 미공개 프로젝트 자료와 같은 '비공개 문서'와 관련된 질문에는 당연히 대답할 수 없습니다. 무리하게 대답을 유도하면 사실과 다른 그럴듯한 거짓말(환각, Hallucination)을 생성할 위험이 커집니다.
+최근 [대규모 언어 모델](/ko/p/large-language-models-llm-transformer-prompt-engineering/)([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 진화는 눈부시며, ChatGPT와 Claude 등을 필두로 많은 AI가 우리의 생활과 업무에 스며들고 있습니다. 하지만 일반적인 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)에는 명확한 약점이 존재합니다. 바로 '학습 시점의 공개 정보'밖에 모른다는 점입니다. 사내 규정, 개인적인 메모, 미공개 프로젝트 자료와 같은 '비공개 문서'와 관련된 질문에는 당연히 대답할 수 없습니다. 무리하게 대답을 유도하면 사실과 다른 그럴듯한 거짓말(환각, Hallucination)을 생성할 위험이 커집니다.
 
-그래서 현재 전 세계적으로 폭발적으로 보급되고 있는 것이 **RAG(Retrieval-Augmented Generation: 검색 증강 생성)** 라는 기술 아키텍처입니다. RAG를 사용하면 LLM에 독자적인 지식을 외부 데이터베이스로부터 동적으로 제공하고, 이를 바탕으로 정확하고 근거 있는 답변을 생성하게 할 수 있습니다.
+그래서 현재 전 세계적으로 폭발적으로 보급되고 있는 것이 **RAG(Retrieval-Augmented Generation: 검색 증강 생성)** 라는 기술 아키텍처입니다. RAG를 사용하면 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)에 독자적인 지식을 외부 데이터베이스로부터 동적으로 제공하고, 이를 바탕으로 정확하고 근거 있는 답변을 생성하게 할 수 있습니다.
 
-또한, 엔터프라이즈 영역이나 개인의 기밀 정보를 다룰 경우, OpenAI와 같은 클라우드 기반 API에 데이터를 전송하는 것은 보안 정책상 허용되지 않는 경우가 많습니다. 여기서 요구되는 것이 **로컬 AI**(자신의 PC나 온프레미스 서버에서 독립적으로 동작하는 LLM)와 결합한 '로컬 RAG'의 구축입니다.
+또한, 엔터프라이즈 영역이나 개인의 기밀 정보를 다룰 경우, OpenAI와 같은 클라우드 기반 API에 데이터를 전송하는 것은 보안 정책상 허용되지 않는 경우가 많습니다. 여기서 요구되는 것이 **로컬 AI**(자신의 PC나 온프레미스 서버에서 독립적으로 동작하는 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/))와 결합한 '로컬 RAG'의 구축입니다.
 
 이 글에서는 RAG의 기초 이론부터 Python을 사용한 로컬 RAG의 구체적인 구현 방법, 수학적 배경(벡터 검색의 원리), 그리고 시스템을 실제 운영 환경에서 가동하기 위한 고급 기술까지 철저하게 해설합니다.
 
@@ -108,7 +108,7 @@ $$ \text{Cosine Similarity}(\mathbf{A}, \mathbf{B}) = \cos(\theta) = \frac{\math
    - 모델: `intfloat/multilingual-e5-large` 또는 `BAAI/bge-m3`. 로컬에서 구동할 경우, Hugging Face에서 다운로드하여 Sentence-[Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)s로 실행하는 것이 일반적입니다.
 3. **벡터 데이터베이스 (Vector DB)**
    - `ChromaDB`: Python 기반으로 설정이 매우 간단함. 로컬 개발에 최적.
-   - `FAISS`: Meta가 개발한 고속 벡터 검색 라이브러리.
+   - `FAISS`: [Meta](/ko/p/history-of-meta-facebook/)가 개발한 고속 벡터 검색 라이브러리.
    - `Qdrant` / `Milvus`: 보다 대규모이며 프로덕션 환경용.
 4. **오케스트레이션 프레임워크**
    - `LangChain`: 컴포넌트들을 연결(Chain)하기 위한 사실상의 표준.
@@ -254,7 +254,7 @@ if __name__ == "__main__":
 2. **재평가 (Re-ranking)**: Cross-Encoder라고 불리는 다른 더 무거운 머신러닝 모델(예: `bge-reranker` 등)을 사용하여, 사용자의 쿼리와 가져온 청크의 쌍을 입력해 의미적 적합도 점수를 다시 계산합니다.
 3. **선별**: 점수가 높은 상위 3~5건만을 최종적인 컨텍스트로서 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 프롬프트에 전달합니다.
 
-이 기법을 통해 무관한 노이즈 정보가 LLM에 전달되는 것을 방지하고 답변의 정확도(Precision)를 대폭 높일 수 있습니다.
+이 기법을 통해 무관한 노이즈 정보가 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)에 전달되는 것을 방지하고 답변의 정확도(Precision)를 대폭 높일 수 있습니다.
 
 ```mermaid
 graph LR
@@ -276,9 +276,9 @@ graph LR
 로컬 환경에서 RAG를 구축하고 운영할 때는 특유의 장벽이 존재합니다.
 
 - **VRAM(비디오 메모리) 고갈**:
-  로컬 LLM을 실용적인 속도(1초에 수십 토큰)로 구동하려면 GPU의 VRAM에 모델을 올려야 합니다. 8B 클래스의 모델을 fp16(16비트 부동소수점)으로 구동하려면 약 16GB의 VRAM이 필요하지만, **양자화(Quantization)** 기술(GGUF나 AWQ 형식 등, 4bit나 8bit로 압축하는 기술)을 사용하면 8GB의 VRAM(일반적인 게이밍 PC 등)에서도 충분히 고속으로 동작시킬 수 있습니다. Llama.cpp나 Ollama는 기본적으로 이러한 양자화 포맷을 지원합니다.
+  로컬 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 실용적인 속도(1초에 수십 토큰)로 구동하려면 GPU의 VRAM에 모델을 올려야 합니다. 8B 클래스의 모델을 fp16(16비트 부동소수점)으로 구동하려면 약 16GB의 VRAM이 필요하지만, **양자화(Quantization)** 기술([GGUF](/ko/p/llama-cpp-quantization-gguf/)나 AWQ 형식 등, 4bit나 8bit로 압축하는 기술)을 사용하면 8GB의 VRAM(일반적인 게이밍 PC 등)에서도 충분히 고속으로 동작시킬 수 있습니다. Llama.cpp나 Ollama는 기본적으로 이러한 양자화 포맷을 지원합니다.
 - **컨텍스트 윈도우의 제한**:
-  검색하여 가져온 컨텍스트의 양이 너무 많으면 LLM의 입력 상한(토큰 제한)을 초과해 버리거나, 모델이 정보의 중간 부분을 잊어버리는(Lost in the middle 현상) 경우가 있습니다. 추출할 청크 수의 조정이나 앞서 언급한 리랭킹 기술을 통한 엄선이 필수적입니다.
+  검색하여 가져온 컨텍스트의 양이 너무 많으면 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 입력 상한(토큰 제한)을 초과해 버리거나, 모델이 정보의 중간 부분을 잊어버리는(Lost in the middle 현상) 경우가 있습니다. 추출할 청크 수의 조정이나 앞서 언급한 리랭킹 기술을 통한 엄선이 필수적입니다.
 - **데이터 최신성 관리**:
   소스 문서가 업데이트된 경우, 벡터 데이터베이스 내의 해당 문서 벡터도 업데이트 및 삭제(CRUD 작업)할 필요가 있습니다. ChromaDB에서는 문서 ID 기반의 업데이트를 지원하므로, 파일의 해시값을 관리하여 변경 사항만을 동기화하는 배치 처리를 구성하는 것이 실용적입니다.
 

@@ -20,7 +20,7 @@ In the field of geometry in mathematics, the theme of finding the area of a shap
 
 However, if all the vertices of a polygon lie on **lattice points** (points where both the $x$ and $y$ coordinates are integers), there is a magical formula that allows you to calculate the area using only extremely simple arithmetic operations, without measuring lengths or performing complex multiplications or square root calculations. That is **[Pick's Theorem](https://kenji.blog/en/p/picks-theorem/)**, which we will explain in detail this time.
 
-Pick's theorem is not just a "convenient and mysterious formula for easily finding area", but it has a very deep background that connects to topology, graph theory, and algebraic geometry in modern mathematics. In this article, we will delve deeply into Pick's theorem from multiple angles, from how to use it basically, to the mathematical proof of why such a simple formula holds, its historical background, and even the limitations of the theorem and the possibility of its extension to 3D.
+Pick's theorem is not just a "convenient and mysterious formula for easily finding area", but it has a very deep background that connects to topology, [graph theory](/en/p/graph-theory-dijkstra-a-star/), and algebraic geometry in modern mathematics. In this article, we will delve deeply into Pick's theorem from multiple angles, from how to use it basically, to the mathematical proof of why such a simple formula holds, its historical background, and even the limitations of the theorem and the possibility of its extension to 3D.
 
 ## 2. Georg Alexander Pick and Historical Background
 
@@ -115,7 +115,7 @@ However, if you use Pick's theorem, you can instantly calculate the exact area j
 
 ## 5. Proof Using Euler's Polyhedral Formula
 
-Why does such a magical formula hold? There are several ways to prove Pick's theorem, but here we will introduce an elegant proof idea using a famous theorem in graph theory, **Euler's Polyhedral Formula**.
+Why does such a magical formula hold? There are several ways to prove Pick's theorem, but here we will introduce an elegant proof idea using a famous theorem in [graph theory](/en/p/graph-theory-dijkstra-a-star/), **Euler's Polyhedral Formula**.
 
 According to Euler's theorem, for a connected graph (network) drawn on a plane, if the number of vertices is $V$, the number of edges is $E$, and the number of faces is $F$, the following relational expression holds:
 

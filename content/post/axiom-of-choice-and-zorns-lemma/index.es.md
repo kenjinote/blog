@@ -153,7 +153,7 @@ $$
 
 ### ¿Por qué fue aceptado ZFC?
 
-La razón es sencilla. Si se rechaza el axioma de elección (adoptando solo el sistema axiomático ZF), los resultados matemáticos que se pierden son demasiado significativos. Las bases de todos los espacios vectoriales, la compacidad de los espacios producto en topología y muchas propiedades útiles de la medida de Lebesgue se derrumbarían. Incluso al «precio» de la paradoja de Banach-Tarski, el axioma de elección fue aceptado para mantener el sistema rico y hermoso de las matemáticas abstractas modernas.
+La razón es sencilla. Si se rechaza el axioma de elección (adoptando solo el sistema axiomático ZF), los resultados matemáticos que se pierden son demasiado significativos. Las bases de todos los espacios vectoriales, la compacidad de los espacios producto en topología y muchas propiedades útiles de la medida de Lebesgue se derrumbarían. Incluso al «precio» de [la paradoja de Banach-Tarski](/es/p/banach-tarski-paradox/), el axioma de elección fue aceptado para mantener el sistema rico y hermoso de las matemáticas abstractas modernas.
 
 ## 7. Conclusión: un puente sobre el abismo del infinito
 

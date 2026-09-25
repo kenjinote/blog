@@ -16,7 +16,7 @@ Neste artigo, partindo da filosofia por trás da linguagem Haskell, explicaremos
 
 ## 1. O Paradigma da Programação Funcional Pura
 
-A base da programação funcional é a ideia de "tratar a computação como a avaliação de funções matemáticas". Especialmente em linguagens funcionais "puras" como o Haskell, essa regra é estritamente seguida.
+A base da [programação funcional](/pt/p/lambda-calculus-functional-programming/) é a ideia de "tratar a computação como a avaliação de funções matemáticas". Especialmente em linguagens funcionais "puras" como o Haskell, essa regra é estritamente seguida.
 
 ### Transparência Referencial (Referential Transparency)
 

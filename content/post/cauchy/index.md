@@ -74,7 +74,7 @@ $$ \oint_C f(z) \, dz = 0 $$
 
 $$ f(a) = \frac{1}{2\pi i} \oint_C \frac{f(z)}{z - a} \, dz $$
 
-この公式は、正則関数が無限回微分可能であることや、テイラー展開可能であることを保証する、極めて強力なツールです。
+この公式は、正則関数が無限回微分可能であることや、[テイラー展開](/p/taylor-and-maclaurin-series/)可能であることを保証する、極めて強力なツールです。
 
 ### 3. [コーシー](https://kenji.blog/p/cauchy/)＝シュワルツの不等式 ([Cauchy](https://kenji.blog/p/cauchy/)-Schwarz Inequality)
 

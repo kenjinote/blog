@@ -122,5 +122,5 @@ flowchart TD
 
 Dengan kemunculan [Alan Baker](https://kenji.blog/id/p/baker/), teori bilangan — terutama studi tentang teori bilangan transenden dan persamaan Diophantine — memasuki era yang sama sekali baru. "Metode komputasi yang efektif" yang ia sajikan membawa pendekatan algoritmik pada matematika murni yang abstrak, dan metode tersebut kini berfungsi sebagai bagian dari landasan matematika yang menopang ilmu komputer dan kriptografi modern.
 
-Penelitiannya tentang pembatasan solusi pada persamaan Diophantine juga menyediakan jembatan menuju teori-teori yang lebih mendalam, seperti **konjektur abc**, yang tetap menjadi salah satu masalah tak terpecahkan terbesar dalam teori bilangan saat ini.
+Penelitiannya tentang pembatasan solusi pada persamaan Diophantine juga menyediakan jembatan menuju teori-teori yang lebih mendalam, seperti **[konjektur abc](/id/p/abc-conjecture/)**, yang tetap menjadi salah satu masalah tak terpecahkan terbesar dalam teori bilangan saat ini.
 Sebagai seorang matematikawan hebat yang memadukan intuisi cemerlang dengan kekuatan logika yang luar biasa untuk menyelesaikan bukti yang sangat kompleks dan teknis, [Alan Baker](https://kenji.blog/id/p/baker/) meninggalkan warisan teorema dan hasrat akan teori bilangan yang niscaya akan terus bersinar cemerlang dalam sejarah matematika tanpa pernah memudar.

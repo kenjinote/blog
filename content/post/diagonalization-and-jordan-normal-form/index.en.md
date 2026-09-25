@@ -233,7 +233,7 @@ A matrix decomposition method similar to diagonalization is **[Singular Value De
 
 Diagonalization $A = PDP^{-1}$ is applicable only to square matrices and is extremely useful when calculating matrix "repeated application (exponentiation)" or "exponential functions".
 
-On the other hand, Singular Value Decomposition $A = U \Sigma V^*$ is applicable to any $m \times n$ matrix. Here, $U$ and $V$ are unitary matrices, respectively, and $\Sigma$ is a matrix with non-negative real numbers (singular values) lined up on the diagonal. SVD decomposes the transformation represented by a matrix into three steps: "rotation," "scaling," and "rotation," and is widely used for data compression and calculating pseudoinverses.
+On the other hand, [Singular Value Decomposition](/en/p/singular-value-decomposition/) $A = U \Sigma V^*$ is applicable to any $m \times n$ matrix. Here, $U$ and $V$ are unitary matrices, respectively, and $\Sigma$ is a matrix with non-negative real numbers (singular values) lined up on the diagonal. [SVD](/en/p/singular-value-decomposition/) decomposes the transformation represented by a matrix into three steps: "rotation," "scaling," and "rotation," and is widely used for data compression and calculating pseudoinverses.
 
 ```mermaid
 graph LR
@@ -245,7 +245,7 @@ graph LR
 
 ## Applications to Dynamical Systems and [Markov Chains](https://kenji.blog/en/p/markov-chain/)
 
-Powerful applications of diagonalization include discrete dynamical systems and Markov chains.
+Powerful applications of diagonalization include discrete dynamical systems and [Markov chains](/en/p/markov-chain/).
 
 Suppose the state vector of a system at the $k$-th step is $\mathbf{x}_k$, and the state transition is described by $\mathbf{x}_{k+1} = A \mathbf{x}_k$. Then, the state after $k$ steps is $\mathbf{x}_k = A^k \mathbf{x}_0$.
 

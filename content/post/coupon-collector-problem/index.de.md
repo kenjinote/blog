@@ -188,7 +188,7 @@ q_{m+1}(k)=\frac{k}{n}q_m(k)
 \qquad (1\le k\le n)
 $$
 
-Nach einer Ziehung gilt $q_{m+1}(0)=0$. Eine vollständige Sammlung bleibt vollständig, daher ist $q_m(n)=P(T\le m)$. Das ist dynamische Programmierung mit der Anzahl vorhandener Typen als [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/).
+Nach einer Ziehung gilt $q_{m+1}(0)=0$. Eine vollständige Sammlung bleibt vollständig, daher ist $q_m(n)=P(T\le m)$. Das ist [dynamische Programmierung](/de/p/dp-algorithm-master-guide/) mit der Anzahl vorhandener Typen als [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/).
 
 Die Identität der Karten kann wegen der Gleichverteilung ignoriert werden. Bei verschiedenen Wahrscheinlichkeiten würde die Anzahl allein nicht genügen, um die Chance auf eine neue Karte zu bestimmen.
 

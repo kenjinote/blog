@@ -67,7 +67,7 @@ Originally a component for rendering 3D game graphics, the GPU was designed to "
 
 Deep learning initially achieved great success in "image recognition (CNNs)." After that, it also achieved superhuman accuracy in "speech recognition" and "translation (RNNs)."
 
-And now, an architecture called the "Transformer," which evolved from this deep learning, has emerged, giving birth to a giant neural network trained on vast amounts of text data on the internet. This is the "**Large Language Model (LLM)**," which is the true identity of the "generative AI" we use on a daily basis, such as **ChatGPT**.
+And now, an architecture called the "Transformer," which evolved from this deep learning, has emerged, giving birth to a giant neural network trained on vast amounts of text data on the internet. This is the "**[Large Language Model](/en/p/large-language-models-llm-transformer-prompt-engineering/) (LLM)**," which is the true identity of the "generative AI" we use on a daily basis, such as **ChatGPT**.
 
 ## 6. Conclusion
 

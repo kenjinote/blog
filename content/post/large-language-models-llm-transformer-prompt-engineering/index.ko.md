@@ -10,7 +10,7 @@ tags: ["ai", "llm", "transformer", "prompt-engineering"]
 
 # 1. 서론: 대규모 언어 모델(LLM)이 개척하는 새로운 시대
 
-2020년대에 들어서며, 인공지능(AI) 분야는 과거 어느 때보다도 극적인 진화를 이룩하고 있습니다. 그 중심에 있는 것이 **대규모 언어 모델** (Large Language Models, 이하 **LLM** )입니다. OpenAI의 ChatGPT, Google의 Gemini, Anthropic의 Claude 등, 우리의 생활과 업무를 근본적으로 변화시킬 잠재력을 지닌 시스템들이 끊임없이 등장하고 있습니다.
+2020년대에 들어서며, 인공지능(AI) 분야는 과거 어느 때보다도 극적인 진화를 이룩하고 있습니다. 그 중심에 있는 것이 **대규모 언어 모델** (Large Language Models, 이하 **LLM** )입니다. OpenAI의 ChatGPT, Google의 [Gemini](/ko/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AE%EB%8C%80%EC%B2%98-%EB%B0%A9%EB%B2%95/), Anthropic의 Claude 등, 우리의 생활과 업무를 근본적으로 변화시킬 잠재력을 지닌 시스템들이 끊임없이 등장하고 있습니다.
 
 본 기사에서는 LLM이 어떻게 자연어를 이해하고 생성하는지, 그 근간을 이루는 **Transformer** (트랜스포머) 모델의 아키텍처와 수학적 메커니즘을 깊이 파헤칩니다. 나아가 이러한 모델들의 성능을 최대한으로 끌어내기 위한 **프롬프트 엔지니어링** (Prompt Engineering)의 고급 기법과, 소프트웨어 개발 및 프로그래밍에 LLM을 어떻게 응용할 수 있는지에 대해 구체적인 코드 예시와 함께 심도 있게 해설합니다.
 

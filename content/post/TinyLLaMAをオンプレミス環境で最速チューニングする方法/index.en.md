@@ -22,7 +22,7 @@ In this article, we provide a complete guide to fine-tuning TinyLLaMA "fastest a
 
 ## 2. TinyLLaMA Architecture and Features
 
-TinyLLaMA follows the LLaMA (Large Language Model Meta AI) architecture developed by Meta. While keeping the number of parameters down to 1.1B, it uses the same technology stack as LLaMA 2, which features highly compatible ecosystem integration.
+TinyLLaMA follows the LLaMA ([Large Language Model](/en/p/large-language-models-llm-transformer-prompt-engineering/) Meta AI) architecture developed by Meta. While keeping the number of parameters down to 1.1B, it uses the same technology stack as LLaMA 2, which features highly compatible ecosystem integration.
 
 ### Major Architectural Components
 

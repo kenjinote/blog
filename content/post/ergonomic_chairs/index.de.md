@@ -80,7 +80,7 @@ Hier vergleichen wir die strukturellen Ansätze repräsentativer High-End-Ergono
 **Eigenschaften: Druckverteilung durch Pellicle (Netzgewebe) und Sitzneigeverstellung nach vorne**
 
 Dieses 1994 erschienene Meisterwerk hat die Geschichte der Bürostühle verändert. Das einzigartige Netzmaterial namens „Pellicle“ passt seine Spannung an die Körperform des Sitzenden an und verteilt den Druck gleichmäßig auf Oberschenkel und Gesäß.
-Besonders hervorzuheben ist die extrem hervorragende **Sitzneigeverstellung nach vorne (Forward-Tilt)**. Für Ingenieure, die bei Arbeiten wie der Softwareentwicklung häufig konzentriert auf den Bildschirm schauen, ist der Aeron Chair, der durch die Neigung der Sitzfläche das Becken aufrichtet, das ultimative Werkzeug zur Minimierung der Rückenbelastung.
+Besonders hervorzuheben ist die extrem hervorragende **Sitzneigeverstellung nach vorne (Forward-Tilt)**. [Für Ingenieure](/de/p/prompt-engineering-for-engineers/), die bei Arbeiten wie der Softwareentwicklung häufig konzentriert auf den Bildschirm schauen, ist der Aeron Chair, der durch die Neigung der Sitzfläche das Becken aufrichtet, das ultimative Werkzeug zur Minimierung der Rückenbelastung.
 
 ### Herman Miller Embody (Embody Chair)
 **Eigenschaften: Pixelstruktur und gesundheitsfördernde zurückgelehnte Haltung**

@@ -13,17 +13,17 @@ description: 'プライバシーを保護しつつ、無料で利用できるロ
 
 # はじめに
 
-近年、[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（LLM）の技術進化は目覚ましく、ChatGPTやClaudeのようなクラウドベースのAIサービスが広く普及しています。しかし、その一方で、「自社の機密データを外部のサーバーに送信したくない」「APIの利用料金を抑えたい」「完全に[オフライン](https://kenji.blog/p/pwa-progressive-web-apps-service-worker/)で動作するAIシステムを構築したい」というニーズが急速に高まっています。
+近年、[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)）の技術進化は目覚ましく、ChatGPTやClaudeのようなクラウドベースのAIサービスが広く普及しています。しかし、その一方で、「自社の機密データを外部のサーバーに送信したくない」「APIの利用料金を抑えたい」「完全に[オフライン](https://kenji.blog/p/pwa-progressive-web-apps-service-worker/)で動作するAIシステムを構築したい」というニーズが急速に高まっています。
 
-この要求に応えるのが、自分のPCや社内サーバーに直接ダウンロードして実行できる「ローカル[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（オープンソースLLM）」です。2023年頃まではローカルで実用的な精度を出すのは困難でしたが、モデルのアーキテクチャの進化や量子化（Quantization）技術の発展により、現在ではコンシューマー向けのGPU（NVIDIA RTX 3090 / 4090やMacのApple Siliconなど）でも、非常に高性能なLLMをサクサクと動かすことが可能になりました。
+この要求に応えるのが、自分のPCや社内サーバーに直接ダウンロードして実行できる「ローカル[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（オープンソース[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)）」です。2023年頃まではローカルで実用的な精度を出すのは困難でしたが、モデルのアーキテクチャの進化や量子化（Quantization）技術の発展により、現在ではコンシューマー向けのGPU（[NVIDIA](/p/history-of-nvidia/) RTX 3090 / 4090やMacのApple Siliconなど）でも、非常に高性能な[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)をサクサクと動かすことが可能になりました。
 
-本記事では、数多くのオープンソースLLMの中から、2026年現在で特に優れていると評価されている「おすすめモデル5選」をピックアップし、それぞれのアーキテクチャの特徴、パラメータ数、GGUF量子化によるメモリ要件、そして具体的なユースケースに至るまで、極めて詳細かつ技術的な視点から徹底的に比較・解説します。
+本記事では、数多くのオープンソース[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)の中から、2026年現在で特に優れていると評価されている「おすすめモデル5選」をピックアップし、それぞれのアーキテクチャの特徴、パラメータ数、[GGUF](/p/llama-cpp-quantization-gguf/)量子化によるメモリ要件、そして具体的なユースケースに至るまで、極めて詳細かつ技術的な視点から徹底的に比較・解説します。
 
 ---
 
 # なぜローカルでLLMを動かすのか？
 
-ローカルLLMの導入には、クラウド型APIにはない独自のメリットが多数存在します。
+ローカル[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)の導入には、クラウド型APIにはない独自のメリットが多数存在します。
 
 ### 1. 完全なプライバシーとセキュリティの確保
 クラウドAPIを使用する場合、入力したプロンプトやデータは外部企業のサーバーに送信されます。これは、個人情報や企業の機密情報を扱う上で重大なリスクとなります。ローカルLLMであれば、データは完全に端末内で処理されるため、外部へのデータ流出リスクをゼロに抑えることができます。
@@ -38,11 +38,11 @@ description: 'プライバシーを保護しつつ、無料で利用できるロ
 
 # ローカルLLMを動かすための基礎知識
 
-モデルの紹介に入る前に、ローカル環境でLLMを動かす上で避けては通れない「VRAM要件」と「量子化（Quantization）」について数学的に整理しておきましょう。
+モデルの紹介に入る前に、ローカル環境で[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)を動かす上で避けては通れない「VRAM要件」と「量子化（Quantization）」について数学的に整理しておきましょう。
 
 ## VRAM（ビデオメモリ）と量子化の数学的基礎
 
-LLMをGPU上で推論させるためには、モデルのパラメータ（重み）をVRAMに展開する必要があります。モデルのメモリ要件 $M$ は、以下の数式で近似できます。
+[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)をGPU上で推論させるためには、モデルのパラメータ（重み）をVRAMに展開する必要があります。モデルのメモリ要件 $M$ は、以下の数式で近似できます。
 
 $$ M = \frac{P \times B}{8} + C $$
 
@@ -60,24 +60,24 @@ $$ M_{FP16} = \frac{8 \times 16}{8} = 16 \text{ GB} $$
 
 そこで登場するのが「量子化（Quantization）」です。パラメータの精度をFP16から8-bit、4-bit、極端な場合は2-bitなどに落とすことで、モデルの性能劣化を最小限に抑えつつ、必要なメモリ量を劇的に削減する技術です。
 
-現在最も普及しているフォーマットが、Georgi Gerganov氏（llama.cppの開発者）によって考案された **GGUF (GPT-Generated Unified Format)** です。GGUFは、CPUとGPUの両方で効率的に推論を行うためのバイナリ形式であり、特にMac (Apple Silicon)のUnified Memoryアーキテクチャと非常に相性が良いという特徴があります。
+現在最も普及しているフォーマットが、Georgi Gerganov氏（llama.cppの開発者）によって考案された **[GGUF](/p/llama-cpp-quantization-gguf/) (GPT-Generated Unified Format)** です。[GGUF](/p/llama-cpp-quantization-gguf/)は、CPUとGPUの両方で効率的に推論を行うためのバイナリ形式であり、特にMac (Apple Silicon)のUnified Memoryアーキテクチャと非常に相性が良いという特徴があります。
 
 8Bモデルを4-bit（例：Q4_K_M）で量子化した場合のメモリ計算は以下のようになります。
 
 $$ M_{4bit} = \frac{8 \times 4.5}{8} = 4.5 \text{ GB} $$
 ※Q4_K_Mは一部の重みに高い精度を残すため、実効ビット数は約4.5ビットとなります。
 
-これにより、VRAMが8GBしかないエントリークラスのGPUや一般的なノートPCでも、8Bクラスの強力なLLMをローカルでサクサクと動かせるようになるのです。
+これにより、VRAMが8GBしかないエントリークラスのGPUや一般的なノートPCでも、8Bクラスの強力な[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)をローカルでサクサクと動かせるようになるのです。
 
 ---
 
 # おすすめのローカルLLMモデル5選
 
-それでは、現在世界中の開発者やAIリサーチャーから高い支持を集めているオープンソースLLMを5つ紹介します。
+それでは、現在世界中の開発者やAIリサーチャーから高い支持を集めているオープンソース[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)を5つ紹介します。
 
 ## 1. Llama 3 (Meta)
 
-Meta社が開発し、オープンソースLLMの事実上の業界標準（デファクトスタンダード）となっているのが「Llama 3」シリーズです。
+[Meta](/p/history-of-meta-facebook/)社が開発し、オープンソース[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)の事実上の業界標準（デファクトスタンダード）となっているのが「Llama 3」シリーズです。
 
 ### アーキテクチャの進化と特徴
 
@@ -105,7 +105,7 @@ graph TD
 - **Llama 3 8B**: 80億パラメータ。4-bit量子化で約5GBのメモリで動作します。応答が非常に高速で、PC上のパーソナルアシスタントや、ローカルでのRAG（Retrieval-Augmented Generation）システムの中核として最適です。
 - **Llama 3 70B**: 700億パラメータ。4-bit量子化で約40GBのVRAM（またはApple SiliconのUnified Memory）を必要とします。クラウドのGPT-4に肉薄する性能を持ち、高度な推論、複雑なコーディング、データ分析などに威力を発揮します。
 
-Llama 3はコミュニティによるサポートが最も厚く、GGUF、AWQ、EXL2などあらゆる量子化フォーマットが即座に利用できるのも強みです。
+Llama 3はコミュニティによるサポートが最も厚く、[GGUF](/p/llama-cpp-quantization-gguf/)、AWQ、EXL2などあらゆる量子化フォーマットが即座に利用できるのも強みです。
 
 ---
 
@@ -187,8 +187,8 @@ Microsoftが提唱する「Textbook is all you need（教科書こそがすべ�
 
 ### SLM（小規模言語モデル）の革命
 
-近年のLLM開発は「とにかくパラメータ数とデータ量を増やす」という力技が主流でしたが、Microsoftは「モデルに与えるデータの質（高品質な教科書データや合成データ）を極限まで高めれば、小さなパラメータ数でもGPT-3.5クラスの知能を持てる」ことを証明しました。
-Phi-3はLLM（Large Language Model）ではなく、 **SLM（Small Language Model）** と呼ばれます。
+近年の[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)開発は「とにかくパラメータ数とデータ量を増やす」という力技が主流でしたが、Microsoftは「モデルに与えるデータの質（高品質な教科書データや合成データ）を極限まで高めれば、小さなパラメータ数でもGPT-3.5クラスの知能を持てる」ことを証明しました。
+Phi-3は[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)（Large Language Model）ではなく、 **SLM（Small Language Model）** と呼ばれます。
 
 ```mermaid
 graph TD
@@ -238,7 +238,7 @@ $$ T = \frac{\text{BW}}{M_{\text{weights}}} $$
 - $\text{BW}$: GPUの実効メモリ帯域幅 (GB/s)
 - $M_{\text{weights}}$: モデルのロードされたサイズ (GB)
 
-例えば、NVIDIA RTX 4090（メモリ帯域幅 1,008 GB/s）で、Llama 3 8Bの4-bit版（約 4.5 GB）を動かす場合を計算します。実効帯域幅を理論値の約80%（約 800 GB/s）と仮定すると：
+例えば、[NVIDIA](/p/history-of-nvidia/) RTX 4090（メモリ帯域幅 1,008 GB/s）で、Llama 3 8Bの4-bit版（約 4.5 GB）を動かす場合を計算します。実効帯域幅を理論値の約80%（約 800 GB/s）と仮定すると：
 
 $$ T \approx \frac{800}{4.5} \approx 177 \text{ Tokens/sec} $$
 
@@ -248,7 +248,7 @@ $$ T \approx \frac{800}{4.5} \approx 177 \text{ Tokens/sec} $$
 
 # ローカルLLMを動かすためのツール
 
-これらの強力なオープンソースLLMをローカル環境で動かすためのソフトウェアエコシステムも、現在非常に充実しています。代表的なツールを3つ紹介します。
+これらの強力なオープンソース[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)をローカル環境で動かすためのソフトウェアエコシステムも、現在非常に充実しています。代表的なツールを3つ紹介します。
 
 ### 1. Ollama
 現在、最も簡単かつ最も人気のあるツールです。[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)のようにコマンド一発でモデルのダウンロードから実行までを行ってくれます。Mac、Windows、Linuxすべてに対応しています。
@@ -269,7 +269,7 @@ GUIベースで直感的に操作したい方におすすめのアプリケー�
 
 # まとめと今後の展望
 
-本記事では、2026年現在で最高峰のオープンソース・ローカルLLMを5つ紹介し、そのアーキテクチャや技術的な背景について解説しました。目的別の選び方をまとめると以下のようになります。
+本記事では、2026年現在で最高峰のオープンソース・ローカル[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)を5つ紹介し、そのアーキテクチャや技術的な背景について解説しました。目的別の選び方をまとめると以下のようになります。
 
 1. **総合的なバランスとエコシステムを重視するなら**: `Llama 3 (8B / 70B)`
 2. **Macなどの大容量Unified Memory環境で高速推論させたいなら**: `Mixtral 8x7B`

@@ -50,7 +50,7 @@ This algorithm brings "Person A who is interested in [Rust](https://kenji.blog/e
 
 ### 2.2 Deep Learning Recommendation Model (DLRM)
 
-In recent years, deep learning-based architectures, represented by the Deep Learning Recommendation Model (DLRM), have become widespread, centered around companies like Meta (formerly Facebook). DLRM receives a wide variety of features as input, such as the user's past behavior history and item metadata, and predicts the Click-Through Rate (CTR) and the like.
+In recent years, deep learning-based architectures, represented by the Deep Learning Recommendation Model (DLRM), have become widespread, centered around companies like Meta ([formerly Facebook](/en/p/history-of-meta-facebook/)). DLRM receives a wide variety of features as input, such as the user's past behavior history and item metadata, and predicts the Click-Through Rate (CTR) and the like.
 
 The characteristic of DLRM lies in converting sparse categorical features (e.g., User ID, followed hashtags) into dense vectors through an "Embedding Table," and combining them with continuous dense features (e.g., days since account creation, past average retention time).
 
@@ -115,7 +115,7 @@ graph TD
     F --> A
 ```
 
-What is terrifying about this loop is that the **"Baader-Meinhof phenomenon (Frequency Illusion)"** is intentionally triggered by the algorithm. Once you see the name of a new state management library, the algorithm captures it as a signal and fills your feed with topics about that library from the next day. The human brain misidentifies this as a "global pandemic."
+What is terrifying about this loop is that the **"Baader-Meinhof phenomenon (Frequency Illusion)"** is intentionally triggered by the algorithm. Once you see the name of a new [state management](/en/p/state-management-history-redux-context-recoil-zustand/) library, the algorithm captures it as a signal and fills your feed with topics about that library from the next day. The human brain misidentifies this as a "global pandemic."
 
 The chart below illustrates the difference in lifecycle between technologies overly hyped on SNS and "Boring Technology" that is plain and dull but robust.
 
@@ -146,7 +146,7 @@ The most reliable defense is to shift your information sources from SNS aggregat
 
 ### 5.2 Close Reading of Academic Papers and Whitepapers
 
-When it comes to foundational tech selections like distributed systems, databases, or machine learning model architectures, you should directly read papers published in ACM, IEEE, or arXiv, or detailed whitepapers published by companies (e.g., Google's Spanner paper, Amazon's Dynamo paper), rather than a few lines of summary on SNS.
+When it comes to foundational tech selections like [distributed systems](/en/p/cap-theorem-distributed-systems-tradeoff/), databases, or machine learning model architectures, you should directly read papers published in ACM, IEEE, or arXiv, or detailed whitepapers published by companies (e.g., Google's Spanner paper, Amazon's Dynamo paper), rather than a few lines of summary on SNS.
 
 SNS posts are optimized to "steal readers' attention," whereas peer-reviewed papers are optimized for "factual accuracy and reproducibility." The evaluation functions are entirely different.
 

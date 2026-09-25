@@ -106,7 +106,7 @@ Ein perfekter Widerspruch! Das ist das Richard-Paradoxon.
 
 ## 4. Warum brach die Logik zusammen? (Die Falle der Metasprache)
 
-Die Ursache für die Entstehung dieses Paradoxons liegt, genau wie beim Berry-Paradoxon, in der Verwechslung der "Sprachhierarchien".
+Die Ursache für die Entstehung dieses Paradoxons liegt, genau wie beim [Berry-Paradoxon](/de/p/berry-paradox/), in der Verwechslung der "Sprachhierarchien".
 
 Um Mathematik streng zu betreiben, muss man klar zwischen der "Liste der Zielzahlen (Objektsprache)" und den "Regeln, die von außen über die Eigenschaften dieser Liste sprechen (Metasprache)" unterscheiden.
 

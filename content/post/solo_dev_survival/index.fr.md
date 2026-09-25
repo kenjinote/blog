@@ -11,7 +11,7 @@ tags: ["Solo Developer", "Micro-SaaS", "Serverless", "Agility"]
 
 # Introduction : La bataille de "ceux qui n'ont rien" défiant les géants
 
-Dans l'histoire du développement logiciel, il n'y a jamais eu d'époque aussi favorable aux développeurs solos (développeurs indépendants). La démocratisation des infrastructures cloud comme AWS et GCP, l'essor des BaaS (Backend as a [Service](https://kenji.blog/fr/p/kubernetes-k8s-architecture-pod-service-ingress/)) tels que Vercel et Supabase, et surtout, l'automatisation du codage grâce à l'évolution des [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) (Grands Modèles de Langage). Tout cela a créé un terrain où un individu peut rivaliser de front avec les "géants" que sont les grandes entreprises technologiques.
+Dans l'histoire du développement logiciel, il n'y a jamais eu d'époque aussi favorable aux développeurs solos (développeurs indépendants). La démocratisation des infrastructures cloud comme AWS et GCP, l'essor des BaaS (Backend as a [Service](https://kenji.blog/fr/p/kubernetes-k8s-architecture-pod-service-ingress/)) tels que Vercel et Supabase, et surtout, l'automatisation du codage grâce à l'évolution des [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) ([Grands Modèles de Langage](/fr/p/large-language-models-llm-transformer-prompt-engineering/)). Tout cela a créé un terrain où un individu peut rivaliser de front avec les "géants" que sont les grandes entreprises technologiques.
 
 Cependant, le fait que les ressources technologiques se soient aplanies ne signifie pas que vous pouvez gagner en adoptant la même stratégie que les grandes entreprises. En termes de capital, de puissance marketing et de force de marque, l'individu est massivement désavantagé. Pour qu'un développeur solo survive et gagne, une "stratégie de survie" unique est indispensable.
 
@@ -27,7 +27,7 @@ En revanche, la force des développeurs solos réside dans leur **"seuil de rent
 
 ## [Loi de Zipf](https://kenji.blog/fr/p/zipfs-law/) et distribution du marché
 
-La relation entre la taille d'un marché et son nombre suit souvent la loi de Zipf ou la loi de Pareto. Si le rang du marché est $k$, et sa taille (potentiel de vente) est $P(k)$, elle peut être exprimée par le modèle de loi de puissance suivant :
+La relation entre la taille d'un marché et son nombre suit souvent la [loi de Zipf](/fr/p/zipfs-law/) ou la loi de Pareto. Si le rang du marché est $k$, et sa taille (potentiel de vente) est $P(k)$, elle peut être exprimée par le modèle de loi de puissance suivant :
 
 $$ P(k) \propto \frac{1}{k^\alpha} $$
 

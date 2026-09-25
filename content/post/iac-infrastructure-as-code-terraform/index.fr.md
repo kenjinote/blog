@@ -120,7 +120,7 @@ graph TD
     VPC --> SG
 ```
 
-Grâce à cette approche basée sur la théorie des graphes, Terraform réalise les choses suivantes :
+Grâce à cette approche basée sur la [théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/), Terraform réalise les choses suivantes :
 - **Création parallèle** des ressources sans dépendances (accélération).
 - Création, mise à jour et suppression des ressources dans le bon ordre.
 

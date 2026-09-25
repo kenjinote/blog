@@ -246,7 +246,7 @@ Advertising also differs from ordinary search results. Paid placement and organi
 
 ## 15. Searching a huge index quickly
 
-One machine limits index capacity, throughput, and resilience. Distributed systems divide an index into parts, search those parts on different machines, and merge results. Such partitions are often called shards.
+One machine limits index capacity, throughput, and resilience. [Distributed systems](/en/p/cap-theorem-distributed-systems-tradeoff/) divide an index into parts, search those parts on different machines, and merge results. Such partitions are often called shards.
 
 With document-based partitioning, a query goes to each shard, which returns promising candidates. A coordinator compares them for the overall ranking. Local document-frequency statistics may differ, however, making score comparability a design issue. Local and global statistics affect quality as well as speed. [Information retrieval textbook: distributing indexes][distributed]
 

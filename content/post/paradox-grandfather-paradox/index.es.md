@@ -34,7 +34,7 @@ Para describir físicamente el viaje al pasado, es necesaria una estructura del 
 
 Algunas soluciones famosas donde existen las CTC incluyen:
 
-1. **Métrica de Gödel**: En 1949, el matemático Kurt Gödel demostró que si asumimos que todo el universo está rotando, las ecuaciones de la relatividad general permiten las CTC.
+1. **Métrica de Gödel**: En 1949, el matemático [Kurt Gödel](/es/p/godel/) demostró que si asumimos que todo el universo está rotando, las ecuaciones de la relatividad general permiten las CTC.
 2. **Cilindro de Tipler**: En 1974, Frank Tipler demostró que uno podría retroceder en el tiempo orbitando en una trayectoria específica alrededor de un cilindro infinitamente largo, ultradenso y que gira rápidamente.
 3. **Agujeros de gusano**: Kip Thorne y otros demostraron que un túnel que conecta dos puntos distantes en el espacio-tiempo, un "agujero de gusano", podría funcionar como una máquina del tiempo si se estabiliza mediante energía negativa (materia exótica) y uno de los extremos se mueve a una velocidad cercana a la de la luz y luego regresa.
 

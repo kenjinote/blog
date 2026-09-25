@@ -13,7 +13,7 @@ Today, computers exist on our desks and in our pockets as a matter of course. Bi
 
 ### Awakening to the Value of Software
 
-Born in Seattle, Washington in 1955, Gates showed extraordinary intelligence from an early age. He was captivated by the charm of programming at the age of 13. Through a teletype terminal introduced at the Lakeside School he attended, he immersed himself in the world of computers. Together with Paul Allen (later co-founder of Microsoft), they would find system bugs to earn computer time, and eventually grew to take on the payroll system of a local company.
+Born in Seattle, Washington in 1955, Gates showed extraordinary intelligence from an early age. He was captivated by the charm of programming at the age of 13. Through a teletype [terminal](/en/p/terminal-efficiency-powershell-bash-shortcuts/) introduced at the Lakeside School he attended, he immersed himself in the world of computers. Together with Paul Allen (later co-founder of Microsoft), they would find system bugs to earn computer time, and eventually grew to take on the payroll system of a local company.
 
 Although he entered Harvard University in 1973, his passion was not in academia. In 1975, when the world's first commercial personal computer "Altair 8800" was released, Gates and Allen developed a BASIC interpreter for it. With the grand vision of "a computer on every desk and in every home," they dropped out of college and founded "Micro-Soft" (later Microsoft). At a time when "software" was merely an add-on to hardware, Gates' greatest foresight was recognizing its value as a copyright and placing it at the core of their business.
 

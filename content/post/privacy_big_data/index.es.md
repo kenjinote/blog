@@ -139,7 +139,7 @@ Si se utiliza el cifrado homomórfico, se logran las siguientes propiedades. Sup
 $$ E(m_1 + m_2) = E(m_1) \oplus E(m_2) $$
 $$ E(m_1 \times m_2) = E(m_1) \otimes E(m_2) $$
 
-El cifrado homomórfico se divide en "Cifrado parcialmente homomórfico (Partially Homomorphic Encryption: PHE)", donde solo es posible la suma o la multiplicación, y "Cifrado completamente homomórfico (Fully Homomorphic Encryption: FHE)", donde tanto la suma como la multiplicación son posibles un número infinito de veces. Desde que Craig Gentry construyó el primer esquema FHE en 2009 utilizando criptografía basada en retículos (Lattice-based cryptography), ha sido un gran avance en la criptografía.
+El cifrado homomórfico se divide en "Cifrado parcialmente homomórfico (Partially Homomorphic Encryption: PHE)", donde solo es posible la suma o la multiplicación, y "Cifrado completamente homomórfico (Fully Homomorphic Encryption: [FHE](/es/p/fully-homomorphic-encryption-fhe-explained/))", donde tanto la suma como la multiplicación son posibles un número infinito de veces. Desde que Craig Gentry construyó el primer esquema [FHE](/es/p/fully-homomorphic-encryption-fhe-explained/) en 2009 utilizando criptografía basada en retículos ([Lattice-based cryptography](/es/p/lattice-based-cryptography-math-intuition/)), ha sido un gran avance en la criptografía.
 
 Actualmente, aún quedan desafíos como los costos computacionales y el aumento en el tamaño de los textos cifrados (sobrecarga), pero se espera su aplicación para el análisis seguro de datos médicos en la nube y para el cálculo secreto entre instituciones financieras.
 

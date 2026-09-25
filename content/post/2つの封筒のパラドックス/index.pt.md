@@ -151,7 +151,7 @@ Existe apenas um caso onde "é mais vantajoso trocar para todos os $X$".
 Isso só acontece se assumirmos que o orçamento do programa é **infinito**, e criarmos uma "distribuição de probabilidade imprópria (uma distribuição cuja soma é infinita)", onde todos os valores (1 iene, 2 ienes, 4 ienes, 8 ienes... infinito) aparecem de forma igual.
 
 No entanto, nenhuma emissora de TV no mundo real tem ativos infinitos.
-Esse erro causado pelo "valor esperado infinito" tem as mesmas raízes profundas do **Paradoxo de São Petersburgo** (o problema de quanto as pessoas estão dispostas a pagar por uma aposta com um valor esperado infinito).
+Esse erro causado pelo "valor esperado infinito" tem as mesmas raízes profundas do **[Paradoxo de São Petersburgo](/pt/p/st-petersburg-paradox/)** (o problema de quanto as pessoas estão dispostas a pagar por uma aposta com um valor esperado infinito).
 
 ## 6. Conclusão: O Terror da Probabilidade e do Valor Esperado
 

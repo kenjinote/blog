@@ -98,7 +98,7 @@ Dans un [Quicksort](https://kenji.blog/fr/p/sorting-algorithms/) normal, on util
 
 Dans le **tri rapide randomisé**, le pivot est choisi de manière aléatoire parmi les éléments du tableau. Il est mathématiquement garanti que, de cette manière, pour n'importe quelles données d'entrée, la complexité moyenne sera de $O(n \log n)$. Et le résultat du tri produit est toujours parfaitement correct.
 
-Si le tableau à trier comporte des centaines de millions d'éléments et est déjà presque trié, le [Quicksort](https://kenji.blog/fr/p/sorting-algorithms/) normal risquerait de provoquer un dépassement de capacité (stack overflow) ou de faire exploser le temps de calcul. L'utilisation du tri rapide randomisé permet de contrer efficacement des données malveillantes cherchant délibérément à provoquer le pire cas (comme une forme d'attaque DoS), garantissant ainsi une performance rapide et stable. De la sorte, la méthode de Las Vegas aide à améliorer la sécurité et la robustesse des systèmes.
+Si le tableau à trier comporte des centaines de millions d'éléments et est déjà presque trié, le [Quicksort](https://kenji.blog/fr/p/sorting-algorithms/) normal risquerait de provoquer un [dépassement](/fr/p/hegel%E3%81%AEdialectique/) de capacité (stack overflow) ou de faire exploser le temps de calcul. L'utilisation du tri rapide randomisé permet de contrer efficacement des données malveillantes cherchant délibérément à provoquer le pire cas (comme une forme d'attaque DoS), garantissant ainsi une performance rapide et stable. De la sorte, la méthode de Las Vegas aide à améliorer la sécurité et la robustesse des systèmes.
 
 #### Exemple d'implémentation en Python
 

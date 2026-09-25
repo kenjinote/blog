@@ -11,7 +11,7 @@ tags: ["complexity-theory", "p-vs-np", "np-complete", "millennium-prize", "pytho
 
 在计算机科学以及现代数学中，有一个最著名且最重要的未解决问题。那就是 **P vs NP问题** 。
 
-2000年，克雷数学研究所为7个数学上的未解决问题分别悬赏了100万美元。这些被称为 **千禧年大奖难题** 。虽然像庞加莱猜想那样的问题已经被解决，但 **P vs NP问题** 至今甚至完全没有看到解决的线索。
+2000年，克雷数学研究所为7个数学上的未解决问题分别悬赏了100万美元。这些被称为 **千禧年大奖难题** 。虽然像[庞加莱猜想](/zh-cn/p/poincare-conjecture/)那样的问题已经被解决，但 **P vs NP问题** 至今甚至完全没有看到解决的线索。
 
 本文将从计算复杂性类（P、NP、NP完全、NP困难）的基础开始，深入剖析这个 **P vs NP问题** 的全貌，探讨其在编程中的实践意义，甚至如果被破解后对世界产生的影响。
 
@@ -19,11 +19,11 @@ tags: ["complexity-theory", "p-vs-np", "np-complete", "millennium-prize", "pytho
 
 ## 1. 计算复杂性理论与算法基础
 
-为了理解 **P vs NP问题** ，首先必须理解“算法的时间复杂度”这一概念。计算机在为了解决某个问题而进行一步步的计算时，当输入规模 $n$ 增大，计算所需的时间（步骤数）或内存（空间）将如何增加，这被称为 **计算复杂性（Computational Complexity）** 。
+为了理解 **P vs NP问题** ，首先必须理解“算法的时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)”这一概念。计算机在为了解决某个问题而进行一步步的计算时，当输入规模 $n$ 增大，计算所需的时间（步骤数）或内存（空间）将如何增加，这被称为 **计算复杂性（Computational Complexity）** 。
 
 ### 朗道符号（Big-O Notation）
 
-在表示时间复杂度时，常用的就是 $O$ 记号。这表示针对输入规模 $n$ 的最坏时间复杂度的上限。
+在表示时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)时，常用的就是 $O$ 记号。这表示针对输入规模 $n$ 的最坏时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)的上限。
 
 - $O(1)$: 常数时间。与输入规模无关。
 - $O(\log n)$: 对数时间。二分查找等。
@@ -88,7 +88,7 @@ sorted_data = [1, 3, 5, 7, 9, 11, 13, 15]
 print("Index:", binary_search(sorted_data, 7)) # Output: 3
 ```
 
-即使输入规模变大，这些问题的时间复杂度也不会爆炸，可以以可扩展的方式解决。
+即使输入规模变大，这些问题的时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)也不会爆炸，可以以可扩展的方式解决。
 
 ---
 
@@ -282,7 +282,7 @@ print(f"近似解: 距离 {dist_greedy:.2f}, 路线 {path_greedy}")
 
 ## 7. 如果 P = NP 世界将会怎样？
 
-如今，全世界的密码系统（互联网购物中使用的SSL/TLS，或比特币等区块链）都是利用了 **“求解需要花费惊人时间，但验证只需一瞬间”** 这种不对称性。
+如今，全世界的密码系统（互联网购物中使用的SSL/TLS，或比特币等[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)）都是利用了 **“求解需要花费惊人时间，但验证只需一瞬间”** 这种不对称性。
 
 作为[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)密码基础的质因数分解也是其中之一。
 假设有人证明了 $P = NP$ ，并构建出了能在多项式时间内解决NP问题的神奇算法（构造性证明）。那将引发如下的 **人类社会的范式转移** 。

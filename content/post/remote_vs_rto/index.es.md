@@ -81,7 +81,7 @@ graph LR
     DB === Data
 ```
 
-Esta creación de silos no es necesariamente algo malo. Si se adopta una arquitectura de microservicios que tiene interfaces de API claras y puede implementarse de forma independiente, limitar intencionalmente la comunicación entre equipos y aumentar la independencia se recomienda a veces como una "Maniobra Inversa de Conway". Se puede decir que el trabajo remoto es adecuado para el desarrollo de sistemas débilmente acoplados con límites claros.
+Esta creación de silos no es necesariamente algo malo. Si se adopta una arquitectura de [microservicios](/es/p/microservices-architecture-bff-api-gateway/) que tiene interfaces de API claras y puede implementarse de forma independiente, limitar intencionalmente la comunicación entre equipos y aumentar la independencia se recomienda a veces como una "Maniobra Inversa de Conway". Se puede decir que el trabajo remoto es adecuado para el desarrollo de sistemas débilmente acoplados con límites claros.
 
 Sin embargo, durante la fase inicial de inicio del sistema (desarrollo de cero a uno), una refactorización a gran escala que abarque múltiples componentes, o la solución de problemas para fallos desconocidos, la comunicación densa y de alto ancho de banda que cruce los límites del equipo es indispensable. La creación excesiva de silos en un entorno remoto dificulta extremadamente la resolución de este tipo de problemas monolíticos.
 
@@ -229,7 +229,7 @@ La productividad general de un ingeniero se expresa como una función compleja d
 
 El debate sobre el "Trabajo remoto vs. Regreso a la oficina" a menudo se enmarca en una composición de conflicto de "derechos de los trabajadores vs. deseo de control de la gerencia", pero la esencia no está ahí.
 
-La gerencia debe abandonar la ilusión de que "la innovación ocurrirá mágicamente solo por reunir gente en la oficina". Obligar a las personas a ir a la oficina sin diseñar una organización que aproveche la Ley de Conway en el desarrollo de sistemas distribuidos, o sin invertir en infraestructura moderna como Zero Trust, solo disminuirá el compromiso y la productividad de los ingenieros.
+La gerencia debe abandonar la ilusión de que "la innovación ocurrirá mágicamente solo por reunir gente en la oficina". Obligar a las personas a ir a la oficina sin diseñar una organización que aproveche la Ley de Conway en el desarrollo de [sistemas distribuidos](/es/p/cap-theorem-distributed-systems-tradeoff/), o sin invertir en infraestructura moderna como Zero Trust, solo disminuirá el compromiso y la productividad de los ingenieros.
 
 Por otro lado, los ingenieros (especialmente en los niveles senior) deben cambiar su visión egocéntrica de que "la oficina es innecesaria porque soy más productivo escribiendo código solo". La ingeniería es un deporte de equipo; los ingenieros no solo son responsables de la productividad del código, sino también de una amplia gama de responsabilidades como el diseño del sistema de toda la organización, la capacitación de los miembros junior y la coordinación durante las emergencias. También es cierto que la comunicación de alto ancho de banda en un espacio físico a veces salva todo el proyecto.
 

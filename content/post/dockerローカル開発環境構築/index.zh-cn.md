@@ -13,7 +13,7 @@ tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 
 在软件开发现场，由于开发者之间的环境差异而导致的“在我的机器上能运行（It works on my machine）”问题，长期以来一直是许多项目浪费时间的因素。操作系统的差异、安装的语言版本、库的依赖关系、全局安装的工具冲突等，本地环境始终面临着“状态的不确定性”。
 
-从根本上解决这些挑战的是以 **[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)** 为首的容器技术，以及 ** 基础设施即代码 ([IaC](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/))** 的范式。通过将本地开发环境容器化，实现了操作系统级别的隔离，并可以将环境本身与代码库一起进行版本控制。
+从根本上解决这些挑战的是以 **[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)** 为首的容器技术，以及 ** [基础设施即代码](/zh-cn/p/iac-infrastructure-as-code-terraform/) ([IaC](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/))** 的范式。通过将本地开发环境容器化，实现了操作系统级别的隔离，并可以将环境本身与代码库一起进行版本控制。
 
 本文将深入讲解如何充分利用 Docker、Docker Compose 和 VSCode Dev[Container](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)s，构建一个 **“无论谁在何时、哪台机器上启动，状态都分毫不差的可重现的本地开发环境”** 的步骤，并从数学角度深入探讨其背后的深层技术机制。
 
@@ -23,13 +23,13 @@ tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 
 ### IaC 的原则及其在本地环境中的应用
 
-基础设施即代码 (IaC) 是一种通过机器可读的定义文件，而非手动流程来管理和配置基础架构的方法。IaC 的核心原则包含以下要素：
+[基础设施即代码](/zh-cn/p/iac-infrastructure-as-code-terraform/) ([IaC](/zh-cn/p/iac-infrastructure-as-code-terraform/)) 是一种通过机器可读的定义文件，而非手动流程来管理和配置基础架构的方法。[IaC](/zh-cn/p/iac-infrastructure-as-code-terraform/) 的核心原则包含以下要素：
 
 1. **声明式方法 (Declarative Approach)** ：定义“最终应该是什么状态”，而不是“如何改变状态”。
 2. **幂等性 (Idempotency)** ：无论执行多少次脚本，始终保证相同的结果（状态）。
 3. **版本控制 (Version Control)** ：基础设施的状态作为代码保存在 Git 等 VCS 中，从而可以追踪更改历史并进行同行评审。
 
-在本地开发环境中实践 IaC，意味着使用 `Dockerfile`、`docker-compose.yml` 和 `devcontainer.json` 将开发环境的“理想状态”代码化。这样，新加入团队的成员也可以通过克隆存储库并运行一条命令，立即开始开发，实现丝滑的入职体验。
+在本地开发环境中实践 [IaC](/zh-cn/p/iac-infrastructure-as-code-terraform/)，意味着使用 `Dockerfile`、`docker-compose.yml` 和 `devcontainer.json` 将开发环境的“理想状态”代码化。这样，新加入团队的成员也可以通过克隆存储库并运行一条命令，立即开始开发，实现丝滑的入职体验。
 
 ### 支撑容器技术的内核功能
 
@@ -129,7 +129,7 @@ $$ R = \left( 1 - \frac{195}{385} \right) \times 100 \approx 49.35\% $$
 
 ## 4. 使用 [Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/) Compose 编排多个容器
 
-在现代 Web 应用程序开发中，由 Web 服务器、数据库和缓存服务器等多个组件协同工作的微服务架构非常普遍。为了在本地环境中集中管理这些组件，我们使用 `docker-compose.yml`。
+在现代 Web 应用程序开发中，由 Web 服务器、数据库和缓存服务器等多个组件协同工作的[微服务架构](/zh-cn/p/microservices-architecture-bff-api-gateway/)非常普遍。为了在本地环境中集中管理这些组件，我们使用 `docker-compose.yml`。
 
 这次，我们将在本地构建一个“Web (FastAPI)”、“数据库 (PostgreSQL)”和“缓存 ([Redis](https://kenji.blog/zh-cn/p/nosql-database-selection-kvs-document-graph-wide-column/))”的三层架构系统。
 
@@ -356,7 +356,7 @@ sequenceDiagram
 
 $$ T_{\text{total}} = T_{\text{net}} + T_{\text{app}} + T_{\text{cache}} + p_{\text{miss}} \times (T_{\text{db}} + T_{\text{cache\_write}}) $$
 
-在本地开发环境（[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/) 内部）中，$T_{\text{net}}$ 几乎接近于 0。但是，值得注意的是 **绑定挂载时的 I/O 性能** 。特别是在 Windows/macOS 上使用 Docker Desktop 时，由于宿主机操作系统和 VM（容器）之间的文件共享开销，$T_{\text{app}}$（代码加载时间等）容易变得过高。为了消除这个性能瓶颈，强烈建议利用前面提到的 Dev[Container](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)s 将整个源代码放在命名卷内，或者采用在 WSL2（Windows Subsystem for Linux 2）原生环境中运行 Docker 引擎的架构。
+在本地开发环境（[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/) 内部）中，$T_{\text{net}}$ 几乎接近于 0。但是，值得注意的是 **绑定挂载时的 I/O 性能** 。特别是在 Windows/macOS 上使用 Docker Desktop 时，由于宿主机操作系统和 VM（容器）之间的文件共享开销，$T_{\text{app}}$（代码加载时间等）容易变得过高。为了消除这个性能瓶颈，强烈建议利用前面提到的 Dev[Container](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)s 将整个源代码放在命名卷内，或者采用在 [WSL2](/zh-cn/p/wsl2-ultimate-development-setup-guide/)（[Windows Subsystem for Linux](/zh-cn/p/wsl2-ultimate-development-setup-guide/) 2）原生环境中运行 Docker 引擎的架构。
 
 ---
 

@@ -10,7 +10,7 @@ image: eyecatch.jpg
 
 # What are Error-Correcting Codes?
 
-In a digital society, data is constantly exposed to the threat of noise. Scratches on a CD, probe data transmitted from outer space, or QR codes we scan daily. The reason these data are not completely destroyed by a slight loss or noise is due to the existence of a powerful mathematical mechanism called "Error-Correcting Codes (ECC)".
+In a digital society, data is constantly exposed to the threat of noise. Scratches on a CD, probe data transmitted from outer space, or QR codes we scan daily. The reason these data are not completely destroyed by a slight loss or noise is due to the existence of a powerful mathematical mechanism called "Error-Correcting Codes ([ECC](/en/p/elliptic-curve-cryptography-math-cpp/))".
 
 In this article, we will detail how this mechanism works, starting with the concepts proposed by Claude Shannon, the father of information theory, through the basics of parity checks, the matrix representation of Hamming codes, and up to Reed-Solomon codes making full use of Galois fields.
 

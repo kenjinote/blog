@@ -18,7 +18,7 @@ Dans cet article, nous allons dérouler l'histoire de cette lutte sans fin et an
 
 ## Chapitre 1 : Le début du conflit à trois et leurs philosophies respectives
 
-L'histoire des OS a commencé de la fin des années 1970 aux années 1980, époque à laquelle les ordinateurs se sont transformés en appareils personnels. Chaque OS est né avec un contexte et une philosophie totalement différents.
+[L'histoire des OS](/fr/p/history-of-macos/) a commencé de la fin des années 1970 aux années 1980, époque à laquelle les ordinateurs se sont transformés en appareils personnels. Chaque OS est né avec un contexte et une philosophie totalement différents.
 
 ### 1.1 Mac : Le carrefour de la technologie et de l'art
 En 1984, Apple a lancé le premier Macintosh. La philosophie prônée par Steve Jobs était : « L'ordinateur entre les mains de tous ». À l'époque, il était courant que les ordinateurs soient commandés par des lignes de commande complexes, mais le Mac a popularisé l'interface graphique (GUI) et la souris auprès du grand public.
@@ -54,7 +54,7 @@ De la décennie 1990 à celle des années 2000, la bataille pour les parts de ma
 ### 2.1 Le choc de Windows 95 et la domination écrasante
 Windows 95, sorti en 1995, a provoqué un véritable phénomène de société. L'interface graphique complète, la fonctionnalité de connexion à Internet (qui deviendra Internet Explorer) et le Plug and Play ; les bases du PC moderne y ont été achevées. Grâce au succès de Windows 95, Microsoft a bâti un monopole absolu sur le marché des PC.
 
-Face à cette domination écrasante, Apple a temporairement traversé une grave crise financière. Cependant, avec le retour de Steve Jobs en 1997 et le succès ultérieur de l'« iMac », Apple a réussi à renaître sur son propre marché de niche privilégiant le design et le style de vie.
+Face à cette domination écrasante, Apple a temporairement traversé une grave crise financière. Cependant, avec le retour de [Steve Jobs](/fr/p/biography-steve-jobs/) en 1997 et le succès ultérieur de l'« iMac », Apple a réussi à renaître sur son propre marché de niche privilégiant le design et le style de vie.
 
 ### 2.2 La guerre des navigateurs et l'essor du Web
 Le champ de bataille principal des guerres d'OS s'est finalement déplacé vers l'espace Internet. La première guerre des navigateurs entre Netscape et Internet Explorer a redéfini la valeur de l'OS en tant que plateforme. Microsoft a pris l'avantage en intégrant IE à Windows, mais cela a également déclenché un procès pour violation de la loi antitrust.
@@ -90,7 +90,7 @@ graph LR
 
 ## Chapitre 4 : La fin de la bataille et le nouveau paradigme (Depuis les années 2010)
 
-La guerre de religion des OS, qui a duré si longtemps, a vu son aspect radicalement changer au cours des années 2010. Avec la révolution mobile et l'essor du cloud, la question « Quel OS de bureau utilisez-vous ? » a perdu de son sens.
+La guerre de religion des OS, qui a duré si longtemps, a vu son aspect radicalement changer au cours des années 2010. Avec [la révolution mobile](/fr/p/history-of-iphone/) et l'essor du cloud, la question « Quel OS de bureau utilisez-vous ? » a perdu de son sens.
 
 ### 4.1 La transition vers le mobile et le nouveau système bipolaire
 Avec l'apparition de l'iPhone (iOS) et d'Android, le centre de l'informatique pour les gens est passé du PC au smartphone. Paradoxalement, dans le monde mobile, une configuration rappelant l'histoire s'est répétée : l'approche fermée d'Apple (iOS) contre l'approche ouverte dirigée par Google (Android basé sur Linux).
@@ -114,4 +114,4 @@ Les « guerres de religion des OS » ont souvent engendré des disputes stérile
 
 Les superbes polices et l'interface graphique de Mac ont influencé Windows, la compatibilité et l'énorme écosystème de Windows ont enseigné à Apple l'importance de la stratégie de plateforme, et le modèle open source de Linux est devenu le fondement du développement logiciel de toutes les grandes entreprises informatiques actuelles.
 
-Peu importe l'OS que nous choisissons, la passion et la philosophie d'innombrables ingénieurs vivent derrière lui. Connaître l'histoire des OS revient à comprendre l'évolution de la pensée de l'humanité vis-à-vis de la technologie.
+Peu importe l'OS que nous choisissons, la passion et la philosophie d'innombrables ingénieurs vivent derrière lui. Connaître [l'histoire des OS](/fr/p/history-of-macos/) revient à comprendre l'évolution de la pensée de l'humanité vis-à-vis de la technologie.

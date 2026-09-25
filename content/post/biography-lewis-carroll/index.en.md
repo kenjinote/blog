@@ -29,7 +29,7 @@ The greatest charm of Lewis Carroll's work lies in the fusion of "thorough logic
 
 As Dodgson, he was a rigorous logician who authored specialized books such as "An Elementary Treatise on Determinants" (1867) and "Symbolic Logic" (1896). His nonsense literature is an intellectual game that skillfully utilizes the ambiguity of words, syllogistic fallacies, and the distortion of time and space. His technique of dismantling the absolute meaning of "words" and liberating readers from the confines of common sense has a depth that connects to modern philosophy of language.
 
-For instance, the famous scene where Humpty Dumpty asserts, "When I use a word, it means just what I choose it to mean," is a sharp insight into the arbitrariness of language and the nature of communication. It is said to have influenced later philosophers like Ludwig Wittgenstein. For him, "logic" was both the absolute law defining the world and the ultimate "toy" that could create a completely different parallel universe just by slightly tweaking the conditions.
+For instance, the famous scene where Humpty Dumpty asserts, "When I use a word, it means just what I choose it to mean," is a sharp insight into the arbitrariness of language and the nature of communication. It is said to have influenced later philosophers like [Ludwig Wittgenstein](/en/p/biography-ludwig-wittgenstein/). For him, "logic" was both the absolute law defining the world and the ultimate "toy" that could create a completely different parallel universe just by slightly tweaking the conditions.
 
 ## Legacy: Ripples Across Literature, Culture, and Science
 

@@ -12,15 +12,15 @@ tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 
 # 使用 [GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 建構 C++ 專案的 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 管線：完整指南
 
-在現代軟體開發典範中，持續整合（Continuous Integration: CI）與持續交付/部署（Continuous Delivery/Deployment: CD）是維持敏捷開發流程與高品質軟體不可或缺的要素。在眾多的程式語言中，為 C++ 建構 CI/CD 管線與其他語言（例如 Python、JavaScript、[Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 等）相比，伴隨著獨特的困難與複雜性。
+在現代軟體開發典範中，持續整合（Continuous Integration: CI）與持續交付/部署（Continuous Delivery/Deployment: CD）是維持敏捷開發流程與高品質軟體不可或缺的要素。在眾多的程式語言中，為 C++ 建構 [CI/CD](/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 管線與其他語言（例如 Python、JavaScript、[Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 等）相比，伴隨著獨特的困難與複雜性。
 
-本文將極其詳細地解說，如何活用 GitHub Actions，從零開始為 C++ 專案建構一個強健且實用的 CI/CD 管線。我們將涵蓋所有實踐技巧，包括跨平台（Windows、Linux、macOS）的矩陣建置（Matrix Build）、整合使用 CMake 的建置系統、利用 CTest 進行自動化測試、靜態與動態分析的自動化、涵蓋率（Coverage）測量，以及透過 GitHub Releases 自動交付已編譯好的二進位檔案。
+本文將極其詳細地解說，如何活用 GitHub Actions，從零開始為 C++ 專案建構一個強健且實用的 [CI/CD](/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 管線。我們將涵蓋所有實踐技巧，包括跨平台（Windows、Linux、macOS）的矩陣建置（Matrix Build）、整合使用 CMake 的建置系統、利用 CTest 進行自動化測試、靜態與動態分析的自動化、涵蓋率（Coverage）測量，以及透過 GitHub Releases 自動交付已編譯好的二進位檔案。
 
 ## 1. C++ 專案中 CI/CD 的意義與特有挑戰
 
 在開發 Web 應用程式或使用腳本語言時，大多只需在單一 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 容器上進行測試和建置就足夠了。然而，C++ 是原生編譯的語言，強烈依賴執行環境的硬體架構和作業系統。
 
-在為 C++ 專案導入 CI/CD 時，主要會面臨以下挑戰：
+在為 C++ 專案導入 [CI/CD](/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 時，主要會面臨以下挑戰：
 
 1. **平台的多樣性**: Windows、Linux、macOS 等不同 OS 會有不同的 API（Windows API、POSIX 等）。在開發者的本地環境（例如 macOS）可以順利運作，但在 Linux 或 Windows 上發生編譯錯誤是家常便飯。
 2. **編譯器的差異**: Microsoft Visual C++ (MSVC)、GNU Compiler Collection (GCC)、Clang 等主要編譯器，對於 C++ 標準（C++17、C++20、C++23）的實作程度、解釋以及警告的嚴格程度各不相同。
@@ -32,7 +32,7 @@ tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 
 ## 2. [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 管線的架構概觀
 
-讓我們將接下來要建構的 CI/CD 管線全貌視覺化。以下的 Mermaid 循序圖展示了從程式碼 Push 到發布的工作流程。
+讓我們將接下來要建構的 [CI/CD](/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 管線全貌視覺化。以下的 Mermaid 循序圖展示了從程式碼 Push 到發布的工作流程。
 
 ```mermaid
 sequenceDiagram
@@ -451,9 +451,9 @@ jobs:
 
 ## 結論
 
-在 C++ 專案中建構 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 管線，由於平台相依性及建置工具的複雜度，乍看之下門檻似乎很高。然而，只要正確地結合 [GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/)、現代化 CMake 以及 CTest/CPack 生態系，就能獲得極其強大且自動化的開發流程。
+在 C++ 專案中建構 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 管線，由於平台相依性及建置工具的[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)，乍看之下門檻似乎很高。然而，只要正確地結合 [GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/)、現代化 CMake 以及 CTest/CPack 生態系，就能獲得極其強大且自動化的開發流程。
 
 本文所解說的：運用矩陣策略進行跨平台驗證、運用 Sanitizer 偵測執行期 Bug、測量涵蓋率，以及自動部署至 GitHub Releases 等，都是在商業級別的開源專案中被廣泛採用的最佳實踐。
 
-自動化的 CI/CD 管線，能將開發者花在「找 Bug」與「手動建置・發布作業」的時間最小化，並成為讓開發者專注於本質上具創造力的程式設計活動的最強武器。請務必在您的 C++ 專案中也導入這套做法，實現敏捷且令人安心的開發生活。
+自動化的 [CI/CD](/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 管線，能將開發者花在「找 Bug」與「手動建置・發布作業」的時間最小化，並成為讓開發者專注於本質上具創造力的程式設計活動的最強武器。請務必在您的 C++ 專案中也導入這套做法，實現敏捷且令人安心的開發生活。
 

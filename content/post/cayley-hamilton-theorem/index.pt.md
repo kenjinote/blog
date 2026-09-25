@@ -281,7 +281,7 @@ Assim, o problema de encontrar a inversa reduz-se a cálculos de somas e multipl
 Neste artigo, explicamos em detalhes o **teorema de Cayley-Hamilton**, um dos teoremas de maior destaque da álgebra linear.
 
 * A propriedade surpreendente de que substituir uma matriz em seu próprio polinômio característico $p(\lambda)$ resulta na matriz nula ($p(A) = O$).
-* A compreensão intuitiva mediante diagonalização e o equívoco comum de confundi-la com uma substituição escalar.
+* A compreensão intuitiva mediante [diagonalização](/pt/p/diagonalization-and-jordan-normal-form/) e o equívoco comum de confundi-la com uma substituição escalar.
 * Uma elegante e rigorosa demonstração usando identidades com a matriz adjunta.
 * Aplicações práticas como o cálculo rápido de potências de matrizes usando divisão de polinômios e fórmulas para encontrar inversas.
 

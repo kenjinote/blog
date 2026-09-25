@@ -68,7 +68,7 @@ Em 2008, uma nova história do P2P começou a partir de um artigo publicado por 
 Trata-se do "**Bitcoin**".
 
 Os sistemas P2P tradicionais eram usados para "compartilhamento de arquivos" e "descentralização de processamento computacional", mas o Bitcoin usou a rede P2P para a "**descentralização da confiança**".
-Mesmo sem a existência de um banco central ou administrador, inúmeros nós que participam da rede P2P monitoram os registros de transações (livro-razão) uns dos outros. Ao combinar técnicas de criptografia (funções de hash e criptografia de chave pública) com algoritmos de consenso (Proof of Work), construiu-se "um sistema distribuído onde a falsificação de dados é virtualmente impossível = **Blockchain**".
+Mesmo sem a existência de um banco central ou administrador, inúmeros nós que participam da rede P2P monitoram os registros de transações (livro-razão) uns dos outros. Ao combinar técnicas de criptografia (funções de hash e criptografia de chave pública) com algoritmos de consenso (Proof of Work), construiu-se "um sistema distribuído onde a falsificação de dados é virtualmente impossível = **[Blockchain](/pt/p/blockchain-technology-smart-contract-distributed-ledger/)**".
 
 Essa ideia de "uma rede autônoma e descentralizada que não depende de um administrador específico" está diretamente ligada ao movimento atual chamado "Web3" (Web descentralizada).
 
@@ -80,4 +80,4 @@ Um deles é o problema dos "**caronas (free riders)**". Quando aumentam os usuá
 
 Outro é a "**governança e segurança**". Como não há um administrador central, se nós mal-intencionados espalharem dados falsos ou vírus, é difícil bloqueá-los imediatamente.
 
-O P2P não é apenas uma tecnologia para "softwares de compartilhamento de arquivos". É o auge dos "sistemas distribuídos" na ciência da computação e uma arquitetura que carrega uma forte filosofia de não concentrar o poder em um único ponto. Daqui para frente, a tecnologia P2P continuará a evoluir como a base da comunicação entre dispositivos IoT e da infraestrutura descentralizada da Internet da próxima geração.
+O P2P não é apenas uma tecnologia para "softwares de compartilhamento de arquivos". É o auge dos "[sistemas distribuídos](/pt/p/cap-theorem-distributed-systems-tradeoff/)" na ciência da computação e uma arquitetura que carrega uma forte filosofia de não concentrar o poder em um único ponto. Daqui para frente, a tecnologia P2P continuará a evoluir como a base da comunicação entre dispositivos IoT e da infraestrutura descentralizada da Internet da próxima geração.

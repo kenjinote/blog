@@ -11,7 +11,7 @@ description: '随着量子计算机的实用化，公钥密码学在未来将面
 
 ## 引言：量子计算机带来的密码技术“威胁”
 
-目前，我们在互联网上日常进行的通信——在线银行的支付、网站的浏览（HTTPS）、消息应用程序中的交流，乃至区块链和加密资产的交易——其中很大一部分都受到被称为“公钥密码学”的技术的保护。具体而言，[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密和椭圆曲线加密（ECC）等算法，构成了支撑现代数字社会可靠性的根基。
+目前，我们在互联网上日常进行的通信——在线银行的支付、网站的浏览（HTTPS）、消息应用程序中的交流，乃至[区块链](/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)和加密资产的交易——其中很大一部分都受到被称为“公钥密码学”的技术的保护。具体而言，[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密和椭圆曲线加密（[ECC](/zh-cn/p/elliptic-curve-cryptography-math-cpp/)）等算法，构成了支撑现代数字社会可靠性的根基。
 
 这些密码方式的安全性依据是“大数分解”和“离散对数问题”等数学难题，使用当前的经典计算机（包括超级计算机）去破解需要耗费天文数字般的时间。然而，随着近年来取得显著进展的 **“量子计算机”** 投入实际应用，这一前提将被彻底推翻。
 
@@ -29,7 +29,7 @@ description: '随着量子计算机的实用化，公钥密码学在未来将面
 
 常被混淆的技术有“量子密码学（Quantum [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）”和“量子密钥分发（QKD）”，但它们是完全不同的路径。量子密码学（QKD）是利用量子力学的物理法则（如观测会改变状态的特性等），在物理层面上使通信路径上的窃听变得不可能的硬件基础技术。它需要专用的光纤和特殊设备，面临着导入成本和距离限制等挑战。
 
-另一方面， **PQC说到底是基于“数学”的软件基础密码技术** 。因此，它作为软件更新集成到现有的互联网基础设施、服务器、智能手机和浏览器中是可行的，具有极高的现实社会适用性。全世界的IT企业和政府机构当前的当务之急是将目前使用的[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)或ECC替换（迁移）为这种PQC。
+另一方面， **PQC说到底是基于“数学”的软件基础密码技术** 。因此，它作为软件更新集成到现有的互联网基础设施、服务器、智能手机和浏览器中是可行的，具有极高的现实社会适用性。全世界的IT企业和政府机构当前的当务之急是将目前使用的[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)或[ECC](/zh-cn/p/elliptic-curve-cryptography-math-cpp/)替换（迁移）为这种PQC。
 
 ---
 
@@ -58,14 +58,14 @@ graph LR
 
 ### 1. 基于格的密码（Lattice-based [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）
 
-目前，在PQC领域最被看好且成为主流的是这种“基于格的密码”。格密码的安全性基于多维空间中规则排列的点（格点）相关的问题。著名的问题包括“最短向量问题（SVP：Shortest Vector Problem）”和“LWE问题（Learning With Errors）”等。
+目前，在PQC领域最被看好且成为主流的是这种“基于格的密码”。[格密码](/zh-cn/p/lattice-based-cryptography-math-intuition/)的安全性基于多维空间中规则排列的点（格点）相关的问题。著名的问题包括“最短向量问题（SVP：Shortest Vector Problem）”和“LWE问题（Learning With Errors）”等。
 
 **机制概要：** 
 想象在一个维度极高（数百至数千维）的空间中，无数的点呈网格状排列。要在2维或3维中找到某个特定的格点很容易，但在数百维中，目前尚未发现能用经典计算机或量子计算机高效找出的算法。特别是LWE问题利用了这样一个特性：“如果在联立一次方程中故意加入微小的‘噪声（误差）’，推测原始变量就会变得极度困难”。
 
 **优点：** 
 - 适用于密钥封装机制（KEM）和数字签名。
-- 处理速度极快（有时甚至比[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)和ECC还要快）。
+- 处理速度极快（有时甚至比[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)和[ECC](/zh-cn/p/elliptic-curve-cryptography-math-cpp/)还要快）。
 - 密钥尺寸和密文尺寸相对较小，平衡性好。
 
 目前NIST正在标准化的算法中，很多（如ML-KEM和ML-DSA）都采用了这种基于格的密码。
@@ -97,7 +97,7 @@ NIST已将“SLH-DSA（旧称 SPHINCS+）”作为无状态哈希签名进行了
 
 **优点：** 
 - 签名尺寸非常小。
-- 签名验证速度极快。适合于资源受限的物联网设备等。
+- 签名验证速度极快。适合于资源受限的[物联网](/zh-cn/p/technology-iot/)设备等。
 
 **缺点：** 
 - 公钥尺寸非常大（有时可达数十至数百千字节）。
@@ -150,7 +150,7 @@ NIST已将“SLH-DSA（旧称 SPHINCS+）”作为无状态哈希签名进行了
 
 ## 向PQC迁移的场景与挑战：“密码敏捷性”的重要性
 
-随着NIST正式标准规范的发布，全球各地的政府机构、金融机构和科技公司将全面加速从现有的[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)/ECC向PQC的迁移（Migration）。美国国家安全局（NSA）等机构的指南也建议尽早完成迁移。
+随着NIST正式标准规范的发布，全球各地的政府机构、金融机构和科技公司将全面加速从现有的[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)/[ECC](/zh-cn/p/elliptic-curve-cryptography-math-cpp/)向PQC的迁移（Migration）。美国国家安全局（NSA）等机构的指南也建议尽早完成迁移。
 
 ### 采用混合方法
 

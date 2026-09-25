@@ -80,7 +80,7 @@ Aqui, comparamos as abordagens estruturais de cadeiras ergonômicas de ponta rep
 **Características: Distribuição de Pressão Corporal e Inclinação Frontal com Película (Malha)**
 
 Uma obra-prima introduzida em 1994 que mudou a história das cadeiras de escritório. O material de malha exclusivo chamado "Pellicle" muda sua tensão de acordo com o tipo de corpo da pessoa sentada, distribuindo uniformemente a pressão nas coxas e nádegas.
-Vale destacar o excelente **mecanismo de inclinação frontal**. Para engenheiros que costumam realizar tarefas focadas na tela, como desenvolvimento de software, a cadeira Aeron, que inclina o assento e levanta a pelve, é a ferramenta ideal para minimizar o estresse na região lombar.
+Vale destacar o excelente **mecanismo de inclinação frontal**. [Para engenheiros](/pt/p/prompt-engineering-for-engineers/) que costumam realizar tarefas focadas na tela, como desenvolvimento de software, a cadeira Aeron, que inclina o assento e levanta a pelve, é a ferramenta ideal para minimizar o estresse na região lombar.
 
 ### Herman Miller Embody (Cadeira Embody)
 **Características: Estrutura de Pixels e Postura Inclinada para Trás Pró-Saúde**

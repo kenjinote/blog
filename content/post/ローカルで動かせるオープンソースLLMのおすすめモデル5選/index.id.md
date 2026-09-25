@@ -17,7 +17,7 @@ Dalam beberapa tahun terakhir, evolusi teknologi [Large Language Models](https:/
 
 Untuk memenuhi permintaan ini, hadirlah "[LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) Lokal (LLM Open Source)" yang dapat diunduh dan dijalankan secara langsung di PC sendiri maupun server perusahaan. Hingga sekitar tahun 2023, sulit untuk mendapatkan akurasi yang praktis secara lokal, tetapi berkat evolusi arsitektur model dan pengembangan teknologi kuantisasi (Quantization), kini LLM dengan kinerja sangat tinggi pun dapat dijalankan dengan lancar bahkan pada GPU konsumen (seperti NVIDIA RTX 3090 / 4090 atau Apple Silicon pada Mac).
 
-Dalam artikel ini, dari sekian banyak LLM open source yang ada, kami memilih "5 Rekomendasi Model Terbaik" yang dinilai sangat unggul pada tahun 2026. Kami akan membandingkan dan menjelaskan secara menyeluruh dari sudut pandang teknis yang sangat mendetail: mulai dari karakteristik arsitektur masing-masing model, jumlah parameter, kebutuhan memori melalui kuantisasi GGUF, hingga kasus penggunaan yang spesifik.
+Dalam artikel ini, dari sekian banyak LLM open source yang ada, kami memilih "5 Rekomendasi Model Terbaik" yang dinilai sangat unggul pada tahun 2026. Kami akan membandingkan dan menjelaskan secara menyeluruh dari sudut pandang teknis yang sangat mendetail: mulai dari karakteristik arsitektur masing-masing model, jumlah parameter, kebutuhan memori melalui kuantisasi [GGUF](/id/p/llama-cpp-quantization-gguf/), hingga kasus penggunaan yang spesifik.
 
 ---
 
@@ -60,7 +60,7 @@ Selain itu, dengan mempertimbangkan KV cache dan sebagainya, dibutuhkan sekitar 
 
 Di sinilah peran dari "Kuantisasi (Quantization)". Dengan menurunkan presisi parameter dari FP16 menjadi 8-bit, 4-bit, atau dalam kasus ekstrem menjadi 2-bit, teknologi ini secara dramatis akan mengurangi jumlah memori yang dibutuhkan sekaligus meminimalkan penurunan performa model.
 
-Format yang paling populer saat ini adalah **GGUF (GPT-Generated Unified Format)** yang dirancang oleh Georgi Gerganov (pengembang llama.cpp). GGUF adalah format biner untuk inferensi yang efisien baik pada CPU maupun GPU, dan memiliki karakteristik sangat kompatibel dengan arsitektur Unified Memory di Mac (Apple Silicon).
+Format yang paling populer saat ini adalah **[GGUF](/id/p/llama-cpp-quantization-gguf/) (GPT-Generated Unified Format)** yang dirancang oleh Georgi Gerganov (pengembang llama.cpp). [GGUF](/id/p/llama-cpp-quantization-gguf/) adalah format biner untuk inferensi yang efisien baik pada CPU maupun GPU, dan memiliki karakteristik sangat kompatibel dengan arsitektur Unified Memory di Mac (Apple Silicon).
 
 Perhitungan memori jika model 8B dikuantisasi menjadi 4-bit (contoh: Q4_K_M) adalah sebagai berikut:
 
@@ -105,7 +105,7 @@ graph TD
 - **Llama 3 8B**: 8 miliar parameter. Berjalan dengan sekitar 5GB memori menggunakan kuantisasi 4-bit. Responsnya sangat cepat dan ideal sebagai asisten pribadi pada PC atau inti dari sistem RAG (Retrieval-Augmented Generation) lokal.
 - **Llama 3 70B**: 70 miliar parameter. Membutuhkan sekitar 40GB VRAM (atau Unified Memory pada Apple Silicon) dengan kuantisasi 4-bit. Memiliki kinerja yang mendekati GPT-4 di cloud, serta sangat andal dalam penalaran tingkat lanjut, pengodean kompleks, dan analisis data.
 
-Dukungan komunitas adalah keunggulan terbesar Llama 3, dengan berbagai format kuantisasi seperti GGUF, AWQ, dan EXL2 tersedia secara langsung.
+Dukungan komunitas adalah keunggulan terbesar Llama 3, dengan berbagai format kuantisasi seperti [GGUF](/id/p/llama-cpp-quantization-gguf/), AWQ, dan EXL2 tersedia secara langsung.
 
 ---
 

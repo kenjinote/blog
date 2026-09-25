@@ -14,7 +14,7 @@ description: '從零知識證明（ZKP）的數學基礎，到zk-SNARKs、zk-STA
 
 在現代數位社會中，資料隱私與擴展性（Scalability）已經成為最重要的兩個課題。隨著個人資料外洩與不當使用的風險增加，「在不向對方透露自己資訊的情況下，證明自己擁有該資訊」的技術需求變得越來越強烈。實現這一點的就是 **零知識證明（Zero-Knowledge Proof: ZKP）** 。
 
-零知識證明是1980年代由Shafi Goldwasser、Silvio Micali與Charles Rackoff首次提出的密碼學概念，但長久以來僅停留在理論研究階段。然而，隨著區塊鏈技術與Web3的崛起，情況發生了巨大變化。作為能同時解決以太坊等公有鏈所面臨的擴展性問題（處理能力的極限）與隱私問題（所有交易皆被公開）的「魔法棒」，ZKP一躍成為眾所矚目的焦點。
+零知識證明是1980年代由Shafi Goldwasser、Silvio Micali與Charles Rackoff首次提出的密碼學概念，但長久以來僅停留在理論研究階段。然而，隨著[區塊鏈](/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)技術與Web3的崛起，情況發生了巨大變化。作為能同時解決以太坊等公有鏈所面臨的擴展性問題（處理能力的極限）與隱私問題（所有交易皆被公開）的「魔法棒」，ZKP一躍成為眾所矚目的焦點。
 
 本文將從零知識證明的基本概念出發，深入探討目前主流的 **zk-SNARKs** 與 **zk-STARKs** 深奧的數學與密碼學機制，並涵蓋ZK-Rollups與去中心化身份（DID）等最新的Web3與安全應用案例，為您進行極為詳細且具技術深度的解說。
 
@@ -60,7 +60,7 @@ sequenceDiagram
     Note over Prover, Verifier: "※為提高準確度，此過程會重複數十次"
 ```
 
-這種方法雖然強大，但要求驗證者必須在線，因此不便於應用在區塊鏈這種非同步的分散式系統中。在區塊鏈上，任何人必須隨時都能驗證過去的證明。
+這種方法雖然強大，但要求驗證者必須在線，因此不便於應用在[區塊鏈](/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)這種非同步的[分散式系統](/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)中。在[區塊鏈](/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)上，任何人必須隨時都能驗證過去的證明。
 
 #### 菲亞特-沙米爾轉換（Fiat-Shamir Heuristic）與非互動化
 
@@ -121,13 +121,13 @@ zk-SNARKs（特別是早期的Groth16等）最大的弱點在於，它需要生�
 
 ## zk-STARKs 的技術細節
 
-作為對依賴信任設定以及量子電腦破解橢圓曲線密碼學風險的回應， **zk-STARKs** （Zero-Knowledge Scalable Transparent Argument of Knowledge）應運而生。
+作為對依賴信任設定以及量子電腦破解[橢圓曲線密碼學](/zh-tw/p/elliptic-curve-cryptography-math-cpp/)風險的回應， **zk-STARKs** （Zero-Knowledge Scalable Transparent Argument of Knowledge）應運而生。
 
 由Eli Ben-Sasson等人開發的STARKs，正如其名「Transparent（透明性）」，完全不需要信任設定；同時也如同其名「Scalable（可擴展性）」，即使計算量增加，也能有效地保持較小的證明大小與較短的驗證時間。
 
 ### 1. 多項式承諾與FRI協定
 
-zk-STARKs不依賴橢圓曲線密碼學，而是將安全性基礎 **僅建立在雜湊函數上** 。因此，它具備抗量子計算機密碼學（Post-Quantum [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）的特性。
+zk-STARKs不依賴[橢圓曲線密碼學](/zh-tw/p/elliptic-curve-cryptography-math-cpp/)，而是將安全性基礎 **僅建立在雜湊函數上** 。因此，它具備抗量子計算機密碼學（Post-Quantum [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）的特性。
 
 計算的驗證會在轉換為被稱為AIR（Algebraic Intermediate Representation）的格式後，利用一維或多維多項式的性質來進行。STARKs的核心在於 **FRI（Fast Reed-Solomon Interactive Oracle Proof of Proximity）** 協定。
 
@@ -166,7 +166,7 @@ graph TD
 
 ### 1. 透過 ZK-Rollups 實現以太坊的終極擴容
 
-像以太坊這類L1（Layer 1）區塊鏈，為了重視去中心化與安全性，在擴展性上面臨了極大的限制（不可能三角）。解決這個問題的L2（Layer 2）終極解決方案就是 **ZK-Rollups** 。
+像以太坊這類L1（Layer 1）[區塊鏈](/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)，為了重視去中心化與安全性，在擴展性上面臨了極大的限制（不可能三角）。解決這個問題的L2（Layer 2）終極解決方案就是 **ZK-Rollups** 。
 
 ZK-Rollup在鏈下（L2）執行並處理數以千計的交易，然後生成「一個ZKP（Validity Proof，有效性證明）」來顯示這些交易都已正確執行。L1鏈上的智慧合約只需驗證這個證明即可。
 
@@ -192,7 +192,7 @@ flowchart LR
 
 ### 3. 機密智慧合約與企業應用
 
-公有鏈「所有資料皆被公開」的特性，是企業在區塊鏈上處理機密交易或供應鏈資訊時的巨大障礙。
+公有鏈「所有資料皆被公開」的特性，是企業在[區塊鏈](/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)上處理機密交易或供應鏈資訊時的巨大障礙。
 
 如果使用ZKP技術（例如Aleo或Aztec等專注於隱私的網路），就能在將交易的輸入值、輸出值，甚至執行的智慧合約邏輯本身保持加密的狀態下，僅將狀態更新的正當性記錄在公有鏈上。如此一來，就能在享有公有鏈高度安全性的同時，防止DeFi（去中心化金融）中的搶先交易（Front-running / MEV），並在企業間建立機密聯盟網路。
 
@@ -203,13 +203,13 @@ flowchart LR
 ZKP無疑是次世代的基礎技術，但也仍有一些挑戰需要解決。
 
 1. **證明生成的計算成本與硬體加速**
-   生成ZKP需要龐大的多項式運算、FFT（快速傅立葉轉換）與MSM（多純量乘法）。目前，為了加速這種證明生成，專用硬體（FPGA或ASIC）的開發，也就是所謂的 **ZKP挖礦** （Prover Network）研究正在快速進展。
+   生成ZKP需要龐大的多項式運算、[FFT](/zh-tw/p/fast-fourier-transform-algorithm/)（快速傅立葉轉換）與MSM（多純量乘法）。目前，為了加速這種證明生成，專用硬體（FPGA或ASIC）的開發，也就是所謂的 **ZKP挖礦** （Prover Network）研究正在快速進展。
 2. **標準化與開發者體驗（DX）的提升**
    用於撰寫ZKP電路的專用語法（如Circom、Cairo、Noir、Leo等）百花齊放。統一這些標準，以及能從現有的[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)或C++自動生成ZKP電路的編譯器發展成熟度，將成為一般軟體工程師導入ZKP的關鍵。
 
 ## 結語
 
-零知識證明（ZKP）已經從單純「提高[加密貨幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)匿名性的技術」，進化為「重新定義整個網際網路信任（Trust）的通用技術」。在數學公式與密碼理論深處計算出的小小證明，將無限擴展區塊鏈的擴展性，並成為堅固保護我們隱私的盾牌。
+零知識證明（ZKP）已經從單純「提高[加密貨幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)匿名性的技術」，進化為「重新定義整個網際網路信任（Trust）的通用技術」。在數學公式與密碼理論深處計算出的小小證明，將無限擴展[區塊鏈](/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)的擴展性，並成為堅固保護我們隱私的盾牌。
 
 為了實現Web3的真正大規模採用（Mass Adoption），並建立安全且私密的次世代網際網路，零知識證明將持續扮演最重要的拼圖。ZKP技術未來的發展絕對不容錯過。
 

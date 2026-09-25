@@ -104,7 +104,7 @@ Windows 8の反省を踏まえ、Microsoftは「Windows 10」で従来のデス�
 
 さらに、Windows 10は「Windows as a Service（サービスとしてのWindows）」という新しい概念を導入しました。数年おきに新しいメジャーバージョンをリリースする旧来のビジネスモデルを廃止し、年に数回の大型アップデートを無料で提供することで、OSを継続的に進化させる方針へと転換しました。
 
-また、開発者向けには「WSL (Windows Subsystem for Linux)」が搭載され、Windows上で直接Linux環境を動作させることが可能になりました。これにより、Windowsはウェブ開発者やデータサイエンティストにとっても極めて魅力的なプラットフォームへと変貌を遂げました。
+また、開発者向けには「WSL ([Windows Subsystem for Linux](/p/wsl2-ultimate-development-setup-guide/))」が搭載され、Windows上で直接Linux環境を動作させることが可能になりました。これにより、Windowsはウェブ開発者やデータサイエンティストにとっても極めて魅力的なプラットフォームへと変貌を遂げました。
 
 ## 7. そして現在：Windows 11とAIの融合へ
 

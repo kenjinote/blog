@@ -27,7 +27,7 @@ In diesem Artikel werden wir im Detail untersuchen, wie sich das Lambda-Kalkül 
 
 ### 2.1 Die Herausforderung des Entscheidungsproblems
 
-1928 stellte der Mathematiker David Hilbert das „Entscheidungsproblem“ (Entscheidungsproblem) auf. Die Frage lautete: „Gibt es einen Algorithmus, der für eine gegebene mathematische Aussage mechanisch bestimmen kann, ob sie wahr oder falsch ist?“
+1928 stellte der Mathematiker [David Hilbert](/de/p/hilbert/) das „Entscheidungsproblem“ (Entscheidungsproblem) auf. Die Frage lautete: „Gibt es einen Algorithmus, der für eine gegebene mathematische Aussage mechanisch bestimmen kann, ob sie wahr oder falsch ist?“
 
 Um diese Frage zu beantworten, musste zunächst streng definiert werden, was „berechenbar“ bedeutet oder dass ein „Algorithmus existiert“. 1936 gab es zwei Genies, die dieses Problem unabhängig voneinander lösten. Der eine war Alan Turing und der andere war sein Doktorvater, Alonzo Church.
 

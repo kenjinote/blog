@@ -90,7 +90,7 @@ flowchart TD
 
 ## [デカルト](https://kenji.blog/p/descartes/)の秘密の手稿：もう一つの発見の物語
 
-実は、[オイラー](https://kenji.blog/p/euler/)がこの定理を発表する約1世紀前、フランスの哲学者であり数学者でもあったルネ・デカルト（[René Descartes](https://kenji.blog/p/descartes/)）が、本質的に同じ定理に到達していました。
+実は、[オイラー](https://kenji.blog/p/euler/)がこの定理を発表する約1世紀前、フランスの哲学者であり数学者でもあった[ルネ・デカルト](/p/descartes/)（[René Descartes](https://kenji.blog/p/descartes/)）が、本質的に同じ定理に到達していました。
 [デカルト](https://kenji.blog/p/descartes/)は、多面体の頂点における「不足角」という概念に注目しました。
 一つの頂点に集まる面の角度の合計は、平面であれば $360^\circ$ になりますが、立体の頂点では必ず $360^\circ$ よりも小さくなります。この $360^\circ$ からの不足分を「不足角」と呼びます。
 

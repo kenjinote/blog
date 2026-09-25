@@ -10,7 +10,7 @@ slug: "history-of-salesforce"
 ---
 # Sejarah Perusahaan: Sejarah Salesforce - Pelopor SaaS (Perangkat Lunak Cloud)
 
-Salesforce adalah pelopor SaaS.
+[Salesforce](/id/p/salesforceceloteh%E5%85%A8%E6%B6%88%E3%81%97perintah/) adalah pelopor SaaS.
 
 ## Evolusi Komputasi Cloud
 

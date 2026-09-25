@@ -175,7 +175,7 @@ Avec un VPN traditionnel, lorsqu'un ingénieur distant accède à un SaaS sur le
 
 ## Le changement de paradigme grâce au Zero Trust ([BeyondCorp](https://kenji.blog/fr/p/zero-trust-network-architecture-beyond-corp/))
 
-Ce qui brise ces limites réseau et réalise un véritable "environnement de travail confortable et sécurisé depuis n'importe où" est l'**Architecture Réseau Zero Trust (Zero Trust Network Architecture : ZTNA)**, popularisée par "BeyondCorp" de Google.
+Ce qui brise ces limites réseau et réalise un véritable "environnement de travail confortable et sécurisé depuis n'importe où" est l'**[Architecture Réseau Zero Trust](/fr/p/zero-trust-network-architecture-beyond-corp/) (Zero Trust Network Architecture : ZTNA)**, popularisée par "BeyondCorp" de Google.
 
 Le cœur du Zero Trust est que "la frontière du réseau (interne ou externe) n'est pas le fondement de la confiance".
 
@@ -230,7 +230,7 @@ La productivité globale d'un ingénieur est exprimée comme une fonction comple
 
 Le débat "Télétravail vs Retour au bureau" est souvent perçu comme un conflit opposant les "droits des travailleurs au désir de contrôle de la direction", mais l'essence ne réside pas là.
 
-La direction doit abandonner l'illusion selon laquelle "le simple fait de rassembler des gens dans un bureau suscitera de l'innovation par magie". Forcer simplement les gens à revenir au bureau sans investir dans une conception organisationnelle tirant parti de la loi de Conway pour le développement de systèmes distribués, ni dans des infrastructures modernes comme le Zero Trust, ne fera que réduire l'engagement et la productivité des ingénieurs.
+La direction doit abandonner l'illusion selon laquelle "le simple fait de rassembler des gens dans un bureau suscitera de l'innovation par magie". Forcer simplement les gens à revenir au bureau sans investir dans une conception organisationnelle tirant parti de la loi de Conway pour le développement de [systèmes distribués](/fr/p/cap-theorem-distributed-systems-tradeoff/), ni dans des infrastructures modernes comme le Zero Trust, ne fera que réduire l'engagement et la productivité des ingénieurs.
 
 D'un autre côté, les ingénieurs (en particulier les seniors) doivent également revoir leur point de vue égoïste selon lequel "un bureau n'est pas nécessaire parce que je suis plus productif en écrivant du code tout seul". L'ingénierie est un sport d'équipe, impliquant de larges responsabilités au-delà de la seule productivité du code, incluant la conception du système pour l'ensemble de l'organisation, la formation des membres juniors et la coordination en cas d'urgence. Il est également vrai qu'une communication à large bande passante dans un espace physique peut parfois sauver l'ensemble d'un projet.
 

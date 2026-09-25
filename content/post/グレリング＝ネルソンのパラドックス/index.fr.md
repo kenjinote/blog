@@ -87,7 +87,7 @@ Ce paradoxe n'est pas une simple erreur de calcul ou une illusion comme l'"énig
 
 Le paradoxe de Grelling-Nelson peut être vu comme la version sémantique (la signification des mots) du paradoxe de Russell.
 
-Le paradoxe de Russell dans la théorie des ensembles :
+[Le paradoxe de Russell](/fr/p/russells-paradox/) dans la théorie des ensembles :
 Lorsqu'on définit l'ensemble
 $$ R = \{ x \mid x \notin x \} $$
 demander si $R \in R$ ou $R \notin R$ conduit à une contradiction.

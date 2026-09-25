@@ -197,9 +197,9 @@ rsa_example()
 
 Meskipun kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) kuat, dengan peningkatan kinerja komputer, menjadi perlu untuk memperpanjang kunci (saat ini 2048 atau 3072 bit) untuk menjaga keamanan, yang mengakibatkan masalah peningkatan biaya komputasi.
 
-Sebagai solusinya, "Kriptografi Kurva Eliptik (ECC: Elliptic Curve [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)" diusulkan pada tahun 1985. Ini menggunakan penambahan titik pada kurva eliptik di atas medan berhingga (umumnya dalam bentuk $y^2 = x^3 + ax + b$).
+Sebagai solusinya, "Kriptografi Kurva Eliptik ([ECC](/id/p/elliptic-curve-cryptography-math-cpp/): Elliptic Curve [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)" diusulkan pada tahun 1985. Ini menggunakan penambahan titik pada kurva eliptik di atas medan berhingga (umumnya dalam bentuk $y^2 = x^3 + ax + b$).
 
-Masalah logaritma diskrit pada kurva eliptik (ECDLP) diketahui lebih sulit dipecahkan daripada masalah faktorisasi prima, sehingga **ECC dapat mencapai tingkat keamanan yang setara dengan [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) 3072-bit hanya dengan panjang kunci 256-bit**. Hal ini memungkinkan komunikasi terenkripsi yang cepat dan aman (seperti ECDSA dan ECDH) bahkan di lingkungan dengan sumber daya komputasi terbatas seperti smartphone dan perangkat IoT.
+Masalah logaritma diskrit pada kurva eliptik (ECDLP) diketahui lebih sulit dipecahkan daripada masalah faktorisasi prima, sehingga **[ECC](/id/p/elliptic-curve-cryptography-math-cpp/) dapat mencapai tingkat keamanan yang setara dengan [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) 3072-bit hanya dengan panjang kunci 256-bit**. Hal ini memungkinkan komunikasi terenkripsi yang cepat dan aman (seperti ECDSA dan ECDH) bahkan di lingkungan dengan sumber daya komputasi terbatas seperti smartphone dan perangkat IoT.
 
 ---
 
@@ -207,7 +207,7 @@ Masalah logaritma diskrit pada kurva eliptik (ECDLP) diketahui lebih sulit dipec
 
 Teknologi kriptografi tampaknya sangat solid, tetapi algoritma Shor yang diterbitkan oleh Peter Shor pada tahun 1994 memberikan kejutan besar.
 
-Komputer kuantum melakukan komputasi menggunakan sifat mekanika kuantum dari "superposisi" dan "keterikatan kuantum (quantum entanglement)". Telah terbukti secara matematis bahwa ketika algoritma Shor dieksekusi pada komputer kuantum dengan kinerja yang memadai, masalah faktorisasi prima dan masalah logaritma diskrit dapat diselesaikan dalam "waktu polinomial". Ini berarti bahwa pada hari ketika komputer kuantum yang praktis selesai (Q-Day), semua kriptografi kunci publik yang digunakan saat ini seperti RSA dan ECC akan hancur seketika.
+Komputer kuantum melakukan komputasi menggunakan sifat mekanika kuantum dari "superposisi" dan "keterikatan kuantum (quantum entanglement)". Telah terbukti secara matematis bahwa ketika algoritma Shor dieksekusi pada komputer kuantum dengan kinerja yang memadai, masalah faktorisasi prima dan masalah logaritma diskrit dapat diselesaikan dalam "waktu polinomial". Ini berarti bahwa pada hari ketika komputer kuantum yang praktis selesai (Q-Day), semua kriptografi kunci publik yang digunakan saat ini seperti RSA dan [ECC](/id/p/elliptic-curve-cryptography-math-cpp/) akan hancur seketika.
 
 ## Kemunculan PQC (Post-Quantum [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)
 Untuk mempersiapkan diri terhadap ancaman yang belum pernah terjadi sebelumnya ini, penelitian mengenai "Kriptografi Pasca-Kuantum (PQC)" dengan cepat dimajukan. PQC didasarkan pada masalah matematika baru yang sulit dipecahkan bahkan oleh komputer kuantum. NIST (Institut Nasional Standar dan Teknologi AS) telah memajukan proses standardisasi PQC selama bertahun-tahun, dan pendekatan matematika berikut ini sebagian besar dianggap paling menjanjikan:

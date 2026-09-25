@@ -22,20 +22,20 @@ Jika saya dapat menyalin "data digital senilai 10.000 yen" yang saya miliki dan 
 
 Sampai saat ini, satu-satunya cara untuk mencegah masalah pengeluaran ganda ini adalah "**administrator pusat yang dipercaya oleh semua orang, seperti bank atau perusahaan kartu kredit, mengelola saldo rekening (buku besar) semua orang dengan ketat**".
 
-Namun pada tahun 2008, melalui makalah yang diterbitkan oleh seseorang (atau kelompok) misterius bernama Satoshi Nakamoto, untuk pertama kalinya dalam sejarah lahir "mata uang digital yang sama sekali tidak dapat dipalsukan atau dihabiskan dua kali, meskipun tidak ada administrator pusat". Itulah **Bitcoin**, dan teknologi inti yang mendasarinya adalah **Blockchain**.
+Namun pada tahun 2008, melalui makalah yang diterbitkan oleh seseorang (atau kelompok) misterius bernama Satoshi Nakamoto, untuk pertama kalinya dalam sejarah lahir "mata uang digital yang sama sekali tidak dapat dipalsukan atau dihabiskan dua kali, meskipun tidak ada administrator pusat". Itulah **Bitcoin**, dan teknologi inti yang mendasarinya adalah **[Blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/)**.
 
 ## 2. Apa itu Blockchain? (Buku Besar Terdistribusi)
 
-Singkatnya, blockchain adalah "**sistem di mana semua peserta di seluruh dunia berbagi salinan catatan transaksi (buku besar) yang sama dan saling mengawasi satu sama lain**".
+Singkatnya, [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/) adalah "**sistem di mana semua peserta di seluruh dunia berbagi salinan catatan transaksi (buku besar) yang sama dan saling mengawasi satu sama lain**".
 
 Ketika seseorang melakukan transaksi "mengirim 1 Bitcoin dari A ke B", informasi tersebut disebarkan ke komputer (node) di seluruh dunia melalui jaringan P2P.
-Kumpulan transaksi yang terjadi di seluruh dunia dalam waktu sekitar 10 menit dikemas ke dalam satu kotak (**blok**). Kemudian, kotak itu dihubungkan di belakang kotak-kotak sebelumnya seperti "rantai" (**chain**) dan disimpan. Inilah asal mula nama "blockchain".
+Kumpulan transaksi yang terjadi di seluruh dunia dalam waktu sekitar 10 menit dikemas ke dalam satu kotak (**blok**). Kemudian, kotak itu dihubungkan di belakang kotak-kotak sebelumnya seperti "rantai" (**chain**) dan disimpan. Inilah asal mula nama "[blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/)".
 
 Isi blok (catatan transaksi masa lalu) yang telah dihubungkan ke rantai sama sekali tidak dapat diubah lagi. Mengapa hal itu mungkin?
 
 ## 3. "Fungsi Hash Kriptografis" yang Mencegah Perubahan
 
-Sifat blockchain yang "benar-benar tidak dapat diubah" didukung oleh teknologi kriptografi yang disebut **fungsi hash (seperti SHA-256)**.
+Sifat [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/) yang "benar-benar tidak dapat diubah" didukung oleh teknologi kriptografi yang disebut **fungsi hash (seperti SHA-256)**.
 
 Fungsi hash adalah "kalkulator yang selalu menghasilkan string acak (nilai hash) dengan panjang yang sama, tidak peduli seberapa panjang data yang dimasukkan".
 Karakteristiknya adalah "jika data asli berubah bahkan 1 karakter saja, nilai hash yang dihasilkan akan berubah drastis menjadi sesuatu yang sama sekali berbeda". Selain itu, tidak mungkin menghitung kembali data asli dari nilai hash yang dihasilkan (fungsi satu arah).
@@ -73,6 +73,6 @@ Daripada menghabiskan banyak uang (biaya listrik) untuk melakukan kejahatan (pem
 
 ## 6. Kesimpulan: Menuju Dunia Trustless (Tanpa Kebutuhan akan Kepercayaan)
 
-Blockchain adalah penemuan revolusioner di mana "bahkan tanpa mempercayai orang tertentu (Trustless), konsensus yang benar terbentuk dalam keseluruhan sistem melalui kekuatan matematika, kriptografi, dan insentif ekonomi".
+[Blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/) adalah penemuan revolusioner di mana "bahkan tanpa mempercayai orang tertentu (Trustless), konsensus yang benar terbentuk dalam keseluruhan sistem melalui kekuatan matematika, kriptografi, dan insentif ekonomi".
 
 Bitcoin hanyalah aplikasi pertamanya. Saat ini, dengan menerapkan sistem "buku besar terdistribusi yang sama sekali tidak dapat diubah" ini, ia telah menjadi fondasi inovasi raksasa untuk menciptakan bentuk internet berikutnya (Web3), seperti smart contract (eksekusi kontrak otomatis), NFT (bukti kepemilikan digital), hingga keuangan terdesentralisasi (DeFi) dan bentuk organisasi baru (DAO).

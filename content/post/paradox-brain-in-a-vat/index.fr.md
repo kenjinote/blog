@@ -18,7 +18,7 @@ Cette question est le mystère ultime qui n'a cessé de fasciner l'intelligence 
 
 ## Chapitre 1 : L'impact de l'expérience de pensée du « cerveau dans une cuve »
 
-Le « cerveau dans une cuve » (Brain in a vat) est une expérience de pensée proposée par le philosophe Hilary Putnam en 1981. Cependant, la question sous-jacente de « jusqu'à quel point pouvons-nous faire confiance à notre perception ? » remonte à l'argument du « malin génie » (Dieu trompeur) de René Descartes au 17e siècle.
+Le « cerveau dans une cuve » (Brain in a vat) est une expérience de pensée proposée par le philosophe Hilary Putnam en 1981. Cependant, la question sous-jacente de « jusqu'à quel point pouvons-nous faire confiance à notre perception ? » remonte à l'argument du « malin génie » (Dieu trompeur) de [René Descartes](/fr/p/descartes/) au 17e siècle.
 
 ### 1-1. Qu'est-ce que le cerveau dans une cuve ?
 

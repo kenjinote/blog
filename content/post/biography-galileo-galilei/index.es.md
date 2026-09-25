@@ -50,7 +50,7 @@ Además, es importante que puso en práctica el "método científico" de verific
 
 ## Gran influencia en la posteridad y significado en la era moderna
 
-El horizonte que Galileo abrió tuvo un impacto decisivo en las generaciones posteriores. Las leyes sobre el movimiento que presentó (especialmente la ley de la caída de los cuerpos y el concepto de inercia) fueron integradas por Isaac Newton y fructificaron en el magnífico sistema de la mecánica clásica. Cuando Newton dijo: "Si he visto más lejos, es poniéndome sobre los hombros de gigantes", no hay duda de que uno de esos gigantes era Galileo.
+El horizonte que Galileo abrió tuvo un impacto decisivo en las generaciones posteriores. Las leyes sobre el movimiento que presentó (especialmente la ley de la caída de los cuerpos y el concepto de inercia) fueron integradas por [Isaac Newton](/es/p/newton/) y fructificaron en el magnífico sistema de la mecánica clásica. Cuando Newton dijo: "Si he visto más lejos, es poniéndome sobre los hombros de gigantes", no hay duda de que uno de esos gigantes era Galileo.
 
 Además, la tragedia de la represión mediante el juicio de la Inquisición todavía proporciona una lección histórica importante al considerar la relación entre la ciencia y la religión, o la verdad y el poder. En 1992, el Papa Juan Pablo II reconoció oficialmente los errores de la Iglesia en el juicio de Galileo y lo rehabilitó. Después de más de 350 años, fue el momento en que la verdad venció al poder.
 

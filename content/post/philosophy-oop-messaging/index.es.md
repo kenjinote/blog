@@ -10,13 +10,13 @@ image: "eyecatch.jpg"
 
 ## 1. Introducción: ¿Es real la "Orientación a Objetos" que conocemos?
 
-En el desarrollo de software moderno, no hay un día en el que no escuchemos el término "Programación Orientada a Objetos (POO: Object-Oriented Programming)". La mayoría de los lenguajes de programación predominantes como Java, C#, Python, Ruby, C++, entre otros, han adoptado el paradigma orientado a objetos, convirtiéndose en un conocimiento esencial para los desarrolladores.
+En el desarrollo de software moderno, no hay un día en el que no escuchemos el término "Programación Orientada a Objetos ([POO](/es/p/object-oriented-programming-oop-solid-principles/): Object-Oriented Programming)". La mayoría de los lenguajes de programación predominantes como Java, C#, Python, Ruby, C++, entre otros, han adoptado el paradigma orientado a objetos, convirtiéndose en un conocimiento esencial para los desarrolladores.
 
 Sin embargo, ¿sabías que los "tres grandes elementos de la orientación a objetos" que muchos desarrolladores aprenden primero —es decir, "Encapsulamiento (Encapsulation)", "Herencia (Inheritance)" y "Polimorfismo (Polymorphism)"— en realidad se desvían significativamente de la esencia prevista por Alan Kay, a quien se le puede llamar el padre de la orientación a objetos?
 
 El estilo que escribimos a diario, "definir una clase, crear una instancia y llamar a un método con notación de punto", es ciertamente una forma de orientación a objetos construida por lenguajes específicos (por ejemplo, C++ o Java). Sin embargo, eso es solo una pequeña parte del vasto concepto de la orientación a objetos, o simplemente una interpretación específica.
 
-En este artículo, volveremos a la historia temprana de cuándo se acuñó el término orientación a objetos y a la visión que Alan Kay realmente quería hacer realidad. La palabra clave para esto es **"Mensajería (Messaging)"**. Al comprender correctamente el concepto de mensajería, tu perspectiva de diseño de sistemas se ampliará en gran medida, y podrás obtener conocimientos profundos que se conectan con el diseño de sistemas distribuidos modernos, como la arquitectura de microservicios o el modelo de actores.
+En este artículo, volveremos a la historia temprana de cuándo se acuñó el término orientación a objetos y a la visión que Alan Kay realmente quería hacer realidad. La palabra clave para esto es **"Mensajería (Messaging)"**. Al comprender correctamente el concepto de mensajería, tu perspectiva de diseño de sistemas se ampliará en gran medida, y podrás obtener conocimientos profundos que se conectan con el diseño de [sistemas distribuidos](/es/p/cap-theorem-distributed-systems-tradeoff/) modernos, como la arquitectura de [microservicios](/es/p/microservices-architecture-bff-api-gateway/) o el modelo de actores.
 
 ## 2. La visión de Alan Kay: Inspiración desde la biología
 
@@ -72,7 +72,7 @@ Las características de la mensajería son las siguientes:
 2. **Delegación e ignorancia de mensajes**
    Cuando un objeto recibe un mensaje que no puede entender, no simplemente genera un error, sino que puede tomar medidas flexibles de forma autónoma, como reenviarlo (forward) a otro objeto o ignorarlo.
 3. **Transparencia en la red**
-   El paradigma de la mensajería puede tratar a objetos dentro del mismo espacio de memoria (proceso) de la misma manera que a objetos en servidores separados a través de una red. Las llamadas a métodos asumen como premisa básica que están en el mismo espacio de memoria, pero la mensajería tiene la propiedad de escalar naturalmente a sistemas distribuidos.
+   El paradigma de la mensajería puede tratar a objetos dentro del mismo espacio de memoria (proceso) de la misma manera que a objetos en servidores separados a través de una red. Las llamadas a métodos asumen como premisa básica que están en el mismo espacio de memoria, pero la mensajería tiene la propiedad de escalar naturalmente a [sistemas distribuidos](/es/p/cap-theorem-distributed-systems-tradeoff/).
 
 ## 4. ¿Por qué las "Clases" y la "Herencia" causaron malentendidos?
 
@@ -116,9 +116,9 @@ flowchart LR
 
 En Erlang/Elixir, cientos de miles de actores (procesos) livianos se ejecutan en paralelo, construyendo un sistema gigantesco enviándose mensajes entre sí. Si un actor falla, se envía un mensaje a otro actor para reiniciarlo (la filosofía de 'Let it crash'), logrando una tolerancia a fallos extremadamente alta.
 
-Además, la moderna **"Arquitectura de Microservicios (Microservices Architecture)"** también se puede considerar esencialmente como una versión gigante de la orientación a objetos orientada a mensajes. Si consideramos cada microservicio como un "objeto" gigante, estos ocultan completamente su propia base de datos (estado interno) y construyen el sistema en su conjunto a través del intercambio de "mensajes" vía REST API, gRPC, Kafka, etc.
+Además, la moderna **"Arquitectura de [Microservicios](/es/p/microservices-architecture-bff-api-gateway/) (Microservices Architecture)"** también se puede considerar esencialmente como una versión gigante de la orientación a objetos orientada a mensajes. Si consideramos cada microservicio como un "objeto" gigante, estos ocultan completamente su propia base de datos (estado interno) y construyen el sistema en su conjunto a través del intercambio de "mensajes" vía REST API, gRPC, Kafka, etc.
 
-La visión con la que soñaba Alan Kay, donde "objetos dispersos en diferentes nodos de la red se envían mensajes entre sí", se ha materializado inadvertidamente en la era nativa de la nube en forma de microservicios.
+La visión con la que soñaba Alan Kay, donde "objetos dispersos en diferentes nodos de la red se envían mensajes entre sí", se ha materializado inadvertidamente en la era nativa de la nube en forma de [microservicios](/es/p/microservices-architecture-bff-api-gateway/).
 
 ## 6. Conclusión: Lo que realmente deberíamos aprender de la Orientación a Objetos
 
@@ -129,7 +129,7 @@ Sin embargo, para gestionar la complejidad de los sistemas y diseñar de manera 
 1. **No exponer datos y comportamiento innecesariamente** (Proteger la pared celular).
 2. **Enviar mensajes como "solicitudes" en lugar de llamadas a métodos** (Respeto por la autonomía).
 3. **Ser consciente de la flexibilidad en tiempo de ejecución y la ligadura tardía**.
-4. **Comprender la arquitectura con una metáfora común, desde dentro del proceso hasta los sistemas distribuidos**.
+4. **Comprender la arquitectura con una metáfora común, desde dentro del proceso hasta los [sistemas distribuidos](/es/p/cap-theorem-distributed-systems-tradeoff/)**.
 
 La próxima vez que escribas código o pienses en el diseño de un sistema, intenta adoptar la perspectiva de "¿Qué mensaje debería enviar este objeto a otros objetos?". Al centrarte en "la red y la comunicación de objetos" en lugar de en la "estructura jerárquica de clases", tu diseño debería volverse más refinado, resistente a los cambios y verdaderamente "orientado a objetos".
 

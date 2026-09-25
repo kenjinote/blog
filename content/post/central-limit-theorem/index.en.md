@@ -135,7 +135,7 @@ $$
 E[\bar X_n]=\mu,\qquad \operatorname{Var}(\bar X_n)=\frac{\sigma^2}{n},\qquad \operatorname{SE}(\bar X_n)=\frac{\sigma}{\sqrt n}.
 $$
 
-Quadrupling the number of samples halves the standard error. The law of large numbers states that the sample mean approaches $\mu$, and the [Central Limit Theorem](https://kenji.blog/en/p/central-limit-theorem/) describes the shape of the distribution by multiplying the fluctuation around it by $\sqrt{n}$.
+Quadrupling the number of samples halves the standard error. The [law of large numbers](/en/p/law-of-large-numbers/) states that the sample mean approaches $\mu$, and the [Central Limit Theorem](https://kenji.blog/en/p/central-limit-theorem/) describes the shape of the distribution by multiplying the fluctuation around it by $\sqrt{n}$.
 
 ### Appendix 4: Supplementary Proof Using Characteristic Functions
 
@@ -145,7 +145,7 @@ $$
 \phi_Y(t)=E[e^{itY}]=1-\frac{t^2}{2}+o(t^2)\quad(t\to0).
 $$
 
-From independence, the following equation is obtained. Since the limit is the characteristic function of the standard normal distribution, convergence in distribution follows from Lévy's continuity theorem. Characteristic functions and moment-generating functions are different, and the existence of a moment-generating function is not necessary for this proof.
+From independence, the following equation is obtained. Since the limit is the characteristic function of the standard normal distribution, convergence in distribution follows from Lévy's continuity theorem. Characteristic functions and moment-[generating functions](/en/p/generating-functions/) are different, and the existence of a moment-generating function is not necessary for this proof.
 
 $$
 \phi_{Z_n}(t)=\left[\phi_Y\!\left(\frac{t}{\sqrt n}\right)\right]^n

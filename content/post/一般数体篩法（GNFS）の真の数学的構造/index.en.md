@@ -158,8 +158,8 @@ Furthermore, because the original pairs $(a, b)$ were correspondingly created in
 All that is left is to pray that these $X$ and $Y$ are not trivial solutions ($X \equiv \pm Y$) and calculate:
 **$\gcd(X - Y, N)$**
 
-If it is a non-trivial solution, the [Euclide](https://kenji.blog/p/euclid/)an algorithm will race through in 0.001 seconds, and the secret primes $p$ and $q$, which are the heart of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption, will be printed on the output screen.
+If it is a non-trivial solution, the [Euclide](https://kenji.blog/en/p/euclid/)an algorithm will race through in 0.001 seconds, and the secret primes $p$ and $q$, which are the heart of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption, will be printed on the output screen.
 
 ---
 
-This is the **complete form of the "General Number Field Sieve (GNFS)"**, gathering the essence of modern mathematics.
+This is the **complete form of the "[General Number Field Sieve](/en/p/beyond-gnfs-integer-factorization-algorithms/) (GNFS)"**, gathering the essence of modern mathematics.

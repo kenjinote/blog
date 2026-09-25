@@ -29,7 +29,7 @@ Le plus grand charme de l'œuvre de Lewis Carroll réside dans la fusion d'une �
 
 Sous le nom de Dodgson, il était un logicien rigoureux qui a rédigé des livres spécialisés tels que « Traité élémentaire sur les déterminants » (1867) et « Logique symbolique » (1896). Sa littérature de l'absurde est un jeu intellectuel qui utilise habilement l'ambiguïté des mots, les sophismes syllogistiques et la distorsion du temps et de l'espace. Sa technique consistant à démanteler le sens absolu des « mots » et à libérer les lecteurs des limites du bon sens possède une profondeur qui rejoint la philosophie moderne du langage.
 
-Par exemple, la célèbre scène où Humpty Dumpty affirme : « Quand j'utilise un mot, il signifie exactement ce que je choisis qu'il signifie », est un aperçu aigu de l'arbitraire du langage et de la nature de la communication. On dit que cela a influencé des philosophes ultérieurs comme Ludwig Wittgenstein. Pour lui, la « logique » était à la fois la loi absolue définissant le monde et le « jouet » ultime qui pouvait créer un univers parallèle complètement différent simplement en modifiant légèrement les conditions.
+Par exemple, la célèbre scène où Humpty Dumpty affirme : « Quand j'utilise un mot, il signifie exactement ce que je choisis qu'il signifie », est un aperçu aigu de l'arbitraire du langage et de la nature de la communication. On dit que cela a influencé des philosophes ultérieurs comme [Ludwig Wittgenstein](/fr/p/biography-ludwig-wittgenstein/). Pour lui, la « logique » était à la fois la loi absolue définissant le monde et le « jouet » ultime qui pouvait créer un univers parallèle complètement différent simplement en modifiant légèrement les conditions.
 
 ## Héritage : Répercussions sur la littérature, la culture et la science
 

@@ -14,7 +14,7 @@ description: "A detailed explanation of the mathematical foundations of Zero-Kno
 
 In modern digital society, data privacy and scalability have become two of the most critical challenges. As the risks of personal information leaks and unauthorized use increase, there is a strong demand for technology that allows you to "prove that you have certain information without revealing the information itself to the other party." This is realized by **Zero-Knowledge Proofs (ZKP)**.
 
-Zero-Knowledge Proofs is a concept in cryptography first proposed in the 1980s by Shafi Goldwasser, Silvio Micali, and Charles Rackoff, but for a long time, it remained primarily a theoretical research topic. However, with the rise of blockchain technology and Web3, the situation completely changed. ZKP has suddenly been thrust into the spotlight as the "magic wand" that simultaneously solves the scalability problems (limits of processing capacity) and privacy problems (the fact that all transactions are public) faced by public blockchains like Ethereum.
+Zero-Knowledge Proofs is a concept in cryptography first proposed in the 1980s by Shafi Goldwasser, Silvio Micali, and Charles Rackoff, but for a long time, it remained primarily a theoretical research topic. However, with the rise of [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/) technology and Web3, the situation completely changed. ZKP has suddenly been thrust into the spotlight as the "magic wand" that simultaneously solves the scalability problems (limits of processing capacity) and privacy problems (the fact that all transactions are public) faced by public blockchains like Ethereum.
 
 In this article, we will provide a highly detailed and technically deep explanation, ranging from the basic concepts of Zero-Knowledge Proofs to the profound mathematical and cryptographic mechanisms of the currently mainstream **zk-SNARKs** and **zk-STARKs**, and finally to the latest application examples in Web3 and security, such as ZK-Rollups and Decentralized Identity (DID).
 
@@ -60,7 +60,7 @@ sequenceDiagram
     Note over Prover, Verifier: "* Repeat this dozens of times to increase certainty"
 ```
 
-This method is powerful, but the verifier must be online, making it inconvenient to apply to asynchronous distributed systems like blockchains. In a blockchain, anyone must be able to verify past proofs at any time.
+This method is powerful, but the verifier must be online, making it inconvenient to apply to asynchronous [distributed systems](/en/p/cap-theorem-distributed-systems-tradeoff/) like blockchains. In a [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/), anyone must be able to verify past proofs at any time.
 
 #### Fiat-Shamir Heuristic and Non-Interactivity
 
@@ -192,7 +192,7 @@ Projects for Proof of Personhood like Worldcoin also incorporate a mechanism to 
 
 ### 3. Confidential [Smart Contract](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/)s and Enterprise Use
 
-The property of public blockchains that "all data is public" has been a major barrier for companies handling confidential transactions and supply chain information on the blockchain.
+The property of public blockchains that "all data is public" has been a major barrier for companies handling confidential transactions and supply chain information on the [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/).
 
 By using ZKP technology (such as privacy-focused networks like Aleo and Aztec), the input values, output values of transactions, and even the smart contract logic executed can be kept encrypted, while only the validity of state updates is etched onto the public chain. This makes it possible to prevent front-running (MEV) in DeFi (Decentralized Finance) and to build confidential consortium networks among enterprises, all while enjoying the high security of public chains.
 
@@ -203,13 +203,13 @@ By using ZKP technology (such as privacy-focused networks like Aleo and Aztec), 
 While ZKPs are undoubtedly a next-generation foundational technology, several challenges remain.
 
 1. **Proof Generation Computational Costs and Hardware Acceleration**
-   Generating a ZKP requires massive polynomial operations, FFT (Fast Fourier Transform), and MSM (Multi-Scalar Multiplication). Currently, research into dedicated hardware (FPGAs and ASICs) to accelerate this proof generation, known as **ZKP Mining** (Prover Networks), is rapidly advancing.
+   Generating a ZKP requires massive polynomial operations, [FFT](/en/p/fast-fourier-transform-algorithm/) ([Fast Fourier Transform](/en/p/fast-fourier-transform-algorithm/)), and MSM (Multi-Scalar Multiplication). Currently, research into dedicated hardware (FPGAs and ASICs) to accelerate this proof generation, known as **ZKP Mining** (Prover Networks), is rapidly advancing.
 2. **Standardization and Improvement of Developer Experience (DX)**
    Dedicated languages for writing ZKP circuits, such as Circom, Cairo, Noir, and Leo, are proliferating. A standard unifying these and the maturation of compilers that automatically generate ZKP circuits from existing languages like [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) and C++ will be key to general software engineers adopting ZKPs.
 
 ## Conclusion
 
-Zero-Knowledge Proofs (ZKP) have evolved from merely a "technology to enhance cryptocurrency anonymity" to a "general-purpose technology redefining trust across the internet." Small proofs calculated deep within mathematics and cryptography will infinitely scale blockchain capabilities and act as a strong shield protecting our privacy.
+Zero-Knowledge Proofs (ZKP) have evolved from merely a "technology to enhance cryptocurrency anonymity" to a "general-purpose technology redefining trust across the internet." Small proofs calculated deep within mathematics and cryptography will infinitely scale [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/) capabilities and act as a strong shield protecting our privacy.
 
 Towards true mass adoption of Web3 and the construction of a secure and private next-generation internet, Zero-Knowledge Proofs will continue to function as the most crucial piece. We must keep a close eye on the future evolution of ZKP technology.
 

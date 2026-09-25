@@ -9,7 +9,7 @@ categories: ["數學", "傳記"]
 tags: ["格羅滕迪克", "代數幾何", "概形理論", "範疇論"]
 ---
 
-# [亞歷山大·格羅滕迪克：20世紀最偉大數學家的生平與成就](https://kenji.blog/p/grothendieck/)
+# [亞歷山大·格羅滕迪克：20世紀最偉大數學家的生平與成就](https://kenji.blog/zh-tw/p/grothendieck/)
 
 [亞歷山大·格羅滕迪克](https://kenji.blog/zh-tw/p/grothendieck/)（[Alexander Grothendieck](https://kenji.blog/zh-tw/p/grothendieck/)）是歷史上最偉大的數學家之一，他在20世紀後半葉的數學界，特別是在代數幾何領域，帶來了根本性的典範轉移。他的成就遠不止於解決個別的未解難題；他從根本上重構了數學本身的語言和概念框架。在本文中，我們將詳細解說他非凡而充滿戲劇性的生平，以及他對現代數學不可估量的影響。
 

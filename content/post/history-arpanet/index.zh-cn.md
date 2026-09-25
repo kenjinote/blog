@@ -35,7 +35,7 @@ image: "eyecatch.jpg"
 为了解决这个问题，一种全新的通信概念在多地同时被构想出来。那就是“分组交换（Packet Switching）方式”。
 
 隶属于美国兰德公司（RAND Corporation）的保罗·巴兰（Paul Baran），为了提高军事通信的生存能力，构建了“分布式网络”理论，将数据分割成小块，通过网状网络分别经由不同的路径进行传输。
-另一方面，英国国家物理实验室（NPL）的唐纳德·戴维斯（Donald Davies）也独立地得出了类似的概念，并将被分割的数据块命名为“分组（Packet）”。此外，麻省理工学院（MIT）的伦纳德·克莱因罗克（Leonard Kleinrock）运用数学上的排队论，证明了这种数据传输方式的效率。
+另一方面，英国国家物理实验室（NPL）的唐纳德·戴维斯（Donald Davies）也独立地得出了类似的概念，并将被分割的数据块命名为“分组（Packet）”。此外，麻省理工学院（MIT）的伦纳德·克莱因罗克（Leonard Kleinrock）运用数学上的[排队论](/zh-cn/p/queuing-theory-basics/)，证明了这种数据传输方式的效率。
 
 ```mermaid
 graph TD

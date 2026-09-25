@@ -8,7 +8,7 @@ categories: ["mathematics", "biography"]
 tags: ["谷山豐", "數學", "費馬最後定理", "谷山-志村猜想", "橢圓曲線", "模形式"]
 ---
 
-# [谷山豐：挑戰未解決問題的天才數學家之一生與成就](https://kenji.blog/p/taniyama-yutaka/)
+# [谷山豐：挑戰未解決問題的天才數學家之一生與成就](https://kenji.blog/zh-tw/p/taniyama-yutaka/)
 
 現代數學中最具戲劇性且最重要的進展之一，便是「[費馬最後定理](https://kenji.blog/zh-tw/p/fermats-last-theorem/)」的證明。在這項偉大成就的背後，存在著由兩位日本數學家提出的驚人猜想。其中之一便是英年早逝的 **[谷山豐](https://kenji.blog/zh-tw/p/taniyama-yutaka/)** （1927年 - 1958年）。在本文中，我們將深入探討他所提出的「谷山-志村猜想」蘊含著多麼宏大的願景，以及他本人波折跌宕的一生。
 
@@ -101,7 +101,7 @@ flowchart TD
 
 ## 7. 猜想的證明與朗蘭茲綱領
 
-對這一事實感到最振奮的，莫過於英國數學家 **[安德魯·懷爾斯](https://kenji.blog/zh-tw/p/wiles/)** 。他從小就對費馬最後定理著迷，並決心將其作為一生的追求。經過七年秘密的潛心研究，他於1993年宣布「證明了半穩定橢圓曲線的谷山-志村猜想」。儘管證明中後來發現了一個漏洞，但在他昔日學生理查德·泰勒（Richard Taylor）的幫助下，懷爾斯在1995年成功填補了漏洞，並發表了完整的證明論文。至此，谷山留下的猜想中至關重要的部分得到了證明，[費馬最後定理](https://kenji.blog/zh-tw/p/fermats-last-theorem/)也隨之成為了永恆的真理。
+對這一事實感到最振奮的，莫過於英國數學家 **[安德魯·懷爾斯](https://kenji.blog/zh-tw/p/wiles/)** 。他從小就對[費馬最後定理](/zh-tw/p/fermats-last-theorem/)著迷，並決心將其作為一生的追求。經過七年秘密的潛心研究，他於1993年宣布「證明了半穩定橢圓曲線的谷山-志村猜想」。儘管證明中後來發現了一個漏洞，但在他昔日學生理查德·泰勒（Richard Taylor）的幫助下，懷爾斯在1995年成功填補了漏洞，並發表了完整的證明論文。至此，谷山留下的猜想中至關重要的部分得到了證明，[費馬最後定理](https://kenji.blog/zh-tw/p/fermats-last-theorem/)也隨之成為了永恆的真理。
 
 隨後，透過克里斯多福·布勒伊（Christophe Breuil）、布萊恩·康拉德（Brian Conrad）、弗雷德·戴蒙德（Fred Diamond）和理查德·泰勒等人的進一步努力，在2001年，對於所有橢圓曲線的谷山-志村猜想被完全證明。今天，這個定理被稱為「模組性定理（Modularity Theorem）」。
 

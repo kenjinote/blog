@@ -24,7 +24,7 @@ Ketika dia masih muda, keluarganya pindah ke Berlin, di mana dia menerima pendid
 
 ## 3. Hari-hari Universitas dan Pengaruh [Kronecker](https://kenji.blog/id/p/kronecker/)
 
-[Hensel](https://kenji.blog/id/p/hensel/) belajar matematika di Universitas Bonn dan Berlin. Pada saat itu, Universitas Berlin adalah salah satu pusat penelitian matematika dunia, dengan tokoh-tokoh raksasa seperti **Karl Weierstrass** dan **Leopold [Kronecker](https://kenji.blog/id/p/kronecker/)** mengajar di sana.
+[Hensel](https://kenji.blog/id/p/hensel/) belajar matematika di Universitas Bonn dan Berlin. Pada saat itu, Universitas Berlin adalah salah satu pusat penelitian matematika dunia, dengan tokoh-tokoh raksasa seperti **[Karl Weierstrass](/id/p/weierstrass/)** dan **Leopold [Kronecker](https://kenji.blog/id/p/kronecker/)** mengajar di sana.
 
 Di antara mereka, [Kronecker](https://kenji.blog/id/p/kronecker/) memiliki pengaruh terdalam pada Hensel. Seperti yang diketahui dari kutipannya yang terkenal, "Tuhan menciptakan bilangan bulat, semua yang lain adalah karya manusia," Kronecker memegang keyakinan kuat bahwa semua matematika harus direkonstruksi secara ketat berdasarkan bilangan bulat. Di bawah bimbingan Kronecker, [Hensel](https://kenji.blog/id/p/hensel/) mengabdikan dirinya secara mendalam pada aljabar dan teori bilangan.
 

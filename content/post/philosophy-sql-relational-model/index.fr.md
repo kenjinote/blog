@@ -22,16 +22,16 @@ Dans cet article, nous remonterons aux origines du « modèle relationnel » pro
 
 Pour comprendre la véritable valeur du modèle relationnel, il faut savoir « ce qu'il a résolu ». Dans les années 1960, les modèles de bases de données dominants étaient appelés « modèles hiérarchiques » ou « modèles réseau » (des exemples typiques incluent IMS d'IBM et les systèmes de bases de données conformes à CODASYL).
 
-Ces systèmes étaient qualifiés de **« navigationnels »**. Les relations entre les données étaient codées en dur avec des pointeurs physiques (références à des adresses mémoire), et pour récupérer des données, les programmeurs devaient eux-mêmes être conscients de cette structure physique et écrire du code procédural pour « naviguer en suivant les pointeurs d'un enregistrement parent à un enregistrement enfant ».
+Ces systèmes étaient qualifiés de **« navigationnels »**. Les relations entre les données étaient codées en dur avec des [pointeurs](/fr/p/c-language-pointers-memory-management-stack-heap/) physiques (références à des adresses mémoire), et pour récupérer des données, les programmeurs devaient eux-mêmes être conscients de cette structure physique et écrire du code procédural pour « naviguer en suivant les [pointeurs](/fr/p/c-language-pointers-memory-management-stack-heap/) d'un enregistrement parent à un enregistrement enfant ».
 
 ### Les problèmes fatals des bases de données navigationnelles
 
 1. **Le manque d'indépendance des données (Lack of Data Independence)**
-   La structure physique des données (présence ou absence d'index, comment les pointeurs étaient définis, etc.) était étroitement couplée au code de l'application. Par conséquent, si vous changiez la structure de la base de données, même légèrement, vous deviez réécrire tout le code de l'application qui en dépendait.
+   La structure physique des données (présence ou absence d'index, comment les [pointeurs](/fr/p/c-language-pointers-memory-management-stack-heap/) étaient définis, etc.) était étroitement couplée au code de l'application. Par conséquent, si vous changiez la structure de la base de données, même légèrement, vous deviez réécrire tout le code de l'application qui en dépendait.
 2. **La complexité des requêtes et la dépendance aux compétences individuelles**
    S'il existait plusieurs chemins (chemins d'accès) pour récupérer un ensemble de données spécifique, le programmeur devait déterminer quel chemin était le plus efficace et écrire le code. Cela nécessitait un savoir-faire hautement spécialisé.
 3. **La difficulté des requêtes ad hoc**
-   Effectuer des recherches avec des conditions imprévues (par exemple, « lister les employés appartenant à un certain département et ayant un salaire supérieur à un certain montant ») était soit irréaliste en raison de la structure des pointeurs, soit nécessitait des coûts énormes.
+   Effectuer des recherches avec des conditions imprévues (par exemple, « lister les employés appartenant à un certain département et ayant un salaire supérieur à un certain montant ») était soit irréaliste en raison de la structure des [pointeurs](/fr/p/c-language-pointers-memory-management-stack-heap/), soit nécessitait des coûts énormes.
 
 Les données étaient piégées dans un « bourbier » de contraintes matérielles et de représentations physiques.
 

@@ -16,7 +16,7 @@ tags:
 
 # 1. Einführung: Ein Sucher des reinen Denkens
 
-[Carl Gustav Jacob Jacobi](https://kenji.blog/de/p/jacobi/) (1804–1851) war ein **deutscher Mathematiker** des 19. Jahrhunderts, der entscheidende Beiträge zu verschiedenen Gebieten wie Algebra, Analysis, Zahlentheorie und Mechanik leistete. Neben Niels Henrik Abel wird er als "Entdecker der elliptischen Funktionen" gefeiert, und er ist der Namensgeber der "[Jacobi](https://kenji.blog/de/p/jacobi/)-Matrix" (Funktionaldeterminante), der wir heute in der multivariablen Analysis häufig begegnen.
+[Carl Gustav Jacob Jacobi](https://kenji.blog/de/p/jacobi/) (1804–1851) war ein **deutscher Mathematiker** des 19. Jahrhunderts, der entscheidende Beiträge zu verschiedenen Gebieten wie Algebra, Analysis, Zahlentheorie und Mechanik leistete. Neben [Niels Henrik Abel](/de/p/abel/) wird er als "Entdecker der elliptischen Funktionen" gefeiert, und er ist der Namensgeber der "[Jacobi](https://kenji.blog/de/p/jacobi/)-Matrix" (Funktionaldeterminante), der wir heute in der multivariablen Analysis häufig begegnen.
 
 Er schätzte die Schönheit der Mathematik selbst und die Ehre des menschlichen Geistes mehr als den praktischen Nutzen. In diesem Artikel werden wir tief in [Jacobi](https://kenji.blog/de/p/jacobi/)s Leben, seine wichtigsten mathematischen Errungenschaften und die berühmten Episoden, die er hinterließ, eintauchen.
 

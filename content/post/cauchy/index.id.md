@@ -48,7 +48,7 @@ Ideologi konservatifnya dan kepribadiannya yang tanpa kompromi terkadang menyeba
 
 ## Revolusi dalam Matematika: Pengejaran Ketelitian
 
-Pencapaian terbesar [Cauchy](https://kenji.blog/id/p/cauchy/) adalah memberikan dasar yang kuat untuk analisis matematika. Ia merekonstruksi konsep-konsep seperti limit, kontinuitas, diferensiasi, dan integrasi menggunakan definisi ketat yang mengarah pada argumen epsilon-delta (kemudian disempurnakan oleh Weierstrass) yang kita pelajari saat ini.
+Pencapaian terbesar [Cauchy](https://kenji.blog/id/p/cauchy/) adalah memberikan dasar yang kuat untuk analisis matematika. Ia merekonstruksi konsep-konsep seperti limit, kontinuitas, diferensiasi, dan integrasi menggunakan definisi ketat yang mengarah pada argumen [epsilon-delta](/id/p/epsilon-delta-definition/) (kemudian disempurnakan oleh Weierstrass) yang kita pelajari saat ini.
 
 Berikut adalah beberapa pencapaian penting yang menyandang namanya.
 
@@ -74,7 +74,7 @@ Dari teorema yang tampaknya sederhana ini, hasil yang mencengangkan terus dituru
 
 $$ f(a) = \frac{1}{2\pi i} \oint_C \frac{f(z)}{z - a} \, dz $$
 
-Rumus ini adalah alat yang sangat kuat yang menjamin bahwa fungsi holomorfik dapat didiferensiasi tanpa batas dan dapat diperluas menjadi deret Taylor.
+Rumus ini adalah alat yang sangat kuat yang menjamin bahwa fungsi holomorfik dapat didiferensiasi tanpa batas dan dapat diperluas menjadi [deret Taylor](/id/p/taylor-and-maclaurin-series/).
 
 ### 3. Ketaksamaan [Cauchy](https://kenji.blog/id/p/cauchy/)-Schwarz
 

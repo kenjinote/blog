@@ -106,7 +106,7 @@ C'est une contradiction parfaite ! C'est le paradoxe de Richard.
 
 ## 4. Pourquoi la logique s'est-elle effondrée ? (Le piège du métalangage)
 
-La cause de ce paradoxe, tout comme le paradoxe de Berry, réside dans la confusion des "niveaux de langage".
+La cause de ce paradoxe, tout comme [le paradoxe de Berry](/fr/p/berry-paradox/), réside dans la confusion des "niveaux de langage".
 
 Pour faire des mathématiques de manière rigoureuse, il faut séparer clairement la "liste des nombres cibles (le langage objet)" et les "règles qui parlent de l'extérieur des propriétés de cette liste (le métalangage)".
 

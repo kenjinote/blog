@@ -281,7 +281,7 @@ Dengan ini, masalah mencari matriks invers direduksi menjadi perhitungan yang di
 Dalam artikel ini, kita telah menjelaskan secara terperinci tentang **teorema Cayley-Hamilton**, salah satu teorema yang menjadi sorotan dalam aljabar linear.
 
 * Sifat menakjubkan di mana mensubstitusikan matriks ke dalam polinomial karakteristiknya sendiri $p(\lambda)$ menghasilkan matriks nol ($p(A) = O$).
-* Pemahaman intuitif melalui diagonalisasi dan kesalahpahaman umum yang menyamakannya dengan substitusi skalar.
+* Pemahaman intuitif melalui [diagonalisasi](/id/p/diagonalization-and-jordan-normal-form/) dan kesalahpahaman umum yang menyamakannya dengan substitusi skalar.
 * Pembuktian yang elegan dan ketat menggunakan identitas matriks adjoin.
 * Aplikasi praktis seperti perhitungan cepat untuk matriks berpangkat tinggi menggunakan pembagian polinomial dan rumus untuk mencari invers matriks.
 

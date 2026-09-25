@@ -37,7 +37,7 @@ Cela dit, nous ne devrions pas prendre la « compréhension » à la légère. S
 
 Il y a beaucoup de choses dans le monde qui n'ont pas encore été élucidées. Par exemple, les mécanismes des émotions et de la conscience humaines, l'origine de l'univers, etc. Ce sont des domaines qui ne sont toujours pas complètement « compris », même avec les progrès de la science.
 
-Même dans le monde des mathématiques, il y a des problèmes non résolus qui semblent simples, comme la « conjecture de Goldbach ».
+Même dans le monde des mathématiques, il y a des problèmes non résolus qui semblent simples, comme la « [conjecture de Goldbach](/fr/p/goldbachs-conjecture/) ».
 
 ---
 

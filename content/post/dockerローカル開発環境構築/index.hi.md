@@ -23,13 +23,13 @@ tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 
 ### IaC के सिद्धांत और स्थानीय वातावरण में उनका अनुप्रयोग
 
-Infrastructure as Code (IaC) बुनियादी ढांचे (infrastructure) के कॉन्फ़िगरेशन और प्रावधान (provisioning) को मैन्युअल प्रक्रियाओं के बजाय मशीन-पठनीय (machine-readable) परिभाषा फ़ाइलों के माध्यम से प्रबंधित करने का एक दृष्टिकोण है। IaC के मुख्य सिद्धांतों में निम्नलिखित तत्व शामिल हैं:
+Infrastructure as Code ([IaC](/hi/p/iac-infrastructure-as-code-terraform/)) बुनियादी ढांचे (infrastructure) के कॉन्फ़िगरेशन और प्रावधान (provisioning) को मैन्युअल प्रक्रियाओं के बजाय मशीन-पठनीय (machine-readable) परिभाषा फ़ाइलों के माध्यम से प्रबंधित करने का एक दृष्टिकोण है। [IaC](/hi/p/iac-infrastructure-as-code-terraform/) के मुख्य सिद्धांतों में निम्नलिखित तत्व शामिल हैं:
 
 1. **घोषणात्मक दृष्टिकोण (Declarative Approach)**: "स्थिति को कैसे बदलें" के बजाय "अंतिम स्थिति कैसी होनी चाहिए", इसे परिभाषित करता है।
 2. **समरूपता (Idempotency)**: स्क्रिप्ट को कितनी बार भी निष्पादित किया जाए, हमेशा एक ही परिणाम (स्थिति) की गारंटी होती है।
 3. **संस्करण नियंत्रण (Version Control)**: बुनियादी ढांचे की स्थिति को कोड के रूप में Git जैसे VCS में सहेजा जाता है, जिससे परिवर्तन इतिहास को ट्रैक करना और पीयर रिव्यू संभव हो पाता है।
 
-स्थानीय विकास वातावरण में IaC को लागू करने का अर्थ है `Dockerfile`, `docker-compose.yml`, और `devcontainer.json` का उपयोग करके विकास वातावरण की "आदर्श स्थिति" को कोड के रूप में परिभाषित करना। इससे टीम में शामिल होने वाले नए सदस्य भी केवल रिपॉजिटरी को क्लोन करके और एक कमांड चलाकर तुरंत अपना काम शुरू कर सकते हैं, जिससे ऑनबोर्डिंग अनुभव (onboarding experience) बहुत सहज हो जाता है।
+स्थानीय विकास वातावरण में [IaC](/hi/p/iac-infrastructure-as-code-terraform/) को लागू करने का अर्थ है `Dockerfile`, `docker-compose.yml`, और `devcontainer.json` का उपयोग करके विकास वातावरण की "आदर्श स्थिति" को कोड के रूप में परिभाषित करना। इससे टीम में शामिल होने वाले नए सदस्य भी केवल रिपॉजिटरी को क्लोन करके और एक कमांड चलाकर तुरंत अपना काम शुरू कर सकते हैं, जिससे ऑनबोर्डिंग अनुभव (onboarding experience) बहुत सहज हो जाता है।
 
 ### कंटेनर तकनीक को समर्थन देने वाले कर्नेल फ़ंक्शंस
 
@@ -233,7 +233,7 @@ networks:
 
 [Docker](https://kenji.blog/hi/p/docker-container-namespace-[cgroups](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)-layers/) Compose डिफ़ॉल्ट रूप से प्रत्येक प्रोजेक्ट के लिए एक अलग ब्रिज नेटवर्क बनाता है। उपर्युक्त `app-network` इसका एक उदाहरण है।
 एक ही नेटवर्क से संबंधित कंटेनर एक दूसरे को IP पते के बजाय उनके "सेवा नाम (उदा. `db`, `redis`)" का उपयोग करके होस्टनाम के रूप में हल कर सकते हैं (DNS रिज़ॉल्यूशन)।
-उदाहरण के लिए, वेब कंटेनर से, आप `postgresql://postgres:password@db:5432/mydb` URL का उपयोग करके डेटाबेस तक पहुंच सकते हैं। यह आपको इन्फ्रास्ट्रक्चर कोड को बदले बिना पर्यावरण चर (environment variables) के माध्यम से स्थानीय और उत्पादन वातावरण (production environment) के बीच कनेक्शन गंतव्य को पारदर्शी रूप से बदलने की अनुमति देता है।
+उदाहरण के लिए, वेब कंटेनर से, आप `postgresql://postgres:password@db:5432/mydb` URL का उपयोग करके डेटाबेस तक पहुंच सकते हैं। यह आपको इन्फ्रास्ट्रक्चर कोड को बदले बिना पर्यावरण चर ([environment variables](/hi/p/cli%E0%A4%9F%E0%A5%87%E0%A4%95%E0%A5%8D%E0%A4%B8%E0%A5%8D%E0%A4%9F-%E0%A4%8F%E0%A4%A1%E0%A4%BF%E0%A4%9F%E0%A4%B0nano%E3%82%92windows%E3%81%AB%E0%A4%87%E0%A4%82%E0%A4%B8%E0%A5%8D%E0%A4%9F%E0%A5%89%E0%A4%B2%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/)) के माध्यम से स्थानीय और उत्पादन वातावरण (production environment) के बीच कनेक्शन गंतव्य को पारदर्शी रूप से बदलने की अनुमति देता है।
 
 ### हेल्थचेक (Healthcheck) और स्टार्टअप अनुक्रम को नियंत्रित करना
 
@@ -261,7 +261,7 @@ API_SECRET_KEY=dev_secret_key_12345
 
 ## 6. VSCode Dev[Container](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)s के साथ बेहतरीन विकास अनुभव
 
-अब तक, हमने [Docker](https://kenji.blog/hi/p/docker-container-namespace-[cgroups](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)-layers/) का उपयोग करके एक मजबूत बैकएंड वातावरण स्थापित कर लिया है। हालाँकि, हम एक कदम और आगे जा सकते हैं। **VSCode DevContainers (Remote - Containers)** सुविधा का उपयोग करके, आप कंटेनर के अंदर एडिटर (VSCode) के बैकएंड को चला सकते हैं।
+अब तक, हमने [Docker](https://kenji.blog/hi/p/docker-container-namespace-[cgroups](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)-layers/) का उपयोग करके एक मजबूत बैकएंड वातावरण स्थापित कर लिया है। हालाँकि, हम एक कदम और आगे जा सकते हैं। **VSCode DevContainers ([Remote](/hi/p/git%E3%81%A7%E3%82%BF%E3%82%B0%E3%82%92%E6%B6%88%E3%81%99/) - Containers)** सुविधा का उपयोग करके, आप कंटेनर के अंदर एडिटर (VSCode) के बैकएंड को चला सकते हैं।
 
 यह आपकी स्थानीय मशीन पर Python या Node.js इंस्टॉल करने की आवश्यकता को पूरी तरह से समाप्त कर देता है। लिनटर्स (flake8/eslint) और फॉर्मेटर्स (black/prettier) से लेकर IDE एक्सटेंशन तक सब कुछ कोडबेस के भीतर परिभाषित किया जा सकता है और पूरी टीम द्वारा साझा किया जा सकता है।
 
@@ -356,7 +356,7 @@ sequenceDiagram
 
 $$ T_{\text{total}} = T_{\text{net}} + T_{\text{app}} + T_{\text{cache}} + p_{\text{miss}} \times (T_{\text{db}} + T_{\text{cache\_write}}) $$
 
-स्थानीय विकास वातावरण ([Docker](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/) के अंदर) में, $T_{\text{net}}$ लगभग 0 के करीब होगा, लेकिन ध्यान देने योग्य बात **बाइंड माउंट करते समय I/O प्रदर्शन** है। खासकर जब Windows/macOS पर Docker Desktop का उपयोग किया जाता है, तो होस्ट OS और VM (कंटेनर) के बीच फ़ाइल साझाकरण ओवरहेड के कारण $T_{\text{app}}$ (कोड लोड करने का समय आदि) बढ़ने की प्रवृत्ति होती है। इस अड़चन (bottleneck) को हल करने के लिए, उपर्युक्त Dev[Container](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)s का उपयोग करके पूरे सोर्स कोड को नेम्ड वॉल्यूम में रखने या WSL2 (Windows Subsystem for Linux 2) वातावरण में मूल रूप से Docker इंजन को चलाने वाले आर्किटेक्चर की दृढ़ता से अनुशंसा की जाती है।
+स्थानीय विकास वातावरण ([Docker](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/) के अंदर) में, $T_{\text{net}}$ लगभग 0 के करीब होगा, लेकिन ध्यान देने योग्य बात **बाइंड माउंट करते समय I/O प्रदर्शन** है। खासकर जब Windows/macOS पर Docker Desktop का उपयोग किया जाता है, तो होस्ट OS और VM (कंटेनर) के बीच फ़ाइल साझाकरण ओवरहेड के कारण $T_{\text{app}}$ (कोड लोड करने का समय आदि) बढ़ने की प्रवृत्ति होती है। इस अड़चन (bottleneck) को हल करने के लिए, उपर्युक्त Dev[Container](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)s का उपयोग करके पूरे सोर्स कोड को नेम्ड वॉल्यूम में रखने या [WSL2](/hi/p/wsl2-ultimate-development-setup-guide/) ([Windows Subsystem for Linux](/hi/p/wsl2-ultimate-development-setup-guide/) 2) वातावरण में मूल रूप से Docker इंजन को चलाने वाले आर्किटेक्चर की दृढ़ता से अनुशंसा की जाती है।
 
 ---
 

@@ -139,7 +139,7 @@ Dengan menggunakan enkripsi homomorfik, karakteristik berikut dapat diwujudkan. 
 $$ E(m_1 + m_2) = E(m_1) \oplus E(m_2) $$
 $$ E(m_1 \times m_2) = E(m_1) \otimes E(m_2) $$
 
-Enkripsi homomorfik dibagi menjadi "Enkripsi Homomorfik Sebagian" (Partially Homomorphic Encryption: PHE), yang hanya memungkinkan salah satu dari penjumlahan atau perkalian, dan "Enkripsi Homomorfik Penuh" (Fully Homomorphic Encryption: FHE), yang memungkinkan penjumlahan dan perkalian dalam jumlah tak terbatas. Sejak Craig Gentry membangun skema FHE pertama menggunakan kriptografi berbasis kisi (Lattice-based cryptography) pada tahun 2009, ini telah menjadi terobosan besar dalam kriptografi.
+Enkripsi homomorfik dibagi menjadi "Enkripsi Homomorfik Sebagian" (Partially Homomorphic Encryption: PHE), yang hanya memungkinkan salah satu dari penjumlahan atau perkalian, dan "Enkripsi Homomorfik Penuh" (Fully Homomorphic Encryption: [FHE](/id/p/fully-homomorphic-encryption-fhe-explained/)), yang memungkinkan penjumlahan dan perkalian dalam jumlah tak terbatas. Sejak Craig Gentry membangun skema [FHE](/id/p/fully-homomorphic-encryption-fhe-explained/) pertama menggunakan kriptografi berbasis kisi ([Lattice-based cryptography](/id/p/lattice-based-cryptography-math-intuition/)) pada tahun 2009, ini telah menjadi terobosan besar dalam kriptografi.
 
 Saat ini, meskipun tantangan biaya komputasi dan peningkatan ukuran ciphertext (overhead) masih tersisa, teknologi ini diharapkan dapat diterapkan pada analisis aman dari data medis di cloud dan komputasi rahasia antar lembaga keuangan.
 

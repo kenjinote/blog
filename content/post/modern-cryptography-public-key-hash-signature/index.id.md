@@ -56,7 +56,7 @@ graph TD
 
 ## 2. Latar Belakang Matematis Kriptografi Kunci Publik
 
-Keamanan kriptografi kunci publik bergantung pada **fungsi satu arah** (One-way function), di mana "suatu perhitungan mudah dilakukan, tetapi perhitungan kebalikannya sangat sulit", dan **fungsi satu arah dengan trapdoor** (Trapdoor one-way function), di mana perhitungan terbalik menjadi mungkin jika seseorang mengetahui informasi tertentu (trapdoor/pintu jebakan). Di sini, kita akan membahas lebih dalam tentang kriptografi RSA yang paling representatif dan Kriptografi Kurva Eliptik (ECC).
+Keamanan kriptografi kunci publik bergantung pada **fungsi satu arah** (One-way function), di mana "suatu perhitungan mudah dilakukan, tetapi perhitungan kebalikannya sangat sulit", dan **fungsi satu arah dengan trapdoor** (Trapdoor one-way function), di mana perhitungan terbalik menjadi mungkin jika seseorang mengetahui informasi tertentu (trapdoor/pintu jebakan). Di sini, kita akan membahas lebih dalam tentang kriptografi RSA yang paling representatif dan Kriptografi Kurva Eliptik ([ECC](/id/p/elliptic-curve-cryptography-math-cpp/)).
 
 ### 2.1. Cara Kerja Kriptografi RSA
 
@@ -73,7 +73,7 @@ Pembuatan kunci RSA dilakukan melalui langkah-langkah berikut:
 4. Pilih bilangan bulat $e$ sedemikian rupa sehingga $1 < e < \phi(N)$, dan $e$ saling prima (koprima) terhadap $\phi(N)$. (Biasanya, $e = 65537$ sering digunakan)
 5. Hitung $d$ yang memenuhi persamaan kongruensi berikut:
    $ e \times d \equiv 1 \pmod{\phi(N)} $
-   Ini dapat dihitung menggunakan Algoritma Euclidean yang Diperluas.
+   Ini dapat dihitung menggunakan [Algoritma Euclidean](/id/p/euclidean-algorithm/) yang Diperluas.
 
 Di sini, $(N, e)$ adalah **kunci publik**, dan $d$ adalah **kunci privat** ($p, q$ dibuang atau dirahasiakan dengan ketat).
 
@@ -96,7 +96,7 @@ Kriptografi RSA aman, tetapi untuk memberikan kekuatan yang cukup, panjang kunci
 
 #### 2.2.1. Kurva Eliptik dan Masalah Logaritma Diskrit
 
-Keamanan ECC bergantung pada kesulitan **masalah logaritma diskrit pada kurva eliptik** (ECDLP).
+Keamanan [ECC](/id/p/elliptic-curve-cryptography-math-cpp/) bergantung pada kesulitan **masalah logaritma diskrit pada kurva eliptik** (ECDLP).
 Kurva eliptik pada lapangan berhingga (finite field) $\mathbb{F}_p$ yang digunakan untuk kriptografi umumnya dinyatakan dalam bentuk standar Weierstrass.
 
 $ y^2 \equiv x^3 + ax + b \pmod{p} $
@@ -109,7 +109,7 @@ Misalkan titik $P$ adalah hasil penjumlahan titik referensi (base point) $G$ seb
 $ P = k \times G $
 
 Di sini, ketika diberikan $G$ dan $P$, masalah mencari nilai skalar $k$ disebut **masalah logaritma diskrit kurva eliptik**. Jika $k$ cukup besar, menghitungnya secara terbalik adalah hal yang sangat sulit.
-Dalam ECC, $k$ adalah **kunci privat**, dan $P$ adalah **kunci publik**.
+Dalam [ECC](/id/p/elliptic-curve-cryptography-math-cpp/), $k$ adalah **kunci privat**, dan $P$ adalah **kunci publik**.
 
 ### 2.3. Contoh Implementasi Kriptografi Kunci Publik dengan Python
 
@@ -337,7 +337,7 @@ Bahkan saat mengakses situs web "https://" dengan browser, mekanisme PKI ini ber
 Masyarakat digital modern dibangun di atas kombinasi luar biasa dari **teknologi kriptografi** yang dibahas kali ini.
 
 - Enkripsi data berkecepatan tinggi dengan **Kriptografi Kunci Simetris**
-- Pertukaran kunci yang aman dan realisasi asimetri dengan **Kriptografi Kunci Publik** (RSA dan ECC)
+- Pertukaran kunci yang aman dan realisasi asimetri dengan **Kriptografi Kunci Publik** (RSA dan [ECC](/id/p/elliptic-curve-cryptography-math-cpp/))
 - Ekstraksi sidik jari data dengan **Fungsi Hash** (SHA-2/3)
 - Bukti integritas dan otentikasi dengan **Tanda Tangan Digital**
 - Jaminan keaslian kunci publik dengan **PKI dan Otoritas Sertifikat**

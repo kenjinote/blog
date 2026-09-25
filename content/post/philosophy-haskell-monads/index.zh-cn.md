@@ -16,7 +16,7 @@ image: "eyecatch.jpg"
 
 ## 1. 纯函数式编程的范式
 
-函数式编程的根本在于「将计算视为数学函数的求值」这一理念。特别是在像Haskell这样的「纯」函数式语言中，这一规则被极其严格地遵守着。
+[函数式编程](/zh-cn/p/lambda-calculus-functional-programming/)的根本在于「将计算视为数学函数的求值」这一理念。特别是在像Haskell这样的「纯」函数式语言中，这一规则被极其严格地遵守着。
 
 ### 引用透明性（Referential Transparency）
 

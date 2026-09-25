@@ -12,7 +12,7 @@ image: "eyecatch.jpg"
 
 Desde el siglo XVII hasta mediados del siglo XIX, Japón adoptó una estricta política de aislamiento nacional conocida como "Sakoku". En esta era donde la interacción con la ciencia y la cultura occidental estaba extremadamente limitada, ocurrió un fenómeno singular en Japón, sin precedentes en el mundo. Fue el florecimiento de una cultura matemática avanzada y exclusiva de Japón, el **"Wasan"**.
 
-En la misma época en Europa, Isaac Newton y Gottfried Leibniz creaban el cálculo, y las matemáticas modernas se desarrollaban rápidamente. Sorprendentemente, en la nación insular del Lejano Oriente, Japón, surgieron conceptos matemáticos avanzados comparables al cálculo, de forma totalmente independiente.
+En la misma época en Europa, [Isaac Newton](/es/p/newton/) y [Gottfried Leibniz](/es/p/leibniz/) creaban el cálculo, y las matemáticas modernas se desarrollaban rápidamente. Sorprendentemente, en la nación insular del Lejano Oriente, Japón, surgieron conceptos matemáticos avanzados comparables al cálculo, de forma totalmente independiente.
 
 En este artículo, detallaremos la historia del Wasan, que comenzó con cálculos y mediciones prácticas y se transformó en un puro juego intelectual y un tipo de arte. Exploraremos a los genios matemáticos que impulsaron este desarrollo y la singular cultura de los "Sangaku", única en el mundo.
 

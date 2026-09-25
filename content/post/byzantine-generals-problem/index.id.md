@@ -9,7 +9,7 @@ tags: ["Masalah Jenderal Bizantium", "Blockchain", "Konsensus", "Algoritma"]
 slug: "byzantine-generals-problem"
 ---
 
-Dalam mempelajari sistem terdistribusi atau teknologi blockchain, kita hampir selalu dihadapkan pada **[Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/)** ([Byzantine Generals](https://kenji.blog/id/p/byzantine-generals-problem-consensus/) Problem). Masalah ini membahas tema yang sangat penting mengenai bagaimana sistem secara keseluruhan dapat membentuk kesepakatan yang benar dalam situasi di mana terdapat "pengkhianat" atau "node yang rusak" di dalam jaringan.
+Dalam mempelajari [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/) atau teknologi [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/), kita hampir selalu dihadapkan pada **[Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/)** ([Byzantine Generals](https://kenji.blog/id/p/byzantine-generals-problem-consensus/) Problem). Masalah ini membahas tema yang sangat penting mengenai bagaimana sistem secara keseluruhan dapat membentuk kesepakatan yang benar dalam situasi di mana terdapat "pengkhianat" atau "node yang rusak" di dalam jaringan.
 
 Dalam artikel ini, kami akan menjelaskan **[Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/)** secara rinci, mulai dari dasar hingga aplikasinya, disertai dengan cerita konkret, persamaan matematis, dan ilustrasi.
 
@@ -119,9 +119,9 @@ Dalam model ini, perintah yang dikeluarkan oleh komandan tidak dapat diubah di t
 
 ## 4. [Blockchain](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/) dan Byzantine Fault Tolerance (BFT)
 
-Ketahanan terhadap [Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/) disebut **Byzantine Fault Tolerance** (BFT). Ini adalah metrik penting bagi sistem terdistribusi untuk dapat bertahan dari kegagalan dan serangan berbahaya, serta terus beroperasi secara normal.
+Ketahanan terhadap [Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/) disebut **Byzantine Fault Tolerance** (BFT). Ini adalah metrik penting bagi [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/) untuk dapat bertahan dari kegagalan dan serangan berbahaya, serta terus beroperasi secara normal.
 
-Dalam beberapa tahun terakhir, masalah ini kembali menjadi sorotan utama karena kemunculan **teknologi blockchain**. Karena blockchain adalah jaringan [P2P](https://kenji.blog/id/p/webrtc-realtime-communication-p2p/) tanpa administrator pusat, ada kemungkinan peserta (node) jahat menyebarkan riwayat transaksi bohong. Ini persis seperti [Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/) itu sendiri.
+Dalam beberapa tahun terakhir, masalah ini kembali menjadi sorotan utama karena kemunculan **teknologi [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/)**. Karena [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/) adalah jaringan [P2P](https://kenji.blog/id/p/webrtc-realtime-communication-p2p/) tanpa administrator pusat, ada kemungkinan peserta (node) jahat menyebarkan riwayat transaksi bohong. Ini persis seperti [Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/) itu sendiri.
 
 ### Mekanisme PBFT (Practical Byzantine Fault Tolerance)
 
@@ -146,7 +146,7 @@ subgraph "Fase Utama PBFT"
 end
 ```
 
-Dengan melalui proses ini, meskipun terdapat $m$ node yang gagal atau jahat di dalam jaringan, selama total jumlah node memenuhi $n \ge 3m + 1$, permintaan dapat diproses dalam urutan yang benar. Karena lalu lintas komunikasi antar komponen pada PBFT meningkat sebanding dengan kuadrat jumlah node, algoritma ini tidak cocok untuk jaringan skala besar seperti public blockchain. Namun, dalam blockchain tipe konsorsium dengan jumlah node yang terbatas (seperti Hyperledger Fabric), ia banyak digunakan karena memberikan konsensus yang sangat cepat dan deterministik.
+Dengan melalui proses ini, meskipun terdapat $m$ node yang gagal atau jahat di dalam jaringan, selama total jumlah node memenuhi $n \ge 3m + 1$, permintaan dapat diproses dalam urutan yang benar. Karena lalu lintas komunikasi antar komponen pada PBFT meningkat sebanding dengan kuadrat jumlah node, algoritma ini tidak cocok untuk jaringan skala besar seperti public [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/). Namun, dalam [blockchain](/id/p/blockchain-technology-smart-contract-distributed-ledger/) tipe konsorsium dengan jumlah node yang terbatas (seperti Hyperledger Fabric), ia banyak digunakan karena memberikan konsensus yang sangat cepat dan deterministik.
 
 ### Konsensus Nakamoto (Proof of Work)
 
@@ -162,7 +162,7 @@ Banyak algoritma PoS terbaru seperti Casper dari Ethereum dan Tendermint dari Co
 
 ## 5. Pemodelan Matematis BFT dan Aplikasasinya
 
-Dalam desain sistem terdistribusi yang lebih canggih, transisi keadaan sistem didefinisikan secara ketat untuk membuktikan kebenaran algoritma BFT.
+Dalam desain [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/) yang lebih canggih, transisi keadaan sistem didefinisikan secara ketat untuk membuktikan kebenaran algoritma BFT.
 
 Misalnya, himpunan node adalah $\mathcal{N} = \{1, 2, \dots, n\}$, dan jumlah maksimum node pengkhianat adalah $f$. Pada suatu ronde $r$, setiap node $i$ menyimpan status $s_i^{(r)}$ dan melakukan pertukaran pesan dengan node lainnya.
 
@@ -180,6 +180,6 @@ $$
 
 ## 6. Penutup
 
-**[Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/)** ini adalah teori mendasar untuk menjamin keandalan sistem terdistribusi. Pertanyaan tentang "bagaimana membuat keputusan yang benar secara keseluruhan dalam lingkungan di mana kita tidak tahu siapa yang bisa dipercaya" telah diaplikasikan ke berbagai infrastruktur IT modern, mulai dari teknologi dasar aset kripto, sistem kontrol pesawat terbang, hingga komputasi awan (cloud computing).
+**[Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/)** ini adalah teori mendasar untuk menjamin keandalan [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/). Pertanyaan tentang "bagaimana membuat keputusan yang benar secara keseluruhan dalam lingkungan di mana kita tidak tahu siapa yang bisa dipercaya" telah diaplikasikan ke berbagai infrastruktur IT modern, mulai dari teknologi dasar aset kripto, sistem kontrol pesawat terbang, hingga komputasi awan (cloud computing).
 
-Evolusi algoritma yang mempertimbangkan keberadaan pengkhianat dan masih mencegah sistem agar tidak berhenti, tidak akan pernah berhenti di masa depan. Bagi para insinyur yang terlibat dalam desain sistem terdistribusi, memahami pembuktian matematis dan algoritma di balik masalah ini akan menjadi senjata yang sangat ampuh.
+Evolusi algoritma yang mempertimbangkan keberadaan pengkhianat dan masih mencegah sistem agar tidak berhenti, tidak akan pernah berhenti di masa depan. Bagi para insinyur yang terlibat dalam desain [sistem terdistribusi](/id/p/cap-theorem-distributed-systems-tradeoff/), memahami pembuktian matematis dan algoritma di balik masalah ini akan menjadi senjata yang sangat ampuh.

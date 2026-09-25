@@ -20,7 +20,7 @@ Dalam artikel ini, kita akan menggali lebih dalam kehidupan [Fermat](https://ken
 
 Di Prancis pada masa itu, para hakim didorong untuk menghindari memperluas lingkaran sosial mereka terlalu luas guna mencegah konflik politik dan sosial. Ironisnya, lingkungan yang terisolasi ini justru memberi [Fermat](https://kenji.blog/id/p/fermat/) waktu tenang yang ia butuhkan, mendorongnya menuju kedalaman matematika. Baginya, matematika adalah kegembiraan murni yang membebaskannya dari tekanan berat tugas-tugasnya, bukan sesuatu yang dipaksakan kepadanya oleh siapa pun.
 
-[Fermat](https://kenji.blog/id/p/fermat/) tidak suka menerbitkan penelitiannya sebagai makalah formal; ia merasa puas dengan hanya mencatat ide-ide dan pembuktiannya di buku catatan atau di margin buku, atau dengan bertukar surat dengan para sarjana lain melalui Marin Mersenne, seorang biarawan di Paris yang bertindak sebagai pusat akademik pada saat itu. Ia menikmati menyajikan penemuannya sebagai **"masalah"** kepada matematikawan lain, secara provokatif menuntut penyelesaian dari mereka. Ia juga dikenal sering terlibat dalam perdebatan sengit dengan matematikawan besar seperti René Descartes dan [John Wallis](https://kenji.blog/id/p/wallis/).
+[Fermat](https://kenji.blog/id/p/fermat/) tidak suka menerbitkan penelitiannya sebagai makalah formal; ia merasa puas dengan hanya mencatat ide-ide dan pembuktiannya di buku catatan atau di margin buku, atau dengan bertukar surat dengan para sarjana lain melalui [Marin Mersenne](/id/p/mersenne/), seorang biarawan di Paris yang bertindak sebagai pusat akademik pada saat itu. Ia menikmati menyajikan penemuannya sebagai **"masalah"** kepada matematikawan lain, secara provokatif menuntut penyelesaian dari mereka. Ia juga dikenal sering terlibat dalam perdebatan sengit dengan matematikawan besar seperti [René Descartes](/id/p/descartes/) dan [John Wallis](https://kenji.blog/id/p/wallis/).
 
 ```mermaid
 flowchart TD
@@ -64,7 +64,7 @@ Sebagai contoh, jika $p = 5$, maka $5 = 1^2 + 2^2$; jika $p = 13$, maka $13 = 2^
 
 [Fermat](https://kenji.blog/id/p/fermat/) juga mempertimbangkan rumus matematika yang menghasilkan bilangan prima. Ia menduga bahwa semua bilangan dalam bentuk $F_n = 2^{2^n} + 1$ adalah bilangan prima. Memang, untuk $n=0, 1, 2, 3, 4$, hasilnya berturut-turut adalah $3, 5, 17, 257, 65537$, dan semuanya adalah bilangan prima. Ini disebut **Bilangan prima [Fermat](https://kenji.blog/id/p/fermat/)**.
 
-Namun, [Leonhard Euler](https://kenji.blog/id/p/euler/) kemudian menunjukkan bahwa ketika $n=5$, $2^{32} + 1 = 4294967297 = 641 \times 6700417$, sehingga menyangkal dugaan Fermat itu sendiri. Meski begitu, Carl Friedrich Gauss di kemudian hari membuktikan bahwa bilangan prima [Fermat](https://kenji.blog/id/p/fermat/) ini memiliki hubungan erat dengan "syarat-syarat agar segi-$n$ beraturan dapat dikonstruksi menggunakan jangka dan penggaris tanpa skala", memainkan peran yang sangat penting dalam perpaduan geometri dan aljabar untuk generasi berikutnya.
+Namun, [Leonhard Euler](https://kenji.blog/id/p/euler/) kemudian menunjukkan bahwa ketika $n=5$, $2^{32} + 1 = 4294967297 = 641 \times 6700417$, sehingga menyangkal dugaan Fermat itu sendiri. Meski begitu, [Carl Friedrich Gauss](/id/p/gauss/) di kemudian hari membuktikan bahwa bilangan prima [Fermat](https://kenji.blog/id/p/fermat/) ini memiliki hubungan erat dengan "syarat-syarat agar segi-$n$ beraturan dapat dikonstruksi menggunakan jangka dan penggaris tanpa skala", memainkan peran yang sangat penting dalam perpaduan geometri dan aljabar untuk generasi berikutnya.
 
 ## 3. Metode Penurunan Tak Terhingga: Pedang Tajam [Fermat](https://kenji.blog/id/p/fermat/)
 
@@ -91,7 +91,7 @@ Meskipun [Fermat](https://kenji.blog/id/p/fermat/) dan Pascal masing-masing meng
 
 ## 5. Kontribusi Perintis pada Kalkulus dan Fisika
 
-Berdekade-dekade sebelum [Isaac Newton](https://kenji.blog/id/p/newton/) dan Gottfried Leibniz menetapkan kalkulus, [Fermat](https://kenji.blog/id/p/fermat/) telah merancang metodenya sendiri untuk menggambar garis singgung pada kurva dan menemukan nilai maksimum serta minimum dari fungsi.
+Berdekade-dekade sebelum [Isaac Newton](https://kenji.blog/id/p/newton/) dan [Gottfried Leibniz](/id/p/leibniz/) menetapkan kalkulus, [Fermat](https://kenji.blog/id/p/fermat/) telah merancang metodenya sendiri untuk menggambar garis singgung pada kurva dan menemukan nilai maksimum serta minimum dari fungsi.
 
 Ia memperkenalkan sebuah konsep yang disebut **"Adequality"**. Ini adalah teknik di mana suatu nilai diperlakukan sebagai "hampir sama" ketika kuantitas kecil $E$ divariasikan, dan nilai ekstrem ditemukan dengan memperlakukan $E$ sebagai $0$ pada tahap akhir perhitungan. Pada dasarnya ini adalah gagasan utama dari diferensiasi modern, dan Newton sendiri kemudian berkomentar, "Saya mendapat petunjuk tentang metode ini dari cara [Fermat](https://kenji.blog/id/p/fermat/) menggambar garis singgung." Tanpa [Fermat](https://kenji.blog/id/p/fermat/), penyelesaian kalkulus mungkin akan lebih tertunda lagi.
 
@@ -101,7 +101,7 @@ Selain itu, di bidang fisika (optik), ia mengusulkan **Prinsip [Fermat](https://
 
 Meskipun meninggalkan begitu banyak pencapaian besar, hal yang secara tegas menjadikan [Fermat](https://kenji.blog/id/p/fermat/) sebagai matematikawan paling terkenal dalam sejarah adalah eksistensi **"[Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/)"**.
 
-Di margin sebuah bagian mengenai teorema [Pythagoras](https://kenji.blog/id/p/pythagoras/) ( $x^2 + y^2 = z^2$ ) pada Volume 2 buku favoritnya, *Arithmetica* karya Diophantus, [Fermat](https://kenji.blog/id/p/fermat/) menulis catatan mencengangkan berikut ini dalam bahasa Latin:
+Di margin sebuah bagian mengenai teorema [Pythagoras](https://kenji.blog/id/p/pythagoras/) ( $x^2 + y^2 = z^2$ ) pada Volume 2 buku favoritnya, *Arithmetica* karya [Diophantus](/id/p/diophantus/), [Fermat](https://kenji.blog/id/p/fermat/) menulis catatan mencengangkan berikut ini dalam bahasa Latin:
 
 > "Cubum autem in duos cubos, aut quadratoquadratum in duos quadratoquadratos, et generaliter nullam in infinitum ultra quadratum potestatem in duas eiusdem nominis fas est dividere cuius rei demonstrationem mirabilem sane detexi. Hanc marginis exiguitas non caperet."
 > 
@@ -123,7 +123,7 @@ Para jenius berturut-turut seperti Euler, [Legendre](https://kenji.blog/id/p/leg
 
 Selama lebih dari 350 tahun setelah dikemukakan, masalah ini bertahta sebagai "masalah matematika terbesar yang belum terpecahkan," tidak dapat dipecahkan oleh siapa pun. Pada paruh kedua abad ke-20, ketika banyak orang mulai curiga bahwa "[Fermat](https://kenji.blog/id/p/fermat/) sebenarnya belum membuktikannya (atau telah membuat kesalahan)," seorang matematikawan akhirnya mengakhiri teka-teki yang menakutkan ini.
 
-Dia adalah matematikawan Inggris, [Andrew Wiles](https://kenji.blog/id/p/wiles/). Setelah menemukan masalah tersebut di perpustakaan setempat pada usia 10 tahun, ia bersumpah untuk mendedikasikan hidupnya demi memecahkannya. Ia mengambil pendekatan besar yang tak terbayangkan di zaman Fermat, menggabungkan **Konjektur Taniyama-Shimura**—yang mengusulkan bahwa "semua kurva eliptik adalah modular," diajukan oleh matematikawan Jepang Yutaka Taniyama dan [Goro Shimura](https://kenji.blog/id/p/shimura-goro/)—dengan penelitian Ken Ribet tentang kurva Frey (konjektur epsilon).
+Dia adalah matematikawan Inggris, [Andrew Wiles](https://kenji.blog/id/p/wiles/). Setelah menemukan masalah tersebut di perpustakaan setempat pada usia 10 tahun, ia bersumpah untuk mendedikasikan hidupnya demi memecahkannya. Ia mengambil pendekatan besar yang tak terbayangkan di zaman Fermat, menggabungkan **Konjektur Taniyama-Shimura**—yang mengusulkan bahwa "semua kurva eliptik adalah modular," diajukan oleh matematikawan Jepang [Yutaka Taniyama](/id/p/taniyama-yutaka/) dan [Goro Shimura](https://kenji.blog/id/p/shimura-goro/)—dengan penelitian Ken Ribet tentang kurva Frey (konjektur epsilon).
 
 Wiles mengurung diri di loteng rumahnya dan, setelah tujuh tahun penelitian yang sepi, mempublikasikan bukti lengkapnya pada tahun 1995. Buktinya merupakan puncak matematika modern yang membentang ratusan halaman, sama sekali berbeda dari metode matematika abad ke-17 ("pembuktian yang benar-benar menakjubkan") yang mungkin dibayangkan [Fermat](https://kenji.blog/id/p/fermat/).
 

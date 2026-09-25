@@ -110,7 +110,7 @@ graph TD
 - **"Vorlesungen über elementare Zahlentheorie"**: Ein Lehrbuch, das alles von den Grundlagen der Zahlentheorie bis zum quadratischen Reziprozitätsgesetz von Gauß erklärt.
 - **"Historische Erzählungen der modernen Mathematik"**: Ein historisches Buch, das die Gruppe der Mathematiker im 19. Jahrhundert lebendig beschreibt. Es vermittelt die Dramatik der mathematischen Entwicklung.
 
-Die Samen, die er säte, wurden an japanische Mathematiker weitergegeben, die später weltweit aktiv sein sollten, wie [Kunihiko Kodaira](https://kenji.blog/de/p/kodaira-kunihiko/), Kiyoshi Ito und darüber hinaus Goro Shimura und [Yutaka Taniyama](https://kenji.blog/de/p/taniyama-yutaka/).
+Die Samen, die er säte, wurden an japanische Mathematiker weitergegeben, die später weltweit aktiv sein sollten, wie [Kunihiko Kodaira](https://kenji.blog/de/p/kodaira-kunihiko/), Kiyoshi Ito und darüber hinaus [Goro Shimura](/de/p/shimura-goro/) und [Yutaka Taniyama](https://kenji.blog/de/p/taniyama-yutaka/).
 
 ## Fazit
 

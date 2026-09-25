@@ -14,13 +14,13 @@ tags: ["Generative AI", "Digital Divide", "LLM", "Productivity"]
 
 自从互联网普及以来，我们经常听到“数字鸿沟（信息鸿沟）”这个词。早期的数字鸿沟主要涉及“物理访问权”。也就是说，是否拥有计算机或高速互联网连接，决定了获取信息和经济机会的能力，这是一个简单的格局。随后，随着智能手机和宽带连接的商品化，鸿沟的焦点转移到了“IT素养（信息应用能力）”。这涉及能否使用搜索引擎恰当地找到信息，或者能否熟练使用软件等软件和认知层面的问题。
 
-然而，2020年代突然兴起的生成式AI（Generative AI）和大型语言模型（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/): [Large Language Models](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的进化，正在从根本上颠覆这种数字鸿沟的概念。我们现在面临的不再仅仅是“信息访问鸿沟”或“软件操作技能鸿沟”。这是一种“AI编排（指挥与整合）能力的鸿沟”，是一个极其严重且不可逆转的“第三次数字鸿沟”：要么使个人的生产力呈指数级倍增，要么被AI的进化抛在后面，从而失去相对价值。
+然而，2020年代突然兴起的生成式AI（Generative AI）和[大型语言模型](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/): [Large Language Models](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的进化，正在从根本上颠覆这种数字鸿沟的概念。我们现在面临的不再仅仅是“信息访问鸿沟”或“软件操作技能鸿沟”。这是一种“AI编排（指挥与整合）能力的鸿沟”，是一个极其严重且不可逆转的“第三次数字鸿沟”：要么使个人的生产力呈指数级倍增，要么被AI的进化抛在后面，从而失去相对价值。
 
 本文将从生产力的数学模型、硬件架构与成本、以及人类的认知层面这三个维度，极其详细地揭开生成式AI带来的这一新数字鸿沟的真面目。
 
 ## 2. 从“访问”到“编排”：第三次数字鸿沟的到来
 
-过去的软件工具本质上是“被动的工具”。传统软件的局限性在于，只能对用户的显式输入返回决定论的结果（例如：在电子表格软件中输入公式以获得计算结果）。然而，当前的生成式AI，尤其是基于[Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)架构的LLM（如GPT-4、Claude 3.5、Llama 3等），表现为“主动智能的片段”。
+过去的软件工具本质上是“被动的工具”。传统软件的局限性在于，只能对用户的显式输入返回决定论的结果（例如：在电子表格软件中输入公式以获得计算结果）。然而，当前的生成式AI，尤其是基于[Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)架构的[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)（如GPT-4、Claude 3.5、Llama 3等），表现为“主动智能的片段”。
 
 由于这种范式转换，人类所需的技能集已经发生了巨大的变化，从“操作工具的能力”转变为“组合多个AI智能体和工具，设计并指挥自主工作流的能力（AI Orchestration）”。这可以被称为“AI编排素养”。
 
@@ -79,7 +79,7 @@ xychart-beta
 
 第三次数字鸿沟不仅产生了软件技能上的鸿沟，还带来了运行最前沿AI模型所需的“计算资源（Compute）访问权”这一新的硬件鸿沟。
 
-使用大型语言模型主要有两种途径：一是“使用云API”，二是“在本地进行模型推理（Inference）”。两者各有利弊，这也成为了新的经济和物理壁垒。
+使用[大型语言模型](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)主要有两种途径：一是“使用云API”，二是“在本地进行模型推理（Inference）”。两者各有利弊，这也成为了新的经济和物理壁垒。
 
 ### 云API的局限性与运行成本
 OpenAI、Anthropic和Google等提供的前沿模型（如GPT-4o、Claude 3.5 Sonnet等），通常通过API进行访问。然而，一旦构建了高度自主的智能体（Agentic [Workflow](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)）并产生每天数万次的API调用，成本就会爆炸性增长。
@@ -96,13 +96,13 @@ $$
 ### 本地[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)与VRAM的壁垒
 出于规避云端成本和数据隐私的考量，在本地运行Meta的Llama 3或Mistral等开源权重模型的需求日益增长。但在这里，存在一个名为“VRAM（显存）壁垒”的物理鸿沟。
 
-LLM的推理速度相比GPU的算力（FLOPS），更强烈地依赖于显存带宽（Memory Bandwidth）（即受内存限制的特性）。假设模型参数量为 $P$，精度为16bit（2字节），仅仅是将模型加载到内存中，最低就需要 $2P$ 字节的VRAM。例如，700亿（70B）参数的模型，需要140GB以上的VRAM。
+[LLM](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)的推理速度相比GPU的算力（FLOPS），更强烈地依赖于显存带宽（Memory Bandwidth）（即受内存限制的特性）。假设模型参数量为 $P$，精度为16bit（2字节），仅仅是将模型加载到内存中，最低就需要 $2P$ 字节的VRAM。例如，700亿（70B）参数的模型，需要140GB以上的VRAM。
 
 $$
 VRAM_{required} \approx \left( \frac{P \times bits\_per\_weight}{8} \right) + Context\_Memory
 $$
 
-即使是普通消费者能够买到的高端GPU（NVIDIA RTX 4090），VRAM也只有24GB，根本无法直接运行70B级别的模型。因此，出现了AWQ和GGUF等“量化技术（Quantization）”，试图将权重压缩至4bit或8bit以寻找妥协点，但这种量化不可避免地会带来性能损失（困惑度恶化）。
+即使是普通消费者能够买到的高端GPU（[NVIDIA](/zh-cn/p/history-of-nvidia/) RTX 4090），VRAM也只有24GB，根本无法直接运行70B级别的模型。因此，出现了AWQ和[GGUF](/zh-cn/p/llama-cpp-quantization-gguf/)等“量化技术（Quantization）”，试图将权重压缩至4bit或8bit以寻找妥协点，但这种量化不可避免地会带来性能损失（困惑度恶化）。
 
 此外，近年来虽然出现了搭载NPU（神经网络处理单元）的“AI PC”，但目前NPU的TOPS（每秒万亿次运算）算力最多只能运行轻量级的小型模型（SLM: Small Language Models），要在本地进行真正高级的推理，必须具备构建价值数百万日元级别的多GPU环境的资本实力。这就是AI领域中“资本密集型数字鸿沟”的真面目。
 

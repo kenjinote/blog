@@ -35,7 +35,7 @@ The biggest technical challenge in building the network was "how to transmit and
 To solve this problem, an entirely new communication concept was independently conceived by multiple researchers simultaneously. This was the "packet switching system."
 
 Paul Baran, working at the RAND Corporation in the US, developed the theory of a "distributed network" to enhance the survivability of military communications. His idea was to divide data into small pieces and transmit each piece over different paths through a web-like network.
-Meanwhile, Donald Davies of the National Physical Laboratory (NPL) in the UK independently arrived at a similar concept and named the divided blocks of data "packets." Furthermore, Leonard Kleinrock of the Massachusetts Institute of Technology (MIT) mathematically proved the efficiency of this data transfer method using queuing theory.
+Meanwhile, Donald Davies of the National Physical Laboratory (NPL) in the UK independently arrived at a similar concept and named the divided blocks of data "packets." Furthermore, Leonard Kleinrock of the Massachusetts Institute of Technology (MIT) mathematically proved the efficiency of this data transfer method using [queuing theory](/en/p/queuing-theory-basics/).
 
 ```mermaid
 graph TD

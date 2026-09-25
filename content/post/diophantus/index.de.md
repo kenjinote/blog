@@ -17,7 +17,7 @@ tags:
 
 ## 1. Einleitung
 
-In der Geschichte der Mathematik gibt es eine Figur, die als "Vater der Algebra" bekannt ist. Diese Figur ist **[Diophantus](https://kenji.blog/de/p/diophantus/)** (Diophantus von Alexandria), der im antiken Alexandria wirkte. Sein Hauptwerk, die *Arithmetica*, hatte einen tiefgreifenden Einfluss auf spätere Mathematiker in der islamischen Welt und Mathematiker im Europa der Renaissance. Insbesondere "Fermats letzter Satz", den [Pierre de Fermat](https://kenji.blog/de/p/fermat/) an den Rand der *Arithmetica* schrieb, ist äußerst berühmt.
+In der Geschichte der Mathematik gibt es eine Figur, die als "Vater der Algebra" bekannt ist. Diese Figur ist **[Diophantus](https://kenji.blog/de/p/diophantus/)** (Diophantus von Alexandria), der im antiken Alexandria wirkte. Sein Hauptwerk, die *Arithmetica*, hatte einen tiefgreifenden Einfluss auf spätere Mathematiker in der islamischen Welt und Mathematiker im Europa der Renaissance. Insbesondere "[Fermats letzter Satz](/de/p/fermats-last-theorem/)", den [Pierre de Fermat](https://kenji.blog/de/p/fermat/) an den Rand der *Arithmetica* schrieb, ist äußerst berühmt.
 
 In diesem Artikel werden wir uns eingehend mit dem Leben von [Diophantus](https://kenji.blog/de/p/diophantus/), seinen mathematischen Errungenschaften, den Details seines Meisterwerks *Arithmetica* und den nach ihm benannten "diophantischen Gleichungen" befassen. Darüber hinaus werden wir auch das Geheimnis seines "Epitaphs" lüften, aus dem sich seine Lebensspanne ableiten lässt.
 
@@ -29,7 +29,7 @@ Es gibt fast keine genauen Aufzeichnungen darüber, wann [Diophantus](https://ke
 
 ### 2.2 Hellenistische Kultur und Alexandria
 
-Zu dieser Zeit war Alexandria das Zentrum der hellenistischen Kultur und Gelehrsamkeit, rühmte sich einer riesigen Bibliothek (der Bibliothek von Alexandria) und diente als Knotenpunkt des Wissens, an dem sich viele Gelehrte versammelten. In dieser Stadt, in der sich das Wissen aus Griechenland, Ägypten, Babylonien und sogar Indien kreuzte, wird angenommen, dass [Diophantus](https://kenji.blog/de/p/diophantus/) Zugang zu einem riesigen mathematischen Erbe der Vergangenheit hatte. Im Gegensatz zur geometrischen Tradition, die von großen griechischen Mathematikern wie Euklid, Archimedes und Apollonius begründet wurde, deuten einige Theorien darauf hin, dass [Diophantus](https://kenji.blog/de/p/diophantus/) stark vom algebraischen Ansatz Babyloniens beeinflusst wurde.
+Zu dieser Zeit war Alexandria das Zentrum der hellenistischen Kultur und Gelehrsamkeit, rühmte sich einer riesigen Bibliothek (der Bibliothek von Alexandria) und diente als Knotenpunkt des Wissens, an dem sich viele Gelehrte versammelten. In dieser Stadt, in der sich das Wissen aus Griechenland, Ägypten, Babylonien und sogar Indien kreuzte, wird angenommen, dass [Diophantus](https://kenji.blog/de/p/diophantus/) Zugang zu einem riesigen mathematischen Erbe der Vergangenheit hatte. Im Gegensatz zur geometrischen Tradition, die von großen griechischen Mathematikern wie [Euklid](/de/p/euclid/), Archimedes und Apollonius begründet wurde, deuten einige Theorien darauf hin, dass [Diophantus](https://kenji.blog/de/p/diophantus/) stark vom algebraischen Ansatz Babyloniens beeinflusst wurde.
 
 ```mermaid
 timeline
@@ -98,7 +98,7 @@ Am Rand neben diesem Problem hinterließ [Pierre de Fermat](https://kenji.blog/d
 
 > "Es ist unmöglich, einen Kubus in zwei Kuben, oder ein Biquadrat in zwei Biquadrate, oder allgemein jede höhere Potenz als das Quadrat in zwei Potenzen gleichen Grades zu zerlegen. Ich habe hierfür einen wahrhaft wunderbaren Beweis gefunden, für den dieser Rand jedoch zu schmal ist."
 
-Dies ist der berühmte **[Fermat](https://kenji.blog/de/p/fermat/)sche letzte Satz** (dass $x^n + y^n = z^n \ (n \ge 3)$ keine positiven ganzzahligen Lösungen hat). Dieser Satz wies etwa 350 Jahre lang nach seiner Aufstellung die Herausforderungen von genialen Mathematikern auf der ganzen Welt zurück, bis er schließlich 1995 von Andrew Wiles bewiesen wurde. Ohne das Buch von [Diophantus](https://kenji.blog/de/p/diophantus/) hätte dieses große mathematische Drama vielleicht nie stattgefunden.
+Dies ist der berühmte **[Fermat](https://kenji.blog/de/p/fermat/)sche letzte Satz** (dass $x^n + y^n = z^n \ (n \ge 3)$ keine positiven ganzzahligen Lösungen hat). Dieser Satz wies etwa 350 Jahre lang nach seiner Aufstellung die Herausforderungen von genialen Mathematikern auf der ganzen Welt zurück, bis er schließlich 1995 von [Andrew Wiles](/de/p/wiles/) bewiesen wurde. Ohne das Buch von [Diophantus](https://kenji.blog/de/p/diophantus/) hätte dieses große mathematische Drama vielleicht nie stattgefunden.
 
 ```mermaid
 graph TD
@@ -179,7 +179,7 @@ Insbesondere Mathematiker in Bagdad im 9. Jahrhundert übersetzten die *Arithmet
 
 Im 16. Jahrhundert, als griechische Klassiker im Europa der Renaissance wiederentdeckt wurden, wurde die *Arithmetica* ins Lateinische übersetzt. Eine zweisprachige griechische und lateinische Ausgabe, die 1621 von [Claude Gaspard Bachet](https://kenji.blog/de/p/bachet/) de Méziriac herausgegeben wurde, fand große Verbreitung. Es war diese Bachet-Ausgabe der *Arithmetica*, die [Fermat](https://kenji.blog/de/p/fermat/) sorgfältig studierte, was die Öffnung einer neuen Tür in der Mathematik auslöste.
 
-Die Theorie der diophantischen Gleichungen wurde in der Folge von Giganten wie [Leonhard Euler](https://kenji.blog/de/p/euler/), Joseph-Louis Lagrange und Carl Friedrich Gauß tiefgreifend untersucht. Ihre Forschung wuchs zu den riesigen mathematischen Gebieten der modernen "algebraischen Zahlentheorie" und "algebraischen Geometrie" heran. Das 10. der 23 Hilbertschen Probleme war "die Angabe eines Verfahrens, nach welchem sich mittels einer endlichen Anzahl von Operationen entscheiden lässt, ob die Gleichung in rationalen ganzen Zahlen lösbar ist", und 1970 bewies Juri Matijassewitsch, dass "ein solches Verfahren nicht existiert". Der Name [Diophantus](https://kenji.blog/de/p/diophantus/) ist tief in die Spitzenforschung der modernen Mathematik eingraviert.
+Die Theorie der diophantischen Gleichungen wurde in der Folge von Giganten wie [Leonhard Euler](https://kenji.blog/de/p/euler/), [Joseph-Louis Lagrange](/de/p/lagrange/) und [Carl Friedrich Gauß](/de/p/gauss/) tiefgreifend untersucht. Ihre Forschung wuchs zu den riesigen mathematischen Gebieten der modernen "algebraischen Zahlentheorie" und "algebraischen Geometrie" heran. Das 10. der 23 Hilbertschen Probleme war "die Angabe eines Verfahrens, nach welchem sich mittels einer endlichen Anzahl von Operationen entscheiden lässt, ob die Gleichung in rationalen ganzen Zahlen lösbar ist", und 1970 bewies Juri Matijassewitsch, dass "ein solches Verfahren nicht existiert". Der Name [Diophantus](https://kenji.blog/de/p/diophantus/) ist tief in die Spitzenforschung der modernen Mathematik eingraviert.
 
 ## 7. Fazit
 

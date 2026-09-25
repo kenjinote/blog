@@ -16,7 +16,7 @@ Dans cet article, nous partirons de la philosophie qui sous-tend le langage Hask
 
 ## 1. Le paradigme de la programmation purement fonctionnelle
 
-Le fondement de la programmation fonctionnelle repose sur l'idée de "traiter les calculs comme l'évaluation de fonctions mathématiques". Dans un langage "purement" fonctionnel comme Haskell en particulier, cette règle est strictement respectée.
+Le fondement de la [programmation fonctionnelle](/fr/p/lambda-calculus-functional-programming/) repose sur l'idée de "traiter les calculs comme l'évaluation de fonctions mathématiques". Dans un langage "purement" fonctionnel comme Haskell en particulier, cette règle est strictement respectée.
 
 ### Transparence référentielle (Referential Transparency)
 

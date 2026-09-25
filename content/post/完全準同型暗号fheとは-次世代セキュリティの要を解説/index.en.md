@@ -230,7 +230,7 @@ As you can see from the code above, you can intuitively describe computations be
 
 While FHE provides theoretically perfect security, its biggest challenge for practical use is **"performance overhead."**
 
-1.  **Computational Overhead**: Compared to computing in plaintext, computing in ciphertext is thousands to tens of thousands of times slower on a CPU. Polynomial multiplications and bootstrapping require massive amounts of FFT (Fast Fourier Transform) or NTT (Number Theoretic Transform) calculations.
+1.  **Computational Overhead**: Compared to computing in plaintext, computing in ciphertext is thousands to tens of thousands of times slower on a CPU. Polynomial multiplications and bootstrapping require massive amounts of [FFT](/en/p/fast-fourier-transform-algorithm/) ([Fast Fourier Transform](/en/p/fast-fourier-transform-algorithm/)) or NTT (Number Theoretic Transform) calculations.
 2.  **Ciphertext Expansion**: A few bytes of plaintext can expand to several megabytes when encrypted. This puts severe pressure on memory bandwidth and network bandwidth.
 
 ### Approaches to Hardware Solutions
@@ -259,9 +259,9 @@ Now that FHE is approaching practical speeds, disruptive innovations are expecte
 
 ## 9. Conclusion: The Future of [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy is "Unseen Computation"
 
-Just as the invention of public key cryptography ([RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)) in the 1970s enabled secure communication on the Internet (such as HTTPS), Craig Gentry's invention of FHE is one of the most important milestones in the history of cryptography.
+Just as the invention of public key cryptography ([RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)) in the 1970s enabled secure communication on the Internet (such as HTTPS), Craig Gentry's invention of FHE is one of the most important milestones in the [history of cryptography](/en/p/history-of-cryptography-caesar-to-pqc/).
 
-Today, Fully Homomorphic Encryption (FHE) has leapt from the theories of laboratories into the stage where Microsoft, IBM, Intel, Google, and many startups are fiercely competing toward practical application. While challenges regarding computational cost and data size still exist, thanks to the refinement of algorithms and the evolution of hardware accelerators, performance improvements continue at a pace exceeding Moore's Law.
+Today, Fully Homomorphic Encryption (FHE) has leapt from the theories of laboratories into the stage where Microsoft, IBM, Intel, Google, and many startups are fiercely competing toward practical application. While challenges regarding computational cost and data size still exist, thanks to the refinement of algorithms and the evolution of hardware accelerators, performance improvements continue at a pace exceeding [Moore's Law](/en/p/business-moores-law/).
 
 In a few years, "computing data while keeping it encrypted" will not be something special, but will likely become the standard data protection best practice in cloud services. FHE is the keystone of next-generation security, realizing the **ultimate combination of privacy and data utilization** in a data-driven society.
 

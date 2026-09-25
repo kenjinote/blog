@@ -12,7 +12,7 @@ description: 'C++와 ggml을 사용하여 TinyLLaMA와 같은 소규모 AI 모�
 
 # C++로 시작하는 소규모 AI 모델(TinyLLaMA 등) 개발 절차
 
-최근 대규모 언어 모델([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))을 로컬 환경에서 실행하는 것에 대한 관심이 급속히 높아지고 있습니다. 특히 TinyLLaMA(1.1B 파라미터)와 같은 소규모 모델은 제한된 리소스의 엣지 디바이스나 일반적인 노트북(Windows 환경 포함)에서도 실용적인 속도로 추론이 가능합니다. Python과 PyTorch를 이용한 개발이 주류인 반면, 궁극의 퍼포먼스와 메모리 절약을 추구할 경우 C++와 C언어 기반의 텐서 라이브러리인 'ggml'의 조합이 사실상의 표준이 되고 있습니다.
+최근 [대규모 언어 모델](/ko/p/large-language-models-llm-transformer-prompt-engineering/)([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))을 로컬 환경에서 실행하는 것에 대한 관심이 급속히 높아지고 있습니다. 특히 TinyLLaMA(1.1B 파라미터)와 같은 소규모 모델은 제한된 리소스의 엣지 디바이스나 일반적인 노트북(Windows 환경 포함)에서도 실용적인 속도로 추론이 가능합니다. Python과 PyTorch를 이용한 개발이 주류인 반면, 궁극의 퍼포먼스와 메모리 절약을 추구할 경우 C++와 C언어 기반의 텐서 라이브러리인 'ggml'의 조합이 사실상의 표준이 되고 있습니다.
 
 본 기사에서는 C++를 사용하여 TinyLLaMA를 로드하고, 텍스트 생성을 수행하기 위한 추론 엔진을 제로부터 구축(혹은 기존 llama.cpp의 내부 구조를 깊이 이해)하기 위한 매우 상세한 개발 절차를 해설합니다.
 
@@ -64,7 +64,7 @@ mmap을 사용하면 파일 내용을 프로세스의 가상 메모리 공간에
 * **제로 카피(Zero-copy)**: 데이터는 디스크에서 커널의 페이지 캐시로 직접 로드되며 사용자 공간으로의 불필요한 복사가 발생하지 않습니다.
 * **온디맨드 로드(Page Fault)**: 실제로 CPU가 해당 메모리 주소에 접근하는 순간 페이지 폴트가 발생하며, 필요한 청크(일반적으로 4KB)만 물리 메모리에 로드됩니다.
 
-Windows 환경에서는 POSIX의 `mmap` 대신 Win32 API의 `CreateFileMapping`과 `MapViewOfFile`을 사용합니다.
+Windows 환경에서는 POSIX의 `mmap` 대신 [Win32](/ko/p/modern-cpp-win32-api-safe-handling/) API의 `CreateFileMapping`과 `MapViewOfFile`을 사용합니다.
 
 ```mermaid
 sequenceDiagram
@@ -81,9 +81,9 @@ sequenceDiagram
 
 ### 3.2 GGUF 포맷의 바이너리 구조
 
-Hugging Face 등의 `.safetensors` 포맷에서 변환된 **GGUF (GPT-Generated Unified Format)** 는 추론을 위한 궁극적인 포맷입니다. 다음과 같은 엄격한 바이너리 레이아웃을 갖습니다.
+Hugging Face 등의 `.safetensors` 포맷에서 변환된 **[GGUF](/ko/p/llama-cpp-quantization-gguf/) (GPT-Generated Unified Format)** 는 추론을 위한 궁극적인 포맷입니다. 다음과 같은 엄격한 바이너리 레이아웃을 갖습니다.
 
-1. **Magic Bytes**: `0x46554747` (GGUF).
+1. **Magic Bytes**: `0x46554747` ([GGUF](/ko/p/llama-cpp-quantization-gguf/)).
 2. **Version**: 포맷의 버전 번호.
 3. **Tensor Count & Metadata Count**: 텐서 개수와 메타데이터의 키-값 쌍 개수.
 4. **Metadata ([Key-Value](https://kenji.blog/ko/p/nosql-database-selection-kvs-document-graph-wide-column/) Pairs)**: 문자열 길이 접두사가 붙은 키와 타입이 지정된 값.
@@ -140,7 +140,7 @@ ggml은 추론을 위한 정적인 계산 그래프를 구축하고 이를 나�
 ### 5.1 ggml_context와 아레나 할당자
 
 ggml의 가장 독특한 점은 추론 루프 내에서 동적인 메모리 할당(`malloc`이나 `new`)을 일절 수행하지 않는 '아레나 할당'입니다.
-초기화 시 거대한 연속된 메모리 영역(아레나)을 확보하고, `ggml_new_tensor` 등을 호출할 때마다 이 영역의 포인터가 증가합니다. 추론의 1단계가 완료되면 할당 포인터를 초기 위치로 재설정하기만 하면 다음 추론 단계를 위한 메모리 확보가 즉시 완료됩니다.
+초기화 시 거대한 연속된 메모리 영역(아레나)을 확보하고, `ggml_new_tensor` 등을 호출할 때마다 이 영역의 [포인터](/ko/p/c-language-pointers-memory-management-stack-heap/)가 증가합니다. 추론의 1단계가 완료되면 할당 [포인터](/ko/p/c-language-pointers-memory-management-stack-heap/)를 초기 위치로 재설정하기만 하면 다음 추론 단계를 위한 메모리 확보가 즉시 완료됩니다.
 
 ### 5.2 그래프 구축의 구체적인 예
 

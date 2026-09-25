@@ -14,7 +14,7 @@ tags:
 image: eyecatch.jpg
 ---
 
-In the world of mathematics, there are topics that start with highly intuitive problems, but whose solutions and derived problems lead to the most profound areas of modern mathematics. "Fermat's Last Theorem" and the "Poincaré Conjecture" are typical examples, but the **"Kakeya Conjecture"**, located at the intersection of geometry and analysis, is also one of these fascinating themes.
+In the world of mathematics, there are topics that start with highly intuitive problems, but whose solutions and derived problems lead to the most profound areas of modern mathematics. "[Fermat's Last Theorem](/en/p/fermats-last-theorem/)" and the "[Poincaré Conjecture](/en/p/poincare-conjecture/)" are typical examples, but the **"Kakeya Conjecture"**, located at the intersection of geometry and analysis, is also one of these fascinating themes.
 
 In this article, we will delve deeply into the full picture of the Kakeya Conjecture, starting from the "Kakeya Needle Problem" posed by Japanese mathematician Soichi Kakeya in 1917, through the surprising discovery by Russian mathematician Besicovitch, and up to the research by modern mathematical genius Terence Tao and others.
 

@@ -153,7 +153,7 @@ Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 ```
 
-Assim, mesmo no ambiente Windows, você pode construir, procurar e executar comandos da mesma maneira intuitiva de um ambiente Linux. A uniformização dessa carga cognitiva ($M$) entre plataformas é crucial para engenheiros de DevOps.
+Assim, mesmo no ambiente Windows, você pode construir, procurar e executar comandos da mesma maneira intuitiva de um ambiente Linux. A uniformização dessa carga cognitiva ($M$) entre plataformas é crucial [para engenheiros](/pt/p/prompt-engineering-for-engineers/) de DevOps.
 
 ---
 
@@ -327,7 +327,7 @@ Pressione `Alt+Shift+D` para subdividir as sessões do PowerShell ativas, bem co
 
 Juntando as pontas dos elementos aqui propostos (Emacs, PSReadLine, fzf, Aliases e tmux), ganhamos propulsão estratosférica na resolução das interações simples da nossa rotina.
 
-Suponhamos investigar uma falha a partir do output dos logs nos servidores de produção e em paralelo olhar as contribuições feitas sobre aquela seção do código através de um checkout pelo Git.
+Suponhamos investigar uma falha a partir do [output](/pt/p/reading-hard-tech-books/) dos logs nos servidores de produção e em paralelo olhar as contribuições feitas sobre aquela seção do código através de um checkout pelo Git.
 
 1. Do terminal recém aberto, emita `z prod` – pule de onde você estiver para a pasta pertinente nos sistemas de produção.
 2. Acione `Ctrl+R`, visualizando o layout do `fzf` para bater nas suas teclas a abreviação `ssh auth`, conseguindo carregar sua grande cadeia do seu logon passado no SSH.

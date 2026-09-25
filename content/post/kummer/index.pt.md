@@ -28,13 +28,13 @@ Inicialmente, ele se formou em teologia protestante, mas sob a influência do pr
 
 Após a graduação, [Kummer](https://kenji.blog/pt/p/kummer/) não conseguiu garantir imediatamente um cargo universitário, então trabalhou por cerca de dez anos como professor de matemática e física em um gymnasium em Liegnitz ( **Liegnitz** ), perto de sua cidade natal. Este período como professor não foi de forma alguma uma perda de tempo. Ele tinha uma profunda paixão como educador e formou alunos excepcionais.
 
-Um desses alunos foi Leopold [Kronecker](https://kenji.blog/pt/p/kronecker/) ( **Leopold Kronecker** ), que mais tarde se tornaria colega e amigo de Kummer por toda a vida. Kummer reconheceu o talento extraordinário de Kronecker, ensinou-lhe matemática avançada e o colocou no caminho da pesquisa. Enquanto trabalhava como professor de gymnasium, [Kummer](https://kenji.blog/pt/p/kummer/) continuou sua própria pesquisa, publicando uma série de artigos notáveis em periódicos acadêmicos em Berlim.
+Um desses alunos foi Leopold [Kronecker](https://kenji.blog/pt/p/kronecker/) ( **[Leopold Kronecker](/pt/p/kronecker/)** ), que mais tarde se tornaria colega e amigo de Kummer por toda a vida. Kummer reconheceu o talento extraordinário de Kronecker, ensinou-lhe matemática avançada e o colocou no caminho da pesquisa. Enquanto trabalhava como professor de gymnasium, [Kummer](https://kenji.blog/pt/p/kummer/) continuou sua própria pesquisa, publicando uma série de artigos notáveis em periódicos acadêmicos em Berlim.
 
 ### Glória como Professor Universitário
 
-Suas notáveis realizações em pesquisa atraíram a atenção dos principais matemáticos da época. Em 1842, por recomendação de [Carl Gustav Jacob Jacobi](https://kenji.blog/pt/p/jacobi/) ( **Carl Gustav Jacob Jacobi** ) e Peter Gustav Lejeune Dirichlet ( **Peter Gustav Lejeune Dirichlet** ), [Kummer](https://kenji.blog/pt/p/kummer/) tornou-se professor titular da Universidade de Breslau. Além disso, em 1855, foi nomeado professor da Universidade de Berlim para suceder Dirichlet, que havia se mudado para Göttingen.
+Suas notáveis realizações em pesquisa atraíram a atenção dos principais matemáticos da época. Em 1842, por recomendação de [Carl Gustav Jacob Jacobi](https://kenji.blog/pt/p/jacobi/) ( **[Carl Gustav Jacob Jacobi](/pt/p/jacobi/)** ) e Peter Gustav Lejeune Dirichlet ( **Peter Gustav Lejeune Dirichlet** ), [Kummer](https://kenji.blog/pt/p/kummer/) tornou-se professor titular da Universidade de Breslau. Além disso, em 1855, foi nomeado professor da Universidade de Berlim para suceder Dirichlet, que havia se mudado para Göttingen.
 
-Na Universidade de Berlim, [Kummer](https://kenji.blog/pt/p/kummer/), juntamente com Karl Weierstrass ( **Karl Weierstrass** ) e seu ex-aluno [Kronecker](https://kenji.blog/pt/p/kronecker/), elevaram Berlim a um centro global de matemática. Suas palestras eram extremamente claras e apaixonadas, atraindo muitos alunos brilhantes de toda a Europa.
+Na Universidade de Berlim, [Kummer](https://kenji.blog/pt/p/kummer/), juntamente com [Karl Weierstrass](/pt/p/weierstrass/) ( **[Karl Weierstrass](/pt/p/weierstrass/)** ) e seu ex-aluno [Kronecker](https://kenji.blog/pt/p/kronecker/), elevaram Berlim a um centro global de matemática. Suas palestras eram extremamente claras e apaixonadas, atraindo muitos alunos brilhantes de toda a Europa.
 
 ---
 
@@ -64,7 +64,7 @@ $$
 
 Não existem soluções inteiras positivas $(x, y, z)$ que satisfaçam esta equação.
 
-Em 1847, os matemáticos franceses [Gabriel Lamé](https://kenji.blog/pt/p/lame/) ( **Gabriel Lamé** ) e Augustin-Louis Cauchy ( **[Augustin-Louis Cauchy](https://kenji.blog/pt/p/cauchy/)** ) anunciaram que haviam conseguido provar este teorema. A abordagem deles foi estender a fatoração para o reino dos números complexos (corpos ciclotômicos).
+Em 1847, os matemáticos franceses [Gabriel Lamé](https://kenji.blog/pt/p/lame/) ( **[Gabriel Lamé](/pt/p/lame/)** ) e [Augustin-Louis Cauchy](/pt/p/cauchy/) ( **[Augustin-Louis Cauchy](https://kenji.blog/pt/p/cauchy/)** ) anunciaram que haviam conseguido provar este teorema. A abordagem deles foi estender a fatoração para o reino dos números complexos (corpos ciclotômicos).
 
 Usando a $p$-ésima raiz primitiva da unidade $\zeta$ (onde $\zeta^p = 1, \zeta \neq 1$), a equação $x^p + y^p = z^p$ pode ser fatorada da seguinte forma:
 

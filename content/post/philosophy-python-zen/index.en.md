@@ -28,7 +28,7 @@ While there are various best practices and design patterns in the world of softw
 
 ### Background of Birth: Tim Peters and PEP 20
 
-The Zen of Python was written by Tim Peters, a core developer who has been involved in Python development for many years. Tim verbalized the "implicit understandings" and "intuition" in the design of Guido van Rossum, the creator of Python, and systematized them so they could be shared within the community.
+The Zen of Python was written by Tim Peters, a core developer who has been involved in Python development for many years. Tim verbalized the "implicit understandings" and "intuition" in the design of Guido van Rossum, [the creator of Python](/en/p/biography-guido-van-rossum/), and systematized them so they could be shared within the community.
 
 This was later officially documented as **PEP 20 (Python Enhancement Proposal 20)**. When features are added or modified in Python, this PEP 20 always functions as a starting point to return to.
 
@@ -121,7 +121,7 @@ Python hates this kind of "reading between the lines" behavior. If you try to ad
 The language Perl has a philosophy that "There's more than one way to do it" (TIMTOWTDI), but Python goes in the exact opposite direction.
 
 If you are doing the same operation, it is ideal that everyone writes it the same way. This dramatically lowers the cognitive load when reading code written by others.
-Note that the "Dutch" refers to Guido van Rossum, the creator of Python. It includes the humor that it might take time to fully understand the language designer's intentions.
+Note that the "Dutch" refers to Guido van Rossum, [the creator of Python](/en/p/biography-guido-van-rossum/). It includes the humor that it might take time to fully understand the language designer's intentions.
 
 ### Now is better than never.
 ### Although never is often better than *right* now.

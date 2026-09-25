@@ -125,7 +125,7 @@ In diesem Modell können die vom Kommandanten ausgegebenen Befehle auf dem Weg n
 
 Die Widerstandsfähigkeit gegenüber dem Problem der byzantinischen Generäle wird als **byzantinische Fehlertoleranz** (Byzantine Fault Tolerance, BFT) bezeichnet. Sie ist ein wichtiger Indikator dafür, dass ein verteiltes System Ausfälle oder böswillige Angriffe überstehen und normal weiterarbeiten kann.
 
-In den letzten Jahren rückte dieses Problem durch das Aufkommen der **Blockchain-Technologie** wieder stark in den Fokus. Da eine Blockchain ein [P2P](https://kenji.blog/de/p/webrtc-realtime-communication-p2p/)-Netzwerk ohne zentrale Kontrollinstanz ist, besteht die Möglichkeit, dass böswillige Teilnehmer (Knoten) gefälschte Transaktionsverläufe verbreiten. Dies entspricht exakt dem Problem der byzantinischen Generäle.
+In den letzten Jahren rückte dieses Problem durch das Aufkommen der **[Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/)-Technologie** wieder stark in den Fokus. Da eine [Blockchain](/de/p/blockchain-technology-smart-contract-distributed-ledger/) ein [P2P](https://kenji.blog/de/p/webrtc-realtime-communication-p2p/)-Netzwerk ohne zentrale Kontrollinstanz ist, besteht die Möglichkeit, dass böswillige Teilnehmer (Knoten) gefälschte Transaktionsverläufe verbreiten. Dies entspricht exakt dem Problem der byzantinischen Generäle.
 
 ### Die Funktionsweise von PBFT (Practical Byzantine Fault Tolerance)
 
@@ -186,4 +186,4 @@ $$
 
 Das **Problem der byzantinischen Generäle** bildet das theoretische Fundament, um die Zuverlässigkeit verteilter Systeme zu gewährleisten. Die Frage, „Wie kann man als Ganzes eine korrekte Entscheidung treffen, in einer Umgebung, in der man nicht weiß, wem man vertrauen kann?“, findet Anwendung in allen modernen IT-Infrastrukturen – von der Basistechnologie für Krypto-Assets über Steuerungssysteme in Flugzeugen bis hin zum Cloud Computing.
 
-Die Weiterentwicklung von Algorithmen, die die Existenz von Verrätern voraussetzen und dennoch ein Anhalten des Systems verhindern, wird auch in Zukunft nicht aufhören. Für Ingenieure, die an der Entwicklung verteilter Systeme beteiligt sind, wird das Verständnis der mathematischen Beweise und Algorithmen, die diesem Problem zugrunde liegen, eine sehr mächtige Waffe sein.
+Die Weiterentwicklung von Algorithmen, die die Existenz von Verrätern voraussetzen und dennoch ein Anhalten des Systems verhindern, wird auch in Zukunft nicht aufhören. [Für Ingenieure](/de/p/prompt-engineering-for-engineers/), die an der Entwicklung verteilter Systeme beteiligt sind, wird das Verständnis der mathematischen Beweise und Algorithmen, die diesem Problem zugrunde liegen, eine sehr mächtige Waffe sein.

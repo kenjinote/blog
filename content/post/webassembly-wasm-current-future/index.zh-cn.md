@@ -167,7 +167,7 @@ pub fn greet(name: &str) {
 ## 4.1 基准测试：斐波那契数列
 
 让我们通过简单的斐波那契数列计算，来对比一下 JavaScript 和 Rust(Wasm) 的速度。
-在数学上，它由以下的递归公式表示。其时间复杂度呈指数级 `$ O(2^n) $` ，会极大地消耗 CPU。
+在数学上，它由以下的递归公式表示。其时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)呈指数级 `$ O(2^n) $` ，会极大地消耗 CPU。
 
 $$
 F(n) =
@@ -261,7 +261,7 @@ Wasm 比容器轻量得多，启动极快（几毫秒级别），且具有不依
 当前 WebAssembly 面临的最大挑战是，让不同语言编写的 Wasm 模块协同工作非常困难（因为不同语言中字符串或复杂数据类型的内存表示是不同的）。
 
 能够解决这个问题的是 **WebAssembly Component Model** 。
-如果组件模型得以实现，就能够做到例如从“用 Python 编写的 Wasm 模块”中无缝地调用“用 [Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 编写的 Wasm 模块”的函数。它具备成为不依赖平台和语言的下一代微服务架构基础的潜力。
+如果组件模型得以实现，就能够做到例如从“用 Python 编写的 Wasm 模块”中无缝地调用“用 [Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 编写的 Wasm 模块”的函数。它具备成为不依赖平台和语言的下一代[微服务架构](/zh-cn/p/microservices-architecture-bff-api-gateway/)基础的潜力。
 
 ## 8.2 作为插件系统的 Wasm
 事实上，Figma、EnvoyProxy、Microsoft Flight Simulator 等众多软件已经采用 WebAssembly 作为其专属的插件系统。这是因为它们能够安全且高速地在主体应用程序中运行用户编写的第三方代码。

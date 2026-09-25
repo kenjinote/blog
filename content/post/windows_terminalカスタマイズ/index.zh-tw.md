@@ -315,7 +315,7 @@ Import-Module -Name Terminal-Icons
 
 # 7. 提示字元的演化論 2：WSL2 架構與 Starship 的融合
 
-能在 Windows 上執行真正 Linux 核心的 WSL2（Windows Subsystem for Linux 2），對於現代 Web 開發與雲端原生（Cloud Native）開發是不可或缺的。要客製化 WSL 內的殼層（Bash 或 Zsh）的提示字元，「 **Starship** 」是最佳解答。
+能在 Windows 上執行真正 Linux 核心的 [WSL2](/zh-tw/p/wsl2-ultimate-development-setup-guide/)（[Windows Subsystem for Linux](/zh-tw/p/wsl2-ultimate-development-setup-guide/) 2），對於現代 Web 開發與雲端原生（Cloud Native）開發是不可或缺的。要客製化 WSL 內的殼層（Bash 或 Zsh）的提示字元，「 **Starship** 」是最佳解答。
 
 Starship 是以 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 語言撰寫的，一款極為快速且客製化程度極高的跨殼層提示字元。只要撰寫一個設定檔（TOML），就能在 Bash、Zsh、Fish 等任何殼層中重現完全相同的提示字元，這是它的優勢。
 
@@ -411,7 +411,7 @@ $$
 - $ T_{hw\_input} $：鍵盤的機械開關開啟，透過 USB 控制器輪詢（Polling），直到送出中斷訊號的硬體延遲（約 1～5 ms）。
 - $ T_{os} $：由 OS 的 HID（Human Interface Device）驅動程式層造成的訊息佇列處理延遲（約 1～2 ms）。
 - $ T_{pty} $：由 ConPTY（虛擬終端機）造成的緩衝與字元編碼（如 UTF-8 轉 UTF-16）轉換延遲（約 2～10 ms）。
-- $ T_{app} $：殼層（PowerShell/Bash）端的指令解析與決定畫面輸出的處理時間。也包含 Oh My Posh 或 Starship 取得 Git 狀態等的處理時間（約 10～50 ms）。
+- $ T_{app} $：殼層（[PowerShell/Bash](/zh-tw/p/terminal-efficiency-powershell-bash-shortcuts/)）端的指令解析與決定畫面輸出的處理時間。也包含 Oh My Posh 或 Starship 取得 Git 狀態等的處理時間（約 10～50 ms）。
 - $ T_{render} $：Windows Terminal（DirectWrite/DirectX）將文字字形光柵化為紋理、傳輸至 GPU 記憶體，直到翻轉交換鏈（Swap Chain）的渲染延遲（約 2～8 ms）。
 - $ T_{display} $：從 GPU 的影格緩衝區輸出訊號至顯示器，液晶分子反應並物理性改變發光狀態的顯示器延遲（如 GtG 反應時間。約 5～20 ms）。
 
@@ -427,7 +427,7 @@ Windows Terminal 的開發團隊投入了大量心力，特別是在最小化 $ 
 
 # 9. 進階的疑難排解與除錯手法
 
-當您將 Windows Terminal 客製化到極限時，可能會遇到設定檔的語法錯誤或字型渲染異常等預期外的問題。在這裡，我們將介紹給工程師的進階疑難排解手法。
+當您將 Windows Terminal 客製化到極限時，可能會遇到設定檔的語法錯誤或字型渲染異常等預期外的問題。在這裡，我們將介紹[給工程師](/zh-tw/p/prompt-engineering-for-engineers/)的進階疑難排解手法。
 
 ## 9.1 settings.json 的 JSON Schema 驗證
 `settings.json` 的結構有著嚴格的定義，建議使用 JSON Schema 在編輯器（如 VS Code 等）中進行即時的語法檢查。在 VS Code 開啟 `settings.json` 時，預設會套用 Windows Terminal 的結構描述，無效的屬性名稱或值的型別錯誤（例如：在預期數字的地方指定了字串等），都會立刻以波浪線顯示警告。

@@ -77,14 +77,14 @@ What is actually used in [RDBMS](https://kenji.blog/en/p/rdbms-transaction-acid-
 
 ### 4.1 Differences Between B-Trees and B+Trees
 
-In a B-Tree, actual data (or pointers to data) is stored in both internal nodes and leaf nodes. On the other hand, a **B+Tree** has the following characteristics:
+In a B-Tree, actual data (or [pointers](/en/p/c-language-pointers-memory-management-stack-heap/) to data) is stored in both internal nodes and leaf nodes. On the other hand, a **B+Tree** has the following characteristics:
 
 1. **All data is stored only in leaf nodes**. Internal nodes hold only keys (indexes) for routing.
-2. **Leaf nodes are connected by a linked list (pointers)**. This makes sequential access and range queries extremely fast.
+2. **Leaf nodes are connected by a linked list ([pointers](/en/p/c-language-pointers-memory-management-stack-heap/))**. This makes sequential access and range queries extremely fast.
 
 ### 4.2 Reasons for Adopting B+Trees
 
-By eliminating pointers to actual data from internal nodes, more keys can be packed into a single internal node (page). This further increases the fan-out, keeps the tree height $ h $ lower, and reduces the number of disk I/Os.
+By eliminating [pointers](/en/p/c-language-pointers-memory-management-stack-heap/) to actual data from internal nodes, more keys can be packed into a single internal node (page). This further increases the fan-out, keeps the tree height $ h $ lower, and reduces the number of disk I/Os.
 
 Furthermore, in range queries frequently used in SQL like `WHERE id BETWEEN 10 AND 100`, a B-[Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) requires traversing the tree multiple times, but with a **B+Tree**, once the starting leaf node is found, data can be read continuously just by following the links of the leaf nodes.
 

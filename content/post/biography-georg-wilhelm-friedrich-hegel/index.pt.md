@@ -9,7 +9,7 @@ slug: "biography-georg-wilhelm-friedrich-hegel"
 description: "Na história da filosofia ocidental, o pensador que atingiu o ápice do idealismo alemão do século XIX, começando com Immanuel Kant, foi Georg Wilhelm Friedr"
 ---
 
-Na história da filosofia ocidental, o pensador que atingiu o ápice do idealismo alemão do século XIX, começando com Immanuel Kant, foi Georg Wilhelm Friedrich Hegel (1770–1831). Seu formidável e grandioso sistema de pensamento, centrado na "Dialética" e no "Espírito Absoluto", exerceu uma influência extremamente ampla não apenas em sua época, mas também em Karl Marx, no existencialismo e, até hoje, na ciência política e na história modernas. Neste artigo, traçaremos a vida de Hegel e aprofundaremos na essência de sua filosofia e em seu impacto nas gerações posteriores.
+Na história da filosofia ocidental, o pensador que atingiu o ápice do idealismo alemão do século XIX, começando com [Immanuel Kant](/pt/p/biography-immanuel-kant/), foi Georg Wilhelm Friedrich Hegel (1770–1831). Seu formidável e grandioso sistema de pensamento, centrado na "Dialética" e no "Espírito Absoluto", exerceu uma influência extremamente ampla não apenas em sua época, mas também em [Karl Marx](/pt/p/biography-karl-marx/), no existencialismo e, até hoje, na ciência política e na história modernas. Neste artigo, traçaremos a vida de Hegel e aprofundaremos na essência de sua filosofia e em seu impacto nas gerações posteriores.
 
 ## O Caminho de Aluno Brilhante do Seminário a Grande Filósofo
 
@@ -43,7 +43,7 @@ Em 1831, infectado pela cólera que assolava Berlim (ou possivelmente uma doenç
 
 A escola hegeliana dividiu-se na "Velha Escola Hegeliana" (Hegelianos de Direita), que interpretava conservadoramente seu sistema e afirmava o estado prussiano, e na "Jovem Escola Hegeliana" (Hegelianos de Esquerda), que interpretava radicalmente a lógica do desenvolvimento dialético e criticava o estado atual e a religião.
 
-A influência destes últimos, em particular, moveu muito a história. Após a crítica da religião de Ludwig Feuerbach, Karl Marx e Friedrich Engels surgiram. Enquanto criticava a dialética idealista de Hegel como estando "de cabeça para baixo", Marx herdou a própria lógica de desenvolvimento, virando-a e desenvolvendo-a no "Materialismo Histórico". Em outras palavras, ele acreditava que o que move a história não é o "espírito", mas as contradições na "infraestrutura econômica" material.
+A influência destes últimos, em particular, moveu muito a história. Após a crítica da religião de Ludwig Feuerbach, [Karl Marx](/pt/p/biography-karl-marx/) e Friedrich Engels surgiram. Enquanto criticava a dialética idealista de Hegel como estando "de cabeça para baixo", Marx herdou a própria lógica de desenvolvimento, virando-a e desenvolvendo-a no "Materialismo Histórico". Em outras palavras, ele acreditava que o que move a história não é o "espírito", mas as contradições na "infraestrutura econômica" material.
 
 ```mermaid
 graph TD

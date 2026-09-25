@@ -151,7 +151,7 @@ Satu-satunya kasus di mana "menukar menjadi lebih menguntungkan untuk semua nila
 Itu hanya terjadi jika kita mengasumsikan anggaran acara adalah **tak terhingga**, dan ada "distribusi probabilitas tak wajar (distribusi di mana jumlah totalnya menjadi tak terhingga)" di mana semua jumlah uang (1 Yen, 2 Yen, 4 Yen, 8 Yen... tak terhingga) muncul secara merata.
 
 Namun, tidak ada stasiun televisi di dunia nyata yang memiliki aset tak terhingga.
-Bug yang disebabkan oleh "nilai harapan tak terhingga" ini berakar dalam pada **Paradoks St. Petersburg** (masalah tentang seberapa banyak seseorang bersedia membayar untuk perjudian dengan nilai harapan tak terhingga).
+Bug yang disebabkan oleh "nilai harapan tak terhingga" ini berakar dalam pada **[Paradoks St. Petersburg](/id/p/st-petersburg-paradox/)** (masalah tentang seberapa banyak seseorang bersedia membayar untuk perjudian dengan nilai harapan tak terhingga).
 
 ## 6. Kesimpulan: Kengerian Probabilitas dan Nilai Harapan
 

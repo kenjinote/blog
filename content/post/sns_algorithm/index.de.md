@@ -50,7 +50,7 @@ Dieser Algorithmus rückt "Person A, die sich für [Rust](https://kenji.blog/de/
 
 ### 2.2 Deep Learning basierte Empfehlungsmodelle (DLRM)
 
-In den letzten Jahren haben sich Deep-Learning-basierte Architekturen, vertreten durch das Deep Learning Recommendation Model (DLRM), insbesondere bei Unternehmen wie Meta (ehemals Facebook) verbreitet. DLRM nimmt eine Vielzahl von Merkmalen (Features) wie die vergangene Historie des Nutzers und Metadaten der Artikel als Eingabe entgegen und prognostiziert die Klickrate (CTR: Click-Through Rate) oder ähnliche Metriken.
+In den letzten Jahren haben sich Deep-Learning-basierte Architekturen, vertreten durch das Deep Learning Recommendation Model (DLRM), insbesondere bei Unternehmen wie Meta ([ehemals Facebook](/de/p/history-of-meta-facebook/)) verbreitet. DLRM nimmt eine Vielzahl von Merkmalen (Features) wie die vergangene Historie des Nutzers und Metadaten der Artikel als Eingabe entgegen und prognostiziert die Klickrate (CTR: Click-Through Rate) oder ähnliche Metriken.
 
 Das Merkmal von DLRM besteht darin, spärliche kategorische Merkmale (z.B. Nutzer-ID, verfolgte Hashtags) durch eine "Embedding Table" in dichte Vektoren (Dense Vectors) umzuwandeln und sie mit kontinuierlichen, dichten Merkmalen (z.B. Tage seit Kontoerstellung, durchschnittliche Verweildauer in der Vergangenheit) zu kombinieren.
 

@@ -273,7 +273,7 @@ SnapStartを有効にすると、[Java](https://kenji.blog/p/programming-languag
 重要なのは、**「銀の弾丸」は存在しない** というエンジニアリングの基本原則を忘れないことです。
 
 - **レイテンシに極度に厳しいシステム**（例: オンライン対戦ゲームのコアロジック、ミリ秒単位の高頻度取引）には、サーバーレスよりも常時稼働の[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)（Amazon ECS/EKS）が適しているかもしれません。
-- **バーストトラフィックが多い非同期処理** や、**運用コストを極小化したいWeb API** には、AWS Lambdaが最高の選択肢となります。
+- **バーストトラフィックが多い[非同期処理](/p/event-driven-architecture-async/)** や、**運用コストを極小化したいWeb API** には、AWS Lambdaが最高の選択肢となります。
 
 アーキテクチャの特性を深く理解し、適材適所で技術を選定すること。それこそが、サーバーレスの「光」を最大限に浴びつつ、「影」を制御する唯一の道なのです。
 

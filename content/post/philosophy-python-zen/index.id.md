@@ -28,7 +28,7 @@ Ada berbagai praktik terbaik dan pola desain di dunia rekayasa perangkat lunak, 
 
 ### Latar Belakang Penciptaan: Tim Peters dan PEP 20
 
-The Zen of Python ditulis oleh Tim Peters, seorang pengembang inti yang telah lama terlibat dalam pengembangan Python. Tim mensistematisasi "pemahaman implisit" dan "intuisi" dalam desain Guido van Rossum, pencipta Python, dengan mengubahnya menjadi kata-kata sehingga dapat dibagikan dengan komunitas.
+The Zen of Python ditulis oleh Tim Peters, seorang pengembang inti yang telah lama terlibat dalam pengembangan Python. Tim mensistematisasi "pemahaman implisit" dan "intuisi" dalam desain Guido van Rossum, [pencipta Python](/id/p/biography-guido-van-rossum/), dengan mengubahnya menjadi kata-kata sehingga dapat dibagikan dengan komunitas.
 
 Ini kemudian didokumentasikan secara resmi sebagai **PEP 20 (Python Enhancement Proposal 20)**. Setiap kali ada penambahan atau perubahan fitur pada Python, PEP 20 ini selalu berfungsi sebagai titik awal untuk kembali.
 
@@ -121,7 +121,7 @@ Python tidak menyukai perilaku "membaca situasi" seperti ini. Jika Anda mencoba 
 Bahasa Perl memiliki filosofi "There's more than one way to do it" (TIMTOWTDI: Ada lebih dari satu cara untuk melakukannya), tetapi Python mengambil arah yang berlawanan.
 
 Jika melakukan pemrosesan yang sama, idealnya semua orang menulis dengan cara yang sama. Hal ini secara drastis mengurangi beban kognitif saat membaca kode yang ditulis oleh orang lain.
-Selain itu, "orang Belanda" yang dimaksud merujuk pada Guido van Rossum, pencipta Python. Ini mengandung humor bahwa mungkin butuh waktu untuk memahami niat perancang bahasa dengan sempurna.
+Selain itu, "orang Belanda" yang dimaksud merujuk pada Guido van Rossum, [pencipta Python](/id/p/biography-guido-van-rossum/). Ini mengandung humor bahwa mungkin butuh waktu untuk memahami niat perancang bahasa dengan sempurna.
 
 ### Now is better than never. (Sekarang lebih baik daripada tidak sama sekali)
 ### Although never is often better than *right* now. (Meskipun tidak sama sekali sering kali lebih baik daripada *sekarang juga*)

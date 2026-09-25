@@ -77,7 +77,7 @@ C'est l'idée que « les équipements tels que les routeurs sur le chemin du ré
 L'ancien réseau téléphonique du Japon (NTT), par exemple, était un « réseau intelligent » où les commutateurs du bureau central de téléphonie possédaient toutes les fonctions (facturation, contrôle, traitement des erreurs).
 D'autre part, Internet est simplement un « tuyau » qui transporte des données, et ce qui est intelligent, ce sont nos ordinateurs et nos smartphones qui y sont connectés à ses extrémités.
 
-C'est précisément parce qu'il s'agissait d'une conception simple où « le côté réseau n'est qu'un tuyau », qu'Internet a pu devenir une « infrastructure d'innovation » qui n'est pas liée à des administrateurs spécifiques, et où n'importe qui peut librement déployer de nouvelles applications (Web, streaming vidéo, P2P, blockchain, etc.) dans le monde entier simplement en les créant sur les terminaux finaux.
+C'est précisément parce qu'il s'agissait d'une conception simple où « le côté réseau n'est qu'un tuyau », qu'Internet a pu devenir une « infrastructure d'innovation » qui n'est pas liée à des administrateurs spécifiques, et où n'importe qui peut librement déployer de nouvelles applications (Web, streaming vidéo, P2P, [blockchain](/fr/p/blockchain-technology-smart-contract-distributed-ledger/), etc.) dans le monde entier simplement en les créant sur les terminaux finaux.
 
 ## 6. Résumé
 

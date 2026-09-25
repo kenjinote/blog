@@ -20,7 +20,7 @@ En este artículo, profundizaremos en la vida de [Fermat](https://kenji.blog/es/
 
 En la Francia de la época, se animaba a los jueces a evitar expandir demasiado sus círculos sociales para evitar conflictos políticos y sociales. Irónicamente, este entorno aislado le proporcionó a [Fermat](https://kenji.blog/es/p/fermat/) el tiempo de tranquilidad que necesitaba, impulsándolo hacia las profundidades de las matemáticas. Para él, las matemáticas eran una alegría pura que le liberaba de las pesadas presiones de sus deberes, no algo que le impusiera nadie.
 
-A [Fermat](https://kenji.blog/es/p/fermat/) no le gustaba publicar sus investigaciones como artículos formales; se conformaba con anotar sus ideas y demostraciones en cuadernos o en los márgenes de los libros, o intercambiando cartas con otros eruditos a través de Marin Mersenne, un fraile de París que actuaba como centro académico de la época. Disfrutaba presentando sus descubrimientos como **"problemas"** a otros matemáticos, exigiendo provocativamente sus soluciones. También se sabe que participó en feroces debates con grandes matemáticos como René Descartes y [John Wallis](https://kenji.blog/es/p/wallis/).
+A [Fermat](https://kenji.blog/es/p/fermat/) no le gustaba publicar sus investigaciones como artículos formales; se conformaba con anotar sus ideas y demostraciones en cuadernos o en los márgenes de los libros, o intercambiando cartas con otros eruditos a través de [Marin Mersenne](/es/p/mersenne/), un fraile de París que actuaba como centro académico de la época. Disfrutaba presentando sus descubrimientos como **"problemas"** a otros matemáticos, exigiendo provocativamente sus soluciones. También se sabe que participó en feroces debates con grandes matemáticos como [René Descartes](/es/p/descartes/) y [John Wallis](https://kenji.blog/es/p/wallis/).
 
 ```mermaid
 flowchart TD
@@ -64,7 +64,7 @@ Por ejemplo, si $p = 5$, es $5 = 1^2 + 2^2$; si $p = 13$, es $13 = 2^2 + 3^2$; s
 
 [Fermat](https://kenji.blog/es/p/fermat/) también consideró fórmulas matemáticas que generan números primos. Conjeturó que todos los números de la forma $F_n = 2^{2^n} + 1$ son primos. De hecho, para $n=0, 1, 2, 3, 4$, los resultados son $3, 5, 17, 257, 65537$, respectivamente, y todos ellos son primos. Estos se denominan **Primos de [Fermat](https://kenji.blog/es/p/fermat/)**.
 
-Sin embargo, [Leonhard Euler](https://kenji.blog/es/p/euler/) demostró más tarde que cuando $n=5$, $2^{32} + 1 = 4294967297 = 641 \times 6700417$, refutando así la propia conjetura de Fermat. Aún así, Carl Friedrich Gauss demostró más tarde que estos primos de [Fermat](https://kenji.blog/es/p/fermat/) estaban profundamente conectados con las "condiciones para que un polígono regular de $n$ lados sea construible con compás y regla no graduada", desempeñando un papel extremadamente importante en la fusión de la geometría y el álgebra para las generaciones posteriores.
+Sin embargo, [Leonhard Euler](https://kenji.blog/es/p/euler/) demostró más tarde que cuando $n=5$, $2^{32} + 1 = 4294967297 = 641 \times 6700417$, refutando así la propia conjetura de Fermat. Aún así, [Carl Friedrich Gauss](/es/p/gauss/) demostró más tarde que estos primos de [Fermat](https://kenji.blog/es/p/fermat/) estaban profundamente conectados con las "condiciones para que un polígono regular de $n$ lados sea construible con compás y regla no graduada", desempeñando un papel extremadamente importante en la fusión de la geometría y el álgebra para las generaciones posteriores.
 
 ## 3. El método del descenso infinito: La afilada espada de [Fermat](https://kenji.blog/es/p/fermat/)
 
@@ -91,7 +91,7 @@ Aunque [Fermat](https://kenji.blog/es/p/fermat/) y Pascal emplearon enfoques mat
 
 ## 5. Contribuciones pioneras al cálculo y la física
 
-Décadas antes de que [Isaac Newton](https://kenji.blog/es/p/newton/) y Gottfried Leibniz establecieran el cálculo, [Fermat](https://kenji.blog/es/p/fermat/) había ideado sus propios métodos para trazar tangentes a curvas y encontrar los valores máximos y mínimos de funciones.
+Décadas antes de que [Isaac Newton](https://kenji.blog/es/p/newton/) y [Gottfried Leibniz](/es/p/leibniz/) establecieran el cálculo, [Fermat](https://kenji.blog/es/p/fermat/) había ideado sus propios métodos para trazar tangentes a curvas y encontrar los valores máximos y mínimos de funciones.
 
 Introdujo un concepto llamado **"Adeigualdad"** (Adequality). Se trata de una técnica en la que un valor se trata como "casi igual" cuando se varía una cantidad minúscula $E$, y el valor extremo se encuentra tratando a $E$ como $0$ en la etapa final del cálculo. Ésta es esencialmente la idea misma de la diferenciación moderna, y el propio Newton comentó más tarde: "Tuve el indicio de este método por la forma en que [Fermat](https://kenji.blog/es/p/fermat/) trazaba las tangentes". Sin [Fermat](https://kenji.blog/es/p/fermat/), la culminación del cálculo podría haberse retrasado aún más.
 
@@ -101,7 +101,7 @@ Además, en el campo de la física (óptica), propuso el **Principio de [Fermat]
 
 A pesar de dejar tras de sí tantos grandes logros, lo que inequívocamente convierte a [Fermat](https://kenji.blog/es/p/fermat/) en el matemático más famoso de la historia es la existencia del **"Último teorema de [Fermat](https://kenji.blog/es/p/fermat/)"**.
 
-En los márgenes de un pasaje referente al teorema de Pitágoras ( $x^2 + y^2 = z^2$ ) en el Volumen 2 de su libro favorito, la *Arithmetica* de [Diofanto](https://kenji.blog/es/p/diophantus/), [Fermat](https://kenji.blog/es/p/fermat/) escribió la siguiente nota asombrosa en latín:
+En los márgenes de un pasaje referente al teorema de [Pitágoras](/es/p/pythagoras/) ( $x^2 + y^2 = z^2$ ) en el Volumen 2 de su libro favorito, la *Arithmetica* de [Diofanto](https://kenji.blog/es/p/diophantus/), [Fermat](https://kenji.blog/es/p/fermat/) escribió la siguiente nota asombrosa en latín:
 
 > "Cubum autem in duos cubos, aut quadratoquadratum in duos quadratoquadratos, et generaliter nullam in infinitum ultra quadratum potestatem in duas eiusdem nominis fas est dividere cuius rei demonstrationem mirabilem sane detexi. Hanc marginis exiguitas non caperet."
 > 
@@ -123,7 +123,7 @@ Genios sucesivos como Euler, [Legendre](https://kenji.blog/es/p/legendre/), Diri
 
 Durante más de 350 años después de su propuesta, este problema reinó como el "mayor problema no resuelto de las matemáticas", sin que nadie lo resolviera. En la segunda mitad del siglo XX, cuando muchos comenzaron a sospechar que "[Fermat](https://kenji.blog/es/p/fermat/) en realidad no lo había demostrado (o había cometido un error)", un matemático finalmente puso fin a este formidable rompecabezas.
 
-Se trataba del matemático británico [Andrew Wiles](https://kenji.blog/es/p/wiles/). Habiéndose encontrado con el problema en su biblioteca local a la edad de 10 años, juró dedicar su vida a resolverlo. Adoptó un gran enfoque inimaginable en la época de Fermat, combinando la **Conjetura de Taniyama-Shimura** —que proponía que "todas las curvas elípticas son modulares", planteada por los matemáticos japoneses Yutaka Taniyama y [Goro Shimura](https://kenji.blog/es/p/shimura-goro/)— con la investigación de Ken Ribet sobre las curvas de Frey (la conjetura épsilon).
+Se trataba del matemático británico [Andrew Wiles](https://kenji.blog/es/p/wiles/). Habiéndose encontrado con el problema en su biblioteca local a la edad de 10 años, juró dedicar su vida a resolverlo. Adoptó un gran enfoque inimaginable en la época de Fermat, combinando la **Conjetura de Taniyama-Shimura** —que proponía que "todas las curvas elípticas son modulares", planteada por los matemáticos japoneses [Yutaka Taniyama](/es/p/taniyama-yutaka/) y [Goro Shimura](https://kenji.blog/es/p/shimura-goro/)— con la investigación de Ken Ribet sobre las curvas de Frey (la conjetura épsilon).
 
 Wiles se recluyó en su ático y, después de siete años de investigación solitaria, publicó la demostración completa en 1995. Su demostración fue la culminación de las matemáticas modernas que abarcaban cientos de páginas, completamente diferente a los métodos matemáticos del siglo XVII ("demostración verdaderamente maravillosa") que [Fermat](https://kenji.blog/es/p/fermat/) probablemente imaginó.
 

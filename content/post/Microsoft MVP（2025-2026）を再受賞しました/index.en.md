@@ -52,7 +52,7 @@ This year, I put effort into sharing information with an awareness of making tec
 
 Among them, publishing code on GitHub was particularly memorable because I sometimes received feedback like, "I was struggling with the exact same thing, so this helped!" which made me realize that my efforts are helping others with their development.
 
-Also, I received feedback during my event presentations that it was "easy to understand even for beginners", which served as a good opportunity to think about "what makes an effective technical explanation?".
+Also, I received feedback during my event presentations that it was "easy to understand even [for beginners](/en/p/leather-goods%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/)", which served as a good opportunity to think about "what makes an effective technical explanation?".
 
 ---
 

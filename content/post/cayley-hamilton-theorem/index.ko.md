@@ -43,13 +43,13 @@ $$
 (\lambda I - A) \mathbf{x} = \mathbf{0}
 $$
 
-벡터 $\mathbf{x}$ 가 0벡터가 아닌(자명하지 않은) 해를 가질 필요충분조건은 계수 행렬 $(\lambda I - A)$ 가 역행렬을 가지지 않는 것, 즉 그 행렬식이 0이 되는 것입니다.
+벡터 $\mathbf{x}$ 가 0벡터가 아닌(자명하지 않은) 해를 가질 필요충분조건은 계수 행렬 $(\lambda I - A)$ 가 역행렬을 가지지 않는 것, 즉 그 [행렬식](/ko/p/geometric-meaning-of-determinant/)이 0이 되는 것입니다.
 
 $$
 \det(\lambda I - A) = 0
 $$
 
-이 방정식을 행렬 $A$ 의 **특성 방정식** 이라고 부릅니다. 또한 좌변의 다항식 $p(\lambda) = \det(\lambda I - A)$ 를 **특성 다항식** (characteristic polynomial)이라고 부릅니다. 행렬식의 정의로부터 $p(\lambda)$ 는 $\lambda$ 에 대한 $n$ 차 다항식이 됩니다.
+이 방정식을 행렬 $A$ 의 **특성 방정식** 이라고 부릅니다. 또한 좌변의 다항식 $p(\lambda) = \det(\lambda I - A)$ 를 **특성 다항식** (characteristic polynomial)이라고 부릅니다. [행렬식](/ko/p/geometric-meaning-of-determinant/)의 정의로부터 $p(\lambda)$ 는 $\lambda$ 에 대한 $n$ 차 다항식이 됩니다.
 
 $$
 p(\lambda) = \lambda^n + c_{n-1}\lambda^{n-1} + \dots + c_1\lambda + c_0
@@ -96,7 +96,7 @@ p(\lambda) &= \det(\lambda I - A) \\
 \end{aligned}
 $$
 
-여기서 $a + d$ 는 행렬 $A$ 의 **대각합** (trace), $ad - bc$ 는 행렬 $A$ 의 **행렬식** (determinant)입니다. 각각 $\text{tr}(A)$, $\det(A)$ 라고 쓰면 특성 방정식은 다음과 같이 됩니다.
+여기서 $a + d$ 는 행렬 $A$ 의 **대각합** (trace), $ad - bc$ 는 행렬 $A$ 의 **[행렬식](/ko/p/geometric-meaning-of-determinant/)** (determinant)입니다. 각각 $\text{tr}(A)$, $\det(A)$ 라고 쓰면 특성 방정식은 다음과 같이 됩니다.
 
 $$
 p(\lambda) = \lambda^2 - \text{tr}(A)\lambda + \det(A)
@@ -137,10 +137,10 @@ $$
 > $p(A) = \det(A I - A) = \det(A - A) = \det(O) = 0$.
 > 고로 증명되었다.
 
-이 추론은 **완전히 잘못된** 것입니다. 왜냐하면 $p(\lambda)$ 는 어디까지나 '스칼라 값(다항식)'을 출력하는 함수이며, $\lambda$ 에 행렬을 대입하는 조작인 $p(A)$ 는 다항식의 각 항에 $A$ 를 대입하여 '행렬'을 만드는 조작이기 때문입니다. 반면 위의 잘못된 증명에서는 행렬식 안에 그대로 행렬 $A$ 를 대입하여 스칼라 0을 도출해 내고 있어, 좌변(행렬)과 우변(스칼라)의 형태가 일치하지 않습니다.
+이 추론은 **완전히 잘못된** 것입니다. 왜냐하면 $p(\lambda)$ 는 어디까지나 '스칼라 값(다항식)'을 출력하는 함수이며, $\lambda$ 에 행렬을 대입하는 조작인 $p(A)$ 는 다항식의 각 항에 $A$ 를 대입하여 '행렬'을 만드는 조작이기 때문입니다. 반면 위의 잘못된 증명에서는 [행렬식](/ko/p/geometric-meaning-of-determinant/) 안에 그대로 행렬 $A$ 를 대입하여 스칼라 0을 도출해 내고 있어, 좌변(행렬)과 우변(스칼라)의 형태가 일치하지 않습니다.
 
-직관적으로는 행렬 $A$ 가 대각화 가능한 경우를 생각하면 이해하기 쉽습니다.
-행렬 $A$ 가 $A = P D P^{-1}$ ( $D$ 는 고윳값 $\lambda_1, \dots, \lambda_n$ 이 대각선에 나열된 대각 행렬)로 대각화될 수 있는 경우를 생각합니다.
+직관적으로는 행렬 $A$ 가 [대각화](/ko/p/diagonalization-and-jordan-normal-form/) 가능한 경우를 생각하면 이해하기 쉽습니다.
+행렬 $A$ 가 $A = P D P^{-1}$ ( $D$ 는 고윳값 $\lambda_1, \dots, \lambda_n$ 이 대각선에 나열된 대각 행렬)로 [대각화](/ko/p/diagonalization-and-jordan-normal-form/)될 수 있는 경우를 생각합니다.
 
 $$ p(A) = p(P D P^{-1}) = P p(D) P^{-1} $$
 
@@ -152,7 +152,7 @@ $$
 
 가 됩니다. 특성 다항식의 정의에 따라 각 고윳값 $\lambda_i$ 는 $p(\lambda_i) = 0$ 을 만족합니다. 따라서 $p(D)$ 는 영행렬이 되고 $p(A) = P O P^{-1} = O$ 가 유도됩니다.
 
-그러나 모든 행렬이 대각화 가능한 것은 아니기 때문에(완전한 고유 벡터를 갖지 않는 행렬 등), 이 설명이 완전한 증명이 되지는 않습니다. 일반적인 증명에는 다른 방법이 필요합니다.
+그러나 모든 행렬이 [대각화](/ko/p/diagonalization-and-jordan-normal-form/) 가능한 것은 아니기 때문에(완전한 고유 벡터를 갖지 않는 행렬 등), 이 설명이 완전한 증명이 되지는 않습니다. 일반적인 증명에는 다른 방법이 필요합니다.
 
 ## 7. [케일리-해밀턴 정리](https://kenji.blog/ko/p/cayley-hamilton-theorem/)의 엄밀한 증명
 
@@ -164,7 +164,7 @@ $$
 (\lambda I - A) B(\lambda) = \det(\lambda I - A) I = p(\lambda) I
 $$
 
-행렬 $\lambda I - A$ 의 각 성분은 $\lambda$ 의 1차 이하의 다항식이므로, 그 수반 행렬 $B(\lambda)$ 의 각 성분의 행렬식은 $\lambda$ 의 $(n-1)$ 차 이하의 다항식이 됩니다. 따라서 $B(\lambda)$ 는 행렬을 계수로 하는 $\lambda$ 의 다항식으로서 다음과 같이 나타낼 수 있습니다.
+행렬 $\lambda I - A$ 의 각 성분은 $\lambda$ 의 1차 이하의 다항식이므로, 그 수반 행렬 $B(\lambda)$ 의 각 성분의 [행렬식](/ko/p/geometric-meaning-of-determinant/)은 $\lambda$ 의 $(n-1)$ 차 이하의 다항식이 됩니다. 따라서 $B(\lambda)$ 는 행렬을 계수로 하는 $\lambda$ 의 다항식으로서 다음과 같이 나타낼 수 있습니다.
 
 $$
 B(\lambda) = B_{n-1}\lambda^{n-1} + B_{n-2}\lambda^{n-2} + \dots + B_1\lambda + B_0
@@ -281,7 +281,7 @@ $$
 본 기사에서는 선형대수학의 하이라이트 중 하나인 **[케일리-해밀턴 정리](https://kenji.blog/ko/p/cayley-hamilton-theorem/)** 에 대해 자세히 해설했습니다.
 
 * 특성 다항식 $p(\lambda)$ 에 행렬 자체를 대입하면 영행렬이 된다는 놀라운 성질($p(A) = O$).
-* 대각화를 통한 직관적인 이해와 스칼라 대입을 혼동하는 자주 하는 오해.
+* [대각화](/ko/p/diagonalization-and-jordan-normal-form/)를 통한 직관적인 이해와 스칼라 대입을 혼동하는 자주 하는 오해.
 * 수반 행렬을 이용한 항등식을 활용한 아름답고 엄밀한 증명.
 * 다항식의 나눗셈을 이용한 행렬의 거듭제곱 고속 계산이나 역행렬의 표현 등 실용적인 응용.
 

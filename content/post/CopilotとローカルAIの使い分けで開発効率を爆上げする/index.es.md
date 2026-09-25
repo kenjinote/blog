@@ -230,7 +230,7 @@ Al configurar de esta manera, los desarrolladores pueden alternar instantáneame
 
 El flujo de trabajo híbrido actual se basa en un paradigma de copiloto (Copilot) donde "el humano le da instrucciones a la IA". Sin embargo, en unos años evolucionará aún más; un modelo ligero local monitoreará continuamente la base de código, ejecutará pruebas en segundo plano y solo invocará autónomamente modelos masivos en la nube para generar soluciones cuando detecte errores complejos. Se aproxima la era de los **agentes de IA autónomos estratificados**.
 
-En ese momento, la PC local del desarrollador no será solo una pantalla que ejecuta un editor, sino que asumirá fuertemente el papel de primera línea como un motor de inferencia (IA perimetral / Edge AI). La continua expansión de la memoria (VRAM / memoria unificada) de las máquinas para desarrolladores por parte de NVIDIA y Apple, tiene este futuro en la mira.
+En ese momento, la PC local del desarrollador no será solo una pantalla que ejecuta un editor, sino que asumirá fuertemente el papel de primera línea como un motor de inferencia (IA perimetral / [Edge AI](/es/p/edge-ai-future-iot-implementation/)). La continua expansión de la memoria (VRAM / memoria unificada) de las máquinas para desarrolladores por parte de NVIDIA y Apple, tiene este futuro en la mira.
 
 ---
 

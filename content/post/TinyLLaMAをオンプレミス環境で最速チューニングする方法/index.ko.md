@@ -12,7 +12,7 @@ description: '온프레미스 환경에서 TinyLLaMA를 효율적이고 가장 �
 
 ## 1. 시작하며: 왜 지금, TinyLLaMA와 온프레미스인가?
 
-대규모 언어 모델([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 진화는 무서운 속도로 진행되고 있지만, 그에 따라 모델의 파라미터 수도 수천억 규모로 계속 팽창하고 있습니다. GPT-4나 Claude 3와 같은 초거대 모델은 비할 데 없는 성능을 자랑하는 반면, 추론이나 학습에 드는 계산 비용, 그리고 외부 API를 이용할 때의 보안 및 데이터 프라이버시 우려가 기업에게 큰 장애물이 되고 있습니다. 특히 기밀성이 높은 사내 데이터나 개인정보를 다루는 업무에서는 클라우드상의 퍼블릭 LLM API로 데이터를 전송하는 것이 컴플라이언스(GDPR이나 APPI 등) 관점에서 허용되지 않는 경우가 많습니다.
+[대규모 언어 모델](/ko/p/large-language-models-llm-transformer-prompt-engineering/)([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 진화는 무서운 속도로 진행되고 있지만, 그에 따라 모델의 파라미터 수도 수천억 규모로 계속 팽창하고 있습니다. GPT-4나 Claude 3와 같은 초거대 모델은 비할 데 없는 성능을 자랑하는 반면, 추론이나 학습에 드는 계산 비용, 그리고 외부 API를 이용할 때의 보안 및 데이터 프라이버시 우려가 기업에게 큰 장애물이 되고 있습니다. 특히 기밀성이 높은 사내 데이터나 개인정보를 다루는 업무에서는 클라우드상의 퍼블릭 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/) API로 데이터를 전송하는 것이 컴플라이언스(GDPR이나 APPI 등) 관점에서 허용되지 않는 경우가 많습니다.
 
 그래서 각광받고 있는 것이 **소규모 언어 모델(SLM: Small Language Models)** 과 **온프레미스 환경에서의 로컬 운영 ** 입니다. 그중에서도 '**TinyLLaMA**'는 불과 1.1B(11억) 파라미터라는 콤팩트한 크기이면서도 약 3조 토큰이라는 방대한 데이터 세트로 사전 학습되어, 동급 모델과 비교해 경이로운 성능을 발휘합니다.
 
@@ -22,7 +22,7 @@ description: '온프레미스 환경에서 TinyLLaMA를 효율적이고 가장 �
 
 ## 2. TinyLLaMA의 아키텍처와 특징
 
-TinyLLaMA는 Meta사가 개발한 LLaMA(Large Language Model Meta AI) 아키텍처를 따르고 있습니다. 파라미터 수를 1.1B로 억제하면서도 LLaMA 2와 같은 기술 스택을 이용하고 있어 생태계 호환성이 매우 높은 것이 특징입니다.
+TinyLLaMA는 [Meta](/ko/p/history-of-meta-facebook/)사가 개발한 LLaMA(Large Language Model [Meta](/ko/p/history-of-meta-facebook/) AI) 아키텍처를 따르고 있습니다. 파라미터 수를 1.1B로 억제하면서도 LLaMA 2와 같은 기술 스택을 이용하고 있어 생태계 호환성이 매우 높은 것이 특징입니다.
 
 ### 주요 아키텍처 컴포넌트
 
@@ -100,7 +100,7 @@ QLoRA는 LoRA의 접근 방식을 더욱 발전시켜 베이스 모델 $W_0$ 를
 QLoRA에는 3가지 중요한 기술이 포함되어 있습니다.
 1. **4-bit NormalFloat (NF4) 양자화:** 정규 분포를 따르는 가중치에 최적화된 이론적으로 가장 이상적인 데이터 타입.
 2. **Double Quantization (이중 양자화):** 양자화 상수(스케일 팩터) 자체도 양자화하여 메모리를 추가로 절약.
-3. **Paged Optimizers:** NVIDIA의 통합 메모리 기능을 활용하여 VRAM이 부족할 때 옵티마이저의 상태를 CPU의 RAM으로 일시적으로 대피시키는 메커니즘.
+3. **Paged Optimizers:** [NVIDIA](/ko/p/history-of-nvidia/)의 통합 메모리 기능을 활용하여 VRAM이 부족할 때 옵티마이저의 상태를 CPU의 RAM으로 일시적으로 대피시키는 메커니즘.
 
 이에 따라 보통 16GB~24GB의 VRAM이 필요한 튜닝이 소비자용 GPU(RTX 3060 12GB나 RTX 4070 등)에서도 여유롭게 실행 가능해집니다.
 
@@ -357,5 +357,5 @@ python -m vllm.entrypoints.openai.api_server \
 - **Flash Attention 2** 와 **Gradient Checkpointing** 을 구사하여 학습 시간과 VRAM 소비를 극한까지 최적화했습니다.
 - **vLLM** 을 활용한 배포로 프로덕션 환경에서도 높은 처리량을 실현했습니다.
 
-온프레미스에서의 로컬 LLM 운영은 데이터의 기밀성을 보호할 뿐만 아니라, 특정 도메인(법무, 의료, 사내 규정 등)에 특화된 전문 AI를 저비용으로 구축하기 위한 최강의 무기가 됩니다. 꼭 본 가이드를 참고하여 자사 전용의 TinyLLaMA를 육성해 보시기 바랍니다.
+온프레미스에서의 로컬 [LLM](/ko/p/large-language-models-llm-transformer-prompt-engineering/) 운영은 데이터의 기밀성을 보호할 뿐만 아니라, 특정 도메인(법무, 의료, 사내 규정 등)에 특화된 전문 AI를 저비용으로 구축하기 위한 최강의 무기가 됩니다. 꼭 본 가이드를 참고하여 자사 전용의 TinyLLaMA를 육성해 보시기 바랍니다.
 

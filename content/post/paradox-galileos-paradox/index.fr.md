@@ -14,7 +14,7 @@ Quand vous entendez le mot « infini », quelle image vous vient à l'esprit ? U
 
 Notre intuition quotidienne est cultivée dans un monde fini. Comme « il y a 3 pommes » ou « lire un livre de 100 pages », les nombres sont toujours traités comme ayant une fin. Cependant, lorsque l'on pénètre dans le monde des mathématiques, on doit affronter de front le concept extraordinaire de l'« infini ».
 
-Cette fois, plongeons-nous dans un étrange paradoxe soulevé par Galileo Galilei (1564-1642), connu comme le père de la science, dans son livre *Discours concernant deux sciences nouvelles* au cours de ses dernières années. Il est appelé le « paradoxe de Galilée » et est devenu une clé importante pour ouvrir la porte de l'infini, menant à la « théorie des ensembles » par les mathématiciens ultérieurs, en particulier Georg Cantor.
+Cette fois, plongeons-nous dans un étrange paradoxe soulevé par Galileo Galilei (1564-1642), connu comme le père de la science, dans son livre *Discours concernant deux sciences nouvelles* au cours de ses dernières années. Il est appelé le « paradoxe de Galilée » et est devenu une clé importante pour ouvrir la porte de l'infini, menant à la « théorie des ensembles » par les mathématiciens ultérieurs, en particulier [Georg Cantor](/fr/p/cantor/).
 
 Dans cet article, sur plusieurs milliers de mots, nous expliquerons le plus en détail possible la merveille du concept de l'« infini », l'écart avec l'intuition mathématique et la sagesse humaine qui l'a surmonté. Rejoignez-nous pour cette aventure intellectuelle.
 
@@ -30,7 +30,7 @@ Le « paradoxe de l'infini » qu'il a remarqué commence par une question très 
 
 Si nous suivons notre intuition, la réponse est évidente. « Les entiers naturels doivent être beaucoup plus nombreux ». Parce que parmi les entiers naturels, il y a beaucoup de nombres qui ne sont pas des carrés (2, 3, 5, 6, 7, 8...). Les carrés semblent n'être qu'une « infime partie » du vaste ensemble des entiers naturels.
 
-Le célèbre mathématicien grec Euclide a également un axiome qui dit : **« Le tout est plus grand que la partie »**. Cet axiome est une vérité absolue et inébranlable dans un monde fini. Si vous prenez 3 pommes parmi 10, il en reste 7. Les 10 originales (le tout) sont clairement plus grandes que les 3 que vous avez prises (la partie).
+Le célèbre mathématicien grec [Euclide](/fr/p/euclid/) a également un axiome qui dit : **« Le tout est plus grand que la partie »**. Cet axiome est une vérité absolue et inébranlable dans un monde fini. Si vous prenez 3 pommes parmi 10, il en reste 7. Les 10 originales (le tout) sont clairement plus grandes que les 3 que vous avez prises (la partie).
 
 Cependant, Galilée a remarqué un fait ici.
 
@@ -78,7 +78,7 @@ En d'autres termes, Galilée pensait que « dans le monde de l'infini, l'idée m
 
 Dans le cadre mathématique de l'époque, c'était le jugement le plus raisonnable et le plus sage. D'une certaine manière, l'intuition selon laquelle il est dangereux d'introduire les règles du monde fini (le tout est plus grand que la partie) dans le monde de l'infini était correcte.
 
-Cependant, l'histoire des mathématiques ne s'est pas arrêtée là. Environ 250 ans plus tard, dans la seconde moitié du 19e siècle, un mathématicien de génie a affronté ce monstre qu'est l'« infini » de front. Il s'agissait de Georg Cantor.
+Cependant, l'histoire des mathématiques ne s'est pas arrêtée là. Environ 250 ans plus tard, dans la seconde moitié du 19e siècle, un mathématicien de génie a affronté ce monstre qu'est l'« infini » de front. Il s'agissait de [Georg Cantor](/fr/p/cantor/).
 
 ---
 
@@ -114,7 +114,7 @@ Cantor a nommé la taille infinie d'un ensemble qui a une correspondance biunivo
 
 ### L'effondrement de l'axiome « Le tout est plus grand que la partie »
 
-Ici, il est devenu clair que l'axiome d'Euclide selon lequel « le tout est plus grand que la partie », qui était de sens commun dans le monde fini, ne tient pas dans le monde de l'infini.
+Ici, il est devenu clair que l'axiome d'[Euclide](/fr/p/euclid/) selon lequel « le tout est plus grand que la partie », qui était de sens commun dans le monde fini, ne tient pas dans le monde de l'infini.
 
 En mathématiques modernes (théorie des ensembles), un ensemble infini est même parfois défini comme suit :
 **« Un ensemble qui peut être mis en correspondance biunivoque avec l'un de ses propres sous-ensembles stricts (une partie strictement plus petite que le tout) est appelé un ensemble infini »**
@@ -157,7 +157,7 @@ Le paradoxe de Galilée n'est pas un simple jeu de mots ou un sophisme. Il nous 
 
 L'« étrange relation entre les entiers naturels et les carrés » écrite par Galileo Galilei au 17e siècle s'est épanouie après des centaines d'années dans les mathématiques modernes qui traitent de l'infini.
 
-Le concept de l'infini cache encore de nombreux mystères aujourd'hui. La question « Existe-t-il un infini d'une autre taille entre l'infini des entiers naturels et l'infini des nombres réels ? » (l'hypothèse du continu) a atteint la conclusion surprenante qu'elle « ne peut être ni prouvée ni réfutée » dans le système axiomatique actuel des mathématiques.
+Le concept de l'infini cache encore de nombreux mystères aujourd'hui. La question « Existe-t-il un infini d'une autre taille entre l'infini des entiers naturels et l'infini des nombres réels ? » (l'[hypothèse du continu](/fr/p/continuum-hypothesis/)) a atteint la conclusion surprenante qu'elle « ne peut être ni prouvée ni réfutée » dans le système axiomatique actuel des mathématiques.
 
 À quoi ressemble le bord de l'univers ? Le temps continuera-t-il éternellement ? Et qu'y a-t-il au-delà de la hiérarchie infinie qui s'étend dans le monde des mathématiques ? Le paradoxe de Galilée est un épisode qui symbolise la merveille de l'intellect humain, montrant que même si nous sommes des êtres finis, nous pouvons toucher à l'« infini » par la pensée.
 

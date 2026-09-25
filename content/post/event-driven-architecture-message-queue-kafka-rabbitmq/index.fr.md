@@ -18,7 +18,7 @@ tags:
 
 # 1. Invitation à l'architecture orientée événements
 
-Les systèmes logiciels modernes ont une ampleur et une complexité sans précédent. L'architecture microservices devenant la norme, la manière de concevoir la communication entre les services est un élément crucial qui détermine les performances, la disponibilité et la maintenabilité de l'ensemble du système. Dans ce contexte, l' ** architecture orientée événements ** (Event-Driven Architecture : EDA) s'est solidement établie comme un paradigme puissant pour réduire le couplage entre les systèmes et atteindre une grande évolutivité.
+Les systèmes logiciels modernes ont une ampleur et une complexité sans précédent. L'[architecture microservices](/fr/p/microservices-architecture-bff-api-gateway/) devenant la norme, la manière de concevoir la communication entre les services est un élément crucial qui détermine les performances, la disponibilité et la maintenabilité de l'ensemble du système. Dans ce contexte, l' ** architecture orientée événements ** (Event-Driven Architecture : EDA) s'est solidement établie comme un paradigme puissant pour réduire le couplage entre les systèmes et atteindre une grande évolutivité.
 
 # 2. Les défis de la communication synchrone (REST / gRPC)
 
@@ -226,7 +226,7 @@ Lorsque l'architecture orientée événements est introduite dans les systèmes 
 
 ## 7.1 [Transaction](https://kenji.blog/fr/p/rdbms-transaction-acid-isolation-level-lock/)s distribuées avec le modèle Saga
 
-Dans une architecture microservices, gérer les transactions couvrant plusieurs services avec des validations à deux phases synchrones (2PC) entraîne une diminution de la disponibilité et des performances. Le ** modèle Saga ** est utilisé comme une alternative à cela.
+Dans une [architecture microservices](/fr/p/microservices-architecture-bff-api-gateway/), gérer les transactions couvrant plusieurs services avec des validations à deux phases synchrones (2PC) entraîne une diminution de la disponibilité et des performances. Le ** modèle Saga ** est utilisé comme une alternative à cela.
 
 Dans le modèle Saga, une transaction distribuée est représentée comme une séquence de transactions locales. Chaque service exécute une transaction locale et, une fois terminée, publie un événement pour déclencher l'étape suivante. Si une étape échoue, il publie un événement pour exécuter une "transaction de compensation" (Compensating Transaction) afin d'annuler les transactions déjà terminées.
 

@@ -63,7 +63,7 @@ Ele colocou a "simplicidade" e a "elegância" como os valores mais elevados no d
 
 > "Existem duas maneiras de construir o design de um software: uma maneira é torná-lo tão simples que, obviamente, não haja deficiências, e a outra é torná-lo tão complicado que não haja deficiências óbvias. O primeiro método é muito mais difícil."
 
-Essas palavras preveem notavelmente a situação atual em que arquiteturas de microsserviços e programação funcional buscam mais uma vez a "simplicidade" no desenvolvimento de software moderno e cada vez mais complexo.
+Essas palavras preveem notavelmente a situação atual em que arquiteturas de microsserviços e [programação funcional](/pt/p/lambda-calculus-functional-programming/) buscam mais uma vez a "simplicidade" no desenvolvimento de software moderno e cada vez mais complexo.
 
 ## Uma Ponte da Academia para a Indústria
 
@@ -77,4 +77,4 @@ A morte de Tony Hoare pode marcar o fim de uma grande era na ciência da computa
 
 Por trás do fato de que podemos operar confortavelmente aplicativos em nossos smartphones, está o processamento de dados em alta velocidade do Quicksort. Por trás do fato de que a infraestrutura em nuvem pode lidar com dezenas de milhares de solicitações simultaneamente, está a arquitetura de processamento simultâneo que herdou o conceito CSP. E por trás do fato de que os aviões e os carros autônomos que usamos operam com segurança, está a tecnologia de prova de correção de programas desenvolvida a partir da Lógica de Hoare.
 
-Sir Tony Hoare nos deixou não apenas a técnica de escrever códigos, mas uma resposta à pergunta fundamental de "o que o software deve ser". Seu legado intelectual continuará, sem dúvida, a apoiar a base de nossa sociedade digital como um guia para engenheiros em todo o mundo.
+Sir Tony Hoare nos deixou não apenas a técnica de escrever códigos, mas uma resposta à pergunta fundamental de "o que o software deve ser". Seu legado intelectual continuará, sem dúvida, a apoiar a base de nossa sociedade digital como um guia [para engenheiros](/pt/p/prompt-engineering-for-engineers/) em todo o mundo.

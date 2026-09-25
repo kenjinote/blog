@@ -77,7 +77,7 @@ FHE长期以来被称为“密码学界的圣杯”，甚至有人认为它是�
 
 ## 3. FHE的数学基础：LWE问题和Ring-LWE
 
-目前主流的许多FHE方案都基于 **LWE（Learning With Errors，容错学习）问题** ，这是“格密码（Lattice-based [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）”——也以抗量子计算机密码（Post-Quantum [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）而闻名——中的一个数学难题。
+目前主流的许多FHE方案都基于 **LWE（Learning With Errors，容错学习）问题** ，这是“[格密码](/zh-cn/p/lattice-based-cryptography-math-intuition/)（Lattice-based [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）”——也以抗量子计算机密码（Post-Quantum [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）而闻名——中的一个数学难题。
 
 ### LWE问题的直观理解
 使用高斯消元法等方法，求解线性方程组是很容易的。
@@ -230,13 +230,13 @@ print(f"解密后的乘法结果: {res_mul}")
 
 FHE在理论上提供了完美的安全性，但其实用化面临的最大挑战是 **“性能开销”** 。
 
-1.  **计算开销** ：与明文计算相比，密文计算在CPU上的速度要慢几千倍甚至几万倍。多项式的乘法以及自举过程都需要进行大量的FFT（快速傅里叶变换）或NTT（数论变换）计算。
+1.  **计算开销** ：与明文计算相比，密文计算在CPU上的速度要慢几千倍甚至几万倍。多项式的乘法以及自举过程都需要进行大量的[FFT](/zh-cn/p/fast-fourier-transform-algorithm/)（[快速傅里叶变换](/zh-cn/p/fast-fourier-transform-algorithm/)）或NTT（数论变换）计算。
 2.  **数据大小膨胀 (Ciphertext Expansion)** ：只需几个字节的明文，加密后就可能变成数兆字节。这会严重挤占内存带宽和网络带宽。
 
 ### 硬件解决方案的探索
 为了克服这一开销，世界各地正在研发FHE专用的硬件加速器（支持ASIC、FPGA、GPU等）。
 
-*   **GPU加速** ：正在利用NVIDIA等强大的GPU，对NTT运算和自举进行并行化的尝试。据报道，其速度相比纯软件实现提升了数十倍（例如：100x.ai，Zama的TFHE-rs CUDA backend）。
+*   **GPU加速** ：正在利用[NVIDIA](/zh-cn/p/history-of-nvidia/)等强大的GPU，对NTT运算和自举进行并行化的尝试。据报道，其速度相比纯软件实现提升了数十倍（例如：100x.ai，Zama的TFHE-rs CUDA backend）。
 *   **DARPA DPRIVE 项目** ：美国国防高级研究计划局（DARPA）正在推进旨在将FHE的计算速度提升至与明文处理执行速度同等水平（开销控制在10倍以内）的专用硬件开发项目“DPRIVE (Data Protection in Virtual Environments)”，Intel、Microsoft、Intellectual Ventures等公司均有参与。
 *   **FPU (FHE Processing Unit) 的出现** ：Cornami、Optalysys等初创公司正着手研发使用光计算或特殊硅架构的FHE专用芯片。
 
@@ -261,7 +261,7 @@ FHE在理论上提供了完美的安全性，但其实用化面临的最大挑�
 
 正如20世纪70年代公钥加密（[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)）的发明使得互联网上的安全通信（如HTTPS）成为可能一样，Craig Gentry发明的FHE是密码学历史上最重要的里程碑之一。
 
-如今，完全同态加密（FHE）已经走出实验室理论的范畴，进入了由Microsoft、IBM、Intel、Google以及众多初创企业为了实用化而展开激烈竞争的阶段。尽管仍面临计算成本和数据大小等挑战，但得益于算法的精进和硬件加速器的演进，其性能正以超越摩尔定律的速度持续提升。
+如今，完全同态加密（FHE）已经走出实验室理论的范畴，进入了由Microsoft、IBM、Intel、Google以及众多初创企业为了实用化而展开激烈竞争的阶段。尽管仍面临计算成本和数据大小等挑战，但得益于算法的精进和硬件加速器的演进，其性能正以超越[摩尔定律](/zh-cn/p/business-moores-law/)的速度持续提升。
 
 在几年后，“对加密数据进行计算”将不再是一件特别的事情，而将成为云服务中标准数据保护的最佳实践。在数据驱动型社会中，FHE能够实现 **极致隐私保护与数据充分利用的完美结合** ，它无疑是下一代安全的核心。
 

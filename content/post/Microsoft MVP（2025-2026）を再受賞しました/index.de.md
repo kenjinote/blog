@@ -47,12 +47,12 @@ In diesem Jahr habe ich mich auf die Verbreitung von Informationen konzentriert,
 * Vorträge in Lerngruppen und auf Konferenzen (national und international)
 * Regelmäßige Verbreitung von Informationen über technische Blogs und soziale Medien
 * Kontinuierliche Beantwortung von Fragen auf Q&A-Websites
-* Wissensaustausch auf Community-Websites für Ingenieure
+* Wissensaustausch auf Community-Websites [für Ingenieure](/de/p/prompt-engineering-for-engineers/)
 * Interaktion und gemeinsame Überprüfung mit ausländischen Ingenieuren
 
 Insbesondere die Veröffentlichung von Code auf GitHub hat bei mir einen starken Eindruck hinterlassen, da ich Kommentare erhielt wie: "Ich hatte mit demselben Problem zu kämpfen, das hat mich gerettet!", und ich das Gefühl hatte, dass meine Bemühungen anderen bei der Entwicklung helfen.
 
-Außerdem erhielt ich bei Vorträgen auf Veranstaltungen manchmal das Feedback, dass es "auch für Anfänger leicht verständlich war", was mir eine gute Gelegenheit gab, darüber nachzudenken, "was eine technische Erklärung ist, die die Leute verstehen?".
+Außerdem erhielt ich bei Vorträgen auf Veranstaltungen manchmal das Feedback, dass es "auch [für Anfänger](/de/p/lederwaren%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/) leicht verständlich war", was mir eine gute Gelegenheit gab, darüber nachzudenken, "was eine technische Erklärung ist, die die Leute verstehen?".
 
 ---
 

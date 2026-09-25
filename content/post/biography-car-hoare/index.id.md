@@ -63,7 +63,7 @@ Dia menempatkan "kesederhanaan" dan "keanggunan" sebagai nilai tertinggi dalam d
 
 > "Ada dua cara membangun desain perangkat lunak: Salah satunya adalah membuatnya sangat sederhana sehingga jelas tidak ada kekurangan, dan cara lain adalah membuatnya sangat rumit sehingga tidak ada kekurangan yang jelas. Metode pertama jauh lebih sulit."
 
-Kata-kata ini dengan luar biasa meramalkan situasi saat ini di mana arsitektur layanan mikro dan pemrograman fungsional sekali lagi mencari "kesederhanaan" dalam pengembangan perangkat lunak modern yang semakin kompleks.
+Kata-kata ini dengan luar biasa meramalkan situasi saat ini di mana arsitektur layanan mikro dan [pemrograman fungsional](/id/p/lambda-calculus-functional-programming/) sekali lagi mencari "kesederhanaan" dalam pengembangan perangkat lunak modern yang semakin kompleks.
 
 ## Jembatan dari Akademisi ke Industri
 

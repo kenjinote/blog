@@ -83,11 +83,11 @@ graph TD
 
 ## Hubungan dengan Matematika dan Logika: Kerabat dari Paradoks Russell
 
-Paradoks ini bukan kesalahan perhitungan sederhana atau ilusi seperti "misteri dolar yang hilang". Ia pada dasarnya memiliki struktur yang sama dengan **Paradoks Russell** ("Apakah himpunan dari semua himpunan yang tidak memuat dirinya sendiri, memuat dirinya sendiri?") yang mengguncang fondasi matematika.
+Paradoks ini bukan kesalahan perhitungan sederhana atau ilusi seperti "misteri dolar yang hilang". Ia pada dasarnya memiliki struktur yang sama dengan **[Paradoks Russell](/id/p/russells-paradox/)** ("Apakah himpunan dari semua himpunan yang tidak memuat dirinya sendiri, memuat dirinya sendiri?") yang mengguncang fondasi matematika.
 
-Paradoks Grelling-Nelson bisa dikatakan sebagai versi semantik (arti kata) dari Paradoks Russell.
+Paradoks Grelling-Nelson bisa dikatakan sebagai versi semantik (arti kata) dari [Paradoks Russell](/id/p/russells-paradox/).
 
-Paradoks Russell dalam Teori Himpunan:
+[Paradoks Russell](/id/p/russells-paradox/) dalam Teori Himpunan:
 $$ R = \\{ x \mid x \notin x \\} $$
 Ketika mendefinisikan himpunan tersebut, menanyakan apakah $R \in R$ atau $R \notin R$ akan mengarah pada kontradiksi.
 

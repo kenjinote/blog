@@ -11,7 +11,7 @@ categories: ["math-cryptography-quantum"]
 description: '質因數分解問題是RSA密碼安全性的基石。本文將透過數學公式與概念圖，徹底解說古典最強演算法「普通數域篩法（GNFS）」的數學機制，以及為何量子電腦的「秀爾演算法(Shor''s algorithm)」能將其攻破。'
 ---
 
-現代網際網路社會中的資訊安全，主要依賴以[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)密碼為首的公開金鑰密碼系統來保護。RSA密碼安全性的基礎，仰賴於 **「對巨大的合成數進行質因數分解，在計算複雜度上是極度困難的」** 這個事實。
+現代網際網路社會中的資訊安全，主要依賴以[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)密碼為首的公開金鑰密碼系統來保護。RSA密碼安全性的基礎，仰賴於 **「對巨大的合成數進行質因數分解，在計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)上是極度困難的」** 這個事實。
 
 本文將解析古典電腦中最強的質因數分解演算法 **「普通數體篩法」 ** （General Number Field Sieve, GNFS）的數學機制，並透過數學公式與概念圖，深入探討為何它會被彼得·秀爾（Peter Shor）所發現的 ** 「Shor演算法」** 完全擊敗，徹底剖析這場典範轉移。
 
@@ -36,15 +36,15 @@ $$ (x - y)(x + y) \equiv 0 \pmod N $$
 
 ## 2. 最強古典演算法：「普通數體篩法」（GNFS）的深淵
 
-**「GNFS」** 是目前已知針對古典電腦的質因數分解演算法中速度最快的。它的時間複雜度需要次指數（Sub-exponential）時間。
+**「GNFS」** 是目前已知針對古典電腦的質因數分解演算法中速度最快的。它的時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)需要次指數（Sub-exponential）時間。
 
 ### GNFS的計算複雜度
 
-當數字 $N$ 的位數為 $b = \log_2 N$ 時，GNFS的計算複雜度可以表示如下：
+當數字 $N$ 的位數為 $b = \log_2 N$ 時，GNFS的計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)可以表示如下：
 
 $$ O\left( \exp \left( \left(\frac{64}{9} b\right)^{1/3} (\log b)^{2/3} \right) \right) $$
 
-從這個公式可以看出，複雜度並非多項式時間，而是比指數函數稍微慢一點的 **「次指數時間」** 。儘管如此，當位數增加時，計算時間仍會以天文數字般增長。
+從這個公式可以看出，[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)並非多項式時間，而是比指數函數稍微慢一點的 **「次指數時間」** 。儘管如此，當位數增加時，計算時間仍會以天文數字般增長。
 
 ### GNFS的數學機制
 
@@ -95,7 +95,7 @@ $$ M \mathbf{x} \equiv \mathbf{0} \pmod 2 $$
 
 ### Shor演算法的計算複雜度
 
-當量子位元數為 $O(\log N)$ 時，時間複雜度如下：
+當量子位元數為 $O(\log N)$ 時，時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)如下：
 
 $$ O((\log N)^3) $$
 
@@ -195,7 +195,7 @@ GNFS採取 **「在數學空間（代數體）中尋找關係式」** 的策略�
 
 本文深入比較了作為古典極限的 **「GNFS」 ** ，以及展現量子計算力量的 ** 「Shor演算法」** ，探討了兩者的數學背景與演算法結構。
 
-GNFS透過多項式選擇與巨大矩陣計算等數學技巧，將計算複雜度壓低至次指數時間；相對地，Shor演算法將量子力學的基本原理（疊加與干涉）與數學工具（QFT）融合，一舉突破至多項式時間。
+GNFS透過多項式選擇與巨大矩陣計算等數學技巧，將計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)壓低至次指數時間；相對地，Shor演算法將量子力學的基本原理（疊加與干涉）與數學工具（QFT）融合，一舉突破至多項式時間。
 
 目前，尚不存在能夠以實用規模（數千個量子位元）執行Shor演算法的容錯量子電腦（FTQC）。然而，正是這個數學與理論上的典範轉移，成為了現在全世界急於轉換至後量子密碼學（PQC: Post-Quantum [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）的最大理由。
 

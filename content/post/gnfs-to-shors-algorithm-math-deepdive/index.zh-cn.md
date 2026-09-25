@@ -13,7 +13,7 @@ description: '支撑RSA密码安全性的因数分解问题。从经典最强算
 
 现代互联网社会中的信息安全，是由以[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)密码为首的公开密钥密码体制来保障的。RSA密码安全性的依据依赖于这样一个事实： **“对巨大的合数进行因数分解在计算上是极其困难的”** 。
 
-本文将为您剖析经典计算机中最强的因数分解算法—— **“普通数域筛选法”** （General Number Field Sieve, GNFS）的数学机制，并通过公式和概念图深入探讨它为何会被彼得·肖尔发现的 **“Shor算法”** 彻底击败，揭示这场范式转变。
+本文将为您剖析经典计算机中最强的因数分解算法—— **“[普通数域筛选法](/zh-cn/p/beyond-gnfs-integer-factorization-algorithms/)”** （General Number Field Sieve, GNFS）的数学机制，并通过公式和概念图深入探讨它为何会被彼得·肖尔发现的 **“Shor算法”** 彻底击败，揭示这场范式转变。
 
 ---
 
@@ -36,15 +36,15 @@ $$ (x - y)(x + y) \equiv 0 \pmod N $$
 
 ## 2. 经典最强算法：“普通数域筛选法”（GNFS）的深渊
 
-**“GNFS”** 是目前已知针对经典计算机的最快因数分解算法。其时间复杂度需要亚指数级（Sub-exponential）的时间。
+**“GNFS”** 是目前已知针对经典计算机的最快因数分解算法。其时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)需要亚指数级（Sub-exponential）的时间。
 
 ### GNFS的计算复杂度
 
-设数字 $N$ 的位数为 $b = \log_2 N$，GNFS的计算复杂度可以表示为：
+设数字 $N$ 的位数为 $b = \log_2 N$，GNFS的计算[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)可以表示为：
 
 $$ O\left( \exp \left( \left(\frac{64}{9} b\right)^{1/3} (\log b)^{2/3} \right) \right) $$
 
-从这个公式可以看出，计算复杂度并不是多项式时间，而是比指数函数稍慢的 **“亚指数时间”** 。尽管如此，随着位数的增加，计算时间仍会呈天文数字般增长。
+从这个公式可以看出，计算[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)并不是多项式时间，而是比指数函数稍慢的 **“亚指数时间”** 。尽管如此，随着位数的增加，计算时间仍会呈天文数字般增长。
 
 ### GNFS的数学机制
 
@@ -95,7 +95,7 @@ $$ M \mathbf{x} \equiv \mathbf{0} \pmod 2 $$
 
 ### Shor算法的计算复杂度
 
-假设量子比特数为 $O(\log N)$，时间复杂度如下：
+假设量子比特数为 $O(\log N)$，时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)如下：
 
 $$ O((\log N)^3) $$
 
@@ -195,7 +195,7 @@ GNFS采取了 **“在数学空间（代数数域）中寻找关系式”** 的�
 
 本文深入比较了经典极限巅峰的 **“GNFS” ** 和展现量子计算力量的 ** “Shor算法”**，探讨了各自的数学背景和算法结构。
 
-相较于GNFS倾尽多项式选择或巨大矩阵计算等数学技巧将计算复杂度降至亚指数时间，Shor算法将量子力学的基本原理——叠加与干涉与数学工具（QFT）融合，一举实现了向多项式时间的突破。
+相较于GNFS倾尽多项式选择或巨大矩阵计算等数学技巧将计算[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)降至亚指数时间，Shor算法将量子力学的基本原理——叠加与干涉与数学工具（QFT）融合，一举实现了向多项式时间的突破。
 
 目前，能够以实用规模（数千个量子比特）运行Shor算法的容错量子计算机（FTQC）尚不存在。然而，正是这种数学与理论范式转变的存在，构成了当今世界急切向抗量子密码（PQC: Post-Quantum [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）过渡的最大理由。
 

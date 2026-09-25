@@ -12,7 +12,7 @@ image: "eyecatch.jpg"
 
 Na Segunda Guerra Mundial, a guerra mais brutal da história da humanidade, a vitória não foi determinada apenas pelo poder das armas e pelo número de soldados. O que influenciou muito a situação da guerra foi a arma invisível da "informação", e a feroz guerra de códigos que se desenrolou nos bastidores.
 
-A máquina de criptografia "Enigma", na qual a Alemanha nazista tinha absoluta confiança. Acreditava-se que sua estrutura complexa e bizarra era indecifrável por qualquer humano ou máquina da época. No entanto, os gênios reunidos nas instalações ultrassecretas do Reino Unido, "Bletchley Park", aceitaram esse desafio aparentemente impossível. No centro de tudo isso estava o matemático genial Alan Turing, que mais tarde seria chamado de "o pai da ciência da computação".
+A máquina de criptografia "Enigma", na qual a Alemanha nazista tinha absoluta confiança. Acreditava-se que sua estrutura complexa e bizarra era indecifrável por qualquer humano ou máquina da época. No entanto, os gênios reunidos nas instalações ultrassecretas do Reino Unido, "Bletchley Park", aceitaram esse desafio aparentemente impossível. No centro de tudo isso estava o matemático genial Alan Turing, que mais tarde seria chamado de "[o pai da ciência da computação](/pt/p/biography-donald-knuth/)".
 
 Neste artigo, desvendaremos detalhadamente o drama épico escondido nos bastidores da história, desde o incrível mecanismo do Enigma, as contribuições dos predecessores na jornada da decodificação, a luta mortal em Bletchley Park liderada por Turing, até o trágico fim que se abateu sobre o gênio.
 

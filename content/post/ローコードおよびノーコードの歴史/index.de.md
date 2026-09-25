@@ -44,7 +44,7 @@ Die Low-Code- / No-Code-Entwicklung ist ein Ansatz, der es ermöglicht, Apps, We
   Ursprünglich als FutureSplash Animator entwickeltes Vektor-Animations-Erstellungstool. Später wurde es zur Erstellung interaktiver Inhalte für das Web verwendet, der Support endete jedoch 2020 aus Sicherheitsgründen.
 
 * **GameMaker (1999)**
-  2D-Spieleerstellungstool für Anfänger. Objektplatzierung und Ereignissteuerung können per Drag-and-Drop erfolgen. Später wurde auch Scripting (GML) unterstützt, und derzeit werden mehrere Pläne für die kommerzielle Nutzung angeboten.
+  2D-Spieleerstellungstool [für Anfänger](/de/p/lederwaren%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/). Objektplatzierung und Ereignissteuerung können per Drag-and-Drop erfolgen. Später wurde auch Scripting (GML) unterstützt, und derzeit werden mehrere Pläne für die kommerzielle Nutzung angeboten.
 
 ---
 
@@ -74,8 +74,8 @@ In den letzten Jahren haben sich cloudbasierte Low-Code- / No-Code-Tools rasant 
 * **Power Platform (Microsoft)**
   Eine integrierte Plattform zur Entwicklung und Automatisierung von Geschäftsanwendungen, die "Power Apps", "Power [Automate](https://kenji.blog/de/p/automata-formal-language-theory/)" usw. umfasst. Geschäftsprozesse von Unternehmen können visuell per Drag-and-Drop aufgebaut werden.
 
-* **Salesforce Lightning Platform**
-  Die App-Entwicklungsbasis des CRM Salesforce. Geschäfts-Apps können über GUI erstellt werden, und die Integration in andere Salesforce-Dienste ist einfach.
+* **[Salesforce](/de/p/salesforcechatter%E5%85%A8%E6%B6%88%E3%81%97befehl/) Lightning Platform**
+  Die App-Entwicklungsbasis des CRM [Salesforce](/de/p/salesforcechatter%E5%85%A8%E6%B6%88%E3%81%97befehl/). Geschäfts-Apps können über GUI erstellt werden, und die Integration in andere [Salesforce](/de/p/salesforcechatter%E5%85%A8%E6%B6%88%E3%81%97befehl/)-Dienste ist einfach.
 
 * **Zapier / IFTTT**
   Automatisierungstools, mit denen Verbindungen zwischen mehreren Cloud-Diensten ohne Codierung hergestellt werden können. Beispielsweise können [Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s wie "Slack benachrichtigen, wenn etwas in Google Forms eingegeben wird" einfach implementiert werden.

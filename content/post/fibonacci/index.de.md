@@ -152,7 +152,7 @@ Dieses im Jahr 1225 geschriebene Buch ist eine fortgeschrittene Abhandlung über
 
 ### "Practica Geometriae" (Praktische Geometrie)
 
-Dieses Buch aus dem Jahr 1220 beschreibt detailliert Vermessung und Geometrie. Es lieferte strenge Methoden zur Berechnung von Fläche und Volumen sowie praktische Anwendungen der Prinzipien der altgriechischen euklidischen Geometrie, was es zu einer wertvollen Ressource für Ingenieure und Vermesser der damaligen Zeit machte.
+Dieses Buch aus dem Jahr 1220 beschreibt detailliert Vermessung und Geometrie. Es lieferte strenge Methoden zur Berechnung von Fläche und Volumen sowie praktische Anwendungen der Prinzipien der altgriechischen euklidischen Geometrie, was es zu einer wertvollen Ressource [für Ingenieure](/de/p/prompt-engineering-for-engineers/) und Vermesser der damaligen Zeit machte.
 
 ## Die moderne Gesellschaft und [Fibonacci](https://kenji.blog/de/p/fibonacci/)s Erbe
 

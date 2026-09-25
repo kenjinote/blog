@@ -27,7 +27,7 @@ This article explores the historical and theoretical development in detail, star
 
 ### 2.1 The Challenge of the Decision Problem (Entscheidungsproblem)
 
-In 1928, mathematician David Hilbert proposed the "Decision Problem (Entscheidungsproblem)." This was the question: "Given a mathematical proposition, does there exist an algorithm that can mechanically determine whether it is true or false?"
+In 1928, mathematician [David Hilbert](/en/p/hilbert/) proposed the "Decision Problem (Entscheidungsproblem)." This was the question: "Given a mathematical proposition, does there exist an algorithm that can mechanically determine whether it is true or false?"
 
 To answer this question, it was first necessary to strictly define what it means to be "computable" or for an "algorithm to exist." In 1936, two geniuses independently provided answers to this problem. One was Alan Turing, and the other was Alonzo Church, who was also Turing's academic advisor.
 
@@ -169,7 +169,7 @@ Lisp was dynamically typed and was not the theoretical lambda calculus as is, bu
 
 ## 7. Typed [Lambda](https://kenji.blog/en/p/serverless-architecture-aws-lambda-cold-start/) Calculus and the Curry-Howard Correspondence
 
-Pure lambda calculus (untyped lambda calculus) is powerful, but because any argument can be passed to any function, it could cause paradoxes due to self-application (e.g., Russell's paradox). To prevent this, Church later introduced the **Simply Typed Lambda Calculus**.
+Pure lambda calculus (untyped lambda calculus) is powerful, but because any argument can be passed to any function, it could cause paradoxes due to self-application (e.g., [Russell's paradox](/en/p/russells-paradox/)). To prevent this, Church later introduced the **Simply Typed Lambda Calculus**.
 
 ### 7.1 The Curry-Howard Correspondence
 

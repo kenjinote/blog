@@ -26,7 +26,7 @@ Die japanische IT-Industrie stützte sich lange Zeit auf das SIer-Modell, das du
 
 Im Jahr 2026 stößt dieses Modell jedoch an seine Grenzen. Da sich das Wesen der digitalen Transformation (DX) von der "bloßen IT-isierung" hin zur "Transformation des Geschäftsmodells" verschoben hat, kann die wenig agile Wasserfall-Entwicklung nicht mehr mit den Marktveränderungen Schritt halten.
 
-Der moderne Entwicklungsprozess setzt **Cloud-Native** und **KI-gesteuerte** Ansätze voraus. [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)isierung (Docker-layers/)/Kubernetes), Microservices-Architektur und die Automatisierung von CI/CD-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s sind nicht länger "spezielle Technologien", sondern "Standardinfrastruktur".
+Der moderne Entwicklungsprozess setzt **Cloud-Native** und **KI-gesteuerte** Ansätze voraus. [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)isierung (Docker-layers/)/[Kubernetes](/de/p/kubernetes-k8s-architecture-pod-service-ingress/)), [Microservices-Architektur](/de/p/microservices-architecture-bff-api-gateway/) und die Automatisierung von CI/CD-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s sind nicht länger "spezielle Technologien", sondern "Standardinfrastruktur".
 
 ```mermaid
 graph TD

@@ -339,9 +339,9 @@ $q = \gcd(7^2 + 1, 15) = \gcd(50, 15) = 5$
 
 このような「Q-Day（量子コンピュータが暗号を破る日）」の到来に備え、アメリカ国立標準技術研究所（NIST）を筆頭に、世界中の暗号学者が **耐量子計算機暗号（Post-Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy, PQC）** の策定を進めています。
 
-PQCは、[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)を用いても（あるいはグローバーのアルゴリズムを用いても）効率的に解くことができないと数学的に考えられている新しい数学的問題（格子問題、多変数多項式問題、ハッシュ関数ベースなど）を基盤としています。すでに「CRYSTALS-Kyber」や「CRYSTALS-Dilithium」といったアルゴリズムが標準規格として選定され、AppleのiMessageや各種ウェブブラウザの通信プロトコルへの導入が徐々に始まっています。
+PQCは、[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)を用いても（あるいは[グローバーのアルゴリズム](/p/grovers-algorithm-quantum-search/)を用いても）効率的に解くことができないと数学的に考えられている新しい数学的問題（格子問題、多変数多項式問題、ハッシュ関数ベースなど）を基盤としています。すでに「CRYSTALS-Kyber」や「CRYSTALS-Dilithium」といったアルゴリズムが標準規格として選定され、AppleのiMessageや各種ウェブブラウザの通信プロトコルへの導入が徐々に始まっています。
 
-ITインフラを管理するエンジニアにとって、既存の[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)や楕円曲線暗号からPQCへの「クリプト・アジリティ（暗号の俊敏性：素早く暗号方式を切り替えられる設計）」をシステムに組み込むことが、今後の大きなミッションとなるでしょう。
+ITインフラを管理するエンジニアにとって、既存の[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)や[楕円曲線暗号](/p/elliptic-curve-cryptography-math-cpp/)からPQCへの「クリプト・アジリティ（暗号の俊敏性：素早く暗号方式を切り替えられる設計）」をシステムに組み込むことが、今後の大きなミッションとなるでしょう。
 
 ---
 

@@ -10,7 +10,7 @@ tags: ["Euler", "Histoire des Mathématiques", "Génie", "Physique"]
 
 ## Introduction
 
-Lorsqu'on se penche sur l'histoire des mathématiques, il est absolument impossible d'omettre le nom de **[Leonhard Euler](https://kenji.blog/fr/p/euler/)** (1707–1783). Il est largement reconnu comme l'un des mathématiciens les plus prolifiques et influents de l'histoire humaine. Du calcul et de la théorie des nombres à la théorie des graphes, la mécanique, l'optique et l'astronomie, son esprit curieux et son empreinte s'étendent à tous les domaines de la science.
+Lorsqu'on se penche sur l'histoire des mathématiques, il est absolument impossible d'omettre le nom de **[Leonhard Euler](https://kenji.blog/fr/p/euler/)** (1707–1783). Il est largement reconnu comme l'un des mathématiciens les plus prolifiques et influents de l'histoire humaine. Du calcul et de la théorie des nombres à la [théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/), la mécanique, l'optique et l'astronomie, son esprit curieux et son empreinte s'étendent à tous les domaines de la science.
 
 Dans cet article, nous plongerons profondément dans la vie tumultueuse du génie Euler et dans les brillantes réalisations qu'il a laissées aux générations futures. Les lois et formules qu'il a découvertes constituent le fondement de la science et de la technologie d'aujourd'hui, rendant son travail profondément pertinent pour nous tous qui vivons dans le monde moderne.
 
@@ -91,11 +91,11 @@ graph TD
 
 Il a prouvé mathématiquement que pour qu'un chemin traverse chaque pont exactement une fois (l'existence d'un chemin eulérien), le nombre de masses terrestres ayant un nombre impair de ponts qui y sont connectés (nœuds impairs) doit être exactement de 0 ou 2. Dans le cas de Königsberg, toutes les masses terrestres étaient des nœuds impairs, démontrant que la tâche était impossible.
 
-Cette découverte a été révolutionnaire et a jeté les bases de la **théorie des graphes** et de la **topologie** modernes.
+Cette découverte a été révolutionnaire et a jeté les bases de la **[théorie des graphes](/fr/p/graph-theory-dijkstra-a-star/)** et de la **topologie** modernes.
 
 ### 4.3 L'Identité d'Euler
 
-Souvent louée comme la « plus belle formule » des mathématiques se trouve **l'Identité d'Euler**.
+Souvent louée comme la « plus belle formule » des mathématiques se trouve **l'[Identité d'Euler](/fr/p/eulers-identity/)**.
 
 $$
 e^{i\pi} + 1 = 0 \quad (\text{Identité d'Euler})
@@ -109,7 +109,7 @@ Cette courte équation relie élégamment cinq constantes mathématiques profond
 - $e$ (le nombre d'Euler : analyse)
 - $i$ (l'unité imaginaire : algèbre)
 
-Le fait que des constantes issues de domaines complètement différents soient parfaitement unies en une seule équation simple représente le mystère profond et l'harmonie des mathématiques. Le physicien Richard Feynman l'a qualifiée de notre « joyau » et de « formule la plus remarquable des mathématiques ».
+Le fait que des constantes issues de domaines complètement différents soient parfaitement unies en une seule équation simple représente le mystère profond et l'harmonie des mathématiques. Le physicien [Richard Feynman](/fr/p/biography-richard-feynman/) l'a qualifiée de notre « joyau » et de « formule la plus remarquable des mathématiques ».
 
 ## 5. Contributions à la Physique et à d'Autres Domaines
 

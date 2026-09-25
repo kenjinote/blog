@@ -10,7 +10,7 @@ tags: ["Teorema das Quatro Cores", "Teoria dos Grafos", "Prova Assistida por Com
 
 ## 1. O que é o Teorema das Quatro Cores?
 
-O [Teorema das Quatro Cores (Four Color Theorem)](https://kenji.blog/pt/p/four-color-theorem/) é um dos problemas mais famosos e fascinantes da matemática, especialmente na teoria dos grafos e topologia. Sua afirmação é muito simples, tão intuitiva que até um estudante do ensino fundamental pode entender. Ele afirma que "qualquer mapa em um plano pode ser colorido de tal forma que regiões adjacentes tenham cores diferentes usando no máximo **4 cores**".
+O [Teorema das Quatro Cores (Four Color Theorem)](https://kenji.blog/pt/p/four-color-theorem/) é um dos problemas mais famosos e fascinantes da matemática, especialmente na [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/) e topologia. Sua afirmação é muito simples, tão intuitiva que até um estudante do ensino fundamental pode entender. Ele afirma que "qualquer mapa em um plano pode ser colorido de tal forma que regiões adjacentes tenham cores diferentes usando no máximo **4 cores**".
 
 O termo "adjacentes" aqui refere-se ao estado de compartilhar uma fronteira, e não apenas um ponto. Se as regiões se tocarem apenas por um ponto, não há problema em colori-las com a mesma cor. Esta hipótese intuitiva foi levantada pela primeira vez em 1852 por Francis Guthrie. Ao colorir um mapa da Inglaterra, ele percebeu que não importava quão complexas fossem as fronteiras, bastavam 4 cores para colorir o mapa.
 
@@ -28,7 +28,7 @@ No entanto, em 1890, Percy Heawood descobriu uma falha fatal na prova de Kempe. 
 
 ## 4. Transformação em Teoria dos Grafos
 
-Para tratar matematicamente e com rigor o problema das quatro cores, o problema é traduzido para a linguagem da teoria dos grafos. Cada região no mapa é considerada um "Vértice" (Vertex), e regiões que compartilham uma fronteira são conectadas por uma "Aresta" (Edge). O grafo construído desta maneira é chamado de "Grafo Planar" (Planar [Graph](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)).
+Para tratar matematicamente e com rigor o problema das quatro cores, o problema é traduzido para a linguagem da [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/). Cada região no mapa é considerada um "Vértice" (Vertex), e regiões que compartilham uma fronteira são conectadas por uma "Aresta" (Edge). O grafo construído desta maneira é chamado de "Grafo Planar" (Planar [Graph](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)).
 
 Um grafo planar é um grafo que pode ser desenhado num plano sem que as arestas se cruzem. O problema das quatro cores se reduz ao problema em que "os vértices de todos os grafos planares podem ser coloridos com **4 cores** de modo que vértices adjacentes tenham cores diferentes".
 
@@ -59,7 +59,7 @@ Atualmente, provas assistidas por computador são amplamente reconhecidas como u
 
 ## 7. Conclusão
 
-O Teorema das Quatro Cores é o melhor exemplo para mostrar "quão profundas e complexas estruturas matemáticas um problema aparentemente simples pode esconder". Começando como uma curiosidade lúdica de colorir mapas, este problema desenvolveu a teoria dos grafos e, além disso, teve um impacto imensurável ao transformar a própria natureza das provas matemáticas.
+O Teorema das Quatro Cores é o melhor exemplo para mostrar "quão profundas e complexas estruturas matemáticas um problema aparentemente simples pode esconder". Começando como uma curiosidade lúdica de colorir mapas, este problema desenvolveu a [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/) e, além disso, teve um impacto imensurável ao transformar a própria natureza das provas matemáticas.
 
 A exploração deste problema nos ensina quão poderosa é a intuição humana, e quanto esforço e novas tecnologias são necessários para prová-la rigorosamente.
 

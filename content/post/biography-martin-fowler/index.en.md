@@ -50,7 +50,7 @@ graph TD
 
 ## Impact on Posterity and Message to Modern Engineers
 
-Martin Fowler's greatest achievement is articulating "universal engineering principles" independent of specific languages or tools and sharing them with the community. His blog (martinfowler.com) remains one of the most reliable sources of information for engineers globally, and many of the concepts he introduced have become established as "common sense" in modern software development.
+Martin Fowler's greatest achievement is articulating "universal engineering principles" independent of specific languages or tools and sharing them with the community. His blog (martinfowler.com) remains one of the most reliable sources of information [for engineers](/en/p/prompt-engineering-for-engineers/) globally, and many of the concepts he introduced have become established as "common sense" in modern software development.
 
 "Any fool can write code that a computer can understand. Good programmers write code that humans can understand."
 

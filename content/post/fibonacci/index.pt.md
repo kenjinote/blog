@@ -148,11 +148,11 @@ As conquistas de [Fibonacci](https://kenji.blog/pt/p/fibonacci/) não se limitar
 
 ### "Liber Quadratorum" (O Livro dos Quadrados)
 
-Escrito em 1225, este livro é um tratado avançado sobre equações diofantinas (equações que buscam soluções inteiras). Ele explora o conceito de "números congruentes" e mostra insights profundos sobre o teorema de Pitágoras. É amplamente considerado a maior obra-prima da teoria dos números na Europa medieval.
+Escrito em 1225, este livro é um tratado avançado sobre equações diofantinas (equações que buscam soluções inteiras). Ele explora o conceito de "números congruentes" e mostra insights profundos sobre o teorema de [Pitágoras](/pt/p/pythagoras/). É amplamente considerado a maior obra-prima da teoria dos números na Europa medieval.
 
 ### "Practica Geometriae" (Geometria Prática)
 
-Escrito em 1220, este livro detalha topografia e geometria. Ele forneceu métodos rigorosos para calcular área e volume, e aplicações práticas dos princípios da geometria euclidiana grega antiga, tornando-se um recurso valioso para engenheiros e agrimensores da época.
+Escrito em 1220, este livro detalha topografia e geometria. Ele forneceu métodos rigorosos para calcular área e volume, e aplicações práticas dos princípios da geometria euclidiana grega antiga, tornando-se um recurso valioso [para engenheiros](/pt/p/prompt-engineering-for-engineers/) e agrimensores da época.
 
 ## A Sociedade Moderna e o Legado de [Fibonacci](https://kenji.blog/pt/p/fibonacci/)
 
@@ -160,7 +160,7 @@ As descobertas de [Fibonacci](https://kenji.blog/pt/p/fibonacci/), que viveu há
 
 ### Aplicações na Ciência da Computação
 
-Em algoritmos de computador, a sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/) é altamente útil. O algoritmo chamado "pesquisa de Fibonacci" pode pesquisar dados com mais eficiência do que a pesquisa binária sob condições específicas. Além disso, uma estrutura de dados conhecida como "heap de Fibonacci" é indispensável para acelerar algoritmos de teoria dos grafos, como o algoritmo de [Dijkstra](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/).
+Em algoritmos de computador, a sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/) é altamente útil. O algoritmo chamado "pesquisa de Fibonacci" pode pesquisar dados com mais eficiência do que a pesquisa binária sob condições específicas. Além disso, uma estrutura de dados conhecida como "heap de Fibonacci" é indispensável para acelerar algoritmos de [teoria dos grafos](/pt/p/graph-theory-dijkstra-a-star/), como o algoritmo de [Dijkstra](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/).
 
 ### Retração de [Fibonacci](https://kenji.blog/pt/p/fibonacci/) nos Mercados Financeiros
 

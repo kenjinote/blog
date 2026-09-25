@@ -19,7 +19,7 @@ tags:
 
 Os computadores que usamos diariamente, de smartphones a supercomputadores, possuem um poder de processamento surpreendente. No entanto, como você responderia à pergunta fundamental: **"Há algo que um computador não possa fazer?"**
 
-Quem forneceu uma resposta matemática completa para essa pergunta foi **Alan Turing**, o matemático britânico conhecido como o pai da ciência da computação. Em um artigo publicado em 1936, ele concebeu um modelo computacional virtual chamado **Máquina de Turing**, provando que existem problemas neste mundo que "não podem ser resolvidos em princípio, não importa qual computador seja usado".
+Quem forneceu uma resposta matemática completa para essa pergunta foi **Alan Turing**, o matemático britânico conhecido como [o pai da ciência da computação](/pt/p/biography-donald-knuth/). Em um artigo publicado em 1936, ele concebeu um modelo computacional virtual chamado **Máquina de Turing**, provando que existem problemas neste mundo que "não podem ser resolvidos em princípio, não importa qual computador seja usado".
 
 Neste artigo, explicaremos em detalhes como funciona a Máquina de Turing e o que é o **"Problema da Parada"**, que é de extrema importância na teoria da computabilidade.
 

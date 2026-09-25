@@ -12,7 +12,7 @@ image: "eyecatch.jpg"
 
 Dans le monde moderne, les "semi-conducteurs" sont à la base de toutes les technologies, telles que les smartphones, les ordinateurs, Internet et l'IA. Le centre de cette industrie des semi-conducteurs et le sanctuaire de l'innovation dont rêvent les entrepreneurs du monde entier est la "Silicon Valley", située au nord de la Californie.
 
-Cet endroit, grouillant de géants de la technologie comme Google, Apple, Meta (anciennement Facebook) et Netflix, n'a pas toujours été ce qu'il est aujourd'hui. C'était autrefois une paisible région agricole parsemée de vergers, connue sous le nom de "Santa Clara Valley". Comment s'est-elle transformée en le plus grand pôle technologique du monde ?
+Cet endroit, grouillant de géants de la technologie comme Google, Apple, Meta ([anciennement Facebook](/fr/p/history-of-meta-facebook/)) et Netflix, n'a pas toujours été ce qu'il est aujourd'hui. C'était autrefois une paisible région agricole parsemée de vergers, connue sous le nom de "Santa Clara Valley". Comment s'est-elle transformée en le plus grand pôle technologique du monde ?
 
 On peut dire que tout a commencé par un incident de "trahison" en 1957. Huit jeunes et brillants ingénieurs réunis sous l'égide d'un scientifique de génie l'ont quitté pour fonder leur propre entreprise. Ils seront plus tard appelés les **"Huit Traîtres" (Traitorous Eight)**.
 

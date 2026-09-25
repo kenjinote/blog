@@ -46,7 +46,7 @@ C'est exactement le principe du **bateau de Thésée**. Même si tous les compos
 
 ## 2. L'« identité » dans la programmation orientée objet
 
-Lorsque l'on réfléchit à l'« identité » au niveau du code, le concept le plus proche est celui de la **programmation orientée objet (POO)**. En POO, il existe globalement deux critères pour juger de l'identité :
+Lorsque l'on réfléchit à l'« identité » au niveau du code, le concept le plus proche est celui de la **programmation orientée objet ([POO](/fr/p/object-oriented-programming-oop-solid-principles/))**. En [POO](/fr/p/object-oriented-programming-oop-solid-principles/), il existe globalement deux critères pour juger de l'identité :
 
 1. **Égalité de référence (Reference Equality)** : Est-ce qu'ils pointent vers le même emplacement en mémoire (le pointeur est-il le même) ?
 2. **Égalité de valeur (Value Equality)** : Est-ce que tous les attributs (données) qu'ils contiennent sont les mêmes ?

@@ -14,7 +14,7 @@ description: "LLMの学習や推論において最大の障壁となるVRAM（GP
 
 近年、[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）や拡散モデル（Diffusion Models）などの生成AI技術が急速な発展を遂げています。しかし、これらの最先端のAIモデルをローカル環境で学習（ファインチューニング）したり、推論（Inference）を実行したりする際、多くの開発者や研究者が直面するのが **「GPUメモリ（VRAM）不足」** という極めて物理的な障壁です。
 
-NVIDIA GeForce RTX 4090などのコンシューマー向けハイエンドGPUであってもVRAMは最大24GBであり、Llama 3 70Bのような巨大なモデルをそのままロードすることは到底不可能です。データセンター向けのH100（80GB）やB200（192GB）などは非常に高価であり、個人や小規模なチームが手軽に扱えるものではありません。この「VRAMの壁（The Wall of VRAM）」を突破できなければ、最先端のモデルに触れることすらできません。
+[NVIDIA](/p/history-of-nvidia/) GeForce RTX 4090などのコンシューマー向けハイエンドGPUであってもVRAMは最大24GBであり、Llama 3 70Bのような巨大なモデルをそのままロードすることは到底不可能です。データセンター向けのH100（80GB）やB200（192GB）などは非常に高価であり、個人や小規模なチームが手軽に扱えるものではありません。この「VRAMの壁（The Wall of VRAM）」を突破できなければ、最先端のモデルに触れることすらできません。
 
 本記事では、このVRAM制限という物理的な制約をソフトウェアおよびハードウェアのアーキテクチャの工夫によって打破するための、高度なテクニックを推論と学習の両面から徹底的に解説します。CPUオフロード、KVキャッシュの最適化、勾配チェックポイント（Gradient Checkpointing）、そして最新の統合メモリ（Unified Memory）アーキテクチャまで、数式や図解を交えながら深掘りしていきましょう。この記事を読めば、VRAMの挙動を深く理解し、限られたリソースで巨大なモデルを扱うための実践的な知識が身につきます。
 
@@ -32,13 +32,13 @@ AIモデルを構成するパラメータ（Weights）が消費する基本的�
 - **FP32 (単精度浮動小数点数):** 4 bytes (標準的な学習時の精度)
 - **FP16 / BF16 (半精度浮動小数点数):** 2 bytes (一般的な推論および混合精度学習)
 - **INT8 (8ビット整数):** 1 byte (量子化モデル)
-- **INT4 (4ビット整数量子化):** 0.5 bytes (GPTQ, AWQ, GGUFなどの極度な量子化)
+- **INT4 (4ビット整数量子化):** 0.5 bytes (GPTQ, AWQ, [GGUF](/p/llama-cpp-quantization-gguf/)などの極度な量子化)
 
 モデル全体のパラメータ数を $P$ とすると、重みそのものが占有するベースのメモリ量 $M_{weights}$ は以下の数式で表されます。
 
 $$ M_{weights} = P \times B $$
 
-例えば、Metaが公開している「Llama 3 8B」モデル（約80億パラメータ）をFP16（半精度）でロードする場合、以下のような計算になります。
+例えば、[Meta](/p/history-of-meta-facebook/)が公開している「Llama 3 8B」モデル（約80億パラメータ）をFP16（半精度）でロードする場合、以下のような計算になります。
 
 $$ M_{weights} = 8,000,000,000 \times 2 \text{ bytes} \approx 16,000,000,000 \text{ bytes} \approx 16 \text{ GB} $$
 
@@ -46,7 +46,7 @@ $$ M_{weights} = 8,000,000,000 \times 2 \text{ bytes} \approx 16,000,000,000 \te
 
 ## 1.2 推論時のメモリ消費：KVキャッシュの増大
 
-LLMの推論（特に自己回帰的なテキスト生成）において、重みと同じかそれ以上にVRAMを激しく圧迫するのが **KVキャッシュ（[Key-Value](https://kenji.blog/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache）** です。
+[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)の推論（特に自己回帰的なテキスト生成）において、重みと同じかそれ以上にVRAMを激しく圧迫するのが **KVキャッシュ（[Key-Value](https://kenji.blog/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache）** です。
 [Transformer](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)アーキテクチャでは、過去に生成・処理したトークンの情報を再計算するのを防ぐため、各アテンション層でのKeyとValueのテンソルをVRAMにキャッシュし続けます。これにより計算速度（Compute）は向上しますが、コンテキスト長（入力プロンプト長＋生成長）が長くなるにつれて、メモリ消費量が線形に爆発的に増加します。
 
 1トークンを処理する際に消費されるKVキャッシュのメモリ量 $M_{kv\_token}$ は、モデルのアーキテクチャに基づいて以下の数式で厳密に計算されます。

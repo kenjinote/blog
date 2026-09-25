@@ -178,7 +178,7 @@ Bei PARC wurde die Forschung in Richtung der Vision des "Personal Computing" vor
 
 ## Technologietransfer von Xerox zu Apple (Macintosh)
 
-Im Jahr 1979 hatte Steve Jobs, Mitbegründer von Apple Computer, die Gelegenheit, Xerox PARC zu besuchen. Geschockt von der GUI und der Bedienbarkeit der Maus des Alto war Jobs überzeugt: "Das ist die Zukunft des Computers", und integrierte dieses Konzept mit Nachdruck in die Entwicklungsprojekte seines eigenen Unternehmens.
+Im Jahr 1979 hatte [Steve Jobs](/de/p/biography-steve-jobs/), Mitbegründer von Apple Computer, die Gelegenheit, Xerox PARC zu besuchen. Geschockt von der GUI und der Bedienbarkeit der Maus des Alto war Jobs überzeugt: "Das ist die Zukunft des Computers", und integrierte dieses Konzept mit Nachdruck in die Entwicklungsprojekte seines eigenen Unternehmens.
 
 Die Ingenieure von Apple überarbeiteten die teure und komplexe Xerox-Maus radikal. Sie gestalteten sie so um, dass sie nur eine Taste besaß, kostengünstig massenproduziert werden konnte und sich reibungslos auf jedem Schreibtisch bewegte. Mit der Veröffentlichung der "Lisa" im Jahr 1983 und des "Macintosh" im Jahr 1984 verbreitete sich die Maus rasant – von einem Werkzeug für einige wenige Forscher zu einem Standard-Eingabegerät für normale Verbraucher zu Hause.
 

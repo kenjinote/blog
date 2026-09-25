@@ -37,7 +37,7 @@ But that doesn't mean you should make light of "understanding." Deepening your u
 
 There are many things in the world that have not yet been elucidated. For example, the mechanisms of human emotions and consciousness, the origin of the universe, and so on. These are fields that are still not completely "understood" even as science advances.
 
-Even in the world of mathematics, there are unsolved problems like "Goldbach's conjecture," despite being simple problems.
+Even in the world of mathematics, there are unsolved problems like "[Goldbach's conjecture](/en/p/goldbachs-conjecture/)," despite being simple problems.
 
 ---
 

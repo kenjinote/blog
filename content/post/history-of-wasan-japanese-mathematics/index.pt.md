@@ -12,7 +12,7 @@ image: "eyecatch.jpg"
 
 Do século XVII até meados do século XIX, o Japão adotou uma rigorosa política de isolamento externo chamada "Sakoku". Nesta época, quando o intercâmbio com a ciência e a cultura ocidentais era extremamente limitado, um fenômeno singular ocorria dentro do Japão, sem paralelo no mundo. Foi o florescimento da cultura matemática altamente desenvolvida e única do Japão, o **"Wasan"**.
 
-Na mesma época na Europa, o cálculo diferencial e integral foi fundado por Isaac Newton, Gottfried Leibniz e outros, e a matemática moderna se desenvolvia rapidamente. Surpreendentemente, no Japão, uma nação insular no Extremo Oriente, conceitos matemáticos avançados comparáveis ao cálculo nasceram de forma totalmente independente deles.
+Na mesma época na Europa, o cálculo diferencial e integral foi fundado por [Isaac Newton](/pt/p/newton/), [Gottfried Leibniz](/pt/p/leibniz/) e outros, e a matemática moderna se desenvolvia rapidamente. Surpreendentemente, no Japão, uma nação insular no Extremo Oriente, conceitos matemáticos avançados comparáveis ao cálculo nasceram de forma totalmente independente deles.
 
 Neste artigo, desvendaremos detalhadamente a história do Wasan, que começou a partir de levantamentos topográficos e cálculos práticos, para depois se sublimar em pura brincadeira intelectual, e até em uma espécie de arte, os gênios matemáticos que impulsionaram seu desenvolvimento e a cultura única do "Sangaku", sem precedentes no mundo.
 

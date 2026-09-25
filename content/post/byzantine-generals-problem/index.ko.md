@@ -9,7 +9,7 @@ tags: ["비잔틴 장군 문제", "블록체인", "합의 형성", "알고리즘
 slug: "byzantine-generals-problem"
 ---
 
-분산 시스템이나 블록체인 기술을 배울 때 반드시 직면하게 되는 것이 ** [비잔틴 장군 문제](https://kenji.blog/ko/p/byzantine-generals-problem/) ** ([Byzantine Generals](https://kenji.blog/ko/p/byzantine-generals-problem-consensus/) Problem)입니다. 이는 네트워크 내에 '배신자'나 '고장 난 노드'가 존재하는 상황에서 시스템 전체적으로 어떻게 올바른 합의를 형성할 것인가 하는 매우 중요한 주제를 다루고 있습니다.
+[분산 시스템](/ko/p/cap-theorem-distributed-systems-tradeoff/)이나 [블록체인](/ko/p/blockchain-technology-smart-contract-distributed-ledger/) 기술을 배울 때 반드시 직면하게 되는 것이 ** [비잔틴 장군 문제](https://kenji.blog/ko/p/byzantine-generals-problem/) ** ([Byzantine Generals](https://kenji.blog/ko/p/byzantine-generals-problem-consensus/) Problem)입니다. 이는 네트워크 내에 '배신자'나 '고장 난 노드'가 존재하는 상황에서 시스템 전체적으로 어떻게 올바른 합의를 형성할 것인가 하는 매우 중요한 주제를 다루고 있습니다.
 
 본 기사에서는 이 ** [비잔틴 장군 문제](https://kenji.blog/ko/p/byzantine-generals-problem/) ** 에 대해 구체적인 스토리, 수학적인 조건식, 도해를 섞어가며 기초부터 응용까지 자세히 해설하겠습니다.
 
@@ -119,9 +119,9 @@ end
 
 ## 4. 블록체인과 비잔틴 장애 허용
 
-[비잔틴 장군 문제](https://kenji.blog/ko/p/byzantine-generals-problem/)에 대한 내성을 ** 비잔틴 장애 허용 ** (Byzantine Fault Tolerance, BFT)이라고 부릅니다. 분산 시스템이 고장이나 악의적인 공격을 견뎌내고 정상적으로 가동을 계속하기 위한 중요한 지표입니다.
+[비잔틴 장군 문제](https://kenji.blog/ko/p/byzantine-generals-problem/)에 대한 내성을 ** 비잔틴 장애 허용 ** (Byzantine Fault Tolerance, BFT)이라고 부릅니다. [분산 시스템](/ko/p/cap-theorem-distributed-systems-tradeoff/)이 고장이나 악의적인 공격을 견뎌내고 정상적으로 가동을 계속하기 위한 중요한 지표입니다.
 
-최근 이 문제가 다시 크게 주목받게 된 것은 ** 블록체인 기술 ** 의 등장 때문입니다. 블록체인은 중앙 관리자가 없는 [P2P](https://kenji.blog/ko/p/webrtc-realtime-communication-p2p/) 네트워크이기 때문에 악의적인 참가자(노드)가 거짓 거래 내역을 흘릴 가능성이 있습니다. 바로 [비잔틴 장군 문제](https://kenji.blog/ko/p/byzantine-generals-problem/) 그 자체입니다.
+최근 이 문제가 다시 크게 주목받게 된 것은 ** [블록체인](/ko/p/blockchain-technology-smart-contract-distributed-ledger/) 기술 ** 의 등장 때문입니다. [블록체인](/ko/p/blockchain-technology-smart-contract-distributed-ledger/)은 중앙 관리자가 없는 [P2P](https://kenji.blog/ko/p/webrtc-realtime-communication-p2p/) 네트워크이기 때문에 악의적인 참가자(노드)가 거짓 거래 내역을 흘릴 가능성이 있습니다. 바로 [비잔틴 장군 문제](https://kenji.blog/ko/p/byzantine-generals-problem/) 그 자체입니다.
 
 ### PBFT (Practical Byzantine Fault Tolerance)의 구조
 
@@ -146,7 +146,7 @@ subgraph "PBFT의 주요 페이즈"
 end
 ```
 
-이 프로세스를 거침으로써 네트워크 내에 $m$ 개의 고장·악의적인 노드가 존재하더라도 총 노드 수가 $n \ge 3m + 1$ 을 만족하면 올바른 순서로 요청을 처리할 수 있습니다. PBFT는 컴포넌트 간의 통신량이 노드 수의 제곱에 비례하여 증가하기 때문에 퍼블릭 체인과 같은 대규모 네트워크에는 부적합하지만, 노드 수가 한정된 컨소시엄형 블록체인(예를 들어 하이퍼레저 패브릭 등)에서는 매우 고속으로 확정적인 합의를 가져오기 때문에 널리 이용되고 있습니다.
+이 프로세스를 거침으로써 네트워크 내에 $m$ 개의 고장·악의적인 노드가 존재하더라도 총 노드 수가 $n \ge 3m + 1$ 을 만족하면 올바른 순서로 요청을 처리할 수 있습니다. PBFT는 컴포넌트 간의 통신량이 노드 수의 제곱에 비례하여 증가하기 때문에 퍼블릭 체인과 같은 대규모 네트워크에는 부적합하지만, 노드 수가 한정된 컨소시엄형 [블록체인](/ko/p/blockchain-technology-smart-contract-distributed-ledger/)(예를 들어 하이퍼레저 패브릭 등)에서는 매우 고속으로 확정적인 합의를 가져오기 때문에 널리 이용되고 있습니다.
 
 ### 나카모토 컨센서스 (Proof of Work)
 
@@ -162,7 +162,7 @@ end
 
 ## 5. BFT의 수학적 모델링과 응용
 
-보다 고도화된 분산 시스템 설계에서는 시스템의 상태 전이를 엄밀하게 정의하고 BFT 알고리즘의 정당성을 증명합니다.
+보다 고도화된 [분산 시스템](/ko/p/cap-theorem-distributed-systems-tradeoff/) 설계에서는 시스템의 상태 전이를 엄밀하게 정의하고 BFT 알고리즘의 정당성을 증명합니다.
 
 예를 들어 노드 집합을 $\mathcal{N} = \{1, 2, \dots, n\}$, 배신자 노드의 최대 수를 $f$ 라고 합시다. 어떤 라운드 $r$ 에서 각 노드 $i$ 는 상태 $s_i^{(r)}$ 을 유지하며 다른 노드와 메시지를 교환합니다.
 
@@ -180,6 +180,6 @@ $$
 
 ## 6. 맺음말
 
-이 ** [비잔틴 장군 문제](https://kenji.blog/ko/p/byzantine-generals-problem/) ** 는 분산 시스템의 신뢰성을 담보하기 위한 근간이 되는 이론입니다. '누구를 믿어야 할지 알 수 없는 환경에서 어떻게 전체적으로 올바른 결정을 내릴 것인가'라는 이 질문은 [암호화폐](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)의 기반 기술부터 항공기의 제어 시스템, 클라우드 컴퓨팅에 이르기까지 현대의 모든 IT 인프라에 응용되고 있습니다.
+이 ** [비잔틴 장군 문제](https://kenji.blog/ko/p/byzantine-generals-problem/) ** 는 [분산 시스템](/ko/p/cap-theorem-distributed-systems-tradeoff/)의 신뢰성을 담보하기 위한 근간이 되는 이론입니다. '누구를 믿어야 할지 알 수 없는 환경에서 어떻게 전체적으로 올바른 결정을 내릴 것인가'라는 이 질문은 [암호화폐](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)의 기반 기술부터 항공기의 제어 시스템, 클라우드 컴퓨팅에 이르기까지 현대의 모든 IT 인프라에 응용되고 있습니다.
 
-배신자의 존재를 전제로 하고, 그럼에도 시스템을 멈추지 않기 위한 알고리즘의 진화는 앞으로도 멈추지 않을 것입니다. 분산 시스템 설계에 관여하는 엔지니어에게 이 문제의 배경에 있는 수학적 증명과 알고리즘의 이해는 매우 강력한 무기가 될 것입니다.
+배신자의 존재를 전제로 하고, 그럼에도 시스템을 멈추지 않기 위한 알고리즘의 진화는 앞으로도 멈추지 않을 것입니다. [분산 시스템](/ko/p/cap-theorem-distributed-systems-tradeoff/) 설계에 관여하는 엔지니어에게 이 문제의 배경에 있는 수학적 증명과 알고리즘의 이해는 매우 강력한 무기가 될 것입니다.

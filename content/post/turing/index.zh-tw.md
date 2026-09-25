@@ -51,7 +51,7 @@ H(x, y) = \begin{cases}
 \end{cases}
 $$
 
-假設存在一台計算此函數 $H$ 的圖靈機。在這種情況下，我們可以構造一個基於對角化論證的程式 $D(x)$ 如下：
+假設存在一台計算此函數 $H$ 的圖靈機。在這種情況下，我們可以構造一個基於[對角化](/zh-tw/p/diagonalization-and-jordan-normal-form/)論證的程式 $D(x)$ 如下：
 
 $$
 D(x) = \begin{cases} 

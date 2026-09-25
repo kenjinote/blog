@@ -12,7 +12,7 @@ image: "eyecatch.jpg"
 
 Im modernen Software-Engineering vergeht kein Tag, an dem man nicht Begriffe wie „Modulares Design“, „Single Responsibility Principle“ (Prinzip der einzigen Verantwortung) und „Lose Kopplung“ hört. Diese werden als goldene Regeln für die Aufrechterhaltung sauberer Codebasen und den Aufbau skalierbarer, wartbarer Systeme behandelt. Diese Konzepte sind jedoch nicht in den letzten Jahren entstanden. Wenn man ihre Ursprünge zurückverfolgt, stößt man auf „Unix“, ein Betriebssystem, das in den frühen 1970er Jahren in den Bell Labs geboren wurde.
 
-Unix war nicht nur ein OS. Es verkörperte eine Philosophie darüber, „wie man exzellente Software baut“ – die „Unix-Philosophie“. Diese Philosophie, die von Giganten wie Ken Thompson, Dennis Ritchie und Doug McIlroy aufgebaut wurde, atmet ein halbes Jahrhundert später auch in modernen Cloud-nativen Architekturen und Microservices tief durch.
+Unix war nicht nur ein OS. Es verkörperte eine Philosophie darüber, „wie man exzellente Software baut“ – die „Unix-Philosophie“. Diese Philosophie, die von Giganten wie Ken Thompson, [Dennis Ritchie](/de/p/biography-dennis-ritchie/) und Doug McIlroy aufgebaut wurde, atmet ein halbes Jahrhundert später auch in modernen Cloud-nativen Architekturen und Microservices tief durch.
 
 Dieser Artikel beleuchtet die Essenz des „modularen Designs“ im Kern der Unix-Philosophie und deckt auf, warum ihre Ideologie weiterhin so überragend unterstützt wird.
 
@@ -69,7 +69,7 @@ Bei einem monolithischen Ansatz tendieren interne Datenstrukturen dazu, eng geko
 
 Zur Unix-Philosophie gehört die „Rule of Silence“ (Regel des Schweigens). Die Idee ist, dass „wenn ein Programm nichts Überraschendes zu sagen hat, sollte es gar nichts sagen“.
 
-Wenn es erfolgreich ist, gibt es nichts aus (gibt nur den Exit-Code `0` zurück) und gibt Meldungen nur an den Standardfehler (stderr) aus, wenn ein Fehler auftritt. Dies mag sich für Anfänger etwas unfreundlich anfühlen, hat aber beim modularen Design eine tiefe Bedeutung.
+Wenn es erfolgreich ist, gibt es nichts aus (gibt nur den Exit-Code `0` zurück) und gibt Meldungen nur an den Standardfehler (stderr) aus, wenn ein Fehler auftritt. Dies mag sich [für Anfänger](/de/p/lederwaren%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/) etwas unfreundlich anfühlen, hat aber beim modularen Design eine tiefe Bedeutung.
 
 Denn wenn ein Programm geschwätzige Nachrichten wie „Verarbeitung erfolgreich!“ auf die Standardausgabe ausgeben würde, würde das nächste Programm, das diese Ausgabe empfängt (z. B. `grep` oder `sort`), diese Nachricht als Teil der Daten verarbeiten und die Pipeline zerstören.
 
@@ -91,7 +91,7 @@ Container-Technologien, vertreten durch Docker, haben ebenfalls tiefe Verbindung
 
 ### Funktionale Programmierung und Daten-Pipelines
 
-Die Funktionskomposition in der funktionalen Programmierung (die Ausgabe einer Funktion als Eingabe einer anderen zu nehmen) weist eine mathematische Ähnlichkeit mit dem Konzept von Unix-Pipelines auf. Stream-Verarbeitung in der Big-Data-Verarbeitung, wie Apache Kafka, ist ebenfalls eine Anwendung des Text-Stream-Konzepts auf verteilte Systeme.
+Die Funktionskomposition in der funktionalen Programmierung (die Ausgabe einer Funktion als Eingabe einer anderen zu nehmen) weist eine mathematische Ähnlichkeit mit dem Konzept von Unix-Pipelines auf. Stream-Verarbeitung in der Big-Data-Verarbeitung, wie Apache Kafka, ist ebenfalls eine Anwendung des Text-Stream-Konzepts auf [verteilte Systeme](/de/p/cap-theorem-distributed-systems-tradeoff/).
 
 ```mermaid
 graph LR

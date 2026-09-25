@@ -73,7 +73,7 @@ graph TD
 
 - **Características**: Es una táctica en la que "lo suave controla a lo duro", donde interceptas el ataque del oponente con un "contraataque" utilizando la torre movida hacia la izquierda y el alfil. El rey escapa hacia el lado derecho donde solía estar la torre para consolidar la defensa. Requiere un sentido de "pasar el turno" (esperar a ver qué hace el oponente) y es muy popular entre los aficionados.
 - **Tácticas representativas**:
-  - **Shikenbisha (Torre en la cuarta columna)**: Mueve la torre a la cuarta columna desde la izquierda. Es la táctica mejor equilibrada y también recomendada para principiantes.
+  - **Shikenbisha (Torre en la cuarta columna)**: Mueve la torre a la cuarta columna desde la izquierda. Es la táctica mejor equilibrada y también recomendada [para principiantes](/es/p/productos-de-cuero%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/).
   - **Nakabisha (Torre central)**: Mueve la torre al centro exacto del tablero (columna 5) para apuntar a un ataque por el centro. Es un Furibisha agresivo.
 - **Castillos representativos**:
   - **Mino-gakoi (Castillo Mino)**: A pesar de que se puede formar rápidamente en pocos movimientos, es extremadamente sólido contra los ataques laterales. Es un castillo hermoso y exclusivo de Furibisha.

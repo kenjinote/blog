@@ -22,11 +22,11 @@ tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 
 C++ 프로젝트에 CI/CD를 도입할 때 직면하는 주요 과제는 다음과 같습니다.
 
-1. **플랫폼의 다양성**: Windows, Linux, macOS와 같이 다른 OS마다 API(Windows API, POSIX 등)가 다릅니다. 개발자의 로컬 환경(예: macOS)에서 동작하더라도 Linux나 Windows에서 컴파일 오류가 발생하는 일은 일상다반사입니다.
+1. **플랫폼의 다양성**: Windows, Linux, macOS와 같이 다른 OS마다 API([Windows API](/ko/p/modern-cpp-win32-api-safe-handling/), POSIX 등)가 다릅니다. 개발자의 로컬 환경(예: macOS)에서 동작하더라도 Linux나 Windows에서 컴파일 오류가 발생하는 일은 일상다반사입니다.
 2. **컴파일러의 차이**: Microsoft Visual C++ (MSVC), GNU Compiler Collection (GCC), Clang과 같은 주요 컴파일러는 C++ 표준(C++17, C++20, C++23)의 구현 정도나 해석, 경고의 엄격함이 다릅니다.
 3. **빌드 시간**: 대규모 C++ 프로젝트에서는 빌드에 수십 분에서 수 시간이 걸리는 일도 드물지 않습니다. CI 환경에서는 제한된 컴퓨팅 리소스로 효율적으로 빌드하기 위한 캐시 전략과 병렬화가 필요합니다.
 4. **의존성 관리**: C++에는 npm이나 pip 같은 절대적인 표준 패키지 관리자가 존재하지 않습니다. vcpkg, Conan 또는 CMake의 `FetchContent` 등을 사용하여 CI 환경에서 매번 올바르게 라이브러리를 해결해야 합니다.
-5. **메모리 관리와 미정의 동작**: 포인터 조작이나 수동 메모리 관리가 수반되므로, 단순한 로직 테스트뿐만 아니라 메모리 누수나 미정의 동작(Undefined Behavior)의 감지도 자동화해야 합니다.
+5. **메모리 관리와 미정의 동작**: [포인터](/ko/p/c-language-pointers-memory-management-stack-heap/) 조작이나 수동 메모리 관리가 수반되므로, 단순한 로직 테스트뿐만 아니라 메모리 누수나 미정의 동작(Undefined Behavior)의 감지도 자동화해야 합니다.
 
 이러한 과제를 해결하기 위해서는 다양한 OS 가상 머신을 온디맨드로 프로비저닝할 수 있고, 복잡한 워크플로우를 코드로 정의(Configuration as Code)할 수 있는 [GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)가 최적의 솔루션이 됩니다.
 

@@ -132,15 +132,15 @@ Cette découverte suggère que la « moralité » et la « confiance » dans la 
 
 ## 5. L'émergence de la coopération dans la biologie de l'évolution
 
-Le dilemme du prisonnier et le succès de la stratégie du « tac au tac » ont également eu un impact profond sur la biologie de l'évolution (théorie des jeux évolutionniste). Comme l'illustre « Le Gène égoïste » de Richard Dawkins, le monde naturel obéit à la loi du plus fort, et chaque organisme devrait donner la priorité à sa propre survie et reproduction (trahison). Malgré cela, le monde naturel regorge de comportements altruistes (coopération), tels que le partage de sang chez les chauves-souris vampires ou la socialité des abeilles.
+[Le dilemme du prisonnier](/fr/p/prisoners-dilemma/) et le succès de la stratégie du « tac au tac » ont également eu un impact profond sur la biologie de l'évolution (théorie des jeux évolutionniste). Comme l'illustre « Le Gène égoïste » de Richard Dawkins, le monde naturel obéit à la loi du plus fort, et chaque organisme devrait donner la priorité à sa propre survie et reproduction (trahison). Malgré cela, le monde naturel regorge de comportements altruistes (coopération), tels que le partage de sang chez les chauves-souris vampires ou la socialité des abeilles.
 
 Dans les simulations évolutives, il a été prouvé que si un petit groupe de « tac au tac » est introduit dans une société où tout le monde « trahit », le groupe tac au tac coopère entre eux pour obtenir des avantages élevés, et élimine progressivement le groupe des traîtres. Autrement dit, dans la lutte pour la survie à long terme, les groupes capables de coopérer sont les vainqueurs ultimes.
 
 ## 6. Conclusion : Comment surmonter le dilemme
 
-Le dilemme du prisonnier nous enseigne la dure réalité que si nous poursuivons excessivement notre propre intérêt, tout le monde finit par y perdre. Mais en même temps, comme le montrent les études sur les jeux répétés, nous pouvons établir des relations de coopération s'il existe des interactions continues et des mécanismes de retour d'information appropriés.
+[Le dilemme du prisonnier](/fr/p/prisoners-dilemma/) nous enseigne la dure réalité que si nous poursuivons excessivement notre propre intérêt, tout le monde finit par y perdre. Mais en même temps, comme le montrent les études sur les jeux répétés, nous pouvons établir des relations de coopération s'il existe des interactions continues et des mécanismes de retour d'information appropriés.
 
-Pour résoudre le dilemme du prisonnier dans le monde réel, des approches telles que les suivantes sont nécessaires :
+Pour résoudre [le dilemme du prisonnier](/fr/p/prisoners-dilemma/) dans le monde réel, des approches telles que les suivantes sont nécessaires :
 - **Changement de règles (État de droit)** : Institutionnaliser les sanctions pour les trahisons, éliminant ainsi les avantages de la trahison. (ex. : lois antitrust, taxes environnementales)
 - **Garantir la communication** : Créer des opportunités pour confirmer les intentions de chacun et bâtir la confiance.
 - **Mettre l'accent sur les relations à long terme** : Faire prendre conscience de l'ombre de l'avenir : « Si je trahis cette fois, il n'y aura plus de transactions à l'avenir. »

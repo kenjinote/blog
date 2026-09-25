@@ -148,7 +148,7 @@ stateDiagram-v2
 
 ### 《平方數之書》（Liber Quadratorum）
 
-寫於1225年的這本書是一部關於[丟番圖](https://kenji.blog/zh-tw/p/diophantus/)方程（求整數解的方程）的高級研究著作。它探討了「同餘數（Congruent number）」的概念，展現了對畢氏定理的深刻洞察。它被廣泛認為是中世紀歐洲數論的最大傑作。
+寫於1225年的這本書是一部關於[丟番圖](https://kenji.blog/zh-tw/p/diophantus/)方程（求整數解的方程）的高級研究著作。它探討了「同餘數（Congruent number）」的概念，展現了對[畢氏定理](/zh-tw/p/diverse-proofs-of-pythagorean-theorem/)的深刻洞察。它被廣泛認為是中世紀歐洲數論的最大傑作。
 
 ### 《實用幾何學》（Practica Geometriae）
 

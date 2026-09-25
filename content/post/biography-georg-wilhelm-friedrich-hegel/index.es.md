@@ -9,7 +9,7 @@ slug: "biography-georg-wilhelm-friedrich-hegel"
 description: "En la historia de la filosofía occidental, el pensador que comenzó con Immanuel Kant y alcanzó el pináculo del idealismo alemán del siglo XIX es Georg Wilh"
 ---
 
-En la historia de la filosofía occidental, el pensador que comenzó con Immanuel Kant y alcanzó el pináculo del idealismo alemán del siglo XIX es Georg Wilhelm Friedrich Hegel (1770–1831). Su vasto y complejo sistema de pensamiento, con conceptos como la "Dialéctica" y el "Espíritu Absoluto", tuvo una influencia sumamente amplia, no solo en su época, sino hasta en Karl Marx, el existencialismo y en la ciencia política e historia contemporáneas. En este artículo, al trazar la vida de Hegel, profundizaremos en el núcleo de su filosofía y su impacto en las generaciones posteriores.
+En la historia de la filosofía occidental, el pensador que comenzó con [Immanuel Kant](/es/p/biography-immanuel-kant/) y alcanzó el pináculo del idealismo alemán del siglo XIX es Georg Wilhelm Friedrich Hegel (1770–1831). Su vasto y complejo sistema de pensamiento, con conceptos como la "Dialéctica" y el "Espíritu Absoluto", tuvo una influencia sumamente amplia, no solo en su época, sino hasta en [Karl Marx](/es/p/biography-karl-marx/), el existencialismo y en la ciencia política e historia contemporáneas. En este artículo, al trazar la vida de Hegel, profundizaremos en el núcleo de su filosofía y su impacto en las generaciones posteriores.
 
 ## El camino de estudiante de honor del seminario a gran filósofo
 
@@ -23,7 +23,7 @@ En 1806, en medio del caos por la invasión de las tropas de Napoleón a Jena, t
 
 La palabra clave más importante para comprender la filosofía de Hegel es la "Dialéctica" (Dialektik). La dialéctica se refiere a la lógica del movimiento mediante el cual las cosas se desarrollan hacia un estado superior a través de la oposición y la contradicción.
 
-Un cierto estado (Tesis) genera su estado opuesto (Antítesis) debido a las contradicciones en su interior, y tras pasar por oposición y conflicto, ambos se integran en un nivel superior preservando elementos de ambos (Síntesis). Hegel pensaba que este proceso de "superación" (Aufheben) era precisamente el mecanismo por el cual se desarrollan la historia, el mundo y el conocimiento humano.
+Un cierto estado (Tesis) genera su estado opuesto (Antítesis) debido a las contradicciones en su interior, y tras pasar por oposición y conflicto, ambos se integran en un nivel superior preservando elementos de ambos (Síntesis). Hegel pensaba que este proceso de "[superación](/es/p/hegel%E3%81%AEdial%C3%A9ctica/)" (Aufheben) era precisamente el mecanismo por el cual se desarrollan la historia, el mundo y el conocimiento humano.
 
 ```mermaid
 graph TD
@@ -43,7 +43,7 @@ En 1831, Hegel murió repentinamente a los 61 años tras contraer cólera (o qui
 
 La escuela hegeliana se dividió en la "Derecha hegeliana" (viejos hegelianos), que interpretaba su sistema de forma conservadora y apoyaba al Estado prusiano, y la "Izquierda hegeliana" (jóvenes hegelianos), que interpretaba la lógica del desarrollo dialéctico de forma radical y criticaba al Estado y a la religión de su tiempo.
 
-La influencia de esta última movió significativamente la historia. A través de la crítica de la religión de Ludwig Feuerbach, aparecieron Karl Marx y Friedrich Engels. Aunque Marx criticó la dialéctica idealista de Hegel afirmando que estaba "puesta de cabeza", heredó la lógica misma de desarrollo, invirtiéndola y evolucionándola hacia el "Materialismo Histórico". Es decir, consideró que lo que mueve la historia no es el "espíritu", sino las contradicciones de la "infraestructura económica" material.
+La influencia de esta última movió significativamente la historia. A través de la crítica de la religión de Ludwig Feuerbach, aparecieron [Karl Marx](/es/p/biography-karl-marx/) y Friedrich Engels. Aunque Marx criticó la dialéctica idealista de Hegel afirmando que estaba "puesta de cabeza", heredó la lógica misma de desarrollo, invirtiéndola y evolucionándola hacia el "Materialismo Histórico". Es decir, consideró que lo que mueve la historia no es el "espíritu", sino las contradicciones de la "infraestructura económica" material.
 
 ```mermaid
 graph TD

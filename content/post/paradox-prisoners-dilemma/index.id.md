@@ -12,9 +12,9 @@ date: "2026-09-24T15:00:00+09:00"
 
 "Mengapa kita saling mengkhianati ketika kita tahu segalanya akan berjalan lancar jika kita bekerja sama?"
 
-Menanggapi pertanyaan mendasar ini, **"Dilema Tahanan (Prisoner's Dilemma)"** dalam teori permainan memberikan jawaban paling jelas dan paling kejam dari perspektif matematika dan logika. Diciptakan oleh Merrill Flood dan Melvin Dresher pada 1950-an, dan diformulasikan sebagai "cerita tahanan" saat ini oleh Albert W. Tucker, konsep ini telah berdampak besar pada segala hal mulai dari ekonomi dan ilmu politik hingga psikologi dan biologi evolusioner.
+Menanggapi pertanyaan mendasar ini, **"[Dilema Tahanan](/id/p/prisoners-dilemma/) (Prisoner's Dilemma)"** dalam teori permainan memberikan jawaban paling jelas dan paling kejam dari perspektif matematika dan logika. Diciptakan oleh Merrill Flood dan Melvin Dresher pada 1950-an, dan diformulasikan sebagai "cerita tahanan" saat ini oleh Albert W. Tucker, konsep ini telah berdampak besar pada segala hal mulai dari ekonomi dan ilmu politik hingga psikologi dan biologi evolusioner.
 
-Dalam artikel ini, kita akan membahas "Dilema Tahanan" dengan sangat rinci, dari mekanisme dasar hingga konsep khusus seperti ekuilibrium Nash dan optimalitas Pareto, serta contoh spesifik di dunia nyata dan evolusi kerja sama dalam "permainan berulang".
+Dalam artikel ini, kita akan membahas "[Dilema Tahanan](/id/p/prisoners-dilemma/)" dengan sangat rinci, dari mekanisme dasar hingga konsep khusus seperti ekuilibrium Nash dan optimalitas Pareto, serta contoh spesifik di dunia nyata dan evolusi kerja sama dalam "permainan berulang".
 
 ---
 
@@ -74,7 +74,7 @@ Akibatnya, keduanya saling memilih "mengaku" dan **keduanya dijatuhi hukuman 5 t
 Di sinilah muncul dilema. Apakah hasil "keduanya 5 tahun penjara" merupakan hasil terbaik secara keseluruhan?
 Tidak. Jika mereka saling percaya dan keduanya tetap diam, mereka hanya akan mendapat "keduanya 1 tahun penjara".
 
-Keadaan di mana keuntungan keseluruhan (dalam hal ini total masa hukuman) dimaksimalkan, yaitu "keadaan di mana tidak mungkin meningkatkan keuntungan seseorang tanpa mengurangi keuntungan orang lain", disebut **"Optimalitas Pareto"**. Inti dari Dilema Tahanan terletak pada kenyataan bahwa **"pilihan rasional individu (ekuilibrium Nash) tidak selaras dengan solusi optimal keseluruhan (optimalitas Pareto)"**.
+Keadaan di mana keuntungan keseluruhan (dalam hal ini total masa hukuman) dimaksimalkan, yaitu "keadaan di mana tidak mungkin meningkatkan keuntungan seseorang tanpa mengurangi keuntungan orang lain", disebut **"Optimalitas Pareto"**. Inti dari [Dilema Tahanan](/id/p/prisoners-dilemma/) terletak pada kenyataan bahwa **"pilihan rasional individu (ekuilibrium Nash) tidak selaras dengan solusi optimal keseluruhan (optimalitas Pareto)"**.
 
 ---
 
@@ -95,9 +95,9 @@ Perlombaan pengembangan senjata nuklir antara Amerika Serikat dan Uni Soviet sel
 
 ## 4. Permainan Berulang dan Strategi "Tit for Tat"
 
-Dalam dilema tahanan satu kali, "berkhianat" adalah pilihan rasional. Namun, dalam masyarakat nyata, umum untuk berinteraksi dengan pihak yang sama berkali-kali. Dalam teori permainan, ini disebut **"Dilema Tahanan Berulang (Iterated Prisoner's Dilemma)"**.
+Dalam [dilema tahanan](/id/p/prisoners-dilemma/) satu kali, "berkhianat" adalah pilihan rasional. Namun, dalam masyarakat nyata, umum untuk berinteraksi dengan pihak yang sama berkali-kali. Dalam teori permainan, ini disebut **"[Dilema Tahanan](/id/p/prisoners-dilemma/) Berulang (Iterated Prisoner's Dilemma)"**.
 
-Pada 1980-an, ilmuwan politik Robert Axelrod mengundang program komputer dari para ahli di seluruh dunia untuk mengadakan turnamen demi mencari tahu strategi apa yang terkuat dalam dilema tahanan berulang.
+Pada 1980-an, ilmuwan politik Robert Axelrod mengundang program komputer dari para ahli di seluruh dunia untuk mengadakan turnamen demi mencari tahu strategi apa yang terkuat dalam [dilema tahanan](/id/p/prisoners-dilemma/) berulang.
 
 Hasilnya, program yang paling sederhana dan meraih skor tertinggi adalah **"Strategi Tit for Tat"** yang diajukan oleh Anatol Rapoport.
 
@@ -132,15 +132,15 @@ Penemuan ini menunjukkan kemungkinan bahwa "moralitas" dan "kepercayaan" dalam m
 
 ## 5. Munculnya Kerja Sama dalam Biologi Evolusioner
 
-Keberhasilan Dilema Tahanan dan "strategi tit for tat" berdampak besar pada biologi evolusioner (teori permainan evolusioner). Seperti dalam "Gen Egois" karya Richard Dawkins, alam adalah tentang kelangsungan hidup yang terkuat, sehingga organisme seharusnya mengutamakan kelangsungan hidup dan reproduksinya (berkhianat). Meski demikian, alam dipenuhi dengan "perilaku altruistik (kerja sama)", seperti kelelawar vampir yang berbagi darah dan sifat sosial lebah madu.
+Keberhasilan [Dilema Tahanan](/id/p/prisoners-dilemma/) dan "strategi tit for tat" berdampak besar pada biologi evolusioner (teori permainan evolusioner). Seperti dalam "Gen Egois" karya Richard Dawkins, alam adalah tentang kelangsungan hidup yang terkuat, sehingga organisme seharusnya mengutamakan kelangsungan hidup dan reproduksinya (berkhianat). Meski demikian, alam dipenuhi dengan "perilaku altruistik (kerja sama)", seperti kelelawar vampir yang berbagi darah dan sifat sosial lebah madu.
 
 Dalam simulasi evolusi, ketika sejumlah kecil kelompok "tit for tat" dimasukkan ke dalam populasi di mana semua orang "berkhianat", telah terbukti bahwa kelompok "tit for tat" akan bekerja sama satu sama lain untuk meraih keuntungan tinggi dan secara bertahap menyingkirkan kelompok "pengkhianat". Artinya, dalam kompetisi bertahan hidup jangka panjang, kelompok yang dapat bekerja sama lah yang akan menjadi pemenang akhir.
 
 ## 6. Kesimpulan: Bagaimana Mengatasi Dilema
 
-Dilema Tahanan mengajarkan kenyataan pahit bahwa jika kita mengejar kepentingan diri terlalu jauh, pada akhirnya semua orang akan rugi. Namun pada saat yang sama, seperti ditunjukkan oleh penelitian tentang permainan berulang, kita dapat membangun hubungan kerja sama jika kita memiliki hubungan berkelanjutan dan sistem umpan balik yang tepat.
+[Dilema Tahanan](/id/p/prisoners-dilemma/) mengajarkan kenyataan pahit bahwa jika kita mengejar kepentingan diri terlalu jauh, pada akhirnya semua orang akan rugi. Namun pada saat yang sama, seperti ditunjukkan oleh penelitian tentang permainan berulang, kita dapat membangun hubungan kerja sama jika kita memiliki hubungan berkelanjutan dan sistem umpan balik yang tepat.
 
-Untuk mengatasi Dilema Tahanan di dunia nyata, diperlukan pendekatan berikut.
+Untuk mengatasi [Dilema Tahanan](/id/p/prisoners-dilemma/) di dunia nyata, diperlukan pendekatan berikut.
 - **Perubahan Aturan (Aturan Hukum)**: Melembagakan hukuman terhadap pengkhianatan untuk menghilangkan keuntungannya. (Contoh: Undang-undang antimonopoli dan pajak lingkungan)
 - **Memastikan Komunikasi**: Memberikan peluang untuk mengonfirmasi niat satu sama lain dan membangun hubungan saling percaya.
 - **Menekankan Hubungan Jangka Panjang**: Membuat orang sadar akan dampak di masa depan, yaitu "jika Anda berkhianat kali ini, tidak akan ada transaksi lagi ke depannya."

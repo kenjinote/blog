@@ -23,7 +23,7 @@ tags: ["GNFS", "Integer Factorization", "RSA", "Algorithms"]
 
 ## 2. 渐进复杂度与L记号（L-notation）
 
-在评估整数分解算法的计算复杂度时，标准的多项式时间表示（如 $O(n^k)$ 等）不再适用，为了表示相对于输入 $n$ 的位数的次指数时间，我们使用 **L记号（L-notation）** 。L记号的定义如下：
+在评估整数分解算法的计算[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)时，标准的多项式时间表示（如 $O(n^k)$ 等）不再适用，为了表示相对于输入 $n$ 的位数的次指数时间，我们使用 **L记号（L-notation）** 。L记号的定义如下：
 
 $$
 L_n[\alpha, c] = \exp \left( (c + o(1)) (\ln n)^\alpha (\ln \ln n)^{1-\alpha} \right)
@@ -35,8 +35,8 @@ $$
 - 当 $0 < \alpha < 1$ 时：介于多项式时间和指数时间之间，称为 **次指数时间（Sub-exponential time）** 。
 
 过去整数分解算法的进化史，同时也是这个 $\alpha$ 值逐渐减小的历史。
-- **连分数法（CFRAC）与多重多项式二次筛选法（MPQS）** ：属于 $\alpha = 1/2$ 的类别，计算复杂度约为 $L_n[1/2, 1]$。
-- **普通数域筛选法（GNFS）** ：实现了 $\alpha = 1/3$，在目前已知的经典算法中，它拥有最快的 $L_n[1/3, (64/9)^{1/3}]$ 计算复杂度。
+- **连分数法（CFRAC）与多重多项式二次筛选法（MPQS）** ：属于 $\alpha = 1/2$ 的类别，计算[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)约为 $L_n[1/2, 1]$。
+- **普通数域筛选法（GNFS）** ：实现了 $\alpha = 1/3$，在目前已知的经典算法中，它拥有最快的 $L_n[1/3, (64/9)^{1/3}]$ 计算[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)。
 
 ---
 
@@ -112,7 +112,7 @@ $X^2 \equiv \phi(\gamma)^2 \equiv Y^2 \pmod n$
 
 ## 4. 是否存在超越GNFS的经典算法？
 
-迄今为止，对于一般整数的因数分解，尚未发现渐进复杂度低于 $L_n[1/3, c]$ 的经典算法。不过，为了突破理论与实践的局限，存在一些尝试与衍生算法。
+迄今为止，对于一般整数的因数分解，尚未发现渐进[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)低于 $L_n[1/3, c]$ 的经典算法。不过，为了突破理论与实践的局限，存在一些尝试与衍生算法。
 
 ### 4.1 多重数域筛选法 (MNFS: Multiple Number Field Sieve)
 
@@ -120,8 +120,8 @@ $X^2 \equiv \phi(\gamma)^2 \equiv Y^2 \pmod n$
 
 $$ f_1(x), f_{2,1}(x), f_{2,2}(x), \dots, f_{2,V}(x) $$
 
-通过利用多个代数数域，可以在每次筛选步骤中极大地提高“在任一代数数域中变光滑”的概率。Coppersmith通过这种方法成功地稍微减小了计算复杂度 $L_n[1/3, c]$ 中的常数 $c$。
-具体而言，GNFS的常数为 $c = (64/9)^{1/3} \approx 1.923$，而通过优化MNFS，理论上可以将其计算复杂度缩减至 $c \approx 1.902$ 左右。
+通过利用多个代数数域，可以在每次筛选步骤中极大地提高“在任一代数数域中变光滑”的概率。Coppersmith通过这种方法成功地稍微减小了计算[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/) $L_n[1/3, c]$ 中的常数 $c$。
+具体而言，GNFS的常数为 $c = (64/9)^{1/3} \approx 1.923$，而通过优化MNFS，理论上可以将其计算[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)缩减至 $c \approx 1.902$ 左右。
 然而，在实际应用中，管理多个数域带来的开销很大，因此尚未在实际规模的[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)模数上取得决定性的突破。
 
 ### 4.2 $L_n[1/4]$ 级别的算法可能存在吗？
@@ -129,7 +129,7 @@ $$ f_1(x), f_{2,1}(x), f_{2,2}(x), \dots, f_{2,V}(x) $$
 关于整数分解经典算法的极限，数学家们长年探讨的一个课题是：“是否存在指数 $\alpha = 1/4$ 的算法？”
 目前的GNFS及其衍生算法强烈受限于基于筛选“寻找光滑数”的框架，在这个范式内，人们普遍认为 $\alpha = 1/3$ 就是极限。从使用Dickman函数（Dickman function）分析光滑整数分布概率的结果来看，结合目前的代数数域构造方法与筛选，无论怎么优化都不可能突破 $O(L_n[1/3])$ 的壁垒。
 
-如果真的存在 $L_n[1/4]$ 或经典的纯多项式时间算法，那它必然依赖于与GNFS这种“基于光滑数”的方法截然不同、且目前人类难以想象的全新数学结构（例如，类似于针对椭圆曲线密码学的Schoof算法那样更高阶的代数几何方法等）。然而，目前还没有出现这种迹象。
+如果真的存在 $L_n[1/4]$ 或经典的纯多项式时间算法，那它必然依赖于与GNFS这种“基于光滑数”的方法截然不同、且目前人类难以想象的全新数学结构（例如，类似于针对[椭圆曲线密码学](/zh-cn/p/elliptic-curve-cryptography-math-cpp/)的Schoof算法那样更高阶的代数几何方法等）。然而，目前还没有出现这种迹象。
 
 ---
 
@@ -142,7 +142,7 @@ $$ f_1(x), f_{2,1}(x), f_{2,2}(x), \dots, f_{2,V}(x) $$
 Shor算法将素数分解问题归约为“求阶问题（Order Finding Problem）”。即对于某个整数 $a$，寻找函数 $f(x) = a^x \pmod n$ 的周期（阶） $r$ 的问题。
 在经典计算机上找到这个周期需要指数级的时间，但在量子计算机上使用 **量子相位估计（QPE: Quantum Phase Estimation）** 和 **量子傅里叶变换（QFT: Quantum Fourier Transform）** ，可以对所有状态的叠加态（Superposition）进行并行评估，从而以很高的概率提取出周期 $r$。
 
-从计算复杂度的角度来看，Shor算法的执行时间属于 **量子多项式时间** ，具体如下：
+从计算[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)的角度来看，Shor算法的执行时间属于 **量子多项式时间** ，具体如下：
 $$ O((\log n)^3) $$
 考虑到近年来优化的电路实现，据说可以将其缩减至 $O((\log n)^2 \log \log n)$。
 
@@ -156,7 +156,7 @@ graph LR
 
 ### 5.2 经典次指数时间 vs 量子多项式时间
 
-这两个复杂度类别之间的差距，在现实世界的密码安全中具有决定性的意义。
+这两个[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)类别之间的差距，在现实世界的密码安全中具有决定性的意义。
 
 例如，考虑分解[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)-2048（2048位的合数）的情况。
 - **GNFS (经典)**: 将 $n \approx 2^{2048}$ 代入 $L_n[1/3, 1.923]$，大约需要 $2^{112}$ 次运算。这是一个即使集合目前地球上所有计算资源，也需要超过宇宙寿命时间的天文学计算量。
@@ -172,7 +172,7 @@ graph LR
 
 1. **实际的改进仍在继续，但不会有渐进意义上的飞跃**: 虽然对优化多项式选择、并行化Block Wiedemann方法以及MNFS等尝试仍在继续（试图改善GNFS的常数项 $c$），但人们认为发现 $\alpha = 1/3$ 以下的经典算法的可能性微乎其微。
 2. **在经典计算机上，[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)的安全性依然非常坚固**: GNFS的计算量依然是极其庞大的，RSA-2048和RSA-4096在面对经典计算机的攻击时，未来几十年内仍将保持安全。
-3. **真正的威胁是量子算法**: 跨越计算复杂度壁垒的是基于量子力学原理的Shor算法。这也迫使世界开始向抗量子计算机密码学（PQC: Post-Quantum [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）过渡。转向即使是量子计算机也难以破解（无法在多项式时间内求解）的全新数学问题，如格密码（Lattice-based cryptography）和基于哈希的密码（Hash-based cryptography），已成为当前密码学的最前沿。
+3. **真正的威胁是量子算法**: 跨越计算[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)壁垒的是基于量子力学原理的Shor算法。这也迫使世界开始向抗量子计算机密码学（PQC: Post-Quantum [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）过渡。转向即使是量子计算机也难以破解（无法在多项式时间内求解）的全新数学问题，如[格密码](/zh-cn/p/lattice-based-cryptography-math-intuition/)（[Lattice-based cryptography](/zh-cn/p/lattice-based-cryptography-math-intuition/)）和基于哈希的密码（Hash-based cryptography），已成为当前密码学的最前沿。
 
 普通数域筛选法（GNFS）是人类挑战经典数学和算法设计极限所达到的“最高境界”之一。理解GNFS深邃的数学结构，不仅是为了学习密码破译的历史，更是一段触及计算复杂性理论和代数数论之美的知识探索之旅。在量子计算机真正实现实用化之前，GNFS无疑将继续捍卫其作为最强整数分解算法的王座。
 

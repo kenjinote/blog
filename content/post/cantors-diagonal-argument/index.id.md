@@ -169,9 +169,9 @@ $$
 
 Di sinilah Cantor menghadapi sebuah pertanyaan besar. **"Apakah ada himpunan tak terhingga yang memiliki kardinalitas di antara $\aleph_0$ dan $2^{\aleph_0}$?"** 
 
-Hipotesis yang menyatakan bahwa "tidak ada kardinalitas perantara" disebut **Hipotesis Kontinum ([Continuum Hypothesis](https://kenji.blog/id/p/continuum-hypothesis/), CH)** . Cantor mendedikasikan hidupnya untuk pembuktian ini, tetapi tidak pernah bisa menyelesaikannya.
+Hipotesis yang menyatakan bahwa "tidak ada kardinalitas perantara" disebut **[Hipotesis Kontinum](/id/p/continuum-hypothesis/) ([Continuum Hypothesis](https://kenji.blog/id/p/continuum-hypothesis/), CH)** . Cantor mendedikasikan hidupnya untuk pembuktian ini, tetapi tidak pernah bisa menyelesaikannya.
 
-Belakangan, [Kurt Gödel](https://kenji.blog/id/p/godel/) dan Paul Cohen membuktikan bahwa Hipotesis Kontinum **"tidak dapat dibuktikan maupun disangkal (independen) di bawah sistem aksioma matematika saat ini (ZFC)"** . Ini adalah salah satu penemuan paling mendalam dalam matematika abad ke-20.
+Belakangan, [Kurt Gödel](https://kenji.blog/id/p/godel/) dan Paul Cohen membuktikan bahwa [Hipotesis Kontinum](/id/p/continuum-hypothesis/) **"tidak dapat dibuktikan maupun disangkal (independen) di bawah sistem aksioma matematika saat ini (ZFC)"** . Ini adalah salah satu penemuan paling mendalam dalam matematika abad ke-20.
 
 ---
 
@@ -183,4 +183,4 @@ Argumen diagonal Cantor pada pandangan pertama mungkin terlihat seperti teka-tek
 2. Hingga pada bilangan rasional, besarannya sama dengan bilangan asli (tak terhingga terhitung).
 3. Melalui argumen menggeser elemen diagonal untuk membuat angka baru, dapat dibuktikan bahwa bilangan real lebih banyak daripada bilangan asli (tak terhingga tak terhitung).
 
-Keindahan logika yang berlawanan dengan intuisi namun mutlak inilah yang bisa dikatakan sebagai daya tarik terbesar dari ilmu matematika. Argumen diagonal kelak akan diaplikasikan pada teori-teori yang menjadi fondasi ilmu komputer dan logika matematika, seperti pembuktian masalah penghentian (Halting problem) oleh [Alan Turing](https://kenji.blog/id/p/turing/) dan teorema ketaklengkapan (Incompleteness theorem) oleh Gödel.
+Keindahan logika yang berlawanan dengan intuisi namun mutlak inilah yang bisa dikatakan sebagai daya tarik terbesar dari ilmu matematika. Argumen diagonal kelak akan diaplikasikan pada teori-teori yang menjadi fondasi ilmu komputer dan logika matematika, seperti pembuktian [masalah penghentian (Halting problem)](/id/p/halting-problem/) oleh [Alan Turing](https://kenji.blog/id/p/turing/) dan teorema ketaklengkapan (Incompleteness theorem) oleh Gödel.

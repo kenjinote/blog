@@ -16,7 +16,7 @@ tags:
 
 ## Introducción
 
-Uno de los teoremas más famosos de las matemáticas, y uno de los que cuenta con mayor número de demostraciones, es el **Teorema de Pitágoras**. Este teorema, que describe la relación entre los tres lados de un triángulo rectángulo, lleva el nombre del antiguo filósofo griego Pitágoras, aunque ya se conocía en Babilonia, China y otros lugares mucho antes de su época.
+Uno de los teoremas más famosos de las matemáticas, y uno de los que cuenta con mayor número de demostraciones, es el **Teorema de [Pitágoras](/es/p/pythagoras/)**. Este teorema, que describe la relación entre los tres lados de un triángulo rectángulo, lleva el nombre del antiguo filósofo griego [Pitágoras](/es/p/pythagoras/), aunque ya se conocía en Babilonia, China y otros lugares mucho antes de su época.
 
 La afirmación del teorema es muy simple. Cuando la longitud de la hipotenusa de un triángulo rectángulo es $c$, y las longitudes de los otros dos catetos son $a$ y $b$, se cumple la siguiente relación:
 
@@ -118,7 +118,7 @@ Multiplicando ambos lados por 2 y expandiendo se obtiene:
 
 $$ a^2 + 2ab + b^2 = 2ab + c^2 $$
 
-Al restar $2ab$ de ambos lados se deduce de forma brillante el **Teorema de Pitágoras**:
+Al restar $2ab$ de ambos lados se deduce de forma brillante el **Teorema de [Pitágoras](/es/p/pythagoras/)**:
 
 $$ a^2 + b^2 = c^2 $$
 
@@ -128,7 +128,7 @@ La demostración de Garfield, creada por alguien que era a la vez político y un
 
 ## 4. Demostración de Albert Einstein mediante análisis dimensional
 
-Se dice que Albert Einstein, el mayor físico del siglo XX, también demostró el teorema de Pitágoras a su manera durante su infancia. Su enfoque utilizó el concepto de **análisis dimensional**, un método altamente intuitivo característico de un físico.
+Se dice que Albert Einstein, el mayor físico del siglo XX, también demostró el teorema de [Pitágoras](/es/p/pythagoras/) a su manera durante su infancia. Su enfoque utilizó el concepto de **análisis dimensional**, un método altamente intuitivo característico de un físico.
 
 ### Idea del análisis dimensional
 
@@ -163,6 +163,6 @@ Esta demostración no se dedujo jugando con fórmulas, sino a partir de una **in
 
 ## Conclusión
 
-El teorema de Pitágoras no es simplemente una fórmula matemática que deba memorizarse. Es un maravilloso ejemplo de la esencia de las matemáticas, que se puede abordar desde **diversas perspectivas**, que incluyen rompecabezas geométricos, la manipulación de ecuaciones algebraicas e incluso el concepto físico de dimensiones.
+El teorema de [Pitágoras](/es/p/pythagoras/) no es simplemente una fórmula matemática que deba memorizarse. Es un maravilloso ejemplo de la esencia de las matemáticas, que se puede abordar desde **diversas perspectivas**, que incluyen rompecabezas geométricos, la manipulación de ecuaciones algebraicas e incluso el concepto físico de dimensiones.
 
 Más allá de las cuatro demostraciones presentadas aquí, existen innumerables enfoques en todo el mundo, como una demostración de Leonardo da Vinci y demostraciones que utilizan origami. Por supuesto, intente explorar nuevos métodos de demostración por su cuenta. El mundo de las matemáticas siempre está lleno de nuevos descubrimientos.

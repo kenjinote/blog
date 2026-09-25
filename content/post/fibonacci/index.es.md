@@ -148,7 +148,7 @@ Los logros de [Fibonacci](https://kenji.blog/es/p/fibonacci/) no se limitaron al
 
 ### "Liber Quadratorum" (El Libro de los Cuadrados)
 
-Escrito en 1225, este libro es un tratado avanzado sobre ecuaciones diofánticas (ecuaciones que buscan soluciones enteras). Explora el concepto de "números congruentes" y muestra profundas percepciones sobre el teorema de Pitágoras. Es muy considerado como la mayor obra maestra de la teoría de números en la Europa medieval.
+Escrito en 1225, este libro es un tratado avanzado sobre ecuaciones diofánticas (ecuaciones que buscan soluciones enteras). Explora el concepto de "números congruentes" y muestra profundas percepciones sobre el teorema de [Pitágoras](/es/p/pythagoras/). Es muy considerado como la mayor obra maestra de la teoría de números en la Europa medieval.
 
 ### "Practica Geometriae" (Geometría Práctica)
 
@@ -160,7 +160,7 @@ Los descubrimientos de [Fibonacci](https://kenji.blog/es/p/fibonacci/), que vivi
 
 ### Aplicaciones en Ciencias de la Computación
 
-En los algoritmos informáticos, la sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/) es muy útil. El algoritmo llamado "búsqueda de Fibonacci" puede buscar datos de manera más eficiente que la búsqueda binaria bajo condiciones específicas. Además, una estructura de datos conocida como "montículo de Fibonacci" es indispensable para acelerar algoritmos de la teoría de grafos como el algoritmo de [Dijkstra](https://kenji.blog/es/p/graph-theory-dijkstra-a-star/).
+En los algoritmos informáticos, la sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/) es muy útil. El algoritmo llamado "búsqueda de Fibonacci" puede buscar datos de manera más eficiente que la búsqueda binaria bajo condiciones específicas. Además, una estructura de datos conocida como "montículo de Fibonacci" es indispensable para acelerar algoritmos de la [teoría de grafos](/es/p/graph-theory-dijkstra-a-star/) como el algoritmo de [Dijkstra](https://kenji.blog/es/p/graph-theory-dijkstra-a-star/).
 
 ### Retroceso de [Fibonacci](https://kenji.blog/es/p/fibonacci/) en los Mercados Financieros
 

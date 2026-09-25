@@ -69,7 +69,7 @@ Microservices have the following light (benefits):
 
 ## 3. The "Shadow" of Microservices: Operational Challenges
 
-However, microservices are not a "silver bullet". By decentralizing the system, the "shadow" of complexities unique to distributed systems follows.
+However, microservices are not a "silver bullet". By decentralizing the system, the "shadow" of complexities unique to [distributed systems](/en/p/cap-theorem-distributed-systems-tradeoff/) follows.
 
 ### 3.1. Network Latency and Communication Complexity
 Processes that used to be in-memory function calls in a monolith change to communication over the network (HTTP/REST, gRPC, etc.). As a result, **network latency** occurs, risking a slowdown in the overall system response speed. In addition, since networks are always unstable, it is necessary to implement complex communication controls such as timeouts, retry controls, and circuit breakers.
@@ -219,7 +219,7 @@ With this implementation, simply by executing one GraphQL query called `userProf
 
 ## 7. Conclusion
 
-Microservices architecture is a powerful approach to evolving a massive system into a scalable form, but it requires facing the "shadow" challenges unique to distributed systems.
+Microservices architecture is a powerful approach to evolving a massive system into a scalable form, but it requires facing the "shadow" challenges unique to [distributed systems](/en/p/cap-theorem-distributed-systems-tradeoff/).
 
 As a means to solve these challenges and optimize communication between the client and backend, the **API Gateway** and **BFF pattern** have become indispensable. In particular, the BFF, which provides dedicated endpoints for each type of client, is an excellent architecture that frees the pace of UI evolution from backend constraints.
 

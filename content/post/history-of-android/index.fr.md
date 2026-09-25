@@ -24,7 +24,7 @@ Confrontés à des difficultés financières, ils ont été rachetés en 2005 pa
 
 ## 2. 2007, l'apparition de l'iPhone et la remise à zéro de la conception
 
-En janvier 2007, Steve Jobs a présenté le premier iPhone.
+En janvier 2007, [Steve Jobs](/fr/p/biography-steve-jobs/) a présenté le premier iPhone.
 Le prototype « Sooner », que l'équipe d'Android développait à l'époque, avait une conception ancienne avec un clavier physique similaire à celui d'un BlackBerry. En voyant l'écran tactile multipoint innovant de l'iPhone, on raconte qu'Andy Rubin, qui écoutait la présentation dans sa voiture, a réalisé : « **Ce que nous faisions est bon à jeter. Nous devons tout refaire.** »
 
 Ils ont complètement effacé l'ardoise et ont pris un virage majeur vers le développement d'un nouveau système d'exploitation appelé « Dream », optimisé pour les écrans tactiles.
@@ -48,7 +48,7 @@ En particulier, « **Android 4.0 (Ice Cream Sandwich)** », sorti en 2011, est c
 
 Parmi les fabricants ayant reçu Android gratuitement, le sud-coréen **Samsung** a connu le plus grand succès. La série « Galaxy S » a régné comme un puissant rival de l'iPhone, menant constamment les tendances matérielles avec des écrans plus grands (phablettes) et l'adoption d'écrans OLED.
 
-Cependant, il était impensable qu'Apple observe l'expansion rapide d'Android sans réagir. Feu Steve Jobs était furieux, déclarant : « Android est un plagiat de l'iPhone. Je suis prêt à déclencher une guerre thermonucléaire pour détruire ce produit », et un bourbier de procès pour violation de brevets (la guerre des brevets des smartphones) a éclaté dans le monde entier. Ce conflit a duré plusieurs années, mais s'est finalement terminé par une réconciliation entre les deux entreprises devenues trop gigantesques.
+Cependant, il était impensable qu'Apple observe l'expansion rapide d'Android sans réagir. Feu [Steve Jobs](/fr/p/biography-steve-jobs/) était furieux, déclarant : « Android est un plagiat de l'iPhone. Je suis prêt à déclencher une guerre thermonucléaire pour détruire ce produit », et un bourbier de procès pour violation de brevets (la guerre des brevets des smartphones) a éclaté dans le monde entier. Ce conflit a duré plusieurs années, mais s'est finalement terminé par une réconciliation entre les deux entreprises devenues trop gigantesques.
 
 ## 6. Résumé : Les deux géants de l'écosystème mobile
 

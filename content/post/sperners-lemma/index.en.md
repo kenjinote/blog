@@ -110,11 +110,11 @@ Therefore, it is clear that the number of doors leading to the outdoors is an **
 
 ## 5.3. Calculating Degrees Using the Handshaking Lemma
 
-This is where graph theory comes in.
+This is where [graph theory](/en/p/graph-theory-dijkstra-a-star/) comes in.
 - Vertices of the graph: Each small triangle (room) and the outdoors.
 - Edges of the graph: Doors (edges of color 1 and 2). When two rooms share a door, connect their vertices with an edge.
 
-According to the "Handshaking Lemma", a fundamental theorem in graph theory, the sum of the "degrees" (number of connected edges) of all vertices must always be an even number (twice the number of edges).
+According to the "Handshaking Lemma", a fundamental theorem in [graph theory](/en/p/graph-theory-dijkstra-a-star/), the sum of the "degrees" (number of connected edges) of all vertices must always be an even number (twice the number of edges).
 
 $$ \sum_{v \in V} \text{deg}(v) = 2|E| $$
 

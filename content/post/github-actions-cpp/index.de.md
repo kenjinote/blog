@@ -22,7 +22,7 @@ Bei der Entwicklung von Webanwendungen oder mit Skriptsprachen reicht es oft aus
 
 Bei der Einführung von CI/CD in einem C++-Projekt treten hauptsächlich folgende Herausforderungen auf:
 
-1. **Plattformvielfalt**: Verschiedene Betriebssysteme wie Windows, Linux und macOS haben unterschiedliche APIs (Windows API, POSIX usw.). Es ist an der Tagesordnung, dass Code, der in der lokalen Umgebung eines Entwicklers (z. B. macOS) funktioniert, unter Linux oder Windows zu Kompilierungsfehlern führt.
+1. **Plattformvielfalt**: Verschiedene Betriebssysteme wie Windows, Linux und macOS haben unterschiedliche APIs ([Windows API](/de/p/modern-cpp-win32-api-safe-handling/), POSIX usw.). Es ist an der Tagesordnung, dass Code, der in der lokalen Umgebung eines Entwicklers (z. B. macOS) funktioniert, unter Linux oder Windows zu Kompilierungsfehlern führt.
 2. **Unterschiede bei den Compilern**: Wichtige Compiler wie Microsoft Visual C++ (MSVC), die GNU Compiler Collection (GCC) und Clang unterscheiden sich in ihrem Implementierungsgrad der C++-Standards (C++17, C++20, C++23), deren Interpretation und der Strenge der Warnungen.
 3. **Build-Zeiten**: Bei großen C++-Projekten ist es nicht ungewöhnlich, dass Builds von einigen zehn Minuten bis zu mehreren Stunden dauern. CI-Umgebungen erfordern Caching-Strategien und Parallelisierung, um effizient mit begrenzten Rechenressourcen zu bauen.
 4. **Verwaltung von Abhängigkeiten**: In C++ gibt es keinen absoluten Standard-Paketmanager wie npm oder pip. Es ist notwendig, Bibliotheken in der CI-Umgebung jedes Mal korrekt aufzulösen, z. B. durch die Verwendung von vcpkg, Conan oder CMakes `FetchContent`.

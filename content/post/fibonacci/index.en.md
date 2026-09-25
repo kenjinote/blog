@@ -152,7 +152,7 @@ Written in 1225, this book is an advanced treatise on Diophantine equations (equ
 
 ### "Practica Geometriae" (Practical Geometry)
 
-Authored in 1220, this book details surveying and geometry. It provided rigorous methods for calculating area and volume, and practical applications of the principles of ancient Greek [Euclide](https://kenji.blog/en/p/euclid/)an geometry, making it a valuable resource for engineers and surveyors of the time.
+Authored in 1220, this book details surveying and geometry. It provided rigorous methods for calculating area and volume, and practical applications of the principles of ancient Greek [Euclide](https://kenji.blog/en/p/euclid/)an geometry, making it a valuable resource [for engineers](/en/p/prompt-engineering-for-engineers/) and surveyors of the time.
 
 ## Modern Society and [Fibonacci](https://kenji.blog/en/p/fibonacci/)'s Legacy
 
@@ -160,7 +160,7 @@ The discoveries of [Fibonacci](https://kenji.blog/en/p/fibonacci/), who lived ab
 
 ### Applications in Computer Science
 
-In computer algorithms, the [Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence is highly useful. The algorithm called "Fibonacci search" can search data more efficiently than binary search under specific conditions. Additionally, a data structure known as a "Fibonacci heap" is indispensable for accelerating graph theory algorithms like [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)'s algorithm.
+In computer algorithms, the [Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence is highly useful. The algorithm called "Fibonacci search" can search data more efficiently than binary search under specific conditions. Additionally, a data structure known as a "Fibonacci heap" is indispensable for accelerating [graph theory](/en/p/graph-theory-dijkstra-a-star/) algorithms like [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)'s algorithm.
 
 ### [Fibonacci](https://kenji.blog/en/p/fibonacci/) Retracement in Financial Markets
 

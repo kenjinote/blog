@@ -322,7 +322,7 @@ print("Model merged and saved successfully!")
 
 عند النشر في بيئة محلية، ولتحقيق أقصى قدر من سرعة الاستنتاج (الرموز في الثانية - Tokens per second)، يوصى بشدة باستخدام **vLLM** أو **TGI (Text Generation Inference)** بدلاً من خط الأنابيب القياسي (`pipeline`) الخاص بـ Hugging Face. يستخدم vLLM تقنية PagedAttention لمنع تجزئة ذاكرة GPU، مما يحسن من قدرة معالجة الطلبات المتزامنة بشكل كبير.
 
-يوضح مخطط Mermaid أدناه مسار العمل ([Pipeline](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/)) من التدريب إلى نشر خادم الاستنتاج.
+يوضح مخطط Mermaid أدناه [مسار](/ar/p/windows-%E3%81%A7%D9%85%D8%B3%D8%A7%D8%B1%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%D9%85%D9%84%D9%81-%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/) العمل ([Pipeline](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/)) من التدريب إلى نشر خادم الاستنتاج.
 
 ```mermaid
 graph TD
@@ -335,7 +335,7 @@ graph TD
     G --> H["نقطة نهاية API / واجهة مستخدم (مثال: روبوت دردشة)"]
 ```
 
-يمكن إكمال بدء تشغيل خادم API باستخدام vLLM بأمر واحد فقط:
+يمكن إكمال بدء تشغيل خادم [API](/ar/p/chatgpt-gemini-claude-api-comparison/) باستخدام vLLM بأمر واحد فقط:
 
 ```bash
 python -m vllm.entrypoints.openai.api_server \
@@ -357,5 +357,5 @@ python -m vllm.entrypoints.openai.api_server \
 - من خلال الاستفادة من **Flash Attention 2** و **Gradient Checkpointing** ، قمنا بتحسين وقت التدريب واستهلاك VRAM إلى أقصى حد.
 - من خلال النشر باستخدام **vLLM** ، حققنا إنتاجية عالية حتى في بيئة الإنتاج.
 
-لا يحافظ تشغيل LLM المحلي في بيئة محلية على سرية البيانات فحسب، بل يعمل أيضاً كأقوى سلاح لبناء ذكاء اصطناعي متخصص في مجالات معينة (مثل الشؤون القانونية والطبية واللوائح الداخلية) بتكلفة منخفضة. نأمل أن تستخدم هذا الدليل كمرجع لتدريب نموذج TinyLLaMA الخاص بشركتك.
+لا يحافظ تشغيل [LLM](/ar/p/local-llm-windows-2026/) المحلي في بيئة محلية على سرية البيانات فحسب، بل يعمل أيضاً كأقوى سلاح لبناء ذكاء اصطناعي متخصص في مجالات معينة (مثل الشؤون القانونية والطبية واللوائح الداخلية) بتكلفة منخفضة. نأمل أن تستخدم هذا الدليل كمرجع لتدريب نموذج TinyLLaMA الخاص بشركتك.
 

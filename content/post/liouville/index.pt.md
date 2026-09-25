@@ -18,7 +18,7 @@ tags:
 
 ## Introdução
 
-Na história da matemática, o século XIX foi um período crucial em que a análise e a álgebra se desenvolveram até às suas formas modernas. No centro deste movimento estava o matemático francês **Joseph [Liouville](https://kenji.blog/pt/p/liouville/)** (1809–1882). Ele estabeleceu teoremas fundamentais em análise complexa e foi a primeira pessoa na história humana a provar concretamente a existência de "números transcendentes". Ele também é bem conhecido como o benfeitor que decifrou e publicou os desafiadores manuscritos de Évariste Galois. Neste artigo, aprofundaremos a vida turbulenta de [Liouville](https://kenji.blog/pt/p/liouville/) e as suas numerosas **conquistas matemáticas**.
+Na história da matemática, o século XIX foi um período crucial em que a análise e a álgebra se desenvolveram até às suas formas modernas. No centro deste movimento estava o matemático francês **Joseph [Liouville](https://kenji.blog/pt/p/liouville/)** (1809–1882). Ele estabeleceu teoremas fundamentais em análise complexa e foi a primeira pessoa na história humana a provar concretamente a existência de "números transcendentes". Ele também é bem conhecido como o benfeitor que decifrou e publicou os desafiadores manuscritos de [Évariste Galois](/pt/p/galois/). Neste artigo, aprofundaremos a vida turbulenta de [Liouville](https://kenji.blog/pt/p/liouville/) e as suas numerosas **conquistas matemáticas**.
 
 ## Primeiros Anos e Educação
 
@@ -28,9 +28,9 @@ Em 1825, ingressou na prestigiada **École Polytechnique**, onde aprendeu com os
 
 ## O Resgate dos Manuscritos de [Galois](https://kenji.blog/pt/p/galois/)
 
-Ao discutir [Liouville](https://kenji.blog/pt/p/liouville/), não se pode omitir a história de como ele salvou os manuscritos do jovem génio **Évariste Galois**. [Galois](https://kenji.blog/pt/p/galois/) perdeu a vida num duelo com a tenra idade de 20 anos, mas imediatamente antes da sua morte, confiou as suas descobertas matemáticas ao seu amigo Auguste Chevalier.
+Ao discutir [Liouville](https://kenji.blog/pt/p/liouville/), não se pode omitir a história de como ele salvou os manuscritos do jovem génio **[Évariste Galois](/pt/p/galois/)**. [Galois](https://kenji.blog/pt/p/galois/) perdeu a vida num duelo com a tenra idade de 20 anos, mas imediatamente antes da sua morte, confiou as suas descobertas matemáticas ao seu amigo Auguste Chevalier.
 
-Foi [Liouville](https://kenji.blog/pt/p/liouville/) quem lançou luz sobre a teoria de Galois, que tinha sido ignorada e incompreendida durante muito tempo. Em 1843, estudou exaustivamente os artigos de Galois e percebeu que continham descobertas profundamente importantes no que diz respeito à resolubilidade de equações algébricas. Em 1846, Liouville publicou os artigos de [Galois](https://kenji.blog/pt/p/galois/) na revista académica que ele próprio fundara, o *Journal de Mathématiques Pures et Appliquées*, apresentando-os assim ao mundo.
+Foi [Liouville](https://kenji.blog/pt/p/liouville/) quem lançou luz sobre a [teoria de Galois](/pt/p/galois-theory/), que tinha sido ignorada e incompreendida durante muito tempo. Em 1843, estudou exaustivamente os artigos de Galois e percebeu que continham descobertas profundamente importantes no que diz respeito à resolubilidade de equações algébricas. Em 1846, Liouville publicou os artigos de [Galois](https://kenji.blog/pt/p/galois/) na revista académica que ele próprio fundara, o *Journal de Mathématiques Pures et Appliquées*, apresentando-os assim ao mundo.
 
 ```mermaid
 flowchart TD

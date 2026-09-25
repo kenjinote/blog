@@ -68,7 +68,7 @@ In 2008, a new history of P2P began with a paper published by a person calling t
 It was "**Bitcoin**".
 
 While traditional P2P systems were used for "file sharing" and "distributed computing," Bitcoin used the P2P network for the "**distribution of trust**".
-Even without a central bank or administrator, the countless nodes participating in the P2P network monitor each other's transaction records (ledgers), and by combining cryptographic technology (hash functions and public key cryptography) with a consensus algorithm (Proof of Work), they constructed a "distributed system where data tampering is practically impossible = **blockchain**".
+Even without a central bank or administrator, the countless nodes participating in the P2P network monitor each other's transaction records (ledgers), and by combining cryptographic technology (hash functions and public key cryptography) with a [consensus algorithm](/en/p/byzantine-generals-problem-consensus/) (Proof of Work), they constructed a "distributed system where data tampering is practically impossible = **[blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/)**".
 
 This philosophy of an "autonomous decentralized network that does not rely on a specific administrator" connects directly to the current "Web3 (Decentralized Web)" movement.
 
@@ -76,8 +76,8 @@ This philosophy of an "autonomous decentralized network that does not rely on a 
 
 P2P is a wonderful technology, but challenges also exist.
 
-One is the "**free rider**" problem. If there are many users who only receive data but do not provide it themselves, the network will decline. To solve this problem, mechanisms that grant the right to download preferentially based on the amount provided, and mechanisms that provide financial incentives (tokens) like blockchain, are being researched.
+One is the "**free rider**" problem. If there are many users who only receive data but do not provide it themselves, the network will decline. To solve this problem, mechanisms that grant the right to download preferentially based on the amount provided, and mechanisms that provide financial incentives (tokens) like [blockchain](/en/p/blockchain-technology-smart-contract-distributed-ledger/), are being researched.
 
 Another is "**governance and security**". Because there is no central administrator, if a malicious node scatters fake data or viruses, it is difficult to block it immediately.
 
-P2P is not just a technology for "file-sharing software." It is the ultimate form of "distributed systems" in computer science and an architecture with a strong philosophy of not concentrating power in a single point. P2P technology will continue to evolve in the future as a foundation for communication between IoT devices and next-generation decentralized internet infrastructure.
+P2P is not just a technology for "file-sharing software." It is the ultimate form of "[distributed systems](/en/p/cap-theorem-distributed-systems-tradeoff/)" in computer science and an architecture with a strong philosophy of not concentrating power in a single point. P2P technology will continue to evolve in the future as a foundation for communication between IoT devices and next-generation decentralized internet infrastructure.

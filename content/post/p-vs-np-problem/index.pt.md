@@ -11,7 +11,7 @@ tags: ["complexity-theory", "p-vs-np", "np-complete", "millennium-prize", "pytho
 
 Na ciência da computação, e na matemática moderna, existe um problema não resolvido que é considerado o mais famoso e o mais importante de todos. É o **problema P vs NP**.
 
-Em 2000, o Clay Mathematics Institute ofereceu um prêmio de 1 milhão de dólares para cada um de 7 problemas matemáticos não resolvidos. Eles são chamados de **Problemas do Prêmio Millennium**. Alguns, como a Conjectura de Poincaré, já foram resolvidos, mas o **problema P vs NP** ainda não apresenta nem mesmo uma pista completa para a sua resolução.
+Em 2000, o Clay Mathematics Institute ofereceu um prêmio de 1 milhão de dólares para cada um de 7 problemas matemáticos não resolvidos. Eles são chamados de **Problemas do Prêmio Millennium**. Alguns, como [a Conjectura de Poincaré](/pt/p/poincare-conjecture/), já foram resolvidos, mas o **problema P vs NP** ainda não apresenta nem mesmo uma pista completa para a sua resolução.
 
 Neste artigo, iremos explorar detalhadamente a visão geral do **problema P vs NP**, desde os fundamentos das classes de complexidade (P, NP, NP-completo e NP-difícil), passando pelo seu significado prático na programação, até ao impacto mundial caso este venha a ser resolvido.
 
@@ -282,7 +282,7 @@ Quando o número de cidades excede $N=20$, a solução exata (por força bruta) 
 
 ## 7. E se P = NP, o que aconteceria ao mundo?
 
-Atualmente, todos os sistemas criptográficos no mundo (SSL/TLS usado em compras online ou blockchain, como Bitcoin) dependem da assimetria de que **"leva uma quantidade absurda de tempo para encontrar uma solução, mas a sua verificação é instantânea"**.
+Atualmente, todos os sistemas criptográficos no mundo (SSL/TLS usado em compras online ou [blockchain](/pt/p/blockchain-technology-smart-contract-distributed-ledger/), como Bitcoin) dependem da assimetria de que **"leva uma quantidade absurda de tempo para encontrar uma solução, mas a sua verificação é instantânea"**.
 
 A fatoração em números primos, que está na base da criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/), é um destes exemplos.
 Suponhamos que alguém prove $P = NP$ e construa um algoritmo mágico (prova construtiva) para resolver problemas NP num tempo polinomial. Isso provocaria a seguinte **mudança de paradigma na sociedade humana**.
