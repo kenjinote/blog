@@ -8,7 +8,7 @@ tags: ["python", "zen-of-python", "programming-philosophy"]
 image: "eyecatch.jpg"
 ---
 
-程式語言不僅僅是一連串給電腦的指令。它是開發者表達思考的媒介，也是整個團隊共享的共通語言。在眾多程式語言中，Python 擁有非常獨特的「哲學」。那就是**「The Zen of Python（Python 之禪）」**。
+程式語言不僅僅是一連串給電腦的指令。它是開發者表達思考的媒介，也是整個團隊共享的共通語言。在眾多程式語言中，Python 擁有非常獨特的「哲學」。那就是<strong>「The Zen of Python（Python 之禪）」</strong>。
 
 本文將針對作為 Python 設計思想核心的「Zen（禪）」，從其誕生的背景、每句格言所代表的深層哲學，到我們在日常軟體開發中該如何應用這種思想，進行極度詳細的深入探討。
 

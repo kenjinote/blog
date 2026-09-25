@@ -16,11 +16,11 @@ image: "eyecatch.jpg"
 
 我們日常撰寫的「定義類別、建立實體，並使用點記號來呼叫方法」的風格，確實是特定語言（例如 C++ 或 Java）所建構的一種物件導向形式。但那只不過是物件導向這個廣大概念的一小部分，或者只是一種特定的解釋而已。
 
-在本文中，我們將回顧物件導向一詞誕生初期的歷史，以及 Alan Kay 真正想要實現的願景。其關鍵字就是**「訊息傳遞（Messaging）」**。透過正確理解訊息傳遞的概念，您的系統設計視野將大幅擴展，並能獲得通往現代[分散式系統](/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)設計（如[微服務架構](/zh-tw/p/microservices-architecture-bff-api-gateway/)和 Actor 模型）的深刻洞察。
+在本文中，我們將回顧物件導向一詞誕生初期的歷史，以及 Alan Kay 真正想要實現的願景。其關鍵字就是<strong>「訊息傳遞（Messaging）」</strong>。透過正確理解訊息傳遞的概念，您的系統設計視野將大幅擴展，並能獲得通往現代[分散式系統](/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)設計（如[微服務架構](/zh-tw/p/microservices-architecture-bff-api-gateway/)和 Actor 模型）的深刻洞察。
 
 ## 2. Alan Kay 的願景：來自生物學的啟發
 
-發明「物件導向」一詞的 Alan Kay，原本學習的是數學與生物學。當他在摸索新的軟體建構典範時，強烈啟發他的便是**「生物細胞（Cell）」**的機制。
+發明「物件導向」一詞的 Alan Kay，原本學習的是數學與生物學。當他在摸索新的軟體建構典範時，強烈啟發他的便是<strong>「生物細胞（Cell）」</strong>的機制。
 
 人體是由數兆個細胞所組成的。每個細胞的行為都像是一個獨立的生命體，其內部狀態（如 DNA 和蛋白質）不會被外部直接操作。細胞之間透過交換化學物質或電子訊號等「訊息」，以整體維持複雜且高度的生命活動。
 
@@ -46,7 +46,7 @@ Receiver obj = new Receiver();
 obj.doSomething();
 ```
 
-乍看之下，這似乎是在「對 `obj` 發送一個名為 `doSomething` 的訊息」。然而，從編譯器或執行環境的層次來看，這只不過是**「函式呼叫（Function Call）」的語法糖**罷了。呼叫者（Caller）知道被呼叫者（Callee）的記憶體位址，並直接跳躍到那裡執行處理。如果 `doSomething` 這個方法不存在，就會發生編譯錯誤（在靜態型別語言的情況下）或執行時期錯誤。
+乍看之下，這似乎是在「對 `obj` 發送一個名為 `doSomething` 的訊息」。然而，從編譯器或執行環境的層次來看，這只不過是<strong>「函式呼叫（Function Call）」的語法糖</strong>罷了。呼叫者（Caller）知道被呼叫者（Callee）的記憶體位址，並直接跳躍到那裡執行處理。如果 `doSomething` 這個方法不存在，就會發生編譯錯誤（在靜態型別語言的情況下）或執行時期錯誤。
 
 另一方面，真正意義上的「訊息傳遞（Message Passing）」在本質上與此不同。在 Alan Kay 參與設計的語言「Smalltalk」中，物件之間的互動全部被模型化為訊息的發送。
 
@@ -96,9 +96,9 @@ flowchart TD
 
 在現代，最純粹地體現了 Alan Kay「訊息傳遞」願景的架構或典範是什麼呢？
 
-其中之一就是**「Actor 模型 Actor Model」**。由 Carl Hewitt 等人所提倡的這個運算模型，成為了 Erlang、Elixir 以及 Scala 的 Akka 等技術的基礎。
+其中之一就是<strong>「Actor 模型 Actor Model」</strong>。由 Carl Hewitt 等人所提倡的這個運算模型，成為了 Erlang、Elixir 以及 Scala 的 Akka 等技術的基礎。
 
-在 Actor 模型中，運算的基本單位稱為「Actor」。Actor 擁有完全獨立的狀態與行為，與他人溝通的唯一手段就是**「非同步訊息的發送」**。這與 Alan Kay 的細胞隱喻驚人地一致。
+在 Actor 模型中，運算的基本單位稱為「Actor」。Actor 擁有完全獨立的狀態與行為，與他人溝通的唯一手段就是<strong>「非同步訊息的發送」</strong>。這與 Alan Kay 的細胞隱喻驚人地一致。
 
 ```mermaid
 flowchart LR
@@ -124,7 +124,7 @@ Alan Kay 夢想中「散佈在網路上不同節點的物件之間互相發送�
 
 「物件導向」這個詞包含的意義實在太多了。類別、繼承、介面、多型……毫無疑問，這些都是現代開發中非常有用的工具。
 
-但是，為了管理系統的[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)，並進行靈活且可擴展的設計，我們必須回想起 Alan Kay 原本意圖的**「訊息傳遞」**這個核心。
+但是，為了管理系統的[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)，並進行靈活且可擴展的設計，我們必須回想起 Alan Kay 原本意圖的<strong>「訊息傳遞」</strong>這個核心。
 
 1. **不要隨意公開資料與行為**（守護細胞壁）。
 2. **不只是方法呼叫，而是作為「請求」發送訊息**（尊重自律性）。

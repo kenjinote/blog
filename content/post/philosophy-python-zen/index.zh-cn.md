@@ -8,7 +8,7 @@ tags: ["python", "zen-of-python", "programming-philosophy"]
 image: "eyecatch.jpg"
 ---
 
-编程语言不仅仅是给计算机的一系列命令的罗列。它是表达开发者思想的媒介，也是整个团队共享的通用语言。在众多的编程语言中，Python拥有非常独特的“哲学”。那就是**“The Zen of Python（Python之禅）”**。
+编程语言不仅仅是给计算机的一系列命令的罗列。它是表达开发者思想的媒介，也是整个团队共享的通用语言。在众多的编程语言中，Python拥有非常独特的“哲学”。那就是<strong>“The Zen of Python（Python之禅）”</strong>。
 
 在本文中，我们将极其详细地深入探讨构成Python设计思想根基的这个“禅（Zen）”，从其诞生的背景，到每句格言所意味着的深刻哲学，以及我们在日常的软件开发中应该如何应用这一思想。
 
@@ -30,7 +30,7 @@ import this
 
 The Zen of Python是由长期参与Python开发的核心开发者Tim Peters编写的。Tim将Python创始人Guido van Rossum在设计中的“默契”和“直觉”进行了语言化，使其成为能够与社区共享的体系化内容。
 
-这后来作为**PEP 20 (Python Enhancement Proposal 20)**被正式文档化。在对Python进行功能添加或更改时，这个PEP 20始终充当着必须回归的原点。
+这后来作为<strong>PEP 20 (Python Enhancement Proposal 20)</strong>被正式文档化。在对Python进行功能添加或更改时，这个PEP 20始终充当着必须回归的原点。
 
 有趣的是，尽管The Zen of Python作为“19句格言”而闻名，但Tim曾表示“总共有20句，但最后一句是留给Guido来写的”。那最后一句至今仍保持空白，似乎体现了一种“留白之美”。
 

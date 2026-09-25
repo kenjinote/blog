@@ -16,11 +16,11 @@ image: "eyecatch.jpg"
 
 我们每天都在写的“定义类、创建实例、通过点表示法调用方法”的风格，确实是特定语言（比如 C++ 和 Java）所构建的面向对象的一种形式。但这仅仅是面向对象这个广阔概念中的冰山一角，或者说只是某一种特定的诠释。
 
-在这篇文章中，我们将回顾“面向对象”一词诞生初期的历史，并回归到艾伦·凯真正想要实现的愿景。其中的关键词就是**“消息传递（Messaging）”**。只要正确理解消息传递的概念，你的系统设计视野将会大大拓宽，从而获得与[微服务架构](/zh-cn/p/microservices-architecture-bff-api-gateway/)、Actor 模型等现代[分布式系统](/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)设计相通的深刻洞察。
+在这篇文章中，我们将回顾“面向对象”一词诞生初期的历史，并回归到艾伦·凯真正想要实现的愿景。其中的关键词就是<strong>“消息传递（Messaging）”</strong>。只要正确理解消息传递的概念，你的系统设计视野将会大大拓宽，从而获得与[微服务架构](/zh-cn/p/microservices-architecture-bff-api-gateway/)、Actor 模型等现代[分布式系统](/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)设计相通的深刻洞察。
 
 ## 2. 艾伦·凯的愿景：来自生物学的灵感
 
-发明了“面向对象”一词的艾伦·凯，原本学习的是数学和生物学。当他在探索一种全新的软件构建范式时，他从**“生物细胞（Cell）”**的机制中获得了强烈的灵感。
+发明了“面向对象”一词的艾伦·凯，原本学习的是数学和生物学。当他在探索一种全新的软件构建范式时，他从<strong>“生物细胞（Cell）”</strong>的机制中获得了强烈的灵感。
 
 人体由数万亿个细胞组成。每个细胞都像一个独立的生命体一样运作，其内部状态（如 DNA 和蛋白质等）不会被外部直接操作。细胞之间通过传递化学物质和电信号等“消息”，作为一个整体来维持复杂而高级的生命活动。
 
@@ -46,7 +46,7 @@ Receiver obj = new Receiver();
 obj.doSomething();
 ```
 
-乍看之下，这似乎是“在向 `obj` 发送 `doSomething` 的消息”。但是，在编译器或运行时的层面上，这只不过是**“函数调用（Function Call）”的语法糖**罢了。调用者（Caller）知道被调用者（Callee）的内存地址，并直接跳转到那里执行处理。如果 `doSomething` 方法不存在，就会发生编译错误（在静态类型语言中）或运行时错误。
+乍看之下，这似乎是“在向 `obj` 发送 `doSomething` 的消息”。但是，在编译器或运行时的层面上，这只不过是<strong>“函数调用（Function Call）”的语法糖</strong>罢了。调用者（Caller）知道被调用者（Callee）的内存地址，并直接跳转到那里执行处理。如果 `doSomething` 方法不存在，就会发生编译错误（在静态类型语言中）或运行时错误。
 
 另一方面，真正意义上的“消息传递（Message Passing）”在本质上与此完全不同。在艾伦·凯参与设计的语言“Smalltalk”中，对象之间的所有交互都被建模为消息的发送。
 
@@ -96,9 +96,9 @@ flowchart TD
 
 在现代，能够以最纯粹的形式体现艾伦·凯“消息传递”愿景的架构或范式是什么呢？
 
-其中之一就是**“Actor 模型（Actor Model）”**。由 Carl Hewitt 等人提出的这种计算模型，正是 Erlang、Elixir 以及 Scala 的 Akka 等技术的基础。
+其中之一就是<strong>“Actor 模型（Actor Model）”</strong>。由 Carl Hewitt 等人提出的这种计算模型，正是 Erlang、Elixir 以及 Scala 的 Akka 等技术的基础。
 
-在 Actor 模型中，计算的基本单位被称为“Actor”。Actor 拥有完全独立的状态和行为，与其他对象交流的唯一手段就是**“发送异步消息”**。这令人惊讶地与艾伦·凯的细胞隐喻高度一致。
+在 Actor 模型中，计算的基本单位被称为“Actor”。Actor 拥有完全独立的状态和行为，与其他对象交流的唯一手段就是<strong>“发送异步消息”</strong>。这令人惊讶地与艾伦·凯的细胞隐喻高度一致。
 
 ```mermaid
 flowchart LR
