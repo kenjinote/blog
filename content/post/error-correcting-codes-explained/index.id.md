@@ -1,6 +1,6 @@
 ---
-title: "誤り訂正符号の仕組み：傷だらけのCDからQRコードまで"
-description: "ハミング符号やリード・ソロモン符号など、デジタルデータを守る誤り訂正符号の数学的原理と情報理論について深く解説します。"
+title: "Cara Kerja Kode Koreksi Kesalahan: Dari CD Tergores hingga Kode QR"
+description: "Penjelasan mendalam tentang prinsip matematika dan teori informasi dari kode koreksi kesalahan yang melindungi data digital, seperti kode Hamming dan kode Reed-Solomon."
 date: 2026-09-25T10:38:30+09:00
 slug: error-correcting-codes-explained
 categories: ["mathematics", "computer-science"]
@@ -8,67 +8,67 @@ tags: ["math", "error-correction", "algorithm", "science"]
 image: eyecatch.jpg
 ---
 
-# 誤り訂正符号とは何か？
+# Apa itu Kode Koreksi Kesalahan?
 
-デジタル社会において、データは常にノイズの脅威に晒されています。CDについた傷、宇宙空間から送信される探査機のデータ、あるいは私たちが日常的にスキャンしているQRコード。これらのデータが少しの欠損やノイズによって完全に壊れてしまわないのは、「誤り訂正符号 (Error-Correcting Codes, ECC)」という強力な数学的メカニズムが存在するからです。
+Dalam masyarakat digital, data selalu terancam oleh gangguan (noise). Goresan pada CD, data wahana antariksa yang dikirim dari luar angkasa, atau kode QR yang biasa kita pindai setiap hari. Data-data ini tidak hancur sepenuhnya oleh sedikit kehilangan atau gangguan berkat adanya mekanisme matematika kuat yang disebut "Kode Koreksi Kesalahan (Error-Correcting Codes, ECC)".
 
-この記事では、情報理論の父クロード・シャノンが提唱した概念から始まり、パリティチェックの基礎、ハミング符号の行列表現、そしてガロア体を駆使したリード・ソロモン符号まで、その仕組みを詳細に解き明かします。
+Artikel ini akan mengungkap secara rinci cara kerjanya, mulai dari konsep yang digagas oleh bapak teori informasi Claude Shannon, dasar-dasar pemeriksaan paritas, representasi matriks kode Hamming, hingga kode Reed-Solomon yang memanfaatkan lapangan Galois.
 
-## 1. シャノンの情報理論と通信路符号化定理
+## 1. Teori Informasi Shannon dan Teorema Pengkodean Saluran
 
-1948年、クロード・シャノンは論文 "A Mathematical Theory of Communication" を発表し、情報理論という全く新しい分野を打ち立てました。シャノンが証明した最も驚くべき定理の一つが「通信路符号化定理 (Noisy-channel coding theorem)」です。
+Pada tahun 1948, Claude Shannon menerbitkan makalah "A Mathematical Theory of Communication" dan membangun bidang yang sama sekali baru yaitu teori informasi. Salah satu teorema paling menakjubkan yang dibuktikan Shannon adalah "Teorema pengkodean saluran berderau (Noisy-channel coding theorem)".
 
-シャノンは、どのようなノイズのある通信路であっても、その通信路の「通信路容量 (Channel Capacity)」$C$を下回る通信速度であれば、情報を実質的にエラーなしで送ることができると数学的に証明しました。これは、エラーを減らすために単に送信電力を上げたり、何度も同じデータを送る（繰り返し符号）必要はなく、「賢い符号化」を行えばよいということを意味します。
+Shannon secara matematis membuktikan bahwa, apa pun saluran komunikasi yang berderau, selama kecepatan komunikasi berada di bawah "Kapasitas Saluran (Channel Capacity)" $C$ dari saluran tersebut, informasi dapat dikirim secara praktis tanpa kesalahan. Ini berarti bahwa untuk mengurangi kesalahan, kita tidak perlu sekadar meningkatkan daya transmisi atau mengirim data yang sama berkali-kali (kode berulang), melainkan cukup melakukan "pengkodean cerdas".
 
 ```mermaid
 graph TD
-    A["送信者 (Source)"] -- "メッセージ (Message)" --> B["エンコーダ (Encoder)"]
-    B -- "符号語 (Codeword)" --> C["ノイズのある通信路 (Noisy Channel)"]
-    C -- "受信語 (Received word)" --> D["デコーダ (Decoder)"]
-    D -- "復元されたメッセージ (Recovered Message)" --> E["受信者 (Destination)"]
+    A["Pengirim (Source)"] -- "Pesan (Message)" --> B["Enkoder (Encoder)"]
+    B -- "Kata sandi (Codeword)" --> C["Saluran Berderau (Noisy Channel)"]
+    C -- "Kata yang diterima (Received word)" --> D["Dekoder (Decoder)"]
+    D -- "Pesan yang dipulihkan (Recovered Message)" --> E["Penerima (Destination)"]
 ```
 
-## 2. 最もシンプルなエラー検出：パリティチェック
+## 2. Deteksi Kesalahan Paling Sederhana: Pemeriksaan Paritas
 
-誤りを見つける最も単純な方法は「パリティチェック」です。データビットの最後に1ビットの「パリティビット」を追加し、全体の「1」の数が常に偶数（偶数パリティ）または奇数（奇数パリティ）になるように調整します。
+Cara paling sederhana untuk menemukan kesalahan adalah "Pemeriksaan Paritas (Parity Check)". Satu "bit paritas" ditambahkan di akhir bit data, dan disesuaikan sehingga jumlah total angka "1" selalu genap (paritas genap) atau ganjil (paritas ganjil).
 
-例えば、データ `1011` を送る場合、1の数は3つです。偶数パリティを使用する場合、パリティビットとして `1` を追加し、送信データは `10111` となります。受信側で1の数が奇数になっていれば、通信中にエラーが起きたことがわかります。
+Misalnya, saat mengirim data `1011`, jumlah angka 1 ada tiga. Jika menggunakan paritas genap, `1` ditambahkan sebagai bit paritas, dan data yang dikirim menjadi `10111`. Jika jumlah angka 1 menjadi ganjil di sisi penerima, maka diketahui bahwa kesalahan telah terjadi selama komunikasi.
 
-しかし、パリティチェックには致命的な弱点があります。
-1. **エラーを検出できるだけで、訂正はできない**（どのビットが反転したかわからない）。
-2. **2ビットのエラーが同時に起こると検出できない**（偶奇が元に戻ってしまうため）。
+Namun, pemeriksaan paritas memiliki kelemahan fatal.
+1. **Hanya dapat mendeteksi kesalahan, tetapi tidak dapat memperbaikinya** (tidak diketahui bit mana yang terbalik).
+2. **Tidak dapat dideteksi jika kesalahan 2 bit terjadi bersamaan** (karena genap/ganjilnya kembali seperti semula).
 
-この限界を突破したのが、リチャード・ハミングが考案した「ハミング符号」です。
+Batasan ini berhasil ditembus oleh "Kode Hamming" yang diciptakan oleh Richard Hamming.
 
-## 3. ハミング符号：エラーの場所を特定する
+## 3. Kode Hamming: Menentukan Lokasi Kesalahan
 
-ハミング符号は、複数のパリティビットを巧みに組み合わせることで、1ビットのエラーを検出し、かつ自動的に訂正することができる画期的な符号です。代表的なものに、4ビットのデータに3ビットのパリティを付加する「ハミング(7,4)符号」があります。
+Kode Hamming adalah kode revolusioner yang dapat mendeteksi kesalahan 1 bit dan memperbaikinya secara otomatis dengan menggabungkan beberapa bit paritas secara cerdik. Salah satu contoh yang paling terkenal adalah "Kode Hamming(7,4)", yang menambahkan 3 bit paritas ke 4 bit data.
 
-### ハミング(7,4)符号の行列表現
+### Representasi Matriks Kode Hamming(7,4)
 
-ハミング符号は、線形代数の強力なツールである「生成行列 (Generator Matrix) $G$」と「パリティ検査行列 (Parity-Check Matrix) $H$」を用いて定義されます。
+Kode Hamming didefinisikan menggunakan alat yang kuat dari aljabar linear: "Matriks Generator (Generator Matrix) $G$" dan "Matriks Pemeriksaan Paritas (Parity-Check Matrix) $H$".
 
-データベクトルを $d = (d_1, d_2, d_3, d_4)$ とします。
-生成行列 $G$ は次のように定義されます（標準形）。
+Misalkan vektor data adalah $d = (d_1, d_2, d_3, d_4)$.
+Matriks generator $G$ didefinisikan sebagai berikut (bentuk standar).
 
-$$ G = egin{pmatrix} 1 & 0 & 0 & 0 & 1 & 1 & 0 \ 0 & 1 & 0 & 0 & 1 & 0 & 1 \ 0 & 0 & 1 & 0 & 0 & 1 & 1 \ 0 & 0 & 0 & 1 & 1 & 1 & 1 \end{pmatrix} $$
+$$ G =  \begin{pmatrix} 1 & 0 & 0 & 0 & 1 & 1 & 0 \\ 0 & 1 & 0 & 0 & 1 & 0 & 1 \\ 0 & 0 & 1 & 0 & 0 & 1 & 1 \\ 0 & 0 & 0 & 1 & 1 & 1 & 1 \end{pmatrix} $$
 
-符号語 $c$ は、$c = d \cdot G \pmod 2$ で計算されます。
+Kata sandi (codeword) $c$ dihitung dengan $c = d \cdot G \pmod 2$.
 
-受信側では、受信したベクトル $r$ に対して、パリティ検査行列 $H$ を掛けて「シンドローム (Syndrome) $S$」を計算します。
+Di sisi penerima, terhadap vektor $r$ yang diterima, matriks pemeriksaan paritas $H$ dikalikan untuk menghitung "Sindrom (Syndrome) $S$".
 
 $$ S = r \cdot H^T \pmod 2 $$
 
-もし $S = (0, 0, 0)$ ならばエラーなし。それ以外の場合は、シンドロームの値がエラーの発生したビット位置を示します！
+Jika $S = (0, 0, 0)$, maka tidak ada kesalahan. Selain itu, nilai sindrom menunjukkan posisi bit di mana kesalahan terjadi!
 
-### Pythonによるハミング符号の実装例
+### Contoh Implementasi Kode Hamming dengan Python
 
-以下は、Pythonを用いたシンプルなハミング(7,4)符号のシミュレーションです。
+Berikut adalah simulasi sederhana dari kode Hamming(7,4) menggunakan Python.
 
 ```python
 import numpy as np
 
-# 生成行列 G (4x7)
+# Matriks generator G (4x7)
 G = np.array([
     [1, 0, 0, 0, 1, 1, 0],
     [0, 1, 0, 0, 1, 0, 1],
@@ -76,56 +76,56 @@ G = np.array([
     [0, 0, 0, 1, 1, 1, 1]
 ])
 
-# パリティ検査行列 H (3x7)
+# Matriks pemeriksaan paritas H (3x7)
 H = np.array([
     [1, 1, 0, 1, 1, 0, 0],
     [1, 0, 1, 1, 0, 1, 0],
     [0, 1, 1, 1, 0, 0, 1]
 ])
 
-# 元データ
+# Data asli
 d = np.array([1, 0, 1, 1])
 
-# エンコード (モジュロ 2)
+# Enkode (modulo 2)
 c = np.dot(d, G) % 2
-print(f"送信符号語: {c}")
+print(f"Kata sandi yang dikirim: {c}")
 
-# ノイズの付加（3番目のビットを反転）
+# Penambahan noise (membalikkan bit ke-3)
 r = c.copy()
 r[2] ^= 1
-print(f"受信データ: {r}")
+print(f"Data yang diterima: {r}")
 
-# シンドロームの計算
+# Perhitungan sindrom
 S = np.dot(r, H.T) % 2
-print(f"シンドローム: {S}")
+print(f"Sindrom: {S}")
 ```
 
-## 4. リード・ソロモン符号：バーストエラーに立ち向かう
+## 4. Kode Reed-Solomon: Menghadapi Burst Error
 
-ハミング符号は1ビットのランダムエラーには強いですが、CDの傷のように「連続してビットが壊れる」現象（バーストエラー）には対応できません。これを解決するのが「リード・ソロモン符号 (Reed-Solomon Codes, RS符号)」です。
+Meskipun kode Hamming kuat terhadap kesalahan acak 1 bit, ia tidak dapat menangani fenomena di mana "bit rusak secara berurutan" seperti goresan pada CD (burst error). Solusi untuk masalah ini adalah "Kode Reed-Solomon (Reed-Solomon Codes, RS Codes)".
 
-QRコード、CD、DVD、ブルーレイ、宇宙通信など、現代のほぼすべてのデータストレージと通信でRS符号が使われています。
+Kode RS digunakan di hampir semua penyimpanan data dan komunikasi modern, seperti kode QR, CD, DVD, Blu-ray, dan komunikasi luar angkasa.
 
-### ガロア体（有限体）の魔法
+### Keajaiban Lapangan Galois (Lapangan Hingga)
 
-RS符号の核心は、「ガロア体 (Galois Field, GF)」という特殊な数学の世界（有限体）で計算を行うことです。通常の数とは異なり、ガロア体では四則演算を行った結果が必ずその体の要素に収まります（オーバーフローや小数が存在しません）。
+Inti dari kode RS adalah melakukan perhitungan di dunia matematika khusus (lapangan hingga) yang disebut "Lapangan Galois (Galois Field, GF)". Berbeda dengan angka biasa, dalam Lapangan Galois, hasil perhitungan empat operasi dasar (penjumlahan, pengurangan, perkalian, pembagian) akan selalu berada di dalam elemen lapangan tersebut (tidak ada luapan/overflow atau angka desimal).
 
-通常、コンピュータは8ビット（1バイト）単位でデータを扱います。そのため、$GF(2^8)$ という256個の要素を持つガロア体がよく使われます。
+Biasanya, komputer menangani data dalam unit 8 bit (1 byte). Oleh karena itu, Lapangan Galois $GF(2^8)$ yang memiliki 256 elemen sering digunakan.
 
-### RS符号の仕組み
+### Cara Kerja Kode RS
 
-RS符号は、データを $GF(2^8)$ 上の多項式の係数とみなします。
-$k$ 個のデータシンボルを係数とする $k-1$ 次の多項式 $P(x)$ を作成します。
-この多項式に、様々な $x$ の値（評価点）を代入して $n$ 個の点を計算します。これが送信されるデータ（符号語）です。
+Kode RS menganggap data sebagai koefisien polinomial di atas $GF(2^8)$.
+Kita membuat polinomial berderajat $k-1$ yaitu $P(x)$, dengan $k$ buah simbol data sebagai koefisiennya.
+Dengan menyubstitusikan berbagai nilai $x$ (titik evaluasi) ke dalam polinomial ini, kita menghitung $n$ buah titik. Inilah data (kata sandi) yang dikirim.
 
-受信側では、ノイズによっていくつかの点がずれて（エラーになって）届きます。しかし、残った正しい点が十分に多ければ、「ラグランジュ補間」などの数学的手法を用いて、元の多項式 $P(x)$ を完全に復元できるのです！
+Di sisi penerima, karena adanya noise, beberapa titik mungkin akan bergeser (mengalami kesalahan) saat tiba. Namun, selama titik-titik benar yang tersisa cukup banyak, dengan menggunakan metode matematika seperti "Interpolasi Lagrange", kita dapat memulihkan polinomial asli $P(x)$ secara sempurna!
 
-> **比喩的な説明**
-> 2点あれば直線を引けます。3点あれば放物線（2次曲線）を描けます。
-> もし元のデータが「直線」であり、3つの点を送ったとします。受信側で1つの点がずれていても、残り2つの点が正しければ、元の直線を正しく引き直すことができる、という原理です。
+> **Penjelasan metaforis**
+> Dengan 2 titik, kita bisa menarik garis lurus. Dengan 3 titik, kita bisa menggambar parabola (kurva kuadrat).
+> Jika data asli adalah "garis lurus", dan kita mengirimkan 3 titik. Di sisi penerima, meskipun 1 titik bergeser, selama 2 titik lainnya benar, kita dapat menggambar ulang garis lurus asli dengan benar. Itulah prinsipnya.
 
-## まとめ：数学が支える私たちのデジタルライフ
+## Kesimpulan: Matematika yang Mendukung Kehidupan Digital Kita
 
-私たちが何気なくスマートフォンでQRコードを読み取ったり、音楽をストリーミング再生したりできるのは、シャノン、ハミング、リード、ソロモンといった天才たちが築き上げた「誤り訂正符号」という強固な数学的基盤があるからです。
+Fakta bahwa kita dapat dengan santai memindai kode QR dengan smartphone atau mendengarkan musik secara streaming, semuanya berkat fondasi matematika kuat yang disebut "Kode Koreksi Kesalahan", yang dibangun oleh para jenius seperti Shannon, Hamming, Reed, dan Solomon.
 
-ノイズだらけの現実世界で、完璧なデジタルデータを維持し続ける。それはまさに、数学が現実世界にかけた魔法と言えるでしょう。
+Mempertahankan data digital yang sempurna secara terus-menerus di dunia nyata yang penuh dengan gangguan. Itu benar-benar bisa disebut sebagai keajaiban yang diberikan matematika pada dunia nyata.

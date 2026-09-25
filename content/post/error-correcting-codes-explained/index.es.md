@@ -1,6 +1,6 @@
 ---
-title: "誤り訂正符号の仕組み：傷だらけのCDからQRコードまで"
-description: "ハミング符号やリード・ソロモン符号など、デジタルデータを守る誤り訂正符号の数学的原理と情報理論について深く解説します。"
+title: "Cómo funcionan los códigos de corrección de errores: de los CD rayados a los códigos QR"
+description: "Una explicación profunda de los principios matemáticos y la teoría de la información detrás de los códigos de corrección de errores que protegen los datos digitales, como los códigos de Hamming y Reed-Solomon."
 date: 2026-09-25T10:38:30+09:00
 slug: error-correcting-codes-explained
 categories: ["mathematics", "computer-science"]
@@ -8,67 +8,67 @@ tags: ["math", "error-correction", "algorithm", "science"]
 image: eyecatch.jpg
 ---
 
-# 誤り訂正符号とは何か？
+# ¿Qué son los códigos de corrección de errores?
 
-デジタル社会において、データは常にノイズの脅威に晒されています。CDについた傷、宇宙空間から送信される探査機のデータ、あるいは私たちが日常的にスキャンしているQRコード。これらのデータが少しの欠損やノイズによって完全に壊れてしまわないのは、「誤り訂正符号 (Error-Correcting Codes, ECC)」という強力な数学的メカニズムが存在するからです。
+En la sociedad digital, los datos están constantemente expuestos a la amenaza del ruido. Los arañazos en un CD, los datos de las sondas transmitidos desde el espacio o los códigos QR que escaneamos a diario. Estos datos no se destruyen por completo por un poco de pérdida o ruido porque existe un poderoso mecanismo matemático llamado "códigos de corrección de errores" (Error-Correcting Codes, ECC).
 
-この記事では、情報理論の父クロード・シャノンが提唱した概念から始まり、パリティチェックの基礎、ハミング符号の行列表現、そしてガロア体を駆使したリード・ソロモン符号まで、その仕組みを詳細に解き明かします。
+En este artículo, desentrañaremos en detalle cómo funcionan, comenzando con los conceptos propuestos por Claude Shannon, el padre de la teoría de la información, hasta los fundamentos de la comprobación de paridad, la representación matricial de los códigos de Hamming y los códigos de Reed-Solomon que hacen pleno uso de los campos de Galois.
 
-## 1. シャノンの情報理論と通信路符号化定理
+## 1. La teoría de la información de Shannon y el teorema de codificación de canales
 
-1948年、クロード・シャノンは論文 "A Mathematical Theory of Communication" を発表し、情報理論という全く新しい分野を打ち立てました。シャノンが証明した最も驚くべき定理の一つが「通信路符号化定理 (Noisy-channel coding theorem)」です。
+En 1948, Claude Shannon publicó el artículo "A Mathematical Theory of Communication" y estableció el campo completamente nuevo de la teoría de la información. Uno de los teoremas más sorprendentes que Shannon demostró es el "teorema de codificación de canales con ruido" (Noisy-channel coding theorem).
 
-シャノンは、どのようなノイズのある通信路であっても、その通信路の「通信路容量 (Channel Capacity)」$C$を下回る通信速度であれば、情報を実質的にエラーなしで送ることができると数学的に証明しました。これは、エラーを減らすために単に送信電力を上げたり、何度も同じデータを送る（繰り返し符号）必要はなく、「賢い符号化」を行えばよいということを意味します。
+Shannon demostró matemáticamente que, sin importar cuán ruidoso sea un canal, siempre que la velocidad de transmisión sea inferior a la "capacidad del canal" (Channel Capacity) $C$, la información se puede enviar de manera efectiva sin errores. Esto significa que para reducir los errores no es necesario simplemente aumentar la potencia de transmisión o enviar los mismos datos repetidamente (códigos de repetición), sino que basta con realizar una "codificación inteligente".
 
 ```mermaid
 graph TD
-    A["送信者 (Source)"] -- "メッセージ (Message)" --> B["エンコーダ (Encoder)"]
-    B -- "符号語 (Codeword)" --> C["ノイズのある通信路 (Noisy Channel)"]
-    C -- "受信語 (Received word)" --> D["デコーダ (Decoder)"]
-    D -- "復元されたメッセージ (Recovered Message)" --> E["受信者 (Destination)"]
+    A["Remitente (Source)"] -- "Mensaje (Message)" --> B["Codificador (Encoder)"]
+    B -- "Palabra de código (Codeword)" --> C["Canal ruidoso (Noisy Channel)"]
+    C -- "Palabra recibida (Received word)" --> D["Decodificador (Decoder)"]
+    D -- "Mensaje recuperado (Recovered Message)" --> E["Destinatario (Destination)"]
 ```
 
-## 2. 最もシンプルなエラー検出：パリティチェック
+## 2. La detección de errores más simple: la comprobación de paridad
 
-誤りを見つける最も単純な方法は「パリティチェック」です。データビットの最後に1ビットの「パリティビット」を追加し、全体の「1」の数が常に偶数（偶数パリティ）または奇数（奇数パリティ）になるように調整します。
+La forma más sencilla de encontrar errores es la "comprobación de paridad". Se añade un "bit de paridad" de 1 bit al final de los bits de datos y se ajusta para que el número total de unos "1" sea siempre par (paridad par) o impar (paridad impar).
 
-例えば、データ `1011` を送る場合、1の数は3つです。偶数パリティを使用する場合、パリティビットとして `1` を追加し、送信データは `10111` となります。受信側で1の数が奇数になっていれば、通信中にエラーが起きたことがわかります。
+Por ejemplo, si enviamos los datos `1011`, el número de unos es 3. Si utilizamos paridad par, añadimos un `1` como bit de paridad y los datos transmitidos serán `10111`. Si el receptor encuentra que el número de unos es impar, sabrá que ha ocurrido un error durante la comunicación.
 
-しかし、パリティチェックには致命的な弱点があります。
-1. **エラーを検出できるだけで、訂正はできない**（どのビットが反転したかわからない）。
-2. **2ビットのエラーが同時に起こると検出できない**（偶奇が元に戻ってしまうため）。
+Sin embargo, la comprobación de paridad tiene una debilidad fatal.
+1. **Solo puede detectar errores, pero no corregirlos** (no se sabe qué bit se ha invertido).
+2. **No puede detectar si ocurren errores de 2 bits simultáneamente** (ya que la paridad volverá a ser la original).
 
-この限界を突破したのが、リチャード・ハミングが考案した「ハミング符号」です。
+El avance que superó este límite fue el "código de Hamming" inventado por Richard Hamming.
 
-## 3. ハミング符号：エラーの場所を特定する
+## 3. Código de Hamming: Localización del lugar del error
 
-ハミング符号は、複数のパリティビットを巧みに組み合わせることで、1ビットのエラーを検出し、かつ自動的に訂正することができる画期的な符号です。代表的なものに、4ビットのデータに3ビットのパリティを付加する「ハミング(7,4)符号」があります。
+El código de Hamming es un código revolucionario que, mediante la hábil combinación de múltiples bits de paridad, puede detectar un error de 1 bit y corregirlo automáticamente. Un ejemplo representativo es el "código de Hamming(7,4)", que añade 3 bits de paridad a 4 bits de datos.
 
-### ハミング(7,4)符号の行列表現
+### Representación matricial del código de Hamming(7,4)
 
-ハミング符号は、線形代数の強力なツールである「生成行列 (Generator Matrix) $G$」と「パリティ検査行列 (Parity-Check Matrix) $H$」を用いて定義されます。
+Los códigos de Hamming se definen utilizando herramientas poderosas del álgebra lineal: la "Matriz Generadora" (Generator Matrix) $G$ y la "Matriz de Comprobación de Paridad" (Parity-Check Matrix) $H$.
 
-データベクトルを $d = (d_1, d_2, d_3, d_4)$ とします。
-生成行列 $G$ は次のように定義されます（標準形）。
+Sea el vector de datos $d = (d_1, d_2, d_3, d_4)$.
+La matriz generadora $G$ se define de la siguiente manera (forma estándar).
 
-$$ G = egin{pmatrix} 1 & 0 & 0 & 0 & 1 & 1 & 0 \ 0 & 1 & 0 & 0 & 1 & 0 & 1 \ 0 & 0 & 1 & 0 & 0 & 1 & 1 \ 0 & 0 & 0 & 1 & 1 & 1 & 1 \end{pmatrix} $$
+$$ G = \begin{pmatrix} 1 & 0 & 0 & 0 & 1 & 1 & 0 \\ 0 & 1 & 0 & 0 & 1 & 0 & 1 \\ 0 & 0 & 1 & 0 & 0 & 1 & 1 \\ 0 & 0 & 0 & 1 & 1 & 1 & 1 \end{pmatrix} $$
 
-符号語 $c$ は、$c = d \cdot G \pmod 2$ で計算されます。
+La palabra de código $c$ se calcula como $c = d \cdot G \pmod 2$.
 
-受信側では、受信したベクトル $r$ に対して、パリティ検査行列 $H$ を掛けて「シンドローム (Syndrome) $S$」を計算します。
+En el lado del receptor, se multiplica el vector recibido $r$ por la matriz de comprobación de paridad $H$ para calcular el "Síndrome" (Syndrome) $S$.
 
 $$ S = r \cdot H^T \pmod 2 $$
 
-もし $S = (0, 0, 0)$ ならばエラーなし。それ以外の場合は、シンドロームの値がエラーの発生したビット位置を示します！
+Si $S = (0, 0, 0)$, entonces no hay error. En cualquier otro caso, el valor del síndrome indica la posición del bit donde ocurrió el error.
 
-### Pythonによるハミング符号の実装例
+### Ejemplo de implementación del código de Hamming en Python
 
-以下は、Pythonを用いたシンプルなハミング(7,4)符号のシミュレーションです。
+A continuación, se muestra una simulación simple del código de Hamming(7,4) usando Python.
 
 ```python
 import numpy as np
 
-# 生成行列 G (4x7)
+# Matriz generadora G (4x7)
 G = np.array([
     [1, 0, 0, 0, 1, 1, 0],
     [0, 1, 0, 0, 1, 0, 1],
@@ -76,56 +76,56 @@ G = np.array([
     [0, 0, 0, 1, 1, 1, 1]
 ])
 
-# パリティ検査行列 H (3x7)
+# Matriz de comprobación de paridad H (3x7)
 H = np.array([
     [1, 1, 0, 1, 1, 0, 0],
     [1, 0, 1, 1, 0, 1, 0],
     [0, 1, 1, 1, 0, 0, 1]
 ])
 
-# 元データ
+# Datos originales
 d = np.array([1, 0, 1, 1])
 
-# エンコード (モジュロ 2)
+# Codificación (módulo 2)
 c = np.dot(d, G) % 2
-print(f"送信符号語: {c}")
+print(f"Palabra de código transmitida: {c}")
 
-# ノイズの付加（3番目のビットを反転）
+# Adición de ruido (invertir el tercer bit)
 r = c.copy()
 r[2] ^= 1
-print(f"受信データ: {r}")
+print(f"Datos recibidos: {r}")
 
-# シンドロームの計算
+# Cálculo del síndrome
 S = np.dot(r, H.T) % 2
-print(f"シンドローム: {S}")
+print(f"Síndrome: {S}")
 ```
 
-## 4. リード・ソロモン符号：バーストエラーに立ち向かう
+## 4. Códigos de Reed-Solomon: Haciendo frente a los errores de ráfaga
 
-ハミング符号は1ビットのランダムエラーには強いですが、CDの傷のように「連続してビットが壊れる」現象（バーストエラー）には対応できません。これを解決するのが「リード・ソロモン符号 (Reed-Solomon Codes, RS符号)」です。
+El código de Hamming es resistente a los errores aleatorios de 1 bit, pero no puede lidiar con el fenómeno donde los "bits se rompen consecutivamente" (errores de ráfaga), como los rayones en un CD. La solución a esto son los "Códigos de Reed-Solomon" (Reed-Solomon Codes, códigos RS).
 
-QRコード、CD、DVD、ブルーレイ、宇宙通信など、現代のほぼすべてのデータストレージと通信でRS符号が使われています。
+Los códigos RS se utilizan en casi todo el almacenamiento de datos y comunicaciones modernas, incluidos los códigos QR, CD, DVD, Blu-ray y las comunicaciones espaciales.
 
-### ガロア体（有限体）の魔法
+### La magia de los campos de Galois (Campos finitos)
 
-RS符号の核心は、「ガロア体 (Galois Field, GF)」という特殊な数学の世界（有限体）で計算を行うことです。通常の数とは異なり、ガロア体では四則演算を行った結果が必ずその体の要素に収まります（オーバーフローや小数が存在しません）。
+El núcleo de los códigos RS radica en realizar cálculos en un mundo matemático especial (campo finito) llamado "Campo de Galois" (Galois Field, GF). A diferencia de los números ordinarios, el resultado de las cuatro operaciones aritméticas en un campo de Galois siempre permanece dentro de los elementos de ese campo (no existe el desbordamiento ni los decimales).
 
-通常、コンピュータは8ビット（1バイト）単位でデータを扱います。そのため、$GF(2^8)$ という256個の要素を持つガロア体がよく使われます。
+Por lo general, las computadoras manejan los datos en unidades de 8 bits (1 byte). Por lo tanto, se utiliza a menudo un campo de Galois con 256 elementos llamado $GF(2^8)$.
 
-### RS符号の仕組み
+### Cómo funcionan los códigos RS
 
-RS符号は、データを $GF(2^8)$ 上の多項式の係数とみなします。
-$k$ 個のデータシンボルを係数とする $k-1$ 次の多項式 $P(x)$ を作成します。
-この多項式に、様々な $x$ の値（評価点）を代入して $n$ 個の点を計算します。これが送信されるデータ（符号語）です。
+Los códigos RS consideran los datos como coeficientes de un polinomio sobre $GF(2^8)$.
+Se crea un polinomio $P(x)$ de grado $k-1$ cuyos coeficientes son $k$ símbolos de datos.
+Sustituyendo varios valores de $x$ (puntos de evaluación) en este polinomio, se calculan $n$ puntos. Estos son los datos transmitidos (palabra de código).
 
-受信側では、ノイズによっていくつかの点がずれて（エラーになって）届きます。しかし、残った正しい点が十分に多ければ、「ラグランジュ補間」などの数学的手法を用いて、元の多項式 $P(x)$ を完全に復元できるのです！
+En el lado del receptor, algunos puntos llegan desplazados (como errores) debido al ruido. Sin embargo, si quedan suficientes puntos correctos, el polinomio original $P(x)$ se puede restaurar completamente utilizando técnicas matemáticas como la "interpolación de Lagrange".
 
-> **比喩的な説明**
-> 2点あれば直線を引けます。3点あれば放物線（2次曲線）を描けます。
-> もし元のデータが「直線」であり、3つの点を送ったとします。受信側で1つの点がずれていても、残り2つの点が正しければ、元の直線を正しく引き直すことができる、という原理です。
+> **Explicación metafórica**
+> Con 2 puntos se puede trazar una línea recta. Con 3 puntos se puede dibujar una parábola (curva cuadrática).
+> Supongamos que los datos originales son una "línea recta" y hemos enviado 3 puntos. Incluso si 1 punto se ha desplazado en el lado del receptor, si los 2 puntos restantes son correctos, el principio es que podemos redibujar la línea recta original correctamente.
 
-## まとめ：数学が支える私たちのデジタルライフ
+## Conclusión: Nuestra vida digital apoyada por las matemáticas
 
-私たちが何気なくスマートフォンでQRコードを読み取ったり、音楽をストリーミング再生したりできるのは、シャノン、ハミング、リード、ソロモンといった天才たちが築き上げた「誤り訂正符号」という強固な数学的基盤があるからです。
+El hecho de que podamos escanear casualmente un código QR con nuestro teléfono inteligente o escuchar música en streaming se debe a la sólida base matemática llamada "códigos de corrección de errores" construida por genios como Shannon, Hamming, Reed y Solomon.
 
-ノイズだらけの現実世界で、完璧なデジタルデータを維持し続ける。それはまさに、数学が現実世界にかけた魔法と言えるでしょう。
+Mantener datos digitales perfectos en un mundo real lleno de ruido. Eso es verdaderamente la magia que las matemáticas han lanzado sobre el mundo real.
