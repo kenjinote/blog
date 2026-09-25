@@ -1,0 +1,5 @@
+---
+{
+  "title": "Gráficos por computadora"
+}
+---
