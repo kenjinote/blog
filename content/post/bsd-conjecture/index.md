@@ -109,7 +109,7 @@ $$
 a_p = p + 1 - N_p
 $$
 
-[ハッセ](https://kenji.blog/p/hasse/)の定理（Hasse's bound）によれば、このずれは $|a_p| \le 2\sqrt{p}$ で抑えられることが知られています。これは、有限体上の楕円曲線に対する[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)の類似の一種です。
+[ハッセ](https://kenji.blog/p/hasse/)の定理（Hasse's bound）によれば、このずれは $|a_p| \le 2\sqrt{p}$ で抑えられることが知られています。これは、有限体上の楕円曲線に対する[リーマン予想](https://kenji.blog/p/riemann-hypothesis-prime-distribution-cryptography/)の類似の一種です。
 
 ### 4.2. L関数の定義
 

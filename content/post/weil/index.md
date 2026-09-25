@@ -49,7 +49,7 @@ graph TD
 
 1939年、第二次世界大戦が勃発すると、[ヴェイユ](https://kenji.blog/p/weil/)の運命は大きく翻弄されます。彼は兵役を拒否してフィンランドに逃れましたが、そこでソビエト連邦のスパイと誤認され、あわや処刑という危機に陥ります。著名な数学者ロルフ・ネヴァンリンナ（Rolf Nevanlinna）の尽力により命を取り留めましたが、フランスへ送還され、ルーアンの刑務所に収監されてしまいました。
 
-しかし、驚くべきことに、[ヴェイユ](https://kenji.blog/p/weil/)の数学的創造力はこの劣悪な環境下で最高潮に達しました。彼は刑務所の独房の中で、彼の最も偉大な業績の一つである **「有限体上の代数曲線に関するリーマン予想の証明」** （Proof of the [Riemann hypothesis](https://kenji.blog/p/riemann-hypothesis/) for algebraic curves over finite fields）を完成させたのです。彼は妹シモーヌへの手紙の中で、この発見の喜びと、数学における「類推」の重要性について熱く語っています。
+しかし、驚くべきことに、[ヴェイユ](https://kenji.blog/p/weil/)の数学的創造力はこの劣悪な環境下で最高潮に達しました。彼は刑務所の独房の中で、彼の最も偉大な業績の一つである **「有限体上の代数曲線に関するリーマン予想の証明」** （Proof of the [Riemann hypothesis](https://kenji.blog/p/riemann-hypothesis-prime-distribution-cryptography/) for algebraic curves over finite fields）を完成させたのです。彼は妹シモーヌへの手紙の中で、この発見の喜びと、数学における「類推」の重要性について熱く語っています。
 
 ## 6. [ヴェイユ](https://kenji.blog/p/weil/)予想：代数幾何学と数論の架け橋
 
@@ -59,7 +59,7 @@ graph TD
 
 1.  **有理性（Rationality）**：合同ゼータ関数 $Z(X, t)$ は有理関数である。
 2.  **関数等式（Functional equation）**：ゼータ関数は特定の対称性を満たす。
-3.  **[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)の類似（Analogue of the [Riemann hypothesis](https://kenji.blog/p/riemann-hypothesis/)）**：ゼータ関数の零点と極の絶対値は、特定の規則に従う。
+3.  **[リーマン予想](https://kenji.blog/p/riemann-hypothesis-prime-distribution-cryptography/)の類似（Analogue of the [Riemann hypothesis](https://kenji.blog/p/riemann-hypothesis-prime-distribution-cryptography/)）**：ゼータ関数の零点と極の絶対値は、特定の規則に従う。
 4.  **ベッチ数との関係（Connection with Betti numbers）**：ゼータ関数の次数は多様体のベッチ数に一致する。
 
 数学的な定式化として、有限体 $\mathbb{F}_q$ 上の非特異射影多様体 $X$ の合同ゼータ関数は次のように定義されます。

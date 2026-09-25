@@ -83,7 +83,7 @@ graph TD
 
 ## 8. [ハッセ](https://kenji.blog/p/hasse/)・[ヴェイユ](https://kenji.blog/p/weil/)の定理：楕円曲線の有理点
 
-[ハッセ](https://kenji.blog/p/hasse/)のもう一つの極めて重要な貢献は、有限体上の楕円曲線における **ハッセの定理** (Hasse's Theorem on Elliptic Curves) です。これは、有限体上の代数多様体に対する「[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)の類似」の最初の一歩とも言える画期的な結果でした。
+[ハッセ](https://kenji.blog/p/hasse/)のもう一つの極めて重要な貢献は、有限体上の楕円曲線における **ハッセの定理** (Hasse's Theorem on Elliptic Curves) です。これは、有限体上の代数多様体に対する「[リーマン予想](https://kenji.blog/p/riemann-hypothesis-prime-distribution-cryptography/)の類似」の最初の一歩とも言える画期的な結果でした。
 
 有限体 $\mathbb{F}_q$ （要素数が $q$ の体）上で定義された楕円曲線 $E$ の有理点の数を $N$ とします。このとき、有理点の数 $N$ は $q + 1$ （射影直線上の点の数）に近く、その誤差は次のように抑えられると[ハッセ](https://kenji.blog/p/hasse/)は証明しました。
 

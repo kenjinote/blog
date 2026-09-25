@@ -41,7 +41,7 @@ The problem itself is very simple, but it remains unproven.
 
 ## [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis
 
-The [Riemann hypothesis](https://kenji.blog/en/p/riemann-hypothesis/) is the conjecture that the zeros of the [Riemann](https://kenji.blog/en/p/riemann/) zeta function are restricted to negative even integers and complex numbers with real part 1 / 2.
+The [Riemann hypothesis](https://kenji.blog/en/p/riemann-hypothesis-prime-distribution-cryptography/) is the conjecture that the zeros of the [Riemann](https://kenji.blog/en/p/riemann/) zeta function are restricted to negative even integers and complex numbers with real part 1 / 2.
 
 The [Riemann](https://kenji.blog/en/p/riemann/) zeta function is the function $\zeta$ defined by:
 

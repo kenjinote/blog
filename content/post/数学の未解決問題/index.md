@@ -40,7 +40,7 @@ description: '問題自体はシンプルなのに未だ証明されていない
 
 問題自体は非常にシンプルですが、未だに証明されていません。
 
-## [リーマン予想](https://kenji.blog/p/riemann-hypothesis/)
+## [リーマン予想](https://kenji.blog/p/riemann-hypothesis-prime-distribution-cryptography/)
 
 [リーマン](https://kenji.blog/p/riemann/)ゼータ関数の零点が、負の偶数と、実部が 1 / 2 の複素数に限られるという予想である。
 

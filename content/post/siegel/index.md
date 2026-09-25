@@ -68,7 +68,7 @@ $$
 
 ### 3.2 [ジーゲル](https://kenji.blog/p/siegel/)・ゼロ (Siegel Zero)
 
-解析的整数論において、ディリクレの $L$ -関数 $L(s, \chi)$ の零点の分布は、[素数定理](/p/prime-number-theorem/)の自然な拡張や算術級数定理において極めて重要です。一般化された[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)（Generalized [Riemann](https://kenji.blog/p/riemann/) Hypothesis, GRH）によれば、実部が $0$ と $1$ の間にある臨界帯の零点は、すべて実部が $1/2$ の直線上にあるとされています。
+解析的整数論において、ディリクレの $L$ -関数 $L(s, \chi)$ の零点の分布は、[素数定理](/p/prime-number-theorem/)の自然な拡張や算術級数定理において極めて重要です。一般化された[リーマン予想](https://kenji.blog/p/riemann-hypothesis-prime-distribution-cryptography/)（Generalized [Riemann](https://kenji.blog/p/riemann/) Hypothesis, GRH）によれば、実部が $0$ と $1$ の間にある臨界帯の零点は、すべて実部が $1/2$ の直線上にあるとされています。
 
 しかし、実二次体の指標（実指標） $\chi$ に対して、実部が非常に $1$ に近い実数零点が存在する可能性が現在の数学では排除されていません。このような仮想的な反例となる零点を **[ジーゲル](https://kenji.blog/p/siegel/)・ゼロ** (Siegel zero) または例外零点と呼びます。
 

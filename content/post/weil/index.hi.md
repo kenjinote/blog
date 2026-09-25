@@ -59,7 +59,7 @@ graph TD
 
 1.  **तार्किकता (Rationality)**: सर्वांगसम जीटा फलन (Congruence zeta function) $Z(X, t)$ एक परिमेय फलन (rational function) है।
 2.  **कार्यात्मक समीकरण (Functional equation)**: जीटा फलन एक विशिष्ट समरूपता को संतुष्ट करता है।
-3.  **रीमैन परिकल्पना का एनालॉग (Analogue of the [Riemann hypothesis](https://kenji.blog/hi/p/riemann-hypothesis/))**: जीटा फलन के शून्य और ध्रुवों के पूर्ण मान विशिष्ट नियमों का पालन करते हैं।
+3.  **रीमैन परिकल्पना का एनालॉग (Analogue of the [Riemann hypothesis](https://kenji.blog/hi/p/riemann-hypothesis-prime-distribution-cryptography/))**: जीटा फलन के शून्य और ध्रुवों के पूर्ण मान विशिष्ट नियमों का पालन करते हैं।
 4.  **बेट्टी संख्याओं के साथ संबंध (Connection with Betti numbers)**: जीटा फलन की डिग्री विविधता की बेट्टी संख्याओं के साथ मेल खाती है।
 
 गणितीय सूत्रीकरण के रूप में, परिमित क्षेत्र $\mathbb{F}_q$ पर गैर-एकवचन प्रक्षेप्य विविधता (non-singular projective variety) $X$ का सर्वांगसम जीटा फलन इस प्रकार परिभाषित किया गया है:

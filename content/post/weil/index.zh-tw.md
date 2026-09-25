@@ -59,7 +59,7 @@ graph TD
 
 1.  **有理性質（Rationality）**：同餘黎曼Zeta函數 $Z(X, t)$ 是一個有理函數。
 2.  **函數方程式（Functional equation）**：Zeta函數滿足一種特定的對稱性。
-3.  **黎曼猜想的類比（Analogue of the [Riemann hypothesis](https://kenji.blog/zh-tw/p/riemann-hypothesis/)）**：Zeta函數的零點和極點的絕對值遵循特定的規則。
+3.  **黎曼猜想的類比（Analogue of the [Riemann hypothesis](https://kenji.blog/zh-tw/p/riemann-hypothesis-prime-distribution-cryptography/)）**：Zeta函數的零點和極點的絕對值遵循特定的規則。
 4.  **與貝蒂數的關係（Connection with Betti numbers）**：Zeta函數的次數與簇的貝蒂數一致。
 
 作為數學公式化，有限體 $\mathbb{F}_q$ 上非奇異射影簇 $X$ 的同餘Zeta函數定義如下：

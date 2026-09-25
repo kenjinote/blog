@@ -74,17 +74,17 @@ $$ \lim_{x \to \infty} \frac{\pi(x)}{\operatorname{Li}(x)} = 1 $$
 
 対数積分がいかに優れた近似を与えているかがわかります。
 
-## [リーマン予想](https://kenji.blog/p/riemann-hypothesis/)との深い関係
+## [リーマン予想](https://kenji.blog/p/riemann-hypothesis-prime-distribution-cryptography/)との深い関係
 
-素数定理と不可分に結びついているのが、数学の未解決問題の中で最も重要とされる **[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)** （[Riemann](https://kenji.blog/p/riemann/) Hypothesis）です。
+素数定理と不可分に結びついているのが、数学の未解決問題の中で最も重要とされる **[リーマン予想](https://kenji.blog/p/riemann-hypothesis-prime-distribution-cryptography/)** （[Riemann](https://kenji.blog/p/riemann/) Hypothesis）です。
 
-[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)は、「[リーマン](https://kenji.blog/p/riemann/)ゼータ関数 $\zeta(s)$ の自明でない零点（非自明な零点）はすべて、実部が $1/2$ の直線上（臨界線）にある」という主張です。
+[リーマン予想](https://kenji.blog/p/riemann-hypothesis-prime-distribution-cryptography/)は、「[リーマン](https://kenji.blog/p/riemann/)ゼータ関数 $\zeta(s)$ の自明でない零点（非自明な零点）はすべて、実部が $1/2$ の直線上（臨界線）にある」という主張です。
 
-もし[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)が正しいと証明されれば、素数定理における誤差項（$\pi(x)$ と $\operatorname{Li}(x)$ の差）について、最も強い形での評価が得られます。具体的には、ある定数 $C$ が存在して、
+もし[リーマン予想](https://kenji.blog/p/riemann-hypothesis-prime-distribution-cryptography/)が正しいと証明されれば、素数定理における誤差項（$\pi(x)$ と $\operatorname{Li}(x)$ の差）について、最も強い形での評価が得られます。具体的には、ある定数 $C$ が存在して、
 
 $$ |\pi(x) - \operatorname{Li}(x)| \le C \sqrt{x} \ln(x) $$
 
-が成り立つことが知られています。これは、「素数は、完全にランダムに分布している場合と区別がつかないほど、極めて規則正しく分布している」ことを意味します。つまり、素数定理は素数の「平均的な」分布を語り、[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)はその「揺らぎ（誤差）」の限界を語っているのです。
+が成り立つことが知られています。これは、「素数は、完全にランダムに分布している場合と区別がつかないほど、極めて規則正しく分布している」ことを意味します。つまり、素数定理は素数の「平均的な」分布を語り、[リーマン予想](https://kenji.blog/p/riemann-hypothesis-prime-distribution-cryptography/)はその「揺らぎ（誤差）」の限界を語っているのです。
 
 ## Python で素数定理を確かめる
 
@@ -147,4 +147,4 @@ for i in range(len(x_values)):
 
 素数定理は、数学における「混沌の中の秩序」を体現する最も美しい定理の一つです。一見ランダムに見える素数の分布に、対数関数という自然界の基本的な法則が潜んでいることは、多くの数学者を魅了し続けています。
 
-[ガウス](https://kenji.blog/p/gauss/)やリーマン、アダマールらの天才たちによって切り拓かれたこの分野は、今なお[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)という巨大な未解決問題を通じて、現代数学の最前線であり続けています。素数の謎は深く、私たちがその全貌を理解する日まで、探求は続いていくことでしょう。
+[ガウス](https://kenji.blog/p/gauss/)やリーマン、アダマールらの天才たちによって切り拓かれたこの分野は、今なお[リーマン予想](https://kenji.blog/p/riemann-hypothesis-prime-distribution-cryptography/)という巨大な未解決問題を通じて、現代数学の最前線であり続けています。素数の謎は深く、私たちがその全貌を理解する日まで、探求は続いていくことでしょう。

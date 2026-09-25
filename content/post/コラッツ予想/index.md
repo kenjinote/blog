@@ -240,7 +240,7 @@ for n in range(1, 21):
 
 もっとこういう「不思議系数学×プログラミング」ネタが知りたい人は、
 お気軽に「もっと教えて」とリクエストしてみてください。
-そのうち、[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)とか素数の話とか、いろいろ紹介しますね！
+そのうち、[リーマン予想](https://kenji.blog/p/riemann-hypothesis-prime-distribution-cryptography/)とか素数の話とか、いろいろ紹介しますね！
 
 ---
 

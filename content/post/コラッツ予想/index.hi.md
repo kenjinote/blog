@@ -239,7 +239,7 @@ for n in range(1, 21):
 
 यदि आप इस तरह की "रहस्यमय गणित × प्रोग्रामिंग" सामग्री के बारे में अधिक जानना चाहते हैं,
 तो बेझिझक "मुझे और बताएं" का अनुरोध करें।
-किसी दिन, मैं रीमैन परिकल्पना ([Riemann hypothesis](https://kenji.blog/hi/p/riemann-hypothesis/)) और अभाज्य संख्याओं (prime numbers) के बारे में भी बात करूँगा!
+किसी दिन, मैं रीमैन परिकल्पना ([Riemann hypothesis](https://kenji.blog/hi/p/riemann-hypothesis-prime-distribution-cryptography/)) और अभाज्य संख्याओं (prime numbers) के बारे में भी बात करूँगा!
 
 ---
 

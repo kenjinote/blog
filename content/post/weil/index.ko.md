@@ -59,7 +59,7 @@ graph TD
 
 1.  **유리성(Rationality)**: 합동 제타 함수 $Z(X, t)$는 유리 함수이다.
 2.  **함수 방정식(Functional equation)**: 제타 함수는 특정한 대칭성을 만족한다.
-3.  **리만 가설의 유사체(Analogue of the [Riemann hypothesis](https://kenji.blog/ko/p/riemann-hypothesis/))**: 제타 함수의 영점과 극점의 절댓값은 특정한 규칙을 따른다.
+3.  **리만 가설의 유사체(Analogue of the [Riemann hypothesis](https://kenji.blog/ko/p/riemann-hypothesis-prime-distribution-cryptography/))**: 제타 함수의 영점과 극점의 절댓값은 특정한 규칙을 따른다.
 4.  **베티 수와의 연결(Connection with Betti numbers)**: 제타 함수의 차수는 다양체의 베티 수와 일치한다.
 
 수학적 공식화로서, 유한체 $\mathbb{F}_q$상의 비특이 사영 다양체 $X$의 합동 제타 함수는 다음과 같이 정의됩니다.
