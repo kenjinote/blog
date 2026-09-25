@@ -1,6 +1,6 @@
 ---
-title: "El misterio matemático que desafió a los genios del período Edo: Historia del \"Wasan\", las matemáticas tradicionales de Japón, y los Sangaku"
-description: "El \"Wasan\" fue una matemática avanzada desarrollada de forma única durante el aislamiento de Japón (Sakoku). Exploramos la trayectoria de genios como Seki Takakazu y el enigma de los \"Sangaku\" ofrendados en templos y santuarios."
+title: "Los genios de la era Edo y el misterio matemático: La historia del Wasan y el Sangaku en Japón"
+description: "El 'Wasan', una avanzada matemática desarrollada de forma independiente en Japón bajo aislamiento. Exploramos los pasos de genios matemáticos como Seki Takakazu y el misterio de los 'Sangaku' dedicados a templos y santuarios."
 date: "2026-09-25T02:00:00+09:00"
 categories: ["history", "mathematics"]
 tags: ["wasan", "math", "history", "japan"]
@@ -8,92 +8,91 @@ slug: "history-of-wasan-japanese-mathematics"
 image: "eyecatch.jpg"
 ---
 
-## 1. ¿Qué es el Wasan?: El milagro matemático nacido del aislamiento (Sakoku)
+## 1. Introducción: El "milagro matemático" en el Japón aislado
 
-Durante el período Edo (1603-1867), Japón mantuvo una política de aislamiento del exterior conocida como *sakoku*. Sin embargo, dentro de este espacio cultural y físicamente cerrado, floreció una cultura matemática avanzada y completamente original. Eso es el **Wasan (matemáticas tradicionales japonesas)**.
+Desde el siglo XVII hasta mediados del siglo XIX, Japón adoptó una estricta política de aislamiento nacional conocida como "Sakoku". En esta era donde la interacción con la ciencia y la cultura occidental estaba extremadamente limitada, ocurrió un fenómeno singular en Japón, sin precedentes en el mundo. Fue el florecimiento de una cultura matemática avanzada y exclusiva de Japón, el **"Wasan"**.
 
-En la Europa de aquella época, Newton y Leibniz estaban fundando el cálculo infinitesimal; simultáneamente en Japón, a partir de un contexto completamente diferente, surgían conceptos comparables al cálculo. El Wasan comenzó con cálculos prácticos para la agrimensura y la confección del calendario, y gradualmente se sublimó en un juego puramente matemático, o incluso en una forma de arte.
+En la misma época en Europa, Isaac Newton y Gottfried Leibniz creaban el cálculo, y las matemáticas modernas se desarrollaban rápidamente. Sorprendentemente, en la nación insular del Lejano Oriente, Japón, surgieron conceptos matemáticos avanzados comparables al cálculo, de forma totalmente independiente.
+
+En este artículo, detallaremos la historia del Wasan, que comenzó con cálculos y mediciones prácticas y se transformó en un puro juego intelectual y un tipo de arte. Exploraremos a los genios matemáticos que impulsaron este desarrollo y la singular cultura de los "Sangaku", única en el mundo.
+
+## 2. El amanecer del Wasan: El éxito de ventas "Jinkoki" enciende el boom matemático
+
+El catalizador decisivo para la explosiva popularidad de la cultura matemática japonesa fue el libro "Jinkoki", publicado en 1627 a principios del período Edo por Yoshida Mitsuyoshi.
+
+Hasta entonces, la aritmética japonesa consistía principalmente en conocimientos esotéricos traídos de China, manejados solo por un puñado de intelectuales y funcionarios. Sin embargo, "Jinkoki" explicaba de manera muy clara y con abundantes ilustraciones, desde métodos de cálculo con ábaco para transacciones comerciales diarias, cómo encontrar el área de los campos o el volumen de los fardos de arroz, hasta problemas recreativos y rompecabezas como el "cálculo de ratones" (progresión geométrica) y el "Mamakodate" (el problema de Josefo).
 
 ```mermaid
 graph TD
-    A["Matemáticas de la antigua China (Jiuzhang Suanshu, etc.)"] -- "Introducción" --> B["Wasan inicial (Jinkōki, etc.)"]
-    B -- "De lo práctico a lo académico" --> C["Establecimiento del álgebra por Seki Takakazu (Tenzanjutsu)"]
-    C -- "Mayor sofisticación y enfoque lúdico" --> D["Auge de las ofrendas de Sangaku"]
-    D -- "Desarrollo del Enri (cálculo)" --> E["Matemáticas de virtuosismo extremo a finales del período Edo"]
+    A["Matemáticas de la antigua China (Jiuzhang Suanshu, etc.)"] -- "Transmisión y asimilación" --> B["Wasan temprano (Difusión del 'Jinkoki')"]
+    B -- "Del cálculo práctico al juego y estudio" --> C["Establecimiento del álgebra por Seki Takakazu (Tenzanjutsu)"]
+    C -- "Avance y creación de redes a nivel nacional" --> D["Popularidad de la dedicación de Sangaku"]
+    D -- "Desarrollo y profundización del Enri (Cálculo)" --> E["Técnicas matemáticas trascendentales al final del shogunato"]
 ```
 
-### 1.1 El Jinkōki se convierte en un éxito de ventas
+Casualmente, el período Edo fue una época en la que la tasa de alfabetización de la gente común alcanzó un nivel asombrosamente alto a nivel mundial gracias a la difusión de los Terakoya (escuelas privadas en templos). "Jinkoki" se convirtió en un éxito de ventas sin precedentes, publicándose numerosas ediciones piratas y revisadas. A través de este libro, no solo los samuráis, sino también comerciantes y campesinos descubrieron la "diversión de las matemáticas".
 
-El detonante de la explosión y popularización del Wasan fue el *Jinkōki* (塵劫記), publicado en 1627 por Yoshida Mitsuyoshi. Con explicaciones claras e ilustraciones, abarcaba desde el uso del ábaco (*soroban*) hasta el cálculo de áreas y volúmenes, e incluso problemas recreativos como la "reproducción de ratones" (*nezumizan*).
+## 3. El Newton japonés, el "Santo de las Matemáticas" Seki Takakazu
 
-```python
-# Simulación de Nezumizan (cría de ratones) en Python
-def nezumizan(months):
-    # Pareja inicial
-    pairs = 1
-    for month in range(1, months + 1):
-        # Se asume que cada mes nacen 12 crías (6 parejas)
-        pairs += pairs * 6
-    return pairs * 2 # Número total de ratones
+A finales del siglo XVII, surgió un genio sin igual que elevó el Wasan, el cual no había pasado de ser práctico o de entretenimiento, al nivel de las matemáticas abstractas de élite mundial. Fue **Seki Takakazu**. Más tarde sería aclamado como el "Sansei (Santo de las matemáticas)" y se convirtió en la figura más importante de la historia matemática de Japón.
 
-print(f"Número de ratones tras 12 meses: {nezumizan(12)}")
-# Salida: Número de ratones tras 12 meses: 27682574402
-```
+### 3.1 Tenzanjutsu: El establecimiento del álgebra
+Uno de los mayores logros de Seki Takakazu fue idear un método propio de álgebra escrita llamado "Tenzanjutsu". Anteriormente, el método predominante era un enfoque físico calculando con varillas de madera llamadas "Sangi" dispuestas sobre un tablero, lo cual dificultaba la resolución de ecuaciones multivariables complejas. Seki Takakazu estableció un método para formular ecuaciones manipulando fórmulas en papel utilizando caracteres kanji para representar incógnitas (expresiones literales). Gracias a esto, las matemáticas japonesas se liberaron de las limitaciones físicas y lograron una evolución espectacular.
 
-Combinado con las altas tasas de alfabetización del período Edo, este libro se convirtió en un éxito de ventas sin precedentes, y un gran número de japoneses quedaron fascinados por el encanto de las matemáticas.
+### 3.2 El descubrimiento de los determinantes y los números de Bernoulli
+Un episodio que demuestra la genialidad de Seki Takakazu es su descubrimiento simultáneo con los matemáticos europeos. En su libro "Kaifukudai no Ho" (1683), presentó el concepto de "Determinante" para encontrar soluciones a sistemas de ecuaciones lineales. Esto ocurrió unos 10 años antes de que Leibniz propusiera un concepto similar en Europa.
 
-## 2. El genio Seki Takakazu y el "Tenzanjutsu"
+Además, sobre los "Números de Bernoulli" que aparecen en las fórmulas para las sumas de potencias, estos están claramente registrados en la obra póstuma de Seki Takakazu, "Katsuyo Sanpo" (1712), en la misma época en que fueron presentados por Jacob Bernoulli en Suiza (1713).
 
-En la segunda mitad del siglo XVII, **Seki Takakazu** elevó el Wasan al más alto nivel mundial. Venerado como el "sabio del cálculo" (*Sansei*), a menudo se le conoce como el Newton de Japón.
+## 4. El desafío del límite: "Enri" y Takebe Katahiro
 
-El mayor logro de Seki Takakazu fue la invención del *Tenzanjutsu*, un método que permitía representar incógnitas con símbolos y formular ecuaciones algebraicas. Gracias a esto, superó las limitaciones de las varillas de cálculo físicas (*sangi*) transmitidas desde China, haciendo posible realizar complejos cálculos algebraicos directamente sobre el papel.
+Después de la muerte de Seki Takakazu, su mejor discípulo, **Takebe Katahiro**, y otros desarrollaron aún más el Wasan. El mayor problema al que se enfrentaron fueron los cálculos relacionados con el "círculo".
 
-### El descubrimiento de los determinantes
-Seki Takakazu descubrió el concepto de **determinante** como método para resolver sistemas de ecuaciones lineales una década antes que Leibniz en Europa. En su obra *Kai-fukudai no Hō* (Método para resolver problemas ocultos), describió un procedimiento de cálculo esencialmente equivalente a la expansión moderna de determinantes.
+Los matemáticos del Wasan idearon un método llamado **"Enri"**, equivalente al cálculo diferencial e integral moderno. Takebe Katahiro ideó un método que utilizaba expansiones de series infinitas (equivalente a la serie de Taylor) para encontrar la longitud de los arcos y el área de los segmentos circulares. Se dice que calculó el valor de pi $\pi$ de manera precisa hasta 41 decimales a través de cálculos manuales asombrosamente laboriosos.
 
-$$ \Delta = a_{11}a_{22} - a_{12}a_{21} $$
+$$ \pi \approx 3.14159265358979323846264338327950288419716\dots $$
 
-## 3. Tablillas votivas matemáticas en templos y santuarios: Los "Sangaku"
+Estos fueron resultados nacidos del puro afán de investigación matemática de "buscar la verdad", superando los propósitos prácticos.
 
-Un aspecto fundamental al hablar del Wasan es la cultura de los **Sangaku**. Los Sangaku eran un tipo de tablilla votiva de madera (*ema*) en la que se inscribían problemas matemáticos y sus soluciones acompañados de elegantes figuras geométricas, dedicadas en santuarios sintoístas y templos budistas.
+## 5. Una cultura matemática única en el mundo: "Sangaku"
 
-### 3.1 Gratitud a los dioses y desafíos entre matemáticos
+Lo que mejor simboliza que el Wasan fue una cultura amada no solo por una élite, sino por las masas, es el **"Sangaku"**.
 
-¿Por qué se ofrendaban problemas matemáticos en santuarios y templos?
-1. **Expresión de gratitud**: La devoción de agradecer la resolución de un problema difícil gracias a la protección y bendición de las divinidades (*kami* y budas).
-2. **Afirmación personal y comunicación**: Mostrar la propia habilidad matemática al público y, a la vez, plantear un desafío (*idai* o problemas abiertos) a otros matemáticos con la pregunta: "¿Puedes resolver esto?".
+Un Sangaku es un tipo de tablilla votiva (ema) de madera donde uno dibujaba un problema matemático que había resuelto, su hermosa figura o método de resolución, y lo dedicaba en un santuario o templo. Esta costumbre comenzó a mediados del siglo XVII y se hizo enormemente popular en todo Japón a lo largo del período Edo.
 
-Desde campesinos de aldeas hasta samuráis, comerciantes, e incluso mujeres y niños, personas de cualquier clase social participaron en la creación de Sangaku. Esta fue una cultura matemática participativa popular sin parangón en el mundo.
+### 5.1 ¿Por qué se dedicaban matemáticas a santuarios y templos?
+
+La dedicación de Sangaku tenía principalmente 3 significados:
+1. **Agradecimiento a los dioses y budas**: Una pura expresión de gratitud afirmando que "gracias a la protección divina, pude resolver este difícil problema".
+2. **Exhibición personal y lugar de presentación**: Un papel similar a los artículos académicos modernos o presentaciones de pósters para mostrar el propio talento matemático al público.
+3. **Un desafío a los demás**: Los Sangaku a menudo tomaban la forma de "Idai", donde "se presentaba solo el problema sin mostrar la solución". Era una carta de desafío que decía "si hay alguien que pueda resolver este problema, que intente resolverlo", y se establecía una comunicación intelectual donde otro matemático que lo veía dedicaba la solución en un nuevo Sangaku.
 
 ```mermaid
 sequenceDiagram
-    participant M["Matemático A"]
-    participant S["Santuario (Sangaku)"]
-    participant N["Matemático B"]
+    participant M["Matemático A (Proponente)"]
+    participant S["Santuario/Templo (Sangaku)"]
+    participant N["Matemático B (Desafiante)"]
     
-    M->>S: "Ofrenda de problemas y soluciones (incluye desafíos)"
-    S-->>N: "Descubrimiento del problema al visitar el templo"
-    N->>N: "Desafío a resolver el problema difícil"
-    N->>S: "Ofrenda de la solución en un nuevo Sangaku"
+    M->>S: "Dedica un problema con una hermosa figura (Idai)"
+    S-->>N: "Descubre el Sangaku al visitar y se lleva el problema"
+    N->>N: "Pasa meses descifrando y calculando el difícil problema"
+    N->>S: "Dedica la solución y un problema propio como un nuevo Sangaku"
 ```
 
-### 3.2 Problemas típicos de Sangaku (Enri)
+### 5.2 Una red de conocimiento más allá de las clases sociales
 
-La gran mayoría de los problemas de Sangaku pertenecían al campo de la geometría. En particular, eran muy populares los problemas de tangencias que involucraban múltiples círculos o polígonos inscritos dentro de un círculo principal.
+Lo más sorprendente es que quienes dedicaban Sangaku no se limitaban a eruditos famosos o samuráis. En los Sangaku que se conservan en la actualidad, se encuentran registrados nombres de comerciantes, campesinos de aldeas, e incluso mujeres y adolescentes. Con la existencia de viajeros matemáticos que recorrían todo el país (personas que viajaban mientras enseñaban matemáticas), todo el archipiélago japonés funcionaba como una enorme "comunidad matemática en línea". En el período Edo, cuando el sistema de clases era estricto, solo el mundo de las matemáticas era una completa meritocracia, donde se producía un intercambio igualitario más allá del estatus social.
 
-**【Ejemplo de problema representativo】**
-"Dentro de un círculo exterior hay tres círculos iguales (círculos A) que son tangentes entre sí, y un círculo más pequeño (círculo B) que es tangente a ellos. Dado el diámetro del círculo A, calcula el diámetro del círculo B."
+## 6. El fin del Wasan y su contribución silenciosa a la modernización
 
-Para resolver estos complejos problemas geométricos, los matemáticos del Wasan desarrollaron el "**Enri**" (円理), un método de cálculo de límites equivalente al cálculo integral moderno. Lograron calcular el valor de pi ($\pi$) con precisión hasta varias decenas de decimales, además de determinar la longitud de curvas complejas y los volúmenes de sólidos tridimensionales.
+Tras la Restauración Meiji en 1868, Japón comenzó su rápido camino hacia la occidentalización y modernización. Para el gobierno Meiji, que buscaba enriquecer al país y fortalecer el ejército así como fomentar la industria, el Wasan, que se había convertido en un sistema muy basado en acertijos y juegos con su propio sistema de símbolos tipo chino (kanbun), fue visto como una barrera para la introducción de la ciencia y tecnología occidentales.
 
-## 4. El fin del Wasan y su conexión con las matemáticas modernas
+Como resultado, con la promulgación del Sistema Educativo en 1872 (año 5 de Meiji), se decidió que en la educación escolar solo se enseñarían matemáticas occidentales, y la tradición del Wasan, que había durado cientos de años, entró en rápido declive.
 
-Con el inicio de la era Meiji (1868-), Japón impulsó una rápida modernización y occidentalización. Durante la reforma del sistema educativo, el gobierno Meiji decidió abolir el Wasan —considerado menos práctico debido a su notación singular— y adoptar formalmente las matemáticas occidentales en los planes de estudio oficiales.
+Sin embargo, el Wasan no desapareció en vano. Durante el período Edo, "la capacidad de pensar lógicamente", "la habilidad para manejar conceptos abstractos" y, sobre todo, "la curiosidad intelectual para disfrutar del aprendizaje en sí mismo" se arraigaron profundamente incluso en la gente común en todos los rincones del país. La razón por la que Japón pudo absorber las matemáticas superiores occidentales y la ciencia moderna a una velocidad asombrosa y alcanzar el máximo nivel mundial después de la era Meiji, fue, sin duda, gracias a este "suelo del Wasan".
 
-Aunque esto provocó el rápido declive del Wasan, el "pensamiento matemático avanzado" y la "curiosidad intelectual por disfrutar de los acertijos" cultivados por esta disciplina se convirtieron en el motor que permitió a los japoneses de la era Meiji asimilar la ciencia y las matemáticas modernas occidentales a una velocidad asombrosa.
+## 7. Conclusión: El romanticismo matemático que sigue vivo en la actualidad
 
-## 5. El espíritu del Wasan que perdura en la actualidad
+Incluso hoy en día, alrededor de 900 Sangaku se conservan en santuarios y templos de todo Japón, siendo cuidadosamente preservados e investigados como importantes bienes culturales de la región. En los últimos años, en el campo de la educación matemática moderna, los problemas geométricos de los Sangaku están atrayendo nuevamente la atención como un excelente material didáctico para enseñar "la alegría de descubrir y explorar problemas por uno mismo" en lugar del aprendizaje memorístico.
 
-Hoy en día, se conservan alrededor de 900 tablillas Sangaku en santuarios y templos de todo Japón, cuidadosamente protegidas como valioso patrimonio cultural regional. Asimismo, en la educación matemática contemporánea, los problemas tipo rompecabezas del Sangaku están siendo revalorizados como excelente material didáctico para fomentar el pensamiento lógico y el espíritu de indagación.
-
-Los enigmas matemáticos que los genios del período Edo tallaron sobre tablas de madera trascienden el tiempo para transmitirnos, incluso hoy, la belleza intrínseca de las matemáticas y la inmensa alegría de resolverlas.
+La pasión por las matemáticas que la gente del período Edo grabó en tablillas de madera nos habla en silencio a través del tiempo, compartiendo el romanticismo de la exploración intelectual y la alegría de resolver en la actualidad.

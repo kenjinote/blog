@@ -1,6 +1,6 @@
 ---
-title: "Von der Mercator-Projektion zur Equal-Earth-Projektion: Eine Geschichte der Weltkartenprojektionen und der menschlichen Raumwahrnehmung"
-description: "Ein Rückblick auf die Entwicklungsgeschichte der Weltkartenprojektionen, der tiefgehend untersucht, wie die Menschheit von der Mercator-Projektion bis zur neuesten Equal-Earth-Projektion den irdischen Raum wahrgenommen und dargestellt hat."
+title: "Von der Mercator-Projektion zur Equal-Earth-Projektion: Die Geschichte der Kartenprojektionen und der räumlichen Wahrnehmung der Menschheit"
+description: "Ein Rückblick auf die Entwicklung der Weltkartenprojektionen, von der Mercator-Projektion bis zur modernen Equal-Earth-Projektion, und wie die Menschheit den Raum der Erde wahrgenommen und dargestellt hat."
 date: "2026-09-25T02:00:00+09:00"
 categories: ["history", "science"]
 tags: ["map", "geography", "history", "mathematics"]
@@ -8,186 +8,96 @@ slug: "history-of-map-projections"
 image: "eyecatch.jpg"
 ---
 
-# Einleitung: Das ultimative Paradoxon, eine Sphäre auf einer Ebene darzustellen
+Die "Weltkarte", die wir täglich sehen. Von digitalen Karten auf Smartphone-Bildschirmen bis hin zu großen Postern an den Wänden von Klassenzimmern sind Karten tief in unserem Leben verwurzelt. Aber haben Sie schon einmal intensiv über die Tatsache nachgedacht, dass eine auf einer flachen Oberfläche gezeichnete Weltkarte in Wirklichkeit nicht die "genaue Form der Erde" ist?
 
-Seit der Antike zeichnet die Menschheit Karten, um die Welt, in der sie lebt, zu verstehen und aufzuzeichnen. Dabei gab es jedoch immer ein gewaltiges Paradoxon: die Tatsache, dass "es mathematisch unmöglich ist, eine dreidimensionale Kugel (die Erde) verzerrungsfrei auf einer zweidimensionalen Ebene (einer Karte) abzuwickeln". Dies beruht auf einer mathematischen Wahrheit, die Carl Friedrich Gauß in seinem "Theorema Egregium" bewiesen hat: Flächen mit unterschiedlicher Krümmung können nicht längentreu aufeinander abgebildet werden.
+Die Erde hat eine Form, die einer dreidimensionalen Kugel nahekommt (streng genommen ein Rotationsellipsoid), aber die meisten Karten, die wir verwenden, sind zweidimensionale Ebenen. Dieser Akt der "Entfaltung einer dreidimensionalen Oberfläche in zwei Dimensionen" birgt ein unvermeidliches und bedeutendes mathematisches Paradoxon. In diesem Artikel werden wir die verborgene Geschichte und die Konflikte darüber entwirren, wie die Menschheit den riesigen Raum der Erde verstanden und auf einer ebenen Fläche dargestellt hat, angefangen bei der Mercator-Projektion, die das Zeitalter der Entdeckungen vorantrieb, über die Peters-Projektion, die politische Wellen schlug, bis hin zur modernen Equal-Earth-Projektion.
 
-Genauso wie eine Orangenschale beim Versuch, sie flach auszubreiten, unweigerlich reißt oder Falten wirft, entstehen auch beim Übertragen der Erde auf eine flache Karte immer irgendwelche "Verzerrungen". Die Geschichte der Kartenprojektion (Map Projection) ist nichts anderes als eine Geschichte von Kompromissen und Entscheidungen – wie die Menschheit mit dieser unvermeidlichen "Verzerrung" umgeht, welche Elemente (Fläche, Winkel, Entfernung, Richtung) sie opfert und welche sie beibehält.
+## 1. Das mathematische Dilemma, eine Kugel auf einer Ebene zu zeichnen
 
-Dieser Artikel befasst sich eingehend mit der Entwicklung von Kartenprojektionen, von der Entstehung der Mercator-Projektion im 16. Jahrhundert bis zur neuesten Equal-Earth-Projektion des 21. Jahrhunderts, unter Einbeziehung mathematischer, historischer und gesellschaftlicher Hintergründe.
+Um über die Geschichte der Kartenprojektionen zu sprechen, müssen wir zunächst die grundlegende mathematische Prämisse verstehen, die von "Carl Friedrich Gauß" bewiesen wurde. Der große Mathematiker Gauß aus dem 19. Jahrhundert leitete einen Lehrsatz der Differentialgeometrie ab, der als "Theorema Egregium" (Hervorragender Satz) bezeichnet wird. Nach diesem Satz hat die Gaußsche Krümmung einer Fläche die Eigenschaft, dass sie sich nicht ändert, selbst wenn die Fläche gebogen wird.
+
+Die Gaußsche Krümmung einer Kugel wie der Erde ist positiv, während die Gaußsche Krümmung einer Ebene null ist. Daher ist es mathematisch unmöglich, Flächen mit unterschiedlichen Gaußschen Krümmungen ohne Dehnung, Schrumpfung oder Risse aufeinander abzubilden. Es ist dasselbe Prinzip wie die Tatsache, dass man eine Mandarinenschale nicht schälen und nahtlos zu einem einzigen flachen Rechteck ausdehnen kann.
+
+Aufgrund dieses mathematischen Dilemmas kann keine Weltkarte die folgenden vier Elemente gleichzeitig genau beibehalten:
+
+1. **Fläche** (Flächentreue): Wird das tatsächliche Flächenverhältnis von Land und Meer beibehalten?
+2. **Winkel/Form** (Winkeltreue): Werden die tatsächlichen Umrisse der Topografie und die Winkel sich schneidender Linien beibehalten?
+3. **Entfernung** (Längentreue): Wird das Entfernungsverhältnis von einem bestimmten Punkt beibehalten?
+4. **Richtung** (Richtungstreue): Wird die Richtung von einem bestimmten Punkt korrekt beibehalten?
+
+Nur ein "Globus" erfüllt all diese Kriterien. Bei der Erstellung einer flachen Karte sind die Kartenmacher gezwungen, "Kompromisse" einzugehen, etwas zu opfern und etwas für ihren Zweck zu priorisieren. Man kann sagen, dass diese Wahl die Geschichte der Kartenprojektionen selbst ist.
 
 ```mermaid
 graph TD
-    A["Erde (3D-Kugel/Rotationsellipsoid)"] -- "Projektion (Projection)" --> B["Flache Karte (2D)"]
-    B -- "Winkel treu halten" --> C["Winkeltreue Projektion (z. B. Mercator-Projektion)"]
-    B -- "Fläche treu halten" --> D["Flächentreue Projektion (z. B. Mollweide-, Equal-Earth-Projektion)"]
-    B -- "Entfernung treu halten" --> E["Abstandstreue Projektion (z. B. mittabstandstreue Azimutalprojektion)"]
-    B -- "Verzerrung global verteilen" --> F["Vermittelnde Projektion (z. B. Winkel-Tripel-Projektion)"]
+    A["Kugel (Globus)"] -->|"Projektion in 2D"| B["Klassifizierung von Kartenprojektionen"]
+    B --> C["Winkeltreue Projektion (Erhaltung von Winkeln und Formen)"]
+    B --> D["Flächentreue Projektion (Erhaltung der Flächen)"]
+    B --> E["Vermittelnde Projektion (Fokus auf der Gesamtbalance)"]
+    
+    C --> F["Mercator-Projektion (1569)"]
+    D --> G["Gall-Peters-Projektion (1973)"]
+    D --> H["Equal-Earth-Projektion (2018)"]
+    E --> I["Robinson-Projektion (1963)"]
+    E --> J["Winkel-Tripel-Projektion (1921)"]
 ```
 
-## Kapitel 1: Das Zeitalter der Entdeckungen und die Geburt der Mercator-Projektion
+## 2. Die Innovation, die das Zeitalter der Entdeckungen unterstützte: Die Mercator-Projektion
 
-### 1.1 Die Qualen der Seefahrer
+Wenn es um die Weltkarte geht, die uns heute am vertrautesten ist, ist es wahrscheinlich die "Mercator-Projektion". Diese Karte, die 1569 von dem flämischen (heute Belgien) Geographen Gerardus Mercator veröffentlicht wurde, war eine bahnbrechende Erfindung, die die Geschichte der Menschheit stark veränderte.
 
-Während des Zeitalters der Entdeckungen vom späten 15. bis zum 16. Jahrhundert stachen europäische Seefahrer in unbekannte Gewässer in See. Da sich die Welt durch Ereignisse wie Kolumbus' Ankunft in Amerika und Magellans Weltumseglung dramatisch vergrößerte, stieg die Nachfrage nach genauen Seekarten explosionsartig an.
+Europa befand sich damals mitten im "Zeitalter der Entdeckungen" und machte sich auf den Weg zu unbekannten Kontinenten und Ozeanen. Es gab jedoch keine Orientierungspunkte auf den weiten Meeren, und Seeleute waren ständig der Gefahr ausgesetzt, Schiffbruch zu erleiden. Was sie brauchten, war eine "Seekarte, die sie zuverlässig an ihr Ziel bringen konnte".
 
-Die damaligen Seekarten verließen sich auf sogenannte Portolankarten, auf denen man sich an radial vom Zentrum ausgehenden Richtungs- oder Kompasslinien orientierte. Bei langen Reisen, insbesondere bei der Überquerung von Ozeanen, wurden die Fehler aufgrund der Kugelgestalt der Erde jedoch zu groß, um sie zu ignorieren. Die Seefahrer verlangten dringend nach einer Karte, bei der man das Ziel erreichen konnte, indem man einfach geradeaus in eine vom Kompass angezeigte, konstante Richtung fuhr (Loxodrome).
+Das größte Merkmal der Mercator-Projektion ist ihre "Winkeltreue". Längengrade und Breitengrade schneiden sich immer im rechten Winkel, und eine gerade Linie (Loxodrome), die zwei beliebige Punkte verbindet, stimmt mit der tatsächlichen Richtung des Kompasses überein. Das bedeutete, dass Seeleute einfach den Start- und Zielort auf der Karte mit einer geraden Linie verbinden, den Winkel (die Richtung) zwischen dieser Linie und dem Längengrad messen und den Kompass auf diesem Winkel halten mussten, um ihr Ziel sicher zu erreichen.
 
-### 1.2 Die Innovation von Gerardus Mercator
+Diese funktionale und bahnbrechende Karte war wirklich ein magisches Werkzeug für Navigatoren. Allerdings hatte diese Bequemlichkeit einen hohen Preis. Dies war die "extreme Verzerrung der Fläche".
+Bei der Mercator-Projektion wird eine Region umso mehr sowohl von Ost nach West als auch von Nord nach Süd vergrößert, je höher der Breitengrad ist, so dass Regionen näher an den Polen weitaus größer gezeichnet werden als ihre tatsächliche Fläche.
 
-Im Jahr 1569 veröffentlichte der flämische (heutiges Belgien) Geograf Gerardus Mercator eine bahnbrechende Weltkarte, die diesem dringenden Wunsch der Seefahrer entsprach. Das war die "Mercator-Projektion".
+Betrachtet man beispielsweise die Mercator-Projektion, erscheint Grönland etwa so groß wie der afrikanische Kontinent oder sogar größer. Vergleicht man jedoch die tatsächlichen Flächen, ist der afrikanische Kontinent etwa 14-mal so groß wie Grönland. In ähnlicher Weise werden Länder in hohen Breiten wie Russland und Kanada als Gebiete hervorgehoben, die viel größer sind als ihre tatsächliche Fläche.
 
-Das wichtigste Merkmal der Mercator-Projektion ist, dass "eine gerade Linie zwischen zwei beliebigen Punkten immer eine konstante Kompassrichtung anzeigt (Loxodromen werden als gerade Linien dargestellt)". So konnten Seefahrer die Kompassrichtung zu ihrem Ziel einfach ermitteln, indem sie ein Lineal auf die Karte legten und eine gerade Linie zogen.
+Mercator selbst hatte beabsichtigt, dass diese Karte ausschließlich für die "Navigation" verwendet werden sollte. Aufgrund ihres geradlinigen und klaren Erscheinungsbildes wurde sie jedoch auch auf Karten für das allgemeine Publikum sowie in der Schulausbildung über die Navigation hinaus weit verbreitet übernommen und verzerrte infolgedessen die "räumliche Wahrnehmung der Welt" der Menschen für Jahrhunderte.
 
-### 1.3 Die mathematische Grundlage der Mercator-Projektion
+## 3. Die Projektion von Politik und Ideologie: Die Kontroverse um die Peters-Projektion
 
-Die Mercator-Projektion kann als eine Art Zylinderprojektion betrachtet werden. Man kann sich vorstellen, dass ein Zylinder um den Äquator der Erde gewickelt ist und die Karte durch eine Lichtquelle im Erdmittelpunkt auf die Innenseite des Zylinders projiziert wird. Mercator verwendete jedoch keine einfache Projektion, sondern passte den Abstand der Breitengrade durch mathematische Berechnungen an.
+Zu Beginn des 20. Jahrhunderts wuchs die Kritik an der anhaltenden allgemeinen Verwendung der Mercator-Projektion. Der Hintergrund dafür war nicht nur das Streben nach rein geografischer Genauigkeit, sondern auch eine tief verflochtene politische und soziale Ideologie.
 
-Wenn der Längengrad $\lambda$, der Breitengrad $\phi$ und die Koordinaten auf der Karte $(x, y)$ sind, lautet die Projektionsformel der Mercator-Projektion wie folgt (wobei die Erde als perfekte Kugel mit dem Radius $R$ angenommen wird).
+1973 übte der deutsche Historiker Arno Peters scharfe Kritik und erklärte: "Die Mercator-Projektion stellt die Industrieländer Europas (die in den hohen Breiten der nördlichen Hemisphäre liegen) ungerechtfertigt groß dar, während sie die Gebiete nahe dem Äquator, in denen es viele Entwicklungsländer gibt (wie Afrika, Südamerika und Südostasien), klein erscheinen lässt. Dies ist ein Ausdruck der kolonialistischen Vorherrschaft der Weißen."
 
-$$ x = R(\lambda - \lambda_0) $$
-$$ y = R \ln \left( \tan\left(\frac{\pi}{4} + \frac{\phi}{2}\right) \right) $$
+Was er als "gleichere und korrektere Weltkarte" mit großem Aufwand ankündigte, war die "Peters-Projektion" (offiziell Gall-Peters-Projektion). Diese Karte war eine "flächentreue Projektion", die darauf spezialisiert war, das tatsächliche Flächenverhältnis in allen Regionen der Welt genau widerzuspiegeln.
 
-Hierbei ist $\lambda_0$ der Referenz-Mittelmeridian. Wie diese Gleichung zeigt, steigt der Wert von $y$ in höheren Breiten rapide an und divergiert an den Polen ($\phi = \pm \pi/2$) gegen Unendlich ($\infty$).
+Wenn man sich die Peters-Projektion ansieht, entsteht ein Bild, das sich sehr von der Welt unterscheidet, an die wir gewöhnt sind. Europa wird sehr klein gezeichnet, und umgekehrt sind die Kontinente Afrika und Südamerika vertikal lang, und ihre enorme Größe fällt auf. Dies wurde zu einer starken visuellen Waffe für die Länder der Dritten Welt, um ihre Präsenz rechtmäßig zu behaupten. Die UNESCO (Organisation der Vereinten Nationen für Erziehung, Wissenschaft und Kultur) und viele internationale NGOs unterstützten und übernahmen diese Karte aus Gründen der Fairness.
 
-Das Folgende ist ein einfaches Code-Snippet zur Koordinatentransformation in der Mercator-Projektion mit Python.
+Es gab jedoch starken Widerstand von Experten der Kartografie. Um die Fläche genau zu machen, wurden die "Formen" (Umrisse) der Kontinente in der Peters-Projektion extrem verzerrt. Länder in der Nähe des Äquators erscheinen vertikal gestreckt, während Regionen in hohen Breiten horizontal gequetscht wirken. Es entbrannten heftige Debatten mit Argumenten wie "die Form ist unnatürlich und für den praktischen Gebrauch ungeeignet" und "Peters' Behauptungen sind nichts weiter als politische Propaganda".
 
-```python
-import math
+Diese "Peters-Projektionskontroverse" war ein historisches Ereignis, das hervorhob, dass Karten nicht nur Ausdruck geografischer Informationen sind, sondern auch Medien, die das Weltbild, die Machtverhältnisse und die politischen Ideologien derjenigen prägen, die sie betrachten.
 
-def latlon_to_mercator(lat, lon, R=6378137.0):
-    """
-    Funktion zur Umrechnung von Breiten- und Längengrad in XY-Koordinaten (Meter) der Mercator-Projektion
-    Entspricht der Berechnung von EPSG:3857 (Web Mercator)
-    """
-    # Breiten- und Längengrad in Bogenmaß umwandeln
-    lat_rad = math.radians(lat)
-    lon_rad = math.radians(lon)
-    
-    # X-Koordinate berechnen
-    x = R * lon_rad
-    
-    # Y-Koordinate berechnen (Umkehrfunktion der Gudermannfunktion)
-    y = R * math.log(math.tan(math.pi / 4.0 + lat_rad / 2.0))
-    
-    return x, y
+## 4. Auf der Suche nach einem Kompromiss zwischen Schönheit und Praktikabilität: Vermittelnde Projektionen
 
-# Beispiel: Berechnung für Tokio (Breitengrad 35.6812, Längengrad 139.7671)
-x, y = latlon_to_mercator(35.6812, 139.7671)
-print(f"Tokyo (Mercator): X={x:.2f}, Y={y:.2f}")
-```
+Die "Lüge der Fläche" der Mercator-Projektion und die "Verzerrung der Form" der Peters-Projektion. Da beide extreme Elemente aufwiesen, begannen Kartografen nach "einer Karte zu suchen, die weder in der Fläche noch in der Form perfekt ist, aber am natürlichsten und ausgewogensten aussieht". Dies war die Geburtsstunde der "vermittelnden Projektion".
 
-### 1.4 Licht und Schatten der Mercator-Projektion
+Ein typisches Beispiel für eine vermittelnde Projektion ist die "Robinson-Projektion", die 1963 von dem amerikanischen Geographen Arthur H. Robinson veröffentlicht wurde. Robinson leitete die Karte nicht aus einer mathematischen Formel ab, sondern ging von der visuellen und künstlerischen Intuition aus, "wie sie dem menschlichen Auge erscheint". Durch wiederholte Simulationen suchte er manuell nach einem Kompromiss, bei dem die Formen der Landmassen nicht extrem verzerrt waren und das Flächenverhältnis nicht allzu weit abwich, und wandelte dies später in mathematische Koordinaten um.
 
-Da die Mercator-Projektion "Winkeltreue" (die Winkel bleiben korrekt erhalten) aufweist, stimmen lokale Formen mit der Realität überein. Der Preis dafür ist jedoch der fatale Nachteil, dass die "Fläche" extrem verzerrt ist. Je höher der Breitengrad, desto größer die Vergrößerung. So wird Grönland etwa gleich groß dargestellt wie der afrikanische Kontinent, obwohl Afrika in Wirklichkeit etwa 14-mal so groß ist wie Grönland.
+Die Robinson-Projektion hat eine schöne, insgesamt abgerundete elliptische Form, die für unsere Augen sehr natürlich wirkt. Als 1988 die angesehene National Geographic Society die Robinson-Projektion als ihre offizielle Weltkarte übernahm, wurde sie zu einem der weltweiten Standards.
 
-Diese Flächenverzerrung führte später zu politischen und gesellschaftlichen Problemen. Da hochgelegene Gebiete der Nordhalbkugel wie Europa und Nordamerika übertrieben groß dargestellt werden, während die Entwicklungsländer in der Nähe des Äquators klein gezeichnet werden, wurde die Kritik laut, dass dies eine "eurozentrische Weltsicht einprägt".
+Noch später, im Jahr 1998, wechselte die National Geographic Society zur "Winkel-Projektion" (Winkel-Tripel-Projektion). Diese von Oswald Winkel entworfene Projektion verfolgt den Ansatz, drei Verzerrungen (Tripel bedeutet auf Deutsch "drei") – Fläche, Winkel und Entfernung – zu minimieren, und gilt als noch weniger verzerrt und ausgewogener als die Robinson-Projektion. Vermittelnde Projektionen ähnlich der Winkel- oder Robinson-Projektion sind heute in vielen Lehrbüchern und allgemeinen Weltkarten der Mainstream.
 
-## Kapitel 2: Das Streben nach Flächengenauigkeit: Die Genealogie der flächentreuen Projektionen
+## 5. Moderne Herausforderungen und neue Ausdrucksformen: Authagraph und die Equal-Earth-Projektion
 
-Als Reaktion auf die Kritik an der Flächenverzerrung der Mercator-Projektion wurden viele "flächentreue Projektionen" entwickelt, bei denen das Flächenverhältnis korrekt erhalten bleibt.
+Auch im 21. Jahrhundert schreitet die Entwicklung der Kartenprojektionen weiter voran. In der heutigen Zeit, in der globale Umweltprobleme und Globalisierung voranschreiten, sind wir gezwungen, die Erde aus neuen Perspektiven neu zu betrachten.
 
-### 2.1 Sinusoidal-Projektion und Mollweide-Projektion
+Ein solcher Versuch ist die "Authagraph-Weltkarte", die von dem japanischen Architekten Hajime Narukawa und anderen erfunden wurde. Diese Karte verwendet eine originelle Methode, bei der die Erdoberfläche in 96 gleiche Teile geteilt, auf einen regelmäßigen Tetraeder projiziert und dann zu einer rechteckigen ebenen Karte entfaltet wird. Der größte Vorteil besteht darin, dass die Karte unendlich oft nebeneinandergelegt werden kann, unabhängig davon, welcher Teil im Zentrum steht, wobei das Flächenverhältnis erhalten bleibt. Sie eignet sich für die Betrachtung der Welt aus einer globalen Perspektive ohne Zentrum, wie z. B. bei Netzwerken von See- und Flugrouten und den Auswirkungen des Klimawandels, und wurde 2016 mit dem Good Design Grand Award ausgezeichnet.
 
-Im 17. Jahrhundert verbreitete sich die von dem Franzosen Nicolas Sanson und anderen verwendete "Sinusoidal-Projektion (Sanson-Flamsteed-Projektion)". Dies ist eine flächentreue Projektion, bei der die Breitengrade äquidistante parallele Linien und die Längengrade Sinuskurven sind. Obwohl die Verzerrung in der Nähe des Mittelmeridians gering ist, hatte sie den Nachteil einer starken Formverzerrung in den Randgebieten (insbesondere in hohen Breiten).
+Und die neue Projektion, die in den letzten Jahren am meisten Aufmerksamkeit erregt hat, ist die "Equal-Earth-Projektion", die 2018 von drei Kartografen – Bojan Šavrič, Tom Patterson und Bernhard Jenny – veröffentlicht wurde.
 
-Eine Verbesserung davon ist die "Mollweide-Projektion", die 1805 vom deutschen Mathematiker Carl Mollweide vorgestellt wurde. Die Mollweide-Projektion fasst die gesamte Erde in einer einzigen Ellipse zusammen und mildert die Formverzerrung in hohen Breiten im Vergleich zur Sinusoidal-Projektion.
+Die Equal-Earth-Projektion ist eine neue "flächentreue Projektion (eine Karte mit korrekter Fläche)", die entwickelt wurde, um die "extreme Unnatürlichkeit der Formen" zu überwinden, unter der die Peters-Projektion litt. Ihr Ziel war eine Karte, die ein augenfreundliches, abgerundetes Erscheinungsbild ähnlich der Robinson-Projektion aufweist und gleichzeitig sicherstellt, dass das Flächenverhältnis jedes Kontinents und Landes absolut korrekt ist.
 
-### 2.2 Goodes Homolosine-Projektion (Unterbrochene Projektion)
+Eines der Motive für die Entwicklung war ein starkes Gefühl der Krise, dass bei der Visualisierung von Daten zum Klimawandel und zu Umweltproblemen Missverständnisse entstehen können, wenn die Fläche nicht genau ist. Wenn man beispielsweise die Auswirkungen von Entwaldung oder des Anstiegs des Meeresspiegels zeigt, überschätzt die Mercator-Projektion die Auswirkungen in den hohen Breiten. Die Equal-Earth-Projektion ist ein innovatives Design, das Schönheit und wissenschaftliche Genauigkeit verbindet, was nur in der Neuzeit möglich wurde, in der die Entwicklung der Computertechnologie hochkomplexe Berechnungen ermöglicht hat. Derzeit wird sie zunehmend auf Klimadatenkarten von Organisationen wie der NASA (National Aeronautics and Space Administration) und GISS (Goddard Institute for Space Studies) eingesetzt.
 
-Im 20. Jahrhundert wurden weitere Versuche unternommen, die Formverzerrung zu verringern und gleichzeitig die Flächentreue zu erhalten. Im Jahr 1923 veröffentlichte der amerikanische Geograf John Paul Goode die "Goode-Projektion (Homolosine-Projektion)".
+## Fazit: Karten sind Weltanschauungen
 
-Diese verwendete einen unkonventionellen Ansatz namens "unterbrochene Projektion", bei dem die Sinusoidal-Projektion für niedrige Breiten und die Mollweide-Projektion für hohe Breiten zusammengefügt wurden, und außerdem Teile des Ozeans (oder der Kontinente) eingeschnitten wurden. Dies ermöglichte es, die Formverzerrung der einzelnen Kontinente auf ein Minimum zu reduzieren und gleichzeitig die Welt mit den richtigen Flächenverhältnissen zu betrachten. Es war jedoch schwierig, die kontinuierliche Form der Erde intuitiv zu erfassen, da die Ozeane aufgerissen waren.
+Ein Blick auf die Geschichte der Kartenprojektionen, von der Mercator-Projektion bis zur Equal-Earth-Projektion, zeigt, dass sie nicht nur die Entwicklung von Vermessungstechniken und Mathematik widerspiegelt, sondern auch den starken Willen der Menschen in jeder Epoche darüber, "wie sie die Erde sehen wollen und wie sie genutzt werden sollte".
 
-## Kapitel 3: Der Kalte Krieg und die Kontroverse um die Peters-Projektion
+Winkeltreue, die das Leben von Seeleuten rettete und den globalen Handel ermöglichte.
+Flächentreue, die Probleme des Nord-Süd-Gefälles und der Ungleichheit ansprach und verschiedene Perspektiven einbrachte.
+Und neue Ausdrucksformen, die allgemeine Harmonie anstreben und zur Lösung von Problemen in unserer komplexen modernen Gesellschaft beitragen.
 
-Dass Kartenprojektionen nicht nur eine Frage der Mathematik oder Geografie sind, sondern sich zu einer großen Kontroverse entwickelten, in die ideologische Konflikte verwickelt waren, zeigt der Aufruhr um die "Peters-Projektion" in den 1970er Jahren.
-
-### 3.1 Die Gall-Peters-Projektion und die Behauptungen von Arno Peters
-
-1973 kritisierte der deutsche Historiker Arno Peters heftig: "Die Mercator-Projektion ist eine arrogante eurozentrische Karte, die die Dritte Welt absichtlich klein erscheinen lässt", und veröffentlichte seine eigene "Peters-Projektion". Er bewarb sie stark als "eine wahrhaft faire, neue Weltkarte, die alle Völker gleich darstellt".
-
-Die Peters-Projektion war eine flächentreue Projektion, sodass Gebiete in hohen Breiten nicht extrem vergrößert wurden wie bei der Mercator-Projektion. Aus diesem Grund unterstützten UN-Organisationen und viele NGOs sowie religiöse Gruppen diese Karte und verwendeten sie weithin als Aufklärungsposter.
-
-### 3.2 Die heftige Reaktion der kartografischen Fachwelt
-
-Professionelle Kartografen reagierten jedoch heftig auf diese Veröffentlichung von Peters. Die Gründe dafür sind wie folgt:
-
-1. **Verdacht auf Plagiat**: Mathematisch gesehen war die Peters-Projektion exakt identisch mit der "Gallschen orthografischen Projektion", die 1855 vom Briten James Gall veröffentlicht wurde. Sie war in der Kartografie-Gemeinschaft bereits bekannt und kein Originalwerk von Peters.
-2. **Extreme Formverzerrung**: Durch die Verwendung einer Zylinderprojektion zur Erhaltung der Flächentreue wurden niedrige Breiten (Afrika und Südamerika) vertikal extrem gestreckt und hohe Breiten (Europa und Kanada) horizontal zusammengepresst, was zu sehr unschönen Formen führte.
-3. **Nutzung als Propaganda**: Kartografen warfen Peters vor, ideologische Propaganda zu betreiben, indem er den mathematischen Kompromiss der Kartenprojektion (die Wahrung der Fläche verzerrt die Form) ignorierte und die Mercator-Projektion ungerechtfertigt verteufelte.
-
-Diese Kontroverse machte der Welt deutlich, dass Karten nicht nur objektive Abbildungen der Realität sind, sondern Medien, die das Weltbild und das politische Bewusstsein der Betrachtenden stark beeinflussen.
-
-## Kapitel 4: Die Kunst des Kompromisses: Der Aufstieg der vermittelnden Projektionen
-
-Wenn man versucht, Fläche oder Form perfekt zu erhalten, wird das jeweils andere extrem geopfert. Daher wurden in der zweiten Hälfte des 20. Jahrhunderts "vermittelnde Projektionen (Compromise projection)" zum Mainstream für allgemeine Weltkarten. Sie verwarfen die strikte Flächentreue oder Winkeltreue und strebten nach "natürlichem Aussehen" und "geringer Gesamtverzerrung".
-
-### 4.1 Robinson-Projektion
-
-Die "Robinson-Projektion", die 1963 vom amerikanischen Kartografen Arthur H. Robinson entwickelt wurde, ging nicht von einer mathematischen Formel aus. Stattdessen wählte er einen einzigartigen Ansatz: Er bestimmte die Länge und den Abstand der Breitenkreise empirisch, wobei er der "Ästhetik des Aussehens" höchste Priorität einräumte.
-
-Diese Projektion erlangte weltweite Bekanntheit, nachdem die National Geographic Society sie 1988 als ihre offizielle Weltkarte angenommen hatte.
-
-### 4.2 Winkel-Tripel-Projektion
-
-Später, im Jahr 1998, ersetzte die National Geographic Society die Robinson-Projektion durch die "Winkel-Tripel-Projektion (Winkel Tripel projection)". Diese Projektion, die 1921 vom deutschen Kartografen Oswald Winkel entwickelt wurde, ist das arithmetische Mittel aus der Aitow-Projektion und der Plattkarte. "Tripel" ist das deutsche Wort für "dreifach" und zeigt an, dass man versuchte, drei Verzerrungen zu minimieren: Fläche, Winkel und Entfernung. Sie wird auch heute noch in vielen Lehrbüchern und Atlanten als Standard-Weltkarte verwendet.
-
-## Kapitel 5: Neue Herausforderungen im digitalen Zeitalter: Die Geburt der Equal-Earth-Projektion
-
-Mit Beginn des 21. Jahrhunderts veränderte sich unser Umgang mit Karten dramatisch, hauptsächlich durch die Verbreitung von Web-Kartendiensten wie Google Maps. Ironischerweise verwenden diese Webkarten wieder die "Mercator-Projektion (Web-Mercator)", um reibungslose Zoom-Vorgänge zu ermöglichen (in den letzten Jahren wurde dies verbessert, sodass beim Herauszoomen auf ein 3D-Globusmodell umgeschaltet wird).
-
-Doch bei der Diskussion globaler Themen wie dem Klimawandel oder globaler Ungleichheit blieb die Notwendigkeit, die Welt mit "genauen Flächenverhältnissen" zu visualisieren, hoch, weshalb eine neue flächentreue Projektion gefordert wurde.
-
-### 5.1 Die Herausforderung von Bojan Šavrič und anderen
-
-Im Jahr 2018 veröffentlichten die drei Kartografen Bojan Šavrič, Tom Patterson und Bernhard Jenny eine völlig neue flächentreue Projektion, die "Equal-Earth-Projektion (Equal Earth projection)".
-
-Ihr Ziel war klar:
-"Eine Weltkarte zu erstellen, die keine extremen Formverzerrungen wie die Peters-Projektion aufweist, ein natürliches und schönes Aussehen wie die Robinson-Projektion hat und gleichzeitig strenge Flächentreue besitzt."
-
-### 5.2 Die mathematische Innovation der Equal-Earth-Projektion
-
-Die Equal-Earth-Projektion ähnelt in ihrem äußeren Erscheinungsbild sehr der Robinson-Projektion, erreicht aber durch komplexe Polynome eine strikte Flächentreue. Ihre Projektionsgleichungen lauten wie folgt:
-
-Sei $\phi$ der Breitengrad, $\lambda$ der Längengrad (die Differenz zum Mittelmeridian) und $\theta$ ein Winkel, der $\sin \theta = \frac{\sqrt{3}}{2} \sin \phi$ erfüllt.
-
-$$ x = \frac{2\sqrt{3} \lambda \cos \theta}{3 (9 A_4 \theta^8 + 7 A_3 \theta^6 + 3 A_2 \theta^2 + A_1)} $$
-$$ y = A_4 \theta^9 + A_3 \theta^7 + A_2 \theta^3 + A_1 \theta $$
-
-Hierbei sind die Koeffizienten wie folgt:
-$ A_1 = 1.340264 $
-$ A_2 = -0.081106 $
-$ A_3 = 0.000893 $
-$ A_4 = 0.003796 $
-
-Dank dieser komplexen mathematischen Formeln gelang es der Equal-Earth-Projektion, die richtigen Flächenverhältnisse darzustellen und gleichzeitig die natürliche Form der Kontinente beizubehalten, ohne dass die Äquatorregionen gestreckt oder die hohen Breiten extrem zusammengequetscht werden.
-
-### 5.3 Verbreitung als Open Source
-
-Das Bahnbrechende an der Equal-Earth-Projektion war nicht nur ihr Design, sondern auch ihr Ansatz zur Verbreitung. Die Entwickler veröffentlichten die mathematischen Formeln dieser Projektion in der Public Domain (CC0) und setzten sich dafür ein, dass sie schnell in Open-Source-GIS-Software wie QGIS und Datenvisualisierungsbibliotheken wie D3.js implementiert wurde.
-
-Infolgedessen wurde sie im Handumdrehen von Wissenschaftlern und Medien weltweit akzeptiert und beispielsweise in den Karten der globalen Temperaturanomalien der NASA (National Aeronautics and Space Administration) verwendet.
-
-```mermaid
-sequenceDiagram
-    participant Cartographers as "Šavrič u. a. (Entwickler)"
-    participant OpenSource as "Open-Source-Community"
-    participant GlobalUsers as "NASA / Nachrichtenmedien / Bildungseinrichtungen"
-    
-    Cartographers->>OpenSource: "Veröffentlichung der Formeln für die Equal-Earth-Projektion (CC0)"
-    Cartographers->>OpenSource: "Bereitstellung von Implementierungs-Patches für GIS und D3.js"
-    OpenSource-->>Cartographers: "Zusammenführung in Bibliotheken abgeschlossen"
-    GlobalUsers->>OpenSource: "Nutzung der neuen flächentreuen Projektion zur Datenvisualisierung"
-    GlobalUsers-->>GlobalUsers: "Genaue Flächendarstellung von Klimawandel-Daten"
-```
-
-## Fazit: Karten erschaffen die Welt
-
-Die Geschichte von der Mercator-Projektion bis zur Equal-Earth-Projektion ist auch die Geschichte der ideologischen Veränderungen der Menschheit und der Frage, "wie wir die Welt, in der wir leben, wahrnehmen und vermitteln wollen".
-
-Im Zeitalter der Entdeckungen hatte "das sichere Erreichen des Ziels" oberste Priorität (Winkeltreue), während im Zeitalter der Kolonialherrschaft Karten bevorzugt wurden, die die Größe des eigenen Landes hervorhoben. In der Zeit des Kalten Krieges sorgten Karten, die eine Korrektur des Nord-Süd-Gefälles forderten, für Kontroversen, und heute besteht eine Nachfrage nach Karten (Flächentreue + natürliche Form), um globale Herausforderungen wie den Klimawandel objektiv zu betrachten.
-
-**"Karten sind sowohl Spiegel, die die Welt reflektieren, als auch Linsen, die die Welt erschaffen."**
-
-Wenn wir eine Karte betrachten, müssen wir uns immer bewusst sein, auf welchen mathematischen Kompromissen sie beruht und mit welchen Absichten sie gezeichnet wurde. Die Equal-Earth-Projektion ist eine der neuesten "Linsen", die uns zeigt, wie wir in der heutigen Zeit unsere Sicht auf die Welt überdenken wollen.
+Die Weltkarte, die wir betrachten, ist keineswegs die absolute "wahre Form". Es ist eine von vielen "Interpretationen", durch die die Menschheit die unendlich weite dreidimensionale Erde auf der Grundlage ihrer eigenen Zwecke und Werte in zwei Dimensionen übersetzt hat. Wenn Sie das nächste Mal eine Weltkarte betrachten, sollten Sie über die Geschichte von Hunderten von Jahren an Versuchen, Irrtümern und Konflikten der Kartenmacher nachdenken, die in diesem einen Blatt Papier (oder auf diesem einen Bildschirm) steckt. Wie wir die Welt sehen, wird davon geprägt, welche Karte wir wählen.

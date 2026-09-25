@@ -1,6 +1,6 @@
 ---
-title: "Desde la proyección de Mercator hasta la proyección Equal Earth: La historia de las proyecciones de mapas del mundo y la cognición espacial humana"
-description: "Repasando la historia de la evolución de las proyecciones de mapas del mundo, desde la proyección de Mercator hasta la más reciente proyección Equal Earth, exploramos profundamente cómo la humanidad ha reconocido y representado el espacio terrestre."
+title: "De la proyección de Mercator a Equal Earth: La historia de las proyecciones cartográficas y la cognición espacial humana"
+description: "Un repaso a la historia de la evolución de las proyecciones de los mapas mundiales, explorando profundamente cómo la humanidad ha percibido y representado el espacio de la Tierra, desde la proyección de Mercator hasta la más reciente proyección Equal Earth."
 date: "2026-09-25T02:00:00+09:00"
 categories: ["history", "science"]
 tags: ["map", "geography", "history", "mathematics"]
@@ -8,186 +8,96 @@ slug: "history-of-map-projections"
 image: "eyecatch.jpg"
 ---
 
-# Introducción: La paradoja definitiva de dibujar una esfera en un plano
+El "mapamundi" que vemos a diario. Desde los mapas digitales que aparecen en la pantalla de nuestros teléfonos inteligentes hasta los grandes pósteres colgados en las paredes de las aulas, los mapas están profundamente arraigados en nuestras vidas. Sin embargo, ¿has pensado alguna vez en el hecho de que un mapamundi dibujado en una superficie plana en realidad no es la "verdadera forma de la Tierra"?
 
-Desde la antigüedad, la humanidad ha dibujado mapas para comprender y registrar el mundo en el que vivimos. Sin embargo, siempre ha existido una enorme paradoja. Es el hecho de que "es matemáticamente imposible desplegar una esfera tridimensional (la Tierra) en un plano bidimensional (un mapa) sin distorsión". Esto se basa en la verdad matemática demostrada por Carl Friedrich Gauss en su "Teorema Egregium" (Teorema notable), que establece que superficies con curvatura diferente no pueden mapearse isométricamente entre sí.
+La Tierra tiene una forma cercana a una esfera tridimensional (estrictamente hablando, un elipsoide de revolución), pero muchos de los mapas que utilizamos son planos bidimensionales. En el acto de "desplegar una superficie tridimensional en dos dimensiones", existe una paradoja matemática importante e inevitable. En este artículo, desentrañaremos la historia desconocida y los conflictos de cómo la humanidad ha percibido el enorme espacio que es la Tierra y cómo lo ha representado en un plano, desde la proyección de Mercator que impulsó la Era de los Descubrimientos, pasando por la proyección de Peters que causó un revuelo político, hasta la moderna proyección Equal Earth.
 
-Así como inevitablemente se rasga o arruga cuando se intenta aplanar la cáscara de una mandarina, siempre se produce alguna "distorsión" al convertir la Tierra en un mapa plano. La historia de las proyecciones cartográficas (Map Projection) no es más que la historia de cómo la humanidad ha afrontado esta inevitable "distorsión", y es una historia de compromiso y elección sobre qué elementos (área, ángulo, distancia, dirección) sacrificar y cuáles preservar.
+## 1. El dilema matemático de dibujar una esfera en un plano
 
-En este artículo, profundizaremos en la evolución de las proyecciones cartográficas, desde el nacimiento de la proyección de Mercator en el siglo XVI hasta la más reciente proyección Equal Earth del siglo XXI, mezclando antecedentes matemáticos, históricos y sociales.
+Para hablar de la historia de las proyecciones cartográficas, la primera premisa matemática que hay que entender es la demostrada por "Carl Friedrich Gauss". En el siglo XIX, el gran matemático Gauss derivó un teorema de la geometría diferencial llamado "Teorema Egregium" (Teorema Destacable). Según este teorema, la curvatura gaussiana de una superficie tiene la propiedad de que no cambia incluso si la superficie se dobla.
+
+La curvatura gaussiana de una superficie esférica como la Tierra es positiva, pero la de un plano es cero. Por tanto, es matemáticamente imposible cartografiar superficies con diferente curvatura gaussiana entre sí sin estirarlas, encogerlas o romperlas. Es el mismo principio por el que no se puede pelar una mandarina y estirar su cáscara en un solo rectángulo plano sin dejar huecos.
+
+Debido a este dilema matemático, ningún mapamundi puede mantener los cuatro elementos siguientes de forma precisa y simultánea:
+
+1. **Área** (Equivalencia): ¿Se mantiene la proporción del área real de la tierra y el mar?
+2. **Ángulo/Forma** (Conformidad): ¿Se mantienen los contornos reales del terreno y los ángulos de las líneas que se cruzan?
+3. **Distancia** (Equidistancia): ¿Se mantiene la proporción de las distancias desde un punto específico?
+4. **Dirección** (Acimut): ¿Se mantiene correctamente la dirección desde un punto específico?
+
+Lo único que cumple todo esto es un "globo terráqueo". Al crear mapas planos, los cartógrafos se ven obligados a hacer un "compromiso" en el que sacrifican algo y priorizan otra cosa por un propósito. Esta elección puede decirse que es la historia misma de las proyecciones cartográficas.
 
 ```mermaid
 graph TD
-    A["Tierra (esfera tridimensional/elipsoide de revolución)"] -- "Proyección (Projection)" --> B["Mapa plano (bidimensional)"]
-    B -- "Mantiene los ángulos correctamente" --> C["Proyección conforme (proyección de Mercator, etc.)"]
-    B -- "Mantiene el área correctamente" --> D["Proyección equivalente (proyección de Mollweide, proyección Equal Earth, etc.)"]
-    B -- "Mantiene las distancias correctamente" --> E["Proyección equidistante (proyección acimutal equidistante, etc.)"]
-    B -- "Dispersa la distorsión de forma global" --> F["Proyección de compromiso (proyección de Winkel, etc.)"]
+    A["Esfera (Globo terráqueo)"] -->|"Proyección a 2D"| B["Clasificación de las proyecciones cartográficas"]
+    B --> C["Proyección conforme (mantiene ángulos y formas)"]
+    B --> D["Proyección equivalente (mantiene áreas)"]
+    B --> E["Proyección de compromiso (prioriza el equilibrio general)"]
+    
+    C --> F["Proyección de Mercator (1569)"]
+    D --> G["Proyección de Gall-Peters (1973)"]
+    D --> H["Proyección Equal Earth (2018)"]
+    E --> I["Proyección de Robinson (1963)"]
+    E --> J["Proyección de Winkel (1921)"]
 ```
 
-## Capítulo 1: La era de los descubrimientos y el nacimiento de la proyección de Mercator
+## 2. La innovación que sustentó la Era de los Descubrimientos: La proyección de Mercator
 
-### 1.1 La angustia de los navegantes
+Para nosotros hoy en día, el mapamundi más familiar es probablemente la "proyección de Mercator". Presentado en 1569 por el geógrafo flamenco (de la actual Bélgica) Gerardus Mercator, este mapa fue un invento revolucionario que cambiaría en gran medida la historia de la humanidad.
 
-Durante la era de los descubrimientos, desde finales del siglo XV hasta el siglo XVI, los navegantes europeos se aventuraron en mares desconocidos. Con la espectacular expansión del mundo, como la llegada de Colón a América y la circunnavegación de la Tierra por Magallanes, la demanda de cartas náuticas precisas se disparó.
+En ese momento, Europa se encontraba en medio de la "Era de los Descubrimientos", aventurándose hacia continentes y océanos desconocidos. Sin embargo, en el vasto mar no había puntos de referencia, y los marineros siempre estaban expuestos al riesgo de naufragio. Lo que buscaban era "una carta de navegación que les permitiera llegar a su destino de manera segura".
 
-Las cartas náuticas de la época, llamadas portulanos, se basaban en líneas de dirección (líneas de rumbo) trazadas radialmente desde un centro para navegar. Sin embargo, en viajes largos, especialmente en viajes transoceánicos, los errores debidos a que la Tierra es una esfera ya no podían ignorarse. Los navegantes demandaban encarecidamente "un mapa con el que se pudiera llegar al destino viajando en línea recta a lo largo de un rumbo de brújula constante (loxodrómica)".
+La mayor característica de la proyección de Mercator es su "conformidad". Los meridianos y paralelos siempre se cruzan en ángulo recto, y una línea recta que conecta dos puntos cualesquiera (línea loxodrómica) coincide con la dirección que indica una brújula real. En otras palabras, un marinero solo tenía que conectar el punto de partida y el destino con una línea recta en el mapa, medir el ángulo (dirección) entre esa línea y el meridiano, y simplemente avanzar manteniendo la brújula en ese ángulo para llegar con seguridad a su destino.
 
-### 1.2 La innovación de Gerardus Mercator
+Este mapa funcional e innovador era verdaderamente una herramienta mágica para los navegantes. Sin embargo, detrás de esta conveniencia había un enorme sacrificio. Ese es la "distorsión extrema del área".
+En la proyección de Mercator, a medida que aumenta la latitud, el mapa se expande tanto de este a oeste como de norte a sur, de modo que cuanto más te acercas a los polos, las áreas se dibujan mucho más grandes que su tamaño real.
 
-En 1569, el geógrafo flamenco (actual Bélgica) Gerardus Mercator publicó un mapa mundial revolucionario que respondía a este apremiante deseo de los navegantes. Esa es la "proyección de Mercator".
+Por ejemplo, al mirarlo en la proyección de Mercator, Groenlandia parece tan grande o incluso más grande que el continente africano. Sin embargo, si comparamos las áreas reales, el continente africano es unas 14 veces más grande que Groenlandia. Del mismo modo, países de altas latitudes como Rusia y Canadá se exageran como territorios mucho más vastos que su área real.
 
-La característica más importante de la proyección de Mercator es que "una línea recta que conecta dos puntos arbitrarios siempre muestra un rumbo de brújula constante (las líneas loxodrómicas se representan como líneas rectas)". Gracias a esto, los navegantes podían conocer el rumbo de la brújula hasta su destino simplemente colocando una regla en el mapa y trazando una línea recta.
+El propio Mercator tenía la intención de que este mapa fuera estrictamente "para la navegación". Sin embargo, debido a la belleza limpia de su apariencia lineal, llegó a ser ampliamente adoptado para mapas de uso general distintos de la navegación y para la educación escolar, y como resultado terminó distorsionando la "cognición espacial del mundo" de las personas durante varios siglos.
 
-### 1.3 El respaldo matemático de la proyección de Mercator
+## 3. La proyección de la política y la ideología: La controversia de la proyección de Peters
 
-La proyección de Mercator puede considerarse un tipo de proyección cilíndrica. Es la imagen de un cilindro envuelto alrededor del ecuador de la Tierra, con una fuente de luz desde el centro de la Tierra proyectando un mapa en el interior del cilindro. Sin embargo, Mercator no hizo una proyección simple, sino que ajustó el espaciado de los paralelos mediante cálculos matemáticos.
+Al entrar en el siglo XX, comenzaron a aumentar las críticas por el uso general y continuo de la proyección de Mercator. Detrás de esto, no solo estaba la búsqueda de la precisión geográfica, sino que ideologías políticas y sociales estaban profundamente entrelazadas.
 
-Siendo la longitud $\lambda$ y la latitud $\phi$, y las coordenadas en el mapa $(x, y)$, la fórmula de proyección de la proyección de Mercator es la siguiente (asumiendo que la Tierra es una esfera perfecta con radio $R$).
+En 1973, el historiador alemán Arno Peters criticó duramente que "la proyección de Mercator representa de manera injustamente grande a los países desarrollados centrados en Europa (ubicados en altas latitudes del hemisferio norte), y hace que las regiones cercanas al ecuador, donde hay muchos países en desarrollo (África, América del Sur, el Sudeste Asiático, etc.), parezcan pequeñas. Esto es una manifestación del supremacismo blanco colonialista".
 
-$$ x = R(\lambda - \lambda_0) $$
-$$ y = R \ln \left( \tan\left(\frac{\pi}{4} + \frac{\phi}{2}\right) \right) $$
+Y lo que él presentó a lo grande como un "mapamundi más igualitario y correcto" fue la "proyección de Peters (oficialmente la proyección de Gall-Peters)". Este mapa es una "proyección equivalente", es decir, se especializa en reflejar con precisión las proporciones reales de área en todas las regiones del mundo.
 
-Aquí, $\lambda_0$ es el meridiano central de referencia. Como muestra esta ecuación, cuanto mayor es la latitud, más rápido aumenta el valor de $y$, y diverge al infinito ($\infty$) en los polos ($\phi = \pm \pi/2$).
+Al mirar la proyección de Peters, emerge una imagen muy diferente del mundo al que estamos acostumbrados. Europa se dibuja muy pequeña y, por el contrario, los continentes de África y América del Sur son largos verticalmente, destacando su inmensidad. Esto se convirtió en una poderosa arma visual para que los países del Tercer Mundo afirmaran legítimamente su presencia. La UNESCO (Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura) y muchas ONG internacionales apoyaron y adoptaron este mapa desde el punto de vista de la equidad.
 
-A continuación se muestra un fragmento de código simple que utiliza Python para realizar la conversión de coordenadas de la proyección de Mercator.
+Sin embargo, hubo una fuerte reacción por parte de los expertos en cartografía. Esto se debe a que, para que las áreas sean precisas, la proyección de Peters distorsiona drásticamente la "forma (contorno)" de los continentes. Los países cerca del ecuador parecen estirados verticalmente, mientras que las regiones de latitudes altas parecen aplastadas horizontalmente. Se desató un acalorado debate, con críticas de que "las formas son antinaturales y poco prácticas" y que "las afirmaciones de Peters no son más que propaganda política".
 
-```python
-import math
+Esta "controversia de la proyección de Peters" fue un acontecimiento histórico que puso de relieve que los mapas no son solo representaciones de información geográfica, sino también medios que moldean la visión del mundo, las dinámicas de poder y la ideología política de las personas que los miran.
 
-def latlon_to_mercator(lat, lon, R=6378137.0):
-    """
-    Función para convertir latitud y longitud en coordenadas XY (metros) de la proyección de Mercator
-    Equivale al cálculo de EPSG:3857 (Web Mercator)
-    """
-    # Convertir latitud y longitud a radianes
-    lat_rad = math.radians(lat)
-    lon_rad = math.radians(lon)
-    
-    # Cálculo de la coordenada X
-    x = R * lon_rad
-    
-    # Cálculo de la coordenada Y (inversa de la función de Gudermann)
-    y = R * math.log(math.tan(math.pi / 4.0 + lat_rad / 2.0))
-    
-    return x, y
+## 4. Buscando un punto intermedio entre belleza y practicidad: Las proyecciones de compromiso
 
-# Ejemplo: Cálculo de Tokio (latitud 35.6812, longitud 139.7671)
-x, y = latlon_to_mercator(35.6812, 139.7671)
-print(f"Tokyo (Mercator): X={x:.2f}, Y={y:.2f}")
-```
+La "mentira de las áreas" de la proyección de Mercator y la "distorsión de las formas" de la proyección de Peters. Debido a que ambas tenían elementos extremos, los cartógrafos comenzaron a buscar "un mapa que, aunque no fuera perfecto ni en área ni en forma, fuera visualmente el más natural y equilibrado". Así nacieron las "proyecciones de compromiso".
 
-### 1.4 Luces y sombras de la proyección de Mercator
+Un ejemplo representativo de las proyecciones de compromiso es la "proyección de Robinson", presentada en 1963 por el geógrafo estadounidense Arthur H. Robinson. Robinson no derivó el mapa a partir de fórmulas matemáticas, sino que partió de una intuición visual y artística de "cómo se ve a los ojos humanos". Repitió simulaciones muchas veces, buscando manualmente un compromiso donde la forma de la tierra no estuviera extremadamente distorsionada y la proporción del área tampoco estuviera tan equivocada, y luego tradujo esto a coordenadas matemáticas.
 
-Dado que la proyección de Mercator tiene "conformidad (los ángulos se mantienen correctamente)", las formas locales coinciden con la realidad. Sin embargo, como compensación, adolece del defecto fatal de que el "área" se distorsiona extremadamente. Debido a que las latitudes altas se amplían, Groenlandia se dibuja casi del mismo tamaño que África, pero en realidad, África tiene aproximadamente 14 veces la superficie de Groenlandia.
+La proyección de Robinson tiene una hermosa forma elíptica redondeada en general, que resulta muy natural a nuestros ojos. En 1988, la prestigiosa National Geographic Society adoptó la proyección de Robinson como su mapamundi oficial, convirtiéndolo en uno de los estándares mundiales.
 
-Esta distorsión del área causaría posteriormente problemas políticos y sociales. Mientras que las regiones de latitudes altas del hemisferio norte, como Europa y América del Norte, se representan de forma exagerada, los países en desarrollo cerca del ecuador se dibujan más pequeños, lo que atrajo críticas de "inculcar una visión del mundo eurocéntrica".
+Además, la National Geographic Society hizo la transición a la "proyección de Winkel (proyección de Winkel Tripel)" en 1998. Ideada por Oswald Winkel, esta proyección adopta el enfoque de minimizar tres distorsiones (Tripel significa "tres" en alemán): área, ángulo y distancia, y se considera que tiene aún menos distorsión y está más equilibrada que la proyección de Robinson. En muchos de los libros de texto y mapamundis generales actuales, las proyecciones de compromiso similares a esta proyección de Winkel o a la proyección de Robinson son las predominantes.
 
-## Capítulo 2: En busca de la exactitud del área: la genealogía de las proyecciones equivalentes
+## 5. Desafíos modernos y nuevas representaciones: AuthaGraph y la proyección Equal Earth
 
-Debido a las críticas a la distorsión del área de la proyección de Mercator, se idearon muchas "proyecciones equivalentes" (proyecciones de igual área) en las que se mantiene correctamente la proporción de las áreas.
+Incluso en el siglo XXI, la evolución de las proyecciones cartográficas no se detiene. En la era moderna de problemas ambientales globales y globalización creciente, nos vemos obligados a repensar nuestro planeta desde nuevas perspectivas.
 
-### 2.1 Proyección de Sanson y proyección de Mollweide
+Un intento de esto es el "Mapamundi AuthaGraph" ideado por el arquitecto japonés Hajime Narukawa y su equipo. Este mapa utiliza un método ingenioso para dividir la superficie de la Tierra en 96 regiones, proyectarla en un tetraedro regular y luego desplegarla en un plano rectangular. Su mayor ventaja es que el mapa se puede teselar o conectar infinitamente sin costuras, con cualquier punto como centro, manteniendo al mismo tiempo la proporción de las áreas. Es muy adecuado para observar el mundo desde una perspectiva global sin un centro, como las redes de rutas marítimas y aéreas, y el impacto del cambio climático, y ganó el Gran Premio del Good Design Award en 2016.
 
-En el siglo XVII, se popularizó la "proyección de Sanson-Flamsteed", utilizada por el francés Nicolas Sanson y otros. Se trata de una proyección equivalente en la que los paralelos son líneas paralelas equidistantes y los meridianos se dibujan como curvas sinusoidales. Aunque había poca distorsión cerca del meridiano central, tenía la desventaja de una fuerte distorsión de la forma en la periferia (especialmente en las latitudes altas).
+Y la nueva proyección que ha atraído más atención en los últimos años es la "proyección Equal Earth", presentada en 2018 por tres cartógrafos: Bojan Šavrič, Tom Patterson y Bernhard Jenny.
 
-Esto fue mejorado por la "proyección de Mollweide", publicada en 1805 por el matemático alemán Karl Mollweide. La proyección de Mollweide encaja toda la Tierra en una sola elipse y mitiga la distorsión de la forma en las latitudes altas en comparación con la proyección de Sanson.
+La proyección Equal Earth es una nueva "proyección equivalente (un mapa con áreas correctas)" desarrollada para superar la "extrema falta de naturalidad de las formas" que tenía la proyección de Peters. Su objetivo era crear un mapa que tuviera un aspecto redondeado agradable a la vista, como la proyección de Robinson, y que al mismo tiempo mantuviera proporciones de área completamente precisas para cada continente y país.
 
-### 2.2 Proyección homolosena de Goode (proyección interrumpida)
+Uno de los motivos de su desarrollo fue una fuerte sensación de crisis: al visualizar datos sobre el cambio climático y los problemas medioambientales, si las áreas no son precisas, se pueden generar malentendidos. Por ejemplo, al mostrar el impacto de la deforestación o el aumento del nivel del mar, la proyección de Mercator sobreestimaría el impacto en las altas latitudes. La proyección Equal Earth es un diseño innovador que combina belleza y precisión científica, algo que solo se pudo lograr en la actualidad debido a los cálculos avanzados posibilitados por el desarrollo de la tecnología informática. En la actualidad, su adopción se está extendiendo a los mapas de datos climáticos de la NASA (Administración Nacional de Aeronáutica y el Espacio) y el GISS (Instituto Goddard de Estudios Espaciales).
 
-Entrando al siglo XX, se hicieron intentos para reducir aún más la distorsión de la forma manteniendo la equivalencia. En 1923, el geógrafo estadounidense John Paul Goode publicó la "proyección de Goode (proyección homolosena)".
+## Conclusión: Los mapas son la visión del mundo en sí mismos
 
-Esta adoptó un enfoque novedoso llamado "proyección interrumpida", que unía la proyección de Sanson en las bajas latitudes y la proyección de Mollweide en las altas latitudes, e interrumpía las partes del océano (o las partes de los continentes). Esto hizo posible tener una visión panorámica del mundo con las proporciones de área correctas, manteniendo al mínimo la distorsión de la forma de cada continente. Sin embargo, dado que los océanos están cortados, tenía el inconveniente de que era difícil captar intuitivamente la forma continua de la Tierra.
+Al repasar la historia de las proyecciones cartográficas, desde la proyección de Mercator hasta la proyección Equal Earth, queda claro que reflejan no solo el desarrollo de las técnicas de topografía y las matemáticas, sino también la fuerte voluntad de la gente de cada época sobre "cómo quieren ver la Tierra y cómo deben utilizarla".
 
-## Capítulo 3: La Guerra Fría y la controversia de la proyección de Peters
+La conformidad que salvó la vida de los navegantes y posibilitó el comercio mundial.
+La equivalencia que arrojó luz sobre el conflicto Norte-Sur y las desigualdades, aportando diversas perspectivas.
+Y las nuevas representaciones que buscan la armonía general y contribuyen a resolver los complejos problemas de la sociedad moderna.
 
-El alboroto en torno a la "proyección de Peters" en la década de 1970 fue cuando la proyección cartográfica se convirtió en algo más que una simple cuestión matemática o geográfica, y se transformó en una gran controversia que implicaba conflictos ideológicos.
-
-### 3.1 Proyección cilíndrica equivalente de Gall y las afirmaciones de Arno Peters
-
-En 1973, el historiador alemán Arno Peters criticó duramente que "la proyección de Mercator es un mapa arrogante del eurocentrismo y hace que el Tercer Mundo parezca pequeño intencionadamente", y publicó su propia "proyección de Peters". Promovió esto a gran escala como "un mapa mundial nuevo y verdaderamente justo que dibuja a todas las personas de forma igualitaria".
-
-La proyección de Peters era una proyección equivalente y no ampliaba extremadamente las latitudes altas como la proyección de Mercator. Por lo tanto, las agencias de la ONU, muchas ONG y grupos religiosos apoyaron este mapa y lo adoptaron ampliamente como póster educativo.
-
-### 3.2 Feroz reacción de la comunidad cartográfica
-
-Sin embargo, los cartógrafos profesionales reaccionaron ferozmente a este anuncio de Peters. Las razones son las siguientes:
-
-1. **Sospecha de plagio**: Matemáticamente, la proyección de Peters era exactamente igual que la "proyección cilíndrica equivalente de Gall" publicada por el británico James Gall en 1855. Era una proyección ya conocida en el mundo cartográfico, no era original de Peters.
-2. **Severa distorsión de la forma**: Como resultado del uso de una proyección cilíndrica para mantener la equivalencia, las regiones de bajas latitudes (África y América del Sur) se alargaban extremadamente en sentido vertical, y las regiones de altas latitudes (Europa y Canadá) tenían una forma muy poco atractiva, como aplastadas horizontalmente.
-3. **Uso como propaganda**: Los cartógrafos acusaron a Peters de hacer propaganda ideológica al ignorar el compromiso matemático de la proyección cartográfica (mantener el área distorsiona la forma) y vilipendiar injustamente la proyección de Mercator.
-
-Esta controversia resultó en hacer que el mundo reafirmara que un mapa no es sólo una réplica objetiva de la realidad, sino un medio que influye fuertemente en la visión del mundo y la conciencia política de las personas que lo miran.
-
-## Capítulo 4: El arte del compromiso: el auge de las proyecciones de compromiso
-
-Si intentas mantener perfecta el área o la forma, la otra se sacrificará de forma extrema. Por lo tanto, la "proyección de compromiso" (Compromise projection), que abandona la estricta equivalencia y conformidad y persigue una "apariencia natural" y una "distorsión general baja", se convirtió en la corriente principal de los mapas del mundo para uso general en la segunda mitad del siglo XX.
-
-### 4.1 Proyección de Robinson
-
-La "proyección de Robinson", inventada por el cartógrafo estadounidense Arthur H. Robinson en 1963, no partió de fórmulas matemáticas, sino que adoptó un enfoque único para determinar empíricamente la longitud y el espaciado de los paralelos con la máxima prioridad de "que se viera hermoso".
-
-Esta proyección fue ampliamente reconocida en todo el mundo cuando la National Geographic Society la adoptó como su mapa mundial oficial en 1988.
-
-### 4.2 Proyección de Winkel Tripel
-
-Posteriormente, en 1998, la National Geographic Society adoptó la "proyección de Winkel Tripel" en lugar de la proyección de Robinson. Inventada por el alemán Oswald Winkel en 1921, esta proyección es la media aritmética de la proyección de Aitoff y la proyección cilíndrica equidistante. "Tripel" significa "triple" en alemán, lo que indica que intentó minimizar las tres distorsiones de área, ángulo y distancia. Incluso hoy en día, se utiliza como mapa mundial estándar en muchos libros de texto y atlas.
-
-## Capítulo 5: Nuevos desafíos en la era digital: el nacimiento de la proyección Equal Earth
-
-En el siglo XXI, la forma en que interactuamos con los mapas ha cambiado drásticamente. Es la difusión de los servicios de mapas web, incluyendo Google Maps. Irónicamente, estos mapas web han adoptado de nuevo la "proyección de Mercator" (Web Mercator) para hacer que las operaciones de zoom sean fluidas (en los últimos años, se ha mejorado para cambiar a un modelo de globo terrestre en 3D al alejar el zoom).
-
-Sin embargo, al discutir cuestiones a escala global, como el cambio climático y la desigualdad global, la importancia de visualizar el mundo con "proporciones de área precisas" sigue siendo alta, y se necesitaba una nueva proyección equivalente.
-
-### 5.1 El desafío de Bojan Šavrič y otros
-
-En 2018, tres cartógrafos, Bojan Šavrič, Tom Patterson y Bernhard Jenny, publicaron una proyección equivalente completamente nueva, la "proyección Equal Earth".
-
-Su objetivo era claro:
-"Crear un mapa del mundo que no tenga una distorsión severa de la forma como la proyección de Peters, que tenga un aspecto natural y hermoso como la proyección de Robinson, y que al mismo tiempo mantenga una estricta equivalencia".
-
-### 5.2 Innovación matemática de la proyección Equal Earth
-
-La proyección Equal Earth se asemeja mucho al contorno exterior de la proyección de Robinson, pero logra una estricta equivalencia mediante el uso de polinomios avanzados. Sus ecuaciones de proyección son las siguientes:
-
-Sea la latitud $\phi$, la longitud $\lambda$ (diferencia con el meridiano central), y sea $ \theta $ el ángulo que satisface $ \sin \theta = \frac{\sqrt{3}}{2} \sin \phi $.
-
-$$ x = \frac{2\sqrt{3} \lambda \cos \theta}{3 (9 A_4 \theta^8 + 7 A_3 \theta^6 + 3 A_2 \theta^2 + A_1)} $$
-$$ y = A_4 \theta^9 + A_3 \theta^7 + A_2 \theta^3 + A_1 \theta $$
-
-Aquí, los coeficientes son los siguientes:
-$ A_1 = 1.340264 $
-$ A_2 = -0.081106 $
-$ A_3 = 0.000893 $
-$ A_4 = 0.003796 $
-
-Gracias a estas complejas fórmulas matemáticas, la proyección Equal Earth logró representar la proporción de área correcta manteniendo las formas naturales de los continentes, sin alargar la zona cercana al ecuador ni aplastar extremadamente las latitudes altas.
-
-### 5.3 Difusión como código abierto
-
-Lo que hizo revolucionaria a la proyección Equal Earth no fue sólo su diseño, sino su enfoque hacia la difusión. Los desarrolladores publicaron las fórmulas matemáticas de esta proyección en el dominio público (CC0) y trabajaron para que se implementaran rápidamente en software SIG de código abierto como QGIS, y en bibliotecas de visualización de datos como D3.js.
-
-Como resultado, fue aceptada instantáneamente por científicos y medios de comunicación de todo el mundo, siendo adoptada, por ejemplo, en los mapas de anomalías de temperatura global de la NASA (Administración Nacional de Aeronáutica y del Espacio).
-
-```mermaid
-sequenceDiagram
-    participant Cartographers as "Šavrič y otros (Desarrolladores)"
-    participant OpenSource as "Comunidad de Código Abierto"
-    participant GlobalUsers as "NASA / Medios de Comunicación / Instituciones Educativas"
-    
-    Cartographers->>OpenSource: "Publican las fórmulas de Equal Earth bajo CC0"
-    Cartographers->>OpenSource: "Proporcionan parches de implementación para SIG y D3.js"
-    OpenSource-->>Cartographers: "Fusión completada en bibliotecas"
-    GlobalUsers->>OpenSource: "Visualización de datos utilizando la nueva proyección equivalente"
-    GlobalUsers-->>GlobalUsers: "Representación precisa del área para datos de cambio climático"
-```
-
-## Conclusión: Los mapas crean el mundo
-
-La historia desde la proyección de Mercator hasta la proyección Equal Earth es también la historia de la evolución del pensamiento de la humanidad sobre "cómo queremos entender y comunicar el mundo en el que vivimos".
-
-Durante la era de los descubrimientos, la máxima prioridad era "llegar al destino con certeza" (conformidad), y en la era del dominio colonial se preferían los mapas que mostraban la inmensidad del propio país. Durante la Guerra Fría, los mapas que apelaban a la corrección del problema Norte-Sur causaron controversia, y en la actualidad, se requieren mapas (equivalencia + forma natural) para tener una visión plana de los problemas globales como el cambio climático.
-
-**"Los mapas son espejos que reflejan el mundo y, al mismo tiempo, lentes que crean el mundo"**.
-
-Cuando miramos un mapa, siempre debemos ser conscientes de sobre qué tipo de compromisos matemáticos se construye y con qué intenciones se trazó. La proyección Equal Earth se puede decir que es una de las "lentes" más nuevas que nos muestra cómo los humanos modernos estamos intentando reevaluar el mundo.
+El mapamundi que observamos no es en absoluto una "imagen de la verdad" absoluta. Es simplemente una "interpretación" en la que los humanos han traducido la Tierra tridimensional de extensión infinita a dos dimensiones de acuerdo con sus propios propósitos y valores. La próxima vez que mires un mapamundi, reflexiona sobre la historia de ensayo y error y los conflictos de los cartógrafos durante cientos de años que están incrustados en esa hoja de papel (o pantalla). La forma en que percibimos el mundo está moldeada por el mapa que elegimos usar.

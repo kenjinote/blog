@@ -1,152 +1,85 @@
 ---
 date: "2026-09-25T02:00:00+09:00"
-title: "How Was the Standard for 3D Graphics Born?: The History of OpenGL and the Basics of Cross-Platform"
+title: "How the 3D Graphics Standard Was Born: The History of OpenGL and the Foundations of Cross-Platform Graphics"
 categories: ["technology", "graphics"]
 tags: ["opengl", "3d-graphics", "history", "programming"]
 slug: "opengl-basics-and-history"
 image: "eyecatch.jpg"
-description: "A comprehensive guide starting from the history and evolution of OpenGL stemming from Silicon Graphics' IRIS GL, details of the graphics pipeline, basics of matrix operations, to concrete implementation examples using C/C++ and GLSL."
+description: "A comprehensive guide covering the history and evolution of OpenGL starting from Silicon Graphics' IRIS GL, details of the graphics pipeline, fundamentals of matrix transformations, and practical implementation examples using C/C++ and GLSL."
 ---
 
 # 1. Introduction
 
-3D graphics in modern computers is no longer just for a few experts. 3D graphics technologies are utilized everywhere: games on smartphones, data visualization in web browsers, VFX in movies, CAD software, VR/AR, and more. However, before these technologies became as widely popular as they are today, there was a long battle for the standardization of software (APIs) alongside the evolution of hardware.
+In modern computing environments, 3D graphics have become an indispensable element. From video games, movie VFX, and CAD to smartphone apps and in-browser data visualization, we benefit from 3D technology every day. However, the path toward "standardization"—enabling common programs to run across different platforms while maximizing hardware performance—was by no means smooth.
 
-In this article, we will focus on "OpenGL (Open Graphics Library)," which has reigned for many years as the de facto standard for 3D graphics APIs. We will dig deep and thoroughly explain the historical background of how OpenGL was born and evolved, the mechanism of the modern programmable graphics pipeline, the mathematical background using matrix operations, and concrete implementation examples using C/C++ and GLSL.
+In this article, we explore "OpenGL (Open Graphics Library)," which has reigned as the de facto standard for 3D graphics APIs for many years. We will comprehensively examine its historical background—evolving from a single company's proprietary standard into an open standard—as well as the mechanics of the modern programmable graphics pipeline, the mathematical foundations of matrix operations used to project 3D space onto a 2D screen, and concrete implementation examples using C/C++ and GLSL.
 
----
+# 2. History of OpenGL: Breaking Free from Proprietary Standards
 
-# 2. History of OpenGL: The Path from SGI and IRIS GL to a Standard Specification
+## 2.1 The Rise of SGI and IRIS GL
 
-## 2.1 Silicon Graphics, Inc. (SGI) and the Birth of IRIS GL
+During the 1980s and 1990s, Silicon Graphics, Inc. (SGI) held overwhelming dominance in the realm of 3D computer graphics. SGI workstations featured dedicated graphics hardware and were widely adopted across the film industry and research institutions.
 
-In the 1980s and 1990s, Silicon Graphics, Inc. (SGI), founded by Jim Clark, reigned as the absolute champion in the field of 3D computer graphics (CG). SGI's workstations were equipped with dedicated graphics hardware and boasted unprecedented 3D rendering performance for the time. It is famous that SGI computers were used for the CG production of movies like *Jurassic Park* and *Terminator 2*.
+The graphics API developed specifically for SGI's hardware was "IRIS GL." While IRIS GL was exceptionally powerful and easy to use, it suffered from a fatal drawback: it was tightly coupled to SGI's proprietary hardware and windowing system, resulting in extremely poor portability to other systems.
 
-To maximize the performance of SGI's hardware, a proprietary graphics API called "IRIS GL (Integrated Raster Imaging System Graphics Library)" was developed. IRIS GL was designed so that programmers could easily handle polygon rendering, lighting, hidden surface removal using Z-buffers, etc., without worrying about the complex details of the hardware.
+## 2.2 The Birth of an Open Standard
 
-However, IRIS GL had a major problem: it was "strongly dependent on SGI hardware." IRIS GL had grown into a huge API that even included window systems and input device controls, making it extremely difficult to port to other platforms (for example, Sun Microsystems or HP workstations, or the emerging PCs).
+In the early 1990s, as PC and competitor workstation performance improved and competition in the graphics market intensified, SGI made a strategic move to promote the widespread adoption of its technology. This was the release of "OpenGL" in 1992—redesigned as an open API for pure 3D rendering by decoupling the hardware-dependent components from IRIS GL.
 
-## 2.2 Transition to an Open Standard and the Birth of OpenGL
+The OpenGL specification came under the governance of the "OpenGL Architecture Review Board (ARB)," composed of major technology companies such as SGI, IBM, DEC, Microsoft, and Intel. This established OpenGL's position as an industry-wide standard free from the constraints of any specific platform.
 
-In the early 1990s, as competition in the 3D graphics market intensified, SGI made the decision to organize and abstract IRIS GL to spread its technology and create an industry-standard API that would run on other companies' hardware.
+## 2.3 Paradigm Shift to Programmable Pipelines
 
-By decoupling dependencies on the window system and SGI-specific features from IRIS GL, it was redesigned as an open API purely for 3D graphics rendering, and "OpenGL" was born. In 1992, OpenGL 1.0 was officially announced.
-
-To formulate and manage the specifications of OpenGL, the "OpenGL Architecture Review Board (ARB)" was established, with major companies such as SGI, DEC, IBM, Intel, and Microsoft participating. As a result, OpenGL was elevated from a single company's proprietary technology to an industry-wide standard.
-
-## 2.3 From Fixed-Function Pipeline to Programmable Pipeline
-
-Early OpenGL (1.x to early 2.x) adopted an architecture called the "Fixed-Function Pipeline". In this setup, processes such as lighting, transform, and texture mapping were fixed within the hardware, and programmers only needed to set parameters (light position and color, material properties, etc.) to perform rendering.
+Early OpenGL adopted an architecture known as the "fixed-function pipeline." In this approach, operations such as lighting and coordinate transformations were fixed on the hardware (or driver) side, and programmers rendered scenes simply by configuring parameters.
 
 ```mermaid
 graph TD
-    A["Vertices"]
-    B["Transform & Lighting"]
-    C["Primitive Assembly"]
-    D["Rasterization"]
-    E["Texture Env & Fog"]
-    F["Framebuffer"]
-
-    A -- "Input" --> B
-    B -- "Vertex Processing" --> C
-    C -- "Shape Construction" --> D
-    D -- "Pixelation" --> E
-    E -- "Color Calculation" --> F
+    A["Vertex Input"] -- "Transform & Lighting" --> B["Vertex Processing"]
+    B -- "Primitive Assembly" --> C["Rasterization"]
+    C -- "Pixel Color Calculation" --> D["Framebuffer"]
 ```
 
-The fixed-function pipeline was very easy to use and was optimal for beginners learning 3D graphics. (Many people probably remember functions like `glBegin()`, `glEnd()`, and `glVertex3f()`).
+While this approach was approachable for beginners, implementing custom shading (such as toon rendering) or advanced visual effects was difficult. To address this, OpenGL 2.0 (2004) introduced "GLSL (OpenGL Shading Language)," evolving into a "programmable pipeline" that allowed developers to directly program the GPU's operations. Today, fixed functions are either deprecated or removed, and flexible rendering using shaders is the standard assumption.
 
-However, entering the 2000s, as the evolution of GPUs (Graphics Processing Units) became remarkable, developers began to demand "wanting to do more custom shading" and "wanting to process non-photorealistic rendering (NPR) like toon rendering at high speed on hardware."
+# 3. Modern OpenGL Pipeline
 
-In response to this, "GLSL (OpenGL Shading Language)" was introduced in OpenGL 2.0 (2004), allowing programmers to replace parts of the GPU processing with programs (shaders) they wrote themselves. Then, with OpenGL 3.1 (2009) and the Core Profile of OpenGL 3.2, the fixed-function pipeline was deprecated (and later removed), transitioning completely to a "Programmable Pipeline."
-
----
-
-# 3. Modern OpenGL and Graphics Pipeline Details
-
-In modern OpenGL (Core Profile version 3.3 and later), programmers must control each stage of the graphics pipeline themselves. The flow of the pipeline is shown in the figure below.
+In modern OpenGL (Core Profile), developers are required to control each stage of the graphics pipeline in detail.
 
 ```mermaid
 graph TD
-    VBO["Vertex Data (VBO/VAO)"]
-    VS["Vertex Shader"]
-    TC["Tessellation Control (TCS)"]
-    TE["Tessellation Evaluation (TES)"]
-    GS["Geometry Shader"]
-    RS["Rasterizer"]
-    FS["Fragment Shader"]
-    TEST["Depth/Stencil Test"]
-    FB["Framebuffer"]
-
-    VBO -- "Vertex Attributes" --> VS
-    VS -- "Transformed Vertices" --> TC
-    TC -- "Patches" --> TE
-    TE -- "Subdivided Vertices" --> GS
-    GS -- "Primitives" --> RS
-    RS -- "Fragments" --> FS
-    FS -- "Pixel Color" --> TEST
-    TEST -- "Blending etc." --> FB
+    VBO["Vertex Data (VBO)"] -- "Vertex Attributes" --> VS["Vertex Shader"]
+    VS -- "Transformed Vertices" --> RS["Rasterizer"]
+    RS -- "Fragments" --> FS["Fragment Shader"]
+    FS -- "Color & Depth" --> FB["Framebuffer"]
 ```
 
-## 3.1 Role of Each Stage
+1. **Vertex Shader**:
+   Executed for each input vertex. Its primary role is to transform the model's local coordinates into clip space coordinates as viewed from the camera.
+2. **Rasterizer**:
+   Breaks down and interpolates polygons (such as triangles) composed of vertices into "fragments" corresponding to pixels on the screen.
+3. **Fragment Shader**:
+   Calculates the final color (RGB) of each fragment. Texture mapping and lighting calculations are primarily performed here.
 
-1. **Vertex Shader**: Required. Executed for each input vertex. The main role is to transform local vertex coordinates into screen coordinates (clip space).
-2. **Tessellation Shaders**: Optional. Subdivides polygons into finer polygons to generate detailed shapes.
-3. **Geometry Shader**: Optional. Receives a collection of vertices (points, lines, triangles) and can generate new shapes or discard them.
-4. **Rasterizer**: Fixed function. Converts mathematical shapes (polygons) into "fragments" corresponding to screen pixels. Here, attributes between vertices are interpolated.
-5. **Fragment Shader**: Required. Executed for each fragment to calculate the final pixel color (RGBA) and depth value. Texture sampling and lighting calculations are performed here.
-6. **Tests and Blending**: Depth testing (prioritizing rendering of objects in front), stencil testing, alpha blending, etc., are performed, and ultimately written to the framebuffer.
+# 4. Fundamentals of Matrix Operations and Coordinate Transformations
 
----
+To correctly render objects in 3D space onto a 2D monitor, coordinate transformations using matrices are indispensable. In general, transformations are performed by multiplying three matrices together. This is referred to as the MVP (Model-View-Projection) matrix.
 
-# 4. Mathematics of Matrices and Coordinate Transformation
+- **Model Matrix**:
+  Positions an object from its local space into the absolute coordinate system of the overall world (world space). This includes translation, rotation, and scaling.
+- **View Matrix**:
+  Transforms coordinates from world space into the space viewed from the camera's perspective (view space).
+- **Projection Matrix**:
+  Transforms coordinates from view space into clip space. This calculates perspective projection to apply depth effects (where distant objects appear smaller).
 
-To render objects in 3D space onto a 2D screen, it is necessary to sequentially transform through several coordinate systems (spaces). This is achieved through linear algebra using "Matrices."
+# 5. Implementation Example with GLSL and C/C++
 
-## 4.1 Transformation from Local Space to Screen Space
+Here is an example of basic GLSL shader code for rendering a triangle using modern OpenGL.
 
-Generally, transformation is performed by multiplying the following three matrices together. This is called the **MVP Matrix (Model-View-Projection Matrix)**.
-
-$$
-V_{clip} = M_{projection} \cdot M_{view} \cdot M_{model} \cdot V_{local}
-$$
-
-1. **Model Matrix ($M_{model}$)**:
-   Places the object's own coordinate system (Local Space) into the entire world's coordinate system (World Space). It performs Translation, Rotation, and Scaling.
-2. **View Matrix ($M_{view}$)**:
-   Transforms coordinates in world space to the space seen from the camera (View Space / Camera Space). Moving the camera backward is equivalent to moving the entire world forward.
-3. **Projection Matrix ($M_{projection}$)**:
-   Transformation from view space to Clip Space. There are Perspective Projection and Orthographic Projection. In the case of perspective projection, it creates the effect that distant objects appear smaller (perspective).
-
-## 4.2 Structure of the Perspective Projection Matrix
-
-The perspective projection matrix is very important. A 4x4 matrix like the following is constructed using the Field of View (FOV), Aspect ratio, Near plane, and Far plane.
-
-$$
-\begin{bmatrix}
-\frac{1}{\text{aspect} \cdot \tan(\text{fov}/2)} & 0 & 0 & 0 \\
-0 & \frac{1}{\tan(\text{fov}/2)} & 0 & 0 \\
-0 & 0 & -\frac{\text{far} + \text{near}}{\text{far} - \text{near}} & -\frac{2 \cdot \text{far} \cdot \text{near}}{\text{far} - \text{near}} \\
-0 & 0 & -1 & 0
-\end{bmatrix}
-$$
-
-This matrix changes the W component (homogeneous coordinates) of vertex coordinates, and a subsequent "Perspective Divide" maps the x, y, and z coordinates to Normalized Device Coordinates (NDC) from -1.0 to 1.0.
-
----
-
-# 5. Basics of GLSL (OpenGL Shading Language)
-
-Using GLSL, which has syntax similar to C, you write programs that run on the GPU.
-
-## 5.1 Vertex Shader
+## 5.1 Vertex Shader Example
 
 ```glsl
 #version 330 core
-layout (location = 0) in vec3 aPos;     // 頂点位置
-layout (location = 1) in vec2 aTexCoord; // テクスチャ座標
-
-out vec2 TexCoord; // フラグメントシェーダーへ渡す変数
+layout (location = 0) in vec3 aPos;
 
 uniform mat4 model;
 uniform mat4 view;
@@ -154,196 +87,28 @@ uniform mat4 projection;
 
 void main()
 {
-    // MVP行列を掛けてクリップ座標系へ変換
     gl_Position = projection * view * model * vec4(aPos, 1.0);
-    TexCoord = aTexCoord;
 }
 ```
 
-## 5.2 Fragment Shader
+## 5.2 Fragment Shader Example
 
 ```glsl
 #version 330 core
 out vec4 FragColor;
 
-in vec2 TexCoord; // 頂点シェーダーから補間されて渡される
-
-uniform sampler2D texture1; // テクスチャユニット
-
 void main()
 {
-    // テクスチャから色をサンプリング
-    FragColor = texture(texture1, TexCoord);
+    FragColor = vec4(1.0, 0.5, 0.2, 1.0); // Output orange color
 }
 ```
 
----
+On the C/C++ side, libraries such as GLFW are used to create a window, and vertex data (VBO: Vertex Buffer Object) along with the vertex attribute layout (VAO: Vertex Array Object) are transferred to the GPU. Then, inside the main loop, the screen is cleared, and draw calls are issued using functions like `glDrawArrays` with the configured shader program.
 
-# 6. Modern OpenGL Setup and Implementation in C/C++
+# 6. The Future of Graphics APIs
 
-From here, we show the basic code to actually create a window and draw a triangle using C++. We use **GLFW** for window management and **GLAD** (or GLEW) for loading OpenGL function pointers.
+While OpenGL has supported the industry for many years, its legacy architectural philosophy—operating as a massive state machine—has increasingly become a bottleneck in fully unlocking the performance of modern multi-core CPUs and massively parallel GPUs.
 
-## 6.1 Initialization and Window Creation
+As a result, the industry is transitioning toward next-generation APIs (such as Vulkan, DirectX 12, and Metal) that allow low-level control closer to the hardware and are optimized for multi-threaded rendering. However, because the initialization process for these modern APIs is exceptionally complex, OpenGL continues to hold tremendous value as an educational and introductory API for learning the fundamental concepts of 3D graphics (pipelines, matrix transformations, and shaders).
 
-```cpp
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
-#include <iostream>
-
-// ウィンドウリサイズ時のコールバック
-void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
-    glViewport(0, 0, width, height);
-}
-
-int main() {
-    // 1. GLFWの初期化
-    glfwInit();
-    // OpenGL 3.3 Core Profileを指定
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-
-#ifdef __APPLE__
-    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // macOS用
-#endif
-
-    // 2. ウィンドウの作成
-    GLFWwindow* window = glfwCreateWindow(800, 600, "LearnOpenGL", NULL, NULL);
-    if (window == NULL) {
-        std::cout << "Failed to create GLFW window" << std::endl;
-        glfwTerminate();
-        return -1;
-    }
-    glfwMakeContextCurrent(window);
-    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
-
-    // 3. GLADの初期化 (OS固有のOpenGL関数ポインタをロード)
-    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
-        std::cout << "Failed to initialize GLAD" << std::endl;
-        return -1;
-    }
-
-    // 続く...
-```
-
-## 6.2 Constructing Vertex Data and Buffers (VAO, VBO)
-
-In modern OpenGL, you must transfer vertex data to GPU memory (VRAM) and define the layout of that data.
-
-```cpp
-    // 頂点データ (X, Y, Z)
-    float vertices[] = {
-        -0.5f, -0.5f, 0.0f, // 左下
-         0.5f, -0.5f, 0.0f, // 右下
-         0.0f,  0.5f, 0.0f  // 上部
-    };
-
-    unsigned int VBO, VAO;
-    // VAO (Vertex Array Object) の生成とバインド
-    glGenVertexArrays(1, &VAO);
-    glBindVertexArray(VAO);
-
-    // VBO (Vertex Buffer Object) の生成とバインド
-    glGenBuffers(1, &VBO);
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    
-    // データをGPUに転送
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-
-    // 頂点属性ポインタの設定 (location = 0)
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
-    glEnableVertexAttribArray(0);
-
-    // バインド解除 (安全のため)
-    glBindBuffer(GL_ARRAY_BUFFER, 0); 
-    glBindVertexArray(0);
-```
-
-## 6.3 Main Loop (Rendering)
-
-After handling shader compilation and linking processes (assuming they are abstracted into functions here), we enter the main rendering loop.
-
-```cpp
-    // シェーダープログラムのロードとコンパイル (実装省略)
-    // unsigned int shaderProgram = LoadShaders("vertex.glsl", "fragment.glsl");
-
-    // メインループ
-    while (!glfwWindowShouldClose(window)) {
-        // 入力処理 (Escapeキーで終了など)
-        if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-            glfwSetWindowShouldClose(window, true);
-
-        // 1. 画面のクリア
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-        // 2. シェーダーの有効化
-        // glUseProgram(shaderProgram);
-
-        // 3. VAOをバインドして描画
-        glBindVertexArray(VAO);
-        glDrawArrays(GL_TRIANGLES, 0, 3);
-
-        // 4. バッファのスワップとイベントのポーリング
-        glfwSwapBuffers(window);
-        glfwPollEvents();
-    }
-
-    // リソースの解放
-    glDeleteVertexArrays(1, &VAO);
-    glDeleteBuffers(1, &VBO);
-    // glDeleteProgram(shaderProgram);
-
-    glfwTerminate();
-    return 0;
-}
-```
-
----
-
-# 7. The Present and Future of OpenGL (Vulkan, Metal, DirectX 12)
-
-Starting from SGI's IRIS GL and born in 1992, OpenGL has supported the industry as a cross-platform standard API for over a quarter of a century. However, the design philosophy of OpenGL as a "single massive state machine" is reaching its limits against modern hardware architectures (multi-core CPUs and massive GPUs specialized for parallel processing).
-
-Because OpenGL has a lot of global states, generating rendering commands on multiple threads is difficult, and it fundamentally suffers from a high CPU overhead.
-
-To solve this problem, a new generation of APIs has emerged that provides thinner, lower-level abstractions, allowing developers to fine-tune GPU memory and synchronization processes.
-* **Vulkan**: A cross-platform API curated by the Khronos Group, which manages OpenGL, often considered the successor to OpenGL.
-* **DirectX 12**: A low-level API provided by Microsoft for Windows and Xbox.
-* **Metal**: A proprietary API provided by Apple for macOS and iOS (Apple has deprecated OpenGL).
-
-```mermaid
-graph LR
-    A["High Level (High CPU Overhead)"]
-    B["Low Level (Low CPU Overhead)"]
-    
-    A -- "Evolution" --> B
-    
-    subgraph Past to Present
-    OGL["OpenGL"]
-    DX11["DirectX 11"]
-    end
-    
-    subgraph Present to Future
-    VK["Vulkan"]
-    DX12["DirectX 12"]
-    MTL["Metal"]
-    end
-    
-    OGL -.-> VK
-    DX11 -.-> DX12
-```
-
-## 7.1 Why It Is Still Worth Learning OpenGL
-
-Even as new low-level APIs are becoming mainstream, the significance of learning OpenGL is by no means lost. The reasons are as follows:
-
-1. **Low Learning Curve**: Vulkan and DirectX 12 require hundreds to thousands of lines of code and complex setup just to draw the first triangle on the screen. In contrast, OpenGL is still excellent as an entry point for learning the "essence of 3D graphics" such as graphics pipeline fundamentals, matrix operations, and shader programming.
-2. **Massive Existing Assets and Community**: There are countless pieces of software, engines, and tutorials written in OpenGL around the world.
-3. **WebGL**: WebGL, the standard for rendering 3D graphics on browsers, is based on OpenGL ES. In the Web world, knowledge of OpenGL is still directly useful.
-
-# 8. Conclusion
-
-Starting from a proprietary technology for SGI workstations, growing into an industry standard, and supporting every field from games to scientific computing, OpenGL has had a remarkable journey. Looking back on its history and understanding its fundamental mechanisms will serve as a solid foundation for learning next-generation technologies like Vulkan and WebGPU.
-
-The world of graphics programming is profound, and the moment when mathematical formulas and code translate into beautiful visuals on the screen brings a sense of awe unlike any other programming experience. By all means, use this article as a catalyst to actually write OpenGL code and build your own 3D worlds.
+Mastering the fundamentals of 3D programming with OpenGL first, and then stepping up to APIs like Vulkan as requirements demand, remains one of the most highly recommended learning paths today.

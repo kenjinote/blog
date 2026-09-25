@@ -1,6 +1,6 @@
 ---
-title: "Dari Proyeksi Mercator hingga Equal Earth: Sejarah Proyeksi Peta Dunia dan Kognisi Spasial Manusia"
-description: "Melihat kembali sejarah evolusi proyeksi peta dunia, dan mengeksplorasi secara mendalam bagaimana umat manusia memahami dan merepresentasikan ruang angkasa Bumi dari proyeksi Mercator hingga proyeksi Equal Earth terbaru."
+title: "Dari Proyeksi Mercator hingga Proyeksi Equal Earth: Sejarah Proyeksi Peta Dunia dan Kognisi Ruang Umat Manusia"
+description: "Melihat kembali sejarah evolusi proyeksi peta dunia, mulai dari Proyeksi Mercator hingga Proyeksi Equal Earth terbaru, kita menjelajahi secara mendalam bagaimana umat manusia memahami dan merepresentasikan ruang Bumi."
 date: "2026-09-25T02:00:00+09:00"
 categories: ["history", "science"]
 tags: ["map", "geography", "history", "mathematics"]
@@ -8,186 +8,96 @@ slug: "history-of-map-projections"
 image: "eyecatch.jpg"
 ---
 
-# Pendahuluan: Paradoks Utama Menggambar Bola pada Permukaan Datar
+"Peta dunia" yang biasa kita lihat sehari-hari. Mulai dari peta digital yang ditampilkan di layar ponsel pintar hingga poster besar yang tertempel di dinding kelas, peta telah berakar kuat dalam kehidupan kita. Namun, pernahkah Anda berpikir secara mendalam tentang fakta bahwa peta dunia yang digambar pada bidang datar sebenarnya bukanlah "wujud Bumi yang akurat"?
 
-Sejak zaman kuno, umat manusia telah menggambar peta untuk memahami dan mencatat dunia tempat mereka tinggal. Namun, selalu ada satu paradoks besar. Fakta bahwa "secara matematis tidak mungkin membentangkan bola 3 dimensi (Bumi) ke dalam bidang datar 2 dimensi (peta) tanpa adanya distorsi". Hal ini didasarkan pada kebenaran matematis bahwa dua permukaan dengan kelengkungan yang berbeda tidak dapat dipetakan secara isometrik (mempertahankan jarak yang sama), seperti yang dibuktikan oleh Carl Friedrich Gauss dalam "Theorema Egregium" (Teorema Luar Biasa).
+Bumi memiliki bentuk yang mendekati bola tiga dimensi (tepatnya elipsoid referensi), tetapi sebagian besar peta yang kita gunakan adalah bidang datar dua dimensi. Dalam tindakan "membentangkan permukaan tiga dimensi ke dalam dua dimensi" ini, terdapat paradoks matematis yang signifikan dan tidak dapat dihindari. Artikel ini akan mengungkap sejarah dan konflik yang belum banyak diketahui tentang bagaimana umat manusia telah memahami dan merepresentasikan ruang angkasa raksasa yang disebut Bumi pada bidang datar, mulai dari Proyeksi Mercator yang mendorong Era Penjelajahan Samudra, Proyeksi Peters yang memicu gelombang politik, hingga Proyeksi Equal Earth modern.
 
-Sama seperti kulit jeruk yang akan robek atau berkerut jika Anda mencoba meratakannya, "distorsi" tertentu selalu terjadi saat membuat peta datar dari Bumi. Sejarah Proyeksi Peta (Map Projection) tidak lain adalah sejarah kompromi dan pilihan—bagaimana umat manusia menghadapi "distorsi" yang tidak dapat dihindari ini, elemen apa (luas, sudut, jarak, arah) yang harus dikorbankan, dan elemen apa yang harus dipertahankan.
+## 1. Dilema Matematis dalam Menggambar Bola pada Bidang Datar
 
-Artikel ini akan menggali lebih dalam tentang evolusi proyeksi peta, dari lahirnya proyeksi Mercator pada abad ke-16 hingga proyeksi Equal Earth terbaru di abad ke-21, yang dipadukan dengan latar belakang matematis, historis, dan sosial.
+Saat membahas sejarah proyeksi peta, premis utama matematis yang pertama kali harus dipahami adalah apa yang dibuktikan oleh "Carl Friedrich Gauss". Gauss, seorang ahli matematika hebat dari abad ke-19, merumuskan teorema geometri diferensial yang disebut "Teorema Luar Biasa (Theorema Egregium)". Menurut teorema ini, kelengkungan Gauss pada suatu permukaan memiliki sifat yang tidak berubah meskipun permukaan tersebut ditekuk.
+
+Kelengkungan Gauss dari permukaan bola seperti Bumi adalah positif, sedangkan kelengkungan Gauss dari bidang datar adalah nol. Oleh karena itu, secara matematis mustahil untuk memetakan permukaan dengan kelengkungan Gauss yang berbeda satu sama lain tanpa adanya peregangan, penyusutan, atau robekan. Ini adalah prinsip yang sama dengan ketidakmungkinan mengupas kulit jeruk dan membentangkannya ke dalam satu persegi panjang datar tanpa celah.
+
+Karena dilema matematis ini, peta dunia apa pun tidak mungkin dapat mempertahankan keempat elemen berikut secara akurat dan bersamaan:
+
+1. **Luas** (Ekuivalensi): Apakah rasio luas daratan dan lautan yang sebenarnya dipertahankan?
+2. **Sudut dan Bentuk** (Konformalitas): Apakah kontur medan yang sebenarnya dan sudut garis yang berpotongan dipertahankan?
+3. **Jarak** (Ekuidistan): Apakah rasio jarak dari titik tertentu dipertahankan?
+4. **Arah** (Azimuthal): Apakah arah dari titik tertentu dipertahankan dengan benar?
+
+Hanya "globe" (bola dunia) yang memenuhi semua ini. Saat membuat peta datar, pembuat peta terpaksa "berkompromi", mengorbankan sesuatu dan memprioritaskan yang lain demi tujuan tertentu. Pilihan inilah yang bisa dikatakan sebagai sejarah proyeksi peta itu sendiri.
 
 ```mermaid
 graph TD
-    A["Bumi (Bola 3D/Spheroid)"] -- "Proyeksi (Projection)" --> B["Peta Datar (2D)"]
-    B -- "Mempertahankan sudut dengan benar" --> C["Proyeksi Konformal (Proyeksi Mercator, dll.)"]
-    B -- "Mempertahankan luas dengan benar" --> D["Proyeksi Ekuivalen (Proyeksi Mollweide, Equal Earth, dll.)"]
-    B -- "Mempertahankan jarak dengan benar" --> E["Proyeksi Ekidistan (Proyeksi Azimuthal Ekidistan, dll.)"]
-    B -- "Menyebarkan distorsi secara keseluruhan" --> F["Proyeksi Kompromi (Proyeksi Winkel, dll.)"]
+    A["Bola (Globe)"] -->|"Proyeksi ke 2D"| B["Klasifikasi Proyeksi Peta"]
+    B --> C["Proyeksi Konformal (Mempertahankan sudut dan bentuk)"]
+    B --> D["Proyeksi Ekuivalen (Mempertahankan luas)"]
+    B --> E["Proyeksi Kompromi (Menitikberatkan keseimbangan keseluruhan)"]
+    
+    C --> F["Proyeksi Mercator (1569)"]
+    D --> G["Proyeksi Gall-Peters (1973)"]
+    D --> H["Proyeksi Equal Earth (2018)"]
+    E --> I["Proyeksi Robinson (1963)"]
+    E --> J["Proyeksi Winkel (1921)"]
 ```
 
-## Bab 1: Era Penjelajahan Samudra dan Lahirnya Proyeksi Mercator
+## 2. Inovasi yang Mendukung Era Penjelajahan Samudra: Proyeksi Mercator
 
-### 1.1 Penderitaan para Navigator
+Jika berbicara tentang peta dunia yang paling akrab bagi kita saat ini, itu pastilah "Proyeksi Mercator". Peta ini, yang diperkenalkan pada tahun 1569 oleh ahli geografi asal Flandria (sekarang Belgia), Gerardus Mercator, adalah penemuan revolusioner yang sangat mengubah sejarah umat manusia.
 
-Selama Era Penjelajahan Samudra dari akhir abad ke-15 hingga abad ke-16, para navigator Eropa berlayar ke lautan yang belum dipetakan. Dengan pencapaian Columbus di Amerika dan pelayaran keliling dunia Magellan, dunia meluas secara dramatis, dan permintaan akan peta laut yang akurat meledak.
+Eropa pada saat itu berada di tengah "Era Penjelajahan Samudra", berlayar menuju benua dan lautan yang belum diketahui. Namun, tanpa adanya penunjuk jalan di lautan luas, para pelaut selalu berdampingan dengan risiko tersesat. Apa yang mereka cari adalah "peta laut yang pasti dapat membawa mereka ke tujuan".
 
-Peta laut pada saat itu, yang disebut peta portolan, mengandalkan garis arah (garis kompas) yang ditarik secara radial dari pusat. Namun, untuk pelayaran jarak jauh, terutama saat melintasi lautan, kesalahan akibat fakta bahwa Bumi itu bulat tidak bisa lagi diabaikan. Para navigator sangat mendambakan "peta yang memungkinkan mereka mencapai tujuan dengan berlayar lurus mengikuti arah kompas yang konstan (garis rhumb)".
+Ciri terbesar dari Proyeksi Mercator adalah "konformalitas". Garis bujur dan garis lintang selalu berpotongan pada sudut tegak lurus, dan garis lurus yang menghubungkan dua titik mana pun (garis loksodrom) sesuai dengan arah yang ditunjuk oleh kompas yang sebenarnya. Artinya, para pelaut hanya perlu menarik garis lurus antara titik keberangkatan dan tujuan di peta, mengukur sudut (arah) yang dibentuk oleh garis tersebut dengan garis bujur, dan menjaga kompas pada sudut tersebut agar dapat dipastikan tiba di tujuan.
 
-### 1.2 Inovasi Gerardus Mercator
+Peta fungsional dan revolusioner ini benar-benar merupakan alat ajaib bagi para navigator. Namun, di balik kenyamanan ini terdapat pengorbanan yang sangat besar, yaitu "distorsi luas yang ekstrem".
+Dalam Proyeksi Mercator, semakin tinggi garis lintangnya, peta akan semakin diperbesar baik dari arah timur-barat maupun utara-selatan, sehingga daerah yang mendekati kutub digambarkan jauh lebih besar daripada luas sebenarnya.
 
-Pada tahun 1569, ahli geografi Flanders (sekarang Belgia), Gerardus Mercator, menerbitkan peta dunia inovatif yang menjawab keinginan mendesak para navigator ini. Itulah "Proyeksi Mercator".
+Misalnya, jika dilihat pada Proyeksi Mercator, Greenland tampak sebesar Benua Afrika, atau bahkan lebih besar. Namun, jika membandingkan luas sebenarnya, Benua Afrika memiliki ukuran sekitar 14 kali lipat dari Greenland. Demikian pula, negara-negara lintang tinggi seperti Rusia dan Kanada ditekankan sebagai wilayah yang sangat luas melebihi luas aslinya.
 
-Fitur terbesar dari proyeksi Mercator adalah bahwa "garis lurus yang menghubungkan dua titik mana pun selalu menunjukkan arah kompas yang konstan (garis rhumb direpresentasikan sebagai garis lurus)". Dengan ini, navigator dapat mengetahui arah kompas ke tujuan mereka hanya dengan menggunakan penggaris untuk menarik garis lurus di peta.
+Mercator sendiri bermaksud menjadikan peta ini khusus untuk "keperluan pelayaran". Namun, karena keindahan penampilannya yang linear dan rapi, peta ini akhirnya banyak diadopsi untuk masyarakat umum dan pendidikan sekolah di luar pelayaran, yang pada akhirnya mendistorsi "kognisi ruang terhadap dunia" pada orang-orang selama berabad-abad.
 
-### 1.3 Dukungan Matematis Proyeksi Mercator
+## 3. Proyeksi Politik dan Ideologi: Kontroversi Proyeksi Peters
 
-Proyeksi Mercator dapat dianggap sebagai jenis proyeksi silinder. Bayangkan sebuah silinder dililitkan di sekitar ekuator Bumi, dan sumber cahaya dari pusat Bumi memproyeksikan peta ke bagian dalam silinder. Namun, alih-alih proyeksi sederhana, Mercator menyesuaikan jarak antar garis lintang melalui perhitungan matematis.
+Memasuki abad ke-20, kritik terhadap penggunaan Proyeksi Mercator secara umum mulai meningkat. Latar belakangnya tidak hanya sebatas pencarian keakuratan geografis semata, melainkan ada ideologi politik dan sosial yang sangat terkait di dalamnya.
 
-Misalkan bujur adalah $\lambda$, lintang adalah $\phi$, dan koordinat pada peta adalah $(x, y)$, rumus proyeksi untuk proyeksi Mercator adalah sebagai berikut (mengasumsikan Bumi sebagai bola sempurna dengan jari-jari $R$).
+Pada tahun 1973, sejarawan Jerman Arno Peters melontarkan kritik tajam: "Proyeksi Mercator secara tidak adil menggambarkan negara-negara maju yang berpusat di Eropa (terletak di lintang tinggi belahan bumi utara) menjadi besar, dan mengecilkan daerah sekitar khatulistiwa (seperti Afrika, Amerika Selatan, dan Asia Tenggara) tempat banyak negara berkembang berada. Ini merupakan manifestasi supremasi kulit putih yang bersifat kolonial."
 
-$$ x = R(\lambda - \lambda_0) $$
-$$ y = R \ln \left( \tan\left(\frac{\pi}{4} + \frac{\phi}{2}\right) \right) $$
+Kemudian, peta yang ia perkenalkan secara luas sebagai "peta dunia yang lebih setara dan benar" adalah "Proyeksi Peters (secara resmi Proyeksi Gall-Peters)". Peta ini adalah "Proyeksi Ekuivalen", yang dikhususkan untuk mencerminkan rasio luas sebenarnya di semua wilayah di seluruh dunia secara akurat.
 
-Di sini, $\lambda_0$ adalah meridian tengah referensi. Seperti yang ditunjukkan oleh persamaan ini, semakin tinggi lintang, semakin cepat nilai $y$ meningkat, dan menyimpang menuju tak terhingga ($\infty$) pada kutub ($\phi = \pm \pi/2$).
+Jika melihat Proyeksi Peters, akan muncul wujud yang sangat berbeda dengan dunia yang selama ini kita kenal. Eropa digambarkan sangat kecil, sedangkan sebaliknya Benua Afrika dan Amerika Selatan memanjang ke bawah, sehingga ukurannya yang besar sangat menonjol. Ini menjadi senjata visual yang kuat bagi negara-negara Dunia Ketiga untuk secara adil menegaskan eksistensi negara mereka. UNESCO (Organisasi Pendidikan, Keilmuan, dan Kebudayaan PBB) serta banyak LSM internasional mendukung dan mengadopsi peta ini dari sudut pandang keadilan.
 
-Berikut adalah cuplikan kode sederhana yang melakukan transformasi koordinat proyeksi Mercator menggunakan Python.
+Namun, hal ini memicu reaksi keras dari para ahli kartografi. Demi membuat luasnya akurat, dalam Proyeksi Peters, "bentuk (kontur)" benua menjadi sangat terdistorsi. Negara-negara di sekitar khatulistiwa tampak memanjang secara vertikal, dan wilayah di lintang tinggi tampak tertekan secara horizontal. Timbul perdebatan sengit seperti "Bentuknya tidak alami dan tidak praktis digunakan" atau "Klaim Peters hanyalah propaganda politik".
 
-```python
-import math
+"Kontroversi Proyeksi Peters" ini merupakan peristiwa bersejarah yang menyoroti bahwa peta tidak sekadar representasi informasi geografis semata, melainkan sebuah media yang membentuk pandangan dunia, dinamika kekuasaan, dan ideologi politik dari orang-orang yang melihatnya.
 
-def latlon_to_mercator(lat, lon, R=6378137.0):
-    """
-    Fungsi untuk mengubah lintang dan bujur menjadi koordinat XY proyeksi Mercator (dalam meter)
-    Setara dengan perhitungan EPSG:3857 (Web Mercator)
-    """
-    # Mengubah lintang dan bujur menjadi radian
-    lat_rad = math.radians(lat)
-    lon_rad = math.radians(lon)
-    
-    # Perhitungan koordinat X
-    x = R * lon_rad
-    
-    # Perhitungan koordinat Y (Fungsi invers dari fungsi Gudermannian)
-    y = R * math.log(math.tan(math.pi / 4.0 + lat_rad / 2.0))
-    
-    return x, y
+## 4. Mencari Titik Temu antara Keindahan dan Kepraktisan: Proyeksi Kompromi
 
-# Contoh: Perhitungan untuk Tokyo (Lintang 35.6812, Bujur 139.7671)
-x, y = latlon_to_mercator(35.6812, 139.7671)
-print(f"Tokyo (Mercator): X={x:.2f}, Y={y:.2f}")
-```
+"Kebohongan luas" pada Proyeksi Mercator dan "distorsi bentuk" pada Proyeksi Peters. Karena keduanya memiliki elemen yang ekstrem, para ahli kartografi mulai mencari "peta dengan luas dan bentuk yang memang tidak sempurna, namun terlihat paling alami dan seimbang secara visual". Inilah awal mula lahirnya "Proyeksi Kompromi".
 
-### 1.4 Cahaya dan Bayangan Proyeksi Mercator
+Representasi utama dari Proyeksi Kompromi adalah "Proyeksi Robinson" yang diperkenalkan oleh ahli geografi Amerika Arthur H. Robinson pada tahun 1963. Robinson tidak membuat peta dari rumus matematika, tetapi bermula dari intuisi visual dan artistik tentang "bagaimana tampilannya di mata manusia". Ia melakukan simulasi berulang-ulang, secara manual mencari titik kompromi di mana bentuk daratan tidak terdistorsi secara ekstrem dan rasio luasnya pun tidak terlalu kacau, kemudian setelah itu baru menerapkannya ke dalam koordinat matematika.
 
-Karena proyeksi Mercator memiliki "konformalitas" (sudut dipertahankan dengan benar), bentuk lokalnya sesuai dengan kenyataan. Namun, sebagai gantinya, ia memiliki kelemahan fatal di mana "luas" sangat terdistorsi. Semakin tinggi garis lintang, semakin ia diperbesar, sehingga Greenland digambarkan hampir sama ukurannya dengan benua Afrika, padahal kenyataannya benua Afrika memiliki luas sekitar 14 kali lipat dari Greenland.
+Proyeksi Robinson berbentuk elips yang indah dan membulat secara keseluruhan, sehingga terlihat sangat alami di mata kita. Pada tahun 1988, saat National Geographic Society yang terkenal mengadopsi Proyeksi Robinson sebagai peta dunia resmi, peta ini menjadi salah satu standar global.
 
-Distorsi wilayah ini kemudian akan menyebabkan masalah politik dan sosial. Meskipun wilayah lintang tinggi di belahan bumi utara seperti Eropa dan Amerika Utara direpresentasikan secara berlebihan, negara-negara berkembang di dekat khatulistiwa digambar lebih kecil, sehingga mendapat kritik karena "menanamkan pandangan dunia yang berpusat pada Barat".
+Selanjutnya, National Geographic Society beralih ke "Proyeksi Winkel (Proyeksi Winkel Tripel)" pada tahun 1998. Proyeksi yang digagas oleh Oswald Winkel ini mengambil pendekatan untuk meminimalkan tiga distorsi yaitu luas, sudut, dan jarak ("Tripel" berarti "3" dalam bahasa Jerman), serta dinilai memiliki lebih sedikit distorsi dan lebih seimbang dibandingkan dengan Proyeksi Robinson. Pada sebagian besar buku teks dan peta dunia umum saat ini, Proyeksi Winkel atau Proyeksi Kompromi yang serupa dengan Proyeksi Robinson telah menjadi arus utama.
 
-## Bab 2: Mencari Akurasi Luas: Silsilah Proyeksi Ekuivalen
+## 5. Tantangan Modern dan Representasi Baru: Authagraph dan Proyeksi Equal Earth
 
-Menanggapi kritik terhadap distorsi luas pada proyeksi Mercator, banyak "proyeksi ekuivalen" (equal-area) dirancang, di mana rasio luas dipertahankan dengan benar.
+Memasuki abad ke-21, evolusi proyeksi peta tidak berhenti. Di era modern di mana isu lingkungan global dan globalisasi terus berlanjut, kita dipaksa untuk mempertimbangkan kembali bumi dari perspektif baru.
 
-### 2.1 Proyeksi Sanson dan Proyeksi Mollweide
+Salah satu upayanya adalah "Peta Dunia Authagraph" yang dirancang oleh arsitek Jepang Hajime Narukawa dan rekan-rekannya. Peta ini menggunakan metode orisinal dengan membagi permukaan Bumi menjadi 96 bagian yang sama rata dan memproyeksikannya pada bidang tetrahedron reguler, kemudian membuka lipatannya menjadi peta datar persegi panjang. Keuntungan terbesarnya adalah peta ini dapat digabungkan dan disejajarkan tanpa batas dengan pusat di bagian mana pun, sambil tetap mempertahankan rasio luas aslinya. Peta ini sangat cocok untuk memandang dunia dari perspektif global yang tidak berpusat, seperti melihat jaringan jalur laut dan udara, dampak perubahan iklim, dan telah memenangkan Good Design Grand Award pada tahun 2016.
 
-Pada abad ke-17, "Proyeksi Sanson-Flamsteed", yang digunakan oleh Nicolas Sanson dari Prancis dan lainnya, menjadi populer. Ini adalah proyeksi ekuivalen di mana garis lintang digambar sebagai garis sejajar yang berjarak sama, dan garis bujur digambar sebagai kurva sinus. Meskipun ada sedikit distorsi di sekitar meridian tengah, ia memiliki kelemahan distorsi bentuk yang parah di area periferal (terutama pada lintang tinggi).
+Kemudian, proyeksi baru yang paling banyak menarik perhatian dalam beberapa tahun terakhir adalah "Proyeksi Equal Earth" yang diperkenalkan oleh tiga ahli pemetaan: Bojan Šavrič, Tom Patterson, dan Bernhard Jenny pada tahun 2018.
 
-Ini kemudian disempurnakan oleh matematikawan Jerman Carl Mollweide, yang menerbitkan "Proyeksi Mollweide" pada tahun 1805. Proyeksi Mollweide memuat seluruh Bumi ke dalam satu bentuk elips, melunakkan distorsi bentuk pada lintang tinggi dibandingkan dengan proyeksi Sanson.
+Proyeksi Equal Earth adalah "Proyeksi Ekuivalen (peta dengan luas yang akurat)" baru yang dikembangkan untuk mengatasi "ketidakwajaran bentuk yang ekstrem" yang dialami oleh Proyeksi Peters. Mereka bertujuan menciptakan peta yang memiliki tampilan membulat dan nyaman dipandang seperti Proyeksi Robinson, namun pada saat yang sama rasio luas setiap benua dan negara sepenuhnya akurat.
 
-### 2.2 Proyeksi Homolosine Goode (Proyeksi Terputus)
+Salah satu motivasi pengembangannya adalah perasaan krisis yang mendalam bahwa ketika memvisualisasikan data tentang perubahan iklim dan masalah lingkungan, jika luasnya tidak akurat, hal itu akan menimbulkan kesalahpahaman. Misalnya, ketika menunjukkan dampak deforestasi atau kenaikan permukaan laut, Proyeksi Mercator melebih-lebihkan dampak di lintang tinggi. Proyeksi Equal Earth adalah desain inovatif yang menggabungkan keindahan dan keakuratan ilmiah, yang baru bisa diwujudkan di era modern ini berkat perhitungan tingkat tinggi yang dimungkinkan oleh perkembangan teknologi komputer. Saat ini, penggunaannya semakin meluas, termasuk diadopsi untuk peta data iklim NASA (Badan Penerbangan dan Antariksa Amerika Serikat) dan GISS (Goddard Institute for Space Studies).
 
-Memasuki abad ke-20, ada upaya lebih lanjut untuk mempertahankan sifat ekuivalen sekaligus mengurangi distorsi bentuk. Pada tahun 1923, ahli geografi Amerika John Paul Goode menerbitkan "Proyeksi Goode (Proyeksi Homolosine)".
+## Penutup: Peta adalah Pandangan Dunia Itu Sendiri
 
-Ini menggunakan pendekatan tidak konvensional yang disebut "proyeksi terputus" (interrupted projection), yang menggabungkan proyeksi Sanson untuk lintang rendah dan proyeksi Mollweide untuk lintang tinggi, dan membelah bagian lautan (atau benua). Hal ini memungkinkan orang untuk memandang dunia dengan rasio luas yang benar sambil meminimalkan distorsi pada bentuk masing-masing benua. Namun, karena lautan terbelah, ada kelemahan di mana sulit untuk memahami bentuk Bumi yang kontinu secara intuitif.
+Jika melihat kembali sejarah proyeksi peta dari Proyeksi Mercator hingga Proyeksi Equal Earth, dapat dipahami bahwa di sana tidak hanya tercermin perkembangan teknik survei atau matematika, tetapi juga tekad kuat masyarakat di setiap era tentang "bagaimana kita ingin melihat Bumi, dan bagaimana kita seharusnya menggunakannya".
 
-## Bab 3: Perang Dingin dan Kontroversi Proyeksi Peters
+Konformalitas yang menyelamatkan nyawa para navigator dan memungkinkan perdagangan berskala global.
+Ekuivalensi yang melempar batu ke permasalahan Utara-Selatan dan ketidaksetaraan, serta membawa beragam perspektif.
+Dan representasi baru yang mencari harmoni secara keseluruhan dan berkontribusi pada pemecahan masalah masyarakat modern yang kompleks.
 
-Bagaimana proyeksi peta melampaui masalah matematika dan geografi dan berkembang menjadi kontroversi besar yang melibatkan konflik ideologi terlihat dalam kehebohan seputar "Proyeksi Peters" pada tahun 1970-an.
-
-### 3.1 Proyeksi Silinder Ekuivalen Gall dan Klaim Arno Peters
-
-Pada tahun 1973, sejarawan Jerman Arno Peters dengan keras mengkritik bahwa "proyeksi Mercator adalah peta arogan dari Eurosentrisme, dan secara sengaja membuat Dunia Ketiga terlihat lebih kecil," lalu menerbitkan "Proyeksi Peters" miliknya sendiri. Ia secara ekstensif mempromosikan ini sebagai "peta dunia baru yang benar-benar adil dan menggambarkan semua orang secara setara".
-
-Proyeksi Peters adalah proyeksi ekuivalen, dan lintang tinggi tidak terlalu diperbesar seperti dalam proyeksi Mercator. Oleh karena itu, badan-badan PBB, banyak LSM, organisasi keagamaan, dan lainnya mendukung peta ini dan mengadopsinya secara luas sebagai poster edukasi.
-
-### 3.2 Penolakan Keras dari Komunitas Kartografi
-
-Namun, para kartografer profesional bereaksi keras terhadap pengumuman Peters ini. Alasannya adalah sebagai berikut:
-
-1. **Dugaan Plagiarisme**: Secara matematis, proyeksi Peters persis sama dengan "Proyeksi Silinder Ekuivalen Gall" yang diterbitkan oleh James Gall dari Inggris pada tahun 1855. Itu adalah proyeksi yang sudah dikenal dalam dunia pemetaan dan bukan orisinalitas Peters.
-2. **Distorsi Bentuk yang Parah**: Sebagai hasil dari penggunaan proyeksi silinder untuk menjaga ekuivalensi, daerah lintang rendah (Afrika dan Amerika Selatan) memanjang secara vertikal, dan daerah lintang tinggi (Eropa dan Kanada) tampak terjepit secara horizontal, menghasilkan bentuk yang sangat tidak proporsional.
-3. **Penggunaan sebagai Propaganda**: Para kartografer menuduh Peters menggunakan propaganda ideologis dengan mengabaikan trade-off matematis dari proyeksi peta (mempertahankan luas mendistorsi bentuk) dan dengan tidak adil menjelekkan proyeksi Mercator.
-
-Kontroversi ini membuat dunia menyadari kembali bahwa peta bukan hanya representasi objektif dari realitas, melainkan sebuah media yang sangat memengaruhi pandangan dunia dan kesadaran politik orang yang melihatnya.
-
-## Bab 4: Seni Kompromi: Kebangkitan Proyeksi Kompromi
-
-Jika Anda mencoba mempertahankan luas atau bentuk dengan sempurna, yang lain akan sangat dikorbankan. Oleh karena itu, "Proyeksi Kompromi", yang meninggalkan sifat ekuivalensi atau konformalitas yang ketat dan mengejar "penampilan alami" dan "sedikitnya distorsi keseluruhan", menjadi arus utama peta dunia umum pada paruh kedua abad ke-20.
-
-### 4.1 Proyeksi Robinson
-
-"Proyeksi Robinson", yang dirancang oleh kartografer Amerika Arthur H. Robinson pada tahun 1963, tidak berangkat dari rumus matematika, tetapi mengambil pendekatan unik dengan memprioritaskan "estetika visual" dan menentukan panjang dan jarak paralel secara empiris.
-
-Proyeksi ini diakui secara luas di seluruh dunia ketika National Geographic Society mengadopsinya sebagai peta dunia resmi mereka pada tahun 1988.
-
-### 4.2 Proyeksi Winkel Tripel
-
-Kemudian, pada tahun 1998, National Geographic Society mengganti proyeksi Robinson dengan "Proyeksi Winkel Tripel". Dirancang oleh Oswald Winkel dari Jerman pada tahun 1921, proyeksi ini merupakan rata-rata aritmatika dari proyeksi Aitoff dan proyeksi ekidistans silinder. "Tripel" berarti "tiga" dalam bahasa Jerman, dan menunjukkan upaya untuk meminimalkan tiga distorsi: luas, sudut, dan jarak. Sampai saat ini, peta ini masih digunakan sebagai peta dunia standar di banyak buku catatan pembelajaran dan atlas.
-
-## Bab 5: Tantangan Baru di Era Digital: Lahirnya Proyeksi Equal Earth
-
-Memasuki abad ke-21, cara kita berinteraksi dengan peta berubah secara dramatis. Ini berkat meluasnya layanan peta Web seperti Google Maps. Ironisnya, peta web ini kembali mengadopsi "Proyeksi Mercator (Web Mercator)" untuk memfasilitasi operasi zoom yang mulus (walaupun baru-baru ini telah ditingkatkan sehingga jika diperkecil (zoom-out) akan beralih ke model bola bumi 3D).
-
-Namun, dalam forum diskusi tentang tantangan global seperti perubahan iklim dan kesenjangan global, pentingnya memvisualisasikan dunia dengan "rasio luas yang akurat" tetap tinggi, dan proyeksi ekuivalen baru diperlukan.
-
-### 5.1 Tantangan oleh Bojan Šavrič dan rekan-rekan
-
-Pada tahun 2018, proyeksi ekuivalen yang sama sekali baru, "Proyeksi Equal Earth", diumumkan oleh tiga kartografer: Bojan Šavrič, Tom Patterson, dan Bernhard Jenny.
-
-Tujuan mereka jelas:
-"Untuk membuat peta dunia yang tidak memiliki distorsi bentuk yang parah seperti proyeksi Peters, memiliki penampilan yang alami dan indah seperti proyeksi Robinson, dan memiliki sifat ekuivalensi yang ketat."
-
-### 5.2 Inovasi Matematis dari Proyeksi Equal Earth
-
-Proyeksi Equal Earth sangat mirip dengan profil luar proyeksi Robinson, tetapi menggunakan polinomial tingkat tinggi untuk mencapai ekuivalensi yang ketat. Rumus proyeksinya adalah sebagai berikut:
-
-Misalkan lintang adalah $\phi$, bujur adalah $\lambda$ (selisih dari meridian tengah), dan $ \theta $ adalah sudut yang memenuhi $ \sin \theta = \frac{\sqrt{3}}{2} \sin \phi $.
-
-$$ x = \frac{2\sqrt{3} \lambda \cos \theta}{3 (9 A_4 \theta^8 + 7 A_3 \theta^6 + 3 A_2 \theta^2 + A_1)} $$
-$$ y = A_4 \theta^9 + A_3 \theta^7 + A_2 \theta^3 + A_1 \theta $$
-
-Di sini, koefisiennya adalah sebagai berikut:
-$ A_1 = 1.340264 $
-$ A_2 = -0.081106 $
-$ A_3 = 0.000893 $
-$ A_4 = 0.003796 $
-
-Dengan formula rumit ini, proyeksi Equal Earth berhasil mewakili rasio luas yang benar sambil mempertahankan bentuk alami benua, tanpa membentangkan di sekitar khatulistiwa atau menekan secara ekstrem pada lintang tinggi.
-
-### 5.3 Penyebaran sebagai Open Source
-
-Apa yang membuat proyeksi Equal Earth inovatif bukan hanya desainnya, tetapi pendekatannya terhadap difusi. Para pengembang merilis rumus matematika untuk proyeksi ini dalam domain publik (CC0) dan mendorong implementasinya yang cepat ke perangkat lunak GIS open source seperti QGIS dan pustaka visualisasi data seperti D3.js.
-
-Akibatnya, ini dengan cepat diterima oleh para ilmuwan dan media di seluruh dunia, termasuk diadopsi dalam peta anomali suhu global NASA.
-
-```mermaid
-sequenceDiagram
-    participant Cartographers as "Šavrič et al. (Pengembang)"
-    participant OpenSource as "Komunitas Open Source"
-    participant GlobalUsers as "NASA / Organisasi Berita / Institusi Pendidikan"
-    
-    Cartographers->>OpenSource: "Rilis rumus Proyeksi Equal Earth dengan lisensi CC0"
-    Cartographers->>OpenSource: "Menyediakan patch implementasi untuk GIS dan D3.js"
-    OpenSource-->>Cartographers: "Selesai di-merge ke dalam library"
-    GlobalUsers->>OpenSource: "Visualisasi data menggunakan proyeksi ekuivalen baru"
-    GlobalUsers-->>GlobalUsers: "Tampilan luas yang akurat dari data perubahan iklim"
-```
-
-## Kesimpulan: Peta Menciptakan Dunia
-
-Sejarah dari proyeksi Mercator hingga proyeksi Equal Earth juga merupakan sejarah transisi ideologis tentang bagaimana manusia "memahami dunia tempat mereka tinggal dan bagaimana mereka ingin menyampaikannya."
-
-Selama Era Penjelajahan Samudra, "mencapai tujuan dengan andal" adalah prioritas utama (konformalitas), dan selama era penjajahan kolonial, peta yang memamerkan luasnya negara sendiri disukai. Di era Perang Dingin, peta yang menyerukan koreksi masalah Utara-Selatan memicu perdebatan, dan saat ini, peta (ekuivalensi + bentuk alami) yang secara adil menggambarkan tantangan skala global seperti perubahan iklim sangat dibutuhkan.
-
-**"Peta tidak hanya menjadi cermin yang memantulkan dunia, tetapi juga lensa yang menciptakan dunia."**
-
-Saat melihat peta, kita harus selalu menyadari kompromi matematis macam apa yang mendasarinya dan niat seperti apa yang digunakan saat menggambarnya. Proyeksi Equal Earth dapat dikatakan sebagai salah satu "lensa" terbaru yang menunjukkan bagaimana kita saat ini mencoba untuk melihat dunia kembali.
+Peta dunia yang kita tatap bukanlah sebuah "kebenaran absolut". Itu adalah salah satu "interpretasi" manusia yang menerjemahkan Bumi tiga dimensi yang memiliki luas tak terbatas ke dalam dua dimensi agar sesuai dengan tujuan dan nilai-nilai kita sendiri. Saat Anda menatap peta dunia pada kesempatan berikutnya, silakan renungkan sejarah percobaan, kesalahan, dan konflik para pembuat peta selama berabad-abad yang tertuang pada selembar kertas (atau layar) tersebut. Bagaimana kita memandang dunia itu terbentuk oleh peta mana yang kita pilih.
