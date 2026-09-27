@@ -1,166 +1,90 @@
 ---
-title: "GraphQL vs. REST API: Grundlegende Unterschiede in der Designphilosophie und deren Anwendungsfälle"
-description: "Das Overfetching-Problem und moderne API-Architekturen."
-date: 2026-09-27T13:47:26+09:00
+title: "GraphQL und REST-API: Konflikt und Konvergenz von Designphilosophien"
+description: "Eine Untersuchung von GraphQL als Abfragesprache zur Lösung von Over-fetching und Under-fetching, sowie der wahre Wert der ursprünglichen REST-Architektur"
+date: 2026-09-27T19:33:04+09:00
 slug: graphql-vs-rest-api-design
-categories: ["technology", "software-development"]
+categories: ["software-development", "api"]
 tags: ["tech", "api", "graphql", "rest", "architecture"]
 image: eyecatch.jpg
 ---
 
-# GraphQL vs. REST API: Grundlegende Unterschiede in der Designphilosophie und deren Anwendungsfälle
+# GraphQL und REST-API: Konflikt und Konvergenz von Designphilosophien
 
-Bei der Entwicklung moderner Web- und mobiler Anwendungen ist das Design der "API" (Application Programming Interface), die das Backend mit dem Frontend verbindet, ein äußerst wichtiger Faktor, der direkt mit der Gesamtleistung und der Wartbarkeit des Systems zusammenhängt. "REST" (Representational State Transfer) hat lange Zeit als De-facto-Standard für das API-Design regiert. In den letzten Jahren hat sich jedoch "GraphQL" als neues Paradigma rasant verbreitet, um den immer komplexer werdenden Anforderungen des Frontends gerecht zu werden.
+In der modernen Softwareentwicklung ist das Design von APIs, die Frontend und Backend verbinden, ein entscheidendes Element, das die Gesamtleistung und das Entwicklungserlebnis des Systems bestimmt. REST (Representational State Transfer) herrscht seit langem als De-facto-Standard, während GraphQL ein neues, von Facebook (jetzt Meta) geschaffenes Paradigma darstellt. In diesem Artikel werden wir tief in die grundlegenden Unterschiede ihrer jeweiligen Designphilosophien, ihre Stärken und Schwächen eintauchen und erörtern, welches davon man bei der tatsächlichen Produktentwicklung anwenden sollte oder wie sie koexistieren sollten.
 
-In diesem Artikel werden wir aus der Sicht eines professionellen Technikers die Architekturstile untersuchen, die den Ursprung von REST bilden, sowie die modernen Probleme, die GraphQL zu lösen versucht (Overfetching und Underfetching). Darüber hinaus werden die Vor- und Nachteile beider Ansätze bei der Implementierung sowie Richtlinien zur Entscheidung, "in welcher Art von Projekt welches System eingesetzt werden sollte", detailliert und tiefgehend erläutert.
+## Der Ursprung der REST-API: Die Schönheit von Ressourcenorientierung und Zustandslosigkeit (Statelessness)
 
-## 1. Die Philosophie und Architektur von REST API
+REST ist ein Architekturstil, der im Jahr 2000 von Roy Fielding in seiner Dissertation vorgeschlagen wurde. Er definierte einfache, aber leistungsstarke Einschränkungen für die Skalierung von Systemen, während die Grundprinzipien des HTTP-Protokolls optimal genutzt wurden.
 
-REST (Representational State Transfer) ist ein Softwarearchitekturstil, der im Jahr 2000 von Roy Fielding in seiner Dissertation vorgeschlagen wurde. REST ist nicht einfach nur eine Spezifikation oder ein Protokoll, sondern eine "Sammlung von Einschränkungen", um verteilte Systeme (insbesondere das World Wide Web) skalierbar und robust aufzubauen.
-
-### Grundprinzipien von REST
-
-Zu den wichtigsten Einschränkungen von REST, wie von Roy Fielding definiert, gehören:
-
-1. **Client-Server-Trennung (Client-Server)**:
-   Die Belange der Benutzeroberfläche (Client) und die Belange der Datenspeicherung (Server) werden voneinander getrennt. Dadurch wird die Portabilität des Clients verbessert und die Skalierbarkeit des Servers sichergestellt.
-2. **Zustandslosigkeit (Stateless)**:
-   Der Server speichert keinen Sitzungsstatus des Clients. Jede Anfrage vom Client muss alle Informationen enthalten, die zur Verarbeitung dieser Anfrage erforderlich sind. Dies reduziert die Serverlast und erhöht die Zuverlässigkeit des Systems.
-3. **Cachebarkeit (Cacheability)**:
-   Eine Antwort muss Informationen darüber enthalten, ob sie cachebar ist oder nicht. Durch die angemessene Nutzung von Caching kann die Anzahl der Kommunikationen zwischen Client und Server reduziert und die Netzwerkeffizienz drastisch erhöht werden.
-4. **Einheitliche Schnittstelle (Uniform Interface)**:
-   Dies ist die wichtigste Einschränkung, die REST zu REST macht. Ressourcen werden durch URIs (Uniform Resource Identifiers) eindeutig identifiziert und standardisierte Operationen werden unter Verwendung von HTTP-Methoden (GET, POST, PUT, DELETE usw.) durchgeführt.
-5. **Mehrschichtiges System (Layered System)**:
-   Der Client muss nicht wissen, ob er direkt mit dem Endserver oder mit einem zwischengeschalteten Proxy oder Load Balancer verbunden ist.
-
-### Vorteile und Herausforderungen der REST API
-
-Die REST API bietet den enormen Vorteil, die vorhandene Infrastruktur des HTTP-Protokolls (Cache-Server, Proxys, CDNs usw.) unverändert nutzen zu können. Bei modernen Anwendungen mit komplexen Benutzeroberflächen wurden jedoch auch einige Einschränkungen festgestellt.
-
-#### Overfetching und Underfetching
-
-- **Overfetching**:
-  Dies ist das Problem, dass beim Aufrufen eines Endpunkts wie `/users/{id}` auch dann unnötige Daten wie Adressen, Telefonnummern und Registrierungsdaten in großen Mengen abgerufen werden, wenn auf einem bestimmten Bildschirm nur der Name und das Profilbild des Benutzers benötigt werden. In Umgebungen mit begrenzter Bandbreite, wie z. B. in mobilen Netzwerken, führt dies zu einem fatalen Leistungsabfall.
-- **Underfetching (N+1-Problem)**:
-  Um einen bestimmten Bildschirm anzuzeigen, muss der erste Endpunkt (z. B. `/users/{id}`) aufgerufen werden, und die dort erhaltene ID muss verwendet werden, um einen weiteren Endpunkt (z. B. `/users/{id}/posts`) mehrmals aufzurufen. Dies geschieht, weil die benötigten Daten nicht in einer einzigen Ressource zusammengefasst sind, was zu einer erhöhten Latenz führt.
+### Ressourcenorientierte Architektur (ROA)
+Das Herzstück von REST ist die "Ressource". Alle Daten haben einen eindeutigen URI (Uniform Resource Identifier), und HTTP-Methoden (GET, POST, PUT, DELETE usw.) werden verwendet, um Operationen an diesen Ressourcen durchzuführen.
 
 ```mermaid
-graph TD
-    A["Client"] -- "GET /users/123" --> B["REST API"]
-    B -- "{id, name, email, address, phone...} (Overfetching)" --> A
-    A -- "GET /users/123/posts" --> B
-    B -- "[post1, post2, ...] (Underfetching solution causes multiple requests)" --> A
+flowchart TD
+    Client["Client"]
+    Users["/api/users (GET: Liste, POST: Erstellen)"]
+    UserItem["/api/users/123 (GET: Abrufen, PUT: Aktualisieren, DELETE: Löschen)"]
+    Client -- "HTTP Request" --> Users
+    Client -- "HTTP Request" --> UserItem
 ```
 
-## 2. Die Entstehung von GraphQL und der Paradigmenwechsel
+### Caching und Skalierbarkeit
+Durch das Aufsetzen auf den Standard-HTTP-Spezifikationen können die leistungsstarken Caching-Mechanismen, die von der bestehenden Web-Infrastruktur wie Browsern, CDNs und Proxy-Servern bereitgestellt werden, direkt genutzt werden. Dies ist ein unschätzbarer Vorteil bei der Verarbeitung von massivem Datenverkehr.
 
-Um diese REST-Probleme, insbesondere den ineffizienten Datenabruf von mobilen Geräten, zu lösen, Facebook (heute Meta) entwickelte 2012 intern "GraphQL", das 2015 als Open Source veröffentlicht wurde.
+## Die Kluft zur Realität: Herausforderungen des mobilen Zeitalters
 
-### Die Designphilosophie von GraphQL
+Als jedoch mobile Apps immer beliebter wurden und die Benutzeroberflächen reichhaltiger und komplexer wurden, begann die streng ressourcenorientierte REST-API einige ihrer Grenzen zu offenbaren.
 
-GraphQL ist kein Architekturstil wie REST, sondern eine "Abfragesprache" für APIs und eine "Laufzeitumgebung" zur Ausführung dieser Abfragen. Das wichtigste Merkmal ist, **"dass der Client die benötigten Daten in der exakt benötigten Struktur mit einer einzigen Anfrage genau anfordern kann"**.
+### 1. Over-fetching (Überabruf)
+Obwohl der Client nur den "Namen des Benutzers" benötigt, wird beim Aufrufen von `/api/users/123` eine große Menge an unnötigen Daten, wie URL des Profilbilds, Geburtsdatum und Adresse, mitgesendet. In mobilen Netzwerken führt diese unnötige Datenübertragung zu Leistungseinbußen.
 
-### Typsystem und Schema-gesteuerte Entwicklung
+### 2. Under-fetching (Unterabruf) und das N+1-Problem
+Wenn mehrere Ressourcen zur Anzeige eines Bildschirms benötigt werden, reicht eine einzige API-Anfrage nicht aus, um genügend Daten bereitzustellen, und das Problem ist, dass die Anfrage wiederholt werden muss.
+Zum Beispiel beim Abrufen von "der Artikelliste eines Benutzers und den 3 neuesten Kommentaren zu jedem Artikel":
+1. Benutzerinformationen abrufen
+2. Artikelliste des Benutzers abrufen
+3. Kommentare für jeden Artikel abrufen (N Anfragen bei N Artikeln)
+Dies ist eine Ursache für das berühmte N+1-Problem und führt zu erhöhter Latenz.
 
-Den Kern von GraphQL bildet ein starkes Typsystem (Type System). Die Daten, die vom Server bereitgestellt werden können, und ihre Beziehungen werden strikt als "Schema" definiert.
+## Die Geburt von GraphQL: Client-gesteuerter Datenabruf
 
-```graphql
-type User {
-  id: ID!
-  name: String!
-  email: String
-  posts: [Post!]!
-}
+Im Jahr 2012 sah sich Facebook bei einem Projekt zum Neuaufbau seiner mobilen App mit diesen Herausforderungen konfrontiert und entwickelte GraphQL, um sie zu lösen (Open Source seit 2015).
 
-type Post {
-  id: ID!
-  title: String!
-  content: String!
-  author: User!
-}
-
-type Query {
-  user(id: ID!): User
-}
-```
-
-Durch dieses Schema wird der "Vertrag" zwischen Frontend- und Backend-Entwicklern klar definiert. Die GraphQL-Introspection-Funktion (Selbstprüfung) ermöglicht den Einsatz leistungsstarker Entwicklungswerkzeuge (wie GraphiQL) und automatischer Codegenerierung basierend auf den Schemainformationen, was die Entwicklererfahrung (DX - Developer Experience) dramatisch verbessert.
-
-### Einzelner Endpunkt und Flexibilität bei Abfragen
-
-Während REST mehrere Endpunkte pro Ressource hat, besitzt GraphQL normalerweise nur einen einzigen Endpunkt, oft `/graphql`. Der Client sendet Abfragen als POST-Anfrage an diesen Endpunkt.
+GraphQL ist eine Abfragesprache (Query Language), die es dem Client ermöglicht, die Struktur der "gewünschten Daten" genau zu beschreiben.
 
 ```graphql
-# Beispiel für eine Client-Anfrage
-query {
+query GetUserPosts {
   user(id: "123") {
     name
-    posts {
+    posts(first: 5) {
       title
+      comments(first: 3) {
+        author
+        content
+      }
     }
   }
 }
 ```
 
-Auf die obige Anfrage gibt der Server eine JSON-Antwort zurück, die nur die angegebenen Felder (den `name` und den `title` der `posts`) enthält. Dadurch werden die Probleme von Overfetching und Underfetching elegant gelöst.
+### Auflösung von Graphenstrukturen durch Schema und Resolver
+Ein GraphQL-Server verfügt über ein "Schema", das die Daten des gesamten Systems als Graphenstruktur definiert. Die vom Client gesendeten Abfragen werden gemäß dem Schema analysiert, und "Resolver"-Funktionen, die jedem Feld entsprechen, sammeln die Daten im Backend. Dadurch muss der Client nur eine einzige Anfrage an einen einzelnen Endpunkt (normalerweise `/graphql`) senden, um exakt alle benötigten Daten zu erhalten, weder zu viel noch zu wenig.
 
-```mermaid
-graph TD
-    A["Client"] -- "POST /graphql \n { user(id: 123) { name, posts { title } } }" --> B["GraphQL API"]
-    B -- "{ data: { user: { name: 'Alice', posts: [...] } } }" --> A
-```
+## Es gibt kein Wundermittel: Der Preis von GraphQL
 
-## 3. Implementierungsherausforderungen und fortgeschrittene Designstrategien
+Während GraphQL für Frontend-Entwickler wie eine Traumtechnologie erscheint, bringt es neue Komplexität auf der Backend-Seite mit sich.
 
-Obwohl GraphQL wie ein magisches Werkzeug für das Frontend wirkt, bringt es neue Herausforderungen für das Design und die Implementierung des Backends mit sich.
+### Die Schwierigkeit des Cachings
+Während REST den HTTP-Caching-Mechanismus transparent nutzen konnte, kann GraphQL nicht von Caching auf HTTP-Ebene profitieren, da standardmäßig alles als POST-Anfragen an einen einzigen Endpunkt gesendet wird. Es ist erforderlich, Lösungen für normalisiertes Caching mithilfe von Client-Bibliotheken wie Apollo zu entwerfen oder Abfragen am Rand (Edge) des CDNs zwischenzuspeichern.
 
-### Die Manifestation des N+1-Problems und Dataloader
+### Persisted Queries (Persistierte Abfragen)
+Als praktische Lösung für Sicherheits- und Caching-Probleme werden in Produktionsumgebungen häufig "Persisted Queries" verwendet. Dabei handelt es sich um einen Mechanismus, bei dem die Hash-Werte von Abfragen, die vom Client zur Build-Zeit ausgegeben werden, auf dem Server registriert werden und zur Laufzeit nur der Hash-Wert (GET-Anfrage) gesendet wird. Dies blockiert bösartige, riesige Abfragen und ermöglicht gleichzeitig die Nutzung von HTTP-Caching.
 
-Bei GraphQL tritt mit zunehmender Verschachtelung der Abfragen leicht das "N+1-Problem" auf, bei dem die Datenbankabfragen im Backend explosionsartig ansteigen.
-Wenn beispielsweise eine Abfrage zum Abrufen von 10 Benutzern und den 5 neuesten Beiträgen jedes Benutzers gesendet wird, würde eine naive Implementierung "1 Mal für den Benutzerabruf" + "10 Mal für den Beitragsabruf jedes Benutzers", also insgesamt 11 Datenbankabfragen ausführen.
+## Fazit: Vom Konflikt zur Konvergenz
 
-Der Standardansatz zur Lösung dieses Problems ist das **Dataloader**-Muster. Dataloader löst das N+1-Problem effizient, indem individuelle Datenabrufanforderungen, die innerhalb des Lebenszyklus einer Anfrage auftreten, zusammengefasst (gebatcht als eine einzige DB-Abfrage) und gecacht (zur Vermeidung doppelter Abfragen innerhalb derselben Anfrage) werden.
+REST und GraphQL sind nicht dazu bestimmt, einander vollständig zu ersetzen.
 
-### Unterschiede in den Caching-Strategien
+- **Fälle, in denen REST geeignet ist:** Öffentliche APIs (Public APIs) zur externen Nutzung, Kommunikation zwischen Microservices, Hochladen/Herunterladen von Binärdateien, Systeme, die sich hauptsächlich auf einfache CRUD-Operationen konzentrieren.
+- **Fälle, in denen GraphQL geeignet ist:** Mobile Apps und SPAs (Single Page Applications) mit komplexen Benutzeroberflächen, eine Schicht, die mehrere Backend-Dienste (BFF) aggregiert, Produkte, die flexibel auf sich schnell ändernde Anforderungen reagieren müssen.
 
-Bei REST-APIs können Standard-HTTP-Caching-Mechanismen (wie ETags und Cache-Control-Header für GET-Anfragen) problemlos von CDNs und Browsern genutzt werden. Da die URI einer Ressource eindeutig ist, ist das Caching auf Infrastrukturebene äußerst effektiv.
-
-Bei GraphQL hingegen werden standardmäßig alle Anforderungen als POST-Anfragen an einen einzigen Endpunkt (`/graphql`) gesendet, was es schwierig macht, HTTP-Level-Caching-Mechanismen direkt zu verwenden. Daher muss das Caching bei GraphQL auf den folgenden Ebenen durchdacht werden:
-
-1. **Clientseitiger Cache**: Verwendung von normalisierten In-Memory-Caches, die von fortschrittlichen Client-Bibliotheken wie Apollo Client oder Relay bereitgestellt werden.
-2. **Persistierte Abfragen (Persisted Queries)**: Ein Ansatz, bei dem häufig verwendete, umfangreiche Abfragen vorab auf dem Server registriert und gehasht werden, um sie über GET-Anfragen aufrufbar zu machen, was Caching in CDNs ermöglicht.
-3. **Serverseitiger Anwendungs-Cache**: Verwendung von Redis oder Ähnlichem, um Daten auf Resolver-Ebene zwischenzuspeichern.
-
-### Maßnahmen gegen Sicherheitsrisiken und Komplexität
-
-Da GraphQL dem Client leistungsstarke Abfragefähigkeiten verleiht, besteht das Risiko von DoS-Angriffen (Denial of Service), bei denen böswillige Benutzer absichtlich tief verschachtelte, schwere Abfragen senden, um die CPU oder den Speicher des Servers zu erschöpfen.
-
-Zu den repräsentativen Designstrategien, um dies zu verhindern, gehören:
-
-- **Begrenzung der Abfragetiefe (Query Depth Limit)**: Analysiert den abstrakten Syntaxbaum (AST) und lehnt Abfragen ab, deren Verschachtelungstiefe einen bestimmten Wert (z. B. 5 Ebenen) überschreitet.
-- **Analyse der Abfragekomplexität (Query Complexity Analysis)**: Weist jedem Feld "Kosten" zu und blockiert die Ausführung, wenn die Gesamtkosten der gesamten Abfrage das Limit überschreiten.
-- **Ratenbegrenzung (Rate Limiting)**: Begrenzt die Gesamtkosten der Abfragen, die von einer IP-Adresse oder einem Benutzer innerhalb eines bestimmten Zeitraums ausgeführt werden können.
-
-## 4. REST vs. GraphQL: Anwendungsfälle für den richtigen Einsatz
-
-REST und GraphQL schließen sich nicht gegenseitig aus; keines wird das andere vollständig verdrängen. Es sollte das für die Projektanforderungen am besten geeignete ausgewählt werden.
-
-### Wann Sie die REST API wählen sollten
-
-- **Einfache CRUD-Anwendungen**: Wenn die Ressourcenstruktur flach ist und keine komplexen Datenbeziehungen aufweist.
-- **Bereitstellung öffentlicher APIs**: Bei der Bereitstellung einer API für eine unbestimmte Anzahl von Entwicklern ist REST der größte Standard, hat eine geringe Lernkurve und kann leicht von beliebigen Sprachen und Umgebungen aus aufgerufen werden.
-- **Dateiübertragungen und Streaming**: Für den Umgang mit Binärdaten, wie beim Hochladen von Bildern oder Video-Streaming, ist REST (wie Multipart-Form-Data) einfacher und effizienter.
-- **Hohe Anforderungen an das Infrastruktur-Caching**: In inhaltszentrierten Systemen, die stark auf CDNs angewiesen sind, um Millionen von Anfragen statisch zu cachen und zu verarbeiten.
-
-### Wann Sie GraphQL wählen sollten
-
-- **Anwendungen mit komplexen Benutzeroberflächen und Datenanforderungen**: Moderne SPAs (Single Page Applications) und mobile Apps, die Daten aus mehreren Ressourcen auf einem einzigen Bildschirm sammeln und integrieren müssen.
-- **Plattformübergreifende Bereitstellung**: Wenn Daten effizient über eine einzige API an mehrere Clients (Web, iOS, Android usw.) bereitgestellt werden sollen, die Daten in unterschiedlichen Formaten benötigen.
-- **BFF-Schicht (Backend For Frontend) für Microservices**: Es eignet sich hervorragend als Aggregationsschicht (API Gateway / BFF), die mehrere im Backend verstreute Microservices oder vorhandene REST-APIs bündelt und dem Frontend als einfach zu nutzende, einzige Graphenstruktur bereitstellt.
-- **Agile Entwicklung und Schema-gesteuerter Ansatz**: Projekte mit häufigen UI-Änderungen und daraus resultierenden API-Änderungsanforderungen. Das Frontend kann dem Query frei notwendige Daten hinzufügen oder entfernen, ohne auf Änderungen am Backend warten zu müssen.
-
-## Fazit
-
-Roy Fieldings REST brachte Ordnung in verteilte Systeme und legte den Grundstein für das heutige Web. Auf der anderen Seite liefert GraphQL Entwicklern eine leistungsstarke Waffe, um die zunehmend komplexeren Frontend-Anforderungen zu erfüllen und die Entwicklererfahrung sowie die Clientleistung zu optimieren.
-
-Wir sollten nicht in den einfachen Dualismus von "REST ist alt und GraphQL ist neu" verfallen. Ein wirklich professioneller Architekt versteht die grundlegenden Unterschiede in beiden Designphilosophien tiefgreifend und wählt die optimale Architektur aus, indem er die Eigenschaften der Daten, die Netzwerkanforderungen, die Arten der Clients und die Fähigkeiten des Entwicklungsteams ganzheitlich bewertet. In einigen Fällen kann ein hybrider Ansatz – der Aufbau des Systemkerns mit REST und die Einführung von GraphQL nur als BFF-Schicht für das Frontend – ebenfalls eine äußerst mächtige Option darstellen.
+In modernen Architekturen wird die Form der "Konvergenz" zum Mainstream, bei der interne Microservices über gRPC oder REST kommunizieren und die Frontend-Schicht (API Gateway oder BFF) GraphQL bereitstellt. Das tiefe Verständnis der Eigenschaften dieser Technologien und deren zielgerichteter Einsatz sind der Schlüssel zum Entwurf hervorragender Systeme.

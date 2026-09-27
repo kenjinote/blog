@@ -1,166 +1,90 @@
 ---
-title: "GraphQL vs REST API：設計思想的根本差異與應用時機"
-description: "過度獲取（Overfetching）問題與最新的 API 架構。"
-date: 2026-09-27T13:47:26+09:00
+title: "GraphQL與REST API：設計思想的衝突與融合"
+description: "深入探討作為解決過度獲取與獲取不足問題的查詢語言GraphQL，以及REST經典架構的真正價值"
+date: 2026-09-27T19:33:04+09:00
 slug: graphql-vs-rest-api-design
-categories: ["technology", "software-development"]
+categories: ["software-development", "api"]
 tags: ["tech", "api", "graphql", "rest", "architecture"]
 image: eyecatch.jpg
 ---
 
-# GraphQL vs REST API：設計思想的根本差異與應用時機
+# GraphQL與REST API：設計思想的衝突與融合
 
-在現代網頁與行動應用程式的開發中，連接後端與前端的「API（Application Programming Interface，應用程式介面）」設計，是直接影響系統整體效能與可維護性的極為重要元素。長期以來，「REST（Representational State Transfer，具象狀態傳輸）」一直是 API 設計的業界標準，然而近年來，為因應前端日益複雜的需求，「GraphQL」作為一種全新典範，正迅速普及。
+在現代軟體開發中，連接前端與後端的API設計是影響系統整體效能和開發體驗的關鍵因素。長期以來作為事實標準存在的REST（Representational State Transfer），與Facebook（現Meta）創造的新範式GraphQL。本文將深入探討兩者在根本設計思想上的差異、各自的優缺點，以及在實際的產品開發中應該選擇哪一方，或是如何讓它們共存。
 
-本文將從專業技術人員的視角出發，深入剖析 REST 的架構風格起源、GraphQL 試圖解決的現代挑戰（如過度獲取與獲取不足問題），以及兩者在實作上的優缺點。最後，我們將詳細探討「在何種專案中應採用哪一種技術」的選擇準則。
+## REST API的經典：面向資源與無狀態之美
 
-## 1. REST API 的哲學與架構
+REST是Roy Fielding在2000年的博士論文中提出的一種架構風格。它最大程度地發揮了HTTP協定的基本原則，並為了讓系統具備可擴展性，定義了簡單而強大的約束。
 
-REST（Representational State Transfer）是由 Roy Fielding 於 2000 年的博士論文中提出的軟體架構風格。REST 並非單純的規範或協定，而是一組「約束條件」，旨在將分散式系統（特別是全球資訊網 World Wide Web）建構得更具擴展性與強健性。
-
-### REST 的基本原則
-
-Roy Fielding 定義的 REST 核心約束條件包含以下幾項：
-
-1. **主從式架構分離（Client-Server）**:
-   將使用者介面的關注點（客戶端）與資料儲存的關注點（伺服器端）分離。這不僅提升了客戶端的可攜性，也確保了伺服器端的可擴展性。
-2. **無狀態（Stateless）**:
-   伺服器不會保存客戶端的工作階段（Session）狀態。客戶端發出的每個請求，都必須包含處理該請求所需的完整資訊。這能減輕伺服器負擔，並提升系統的可靠性。
-3. **可快取性（Cacheability）**:
-   回應訊息中必須包含是否可被快取的資訊。透過妥善利用快取，能減少客戶端與伺服器之間的通訊次數，大幅提升網路效率。
-4. **統一介面（Uniform Interface）**:
-   這是讓 REST 成為 REST 最重要的約束條件。資源透過 URI（Uniform Resource Identifier）進行唯一識別，並使用 HTTP 方法（如 GET、POST、PUT、DELETE 等）執行標準化的操作。
-5. **分層系統（Layered System）**:
-   客戶端無需意識到自己是直接連接到終端伺服器，還是連接到中間的代理伺服器或負載平衡器。
-
-### REST API 的優勢與挑戰
-
-REST API 最大的優勢在於，能直接善用 HTTP 協定現有的基礎設施（如快取伺服器、代理伺服器、CDN 等）。然而，在擁有複雜 UI 的現代應用程式中，REST API 的某些侷限性也開始浮現。
-
-#### 過度獲取（Overfetching）與獲取不足（Underfetching）
-
-- **過度獲取（Overfetching）**:
-  即使某個畫面只需要使用者的姓名與大頭貼，呼叫 `/users/{id}` 端點時，卻會連同地址、電話號碼、註冊日期等不需要的資料也一併大量取得的問題。在行動網路等頻寬受限的環境中，這將導致致命的效能低落。
-- **獲取不足（Underfetching / N+1 問題）**:
-  為顯示特定畫面，必須先呼叫第一個端點（例如：`/users/{id}`），接著再使用取得的 ID 進行多次其他端點的呼叫（例如：`/users/{id}/posts`）。由於所需資料並未整合在單一資源中，因此會引發延遲（Latency）增加的問題。
+### 面向資源的架構（ROA）
+REST的核心是「資源」。所有的資料都擁有一個唯一的URI（Uniform Resource Identifier），並使用HTTP方法（GET、POST、PUT、DELETE等）對資源進行操作。
 
 ```mermaid
-graph TD
-    A["Client"] -- "GET /users/123" --> B["REST API"]
-    B -- "{id, name, email, address, phone...} (過度獲取)" --> A
-    A -- "GET /users/123/posts" --> B
-    B -- "[post1, post2, ...] (獲取不足導致多次請求)" --> A
+flowchart TD
+    Client["Client"]
+    Users["/api/users (GET: 列表, POST: 建立)"]
+    UserItem["/api/users/123 (GET: 獲取, PUT: 更新, DELETE: 刪除)"]
+    Client -- "HTTP Request" --> Users
+    Client -- "HTTP Request" --> UserItem
 ```
 
-## 2. GraphQL 的誕生與典範轉移
+### 快取與可擴展性
+基於HTTP標準規範，REST可以直接利用瀏覽器、CDN、代理伺服器等Web現有基礎設施提供的強大快取機制。這在處理巨大流量時是不可估量的優勢。
 
-為了解決上述 REST 的課題，特別是來自行動裝置效率低下的資料獲取問題，Facebook（現 Meta）於 2012 年開發了內部使用的「GraphQL」，並於 2015 年將其開源。
+## 與現實的脫節：行動時代的挑戰
 
-### GraphQL 的設計思想
+然而，隨著行動應用的普及，UI變得越來越豐富和複雜，嚴格面向資源的REST API開始暴露出一些侷限性。
 
-GraphQL 並非如 REST 般的架構風格，而是專為 API 設計的「查詢語言（Query Language）」以及執行該查詢的「執行環境（Runtime）」。其最大特色在於，**「客戶端能以單次請求，精確獲取所需結構的所需資料」**。
+### 1. 過度獲取（Over-fetching）
+客戶端只需要「使用者名稱」，但是在請求 `/api/users/123` 時，卻會接收到大量不需要的資料，如個人頭像URL、出生日期、地址等。在行動網路環境下，這種無效的資料傳輸會導致效能下降。
 
-### 型別系統與結構描述驅動開發（Schema-Driven Development）
+### 2. 獲取不足（Under-fetching）與 N+1 問題
+當渲染畫面需要多個資源時，一次API請求無法獲取所有資料，必須重複多次發起請求的問題。
+例如，如果要獲取「某位使用者的文章列表，以及每篇文章的最新3則留言」：
+1. 獲取使用者資訊
+2. 獲取該使用者的文章列表
+3. 獲取每篇文章的留言（如果有N篇文章，就會發起N次請求）
+這就成了著名的N+1問題的原因之一，會導致延遲增加。
 
-GraphQL 的核心是強大的型別系統（Type System）。伺服器端可提供的資料及其關聯性，會被嚴格定義為「結構描述（Schema）」。
+## GraphQL的誕生：客戶端主導的資料獲取
 
-```graphql
-type User {
-  id: ID!
-  name: String!
-  email: String
-  posts: [Post!]!
-}
+2012年，Facebook在重構行動應用的專案中面臨了這些挑戰，為了解決它們，GraphQL應運而生（於2015年開源）。
 
-type Post {
-  id: ID!
-  title: String!
-  content: String!
-  author: User!
-}
-
-type Query {
-  user(id: ID!): User
-}
-```
-
-透過這份 Schema，前端與後端工程師之間的「契約」變得十分明確。藉由 GraphQL Introspection（內省）功能，開發團隊可利用基於 Schema 資訊的強大開發工具（如 GraphiQL 等）與自動程式碼生成，使開發者體驗（DX, Developer Experience）獲得飛躍性的提升。
-
-### 單一端點與查詢的彈性
-
-相較於 REST 會為每個資源提供多個端點，GraphQL 通常只擁有單一端點 `/graphql`。客戶端會向這個端點發送包含查詢的 POST 請求。
+GraphQL是一種能夠讓客戶端精確描述「所需資料」結構的查詢語言。
 
 ```graphql
-# 客戶端發送的請求範例
-query {
+query GetUserPosts {
   user(id: "123") {
     name
-    posts {
+    posts(first: 5) {
       title
+      comments(first: 3) {
+        author
+        content
+      }
     }
   }
 }
 ```
 
-面對上述請求，伺服器只會回傳包含指定欄位（`name` 以及 `posts` 中的 `title`）的 JSON 回應。如此一來，過度獲取與獲取不足的問題便迎刃而解。
+### 透過Schema和Resolver解析圖結構
+GraphQL伺服器擁有一個「Schema」，用於將整個系統的資料定義為一個圖結構。客戶端發送的查詢會根據Schema進行解析，後端與各個欄位相對應的「Resolver」函式會收集資料。因此，客戶端只需向單一端點（通常是 `/graphql`）發送一次請求，就能獲取所有需要的資料，既不冗餘也不短缺。
 
-```mermaid
-graph TD
-    A["Client"] -- "POST /graphql, { user(id: 123) { name, posts { title } } }" --> B["GraphQL API"]
-    B -- "{ data: { user: { name: 'Alice', posts: [...] } } }" --> A
-```
+## 沒有完美的銀彈：GraphQL的代價
 
-## 3. 實作上的挑戰與進階設計策略
+雖然GraphQL對前端開發者來說就像是夢幻般的技術，但它也給後端帶來了新的複雜性。
 
-雖然 GraphQL 對前端而言宛如魔法工具，但它也為後端的設計與實作帶來了全新的挑戰。
+### 快取的難度
+REST可以透明地利用HTTP的快取機制，而GraphQL基本上所有的請求都作為POST請求發送到單一端點，因此HTTP級別的快取不起作用。需要使用Apollo等客戶端套件進行標準化快取（Normalized Cache），或者在CDN邊緣節點快取查詢等方案。
 
-### N+1 問題的顯現與 Dataloader
+### 持久化查詢（Persisted Queries）
+作為應對安全性和快取挑戰的現實方案，「持久化查詢」在正式環境經常被使用。其機制是在建置時將客戶端發起的查詢雜湊值註冊到伺服器，在執行時只發送雜湊值（GET請求）。這樣既能防止惡意的巨大查詢，又能有效利用HTTP快取。
 
-在 GraphQL 中，隨著查詢巢狀深度的增加，後端對資料庫的查詢次數極易呈現爆炸性成長，這便是「N+1 問題」。
-例如，當發送一個「取得 10 位使用者，以及每位使用者所撰寫的最新 5 篇文章」的查詢時，若採用直觀實作，將會觸發「1 次取得使用者」加上「10 次取得各使用者的文章」，共計 11 次資料庫查詢。
+## 結論：從衝突走向融合
 
-解決此問題的標準作法是 **Dataloader** 模式。Dataloader 能夠在請求的生命週期內，將各別的資料獲取需求進行批次化（Batching，合併為單一資料庫查詢），並進行快取（Caching，防止同一請求內的重複查詢），進而有效率地消除 N+1 問題。
+REST和GraphQL並不是誰完全取代誰的關係。
 
-### 快取策略的差異
+- **適合REST的場景:** 用於對外公開的Public API、微服務之間的通訊、二進位檔案的上傳/下載，以及以簡單CRUD操作為主的系統。
+- **適合GraphQL的場景:** 擁有複雜UI的行動應用或SPA、聚合多個後端服務的層（BFF）、需要靈活應對快速變化需求的產品。
 
-在 REST API 中，可以輕易地透過 CDN 或瀏覽器來運用 HTTP 標準的快取機制（如針對 GET 請求的 ETag 或 Cache-Control 標頭）。由於資源的 URI 是唯一的，因此在基礎設施層級的快取極具成效。
-
-相對地，由於 GraphQL 基本上所有請求都是對單一端點（`/graphql`）的 POST 請求，因此難以直接利用 HTTP 層級的快取機制。為此，GraphQL 的快取必須在以下幾個層級下工夫：
-
-1. **客戶端快取（Client-side Cache）**: 活用 Apollo Client 或 Relay 等進階客戶端函式庫所提供的正規化記憶體快取。
-2. **持久化查詢（Persisted Queries）**: 將常用且龐大的查詢預先註冊至伺服器並進行雜湊化，讓客戶端能透過 GET 請求進行呼叫，進而實現 CDN 快取的手法。
-3. **伺服器端的應用程式快取**: 利用 Redis 等工具，在解析器（Resolver）層級對資料進行快取。
-
-### 資訊安全與複雜度防範措施
-
-由於 GraphQL 賦予了客戶端強大的查詢能力，惡意使用者可能會刻意發送深層巢狀、極度繁重的查詢，耗盡伺服器的 CPU 或記憶體，造成 DoS 攻擊（Denial of Service，阻斷服務攻擊）的風險。
-
-防止此類問題的代表性設計策略如下：
-
-- **查詢深度限制（Query Depth Limit）**: 解析 AST（抽象語法樹），拒絕巢狀深度超過一定限制（例如：5 層）的查詢。
-- **查詢複雜度限制（Query Complexity Analysis）**: 為各個欄位分配「成本（Cost）」，當整體查詢的總成本超過上限時，便阻擋該執行。
-- **頻率限制（Rate Limiting）**: 針對 IP 位址或使用者，限制在特定時間內可執行的查詢總成本。
-
-## 4. REST vs GraphQL：適才適所的應用情境
-
-REST 與 GraphQL 並不是誰完全取代誰的關係，而是應根據專案需求來選擇合適的技術。
-
-### 應選擇 REST API 的情境
-
-- **單純的 CRUD 應用程式**: 資源結構扁平，且不具備複雜資料關聯性的情況。
-- **提供公開 API（Public API）**: 面向廣大未知開發者提供 API 時，REST 是最為標準且學習成本最低的選擇，能輕易從各種語言與環境中進行呼叫。
-- **檔案傳輸或串流**: 處理圖片上傳或影片串流等二進位資料時，REST（如 Multipart form data 等）更為簡單高效。
-- **強大的基礎設施快取需求**: 需要活用 CDN，靜態快取並處理數百萬次請求、以內容傳遞為核心的系統。
-
-### 應選擇 GraphQL 的情境
-
-- **具備複雜 UI 與資料需求的應用程式**: 需要在單一畫面中收集並整合多個資源資料的現代 SPA（Single Page Application）或行動應用程式。
-- **跨平台開發**: 針對 Web、iOS、Android 等擁有多種資料格式需求的客戶端，希望能透過單一 API 高效提供資料時。
-- **微服務的 BFF（Backend For Frontend）層**: 將後端分散的多個微服務或既有 REST API 進行統整，作為對前端友善的單一圖（Graph）結構提供的聚合層（API Gateway / BFF），表現極為出色。
-- **敏捷開發與 Schema 驅動**: UI 變更頻繁，且隨之而來的 API 變更需求極多的專案。前端無需等待後端修改，即可自由地在查詢中新增或移除所需資料。
-
-## 結論
-
-Roy Fielding 的 REST 為分散式系統帶來了秩序，並奠定了今日 Web 的基礎。另一方面，GraphQL 則回應了前端日益複雜的需求，為優化開發者體驗與客戶端效能提供了強大的武器。
-
-我們不應落入「REST 已經過時，GraphQL 才是新趨勢」這種簡單的二元對立。真正專業的架構師，會深入理解兩者設計思想的根本差異，綜合評估資料特性、網路需求、客戶端類型，以及開發團隊的技能組合，進而選擇最合適的架構。在某些情況下，系統核心採用 REST 建構，而僅在前端的 BFF 層導入 GraphQL 的混合式（Hybrid）策略，也會是非常強而有力的選擇。
+在現代架構中，內部的微服務透過gRPC或REST進行通訊，而在面向前端的層（API Gateway或BFF）提供GraphQL，這種「融合」的型態正逐漸成為主流。深刻理解各項技術的特性，並適才適所地使用，才是卓越系統設計的關鍵。
