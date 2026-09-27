@@ -1,6 +1,6 @@
 ---
 title: "Matéria Escura e Energia Escura: As Forças Invisíveis que Dominam o Universo"
-description: "Por que as galáxias não se desintegram? A identidade desconhecida que compõe 95% do universo."
+description: "Por que as galáxias não se despedaçam. A identidade desconhecida que compõe 95% do universo."
 slug: dark-matter-dark-energy-mysteries
 date: 2026-09-28T00:32:29+09:00
 categories: ["science", "astronomy"]
@@ -10,87 +10,96 @@ image: eyecatch.jpg
 
 # Matéria Escura e Energia Escura: As Forças Invisíveis que Dominam o Universo
 
-Quando olhamos para o céu noturno, as inúmeras estrelas e galáxias que vemos são apenas a ponta do iceberg de todo o universo. De acordo com a cosmologia padrão atual (modelo ΛCDM), a matéria normal que conhecemos (estrelas, gás, planetas e os átomos que nos compõem) constitui apenas cerca de 5% da proporção de energia e matéria de todo o universo. Os restantes cerca de 27% são ocupados pela "matéria escura" e cerca de 68% pela "energia escura", ambas entidades de identidade desconhecida.
+Ao olharmos para o céu noturno, as incontáveis estrelas e galáxias que vemos são apenas a ponta do iceberg de todo o universo. De acordo com a cosmologia padrão atual (modelo ΛCDM), a matéria normal que conhecemos (estrelas, gás, planetas e os átomos que nos compõem) representa apenas cerca de 5% da composição de energia e matéria de todo o universo. Os restantes cerca de 27% são ocupados pela "matéria escura" e cerca de 68% pela "energia escura", que são entidades de identidade desconhecida.
 
-Como este "universo invisível" foi descoberto e se tornou o maior mistério da física moderna? Neste artigo, explicaremos tudo, desde a sua história até à física de partículas mais recente e as experiências de observação de ponta.
+Como este "universo invisível" foi descoberto e passou a reinar como o maior mistério da física moderna? Neste artigo, explicaremos de forma abrangente desde a sua história até a física de partículas mais recente e os experimentos observacionais de ponta.
 
 ## A Descoberta Histórica da Matéria Escura: O Mistério da Massa Perdida
 
 ### Fritz Zwicky e a Proposta da "Massa Invisível"
 
-O conceito de matéria escura apareceu pela primeira vez no palco da ciência em 1933. O astrónomo suíço Fritz Zwicky estava a observar o Enxame da Cabeleira de Berenice (Coma Cluster), um gigantesco aglomerado de galáxias. Ele mediu a velocidade de movimento das galáxias individuais que compõem o enxame e, a partir dessa velocidade, calculou a força gravitacional necessária para que todo o enxame se mantivesse unido.
+O conceito de matéria escura apareceu pela primeira vez no cenário científico em 1933. O astrônomo suíço Fritz Zwicky estava observando um enorme grupo de galáxias chamado Aglomerado de Coma. Ele mediu as velocidades de movimento das galáxias individuais que compõem o aglomerado e calculou, a partir dessas velocidades, quanta gravidade era necessária para manter todo o aglomerado unido.
 
-Ao mesmo tempo, estimou a massa das estrelas nele contidas (massa visível) a partir da quantidade total de luz emitida pelo enxame de galáxias. Surpreendentemente, a velocidade de movimento observada das galáxias era demasiado rápida para ser contida apenas pela gravidade produzida pela massa estimada a partir da luz. Se apenas a matéria visível existisse, o enxame de galáxias ter-se-ia desintegrado e espalhado há muito tempo. Zwicky pensou que devia existir uma grande quantidade de matéria desconhecida e invisível, cuja gravidade mantinha o enxame de galáxias unido, e chamou-lhe "dunkle Materie" (matéria escura). No entanto, devido a dúvidas sobre a precisão das observações na comunidade astronómica da época, a sua afirmação foi ignorada durante muito tempo.
+Ao mesmo tempo, ele estimou a massa das estrelas contidas nele (massa visível) a partir da quantidade total de luz emitida pelo aglomerado de galáxias. Surpreendentemente, as velocidades de movimento observadas das galáxias eram rápidas demais para serem contidas apenas pela gravidade criada pela massa estimada a partir da luz. Se apenas a matéria visível existisse, o aglomerado de galáxias já teria se despedaçado há muito tempo. Zwicky propôs a existência de uma grande quantidade de matéria invisível e desconhecida, cuja gravidade mantinha o aglomerado unido, e chamou-a de "dunkle Materie" (matéria escura). No entanto, na comunidade astronômica da época, devido a dúvidas sobre a precisão das observações, sua alegação foi ignorada por muito tempo.
 
-### Vera Rubin e o Problema da Curva de Rotação Galáctica
+### Vera Rubin e o Problema da Curva de Rotação das Galáxias
 
-Cerca de 40 anos após a descoberta de Zwicky, na década de 1970, surgiram resultados de observação que confirmaram a existência de matéria escura. A astrónoma americana Vera Rubin e o seu colega Kent Ford mediram detalhadamente a "curva de rotação galáctica", tendo como alvo galáxias espirais como a Galáxia de Andrómeda.
+Cerca de 40 anos após a descoberta de Zwicky, na década de 1970, surgiram resultados observacionais que confirmaram a existência da matéria escura. A astrônoma americana Vera Rubin e seu colega Kent Ford mediram detalhadamente a "curva de rotação galáctica" de galáxias espirais, como a Galáxia de Andrômeda.
 
-Em galáxias onde as estrelas estão densamente concentradas no centro, a gravidade enfraquece à medida que a distância do centro aumenta, pelo que, de acordo com as leis de Kepler, a velocidade de rotação das estrelas nas extremidades exteriores deveria ser mais lenta (o mesmo princípio pelo qual os planetas exteriores no sistema solar têm velocidades orbitais mais lentas). No entanto, os resultados das observações de Rubin contrariaram as expectativas. Mesmo nas extremidades exteriores, longe do centro da galáxia, a velocidade de rotação das estrelas e do gás não diminuía, mantendo uma velocidade quase constante.
+Em galáxias onde as estrelas estão densamente agrupadas no centro, a gravidade enfraquece à medida que se afasta do centro, então, de acordo com as leis de Kepler, a velocidade de rotação das estrelas nas bordas externas deveria ser mais lenta (o mesmo princípio no sistema solar, onde os planetas mais externos têm velocidades orbitais mais lentas). No entanto, os resultados observacionais de Rubin contrariaram as expectativas. Mesmo nas bordas externas, longe do centro galáctico, a velocidade de rotação de estrelas e gases não caía, mantendo-se quase constante.
 
 ```mermaid
 graph TD
-    A["Leis físicas normais (expectativa)"] --> B["A gravidade enfraquece na borda exterior e a velocidade de rotação deveria diminuir"]
-    C["Resultados da observação real (descoberta de Rubin)"] --> D["A velocidade de rotação não diminui nem mesmo na borda exterior"]
-    B --> E["Impossível de explicar apenas com a matéria visível"]
+    A["Leis da física normal (Expectativa)"] --> B["A gravidade deveria enfraquecer e a velocidade de rotação cair nas bordas externas"]
+    C["Resultados observacionais reais (Descoberta de Rubin)"] --> D["A velocidade de rotação não cai mesmo nas bordas externas"]
+    B --> E["Impossível de explicar apenas com matéria visível"]
     D --> E
-    E --> F["Existe um gigantesco halo de matéria escura que envolve toda a galáxia!"]
+    E --> F["Existe um enorme halo de matéria escura envolvendo toda a galáxia!"]
 ```
 
-A única maneira lógica de explicar esta "planura da curva de rotação galáctica" era assumir que existia uma gigantesca massa invisível (halo de matéria escura) numa vasta região muito além da parte visível da galáxia, e que a sua gravidade estava a puxar as estrelas na borda exterior a alta velocidade. Devido às observações precisas de Rubin, a matéria escura deixou de ser apenas uma hipótese e passou a ser aceite como uma realidade firme que não pode ser ignorada na cosmologia moderna.
+A única maneira razoável de explicar este "achatamento da curva de rotação galáctica" era assumir que existia uma enorme massa invisível (halo de matéria escura) em uma vasta região que se estendia muito além da parte visível da galáxia, e que sua gravidade puxava as estrelas nas bordas externas em alta velocidade. Devido às observações precisas de Rubin, a matéria escura não era mais apenas uma hipótese, mas passou a ser aceita como uma realidade inegável que não pode ser ignorada na cosmologia moderna.
 
 ## Em Busca da Identidade da Matéria Escura: O Desafio da Física de Partículas
 
-Embora a existência da matéria escura seja certa devido aos seus efeitos gravitacionais, qual é então a sua "identidade"? Como não interage com a luz (ondas electromagnéticas), não pode ser vista diretamente nem captada por ondas de rádio ou raios-X. Os principais candidatos atuais são partículas elementares desconhecidas, que vão além do Modelo Padrão (a estrutura das partículas elementares atualmente conhecidas).
+Embora seja certo pela ação da gravidade que a matéria escura "está lá", qual é a sua "identidade"? Como ela não interage com a luz (ondas eletromagnéticas), não podemos vê-la diretamente, nem captá-la com ondas de rádio ou raios-X. O candidato atual mais forte é uma partícula elementar desconhecida que vai além do Modelo Padrão (a estrutura atualmente conhecida das partículas elementares).
 
 ### Candidato 1: WIMP (Weakly Interacting Massive Particles)
 
-Durante muitos anos, o candidato mais forte tem sido o WIMP (Partículas Massivas que Interagem Fracamente). O WIMP é uma partícula hipotética que, como o nome sugere, tem massa (gera gravidade), mas não interage com a força eletromagnética ou a força nuclear forte, relacionando-se com a outra matéria apenas através da "força nuclear fraca" e da "gravidade".
-Se os WIMPs existirem, há um belo contexto teórico chamado de "Milagre do WIMP", onde eles teriam sido gerados em grandes quantidades no estado de alta temperatura e alta densidade do universo primordial, e à medida que o universo arrefeceu, a quantidade restante corresponderia perfeitamente à densidade atual da matéria escura. Como também é derivado naturalmente de modelos de extensão da física de partículas, como a teoria da supersimetria, físicos experimentais de todo o mundo têm competido ferozmente na busca de WIMPs.
+Por muitos anos, o candidato mais forte tem sido o WIMP (Partículas Massivas de Interação Fraca). O WIMP, como o nome sugere, é uma partícula hipotética que tem massa (gerando gravidade), mas não interage com a força eletromagnética ou com a força nuclear forte, relacionando-se com outras matérias apenas pela "força nuclear fraca" e "gravidade".
+
+Se os WIMPs existirem, há um belo pano de fundo teórico chamado de "Milagre do WIMP", onde eles seriam produzidos em grande quantidade no estado de alta temperatura e alta densidade do universo primitivo, e, à medida que o universo esfriasse, uma quantidade que corresponde perfeitamente à densidade atual de matéria escura permaneceria. Como são derivados naturalmente em modelos estendidos da física de partículas, como a teoria da supersimetria, os físicos experimentais em todo o mundo têm competido intensamente em busca dos WIMPs.
 
 ### Candidato 2: Áxion (Axion)
 
-Outro candidato forte é o áxion. O áxion é uma partícula não descoberta extremamente leve que foi originalmente introduzida para resolver outro mistério da física chamado "violação da simetria CP" na interação forte (a força que liga os quarks para formar protões e neutrões).
-Enquanto se assume que o WIMP tem uma massa pesada de dezenas a milhares de vezes a de um protão, acredita-se que o áxion tem uma massa incrivelmente leve, inferior a centenas de milhões de vezes a de um eletrão. No entanto, se existirem em quantidades inumeráveis no espaço, tal como a poeira que se acumula para formar uma montanha, podem gerar uma massa gigantesca no total e atuar como matéria escura. Nos últimos anos, com a dificuldade em descobrir WIMPs, a atenção sobre a busca de áxions aumentou dramaticamente.
+Outro forte candidato é o áxion. O áxion foi originalmente introduzido como uma partícula não descoberta, extremamente leve, para resolver outro mistério da física chamado "violação da simetria CP" nas interações fortes (a força que une os quarks para formar prótons e nêutrons).
 
-## Experiências de Observação na Linha da Frente: Perseguindo os Mistérios do Universo nas Profundezas da Terra
+Enquanto se assume que o WIMP tem uma massa pesada, dezenas a milhares de vezes maior que um próton, acredita-se que o áxion tenha uma massa incrivelmente leve, sendo centenas de milhões de vezes menor que a de um elétron. No entanto, se existirem em números incontáveis no espaço sideral, podem gerar, como um todo, uma massa enorme e se comportar como matéria escura, como grãos de poeira formando uma montanha. Nos últimos anos, com a dificuldade em descobrir os WIMPs, a atenção à busca por áxions aumentou drasticamente.
 
-Espera-se que as partículas de matéria escura (especialmente os WIMPs) colidam raramente com a matéria normal (núcleos atómicos). No entanto, na superfície da Terra, há demasiado ruído de raios cósmicos e outros, o que torna impossível captar esses sinais fracos de colisão. Portanto, as experiências de busca direta de matéria escura são realizadas em instalações subterrâneas profundas, onde rochas espessas podem bloquear os raios cósmicos.
+## Experimentos Observacionais de Ponta: Perseguindo os Mistérios do Universo nas Profundezas da Terra
 
-### Projeto de Experiência XENON (XENONnT)
+Espera-se que as partículas de matéria escura (especialmente os WIMPs) colidam raramente com a matéria normal (núcleos atômicos). No entanto, na superfície da Terra, há muito ruído, como os raios cósmicos, impossibilitando a captura de seus fracos sinais de colisão. Portanto, os experimentos de busca direta por matéria escura são conduzidos em instalações subterrâneas profundas, onde camadas espessas de rocha podem bloquear os raios cósmicos.
 
-O projeto "XENON", realizado no Laboratório Nacional do Gran Sasso, em Itália (cerca de 1400 metros debaixo da terra), é a experiência de busca de matéria escura de maior sensibilidade do mundo, utilizando xénon líquido. No modelo mais recente "XENONnT", cerca de 8,6 toneladas de xénon líquido de ultra-alta pureza enchem um tanque gigante, tentando captar a luz fraca (luz de cintilação) e os eletrões emitidos quando as partículas de matéria escura colidem com os núcleos de xénon. Grupos de investigação do Japão, como a Universidade de Tóquio e a Universidade de Nagoya, também estão a participar, aguardando um encontro com partículas desconhecidas num ambiente onde o ruído de fundo foi reduzido ao limite absoluto.
+### Projeto do Experimento XENON (XENONnT)
+
+O projeto "XENON", realizado no Laboratório Nacional do Gran Sasso, na Itália (cerca de 1400 metros de profundidade), é o experimento de busca por matéria escura de maior sensibilidade do mundo, utilizando xenônio líquido. No mais recente "XENONnT", um tanque gigante é preenchido com cerca de 8,6 toneladas de xenônio líquido de ultra-alta pureza na tentativa de captar a luz fraca (luz de cintilação) e os elétrons emitidos quando uma partícula de matéria escura colide com um núcleo de xenônio. Grupos de pesquisa de instituições japonesas, como a Universidade de Tóquio e a Universidade de Nagoya, também estão participando e aguardando o encontro com partículas desconhecidas em um ambiente onde o ruído de fundo foi reduzido ao extremo.
+
+### O Experimento LUX-ZEPLIN (LZ) e as Ondulações do "Higgsino"
+
+Atualmente, no centro de pesquisa "SURF" em Dakota do Sul, EUA, localizado a cerca de 1,6 km de profundidade, está em operação o projeto internacional conjunto "Experimento LUX-ZEPLIN (LZ)", que utiliza 10 toneladas de xenônio líquido de ultra-alta pureza. Recentemente, a análise de 220 dias de dados de observação coletados por este experimento LZ entre março de 2023 e abril de 2024 registrou uma interação de partícula única que não pode ser explicada pelo ruído de fundo conhecido, causando grandes repercussões na comunidade física.
+
+O valor de "sigma (σ)", um indicador estatístico que mostra a probabilidade de ocorrer por acaso, é de 2,6, ainda muito aquém dos 5 sigmas considerados o padrão para uma descoberta na física. No entanto, entre os casos relatados pelo experimento LZ até agora, é considerado o sinal mais forte de matéria escura. Para este evento, interpretações de que o "higgsino" (massa de cerca de 1,1 TeV), um candidato à matéria escura previsto pela teoria da supersimetria, estaria envolvido, foram propostas sucessivamente por várias equipes de pesquisa independentes. Diz-se que o evento pode ter sido causado por um "espalhamento inelástico" do higgsino (um espalhamento no qual parte da força da colisão transforma a partícula de matéria escura em um estado ligeiramente mais pesado). O mundo todo aguarda com ansiedade, prendendo a respiração, para ver se o acúmulo adicional de dados se tornará o primeiro passo para a descoberta do século, ou se desaparecerá como uma mera flutuação.
 
 ### Do Kamiokande ao Hyper-Kamiokande
 
-A instalação no subsolo da Mina de Kamioka, na província de Gifu, no Japão, é também uma base global para a observação de partículas elementares. O "Kamiokande", onde o Dr. Masatoshi Koshiba observou outrora os neutrinos de supernovas, e o "Super-Kamiokande", que descobriu a oscilação dos neutrinos, são famosos. Espera-se que a instalação da próxima geração, o "Hyper-Kamiokande", atualmente em construção, e os planos sucessores da experiência de busca de matéria escura "XMASS", também realizada no subsolo de Kamioka, contribuam grandemente para elucidar a componente escura do universo. Os próprios neutrinos têm uma massa muito pequena e foram outrora considerados candidatos a matéria escura, mas sabe-se agora que são demasiado leves para explicar a formação da estrutura do universo (eles seriam matéria escura quente). No entanto, a tecnologia de radiação ultrabaixa e a tecnologia de tubos fotomultiplicadores desenvolvidas na investigação de neutrinos tornaram-se indispensáveis para a busca de matéria escura.
+A instalação subterrânea na Mina de Kamioka, na província de Gifu, Japão, é também um centro global para a observação de partículas elementares. O "Kamiokande", onde o Dr. Masatoshi Koshiba observou anteriormente os neutrinos de supernovas, e o "Super-Kamiokande", que descobriu a oscilação dos neutrinos, são famosos. Espera-se que a instalação de próxima geração "Hyper-Kamiokande", atualmente em construção, e os planos sucessores para o experimento de busca por matéria escura "XMASS", também conduzido no subsolo de Kamioka, contribuam grandemente para a elucidação dos componentes escuros do universo. Os próprios neutrinos possuem uma massa minúscula e já foram considerados candidatos à matéria escura, mas hoje sabe-se que são leves demais para explicar a formação da estrutura do universo (eles seriam matéria escura quente). No entanto, as tecnologias de baixíssima radioatividade e as tecnologias de tubos fotomultiplicadores cultivadas na pesquisa de neutrinos tornaram-se indispensáveis para a busca pela matéria escura.
 
-## A Força Misteriosa que Acelera a Expansão do Universo: Energia Escura (Dark Energy)
+## A Força Misteriosa que Acelera a Expansão do Universo: Energia Escura
 
-Se a matéria escura é a "força que atrai matéria através da gravidade e forma galáxias", a "energia escura (dark energy)" é o seu oposto exato, a "força que tenta despedaçar todo o universo com uma força repulsiva".
+Se a matéria escura é "a força que atrai a matéria através da gravidade e forma galáxias", a "energia escura" encontra-se no pólo oposto e é "a força que tenta rasgar todo o universo com uma força repulsiva".
 
 ### A Descoberta da Expansão Acelerada do Universo
 
-Em 1998, duas equipas de observação lideradas por Saul Perlmutter, Brian Schmidt e Adam Riess (vencedores do Prémio Nobel da Física de 2011) observaram "supernovas do Tipo Ia" distantes (que podem ser usadas como velas padrão no universo devido ao seu brilho constante) e anunciaram um facto chocante.
-Na cosmologia até então, pensava-se que o universo, que começou a expandir-se com o Big Bang, estava gradualmente a diminuir a sua velocidade de expansão (expansão desacelerada) devido à atração gravitacional da matéria. No entanto, os resultados das observações mostraram exatamente o oposto: a velocidade de expansão do universo é agora mais rápida do que no passado, ou seja, descobriu-se que está a sofrer uma "expansão acelerada".
+Em 1998, duas equipes de observação lideradas por Saul Perlmutter, Brian Schmidt e Adam Riess (vencedores do Prêmio Nobel de Física em 2011) observaram distantes "Supernovas do Tipo Ia (que podem ser usadas como velas padrão do universo por terem uma luminosidade constante)" e anunciaram um fato chocante.
+
+Na cosmologia até então, acreditava-se que o universo, que começou a se expandir com o Big Bang, estava diminuindo gradualmente sua velocidade de expansão (expansão desacelerada) devido à atração gravitacional entre as matérias. No entanto, os resultados observacionais mostraram exatamente o oposto: a velocidade de expansão do universo é mais rápida agora do que no passado, ou seja, revelou-se que o universo está em "expansão acelerada".
 
 ### A Identidade da Energia Escura: A Constante Cosmológica de Einstein?
 
-O próprio espaço está a acelerar a expansão. A energia escura foi introduzida para explicar isto. Ao contrário da matéria escura, que tem a propriedade de se concentrar em certas partes do espaço, a energia escura tem a propriedade bizarra de preencher todo o espaço de forma completamente uniforme, e à medida que o espaço se expande, a sua quantidade total também aumenta.
+O próprio espaço está acelerando sua expansão. Para explicar isso, a energia escura foi introduzida. Em contraste com a matéria escura, que tem a propriedade de estar distribuída de forma desigual e se agrupar em algum lugar do espaço, a energia escura preenche todos os lugares do espaço sideral de forma completamente uniforme e tem a estranha propriedade de que, à medida que o espaço se expande, a sua quantidade total também aumenta.
 
-O seu candidato mais provável é a "constante cosmológica (Λ: lambda)", que Albert Einstein outrora introduziu na sua equação de campo gravitacional da Relatividade Geral e mais tarde retirou como "o maior erro da sua vida". É a ideia de que a energia do próprio vácuo (energia do vácuo) atua como uma força repulsiva, empurrando o universo para se expandir. No entanto, existe uma discrepância astronómica (ou até maior) de 10 elevado a 120 entre o valor da energia do vácuo previsto pelos cálculos teóricos da mecânica quântica e o valor da energia escura derivado de observações astronómicas. Isto é um problema por resolver e é frequentemente chamado de "a pior previsão da história da física".
+O candidato mais forte é a "constante cosmológica (Λ: lambda)", que Albert Einstein introduziu uma vez nas equações de campo da relatividade geral e depois retirou como "o maior erro de sua vida". A ideia é que a energia inerente ao próprio vácuo (energia do vácuo) atue como uma força repulsiva, expandindo o universo. No entanto, há uma diferença astronômica (ou até maior) de 10 elevado a 120 vezes entre o valor da energia do vácuo previsto pelos cálculos teóricos da mecânica quântica e o valor da energia escura derivado de observações astronômicas, e este é um problema não resolvido também conhecido como "a pior previsão da história da física".
 
 ```mermaid
 graph LR
-    A["Big Bang (cerca de 13.8 mil milhões de anos atrás)"] --> B["Início da expansão do universo"]
-    B --> C["Fase inicial a intermédia"]
-    C -- "A gravidade da matéria escura domina" --> D["Fase de expansão desacelerada (formação de galáxias e estrelas)"]
-    D --> E["Cerca de 5 mil milhões de anos atrás até ao presente"]
-    E -- "Com a expansão do espaço, a energia escura torna-se dominante" --> F["Fase de expansão acelerada (universo atual)"]
+    A["Big Bang (cerca de 13,8 bilhões de anos atrás)"] --> B["Início da expansão do universo"]
+    B --> C["Fase inicial para intermediária"]
+    C -- "Gravidade da matéria escura é dominante" --> D["Período de expansão desacelerada (formação de galáxias e estrelas)"]
+    D --> E["Cerca de 5 bilhões de anos atrás até o presente"]
+    E -- "Com a expansão do espaço, a energia escura torna-se dominante" --> F["Período de expansão acelerada (universo atual)"]
 ```
 
 ## Conclusão: Ainda Conhecemos Apenas 5% do Universo
 
-Matéria escura e energia escura. Os nomes são semelhantes, mas os seus papéis no universo são completamente diferentes. A matéria escura é o "esqueleto" que forma a estrutura do universo e a cola que une as galáxias. Em contraste, a energia escura é a "destruidora" do universo, expandindo o próprio espaço e, em última análise, afastando todas as galáxias.
+Matéria escura e energia escura. Os nomes são semelhantes, mas seus papéis no universo são completamente diferentes. A matéria escura é o "esqueleto" que forma a estrutura do universo e a cola que mantém as galáxias unidas. Por outro lado, a energia escura pode ser considerada a "destruidora" do universo que empurra o próprio espaço, afastando todas as galáxias no final.
 
-A ciência, a tecnologia e as leis da física que construímos são impressionantes, mas só podem ser aplicadas a meros 5% da matéria do universo. Chegará o dia em que compreenderemos verdadeiramente de que são feitos os restantes 95%? Em laboratórios subterrâneos profundos, ou com os mais recentes telescópios flutuando no espaço, a humanidade continua o seu audacioso desafio hoje para agarrar a cauda deste "universo invisível".
+A ciência, tecnologia e as leis da física que construímos são impressionantes, mas só podem ser aplicadas a apenas 5% da matéria do universo. Chegará o dia em que entenderemos a verdadeira natureza do que compõe os 95% restantes? Hoje, em laboratórios nas profundezas do subsolo ou com os mais modernos telescópios flutuando no espaço, a humanidade continua o seu audacioso desafio de tentar agarrar a cauda deste "universo invisível".
