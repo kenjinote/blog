@@ -22,6 +22,8 @@ image: eyecatch.jpg
 
 ## 1. 掛谷的針問題：直觀的提問
 
+![掛谷宗一](Soichi_Kakeya.jpg)
+
 1917年，當時在東北帝國大學（現為東北大學）的掛谷宗一提出了以下這個非常簡單且具視覺性的問題。
 
 > **掛谷針問題（Kakeya Needle Problem）**

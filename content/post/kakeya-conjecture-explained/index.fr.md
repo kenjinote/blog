@@ -22,6 +22,8 @@ Cet article explore en profondeur l'ensemble de la conjecture de Kakeya, en comm
 
 ## 1. Le problème de l'aiguille de Kakeya : une question intuitive
 
+![Soichi Kakeya](Soichi_Kakeya.jpg)
+
 En 1917, Soichi Kakeya, alors à l'Université impériale du Tohoku (aujourd'hui l'Université du Tohoku), a posé le problème très simple et visuel suivant :
 
 > **Le problème de l'aiguille de Kakeya (Kakeya Needle Problem)**

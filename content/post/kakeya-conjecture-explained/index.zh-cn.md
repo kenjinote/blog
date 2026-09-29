@@ -22,6 +22,8 @@ image: eyecatch.jpg
 
 ## 1. 挂谷针问题：直观的提问
 
+![挂谷宗一](Soichi_Kakeya.jpg)
+
 1917年，任教于东北帝国大学（现东北大学）的挂谷宗一，提出了下面这个非常简单且直观的问题。
 
 > **挂谷针问题（Kakeya Needle Problem）**
