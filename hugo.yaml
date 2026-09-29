@@ -126,6 +126,9 @@ permalinks:
     page: /:slug/
 
 params:
+    author:
+        name: kenjinote
+        url: https://github.com/kenjinote
     mainSections:
         - post
     featuredImageField: image
