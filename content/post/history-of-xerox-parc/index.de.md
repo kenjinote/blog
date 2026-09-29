@@ -55,6 +55,8 @@ Obwohl der Alto nie kommerziell verkauft wurde, wurden Tausende davon innerhalb 
 
 ## Kapitel 3: Alan Kays "Dynabook"-Konzept und Objektorientierung
 
+![Eine Person sitzt auf einem Sofa vor Bücherregalen](AlanKay.jpg)
+
 Die Softwareumgebung des Alto, die die Basis bildete und noch weiter in die Zukunft blickte, wurde von einem Visionär namens Alan Kay entwickelt.
 
 Kay glaubte, dass "Computer nicht nur Rechenmaschinen sind, sondern ein Medium (Metamedium) sein sollten, um das menschliche Denken zu erweitern." Er schlug das "Dynabook"-Konzept vor. Dabei handelte es sich um "einen tragbaren, flachen, tafelförmigen Computer in etwa der Größe A4, mit einem hochauflösenden Display, einer Tastatur und Netzwerkfunktionen, auf dem selbst Kinder intuitiv programmieren und kreativ tätig sein könnten." Erstaunlicherweise wurde dies in den späten 1960er und frühen 70er Jahren vorgeschlagen und nahm die heutigen Tablet-Geräte wie das iPad perfekt vorweg.

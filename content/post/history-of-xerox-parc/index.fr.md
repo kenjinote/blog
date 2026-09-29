@@ -55,6 +55,8 @@ Bien que l'Alto n'ait jamais été vendu commercialement, des milliers d'unités
 
 ## Chapitre 3 : Le concept "Dynabook" d'Alan Kay et l'orientation objet
 
+![Une personne assise sur un canapé devant des bibliothèques](AlanKay.jpg)
+
 Alan Kay, un visionnaire, soutenait l'environnement logiciel de l'Alto et regardait encore plus loin vers l'avenir.
 
 Kay pensait que "l'ordinateur ne devait pas être une simple calculatrice, mais un média (méta-média) pour étendre la pensée humaine". Il proposa le concept de "Dynabook" : "un appareil informatique plat, fin et portable, d'environ la taille d'une page A4, doté d'un écran haute définition, d'un clavier et de capacités de communication réseau, permettant même à un enfant de programmer et de créer intuitivement". Étonnamment, proposé à la fin des années 1960 et au début des années 1970, ce concept anticipait parfaitement les tablettes actuelles comme l'iPad.

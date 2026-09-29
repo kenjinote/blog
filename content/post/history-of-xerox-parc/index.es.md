@@ -55,6 +55,8 @@ Alto nunca se vendió comercialmente, pero se distribuyeron miles de unidades de
 
 ## Capítulo 3: El concepto "Dynabook" de Alan Kay y la Orientación a Objetos
 
+![Una persona sentada en un sofá con estanterías de libros al fondo](AlanKay.jpg)
+
 Alan Kay, un visionario, fue quien apoyó fundamentalmente el entorno de software de Alto y miró aún más hacia el futuro.
 
 Kay creía que "la computadora no debe ser solo una calculadora, sino un medio (metamedio) para expandir el pensamiento humano". Él propuso el concepto de "Dynabook". Era "un dispositivo informático en forma de tabla, delgado y portátil, aproximadamente del tamaño A4, con una pantalla de alta resolución, teclado y funciones de comunicación en red, donde incluso un niño podría programar intuitivamente y realizar actividades creativas". Sorprendentemente, esto fue propuesto entre finales de los años 60 y principios de los 70, y predijo perfectamente las tabletas actuales como el iPad.

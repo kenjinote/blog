@@ -55,6 +55,8 @@ Meskipun Alto tidak pernah dijual secara komersial, ribuan unit didistribusikan 
 
 ## Bab 3: Konsep "Dynabook" Alan Kay dan Berorientasi Objek
 
+![Seseorang duduk di sofa dengan rak buku di latar belakang](AlanKay.jpg)
+
 Orang yang menopang lingkungan perangkat lunak Alto dari dasarnya dan melihat lebih jauh ke masa depan adalah seorang visioner bernama Alan Kay.
 
 Kay percaya bahwa "komputer seharusnya bukan sekadar mesin hitung, tetapi media untuk memperluas pemikiran manusia (metamedium)." Ia mengusulkan konsep "Dynabook." Ini adalah "komputer berbentuk papan tipis dan portabel seukuran A4, dengan layar beresolusi tinggi, keyboard, dan fungsi komunikasi jaringan, memungkinkan bahkan anak-anak untuk secara intuitif melakukan pemrograman dan aktivitas kreatif." Hebatnya, ini diusulkan antara akhir 1960-an hingga awal 1970-an, dan secara sempurna meramalkan perangkat tablet modern seperti iPad.

@@ -55,6 +55,8 @@ The Alto was never sold commercially, but thousands of units were distributed wi
 
 ## Chapter 3: Alan Kay's "Dynabook" Concept and Object Orientation
 
+![A person seated on a sofa with bookshelves in the background](AlanKay.jpg)
+
 The visionary who supported Alto's software environment from the ground up and looked even further into the future was Alan Kay.
 
 Kay believed that "a computer should not be just a calculator, but a medium (metamedium) to expand human thought." The concept he proposed was the "Dynabook." It was "a thin, portable, board-like computer about the size of an A4 sheet of paper, with a high-definition display, keyboard, and network communication capabilities, a device that even children could intuitively use for programming and creative activities." Amazingly, this was proposed in the late 1960s and early 1970s, perfectly predicting current tablet devices like the iPad.
