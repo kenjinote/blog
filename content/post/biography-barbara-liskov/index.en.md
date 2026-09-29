@@ -10,6 +10,8 @@ image: eyecatch.jpg
 
 # Barbara Liskov: The Computer Scientist Who Built Abstract Data Types and Distributed Systems
 
+![Portrait of a person standing in front of a blackboard covered with equations and diagrams](Barbara_Liskov.webp)
+
 In the world of software engineering, few developers are unfamiliar with the "Liskov Substitution Principle (LSP)", one of the SOLID principles. However, the extent of the transformation brought about by its namesake, Barbara Liskov, in programming language design and distributed systems is surprisingly often unknown. In this article, we delve deeply into her journey as one of the first women in the U.S. to earn a Ph.D. in computer science, her invention of "abstract data types" which form the foundation of modern object-oriented programming, and her research that laid the groundwork for distributed systems, complete with technical background.
 
 ## 1. The Dawn and the Birth of the First Female Ph.D. in the U.S.

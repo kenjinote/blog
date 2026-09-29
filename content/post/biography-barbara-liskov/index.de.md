@@ -10,6 +10,8 @@ image: eyecatch.jpg
 
 # Barbara Liskov: Die Informatikerin, die abstrakte Datentypen und verteilte Systeme entwickelte
 
+![Porträt einer Person vor einer Tafel mit Gleichungen und Diagrammen](Barbara_Liskov.webp)
+
 In der Welt des Software-Engineerings gibt es nur wenige Entwickler, die das "Liskovsche Substitutionsprinzip (LSP)", eines der SOLID-Prinzipien, nicht kennen. Doch überraschenderweise ist oft wenig darüber bekannt, welche Transformationen Barbara Liskov, die Namensgeberin, selbst in der Programmiersprachendesign und bei verteilten Systemen bewirkte. In diesem Artikel werden wir ihre Reise als eine der ersten Frauen in den USA mit einem Ph.D. in Informatik, die Erfindung des "abstrakten Datentyps", der das Fundament der modernen objektorientierten Programmierung bildet, und ihre Forschung, die den Grundstein für verteilte Systeme legte, mit technischem Hintergrund detailliert beleuchten.
 
 ## 1. Die Anfangsjahre und die Entstehung des ersten weiblichen Ph.D. in den USA

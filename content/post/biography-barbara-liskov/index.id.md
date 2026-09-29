@@ -10,6 +10,8 @@ image: eyecatch.jpg
 
 # Barbara Liskov: Ilmuwan Komputer yang Membangun Tipe Data Abstrak dan Sistem Terdistribusi
 
+![Potret seseorang di depan papan tulis berisi persamaan dan diagram](Barbara_Liskov.webp)
+
 Dalam dunia rekayasa perangkat lunak, hanya sedikit pengembang yang tidak mengetahui "Prinsip Substitusi Liskov (Liskov Substitution Principle: LSP)", yang merupakan salah satu dari prinsip SOLID. Namun, asal usul nama tersebut, Barbara Liskov sendiri, tentang transformasi apa yang dibawanya dalam desain bahasa pemrograman dan sistem terdistribusi, terkadang tidak begitu diketahui. Artikel ini akan menjelaskan secara mendetail, dengan latar belakang teknis, perjalanan beliau sebagai salah satu wanita pertama di Amerika Serikat yang meraih gelar Ph.D. dalam ilmu komputer, penemuan "Tipe Data Abstrak" yang membentuk fondasi dari pemrograman berorientasi objek modern, hingga penelitian yang meletakkan dasar bagi sistem terdistribusi.
 
 ## 1. Masa Awal dan Kelahiran Ph.D. Wanita Pertama di AS

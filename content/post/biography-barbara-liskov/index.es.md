@@ -10,6 +10,8 @@ image: eyecatch.jpg
 
 # Barbara Liskov: La científica de la computación que construyó los tipos de datos abstractos y los sistemas distribuidos
 
+![Retrato de una persona frente a una pizarra con ecuaciones y diagramas](Barbara_Liskov.webp)
+
 En el mundo de la ingeniería de software, pocos desarrolladores desconocen el "Principio de sustitución de Liskov (LSP)", uno de los principios SOLID. Sin embargo, a menudo se desconoce el impacto revolucionario que la propia Barbara Liskov, de quien proviene el nombre, tuvo en el diseño de lenguajes de programación y sistemas distribuidos. Este artículo explora en detalle su trayectoria como una de las primeras mujeres en obtener un doctorado en Ciencias de la Computación en Estados Unidos, la invención de los "tipos de datos abstractos" que forman la base de la programación orientada a objetos moderna, y su investigación que sentó las bases para los sistemas distribuidos, todo ello con su respectivo contexto técnico.
 
 ## 1. Los primeros años y el nacimiento del primer doctorado femenino en EE. UU.

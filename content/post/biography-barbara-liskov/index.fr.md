@@ -10,6 +10,8 @@ image: eyecatch.jpg
 
 # Barbara Liskov : L'informaticienne qui a conçu les types de données abstraits et les systèmes distribués
 
+![Portrait d’une personne devant un tableau couvert d’équations et de schémas](Barbara_Liskov.webp)
+
 Dans le monde de l'ingénierie logicielle, rares sont les développeurs qui ne connaissent pas le "Principe de substitution de Liskov" (Liskov Substitution Principle : LSP), l'un des principes SOLID. Cependant, la manière dont Barbara Liskov, qui a donné son nom à ce principe, a transformé la conception des langages de programmation et les systèmes distribués reste parfois méconnue. Cet article explore son parcours, de son statut de l'une des premières femmes à obtenir un doctorat en informatique aux États-Unis, jusqu'à l'invention des "types de données abstraits" qui constituent la base de la programmation orientée objet moderne, en passant par ses recherches fondatrices sur les systèmes distribués, tout en expliquant le contexte technique en détail.
 
 ## 1. Les débuts et l'obtention du premier doctorat féminin aux États-Unis
