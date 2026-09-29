@@ -55,7 +55,7 @@ Obwohl der Alto nie kommerziell verkauft wurde, wurden Tausende davon innerhalb 
 
 ## Kapitel 3: Alan Kays "Dynabook"-Konzept und Objektorientierung
 
-![Eine Person sitzt auf einem Sofa vor Bücherregalen](AlanKay.jpg)
+![Alan Kay](AlanKay.jpg)
 
 Die Softwareumgebung des Alto, die die Basis bildete und noch weiter in die Zukunft blickte, wurde von einem Visionär namens Alan Kay entwickelt.
 

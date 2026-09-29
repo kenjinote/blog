@@ -55,7 +55,7 @@ Bien que l'Alto n'ait jamais été vendu commercialement, des milliers d'unités
 
 ## Chapitre 3 : Le concept "Dynabook" d'Alan Kay et l'orientation objet
 
-![Une personne assise sur un canapé devant des bibliothèques](AlanKay.jpg)
+![Alan Kay](AlanKay.jpg)
 
 Alan Kay, un visionnaire, soutenait l'environnement logiciel de l'Alto et regardait encore plus loin vers l'avenir.
 

@@ -55,7 +55,7 @@ The Alto was never sold commercially, but thousands of units were distributed wi
 
 ## Chapter 3: Alan Kay's "Dynabook" Concept and Object Orientation
 
-![A person seated on a sofa with bookshelves in the background](AlanKay.jpg)
+![Alan Kay](AlanKay.jpg)
 
 The visionary who supported Alto's software environment from the ground up and looked even further into the future was Alan Kay.
 

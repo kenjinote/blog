@@ -55,7 +55,7 @@ Alto nunca se vendió comercialmente, pero se distribuyeron miles de unidades de
 
 ## Capítulo 3: El concepto "Dynabook" de Alan Kay y la Orientación a Objetos
 
-![Una persona sentada en un sofá con estanterías de libros al fondo](AlanKay.jpg)
+![Alan Kay](AlanKay.jpg)
 
 Alan Kay, un visionario, fue quien apoyó fundamentalmente el entorno de software de Alto y miró aún más hacia el futuro.
 

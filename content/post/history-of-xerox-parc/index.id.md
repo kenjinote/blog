@@ -55,7 +55,7 @@ Meskipun Alto tidak pernah dijual secara komersial, ribuan unit didistribusikan 
 
 ## Bab 3: Konsep "Dynabook" Alan Kay dan Berorientasi Objek
 
-![Seseorang duduk di sofa dengan rak buku di latar belakang](AlanKay.jpg)
+![Alan Kay](AlanKay.jpg)
 
 Orang yang menopang lingkungan perangkat lunak Alto dari dasarnya dan melihat lebih jauh ke masa depan adalah seorang visioner bernama Alan Kay.
 

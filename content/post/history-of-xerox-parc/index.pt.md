@@ -55,7 +55,7 @@ O Alto nunca foi vendido comercialmente, mas milhares de unidades foram distribu
 
 ## Capítulo 3: A Visão "Dynabook" de Alan Kay e a Orientação a Objetos
 
-![Uma pessoa sentada num sofá com estantes de livros ao fundo](AlanKay.jpg)
+![Alan Kay](AlanKay.jpg)
 
 Alan Kay, um visionário, apoiou o ambiente de software do Alto desde a sua base e olhou ainda mais para o futuro.
 
