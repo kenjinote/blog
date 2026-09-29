@@ -11,6 +11,12 @@
 
 {{- $image := partialCached "helper/image" (dict "Context" . "Type" "opengraph") .RelPermalink "opengraph" -}}
 {{- if $image.exists -}}
-    <meta name="twitter:card" content="{{ default `summary_large_image` .Site.Params.opengraph.twitter.card }}">
+    {{- $card := default "summary_large_image" .Site.Params.opengraph.twitter.card -}}
+    {{- /* The site's fallback avatar is square. Keep article card settings otherwise. */ -}}
+    {{- if $image.isDefault -}}
+        {{- $card = "summary" -}}
+    {{- end -}}
+    <meta name="twitter:card" content="{{ $card }}">
     <meta name="twitter:image" content='{{ absURL $image.permalink }}' />
+    <meta name="twitter:image:alt" content='{{ cond $image.isDefault .Site.Title .Title }}' />
 {{- end -}}

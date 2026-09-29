@@ -268,9 +268,10 @@ params:
 
     defaultImage:
         opengraph:
-            enabled: false
-            local: false
-            src:
+            # Shared square avatar for pages without their own featured image.
+            enabled: true
+            local: true
+            src: img/avatar.png
 
     colorScheme:
         # Display toggle
