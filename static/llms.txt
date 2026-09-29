@@ -10,6 +10,7 @@
 
 - [ホーム](https://kenji.blog/): 日本語の最新記事。
 - [このブログについて](https://kenji.blog/about/): ブログの概要と扱う話題。
+- [著者プロフィール](https://kenji.blog/author/): kenjinoteの実務経験、Microsoft MVP受賞歴、得意分野。
 - [アーカイブ](https://kenji.blog/archives/): 公開記事を年月別に探す入口。
 - [カテゴリ](https://kenji.blog/categories/): 分野ごとの記事一覧。
 - [タグ](https://kenji.blog/tags/): キーワードごとの記事一覧。

@@ -26,6 +26,27 @@
         {{ end }}
     </div>
 
+    {{ if and .IsPage (in .Site.Params.mainSections .Section) }}
+        {{ $author := default .Site.Params.author.name .Params.author }}
+        <footer class="article-time article-author">
+            {{ partial "helper/icon" "user" }}
+            {{ if eq $author .Site.Params.author.name }}
+                {{ $profile := .Site.GetPage "/page/author" }}
+                {{ $authorURL := .Site.Params.author.url }}
+                {{ $authorLabel := "Author profile" }}
+                {{ with $profile }}
+                    {{ $authorURL = .Permalink }}
+                    {{ $authorLabel = .LinkTitle }}
+                {{ end }}
+                <a href="{{ $authorURL }}" rel="author">
+                    {{ $authorLabel }}: {{ $author }}
+                </a>
+            {{ else }}
+                <span>{{ $author }}</span>
+            {{ end }}
+        </footer>
+    {{ end }}
+
     {{ $showReadingTime := .Params.readingTime | default (.Site.Params.article.readingTime) }}
     {{ $showDate := not .Date.IsZero }}
     {{ $showFooter := or $showDate $showReadingTime }}

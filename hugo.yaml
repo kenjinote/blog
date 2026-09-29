@@ -128,7 +128,15 @@ permalinks:
 params:
     author:
         name: kenjinote
-        url: https://github.com/kenjinote
+        url: https://kenji.blog/author/
+        sameAs:
+            - https://github.com/kenjinote
+            - https://mvp.microsoft.com/ja-JP/mvp/profile/9da0e78b-4d15-e711-810b-3863bb36edf8
+        knowsAbout:
+            - C
+            - C++
+            - Windows application development
+        award: Microsoft MVP (2017–present, consecutive awards)
     mainSections:
         - post
     featuredImageField: image

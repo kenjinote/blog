@@ -76,7 +76,10 @@ def validate(path):
         for url in page.get("image", []):
             assert url.startswith(("https://", "http://")), "image URL must be absolute"
     else:
-        assert page["@type"] in ("WebPage", "CollectionPage")
+        assert page["@type"] in ("WebPage", "CollectionPage", "ProfilePage")
+        if page["@type"] == "ProfilePage":
+            assert page["mainEntity"]["@type"] == "Person"
+            assert page["mainEntity"]["url"] == parser.canonical
         assert "headline" not in page
     return page["@type"], page["inLanguage"]
 

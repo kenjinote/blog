@@ -2,6 +2,19 @@
 {{- if ne .Kind "404" -}}
     {{- $siteID := printf "%s#website" .Site.Home.Permalink -}}
     {{- $publisher := dict "@type" "Person" "name" .Site.Params.author.name "url" .Site.Params.author.url -}}
+    {{- $publisher = merge $publisher (dict "@id" (printf "%s#person" .Site.Params.author.url)) -}}
+    {{- with .Site.GetPage "/page/author" -}}
+        {{- $publisher = merge $publisher (dict "url" .Permalink) -}}
+    {{- end -}}
+    {{- with .Site.Params.author.sameAs -}}
+        {{- $publisher = merge $publisher (dict "sameAs" .) -}}
+    {{- end -}}
+    {{- with .Site.Params.author.knowsAbout -}}
+        {{- $publisher = merge $publisher (dict "knowsAbout" .) -}}
+    {{- end -}}
+    {{- with .Site.Params.author.award -}}
+        {{- $publisher = merge $publisher (dict "award" .) -}}
+    {{- end -}}
     {{- $website := dict
         "@type" "WebSite"
         "@id" $siteID
@@ -11,6 +24,9 @@
         "publisher" $publisher
     -}}
     {{- $type := "WebPage" -}}
+    {{- if .Params.authorProfile -}}
+        {{- $type = "ProfilePage" -}}
+    {{- end -}}
     {{- if and .IsPage (in .Site.Params.mainSections .Section) -}}
         {{- $type = "BlogPosting" -}}
     {{- else if or .IsHome (in (slice "section" "taxonomy" "term") .Kind) (eq .Layout "archives") -}}
@@ -27,10 +43,15 @@
     {{- with (partialCached "data/description" . .RelPermalink) -}}
         {{- $page = merge $page (dict "description" .) -}}
     {{- end -}}
+    {{- if eq $type "ProfilePage" -}}
+        {{- $page = merge $page (dict "mainEntity" $publisher) -}}
+    {{- end -}}
     {{- if eq $type "BlogPosting" -}}
         {{- $author := $publisher -}}
         {{- with .Params.author -}}
-            {{- $author = dict "@type" "Person" "name" . -}}
+            {{- if ne . $.Site.Params.author.name -}}
+                {{- $author = dict "@type" "Person" "name" . -}}
+            {{- end -}}
         {{- end -}}
         {{- $page = merge $page (dict
             "headline" (.Title | plainify)
