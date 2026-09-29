@@ -10,6 +10,8 @@ date: 2026-09-26T00:01:07+09:00
 
 ## L'homme qui a donné le « temps » et le « consensus » aux systèmes distribués : Leslie Lamport
 
+![Portrait d’une personne portant des lunettes, sur fond de verdure](Leslie_Lamport.jpg)
+
 Les systèmes distribués, tels que l'Internet moderne, le cloud computing et la blockchain. Derrière le fait qu'ils fonctionnent si naturellement et que nous en bénéficions dans notre vie quotidienne, il y a la présence d'un informaticien de génie : Leslie Lamport.
 
 Lauréat du prix Turing en 2013, Lamport a jeté les bases de l'informatique distribuée et a résolu de nombreux problèmes complexes avec une rigueur mathématique. Dans cet article, nous explorerons en profondeur ses plus grandes réalisations : « l'horloge de Lamport », « l'algorithme Paxos », « le problème des généraux byzantins », ainsi que son rôle de créateur de « LaTeX », outil indispensable dans le monde académique.

@@ -10,6 +10,8 @@ date: 2026-09-26T00:01:07+09:00
 
 ## Leslie Lamport: El hombre que dio "tiempo" y "consenso" a los sistemas distribuidos
 
+![Retrato de una persona con gafas y vegetación al fondo](Leslie_Lamport.jpg)
+
 Los sistemas distribuidos modernos, representados por internet, la computación en la nube y la cadena de bloques (blockchain), funcionan con total naturalidad y nos brindan beneficios en nuestra vida diaria. Detrás de esto se encuentra la figura de un científico de la computación brillante: Leslie Lamport.
 
 Galardonado con el Premio Turing en 2013, Lamport sentó las bases de la computación distribuida y resolvió muchos problemas complejos con rigor matemático. En este artículo, profundizaremos en sus grandes logros: el "reloj de Lamport", el "algoritmo de Paxos", el "problema de los generales bizantinos" y su faceta como creador de "LaTeX", una herramienta indispensable en el mundo académico.

@@ -10,6 +10,8 @@ date: 2026-09-26T00:01:07+09:00
 
 ## The Man Who Gave 'Time' and 'Consensus' to Distributed Systems: Leslie Lamport
 
+![Portrait of a person wearing glasses, with greenery in the background](Leslie_Lamport.jpg)
+
 Distributed systems, represented by the modern Internet, cloud computing, and blockchain. Behind the fact that these operate as a matter of course and we can benefit from them in our daily lives, there is a genius computer scientist. His name is Leslie Lamport.
 
 Lamport, who won the Turing Award in 2013, laid the foundations of distributed computing and solved many difficult problems with mathematical rigor. In this article, we delve deep into his great achievements: the "Lamport Clock," the "Paxos algorithm," the "Byzantine Generals Problem," and his side as the creator of "LaTeX," which is indispensable in the academic world.

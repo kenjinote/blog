@@ -10,6 +10,8 @@ date: 2026-09-26T00:01:07+09:00
 
 ## Der Mann, der verteilten Systemen „Zeit“ und „Konsens“ gab: Leslie Lamport
 
+![Porträt einer Person mit Brille vor einem grünen Hintergrund](Leslie_Lamport.jpg)
+
 Verteilte Systeme wie das moderne Internet, Cloud-Computing und Blockchains. Dass diese wie selbstverständlich funktionieren und wir in unserem Alltag von ihnen profitieren, verdanken wir der Existenz eines genialen Informatikers: Leslie Lamport.
 
 Lamport, der 2013 den Turing-Preis erhielt, legte den Grundstein für das verteilte Rechnen und löste viele komplexe Probleme mit mathematischer Strenge. In diesem Artikel tauchen wir tief in seine großartigen Errungenschaften ein: die „Lamport-Uhren“, den „Paxos-Algorithmus“, das „Problem der byzantinischen Generäle“ und seine Rolle als Vater von „LaTeX“, das in der akademischen Welt unverzichtbar ist.

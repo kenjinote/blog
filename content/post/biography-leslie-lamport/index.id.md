@@ -10,6 +10,8 @@ date: 2026-09-26T00:01:07+09:00
 
 ## Tokoh yang Memberikan "Waktu" dan "Konsensus" pada Sistem Terdistribusi: Leslie Lamport
 
+![Potret seseorang berkacamata dengan latar belakang dedaunan hijau](Leslie_Lamport.jpg)
+
 Sistem terdistribusi, yang diwakili oleh internet modern, komputasi awan, dan blockchain. Di balik pengoperasian hal-hal ini yang seolah sudah menjadi hal biasa, dan manfaat yang kita terima dalam kehidupan sehari-hari, ada kehadiran seorang ilmuwan komputer yang jenius: Leslie Lamport.
 
 Lamport, yang memenangkan Penghargaan Turing pada tahun 2013, meletakkan dasar bagi komputasi terdistribusi dan memecahkan banyak masalah yang sulit dengan ketelitian matematis. Dalam artikel ini, kita akan menggali lebih dalam tentang pencapaiannya yang luar biasa, yaitu "Jam Lamport (Lamport Clock)", "Algoritma Paxos", "Masalah Jenderal Bizantium", dan perannya sebagai pencipta "LaTeX" yang sangat penting di dunia akademis.
