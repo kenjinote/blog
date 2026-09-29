@@ -10,6 +10,8 @@ image: eyecatch.jpg
 
 ## Prologue: Dreaming of a World Where Everything is Connected
 
+![A person seated beside a monitor displaying a web page](tim-berners-lee.webp)
+
 In modern society, we use the "Web" as a matter of course. We open our smartphones, read the news, watch videos, and instantly exchange messages with friends far away. It's a magical network where all the knowledge and information on this planet is seamlessly connected and freely accessible to anyone. That is the "World Wide Web."
 
 However, how many people deeply understand the fact that this world-changing massive invention was born from the mind of a single genius programmer, and moreover, was **"released to the world completely free of charge, without acquiring any patents whatsoever"**?

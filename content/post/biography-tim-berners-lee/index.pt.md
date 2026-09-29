@@ -10,6 +10,8 @@ image: eyecatch.jpg
 
 ## Prólogo: Sonhando com um mundo onde tudo está conectado
 
+![Uma pessoa sentada ao lado de um monitor que mostra uma página web](tim-berners-lee.webp)
+
 Na sociedade moderna, nós usamos a "Web" como algo natural. Abrimos nossos smartphones, lemos as notícias, assistimos a vídeos e trocamos mensagens instantaneamente com amigos distantes. Uma rede mágica onde todo o conhecimento e informação do planeta estão perfeitamente conectados e livremente acessíveis a qualquer pessoa. Essa é a "World Wide Web".
 
 No entanto, quantas pessoas compreendem profundamente o fato de que esta gigantesca invenção que mudou o mundo nasceu da mente de apenas um programador genial e que foi **"lançada para o mundo de forma totalmente gratuita, sem adquirir nenhuma patente"**?

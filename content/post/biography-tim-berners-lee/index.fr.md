@@ -10,6 +10,8 @@ image: eyecatch.jpg
 
 ## Prologue : Rêver d'un monde où tout est connecté
 
+![Une personne assise à côté d’un écran affichant une page web](tim-berners-lee.webp)
+
 Dans la société moderne, nous utilisons le « Web » comme si c'était une évidence. Nous ouvrons nos smartphones, lisons les actualités, regardons des vidéos et échangeons instantanément des messages avec des amis éloignés. Un réseau magique où toutes les connaissances et informations de cette planète sont connectées de manière transparente et librement accessibles à tous. C'est le « World Wide Web ».
 
 Cependant, combien de personnes comprennent profondément le fait que cette invention colossale qui a changé le monde est née de l'esprit d'un seul programmeur de génie, et surtout, qu'elle a été **« dévoilée au monde de manière totalement gratuite, sans qu'aucun brevet ne soit déposé »** ?

@@ -10,6 +10,8 @@ image: eyecatch.jpg
 
 ## Prolog: Bermimpi tentang Dunia yang Saling Terhubung
 
+![Seseorang duduk di samping monitor yang menampilkan halaman web](tim-berners-lee.webp)
+
 Dalam masyarakat modern, kita menggunakan "Web" seolah-olah itu adalah hal yang biasa. Membuka smartphone, membaca berita, menonton video, dan bertukar pesan secara instan dengan teman yang jauh. Sebuah jaringan ajaib di mana semua pengetahuan dan informasi di bumi ini terhubung tanpa batas dan dapat diakses secara bebas oleh siapa saja. Itulah "World Wide Web".
 
 Namun, seberapa banyak orang yang benar-benar mengerti fakta bahwa penemuan besar yang mengubah dunia ini lahir dari pikiran satu programmer jenius, dan bahwa itu **"dibagikan ke seluruh dunia secara gratis, tanpa mengambil hak paten apa pun"**?

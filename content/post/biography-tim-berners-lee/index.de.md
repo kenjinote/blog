@@ -10,6 +10,8 @@ image: eyecatch.jpg
 
 ## Prolog: Der Traum von einer Welt, in der alles miteinander verbunden ist
 
+![Eine Person sitzt neben einem Monitor, der eine Webseite anzeigt](tim-berners-lee.webp)
+
 In der modernen Gesellschaft nutzen wir das "Web" als wäre es selbstverständlich. Wir öffnen unsere Smartphones, lesen Nachrichten, schauen Videos und tauschen sofort Nachrichten mit weit entfernten Freunden aus. Es ist ein magisches Netzwerk, in dem das gesamte Wissen und alle Informationen dieses Planeten nahtlos miteinander verbunden sind und auf das jeder frei zugreifen kann. Das ist das "World Wide Web".
 
 Aber wie viele Menschen verstehen wirklich die Tatsache, dass diese riesige Erfindung, die die Welt verändert hat, dem Verstand eines einzigen brillanten Programmierers entsprang und **"ohne ein einziges Patent zu erwerben, der Welt völlig kostenlos zur Verfügung gestellt wurde"**?
