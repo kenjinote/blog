@@ -32,6 +32,8 @@ Sonnenuhren hatten jedoch einen fatalen Fehler: Sie „konnten nachts oder an be
 Zu Beginn des Mittelalters in Europa wurden „mechanische Uhren“, die durch Gewichte angetrieben wurden, als Alarme erfunden, um zu festgelegten Zeiten in Klöstern zu beten. Frühe mechanische Uhren steuerten die Drehung von Zahnrädern mit einem Mechanismus namens Hemmung, waren jedoch leicht von Reibung und Temperaturschwankungen betroffen, was zu Fehlern von mehreren zehn Minuten am Tag führte.
 
 ### Galileis Entdeckung und Huygens' Erfindung
+
+{{< figure src="galileo-galilei.jpg" alt="Galileo Galilei" caption="Galileo Galilei" class="portrait-half" width="1200" height="1600" loading="lazy" >}}
 Was die Genauigkeit der Zeitmessung dramatisch verbesserte, war die Entdeckung der „Isochronie des Pendels“ durch den Physiker Galileo Galilei im 16. Jahrhundert. Dieses Gesetz, das besagt, dass die Zeit, die ein Pendel für das Hin- und Herschwingen benötigt, unabhängig von der Amplitude oder dem Gewicht ausschließlich durch die Länge des Pendels bestimmt wird, veränderte die Geschichte der Uhren maßgeblich. Die Periode $T$ eines Pendels wird durch die Länge $l$ und die Erdbeschleunigung $g$ wie folgt ausgedrückt:
 
 $$ T = 2\pi \sqrt{\frac{l}{g}} $$

@@ -32,6 +32,8 @@ Namun, jam matahari memiliki kelemahan fatal yaitu "tidak bisa digunakan di mala
 Memasuki Abad Pertengahan di Eropa, "jam mekanik" dengan tenaga pemberat diciptakan sebagai alarm untuk berdoa pada waktu-waktu tertentu di biara. Jam mekanik awal menggunakan mekanisme yang disebut *escapement* (mekanisme pelepasan) untuk mengontrol rotasi roda gigi, tetapi rentan terhadap gesekan dan perubahan suhu, sehingga menghasilkan kesalahan hingga puluhan menit sehari.
 
 ### Penemuan Galileo dan Invensi Huygens
+
+{{< figure src="galileo-galilei.jpg" alt="Galileo Galilei" caption="Galileo Galilei" class="portrait-half" width="1200" height="1600" loading="lazy" >}}
 Ketepatan pengukuran waktu meningkat drastis berkat penemuan "isokronisme pendulum" oleh fisikawan abad ke-16, Galileo Galilei. Hukum bahwa waktu ayunan pendulum bolak-balik hanya ditentukan oleh panjang pendulum, tanpa dipengaruhi oleh amplitudo atau beratnya, telah mengubah sejarah jam secara besar-besaran. Periode pendulum $T$ dinyatakan sebagai berikut berdasarkan panjang $l$ dan percepatan gravitasi $g$:
 
 $$ T = 2\pi \sqrt{\frac{l}{g}} $$

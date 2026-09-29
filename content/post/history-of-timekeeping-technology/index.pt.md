@@ -32,6 +32,8 @@ No entanto, o relógio de sol tinha a falha fatal de "não poder ser usado à no
 Na Idade Média na Europa, inventou-se o "relógio mecânico", alimentado por pesos pesados, como um alarme para as orações nos mosteiros em horários programados. Os primeiros relógios mecânicos usavam um mecanismo chamado escape para controlar a rotação das engrenagens, mas eram facilmente afetados por fricção e mudanças de temperatura, resultando em erros de dezenas de minutos por dia.
 
 ### A Descoberta de Galileu e a Invenção de Huygens
+
+{{< figure src="galileo-galilei.jpg" alt="Galileu Galilei" caption="Galileu Galilei" class="portrait-half" width="1200" height="1600" loading="lazy" >}}
 O que aumentou dramaticamente a precisão da medição do tempo foi a descoberta do "isocronismo do pêndulo" pelo físico do século 16, Galileu Galilei. A lei de que o tempo de oscilação de um pêndulo é determinado apenas pelo seu comprimento, independentemente da amplitude ou do peso, mudou significativamente a história dos relógios. O período $T$ de um pêndulo é expresso da seguinte forma com base no seu comprimento $l$ e na aceleração da gravidade $g$:
 
 $$ T = 2\pi \sqrt{\frac{l}{g}} $$

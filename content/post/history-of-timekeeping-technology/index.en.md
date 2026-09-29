@@ -32,6 +32,8 @@ However, sundials had a fatal flaw: they "could not be used at night or on cloud
 Entering the Middle Ages in Europe, "mechanical clocks" powered by weights were invented as alarms to offer prayers at set times in monasteries. Early mechanical clocks controlled the rotation of gears using a mechanism called an escapement, but they were easily affected by friction and temperature changes, resulting in errors of several tens of minutes a day.
 
 ### Galileo's Discovery and Huygens' Invention
+
+{{< figure src="galileo-galilei.jpg" alt="Galileo Galilei" caption="Galileo Galilei" class="portrait-half" width="1200" height="1600" loading="lazy" >}}
 What dramatically improved the accuracy of time measurement was the discovery of the "isochronism of the pendulum" by the 16th-century physicist Galileo Galilei. This law, stating that the time it takes for a pendulum to swing back and forth is determined solely by the length of the pendulum, regardless of the amplitude or weight, greatly changed the history of clocks. The period $T$ of a pendulum is expressed by the length $l$ and the acceleration of gravity $g$ as follows:
 
 $$ T = 2\pi \sqrt{\frac{l}{g}} $$

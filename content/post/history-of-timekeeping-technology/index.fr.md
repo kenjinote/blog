@@ -32,6 +32,8 @@ Cependant, le cadran solaire présentait le défaut fatal de « ne pas pouvoir �
 En Europe, au Moyen Âge, on a inventé des « horloges mécaniques » actionnées par des poids, qui servaient d'alarmes pour les prières à des heures précises dans les monastères. Les premières horloges mécaniques utilisaient un mécanisme appelé échappement pour contrôler la rotation des engrenages, mais elles étaient sensibles aux frottements et aux changements de température, ce qui entraînait des erreurs de plusieurs dizaines de minutes par jour.
 
 ### La découverte de Galilée et l'invention de Huygens
+
+{{< figure src="galileo-galilei.jpg" alt="Galilée" caption="Galilée" class="portrait-half" width="1200" height="1600" loading="lazy" >}}
 Ce qui a considérablement amélioré la précision de la mesure du temps, c'est la découverte de « l'isochronisme du pendule » par le physicien du XVIe siècle Galileo Galilei. Cette loi, qui stipule que le temps mis par un pendule pour osciller est déterminé uniquement par la longueur du pendule, indépendamment de son amplitude ou de son poids, a grandement changé l'histoire des horloges. La période $T$ du pendule est exprimée par la longueur $l$ et l'accélération de la pesanteur $g$ de la manière suivante :
 
 $$ T = 2\pi \sqrt{\frac{l}{g}} $$
