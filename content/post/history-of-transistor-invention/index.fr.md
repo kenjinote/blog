@@ -30,6 +30,8 @@ Walter Gifford, le président d'AT&T de l'époque, était fortement conscient de
 
 ## 2. Les Laboratoires Bell et les trois génies
 
+![Photographie en noir et blanc de trois personnes autour d’équipements de laboratoire](john_bardeen_william_shockley_walter_brattain.png)
+
 En 1945, à la fin de la Seconde Guerre mondiale, Mervin Kelly, directeur de recherche aux Laboratoires Bell, forma un groupe spécial "Physique de l'état solide" pour développer un nouvel amplificateur. Au cœur de cette équipe se trouvaient trois scientifiques qui allaient plus tard partager le prix Nobel de physique.
 
 *   **William Shockley** : Le chef de l'équipe. Physicien théoricien doté d'une intuition et d'une perspicacité exceptionnelles, il était cependant d'un tempérament ambitieux, avide d'attention et prompt à créer des conflits interpersonnels. Il mûrissait l'idée d'un amplificateur utilisant des semi-conducteurs (en particulier le germanium et le silicium) depuis avant la guerre.

@@ -30,6 +30,8 @@ Walter Gifford, yang saat itu menjabat sebagai presiden AT&T, sangat menyadari p
 
 ## 2. Bell Labs dan Tiga Jenius
 
+![Foto hitam putih tiga orang di sekitar peralatan laboratorium](john_bardeen_william_shockley_walter_brattain.png)
+
 Pada tahun 1945, setelah Perang Dunia II berakhir, Mervin Kelly, direktur divisi penelitian di Bell Labs, membentuk tim khusus "Kelompok Fisika Solid-State" untuk mengembangkan penguat baru. Inti dari tim ini adalah tiga ilmuwan yang nantinya akan menerima Penghargaan Nobel Fisika bersama-sama.
 
 *   **William Shockley**: Pemimpin tim. Seorang fisikawan teoretis dengan intuisi dan wawasan luar biasa, namun memiliki ambisi besar, haus pengakuan, dan kepribadian yang mudah memicu konflik antarpribadi. Sejak sebelum perang, ia telah menyimpan ide tentang penguat menggunakan semikonduktor (khususnya germanium dan silikon).

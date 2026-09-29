@@ -30,6 +30,8 @@ Walter Gifford, der damalige Präsident von AT&T, erkannte stark die Notwendigke
 
 ## 2. Bell Labs und drei Genies
 
+![Schwarz-Weiß-Foto von drei Personen an Laborgeräten](john_bardeen_william_shockley_walter_brattain.png)
+
 1945, nach dem Ende des Zweiten Weltkriegs, stellte Mervin Kelly, der Leiter der Forschungsabteilung der Bell Labs, ein spezielles Team, die "Solid State Physics Group", zusammen, um einen neuen Verstärker zu entwickeln. Den Kern dieses Teams bildeten drei Wissenschaftler, die später gemeinsam den Nobelpreis für Physik erhalten sollten.
 
 *   **William Shockley**: Der Leiter des Teams. Er war ein theoretischer Physiker mit außergewöhnlicher Intuition und Einsicht, aber er war auch ehrgeizig, geltungsbedürftig und hatte eine Persönlichkeit, die in menschlichen Beziehungen leicht Wellen schlug. Er hatte schon vor dem Krieg an der Idee eines Verstärkers mit Halbleitern (insbesondere Germanium und Silizium) gearbeitet.

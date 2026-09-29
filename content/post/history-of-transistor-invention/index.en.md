@@ -30,6 +30,8 @@ Walter Gifford, then president of AT&T, was acutely aware of the need for a "sma
 
 ## 2. Bell Labs and the Three Geniuses
 
+![Black-and-white photograph of three people gathered around laboratory equipment](john_bardeen_william_shockley_walter_brattain.png)
+
 In 1945, at the end of World War II, Mervin Kelly, head of research at Bell Labs, formed a special team called the "Solid State Physics Group" to develop a new amplifier. The core of this team was three scientists who would later jointly receive the Nobel Prize in Physics.
 
 *   **William Shockley**: The leader of the team. A theoretical physicist with extraordinary intuition and insight, but he was also ambitious, egotistical, and had a personality prone to creating friction in relationships. Since before the war, he had been harboring the idea of an amplifier using semiconductors (especially germanium and silicon).
