@@ -11,6 +11,8 @@ description: "马克·埃利奥特·扎克伯格（Mark Elliot Zuckerberg）于1
 
 ## 从孤独的黑客到“连接”的创造者
 
+![在办公室使用台式电脑的场景](Zuckerbergjp-jumbo-v2.webp)
+
 马克·埃利奥特·扎克伯格（Mark Elliot Zuckerberg）于1984年5月14日出生在纽约州白原市。在牙医父亲和精神科医生母亲的优渥家庭环境中长大，他从小就对编程表现出浓厚的兴趣。早在初中时期，他就已经展现出自己的才华，开发了一款名为“ZuckNet”的消息软件，将父亲牙医诊所的接待处与检查室连接起来。
 
 当他进入著名的哈佛大学时，世界正逐渐从互联网的黎明期走出来。2004年，他与室友在大学宿舍里共同推出了“TheFacebook”，该平台迅速席卷校园，并最终发展成为连接全球用户的庞大平台“Facebook（现为[Meta](/zh-cn/p/history-of-meta-facebook/)）”。驱使他前进的不仅仅是金钱上的成功，而是一个强烈的愿景：“让世界更加开放和互联（To make the world more open and connected）”。

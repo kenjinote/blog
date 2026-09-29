@@ -11,6 +11,8 @@ description: "Mark Elliot Zuckerberg lahir pada 14 Mei 1984 di White Plains, New
 
 ## Dari Hacker Penyendiri Menjadi Pencipta "Koneksi"
 
+![Seseorang menggunakan komputer desktop di kantor](Zuckerbergjp-jumbo-v2.webp)
+
 Mark Elliot Zuckerberg lahir pada 14 Mei 1984 di White Plains, New York. Dibesarkan dalam lingkungan keluarga yang beruntung dengan ayah seorang dokter gigi dan ibu seorang psikiater, ia menunjukkan minat yang kuat pada pemrograman sejak usia dini. Pada saat SMP, ia sudah menunjukkan bakatnya, mengembangkan perangkat lunak perpesanan yang disebut "ZuckNet" yang menghubungkan resepsionis di klinik gigi ayahnya dengan ruang periksa.
 
 Ketika ia masuk ke Universitas Harvard yang bergengsi, dunia baru saja mulai bangkit dari awal mula internet. Pada tahun 2004, "TheFacebook," yang diluncurkan dari kamar asrama bersama teman-teman sekamarnya, dengan cepat menyapu kampus dan akhirnya tumbuh menjadi platform besar "Facebook (sekarang Meta)" yang menghubungkan orang-orang di seluruh dunia. Yang mendorongnya bukanlah semata-mata kesuksesan finansial, melainkan visi yang kuat: "Untuk membuat dunia lebih terbuka dan terhubung (To make the world more open and connected)."

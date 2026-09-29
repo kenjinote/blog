@@ -11,6 +11,8 @@ description: "Mark Elliot Zuckerberg nació el 14 de mayo de 1984 en White Plain
 
 ## De hacker solitario a creador de conexiones
 
+![Una persona usando un ordenador de escritorio en una oficina](Zuckerbergjp-jumbo-v2.webp)
+
 Mark Elliot Zuckerberg nació el 14 de mayo de 1984 en White Plains, Nueva York. Criado en un entorno privilegiado con un padre dentista y una madre psiquiatra, mostró un fuerte interés por la programación desde una edad temprana. En la escuela secundaria, ya dejaba entrever su talento al desarrollar un software de mensajería llamado "ZuckNet" que conectaba la recepción de la clínica dental de su padre con las salas de examen.
 
 Cuando ingresó a la prestigiosa Universidad de Harvard, el mundo apenas comenzaba a emerger de los albores de internet. En 2004, "TheFacebook", lanzado desde una habitación de la residencia de estudiantes con sus compañeros, se extendió rápidamente por el campus y con el tiempo se convirtió en la enorme plataforma "Facebook (ahora Meta)" que conecta a personas de todo el mundo. Lo que lo impulsaba no era un simple éxito financiero, sino una poderosa visión: "Hacer el mundo más abierto y conectado" (To make the world more open and connected).

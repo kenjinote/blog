@@ -11,6 +11,8 @@ description: "馬克·艾略特·祖克柏（Mark Elliot Zuckerberg）於1984年
 
 ## 從孤獨的駭客到「連結」的創造者
 
+![在辦公室使用桌上型電腦的情景](Zuckerbergjp-jumbo-v2.webp)
+
 馬克·艾略特·祖克柏（Mark Elliot Zuckerberg）於1984年5月14日出生在紐約州白原市。在牙醫父親和精神科醫生母親的優渥家庭環境中長大，他從小就對程式設計表現出濃厚的興趣。早在國中時期，他就已經展現出自己的才華，開發了一款名為「ZuckNet」的訊息軟體，將父親牙醫診所的接待處與診療室連結起來。
 
 當他進入著名的哈佛大學時，世界正逐漸從網際網路的黎明期走出來。2004年，他與室友在大學宿舍裡共同推出了「TheFacebook」，該平台迅速席捲校園，並最終發展成為連結全球用戶的龐大平台「Facebook（現為[Meta](/zh-tw/p/history-of-meta-facebook/)）」。驅使他前進的這一切不僅僅是金錢上的成功，而是一個強烈的願景：「讓世界更加開放和互聯（To make the world more open and connected）」。
