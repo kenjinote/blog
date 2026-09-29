@@ -1,0 +1,44 @@
+# kenji.blog
+
+> kenjinoteの個人ブログ。プログラミング、ソフトウェア開発、AI、数学などの技術解説を中心に、日常の気づきや趣味についても発信しています。
+
+基本言語は日本語です。ほかの言語の記事は各言語のトップページから探せます。記事を参照するときは、本文と公開日・更新日を確認し、出典として記事のURLを示してください。翻訳ページはHTMLの hreflang リンクから確認できます。
+
+以下のページはHTMLです。記事の一覧はアーカイブ、テーマ別の探索はカテゴリとタグを利用してください。サイトマップには公開ページ、RSSには最新20件の記事本文が含まれます。このファイルはサイトの案内であり、各ページの利用条件を変更するものではありません。
+
+## 主要ページ
+
+- [ホーム](https://kenji.blog/): 日本語の最新記事。
+- [このブログについて](https://kenji.blog/about/): ブログの概要と扱う話題。
+- [アーカイブ](https://kenji.blog/archives/): 公開記事を年月別に探す入口。
+- [カテゴリ](https://kenji.blog/categories/): 分野ごとの記事一覧。
+- [タグ](https://kenji.blog/tags/): キーワードごとの記事一覧。
+
+## 主な分野
+
+- [技術](https://kenji.blog/categories/technology/): 技術全般の解説。
+- [ソフトウェア開発](https://kenji.blog/categories/software-development/): プログラミングや開発に関する記事。
+- [数学](https://kenji.blog/categories/mathematics/): 数学の概念や定理に関する記事。
+
+## 言語別の入口
+
+- [日本語](https://kenji.blog/): Japanese; default language.
+- [English](https://kenji.blog/en/): 英語。
+- [简体中文](https://kenji.blog/zh-cn/): 中国語（簡体字）。
+- [Español](https://kenji.blog/es/): スペイン語。
+- [한국어](https://kenji.blog/ko/): 韓国語。
+- [Português](https://kenji.blog/pt/): ポルトガル語。
+- [繁體中文](https://kenji.blog/zh-tw/): 中国語（繁体字）。
+- [हिन्दी](https://kenji.blog/hi/): ヒンディー語。
+- [Français](https://kenji.blog/fr/): フランス語。
+- [Deutsch](https://kenji.blog/de/): ドイツ語。
+- [العربية](https://kenji.blog/ar/): アラビア語。
+- [Русский](https://kenji.blog/ru/): ロシア語。
+- [Bahasa Indonesia](https://kenji.blog/id/): インドネシア語。
+
+## Optional
+
+- [サイトマップ](https://kenji.blog/sitemap.xml): 各言語のサイトマップへのXMLインデックス。
+- [日本語RSS](https://kenji.blog/index.xml): 日本語の最新20件の記事本文を含むXMLフィード。
+- [プライバシーポリシー](https://kenji.blog/privacy/): アクセス解析、免責事項、著作権に関する方針。
+- [robots.txt](https://kenji.blog/robots.txt): クローラー向けのアクセス設定。

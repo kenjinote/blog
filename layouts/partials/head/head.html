@@ -9,6 +9,7 @@
 <title>{{ $title }}</title>
 
 <link rel='canonical' href='{{ .Permalink }}'>
+<link rel="describedby" type="text/plain" href="{{ "llms.txt" | absURL }}">
 
 {{- range .AllTranslations -}}
     <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
