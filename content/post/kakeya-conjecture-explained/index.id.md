@@ -22,7 +22,7 @@ Dalam artikel ini, kita akan menggali lebih dalam keseluruhan Konjektur Kakeya, 
 
 ## 1. Masalah Jarum Kakeya: Pertanyaan Intuitif
 
-![Soichi Kakeya](Soichi_Kakeya.jpg)
+{{< figure src="Soichi_Kakeya.jpg" alt="Soichi Kakeya" caption="Soichi Kakeya" class="portrait-half" width="960" height="1354" loading="lazy" >}}
 
 Pada tahun 1917, Soichi Kakeya, yang berada di Universitas Imperial Tohoku (sekarang Universitas Tohoku), mengajukan masalah visual yang sangat sederhana berikut:
 

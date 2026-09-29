@@ -22,7 +22,7 @@ image: eyecatch.jpg
 
 ## 1. 掛谷の針の問題：直感的な問いかけ
 
-![掛谷宗一](Soichi_Kakeya.jpg)
+{{< figure src="Soichi_Kakeya.jpg" alt="掛谷宗一" caption="掛谷宗一" class="portrait-half" width="960" height="1354" loading="lazy" >}}
 
 1917年、東北帝国大学（現在の東北大学）にいた掛谷宗一は、次のような非常にシンプルで視覚的な問題を提起しました。
 

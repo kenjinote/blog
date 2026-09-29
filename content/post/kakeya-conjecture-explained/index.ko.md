@@ -22,7 +22,7 @@ image: eyecatch.jpg
 
 ## 1. 카케야의 바늘 문제: 직관적인 질문
 
-![카케야 소이치](Soichi_Kakeya.jpg)
+{{< figure src="Soichi_Kakeya.jpg" alt="카케야 소이치" caption="카케야 소이치" class="portrait-half" width="960" height="1354" loading="lazy" >}}
 
 1917년, 도호쿠 제국대학(현재의 도호쿠 대학)에 있던 카케야 소이치는 다음과 같은 매우 단순하고 시각적인 문제를 제기했습니다.
 

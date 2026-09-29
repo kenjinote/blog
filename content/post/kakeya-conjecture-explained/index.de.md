@@ -22,7 +22,7 @@ In diesem Artikel werden wir das Gesamtbild der Kakeya-Vermutung tiefgehend erl�
 
 ## 1. Das Kakeya-Nadelproblem: Eine intuitive Frage
 
-![Soichi Kakeya](Soichi_Kakeya.jpg)
+{{< figure src="Soichi_Kakeya.jpg" alt="Soichi Kakeya" caption="Soichi Kakeya" class="portrait-half" width="960" height="1354" loading="lazy" >}}
 
 Im Jahr 1917 stellte Soichi Kakeya, der an der Kaiserlichen Universität Tohoku (der heutigen Tohoku-Universität) tätig war, das folgende sehr einfache und visuelle Problem.
 

@@ -22,7 +22,7 @@ image: eyecatch.jpg
 
 ## 1. مسألة إبرة كاكيا: تساؤل بديهي
 
-![سويتشي كاكيا](Soichi_Kakeya.jpg)
+{{< figure src="Soichi_Kakeya.jpg" alt="سويتشي كاكيا" caption="سويتشي كاكيا" class="portrait-half" width="960" height="1354" loading="lazy" >}}
 
 في عام 1917، طرح سويتشي كاكيا، الذي كان في جامعة توهوكو الإمبراطورية (جامعة توهوكو حالياً)، المسألة التالية البسيطة والمرئية للغاية:
 

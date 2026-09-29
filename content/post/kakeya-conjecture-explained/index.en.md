@@ -22,7 +22,7 @@ In this article, we will delve deeply into the full picture of the Kakeya Conjec
 
 ## 1. Kakeya's Needle Problem: An Intuitive Question
 
-![Soichi Kakeya](Soichi_Kakeya.jpg)
+{{< figure src="Soichi_Kakeya.jpg" alt="Soichi Kakeya" caption="Soichi Kakeya" class="portrait-half" width="960" height="1354" loading="lazy" >}}
 
 In 1917, Soichi Kakeya at Tohoku Imperial University (now Tohoku University) posed the following very simple and visual problem:
 

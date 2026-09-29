@@ -22,7 +22,7 @@ image: eyecatch.jpg
 
 ## 1. काकेया की सुई समस्या: एक सहज प्रश्न
 
-![सोइची काकेया](Soichi_Kakeya.jpg)
+{{< figure src="Soichi_Kakeya.jpg" alt="सोइची काकेया" caption="सोइची काकेया" class="portrait-half" width="960" height="1354" loading="lazy" >}}
 
 1917 में, तोहोकू इंपीरियल यूनिवर्सिटी (अब तोहोकू यूनिवर्सिटी) के सोइची काकेया ने निम्नलिखित बहुत ही सरल और दृश्य समस्या प्रस्तुत की:
 

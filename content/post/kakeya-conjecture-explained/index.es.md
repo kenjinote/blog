@@ -22,7 +22,7 @@ En este artículo, exploraremos en profundidad toda la perspectiva de la conjetu
 
 ## 1. El problema de la aguja de Kakeya: Una pregunta intuitiva
 
-![Soichi Kakeya](Soichi_Kakeya.jpg)
+{{< figure src="Soichi_Kakeya.jpg" alt="Soichi Kakeya" caption="Soichi Kakeya" class="portrait-half" width="960" height="1354" loading="lazy" >}}
 
 En 1917, Soichi Kakeya, quien se encontraba en la Universidad Imperial de Tohoku (actual Universidad de Tohoku), planteó el siguiente problema muy simple y visual:
 

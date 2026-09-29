@@ -1,5 +1,17 @@
 /* Place your custom SCSS in HUGO_SITE_FOLDER/assets/scss/custom.scss */
 
+// Compact portraits occupy half of the article's text width.
+.article-content figure.portrait-half {
+    width: 50%;
+    margin-inline: auto;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
 // Mathematical notation keeps its reading order inside right-to-left prose.
 [dir="rtl"] .katex {
     direction: ltr;
