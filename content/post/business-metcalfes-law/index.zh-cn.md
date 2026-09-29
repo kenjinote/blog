@@ -19,6 +19,9 @@ image: "eyecatch.jpg"
 ## 1. 梅特卡夫定律的基本概念
 
 ### 罗伯特·梅特卡夫与以太网的诞生
+
+{{< figure src="robert-metcalfe.jpg" alt="罗伯特·梅特卡夫" caption="罗伯特·梅特卡夫" class="portrait-half" width="1000" height="626" loading="lazy" >}}
+
 梅特卡夫定律以计算机网络技术“以太网（Ethernet）”的共同发明人、3Com公司创始人罗伯特·梅特卡夫（Robert Metcalfe）的名字命名。他在1980年代初提出这个概念，最初是作为一种解释模型来促进传真机（FAX）、电话和以太网设备的销售。
 
 ### 定律的数学背景

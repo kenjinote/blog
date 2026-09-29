@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # 引言：什么是布鲁克斯法则？
 
+{{< figure src="frederick-brooks-jr.jpg" alt="小弗雷德里克·P·布鲁克斯" caption="小弗雷德里克·P·布鲁克斯" class="portrait-half" width="300" height="366" loading="lazy" >}}
+
 只要是从事系统开发、软件工程，或者一般项目管理的人，大概都听说过“布鲁克斯法则（Brooks's law）”这个词。
 
 布鲁克斯法则是小弗雷德里克·P·布鲁克斯（Frederick P. Brooks Jr.）于1975年其著作《人月神话》（The Mythical Man-Month）中提出的，在软件开发项目中极为著名且看似违背直觉的经验法则。该法则可以概括为以下这句话：

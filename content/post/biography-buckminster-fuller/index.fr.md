@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Introduction : L'initiateur d'une "science du design anticipative globale" bien en avance sur son temps
 
+{{< figure src="richard-buckminster-fuller.jpg" alt="Richard Buckminster Fuller" caption="Richard Buckminster Fuller" class="portrait-half" width="700" height="450" loading="lazy" >}}
+
 Richard Buckminster Fuller (1895 - 1983). Que vous vient-il à l'esprit en entendant ce nom ? Certains penseront peut-être au "dôme géodésique", ce magnifique bâtiment hémisphérique combinant des triangles équilatéraux. D'autres se souviendront de l'idée accrocheuse et profonde du "Vaisseau spatial Terre" (Spaceship Earth), qui peut être considérée comme l'origine des ODD et du développement durable actuels.
 
 Fuller n'était pas qu'un simple architecte ou penseur. S'autoproclamant "explorateur d'une science du design anticipative globale", il a traversé divers domaines tels que les mathématiques, l'ingénierie, l'architecture, la philosophie et les sciences de l'environnement, à la recherche de la "solution optimale" pour la survie de l'humanité sur cette Terre.

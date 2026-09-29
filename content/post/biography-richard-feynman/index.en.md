@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 ## 1. Introduction: The Trickster and Greatest Teacher of the Physics World
 
+{{< figure src="Richard_Feynman.png" alt="Richard Feynman" caption="Richard Feynman" class="portrait-half" width="1022" height="1024" loading="lazy" >}}
+
 "I have a lot of things I don't understand. But what does it matter? It's perfectly fine not to understand."
 
 As symbolized by these words, Richard P. Feynman (1918 - 1988) was not just a genius physicist, but an overwhelming "human charm" and a "mass of curiosity." One of the most prominent physicists of the 20th century, he won the Nobel Prize in Physics in 1965 for his contributions to the development of Quantum Electrodynamics (QED). However, the reason he is still loved and respected by people all over the world today is not just his brilliant achievements.

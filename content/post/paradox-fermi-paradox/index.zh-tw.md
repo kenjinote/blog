@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # 序章：「大家都去哪裡了？」
 
+{{< figure src="enrico-fermi.jpg" alt="恩里科·費米" caption="恩里科·費米" class="portrait-half" width="1200" height="920" loading="lazy" >}}
+
 1950年夏天，在洛斯阿拉莫斯國家實驗室的餐廳裡，諾貝爾物理學獎得主恩里科·費米（Enrico Fermi）正與他的物理學家同事們（愛德華·泰勒、赫伯特·約克、埃米爾·科諾平斯基）共進午餐。他們的話題圍繞著當時媒體熱炒的UFO目擊事件，以及比光速更快的宇宙飛船的可能性。
 
 對話轉移到另一個話題，過了一會兒，費米突然毫無徵兆地問道：

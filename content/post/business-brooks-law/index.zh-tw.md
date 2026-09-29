@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # 前言：什麼是布魯克斯法則（Brooks's law）？
 
+{{< figure src="frederick-brooks-jr.jpg" alt="小弗雷德里克·P·布魯克斯" caption="小弗雷德里克·P·布魯克斯" class="portrait-half" width="300" height="366" loading="lazy" >}}
+
 只要是從事系統開發、軟體工程，或是一般的專案管理的人，應該都曾聽過「布魯克斯法則（Brooks's law）」這個詞。
 
 布魯克斯法則是由佛瑞德里克·布魯克斯（Frederick P. Brooks Jr.）在 1975 年的著作《人月神話：軟體專案管理之道（The Mythical Man-Month）》中提出，是軟體開發專案中非常著名且反直覺的經驗法則。該法則可以濃縮為以下這句話：

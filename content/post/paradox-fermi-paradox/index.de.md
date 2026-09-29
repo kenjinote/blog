@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Prolog: "Wo sind sie alle?"
 
+{{< figure src="enrico-fermi.jpg" alt="Enrico Fermi" caption="Enrico Fermi" class="portrait-half" width="1200" height="920" loading="lazy" >}}
+
 Im Sommer 1950 aß der Nobelpreisträger für Physik, Enrico Fermi, in der Cafeteria des Los Alamos National Laboratory mit seinen Physiker-Kollegen (Edward Teller, Herbert York und Emil Konopinski) zu Mittag. Ihr Thema waren UFO-Sichtungen, die damals in den Medien für Aufsehen sorgten, und die Möglichkeit von Raumschiffen, die schneller als das Licht fliegen können.
 
 Nachdem das Gespräch zu einem anderen Thema übergegangen war und einige Zeit vergangen war, fragte Fermi plötzlich ohne jeden Zusammenhang:

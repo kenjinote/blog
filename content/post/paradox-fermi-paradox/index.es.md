@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Capítulo Introductorio: "¿Dónde está todo el mundo?"
 
+{{< figure src="enrico-fermi.jpg" alt="Enrico Fermi" caption="Enrico Fermi" class="portrait-half" width="1200" height="920" loading="lazy" >}}
+
 En el verano de 1950, en la cafetería del Laboratorio Nacional de Los Álamos, el premio Nobel de física Enrico Fermi almorzaba con sus colegas físicos (Edward Teller, Herbert York y Emil Konopinski). Su tema de conversación era sobre los avistamientos de ovnis, que llenaban los medios en ese momento, y la posibilidad de naves espaciales más rápidas que la luz.
 
 Después de que la conversación pasara a otro tema y transcurriera un tiempo, Fermi preguntó de repente y sin contexto:

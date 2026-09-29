@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Prólogo: "Onde estão todos?"
 
+{{< figure src="enrico-fermi.jpg" alt="Enrico Fermi" caption="Enrico Fermi" class="portrait-half" width="1200" height="920" loading="lazy" >}}
+
 No verão de 1950, na lanchonete do Laboratório Nacional de Los Alamos, o ganhador do Prêmio Nobel de Física Enrico Fermi almoçava com seus colegas físicos (Edward Teller, Herbert York e Emil Konopinski). O assunto deles era sobre os avistamentos de OVNIs que dominavam a mídia da época e a possibilidade de naves espaciais mais rápidas que a luz.
 
 Depois que a conversa mudou para outro assunto e algum tempo se passou, Fermi perguntou de repente, do nada:

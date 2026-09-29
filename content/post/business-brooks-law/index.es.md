@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Introducción: ¿Qué es la Ley de Brooks?
 
+{{< figure src="frederick-brooks-jr.jpg" alt="Frederick P. Brooks Jr." caption="Frederick P. Brooks Jr." class="portrait-half" width="300" height="366" loading="lazy" >}}
+
 Si estás involucrado en el desarrollo de sistemas, ingeniería de software, o en la gestión de proyectos en general, es muy probable que hayas escuchado el término "Ley de Brooks" (Brooks's law) al menos una vez.
 
 La Ley de Brooks es una regla empírica muy famosa y paradójica en proyectos de desarrollo de software, propuesta en 1975 por Frederick P. Brooks Jr. en su libro *El mítico hombre-mes: Ensayos sobre ingeniería de software* (The Mythical Man-Month). Esta ley se resume en la siguiente frase:

@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # 序章：“大家都在哪里？”
 
+{{< figure src="enrico-fermi.jpg" alt="恩里科·费米" caption="恩里科·费米" class="portrait-half" width="1200" height="920" loading="lazy" >}}
+
 1950年的夏天，在洛斯阿拉莫斯国家实验室的餐厅里，诺贝尔物理学奖得主恩里科·费米（Enrico Fermi）正与他的物理学家同事们（爱德华·泰勒、赫伯特·约克、埃米尔·科诺平斯基）共进午餐。他们的话题是当时媒体热烈报道的UFO目击事件，以及超光速宇宙飞船的可能性。
 
 当谈话转移到其他话题，过了一会儿，费米突然没头没脑地问了一句：

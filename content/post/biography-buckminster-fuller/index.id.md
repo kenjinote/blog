@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Pengantar: Promotor "Sains Desain Komprehensif dan Antisipatif" yang Terlalu Maju dari Zamannya
 
+{{< figure src="richard-buckminster-fuller.jpg" alt="Richard Buckminster Fuller" caption="Richard Buckminster Fuller" class="portrait-half" width="700" height="450" loading="lazy" >}}
+
 Richard Buckminster Fuller (1895 - 1983). Apa yang terlintas di pikiran Anda saat mendengar nama ini? Beberapa orang mungkin memikirkan "Kubah Geodesik", struktur arsitektur setengah bola yang indah yang terbuat dari segitiga sama sisi. Yang lain mungkin mengaitkannya dengan konsep yang menarik dan mendalam dari "Pesawat Luar Angkasa Bumi (Spaceship Earth)", yang dapat dikatakan sebagai asal usul SDGs dan keberlanjutan saat ini.
 
 Fuller bukan sekadar arsitek biasa, atau sekadar pemikir biasa. Menyebut dirinya sebagai "pencari sains desain komprehensif dan antisipatif", ia adalah sosok yang melintasi berbagai bidang seperti matematika, teknik, arsitektur, filsafat, dan studi lingkungan, terus mencari "solusi optimal" bagi kelangsungan hidup umat manusia di bumi ini.

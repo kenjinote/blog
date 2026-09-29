@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 ## 1. Pendahuluan: Sang Penipu (Trickster) di Dunia Fisika dan Guru Terbaik
 
+{{< figure src="Richard_Feynman.png" alt="Richard Feynman" caption="Richard Feynman" class="portrait-half" width="1022" height="1024" loading="lazy" >}}
+
 "Ada banyak hal yang tidak saya ketahui. Tapi, memangnya kenapa? Tidak tahu pun sama sekali tidak masalah, bukan?"
 
 Sebagaimana tercermin dari kata-kata tersebut, Richard P. Feynman (Richard Phillips Feynman, 1918 - 1988) bukanlah sekadar fisikawan jenius biasa, melainkan sosok dengan "daya tarik kemanusiaan" yang luar biasa dan merupakan perwujudan dari "rasa ingin tahu yang murni". Ia adalah salah satu fisikawan paling berpengaruh di abad ke-20, dan pada tahun 1965 menerima Hadiah Nobel Fisika atas kontribusinya dalam pengembangan Elektrodinamika Kuantum (QED). Namun, alasan mengapa ia masih sangat dicintai dan dihormati oleh orang-orang di seluruh dunia hingga saat ini, bukan sekadar karena pencapaiannya yang cemerlang.

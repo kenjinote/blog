@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Nikola Tesla: O Futuro Desenhado pela Corrente Alternada e o Sistema Mundial
 
+{{< figure src="nikola-tesla.jpeg" alt="Nikola Tesla" caption="Nikola Tesla" class="portrait-half" width="940" height="1260" loading="lazy" >}}
+
 Nikola Tesla (1856 - 1943) é um dos maiores e mais misteriosos inventores da história da humanidade. O sistema de Corrente Alternada (AC) que ele desenvolveu tornou-se a base da rede elétrica moderna, estabelecendo os alicerces da vida próspera que desfrutamos todos os dias. No entanto, as suas conquistas não pararam por aí. Ele possuía visões incrivelmente avançadas para a sua época, incluindo tecnologias pioneiras para comunicação sem fio, controle remoto e robótica, além do "Sistema Mundial" (World Wireless System), um conceito para conectar o planeta inteiro em uma gigantesca rede de energia e informação.
 
 Neste artigo, traçaremos a vida deste gênio inventor e ofereceremos uma explicação e análise detalhadas da feroz "Guerra das Correntes" travada contra Thomas Edison, bem como a história completa de seu maior sonho e maior fracasso, a "Torre Wardenclyffe" e o "Sistema Mundial".

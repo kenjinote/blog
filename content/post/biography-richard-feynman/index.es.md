@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 ## 1. Introducción: El bromista de la física y el mejor de los profesores
 
+{{< figure src="Richard_Feynman.png" alt="Richard Feynman" caption="Richard Feynman" class="portrait-half" width="1022" height="1024" loading="lazy" >}}
+
 "Hay muchas cosas que no entiendo. Pero, ¿qué importa? No pasa nada por no entenderlas."
 
 Como simbolizan estas palabras, Richard Phillips Feynman (1918 - 1988) no se limitaba a ser un genio de la física, sino que era una persona con un encanto humano abrumador y pura "curiosidad". Fue uno de los físicos más importantes del siglo XX, y en 1965 recibió el Premio Nobel de Física por sus contribuciones al desarrollo de la electrodinámica cuántica (QED). Sin embargo, la razón por la que todavía hoy es amado y respetado en todo el mundo no se debe solo a sus brillantes logros.

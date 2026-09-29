@@ -19,6 +19,9 @@ En los negocios modernos, especialmente en plataformas digitales, redes sociales
 ## 1. Concepto básico de la Ley de Metcalfe
 
 ### Robert Metcalfe y el nacimiento de Ethernet
+
+{{< figure src="robert-metcalfe.jpg" alt="Robert Metcalfe" caption="Robert Metcalfe" class="portrait-half" width="1000" height="626" loading="lazy" >}}
+
 La Ley de Metcalfe lleva el nombre de Robert Metcalfe, co-inventor de la tecnología de red informática "Ethernet" y fundador de la empresa 3Com. El concepto que propuso a principios de la década de 1980 se utilizó inicialmente como modelo explicativo para promover las ventas de facsímiles (FAX), teléfonos y equipos Ethernet.
 
 ### Trasfondo matemático de la ley

@@ -19,6 +19,9 @@ image: "eyecatch.jpg"
 ## 1. 멧칼프의 법칙의 기본 개념
 
 ### 로버트 멧칼프와 이더넷의 탄생
+
+{{< figure src="robert-metcalfe.jpg" alt="로버트 멧칼프" caption="로버트 멧칼프" class="portrait-half" width="1000" height="626" loading="lazy" >}}
+
 멧칼프의 법칙은 컴퓨터 네트워크 기술 '이더넷(Ethernet)'의 공동 발명자이자 3Com사의 창업자인 로버트 멧칼프(Robert Metcalfe)의 이름에서 유래했습니다. 그가 1980년대 초반에 제창한 이 개념은 당초 팩시밀리(FAX)나 전화, 그리고 이더넷 기기의 판매를 촉진하기 위한 설명 모델로 사용되었습니다.
 
 ### 법칙의 수학적 배경

@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 ## Henrietta Lacks: la heroína olvidada de la medicina moderna
 
+{{< figure src="henrietta-lacks.jpg" alt="Henrietta Lacks" caption="Henrietta Lacks" class="portrait-half" width="280" height="720" loading="lazy" >}}
+
 Gran parte de la tecnología médica que disfrutamos hoy en día —el desarrollo de la vacuna contra la polio, los avances en el tratamiento del cáncer, el éxito de la fertilización in vitro e incluso la investigación de la vacuna COVID-19— no se puede discutir sin las células de una mujer afroamericana. Su nombre era **Henrietta Lacks**. Las células tomadas de su cuerpo se denominaron "células HeLa" y se convirtieron en las primeras "células inmortales" en la historia de la humanidad en continuar multiplicándose indefinidamente fuera del cuerpo.
 
 Sin embargo, durante las décadas en que sus células se multiplicaron en laboratorios de todo el mundo y salvaron innumerables vidas, su familia ignoraba por completo este hecho. En este artículo, profundizaremos en la vida de Henrietta Lacks, los avances científicos provocados por las células HeLa y las profundas discusiones sobre bioética (consentimiento informado y privacidad genética) desencadenadas por su historia.

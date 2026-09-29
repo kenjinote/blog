@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Introdução: O pioneiro de uma "ciência do design antecipatório abrangente" muito à frente de seu tempo
 
+{{< figure src="richard-buckminster-fuller.jpg" alt="Richard Buckminster Fuller" caption="Richard Buckminster Fuller" class="portrait-half" width="700" height="450" loading="lazy" >}}
+
 Richard Buckminster Fuller (1895 - 1983). O que lhe vem à mente ao ouvir este nome? Alguns podem pensar na "cúpula geodésica", um belo edifício hemisférico que combina triângulos equiláteros. Outros podem se lembrar da ideia cativante e profunda da "Nave Espacial Terra" (Spaceship Earth), que pode ser considerada a origem dos atuais ODS e da sustentabilidade.
 
 Fuller não era apenas um arquiteto ou pensador. Autodenominando-se um "explorador de uma ciência do design antecipatório abrangente", ele cruzou vários campos como matemática, engenharia, arquitetura, filosofia e ciência ambiental, buscando continuamente a "solução ideal" para a sobrevivência da humanidade nesta Terra.

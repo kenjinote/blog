@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Introduction: What is Brooks's Law?
 
+{{< figure src="frederick-brooks-jr.jpg" alt="Frederick P. Brooks Jr." caption="Frederick P. Brooks Jr." class="portrait-half" width="300" height="366" loading="lazy" >}}
+
 Anyone involved in system development, software engineering, or general project management has likely heard the term "Brooks's Law" at least once.
 
 Brooks's Law is a very famous and paradoxical rule of thumb in software development projects, proposed by Frederick P. Brooks Jr. in his 1975 book, *The Mythical Man-Month: Essays on Software Engineering*. The law is summarized in the following sentence:

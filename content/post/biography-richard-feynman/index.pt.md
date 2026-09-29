@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 ## 1. Introdução: O trapaceiro e o melhor professor do mundo da física
 
+{{< figure src="Richard_Feynman.png" alt="Richard Feynman" caption="Richard Feynman" class="portrait-half" width="1022" height="1024" loading="lazy" >}}
+
 "Tenho muitas coisas que não entendo. Mas e daí? Não há problema nenhum em continuar sem entender."
 
 Simbolizado por estas palavras, Richard P. Feynman (1918 - 1988) foi mais do que apenas um gênio da física; ele tinha um "charme humano" esmagador e era uma "bola de curiosidade". Um dos principais físicos do século 20, ele ganhou o Prêmio Nobel de Física em 1965 por suas contribuições ao desenvolvimento da Eletrodinâmica Quântica (QED). No entanto, a razão pela qual ele ainda é amado e respeitado por pessoas em todo o mundo não é apenas por suas brilhantes realizações.

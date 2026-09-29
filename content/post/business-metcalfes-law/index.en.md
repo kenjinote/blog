@@ -19,6 +19,9 @@ Why does this seemingly simple law explain the rise of giant tech companies and 
 ## 1. Basic Concept of Metcalfe's Law
 
 ### Robert Metcalfe and the Birth of Ethernet
+
+{{< figure src="robert-metcalfe.jpg" alt="Robert Metcalfe" caption="Robert Metcalfe" class="portrait-half" width="1000" height="626" loading="lazy" >}}
+
 Metcalfe's Law is named after Robert Metcalfe, co-inventor of the computer network technology "Ethernet" and founder of 3Com. The concept he proposed in the early 1980s was initially used as an explanatory model to promote the sales of facsimiles (FAX), telephones, and Ethernet equipment.
 
 ### Mathematical Background of the Law

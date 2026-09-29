@@ -18,6 +18,8 @@ Dans cet article, nous explorerons en profondeur la loi de Pareto, depuis sa com
 
 ## Qu'est-ce que la loi de Pareto ? Son histoire et son essence
 
+{{< figure src="vilfredo-pareto.webp" alt="Vilfredo Pareto" caption="Vilfredo Pareto" class="portrait-half" width="474" height="632" loading="lazy" >}}
+
 La loi de Pareto a été proposée par Vilfredo Pareto, un économiste italien actif de la fin du 19ème au début du 20ème siècle. Dans un article publié en 1896, il a étudié la répartition des richesses en Europe à l'époque et a fait une découverte surprenante : la répartition inégale des richesses selon laquelle « environ 80 % de la richesse totale de la société est détenue par les 20 % les plus riches ».
 
 Par la suite, de nombreux chercheurs ont confirmé que cette distribution asymétrique « 80/20 » s'applique largement au-delà de l'économie, à la nature, aux affaires et à divers phénomènes sociaux. Dans les années 1940, Joseph M. Juran, une autorité en matière de contrôle qualité, a appliqué cette loi au monde des affaires et a proposé le concept des « few vital (les 20% importants) et trivial many (les 80% futiles) ». C'est le fondement de la loi de Pareto dans les affaires modernes.

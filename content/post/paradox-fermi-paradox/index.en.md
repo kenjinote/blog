@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Introduction: "Where is everybody?"
 
+{{< figure src="enrico-fermi.jpg" alt="Enrico Fermi" caption="Enrico Fermi" class="portrait-half" width="1200" height="920" loading="lazy" >}}
+
 In the summer of 1950, in the cafeteria of the Los Alamos National Laboratory, Nobel Prize-winning physicist Enrico Fermi was having lunch with his fellow physicists (Edward Teller, Herbert York, and Emil Konopinski). Their conversation revolved around UFO sightings, which were making headlines in the media at the time, and the possibility of faster-than-light spaceships.
 
 After the conversation shifted to another topic and some time had passed, Fermi suddenly and out of context asked:

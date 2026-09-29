@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Introduction : Qu'est-ce que la loi de Brooks ?
 
+{{< figure src="frederick-brooks-jr.jpg" alt="Frederick P. Brooks Jr." caption="Frederick P. Brooks Jr." class="portrait-half" width="300" height="366" loading="lazy" >}}
+
 Toute personne impliquée dans le développement de systèmes, le génie logiciel ou la gestion de projet en général a probablement entendu parler de la "loi de Brooks" (Brooks's law) au moins une fois.
 
 La loi de Brooks est une règle empirique très célèbre et paradoxale dans les projets de développement logiciel, proposée par Frederick P. Brooks Jr. en 1975 dans son livre "Le Mythe du mois-homme" (The Mythical Man-Month). Cette loi se résume en une phrase :

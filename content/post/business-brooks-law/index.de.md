@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Einführung: Was ist Brooks' Gesetz?
 
+{{< figure src="frederick-brooks-jr.jpg" alt="Frederick P. Brooks Jr." caption="Frederick P. Brooks Jr." class="portrait-half" width="300" height="366" loading="lazy" >}}
+
 Jeder, der in den Bereichen Systementwicklung, Software Engineering oder allgemeines Projektmanagement tätig ist, hat wahrscheinlich schon einmal den Begriff "Brooks' Gesetz" (Brooks's law) gehört.
 
 Brooks' Gesetz ist eine sehr bekannte und paradoxe Faustregel in Softwareentwicklungsprojekten, die 1975 von Frederick P. Brooks Jr. in seinem Buch "Vom Mythos des Mann-Monats: Essays über Software-Engineering" (The Mythical Man-Month) aufgestellt wurde. Das Gesetz lässt sich in folgendem Satz zusammenfassen:

@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Prolog: "Di manakah semuanya?"
 
+{{< figure src="enrico-fermi.jpg" alt="Enrico Fermi" caption="Enrico Fermi" class="portrait-half" width="1200" height="920" loading="lazy" >}}
+
 Pada musim panas tahun 1950, di kafetaria Laboratorium Nasional Los Alamos, peraih Hadiah Nobel Fisika Enrico Fermi sedang makan siang bersama rekan-rekan fisikawannya (Edward Teller, Herbert York, dan Emil Konopinski). Topik perbincangan mereka adalah penampakan UFO yang saat itu sedang ramai di media, serta kemungkinan adanya pesawat luar angkasa yang lebih cepat dari cahaya.
 
 Setelah percakapan beralih ke topik lain dan beberapa saat berlalu, Fermi tiba-tiba bertanya tanpa basa-basi:

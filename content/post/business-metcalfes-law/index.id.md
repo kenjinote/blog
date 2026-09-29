@@ -19,6 +19,9 @@ Mengapa hukum yang tampak sederhana ini dapat menjelaskan kebangkitan perusahaan
 ## 1. Konsep Dasar Hukum Metcalfe
 
 ### Robert Metcalfe dan Lahirnya Ethernet
+
+{{< figure src="robert-metcalfe.jpg" alt="Robert Metcalfe" caption="Robert Metcalfe" class="portrait-half" width="1000" height="626" loading="lazy" >}}
+
 Hukum Metcalfe dinamai dari Robert Metcalfe, penemu bersama teknologi jaringan komputer "Ethernet" dan pendiri perusahaan 3Com. Konsep ini, yang diajukan pada awal tahun 1980-an, pada awalnya digunakan sebagai model penjelasan untuk mempromosikan penjualan faksimili (FAX), telepon, dan peralatan Ethernet.
 
 ### Latar Belakang Matematika Hukum

@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # はじめに：ブルックスの法則とは何か？
 
+{{< figure src="frederick-brooks-jr.jpg" alt="フレデリック・P・ブルックス・ジュニア" caption="フレデリック・P・ブルックス・ジュニア" class="portrait-half" width="300" height="366" loading="lazy" >}}
+
 システム開発やソフトウェアエンジニアリング、あるいは一般的なプロジェクトマネジメントに関わる人であれば、一度は「ブルックスの法則（Brooks's law）」という言葉を耳にしたことがあるでしょう。
 
 ブルックスの法則は、1975年にフレデリック・P・ブルックス・ジュニア（Frederick P. Brooks Jr.）がその著書『人月の神話：狼人間を撃つ銀の弾はない（The Mythical Man-Month）』の中で提唱した、ソフトウェア開発プロジェクトにおける非常に有名かつ逆説的な経験則です。その法則は、次の一文に集約されます。

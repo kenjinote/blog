@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 ## Henrietta Lacks: Die unbesungene Heldin der modernen Medizin
 
+{{< figure src="henrietta-lacks.jpg" alt="Henrietta Lacks" caption="Henrietta Lacks" class="portrait-half" width="280" height="720" loading="lazy" >}}
+
 Ein Großteil der medizinischen Technologie, die wir heute genießen – die Entwicklung des Polio-Impfstoffs, Fortschritte in der Krebsbehandlung, der Erfolg der In-vitro-Fertilisation und sogar die Erforschung des COVID-19-Impfstoffs – kann ohne die Zellen einer afroamerikanischen Frau nicht diskutiert werden. Ihr Name war **Henrietta Lacks**. Die aus ihrem Körper entnommenen Zellen wurden "HeLa-Zellen" genannt und waren die ersten "unsterblichen Zellen" in der Geschichte der Menschheit, die sich außerhalb des Körpers unendlich weiter vermehrten.
 
 Doch während der Jahrzehnte, in denen sich ihre Zellen in Laboren auf der ganzen Welt vermehrten und unzählige Leben retteten, wusste ihre Familie nichts davon. In diesem Artikel werden wir uns eingehend mit dem Leben von Henrietta Lacks, den wissenschaftlichen Durchbrüchen, die durch HeLa-Zellen erzielt wurden, und den tiefgreifenden Diskussionen über Bioethik (informierte Einwilligung und genetische Privatsphäre), die durch ihre Geschichte ausgelöst wurden, befassen.

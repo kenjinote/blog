@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Nikola Tesla: Die Zukunft, gezeichnet von Wechselstrom und dem Weltsystem
 
+{{< figure src="nikola-tesla.jpeg" alt="Nikola Tesla" caption="Nikola Tesla" class="portrait-half" width="940" height="1260" loading="lazy" >}}
+
 Nikola Tesla (1856 - 1943) ist einer der größten und geheimnisvollsten Erfinder der Menschheitsgeschichte. Das von ihm entwickelte Wechselstromsystem (AC) bildete die Grundlage des modernen Stromnetzes und schuf die Basis für das reiche Leben, das wir heute genießen. Doch seine Verdienste beschränken sich nicht darauf. Er hatte noch visionärere Ideen für seine Zeit, wie Technologien für drahtlose Kommunikation, Fernsteuerung, die Anfänge der Robotik und sogar das "Weltsystem" (World Wireless System), das die gesamte Erde in einem gigantischen Energie- und Informationsnetzwerk verbinden sollte.
 
 In diesem Artikel werden wir das Leben dieses genialen Erfinders nachverfolgen und den erbitterten "Stromkrieg", der mit Thomas Edison geführt wurde, sowie seinen größten Traum und größten Rückschlag, den "Wardenclyffe Tower" und das "Weltsystem", mit ausführlichen Erklärungen und Überlegungen detailliert untersuchen.

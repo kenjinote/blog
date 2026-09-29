@@ -19,6 +19,9 @@ Por que essa lei aparentemente simples explica a ascensão das gigantes empresas
 ## 1. Conceito Básico da Lei de Metcalfe
 
 ### Robert Metcalfe e o Nascimento da Ethernet
+
+{{< figure src="robert-metcalfe.jpg" alt="Robert Metcalfe" caption="Robert Metcalfe" class="portrait-half" width="1000" height="626" loading="lazy" >}}
+
 A Lei de Metcalfe recebeu o nome de Robert Metcalfe, co-inventor da tecnologia de rede de computadores "Ethernet" e fundador da empresa 3Com. Esse conceito, proposto por ele no início dos anos 1980, foi inicialmente usado como um modelo explicativo para promover as vendas de aparelhos de fax, telefones e equipamentos Ethernet.
 
 ### Contexto Matemático da Lei

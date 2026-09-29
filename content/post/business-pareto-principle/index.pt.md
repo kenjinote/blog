@@ -18,6 +18,8 @@ Neste artigo, aprofundaremos e explicaremos tudo sobre o Princípio de Pareto, d
 
 ## O Que é o Princípio de Pareto? Sua História e Essência
 
+{{< figure src="vilfredo-pareto.webp" alt="Vilfredo Pareto" caption="Vilfredo Pareto" class="portrait-half" width="474" height="632" loading="lazy" >}}
+
 O Princípio de Pareto foi proposto pelo economista italiano Vilfredo Pareto, que atuou do final do século XIX ao início do século XX. Em um artigo publicado em 1896, ele estudou a distribuição da riqueza na Europa da época e descobriu um fato surpreendente. Era a distribuição desigual da riqueza, onde "cerca de 80% da riqueza total da sociedade pertencia aos 20% mais ricos".
 
 Posteriormente, muitos pesquisadores confirmaram que esta distribuição assimétrica "80:20" se aplicava amplamente além da economia, abrangendo o mundo natural, os negócios e os fenômenos sociais. Na década de 1940, Joseph M. Juran, uma autoridade em controle de qualidade, aplicou essa lei ao mundo dos negócios e propôs o conceito de "poucos vitais (vital few) e muitos triviais (trivial many)". Isso formou a base do Princípio de Pareto nos negócios modernos.

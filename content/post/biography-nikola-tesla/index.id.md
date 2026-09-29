@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Nikola Tesla: Masa Depan yang Digambarkan oleh Arus Bolak-balik dan Sistem Dunia
 
+{{< figure src="nikola-tesla.jpeg" alt="Nikola Tesla" caption="Nikola Tesla" class="portrait-half" width="940" height="1260" loading="lazy" >}}
+
 Nikola Tesla (1856 - 1943) adalah salah satu penemu paling hebat dan paling diselimuti pesona misterius dalam sejarah umat manusia. Sistem arus bolak-balik (AC) yang ia kembangkan menjadi fondasi jaringan listrik modern dan membangun dasar kehidupan makmur yang kita nikmati setiap hari. Namun, pencapaiannya tidak berhenti di situ. Ia juga memiliki visi yang terlalu maju untuk masanya, seperti teknologi perintis komunikasi nirkabel, kendali jarak jauh, dan robotika, serta "Sistem Dunia (World Wireless System)" yang menghubungkan seluruh Bumi dalam satu jaringan energi dan informasi raksasa.
 
 Dalam artikel ini, kita akan menelusuri kehidupan penemu jenius ini, dan memberikan penjelasan serta analisis mendetail sepanjang ribuan kata mengenai "Perang Arus" yang sengit melawan Thomas Edison, serta keseluruhan dari "Menara Wardenclyffe" dan "Sistem Dunia", yang merupakan impian terbesar sekaligus kegagalan terbesarnya.

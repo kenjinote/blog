@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # 引言：过度超前的“综合预期设计科学”倡导者
 
+{{< figure src="richard-buckminster-fuller.jpg" alt="理查德·巴克敏斯特·富勒" caption="理查德·巴克敏斯特·富勒" class="portrait-half" width="700" height="450" loading="lazy" >}}
+
 理查德·巴克敏斯特·富勒（Richard Buckminster Fuller, 1895年 - 1983年）。听到这个名字，你会想到什么？有些人可能会想起由正三角形组成的半球形优美建筑“网格球顶（Geodesic Dome）”。另一些人可能会联想到“宇宙飞船地球号（Spaceship Earth）”这个引人注目而又深奥的概念，它可以说是现代SDGs和可持续发展理念的源头。
 
 富勒不仅是一位建筑师，也不仅是一位思想家。他自称“综合预期设计科学的探索者”，是一位横跨数学、工程、建筑、哲学和环境学等众多领域，不断为人类在地球上生存寻找“最优解”的人物。

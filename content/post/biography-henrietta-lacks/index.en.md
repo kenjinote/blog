@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 ## Henrietta Lacks: The Unsung Hero of Modern Medicine
 
+{{< figure src="henrietta-lacks.jpg" alt="Henrietta Lacks" caption="Henrietta Lacks" class="portrait-half" width="280" height="720" loading="lazy" >}}
+
 Much of the medical technology we enjoy today—the development of the polio vaccine, advances in cancer treatment, the success of in vitro fertilization, and even COVID-19 vaccine research—cannot be discussed without the cells of an African American woman. Her name was **Henrietta Lacks**. The cells taken from her body were named "HeLa cells" and became the first "immortal cells" in human history to continue multiplying indefinitely outside the body.
 
 However, during the decades that her cells multiplied in laboratories worldwide and saved countless lives, her family was completely unaware of this fact. In this article, we will delve deeply into the life of Henrietta Lacks, the scientific breakthroughs brought about by HeLa cells, and the profound discussions on bioethics (informed consent and genetic privacy) triggered by her story.

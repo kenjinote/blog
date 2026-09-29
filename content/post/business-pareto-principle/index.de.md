@@ -18,6 +18,8 @@ In diesem Artikel werden wir tief in das Pareto-Prinzip eintauchen: vom grundleg
 
 ## Was ist das Pareto-Prinzip? Seine Geschichte und sein Wesen
 
+{{< figure src="vilfredo-pareto.webp" alt="Vilfredo Pareto" caption="Vilfredo Pareto" class="portrait-half" width="474" height="632" loading="lazy" >}}
+
 Das Pareto-Prinzip wurde von Vilfredo Pareto, einem italienischen Ökonomen, der vom späten 19. bis zum frühen 20. Jahrhundert aktiv war, aufgestellt. In einem 1896 veröffentlichten Papier untersuchte er die Vermögensverteilung im damaligen Europa und entdeckte eine erstaunliche Tatsache. Es war die ungleiche Verteilung des Reichtums: "Etwa 80 % des gesamten gesellschaftlichen Reichtums befinden sich im Besitz der oberen 20 % der Reichen."
 
 Später wurde von vielen Forschern bestätigt, dass diese asymmetrische "80:20"-Verteilung über die Wirtschaftswissenschaften hinaus auch in der Natur, in der Wirtschaft und in vielen anderen Bereichen gesellschaftlicher Phänomene weit verbreitet ist. In den 1940er Jahren wandte Joseph M. Juran, eine Autorität im Bereich Qualitätskontrolle, dieses Prinzip auf die Geschäftswelt an und schlug das Konzept der "wichtigen Wenigen (vital few) und der trivialen Vielen (trivial many)" vor. Dies bildet die Grundlage für das Pareto-Prinzip in der modernen Wirtschaft.

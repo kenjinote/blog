@@ -19,6 +19,9 @@ Pourquoi cette loi apparemment simple explique-t-elle la montée en puissance de
 ## 1. Concept de base de la loi de Metcalfe
 
 ### Robert Metcalfe et la naissance d'Ethernet
+
+{{< figure src="robert-metcalfe.jpg" alt="Robert Metcalfe" caption="Robert Metcalfe" class="portrait-half" width="1000" height="626" loading="lazy" >}}
+
 La loi de Metcalfe porte le nom de Robert Metcalfe, co-inventeur de la technologie de réseau informatique « Ethernet » et fondateur de 3Com. Ce concept, qu'il a proposé au début des années 1980, était initialement utilisé comme modèle explicatif pour promouvoir les ventes de télécopieurs (fax), de téléphones et d'équipements Ethernet.
 
 ### Contexte mathématique de la loi

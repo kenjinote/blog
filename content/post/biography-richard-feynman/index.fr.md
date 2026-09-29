@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 ## 1. Introduction : Le trickster de la physique et le meilleur des professeurs
 
+{{< figure src="Richard_Feynman.png" alt="Richard Feynman" caption="Richard Feynman" class="portrait-half" width="1022" height="1024" loading="lazy" >}}
+
 « Il y a beaucoup de choses que je ne comprends pas. Mais qu'est-ce que ça peut faire ? Ce n'est pas grave de ne pas savoir. »
 
 Comme le symbolise cette citation, Richard P. Feynman (1918 - 1988) était bien plus qu'un simple génie de la physique, c'était une « pure merveille humaine » et un « concentré de curiosité ». En tant que l'un des physiciens les plus éminents du 20e siècle, il a remporté le prix Nobel de physique en 1965 pour sa contribution au développement de l'électrodynamique quantique (QED). Cependant, la raison pour laquelle il est encore aujourd'hui aimé et respecté par des gens du monde entier ne se limite pas à ses brillantes réalisations.

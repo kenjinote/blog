@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 ## Henrietta Lacks: Pahlawan Tanpa Tanda Jasa dalam Kedokteran Modern
 
+{{< figure src="henrietta-lacks.jpg" alt="Henrietta Lacks" caption="Henrietta Lacks" class="portrait-half" width="280" height="720" loading="lazy" >}}
+
 Sebagian besar teknologi medis yang kita nikmati saat ini—pengembangan vaksin polio, kemajuan dalam pengobatan kanker, keberhasilan fertilisasi in vitro, dan bahkan penelitian vaksin COVID-19—tidak dapat dibahas tanpa sel seorang wanita Afrika-Amerika. Namanya adalah **Henrietta Lacks**. Sel yang diambil dari tubuhnya diberi nama "sel HeLa" dan menjadi "sel abadi" pertama dalam sejarah manusia yang terus berkembang biak tanpa batas di luar tubuh.
 
 Namun, selama puluhan tahun ketika sel-selnya berkembang biak di laboratorium di seluruh dunia dan menyelamatkan tak terhitung banyaknya nyawa, keluarganya sama sekali tidak menyadari fakta ini. Dalam artikel ini, kita akan menggali lebih dalam kehidupan Henrietta Lacks, terobosan ilmiah yang dibawa oleh sel HeLa, dan diskusi mendalam tentang bioetika (persetujuan berdasarkan informasi dan privasi genetik) yang dipicu oleh kisahnya.

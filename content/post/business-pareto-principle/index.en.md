@@ -18,6 +18,8 @@ In this article, we will delve deeply and thoroughly explain the Pareto Principl
 
 ## What is the Pareto Principle? Its History and Essence
 
+{{< figure src="vilfredo-pareto.webp" alt="Vilfredo Pareto" caption="Vilfredo Pareto" class="portrait-half" width="474" height="632" loading="lazy" >}}
+
 The Pareto Principle was proposed by Vilfredo Pareto, an Italian economist active from the late 19th to the early 20th century. In a paper published in 1896, he studied the distribution of wealth in Europe at the time and discovered a surprising fact. It was the unequal distribution of wealth, where "about 80% of the wealth of society as a whole is owned by the top 20% of the wealthy class."
 
 Later, this asymmetrical distribution of "80:20" was confirmed by many researchers to apply widely not only to economics but also to the natural world, business, and various social phenomena. In the 1940s, Joseph M. Juran, an authority on quality control, applied this principle to the business world and proposed the concept of the "vital few and the trivial many." This forms the foundation of the Pareto Principle in modern business.

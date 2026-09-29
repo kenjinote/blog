@@ -19,6 +19,9 @@ Warum erklärt dieses scheinbar einfache Gesetz den Aufstieg gigantischer Tech-U
 ## 1. Das Grundkonzept des Metcalfeschen Gesetzes
 
 ### Robert Metcalfe und die Geburt von Ethernet
+
+{{< figure src="robert-metcalfe.jpg" alt="Robert Metcalfe" caption="Robert Metcalfe" class="portrait-half" width="1000" height="626" loading="lazy" >}}
+
 Das Metcalfesche Gesetz ist nach Robert Metcalfe benannt, dem Miterfinder der Computernetzwerktechnologie „Ethernet“ und Gründer des Unternehmens 3Com. Dieses Konzept, das er in den frühen 1980er Jahren vorstellte, wurde ursprünglich als Erklärungsmodell zur Förderung des Verkaufs von Faxgeräten, Telefonen und Ethernet-Ausrüstung verwendet.
 
 ### Der mathematische Hintergrund des Gesetzes

@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Pengantar: Apa itu Hukum Brooks?
 
+{{< figure src="frederick-brooks-jr.jpg" alt="Frederick P. Brooks Jr." caption="Frederick P. Brooks Jr." class="portrait-half" width="300" height="366" loading="lazy" >}}
+
 Bagi siapa pun yang terlibat dalam pengembangan sistem, rekayasa perangkat lunak, atau manajemen proyek pada umumnya, mungkin pernah mendengar istilah "Hukum Brooks (Brooks's law)".
 
 Hukum Brooks adalah aturan empiris yang sangat terkenal dan paradoks dalam proyek pengembangan perangkat lunak, yang diajukan oleh Frederick P. Brooks Jr. pada tahun 1975 dalam bukunya *The Mythical Man-Month: Essays on Software Engineering*. Hukum ini terangkum dalam satu kalimat berikut:

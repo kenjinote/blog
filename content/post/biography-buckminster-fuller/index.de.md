@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Einführung: Der Pionier der "umfassenden antizipatorischen Design-Wissenschaft", der seiner Zeit voraus war
 
+{{< figure src="richard-buckminster-fuller.jpg" alt="Richard Buckminster Fuller" caption="Richard Buckminster Fuller" class="portrait-half" width="700" height="450" loading="lazy" >}}
+
 Richard Buckminster Fuller (1895 - 1983). Was fällt Ihnen ein, wenn Sie diesen Namen hören? Einige denken vielleicht an die "Geodätische Kuppel", eine wunderschöne, halbkugelförmige architektonische Struktur aus gleichseitigen Dreiecken. Andere wiederum assoziieren ihn vielleicht mit dem einprägsamen und tiefgründigen Konzept des "Raumschiffs Erde (Spaceship Earth)", das als Ursprung der heutigen SDGs und Nachhaltigkeit angesehen werden kann.
 
 Fuller war nicht einfach nur ein Architekt oder ein gewöhnlicher Denker. Er bezeichnete sich selbst als "Erforscher der umfassenden antizipatorischen Design-Wissenschaft" und überquerte verschiedene Bereiche wie Mathematik, Ingenieurwesen, Architektur, Philosophie und Umweltstudien auf der ständigen Suche nach der "optimalen Lösung" für das Überleben der Menschheit auf diesem Planeten.

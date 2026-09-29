@@ -18,6 +18,8 @@ Dalam artikel ini, kami akan membahas secara mendalam Prinsip Pareto, mulai dari
 
 ## Apa itu Prinsip Pareto? Sejarah dan Esensinya
 
+{{< figure src="vilfredo-pareto.webp" alt="Vilfredo Pareto" caption="Vilfredo Pareto" class="portrait-half" width="474" height="632" loading="lazy" >}}
+
 Prinsip Pareto dikemukakan oleh Vilfredo Pareto, seorang ekonom Italia yang aktif pada akhir abad ke-19 hingga awal abad ke-20. Dalam makalah yang diterbitkannya pada tahun 1896, ia meneliti distribusi kekayaan di Eropa pada saat itu dan menemukan fakta yang mengejutkan. Yaitu, ketidakmerataan distribusi kekayaan di mana "sekitar 80% dari seluruh kekayaan masyarakat dimiliki oleh 20% orang kaya teratas".
 
 Setelah itu, distribusi asimetris "80:20" ini dikonfirmasi oleh banyak peneliti berlaku luas tidak hanya dalam bidang ekonomi tetapi juga dalam alam, bisnis, dan fenomena sosial. Pada tahun 1940-an, Joseph M. Juran, seorang ahli manajemen mutu, menerapkan prinsip ini ke dalam dunia bisnis dan mengemukakan konsep "sedikit yang penting (vital few) dan banyak yang sepele (trivial many)". Inilah yang menjadi dasar Prinsip Pareto dalam bisnis modern.

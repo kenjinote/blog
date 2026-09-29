@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Introduction: The Proponent of "Comprehensive Anticipatory Design Science" Who Was Ahead of His Time
 
+{{< figure src="richard-buckminster-fuller.jpg" alt="Richard Buckminster Fuller" caption="Richard Buckminster Fuller" class="portrait-half" width="700" height="450" loading="lazy" >}}
+
 Richard Buckminster Fuller (1895–1983). What comes to mind when you hear this name? Some might think of the "geodesic dome," a beautiful hemispherical structure composed of equilateral triangles. Others might associate him with the catchy yet profound concept of "Spaceship Earth," which can be considered the origin of current SDGs and sustainability.
 
 Fuller was not just an architect or a mere thinker. Calling himself an "explorer of comprehensive anticipatory design science," he was a person who continued to seek the "optimal solution" for humanity's survival on this Earth by crossing various fields such as mathematics, engineering, architecture, philosophy, and environmental studies.

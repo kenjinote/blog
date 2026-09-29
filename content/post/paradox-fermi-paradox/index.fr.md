@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Introduction : « Où est tout le monde ? »
 
+{{< figure src="enrico-fermi.jpg" alt="Enrico Fermi" caption="Enrico Fermi" class="portrait-half" width="1200" height="920" loading="lazy" >}}
+
 Au cours de l'été 1950, à la cafétéria du laboratoire national de Los Alamos, le lauréat du prix Nobel de physique Enrico Fermi déjeunait avec ses collègues physiciens (Edward Teller, Herbert York et Emil Konopinski). Leur conversation portait sur les observations d'OVNI qui faisaient la une des médias à l'époque et sur la possibilité de vaisseaux spatiaux plus rapides que la lumière.
 
 Après que la conversation eut dérivé sur un autre sujet, Fermi demanda soudainement, sans aucun lien :

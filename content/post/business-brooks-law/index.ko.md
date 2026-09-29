@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # 들어가며: 브룩스의 법칙이란 무엇인가?
 
+{{< figure src="frederick-brooks-jr.jpg" alt="프레더릭 P. 브룩스 주니어" caption="프레더릭 P. 브룩스 주니어" class="portrait-half" width="300" height="366" loading="lazy" >}}
+
 시스템 개발이나 소프트웨어 엔지니어링, 또는 일반적인 프로젝트 관리에 관여하는 사람이라면 한 번쯤 '브룩스의 법칙(Brooks's law)'이라는 말을 들어본 적이 있을 것입니다.
 
 브룩스의 법칙은 1975년 프레더릭 P. 브룩스 주니어(Frederick P. Brooks Jr.)가 자신의 저서 『맨먼스 미신: 늑대인간을 쏠 은탄환은 없다(The Mythical Man-Month)』에서 제창한, 소프트웨어 개발 프로젝트에 있어 매우 유명하고도 역설적인 경험 법칙입니다. 그 법칙은 다음 한 문장으로 요약됩니다.

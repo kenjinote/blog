@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Nikola Tesla: The Future Envisioned by Alternating Current and the World System
 
+{{< figure src="nikola-tesla.jpeg" alt="Nikola Tesla" caption="Nikola Tesla" class="portrait-half" width="940" height="1260" loading="lazy" >}}
+
 Nikola Tesla (1856 - 1943) is one of the greatest and most mysteriously fascinating inventors in human history. The alternating current (AC) system he developed became the foundation of the modern power grid, building the basis for the rich lives we enjoy daily. However, his achievements did not stop there. He harbored concepts that were far too visionary for his time, such as technologies pioneering wireless communication, remote control, robotics, and even the "World Wireless System," which aimed to connect the entire Earth into a single massive network of energy and information.
 
 In this article, we trace the life of this genius inventor, providing a detailed explanation and analysis over thousands of words of the fierce "War of the Currents" fought with Thomas Edison, and the full picture of the "Wardenclyffe Tower" and the "World System," which were his greatest dreams and his greatest setbacks.

@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Nikola Tesla : L'avenir dessiné par le courant alternatif et le système mondial
 
+{{< figure src="nikola-tesla.jpeg" alt="Nikola Tesla" caption="Nikola Tesla" class="portrait-half" width="940" height="1260" loading="lazy" >}}
+
 Nikola Tesla (1856 - 1943) est l'un des inventeurs les plus grands et les plus mystérieusement fascinants de l'histoire de l'humanité. Le système à courant alternatif (CA) qu'il a développé est devenu la base de notre réseau électrique moderne, construisant les fondations de la vie prospère dont nous jouissons quotidiennement. Cependant, ses réalisations ne s'arrêtent pas là. Il nourrissait des concepts bien trop visionnaires pour son époque, tels que des technologies pionnières en matière de communication sans fil, de contrôle à distance et de robotique, ainsi que le « système mondial » (World Wireless System), un réseau gigantesque d'énergie et d'informations visant à relier la Terre entière.
 
 Dans cet article, tout en retraçant la vie de ce génial inventeur, nous fournirons une explication détaillée et une analyse de plusieurs milliers de mots sur la féroce « guerre des courants » qui l'a opposé à Thomas Edison, ainsi que sur l'ensemble de la « tour de Wardenclyffe » et du « système mondial », qui furent son plus grand rêve et son plus grand échec.
