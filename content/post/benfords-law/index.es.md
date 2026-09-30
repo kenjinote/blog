@@ -4,9 +4,7 @@ description: "Explorando la misteriosa ley matemática oculta en los datos natur
 slug: "benfords-law"
 date: "2026-09-15T10:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matemáticas"
-  - "Estadística"
+categories: ["mathematics", "statistics"]
 tags:
   - "Ley de Benford"
   - "Detección de Fraude"

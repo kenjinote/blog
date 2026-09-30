@@ -3,7 +3,7 @@ title: "Dasar-Dasar Komputasi Kuantum: Superposisi Kuantum dan Algoritma Shor"
 description: "Mengapa komputer kuantum dapat membobol kriptografi RSA. Penjelasan menyeluruh mulai dari perbedaan antara bit klasik dan qubit, gerbang kuantum, keterikatan kuantum, hingga dasar matematis algoritma Shor dan tantangan perangkat NISQ."
 date: 2026-09-28T00:16:09+09:00
 slug: quantum-computing-qubit-shor-algorithm
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "quantum-computing", "physics", "algorithm", "cryptography"]
 image: eyecatch.jpg
 ---

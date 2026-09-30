@@ -4,7 +4,7 @@ description: "Полное руководство по математическ�
 slug: "singular-value-decomposition"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Математика"]
+categories: ["mathematics"]
 tags: ["SVD", "Линейная алгебра", "Машинное обучение", "Сжатие данных", "ИИ", "Python"]
 ---
 

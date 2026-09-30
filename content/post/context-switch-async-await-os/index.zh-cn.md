@@ -3,7 +3,7 @@ title: "上下文切换的代价与异步处理（async/await）"
 description: "操作系统的进程与线程管理以及事件循环存在的意义。"
 date: 2026-09-27T14:20:15+09:00
 slug: context-switch-async-await-os
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "os", "async", "concurrency", "performance"]
 image: eyecatch.jpg
 ---

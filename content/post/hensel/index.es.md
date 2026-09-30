@@ -4,7 +4,7 @@ description: "Un vistazo profundo a la vida del matemático alemán Kurt Hensel,
 slug: "hensel"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matemáticas", "biografía"]
+categories: ["mathematics", "biography"]
 tags: ["Kurt Hensel", "números p-ádicos", "teoría algebraica de números", "historia de las matemáticas"]
 ---
 

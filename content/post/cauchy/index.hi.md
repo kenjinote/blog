@@ -5,9 +5,7 @@ description: "महान फ्रांसीसी गणितज्ञ ऑ
 slug: "cauchy"
 date: 2026-09-20T19:20:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "गणित"
-  - "जीवनी"
+categories: ["mathematics", "biography"]
 tags:
   - "कॉशी"
   - "विश्लेषण"

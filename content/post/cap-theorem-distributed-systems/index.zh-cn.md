@@ -4,9 +4,7 @@ description: "深入探讨分布式系统中最重要的原则——CAP定理，
 slug: "cap-theorem-distributed-systems"
 date: "2026-09-21T00:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "分布式系统"
-  - "数据库"
+categories: ["distributed-systems", "database"]
 tags:
   - "CAP定理"
   - "架构"

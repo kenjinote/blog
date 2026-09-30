@@ -4,8 +4,7 @@ description: "Panduan mendalam tentang Prinsip Inklusi-Eksklusi, alat matematika
 slug: "inclusion-exclusion-principle"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "matematika"
+categories: ["mathematics"]
 tags:
   - "matematika"
   - "kombinatorika"

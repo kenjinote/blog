@@ -4,7 +4,7 @@ description: "نظرة متعمقة على حياة، وقصص، والإنجا�
 slug: "leibniz"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["رياضيات", "سيرة ذاتية"]
+categories: ["mathematics", "biography"]
 tags: ["لايبنتس", "التفاضل والتكامل", "النظام الثنائي", "فلسفة", "تاريخ الرياضيات"]
 ---
 

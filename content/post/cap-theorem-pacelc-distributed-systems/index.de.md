@@ -2,9 +2,7 @@
 title: "Das CAP-Theorem und PACELC-Theorem: Das Dilemma verteilter Datenbanken"
 description: "Konsistenz, Verfügbarkeit oder Latenz?"
 date: 2026-09-27T14:05:08+09:00
-categories:
-  - computer-science
-  - algorithm
+categories: ["computer-science", "algorithms"]
 tags:
   - tech
   - distributed-systems

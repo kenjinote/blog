@@ -4,7 +4,7 @@ description: 'A deep dive into the life of Fibonacci, the spread of Arabic numer
 slug: "fibonacci"
 date: "2026-09-20T18:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematics", "Biography"]
+categories: ["mathematics", "biography"]
 tags: ["Fibonacci", "Mathematics", "History", "Golden Ratio", "Liber Abaci"]
 ---
 

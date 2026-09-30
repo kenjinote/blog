@@ -3,7 +3,7 @@ title: "रेगुलर एक्सप्रेशन इंजन और �
 description: "DFA और NFA, क्यों कुछ रेगुलर एक्सप्रेशन विनाशकारी रूप से 'धीमे' होते हैं।"
 date: 2026-09-27T14:05:08+09:00
 slug: regex-engine-dfa-nfa
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "algorithm", "regex", "automata", "computer-science"]
 image: eyecatch.jpg
 ---

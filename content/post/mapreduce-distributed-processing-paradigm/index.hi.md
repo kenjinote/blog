@@ -2,7 +2,7 @@
 slug: "mapreduce-distributed-processing-paradigm"
 title: "MapReduce का दर्शन: Google का वह डिस्ट्रीब्यूटेड प्रोसेसिंग जिसने दुनिया बदल दी"
 description: "बिग डेटा प्रोसेसिंग का मूल और Hadoop की वंशावली।"
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "distributed-systems", "big-data", "mapreduce", "google"]
 date: 2026-09-27T14:20:15+09:00
 image: "eyecatch.jpg"

@@ -4,7 +4,7 @@ description: "सिंगुलर वैल्यू डिकम्पोज�
 slug: "singular-value-decomposition"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित"]
+categories: ["mathematics"]
 tags: ["SVD", "रैखिक बीजगणित", "मशीन लर्निंग", "डेटा कम्प्रेशन", "AI", "Python"]
 ---
 

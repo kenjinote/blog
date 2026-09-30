@@ -4,9 +4,7 @@ description: "Penjelasan mendetail tentang kehidupan peraih Medali Fields, Gerd 
 slug: "faltings"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matematika"
-  - "Biografi"
+categories: ["mathematics", "biography"]
 tags:
   - "Gerd Faltings"
   - "Teori Bilangan"

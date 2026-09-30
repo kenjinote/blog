@@ -5,7 +5,7 @@ date: 2026-09-23T04:00:00+09:00
 
 image: "eyecatch.jpg"
 draft: false
-categories: ['History', 'network']
+categories: ["history", "network"]
 tags: ['TCP/IP', 'Internet', 'ARPANET']
 slug: "history-of-tcpip"
 ---

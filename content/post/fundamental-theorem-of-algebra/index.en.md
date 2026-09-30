@@ -4,8 +4,7 @@ description: "A detailed explanation of the history, intuitive meaning, and beau
 slug: "fundamental-theorem-of-algebra"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathematics"
+categories: ["mathematics"]
 tags:
   - "Algebra"
   - "Complex Analysis"

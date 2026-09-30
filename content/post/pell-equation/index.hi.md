@@ -4,8 +4,7 @@ description: "पेल समीकरण, सतत भिन्नों क�
 slug: "pell-equation"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "गणित"
+categories: ["mathematics"]
 tags:
   - "पेल-समीकरण"
   - "डायोफैंटाइन-समीकरण"

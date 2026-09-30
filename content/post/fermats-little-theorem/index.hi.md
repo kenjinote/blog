@@ -5,8 +5,7 @@ description: "फर्मेंट के छोटे प्रमेय क�
 slug: "fermats-little-theorem"
 date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "गणित"
+categories: ["mathematics"]
 tags:
   - "संख्या सिद्धांत"
   - "क्रिप्टोग्राफी"

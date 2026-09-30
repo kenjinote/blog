@@ -5,8 +5,7 @@ description: "詳細解讀線性代數中最令人驚訝的結果之一——凱
 slug: "cayley-hamilton-theorem"
 date: 2026-09-20T14:50:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "數學"
+categories: ["mathematics"]
 tags:
   - "線性代數"
   - "矩陣"

@@ -4,7 +4,7 @@ description: "A detailed explanation of the mathematical background of random wa
 slug: "random-walk"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematics"]
+categories: ["mathematics"]
 tags: ["Random Walk", "Probability Theory", "Diffusion Equation", "Brownian Motion", "Python"]
 ---
 

@@ -4,7 +4,7 @@ description: "역사상 가장 위대한 수학자 중 한 명인 레온하르�
 slug: "euler"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["오일러", "수학사", "천재", "물리학"]
 ---
 

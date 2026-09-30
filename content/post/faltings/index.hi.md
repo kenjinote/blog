@@ -4,9 +4,7 @@ description: "फील्ड्स मेडल विजेता गर्ड
 slug: "faltings"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "गणित"
-  - "जीवनी"
+categories: ["mathematics", "biography"]
 tags:
   - "गर्ड फाल्टिंग्स"
   - "संख्या सिद्धांत"

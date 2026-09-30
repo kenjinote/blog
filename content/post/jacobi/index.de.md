@@ -4,9 +4,7 @@ description: "Eine detaillierte Erklärung des Lebens von Carl Gustav Jacob Jaco
 slug: "jacobi"
 date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathematik"
-  - "Biografie"
+categories: ["mathematics", "biography"]
 tags:
   - "Jacobi"
   - "Elliptische Funktionen"

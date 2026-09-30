@@ -4,8 +4,7 @@ description: "Eine detaillierte Erklärung der Epsilon-Delta-Definition von Gren
 slug: "epsilon-delta-definition"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "Mathematik"
+categories: ["mathematics"]
 tags: 
   - "Analysis"
   - "Grenzwerte"

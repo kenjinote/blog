@@ -4,8 +4,7 @@ description: "Discover fascinating proofs of the Pythagorean theorem. Explore th
 slug: "diverse-proofs-of-pythagorean-theorem"
 date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "Mathematics"
+categories: ["mathematics"]
 tags: 
   - "Geometry"
   - "Algebra"

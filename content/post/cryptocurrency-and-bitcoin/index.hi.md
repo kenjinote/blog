@@ -4,7 +4,7 @@ description: "बिटकॉइन और क्रिप्टोकरें�
 slug: "cryptocurrency-and-bitcoin"
 date: "2026-09-20T23:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["तकनीक", "गणित"]
+categories: ["technology", "mathematics"]
 tags: ["बिटकॉइन", "क्रिप्टोग्राफी", "ब्लॉकचेन"]
 ---
 

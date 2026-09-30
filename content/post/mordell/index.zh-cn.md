@@ -5,7 +5,7 @@ description: "详细解读以在丢番图方程、椭圆曲线中的突破性贡
 slug: "mordell"
 date: 2026-09-20T20:10:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "传记"]
+categories: ["mathematics", "biography"]
 tags: ["数论", "莫德尔", "椭圆曲线", "丢番图方程"]
 ---
 

@@ -4,8 +4,7 @@ description: "Panduan komprehensif tentang dasar-dasar teori graf. Dari jembatan
 slug: "basics-of-graph-theory"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "matematika"
+categories: ["mathematics"]
 tags:
   - "teori graf"
   - "algoritma"

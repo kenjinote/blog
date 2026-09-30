@@ -4,7 +4,7 @@ description: "에도 시대의 천재 수학자 세키 다카카즈의 생애와
 slug: "seki-takakazu"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["세키 다카카즈", "와산", "에도 시대", "수학사", "미적분", "행렬식"]
 ---
 

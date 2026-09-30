@@ -4,7 +4,7 @@ description: "En mathématiques, l'« algèbre » a évolué vers l'étude des �
 slug: "groups-rings-and-fields"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathématiques"]
+categories: ["mathematics"]
 tags: ["algèbre", "théorie des groupes", "théorie des anneaux", "théorie des corps"]
 ---
 

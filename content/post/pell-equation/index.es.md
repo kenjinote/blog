@@ -4,8 +4,7 @@ description: "Una guía detallada sobre la ecuación de Pell, su solución utili
 slug: "pell-equation"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "matemáticas"
+categories: ["mathematics"]
 tags:
   - "ecuación-de-pell"
   - "ecuación-diofántica"

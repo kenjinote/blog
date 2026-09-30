@@ -4,7 +4,7 @@ description: "19वीं और 20वीं सदी के सबसे म�
 slug: "hilbert"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["हिल्बर्ट", "गणित का इतिहास", "ज्यामिति", "कार्यात्मक विश्लेषण", "भौतिकी", "संख्या सिद्धांत"]
 ---
 

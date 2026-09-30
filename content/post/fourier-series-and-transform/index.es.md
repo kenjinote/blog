@@ -4,8 +4,7 @@ description: "Una explicación detallada de las 'Series de Fourier', que expresa
 slug: "fourier-series-and-transform"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "matemáticas"
+categories: ["mathematics"]
 tags:
   - "Fourier"
   - "Matemáticas"

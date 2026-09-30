@@ -4,7 +4,7 @@ description: "Ein detaillierter Blick auf das Leben und die mathematischen Errun
 slug: "baker"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematik", "biografie"]
+categories: ["mathematics", "biography"]
 tags: ["Alan Baker", "Zahlentheorie", "Fields-Medaille", "Theorie der transzendenten Zahlen"]
 ---
 

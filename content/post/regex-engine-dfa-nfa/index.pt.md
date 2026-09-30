@@ -3,7 +3,7 @@ title: "Motores de Expressão Regular e Autômatos Finitos"
 description: "DFA e NFA, por que algumas expressões regulares são catastroficamente 'lentas'."
 date: 2026-09-27T14:05:08+09:00
 slug: regex-engine-dfa-nfa
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "algorithm", "regex", "automata", "computer-science"]
 image: eyecatch.jpg
 ---

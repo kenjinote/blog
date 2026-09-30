@@ -4,7 +4,7 @@ description: "Uma explicação detalhada da vida de Kurt Gödel, o maior lógico
 slug: "godel"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matemática", "biografia"]
+categories: ["mathematics", "biography"]
 tags: ["Kurt Gödel", "Teoremas da Incompletude", "Matemática", "Lógica", "História"]
 ---
 

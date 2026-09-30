@@ -5,7 +5,7 @@ description: "Подробный рассказ о жизни, удивител�
 slug: "gauss"
 date: 2026-09-20T19:10:00+09:00
 image: "eyecatch.jpg"
-categories: ["математика", "биография"]
+categories: ["mathematics", "biography"]
 tags: ["Гаусс", "История математики", "Гений", "Геометрия", "Теория чисел"]
 ---
 

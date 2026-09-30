@@ -4,7 +4,7 @@ description: "Arquimedes de Siracusa. Do episódio 'Eureka' ao cálculo de pi, o
 slug: "archimedes"
 date: "2026-09-20T18:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matemática", "biografia"]
+categories: ["mathematics", "biography"]
 tags: ["Arquimedes", "Grécia Antiga", "Geometria", "Física", "Cálculo"]
 ---
 

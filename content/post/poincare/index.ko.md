@@ -4,7 +4,7 @@ description: "프랑스의 위대한 수학자 앙리 푸앵카레의 생애, �
 slug: "poincare"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["푸앵카레", "위상수학", "카오스 이론", "수학사", "물리학"]
 ---
 

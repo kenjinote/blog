@@ -5,9 +5,7 @@ description: 'Ein tiefer Einblick in das Leben von Teiji Takagi, dem Vater der m
 slug: 'takagi-teiji'
 date: '2026-09-20T19:50:00+09:00'
 image: "eyecatch.jpg"
-categories:
-  - 'Mathematik'
-  - 'Biografie'
+categories: ["mathematics", "biography"]
 tags:
   - 'Teiji Takagi'
   - 'Klassenkörpertheorie'

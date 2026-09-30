@@ -4,7 +4,7 @@ description: "Une plongée approfondie dans la vie du mathématicien français G
 slug: "lame"
 date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathématiques", "Biographie"]
+categories: ["mathematics", "biography"]
 tags: ["Gabriel Lamé", "Histoire des mathématiques", "Théorie des nombres", "Élasticité", "Géométrie"]
 ---
 

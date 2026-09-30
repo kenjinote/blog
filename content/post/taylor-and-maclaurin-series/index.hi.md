@@ -4,8 +4,7 @@ description: "टेलर और मैकलॉरिन श्रृंखल
 slug: "taylor-and-maclaurin-series"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "गणित"
+categories: ["mathematics"]
 tags:
   - "कैलकुलस"
   - "टेलर श्रृंखला"

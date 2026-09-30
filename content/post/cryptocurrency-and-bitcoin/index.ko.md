@@ -4,7 +4,7 @@ description: "비트코인과 암호화폐 이면의 기술적, 수리적 메커
 slug: "cryptocurrency-and-bitcoin"
 date: "2026-09-20T23:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["기술", "수학"]
+categories: ["technology", "mathematics"]
 tags: ["비트코인", "암호학", "블록체인"]
 ---
 

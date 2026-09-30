@@ -4,7 +4,7 @@ description: "شرح شامل للآليات التقنية والرياضية �
 slug: "cryptocurrency-and-bitcoin"
 date: "2026-09-20T23:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["التكنولوجيا", "الرياضيات"]
+categories: ["technology", "mathematics"]
 tags: ["بيتكوين", "التشفير", "بلوكتشين"]
 ---
 

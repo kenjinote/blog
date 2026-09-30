@@ -5,8 +5,7 @@ description: "深入探討正規表示式與程式語言編譯器背後的「自
 slug: automata-formal-language-theory
 date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
-categories:
-  - 計算機科學
+categories: ["computer-science"]
 tags:
   - 自動機
   - 形式語言

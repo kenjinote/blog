@@ -5,7 +5,7 @@ description: "Fungsi Gamma menghubungkan faktorial diskrit ke kurva yang mulus. 
 slug: "gamma-function"
 date: 2026-09-20T14:40:00+09:00
 image: "eyecatch.jpg"
-categories: ["Matematika"]
+categories: ["mathematics"]
 tags: ["Fungsi Gamma", "Euler", "Analisis Kompleks", "Kalkulus"]
 ---
 

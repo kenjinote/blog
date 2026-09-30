@@ -4,7 +4,7 @@ description: 'Gorō Shimura, mathématicien de renommée mondiale connu pour la 
 slug: "shimura-goro"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathématiques", "biographie"]
+categories: ["mathematics", "biography"]
 tags: ["Gorō Shimura", "Théorie des nombres", "Conjecture de Taniyama-Shimura", "Dernier théorème de Fermat"]
 ---
 

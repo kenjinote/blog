@@ -3,7 +3,7 @@ title: "公钥密码学的数学：从RSA到椭圆曲线密码学（ECC）"
 description: "从素数分解的困难到离散对数问题的转变。"
 date: 2026-09-27T23:50:00+09:00
 slug: public-key-cryptography-rsa-ecc
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "cryptography", "security", "math", "algorithm"]
 image: eyecatch.jpg
 ---

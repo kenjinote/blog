@@ -5,8 +5,7 @@ description: "Penjelasan terperinci tentang teorema Cayley-Hamilton, salah satu 
 slug: "cayley-hamilton-theorem"
 date: 2026-09-20T14:50:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "matematika"
+categories: ["mathematics"]
 tags:
   - "aljabar linear"
   - "matriks"

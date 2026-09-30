@@ -4,7 +4,7 @@ description: "ليونهارد أويلر، أحد أعظم علماء الري�
 slug: "euler"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["رياضيات", "سيرة ذاتية"]
+categories: ["mathematics", "biography"]
 tags: ["أويلر", "تاريخ الرياضيات", "عبقري", "فيزياء"]
 ---
 

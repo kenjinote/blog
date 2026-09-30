@@ -4,7 +4,7 @@ description: "Ein detaillierter Bericht über das Leben des großen französisch
 slug: "legendre"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematik", "Biografie"]
+categories: ["mathematics", "biography"]
 tags: ["Legendre", "Zahlentheorie", "Geometrie", "Geschichte der Mathematik"]
 ---
 

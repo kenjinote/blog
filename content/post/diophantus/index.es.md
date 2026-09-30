@@ -5,9 +5,7 @@ description: "Una explicación detallada de la vida del antiguo matemático grie
 slug: "diophantus"
 date: 2026-09-20T18:40:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "matemáticas"
-  - "biografía"
+categories: ["mathematics", "biography"]
 tags:
   - "Diofanto"
   - "Álgebra"

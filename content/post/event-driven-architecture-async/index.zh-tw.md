@@ -4,9 +4,7 @@ description: "在現代分散式系統中不可或缺的事件驅動架構與非
 slug: "event-driven-architecture-async"
 date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "架構"
-  - "後端"
+categories: ["architecture", "backend"]
 tags:
   - "事件驅動"
   - "非同步"

@@ -3,7 +3,7 @@ title: "컨텍스트 스위치의 대가와 비동기 처리(async/await)"
 description: "OS의 프로세스·스레드 관리와 이벤트 루프의 존재 의의."
 date: 2026-09-27T14:20:15+09:00
 slug: context-switch-async-await-os
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "os", "async", "concurrency", "performance"]
 image: eyecatch.jpg
 ---

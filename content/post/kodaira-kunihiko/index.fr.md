@@ -4,7 +4,7 @@ description: "Exploration de la vie et de l'œuvre du mathématicien Kunihiko Ko
 slug: "kodaira-kunihiko"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathématiques", "biographie"]
+categories: ["mathematics", "biography"]
 tags: ["Kunihiko Kodaira", "Médaille Fields", "Géométrie Complexe"]
 ---
 

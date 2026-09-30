@@ -4,7 +4,7 @@ description: "Eine ausführliche Erklärung des Lebens und der Leistungen von Em
 slug: "noether"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematik", "Biografie"]
+categories: ["mathematics", "biography"]
 tags: ["Emmy Noether", "Abstrakte Algebra", "Physik", "Frauen in MINT"]
 ---
 

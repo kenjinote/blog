@@ -5,7 +5,7 @@ description: "Un regard approfondi sur la vie de l'ancien mathématicien grec Eu
 slug: "euclid"
 date: 2026-09-20T18:40:00+09:00
 image: "eyecatch.jpg"
-categories: ["Mathématiques", "Biographie"]
+categories: ["mathematics", "biography"]
 tags: ["Euclide", "Géométrie", "Histoire des mathématiques", "Grèce antique", "Éléments", "Algorithme d'Euclide"]
 ---
 

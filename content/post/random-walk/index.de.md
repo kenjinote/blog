@@ -4,7 +4,7 @@ description: "Eine detaillierte Erklärung des mathematischen Hintergrunds des R
 slug: "random-walk"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematik"]
+categories: ["mathematics"]
 tags: ["Random Walk", "Wahrscheinlichkeitstheorie", "Diffusionsgleichung", "Brownsche Bewegung", "Python"]
 ---
 

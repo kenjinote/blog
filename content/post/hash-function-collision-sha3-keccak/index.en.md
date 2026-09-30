@@ -2,7 +2,7 @@
 slug: hash-function-collision-sha3-keccak
 title: "Hash Function Collision Resistance and SHA-3 (Keccak)"
 description: "A new cryptographic hash mechanism called the sponge construction."
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "cryptography", "security", "hash", "algorithm"]
 date: 2026-09-27T14:20:15+09:00
 image: "eyecatch.jpg"

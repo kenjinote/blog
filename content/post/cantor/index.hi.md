@@ -4,9 +4,7 @@ description: "समुच्चय सिद्धांत के संस्
 slug: "cantor"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "गणित"
-  - "जीवनी"
+categories: ["mathematics", "biography"]
 tags:
   - "जॉर्ज कैंटर"
   - "समुच्चय सिद्धांत"

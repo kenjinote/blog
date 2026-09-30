@@ -4,7 +4,7 @@ date: "2026-09-24T19:44:38+09:00"
 description: "Eine detaillierte Erklärung des zentralen Grenzwertsatzes, eines der wichtigsten Theoreme der Statistik, vom intuitiven Verständnis über den mathematischen Beweis bis hin zur Simulation mit Python."
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["Mathematik", "Statistik"]
+categories: ["mathematics", "statistics"]
 tags: ["Zentraler Grenzwertsatz", "Wahrscheinlichkeit", "Datenwissenschaft", "Python"]
 slug: "central-limit-theorem"
 ---

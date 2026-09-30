@@ -5,8 +5,7 @@ description: "रेगुलर एक्सप्रेशन और प्र
 slug: automata-formal-language-theory
 date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
-categories:
-  - कंप्यूटर-विज्ञान
+categories: ["computer-science"]
 tags:
   - ऑटोमेटा
   - औपचारिक-भाषा

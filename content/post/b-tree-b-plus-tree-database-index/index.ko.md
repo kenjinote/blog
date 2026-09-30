@@ -2,9 +2,7 @@
 title: "B트리와 B+트리: 데이터베이스 인덱스가 왜 그렇게 빠른가"
 description: "디스크 I/O를 최소화하는 트리 구조의 이면."
 slug: b-tree-b-plus-tree-database-index
-categories:
-  - computer-science
-  - algorithm
+categories: ["computer-science", "algorithms"]
 tags:
   - tech
   - database

@@ -3,7 +3,7 @@ title: "सार्वजनिक कुंजी क्रिप्टोग�
 description: "प्राइम फैक्टराइजेशन की कठिनाई से डिस्क्रीट लॉगरिथम समस्या की ओर बदलाव।"
 date: 2026-09-27T23:50:00+09:00
 slug: public-key-cryptography-rsa-ecc
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "cryptography", "security", "math", "algorithm"]
 image: eyecatch.jpg
 ---

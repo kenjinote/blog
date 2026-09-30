@@ -4,7 +4,7 @@ description: "Подробный рассказ о жизни Алана Тью�
 slug: "turing"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Математика", "Биография"]
+categories: ["mathematics", "biography"]
 tags: ["Алан Тьюринг", "Машина Тьюринга", "Энигма", "Проблема остановки", "Морфогенез"]
 ---
 

@@ -5,9 +5,7 @@ description: '리우빌의 정리, 초월수, 스튀름-리우빌 이론, 그리
 slug: 'liouville'
 date: '2026-09-20T19:20:00+09:00'
 image: "eyecatch.jpg"
-categories:
-  - '수학'
-  - '전기'
+categories: ["mathematics", "biography"]
 tags:
   - '리우빌'
   - '복소해석학'

@@ -4,7 +4,7 @@ description: 'गोरो शिमुरा, तानियामा-शि�
 slug: "shimura-goro"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["गोरो शिमुरा", "संख्या सिद्धांत", "तानियामा-शिमुरा अनुमान", "फर्मेट का अंतिम प्रमेय"]
 ---
 

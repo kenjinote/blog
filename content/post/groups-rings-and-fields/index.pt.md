@@ -4,7 +4,7 @@ description: "Na matemática, a 'álgebra' evoluiu para o estudo de 'estruturas'
 slug: "groups-rings-and-fields"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matemática"]
+categories: ["mathematics"]
 tags: ["álgebra", "teoria de grupos", "teoria de anéis", "teoria de corpos"]
 ---
 

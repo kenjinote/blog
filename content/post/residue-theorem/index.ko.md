@@ -4,7 +4,7 @@ description: "복소해석학의 하이라이트인 유수 정리를 사용하�
 slug: "residue-theorem"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학"]
+categories: ["mathematics"]
 tags: ["복소해석학", "미적분학", "수학"]
 ---
 

@@ -4,9 +4,7 @@ description: "17世纪英国杰出的数学家约翰·沃利斯。我们将深�
 slug: "wallis"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "mathematics"
-  - "传记"
+categories: ["mathematics", "biography"]
 tags:
   - "约翰·沃利斯"
   - "微积分"

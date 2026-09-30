@@ -2,7 +2,7 @@
 slug: hash-function-collision-sha3-keccak
 title: "해시 함수의 충돌 내성과 SHA-3 (Keccak)"
 description: "스펀지 구조라는 새로운 암호학적 해시 메커니즘."
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "cryptography", "security", "hash", "algorithm"]
 date: 2026-09-27T14:20:15+09:00
 image: "eyecatch.jpg"

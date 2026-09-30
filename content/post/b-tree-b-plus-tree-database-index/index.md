@@ -2,9 +2,7 @@
 title: "B木とB+木：データベースのインデックスがなぜあんなに速いのか"
 description: "ディスクI/Oを最小化する木構造の裏側。"
 slug: b-tree-b-plus-tree-database-index
-categories:
-  - computer-science
-  - algorithm
+categories: ["computer-science", "algorithms"]
 tags:
   - tech
   - database

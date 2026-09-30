@@ -4,7 +4,7 @@ description: "深入了解榮獲菲爾茲獎的日本數學家廣中平祐的一
 slug: "hironaka-heisuke"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學", "傳記"]
+categories: ["mathematics", "biography"]
 tags: ["廣中平祐", "代數幾何", "奇點化解", "菲爾茲獎", "日本數學家", "創造力"]
 ---
 

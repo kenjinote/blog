@@ -3,7 +3,7 @@ title: "गार्बेज कलेक्शन (GC) का विकास 
 description: "मार्क एंड स्वीप से लेकर आधुनिक ZGC/Shenandoah तक का सफर। मैनुअल मेमोरी प्रबंधन के संघर्षों से लेकर, मिलीसेकंड के पॉज़ टाइम को प्राप्त करने वाली नवीनतम तकनीक तक का गहन विश्लेषण।"
 date: 2026-09-27T14:20:15+09:00
 slug: garbage-collection-history-zgc
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "garbage-collection", "memory-management", "java", "performance"]
 image: eyecatch.jpg
 ---

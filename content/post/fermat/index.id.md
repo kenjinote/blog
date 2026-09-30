@@ -4,7 +4,7 @@ description: "Penjelasan mendalam tentang kehidupan dan pencapaian matematika ya
 slug: "fermat"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matematika", "biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Fermat", "Sejarah Matematika", "Teorema Terakhir Fermat", "Teori Bilangan", "Teori Peluang"]
 ---
 

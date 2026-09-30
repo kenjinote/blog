@@ -3,7 +3,7 @@ title: "正規表達式引擎與有限自動機"
 description: "DFA與NFA，為什麼有些正規表達式會災難性地「慢」。"
 date: 2026-09-27T14:05:08+09:00
 slug: regex-engine-dfa-nfa
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "algorithm", "regex", "automata", "computer-science"]
 image: eyecatch.jpg
 ---

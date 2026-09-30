@@ -4,7 +4,7 @@ description: "गणित में बीजगणित संरचनाओ
 slug: "groups-rings-and-fields"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित"]
+categories: ["mathematics"]
 tags: ["बीजगणित", "समूह सिद्धांत", "वलय सिद्धांत", "क्षेत्र सिद्धांत"]
 ---
 

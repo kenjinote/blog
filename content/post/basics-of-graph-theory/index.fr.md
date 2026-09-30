@@ -4,8 +4,7 @@ description: "Un guide complet sur les bases de la théorie des graphes. Des pon
 slug: "basics-of-graph-theory"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "mathématiques"
+categories: ["mathematics"]
 tags:
   - "théorie des graphes"
   - "algorithme"

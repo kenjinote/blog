@@ -5,8 +5,7 @@ description: "结合乔姆斯基谱系，深入探讨正则表达式及编程语
 slug: automata-formal-language-theory
 date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
-categories:
-  - 计算机科学
+categories: ["computer-science"]
 tags:
   - 自动机
   - 形式语言

@@ -5,8 +5,7 @@ description: "从克劳德·香农提出的信息论基础出发，详细讲解�
 slug: information-theory-shannon-entropy
 date: 2026-09-21T02:45:54+09:00
 image: eyecatch.jpg
-categories:
-  - 计算机科学
+categories: ["computer-science"]
 tags:
   - 信息论
   - 熵

@@ -4,8 +4,7 @@ description: "Una explicación profunda de cómo el Teorema de Bayes actualiza l
 slug: "bayes-theorem"
 date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "matemáticas"
+categories: ["mathematics"]
 tags:
   - "Teorema de Bayes"
   - "Aprendizaje Automático"

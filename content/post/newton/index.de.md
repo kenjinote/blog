@@ -4,9 +4,7 @@ description: "Ein tiefer Einblick in das außergewöhnliche Leben von Isaac Newt
 slug: "newton"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathematik"
-  - "Biografie"
+categories: ["mathematics", "biography"]
 tags:
   - "Isaac Newton"
   - "Infinitesimalrechnung"

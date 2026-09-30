@@ -4,7 +4,7 @@ description: "Um olhar aprofundado sobre a vida, os episódios e as realizaçõe
 slug: "leibniz"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matemática", "Biografia"]
+categories: ["mathematics", "biography"]
 tags: ["Leibniz", "Cálculo", "Binário", "Filosofia", "História da Matemática"]
 ---
 

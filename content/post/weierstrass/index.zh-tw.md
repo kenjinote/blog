@@ -4,7 +4,7 @@ description: "深入解析被稱為「現代分析之父」的數學家卡爾·�
 slug: "weierstrass"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學", "傳記"]
+categories: ["mathematics", "biography"]
 tags: ["數學", "魏爾斯特拉斯", "分析學", "歷史"]
 ---
 

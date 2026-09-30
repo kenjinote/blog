@@ -2,7 +2,7 @@
 title: "동적 계획법(DP)과 벨만 방정식"
 slug: dynamic-programming-bellman-equation
 description: "문제를 작게 분할하여 기억하는 알고리즘의 정수."
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "algorithm", "dynamic-programming", "math", "computer-science"]
 image: "eyecatch.jpg"
 date: "2026-09-27T14:05:08+09:00"

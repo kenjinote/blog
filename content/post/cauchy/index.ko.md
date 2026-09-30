@@ -5,9 +5,7 @@ description: "프랑스의 위대한 수학자 오귀스탱 루이 코시의 생
 slug: "cauchy"
 date: 2026-09-20T19:20:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "수학"
-  - "전기"
+categories: ["mathematics", "biography"]
 tags:
   - "코시"
   - "해석학"

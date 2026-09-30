@@ -4,7 +4,7 @@ description: "Penjelasan terperinci tentang nilai eigen dan vektor eigen, salah 
 slug: "eigenvalues-and-eigenvectors"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matematika"]
+categories: ["mathematics"]
 tags: ["aljabar-linier", "nilai-eigen", "vektor-eigen", "matematika", "pembelajaran-mesin", "python", "sains-data"]
 ---
 

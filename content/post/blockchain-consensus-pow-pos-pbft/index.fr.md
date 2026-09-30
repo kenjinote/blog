@@ -3,7 +3,7 @@ title: "Blockchain et Algorithmes de Consensus"
 description: "PoW, PoS et résolution du problème des généraux byzantins (PBFT)."
 date: 2026-09-27T23:49:42+09:00
 slug: blockchain-consensus-pow-pos-pbft
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "blockchain", "algorithm", "distributed-systems", "crypto"]
 image: eyecatch.jpg
 ---

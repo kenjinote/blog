@@ -4,7 +4,7 @@ description: '타니야마-시무라 추측으로 알려진 세계적인 수학�
 slug: "shimura-goro"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["시무라 고로", "정수론", "타니야마-시무라 추측", "페르마의 마지막 정리"]
 ---
 

@@ -5,7 +5,7 @@ description: "Объяснение Закона больших чисел — в
 slug: "law-of-large-numbers"
 date: 2026-09-14
 image: "eyecatch.jpg"
-categories: ["математика", "наука-о-данных", "азартные-игры"]
+categories: ["mathematics", "data-science", "gambling"]
 tags:
   - "Закон больших чисел"
   - "Вероятность"

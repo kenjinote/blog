@@ -5,7 +5,7 @@ description: "Penjelasan tentang Hukum Bilangan Besar, teorema penting dalam teo
 slug: "law-of-large-numbers"
 date: 2026-09-14
 image: "eyecatch.jpg"
-categories: ["matematika", "ilmu-data", "perjudian"]
+categories: ["mathematics", "data-science", "gambling"]
 tags:
   - "Hukum Bilangan Besar"
   - "Probabilitas"

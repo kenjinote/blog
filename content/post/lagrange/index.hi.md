@@ -4,9 +4,7 @@ description: "18वीं सदी के गणितज्ञ और भौ�
 slug: "lagrange"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "गणित"
-  - "जीवनी"
+categories: ["mathematics", "biography"]
 tags:
   - "लैग्रेंज"
   - "विविधताओं की गणना"

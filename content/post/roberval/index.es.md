@@ -4,9 +4,7 @@ description: "Gilles Personne de Roberval fue uno de los principales matemático
 slug: "roberval"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "matemáticas"
-  - "biografía"
+categories: ["mathematics", "biography"]
 tags:
   - "Roberval"
   - "Historia de las matemáticas"

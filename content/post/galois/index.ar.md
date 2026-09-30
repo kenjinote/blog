@@ -4,7 +4,7 @@ description: "عالم الرياضيات العبقري إيفاريست جال
 slug: "galois"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["الرياضيات", "سيرة شخصية"]
+categories: ["mathematics", "biography"]
 tags: ["نظرية جالوا", "الجبر", "نظرية الزمر", "تاريخ"]
 ---
 

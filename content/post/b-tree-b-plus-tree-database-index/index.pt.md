@@ -2,9 +2,7 @@
 title: "Árvore B e Árvore B+: Por que os índices de banco de dados são tão rápidos?"
 description: "Por trás da estrutura de árvore que minimiza a E/S de disco."
 slug: b-tree-b-plus-tree-database-index
-categories:
-  - computer-science
-  - algorithm
+categories: ["computer-science", "algorithms"]
 tags:
   - tech
   - database

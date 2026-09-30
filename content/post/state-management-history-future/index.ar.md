@@ -5,9 +5,7 @@ description: "الدليل الشامل المكون من حوالي 20,000 حر
 slug: state-management-history-future
 date: 2026-09-21T12:00:00+09:00
 image: eyecatch.jpg
-categories:
-  - واجهة أمامية
-  - هندسة معمارية
+categories: ["frontend", "architecture"]
 tags:
   - إدارة-الحالة
   - react

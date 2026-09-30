@@ -5,7 +5,7 @@ description: 'Исчерпывающее руководство по проце�
 slug: 'gram-schmidt-process'
 date: '2026-09-20T14:40:00+09:00'
 image: "eyecatch.jpg"
-categories: ["Математика"]
+categories: ["mathematics"]
 tags: ["Линейная алгебра", "Алгоритмы", "Машинное обучение", "QR-разложение", "Python", "Численные методы", "Математика"]
 ---
 

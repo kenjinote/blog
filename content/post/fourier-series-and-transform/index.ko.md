@@ -4,8 +4,7 @@ description: "복잡한 파형을 단순한 사인파와 코사인파의 중첩�
 slug: "fourier-series-and-transform"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
+categories: ["mathematics"]
 tags:
   - "푸리에"
   - "수학"

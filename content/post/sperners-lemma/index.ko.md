@@ -4,7 +4,7 @@ description: "경계 규칙에 따라 꼭짓점을 칠할 때 3색의 작은 삼
 slug: "sperners-lemma"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학"]
+categories: ["mathematics"]
 tags: ["위상수학", "조합론", "고정점-정리"]
 ---
 

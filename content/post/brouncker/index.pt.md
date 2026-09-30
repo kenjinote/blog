@@ -4,7 +4,7 @@ description: "Uma explicação detalhada da vida do matemático britânico Willi
 slug: "brouncker"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matemática", "Biografia"]
+categories: ["mathematics", "biography"]
 tags: ["William Brouncker", "Pi", "Fração Contínua", "Equação de Pell", "Royal Society"]
 ---
 

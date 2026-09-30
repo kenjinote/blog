@@ -5,8 +5,7 @@ description: "Penjelasan mendetail mulai dari dasar teori informasi yang diusulk
 slug: information-theory-shannon-entropy
 date: 2026-09-21T02:45:54+09:00
 image: eyecatch.jpg
-categories:
-  - ilmu-komputer
+categories: ["computer-science"]
 tags:
   - teori-informasi
   - entropi

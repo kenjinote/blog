@@ -5,9 +5,7 @@ description: 'आधुनिक जापानी गणित के पि�
 slug: 'takagi-teiji'
 date: '2026-09-20T19:50:00+09:00'
 image: "eyecatch.jpg"
-categories:
-  - 'गणित'
-  - 'जीवनी'
+categories: ["mathematics", "biography"]
 tags:
   - 'तेजी ताकागी'
   - 'क्लास फील्ड थ्योरी'

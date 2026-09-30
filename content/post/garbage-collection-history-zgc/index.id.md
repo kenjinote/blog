@@ -3,7 +3,7 @@ title: "Sejarah Evolusi Pengumpulan Sampah (GC)"
 description: "Perjalanan dari Mark & Sweep ke ZGC/Shenandoah modern. Penjelasan menyeluruh dari penderitaan manajemen memori manual hingga teknologi terbaru yang mewujudkan waktu henti dalam skala milidetik."
 date: 2026-09-27T14:20:15+09:00
 slug: garbage-collection-history-zgc
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "garbage-collection", "memory-management", "java", "performance"]
 image: eyecatch.jpg
 ---

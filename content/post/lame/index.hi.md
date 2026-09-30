@@ -4,7 +4,7 @@ description: "फ्रांसीसी गणितज्ञ गेब्र�
 slug: "lame"
 date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["गेब्रियल लामे", "गणित का इतिहास", "संख्या सिद्धांत", "लोच", "ज्यामिति"]
 ---
 

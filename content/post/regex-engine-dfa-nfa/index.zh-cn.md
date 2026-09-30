@@ -3,7 +3,7 @@ title: "正则表达式引擎与有限自动机"
 description: "DFA与NFA，为什么部分正则表达式会发生灾难性的“慢”。"
 date: 2026-09-27T14:05:08+09:00
 slug: regex-engine-dfa-nfa
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "algorithm", "regex", "automata", "computer-science"]
 image: eyecatch.jpg
 ---

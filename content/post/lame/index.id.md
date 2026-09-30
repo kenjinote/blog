@@ -4,7 +4,7 @@ description: "Penyelaman mendalam ke dalam kehidupan matematikawan Prancis Gabri
 slug: "lame"
 date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matematika", "Biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Gabriel Lamé", "Sejarah Matematika", "Teori Bilangan", "Elastisitas", "Geometri"]
 ---
 

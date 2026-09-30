@@ -4,7 +4,7 @@ description: "Der geniale Mathematiker Évariste Galois, der mit 20 Jahren in ei
 slug: "galois"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematik", "Biografie"]
+categories: ["mathematics", "biography"]
 tags: ["Galois-Theorie", "Algebra", "Gruppentheorie", "Geschichte"]
 ---
 

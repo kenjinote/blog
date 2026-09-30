@@ -5,7 +5,7 @@ description: "Penjelasan mendetail tentang kehidupan, episode menakjubkan, dan k
 slug: "gauss"
 date: 2026-09-20T19:10:00+09:00
 image: "eyecatch.jpg"
-categories: ["matematika", "biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Gauss", "Sejarah Matematika", "Jenius", "Geometri", "Teori Bilangan"]
 ---
 

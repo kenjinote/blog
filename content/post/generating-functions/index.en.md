@@ -4,8 +4,7 @@ description: "Introducing how to count coin combinations and arrangements as coe
 slug: "generating-functions"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathematics"
+categories: ["mathematics"]
 tags:
   - "Generating Functions"
   - "Combinatorics"

@@ -5,9 +5,7 @@ description: "Что такое пределы вычислений? Мы глу
 slug: turing-machine-computability
 date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
-categories:
-  - компьютерные-науки
-  - математика
+categories: ["computer-science", "mathematics"]
 tags:
   - машина-тьюринга
   - теория-вычислимости

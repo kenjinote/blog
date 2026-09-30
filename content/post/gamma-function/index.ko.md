@@ -5,7 +5,7 @@ description: "이산적인 팩토리얼을 매끄러운 곡선으로 연결하�
 slug: "gamma-function"
 date: 2026-09-20T14:40:00+09:00
 image: "eyecatch.jpg"
-categories: ["수학"]
+categories: ["mathematics"]
 tags: ["감마 함수", "오일러", "복소 해석학", "미적분학"]
 ---
 

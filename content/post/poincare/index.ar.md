@@ -4,7 +4,7 @@ description: "استكشاف مفصل للغاية لحياة عالم الري�
 slug: "poincare"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["رياضيات", "سيرة ذاتية"]
+categories: ["mathematics", "biography"]
 tags: ["بوانكاريه", "طوبولوجيا", "نظرية الفوضى", "تاريخ الرياضيات", "فيزياء"]
 ---
 

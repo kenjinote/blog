@@ -4,8 +4,7 @@ description: "Explicación de cómo eliminar patrones duplicados causados por ro
 slug: "burnsides-lemma"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "matemáticas"
+categories: ["mathematics"]
 tags:
   - "Teoría de Grupos"
   - "Combinatoria"

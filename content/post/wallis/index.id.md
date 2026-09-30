@@ -4,9 +4,7 @@ description: "John Wallis, seorang matematikawan Inggris terkemuka abad ke-17. K
 slug: "wallis"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "matematika"
-  - "biografi"
+categories: ["mathematics", "biography"]
 tags:
   - "John Wallis"
   - "Kalkulus"

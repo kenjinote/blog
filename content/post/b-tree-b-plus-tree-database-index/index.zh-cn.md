@@ -2,9 +2,7 @@
 title: "B树与B+树：为什么数据库索引如此之快"
 description: "最小化磁盘 I/O 的树形结构背后的原理。"
 slug: b-tree-b-plus-tree-database-index
-categories:
-  - computer-science
-  - algorithm
+categories: ["computer-science", "algorithms"]
 tags:
   - tech
   - database

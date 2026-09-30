@@ -5,9 +5,7 @@ description: "يشتهر رينيه ديكارت بمقولة 'أنا أفكر،
 slug: "descartes"
 date: 2026-09-20T18:50:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "رياضيات"
-  - "سيرة شخصية"
+categories: ["mathematics", "biography"]
 tags:
   - "ديكارت"
   - "هندسة تحليلية"

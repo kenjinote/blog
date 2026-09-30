@@ -5,8 +5,7 @@ description: "Una explicación detallada del teorema de Cayley-Hamilton, uno de 
 slug: "cayley-hamilton-theorem"
 date: 2026-09-20T14:50:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "matemáticas"
+categories: ["mathematics"]
 tags:
   - "álgebra lineal"
   - "matriz"

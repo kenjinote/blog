@@ -5,9 +5,7 @@ description: "분산 시스템의 근간을 이루는 합의 알고리즘에 대
 slug: byzantine-generals-problem-consensus
 date: 2026-09-21T02:45:54+09:00
 image: eyecatch.jpg
-categories:
-  - 분산 시스템
-  - 컴퓨터 과학
+categories: ["distributed-systems", "computer-science"]
 tags:
   - 합의
   - paxos

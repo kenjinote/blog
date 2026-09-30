@@ -2,7 +2,7 @@
 slug: "mapreduce-distributed-processing-paradigm"
 title: "MapReduce의 철학: Google이 세상을 바꾼 분산 처리"
 description: "빅데이터 처리의 원점과 Hadoop으로의 계보."
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "distributed-systems", "big-data", "mapreduce", "google"]
 date: 2026-09-27T14:20:15+09:00
 image: "eyecatch.jpg"

@@ -5,8 +5,7 @@ description: "计算的基础理论Lambda演算，是如何发展成现代的函
 slug: lambda-calculus-functional-programming
 date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
-categories:
-  - 计算机科学
+categories: ["computer-science"]
 tags:
   - lambda演算
   - 函数式编程

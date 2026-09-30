@@ -4,7 +4,7 @@ description: "Leonhard Euler, salah satu matematikawan terhebat dalam sejarah. P
 slug: "euler"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matematika", "biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Euler", "Sejarah Matematika", "Jenius", "Fisika"]
 ---
 

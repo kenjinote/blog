@@ -4,7 +4,7 @@ description: "نظرة عميقة في حياة عالم الرياضيات ال
 slug: "lame"
 date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["رياضيات", "سيرة ذاتية"]
+categories: ["mathematics", "biography"]
 tags: ["غابرييل لامي", "تاريخ الرياضيات", "نظرية الأعداد", "المرونة", "هندسة"]
 ---
 

@@ -5,7 +5,7 @@ description: "Kiyosi Oka, ein Mathematiker, auf den Japan stolz ist. Wir vertief
 slug: "oka-kiyoshi"
 date: 2026-09-20T20:20:00+09:00
 image: "eyecatch.jpg"
-categories: ["Mathematik", "Biografie"]
+categories: ["mathematics", "biography"]
 tags: ["Kiyosi Oka", "Funktionentheorie", "Geschichte der Mathematik"]
 ---
 

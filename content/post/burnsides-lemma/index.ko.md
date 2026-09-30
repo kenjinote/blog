@@ -4,8 +4,7 @@ description: "목걸이 색칠하기를 예로 들어 회전으로 인해 겹치
 slug: "burnsides-lemma"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "수학"
+categories: ["mathematics"]
 tags:
   - "군론"
   - "조합론"

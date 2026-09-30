@@ -4,8 +4,7 @@ description: "베이즈 정리가 새로운 증거를 기반으로 확률을 업
 slug: "bayes-theorem"
 date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
+categories: ["mathematics"]
 tags:
   - "베이즈 정리"
   - "머신러닝"

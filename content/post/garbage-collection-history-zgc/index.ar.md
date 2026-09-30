@@ -3,7 +3,7 @@ title: "تاريخ تطور جمع القمامة (GC)"
 description: "من العلامة والمسح إلى ZGC/Shenandoah الحديثة. شرح مفصل من معاناة إدارة الذاكرة اليدوية إلى أحدث التقنيات التي تحقق أوقات توقف بالمللي ثانية."
 date: 2026-09-27T14:20:15+09:00
 slug: garbage-collection-history-zgc
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "garbage-collection", "memory-management", "java", "performance"]
 image: eyecatch.jpg
 ---

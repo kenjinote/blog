@@ -5,9 +5,7 @@ description: "고대 그리스의 수학자 디오판토스의 생애, 그의 �
 slug: "diophantus"
 date: 2026-09-20T18:40:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "수학"
-  - "전기"
+categories: ["mathematics", "biography"]
 tags:
   - "디오판토스"
   - "대수학"

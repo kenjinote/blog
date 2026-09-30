@@ -4,7 +4,7 @@ description: "Penjelasan mendalam tentang kehidupan matematikawan besar Jerman E
 slug: "kummer"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matematika", "biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Ernst Kummer", "Teorema Terakhir Fermat", "Bilangan Ideal", "Teori Bilangan Aljabar", "Bilangan Prima Reguler"]
 ---
 

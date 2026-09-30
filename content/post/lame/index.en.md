@@ -4,7 +4,7 @@ description: "A deep dive into the life of French mathematician Gabriel Lamé, e
 slug: "lame"
 date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematics", "Biography"]
+categories: ["mathematics", "biography"]
 tags: ["Gabriel Lamé", "History of Mathematics", "Number Theory", "Elasticity", "Geometry"]
 ---
 

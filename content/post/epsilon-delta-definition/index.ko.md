@@ -4,8 +4,7 @@ description: "미적분학의 기초가 되는 ε-δ 논법에 대해 역사적 
 slug: "epsilon-delta-definition"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "수학"
+categories: ["mathematics"]
 tags: 
   - "미적분학"
   - "극한"

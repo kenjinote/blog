@@ -4,8 +4,7 @@ description: "여러 집합이 겹칠 때 중복 없이 원소의 개수를 정�
 slug: "inclusion-exclusion-principle"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
+categories: ["mathematics"]
 tags:
   - "수학"
   - "조합론"

@@ -5,9 +5,7 @@ description: 'Une plongée approfondie dans la vie de Teiji Takagi, le père des
 slug: 'takagi-teiji'
 date: '2026-09-20T19:50:00+09:00'
 image: "eyecatch.jpg"
-categories:
-  - 'mathématiques'
-  - 'biographie'
+categories: ["mathematics", "biography"]
 tags:
   - 'Teiji Takagi'
   - 'Théorie du corps de classes'

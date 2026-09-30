@@ -4,7 +4,7 @@ description: "Un examen approfondi de la vie et des réalisations mathématiques
 slug: "baker"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathématiques", "biographie"]
+categories: ["mathematics", "biography"]
 tags: ["Alan Baker", "Théorie des nombres", "Médaille Fields", "Théorie des nombres transcendants"]
 ---
 

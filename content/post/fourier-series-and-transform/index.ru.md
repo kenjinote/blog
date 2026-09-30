@@ -4,8 +4,7 @@ description: "Подробное объяснение 'Ряда Фурье', к�
 slug: "fourier-series-and-transform"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "математика"
+categories: ["mathematics"]
 tags:
   - "Фурье"
   - "Математика"

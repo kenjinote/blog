@@ -5,9 +5,7 @@ description: "「コンウェイのライフゲーム」は、わずか4つの�
 slug: "conways-game-of-life"
 date: 2026-09-15T10:00:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "mathematics"
-  - "計算機科学"
+categories: ["mathematics", "computer-science"]
 tags:
   - "ライフゲーム"
   - "セルオートマトン"

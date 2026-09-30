@@ -3,7 +3,7 @@ title: "Основы квантовых вычислений: квантовая
 description: "Почему квантовые компьютеры могут взломать шифрование RSA. Подробный разбор от отличий классических битов от кубитов до квантовых вентилей, квантовой запутанности, математических основ алгоритма Шора и проблем устройств NISQ."
 date: 2026-09-28T00:16:09+09:00
 slug: quantum-computing-qubit-shor-algorithm
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "quantum-computing", "physics", "algorithm", "cryptography"]
 image: eyecatch.jpg
 ---

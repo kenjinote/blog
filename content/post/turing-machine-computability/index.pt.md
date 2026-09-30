@@ -5,9 +5,7 @@ description: "Quais são os limites da computação? Exploramos a fundo, a parti
 slug: turing-machine-computability
 date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
-categories:
-  - ciencia-da-computacao
-  - matematica
+categories: ["computer-science", "mathematics"]
 tags:
   - maquina-de-turing
   - teoria-da-computacao

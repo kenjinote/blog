@@ -4,8 +4,7 @@ description: "क्रमचय, संचय, द्विपद प्रम�
 slug: "permutations-combinations-and-binomial-theorem"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "गणित"
+categories: ["mathematics"]
 tags:
   - "क्रमचय-संचय"
   - "द्विपद प्रमेय"

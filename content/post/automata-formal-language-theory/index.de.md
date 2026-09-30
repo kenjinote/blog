@@ -5,8 +5,7 @@ description: "Ein tiefer Einblick in 'Automaten' und 'formale Sprachtheorie' hin
 slug: automata-formal-language-theory
 date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
-categories:
-  - informatik
+categories: ["computer-science"]
 tags:
   - automaten
   - formale-sprachen

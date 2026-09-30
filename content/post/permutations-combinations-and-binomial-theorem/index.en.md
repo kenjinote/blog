@@ -4,8 +4,7 @@ description: "A detailed explanation of the mathematical structure woven by perm
 slug: "permutations-combinations-and-binomial-theorem"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathematics"
+categories: ["mathematics"]
 tags:
   - "Combinatorics"
   - "Binomial Theorem"

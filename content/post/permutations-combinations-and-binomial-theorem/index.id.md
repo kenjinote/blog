@@ -4,8 +4,7 @@ description: "Penjelasan rinci tentang struktur matematika yang dijalin oleh per
 slug: "permutations-combinations-and-binomial-theorem"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matematika"
+categories: ["mathematics"]
 tags:
   - "Kombinatorika"
   - "Teorema Binomial"

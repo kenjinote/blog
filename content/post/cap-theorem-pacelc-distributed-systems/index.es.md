@@ -2,9 +2,7 @@
 title: "Teorema CAP y Teorema PACELC: El dilema de las bases de datos distribuidas"
 description: "¿Consistencia, disponibilidad o latencia?"
 date: 2026-09-27T14:05:08+09:00
-categories:
-  - computer-science
-  - algorithm
+categories: ["computer-science", "algorithms"]
 tags:
   - tech
   - distributed-systems

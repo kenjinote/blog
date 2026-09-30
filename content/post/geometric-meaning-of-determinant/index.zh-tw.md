@@ -4,8 +4,7 @@ description: "行列式不僅是一個計算公式，更是表示線性變換下
 slug: "geometric-meaning-of-determinant"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "數學"
+categories: ["mathematics"]
 tags: 
   - "線性代數"
   - "行列式"

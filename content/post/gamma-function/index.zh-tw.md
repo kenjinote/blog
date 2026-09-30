@@ -5,7 +5,7 @@ description: "將離散的階乘與平滑曲線相連接的「伽瑪函數」。
 slug: "gamma-function"
 date: 2026-09-20T14:40:00+09:00
 image: "eyecatch.jpg"
-categories: ["數學"]
+categories: ["mathematics"]
 tags: ["伽瑪函數", "歐拉", "複分析", "微積分"]
 ---
 

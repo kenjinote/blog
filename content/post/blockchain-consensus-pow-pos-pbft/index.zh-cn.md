@@ -3,7 +3,7 @@ title: "区块链与共识算法"
 description: "PoW、PoS，以及拜占庭将军问题（PBFT）的解决。"
 date: 2026-09-27T23:49:42+09:00
 slug: blockchain-consensus-pow-pos-pbft
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "blockchain", "algorithm", "distributed-systems", "crypto"]
 image: eyecatch.jpg
 ---

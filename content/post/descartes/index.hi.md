@@ -5,9 +5,7 @@ description: "रेने डेसकार्टेस 'मैं सोच�
 slug: "descartes"
 date: 2026-09-20T18:50:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "गणित"
-  - "जीवनी"
+categories: ["mathematics", "biography"]
 tags:
   - "डेसकार्टेस"
   - "विश्लेषणात्मक ज्यामिति"

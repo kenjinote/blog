@@ -3,7 +3,7 @@ title: "Le coût du changement de contexte et du traitement asynchrone (async/aw
 description: "La gestion des processus/threads par l'OS et la raison d'être de la boucle d'événements."
 date: 2026-09-27T14:20:15+09:00
 slug: context-switch-async-await-os
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "os", "async", "concurrency", "performance"]
 image: eyecatch.jpg
 ---

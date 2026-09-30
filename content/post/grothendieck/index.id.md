@@ -5,7 +5,7 @@ description: "Penjelasan terperinci tentang kehidupan luar biasa dan pencapaian 
 slug: "grothendieck"
 date: 2026-09-20T20:30:00+09:00
 image: "eyecatch.jpg"
-categories: ["Matematika", "Biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Grothendieck", "Geometri Aljabar", "Teori Skema", "Teori Kategori"]
 ---
 

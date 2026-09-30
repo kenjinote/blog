@@ -4,8 +4,7 @@ description: "Una explicación de los números de Catalan, una secuencia fascina
 slug: "catalan-numbers"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "matemáticas"
+categories: ["mathematics"]
 tags:
   - "números-de-catalan"
   - "combinatoria"

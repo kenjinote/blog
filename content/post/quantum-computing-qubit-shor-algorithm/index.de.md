@@ -3,7 +3,7 @@ title: "Grundlagen des Quantencomputings: Quantenüberlagerung und der Shor-Algo
 description: "Warum Quantencomputer die RSA-Verschlüsselung knacken können. Eine umfassende Erklärung von den Unterschieden zwischen klassischen Bits und Qubits über Quantengatter und Quantenverschränkung bis hin zu den mathematischen Grundlagen von Shors Algorithmus und den Herausforderungen von NISQ-Geräten."
 date: 2026-09-28T00:16:09+09:00
 slug: quantum-computing-qubit-shor-algorithm
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "quantum-computing", "physics", "algorithm", "cryptography"]
 image: eyecatch.jpg
 ---

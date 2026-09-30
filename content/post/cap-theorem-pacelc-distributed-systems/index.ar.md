@@ -2,9 +2,7 @@
 title: "نظرية CAP ونظرية PACELC: المعضلة التي تواجهها قواعد البيانات الموزعة"
 description: "الاتساق، أم التوافر، أم وقت الاستجابة."
 date: 2026-09-27T14:05:08+09:00
-categories:
-  - computer-science
-  - algorithm
+categories: ["computer-science", "algorithms"]
 tags:
   - tech
   - distributed-systems

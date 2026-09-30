@@ -3,7 +3,7 @@ title: "ब्लॉकचेन और कंसेंसस एल्गोर
 description: "PoW, PoS, और बीजान्टिन जनरल्स प्रॉब्लम (PBFT) का समाधान।"
 date: 2026-09-27T23:49:42+09:00
 slug: blockchain-consensus-pow-pos-pbft
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "blockchain", "algorithm", "distributed-systems", "crypto"]
 image: eyecatch.jpg
 ---

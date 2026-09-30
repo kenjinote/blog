@@ -4,7 +4,7 @@ description: "Melihat lebih dalam kehidupan matematikawan Jerman Kurt Hensel, pe
 slug: "hensel"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matematika", "biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Kurt Hensel", "bilangan p-adik", "teori bilangan aljabar", "sejarah matematika"]
 ---
 

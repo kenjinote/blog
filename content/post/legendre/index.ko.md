@@ -4,7 +4,7 @@ description: "위대한 프랑스 수학자 아드리앵마리 르장드르의 �
 slug: "legendre"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["르장드르", "정수론", "기하학", "수학사"]
 ---
 

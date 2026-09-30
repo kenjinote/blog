@@ -4,8 +4,7 @@ description: "Une explication des nombres de Catalan, une séquence fascinante q
 slug: "catalan-numbers"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "mathématiques"
+categories: ["mathematics"]
 tags:
   - "nombres-de-catalan"
   - "combinatoire"

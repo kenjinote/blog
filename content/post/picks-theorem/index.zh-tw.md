@@ -4,8 +4,7 @@ description: "結合圖解和證明，詳細講解如何透過內部和邊界上
 slug: "picks-theorem"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "數學"
+categories: ["mathematics"]
 tags:
   - "幾何"
   - "皮克定理"

@@ -4,7 +4,7 @@ description: "Profundice en la vida del matemático japonés ganador de la Medal
 slug: "hironaka-heisuke"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matemáticas", "Biografía"]
+categories: ["mathematics", "biography"]
 tags: ["Heisuke Hironaka", "Geometría Algebraica", "Resolución de Singularidades", "Medalla Fields", "Matemático Japonés", "Creatividad"]
 ---
 

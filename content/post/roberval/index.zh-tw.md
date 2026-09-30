@@ -4,9 +4,7 @@ description: "吉爾·佩爾索納·德·羅貝瓦爾是17世紀法國頂尖的�
 slug: "roberval"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "數學"
-  - "傳記"
+categories: ["mathematics", "biography"]
 tags:
   - "Roberval"
   - "數學史"

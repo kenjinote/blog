@@ -4,9 +4,7 @@ description: 'Uma visão geral da vida, dos conflitos com Cantor e das profundas
 slug: "kronecker"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matemática"
-  - "Biografia"
+categories: ["mathematics", "biography"]
 tags:
   - "Kronecker"
   - "Álgebra"

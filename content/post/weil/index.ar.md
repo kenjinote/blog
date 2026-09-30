@@ -4,7 +4,7 @@ description: "استكشاف متعمق لحياة أندريه فايل الد�
 slug: "weil"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["رياضيات", "سيرة ذاتية"]
+categories: ["mathematics", "biography"]
 tags: ["أندريه فايل", "بورباكي", "هندسة جبرية", "نظرية الأعداد"]
 ---
 

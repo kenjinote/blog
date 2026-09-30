@@ -2,7 +2,7 @@
 title: "البرمجة الديناميكية (DP) ومعادلة بيلمان"
 slug: dynamic-programming-bellman-equation
 description: "جوهر الخوارزمية التي تقسم المشاكل إلى أجزاء صغيرة وتتذكرها."
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "algorithm", "dynamic-programming", "math", "computer-science"]
 image: "eyecatch.jpg"
 date: "2026-09-27T14:05:08+09:00"

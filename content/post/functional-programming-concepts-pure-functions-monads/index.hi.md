@@ -5,8 +5,7 @@ description: कार्यात्मक प्रोग्रामिंग
 slug: functional-programming-concepts-pure-functions-monads
 date: 2026-09-21T14:51:08+09:00
 image: eyecatch.jpg
-categories:
-  - कंप्यूटर-विज्ञान
+categories: ["computer-science"]
 tags:
   - कार्यात्मक-प्रोग्रामिंग
   - मोनैड्स

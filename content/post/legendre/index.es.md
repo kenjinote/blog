@@ -4,7 +4,7 @@ description: "Un relato detallado de la vida del gran matemático francés Adrie
 slug: "legendre"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matemáticas", "biografía"]
+categories: ["mathematics", "biography"]
 tags: ["Legendre", "Teoría de números", "Geometría", "Historia de las matemáticas"]
 ---
 

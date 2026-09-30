@@ -4,8 +4,7 @@ description: "A detailed explanation of probability models for state transitions
 slug: "markov-chain"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathematics"
+categories: ["mathematics"]
 tags:
   - "Probability"
   - "Markov Chain"

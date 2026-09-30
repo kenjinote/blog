@@ -1,3 +1,8 @@
 ---
-title: "Biografia"
+{
+  "title": "Biografia",
+  "aliases": [
+    "/pt/categories/biografia/"
+  ]
+}
 ---

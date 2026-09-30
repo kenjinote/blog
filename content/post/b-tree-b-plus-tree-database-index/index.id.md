@@ -2,9 +2,7 @@
 title: "B-Tree dan B+Tree: Mengapa Indeks Basis Data Begitu Cepat"
 description: "Di balik layar struktur pohon yang meminimalkan I/O disk."
 slug: b-tree-b-plus-tree-database-index
-categories:
-  - computer-science
-  - algorithm
+categories: ["computer-science", "algorithms"]
 tags:
   - tech
   - database

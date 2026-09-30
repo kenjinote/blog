@@ -4,8 +4,7 @@ description: "Ein detaillierter Leitfaden zur Pellschen Gleichung, ihrer Lösung
 slug: "pell-equation"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "mathematik"
+categories: ["mathematics"]
 tags:
   - "pellsche-gleichung"
   - "diophantische-gleichung"

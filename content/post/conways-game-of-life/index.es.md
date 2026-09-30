@@ -5,9 +5,7 @@ description: "El \"Juego de la vida de Conway\" es un increíble autómata celul
 slug: "conways-game-of-life"
 date: 2026-09-15T10:00:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Matemáticas"
-  - "Informática"
+categories: ["mathematics", "computer-science"]
 tags:
   - "Juego de la vida de Conway"
   - "Autómatas celulares"

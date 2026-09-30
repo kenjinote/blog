@@ -4,7 +4,7 @@ description: "Подробный рассказ о жизни великого �
 slug: "legendre"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["математика", "биография"]
+categories: ["mathematics", "biography"]
 tags: ["Лежандр", "Теория чисел", "Геометрия", "История математики"]
 ---
 

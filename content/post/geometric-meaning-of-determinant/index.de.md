@@ -4,8 +4,7 @@ description: "Die Determinante ist nicht nur eine Berechnungsformel, sondern ein
 slug: "geometric-meaning-of-determinant"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "Mathematik"
+categories: ["mathematics"]
 tags: 
   - "Lineare Algebra"
   - "Determinante"

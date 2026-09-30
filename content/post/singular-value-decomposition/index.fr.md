@@ -4,7 +4,7 @@ description: "Un guide complet sur les fondements mathématiques, l'intuition g�
 slug: "singular-value-decomposition"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathématiques"]
+categories: ["mathematics"]
 tags: ["SVD", "Algèbre Linéaire", "Machine Learning", "Compression de Données", "IA", "Python"]
 ---
 

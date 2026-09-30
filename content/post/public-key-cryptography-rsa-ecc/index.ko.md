@@ -3,7 +3,7 @@ title: "공개키 암호의 수학: RSA에서 타원곡선암호(ECC)로"
 description: "소인수분해의 어려움에서 이산로그 문제로의 전환."
 date: 2026-09-27T23:50:00+09:00
 slug: public-key-cryptography-rsa-ecc
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "cryptography", "security", "math", "algorithm"]
 image: eyecatch.jpg
 ---

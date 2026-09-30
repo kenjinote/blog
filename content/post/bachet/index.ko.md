@@ -4,7 +4,7 @@ description: "디오판토스의 '산술' 번역과 바셰 방정식으로 잘 �
 slug: "bachet"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["바셰", "정수론", "수학사", "유희 수학", "디오판토스"]
 ---
 

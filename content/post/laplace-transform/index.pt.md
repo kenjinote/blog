@@ -4,8 +4,7 @@ description: "Uma explicação detalhada desde o básico da transformada de Lapl
 slug: "laplace-transform"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "matemática"
+categories: ["mathematics"]
 tags:
   - "Transformada de Laplace"
   - "Equações diferenciais"

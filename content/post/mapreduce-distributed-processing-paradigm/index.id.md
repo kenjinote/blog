@@ -2,7 +2,7 @@
 slug: "mapreduce-distributed-processing-paradigm"
 title: "Filosofi MapReduce: Pemrosesan Terdistribusi Google yang Mengubah Dunia"
 description: "Asal-usul pemrosesan big data dan silsilahnya hingga Hadoop."
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "distributed-systems", "big-data", "mapreduce", "google"]
 date: 2026-09-27T14:20:15+09:00
 image: "eyecatch.jpg"

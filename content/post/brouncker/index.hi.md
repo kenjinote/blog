@@ -4,7 +4,7 @@ description: "ब्रिटिश गणितज्ञ विलियम ब
 slug: "brouncker"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["विलियम ब्रौनकर", "पाई", "निरंतर भिन्न", "पेल का समीकरण", "रॉयल सोसाइटी"]
 ---
 

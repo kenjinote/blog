@@ -5,8 +5,7 @@ description: "계산의 기초 이론인 람다 대수가 어떻게 현대의 �
 slug: lambda-calculus-functional-programming
 date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
-categories:
-  - 컴퓨터 과학
+categories: ["computer-science"]
 tags:
   - 람다 대수
   - 함수형 프로그래밍

@@ -4,7 +4,7 @@ description: "Penjelasan terperinci tentang kehidupan Kurt Gödel, ahli logika t
 slug: "godel"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matematika", "biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Kurt Gödel", "Teorema Ketidaklengkapan", "Matematika", "Logika", "Sejarah"]
 ---
 

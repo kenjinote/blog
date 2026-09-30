@@ -2,7 +2,7 @@
 title: "Технологии оптимизации компилятора: Что такое SSA (Static Single Assignment)"
 description: "Как компилятор магически преобразует код, написанный человеком."
 slug: compiler-optimization-ssa
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "compiler", "optimization", "ssa", "computer-science"]
 image: eyecatch.jpg
 date: 2026-09-27T14:20:15+09:00

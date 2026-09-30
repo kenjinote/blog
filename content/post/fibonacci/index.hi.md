@@ -4,7 +4,7 @@ description: 'फाइबोनैचि के जीवन में गह�
 slug: "fibonacci"
 date: "2026-09-20T18:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["फाइबोनैचि", "गणित", "इतिहास", "स्वर्ण अनुपात", "लिबर अबासी"]
 ---
 

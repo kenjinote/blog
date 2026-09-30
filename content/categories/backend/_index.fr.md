@@ -1,5 +1,8 @@
 ---
 {
-  "title": "Backend"
+  "title": "Backend",
+  "aliases": [
+    "/fr/categories/back-end/"
+  ]
 }
 ---

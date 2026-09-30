@@ -5,7 +5,7 @@ description: "प्रायिकता सिद्धांत में ए
 slug: "law-of-large-numbers"
 date: 2026-09-14
 image: "eyecatch.jpg"
-categories: ["गणित", "डेटा-विज्ञान", "जुआ"]
+categories: ["mathematics", "data-science", "gambling"]
 tags:
   - "बड़ी संख्याओं का नियम"
   - "प्रायिकता"

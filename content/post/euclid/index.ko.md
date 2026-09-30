@@ -5,7 +5,7 @@ description: "고대 그리스의 수학자 유클리드의 생애와 그의 주
 slug: "euclid"
 date: 2026-09-20T18:40:00+09:00
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["유클리드", "기하학", "수학사", "고대 그리스", "원론", "유클리드 호제법"]
 ---
 

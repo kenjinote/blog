@@ -4,7 +4,7 @@ description: "17वीं सदी के सबसे महान विच�
 slug: "leibniz"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["लाइबनिज़", "कैलकुलस", "बाइनरी", "दर्शनशास्त्र", "गणित का इतिहास"]
 ---
 

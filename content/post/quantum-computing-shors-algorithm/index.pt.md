@@ -4,9 +4,7 @@ description: "Uma explicação profunda desde os fundamentos da computação qu�
 slug: "quantum-computing-shors-algorithm"
 date: "2026-09-21T02:35:46+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "tecnologia"
-  - "ciência"
+categories: ["technology", "science"]
 tags:
   - "computação-quântica"
   - "criptografia"

@@ -4,8 +4,7 @@ description: "Explicação sobre como eliminar padrões duplicados causados por 
 slug: "burnsides-lemma"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "matemática"
+categories: ["mathematics"]
 tags:
   - "Teoria dos Grupos"
   - "Combinatória"

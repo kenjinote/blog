@@ -4,9 +4,7 @@ description: "深入探究波恩哈德·黎曼波澜壮阔的一生及其数学�
 slug: "riemann"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "mathematics"
-  - "传记"
+categories: ["mathematics", "biography"]
 tags:
   - "黎曼"
   - "zeta函数"

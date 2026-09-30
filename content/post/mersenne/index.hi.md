@@ -4,9 +4,7 @@ description: "मारिन मर्सेन के जीवन, डेस�
 slug: "mersenne"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "गणित"
-  - "जीवनी"
+categories: ["mathematics", "biography"]
 tags:
   - "मर्सेन"
   - "अभाज्य संख्याएँ"

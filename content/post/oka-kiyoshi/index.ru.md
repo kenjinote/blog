@@ -5,7 +5,7 @@ description: "Киёси Ока, математик, которым Япония
 slug: "oka-kiyoshi"
 date: 2026-09-20T20:20:00+09:00
 image: "eyecatch.jpg"
-categories: ["математика", "биография"]
+categories: ["mathematics", "biography"]
 tags: ["Киёси Ока", "Комплексный анализ", "История математики"]
 ---
 

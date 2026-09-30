@@ -4,9 +4,7 @@ description: "كان جيل بيرسون دي روبرفال أحد أبرز ع�
 slug: "roberval"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "الرياضيات"
-  - "سيرة ذاتية"
+categories: ["mathematics", "biography"]
 tags:
   - "روبرفال"
   - "تاريخ الرياضيات"

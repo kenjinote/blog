@@ -4,8 +4,7 @@ description: "Um guia aprofundado sobre o Princípio da Inclusão-Exclusão, uma
 slug: "inclusion-exclusion-principle"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "matemática"
+categories: ["mathematics"]
 tags:
   - "matemática"
   - "combinatória"

@@ -4,7 +4,7 @@ description: "앙드레 베유의 극적인 생애, 부르바키의 창설, 그�
 slug: "weil"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["앙드레 베유", "부르바키", "대수기하학", "정수론"]
 ---
 

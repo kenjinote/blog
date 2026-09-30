@@ -4,8 +4,7 @@ description: "3차원 공간에서 세 물체의 부피를 동시에 이등분�
 slug: "ham-sandwich-theorem"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
+categories: ["mathematics"]
 tags:
   - "위상수학"
   - "기하학"

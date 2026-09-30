@@ -4,9 +4,7 @@ description: "필즈상 수상자인 게르트 팔팅스의 생애와 모델 추
 slug: "faltings"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
-  - "전기"
+categories: ["mathematics", "biography"]
 tags:
   - "게르트 팔팅스"
   - "정수론"

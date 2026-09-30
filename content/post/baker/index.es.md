@@ -4,7 +4,7 @@ description: "Un análisis exhaustivo de la vida y los logros matemáticos de Al
 slug: "baker"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matemáticas", "biografía"]
+categories: ["mathematics", "biography"]
 tags: ["Alan Baker", "Teoría de números", "Medalla Fields", "Teoría de números trascendentes"]
 ---
 

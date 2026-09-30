@@ -4,9 +4,7 @@ description: "17세기 프랑스를 대표하는 수학자 질 페르손 드 로
 slug: "roberval"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
-  - "전기"
+categories: ["mathematics", "biography"]
 tags:
   - "Roberval"
   - "수학사"

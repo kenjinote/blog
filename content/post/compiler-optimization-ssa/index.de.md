@@ -2,7 +2,7 @@
 title: "Compiler-Optimierungstechniken: Was ist SSA (Static Single Assignment)?"
 description: "Wie Compiler von Menschen geschriebenen Code radikal umgestalten."
 slug: compiler-optimization-ssa
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "compiler", "optimization", "ssa", "computer-science"]
 image: eyecatch.jpg
 date: 2026-09-27T14:20:15+09:00

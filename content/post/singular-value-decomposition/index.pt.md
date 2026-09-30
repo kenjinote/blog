@@ -4,7 +4,7 @@ description: "Um guia abrangente sobre os fundamentos matemáticos, a intuição
 slug: "singular-value-decomposition"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matemática"]
+categories: ["mathematics"]
 tags: ["SVD", "Álgebra Linear", "Machine Learning", "Compressão de Dados", "IA", "Python"]
 ---
 

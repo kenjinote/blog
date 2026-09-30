@@ -2,7 +2,7 @@
 title: "Techniques d'optimisation de compilateur : Qu'est-ce que la SSA (Assignation Unique Statique) ?"
 description: "Comment le compilateur transforme radicalement le code écrit par les humains."
 slug: compiler-optimization-ssa
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "compiler", "optimization", "ssa", "computer-science"]
 image: eyecatch.jpg
 date: 2026-09-27T14:20:15+09:00

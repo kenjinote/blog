@@ -5,7 +5,7 @@ description: "Una mirada profunda a la vida del antiguo matemático griego Eucli
 slug: "euclid"
 date: 2026-09-20T18:40:00+09:00
 image: "eyecatch.jpg"
-categories: ["Matemáticas", "Biografía"]
+categories: ["mathematics", "biography"]
 tags: ["Euclides", "Geometría", "Historia de las matemáticas", "Antigua Grecia", "Elementos", "Algoritmo de Euclides"]
 ---
 

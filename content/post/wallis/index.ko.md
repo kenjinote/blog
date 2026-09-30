@@ -4,9 +4,7 @@ description: "17세기 영국의 대표적인 수학자 존 월리스. 무한대
 slug: "wallis"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
-  - "전기"
+categories: ["mathematics", "biography"]
 tags:
   - "존 월리스"
   - "미적분학"

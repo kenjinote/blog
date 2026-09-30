@@ -4,9 +4,7 @@ description: "Apple का आधार macOS कैसे NeXTSTEP और UNIX 
 slug: "history-of-macos"
 date: "2026-09-23T02:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-    - "प्रौद्योगिकी"
-    - "कंप्यूटर-विज्ञान"
+categories: ["technology", "computer-science"]
 tags:
     - "मैकओएस"
     - "एप्पल"

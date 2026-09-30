@@ -4,8 +4,7 @@ description: "Découvrez des preuves fascinantes du théorème de Pythagore. Exp
 slug: "diverse-proofs-of-pythagorean-theorem"
 date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "Mathématiques"
+categories: ["mathematics"]
 tags: 
   - "Géométrie"
   - "Algèbre"

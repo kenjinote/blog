@@ -4,7 +4,7 @@ description: "Una exploración extremadamente detallada de la vida del gran mate
 slug: "poincare"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matemáticas", "Biografía"]
+categories: ["mathematics", "biography"]
 tags: ["Poincaré", "Topología", "Teoría del Caos", "Historia de las Matemáticas", "Física"]
 ---
 

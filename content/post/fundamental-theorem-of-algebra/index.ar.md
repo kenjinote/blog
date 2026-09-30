@@ -4,8 +4,7 @@ description: "شرح مفصل لتاريخ المبرهنة الأساسية ف�
 slug: "fundamental-theorem-of-algebra"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "الرياضيات"
+categories: ["mathematics"]
 tags:
   - "الجبر"
   - "التحليل المركب"

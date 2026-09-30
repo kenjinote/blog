@@ -4,7 +4,7 @@ description: 'غورو شيمورا، عالم رياضيات مشهور عال�
 slug: "shimura-goro"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["رياضيات", "سيرة ذاتية"]
+categories: ["mathematics", "biography"]
 tags: ["غورو شيمورا", "نظرية الأعداد", "حدسية تانياما-شيمورا", "مبرهنة فيرما الأخيرة"]
 ---
 

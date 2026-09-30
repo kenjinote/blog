@@ -2,7 +2,7 @@
 title: "डायनेमिक प्रोग्रामिंग (DP) और बेलमैन समीकरण"
 slug: dynamic-programming-bellman-equation
 description: "समस्याओं को छोटे हिस्सों में विभाजित करने और याद रखने वाले एल्गोरिदम का सार।"
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "algorithm", "dynamic-programming", "math", "computer-science"]
 image: "eyecatch.jpg"
 date: "2026-09-27T14:05:08+09:00"

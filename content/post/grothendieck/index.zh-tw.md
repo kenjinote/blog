@@ -5,7 +5,7 @@ description: "詳細解讀亞歷山大·格羅滕迪克非凡的生平及其在�
 slug: "grothendieck"
 date: 2026-09-20T20:30:00+09:00
 image: "eyecatch.jpg"
-categories: ["數學", "傳記"]
+categories: ["mathematics", "biography"]
 tags: ["格羅滕迪克", "代數幾何", "概形理論", "範疇論"]
 ---
 

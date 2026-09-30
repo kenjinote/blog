@@ -4,7 +4,7 @@ description: "गणितज्ञ कुनिहिको कोडैरा,
 slug: "kodaira-kunihiko"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["कुनिहिको कोडैरा", "फील्ड्स मेडल", "जटिल ज्यामिति"]
 ---
 

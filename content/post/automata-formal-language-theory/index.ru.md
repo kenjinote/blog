@@ -5,8 +5,7 @@ description: "Глубокое погружение в теорию автома
 slug: automata-formal-language-theory
 date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
-categories:
-  - информатика
+categories: ["computer-science"]
 tags:
   - автоматы
   - формальные-языки

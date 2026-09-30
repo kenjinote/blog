@@ -4,7 +4,7 @@ description: "Eine tiefgehende Untersuchung von André Weils dramatischem Leben,
 slug: "weil"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematik", "biografie"]
+categories: ["mathematics", "biography"]
 tags: ["André Weil", "Bourbaki", "Algebraische Geometrie", "Zahlentheorie"]
 ---
 

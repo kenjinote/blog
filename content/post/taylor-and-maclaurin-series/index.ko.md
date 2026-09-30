@@ -4,8 +4,7 @@ description: "미적분학의 비법인 테일러 전개와 매클로린 전개�
 slug: "taylor-and-maclaurin-series"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
+categories: ["mathematics"]
 tags:
   - "미적분학"
   - "테일러 급수"

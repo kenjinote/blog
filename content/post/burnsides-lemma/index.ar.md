@@ -4,8 +4,7 @@ description: "شرح كيفية التخلص من الأنماط المكررة 
 slug: "burnsides-lemma"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "رياضيات"
+categories: ["mathematics"]
 tags:
   - "نظرية الزمر"
   - "توافقيات"

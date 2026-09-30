@@ -4,8 +4,7 @@ description: "詳細介紹了佩爾方程的基礎知識，使用連分數的求
 slug: "pell-equation"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "數學"
+categories: ["mathematics"]
 tags:
   - "佩爾方程"
   - "丟番圖方程"

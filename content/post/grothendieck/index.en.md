@@ -5,7 +5,7 @@ description: "A detailed explanation of the extraordinary life and revolutionary
 slug: "grothendieck"
 date: 2026-09-20T20:30:00+09:00
 image: "eyecatch.jpg"
-categories: ["Mathematics", "Biography"]
+categories: ["mathematics", "biography"]
 tags: ["Grothendieck", "Algebraic Geometry", "Scheme Theory", "Category Theory"]
 ---
 

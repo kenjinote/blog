@@ -4,9 +4,7 @@ description: "인도의 천재 수학자 스리니바사 라마누잔의 생애�
 slug: "ramanujan"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
-  - "전기"
+categories: ["mathematics", "biography"]
 tags:
   - "라마누잔"
   - "G.H. 하디"

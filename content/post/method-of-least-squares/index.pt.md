@@ -4,8 +4,7 @@ description: "Uma explicação profunda da mecânica do Método dos Mínimos Qua
 slug: "method-of-least-squares"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "matemática"
+categories: ["mathematics"]
 tags:
   - "álgebra linear"
   - "otimização"

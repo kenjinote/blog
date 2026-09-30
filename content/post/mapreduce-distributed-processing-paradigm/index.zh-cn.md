@@ -2,7 +2,7 @@
 slug: "mapreduce-distributed-processing-paradigm"
 title: "MapReduce的哲学：Google改变世界的分布式处理"
 description: "大数据处理的起源与Hadoop的演进谱系。"
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "distributed-systems", "big-data", "mapreduce", "google"]
 date: 2026-09-27T14:20:15+09:00
 image: "eyecatch.jpg"

@@ -4,7 +4,7 @@ description: "Una guía completa sobre los fundamentos matemáticos, la intuici�
 slug: "singular-value-decomposition"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matemáticas"]
+categories: ["mathematics"]
 tags: ["SVD", "Álgebra Lineal", "Machine Learning", "Compresión de Datos", "IA", "Python"]
 ---
 

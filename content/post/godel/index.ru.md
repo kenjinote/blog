@@ -4,7 +4,7 @@ description: "Подробное объяснение жизни Курта Гё
 slug: "godel"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["математика", "биография"]
+categories: ["mathematics", "biography"]
 tags: ["Курт Гёдель", "Теоремы о неполноте", "Математика", "Логика", "История"]
 ---
 

@@ -4,8 +4,7 @@ description: "詳細講解排列、組合的基礎知識，到二項式定理，
 slug: "permutations-combinations-and-binomial-theorem"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "數學"
+categories: ["mathematics"]
 tags:
   - "組合數學"
   - "二項式定理"

@@ -4,7 +4,7 @@ description: "شرح مفصل لحياة كورت غودل، أعظم عالم �
 slug: "godel"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["رياضيات", "سيرة ذاتية"]
+categories: ["mathematics", "biography"]
 tags: ["كورت غودل", "مبرهنات عدم الاكتمال", "رياضيات", "منطق", "تاريخ"]
 ---
 

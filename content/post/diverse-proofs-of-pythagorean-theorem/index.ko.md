@@ -4,8 +4,7 @@ description: "피타고라스 정리의 매력적인 증명 방법들을 만나�
 slug: "diverse-proofs-of-pythagorean-theorem"
 date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "수학"
+categories: ["mathematics"]
 tags: 
   - "기하학"
   - "대수학"

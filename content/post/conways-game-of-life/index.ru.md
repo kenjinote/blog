@@ -5,9 +5,7 @@ description: "«Игра «Жизнь» Конвея» — это невероя
 slug: "conways-game-of-life"
 date: 2026-09-15T10:00:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Математика"
-  - "Информатика"
+categories: ["mathematics", "computer-science"]
 tags:
   - "Игра Жизнь Конвея"
   - "Клеточный автомат"

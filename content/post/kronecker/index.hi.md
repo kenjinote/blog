@@ -4,9 +4,7 @@ description: '19वीं सदी के महान गणितज्ञ �
 slug: "kronecker"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "गणित"
-  - "जीवनी"
+categories: ["mathematics", "biography"]
 tags:
   - "क्रोनकर"
   - "बीजगणित"

@@ -5,9 +5,7 @@ description: 'Explorando a vida e o legado de Joseph Liouville, o grande matemá
 slug: 'liouville'
 date: '2026-09-20T19:20:00+09:00'
 image: "eyecatch.jpg"
-categories:
-  - 'Matemática'
-  - 'Biografia'
+categories: ["mathematics", "biography"]
 tags:
   - 'Liouville'
   - 'Análise Complexa'

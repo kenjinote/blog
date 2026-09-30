@@ -5,9 +5,7 @@ description: "프론트엔드 개발의 역사에서 가장 큰 과제인 '상�
 slug: state-management-history-future
 date: 2026-09-21T12:00:00+09:00
 image: eyecatch.jpg
-categories:
-  - "프론트엔드"
-  - "아키텍처"
+categories: ["frontend", "architecture"]
 tags:
   - "상태 관리"
   - "리액트"

@@ -4,7 +4,7 @@ description: "독일의 위대한 수학자 에른스트 쿰머의 생애, 이�
 slug: "kummer"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["에른스트 쿰머", "페르마의 마지막 정리", "이상수", "대수적 정수론", "정규 소수"]
 ---
 

@@ -5,9 +5,7 @@ description: '探索19世纪法国伟大数学家约瑟夫·刘维尔的一生�
 slug: 'liouville'
 date: '2026-09-20T19:20:00+09:00'
 image: "eyecatch.jpg"
-categories:
-  - 'mathematics'
-  - '传记'
+categories: ["mathematics", "biography"]
 tags:
   - '刘维尔'
   - '复分析'

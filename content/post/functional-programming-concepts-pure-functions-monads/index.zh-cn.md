@@ -5,8 +5,7 @@ description: 深入探讨函数式编程范式，从纯函数、不可变性以�
 slug: functional-programming-concepts-pure-functions-monads
 date: 2026-09-21T14:51:08+09:00
 image: eyecatch.jpg
-categories:
-  - 计算机科学
+categories: ["computer-science"]
 tags:
   - 函数式编程
   - 单子

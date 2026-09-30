@@ -5,9 +5,7 @@ description: "Was sind die Grenzen der Berechnung? Wir befassen uns eingehend mi
 slug: turing-machine-computability
 date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
-categories:
-  - informatik
-  - mathematik
+categories: ["computer-science", "mathematics"]
 tags:
   - turingmaschine
   - berechenbarkeitstheorie

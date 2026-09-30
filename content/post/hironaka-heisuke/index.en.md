@@ -4,7 +4,7 @@ description: "Delve into the life of Fields Medal-winning Japanese mathematician
 slug: "hironaka-heisuke"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematics", "Biography"]
+categories: ["mathematics", "biography"]
 tags: ["Heisuke Hironaka", "Algebraic Geometry", "Resolution of Singularities", "Fields Medal", "Japanese Mathematician", "Creativity"]
 ---
 

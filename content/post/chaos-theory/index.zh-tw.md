@@ -5,7 +5,7 @@ description: "全面解析具有對初始條件敏感依賴性的非線性動力
 slug: "chaos-theory"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["科學", "數學"]
+categories: ["science", "mathematics"]
 tags:
   - "混沌理論"
   - "物理學"

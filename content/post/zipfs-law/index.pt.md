@@ -4,7 +4,7 @@ description: "Um olhar aprofundado, usando fórmulas e diagramas, sobre a 'Lei d
 slug: "zipfs-law"
 date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
-categories: ["matemática", "ciência-de-dados", "linguística"]
+categories: ["mathematics", "data-science", "linguistics"]
 tags:
   - "Lei de Zipf"
   - "Lei de Potência"

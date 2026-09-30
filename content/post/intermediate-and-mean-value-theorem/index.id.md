@@ -4,7 +4,7 @@ description: "Penjelasan mendalam tentang Teorema Nilai Antara dan Teorema Nilai
 slug: "intermediate-and-mean-value-theorem"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matematika"]
+categories: ["mathematics"]
 tags: ["kalkulus", "teorema", "pembuktian-matematika"]
 ---
 

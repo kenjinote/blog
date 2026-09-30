@@ -2,7 +2,7 @@
 title: "Tecnología de optimización de compiladores: Qué es SSA (Asignación Única Estática)"
 description: "Cómo los compiladores transforman radicalmente el código escrito por humanos."
 slug: compiler-optimization-ssa
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "compiler", "optimization", "ssa", "computer-science"]
 image: eyecatch.jpg
 date: 2026-09-27T14:20:15+09:00

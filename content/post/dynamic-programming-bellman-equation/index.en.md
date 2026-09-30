@@ -2,7 +2,7 @@
 title: "Dynamic Programming (DP) and the Bellman Equation"
 slug: dynamic-programming-bellman-equation
 description: "The essence of algorithms that break problems down and remember them."
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "algorithm", "dynamic-programming", "math", "computer-science"]
 image: "eyecatch.jpg"
 date: "2026-09-27T14:05:08+09:00"

@@ -4,9 +4,7 @@ description: "Uma explicação detalhada da vida do matemático e físico do sé
 slug: "lagrange"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "matemática"
-  - "biografia"
+categories: ["mathematics", "biography"]
 tags:
   - "Lagrange"
   - "Cálculo de Variações"

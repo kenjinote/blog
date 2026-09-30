@@ -4,7 +4,7 @@ description: "رواية مفصلة عن حياة عالم الرياضيات ا
 slug: "legendre"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["رياضيات", "سيرة ذاتية"]
+categories: ["mathematics", "biography"]
 tags: ["ليجاندر", "نظرية الأعداد", "هندسة", "تاريخ الرياضيات"]
 ---
 

@@ -4,7 +4,7 @@ description: "Explicação de como colorir vértices de acordo com regras de fro
 slug: "sperners-lemma"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matemática"]
+categories: ["mathematics"]
 tags: ["topologia", "combinatória", "teorema-do-ponto-fixo"]
 ---
 

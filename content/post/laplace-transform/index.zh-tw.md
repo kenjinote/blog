@@ -4,8 +4,7 @@ description: "從拉普拉斯變換的基礎知識到其在微分方程中的應
 slug: "laplace-transform"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "數學"
+categories: ["mathematics"]
 tags:
   - "拉普拉斯變換"
   - "微分方程"

@@ -5,8 +5,7 @@ description: "클로드 섀넌이 제창한 정보 이론의 기초부터 엔트
 slug: information-theory-shannon-entropy
 date: 2026-09-21T02:45:54+09:00
 image: eyecatch.jpg
-categories:
-  - 컴퓨터-과학
+categories: ["computer-science"]
 tags:
   - 정보-이론
   - 엔트로피

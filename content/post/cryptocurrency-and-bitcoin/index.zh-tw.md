@@ -4,7 +4,7 @@ description: "徹底解說比特幣與加密貨幣背後的技術與數學機制
 slug: "cryptocurrency-and-bitcoin"
 date: "2026-09-20T23:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["科技", "數學"]
+categories: ["technology", "mathematics"]
 tags: ["比特幣", "密碼學", "區塊鏈"]
 ---
 

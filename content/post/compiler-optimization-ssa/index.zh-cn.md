@@ -2,7 +2,7 @@
 title: "编译器优化技术：什么是SSA（静态单赋值）"
 description: "编译器如何对人类编写的代码进行'魔改'。"
 slug: compiler-optimization-ssa
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "compiler", "optimization", "ssa", "computer-science"]
 image: eyecatch.jpg
 date: 2026-09-27T14:20:15+09:00

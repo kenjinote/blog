@@ -4,8 +4,7 @@ description: "深入解釋貝氏定理如何根據新證據更新機率，其數
 slug: "bayes-theorem"
 date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "數學"
+categories: ["mathematics"]
 tags:
   - "貝氏定理"
   - "機器學習"

@@ -4,7 +4,7 @@ description: "Une explication détaillée de la vie de Kurt Gödel, le plus gran
 slug: "godel"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathématiques", "biographie"]
+categories: ["mathematics", "biography"]
 tags: ["Kurt Gödel", "Théorèmes d'incomplétude", "Mathématiques", "Logique", "Histoire"]
 ---
 

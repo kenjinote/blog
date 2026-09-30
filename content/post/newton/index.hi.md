@@ -4,9 +4,7 @@ description: "आइजैक न्यूटन के असाधारण �
 slug: "newton"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "गणित"
-  - "जीवनी"
+categories: ["mathematics", "biography"]
 tags:
   - "आइजैक न्यूटन"
   - "कैलकुलस"

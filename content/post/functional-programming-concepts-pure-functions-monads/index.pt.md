@@ -5,8 +5,7 @@ description: Aprofunde-se no paradigma da programação funcional e explore exau
 slug: functional-programming-concepts-pure-functions-monads
 date: 2026-09-21T14:51:08+09:00
 image: eyecatch.jpg
-categories:
-  - ciencia-da-computacao
+categories: ["computer-science"]
 tags:
   - programacao-funcional
   - monadas

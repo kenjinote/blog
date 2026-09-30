@@ -4,7 +4,7 @@ description: "詳細解讀19世紀至20世紀最偉大的數學家之一，大�
 slug: "hilbert"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學", "傳記"]
+categories: ["mathematics", "biography"]
 tags: ["希爾伯特", "數學史", "幾何學", "泛函分析", "物理學", "數論"]
 ---
 

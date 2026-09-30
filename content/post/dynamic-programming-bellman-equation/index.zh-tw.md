@@ -2,7 +2,7 @@
 title: "動態規劃（DP）與貝爾曼方程式"
 slug: dynamic-programming-bellman-equation
 description: "將問題分割並記憶演算法的精髓。"
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "algorithm", "dynamic-programming", "math", "computer-science"]
 image: "eyecatch.jpg"
 date: "2026-09-27T14:05:08+09:00"

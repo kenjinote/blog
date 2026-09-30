@@ -4,7 +4,7 @@ description: "Penjelasan terperinci tentang kehidupan yang penuh gejolak dan pen
 slug: "weierstrass"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matematika", "Biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Matematika", "Weierstrass", "Analisis", "Sejarah"]
 ---
 

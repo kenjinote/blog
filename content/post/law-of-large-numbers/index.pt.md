@@ -5,7 +5,7 @@ description: "Uma explicação da Lei dos Grandes Números, um teorema crucial n
 slug: "law-of-large-numbers"
 date: 2026-09-14
 image: "eyecatch.jpg"
-categories: ["matematica", "ciencia-de-dados", "jogos-de-azar"]
+categories: ["mathematics", "data-science", "gambling"]
 tags:
   - "Lei dos Grandes Números"
   - "Probabilidade"

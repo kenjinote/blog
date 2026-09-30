@@ -4,8 +4,7 @@ description: "Eine detaillierte Erklärung, mit Diagrammen und Beweisen, der For
 slug: "picks-theorem"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "mathematik"
+categories: ["mathematics"]
 tags:
   - "geometrie"
   - "satz-von-pick"

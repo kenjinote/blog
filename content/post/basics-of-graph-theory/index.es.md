@@ -4,8 +4,7 @@ description: "Una guía completa sobre los fundamentos de la teoría de grafos. 
 slug: "basics-of-graph-theory"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "matemáticas"
+categories: ["mathematics"]
 tags:
   - "teoría de grafos"
   - "algoritmo"

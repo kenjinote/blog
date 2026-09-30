@@ -4,9 +4,7 @@ description: "Gilles Personne de Roberval war einer der führenden französische
 slug: "roberval"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathematik"
-  - "Biografie"
+categories: ["mathematics", "biography"]
 tags:
   - "Roberval"
   - "Geschichte der Mathematik"

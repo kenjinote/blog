@@ -4,7 +4,7 @@ description: "An incredibly detailed exploration of the life of the great French
 slug: "poincare"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematics", "Biography"]
+categories: ["mathematics", "biography"]
 tags: ["Poincare", "Topology", "Chaos Theory", "History of Mathematics", "Physics"]
 ---
 

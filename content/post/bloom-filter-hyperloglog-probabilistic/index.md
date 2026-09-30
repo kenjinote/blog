@@ -3,7 +3,7 @@ title: "確率的データ構造：Bloom FilterとHyperLogLog"
 description: "わずかなメモリで巨大なデータを判定・カウントする近似アルゴリズム。"
 date: "2026-09-27T14:05:08+09:00"
 slug: bloom-filter-hyperloglog-probabilistic
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "algorithm", "data-structure", "big-data", "probabilistic"]
 image: "eyecatch.jpg"
 ---

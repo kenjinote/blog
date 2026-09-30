@@ -4,7 +4,7 @@ description: "Eine detaillierte Erklärung von Eigenwerten und Eigenvektoren, ei
 slug: "eigenvalues-and-eigenvectors"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematik"]
+categories: ["mathematics"]
 tags: ["lineare-algebra", "eigenwert", "eigenvektor", "mathematik", "maschinelles-lernen", "python", "datenwissenschaft"]
 ---
 

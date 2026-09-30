@@ -4,9 +4,7 @@ description: "詳細解析菲爾茲獎得主格爾德·法爾廷斯的生平及�
 slug: "faltings"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "數學"
-  - "傳記"
+categories: ["mathematics", "biography"]
 tags:
   - "格爾德·法爾廷斯"
   - "數論"

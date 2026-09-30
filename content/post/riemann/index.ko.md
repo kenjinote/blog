@@ -4,9 +4,7 @@ description: "베른하르트 리만의 격동적인 생애와 리만 가설, �
 slug: "riemann"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
-  - "전기"
+categories: ["mathematics", "biography"]
 tags:
   - "리만"
   - "제타 함수"

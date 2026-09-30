@@ -4,7 +4,7 @@ description: "Подробный рассказ о жизни и достиже�
 slug: "noether"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Математика", "Биография"]
+categories: ["mathematics", "biography"]
 tags: ["Эмми Нётер", "Абстрактная алгебра", "Физика", "Женщины в STEM"]
 ---
 

@@ -4,7 +4,7 @@ description: "Uma exploração detalhada da vida e das realizações matemática
 slug: "bachet"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matemática", "Biografia"]
+categories: ["mathematics", "biography"]
 tags: ["Bachet", "Teoria dos Números", "História da Matemática", "Matemática Recreativa", "Diofanto"]
 ---
 

@@ -3,7 +3,7 @@ title: "رياضيات التشفير بالمفتاح العام: من RSA إل
 description: "الانتقال من صعوبة التحليل إلى العوامل الأولية إلى مشكلة اللوغاريتم المنفصل."
 date: 2026-09-27T23:50:00+09:00
 slug: public-key-cryptography-rsa-ecc
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "cryptography", "security", "math", "algorithm"]
 image: eyecatch.jpg
 ---

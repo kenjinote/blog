@@ -5,7 +5,7 @@ description: "위상수학의 단방향 곡면인 뫼비우스의 띠와 클라�
 slug: "mobius-strip-and-klein-bottle"
 date: 2026-09-20T15:15:00+09:00
 image: "eyecatch.jpg"
-categories: ["수학"]
+categories: ["mathematics"]
 tags: ["위상수학", "기하학", "뫼비우스의-띠", "클라인의-병"]
 ---
 

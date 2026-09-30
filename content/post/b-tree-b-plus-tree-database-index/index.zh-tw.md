@@ -2,9 +2,7 @@
 title: "B樹與B+樹：資料庫索引為什麼那麼快"
 description: "最小化磁碟I/O的樹狀結構背後的秘密。"
 slug: b-tree-b-plus-tree-database-index
-categories:
-  - computer-science
-  - algorithm
+categories: ["computer-science", "algorithms"]
 tags:
   - tech
   - database

@@ -4,9 +4,7 @@ description: "마랭 메르센의 생애, 데카르트와 페르마와의 교류
 slug: "mersenne"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
-  - "전기"
+categories: ["mathematics", "biography"]
 tags:
   - "메르센"
   - "소수"

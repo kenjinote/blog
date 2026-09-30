@@ -5,8 +5,7 @@ description: "Wie sich das Lambda-Kalkül, die fundamentale Theorie der Berechnu
 slug: lambda-calculus-functional-programming
 date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
-categories:
-  - informatik
+categories: ["computer-science"]
 tags:
   - lambda-kalkuel
   - funktionale-programmierung

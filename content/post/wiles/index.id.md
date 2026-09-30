@@ -4,7 +4,7 @@ description: "Mengeksplorasi kehidupan dan pencapaian matematis Andrew Wiles, ya
 slug: "wiles"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matematika", "biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Andrew Wiles", "Fermat", "Teori Bilangan"]
 ---
 

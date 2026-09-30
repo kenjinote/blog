@@ -4,8 +4,7 @@ description: "詳細解釋將複雜波形表示為簡單正弦波和餘弦波疊
 slug: "fourier-series-and-transform"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "數學"
+categories: ["mathematics"]
 tags:
   - "傅立葉"
   - "數學"

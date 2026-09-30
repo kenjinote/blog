@@ -4,7 +4,7 @@ description: "تعمق في حياة عالم الرياضيات اليابان�
 slug: "hironaka-heisuke"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["رياضيات", "سيرة ذاتية"]
+categories: ["mathematics", "biography"]
 tags: ["هيسوكي هيروناكا", "الهندسة الجبرية", "حل المتفردات", "ميدالية فيلدز", "عالم رياضيات ياباني", "الإبداع"]
 ---
 

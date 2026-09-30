@@ -4,8 +4,7 @@ description: "Uma explicação detalhada do Teorema do Sanduíche de Presunto, q
 slug: "ham-sandwich-theorem"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matemática"
+categories: ["mathematics"]
 tags:
   - "Topologia"
   - "Geometria"

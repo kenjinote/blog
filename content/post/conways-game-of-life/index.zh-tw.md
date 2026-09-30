@@ -5,9 +5,7 @@ description: "「康威生命遊戲」是一個令人驚嘆的元胞自動機，
 slug: "conways-game-of-life"
 date: 2026-09-15T10:00:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "數學"
-  - "計算機科學"
+categories: ["mathematics", "computer-science"]
 tags:
   - "康威生命遊戲"
   - "元胞自動機"

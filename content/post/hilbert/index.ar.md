@@ -4,7 +4,7 @@ description: "شرح مفصل لحياة ديفيد هيلبرت، أحد أعظ
 slug: "hilbert"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["رياضيات", "سيرة ذاتية"]
+categories: ["mathematics", "biography"]
 tags: ["هيلبرت", "تاريخ الرياضيات", "هندسة رياضية", "تحليل دالي", "فيزياء", "نظرية الأعداد"]
 ---
 

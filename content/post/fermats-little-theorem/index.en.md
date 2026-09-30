@@ -5,8 +5,7 @@ description: "A detailed explanation of Fermat's Little Theorem, from an intuiti
 slug: "fermats-little-theorem"
 date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Mathematics"
+categories: ["mathematics"]
 tags:
   - "Number Theory"
   - "Cryptography"

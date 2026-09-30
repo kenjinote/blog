@@ -2,9 +2,7 @@
 title: "B-Tree और B+Tree: डेटाबेस इंडेक्स इतने तेज़ क्यों होते हैं"
 description: "पेड़ संरचनाओं (Tree structures) के पीछे का विज्ञान जो डिस्क I/O को न्यूनतम करता है।"
 slug: b-tree-b-plus-tree-database-index
-categories:
-  - computer-science
-  - algorithm
+categories: ["computer-science", "algorithms"]
 tags:
   - tech
   - database

@@ -5,7 +5,7 @@ description: 'دليل شامل لعملية غرام-شميت للتعامد ف
 slug: 'gram-schmidt-process'
 date: '2026-09-20T14:40:00+09:00'
 image: "eyecatch.jpg"
-categories: ["الرياضيات"]
+categories: ["mathematics"]
 tags: ["الجبر الخطي", "خوارزميات", "تعلم الآلة", "تحليل QR", "بايثون", "الحوسبة العددية", "الرياضيات"]
 ---
 

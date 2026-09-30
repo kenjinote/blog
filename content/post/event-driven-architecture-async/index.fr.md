@@ -4,9 +4,7 @@ description: "Une exploration approfondie de l'architecture orientée événemen
 slug: "event-driven-architecture-async"
 date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "architecture"
-  - "back-end"
+categories: ["architecture", "backend"]
 tags:
   - "orienté-événements"
   - "asynchrone"

@@ -5,7 +5,7 @@ description: "شرح لقانون الأعداد الكبيرة، وهو نظر�
 slug: "law-of-large-numbers"
 date: 2026-09-14
 image: "eyecatch.jpg"
-categories: ["الرياضيات", "علوم-البيانات", "القمار"]
+categories: ["mathematics", "data-science", "gambling"]
 tags:
   - "قانون الأعداد الكبيرة"
   - "الاحتمال"

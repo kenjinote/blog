@@ -4,7 +4,7 @@ description: "Uma explicação detalhada do contexto matemático do passeio alea
 slug: "random-walk"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matemática"]
+categories: ["mathematics"]
 tags: ["Passeio Aleatório", "Probabilidade", "Equação de Difusão", "Movimento Browniano", "Python"]
 ---
 

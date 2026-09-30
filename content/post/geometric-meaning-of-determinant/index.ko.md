@@ -4,8 +4,7 @@ description: "행렬식은 단순한 계산식이 아니라 선형 변환에 의
 slug: "geometric-meaning-of-determinant"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "수학"
+categories: ["mathematics"]
 tags: 
   - "선형대수학"
   - "행렬식"

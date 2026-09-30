@@ -5,8 +5,7 @@ description: 함수형 프로그래밍의 패러다임을 깊이 파고들어, �
 slug: functional-programming-concepts-pure-functions-monads
 date: 2026-09-21T14:51:08+09:00
 image: eyecatch.jpg
-categories:
-  - 컴퓨터 과학
+categories: ["computer-science"]
 tags:
   - 함수형 프로그래밍
   - 모나드

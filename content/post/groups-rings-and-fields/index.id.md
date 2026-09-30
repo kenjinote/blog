@@ -4,7 +4,7 @@ description: "Dalam matematika, aljabar berevolusi menjadi studi tentang struktu
 slug: "groups-rings-and-fields"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matematika"]
+categories: ["mathematics"]
 tags: ["aljabar", "teori grup", "teori gelanggang", "teori lapangan"]
 ---
 

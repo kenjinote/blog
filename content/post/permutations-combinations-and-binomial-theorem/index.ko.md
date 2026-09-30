@@ -4,8 +4,7 @@ description: "순열, 조합, 이항정리, 그리고 파스칼의 삼각형이 
 slug: "permutations-combinations-and-binomial-theorem"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
+categories: ["mathematics"]
 tags:
   - "조합론"
   - "이항정리"

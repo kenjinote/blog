@@ -4,8 +4,7 @@ description: "동전 지불 방법이나 조합의 수를 식의 계수로 계�
 slug: "generating-functions"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
+categories: ["mathematics"]
 tags:
   - "생성함수"
   - "조합론"

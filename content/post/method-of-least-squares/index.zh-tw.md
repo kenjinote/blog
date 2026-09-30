@@ -4,8 +4,7 @@ description: "使用幾何直覺和強大的線性代數工具（正規方程式
 slug: "method-of-least-squares"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "數學"
+categories: ["mathematics"]
 tags:
   - "線性代數"
   - "最佳化"

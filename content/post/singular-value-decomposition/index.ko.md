@@ -4,7 +4,7 @@ description: "특이값 분해(SVD)의 수학적 기초부터 기하학적 직�
 slug: "singular-value-decomposition"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학"]
+categories: ["mathematics"]
 tags: ["SVD", "선형대수학", "머신러닝", "데이터 압축", "인공지능", "Python"]
 ---
 

@@ -4,9 +4,7 @@ description: "Eine detaillierte Erklärung des Lebens des Fields-Medaillengewinn
 slug: "faltings"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathematik"
-  - "Biografie"
+categories: ["mathematics", "biography"]
 tags:
   - "Gerd Faltings"
   - "Zahlentheorie"

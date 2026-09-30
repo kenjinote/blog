@@ -4,7 +4,7 @@ description: "पियरे डी फ़र्मेट के जीवन �
 slug: "fermat"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["फ़र्मेट", "गणित का इतिहास", "फ़र्मेट का अंतिम प्रमेय", "संख्या सिद्धांत", "प्रायिकता सिद्धांत"]
 ---
 

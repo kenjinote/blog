@@ -5,8 +5,7 @@ description: "Eine detaillierte Erklärung des kleinen Satzes von Fermat, vom in
 slug: "fermats-little-theorem"
 date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Mathematik"
+categories: ["mathematics"]
 tags:
   - "Zahlentheorie"
   - "Kryptographie"

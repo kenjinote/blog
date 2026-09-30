@@ -5,9 +5,7 @@ description: "計算的極限是什麼？我們將從數學與程式設計的角
 slug: turing-machine-computability
 date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
-categories:
-  - 計算機科學
-  - 數學
+categories: ["computer-science", "mathematics"]
 tags:
   - 圖靈機
   - 計算理論

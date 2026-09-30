@@ -5,9 +5,7 @@ description: "深入探讨前端开发历史中最大的挑战“状态管理”
 slug: state-management-history-future
 date: 2026-09-21T12:00:00+09:00
 image: eyecatch.jpg
-categories:
-  - 前端
-  - 架构
+categories: ["frontend", "architecture"]
 tags:
   - 状态管理
   - react

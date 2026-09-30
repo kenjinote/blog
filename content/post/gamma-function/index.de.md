@@ -5,7 +5,7 @@ description: "Die Gammafunktion verbindet diskrete Fakultäten mit einer glatten
 slug: "gamma-function"
 date: 2026-09-20T14:40:00+09:00
 image: "eyecatch.jpg"
-categories: ["Mathematik"]
+categories: ["mathematics"]
 tags: ["Gammafunktion", "Euler", "Funktionentheorie", "Analysis"]
 ---
 

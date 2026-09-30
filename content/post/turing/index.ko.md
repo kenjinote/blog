@@ -4,7 +4,7 @@ description: "앨런 튜링의 생애, 에니그마 해독, 튜링 머신, 정�
 slug: "turing"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["앨런 튜링", "튜링 머신", "에니그마", "정지 문제", "형태 형성"]
 ---
 

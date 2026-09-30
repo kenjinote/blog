@@ -4,9 +4,7 @@ description: "شرح مفصل لحياة كارل غوستاف جاكوب جاك
 slug: "jacobi"
 date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "رياضيات"
-  - "سيرة شخصية"
+categories: ["mathematics", "biography"]
 tags:
   - "جاكوبي"
   - "الدوال الإهليلجية"

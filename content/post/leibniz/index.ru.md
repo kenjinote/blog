@@ -4,7 +4,7 @@ description: "Глубокий взгляд на жизнь, эпизоды и �
 slug: "leibniz"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Математика", "Биография"]
+categories: ["mathematics", "biography"]
 tags: ["Лейбниц", "Матанализ", "Двоичная система", "Философия", "История математики"]
 ---
 

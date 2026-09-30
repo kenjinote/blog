@@ -4,9 +4,7 @@ description: "현대 분산 시스템에서 필수적인 이벤트 기반 아키
 slug: "event-driven-architecture-async"
 date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "아키텍처"
-  - "백엔드"
+categories: ["architecture", "backend"]
 tags:
   - "이벤트 기반"
   - "비동기"

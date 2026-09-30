@@ -4,8 +4,7 @@ description: "Um guia detalhado sobre a equação de Pell, sua resolução usand
 slug: "pell-equation"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "matemática"
+categories: ["mathematics"]
 tags:
   - "equação-de-pell"
   - "equação-diofantina"

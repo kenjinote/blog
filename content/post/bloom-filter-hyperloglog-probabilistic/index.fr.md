@@ -3,7 +3,7 @@ title: "Structures de données probabilistes : Bloom Filter et HyperLogLog"
 description: "Algorithmes d'approximation pour évaluer et compter des données massives avec peu de mémoire."
 date: "2026-09-27T14:05:08+09:00"
 slug: bloom-filter-hyperloglog-probabilistic
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "algorithm", "data-structure", "big-data", "probabilistic"]
 image: "eyecatch.jpg"
 ---

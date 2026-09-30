@@ -4,7 +4,7 @@ description: "深入探讨德国伟大数学家恩斯特·库默尔的一生，�
 slug: "kummer"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "传记"]
+categories: ["mathematics", "biography"]
 tags: ["恩斯特·库默尔", "费马大定理", "理想数", "代数数论", "正则素数"]
 ---
 

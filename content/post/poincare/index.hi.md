@@ -4,7 +4,7 @@ description: "महान फ्रांसीसी गणितज्ञ ह
 slug: "poincare"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["प्वाइंकरे", "टोपोलॉजी", "अराजकता सिद्धांत", "गणित का इतिहास", "भौतिक विज्ञान"]
 ---
 

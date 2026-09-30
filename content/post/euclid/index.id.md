@@ -5,7 +5,7 @@ description: "Pandangan mendalam tentang kehidupan matematikawan Yunani kuno Euk
 slug: "euclid"
 date: 2026-09-20T18:40:00+09:00
 image: "eyecatch.jpg"
-categories: ["Matematika", "Biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Euklides", "Geometri", "Sejarah Matematika", "Yunani Kuno", "Elemen", "Algoritma Euklides"]
 ---
 

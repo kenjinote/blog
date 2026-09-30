@@ -5,8 +5,7 @@ description: 深入探討函數式編程的範式，並從純函數、不變性�
 slug: functional-programming-concepts-pure-functions-monads
 date: 2026-09-21T14:51:08+09:00
 image: eyecatch.jpg
-categories:
-  - 電腦科學
+categories: ["computer-science"]
 tags:
   - 函數式編程
   - 單子

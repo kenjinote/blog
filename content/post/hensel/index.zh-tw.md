@@ -4,7 +4,7 @@ description: "深入了解德國數學家庫爾特·亨澤爾的一生，他發�
 slug: "hensel"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學", "傳記"]
+categories: ["mathematics", "biography"]
 tags: ["庫爾特·亨澤爾", "p進數", "代數數論", "數學史"]
 ---
 

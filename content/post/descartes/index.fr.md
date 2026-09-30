@@ -5,9 +5,7 @@ description: "René Descartes est célèbre pour 'Je pense, donc je suis'. Nous 
 slug: "descartes"
 date: 2026-09-20T18:50:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Mathématiques"
-  - "Biographie"
+categories: ["mathematics", "biography"]
 tags:
   - "Descartes"
   - "Géométrie analytique"

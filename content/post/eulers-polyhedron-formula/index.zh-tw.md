@@ -4,8 +4,7 @@ description: "詳細解讀尤拉多面體定理（V - E + F = 2）的數學之�
 slug: "eulers-polyhedron-formula"
 date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "數學"
+categories: ["mathematics"]
 tags:
   - "拓樸學"
   - "幾何學"

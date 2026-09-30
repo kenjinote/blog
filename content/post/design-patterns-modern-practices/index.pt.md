@@ -4,9 +4,7 @@ description: "Padrões de projeto GoF propostos em 1994. Eles ainda são válido
 slug: "design-patterns-modern-practices"
 date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "arquitetura"
-  - "programacao"
+categories: ["architecture", "programming"]
 tags:
   - "padroes-de-projeto"
   - "gof"

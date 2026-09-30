@@ -4,8 +4,7 @@ description: "그래프 이론의 기초를 알기 쉽게 해설합니다. 쾨�
 slug: "basics-of-graph-theory"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
+categories: ["mathematics"]
 tags:
   - "그래프 이론"
   - "알고리즘"

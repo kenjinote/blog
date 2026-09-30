@@ -5,7 +5,7 @@ description: 'Ein umfassender Leitfaden zum Gram-Schmidt-Orthogonalisierungsverf
 slug: 'gram-schmidt-process'
 date: '2026-09-20T14:40:00+09:00'
 image: "eyecatch.jpg"
-categories: ["Mathematik"]
+categories: ["mathematics"]
 tags: ["Lineare Algebra", "Algorithmen", "Maschinelles Lernen", "QR-Zerlegung", "Python", "Numerisches Rechnen", "Mathematik"]
 ---
 

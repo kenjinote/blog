@@ -4,7 +4,7 @@ description: "شرح مفصل لحياة تاكاكازو سيكي، عالم ا
 slug: "seki-takakazu"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["الرياضيات", "سيرة ذاتية"]
+categories: ["mathematics", "biography"]
 tags: ["تاكاكازو سيكي", "واسان", "فترة إيدو", "تاريخ الرياضيات", "حساب التفاضل والتكامل", "محدد"]
 ---
 

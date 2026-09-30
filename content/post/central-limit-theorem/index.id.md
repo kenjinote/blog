@@ -4,7 +4,7 @@ date: "2026-09-24T19:44:38+09:00"
 description: "Penjelasan terperinci tentang Teorema Limit Pusat, salah satu teorema paling penting dalam statistik, dari pemahaman intuitif hingga bukti matematika dan simulasi dengan Python."
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["Matematika", "Statistika"]
+categories: ["mathematics", "statistics"]
 tags: ["Teorema Limit Pusat", "Probabilitas", "Ilmu Data", "Python"]
 slug: "central-limit-theorem"
 ---

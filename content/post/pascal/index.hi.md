@@ -5,7 +5,7 @@ description: "ब्लेज़ पास्कल, जिन्हें 'म�
 slug: "pascal"
 date: 2026-09-20T19:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["पास्कल", "प्रायिकता सिद्धांत", "प्रक्षेप्य ज्यामिति", "पास्कल की प्रमेय", "पास्कल का त्रिभुज", "भौतिकी"]
 ---
 

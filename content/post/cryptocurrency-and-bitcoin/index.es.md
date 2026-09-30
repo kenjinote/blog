@@ -4,7 +4,7 @@ description: "Una guía completa que explica exhaustivamente los mecanismos téc
 slug: "cryptocurrency-and-bitcoin"
 date: "2026-09-20T23:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["tecnología", "matemáticas"]
+categories: ["technology", "mathematics"]
 tags: ["bitcoin", "criptografía", "blockchain"]
 ---
 

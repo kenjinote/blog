@@ -4,7 +4,7 @@ description: "Eine detaillierte Erkundung des Lebens und der mathematischen Erru
 slug: "bachet"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematik", "Biografie"]
+categories: ["mathematics", "biography"]
 tags: ["Bachet", "Zahlentheorie", "Geschichte der Mathematik", "Unterhaltungsmathematik", "Diophantos"]
 ---
 

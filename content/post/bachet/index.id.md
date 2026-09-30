@@ -4,7 +4,7 @@ description: "Eksplorasi mendalam tentang kehidupan dan pencapaian matematika da
 slug: "bachet"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matematika", "Biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Bachet", "Teori Bilangan", "Sejarah Matematika", "Matematika Rekreasi", "Diophantus"]
 ---
 

@@ -4,7 +4,7 @@ description: "استكشاف حياة وعمل عالم الرياضيات كو�
 slug: "kodaira-kunihiko"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["الرياضيات", "السيرة الذاتية"]
+categories: ["mathematics", "biography"]
 tags: ["كونيهيكو كودايرا", "ميدالية فيلدز", "الهندسة المعقدة"]
 ---
 

@@ -3,7 +3,7 @@ title: "公鑰密碼學的數學：從 RSA 到橢圓曲線密碼學 (ECC)"
 description: "從質因數分解的困難度，轉向離散對數問題。"
 date: 2026-09-27T23:50:00+09:00
 slug: public-key-cryptography-rsa-ecc
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "cryptography", "security", "math", "algorithm"]
 image: eyecatch.jpg
 ---

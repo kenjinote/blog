@@ -4,9 +4,7 @@ description: "Подробный рассказ о жизни математик
 slug: "lagrange"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "математика"
-  - "биография"
+categories: ["mathematics", "biography"]
 tags:
   - "Лагранж"
   - "Вариационное исчисление"

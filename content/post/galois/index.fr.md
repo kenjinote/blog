@@ -4,7 +4,7 @@ description: "Le génial mathématicien Évariste Galois, mort en duel à 20 ans
 slug: "galois"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathématiques", "biographie"]
+categories: ["mathematics", "biography"]
 tags: ["Théorie de Galois", "Algèbre", "Théorie des groupes", "Histoire"]
 ---
 

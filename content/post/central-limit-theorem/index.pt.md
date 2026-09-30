@@ -4,7 +4,7 @@ date: "2026-09-24T19:44:38+09:00"
 description: "Uma explicação detalhada do Teorema do Limite Central, um dos teoremas mais importantes na estatística, desde a compreensão intuitiva até a prova matemática e a simulação usando Python."
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["Matemática", "Estatística"]
+categories: ["mathematics", "statistics"]
 tags: ["Teorema do Limite Central", "Probabilidade", "Ciência de Dados", "Python"]
 slug: "central-limit-theorem"
 ---

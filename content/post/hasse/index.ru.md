@@ -4,9 +4,7 @@ description: "Глубокое погружение в жизнь Гельмут
 slug: "hasse"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "математика"
-  - "биография"
+categories: ["mathematics", "biography"]
 tags:
   - "Гельмут Хассе"
   - "Теория чисел"

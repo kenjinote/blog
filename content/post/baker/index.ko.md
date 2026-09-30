@@ -4,7 +4,7 @@ description: "1970년 대수의 1차 형식에 관한 정리로 필즈상을 수
 slug: "baker"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["Alan Baker", "정수론", "필즈상", "초월수론"]
 ---
 

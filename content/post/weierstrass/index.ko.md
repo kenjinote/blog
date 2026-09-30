@@ -4,7 +4,7 @@ description: "'현대 해석학의 아버지'로 불리는 수학자 카를 바�
 slug: "weierstrass"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["수학", "바이어슈트라스", "해석학", "역사"]
 ---
 

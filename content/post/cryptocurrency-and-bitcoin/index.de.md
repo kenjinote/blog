@@ -4,7 +4,7 @@ description: "Eine umfassende Erklärung der technischen und mathematischen Mech
 slug: "cryptocurrency-and-bitcoin"
 date: "2026-09-20T23:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Technologie", "Mathematik"]
+categories: ["technology", "mathematics"]
 tags: ["Bitcoin", "Kryptographie", "Blockchain"]
 ---
 

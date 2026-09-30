@@ -4,7 +4,7 @@ description: "En matemáticas, el 'álgebra' evolucionó hasta convertirse en el
 slug: "groups-rings-and-fields"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matemáticas"]
+categories: ["mathematics"]
 tags: ["álgebra", "teoría de grupos", "teoría de anillos", "teoría de cuerpos"]
 ---
 

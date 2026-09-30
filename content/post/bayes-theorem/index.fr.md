@@ -4,8 +4,7 @@ description: "Une explication approfondie de la façon dont le théorème de Bay
 slug: "bayes-theorem"
 date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "mathématiques"
+categories: ["mathematics"]
 tags:
   - "Théorème de Bayes"
   - "Apprentissage Automatique"

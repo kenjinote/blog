@@ -4,9 +4,7 @@ description: "Plongez au cœur de la vie tumultueuse de Bernhard Riemann et de s
 slug: "riemann"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "mathématiques"
-  - "biographie"
+categories: ["mathematics", "biography"]
 tags:
   - "Riemann"
   - "Fonction zêta"

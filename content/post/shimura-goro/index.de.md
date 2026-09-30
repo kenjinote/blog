@@ -4,7 +4,7 @@ description: 'Goro Shimura, ein weltbekannter Mathematiker, bekannt für die Tan
 slug: "shimura-goro"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematik", "Biografie"]
+categories: ["mathematics", "biography"]
 tags: ["Goro Shimura", "Zahlentheorie", "Taniyama-Shimura-Vermutung", "Fermatscher letzter Satz"]
 ---
 

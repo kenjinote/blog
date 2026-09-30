@@ -4,8 +4,7 @@ description: "Introduction au calcul des combinaisons de paiement avec des pièc
 slug: "generating-functions"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathématiques"
+categories: ["mathematics"]
 tags:
   - "Fonctions génératrices"
   - "Combinatoire"

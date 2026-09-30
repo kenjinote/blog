@@ -4,7 +4,7 @@ description: "시라쿠사의 아르키메데스. '유레카'의 일화부터 �
 slug: "archimedes"
 date: "2026-09-20T18:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["아르키메데스", "고대 그리스", "기하학", "물리학", "미적분학"]
 ---
 

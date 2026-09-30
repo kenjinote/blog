@@ -4,9 +4,7 @@ description: "深入了解馬蘭·梅森的一生、他與笛卡兒和費馬的�
 slug: "mersenne"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "數學"
-  - "傳記"
+categories: ["mathematics", "biography"]
 tags:
   - "梅森"
   - "質數"

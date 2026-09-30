@@ -4,7 +4,7 @@ description: "독일의 수학자 쿠르트 헨젤의 생애와 현대 정수론
 slug: "hensel"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["쿠르트 헨젤", "p진수", "대수적 정수론", "수학사"]
 ---
 

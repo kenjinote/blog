@@ -4,7 +4,7 @@ description: "شرح مفصل للخلفية الرياضية للمشي الع�
 slug: "random-walk"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["الرياضيات"]
+categories: ["mathematics"]
 tags: ["مشية عشوائية", "احتمالات", "معادلة الانتشار", "حركة براونية", "بايثون"]
 ---
 

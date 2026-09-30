@@ -5,9 +5,7 @@ description: "勒内·笛卡尔以“我思故我在”闻名于世。我们将�
 slug: "descartes"
 date: 2026-09-20T18:50:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "mathematics"
-  - "传记"
+categories: ["mathematics", "biography"]
 tags:
   - "笛卡尔"
   - "解析几何"

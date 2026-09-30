@@ -4,7 +4,7 @@ description: "Una explicación detallada de la vida y los extraordinarios logros
 slug: "fermat"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matemáticas", "biografía"]
+categories: ["mathematics", "biography"]
 tags: ["Fermat", "Historia de las matemáticas", "Último teorema de Fermat", "Teoría de números", "Teoría de la probabilidad"]
 ---
 

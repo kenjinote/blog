@@ -5,8 +5,7 @@ description: "De la base de la théorie de l'information proposée par Claude Sh
 slug: information-theory-shannon-entropy
 date: 2026-09-21T02:45:54+09:00
 image: eyecatch.jpg
-categories:
-  - informatique
+categories: ["computer-science"]
 tags:
   - theorie-de-linformation
   - entropie

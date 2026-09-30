@@ -5,7 +5,7 @@ description: "Una explicación profunda de las superficies no orientables en top
 slug: "mobius-strip-and-klein-bottle"
 date: 2026-09-20T15:15:00+09:00
 image: "eyecatch.jpg"
-categories: ["matemáticas"]
+categories: ["mathematics"]
 tags: ["topología", "geometría", "cinta-de-mobius", "botella-de-klein"]
 ---
 

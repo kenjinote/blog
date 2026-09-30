@@ -4,9 +4,7 @@ description: 'Un resumen de la vida, los conflictos con Cantor y los profundos l
 slug: "kronecker"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matemáticas"
-  - "Biografía"
+categories: ["mathematics", "biography"]
 tags:
   - "Kronecker"
   - "Álgebra"

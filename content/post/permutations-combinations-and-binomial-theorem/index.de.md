@@ -4,8 +4,7 @@ description: "Eine detaillierte Erklärung der mathematischen Struktur, die durc
 slug: "permutations-combinations-and-binomial-theorem"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathematik"
+categories: ["mathematics"]
 tags:
   - "Kombinatorik"
   - "Binomischer Lehrsatz"

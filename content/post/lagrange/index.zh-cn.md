@@ -4,9 +4,7 @@ description: "详细介绍18世纪代表性数学家、物理学家约瑟夫·�
 slug: "lagrange"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "mathematics"
-  - "传记"
+categories: ["mathematics", "biography"]
 tags:
   - "拉格朗日"
   - "变分法"

@@ -4,9 +4,7 @@ description: "John Wallis, um proeminente matemático inglês do século XVII. E
 slug: "wallis"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "matemática"
-  - "biografia"
+categories: ["mathematics", "biography"]
 tags:
   - "John Wallis"
   - "Cálculo"

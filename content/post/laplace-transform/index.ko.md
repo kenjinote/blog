@@ -4,8 +4,7 @@ description: "라플라스 변환의 기초부터 미분 방정식에의 응용�
 slug: "laplace-transform"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
+categories: ["mathematics"]
 tags:
   - "라플라스 변환"
   - "미분 방정식"

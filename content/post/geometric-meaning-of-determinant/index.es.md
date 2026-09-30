@@ -4,8 +4,7 @@ description: "El determinante no es solo una fórmula de cálculo, sino un impor
 slug: "geometric-meaning-of-determinant"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "Matemáticas"
+categories: ["mathematics"]
 tags: 
   - "Álgebra lineal"
   - "Determinante"

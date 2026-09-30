@@ -4,7 +4,7 @@ description: "詳細解讀隨機漫步（醉漢漫步）的基礎知識，到擴
 slug: "random-walk"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學"]
+categories: ["mathematics"]
 tags: ["隨機漫步", "機率論", "擴散方程式", "布朗運動", "Python"]
 ---
 

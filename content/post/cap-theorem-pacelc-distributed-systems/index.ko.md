@@ -2,9 +2,7 @@
 title: "CAP 정리와 PACELC 정리: 분산 데이터베이스가 안고 있는 딜레마"
 description: "일관성인가, 가용성인가, 지연 시간인가."
 date: 2026-09-27T14:05:08+09:00
-categories:
-  - computer-science
-  - algorithm
+categories: ["computer-science", "algorithms"]
 tags:
   - tech
   - distributed-systems

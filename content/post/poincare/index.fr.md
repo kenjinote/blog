@@ -4,7 +4,7 @@ description: "Une exploration extrêmement détaillée de la vie du grand mathé
 slug: "poincare"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathématiques", "Biographie"]
+categories: ["mathematics", "biography"]
 tags: ["Poincaré", "Topologie", "Théorie du chaos", "Histoire des mathématiques", "Physique"]
 ---
 

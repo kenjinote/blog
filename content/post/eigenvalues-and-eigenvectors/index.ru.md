@@ -4,7 +4,7 @@ description: "Подробное объяснение собственных з�
 slug: "eigenvalues-and-eigenvectors"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["математика"]
+categories: ["mathematics"]
 tags: ["линейная-алгебра", "собственное-значение", "собственный-вектор", "математика", "машинное-обучение", "python", "наука-о-данных"]
 ---
 

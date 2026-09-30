@@ -5,7 +5,7 @@ description: '선형대수학의 중요 개념인 "그람-슈미트 직교화"�
 slug: 'gram-schmidt-process'
 date: '2026-09-20T14:40:00+09:00'
 image: "eyecatch.jpg"
-categories: ["수학"]
+categories: ["mathematics"]
 tags: ["선형대수", "알고리즘", "기계학습", "QR분해", "Python", "수치계산", "수학"]
 ---
 

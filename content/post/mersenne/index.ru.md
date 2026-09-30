@@ -4,9 +4,7 @@ description: "Глубокий взгляд на жизнь Марена Мер�
 slug: "mersenne"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Математика"
-  - "Биография"
+categories: ["mathematics", "biography"]
 tags:
   - "Мерсенн"
   - "Простые числа"

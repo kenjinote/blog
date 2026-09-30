@@ -4,8 +4,7 @@ description: "समावेशन-अपवर्जन सिद्धां�
 slug: "inclusion-exclusion-principle"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "गणित"
+categories: ["mathematics"]
 tags:
   - "गणित"
   - "क्रमचय-संचय"

@@ -4,7 +4,7 @@ description: "Ein tiefer Einblick in das Leben des großen deutschen Mathematike
 slug: "kummer"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematik", "biografie"]
+categories: ["mathematics", "biography"]
 tags: ["Ernst Kummer", "Großer Fermatscher Satz", "Ideale Zahlen", "Algebraische Zahlentheorie", "Reguläre Primzahlen"]
 ---
 

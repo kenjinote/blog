@@ -4,9 +4,7 @@ description: "غوص عميق في حياة هيلموت هاسه، أحد أب�
 slug: "hasse"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "رياضيات"
-  - "سيرة شخصية"
+categories: ["mathematics", "biography"]
 tags:
   - "هيلُموت هاسه"
   - "نظرية الأعداد"

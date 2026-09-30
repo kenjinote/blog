@@ -4,8 +4,7 @@ description: "深入了解排容原理的指南，這是一個必不可少的數
 slug: "inclusion-exclusion-principle"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "數學"
+categories: ["mathematics"]
 tags:
   - "數學"
   - "組合數學"

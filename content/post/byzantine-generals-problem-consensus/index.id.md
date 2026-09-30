@@ -5,9 +5,7 @@ description: "Membahas secara mendalam algoritma konsensus yang menjadi dasar si
 slug: byzantine-generals-problem-consensus
 date: 2026-09-21T02:45:54+09:00
 image: eyecatch.jpg
-categories:
-  - sistem-terdistribusi
-  - ilmu-komputer
+categories: ["distributed-systems", "computer-science"]
 tags:
   - konsensus
   - paxos

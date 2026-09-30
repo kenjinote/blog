@@ -2,7 +2,7 @@
 title: "編譯器最佳化技術：什麼是 SSA（靜態單賦值）"
 description: "探討編譯器如何魔改人類撰寫的程式碼。"
 slug: compiler-optimization-ssa
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "compiler", "optimization", "ssa", "computer-science"]
 image: eyecatch.jpg
 date: 2026-09-27T14:20:15+09:00

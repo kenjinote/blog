@@ -4,9 +4,7 @@ description: "探討隱藏在自然數據中神秘的數學定律，以及它如
 slug: "benfords-law"
 date: "2026-09-15T10:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "數學"
-  - "統計學"
+categories: ["mathematics", "statistics"]
 tags:
   - "班佛定律"
   - "欺詐檢測"

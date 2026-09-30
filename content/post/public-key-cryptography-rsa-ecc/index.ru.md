@@ -3,7 +3,7 @@ title: "Математика криптографии с открытым клю
 description: "Переход от сложности факторизации целых чисел к проблеме дискретного логарифмирования."
 date: 2026-09-27T23:50:00+09:00
 slug: public-key-cryptography-rsa-ecc
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "cryptography", "security", "math", "algorithm"]
 image: eyecatch.jpg
 ---

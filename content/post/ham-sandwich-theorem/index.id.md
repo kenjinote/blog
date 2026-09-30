@@ -4,8 +4,7 @@ description: "Penjelasan rinci tentang Teorema Sandwich Ham, yang menyatakan bah
 slug: "ham-sandwich-theorem"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matematika"
+categories: ["mathematics"]
 tags:
   - "Topologi"
   - "Geometri"

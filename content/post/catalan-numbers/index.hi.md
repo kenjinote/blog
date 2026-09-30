@@ -4,8 +4,7 @@ description: "कैटलन संख्याओं की व्याख्
 slug: "catalan-numbers"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "गणित"
+categories: ["mathematics"]
 tags:
   - "कैटलन-संख्याएँ"
   - "क्रमचय-संचय"

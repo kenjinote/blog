@@ -2,9 +2,7 @@
 title: "CAP Theorem and PACELC Theorem: The Dilemma of Distributed Databases"
 description: "Consistency, Availability, or Latency."
 date: 2026-09-27T14:05:08+09:00
-categories:
-  - computer-science
-  - algorithm
+categories: ["computer-science", "algorithms"]
 tags:
   - tech
   - distributed-systems

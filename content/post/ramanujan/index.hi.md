@@ -4,9 +4,7 @@ description: "भारतीय गणितीय प्रतिभा श्
 slug: "ramanujan"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "गणित"
-  - "जीवनी"
+categories: ["mathematics", "biography"]
 tags:
   - "रामानुजन"
   - "जी.एच. हार्डी"

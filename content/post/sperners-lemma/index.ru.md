@@ -4,7 +4,7 @@ description: "Объяснение того, как раскраска верш�
 slug: "sperners-lemma"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["математика"]
+categories: ["mathematics"]
 tags: ["топология", "комбинаторика", "теорема-о-неподвижной-точке"]
 ---
 

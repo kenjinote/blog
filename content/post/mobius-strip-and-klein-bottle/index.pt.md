@@ -5,7 +5,7 @@ description: "Uma explicação detalhada das superfícies não orientáveis na t
 slug: "mobius-strip-and-klein-bottle"
 date: 2026-09-20T15:15:00+09:00
 image: "eyecatch.jpg"
-categories: ["matemática"]
+categories: ["mathematics"]
 tags: ["topologia", "geometria", "fita-de-mobius", "garrafa-de-klein"]
 ---
 

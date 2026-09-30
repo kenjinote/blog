@@ -4,8 +4,7 @@ description: "Temukan bukti-bukti menarik dari teorema Pythagoras. Jelajahi kein
 slug: "diverse-proofs-of-pythagorean-theorem"
 date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "Matematika"
+categories: ["mathematics"]
 tags: 
   - "Geometri"
   - "Aljabar"

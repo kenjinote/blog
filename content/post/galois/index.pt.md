@@ -4,7 +4,7 @@ description: "O genial matemático Évariste Galois, que morreu em um duelo aos 
 slug: "galois"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matemática", "biografia"]
+categories: ["mathematics", "biography"]
 tags: ["Teoria de Galois", "Álgebra", "Teoria dos grupos", "História"]
 ---
 

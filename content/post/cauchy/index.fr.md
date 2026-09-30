@@ -5,9 +5,7 @@ description: "Une exploration détaillée de la vie du grand mathématicien fran
 slug: "cauchy"
 date: 2026-09-20T19:20:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "mathématiques"
-  - "biographie"
+categories: ["mathematics", "biography"]
 tags:
   - "Cauchy"
   - "Analyse"

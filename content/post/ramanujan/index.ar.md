@@ -4,9 +4,7 @@ description: "شرح متعمق لحياة عبقري الرياضيات اله�
 slug: "ramanujan"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "الرياضيات"
-  - "السيرة الذاتية"
+categories: ["mathematics", "biography"]
 tags:
   - "رامانوجان"
   - "جي. إتش. هاردي"

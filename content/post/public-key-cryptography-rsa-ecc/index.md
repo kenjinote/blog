@@ -3,7 +3,7 @@ title: "公開鍵暗号の数学：RSAから楕円曲線暗号（ECC）へ"
 description: "素因数分解の困難さから、離散対数問題へのシフト。"
 date: 2026-09-27T23:50:00+09:00
 slug: public-key-cryptography-rsa-ecc
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "cryptography", "security", "math", "algorithm"]
 image: eyecatch.jpg
 ---

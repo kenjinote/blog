@@ -4,7 +4,7 @@ description: "Pandangan mendalam tentang kehidupan dan pencapaian matematika Ala
 slug: "baker"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matematika", "biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Alan Baker", "Teori Bilangan", "Medali Fields", "Teori Bilangan Transenden"]
 ---
 

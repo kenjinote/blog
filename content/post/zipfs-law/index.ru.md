@@ -4,7 +4,7 @@ description: "Глубокий взгляд, с использованием ф�
 slug: "zipfs-law"
 date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
-categories: ["математика", "наука-о-данных", "лингвистика"]
+categories: ["mathematics", "data-science", "linguistics"]
 tags:
   - "Закон Ципфа"
   - "Степенной закон"

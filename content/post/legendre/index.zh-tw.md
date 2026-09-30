@@ -4,7 +4,7 @@ description: "詳細講述了法國偉大的數學家阿德里安-馬里·勒讓
 slug: "legendre"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學", "傳記"]
+categories: ["mathematics", "biography"]
 tags: ["勒讓德", "數論", "幾何", "數學史"]
 ---
 

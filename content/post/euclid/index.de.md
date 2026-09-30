@@ -5,7 +5,7 @@ description: "Ein tiefer Einblick in das Leben des antiken griechischen Mathemat
 slug: "euclid"
 date: 2026-09-20T18:40:00+09:00
 image: "eyecatch.jpg"
-categories: ["Mathematik", "Biografie"]
+categories: ["mathematics", "biography"]
 tags: ["Euklid", "Geometrie", "Geschichte der Mathematik", "Antikes Griechenland", "Elemente", "Euklidischer Algorithmus"]
 ---
 

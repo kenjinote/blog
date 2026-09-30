@@ -4,9 +4,7 @@ description: "Une explication détaillée de la vie du mathématicien et physici
 slug: "lagrange"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "mathématiques"
-  - "biographie"
+categories: ["mathematics", "biography"]
 tags:
   - "Lagrange"
   - "Calcul des variations"

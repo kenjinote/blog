@@ -2,7 +2,7 @@
 title: "تقنية تحسين المترجم: ما هو SSA (التعيين الفردي الثابت)"
 description: "كيف يقوم المترجم بتعديلات سحرية على الكود الذي يكتبه البشر."
 slug: compiler-optimization-ssa
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "compiler", "optimization", "ssa", "computer-science"]
 image: eyecatch.jpg
 date: 2026-09-27T14:20:15+09:00

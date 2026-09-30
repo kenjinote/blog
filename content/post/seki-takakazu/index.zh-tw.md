@@ -4,7 +4,7 @@ description: "詳細解讀江戶時代天才數學家關孝和的生平，以及
 slug: "seki-takakazu"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學", "傳記"]
+categories: ["mathematics", "biography"]
 tags: ["關孝和", "和算", "江戶時代", "數學史", "微積分", "行列式"]
 ---
 

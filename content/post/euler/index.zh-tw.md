@@ -4,7 +4,7 @@ description: "歷史上最偉大的數學家之一，李昂哈德·歐拉。詳�
 slug: "euler"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學", "傳記"]
+categories: ["mathematics", "biography"]
 tags: ["歐拉", "數學史", "天才", "物理學"]
 ---
 

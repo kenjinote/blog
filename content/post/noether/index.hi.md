@@ -4,7 +4,7 @@ description: "एमी नेदर के जीवन और उपलब्�
 slug: "noether"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["एमी नेदर", "अमूर्त बीजगणित", "भौतिकी", "स्टेम में महिलाएं"]
 ---
 

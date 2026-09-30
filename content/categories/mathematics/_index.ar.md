@@ -1,3 +1,9 @@
 ---
-title: "رياضيات"
+{
+  "title": "رياضيات",
+  "aliases": [
+    "/ar/categories/الرياضيات/",
+    "/ar/categories/رياضيات/"
+  ]
+}
 ---

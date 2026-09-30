@@ -4,7 +4,7 @@ description: "Une explication détaillée de l'arrière-plan mathématique de la
 slug: "random-walk"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathématiques"]
+categories: ["mathematics"]
 tags: ["Marche Aléatoire", "Probabilité", "Équation de Diffusion", "Mouvement Brownien", "Python"]
 ---
 

@@ -4,7 +4,7 @@ description: "دليل شامل للأسس الرياضية، والحدس ال�
 slug: "singular-value-decomposition"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["رياضيات"]
+categories: ["mathematics"]
 tags: ["SVD", "الجبر الخطي", "تعلم الآلة", "ضغط البيانات", "الذكاء الاصطناعي", "Python"]
 ---
 

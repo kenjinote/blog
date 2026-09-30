@@ -4,7 +4,7 @@ description: "أرخميدس السرقسطي. من قصة 'يوريكا' إلى
 slug: "archimedes"
 date: "2026-09-20T18:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["الرياضيات", "سيرة شخصية"]
+categories: ["mathematics", "biography"]
 tags: ["أرخميدس", "اليونان القديمة", "الهندسة", "الفيزياء", "التفاضل والتكامل"]
 ---
 

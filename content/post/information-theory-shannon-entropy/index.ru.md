@@ -5,8 +5,7 @@ description: "Подробно объясняются основы теории 
 slug: information-theory-shannon-entropy
 date: 2026-09-21T02:45:54+09:00
 image: eyecatch.jpg
-categories:
-  - информатика
+categories: ["computer-science"]
 tags:
   - теория-информации
   - энтропия

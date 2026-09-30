@@ -5,7 +5,7 @@ description: "'수학의 왕'이라 불리는 카를 프리드리히 가우스�
 slug: "gauss"
 date: 2026-09-20T19:10:00+09:00
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["가우스", "수학사", "천재", "기하학", "정수론"]
 ---
 

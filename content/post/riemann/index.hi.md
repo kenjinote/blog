@@ -4,9 +4,7 @@ description: "बर्नहार्ड रीमैन के उथल-प�
 slug: "riemann"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "गणित"
-  - "जीवनी"
+categories: ["mathematics", "biography"]
 tags:
   - "रीमैन"
   - "जीटा फ़ंक्शन"

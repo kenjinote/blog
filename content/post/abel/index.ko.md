@@ -4,7 +4,7 @@ description: "노르웨이가 낳은 천재 수학자 닐스 헨리크 아벨. 2
 slug: "abel"
 date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["아벨", "대수학", "역사", "수학"]
 ---
 

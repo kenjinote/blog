@@ -4,9 +4,7 @@ description: "Ein tiefer Einblick in das Leben von Marin Mersenne, seine Interak
 slug: "mersenne"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathematik"
-  - "Biografie"
+categories: ["mathematics", "biography"]
 tags:
   - "Mersenne"
   - "Primzahlen"

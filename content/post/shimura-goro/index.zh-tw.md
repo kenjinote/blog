@@ -4,7 +4,7 @@ description: '志村五郎，以谷山-志村猜想而聞名的世界級數學�
 slug: "shimura-goro"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學", "傳記"]
+categories: ["mathematics", "biography"]
 tags: ["志村五郎", "數論", "谷山-志村猜想", "費馬大定理"]
 ---
 

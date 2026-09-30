@@ -2,7 +2,8 @@
 {
   "title": "Ciencias de la computación",
   "aliases": [
-    "/es/categories/ciencias-de-la-computación/"
+    "/es/categories/ciencias-de-la-computación/",
+    "/es/categories/informática/"
   ]
 }
 ---

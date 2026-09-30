@@ -4,9 +4,7 @@ description: "Penjelasan mendetail tentang kehidupan penuh gejolak Georg Cantor,
 slug: "cantor"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "matematika"
-  - "biografi"
+categories: ["mathematics", "biography"]
 tags:
   - "Georg Cantor"
   - "Teori Himpunan"

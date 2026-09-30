@@ -5,9 +5,7 @@ description: "René Descartes terkenal dengan 'Aku berpikir, maka aku ada'. Kami
 slug: "descartes"
 date: 2026-09-20T18:50:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Matematika"
-  - "Biografi"
+categories: ["mathematics", "biography"]
 tags:
   - "Descartes"
   - "Geometri Analitik"

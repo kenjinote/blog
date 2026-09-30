@@ -4,7 +4,7 @@ description: "Explorando la vida y obra del matemático Kunihiko Kodaira, el pri
 slug: "kodaira-kunihiko"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matemáticas", "biografía"]
+categories: ["mathematics", "biography"]
 tags: ["Kunihiko Kodaira", "Medalla Fields", "Geometría Compleja"]
 ---
 

@@ -4,7 +4,7 @@ description: "कार्ल वीयरस्ट्रास, जिन्ह
 slug: "weierstrass"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["गणित", "वीयरस्ट्रास", "विश्लेषण", "इतिहास"]
 ---
 

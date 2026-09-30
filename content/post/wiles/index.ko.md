@@ -4,7 +4,7 @@ description: "「페르마의 마지막 정리」를 증명하여 수학계에 �
 slug: "wiles"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["앤드루 와일즈", "페르마", "정수론"]
 ---
 

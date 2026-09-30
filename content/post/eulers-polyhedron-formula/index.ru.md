@@ -4,8 +4,7 @@ description: "Подробное объяснение красоты форму�
 slug: "eulers-polyhedron-formula"
 date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Математика"
+categories: ["mathematics"]
 tags:
   - "Топология"
   - "Геометрия"

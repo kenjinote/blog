@@ -4,7 +4,7 @@ description: "रैखिक बीजगणित में सबसे म�
 slug: "eigenvalues-and-eigenvectors"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित"]
+categories: ["mathematics"]
 tags: ["रैखिक-बीजगणित", "आइगेनवैल्यू", "आइगेनवेक्टर", "गणित", "मशीन-लर्निंग", "पायथन", "डेटा-साइंस"]
 ---
 

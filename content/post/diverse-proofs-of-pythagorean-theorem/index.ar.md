@@ -4,8 +4,7 @@ description: "اكتشف براهين رائعة لـ مبرهنة فيثاغو�
 slug: "diverse-proofs-of-pythagorean-theorem"
 date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "رياضيات"
+categories: ["mathematics"]
 tags: 
   - "هندسة"
   - "جبر"

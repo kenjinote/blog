@@ -4,7 +4,7 @@ description: "Archimède de Syracuse. De l'épisode « Eurêka » au calcul de p
 slug: "archimedes"
 date: "2026-09-20T18:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathématiques", "biographie"]
+categories: ["mathematics", "biography"]
 tags: ["Archimède", "Grèce antique", "Géométrie", "Physique", "Calcul infinitésimal"]
 ---
 

@@ -5,8 +5,7 @@ description: "गणना का मूल सिद्धांत, लैम�
 slug: lambda-calculus-functional-programming
 date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
-categories:
-  - कंप्यूटर-विज्ञान
+categories: ["computer-science"]
 tags:
   - लैम्ब्डा-कैलकुलस
   - फंक्शनल-प्रोग्रामिंग

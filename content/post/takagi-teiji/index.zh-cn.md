@@ -5,9 +5,7 @@ description: '深入探讨日本近代数学之父高木贞治的生平，以及
 slug: 'takagi-teiji'
 date: '2026-09-20T19:50:00+09:00'
 image: "eyecatch.jpg"
-categories:
-  - 'mathematics'
-  - '传记'
+categories: ["mathematics", "biography"]
 tags:
   - '高木贞治'
   - '类域论'

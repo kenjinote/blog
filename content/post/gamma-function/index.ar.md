@@ -5,7 +5,7 @@ description: "تربط دالة غاما المضاريب المنفصلة بم�
 slug: "gamma-function"
 date: 2026-09-20T14:40:00+09:00
 image: "eyecatch.jpg"
-categories: ["الرياضيات"]
+categories: ["mathematics"]
 tags: ["دالة غاما", "أويلر", "التحليل المركب", "حساب التفاضل والتكامل"]
 ---
 

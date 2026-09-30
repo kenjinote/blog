@@ -4,9 +4,7 @@ description: "19वीं सदी के एक प्रमुख गणि�
 slug: "jacobi"
 date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "गणित"
-  - "जीवनी"
+categories: ["mathematics", "biography"]
 tags:
   - "जैकोबी"
   - "अण्डाकार कार्य (Elliptic Functions)"

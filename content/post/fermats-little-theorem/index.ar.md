@@ -5,8 +5,7 @@ description: "شرح مفصل لمبرهنة فيرما الصغرى، من ال
 slug: "fermats-little-theorem"
 date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "رياضيات"
+categories: ["mathematics"]
 tags:
   - "نظرية الأعداد"
   - "تعمية"

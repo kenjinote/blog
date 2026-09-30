@@ -4,7 +4,7 @@ description: "شرح متعمق لحياة والإنجازات الرياضية
 slug: "fermat"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["الرياضيات", "سيرة ذاتية"]
+categories: ["mathematics", "biography"]
 tags: ["فيرما", "تاريخ الرياضيات", "مبرهنة فيرما الأخيرة", "نظرية الأعداد", "نظرية الاحتمالات"]
 ---
 

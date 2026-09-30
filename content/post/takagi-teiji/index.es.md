@@ -5,9 +5,7 @@ description: 'Una mirada profunda a la vida de Teiji Takagi, el padre de las mat
 slug: 'takagi-teiji'
 date: '2026-09-20T19:50:00+09:00'
 image: "eyecatch.jpg"
-categories:
-  - 'matemáticas'
-  - 'biografía'
+categories: ["mathematics", "biography"]
 tags:
   - 'Teiji Takagi'
   - 'Teoría de cuerpos de clases'

@@ -5,9 +5,7 @@ description: "\"لعبة الحياة لكونواي\" هي إنسان آلي خ
 slug: "conways-game-of-life"
 date: 2026-09-15T10:00:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "الرياضيات"
-  - "علوم الحاسوب"
+categories: ["mathematics", "computer-science"]
 tags:
   - "لعبة الحياة لكونواي"
   - "الإنسان الآلي الخلوي"

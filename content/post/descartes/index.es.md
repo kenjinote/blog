@@ -5,9 +5,7 @@ description: "René Descartes es famoso por 'Pienso, luego existo'. Exploramos s
 slug: "descartes"
 date: 2026-09-20T18:50:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Matemáticas"
-  - "Biografía"
+categories: ["mathematics", "biography"]
 tags:
   - "Descartes"
   - "Geometría analítica"

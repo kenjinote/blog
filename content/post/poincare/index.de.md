@@ -4,7 +4,7 @@ description: "Eine äußerst detaillierte Untersuchung des Lebens des großen fr
 slug: "poincare"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematik", "Biografie"]
+categories: ["mathematics", "biography"]
 tags: ["Poincaré", "Topologie", "Chaostheorie", "Mathematikgeschichte", "Physik"]
 ---
 

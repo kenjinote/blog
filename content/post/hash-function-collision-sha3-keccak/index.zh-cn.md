@@ -2,7 +2,7 @@
 slug: hash-function-collision-sha3-keccak
 title: "哈希函数的抗碰撞性与SHA-3 (Keccak)"
 description: "海绵结构——一种新的密码学哈希机制。"
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "cryptography", "security", "hash", "algorithm"]
 date: 2026-09-27T14:20:15+09:00
 image: "eyecatch.jpg"

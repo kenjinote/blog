@@ -4,7 +4,7 @@ description: "Une plongée approfondie dans la vie du grand mathématicien allem
 slug: "kummer"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathématiques", "biographie"]
+categories: ["mathematics", "biography"]
 tags: ["Ernst Kummer", "Dernier théorème de Fermat", "Nombres idéaux", "Théorie algébrique des nombres", "Nombres premiers réguliers"]
 ---
 

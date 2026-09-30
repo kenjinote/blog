@@ -4,8 +4,7 @@ description: "المحدد ليس مجرد صيغة حسابية، بل هو م�
 slug: "geometric-meaning-of-determinant"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "الرياضيات"
+categories: ["mathematics"]
 tags: 
   - "الجبر الخطي"
   - "المحدد"

@@ -4,8 +4,7 @@ description: "펠 방정식의 기초부터 연분수를 이용한 해법, 그�
 slug: "pell-equation"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
+categories: ["mathematics"]
 tags:
   - "펠-방정식"
   - "디오판토스-방정식"

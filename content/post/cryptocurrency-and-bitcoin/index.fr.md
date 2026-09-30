@@ -4,7 +4,7 @@ description: "Explication approfondie des mécanismes techniques et mathématiqu
 slug: "cryptocurrency-and-bitcoin"
 date: "2026-09-20T23:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["technologie", "mathématiques"]
+categories: ["technology", "mathematics"]
 tags: ["bitcoin", "cryptographie", "blockchain"]
 ---
 

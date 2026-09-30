@@ -4,8 +4,7 @@ description: "ज्यामितीय अंतर्ज्ञान और 
 slug: "method-of-least-squares"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "गणित"
+categories: ["mathematics"]
 tags:
   - "रैखिक बीजगणित"
   - "अनुकूलन"

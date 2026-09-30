@@ -4,7 +4,7 @@ description: "نظرة متعمقة، باستخدام الصيغ والمخطط
 slug: "zipfs-law"
 date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
-categories: ["رياضيات", "علم-البيانات", "لغويات"]
+categories: ["mathematics", "data-science", "linguistics"]
 tags:
   - "قانون زيف"
   - "قانون القوة"

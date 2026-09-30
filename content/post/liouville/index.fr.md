@@ -5,9 +5,7 @@ description: 'Découvrez la vie et l''héritage de Joseph Liouville, le grand ma
 slug: 'liouville'
 date: '2026-09-20T19:20:00+09:00'
 image: "eyecatch.jpg"
-categories:
-  - 'Mathématiques'
-  - 'Biographie'
+categories: ["mathematics", "biography"]
 tags:
   - 'Liouville'
   - 'Analyse Complexe'

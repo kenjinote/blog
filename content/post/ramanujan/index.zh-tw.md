@@ -4,9 +4,7 @@ description: "深入解析印度天才數學家斯里尼瓦瑟·拉馬努金的�
 slug: "ramanujan"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "數學"
-  - "傳記"
+categories: ["mathematics", "biography"]
 tags:
   - "拉馬努金"
   - "G.H.哈代"

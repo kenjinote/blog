@@ -4,8 +4,7 @@ description: "Une explication détaillée de l'histoire, de la signification int
 slug: "fundamental-theorem-of-algebra"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathématiques"
+categories: ["mathematics"]
 tags:
   - "Algèbre"
   - "Analyse complexe"

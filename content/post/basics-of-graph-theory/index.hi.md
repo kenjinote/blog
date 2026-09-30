@@ -4,8 +4,7 @@ description: "ग्राफ सिद्धांत के मूल तत�
 slug: "basics-of-graph-theory"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "गणित"
+categories: ["mathematics"]
 tags:
   - "ग्राफ सिद्धांत"
   - "एल्गोरिथ्म"

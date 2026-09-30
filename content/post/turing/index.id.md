@@ -4,7 +4,7 @@ description: "Penjelasan rinci tentang kehidupan Alan Turing, pemecahan Enigma, 
 slug: "turing"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matematika", "Biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Alan Turing", "Mesin Turing", "Enigma", "Masalah Penghentian", "Morfogenesis"]
 ---
 

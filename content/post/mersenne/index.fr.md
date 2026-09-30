@@ -4,9 +4,7 @@ description: "Un regard approfondi sur la vie de Marin Mersenne, ses interaction
 slug: "mersenne"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathématiques"
-  - "Biographie"
+categories: ["mathematics", "biography"]
 tags:
   - "Mersenne"
   - "Nombres Premiers"

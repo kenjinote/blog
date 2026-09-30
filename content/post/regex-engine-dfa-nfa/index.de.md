@@ -3,7 +3,7 @@ title: "Reguläre-Ausdrücke-Engines und endliche Automaten"
 description: "DFA und NFA, und warum manche reguläre Ausdrücke katastrophal 'langsam' sind."
 date: 2026-09-27T14:05:08+09:00
 slug: regex-engine-dfa-nfa
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "algorithm", "regex", "automata", "computer-science"]
 image: eyecatch.jpg
 ---

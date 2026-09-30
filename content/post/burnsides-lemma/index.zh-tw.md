@@ -4,8 +4,7 @@ description: "以項鍊的配色為例，講解如何消除由旋轉引起的重
 slug: "burnsides-lemma"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "數學"
+categories: ["mathematics"]
 tags:
   - "群論"
   - "組合數學"

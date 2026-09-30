@@ -3,7 +3,7 @@ title: "Die Mathematik der Public-Key-Kryptographie: Von RSA zur Elliptischen-Ku
 description: "Der Wechsel von der Schwierigkeit der Primfaktorzerlegung zum diskreten Logarithmusproblem."
 date: 2026-09-27T23:50:00+09:00
 slug: public-key-cryptography-rsa-ecc
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "cryptography", "security", "math", "algorithm"]
 image: eyecatch.jpg
 ---

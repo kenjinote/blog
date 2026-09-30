@@ -5,7 +5,7 @@ description: "알렉산더 그로텐디크의 기구한 생애와 대수기하�
 slug: "grothendieck"
 date: 2026-09-20T20:30:00+09:00
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["그로텐디크", "대수기하학", "스킴 이론", "범주론"]
 ---
 

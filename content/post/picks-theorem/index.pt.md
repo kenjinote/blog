@@ -4,8 +4,7 @@ description: "Uma explicação detalhada, com diagramas e demonstrações, da f�
 slug: "picks-theorem"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "matemática"
+categories: ["mathematics"]
 tags:
   - "geometria"
   - "teorema-de-pick"

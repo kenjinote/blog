@@ -4,9 +4,7 @@ description: "Gilles Personne de Roberval fut l'un des plus grands mathématicie
 slug: "roberval"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "mathématiques"
-  - "biographie"
+categories: ["mathematics", "biography"]
 tags:
   - "Roberval"
   - "Histoire des mathématiques"

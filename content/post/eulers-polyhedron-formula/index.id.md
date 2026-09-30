@@ -4,8 +4,7 @@ description: "Penjelasan mendetail tentang keindahan rumus polyhedron Euler (V -
 slug: "eulers-polyhedron-formula"
 date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matematika"
+categories: ["mathematics"]
 tags:
   - "Topologi"
   - "Geometri"

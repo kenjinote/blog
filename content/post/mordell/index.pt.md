@@ -5,7 +5,7 @@ description: "Uma explicação detalhada da vida e das contribuições matemáti
 slug: "mordell"
 date: 2026-09-20T20:10:00+09:00
 image: "eyecatch.jpg"
-categories: ["matemática", "biografia"]
+categories: ["mathematics", "biography"]
 tags: ["teoria dos números", "Mordell", "curvas elípticas", "equações diofantinas"]
 ---
 

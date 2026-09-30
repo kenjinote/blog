@@ -5,7 +5,7 @@ description: 'Panduan komprehensif tentang proses ortogonalisasi Gram-Schmidt da
 slug: 'gram-schmidt-process'
 date: '2026-09-20T14:40:00+09:00'
 image: "eyecatch.jpg"
-categories: ["Matematika"]
+categories: ["mathematics"]
 tags: ["Aljabar Linear", "Algoritma", "Pembelajaran Mesin", "Dekomposisi QR", "Python", "Komputasi Numerik", "Matematika"]
 ---
 

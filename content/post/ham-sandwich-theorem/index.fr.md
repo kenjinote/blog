@@ -4,8 +4,7 @@ description: "Une explication détaillée du théorème du sandwich au jambon, q
 slug: "ham-sandwich-theorem"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathématiques"
+categories: ["mathematics"]
 tags:
   - "Topologie"
   - "Géométrie"

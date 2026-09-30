@@ -4,8 +4,7 @@ description: "Подробное руководство по основам те
 slug: "basics-of-graph-theory"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "математика"
+categories: ["mathematics"]
 tags:
   - "теория графов"
   - "алгоритм"

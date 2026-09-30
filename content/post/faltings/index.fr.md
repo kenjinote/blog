@@ -4,9 +4,7 @@ description: "Une explication détaillée de la vie du lauréat de la médaille 
 slug: "faltings"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathématiques"
-  - "Biographie"
+categories: ["mathematics", "biography"]
 tags:
   - "Gerd Faltings"
   - "Théorie des nombres"

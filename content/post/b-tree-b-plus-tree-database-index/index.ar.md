@@ -2,9 +2,7 @@
 title: "أشجار B وأشجار B+: لماذا فهارس قواعد البيانات سريعة جداً"
 description: "ما وراء كواليس الهياكل الشجرية التي تقلل من عمليات الإدخال والإخراج للقرص (Disk I/O)."
 slug: b-tree-b-plus-tree-database-index
-categories:
-  - computer-science
-  - algorithm
+categories: ["computer-science", "algorithms"]
 tags:
   - tech
   - database

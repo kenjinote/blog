@@ -4,7 +4,7 @@ description: "एंड्रयू विल्स के जीवन और �
 slug: "wiles"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["एंड्रयू विल्स", "फ़र्मेट", "संख्या सिद्धांत"]
 ---
 

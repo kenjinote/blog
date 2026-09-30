@@ -4,8 +4,7 @@ description: "Panduan terperinci tentang persamaan Pell, penyelesaiannya menggun
 slug: "pell-equation"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "matematika"
+categories: ["mathematics"]
 tags:
   - "persamaan-pell"
   - "persamaan-diophantine"

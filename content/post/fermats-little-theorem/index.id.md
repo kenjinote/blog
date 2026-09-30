@@ -5,8 +5,7 @@ description: "Penjelasan mendetail tentang Teorema Kecil Fermat, dari pemahaman 
 slug: "fermats-little-theorem"
 date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Matematika"
+categories: ["mathematics"]
 tags:
   - "Teori Bilangan"
   - "Kriptografi"

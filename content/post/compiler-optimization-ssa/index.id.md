@@ -2,7 +2,7 @@
 title: "Teknologi Optimasi Kompilator: Apa itu SSA (Penugasan Tunggal Statis)"
 description: "Bagaimana kompilator secara radikal memodifikasi kode yang ditulis oleh manusia."
 slug: compiler-optimization-ssa
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "compiler", "optimization", "ssa", "computer-science"]
 image: eyecatch.jpg
 date: 2026-09-27T14:20:15+09:00

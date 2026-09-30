@@ -5,9 +5,7 @@ description: "En partant des bases de la théorie des graphes, nous expliquons d
 slug: graph-theory-dijkstra-a-star
 date: 2026-09-21T02:45:54+09:00
 image: eyecatch.jpg
-categories:
-  - mathématiques
-  - informatique
+categories: ["mathematics", "computer-science"]
 tags:
   - théorie-des-graphes
   - dijkstra

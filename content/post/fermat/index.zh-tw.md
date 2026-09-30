@@ -4,7 +4,7 @@ description: "深入解析 17 世紀法國法官皮埃爾·德·費馬的生平�
 slug: "fermat"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學", "傳記"]
+categories: ["mathematics", "biography"]
 tags: ["費馬", "數學史", "費馬最後定理", "數論", "機率論"]
 ---
 

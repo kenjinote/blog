@@ -5,9 +5,7 @@ description: "Uma explicação detalhada da vida do antigo matemático grego Dio
 slug: "diophantus"
 date: 2026-09-20T18:40:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "matemática"
-  - "biografia"
+categories: ["mathematics", "biography"]
 tags:
   - "Diofanto"
   - "Álgebra"

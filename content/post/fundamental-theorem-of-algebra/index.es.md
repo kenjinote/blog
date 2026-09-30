@@ -4,8 +4,7 @@ description: "Una explicación detallada de la historia, el significado intuitiv
 slug: "fundamental-theorem-of-algebra"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matemáticas"
+categories: ["mathematics"]
 tags:
   - "Álgebra"
   - "Análisis complejo"

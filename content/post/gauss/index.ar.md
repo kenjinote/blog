@@ -5,7 +5,7 @@ description: "شرح مفصل عن حياة، والحلقات المذهلة، 
 slug: "gauss"
 date: 2026-09-20T19:10:00+09:00
 image: "eyecatch.jpg"
-categories: ["رياضيات", "سيرة شخصية"]
+categories: ["mathematics", "biography"]
 tags: ["جاوس", "تاريخ الرياضيات", "عبقري", "هندسة", "نظرية الأعداد"]
 ---
 

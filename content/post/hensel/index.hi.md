@@ -4,7 +4,7 @@ description: "जर्मन गणितज्ञ कर्ट हेन्स
 slug: "hensel"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["कर्ट हेन्सेल", "पी-एडिक संख्याएँ", "बीजगणितीय संख्या सिद्धांत", "गणित का इतिहास"]
 ---
 

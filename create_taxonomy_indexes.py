@@ -41,14 +41,16 @@ for cat, langs in categories_to_translate.items():
     os.makedirs(cat_dir, exist_ok=True)
     
     for lang, title in langs.items():
-        if lang == "" or lang == "ja":
-            # Default or explicit Japanese
-            # Usually _index.md is default/Japanese in this setup
-            filename = "_index.md" if lang == "" else f"_index.{lang}.md"
+        if lang == "ja":
+            continue  # Japanese is defined by _index.md; do not duplicate it.
+        if lang == "":
+            filename = "_index.md"
         else:
             filename = f"_index.{lang}.md"
             
         filepath = os.path.join(cat_dir, filename)
+        if os.path.exists(filepath):
+            continue  # Preserve maintained titles and legacy URL aliases.
         content = f"---\ntitle: \"{title}\"\n---\n"
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(content)

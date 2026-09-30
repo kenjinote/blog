@@ -4,8 +4,7 @@ description: "شرح مفصل لتعريف إبسيلون-دلتا للنهاي�
 slug: "epsilon-delta-definition"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "رياضيات"
+categories: ["mathematics"]
 tags: 
   - "تفاضل وتكامل"
   - "نهايات"

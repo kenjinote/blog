@@ -5,7 +5,7 @@ description: "شرح مفصل للحياة الاستثنائية والإنجا
 slug: "grothendieck"
 date: 2026-09-20T20:30:00+09:00
 image: "eyecatch.jpg"
-categories: ["رياضيات", "سيرة ذاتية"]
+categories: ["mathematics", "biography"]
 tags: ["غروتينديك", "هندسة جبرية", "نظرية المخططات", "نظرية الفئات"]
 ---
 

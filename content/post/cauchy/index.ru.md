@@ -5,9 +5,7 @@ description: "Подробное исследование жизни велик�
 slug: "cauchy"
 date: 2026-09-20T19:20:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "математика"
-  - "биография"
+categories: ["mathematics", "biography"]
 tags:
   - "Коши"
   - "Анализ"

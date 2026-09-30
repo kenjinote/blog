@@ -4,7 +4,7 @@ description: "Pandangan mendalam, menggunakan rumus dan diagram, ke dalam 'Hukum
 slug: "zipfs-law"
 date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
-categories: ["matematika", "ilmu-data", "linguistik"]
+categories: ["mathematics", "data-science", "linguistics"]
 tags:
   - "Hukum Zipf"
   - "Hukum Pangkat"

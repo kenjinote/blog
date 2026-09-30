@@ -4,8 +4,7 @@ description: "Eine detaillierte Erklärung der 'Fourier-Reihe', die komplexe Wel
 slug: "fourier-series-and-transform"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "mathematik"
+categories: ["mathematics"]
 tags:
   - "Fourier"
   - "Mathematik"

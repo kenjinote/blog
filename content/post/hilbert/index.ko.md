@@ -4,7 +4,7 @@ description: "19세기부터 20세기에 걸친 가장 위대한 수학자 중 �
 slug: "hilbert"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["힐베르트", "수학사", "기하학", "함수해석학", "물리학", "정수론"]
 ---
 

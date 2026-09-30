@@ -2,9 +2,7 @@
 title: "CAP定理とPACELC定理：分散データベースが抱えるジレンマ"
 description: "一貫性か、可用性か、レイテンシか。"
 date: 2026-09-27T14:05:08+09:00
-categories:
-  - computer-science
-  - algorithm
+categories: ["computer-science", "algorithms"]
 tags:
   - tech
   - distributed-systems

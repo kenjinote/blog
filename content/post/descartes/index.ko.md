@@ -5,9 +5,7 @@ description: "'나는 생각한다, 고로 나는 존재한다'로 유명한 르
 slug: "descartes"
 date: 2026-09-20T18:50:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "수학"
-  - "전기"
+categories: ["mathematics", "biography"]
 tags:
   - "데카르트"
   - "해석 기하학"

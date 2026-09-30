@@ -4,7 +4,7 @@ description: 'Goro Shimura, un matemático de renombre mundial conocido por la c
 slug: "shimura-goro"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matemáticas", "biografía"]
+categories: ["mathematics", "biography"]
 tags: ["Goro Shimura", "Teoría de números", "Conjetura de Taniyama-Shimura", "Último teorema de Fermat"]
 ---
 

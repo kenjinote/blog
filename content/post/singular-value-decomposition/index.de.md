@@ -4,7 +4,7 @@ description: "Ein umfassender Leitfaden zu den mathematischen Grundlagen, der ge
 slug: "singular-value-decomposition"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematik"]
+categories: ["mathematics"]
 tags: ["SVD", "Lineare Algebra", "Maschinelles Lernen", "Datenkompression", "KI", "Python"]
 ---
 

@@ -4,7 +4,7 @@ description: "深入探討安德烈·韋伊充滿戲劇性的一生、布爾巴�
 slug: "weil"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學", "傳記"]
+categories: ["mathematics", "biography"]
 tags: ["安德烈·韋伊", "布爾巴基", "代數幾何", "數論"]
 ---
 

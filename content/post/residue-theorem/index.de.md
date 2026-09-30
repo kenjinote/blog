@@ -4,7 +4,7 @@ description: "Eine detaillierte Erklärung, wie man schwierige bestimmte Integra
 slug: "residue-theorem"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematik"]
+categories: ["mathematics"]
 tags: ["Funktionentheorie", "Analysis", "Mathematik"]
 ---
 

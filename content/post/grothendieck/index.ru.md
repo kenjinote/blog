@@ -5,7 +5,7 @@ description: "Подробный рассказ о необыкновенной 
 slug: "grothendieck"
 date: 2026-09-20T20:30:00+09:00
 image: "eyecatch.jpg"
-categories: ["Математика", "Биография"]
+categories: ["mathematics", "biography"]
 tags: ["Гротендик", "Алгебраическая геометрия", "Теория схем", "Теория категорий"]
 ---
 

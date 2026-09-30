@@ -4,7 +4,7 @@ description: "詳細介紹英國數學家威廉·布朗克的生平及其在圓�
 slug: "brouncker"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學", "傳記"]
+categories: ["mathematics", "biography"]
 tags: ["威廉·布朗克", "圓周率", "連分數", "佩爾方程", "皇家學會"]
 ---
 

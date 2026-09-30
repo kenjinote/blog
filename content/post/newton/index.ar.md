@@ -4,9 +4,7 @@ description: "غوص عميق في حياة إسحاق نيوتن الاستثن
 slug: "newton"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "رياضيات"
-  - "سيرة ذاتية"
+categories: ["mathematics", "biography"]
 tags:
   - "إسحاق نيوتن"
   - "التفاضل والتكامل"

@@ -4,8 +4,7 @@ description: "Une explication détaillée des séries de Taylor et de Maclaurin,
 slug: "taylor-and-maclaurin-series"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathématiques"
+categories: ["mathematics"]
 tags:
   - "Calcul infinitésimal"
   - "Série de Taylor"

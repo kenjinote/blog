@@ -3,7 +3,7 @@ title: "量子電腦的基礎：量子疊加與秀爾演算法"
 description: "為什麼量子電腦能破解 RSA 密碼？從古典位元與量子位元的差異，到量子閘、量子糾纏，以及 Shor 演算法的數學基礎與 NISQ 設備的挑戰，為您進行徹底解說。"
 date: 2026-09-28T00:16:09+09:00
 slug: quantum-computing-qubit-shor-algorithm
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "quantum-computing", "physics", "algorithm", "cryptography"]
 image: eyecatch.jpg
 ---

@@ -5,7 +5,7 @@ description: "Una explicación detallada de la extraordinaria vida y los logros 
 slug: "grothendieck"
 date: 2026-09-20T20:30:00+09:00
 image: "eyecatch.jpg"
-categories: ["Matemáticas", "Biografía"]
+categories: ["mathematics", "biography"]
 tags: ["Grothendieck", "Geometría Algebraica", "Teoría de Esquemas", "Teoría de Categorías"]
 ---
 

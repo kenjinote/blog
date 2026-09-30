@@ -5,9 +5,7 @@ description: '19वीं सदी के महान फ्रांसीस
 slug: 'liouville'
 date: '2026-09-20T19:20:00+09:00'
 image: "eyecatch.jpg"
-categories:
-  - 'गणित'
-  - 'जीवनी'
+categories: ["mathematics", "biography"]
 tags:
   - 'लिउविल'
   - 'जटिल विश्लेषण'

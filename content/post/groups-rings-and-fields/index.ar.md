@@ -4,7 +4,7 @@ description: "تطورت الجبر إلى دراسة الهياكل."
 slug: "groups-rings-and-fields"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["رياضيات"]
+categories: ["mathematics"]
 tags: ["جبر", "نظرية المجموعات", "نظرية الحلقات", "نظرية الحقول"]
 ---
 

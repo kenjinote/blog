@@ -3,7 +3,7 @@ title: "양자 컴퓨터의 기초: 양자 중첩과 쇼어 알고리즘"
 description: "왜 양자 컴퓨터는 RSA 암호를 깰 수 있을까. 고전 비트와 양자 비트의 차이부터 양자 게이트, 양자 얽힘, 그리고 Shor 알고리즘의 수학적 기초와 NISQ 디바이스의 과제까지 철저하게 해설합니다."
 date: 2026-09-28T00:16:09+09:00
 slug: quantum-computing-qubit-shor-algorithm
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "quantum-computing", "physics", "algorithm", "cryptography"]
 image: eyecatch.jpg
 ---

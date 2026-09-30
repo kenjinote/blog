@@ -4,7 +4,7 @@ description: "Penjelasan tentang bagaimana mewarnai titik sudut menurut aturan b
 slug: "sperners-lemma"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matematika"]
+categories: ["mathematics"]
 tags: ["topologi", "kombinatorika", "teorema-titik-tetap"]
 ---
 

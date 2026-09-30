@@ -4,7 +4,7 @@ description: "深入探討德國偉大數學家恩斯特·庫默爾的一生，�
 slug: "kummer"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學", "傳記"]
+categories: ["mathematics", "biography"]
 tags: ["恩斯特·庫默爾", "費馬最後定理", "理想數", "代數數論", "正則質數"]
 ---
 

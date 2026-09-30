@@ -4,8 +4,7 @@ description: "Una explicación detallada de la estructura matemática tejida por
 slug: "permutations-combinations-and-binomial-theorem"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matemáticas"
+categories: ["mathematics"]
 tags:
   - "Combinatoria"
   - "Teorema del Binomio"

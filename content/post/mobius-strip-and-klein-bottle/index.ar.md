@@ -5,7 +5,7 @@ description: "شرح متعمق للأسطح غير القابلة للتوجي�
 slug: "mobius-strip-and-klein-bottle"
 date: 2026-09-20T15:15:00+09:00
 image: "eyecatch.jpg"
-categories: ["رياضيات"]
+categories: ["mathematics"]
 tags: ["طوبولوجيا", "هندسة", "شريط-موبيوس", "زجاجة-كلاين"]
 ---
 

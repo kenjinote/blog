@@ -3,7 +3,7 @@ title: "블록체인과 합의 알고리즘"
 description: "PoW, PoS, 그리고 비잔틴 장군 문제(PBFT)의 해결."
 date: 2026-09-27T23:49:42+09:00
 slug: blockchain-consensus-pow-pos-pbft
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "blockchain", "algorithm", "distributed-systems", "crypto"]
 image: eyecatch.jpg
 ---

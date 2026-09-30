@@ -4,7 +4,7 @@ description: "Leonhard Euler, uno de los matemáticos más grandes de la histori
 slug: "euler"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matemáticas", "biografía"]
+categories: ["mathematics", "biography"]
 tags: ["Euler", "Historia de las Matemáticas", "Genio", "Física"]
 ---
 

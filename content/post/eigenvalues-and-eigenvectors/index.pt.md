@@ -4,7 +4,7 @@ description: "Uma explicação detalhada sobre autovalores e autovetores, um dos
 slug: "eigenvalues-and-eigenvectors"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matemática"]
+categories: ["mathematics"]
 tags: ["álgebra-linear", "autovalor", "autovetor", "matemática", "aprendizado-de-máquina", "python", "ciência-de-dados"]
 ---
 

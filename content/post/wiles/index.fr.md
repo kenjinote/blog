@@ -4,7 +4,7 @@ description: "Découvrez la vie et les réalisations mathématiques d'Andrew Wil
 slug: "wiles"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathématiques", "biographie"]
+categories: ["mathematics", "biography"]
 tags: ["Andrew Wiles", "Fermat", "Théorie des nombres"]
 ---
 

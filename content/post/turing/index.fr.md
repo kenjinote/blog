@@ -4,7 +4,7 @@ description: "Une explication détaillée de la vie d'Alan Turing, du décryptag
 slug: "turing"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathématiques", "Biographie"]
+categories: ["mathematics", "biography"]
 tags: ["Alan Turing", "Machine de Turing", "Enigma", "Problème de l'arrêt", "Morphogenèse"]
 ---
 

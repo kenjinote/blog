@@ -3,7 +3,7 @@ title: "量子计算机的基础：量子叠加与Shor算法"
 description: "为什么量子计算机能够破解RSA密码。从经典比特与量子比特的区别，到量子门、量子纠缠，再到Shor算法的数学基础以及NISQ设备的挑战，进行全面彻底的解析。"
 date: 2026-09-28T00:16:09+09:00
 slug: quantum-computing-qubit-shor-algorithm
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "quantum-computing", "physics", "algorithm", "cryptography"]
 image: eyecatch.jpg
 ---

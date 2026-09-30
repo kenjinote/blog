@@ -4,7 +4,7 @@ description: "필즈상을 수상한 일본의 수학자 히로나카 헤이스�
 slug: "hironaka-heisuke"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["히로나카 헤이스케", "대수기하학", "특이점 해소", "필즈상", "일본의 수학자", "창조성"]
 ---
 

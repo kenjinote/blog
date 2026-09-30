@@ -4,8 +4,7 @@ description: "Une explication approfondie des bases de la transformée de Laplac
 slug: "laplace-transform"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "mathématiques"
+categories: ["mathematics"]
 tags:
   - "Transformée de Laplace"
   - "Équations différentielles"

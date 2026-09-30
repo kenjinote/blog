@@ -5,7 +5,7 @@ description: "केओस थ्योरी (Chaos Theory) और बटरफ
 slug: "chaos-theory"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["विज्ञान", "गणित"]
+categories: ["science", "mathematics"]
 tags:
   - "केओस थ्योरी"
   - "भौतिकी"

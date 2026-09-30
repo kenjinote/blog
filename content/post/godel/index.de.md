@@ -4,7 +4,7 @@ description: "Eine detaillierte Erklärung des Lebens von Kurt Gödel, dem grö�
 slug: "godel"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematik", "Biografie"]
+categories: ["mathematics", "biography"]
 tags: ["Kurt Gödel", "Unvollständigkeitssätze", "Mathematik", "Logik", "Geschichte"]
 ---
 

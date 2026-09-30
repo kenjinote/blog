@@ -3,7 +3,7 @@ title: "Fundamentos da Computação Quântica: Superposição Quântica e o Algo
 description: "Por que os computadores quânticos podem quebrar a criptografia RSA? Uma explicação completa das diferenças entre bits clássicos e qubits, portas quânticas, emaranhamento quântico, a base matemática do algoritmo de Shor e os desafios dos dispositivos NISQ."
 date: 2026-09-28T00:16:09+09:00
 slug: quantum-computing-qubit-shor-algorithm
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "quantum-computing", "physics", "algorithm", "cryptography"]
 image: eyecatch.jpg
 ---

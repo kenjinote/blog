@@ -4,7 +4,7 @@ description: "Une explication détaillée de la vie de Takakazu Seki, un mathém
 slug: "seki-takakazu"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathématiques", "Biographie"]
+categories: ["mathematics", "biography"]
 tags: ["Takakazu Seki", "Wasan", "Époque d'Edo", "Histoire des mathématiques", "Calcul", "Déterminant"]
 ---
 

@@ -4,9 +4,7 @@ description: '本文概述了19世纪伟大数学家利奥波德·克罗内克�
 slug: "kronecker"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "mathematics"
-  - "传记"
+categories: ["mathematics", "biography"]
 tags:
   - "克罗内克"
   - "代数"

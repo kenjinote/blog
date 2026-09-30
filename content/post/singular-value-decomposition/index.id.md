@@ -4,7 +4,7 @@ description: "Panduan komprehensif tentang dasar matematika, intuisi geometris, 
 slug: "singular-value-decomposition"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matematika"]
+categories: ["mathematics"]
 tags: ["SVD", "Aljabar Linear", "Machine Learning", "Kompresi Data", "AI", "Python"]
 ---
 

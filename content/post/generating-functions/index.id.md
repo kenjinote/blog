@@ -4,8 +4,7 @@ description: "Pengenalan tentang cara menghitung kombinasi pembayaran koin dan s
 slug: "generating-functions"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matematika"
+categories: ["mathematics"]
 tags:
   - "Fungsi Pembangkit"
   - "Kombinatorika"

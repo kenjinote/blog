@@ -4,7 +4,7 @@ description: "Matematikawan jenius Évariste Galois, yang tewas dalam duel pada 
 slug: "galois"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matematika", "biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Teori Galois", "Aljabar", "Teori Grup", "Sejarah"]
 ---
 

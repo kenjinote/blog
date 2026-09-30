@@ -2,7 +2,7 @@
 title: "Dynamische Programmierung (DP) und die Bellman-Gleichung"
 slug: dynamic-programming-bellman-equation
 description: "Die Essenz von Algorithmen, die Probleme in kleinere Teile zerlegen und sich diese merken."
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "algorithm", "dynamic-programming", "math", "computer-science"]
 image: "eyecatch.jpg"
 date: "2026-09-27T14:05:08+09:00"

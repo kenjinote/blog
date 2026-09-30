@@ -4,8 +4,7 @@ description: "本文解釋了卡塔蘭數這個奇妙的數列，它將合法括
 slug: "catalan-numbers"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "數學"
+categories: ["mathematics"]
 tags:
   - "卡塔蘭數"
   - "組合數學"

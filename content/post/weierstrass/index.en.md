@@ -4,7 +4,7 @@ description: "A detailed explanation of the turbulent life and great achievement
 slug: "weierstrass"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematics", "Biography"]
+categories: ["mathematics", "biography"]
 tags: ["Math", "Weierstrass", "Analysis", "History"]
 ---
 

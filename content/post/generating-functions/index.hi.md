@@ -4,8 +4,7 @@ description: "समीकरण के गुणांकों के रू�
 slug: "generating-functions"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "गणित"
+categories: ["mathematics"]
 tags:
   - "जनक फलन"
   - "क्रमचय और संचय"

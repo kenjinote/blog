@@ -4,7 +4,7 @@ description: "Eine ausführliche Erklärung des Zwischenwertsatzes und des Mitte
 slug: "intermediate-and-mean-value-theorem"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematik"]
+categories: ["mathematics"]
 tags: ["analysis", "sätze", "mathematische-beweise"]
 ---
 

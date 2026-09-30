@@ -4,9 +4,7 @@ description: "Подробный рассказ о жизни индийског
 slug: "ramanujan"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Математика"
-  - "Биография"
+categories: ["mathematics", "biography"]
 tags:
   - "Рамануджан"
   - "Г. Х. Харди"

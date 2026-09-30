@@ -4,7 +4,7 @@ description: "Una explicación detallada de la vida de Kurt Gödel, el mayor ló
 slug: "godel"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matemáticas", "biografía"]
+categories: ["mathematics", "biography"]
 tags: ["Kurt Gödel", "Teoremas de incompletitud", "Matemáticas", "Lógica", "Historia"]
 ---
 

@@ -5,7 +5,7 @@ date: 2026-09-23T04:00:00+09:00
 
 image: "eyecatch.jpg"
 draft: false
-categories: ['Physics', 'Science']
+categories: ["physics", "science"]
 tags: ['Relativity', 'Physics', 'Einstein']
 slug: "physics-relativity"
 ---

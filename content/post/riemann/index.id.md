@@ -4,9 +4,7 @@ description: "Selami lebih dalam kehidupan Bernhard Riemann yang penuh gejolak d
 slug: "riemann"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "matematika"
-  - "biografi"
+categories: ["mathematics", "biography"]
 tags:
   - "Riemann"
   - "Fungsi zeta"

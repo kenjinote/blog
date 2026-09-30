@@ -5,7 +5,7 @@ description: "Blaise Pascal, conhecido por 'O homem é um caniço pensante'. Det
 slug: "pascal"
 date: 2026-09-20T19:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["Matemática", "Biografia"]
+categories: ["mathematics", "biography"]
 tags: ["Pascal", "Teoria da probabilidade", "Geometria projetiva", "Teorema de Pascal", "Triângulo de Pascal", "Física"]
 ---
 

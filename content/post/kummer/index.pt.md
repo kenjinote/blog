@@ -4,7 +4,7 @@ description: "Uma análise aprofundada da vida do grande matemático alemão Ern
 slug: "kummer"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matemática", "biografia"]
+categories: ["mathematics", "biography"]
 tags: ["Ernst Kummer", "Último Teorema de Fermat", "Números Ideais", "Teoria Algébrica dos Números", "Números Primos Regulares"]
 ---
 

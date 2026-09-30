@@ -4,9 +4,7 @@ description: "분산 시스템에서 가장 중요한 원칙인 CAP 정리에 �
 slug: "cap-theorem-distributed-systems"
 date: "2026-09-21T00:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "분산 시스템"
-  - "데이터베이스"
+categories: ["distributed-systems", "database"]
 tags:
   - "cap 정리"
   - "아키텍처"

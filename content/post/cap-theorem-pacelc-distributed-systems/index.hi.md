@@ -2,9 +2,7 @@
 title: "CAP थ्योरम और PACELC थ्योरम: डिस्ट्रीब्यूटेड डेटाबेस की दुविधा"
 description: "कंसिस्टेंसी, अवेलेबिलिटी, या लेटेंसी?"
 date: 2026-09-27T14:05:08+09:00
-categories:
-  - computer-science
-  - algorithm
+categories: ["computer-science", "algorithms"]
 tags:
   - tech
   - distributed-systems

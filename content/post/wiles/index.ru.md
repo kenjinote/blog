@@ -4,7 +4,7 @@ description: "Исследование жизни и математически�
 slug: "wiles"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["математика", "биография"]
+categories: ["mathematics", "biography"]
 tags: ["Эндрю Уайлс", "Ферма", "Теория чисел"]
 ---
 

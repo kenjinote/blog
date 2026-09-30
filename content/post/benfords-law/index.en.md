@@ -4,9 +4,7 @@ description: "Exploring the mysterious mathematical law hidden in natural data, 
 slug: "benfords-law"
 date: "2026-09-15T10:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathematics"
-  - "Statistics"
+categories: ["mathematics", "statistics"]
 tags:
   - "Benford's Law"
   - "Fraud Detection"

@@ -5,7 +5,7 @@ description: "The Gamma Function connects discrete factorials to a smooth curve.
 slug: "gamma-function"
 date: 2026-09-20T14:40:00+09:00
 image: "eyecatch.jpg"
-categories: ["Mathematics"]
+categories: ["mathematics"]
 tags: ["Gamma Function", "Euler", "Complex Analysis", "Calculus"]
 ---
 

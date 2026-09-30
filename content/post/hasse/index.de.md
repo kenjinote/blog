@@ -4,9 +4,7 @@ description: "Ein tiefer Einblick in das Leben von Helmut Hasse, einem der führ
 slug: "hasse"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "mathematik"
-  - "biografie"
+categories: ["mathematics", "biography"]
 tags:
   - "Helmut Hasse"
   - "Zahlentheorie"

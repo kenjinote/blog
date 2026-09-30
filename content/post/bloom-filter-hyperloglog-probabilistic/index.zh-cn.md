@@ -3,7 +3,7 @@ title: "概率数据结构：布隆过滤器与 HyperLogLog"
 description: "使用极少内存对海量数据进行判定与计数的近似算法。"
 date: "2026-09-27T14:05:08+09:00"
 slug: bloom-filter-hyperloglog-probabilistic
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "algorithm", "data-structure", "big-data", "probabilistic"]
 image: "eyecatch.jpg"
 ---

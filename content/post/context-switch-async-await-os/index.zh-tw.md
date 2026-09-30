@@ -3,7 +3,7 @@ title: "上下文切換的代價與非同步處理（async/await）"
 description: "OS 的進程、執行緒管理與事件迴圈存在的意義。"
 date: 2026-09-27T14:20:15+09:00
 slug: context-switch-async-await-os
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "os", "async", "concurrency", "performance"]
 image: eyecatch.jpg
 ---

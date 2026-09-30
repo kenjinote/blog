@@ -4,7 +4,7 @@ description: "फ़ार्मुलों और आरेखों का �
 slug: "zipfs-law"
 date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित", "डेटा-विज्ञान", "भाषा-विज्ञान"]
+categories: ["mathematics", "data-science", "linguistics"]
 tags:
   - "ज़िफ़ का नियम"
   - "पावर लॉ"

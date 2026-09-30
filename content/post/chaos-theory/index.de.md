@@ -5,7 +5,7 @@ description: "Ein umfassender Leitfaden zur Chaostheorie und zum Schmetterlingse
 slug: "chaos-theory"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["Wissenschaft", "Mathematik"]
+categories: ["science", "mathematics"]
 tags:
   - "Chaostheorie"
   - "Physik"

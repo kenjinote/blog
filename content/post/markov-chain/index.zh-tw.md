@@ -4,8 +4,7 @@ description: "從基礎到應用，詳細解析狀態轉移的機率模型——
 slug: "markov-chain"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "數學"
+categories: ["mathematics"]
 tags:
   - "機率論"
   - "馬可夫鏈"

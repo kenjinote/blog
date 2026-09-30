@@ -3,7 +3,7 @@ title: "量子コンピュータの基礎：量子的重ね合わせとショア
 description: "なぜ量子コンピュータはRSA暗号を壊せるのか。古典ビットと量子ビットの違いから、量子ゲート、量子もつれ、そしてShorのアルゴリズムの数学的基礎とNISQデバイスの課題までを徹底解説。"
 date: 2026-09-28T00:16:09+09:00
 slug: quantum-computing-qubit-shor-algorithm
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "quantum-computing", "physics", "algorithm", "cryptography"]
 image: eyecatch.jpg
 ---

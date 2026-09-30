@@ -5,9 +5,7 @@ description: "\"कॉनवे का गेम ऑफ लाइफ\" एक �
 slug: "conways-game-of-life"
 date: 2026-09-15T10:00:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "गणित"
-  - "कंप्यूटर विज्ञान"
+categories: ["mathematics", "computer-science"]
 tags:
   - "कॉनवे का गेम ऑफ लाइफ"
   - "सेल्युलर ऑटोमेटा"

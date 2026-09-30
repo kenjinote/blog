@@ -4,7 +4,7 @@ description: 'Une plongée approfondie dans la vie de Fibonacci, la diffusion de
 slug: "fibonacci"
 date: "2026-09-20T18:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathématiques", "Biographie"]
+categories: ["mathematics", "biography"]
 tags: ["Fibonacci", "Mathématiques", "Histoire", "Nombre d'Or", "Liber Abaci"]
 ---
 

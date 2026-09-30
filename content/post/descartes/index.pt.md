@@ -5,9 +5,7 @@ description: "René Descartes é famoso por 'Penso, logo existo'. Exploramos sua
 slug: "descartes"
 date: 2026-09-20T18:50:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Matemática"
-  - "Biografia"
+categories: ["mathematics", "biography"]
 tags:
   - "Descartes"
   - "Geometria analítica"

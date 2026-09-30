@@ -5,8 +5,7 @@ description: "선형대수학에서 가장 놀라운 결과 중 하나인 케일
 slug: "cayley-hamilton-theorem"
 date: 2026-09-20T14:50:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "수학"
+categories: ["mathematics"]
 tags:
   - "선형대수학"
   - "행렬"

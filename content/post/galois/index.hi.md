@@ -4,7 +4,7 @@ description: "जीनियस गणितज्ञ एवरिस्ट ग
 slug: "galois"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["गैलवा सिद्धांत", "बीजगणित", "समूह सिद्धांत", "इतिहास"]
 ---
 

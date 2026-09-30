@@ -5,7 +5,7 @@ description: 'Un guide complet sur le procédé d’orthogonalisation de Gram-Sc
 slug: 'gram-schmidt-process'
 date: '2026-09-20T14:40:00+09:00'
 image: "eyecatch.jpg"
-categories: ["Mathématiques"]
+categories: ["mathematics"]
 tags: ["Algèbre linéaire", "Algorithmes", "Apprentissage automatique", "Décomposition QR", "Python", "Calcul numérique", "Mathématiques"]
 ---
 

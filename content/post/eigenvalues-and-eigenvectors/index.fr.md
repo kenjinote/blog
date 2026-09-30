@@ -4,7 +4,7 @@ description: "Une explication détaillée des valeurs propres et des vecteurs pr
 slug: "eigenvalues-and-eigenvectors"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathématiques"]
+categories: ["mathematics"]
 tags: ["algèbre-linéaire", "valeur-propre", "vecteur-propre", "mathématiques", "apprentissage-automatique", "python", "science-des-données"]
 ---
 

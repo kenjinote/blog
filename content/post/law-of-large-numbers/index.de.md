@@ -5,7 +5,7 @@ description: "Eine Erklärung des Gesetzes der großen Zahlen, eines entscheiden
 slug: "law-of-large-numbers"
 date: 2026-09-14
 image: "eyecatch.jpg"
-categories: ["mathematik", "datenwissenschaft", "gluecksspiel"]
+categories: ["mathematics", "data-science", "gambling"]
 tags:
   - "Gesetz der großen Zahlen"
   - "Wahrscheinlichkeit"

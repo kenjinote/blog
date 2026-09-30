@@ -4,8 +4,7 @@ description: "Une explication approfondie de la mécanique de la méthode des mo
 slug: "method-of-least-squares"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "mathématiques"
+categories: ["mathematics"]
 tags:
   - "algèbre linéaire"
   - "optimisation"

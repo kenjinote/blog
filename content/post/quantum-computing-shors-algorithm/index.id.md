@@ -4,9 +4,7 @@ description: "Penjelasan mendalam mulai dari dasar-dasar komputer kuantum hingga
 slug: "quantum-computing-shors-algorithm"
 date: "2026-09-21T02:35:46+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "teknologi"
-  - "sains"
+categories: ["technology", "science"]
 tags:
   - "komputasi-kuantum"
   - "kriptografi"

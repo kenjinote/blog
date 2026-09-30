@@ -3,7 +3,7 @@ title: "संभाव्य डेटा संरचनाएँ: Bloom Filte
 description: "बहुत कम मेमोरी के साथ विशाल डेटा का मूल्यांकन और गणना करने के लिए अनुमानित एल्गोरिदम।"
 date: "2026-09-27T14:05:08+09:00"
 slug: bloom-filter-hyperloglog-probabilistic
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "algorithm", "data-structure", "big-data", "probabilistic"]
 image: "eyecatch.jpg"
 ---

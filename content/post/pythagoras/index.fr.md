@@ -5,9 +5,7 @@ description: 'Une exploration approfondie de la vie du mathematicien de la Grece
 slug: 'pythagoras'
 date: '2026-09-20T18:40:00+09:00'
 image: "eyecatch.jpg"
-categories:
-  - 'mathématiques'
-  - 'biographie'
+categories: ["mathematics", "biography"]
 tags:
   - 'Pythagore'
   - 'Géométrie'

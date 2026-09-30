@@ -5,7 +5,7 @@ description: "Une explication détaillée de la vie extraordinaire et des réali
 slug: "grothendieck"
 date: 2026-09-20T20:30:00+09:00
 image: "eyecatch.jpg"
-categories: ["Mathématiques", "Biographie"]
+categories: ["mathematics", "biography"]
 tags: ["Grothendieck", "Géométrie Algébrique", "Théorie des Schémas", "Théorie des Catégories"]
 ---
 

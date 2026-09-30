@@ -5,7 +5,7 @@ description: "以「人是一根能思想的蘆葦」而聞名的布萊茲·帕�
 slug: "pascal"
 date: 2026-09-20T19:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["數學", "傳記"]
+categories: ["mathematics", "biography"]
 tags: ["帕斯卡", "機率論", "射影幾何", "帕斯卡定理", "帕斯卡三角形", "物理學"]
 ---
 

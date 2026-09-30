@@ -4,7 +4,7 @@ description: "20세기 최고의 논리학자 쿠르트 괴델의 생애와 수�
 slug: "godel"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["쿠르트 괴델", "불완전성 정리", "수학", "논리학", "역사"]
 ---
 

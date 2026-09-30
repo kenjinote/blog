@@ -3,7 +3,7 @@ title: "कॉन्टेक्स्ट स्विच की कीमत �
 description: "OS की प्रोसेस और थ्रेड मैनेजमेंट तथा इवेंट लूप का महत्व।"
 date: 2026-09-27T14:20:15+09:00
 slug: context-switch-async-await-os
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "os", "async", "concurrency", "performance"]
 image: eyecatch.jpg
 ---

@@ -4,8 +4,7 @@ description: "Uma explicação detalhada dos modelos de probabilidade de transi�
 slug: "markov-chain"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matemática"
+categories: ["mathematics"]
 tags:
   - "Probabilidade"
   - "Cadeia de Markov"

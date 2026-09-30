@@ -4,7 +4,7 @@ description: "Una explicación detallada de la vida y los numerosos logros matem
 slug: "hilbert"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matemáticas", "biografía"]
+categories: ["mathematics", "biography"]
 tags: ["Hilbert", "Historia de las Matemáticas", "Geometría", "Análisis Funcional", "Física", "Teoría de Números"]
 ---
 

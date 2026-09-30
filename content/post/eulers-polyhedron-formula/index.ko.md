@@ -4,8 +4,7 @@ description: "오일러의 다면체 정리(V - E + F = 2)의 아름다움과 �
 slug: "eulers-polyhedron-formula"
 date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
+categories: ["mathematics"]
 tags:
   - "위상수학"
   - "기하학"

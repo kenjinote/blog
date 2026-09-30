@@ -4,7 +4,7 @@ description: "Uma explicação detalhada da vida e das realizações de Emmy Noe
 slug: "noether"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matemática", "Biografia"]
+categories: ["mathematics", "biography"]
 tags: ["Emmy Noether", "Álgebra Abstrata", "Física", "Mulheres em STEM"]
 ---
 

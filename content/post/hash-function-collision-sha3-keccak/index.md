@@ -2,7 +2,7 @@
 slug: hash-function-collision-sha3-keccak
 title: "ハッシュ関数の衝突耐性とSHA-3 (Keccak)"
 description: "スポンジ構造という新しい暗号学的ハッシュの仕組み。"
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "cryptography", "security", "hash", "algorithm"]
 date: 2026-09-27T14:20:15+09:00
 image: "eyecatch.jpg"

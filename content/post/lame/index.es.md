@@ -4,7 +4,7 @@ description: "Una inmersión profunda en la vida del matemático francés Gabrie
 slug: "lame"
 date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matemáticas", "Biografía"]
+categories: ["mathematics", "biography"]
 tags: ["Gabriel Lamé", "Historia de las matemáticas", "Teoría de números", "Elasticidad", "Geometría"]
 ---
 

@@ -5,8 +5,7 @@ description: "Подробное объяснение теоремы Кэли-Г
 slug: "cayley-hamilton-theorem"
 date: 2026-09-20T14:50:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "математика"
+categories: ["mathematics"]
 tags:
   - "линейная алгебра"
   - "матрица"

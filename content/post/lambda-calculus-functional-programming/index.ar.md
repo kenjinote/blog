@@ -5,8 +5,7 @@ description: "كيف تطور حساب لامدا، وهو النظرية الأ
 slug: lambda-calculus-functional-programming
 date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
-categories:
-  - علوم الحاسوب
+categories: ["computer-science"]
 tags:
   - حساب لامدا
   - البرمجة الوظيفية

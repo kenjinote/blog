@@ -5,9 +5,7 @@ description: "फ्रंटएंड डेवलपमेंट के इत
 slug: state-management-history-future
 date: 2026-09-21T12:00:00+09:00
 image: eyecatch.jpg
-categories:
-  - फ्रंटएंड
-  - आर्किटेक्चर
+categories: ["frontend", "architecture"]
 tags:
   - स्टेट-मैनेजमेंट
   - रिएक्ट

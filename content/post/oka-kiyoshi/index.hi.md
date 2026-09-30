@@ -5,7 +5,7 @@ description: "कियोशी ओका, एक ऐसे गणितज्�
 slug: "oka-kiyoshi"
 date: 2026-09-20T20:20:00+09:00
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["कियोशी ओका", "जटिल विश्लेषण", "गणित का इतिहास"]
 ---
 

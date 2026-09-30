@@ -3,7 +3,7 @@ title: "История эволюции сборки мусора (GC)"
 description: "Путь от mark-and-sweep до современных ZGC/Shenandoah. Подробный разбор от проблем ручного управления памятью до новейших технологий, обеспечивающих паузы в доли миллисекунды."
 date: 2026-09-27T14:20:15+09:00
 slug: garbage-collection-history-zgc
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "garbage-collection", "memory-management", "java", "performance"]
 image: eyecatch.jpg
 ---

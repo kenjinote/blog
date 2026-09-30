@@ -5,7 +5,7 @@ description: "Kiyosi Oka, seorang matematikawan yang dibanggakan Jepang kepada d
 slug: "oka-kiyoshi"
 date: 2026-09-20T20:20:00+09:00
 image: "eyecatch.jpg"
-categories: ["matematika", "biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Kiyosi Oka", "Analisis Kompleks", "Sejarah Matematika"]
 ---
 

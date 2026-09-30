@@ -4,7 +4,7 @@ description: "Исследование жизни и творчества мат
 slug: "kodaira-kunihiko"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["математика", "биография"]
+categories: ["mathematics", "biography"]
 tags: ["Кунихико Кодаира", "Филдсовская премия", "Комплексная геометрия"]
 ---
 

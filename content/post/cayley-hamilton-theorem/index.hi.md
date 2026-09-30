@@ -5,8 +5,7 @@ description: "कैली-हैमिल्टन प्रमेय की �
 slug: "cayley-hamilton-theorem"
 date: 2026-09-20T14:50:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "गणित"
+categories: ["mathematics"]
 tags:
   - "रैखिक बीजगणित"
   - "मैट्रिक्स"

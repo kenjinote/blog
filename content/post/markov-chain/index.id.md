@@ -4,8 +4,7 @@ description: "Penjelasan mendetail tentang model probabilitas transisi keadaan, 
 slug: "markov-chain"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matematika"
+categories: ["mathematics"]
 tags:
   - "Probabilitas"
   - "Rantai Markov"

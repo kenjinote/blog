@@ -4,7 +4,7 @@ date: "2026-09-24T19:44:38+09:00"
 description: "A detailed explanation of the Central Limit Theorem, one of the most important theorems in statistics, from intuitive understanding to mathematical proof and Python simulation."
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["Mathematics", "Statistics"]
+categories: ["mathematics", "statistics"]
 tags: ["Central Limit Theorem", "Probability", "Data Science", "Python"]
 slug: "central-limit-theorem"
 ---

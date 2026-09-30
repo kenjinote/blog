@@ -5,7 +5,7 @@ description: "अलेक्जेंडर ग्रोथेंडिक क�
 slug: "grothendieck"
 date: 2026-09-20T20:30:00+09:00
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["ग्रोथेंडिक", "बीजगणितीय ज्यामिति", "स्कीम सिद्धांत", "श्रेणी सिद्धांत"]
 ---
 

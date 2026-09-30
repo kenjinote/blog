@@ -5,7 +5,7 @@ description: "نظرة متعمقة على حياة عالم الرياضيات 
 slug: "euclid"
 date: 2026-09-20T18:40:00+09:00
 image: "eyecatch.jpg"
-categories: ["رياضيات", "سيرة ذاتية"]
+categories: ["mathematics", "biography"]
 tags: ["إقليدس", "هندسة", "تاريخ الرياضيات", "اليونان القديمة", "العناصر", "خوارزمية إقليدس"]
 ---
 

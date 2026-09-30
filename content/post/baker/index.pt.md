@@ -4,7 +4,7 @@ description: "Um olhar aprofundado sobre a vida e as conquistas matemáticas de 
 slug: "baker"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matemática", "biografia"]
+categories: ["mathematics", "biography"]
 tags: ["Alan Baker", "Teoria dos Números", "Medalha Fields", "Teoria dos Números Transcendentes"]
 ---
 

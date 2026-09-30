@@ -4,7 +4,7 @@ description: "एलन ट्यूरिंग के जीवन, एनि�
 slug: "turing"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["एलन ट्यूरिंग", "ट्यूरिंग मशीन", "एनिग्मा", "हॉल्टिंग समस्या", "मॉर्फोजेनेसिस"]
 ---
 

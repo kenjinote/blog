@@ -5,7 +5,7 @@ description: 'Um guia abrangente sobre o processo de ortogonalização de Gram-S
 slug: 'gram-schmidt-process'
 date: '2026-09-20T14:40:00+09:00'
 image: "eyecatch.jpg"
-categories: ["Matemática"]
+categories: ["mathematics"]
 tags: ["Álgebra Linear", "Algoritmos", "Aprendizado de Máquina", "Decomposição QR", "Python", "Cálculo Numérico", "Matemática"]
 ---
 

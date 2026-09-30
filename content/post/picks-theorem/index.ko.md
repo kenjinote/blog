@@ -4,8 +4,7 @@ description: "격자점을 꼭짓점으로 하는 구멍 없는 다각형에 대
 slug: "picks-theorem"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
+categories: ["mathematics"]
 tags:
   - "기하학"
   - "픽의-정리"

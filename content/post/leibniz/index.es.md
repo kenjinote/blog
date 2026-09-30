@@ -4,7 +4,7 @@ description: "Una mirada profunda a la vida, episodios y logros matemáticos, co
 slug: "leibniz"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matemáticas", "Biografía"]
+categories: ["mathematics", "biography"]
 tags: ["Leibniz", "Cálculo", "Binario", "Filosofía", "Historia de las Matemáticas"]
 ---
 

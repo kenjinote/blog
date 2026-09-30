@@ -4,8 +4,7 @@ description: "Erklärung, wie man durch Rotationen verursachte doppelte Muster e
 slug: "burnsides-lemma"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "mathematik"
+categories: ["mathematics"]
 tags:
   - "Gruppentheorie"
   - "Kombinatorik"

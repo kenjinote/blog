@@ -4,9 +4,7 @@ description: "18세기를 대표하는 수학자이자 물리학자인 조제프
 slug: "lagrange"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
-  - "전기"
+categories: ["mathematics", "biography"]
 tags:
   - "라그랑주"
   - "변분법"

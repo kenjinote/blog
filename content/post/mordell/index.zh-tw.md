@@ -5,7 +5,7 @@ description: "詳細解讀以在丟番圖方程、橢圓曲線中的突破性貢
 slug: "mordell"
 date: 2026-09-20T20:10:00+09:00
 image: "eyecatch.jpg"
-categories: ["數學", "傳記"]
+categories: ["mathematics", "biography"]
 tags: ["數論", "莫德爾", "橢圓曲線", "丟番圖方程"]
 ---
 

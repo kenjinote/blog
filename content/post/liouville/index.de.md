@@ -5,9 +5,7 @@ description: 'Erforschung des Lebens und Vermächtnisses von Joseph Liouville, d
 slug: 'liouville'
 date: '2026-09-20T19:20:00+09:00'
 image: "eyecatch.jpg"
-categories:
-  - 'Mathematik'
-  - 'Biografie'
+categories: ["mathematics", "biography"]
 tags:
   - 'Liouville'
   - 'Komplexe Analysis'

@@ -4,7 +4,7 @@ description: "شرح مفصل للقيم الذاتية والمتجهات ال�
 slug: "eigenvalues-and-eigenvectors"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["الرياضيات"]
+categories: ["mathematics"]
 tags: ["الجبر-الخطي", "القيم-الذاتية", "المتجهات-الذاتية", "رياضيات", "التعلم-الآلي", "بايثون", "علم-البيانات"]
 ---
 

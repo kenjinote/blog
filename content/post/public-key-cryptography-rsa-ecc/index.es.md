@@ -3,7 +3,7 @@ title: "Las Matemáticas de la Criptografía de Clave Pública: De RSA a la Crip
 description: "El cambio de la dificultad de la factorización de enteros al problema del logaritmo discreto."
 date: 2026-09-27T23:50:00+09:00
 slug: public-key-cryptography-rsa-ecc
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "cryptography", "security", "math", "algorithm"]
 image: eyecatch.jpg
 ---

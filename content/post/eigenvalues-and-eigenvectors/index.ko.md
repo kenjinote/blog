@@ -4,7 +4,7 @@ description: "선형대수학에서 가장 중요한 개념 중 하나인 고윳
 slug: "eigenvalues-and-eigenvectors"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학"]
+categories: ["mathematics"]
 tags: ["선형대수학", "고윳값", "고유벡터", "수학", "머신러닝", "python", "데이터사이언스"]
 ---
 

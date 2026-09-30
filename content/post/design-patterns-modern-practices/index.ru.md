@@ -4,9 +4,7 @@ description: "Паттерны проектирования GoF были пре�
 slug: "design-patterns-modern-practices"
 date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "архитектура"
-  - "программирование"
+categories: ["architecture", "programming"]
 tags:
   - "паттерны-проектирования"
   - "gof"

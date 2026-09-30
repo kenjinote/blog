@@ -5,7 +5,7 @@ description: "دليل شامل لنظرية الفوضى وتأثير الفر�
 slug: "chaos-theory"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["العلوم", "الرياضيات"]
+categories: ["science", "mathematics"]
 tags:
   - "نظرية الفوضى"
   - "الفيزياء"

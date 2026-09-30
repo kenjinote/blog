@@ -4,7 +4,7 @@ description: "Penjelasan rinci mengenai latar belakang matematika jalan acak (ra
 slug: "random-walk"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matematika"]
+categories: ["mathematics"]
 tags: ["Jalan Acak", "Probabilitas", "Persamaan Difusi", "Gerak Brown", "Python"]
 ---
 

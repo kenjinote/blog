@@ -2,7 +2,7 @@
 slug: hash-function-collision-sha3-keccak
 title: "हैश फ़ंक्शन की टक्कर प्रतिरोध और SHA-3 (Keccak)"
 description: "स्पंज कंस्ट्रक्शन (Sponge Construction) नामक एक नई क्रिप्टोग्राफ़िक हैश प्रणाली।"
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "cryptography", "security", "hash", "algorithm"]
 date: 2026-09-27T14:20:15+09:00
 image: "eyecatch.jpg"

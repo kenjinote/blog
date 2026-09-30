@@ -4,9 +4,7 @@ description: "회계 부정 발견에도 사용되는, 자연계의 데이터에
 slug: "benfords-law"
 date: "2026-09-15T10:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
-  - "통계학"
+categories: ["mathematics", "statistics"]
 tags:
   - "벤포드의 법칙"
   - "부정 탐지"

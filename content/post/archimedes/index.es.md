@@ -4,7 +4,7 @@ description: "Arquímedes de Siracusa. Desde el episodio de '¡Eureka!' hasta el
 slug: "archimedes"
 date: "2026-09-20T18:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matemáticas", "biografía"]
+categories: ["mathematics", "biography"]
 tags: ["Arquímedes", "Antigua Grecia", "Geometría", "Física", "Cálculo"]
 ---
 

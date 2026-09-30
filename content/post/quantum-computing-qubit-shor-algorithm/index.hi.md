@@ -3,7 +3,7 @@ title: "क्वांटम कंप्यूटर के मूल सि�
 description: "क्वांटम कंप्यूटर RSA एन्क्रिप्शन को क्यों तोड़ सकते हैं? क्लासिकल बिट्स और क्वांटम बिट्स के बीच के अंतर से लेकर क्वांटम गेट्स, क्वांटम एंटैंगलमेंट, शोर (Shor) के एल्गोरिदम की गणितीय नींव और NISQ डिवाइस की चुनौतियों तक की विस्तृत व्याख्या।"
 date: 2026-09-28T00:16:09+09:00
 slug: quantum-computing-qubit-shor-algorithm
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "quantum-computing", "physics", "algorithm", "cryptography"]
 image: eyecatch.jpg
 ---

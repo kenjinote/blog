@@ -3,7 +3,7 @@ title: "확률적 자료 구조: 블룸 필터와 하이퍼로그로그"
 description: "적은 메모리로 방대한 데이터를 판별하고 계산하는 근사 알고리즘."
 date: "2026-09-27T14:05:08+09:00"
 slug: bloom-filter-hyperloglog-probabilistic
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "algorithm", "data-structure", "big-data", "probabilistic"]
 image: "eyecatch.jpg"
 ---

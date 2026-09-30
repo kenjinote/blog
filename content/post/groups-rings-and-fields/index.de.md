@@ -4,7 +4,7 @@ description: "In der Mathematik entwickelte sich die Algebra zur Untersuchung vo
 slug: "groups-rings-and-fields"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematik"]
+categories: ["mathematics"]
 tags: ["Algebra", "Gruppentheorie", "Ringtheorie", "Körpertheorie"]
 ---
 

@@ -4,7 +4,7 @@ description: "شرح مفصل لحياة عالم الرياضيات البري�
 slug: "brouncker"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["رياضيات", "سيرة شخصية"]
+categories: ["mathematics", "biography"]
 tags: ["ويليام برونكر", "باي", "الكسر المستمر", "معادلة بيل", "الجمعية الملكية"]
 ---
 

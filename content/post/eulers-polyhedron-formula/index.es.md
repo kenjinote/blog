@@ -4,8 +4,7 @@ description: "Una explicación detallada sobre la belleza del teorema de los pol
 slug: "eulers-polyhedron-formula"
 date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matemáticas"
+categories: ["mathematics"]
 tags:
   - "Topología"
   - "Geometría"

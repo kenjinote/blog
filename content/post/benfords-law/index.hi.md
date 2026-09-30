@@ -4,9 +4,7 @@ description: "प्राकृतिक डेटा में छिपे �
 slug: "benfords-law"
 date: "2026-09-15T10:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "गणित"
-  - "सांख्यिकी"
+categories: ["mathematics", "statistics"]
 tags:
   - "बैनफोर्ड का नियम"
   - "धोखाधड़ी का पता लगाना"

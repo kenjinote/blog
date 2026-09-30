@@ -4,7 +4,7 @@ description: "Una explicación detallada de cómo simplificar de manera asombros
 slug: "residue-theorem"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matemáticas"]
+categories: ["mathematics"]
 tags: ["análisis complejo", "cálculo", "matemáticas"]
 ---
 

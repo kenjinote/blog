@@ -4,7 +4,7 @@ description: 'Pendalaman tentang kehidupan Fibonacci, penyebaran angka Arab mela
 slug: "fibonacci"
 date: "2026-09-20T18:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matematika", "Biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Fibonacci", "Matematika", "Sejarah", "Rasio Emas", "Liber Abaci"]
 ---
 

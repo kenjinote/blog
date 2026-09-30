@@ -4,7 +4,7 @@ description: "Una mirada detallada a la vida y los logros matemáticos del matem
 slug: "bachet"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matemáticas", "Biografía"]
+categories: ["mathematics", "biography"]
 tags: ["Bachet", "Teoría de Números", "Historia de las Matemáticas", "Matemáticas Recreativas", "Diofanto"]
 ---
 

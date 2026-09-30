@@ -4,9 +4,7 @@ description: "Погрузитесь в бурную жизнь Бернхард
 slug: "riemann"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "математика"
-  - "биография"
+categories: ["mathematics", "biography"]
 tags:
   - "Риман"
   - "Дзета-функция"

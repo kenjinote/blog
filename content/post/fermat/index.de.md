@@ -4,7 +4,7 @@ description: "Eine detaillierte Erklärung des Lebens und der außergewöhnliche
 slug: "fermat"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematik", "Biografie"]
+categories: ["mathematics", "biography"]
 tags: ["Fermat", "Geschichte der Mathematik", "Fermatscher letzter Satz", "Zahlentheorie", "Wahrscheinlichkeitstheorie"]
 ---
 

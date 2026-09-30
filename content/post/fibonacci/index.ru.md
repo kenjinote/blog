@@ -4,7 +4,7 @@ description: 'Глубокое погружение в жизнь Фибонач
 slug: "fibonacci"
 date: "2026-09-20T18:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Математика", "Биография"]
+categories: ["mathematics", "biography"]
 tags: ["Фибоначчи", "Математика", "История", "Золотое сечение", "Liber Abaci"]
 ---
 

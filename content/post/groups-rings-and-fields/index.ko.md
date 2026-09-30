@@ -4,7 +4,7 @@ description: "수학에서 '대수학'은 '구조'를 연구하는 학문으로 
 slug: "groups-rings-and-fields"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학"]
+categories: ["mathematics"]
 tags: ["대수학", "군론", "환론", "체론"]
 ---
 

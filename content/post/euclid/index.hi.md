@@ -5,7 +5,7 @@ description: "प्राचीन यूनानी गणितज्ञ य
 slug: "euclid"
 date: 2026-09-20T18:40:00+09:00
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["यूक्लिड", "ज्यामिति", "गणित का इतिहास", "प्राचीन यूनान", "एलिमेंट्स", "यूक्लिड का एल्गोरिदम"]
 ---
 

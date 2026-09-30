@@ -4,7 +4,7 @@ description: "अवशेष प्रमेय (सम्मिश्र व�
 slug: "residue-theorem"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित"]
+categories: ["mathematics"]
 tags: ["सम्मिश्र विश्लेषण", "कैलकुलस", "गणित"]
 ---
 

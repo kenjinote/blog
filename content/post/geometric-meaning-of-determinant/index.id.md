@@ -4,8 +4,7 @@ description: "Determinan bukan hanya rumus perhitungan, tetapi indikator geometr
 slug: "geometric-meaning-of-determinant"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "Matematika"
+categories: ["mathematics"]
 tags: 
   - "Aljabar Linear"
   - "Determinan"

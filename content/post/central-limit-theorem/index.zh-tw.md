@@ -4,7 +4,7 @@ date: "2026-09-24T19:44:38+09:00"
 description: "詳細解說統計學中最重要的定理之一：中央極限定理。從直觀理解、數學證明到使用Python進行模擬驗證，為您深入剖析。"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["數學", "統計學"]
+categories: ["mathematics", "statistics"]
 tags: ["中央極限定理", "機率論", "資料科學", "Python"]
 slug: "central-limit-theorem"
 ---

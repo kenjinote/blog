@@ -5,7 +5,7 @@ description: "Eine detaillierte Erklärung nicht-orientierbarer Flächen in der 
 slug: "mobius-strip-and-klein-bottle"
 date: 2026-09-20T15:15:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematik"]
+categories: ["mathematics"]
 tags: ["topologie", "geometrie", "moebiusband", "kleinsche-flasche"]
 ---
 

@@ -5,9 +5,7 @@ description: 'Mengeksplorasi kehidupan dan warisan Joseph Liouville, matematikaw
 slug: 'liouville'
 date: '2026-09-20T19:20:00+09:00'
 image: "eyecatch.jpg"
-categories:
-  - 'Matematika'
-  - 'Biografi'
+categories: ["mathematics", "biography"]
 tags:
   - 'Liouville'
   - 'Analisis Kompleks'

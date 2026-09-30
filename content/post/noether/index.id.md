@@ -4,7 +4,7 @@ description: "Penjelasan mendetail tentang kehidupan dan pencapaian Emmy Noether
 slug: "noether"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matematika", "Biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Emmy Noether", "Aljabar Abstrak", "Fisika", "Perempuan di STEM"]
 ---
 

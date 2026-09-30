@@ -2,7 +2,7 @@
 slug: hash-function-collision-sha3-keccak
 title: "Resistência a Colisões de Funções Hash e SHA-3 (Keccak)"
 description: "A construção de esponja, um novo mecanismo de hash criptográfico."
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "cryptography", "security", "hash", "algorithm"]
 date: 2026-09-27T14:20:15+09:00
 image: "eyecatch.jpg"

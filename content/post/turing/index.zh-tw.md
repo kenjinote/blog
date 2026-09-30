@@ -4,7 +4,7 @@ description: "詳細解讀艾倫·圖靈的一生、破解恩尼格瑪密碼機�
 slug: "turing"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學", "傳記"]
+categories: ["mathematics", "biography"]
 tags: ["艾倫·圖靈", "圖靈機", "恩尼格瑪", "停機問題", "形態發生"]
 ---
 

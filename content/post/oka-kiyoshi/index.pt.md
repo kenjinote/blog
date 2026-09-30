@@ -5,7 +5,7 @@ description: "Kiyosi Oka, um matemático do qual o Japão se orgulha perante o m
 slug: "oka-kiyoshi"
 date: 2026-09-20T20:20:00+09:00
 image: "eyecatch.jpg"
-categories: ["matemática", "biografia"]
+categories: ["mathematics", "biography"]
 tags: ["Kiyosi Oka", "Análise complexa", "História da matemática"]
 ---
 

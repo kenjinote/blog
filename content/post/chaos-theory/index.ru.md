@@ -5,7 +5,7 @@ description: "Исчерпывающее руководство по теори�
 slug: "chaos-theory"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["наука", "математика"]
+categories: ["science", "mathematics"]
 tags:
   - "Теория хаоса"
   - "Физика"

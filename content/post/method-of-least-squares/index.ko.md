@@ -4,8 +4,7 @@ description: "기하학적 직관과 강력한 선형대수 도구(정규 방정
 slug: "method-of-least-squares"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
+categories: ["mathematics"]
 tags:
   - "선형대수학"
   - "최적화"

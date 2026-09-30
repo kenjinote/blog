@@ -4,9 +4,7 @@ description: "Patrones de diseño GoF propuestos en 1994. ¿Siguen siendo válid
 slug: "design-patterns-modern-practices"
 date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "arquitectura"
-  - "programacion"
+categories: ["architecture", "programming"]
 tags:
   - "patrones-de-diseno"
   - "gof"

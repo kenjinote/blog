@@ -5,7 +5,7 @@ description: "بليز باسكال، المعروف بمقولة 'الإنسا�
 slug: "pascal"
 date: 2026-09-20T19:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["رياضيات", "سيرة ذاتية"]
+categories: ["mathematics", "biography"]
 tags: ["باسكال", "نظرية الاحتمالات", "هندسة إسقاطية", "مبرهنة باسكال", "مثلث باسكال", "فيزياء"]
 ---
 

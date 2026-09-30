@@ -5,7 +5,7 @@ description: "확률론에서 매우 중요한 정리인 '대수의 법칙'에 �
 slug: "law-of-large-numbers"
 date: 2026-09-14
 image: "eyecatch.jpg"
-categories: ["수학", "데이터-과학", "도박"]
+categories: ["mathematics", "data-science", "gambling"]
 tags:
   - "대수의 법칙"
   - "확률"

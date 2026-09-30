@@ -4,7 +4,7 @@ description: "Eine detaillierte Erklärung des turbulenten Lebens und der große
 slug: "weierstrass"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematik", "Biografie"]
+categories: ["mathematics", "biography"]
 tags: ["Mathe", "Weierstraß", "Analysis", "Geschichte"]
 ---
 

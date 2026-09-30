@@ -2,9 +2,7 @@
 title: "B-Bäume und B+-Bäume: Warum Datenbankindizes so schnell sind"
 description: "Die Geheimnisse der Baumstrukturen, die Festplatten-I/O minimieren."
 slug: b-tree-b-plus-tree-database-index
-categories:
-  - computer-science
-  - algorithm
+categories: ["computer-science", "algorithms"]
 tags:
   - tech
   - database

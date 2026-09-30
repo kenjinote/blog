@@ -5,9 +5,7 @@ description: 'Um olhar aprofundado sobre a vida de Teiji Takagi, o pai da matem√
 slug: 'takagi-teiji'
 date: '2026-09-20T19:50:00+09:00'
 image: "eyecatch.jpg"
-categories:
-  - 'matem√°tica'
-  - 'biografia'
+categories: ["mathematics", "biography"]
 tags:
   - 'Teiji Takagi'
   - 'Teoria de corpos de classes'

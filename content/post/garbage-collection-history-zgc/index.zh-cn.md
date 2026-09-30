@@ -3,7 +3,7 @@ title: "垃圾回收（GC）的演进史"
 description: "从标记-清除到现代ZGC/Shenandoah的发展历程。深入解析从手动内存管理的苦恼，到实现毫秒级停顿时间的最新技术。"
 date: 2026-09-27T14:20:15+09:00
 slug: garbage-collection-history-zgc
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "garbage-collection", "memory-management", "java", "performance"]
 image: eyecatch.jpg
 ---

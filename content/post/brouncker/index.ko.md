@@ -4,7 +4,7 @@ description: "영국의 수학자 윌리엄 브롱커의 생애와 원주율의 
 slug: "brouncker"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["윌리엄 브롱커", "원주율", "연분수", "펠 방정식", "왕립학회"]
 ---
 

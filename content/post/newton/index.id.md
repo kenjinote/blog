@@ -4,9 +4,7 @@ description: "Penjelasan mendalam tentang kehidupan Isaac Newton, episode selama
 slug: "newton"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matematika"
-  - "Biografi"
+categories: ["mathematics", "biography"]
 tags:
   - "Isaac Newton"
   - "Kalkulus"

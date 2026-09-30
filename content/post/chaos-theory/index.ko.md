@@ -5,7 +5,7 @@ description: "초기 조건에 대한 민감한 의존성을 갖는 비선형 �
 slug: "chaos-theory"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["과학", "수학"]
+categories: ["science", "mathematics"]
 tags:
   - "카오스 이론"
   - "물리학"

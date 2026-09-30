@@ -4,9 +4,7 @@ description: "شرح مفصل لحياة عالم الرياضيات والفي�
 slug: "lagrange"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "الرياضيات"
-  - "سيرة ذاتية"
+categories: ["mathematics", "biography"]
 tags:
   - "لاغرانج"
   - "حساب التغيرات"

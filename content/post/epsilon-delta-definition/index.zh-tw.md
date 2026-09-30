@@ -4,8 +4,7 @@ description: "深入解析作為微積分基礎的ε-δ論法，從歷史背景�
 slug: "epsilon-delta-definition"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "數學"
+categories: ["mathematics"]
 tags: 
   - "微積分"
   - "極限"

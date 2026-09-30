@@ -4,8 +4,7 @@ description: "A detailed explanation of Taylor and Maclaurin series, the secrets
 slug: "taylor-and-maclaurin-series"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathematics"
+categories: ["mathematics"]
 tags:
   - "Calculus"
   - "Taylor Series"

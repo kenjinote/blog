@@ -5,8 +5,7 @@ description: "詳細講解費馬小定理，從直觀理解到數學證明，以
 slug: "fermats-little-theorem"
 date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "數學"
+categories: ["mathematics"]
 tags:
   - "數論"
   - "密碼學"

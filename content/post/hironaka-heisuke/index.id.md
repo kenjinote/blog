@@ -4,7 +4,7 @@ description: "Selami kehidupan matematikawan Jepang pemenang Medali Fields, Heis
 slug: "hironaka-heisuke"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matematika", "Biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Heisuke Hironaka", "Geometri Aljabar", "Resolusi Singularitas", "Medali Fields", "Matematikawan Jepang", "Kreativitas"]
 ---
 

@@ -4,7 +4,7 @@ description: "Archimedes von Syrakus. Von der 'Heureka'-Episode über die Berech
 slug: "archimedes"
 date: "2026-09-20T18:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematik", "Biografie"]
+categories: ["mathematics", "biography"]
 tags: ["Archimedes", "Antikes Griechenland", "Geometrie", "Physik", "Infinitesimalrechnung"]
 ---
 

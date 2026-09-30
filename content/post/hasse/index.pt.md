@@ -4,9 +4,7 @@ description: "Um mergulho profundo na vida de Helmut Hasse, um dos principais ma
 slug: "hasse"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "matemática"
-  - "biografia"
+categories: ["mathematics", "biography"]
 tags:
   - "Helmut Hasse"
   - "Teoria dos números"

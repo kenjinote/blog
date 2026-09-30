@@ -5,7 +5,7 @@ description: "شرح تفصيلي لحياة وإسهامات عالم الري�
 slug: "mordell"
 date: 2026-09-20T20:10:00+09:00
 image: "eyecatch.jpg"
-categories: ["رياضيات", "سيرة ذاتية"]
+categories: ["mathematics", "biography"]
 tags: ["نظرية الأعداد", "مورديل", "المنحنيات الإهليلجية", "المعادلات الديوفانتية"]
 ---
 

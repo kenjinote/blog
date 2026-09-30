@@ -4,9 +4,7 @@ description: "نتعمق في نظرية CAP، وهي المبدأ الأهم ف
 slug: "cap-theorem-distributed-systems"
 date: "2026-09-21T00:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "الأنظمة-الموزعة"
-  - "قاعدة-بيانات"
+categories: ["distributed-systems", "database"]
 tags:
   - "نظرية-cap"
   - "بنية"

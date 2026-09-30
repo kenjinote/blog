@@ -5,9 +5,7 @@ description: 'Melihat lebih dalam kehidupan Teiji Takagi, bapak matematika Jepan
 slug: 'takagi-teiji'
 date: '2026-09-20T19:50:00+09:00'
 image: "eyecatch.jpg"
-categories:
-  - 'matematika'
-  - 'biografi'
+categories: ["mathematics", "biography"]
 tags:
   - 'Teiji Takagi'
   - 'Teori Medan Kelas'

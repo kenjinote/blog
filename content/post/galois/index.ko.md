@@ -4,7 +4,7 @@ description: "20세에 결투로 세상을 떠난 천재 수학자 에바리스�
 slug: "galois"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["갈루아 이론", "대수학", "군론", "역사"]
 ---
 

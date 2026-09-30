@@ -1,5 +1,8 @@
 ---
 {
-  "title": "Technologie"
+  "title": "Technologie",
+  "aliases": [
+    "/de/categories/technologie/"
+  ]
 }
 ---

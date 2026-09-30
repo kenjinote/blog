@@ -5,7 +5,7 @@ description: "Blaise Pascal, bekannt für 'Der Mensch ist ein denkendes Schilfro
 slug: "pascal"
 date: 2026-09-20T19:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["Mathematik", "Biografie"]
+categories: ["mathematics", "biography"]
 tags: ["Pascal", "Wahrscheinlichkeitstheorie", "Projektive Geometrie", "Satz von Pascal", "Pascalsches Dreieck", "Physik"]
 ---
 

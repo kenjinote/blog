@@ -4,8 +4,7 @@ description: "Le déterminant n'est pas seulement une formule de calcul, mais un
 slug: "geometric-meaning-of-determinant"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "Mathématiques"
+categories: ["mathematics"]
 tags: 
   - "Algèbre linéaire"
   - "Déterminant"

@@ -4,8 +4,7 @@ description: "دليل شامل لأساسيات نظرية المخططات. م
 slug: "basics-of-graph-theory"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "رياضيات"
+categories: ["mathematics"]
 tags:
   - "نظرية المخططات"
   - "خوارزمية"

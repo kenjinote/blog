@@ -4,9 +4,7 @@ description: "Penjelasan mendalam tentang kehidupan jenius matematika India Srin
 slug: "ramanujan"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matematika"
-  - "Biografi"
+categories: ["mathematics", "biography"]
 tags:
   - "Ramanujan"
   - "G.H. Hardy"

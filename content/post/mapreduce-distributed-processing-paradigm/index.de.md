@@ -2,7 +2,7 @@
 slug: "mapreduce-distributed-processing-paradigm"
 title: "Die Philosophie von MapReduce: Wie Googles verteilte Verarbeitung die Welt veränderte"
 description: "Der Ursprung der Big-Data-Verarbeitung und die Abstammung zu Hadoop."
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "distributed-systems", "big-data", "mapreduce", "google"]
 date: 2026-09-27T14:20:15+09:00
 image: "eyecatch.jpg"

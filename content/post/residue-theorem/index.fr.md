@@ -4,7 +4,7 @@ description: "Une explication détaillée de la façon de simplifier étonnammen
 slug: "residue-theorem"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathématiques"]
+categories: ["mathematics"]
 tags: ["analyse complexe", "calcul", "mathématiques"]
 ---
 

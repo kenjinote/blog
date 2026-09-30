@@ -4,7 +4,7 @@ description: "Explorando la vida y los logros matemáticos de Andrew Wiles, quie
 slug: "wiles"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matemáticas", "biografía"]
+categories: ["mathematics", "biography"]
 tags: ["Andrew Wiles", "Fermat", "Teoría de números"]
 ---
 

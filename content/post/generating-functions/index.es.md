@@ -4,8 +4,7 @@ description: "Introducción a cómo calcular combinaciones de pago con monedas y
 slug: "generating-functions"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matemáticas"
+categories: ["mathematics"]
 tags:
   - "Funciones generadoras"
   - "Combinatoria"

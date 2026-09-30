@@ -4,7 +4,7 @@ description: "랜덤 워크(취보)의 기초부터 확산 현상, 브라운 운
 slug: "random-walk"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학"]
+categories: ["mathematics"]
 tags: ["랜덤워크", "확률론", "확산방정식", "브라운운동", "파이썬"]
 ---
 

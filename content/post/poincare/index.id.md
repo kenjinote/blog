@@ -4,7 +4,7 @@ description: "Eksplorasi yang sangat rinci tentang kehidupan matematikawan besar
 slug: "poincare"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matematika", "Biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Poincare", "Topologi", "Teori Kekacauan", "Sejarah Matematika", "Fisika"]
 ---
 

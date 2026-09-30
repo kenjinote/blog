@@ -4,7 +4,7 @@ description: "A detailed explanation of the life of British mathematician Willia
 slug: "brouncker"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematics", "Biography"]
+categories: ["mathematics", "biography"]
 tags: ["William Brouncker", "Pi", "Continued Fraction", "Pell's Equation", "Royal Society"]
 ---
 

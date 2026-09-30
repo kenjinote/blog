@@ -2,7 +2,7 @@
 title: "컴파일러 최적화 기술: SSA(정적 단일 할당)란?"
 description: "사람이 작성한 코드를 컴파일러가 어떻게 마개조하는가."
 slug: compiler-optimization-ssa
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "compiler", "optimization", "ssa", "computer-science"]
 image: eyecatch.jpg
 date: 2026-09-27T14:20:15+09:00

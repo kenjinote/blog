@@ -2,9 +2,7 @@
 title: "B-деревья и B+ деревья: почему индексы баз данных такие быстрые"
 description: "Изнанка древовидной структуры, минимизирующей дисковый ввод-вывод."
 slug: b-tree-b-plus-tree-database-index
-categories:
-  - computer-science
-  - algorithm
+categories: ["computer-science", "algorithms"]
 tags:
   - tech
   - database

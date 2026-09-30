@@ -4,9 +4,7 @@ description: "Uma explicação detalhada da vida turbulenta de Georg Cantor, o f
 slug: "cantor"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "matemática"
-  - "biografia"
+categories: ["mathematics", "biography"]
 tags:
   - "Georg Cantor"
   - "Teoria dos conjuntos"

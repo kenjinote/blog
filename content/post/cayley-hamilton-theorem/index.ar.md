@@ -5,8 +5,7 @@ description: "شرح مفصل لمبرهنة كيلي-هاميلتون، إحد�
 slug: "cayley-hamilton-theorem"
 date: 2026-09-20T14:50:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "رياضيات"
+categories: ["mathematics"]
 tags:
   - "جبر خطي"
   - "مصفوفة"

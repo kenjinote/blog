@@ -2,9 +2,7 @@
 title: "Le théorème CAP et le théorème PACELC : Le dilemme des bases de données distribuées"
 description: "Cohérence, disponibilité ou latence ?"
 date: 2026-09-27T14:05:08+09:00
-categories:
-  - computer-science
-  - algorithm
+categories: ["computer-science", "algorithms"]
 tags:
   - tech
   - distributed-systems

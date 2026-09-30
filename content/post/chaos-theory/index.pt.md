@@ -5,7 +5,7 @@ description: "Um guia abrangente sobre a teoria do caos e o efeito borboleta, si
 slug: "chaos-theory"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["ciência", "matemática"]
+categories: ["science", "mathematics"]
 tags:
   - "Teoria do Caos"
   - "Física"

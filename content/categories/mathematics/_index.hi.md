@@ -1,3 +1,8 @@
 ---
-title: "गणित"
+{
+  "title": "गणित",
+  "aliases": [
+    "/hi/categories/गणित/"
+  ]
+}
 ---

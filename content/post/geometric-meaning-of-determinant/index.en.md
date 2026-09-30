@@ -4,8 +4,7 @@ description: "The determinant is not just a calculation formula, but an importan
 slug: "geometric-meaning-of-determinant"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "Mathematics"
+categories: ["mathematics"]
 tags: 
   - "Linear Algebra"
   - "Determinant"

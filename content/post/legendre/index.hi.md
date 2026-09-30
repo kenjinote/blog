@@ -4,7 +4,7 @@ description: "महान फ्रांसीसी गणितज्ञ ए
 slug: "legendre"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["लीजेंड्रे", "संख्या सिद्धांत", "ज्यामिति", "गणित का इतिहास"]
 ---
 

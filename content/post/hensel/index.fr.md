@@ -4,7 +4,7 @@ description: "Une plongée en profondeur dans la vie du mathématicien allemand 
 slug: "hensel"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathématiques", "biographie"]
+categories: ["mathematics", "biography"]
 tags: ["Kurt Hensel", "nombres p-adiques", "théorie algébrique des nombres", "histoire des mathématiques"]
 ---
 

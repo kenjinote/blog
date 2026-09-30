@@ -4,8 +4,7 @@ description: "مقدمة حول كيفية حساب مجموعات الدفع ب
 slug: "generating-functions"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "الرياضيات"
+categories: ["mathematics"]
 tags:
   - "الدوال المولدة"
   - "التوافيق"

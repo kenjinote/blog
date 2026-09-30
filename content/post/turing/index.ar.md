@@ -4,7 +4,7 @@ description: "شرح مفصل لحياة آلان تورينج، وفك تشفي
 slug: "turing"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["الرياضيات", "سيرة ذاتية"]
+categories: ["mathematics", "biography"]
 tags: ["آلان تورينج", "آلة تورينج", "إنجما", "مشكلة التوقف", "التخلق الحيوي"]
 ---
 

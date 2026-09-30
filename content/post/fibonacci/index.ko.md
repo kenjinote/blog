@@ -4,7 +4,7 @@ description: "피보나치의 생애, 『산반서』를 통한 아라비아 숫
 slug: "fibonacci"
 date: "2026-09-20T18:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["피보나치", "수학", "역사", "황금비", "산반서"]
 ---
 

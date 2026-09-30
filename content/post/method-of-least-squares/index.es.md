@@ -4,8 +4,7 @@ description: "Una explicación profunda de la mecánica del Método de Mínimos 
 slug: "method-of-least-squares"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "matemáticas"
+categories: ["mathematics"]
 tags:
   - "álgebra lineal"
   - "optimización"

@@ -4,7 +4,7 @@ description: "फील्ड्स मेडल विजेता जापा
 slug: "hironaka-heisuke"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["हेसुके हिरोनाका", "बीजगणितीय ज्यामिति", "सिंगुलैरिटीज का रिज़ॉल्यूशन", "फील्ड्स मेडल", "जापानी गणितज्ञ", "रचनात्मकता"]
 ---
 

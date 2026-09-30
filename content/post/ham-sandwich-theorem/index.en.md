@@ -4,8 +4,7 @@ description: "A detailed explanation of the Ham Sandwich Theorem, which states t
 slug: "ham-sandwich-theorem"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathematics"
+categories: ["mathematics"]
 tags:
   - "Topology"
   - "Geometry"

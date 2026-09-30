@@ -3,7 +3,7 @@ title: "أساسيات الحوسبة الكمومية: التراكب الكم�
 description: "لماذا يمكن للحوسبة الكمومية كسر تشفير RSA. شرح شامل للاختلافات بين البتات الكلاسيكية والبتات الكمومية، البوابات الكمومية، التشابك الكمومي، الأساس الرياضي لخوارزمية شور، وتحديات أجهزة NISQ."
 date: 2026-09-28T00:16:09+09:00
 slug: quantum-computing-qubit-shor-algorithm
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "quantum-computing", "physics", "algorithm", "cryptography"]
 image: eyecatch.jpg
 ---

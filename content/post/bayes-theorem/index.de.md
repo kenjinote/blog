@@ -4,8 +4,7 @@ description: "Eine ausführliche Erklärung, wie der Satz von Bayes Wahrscheinli
 slug: "bayes-theorem"
 date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "mathematik"
+categories: ["mathematics"]
 tags:
   - "Satz von Bayes"
   - "Maschinelles Lernen"

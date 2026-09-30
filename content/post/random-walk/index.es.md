@@ -4,7 +4,7 @@ description: "Una explicación detallada de los antecedentes matemáticos del pa
 slug: "random-walk"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matemáticas"]
+categories: ["mathematics"]
 tags: ["Paseo Aleatorio", "Probabilidad", "Ecuación de Difusión", "Movimiento Browniano", "Python"]
 ---
 

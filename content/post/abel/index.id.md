@@ -4,7 +4,7 @@ description: "Niels Henrik Abel, seorang ahli matematika brilian dari Norwegia. 
 slug: "abel"
 date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matematika", "Biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Abel", "Aljabar", "Sejarah", "Matematika"]
 ---
 

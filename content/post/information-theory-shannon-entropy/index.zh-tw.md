@@ -5,8 +5,7 @@ description: "詳細解說克勞德·夏農提出的資訊理論基礎，從熵�
 slug: information-theory-shannon-entropy
 date: 2026-09-21T02:45:54+09:00
 image: eyecatch.jpg
-categories:
-  - 計算機科學
+categories: ["computer-science"]
 tags:
   - 資訊理論
   - 熵

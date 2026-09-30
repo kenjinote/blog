@@ -4,8 +4,7 @@ description: "詳細講解代數基本定理的歷史背景、直觀意義，以
 slug: "fundamental-theorem-of-algebra"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "數學"
+categories: ["mathematics"]
 tags:
   - "代數學"
   - "複變分析"

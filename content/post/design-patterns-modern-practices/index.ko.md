@@ -4,9 +4,7 @@ description: "1994년에 제창된 GoF 디자인 패턴. 현대의 모던 프로
 slug: "design-patterns-modern-practices"
 date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "아키텍처"
-  - "프로그래밍"
+categories: ["architecture", "programming"]
 tags:
   - "디자인 패턴"
   - "gof"

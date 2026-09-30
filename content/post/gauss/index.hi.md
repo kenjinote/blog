@@ -5,7 +5,7 @@ description: "'गणितज्ञों के राजकुमार' क�
 slug: "gauss"
 date: 2026-09-20T19:10:00+09:00
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["गॉस", "गणित का इतिहास", "प्रतिभा", "ज्यामिति", "संख्या सिद्धांत"]
 ---
 

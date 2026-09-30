@@ -4,7 +4,7 @@ description: "Исчерпывающее руководство по техни�
 slug: "cryptocurrency-and-bitcoin"
 date: "2026-09-20T23:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Технологии", "Математика"]
+categories: ["technology", "mathematics"]
 tags: ["Биткойн", "Криптография", "Блокчейн"]
 ---
 

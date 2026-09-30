@@ -5,7 +5,7 @@ description: "La función Gamma conecta los factoriales discretos con una curva 
 slug: "gamma-function"
 date: 2026-09-20T14:40:00+09:00
 image: "eyecatch.jpg"
-categories: ["Matemáticas"]
+categories: ["mathematics"]
 tags: ["Función Gamma", "Euler", "Análisis Complejo", "Cálculo"]
 ---
 

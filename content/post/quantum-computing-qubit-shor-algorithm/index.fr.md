@@ -3,7 +3,7 @@ title: "Principes fondamentaux de l'informatique quantique : Superposition quant
 description: "Pourquoi les ordinateurs quantiques peuvent-ils casser la cryptographie RSA. Explication détaillée depuis les différences entre bits classiques et qubits, jusqu'aux portes quantiques, l'intrication quantique, les fondements mathématiques de l'algorithme de Shor et les défis des dispositifs NISQ."
 date: 2026-09-28T00:16:09+09:00
 slug: quantum-computing-qubit-shor-algorithm
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "quantum-computing", "physics", "algorithm", "cryptography"]
 image: eyecatch.jpg
 ---

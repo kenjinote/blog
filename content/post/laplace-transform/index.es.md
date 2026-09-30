@@ -4,8 +4,7 @@ description: "Una explicación exhaustiva desde los conceptos básicos de la tra
 slug: "laplace-transform"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "matemáticas"
+categories: ["mathematics"]
 tags:
   - "Transformada de Laplace"
   - "Ecuaciones diferenciales"

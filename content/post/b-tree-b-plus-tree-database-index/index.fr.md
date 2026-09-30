@@ -2,9 +2,7 @@
 title: "B-Tree et B+ Tree : Pourquoi les index de bases de données sont-ils si rapides ?"
 description: "Les coulisses de la structure arborescente qui minimise les E/S disque."
 slug: b-tree-b-plus-tree-database-index
-categories:
-  - computer-science
-  - algorithm
+categories: ["computer-science", "algorithms"]
 tags:
   - tech
   - database

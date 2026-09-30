@@ -5,7 +5,7 @@ description: "Blaise Pascal, yang dikenal dengan kutipan 'Manusia adalah alang-a
 slug: "pascal"
 date: 2026-09-20T19:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["Matematika", "Biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Pascal", "Teori Probabilitas", "Geometri Proyektif", "Teorema Pascal", "Segitiga Pascal", "Fisika"]
 ---
 

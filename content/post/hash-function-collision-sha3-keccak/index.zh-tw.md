@@ -2,7 +2,7 @@
 slug: hash-function-collision-sha3-keccak
 title: "雜湊函數的抗碰撞性與 SHA-3 (Keccak)"
 description: "海綿結構：一種新的密碼學雜湊機制。"
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "cryptography", "security", "hash", "algorithm"]
 date: 2026-09-27T14:20:15+09:00
 image: "eyecatch.jpg"

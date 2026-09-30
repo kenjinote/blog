@@ -4,9 +4,7 @@ description: "استكشاف القانون الرياضي الغامض المخ
 slug: "benfords-law"
 date: "2026-09-15T10:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "الرياضيات"
-  - "الإحصاء"
+categories: ["mathematics", "statistics"]
 tags:
   - "قانون بنفورد"
   - "اكتشاف الاحتيال"

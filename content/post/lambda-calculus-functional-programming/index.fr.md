@@ -5,8 +5,7 @@ description: "Comment la théorie fondamentale du calcul, le lambda-calcul, a é
 slug: lambda-calculus-functional-programming
 date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
-categories:
-  - informatique
+categories: ["computer-science"]
 tags:
   - lambda-calcul
   - programmation-fonctionnelle

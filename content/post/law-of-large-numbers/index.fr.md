@@ -5,7 +5,7 @@ description: "Une explication de la loi des grands nombres, un théorème crucia
 slug: "law-of-large-numbers"
 date: 2026-09-14
 image: "eyecatch.jpg"
-categories: ["mathematiques", "science-des-donnees", "jeux-d-argent"]
+categories: ["mathematics", "data-science", "gambling"]
 tags:
   - "Loi des grands nombres"
   - "Probabilité"

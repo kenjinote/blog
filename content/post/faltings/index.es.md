@@ -4,9 +4,7 @@ description: "Una explicación detallada de la vida del medallista Fields Gerd F
 slug: "faltings"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matemáticas"
-  - "Biografía"
+categories: ["mathematics", "biography"]
 tags:
   - "Gerd Faltings"
   - "Teoría de números"

@@ -4,7 +4,7 @@ description: "Ein detaillierter Blick, anhand von Formeln und Diagrammen, auf da
 slug: "zipfs-law"
 date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematik", "datenwissenschaft", "linguistik"]
+categories: ["mathematics", "data-science", "linguistics"]
 tags:
   - "Zipfsches Gesetz"
   - "Potenzgesetz"

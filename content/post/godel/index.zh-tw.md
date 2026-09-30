@@ -4,7 +4,7 @@ description: "詳細解讀20世紀最偉大的邏輯學家庫爾特·哥德爾�
 slug: "godel"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學", "傳記"]
+categories: ["mathematics", "biography"]
 tags: ["庫爾特·哥德爾", "不完備性定理", "數學", "邏輯學", "歷史"]
 ---
 

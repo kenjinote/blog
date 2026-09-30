@@ -3,7 +3,7 @@ title: "ガベージコレクション（GC）の進化史"
 description: "マーク＆スイープから現代のZGC/Shenandoahへの歩み。手動メモリ管理の苦悩から、ミリ秒単位の停止時間を実現する最新技術までを徹底解説。"
 date: 2026-09-27T14:20:15+09:00
 slug: garbage-collection-history-zgc
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "garbage-collection", "memory-management", "java", "performance"]
 image: eyecatch.jpg
 ---

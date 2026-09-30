@@ -5,9 +5,7 @@ description: "René Descartes is famous for 'I think, therefore I am'. We explor
 slug: "descartes"
 date: 2026-09-20T18:50:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Mathematics"
-  - "Biography"
+categories: ["mathematics", "biography"]
 tags:
   - "Descartes"
   - "Analytic Geometry"

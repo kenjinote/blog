@@ -4,8 +4,7 @@ description: "شرح عميق لآلية طريقة المربعات الصغر�
 slug: "method-of-least-squares"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "رياضيات"
+categories: ["mathematics"]
 tags:
   - "الجبر الخطي"
   - "التحسين"

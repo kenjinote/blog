@@ -4,8 +4,7 @@ description: "Объяснение чисел Каталана — удивит�
 slug: "catalan-numbers"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "математика"
+categories: ["mathematics"]
 tags:
   - "числа-каталана"
   - "комбинаторика"

@@ -4,7 +4,7 @@ description: "В математике алгебра превратилась в
 slug: "groups-rings-and-fields"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["математика"]
+categories: ["mathematics"]
 tags: ["алгебра", "теория групп", "теория колец", "теория полей"]
 ---
 

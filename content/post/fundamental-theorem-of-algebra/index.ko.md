@@ -4,8 +4,7 @@ description: "대수학의 기본 정리의 역사, 직관적인 의미, 그리�
 slug: "fundamental-theorem-of-algebra"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
+categories: ["mathematics"]
 tags:
   - "대수학"
   - "복소해석학"

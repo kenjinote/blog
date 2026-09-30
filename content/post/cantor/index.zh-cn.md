@@ -4,9 +4,7 @@ description: "详细解读集合论创始人格奥尔格·康托尔跌宕起伏�
 slug: "cantor"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "mathematics"
-  - "传记"
+categories: ["mathematics", "biography"]
 tags:
   - "格奥尔格·康托尔"
   - "集合论"

@@ -4,8 +4,7 @@ description: "올바른 괄호 배열, 이진 트리, 다각형의 삼각 분할
 slug: "catalan-numbers"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
+categories: ["mathematics"]
 tags:
   - "카탈란-수"
   - "조합론"

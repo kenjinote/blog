@@ -4,9 +4,7 @@ description: "Mengeksplorasi hukum matematika misterius yang tersembunyi dalam d
 slug: "benfords-law"
 date: "2026-09-15T10:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matematika"
-  - "Statistika"
+categories: ["mathematics", "statistics"]
 tags:
   - "Hukum Benford"
   - "Deteksi Penipuan"

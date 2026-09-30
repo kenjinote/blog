@@ -1,5 +1,8 @@
 ---
 {
-  "title": "Base de Données"
+  "title": "Base de Données",
+  "aliases": [
+    "/fr/categories/base-de-donnees/"
+  ]
 }
 ---

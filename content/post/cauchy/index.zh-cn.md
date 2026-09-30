@@ -5,9 +5,7 @@ description: "详细探讨法国伟大的数学家奥古斯丁-路易·柯西的
 slug: "cauchy"
 date: 2026-09-20T19:20:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "mathematics"
-  - "传记"
+categories: ["mathematics", "biography"]
 tags:
   - "柯西"
   - "分析学"

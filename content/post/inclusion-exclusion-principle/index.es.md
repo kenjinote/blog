@@ -4,8 +4,7 @@ description: "Una guía detallada sobre el Principio de Inclusión-Exclusión, u
 slug: "inclusion-exclusion-principle"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "matemáticas"
+categories: ["mathematics"]
 tags:
   - "matemáticas"
   - "combinatoria"

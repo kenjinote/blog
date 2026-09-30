@@ -4,8 +4,7 @@ description: "A detailed explanation of the epsilon-delta definition of limits, 
 slug: "epsilon-delta-definition"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "Mathematics"
+categories: ["mathematics"]
 tags: 
   - "Calculus"
   - "Limits"

@@ -4,9 +4,7 @@ description: "Uma explicação aprofundada da vida do gênio matemático indiano
 slug: "ramanujan"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matemática"
-  - "Biografia"
+categories: ["mathematics", "biography"]
 tags:
   - "Ramanujan"
   - "G.H. Hardy"

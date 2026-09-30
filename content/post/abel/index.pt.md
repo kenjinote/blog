@@ -4,7 +4,7 @@ description: "Niels Henrik Abel, um brilhante matemático norueguês. Este artig
 slug: "abel"
 date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matemática", "Biografia"]
+categories: ["mathematics", "biography"]
 tags: ["Abel", "Álgebra", "História", "Matemática"]
 ---
 

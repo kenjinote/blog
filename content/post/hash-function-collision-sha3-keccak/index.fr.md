@@ -2,7 +2,7 @@
 slug: hash-function-collision-sha3-keccak
 title: "Résistance aux collisions des fonctions de hachage et SHA-3 (Keccak)"
 description: "La construction en éponge, un nouveau mécanisme de hachage cryptographique."
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "cryptography", "security", "hash", "algorithm"]
 date: 2026-09-27T14:20:15+09:00
 image: "eyecatch.jpg"

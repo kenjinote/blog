@@ -4,7 +4,7 @@ description: "Une exploration approfondie de la vie dramatique d'André Weil, de
 slug: "weil"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathématiques", "biographie"]
+categories: ["mathematics", "biography"]
 tags: ["André Weil", "Bourbaki", "Géométrie Algébrique", "Théorie des Nombres"]
 ---
 

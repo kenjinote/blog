@@ -5,7 +5,7 @@ description: "La fonction Gamma relie les factorielles discrètes à une courbe 
 slug: "gamma-function"
 date: 2026-09-20T14:40:00+09:00
 image: "eyecatch.jpg"
-categories: ["Mathématiques"]
+categories: ["mathematics"]
 tags: ["Fonction Gamma", "Euler", "Analyse Complexe", "Calcul Différentiel et Intégral"]
 ---
 

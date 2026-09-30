@@ -1,5 +1,8 @@
 ---
 {
-  "title": "Arquitetura"
+  "title": "Arquitetura",
+  "aliases": [
+    "/pt/categories/arquitetura/"
+  ]
 }
 ---

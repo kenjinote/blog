@@ -4,9 +4,7 @@ description: 'نظرة عامة على حياة، وصراعات مع كانتو
 slug: "kronecker"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "رياضيات"
-  - "سيرة ذاتية"
+categories: ["mathematics", "biography"]
 tags:
   - "كرونكر"
   - "جبر"

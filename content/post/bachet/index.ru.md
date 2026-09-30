@@ -4,7 +4,7 @@ description: "Подробный обзор жизни и математичес
 slug: "bachet"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Математика", "Биография"]
+categories: ["mathematics", "biography"]
 tags: ["Баше", "Теория чисел", "История математики", "Занимательная математика", "Диофант"]
 ---
 

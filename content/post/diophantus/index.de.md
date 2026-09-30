@@ -5,9 +5,7 @@ description: "Eine detaillierte Erklärung des Lebens des antiken griechischen M
 slug: "diophantus"
 date: 2026-09-20T18:40:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Mathematik"
-  - "Biografie"
+categories: ["mathematics", "biography"]
 tags:
   - "Diophantus"
   - "Algebra"

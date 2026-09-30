@@ -5,9 +5,7 @@ description: "계산의 한계란 무엇인가? 앨런 튜링이 제창한 튜�
 slug: turing-machine-computability
 date: 2026-09-21T02:35:46+09:00
 image: eyecatch.jpg
-categories:
-  - 컴퓨터 과학
-  - 수학
+categories: ["computer-science", "mathematics"]
 tags:
   - 튜링 머신
   - 계산 이론

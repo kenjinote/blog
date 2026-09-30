@@ -5,9 +5,7 @@ description: '深入探討古希臘數學家畢達哥拉斯的生平、畢達哥
 slug: 'pythagoras'
 date: '2026-09-20T18:40:00+09:00'
 image: "eyecatch.jpg"
-categories:
-  - '數學'
-  - '傳記'
+categories: ["mathematics", "biography"]
 tags:
   - '畢達哥拉斯'
   - '幾何學'

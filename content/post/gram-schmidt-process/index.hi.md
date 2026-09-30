@@ -5,7 +5,7 @@ description: 'रेखीय बीजगणित में ग्राम-�
 slug: 'gram-schmidt-process'
 date: '2026-09-20T14:40:00+09:00'
 image: "eyecatch.jpg"
-categories: ["गणित"]
+categories: ["mathematics"]
 tags: ["रेखीय बीजगणित", "एल्गोरिदम", "मशीन लर्निंग", "QR अपघटन", "पायथन", "संख्यात्मक कंप्यूटिंग", "गणित"]
 ---
 

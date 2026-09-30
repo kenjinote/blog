@@ -5,9 +5,7 @@ description: "\"Conway's Game of Life\" is an incredible cellular automaton that
 slug: "conways-game-of-life"
 date: 2026-09-15T10:00:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Mathematics"
-  - "Computer Science"
+categories: ["mathematics", "computer-science"]
 tags:
   - "Conway's Game of Life"
   - "Cellular Automata"

@@ -3,7 +3,7 @@ title: "O Custo da Mudança de Contexto e o Processamento Assíncrono (async/awa
 description: "Gerenciamento de processos e threads do SO e a importância do event loop."
 date: 2026-09-27T14:20:15+09:00
 slug: context-switch-async-await-os
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "os", "async", "concurrency", "performance"]
 image: eyecatch.jpg
 ---

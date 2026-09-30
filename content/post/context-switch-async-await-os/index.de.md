@@ -3,7 +3,7 @@ title: "Der Preis des Kontextwechsels und asynchrone Verarbeitung (async/await)"
 description: "Die Prozess- und Thread-Verwaltung des OS und die Daseinsberechtigung von Event-Loops."
 date: 2026-09-27T14:20:15+09:00
 slug: context-switch-async-await-os
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "os", "async", "concurrency", "performance"]
 image: eyecatch.jpg
 ---

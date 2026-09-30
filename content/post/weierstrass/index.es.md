@@ -4,7 +4,7 @@ description: "Una explicación detallada de la turbulenta vida y los grandes log
 slug: "weierstrass"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matemáticas", "Biografía"]
+categories: ["mathematics", "biography"]
 tags: ["Mates", "Weierstrass", "Análisis", "Historia"]
 ---
 

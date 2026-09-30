@@ -4,7 +4,7 @@ description: "Uma explicação aprofundada do Teorema do Valor Intermediário e 
 slug: "intermediate-and-mean-value-theorem"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matemática"]
+categories: ["mathematics"]
 tags: ["cálculo", "teoremas", "provas-matemáticas"]
 ---
 

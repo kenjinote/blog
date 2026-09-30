@@ -4,8 +4,7 @@ description: "شرح مفصل للتركيب الرياضي المنسوج بو�
 slug: "permutations-combinations-and-binomial-theorem"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "الرياضيات"
+categories: ["mathematics"]
 tags:
   - "التركيبات"
   - "نظرية ذات الحدين"

@@ -5,7 +5,7 @@ description: "Penjelasan terperinci tentang kehidupan dan kontribusi matematika 
 slug: "mordell"
 date: 2026-09-20T20:10:00+09:00
 image: "eyecatch.jpg"
-categories: ["matematika", "biografi"]
+categories: ["mathematics", "biography"]
 tags: ["teori bilangan", "Mordell", "kurva eliptik", "persamaan diophantine"]
 ---
 

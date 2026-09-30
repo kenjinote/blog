@@ -4,8 +4,7 @@ description: "全面講解圖論的基礎知識。從哥尼斯堡七橋問題到
 slug: "basics-of-graph-theory"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "數學"
+categories: ["mathematics"]
 tags:
   - "圖論"
   - "演算法"

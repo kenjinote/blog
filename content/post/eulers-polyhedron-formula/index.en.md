@@ -4,8 +4,7 @@ description: "An in-depth explanation of the beauty of Euler's polyhedron formul
 slug: "eulers-polyhedron-formula"
 date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathematics"
+categories: ["mathematics"]
 tags:
   - "Topology"
   - "Geometry"

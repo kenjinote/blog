@@ -5,7 +5,7 @@ description: "गामा फलन असतत फैक्टोरियल
 slug: "gamma-function"
 date: 2026-09-20T14:40:00+09:00
 image: "eyecatch.jpg"
-categories: ["गणित"]
+categories: ["mathematics"]
 tags: ["गामा फलन", "यूलर", "सम्मिश्र विश्लेषण", "कैलकुलस"]
 ---
 

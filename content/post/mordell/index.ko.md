@@ -5,7 +5,7 @@ description: "디오판토스 방정식, 타원 곡선에서의 획기적인 업
 slug: "mordell"
 date: 2026-09-20T20:10:00+09:00
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["수론", "모델", "타원 곡선", "디오판토스 방정식"]
 ---
 

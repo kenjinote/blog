@@ -2,7 +2,7 @@
 title: "動的計画法（DP）とベルマン方程式"
 slug: dynamic-programming-bellman-equation
 description: "問題を小さく分割して記憶するアルゴリズムの真髄。"
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "algorithm", "dynamic-programming", "math", "computer-science"]
 image: "eyecatch.jpg"
 date: "2026-09-27T14:05:08+09:00"

@@ -4,7 +4,7 @@ description: 'Горо Симура, всемирно известный мат�
 slug: "shimura-goro"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["математика", "биография"]
+categories: ["mathematics", "biography"]
 tags: ["Горо Симура", "Теория чисел", "Гипотеза Таниямы-Симуры", "Великая теорема Ферма"]
 ---
 

@@ -4,9 +4,7 @@ description: "Eine tiefe Erklärung von den Grundlagen der Quantencomputer bis z
 slug: "quantum-computing-shors-algorithm"
 date: "2026-09-21T02:35:46+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "technologie"
-  - "wissenschaft"
+categories: ["technology", "science"]
 tags:
   - "quantencomputing"
   - "kryptografie"

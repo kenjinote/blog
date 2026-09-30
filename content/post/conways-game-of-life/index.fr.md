@@ -5,9 +5,7 @@ description: "Le \"Jeu de la vie de Conway\" est un automate cellulaire incroyab
 slug: "conways-game-of-life"
 date: 2026-09-15T10:00:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Mathématiques"
-  - "Informatique"
+categories: ["mathematics", "computer-science"]
 tags:
   - "Jeu de la vie de Conway"
   - "Automate cellulaire"

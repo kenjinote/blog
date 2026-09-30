@@ -4,7 +4,7 @@ description: "深入探討 17 世紀法國數學家克洛德·加斯帕爾·巴�
 slug: "bachet"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學", "傳記"]
+categories: ["mathematics", "biography"]
 tags: ["巴謝", "數論", "數學史", "趣味數學", "丟番圖"]
 ---
 

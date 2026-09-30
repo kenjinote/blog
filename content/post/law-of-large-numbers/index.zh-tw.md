@@ -5,7 +5,7 @@ description: "深入解析機率論中極其重要的定理「大數法則」。
 slug: "law-of-large-numbers"
 date: 2026-09-14
 image: "eyecatch.jpg"
-categories: ["數學", "資料科學", "賭博"]
+categories: ["mathematics", "data-science", "gambling"]
 tags:
   - "大數法則"
   - "機率"

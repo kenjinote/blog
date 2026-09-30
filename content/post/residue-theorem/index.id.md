@@ -4,7 +4,7 @@ description: "Penjelasan mendetail tentang cara menyederhanakan integral tentu y
 slug: "residue-theorem"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matematika"]
+categories: ["mathematics"]
 tags: ["analisis kompleks", "kalkulus", "matematika"]
 ---
 

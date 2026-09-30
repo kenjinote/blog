@@ -4,7 +4,7 @@ description: 'Um mergulho profundo na vida de Fibonacci, na disseminação dos a
 slug: "fibonacci"
 date: "2026-09-20T18:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matemática", "Biografia"]
+categories: ["mathematics", "biography"]
 tags: ["Fibonacci", "Matemática", "História", "Proporção Áurea", "Liber Abaci"]
 ---
 

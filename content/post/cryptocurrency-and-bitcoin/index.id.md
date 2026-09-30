@@ -4,7 +4,7 @@ description: "Panduan lengkap yang membahas secara mendalam mekanisme teknis dan
 slug: "cryptocurrency-and-bitcoin"
 date: "2026-09-20T23:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["teknologi", "matematika"]
+categories: ["technology", "mathematics"]
 tags: ["bitcoin", "kriptografi", "blockchain"]
 ---
 

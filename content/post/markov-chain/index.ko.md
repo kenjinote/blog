@@ -4,8 +4,7 @@ description: "마르코프 체인의 기초부터 응용까지, 상태 전이의
 slug: "markov-chain"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
+categories: ["mathematics"]
 tags:
   - "확률론"
   - "마르코프 체인"

@@ -4,7 +4,7 @@ description: "Ein tiefer Einblick in das Leben, die Episoden und die mathematisc
 slug: "leibniz"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematik", "Biografie"]
+categories: ["mathematics", "biography"]
 tags: ["Leibniz", "Infinitesimalrechnung", "Binärsystem", "Philosophie", "Geschichte der Mathematik"]
 ---
 

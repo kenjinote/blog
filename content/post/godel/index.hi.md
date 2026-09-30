@@ -4,7 +4,7 @@ description: "20वीं सदी के सबसे महान तर्�
 slug: "godel"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["कर्ट गोडेल", "अपूर्णता प्रमेय", "गणित", "तर्कशास्त्र", "इतिहास"]
 ---
 

@@ -5,9 +5,7 @@ description: "Eksplorasi mendetail tentang kehidupan matematikawan besar Prancis
 slug: "cauchy"
 date: 2026-09-20T19:20:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "matematika"
-  - "biografi"
+categories: ["mathematics", "biography"]
 tags:
   - "Cauchy"
   - "Analisis"

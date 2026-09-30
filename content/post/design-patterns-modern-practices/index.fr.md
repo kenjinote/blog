@@ -4,9 +4,7 @@ description: "Les patrons de conception GoF introduits en 1994. Sont-ils toujour
 slug: "design-patterns-modern-practices"
 date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "architecture"
-  - "programmation"
+categories: ["architecture", "programming"]
 tags:
   - "patrons-de-conception"
   - "gof"

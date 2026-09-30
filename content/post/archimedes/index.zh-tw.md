@@ -4,7 +4,7 @@ description: "敘拉古的阿基米德。從「尤里卡」的軼事到圓周率
 slug: "archimedes"
 date: "2026-09-20T18:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學", "傳記"]
+categories: ["mathematics", "biography"]
 tags: ["阿基米德", "古希臘", "幾何學", "物理學", "微積分"]
 ---
 

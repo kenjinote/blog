@@ -5,8 +5,7 @@ description: "페르마의 소정리에 대한 직관적인 이해부터 수학�
 slug: "fermats-little-theorem"
 date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "수학"
+categories: ["mathematics"]
 tags:
   - "정수론"
   - "암호학"

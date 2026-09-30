@@ -4,7 +4,7 @@ description: "Archimedes dari Sirakusa. Dari episode 'Eureka' hingga perhitungan
 slug: "archimedes"
 date: "2026-09-20T18:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matematika", "biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Archimedes", "Yunani Kuno", "Geometri", "Fisika", "Kalkulus"]
 ---
 

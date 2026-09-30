@@ -5,9 +5,7 @@ description: 'Eksplorasi mendalam tentang kehidupan matematikawan Yunani kuno Py
 slug: 'pythagoras'
 date: '2026-09-20T18:40:00+09:00'
 image: "eyecatch.jpg"
-categories:
-  - 'matematika'
-  - 'biografi'
+categories: ["mathematics", "biography"]
 tags:
   - 'Pythagoras'
   - 'Geometri'

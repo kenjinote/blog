@@ -4,9 +4,7 @@ description: "Mergulhe profundamente na vida turbulenta de Bernhard Riemann e em
 slug: "riemann"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "matemática"
-  - "biografia"
+categories: ["mathematics", "biography"]
 tags:
   - "Riemann"
   - "Função zeta"

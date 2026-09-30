@@ -4,9 +4,7 @@ description: "양자 컴퓨터의 기초부터, RSA 암호의 위협이 되는 �
 slug: "quantum-computing-shors-algorithm"
 date: "2026-09-21T02:35:46+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "기술"
-  - "과학"
+categories: ["technology", "science"]
 tags:
   - "양자 컴퓨팅"
   - "암호학"

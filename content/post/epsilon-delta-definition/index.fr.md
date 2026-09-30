@@ -4,8 +4,7 @@ description: "Une explication détaillée de la définition epsilon-delta des li
 slug: "epsilon-delta-definition"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "Mathématiques"
+categories: ["mathematics"]
 tags: 
   - "Calcul"
   - "Limites"

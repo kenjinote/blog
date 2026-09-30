@@ -5,8 +5,7 @@ description: تعمق في نموذج البرمجة الوظيفية واشرح
 slug: functional-programming-concepts-pure-functions-monads
 date: 2026-09-21T14:51:08+09:00
 image: eyecatch.jpg
-categories:
-  - علوم-الحاسوب
+categories: ["computer-science"]
 tags:
   - البرمجة-الوظيفية
   - الموناد

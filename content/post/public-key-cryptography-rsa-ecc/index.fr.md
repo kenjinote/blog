@@ -3,7 +3,7 @@ title: "La mathématique de la cryptographie à clé publique : Du RSA à la cry
 description: "Le passage de la difficulté de la factorisation en nombres premiers au problème du logarithme discret."
 date: 2026-09-27T23:50:00+09:00
 slug: public-key-cryptography-rsa-ecc
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "cryptography", "security", "math", "algorithm"]
 image: eyecatch.jpg
 ---

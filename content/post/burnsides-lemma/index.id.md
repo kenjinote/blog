@@ -4,8 +4,7 @@ description: "Menjelaskan cara menghilangkan pola duplikat yang disebabkan oleh 
 slug: "burnsides-lemma"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "matematika"
+categories: ["mathematics"]
 tags:
   - "Teori Grup"
   - "Kombinatorika"

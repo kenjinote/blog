@@ -4,9 +4,7 @@ description: "شرح مفصل للحياة المضطربة لجورج كانت�
 slug: "cantor"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "الرياضيات"
-  - "سيرة ذاتية"
+categories: ["mathematics", "biography"]
 tags:
   - "جورج كانتور"
   - "نظرية المجموعات"

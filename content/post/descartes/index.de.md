@@ -5,9 +5,7 @@ description: "René Descartes ist berühmt für 'Ich denke, also bin ich'. Wir u
 slug: "descartes"
 date: 2026-09-20T18:50:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Mathematik"
-  - "Biografie"
+categories: ["mathematics", "biography"]
 tags:
   - "Descartes"
   - "Analytische Geometrie"

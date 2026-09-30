@@ -4,8 +4,7 @@ description: "Entdecken Sie faszinierende Beweise des Satzes des Pythagoras. Erf
 slug: "diverse-proofs-of-pythagorean-theorem"
 date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "Mathematik"
+categories: ["mathematics"]
 tags: 
   - "Geometrie"
   - "Algebra"

@@ -4,9 +4,7 @@ description: "詳細解讀集合論創始人格奧爾格·康托爾跌宕起伏�
 slug: "cantor"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "數學"
-  - "傳記"
+categories: ["mathematics", "biography"]
 tags:
   - "格奧爾格·康托爾"
   - "集合論"

@@ -4,7 +4,7 @@ description: "Глубокий взгляд на жизнь немецкого �
 slug: "hensel"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["математика", "биография"]
+categories: ["mathematics", "biography"]
 tags: ["Курт Гензель", "p-адические числа", "алгебраическая теория чисел", "история математики"]
 ---
 

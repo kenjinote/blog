@@ -1,5 +1,8 @@
 ---
 {
-  "title": "Data Science"
+  "title": "Data Science",
+  "aliases": [
+    "/de/categories/datenwissenschaft/"
+  ]
 }
 ---

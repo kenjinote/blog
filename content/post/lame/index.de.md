@@ -4,7 +4,7 @@ description: "Ein tiefer Einblick in das Leben des französischen Mathematikers 
 slug: "lame"
 date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematik", "Biografie"]
+categories: ["mathematics", "biography"]
 tags: ["Gabriel Lamé", "Geschichte der Mathematik", "Zahlentheorie", "Elastizität", "Geometrie"]
 ---
 

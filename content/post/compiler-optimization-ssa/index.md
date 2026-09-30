@@ -2,7 +2,7 @@
 title: "コンパイラ最適化技術：SSA（静的単一代入）とは"
 description: '人間が書いたコードをコンパイラがどう魔改造しているか。'
 slug: compiler-optimization-ssa
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "compiler", "optimization", "ssa", "computer-science"]
 image: eyecatch.jpg
 date: 2026-09-27T14:20:15+09:00

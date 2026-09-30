@@ -4,7 +4,7 @@ description: "深入探討1970年因對數線性形式的定理而獲得菲爾�
 slug: "baker"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學", "傳記"]
+categories: ["mathematics", "biography"]
 tags: ["Alan Baker", "數論", "菲爾茲獎", "超越數論"]
 ---
 

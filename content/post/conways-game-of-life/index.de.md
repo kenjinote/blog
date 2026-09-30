@@ -5,9 +5,7 @@ description: "„Conways Spiel des Lebens“ ist ein unglaublicher zellulärer A
 slug: "conways-game-of-life"
 date: 2026-09-15T10:00:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Mathematik"
-  - "Informatik"
+categories: ["mathematics", "computer-science"]
 tags:
   - "Conways Spiel des Lebens"
   - "Zellulärer Automat"

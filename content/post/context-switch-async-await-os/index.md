@@ -3,7 +3,7 @@ title: "コンテキストスイッチの代償と非同期処理（async/await�
 description: "OSのプロセス・スレッド管理とイベントループの存在意義。"
 date: 2026-09-27T14:20:15+09:00
 slug: context-switch-async-await-os
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "os", "async", "concurrency", "performance"]
 image: eyecatch.jpg
 ---

@@ -4,7 +4,7 @@ description: "लघुगणक में रैखिक रूपों प�
 slug: "baker"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["Alan Baker", "संख्या सिद्धांत", "फील्ड्स पदक", "पारलौकिक संख्या सिद्धांत"]
 ---
 

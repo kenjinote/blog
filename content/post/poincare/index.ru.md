@@ -4,7 +4,7 @@ description: "Невероятно подробное исследование �
 slug: "poincare"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Математика", "Биография"]
+categories: ["mathematics", "biography"]
 tags: ["Пуанкаре", "Топология", "Теория хаоса", "История математики", "Физика"]
 ---
 

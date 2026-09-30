@@ -4,9 +4,7 @@ description: "Une plongée approfondie dans la vie de Helmut Hasse, l'un des pri
 slug: "hasse"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "mathématiques"
-  - "biographie"
+categories: ["mathematics", "biography"]
 tags:
   - "Helmut Hasse"
   - "Théorie des nombres"

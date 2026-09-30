@@ -5,7 +5,7 @@ description: "Blaise Pascal, connu pour « L'homme est un roseau pensant ». Nou
 slug: "pascal"
 date: 2026-09-20T19:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["Mathématiques", "Biographie"]
+categories: ["mathematics", "biography"]
 tags: ["Pascal", "Théorie des probabilités", "Géométrie projective", "Théorème de Pascal", "Triangle de Pascal", "Physique"]
 ---
 

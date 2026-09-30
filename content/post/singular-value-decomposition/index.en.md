@@ -4,7 +4,7 @@ description: "A comprehensive guide to the mathematical foundations, geometric i
 slug: "singular-value-decomposition"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematics"]
+categories: ["mathematics"]
 tags: ["SVD", "Linear Algebra", "Machine Learning", "Data Compression", "AI", "Python"]
 ---
 

@@ -4,9 +4,7 @@ description: "Джон Валлис, выдающийся английский �
 slug: "wallis"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "математика"
-  - "биография"
+categories: ["mathematics", "biography"]
 tags:
   - "Джон Валлис"
   - "Математический анализ"

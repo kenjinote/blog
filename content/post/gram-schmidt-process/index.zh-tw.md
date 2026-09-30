@@ -5,7 +5,7 @@ description: '全面解析線性代數中的重要概念「格拉姆-施密特�
 slug: 'gram-schmidt-process'
 date: '2026-09-20T14:40:00+09:00'
 image: "eyecatch.jpg"
-categories: ["數學"]
+categories: ["mathematics"]
 tags: ["線性代數", "演算法", "機器學習", "QR分解", "Python", "數值計算", "數學"]
 ---
 

@@ -4,7 +4,7 @@ description: "詳細講解線性代數中最重要的概念之一：特徵值與
 slug: "eigenvalues-and-eigenvectors"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學"]
+categories: ["mathematics"]
 tags: ["線性代數", "特徵值", "特徵向量", "數學", "機器學習", "python", "資料科學"]
 ---
 

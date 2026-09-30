@@ -4,8 +4,7 @@ description: "شرح متعمق لكيفية تحديث مبرهنة بايز ل
 slug: "bayes-theorem"
 date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "رياضيات"
+categories: ["mathematics"]
 tags:
   - "مبرهنة بايز"
   - "التعلم الآلي"

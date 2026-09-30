@@ -5,9 +5,7 @@ description: "Начиная с основ теории графов, мы по�
 slug: graph-theory-dijkstra-a-star
 date: 2026-09-21T02:45:54+09:00
 image: eyecatch.jpg
-categories:
-  - математика
-  - информатика
+categories: ["mathematics", "computer-science"]
 tags:
   - теория-графов
   - дейкстра

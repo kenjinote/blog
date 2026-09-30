@@ -4,9 +4,7 @@ description: "نتعمق في البنية الموجهة بالأحداث وا�
 slug: "event-driven-architecture-async"
 date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "هندسة معمارية"
-  - "الواجهة الخلفية"
+categories: ["architecture", "backend"]
 tags:
   - "موجه بالأحداث"
   - "غير متزامن"

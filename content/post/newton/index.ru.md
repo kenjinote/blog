@@ -4,9 +4,7 @@ description: "Глубокое погружение в необыкновенн�
 slug: "newton"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Математика"
-  - "Биография"
+categories: ["mathematics", "biography"]
 tags:
   - "Исаак Ньютон"
   - "Математический анализ"

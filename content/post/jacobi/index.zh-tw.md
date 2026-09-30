@@ -4,9 +4,7 @@ description: "詳細介紹19世紀傑出數學家卡爾·古斯塔夫·雅各布
 slug: "jacobi"
 date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "數學"
-  - "傳記"
+categories: ["mathematics", "biography"]
 tags:
   - "雅可比"
   - "橢圓函數"

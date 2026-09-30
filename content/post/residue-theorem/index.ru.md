@@ -4,7 +4,7 @@ description: "Подробное объяснение того, как удив�
 slug: "residue-theorem"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["математика"]
+categories: ["mathematics"]
 tags: ["комплексный анализ", "исчисление", "математика"]
 ---
 

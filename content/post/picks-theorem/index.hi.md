@@ -4,8 +4,7 @@ description: "आंतरिक और सीमा बिंदुओं क�
 slug: "picks-theorem"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "गणित"
+categories: ["mathematics"]
 tags:
   - "ज्यामिति"
   - "पिक-का-प्रमेय"

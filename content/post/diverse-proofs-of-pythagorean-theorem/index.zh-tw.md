@@ -4,8 +4,7 @@ description: "探索畢氏定理（勾股定理）的迷人證明方法。從歐
 slug: "diverse-proofs-of-pythagorean-theorem"
 date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
-categories: 
-  - "數學"
+categories: ["mathematics"]
 tags: 
   - "幾何學"
   - "代數學"

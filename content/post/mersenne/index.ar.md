@@ -4,9 +4,7 @@ description: "نظرة متعمقة على حياة مارين ميرسين، و
 slug: "mersenne"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "الرياضيات"
-  - "سيرة ذاتية"
+categories: ["mathematics", "biography"]
 tags:
   - "ميرسين"
   - "الأعداد الأولية"

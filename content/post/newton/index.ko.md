@@ -4,9 +4,7 @@ description: "아이작 뉴턴의 비범한 생애, 기적의 해에 있었던 �
 slug: "newton"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
-  - "전기"
+categories: ["mathematics", "biography"]
 tags:
   - "아이작 뉴턴"
   - "미적분학"

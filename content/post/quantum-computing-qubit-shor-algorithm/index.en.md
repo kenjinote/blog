@@ -3,7 +3,7 @@ title: "Fundamentals of Quantum Computing: Quantum Superposition and Shor's Algo
 description: "Why can quantum computers break RSA encryption? A comprehensive explanation of the differences between classical and quantum bits, quantum gates, quantum entanglement, the mathematical foundation of Shor's algorithm, and the challenges of NISQ devices."
 date: 2026-09-28T00:16:09+09:00
 slug: quantum-computing-qubit-shor-algorithm
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "quantum-computing", "physics", "algorithm", "cryptography"]
 image: eyecatch.jpg
 ---

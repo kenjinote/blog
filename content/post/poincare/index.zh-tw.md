@@ -4,7 +4,7 @@ description: "極其詳盡地探討了法國偉大數學家亨利·龐加萊的�
 slug: "poincare"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學", "傳記"]
+categories: ["mathematics", "biography"]
 tags: ["龐加萊", "拓撲學", "混沌理論", "數學史", "物理學"]
 ---
 

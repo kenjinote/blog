@@ -4,9 +4,7 @@ description: "深入探究艾薩克·牛頓非凡的一生、奇蹟之年的插�
 slug: "newton"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "數學"
-  - "傳記"
+categories: ["mathematics", "biography"]
 tags:
   - "艾薩克·牛頓"
   - "微積分"

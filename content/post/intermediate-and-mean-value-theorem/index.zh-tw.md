@@ -4,7 +4,7 @@ description: "本文深入探討了微積分的基礎支撐——「介值定理
 slug: "intermediate-and-mean-value-theorem"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學"]
+categories: ["mathematics"]
 tags: ["微積分", "定理", "數學證明"]
 ---
 

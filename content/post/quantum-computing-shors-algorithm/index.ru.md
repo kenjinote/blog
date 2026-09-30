@@ -4,9 +4,7 @@ description: "Глубокое погружение от основ кванто
 slug: "quantum-computing-shors-algorithm"
 date: "2026-09-21T02:35:46+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "технологии"
-  - "наука"
+categories: ["technology", "science"]
 tags:
   - "квантовые-вычисления"
   - "криптография"

@@ -3,7 +3,7 @@ title: "Die Evolutionsgeschichte der Garbage Collection (GC)"
 description: "Der Weg von Mark & Sweep zu modernen ZGC/Shenandoah. Eine ausführliche Erklärung der Qualen manueller Speicherverwaltung bis hin zu den neuesten Technologien, die Pausenzeiten im Millisekundenbereich ermöglichen."
 date: 2026-09-27T14:20:15+09:00
 slug: garbage-collection-history-zgc
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "garbage-collection", "memory-management", "java", "performance"]
 image: eyecatch.jpg
 ---

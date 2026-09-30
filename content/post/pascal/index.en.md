@@ -5,7 +5,7 @@ description: "Blaise Pascal, known for 'Man is a thinking reed'. We detail his t
 slug: "pascal"
 date: 2026-09-20T19:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["Mathematics", "Biography"]
+categories: ["mathematics", "biography"]
 tags: ["Pascal", "Probability Theory", "Projective Geometry", "Pascal's Theorem", "Pascal's Triangle", "Physics"]
 ---
 

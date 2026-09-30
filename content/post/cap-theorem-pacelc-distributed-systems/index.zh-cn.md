@@ -2,9 +2,7 @@
 title: "CAP定理与PACELC定理：分布式数据库面临的困境"
 description: "一致性、可用性、还是延迟？"
 date: 2026-09-27T14:05:08+09:00
-categories:
-  - computer-science
-  - algorithm
+categories: ["computer-science", "algorithms"]
 tags:
   - tech
   - distributed-systems

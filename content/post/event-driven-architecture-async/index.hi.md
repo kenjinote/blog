@@ -4,9 +4,7 @@ description: "आधुनिक डिस्ट्रिब्यूटेड �
 slug: "event-driven-architecture-async"
 date: "2026-09-21T02:58:36+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "आर्किटेक्चर"
-  - "बैकएंड"
+categories: ["architecture", "backend"]
 tags:
   - "इवेंट-ड्रिवन"
   - "एसिंक्रोनस"

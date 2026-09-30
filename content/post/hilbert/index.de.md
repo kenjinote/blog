@@ -4,7 +4,7 @@ description: "Eine detaillierte Erklärung des Lebens und der zahlreichen mathem
 slug: "hilbert"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematik", "biografie"]
+categories: ["mathematics", "biography"]
 tags: ["Hilbert", "Geschichte der Mathematik", "Geometrie", "Funktionalanalysis", "Physik", "Zahlentheorie"]
 ---
 

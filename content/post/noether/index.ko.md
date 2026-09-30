@@ -4,7 +4,7 @@ description: "현대 대수학의 기초를 다지고 물리학에서 '뇌터의
 slug: "noether"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["에미 뇌터", "추상 대수학", "물리학", "STEM 분야의 여성"]
 ---
 

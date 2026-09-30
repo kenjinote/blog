@@ -4,7 +4,7 @@ description: "An in-depth look at the life and mathematical achievements of the 
 slug: "bachet"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematics", "Biography"]
+categories: ["mathematics", "biography"]
 tags: ["Bachet", "Number Theory", "History of Mathematics", "Recreational Mathematics", "Diophantus"]
 ---
 

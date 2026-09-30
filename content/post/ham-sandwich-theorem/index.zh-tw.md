@@ -4,8 +4,7 @@ description: "詳細解釋火腿三明治定理，該定理指出在三維空間
 slug: "ham-sandwich-theorem"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "數學"
+categories: ["mathematics"]
 tags:
   - "拓撲學"
   - "幾何學"

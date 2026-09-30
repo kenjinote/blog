@@ -5,9 +5,7 @@ description: "'콘웨이의 생명 게임'은 단 4개의 단순한 규칙에서
 slug: "conways-game-of-life"
 date: 2026-09-15T10:00:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "수학"
-  - "컴퓨터 과학"
+categories: ["mathematics", "computer-science"]
 tags:
   - "콘웨이의 생명 게임"
   - "셀룰러 오토마타"

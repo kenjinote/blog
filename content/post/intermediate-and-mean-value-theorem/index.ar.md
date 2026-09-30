@@ -4,7 +4,7 @@ description: "شرح متعمق لنظرية القيمة المتوسطة ون�
 slug: "intermediate-and-mean-value-theorem"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["الرياضيات"]
+categories: ["mathematics"]
 tags: ["التفاضل-والتكامل", "نظريات", "براهين-رياضية"]
 ---
 

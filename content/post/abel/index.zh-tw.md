@@ -4,7 +4,7 @@ description: "尼爾斯·亨里克·阿貝爾，挪威誕生的天才數學家�
 slug: "abel"
 date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學", "傳記"]
+categories: ["mathematics", "biography"]
 tags: ["阿貝爾", "代數", "歷史", "數學"]
 ---
 

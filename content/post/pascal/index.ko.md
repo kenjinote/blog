@@ -5,7 +5,7 @@ description: "'인간은 생각하는 갈대다'로 알려진 블레즈 파스�
 slug: "pascal"
 date: 2026-09-20T19:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["파스칼", "확률론", "사영기하학", "파스칼의 정리", "파스칼의 삼각형", "물리학"]
 ---
 

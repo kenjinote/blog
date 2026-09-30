@@ -4,7 +4,7 @@ description: "Kisah terperinci tentang kehidupan matematikawan besar Prancis Adr
 slug: "legendre"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matematika", "biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Legendre", "Teori Bilangan", "Geometri", "Sejarah Matematika"]
 ---
 

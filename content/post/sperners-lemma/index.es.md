@@ -4,7 +4,7 @@ description: "Explicación de cómo colorear vértices según reglas de frontera
 slug: "sperners-lemma"
 date: "2026-09-20T12:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["matemáticas"]
+categories: ["mathematics"]
 tags: ["topología", "combinatoria", "teorema-del-punto-fijo"]
 ---
 

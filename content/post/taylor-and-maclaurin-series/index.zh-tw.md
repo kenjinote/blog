@@ -4,8 +4,7 @@ description: "詳細講解微積分的秘訣——泰勒展開和麥克勞林展
 slug: "taylor-and-maclaurin-series"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "數學"
+categories: ["mathematics"]
 tags:
   - "微積分"
   - "泰勒級數"

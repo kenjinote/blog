@@ -4,8 +4,7 @@ description: "Une explication détaillée de la structure mathématique tissée 
 slug: "permutations-combinations-and-binomial-theorem"
 date: "2026-09-20T15:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathématiques"
+categories: ["mathematics"]
 tags:
   - "Combinatoire"
   - "Théorème du Binôme"

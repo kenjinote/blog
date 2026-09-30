@@ -3,7 +3,7 @@ title: "가비지 컬렉션(GC)의 진화사"
 description: "마크 앤 스윕부터 현대의 ZGC/Shenandoah까지의 발자취. 수동 메모리 관리의 고충부터, 밀리초 단위의 중지 시간을 실현하는 최신 기술까지 철저하게 해설합니다."
 date: 2026-09-27T14:20:15+09:00
 slug: garbage-collection-history-zgc
-categories: ["computer-science", "algorithm"]
+categories: ["computer-science", "algorithms"]
 tags: ["tech", "garbage-collection", "memory-management", "java", "performance"]
 image: eyecatch.jpg
 ---

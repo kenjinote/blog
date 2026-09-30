@@ -4,8 +4,7 @@ description: "شرح مفصل لمتسلسلة تايلور وماكلورين،
 slug: "taylor-and-maclaurin-series"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "رياضيات"
+categories: ["mathematics"]
 tags:
   - "حساب التفاضل والتكامل"
   - "متسلسلة تايلور"

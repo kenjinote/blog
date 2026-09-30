@@ -4,7 +4,7 @@ description: "17세기 프랑스의 판사이자 수학사에 불멸의 발자�
 slug: "fermat"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["페르마", "수학사", "페르마의 마지막 정리", "정수론", "확률론"]
 ---
 

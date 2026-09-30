@@ -4,7 +4,7 @@ description: "सिराक्यूज़ के आर्किमिडी�
 slug: "archimedes"
 date: "2026-09-20T18:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["आर्किमिडीज़", "प्राचीन यूनान", "ज्यामिति", "भौतिकी", "कैलकुलस"]
 ---
 
