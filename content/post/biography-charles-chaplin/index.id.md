@@ -9,6 +9,8 @@ slug: "biography-charles-chaplin"
 description: "Charles Spencer Chaplin (16 April 1889 - 25 Desember 1977) adalah seorang aktor film, sutradara, komedian, penulis skenario, dan komposer asal Inggris."
 ---
 
+{{< figure src="charles-chaplin.jpg" alt="Charles Spencer Chaplin" caption="Charles Spencer Chaplin" class="portrait-half" width="518" height="700" loading="lazy" >}}
+
 Charles Spencer Chaplin (16 April 1889 - 25 Desember 1977) adalah seorang aktor film, sutradara, komedian, penulis skenario, dan komposer asal Inggris. Dikenal dengan julukan "Raja Komedi", ia secara luas diakui sebagai salah satu tokoh paling penting dan berpengaruh dalam sejarah perfilman. Karakter "The Tramp" (Si Gelandangan Kecil) yang diciptakannya, dengan penampilan ikoniknya berupa topi bowler, kumis sikat gigi, celana baggy, dan tongkat bambu, terus dicintai oleh orang-orang di seluruh dunia. Artikel ini akan mengupas kehidupan Chaplin yang penuh gejolak, filosofi mendalam yang terkandung dalam karya-karyanya, serta pengaruhnya bagi generasi mendatang.
 
 ## Titik Awal Komedi yang Lahir dari Kemiskinan dan Kesepian

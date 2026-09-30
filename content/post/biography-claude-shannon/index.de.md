@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Claude Shannon: Das Genie, das das digitale Zeitalter erschuf
 
+{{< figure src="claude-shannon.jpg" alt="Claude Shannon" caption="Claude Shannon" class="portrait-half" width="366" height="488" loading="lazy" >}}
+
 Smartphones, das Internet, Computer und künstliche Intelligenz, die wir täglich nutzen. Die Konzepte der "digitalen Kommunikation" und "Information", auf denen all dies basiert, entsprangen dem Kopf eines einzigen Genies. Sein Name war Claude Elwood Shannon (1916–2001). Er ging als "Vater der Informationstheorie" in die Geschichte ein und zählt zu den größten und einflussreichsten Wissenschaftlern des 20. Jahrhunderts.
 
 In diesem Artikel werden wir tief eintauchen und Shannons Leben detailliert beleuchten: von seiner Kindheit über die bahnbrechenden Arbeiten, die den Grundstein für unsere moderne digitale Gesellschaft legten, bis hin zu seinem überaus menschlichen und von "Spieltrieb" geprägten wahren Gesicht.

@@ -9,6 +9,8 @@ slug: "biography-donald-knuth"
 description: "In the world of computer science, there is likely no one who does not know the name Donald E."
 ---
 
+{{< figure src="donald-knuth.jpg" alt="Donald Knuth" caption="Donald Knuth" class="portrait-half" width="500" height="500" loading="lazy" >}}
+
 In the world of computer science, there is likely no one who does not know the name Donald E. Knuth. Known as the "father of algorithm analysis," he is a great figure who elevated programming from a mere technique to the realm of "art." This article delves deep into his life, his unique philosophy, and the immeasurable impact he has had on future generations.
 
 ## Early Life and Achievements

@@ -9,6 +9,8 @@ slug: "biography-edsger-dijkstra"
 description: "Edsger W. Dijkstra (1930 - 2002) is one of the greatest intellects who laid the foundations of modern software engineering and computer science."
 ---
 
+{{< figure src="edsger-dijkstra.jpg" alt="Edsger Dijkstra" caption="Edsger Dijkstra" class="portrait-half" width="1200" height="1600" loading="lazy" >}}
+
 Edsger W. Dijkstra (1930 - 2002) is one of the greatest intellects who laid the foundations of modern software engineering and computer science. The numerous algorithms and programming paradigms he left behind breathe at the root of every technology we use on a daily basis today. In this article, we delve deep into Dijkstra's life, his unique philosophy, and his immeasurable impact on future generations.
 
 ## The Transition from Physics to Computer Science: The Trajectory of His Youth

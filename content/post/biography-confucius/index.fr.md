@@ -8,6 +8,8 @@ slug: "biography-confucius"
 description: "Qui est l'influenceur le plus influent de l'histoire ? À l'ère moderne, on pourrait penser à Steve Jobs ou Elon Musk, mais il y a un homme qui a balayé tou"
 ---
 
+{{< figure src="confucius.jpg" alt="Confucius" caption="Confucius" class="portrait-half" width="980" height="1272" loading="lazy" >}}
+
 Qui est l'influenceur le plus influent de l'histoire ? À l'ère moderne, on pourrait penser à [Steve Jobs](/fr/p/biography-steve-jobs/) ou Elon Musk, mais il y a un homme qui a balayé toute l'Asie de l'Est il y a plus de 2500 ans et dont les pensées sont encore transmises aujourd'hui. C'est « Confucius ».
 
 Dans cet article, du point de vue d'un écrivain historique professionnel, nous approfondirons la vie mouvementée de Confucius, la philosophie novatrice qu'il a prêchée et son immense influence qui résonne encore dans la société et les affaires modernes.

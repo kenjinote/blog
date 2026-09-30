@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Claude Shannon: Sang Jenius yang Menciptakan Era Digital
 
+{{< figure src="claude-shannon.jpg" alt="Claude Shannon" caption="Claude Shannon" class="portrait-half" width="366" height="488" loading="lazy" >}}
+
 Ponsel pintar, internet, komputer, dan kecerdasan buatan yang kita gunakan setiap hari. Konsep "komunikasi digital" dan "informasi" yang mendasari semua ini lahir dari otak seorang jenius. Namanya adalah Claude Elwood Shannon (1916–2001). Ia mencatatkan namanya dalam sejarah sebagai "Bapak Teori Informasi" dan dihitung sebagai salah satu ilmuwan terhebat dan paling berpengaruh di abad ke-20.
 
 Dalam artikel ini, kami akan menggali lebih dalam dan menjelaskan secara detail, mulai dari masa kecil Shannon, makalah-makalah terobosan yang meletakkan dasar bagi masyarakat digital modern, hingga sifatnya yang sangat manusiawi dan penuh dengan "rasa ingin bermain".

@@ -9,6 +9,8 @@ slug: "biography-dale-carnegie"
 description: "Una obra maestra del desarrollo personal que sigue teniendo una enorme influencia en los profesionales de los negocios y líderes de la industria tecnológic"
 ---
 
+{{< figure src="dale-carnegie.jpg" alt="Dale Carnegie" caption="Dale Carnegie" class="portrait-half" width="1200" height="1432" loading="lazy" >}}
+
 Una obra maestra del desarrollo personal que sigue teniendo una enorme influencia en los profesionales de los negocios y líderes de la industria tecnológica actual. Son los clásicos "Cómo ganar amigos e influir sobre las personas" y "Cómo suprimir las preocupaciones y disfrutar de la vida". ¿Cómo logró su creador, Dale Carnegie (1888–1955), sistematizar los principios de las relaciones humanas y conmover los corazones de personas en todo el mundo? En este artículo, profundizaremos desde su turbulenta vida y la esencia de su filosofía, hasta el legado que perdura en la actualidad.
 
 ## Partida desde la pobreza y una juventud de frustraciones

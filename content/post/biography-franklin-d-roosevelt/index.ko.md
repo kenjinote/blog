@@ -9,6 +9,8 @@ slug: "biography-franklin-d-roosevelt"
 description: "프랭클린 델러노 루스벨트(Franklin Delano Roosevelt, 통칭 FDR)는 미국의 제32대 대통령이자 20세기 역사에서 가장 영향력 있는 지도자 중 한 명입니다."
 ---
 
+{{< figure src="franklin-roosevelt.jpg" alt="프랭클린 루스벨트" caption="프랭클린 루스벨트" class="portrait-half" width="330" height="388" loading="lazy" >}}
+
 프랭클린 델러노 루스벨트(Franklin Delano Roosevelt, 통칭 FDR)는 미국의 제32대 대통령이자 20세기 역사에서 가장 영향력 있는 지도자 중 한 명입니다. 그는 대공황과 제2차 세계대전이라는 미국이 직면한 전례 없는 위기 속에서 국가를 이끌었으며, 미국 역사상 유일하게 4선에 성공한 대통령이기도 합니다. 그의 생애, 정치 철학, 그리고 현대에까지 이어지는 그의 영향력에 대해 깊이 파헤쳐 보겠습니다.
 
 ## 유복한 성장 배경과 갑작스러운 시련

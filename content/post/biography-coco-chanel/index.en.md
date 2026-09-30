@@ -11,6 +11,8 @@ description: "In the 20th-century fashion world, perhaps no one has fundamentall
 
 # Coco Chanel: The Life and Philosophy of the Revolutionary Who Liberated Women
 
+{{< figure src="coco-chanel.jpg" alt="Coco Chanel" caption="Coco Chanel" class="portrait-half" width="681" height="458" loading="lazy" >}}
+
 In the 20th-century fashion world, perhaps no one has fundamentally overturned women's lifestyles quite like Gabrielle "Coco" Chanel. She was not merely a clothing designer, but a thinker and an entrepreneur who offered a new set of values named "freedom" to women bound by convention. In this article, we delve deep into the life of Coco Chanel, who rose from poverty to the pinnacle of the world, the philosophy underlying her work, and her immense influence that continues to this day.
 
 ## From Orphanage to Cabaret: A Childhood of Adversity

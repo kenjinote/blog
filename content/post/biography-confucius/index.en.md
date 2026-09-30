@@ -8,6 +8,8 @@ slug: "biography-confucius"
 description: "Who is the most influential influencer in history? In the modern era, you might think of Steve Jobs or Elon Musk, but there is a figure who swept across Ea"
 ---
 
+{{< figure src="confucius.jpg" alt="Confucius" caption="Confucius" class="portrait-half" width="980" height="1272" loading="lazy" >}}
+
 Who is the most influential influencer in history? In the modern era, you might think of [Steve Jobs](/en/p/biography-steve-jobs/) or Elon Musk, but there is a figure who swept across East Asia over 2,500 years ago and whose ideas are still passed down today. That is "Confucius."
 
 In this article, from the perspective of a professional history writer, we will delve deeply into the turbulent life of Confucius, the innovative philosophy he advocated, and his profound influence that still applies to modern society and business.

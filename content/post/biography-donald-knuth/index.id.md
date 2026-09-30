@@ -9,6 +9,8 @@ slug: "biography-donald-knuth"
 description: "Dalam dunia ilmu komputer, mungkin tidak ada orang yang tidak mengenal nama Donald E."
 ---
 
+{{< figure src="donald-knuth.jpg" alt="Donald Knuth" caption="Donald Knuth" class="portrait-half" width="500" height="500" loading="lazy" >}}
+
 Dalam dunia ilmu komputer, mungkin tidak ada orang yang tidak mengenal nama Donald E. Knuth. Dikenal sebagai "bapak analisis algoritma," ia adalah sosok hebat yang mengangkat pemrograman dari sekadar teknik menjadi ranah "seni" (art). Artikel ini membahas secara mendalam tentang kehidupannya, filosofi uniknya, dan dampak tak terukur yang telah ia berikan kepada generasi mendatang.
 
 ## Kehidupan Awal dan Pencapaian

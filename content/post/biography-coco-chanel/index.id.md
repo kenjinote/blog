@@ -11,6 +11,8 @@ description: "Di dunia mode abad ke-20, mungkin tidak ada tokoh lain yang secara
 
 # Coco Chanel: Kehidupan dan Filosofi Sang Revolusioner yang Membebaskan Wanita
 
+{{< figure src="coco-chanel.jpg" alt="Coco Chanel" caption="Coco Chanel" class="portrait-half" width="681" height="458" loading="lazy" >}}
+
 Di dunia mode abad ke-20, mungkin tidak ada tokoh lain yang secara mendasar membalikkan gaya hidup wanita selain Gabrielle "Coco" Chanel. Dia bukan sekadar desainer pakaian, melainkan seorang pemikir dan pengusaha yang menawarkan serangkaian nilai baru bernama "kebebasan" bagi para wanita yang terikat oleh adat istiadat. Dalam artikel ini, kita akan menggali lebih dalam kehidupan Coco Chanel, dari masa kecilnya yang miskin hingga mencapai puncak dunia, filosofi yang mendasarinya, dan pengaruhnya yang sangat besar yang berlanjut hingga hari ini.
 
 ## Dari Panti Asuhan ke Kabaret: Masa Kecil yang Penuh Kesulitan

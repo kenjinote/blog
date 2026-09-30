@@ -9,6 +9,8 @@ slug: "biography-dennis-ritchie"
 description: "丹尼斯·麥卡利斯特·里奇（Dennis MacAlistair Ritchie，1941年9月9日 - 2011年10月12日）是現代計算機科學中最重要且最具影響力的人物之一。"
 ---
 
+{{< figure src="dennis-ritchie.jpg" alt="丹尼斯·里奇" caption="丹尼斯·里奇" class="portrait-half" width="587" height="551" loading="lazy" >}}
+
 丹尼斯·麥卡利斯特·里奇（Dennis MacAlistair Ritchie，1941年9月9日 - 2011年10月12日）是現代計算機科學中最重要且最具影響力的人物之一。雖然他不像[史蒂夫·賈伯斯](/zh-tw/p/biography-steve-jobs/)（Steve Jobs）或比爾·蓋茲（Bill Gates）那樣頻繁地站在鎂光燈下，但他留下的遺產卻是我們今天所使用的所有科技的基石。他深度參與開發的「C語言」和「UNIX」作業系統，從網際網路伺服器到智慧型手機、超級電腦，甚至家電產品，在現代數位社會的各個角落中都生生不息地運作著。
 
 ## 早年生活與貝爾實驗室的歲月

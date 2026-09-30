@@ -9,6 +9,8 @@ slug: "biography-eiichi-shibusawa"
 description: "Eiichi Shibusawa es una de las figuras que desempeñó el papel más importante en la modernización de Japón."
 ---
 
+{{< figure src="eiichi-shibusawa.webp" alt="Eiichi Shibusawa" caption="Eiichi Shibusawa" class="portrait-half" width="640" height="966" loading="lazy" >}}
+
 Eiichi Shibusawa es una de las figuras que desempeñó el papel más importante en la modernización de Japón. Conocido como el "padre del capitalismo japonés", durante su vida participó en la fundación y desarrollo de unas 500 empresas, y al mismo tiempo, apoyó cerca de 600 proyectos sociales y obras públicas, así como instituciones educativas. Su vida y filosofía, que no se limitaron a la mera búsqueda de beneficios, sino que buscaron la armonía entre la moral y la economía bajo el concepto de "El Analectas y el Ábaco", continúan ofreciendo gran inspiración a los profesionales de negocios de hoy.
 
 ## De la turbulenta era del fin del shogunato a la Restauración Meiji: Una visión cultivada por diversas experiencias

@@ -8,6 +8,8 @@ slug: "biography-confucius"
 description: "Wer war der einflussreichste Influencer der Geschichte? In der heutigen Zeit denken Sie vielleicht an Steve Jobs oder Elon Musk, aber es gibt eine Person,"
 ---
 
+{{< figure src="confucius.jpg" alt="Konfuzius" caption="Konfuzius" class="portrait-half" width="980" height="1272" loading="lazy" >}}
+
 Wer war der einflussreichste Influencer der Geschichte? In der heutigen Zeit denken Sie vielleicht an [Steve Jobs](/de/p/biography-steve-jobs/) oder Elon Musk, aber es gibt eine Person, die vor über 2500 Jahren ganz Ostasien im Sturm eroberte und deren Ideen noch heute weiterleben. Das ist „Konfuzius“.
 
 In diesem Artikel werden wir aus der Perspektive eines professionellen Historikers tief in das turbulente Leben von Konfuzius, seine innovative Philosophie und seinen enormen Einfluss eintauchen, der auch in der modernen Gesellschaft und Wirtschaft noch nachwirkt.

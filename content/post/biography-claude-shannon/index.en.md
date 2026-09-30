@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Claude Shannon: The Genius Who Created the Digital Age
 
+{{< figure src="claude-shannon.jpg" alt="Claude Shannon" caption="Claude Shannon" class="portrait-half" width="366" height="488" loading="lazy" >}}
+
 The smartphones, the Internet, computers, and artificial intelligence that we use on a daily basis. The concepts of "digital communication" and "information" that form the foundation of all of these were born from the mind of one single genius. His name is Claude Elwood Shannon (1916–2001). Carving his name in history as the "father of information theory," he is counted among the most phenomenal and influential scientists of the 20th century.
 
 In this article, we will take a very detailed and deep dive into Shannon's upbringing, the groundbreaking papers that laid the cornerstone for today's digital society, and his deeply human, "playful" true nature.

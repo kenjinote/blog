@@ -11,6 +11,8 @@ description: "No mundo da moda do século XX, talvez não haja outra figura que 
 
 # Coco Chanel: A Vida e Filosofia da Revolucionária que Libertou as Mulheres
 
+{{< figure src="coco-chanel.jpg" alt="Coco Chanel" caption="Coco Chanel" class="portrait-half" width="681" height="458" loading="lazy" >}}
+
 No mundo da moda do século XX, talvez não haja outra figura que tenha revolucionado o próprio estilo de vida das mulheres de forma tão profunda quanto Gabrielle "Coco" Chanel. Ela não era apenas uma estilista de roupas, mas sim uma pensadora e empreendedora que ofereceu um novo conjunto de valores chamado "liberdade" para mulheres limitadas por convenções. Neste artigo, vamos explorar a vida de Coco Chanel, de sua infância pobre ao topo do mundo, a filosofia subjacente a isso e sua profunda influência que perdura até hoje.
 
 ## Do Orfanato ao Cabaré: Uma Infância de Adversidades

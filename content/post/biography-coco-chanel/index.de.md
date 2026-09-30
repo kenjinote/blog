@@ -11,6 +11,8 @@ description: "In der Modewelt des 20. Jahrhunderts gibt es wohl keine andere Per
 
 # Coco Chanel: Leben und Philosophie der Revolutionärin, die die Frauen befreite
 
+{{< figure src="coco-chanel.jpg" alt="Coco Chanel" caption="Coco Chanel" class="portrait-half" width="681" height="458" loading="lazy" >}}
+
 In der Modewelt des 20. Jahrhunderts gibt es wohl keine andere Persönlichkeit, die den Lebensstil der Frauen derart grundlegend verändert hat wie Gabrielle „Coco“ Chanel. Sie war nicht nur eine Modedesignerin, sondern eine Denkerin und Unternehmerin, die Frauen, die in Konventionen gefangen waren, einen neuen Wert namens „Freiheit“ anbot. In diesem Artikel werden wir das Leben von Coco Chanel, von ihrer armen Kindheit bis an die Spitze der Welt, die zugrunde liegende Philosophie und ihren enormen Einfluss, der bis heute anhält, eingehend beleuchten.
 
 ## Vom Waisenhaus zum Kabarett: Eine Kindheit voller Widrigkeiten

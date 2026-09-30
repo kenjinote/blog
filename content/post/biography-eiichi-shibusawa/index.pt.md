@@ -9,6 +9,8 @@ slug: "biography-eiichi-shibusawa"
 description: "Eiichi Shibusawa, uma das figuras mais importantes na modernização do Japão, é conhecido como o \"pai do capitalismo japonês\"."
 ---
 
+{{< figure src="eiichi-shibusawa.webp" alt="Eiichi Shibusawa" caption="Eiichi Shibusawa" class="portrait-half" width="640" height="966" loading="lazy" >}}
+
 Eiichi Shibusawa, uma das figuras mais importantes na modernização do Japão, é conhecido como o "pai do capitalismo japonês". Ao longo de sua vida, esteve envolvido na criação e desenvolvimento de cerca de 500 empresas e, simultaneamente, apoiou cerca de 600 projetos sociais, públicos e instituições educacionais. Indo além da simples busca pelo lucro, sua vida e filosofia, guiadas pelo conceito de "Os Analectos e o Ábaco", buscavam a harmonia entre a moralidade e a economia, oferecendo ainda hoje muitas lições aos profissionais de negócios.
 
 ## Do turbulento fim do xogunato à Restauração Meiji: uma visão cultivada por experiências diversas

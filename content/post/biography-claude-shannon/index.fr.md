@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Claude Shannon : Le génie qui a créé l'ère numérique
 
+{{< figure src="claude-shannon.jpg" alt="Claude Shannon" caption="Claude Shannon" class="portrait-half" width="366" height="488" loading="lazy" >}}
+
 Les smartphones, Internet, les ordinateurs et l'intelligence artificielle que nous utilisons quotidiennement. Les concepts de « communication numérique » et d'« information » qui sous-tendent tout cela sont nés de l'esprit d'un seul génie. Son nom est Claude Elwood Shannon (1916–2001). Il est entré dans l'histoire en tant que « père de la théorie de l'information » et est considéré comme l'un des scientifiques les plus grands et les plus influents du XXe siècle.
 
 Dans cet article, nous explorerons en profondeur la vie de Shannon, depuis son enfance, en passant par les articles révolutionnaires qui ont jeté les bases de la société numérique moderne, jusqu'à sa personnalité pleine d'humanité et de « sens du jeu ».

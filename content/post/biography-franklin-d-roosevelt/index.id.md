@@ -9,6 +9,8 @@ slug: "biography-franklin-d-roosevelt"
 description: "Franklin Delano Roosevelt (FDR) adalah Presiden Amerika Serikat ke-32 dan salah satu pemimpin paling berpengaruh dalam sejarah abad ke-20."
 ---
 
+{{< figure src="franklin-roosevelt.jpg" alt="Franklin Roosevelt" caption="Franklin Roosevelt" class="portrait-half" width="330" height="388" loading="lazy" >}}
+
 Franklin Delano Roosevelt (FDR) adalah Presiden Amerika Serikat ke-32 dan salah satu pemimpin paling berpengaruh dalam sejarah abad ke-20. Ia membimbing bangsa tersebut melewati krisis yang belum pernah terjadi sebelumnya dari Depresi Hebat dan Perang Dunia II, dan merupakan satu-satunya presiden dalam sejarah AS yang terpilih untuk empat masa jabatan. Mari kita selidiki lebih dalam tentang kehidupannya, filosofi politiknya, dan dampak abadi yang diberikannya pada dunia modern.
 
 ## Pendidikan Istimewa dan Cobaan Mendadak

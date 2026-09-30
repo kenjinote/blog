@@ -9,6 +9,8 @@ slug: "biography-franklin-d-roosevelt"
 description: "富兰克林·德拉诺·罗斯福（Franklin Delano Roosevelt，简称FDR）是美国第32任总统，也是20世纪历史上最具影响力的领导人之一。他在美国面临大萧条和第二次世界大战的空前危机中领导了国家，并且是美国历史上唯一一位连任四届的总统。让我们深入探讨他的一生、政治哲学以及对现代的深远影响。"
 ---
 
+{{< figure src="franklin-roosevelt.jpg" alt="富兰克林·罗斯福" caption="富兰克林·罗斯福" class="portrait-half" width="330" height="388" loading="lazy" >}}
+
 富兰克林·德拉诺·罗斯福（Franklin Delano Roosevelt，简称FDR）是美国第32任总统，也是20世纪历史上最具影响力的领导人之一。他在美国面临大萧条和第二次世界大战的空前危机中领导了国家，并且是美国历史上唯一一位连任四届的总统。让我们深入探讨他的一生、政治哲学以及对现代的深远影响。
 
 ## 优越的出身与突如其来的考验

@@ -9,6 +9,8 @@ slug: "biography-franklin-d-roosevelt"
 description: "Franklin Delano Roosevelt (FDR) fut le 32e président des États-Unis et l'un des dirigeants les plus influents de l'histoire du XXe siècle."
 ---
 
+{{< figure src="franklin-roosevelt.jpg" alt="Franklin Roosevelt" caption="Franklin Roosevelt" class="portrait-half" width="330" height="388" loading="lazy" >}}
+
 Franklin Delano Roosevelt (FDR) fut le 32e président des États-Unis et l'un des dirigeants les plus influents de l'histoire du XXe siècle. Il a guidé la nation à travers les crises sans précédent de la Grande Dépression et de la Seconde Guerre mondiale, et il est le seul président de l'histoire des États-Unis à avoir été élu pour quatre mandats. Plongeons dans sa vie, sa philosophie politique et son impact durable sur le monde moderne.
 
 ## Une éducation privilégiée et une épreuve soudaine
