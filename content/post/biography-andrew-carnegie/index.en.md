@@ -9,6 +9,8 @@ slug: "biography-andrew-carnegie"
 description: "Andrew Carnegie (1835-1919), the \"Steel King\" who represented the American Industrial Revolution."
 ---
 
+{{< figure src="andrew-carnegie.jpg" alt="Andrew Carnegie" caption="Andrew Carnegie" class="portrait-half" width="800" height="533" loading="lazy" >}}
+
 Andrew Carnegie (1835-1919), the "Steel King" who represented the American Industrial Revolution. His life is told as a typical "American Dream" where a poor immigrant from Scotland built immense wealth, while he also possessed the aspect of a philanthropist who advocated the "Gospel of Wealth" and gave away his fortune to society. In this article, we delve deeply into his dramatic life, his philosophy that is inherited today, and his impact on later generations.
 
 ## Starting from Poverty and Rising in the World

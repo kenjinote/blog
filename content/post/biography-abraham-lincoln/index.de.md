@@ -9,6 +9,8 @@ slug: "biography-abraham-lincoln"
 description: "Abraham Lincoln, der 16. Präsident der Vereinigten Staaten von Amerika. Er ist weithin als der „Vater der Sklavenbefreiung“ bekannt und der Mann, der den B"
 ---
 
+{{< figure src="abraham-lincoln.webp" alt="Abraham Lincoln" caption="Abraham Lincoln" class="portrait-half" width="1154" height="1600" loading="lazy" >}}
+
 Abraham Lincoln, der 16. Präsident der Vereinigten Staaten von Amerika. Er ist weithin als der „Vater der Sklavenbefreiung“ bekannt und der Mann, der den Bürgerkrieg – die größte Krise seit der Gründung der Nation – überwand und die Spaltung des Landes verhinderte. Seine Worte „Die Regierung des Volkes, durch das Volk und für das Volk“ werden bis heute als ein grundlegendes Ideal der Demokratie weitergegeben.
 
 In diesem Artikel werden wir sein außergewöhnliches Leben vom Aufstieg aus einer Blockhütte bis zum Präsidenten, seine tiefe Menschlichkeit und seine einzigartige Philosophie sowie seinen unermesslichen Einfluss auf die Nachwelt anhand von Diagrammen genauer betrachten.

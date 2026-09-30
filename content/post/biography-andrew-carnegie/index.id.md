@@ -9,6 +9,8 @@ slug: "biography-andrew-carnegie"
 description: "Andrew Carnegie (1835-1919), \"Raja Baja\" yang mewakili era Revolusi Industri Amerika."
 ---
 
+{{< figure src="andrew-carnegie.jpg" alt="Andrew Carnegie" caption="Andrew Carnegie" class="portrait-half" width="800" height="533" loading="lazy" >}}
+
 Andrew Carnegie (1835-1919), "Raja Baja" yang mewakili era Revolusi Industri Amerika. Kehidupannya sering diceritakan sebagai tipikal "Mimpi Amerika" di mana seorang imigran miskin dari Skotlandia membangun kekayaan yang sangat besar, dan pada saat yang sama, ia juga memiliki sisi sebagai seorang filantropis yang mengadvokasi "Injil Kekayaan" (The Gospel of Wealth) dan mendistribusikan semua kekayaannya kembali ke masyarakat. Dalam artikel ini, kita akan menggali lebih dalam tentang kehidupannya yang dramatis, filosofi yang diwariskannya hingga saat ini, dan dampaknya terhadap generasi mendatang.
 
 ## Bangkit dari Kemiskinan menuju Kesuksesan

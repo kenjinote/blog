@@ -9,6 +9,8 @@ slug: "biography-car-hoare"
 description: "Sir Charles Antony Richard Hoare (biasa dikenal sebagai Tony Hoare, 1934–2026) adalah seorang ilmuwan komputer hebat yang meletakkan dasar bagi rekayasa pe"
 ---
 
+{{< figure src="tony-hoare.jpg" alt="Sir Charles Antony Richard Hoare" caption="Sir Charles Antony Richard Hoare" class="portrait-half" width="1024" height="1024" loading="lazy" >}}
+
 Sir Charles Antony Richard Hoare (biasa dikenal sebagai Tony Hoare, 1934–2026) adalah seorang ilmuwan komputer hebat yang meletakkan dasar bagi rekayasa perangkat lunak modern dan bahasa pemrograman. Pencapaiannya, yang ditinggalkan setelah ia meninggal pada bulan Maret 2026 pada usia 92 tahun, menghidupkan setiap sistem yang kita gunakan sehari-hari. Dalam artikel ini, kita mendalami kehidupannya, filosofi uniknya, dan dampaknya yang tak terukur pada generasi mendatang.
 
 ## Dari Humaniora ke Logika Matematika: Latar Belakang yang Unik

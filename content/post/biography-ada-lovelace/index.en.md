@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Introduction: The Victorian Genius, Ada Lovelace
 
+{{< figure src="ada-lovelace.jpg" alt="Ada Lovelace" caption="Ada Lovelace" class="portrait-half" width="1200" height="662" loading="lazy" >}}
+
 When tracing the history of computer science, we inevitably arrive at the name of one woman. Her name is Augusta Ada King, Countess of Lovelace. Commonly known as "Ada Lovelace", she has carved her name into history as the "world's first programmer".
 
 However, her achievements go far beyond simply "writing the first code". The true greatness of Ada Lovelace lies in the fact that, even in the 19th century, she saw the essence of modern computers: that computing machines could go beyond being mere "number-calculating machines" and become "general-purpose machines capable of processing any information and even creating music and art".

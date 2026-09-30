@@ -9,6 +9,8 @@ slug: "biography-alan-kay"
 description: "Alan Kay ist ein amerikanischer Informatiker, der oft als \"Vater des Personal Computers\" bezeichnet wird, und ein genialer Visionär, der das moderne Comput"
 ---
 
+{{< figure src="AlanKay.jpg" alt="Alan Kay" caption="Alan Kay" class="portrait-half" width="768" height="515" loading="lazy" >}}
+
 Alan Kay ist ein amerikanischer Informatiker, der oft als "Vater des Personal Computers" bezeichnet wird, und ein genialer Visionär, der das moderne Computing maßgeblich beeinflusst hat. Sein berühmtes Zitat "Der beste Weg, die Zukunft vorauszusagen, ist, sie zu erfinden (The best way to predict the future is to invent it.)" inspiriert bis heute viele Unternehmer und Ingenieure.
 
 In diesem Artikel werden wir das Leben von Alan Kay, die innovative Philosophie, die er vorschlug, und die Art und Weise, wie er die moderne Technologie beeinflusst hat, genauer untersuchen.

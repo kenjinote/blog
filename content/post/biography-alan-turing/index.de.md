@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Alan Turing: Der Vater der KI und sein tragisches Ende
 
+{{< figure src="alan-turing.webp" alt="Alan Turing" caption="Alan Turing" class="portrait-half" width="1202" height="1600" loading="lazy" >}}
+
 Die Smartphones, Personal Computer und die sich in den letzten Jahren rasant entwickelnde künstliche Intelligenz (KI), die wir heute als selbstverständlich nutzen, haben ihre theoretische Grundlage einem einzigen britischen Mathematiker zu verdanken. Sein Name war Alan Mathison Turing.
 
 Er wird als "Vater der Informatik" und "Vater der künstlichen Intelligenz" bezeichnet und ist zudem ein Held, der während des Zweiten Weltkriegs durch das Entschlüsseln von Codes Millionen von Menschenleben rettete. Sein Leben verlief jedoch keineswegs reibungslos und endete durch gesellschaftliche Vorurteile auf grausame Weise. In diesem Artikel werden wir das Leben Turings, von seiner Kindheit über die revolutionären Ideen, die er der Welt brachte, bis hin zu seinem tragischen Ende, sehr detailliert beleuchten.

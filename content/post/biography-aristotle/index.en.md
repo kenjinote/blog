@@ -9,6 +9,8 @@ slug: "biography-aristotle"
 description: "Known as the \"Father of All Sciences,\" the ancient Greek philosopher Aristotle (384 BC - 322 BC) established the foundation of knowledge systems in the West."
 ---
 
+{{< figure src="aristotle.jpg" alt="Aristotle" caption="Aristotle" class="portrait-half" width="433" height="650" loading="lazy" >}}
+
 Known as the "Father of All Sciences," the ancient Greek philosopher Aristotle (384 BC - 322 BC) established the foundation of knowledge systems in the West. His inquiries extended far beyond philosophy, literally covering "all disciplines" from logic, ethics, and politics to natural sciences, biology, and poetics. In this article, we will explore Aristotle's eventful life, his profound thoughts that remain relevant today, and the immeasurable impact he has had on human history.
 
 ## 1. A Life of Intellect and Turbulence

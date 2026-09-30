@@ -9,6 +9,8 @@ slug: "biography-alan-kay"
 description: "Alan Kay is an American computer scientist often referred to as the \"father of the personal computer,\" and a genius visionary who has had a profound impact"
 ---
 
+{{< figure src="AlanKay.jpg" alt="Alan Kay" caption="Alan Kay" class="portrait-half" width="768" height="515" loading="lazy" >}}
+
 Alan Kay is an American computer scientist often referred to as the "father of the personal computer," and a genius visionary who has had a profound impact on modern computing. His famous quote, "The best way to predict the future is to invent it," continues to inspire many entrepreneurs and engineers today.
 
 This article delves deep into Alan Kay's life, the innovative philosophy he advocated, and the impact he has had on modern technology.

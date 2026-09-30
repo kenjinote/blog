@@ -9,6 +9,8 @@ slug: "biography-car-hoare"
 description: "Sir Charles Antony Richard Hoare (commonly known as Tony Hoare, 1934–2026) was a great computer scientist who laid the foundations of modern software engin"
 ---
 
+{{< figure src="tony-hoare.jpg" alt="Sir Charles Antony Richard Hoare" caption="Sir Charles Antony Richard Hoare" class="portrait-half" width="1024" height="1024" loading="lazy" >}}
+
 Sir Charles Antony Richard Hoare (commonly known as Tony Hoare, 1934–2026) was a great computer scientist who laid the foundations of modern software engineering and programming languages. His achievements, left behind after he passed away in March 2026 at the age of 92, breathe life into every system we use on a daily basis. In this article, we delve deeply into his life, his unique philosophy, and the immeasurable impact he had on future generations.
 
 ## From Humanities to Mathematical Logic: A Unique Background

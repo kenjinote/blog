@@ -9,6 +9,8 @@ slug: "biography-abraham-lincoln"
 description: "Abraham Lincoln, 16e président des États-Unis. Largement connu comme le « Père de l'émancipation des esclaves », il est l'homme qui a surmonté la guerre de"
 ---
 
+{{< figure src="abraham-lincoln.webp" alt="Abraham Lincoln" caption="Abraham Lincoln" class="portrait-half" width="1154" height="1600" loading="lazy" >}}
+
 Abraham Lincoln, 16e président des États-Unis. Largement connu comme le « Père de l'émancipation des esclaves », il est l'homme qui a surmonté la guerre de Sécession, la plus grande crise depuis la fondation du pays, et a empêché la division de la nation. L'expression « Le gouvernement du peuple, par le peuple, pour le peuple » a été transmise jusqu'à nos jours comme un idéal constituant le fondement de la démocratie.
 
 Dans cet article, nous examinerons en profondeur, avec des illustrations, sa vie singulière depuis une cabane en rondins jusqu'à la présidence, son profond amour pour l'humanité et sa philosophie unique, ainsi que son influence incommensurable laissée aux générations futures.

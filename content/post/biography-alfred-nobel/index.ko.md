@@ -9,6 +9,8 @@ slug: "biography-alfred-nobel"
 description: "다이너마이트의 발명으로 거만적인 부를 축적하고 그 유산으로 노벨상을 창설한 알프레드 노벨. 그의 생애는 과학 기술의 발전이 가져오는 빛과 그림자를 체현한 것이었습니다."
 ---
 
+{{< figure src="alfred-nobel.jpg" alt="알프레드 노벨" caption="알프레드 노벨" class="portrait-half" width="1660" height="2102" loading="lazy" >}}
+
 다이너마이트의 발명으로 거만적인 부를 축적하고 그 유산으로 노벨상을 창설한 알프레드 노벨. 그의 생애는 과학 기술의 발전이 가져오는 빛과 그림자를 체현한 것이었습니다.
 
 ## 발명가로서의 재능과 다이너마이트의 탄생

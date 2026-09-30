@@ -9,6 +9,8 @@ slug: "biography-abraham-lincoln"
 description: "Abraham Lincoln, the 16th President of the United States. Widely known as the \"Father of Emancipation,\" he is the figure who overcame the American Civil Wa"
 ---
 
+{{< figure src="abraham-lincoln.webp" alt="Abraham Lincoln" caption="Abraham Lincoln" class="portrait-half" width="1154" height="1600" loading="lazy" >}}
+
 Abraham Lincoln, the 16th President of the United States. Widely known as the "Father of Emancipation," he is the figure who overcame the American Civil War—the greatest crisis since the founding of the nation—and prevented the division of the country. The phrase "government of the people, by the people, for the people" has been handed down to this day as a fundamental principle of democracy.
 
 In this article, we will delve deeply into his extraordinary life, rising from a log cabin to the presidency, his profound humanity and unique philosophy, and the immeasurable impact he left on future generations, using diagrams to illustrate his journey.

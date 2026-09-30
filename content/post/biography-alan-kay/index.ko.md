@@ -9,6 +9,8 @@ slug: "biography-alan-kay"
 description: "앨런 케이(Alan Kay)는 '퍼스널 컴퓨터의 아버지'라고도 불리는 미국의 컴퓨터 과학자이며, 현대 컴퓨팅에 지대한 영향을 미친 천재 비저너리입니다."
 ---
 
+{{< figure src="AlanKay.jpg" alt="앨런 케이" caption="앨런 케이" class="portrait-half" width="768" height="515" loading="lazy" >}}
+
 앨런 케이(Alan Kay)는 '퍼스널 컴퓨터의 아버지'라고도 불리는 미국의 컴퓨터 과학자이며, 현대 컴퓨팅에 지대한 영향을 미친 천재 비저너리입니다. "미래를 예측하는 가장 좋은 방법은 미래를 발명하는 것이다(The best way to predict the future is to invent it.)"라는 그의 유명한 말은 지금도 많은 기업가와 엔지니어들에게 영감을 주고 있습니다.
 
 본 기사에서는 앨런 케이의 생애, 그가 제창한 혁신적인 철학, 그리고 그가 현대 기술에 어떤 영향을 미쳤는지를 깊이 파헤쳐 봅니다.

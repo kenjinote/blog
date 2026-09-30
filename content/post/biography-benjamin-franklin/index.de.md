@@ -9,6 +9,8 @@ slug: "biography-benjamin-franklin"
 description: "Wenn man den Namen Benjamin Franklin (1706–1790) hört, denken viele Menschen vielleicht zuerst an das sanfte Porträt auf dem 100-Dollar-Schein der USA."
 ---
 
+{{< figure src="benjamin-franklin.jpg" alt="Benjamin Franklin" caption="Benjamin Franklin" class="portrait-half" width="250" height="309" loading="lazy" >}}
+
 Wenn man den Namen Benjamin Franklin (1706–1790) hört, denken viele Menschen vielleicht zuerst an das sanfte Porträt auf dem 100-Dollar-Schein der USA. Seine wahre Natur lässt sich jedoch nicht in den politischen Rahmen eines "Gründervaters" zwängen. Drucker, Schriftsteller, Wissenschaftler, Erfinder, Diplomat und Philosoph — Franklin war ein seltenes "Universalgenie" (Universalgelehrter), das in jedem Bereich historische Spuren hinterlassen hat.
 
 In diesem Artikel tauchen wir tief in das bewegte Leben Franklins ein, der sich aus dem Nichts hocharbeitete, um den Grundstein der amerikanischen Nation zu legen, in die Lebensphilosophie, die er praktizierte, und in seinen immensen Einfluss, der bis heute anhält.

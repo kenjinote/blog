@@ -9,6 +9,8 @@ slug: "biography-alfred-nobel"
 description: "Alfred Nobel a amassé une immense fortune grâce à l'invention de la dynamite et a créé le prix Nobel avec son héritage."
 ---
 
+{{< figure src="alfred-nobel.jpg" alt="Alfred Nobel" caption="Alfred Nobel" class="portrait-half" width="1660" height="2102" loading="lazy" >}}
+
 Alfred Nobel a amassé une immense fortune grâce à l'invention de la dynamite et a créé le prix Nobel avec son héritage. Sa vie incarne l'ombre et la lumière apportées par le développement de la science et de la technologie. Dans cet article, nous explorons son extraordinaire talent d'inventeur, son agonie d'être appelé le « marchand de la mort » et son souhait de paix confié à l'avenir.
 
 ## Le talent d'inventeur et la naissance de la dynamite

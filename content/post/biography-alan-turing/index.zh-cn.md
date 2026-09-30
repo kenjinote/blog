@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # 艾伦·图灵：AI之父与悲剧性的结局
 
+{{< figure src="alan-turing.webp" alt="艾伦·图灵" caption="艾伦·图灵" class="portrait-half" width="1202" height="1600" loading="lazy" >}}
+
 现代我们习以为常地使用的智能手机、个人电脑，以及近年来飞速发展的人工智能（AI）。构建这些底层理论基础的，是一位英国数学家。他的名字是艾伦·麦席森·图灵（Alan Mathison Turing）。
 
 他被称为“[计算机科学之父](/zh-cn/p/biography-donald-knuth/)”和“人工智能之父”，在第二次世界大战期间通过破解密码拯救了数百万人的生命，是一位英雄。然而，他的一生绝非平坦，最终因社会的偏见以残酷的方式落下帷幕。在本文中，我们将从图灵的成长经历，到他为世界带来的革命性思想，再到他悲剧性的结局，极其详细地剖析他的一生。

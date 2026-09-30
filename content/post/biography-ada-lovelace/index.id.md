@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Pendahuluan: Jenius Era Victoria, Ada Lovelace
 
+{{< figure src="ada-lovelace.jpg" alt="Ada Lovelace" caption="Ada Lovelace" class="portrait-half" width="1200" height="662" loading="lazy" >}}
+
 Ketika menelusuri sejarah ilmu komputer, kita pasti akan sampai pada satu nama perempuan. Namanya adalah Augusta Ada King, Countess of Lovelace. Umumnya dikenal sebagai "Ada Lovelace", ia telah mengukir namanya dalam sejarah sebagai "programmer pertama di dunia".
 
 Namun, prestasinya tidak hanya sebatas "menulis kode pertama". Kebesaran sejati Ada Lovelace terletak pada kenyataan bahwa ia mampu melihat esensi komputer modern pada tahap abad ke-19: bahwa mesin hitung bisa melampaui sekadar "mesin penghitung angka" dan menjadi "mesin serbaguna yang dapat memproses segala jenis informasi, bahkan menciptakan musik dan seni".

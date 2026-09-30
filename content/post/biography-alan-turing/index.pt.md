@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Alan Turing: O Pai da IA e seu Fim Trágico
 
+{{< figure src="alan-turing.webp" alt="Alan Turing" caption="Alan Turing" class="portrait-half" width="1202" height="1600" loading="lazy" >}}
+
 Os smartphones, os computadores pessoais que usamos todos os dias e a inteligência artificial (IA) que vem se desenvolvendo rapidamente nos últimos anos. Quem construiu a base teórica fundamental de tudo isso foi um único matemático britânico. Seu nome era Alan Mathison Turing.
 
 Conhecido como o "pai da ciência da computação" e o "pai da inteligência artificial", ele também foi um herói que salvou milhões de vidas durante a Segunda Guerra Mundial ao decifrar códigos. No entanto, sua vida não foi de forma alguma tranquila e terminou de maneira cruel devido ao preconceito da sociedade. Neste artigo, desvendaremos sua vida em detalhes, desde sua infância, as ideias revolucionárias que trouxe ao mundo, até o seu fim trágico.

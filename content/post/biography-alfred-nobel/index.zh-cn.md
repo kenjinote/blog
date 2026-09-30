@@ -9,6 +9,8 @@ slug: "biography-alfred-nobel"
 description: "阿尔弗雷德·诺贝尔通过发明炸药积累了巨额财富，并用其遗产创立了诺贝尔奖。他的一生体现了科技发展带来的光与影。"
 ---
 
+{{< figure src="alfred-nobel.jpg" alt="阿尔弗雷德·诺贝尔" caption="阿尔弗雷德·诺贝尔" class="portrait-half" width="1660" height="2102" loading="lazy" >}}
+
 阿尔弗雷德·诺贝尔通过发明炸药积累了巨额财富，并用其遗产创立了诺贝尔奖。他的一生体现了科技发展带来的光与影。
 
 ## 作为发明家的天赋与炸药的诞生

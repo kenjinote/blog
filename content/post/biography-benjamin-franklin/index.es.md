@@ -9,6 +9,8 @@ slug: "biography-benjamin-franklin"
 description: "Cuando se escucha el nombre de Benjamin Franklin (1706–1790), muchas personas pueden pensar primero en el amable retrato del billete de 100 dólares de los"
 ---
 
+{{< figure src="benjamin-franklin.jpg" alt="Benjamin Franklin" caption="Benjamin Franklin" class="portrait-half" width="250" height="309" loading="lazy" >}}
+
 Cuando se escucha el nombre de Benjamin Franklin (1706–1790), muchas personas pueden pensar primero en el amable retrato del billete de 100 dólares de los Estados Unidos. Sin embargo, su verdadera figura no puede ser contenida en el marco político de un "Padre Fundador". Impresor, escritor, científico, inventor, diplomático y filósofo: Franklin fue un "genio universal" (polímata) excepcional que dejó una huella histórica en todos los campos.
 
 En este artículo, profundizamos en la agitada vida de Franklin, quien se construyó desde cero para sentar las bases de la nación estadounidense, la filosofía de vida que practicó y su enorme influencia que continúa hasta hoy.

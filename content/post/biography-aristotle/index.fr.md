@@ -9,6 +9,8 @@ slug: "biography-aristotle"
 description: "Surnommé le « père de toutes les sciences » et ayant bâti le système du savoir en Occident, le philosophe grec antique Aristote (384 av."
 ---
 
+{{< figure src="aristotle.jpg" alt="Aristote" caption="Aristote" class="portrait-half" width="433" height="650" loading="lazy" >}}
+
 Surnommé le « père de toutes les sciences » et ayant bâti le système du savoir en Occident, le philosophe grec antique Aristote (384 av. J.-C. - 322 av. J.-C.). Ses recherches ne se sont pas limitées à la philosophie, mais ont littéralement couvert « toutes les disciplines », de la logique à l'éthique, en passant par la politique, les sciences naturelles, la biologie et la poétique. Cet article explique la vie tumultueuse d'Aristote, sa pensée profonde qui résonne encore aujourd'hui, et l'impact incommensurable qu'il a eu sur l'histoire de l'humanité.
 
 ## 1. Une vie de savoir et de bouleversements

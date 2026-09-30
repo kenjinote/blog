@@ -9,6 +9,8 @@ slug: "biography-alan-kay"
 description: "艾倫·凱（Alan Kay）是一位美國計算機科學家，被譽為「個人電腦之父」，也是對現代計算領域產生深遠影響的天才先知。他有句名言：「預測未來的最好方法就是去發明它（The best way to predict the future is to invent it.）」，這句話至今仍不斷啟發著許多的企業家和工程師。"
 ---
 
+{{< figure src="AlanKay.jpg" alt="艾倫·凱" caption="艾倫·凱" class="portrait-half" width="768" height="515" loading="lazy" >}}
+
 艾倫·凱（Alan Kay）是一位美國計算機科學家，被譽為「個人電腦之父」，也是對現代計算領域產生深遠影響的天才先知。他有句名言：「預測未來的最好方法就是去發明它（The best way to predict the future is to invent it.）」，這句話至今仍不斷啟發著許多的企業家和工程師。
 
 本文將深入探討艾倫·凱的生平、他所提倡的創新哲學，以及他對現代科技產生了什麼樣的影響。

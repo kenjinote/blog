@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Introdução: O Gênio da Era Vitoriana, Ada Lovelace
 
+{{< figure src="ada-lovelace.jpg" alt="Ada Lovelace" caption="Ada Lovelace" class="portrait-half" width="1200" height="662" loading="lazy" >}}
+
 Ao traçar a história da ciência da computação, sempre chegamos ao nome de uma mulher. Seu nome é Augusta Ada King, Condessa de Lovelace. Geralmente conhecida como "Ada Lovelace", ela gravou seu nome na história como a "primeira programadora do mundo".
 
 No entanto, suas conquistas vão além de simplesmente "escrever o primeiro código". A verdadeira grandeza de Ada Lovelace reside no fato de que, já no século XIX, ela previu a essência dos computadores modernos: que uma máquina de calcular poderia transcender ser apenas uma "máquina de calcular números" e se tornar uma "máquina de uso geral capaz de processar qualquer informação e até mesmo criar música e arte".

@@ -9,6 +9,8 @@ slug: "biography-alan-kay"
 description: "阿兰·凯（Alan Kay）是一位被称为“个人电脑之父”的美国计算机科学家，也是对现代计算产生了深远影响的天才先知。“预测未来的最好方式就是去创造它（The best way to predict the future is to invent it.）”，这句他的名言至今仍不断地启发着无数的企业家和工程师。"
 ---
 
+{{< figure src="AlanKay.jpg" alt="阿兰·凯" caption="阿兰·凯" class="portrait-half" width="768" height="515" loading="lazy" >}}
+
 阿兰·凯（Alan Kay）是一位被称为“个人电脑之父”的美国计算机科学家，也是对现代计算产生了深远影响的天才先知。“预测未来的最好方式就是去创造它（The best way to predict the future is to invent it.）”，这句他的名言至今仍不断地启发着无数的企业家和工程师。
 
 本文将深入探讨阿兰·凯的生平、他所提出的创新哲学，以及他对现代科技所产生的深远影响。

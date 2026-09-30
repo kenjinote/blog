@@ -9,6 +9,8 @@ slug: "biography-alan-kay"
 description: "Alan Kay es un científico de la computación estadounidense, a menudo llamado el \"padre del ordenador personal\", y un genio visionario que tuvo un profundo"
 ---
 
+{{< figure src="AlanKay.jpg" alt="Alan Kay" caption="Alan Kay" class="portrait-half" width="768" height="515" loading="lazy" >}}
+
 Alan Kay es un científico de la computación estadounidense, a menudo llamado el "padre del ordenador personal", y un genio visionario que tuvo un profundo impacto en la informática moderna. Su famosa frase, "La mejor manera de predecir el futuro es inventarlo" (The best way to predict the future is to invent it.), sigue inspirando a muchos emprendedores e ingenieros en la actualidad.
 
 En este artículo, profundizaremos en la vida de Alan Kay, la filosofía innovadora que propuso y el impacto que ha tenido en la tecnología moderna.

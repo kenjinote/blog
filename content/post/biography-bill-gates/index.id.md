@@ -9,6 +9,8 @@ slug: "biography-bill-gates"
 description: "Saat ini, komputer ada di meja kita dan di saku kita sebagai hal yang biasa. Bill Gates (William Henry Gates III) adalah kontributor terbesar yang mempopul"
 ---
 
+{{< figure src="bill-gates.jpg" alt="Bill Gates" caption="Bill Gates" class="portrait-half" width="1080" height="1440" loading="lazy" >}}
+
 Saat ini, komputer ada di meja kita dan di saku kita sebagai hal yang biasa. Bill Gates (William Henry Gates III) adalah kontributor terbesar yang mempopulerkan konsep "komputer pribadi (PC)" ini ke seluruh dunia dan menciptakan industri perangkat lunak yang sangat besar. Lebih dari sekadar ahli teknologi, ia adalah pengusaha luar biasa yang kemudian bertransformasi menjadi dermawan terbesar di dunia. Kisah hidupnya dapat dikatakan sebagai sejarah perkembangan masyarakat modern itu sendiri.
 
 ### Kebangkitan terhadap Nilai Perangkat Lunak

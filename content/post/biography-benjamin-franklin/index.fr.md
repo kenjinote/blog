@@ -9,6 +9,8 @@ slug: "biography-benjamin-franklin"
 description: "Lorsque l'on entend le nom de Benjamin Franklin (1706–1790), beaucoup de gens pensent d'abord au doux portrait figurant sur le billet de 100 dollars américain."
 ---
 
+{{< figure src="benjamin-franklin.jpg" alt="Benjamin Franklin" caption="Benjamin Franklin" class="portrait-half" width="250" height="309" loading="lazy" >}}
+
 Lorsque l'on entend le nom de Benjamin Franklin (1706–1790), beaucoup de gens pensent d'abord au doux portrait figurant sur le billet de 100 dollars américain. Cependant, sa véritable nature ne peut être contenue dans le cadre politique d'un "Père fondateur". Imprimeur, écrivain, scientifique, inventeur, diplomate et philosophe — Franklin était un "polymathe" (génie universel) rare qui a laissé une empreinte historique dans tous les domaines.
 
 Dans cet article, nous plongeons au cœur de la vie mouvementée de Franklin, parti de rien pour jeter les bases de la nation américaine, de la philosophie de vie qu'il a pratiquée, et de son immense influence qui perdure encore aujourd'hui.

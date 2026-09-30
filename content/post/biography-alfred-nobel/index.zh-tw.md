@@ -9,6 +9,8 @@ slug: "biography-alfred-nobel"
 description: "阿爾弗雷德·諾貝爾透過發明炸藥累積了巨額財富，並用其遺產創立了諾貝爾獎。他的一生體現了科技發展帶來的光與影。"
 ---
 
+{{< figure src="alfred-nobel.jpg" alt="阿爾弗雷德·諾貝爾" caption="阿爾弗雷德·諾貝爾" class="portrait-half" width="1660" height="2102" loading="lazy" >}}
+
 阿爾弗雷德·諾貝爾透過發明炸藥累積了巨額財富，並用其遺產創立了諾貝爾獎。他的一生體現了科技發展帶來的光與影。
 
 ## 作為發明家的天賦與炸藥的誕生

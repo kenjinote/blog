@@ -9,6 +9,8 @@ slug: "biography-alan-kay"
 description: "Alan Kay est un informaticien américain, souvent appelé le \"père de l'ordinateur personnel\", et un visionnaire de génie qui a eu une influence profonde sur"
 ---
 
+{{< figure src="AlanKay.jpg" alt="Alan Kay" caption="Alan Kay" class="portrait-half" width="768" height="515" loading="lazy" >}}
+
 Alan Kay est un informaticien américain, souvent appelé le "père de l'ordinateur personnel", et un visionnaire de génie qui a eu une influence profonde sur l'informatique moderne. Sa célèbre citation, "La meilleure façon de prédire l'avenir est de l'inventer" (The best way to predict the future is to invent it.), continue d'inspirer de nombreux entrepreneurs et ingénieurs aujourd'hui.
 
 Dans cet article, nous plongerons dans la vie d'Alan Kay, la philosophie innovante qu'il a proposée et son impact sur la technologie moderne.

@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Alan Turing: Bapak AI dan Akhir Tragisnya
 
+{{< figure src="alan-turing.webp" alt="Alan Turing" caption="Alan Turing" class="portrait-half" width="1202" height="1600" loading="lazy" >}}
+
 Ponsel pintar, komputer pribadi, dan kecerdasan buatan (AI) yang berkembang pesat akhir-akhir ini—semua yang biasa kita gunakan saat ini, dibangun di atas fondasi teoretis yang diletakkan oleh seorang matematikawan Inggris. Namanya adalah Alan Mathison Turing.
 
 Ia dikenal sebagai "[Bapak Ilmu Komputer](/id/p/biography-donald-knuth/)" dan "Bapak Kecerdasan Buatan," serta seorang pahlawan yang menyelamatkan jutaan nyawa selama Perang Dunia II melalui pemecahan kodenya. Namun, hidupnya jauh dari kata mulus, dan berakhir dengan tragis dan kejam akibat prasangka masyarakat. Dalam artikel ini, kita akan menelusuri secara rinci kehidupan Turing, dari masa kecilnya, ide-ide revolusionernya yang mengubah dunia, hingga akhir yang tragis.

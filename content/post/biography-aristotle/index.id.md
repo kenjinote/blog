@@ -9,6 +9,8 @@ slug: "biography-aristotle"
 description: "Dikenal sebagai \"Bapak Segala Ilmu\", filsuf Yunani kuno Aristoteles (384 SM - 322 SM) membangun sistem pengetahuan di dunia Barat."
 ---
 
+{{< figure src="aristotle.jpg" alt="Aristoteles" caption="Aristoteles" class="portrait-half" width="433" height="650" loading="lazy" >}}
+
 Dikenal sebagai "Bapak Segala Ilmu", filsuf Yunani kuno Aristoteles (384 SM - 322 SM) membangun sistem pengetahuan di dunia Barat. Eksplorasinya tidak hanya terbatas pada filsafat, tetapi juga meluas ke logika, etika, ilmu politik, ilmu alam, biologi, dan puitika, yang secara harfiah mencakup "segala ilmu pengetahuan". Dalam artikel ini, kami akan menjelaskan kehidupan Aristoteles yang penuh gejolak, pemikirannya yang mendalam yang masih relevan hingga saat ini, dan dampak tak terukur yang ia berikan pada sejarah umat manusia.
 
 ## 1. Kehidupan Penuh Gejolak dan Pengetahuan

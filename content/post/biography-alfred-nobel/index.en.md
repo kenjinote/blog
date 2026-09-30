@@ -9,6 +9,8 @@ slug: "biography-alfred-nobel"
 description: "Alfred Nobel, who amassed a vast fortune through the invention of dynamite and established the Nobel Prize with his legacy."
 ---
 
+{{< figure src="alfred-nobel.jpg" alt="Alfred Nobel" caption="Alfred Nobel" class="portrait-half" width="1660" height="2102" loading="lazy" >}}
+
 Alfred Nobel, who amassed a vast fortune through the invention of dynamite and established the Nobel Prize with his legacy. His life embodied the light and shadow brought about by the development of science and technology. In this article, we delve deep into his extraordinary talent as an inventor, his agony of being called the "merchant of death," and his wish for peace entrusted to the future.
 
 ## Talent as an Inventor and the Birth of Dynamite

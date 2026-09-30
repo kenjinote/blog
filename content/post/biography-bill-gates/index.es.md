@@ -9,6 +9,8 @@ slug: "biography-bill-gates"
 description: "Hoy en día, las computadoras existen en nuestros escritorios y en nuestros bolsillos como algo natural."
 ---
 
+{{< figure src="bill-gates.jpg" alt="Bill Gates" caption="Bill Gates" class="portrait-half" width="1080" height="1440" loading="lazy" >}}
+
 Hoy en día, las computadoras existen en nuestros escritorios y en nuestros bolsillos como algo natural. Bill Gates (William Henry Gates III) es el mayor contribuyente que popularizó este concepto de la "computadora personal (PC)" en todo el mundo y creó la enorme industria del software. Más que un simple tecnólogo, fue un hombre de negocios excepcional que luego se transformó en el mayor filántropo del mundo. Se puede decir que la historia de su vida es la historia misma del desarrollo de la sociedad moderna.
 
 ### Despertar al Valor del Software

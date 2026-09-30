@@ -9,6 +9,8 @@ slug: "biography-bill-gates"
 description: "Hoje, computadores existem em nossas mesas e em nossos bolsos como algo natural. Bill Gates (William Henry Gates III) é o maior contribuidor que popularizo"
 ---
 
+{{< figure src="bill-gates.jpg" alt="Bill Gates" caption="Bill Gates" class="portrait-half" width="1080" height="1440" loading="lazy" >}}
+
 Hoje, computadores existem em nossas mesas e em nossos bolsos como algo natural. Bill Gates (William Henry Gates III) é o maior contribuidor que popularizou este conceito de "computador pessoal (PC)" em todo o mundo e criou a enorme indústria de software. Mais do que apenas um tecnólogo, ele foi um empresário notável que mais tarde se transformou no maior filantropo do mundo. A história de sua vida pode ser considerada a própria história do desenvolvimento da sociedade moderna.
 
 ### Despertando para o Valor do Software

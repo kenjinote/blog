@@ -9,6 +9,8 @@ slug: "biography-andrew-carnegie"
 description: "Andrew Carnegie (1835–1919), der \"Stahlkönig\", der die Zeit der industriellen Revolution in Amerika repräsentiert."
 ---
 
+{{< figure src="andrew-carnegie.jpg" alt="Andrew Carnegie" caption="Andrew Carnegie" class="portrait-half" width="800" height="533" loading="lazy" >}}
+
 Andrew Carnegie (1835–1919), der "Stahlkönig", der die Zeit der industriellen Revolution in Amerika repräsentiert. Sein Leben wird oft als Inbegriff des "amerikanischen Traums" erzählt, bei dem ein armer Einwanderer aus Schottland immensen Reichtum anhäufte. Gleichzeitig hat er auch die Seite eines Philanthropen, der das "Evangelium des Reichtums" (The Gospel of Wealth) propagierte und sein gesamtes Vermögen der Gesellschaft zurückgab. In diesem Artikel tauchen wir tief in sein dramatisches Leben, seine bis heute überlieferte Philosophie und seinen Einfluss auf die Nachwelt ein.
 
 ## Aufbruch aus der Armut und Aufstieg

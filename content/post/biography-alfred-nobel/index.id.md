@@ -9,6 +9,8 @@ slug: "biography-alfred-nobel"
 description: "Alfred Nobel mengumpulkan kekayaan besar melalui penemuan dinamit dan mendirikan Hadiah Nobel dengan warisannya."
 ---
 
+{{< figure src="alfred-nobel.jpg" alt="Alfred Nobel" caption="Alfred Nobel" class="portrait-half" width="1660" height="2102" loading="lazy" >}}
+
 Alfred Nobel mengumpulkan kekayaan besar melalui penemuan dinamit dan mendirikan Hadiah Nobel dengan warisannya. Kehidupannya mewujudkan cahaya dan bayangan dari perkembangan ilmu pengetahuan dan teknologi.
 
 ## Bakat sebagai Penemu dan Kelahiran Dinamit

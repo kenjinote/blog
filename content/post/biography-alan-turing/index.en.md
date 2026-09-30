@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Alan Turing: The Father of AI and His Tragic End
 
+{{< figure src="alan-turing.webp" alt="Alan Turing" caption="Alan Turing" class="portrait-half" width="1202" height="1600" loading="lazy" >}}
+
 The smartphones, personal computers, and artificial intelligence (AI) that is rapidly developing in recent years, which we use as a matter of course today. The theoretical foundation underlying these was built by an English mathematician. His name was Alan Mathison Turing.
 
 He is called the "father of computer science" and the "father of artificial intelligence", and is also a hero who saved millions of lives through cryptography during World War II. However, his life was by no means smooth, and ended in a cruel way due to social prejudice. In this article, we will unravel his life in extreme detail, from Turing's upbringing to the revolutionary ideas he brought to the world, and to his tragic end.

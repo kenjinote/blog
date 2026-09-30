@@ -10,6 +10,8 @@ image: "eyecatch.jpg"
 
 # Introducción: Ada Lovelace, el genio de la época victoriana
 
+{{< figure src="ada-lovelace.jpg" alt="Ada Lovelace" caption="Ada Lovelace" class="portrait-half" width="1200" height="662" loading="lazy" >}}
+
 Al repasar la historia de la informática, invariablemente nos encontramos con el nombre de una mujer. Su nombre es Augusta Ada King, condesa de Lovelace (Augusta Ada King, Countess of Lovelace). Conocida popularmente como "Ada Lovelace", ha grabado su nombre en la historia como la "primera programadora del mundo".
 
 Sin embargo, sus logros van mucho más allá de simplemente "escribir el primer código". La verdadera grandeza de Ada Lovelace radica en que, ya en el siglo XIX, vislumbró la esencia de los ordenadores modernos: entendió que una máquina calculadora podía superar la mera "máquina para calcular números" y convertirse en una "máquina de propósito general capaz de procesar cualquier información e incluso generar música o arte".
