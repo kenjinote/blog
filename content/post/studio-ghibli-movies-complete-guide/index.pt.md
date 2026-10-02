@@ -10,10 +10,6 @@ image: "eyecatch.jpg"
 
 # Capítulo 1: Fundação e as Primeiras Obras-Primas (Nausicaä do Vale do Vento, O Castelo no Céu)
 
-<div style="text-align: center;">
-<img src="風の谷のナウシカ.jpg" alt="風の谷のナウシカ" style="width: 50%;" />
-<img src="天空の城ラピュタ.png" alt="天空の城ラピュタ" style="width: 50%;" />
-</div>
 
 
 ## 1.1 Uma Singularidade na História da Animação: O Nascimento do Studio Ghibli
@@ -58,6 +54,8 @@ As "cenas de voo", indispensáveis nas obras de Miyazaki, se beneficiam enormeme
 
 ## 1.4 "Nausicaä do Vale do Vento" (1984): Um Marco Preliminar e a Profundidade da Ecologia
 
+<img src="/images/ghibli/風の谷のナウシカ.jpg" alt="風の谷のナウシカ" style="width: 50%;" />
+
 Lançado em 1984, "Nausicaä do Vale do Vento" foi formalmente produzido pelo "Topcraft" antes da fundação do Studio Ghibli, mas posicionado substancialmente como a "obra 0" ou "obra 1" que determinou a direção futura do Ghibli, contando com Hayao Miyazaki como diretor e Isao Takahata como produtor.
 
 Este trabalho é baseado no mangá de mesmo nome escrito pelo próprio Miyazaki e serializado na revista mensal "Animage", e o filme reestrutura as partes iniciais do mangá, completando-o como uma história independente. A maior conquista de "Nausicaä" gravada na história da animação é ter retratado brilhantemente temas profundos da ficção científica, como "problemas ambientais (ecologia)", "dignidade da vida", e a "loucura humana", dentro de um quadro de entretenimento e com uma beleza visual avassaladora.
@@ -69,6 +67,8 @@ Do ponto de vista tecnológico, o que não pode ser omitido sobre "Nausicaä" é
 O design da heroína, Nausicaä, também foi inovador. Ela não é uma simples "garota a ser protegida", e sim uma guerreira que pilota seu próprio Mehve, atira armas e empunha uma espada, e ao mesmo tempo é uma figura materna com profundo carinho por todas as formas de vida. Essa figura complexa que possui simultaneamente força e ternura, raiva e tristeza, tornou-se o auge e origem da representação de heroínas não apenas nas subsequentes obras do Ghibli, mas também na ficção contemporânea em geral.
 
 ## 1.5 A Fundação do Studio Ghibli e "O Castelo no Céu" (1986): A Aventura de Ação Definitiva
+
+<img src="/images/ghibli/天空の城ラピュタ.png" alt="天空の城ラピュタ" style="width: 50%;" />
 
 Recebendo o sucesso de "Nausicaä", os lucros serviram como capital para estabelecer formalmente o "Studio Ghibli" em 1985. O objetivo da sua criação era singular: "continuar a produzir animações de longa-metragem teatrais de alta qualidade". Ghibli nasceu como uma base independente para buscar qualidade sem compromissos, separando-se da produção em massa de animes para TV de baixa qualidade.
 
@@ -88,11 +88,8 @@ Estas duas obras elevaram o padrão técnico e expressivo a alturas inatingívei
 
 # Capítulo 2: A Intersecção entre o Cotidiano e o Extraordinário——O Mundo Retratado em "Meu Amigo Totoro", "Túmulo dos Vagalumes" e "O Serviço de Entregas da Kiki"
 
-<div style="text-align: center;">
-<img src="となりのトトロ.jpg" alt="となりのトトロ" style="width: 50%;" />
-<img src="火垂るの墓.jpg" alt="火垂るの墓" style="width: 50%;" />
-<img src="魔女の宅急便.jpg" alt="魔女の宅急便" style="width: 50%;" />
-</div>
+<img src="/images/ghibli/火垂るの墓.jpg" alt="火垂るの墓" style="width: 50%;" />
+
 
 
 Ao desvendar a história do Studio Ghibli, a segunda metade da década de 1980 foi um ponto de virada decisivo. Partindo de cenas grandiosas de "espadas e magia" ou de "aventura de ação voadora" vistas na obra anterior "O Castelo no Céu" (1986), o Ghibli deu uma grande guinada em direção ao "cotidiano", como as paisagens originais do Japão e a vida das pessoas comuns no Ocidente. Este capítulo analisa três obras - o milagre das exibições conjuntas de 1988, "Meu Amigo Totoro" e "Túmulo dos Vagalumes", e o sucesso de bilheteria de 1989, "O Serviço de Entregas da Kiki" - e disseca meticulosamente as revoluções temáticas e tecnológicas que estas gravaram na história da animação.
@@ -116,6 +113,8 @@ Em contrapartida, em "Meu Amigo Totoro", Hayao Miyazaki reconstruiu "um lindo Ja
 O poder persuasivo esmagador que as obras do Ghibli têm é em grande parte devido não apenas às atuações dos personagens, mas também ao poder da arte de cenários por trás deles. Neste período, as artes de fundo do Studio Ghibli haviam atingido seu auge.
 
 ### 2-1. A Atmosfera Úmida da "Floresta de Totoro" Desenhada por Kazuo Oga
+
+<img src="/images/ghibli/となりのトトロ.jpg" alt="となりのトトロ" style="width: 50%;" />
 Não é exagero dizer que as conquistas de Kazuo Oga, escolhido como diretor de arte para "Meu Amigo Totoro", mudaram a história da arte em animação no Japão. A natureza desenhada por Oga maximiza as características da tinta de pôster (poster color). Embora usando tinta de pôster opaca ao invés de aquarela transparente, ele expressou através de seu delicado ajuste de água e toques de pincel a peculiar "umidade" do clima japonês, "o cheiro inebriante da grama", e até a "temperatura da luz do sol vazando pelas folhas".
 
 Especialmente, a arte da cena em que Satsuki e Mei encontram Totoro em um ponto de ônibus na chuva é estonteante. A textura do asfalto molhado na chuva, a profundidade da floresta no santuário afundando na escuridão, e a camada de ar criada pela luz das ruas. A arte de Oga não era apenas "imitação da paisagem", mas um encanto mágico para visualizar "informação invisível" tal qual o vento soprado, temperatura, e umidade.
@@ -126,6 +125,8 @@ Por outro lado, a cidade de Koriko de "O Serviço de Entregas da Kiki", foi cons
 O edifício de rochas das cidades e a continuidade de telhas em encostas descendo a passos à direção marítima no plano de pedras europeu. Em ordem e objetivo em conceber tal descrição detalhada de grande valor realista para criar credibilidade, todo um esquadrão em grupo partiu das pranchetas a estudos meticulosos e viagem de procura em locais perante aprendizagem às minuciosas obras de engenharias arquiteturais. Eles também observaram por pequenos prismas detalhes aos graus à ruína no desgaste à rochas naturais combinando à irradiações solares sobre índices iluminados os quais transportados e calculados tudo perfeitamente combinou em matriz de cores ideais de mais de altíssima belezas estéticas a se adequar em pano de cenário para os tons animados em painel. Tais maravilhas sobre artes representacionais não fechavam apenas à esfera abstrata ilusória fantasiosa nos anseios e admirações pro cultura europeias mas sim tornavam vívido aos aspectos no mundo reais vivos no convívio orgânicos ao suor laboral popular habitacional dotando toda e de maneira assombrosa toda força representativa.
 
 ## 3. Temas Contemporâneos em "O Serviço de Entregas da Kiki": "Trabalho e Crise"
+
+<img src="/images/ghibli/魔女の宅急便.jpg" alt="魔女の宅急便" style="width: 50%;" />
 
 Na época em que foi lançado "O Serviço de Entregas da Kiki" despertou grandiosamente nas juventudes o acolhimento enorme e a avassalador entusiasmo de muitas gerações principalmente na audiências compostas pelas fêmeas civis trabalhadoras. Isso tudo se deve porque a produção não continha nas entranhas internas apenas um mero contos fabulosos e histórias encantadas a revesti-la superficial de "histórias nas maturidades e ascensão sobre de jovens de contos com fadas mágicas bruxarias" ela expunha na totalidade essência a vivência dramática incrivelmente crua e existencial na veracidade real e muito próxima e de modo muito moderno globalizado pautado nas aflições perante "Labutas, crises no labor criacional em talento e dons paralisados (ou como se diz as secas do dom: slump)".
 
@@ -164,10 +165,6 @@ Do interregno em decurso a partir de dos curtos anos nas temporadas no correr no
 
 # Capítulo 3: O Anseio pelo Voo e o Romance Adulto — O Ápice do Realismo em "Porco Rosso: O Último Herói Romântico" e "Sussurros do Coração"
 
-<div style="text-align: center;">
-<img src="紅の豚.jpg" alt="紅の豚" style="width: 50%;" />
-<img src="耳をすませば.jpg" alt="耳をすませば" style="width: 50%;" />
-</div>
 
 
 Ao analisar a história do Studio Ghibli, "Porco Rosso: O Último Herói Romântico" (1992) e "Sussurros do Coração" (1995), lançados entre o início e meados da década de 1990, podem parecer à primeira vista obras diametralmente opostas. Enquanto o primeiro é uma fantasia ambientada no Mar Adriático que retrata as batalhas e a melancolia de um piloto de hidroavião caçador de recompensas transformado em porco por uma maldição, o segundo é um drama adolescente ambientado na moderna Tama New Town que retrata o amor inocente e os conflitos sobre o futuro de um casal de estudantes do ensino fundamental.
@@ -179,6 +176,8 @@ No entanto, o que permeia ambas as obras é a insaciável curiosidade do Studio 
 "Porco Rosso" (título original: Il Porco Rosso) tem uma origem peculiar, tendo sido originalmente planejado como um curta-metragem para exibição a bordo de voos da Japan Airlines e evoluindo para um longa-metragem sob a pesada sombra da realidade da Guerra da Iugoslávia. Esta obra possui um toque extremamente pessoal, criada por Hayao Miyazaki para si mesmo e como "um filme para homens de meia-idade cansados cujas células cerebrais viraram tofu".
 
 ### 1.1 Hayao Miyazaki e os Aviões: O Fetichismo pela Mecânica e a Descrição Meticulosa da Aerodinâmica
+
+<img src="/images/ghibli/紅の豚.jpg" alt="紅の豚" style="width: 50%;" />
 
 A obsessão de Hayao Miyazaki pelo "voo" é bastante conhecida, mas a representação dos hidroaviões em "Porco Rosso" expressa seu fetichismo pela mecânica e seu profundo entendimento da aerodinâmica da forma mais pura. Os hidroaviões que aparecem na obra — o Savoia S.21 vermelho, a amada aeronave do protagonista Porco Rosso (um modelo original que mistura elementos de aeronaves reais como o Macchi M.33 e o Savoia-Marchetti S.59), a aeronave de seu rival Curtis, e a diversificada frota de hidroaviões da união dos piratas do ar — não são meros cenários ou adereços, mas ganham vida como personagens autônomos por si mesmos.
 
@@ -218,6 +217,8 @@ Como a chanson "O Tempo das Cerejas" (Le Temps des cerises) cantada por Gina sim
 "Sussurros do Coração", lançado em 1995, é uma obra monumental na qual Hayao Miyazaki foi responsável pela produção, roteiro e storyboards, e Yoshifumi Kondo, que era um animador central do Studio Ghibli, atuou como diretor de longa-metragem pela única vez. Embora baseado no mangá shojo de mesmo nome de Aoi Hiiragi, pelas mãos de Miyazaki e Kondo, a obra transcendeu a estrutura de uma simples história de amor e foi elevada a um retrato realista da adolescência abalada pelas ansiedades sobre o futuro, os talentos e a autorrealização.
 
 ### 2.1 O Olhar de Yoshifumi Kondo: A Essência da Animação Que Reside nos Gestos do Cotidiano
+
+<img src="/images/ghibli/耳をすませば.jpg" alt="耳をすませば" style="width: 50%;" />
 
 O maior charme desta obra, e o que pode ser chamado de conquista técnica, é a obsessão meticulosa do diretor Yoshifumi Kondo com as "atuações cotidianas". Na animação, é considerado muito mais difícil desenhar "ações casuais do dia a dia", como pessoas caminhando, sentando-se, fazendo chá ou subindo escadas com precisão e acompanhadas de emoção, do que desenhar movimentos "não cotidianos (espetaculares)" como magia, explosões ou batalhas de robôs.
 
@@ -267,9 +268,8 @@ Assim como Porco luta para defender a liberdade dos céus, Shizuku também pega 
 
 # Capítulo 4: Ecologia e Imaginação Mítica (Princesa Mononoke)
 
-<div style="text-align: center;">
-<img src="もののけ姫.jpg" alt="もののけ姫" style="width: 50%;" />
-</div>
+<img src="/images/ghibli/もののけ姫.jpg" alt="もののけ姫" style="width: 50%;" />
+
 
 
 "Princesa Mononoke", lançado em 1997, é um protótipo monumental que se tornou um divisor de águas claro na carreira do Studio Ghibli e do diretor Hayao Miyazaki. Esta obra transcendeu as fronteiras de um simples filme de animação, trazendo um enorme impacto cultural e industrial a ponto de reescrever a própria história do cinema japonês. Neste capítulo, iremos desvendar com o máximo de detalhes os temas multifacetados desta obra — a desconstrução da história medieval japonesa, a fase não-dualística do bem e do mal, e a fusão de computação gráfica (CG) com animação celulóide tradicional como um ponto de virada técnica.
@@ -342,10 +342,8 @@ Além disso, o ciclo de vida da flora brotando, crescendo e murchando num instan
 
 # Capítulo 5: A Transição Digital e Aclamação Global (A Viagem de Chihiro, O Reino dos Gatos)
 
-<div style="text-align: center;">
-<img src="千と千尋の神隠し.jpg" alt="千と千尋の神隠し" style="width: 50%;" />
-<img src="猫の恩返し.jpg" alt="猫の恩返し" style="width: 50%;" />
-</div>
+<img src="/images/ghibli/千と千尋の神隠し.jpg" alt="千と千尋の神隠し" style="width: 50%;" />
+
 
 
 Na história do Studio Ghibli, o início dos anos 2000 foi o ponto de virada mais dramático tecnologicamente, expressivamente e comercialmente. Neste capítulo, iremos detalhar minuciosamente sob a perspectiva de profissionais como a transição da animação cel para um ambiente totalmente digital expandiu a expressão visual das obras da Ghibli para territórios sem precedentes, e como sua culminação, "A Viagem de Chihiro" (2001), e a preparação para a próxima geração, "O Reino dos Gatos" (2002), trouxeram aclamação global e impacto cultural que ultrapassaram as fronteiras do Japão.
@@ -405,6 +403,8 @@ No próprio Japão, a sua influência social também foi gigantesca. As receitas
 
 ## 6. "O Reino dos Gatos" e a Promoção dos Diretores da Próxima Geração: Diversificação e Estabilidade Digital da Ghibli
 
+<img src="/images/ghibli/猫の恩返し.jpg" alt="猫の恩返し" style="width: 50%;" />
+
 Logo após a mania histórica gerada por "A Viagem de Chihiro", em 2002 foi lançado "O Reino dos Gatos" com direção de Hiroyuki Morita. Este projeto era um média-metragem (75 minutos de duração) que atuava como um spin-off da história escrita por Shizuku Tsukishima, a protagonista de "Sussurros do Coração". Começou com uma origem incomum no estágio de planejamento como um "projeto sobre gatos" para um parque temático.
 
 Trazer diretores jovens e externos para além das duas grandes potências com carisma avassalador, Hayao Miyazaki e Isao Takahata, e diversificar a linha de produção do estúdio sempre foi um desafio importante e difícil para a Ghibli. "O Reino dos Gatos" incorpora o tipo de produção ágil e leve que se tornou possível justamente porque o sistema de produção totalmente digital havia se estabilizado tecnologicamente dentro do estúdio.
@@ -425,10 +425,6 @@ A avassaladora autoria e a força da visão de mundo apresentadas por "A Viagem 
 
 # Capítulo 6: Guerra e Amor, o Mecanismo da Magia (O Castelo Animado, Contos de Terramar)
 
-<div style="text-align: center;">
-<img src="ハウルの動く城.jpg" alt="ハウルの動く城" style="width: 50%;" />
-<img src="ゲド戦記.png" alt="ゲド戦記" style="width: 50%;" />
-</div>
 
 
 ## Introdução: O Início de uma Nova Era Ghibli e o Mundo em Tumulto
@@ -440,6 +436,8 @@ Ao mesmo tempo, a imensa tarefa de transição geracional também estava se torn
 ---
 
 ## "O Castelo Animado": O Clímax do Steampunk e o Grito Anti-guerra
+
+<img src="/images/ghibli/ハウルの動く城.jpg" alt="ハウルの動く城" style="width: 50%;" />
 
 Embora seja baseado na literatura infantil "O Castelo Animado" de Diana Wynne Jones, Hayao Miyazaki infundiu sua forte autoria nele, construindo uma história única que difere bastante do original. É simultaneamente uma épica história de amor ambientada em um mundo onde magia e máquinas coexistem, e um contundente filme anti-guerra.
 
@@ -484,6 +482,8 @@ Esta expressão do "fluxo da idade" é o auge do retrato psicológico, aproveita
 ---
 
 ## "Contos de Terramar": A Estreia de Goro Miyazaki e a Filosofia da Sombra
+
+<img src="/images/ghibli/ゲド戦記.png" alt="ゲド戦記" style="width: 50%;" />
 
 Em 2006, dois anos após "O Castelo Animado", o Studio Ghibli fez uma adaptação em filme de animação da literatura de fantasia mundialmente aclamada de Ursula K. Le Guin, "Contos de Terramar". No entanto, quem sentou na cadeira de diretor não foi Hayao Miyazaki, mas seu filho mais velho, Goro Miyazaki, que não tinha absolutamente nenhuma experiência prévia na produção de filmes.
 
@@ -542,10 +542,6 @@ A magia (animação) não é onipotente. No entanto, tentar desenhar a luz na es
 
 # Capítulo 7: A Origem da Vida e o Retorno ao Desenho à Mão (Ponyo - Uma Amizade que Veio do Mar, O Mundo dos Pequeninos)
 
-<div style="text-align: center;">
-<img src="崖の上のポニョ.jpg" alt="崖の上のポニョ" style="width: 50%;" />
-<img src="借りぐらしのアリエッティ.jpg" alt="借りぐらしのアリエッティ" style="width: 50%;" />
-</div>
 
 
 Ao observar a história do Studio Ghibli e a história da animação japonesa em geral, o período do final dos anos 2000 até o início dos anos 2010 está posicionado como um ponto de virada técnico e ideológico altamente único. Em Hollywood, a animação totalmente em 3DCG liderada por gigantes como Pixar e DreamWorks reinava como o padrão de fato do mercado de filmes, e no Japão, a digitalização dos processos de produção nas animações de TV e filmes teatrais (pintura digital e renderização 3DCG de fundos e mecânicas) se estabeleceu firmemente como uma onda irreversível.
@@ -553,6 +549,8 @@ Ao observar a história do Studio Ghibli e a história da animação japonesa em
 Em meio a essa era digital dominada pela "eficiência e exatidão calculada", Hayao Miyazaki e o Studio Ghibli deram uma guinada brusca na direção diametralmente oposta. Isso foi um "retorno total à animação desenhada à mão" e a "busca da expressão primitiva da vida". Neste capítulo, vamos contrastar a loucura da animação fluida macro em "Ponyo - Uma Amizade que Veio do Mar" (2008) do diretor Hayao Miyazaki com o movimento de perspectiva micro e a redefinição do sentido de escala na estreia na direção de Hiromasa Yonebayashi em "O Mundo dos Pequeninos" (2010), aprofundando nas profundezas técnicas e ideológicas de como Ghibli gravou o "sopro de vida na animação" no filme.
 
 ## 1. "Ponyo - Uma Amizade que Veio do Mar": A Loucura da Rejeição do CG e o Surgimento do "Livro de Imagens em Movimento"
+
+<img src="/images/ghibli/崖の上のポニョ.jpg" alt="崖の上のポニョ" style="width: 50%;" />
 
 O Studio Ghibli nunca rejeitou as tecnologias digitais. A introdução de pintura digital e a expressão do Deus Demônio em "Princesa Mononoke" (1997), o processamento espacial em "A Viagem de Chihiro" (2001) e a complexa expressão motriz do castelo usando 3DCG em "O Castelo Animado" (2004)—eles sempre incorporaram perfeitamente a tecnologia de ponta no contexto da animação em celuloide. No entanto, em "Ponyo", Hayao Miyazaki tomou a decisão regressiva de rejeitar intencional e completamente o uso de 3DCG.
 
@@ -585,6 +583,8 @@ Esta bela e transparente cidade submersa é uma metáfora para o mar primitivo o
 
 ## 4. "O Mundo dos Pequeninos": A Perspectiva de Hiromasa Yonebayashi, o Mágico das Escalas
 
+<img src="/images/ghibli/借りぐらしのアリエッティ.jpg" alt="借りぐらしのアリエッティ" style="width: 50%;" />
+
 Enquanto "Ponyo" pintava uma explosão de vitalidade e a força do mar da mãe desenfreado numa escala macro absolutamente estonteante, dois anos depois o "O Mundo dos Pequeninos" tornou-se uma obra-prima inesgotável baseada no questionamento minucioso dos comportamentos através da exploração de elementos das propriedades em mundos microfísicos incrivelmente controlados nas reproduções virtuais dos tamanhos miniatura. Em sua estreia como cineasta, esse magistral e proeminente animador Ghibli mais bem e afetuosamente conhecido pelo nome "Maro" (Hiromasa Yonebayashi), não deixou o tema ser unicamente restritivamente encerrado e simplificado nas barreiras comuns dos trabalhos convencionais sobre "Os contos e mundinhos" infantis por meramente utilizar do artificio ou truques folclóricos de proporções apenas por ficção num cenário reduzido das fadas baseados na história de ficção pela Mary Norton (The Borrowers). Sem resumir-se na escala sobre pessoas não maiores do que reles e rebaixados estaturas sob parcos "10cm". Ao contrário sob exaustivamente ríspidas medidas a rigor sob as exigências físicas meticulosamente recalculadas da física recriada para essas perspectivas aos seus próprios microcosmos foi elevada como numa perfeição técnica primorosa as maiores instâncias ao espetáculo realista absoluto sem margens a quaisquer imperfeições formidável na tela real do universo dimensionado.
 
 Sua proeza magnífica, do sublime e virtuoso da condução cênica espacial diretiva nas compreensões em espaços através por Yonebayashi (construindo arranjos sobre os planos layouts), fez as tipicamente colossais grandiosas e imensas lares japoneses que habitamos diariamente subitamente tornarem e transfigurarem a olhares no qual o grupo sobre a Arrietty a da visão da família, uma repentinamente drástica e monumental estrutura sobre gigantescos como se convertidas em "escarpadas falésias colossais formidáveis", "Densa selvas", "Um vasto o emaranhado e monstruoso por terríveis e perigosidades de longínquas estruturas dos enormes e infinitos labirintos incalculáveis" na magnitude sobre seu tamanho percebido dramaticamente convertidos pelas câmeras aos observadores em escalas transformadas das paisagens em dimensões assombrosas.
@@ -615,16 +615,13 @@ A direção da abordagem está em extremos opostos macro e microcósmico polarid
 
 # Capítulo 8: A Culminância dos Mestres e a Transmissão para o Futuro
 
-<div style="text-align: center;">
-<img src="風立ちぬ.jpg" alt="風立ちぬ" style="width: 50%;" />
-<img src="かぐや姫の物語.jpg" alt="かぐや姫の物語" style="width: 50%;" />
-<img src="君たちはどう生きるか.jpg" alt="君たちはどう生きるか" style="width: 50%;" />
-</div>
 
 
 A história do Japão pela da Animação nipônica, que seguiu o da o mundo inteiro sendo reinante como marco a um como história sendo o do como o do a história ao Studio Ghibli e a da animação japonesa em história e como em épicos, e assim também o do mundo continuou o como a a ser o como o mundo, o do e e a e a e a do e a mundo, entrou a e as e a mundo a do a e do a de a as do mundo e a do de mundo a e a no a e e e as a do a a de da de do de do de e de a do a do de a e a e de de de de de as do e do de as as a de e as de de de do as e de a de as da de a e e de as do de da de de da de de e a de e e de e e a a a e de as do de da e a de as a e a e a e e a e a de e a de de a de de a e de e e e de de a e e as de da de e de e a a e a a e e de e e a as e e e a e e de de e e as e de e a a a e e e as de as do as e a a a e e a as de as e e de da e e a as e de da a e e as e e de da e de da de as e de as e de as do de e a as do de de da as do de e a e a as e as a as de e e as de e e as e de e e a as e as e as de de de de de a as as as a a de de e as as a e de de e de a e a a a a de as as de de e e a as e as e de as a a e e as e as a as as a as as e a as a a as de de e as as a de a e de de a a e as as a e as a e de as a e e as as e e a as a de de de a a de e e e a e e de e a e e de as de de e de e as as de as a e e as as as e de e as a as a de de a a de de a e as a e de as e as e as de as e e de a de as as e as de as a as de de a a e e e de e a as as e a as a de de as a e de a de e a de de a e as as as e e a e a as as a as as de de as a a as as e as e as a e e e e de e a a de as as e e a as e de a a e a de as e a e a as a a e e as as a de as a a a e a a a as as e e de a de e a a a a as as a de a de as as de e as a as as a e e a de a e e a a a as as e a de a as as as de as as as de e e as a a a e de e a a a e e e de de de de e e a de e de de a as e de e e a a a a e a a de de a a e de a as e de a e a de as a a a e e a as a e as de de a e e a de as a as as as de e e e e de e e as de as a e as e a de as a as as as as e e a e a e de a e de as a a e e e e de de as as de as a as e a as a as a e e a as a a de a a as e de a a de e a de as de de as as a as e de e e a e as e e as a a e e as a de e as as de a a de a a de as as a a e as as a as e e e de e de de de as e as a a e as as de as de a de de e de a a de e as as e e a e e a de e de as a as a e as as de de e a e e e as a as as de a de e de a e e a de e de de e as a de e as de de de e de e de de de e a as e de de e as a a de de e e de e e a de as a a as as e e a a de de de a as e as de de e de as de e e as a as as e de e as as a a e as de a as a de e as a as e as de de a a a as as as de a e de e e as e a de as de a e a as as e de de a as as a a de a e e a as as a a de de as e de as e a a de a de e e de de as de as e e de a e e as a de as a de as as a a e as a as a de de as e as as e a e de a as e e de de as a e de e a de de de de e a a e de as de a de e e de a e e de as de de de de as a as de as de a de a as a e de a as de as e e de a as de as e e as as e e de de de a a as as a a e as e e as de as as as a de as as a a as as de as e e a e e as e as a a as e as e as e as as as e e de e e a de a as as a as e as e de a a as a as as a e a as e de as de as as e as de a de e de as a de a de de de e e a de as de as a a as as e a a e de as e as de de as de as de de a a as e as as e de a as de a e e de de e a a a as de as e as a e as e e e e e a e e as e a de a a as e e a as a e de de de a as a e e a e a a as de de e a a de as de as de a e e e a a a a as as e de e de a as a de a e de de a as a a a a as e e e e a as a e as as de de as as a e de as a as e e e e as a de as as as de de as as e as a e de de a e de de de e e de e de a a de as e as as de as e de de de de as as de as as de a a as e as de a a a as as a a as de as a de as a e as a e de e as a e de a e a a a de a de as as a de e de as e e a de e e a e e as a e a as a e a a de e e a de de de as as a as a a de as de a a e as e e as a e a de e e a as as de e e de e as de e e de de a a a a e de e a a de a a de as a e de e e a as e de as a as e a as a e e de as e e e as e as de as e as a de e de de e e de a de de a de de e de as a a e a a as e a a e e as e a e a e de de a a a e de de as as a e a as de as e de as as as de a de as a e a as a e de e as e de de e a as as a e a de as e e as de de de a e a a de de as as a a de as a de a e a a as a de e de as a de de as e as as e a as de a as e a de a a a e e e as as e as as e e e de a de e as a as de de as as e a e a as de as a as a a a de e e a as as e e as a a as e a e as de e as e e as a as e a e as as e as a e a de a a e as e a as e e de e e e e a a de a e de de e a a a as as e de de a de a as de a a as e de e a a as de de de a de e a de e as as a e e e as a as e as as a de a e as as a a a de e de e a as as a a a de as as de as a a as a e de a as a a as e e de a de a e as a as a de e as de a a a as a e a e a e e a as a de e as as a a a as e as as a a de a as as a a e as e e a de de de de de e as as a a as e as de as de e e as e as a e e as a a e a a as e de de a e e a e de a as a de a a a de de as de e as e as as de e a a as a e e de e as a e e as de as e de a de as as a a de as as as as e as de as de de a e de a e as a a e a e de de de e a a as a a e e e as a a a as as e e a a e as as a as e de as a e de e de de de a de de de a a e as a de as e e as de a e as e as as as e de e de de a as a a de as e a as a e as as de a a as as e de de a as e a a as as de a de e de as de e a de a e as as a as a as de de a as as as a de de as as e as de as e e de as de as e as as e as a e de as a de a e as e as a a e e a de e a as a e de e de a e as de as e e e e de as as as de de e e as de e as as de e e as a de de de de de e e e de e a as e e as a e e de as as as a a de de de de e a e a de a de as de as de de e de de a a a a de e de a a de as a de a a e a e e a de as de e e e as as e e de de as as e de de e e de e as as e e a a as as a a a de as as e de e e de e as a as a de de as de e de as de e de e as as de a a de e de e a a e as e e as de as de e as a de as as de e a e as e de de de de a as a as e a as de a a e as de e de e as as a as as a e as as de as e de de de as e as a as a a e e e de a e de de e a de as as e a as e as de a de de a de a as e e de a e de de de de de de de as de e as a de a e de a as e de a de as as de a de de de e de e e a de e de a e a as e e a as as e de a e e as as as a de as de de a as as e de a e as de as de e as e as a e a de e a as as e de as a as de as de as as as e e e e as a e de de de a de as de e de as a de a e de as e as as de a a as as de as e as e as a de a a e e de de a de as as a as de de e e e e de a a e de as as de e a de as de as e e de as de e de de as as de a a e a a as e a as as e e e as e de e de a a as de de e a a a e de a e as de a e a de e e de as e de as de as as as as a de as a a de a de a de as de e de a e as a as a a a as de de as as as de de de a as e a e as de a as as de e e de e as a de as as as a a a as e de as de de e de e de a a as de a as de de a e de as as e a as de as e e as de de de a a a as as e as as as de e as de de de e e a as a e as as a as a a as de de de de de a as de de a e e e as as a as a as a de as a a de de e as as de e e a a as a a a a as as e de as a as de a as e de as a a de a a as a de e as de as as a e a a a a a da de de de as a as a de e as de e as de de de a as as as de as a e a a a as de e as e e as de de as as as as e a de e a a as de as a as as e as de de as de e de de e a as as as de de as as e e de as de as a e a e a e de a as as a as as a a e as a de as a as a a de e as e de e as a de a de e a de as a de as as e a e a de a e as a as e de as as as de de e as a as e de a de as e a a a a a a as e a e as e e as a de as a a e a as a e as a a a e a e e e de as as a de e e a as as as e e a e a as de a a as as e as de e e de e de de as a de e a e a a e a a de as a a a e a a a de a de de e as a e as e e de e de a as as e as a de e a as a a de as e as de as a e a a de as de as as de a de de e a e a e a a de de de a a de e as a a e de e e a e a de as de as de as de as a a e de a de e de de a de de e as a a e a a as as a e e as as de as de de a e a e a de as e de a as e e de de e e a as as de as a de as e e de de de de as as a de a e e de as de de as as a de de de e a as a e a de e a e de de de e as de e a a a as de de e as a de as a e de as de de a e e as e e a as a e e de as de de as a de as a e de de de as a a e de e e e e de de de e de a a e a e a de as as e de de e de e de de de de e as a as as a e as de e de as de de de e e de e as de as e de as e as de as "culminação" de seus dois mestres fundadores, Hayao Miyazaki e Isao Takahata. Indo além da estrutura do mero entretenimento, nasceria uma série de trabalhos autorreferenciais focados no próprio carma (karma), filosofia e no fim da vida (mortalidade) dos criadores. Neste capítulo, examinaremos profundamente três obras-primas que representam os pontos finais do Studio Ghibli e englobam "destruição e renascimento" — "Vidas ao Vento" (2013), "O Conto da Princesa Kaguya" (2013) e "O Menino e a Garça" (2023) — dissecando o testamento que eles deixaram para a indústria de animação e sua herança para a próxima geração a partir de perspectivas técnicas e ideológicas profundas.
 
 ## 1. "Vidas ao Vento" —— A Maldição da Criação e o Fim de um Belo Sonho, a Confissão das Contradições de Hayao Miyazaki
+
+<img src="/images/ghibli/風立ちぬ.jpg" alt="風立ちぬ" style="width: 50%;" />
 
 "Vidas ao Vento", lançado em 2013, é uma obra quase autobiográfica na qual Hayao Miyazaki expôs a "contradição" que carregava há muitos anos de uma forma mais nítida do que nunca. O protagonista, Jiro Horikoshi, baseia-se numa figura histórica real que projetou o caça Mitsubishi A6M Zero, mas Miyazaki fundiu a essência do escritor contemporâneo Tatsuo Hori com ele, desenhando o retrato de um único "criador".
 
@@ -632,6 +629,8 @@ A história do Japão pela da Animação nipônica, que seguiu o da o mundo inte
 Miyazaki é simultaneamente um fervoroso entusiasta de aeronaves militares e um forte pacifista. Essa contradição de "amar a beleza das máquinas de guerra, mas odiar a guerra em que elas são usadas para matar pessoas" tem sido retratada intermitentemente em "Porco Rosso" e "O Castelo Animado". No entanto, em "Vidas ao Vento", ele deixou de envolvê-la no manto da fantasia. O desejo técnico e puro de Jiro de "apenas querer fazer belos aviões" acaba se materializando como o "sonho amaldiçoado" do caça Zero, que envia muitos jovens para a morte e transforma o Japão em cinzas. Caproni, um designer de aviões italiano que conversa com Jiro em um espaço de sonho, pergunta: "Qual mundo você prefere, um com pirâmides ou um sem pirâmides?" e declara: "O tempo de uma vida criativa é de 10 anos". Esta é uma percepção profunda do brilho do talento e do seu preço cruel, e também serve como um amargo livro de confissões para o próprio Miyazaki sobre quanto ele sacrificou da sua própria vida e daqueles ao seu redor para criar a "bela ficção" que é a animação.
 
 ### Uma Abordagem Experimental para "Vento" e "Som" na Técnica de Animação
+
+<img src="/images/ghibli/かぐや姫の物語.jpg" alt="かぐや姫の物語" style="width: 50%;" />
 Do ponto de vista técnico, "Vidas ao Vento" é o ápice da expressão do "vento" e do "voo" cultivados pelo Ghibli. Da sequência de sonho de abertura, aos voos do avião de papel em Karuizawa e ao voo de teste, a técnica de desenho que faz o fluxo de ar parecer visível é simplesmente uma obra-prima. A textura do duralumínio da fuselagem e a representação obsessiva de cada rebite representam o extremo do seu amor pela mecânica.
 Mais digno de nota é a ousada experimentação no aspecto sonoro. Neste trabalho, muitos efeitos sonoros (SE) — desde os sons da hélice dos aviões, aos sons de exaustão das locomotivas a vapor e até os estrondos da terra no Grande Terremoto de Kantō — foram criados por "vozes humanas". Esta abordagem animista permite que máquinas e desastres naturais assumam um estranho realismo como se fossem organismos gigantes e intencionais. Além disso, nomear Hideaki Anno, o diretor de "Neon Genesis Evangelion", como a voz do protagonista Jiro é altamente simbólico. A voz simples e desprovida de emoção de Anno, que não é um ator profissional, incorporou perfeitamente a "loucura resultante da pureza" de Jiro impulsionada pela tecnologia. Os dias belos, mas cruéis, com sua esposa doente de tuberculose, Nahoko, também destacam o realismo de Miyazaki que confunde a linha entre o egoísmo e o amor.
 
@@ -644,6 +643,8 @@ A animação tradicional, que é a corrente principal da animação japonesa, ba
 Além disso, o diretor Takahata adotou o formato "prescore" (pré-gravação). Este é um método em que a atuação dos dubladores é gravada primeiro, e os animadores criam os desenhos baseados na entonação e respiração das vozes, e também nas expressões faciais e gestos durante a gravação (que foram filmados com uma câmera de vídeo). Como resultado, a realidade das vozes emitidas por Aki Asakura (Princesa Kaguya) e Kengo Kora (Sutemaru) sincronizou perfeitamente com os sutis movimentos musculares e nuances emocionais dos personagens, alcançando uma sensação de existência avassaladora. Esta foi uma forte antítese contra a animação moderna, que tende a depender de expressões de personagens simbolizadas.
 
 ### A Estética do Espaço em Branco e a Explosão de Emoção - O Impacto da Sequência de Fuga
+
+<img src="/images/ghibli/君たちはどう生きるか.jpg" alt="君たちはどう生きるか" style="width: 50%;" />
 A maior característica técnica e de direção de "O Conto da Princesa Kaguya" é o "espaço em branco" (a estética de não desenhar tudo). As bordas da tela costumam ser desfocadas como em uma pintura em aquarela, e os próprios cenários muitas vezes não são totalmente desenhados. Ao deixar "espaço para a imaginação do espectador entrar", Takahata, inversamente, fez com que o público completasse a profundidade do mundo que se expande por trás da tela, incentivando uma apreciação ativa.
 Onde essa técnica demonstrou seu efeito mais esmagador foi na sequência em que a Princesa Kaguya foge do banquete imperial e corre em direção às montanhas. No momento em que sua raiva, desespero e resistência ao cativeiro atingem o pico, o traço cuidadoso se transforma repentamente em um toque áspero, como o de uma pintura a tinta, e o cenário desmorona ao nível de um rascunho, como se engolido por uma torrente de emoção. Esta cena onde as linhas se tornam caóticas e as cores voam, é o momento em que a animação saltou de "símbolos desenhados" para a "visualização da pura emoção", sendo uma cena miraculosa que deve ser gravada na história do cinema mundial. O contraste com a música budista e inorgânica na representação da Capital da Lua também destaca a visão de vida e morte de Takahata, que afirma a "impureza" e a "alegria da vida" na Terra.
 

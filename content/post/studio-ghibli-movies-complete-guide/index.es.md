@@ -10,10 +10,6 @@ image: "eyecatch.jpg"
 
 # Capítulo 1: Fundação e as Primeiras Obras-Primas (Nausicaä do Vale do Vento, O Castelo no Céu)
 
-<div style="text-align: center;">
-<img src="風の谷のナウシカ.jpg" alt="風の谷のナウシカ" style="width: 50%;" />
-<img src="天空の城ラピュタ.png" alt="天空の城ラピュタ" style="width: 50%;" />
-</div>
 
 
 ## 1.1 Uma Singularidade na História da Animação, o Nascimento do Studio Ghibli
@@ -58,6 +54,8 @@ As "cenas de voo", indispensáveis nas obras de Miyazaki, recebem ao máximo os 
 
 ## 1.4 "Nausicaä do Vale do Vento" (1984): Um Marco Monumental como Pré-história e a Profundeza da Ecologia
 
+<img src="/images/ghibli/風の谷のナウシカ.jpg" alt="風の谷のナウシカ" style="width: 50%;" />
+
 Lançado em 1984, "Nausicaä do Vale do Vento" é oficialmente uma obra produzida pela "Topcraft", antes da fundação do Studio Ghibli, mas foi feita com a formação do diretor Hayao Miyazaki e do produtor Isao Takahata, sendo posicionada como o "Filme 0" ou "Filme 1" prático que determinou a direção futura do Ghibli.
 
 Esta obra baseia-se no mangá de mesmo nome que o próprio Hayao Miyazaki estava publicando na revista mensal "Animage", mas a versão cinematográfica reestrutura a sua parte inicial e a conclui como uma história independente. A maior conquista que "Nausicaä" gravou na história da animação foi o fato de ter retratado temas de ficção científica extremamente profundos como "questões ambientais (ecologia)", "dignidade da vida" e a "insensatez humana" dentro de um quadro de entretenimento e com uma beleza visual avassaladora.
@@ -69,6 +67,8 @@ Ao discutir "Nausicaä" pelo aspecto técnico, é impossível não mencionar a r
 O design da heroína Nausicaä também foi inovador. Ela não é apenas uma "garota a ser protegida", mas uma guerreira que pilota o Mehve, atira e empunha uma espada, sendo ao mesmo tempo uma figura materna com profundo afeto por todas as vidas. Essa imagem de personagem complexa, que combina força e gentileza, raiva e tristeza, tornou-se o ponto de origem e um referencial não apenas para as futuras obras do Ghibli, mas também para a imagem das heroínas na ficção contemporânea.
 
 ## 1.5 A Fundação do Studio Ghibli e "O Castelo no Céu" (1986): O Ápice da Aventura de Ação
+
+<img src="/images/ghibli/天空の城ラピュタ.png" alt="天空の城ラピュタ" style="width: 50%;" />
 
 Com o sucesso de "Nausicaä", seus lucros foram usados para estabelecer oficialmente o "Studio Ghibli" em 1985. O propósito dessa fundação era apenas um: "continuar a fazer longas-metragens de animação de alta qualidade para o cinema". Distanciando-se da produção em massa de baixa qualidade das animações para televisão, o Ghibli nasceu como uma base independente para buscar uma qualidade sem compromissos.
 
@@ -91,11 +91,8 @@ Estas duas obras elevaram os padrões técnicos e expressivos a alturas muito ma
 
 # Capítulo 2: O Cruzamento do Cotidiano e do Extraordinário —— O Mundo Retratado em "Meu Amigo Totoro", "Túmulo dos Vagalumes" e "O Serviço de Entregas da Kiki"
 
-<div style="text-align: center;">
-<img src="となりのトトロ.jpg" alt="となりのトトロ" style="width: 50%;" />
-<img src="火垂るの墓.jpg" alt="火垂るの墓" style="width: 50%;" />
-<img src="魔女の宅急便.jpg" alt="魔女の宅急便" style="width: 50%;" />
-</div>
+<img src="/images/ghibli/火垂るの墓.jpg" alt="火垂るの墓" style="width: 50%;" />
+
 
 
 Ao desvendar a história do Studio Ghibli, o final da década de 1980 foi um período de viragem decisivo. Passando da grandiosa "espada e magia" ou da "aventura voadora" vista na obra anterior "O Castelo no Céu" (1986), o Ghibli mudou drasticamente o seu curso para o "cotidiano", abordando as paisagens nativas japonesas ou a vida dos habitantes ocidentais comuns. Neste capítulo, abordaremos três obras: as exibições simultâneas miraculosas de 1988, "Meu Amigo Totoro" e "Túmulo dos Vagalumes", e o grande sucesso de 1989, "O Serviço de Entregas da Kiki", dissecando exaustivamente a revolução temática e técnica que gravaram na história da animação.
@@ -116,6 +113,8 @@ Em contraste, em "Meu Amigo Totoro", Hayao Miyazaki reconstruiu o "Japão lindo,
 
 ## 2. A Revolução na Arte de Fundo: O "Ar e a Umidade" Criados por Kazuo Oga e Nizo Yamamoto
 
+<img src="/images/ghibli/となりのトトロ.jpg" alt="となりのトトロ" style="width: 50%;" />
+
 A capacidade de persuasão avassaladora que as obras do Ghibli possuem deve-se não só à atuação dos personagens, mas de modo muito expressivo, à força da arte de fundo que se espalha atrás deles. Neste período, a arte de fundo do Studio Ghibli estava atingindo o seu ponto alto.
 
 ### 2-1. A Atmosfera Úmida da "Floresta do Totoro" Desenhada por Kazuo Oga
@@ -124,6 +123,8 @@ As conquistas de Kazuo Oga, selecionado como diretor de arte de "Meu Amigo Totor
 Especialmente, a arte de fundo na cena onde Satsuki e Mei encontram Totoro num ponto de ônibus chuvoso, é de se perder o fôlego. A textura do asfalto molhado, a profundidade da floresta do santuário na escuridão, a camada de ar criada pela iluminação pública. A arte de Oga não é uma mera "cópia da paisagem"; é sim uma mágica que visualiza "informações invisíveis" como a temperatura, a umidade, e o vento que ali sopra.
 
 ### 2-2. O Anseio pelo Ocidente e o Realismo Arquitetônico
+
+<img src="/images/ghibli/魔女の宅急便.jpg" alt="魔女の宅急便" style="width: 50%;" />
 Do outro lado, a cidade de Koriko, onde se passa "O Serviço de Entregas da Kiki", é uma cidade fictícia que funde elementos de várias cidades europeias, como Estocolmo e a Ilha de Gotland (Visby) na Suécia, e também Lisboa e Paris. A arte de fundo aqui tinha uma direção oposta à de "Totoro", que retratava as paisagens nativas japonesas.
 
 Edifícios europeus de pedra, fileiras de telhados e ladeiras que levam ao mar. Para ilustrar estes pontos com convicção, a equipe de arte do Ghibli conduziu uma intensa busca de locações e estudo das estruturas arquitetônicas. Para uma única textura de pedra, o nível do desgaste e o índice de reflexão da luz do sol foram calculados e traduzidos na coloração que apareceria melhor como fundo de animação. Esta capacidade artística que pintou a imagem do "anseio pelo Ocidente" não como mera fantasia vazia, mas como num local espacial onde pessoas verdadeiramente residem e trabalham, é notavelmente espantosa.
@@ -166,10 +167,6 @@ Durante o período de 1988 a 1989, o Studio Ghibli percorreu todo e qualquer lim
 As três obras, "Meu Amigo Totoro", "Túmulo dos Vagalumes" e "O Serviço de Entregas da Kiki", não são uma mera lista de grandes filmes. Elas são o monumento histórico que documenta o momento mais efervescente e doloroso da eclosão da animação, onde este meio de expressão se liberta de ser apenas um entretenimento para crianças e se transforma numa "Arte Total" que retrata as angústias estruturais da sociedade e o profundo abismo do espírito humano.
 # Capítulo 3: El anhelo por el vuelo y el romance adulto: El pináculo del realismo en Porco Rosso y Susurros del corazón
 
-<div style="text-align: center;">
-<img src="紅の豚.jpg" alt="紅の豚" style="width: 50%;" />
-<img src="耳をすませば.jpg" alt="耳をすませば" style="width: 50%;" />
-</div>
 
 
 Al observar la historia de Studio Ghibli, *Porco Rosso* (1992) y *Susurros del corazón* (1995), estrenadas a principios y mediados de la década de 1990, pueden parecer a primera vista obras situadas en polos opuestos. Mientras que la primera es una fantasía ambientada en el mar Adriático que describe las batallas y la melancolía de un cazarrecompensas piloto de hidroaviones transformado en cerdo por una maldición, la segunda es un drama coral juvenil ambientado en el moderno Tama New Town, que describe el inocente primer amor de dos estudiantes de secundaria y sus conflictos sobre su futuro.
@@ -177,6 +174,8 @@ Al observar la historia de Studio Ghibli, *Porco Rosso* (1992) y *Susurros del c
 Sin embargo, lo que subyace en estas dos obras es el insaciable afán investigador de Studio Ghibli, o más bien, de creadores excepcionales como Hayao Miyazaki y Yoshifumi Kondo, que buscaron llevar al límite el "realismo (sensación de realidad)" utilizando la animación como medio de expresión. Y en la base de todo esto existe un profundo anhelo por el "vuelo": ya sea el vuelo físico en el cielo o el salto espiritual para superar los propios límites. En este capítulo, exploraremos profundamente desde perspectivas tanto históricas como técnicas cómo estas dos obras ocupan un lugar único en la historia de la animación y qué hitos temáticos y técnicos lograron.
 
 ## 1. *Porco Rosso*: El pináculo de la aerodinámica y la elegía de una era perdida
+
+<img src="/images/ghibli/紅の豚.jpg" alt="紅の豚" style="width: 50%;" />
 
 *Porco Rosso* (título original en italiano) tiene unos orígenes singulares: originalmente se planeó como un cortometraje para ser proyectado en los vuelos de Japan Airlines, pero terminó convirtiéndose en un largometraje ensombrecido por la dura realidad de la Guerra de los Balcanes. Esta obra tiene una textura extremadamente personal, creada por Hayao Miyazaki para sí mismo, como "una película para hombres de mediana edad cuyos cerebros se han vuelto tofu debido al cansancio".
 
@@ -216,6 +215,8 @@ La razón por la que *Porco Rosso* cautiva los corazones de tantos adultos es po
 Como simboliza la canción "Le Temps des cerises" (El tiempo de las cerezas) cantada por Gina, famosa como una canción que llora la caída de la Comuna de París, esta película está impregnada de una profunda nostalgia por los buenos tiempos pasados, una juventud inalcanzable y pérdidas irreversibles. La madura representación del romance entre Porco y Gina, con una distancia inquebrantable entre ellos que nunca llega a cruzarse, ocupa un lugar singular entre las obras de Ghibli. Porco utiliza su "maldición" como excusa, escapando en parte del afecto de Gina y de participar en la sociedad real. Detrás de su eslogan, "Así es como se ve lo genial", se esconde la dolorosa historia de "autoaceptación de un hombre de mediana edad", la soledad de ser un mártir por su propia estética y la aceptación de sí mismo a medida que se vuelve obsoleto.
 
 ## 2. *Susurros del corazón*: El doloroso realismo de la adolescencia y la magia del espacio
+
+<img src="/images/ghibli/耳をすませば.jpg" alt="耳をすませば" style="width: 50%;" />
 
 *Susurros del corazón*, estrenada en 1995, es una película monumental producida, con guion y guiones gráficos de Hayao Miyazaki, y fue la única obra dirigida por Yoshifumi Kondo, un animador clave en Studio Ghibli. Basada en el manga shojo homónimo de Aoi Hiiragi, en manos de Miyazaki y Kondo, esta obra trascendió los límites de una simple historia de amor para convertirse en un retrato realista de la adolescencia tambaleante por las ansiedades sobre el futuro, el talento y la autorrealización.
 
@@ -266,9 +267,8 @@ Así como Porco lucha para proteger la libertad del cielo, Shizuku también toma
 
 # Capítulo 4: Ecología y la imaginación mítica (La princesa Mononoke)
 
-<div style="text-align: center;">
-<img src="もののけ姫.jpg" alt="もののけ姫" style="width: 50%;" />
-</div>
+<img src="/images/ghibli/もののけ姫.jpg" alt="もののけ姫" style="width: 50%;" />
+
 
 
 Estrenada en 1997, *La princesa Mononoke* fue un hito que representó una clara línea divisoria en la carrera de Studio Ghibli y el director Hayao Miyazaki. Esta obra trascendió el marco de una simple película de animación, causando un impacto cultural e industrial tan masivo que reescribió la propia historia del cine japonés. En este capítulo, desentrañaremos con sumo detalle las múltiples capas de sus temas —la deconstrucción de la historia medieval japonesa, la fase no dualista del bien y el mal, y la amalgama de los gráficos por computadora (CG) y la animación en celuloide tradicional, que constituyó un punto de inflexión técnico.
@@ -338,10 +338,8 @@ Además, el ciclo de vida por el que las plantas brotan instantáneamente alrede
 *La princesa Mononoke* representa el extremo norte artístico del Studio Ghibli. A pesar de estar profundamente enraizada en el sustrato histórico de la Edad Media de Japón, los problemas de ecología y el no dualismo entre el bien y el mal analizados en la película se vuelven cada vez más actuales en la sociedad global de hoy. Además, la estética visual en la que los dibujos a mano y el entorno digital logran una milagrosa conjunción equilibrada exhibe una perfección inigualable en los anales de la animación de entonces y de ahora. En el capítulo subsiguiente, "Capítulo 5: La magia de lo cotidiano y la nostalgia (*El viaje de Chihiro*)", examinaremos un nuevo giro argumental para Ghibli que nos apartará de los aspectos de escala mítica de Mononoke hacia la exploración más íntima del paisaje psicológico de una chica moderna.
 # Capítulo 5: La transición digital y la aclamación mundial (El viaje de Chihiro, Haru en el reino de los gatos)
 
-<div style="text-align: center;">
-<img src="千と千尋の神隠し.jpg" alt="千と千尋の神隠し" style="width: 50%;" />
-<img src="猫の恩返し.jpg" alt="猫の恩返し" style="width: 50%;" />
-</div>
+<img src="/images/ghibli/千と千尋の神隠し.jpg" alt="千と千尋の神隠し" style="width: 50%;" />
+
 
 
 En la historia de Studio Ghibli, principios de la década del 2000 fue la época que marcó un punto de inflexión radical y de mayor intensidad desde el punto de vista técnico, expresivo y comercial. En este capítulo, desglosaremos a fondo, desde la óptica de un profesional, cómo la transición desde la animación en celuloide a un entorno completamente digital empujó el universo visual de las obras de Ghibli hacia territorios inexplorados. También veremos cómo sus frutos, *El viaje de Chihiro* (2001), y el peldaño para la siguiente generación, *Haru en el reino de los gatos* (2002), cosecharon elogios internacionales y generaron un impacto cultural que desbordó las fronteras de Japón.
@@ -401,6 +399,8 @@ Incluso en su país de origen, Japón, su influencia social fue enorme. La cifra
 
 ## 6. *Haru en el reino de los gatos* y el nombramiento de directores de la próxima generación: La diversificación de Ghibli y la estabilización del sistema digital
 
+<img src="/images/ghibli/猫の恩返し.jpg" alt="猫の恩返し" style="width: 50%;" />
+
 Inmediatamente después del frenesí histórico provocado por *El viaje de Chihiro*, en 2002, se estrenó *Haru en el reino de los gatos* (El regreso del gato), dirigida por Hiroyuki Morita. Esta obra se posiciona como una obra de longitud media (con un tiempo de ejecución de 75 minutos) con una naturaleza tipo *spin-off*, siendo una historia escrita por la protagonista de *Susurros del corazón*, Shizuku Tsukishima, y que posee un origen único, habiendo comenzado en su fase de planificación como un "proyecto de gatos" para un parque de atracciones.
 
 Asignar a un director joven o externo distinto a los dos inmensos gigantes con su abrumador carisma, Hayao Miyazaki e Isao Takahata, e intentar diversificar la línea de producción del estudio era un desafío vital pero siempre de extrema dificultad para Ghibli. *Haru en el reino de los gatos* encarna una forma ágil y de pies ligeros de crear obras, un logro que fue posible únicamente porque el sistema de producción completamente digital había madurado técnicamente y se había afianzado firmemente en las venas del estudio.
@@ -419,10 +419,6 @@ Desde el arrollador o innegable sentido de identidad artística expuestos abisma
 
 # Capítulo 6: El mecanismo de la magia, el amor y la lucha contra la guerra (El increíble castillo vagabundo, Cuentos de Terramar)
 
-<div style="text-align: center;">
-<img src="ハウルの動く城.jpg" alt="ハウルの動く城" style="width: 50%;" />
-<img src="ゲド戦記.png" alt="ゲド戦記" style="width: 50%;" />
-</div>
 
 
 ## Introducción: El amanecer de una nueva era para Ghibli y un mundo que se tambalea
@@ -434,6 +430,8 @@ Paralelo de esto y en conjunción en su entorno o del propio seno directivo mism
 ---
 
 ## *El increíble castillo vagabundo*: El pináculo del Steampunk y un grito antibelicista
+
+<img src="/images/ghibli/ハウルの動く城.jpg" alt="ハウルの動く城" style="width: 50%;" />
 
 Aunque se basa en la novela literaria juvenil de fantasía "Howl's Moving Castle" o a "El mago Howl y el demonio de fuego" escrita a por la inglesa escritora Diana Wynne Jones, y donde el cineasta en verdad y por cuenta de y por Hayao Miyazaki vertería con potente peso el propio cuño inyectado a los caudales del distintivo autor, a fin o de tal suerte reconstruyendo y concibiendo sobre esa trama sus propias raíces muy distanciadas para las puestas e integradas frente las escritas. Tratando con lo anterior así, la creación donde a un universo donde se fusiona y funde con aparatos mecánicos conviviendo integrados por magia; encarnar o concebir por marco o gran epicentro un vasto cuento o drama colosal a epopeya para enamorados pero sin obviar las duras punzadas como un implacable filme y clamor opuesto o en repulso por denuncias hacia o de las atrocidades del belicismo bélico y en y contra su postura frente lo de la de todas guerras del militarismo.
 
@@ -478,6 +476,8 @@ Esta expresión de "fluctuación de edad" es la culminación del retrato psicol�
 ---
 
 ## *Cuentos de Terramar*: El debut de Goro Miyazaki y la filosofía de las sombras
+
+<img src="/images/ghibli/ゲド戦記.png" alt="ゲド戦記" style="width: 50%;" />
 
 Dos años después de *El increíble castillo vagabundo*, en 2006, Studio Ghibli adaptó al cine de animación la obra cumbre de la literatura fantástica mundial de Ursula K. Le Guin, *Cuentos de Terramar* (Earthsea). Sin embargo, quien se sentó en la silla de director no fue Hayao Miyazaki, sino su hijo mayor, Goro Miyazaki, quien no tenía experiencia previa en producción audiovisual.
 
@@ -547,6 +547,8 @@ En cuanto a la técnica de animación, aunque carece de la abrumadora sensación
 
 ## Conclusión: El costo de la magia y su legado a la siguiente generación
 
+<img src="/images/ghibli/崖の上のポニョ.jpg" alt="崖の上のポニョ" style="width: 50%;" />
+
 *El increíble castillo vagabundo* y *Cuentos de Terramar*. Estas dos obras son símbolos de un período de transición en el que Studio Ghibli alcanzó su madurez, pero al mismo tiempo tuvo que enfrentarse a la ansiedad sobre el futuro.
 
 En *El increíble castillo vagabundo*, Hayao Miyazaki utilizó al límite la magia de la animación, mientras retrataba simultáneamente el terror de usar esa magia (poder) y su profunda desesperación ante la violencia real de la guerra. Y confió la salvación de todo esto a "la aceptación de la vejez" y al "amor incondicional".
@@ -558,10 +560,6 @@ La magia (la animación) no es omnipotente. Sin embargo, el esfuerzo de seguir i
 (Fin del Capítulo 6)
 # Capítulo 7: El origen de la vida y el retorno al dibujo a mano (Ponyo en el acantilado, Arrietty y el mundo de los diminutos)
 
-<div style="text-align: center;">
-<img src="崖の上のポニョ.jpg" alt="崖の上のポニョ" style="width: 50%;" />
-<img src="借りぐらしのアリエッティ.jpg" alt="借りぐらしのアリエッティ" style="width: 50%;" />
-</div>
 
 
 Al contemplar la historia de Studio Ghibli, y por extensión, la historia completa de la animación japonesa, el período que abarca desde finales de la década del 2000 hasta principios de la del 2010 se posiciona como un punto de inflexión tecnológico e ideológico sumamente peculiar. En Hollywood, la animación 3DCG completa representada por Pixar y DreamWorks reinaba como el estándar de facto del mercado cinematográfico, y en el anime televisivo y las películas nacionales japonesas, la digitalización del proceso de producción (el coloreado digital y el dibujo de fondos y mecánica mediante 3DCG) se había establecido por completo como una ola irreversible.
@@ -577,6 +575,8 @@ En la raíz de esta decisión yacía la fuerte crisis personal de Miyazaki de qu
 La característica visual más llamativa de esta obra reside en dejar los trazos ásperos de los lápices de colores y las acuarelas directamente en la pantalla. En la animación tradicional en celuloide, era norma separar claramente los personajes (celuloides) y los fondos artísticos, representando a los celuloides con colores sólidos y uniformes. Sin embargo, en *Ponyo*, las fronteras entre el fondo artístico y los celuloides se difuminan intencionadamente. Los trazos de los lápices de colores y el sangrado de las acuarelas también se aplican a los contornos de los personajes, haciendo que toda la pantalla adquiera una textura orgánica como si todo se hubiera integrado en un solo "libro ilustrado en movimiento" que respira. Esta es una expresión profundamente contundente de autoría que destruye la gramática semiótica de la animación y arroja directamente al espectador a "la sorpresa primitiva de los dibujos en movimiento".
 
 ## 2. La fusión de la dinámica de fluidos y el animismo: La interpretación física de las olas
+
+<img src="/images/ghibli/借りぐらしのアリエッティ.jpg" alt="借りぐらしのアリエッティ" style="width: 50%;" />
 
 El mayor logro que dejó su huella en la historia de la tecnología de la animación en *Ponyo en el acantilado* es la representación del "agua" y las "olas". En la producción de video moderna, la representación del agua es el dominio exclusivo del CG mediante simulaciones de fluidos (sistemas de partículas). Utilizando el cálculo de físicas, es fácil generar un mar fotorrealista indistinguible del real. Sin embargo, Hayao Miyazaki rechazó eso y construyó todo usando la "línea" con lápiz por parte de los animadores.
 
@@ -607,6 +607,8 @@ Las excepcionales habilidades espaciales y la técnica de composición visual (l
 
 ## 5. La brillantez del diseño de sonido y la dinámica de fluidos en la microescala
 
+<img src="/images/ghibli/風立ちぬ.jpg" alt="風立ちぬ" style="width: 50%;" />
+
 El apogeo de las técnicas de animación en esta obra radica en la visualización exquisita de las leyes de la física a microescala (especialmente los cambios en el comportamiento de fluidos y polvo debidos a los efectos de escala). En la dinámica de fluidos, es sabido que cuando la escala de un objeto se vuelve extremadamente pequeña, los efectos de la tensión superficial y las fuerzas viscosas se vuelven dominantes sobre la gravedad (fuerza inercial).
 
 Por ejemplo, recordemos la escena en la que la madre de Arrietty, Homily, vierte té de una tetera. En un mundo de escala humana, el agua fluye suavemente en un chorro lineal por efecto de la gravedad. Sin embargo, en el mundo de los diminutos de 10 cm, la influencia de la tensión superficial del agua es comparativamente enorme. En consecuencia, el té que se sirve se convierte en un gran cúmulo de gotas, que caen con un sonido ahogado ("plop, plop") como una gelatina pesada. La aguda capacidad de observación y el arte del dibujo manual de los animadores han reproducido a la perfección esta particular dinámica de fluidos del micromundo. Del mismo modo, la masiva y pesada solidez de un cubo de azúcar (como una enorme roca) o la rigidez similar a la de una gruesa lona al extraer un pañuelo desechable, son elementos clave que permiten al espectador palpar la verdadera escala de los diminutos.
@@ -621,21 +623,20 @@ No obstante, en esta película, durante las tomas que representan la perspectiva
 
 ## 7. Conclusión: Representando "El resplandor de la vida" desde polos opuestos en escala
 
+<img src="/images/ghibli/かぐや姫の物語.jpg" alt="かぐや姫の物語" style="width: 50%;" />
+
 *Ponyo en el acantilado* y *Arrietty y el mundo de los diminutos*. Por un lado, se representó la feroz energía y el estallido vital de la madre naturaleza, en una perspectiva macro, mediante la frenética soltura del lápiz de color, elaborando cada recuadro completamente dibujado a mano. En el polo opuesto, un plano microscópico ilustró el pausado ritmo de las dinámicas cotidianas y las maravillas de las intrincadas y minúsculas reglas de la física; todo orquestado por el detallado juego perceptivo tanto visual como sonoro y de composición (layout).
 
 Si bien el enfoque de ambas se ubica en sendos polos, la esfera microscópica y la macroscópica, las cimas logradas por Studio Ghibli en este período fueron idénticas en espíritu. Éste corresponde a la apoteosis de la animación en estado puro: oponiéndose a esa infértil frialdad de la pura precisión de lo generado con computadora (CG), el objetivo supremo consiste en inocular en y a través de todas las líneas creadas al rasgo de su pluma ilustradora por mano, al igual de y cada trazo o brochazo expuesto del pintor escénico de fondos; un "aliento vital y ánima" profundamente apegado al animismo. Un gran oleaje arrollador, a igual par como lo hace el colosal espesar y desplome en un simple gota suspendida y caída cargada con té de peso, denotan el grado introspectivo agudo y escudriñador característico de los artífices de Ghibli para dar un lugar común hallado y compartido como es: "el brillante centelleo e incandescencias destellando la vida y sus resplandores". Podemos decir y denominar esta faena artística que, en contestación frente un imparable acorralamiento de automatización de sus sectores y gremios hacia la época contemporánea al campo visual y el ocio audiovisual; se levantó firme en la rebelión e ilustrada como "su obra de resistencia mayor, repleta con encumbrada belleza e impregnadas rebosantes virtudes potentes desde ese grandioso y honroso equipo del corazón creador de autores plásticos con estandartes firmes a un irreductible e imperdurable orgullo".
 # Capítulo 8: La obra culminante de los grandes maestros y el legado para el futuro (El viento se levanta, El cuento de la princesa Kaguya, El chico y la garza)
 
-<div style="text-align: center;">
-<img src="風立ちぬ.jpg" alt="風立ちぬ" style="width: 50%;" />
-<img src="かぐや姫の物語.jpg" alt="かぐや姫の物語" style="width: 50%;" />
-<img src="君たちはどう生きるか.jpg" alt="君たちはどう生きるか" style="width: 50%;" />
-</div>
 
 
 Para desentrañar el último capítulo del medio siglo de historia del colosal Studio Ghibli, es indispensable hablar sobre las obras milagrosas de la década del 2010 al 2020: la última película que dirigió en vida Isao Takahata, *El cuento de la princesa Kaguya* (2013), el punto de llegada donde la historia y lo personal se entrelazan de Hayao Miyazaki en *El viento se levanta* (2013), y finalmente, *El chico y la garza* (2023), que desciende al inframundo del cerebro de Miyazaki. Este capítulo examinará detalladamente estas tres obras fundamentales que cristalizan el medio siglo de trayectorias creativas de los dos grandes genios.
 
 ## 1. *El viento se levanta* y *El cuento de la princesa Kaguya*: El milagro del estreno en el mismo año y los polos opuestos de expresión
+
+<img src="/images/ghibli/君たちはどう生きるか.jpg" alt="君たちはどう生きるか" style="width: 50%;" />
 
 En el año 2013 se produjo un incidente histórico para la animación japonesa, casi comparable a un milagro: Hayao Miyazaki e Isao Takahata estrenaron obras de largometraje en el mismo año. Curiosamente, en *El viento se levanta*, Miyazaki apostó por el "extremo norte del realismo y el diseño histórico", basándose en su amada fascinación por la maquinaria; mientras que en *El cuento de la princesa Kaguya*, Takahata abrazó un "cuento clásico (El cortador de bambú)" y probó el límite de la "expresión en boceto", un estilo en donde las líneas crudas parecían correr directamente sobre el lienzo. La aproximación artística y el contraste autoral invertido exhibidos por los fundadores de Ghibli en la etapa de su retiro y obras culmen, resultó asombrosamente conmovedora y abrumadora.
 

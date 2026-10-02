@@ -10,10 +10,6 @@ image: "eyecatch.jpg"
 
 # Kapitel 1: Gründung und frühe Meisterwerke (Nausicaä aus dem Tal der Winde, Das Schloss im Himmel)
 
-<div style="text-align: center;">
-<img src="風の谷のナウシカ.jpg" alt="風の谷のナウシカ" style="width: 50%;" />
-<img src="天空の城ラピュタ.png" alt="天空の城ラピュタ" style="width: 50%;" />
-</div>
 
 
 ## 1.1 Eine Singularität in der Animationsgeschichte, die Geburt von Studio Ghibli
@@ -58,6 +54,8 @@ Die für Miyazakis Werke unverzichtbaren "Flugszenen" profitieren maximal von di
 
 ## 1.4 "Nausicaä aus dem Tal der Winde" (1984): Ein Meilenstein als Vorgeschichte und die Tiefe der Ökologie
 
+<img src="/images/ghibli/風の谷のナウシカ.jpg" alt="風の谷のナウシカ" style="width: 50%;" />
+
 Der 1984 erschienene Film "Nausicaä aus dem Tal der Winde" ist offiziell ein Werk, das von "Topcraft" vor der Gründung von Studio Ghibli produziert wurde, aber es wurde mit der Aufstellung von Hayao Miyazaki als Regisseur und Isao Takahata als Produzent erstellt und wird im Wesentlichen als "Werk Null" oder "Erstes Werk" positioniert, das die Richtung der zukünftigen Ghibli-Werke bestimmte.
 
 Dieses Werk basiert auf dem gleichnamigen Manga, den Hayao Miyazaki selbst in der monatlichen Zeitschrift "Animage" als Serie veröffentlichte, aber die Filmversion rekonstruiert dessen Anfangsteil und schließt ihn als eigenständige Geschichte ab. Die größte Errungenschaft, die "Nausicaä" in der Geschichte der Animation hinterlassen hat, ist, dass es die extrem gewichtigen Science-Fiction-Themen wie "Umweltprobleme (Ökologie)", "die Würde des Lebens" und "die Torheit der Menschheit" innerhalb des Rahmens der Unterhaltung und mit überwältigender visueller Schönheit vollständig dargestellt hat.
@@ -69,6 +67,8 @@ Bei der Diskussion von "Nausicaä" aus technologischer Sicht darf der Ausdruck r
 Auch die Gestaltung der Heldin Nausicaä war innovativ. Sie ist nicht einfach "ein Mädchen, das beschützt werden muss", sondern eine Kriegerin, die selbst das Möwe fliegt, Gewehre abfeuert und Schwerter schwingt, während sie gleichzeitig eine mütterliche Präsenz mit tiefer Zuneigung zu allem Leben ist. Dieses komplexe Charakterbild, das Stärke und Freundlichkeit, Wut und Trauer vereint, wurde zum Höhepunkt und Ursprung des Bildes der weiblichen Heldin nicht nur in nachfolgenden Ghibli-Werken, sondern auch in der modernen Fiktion.
 
 ## 1.5 Die Gründung von Studio Ghibli und "Das Schloss im Himmel" (1986): Das ultimative Abenteuer-Action-Spektakel
+
+<img src="/images/ghibli/天空の城ラピュタ.png" alt="天空の城ラピュタ" style="width: 50%;" />
 
 Nach dem Erfolg von "Nausicaä" wurde 1985 mit den Gewinnen als Kapital offiziell das "Studio Ghibli" gegründet. Sein einziger Gründungszweck war es, "weiterhin hochwertige abendfüllende Kinofilmanimationen zu produzieren". Ghibli wurde als unabhängige Basis geboren, um eine kompromisslose Qualität zu verfolgen und sich deutlich von der Massenproduktion minderer Qualität von Fernsehanimationen abzugrenzen.
 
@@ -91,11 +91,8 @@ Diese beiden Werke haben die technischen und ausdrucksstarken Standards in weite
 
 # Kapitel 2: Die Kreuzung von Alltag und Außergewöhnlichem —— Die Welt von "Mein Nachbar Totoro", "Die letzten Glühwürmchen" und "Kikis kleiner Lieferservice"
 
-<div style="text-align: center;">
-<img src="となりのトトロ.jpg" alt="となりのトトロ" style="width: 50%;" />
-<img src="火垂るの墓.jpg" alt="火垂るの墓" style="width: 50%;" />
-<img src="魔女の宅急便.jpg" alt="魔女の宅急便" style="width: 50%;" />
-</div>
+<img src="/images/ghibli/火垂るの墓.jpg" alt="火垂るの墓" style="width: 50%;" />
+
 
 
 Bei der Entschlüsselung der Geschichte von Studio Ghibli war die zweite Hälfte der 1980er Jahre eine Zeit, die zu einem entscheidenden Wendepunkt wurde. Abkehr von den epischen "Schwertern und Magie" oder "fliegenden Abenteuer-Action-Spektakeln", wie sie im vorherigen Werk "Das Schloss im Himmel" (1986) dargestellt wurden, lenkte Ghibli stark in Richtung des "Alltäglichen" wie den ursprünglichen Landschaften Japans oder dem Leben der gewöhnlichen Menschen im Westen. In diesem Kapitel werden wir uns drei Werke ansehen – "Mein Nachbar Totoro" und "Die letzten Glühwürmchen", die 1988 eine wundersame gleichzeitige Veröffentlichung erreichten, sowie den Blockbuster "Kikis kleiner Lieferservice" von 1989 – und gründlich sezieren, welche technischen und thematischen Revolutionen diese in der Geschichte der Animation hinterlassen haben.
@@ -122,6 +119,8 @@ Die überwältigende Überzeugungskraft der Ghibli-Werke ist in großem Maße ni
 
 ### 2-1. Die feuchte Atmosphäre in "Totoros Wald", gezeichnet von Kazuo Oga
 
+<img src="/images/ghibli/となりのトトロ.jpg" alt="となりのトトロ" style="width: 50%;" />
+
 Es ist keine Übertreibung zu sagen, dass die Leistung von Kazuo Oga, der als Art Director für "Mein Nachbar Totoro" ausgewählt wurde, die Geschichte der japanischen Animationskunst veränderte. Die von Oga gezeichnete Natur nutzt die Eigenschaften von Plakatfarben in höchstem Maße aus. Obwohl er undurchsichtige Plakatfarben anstelle von transparenten Aquarellfarben verwendete, drückte er durch die exquisite Menge an Wasser und Pinselstrichen sogar die einzigartige "Feuchtigkeit" des japanischen Klimas, den "erstickenden Geruch von Gras" und sogar die "Temperatur des durch die Bäume fallenden Sonnenlichts" aus.
 
 Insbesondere die Hintergrundkunst der Szene, in der Satsuki und Mei an einer regnerischen Bushaltestelle auf Totoro treffen, ist ein Meisterwerk. Die Textur des regennassen Asphalts, die Tiefe des in der Dunkelheit versinkenden Schutzwaldes, die von elektrischem Licht erzeugten Luftschichten. Ogas Kunst war nicht einfach "die Nachahmung von Landschaften", sondern eine Magie, die "unsichtbare Informationen" wie den wehenden Wind, die Temperatur und die Feuchtigkeit visualisierte.
@@ -133,6 +132,8 @@ Auf der anderen Seite ist die Stadt Koriko, die der Schauplatz von "Kikis kleine
 Europäische Steingebäude, Reihen von Ziegeldächern und abfallende Straßen, die zum Meer führen. Um diese überzeugend zu zeichnen, führte das Kunstpersonal von Ghibli gründliche Location-Scoutings und studierte architektonische Strukturen. Selbst bei der Textur eines einzigen Steins wurde der Grad der Verwitterung und das Reflexionsvermögen des Sonnenlichts berechnet und in Farben übersetzt, die als Animationshintergründe am schönsten aussahen. Die Kraft der Kunst, die diese "Sehnsucht nach dem Westen" nicht in bloßer Fantasie enden lässt, sondern sie als einen Raum darstellt, in dem Menschen tatsächlich leben und arbeiten, ist erstaunlich.
 
 ## 3. Das zeitgenössische Thema in "Kikis kleiner Lieferservice": "Arbeit und Flaute"
+
+<img src="/images/ghibli/魔女の宅急便.jpg" alt="魔女の宅急便" style="width: 50%;" />
 
 "Kikis kleiner Lieferservice" zog bei seiner Veröffentlichung begeisterte Unterstützung von vielen jungen Menschen, insbesondere berufstätigen Frauen, auf sich. Der Grund dafür ist, dass dieses Werk, während es oberflächlich den Anschein einer Fantasie einer "Coming-of-Age-Geschichte eines Hexenmädchens" trug, im Kern ein extrem zeitgenössisches und universelles echtes Drama rund um "Arbeit und Talent (Flaute)" war.
 
@@ -177,10 +178,8 @@ Die drei Werke „Mein Nachbar Totoro“, „Die letzten Glühwürmchen“ und �
 
 # Kapitel 3: Sehnsucht nach dem Fliegen und die Romantik der Erwachsenen – Der Höhepunkt des Realismus in „Porco Rosso“ und „Stimme des Herzens“
 
-<div style="text-align: center;">
-<img src="紅の豚.jpg" alt="紅の豚" style="width: 50%;" />
-<img src="耳をすませば.jpg" alt="耳をすませば" style="width: 50%;" />
-</div>
+<img src="/images/ghibli/紅の豚.jpg" alt="紅の豚" style="width: 50%;" />
+
 
 
 Betrachtet man die Geschichte von Studio Ghibli, so scheinen „Porco Rosso“ (1992) und „Stimme des Herzens“ (1995), die in der ersten Hälfte bis Mitte der 1990er Jahre veröffentlicht wurden, auf den ersten Blick zwei völlig entgegengesetzte Werke zu sein. Während Ersteres eine Fantasie ist, die in der Adria spielt und den Kampf und die Melancholie eines fliegenden Kopfgeldjägers darstellt, der durch einen Fluch in ein Schwein verwandelt wurde, ist Letzteres ein Jugend-Ensembledrama, das in der modernen Tama New Town spielt und die unschuldige Liebe und die Konflikte über den zukünftigen Weg von Mittelschülern schildert.
@@ -221,6 +220,8 @@ Porcos berühmtes Zitat „Lieber ein Schwein als ein Faschist“ ist nicht nur 
 In der zweiten Hälfte des Films spiegelt die Szene, in der sich Porco heimlich im Kino mit seinem ehemaligen Waffenbruder Ferrarin (jetzt Major der faschistischen Luftwaffe) trifft, den politischen Hintergrund des Werkes stark wider. Ferrarin murmelt: „Wir müssen jetzt für so idiotische Sponsoren wie den Staat oder die Nation fliegen.“ Hier wird unerbittlich der Prozess dargestellt, wie die reine Freude am Fliegen zu einer staatlichen Ideologie oder einem Kriegswerkzeug mutiert. Der Grund, warum Porco zu einem Schwein wurde, wird nicht explizit genannt, aber es fungiert als tiefe Verzweiflung über eine absurde Welt, in der sich Menschen gegenseitig umbringen, als Abwehrmechanismus, um sich von einer Gesellschaft zu entfremden, die den Konformitätsdruck erhöht, oder als Ausdruck des Paradoxons: „Solange man eine menschliche Gestalt hat, kann man die menschliche Würde nicht wahren.“
 
 ### 1.3 „Ein Schwein, das nicht fliegt, ist nur ein gewöhnliches Schwein“ – Die Romantik, die Frustration und der Fluch eines Mannes mittleren Alters
+
+<img src="/images/ghibli/耳をすませば.jpg" alt="耳をすませば" style="width: 50%;" />
 
 Der Grund, warum „Porco Rosso“ die Herzen vieler Erwachsener in seinen Bann zieht, liegt darin, dass dieses Werk eine traurige Elegie auf das „Verlorene“ ist. Porco trägt ein starkes Gefühl des Verlustes und Überlebensschuld (Survivor Guilt) gegenüber seinen Kameraden in sich, die im Ersten Weltkrieg gefallen sind (die Szene mit den Illusionen der Flugzeuge, die zu einer Wolkenebene aufsteigen, ist eine berühmte Szene, die in die Filmgeschichte eingegangen ist).
 
@@ -269,6 +270,8 @@ Dieser Film endet jedoch nicht als bloße Traumgeschichte. Nachdem Shizuku den B
 
 ## 3. Fazit: Flugzeuge und Geigen, die Geschichten der jeweiligen „Handwerker“
 
+<img src="/images/ghibli/もののけ姫.jpg" alt="もののけ姫" style="width: 50%;" />
+
 „Porco Rosso“ und „Stimme des Herzens“. Ein Schwein mittleren Alters, das durch den Himmel über der Adria fliegt, und eine Mittelschülerin, die auf einem Fahrrad die Hänge von Tama New Town hinauffährt. Diese beiden Geschichten, die auf den ersten Blick keinerlei Berührungspunkte zu haben scheinen, sind durch die Achse des „Respekts für das Handwerkertum“ fest miteinander verbunden.
 
 Fio und die Arbeiterinnen der Firma Piccolo, die Porcos geliebtes Flugzeug perfekt reparieren und tunen. Und Seiji, der hart für seine Ausbildung als Geigenbauer in Cremona arbeitet, und der Besitzer des Earth Shops, der weiterhin antike Uhren repariert. Ghibli-Werke haben durchweg ein unübertroffenes Loblied auf die „Handwerker (Artisanen)“ gesungen, die Dinge mit ihren eigenen Händen erschaffen und ihre Fähigkeiten weiter verfeinern.
@@ -280,9 +283,6 @@ So wie Porco kämpft, um die Freiheit des Himmels zu verteidigen, ergreift auch 
 
 # Kapitel 4: Ökologie und mythologische Vorstellungskraft (Prinzessin Mononoke)
 
-<div style="text-align: center;">
-<img src="もののけ姫.jpg" alt="もののけ姫" style="width: 50%;" />
-</div>
 
 
 „Prinzessin Mononoke“, veröffentlicht 1997, ist ein monumentaler Prototyp, der zu einem klaren Wendepunkt in der Karriere des Studios Ghibli und des Regisseurs Hayao Miyazaki wurde. Dieses Werk sprengte den Rahmen eines bloßen Animationsfilms und hatte eine so enorme kulturelle und industrielle Wirkung, dass es die Geschichte des japanischen Films neu schrieb. In diesem Kapitel werden wir die vielschichtigen Themen dieses Werkes – die Dekonstruktion der japanischen Geschichte des Mittelalters, die non-dualistische Phase von Gut und Böse und die Verschmelzung von Computergrafik (CG) und traditioneller Cel-Animation als technologischen Wendepunkt – bis ins äußerste Detail aufschlüsseln.
@@ -348,6 +348,8 @@ Auch der Lebenszyklus, bei dem Pflanzen zu Füßen des Shishigami augenblicklich
 
 ## Fazit
 
+<img src="/images/ghibli/千と千尋の神隠し.jpg" alt="千と千尋の神隠し" style="width: 50%;" />
+
 „Prinzessin Mononoke“ ist ein Höhepunkt, den Studio Ghibli erreicht hat. Während es tief im historischen Boden des japanischen Mittelalters verwurzelt ist, gewinnen die dort thematisierten ökologischen Fragen und der Nondualismus von Gut und Böse in der modernen globalen Gesellschaft zunehmend an aktueller Bedeutung. Die visuelle Schönheit, in der sich Handzeichnung und Digitaltechnik in einer wunderbaren Balance vereinen, weist zudem eine beispiellose Perfektion auf. Im nächsten Kapitel, „Kapitel 5: Magie des Alltags und Nostalgie (Chihiros Reise ins Zauberland)“, werden wir die neue Wende Ghiblis betrachten, bei der man sich von diesem mythischen Maßstab abwendet und in die seelische Landschaft eines modernen Mädchens eintaucht.
 
 
@@ -355,10 +357,6 @@ Auch der Lebenszyklus, bei dem Pflanzen zu Füßen des Shishigami augenblicklich
 
 # Kapitel 5: Digitaler Übergang und weltweite Anerkennung (Chihiros Reise ins Zauberland, Das Königreich der Katzen)
 
-<div style="text-align: center;">
-<img src="千と千尋の神隠し.jpg" alt="千と千尋の神隠し" style="width: 50%;" />
-<img src="猫の恩返し.jpg" alt="猫の恩返し" style="width: 50%;" />
-</div>
 
 
 In der Geschichte von Studio Ghibli waren die frühen 2000er Jahre die Ära des dramatischsten technologischen, expressiven und kommerziellen Wendepunkts. In diesem Kapitel wird aus der Perspektive eines Profis im Detail beschrieben, wie der Übergang von der Cel-Animation zu einer vollständig digitalen Umgebung die visuelle Darstellung von Ghibli-Werken in nie dagewesene Sphären ausdehnte und welche weltweite Anerkennung und kulturellen Einfluss die daraus resultierenden Werke „Chihiros Reise ins Zauberland“ (2001) und das als Wegbereiter für die nächste Generation dienende „Das Königreich der Katzen“ (2002) über die Grenzen Japans hinaus brachten.
@@ -418,6 +416,8 @@ Auch innerhalb Japans war sein gesellschaftlicher Einfluss enorm. Die Einspieler
 
 ## 6. „Das Königreich der Katzen“ und die Ernennung von Regisseuren der nächsten Generation: Diversifizierung von Ghibli und Stabilisierung des digitalen Systems
 
+<img src="/images/ghibli/猫の恩返し.jpg" alt="猫の恩返し" style="width: 50%;" />
+
 Unmittelbar nach der historischen großen Begeisterung für „Chihiros Reise ins Zauberland“ wurde 2002 der Film „Das Königreich der Katzen“ unter der Regie von Hiroyuki Morita veröffentlicht. Bei diesem Werk handelt es sich um einen mittellangen Film (Spieldauer 75 Minuten), der als Spin-off positioniert ist und die von Shizuku Tsukishima, der Protagonistin aus „Stimme des Herzens“, geschriebene Geschichte darstellt. In der Planungsphase begann es als ein einzigartiges „Katzen-Projekt“ für einen Freizeitpark.
 
 Der Versuch, junge und externe Regisseure anstelle der beiden Giganten Hayao Miyazaki und Isao Takahata, die eine überwältigende Ausstrahlung besaßen, zu engagieren und die Produktionslinie des Studios zu diversifizieren, war für Ghibli immer eine wichtige und schwierige Aufgabe. „Das Königreich der Katzen“ verkörpert ein leichtes und agiles Filmschaffen, das nur deshalb möglich wurde, weil das vollständig digitale Produktionssystem technisch im Studio etabliert war.
@@ -439,13 +439,11 @@ Die überwältigende Autorschaft und die Intensität der Welt, mit der "Chihiros
 
 # Kapitel 6: Antikrieg und Liebe, der Mechanismus der Magie (Das wandelnde Schloss, Die Chroniken von Erdsee)
 
-<div style="text-align: center;">
-<img src="ハウルの動く城.jpg" alt="ハウルの動く城" style="width: 50%;" />
-<img src="ゲド戦記.png" alt="ゲド戦記" style="width: 50%;" />
-</div>
 
 
 ## Einleitung: Der Beginn einer neuen Ghibli-Ära und eine ins Wanken geratene Welt
+
+<img src="/images/ghibli/ハウルの動く城.jpg" alt="ハウルの動く城" style="width: 50%;" />
 
 Mitte der 2000er Jahre stand Studio Ghibli an einem großen Wendepunkt. Hayao Miyazaki hatte mit "Chihiros Reise ins Zauberland" ein Monument in der Geschichte des japanischen Kinos geschaffen, das einen Oscar gewann und seinen weltweiten Ruf festigte. Unter seinen Füßen geriet die reale Welt jedoch ins Wanken. Der "Krieg gegen den Terror", der auf die Terroranschläge von 2001 folgte, und der 2003 ausgebrochene Irakkrieg. Während die Welt in eine Spirale aus Spaltung und Gewalt gerissen wurde, richtete sich Miyazakis Blick zunehmend direkter auf "den Krieg und die Dummheit der Menschheit".
 
@@ -498,6 +496,8 @@ Diese Darstellung des "Alterswechsels" ist der Höhepunkt der psychologischen Be
 ---
 
 ## "Die Chroniken von Erdsee": Goro Miyazakis Debüt und die Philosophie des Schattens
+
+<img src="/images/ghibli/ゲド戦記.png" alt="ゲド戦記" style="width: 50%;" />
 
 Zwei Jahre nach "Das wandelnde Schloss", im Jahr 2006, adaptierte Studio Ghibli Ursula K. Le Guins weltberühmte Fantasy-Literatur "Erdsee" als Animationsfilm. Auf dem Regiestuhl saß jedoch nicht Hayao Miyazaki, sondern sein ältester Sohn Goro Miyazaki, der zuvor keinerlei Erfahrung in der Filmproduktion hatte.
 
@@ -556,10 +556,6 @@ Magie (Animation) ist nicht allmächtig. Doch gerade das Bestreben, ihre Grenzen
 
 # Kapitel 7: Der Ursprung des Lebens und die Rückkehr zur handgezeichneten Animation (Ponyo - Das große Abenteuer am Meer, Arrietty – Die wundersame Welt der Borger)
 
-<div style="text-align: center;">
-<img src="崖の上のポニョ.jpg" alt="崖の上のポニョ" style="width: 50%;" />
-<img src="借りぐらしのアリエッティ.jpg" alt="借りぐらしのアリエッティ" style="width: 50%;" />
-</div>
 
 
 Betrachtet man die Geschichte von Studio Ghibli und letztlich die gesamte Geschichte der japanischen Animation aus der Vogelperspektive, so positioniert sich die Zeit von den späten 2000ern bis zu den frühen 2010er Jahren als ein äußerst außergewöhnlicher technischer und ideologischer Wendepunkt. In Hollywood dominierten vollständig 3DCG-animierte Filme, repräsentiert von Pixar und DreamWorks, als De-facto-Standard den Kinomarkt. Auch in den heimischen japanischen TV-Anime und Kinoproduktionen hatte sich die Digitalisierung des Produktionsprozesses (wie digitales Bemalen und das Zeichnen von Hintergründen sowie Mechanik durch 3DCG) als irreversible Welle vollständig etabliert.
@@ -567,6 +563,8 @@ Betrachtet man die Geschichte von Studio Ghibli und letztlich die gesamte Geschi
 In diesem goldenen Zeitalter der Digitalisierung, das von "Effizienz und berechneter Genauigkeit" beherrscht wurde, steuerten Hayao Miyazaki und Studio Ghibli in eine völlig entgegengesetzte Richtung. Das waren "die kompromisslose Rückkehr zur handgezeichneten Animation" und "das Streben nach einer primitiven Darstellung des Lebens". In diesem Kapitel werden wir tief in die technischen und ideologischen Abgründe eindringen, wie Ghibli "den Atem des Lebens in der Animation" auf Zelluloid bannte. Dabei vergleichen wir den Wahnsinn der makroskopischen Flüssigkeitsanimation in Hayao Miyazakis "Ponyo - Das große Abenteuer am Meer" (2008) mit der Neudefinition von mikroskopischer Perspektivverschiebung und Größenverhältnissen im Regiedebüt von Hiromasa Yonebayashi, "Arrietty – Die wundersame Welt der Borger" (2010).
 
 ## 1. "Ponyo - Das große Abenteuer am Meer": Der Wahnsinn der CG-Ablehnung und die Manifestation eines "bewegten Bilderbuchs"
+
+<img src="/images/ghibli/崖の上のポニョ.jpg" alt="崖の上のポニョ" style="width: 50%;" />
 
 Studio Ghibli hat digitale Technologie nie abgelehnt. Ob die Darstellung des Dämonengottes und die Einführung digitaler Malerei in "Prinzessin Mononoke" (1997), die räumliche Verarbeitung in "Chihiros Reise ins Zauberland" (2001) oder die komplexe, durch 3DCG angetriebene Darstellung des Schlosses in "Das wandelnde Schloss" (2004) – man hat stets neueste Technologien geschickt in den Kontext der Cel-Animation integriert. Doch bei "Ponyo - Das große Abenteuer am Meer" traf Hayao Miyazaki die bewusste und dem Zeitgeist zuwiderlaufende Entscheidung, den Einsatz von 3DCG radikal zu verbannen.
 
@@ -599,6 +597,8 @@ Diese transparente und wunderschöne überflutete Stadt ist eine Metapher für d
 
 ## 4. "Arrietty – Die wundersame Welt der Borger": Die Perspektive von Hiromasa Yonebayashi, dem Magier der Maßstäbe
 
+<img src="/images/ghibli/借りぐらしのアリエッティ.jpg" alt="借りぐらしのアリエッティ" style="width: 50%;" />
+
 Wenn "Ponyo" die Explosion der Lebenskraft in einem überwältigenden makroskopischen Maßstab darstellte, so ist das zwei Jahre später veröffentlichte Werk "Arrietty – Die wundersame Welt der Borger" ein Meisterwerk, das Physik und visuelle Ausdrucksformen in einer konsequent mikroskopischen Welt erforscht. Dieses Regiedebüt von Hiromasa Yonebayashi, der als brillanter Animator bei Ghibli gilt und unter dem Spitznamen "Maro" bekannt ist, basiert auf der Kinderliteratur von Mary Norton. Es lässt das Setting der "10 cm großen kleinen Menschen" jedoch nicht bei einem bloßen Fantasy-Gimmick bewenden, sondern erhebt es durch strikte Berechnungen der Maßstäbe und präzise perspektivische Verschiebungen zu einem überwältigenden Realismus.
 
 Die herausragende räumliche Wahrnehmung und Layout-Technik (Bildkomposition) von Regisseur Yonebayashi verwandeln ein riesiges japanisches Haus, in dem wir Menschen alltäglich leben, für kleine Menschen wie Arrietty dramatisch in "steile Klippen", "dichte Wälder" und ein "riesiges, gefährliches Labyrinth". Einen Nagel als Trittstufe nutzen, um eine gewaltige Wand zu erklimmen, die Klebekraft von doppelseitigem Klebeband verwenden, um sich in die Höhe zu bewegen, und eine Stecknadel als Schwert zur Selbstverteidigung an der Hüfte tragen. Diese Aktionsdarstellungen sind nicht einfach nur verkleinerte menschliche Bewegungen. Sie sind als äußerst physikalisch überzeugende Animationen konstruiert, basierend auf der Neudefinition von "Schwerkraft", "Textur" und "Muskelkraft" im Maßstab von 10 cm.
@@ -628,11 +628,8 @@ Obwohl die Ausrichtungen der Herangehensweisen an entgegengesetzten Polen von Ma
 
 # Kapitel 8: Die Zusammenfassung der Meister und das Vermächtnis für die Zukunft
 
-<div style="text-align: center;">
-<img src="風立ちぬ.jpg" alt="風立ちぬ" style="width: 50%;" />
-<img src="かぐや姫の物語.jpg" alt="かぐや姫の物語" style="width: 50%;" />
-<img src="君たちはどう生きるか.jpg" alt="君たちはどう生きるか" style="width: 50%;" />
-</div>
+<img src="/images/ghibli/風立ちぬ.jpg" alt="風立ちぬ" style="width: 50%;" />
+
 
 
 Studio Ghibli, das in der japanischen Animationsgeschichte und als globaler Wegbereiter an der Spitze stand, trat ab den 2010er Jahren in eine einzigartige Phase ein, die als "Zusammenfassung" der beiden Meister und Gründer Hayao Miyazaki und Isao Takahata bezeichnet werden kann. Über den Rahmen bloßer Unterhaltung hinaus entstand eine Reihe selbstreferenzieller Werke, die das Karma und die Philosophie der Schöpfer selbst sowie das Ende ihres eigenen Lebens in den Blick nahmen. In diesem Kapitel sezieren wir drei Meisterwerke – "Wie der Wind sich hebt" (2013), "Die Legende der Prinzessin Kaguya" (2013) und "Der Junge und der Reiher" (2023) –, die die Höhepunkte des Studio Ghibli darstellen und gleichzeitig "Zerstörung und Wiedergeburt" in sich bergen. Wir werden detailliert auf ihr Testament an die Animationsindustrie und ihre Vermächtnisse an die nächste Generation aus technologischer und philosophischer Perspektive eingehen.
@@ -645,6 +642,8 @@ Studio Ghibli, das in der japanischen Animationsgeschichte und als globaler Wegb
 Hayao Miyazaki ist ein leidenschaftlicher Waffen- und Flugzeugfanatiker, aber gleichzeitig ein standhafter Pazifist. Dieser Widerspruch – "die Liebe zu wunderschönen Waffen und der Hass auf den Krieg, in dem sie als Werkzeuge des Tötens eingesetzt werden" – wurde bereits in "Porco Rosso" und "Das wandelnde Schloss" immer wieder thematisiert. In "Wie der Wind sich hebt" hüllte er dies jedoch nicht mehr in den Mantel der Fantasy. Jiros reines technisches Verlangen, "einfach ein wunderschönes Flugzeug bauen zu wollen", mündet letztendlich im Bau des Zero Fighter, einem "verfluchten Traum", der zahllose junge Männer in den Tod schickt und Japan in Schutt und Asche legt. Der italienische Flugzeugkonstrukteur Caproni, der in einem Traumraum mit Jiro spricht, fragt: "Eine Welt mit Pyramiden oder eine Welt ohne – für welche entscheidest du dich?" und erklärt: "Die Lebensdauer für das kreative Leben beträgt zehn Jahre." Dies ist eine tiefe Einsicht in das Leuchten des Talents und seinen grausamen Preis. Es ist zugleich ein schmerzhaftes Bekenntnis von Miyazaki selbst darüber, wie sehr er sein eigenes Leben und das seiner Mitmenschen geopfert hat, um die "wunderschöne Fiktion" der Animation zu erschaffen.
 
 ### Ein experimenteller Ansatz für "Wind" und "Sound" in der Animationstechnik
+
+<img src="/images/ghibli/かぐや姫の物語.jpg" alt="かぐや姫の物語" style="width: 50%;" />
 Aus technologischer Sicht ist "Wie der Wind sich hebt" die Bilanz der von Ghibli kultivierten Darstellung von "Wind" und "Fliegen". Von der Traumsequenz am Anfang über den Flug des Papierfliegers in Karuizawa bis hin zum Testflug – die Animationstechnik, durch die die Luftströmungen sichtbar zu werden scheinen, ist schlichtweg atemberaubend. Die Detailbesessenheit, mit der die Textur des Duraluminiums des Flugzeugs und jede einzelne Niete dargestellt wird, ist der Inbegriff der Liebe zur Mechanik.
 Darüber hinaus ist das kühne Experiment beim Sounddesign besonders erwähnenswert. In diesem Film wurden viele Soundeffekte (SE), wie das Geräusch der Flugzeugpropeller, der Auspuff einer Dampflokomotive und sogar das Grollen der Erde beim Großen Kanto-Erdbeben, durch "menschliche Stimmen" erzeugt. Durch diesen animistischen Ansatz gewinnen Maschinen und Naturkatastrophen eine unheimliche Lebendigkeit, als wären sie gigantische Lebewesen mit eigenem Willen. Auch die Besetzung des Protagonisten Jiro mit Hideaki Anno, dem Regisseur von "Neon Genesis Evangelion", ist symbolisch. Annos ungeschliffene Stimme als Nicht-Professioneller, bar jeder emotionalen Schwankung, verkörperte Jiros "Wahnsinn aus purer Reinheit", der von der Technik angetrieben wird, auf hervorragende Weise. Die schönen, aber grausamen Tage mit seiner an Tuberkulose erkrankten Frau Naoko unterstreichen Miyazakis Realismus, der die Grenze zwischen Egoismus und Liebe verschwimmen lässt.
 
@@ -657,6 +656,8 @@ Die Mainstream-Cel-Animation in Japan basiert auf einer Methode, bei der von gle
 Darüber hinaus wählte Regisseur Takahata das "Prescoring"-Format. Hierbei wird zuerst die schauspielerische Leistung der Synchronsprecher aufgenommen, und basierend auf den Intonationen, der Atmung, sowie den Gesichtsausdrücken und Gesten während der Aufnahme (die auf Video aufgezeichnet wurden), zeichnen die Animatoren die Bilder. Dadurch synchronisierte sich die Realität der Stimmen von Aki Asakura (Prinzessin Kaguya) und Kengo Kora (Sutemaru) perfekt mit den feinen Muskelbewegungen und den emotionalen Nuancen der Charaktere, wodurch eine überwältigende Präsenz erreicht wurde. Dies war eine scharfe Antithese zur modernen Animation, die dazu neigt, sich auf standardisierte Charakterdarstellungen zu verlassen.
 
 ### Die Ästhetik der Leere und die Explosion der Emotionen – Der Schock der Sprint-Sequenz
+
+<img src="/images/ghibli/君たちはどう生きるか.jpg" alt="君たちはどう生きるか" style="width: 50%;" />
 Das wichtigste technische und inszenatorische Merkmal von "Die Legende der Prinzessin Kaguya" ist die "Leere (die Ästhetik des Nicht-Zeichnens)". Die Ränder des Bildes sind wie bei einem Aquarell verschwommen, und selbst der Hintergrund wird oft überhaupt nicht vollständig gezeichnet. Indem Takahata "Raum für die Vorstellungskraft des Publikums" ließ, forderte er die Zuschauer paradoxerweise dazu auf, die Tiefe der Welt, die sich hinter der Leinwand erstreckt, selbst zu vervollständigen und aktiv am Werk teilzuhaben.
 Dieser Ansatz entfaltet seine verheerendste Wirkung in der Sequenz, in der Prinzessin Kaguya vom Bankett im Palast flieht und in die Berge stürmt. Als ihre Wut, ihre Verzweiflung und ihr Widerstand gegen ihre Fesseln ihren Höhepunkt erreichen, verwandeln sich die sorgfältigen Linien plötzlich in raue, tuscheartige Pinselstriche, und der Hintergrund zerfällt auf Skizzenniveau, als würde er von einem reißenden Strom aus Emotionen weggespült. Diese Szene, in der Linien verwildern und Farben spritzen, ist der Moment, in dem die Animation von "gezeichneten Symbolen" zur "Visualisierung reiner Emotionen" wird – ein wundersames Meisterwerk, das in die Weltfilmgeschichte eingegangen ist. Auch der Kontrast zur kalten, buddhistischen Musik bei der Darstellung der Hauptstadt des Mondes verdeutlicht Takahatas Sicht auf Leben und Tod, die die "Unreinheit" der Erde und die "Freude am Leben" bejaht.
 

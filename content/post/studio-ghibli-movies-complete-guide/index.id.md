@@ -10,10 +10,6 @@ image: "eyecatch.jpg"
 
 # Bab 1: Pendirian dan Mahakarya Awal (Nausicaä of the Valley of the Wind, Castle in the Sky)
 
-<div style="text-align: center;">
-<img src="風の谷のナウシカ.jpg" alt="風の谷のナウシカ" style="width: 50%;" />
-<img src="天空の城ラピュタ.png" alt="天空の城ラピュタ" style="width: 50%;" />
-</div>
 
 
 ## 1.1 Titik Singular dalam Sejarah Animasi, Lahirnya Studio Ghibli
@@ -58,6 +54,8 @@ Kamera multiplane adalah sebuah alat di mana beberapa lapisan (tingkat) kaca dil
 
 ## 1.4 "Nausicaä of the Valley of the Wind" (1984): Pencapaian Monumental sebagai Prasejarah dan Kedalaman Ekologi
 
+<img src="/images/ghibli/風の谷のナウシカ.jpg" alt="風の谷のナウシカ" style="width: 50%;" />
+
 Dirilis pada tahun 1984, "Nausicaä of the Valley of the Wind" secara resmi merupakan karya produksi "Topcraft" sebelum berdirinya Studio Ghibli. Namun, dibuat dengan jajaran sutradara Hayao Miyazaki dan produser Isao Takahata, karya ini secara substansial diposisikan sebagai "Karya ke-0" atau "Karya ke-1" yang menentukan arah Ghibli di kemudian hari.
 
 Karya ini diangkat dari manga berjudul sama yang diserialkan oleh Hayao Miyazaki sendiri di majalah bulanan "Animage", namun versi filmnya merekonstruksi bagian awal dan menyelesaikannya sebagai cerita mandiri. Pencapaian terbesar "Nausicaä" dalam sejarah animasi adalah bahwa film ini berhasil menggambarkan tema fiksi ilmiah yang sangat berat, yaitu "masalah lingkungan (ekologi)", "martabat kehidupan", dan "kebodohan umat manusia", dalam kerangka hiburan dan dengan keindahan visual yang luar biasa.
@@ -69,6 +67,8 @@ Hal yang tak tergantikan saat membicarakan "Nausicaä" dari sisi teknis adalah p
 Desain tokoh utama (heroine) Nausicaä juga inovatif. Ia bukanlah "gadis yang harus dilindungi" belaka, melainkan seorang prajurit yang mengendarai Mehve, menembakkan senjata api, dan mengayunkan pedang sendiri, sekaligus sosok keibuan yang memiliki kasih sayang mendalam terhadap semua kehidupan. Sosok karakter yang kompleks ini, yang memiliki kekuatan dan kelembutan, kemarahan dan kesedihan, menjadi salah satu titik puncak sekaligus titik awal citra pahlawan wanita tidak hanya dalam karya-karya Ghibli berikutnya, tetapi juga dalam fiksi modern.
 
 ## 1.5 Pendirian Studio Ghibli dan "Castle in the Sky" (1986): Aksi Petualangan Puncak
+
+<img src="/images/ghibli/天空の城ラピュタ.png" alt="天空の城ラピュタ" style="width: 50%;" />
 
 Menyusul kesuksesan "Nausicaä", dengan keuntungan sebagai modal, "Studio Ghibli" secara resmi didirikan pada tahun 1985. Tujuan pendiriannya hanya satu: "untuk terus memproduksi animasi panjang bioskop berkualitas tinggi". Berbeda dengan produksi massal yang asal-asalan dari animasi TV, Ghibli lahir sebagai basis independen untuk mengejar kualitas tanpa kompromi.
 
@@ -91,11 +91,8 @@ Kedua karya ini mengangkat standar teknis dan ekspresif ke tingkat yang jauh leb
 
 # Bab 2: Persimpangan Sehari-hari dan Luar Biasa——Dunia yang Digambarkan oleh "My Neighbor Totoro", "Grave of the Fireflies", dan "Kiki's Delivery Service"
 
-<div style="text-align: center;">
-<img src="となりのトトロ.jpg" alt="となりのトトロ" style="width: 50%;" />
-<img src="火垂るの墓.jpg" alt="火垂るの墓" style="width: 50%;" />
-<img src="魔女の宅急便.jpg" alt="魔女の宅急便" style="width: 50%;" />
-</div>
+<img src="/images/ghibli/火垂るの墓.jpg" alt="火垂るの墓" style="width: 50%;" />
+
 
 
 Saat mengurai sejarah Studio Ghibli, paruh kedua tahun 1980-an adalah periode yang menjadi titik balik yang menentukan. Dari aksi "pedang dan sihir" yang megah atau "petualangan terbang" yang digambarkan dalam film sebelumnya "Castle in the Sky" (1986), Ghibli berbalik arah secara drastis ke arah "keseharian", seperti pemandangan asli pedesaan Jepang atau kehidupan masyarakat kota di negara Barat. Dalam bab ini, kita akan membahas 3 film yaitu "My Neighbor Totoro" dan "Grave of the Fireflies" yang secara ajaib ditayangkan bersamaan pada tahun 1988, serta karya hit besar tahun 1989 "Kiki's Delivery Service", dan membedah secara menyeluruh revolusi teknis dan tematik yang ditorehkan film-film ini dalam sejarah animasi.
@@ -119,6 +116,8 @@ Sebaliknya, dalam "My Neighbor Totoro", Hayao Miyazaki merekonstruksi "Jepang in
 Daya persuasi luar biasa yang dimiliki oleh karya Ghibli sangat bergantung tidak hanya pada akting karakternya, melainkan juga kekuatan seni latar belakang yang membentang di belakangnya. Pada masa ini, seni latar belakang Studio Ghibli telah mencapai puncaknya.
 
 ### 2-1. Atmosfer Lembab dari "Hutan Totoro" Karya Kazuo Oga
+
+<img src="/images/ghibli/となりのトトロ.jpg" alt="となりのトトロ" style="width: 50%;" />
 Tidak berlebihan jika dikatakan bahwa kontribusi Kazuo Oga, yang ditunjuk sebagai direktur seni untuk "My Neighbor Totoro", telah mengubah sejarah seni animasi Jepang. Alam yang digambar Oga secara maksimal memanfaatkan karakteristik poster color (cat poster). Walaupun menggunakan poster color yang opak dan bukannya cat air transparan, melalui takaran air dan sentuhan kuas yang pas, ia berhasil mengekspresikan "kelembaban" yang khas dari iklim Jepang, "bau rumput yang menyengat", dan bahkan "suhu cahaya matahari yang menembus dedaunan".
 
 Secara khusus, latar belakang pemandangan saat Satsuki dan Mei bertemu Totoro di halte bus saat hujan sangatlah menakjubkan. Tekstur aspal yang basah oleh hujan, kedalaman hutan kuil pelindung yang tenggelam dalam kegelapan, dan lapisan udara yang diciptakan oleh cahaya lampu jalan. Seni Oga bukanlah sekadar "tiruan lanskap", melainkan keajaiban visualisasi "informasi kasat mata" seperti angin yang berhembus, suhu, dan kelembaban.
@@ -129,6 +128,8 @@ Di sisi lain, kota Koriko yang menjadi latar belakang "Kiki's Delivery Service" 
 Bangunan-bangunan batu khas Eropa, rentetan atap genteng, dan jalan menanjak menuju laut. Untuk menggambar semua ini dengan daya persuasi, para staf seni Ghibli melakukan observasi lokasi (location hunting) dan mempelajari struktur arsitektur dengan sangat rinci. Bahkan untuk satu tekstur batu, mereka menghitung tingkat pelapukan dan tingkat refleksi cahaya matahari, lalu menerjemahkannya ke dalam warna yang terlihat paling indah sebagai latar belakang animasi. Kekuatan seni yang tidak membiarkan "kerinduan akan Barat" ini berakhir sekadar fantasi, melainkan menampilkannya sebagai ruang hidup tempat orang-orang benar-benar hidup dan bekerja di dunia nyata, sangatlah mencengangkan.
 
 ## 3. Tema Modern dalam "Kiki's Delivery Service": "Tenaga Kerja dan Kemerosotan (Slump)"
+
+<img src="/images/ghibli/魔女の宅急便.jpg" alt="魔女の宅急便" style="width: 50%;" />
 
 Saat perilisannya, "Kiki's Delivery Service" mendapat dukungan luar biasa dari banyak pemuda, terutama dari para perempuan pekerja. Alasannya karena film ini, meskipun secara permukaannya berbalut fantasi "kisah pertumbuhan seorang gadis penyihir", pada intinya adalah drama yang sangat nyata dan universal mengenai "kerja dan bakat (kemerosotan)".
 
@@ -170,10 +171,6 @@ Tiga karya yaitu "My Neighbor Totoro", "Grave of the Fireflies", dan "Kiki's Del
 
 # Bab 3: Kerinduan pada Penerbangan dan Romansa Orang Dewasa——Puncak Realisme dalam "Porco Rosso" dan "Whisper of the Heart"
 
-<div style="text-align: center;">
-<img src="紅の豚.jpg" alt="紅の豚" style="width: 50%;" />
-<img src="耳をすませば.jpg" alt="耳をすませば" style="width: 50%;" />
-</div>
 
 
 Melihat kilas balik sejarah Studio Ghibli, film "Porco Rosso" (1992) dan "Whisper of the Heart" (1995) yang dirilis dari awal hingga pertengahan tahun 1990-an mungkin pada pandangan pertama terlihat sebagai film yang bertolak belakang. Yang pertama adalah film fantasi berlatar Laut Adriatik, menggambarkan pertempuran dan kesedihan seorang penerbang bayaran yang berubah menjadi babi akibat sebuah kutukan. Sedangkan yang kedua adalah drama remaja berlatar belakang Tama New Town (Kota Baru Tama) di masa kini, yang menggambarkan kepolosan cinta dan kegelisahan akan masa depan siswa-siswi sekolah menengah pertama.
@@ -181,6 +178,8 @@ Melihat kilas balik sejarah Studio Ghibli, film "Porco Rosso" (1992) dan "Whispe
 Namun, di bawah permukaan dari kedua karya ini, mengalir keinginan pencarian yang tak terpuaskan dari Studio Ghibli, atau lebih tepatnya dari para kreator jenius Hayao Miyazaki dan Yoshifumi Kondo, untuk mengejar batas maksimal dari "realisme (kenyataan)" melalui media animasi. Dan pada dasarnya, terdapat kerinduan yang sangat kuat akan "penerbangan"—terbang secara fisik di angkasa, atau melampaui batas diri dan membuat lompatan spiritual. Dalam bab ini, kita akan menggali lebih dalam dari sisi latar belakang historis dan teori teknis, tentang bagaimana dua karya ini menempati posisi unik dalam sejarah animasi, dan inovasi teknis serta pencapaian tematik apa yang telah berhasil mereka capai.
 
 ## 1. "Porco Rosso"——Puncak Aerodinamika dan Lagu Kesedihan untuk Era yang Hilang
+
+<img src="/images/ghibli/紅の豚.jpg" alt="紅の豚" style="width: 50%;" />
 
 "Porco Rosso" (Judul Asli: Il Porco Rosso) memiliki asal mula yang unik: proyek ini pada awalnya direncanakan sebagai film pendek untuk diputar di dalam penerbangan Japan Airlines, namun berkembang menjadi film layar lebar ketika dibayangi kenyataan kelam akan Perang Yugoslavia. Karya ini memiliki sentuhan yang sangat personal, diciptakan oleh Hayao Miyazaki untuk dirinya sendiri dan sebagai "film untuk para pria paruh baya yang otaknya telah kelelahan dan menjadi seperti tahu".
 
@@ -224,6 +223,8 @@ Seperti yang disimbolkan oleh nyanyian chanson Gina "Waktu Cherry Memerah (Le Te
 "Whisper of the Heart" yang dirilis pada tahun 1995, adalah monumen karya yang naskah cerita, papan cerita, serta produksinya dipegang penuh oleh Hayao Miyazaki, sementara satu-satunya posisi sutradara untuk film durasi layar lebar diberikan kepada Yoshifumi Kondo, seorang animator inti dari Studio Ghibli. Meski berdasarkan adaptasi manga "shoujo" karya Aoi Hiiragi yang berjudul sama, campur tangan Miyazaki dan Kondo telah membawanya lebih dari sekadar kisah romansa konvensional, meraciknya dengan halus menjadi cerminan remaja sejati yang diwarnai penderitaan menuju jenjang ke depan, keraguan, dan kebimbangan mencapai jati diri yang baru mekar.
 
 ### 2.1 Tatapan Yoshifumi Kondo: Esensi Animasi yang Menetap pada Sikap Kehidupan Sehari-hari
+
+<img src="/images/ghibli/耳をすませば.jpg" alt="耳をすませば" style="width: 50%;" />
 
 Daya tarik utama dan pencapaian teknis dari karya ini adalah ketelitian sutradara Yoshifumi Kondo terhadap "akting sehari-hari". Dalam animasi, jauh lebih sulit untuk menggambar gerakan yang nyata dengan penjiwaan dari "tindakan sehari-hari biasa" secara akurat—seperti orang yang sedang berjalan, duduk, menyeduh teh, hingga berlari naik tangga—daripada menampilkan animasi adegan "luar biasa (spektakuler)" yang digerakkan oleh pertempuran sihir dan ledakan robot belaka.
 
@@ -271,6 +272,8 @@ Namun, karya ini tidak berakhir hanya sebagai cerita mimpi belaka. Setelah Shizu
 
 ## 3. Kesimpulan: Pesawat Terbang dan Biola, Kisah Masing-Masing "Perajin"
 
+<img src="/images/ghibli/もののけ姫.jpg" alt="もののけ姫" style="width: 50%;" />
+
 'Porco Rosso' dan 'Whisper of the Heart'. Seekor babi paruh baya yang terbang melintasi langit Laut Adriatik, dan seorang murid sekolah menengah pertama yang mengayuh sepedanya menaiki bukit di Tama New Town. Sekilas dua kisah yang tampaknya tidak memiliki titik temu ini, terhubung kuat oleh poros "penghormatan terhadap sifat pengerajin".
 
 Fio dari Perusahaan Piccolo serta para pekerja wanita yang memperbaiki dan meningkatkan pesawat kesayangan Porco dengan sempurna. Dan juga Seiji yang bekerja keras dalam pelatihan pembuatan biola di Cremona, serta pemilik Chikyuya yang terus memperbaiki jam antik. Karya-karya Ghibli secara konsisten telah menyanyikan pujian tertinggi kepada para "perajin (artisan)" yang menciptakan sesuatu dengan tangan mereka sendiri dan terus mengasah keterampilan mereka.
@@ -282,9 +285,6 @@ Sebagaimana Porco yang berjuang untuk melindungi kebebasan di langit, Shizuku ju
 
 # Bab 4: Ekologi dan Imajinasi Mitologis (Princess Mononoke)
 
-<div style="text-align: center;">
-<img src="もののけ姫.jpg" alt="もののけ姫" style="width: 50%;" />
-</div>
 
 
 'Princess Mononoke', yang dirilis pada tahun 1997, merupakan prototipe monumental yang menjadi batas air (titik balik) yang jelas dalam karier Studio Ghibli dan sutradara Hayao Miyazaki. Karya ini tidak hanya sekadar melampaui batas film animasi, namun juga membawa dampak budaya dan industri yang sangat besar, yang cukup untuk menulis ulang sejarah perfilman Jepang itu sendiri. Dalam bab ini, kita akan mengungkap dengan sangat mendetail tema-tema berlapis yang dimiliki karya ini——dekonstruksi sejarah abad pertengahan Jepang, fase baik-buruk yang non-dualis, serta perpaduan antara CG (Computer Graphics) sebagai titik balik teknologis dengan animasi cel tradisional.
@@ -351,6 +351,8 @@ Selain itu, siklus kehidupan ketika tanaman seketika berkecambah, tumbuh, dan la
 
 ## Penutup
 
+<img src="/images/ghibli/千と千尋の神隠し.jpg" alt="千と千尋の神隠し" style="width: 50%;" />
+
 'Princess Mononoke' adalah salah satu titik puncak yang telah dicapai oleh Studio Ghibli. Sembari menancapkan akarnya dalam-dalam pada tanah sejarah Abad Pertengahan Jepang, masalah ekologi dan non-dualisme tentang baik-buruk yang dikisahkan di dalamnya, mulai membawa makna yang semakin aktual di dalam masyarakat global modern. Ditambah lagi, keindahan visual perpaduan seimbang yang ajaib antara gambaran tangan dan digital ini, membanggakan tingkat kesempurnaan yang tidak ada bandingannya baik sebelumnya maupun sesudahnya. Pada bab berikutnya, "Bab 5: Keajaiban Keseharian dan Nostalgia (Spirited Away)", kita akan membahas titik balik baru Ghibli yang berputar arah dari skala mitologis ini, dan menyelam ke dalam lanskap batin seorang gadis modern.
 
 
@@ -358,10 +360,6 @@ Selain itu, siklus kehidupan ketika tanaman seketika berkecambah, tumbuh, dan la
 
 # Bab 5: Transisi Digital dan Evaluasi Global (Spirited Away, The Cat Returns)
 
-<div style="text-align: center;">
-<img src="千と千尋の神隠し.jpg" alt="千と千尋の神隠し" style="width: 50%;" />
-<img src="猫の恩返し.jpg" alt="猫の恩返し" style="width: 50%;" />
-</div>
 
 
 Dalam sejarah Studio Ghibli, awal tahun 2000-an merupakan era titik balik paling dramatis secara teknis, ekspresif, maupun komersial. Pada bab ini, kita akan merinci semaksimal mungkin dari perspektif profesional; bagaimana transisi dari animasi cel ke lingkungan digital penuh memperluas ekspresi visual dari karya-karya Ghibli ke wilayah yang belum pernah ada sebelumnya, dan bagaimana perwujudannya dalam 'Spirited Away' (2001) beserta batu loncatan bagi generasi penerus, yaitu 'The Cat Returns' (2002), melampaui batasan domestik Jepang dan membawa evaluasi global serta dampak budaya yang mendalam.
@@ -411,6 +409,8 @@ graph TD
 
 ## 5. Meraih Pengakuan Secara Mendunia (Global): Kejutan Akibat Memenangi Penghargaan Academy Award dan Menciptakan Rekor Pemasukan Tertinggi
 
+<img src="/images/ghibli/猫の恩返し.jpg" alt="猫の恩返し" style="width: 50%;" />
+
 Berbekal berbagai kedalaman tema yang saling bertautan dan perpaduan estetika visual mutlak dari pewarnaan serba digital, 'Spirited Away' dengan mudah melampaui kerangka media animasi dan mengukir namanya dalam sejarah perfilman dunia.
 
 Di Festival Film Internasional Berlin ke-52 pada tahun 2002, menyingkirkan sederet mahakarya film live-action, film ini memenangkan penghargaan tertinggi, "Golden Bear", yang menjadikannya film animasi kedua dalam sejarah (setelah 'Cinderella' sekitar setengah abad yang lalu) yang meraihnya. Prestasi ini adalah momen bersejarah di mana animasi tidak lagi hanya dianggap sebagai hiburan untuk anak-anak, melainkan diakui secara global sebagai karya seni tingkat tinggi. Selanjutnya pada tahun 2003, film ini memenangkan penghargaan Film Fitur Animasi Terbaik di Academy Awards ke-75. Dalam industri film Amerika di mana karya 3DCG dari Disney dan Pixar mulai menjadi arus utama, signifikansi dari animasi gambaran tangan 2D Jepang (termasuk pemrosesan digital) yang berdiri di puncak tidak dapat diukur.
@@ -442,13 +442,11 @@ Kekuatan karakter pembuat (kreator) mutlak dan kedalaman pandangan dunia yang di
 
 # Bab 6: Anti-Perang dan Cinta, Mekanisme Sihir (Howl's Moving Castle, Tales from Earthsea)
 
-<div style="text-align: center;">
-<img src="ハウルの動く城.jpg" alt="ハウルの動く城" style="width: 50%;" />
-<img src="ゲド戦記.png" alt="ゲド戦記" style="width: 50%;" />
-</div>
 
 
 ## Pendahuluan: Fajar Era Baru Ghibli dan Dunia yang Berguncang
+
+<img src="/images/ghibli/ハウルの動く城.jpg" alt="ハウルの動く城" style="width: 50%;" />
 
 Di pertengahan tahun 2000-an, Studio Ghibli menyambut datangnya sebuah titik balik yang besar. Sutradara Hayao Miyazaki mendirikan monumen di dalam sejarah film Jepang melalui 'Spirited Away', memenangkan Academy Award, dan mengukuhkan reputasi globalnya. Namun, di bawah pijakannya, dunia nyata sedang berguncang hebat. Perang melawan teror yang berkelanjutan pasca serangan teroris beruntun di tahun 2001, serta Perang Irak yang meletus di tahun 2003. Di saat dunia mulai ditelan oleh rantai perpecahan dan kekerasan, pandangan Miyazaki pun secara lebih langsung tertuju pada "perang dan kebodohan manusia".
 
@@ -500,6 +498,8 @@ Representasi "transisi usia" ini adalah puncak dari penggambaran psikologis yang
 ---
 
 ## "Tales from Earthsea": Debut Goro Miyazaki dan Filosofi Bayangan
+
+<img src="/images/ghibli/ゲド戦記.png" alt="ゲド戦記" style="width: 50%;" />
 
 Pada tahun 2006, dua tahun setelah "Howl's Moving Castle", Studio Ghibli mengadaptasi literatur fantasi terkenal dunia karya Ursula K. Le Guin, "Earthsea", menjadi film animasi. Namun, yang duduk di kursi sutradara bukanlah Hayao Miyazaki, melainkan putra sulungnya, Goro Miyazaki, yang sampai saat itu sama sekali tidak memiliki pengalaman dalam produksi film.
 
@@ -558,10 +558,6 @@ Keajaiban (animasi) bukanlah maha kuasa. Namun, justru usaha untuk tetap melukis
 
 # Bab 7: Akar Kehidupan dan Kembalinya Animasi Gambar Tangan (Ponyo on the Cliff by the Sea, The Secret World of Arrietty)
 
-<div style="text-align: center;">
-<img src="崖の上のポニョ.jpg" alt="崖の上のポニョ" style="width: 50%;" />
-<img src="借りぐらしのアリエッティ.jpg" alt="借りぐらしのアリエッティ" style="width: 50%;" />
-</div>
 
 
 Ketika kita melihat kembali sejarah Studio Ghibli, dan secara perluasan, sejarah industri animasi Jepang secara keseluruhan, periode dari akhir 2000-an hingga awal 2010-an diposisikan sebagai titik balik teknologi dan ideologis yang sangat unik. Di Hollywood, animasi 3DCG penuh yang diwakili oleh Pixar dan DreamWorks berkuasa sebagai standar de facto dari pasar film, dan bahkan di anime televisi domestik Jepang dan rilis teater, digitalisasi proses produksi (lukisan digital dan penggunaan 3DCG untuk latar belakang dan mekanik) telah sepenuhnya terbentuk sebagai gelombang yang tidak dapat diubah.
@@ -569,6 +565,8 @@ Ketika kita melihat kembali sejarah Studio Ghibli, dan secara perluasan, sejarah
 Di era keemasan digital yang didominasi oleh "efisiensi dan akurasi yang diperhitungkan" seperti itu, Hayao Miyazaki dan Studio Ghibli mengambil langkah drastis menuju arah yang benar-benar berlawanan. Yaitu "kembali secara menyeluruh ke animasi gambar tangan" dan "mengejar ekspresi kehidupan yang primitif". Bab ini akan membandingkan kegilaan animasi fluida makro dalam "Ponyo on the Cliff by the Sea" (2008) yang disutradarai oleh Hayao Miyazaki, dengan redefinisi pergeseran sudut pandang mikro dan skala dalam karya debut sutradara Hiromasa Yonebayashi, "The Secret World of Arrietty" (2010), sambil menggali kedalaman teknologi dan ideologi tentang bagaimana Ghibli mencetak "nafas kehidupan dalam animasi" ke dalam film.
 
 ## 1. "Ponyo on the Cliff by the Sea": Kegilaan Penolakan CG dan Munculnya "Buku Bergambar yang Bergerak"
+
+<img src="/images/ghibli/崖の上のポニョ.jpg" alt="崖の上のポニョ" style="width: 50%;" />
 
 Studio Ghibli tidak pernah benar-benar menolak teknologi digital. Mereka selalu dengan cerdik memasukkan teknologi terbaru ke dalam konteks animasi cel, seperti penggambaran Dewa Tatari dan pengenalan lukisan digital dalam "Princess Mononoke" (1997), pemrosesan spasial dalam "Spirited Away" (2001), dan penggerak kastil yang rumit menggunakan 3DCG dalam "Howl's Moving Castle" (2004). Namun, dalam "Ponyo on the Cliff by the Sea", Hayao Miyazaki membuat keputusan yang bertentangan dengan perkembangan zaman, dengan secara sengaja dan menyeluruh menolak penggunaan 3DCG.
 
@@ -601,6 +599,8 @@ Kota bawah laut yang transparan dan indah ini adalah metafora dari laut primordi
 
 ## 4. "The Secret World of Arrietty": Sudut Pandang Sang Pesulap Skala, Hiromasa Yonebayashi
 
+<img src="/images/ghibli/借りぐらしのアリエッティ.jpg" alt="借りぐらしのアリエッティ" style="width: 50%;" />
+
 Jika "Ponyo" menggambarkan ledakan kekuatan hidup pada skala makro yang sangat besar, "The Secret World of Arrietty" yang dirilis dua tahun kemudian adalah sebuah mahakarya yang secara menyeluruh mengeksplorasi fisika dan ekspresi visual di dunia mikro. Karya debut sutradara Hiromasa Yonebayashi, seorang animator andalan Ghibli yang dikenal dengan nama panggilan "Maro", didasarkan pada literatur anak-anak karya Mary Norton. Namun, film ini tidak menjadikan konsep "manusia mini setinggi 10 cm" sekadar sebagai gimik fantasi belaka, melainkan mengangkatnya menjadi realisme luar biasa melalui perhitungan yang akurat atas skala dan pergerakan sudut pandang yang cermat.
 
 Kemampuan persepsi spasial yang luar biasa dan teknik tata letak (komposisi layar) dari sutradara Yonebayashi secara dramatis mengubah rumah bergaya Jepang berukuran raksasa yang biasa dihuni manusia, menjadi "tebing curam", "hutan lebat", dan "labirin yang luas dan berbahaya" bagi Arrietty dan kaum manusia mini lainnya. Mereka memanjat tembok besar dengan menggunakan paku sebagai pijakan, berpindah ke tempat tinggi dengan memanfaatkan daya rekat selotip bolak-balik, dan mengenakan jarum pentul di pinggang mereka sebagai pedang untuk perlindungan diri. Penggambaran adegan aksi ini bukan sekadar mengecilkan gerakan manusia biasa. Itu dibangun sebagai animasi yang sangat meyakinkan secara fisika, yang berdasarkan pada redefinisi "gravitasi", "tekstur", dan "kekuatan otot" pada skala 10 cm.
@@ -630,11 +630,8 @@ Meskipun arah pendekatan mereka berada pada dua ujung ekstrem yaitu makro dan mi
 
 # Bab 8: Mahakarya Para Maestro dan Warisan untuk Masa Depan
 
-<div style="text-align: center;">
-<img src="風立ちぬ.jpg" alt="風立ちぬ" style="width: 50%;" />
-<img src="かぐや姫の物語.jpg" alt="かぐや姫の物語" style="width: 50%;" />
-<img src="君たちはどう生きるか.jpg" alt="君たちはどう生きるか" style="width: 50%;" />
-</div>
+<img src="/images/ghibli/風立ちぬ.jpg" alt="風立ちぬ" style="width: 50%;" />
+
 
 
 Sejak tahun 2010-an, Studio Ghibli, yang telah lama berkuasa sebagai ikon pencetak sejarah dalam animasi Jepang maupun global, memasuki fase unik yang dapat disebut sebagai "puncak karya" (mahakarya) dari dua sosok penciptanya: Hayao Miyazaki dan Isao Takahata. Melampaui batas-batas hiburan, seri karya yang merujuk pada diri sendiri (self-referential) ini dilahirkan, dengan mengamati karma para kreator itu sendiri, filosofi, serta merenungkan akhir hayat. Bab ini akan membedah tiga mahakarya: "The Wind Rises" (2013), "The Tale of the Princess Kaguya" (2013), dan "The Boy and the Heron" (2023). Ketiga film ini bukan hanya merupakan titik puncak bagi Studio Ghibli, tetapi juga merangkum "kehancuran dan kelahiran kembali". Secara rinci, kita akan menjelajahi pesan-pesan terakhir yang mereka tinggalkan untuk industri animasi, serta transmisi ke generasi berikutnya dari perspektif teknologi dan pemikiran secara mendalam.
@@ -647,6 +644,8 @@ Sejak tahun 2010-an, Studio Ghibli, yang telah lama berkuasa sebagai ikon pencet
 Hayao Miyazaki, di samping sebagai pencinta senjata dan pesawat terbang yang fanatik, juga merupakan seorang pendukung perdamaian yang teguh. Kontradiksi ini—"Mencintai senjata yang indah, namun membenci peperangan yang menjadikannya alat pembunuh"—telah diangkat secara berkala dalam film seperti "Porco Rosso" dan "Howl's Moving Castle". Akan tetapi, dalam "The Wind Rises", ia berhenti membungkus pesannya dengan fantasi manis. Hasrat murni Jiro untuk "hanya ingin membuat pesawat yang indah", pada akhirnya membuahkan Zero Fighter, sebuah "mimpi terkutuk" yang mengirim banyak pemuda menuju kematian mereka dan mengubah Jepang menjadi padang abu. Caproni, sang perancang pesawat dari Italia yang berbicara dengan Jiro dalam dunia mimpinya, bertanya "Dunia dengan piramida atau dunia tanpa piramida, mana yang akan kamu pilih?" lalu menambahkan, "Masa hidup dari fase kreatif manusia hanya 10 tahun." Ini bukan sekadar pandangan mendalam tentang cemerlangnya sebuah bakat beserta bayaran kejamnya, melainkan juga pengakuan menyakitkan Miyazaki sendiri—tentang bagaimana dirinya mengorbankan nyawanya dan orang-orang di sekitarnya, semata-mata demi melahirkan "fiksi indah" yang disebut animasi.
 
 ### Pendekatan Eksperimental pada "Angin" dan "Suara" dalam Teknologi Animasi
+
+<img src="/images/ghibli/かぐや姫の物語.jpg" alt="かぐや姫の物語" style="width: 50%;" />
 Dari sudut pandang teknis, "The Wind Rises" merupakan akumulasi tertinggi dari penguasaan Ghibli dalam menyajikan "angin" dan "penerbangan". Mulai dari adegan mimpi di awal film, penerbangan pesawat kertas di Karuizawa, hingga uji coba terbang sungguhan, teknik animasinya membuat aliran udara seakan benar-benar terlihat; satu kata: menakjubkan. Penggambaran obsesif mulai dari kilap logam duralumin pesawat hingga detail setiap paku keling, memancarkan kecintaan ekstrem terhadap dunia mekanik.
 Lebih jauh, hal lain yang patut diapresiasi secara khusus adalah eksperimen berani pada aspek tata suara. Dalam film ini, sebagian besar efek suara (SE)—seperti putaran baling-baling pesawat, embusan kereta uap, hingga getaran tanah saat Gempa Besar Kanto—diperankan langsung oleh "suara manusia". Lewat pendekatan animisme ini, berbagai mesin hingga bencana alam menjelma bagaikan makhluk hidup raksasa yang memiliki kehendaknya sendiri, menghasilkan nuansa realisme yang luar biasa kuat. Pemilihan Hideaki Anno, sutradara "Neon Genesis Evangelion", sebagai pengisi suara Jiro juga sangatlah simbolis. Suara Anno—yang bukan aktor profesional—terdengar datar seakan emosinya terkuras habis, dan sangat pas mencerminkan sosok Jiro: "kegilaan yang murni" karena terpaku sepenuhnya pada teknologi. Kehidupan Jiro yang indah namun kejam dengan istrinya, Naoko, yang menderita tuberkulosis, juga secara cerdas menonjolkan realisme khas Miyazaki, yang mengaburkan batas antara egoisme dan kasih sayang.
 
@@ -659,6 +658,8 @@ Metode utama animasi di Jepang, animasi cel, umumnya menggunakan sistem di mana 
 Lebih lanjut, sutradara Takahata juga menerapkan teknik "Pre-scoring" (Prescoring). Ini adalah metode di mana aktor mengisi suara karakter terlebih dahulu; lalu berdasarkan ritme suara, tarikan napas, hingga mimik wajah dan gerak tubuh aktor saat rekaman (yang direkam menggunakan kamera), barulah animator membuat gambar karakternya. Hasilnya, realisme dari lantunan dialog Aki Asakura (Putri Kaguya) dan Kengo Kora (Sutemaru) tersinkronisasi sempurna dengan detail mikro gerakan otot maupun letupan emosi karakternya, menghasilkan kehadiran (eksistensi) yang amat kuat. Ini menjadi sebuah antitesis tegas terhadap standar animasi modern yang terlalu mengandalkan pendekatan karakter bergaya "simbolik".
 
 ### Estetika Ruang Kosong dan Ledakan Emosi —— Dampak Mengejutkan Sekuens Lari Cepat
+
+<img src="/images/ghibli/君たちはどう生きるか.jpg" alt="君たちはどう生きるか" style="width: 50%;" />
 Karakteristik penyutradaraan dan teknik penceritaan terbesar dari "The Tale of the Princess Kaguya" adalah "ruang kosong (estetika apa yang tak tergambar)". Ujung-ujung layar dibuat kabur bak cat air, dan seringkali latar belakang sengaja dibiarkan tidak selesai (kosong). Melalui peninggalan "ruang bagi imajinasi penonton" ini, Takahata justru memaksa pemirsanya untuk secara aktif mengisi kedalaman dunia di balik layar tersebut, mengajak mereka terlibat dalam tontonan yang aktif.
 Dampak terkuat dari metode ini terlihat nyata pada sekuens ketika Putri Kaguya melarikan diri dari pesta perayaan istana, berlari kencang menuju pegunungan. Ketika kemarahan, keputusasaan, dan dorongan untuk melepaskan belenggu mencapai titik nadir, gambaran seni yang begitu halus tiba-tiba beralih menjadi garisan liar layaknya lukisan tinta; sementara latar belakangnya ikut sirna menjadi bentuk sketsa, ibarat tertelan pusaran amarah. Adegan di mana garis saling bertabrakan dan cat saling menciprat ini menandai momen ketika animasi berevolusi dari sekadar "simbol yang digambar" menjadi "visualisasi emosi murni", menciptakan sebuah mahakarya tiada tara yang pantas diukir dalam sejarah sinema dunia. Musik latar bergaya sakral Buddha di akhir film ketika Ibu Kota Bulan digambarkan, juga menciptakan warna kontras yang sangat indah; ia semakin menegaskan pandangan hidup dan mati seorang Takahata—yang justru memeluk "kotoran" maupun "keceriaan kehidupan" dalam keseharian di Bumi.
 

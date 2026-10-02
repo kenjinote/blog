@@ -53,11 +53,15 @@ Avec ce film, Ghibli a opéré une transition complète des celluloïds traditio
 
 ## L'innovation d'Isao Takahata et le sommet du réalisme : « Le Conte de la princesse Kaguya »
 
+<img src="/images/ghibli/風の谷のナウシカ.jpg" alt="風の谷のナウシカ" style="width: 50%;" />
+
 Tandis qu'Hayao Miyazaki dépeint le monde à travers le prisme du fantastique, Isao Takahata n'a cessé de mener des expérimentations avant-gardistes, remettant continuellement en question les conventions mêmes de l'animation. *Le Conte de la princesse Kaguya* en constitue l'aboutissement magistral.
 
 Dans ce long-métrage, le choix délibéré de lignes discontinues et de teintes aquarellées diaphanes participe d'une démarche psychologique sophistiquée : inviter l'esprit du spectateur à « compléter » l'image par lui-même. Lors de la célèbre scène de fuite où explose l'énergie cinétique, les arrière-plans esquissés d'un trait vif et rugueux traduisent visuellement une sensation de vitesse et une distorsion de l'espace d'une intensité quasi relativiste. Cette technique expressive, à l'opposé d'un réalisme photographique froid, exploite avec brio les mécanismes de la perception et de la cognition humaines.
 
 ## Transmission vers l'avenir et potentiel infini de l'animation
+
+<img src="/images/ghibli/天空の城ラピュタ.png" alt="天空の城ラピュタ" style="width: 50%;" />
 
 L'œuvre du Studio Ghibli ne se résume pas à un simple divertissement : elle interroge inlassablement les défis environnementaux auxquels l'humanité fait face, nos rapports avec la technologie, ainsi que le sens fondamental du verbe « vivre ». Le passage du celluloïd au numérique, la quête inaltérable de textures organiques et cette constante sincérité face aux tourments de leur époque : tout ce parcours témoigne du potentiel infini de l'animation comme médium d'expression.
 
@@ -74,13 +78,11 @@ image: "eyecatch.jpg"
 
 # Chapitre 1 : Fondation et premiers chefs-d'œuvre (Nausicaä de la Vallée du Vent, Le Château dans le ciel)
 
-<div style="text-align: center;">
-<img src="風の谷のナウシカ.jpg" alt="風の谷のナウシカ" style="width: 50%;" />
-<img src="天空の城ラピュタ.png" alt="天空の城ラピュタ" style="width: 50%;" />
-</div>
 
 
 ## 1.1 Une singularité dans l'histoire de l'animation, la naissance du Studio Ghibli
+
+<img src="/images/ghibli/火垂るの墓.jpg" alt="火垂るの墓" style="width: 50%;" />
 
 Si l'on observe l'industrie de l'animation japonaise, ou plutôt l'histoire de l'animation mondiale dans son ensemble, il est impossible d'ignorer un « événement » majeur survenu au milieu des années 1980. Il s'agit de la création du Studio Ghibli. L'histoire de Ghibli n'est pas simplement celle d'une entreprise ou d'un studio de production, c'est l'histoire même de l'apogée de la technique analogique de l'animation sur celluloïd, et de la fusion miraculeuse entre la « culture populaire » et l'« art » que permet le médium de l'animation. Dans ce chapitre, tout en retraçant les circonstances de la fondation du Studio Ghibli, nous nous pencherons sur ses véritables origines avec *Nausicaä de la Vallée du Vent* (1984) et la première œuvre réalisée sous le nom du Studio Ghibli, *Le Château dans le ciel* (1986). Nous verrons comment Isao Takahata et Hayao Miyazaki, deux génies de l'animation, ont repoussé les limites de cette forme d'expression.
 
@@ -97,6 +99,8 @@ En revanche, le style d'Isao Takahata repose sur une « objectivité » et une �
 C'est cette opposition et cette complémentarité entre le « Miyazaki subjectif et intuitif » et le « Takahata objectif et logique », ces deux talents qui se tempéraient mutuellement et se respectaient profondément tout en formant la colonne vertébrale d'un même studio, qui ont constitué la force motrice principale à l'origine de la prolifique filmographie de Ghibli. Dans les premières œuvres du studio, Takahata a joué le rôle crucial de producteur, maîtrisant les emballements de Miyazaki tout en renforçant la structure narrative de l'œuvre.
 
 ## 1.3 La singularité technologique de l'animation sur celluloïd et la caméra multiplane
+
+<img src="/images/ghibli/となりのトトロ.jpg" alt="となりのトトロ" style="width: 50%;" />
 
 La force extraordinaire du Studio Ghibli ne réside pas seulement dans la profondeur de ses thèmes, mais aussi dans l'immense maîtrise technique qui les soutient. En particulier, la période allant de *Nausicaä* à *Laputa* fut celle où la technique analogique de l'animation sur celluloïd approchait de sa forme la plus aboutie, atteignant presque une sorte de « singularité technologique ».
 
@@ -121,6 +125,8 @@ Une caméra multiplane est un dispositif où plusieurs plaques de verre (ou éta
 Les incontournables « scènes de vol » chères à Miyazaki ont bénéficié au maximum de cette technologie. Par exemple, lorsque l'on observe une mer de nuages s'étendant en contrebas, un aéronef naviguant à travers ceux-ci, et la terre ferme visible à l'arrière-plan, le déplacement de ces différents plans à des vitesses distinctes procure au spectateur une sensation intense de repère spatial et d'immersion, lui donnant véritablement l'impression de voler. De plus, l'utilisation de la technique de « l'éclairage par transparence » (qui consiste à éclairer les celluloïds par en dessous), la création de dégradés subtils à l'aérographe, ainsi que la folie consistant à animer à la main, image par image, la végétation bercée par le vent : tous ces efforts colossaux contribuent à donner l'illusion qu'une véritable brise souffle et que l'air circule au sein de l'image. À une époque où les technologies numériques (CGI) n'existaient pas, ils ont su recréer un espace virtuel plus vrai que nature, en s'appuyant sur la matérialité de la pellicule, des couleurs et sur la magie de la lumière.
 
 ## 1.4 *Nausicaä de la Vallée du Vent* (1984) : un chef-d'œuvre fondateur et les racines de l'écologie
+
+<img src="/images/ghibli/魔女の宅急便.jpg" alt="魔女の宅急便" style="width: 50%;" />
 
 Sorti en 1984, *Nausicaä de la Vallée du Vent* a officiellement été produit par le studio Topcraft avant la fondation de Ghibli. Toutefois, réalisé par Hayao Miyazaki et produit par Isao Takahata, ce film s'est imposé comme l'œuvre « numéro 0 » ou « numéro 1 » fondatrice qui a défini l'orientation future du Studio Ghibli.
 
@@ -152,16 +158,13 @@ Ces deux œuvres ont hissé les standards techniques et artistiques à des nivea
 
 # Chapitre 2 : À la croisée du quotidien et de l'extraordinaire — Les mondes de *Mon voisin Totoro*, *Le Tombeau des lucioles* et *Kiki la petite sorcière*
 
-<div style="text-align: center;">
-<img src="となりのトトロ.jpg" alt="となりのトトロ" style="width: 50%;" />
-<img src="火垂るの墓.jpg" alt="火垂るの墓" style="width: 50%;" />
-<img src="魔女の宅急便.jpg" alt="魔女の宅急便" style="width: 50%;" />
-</div>
 
 
 Si l'on explore l'histoire du Studio Ghibli, la fin des années 1980 marque un tournant décisif. Se détournant des grandes épopées de « cape et d'épée » et des aventures aériennes dépeintes dans *Le Château dans le ciel* (1986), Ghibli opère un virage radical vers le « quotidien », explorant les paysages originels du Japon et la vie ordinaire des Occidentaux. Dans ce chapitre, nous analyserons en profondeur trois œuvres qui ont révolutionné l'histoire de l'animation tant sur le plan technique que thématique : *Mon voisin Totoro* et *Le Tombeau des lucioles*, projetés de façon quasi miraculeuse lors d'une même séance en 1988, ainsi que le grand succès de 1989, *Kiki la petite sorcière*.
 
 ## 1. La folie et le miracle d'une double projection : Hayao Miyazaki et Isao Takahata, deux visions de l'ère Showa
+
+<img src="/images/ghibli/紅の豚.jpg" alt="紅の豚" style="width: 50%;" />
 
 Au printemps 1988, le Japon assiste à un modèle d'exploitation en salles impensable de nos jours : la sortie conjointe de *Mon voisin Totoro* et du *Tombeau des lucioles*. Il ne s'agissait pas d'une simple offre commerciale, mais bien du résultat de la confrontation entre deux immenses talents, Miyazaki et Takahata, cristallisant une forme de « folie et de miracle » au sein de la structure créative de Ghibli.
 
@@ -201,6 +204,8 @@ Au milieu du récit, Kiki perd soudainement ses pouvoirs magiques : elle ne peut
 Ici, Ursula, l'étudiante en art qui peint dans une cabane au cœur de la forêt, joue un rôle crucial. Elle dit à Kiki : « Dans ces moments-là, il ne sert à rien de s'agiter », « Je peins, je peins, je peins sans m'arrêter », « Et si ça ne marche toujours pas, j'arrête de peindre. Je vais me promener, je regarde le paysage, je fais la sieste, je ne fais rien du tout ». Cette réplique exprime la souffrance vécue par les animateurs — y compris Hayao Miyazaki lui-même — et plus largement par toute personne engagée dans une activité créative, tout en proposant le remède même à ce mal.
 
 ### 3-3. La résolution à « voler avec son sang »
+
+<img src="/images/ghibli/耳をすませば.jpg" alt="耳をすませば" style="width: 50%;" />
 En parlant de sa propre peinture, Ursula confie : « Avant, je pouvais peindre sans réfléchir à rien, mais maintenant c'est différent. Je dois peindre ma propre peinture ». Il en va de même pour la magie de Kiki. L'époque insouciante où elle volait instinctivement grâce à son seul talent inné (la magie) est révolue ; elle doit désormais « reconquérir » sa magie par sa propre volonté et ses efforts. Lors du point culminant du film, la scène où Kiki enfourche un balai-brosse et s'envole avec une expression d'effort désespéré n'a plus rien de l'élégance d'un conte de fées. C'est l'image même du professionnel qui se confronte à ses propres limites et exerce sa « technique » avec une détermination féroce, presque jusqu'à en cracher du sang.
 
 ## 4. Structure des thèmes et interrelations
@@ -228,10 +233,6 @@ Les trois œuvres que sont *Mon voisin Totoro*, *Le Tombeau des lucioles* et *Ki
 
 # Chapitre 3 : La fascination pour le vol et le romantisme de l'âge adulte — L'apogée du réalisme dans *Porco Rosso* et *Si tu tends l'oreille*
 
-<div style="text-align: center;">
-<img src="紅の豚.jpg" alt="紅の豚" style="width: 50%;" />
-<img src="耳をすませば.jpg" alt="耳をすませば" style="width: 50%;" />
-</div>
 
 
 Si l'on survole l'histoire du Studio Ghibli, *Porco Rosso* (1992) et *Si tu tends l'oreille* (1995), sortis au début et au milieu des années 1990, peuvent de prime abord sembler diamétralement opposés. Le premier est une œuvre fantastique située dans la mer Adriatique, racontant les combats et la mélancolie d'un pilote d'hydravion chasseur de primes transformé en cochon par une malédiction. Le second est une chronique adolescente dépeignant avec fraîcheur le premier amour et les doutes d'orientation d'un garçon et d'une fille de collège, dans le décor de la ville nouvelle de Tama, à notre époque.
@@ -243,6 +244,8 @@ Pourtant, ce qui unit ces deux œuvres, c'est l'insatiable quête du Studio Ghib
 *Porco Rosso* (titre original : Il Porco Rosso) possède une genèse singulière : initialement conçu comme un court métrage destiné à être diffusé sur les vols de Japan Airlines, il s'est transformé en un long métrage, teinté par l'ombre pesante des conflits bien réels qui déchiraient alors la Yougoslavie. C'est une œuvre éminemment personnelle, que Hayao Miyazaki a créée pour lui-même et comme « un film pour ces hommes d'âge mûr épuisés, dont les neurones se sont transformés en tofu ».
 
 ### 1.1 Hayao Miyazaki et les avions : fétichisme de la mécanique et représentation minutieuse de l'aérodynamique
+
+<img src="/images/ghibli/もののけ姫.jpg" alt="もののけ姫" style="width: 50%;" />
 
 L'obsession de Hayao Miyazaki pour le « vol » est célèbre, mais dans *Porco Rosso*, la façon dont sont représentés les hydravions est l'expression la plus pure de son fétichisme pour la mécanique et de sa profonde compréhension de l'aérodynamique. Les hydravions qui apparaissent dans le film — que ce soit le rutilant Savoia S.21 rouge, appareil chéri du héros Porco Rosso (une création originale mêlant des éléments d'avions réels tels que le Macchi M.33 ou le Savoia-Marchetti S.59), l'appareil de son rival Curtis, ou le convoi hétéroclite des pirates de l'air — ne sont pas de simples décors ou accessoires ; ils palpitent comme des personnages à part entière.
 
@@ -319,6 +322,8 @@ Cependant, le film ne s'arrête pas à une simple rêverie. Après avoir fait li
 
 ## 3. Conclusion : Des avions et des violons, l'histoire d'« artisans »
 
+<img src="/images/ghibli/千と千尋の神隠し.jpg" alt="千と千尋の神隠し" style="width: 50%;" />
+
 *Porco Rosso* et *Si tu tends l'oreille*. Un cochon d'âge mûr filant dans le ciel de l'Adriatique, et un collégien gravissant à vélo les pentes de la ville nouvelle de Tama. Ces deux histoires, qui semblent à première vue n'avoir aucun point commun, sont solidement unies par le respect envers « l'artisanat ».
 
 Que ce soit Fio et les ouvrières de la compagnie Piccolo qui réparent et optimisent parfaitement l'hydravion de Porco, Seiji qui s'applique à apprendre la lutherie à Crémone, ou le maître du Chikyūya qui continue de réparer d'anciennes horloges, les œuvres de Ghibli ont toujours entonné un hymne suprême à ces « artisans » qui créent de leurs propres mains et perfectionnent sans cesse leur technique.
@@ -330,9 +335,6 @@ Tout comme Porco se bat pour défendre la liberté du ciel, Shizuku prend les mo
 
 # Chapitre 4 : Écologie et imagination mythologique (Princesse Mononoké)
 
-<div style="text-align: center;">
-<img src="もののけ姫.jpg" alt="もののけ姫" style="width: 50%;" />
-</div>
 
 
 Sorti en 1997, *Princesse Mononoké* constitue une ligne de partage des eaux incontestable et un prototype monumental dans la carrière du Studio Ghibli et du réalisateur Hayao Miyazaki. L'œuvre a dépassé le simple cadre du film d'animation pour provoquer un impact culturel et industriel colossal, allant jusqu'à réécrire l'histoire même du cinéma japonais. Dans ce chapitre, nous déconstruirons de la manière la plus détaillée possible les thématiques stratifiées de cette œuvre — la déconstruction de l'histoire médiévale japonaise, la dimension non-dualiste du bien et du mal, et la fusion, en tant que tournant technologique, entre les images de synthèse (CG) et l'animation traditionnelle sur celluloïd.
@@ -373,6 +375,8 @@ Cependant, l'utilisation de la CG par Ghibli n'a pas consisté en un passage à 
 
 ### La représentation du Dieu Maléfique (Tatari-gami)
 
+<img src="/images/ghibli/猫の恩返し.jpg" alt="猫の恩返し" style="width: 50%;" />
+
 La représentation la plus emblématique, et celle qui présenta le plus haut degré de difficulté technique, fut celle du Tatari-gami (le Dieu-Sanglier frappé par la malédiction) au début du film. Animer à la main l'innombrable quantité de tentacules grouillants, semblables à des serpents (la malédiction reptilienne), avançant tout en s'emmêlant comme de la boue, aurait représenté une charge de travail cauchemardesque pour les animateurs.
 
 Pour résoudre ce problème, l'équipe de production a adopté une méthode combinant la simulation de particules en 3DCG et l'animation dessinée à la main. D'abord, le mouvement de base et le squelette des tentacules ont été construits en 3D, puis des textures dessinées à la main y ont été appliquées (mapping). Par-dessus ces éléments en CG, les animateurs ont effectué des retouches à la main, effaçant ainsi la froideur inorganique inhérente à la synthèse numérique pour aboutir à une représentation organique, poisseuse, qui est littéralement l'incarnation de la « rancune ».
@@ -406,15 +410,13 @@ De plus, le cycle de vie végétal aux pieds du Dieu-Cerf, où les plantes germe
 
 # Chapitre 5 : Transition numérique et reconnaissance mondiale (Le Voyage de Chihiro, Le Royaume des chats)
 
-<div style="text-align: center;">
-<img src="千と千尋の神隠し.jpg" alt="千と千尋の神隠し" style="width: 50%;" />
-<img src="猫の恩返し.jpg" alt="猫の恩返し" style="width: 50%;" />
-</div>
 
 
 Dans l'histoire du Studio Ghibli, le début des années 2000 représente l'ère des bouleversements les plus spectaculaires sur les plans technique, expressif et commercial. Ce chapitre détaille à l'extrême, du point de vue des professionnels, comment le passage de l'animation sur celluloïd à un environnement entièrement numérique a étendu les capacités visuelles des œuvres de Ghibli vers des territoires inédits. Nous analyserons les fruits de cette évolution avec *Le Voyage de Chihiro* (2001) et *Le Royaume des chats* (2002), œuvre posant les jalons pour la nouvelle génération, et l'impact culturel et la reconnaissance mondiale qu'ils ont suscités bien au-delà des frontières du Japon.
 
 ## 1. De l'analogique au numérique : Changement de paradigme technologique et redéfinition de l'esthétique chez Ghibli
+
+<img src="/images/ghibli/ハウルの動く城.jpg" alt="ハウルの動く城" style="width: 50%;" />
 
 La « numérisation » dans la production d'animation ne signifie pas simplement une rationalisation du travail ou une réduction des coûts. Ce fut un changement de paradigme fondamental dans la création visuelle, permettant de contrôler intégralement sous forme de données numériques tous les éléments visuels présents à l'écran. L'introduction de la technologie numérique chez Ghibli avait été testée dans *Princesse Mononoké* (1997) pour les tentacules du Tatari-gami, la texture translucide du Didarabocchi (le Marcheur de la Nuit) ou certains décors en 3D, puis la colorisation entièrement numérique fut adoptée en 1999 avec *Mes voisins les Yamada*. Cependant, c'est *Le Voyage de Chihiro* qui accomplit pour la première fois l'exploit vertigineux, dans un film réalisé par Hayao Miyazaki, de préserver la texture brute de l'animation traditionnelle sur celluloïd tout en la reconstruisant méticuleusement dans l'espace numérique.
 
@@ -459,6 +461,8 @@ graph TD
 
 ## 5. La reconnaissance mondiale : L'onde de choc du prix aux Oscars et des records d'entrées
 
+<img src="/images/ghibli/ゲド戦記.png" alt="ゲド戦記" style="width: 50%;" />
+
 La profondeur thématique tissée de multiples couches, alliée à la beauté visuelle absolue permise par la colorisation numérique, ont propulsé *Le Voyage de Chihiro* bien au-delà du simple domaine de l'animation, inscrivant son nom dans l'histoire du cinéma mondial.
 
 En 2002, lors de la 52e édition du Festival international du film de Berlin, le film l'emporte face à de nombreux chefs-d'œuvre en prises de vues réelles et décroche l'Ours d'or, la récompense suprême, devenant ainsi le deuxième film d'animation de l'histoire à recevoir cet honneur (près d'un demi-siècle après *Cendrillon*). Cet exploit a marqué un moment historique, prouvant que l'animation n'était plus perçue comme un simple divertissement pour enfants, mais reconnue à l'échelle mondiale comme une œuvre d'art majeure. L'année suivante, en 2003, il remporte l'Oscar du meilleur film d'animation lors de la 75e cérémonie. Alors que les œuvres en 3DCG de Disney et Pixar devenaient la norme aux États-Unis, le fait que l'animation japonaise 2D dessinée à la main (bien que traitée numériquement) atteigne le sommet eut une importance incommensurable.
@@ -490,10 +494,6 @@ L'intensité absolue de la signature et de l'univers imposée par *Le Voyage de 
 
 # Chapitre 6 : L'anti-guerre et l'amour, les mécanismes de la magie (Le Château ambulant, Les Contes de Terremer)
 
-<div style="text-align: center;">
-<img src="ハウルの動く城.jpg" alt="ハウルの動く城" style="width: 50%;" />
-<img src="ゲド戦記.png" alt="ゲド戦記" style="width: 50%;" />
-</div>
 
 
 ## Introduction : L'aube d'une nouvelle ère pour Ghibli dans un monde vacillant
@@ -528,6 +528,8 @@ graph TD
 
 ### 2. L'ombre de la guerre d'Irak : Le puissant message pacifiste de Hayao Miyazaki
 
+<img src="/images/ghibli/崖の上のポニョ.jpg" alt="崖の上のポニョ" style="width: 50%;" />
+
 Durant la production du *Château ambulant*, dans le monde réel, l'invasion militaire de l'Irak par les États-Unis avait débuté. Face à cette guerre, Hayao Miyazaki éprouvait une colère et une déception sans précédent, des émotions qui projettent de sombres et puissantes ombres tout au long du film.
 
 La guerre qui apparaît dans le film n'est pas représentée comme un affrontement clair entre deux nations justes. On n'explique jamais aux spectateurs qui a raison ou tort. On y voit seulement de monstrueux avions militaires obscurcir le ciel et bombarder aveuglément les villes, les transformant en mers de flammes, avec un sentiment de désespoir absolu. C'est cette terreur d'une « destruction sans raison » qui capte l'essence de la guerre moderne.
@@ -542,10 +544,6 @@ Une autre innovation marquante du film est l'« évolution de l'âge » du perso
 
 Dans le monde de l'animation, refuser de figer le design (l'apparence) d'un personnage constitue un défi extrêmement atypique. Le directeur de l'animation Akihiko Yamashita et son équipe ne se sont pas contentés d'ajouter des rides lorsqu'ils dessinaient la Sophie âgée ; ils ont observé et retranscrit avec minutie la perte de masse osseuse et musculaire, et surtout « le changement de posture face à la gravité ». Lorsqu'elle est âgée, Sophie a le dos voûté et sa démarche est alourdie. Cependant, lorsqu'elle tente de protéger Hauru ou qu'elle reprend confiance en elle et s'exprime avec force, son dos se redresse, ses rides s'effacent, et même le ton de sa voix rajeunit (la prestation vocale époustouflante de Chieko Baisho contribue énormément à ce résultat).
 
-<div style="text-align: center;">
-<img src="崖の上のポニョ.jpg" alt="崖の上のポニョ" style="width: 50%;" />
-<img src="借りぐらしのアリエッティ.jpg" alt="借りぐらしのアリエッティ" style="width: 50%;" />
-</div>
 
 ## 4. *Arrietty, le petit monde des chapardeurs* : Le point de vue d'Hiromasa Yonebayashi, magicien des échelles
 
@@ -554,6 +552,8 @@ Si *Ponyo* a dépeint l'explosion de la force vitale à une échelle macroscopiq
 L'exceptionnelle capacité de perception spatiale de Yonebayashi et sa maîtrise du *layout* (la composition spatiale) transforment radicalement une vaste maison japonaise, banale pour nous humains, en un univers composé de « falaises abruptes », d'« une forêt dense » et d'« un vaste et dangereux labyrinthe » pour Arrietty et les siens. Ils utilisent un clou comme marchepied pour escalader un mur gigantesque, se servent du pouvoir adhésif d'un ruban double-face pour se déplacer en hauteur, et s'équipent d'une épingle en guise d'épée d'autodéfense à la taille. Ces scènes d'action ne sont pas de simples mouvements humains réduits en taille. Elles sont conçues comme des animations physiquement convaincantes, fondées sur une redéfinition de la « gravité », de la « texture » et de la « force musculaire » à l'échelle de 10 centimètres.
 
 ## 5. La magie de la mécanique des fluides et du design sonore à l'échelle microscopique
+
+<img src="/images/ghibli/借りぐらしのアリエッティ.jpg" alt="借りぐらしのアリエッティ" style="width: 50%;" />
 
 Le point culminant de la technique d'animation de ce film réside dans la visualisation précise des lois de la physique à l'échelle microscopique (en particulier le changement de comportement des fluides et des poudres dû à l'effet d'échelle). En mécanique des fluides, il est connu que lorsque l'échelle d'un objet devient extrêmement petite, l'influence de la tension superficielle et des forces de viscosité devient prédominante par rapport à la gravité (forces d'inertie).
 
@@ -578,16 +578,13 @@ Bien que ces approches se situent aux antipodes — l'infiniment grand et l'infi
 
 # Chapitre 8 : L'aboutissement des maîtres et la transmission aux générations futures
 
-<div style="text-align: center;">
-<img src="風立ちぬ.jpg" alt="風立ちぬ" style="width: 50%;" />
-<img src="かぐや姫の物語.jpg" alt="かぐや姫の物語" style="width: 50%;" />
-<img src="君たちはどう生きるか.jpg" alt="君たちはどう生きるか" style="width: 50%;" />
-</div>
 
 
 Dans les années 2010, le Studio Ghibli, qui n'avait cessé de trôner comme une icône marquant l'histoire de l'animation japonaise et même mondiale, est entré dans une phase singulière, véritable « aboutissement » de ses fondateurs, les maîtres Hayao Miyazaki et Isao Takahata. Dépassant le simple cadre du divertissement, on a vu naître une série d'œuvres autoréférentielles où les créateurs ont examiné leur propre karma, leur philosophie, et l'approche de la fin de leur existence. Dans ce chapitre, nous analyserons trois chefs-d'œuvre — *Le vent se lève* (2013), *Le Conte de la princesse Kaguya* (2013), et *Le Garçon et le Héron* (2023) —, qui marquent l'apogée du Studio Ghibli tout en portant en eux « destruction et renaissance », afin d'étudier en détail, sous les angles technique et idéologique, le testament laissé à l'industrie de l'animation et l'héritage pour les générations futures.
 
 ## 1. *Le vent se lève* — Le fardeau de la création et la fin des beaux rêves, la confession contradictoire de Hayao Miyazaki
+
+<img src="/images/ghibli/風立ちぬ.jpg" alt="風立ちぬ" style="width: 50%;" />
 
 Sorti en 2013, *Le vent se lève* est une œuvre quasi autobiographique où Hayao Miyazaki expose avec un réalisme inédit les « contradictions » qu'il porte en lui depuis toujours. Le protagoniste, Jirō Horikoshi, est le concepteur bien réel de l'avion de chasse embarqué Mitsubishi A6M (le fameux chasseur Zéro). Cependant, Miyazaki y fusionne l'essence de l'écrivain de la même époque, Tatsuo Hori, pour dépeindre le portrait d'un véritable « Créateur ».
 
@@ -600,6 +597,8 @@ Il faut particulièrement souligner les expérimentations sonores audacieuses. D
 
 ## 2. *Le Conte de la princesse Kaguya* — L'élan de la vie raconté par les espaces vides et l'expérience ultime d'Isao Takahata
 
+<img src="/images/ghibli/かぐや姫の物語.jpg" alt="かぐや姫の物語" style="width: 50%;" />
+
 La même année où Miyazaki peignait son propre for intérieur avec *Le vent se lève*, Isao Takahata achevait avec *Le Conte de la princesse Kaguya* (son premier film en quatorze ans) une expérience ultime bouleversant l'histoire de l'animation sur celluloïd. Réalisé avec un budget astronomique de 5 milliards de yens et étalé sur 8 années de production, ce film représente un sommet artistique repoussant à l'extrême l'aspect « pictural » de l'animation, constituant à la fois le dernier film et le chef-d'œuvre suprême de Takahata.
 
 ### L'enregistrement préalable des voix (prescoring), la vitalité du trait, et l'antithèse à Disney
@@ -611,6 +610,8 @@ La principale caractéristique technique et stylistique du *Conte de la princess
 Cette technique révèle toute sa puissance lors de la séquence saisissante où la princesse Kaguya s'enfuit du banquet à la cour et court vers la montagne. Alors que sa colère, son désespoir et sa révolte face aux contraintes atteignent leur paroxysme, les traits minutieux cèdent soudain la place à des hachures rageuses rappelant une peinture à l'encre noire (sumi-e), tandis que le décor s'effondre jusqu'au stade du brouillon, comme avalé par le torrent de ses émotions. Cette scène, où les lignes se brisent et les couleurs explosent, marque le moment où l'animation bondit du simple statut de « dessin codifié » à la « visualisation pure de l'émotion », une scène miraculeuse gravée dans l'histoire du cinéma. Le contraste avec la musique bouddhiste et inorganique illustrant la Capitale de la Lune met également en relief la philosophie de Takahata, qui affirme joyeusement l'« impureté » de la Terre et la « joie de vivre ».
 
 ## 3. *Le Garçon et le Héron* — Le labyrinthe du symbolisme et le testament à la génération future
+
+<img src="/images/ghibli/君たちはどう生きるか.jpg" alt="君たちはどう生きるか" style="width: 50%;" />
 
 En 2023, dix ans après avoir déclaré vouloir se retirer des longs métrages, Hayao Miyazaki a achevé *Le Garçon et le Héron* (titre original : *Kimitachi wa dô ikiru ka*). Contrairement à l'aventure initiatique triomphante et cathartique du *Voyage de Chihiro*, cette œuvre est un labyrinthe complexe et profondément symbolique où s'entremêlent rêves et réalités, vie et mort, création et destruction.
 
