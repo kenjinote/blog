@@ -10,6 +10,12 @@ image: "eyecatch.jpg"
 
 # Capítulo 1: Fundação e as Primeiras Obras-Primas (Nausicaä do Vale do Vento, O Castelo no Céu)
 
+<div style="text-align: center;">
+<img src="風の谷のナウシカ.jpg" alt="風の谷のナウシカ" style="width: 50%;" />
+<img src="天空の城ラピュタ.png" alt="天空の城ラピュタ" style="width: 50%;" />
+</div>
+
+
 ## 1.1 Uma Singularidade na História da Animação, o Nascimento do Studio Ghibli
 
 Ao observar a indústria de animação japonesa, ou melhor, a história da animação mundial, não se pode ignorar um "incidente" ocorrido em meados da década de 1980. Isso foi, de fato, a fundação do Studio Ghibli. A história do Ghibli não é apenas a história de uma única empresa ou de um único estúdio de produção, mas a própria história do ponto máximo de expressão alcançado pela tecnologia analógica das células de animação, e da fusão miraculosa entre a "popularidade" e a "artisticidade" que a mídia da animação possui. Neste capítulo, ao desvendar a história da fundação do Studio Ghibli, focaremos no seu ponto de partida prático, "Nausicaä do Vale do Vento" (1984), e na primeira obra sob o nome do Studio Ghibli, "O Castelo no Céu" (1986), para discutir como dois gênios, Isao Takahata e Hayao Miyazaki, romperam os limites da expressão animada.
@@ -85,6 +91,13 @@ Estas duas obras elevaram os padrões técnicos e expressivos a alturas muito ma
 
 # Capítulo 2: O Cruzamento do Cotidiano e do Extraordinário —— O Mundo Retratado em "Meu Amigo Totoro", "Túmulo dos Vagalumes" e "O Serviço de Entregas da Kiki"
 
+<div style="text-align: center;">
+<img src="となりのトトロ.jpg" alt="となりのトトロ" style="width: 50%;" />
+<img src="火垂るの墓.jpg" alt="火垂るの墓" style="width: 50%;" />
+<img src="魔女の宅急便.jpg" alt="魔女の宅急便" style="width: 50%;" />
+</div>
+
+
 Ao desvendar a história do Studio Ghibli, o final da década de 1980 foi um período de viragem decisivo. Passando da grandiosa "espada e magia" ou da "aventura voadora" vista na obra anterior "O Castelo no Céu" (1986), o Ghibli mudou drasticamente o seu curso para o "cotidiano", abordando as paisagens nativas japonesas ou a vida dos habitantes ocidentais comuns. Neste capítulo, abordaremos três obras: as exibições simultâneas miraculosas de 1988, "Meu Amigo Totoro" e "Túmulo dos Vagalumes", e o grande sucesso de 1989, "O Serviço de Entregas da Kiki", dissecando exaustivamente a revolução temática e técnica que gravaram na história da animação.
 
 ## 1. A Loucura e o Milagre das Exibições Simultâneas: Hayao Miyazaki e Isao Takahata, Duas Visões da Era "Showa"
@@ -152,6 +165,12 @@ Durante o período de 1988 a 1989, o Studio Ghibli percorreu todo e qualquer lim
 
 As três obras, "Meu Amigo Totoro", "Túmulo dos Vagalumes" e "O Serviço de Entregas da Kiki", não são uma mera lista de grandes filmes. Elas são o monumento histórico que documenta o momento mais efervescente e doloroso da eclosão da animação, onde este meio de expressão se liberta de ser apenas um entretenimento para crianças e se transforma numa "Arte Total" que retrata as angústias estruturais da sociedade e o profundo abismo do espírito humano.
 # Capítulo 3: El anhelo por el vuelo y el romance adulto: El pináculo del realismo en Porco Rosso y Susurros del corazón
+
+<div style="text-align: center;">
+<img src="紅の豚.jpg" alt="紅の豚" style="width: 50%;" />
+<img src="耳をすませば.jpg" alt="耳をすませば" style="width: 50%;" />
+</div>
+
 
 Al observar la historia de Studio Ghibli, *Porco Rosso* (1992) y *Susurros del corazón* (1995), estrenadas a principios y mediados de la década de 1990, pueden parecer a primera vista obras situadas en polos opuestos. Mientras que la primera es una fantasía ambientada en el mar Adriático que describe las batallas y la melancolía de un cazarrecompensas piloto de hidroaviones transformado en cerdo por una maldición, la segunda es un drama coral juvenil ambientado en el moderno Tama New Town, que describe el inocente primer amor de dos estudiantes de secundaria y sus conflictos sobre su futuro.
 
@@ -247,6 +266,11 @@ Así como Porco lucha para proteger la libertad del cielo, Shizuku también toma
 
 # Capítulo 4: Ecología y la imaginación mítica (La princesa Mononoke)
 
+<div style="text-align: center;">
+<img src="もののけ姫.jpg" alt="もののけ姫" style="width: 50%;" />
+</div>
+
+
 Estrenada en 1997, *La princesa Mononoke* fue un hito que representó una clara línea divisoria en la carrera de Studio Ghibli y el director Hayao Miyazaki. Esta obra trascendió el marco de una simple película de animación, causando un impacto cultural e industrial tan masivo que reescribió la propia historia del cine japonés. En este capítulo, desentrañaremos con sumo detalle las múltiples capas de sus temas —la deconstrucción de la historia medieval japonesa, la fase no dualista del bien y el mal, y la amalgama de los gráficos por computadora (CG) y la animación en celuloide tradicional, que constituyó un punto de inflexión técnico.
 
 ## 1. Contexto industrial: La explosión del presupuesto de producción y la ruptura de récords de taquilla
@@ -313,6 +337,12 @@ Además, el ciclo de vida por el que las plantas brotan instantáneamente alrede
 
 *La princesa Mononoke* representa el extremo norte artístico del Studio Ghibli. A pesar de estar profundamente enraizada en el sustrato histórico de la Edad Media de Japón, los problemas de ecología y el no dualismo entre el bien y el mal analizados en la película se vuelven cada vez más actuales en la sociedad global de hoy. Además, la estética visual en la que los dibujos a mano y el entorno digital logran una milagrosa conjunción equilibrada exhibe una perfección inigualable en los anales de la animación de entonces y de ahora. En el capítulo subsiguiente, "Capítulo 5: La magia de lo cotidiano y la nostalgia (*El viaje de Chihiro*)", examinaremos un nuevo giro argumental para Ghibli que nos apartará de los aspectos de escala mítica de Mononoke hacia la exploración más íntima del paisaje psicológico de una chica moderna.
 # Capítulo 5: La transición digital y la aclamación mundial (El viaje de Chihiro, Haru en el reino de los gatos)
+
+<div style="text-align: center;">
+<img src="千と千尋の神隠し.jpg" alt="千と千尋の神隠し" style="width: 50%;" />
+<img src="猫の恩返し.jpg" alt="猫の恩返し" style="width: 50%;" />
+</div>
+
 
 En la historia de Studio Ghibli, principios de la década del 2000 fue la época que marcó un punto de inflexión radical y de mayor intensidad desde el punto de vista técnico, expresivo y comercial. En este capítulo, desglosaremos a fondo, desde la óptica de un profesional, cómo la transición desde la animación en celuloide a un entorno completamente digital empujó el universo visual de las obras de Ghibli hacia territorios inexplorados. También veremos cómo sus frutos, *El viaje de Chihiro* (2001), y el peldaño para la siguiente generación, *Haru en el reino de los gatos* (2002), cosecharon elogios internacionales y generaron un impacto cultural que desbordó las fronteras de Japón.
 
@@ -388,6 +418,12 @@ Las implementaciones logradas bajo la mano informática al caso interno o estudi
 Desde el arrollador o innegable sentido de identidad artística expuestos abismal en todos y cada matiz impuesto contundente a mundos y sus magnitudes en realidades desdobladas que planteaba a la historia a todos a _El Viaje De Chihiro_, que contrastada para con su sucesora de cintas; las labores estables de lo organizacional de los recursos provistos, además de las demostradas aperturas para relevos y transiciones o pluralidad entre el liderazgo expuesto a su vez frente y brindadas con y al cargo de _El Regreso del Gato_. Traspasada o navegada ya aquella etapa tan revolucionada de transformaciones y vientos cruzados de cambios corporativos u obras tan históricas con un paso trepidante de transición tecnológica; de esto resulta, Studio Ghibli destruyó definitivamente un caparazón aislador y simple o limitante encasillándolo a solo los márgenes locales o de mera creación a escala nipona del circuito para elevar y convertirse transformado en todo un ente enmarca-líder de absoluto arrastre hegemónico a nivel mundial o planetario un referente absoluto global para una firma y huella de peso a cualquier horizonte mediático o de los medios artísticos visuales fílmicos y la escena o el lienzo cinemático total, y a todo esto, convirtiéndose la casa pionera irrefutable y como un abanderado indiscutible y por consiguiente un sello global sin duplicidades o pares. No obstante de que tal monstruosa proporción y el alzado de reconocimiento y laureles traería también sus sombras o letargo para consigo. Pues esta gloria o crecimiento colosal desencadenó silenciosas advertencias hacia sus propios núcleos internos como cimientos; forjándoles un aciago mandato para los retos venideros sobre: “el inmenso e impositivo imperativo que supondría o implicará lograr emanciparse o lograr zafarse sin dependencias absolutas u orgánicas aferradas sobre la exclusiva u inigualada o singular maestría extrema provista a esa mente excepcional e individuo prodigioso u colosal e indispensable e histórico el genial de Hayao Miyazaki” el cual al sol de hoy o tiempo persistente a futuro se acunaría a modo tan severo para ahogar al porvenir del mismo grupo o consorcio el cual pesará para los retos posteriores del estudio silenciosamente al interior o para ese equipo tras sus muros.
 
 # Capítulo 6: El mecanismo de la magia, el amor y la lucha contra la guerra (El increíble castillo vagabundo, Cuentos de Terramar)
+
+<div style="text-align: center;">
+<img src="ハウルの動く城.jpg" alt="ハウルの動く城" style="width: 50%;" />
+<img src="ゲド戦記.png" alt="ゲド戦記" style="width: 50%;" />
+</div>
+
 
 ## Introducción: El amanecer de una nueva era para Ghibli y un mundo que se tambalea
 
@@ -522,6 +558,12 @@ La magia (la animación) no es omnipotente. Sin embargo, el esfuerzo de seguir i
 (Fin del Capítulo 6)
 # Capítulo 7: El origen de la vida y el retorno al dibujo a mano (Ponyo en el acantilado, Arrietty y el mundo de los diminutos)
 
+<div style="text-align: center;">
+<img src="崖の上のポニョ.jpg" alt="崖の上のポニョ" style="width: 50%;" />
+<img src="借りぐらしのアリエッティ.jpg" alt="借りぐらしのアリエッティ" style="width: 50%;" />
+</div>
+
+
 Al contemplar la historia de Studio Ghibli, y por extensión, la historia completa de la animación japonesa, el período que abarca desde finales de la década del 2000 hasta principios de la del 2010 se posiciona como un punto de inflexión tecnológico e ideológico sumamente peculiar. En Hollywood, la animación 3DCG completa representada por Pixar y DreamWorks reinaba como el estándar de facto del mercado cinematográfico, y en el anime televisivo y las películas nacionales japonesas, la digitalización del proceso de producción (el coloreado digital y el dibujo de fondos y mecánica mediante 3DCG) se había establecido por completo como una ola irreversible.
 
 En medio de esa era dorada digital dominada por la "eficiencia y la precisión calculada", Hayao Miyazaki y Studio Ghibli dieron un fuerte golpe de timón en una dirección completamente opuesta. Ese fue el "retorno absoluto a la animación dibujada a mano" y "la búsqueda de expresiones primitivas de la vida". En este capítulo, contrastaremos la locura de la animación fluida a nivel macro en *Ponyo en el acantilado* (2008), dirigida por Hayao Miyazaki, con la redefinición de la escala y los minuciosos movimientos de cámara a nivel micro en *Arrietty y el mundo de los diminutos* (2010), el debut como director de Hiromasa Yonebayashi, para explorar las profundidades tecnológicas e ideológicas de cómo Ghibli logró grabar el "aliento de la vida en la animación" en película.
@@ -583,6 +625,13 @@ No obstante, en esta película, durante las tomas que representan la perspectiva
 
 Si bien el enfoque de ambas se ubica en sendos polos, la esfera microscópica y la macroscópica, las cimas logradas por Studio Ghibli en este período fueron idénticas en espíritu. Éste corresponde a la apoteosis de la animación en estado puro: oponiéndose a esa infértil frialdad de la pura precisión de lo generado con computadora (CG), el objetivo supremo consiste en inocular en y a través de todas las líneas creadas al rasgo de su pluma ilustradora por mano, al igual de y cada trazo o brochazo expuesto del pintor escénico de fondos; un "aliento vital y ánima" profundamente apegado al animismo. Un gran oleaje arrollador, a igual par como lo hace el colosal espesar y desplome en un simple gota suspendida y caída cargada con té de peso, denotan el grado introspectivo agudo y escudriñador característico de los artífices de Ghibli para dar un lugar común hallado y compartido como es: "el brillante centelleo e incandescencias destellando la vida y sus resplandores". Podemos decir y denominar esta faena artística que, en contestación frente un imparable acorralamiento de automatización de sus sectores y gremios hacia la época contemporánea al campo visual y el ocio audiovisual; se levantó firme en la rebelión e ilustrada como "su obra de resistencia mayor, repleta con encumbrada belleza e impregnadas rebosantes virtudes potentes desde ese grandioso y honroso equipo del corazón creador de autores plásticos con estandartes firmes a un irreductible e imperdurable orgullo".
 # Capítulo 8: La obra culminante de los grandes maestros y el legado para el futuro (El viento se levanta, El cuento de la princesa Kaguya, El chico y la garza)
+
+<div style="text-align: center;">
+<img src="風立ちぬ.jpg" alt="風立ちぬ" style="width: 50%;" />
+<img src="かぐや姫の物語.jpg" alt="かぐや姫の物語" style="width: 50%;" />
+<img src="君たちはどう生きるか.jpg" alt="君たちはどう生きるか" style="width: 50%;" />
+</div>
+
 
 Para desentrañar el último capítulo del medio siglo de historia del colosal Studio Ghibli, es indispensable hablar sobre las obras milagrosas de la década del 2010 al 2020: la última película que dirigió en vida Isao Takahata, *El cuento de la princesa Kaguya* (2013), el punto de llegada donde la historia y lo personal se entrelazan de Hayao Miyazaki en *El viento se levanta* (2013), y finalmente, *El chico y la garza* (2023), que desciende al inframundo del cerebro de Miyazaki. Este capítulo examinará detalladamente estas tres obras fundamentales que cristalizan el medio siglo de trayectorias creativas de los dos grandes genios.
 

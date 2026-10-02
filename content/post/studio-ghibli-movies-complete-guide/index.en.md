@@ -10,6 +10,12 @@ image: "eyecatch.jpg"
 
 # Chapter 1: Foundation and Early Masterpieces (Nausicaä of the Valley of the Wind, Castle in the Sky)
 
+<div style="text-align: center;">
+<img src="風の谷のナウシカ.jpg" alt="風の谷のナウシカ" style="width: 50%;" />
+<img src="天空の城ラピュタ.png" alt="天空の城ラピュタ" style="width: 50%;" />
+</div>
+
+
 ## 1.1 A Singularity in Animation History: The Birth of Studio Ghibli
 
 When looking at the Japanese animation industry, or indeed the history of world animation, one cannot ignore an "incident" that occurred in the mid-1980s. That was the establishment of Studio Ghibli. The history of Ghibli is not merely the history of a single company or production studio, but rather the very history of the ultimate pinnacle of expression achieved by the analog technique of cel animation, and the miraculous fusion of the "popularity" and "artistry" inherent in the medium of animation. In this chapter, while unraveling the circumstances of Studio Ghibli's founding, we will focus on its practical origin, *Nausicaä of the Valley of the Wind* (1984), and its first work under the Studio Ghibli name, *Castle in the Sky* (1986), discussing how two geniuses, Isao Takahata and Hayao Miyazaki, broke through the limits of animated expression.
@@ -81,6 +87,13 @@ Also, the contribution of the background art by art directors Toshiro Nozaki and
 These two works raised technical and expressive standards to a far higher level, subsequently standing as a "giant wall called Ghibli" in the Japanese animation world. And at the same time, it was literally "Chapter 1" of a grand legend in which this small studio would eventually stir up a global cultural phenomenon and rewrite the history of animation itself. The path leading to the subsequent *My Neighbor Totoro*, *Grave of the Fireflies*, and *Princess Mononoke* all started from the wind of *Nausicaä* and the sky of *Laputa*.
 # Chapter 2: The Intersection of the Ordinary and Extraordinary — The Worlds depicted in "My Neighbor Totoro", "Grave of the Fireflies", and "Kiki's Delivery Service"
 
+<div style="text-align: center;">
+<img src="となりのトトロ.jpg" alt="となりのトトロ" style="width: 50%;" />
+<img src="火垂るの墓.jpg" alt="火垂るの墓" style="width: 50%;" />
+<img src="魔女の宅急便.jpg" alt="魔女の宅急便" style="width: 50%;" />
+</div>
+
+
 When unraveling the history of Studio Ghibli, the late 1980s was a crucial turning point. Shifting completely from the grand "swords and sorcery" or "flying adventure action" depicted in the previous work *Castle in the Sky* (1986), Ghibli took a major turn toward the "ordinary"—the original landscapes of Japan and the everyday lives of regular people in the West. This chapter focuses on three films: *My Neighbor Totoro* and *Grave of the Fireflies*, which achieved a miraculous double feature release in 1988, and the blockbuster hit *Kiki's Delivery Service* in 1989. We will thoroughly dissect the technical and thematic revolutions these works engraved in the history of animation.
 
 ## 1. The Madness and Miracle of the Double Feature: Hayao Miyazaki and Isao Takahata, Two "Showas"
@@ -148,6 +161,12 @@ During this period from 1988 to 1989, Studio Ghibli ran through every extreme th
 
 The three works *My Neighbor Totoro*, *Grave of the Fireflies*, and *Kiki's Delivery Service* are not a mere enumeration of masterpieces. They are a historical monument that recorded the hottest, and most painful, moment of emergence when the expressive medium of animation shed its skin from entertainment for children to a "comprehensive art" that depicts even the depths of the human spirit and the structural agonies of society.
 # Chapter 3: Yearning for Flight and Adult Romance — The Pinnacle of Realism in *Porco Rosso* and *Whisper of the Heart*
+
+<div style="text-align: center;">
+<img src="紅の豚.jpg" alt="紅の豚" style="width: 50%;" />
+<img src="耳をすませば.jpg" alt="耳をすませば" style="width: 50%;" />
+</div>
+
 
 When taking a bird's-eye view of the history of Studio Ghibli, *Porco Rosso* (1992) and *Whisper of the Heart* (1995), released from the early to mid-1990s, might at first glance appear to be works situated at opposite extremes. While the former is a fantasy set in the Adriatic Sea depicting the battles and sorrow of a bounty-hunting flying boat pilot cursed to take the form of a pig, the latter is an ensemble coming-of-age drama set in contemporary Tama New Town depicting the innocent love and career struggles of a junior high school boy and girl.
 
@@ -242,6 +261,11 @@ Fio and the female factory workers of the Piccolo company perfectly repairing an
 Just as Porco fights to protect the freedom of the sky, Shizuku also takes up the weapon of words to spin her own inner voice (story). Physical "flight" and "leaps" of imagination. Although the methods of expression differ, the pinnacle of realism that Studio Ghibli reached in this period burned onto film, with overwhelming visual beauty, the sublime will of human beings trying to fly high nonetheless, resisting the gravity of the real world (the bonds of society and one's own limits). In the next chapter, we will discuss the conflict between nature and humans in *Princess Mononoke*, an unprecedented epic born from the combination of this thorough realism and naturalism with mythological imagination.
 # Chapter 4: Ecology and Mythic Imagination (Princess Mononoke)
 
+<div style="text-align: center;">
+<img src="もののけ姫.jpg" alt="もののけ姫" style="width: 50%;" />
+</div>
+
+
 Released in 1997, "Princess Mononoke" is a monumental prototype that became a clear watershed in the careers of Studio Ghibli and director Hayao Miyazaki. The work transcended the boundaries of a mere animated film, bringing about a cultural and industrial impact so massive that it rewrote the very history of Japanese cinema. In this chapter, we will unravel in extreme detail the multi-layered themes the work possesses—the deconstruction of medieval Japanese history, the non-dualistic topology of good and evil, and the fusion of CG (computer graphics) and traditional cel animation as a technological turning point.
 
 ## 1. Industrial Context: Explosion of Production Costs and Breaking Box Office Records
@@ -308,6 +332,12 @@ Furthermore, the cycle of life where plants instantaneously sprout, grow, and wi
 
 "Princess Mononoke" is one of the pinnacles that Studio Ghibli reached. While taking deep root in the historical soil of the Japanese Middle Ages, the ecological issues and the non-dualism of good and evil narrated therein are beginning to hold increasingly contemporary meaning in the modern global society. And the visual beauty, where hand-drawn and digital animation fused in a miraculous balance, boasts an unparalleled level of perfection, past or future. In the next chapter, "Chapter 5: Everyday Magic and Nostalgia (Spirited Away)," we will examine Ghibli's new turn, plunging from this mythic scale into the mental landscape of a modern girl.
 # Chapter 5: Digital Transition and Global Acclaim (Spirited Away, The Cat Returns)
+
+<div style="text-align: center;">
+<img src="千と千尋の神隠し.jpg" alt="千と千尋の神隠し" style="width: 50%;" />
+<img src="猫の恩返し.jpg" alt="猫の恩返し" style="width: 50%;" />
+</div>
+
 
 In the history of Studio Ghibli, the early 2000s marked the most dramatic turning point technologically, expressively, and commercially. In this chapter, we will detail to the utmost limit from a professional perspective how the transition from cel animation to a full digital environment pushed the visual expression of Ghibli works into unprecedented territory, and how its fruition, *Spirited Away* (2001), along with *The Cat Returns* (2002) as a stepping stone for the next generation, brought about global acclaim and cultural impact beyond the borders of Japan.
 
@@ -382,6 +412,12 @@ Digital technology at Ghibli was never used simply for efficiency or as a tool t
 
 The overwhelming auteurism and strength of worldview thrust forward by *Spirited Away*, and the stable production capabilities as a studio and possibilities for generational change and diversification demonstrated by *The Cat Returns*. Through this turbulent period, Studio Ghibli completely shattered the framework of being merely an animation studio of a single country, transforming into a one-of-a-kind global brand that leads the world's cinematic expression. However, this unprecedented gigantism and global fame simultaneously and quietly thrust a heavy new challenge—the "breakaway from a system extremely dependent on the unique genius of Hayao Miyazaki"—deep into the studio, a challenge that continues to torment Ghibli to this day.
 # Chapter 6: Anti-War and Love, The Mechanisms of Magic (Howl's Moving Castle, Tales from Earthsea)
+
+<div style="text-align: center;">
+<img src="ハウルの動く城.jpg" alt="ハウルの動く城" style="width: 50%;" />
+<img src="ゲド戦記.png" alt="ゲド戦記" style="width: 50%;" />
+</div>
+
 
 ## Introduction: The Dawn of a New Era for Ghibli and a Shaking World
 
@@ -491,6 +527,12 @@ Magic (animation) is not omnipotent. However, the very act of knowing its limits
 
 # Chapter 7: The Source of Life and the Return to Hand-Drawn Animation (Ponyo on the Cliff by the Sea, The Secret World of Arrietty)
 
+<div style="text-align: center;">
+<img src="崖の上のポニョ.jpg" alt="崖の上のポニョ" style="width: 50%;" />
+<img src="借りぐらしのアリエッティ.jpg" alt="借りぐらしのアリエッティ" style="width: 50%;" />
+</div>
+
+
 When looking back at the history of Studio Ghibli, and by extension the entire history of Japanese animation, the period from the late 2000s to the early 2010s stands as an extremely unique turning point, both technologically and ideologically. In Hollywood, full 3DCG animation, represented by Pixar and DreamWorks, reigned as the de facto standard of the film market, and even within Japanese domestic television anime and theatrical features, the digitization of the production process (digital painting and the drawing of backgrounds and mechanics using 3DCG) had been completely established as an irreversible wave.
 
 In the midst of the digital golden age, dominated by such "efficiency and calculated precision," Hayao Miyazaki and Studio Ghibli forcefully steered the helm in the complete opposite direction. This was a "thorough return to hand-drawn animation" and the "pursuit of primitive expressions of life." This chapter contrasts the madness of macro fluid animation in Hayao Miyazaki's directed work "Ponyo on the Cliff by the Sea" (2008) with the micro shifts in perspective and redefinition of scale in Hiromasa Yonebayashi's directorial debut "The Secret World of Arrietty" (2010). In doing so, it delves into the technological and ideological depths of how Ghibli burned the "breath of life in animation" onto film.
@@ -552,6 +594,13 @@ However, in this film, in the cuts depicting the little people's perspective, th
 
 Although the direction of their approaches lies at the polar opposites of macro and micro, the frontier reached by Studio Ghibli during this period is the same. That is the ultimate form of animation: resisting the "inorganic precision" brought about by CG, and imbuing animistic life into every single line drawn by the animators' hands and every single stroke of the background's brushwork. The deep insight of Ghibli, which finds the "radiance of life" equally within the swells of massive waves and within a single heavy drop of tea. It can be said that this was the most beautiful, the most powerful, and the proudest rebellion by the creators against the modern film industry, which is being swallowed by the wave of efficiency.
 # Chapter 8: The Culmination of the Masters and Succession to the Future
+
+<div style="text-align: center;">
+<img src="風立ちぬ.jpg" alt="風立ちぬ" style="width: 50%;" />
+<img src="かぐや姫の物語.jpg" alt="かぐや姫の物語" style="width: 50%;" />
+<img src="君たちはどう生きるか.jpg" alt="君たちはどう生きるか" style="width: 50%;" />
+</div>
+
 
 Studio Ghibli, which has continued to reign as an epoch-making entity in the history of Japanese animation, and by extension the world, entered a unique phase from the 2010s onwards that could be called the "culmination" of its two master founders, Hayao Miyazaki and Isao Takahata. Surpassing the boundaries of entertainment, a group of self-referential works was born, gazing upon the creators' own karma, philosophy, and the end of life. In this chapter, we dissect three masterpieces—*The Wind Rises* (2013), *The Tale of the Princess Kaguya* (2013), and *The Boy and the Heron* (2023)—which are the pinnacle of Studio Ghibli while simultaneously encompassing "destruction and rebirth," detailing to the utmost limits from technical and ideological perspectives the testament they left to the animation industry and their succession to the next generation.
 

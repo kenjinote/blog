@@ -10,6 +10,12 @@ image: "eyecatch.jpg"
 
 # Bab 1: Pendirian dan Mahakarya Awal (Nausicaä of the Valley of the Wind, Castle in the Sky)
 
+<div style="text-align: center;">
+<img src="風の谷のナウシカ.jpg" alt="風の谷のナウシカ" style="width: 50%;" />
+<img src="天空の城ラピュタ.png" alt="天空の城ラピュタ" style="width: 50%;" />
+</div>
+
+
 ## 1.1 Titik Singular dalam Sejarah Animasi, Lahirnya Studio Ghibli
 
 Ketika kita meninjau industri animasi Jepang, atau bahkan sejarah animasi dunia, kita tidak bisa mengabaikan satu "insiden" yang terjadi pada pertengahan tahun 1980-an. Itulah pendirian Studio Ghibli. Sejarah Ghibli bukanlah sekadar sejarah sebuah perusahaan atau sebuah studio produksi, melainkan sejarah dari titik puncak ekspresi yang dicapai oleh teknologi analog cel animation (animasi sel) dan fusi ajaib antara "popularitas" dan "kesenian" yang dimiliki oleh medium animasi itu sendiri. Dalam bab ini, sambil mengurai latar belakang pendirian Studio Ghibli, kita akan fokus pada titik awalnya yang sesungguhnya yaitu "Nausicaä of the Valley of the Wind" (1984) dan karya pertama di bawah nama Studio Ghibli yaitu "Castle in the Sky" (1986), serta membahas bagaimana dua orang jenius, Isao Takahata dan Hayao Miyazaki, menerobos batas-batas ekspresi animasi.
@@ -85,6 +91,13 @@ Kedua karya ini mengangkat standar teknis dan ekspresif ke tingkat yang jauh leb
 
 # Bab 2: Persimpangan Sehari-hari dan Luar Biasa——Dunia yang Digambarkan oleh "My Neighbor Totoro", "Grave of the Fireflies", dan "Kiki's Delivery Service"
 
+<div style="text-align: center;">
+<img src="となりのトトロ.jpg" alt="となりのトトロ" style="width: 50%;" />
+<img src="火垂るの墓.jpg" alt="火垂るの墓" style="width: 50%;" />
+<img src="魔女の宅急便.jpg" alt="魔女の宅急便" style="width: 50%;" />
+</div>
+
+
 Saat mengurai sejarah Studio Ghibli, paruh kedua tahun 1980-an adalah periode yang menjadi titik balik yang menentukan. Dari aksi "pedang dan sihir" yang megah atau "petualangan terbang" yang digambarkan dalam film sebelumnya "Castle in the Sky" (1986), Ghibli berbalik arah secara drastis ke arah "keseharian", seperti pemandangan asli pedesaan Jepang atau kehidupan masyarakat kota di negara Barat. Dalam bab ini, kita akan membahas 3 film yaitu "My Neighbor Totoro" dan "Grave of the Fireflies" yang secara ajaib ditayangkan bersamaan pada tahun 1988, serta karya hit besar tahun 1989 "Kiki's Delivery Service", dan membedah secara menyeluruh revolusi teknis dan tematik yang ditorehkan film-film ini dalam sejarah animasi.
 
 ## 1. Kegilaan dan Keajaiban Penayangan Bersamaan: Hayao Miyazaki dan Isao Takahata, Dua Versi "Showa"
@@ -156,6 +169,12 @@ Tiga karya yaitu "My Neighbor Totoro", "Grave of the Fireflies", dan "Kiki's Del
 
 
 # Bab 3: Kerinduan pada Penerbangan dan Romansa Orang Dewasa——Puncak Realisme dalam "Porco Rosso" dan "Whisper of the Heart"
+
+<div style="text-align: center;">
+<img src="紅の豚.jpg" alt="紅の豚" style="width: 50%;" />
+<img src="耳をすませば.jpg" alt="耳をすませば" style="width: 50%;" />
+</div>
+
 
 Melihat kilas balik sejarah Studio Ghibli, film "Porco Rosso" (1992) dan "Whisper of the Heart" (1995) yang dirilis dari awal hingga pertengahan tahun 1990-an mungkin pada pandangan pertama terlihat sebagai film yang bertolak belakang. Yang pertama adalah film fantasi berlatar Laut Adriatik, menggambarkan pertempuran dan kesedihan seorang penerbang bayaran yang berubah menjadi babi akibat sebuah kutukan. Sedangkan yang kedua adalah drama remaja berlatar belakang Tama New Town (Kota Baru Tama) di masa kini, yang menggambarkan kepolosan cinta dan kegelisahan akan masa depan siswa-siswi sekolah menengah pertama.
 
@@ -263,6 +282,11 @@ Sebagaimana Porco yang berjuang untuk melindungi kebebasan di langit, Shizuku ju
 
 # Bab 4: Ekologi dan Imajinasi Mitologis (Princess Mononoke)
 
+<div style="text-align: center;">
+<img src="もののけ姫.jpg" alt="もののけ姫" style="width: 50%;" />
+</div>
+
+
 'Princess Mononoke', yang dirilis pada tahun 1997, merupakan prototipe monumental yang menjadi batas air (titik balik) yang jelas dalam karier Studio Ghibli dan sutradara Hayao Miyazaki. Karya ini tidak hanya sekadar melampaui batas film animasi, namun juga membawa dampak budaya dan industri yang sangat besar, yang cukup untuk menulis ulang sejarah perfilman Jepang itu sendiri. Dalam bab ini, kita akan mengungkap dengan sangat mendetail tema-tema berlapis yang dimiliki karya ini——dekonstruksi sejarah abad pertengahan Jepang, fase baik-buruk yang non-dualis, serta perpaduan antara CG (Computer Graphics) sebagai titik balik teknologis dengan animasi cel tradisional.
 
 ## 1. Konteks Industri: Ledakan Biaya Produksi dan Pembaruan Rekor Box Office
@@ -333,6 +357,12 @@ Selain itu, siklus kehidupan ketika tanaman seketika berkecambah, tumbuh, dan la
 
 
 # Bab 5: Transisi Digital dan Evaluasi Global (Spirited Away, The Cat Returns)
+
+<div style="text-align: center;">
+<img src="千と千尋の神隠し.jpg" alt="千と千尋の神隠し" style="width: 50%;" />
+<img src="猫の恩返し.jpg" alt="猫の恩返し" style="width: 50%;" />
+</div>
+
 
 Dalam sejarah Studio Ghibli, awal tahun 2000-an merupakan era titik balik paling dramatis secara teknis, ekspresif, maupun komersial. Pada bab ini, kita akan merinci semaksimal mungkin dari perspektif profesional; bagaimana transisi dari animasi cel ke lingkungan digital penuh memperluas ekspresi visual dari karya-karya Ghibli ke wilayah yang belum pernah ada sebelumnya, dan bagaimana perwujudannya dalam 'Spirited Away' (2001) beserta batu loncatan bagi generasi penerus, yaitu 'The Cat Returns' (2002), melampaui batasan domestik Jepang dan membawa evaluasi global serta dampak budaya yang mendalam.
 
@@ -411,6 +441,12 @@ Kekuatan karakter pembuat (kreator) mutlak dan kedalaman pandangan dunia yang di
 
 
 # Bab 6: Anti-Perang dan Cinta, Mekanisme Sihir (Howl's Moving Castle, Tales from Earthsea)
+
+<div style="text-align: center;">
+<img src="ハウルの動く城.jpg" alt="ハウルの動く城" style="width: 50%;" />
+<img src="ゲド戦記.png" alt="ゲド戦記" style="width: 50%;" />
+</div>
+
 
 ## Pendahuluan: Fajar Era Baru Ghibli dan Dunia yang Berguncang
 
@@ -522,6 +558,12 @@ Keajaiban (animasi) bukanlah maha kuasa. Namun, justru usaha untuk tetap melukis
 
 # Bab 7: Akar Kehidupan dan Kembalinya Animasi Gambar Tangan (Ponyo on the Cliff by the Sea, The Secret World of Arrietty)
 
+<div style="text-align: center;">
+<img src="崖の上のポニョ.jpg" alt="崖の上のポニョ" style="width: 50%;" />
+<img src="借りぐらしのアリエッティ.jpg" alt="借りぐらしのアリエッティ" style="width: 50%;" />
+</div>
+
+
 Ketika kita melihat kembali sejarah Studio Ghibli, dan secara perluasan, sejarah industri animasi Jepang secara keseluruhan, periode dari akhir 2000-an hingga awal 2010-an diposisikan sebagai titik balik teknologi dan ideologis yang sangat unik. Di Hollywood, animasi 3DCG penuh yang diwakili oleh Pixar dan DreamWorks berkuasa sebagai standar de facto dari pasar film, dan bahkan di anime televisi domestik Jepang dan rilis teater, digitalisasi proses produksi (lukisan digital dan penggunaan 3DCG untuk latar belakang dan mekanik) telah sepenuhnya terbentuk sebagai gelombang yang tidak dapat diubah.
 
 Di era keemasan digital yang didominasi oleh "efisiensi dan akurasi yang diperhitungkan" seperti itu, Hayao Miyazaki dan Studio Ghibli mengambil langkah drastis menuju arah yang benar-benar berlawanan. Yaitu "kembali secara menyeluruh ke animasi gambar tangan" dan "mengejar ekspresi kehidupan yang primitif". Bab ini akan membandingkan kegilaan animasi fluida makro dalam "Ponyo on the Cliff by the Sea" (2008) yang disutradarai oleh Hayao Miyazaki, dengan redefinisi pergeseran sudut pandang mikro dan skala dalam karya debut sutradara Hiromasa Yonebayashi, "The Secret World of Arrietty" (2010), sambil menggali kedalaman teknologi dan ideologi tentang bagaimana Ghibli mencetak "nafas kehidupan dalam animasi" ke dalam film.
@@ -587,6 +629,13 @@ Meskipun arah pendekatan mereka berada pada dua ujung ekstrem yaitu makro dan mi
 
 
 # Bab 8: Mahakarya Para Maestro dan Warisan untuk Masa Depan
+
+<div style="text-align: center;">
+<img src="風立ちぬ.jpg" alt="風立ちぬ" style="width: 50%;" />
+<img src="かぐや姫の物語.jpg" alt="かぐや姫の物語" style="width: 50%;" />
+<img src="君たちはどう生きるか.jpg" alt="君たちはどう生きるか" style="width: 50%;" />
+</div>
+
 
 Sejak tahun 2010-an, Studio Ghibli, yang telah lama berkuasa sebagai ikon pencetak sejarah dalam animasi Jepang maupun global, memasuki fase unik yang dapat disebut sebagai "puncak karya" (mahakarya) dari dua sosok penciptanya: Hayao Miyazaki dan Isao Takahata. Melampaui batas-batas hiburan, seri karya yang merujuk pada diri sendiri (self-referential) ini dilahirkan, dengan mengamati karma para kreator itu sendiri, filosofi, serta merenungkan akhir hayat. Bab ini akan membedah tiga mahakarya: "The Wind Rises" (2013), "The Tale of the Princess Kaguya" (2013), dan "The Boy and the Heron" (2023). Ketiga film ini bukan hanya merupakan titik puncak bagi Studio Ghibli, tetapi juga merangkum "kehancuran dan kelahiran kembali". Secara rinci, kita akan menjelajahi pesan-pesan terakhir yang mereka tinggalkan untuk industri animasi, serta transmisi ke generasi berikutnya dari perspektif teknologi dan pemikiran secara mendalam.
 

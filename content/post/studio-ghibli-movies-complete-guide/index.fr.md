@@ -74,6 +74,12 @@ image: "eyecatch.jpg"
 
 # Chapitre 1 : Fondation et premiers chefs-d'œuvre (Nausicaä de la Vallée du Vent, Le Château dans le ciel)
 
+<div style="text-align: center;">
+<img src="風の谷のナウシカ.jpg" alt="風の谷のナウシカ" style="width: 50%;" />
+<img src="天空の城ラピュタ.png" alt="天空の城ラピュタ" style="width: 50%;" />
+</div>
+
+
 ## 1.1 Une singularité dans l'histoire de l'animation, la naissance du Studio Ghibli
 
 Si l'on observe l'industrie de l'animation japonaise, ou plutôt l'histoire de l'animation mondiale dans son ensemble, il est impossible d'ignorer un « événement » majeur survenu au milieu des années 1980. Il s'agit de la création du Studio Ghibli. L'histoire de Ghibli n'est pas simplement celle d'une entreprise ou d'un studio de production, c'est l'histoire même de l'apogée de la technique analogique de l'animation sur celluloïd, et de la fusion miraculeuse entre la « culture populaire » et l'« art » que permet le médium de l'animation. Dans ce chapitre, tout en retraçant les circonstances de la fondation du Studio Ghibli, nous nous pencherons sur ses véritables origines avec *Nausicaä de la Vallée du Vent* (1984) et la première œuvre réalisée sous le nom du Studio Ghibli, *Le Château dans le ciel* (1986). Nous verrons comment Isao Takahata et Hayao Miyazaki, deux génies de l'animation, ont repoussé les limites de cette forme d'expression.
@@ -146,6 +152,13 @@ Ces deux œuvres ont hissé les standards techniques et artistiques à des nivea
 
 # Chapitre 2 : À la croisée du quotidien et de l'extraordinaire — Les mondes de *Mon voisin Totoro*, *Le Tombeau des lucioles* et *Kiki la petite sorcière*
 
+<div style="text-align: center;">
+<img src="となりのトトロ.jpg" alt="となりのトトロ" style="width: 50%;" />
+<img src="火垂るの墓.jpg" alt="火垂るの墓" style="width: 50%;" />
+<img src="魔女の宅急便.jpg" alt="魔女の宅急便" style="width: 50%;" />
+</div>
+
+
 Si l'on explore l'histoire du Studio Ghibli, la fin des années 1980 marque un tournant décisif. Se détournant des grandes épopées de « cape et d'épée » et des aventures aériennes dépeintes dans *Le Château dans le ciel* (1986), Ghibli opère un virage radical vers le « quotidien », explorant les paysages originels du Japon et la vie ordinaire des Occidentaux. Dans ce chapitre, nous analyserons en profondeur trois œuvres qui ont révolutionné l'histoire de l'animation tant sur le plan technique que thématique : *Mon voisin Totoro* et *Le Tombeau des lucioles*, projetés de façon quasi miraculeuse lors d'une même séance en 1988, ainsi que le grand succès de 1989, *Kiki la petite sorcière*.
 
 ## 1. La folie et le miracle d'une double projection : Hayao Miyazaki et Isao Takahata, deux visions de l'ère Showa
@@ -214,6 +227,12 @@ Les trois œuvres que sont *Mon voisin Totoro*, *Le Tombeau des lucioles* et *Ki
 
 
 # Chapitre 3 : La fascination pour le vol et le romantisme de l'âge adulte — L'apogée du réalisme dans *Porco Rosso* et *Si tu tends l'oreille*
+
+<div style="text-align: center;">
+<img src="紅の豚.jpg" alt="紅の豚" style="width: 50%;" />
+<img src="耳をすませば.jpg" alt="耳をすませば" style="width: 50%;" />
+</div>
+
 
 Si l'on survole l'histoire du Studio Ghibli, *Porco Rosso* (1992) et *Si tu tends l'oreille* (1995), sortis au début et au milieu des années 1990, peuvent de prime abord sembler diamétralement opposés. Le premier est une œuvre fantastique située dans la mer Adriatique, racontant les combats et la mélancolie d'un pilote d'hydravion chasseur de primes transformé en cochon par une malédiction. Le second est une chronique adolescente dépeignant avec fraîcheur le premier amour et les doutes d'orientation d'un garçon et d'une fille de collège, dans le décor de la ville nouvelle de Tama, à notre époque.
 
@@ -311,6 +330,11 @@ Tout comme Porco se bat pour défendre la liberté du ciel, Shizuku prend les mo
 
 # Chapitre 4 : Écologie et imagination mythologique (Princesse Mononoké)
 
+<div style="text-align: center;">
+<img src="もののけ姫.jpg" alt="もののけ姫" style="width: 50%;" />
+</div>
+
+
 Sorti en 1997, *Princesse Mononoké* constitue une ligne de partage des eaux incontestable et un prototype monumental dans la carrière du Studio Ghibli et du réalisateur Hayao Miyazaki. L'œuvre a dépassé le simple cadre du film d'animation pour provoquer un impact culturel et industriel colossal, allant jusqu'à réécrire l'histoire même du cinéma japonais. Dans ce chapitre, nous déconstruirons de la manière la plus détaillée possible les thématiques stratifiées de cette œuvre — la déconstruction de l'histoire médiévale japonaise, la dimension non-dualiste du bien et du mal, et la fusion, en tant que tournant technologique, entre les images de synthèse (CG) et l'animation traditionnelle sur celluloïd.
 
 ## 1. Contexte industriel : Explosion du budget et records au box-office
@@ -381,6 +405,12 @@ De plus, le cycle de vie végétal aux pieds du Dieu-Cerf, où les plantes germe
 
 
 # Chapitre 5 : Transition numérique et reconnaissance mondiale (Le Voyage de Chihiro, Le Royaume des chats)
+
+<div style="text-align: center;">
+<img src="千と千尋の神隠し.jpg" alt="千と千尋の神隠し" style="width: 50%;" />
+<img src="猫の恩返し.jpg" alt="猫の恩返し" style="width: 50%;" />
+</div>
+
 
 Dans l'histoire du Studio Ghibli, le début des années 2000 représente l'ère des bouleversements les plus spectaculaires sur les plans technique, expressif et commercial. Ce chapitre détaille à l'extrême, du point de vue des professionnels, comment le passage de l'animation sur celluloïd à un environnement entièrement numérique a étendu les capacités visuelles des œuvres de Ghibli vers des territoires inédits. Nous analyserons les fruits de cette évolution avec *Le Voyage de Chihiro* (2001) et *Le Royaume des chats* (2002), œuvre posant les jalons pour la nouvelle génération, et l'impact culturel et la reconnaissance mondiale qu'ils ont suscités bien au-delà des frontières du Japon.
 
@@ -460,6 +490,12 @@ L'intensité absolue de la signature et de l'univers imposée par *Le Voyage de 
 
 # Chapitre 6 : L'anti-guerre et l'amour, les mécanismes de la magie (Le Château ambulant, Les Contes de Terremer)
 
+<div style="text-align: center;">
+<img src="ハウルの動く城.jpg" alt="ハウルの動く城" style="width: 50%;" />
+<img src="ゲド戦記.png" alt="ゲド戦記" style="width: 50%;" />
+</div>
+
+
 ## Introduction : L'aube d'une nouvelle ère pour Ghibli dans un monde vacillant
 
 Au milieu des années 2000, le Studio Ghibli se trouvait à un tournant majeur. Hayao Miyazaki avait érigé un monument historique dans le cinéma japonais avec *Le Voyage de Chihiro*, remporté un Oscar et consolidé sa réputation mondiale. Cependant, sous ses pieds, le monde réel tremblait. Avec la guerre contre le terrorisme déclenchée à la suite des attentats du 11 septembre 2001, suivie de la guerre d'Irak en 2003, le monde sombrait dans un cycle de divisions et de violences. Dans ce contexte, le regard de Miyazaki se tourne de manière plus frontale vers « la guerre et la folie humaine ».
@@ -505,6 +541,12 @@ Si, dans ses œuvres précédentes (comme *Nausicaä* ou *Princesse Mononoké*),
 Une autre innovation marquante du film est l'« évolution de l'âge » du personnage principal, Sophie. Maudite par la Sorcière des Landes, Sophie passe de jeune fille de 18 ans à une femme de 90 ans. Pourtant, tout au long de l'histoire, son apparence oscille subtilement et sans transition : de vieille femme à jeune fille, de jeune fille à femme d'âge mûr, se synchronisant avec ses fluctuations émotionnelles et son état d'esprit.
 
 Dans le monde de l'animation, refuser de figer le design (l'apparence) d'un personnage constitue un défi extrêmement atypique. Le directeur de l'animation Akihiko Yamashita et son équipe ne se sont pas contentés d'ajouter des rides lorsqu'ils dessinaient la Sophie âgée ; ils ont observé et retranscrit avec minutie la perte de masse osseuse et musculaire, et surtout « le changement de posture face à la gravité ». Lorsqu'elle est âgée, Sophie a le dos voûté et sa démarche est alourdie. Cependant, lorsqu'elle tente de protéger Hauru ou qu'elle reprend confiance en elle et s'exprime avec force, son dos se redresse, ses rides s'effacent, et même le ton de sa voix rajeunit (la prestation vocale époustouflante de Chieko Baisho contribue énormément à ce résultat).
+
+<div style="text-align: center;">
+<img src="崖の上のポニョ.jpg" alt="崖の上のポニョ" style="width: 50%;" />
+<img src="借りぐらしのアリエッティ.jpg" alt="借りぐらしのアリエッティ" style="width: 50%;" />
+</div>
+
 ## 4. *Arrietty, le petit monde des chapardeurs* : Le point de vue d'Hiromasa Yonebayashi, magicien des échelles
 
 Si *Ponyo* a dépeint l'explosion de la force vitale à une échelle macroscopique époustouflante, *Arrietty, le petit monde des chapardeurs*, sorti deux ans plus tard, est un chef-d'œuvre explorant de fond en comble la physique et l'expression visuelle dans un monde microscopique. Ce film, qui marque les débuts en tant que réalisateur de l'animateur hors pair de Ghibli Hiromasa Yonebayashi (surnommé « Maro »), s'inspire du roman pour enfants de Mary Norton. Il ne se contente pas d'utiliser le concept de « petits êtres de 10 cm de haut » comme un simple gadget fantastique ; il le sublime par un réalisme saisissant, obtenu grâce à un calcul rigoureux de l'échelle et des jeux de perspective méticuleux.
@@ -535,6 +577,13 @@ Bien que ces approches se situent aux antipodes — l'infiniment grand et l'infi
 
 
 # Chapitre 8 : L'aboutissement des maîtres et la transmission aux générations futures
+
+<div style="text-align: center;">
+<img src="風立ちぬ.jpg" alt="風立ちぬ" style="width: 50%;" />
+<img src="かぐや姫の物語.jpg" alt="かぐや姫の物語" style="width: 50%;" />
+<img src="君たちはどう生きるか.jpg" alt="君たちはどう生きるか" style="width: 50%;" />
+</div>
+
 
 Dans les années 2010, le Studio Ghibli, qui n'avait cessé de trôner comme une icône marquant l'histoire de l'animation japonaise et même mondiale, est entré dans une phase singulière, véritable « aboutissement » de ses fondateurs, les maîtres Hayao Miyazaki et Isao Takahata. Dépassant le simple cadre du divertissement, on a vu naître une série d'œuvres autoréférentielles où les créateurs ont examiné leur propre karma, leur philosophie, et l'approche de la fin de leur existence. Dans ce chapitre, nous analyserons trois chefs-d'œuvre — *Le vent se lève* (2013), *Le Conte de la princesse Kaguya* (2013), et *Le Garçon et le Héron* (2023) —, qui marquent l'apogée du Studio Ghibli tout en portant en eux « destruction et renaissance », afin d'étudier en détail, sous les angles technique et idéologique, le testament laissé à l'industrie de l'animation et l'héritage pour les générations futures.
 

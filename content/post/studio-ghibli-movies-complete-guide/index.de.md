@@ -10,6 +10,12 @@ image: "eyecatch.jpg"
 
 # Kapitel 1: Gründung und frühe Meisterwerke (Nausicaä aus dem Tal der Winde, Das Schloss im Himmel)
 
+<div style="text-align: center;">
+<img src="風の谷のナウシカ.jpg" alt="風の谷のナウシカ" style="width: 50%;" />
+<img src="天空の城ラピュタ.png" alt="天空の城ラピュタ" style="width: 50%;" />
+</div>
+
+
 ## 1.1 Eine Singularität in der Animationsgeschichte, die Geburt von Studio Ghibli
 
 Wenn man die japanische Animationsindustrie, ja sogar die weltweite Animationsgeschichte überblickt, kann man ein "Ereignis" Mitte der 1980er Jahre nicht ignorieren. Das ist genau die Gründung von Studio Ghibli. Die Geschichte von Ghibli ist nicht einfach die Geschichte eines einzelnen Unternehmens oder eines Produktionsstudios, sondern die Geschichte des Höhepunkts des Ausdrucks, den die analoge Technologie der Cel-Animation erreicht hat, und der wunderbaren Verschmelzung von "Popularität" und "Künstlerischer Qualität", die das Medium der Animation in sich trägt. In diesem Kapitel werden wir, während wir die Hintergründe der Gründung von Studio Ghibli entwirren, den Fokus auf seinen eigentlichen Ursprung "Nausicaä aus dem Tal der Winde" (1984) und das erste Werk unter dem Namen Studio Ghibli, "Das Schloss im Himmel" (1986), legen und diskutieren, wie die beiden Genies Isao Takahata und Hayao Miyazaki die Grenzen des Animationsausdrucks durchbrochen haben.
@@ -84,6 +90,13 @@ Diese beiden Werke haben die technischen und ausdrucksstarken Standards in weite
 
 
 # Kapitel 2: Die Kreuzung von Alltag und Außergewöhnlichem —— Die Welt von "Mein Nachbar Totoro", "Die letzten Glühwürmchen" und "Kikis kleiner Lieferservice"
+
+<div style="text-align: center;">
+<img src="となりのトトロ.jpg" alt="となりのトトロ" style="width: 50%;" />
+<img src="火垂るの墓.jpg" alt="火垂るの墓" style="width: 50%;" />
+<img src="魔女の宅急便.jpg" alt="魔女の宅急便" style="width: 50%;" />
+</div>
+
 
 Bei der Entschlüsselung der Geschichte von Studio Ghibli war die zweite Hälfte der 1980er Jahre eine Zeit, die zu einem entscheidenden Wendepunkt wurde. Abkehr von den epischen "Schwertern und Magie" oder "fliegenden Abenteuer-Action-Spektakeln", wie sie im vorherigen Werk "Das Schloss im Himmel" (1986) dargestellt wurden, lenkte Ghibli stark in Richtung des "Alltäglichen" wie den ursprünglichen Landschaften Japans oder dem Leben der gewöhnlichen Menschen im Westen. In diesem Kapitel werden wir uns drei Werke ansehen – "Mein Nachbar Totoro" und "Die letzten Glühwürmchen", die 1988 eine wundersame gleichzeitige Veröffentlichung erreichten, sowie den Blockbuster "Kikis kleiner Lieferservice" von 1989 – und gründlich sezieren, welche technischen und thematischen Revolutionen diese in der Geschichte der Animation hinterlassen haben.
 
@@ -163,6 +176,12 @@ Die drei Werke „Mein Nachbar Totoro“, „Die letzten Glühwürmchen“ und �
 
 
 # Kapitel 3: Sehnsucht nach dem Fliegen und die Romantik der Erwachsenen – Der Höhepunkt des Realismus in „Porco Rosso“ und „Stimme des Herzens“
+
+<div style="text-align: center;">
+<img src="紅の豚.jpg" alt="紅の豚" style="width: 50%;" />
+<img src="耳をすませば.jpg" alt="耳をすませば" style="width: 50%;" />
+</div>
+
 
 Betrachtet man die Geschichte von Studio Ghibli, so scheinen „Porco Rosso“ (1992) und „Stimme des Herzens“ (1995), die in der ersten Hälfte bis Mitte der 1990er Jahre veröffentlicht wurden, auf den ersten Blick zwei völlig entgegengesetzte Werke zu sein. Während Ersteres eine Fantasie ist, die in der Adria spielt und den Kampf und die Melancholie eines fliegenden Kopfgeldjägers darstellt, der durch einen Fluch in ein Schwein verwandelt wurde, ist Letzteres ein Jugend-Ensembledrama, das in der modernen Tama New Town spielt und die unschuldige Liebe und die Konflikte über den zukünftigen Weg von Mittelschülern schildert.
 
@@ -261,6 +280,11 @@ So wie Porco kämpft, um die Freiheit des Himmels zu verteidigen, ergreift auch 
 
 # Kapitel 4: Ökologie und mythologische Vorstellungskraft (Prinzessin Mononoke)
 
+<div style="text-align: center;">
+<img src="もののけ姫.jpg" alt="もののけ姫" style="width: 50%;" />
+</div>
+
+
 „Prinzessin Mononoke“, veröffentlicht 1997, ist ein monumentaler Prototyp, der zu einem klaren Wendepunkt in der Karriere des Studios Ghibli und des Regisseurs Hayao Miyazaki wurde. Dieses Werk sprengte den Rahmen eines bloßen Animationsfilms und hatte eine so enorme kulturelle und industrielle Wirkung, dass es die Geschichte des japanischen Films neu schrieb. In diesem Kapitel werden wir die vielschichtigen Themen dieses Werkes – die Dekonstruktion der japanischen Geschichte des Mittelalters, die non-dualistische Phase von Gut und Böse und die Verschmelzung von Computergrafik (CG) und traditioneller Cel-Animation als technologischen Wendepunkt – bis ins äußerste Detail aufschlüsseln.
 
 ## 1. Industrieller Kontext: Explosion der Produktionskosten und Erneuerung der Kassenrekorde
@@ -330,6 +354,12 @@ Auch der Lebenszyklus, bei dem Pflanzen zu Füßen des Shishigami augenblicklich
 
 
 # Kapitel 5: Digitaler Übergang und weltweite Anerkennung (Chihiros Reise ins Zauberland, Das Königreich der Katzen)
+
+<div style="text-align: center;">
+<img src="千と千尋の神隠し.jpg" alt="千と千尋の神隠し" style="width: 50%;" />
+<img src="猫の恩返し.jpg" alt="猫の恩返し" style="width: 50%;" />
+</div>
+
 
 In der Geschichte von Studio Ghibli waren die frühen 2000er Jahre die Ära des dramatischsten technologischen, expressiven und kommerziellen Wendepunkts. In diesem Kapitel wird aus der Perspektive eines Profis im Detail beschrieben, wie der Übergang von der Cel-Animation zu einer vollständig digitalen Umgebung die visuelle Darstellung von Ghibli-Werken in nie dagewesene Sphären ausdehnte und welche weltweite Anerkennung und kulturellen Einfluss die daraus resultierenden Werke „Chihiros Reise ins Zauberland“ (2001) und das als Wegbereiter für die nächste Generation dienende „Das Königreich der Katzen“ (2002) über die Grenzen Japans hinaus brachten.
 
@@ -408,6 +438,12 @@ Die überwältigende Autorschaft und die Intensität der Welt, mit der "Chihiros
 
 
 # Kapitel 6: Antikrieg und Liebe, der Mechanismus der Magie (Das wandelnde Schloss, Die Chroniken von Erdsee)
+
+<div style="text-align: center;">
+<img src="ハウルの動く城.jpg" alt="ハウルの動く城" style="width: 50%;" />
+<img src="ゲド戦記.png" alt="ゲド戦記" style="width: 50%;" />
+</div>
+
 
 ## Einleitung: Der Beginn einer neuen Ghibli-Ära und eine ins Wanken geratene Welt
 
@@ -520,6 +556,12 @@ Magie (Animation) ist nicht allmächtig. Doch gerade das Bestreben, ihre Grenzen
 
 # Kapitel 7: Der Ursprung des Lebens und die Rückkehr zur handgezeichneten Animation (Ponyo - Das große Abenteuer am Meer, Arrietty – Die wundersame Welt der Borger)
 
+<div style="text-align: center;">
+<img src="崖の上のポニョ.jpg" alt="崖の上のポニョ" style="width: 50%;" />
+<img src="借りぐらしのアリエッティ.jpg" alt="借りぐらしのアリエッティ" style="width: 50%;" />
+</div>
+
+
 Betrachtet man die Geschichte von Studio Ghibli und letztlich die gesamte Geschichte der japanischen Animation aus der Vogelperspektive, so positioniert sich die Zeit von den späten 2000ern bis zu den frühen 2010er Jahren als ein äußerst außergewöhnlicher technischer und ideologischer Wendepunkt. In Hollywood dominierten vollständig 3DCG-animierte Filme, repräsentiert von Pixar und DreamWorks, als De-facto-Standard den Kinomarkt. Auch in den heimischen japanischen TV-Anime und Kinoproduktionen hatte sich die Digitalisierung des Produktionsprozesses (wie digitales Bemalen und das Zeichnen von Hintergründen sowie Mechanik durch 3DCG) als irreversible Welle vollständig etabliert.
 
 In diesem goldenen Zeitalter der Digitalisierung, das von "Effizienz und berechneter Genauigkeit" beherrscht wurde, steuerten Hayao Miyazaki und Studio Ghibli in eine völlig entgegengesetzte Richtung. Das waren "die kompromisslose Rückkehr zur handgezeichneten Animation" und "das Streben nach einer primitiven Darstellung des Lebens". In diesem Kapitel werden wir tief in die technischen und ideologischen Abgründe eindringen, wie Ghibli "den Atem des Lebens in der Animation" auf Zelluloid bannte. Dabei vergleichen wir den Wahnsinn der makroskopischen Flüssigkeitsanimation in Hayao Miyazakis "Ponyo - Das große Abenteuer am Meer" (2008) mit der Neudefinition von mikroskopischer Perspektivverschiebung und Größenverhältnissen im Regiedebüt von Hiromasa Yonebayashi, "Arrietty – Die wundersame Welt der Borger" (2010).
@@ -585,6 +627,13 @@ Obwohl die Ausrichtungen der Herangehensweisen an entgegengesetzten Polen von Ma
 
 
 # Kapitel 8: Die Zusammenfassung der Meister und das Vermächtnis für die Zukunft
+
+<div style="text-align: center;">
+<img src="風立ちぬ.jpg" alt="風立ちぬ" style="width: 50%;" />
+<img src="かぐや姫の物語.jpg" alt="かぐや姫の物語" style="width: 50%;" />
+<img src="君たちはどう生きるか.jpg" alt="君たちはどう生きるか" style="width: 50%;" />
+</div>
+
 
 Studio Ghibli, das in der japanischen Animationsgeschichte und als globaler Wegbereiter an der Spitze stand, trat ab den 2010er Jahren in eine einzigartige Phase ein, die als "Zusammenfassung" der beiden Meister und Gründer Hayao Miyazaki und Isao Takahata bezeichnet werden kann. Über den Rahmen bloßer Unterhaltung hinaus entstand eine Reihe selbstreferenzieller Werke, die das Karma und die Philosophie der Schöpfer selbst sowie das Ende ihres eigenen Lebens in den Blick nahmen. In diesem Kapitel sezieren wir drei Meisterwerke – "Wie der Wind sich hebt" (2013), "Die Legende der Prinzessin Kaguya" (2013) und "Der Junge und der Reiher" (2023) –, die die Höhepunkte des Studio Ghibli darstellen und gleichzeitig "Zerstörung und Wiedergeburt" in sich bergen. Wir werden detailliert auf ihr Testament an die Animationsindustrie und ihre Vermächtnisse an die nächste Generation aus technologischer und philosophischer Perspektive eingehen.
 
