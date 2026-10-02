@@ -1,0 +1,9 @@
+---
+title: "Cómo funciona Internet: Desde los cables submarinos hasta la Web3, la visión completa de la gigantesca red que conecta al mundo"
+description: "¿Cómo funciona la infraestructura más grande en la historia de la humanidad? Un análisis exhaustivo desde su historia, protocolos y capa física hasta las comunicaciones del futuro."
+categories: ["technology", "network"]
+tags: ["tech", "internet", "network", "infrastructure"]
+slug: "how-the-internet-works-comprehensive-guide"
+date: "2026-10-02T11:46:18+09:00"
+image: "eyecatch.jpg"
+---

@@ -1,0 +1,9 @@
+---
+title: "インターネットの仕組み：海底ケーブルからWeb3まで、世界を繋ぐ巨大ネットワークの全貌"
+description: "人類史上最大のインフラはいかにして動いているのか。歴史、プロトコル、物理層から未来の通信までを徹底解剖。"
+categories: ["technology", "network"]
+tags: ["tech", "internet", "network", "infrastructure"]
+slug: "how-the-internet-works-comprehensive-guide"
+date: "2026-10-02T11:46:18+09:00"
+image: "eyecatch.jpg"
+---
