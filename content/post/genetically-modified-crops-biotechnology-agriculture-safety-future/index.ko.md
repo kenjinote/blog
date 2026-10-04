@@ -63,7 +63,7 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    PEP["포스포에놀피루브산 (PEP)"] + S3P["시키메이트-3-인산 (S3P)"] --> ENZ{"식물성 EPSPS 효소"}
+    PEP["포스포에놀피루브산 (PEP)"] & S3P["시키메이트-3-인산 (S3P)"] --> ENZ{"식물성 EPSPS 효소"}
     GLY["제초제 글리포세이트 살포"] -. "활성 부위 경쟁적 저해" .-> ENZ
     ENZ -- "효소 불활성화" --> ARO["방향족 아미노산 결핍 -> 식물 고사"]
     

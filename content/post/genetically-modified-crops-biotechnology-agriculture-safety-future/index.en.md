@@ -102,7 +102,7 @@ Monsanto researchers isolated *Agrobacterium* sp. strain CP4 from glyphosate fac
 
 ```mermaid
 flowchart TD
-    PEP["Phosphoenolpyruvate (PEP)"] + S3P["Shikimate-3-Phosphate (S3P)"] --> ENZ{"Plant Class I EPSPS"}
+    PEP["Phosphoenolpyruvate (PEP)"] & S3P["Shikimate-3-Phosphate (S3P)"] --> ENZ{"Plant Class I EPSPS"}
     GLY["Glyphosate Application"] -. "Competitive Inhibition at PEP Site" .-> ENZ
     ENZ -- "Enzyme Inactivation" --> ARO["Aromatic Amino Acid Depletion -> Plant Death"]
     
@@ -312,7 +312,7 @@ Gene flow via pollen dispersal is a natural biological process governed by sexua
 flowchart TD
     REF["Mandatory Non-Bt Refuge Area (5-20% Acreage)"] --> RR["Abundant Homozygous Susceptible Moths (RR)"]
     BT["Bt Crop Acreage"] --> RES["Rare Emergent Resistant Moths (rr)"]
-    RR + RES -- "Random Interbreeding" --> HET["Heterozygous Progeny (Rr)"]
+    RR & RES -- "Random Interbreeding" --> HET["Heterozygous Progeny (Rr)"]
     HET -- "Feed on Bt Crop" --> DIE["100% Mortality (Recessive Resistance Overcome)"]
 ```
 

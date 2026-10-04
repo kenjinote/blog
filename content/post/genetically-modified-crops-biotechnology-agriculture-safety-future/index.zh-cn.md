@@ -64,7 +64,7 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    PEP["磷酸烯醇式丙酮酸 (PEP)"] + S3P["莽草酸-3-磷酸 (S3P)"] --> ENZ{"植物天然EPSPS酶"}
+    PEP["磷酸烯醇式丙酮酸 (PEP)"] & S3P["莽草酸-3-磷酸 (S3P)"] --> ENZ{"植物天然EPSPS酶"}
     GLY["喷洒除草剂草甘膦"] -. "竞争性抑制活性位点" .-> ENZ
     ENZ -- "酶活性丧失" --> ARO["芳香族氨基酸耗尽 -> 植株凋亡"]
     
