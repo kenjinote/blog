@@ -7,8 +7,8 @@ tags: ["Yosano Akiko"]
 draft: false
 categories: ["it-technology"]
 description: 'Explicaremos a vida e as obras-primas da poeta Akiko Yosano, que atuou da era Meiji até a era Showa. Apresentaremos suas conquistas de maneira fácil de entender, como sua primeira antologia de poemas, ''Midaregami'', que compôs apaixonadamente sobre os sentimentos românticos de uma mulher, e o poema pacifista ''Kimi Shinitamou Koto Nakare'', que criticava a Guerra Russo-Japonesa.'
+image: eyecatch.jpg
 ---
-
 ![img.png](img.webp)
 
 ## 🔹 Resumo do Perfil

@@ -7,8 +7,8 @@ tags: ["Tag 1", "Tag 2"]
 draft: true
 categories: ["it-technology"]
 description: 'Introducing a useful template for creating blog articles. It covers basic Markdown formats useful for SEO-conscious article creation, such as heading structure, lists, code blocks, and quotes. Please use it for efficient article writing.'
+image: eyecatch.jpg
 ---
-
 # Blog Title
 
 ## Subtitle

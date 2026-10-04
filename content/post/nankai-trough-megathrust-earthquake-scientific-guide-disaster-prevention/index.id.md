@@ -9,8 +9,8 @@ categories: ["earthquake-science", "disaster-prevention"]
 tags: ["nankai-trough", "megathrust-earthquake", "tsunami", "plate-tectonics", "disaster-preparedness", "seismology", "crisis-management"]
 draft: false
 eyecatch: "eyecatch.jpg"
+image: eyecatch.jpg
 ---
-
 ## Pendahuluan: Ancaman Eksistensial Terbesar bagi Jepang
 Palung Nankai (Nankai Trough) adalah zona subduksi sepanjang 700 hingga 800 km di lepas pantai barat daya Jepang. Lempeng Laut Filipina menunjam di bawah Lempeng Eurasia sebesar 4 hingga 6 cm per tahun. Dengan probabilitas 70-80% dalam 30 tahun mendatang, gempa megathrust M8-9 diprediksi memicu tsunami setinggi 34 meter, 323.000 korban jiwa, dan kerugian ekonomi hingga 220 triliun yen ($1,5 triliun).
 

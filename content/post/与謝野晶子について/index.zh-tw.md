@@ -7,8 +7,8 @@ tags: ["與謝野晶子"]
 draft: false
 categories: ["it-technology"]
 description: '解說活躍於明治至昭和時期的歌人──與謝野晶子的生平與代表作。淺顯易懂地介紹她的功績，例如熱情吟詠女性戀愛感情的處女歌集《亂髮》，以及批評日俄戰爭的和平主義詩作《君莫死》等。'
+image: eyecatch.jpg
 ---
-
 ![img.png](img.webp)
 
 ## 🔹 人物簡介

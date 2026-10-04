@@ -3,7 +3,7 @@ title: "عجائب الفيزياء: آلية عمل LED - لماذا يضيء؟
 description: "مبدأ انبعاث الضوء في مصابيح LED، التي لا غنى عنها في الإضاءة والشاشات الحديثة، وتاريخ تطوير LED الأزرق الحائز على جائزة نوبل."
 slug: "physics-led-mechanism"
 date: "2026-09-23T02:00:00+09:00"
-image: "eyecatch.jpg"
+image: eyecatch.jpg
 categories:
     - "science"
     - "physics"

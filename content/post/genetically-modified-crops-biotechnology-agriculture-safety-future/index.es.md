@@ -9,8 +9,8 @@ categories: ["biotechnology", "agriculture-science"]
 tags: ["gmo", "genetic-engineering", "genome-editing", "crispr-cas9", "food-safety", "sustainable-agriculture", "biosecurity"]
 draft: false
 eyecatch: "eyecatch.jpg"
+image: eyecatch.jpg
 ---
-
 ## Introducción: El horizonte de la biotecnología vegetal
 
 La historia de la civilización humana es la historia de la modificación deliberada de los genomas vegetales. Desde la revolución neolítica hace 10.000 años, la humanidad seleccionó gramíneas silvestres suprimiendo la dispersión natural de granos, aumentando el tamaño de los órganos comestibles y eliminando toxinas endógenas.

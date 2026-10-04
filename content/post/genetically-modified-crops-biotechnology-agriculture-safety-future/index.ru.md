@@ -9,8 +9,8 @@ categories: ["biotechnology", "agriculture-science"]
 tags: ["gmo", "genetic-engineering", "genome-editing", "crispr-cas9", "food-safety", "sustainable-agriculture", "biosecurity"]
 draft: false
 eyecatch: "eyecatch.jpg"
+image: eyecatch.jpg
 ---
-
 ## Введение: Научный горизонт биотехнологии растений
 
 История человеческой цивилизации неразрывно связана с направленной модификацией геномов растений. Около 10 000 лет назад, в эпоху неолитической революции, человек начал отбор дикорастущих трав, закрепляя устойчивость к осыпанию семян, увеличивая съедобную биомассу и удаляя природные токсины.

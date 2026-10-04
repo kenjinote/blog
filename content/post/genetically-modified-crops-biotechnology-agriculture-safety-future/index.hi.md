@@ -9,8 +9,8 @@ categories: ["biotechnology", "agriculture-science"]
 tags: ["gmo", "genetic-engineering", "genome-editing", "crispr-cas9", "food-safety", "sustainable-agriculture", "biosecurity"]
 draft: false
 eyecatch: "eyecatch.jpg"
+image: eyecatch.jpg
 ---
-
 ## प्रस्तावना: पादप जैव प्रौद्योगिकी का क्षितिज
 
 मानव कृषि का इतिहास फसलों के जीनोम में निरंतर सुधार का इतिहास है। 10,000 वर्ष पूर्व नवपाषाण कृषि क्रांति के समय से ही मानव ने जंगली घासों में से प्राकृतिक रूप से बीज न बिखरने वाले, बड़े फल वाले और कम विषाक्तता वाले पौधों का चयन किया। आधुनिक मक्का का विकास इसके जंगली पूर्वज थियोसिंटे (*Teosinte*) से इसी निरंतर चयन प्रक्रिया के माध्यम से हुआ।

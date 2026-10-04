@@ -9,8 +9,8 @@ categories: ["earthquake-science", "disaster-prevention"]
 tags: ["nankai-trough", "megathrust-earthquake", "tsunami", "plate-tectonics", "disaster-preparedness", "seismology", "crisis-management"]
 draft: false
 eyecatch: "eyecatch.jpg"
+image: eyecatch.jpg
 ---
-
 ## 引言：日本面临的最大国家级生存危机
 南海海槽（Nankai Trough）是位于日本本州、四国及九州南侧沿海长达700至800公里的深海俯冲带。菲律宾海板块正以每年4至6厘米的速度向西北俯冲至欧亚板块之下。根据日本地震调查研究推进本部的评估，未来30年内发生里氏8至9级特大地震的概率高达70%至80%。最严重情景下，将引发高达34米的毁灭性海啸，导致多达32.3万人遇难，238万栋建筑倒塌损毁，经济损失超过220万亿日元（约1.5万亿美元）。
 

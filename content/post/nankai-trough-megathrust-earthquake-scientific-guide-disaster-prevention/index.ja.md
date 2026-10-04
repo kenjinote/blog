@@ -9,8 +9,8 @@ categories: ["earthquake-science", "disaster-prevention"]
 tags: ["nankai-trough", "megathrust-earthquake", "tsunami", "plate-tectonics", "disaster-preparedness", "seismology", "crisis-management"]
 draft: false
 eyecatch: "eyecatch.jpg"
+image: eyecatch.jpg
 ---
-
 ## はじめに：日本列島最大の危機「南海トラフ巨大地震」の本質
 
 日本列島の南西沖、駿河湾から遠州灘、熊野灘、潮岬沖、室戸岬沖を経て日向灘に至る約700〜800キロメートルに及ぶ深海溝――「南海トラフ（Nankai Trough）」。ここは、海洋プレートであるフィリピン海プレートが、陸側のユーラシアプレート（西南日本弧）の下へと毎年数センチメートルの速度で着実に沈み込み続けている、地球上で最も活動的かつ危険なプレート境界沈み込み帯（Subduction Zone）である。
@@ -62,7 +62,10 @@ flowchart LR
 
 摩擦係数 $\mu$ は、すべり速度 $V$ および接触面の状態変数 $	heta$ に依存し、以下の基本方程式で表される：
 
-$$	au = \sigma_n \left[ \mu_0 + a \ln\left(rac{V}{V_0}ight) + b \ln\left(rac{V_0 	heta}{L}ight) ight]$$
+$$	au = \sigma_n \left[ \mu_0 + a \ln\left(rac{V}{V_0}
+ight) + b \ln\left(rac{V_0 	heta}{L}
+ight) 
+ight]$$
 
 ここで、$	au$ は剪断応力、$\sigma_n$ は有効垂直応力、$a$ および $b$ は無次元の摩擦パラメータ、$L$ は特性すべり距離である。この構成則において、$(a - b)$ の符号が境界の力学的性質を決定づける：
 

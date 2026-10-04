@@ -7,8 +7,8 @@ tags: ["タグ1", "タグ2"]
 draft: true
 categories: ["it-technology"]
 description: 'ブログ記事の作成に便利なテンプレートをご紹介。見出しの構成やリスト、コードブロック、引用など、SEOを意識した記事作りに役立つMarkdownの基本フォーマットを網羅しています。効率的な記事執筆にぜひご活用ください。'
+image: eyecatch.jpg
 ---
-
 # プログタイトル
 
 ## サブタイトル

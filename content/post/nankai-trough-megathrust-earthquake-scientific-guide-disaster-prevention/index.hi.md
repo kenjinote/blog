@@ -9,8 +9,8 @@ categories: ["earthquake-science", "disaster-prevention"]
 tags: ["nankai-trough", "megathrust-earthquake", "tsunami", "plate-tectonics", "disaster-preparedness", "seismology", "crisis-management"]
 draft: false
 eyecatch: "eyecatch.jpg"
+image: eyecatch.jpg
 ---
-
 ## प्रस्तावना: जापान का सबसे बड़ा अस्तित्वगत संकट
 नानकाई ट्रफ (Nankai Trough) दक्षिण-पश्चिमी जापान के तट पर स्थित 700 से 800 किमी लंबी एक सबडक्शन खाई है। यहां फिलीपीन सागर प्लेट प्रति वर्ष 4 से 6 सेमी की दर से यूरेशियन प्लेट के नीचे धंस रही है। अगले 30 वर्षों में यहां 8 से 9 तीव्रता का महा-भूकंप आने की संभावना 70-80% है, जिससे 34 मीटर तक ऊंची सुनामी आ सकती है और 3,23,000 लोगों की जान जा सकती है।
 

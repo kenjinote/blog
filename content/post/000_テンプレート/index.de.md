@@ -7,8 +7,8 @@ tags: ["Tag 1", "Tag 2"]
 draft: true
 categories: ["it-technology"]
 description: 'Wir stellen eine praktische Vorlage für die Erstellung von Blogartikeln vor. Sie deckt die grundlegenden Markdown-Formate ab, die für SEO-bewusstes Schreiben nützlich sind, wie Überschriftenstrukturen, Listen, Codeblöcke und Zitate. Bitte nutzen Sie diese für ein effizientes Schreiben von Artikeln.'
+image: eyecatch.jpg
 ---
-
 # Blog-Titel
 
 ## Untertitel

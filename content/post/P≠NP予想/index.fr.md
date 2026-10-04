@@ -7,8 +7,8 @@ tags: ["Conjecture P≠NP", "Mathématiques", "Problèmes non résolus"]
 draft: false
 categories: ["math-cryptography-quantum"]
 description: 'Concernant le plus grand problème non résolu de l''informatique ''La conjecture P≠NP'', explique clairement la vue d''ensemble du point de vue des machines de Turing déterministes, tout en abordant la différence entre la ''Classe P'', qui peut être résolue en temps polynomial, et la ''Classe NP'', où la validité de la solution peut être vérifiée en temps polynomial.'
+image: eyecatch.jpg
 ---
-
 # Aperçu
 
 ```

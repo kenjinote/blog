@@ -1,12 +1,4 @@
 ---
-
-
-
-
-
-
-
-
 title: '¿Qué es la conjetura P≠NP? Explicación sencilla del problema no resuelto de la teoría de la complejidad computacional y la diferencia entre P y NP'
 date: "2026-09-24T19:44:38+09:00"
 slug: "Conjetura P≠NP"
@@ -15,16 +7,8 @@ tags: ["Conjetura P≠NP", "Matemáticas", "Problemas no resueltos"]
 draft: false
 categories: ["math-cryptography-quantum"]
 description: 'Sobre la ''conjetura P≠NP'', el mayor problema no resuelto en ciencias de la computación, explicamos su concepto desde la perspectiva de las máquinas de Turing deterministas, aclarando la diferencia entre la ''clase P'', que se puede resolver en tiempo polinomial, y la ''clase NP'', donde la exactitud de la solución se puede verificar en tiempo polinomial.'
+image: eyecatch.jpg
 ---
-
-
-
-
-
-
-
-
-
 # Resumen
 
 ```

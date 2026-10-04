@@ -7,8 +7,8 @@ tags: ["आइकन", "LoadIcon", "DestroyIcon", "विंडोज़ प्�
 draft: false
 categories: ["programming"]
 description: 'हम उन शर्तों की व्याख्या करेंगे कि Windows API के LoadIcon या LoadImage के साथ प्राप्त आइकन संसाधन के लिए DestroyIcon को कॉल किया जाना चाहिए या नहीं। हमने संसाधन रिसाव (Resource Leak) को रोकने के लिए सही विशिष्टताओं को व्यवस्थित किया है。'
+image: eyecatch.jpg
 ---
-
 # DestroyIcon को कॉल करने की आवश्यकता के बारे में
 
 निम्नलिखित मामलों में DestroyIcon को कॉल करना आवश्यक है:

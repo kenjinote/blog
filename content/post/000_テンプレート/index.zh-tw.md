@@ -7,8 +7,8 @@ tags: ["標籤1", "標籤2"]
 draft: true
 categories: ["it-technology"]
 description: '為您介紹撰寫部落格文章的實用範本。涵蓋了標題架構、清單、程式碼區塊、引用等有助於建立具備SEO意識文章的Markdown基本格式。請務必善加利用，以提升文章的撰寫效率。'
+image: eyecatch.jpg
 ---
-
 # 部落格標題
 
 ## 副標題

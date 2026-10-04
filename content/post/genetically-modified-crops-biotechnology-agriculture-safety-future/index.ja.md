@@ -9,8 +9,8 @@ categories: ["biotechnology", "agriculture-science"]
 tags: ["gmo", "genetic-engineering", "genome-editing", "crispr-cas9", "food-safety", "sustainable-agriculture", "biosecurity"]
 draft: false
 eyecatch: "eyecatch.jpg"
+image: eyecatch.jpg
 ---
-
 ## はじめに：作物の遺伝子技術をめぐる知の地平
 
 人類の歴史は、植物のゲノムを自らの生存に適した形へと改変し続けてきた「育種の歴史」に他ならない。約1万年前に始まった農耕以来、人間は野生の草本植物から脱粒性を奪い、可食部を巨大化させ、毒素を抜くことで現代の主要穀物（トウモロコシ、イネ、コムギ、大豆）を創り出してきた。

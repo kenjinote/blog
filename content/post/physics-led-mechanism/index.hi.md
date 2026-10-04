@@ -3,7 +3,7 @@ title: "भौतिकी का चमत्कार: एलईडी का 
 description: "एलईडी के प्रकाश उत्सर्जन सिद्धांत, जो आधुनिक प्रकाश और डिस्प्ले के लिए आवश्यक हैं, और नोबेल पुरस्कार विजेता नीले एलईडी विकास का इतिहास।"
 slug: "physics-led-mechanism"
 date: "2026-09-23T02:00:00+09:00"
-image: "eyecatch.jpg"
+image: eyecatch.jpg
 categories:
     - "science"
     - "physics"

@@ -9,8 +9,8 @@ categories: ["earthquake-science", "disaster-prevention"]
 tags: ["nankai-trough", "megathrust-earthquake", "tsunami", "plate-tectonics", "disaster-preparedness", "seismology", "crisis-management"]
 draft: false
 eyecatch: "eyecatch.jpg"
+image: eyecatch.jpg
 ---
-
 ## Введение: Величайшая угроза для Японии
 Желоб Нанкай (Nankai Trough) — это активная зона субдукции протяженностью 700–800 км, где Филиппинская плита погружается под Евразийскую плиту со скоростью 4–6 см в год. С вероятностью 70–80% в ближайшие 30 лет здесь произойдет мегаземлетрясение магнитудой 8–9, способное вызвать цунами высотой до 34 метров, гибель свыше 323 000 человек и ущерб более 220 трлн иен ($1,5 трлн).
 

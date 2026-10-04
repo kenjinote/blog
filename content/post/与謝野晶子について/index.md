@@ -7,8 +7,8 @@ tags: ["与謝野晶子"]
 draft: false
 categories: ["it-technology"]
 description: '明治から昭和にかけて活躍した歌人・与謝野晶子の生涯や代表作について解説します。女性の恋愛感情を情熱的に詠んだ処女歌集『みだれ髪』や、日露戦争を批判した平和主義の詩『君死にたまふことなかれ』など、彼女の功績をわかりやすく紹介します。'
+image: eyecatch.jpg
 ---
-
 ![img.png](img.webp)
 
 ## 🔹 人物概要

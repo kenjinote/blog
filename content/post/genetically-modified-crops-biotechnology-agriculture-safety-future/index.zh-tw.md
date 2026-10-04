@@ -9,8 +9,8 @@ categories: ["biotechnology", "agriculture-science"]
 tags: ["gmo", "genetic-engineering", "genome-editing", "crispr-cas9", "food-safety", "sustainable-agriculture", "biosecurity"]
 draft: false
 eyecatch: "eyecatch.jpg"
+image: eyecatch.jpg
 ---
-
 ## 引言：作物基因技術的知識前沿
 
 人類文明的演進史本質上是一部作物基因組的人工改良史。約一萬年前的新石器時代農業革命伊始，人類便開始對野生草本植物進行經驗性的人工選擇：消除種子的落粒性、增大可食用器官的體積、降低天然苦味與抗營養毒素。現代玉米的祖先大芻草（Teosinte）僅有5至12粒堅硬的小籽粒，正是透過對關鍵形態轉錄因子（如 *tb1*, *tga1*）的持續選擇，才演化出如今結出數百粒籽粒的現代高產玉米。

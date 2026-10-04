@@ -11,8 +11,8 @@ aliases: ["migrate-from-jekyl"]
 ShowToc: true
 TocOpen: true
 draft: true
+image: eyecatch.jpg
 ---
-
 Este artigo oferece um exemplo da sintaxe básica do Markdown que pode ser usada em arquivos de conteúdo do Hugo. Além disso, mostra se os elementos HTML básicos são decorados com CSS em um tema do Hugo.
 
 <!--more-->

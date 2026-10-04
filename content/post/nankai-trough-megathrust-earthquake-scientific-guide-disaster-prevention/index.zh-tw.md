@@ -9,8 +9,8 @@ categories: ["earthquake-science", "disaster-prevention"]
 tags: ["nankai-trough", "megathrust-earthquake", "tsunami", "plate-tectonics", "disaster-preparedness", "seismology", "crisis-management"]
 draft: false
 eyecatch: "eyecatch.jpg"
+image: eyecatch.jpg
 ---
-
 ## 引言：日本面臨的最大國家級生存危機
 南海海槽（Nankai Trough）是位於日本西南外海長達700至800公里的深海隱沒帶。菲律賓海板塊正以每年4至6公分的速度隱沒於歐亞板塊之下。未來30年內發生規模8至9級特大地震的機率高達70%至80%。最嚴重情景下，將引發高達34公尺的毀滅性海嘯，造成32.3萬人罹難，238萬棟建築倒塌，經濟損失超過220兆日圓。
 

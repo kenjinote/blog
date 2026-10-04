@@ -7,8 +7,8 @@ tags: ["与谢野晶子"]
 draft: false
 categories: ["it-technology"]
 description: '解说活跃于明治至昭和时期的歌人——与谢野晶子的生平及其代表作。通俗易懂地介绍她的成就，包括热情咏叹女性恋爱感情的处女诗集《乱发》，以及批判日俄战争的和平主义诗作《君毋死》等。'
+image: eyecatch.jpg
 ---
-
 ![img.png](img.webp)
 
 ## 🔹 人物概要

@@ -1,12 +1,4 @@
 ---
-
-
-
-
-
-
-
-
 title: 'Texto completo y análisis de ''Tú no debes morir'' de Akiko Yosano: los sentimientos hacia su hermano en un poema pacifista'
 date: "2026-09-24T19:44:38+09:00"
 slug: "『Kimi Shinitamou koto nakare』"
@@ -15,16 +7,8 @@ tags: ["Akiko Yosano", "No mueras", "poesía", "poesía pacifista"]
 draft: false
 categories: ["it-technology"]
 description: 'Publicamos el texto completo de ''Tú no debes morir'' (Kimi Shinitamou koto nakare), el representativo poema pacifista de Akiko Yosano, compuesto pensando en su hermano menor que servía en el asedio de Port Arthur durante la Guerra Ruso-Japonesa. Desciframos los antecedentes de esta obra maestra que apela al amor familiar y a la santidad de la vida, y su profundo mensaje.'
+image: eyecatch.jpg
 ---
-
-
-
-
-
-
-
-
-
 ![img.png](img.webp)
 
 # Akiko Yosano

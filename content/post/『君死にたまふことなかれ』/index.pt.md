@@ -7,8 +7,8 @@ tags: ["Akiko Yosano", "Não dês a tua vida", "poesia", "poesia anti-guerra"]
 draft: false
 categories: ["it-technology"]
 description: 'Publicamos o texto completo de ''Kimi Shinitamou Koto Nakare'', o poema anti-guerra representativo de Akiko Yosano, composto em pensamento ao seu irmão mais novo servindo no Cerco de Port Arthur durante a Guerra Russo-Japonesa. Desvendamos o contexto desta obra-prima que apela ao amor familiar e à preciosidade da vida, e a profunda mensagem nela contida.'
+image: eyecatch.jpg
 ---
-
 ![img.png](img.webp)
 
 # Akiko Yosano

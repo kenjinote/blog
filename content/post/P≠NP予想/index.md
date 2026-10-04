@@ -7,8 +7,8 @@ tags: ["P≠NP予想", "数学", "未解決問題"]
 draft: false
 categories: ["math-cryptography-quantum"]
 description: '情報科学における最大の未解決問題「P≠NP予想」について、多項式時間で解ける「クラスP」と、解の正当性を多項式時間で検証できる「クラスNP」の違いを交えながら、決定性チューリングマシンの観点からわかりやすく概要を解説します。'
+image: eyecatch.jpg
 ---
-
 # 概要
 
 ```

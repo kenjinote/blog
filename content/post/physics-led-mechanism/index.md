@@ -3,7 +3,7 @@ title: "物理の不思議: LEDの仕組み - なぜ光るのか？青色LED開�
 description: "現代の照明やディスプレイに欠かせないLEDの発光原理と、ノーベル賞に輝いた青色LED開発の歴史。"
 slug: "physics-led-mechanism"
 date: "2026-09-23T02:00:00+09:00"
-image: "eyecatch.jpg"
+image: eyecatch.jpg
 categories:
     - "science"
     - "physics"
@@ -11,7 +11,6 @@ tags:
     - "physics"
     - "led"
     - "semiconductor"
-    - "nobel-prize"
     - "nobel-prize"
 ---
 

@@ -7,8 +7,8 @@ tags: ["Akiko Yosano", "Thou Shalt Not Die", "Poem", "Anti-war poem"]
 draft: false
 categories: ["it-technology"]
 description: 'Features the full text of Akiko Yosano''s representative anti-war poem, ''Kimi Shinitamou Koto Nakare'' (Thou Shalt Not Die), composed for her brother serving in the Siege of Port Arthur during the Russo-Japanese War. Deciphers the background and deep messages embedded in this masterpiece that appeals to family love and the preciousness of life.'
+image: eyecatch.jpg
 ---
-
 ![img.png](img.webp)
 
 # Akiko Yosano

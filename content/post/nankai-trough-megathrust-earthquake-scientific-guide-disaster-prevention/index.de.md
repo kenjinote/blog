@@ -9,8 +9,8 @@ categories: ["earthquake-science", "disaster-prevention"]
 tags: ["nankai-trough", "megathrust-earthquake", "tsunami", "plate-tectonics", "disaster-preparedness", "seismology", "crisis-management"]
 draft: false
 eyecatch: "eyecatch.jpg"
+image: eyecatch.jpg
 ---
-
 ## Einleitung: Japans größte existenzielle Bedrohung
 Der Nankai-Graben (Nankai Trough) erstreckt sich über rund 700 bis 800 Kilometer entlang der Pazifikküste von Honshu, Shikoku und Kyushu. Entlang dieser Subduktionszone taucht die Philippinische Meeresplatte mit einer jährlichen Geschwindigkeit von 4 bis 6 Zentimetern unter die Eurasische Platte ab. Mit einer Wahrscheinlichkeit von 70–80 % innerhalb der nächsten 30 Jahre wird ein Megathrust-Beben der Stärke M8–M9 erwartet, das katastrophale Zerstörungen, bis zu 34 Meter hohe Tsunamis und über 320.000 Todesopfer fordern könnte.
 

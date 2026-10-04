@@ -7,8 +7,8 @@ tags: ["Tag 1", "Tag 2"]
 draft: true
 categories: ["it-technology"]
 description: 'Apresentamos um template útil para a criação de artigos de blog. Abrange os formatos básicos de Markdown, como estrutura de títulos, listas, blocos de código e citações, essenciais para a criação de artigos otimizados para SEO. Aproveite-o para escrever seus artigos com mais eficiência.'
+image: eyecatch.jpg
 ---
-
 # Título do Blog
 
 ## Subtítulo

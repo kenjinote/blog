@@ -3,7 +3,7 @@ title: "The Wonder of Physics: How LEDs Work - Why Do They Shine? The Miracle of
 description: "The light emission principles of LEDs essential for modern lighting and displays, and the history of blue LED development that won the Nobel Prize."
 slug: "physics-led-mechanism"
 date: "2026-09-23T02:00:00+09:00"
-image: "eyecatch.jpg"
+image: eyecatch.jpg
 categories:
     - "science"
     - "physics"

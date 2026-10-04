@@ -9,8 +9,8 @@ categories: ["biotechnology", "agriculture-science"]
 tags: ["gmo", "genetic-engineering", "genome-editing", "crispr-cas9", "food-safety", "sustainable-agriculture", "biosecurity"]
 draft: false
 eyecatch: "eyecatch.jpg"
+image: eyecatch.jpg
 ---
-
 ## Pendahuluan: Cakrawala Bioteknologi Pertanian
 
 Peradaban manusia dibangun di atas modifikasi genetik tanaman. Sejak revolusi pertanian neolitikum 10.000 tahun lalu, manusia telah melakukan seleksi buatan terhadap rumput liar: menghilangkan sifat perontokan biji spontan, memperbesar biomassa yang dapat dimakan, dan menekan kadar racun alami. Jagung modern berevolusi dari teosinte liar yang hanya memiliki 5–12 biji keras melalui seleksi berkelanjutan pada gen pengatur morfologi (*tb1*, *tga1*).

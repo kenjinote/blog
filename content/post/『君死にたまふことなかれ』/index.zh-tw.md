@@ -7,8 +7,8 @@ tags: ["與謝野晶子", "你不要死", "詩", "反戰詩"]
 draft: false
 categories: ["it-technology"]
 description: '刊載與謝野晶子思念參與日俄戰爭旅順會戰的弟弟所創作之代表性反戰詩《請君莫死》全文。解讀這首訴求家族愛與生命尊嚴的名作背景，以及其中蘊含的深遠意涵。'
+image: eyecatch.jpg
 ---
-
 ![img.png](img.webp)
 
 # 與謝野晶子

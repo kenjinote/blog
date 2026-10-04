@@ -3,7 +3,7 @@ title: "Чудеса физики: Механизм LED - Почему он св
 description: "Принцип свечения светодиодов, необходимых для современного освещения и дисплеев, а также история разработки синего светодиода, удостоенного Нобелевской премии."
 slug: "physics-led-mechanism"
 date: "2026-09-23T02:00:00+09:00"
-image: "eyecatch.jpg"
+image: eyecatch.jpg
 categories:
     - "science"
     - "physics"

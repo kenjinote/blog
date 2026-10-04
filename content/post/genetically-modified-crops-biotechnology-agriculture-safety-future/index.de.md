@@ -9,8 +9,8 @@ categories: ["biotechnology", "agriculture-science"]
 tags: ["gmo", "genetic-engineering", "genome-editing", "crispr-cas9", "food-safety", "sustainable-agriculture", "biosecurity"]
 draft: false
 eyecatch: "eyecatch.jpg"
+image: eyecatch.jpg
 ---
-
 ## Einleitung: Die Evolution der Pflanzenbiotechnologie
 
 Die Geschichte der menschlichen Zivilisation ist untrennbar mit der gezielten genetischen Veränderung von Kulturpflanzen verbunden. Vor rund 10.000 Jahren begann der Mensch im Zuge der neolithischen Revolution mit der Selektion wilder Gräser, verhinderte das spontane Ausfallen der Samen (Verlust der Samenausbreitung), vergrößerte die essbaren Speicherorgane und reduzierte natürliche Bitterstoffe.

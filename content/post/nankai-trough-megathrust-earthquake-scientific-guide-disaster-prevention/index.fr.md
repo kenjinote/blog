@@ -9,8 +9,8 @@ categories: ["earthquake-science", "disaster-prevention"]
 tags: ["nankai-trough", "megathrust-earthquake", "tsunami", "plate-tectonics", "disaster-preparedness", "seismology", "crisis-management"]
 draft: false
 eyecatch: "eyecatch.jpg"
+image: eyecatch.jpg
 ---
-
 ## Introduction : La plus grande crise existentielle du Japon
 La fosse de Nankai (Nankai Trough) est une zone de subduction sous-marine de 700 à 800 kilomètres où la plaque de la mer des Philippines s'enfonce sous la plaque eurasienne à une vitesse de 4 à 6 cm par an. Avec une probabilité estimée à 70-80 % dans les 30 prochaines années, un mégaséisme de magnitude 8 à 9 menace de provoquer un tsunami de 34 mètres, jusqu'à 323 000 décès et 220 000 milliards de yens de dégâts.
 

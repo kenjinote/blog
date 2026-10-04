@@ -7,8 +7,8 @@ tags: ["Yosano Akiko"]
 draft: false
 categories: ["it-technology"]
 description: 'Wir erklären das Leben und die Hauptwerke der Dichterin Akiko Yosano, die von der Meiji- bis zur Showa-Zeit aktiv war. Wir stellen ihre Errungenschaften leicht verständlich vor, darunter ihre erste Gedichtsammlung „Wirres Haar“ (Midaregami), in der sie leidenschaftlich die romantischen Gefühle von Frauen ausdrückte, und das pazifistische Gedicht „Du sollst nicht sterben“ (Kimi Shinitamou Koto Nakare), das den Russisch-Japanischen Krieg kritisierte.'
+image: eyecatch.jpg
 ---
-
 ![img.png](img.webp)
 
 ## 🔹 Profilübersicht

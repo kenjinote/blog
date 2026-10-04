@@ -7,8 +7,8 @@ tags: ["P≠NP-Vermutung", "Mathematik", "Ungelöste Probleme"]
 draft: false
 categories: ["math-cryptography-quantum"]
 description: 'Bietet einen leicht verständlichen Überblick über das größte ungelöste Problem der Informatik, das „P-NP-Problem“, aus der Perspektive deterministischer Turingmaschinen, und erklärt dabei den Unterschied zwischen „Klasse P“, die in Polynomzeit gelöst werden kann, und „Klasse NP“, deren Lösungsgültigkeit in Polynomzeit verifiziert werden kann.'
+image: eyecatch.jpg
 ---
-
 # Überblick
 
 ```

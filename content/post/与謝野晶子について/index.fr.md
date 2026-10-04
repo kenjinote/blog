@@ -7,8 +7,8 @@ tags: ["Yosano Akiko"]
 draft: false
 categories: ["it-technology"]
 description: 'Nous expliquons la vie et les œuvres majeures de la poétesse Akiko Yosano, active de l''ère Meiji à l''ère Showa. Nous présentons clairement ses réalisations, comme son premier recueil de poèmes « Midaregami » (Cheveux emmêlés) exprimant passionnément les sentiments amoureux féminins, et son poème pacifiste « Kimi Shinitamou Koto Nakare » (Ne donne pas ta vie) critiquant la guerre russo-japonaise.'
+image: eyecatch.jpg
 ---
-
 ![img.png](img.webp)
 
 ## 🔹 Aperçu du profil

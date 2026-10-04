@@ -1,6 +1,4 @@
 ---
-
-
 title: '【Versión Completa】¡Plantilla para la creación de artículos de blog! Estructura de encabezados fuerte para SEO y consejos de escritura'
 date: "2026-09-24T19:44:38+09:00"
 slug: "000_Plantilla"
@@ -9,10 +7,8 @@ tags: ["etiqueta1", "etiqueta2"]
 draft: true
 categories: ["it-technology"]
 description: 'Presentamos una plantilla útil para la creación de artículos de blog. Cubre el formato básico de Markdown útil para crear artículos teniendo en cuenta el SEO, incluyendo la estructura de encabezados, listas, bloques de código, citas, etc. Úsala para escribir artículos de manera eficiente.'
+image: eyecatch.jpg
 ---
-
-
-
 # Título del blog
 
 ## Subtítulo

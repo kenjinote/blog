@@ -9,8 +9,8 @@ categories: ["biotechnology", "agriculture-science"]
 tags: ["gmo", "genetic-engineering", "genome-editing", "crispr-cas9", "food-safety", "sustainable-agriculture", "biosecurity"]
 draft: false
 eyecatch: "eyecatch.jpg"
+image: eyecatch.jpg
 ---
-
 ## Introdução: O horizonte da biotecnologia agrícola
 
 A civilização humana depende da evolução genética das plantas. Há 10.000 anos, os primeiros agricultores iniciaram a seleção artificial de gramíneas silvestres, suprimindo a dispersão espontânea de sementes, aumentando o tamanho das partes comestíveis e eliminando compostos amargos tóxicos.

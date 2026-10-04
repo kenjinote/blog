@@ -7,8 +7,8 @@ tags: ["ícone", "LoadIcon", "DestroyIcon", "Programação Windows"]
 draft: false
 categories: ["programming"]
 description: 'Explicamos as condições nas quais você deve ou não chamar o DestroyIcon para recursos de ícones adquiridos usando LoadIcon ou LoadImage na API do Windows. Compilamos a especificação correta para prevenir vazamentos de recursos.'
+image: eyecatch.jpg
 ---
-
 # Sobre a necessidade de chamar DestroyIcon
 
 É necessário chamar DestroyIcon nos seguintes casos:

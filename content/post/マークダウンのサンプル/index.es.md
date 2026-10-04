@@ -1,6 +1,4 @@
 ---
-
-
 author: "Hugo Authors"
 title: 'Ejemplos de sintaxis Markdown para Hugo: sintaxis básica de encabezados, párrafos, etc.'
 slug: "マークダウンのMuestra"
@@ -13,10 +11,8 @@ aliases: ["migrate-from-jekyl"]
 ShowToc: true
 TocOpen: true
 draft: true
+image: eyecatch.jpg
 ---
-
-
-
 Este artículo ofrece una muestra de la sintaxis básica de Markdown que se puede usar en archivos de contenido de Hugo, también muestra si los elementos HTML básicos están decorados con CSS en un tema de Hugo.
 
 <!--more-->

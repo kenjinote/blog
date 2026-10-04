@@ -9,8 +9,8 @@ categories: ["earthquake-science", "disaster-prevention"]
 tags: ["nankai-trough", "megathrust-earthquake", "tsunami", "plate-tectonics", "disaster-preparedness", "seismology", "crisis-management"]
 draft: false
 eyecatch: "eyecatch.jpg"
+image: eyecatch.jpg
 ---
-
 ## Introducción: La mayor crisis existencial de Japón
 La fosa de Nankai (Nankai Trough) es una trinchera submarina de 700 a 800 km donde la placa marina de Filipinas subduce bajo la placa Euroasiática a razón de 4 a 6 cm por año. Con una probabilidad del 70-80 % en los próximos 30 años, se anticipa un megaterremoto de magnitud 8 a 9 capaz de provocar olas de tsunami de hasta 34 metros, 323.000 víctimas fatales y pérdidas económicas de 220 billones de yenes.
 

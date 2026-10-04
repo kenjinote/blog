@@ -11,8 +11,8 @@ aliases: ["migrate-from-jekyl"]
 ShowToc: true
 TocOpen: true
 draft: true
+image: eyecatch.jpg
 ---
-
 يقدم هذا المقال نموذجًا لبناء جملة Markdown الأساسي الذي يمكن استخدامه في ملفات محتوى Hugo، كما يوضح ما إذا كانت عناصر HTML الأساسية مزينة بـ CSS في سمة Hugo.
 
 <!--more-->

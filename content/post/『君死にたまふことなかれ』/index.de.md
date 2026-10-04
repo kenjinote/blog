@@ -7,8 +7,8 @@ tags: ["Akiko Yosano", "Stirb nicht", "Gedicht", "Antikriegsgedicht"]
 draft: false
 categories: ["it-technology"]
 description: 'Wir veröffentlichen den vollständigen Text von Akiko Yosanos repräsentativem Antikriegsgedicht „Du sollst nicht sterben“, das im Gedenken an ihren kleinen Bruder verfasst wurde, der in der Belagerung von Port Arthur während des Russisch-Japanischen Krieges diente. Wir entschlüsseln die Hintergründe dieses Meisterwerks, das familiäre Liebe und die Kostbarkeit des Lebens anspricht, sowie die tiefe Botschaft, die es enthält.'
+image: eyecatch.jpg
 ---
-
 ![img.png](img.webp)
 
 # Akiko Yosano

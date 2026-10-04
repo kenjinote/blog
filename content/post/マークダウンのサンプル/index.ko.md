@@ -1,7 +1,4 @@
 ---
-
-
-
 author: "Hugo Authors"
 title: 'Hugo에서 사용할 수 있는 마크다운(Markdown) 문법 샘플: 제목·단락 등 기본 신택스'
 slug: "マークダウンの샘플"
@@ -14,11 +11,8 @@ aliases: ["migrate-from-jekyl"]
 ShowToc: true
 TocOpen: true
 draft: true
+image: eyecatch.jpg
 ---
-
-
-
-
 이 문서는 Hugo 콘텐츠 파일에서 사용할 수 있는 기본 마크다운 구문의 샘플을 제공하며, Hugo 테마에서 기본 HTML 요소가 CSS로 어떻게 장식되는지 보여줍니다.
 
 <!--more-->

@@ -7,8 +7,8 @@ tags: ["Tag 1", "Tag 2"]
 draft: true
 categories: ["it-technology"]
 description: 'Découvrez un modèle pratique pour la création d''articles de blog. Il couvre les formats de base de Markdown utiles pour la rédaction d''articles optimisés pour le SEO, tels que la structure des titres, les listes, les blocs de code et les citations. Profitez-en pour rédiger vos articles efficacement.'
+image: eyecatch.jpg
 ---
-
 # Titre du Blog
 
 ## Sous-titre

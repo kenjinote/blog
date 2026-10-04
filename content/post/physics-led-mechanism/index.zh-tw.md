@@ -3,7 +3,7 @@ title: "物理的奧秘：LED 的運作原理 - 為什麼會發光？藍光 LED 
 description: "現代照明與顯示器不可或缺的 LED 發光原理，以及榮獲諾貝爾獎的藍光 LED 開發歷史。"
 slug: "physics-led-mechanism"
 date: "2026-09-23T02:00:00+09:00"
-image: "eyecatch.jpg"
+image: eyecatch.jpg
 categories:
     - "science"
     - "physics"

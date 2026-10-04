@@ -7,8 +7,8 @@ tags: ["与謝野晶子","君死にたまふことなかれ","詩","反戦詩"]
 draft: false
 categories: ["it-technology"]
 description: '日露戦争の旅順攻囲戦に従軍する弟を思って詠まれた、与謝野晶子の代表的な反戦詩『君死にたまふことなかれ』の全文を掲載。家族愛や命の尊さを訴えかける名作の背景や、込められた深いメッセージを読み解きます。'
+image: eyecatch.jpg
 ---
-
 ![img.png](img.webp)
 
 # 与謝野晶子

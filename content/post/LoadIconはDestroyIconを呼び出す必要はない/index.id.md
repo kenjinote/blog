@@ -7,8 +7,8 @@ tags: ["ikon", "LoadIcon", "DestroyIcon", "pemrograman Windows"]
 draft: false
 categories: ["programming"]
 description: 'Menjelaskan kondisi tentang perlu tidaknya memanggil DestroyIcon untuk sumber daya ikon yang didapatkan melalui LoadIcon atau LoadImage dari Windows API. Kami merangkum spesifikasi yang benar untuk mencegah kebocoran sumber daya (resource leak).'
+image: eyecatch.jpg
 ---
-
 # Tentang kebutuhan untuk memanggil DestroyIcon
 
 Memanggil DestroyIcon diperlukan dalam kasus berikut:

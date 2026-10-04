@@ -9,8 +9,8 @@ categories: ["biotechnology", "agriculture-science"]
 tags: ["gmo", "genetic-engineering", "genome-editing", "crispr-cas9", "food-safety", "sustainable-agriculture", "biosecurity"]
 draft: false
 eyecatch: "eyecatch.jpg"
+image: eyecatch.jpg
 ---
-
 ## Introduction : L'horizon scientifique des biotechnologies végétales
 
 L'histoire de la civilisation humaine est intimement liée à la modification délibérée du génome des plantes. Depuis la révolution néolithique il y a 10 000 ans, l'homme a sélectionné des graminées sauvages pour éliminer l'égrenage spontané des graines, accroître la biomasse comestible et supprimer les toxines naturelles.

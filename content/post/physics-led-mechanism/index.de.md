@@ -3,7 +3,7 @@ title: "Wunder der Physik: Die Funktionsweise von LEDs - Warum leuchten sie? Das
 description: "Das Leuchtprinzip von LEDs, das in moderner Beleuchtung und Displays unverzichtbar ist, und die Geschichte der Entwicklung der blauen LED, die mit dem Nobelpreis ausgezeichnet wurde."
 slug: "physics-led-mechanism"
 date: "2026-09-23T02:00:00+09:00"
-image: "eyecatch.jpg"
+image: eyecatch.jpg
 categories:
     - "science"
     - "physics"

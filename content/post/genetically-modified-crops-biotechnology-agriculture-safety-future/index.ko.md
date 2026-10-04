@@ -9,8 +9,8 @@ categories: ["biotechnology", "agriculture-science"]
 tags: ["gmo", "genetic-engineering", "genome-editing", "crispr-cas9", "food-safety", "sustainable-agriculture", "biosecurity"]
 draft: false
 eyecatch: "eyecatch.jpg"
+image: eyecatch.jpg
 ---
-
 ## 서론: 작물 유전공학을 둘러싼 지적 지평
 
 인류 문명의 역사는 식물 게놈을 인류의 생존에 적합하게 개량해 온 작물 육종의 역사입니다. 약 1만 년 전 신석기 농업혁명 이래, 인류는 야생 식물에서 종자 탈립성을 제거하고 가식 부위를 대형화하며 천연 독소를 줄이는 방향으로 끊임없이 인위선택을 거듭해 왔습니다. 현대 옥수수의 조상 야생종인 테오신테(*Teosinte*)는 5~12개의 단단한 낟알에 불과했으나, 형태 전사인자 유전자(*tb1*, *tga1* 등)의 지속적 선발을 통해 수백 개의 알곡이 달린 현대 옥수수로 진화하였습니다.

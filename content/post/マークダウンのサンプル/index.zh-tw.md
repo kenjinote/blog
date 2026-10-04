@@ -11,8 +11,8 @@ aliases: ["migrate-from-jekyl"]
 ShowToc: true
 TocOpen: true
 draft: true
+image: eyecatch.jpg
 ---
-
 這篇文章提供了一個基本的 Markdown 語法範例，可用於 Hugo 內容檔案中，同時展示了基本的 HTML 元素在 Hugo 主題中是否具備 CSS 樣式。
 
 <!--more-->

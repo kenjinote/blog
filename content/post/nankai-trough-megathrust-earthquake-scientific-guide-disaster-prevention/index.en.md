@@ -9,8 +9,8 @@ categories: ["earthquake-science", "disaster-prevention"]
 tags: ["nankai-trough", "megathrust-earthquake", "tsunami", "plate-tectonics", "disaster-preparedness", "seismology", "crisis-management"]
 draft: false
 eyecatch: "eyecatch.jpg"
+image: eyecatch.jpg
 ---
-
 ## Introduction: The Nature of Japan's Greatest Existential Crisis
 
 Stretching approximately 700 to 800 kilometers beneath the Pacific Ocean off southwestern Honshu, Shikoku, and Kyushu—from Suruga Bay to the Hyuga-nada Sea—lies the **Nankai Trough**. This oceanic trench marks a subduction zone where the oceanic Philippine Sea Plate subducts beneath the continental Eurasian Plate (Southwest Japan Arc) at a rate of 4.0 to 6.5 centimeters per year.

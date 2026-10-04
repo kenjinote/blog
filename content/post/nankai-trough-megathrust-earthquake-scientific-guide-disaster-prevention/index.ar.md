@@ -9,8 +9,8 @@ categories: ["earthquake-science", "disaster-prevention"]
 tags: ["nankai-trough", "megathrust-earthquake", "tsunami", "plate-tectonics", "disaster-preparedness", "seismology", "crisis-management"]
 draft: false
 eyecatch: "eyecatch.jpg"
+image: eyecatch.jpg
 ---
-
 ## مقدمة: أخطر أزمة وجودية تواجه اليابان
 يمتد أخدود نانكاي (Nankai Trough) بطول يتراوح بين 700 إلى 800 كيلومتر قبالة السواحل الجنوبية الغربية لليابان. تنزلق صفيحة بحر الفلبين تحت الصفيحة الأوراسية بمعدل يتراوح بين 4 إلى 6 سنتيمترات سنوياً. تشير التقديرات العلمية إلى أن احتمال وقوع زلزال هائل بقوة تتراوح بين 8 و9 درجات خلال الثلاثين عاماً القادمة يبلغ 70% إلى 80%، مما قد يتسبب في موجات تسونامي بارتفاع 34 متراً، ووفاة 323 ألف شخص، وخسائر اقتصادية تتجاوز 220 تريليون ين (1.5 تريليون دولار).
 

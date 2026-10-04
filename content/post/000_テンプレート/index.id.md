@@ -7,8 +7,8 @@ tags: ["tag1", "tag2"]
 draft: true
 categories: ["it-technology"]
 description: 'Memperkenalkan templat yang berguna untuk membuat artikel blog. Templat ini mencakup format dasar Markdown yang berguna untuk pembuatan artikel yang sadar SEO, seperti struktur heading, daftar, blok kode, dan kutipan. Silakan manfaatkan untuk penulisan artikel yang efisien.'
+image: eyecatch.jpg
 ---
-
 # Judul Blog
 
 ## Subjudul

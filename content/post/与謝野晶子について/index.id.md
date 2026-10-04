@@ -7,8 +7,8 @@ tags: ["Akiko Yosano"]
 draft: false
 categories: ["it-technology"]
 description: 'Kami akan menjelaskan perjalanan hidup dan karya utama dari penyair Yosano Akiko yang aktif dari zaman Meiji hingga Showa. Kami akan memperkenalkan pencapaiannya dengan cara yang mudah dipahami, seperti koleksi puisi debut ''Midaregami'' yang mengekspresikan perasaan cinta wanita dengan penuh gairah, dan puisi pasifis ''Kimi Shinitamou Koto Nakare'' yang mengkritik Perang Rusia-Jepang.'
+image: eyecatch.jpg
 ---
-
 ![img.png](img.webp)
 
 ## 🔹 Ringkasan Tokoh

@@ -9,8 +9,8 @@ categories: ["biotechnology", "agriculture-science"]
 tags: ["gmo", "genetic-engineering", "genome-editing", "crispr-cas9", "food-safety", "sustainable-agriculture", "biosecurity"]
 draft: false
 eyecatch: "eyecatch.jpg"
+image: eyecatch.jpg
 ---
-
 ## Introduction: The Intellectual Horizon of Crop Genetics
 
 The history of human civilization is fundamentally intertwined with the deliberate modification of plant genomes. Over 10,000 years of agricultural history, humanity transformed wild grasses into modern staple crops by selecting against seed shattering, enlarging edible organs, and reducing natural anti-nutrients.

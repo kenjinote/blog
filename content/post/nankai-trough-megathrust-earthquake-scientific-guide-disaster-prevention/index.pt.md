@@ -9,8 +9,8 @@ categories: ["earthquake-science", "disaster-prevention"]
 tags: ["nankai-trough", "megathrust-earthquake", "tsunami", "plate-tectonics", "disaster-preparedness", "seismology", "crisis-management"]
 draft: false
 eyecatch: "eyecatch.jpg"
+image: eyecatch.jpg
 ---
-
 ## Introdução: A maior ameaça existencial ao Japão
 A Fossa de Nankai (Nankai Trough) é uma zona de subducção de 700 a 800 km ao largo da costa sul do Japão, onde a Placa do Mar das Filipinas afunda sob a Placa Euroasiática a 4-6 cm/ano. Com 70-80% de probabilidade de ocorrência nos próximos 30 anos, projeta-se um megaterremoto M8-9 gerando tsunamis de até 34 metros, 323.000 mortos e prejuízos de 220 trilhões de ienes.
 

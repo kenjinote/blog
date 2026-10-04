@@ -7,8 +7,8 @@ tags: ["Icon", "LoadIcon", "DestroyIcon", "Windows Programming"]
 draft: false
 categories: ["programming"]
 description: 'We explain the conditions under which DestroyIcon should or should not be called for icon resources obtained with LoadIcon or LoadImage in the Windows API. We have organized the correct specifications to prevent resource leaks.'
+image: eyecatch.jpg
 ---
-
 # About the Need to Call DestroyIcon
 
 You need to call DestroyIcon in the following cases:

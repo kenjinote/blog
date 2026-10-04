@@ -3,7 +3,7 @@ title: "Misterios de la física: El mecanismo de los LED - ¿Por qué brillan? E
 description: "El principio de emisión de luz de los LED, indispensables en la iluminación y las pantallas modernas, y la historia del desarrollo del LED azul, galardonado con el Premio Nobel."
 slug: "physics-led-mechanism"
 date: "2026-09-23T02:00:00+09:00"
-image: "eyecatch.jpg"
+image: eyecatch.jpg
 categories:
     - "science"
     - "physics"

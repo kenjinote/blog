@@ -7,8 +7,8 @@ tags: ["P≠NP猜想", "数学", "未解决问题"]
 draft: false
 categories: ["math-cryptography-quantum"]
 description: '关于计算机科学中最大的未解之谜“P≠NP猜想”，结合多项式时间可解的“P类”与解的正确性可在多项式时间验证的“NP类”的区别，从确定性图灵机的角度进行通俗易懂的概述。'
+image: eyecatch.jpg
 ---
-
 # 概要
 
 ```

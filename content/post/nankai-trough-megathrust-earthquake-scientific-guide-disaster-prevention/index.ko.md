@@ -9,8 +9,8 @@ categories: ["earthquake-science", "disaster-prevention"]
 tags: ["nankai-trough", "megathrust-earthquake", "tsunami", "plate-tectonics", "disaster-preparedness", "seismology", "crisis-management"]
 draft: false
 eyecatch: "eyecatch.jpg"
+image: eyecatch.jpg
 ---
-
 ## 서론: 일본 열도 최대의 국가적 생존 위기
 난카이 해곡(Nankai Trough)은 일본 혼슈, 시코쿠, 규슈 남쪽 연안에 걸쳐 약 700~800km 길이로 뻗어 있는 해구형 섭입대입니다. 필리핀해 판이 유라시아 판 밑으로 연간 4~6cm씩 침강하고 있으며, 향후 30년 이내에 규모 8~9급 대지진이 발생할 확률은 70~80%에 달합니다. 최악의 경우 최대 34m 높이의 대형 쓰나미와 함께 사망자 32만 3천 명, 경제적 피해 220조 엔(약 1.5조 달러)이라는 국난적 재앙이 예상됩니다.
 

@@ -7,8 +7,8 @@ tags: ["アイコン", "LoadIcon", "DestroyIcon", "Windowsプログラミング"
 draft: false
 categories: ["programming"]
 description: 'Windows APIのLoadIconやLoadImageで取得したアイコンリソースに対してDestroyIconを呼び出すべきか否かの条件について解説します。リソースリークを防ぐための正しい仕様を整理しました。'
+image: eyecatch.jpg
 ---
-
 # DestroyIconを呼び出す必要について
 
 DestroyIcon を呼び出す必要があるのは下記の場合となる。

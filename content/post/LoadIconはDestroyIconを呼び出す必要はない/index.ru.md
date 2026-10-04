@@ -7,8 +7,8 @@ tags: ["иконка", "LoadIcon", "DestroyIcon", "программирован�
 draft: false
 categories: ["programming"]
 description: 'Объясняются условия, при которых следует или не следует вызывать DestroyIcon для ресурсов иконок, полученных с помощью LoadIcon или LoadImage из Windows API. Сформулированы правильные спецификации для предотвращения утечек ресурсов.'
+image: eyecatch.jpg
 ---
-
 # О необходимости вызова DestroyIcon
 
 Вызывать DestroyIcon необходимо в следующих случаях:

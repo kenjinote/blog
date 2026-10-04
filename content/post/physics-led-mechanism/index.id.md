@@ -11,8 +11,9 @@ tags:
     - "physics"
     - "led"
     - "semiconductor"
-    - "nobel-prize"
----\n## 1. Perbedaan antara Bola Lampu dan LED
+---
+
+## 1. Perbedaan antara Bola Lampu dan LED
 Bola lampu pijar memancarkan cahaya dengan memanaskan filamen pada suhu tinggi, sedangkan LED (Light Emitting Diode: Dioda Pancaran Cahaya) mengubah energi listrik secara langsung menjadi energi cahaya tanpa menghasilkan panas. Oleh karena itu, LED jauh lebih hemat energi.
 
 ## 2. Mekanisme Emisi Cahaya (Semikonduktor)
