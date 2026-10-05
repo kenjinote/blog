@@ -352,7 +352,7 @@ Emulating the photosensitive cone response of the human eye and the gentle logar
 
 ## 6.4 The Lifeline of Animation: 3D Implementation of Disney's 12 Principles and F-Curve Interpolation
 
-Merely keyframing bones (`I` key) in 3D space produces stiff, mechanical, and lifeless movement that plummets into the uncanny valley. Breathing authentic vitality into a character requires translating the **"12 Basic Principles of Animation"**—codified in the 1930s by Walt Disney's "Nine Old Men"—into numerical curves within Blender's Graph Editor.
+Merely keyframing bones (`I` key) in 3D space produces stiff, mechanical, and lifeless movement that plummets into the uncanny valley. Breathing authentic vitality into a character requires translating the **"12 Basic Principles of Animation"** —codified in the 1930s by Walt Disney's "Nine Old Men"—into numerical curves within Blender's Graph Editor.
 
 ```mermaid
 flowchart TD

@@ -352,7 +352,7 @@ Al modelar la respuesta espectral de los conos de la retina humana y emular la c
 
 ## 6.4 El Alma de la Animación: Los 12 Principios de Disney en 3D e Interpolación de Curvas F
 
-Limitarse a insertar fotogramas clave (`I`) en los huesos produce movimientos rígidos e inexpresivos que caen en el "valle inquietante". Insuflar alma y peso físico a un personaje requiere trasladar los **"12 Principios Básicos de la Animación"**—concebidos en la década de 1930 por los legendarios animadores de Walt Disney—a curvas numéricas en el Graph Editor de Blender.
+Limitarse a insertar fotogramas clave (`I`) en los huesos produce movimientos rígidos e inexpresivos que caen en el "valle inquietante". Insuflar alma y peso físico a un personaje requiere trasladar los **"12 Principios Básicos de la Animación"** —concebidos en la década de 1930 por los legendarios animadores de Walt Disney—a curvas numéricas en el Graph Editor de Blender.
 
 ```mermaid
 flowchart TD
