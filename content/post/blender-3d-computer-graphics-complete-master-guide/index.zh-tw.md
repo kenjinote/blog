@@ -104,7 +104,7 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    subgraph 拓撲品質等級規範
+    subgraph TopologyStandards ["拓撲品質等級規範"]
         Q["四邊形面（Quads）<br/>完美曲面形變與優雅循環邊走向"]
         T["三角形面（Tris）<br/>可用於遊戲匯出；彎曲形變區須慎用"]
         N["多邊形面（N-gons: 5頂點以上）<br/>關節活動形變區嚴禁殘留！"]
@@ -456,7 +456,7 @@ for poly in mesh.polygons:
 
 ```mermaid
 flowchart TD
-    subgraph 攝影棚物理布光拓撲布局
+    subgraph TopologyStandards ["攝影棚物理布光拓撲布局"]
         KEY["主光源: Key Light<br/>相機斜前方45度高位。確立受光面與基本明暗分界線"]
         FILL["輔助光: Fill Light<br/>主光相反側斜前方。提亮暗部死黑，精確控制反差比"]
         RIM["輪廓背光: Rim / Back Light<br/>主體正後方或斜後上方。在輪廓邊緣勾勒明亮高光，將主體從暗色背景中剝離"]

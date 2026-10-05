@@ -104,7 +104,7 @@ Além disso, pontos de convergência de cinco ou mais arestas (Polos E) ou de ap
 
 ```mermaid
 flowchart LR
-    subgraph Padrões de Qualidade Topológica
+    subgraph TopologyStandards ["Padrões de Qualidade Topológica"]
         Q["Quadriláteros (Quads)<br/>Deformação excelente e fluxo orgânico de arestas"]
         T["Triângulos (Tris)<br/>Viáveis para jogos; cautela em zonas curvas"]
         N["Polígonos Complexos (N-gons: 5+ vértices)<br/>Terminantemente vetados em áreas deformáveis!"]
@@ -456,7 +456,7 @@ O protocolo fundamental para acentuar profundidade, forma e textura em três dim
 
 ```mermaid
 flowchart TD
-    subgraph Disposição Física da Iluminação em Estúdio
+    subgraph StudioLighting ["Disposição Física da Iluminação em Estúdio"]
         KEY["Luz Principal: Key Light<br/>45 graus da câmera, elevada. Define as sombras e volumes mestres"]
         FILL["Luz de Preenchimento: Fill Light<br/>Lado oposto à Key Light. Suaviza sombras e calibra o contraste"]
         RIM["Luz de Recorte: Rim / Back Light<br/>Atrás do modelo, elevada. Cria um halo de destaque destacando o objeto do fundo"]

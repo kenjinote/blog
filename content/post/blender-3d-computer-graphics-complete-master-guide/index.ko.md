@@ -104,7 +104,7 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    subgraph 토폴로지 품질 기준
+    subgraph SubgraphID ["토폴로지 품질 기준"]
         Q["사각형 폴리곤 (Quads)<br/>완벽한 곡면 변형과 엣지 플로우"]
         T["삼각형 폴리곤 (Tris)<br/>게임 엔진용에 적합; 곡면부 주의"]
         N["다각형 (N-gons: 5정점 이상)<br/>관절 변형 부위 사용 절대 금지!"]
@@ -456,7 +456,7 @@ for poly in mesh.polygons:
 
 ```mermaid
 flowchart TD
-    subgraph 스튜디오 물리 조명 배치 구조
+    subgraph SubgraphID ["스튜디오 물리 조명 배치 구조"]
         KEY["주광원: 키 라이트 (Key Light)<br/>카메라 대각선 45도 상방. 피사체의 기본 명암 형태 결정"]
         FILL["보조광: 필 라이트 (Fill Light)<br/>키 라이트 반대편 대각선 전방. 짙은 그림자를 밝혀 대비비 조절"]
         RIM["역광: 림 라이트 (Rim / Back Light)<br/>피사체 후방 또는 대각선 뒤 상방. 윤곽 하이라이트를 형성하여 배경과 분리"]

@@ -104,7 +104,7 @@ Además, los vértices de los que emergen cinco o más aristas (Polos E) o solo 
 
 ```mermaid
 flowchart LR
-    subgraph Estándares de Calidad Topológica
+    subgraph TopologyStandards ["Estándares de Calidad Topológica"]
         Q["Cuadriláteros (Quads)<br/>Deformación impecable y flujo de aristas orgánico"]
         T["Triángulos (Tris)<br/>Aptos para exportación a motores de juego; precaución en curvas"]
         N["Polígonos Complejos (N-gons: 5+ vértices)<br/>¡Prohibidos terminantemente en superficies deformables!"]
@@ -456,7 +456,7 @@ El estándar indiscutible para dotar de tridimensionalidad, volumen y atmósfera
 
 ```mermaid
 flowchart TD
-    subgraph Disposición Espacial de Iluminación de Estudio
+    subgraph StudioLighting ["Disposición Espacial de Iluminación de Estudio"]
         KEY["Luz Principal: Key Light<br/>A 45 grados de la cámara, elevada. Define el volumen y las sombras primarias"]
         FILL["Luz de Relleno: Fill Light<br/>En el lado opuesto a la principal. Aclara sombras densas y controla el contraste"]
         RIM["Luz de Contorno: Rim / Back Light<br/>Detrás del sujeto, elevada. Perfila un halo brillante que separa el modelo del fondo"]

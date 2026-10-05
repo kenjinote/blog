@@ -104,7 +104,7 @@ Furthermore, vertices connected to five or more edges (E-poles) or only three ed
 
 ```mermaid
 flowchart LR
-    subgraph Topological Quality Standards
+    subgraph TopologyStandards ["Topological Quality Standards"]
         Q["Quadrilaterals (Quads)<br/>Perfect surface deformation and edge flow"]
         T["Triangles (Tris)<br/>Acceptable for game exports; caution on curved areas"]
         N["N-gons (5+ vertices)<br/>Strictly prohibited on deforming surfaces!"]
@@ -456,7 +456,7 @@ The timeless foundation for accentuating depth, form, and texture in three dimen
 
 ```mermaid
 flowchart TD
-    subgraph Physical Layout of Studio Lighting
+    subgraph StudioLighting ["Physical Layout of Studio Lighting"]
         KEY["Key Light: Primary Source<br/>45 degrees off-camera, elevated. Establishes primary form and shadow"]
         FILL["Fill Light: Secondary Source<br/>Opposite side from key light. Softens harsh shadows and controls contrast ratio"]
         RIM["Rim / Back Light: Edge Accent<br/>Positioned directly or diagonally behind subject. Creates sharp contour highlight to separate model from background"]

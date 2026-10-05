@@ -104,7 +104,7 @@ Zudem wirken Punkte, an denen fünf oder mehr Kanten (E-Poles) oder nur drei Kan
 
 ```mermaid
 flowchart LR
-    subgraph Topologie-Qualitätsstandards
+    subgraph TopologyStandards ["Topologie-Qualitätsstandards"]
         Q["Vierecke (Quads)<br/>Perfekte Verformung und harmonischer Kantenfluss"]
         T["Dreiecke (Tris)<br/>Gut für Spieleexport; Vorsicht auf Krümmungen"]
         N["Mehr-Ecke (N-gons: 5+ Punkte)<br/>Auf Verformungsflächen strikt verboten!"]
@@ -456,7 +456,7 @@ Das bewährte Grundschema, um plastische Tiefe und Materialkonturen im 3D-Raum h
 
 ```mermaid
 flowchart TD
-    subgraph Räumliche Anordnung der Studiobeleuchtung
+    subgraph SubgraphID ["Räumliche Anordnung der Studiobeleuchtung"]
         KEY["Hauptlicht: Key Light<br/>45 Grad schräg vor dem Objekt, erhöht. Definiert Hauptform und Schatten"]
         FILL["Aufhelllicht: Fill Light<br/>Gegenüber dem Key Light. Hellt tiefe Schatten auf und steuert den Kontrast"]
         RIM["Spitzlicht: Rim / Back Light<br/>Hinter dem Objekt, erhöht. Erzeugt eine Glanzkante und trennt das Modell vom Hintergrund"]

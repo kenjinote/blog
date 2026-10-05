@@ -104,7 +104,7 @@ Selain itu, simpul tempat bertemunya 5 tepi atau lebih (E-pole) atau hanya 3 tep
 
 ```mermaid
 flowchart LR
-    subgraph Standar Kualitas Topologi
+    subgraph TopologyStandards ["Standar Kualitas Topologi"]
         Q["Segi Empat (Quads)<br/>Deformasi sempurna dan aliran garis tepi optimal"]
         T["Segitiga (Tris)<br/>Bagus untuk ekspor game; hati-hati pada lengkungan"]
         N["Segi Banyak (N-gons: 5+ simpul)<br/>Dilarang keras pada area deformasi gerak!"]
@@ -456,7 +456,7 @@ Skema standar untuk menonjolkan bentuk, kedalaman, dan tekstur objek tiga dimens
 
 ```mermaid
 flowchart TD
-    subgraph Tata Letak Fisik Pencahayaan Studio
+    subgraph StudioLighting ["Tata Letak Fisik Pencahayaan Studio"]
         KEY["Lampu Utama: Key Light<br/>45 derajat dari kamera, posisi atas. Menentukan volume dan bayangan utama"]
         FILL["Lampu Pengisi: Fill Light<br/>Sisi berlawanan dari Key Light. Menerangi bayangan pekat dan mengatur rasio kontras"]
         RIM["Lampu Tepi: Rim / Back Light<br/>Di belakang model, posisi atas. Membentuk garis terang di tepi untuk memisahkan objek dari latar"]

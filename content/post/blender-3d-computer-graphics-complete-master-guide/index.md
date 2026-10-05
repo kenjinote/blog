@@ -104,7 +104,7 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    subgraph トポロジーの品質基準
+    subgraph TopologyStandards ["トポロジーの品質基準"]
         Q["四角形ポリゴン（Quads）<br/>◎ 完璧な曲面変形とエッジフロー"]
         T["三角形ポリゴン（Tris）<br/>△ ゲーム出力用。曲面では注意"]
         N["多角形（N-gons: 5頂点以上）<br/>× 変形部での使用厳禁！"]
@@ -122,11 +122,14 @@ CG映画のような滑らかなキャラクターや自動車の流線型ボデ
 Blenderが採用しているCatmull-Clark細分割アルゴリズムは、1978年にエドウィン・キャットマルとジム・クラークによって発表された数理手法であり、各反復ステップにおいて以下の3つの計算を行う。
 
 1. **面の中心点（Face Point）**: 各ポリゴン面の全頂点の重心を計算する。
-   $$F = rac{1}{n} \sum_{i=1}^n V_i$$
+   $$F = 
+rac{1}{n} \sum_{i=1}^n V_i$$
 2. **辺の中心点（Edge Point）**: 各エッジの両端の頂点と、そのエッジを共有する隣接する面のFace Pointの平均を計算する。
-   $$E = rac{V_1 + V_2 + F_1 + F_2}{4}$$
+   $$E = 
+rac{V_1 + V_2 + F_1 + F_2}{4}$$
 3. **新しい頂点位置（Vertex Point）**: 元の頂点 $V$ に対し、接続する $n$ 個の面のFace Pointの平均 $Q$、接続する $n$ 個のエッジの中点の平均 $R$ を用いて、新たな位置 $V'$ を決定する。
-   $$V' = rac{Q + 2R + (n-3)V}{n}$$
+   $$V' = 
+rac{Q + 2R + (n-3)V}{n}$$
 
 このアルゴリズムを再帰的に適用することで、粗い角張ったメッシュは、数学的に厳密なB-スプライン曲面（極限曲面）へと滑らかに収束する。
 
@@ -261,12 +264,12 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    subgraph FK（Forward Kinematics: 順運動学）
+    subgraph FK ["FK（Forward Kinematics: 順運動学）"]
         SHOULDER["肩を回転"] --> ELBOW["肘が追従して回転"]
         ELBOW --> HAND["手首の位置が最終決定"]
         NOTE_FK["◎ 滑らかな円弧軌道（腕の素振り等）<br/>× 地面に足を接地させるのは不可能"]
     end
-    subgraph IK（Inverse Kinematics: 逆運動学）
+    subgraph IK ["IK（Inverse Kinematics: 逆運動学）"]
         GOAL["手首/足首の目標位置を空間指定"] --> SOLVER["IKソルバー（ヤコビアン行列逆算）"]
         SOLVER --> AUTO["肩・肘・股関節・膝の角度を自動計算"]
         NOTE_IK["◎ 地面に足をピタッと固定する歩行<br/>◎ 物を掴む動作に不可欠"]
@@ -457,7 +460,7 @@ for poly in mesh.polygons:
 
 ```mermaid
 flowchart TD
-    subgraph スタジオ照明の物理配置
+    subgraph StudioLighting ["スタジオ照明の物理配置"]
         KEY["主光源: キーライト（Key Light）<br/>カメラの斜め45度前方・上方。被写体の基本陰影を決定"]
         FILL["補助光: フィルライト（Fill Light）<br/>キーライトの反対側斜め前方。陰影を和らげコントラスト比を調整"]
         RIM["逆光: リムライト（Rim / Back Light）<br/>被写体の真後ろ・斜め後方上方。輪郭に鋭いハイライトを作り背景から分離"]

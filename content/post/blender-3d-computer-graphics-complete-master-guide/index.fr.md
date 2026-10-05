@@ -104,7 +104,7 @@ De surcroît, les sommets d'où émergent cinq arêtes ou plus (Pôles E) ou seu
 
 ```mermaid
 flowchart LR
-    subgraph Normes de Qualité Topologique
+    subgraph TopologyStandards ["Normes de Qualité Topologique"]
         Q["Quadrilatères (Quads)<br/>Déformation parfaite et flux d'arêtes optimal"]
         T["Triangles (Tris)<br/>Acceptables pour l'export jeu vidéo ; attention aux courbures"]
         N["N-gons (5 sommets et plus)<br/>Strictement interdits sur surfaces en déformation !"]
@@ -456,7 +456,7 @@ Le protocole éprouvé pour accentuer les volumes, la matière et la profondeur 
 
 ```mermaid
 flowchart TD
-    subgraph Disposition Spatiale de l'Éclairage de Studio
+    subgraph StudioLighting ["Disposition Spatiale de l'Éclairage de Studio"]
         KEY["Lumière Principale : Key Light<br/>À 45 degrés de la caméra, surélevée. Établit le volume et les ombres maîtresses"]
         FILL["Lumière de Remplissage : Fill Light<br/>Du côté opposé à la principale. Débouche les ombres et règle le contraste"]
         RIM["Lumière d'Arrière-Plan : Rim / Back Light<br/>Derrière le sujet, surélevée. Détoure la silhouette d'un fin halo lumineux"]
