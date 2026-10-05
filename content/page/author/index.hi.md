@@ -32,6 +32,34 @@ menu:
 
 - [Microsoft की आधिकारिक MVP प्रोफ़ाइल](https://mvp.microsoft.com/ja-JP/mvp/profile/9da0e78b-4d15-e711-810b-3863bb36edf8)
 
+## प्रमुख सॉफ्टवेयर उत्पाद और उपलब्धियां
+
+एक स्वतंत्र डेवलपर के रूप में, मैं उच्च प्रदर्शन और न्यूनतम डिज़ाइन वाले डेस्कटॉप और मोबाइल एप्लिकेशन विकसित करता हूँ। इन्हें ज़रूर आज़माएँ!
+
+### 1. टेक्स्ट एडिटर miu
+**एकाग्रता और सहज लेखन के लिए बनाया गया एक न्यूनतम और बेहद तेज़ क्रॉस-प्लेटफ़ॉर्म टेक्स्ट एडिटर**
+
+स्वच्छ इंटरफ़ेस और तुरंत शुरू होने की गति के साथ, miu त्वरित नोट्स से लेकर विस्तृत लेखन और कोडिंग तक एक सहज अनुभव प्रदान करता है। यह Windows, iOS और Android पर उपलब्ध है।
+
+- [Microsoft Store (Windows संस्करण)](https://apps.microsoft.com/detail/9nblggh35lxs)
+- [App Store (iOS / Mac संस्करण)](https://apps.apple.com/jp/app/miu-minimal-text-editor/id6759484253)
+- [Google Play (Android संस्करण)](https://play.google.com/store/apps/details?id=jp.hack.miu)
+
+### 2. चैट एप्लिकेशन chat.exe
+**तेज़ प्रतिक्रिया और आसान संचार के लिए तैयार किया गया आधुनिक चैट प्लेटफ़ॉर्म**
+
+सहज बातचीत और तत्काल उत्तर के लिए बनाया गया एक आधुनिक संचार उपकरण। इसे वेब ब्राउज़र के माध्यम से या Microsoft Store से Windows ऐप के रूप में उपयोग करें।
+
+- [chat.exe आधिकारिक वेबसाइट](https://chatexe.net/)
+- [Microsoft Store (Windows संस्करण)](https://apps.microsoft.com/detail/9mvjzsr56jjk)
+
+### 3. वीडियो स्क्रीनसेवर (Video Screensaver)
+**अपने पसंदीदा वीडियो को विंडोज़ के सुंदर स्क्रीनसेवर में बदलें**
+
+एक हल्का विंडोज़ यूटिलिटी सॉफ़्टवेयर जो आपके कंप्यूटर पर पसंदीदा दृश्यों या वीडियो को उच्च गुणवत्ता में स्क्रीनसेवर के रूप में सुचारू रूप से चलाता है।
+
+- [Microsoft Store (Windows संस्करण)](https://apps.microsoft.com/detail/9n0mzq5l811m)
+
 ## संबंधित लिंक
 
 - [GitHub — kenjinote](https://github.com/kenjinote)
