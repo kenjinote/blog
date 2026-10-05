@@ -223,7 +223,7 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    subgraph Domaines Fondamentaux ("Niveau 1 : Formation de spécialité initiale de 3 à 5 ans")
+    subgraph BaseSpecialties ["Domaines Fondamentaux (Niveau 1 : Formation de spécialité initiale de 3 à 5 ans)"]
         B1["Médecine Interne"]
         B2["Chirurgie"]
         B3["Pédiatrie"]
@@ -232,7 +232,7 @@ flowchart TD
         B6["Médecine Générale et de Famille"]
         B7["13 autres domaines (Chirurgie orthopédique, Anesthésiologie, Psychiatrie, Neurochirurgie, Dermatologie, Urologie, Ophtalmologie, ORL, Anatomopathologie, Radiologie, Chirurgie plastique, Rééducation, Biologie médicale)"]
     end
-    subgraph Surspécialités ("Niveau 2 : Spécialisation complémentaire approfondie de 2 à 3 ans")
+    subgraph SubSpecialties ["Surspécialités (Niveau 2 : Spécialisation complémentaire approfondie de 2 à 3 ans)"]
         B1 --> S1["Cardiologie / Gastro-entérologie / Pneumologie / Hématologie / Néphrologie / Diabétologie-Endocrinologie / Neurologie"]
         B2 --> S2["Chirurgie digestive / Chirurgie cardiovasculaire / Chirurgie thoracique / Chirurgie pédiatrique / Chirurgie mammaire"]
     end

@@ -21,7 +21,7 @@ Das ärztliche Wirken erschöpft sich keineswegs in der bloßen Behandlung einer
 ```mermaid
 flowchart TD
     A["Die doppelte Mission des Arztes"] --> B["Fortgeschrittenes biowissenschaftliches Wissen und Technologie (Science)"]
-    A --> C["Ganzheitliche Fürsorge und bioethischer Geist (Art & Ethics)"]
+    A --> C["Ganzheitliche Fürsorge und bioethischer Geist (Art and Ethics)"]
     B --> D["Praxis der evidenzbasierten Medizin (EBM)"]
     C --> E["Achtung der Menschenwürde und des Selbstbestimmungsrechts der Patienten"]
     D --> F["Förderung der öffentlichen Gesundheit und Etablierung des Allgemeinwohls"]
@@ -65,13 +65,13 @@ Der Weg zur ärztlichen Approbation ist außerordentlich beschwerlich und langwi
 
 ```mermaid
 flowchart TD
-    M1["1. Studienjahr: Allgemeinbildung, Grundlagenwissenschaften & frühe Praxiserfahrung"] --> M2["2. Studienjahr: Vorklinische Grundlagen (Anatomie, Histologie, Physiologie, Biochemie)"]
-    M2 --> M3["3. Studienjahr: Grundlagen & Sozialmedizin (Pathologie, Pharmakologie, Mikrobiologie, Rechtsmedizin)"]
-    M3 --> M4["4. Studienjahr: Spezielle klinische Medizin & integrierte Vorlesungen"]
-    M4 --> EXAM["Große Hürde: CBT (Wissen) & OSCE (Klinisch-praktische Fertigkeiten)"]
-    EXAM --> M5["5. Studienjahr: Klinisches Praktikum (Clinical Clerkship / Famulatur & Stationsarbeit)"]
-    M5 --> M6["6. Studienjahr: Wahlpraktika, Abschlussprüfung & Vorbereitung auf das Staatsexamen"]
-    M6 --> GRAD["Studienabschluss & Zulassung zum Nationalen Medizinischen Staatsexamen"]
+    M1["1. Studienjahr: Allgemeinbildung, Grundlagenwissenschaften and frühe Praxiserfahrung"] --> M2["2. Studienjahr: Vorklinische Grundlagen (Anatomie, Histologie, Physiologie, Biochemie)"]
+    M2 --> M3["3. Studienjahr: Grundlagen and Sozialmedizin (Pathologie, Pharmakologie, Mikrobiologie, Rechtsmedizin)"]
+    M3 --> M4["4. Studienjahr: Spezielle klinische Medizin and integrierte Vorlesungen"]
+    M4 --> EXAM["Große Hürde: CBT (Wissen) and OSCE (Klinisch-praktische Fertigkeiten)"]
+    EXAM --> M5["5. Studienjahr: Klinisches Praktikum (Clinical Clerkship / Famulatur and Stationsarbeit)"]
+    M5 --> M6["6. Studienjahr: Wahlpraktika, Abschlussprüfung and Vorbereitung auf das Staatsexamen"]
+    M6 --> GRAD["Studienabschluss and Zulassung zum Nationalen Medizinischen Staatsexamen"]
 ```
 
 ---
@@ -159,7 +159,7 @@ Um das Nationale Medizinische Staatsexamen zu bestehen, müssen **alle drei der 
 flowchart TD
     SUBJ["Bewertungssystem des Nationalen Medizinischen Staatsexamens"]
     SUBJ --> C1["1. Pflichtfragen: Absoluter Grenzwert mind. 80,0% (Ausschlusskriterium)"]
-    SUBJ --> C2["2. Allgemeine & klinische Praxisfragen: Relatives Kriterium (ca. oberste 90%)"]
+    SUBJ --> C2["2. Allgemeine and klinische Praxisfragen: Relatives Kriterium (ca. oberste 90%)"]
     SUBJ --> C3["3. Kontraindizierte Auswahlpunkte: Max. 3 Fragen (ab 4 sofortiges Nichtbestehen)"]
     C1 --> PASS["Bestehen bei Erfüllung aller Kriterien!"]
     C2 --> PASS
@@ -201,8 +201,8 @@ Die zwei Jahre als Assistenzarzt in der Basisausbildung (*Junior Resident*) stel
 flowchart LR
     A["Akute Zustandsverschlechterung / Notfalleinlieferung"] --> B["Primäre Beurteilung: ABCDE-Schema<br/>(Atemweg, Beatmung, Zirkulation, Defizit, Exposition)"]
     B --> C["Vitalfunktionsstabilisierung<br/>(Sauerstoffgabe, venöser Zugang, EKG)"]
-    C --> D["Sekundäre Beurteilung: Detaillierte Anamnese, körperlicher Befund & Notfallsonographie"]
-    D --> E["Übergabe an den Facharzt (SBAR-Schema) & Einleitung der Spezialtherapie"]
+    C --> D["Sekundäre Beurteilung: Detaillierte Anamnese, körperlicher Befund and Notfallsonographie"]
+    D --> E["Übergabe an den Facharzt (SBAR-Schema) and Einleitung der Spezialtherapie"]
 ```
 
 - **Bereitschaftsdienste in der Notaufnahme**: Vom fußläufigen Patienten mit leichten Beschwerden bis hin zum reanimationspflichtigen Polytrauma oder Herz-Kreislauf-Stillstand (*Cardiopulmonary Arrest, CPA*) strömen Patienten ununterbrochen ein. Unter Aufsicht erfahrener Notärzte triagiert der Resident akute Lebensbedrohungen sekundenschnell nach dem **„ABCDE-Schema“** (*Airway, Breathing, Circulation, Disability, Exposure*).
@@ -223,7 +223,7 @@ Nach Abschluss der zweijährigen Basisausbildung tritt der Arzt in die weiterfü
 
 ```mermaid
 flowchart TD
-    subgraph Basisausbildung ["Basisfacharztgebiete (1. Ebene: 3 bis 5 Jahre)"]
+    subgraph BaseSpecialties ["Basisfacharztgebiete (1. Ebene: 3 bis 5 Jahre)"]
         B1["Innere Medizin"]
         B2["Chirurgie"]
         B3["Pädiatrie"]
@@ -232,11 +232,11 @@ flowchart TD
         B6["Allgemeinmedizin (General Practice)"]
         B7["Weitere 13 Gebiete (Orthopädie, Anästhesie, Psychiatrie, Neurochirurgie, Dermatologie, Urologie, Augenheilkunde, HNO, Pathologie, Radiologie, Plastische Chirurgie, Reha, Labormedizin)"]
     end
-    subgraph Subspezialitaeten ["Subspezialitäten (2. Ebene: weitere 2 bis 3 Jahre)"]
-        B1 --> S1["Kardiologie / Gastroenterologie / Pneumologie / Hämatologie / Nephrologie / Diabetologie & Stoffwechsel / Neurologie"]
+    subgraph SubSpecialties ["Subspezialitäten (2. Ebene: weitere 2 bis 3 Jahre)"]
+        B1 --> S1["Kardiologie / Gastroenterologie / Pneumologie / Hämatologie / Nephrologie / Diabetologie and Stoffwechsel / Neurologie"]
         B2 --> S2["Viszeralchirurgie / Herz-Gefäß-Chirurgie / Thoraxchirurgie / Kinderchirurgie / Mammachirurgie"]
     end
-    S1 --> PHD["Oberarzt-/Lehrqualifikation, Promotion zum Dr. med. (PhD) & klinische Publikationen"]
+    S1 --> PHD["Oberarzt-/Lehrqualifikation, Promotion zum Dr. med. (PhD) and klinische Publikationen"]
     S2 --> PHD
 ```
 
@@ -467,13 +467,13 @@ Die Medizin des 21. Jahrhunderts wandelt sich durch die Verschmelzung mit Spitze
 ```mermaid
 flowchart TD
     TECH["Die Dreifaltigkeit moderner Medizintechnologie"]
-    TECH --> T1["Bildgebungs-KI: Ultraschnelle Erkennung mikroskopischer Läsionen in CT, MRT & Endoskopie"]
-    TECH --> T2["Chirurgische Assistenzroboter: Minimalinvasive Präzisionschirurgie mit da Vinci & hinotori"]
+    TECH --> T1["Bildgebungs-KI: Ultraschnelle Erkennung mikroskopischer Läsionen in CT, MRT and Endoskopie"]
+    TECH --> T2["Chirurgische Assistenzroboter: Minimalinvasive Präzisionschirurgie mit da Vinci and hinotori"]
     TECH --> T3["Genommedizin: Krebs-Präzisionsmedizin mittels Next-Generation-Sequencing"]
     T1 --> SYNTH["Hybride Medizin, integriert in das ärztliche klinische Urteil"]
     T2 --> SYNTH
     T3 --> SYNTH
-    SYNTH --> OUTCOME["Minimierung von Komplikationen & Realisierung einer individualisierten optimalen Therapie"]
+    SYNTH --> OUTCOME["Minimierung von Komplikationen and Realisierung einer individualisierten optimalen Therapie"]
 ```
 
 - **Diagnostische KI**: Bei der Detektion winziger pulmonaler Rundherde, kolorektaler Polypen oder diabetischer Retinopathien fungieren Deep-Learning-Algorithmen bereits als routinemäßiges „drittes Auge“ von Radiologen und Endoskopikern.

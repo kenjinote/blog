@@ -223,7 +223,7 @@ Após a conclusão dos 2 anos de residência inicial, o médico ingressa na cond
 
 ```mermaid
 flowchart TD
-    subgraph AreasBasicas ["Áreas Básicas Fundamentais (1º Nível: 3 a 5 anos)"]
+    subgraph BaseSpecialties ["Áreas Básicas Fundamentais (1º Nível: 3 a 5 anos)"]
         B1["Clínica Médica"]
         B2["Cirurgia Geral"]
         B3["Pediatria"]
@@ -232,7 +232,7 @@ flowchart TD
         B6["Medicina Geral e Comunitária (Clínica Geral)"]
         B7["Outras 13 Áreas (Ortopedia, Anestesiologia, Psiquiatria, Neurocirurgia, Dermatologia, Urologia, Oftalmologia, Otorrinolaringologia, Patologia, Radiologia, Cirurgia Plástica, Fisiatria, Patologia Clínica)"]
     end
-    subgraph Subespecialidades ["Subespecialidades Clínicas (2º Nível: mais 2 a 3 anos)"]
+    subgraph SubSpecialties ["Subespecialidades Clínicas (2º Nível: mais 2 a 3 anos)"]
         B1 --> S1["Cardiologia / Gastroenterologia / Pneumologia / Hematologia / Nefrologia / Endocrinologia e Metabologia / Neurologia"]
         B2 --> S2["Cirurgia do Aparelho Digestivo / Cirurgia Cardiovascular / Cirurgia Torácica / Cirurgia Pediátrica / Mastologia"]
     end

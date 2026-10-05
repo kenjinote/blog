@@ -223,7 +223,7 @@ Una vez finalizados los dos años de residencia inicial, el facultativo pasa a o
 
 ```mermaid
 flowchart TD
-    subgraph Áreas Básicas ("Nivel 1: Formación básica de 3 a 5 años")
+    subgraph BaseSpecialties ["Áreas Básicas (Nivel 1: Formación básica de 3 a 5 años)"]
         B1["Medicina Interna"]
         B2["Cirugía"]
         B3["Pediatría"]
@@ -232,7 +232,7 @@ flowchart TD
         B6["Medicina General / Familiar"]
         B7["Otras 13 áreas (Traumatología, Anestesiología, Psiquiatría, Neurocirugía, Dermatología, Urología, Oftalmología, Otorrinolaringología, Anatomía Patológica, Radiología, Cirugía Plástica, Rehabilitación, Análisis Clínicos)"]
     end
-    subgraph Subespecialidades ("Nivel 2: Especialización avanzada adicional de 2 a 3 años")
+    subgraph SubSpecialties ["Subespecialidades (Nivel 2: Especialización avanzada adicional de 2 a 3 años)"]
         B1 --> S1["Cardiología / Gastroenterología / Neumología / Hematología / Nefrología / Endocrinología y Diabetes / Neurología"]
         B2 --> S2["Cirugía Digestiva / Cirugía Cardiovascular / Cirugía Torácica / Cirugía Pediátrica / Cirugía de Mama"]
     end

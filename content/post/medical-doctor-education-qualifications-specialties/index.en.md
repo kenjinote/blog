@@ -20,11 +20,11 @@ The duty of a physician extends far beyond the mere eradication of disease (biol
 
 ```mermaid
 flowchart TD
-    A["The Dual Mission of the Physician"] --> B["Advanced Biomedical Knowledge & Technology (Science)"]
-    A --> C["Holistic Care & Spirit of Bioethics (Art & Ethics)"]
+    A["The Dual Mission of the Physician"] --> B["Advanced Biomedical Knowledge and Technology (Science)"]
+    A --> C["Holistic Care and Spirit of Bioethics (Art & Ethics)"]
     B --> D["Practice of Evidence-Based Medicine (EBM)"]
-    C --> E["Respect for Patient Dignity & Autonomy"]
-    D --> F["Advancing Public Health & Health Welfare for Society"]
+    C --> E["Respect for Patient Dignity and Autonomy"]
+    D --> F["Advancing Public Health and Health Welfare for Society"]
     E --> F
 ```
 
@@ -65,13 +65,13 @@ The pathway to becoming a physician is extraordinarily arduous and protracted. T
 
 ```mermaid
 flowchart TD
-    M1["Year 1: Liberal Arts, Basic Sciences & Early Clinical Exposure"] --> M2["Year 2: Preclinical Sciences (Anatomy, Histology, Physiology, Biochemistry)"]
-    M2 --> M3["Year 3: Basic & Social Medicine (Pathology, Pharmacology, Microbiology, Legal Medicine)"]
-    M3 --> M4["Year 4: Clinical Medicine Lectures & Integrated Systems"]
-    M4 --> EXAM["Major Milestones: CBT (Knowledge) & OSCE (Clinical Skills)"]
+    M1["Year 1: Liberal Arts, Basic Sciences and Early Clinical Exposure"] --> M2["Year 2: Preclinical Sciences (Anatomy, Histology, Physiology, Biochemistry)"]
+    M2 --> M3["Year 3: Basic and Social Medicine (Pathology, Pharmacology, Microbiology, Legal Medicine)"]
+    M3 --> M4["Year 4: Clinical Medicine Lectures and Integrated Systems"]
+    M4 --> EXAM["Major Milestones: CBT (Knowledge) and OSCE (Clinical Skills)"]
     EXAM --> M5["Year 5: Clinical Clerkship (Ward Rotations)"]
-    M5 --> M6["Year 6: Elective Clerkships, Graduation Exams & National Exam Prep"]
-    M6 --> GRAD["Graduation & Eligibility for National Medical Examination"]
+    M5 --> M6["Year 6: Elective Clerkships, Graduation Exams and National Exam Prep"]
+    M6 --> GRAD["Graduation and Eligibility for National Medical Examination"]
 ```
 
 ---
@@ -159,7 +159,7 @@ To pass the National Medical Examination, a candidate **must simultaneously sati
 flowchart TD
     SUBJ["Scoring System of the National Medical Examination"]
     SUBJ --> C1["1. Compulsory Questions: Absolute Cutoff of 80.0% or higher"]
-    SUBJ --> C2["2. General & Clinical Practical Questions: Relative Cutoff (Approx. Top 90%)"]
+    SUBJ --> C2["2. General and Clinical Practical Questions: Relative Cutoff (Approx. Top 90%)"]
     SUBJ --> C3["3. Contraindication Limit: Maximum 3 errors (4 or more = Instant Failure)"]
     C1 --> PASS["All Criteria Satisfied = Pass!"]
     C2 --> PASS
@@ -202,7 +202,7 @@ flowchart LR
     A["Patient Deterioration or Emergency Arrival"] --> B["Primary Survey: ABCDE Approach<br/>(Airway, Breathing, Circulation, Disability, Exposure)"]
     B --> C["Vital Sign Stabilization<br/>(Oxygenation, IV Access, Continuous ECG)"]
     C --> D["Secondary Survey: Focused History, Physical Exam, Bedside Ultrasound"]
-    D --> E["SBAR Handoff to Senior Staff & Transition to Definitive Therapy"]
+    D --> E["SBAR Handoff to Senior Staff and Transition to Definitive Therapy"]
 ```
 
 - **Emergency Department Night Shifts**: From walk-in minor illnesses to acute cardiopulmonary arrest (CPA) rushed in by EMS, the flow of critically ill patients is relentless. Under senior emergency physician guidance, residents triage life threats using the **"ABCDE Approach"** (Airway, Breathing, Circulation, Dysfunction/Disability of CNS, Exposure).
@@ -223,17 +223,17 @@ Upon completing the two-year junior residency, physicians advance to senior resi
 
 ```mermaid
 flowchart TD
-    subgraph Primary Specialties (First Tier: 3 to 5 Years)
+    subgraph BaseSpecialties ["Primary Specialties (First Tier: 3 to 5 Years)"]
         B1["Internal Medicine"]
         B2["Surgery"]
         B3["Pediatrics"]
-        B4["Obstetrics & Gynecology"]
+        B4["Obstetrics and Gynecology"]
         B5["Emergency Medicine"]
         B6["General Practice / Family Medicine"]
         B7["13 Other Fields (Orthopedics, Anesthesiology, Psychiatry, Neurosurgery, Dermatology, Urology, Ophthalmology, ENT, Pathology, Radiology, Plastic Surgery, Rehab, Clinical Lab)"]
     end
-    subgraph Subspecialties (Second Tier: Additional 2 to 3 Years)
-        B1 --> S1["Cardiology / Gastroenterology / Pulmonology / Hematology / Nephrology / Endocrinology & Metabolism / Neurology"]
+    subgraph SubSpecialties ["Subspecialties (Second Tier: Additional 2 to 3 Years)"]
+        B1 --> S1["Cardiology / Gastroenterology / Pulmonology / Hematology / Nephrology / Endocrinology and Metabolism / Neurology"]
         B2 --> S2["Gastrointestinal Surgery / Cardiovascular Surgery / Thoracic Surgery / Pediatric Surgery / Breast Surgery"]
     end
     S1 --> PHD["Supervising Board Certification, PhD in Medical Science, Clinical Research"]
@@ -473,7 +473,7 @@ flowchart TD
     T1 --> SYNTH["Hybrid Care Integrated with Physician Clinical Judgment"]
     T2 --> SYNTH
     T3 --> SYNTH
-    SYNTH --> OUTCOME["Minimizing Complications & Realizing Tailored Precision Therapeutics"]
+    SYNTH --> OUTCOME["Minimizing Complications and Realizing Tailored Precision Therapeutics"]
 ```
 
 - **Diagnostic AI**: Deep-learning algorithms identifying micro-nodules in lung cancer, subtle polyps during colonoscopy, and diabetic retinopathy on fundus photography now operate routinely as an indispensable "third eye" for radiologists and endoscopists.

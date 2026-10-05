@@ -21,7 +21,7 @@ Tugas dokter tidak berhenti pada sekadar pengobatan penyakit (Disease: kelainan 
 ```mermaid
 flowchart TD
     A["Misi Ganda Seorang Dokter"] --> B["Pengetahuan dan Teknologi Ilmu Hayati Tingkat Lanjut (Science)"]
-    A --> C["Pelayanan Holistik dan Semangat Bioetika (Art & Ethics)"]
+    A --> C["Pelayanan Holistik dan Semangat Bioetika (Art and Ethics)"]
     B --> D["Praktik Kedokteran Berbasis Bukti (EBM)"]
     C --> E["Penghormatan terhadap Martabat dan Hak Menentukan Nasib Sendiri Pasien"]
     D --> F["Peningkatan Kesehatan Masyarakat dan Kesejahteraan Sosial"]
@@ -66,12 +66,12 @@ Perjalanan untuk menjadi seorang dokter sangat berat, terjal, dan memakan waktu 
 ```mermaid
 flowchart TD
     M1["Tahun ke-1: Pendidikan Umum, Sains Dasar, dan Pengenalan Dini Kedokteran"] --> M2["Tahun ke-2: Ilmu Biomedis Dasar (Anatomi, Histologi, Fisiologi, Biokimia)"]
-    M2 --> M3["Tahun ke-3: Patologi & Ilmu Kedokteran Sosial (Patologi, Farmakologi, Mikrobiologi, Forensik)"]
+    M2 --> M3["Tahun ke-3: Patologi and Ilmu Kedokteran Sosial (Patologi, Farmakologi, Mikrobiologi, Forensik)"]
     M3 --> M4["Tahun ke-4: Ilmu Kedokteran Klinis dan Kuliah Terintegrasi"]
-    M4 --> EXAM["Rintangan Raksasa: CBT (Teori) & OSCE (Keterampilan Klinis)"]
+    M4 --> EXAM["Rintangan Raksasa: CBT (Teori) and OSCE (Keterampilan Klinis)"]
     EXAM --> M5["Tahun ke-5: Kepaniteraan Klinik (Clinical Clerkship Partisipatif)"]
     M5 --> M6["Tahun ke-6: Rotasi Elektif, Ujian Kelulusan, Persiapan Ujian Nasional"]
-    M6 --> GRAD["Kelulusan & Hak Mengikuti Ujian Nasional Lisensi Dokter"]
+    M6 --> GRAD["Kelulusan and Hak Mengikuti Ujian Nasional Lisensi Dokter"]
 ```
 
 ---
@@ -159,7 +159,7 @@ Penetapan kelulusan Ujian Nasional Lisensi Dokter mewajibkan peserta untuk **mem
 flowchart TD
     SUBJ["Sistem Penilaian Ujian Nasional Lisensi Dokter Jepang"]
     SUBJ --> C1["1. Soal Wajib: Standar Mutlak minimal 80,0% (Garis Gugur)"]
-    SUBJ --> C2["2. Soal Umum & Kasus Klinis: Standar Relatif (~90% teratas)"]
+    SUBJ --> C2["2. Soal Umum and Kasus Klinis: Standar Relatif (~90% teratas)"]
     SUBJ --> C3["3. Distraktor Kontraindikasi Fatal: Maksimal 3 kesalahan (4 atau lebih langsung GAGAL)"]
     C1 --> PASS["Lulus Jika Memenuhi SELURUH Kriteria Secara Bersamaan!"]
     C2 --> PASS
@@ -202,7 +202,7 @@ flowchart LR
     A["Kondisi Pasien Memburuk Tiba-Tiba / Rujukan Gawat Darurat"] --> B["Evaluasi Primer: Pendekatan ABCDE<br/>(Airway, Breathing, Circulation, Disability, Exposure)"]
     B --> C["Tindakan Stabilisasi Tanda Vital<br/>(Oksigenasi, Akses Vaskular, Pemantauan EKG)"]
     C --> D["Evaluasi Sekunder: Anamnesis Terperinci, Pemeriksaan Fisik, USG FAST"]
-    D --> E["Pelaporan ke Dokter Konsulen (Format SBAR) & Alih Terapi Spesialistik"]
+    D --> E["Pelaporan ke Dokter Konsulen (Format SBAR) and Alih Terapi Spesialistik"]
 ```
 
 - **Jaga Malam Instalasi Gawat Darurat (IGD)**: Arus pasien yang tidak pernah berhenti — mulai dari pasien jalan dengan keluhan demam hingga pasien henti jantung-paru (Cardiopulmonary Arrest / CPA) yang dibawa ambulans. Di bawah bimbingan dokter konsulen IGD, residen menerapkan protokol **«Pendekatan ABCDE»** (Airway, Breathing, Circulation, Dysfunction of CNS, Exposure) untuk melakukan triase kegawatdaruratan secara instan.
@@ -223,17 +223,17 @@ Setelah menyelesaikan 2 tahun residensi klinis awal, dokter melangkah menjadi «
 
 ```mermaid
 flowchart TD
-    subgraph Bidang Spesialis Dasar (Lantai 1: 3-5 Tahun)
+    subgraph BaseSpecialties ["Bidang Spesialis Dasar (Lantai 1: 3-5 Tahun)"]
         B1["Ilmu Penyakit Dalam"]
         B2["Ilmu Bedah"]
         B3["Ilmu Kesehatan Anak"]
         B4["Obstetri dan Ginekologi"]
         B5["Kedokteran Emergensi"]
-        B6["Kedokteran Umum & Keluarga"]
+        B6["Kedokteran Umum and Keluarga"]
         B7["13 Bidang Lainnya (Ortopedi, Anestesiologi, Psikiatri, Bedah Saraf, Dermatologi, Urologi, Mata, THT, Patologi, Radiologi, Bedah Plastik, Rehabilitasi Medis, Patologi Klinik)"]
     end
-    subgraph Bidang Subspesialis (Lantai 2: Tambahan 2-3 Tahun)
-        B1 --> S1["Kardiologi / Gastroenterologi / Pulmonologi / Hematologi / Nefrologi / Endokrinologi & Metabolik / Neurologi"]
+    subgraph SubSpecialties ["Bidang Subspesialis (Lantai 2: Tambahan 2-3 Tahun)"]
+        B1 --> S1["Kardiologi / Gastroenterologi / Pulmonologi / Hematologi / Nefrologi / Endokrinologi and Metabolik / Neurologi"]
         B2 --> S2["Bedah Digestif / Bedah Toraks Kardiovaskular / Bedah Toraks / Bedah Anak / Bedah Onkologi Payudara"]
     end
     S1 --> PHD["Kualifikasi Supervisi / Konsultan, Gelar Doktor (PhD), Publikasi Riset Klinis"]
