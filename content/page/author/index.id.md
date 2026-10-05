@@ -50,7 +50,7 @@ Menghadirkan antarmuka bersih tanpa gangguan dengan kecepatan akses instan. Sang
 
 Dirancang untuk memberikan pengalaman komunikasi yang ringan dan lancar. Tersedia langsung melalui peramban web maupun sebagai aplikasi desktop native Windows di Microsoft Store.
 
-- [Situs Resmi chat.exe](https://chatexe.net/)
+- [Situs Resmi chat.exe](https://chatexe.net/id.html)
 - [Microsoft Store (Versi Windows)](https://apps.microsoft.com/detail/9mvjzsr56jjk)
 
 ### 3. Video Screensaver

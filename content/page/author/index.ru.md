@@ -50,7 +50,7 @@ menu:
 
 Создан для быстрого и интуитивного взаимодействия. Сервис доступен как в виде веб-приложения в любом браузере, так и в виде нативного Windows-приложения в Microsoft Store.
 
-- [Официальный сайт chat.exe](https://chatexe.net/)
+- [Официальный сайт chat.exe](https://chatexe.net/ru.html)
 - [Microsoft Store (Версия для Windows)](https://apps.microsoft.com/detail/9mvjzsr56jjk)
 
 ### 3. Видео-заставка (Video Screensaver)

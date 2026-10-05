@@ -50,7 +50,7 @@ menu:
 
 注重直观交互与流畅体验的通讯利器。不仅支持通过浏览器即开即用的网页版，还专门提供了针对 Windows 系统深度优化的原生应用（可在微软商店下载），为高效沟通保驾护航。
 
-- [chat.exe 官方网站](https://chatexe.net/)
+- [chat.exe 官方网站](https://chatexe.net/zh-cn.html)
 - [Microsoft Store（Windows 版）](https://apps.microsoft.com/detail/9mvjzsr56jjk)
 
 ### 3. 视频屏幕保护程序 (Video Screensaver)

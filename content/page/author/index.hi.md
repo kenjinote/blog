@@ -50,7 +50,7 @@ menu:
 
 सहज बातचीत और तत्काल उत्तर के लिए बनाया गया एक आधुनिक संचार उपकरण। इसे वेब ब्राउज़र के माध्यम से या Microsoft Store से Windows ऐप के रूप में उपयोग करें।
 
-- [chat.exe आधिकारिक वेबसाइट](https://chatexe.net/)
+- [chat.exe आधिकारिक वेबसाइट](https://chatexe.net/hi.html)
 - [Microsoft Store (Windows संस्करण)](https://apps.microsoft.com/detail/9mvjzsr56jjk)
 
 ### 3. वीडियो स्क्रीनसेवर (Video Screensaver)

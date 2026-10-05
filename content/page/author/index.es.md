@@ -50,7 +50,7 @@ Combina una interfaz limpia y libre de ruidos visuales con una velocidad de inic
 
 Herramienta ágil e intuitiva pensada para facilitar un diálogo directo y fluido. Disponible tanto en versión web accesible desde cualquier navegador como en aplicación nativa optimizada para Windows en la Microsoft Store.
 
-- [Sitio web oficial de chat.exe](https://chatexe.net/)
+- [Sitio web oficial de chat.exe](https://chatexe.net/es.html)
 - [Microsoft Store (Versión Windows)](https://apps.microsoft.com/detail/9mvjzsr56jjk)
 
 ### 3. Video Screensaver

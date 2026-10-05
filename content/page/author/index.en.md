@@ -50,7 +50,7 @@ Combining a distraction-free interface with instant startup speed, miu delivers 
 
 Engineered for fluid usability and instant responsiveness, chat.exe redefines simple, reliable messaging. Enjoy it directly in your browser via the web client or install the native Windows app from the Microsoft Store.
 
-- [chat.exe Official Website](https://chatexe.net/)
+- [chat.exe Official Website](https://chatexe.net/en.html)
 - [Microsoft Store (Windows)](https://apps.microsoft.com/detail/9mvjzsr56jjk)
 
 ### 3. Video Screensaver

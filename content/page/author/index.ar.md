@@ -50,7 +50,7 @@ menu:
 
 أداة تواصل فورية تركز على سهولة الاستخدام وخفة الأداء. متوفرة كنسخة ويب تعمل مباشرة عبر المتصفح، بالإضافة إلى تطبيق مخصص ومُحسّن لنظام Windows عبر متجر مايكروسوفت.
 
-- [الموقع الرسمي لتطبيق chat.exe](https://chatexe.net/)
+- [الموقع الرسمي لتطبيق chat.exe](https://chatexe.net/ar.html)
 - [Microsoft Store (نسخة Windows)](https://apps.microsoft.com/detail/9mvjzsr56jjk)
 
 ### 3. شاشة التوقف بالفيديو (Video Screensaver)

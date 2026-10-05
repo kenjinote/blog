@@ -50,7 +50,7 @@ kenji.blog의 저자 kenjinote입니다. 2008년부터 현재까지 IT 기업에
 
 직관적인 사용성과 신속한 반응 속도에 집중한 차세대 커뮤니케이션 도구입니다. 웹 브라우저에서 바로 접속 가능한 웹 버전은 물론, Windows 환경에 최적화된 네이티브 앱(Microsoft Store)을 함께 제공하여 원활한 대화와 협업을 돕습니다.
 
-- [chat.exe 공식 웹사이트](https://chatexe.net/)
+- [chat.exe 공식 웹사이트](https://chatexe.net/ko.html)
 - [Microsoft Store (Windows 버전)](https://apps.microsoft.com/detail/9mvjzsr56jjk)
 
 ### 3. 비디오 화면 보호기 (Video Screensaver)

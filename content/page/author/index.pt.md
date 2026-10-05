@@ -50,7 +50,7 @@ Combina uma interface limpa com inicialização instantânea, proporcionando um 
 
 Projetado para oferecer uma comunicação dinâmica e confiável. Disponível diretamente pelo navegador na versão web ou como aplicativo nativo para Windows na Microsoft Store.
 
-- [Site oficial do chat.exe](https://chatexe.net/)
+- [Site oficial do chat.exe](https://chatexe.net/pt.html)
 - [Microsoft Store (Versão Windows)](https://apps.microsoft.com/detail/9mvjzsr56jjk)
 
 ### 3. Protetor de tela de vídeo (Video Screensaver)

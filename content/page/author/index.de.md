@@ -50,7 +50,7 @@ Verbindet eine aufgeräumte Benutzeroberfläche mit sofortiger Startbereitschaft
 
 Eine schlanke Kommunikationsplattform für einen reibungslosen Austausch. Direkt im Browser als Web-App verfügbar sowie als native, optimierte Windows-App im Microsoft Store.
 
-- [Offizielle chat.exe Website](https://chatexe.net/)
+- [Offizielle chat.exe Website](https://chatexe.net/de.html)
 - [Microsoft Store (Windows-Version)](https://apps.microsoft.com/detail/9mvjzsr56jjk)
 
 ### 3. Video Screensaver (Video-Bildschirmschoner)

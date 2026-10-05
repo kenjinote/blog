@@ -50,7 +50,7 @@ Alliant une interface épurée à une vitesse d'ouverture instantanée, miu offr
 
 Une solution de messagerie fluide et intuitive pour des échanges dynamiques au quotidien. Accessible directement via le client web ou en tant qu'application Windows native optimisée sur le Microsoft Store.
 
-- [Site officiel de chat.exe](https://chatexe.net/)
+- [Site officiel de chat.exe](https://chatexe.net/fr.html)
 - [Microsoft Store (Version Windows)](https://apps.microsoft.com/detail/9mvjzsr56jjk)
 
 ### 3. Écran de veille vidéo (Video Screensaver)
