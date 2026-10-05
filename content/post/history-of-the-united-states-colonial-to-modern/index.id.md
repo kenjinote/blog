@@ -362,13 +362,13 @@ Setelah ratifikasi Konstitusi Amerika Serikat rampung, perdebatan pemikiran pali
 
 ```mermaid
 flowchart LR
-    subgraph Faksi Hamilton (Federalis: Federalists)
+    subgraph Hamilton ["Faksi Hamilton (Federalis: Federalists)"]
         H1["Pemerintah federal yang kuat dan sentralisasi kekuasaan"]
         H2["Negara berbasis niaga, industri, keuangan, dan kota besar"]
         H3["Pendirian Bank Amerika Serikat dan pelunasan utang nasional"]
         H4["Penafsiran konstitusi yang elastis (Wewenang Tersirat / Implied Powers)"]
     end
-    subgraph Faksi Jefferson (Partai Demokrat-Republik: Republicans)
+    subgraph Jefferson ["Faksi Jefferson (Partai Demokrat-Republik: Republicans)"]
         J1["Pembelaan hak negara bagian, desentralisasi, dan pemerintahan terbatas"]
         J2["Republik agraris yang berbudi pekerti luhur ditopang petani mandiri (Yeoman Farmers)"]
         J3["Ketidakpercayaan mendalam pada perbankan dan modal spekulatif"]

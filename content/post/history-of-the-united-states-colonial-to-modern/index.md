@@ -361,13 +361,13 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    subgraph ハミルトン派（連邦党: Federalists）
+    subgraph Hamilton ["ハミルトン派（連邦党: Federalists）"]
         H1["強力な連邦政府・中央集権"]
         H2["商工業・金融立国・大都市"]
         H3["合衆国銀行創設と国債償還"]
         H4["憲法の伸縮的解釈（黙示の権能）"]
     end
-    subgraph ジェファーソン派（民主共和党: Republicans）
+    subgraph Jefferson ["ジェファーソン派（民主共和党: Republicans）"]
         J1["州権の擁護・地方分権・限定政府"]
         J2["自営農民（Yeoman Farmers）による徳ある農業共和国"]
         J3["銀行・投機資本への深い不信"]

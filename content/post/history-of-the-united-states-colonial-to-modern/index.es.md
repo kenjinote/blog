@@ -354,13 +354,13 @@ Tras la ratificación de la Constitución, en el seno del gabinete del primer pr
 
 ```mermaid
 flowchart LR
-    subgraph Facción hamiltoniana (Federalistas)
+    subgraph Hamilton ["Facción hamiltoniana (Federalistas)"]
         H1["Gobierno federal fuerte y centralización"]
         H2["Potencia comercial e industrial, finanzas y metrópolis"]
         H3["Creación del Banco Nacional y amortización de la deuda"]
         H4["Interpretación amplia de la Constitución (poderes implícitos)"]
     end
-    subgraph Facción jeffersoniana (Demócratas-Republicanos)
+    subgraph Jefferson ["Facción jeffersoniana (Demócratas-Republicanos)"]
         J1["Defensa de los derechos estatales, descentralización y gobierno limitado"]
         J2["República agraria virtuosa de agricultores libres (Yeoman Farmers)"]
         J3["Profunda desconfianza hacia la banca y el capital especulativo"]

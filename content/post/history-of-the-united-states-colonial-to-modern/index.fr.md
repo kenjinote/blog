@@ -359,13 +359,13 @@ Au lendemain de la ratification de la Constitution des États-Unis, le cabinet d
 
 ```mermaid
 flowchart LR
-    subgraph Faction hamiltonienne (Parti fédéraliste)
+    subgraph Hamilton ["Faction hamiltonienne (Parti fédéraliste)"]
         H1["Gouvernement fédéral fort et pouvoir centralisé"]
         H2["Puissance industrielle, commerciale et financière, essor urbain"]
         H3["Création de la Banque des États-Unis et reprise des dettes publiques"]
         H4["Interprétation souple de la Constitution (pouvoirs implicites)"]
     end
-    subgraph Faction jeffersonienne (Parti républicain-démocrate)
+    subgraph Jefferson ["Faction jeffersonienne (Parti républicain-démocrate)"]
         J1["Défense des droits des États, décentralisation, gouvernement limité"]
         J2["République agraire vertueuse reposant sur les fermiers indépendants"]
         J3["Défiance absolue envers les banques et la spéculation financière"]

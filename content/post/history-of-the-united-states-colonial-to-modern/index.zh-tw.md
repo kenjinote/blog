@@ -361,13 +361,13 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    subgraph 漢密爾頓派（聯邦黨: Federalists）
+    subgraph Hamilton ["漢密爾頓派（聯邦黨: Federalists）"]
         H1["強大聯邦政府、中央集權"]
         H2["工商立國、金融立國、大都會中心"]
         H3["創設合眾國銀行與償還國債"]
         H4["憲法寬鬆解釋（默示權力論）"]
     end
-    subgraph 傑佛遜派（民主共和黨: Republicans）
+    subgraph Jefferson ["傑佛遜派（民主共和黨: Republicans）"]
         J1["捍衛州權、地方分權、有限政府"]
         J2["自耕農（Yeoman Farmers）組成的道德農業共和國"]
         J3["對銀行體系與投機資本抱持高度懷疑"]

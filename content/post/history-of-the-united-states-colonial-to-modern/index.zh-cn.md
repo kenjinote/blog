@@ -359,13 +359,13 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    subgraph 汉密尔顿派（联邦党人: Federalists）
+    subgraph Hamilton ["汉密尔顿派（联邦党人: Federalists）"]
         H1["强有力的联邦政府与中央集权"]
         H2["工商业与金融立国·大城市发展"]
         H3["创立合众国银行与承接偿还国债"]
         H4["宪法的伸缩性解释（默示权力）"]
     end
-    subgraph 杰斐逊派（民主共和党人: Republicans）
+    subgraph Jefferson ["杰斐逊派（民主共和党人: Republicans）"]
         J1["捍卫州权·地方分权·有限政府"]
         J2["由自耕农（Yeoman Farmers）构成的有德性的农业共和国"]
         J3["对银行与投机资本的深层不信任"]
