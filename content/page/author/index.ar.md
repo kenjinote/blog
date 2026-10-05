@@ -63,5 +63,6 @@ menu:
 ## روابط ذات صلة
 
 - [GitHub — kenjinote](https://github.com/kenjinote)
+- [X — @kenjinote](https://x.com/kenjinote)
 - [عن هذه المدونة]({{< relref "/page/about" >}})
 - [أرشيف المقالات]({{< relref "/page/archives" >}})

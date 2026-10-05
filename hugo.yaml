@@ -131,6 +131,7 @@ params:
         url: https://kenji.blog/author/
         sameAs:
             - https://github.com/kenjinote
+            - https://x.com/kenjinote
             - https://mvp.microsoft.com/ja-JP/mvp/profile/9da0e78b-4d15-e711-810b-3863bb36edf8
         knowsAbout:
             - C

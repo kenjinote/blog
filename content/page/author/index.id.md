@@ -63,5 +63,6 @@ Aplikasi utilitas ringan untuk Windows yang memutar video pemandangan indah, ani
 ## Tautan terkait
 
 - [GitHub — kenjinote](https://github.com/kenjinote)
+- [X — @kenjinote](https://x.com/kenjinote)
 - [Tentang blog ini]({{< relref "/page/about" >}})
 - [Arsip artikel]({{< relref "/page/archives" >}})

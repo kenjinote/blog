@@ -63,5 +63,6 @@ menu:
 ## Полезные ссылки
 
 - [GitHub — kenjinote](https://github.com/kenjinote)
+- [X — @kenjinote](https://x.com/kenjinote)
 - [Об этом блоге]({{< relref "/page/about" >}})
 - [Архив статей]({{< relref "/page/archives" >}})

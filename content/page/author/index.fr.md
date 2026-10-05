@@ -63,5 +63,6 @@ Un utilitaire Windows sobre et discret permettant de diffuser en boucle vos plus
 ## Liens utiles
 
 - [GitHub — kenjinote](https://github.com/kenjinote)
+- [X — @kenjinote](https://x.com/kenjinote)
 - [À propos de ce blog]({{< relref "/page/about" >}})
 - [Archives des articles]({{< relref "/page/archives" >}})

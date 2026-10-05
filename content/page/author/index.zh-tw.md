@@ -63,5 +63,6 @@ menu:
 ## 相關連結
 
 - [GitHub — kenjinote](https://github.com/kenjinote)
+- [X — @kenjinote](https://x.com/kenjinote)
 - [關於本部落格]({{< relref "/page/about" >}})
 - [文章彙整]({{< relref "/page/archives" >}})

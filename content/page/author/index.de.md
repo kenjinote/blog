@@ -63,5 +63,6 @@ Ein ressourcenschonendes Dienstprogramm für Windows, das Landschaftsaufnahmen, 
 ## Weiterführende Links
 
 - [GitHub — kenjinote](https://github.com/kenjinote)
+- [X — @kenjinote](https://x.com/kenjinote)
 - [Über diesen Blog]({{< relref "/page/about" >}})
 - [Artikelarchiv]({{< relref "/page/archives" >}})

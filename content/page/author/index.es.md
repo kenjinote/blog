@@ -63,5 +63,6 @@ Una utilidad ligera que reproduce de forma fluida y en alta definición tus pais
 ## Enlaces relacionados
 
 - [GitHub — kenjinote](https://github.com/kenjinote)
+- [X — @kenjinote](https://x.com/kenjinote)
 - [Acerca de este blog]({{< relref "/page/about" >}})
 - [Archivo de artículos]({{< relref "/page/archives" >}})

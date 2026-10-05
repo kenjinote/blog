@@ -63,5 +63,6 @@ A sleek, lightweight Windows utility that seamlessly loops high-definition lands
 ## Related links
 
 - [GitHub — kenjinote](https://github.com/kenjinote)
+- [X — @kenjinote](https://x.com/kenjinote)
 - [About this blog]({{< relref "/page/about" >}})
 - [Article archive]({{< relref "/page/archives" >}})

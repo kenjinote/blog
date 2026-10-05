@@ -63,5 +63,6 @@ menu:
 ## संबंधित लिंक
 
 - [GitHub — kenjinote](https://github.com/kenjinote)
+- [X — @kenjinote](https://x.com/kenjinote)
 - [इस ब्लॉग के बारे में]({{< relref "/page/about" >}})
 - [लेख संग्रह]({{< relref "/page/archives" >}})

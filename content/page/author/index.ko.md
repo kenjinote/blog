@@ -63,5 +63,6 @@ kenji.blog의 저자 kenjinote입니다. 2008년부터 현재까지 IT 기업에
 ## 관련 링크
 
 - [GitHub — kenjinote](https://github.com/kenjinote)
+- [X — @kenjinote](https://x.com/kenjinote)
 - [블로그 소개]({{< relref "/page/about" >}})
 - [글 모음]({{< relref "/page/archives" >}})

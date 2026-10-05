@@ -63,5 +63,6 @@ Um utilitário leve e eficiente para Windows que reproduz vídeos de paisagens, 
 ## Links relacionados
 
 - [GitHub — kenjinote](https://github.com/kenjinote)
+- [X — @kenjinote](https://x.com/kenjinote)
 - [Sobre este blog]({{< relref "/page/about" >}})
 - [Arquivo de artigos]({{< relref "/page/archives" >}})

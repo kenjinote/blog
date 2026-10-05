@@ -63,5 +63,6 @@ kenji.blogの著者、kenjinoteです。2008年から現在までIT企業に所�
 ## 関連リンク
 
 - [GitHub — kenjinote](https://github.com/kenjinote)
+- [X — @kenjinote](https://x.com/kenjinote)
 - [このブログについて](/about/)
 - [記事一覧](/archives/)
