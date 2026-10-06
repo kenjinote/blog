@@ -228,10 +228,10 @@ flowchart TD
             PROTEASOME["Degradasi via sistem ubiquitin-proteasom<br/>Pemotongan menjadi fragmen peptida (8–11 asam amino)"]
             TAP["Transpor ke retikulum endoplasma via transporter TAP"]
             MHC1["Peptida berikatan dengan molekul MHC Kelas I<br/>Dipresentasikan secara kokoh di permukaan sel"]
-            CD8["Aktivasi spesifik sel T sitotoksik CD8+ (sel T pembunuh / CTL)<br/>※ Menghancurkan sel terinfeksi secara langsung & menyetop virus"]
+            CD8["Aktivasi spesifik sel T sitotoksik CD8+ (sel T pembunuh / CTL)<br/>※ Menghancurkan sel terinfeksi secara langsung dan menyetop virus"]
         end
 
-        subgraph Path_MHC2 ["Jalur Presentasi Antigen Eksogen (Imunitas Humoral & Antibodi)"]
+        subgraph Path_MHC2 ["Jalur Presentasi Antigen Eksogen (Imunitas Humoral dan Antibodi)"]
             EXOCYTO["Ekspresi spike di membran sel<br/>atau sekresi sebagian ke ruang ekstraseluler"]
             PHAGO["Fagositosis oleh sel dendritik naif di sekitar<br/>Degradasi dalam endosom/lisosom"]
             MHC2["Peptida dimuat pada molekul MHC Kelas II<br/>Dipresentasikan di permukaan sel"]
@@ -245,14 +245,16 @@ flowchart TD
             SHM["Hipermutasi somatik (SHM) dan seleksi klonal<br/>Peningkatan afinitas ikatan yang masif (maturasi afinitas)"]
             CLASS_SWITCH["Pergantian kelas antibodi (IgM → IgG1 / IgG3 afinitas tinggi)"]
             PLASMA["Sel plasma berumur panjang (LLPC): Menetap di sumsum tulang, menyekresi antibodi jangka panjang"]
-            MEMORY["Sel B memori (MBC) & Sel T memori (Tcm sentral / Tem efektor)"]
+            MEMORY["Sel B memori (MBC) dan Sel T memori (Tcm sentral / Tem efektor)"]
         end
 
         LNP_INJ --> DC_UPTAKE --> ESCAPE --> TRANSLATE
         TRANSLATE --> PROTEASOME --> TAP --> MHC1 --> CD8
         TRANSLATE --> EXOCYTO --> PHAGO --> MHC2 --> CD4 --> TFH
         TRANSLATE --> BCR
-        BCR & TFH --> TFH_HELP --> SHM --> CLASS_SWITCH
+        BCR --> TFH_HELP
+        TFH --> TFH_HELP
+        TFH_HELP --> SHM --> CLASS_SWITCH
         CLASS_SWITCH --> PLASMA
         CLASS_SWITCH --> MEMORY
     end
@@ -423,12 +425,12 @@ flowchart TD
     subgraph AntigenPresentationPlatforms ["Jalur Presentasi Antigen In Vivo pada Berbagai Platform Vaksin"]
         subgraph Sub_MRNA ["① Vaksin mRNA (Pfizer / Moderna)"]
             M1["mRNA terenkapsulasi LNP"] --> M2["Pengiriman ke sitoplasma"] --> M3["Sel inang menyintesis antigen"]
-            M3 --> M4["MHC-I (Sel T pembunuh)<br/>& MHC-II (Antibodi penetral)<br/>★ Induksi ganda ideal"]
+            M3 --> M4["MHC-I (Sel T pembunuh)<br/>dan MHC-II (Antibodi penetral)<br/>★ Induksi ganda ideal"]
         end
 
         subgraph Sub_Vector ["② Vektor Virus (AstraZeneca / J&J)"]
             V1["Adenovirus rekombinan"] --> V2["Suntikan DNA ke inti sel"] --> V3["Transkripsi diikuti sintesis protein"]
-            V3 --> V4["Induksi MHC-I & MHC-II<br/>※ Antibodi anti-vektor melemahkan dosis ulangan"]
+            V3 --> V4["Induksi MHC-I dan MHC-II<br/>※ Antibodi anti-vektor melemahkan dosis ulangan"]
         end
 
         subgraph Sub_Protein ["③ Protein Rekombinan (Novavax)"]

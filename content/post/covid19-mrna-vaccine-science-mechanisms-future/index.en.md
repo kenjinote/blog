@@ -242,7 +242,7 @@ flowchart TD
             CD8["Specific priming of CD8+ Cytotoxic T Lymphocytes (CTLs / Killer T cells)<br/>*Direct destruction of infected cells, viral containment"]
         end
 
-        subgraph Path_MHC2 ["Exogenous Antigen Presentation Pathway (Humoral Immunity & Antibodies)"]
+        subgraph Path_MHC2 ["Exogenous Antigen Presentation Pathway (Humoral Immunity and Antibodies)"]
             EXOCYTO["Spike expressed on cell surface<br/>or shed/secreted into extracellular space"]
             PHAGO["Uptake by bystander professional APCs (naive DCs)<br/>Endosomal/lysosomal proteolysis"]
             MHC2["Peptide loading onto MHC Class II molecules<br/>Surface presentation to CD4+ T cells"]
@@ -253,17 +253,19 @@ flowchart TD
         subgraph GerminalCenter ["Lymph Node Germinal Center (GC) Reaction"]
             BCR["Naive B cells recognize native conformational spike trimer"]
             TFH_HELP["Receipt of CD40L and IL-21 costimulatory signals from Tfh cells"]
-            SHM["Somatic Hypermutation (SHM) & Clonal Selection<br/>Dramatic affinity maturation"]
+            SHM["Somatic Hypermutation (SHM) and Clonal Selection<br/>Dramatic affinity maturation"]
             CLASS_SWITCH["Immunoglobulin class-switch recombination (IgM to high-affinity IgG1/IgG3)"]
             PLASMA["Long-Lived Plasma Cells (LLPCs): Homing to bone marrow niches, sustained antibody secretion"]
-            MEMORY["Memory B Cells (MBCs) & Memory T Cells (Central Memory Tcm / Effector Memory Tem)"]
+            MEMORY["Memory B Cells (MBCs) and Memory T Cells (Central Memory Tcm / Effector Memory Tem)"]
         end
 
         LNP_INJ --> DC_UPTAKE --> ESCAPE --> TRANSLATE
         TRANSLATE --> PROTEASOME --> TAP --> MHC1 --> CD8
         TRANSLATE --> EXOCYTO --> PHAGO --> MHC2 --> CD4 --> TFH
         TRANSLATE --> BCR
-        BCR & TFH --> TFH_HELP --> SHM --> CLASS_SWITCH
+        BCR --> TFH_HELP
+        TFH --> TFH_HELP
+        TFH_HELP --> SHM --> CLASS_SWITCH
         CLASS_SWITCH --> PLASMA
         CLASS_SWITCH --> MEMORY
     end
@@ -447,12 +449,12 @@ flowchart TD
     subgraph AntigenPresentationPlatforms ["Antigen Presentation Pathways Across Vaccine Platforms"]
         subgraph Sub_MRNA ["1. mRNA Vaccines (Pfizer / Moderna)"]
             M1["LNP-encapsulated mRNA"] --> M2["Cytosolic delivery"] --> M3["In vivo host antigen synthesis"]
-            M3 --> M4["MHC-I (CD8+ CTLs)<br/>& MHC-II (Neutralizing Abs)<br/>*Optimal Dual Induction"]
+            M3 --> M4["MHC-I (CD8+ CTLs)<br/>and MHC-II (Neutralizing Abs)<br/>*Optimal Dual Induction"]
         end
 
         subgraph Sub_Vector ["2. Viral Vector Vaccines (AstraZeneca / J&J)"]
-            V1["Recombinant adenovirus"] --> V2["Nuclear injection of DNA"] --> V3["Transcription & protein synthesis"]
-            V3 --> V4["MHC-I & MHC-II induction<br/>*Anti-vector immunity dampens booster efficacy"]
+            V1["Recombinant adenovirus"] --> V2["Nuclear injection of DNA"] --> V3["Transcription and protein synthesis"]
+            V3 --> V4["MHC-I and MHC-II induction<br/>*Anti-vector immunity dampens booster efficacy"]
         end
 
         subgraph Sub_Protein ["3. Recombinant Protein (Novavax)"]

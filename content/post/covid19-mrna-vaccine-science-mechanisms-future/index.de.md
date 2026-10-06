@@ -253,14 +253,16 @@ flowchart TD
             SHM["Somatische Hypermutation (SHM) und klonale Selektion<br/>Exponentieller Anstieg der Affinität (Affinitätsreifung)"]
             CLASS_SWITCH["Klassenwechsel der Antikörper (IgM → hochaffines IgG1 / IgG3)"]
             PLASMA["Langlebige Plasmazellen (LLPC): Verankerung im Knochenmark und dauerhafte Sekretion"]
-            MEMORY["B-Gedächtniszellen (MBC) & T-Gedächtniszellen (zentrale Tcm / Effektor-Tem)"]
+            MEMORY["B-Gedächtniszellen (MBC) und T-Gedächtniszellen (zentrale Tcm / Effektor-Tem)"]
         end
 
         LNP_INJ --> DC_UPTAKE --> ESCAPE --> TRANSLATE
         TRANSLATE --> PROTEASOME --> TAP --> MHC1 --> CD8
         TRANSLATE --> EXOCYTO --> PHAGO --> MHC2 --> CD4 --> TFH
         TRANSLATE --> BCR
-        BCR & TFH --> TFH_HELP --> SHM --> CLASS_SWITCH
+        BCR --> TFH_HELP
+        TFH --> TFH_HELP
+        TFH_HELP --> SHM --> CLASS_SWITCH
         CLASS_SWITCH --> PLASMA
         CLASS_SWITCH --> MEMORY
     end
@@ -438,7 +440,7 @@ flowchart TD
     subgraph AntigenPresentationPlatforms ["In-vivo-Antigenpräsentationswege verschiedener Impfstoffplattformen"]
         subgraph Sub_MRNA ["① mRNA-Impfstoffe (Pfizer / Moderna)"]
             M1["In LNP verpackte mRNA"] --> M2["Délivrance ins Zytosol"] --> M3["Körpereigene Zellen synthetisieren Antigen"]
-            M3 --> M4["MHC-I (Zytotoxische T-Zellen)<br/>& MHC-II (Neutralisierende Antikörper)<br/>★ Ideale duale Immuninduktion"]
+            M3 --> M4["MHC-I (Zytotoxische T-Zellen)<br/>und MHC-II (Neutralisierende Antikörper)<br/>★ Ideale duale Immuninduktion"]
         end
 
         subgraph Sub_Vector ["② Virale Vektoren (AstraZeneca / J&J)"]

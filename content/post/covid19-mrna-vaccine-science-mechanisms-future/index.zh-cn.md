@@ -263,7 +263,9 @@ flowchart TD
         TRANSLATE --> PROTEASOME --> TAP --> MHC1 --> CD8
         TRANSLATE --> EXOCYTO --> PHAGO --> MHC2 --> CD4 --> TFH
         TRANSLATE --> BCR
-        BCR & TFH --> TFH_HELP --> SHM --> CLASS_SWITCH
+        BCR --> TFH_HELP
+        TFH --> TFH_HELP
+        TFH_HELP --> SHM --> CLASS_SWITCH
         CLASS_SWITCH --> PLASMA
         CLASS_SWITCH --> MEMORY
     end
