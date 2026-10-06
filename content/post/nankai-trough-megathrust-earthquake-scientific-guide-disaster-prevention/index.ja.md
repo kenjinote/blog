@@ -8,6 +8,7 @@ description: "マグニチュード9クラスの発生が懸念される南海�
 categories: ["earthquake-science", "disaster-prevention"]
 tags: ["nankai-trough", "megathrust-earthquake", "tsunami", "plate-tectonics", "disaster-preparedness", "seismology", "crisis-management"]
 draft: false
+math: true
 eyecatch: "eyecatch.jpg"
 image: eyecatch.jpg
 ---
@@ -60,14 +61,11 @@ flowchart LR
 ### 1.2 アスペリティ（強固着域）と遷移領域の摩擦特性
 プレート境界における断層すべりの力学挙動は、境界を構成する岩石の摩擦特性によって規定される。現代の地震物理学では、Dieterich-Ruinaの「速度・状態依存摩擦構成則（Rate- and State-Dependent Friction Law）」を用いてプレート境界面の固着・すべり挙動が記述される。
 
-摩擦係数 $\mu$ は、すべり速度 $V$ および接触面の状態変数 $	heta$ に依存し、以下の基本方程式で表される：
+摩擦係数 $\mu$ は、すべり速度 $V$ および接触面の状態変数 $\theta$ に依存し、以下の基本方程式で表される：
 
-$$	au = \sigma_n \left[ \mu_0 + a \ln\left(rac{V}{V_0}
-ight) + b \ln\left(rac{V_0 heta}{L}
-ight) 
-ight]$$
+$$\tau = \sigma_n \left[ \mu_0 + a \ln\left(\frac{V}{V_0}\right) + b \ln\left(\frac{V_0 \theta}{L}\right) \right]$$
 
-ここで、$	au$ は剪断応力、$\sigma_n$ は有効垂直応力、$a$ および $b$ は無次元の摩擦パラメータ、$L$ は特性すべり距離である。この構成則において、$(a - b)$ の符号が境界の力学的性質を決定づける：
+ここで、$\tau$ は剪断応力、$\sigma_n$ は有効垂直応力、$a$ および $b$ は無次元の摩擦パラメータ、$L$ は特性すべり距離である。この構成則において、$(a - b)$ の符号が境界の力学的性質を決定づける：
 
 1. **速度弱化領域（Rate-Weakening: $a - b < 0$）＝「アスペリティ（強固着域）」**
  すべり速度の増加に伴って摩擦強度が低下するため、一度すべりが始まると不安定破壊（動的破壊）へと急速に遷移する。南海トラフの深さ約10kmから30kmの領域がこれに該当し、通常時は強固に固着して歪みを蓄積し、限界剪断応力に達した瞬間に数メートルから数十メートルの巨大すべりを起こして巨大地震（M8〜9）のエネルギーを解放する。
@@ -80,7 +78,7 @@ ight]$$
 | :--- | :--- | :--- | :--- | :--- |
 | **極浅部（トラフ近傍）** | 0 〜 10 km | $a - b > 0$ (一部弱化) | 低摩擦・高間隙水圧 | 津波地震・超低周波地震 |
 | **地震発生帯（強固着域）** | 10 〜 30 km | $a - b < 0$ (速度弱化) | 強固着・高剪断応力蓄積 | M8〜9クラス巨大地震破壊 |
-| **深部遷移領域** | 30 〜 35 km | $a - b pprox 0$ | 温度依存性遷移・流体移動 | 深部低周波微動・短期的SSE |
+| **深部遷移領域** | 30 〜 35 km | $a - b \approx 0$ | 温度依存性遷移・流体移動 | 深部低周波微動・短期的SSE |
 | **深部延性領域** | 35 km 以深 | $a - b > 0$ (速度強化) | 塑性流動・定常クリープ | 非地震性定常すべり |
 
 ### 1.3 スロースリップイベント（SSE）と深部低周波微動の力学

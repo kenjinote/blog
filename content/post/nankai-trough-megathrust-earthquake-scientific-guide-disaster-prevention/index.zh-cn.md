@@ -8,6 +8,7 @@ description: "全面系统解析日本面临的最大国难级灾害——9级�
 categories: ["earthquake-science", "disaster-prevention"]
 tags: ["nankai-trough", "megathrust-earthquake", "tsunami", "plate-tectonics", "disaster-preparedness", "seismology", "crisis-management"]
 draft: false
+math: true
 eyecatch: "eyecatch.jpg"
 image: eyecatch.jpg
 ---

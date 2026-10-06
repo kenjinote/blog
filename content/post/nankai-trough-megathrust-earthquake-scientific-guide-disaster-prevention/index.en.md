@@ -8,6 +8,7 @@ description: "A comprehensive, 10-chapter academic and operational whitepaper on
 categories: ["earthquake-science", "disaster-prevention"]
 tags: ["nankai-trough", "megathrust-earthquake", "tsunami", "plate-tectonics", "disaster-preparedness", "seismology", "crisis-management"]
 draft: false
+math: true
 eyecatch: "eyecatch.jpg"
 image: eyecatch.jpg
 ---

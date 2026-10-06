@@ -8,6 +8,7 @@ description: "Buku putih ilmiah komprehensif dalam 10 bab tentang ancaman gempa 
 categories: ["earthquake-science", "disaster-prevention"]
 tags: ["nankai-trough", "megathrust-earthquake", "tsunami", "plate-tectonics", "disaster-preparedness", "seismology", "crisis-management"]
 draft: false
+math: true
 eyecatch: "eyecatch.jpg"
 image: eyecatch.jpg
 ---

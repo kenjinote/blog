@@ -8,6 +8,7 @@ description: "일본 열도 최대의 국난급 재해인 M9급 난카이 트라
 categories: ["earthquake-science", "disaster-prevention"]
 tags: ["nankai-trough", "megathrust-earthquake", "tsunami", "plate-tectonics", "disaster-preparedness", "seismology", "crisis-management"]
 draft: false
+math: true
 eyecatch: "eyecatch.jpg"
 image: eyecatch.jpg
 ---
