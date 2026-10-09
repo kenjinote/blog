@@ -16,6 +16,7 @@ tags:
   - "climate-science"
 image: "eyecatch.jpg"
 draft: false
+math: true
 ---
 
 ## Pendahuluan: Menghadapi Mesin Panas Raksasa Atmosfer dan Samudra

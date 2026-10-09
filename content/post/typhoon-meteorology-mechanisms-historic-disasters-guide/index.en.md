@@ -16,6 +16,7 @@ tags:
   - "climate-science"
 image: "eyecatch.jpg"
 draft: false
+math: true
 ---
 
 ## Introduction: Confronting the Giant Heat Engines of the Atmosphere and Ocean

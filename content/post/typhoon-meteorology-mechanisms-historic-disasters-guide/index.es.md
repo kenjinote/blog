@@ -16,6 +16,7 @@ tags:
   - "climate-science"
 image: "eyecatch.jpg"
 draft: false
+math: true
 ---
 
 ## Introducción: Enfrentando a los Colosales Motores Térmicos del Océano y la Atmósfera

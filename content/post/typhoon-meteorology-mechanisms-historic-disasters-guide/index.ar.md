@@ -16,6 +16,7 @@ tags:
   - "climate-science"
 image: "eyecatch.jpg"
 draft: false
+math: true
 ---
 
 ## مقدمة: مواجهة المحركات الحرارية الجبارة للمحيط والغلاف الجوي

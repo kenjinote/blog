@@ -16,6 +16,7 @@ tags:
   - "climate-science"
 image: "eyecatch.jpg"
 draft: false
+math: true
 ---
 
 ## Introduction : Face aux Gigantesques Moteurs Thermiques Océan-Atmosphère

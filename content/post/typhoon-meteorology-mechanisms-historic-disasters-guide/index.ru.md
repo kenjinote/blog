@@ -16,6 +16,7 @@ tags:
   - "climate-science"
 image: "eyecatch.jpg"
 draft: false
+math: true
 ---
 
 ## Введение: Лицом к Лицу с Колоссальными Тепловыми Двигателями Океана и Атмосферы

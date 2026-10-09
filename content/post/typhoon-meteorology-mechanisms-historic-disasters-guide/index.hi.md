@@ -16,6 +16,7 @@ tags:
   - "climate-science"
 image: "eyecatch.jpg"
 draft: false
+math: true
 ---
 
 ## प्रस्तावना: वायुमंडल और महासागर के विशाल ताप इंजनों का सामना

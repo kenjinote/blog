@@ -16,6 +16,7 @@ tags:
   - "climate-science"
 image: "eyecatch.jpg"
 draft: false
+math: true
 ---
 
 ## Einleitung: Konfrontation mit den Gewaltigen Wärmekraftmaschinen von Atmosphäre und Ozean

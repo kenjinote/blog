@@ -16,6 +16,7 @@ tags:
   - "climate-science"
 image: "eyecatch.jpg"
 draft: false
+math: true
 ---
 
 ## Introdução: Diante dos Colossais Motores Térmicos do Oceano e da Atmosfera
