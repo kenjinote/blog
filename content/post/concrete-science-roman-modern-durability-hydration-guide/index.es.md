@@ -2,6 +2,7 @@
 title: "Por qué el hormigón fragua y por qué se deteriora: de la antigua Roma a las megaestructuras modernas——Química de hidratación, unión milagrosa con el acero, carbonatación y descarbonización"
 description: "¿Por qué el hormigón se convierte en roca sólida al contacto con el agua en lugar de simplemente secarse? Explore la ciencia del segundo material más consumido del planeta: la autorreparación del opus caementicium romano en agua marina, la nanomecánica del gel C-S-H, la expansión térmica del hormigón armado y la patología de su degradación."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "concrete-science-roman-modern-durability-hydration-guide"
 categories:
   - "material-science"

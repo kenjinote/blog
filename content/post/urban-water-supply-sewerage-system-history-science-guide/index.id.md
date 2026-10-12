@@ -2,6 +2,7 @@
 title: "Dari Mana Air Keran Berasal dan ke Mana Mengalirnya: Sains dan Sejarah Perkotaan Air Bersih dan Sanitasi — Sumber, Koagulasi, Lumpur Aktif, Hidrolika Pipa, Penghilangan PFAS, dan Ekonomi Sirkular"
 description: "Membuka keran dan menikmati air jernih yang langsung dapat diminum; menekan tuas toilet dan menyaksikan air limbah dimurnikan kembali ke alam. Dari akuaduk Romawi Kuno dan Bau Busuk London hingga sedimentasi Stokes, bioreaktor lumpur aktif, jaringan pipa tahan gempa, dan pembersihan senyawa abadi PFAS: panduan terlengkap infrastruktur air perkotaan."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "urban-water-supply-sewerage-system-history-science-guide"
 categories:
   - "infrastructure-and-civil-engineering"

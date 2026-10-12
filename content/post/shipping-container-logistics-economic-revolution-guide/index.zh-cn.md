@@ -2,6 +2,7 @@
 title: "世界为何因“铁箱”而连结：集装箱如何重构全球物流与世界经济——港口革命、ISO标准化、超大型集装箱船工学与供应链地缘脆弱性"
 description: "从1956年“理想X号”的破浪启航，到现代载箱量突破24,000 TEU的巨型货轮：一个波纹钢铁箱如何彻底消灭码头工人的原始苦力，引爆全球化经济革命。两万字全景解剖标准化之争、多式联运网络、全自动化码头与地缘政治咽喉瓶颈。"
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "shipping-container-logistics-economic-revolution-guide"
 categories:
   - "logistics-and-trade"

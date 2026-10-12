@@ -2,6 +2,7 @@
 title: "How Elevators Safely Transport Humanity: The Machines and Controls that Enabled Vertical Cities—Counterweights, Traction Hoists, Safety Gears, Group Dispatch AI, and Ultra-High-Speed Aerodynamics"
 description: "Why do elevators never plummet even if hoist ropes sever? From Elisha Otis's death-defying 1853 demonstration and Euler's belt friction mechanics to centrifugal speed governors, progressive wedge safeties, group supervisory AI, and 75 km/h aerodynamic atmospheric control, explore the definitive engineering marvels underpinning modern skyscrapers."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "elevator-safety-engineering-traction-control-skyscraper-guide"
 categories:
   - "mechanical-engineering"

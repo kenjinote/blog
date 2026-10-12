@@ -2,6 +2,7 @@
 title: "混凝土为何凝结，又为何损毁：从古罗马到现代巨型建筑——水泥水化化学、与钢筋的奇迹结合、碳化与氯盐侵蚀、以及脱碳未来"
 description: "为什么混凝土是遇水凝固成岩，而非简单干燥变硬？深度剖析人类消耗量仅次于水的核心人工物质：古罗马混凝土历经两千年海水冲刷为何自愈增强？硅酸三钙（C3S）与C-S-H凝胶的微观水化机制、钢筋与混凝土热膨胀系数完全一致的物理奇迹、碳化与碱骨料反应的病理学，以及未来封存CO2的生物自愈混凝土全貌。"
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "concrete-science-roman-modern-durability-hydration-guide"
 categories:
   - "material-science"

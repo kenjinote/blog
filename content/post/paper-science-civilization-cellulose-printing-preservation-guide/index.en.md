@@ -2,6 +2,7 @@
 title: "How Paper Transformed Civilization: From the Science of Fibers to Papermaking, Printing, and Preservation—Cellulose Hydrogen Bonding, Cai Lun's Invention to Gutenberg, and the Acid Paper Crisis"
 description: "How did a thin sheet engineered from plant cell walls catalyze an intellectual explosion and rewrite human history? Explore the definitive science of paper: the quantum chemistry of hydrogen bonding without adhesives, Cai Lun's ancient craft and its westward journey through the Battle of Talas, the fluid dynamics of Japanese washi vs. Western pulp engineering, co-evolution with Gutenberg's movable type, the 19th-century acid paper self-destruction crisis, modern mass deacidification, and the revolutionary future of cellulose nanofibers (CNF)."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "paper-science-civilization-cellulose-printing-preservation-guide"
 categories:
   - "science"

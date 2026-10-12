@@ -2,6 +2,7 @@
 title: "Warum die Welt durch „Stahlboxen“ zusammenwuchs: Wie der Seecontainer Logistik und Weltwirtschaft revolutionierte – Hafenrevolution, ISO-Standardisierung, Megaschiff-Ingenieurwesen und geopolitische Verwundbarkeit"
 description: "Von der Jungfernfahrt der Ideal-X im Jahr 1956 bis zu modernen 24.000-TEU-Giganten: Wie eine unscheinbare Box aus Profilstahl die Knochenarbeit der Hafenarbeiter beendete und die globale Wirtschaftsexplosion entfesselte. Eine tiefgreifende Analyse von Normenkriegen, intermodalen Verkehrsnetzen, autonomen Terminals und Engpass-Geopolitik."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "shipping-container-logistics-economic-revolution-guide"
 categories:
   - "logistics-and-trade"

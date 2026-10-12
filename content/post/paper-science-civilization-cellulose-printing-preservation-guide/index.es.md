@@ -2,6 +2,7 @@
 title: "Cómo el papel transformó la civilización: De la ciencia de las fibras a la fabricación, la imprenta y la conservación—Enlaces de hidrógeno de la celulosa, de Cai Lun a Gutenberg y la crisis del papel ácido"
 description: "Cómo una delgada lámina nacida de las paredes celulares vegetales desató la explosión del conocimiento y transformó la historia universal? Un análisis riguroso de la ciencia papelera: la química cuántica de los enlaces de hidrógeno sin adhesivos, el arte de Cai Lun y su difusión tras la batalla de Talas, la comparación fluidodinámica entre el washi japonés y la pulpa de madera occidental, la coevolución con la imprenta de Gutenberg, la crisis del papel ácido del siglo XIX, la desacidificación moderna y las nanofibras de celulosa (CNF)."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "paper-science-civilization-cellulose-printing-preservation-guide"
 categories:
   - "science"

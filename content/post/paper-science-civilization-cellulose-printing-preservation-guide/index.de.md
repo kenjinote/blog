@@ -2,6 +2,7 @@
 title: "Wie Papier die Zivilisation veränderte: Von der Faserwissenschaft zu Papierherstellung, Druck und Konservierung—Wasserstoffbrückenbindungen der Zellulose, von Cai Lun bis Gutenberg und die Krise des sauren Papiers"
 description: "Wie konnte ein hauchdünnes Blatt aus pflanzlichen Zellwänden die Wissensexplosion der Menschheit auslösen und die Welt grundlegend transformieren? Eine tiefgehende Analyse der Papierwissenschaft: die Quantenchemie der klebstofffreien Wasserstoffbrückenbindung, Cai Luns antike Kunst und die globale Verbreitung nach der Schlacht von Talas, der fluidmechanische Vergleich zwischen japanischem Washi und westlichem Holzzellstoff, die Symbiose mit Gutenbergs Buchdruck, die Selbstzerstörungskrise des sauren Papiers im 19. Jahrhundert, moderne Massenentsäuerungsverfahren und die revolutionäre Zukunft der Zellulose-Nanofasern (CNF)."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "paper-science-civilization-cellulose-printing-preservation-guide"
 categories:
   - "science"

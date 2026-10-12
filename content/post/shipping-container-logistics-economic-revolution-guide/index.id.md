@@ -2,6 +2,7 @@
 title: "Mengapa Dunia Terhubung Melalui «Kotak Baja»: Bagaimana Kontainer Laut Merevolusi Logistik dan Ekonomi Global — Revolusi Pelabuhan, Standarisasi ISO, Rekayasa Kapal Raksasa, dan Kerentanan Geopolitik"
 description: "Dari pelayaran perdana Ideal-X pada tahun 1956 hingga kapal raksasa modern berkapasitas lebih dari 24.000 TEU: bagaimana sebuah kotak baja bergelombang mengakhiri kerja kasar buruh pelabuhan dan memicu ledakan ekonomi global. Analisis menyeluruh tentang perang standarisasi, transportasi antarmoda, terminal otomatis, dan kerentanan rantai pasok dunia."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "shipping-container-logistics-economic-revolution-guide"
 categories:
   - "logistics-and-trade"

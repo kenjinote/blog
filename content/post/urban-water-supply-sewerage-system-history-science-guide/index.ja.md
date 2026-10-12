@@ -2,6 +2,7 @@
 title: "蛇口の水はどこから来て、どこへ行くのか：上下水道を支える科学と都市の歴史——水源・凝集沈殿・活性汚泥・配水水理学からPFAS除去・資源循環まで"
 description: "蛇口をひねれば無色透明の飲める水が出、流した汚水が無害化されて自然へ還る現代都市の奇跡。古代ローマの水道橋、ロンドンの大悪臭と疫学の夜明け、江戸の玉川上水から、フロック形成・活性汚泥法・水理解析・PFAS高度処理まで、上下水道インフラの全貌を2万字で徹底解剖。"
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "urban-water-supply-sewerage-system-history-science-guide"
 categories:
   - "infrastructure-and-civil-engineering"

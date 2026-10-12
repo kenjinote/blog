@@ -2,6 +2,7 @@
 title: "Comment les ascenseurs transportent l'humanité en toute sécurité : la mécanique et le contrôle qui ont bâti la ville verticale——Contrepoids, treuil à adhérence, parachute, IA de manœuvre et aérodynamique ultra-rapide"
 description: "Pourquoi un ascenseur ne chute-t-il jamais, même en cas de rupture totale des câbles ? De l'expérience héroïque d'Elisha Otis en 1853 à la mécanique du frottement d'Euler, en passant par le régulateur centrifuge, le parachute à prise progressive, l'IA de répartition et le contrôle barométrique à plus de 70 km/h, immersion totale dans l'ingénierie des gratte-ciel."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "elevator-safety-engineering-traction-control-skyscraper-guide"
 categories:
   - "mechanical-engineering"

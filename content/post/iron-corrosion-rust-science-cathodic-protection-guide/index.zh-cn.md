@@ -2,6 +2,7 @@
 title: "铁为何生锈：守护桥梁、轮船与管道的腐蚀科学全貌——电化学、电偶腐蚀、不锈钢钝化、镀层与阴极保护"
 description: "支撑文明的钢铁为何必然氧化归于尘土？深度剖析水滴微观局所电池反应、普尔贝电位-pH图的热力学宿命、异种金属接触腐蚀的面积效应悲剧、不锈钢数纳米Cr2O3钝化膜的自愈机理、白铁皮（镀锌）与马口铁（镀锡）的本质差异，以及守护远洋油轮与埋地管道的外加电流阴极保护技术。"
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "iron-corrosion-rust-science-cathodic-protection-guide"
 categories:
   - "material-science"

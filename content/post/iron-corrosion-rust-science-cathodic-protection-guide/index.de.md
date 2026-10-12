@@ -2,6 +2,7 @@
 title: "Warum Eisen rostet: Die vollständige Wissenschaft des Korrosionsschutzes für Brücken, Schiffe und Pipelines—Elektrochemie, galvanische Kopplung, Passivierung von Edelstahl, Verzinkung und kathodischer Schutz"
 description: "Warum kehrt veredeltes Eisen unaufhaltsam als Rost in die Erde zurück? Eine tiefgehende Analyse der Korrosionswissenschaft: mikro-elektrochemische Lokalelemente in Wassertropfen, freie Enthalpie und Pourbaix-Diagramme, der verhängnisvolle Flächeneffekt galvanischer Korrosion, nanometerdünne selbstheilende Chromoxidfilme, Zinkopferanoden vs. Weißblech und kathodische Schutzsysteme für weltweite Großinfrastrukturen."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "iron-corrosion-rust-science-cathodic-protection-guide"
 categories:
   - "material-science"

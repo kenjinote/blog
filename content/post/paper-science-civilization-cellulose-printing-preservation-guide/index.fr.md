@@ -2,6 +2,7 @@
 title: "Comment le papier a transformé la civilisation : De la science des fibres à la papeterie, l'imprimerie et la conservation—Liaisons hydrogène de la cellulose, de Cai Lun à Gutenberg et la crise du papier acide"
 description: "Comment une fine feuille issue des parois cellulaires végétales a-t-elle catalysé l'explosion du savoir et remodelé le cours de l'histoire ? Une analyse approfondie de la science papetière : la chimie quantique des liaisons hydrogène sans adhésif, l'art de Cai Lun et la transmission mondiale après la bataille de Talas, la comparaison fluidique entre le washi japonais et la pâte de bois occidentale, la co-évolution avec l'imprimerie de Gutenberg, la crise d'autodestruction du papier acide au XIXe siècle, la désacidification moderne et l'avenir des nanofibres de cellulose (CNF)."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "paper-science-civilization-cellulose-printing-preservation-guide"
 categories:
   - "science"

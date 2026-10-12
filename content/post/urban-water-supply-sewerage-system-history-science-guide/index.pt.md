@@ -2,6 +2,7 @@
 title: "De onde vem a água da torneira e para onde ela vai: A ciência e a história urbana do saneamento — Captação, coagulação, lodos ativados, redes hidráulicas, remoção de PFAS e economia circular"
 description: "Abrir a torneira e ter água potável pura e cristalina; dar descarga e ver o esgoto ser neutralizado e devolvido à natureza com segurança. Dos aquedutos romanos ao Grande Fedor de Londres, da sedimentação de Stokes aos biorreatores de lodo ativado e à eliminação de PFAS: uma autópsia completa da infraestrutura invisível das cidades."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "urban-water-supply-sewerage-system-history-science-guide"
 categories:
   - "infrastructure-and-civil-engineering"

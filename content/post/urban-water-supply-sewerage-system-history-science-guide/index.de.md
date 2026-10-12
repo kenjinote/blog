@@ -2,6 +2,7 @@
 title: "Woher das Wasser aus dem Hahn kommt und wohin es fließt: Die Wissenschaft und Stadtgeschichte der Wasserversorgung und Abwasserentsorgung – Wasserquellen, Flockung, Belebtschlamm, Rohrhydraulik bis zu PFAS-Elimination und Kreislaufwirtschaft"
 description: "Den Wasserhahn aufdrehen und glasklares Trinkwasser genießen; die Toilette spülen und gefährliche Abwässer naturverträglich reinigen. Von römischen Aquädukten und Londons 'Großem Gestank' über Stokes-Sedimentation, Belebtschlamm-Bioreaktoren, erdbebensichere Druckrohrnetze bis zur modernen PFAS-Beseitigung: Eine umfassende ingenieurwissenschaftliche Gesamtschau."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "urban-water-supply-sewerage-system-history-science-guide"
 categories:
   - "infrastructure-and-civil-engineering"

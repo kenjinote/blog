@@ -2,6 +2,7 @@
 title: "Como os elevadores transportam a humanidade com segurança: a engenharia mecânica e o controle que viabilizaram as cidades verticais——Contrapesos, tração, freios de segurança, IA de tráfego e aerodinâmica a mais de 70 km/h"
 description: "Por que um elevador nunca cai, mesmo se todos os cabos de tração se romperem? Da audaciosa demonstração de Elisha Otis em 1853 às leis de atrito de Euler, reguladores centrífugos, freios de segurança progressivos por cunha, despacho inteligente por IA e pressurização ativa a mais de 70 km/h: o guia definitivo da engenharia vertical."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "elevator-safety-engineering-traction-control-skyscraper-guide"
 categories:
   - "mechanical-engineering"

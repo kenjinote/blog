@@ -2,6 +2,7 @@
 title: "철은 왜 녹스는가: 다리·선박·수도관을 지키는 부식 과학의 전모——전기화학·이종 금속 접촉·스테인리스 부동태·도금과 음극방식"
 description: "문명을 떠받치는 금속인 철은 왜 반드시 산화하여 흙으로 돌아가려 하는가? 물방울 속 미시적 국부전지 반응, 깁스 자유에너지와 푸르베(Pourbaix) 전위-pH도가 증명하는 열역학적 숙명, 갈바닉 부식의 면적 효과 비극, 스테인리스강 나노 Cr2O3 부동태 피막의 자가치유 메커니즘, 양철과 함석의 결정적 차이, 그리고 해양 플랜트와 파이프라인을 지키는 음극방식(ICCP)의 전모를 철저 분석한다."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "iron-corrosion-rust-science-cathodic-protection-guide"
 categories:
   - "material-science"

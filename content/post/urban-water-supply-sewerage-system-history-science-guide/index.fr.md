@@ -2,6 +2,7 @@
 title: "D'où vient l'eau du robinet et où va-t-elle : La science et l'histoire urbaine de l'eau et de l'assainissement — Captage, coagulation, boues activées, hydraulique des réseaux, élimination des PFAS et économie circulaire"
 description: "Ouvrir le robinet et voir jaillir une eau pure et potable ; tirer la chasse et voir les effluents traités et restitués à la nature sans danger. Des aqueducs romains à la Grande Puanteur de Londres, des filtres à sable aux bioréacteurs à boues activées, de l'hydraulique sous pression à l'élimination des polluants éternels (PFAS) : autopsie complète de nos réseaux invisibles."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "urban-water-supply-sewerage-system-history-science-guide"
 categories:
   - "infrastructure-and-civil-engineering"

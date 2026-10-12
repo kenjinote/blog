@@ -2,6 +2,7 @@
 title: "De dónde viene el agua del grifo y a dónde va: La ciencia y la historia urbana del agua y el saneamiento — Fuentes, coagulación, lodos activos, redes hidráulicas, eliminación de PFAS y economía circular"
 description: "Abrir el grifo y disfrutar de agua potable cristalina; tirar de la cadena y ver cómo los residuos se depuran y regresan a la naturaleza sin contaminar. Desde los acueductos romanos y el Gran Hedor de Londres hasta la sedimentación de Stokes, los biorreactores de lodos activos y la eliminación de contaminantes eternos (PFAS): análisis definitivo de la infraestructura invisible."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "urban-water-supply-sewerage-system-history-science-guide"
 categories:
   - "infrastructure-and-civil-engineering"

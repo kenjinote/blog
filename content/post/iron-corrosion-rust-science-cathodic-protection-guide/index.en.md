@@ -2,6 +2,7 @@
 title: "Why Iron Rusts: The Complete Science of Corrosion Protection for Bridges, Ships, and Pipelines—Electrochemistry, Galvanic Coupling, Stainless Passivation, Galvanizing, and Cathodic Protection"
 description: "Why does refined iron inexorably return to earth as rust? Delve into the definitive science of corrosion engineering: microscopic local action cells within water droplets, Gibbs free energy and Pourbaix potential-pH equilibrium diagrams, the catastrophic area effect of galvanic coupling, nanometer-thin self-healing chromium oxide films, galvanized zinc vs. tinplate, and cathodic protection systems safeguarding global mega-infrastructure."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "iron-corrosion-rust-science-cathodic-protection-guide"
 categories:
   - "material-science"

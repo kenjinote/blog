@@ -2,6 +2,7 @@
 title: "Why Concrete Sets and Why It Fails: From Ancient Rome to Modern Megastructures—Cement Hydration Chemistry, the Miraculous Marriage with Rebar, Carbonation, Chloride Attack, and Decarbonization"
 description: "Why does concrete solidify into rock rather than dry out? Unpack the definitive engineering science behind Earth's second most consumed substance: how ancient Roman opus caementicium self-heals under seawater, the nano-mechanics of C-S-H gel and Bogue's compounds, the thermal expansion miracle behind reinforced concrete, the pathology of carbonation and alkali-silica reaction, and the frontier of CO2-negative bio-concrete."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "concrete-science-roman-modern-durability-hydration-guide"
 categories:
   - "material-science"

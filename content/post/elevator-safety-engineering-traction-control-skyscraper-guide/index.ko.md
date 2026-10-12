@@ -2,6 +2,7 @@
 title: "엘리베이터는 어떻게 인간을 안전하게 운송하는가: 초고층 도시를 가능케 한 기계와 제어——균형추·권상기·비상정지장치·군관리 AI부터 초고속 공기역학까지"
 description: "와이어 로프가 모두 끊어져도 엘리베이터가 절대 추락하지 않는 이유는 무엇인가? 1853년 오티스의 목숨을 건 실험부터 오일러 벨트 마찰역학, 원심 조속기, 쐐기형 비상정지장치, 대기시간을 극소화하는 군관리 AI, 시속 70km 초고속 기압·공기역학 제어까지, 수직 도시를 지탱하는 거대 기계공학의 전모를 철저히 해부한다."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "elevator-safety-engineering-traction-control-skyscraper-guide"
 categories:
   - "mechanical-engineering"

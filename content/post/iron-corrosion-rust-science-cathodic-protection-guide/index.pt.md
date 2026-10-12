@@ -2,6 +2,7 @@
 title: "Por que o ferro enferruja: A ciência completa da proteção contra corrosão de pontes, navios e dutos—Eletroquímica, par galvânico, passivação do aço inoxidável, galvanização e proteção catódica"
 description: "Por que o ferro refinado retorna inexoravelmente à terra como ferrugem? Uma análise profunda da engenharia de corrosão: micropilhas locais em gotas d'água, entalpia livre e diagramas de Pourbaix, o catastrófico efeito de área na corrosão galvânica, nanofilmes autorregenerativos de óxido de cromo, zinco de sacrifício versus folha-de-flandres e sistemas de proteção catódica que preservam as megaestruturas mundiais."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "iron-corrosion-rust-science-cathodic-protection-guide"
 categories:
   - "material-science"

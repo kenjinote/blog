@@ -2,6 +2,7 @@
 title: "콘크리트는 왜 굳고, 왜 부서지는가: 고대 로마부터 현대 초거대 건축까지——시멘트 수화 반응·철근과의 기적적 결합·중성화와 염해·탈탄소 혁명"
 description: "인류가 물 다음으로 가장 많이 소비하는 인공 물질인 콘크리트는 왜 마르는 것이 아니라 물과 결합하여 암석으로 굳는가? 2000년 전 고대 로마 판테온 돔이 해수 속에서 자가 치유되며 강도를 높인 비밀, 규산삼칼슘(C3S)과 C-S-H 겔의 수화 화학, 철근과 열팽창계수가 일치하는 물리적 기적, 중성화와 염해의 병리학, 그리고 CO2를 격리하는 미래 바이오 콘크리트까지 철저 해부한다."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "concrete-science-roman-modern-durability-hydration-guide"
 categories:
   - "material-science"

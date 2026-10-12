@@ -2,6 +2,7 @@
 title: "Bagaimana Kertas Mengubah Peradaban: Dari Sains Serat hingga Pembuatan Kertas, Percetakan, dan Preservasi—Ikatan Hidrogen Selulosa, dari Cai Lun ke Gutenberg, dan Krisis Kertas Asam"
 description: "Bagaimana selembar lembaran tipis dari dinding sel tumbuhan mampu memicu ledakan pengetahuan dan merevolusi peradaban dunia? Analisis mendalam tentang sains kertas: kimia kuantum ikatan hidrogen tanpa perekat, seni kuno Cai Lun dan penyebarannya melalui Pertempuran Talas, perbandingan hidrodinamika washi Jepang vs pulp kayu Barat, koevolusi dengan mesin cetak Gutenberg, krisis penghancuran diri kertas asam abad ke-19, preservasi modern, dan masa depan selulosa nanofiber (CNF)."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "paper-science-civilization-cellulose-printing-preservation-guide"
 categories:
   - "science"

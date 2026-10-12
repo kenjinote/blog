@@ -2,6 +2,7 @@
 title: "電梯如何安全運載人類：開啟高層都市的機械與控制全貌——配重平衡、曳引驅動、安全鉗、群控AI到超高速氣動控制"
 description: "為什麼即便鋼索全數斷裂，電梯也絕不會墜落？從1853年奧的斯捨命斷繩實驗，到尤拉皮帶摩擦力學、離心限速器、漸進式安全鉗、最小化等待時間的群控AI，再到時速70公里以上的超高速氣動氣壓控制，深度剖析支撐三維垂直都市的宏偉機械工程體系。"
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "elevator-safety-engineering-traction-control-skyscraper-guide"
 categories:
   - "mechanical-engineering"

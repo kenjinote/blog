@@ -2,6 +2,7 @@
 title: "Pourquoi le monde s'est connecté grâce à des « boîtes d'acier » : Comment le conteneur maritime a métamorphosé la logistique et l'économie mondiale — Révolution portuaire, standardisation ISO, ingénierie des méga-porte-conteneurs et fragilité géopolitique"
 description: "Du voyage inaugural de l'Ideal-X en 1956 aux géants actuels de plus de 24 000 EVP : comment une banale boîte en acier profilé a éradiqué le labeur archaïque des dockers et déclenché l'explosion économique planétaire. Une autopsie complète des guerres de normes, du transport multimodal, des terminaux automatisés et des goulets d'étranglement géopolitiques."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "shipping-container-logistics-economic-revolution-guide"
 categories:
   - "logistics-and-trade"

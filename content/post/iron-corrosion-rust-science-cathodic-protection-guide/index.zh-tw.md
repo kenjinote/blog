@@ -2,6 +2,7 @@
 title: "鐵為何生鏽：守護橋樑、輪船與管線的腐蝕科學全貌——電化學、電偶腐蝕、不鏽鋼鈍化、鍍層與陰極防蝕"
 description: "支撐文明的鋼鐵為何必然氧化歸於塵土？深度剖析水滴微觀局所電池反應、普爾貝電位-pH圖的熱力學宿命、異種金屬接觸腐蝕的面積效應悲劇、不鏽鋼數奈米Cr2O3鈍化膜的自癒機理、白鐵皮（鍍鋅）與馬口鐵（鍍錫）的本質差異，以及守護遠洋油輪與埋地管線的外加電流陰極防蝕技術。"
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "iron-corrosion-rust-science-cathodic-protection-guide"
 categories:
   - "material-science"

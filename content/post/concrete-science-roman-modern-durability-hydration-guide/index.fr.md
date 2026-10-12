@@ -2,6 +2,7 @@
 title: "Pourquoi le béton durcit et pourquoi il se détériore : de la Rome antique aux mégastructures modernes——Chimie de l'hydratation, mariage miraculeux avec l'acier, carbonatation, chlorures et décarbonation"
 description: "Pourquoi le béton prend-il avec l'eau pour devenir de la pierre au lieu de simplement sécher ? Découvrez la science de la matière la plus consommée sur Terre après l'eau : l'auto-cicatrisation de l'opus caementicium romain, la nano-mécanique du gel C-S-H, la dilatation thermique du béton armé, la pathologie de la carbonatation et l'avenir du bio-béton bas carbone."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "concrete-science-roman-modern-durability-hydration-guide"
 categories:
   - "material-science"

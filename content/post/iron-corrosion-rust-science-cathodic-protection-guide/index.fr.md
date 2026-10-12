@@ -2,6 +2,7 @@
 title: "Pourquoi le fer rouille : La science complète de la protection contre la corrosion des ponts, des navires et des pipelines—Électrochimie, couplage galvanique, passivation de l'acier inoxydable, galvanisation et protection cathodique"
 description: "Pourquoi le fer raffiné retourne-t-il inéluctablement à la terre sous forme de rouille ? Une analyse approfondie de l'ingénierie de la corrosion : micropiles locales au sein des gouttes d'eau, enthalpie libre et diagrammes de Pourbaix, effet de surface catastrophique de la corrosion galvanique, nanocouches auto-cicatrisantes d'oxyde de chrome, zinc sacrificiel contre fer-blanc et systèmes de protection cathodique des méga-infrastructures mondiales."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "iron-corrosion-rust-science-cathodic-protection-guide"
 categories:
   - "material-science"

@@ -2,6 +2,7 @@
 title: "エレベーターはどうやって安全に人を運ぶのか：高層都市を可能にした機械と制御——つり合いおもり・トラクション巻上機・非常止め・群管理AIから超高速空力制御まで"
 description: "なぜワイヤーロープが切れてもエレベーターは絶対に墜落しないのか？ 1853年オーチスの命がけの実験から、オイラーのベルト摩擦力学、調速機（ガバナー）とくさび式非常止め、待ち時間を極小化する群管理AI、時速70km超の気圧・空力制御まで、垂直都市を支える巨大機械工学の全貌を徹底解剖。"
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "elevator-safety-engineering-traction-control-skyscraper-guide"
 categories:
   - "mechanical-engineering"

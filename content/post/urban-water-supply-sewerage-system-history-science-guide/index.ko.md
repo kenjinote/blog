@@ -2,6 +2,7 @@
 title: "수도꼭지의 물은 어디서 오고 어디로 가는가: 상하수도를 지탱하는 과학과 도시의 역사——수원・응집침전・활성슬러지・수리학부터 PFAS 제거와 자원순환까지"
 description: "수도꼭지를 틀면 맑은 음용수가 나오고, 버려진 오수는 무해화되어 자연으로 환원되는 현대 도시의 기적. 고대 로마 수도교, 런던 대악취와 역학의 탄생, 에도 시대 상수도부터 응집침전・활성슬러지 바이오반응기・내진 배수관망・PFAS 정밀 제거까지 상하수도 인프라의 전모를 2만 자로 완벽 해부."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "urban-water-supply-sewerage-system-history-science-guide"
 categories:
   - "infrastructure-and-civil-engineering"

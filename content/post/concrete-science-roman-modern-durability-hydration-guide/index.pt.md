@@ -2,6 +2,7 @@
 title: "Por que o concreto endurece e por que se deteriora: da Roma antiga às megaestruturas modernas——Química da hidratação, casamento milagroso com o aço, carbonatação e descarbonização"
 description: "Por que o concreto vira rocha com a água em vez de simplesmente secar? Descubra a ciência do segundo material mais consumido na Terra: a autorrecuperação do opus caementicium romano na água do mar, a nanomecânica do gel C-S-H, a expansão térmica do concreto armado e a patologia da sua degradação."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "concrete-science-roman-modern-durability-hydration-guide"
 categories:
   - "material-science"

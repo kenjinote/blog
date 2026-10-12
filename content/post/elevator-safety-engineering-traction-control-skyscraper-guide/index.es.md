@@ -2,6 +2,7 @@
 title: "Cómo los ascensores transportan a la humanidad con seguridad: la ingeniería mecánica y el control que hicieron posibles las ciudades verticales——Contrapesos, tracción, paracaídas, IA de tráfico y aerodinámica a más de 70 km/h"
 description: "¿Por qué un ascensor nunca se desploma, incluso si se cortan todos los cables de tracción? Desde la audaz prueba de Elisha Otis en 1853 hasta las leyes de fricción de Euler, limitadores centrífugos, paracaídas progresivos, IA de asignación anticipada y presurización atmosférica a más de 70 km/h: la guía definitiva de la ingeniería vertical."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "elevator-safety-engineering-traction-control-skyscraper-guide"
 categories:
   - "mechanical-engineering"

@@ -2,6 +2,7 @@
 title: "Mengapa Besi Berkarat: Sains Lengkap Perlindungan Korosi untuk Jembatan, Kapal, dan Pipa—Elektrokimia, Pasangan Galvanik, Pasivasi Baja Tahan Karat, Galvanisasi, dan Proteksi Katodik"
 description: "Mengapa besi murni secara alami kembali ke bumi sebagai karat? Analisis mendalam tentang rekayasa korosi: sel aksi lokal mikroskopis dalam tetesan air, energi bebas Gibbs dan diagram Pourbaix, efek rasio luas yang menghancurkan pada korosi galvanik, lapisan film pasif kromium oksida berukuran nanometer yang dapat pulih sendiri, seng korban vs kaleng timah, dan sistem proteksi katodik untuk infrastruktur global."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "iron-corrosion-rust-science-cathodic-protection-guide"
 categories:
   - "material-science"

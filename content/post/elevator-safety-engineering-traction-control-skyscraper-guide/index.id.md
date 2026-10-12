@@ -2,6 +2,7 @@
 title: "Bagaimana Lift Mengangkut Manusia dengan Aman: Mekanika dan Sistem Kendali Pembangun Kota Vertikal——Penyeimbang, Mesin Traksi, Safety Gear, AI Manajemen Grup, hingga Aerodinamika di Atas 70 km/jam"
 description: "Mengapa lift tidak pernah jatuh bebas meski semua tali kawat baja putus? Dari eksperimen nekat Elisha Otis tahun 1853, hukum gesekan Euler, governor sentrifugal, rem baji progresif, dispatching berbasis AI, hingga kontrol tekanan udara kabin di atas 70 km/jam: bedah tuntas rekayasa mekanik pencakar langit."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "elevator-safety-engineering-traction-control-skyscraper-guide"
 categories:
   - "mechanical-engineering"

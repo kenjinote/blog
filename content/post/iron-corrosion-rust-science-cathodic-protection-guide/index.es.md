@@ -2,6 +2,7 @@
 title: "Por qué se oxida el hierro: La ciencia completa de la protección contra la corrosión de puentes, barcos y tuberías—Electroquímica, par galvánico, pasivación del acero inoxidable, galvanizado y protección catódica"
 description: "Por qué el hierro refinado regresa inexorablemente a la tierra en forma de óxido? Un análisis exhaustivo de la ingeniería de corrosión: microceldas locales en gotas de agua, entalpía libre y diagramas de Pourbaix, el catastrófico efecto de área de la corrosión galvánica, capas nanométricas autorreparables de óxido de cromo, zinc de sacrificio frente a hojalata y sistemas de protección catódica que salvaguardan la megaestructura global."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "iron-corrosion-rust-science-cathodic-protection-guide"
 categories:
   - "material-science"

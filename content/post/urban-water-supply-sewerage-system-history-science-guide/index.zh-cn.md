@@ -2,6 +2,7 @@
 title: "水龙头的水从何而来，又流向何方：支撑现代城市的上下水道科学与文明史——水源・混凝沉淀・活性污泥・管网水力学至PFAS深度净化与资源循环"
 description: "拧开水龙头便能流出晶莹纯净的饮用水，冲走污水后又能无害化归还大自然。从古罗马高架引水桥、伦敦大恶臭与现代流行病学诞生，到江户木樋暗渠、斯托克斯沉降、活性污泥生物反应器、耐震给水管网及PFAS前沿去除技术：两万字全景解剖城市水循环系统的工程全貌。"
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "urban-water-supply-sewerage-system-history-science-guide"
 categories:
   - "infrastructure-and-civil-engineering"

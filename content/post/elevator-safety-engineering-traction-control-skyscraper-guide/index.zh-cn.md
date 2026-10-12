@@ -2,6 +2,7 @@
 title: "电梯如何安全运载人类：开启高层都市的机械与控制全貌——对重平衡、曳引驱动、安全钳、群控AI到超高速气动控制"
 description: "为什么即便钢丝绳全部断裂，电梯也绝不会坠落？从1853年奥的斯舍命断绳实验，到欧拉皮带摩擦力学、离心限速器、渐进式安全钳、最小化等待时间的群控AI，再到时速70公里以上的超高速气动气压控制，深度剖析支撑三维垂直都市的宏伟机械工程体系。"
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "elevator-safety-engineering-traction-control-skyscraper-guide"
 categories:
   - "mechanical-engineering"

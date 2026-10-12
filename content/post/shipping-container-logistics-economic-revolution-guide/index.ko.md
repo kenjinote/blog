@@ -2,6 +2,7 @@
 title: "세계는 왜 '철의 상자'로 연결되었는가: 해상 컨테이너가 바꾼 물류와 경제——항만 혁명, ISO 표준화, 메가 컨테이너선 공학과 공급망 지정학적 취약성"
 description: "1956년 아이디얼 X호의 출항부터 24,000 TEU급 초대형 메가선까지, 평범한 강철 상자가 항만 노동을 근본적으로 바꾸고 글로벌 경제를 폭발시킨 전모. 표준화 전쟁, 복합일관수송, 수에즈 좌초 사고가 드러낸 공급망 급소를 2만 자로 철저 해부."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "shipping-container-logistics-economic-revolution-guide"
 categories:
   - "logistics-and-trade"

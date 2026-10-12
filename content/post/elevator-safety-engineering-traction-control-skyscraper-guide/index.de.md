@@ -2,6 +2,7 @@
 title: "Wie Aufzüge die Menschheit sicher transportieren: Maschinenbau und Regelungstechnik der vertikalen Metropolen——Gegengewichte, Treibscheibenantriebe, Fangvorrichtungen, KI-Gruppensteuerung und aerodynamische Hochgeschwindigkeitskontrolle"
 description: "Warum stürzt ein Aufzug niemals ab, selbst wenn sämtliche Tragseile reißen? Von Elisha Otis' waghalsigem Experiment im Jahr 1853 über Eulers Seilreibungsmechanik, mechanische Geschwindigkeitsbegrenzer und progressive Keilfangvorrichtungen bis hin zu KI-gestützter Gruppensteuerung und Atmosphärendruckregelung bei über 70 km/h: Die definitive Gesamtschau des vertikalen Transports."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "elevator-safety-engineering-traction-control-skyscraper-guide"
 categories:
   - "mechanical-engineering"

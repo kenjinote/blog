@@ -2,6 +2,7 @@
 title: "Warum Beton erstarrt und warum er zerfällt: Vom antiken Rom bis zu modernen Megastrukturen——Zementhydratation, die Wunder-Symbiose mit Bewehrungsstahl, Karbonatisierung, Chloridkorrosion und Dekarbonisierung"
 description: "Warum härtet Beton durch Wasser zu Stein, anstatt einfach auszutrocknen? Ergründen Sie die ingenieurwissenschaftlichen Grundlagen des am zweithäufigsten konsumierten Stoffes der Erde: Wie römischer Opus Caementicium im Meerwasser selbstheilt, die Nanomechanik des C-S-H-Gels, das thermische Wunder des Stahlbetons, die Pathologie der Karbonatisierung und die Zukunft des CO2-negativen Bio-Betons."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "concrete-science-roman-modern-durability-hydration-guide"
 categories:
   - "material-science"

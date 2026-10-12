@@ -2,6 +2,7 @@
 title: "Por que o mundo se uniu através de «caixas de aço»: Como o contêiner marítimo revolucionou a logística e a economia global — Revolução portuária, padronização ISO, engenharia de meganavios e fragilidade geopolítica"
 description: "Da viagem inaugural do Ideal-X em 1956 aos gigantes modernos com mais de 24.000 TEUs: como uma modesta caixa de aço corrugado erradicou o trabalho braçal arcaico dos estivadores e detonou a maior expansão econômica da história humana. Análise aprofundada de normas globais, transporte intermodal, terminais autônomos e gargalos estratégicos."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "shipping-container-logistics-economic-revolution-guide"
 categories:
   - "logistics-and-trade"

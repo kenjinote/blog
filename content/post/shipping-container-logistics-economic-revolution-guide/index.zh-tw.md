@@ -2,6 +2,7 @@
 title: "世界為何因「鐵箱」而連結：貨櫃如何重構全球物流與世界經濟——港口革命、ISO標準化、超大型貨櫃船工學與供應鏈地緣脆弱性"
 description: "從1956年「理想X號」的破浪啟航，到現代載箱量突破24,000 TEU的巨型貨輪：一個波紋鋼鐵箱如何徹底消滅碼頭工人的原始苦力，引爆全球化經濟革命。兩萬字全景解剖標準化之爭、多式聯運網絡、全自動化碼頭與地緣政治咽喉瓶頸。"
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "shipping-container-logistics-economic-revolution-guide"
 categories:
   - "logistics-and-trade"

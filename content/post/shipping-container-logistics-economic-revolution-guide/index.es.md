@@ -2,6 +2,7 @@
 title: "Por qué el mundo se conectó a través de «cajas de acero»: Cómo el contenedor marítimo revolucionó la logística y la economía global — Revolución portuaria, estandarización ISO, ingeniería de megabuques y fragilidad geopolítica"
 description: "Desde la travesía del Ideal-X en 1956 hasta los colosos modernos de más de 24.000 TEU: cómo una modesta caja de acero corrugado erradicó el esfuerzo arcaico de los estibadores y desató la mayor explosión económica de la historia. Análisis exhaustivo de la guerra de normas, transporte intermodal, terminales autónomas y cuellos de botella globales."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "shipping-container-logistics-economic-revolution-guide"
 categories:
   - "logistics-and-trade"

@@ -2,6 +2,7 @@
 title: "Mengapa Beton Mengeras dan Mengapa Rusak: Dari Romawi Kuno hingga Megastruktur Modern——Kimia Hidrasi Semen, Sinergi Ajaib dengan Baja Tulangan, Karbonasi, dan Dekarbonisasi"
 description: "Mengapa beton berubah menjadi batu saat bercampur air alih-alih sekadar mengering? Pelajari ilmu di balik bahan nomor dua paling banyak dikonsumsi manusia di Bumi: rahasia self-healing beton Romawi kuno di air laut, nanomekanika gel C-S-H, keajaiban termal beton bertulang, patologi karbonasi, dan masa depan bio-beton ramah lingkungan."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "concrete-science-roman-modern-durability-hydration-guide"
 categories:
   - "material-science"

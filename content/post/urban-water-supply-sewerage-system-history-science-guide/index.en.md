@@ -2,6 +2,7 @@
 title: "Where Tap Water Comes From and Where It Goes: The Science and History of Urban Water and Sewerage Systems — Sources, Coagulation, Activated Sludge, Hydraulic Networks, PFAS Removal, and Resource Recovery"
 description: "Turn on the tap and crystal-clear drinkable water flows; flush the toilet and hazardous waste is rendered harmless to nature. From Roman aqueducts and London's Great Stink to Edo's wooden aqueducts, Stokes flocculation, activated sludge bioprocesses, pipe hydraulics, and cutting-edge PFAS filtration: a definitive guide to urban water infrastructure."
 date: 2026-10-12T00:00:00+09:00
+image: "eyecatch.jpg"
 slug: "urban-water-supply-sewerage-system-history-science-guide"
 categories:
   - "infrastructure-and-civil-engineering"
