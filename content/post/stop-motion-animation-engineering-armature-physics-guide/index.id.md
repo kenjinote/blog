@@ -1,5 +1,6 @@
 ---
 title: "Rekayasa dan Fisika Animasi Stop-Motion: Dari Mekanika Armature hingga Kontrol Gerak"
+slug: "stop-motion-animation-engineering-armature-physics-guide"
 description: "Analisis teknis dan fisika mendalam tentang animasi stop-motion: tribologi sambungan bola, polimer viskoelastis, dinamika blur Go-Motion, dan revolusi penggantian wajah 3D Studio Laika."
 date: 2026-03-31T11:00:00+09:00
 image: "eyecatch.jpg"

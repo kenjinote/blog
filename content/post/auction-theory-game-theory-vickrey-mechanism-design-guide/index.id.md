@@ -1,5 +1,6 @@
 ---
 title: "Teori Lelang dan Teori Permainan: Dari Analisis Vickrey hingga Desain Mekanisme Modern"
+slug: "auction-theory-game-theory-vickrey-mechanism-design-guide"
 description: "Kajian komprehensif teori lelang dan teori permainan: Teorema Ekuivalensi Pendapatan, lelang Vickrey, kutukan pemenang (Winner's Curse), lelang spektrum FCC, dan algoritma iklan digital GSP."
 date: 2026-03-31T09:00:00+09:00
 image: "eyecatch.jpg"

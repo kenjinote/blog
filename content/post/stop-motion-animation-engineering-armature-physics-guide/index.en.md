@@ -1,5 +1,6 @@
 ---
 title: "The Engineering and Physics of Stop-Motion Animation: Armature Mechanics, Materials Science, and Motion Control"
+slug: "stop-motion-animation-engineering-armature-physics-guide"
 description: "An exhaustive technical and physics-based deep dive into stop-motion animation: ball-and-socket tribology, viscoelastic polymers, exposure blur mechanics, inverse kinematics, thermal drift, and Laika's 3D-printed replacement revolution."
 date: 2026-03-31T11:00:00+09:00
 image: "eyecatch.jpg"

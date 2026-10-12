@@ -1,5 +1,6 @@
 ---
 title: "L'ingénierie et la physique de l'animation en volume : de la mécanique des armatures au contrôle du mouvement"
+slug: "stop-motion-animation-engineering-armature-physics-guide"
 description: "Une analyse technique et physique approfondie du stop-motion : tribologie des rotules mécaniques, polymères viscoélastiques, flou cinétique du Go-Motion et révolution des pièces 3D de Laika."
 date: 2026-03-31T11:00:00+09:00
 image: "eyecatch.jpg"

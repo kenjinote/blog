@@ -1,5 +1,6 @@
 ---
 title: "音阶的数学：毕达哥拉斯律、纯律与十二平均律的物理与律学史"
+slug: "musical-scales-mathematics-pythagorean-just-equal-temperament-guide"
 description: "探索数千年来音乐与数学的交汇点。从声学泛音列物理学、毕达哥拉斯音律到纯律柯玛（史密斯分差）、中全音律的妥协，以及明朝朱载堉与西方十二平均律带来的律学革命。"
 date: 2026-03-31T10:00:00+09:00
 image: "eyecatch.jpg"

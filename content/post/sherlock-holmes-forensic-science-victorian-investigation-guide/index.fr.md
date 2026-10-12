@@ -1,5 +1,6 @@
 ---
 title: "Sherlock Holmes et l'aube de la police scientifique : Médecine légale victorienne, dactyloscopie, principe de Locard et naissance de la criminalistique"
+slug: "sherlock-holmes-forensic-science-victorian-investigation-guide"
 description: "Comment le détective d'Arthur Conan Doyle a préfiguré la police technique et scientifique moderne : déduction clinique du Dr Bell, toxicologie, empreintes digitales contre bertillonnage, balistique et micro-traces."
 date: 2026-03-31T14:00:00+09:00
 image: "eyecatch.jpg"

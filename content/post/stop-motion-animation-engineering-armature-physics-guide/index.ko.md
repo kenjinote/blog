@@ -1,5 +1,6 @@
 ---
 title: "스톱모션 애니메이션의 공학과 물리학: 아마추어 역학, 재료과학에서 모션 제어까지"
+slug: "stop-motion-animation-engineering-armature-physics-guide"
 description: "스톱모션 애니메이션 이면의 초정밀 물리공학 체계 완벽 해부: 볼앤소켓 관절의 트라이볼로지, 폼 라텍스와 백금 경화 실리콘의 점탄성, 고모션의 광학적 모션블러, 라이카 스튜디오의 3D 프린팅 치환 기술."
 date: 2026-03-31T11:00:00+09:00
 image: "eyecatch.jpg"

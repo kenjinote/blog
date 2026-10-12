@@ -1,5 +1,6 @@
 ---
 title: "《듄(DUNE)》의 세계관 심층 분석: 사막 생태학, 스파이스 지정학, 신봉건주의와 메시아 신화 해체"
+slug: "dune-worldbuilding-ecology-spice-feudal-politics-mythology-guide"
 description: "프랭크 허버트의 불멸의 SF 대서사시 《듄》 철저 해부: 아라키스의 극한 수자원 생태학, 스파이스 멜란지 우주 경제, 버틀레리안 지하드의 AI 금기, 홀츠만 실드 백병전 역학, 그리고 영웅주의에 대한 경고."
 date: 2026-03-31T12:00:00+09:00
 image: "eyecatch.jpg"

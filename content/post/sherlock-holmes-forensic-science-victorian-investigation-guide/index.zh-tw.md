@@ -1,5 +1,6 @@
 ---
 title: "福爾摩斯與法庭科學的曙光：維多利亞時代法醫學、指紋鑑定、洛卡爾物質交換定律與現代犯罪學的誕生"
+slug: "sherlock-holmes-forensic-science-victorian-investigation-guide"
 description: "全面解構阿瑟·柯南·道爾筆下的神探夏洛克·福爾摩斯如何引領近代警方刑事偵查與法醫學體系的建立：貝爾博士的臨床演繹、毒理學、指紋對比人體測量、彈道學與微量物證分析。"
 date: 2026-03-31T14:00:00+09:00
 image: "eyecatch.jpg"

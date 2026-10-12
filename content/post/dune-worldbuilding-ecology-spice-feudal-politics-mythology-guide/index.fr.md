@@ -1,5 +1,6 @@
 ---
 title: "La construction du monde de DUNE : écologie désertique, géopolitique de l'Épice et déconstruction du mythe messianique"
+slug: "dune-worldbuilding-ecology-spice-feudal-politics-mythology-guide"
 description: "Une analyse littéraire, écologique et philosophique complète du chef-d'œuvre de Frank Herbert, DUNE : la thermodynamique d'Arrakis, l'Épice Melange, le Jihad Butlérien, le combat aux boucliers Holtzman et la critique du culte du héros."
 date: 2026-03-31T12:00:00+09:00
 image: "eyecatch.jpg"

@@ -1,5 +1,6 @@
 ---
 title: "《沙丘》世界觀深度解析：沙漠生態學、香料地緣政治、新封建主義與彌賽亞神話解構"
+slug: "dune-worldbuilding-ecology-spice-feudal-politics-mythology-guide"
 description: "全面解構法蘭克·赫伯特的科幻史詩《沙丘》（DUNE）：阿拉吉斯極端水循環生態、香料美琅脂驅動的宇宙經濟、巴特勒聖戰對AI的徹底禁絕、霍爾茲曼護盾格鬥力學，以及對英雄崇拜與神權政治的深刻反思。"
 date: 2026-03-31T12:00:00+09:00
 image: "eyecatch.jpg"

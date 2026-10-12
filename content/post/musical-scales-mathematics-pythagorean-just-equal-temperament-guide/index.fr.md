@@ -1,5 +1,6 @@
 ---
 title: "La mathématique des échelles musicales : physique, théorie des nombres et histoire du tempérament"
+slug: "musical-scales-mathematics-pythagorean-just-equal-temperament-guide"
 description: "Une étude exhaustive à la croisée de l'acoustique, de la théorie des nombres et de la musicologie : de la résonance des harmoniques au comma pythagoricien, au tempérament mésotonique et à la révolution du tempérament égal à 12 demi-tons."
 date: 2026-03-31T10:00:00+09:00
 image: "eyecatch.jpg"

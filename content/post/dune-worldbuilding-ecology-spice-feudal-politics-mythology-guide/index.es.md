@@ -1,5 +1,6 @@
 ---
 title: "La creación del mundo de DUNE: ecología del desierto, geopolítica de la Especia y deconstrucción mesiánica"
+slug: "dune-worldbuilding-ecology-spice-feudal-politics-mythology-guide"
 description: "Un análisis literario, ecológico y filosófico integral de la obra maestra de Frank Herbert, DUNE: la termodinámica de Arrakis, la Especia Melange, la Yihad Butleriana, los escudos Holtzman y el peligro del culto al líder."
 date: 2026-03-31T12:00:00+09:00
 image: "eyecatch.jpg"

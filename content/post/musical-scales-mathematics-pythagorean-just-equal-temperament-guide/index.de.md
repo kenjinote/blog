@@ -1,5 +1,6 @@
 ---
 title: "Die Mathematik der Tonleitern: Physik, Zahlentheorie und die Geschichte der Stimmungssysteme"
+slug: "musical-scales-mathematics-pythagorean-just-equal-temperament-guide"
 description: "Eine tiefgründige Abhandlung über die Schnittstelle von Akustik, Zahlentheorie und Musikgeschichte: von der Obertonreihe über das pythagoreische und syntonische Komma bis zur 12-stufigen gleichschwebenden Temperatur."
 date: 2026-03-31T10:00:00+09:00
 image: "eyecatch.jpg"

@@ -1,5 +1,6 @@
 ---
 title: "《星际迷航》的硬核科技与社会哲学：曲速物理学、分子复制器与后稀缺乌托邦"
+slug: "star-trek-technology-warp-drive-replicator-post-scarcity-guide"
 description: "深度解构吉恩·罗登贝瑞的经典科幻《星际迷航》（Star Trek）：阿库别瑞曲速时空度规物理学、突破测不准原理的物质传输与复制器工程、消除货币的后稀缺社会经济学，以及最高指导原则（Prime Directive）的文明伦理哲学。"
 date: 2026-03-31T13:00:00+09:00
 image: "eyecatch.jpg"

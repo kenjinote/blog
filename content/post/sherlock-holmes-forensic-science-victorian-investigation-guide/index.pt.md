@@ -1,5 +1,6 @@
 ---
 title: "Sherlock Holmes e a Alvorada da Ciência Forense: Medicina Legal Vitoriana, Datiloscopia, Princípio de Locard e o Nascimento da Criminalística"
+slug: "sherlock-holmes-forensic-science-victorian-investigation-guide"
 description: "Como o detetive de Arthur Conan Doyle prefigurou a moderna perícia criminal: a dedução clínica do Dr. Joseph Bell, toxicologia, impressões digitais contra o bertillonage, balística e microvestígios."
 date: 2026-03-31T14:00:00+09:00
 image: "eyecatch.jpg"

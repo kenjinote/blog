@@ -1,5 +1,6 @@
 ---
 title: "Matematika Tangga Nada: Fisika, Teori Bilangan, dan Sejarah Sistem Penyeteman"
+slug: "musical-scales-mathematics-pythagorean-just-equal-temperament-guide"
 description: "Kajian komprehensif di persimpangan fisika akustik, teori bilangan, dan musikologi: dari deret harmonik, koma Pythagoras, koma sintonik, temperamen meantone, hingga revolusi 12 nada temperamen sama (12-TET)."
 date: 2026-03-31T10:00:00+09:00
 image: "eyecatch.jpg"

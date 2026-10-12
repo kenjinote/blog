@@ -1,5 +1,6 @@
 ---
 title: "셜록 홈즈와 과학수사의 서막: 빅토리아 시대 법의학, 지문 감식, 로카르의 교환 법칙과 근대 범죄학의 탄생"
+slug: "sherlock-holmes-forensic-science-victorian-investigation-guide"
 description: "아서 코난 도일의 불멸의 명탐정 셜록 홈즈는 어떻게 현대 과학수사(Forensic Science)와 감식 체계를 개척했는가: 조셉 벨 박사의 임상 연역, 법의독물학, 지문 대 베르티용 인체측정학, 탄도학 및 미세 증거물 분석."
 date: 2026-03-31T14:00:00+09:00
 image: "eyecatch.jpg"

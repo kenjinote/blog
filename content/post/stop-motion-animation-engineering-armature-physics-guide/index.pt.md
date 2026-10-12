@@ -1,5 +1,6 @@
 ---
 title: "Engenharia e Física da Animação Stop-Motion: Da Mecânica de Esqueletos ao Controle de Movimento"
+slug: "stop-motion-animation-engineering-armature-physics-guide"
 description: "Uma imersão técnica e física completa na animação stop-motion: tribologia de juntas esféricas, polímeros viscoelásticos, física de borrão óptico em Go-Motion e a revolução da substituição 3D do Studio Laika."
 date: 2026-03-31T11:00:00+09:00
 image: "eyecatch.jpg"

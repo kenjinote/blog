@@ -1,5 +1,6 @@
 ---
 title: "음계의 수학: 피타고라스 음률, 순정률, 12평균율의 물리와 조율사"
+slug: "musical-scales-mathematics-pythagorean-just-equal-temperament-guide"
 description: "수천 년에 걸친 음악과 수학의 결합. 배음렬의 음향물리학, 피타고라스 콤마와 신토닉 콤마의 수학적 유도, 중전음률의 타협, 그리고 주재육과 바흐 시대의 12평균율 혁명을 심층 분석."
 date: 2026-03-31T10:00:00+09:00
 image: "eyecatch.jpg"

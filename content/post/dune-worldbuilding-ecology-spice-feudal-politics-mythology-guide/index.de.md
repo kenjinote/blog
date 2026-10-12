@@ -1,5 +1,6 @@
 ---
 title: "Die Weltenbildung von DUNE: Wüstenökologie, Spice-Geopolitik, Neofeudalismus und Mythos-Dekonstruktion"
+slug: "dune-worldbuilding-ecology-spice-feudal-politics-mythology-guide"
 description: "Eine tiefgründige literarische und philosophische Analyse von Frank Herberts Meisterwerk DUNE: die extreme Thermodynamik von Arrakis, das Gewürz Melange, der Butler-Dschihad und die Warnung vor charismatischen Führern."
 date: 2026-03-31T12:00:00+09:00
 image: "eyecatch.jpg"

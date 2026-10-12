@@ -1,5 +1,6 @@
 ---
 title: "偶動畫的工程學與物理學：從機械骨架力學、材料科學到運動控制"
+slug: "stop-motion-animation-engineering-armature-physics-guide"
 description: "深度剖析定格偶動畫背後的高精尖物理工程體系：球形關節的摩擦學機制、乳膠泡沫與鉑金矽膠的高分子黏彈性、剛體步態逆運動學、熱膨脹漂移以及萊卡工作室的3D列印置換動畫技術。"
 date: 2026-03-31T11:00:00+09:00
 image: "eyecatch.jpg"

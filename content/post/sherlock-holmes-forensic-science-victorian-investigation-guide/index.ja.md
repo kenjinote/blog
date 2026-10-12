@@ -1,5 +1,6 @@
 ---
 title: "シャーロック・ホームズと科学捜査の夜明け：ヴィクトリア朝法医学、指紋鑑定、ロカールの交換原理、そして近代犯罪学の誕生"
+slug: "sherlock-holmes-forensic-science-victorian-investigation-guide"
 description: "コナン・ドイルが描いた名探偵シャーロック・ホームズは、如何にして近代警察の科学捜査（Forensic Science）を先駆・牽引したのか。法医学、毒物学、指紋認証、弾道学、微細証拠物分析、そしてロカールの交換原理に至る犯罪鑑識の歴史的変革を徹底解剖。"
 date: 2026-03-31T14:00:00+09:00
 image: "eyecatch.jpg"

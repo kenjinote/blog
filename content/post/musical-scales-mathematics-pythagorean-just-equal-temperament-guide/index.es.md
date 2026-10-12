@@ -1,5 +1,6 @@
 ---
 title: "La matemática de las escalas musicales: física, teoría de números e historia de la afinación"
+slug: "musical-scales-mathematics-pythagorean-just-equal-temperament-guide"
 description: "Un tratado completo en la encrucijada de la física acústica, la teoría de números y la historia de la música: de la serie armónica al coma pitagórico, el coma sintónico, el temperamento mesotónico y el temperamento igual de 12 tonos."
 date: 2026-03-31T10:00:00+09:00
 image: "eyecatch.jpg"

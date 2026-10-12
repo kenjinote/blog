@@ -1,5 +1,6 @@
 ---
 title: "Membangun Dunia DUNE: Ekologi Gurun, Geopolitik Rempah, Neofeodalisme, dan Dekonstruksi Mesias"
+slug: "dune-worldbuilding-ecology-spice-feudal-politics-mythology-guide"
 description: "Analisis sastra, ekologis, dan filosofis komprehensif tentang mahakarya Frank Herbert, DUNE: termodinamika Arrakis, Rempah Melange, Jihad Butlerian, perisai Holtzman, dan bahaya kultus pahlawan karismatik."
 date: 2026-03-31T12:00:00+09:00
 image: "eyecatch.jpg"

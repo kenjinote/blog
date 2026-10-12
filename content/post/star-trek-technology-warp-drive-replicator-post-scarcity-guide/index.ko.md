@@ -1,5 +1,6 @@
 ---
 title: "《스타 트렉(Star Trek)》의 하드 과학과 사회철학: 워프 물리학, 복제기, 그리고 탈희소성 유토피아"
+slug: "star-trek-technology-warp-drive-replicator-post-scarcity-guide"
 description: "진 로든베리의 불멸의 SF 걸작 《스타 트렉》 완벽 해부: 알쿠비에레 워프 시공간 계량 물리학, 불확정성 원리를 극복한 전송기 및 레플리케이터 공학, 화폐가 사라진 탈희소성 경제학, 그리고 프라임 디렉티브의 문명 윤리학."
 date: 2026-03-31T13:00:00+09:00
 image: "eyecatch.jpg"

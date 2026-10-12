@@ -1,5 +1,6 @@
 ---
 title: "『DUNE』の世界観分析：砂漠生態系・スパイス地政学・封建政治と神話構造の解剖"
+slug: "dune-worldbuilding-ecology-spice-feudal-politics-mythology-guide"
 description: "フランク・ハーバートの不朽のSF叙事詩『デューン/砂の惑星』を徹底解剖。砂漠惑星アラキスの極限生態学、スパイス・メランジが支配する宇宙経済、バトラーのジハードによる人間性の進化、そしてメシア信仰の脱構築まで。"
 date: 2026-03-31T12:00:00+09:00
 image: "eyecatch.jpg"

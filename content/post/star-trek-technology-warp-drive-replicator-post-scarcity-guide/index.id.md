@@ -1,5 +1,6 @@
 ---
 title: "Teknologi dan Filosofi Sosial Star Trek: Fisika Warp, Replikator, dan Utopia Pasca-Kelangkaan"
+slug: "star-trek-technology-warp-drive-replicator-post-scarcity-guide"
 description: "Kajian ilmiah dan filosofis mendalam tentang Star Trek karya Gene Roddenberry: metrik warp Alcubierre, kompensator Heisenberg, ekonomi tanpa uang, dan etika Prime Directive."
 date: 2026-03-31T13:00:00+09:00
 image: "eyecatch.jpg"

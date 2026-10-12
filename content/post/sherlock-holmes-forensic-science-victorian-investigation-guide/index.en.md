@@ -1,5 +1,6 @@
 ---
 title: "Sherlock Holmes and the Dawn of Forensic Science: Victorian Forensic Medicine, Fingerprinting, Locard's Exchange Principle, and the Birth of Modern Criminalistics"
+slug: "sherlock-holmes-forensic-science-victorian-investigation-guide"
 description: "How Arthur Conan Doyle's immortal detective pioneered modern police forensic science: Joseph Bell's clinical deduction, forensic toxicology, fingerprint vs bertillonage, ballistics, trace evidence, and Locard's exchange principle."
 date: 2026-03-31T14:00:00+09:00
 image: "eyecatch.jpg"

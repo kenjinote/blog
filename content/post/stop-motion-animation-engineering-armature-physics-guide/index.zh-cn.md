@@ -1,5 +1,6 @@
 ---
 title: "定格动画的工程学与物理学：从机械骨架力学、材料科学到运动控制"
+slug: "stop-motion-animation-engineering-armature-physics-guide"
 description: "深度剖析定格动画背后的高精尖物理工程体系：球形关节的摩擦学机制、乳胶泡沫与铂金硅胶的高分子黏弹性、刚体步态逆运动学、热膨胀漂移以及莱卡工作室的3D打印置换动画技术。"
 date: 2026-03-31T11:00:00+09:00
 image: "eyecatch.jpg"

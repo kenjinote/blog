@@ -1,5 +1,6 @@
 ---
 title: "Sherlock Holmes und die Anfänge der Forensik: Viktorianische Rechtsmedizin, Daktyloskopie, Locardsches Prinzip und die Geburt der Kriminalistik"
+slug: "sherlock-holmes-forensic-science-victorian-investigation-guide"
 description: "Wie Arthur Conan Doyles Meisterdetektiv die moderne Kriminalistik revolutionierte: Dr. Joseph Bells klinische Deduktion, Toxikologie, Daktyloskopie vs. Bertillonage, Ballistik und Mikrospuren."
 date: 2026-03-31T14:00:00+09:00
 image: "eyecatch.jpg"

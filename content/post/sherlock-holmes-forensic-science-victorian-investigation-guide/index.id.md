@@ -1,5 +1,6 @@
 ---
 title: "Sherlock Holmes dan Fajar Sains Forensik: Kedokteran Kehakiman Victoria, Daktiloskopi, Prinsip Pertukaran Locard, dan Kelahiran Kriminalistik Modern"
+slug: "sherlock-holmes-forensic-science-victorian-investigation-guide"
 description: "Bagaimana detektif konsultan Arthur Conan Doyle merintis ilmu investigasi kepolisian modern: deduksi klinis Dr. Joseph Bell, toksikologi, sidik jari vs antropometri Bertillon, balistik, dan bukti jejak mikro."
 date: 2026-03-31T14:00:00+09:00
 image: "eyecatch.jpg"

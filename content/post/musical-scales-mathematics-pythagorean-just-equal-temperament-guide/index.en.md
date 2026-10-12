@@ -1,5 +1,6 @@
 ---
 title: "The Mathematics of Musical Scales: Physics, Number Theory, and the History of Tuning Systems"
+slug: "musical-scales-mathematics-pythagorean-just-equal-temperament-guide"
 description: "A comprehensive treatise on the intersection of acoustic physics, number theory, and music history. Explore the harmonic series, the mathematical inevitability of the Pythagorean and syntonic commas, meantone compromises, and the algebraic revolution of 12-Tone Equal Temperament."
 date: 2026-03-31T10:00:00+09:00
 image: "eyecatch.jpg"

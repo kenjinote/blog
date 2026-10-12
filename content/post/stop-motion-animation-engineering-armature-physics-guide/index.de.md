@@ -1,5 +1,6 @@
 ---
 title: "Ingenieurwesen und Physik der Stop-Motion-Animation: Von der Armaturenmechanik zur Bewegungssteuerung"
+slug: "stop-motion-animation-engineering-armature-physics-guide"
 description: "Eine tiefgehende technische Analyse der Stop-Motion-Animation: Tribologie von Kugelgelenken, viskoelastische Polymere, Go-Motion-Belichtungsunschärfe und 3D-Druck-Austauschanimation der Laika Studios."
 date: 2026-03-31T11:00:00+09:00
 image: "eyecatch.jpg"

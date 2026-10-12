@@ -1,5 +1,6 @@
 ---
 title: "La tecnología y filosofía social de Star Trek: Física warp, replicadores y la utopía post-escasez"
+slug: "star-trek-technology-warp-drive-replicator-post-scarcity-guide"
 description: "Un análisis científico y filosófico integral de Star Trek de Gene Roddenberry: métrica de Alcubierre del motor warp, compensadores de Heisenberg, economía sin dinero y la ética de la Primera Directriz."
 date: 2026-03-31T13:00:00+09:00
 image: "eyecatch.jpg"

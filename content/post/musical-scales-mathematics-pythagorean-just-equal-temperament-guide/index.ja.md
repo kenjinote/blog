@@ -1,5 +1,6 @@
 ---
 title: "音階の数学：ピタゴラス音律・純正律・十二平均律の物理と調律史"
+slug: "musical-scales-mathematics-pythagorean-just-equal-temperament-guide"
 description: "音楽と数学の数千年にわたる交差点。倍音列の物理学からピタゴラスコンマ、シントニックコンマの導出、中全音律の妥協、そして十二平均律がもたらした調律革命までを数理的・歴史的に徹底解剖。"
 date: 2026-03-31T10:00:00+09:00
 image: "eyecatch.jpg"

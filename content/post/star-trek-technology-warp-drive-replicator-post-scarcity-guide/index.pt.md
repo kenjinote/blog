@@ -1,5 +1,6 @@
 ---
 title: "A Tecnologia e Filosofia Social de Star Trek: Física de Dobra, Replicadores e a Utopia Pós-Escassez"
+slug: "star-trek-technology-warp-drive-replicator-post-scarcity-guide"
 description: "Uma análise científica e filosófica profunda de Star Trek de Gene Roddenberry: métrica de Alcubierre da dobra espacial, compensadores de Heisenberg, sociedade sem dinheiro e a ética da Primeira Diretriz."
 date: 2026-03-31T13:00:00+09:00
 image: "eyecatch.jpg"

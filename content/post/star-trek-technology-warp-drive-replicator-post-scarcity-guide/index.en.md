@@ -1,5 +1,6 @@
 ---
 title: "The Technology and Social Philosophy of Star Trek: Warp Physics, Molecular Replicators, and the Post-Scarcity Utopia"
+slug: "star-trek-technology-warp-drive-replicator-post-scarcity-guide"
 description: "An exhaustive scientific, economic, and philosophical analysis of Gene Roddenberry's Star Trek universe: Alcubierre warp metrics, Heisenberg compensator mechanics, post-scarcity economic theory, and the ethics of the Prime Directive."
 date: 2026-03-31T13:00:00+09:00
 image: "eyecatch.jpg"

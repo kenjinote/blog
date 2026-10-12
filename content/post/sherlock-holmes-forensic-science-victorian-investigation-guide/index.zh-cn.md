@@ -1,5 +1,6 @@
 ---
 title: "福尔摩斯与法庭科学的曙光：维多利亚时代法医学、指纹鉴定、洛卡尔物质交换定律与现代犯罪学的诞生"
+slug: "sherlock-holmes-forensic-science-victorian-investigation-guide"
 description: "全面解构阿瑟·柯南·道尔笔下的神探夏洛克·福尔摩斯如何引领近代警方刑事侦查与法医学体系的建立：贝尔博士的临床演义、毒理学、指纹对比人体测量、弹道学与微量物证分析。"
 date: 2026-03-31T14:00:00+09:00
 image: "eyecatch.jpg"

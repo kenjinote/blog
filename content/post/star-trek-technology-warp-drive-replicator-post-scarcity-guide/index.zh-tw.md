@@ -1,5 +1,6 @@
 ---
 title: "《星際爭霸戰》的硬核科技與社會哲學：曲速物理學、分子複製器與後稀缺烏托邦"
+slug: "star-trek-technology-warp-drive-replicator-post-scarcity-guide"
 description: "深度解構吉恩·羅登貝瑞的經典科幻《星際爭霸戰》（Star Trek）：阿庫別瑞曲速時空度規物理學、突破測不准原理的物質傳輸與複製器工程、消除貨幣的後稀缺社會經濟學，以及最高指導原則（Prime Directive）的文明倫理哲學。"
 date: 2026-03-31T13:00:00+09:00
 image: "eyecatch.jpg"

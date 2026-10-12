@@ -1,5 +1,6 @@
 ---
 title: "La technologie et la philosophie sociale de Star Trek : physique du distorsion, réplicateurs et utopie post-rareté"
+slug: "star-trek-technology-warp-drive-replicator-post-scarcity-guide"
 description: "Une analyse scientifique et philosophique complète de Star Trek de Gene Roddenberry : métrique d'Alcubierre du moteur à distorsion, compensateur d'Heisenberg, société sans argent et éthique de la Directive Première."
 date: 2026-03-31T13:00:00+09:00
 image: "eyecatch.jpg"

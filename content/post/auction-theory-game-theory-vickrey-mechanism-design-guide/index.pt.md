@@ -1,5 +1,6 @@
 ---
 title: "Teoria dos Leilões e Teoria dos Jogos: Análise Matemática de Vickrey ao Desenho de Mecanismos Modernos"
+slug: "auction-theory-game-theory-vickrey-mechanism-design-guide"
 description: "Um tratado aprofundado sobre a teoria dos leilões e teoria dos jogos, cobrindo o Teorema da Equivalência de Receita, leilões de Vickrey, a maldição do vencedor, o leilão de espectro da FCC e os algoritmos de anúncios digitais GSP."
 date: 2026-03-31T09:00:00+09:00
 image: "eyecatch.jpg"

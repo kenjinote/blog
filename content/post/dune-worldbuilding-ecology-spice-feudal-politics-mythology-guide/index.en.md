@@ -1,5 +1,6 @@
 ---
 title: "The Worldbuilding of DUNE: Desert Ecology, Spice Geopolitics, Neo-Feudalism, and Mythological Architecture"
+slug: "dune-worldbuilding-ecology-spice-feudal-politics-mythology-guide"
 description: "A comprehensive literary, philosophical, and scientific analysis of Frank Herbert's epic DUNE. Explore the extreme ecology of Arrakis, the economics of Spice Melange, the Butlerian Jihad, Holtzman shield physics, and the deconstruction of messianic hero worship."
 date: 2026-03-31T12:00:00+09:00
 image: "eyecatch.jpg"

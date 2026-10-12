@@ -1,5 +1,6 @@
 ---
 title: "Sherlock Holmes y el amanecer de la ciencia forense: Medicina legal victoriana, dactiloscopia, principio de Locard y el nacimiento de la criminalística moderna"
+slug: "sherlock-holmes-forensic-science-victorian-investigation-guide"
 description: "Cómo el detective consultor de Arthur Conan Doyle anticipó y lideró la policía científica moderna: la deducción clínica del Dr. Joseph Bell, toxicología, huellas dactilares frente al bertillonaje, balística y microindicios."
 date: 2026-03-31T14:00:00+09:00
 image: "eyecatch.jpg"
