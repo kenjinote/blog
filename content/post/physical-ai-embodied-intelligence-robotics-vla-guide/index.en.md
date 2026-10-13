@@ -1,7 +1,7 @@
 ---
 title: "Physical AI and Embodied Intelligence: Architectures, VLA Models, World Models, Sim-to-Real, and the Humanoid Robotics Revolution"
 description: "From cyber bits to physical atoms. A comprehensive engineering guide to Physical AI: overcoming Moravec's paradox, VLA foundation models (RT-2, OpenVLA, π0), Diffusion Policy, Sim-to-Real transfer, QDD actuators, tactile sensing, and humanoid robotics."
-date: 2026-03-31T15:00:00+09:00
+date: 2026-10-13T08:51:00+09:00
 slug: "physical-ai-embodied-intelligence-robotics-vla-guide"
 image: "eyecatch.jpg"
 categories:
@@ -32,26 +32,26 @@ This monograph provides an exhaustive, graduate-level dissection of the theoreti
 
 ```mermaid
 flowchart TD
-    subgraph Perception and Multimodal Foundation
-        A[Sensor Ingestion: RGB-D Cameras, Optical Tactile, LiDAR, Proprioception IMU] --> B[VLA Foundation Model: RT-2, OpenVLA, π0]
-        C[Natural Language Instruction & Semantic Grounding] --> B
+    subgraph Perception ["Perception and Multimodal Foundation"]
+        A["Sensor Ingestion: RGB-D Cameras, Optical Tactile, LiDAR, Proprioception IMU"] --> B["VLA Foundation Model: RT-2, OpenVLA, π0"]
+        C["Natural Language Instruction & Semantic Grounding"] --> B
     end
 
-    subgraph Cognitive Policy and Dynamics Prediction
-        B --> D[Low-Frequency Semantic Action Planning: 1 to 5 Hz]
-        D --> E[Diffusion Policy / Continuous-Time Flow Matching]
-        F[Generative World Models: Latent Dynamics & Future State Simulation] <--> E
+    subgraph CogPolicy ["Cognitive Policy and Dynamics Prediction"]
+        B --> D["Low-Frequency Semantic Action Planning: 1 to 5 Hz"]
+        D --> E["Diffusion Policy / Continuous-Time Flow Matching"]
+        F["Generative World Models: Latent Dynamics & Future State Simulation"] <--> E
     end
 
-    subgraph High-Frequency Control and Embodiment
-        E --> G[High-Frequency Feedback & Impedance Control: 100 to 1000 Hz]
-        G --> H[Hardware Actuation: QDD Motors, Tendon-Driven Hands, Torque Loops]
-        H --> I[Physical Environment: Gravity, Friction, Contact Tensors, Non-Rigid Deformations]
+    subgraph HighFreq ["High-Frequency Control and Embodiment"]
+        E --> G["High-Frequency Feedback & Impedance Control: 100 to 1000 Hz"]
+        G --> H["Hardware Actuation: QDD Motors, Tendon-Driven Hands, Torque Loops"]
+        H --> I["Physical Environment: Gravity, Friction, Contact Tensors, Non-Rigid Deformations"]
     end
 
-    subgraph Closed-Loop Learning
+    subgraph ClosedLoop ["Closed-Loop Learning"]
         I -.->|Real-World Teleoperation Telemetry| B
-        J[GPU-Accelerated Parallel Physics Sim: Isaac Sim, MuJoCo, Genesis] -->|Domain Randomization & Synthetic Rollouts| E
+        J["GPU-Accelerated Parallel Physics Sim: Isaac Sim, MuJoCo, Genesis"] -->|Domain Randomization & Synthetic Rollouts| E
     end
 ```
 
@@ -104,21 +104,21 @@ The **Vision-Language-Action (VLA)** model replaces this entire pipeline with a 
 
 ```mermaid
 flowchart LR
-    subgraph Multi-Modal Encoding
-        Cam[Multi-View RGB-D Video Stream] --> VisEnc[Visual Transformer: SigLIP / ViT-H]
-        Lang[High-Level Language Goal: 'Fold the blue towel cleanly'] --> TextTok[Byte-Pair Tokenizer]
-        Proprio[Proprioceptive Telemetry: Joint Angles q, Velocities q_dot] --> MLP[Proprioception Linear Projection]
+    subgraph MultiModal ["Multi-Modal Encoding"]
+        Cam["Multi-View RGB-D Video Stream"] --> VisEnc["Visual Transformer: SigLIP / ViT-H"]
+        Lang["High-Level Language Goal: 'Fold the blue towel cleanly'"] --> TextTok["Byte-Pair Tokenizer"]
+        Proprio["Proprioceptive Telemetry: Joint Angles q, Velocities q_dot"] --> MLP["Proprioception Linear Projection"]
     end
 
-    subgraph Deep Multimodal Transformer Core
-        VisEnc --> Backbone[Autoregressive / Diffusion Backbone: Llama-2 / PaLM-E / Qwen-2]
+    subgraph DeepCore ["Deep Multimodal Transformer Core"]
+        VisEnc --> Backbone["Autoregressive / Diffusion Backbone: Llama-2 / PaLM-E / Qwen-2"]
         TextTok --> Backbone
         MLP --> Backbone
     end
 
-    subgraph Continuous Action Decoding
-        Backbone --> ActionHead[Flow Matching / Diffusion Action Head]
-        ActionHead --> Chunks[Continuous Trajectory Chunk: Delta x, y, z, roll, pitch, yaw, gripper over H timesteps]
+    subgraph ContAction ["Continuous Action Decoding"]
+        Backbone --> ActionHead["Flow Matching / Diffusion Action Head"]
+        ActionHead --> Chunks["Continuous Trajectory Chunk: Delta x, y, z, roll, pitch, yaw, gripper over H timesteps"]
     end
 ```
 
@@ -136,21 +136,21 @@ Physical AI resolves this via **Hierarchical Frequency Decoupling**:
 
 ```mermaid
 flowchart TD
-    subgraph Cognitive Layer: 1 to 5 Hz (Semantic Grounding)
-        A[RGB-D Video Stream + Language Goal] --> B[Large Multimodal VLA Backbone]
-        B --> C[Spatial-Temporal Goal Formulation & Action Chunks: Horizon H = 16 to 64 steps]
+    subgraph CogLayer ["Cognitive Layer: 1 to 5 Hz (Semantic Grounding)"]
+        A["RGB-D Video Stream + Language Goal"] --> B["Large Multimodal VLA Backbone"]
+        B --> C["Spatial-Temporal Goal Formulation & Action Chunks: Horizon H = 16 to 64 steps"]
     end
 
-    subgraph Dynamic Trajectory Synthesis: 20 to 50 Hz (Sensorimotor Coordination)
-        C --> D[Continuous Diffusion Policy / Flow Matching Policy]
-        D --> E[Smooth Cartesian / Joint Trajectory Waypoints in SE3]
+    subgraph TrajSynth ["Dynamic Trajectory Synthesis: 20 to 50 Hz (Sensorimotor Coordination)"]
+        C --> D["Continuous Diffusion Policy / Flow Matching Policy"]
+        D --> E["Smooth Cartesian / Joint Trajectory Waypoints in SE3"]
     end
 
-    subgraph Neuromuscular Reflex Layer: 500 to 1000 Hz (Force Regulation)
-        E --> F[Operational Space Impedance Controller]
-        G[Joint Encoders & 6-Axis Force/Torque & Tactile Sensors] --> F
-        F --> H[Field-Oriented Control FOC PWM Motor Inverters]
-        H --> I[Physical Contact Mechanics & Actuator Torques]
+    subgraph ReflexLayer ["Neuromuscular Reflex Layer: 500 to 1000 Hz (Force Regulation)"]
+        E --> F["Operational Space Impedance Controller"]
+        G["Joint Encoders & 6-Axis Force/Torque & Tactile Sensors"] --> F
+        F --> H["Field-Oriented Control FOC PWM Motor Inverters"]
+        H --> I["Physical Contact Mechanics & Actuator Torques"]
     end
 ```
 
@@ -174,12 +174,12 @@ The expected average of "go left" and "go right" is **"go straight ahead"**—ca
 
 ```mermaid
 flowchart LR
-    Gaussian[Deterministic Regression: MSE / Gaussian Output] --> ModeCollapse[Mode Averaging Disaster: Drives straight into obstacle]
+    Gaussian["Deterministic Regression: MSE / Gaussian Output"] --> ModeCollapse["Mode Averaging Disaster: Drives straight into obstacle"]
     
-    Demonstration[Multimodal Human Demonstrations: 50% Left, 50% Right]
+    Demonstration["Multimodal Human Demonstrations: 50% Left, 50% Right"]
     
-    Demonstration --> Diffusion[Diffusion Policy: Score-Based Generative SDE]
-    Diffusion --> MultimodalSampling[True Multimodal Output: Samples either clear Left or clear Right]
+    Demonstration --> Diffusion["Diffusion Policy: Score-Based Generative SDE"]
+    Diffusion --> MultimodalSampling["True Multimodal Output: Samples either clear Left or clear Right"]
 ```
 
 **Diffusion Policy**, formulated by Cheng Chi et al., overcomes this limitation by reformulating action generation as a conditional reverse-diffusion process. Rather than predicting actions directly, the network learns the gradient of the log-probability density (the score function) of the action distribution.
@@ -243,20 +243,20 @@ In Physical AI, humanity faces an acute **Data Wall**. Teleoperating a dual-arm 
 
 ```mermaid
 flowchart TD
-    subgraph The Real-World Teleoperation Bottleneck
-        Human[Human Teleoperator in VR Rig] -->|High Cost, Physical Fatigue| LowData[Max ~30 episodes/hr per human]
-        LowData --> DataStarvation[Severe Data Starvation: Cannot satisfy foundation scaling laws]
+    subgraph TeleopBottleneck ["The Real-World Teleoperation Bottleneck"]
+        Human["Human Teleoperator in VR Rig"] -->|High Cost, Physical Fatigue| LowData["Max ~30 episodes/hr per human"]
+        LowData --> DataStarvation["Severe Data Starvation: Cannot satisfy foundation scaling laws"]
     end
 
-    subgraph The Sim-to-Real Revolution
-        USD[Generative World Building: Universal Scene Description USD] --> Sim[Massive GPU-Accelerated Physics: NVIDIA Isaac Sim / Genesis]
-        Sim -->|10,000 Instances in Parallel| HyperScale[Billions of synthetic interaction steps in hours]
-        HyperScale --> DR[Domain Randomization: Dynamic Perturbations]
+    subgraph SimRevolution ["The Sim-to-Real Revolution"]
+        USD["Generative World Building: Universal Scene Description USD"] --> Sim["Massive GPU-Accelerated Physics: NVIDIA Isaac Sim / Genesis"]
+        Sim -->|10,000 Instances in Parallel| HyperScale["Billions of synthetic interaction steps in hours"]
+        HyperScale --> DR["Domain Randomization: Dynamic Perturbations"]
     end
 
-    subgraph Deployment
-        DR --> RobustPolicy[Generalized Neural Policy]
-        RobustPolicy --> RealHardware[Zero-Shot Transfer onto Real Humanoid Hardware]
+    subgraph HardwareDeploy ["Deployment"]
+        DR --> RobustPolicy["Generalized Neural Policy"]
+        RobustPolicy --> RealHardware["Zero-Shot Transfer onto Real Humanoid Hardware"]
     end
 ```
 
@@ -313,24 +313,26 @@ Where $N$ is the gear reduction ratio. With $N = 100$, the reflected inertia is 
 Modern Physical AI hardware has universally transitioned to **Quasi-Direct Drive (QDD)** actuation.
 
 ```mermaid
-classDiagram
-    class ClassicalIndustrialDrive {
-        +Gear Ratio N >= 100:1
-        +Harmonic Drive Gearbox
-        +Reflected Inertia amplified by 10,000x
-        +Zero Backdrivability
-        +Rigid Non-Compliant Position Control
-        +Fragile Under Impact Shocks
-    }
-    class QuasiDirectDriveQDD {
-        +Gear Ratio N = 6:1 to 10:1
-        +Single-Stage Planetary Gear
-        +Reflected Inertia amplified by only 36x to 100x
-        +Near-Perfect Backdrivability
-        +Direct Current-to-Torque Transparency
-        +Inherent Impact Shock Absorption
-    }
-    ClassicalIndustrialDrive <|-- QuasiDirectDriveQDD : Mechanical Paradigm Shift
+flowchart LR
+    subgraph Classical ["Classical Industrial Drive"]
+        direction TB
+        C1["High Gear Ratio: N >= 100:1 (Harmonic Drive)"]
+        C2["Reflected Inertia Amplified by 10,000x"]
+        C3["Zero Backdrivability / Rigid Position Control"]
+        C4["Fragile Under High Dynamic Impact Shocks"]
+        C1 --> C2 --> C3 --> C4
+    end
+
+    subgraph QDD ["Quasi-Direct Drive (QDD)"]
+        direction TB
+        Q1["Low Gear Ratio: N = 6:1 to 10:1 (Planetary Gear)"]
+        Q2["Reflected Inertia Amplified by Only 36x to 100x"]
+        Q3["Near-Perfect Backdrivability / Force Transparency"]
+        Q4["Inherent Impact Shock Absorption & Compliance"]
+        Q1 --> Q2 --> Q3 --> Q4
+    end
+
+    Classical -.->|Mechanical Paradigm Shift| QDD
 ```
 
 By utilizing high-pole-count, large-diameter brushless DC motors (outrunner or frameless pancake topology) paired with low-ratio single-stage planetary gearsets ($N \approx 6:1$ to $10:1$), QDD actuators achieve:
@@ -346,12 +348,12 @@ The **GelSight sensor**, invented at MIT by Edward Adelson’s laboratory, solve
 
 ```mermaid
 flowchart LR
-    Contact[Physical Object Contact] --> Gel[Clear Elastomeric Gel with Reflective Matte Membrane]
-    Gel --> MicroDeform[Surface Geometric Deformation of Membrane]
-    LED[Directional Multi-Color RGB Illumination] --> MicroDeform
-    MicroDeform --> Cam[Internal Micro-Camera: 60 to 120 FPS]
-    Cam --> PhotoStereo[Photometric Stereo & Deep CNN Surface Reconstruction]
-    PhotoStereo --> Output[Sub-Millimeter 3D Surface Topography & Shear Stress Tensors]
+    Contact["Physical Object Contact"] --> Gel["Clear Elastomeric Gel with Reflective Matte Membrane"]
+    Gel --> MicroDeform["Surface Geometric Deformation of Membrane"]
+    LED["Directional Multi-Color RGB Illumination"] --> MicroDeform
+    MicroDeform --> Cam["Internal Micro-Camera: 60 to 120 FPS"]
+    Cam --> PhotoStereo["Photometric Stereo & Deep CNN Surface Reconstruction"]
+    PhotoStereo --> Output["Sub-Millimeter 3D Surface Topography & Shear Stress Tensors"]
 ```
 
 A transparent elastomer pad coated with an opaque, specularly reflective membrane forms the contact skin. When an object presses into the pad, the membrane deforms to match the object’s micro-geometry. Multi-directional colored LEDs (red, green, blue) illuminate the deformation from different angles. An internal high-frame-rate micro-camera captures the illuminated indentation.
@@ -386,15 +388,15 @@ Physical AI has transitioned from academic proof-of-concept demonstrations into 
 
 ```mermaid
 flowchart TD
-    PAI[Physical AI Industrial Footprint] --> Automotive[Automotive Assembly]
-    PAI --> Logistics[Autonomous E-Commerce Logistics]
-    PAI --> Aerospace[Aerospace & Structural Manufacturing]
-    PAI --> AutonomousVehicles[End-to-End Autonomous Driving]
+    PAI["Physical AI Industrial Footprint"] --> Automotive["Automotive Assembly"]
+    PAI --> Logistics["Autonomous E-Commerce Logistics"]
+    PAI --> Aerospace["Aerospace & Structural Manufacturing"]
+    PAI --> AutonomousVehicles["End-to-End Autonomous Driving"]
 
-    Automotive --> AutoDetail[BMW Spartanburg Plant: Figure 02 autonomously placing sheet metal sheet components with sub-millimeter tolerances]
-    Logistics --> LogDetail[Amazon / DHL: Unstructured parcel depalletization and high-speed multi-sku tote induction]
-    Aerospace --> AeroDetail[Airbus: Ergonomic riveting and wire harness routing in confined fuselage cavities]
-    AutonomousVehicles --> AVDetail[Tesla FSD V12 / Waymo: Pixels-in to steering torque-out as an embodied driving agent]
+    Automotive --> AutoDetail["BMW Spartanburg Plant: Figure 02 autonomously placing sheet metal sheet components with sub-millimeter tolerances"]
+    Logistics --> LogDetail["Amazon / DHL: Unstructured parcel depalletization and high-speed multi-sku tote induction"]
+    Aerospace --> AeroDetail["Airbus: Ergonomic riveting and wire harness routing in confined fuselage cavities"]
+    AutonomousVehicles --> AVDetail["Tesla FSD V12 / Waymo: Pixels-in to steering torque-out as an embodied driving agent"]
 ```
 
 In the automotive sector, Figure 02’s deployment at BMW’s manufacturing facility in Spartanburg demonstrated autonomous sheet-metal insertion into assembly fixtures. The robot enters the same physical workstations designed for human operators, using its VLA models to adapt dynamically to variations in component placement without requiring factory retooling or stationary safety cages.
@@ -425,9 +427,9 @@ The premier framework for this safety layer is the **Control Barrier Function (C
 
 ```mermaid
 flowchart LR
-    Policy[VLA / Diffusion Policy: Stochastic Action u_NN] --> Filter[Real-Time Quadratic Program QP Safety Filter]
-    Barrier[Control Barrier Function Constraint: Safety Set Boundary h(x) >= 0] --> Filter
-    Filter --> SafeAction[Certified Safe Torque u* to Motors]
+    Policy["VLA / Diffusion Policy: Stochastic Action u_NN"] --> Filter["Real-Time Quadratic Program QP Safety Filter"]
+    Barrier["Control Barrier Function Constraint: Safety Set Boundary h(x) >= 0"] --> Filter
+    Filter --> SafeAction["Certified Safe Torque u* to Motors"]
 ```
 
 Let the safe operating region of the robot be defined as the superlevel set of a continuously differentiable function $h(x): \mathbb{R}^n \to \mathbb{R}$:

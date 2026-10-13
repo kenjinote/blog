@@ -1,7 +1,7 @@
 ---
 title: "Physical AI und Embodied Intelligence: Architekturen, VLA-Basismodelle, Weltmodelle, Sim-to-Real und die humanoide Robotik-Revolution"
 description: "Vom virtuellen Bit zum physischen Atom. Der umfassende Leitfaden zur Physical AI: Überwindung des Moravec-Paradoxons, VLA-Modelle (RT-2, OpenVLA, π0), mathematische Prinzipien der Diffusion Policy, Sim-to-Real-Transfer, QDD-Aktuatoren und taktile Sensorik."
-date: 2026-03-31T15:00:00+09:00
+date: 2026-10-13T08:51:00+09:00
 slug: "physical-ai-embodied-intelligence-robotics-vla-guide"
 image: "eyecatch.jpg"
 categories:
@@ -48,20 +48,20 @@ Moderne Physical AI nutzt daher eine **hierarchisch entkoppelte Kontrollarchitek
 ```mermaid
 flowchart TD
     subgraph Cognitive ["Kognitive Schicht (1-5 Hz)"]
-        A[Multimodale Sensorik: RGB-D / Sprache / Punktwolken] --> B[VLA-Basismodell / Embodied LLM]
-        B --> C[Physikalisches Weltmodell / Raumzeitliche Kausalität]
-        C --> D[Semantische Aufgabenzerlegung & Subziel-Generierung]
+        A["Multimodale Sensorik: RGB-D / Sprache / Punktwolken"] --> B["VLA-Basismodell / Embodied LLM"]
+        B --> C["Physikalisches Weltmodell / Raumzeitliche Kausalität"]
+        C --> D["Semantische Aufgabenzerlegung & Subziel-Generierung"]
     end
 
     subgraph Policy ["Strategie-Schicht (Policy Layer: 20-50 Hz)"]
-        D --> E[Diffusion Policy / Action Chunking]
-        E --> F[6-DoF Endeffektor-Trajektorien & Zielkraftprofile]
+        D --> E["Diffusion Policy / Action Chunking"]
+        E --> F["6-DoF Endeffektor-Trajektorien & Zielkraftprofile"]
     end
 
     subgraph Hardware ["Echtzeit-Dynamik & Aktorik (500-1000 Hz)"]
-        F --> G[Ganzkörper-Dynamikregler / Impedanzregelung]
-        G --> H[Hochbandbreiten-QDD-Aktuatoren / Kraft-Drehmoment-Regelung]
-        H --> I[Physische Umweltinteraktion / Reibung & Deformation]
+        F --> G["Ganzkörper-Dynamikregler / Impedanzregelung"]
+        G --> H["Hochbandbreiten-QDD-Aktuatoren / Kraft-Drehmoment-Regelung"]
+        H --> I["Physische Umweltinteraktion / Reibung & Deformation"]
         I --> A
     end
 ```

@@ -1,7 +1,7 @@
 ---
 title: "IA Física e Inteligencia Encarnada: Arquitecturas, Modelos VLA, Modelos de Mundo, Sim-to-Real y la Revolución de la Robótica Humanoide"
 description: "De los bits digitales a los átomos físicos. La guía de ingeniería definitiva sobre IA Física: superación de la paradoja de Moravec, modelos fundacionales VLA (RT-2, OpenVLA, π0), formulación matemática de Diffusion Policies, transferencia Sim-to-Real, actuadores QDD y sensores táctiles."
-date: 2026-03-31T15:00:00+09:00
+date: 2026-10-13T08:51:00+09:00
 slug: "physical-ai-embodied-intelligence-robotics-vla-guide"
 image: "eyecatch.jpg"
 categories:
@@ -49,20 +49,20 @@ La IA Física moderna adopta una **arquitectura jerárquica desacoplada**:
 ```mermaid
 flowchart TD
     subgraph Cognitive ["Capa Cognitiva (1-5 Hz)"]
-        A[Entrada Multimodal: RGB-D / Voz / Nubes de puntos] --> B[Modelo Fundacional VLA / LLM Encarnado]
-        B --> C[Modelo de Mundo Físico / Causalidad Espaciotemporal]
-        C --> D[Descomposición de Tarea y Subobjetivos Semánticos]
+        A["Entrada Multimodal: RGB-D / Voz / Nubes de puntos"] --> B["Modelo Fundacional VLA / LLM Encarnado"]
+        B --> C["Modelo de Mundo Físico / Causalidad Espaciotemporal"]
+        C --> D["Descomposición de Tarea y Subobjetivos Semánticos"]
     end
 
     subgraph Policy ["Capa de Políticas (Policy Layer: 20-50 Hz)"]
-        D --> E[Diffusion Policy / Action Chunking]
-        E --> F[Trayectorias 6-DoF de Efector Final y Perfiles de Fuerza]
+        D --> E["Diffusion Policy / Action Chunking"]
+        E --> F["Trayectorias 6-DoF de Efector Final y Perfiles de Fuerza"]
     end
 
     subgraph Hardware ["Capa de Dinámica en Tiempo Real (500-1000 Hz)"]
-        F --> G[Controlador Dinámico de Cuerpo Completo / Impedancia]
-        G --> H[Actuadores QDD de Gran Ancho de Banda / Bucle de Par]
-        H --> I[Interacción Física con el Entorno / Fricción y Deformación]
+        F --> G["Controlador Dinámico de Cuerpo Completo / Impedancia"]
+        G --> H["Actuadores QDD de Gran Ancho de Banda / Bucle de Par"]
+        H --> I["Interacción Física con el Entorno / Fricción y Deformación"]
         I --> A
     end
 ```

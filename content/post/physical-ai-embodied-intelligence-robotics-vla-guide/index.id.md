@@ -1,7 +1,7 @@
 ---
 title: "Physical AI dan Embodied Intelligence: Arsitektur, Model VLA, World Models, Sim-to-Real, dan Revolusi Robot Humanoid"
 description: "Dari bit siber menuju atom fisik. Panduan rekayasa komprehensif mengenai Physical AI: mengatasi paradoks Moravec, model fondasi VLA (RT-2, OpenVLA, π0), formulasi matematis Diffusion Policy, transfer Sim-to-Real, aktuator QDD, dan penginderaan taktil."
-date: 2026-03-31T15:00:00+09:00
+date: 2026-10-13T08:51:00+09:00
 slug: "physical-ai-embodied-intelligence-robotics-vla-guide"
 image: "eyecatch.jpg"
 categories:
@@ -49,20 +49,20 @@ Physical AI modern mengadopsi **arsitektur kontrol terpisah bertingkat**:
 ```mermaid
 flowchart TD
     subgraph Cognitive ["Lapisan Kognitif (1-5 Hz)"]
-        A[Sensor Multimodal: RGB-D / Suara / Titik Awan] --> B[Model Fondasi VLA / LLM Embodied]
-        B --> C[Model Dunia Fisik / Kausalitas Spatiotemporal]
-        C --> D[Dekomposisi Tugas dan Sub-tujuan Semantik]
+        A["Sensor Multimodal: RGB-D / Suara / Titik Awan"] --> B["Model Fondasi VLA / LLM Embodied"]
+        B --> C["Model Dunia Fisik / Kausalitas Spatiotemporal"]
+        C --> D["Dekomposisi Tugas dan Sub-tujuan Semantik"]
     end
 
     subgraph Policy ["Lapisan Kebijakan (Policy Layer: 20-50 Hz)"]
-        D --> E[Diffusion Policy / Action Chunking]
-        E --> F[Lintasan 6-DoF End-Effector dan Profil Gaya]
+        D --> E["Diffusion Policy / Action Chunking"]
+        E --> F["Lintasan 6-DoF End-Effector dan Profil Gaya"]
     end
 
     subgraph Hardware ["Lapisan Dinamika Real-Time (500-1000 Hz)"]
-        F --> G[Pengendali Dinamika Seluruh Tubuh / Kontrol Impedansi]
-        G --> H[Aktuator QDD Respons Cepat / Loop Torsi]
-        H --> I[Interaksi Fisik dengan Lingkungan / Gesekan dan Deformasi]
+        F --> G["Pengendali Dinamika Seluruh Tubuh / Kontrol Impedansi"]
+        G --> H["Aktuator QDD Respons Cepat / Loop Torsi"]
+        H --> I["Interaksi Fisik dengan Lingkungan / Gesekan dan Deformasi"]
         I --> A
     end
 ```

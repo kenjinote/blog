@@ -1,7 +1,7 @@
 ---
 title: "IA Física e Inteligência Encarnada: Arquiteturas, Modelos VLA, Modelos de Mundo, Sim-to-Real e a Revolução dos Humanoides"
 description: "Dos bits digitais aos átomos físicos. O guia definitivo de engenharia para IA Física: superação do paradoxo de Moravec, modelos fundacionais VLA (RT-2, OpenVLA, π0), formulação matemática da Diffusion Policy, transferência Sim-to-Real, atuadores QDD e sensoriamento tátil."
-date: 2026-03-31T15:00:00+09:00
+date: 2026-10-13T08:51:00+09:00
 slug: "physical-ai-embodied-intelligence-robotics-vla-guide"
 image: "eyecatch.jpg"
 categories:
@@ -49,20 +49,20 @@ A IA Física moderna emprega uma **arquitetura de controle hierárquica desacopl
 ```mermaid
 flowchart TD
     subgraph Cognitive ["Camada Cognitiva (1-5 Hz)"]
-        A[Entrada Multimodal: RGB-D / Voz / Nuvens de Pontos] --> B[Modelo Fundacional VLA / LLM Encarnado]
-        B --> C[Modelo de Mundo Físico / Causalidade Espaço-Temporal]
-        C --> D[Decomposição de Tarefas e Submetas Semânticas]
+        A["Entrada Multimodal: RGB-D / Voz / Nuvens de Pontos"] --> B["Modelo Fundacional VLA / LLM Encarnado"]
+        B --> C["Modelo de Mundo Físico / Causalidade Espaço-Temporal"]
+        C --> D["Decomposição de Tarefas e Submetas Semânticas"]
     end
 
     subgraph Policy ["Camada de Políticas (Policy Layer: 20-50 Hz)"]
-        D --> E[Diffusion Policy / Action Chunking]
-        E --> F[Trajetórias 6-DoF de Efetuador e Perfil de Força]
+        D --> E["Diffusion Policy / Action Chunking"]
+        E --> F["Trajetórias 6-DoF de Efetuador e Perfil de Força"]
     end
 
     subgraph Hardware ["Camada de Dinâmica em Tempo Real (500-1000 Hz)"]
-        F --> G[Controlador Dinâmico de Corpo Inteiro / Impedância]
-        G --> H[Atuadores QDD de Alta Largura de Banda / Malha de Torque]
-        H --> I[Interação Física com o Ambiente / Atrito e Deformação]
+        F --> G["Controlador Dinâmico de Corpo Inteiro / Impedância"]
+        G --> H["Atuadores QDD de Alta Largura de Banda / Malha de Torque"]
+        H --> I["Interação Física com o Ambiente / Atrito e Deformação"]
         I --> A
     end
 ```

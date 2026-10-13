@@ -1,7 +1,7 @@
 ---
 title: "IA Physique et Intelligence Incarnée : Architectures, Modèles VLA, Modèles du Monde, Sim-to-Real et Révolution des Humanoïdes"
 description: "Des octets numériques aux atomes physiques. Le guide d'ingénierie complet de l'IA Physique : dépassement du paradoxe de Moravec, modèles fondationnels VLA (RT-2, OpenVLA, π0), formulation mathématique des Diffusion Policies, transfert Sim-to-Real, actionneurs QDD et détection tactile."
-date: 2026-03-31T15:00:00+09:00
+date: 2026-10-13T08:51:00+09:00
 slug: "physical-ai-embodied-intelligence-robotics-vla-guide"
 image: "eyecatch.jpg"
 categories:
@@ -48,20 +48,20 @@ L'IA Physique moderne adopte une **architecture de contrôle hiérarchique et d�
 ```mermaid
 flowchart TD
     subgraph Cognitive ["Couche Cognitive (1-5 Hz)"]
-        A[Capteurs multimodaux: RGB-D / Audio / Nuages de points] --> B[Modèle Fondationnel VLA / LLM Incarné]
-        B --> C[Modèle du Monde Physique / Causalité spatio-temporelle]
-        C --> D[Décomposition de tâche & Sous-objectifs sémantiques]
+        A["Capteurs multimodaux: RGB-D / Audio / Nuages de points"] --> B["Modèle Fondationnel VLA / LLM Incarné"]
+        B --> C["Modèle du Monde Physique / Causalité spatio-temporelle"]
+        C --> D["Décomposition de tâche & Sous-objectifs sémantiques"]
     end
 
     subgraph Policy ["Couche Stratégique (Policy Layer: 20-50 Hz)"]
-        D --> E[Diffusion Policy / Action Chunking]
-        E --> F[Trajectoires d'effecteur 6-DoF & Profils d'effort cible]
+        D --> E["Diffusion Policy / Action Chunking"]
+        E --> F["Trajectoires d'effecteur 6-DoF & Profils d'effort cible"]
     end
 
     subgraph Hardware ["Couche Dynamique Temps Réel (500-1000 Hz)"]
-        F --> G[Contrôleur dynamique corps complet / Commande d'impédance]
-        G --> H[Actionneurs QDD à haute bande passante / Boucle d'effort]
-        H --> I[Interaction physique avec l'environnement / Frottement]
+        F --> G["Contrôleur dynamique corps complet / Commande d'impédance"]
+        G --> H["Actionneurs QDD à haute bande passante / Boucle d'effort"]
+        H --> I["Interaction physique avec l'environnement / Frottement"]
         I --> A
     end
 ```
