@@ -24614,11 +24614,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_note": "Full biography and mathematical legacy read. Retain mathematics/biography. Self-link cleanup and same-language Euler/Lagrange/Jacobi references pending; inspect missing Galois/Gauss references by language."
     },
     {
       "path": "content/post/abel/index.de.md",
@@ -24633,13 +24634,18 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed: visible source, frontmatter, code, math and all headings unchanged",
+        "hugo": "passed --minify --buildFuture; exit 0",
+        "browser": "passed before/after comparison and same-language target HTTP 200",
+        "categories": "unchanged; existing full-site 4009 errors, no increase"
+      },
+      "batch": "001-abel-west"
     },
     {
       "path": "content/post/abel/index.en.md",
@@ -24654,13 +24660,18 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed: visible source, frontmatter, code, math and all headings unchanged",
+        "hugo": "passed --minify --buildFuture; exit 0",
+        "browser": "passed before/after comparison and same-language target HTTP 200",
+        "categories": "unchanged; existing full-site 4009 errors, no increase"
+      },
+      "batch": "001-abel-west"
     },
     {
       "path": "content/post/abel/index.es.md",
@@ -24675,13 +24686,18 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed: visible source, frontmatter, code, math and all headings unchanged",
+        "hugo": "passed --minify --buildFuture; exit 0",
+        "browser": "passed before/after comparison and same-language target HTTP 200",
+        "categories": "unchanged; existing full-site 4009 errors, no increase"
+      },
+      "batch": "001-abel-west"
     },
     {
       "path": "content/post/abel/index.fr.md",
@@ -24696,13 +24712,18 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed: visible source, frontmatter, code, math and all headings unchanged",
+        "hugo": "passed --minify --buildFuture; exit 0",
+        "browser": "passed before/after comparison and same-language target HTTP 200",
+        "categories": "unchanged; existing full-site 4009 errors, no increase"
+      },
+      "batch": "001-abel-west"
     },
     {
       "path": "content/post/abel/index.hi.md",
@@ -24719,11 +24740,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_note": "Full biography and mathematical legacy read. Retain mathematics/biography. Self-link cleanup and same-language Euler/Lagrange/Jacobi references pending; inspect missing Galois/Gauss references by language."
     },
     {
       "path": "content/post/abel/index.id.md",
@@ -24738,13 +24760,18 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed: visible source, frontmatter, code, math and all headings unchanged",
+        "hugo": "passed --minify --buildFuture; exit 0",
+        "browser": "passed before/after comparison and same-language target HTTP 200",
+        "categories": "unchanged; existing full-site 4009 errors, no increase"
+      },
+      "batch": "001-abel-west"
     },
     {
       "path": "content/post/abel/index.ko.md",
@@ -24761,11 +24788,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_note": "Body reviewed; mathematics/biography appropriate. Self links need removal; references to Euler, Lagrange, Jacobi need linking. Korean also lacks contextual Galois/Gauss links. No edits yet."
     },
     {
       "path": "content/post/abel/index.md",
@@ -24780,13 +24808,18 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed: visible source, frontmatter, code, math and all headings unchanged",
+        "hugo": "passed --minify --buildFuture; exit 0",
+        "browser": "passed before/after comparison and same-language target HTTP 200",
+        "categories": "unchanged; existing full-site 4009 errors, no increase"
+      },
+      "batch": "001-abel-west"
     },
     {
       "path": "content/post/abel/index.pt.md",
@@ -24801,13 +24834,18 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed: visible source, frontmatter, code, math and all headings unchanged",
+        "hugo": "passed --minify --buildFuture; exit 0",
+        "browser": "passed before/after comparison and same-language target HTTP 200",
+        "categories": "unchanged; existing full-site 4009 errors, no increase"
+      },
+      "batch": "001-abel-west"
     },
     {
       "path": "content/post/abel/index.ru.md",
@@ -24824,11 +24862,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_note": "Full biography and mathematical legacy read. Retain mathematics/biography. Self-link cleanup and same-language Euler/Lagrange/Jacobi references pending; inspect missing Galois/Gauss references by language."
     },
     {
       "path": "content/post/abel/index.zh-cn.md",
@@ -24845,11 +24884,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_note": "Body reviewed; mathematics/biography appropriate. Self links need removal; references to Euler, Lagrange, Jacobi need linking. Korean also lacks contextual Galois/Gauss links. No edits yet."
     },
     {
       "path": "content/post/abel/index.zh-tw.md",
@@ -24866,11 +24906,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_note": "Full biography and mathematical legacy read. Retain mathematics/biography. Self-link cleanup and same-language Euler/Lagrange/Jacobi references pending; inspect missing Galois/Gauss references by language."
     },
     {
       "path": "content/post/accelerometer-sensor-mechanism/index.ar.md",
@@ -26108,11 +26149,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_note": "Full body read: affiliate ecosystem, redirects, cookies, ITP, S2S, privacy and fingerprinting. Proposed existing business/marketing. Link review pending. Existing typo eindeuclease and absolute ITP claim noted for separate editorial review."
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.en.md",
@@ -26131,11 +26173,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_note": "Full body read: affiliate ecosystem, redirects, cookies, ITP and S2S architecture. Proposed business/marketing using existing marketing instead of undefined web-marketing. Link review and other languages pending. Factual absolutes about ITP immunity are outside this audit and should be separately reviewed."
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.es.md",
@@ -26154,11 +26197,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_note": "Full body read: affiliate ecosystem, redirects, cookies, ITP, S2S, privacy and fingerprinting. Proposed existing business/marketing. Link review pending. Absolute ITP immunity claim noted for separate editorial review."
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.fr.md",
@@ -26177,11 +26221,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_note": "Full body read: affiliate ecosystem, redirects, cookies, ITP, S2S, privacy and fingerprinting. Proposed existing business/marketing. Link review pending. Absolute ITP immunity claim noted for separate editorial review."
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.hi.md",
@@ -26223,11 +26268,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_note": "Full body read: affiliate ecosystem, redirects, cookies, ITP, S2S, privacy and fingerprinting. Proposed existing business/marketing. Link review pending. Absolute ITP immunity claim noted for separate editorial review."
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.ko.md",
@@ -26246,11 +26292,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_note": "Full body read: affiliate ecosystem, redirects, cookies, ITP, S2S, privacy and fingerprinting. Proposed existing business/marketing. Link review pending. Absolute ITP immunity claim noted for separate editorial review."
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.md",
@@ -26269,11 +26316,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_note": "Full body read: affiliate ecosystem, redirects, cookies, ITP and S2S architecture. Proposed business/marketing using existing marketing instead of undefined web-marketing. Link review and other languages pending. Factual absolutes about ITP immunity are outside this audit and should be separately reviewed."
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.pt.md",
@@ -26292,11 +26340,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_note": "Full body read: affiliate ecosystem, redirects, cookies, ITP, S2S, privacy and fingerprinting. Proposed existing business/marketing. Link review pending. Absolute ITP immunity claim noted for separate editorial review."
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.ru.md",
@@ -26338,11 +26387,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_note": "Full body read: affiliate ecosystem, redirects, cookies, ITP, S2S, privacy and fingerprinting. Proposed existing business/marketing. Link review pending. Absolute ITP immunity claim noted for separate editorial review."
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.zh-tw.md",
@@ -26361,11 +26411,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_note": "Full body read: affiliate ecosystem, redirects, cookies, ITP, S2S, privacy and fingerprinting. Proposed existing business/marketing. Link review pending. Absolute ITP immunity claim noted for separate editorial review."
     },
     {
       "path": "content/post/affine-and-projective-transformations/index.ar.md",

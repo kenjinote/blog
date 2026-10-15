@@ -1,0 +1,139 @@
+{
+  "batch": "001-abel-west",
+  "review": "Full body reviewed for ja/en/de/fr/es/pt/id. Retain mathematics and biography: life history plus algebra/analysis legacy. Remove unfragmented self links and add single contextual references to the mathematicians explicitly discussed. Existing Galois/Gauss/Cauchy/Jacobi references retained. Remaining six translations pending. Heading self links deliberately preserved to preserve Hugo fragment IDs; 206 body self links removed, 18 contextual links added.",
+  "articles": [
+    {
+      "path": "content/post/abel/index.md",
+      "source_sha256": "46a548f5e1db385b45bde2b933ddd447397ddbd813df56612522b55c11113701",
+      "links": [
+        {
+          "term": "オイラー",
+          "target": "content/post/euler/index.md"
+        },
+        {
+          "term": "ラグランジュ",
+          "target": "content/post/lagrange/index.md"
+        },
+        {
+          "term": "ヤコビ",
+          "target": "content/post/jacobi/index.md"
+        }
+      ],
+      "category_decision": "Retain mathematics and biography: life history and mathematical legacy."
+    },
+    {
+      "path": "content/post/abel/index.en.md",
+      "source_sha256": "8929a98eacdaf2728274451f2558b8f9541fd354402a59d9221a32b95a6aa1fb",
+      "links": [
+        {
+          "term": "Euler",
+          "target": "content/post/euler/index.en.md"
+        },
+        {
+          "term": "Lagrange",
+          "target": "content/post/lagrange/index.en.md"
+        },
+        {
+          "term": "Jacobi",
+          "target": "content/post/jacobi/index.en.md"
+        }
+      ],
+      "category_decision": "Retain mathematics and biography: life history and mathematical legacy."
+    },
+    {
+      "path": "content/post/abel/index.de.md",
+      "source_sha256": "d6ffec539e00f9f8d9553397a64e0c7e859fa77530f872c1e1b818b24428c44b",
+      "links": [
+        {
+          "term": "Euler",
+          "target": "content/post/euler/index.de.md"
+        },
+        {
+          "term": "Lagrange",
+          "target": "content/post/lagrange/index.de.md"
+        },
+        {
+          "term": "Jacobi",
+          "target": "content/post/jacobi/index.de.md"
+        }
+      ],
+      "category_decision": "Retain mathematics and biography: life history and mathematical legacy."
+    },
+    {
+      "path": "content/post/abel/index.fr.md",
+      "source_sha256": "6105a0671bafc64c4d2c891104c09083b33e197155e17810d04dac2381e1765b",
+      "links": [
+        {
+          "term": "Euler",
+          "target": "content/post/euler/index.fr.md"
+        },
+        {
+          "term": "Lagrange",
+          "target": "content/post/lagrange/index.fr.md"
+        },
+        {
+          "term": "Jacobi",
+          "target": "content/post/jacobi/index.fr.md"
+        }
+      ],
+      "category_decision": "Retain mathematics and biography: life history and mathematical legacy."
+    },
+    {
+      "path": "content/post/abel/index.es.md",
+      "source_sha256": "f57cb07efa2410c08a147203bbf302a2f8facfde0df368e485b0815fb027735d",
+      "links": [
+        {
+          "term": "Euler",
+          "target": "content/post/euler/index.es.md"
+        },
+        {
+          "term": "Lagrange",
+          "target": "content/post/lagrange/index.es.md"
+        },
+        {
+          "term": "Jacobi",
+          "target": "content/post/jacobi/index.es.md"
+        }
+      ],
+      "category_decision": "Retain mathematics and biography: life history and mathematical legacy."
+    },
+    {
+      "path": "content/post/abel/index.pt.md",
+      "source_sha256": "3a1ab40e9524c8d77abb2023891f9214c7ff261aa12733b0f0de27a5195e08c7",
+      "links": [
+        {
+          "term": "Euler",
+          "target": "content/post/euler/index.pt.md"
+        },
+        {
+          "term": "Lagrange",
+          "target": "content/post/lagrange/index.pt.md"
+        },
+        {
+          "term": "Jacobi",
+          "target": "content/post/jacobi/index.pt.md"
+        }
+      ],
+      "category_decision": "Retain mathematics and biography: life history and mathematical legacy."
+    },
+    {
+      "path": "content/post/abel/index.id.md",
+      "source_sha256": "031472b9fe8c0b0dc8ecce5a4dda444bc82f568c838301cf069f3119878c1e09",
+      "links": [
+        {
+          "term": "Euler",
+          "target": "content/post/euler/index.id.md"
+        },
+        {
+          "term": "Lagrange",
+          "target": "content/post/lagrange/index.id.md"
+        },
+        {
+          "term": "Jacobi",
+          "target": "content/post/jacobi/index.id.md"
+        }
+      ],
+      "category_decision": "Retain mathematics and biography: life history and mathematical legacy."
+    }
+  ]
+}

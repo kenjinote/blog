@@ -1,0 +1,1641 @@
+[
+  {
+    "lang": "ja",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "1-はじめに早世の天才アーベルhttpskenjiblogpabel",
+          "text": "1. はじめに：早世の天才アーベル"
+        },
+        {
+          "id": "2-アーベルhttpskenjiblogpabelの生涯貧困と才能の開花",
+          "text": "2. アーベルの生涯：貧困と才能の開花"
+        },
+        {
+          "id": "21-幼少期と恩師ホルムボーとの出会い",
+          "text": "2.1 幼少期と恩師ホルムボーとの出会い"
+        },
+        {
+          "id": "22-父親の死と背負わされた重圧",
+          "text": "2.2 父親の死と背負わされた重圧"
+        },
+        {
+          "id": "3-5次方程式の解の公式の不可能性",
+          "text": "3. 5次方程式の解の公式の不可能性"
+        },
+        {
+          "id": "4-ヨーロッパへの旅とクレレとの出会い",
+          "text": "4. ヨーロッパへの旅とクレレとの出会い"
+        },
+        {
+          "id": "5-パリでの挫折とコーシーhttpskenjiblogpcauchyの怠慢",
+          "text": "5. パリでの挫折とコーシーの怠慢"
+        },
+        {
+          "id": "6-帰国と悲劇的な最期",
+          "text": "6. 帰国と悲劇的な最期"
+        },
+        {
+          "id": "7-アーベルhttpskenjiblogpabelの数学的遺産",
+          "text": "7. アーベルの数学的遺産"
+        },
+        {
+          "id": "71-アーベルhttpskenjiblogpabel群-abelhttpskenjiblogpabelian-group",
+          "text": "7.1 アーベル群 (Abelian Group)"
+        },
+        {
+          "id": "72-アーベルhttpskenjiblogpabel積分とアーベルhttpskenjiblogpabel関数",
+          "text": "7.2 アーベル積分とアーベル関数"
+        },
+        {
+          "id": "73-アーベルhttpskenjiblogpabelの連続性定理-abelhttpskenjiblogpabels-limit-theorem",
+          "text": "7.3 アーベルの連続性定理 (Abel’s limit theorem)"
+        },
+        {
+          "id": "8-おわりに",
+          "text": "8. おわりに"
+        }
+      ],
+      "category": "数学\n人物伝",
+      "math": 6,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/p/abel/",
+        "/p/galois/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/gauss/",
+        "/p/gauss/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/cauchy/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/abel/",
+        "/p/abel/"
+      ],
+      "brokenToc": []
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "1-はじめに早世の天才アーベルhttpskenjiblogpabel",
+          "text": "1. はじめに：早世の天才アーベル"
+        },
+        {
+          "id": "2-アーベルhttpskenjiblogpabelの生涯貧困と才能の開花",
+          "text": "2. アーベルの生涯：貧困と才能の開花"
+        },
+        {
+          "id": "21-幼少期と恩師ホルムボーとの出会い",
+          "text": "2.1 幼少期と恩師ホルムボーとの出会い"
+        },
+        {
+          "id": "22-父親の死と背負わされた重圧",
+          "text": "2.2 父親の死と背負わされた重圧"
+        },
+        {
+          "id": "3-5次方程式の解の公式の不可能性",
+          "text": "3. 5次方程式の解の公式の不可能性"
+        },
+        {
+          "id": "4-ヨーロッパへの旅とクレレとの出会い",
+          "text": "4. ヨーロッパへの旅とクレレとの出会い"
+        },
+        {
+          "id": "5-パリでの挫折とコーシーhttpskenjiblogpcauchyの怠慢",
+          "text": "5. パリでの挫折とコーシーの怠慢"
+        },
+        {
+          "id": "6-帰国と悲劇的な最期",
+          "text": "6. 帰国と悲劇的な最期"
+        },
+        {
+          "id": "7-アーベルhttpskenjiblogpabelの数学的遺産",
+          "text": "7. アーベルの数学的遺産"
+        },
+        {
+          "id": "71-アーベルhttpskenjiblogpabel群-abelhttpskenjiblogpabelian-group",
+          "text": "7.1 アーベル群 (Abelian Group)"
+        },
+        {
+          "id": "72-アーベルhttpskenjiblogpabel積分とアーベルhttpskenjiblogpabel関数",
+          "text": "7.2 アーベル積分とアーベル関数"
+        },
+        {
+          "id": "73-アーベルhttpskenjiblogpabelの連続性定理-abelhttpskenjiblogpabels-limit-theorem",
+          "text": "7.3 アーベルの連続性定理 (Abel’s limit theorem)"
+        },
+        {
+          "id": "8-おわりに",
+          "text": "8. おわりに"
+        }
+      ],
+      "category": "数学\n人物伝",
+      "math": 6,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/p/galois/",
+        "/p/euler/",
+        "/p/lagrange/",
+        "/p/gauss/",
+        "/p/gauss/",
+        "/p/cauchy/",
+        "/p/jacobi/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "lang": "en",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "1-introduction-the-young-genius-abelhttpskenjiblogenpabel",
+          "text": "1. Introduction: The Young Genius Abel"
+        },
+        {
+          "id": "2-abelhttpskenjiblogenpabels-life-poverty-and-the-blooming-of-talent",
+          "text": "2. Abel’s Life: Poverty and the Blooming of Talent"
+        },
+        {
+          "id": "21-early-childhood-and-meeting-his-mentor-holmboe",
+          "text": "2.1 Early Childhood and Meeting His Mentor Holmboe"
+        },
+        {
+          "id": "22-the-death-of-his-father-and-a-heavy-burden",
+          "text": "2.2 The Death of His Father and a Heavy Burden"
+        },
+        {
+          "id": "3-the-impossibility-of-the-quintic-equation-formula",
+          "text": "3. The Impossibility of the Quintic Equation Formula"
+        },
+        {
+          "id": "4-journey-to-europe-and-meeting-crelle",
+          "text": "4. Journey to Europe and Meeting Crelle"
+        },
+        {
+          "id": "5-setback-in-paris-and-cauchyhttpskenjiblogenpcauchys-neglect",
+          "text": "5. Setback in Paris and Cauchy’s Neglect"
+        },
+        {
+          "id": "6-return-home-and-tragic-end",
+          "text": "6. Return Home and Tragic End"
+        },
+        {
+          "id": "7-abelhttpskenjiblogenpabels-mathematical-legacy",
+          "text": "7. Abel’s Mathematical Legacy"
+        },
+        {
+          "id": "71-abelhttpskenjiblogenpabelian-group",
+          "text": "7.1 Abelian Group"
+        },
+        {
+          "id": "72-abelhttpskenjiblogenpabelian-integrals-and-abelhttpskenjiblogenpabelian-functions",
+          "text": "7.2 Abelian Integrals and Abelian Functions"
+        },
+        {
+          "id": "73-abelhttpskenjiblogenpabels-limit-theorem",
+          "text": "7.3 Abel’s Limit Theorem"
+        },
+        {
+          "id": "8-conclusion",
+          "text": "8. Conclusion"
+        }
+      ],
+      "category": "Mathematics\nBiography",
+      "math": 7,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/en/p/abel/",
+        "/en/p/galois/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/gauss/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/cauchy/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/abel/",
+        "/en/p/abel/"
+      ],
+      "brokenToc": []
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "1-introduction-the-young-genius-abelhttpskenjiblogenpabel",
+          "text": "1. Introduction: The Young Genius Abel"
+        },
+        {
+          "id": "2-abelhttpskenjiblogenpabels-life-poverty-and-the-blooming-of-talent",
+          "text": "2. Abel’s Life: Poverty and the Blooming of Talent"
+        },
+        {
+          "id": "21-early-childhood-and-meeting-his-mentor-holmboe",
+          "text": "2.1 Early Childhood and Meeting His Mentor Holmboe"
+        },
+        {
+          "id": "22-the-death-of-his-father-and-a-heavy-burden",
+          "text": "2.2 The Death of His Father and a Heavy Burden"
+        },
+        {
+          "id": "3-the-impossibility-of-the-quintic-equation-formula",
+          "text": "3. The Impossibility of the Quintic Equation Formula"
+        },
+        {
+          "id": "4-journey-to-europe-and-meeting-crelle",
+          "text": "4. Journey to Europe and Meeting Crelle"
+        },
+        {
+          "id": "5-setback-in-paris-and-cauchyhttpskenjiblogenpcauchys-neglect",
+          "text": "5. Setback in Paris and Cauchy’s Neglect"
+        },
+        {
+          "id": "6-return-home-and-tragic-end",
+          "text": "6. Return Home and Tragic End"
+        },
+        {
+          "id": "7-abelhttpskenjiblogenpabels-mathematical-legacy",
+          "text": "7. Abel’s Mathematical Legacy"
+        },
+        {
+          "id": "71-abelhttpskenjiblogenpabelian-group",
+          "text": "7.1 Abelian Group"
+        },
+        {
+          "id": "72-abelhttpskenjiblogenpabelian-integrals-and-abelhttpskenjiblogenpabelian-functions",
+          "text": "7.2 Abelian Integrals and Abelian Functions"
+        },
+        {
+          "id": "73-abelhttpskenjiblogenpabels-limit-theorem",
+          "text": "7.3 Abel’s Limit Theorem"
+        },
+        {
+          "id": "8-conclusion",
+          "text": "8. Conclusion"
+        }
+      ],
+      "category": "Mathematics\nBiography",
+      "math": 7,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/en/p/galois/",
+        "/en/p/euler/",
+        "/en/p/lagrange/",
+        "/en/p/gauss/",
+        "/en/p/cauchy/",
+        "/en/p/jacobi/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "lang": "de",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "1-einführung-das-junge-genie-abelhttpskenjiblogdepabel",
+          "text": "1. Einführung: Das junge Genie Abel"
+        },
+        {
+          "id": "2-abelhttpskenjiblogdepabels-leben-armut-und-das-erblühen-des-talents",
+          "text": "2. Abels Leben: Armut und das Erblühen des Talents"
+        },
+        {
+          "id": "21-frühe-kindheit-und-das-treffen-mit-seinem-mentor-holmboe",
+          "text": "2.1 Frühe Kindheit und das Treffen mit seinem Mentor Holmboe"
+        },
+        {
+          "id": "22-der-tod-seines-vaters-und-eine-schwere-last",
+          "text": "2.2 Der Tod seines Vaters und eine schwere Last"
+        },
+        {
+          "id": "3-die-unmöglichkeit-der-lösungsformel-für-gleichungen-fünften-grades",
+          "text": "3. Die Unmöglichkeit der Lösungsformel für Gleichungen fünften Grades"
+        },
+        {
+          "id": "4-reise-nach-europa-und-treffen-mit-crelle",
+          "text": "4. Reise nach Europa und Treffen mit Crelle"
+        },
+        {
+          "id": "5-rückschlag-in-paris-und-cauchyhttpskenjiblogdepcauchys-nachlässigkeit",
+          "text": "5. Rückschlag in Paris und Cauchys Nachlässigkeit"
+        },
+        {
+          "id": "6-rückkehr-in-die-heimat-und-tragisches-ende",
+          "text": "6. Rückkehr in die Heimat und tragisches Ende"
+        },
+        {
+          "id": "7-abelhttpskenjiblogdepabels-mathematisches-erbe",
+          "text": "7. Abels mathematisches Erbe"
+        },
+        {
+          "id": "71-abelhttpskenjiblogdepabelsche-gruppe",
+          "text": "7.1 Abelsche Gruppe"
+        },
+        {
+          "id": "72-abelhttpskenjiblogdepabelsche-integrale-und-abelhttpskenjiblogdepabelsche-funktionen",
+          "text": "7.2 Abelsche Integrale und Abelsche Funktionen"
+        },
+        {
+          "id": "73-abelhttpskenjiblogdepabelscher-grenzwertsatz",
+          "text": "7.3 Abelscher Grenzwertsatz"
+        },
+        {
+          "id": "8-fazit",
+          "text": "8. Fazit"
+        }
+      ],
+      "category": "Mathematik\nBiografie",
+      "math": 7,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/de/p/abel/",
+        "/de/p/galois/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/gauss/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/cauchy/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/abel/",
+        "/de/p/abel/"
+      ],
+      "brokenToc": []
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "1-einführung-das-junge-genie-abelhttpskenjiblogdepabel",
+          "text": "1. Einführung: Das junge Genie Abel"
+        },
+        {
+          "id": "2-abelhttpskenjiblogdepabels-leben-armut-und-das-erblühen-des-talents",
+          "text": "2. Abels Leben: Armut und das Erblühen des Talents"
+        },
+        {
+          "id": "21-frühe-kindheit-und-das-treffen-mit-seinem-mentor-holmboe",
+          "text": "2.1 Frühe Kindheit und das Treffen mit seinem Mentor Holmboe"
+        },
+        {
+          "id": "22-der-tod-seines-vaters-und-eine-schwere-last",
+          "text": "2.2 Der Tod seines Vaters und eine schwere Last"
+        },
+        {
+          "id": "3-die-unmöglichkeit-der-lösungsformel-für-gleichungen-fünften-grades",
+          "text": "3. Die Unmöglichkeit der Lösungsformel für Gleichungen fünften Grades"
+        },
+        {
+          "id": "4-reise-nach-europa-und-treffen-mit-crelle",
+          "text": "4. Reise nach Europa und Treffen mit Crelle"
+        },
+        {
+          "id": "5-rückschlag-in-paris-und-cauchyhttpskenjiblogdepcauchys-nachlässigkeit",
+          "text": "5. Rückschlag in Paris und Cauchys Nachlässigkeit"
+        },
+        {
+          "id": "6-rückkehr-in-die-heimat-und-tragisches-ende",
+          "text": "6. Rückkehr in die Heimat und tragisches Ende"
+        },
+        {
+          "id": "7-abelhttpskenjiblogdepabels-mathematisches-erbe",
+          "text": "7. Abels mathematisches Erbe"
+        },
+        {
+          "id": "71-abelhttpskenjiblogdepabelsche-gruppe",
+          "text": "7.1 Abelsche Gruppe"
+        },
+        {
+          "id": "72-abelhttpskenjiblogdepabelsche-integrale-und-abelhttpskenjiblogdepabelsche-funktionen",
+          "text": "7.2 Abelsche Integrale und Abelsche Funktionen"
+        },
+        {
+          "id": "73-abelhttpskenjiblogdepabelscher-grenzwertsatz",
+          "text": "7.3 Abelscher Grenzwertsatz"
+        },
+        {
+          "id": "8-fazit",
+          "text": "8. Fazit"
+        }
+      ],
+      "category": "Mathematik\nBiografie",
+      "math": 7,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/de/p/galois/",
+        "/de/p/euler/",
+        "/de/p/lagrange/",
+        "/de/p/gauss/",
+        "/de/p/cauchy/",
+        "/de/p/jacobi/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "lang": "fr",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "1-introduction--le-jeune-génie-abelhttpskenjiblogfrpabel",
+          "text": "1. Introduction : Le Jeune Génie Abel"
+        },
+        {
+          "id": "2-la-vie-dabelhttpskenjiblogfrpabel--la-pauvreté-et-léclosion-du-talent",
+          "text": "2. La Vie d’Abel : La Pauvreté et l’Éclosion du Talent"
+        },
+        {
+          "id": "21-petite-enfance-et-rencontre-avec-son-mentor-holmboe",
+          "text": "2.1 Petite Enfance et Rencontre avec son Mentor Holmboe"
+        },
+        {
+          "id": "22-la-mort-de-son-père-et-un-lourd-fardeau",
+          "text": "2.2 La Mort de son Père et un Lourd Fardeau"
+        },
+        {
+          "id": "3-limpossibilité-de-la-formule-de-léquation-quintique",
+          "text": "3. L’Impossibilité de la Formule de l’Équation Quintique"
+        },
+        {
+          "id": "4-voyage-en-europe-et-rencontre-avec-crelle",
+          "text": "4. Voyage en Europe et Rencontre avec Crelle"
+        },
+        {
+          "id": "5-revers-à-paris-et-la-négligence-de-cauchyhttpskenjiblogfrpcauchy",
+          "text": "5. Revers à Paris et la Négligence de Cauchy"
+        },
+        {
+          "id": "6-retour-au-pays-et-fin-tragique",
+          "text": "6. Retour au Pays et Fin Tragique"
+        },
+        {
+          "id": "7-lhéritage-mathématique-dabelhttpskenjiblogfrpabel",
+          "text": "7. L’Héritage Mathématique d’Abel"
+        },
+        {
+          "id": "71-groupe-abélien",
+          "text": "7.1 Groupe Abélien"
+        },
+        {
+          "id": "72-intégrales-abéliennes-et-fonctions-abéliennes",
+          "text": "7.2 Intégrales Abéliennes et Fonctions Abéliennes"
+        },
+        {
+          "id": "73-théorème-de-la-limite-dabelhttpskenjiblogfrpabel",
+          "text": "7.3 Théorème de la Limite d’Abel"
+        },
+        {
+          "id": "8-conclusion",
+          "text": "8. Conclusion"
+        }
+      ],
+      "category": "Mathématiques\nBiographie",
+      "math": 7,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/fr/p/abel/",
+        "/fr/p/galois/",
+        "/fr/p/abel/",
+        "/fr/p/abel/",
+        "/fr/p/abel/",
+        "/fr/p/abel/",
+        "/fr/p/abel/",
+        "/fr/p/abel/",
+        "/fr/p/abel/",
+        "/fr/p/abel/",
+        "/fr/p/abel/",
+        "/fr/p/abel/",
+        "/fr/p/abel/",
+        "/fr/p/gauss/",
+        "/fr/p/abel/",
+        "/fr/p/abel/",
+        "/fr/p/abel/",
+        "/fr/p/abel/",
+        "/fr/p/abel/",
+        "/fr/p/abel/",
+        "/fr/p/cauchy/",
+        "/fr/p/abel/",
+        "/fr/p/abel/",
+        "/fr/p/abel/",
+        "/fr/p/abel/",
+        "/fr/p/abel/",
+        "/fr/p/abel/",
+        "/fr/p/abel/",
+        "/fr/p/jacobi/",
+        "/fr/p/abel/",
+        "/fr/p/abel/"
+      ],
+      "brokenToc": []
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "1-introduction--le-jeune-génie-abelhttpskenjiblogfrpabel",
+          "text": "1. Introduction : Le Jeune Génie Abel"
+        },
+        {
+          "id": "2-la-vie-dabelhttpskenjiblogfrpabel--la-pauvreté-et-léclosion-du-talent",
+          "text": "2. La Vie d’Abel : La Pauvreté et l’Éclosion du Talent"
+        },
+        {
+          "id": "21-petite-enfance-et-rencontre-avec-son-mentor-holmboe",
+          "text": "2.1 Petite Enfance et Rencontre avec son Mentor Holmboe"
+        },
+        {
+          "id": "22-la-mort-de-son-père-et-un-lourd-fardeau",
+          "text": "2.2 La Mort de son Père et un Lourd Fardeau"
+        },
+        {
+          "id": "3-limpossibilité-de-la-formule-de-léquation-quintique",
+          "text": "3. L’Impossibilité de la Formule de l’Équation Quintique"
+        },
+        {
+          "id": "4-voyage-en-europe-et-rencontre-avec-crelle",
+          "text": "4. Voyage en Europe et Rencontre avec Crelle"
+        },
+        {
+          "id": "5-revers-à-paris-et-la-négligence-de-cauchyhttpskenjiblogfrpcauchy",
+          "text": "5. Revers à Paris et la Négligence de Cauchy"
+        },
+        {
+          "id": "6-retour-au-pays-et-fin-tragique",
+          "text": "6. Retour au Pays et Fin Tragique"
+        },
+        {
+          "id": "7-lhéritage-mathématique-dabelhttpskenjiblogfrpabel",
+          "text": "7. L’Héritage Mathématique d’Abel"
+        },
+        {
+          "id": "71-groupe-abélien",
+          "text": "7.1 Groupe Abélien"
+        },
+        {
+          "id": "72-intégrales-abéliennes-et-fonctions-abéliennes",
+          "text": "7.2 Intégrales Abéliennes et Fonctions Abéliennes"
+        },
+        {
+          "id": "73-théorème-de-la-limite-dabelhttpskenjiblogfrpabel",
+          "text": "7.3 Théorème de la Limite d’Abel"
+        },
+        {
+          "id": "8-conclusion",
+          "text": "8. Conclusion"
+        }
+      ],
+      "category": "Mathématiques\nBiographie",
+      "math": 7,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/fr/p/galois/",
+        "/fr/p/euler/",
+        "/fr/p/lagrange/",
+        "/fr/p/gauss/",
+        "/fr/p/cauchy/",
+        "/fr/p/jacobi/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "lang": "es",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "1-introducción-el-joven-genio-abelhttpskenjiblogespabel",
+          "text": "1. Introducción: El Joven Genio Abel"
+        },
+        {
+          "id": "2-la-vida-de-abelhttpskenjiblogespabel-pobreza-y-el-florecimiento-del-talento",
+          "text": "2. La Vida de Abel: Pobreza y el Florecimiento del Talento"
+        },
+        {
+          "id": "21-primera-infancia-y-el-encuentro-con-su-mentor-holmboe",
+          "text": "2.1 Primera Infancia y el Encuentro con su Mentor Holmboe"
+        },
+        {
+          "id": "22-la-muerte-de-su-padre-y-una-pesada-carga",
+          "text": "2.2 La Muerte de su Padre y una Pesada Carga"
+        },
+        {
+          "id": "3-la-imposibilidad-de-la-fórmula-de-la-ecuación-quíntica",
+          "text": "3. La Imposibilidad de la Fórmula de la Ecuación Quíntica"
+        },
+        {
+          "id": "4-viaje-a-europa-y-el-encuentro-con-crelle",
+          "text": "4. Viaje a Europa y el Encuentro con Crelle"
+        },
+        {
+          "id": "5-revés-en-parís-y-la-negligencia-de-cauchyhttpskenjiblogespcauchy",
+          "text": "5. Revés en París y la Negligencia de Cauchy"
+        },
+        {
+          "id": "6-regreso-a-casa-y-un-final-trágico",
+          "text": "6. Regreso a Casa y un Final Trágico"
+        },
+        {
+          "id": "7-el-legado-matemático-de-abelhttpskenjiblogespabel",
+          "text": "7. El Legado Matemático de Abel"
+        },
+        {
+          "id": "71-grupo-abelhttpskenjiblogespabeliano",
+          "text": "7.1 Grupo Abeliano"
+        },
+        {
+          "id": "72-integrales-abelhttpskenjiblogespabelianas-y-funciones-abelhttpskenjiblogespabelianas",
+          "text": "7.2 Integrales Abelianas y Funciones Abelianas"
+        },
+        {
+          "id": "73-teorema-del-límite-de-abelhttpskenjiblogespabel",
+          "text": "7.3 Teorema del Límite de Abel"
+        },
+        {
+          "id": "8-conclusión",
+          "text": "8. Conclusión"
+        }
+      ],
+      "category": "Matemáticas\nBiografía",
+      "math": 7,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/es/p/abel/",
+        "/es/p/galois/",
+        "/es/p/abel/",
+        "/es/p/abel/",
+        "/es/p/abel/",
+        "/es/p/abel/",
+        "/es/p/abel/",
+        "/es/p/abel/",
+        "/es/p/abel/",
+        "/es/p/abel/",
+        "/es/p/abel/",
+        "/es/p/abel/",
+        "/es/p/abel/",
+        "/es/p/gauss/",
+        "/es/p/abel/",
+        "/es/p/abel/",
+        "/es/p/abel/",
+        "/es/p/abel/",
+        "/es/p/abel/",
+        "/es/p/abel/",
+        "/es/p/cauchy/",
+        "/es/p/abel/",
+        "/es/p/abel/",
+        "/es/p/abel/",
+        "/es/p/abel/",
+        "/es/p/abel/",
+        "/es/p/abel/",
+        "/es/p/abel/",
+        "/es/p/jacobi/",
+        "/es/p/abel/",
+        "/es/p/abel/"
+      ],
+      "brokenToc": []
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "1-introducción-el-joven-genio-abelhttpskenjiblogespabel",
+          "text": "1. Introducción: El Joven Genio Abel"
+        },
+        {
+          "id": "2-la-vida-de-abelhttpskenjiblogespabel-pobreza-y-el-florecimiento-del-talento",
+          "text": "2. La Vida de Abel: Pobreza y el Florecimiento del Talento"
+        },
+        {
+          "id": "21-primera-infancia-y-el-encuentro-con-su-mentor-holmboe",
+          "text": "2.1 Primera Infancia y el Encuentro con su Mentor Holmboe"
+        },
+        {
+          "id": "22-la-muerte-de-su-padre-y-una-pesada-carga",
+          "text": "2.2 La Muerte de su Padre y una Pesada Carga"
+        },
+        {
+          "id": "3-la-imposibilidad-de-la-fórmula-de-la-ecuación-quíntica",
+          "text": "3. La Imposibilidad de la Fórmula de la Ecuación Quíntica"
+        },
+        {
+          "id": "4-viaje-a-europa-y-el-encuentro-con-crelle",
+          "text": "4. Viaje a Europa y el Encuentro con Crelle"
+        },
+        {
+          "id": "5-revés-en-parís-y-la-negligencia-de-cauchyhttpskenjiblogespcauchy",
+          "text": "5. Revés en París y la Negligencia de Cauchy"
+        },
+        {
+          "id": "6-regreso-a-casa-y-un-final-trágico",
+          "text": "6. Regreso a Casa y un Final Trágico"
+        },
+        {
+          "id": "7-el-legado-matemático-de-abelhttpskenjiblogespabel",
+          "text": "7. El Legado Matemático de Abel"
+        },
+        {
+          "id": "71-grupo-abelhttpskenjiblogespabeliano",
+          "text": "7.1 Grupo Abeliano"
+        },
+        {
+          "id": "72-integrales-abelhttpskenjiblogespabelianas-y-funciones-abelhttpskenjiblogespabelianas",
+          "text": "7.2 Integrales Abelianas y Funciones Abelianas"
+        },
+        {
+          "id": "73-teorema-del-límite-de-abelhttpskenjiblogespabel",
+          "text": "7.3 Teorema del Límite de Abel"
+        },
+        {
+          "id": "8-conclusión",
+          "text": "8. Conclusión"
+        }
+      ],
+      "category": "Matemáticas\nBiografía",
+      "math": 7,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/es/p/galois/",
+        "/es/p/euler/",
+        "/es/p/lagrange/",
+        "/es/p/gauss/",
+        "/es/p/cauchy/",
+        "/es/p/jacobi/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "lang": "pt",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "1-introdução-o-jovem-gênio-abelhttpskenjiblogptpabel",
+          "text": "1. Introdução: O Jovem Gênio Abel"
+        },
+        {
+          "id": "2-a-vida-de-abelhttpskenjiblogptpabel-pobreza-e-o-florescimento-do-talento",
+          "text": "2. A Vida de Abel: Pobreza e o Florescimento do Talento"
+        },
+        {
+          "id": "21-primeira-infância-e-o-encontro-com-o-seu-mentor-holmboe",
+          "text": "2.1 Primeira Infância e o Encontro com o seu Mentor Holmboe"
+        },
+        {
+          "id": "22-a-morte-do-seu-pai-e-um-fardo-pesado",
+          "text": "2.2 A Morte do seu Pai e um Fardo Pesado"
+        },
+        {
+          "id": "3-a-impossibilidade-da-fórmula-da-equação-quíntica",
+          "text": "3. A Impossibilidade da Fórmula da Equação Quíntica"
+        },
+        {
+          "id": "4-viagem-à-europa-e-o-encontro-com-crelle",
+          "text": "4. Viagem à Europa e o Encontro com Crelle"
+        },
+        {
+          "id": "5-revés-em-paris-e-a-negligência-de-cauchyhttpskenjiblogptpcauchy",
+          "text": "5. Revés em Paris e a Negligência de Cauchy"
+        },
+        {
+          "id": "6-regresso-a-casa-e-um-fim-trágico",
+          "text": "6. Regresso a Casa e um Fim Trágico"
+        },
+        {
+          "id": "7-o-legado-matemático-de-abelhttpskenjiblogptpabel",
+          "text": "7. O Legado Matemático de Abel"
+        },
+        {
+          "id": "71-grupo-abelhttpskenjiblogptpabeliano",
+          "text": "7.1 Grupo Abeliano"
+        },
+        {
+          "id": "72-integrais-abelhttpskenjiblogptpabelianas-e-funções-abelhttpskenjiblogptpabelianas",
+          "text": "7.2 Integrais Abelianas e Funções Abelianas"
+        },
+        {
+          "id": "73-teorema-do-limite-de-abelhttpskenjiblogptpabel",
+          "text": "7.3 Teorema do Limite de Abel"
+        },
+        {
+          "id": "8-conclusão",
+          "text": "8. Conclusão"
+        }
+      ],
+      "category": "Matemática\nBiografia",
+      "math": 7,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/pt/p/abel/",
+        "/pt/p/galois/",
+        "/pt/p/abel/",
+        "/pt/p/abel/",
+        "/pt/p/abel/",
+        "/pt/p/abel/",
+        "/pt/p/abel/",
+        "/pt/p/abel/",
+        "/pt/p/abel/",
+        "/pt/p/abel/",
+        "/pt/p/abel/",
+        "/pt/p/abel/",
+        "/pt/p/abel/",
+        "/pt/p/gauss/",
+        "/pt/p/abel/",
+        "/pt/p/abel/",
+        "/pt/p/abel/",
+        "/pt/p/abel/",
+        "/pt/p/abel/",
+        "/pt/p/abel/",
+        "/pt/p/cauchy/",
+        "/pt/p/abel/",
+        "/pt/p/abel/",
+        "/pt/p/abel/",
+        "/pt/p/abel/",
+        "/pt/p/abel/",
+        "/pt/p/abel/",
+        "/pt/p/abel/",
+        "/pt/p/jacobi/",
+        "/pt/p/abel/",
+        "/pt/p/abel/"
+      ],
+      "brokenToc": []
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "1-introdução-o-jovem-gênio-abelhttpskenjiblogptpabel",
+          "text": "1. Introdução: O Jovem Gênio Abel"
+        },
+        {
+          "id": "2-a-vida-de-abelhttpskenjiblogptpabel-pobreza-e-o-florescimento-do-talento",
+          "text": "2. A Vida de Abel: Pobreza e o Florescimento do Talento"
+        },
+        {
+          "id": "21-primeira-infância-e-o-encontro-com-o-seu-mentor-holmboe",
+          "text": "2.1 Primeira Infância e o Encontro com o seu Mentor Holmboe"
+        },
+        {
+          "id": "22-a-morte-do-seu-pai-e-um-fardo-pesado",
+          "text": "2.2 A Morte do seu Pai e um Fardo Pesado"
+        },
+        {
+          "id": "3-a-impossibilidade-da-fórmula-da-equação-quíntica",
+          "text": "3. A Impossibilidade da Fórmula da Equação Quíntica"
+        },
+        {
+          "id": "4-viagem-à-europa-e-o-encontro-com-crelle",
+          "text": "4. Viagem à Europa e o Encontro com Crelle"
+        },
+        {
+          "id": "5-revés-em-paris-e-a-negligência-de-cauchyhttpskenjiblogptpcauchy",
+          "text": "5. Revés em Paris e a Negligência de Cauchy"
+        },
+        {
+          "id": "6-regresso-a-casa-e-um-fim-trágico",
+          "text": "6. Regresso a Casa e um Fim Trágico"
+        },
+        {
+          "id": "7-o-legado-matemático-de-abelhttpskenjiblogptpabel",
+          "text": "7. O Legado Matemático de Abel"
+        },
+        {
+          "id": "71-grupo-abelhttpskenjiblogptpabeliano",
+          "text": "7.1 Grupo Abeliano"
+        },
+        {
+          "id": "72-integrais-abelhttpskenjiblogptpabelianas-e-funções-abelhttpskenjiblogptpabelianas",
+          "text": "7.2 Integrais Abelianas e Funções Abelianas"
+        },
+        {
+          "id": "73-teorema-do-limite-de-abelhttpskenjiblogptpabel",
+          "text": "7.3 Teorema do Limite de Abel"
+        },
+        {
+          "id": "8-conclusão",
+          "text": "8. Conclusão"
+        }
+      ],
+      "category": "Matemática\nBiografia",
+      "math": 7,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/pt/p/galois/",
+        "/pt/p/euler/",
+        "/pt/p/lagrange/",
+        "/pt/p/gauss/",
+        "/pt/p/cauchy/",
+        "/pt/p/jacobi/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "lang": "id",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "1-pendahuluan-jenius-muda-abelhttpskenjiblogidpabel",
+          "text": "1. Pendahuluan: Jenius Muda Abel"
+        },
+        {
+          "id": "2-kehidupan-abelhttpskenjiblogidpabel-kemiskinan-dan-mekarnya-bakat",
+          "text": "2. Kehidupan Abel: Kemiskinan dan Mekarnya Bakat"
+        },
+        {
+          "id": "21-masa-kecil-dan-pertemuan-dengan-mentornya-holmboe",
+          "text": "2.1 Masa Kecil dan Pertemuan dengan Mentornya Holmboe"
+        },
+        {
+          "id": "22-kematian-ayahnya-dan-beban-berat",
+          "text": "2.2 Kematian Ayahnya dan Beban Berat"
+        },
+        {
+          "id": "3-kemustahilan-rumus-persamaan-derajat-lima",
+          "text": "3. Kemustahilan Rumus Persamaan Derajat Lima"
+        },
+        {
+          "id": "4-perjalanan-ke-eropa-dan-pertemuan-dengan-crelle",
+          "text": "4. Perjalanan ke Eropa dan Pertemuan dengan Crelle"
+        },
+        {
+          "id": "5-kemunduran-di-paris-dan-kelalaian-cauchyhttpskenjiblogidpcauchy",
+          "text": "5. Kemunduran di Paris dan Kelalaian Cauchy"
+        },
+        {
+          "id": "6-pulang-ke-rumah-dan-akhir-yang-tragis",
+          "text": "6. Pulang ke Rumah dan Akhir yang Tragis"
+        },
+        {
+          "id": "7-warisan-matematika-abelhttpskenjiblogidpabel",
+          "text": "7. Warisan Matematika Abel"
+        },
+        {
+          "id": "71-grup-abelhttpskenjiblogidpabelian",
+          "text": "7.1 Grup Abelian"
+        },
+        {
+          "id": "72-integral-abelhttpskenjiblogidpabelian-dan-fungsi-abelhttpskenjiblogidpabelian",
+          "text": "7.2 Integral Abelian dan Fungsi Abelian"
+        },
+        {
+          "id": "73-teorema-limit-abelhttpskenjiblogidpabel",
+          "text": "7.3 Teorema Limit Abel"
+        },
+        {
+          "id": "8-kesimpulan",
+          "text": "8. Kesimpulan"
+        }
+      ],
+      "category": "Matematika\nBiografi",
+      "math": 7,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/id/p/abel/",
+        "/id/p/galois/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/gauss/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/cauchy/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/abel/",
+        "/id/p/abel/"
+      ],
+      "brokenToc": []
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "1-pendahuluan-jenius-muda-abelhttpskenjiblogidpabel",
+          "text": "1. Pendahuluan: Jenius Muda Abel"
+        },
+        {
+          "id": "2-kehidupan-abelhttpskenjiblogidpabel-kemiskinan-dan-mekarnya-bakat",
+          "text": "2. Kehidupan Abel: Kemiskinan dan Mekarnya Bakat"
+        },
+        {
+          "id": "21-masa-kecil-dan-pertemuan-dengan-mentornya-holmboe",
+          "text": "2.1 Masa Kecil dan Pertemuan dengan Mentornya Holmboe"
+        },
+        {
+          "id": "22-kematian-ayahnya-dan-beban-berat",
+          "text": "2.2 Kematian Ayahnya dan Beban Berat"
+        },
+        {
+          "id": "3-kemustahilan-rumus-persamaan-derajat-lima",
+          "text": "3. Kemustahilan Rumus Persamaan Derajat Lima"
+        },
+        {
+          "id": "4-perjalanan-ke-eropa-dan-pertemuan-dengan-crelle",
+          "text": "4. Perjalanan ke Eropa dan Pertemuan dengan Crelle"
+        },
+        {
+          "id": "5-kemunduran-di-paris-dan-kelalaian-cauchyhttpskenjiblogidpcauchy",
+          "text": "5. Kemunduran di Paris dan Kelalaian Cauchy"
+        },
+        {
+          "id": "6-pulang-ke-rumah-dan-akhir-yang-tragis",
+          "text": "6. Pulang ke Rumah dan Akhir yang Tragis"
+        },
+        {
+          "id": "7-warisan-matematika-abelhttpskenjiblogidpabel",
+          "text": "7. Warisan Matematika Abel"
+        },
+        {
+          "id": "71-grup-abelhttpskenjiblogidpabelian",
+          "text": "7.1 Grup Abelian"
+        },
+        {
+          "id": "72-integral-abelhttpskenjiblogidpabelian-dan-fungsi-abelhttpskenjiblogidpabelian",
+          "text": "7.2 Integral Abelian dan Fungsi Abelian"
+        },
+        {
+          "id": "73-teorema-limit-abelhttpskenjiblogidpabel",
+          "text": "7.3 Teorema Limit Abel"
+        },
+        {
+          "id": "8-kesimpulan",
+          "text": "8. Kesimpulan"
+        }
+      ],
+      "category": "Matematika\nBiografi",
+      "math": 7,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/id/p/galois/",
+        "/id/p/euler/",
+        "/id/p/lagrange/",
+        "/id/p/gauss/",
+        "/id/p/cauchy/",
+        "/id/p/jacobi/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  }
+]

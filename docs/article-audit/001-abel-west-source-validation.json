@@ -1,0 +1,144 @@
+[
+  {
+    "path": "content/post/abel/index.md",
+    "removed_self_links": 32,
+    "added_links": [
+      {
+        "term": "オイラー",
+        "url": "/p/euler/"
+      },
+      {
+        "term": "ラグランジュ",
+        "url": "/p/lagrange/"
+      },
+      {
+        "term": "ヤコビ",
+        "url": "/p/jacobi/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "categories": "Retain mathematics and biography: life history and mathematical legacy.",
+    "updated_sha256": "ceebaf346d6e8494c86058d333632bfd7d62b0450f28cd14bb7598a99ccddb26"
+  },
+  {
+    "path": "content/post/abel/index.en.md",
+    "removed_self_links": 31,
+    "added_links": [
+      {
+        "term": "Euler",
+        "url": "/en/p/euler/"
+      },
+      {
+        "term": "Lagrange",
+        "url": "/en/p/lagrange/"
+      },
+      {
+        "term": "Jacobi",
+        "url": "/en/p/jacobi/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "categories": "Retain mathematics and biography: life history and mathematical legacy.",
+    "updated_sha256": "2aedc1188f94be6379e97403eafdac16e72a2e58a815319ae14db17778fc8f4a"
+  },
+  {
+    "path": "content/post/abel/index.de.md",
+    "removed_self_links": 31,
+    "added_links": [
+      {
+        "term": "Euler",
+        "url": "/de/p/euler/"
+      },
+      {
+        "term": "Lagrange",
+        "url": "/de/p/lagrange/"
+      },
+      {
+        "term": "Jacobi",
+        "url": "/de/p/jacobi/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "categories": "Retain mathematics and biography: life history and mathematical legacy.",
+    "updated_sha256": "08c6f0e4e7d901706d6b660ba45e5773ef316215ad9f410356697f521c200fe2"
+  },
+  {
+    "path": "content/post/abel/index.fr.md",
+    "removed_self_links": 27,
+    "added_links": [
+      {
+        "term": "Euler",
+        "url": "/fr/p/euler/"
+      },
+      {
+        "term": "Lagrange",
+        "url": "/fr/p/lagrange/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "categories": "Retain mathematics and biography: life history and mathematical legacy.",
+    "updated_sha256": "4e035bce0f7d3054e92a859da04caab3850c39f096cf769b98165ca7a6ffbfd7"
+  },
+  {
+    "path": "content/post/abel/index.es.md",
+    "removed_self_links": 27,
+    "added_links": [
+      {
+        "term": "Euler",
+        "url": "/es/p/euler/"
+      },
+      {
+        "term": "Lagrange",
+        "url": "/es/p/lagrange/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "categories": "Retain mathematics and biography: life history and mathematical legacy.",
+    "updated_sha256": "b46d096ab1e3b0bfcd7b3a79cf936b6f4c634c7ebef34413a3970657f88a1b01"
+  },
+  {
+    "path": "content/post/abel/index.pt.md",
+    "removed_self_links": 27,
+    "added_links": [
+      {
+        "term": "Euler",
+        "url": "/pt/p/euler/"
+      },
+      {
+        "term": "Lagrange",
+        "url": "/pt/p/lagrange/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "categories": "Retain mathematics and biography: life history and mathematical legacy.",
+    "updated_sha256": "d11073736c6bfa05be6c43afafc777725b6c3d46f6655c76ab3d35773c644ba9"
+  },
+  {
+    "path": "content/post/abel/index.id.md",
+    "removed_self_links": 31,
+    "added_links": [
+      {
+        "term": "Euler",
+        "url": "/id/p/euler/"
+      },
+      {
+        "term": "Lagrange",
+        "url": "/id/p/lagrange/"
+      },
+      {
+        "term": "Jacobi",
+        "url": "/id/p/jacobi/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "categories": "Retain mathematics and biography: life history and mathematical legacy.",
+    "updated_sha256": "ec5094d11770d7b2e013458046bc68c3bae0a5023a6f00884a97aa2783bdedb4"
+  }
+]
