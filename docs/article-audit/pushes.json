@@ -1,0 +1,14 @@
+[
+  {
+    "batch": "001-abel-west",
+    "commit": "aca803d3f5dfc5ed4819f99ea523f46ec13281eb",
+    "remote": "origin/main",
+    "verified_remote_sha": "aca803d3f5dfc5ed4819f99ea523f46ec13281eb",
+    "date_jst": "2026-10-15",
+    "articles": 7,
+    "removed_body_self_links": 206,
+    "added_links": 18,
+    "category_decision": "Retained mathematics/biography after review",
+    "next": "Apply 002-abel-remaining.json; then finish affiliate-marketing-mechanism review (ru/ar/hi bodies remaining; all links pending)."
+  }
+]

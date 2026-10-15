@@ -27,6 +27,6 @@
 初期検証: `python -m unittest discover -s scripts -p test_internal_links.py` は14テスト成功。`PYTHONUTF8=1 python scripts/check_categories.py` は13,263ページ・135カテゴリー・13言語を確認し、既存エラー4,009件（修正前）。この初期チェックポイントは記事変更を含まず、Hugoビルドと表示検証は記事変更バッチで実施する。
 
 Windowsで日本語以外のエラー出力がcp932に変換される問題を避けるため、検証コマンドは `PYTHONUTF8=1` を設定する。今回利用するPythonは `C:/Users/kenjinote/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe`（PyYAML導入済み）。
-最初の修正バッチは `001-abel-west.json`（ja/en/de/fr/es/pt/id）。本文の自己リンク206件を整理し、関連人物への同言語リンク18件を追加。カテゴリー mathematics / biography は本文を確認して維持。見出しのリンク記法を外すとHugoの見出しIDが変わることを表示比較で発見したため、見出しは変更せず既存のフラグメントURLを保護する。最終Hugoビルド成功（545343 ms）、7言語のブラウザー比較・リンク先HTTP 200確認成功。カテゴリー検査は既存4,009件で増加なし。日本語のモバイル画像と図を目視確認済み。公開チェックポイントを作成する。
+最初の修正バッチは `001-abel-west.json`（ja/en/de/fr/es/pt/id）。本文の自己リンク206件を整理し、関連人物への同言語リンク18件を追加。カテゴリー mathematics / biography は本文を確認して維持。見出しのリンク記法を外すとHugoの見出しIDが変わることを表示比較で発見したため、見出しは変更せず既存のフラグメントURLを保護する。最終Hugoビルド成功（545343 ms）、7言語のブラウザー比較・リンク先HTTP 200確認成功。カテゴリー検査は既存4,009件で増加なし。日本語のモバイル画像と図を目視確認済み。`aca803d3f5dfc5ed4819f99ea523f46ec13281eb` を origin/main に通常push済み、リモートSHA一致を確認済み。監査完了は7記事で、全体監査は継続中。
 
 `002-abel-remaining.json` は残る6言語の本文確認済み計画（未適用）。アフィリエイト記事は ja/en/de/fr/es/pt/id/ko/zh-cn/zh-tw の本文・分類候補を確認済み、リンク確認・編集は未着手。未確認の翻訳は台帳で区別する。

@@ -1,4 +1,4 @@
-Start building sites … 
+Start building sites …
 hugo v0.139.0-dacef0df92a9a20072b4eaa42003e1a63ace8f41+extended windows/amd64 BuildDate=2024-11-18T16:17:45Z VendorInfo=gohugoio
 
 WARN  found no layout file for "json" for kind "home": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
@@ -20,14 +20,14 @@ WARN  Failed to get translated string for language "pt" and ID "article.readingT
 WARN  Failed to get translated string for language "pt" and ID "article.tableOfContents": %!s(<nil>)
 WARN  Failed to get translated string for language "pt" and ID "article.relatedContent": %!s(<nil>)
 
-                   |  JA   |  EN  | ZH-CN |  ES  |  KO  |  PT  | ZH-TW |  HI  |  FR  |  DE  |  AR  |  RU  |  ID   
+                   |  JA   |  EN  | ZH-CN |  ES  |  KO  |  PT  | ZH-TW |  HI  |  FR  |  DE  |  AR  |  RU  |  ID
 -------------------+-------+------+-------+------+------+------+-------+------+------+------+------+------+-------
-  Pages            |  3675 | 3505 |  3664 | 3641 | 3686 | 3648 |  3688 | 3726 | 3648 | 3640 | 3728 | 3662 | 3639  
-  Paginator pages  |   306 |  308 |   306 |  304 |  306 |  306 |   308 |  309 |  307 |  304 |  308 |  306 |  305  
-  Non-page files   |  1411 | 1411 |  1411 | 1411 | 1411 | 1411 |  1411 | 1411 | 1411 | 1411 | 1411 | 1411 | 1411  
-  Static files     |    21 |   21 |    21 |   21 |   21 |   21 |    21 |   21 |   21 |   21 |   21 |   21 |   21  
-  Processed images | 75329 |    0 |     0 |    0 |    0 |    0 |     0 |    0 |    0 |    0 |    0 |    0 |    0  
-  Aliases          |  2689 | 2515 |  2704 | 2693 | 2714 | 2697 |  2731 | 2795 | 2699 | 2690 | 2793 | 2705 | 2682  
-  Cleaned          |     0 |    0 |     0 |    0 |    0 |    0 |     0 |    0 |    0 |    0 |    0 |    0 |    0  
+  Pages            |  3675 | 3505 |  3664 | 3641 | 3686 | 3648 |  3688 | 3726 | 3648 | 3640 | 3728 | 3662 | 3639
+  Paginator pages  |   306 |  308 |   306 |  304 |  306 |  306 |   308 |  309 |  307 |  304 |  308 |  306 |  305
+  Non-page files   |  1411 | 1411 |  1411 | 1411 | 1411 | 1411 |  1411 | 1411 | 1411 | 1411 | 1411 | 1411 | 1411
+  Static files     |    21 |   21 |    21 |   21 |   21 |   21 |    21 |   21 |   21 |   21 |   21 |   21 |   21
+  Processed images | 75329 |    0 |     0 |    0 |    0 |    0 |     0 |    0 |    0 |    0 |    0 |    0 |    0
+  Aliases          |  2689 | 2515 |  2704 | 2693 | 2714 | 2697 |  2731 | 2795 | 2699 | 2690 | 2793 | 2705 | 2682
+  Cleaned          |     0 |    0 |     0 |    0 |    0 |    0 |     0 |    0 |    0 |    0 |    0 |    0 |    0
 
 Total in 545343 ms

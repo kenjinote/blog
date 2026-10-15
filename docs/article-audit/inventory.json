@@ -24634,7 +24634,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -24645,7 +24645,9 @@
         "browser": "passed before/after comparison and same-language target HTTP 200",
         "categories": "unchanged; existing full-site 4009 errors, no increase"
       },
-      "batch": "001-abel-west"
+      "batch": "001-abel-west",
+      "commit": "aca803d3f5dfc5ed4819f99ea523f46ec13281eb",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/abel/index.en.md",
@@ -24660,7 +24662,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -24671,7 +24673,9 @@
         "browser": "passed before/after comparison and same-language target HTTP 200",
         "categories": "unchanged; existing full-site 4009 errors, no increase"
       },
-      "batch": "001-abel-west"
+      "batch": "001-abel-west",
+      "commit": "aca803d3f5dfc5ed4819f99ea523f46ec13281eb",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/abel/index.es.md",
@@ -24686,7 +24690,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -24697,7 +24701,9 @@
         "browser": "passed before/after comparison and same-language target HTTP 200",
         "categories": "unchanged; existing full-site 4009 errors, no increase"
       },
-      "batch": "001-abel-west"
+      "batch": "001-abel-west",
+      "commit": "aca803d3f5dfc5ed4819f99ea523f46ec13281eb",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/abel/index.fr.md",
@@ -24712,7 +24718,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -24723,7 +24729,9 @@
         "browser": "passed before/after comparison and same-language target HTTP 200",
         "categories": "unchanged; existing full-site 4009 errors, no increase"
       },
-      "batch": "001-abel-west"
+      "batch": "001-abel-west",
+      "commit": "aca803d3f5dfc5ed4819f99ea523f46ec13281eb",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/abel/index.hi.md",
@@ -24760,7 +24768,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -24771,7 +24779,9 @@
         "browser": "passed before/after comparison and same-language target HTTP 200",
         "categories": "unchanged; existing full-site 4009 errors, no increase"
       },
-      "batch": "001-abel-west"
+      "batch": "001-abel-west",
+      "commit": "aca803d3f5dfc5ed4819f99ea523f46ec13281eb",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/abel/index.ko.md",
@@ -24808,7 +24818,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -24819,7 +24829,9 @@
         "browser": "passed before/after comparison and same-language target HTTP 200",
         "categories": "unchanged; existing full-site 4009 errors, no increase"
       },
-      "batch": "001-abel-west"
+      "batch": "001-abel-west",
+      "commit": "aca803d3f5dfc5ed4819f99ea523f46ec13281eb",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/abel/index.pt.md",
@@ -24834,7 +24846,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -24845,7 +24857,9 @@
         "browser": "passed before/after comparison and same-language target HTTP 200",
         "categories": "unchanged; existing full-site 4009 errors, no increase"
       },
-      "batch": "001-abel-west"
+      "batch": "001-abel-west",
+      "commit": "aca803d3f5dfc5ed4819f99ea523f46ec13281eb",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/abel/index.ru.md",
