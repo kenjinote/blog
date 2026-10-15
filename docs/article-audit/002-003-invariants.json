@@ -1,0 +1,252 @@
+[
+  {
+    "path": "content/post/abel/index.ko.md",
+    "source_passed": true,
+    "headings_unchanged": true,
+    "allowed_category_change": null,
+    "sha256": "f8905644baa80540d794762fa4cba6c50c49f921a7f0b7ecb3c26707c6e15201"
+  },
+  {
+    "path": "content/post/abel/index.zh-cn.md",
+    "source_passed": true,
+    "headings_unchanged": true,
+    "allowed_category_change": null,
+    "sha256": "8452927e1199db6a8a01f02e20238a2eb3e7b338c1f876325f6a84a957919d72"
+  },
+  {
+    "path": "content/post/abel/index.zh-tw.md",
+    "source_passed": true,
+    "headings_unchanged": true,
+    "allowed_category_change": null,
+    "sha256": "9a695a2e6f7c858b05fabdb6da0913595d4d7b06ab00d55a39a6ca83fd7749f0"
+  },
+  {
+    "path": "content/post/abel/index.ru.md",
+    "source_passed": true,
+    "headings_unchanged": true,
+    "allowed_category_change": null,
+    "sha256": "a3b0d2f0f40c47ccc97497ec21a52b87eff45408b178d20a116408fe4341edf9"
+  },
+  {
+    "path": "content/post/abel/index.ar.md",
+    "source_passed": true,
+    "headings_unchanged": true,
+    "allowed_category_change": null,
+    "sha256": "f161ab374b4b24c0c02ac9eeff91694e034c7a3cc7405ea84e4973463b0cbba1"
+  },
+  {
+    "path": "content/post/abel/index.hi.md",
+    "source_passed": true,
+    "headings_unchanged": true,
+    "allowed_category_change": null,
+    "sha256": "1af3957be2b39adba73772924024fb1afd5ccbf24dd3cc99bf2ee316b34adfe7"
+  },
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.md",
+    "source_passed": true,
+    "headings_unchanged": true,
+    "allowed_category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "sha256": "14975b3dc9a2261abb92eed57139bc47769b10a13197b613896bd80de0966200"
+  },
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.en.md",
+    "source_passed": true,
+    "headings_unchanged": true,
+    "allowed_category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "sha256": "5639dcca97642ca38783dfc0bbc57d831c71386e0b160b0eef7f11c4053976a7"
+  },
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.de.md",
+    "source_passed": true,
+    "headings_unchanged": true,
+    "allowed_category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "sha256": "139521e090426df33d59b259dad6989478fec287796cc808aa7bb9c9eab4af5c"
+  },
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.fr.md",
+    "source_passed": true,
+    "headings_unchanged": true,
+    "allowed_category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "sha256": "f3766b87534648b761d86cf1c34910eb0009ff3da112480a47b22298b0720706"
+  },
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.es.md",
+    "source_passed": true,
+    "headings_unchanged": true,
+    "allowed_category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "sha256": "587c6b766fd1edd59d1f03da5b86992a71396d5e933e870ff02c3ad0ad569c0f"
+  },
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.pt.md",
+    "source_passed": true,
+    "headings_unchanged": true,
+    "allowed_category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "sha256": "d37a4d0990d858f07b7a5d193e1e03fee463aafbb50c52b6e26a23e51563de34"
+  },
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.id.md",
+    "source_passed": true,
+    "headings_unchanged": true,
+    "allowed_category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "sha256": "929668a96cd6d345b34f025ca5873d8e42c93350c5391fbc5e6af2ef15abc969"
+  },
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.ko.md",
+    "source_passed": true,
+    "headings_unchanged": true,
+    "allowed_category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "sha256": "e9d9f3672c97defcd53e824ae825b26ef88373378a28279c5a0784edbcb2cbd7"
+  },
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.zh-cn.md",
+    "source_passed": true,
+    "headings_unchanged": true,
+    "allowed_category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "sha256": "2de9b6b5b8416862849ec32a46f43479a7be63466513c1d2278cf937a111981f"
+  },
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.zh-tw.md",
+    "source_passed": true,
+    "headings_unchanged": true,
+    "allowed_category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "sha256": "a4ddd48883706c665f9941a624a3a6d2079765485c3a40cbb40275d398c642a9"
+  },
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.ru.md",
+    "source_passed": true,
+    "headings_unchanged": true,
+    "allowed_category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "sha256": "f80aef9d0d0450885bfffa9b476e8b60927c9df47b89ecbe802ae46c9561a56b"
+  },
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.ar.md",
+    "source_passed": true,
+    "headings_unchanged": true,
+    "allowed_category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "sha256": "04dbdee0c847ff8fe99e37537f3f240eb75f9b75cd23f2dd006d40fd8eba12ec"
+  },
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.hi.md",
+    "source_passed": true,
+    "headings_unchanged": true,
+    "allowed_category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "sha256": "2aadf0988bf4433c551c4b991200146c5997376f735aa14da9e2a4b324f101c2"
+  }
+]

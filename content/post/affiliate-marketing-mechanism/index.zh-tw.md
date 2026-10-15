@@ -2,7 +2,7 @@
 title: "聯盟行銷的機制：追蹤與轉換的技術內幕"
 description: "從 Cookie 到 Postback (回傳)。成效計費型廣告的系統架構。"
 slug: "affiliate-marketing-mechanism"
-categories: ["business", "web-marketing"]
+categories: ["business", "marketing"]
 tags: ["tech", "business", "affiliate", "marketing"]
 image: "eyecatch.jpg"
 date: 2026-10-01T21:58:09+09:00
@@ -53,7 +53,7 @@ ASP 發揮著巨大數據基底的功能，即時處理龐大的流量，並以�
 1. **點擊記錄**：ASP 的伺服器會將前來存取的使用者 IP 位址、User-Agent、時間戳記，以及網址中包含的聯盟行銷 ID (`aff_id`) 和活動 ID (`campaign_id`) 記錄到資料庫中。
 2. **生成 Click ID**：系統會生成一個用來唯一識別此次點擊事件的「點擊 ID（Click ID）」。
 3. **賦予 Cookie**：ASP 會對使用者的瀏覽器發行自家網域（第三方）的 Cookie，並將 Click ID 儲存其中。
-4. **重新導向**：在處理完成的同時，回傳 HTTP 302（Found）或 301（Moved Permanently）回應，將使用者重新導向至廣告主的登陸頁面（Landing Page, LP）。此時，也可能將 Click ID 作為網址參數附加在後。
+4. **重新導向**：在處理完成的同時，回傳 [HTTP 302](/zh-tw/p/history-of-http/)（Found）或 301（Moved Permanently）回應，將使用者重新導向至廣告主的登陸頁面（Landing Page, LP）。此時，也可能將 Click ID 作為網址參數附加在後。
 
 ### 2.2. Cookie 與 LocalStorage 的作用
 
@@ -72,7 +72,7 @@ ASP 發揮著巨大數據基底的功能，即時處理龐大的流量，並以�
 
 雖然客戶端追蹤的實作相對容易，但也存在一個重大問題，那就是「利用第三方 Cookie 過度追蹤使用者」。
 
-因為在使用者不知情的情況下橫跨多個網站收集其行為記錄，引發了強烈的隱私疑慮。以 Apple 的 Safari 瀏覽器所搭載的 **ITP（Intelligent Tracking Prevention，智慧防追蹤）**為首，各瀏覽器供應商開始導入強力的追蹤限制。
+因為在使用者不知情的情況下橫跨多個網站收集其行為記錄，引發了強烈的[隱私疑慮](/zh-tw/p/privacy-vs-convenience-big-data/)。以 Apple 的 Safari 瀏覽器所搭載的 **ITP（Intelligent Tracking Prevention，智慧防追蹤）**為首，各瀏覽器供應商開始導入強力的追蹤限制。
 
 ### ITP 對聯盟行銷造成的影響
 

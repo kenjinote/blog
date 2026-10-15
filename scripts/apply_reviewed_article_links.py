@@ -69,14 +69,33 @@ def main():
                 raise ValueError(f'Expected one safe occurrence: {path}: {addition["term"]}: {count}')
             updated = candidate
             added.append({'term': addition['term'], 'url': destination})
+        comparison_source = source
+        if 'categories' in item:
+            before, after = item['categories']['before'], item['categories']['after']
+            if len(after) != len(set(after)) or not after:
+                raise ValueError('Invalid category list')
+            for category in after:
+                if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', category):
+                    raise ValueError('Invalid category identifier')
+                filename = '_index.md' if language(path) == 'ja' else f'_index.{language(path)}.md'
+                if not (ROOT / 'content/categories' / category / filename).is_file():
+                    raise ValueError(f'Missing localized category: {category}')
+            old_field = 'categories: ' + json.dumps(before, ensure_ascii=False)
+            new_field = 'categories: ' + json.dumps(after, ensure_ascii=False)
+            fm = protected_material(source)[0]
+            if fm.count(old_field) != 1:
+                raise ValueError('Category field does not match reviewed plan')
+            updated = updated.replace(old_field, new_field, 1)
+            comparison_source = source.replace(old_field, new_field, 1)
         strip = lambda value: SIMPLE_LINK.sub(lambda m: m[1], value)
-        if strip(source) != strip(updated) or protected_material(source) != protected_material(updated):
+        if strip(comparison_source) != strip(updated) or protected_material(comparison_source) != protected_material(updated):
             raise ValueError(f'Non-link content changed: {path}')
         if '\r\n' in source and updated.count('\r\n') != source.count('\r\n'):
             raise ValueError('Line ending change')
         changes.append((path, raw, updated.encode('utf-8')))
         report.append({'path': item['path'], 'removed_self_links': removed, 'added_links': added,
                        'protected_content_unchanged': True, 'visible_source_unchanged': True,
+                       'category_change': item.get('categories'),
                        'categories': item['category_decision'],
                        'updated_sha256': hashlib.sha256(updated.encode('utf-8')).hexdigest()})
     if args.write:

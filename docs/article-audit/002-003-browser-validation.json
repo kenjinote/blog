@@ -1,0 +1,4443 @@
+[
+  {
+    "bundle": "abel",
+    "lang": "ko",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "1-서론-요절한-천재-아벨",
+          "text": "1. 서론: 요절한 천재 아벨"
+        },
+        {
+          "id": "2-아벨의-생애-빈곤과-재능의-만개",
+          "text": "2. 아벨의 생애: 빈곤과 재능의 만개"
+        },
+        {
+          "id": "21-유년기와-은사-홀름보에와의-만남",
+          "text": "2.1 유년기와 은사 홀름보에와의 만남"
+        },
+        {
+          "id": "22-아버지의-죽음과-짊어진-중압감",
+          "text": "2.2 아버지의 죽음과 짊어진 중압감"
+        },
+        {
+          "id": "3-5차-방정식의-근의-공식의-불가능성",
+          "text": "3. 5차 방정식의 근의 공식의 불가능성"
+        },
+        {
+          "id": "4-유럽-여행과-크렐레와의-만남",
+          "text": "4. 유럽 여행과 크렐레와의 만남"
+        },
+        {
+          "id": "5-파리에서의-좌절과-코시의-태만",
+          "text": "5. 파리에서의 좌절과 코시의 태만"
+        },
+        {
+          "id": "6-귀국과-비극적인-최후",
+          "text": "6. 귀국과 비극적인 최후"
+        },
+        {
+          "id": "7-아벨의-수학적-유산",
+          "text": "7. 아벨의 수학적 유산"
+        },
+        {
+          "id": "71-아벨-군-abelhttpskenjiblogkopabelian-group",
+          "text": "7.1 아벨 군 (Abelian Group)"
+        },
+        {
+          "id": "72-아벨-적분과-아벨-함수",
+          "text": "7.2 아벨 적분과 아벨 함수"
+        },
+        {
+          "id": "73-아벨의-연속성-정리-abelhttpskenjiblogkopabels-limit-theorem",
+          "text": "7.3 아벨의 연속성 정리 (Abel’s limit theorem)"
+        },
+        {
+          "id": "8-결론",
+          "text": "8. 결론"
+        }
+      ],
+      "category": "수학\n전기",
+      "categories": [
+        {
+          "text": "수학",
+          "path": "/ko/categories/mathematics/"
+        },
+        {
+          "text": "전기",
+          "path": "/ko/categories/biography/"
+        }
+      ],
+      "math": 6,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/ko/p/abel/",
+        "/ko/p/abel/",
+        "/ko/p/abel/",
+        "/ko/p/abel/",
+        "/ko/p/abel/",
+        "/ko/p/cauchy/",
+        "/ko/p/cauchy/",
+        "/ko/p/abel/",
+        "/ko/p/abel/",
+        "/ko/p/abel/",
+        "/ko/p/abel/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "1-서론-요절한-천재-아벨",
+          "text": "1. 서론: 요절한 천재 아벨"
+        },
+        {
+          "id": "2-아벨의-생애-빈곤과-재능의-만개",
+          "text": "2. 아벨의 생애: 빈곤과 재능의 만개"
+        },
+        {
+          "id": "21-유년기와-은사-홀름보에와의-만남",
+          "text": "2.1 유년기와 은사 홀름보에와의 만남"
+        },
+        {
+          "id": "22-아버지의-죽음과-짊어진-중압감",
+          "text": "2.2 아버지의 죽음과 짊어진 중압감"
+        },
+        {
+          "id": "3-5차-방정식의-근의-공식의-불가능성",
+          "text": "3. 5차 방정식의 근의 공식의 불가능성"
+        },
+        {
+          "id": "4-유럽-여행과-크렐레와의-만남",
+          "text": "4. 유럽 여행과 크렐레와의 만남"
+        },
+        {
+          "id": "5-파리에서의-좌절과-코시의-태만",
+          "text": "5. 파리에서의 좌절과 코시의 태만"
+        },
+        {
+          "id": "6-귀국과-비극적인-최후",
+          "text": "6. 귀국과 비극적인 최후"
+        },
+        {
+          "id": "7-아벨의-수학적-유산",
+          "text": "7. 아벨의 수학적 유산"
+        },
+        {
+          "id": "71-아벨-군-abelhttpskenjiblogkopabelian-group",
+          "text": "7.1 아벨 군 (Abelian Group)"
+        },
+        {
+          "id": "72-아벨-적분과-아벨-함수",
+          "text": "7.2 아벨 적분과 아벨 함수"
+        },
+        {
+          "id": "73-아벨의-연속성-정리-abelhttpskenjiblogkopabels-limit-theorem",
+          "text": "7.3 아벨의 연속성 정리 (Abel’s limit theorem)"
+        },
+        {
+          "id": "8-결론",
+          "text": "8. 결론"
+        }
+      ],
+      "category": "수학\n전기",
+      "categories": [
+        {
+          "text": "수학",
+          "path": "/ko/categories/mathematics/"
+        },
+        {
+          "text": "전기",
+          "path": "/ko/categories/biography/"
+        }
+      ],
+      "math": 6,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/ko/p/galois/",
+        "/ko/p/euler/",
+        "/ko/p/lagrange/",
+        "/ko/p/gauss/",
+        "/ko/p/cauchy/",
+        "/ko/p/cauchy/",
+        "/ko/p/jacobi/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "bundle": "abel",
+    "lang": "zh-cn",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "1-引言英年早逝的天才阿贝尔",
+          "text": "1. 引言：英年早逝的天才阿贝尔"
+        },
+        {
+          "id": "2-阿贝尔的生平贫困与才华的绽放",
+          "text": "2. 阿贝尔的生平：贫困与才华的绽放"
+        },
+        {
+          "id": "21-童年与恩师霍尔姆博的相遇",
+          "text": "2.1 童年与恩师霍尔姆博的相遇"
+        },
+        {
+          "id": "22-父亲的去世与沉重的负担",
+          "text": "2.2 父亲的去世与沉重的负担"
+        },
+        {
+          "id": "3-五次方程求根公式的不可解性",
+          "text": "3. 五次方程求根公式的不可解性"
+        },
+        {
+          "id": "4-欧洲之行与克雷尔的相遇",
+          "text": "4. 欧洲之行与克雷尔的相遇"
+        },
+        {
+          "id": "5-在巴黎的挫折与柯西的怠慢",
+          "text": "5. 在巴黎的挫折与柯西的怠慢"
+        },
+        {
+          "id": "6-回国与悲剧的结局",
+          "text": "6. 回国与悲剧的结局"
+        },
+        {
+          "id": "7-阿贝尔的数学遗产",
+          "text": "7. 阿贝尔的数学遗产"
+        },
+        {
+          "id": "71-阿贝尔群-abelhttpskenjiblogzh-cnpabelian-group",
+          "text": "7.1 阿贝尔群 (Abelian Group)"
+        },
+        {
+          "id": "72-阿贝尔积分与阿贝尔函数",
+          "text": "7.2 阿贝尔积分与阿贝尔函数"
+        },
+        {
+          "id": "73-阿贝尔极限定理-abelhttpskenjiblogzh-cnpabels-limit-theorem",
+          "text": "7.3 阿贝尔极限定理 (Abel’s limit theorem)"
+        },
+        {
+          "id": "8-结语",
+          "text": "8. 结语"
+        }
+      ],
+      "category": "数学\n传记",
+      "categories": [
+        {
+          "text": "数学",
+          "path": "/zh-cn/categories/mathematics/"
+        },
+        {
+          "text": "传记",
+          "path": "/zh-cn/categories/biography/"
+        }
+      ],
+      "math": 6,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/zh-cn/p/abel/",
+        "/zh-cn/p/galois/",
+        "/zh-cn/p/abel/",
+        "/zh-cn/p/abel/",
+        "/zh-cn/p/gauss/",
+        "/zh-cn/p/abel/",
+        "/zh-cn/p/cauchy/",
+        "/zh-cn/p/cauchy/",
+        "/zh-cn/p/abel/",
+        "/zh-cn/p/abel/",
+        "/zh-cn/p/abel/",
+        "/zh-cn/p/abel/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "1-引言英年早逝的天才阿贝尔",
+          "text": "1. 引言：英年早逝的天才阿贝尔"
+        },
+        {
+          "id": "2-阿贝尔的生平贫困与才华的绽放",
+          "text": "2. 阿贝尔的生平：贫困与才华的绽放"
+        },
+        {
+          "id": "21-童年与恩师霍尔姆博的相遇",
+          "text": "2.1 童年与恩师霍尔姆博的相遇"
+        },
+        {
+          "id": "22-父亲的去世与沉重的负担",
+          "text": "2.2 父亲的去世与沉重的负担"
+        },
+        {
+          "id": "3-五次方程求根公式的不可解性",
+          "text": "3. 五次方程求根公式的不可解性"
+        },
+        {
+          "id": "4-欧洲之行与克雷尔的相遇",
+          "text": "4. 欧洲之行与克雷尔的相遇"
+        },
+        {
+          "id": "5-在巴黎的挫折与柯西的怠慢",
+          "text": "5. 在巴黎的挫折与柯西的怠慢"
+        },
+        {
+          "id": "6-回国与悲剧的结局",
+          "text": "6. 回国与悲剧的结局"
+        },
+        {
+          "id": "7-阿贝尔的数学遗产",
+          "text": "7. 阿贝尔的数学遗产"
+        },
+        {
+          "id": "71-阿贝尔群-abelhttpskenjiblogzh-cnpabelian-group",
+          "text": "7.1 阿贝尔群 (Abelian Group)"
+        },
+        {
+          "id": "72-阿贝尔积分与阿贝尔函数",
+          "text": "7.2 阿贝尔积分与阿贝尔函数"
+        },
+        {
+          "id": "73-阿贝尔极限定理-abelhttpskenjiblogzh-cnpabels-limit-theorem",
+          "text": "7.3 阿贝尔极限定理 (Abel’s limit theorem)"
+        },
+        {
+          "id": "8-结语",
+          "text": "8. 结语"
+        }
+      ],
+      "category": "数学\n传记",
+      "categories": [
+        {
+          "text": "数学",
+          "path": "/zh-cn/categories/mathematics/"
+        },
+        {
+          "text": "传记",
+          "path": "/zh-cn/categories/biography/"
+        }
+      ],
+      "math": 6,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/zh-cn/p/galois/",
+        "/zh-cn/p/euler/",
+        "/zh-cn/p/lagrange/",
+        "/zh-cn/p/gauss/",
+        "/zh-cn/p/cauchy/",
+        "/zh-cn/p/cauchy/",
+        "/zh-cn/p/jacobi/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "bundle": "abel",
+    "lang": "zh-tw",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "1-引言英年早逝的天才阿貝爾",
+          "text": "1. 引言：英年早逝的天才阿貝爾"
+        },
+        {
+          "id": "2-阿貝爾的生平貧困與才華的綻放",
+          "text": "2. 阿貝爾的生平：貧困與才華的綻放"
+        },
+        {
+          "id": "21-童年與恩師霍爾姆博的相遇",
+          "text": "2.1 童年與恩師霍爾姆博的相遇"
+        },
+        {
+          "id": "22-父親的去世與沉重的負擔",
+          "text": "2.2 父親的去世與沉重的負擔"
+        },
+        {
+          "id": "3-五次方程求根公式的不可解性",
+          "text": "3. 五次方程求根公式的不可解性"
+        },
+        {
+          "id": "4-歐洲之行與克雷爾的相遇",
+          "text": "4. 歐洲之行與克雷爾的相遇"
+        },
+        {
+          "id": "5-在巴黎的挫折與柯西的怠慢",
+          "text": "5. 在巴黎的挫折與柯西的怠慢"
+        },
+        {
+          "id": "6-回國與悲劇的結局",
+          "text": "6. 回國與悲劇的結局"
+        },
+        {
+          "id": "7-阿貝爾的數學遺產",
+          "text": "7. 阿貝爾的數學遺產"
+        },
+        {
+          "id": "71-阿貝爾群-abelhttpskenjiblogzh-twpabelian-group",
+          "text": "7.1 阿貝爾群 (Abelian Group)"
+        },
+        {
+          "id": "72-阿貝爾積分與阿貝爾函數",
+          "text": "7.2 阿貝爾積分與阿貝爾函數"
+        },
+        {
+          "id": "73-阿貝爾極限定理-abelhttpskenjiblogzh-twpabels-limit-theorem",
+          "text": "7.3 阿貝爾極限定理 (Abel’s limit theorem)"
+        },
+        {
+          "id": "8-結語",
+          "text": "8. 結語"
+        }
+      ],
+      "category": "數學\n傳記",
+      "categories": [
+        {
+          "text": "數學",
+          "path": "/zh-tw/categories/mathematics/"
+        },
+        {
+          "text": "傳記",
+          "path": "/zh-tw/categories/biography/"
+        }
+      ],
+      "math": 6,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/zh-tw/p/abel/",
+        "/zh-tw/p/galois/",
+        "/zh-tw/p/abel/",
+        "/zh-tw/p/abel/",
+        "/zh-tw/p/gauss/",
+        "/zh-tw/p/abel/",
+        "/zh-tw/p/cauchy/",
+        "/zh-tw/p/cauchy/",
+        "/zh-tw/p/abel/",
+        "/zh-tw/p/abel/",
+        "/zh-tw/p/abel/",
+        "/zh-tw/p/abel/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "1-引言英年早逝的天才阿貝爾",
+          "text": "1. 引言：英年早逝的天才阿貝爾"
+        },
+        {
+          "id": "2-阿貝爾的生平貧困與才華的綻放",
+          "text": "2. 阿貝爾的生平：貧困與才華的綻放"
+        },
+        {
+          "id": "21-童年與恩師霍爾姆博的相遇",
+          "text": "2.1 童年與恩師霍爾姆博的相遇"
+        },
+        {
+          "id": "22-父親的去世與沉重的負擔",
+          "text": "2.2 父親的去世與沉重的負擔"
+        },
+        {
+          "id": "3-五次方程求根公式的不可解性",
+          "text": "3. 五次方程求根公式的不可解性"
+        },
+        {
+          "id": "4-歐洲之行與克雷爾的相遇",
+          "text": "4. 歐洲之行與克雷爾的相遇"
+        },
+        {
+          "id": "5-在巴黎的挫折與柯西的怠慢",
+          "text": "5. 在巴黎的挫折與柯西的怠慢"
+        },
+        {
+          "id": "6-回國與悲劇的結局",
+          "text": "6. 回國與悲劇的結局"
+        },
+        {
+          "id": "7-阿貝爾的數學遺產",
+          "text": "7. 阿貝爾的數學遺產"
+        },
+        {
+          "id": "71-阿貝爾群-abelhttpskenjiblogzh-twpabelian-group",
+          "text": "7.1 阿貝爾群 (Abelian Group)"
+        },
+        {
+          "id": "72-阿貝爾積分與阿貝爾函數",
+          "text": "7.2 阿貝爾積分與阿貝爾函數"
+        },
+        {
+          "id": "73-阿貝爾極限定理-abelhttpskenjiblogzh-twpabels-limit-theorem",
+          "text": "7.3 阿貝爾極限定理 (Abel’s limit theorem)"
+        },
+        {
+          "id": "8-結語",
+          "text": "8. 結語"
+        }
+      ],
+      "category": "數學\n傳記",
+      "categories": [
+        {
+          "text": "數學",
+          "path": "/zh-tw/categories/mathematics/"
+        },
+        {
+          "text": "傳記",
+          "path": "/zh-tw/categories/biography/"
+        }
+      ],
+      "math": 6,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/zh-tw/p/galois/",
+        "/zh-tw/p/euler/",
+        "/zh-tw/p/lagrange/",
+        "/zh-tw/p/gauss/",
+        "/zh-tw/p/cauchy/",
+        "/zh-tw/p/cauchy/",
+        "/zh-tw/p/jacobi/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "bundle": "abel",
+    "lang": "ru",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "1-введение-молодой-гений-абель",
+          "text": "1. Введение: Молодой гений Абель"
+        },
+        {
+          "id": "2-жизнь-абеля-бедность-и-расцвет-таланта",
+          "text": "2. Жизнь Абеля: Бедность и расцвет таланта"
+        },
+        {
+          "id": "21-раннее-детство-и-встреча-со-своим-наставником-хольмбоэ",
+          "text": "2.1 Раннее детство и встреча со своим наставником Хольмбоэ"
+        },
+        {
+          "id": "22-смерть-отца-и-тяжелое-бремя",
+          "text": "2.2 Смерть отца и тяжелое бремя"
+        },
+        {
+          "id": "3-невозможность-формулы-для-уравнения-пятой-степени",
+          "text": "3. Невозможность формулы для уравнения пятой степени"
+        },
+        {
+          "id": "4-путешествие-в-европу-и-встреча-с-крелле",
+          "text": "4. Путешествие в Европу и встреча с Крелле"
+        },
+        {
+          "id": "5-неудача-в-париже-и-пренебрежение-коши",
+          "text": "5. Неудача в Париже и пренебрежение Коши"
+        },
+        {
+          "id": "6-возвращение-домой-и-трагический-конец",
+          "text": "6. Возвращение домой и трагический конец"
+        },
+        {
+          "id": "7-математическое-наследие-абеля",
+          "text": "7. Математическое наследие Абеля"
+        },
+        {
+          "id": "71-абелева-группа",
+          "text": "7.1 Абелева группа"
+        },
+        {
+          "id": "72-абелевы-интегралы-и-абелевы-функции",
+          "text": "7.2 Абелевы интегралы и абелевы функции"
+        },
+        {
+          "id": "73-теорема-абеля",
+          "text": "7.3 Теорема Абеля"
+        },
+        {
+          "id": "8-заключение",
+          "text": "8. Заключение"
+        }
+      ],
+      "category": "Математика\nБиография",
+      "categories": [
+        {
+          "text": "Математика",
+          "path": "/ru/categories/mathematics/"
+        },
+        {
+          "text": "Биография",
+          "path": "/ru/categories/biography/"
+        }
+      ],
+      "math": 7,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/ru/p/abel/",
+        "/ru/p/abel/",
+        "/ru/p/abel/",
+        "/ru/p/gauss/",
+        "/ru/p/cauchy/",
+        "/ru/p/cauchy/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "1-введение-молодой-гений-абель",
+          "text": "1. Введение: Молодой гений Абель"
+        },
+        {
+          "id": "2-жизнь-абеля-бедность-и-расцвет-таланта",
+          "text": "2. Жизнь Абеля: Бедность и расцвет таланта"
+        },
+        {
+          "id": "21-раннее-детство-и-встреча-со-своим-наставником-хольмбоэ",
+          "text": "2.1 Раннее детство и встреча со своим наставником Хольмбоэ"
+        },
+        {
+          "id": "22-смерть-отца-и-тяжелое-бремя",
+          "text": "2.2 Смерть отца и тяжелое бремя"
+        },
+        {
+          "id": "3-невозможность-формулы-для-уравнения-пятой-степени",
+          "text": "3. Невозможность формулы для уравнения пятой степени"
+        },
+        {
+          "id": "4-путешествие-в-европу-и-встреча-с-крелле",
+          "text": "4. Путешествие в Европу и встреча с Крелле"
+        },
+        {
+          "id": "5-неудача-в-париже-и-пренебрежение-коши",
+          "text": "5. Неудача в Париже и пренебрежение Коши"
+        },
+        {
+          "id": "6-возвращение-домой-и-трагический-конец",
+          "text": "6. Возвращение домой и трагический конец"
+        },
+        {
+          "id": "7-математическое-наследие-абеля",
+          "text": "7. Математическое наследие Абеля"
+        },
+        {
+          "id": "71-абелева-группа",
+          "text": "7.1 Абелева группа"
+        },
+        {
+          "id": "72-абелевы-интегралы-и-абелевы-функции",
+          "text": "7.2 Абелевы интегралы и абелевы функции"
+        },
+        {
+          "id": "73-теорема-абеля",
+          "text": "7.3 Теорема Абеля"
+        },
+        {
+          "id": "8-заключение",
+          "text": "8. Заключение"
+        }
+      ],
+      "category": "Математика\nБиография",
+      "categories": [
+        {
+          "text": "Математика",
+          "path": "/ru/categories/mathematics/"
+        },
+        {
+          "text": "Биография",
+          "path": "/ru/categories/biography/"
+        }
+      ],
+      "math": 7,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/ru/p/galois/",
+        "/ru/p/euler/",
+        "/ru/p/lagrange/",
+        "/ru/p/gauss/",
+        "/ru/p/cauchy/",
+        "/ru/p/cauchy/",
+        "/ru/p/jacobi/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "bundle": "abel",
+    "lang": "ar",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "1-مقدمة-العبقري-الشاب-أبيل",
+          "text": "1. مقدمة: العبقري الشاب أبيل"
+        },
+        {
+          "id": "2-حياة-أبيل-الفقر-وازدهار-الموهبة",
+          "text": "2. حياة أبيل: الفقر وازدهار الموهبة"
+        },
+        {
+          "id": "21-طفولته-المبكرة-ولقاء-معلمه-هولمبوي",
+          "text": "2.1 طفولته المبكرة ولقاء معلمه هولمبوي"
+        },
+        {
+          "id": "22-وفاة-والده-وعبء-ثقيل",
+          "text": "2.2 وفاة والده وعبء ثقيل"
+        },
+        {
+          "id": "3-استحالة-صيغة-معادلة-الدرجة-الخامسة",
+          "text": "3. استحالة صيغة معادلة الدرجة الخامسة"
+        },
+        {
+          "id": "4-رحلة-إلى-أوروبا-ولقاء-كريل",
+          "text": "4. رحلة إلى أوروبا ولقاء كريل"
+        },
+        {
+          "id": "5-الانتكاسة-في-باريس-وإهمال-كوشي",
+          "text": "5. الانتكاسة في باريس وإهمال كوشي"
+        },
+        {
+          "id": "6-العودة-إلى-الوطن-ونهاية-مأساوية",
+          "text": "6. العودة إلى الوطن ونهاية مأساوية"
+        },
+        {
+          "id": "7-إرث-أبيل-الرياضي",
+          "text": "7. إرث أبيل الرياضي"
+        },
+        {
+          "id": "71-الزمرة-الأبيلية",
+          "text": "7.1 الزمرة الأبيلية"
+        },
+        {
+          "id": "72-التكاملات-الأبيلية-والدوال-الأبيلية",
+          "text": "7.2 التكاملات الأبيلية والدوال الأبيلية"
+        },
+        {
+          "id": "73-مبرهنة-حد-أبيل",
+          "text": "7.3 مبرهنة حد أبيل"
+        },
+        {
+          "id": "8-الخاتمة",
+          "text": "8. الخاتمة"
+        }
+      ],
+      "category": "رياضيات\nسيرة شخصية",
+      "categories": [
+        {
+          "text": "رياضيات",
+          "path": "/ar/categories/mathematics/"
+        },
+        {
+          "text": "سيرة شخصية",
+          "path": "/ar/categories/biography/"
+        }
+      ],
+      "math": 7,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/ar/p/abel/",
+        "/ar/p/galois/",
+        "/ar/p/abel/",
+        "/ar/p/cauchy/",
+        "/ar/p/abel/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "1-مقدمة-العبقري-الشاب-أبيل",
+          "text": "1. مقدمة: العبقري الشاب أبيل"
+        },
+        {
+          "id": "2-حياة-أبيل-الفقر-وازدهار-الموهبة",
+          "text": "2. حياة أبيل: الفقر وازدهار الموهبة"
+        },
+        {
+          "id": "21-طفولته-المبكرة-ولقاء-معلمه-هولمبوي",
+          "text": "2.1 طفولته المبكرة ولقاء معلمه هولمبوي"
+        },
+        {
+          "id": "22-وفاة-والده-وعبء-ثقيل",
+          "text": "2.2 وفاة والده وعبء ثقيل"
+        },
+        {
+          "id": "3-استحالة-صيغة-معادلة-الدرجة-الخامسة",
+          "text": "3. استحالة صيغة معادلة الدرجة الخامسة"
+        },
+        {
+          "id": "4-رحلة-إلى-أوروبا-ولقاء-كريل",
+          "text": "4. رحلة إلى أوروبا ولقاء كريل"
+        },
+        {
+          "id": "5-الانتكاسة-في-باريس-وإهمال-كوشي",
+          "text": "5. الانتكاسة في باريس وإهمال كوشي"
+        },
+        {
+          "id": "6-العودة-إلى-الوطن-ونهاية-مأساوية",
+          "text": "6. العودة إلى الوطن ونهاية مأساوية"
+        },
+        {
+          "id": "7-إرث-أبيل-الرياضي",
+          "text": "7. إرث أبيل الرياضي"
+        },
+        {
+          "id": "71-الزمرة-الأبيلية",
+          "text": "7.1 الزمرة الأبيلية"
+        },
+        {
+          "id": "72-التكاملات-الأبيلية-والدوال-الأبيلية",
+          "text": "7.2 التكاملات الأبيلية والدوال الأبيلية"
+        },
+        {
+          "id": "73-مبرهنة-حد-أبيل",
+          "text": "7.3 مبرهنة حد أبيل"
+        },
+        {
+          "id": "8-الخاتمة",
+          "text": "8. الخاتمة"
+        }
+      ],
+      "category": "رياضيات\nسيرة شخصية",
+      "categories": [
+        {
+          "text": "رياضيات",
+          "path": "/ar/categories/mathematics/"
+        },
+        {
+          "text": "سيرة شخصية",
+          "path": "/ar/categories/biography/"
+        }
+      ],
+      "math": 7,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/ar/p/galois/",
+        "/ar/p/euler/",
+        "/ar/p/lagrange/",
+        "/ar/p/gauss/",
+        "/ar/p/cauchy/",
+        "/ar/p/jacobi/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "bundle": "abel",
+    "lang": "hi",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "1-परचय-यव-परतभशल-एबल",
+          "text": "1. परिचय: युवा प्रतिभाशाली एबेल"
+        },
+        {
+          "id": "2-एबल-क-जवन-गरब-और-परतभ-क-खलन",
+          "text": "2. एबेल का जीवन: गरीबी और प्रतिभा का खिलना"
+        },
+        {
+          "id": "21-पररभक-बचपन-और-अपन-गर-हलमब-स-मलकत",
+          "text": "2.1 प्रारंभिक बचपन और अपने गुरु होल्म्बो से मुलाकात"
+        },
+        {
+          "id": "22-उनक-पत-क-मतय-और-एक-भर-बझ",
+          "text": "2.2 उनके पिता की मृत्यु और एक भारी बोझ"
+        },
+        {
+          "id": "3-पचव-घत-क-समकरण-क-सतर-क-असभवत",
+          "text": "3. पांचवीं घात के समीकरण के सूत्र की असंभवता"
+        },
+        {
+          "id": "4-यरप-क-यतर-और-करल-स-मलकत",
+          "text": "4. यूरोप की यात्रा और क्रेले से मुलाकात"
+        },
+        {
+          "id": "5-परस-म-झटक-और-कच-क-लपरवह",
+          "text": "5. पेरिस में झटका और कॉची की लापरवाही"
+        },
+        {
+          "id": "6-घर-वपस-और-दखद-अत",
+          "text": "6. घर वापसी और दुखद अंत"
+        },
+        {
+          "id": "7-एबल-क-गणतय-वरसत",
+          "text": "7. एबेल की गणितीय विरासत"
+        },
+        {
+          "id": "71-एबलयन-समह-abelhttpskenjibloghipabelian-group",
+          "text": "7.1 एबेलियन समूह (Abelian Group)"
+        },
+        {
+          "id": "72-एबलयन-इटगरलस-और-एबलयन-फकशस",
+          "text": "7.2 एबेलियन इंटीग्रल्स और एबेलियन फ़ंक्शंस"
+        },
+        {
+          "id": "73-एबल-क-सम-परमय-abelhttpskenjibloghipabels-limit-theorem",
+          "text": "7.3 एबेल का सीमा प्रमेय (Abel’s limit theorem)"
+        },
+        {
+          "id": "8-नषकरष",
+          "text": "8. निष्कर्ष"
+        }
+      ],
+      "category": "गणित\nजीवनी",
+      "categories": [
+        {
+          "text": "गणित",
+          "path": "/hi/categories/mathematics/"
+        },
+        {
+          "text": "जीवनी",
+          "path": "/hi/categories/biography/"
+        }
+      ],
+      "math": 7,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/hi/p/abel/",
+        "/hi/p/abel/",
+        "/hi/p/abel/",
+        "/hi/p/abel/",
+        "/hi/p/gauss/",
+        "/hi/p/abel/",
+        "/hi/p/cauchy/",
+        "/hi/p/abel/",
+        "/hi/p/abel/",
+        "/hi/p/abel/",
+        "/hi/p/abel/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "1-परचय-यव-परतभशल-एबल",
+          "text": "1. परिचय: युवा प्रतिभाशाली एबेल"
+        },
+        {
+          "id": "2-एबल-क-जवन-गरब-और-परतभ-क-खलन",
+          "text": "2. एबेल का जीवन: गरीबी और प्रतिभा का खिलना"
+        },
+        {
+          "id": "21-पररभक-बचपन-और-अपन-गर-हलमब-स-मलकत",
+          "text": "2.1 प्रारंभिक बचपन और अपने गुरु होल्म्बो से मुलाकात"
+        },
+        {
+          "id": "22-उनक-पत-क-मतय-और-एक-भर-बझ",
+          "text": "2.2 उनके पिता की मृत्यु और एक भारी बोझ"
+        },
+        {
+          "id": "3-पचव-घत-क-समकरण-क-सतर-क-असभवत",
+          "text": "3. पांचवीं घात के समीकरण के सूत्र की असंभवता"
+        },
+        {
+          "id": "4-यरप-क-यतर-और-करल-स-मलकत",
+          "text": "4. यूरोप की यात्रा और क्रेले से मुलाकात"
+        },
+        {
+          "id": "5-परस-म-झटक-और-कच-क-लपरवह",
+          "text": "5. पेरिस में झटका और कॉची की लापरवाही"
+        },
+        {
+          "id": "6-घर-वपस-और-दखद-अत",
+          "text": "6. घर वापसी और दुखद अंत"
+        },
+        {
+          "id": "7-एबल-क-गणतय-वरसत",
+          "text": "7. एबेल की गणितीय विरासत"
+        },
+        {
+          "id": "71-एबलयन-समह-abelhttpskenjibloghipabelian-group",
+          "text": "7.1 एबेलियन समूह (Abelian Group)"
+        },
+        {
+          "id": "72-एबलयन-इटगरलस-और-एबलयन-फकशस",
+          "text": "7.2 एबेलियन इंटीग्रल्स और एबेलियन फ़ंक्शंस"
+        },
+        {
+          "id": "73-एबल-क-सम-परमय-abelhttpskenjibloghipabels-limit-theorem",
+          "text": "7.3 एबेल का सीमा प्रमेय (Abel’s limit theorem)"
+        },
+        {
+          "id": "8-नषकरष",
+          "text": "8. निष्कर्ष"
+        }
+      ],
+      "category": "गणित\nजीवनी",
+      "categories": [
+        {
+          "text": "गणित",
+          "path": "/hi/categories/mathematics/"
+        },
+        {
+          "text": "जीवनी",
+          "path": "/hi/categories/biography/"
+        }
+      ],
+      "math": 7,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/hi/p/galois/",
+        "/hi/p/euler/",
+        "/hi/p/lagrange/",
+        "/hi/p/gauss/",
+        "/hi/p/cauchy/",
+        "/hi/p/jacobi/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "bundle": "affiliate-marketing-mechanism",
+    "lang": "ja",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "アフィリエイトの仕組みトラッキングとコンバージョンの技術的裏側",
+          "text": "アフィリエイトの仕組み：トラッキングとコンバージョンの技術的裏側"
+        },
+        {
+          "id": "1-アフィリエイトエコシステムの全体像",
+          "text": "1. アフィリエイト・エコシステムの全体像"
+        },
+        {
+          "id": "2-トラッキングの基本メカニズムクライアントサイド",
+          "text": "2. トラッキングの基本メカニズム（クライアントサイド）"
+        },
+        {
+          "id": "21-トラッキングurlとリダイレクト",
+          "text": "2.1. トラッキングURLとリダイレクト"
+        },
+        {
+          "id": "22-cookieとlocalstorageの役割",
+          "text": "2.2. CookieとLocalStorageの役割"
+        },
+        {
+          "id": "3-プライバシー保護の波itpの衝撃",
+          "text": "3. プライバシー保護の波：ITPの衝撃"
+        },
+        {
+          "id": "itpがアフィリエイトに与えた影響",
+          "text": "ITPがアフィリエイトに与えた影響"
+        },
+        {
+          "id": "4-サーバーサイドトラッキングs2sとポストバックの台頭",
+          "text": "4. サーバーサイド・トラッキング（S2S）とポストバックの台頭"
+        },
+        {
+          "id": "s2sトラッキングのアーキテクチャ",
+          "text": "S2Sトラッキングのアーキテクチャ"
+        },
+        {
+          "id": "s2sトラッキングのメリット",
+          "text": "S2Sトラッキングのメリット"
+        },
+        {
+          "id": "s2sトラッキングの課題",
+          "text": "S2Sトラッキングの課題"
+        },
+        {
+          "id": "5-次世代のトラッキング技術",
+          "text": "5. 次世代のトラッキング技術"
+        },
+        {
+          "id": "51-フィンガープリンティング代替識別",
+          "text": "5.1. フィンガープリンティング（代替識別）"
+        },
+        {
+          "id": "52-データクリーンルームとサーバーサイドgtm",
+          "text": "5.2. データクリーンルームとサーバーサイドGTM"
+        },
+        {
+          "id": "まとめ",
+          "text": "まとめ"
+        }
+      ],
+      "category": "ビジネス\nWeb-Marketing",
+      "categories": [
+        {
+          "text": "ビジネス",
+          "path": "/categories/business/"
+        },
+        {
+          "text": "Web-Marketing",
+          "path": "/categories/web-marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "アフィリエイトの仕組みトラッキングとコンバージョンの技術的裏側",
+          "text": "アフィリエイトの仕組み：トラッキングとコンバージョンの技術的裏側"
+        },
+        {
+          "id": "1-アフィリエイトエコシステムの全体像",
+          "text": "1. アフィリエイト・エコシステムの全体像"
+        },
+        {
+          "id": "2-トラッキングの基本メカニズムクライアントサイド",
+          "text": "2. トラッキングの基本メカニズム（クライアントサイド）"
+        },
+        {
+          "id": "21-トラッキングurlとリダイレクト",
+          "text": "2.1. トラッキングURLとリダイレクト"
+        },
+        {
+          "id": "22-cookieとlocalstorageの役割",
+          "text": "2.2. CookieとLocalStorageの役割"
+        },
+        {
+          "id": "3-プライバシー保護の波itpの衝撃",
+          "text": "3. プライバシー保護の波：ITPの衝撃"
+        },
+        {
+          "id": "itpがアフィリエイトに与えた影響",
+          "text": "ITPがアフィリエイトに与えた影響"
+        },
+        {
+          "id": "4-サーバーサイドトラッキングs2sとポストバックの台頭",
+          "text": "4. サーバーサイド・トラッキング（S2S）とポストバックの台頭"
+        },
+        {
+          "id": "s2sトラッキングのアーキテクチャ",
+          "text": "S2Sトラッキングのアーキテクチャ"
+        },
+        {
+          "id": "s2sトラッキングのメリット",
+          "text": "S2Sトラッキングのメリット"
+        },
+        {
+          "id": "s2sトラッキングの課題",
+          "text": "S2Sトラッキングの課題"
+        },
+        {
+          "id": "5-次世代のトラッキング技術",
+          "text": "5. 次世代のトラッキング技術"
+        },
+        {
+          "id": "51-フィンガープリンティング代替識別",
+          "text": "5.1. フィンガープリンティング（代替識別）"
+        },
+        {
+          "id": "52-データクリーンルームとサーバーサイドgtm",
+          "text": "5.2. データクリーンルームとサーバーサイドGTM"
+        },
+        {
+          "id": "まとめ",
+          "text": "まとめ"
+        }
+      ],
+      "category": "ビジネス\nマーケティング",
+      "categories": [
+        {
+          "text": "ビジネス",
+          "path": "/categories/business/"
+        },
+        {
+          "text": "マーケティング",
+          "path": "/categories/marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/p/history-of-http/",
+        "/p/privacy-vs-convenience-big-data/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "bundle": "affiliate-marketing-mechanism",
+    "lang": "en",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "the-mechanism-of-affiliate-marketing-the-technical-backend-of-tracking-and-conversion",
+          "text": "The Mechanism of Affiliate Marketing: The Technical Backend of Tracking and Conversion"
+        },
+        {
+          "id": "1-the-overall-picture-of-the-affiliate-ecosystem",
+          "text": "1. The Overall Picture of the Affiliate Ecosystem"
+        },
+        {
+          "id": "2-basic-mechanism-of-tracking-client-side",
+          "text": "2. Basic Mechanism of Tracking (Client-Side)"
+        },
+        {
+          "id": "21-tracking-urls-and-redirects",
+          "text": "2.1. Tracking URLs and Redirects"
+        },
+        {
+          "id": "22-the-role-of-cookies-and-localstorage",
+          "text": "2.2. The Role of Cookies and LocalStorage"
+        },
+        {
+          "id": "3-the-wave-of-privacy-protection-the-impact-of-itp",
+          "text": "3. The Wave of Privacy Protection: The Impact of ITP"
+        },
+        {
+          "id": "the-impact-of-itp-on-affiliates",
+          "text": "The Impact of ITP on Affiliates"
+        },
+        {
+          "id": "4-the-rise-of-server-side-tracking-s2s-and-postbacks",
+          "text": "4. The Rise of Server-Side Tracking (S2S) and Postbacks"
+        },
+        {
+          "id": "the-architecture-of-s2s-tracking",
+          "text": "The Architecture of S2S Tracking"
+        },
+        {
+          "id": "benefits-of-s2s-tracking",
+          "text": "Benefits of S2S Tracking"
+        },
+        {
+          "id": "challenges-of-s2s-tracking",
+          "text": "Challenges of S2S Tracking"
+        },
+        {
+          "id": "5-next-generation-tracking-technologies",
+          "text": "5. Next-Generation Tracking Technologies"
+        },
+        {
+          "id": "51-fingerprinting-alternative-identification",
+          "text": "5.1. Fingerprinting (Alternative Identification)"
+        },
+        {
+          "id": "52-data-clean-rooms-and-server-side-gtm",
+          "text": "5.2. Data Clean Rooms and Server-Side GTM"
+        },
+        {
+          "id": "conclusion",
+          "text": "Conclusion"
+        }
+      ],
+      "category": "Business\nWeb-Marketing",
+      "categories": [
+        {
+          "text": "Business",
+          "path": "/en/categories/business/"
+        },
+        {
+          "text": "Web-Marketing",
+          "path": "/en/categories/web-marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "the-mechanism-of-affiliate-marketing-the-technical-backend-of-tracking-and-conversion",
+          "text": "The Mechanism of Affiliate Marketing: The Technical Backend of Tracking and Conversion"
+        },
+        {
+          "id": "1-the-overall-picture-of-the-affiliate-ecosystem",
+          "text": "1. The Overall Picture of the Affiliate Ecosystem"
+        },
+        {
+          "id": "2-basic-mechanism-of-tracking-client-side",
+          "text": "2. Basic Mechanism of Tracking (Client-Side)"
+        },
+        {
+          "id": "21-tracking-urls-and-redirects",
+          "text": "2.1. Tracking URLs and Redirects"
+        },
+        {
+          "id": "22-the-role-of-cookies-and-localstorage",
+          "text": "2.2. The Role of Cookies and LocalStorage"
+        },
+        {
+          "id": "3-the-wave-of-privacy-protection-the-impact-of-itp",
+          "text": "3. The Wave of Privacy Protection: The Impact of ITP"
+        },
+        {
+          "id": "the-impact-of-itp-on-affiliates",
+          "text": "The Impact of ITP on Affiliates"
+        },
+        {
+          "id": "4-the-rise-of-server-side-tracking-s2s-and-postbacks",
+          "text": "4. The Rise of Server-Side Tracking (S2S) and Postbacks"
+        },
+        {
+          "id": "the-architecture-of-s2s-tracking",
+          "text": "The Architecture of S2S Tracking"
+        },
+        {
+          "id": "benefits-of-s2s-tracking",
+          "text": "Benefits of S2S Tracking"
+        },
+        {
+          "id": "challenges-of-s2s-tracking",
+          "text": "Challenges of S2S Tracking"
+        },
+        {
+          "id": "5-next-generation-tracking-technologies",
+          "text": "5. Next-Generation Tracking Technologies"
+        },
+        {
+          "id": "51-fingerprinting-alternative-identification",
+          "text": "5.1. Fingerprinting (Alternative Identification)"
+        },
+        {
+          "id": "52-data-clean-rooms-and-server-side-gtm",
+          "text": "5.2. Data Clean Rooms and Server-Side GTM"
+        },
+        {
+          "id": "conclusion",
+          "text": "Conclusion"
+        }
+      ],
+      "category": "Business\nMarketing",
+      "categories": [
+        {
+          "text": "Business",
+          "path": "/en/categories/business/"
+        },
+        {
+          "text": "Marketing",
+          "path": "/en/categories/marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/en/p/history-of-http/",
+        "/en/p/privacy-vs-convenience-big-data/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "bundle": "affiliate-marketing-mechanism",
+    "lang": "de",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "so-funktioniert-affiliate-marketing-die-technische-seite-von-tracking-und-conversion",
+          "text": "So funktioniert Affiliate-Marketing: Die technische Seite von Tracking und Conversion"
+        },
+        {
+          "id": "1-das-gesamtbild-des-affiliate-ökosystems",
+          "text": "1. Das Gesamtbild des Affiliate-Ökosystems"
+        },
+        {
+          "id": "2-grundlegender-mechanismus-des-trackings-clientseitig",
+          "text": "2. Grundlegender Mechanismus des Trackings (Clientseitig)"
+        },
+        {
+          "id": "21-tracking-url-und-redirect",
+          "text": "2.1. Tracking-URL und Redirect"
+        },
+        {
+          "id": "22-die-rolle-von-cookie-und-localstorage",
+          "text": "2.2. Die Rolle von Cookie und LocalStorage"
+        },
+        {
+          "id": "3-die-welle-des-datenschutzes-der-schock-durch-itp",
+          "text": "3. Die Welle des Datenschutzes: Der Schock durch ITP"
+        },
+        {
+          "id": "die-auswirkungen-von-itp-auf-das-affiliate-marketing",
+          "text": "Die Auswirkungen von ITP auf das Affiliate-Marketing"
+        },
+        {
+          "id": "4-serverseitiges-tracking-s2s-und-der-aufstieg-von-postback",
+          "text": "4. Serverseitiges Tracking (S2S) und der Aufstieg von Postback"
+        },
+        {
+          "id": "s2s-tracking-architektur",
+          "text": "S2S-Tracking-Architektur"
+        },
+        {
+          "id": "vorteile-des-s2s-trackings",
+          "text": "Vorteile des S2S-Trackings"
+        },
+        {
+          "id": "herausforderungen-des-s2s-trackings",
+          "text": "Herausforderungen des S2S-Trackings"
+        },
+        {
+          "id": "5-tracking-technologien-der-nächsten-generation",
+          "text": "5. Tracking-Technologien der nächsten Generation"
+        },
+        {
+          "id": "51-fingerprinting-alternative-identifikation",
+          "text": "5.1. Fingerprinting (Alternative Identifikation)"
+        },
+        {
+          "id": "52-data-clean-rooms-und-server-side-gtm",
+          "text": "5.2. Data Clean Rooms und Server-Side GTM"
+        },
+        {
+          "id": "zusammenfassung",
+          "text": "Zusammenfassung"
+        }
+      ],
+      "category": "Wirtschaft\nWeb-Marketing",
+      "categories": [
+        {
+          "text": "Wirtschaft",
+          "path": "/de/categories/business/"
+        },
+        {
+          "text": "Web-Marketing",
+          "path": "/de/categories/web-marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "so-funktioniert-affiliate-marketing-die-technische-seite-von-tracking-und-conversion",
+          "text": "So funktioniert Affiliate-Marketing: Die technische Seite von Tracking und Conversion"
+        },
+        {
+          "id": "1-das-gesamtbild-des-affiliate-ökosystems",
+          "text": "1. Das Gesamtbild des Affiliate-Ökosystems"
+        },
+        {
+          "id": "2-grundlegender-mechanismus-des-trackings-clientseitig",
+          "text": "2. Grundlegender Mechanismus des Trackings (Clientseitig)"
+        },
+        {
+          "id": "21-tracking-url-und-redirect",
+          "text": "2.1. Tracking-URL und Redirect"
+        },
+        {
+          "id": "22-die-rolle-von-cookie-und-localstorage",
+          "text": "2.2. Die Rolle von Cookie und LocalStorage"
+        },
+        {
+          "id": "3-die-welle-des-datenschutzes-der-schock-durch-itp",
+          "text": "3. Die Welle des Datenschutzes: Der Schock durch ITP"
+        },
+        {
+          "id": "die-auswirkungen-von-itp-auf-das-affiliate-marketing",
+          "text": "Die Auswirkungen von ITP auf das Affiliate-Marketing"
+        },
+        {
+          "id": "4-serverseitiges-tracking-s2s-und-der-aufstieg-von-postback",
+          "text": "4. Serverseitiges Tracking (S2S) und der Aufstieg von Postback"
+        },
+        {
+          "id": "s2s-tracking-architektur",
+          "text": "S2S-Tracking-Architektur"
+        },
+        {
+          "id": "vorteile-des-s2s-trackings",
+          "text": "Vorteile des S2S-Trackings"
+        },
+        {
+          "id": "herausforderungen-des-s2s-trackings",
+          "text": "Herausforderungen des S2S-Trackings"
+        },
+        {
+          "id": "5-tracking-technologien-der-nächsten-generation",
+          "text": "5. Tracking-Technologien der nächsten Generation"
+        },
+        {
+          "id": "51-fingerprinting-alternative-identifikation",
+          "text": "5.1. Fingerprinting (Alternative Identifikation)"
+        },
+        {
+          "id": "52-data-clean-rooms-und-server-side-gtm",
+          "text": "5.2. Data Clean Rooms und Server-Side GTM"
+        },
+        {
+          "id": "zusammenfassung",
+          "text": "Zusammenfassung"
+        }
+      ],
+      "category": "Wirtschaft\nMarketing",
+      "categories": [
+        {
+          "text": "Wirtschaft",
+          "path": "/de/categories/business/"
+        },
+        {
+          "text": "Marketing",
+          "path": "/de/categories/marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/de/p/history-of-http/",
+        "/de/p/privacy-vs-convenience-big-data/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "bundle": "affiliate-marketing-mechanism",
+    "lang": "fr",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "le-mécanisme-du-marketing-daffiliation--les-coulisses-techniques-du-suivi-et-de-la-conversion",
+          "text": "Le mécanisme du marketing d’affiliation : les coulisses techniques du suivi et de la conversion"
+        },
+        {
+          "id": "1-vue-densemble-de-lécosystème-de-laffiliation",
+          "text": "1. Vue d’ensemble de l’écosystème de l’affiliation"
+        },
+        {
+          "id": "2-le-mécanisme-de-base-du-suivi-côté-client",
+          "text": "2. Le mécanisme de base du suivi (côté client)"
+        },
+        {
+          "id": "21-url-de-suivi-et-redirection",
+          "text": "2.1. URL de suivi et redirection"
+        },
+        {
+          "id": "22-le-rôle-des-cookies-et-de-localstorage",
+          "text": "2.2. Le rôle des Cookies et de LocalStorage"
+        },
+        {
+          "id": "3-la-vague-de-protection-de-la-vie-privée--limpact-de-litp",
+          "text": "3. La vague de protection de la vie privée : l’impact de l’ITP"
+        },
+        {
+          "id": "limpact-de-litp-sur-laffiliation",
+          "text": "L’impact de l’ITP sur l’affiliation"
+        },
+        {
+          "id": "4-lessor-du-suivi-côté-serveur-s2s-et-du-postback",
+          "text": "4. L’essor du suivi côté serveur (S2S) et du Postback"
+        },
+        {
+          "id": "architecture-du-suivi-s2s",
+          "text": "Architecture du suivi S2S"
+        },
+        {
+          "id": "avantages-du-suivi-s2s",
+          "text": "Avantages du suivi S2S"
+        },
+        {
+          "id": "défis-du-suivi-s2s",
+          "text": "Défis du suivi S2S"
+        },
+        {
+          "id": "5-technologies-de-suivi-de-nouvelle-génération",
+          "text": "5. Technologies de suivi de nouvelle génération"
+        },
+        {
+          "id": "51-fingerprinting-identification-alternative",
+          "text": "5.1. Fingerprinting (Identification alternative)"
+        },
+        {
+          "id": "52-data-clean-room-et-gtm-côté-serveur",
+          "text": "5.2. Data Clean Room et GTM côté serveur"
+        },
+        {
+          "id": "conclusion",
+          "text": "Conclusion"
+        }
+      ],
+      "category": "Affaires\nWeb-Marketing",
+      "categories": [
+        {
+          "text": "Affaires",
+          "path": "/fr/categories/business/"
+        },
+        {
+          "text": "Web-Marketing",
+          "path": "/fr/categories/web-marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "le-mécanisme-du-marketing-daffiliation--les-coulisses-techniques-du-suivi-et-de-la-conversion",
+          "text": "Le mécanisme du marketing d’affiliation : les coulisses techniques du suivi et de la conversion"
+        },
+        {
+          "id": "1-vue-densemble-de-lécosystème-de-laffiliation",
+          "text": "1. Vue d’ensemble de l’écosystème de l’affiliation"
+        },
+        {
+          "id": "2-le-mécanisme-de-base-du-suivi-côté-client",
+          "text": "2. Le mécanisme de base du suivi (côté client)"
+        },
+        {
+          "id": "21-url-de-suivi-et-redirection",
+          "text": "2.1. URL de suivi et redirection"
+        },
+        {
+          "id": "22-le-rôle-des-cookies-et-de-localstorage",
+          "text": "2.2. Le rôle des Cookies et de LocalStorage"
+        },
+        {
+          "id": "3-la-vague-de-protection-de-la-vie-privée--limpact-de-litp",
+          "text": "3. La vague de protection de la vie privée : l’impact de l’ITP"
+        },
+        {
+          "id": "limpact-de-litp-sur-laffiliation",
+          "text": "L’impact de l’ITP sur l’affiliation"
+        },
+        {
+          "id": "4-lessor-du-suivi-côté-serveur-s2s-et-du-postback",
+          "text": "4. L’essor du suivi côté serveur (S2S) et du Postback"
+        },
+        {
+          "id": "architecture-du-suivi-s2s",
+          "text": "Architecture du suivi S2S"
+        },
+        {
+          "id": "avantages-du-suivi-s2s",
+          "text": "Avantages du suivi S2S"
+        },
+        {
+          "id": "défis-du-suivi-s2s",
+          "text": "Défis du suivi S2S"
+        },
+        {
+          "id": "5-technologies-de-suivi-de-nouvelle-génération",
+          "text": "5. Technologies de suivi de nouvelle génération"
+        },
+        {
+          "id": "51-fingerprinting-identification-alternative",
+          "text": "5.1. Fingerprinting (Identification alternative)"
+        },
+        {
+          "id": "52-data-clean-room-et-gtm-côté-serveur",
+          "text": "5.2. Data Clean Room et GTM côté serveur"
+        },
+        {
+          "id": "conclusion",
+          "text": "Conclusion"
+        }
+      ],
+      "category": "Affaires\nMarketing",
+      "categories": [
+        {
+          "text": "Affaires",
+          "path": "/fr/categories/business/"
+        },
+        {
+          "text": "Marketing",
+          "path": "/fr/categories/marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/fr/p/history-of-http/",
+        "/fr/p/privacy-vs-convenience-big-data/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "bundle": "affiliate-marketing-mechanism",
+    "lang": "es",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "mecanismo-del-marketing-de-afiliación-el-trasfondo-técnico-del-seguimiento-y-la-conversión",
+          "text": "Mecanismo del marketing de afiliación: El trasfondo técnico del seguimiento y la conversión"
+        },
+        {
+          "id": "1-el-panorama-general-del-ecosistema-de-afiliación",
+          "text": "1. El panorama general del ecosistema de afiliación"
+        },
+        {
+          "id": "2-mecanismo-básico-de-seguimiento-lado-del-cliente",
+          "text": "2. Mecanismo básico de seguimiento (Lado del cliente)"
+        },
+        {
+          "id": "21-url-de-seguimiento-y-redirección",
+          "text": "2.1. URL de seguimiento y redirección"
+        },
+        {
+          "id": "22-el-papel-de-las-cookies-y-localstorage",
+          "text": "2.2. El papel de las Cookies y LocalStorage"
+        },
+        {
+          "id": "3-la-ola-de-protección-de-la-privacidad-el-impacto-de-itp",
+          "text": "3. La ola de protección de la privacidad: El impacto de ITP"
+        },
+        {
+          "id": "el-impacto-de-itp-en-los-afiliados",
+          "text": "El impacto de ITP en los afiliados"
+        },
+        {
+          "id": "4-seguimiento-en-el-lado-del-servidor-s2s-y-el-auge-del-postback",
+          "text": "4. Seguimiento en el lado del servidor (S2S) y el auge del Postback"
+        },
+        {
+          "id": "arquitectura-de-seguimiento-s2s",
+          "text": "Arquitectura de seguimiento S2S"
+        },
+        {
+          "id": "ventajas-del-seguimiento-s2s",
+          "text": "Ventajas del seguimiento S2S"
+        },
+        {
+          "id": "desafíos-del-seguimiento-s2s",
+          "text": "Desafíos del seguimiento S2S"
+        },
+        {
+          "id": "5-tecnología-de-seguimiento-de-próxima-generación",
+          "text": "5. Tecnología de seguimiento de próxima generación"
+        },
+        {
+          "id": "51-huella-digital-identificación-alternativa",
+          "text": "5.1. Huella digital (Identificación alternativa)"
+        },
+        {
+          "id": "52-data-clean-room-y-gtm-en-el-lado-del-servidor",
+          "text": "5.2. Data Clean Room y GTM en el lado del servidor"
+        },
+        {
+          "id": "resumen",
+          "text": "Resumen"
+        }
+      ],
+      "category": "Negocios\nWeb-Marketing",
+      "categories": [
+        {
+          "text": "Negocios",
+          "path": "/es/categories/business/"
+        },
+        {
+          "text": "Web-Marketing",
+          "path": "/es/categories/web-marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "mecanismo-del-marketing-de-afiliación-el-trasfondo-técnico-del-seguimiento-y-la-conversión",
+          "text": "Mecanismo del marketing de afiliación: El trasfondo técnico del seguimiento y la conversión"
+        },
+        {
+          "id": "1-el-panorama-general-del-ecosistema-de-afiliación",
+          "text": "1. El panorama general del ecosistema de afiliación"
+        },
+        {
+          "id": "2-mecanismo-básico-de-seguimiento-lado-del-cliente",
+          "text": "2. Mecanismo básico de seguimiento (Lado del cliente)"
+        },
+        {
+          "id": "21-url-de-seguimiento-y-redirección",
+          "text": "2.1. URL de seguimiento y redirección"
+        },
+        {
+          "id": "22-el-papel-de-las-cookies-y-localstorage",
+          "text": "2.2. El papel de las Cookies y LocalStorage"
+        },
+        {
+          "id": "3-la-ola-de-protección-de-la-privacidad-el-impacto-de-itp",
+          "text": "3. La ola de protección de la privacidad: El impacto de ITP"
+        },
+        {
+          "id": "el-impacto-de-itp-en-los-afiliados",
+          "text": "El impacto de ITP en los afiliados"
+        },
+        {
+          "id": "4-seguimiento-en-el-lado-del-servidor-s2s-y-el-auge-del-postback",
+          "text": "4. Seguimiento en el lado del servidor (S2S) y el auge del Postback"
+        },
+        {
+          "id": "arquitectura-de-seguimiento-s2s",
+          "text": "Arquitectura de seguimiento S2S"
+        },
+        {
+          "id": "ventajas-del-seguimiento-s2s",
+          "text": "Ventajas del seguimiento S2S"
+        },
+        {
+          "id": "desafíos-del-seguimiento-s2s",
+          "text": "Desafíos del seguimiento S2S"
+        },
+        {
+          "id": "5-tecnología-de-seguimiento-de-próxima-generación",
+          "text": "5. Tecnología de seguimiento de próxima generación"
+        },
+        {
+          "id": "51-huella-digital-identificación-alternativa",
+          "text": "5.1. Huella digital (Identificación alternativa)"
+        },
+        {
+          "id": "52-data-clean-room-y-gtm-en-el-lado-del-servidor",
+          "text": "5.2. Data Clean Room y GTM en el lado del servidor"
+        },
+        {
+          "id": "resumen",
+          "text": "Resumen"
+        }
+      ],
+      "category": "Negocios\nMarketing",
+      "categories": [
+        {
+          "text": "Negocios",
+          "path": "/es/categories/business/"
+        },
+        {
+          "text": "Marketing",
+          "path": "/es/categories/marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/es/p/history-of-http/",
+        "/es/p/privacy-vs-convenience-big-data/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "bundle": "affiliate-marketing-mechanism",
+    "lang": "pt",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "o-mecanismo-de-afiliados-os-bastidores-técnicos-do-rastreamento-e-conversão",
+          "text": "O Mecanismo de Afiliados: Os Bastidores Técnicos do Rastreamento e Conversão"
+        },
+        {
+          "id": "1-visão-geral-do-ecossistema-de-afiliados",
+          "text": "1. Visão Geral do Ecossistema de Afiliados"
+        },
+        {
+          "id": "2-o-mecanismo-básico-de-rastreamento-lado-do-cliente",
+          "text": "2. O Mecanismo Básico de Rastreamento (Lado do Cliente)"
+        },
+        {
+          "id": "21-url-de-rastreamento-e-redirecionamento",
+          "text": "2.1. URL de Rastreamento e Redirecionamento"
+        },
+        {
+          "id": "22-o-papel-do-cookie-e-do-localstorage",
+          "text": "2.2. O Papel do Cookie e do LocalStorage"
+        },
+        {
+          "id": "3-a-onda-de-proteção-da-privacidade-o-impacto-do-itp",
+          "text": "3. A Onda de Proteção da Privacidade: O Impacto do ITP"
+        },
+        {
+          "id": "o-impacto-do-itp-nos-afiliados",
+          "text": "O Impacto do ITP nos Afiliados"
+        },
+        {
+          "id": "4-a-ascensão-do-rastreamento-do-lado-do-servidor-s2s-e-do-postback",
+          "text": "4. A Ascensão do Rastreamento do Lado do Servidor (S2S) e do Postback"
+        },
+        {
+          "id": "a-arquitetura-do-rastreamento-s2s",
+          "text": "A Arquitetura do Rastreamento S2S"
+        },
+        {
+          "id": "vantagens-do-rastreamento-s2s",
+          "text": "Vantagens do Rastreamento S2S"
+        },
+        {
+          "id": "desafios-do-rastreamento-s2s",
+          "text": "Desafios do Rastreamento S2S"
+        },
+        {
+          "id": "5-tecnologias-de-rastreamento-de-próxima-geração",
+          "text": "5. Tecnologias de Rastreamento de Próxima Geração"
+        },
+        {
+          "id": "51-fingerprinting-identificação-alternativa",
+          "text": "5.1. Fingerprinting (Identificação Alternativa)"
+        },
+        {
+          "id": "52-data-clean-rooms-e-server-side-gtm",
+          "text": "5.2. Data Clean Rooms e Server-Side GTM"
+        },
+        {
+          "id": "conclusão",
+          "text": "Conclusão"
+        }
+      ],
+      "category": "Negócios\nWeb-Marketing",
+      "categories": [
+        {
+          "text": "Negócios",
+          "path": "/pt/categories/business/"
+        },
+        {
+          "text": "Web-Marketing",
+          "path": "/pt/categories/web-marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "o-mecanismo-de-afiliados-os-bastidores-técnicos-do-rastreamento-e-conversão",
+          "text": "O Mecanismo de Afiliados: Os Bastidores Técnicos do Rastreamento e Conversão"
+        },
+        {
+          "id": "1-visão-geral-do-ecossistema-de-afiliados",
+          "text": "1. Visão Geral do Ecossistema de Afiliados"
+        },
+        {
+          "id": "2-o-mecanismo-básico-de-rastreamento-lado-do-cliente",
+          "text": "2. O Mecanismo Básico de Rastreamento (Lado do Cliente)"
+        },
+        {
+          "id": "21-url-de-rastreamento-e-redirecionamento",
+          "text": "2.1. URL de Rastreamento e Redirecionamento"
+        },
+        {
+          "id": "22-o-papel-do-cookie-e-do-localstorage",
+          "text": "2.2. O Papel do Cookie e do LocalStorage"
+        },
+        {
+          "id": "3-a-onda-de-proteção-da-privacidade-o-impacto-do-itp",
+          "text": "3. A Onda de Proteção da Privacidade: O Impacto do ITP"
+        },
+        {
+          "id": "o-impacto-do-itp-nos-afiliados",
+          "text": "O Impacto do ITP nos Afiliados"
+        },
+        {
+          "id": "4-a-ascensão-do-rastreamento-do-lado-do-servidor-s2s-e-do-postback",
+          "text": "4. A Ascensão do Rastreamento do Lado do Servidor (S2S) e do Postback"
+        },
+        {
+          "id": "a-arquitetura-do-rastreamento-s2s",
+          "text": "A Arquitetura do Rastreamento S2S"
+        },
+        {
+          "id": "vantagens-do-rastreamento-s2s",
+          "text": "Vantagens do Rastreamento S2S"
+        },
+        {
+          "id": "desafios-do-rastreamento-s2s",
+          "text": "Desafios do Rastreamento S2S"
+        },
+        {
+          "id": "5-tecnologias-de-rastreamento-de-próxima-geração",
+          "text": "5. Tecnologias de Rastreamento de Próxima Geração"
+        },
+        {
+          "id": "51-fingerprinting-identificação-alternativa",
+          "text": "5.1. Fingerprinting (Identificação Alternativa)"
+        },
+        {
+          "id": "52-data-clean-rooms-e-server-side-gtm",
+          "text": "5.2. Data Clean Rooms e Server-Side GTM"
+        },
+        {
+          "id": "conclusão",
+          "text": "Conclusão"
+        }
+      ],
+      "category": "Negócios\nMarketing",
+      "categories": [
+        {
+          "text": "Negócios",
+          "path": "/pt/categories/business/"
+        },
+        {
+          "text": "Marketing",
+          "path": "/pt/categories/marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/pt/p/history-of-http/",
+        "/pt/p/privacy-vs-convenience-big-data/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "bundle": "affiliate-marketing-mechanism",
+    "lang": "id",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "mekanisme-afiliasi-di-balik-layar-teknologi-pelacakan-dan-konversi",
+          "text": "Mekanisme Afiliasi: Di Balik Layar Teknologi Pelacakan dan Konversi"
+        },
+        {
+          "id": "1-gambaran-umum-ekosistem-afiliasi",
+          "text": "1. Gambaran Umum Ekosistem Afiliasi"
+        },
+        {
+          "id": "2-mekanisme-dasar-pelacakan-sisi-klien",
+          "text": "2. Mekanisme Dasar Pelacakan (Sisi Klien)"
+        },
+        {
+          "id": "21-url-pelacakan-dan-pengalihan-redirect",
+          "text": "2.1. URL Pelacakan dan Pengalihan (Redirect)"
+        },
+        {
+          "id": "22-peran-cookie-dan-localstorage",
+          "text": "2.2. Peran Cookie dan LocalStorage"
+        },
+        {
+          "id": "3-gelombang-perlindungan-privasi-dampak-itp",
+          "text": "3. Gelombang Perlindungan Privasi: Dampak ITP"
+        },
+        {
+          "id": "dampak-itp-terhadap-afiliasi",
+          "text": "Dampak ITP terhadap Afiliasi"
+        },
+        {
+          "id": "4-kebangkitan-pelacakan-sisi-server-s2s-dan-postback",
+          "text": "4. Kebangkitan Pelacakan Sisi Server (S2S) dan Postback"
+        },
+        {
+          "id": "arsitektur-pelacakan-s2s",
+          "text": "Arsitektur Pelacakan S2S"
+        },
+        {
+          "id": "keuntungan-pelacakan-s2s",
+          "text": "Keuntungan Pelacakan S2S"
+        },
+        {
+          "id": "tantangan-pelacakan-s2s",
+          "text": "Tantangan Pelacakan S2S"
+        },
+        {
+          "id": "5-teknologi-pelacakan-generasi-berikutnya",
+          "text": "5. Teknologi Pelacakan Generasi Berikutnya"
+        },
+        {
+          "id": "51-fingerprinting-identifikasi-alternatif",
+          "text": "5.1. Fingerprinting (Identifikasi Alternatif)"
+        },
+        {
+          "id": "52-data-clean-room-dan-server-side-gtm",
+          "text": "5.2. Data Clean Room dan Server-Side GTM"
+        },
+        {
+          "id": "kesimpulan",
+          "text": "Kesimpulan"
+        }
+      ],
+      "category": "Bisnis\nWeb-Marketing",
+      "categories": [
+        {
+          "text": "Bisnis",
+          "path": "/id/categories/business/"
+        },
+        {
+          "text": "Web-Marketing",
+          "path": "/id/categories/web-marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "mekanisme-afiliasi-di-balik-layar-teknologi-pelacakan-dan-konversi",
+          "text": "Mekanisme Afiliasi: Di Balik Layar Teknologi Pelacakan dan Konversi"
+        },
+        {
+          "id": "1-gambaran-umum-ekosistem-afiliasi",
+          "text": "1. Gambaran Umum Ekosistem Afiliasi"
+        },
+        {
+          "id": "2-mekanisme-dasar-pelacakan-sisi-klien",
+          "text": "2. Mekanisme Dasar Pelacakan (Sisi Klien)"
+        },
+        {
+          "id": "21-url-pelacakan-dan-pengalihan-redirect",
+          "text": "2.1. URL Pelacakan dan Pengalihan (Redirect)"
+        },
+        {
+          "id": "22-peran-cookie-dan-localstorage",
+          "text": "2.2. Peran Cookie dan LocalStorage"
+        },
+        {
+          "id": "3-gelombang-perlindungan-privasi-dampak-itp",
+          "text": "3. Gelombang Perlindungan Privasi: Dampak ITP"
+        },
+        {
+          "id": "dampak-itp-terhadap-afiliasi",
+          "text": "Dampak ITP terhadap Afiliasi"
+        },
+        {
+          "id": "4-kebangkitan-pelacakan-sisi-server-s2s-dan-postback",
+          "text": "4. Kebangkitan Pelacakan Sisi Server (S2S) dan Postback"
+        },
+        {
+          "id": "arsitektur-pelacakan-s2s",
+          "text": "Arsitektur Pelacakan S2S"
+        },
+        {
+          "id": "keuntungan-pelacakan-s2s",
+          "text": "Keuntungan Pelacakan S2S"
+        },
+        {
+          "id": "tantangan-pelacakan-s2s",
+          "text": "Tantangan Pelacakan S2S"
+        },
+        {
+          "id": "5-teknologi-pelacakan-generasi-berikutnya",
+          "text": "5. Teknologi Pelacakan Generasi Berikutnya"
+        },
+        {
+          "id": "51-fingerprinting-identifikasi-alternatif",
+          "text": "5.1. Fingerprinting (Identifikasi Alternatif)"
+        },
+        {
+          "id": "52-data-clean-room-dan-server-side-gtm",
+          "text": "5.2. Data Clean Room dan Server-Side GTM"
+        },
+        {
+          "id": "kesimpulan",
+          "text": "Kesimpulan"
+        }
+      ],
+      "category": "Bisnis\nPemasaran",
+      "categories": [
+        {
+          "text": "Bisnis",
+          "path": "/id/categories/business/"
+        },
+        {
+          "text": "Pemasaran",
+          "path": "/id/categories/marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/id/p/history-of-http/",
+        "/id/p/privacy-vs-convenience-big-data/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "bundle": "affiliate-marketing-mechanism",
+    "lang": "ko",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "제휴-마케팅의-구조-트래킹-및-전환의-기술적-이면",
+          "text": "제휴 마케팅의 구조: 트래킹 및 전환의 기술적 이면"
+        },
+        {
+          "id": "1-제휴-마케팅-생태계의-전체적인-모습",
+          "text": "1. 제휴 마케팅 생태계의 전체적인 모습"
+        },
+        {
+          "id": "2-트래킹의-기본-메커니즘클라이언트-사이드",
+          "text": "2. 트래킹의 기본 메커니즘(클라이언트 사이드)"
+        },
+        {
+          "id": "21-트래킹-url과-리다이렉트",
+          "text": "2.1. 트래킹 URL과 리다이렉트"
+        },
+        {
+          "id": "22-쿠키와-로컬-스토리지의-역할",
+          "text": "2.2. 쿠키와 로컬 스토리지의 역할"
+        },
+        {
+          "id": "3-개인정보-보호의-물결-itp의-충격",
+          "text": "3. 개인정보 보호의 물결: ITP의 충격"
+        },
+        {
+          "id": "itp가-제휴-마케팅에-미친-영향",
+          "text": "ITP가 제휴 마케팅에 미친 영향"
+        },
+        {
+          "id": "4-서버-사이드-트래킹s2s과-포스트백의-부상",
+          "text": "4. 서버 사이드 트래킹(S2S)과 포스트백의 부상"
+        },
+        {
+          "id": "s2s-트래킹의-아키텍처",
+          "text": "S2S 트래킹의 아키텍처"
+        },
+        {
+          "id": "s2s-트래킹의-장점",
+          "text": "S2S 트래킹의 장점"
+        },
+        {
+          "id": "s2s-트래킹의-과제",
+          "text": "S2S 트래킹의 과제"
+        },
+        {
+          "id": "5-차세대-트래킹-기술",
+          "text": "5. 차세대 트래킹 기술"
+        },
+        {
+          "id": "51-핑거프린팅대체-식별",
+          "text": "5.1. 핑거프린팅(대체 식별)"
+        },
+        {
+          "id": "52-데이터-클린룸과-서버-사이드-gtm",
+          "text": "5.2. 데이터 클린룸과 서버 사이드 GTM"
+        },
+        {
+          "id": "결론",
+          "text": "결론"
+        }
+      ],
+      "category": "비즈니스\nWeb-Marketing",
+      "categories": [
+        {
+          "text": "비즈니스",
+          "path": "/ko/categories/business/"
+        },
+        {
+          "text": "Web-Marketing",
+          "path": "/ko/categories/web-marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "제휴-마케팅의-구조-트래킹-및-전환의-기술적-이면",
+          "text": "제휴 마케팅의 구조: 트래킹 및 전환의 기술적 이면"
+        },
+        {
+          "id": "1-제휴-마케팅-생태계의-전체적인-모습",
+          "text": "1. 제휴 마케팅 생태계의 전체적인 모습"
+        },
+        {
+          "id": "2-트래킹의-기본-메커니즘클라이언트-사이드",
+          "text": "2. 트래킹의 기본 메커니즘(클라이언트 사이드)"
+        },
+        {
+          "id": "21-트래킹-url과-리다이렉트",
+          "text": "2.1. 트래킹 URL과 리다이렉트"
+        },
+        {
+          "id": "22-쿠키와-로컬-스토리지의-역할",
+          "text": "2.2. 쿠키와 로컬 스토리지의 역할"
+        },
+        {
+          "id": "3-개인정보-보호의-물결-itp의-충격",
+          "text": "3. 개인정보 보호의 물결: ITP의 충격"
+        },
+        {
+          "id": "itp가-제휴-마케팅에-미친-영향",
+          "text": "ITP가 제휴 마케팅에 미친 영향"
+        },
+        {
+          "id": "4-서버-사이드-트래킹s2s과-포스트백의-부상",
+          "text": "4. 서버 사이드 트래킹(S2S)과 포스트백의 부상"
+        },
+        {
+          "id": "s2s-트래킹의-아키텍처",
+          "text": "S2S 트래킹의 아키텍처"
+        },
+        {
+          "id": "s2s-트래킹의-장점",
+          "text": "S2S 트래킹의 장점"
+        },
+        {
+          "id": "s2s-트래킹의-과제",
+          "text": "S2S 트래킹의 과제"
+        },
+        {
+          "id": "5-차세대-트래킹-기술",
+          "text": "5. 차세대 트래킹 기술"
+        },
+        {
+          "id": "51-핑거프린팅대체-식별",
+          "text": "5.1. 핑거프린팅(대체 식별)"
+        },
+        {
+          "id": "52-데이터-클린룸과-서버-사이드-gtm",
+          "text": "5.2. 데이터 클린룸과 서버 사이드 GTM"
+        },
+        {
+          "id": "결론",
+          "text": "결론"
+        }
+      ],
+      "category": "비즈니스\n마케팅",
+      "categories": [
+        {
+          "text": "비즈니스",
+          "path": "/ko/categories/business/"
+        },
+        {
+          "text": "마케팅",
+          "path": "/ko/categories/marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/ko/p/history-of-http/",
+        "/ko/p/privacy-vs-convenience-big-data/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "bundle": "affiliate-marketing-mechanism",
+    "lang": "zh-cn",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "联盟营销机制追踪与转化的技术内幕",
+          "text": "联盟营销机制：追踪与转化的技术内幕"
+        },
+        {
+          "id": "1-联盟营销生态系统全景",
+          "text": "1. 联盟营销生态系统全景"
+        },
+        {
+          "id": "2-追踪的基本机制客户端",
+          "text": "2. 追踪的基本机制（客户端）"
+        },
+        {
+          "id": "21-追踪url与重定向",
+          "text": "2.1. 追踪URL与重定向"
+        },
+        {
+          "id": "22-cookie与localstorage的作用",
+          "text": "2.2. Cookie与LocalStorage的作用"
+        },
+        {
+          "id": "3-隐私保护浪潮itp的冲击",
+          "text": "3. 隐私保护浪潮：ITP的冲击"
+        },
+        {
+          "id": "itp对联盟营销的影响",
+          "text": "ITP对联盟营销的影响"
+        },
+        {
+          "id": "4-服务端追踪s2s与回调机制的崛起",
+          "text": "4. 服务端追踪（S2S）与回调机制的崛起"
+        },
+        {
+          "id": "s2s追踪的架构",
+          "text": "S2S追踪的架构"
+        },
+        {
+          "id": "s2s追踪的优势",
+          "text": "S2S追踪的优势"
+        },
+        {
+          "id": "s2s追踪的挑战",
+          "text": "S2S追踪的挑战"
+        },
+        {
+          "id": "5-下一代追踪技术",
+          "text": "5. 下一代追踪技术"
+        },
+        {
+          "id": "51-指纹识别替代识别",
+          "text": "5.1. 指纹识别（替代识别）"
+        },
+        {
+          "id": "52-数据无尘室与服务端gtm",
+          "text": "5.2. 数据无尘室与服务端GTM"
+        },
+        {
+          "id": "总结",
+          "text": "总结"
+        }
+      ],
+      "category": "商业\nWeb-Marketing",
+      "categories": [
+        {
+          "text": "商业",
+          "path": "/zh-cn/categories/business/"
+        },
+        {
+          "text": "Web-Marketing",
+          "path": "/zh-cn/categories/web-marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "联盟营销机制追踪与转化的技术内幕",
+          "text": "联盟营销机制：追踪与转化的技术内幕"
+        },
+        {
+          "id": "1-联盟营销生态系统全景",
+          "text": "1. 联盟营销生态系统全景"
+        },
+        {
+          "id": "2-追踪的基本机制客户端",
+          "text": "2. 追踪的基本机制（客户端）"
+        },
+        {
+          "id": "21-追踪url与重定向",
+          "text": "2.1. 追踪URL与重定向"
+        },
+        {
+          "id": "22-cookie与localstorage的作用",
+          "text": "2.2. Cookie与LocalStorage的作用"
+        },
+        {
+          "id": "3-隐私保护浪潮itp的冲击",
+          "text": "3. 隐私保护浪潮：ITP的冲击"
+        },
+        {
+          "id": "itp对联盟营销的影响",
+          "text": "ITP对联盟营销的影响"
+        },
+        {
+          "id": "4-服务端追踪s2s与回调机制的崛起",
+          "text": "4. 服务端追踪（S2S）与回调机制的崛起"
+        },
+        {
+          "id": "s2s追踪的架构",
+          "text": "S2S追踪的架构"
+        },
+        {
+          "id": "s2s追踪的优势",
+          "text": "S2S追踪的优势"
+        },
+        {
+          "id": "s2s追踪的挑战",
+          "text": "S2S追踪的挑战"
+        },
+        {
+          "id": "5-下一代追踪技术",
+          "text": "5. 下一代追踪技术"
+        },
+        {
+          "id": "51-指纹识别替代识别",
+          "text": "5.1. 指纹识别（替代识别）"
+        },
+        {
+          "id": "52-数据无尘室与服务端gtm",
+          "text": "5.2. 数据无尘室与服务端GTM"
+        },
+        {
+          "id": "总结",
+          "text": "总结"
+        }
+      ],
+      "category": "商业\n营销",
+      "categories": [
+        {
+          "text": "商业",
+          "path": "/zh-cn/categories/business/"
+        },
+        {
+          "text": "营销",
+          "path": "/zh-cn/categories/marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/zh-cn/p/history-of-http/",
+        "/zh-cn/p/privacy-vs-convenience-big-data/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "bundle": "affiliate-marketing-mechanism",
+    "lang": "zh-tw",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "聯盟行銷的機制追蹤與轉換的技術內幕",
+          "text": "聯盟行銷的機制：追蹤與轉換的技術內幕"
+        },
+        {
+          "id": "1-聯盟行銷生態系統的全貌",
+          "text": "1. 聯盟行銷生態系統的全貌"
+        },
+        {
+          "id": "2-追蹤的基本機制客戶端",
+          "text": "2. 追蹤的基本機制（客戶端）"
+        },
+        {
+          "id": "21-追蹤網址與重新導向",
+          "text": "2.1. 追蹤網址與重新導向"
+        },
+        {
+          "id": "22-cookie-與-localstorage-的作用",
+          "text": "2.2. Cookie 與 LocalStorage 的作用"
+        },
+        {
+          "id": "3-隱私保護的浪潮itp-的衝擊",
+          "text": "3. 隱私保護的浪潮：ITP 的衝擊"
+        },
+        {
+          "id": "itp-對聯盟行銷造成的影響",
+          "text": "ITP 對聯盟行銷造成的影響"
+        },
+        {
+          "id": "4-伺服器端追蹤s2s與-postback-的崛起",
+          "text": "4. 伺服器端追蹤（S2S）與 Postback 的崛起"
+        },
+        {
+          "id": "s2s-追蹤的架構",
+          "text": "S2S 追蹤的架構"
+        },
+        {
+          "id": "s2s-追蹤的優勢",
+          "text": "S2S 追蹤的優勢"
+        },
+        {
+          "id": "s2s-追蹤的挑戰",
+          "text": "S2S 追蹤的挑戰"
+        },
+        {
+          "id": "5-次世代的追蹤技術",
+          "text": "5. 次世代的追蹤技術"
+        },
+        {
+          "id": "51-數位指紋替代性識別--fingerprinting",
+          "text": "5.1. 數位指紋（替代性識別 / Fingerprinting）"
+        },
+        {
+          "id": "52-資料無塵室與-server-side-gtm",
+          "text": "5.2. 資料無塵室與 Server-side GTM"
+        },
+        {
+          "id": "總結",
+          "text": "總結"
+        }
+      ],
+      "category": "商業\nWeb-Marketing",
+      "categories": [
+        {
+          "text": "商業",
+          "path": "/zh-tw/categories/business/"
+        },
+        {
+          "text": "Web-Marketing",
+          "path": "/zh-tw/categories/web-marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "聯盟行銷的機制追蹤與轉換的技術內幕",
+          "text": "聯盟行銷的機制：追蹤與轉換的技術內幕"
+        },
+        {
+          "id": "1-聯盟行銷生態系統的全貌",
+          "text": "1. 聯盟行銷生態系統的全貌"
+        },
+        {
+          "id": "2-追蹤的基本機制客戶端",
+          "text": "2. 追蹤的基本機制（客戶端）"
+        },
+        {
+          "id": "21-追蹤網址與重新導向",
+          "text": "2.1. 追蹤網址與重新導向"
+        },
+        {
+          "id": "22-cookie-與-localstorage-的作用",
+          "text": "2.2. Cookie 與 LocalStorage 的作用"
+        },
+        {
+          "id": "3-隱私保護的浪潮itp-的衝擊",
+          "text": "3. 隱私保護的浪潮：ITP 的衝擊"
+        },
+        {
+          "id": "itp-對聯盟行銷造成的影響",
+          "text": "ITP 對聯盟行銷造成的影響"
+        },
+        {
+          "id": "4-伺服器端追蹤s2s與-postback-的崛起",
+          "text": "4. 伺服器端追蹤（S2S）與 Postback 的崛起"
+        },
+        {
+          "id": "s2s-追蹤的架構",
+          "text": "S2S 追蹤的架構"
+        },
+        {
+          "id": "s2s-追蹤的優勢",
+          "text": "S2S 追蹤的優勢"
+        },
+        {
+          "id": "s2s-追蹤的挑戰",
+          "text": "S2S 追蹤的挑戰"
+        },
+        {
+          "id": "5-次世代的追蹤技術",
+          "text": "5. 次世代的追蹤技術"
+        },
+        {
+          "id": "51-數位指紋替代性識別--fingerprinting",
+          "text": "5.1. 數位指紋（替代性識別 / Fingerprinting）"
+        },
+        {
+          "id": "52-資料無塵室與-server-side-gtm",
+          "text": "5.2. 資料無塵室與 Server-side GTM"
+        },
+        {
+          "id": "總結",
+          "text": "總結"
+        }
+      ],
+      "category": "商業\n行銷",
+      "categories": [
+        {
+          "text": "商業",
+          "path": "/zh-tw/categories/business/"
+        },
+        {
+          "text": "行銷",
+          "path": "/zh-tw/categories/marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/zh-tw/p/history-of-http/",
+        "/zh-tw/p/privacy-vs-convenience-big-data/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "bundle": "affiliate-marketing-mechanism",
+    "lang": "ru",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "механизм-партнерского-маркетинга-техническая-сторона-отслеживания-и-конверсии",
+          "text": "Механизм партнерского маркетинга: Техническая сторона отслеживания и конверсии"
+        },
+        {
+          "id": "1-общая-картина-экосистемы-партнерского-маркетинга",
+          "text": "1. Общая картина экосистемы партнерского маркетинга"
+        },
+        {
+          "id": "2-базовые-механизмы-отслеживания-на-стороне-клиента",
+          "text": "2. Базовые механизмы отслеживания (на стороне клиента)"
+        },
+        {
+          "id": "21-url-адреса-отслеживания-и-перенаправления",
+          "text": "2.1. URL-адреса отслеживания и перенаправления"
+        },
+        {
+          "id": "22-роль-cookie-и-localstorage",
+          "text": "2.2. Роль Cookie и LocalStorage"
+        },
+        {
+          "id": "3-волна-защиты-конфиденциальности-удар-от-itp",
+          "text": "3. Волна защиты конфиденциальности: Удар от ITP"
+        },
+        {
+          "id": "влияние-itp-на-партнерский-маркетинг",
+          "text": "Влияние ITP на партнерский маркетинг"
+        },
+        {
+          "id": "4-отслеживание-на-стороне-сервера-s2s-и-рост-популярности-постбэков",
+          "text": "4. Отслеживание на стороне сервера (S2S) и рост популярности постбэков"
+        },
+        {
+          "id": "архитектура-s2s-отслеживания",
+          "text": "Архитектура S2S-отслеживания"
+        },
+        {
+          "id": "преимущества-s2s-отслеживания",
+          "text": "Преимущества S2S-отслеживания"
+        },
+        {
+          "id": "проблемы-s2s-отслеживания",
+          "text": "Проблемы S2S-отслеживания"
+        },
+        {
+          "id": "5-технологии-отслеживания-следующего-поколения",
+          "text": "5. Технологии отслеживания следующего поколения"
+        },
+        {
+          "id": "51-фигнерпринтинг-альтернативная-идентификация",
+          "text": "5.1. Фигнерпринтинг (Альтернативная идентификация)"
+        },
+        {
+          "id": "52-комнаты-чистых-данных-data-clean-rooms-и-серверный-gtm",
+          "text": "5.2. Комнаты чистых данных (Data Clean Rooms) и серверный GTM"
+        },
+        {
+          "id": "заключение",
+          "text": "Заключение"
+        }
+      ],
+      "category": "Бизнес\nWeb-Marketing",
+      "categories": [
+        {
+          "text": "Бизнес",
+          "path": "/ru/categories/business/"
+        },
+        {
+          "text": "Web-Marketing",
+          "path": "/ru/categories/web-marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "механизм-партнерского-маркетинга-техническая-сторона-отслеживания-и-конверсии",
+          "text": "Механизм партнерского маркетинга: Техническая сторона отслеживания и конверсии"
+        },
+        {
+          "id": "1-общая-картина-экосистемы-партнерского-маркетинга",
+          "text": "1. Общая картина экосистемы партнерского маркетинга"
+        },
+        {
+          "id": "2-базовые-механизмы-отслеживания-на-стороне-клиента",
+          "text": "2. Базовые механизмы отслеживания (на стороне клиента)"
+        },
+        {
+          "id": "21-url-адреса-отслеживания-и-перенаправления",
+          "text": "2.1. URL-адреса отслеживания и перенаправления"
+        },
+        {
+          "id": "22-роль-cookie-и-localstorage",
+          "text": "2.2. Роль Cookie и LocalStorage"
+        },
+        {
+          "id": "3-волна-защиты-конфиденциальности-удар-от-itp",
+          "text": "3. Волна защиты конфиденциальности: Удар от ITP"
+        },
+        {
+          "id": "влияние-itp-на-партнерский-маркетинг",
+          "text": "Влияние ITP на партнерский маркетинг"
+        },
+        {
+          "id": "4-отслеживание-на-стороне-сервера-s2s-и-рост-популярности-постбэков",
+          "text": "4. Отслеживание на стороне сервера (S2S) и рост популярности постбэков"
+        },
+        {
+          "id": "архитектура-s2s-отслеживания",
+          "text": "Архитектура S2S-отслеживания"
+        },
+        {
+          "id": "преимущества-s2s-отслеживания",
+          "text": "Преимущества S2S-отслеживания"
+        },
+        {
+          "id": "проблемы-s2s-отслеживания",
+          "text": "Проблемы S2S-отслеживания"
+        },
+        {
+          "id": "5-технологии-отслеживания-следующего-поколения",
+          "text": "5. Технологии отслеживания следующего поколения"
+        },
+        {
+          "id": "51-фигнерпринтинг-альтернативная-идентификация",
+          "text": "5.1. Фигнерпринтинг (Альтернативная идентификация)"
+        },
+        {
+          "id": "52-комнаты-чистых-данных-data-clean-rooms-и-серверный-gtm",
+          "text": "5.2. Комнаты чистых данных (Data Clean Rooms) и серверный GTM"
+        },
+        {
+          "id": "заключение",
+          "text": "Заключение"
+        }
+      ],
+      "category": "Бизнес\nМаркетинг",
+      "categories": [
+        {
+          "text": "Бизнес",
+          "path": "/ru/categories/business/"
+        },
+        {
+          "text": "Маркетинг",
+          "path": "/ru/categories/marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/ru/p/history-of-http/",
+        "/ru/p/privacy-vs-convenience-big-data/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "bundle": "affiliate-marketing-mechanism",
+    "lang": "ar",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "آلية-التسويق-بالعمولة-الجانب-التقني-للتتبع-والتحويل",
+          "text": "آلية التسويق بالعمولة: الجانب التقني للتتبع والتحويل"
+        },
+        {
+          "id": "1-الصورة-الشاملة-لنظام-التسويق-بالعمولة-البيئي",
+          "text": "1. الصورة الشاملة لنظام التسويق بالعمولة البيئي"
+        },
+        {
+          "id": "2-الآلية-الأساسية-للتتبع-من-جانب-العميل",
+          "text": "2. الآلية الأساسية للتتبع (من جانب العميل)"
+        },
+        {
+          "id": "21-رابط-التتبع-وإعادة-التوجيه",
+          "text": "2.1. رابط التتبع وإعادة التوجيه"
+        },
+        {
+          "id": "22-دور-cookie-و-localstorage",
+          "text": "2.2. دور Cookie و LocalStorage"
+        },
+        {
+          "id": "3-موجة-حماية-الخصوصية-تأثير-itp",
+          "text": "3. موجة حماية الخصوصية: تأثير ITP"
+        },
+        {
+          "id": "تأثير-itp-على-التسويق-بالعمولة",
+          "text": "تأثير ITP على التسويق بالعمولة"
+        },
+        {
+          "id": "4-صعود-التتبع-من-جانب-الخادم-s2s-وإعادة-الإرسال-postback",
+          "text": "4. صعود التتبع من جانب الخادم (S2S) وإعادة الإرسال (Postback)"
+        },
+        {
+          "id": "بنية-تتبع-s2s",
+          "text": "بنية تتبع S2S"
+        },
+        {
+          "id": "مزايا-تتبع-s2s",
+          "text": "مزايا تتبع S2S"
+        },
+        {
+          "id": "تحديات-تتبع-s2s",
+          "text": "تحديات تتبع S2S"
+        },
+        {
+          "id": "5-تقنيات-التتبع-للجيل-القادم",
+          "text": "5. تقنيات التتبع للجيل القادم"
+        },
+        {
+          "id": "51-البصمة-الرقمية-fingerprinting---التحديد-البديل",
+          "text": "5.1. البصمة الرقمية (Fingerprinting - التحديد البديل)"
+        },
+        {
+          "id": "52-غرف-البيانات-النظيفة-data-clean-rooms-و-google-tag-manager-من-جانب-الخادم",
+          "text": "5.2. غرف البيانات النظيفة (Data Clean Rooms) و Google Tag Manager من جانب الخادم"
+        },
+        {
+          "id": "الخلاصة",
+          "text": "الخلاصة"
+        }
+      ],
+      "category": "الأعمال\nWeb-Marketing",
+      "categories": [
+        {
+          "text": "الأعمال",
+          "path": "/ar/categories/business/"
+        },
+        {
+          "text": "Web-Marketing",
+          "path": "/ar/categories/web-marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "آلية-التسويق-بالعمولة-الجانب-التقني-للتتبع-والتحويل",
+          "text": "آلية التسويق بالعمولة: الجانب التقني للتتبع والتحويل"
+        },
+        {
+          "id": "1-الصورة-الشاملة-لنظام-التسويق-بالعمولة-البيئي",
+          "text": "1. الصورة الشاملة لنظام التسويق بالعمولة البيئي"
+        },
+        {
+          "id": "2-الآلية-الأساسية-للتتبع-من-جانب-العميل",
+          "text": "2. الآلية الأساسية للتتبع (من جانب العميل)"
+        },
+        {
+          "id": "21-رابط-التتبع-وإعادة-التوجيه",
+          "text": "2.1. رابط التتبع وإعادة التوجيه"
+        },
+        {
+          "id": "22-دور-cookie-و-localstorage",
+          "text": "2.2. دور Cookie و LocalStorage"
+        },
+        {
+          "id": "3-موجة-حماية-الخصوصية-تأثير-itp",
+          "text": "3. موجة حماية الخصوصية: تأثير ITP"
+        },
+        {
+          "id": "تأثير-itp-على-التسويق-بالعمولة",
+          "text": "تأثير ITP على التسويق بالعمولة"
+        },
+        {
+          "id": "4-صعود-التتبع-من-جانب-الخادم-s2s-وإعادة-الإرسال-postback",
+          "text": "4. صعود التتبع من جانب الخادم (S2S) وإعادة الإرسال (Postback)"
+        },
+        {
+          "id": "بنية-تتبع-s2s",
+          "text": "بنية تتبع S2S"
+        },
+        {
+          "id": "مزايا-تتبع-s2s",
+          "text": "مزايا تتبع S2S"
+        },
+        {
+          "id": "تحديات-تتبع-s2s",
+          "text": "تحديات تتبع S2S"
+        },
+        {
+          "id": "5-تقنيات-التتبع-للجيل-القادم",
+          "text": "5. تقنيات التتبع للجيل القادم"
+        },
+        {
+          "id": "51-البصمة-الرقمية-fingerprinting---التحديد-البديل",
+          "text": "5.1. البصمة الرقمية (Fingerprinting - التحديد البديل)"
+        },
+        {
+          "id": "52-غرف-البيانات-النظيفة-data-clean-rooms-و-google-tag-manager-من-جانب-الخادم",
+          "text": "5.2. غرف البيانات النظيفة (Data Clean Rooms) و Google Tag Manager من جانب الخادم"
+        },
+        {
+          "id": "الخلاصة",
+          "text": "الخلاصة"
+        }
+      ],
+      "category": "الأعمال\nالتسويق",
+      "categories": [
+        {
+          "text": "الأعمال",
+          "path": "/ar/categories/business/"
+        },
+        {
+          "text": "التسويق",
+          "path": "/ar/categories/marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/ar/p/history-of-http/",
+        "/ar/p/privacy-vs-convenience-big-data/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "bundle": "affiliate-marketing-mechanism",
+    "lang": "hi",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "एफलएट-क-करयपरणल-टरकग-और-कनवरजन-क-तकनक-पहल",
+          "text": "एफिलिएट की कार्यप्रणाली: ट्रैकिंग और कन्वर्जन के तकनीकी पहलू"
+        },
+        {
+          "id": "1-एफलएट-इकससटम-क-समगर-दशय",
+          "text": "1. एफिलिएट इकोसिस्टम का समग्र दृश्य"
+        },
+        {
+          "id": "2-टरकग-क-मल-ततर-कलइट-सइड",
+          "text": "2. ट्रैकिंग का मूल तंत्र (क्लाइंट साइड)"
+        },
+        {
+          "id": "21-टरकग-url-और-रडयरकट",
+          "text": "2.1. ट्रैकिंग URL और रीडायरेक्ट"
+        },
+        {
+          "id": "22-ककज-और-लकल-सटरज-क-भमक",
+          "text": "2.2. कुकीज़ और लोकल स्टोरेज की भूमिका"
+        },
+        {
+          "id": "3-गपनयत-सरकषण-क-लहर-itp-क-परभव",
+          "text": "3. गोपनीयता संरक्षण की लहर: ITP का प्रभाव"
+        },
+        {
+          "id": "itp-क-एफलएट-पर-परभव",
+          "text": "ITP का एफिलिएट पर प्रभाव"
+        },
+        {
+          "id": "4-सरवर-सइड-टरकग-s2s-और-पसटबक-क-उदय",
+          "text": "4. सर्वर-साइड ट्रैकिंग (S2S) और पोस्टबैक का उदय"
+        },
+        {
+          "id": "s2s-टरकग-क-आरकटकचर",
+          "text": "S2S ट्रैकिंग का आर्किटेक्चर"
+        },
+        {
+          "id": "s2s-टरकग-क-लभ",
+          "text": "S2S ट्रैकिंग के लाभ"
+        },
+        {
+          "id": "s2s-टरकग-क-चनतय",
+          "text": "S2S ट्रैकिंग की चुनौतियाँ"
+        },
+        {
+          "id": "5-अगल-पढ-क-टरकग-तकनक",
+          "text": "5. अगली पीढ़ी की ट्रैकिंग तकनीकें"
+        },
+        {
+          "id": "51-फगरपरटग-वकलपक-पहचन",
+          "text": "5.1. फ़िंगरप्रिंटिंग (वैकल्पिक पहचान)"
+        },
+        {
+          "id": "52-डट-कलन-रम-और-सरवर-सइड-gtm",
+          "text": "5.2. डेटा क्लीन रूम और सर्वर-साइड GTM"
+        },
+        {
+          "id": "नषकरष",
+          "text": "निष्कर्ष"
+        }
+      ],
+      "category": "व्यवसाय\nWeb-Marketing",
+      "categories": [
+        {
+          "text": "व्यवसाय",
+          "path": "/hi/categories/business/"
+        },
+        {
+          "text": "Web-Marketing",
+          "path": "/hi/categories/web-marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "एफलएट-क-करयपरणल-टरकग-और-कनवरजन-क-तकनक-पहल",
+          "text": "एफिलिएट की कार्यप्रणाली: ट्रैकिंग और कन्वर्जन के तकनीकी पहलू"
+        },
+        {
+          "id": "1-एफलएट-इकससटम-क-समगर-दशय",
+          "text": "1. एफिलिएट इकोसिस्टम का समग्र दृश्य"
+        },
+        {
+          "id": "2-टरकग-क-मल-ततर-कलइट-सइड",
+          "text": "2. ट्रैकिंग का मूल तंत्र (क्लाइंट साइड)"
+        },
+        {
+          "id": "21-टरकग-url-और-रडयरकट",
+          "text": "2.1. ट्रैकिंग URL और रीडायरेक्ट"
+        },
+        {
+          "id": "22-ककज-और-लकल-सटरज-क-भमक",
+          "text": "2.2. कुकीज़ और लोकल स्टोरेज की भूमिका"
+        },
+        {
+          "id": "3-गपनयत-सरकषण-क-लहर-itp-क-परभव",
+          "text": "3. गोपनीयता संरक्षण की लहर: ITP का प्रभाव"
+        },
+        {
+          "id": "itp-क-एफलएट-पर-परभव",
+          "text": "ITP का एफिलिएट पर प्रभाव"
+        },
+        {
+          "id": "4-सरवर-सइड-टरकग-s2s-और-पसटबक-क-उदय",
+          "text": "4. सर्वर-साइड ट्रैकिंग (S2S) और पोस्टबैक का उदय"
+        },
+        {
+          "id": "s2s-टरकग-क-आरकटकचर",
+          "text": "S2S ट्रैकिंग का आर्किटेक्चर"
+        },
+        {
+          "id": "s2s-टरकग-क-लभ",
+          "text": "S2S ट्रैकिंग के लाभ"
+        },
+        {
+          "id": "s2s-टरकग-क-चनतय",
+          "text": "S2S ट्रैकिंग की चुनौतियाँ"
+        },
+        {
+          "id": "5-अगल-पढ-क-टरकग-तकनक",
+          "text": "5. अगली पीढ़ी की ट्रैकिंग तकनीकें"
+        },
+        {
+          "id": "51-फगरपरटग-वकलपक-पहचन",
+          "text": "5.1. फ़िंगरप्रिंटिंग (वैकल्पिक पहचान)"
+        },
+        {
+          "id": "52-डट-कलन-रम-और-सरवर-सइड-gtm",
+          "text": "5.2. डेटा क्लीन रूम और सर्वर-साइड GTM"
+        },
+        {
+          "id": "नषकरष",
+          "text": "निष्कर्ष"
+        }
+      ],
+      "category": "व्यवसाय\nविपणन",
+      "categories": [
+        {
+          "text": "व्यवसाय",
+          "path": "/hi/categories/business/"
+        },
+        {
+          "text": "विपणन",
+          "path": "/hi/categories/marketing/"
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        "/hi/p/history-of-http/",
+        "/hi/p/privacy-vs-convenience-big-data/"
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  }
+]

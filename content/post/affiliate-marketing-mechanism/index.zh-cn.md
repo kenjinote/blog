@@ -2,7 +2,7 @@
 title: "联盟营销机制：追踪与转化的技术内幕"
 description: "从Cookie到回调（Postback）。基于效果的广告系统架构。"
 slug: "affiliate-marketing-mechanism"
-categories: ["business", "web-marketing"]
+categories: ["business", "marketing"]
 tags: ["tech", "business", "affiliate", "marketing"]
 image: "eyecatch.jpg"
 date: 2026-10-01T21:58:09+09:00
@@ -53,7 +53,7 @@ ASP实时处理海量流量，作为一个巨大的数据基盘，以毫秒级�
 1. **记录点击**: ASP服务器会将访问用户的IP地址、User-Agent、时间戳，以及URL中包含的联盟ID（`aff_id`）和活动ID（`campaign_id`）记录到数据库中。
 2. **生成点击ID**: 生成一个唯一标识该点击事件的“点击ID（Click ID）”。
 3. **赋予Cookie**: ASP向用户的浏览器下发其自身域名（第三方）的Cookie，并将点击ID保存在其中。
-4. **重定向**: 处理完成后，立即返回HTTP 302（Found）或301（Moved Permanently）响应，将用户重定向至广告主的落地页（LP）。此时，也有时会将点击ID作为URL参数附加。
+4. **重定向**: 处理完成后，立即返回[HTTP 302](/zh-cn/p/history-of-http/)（Found）或301（Moved Permanently）响应，将用户重定向至广告主的落地页（LP）。此时，也有时会将点击ID作为URL参数附加。
 
 ### 2.2. Cookie与LocalStorage的作用
 
@@ -72,7 +72,7 @@ ASP实时处理海量流量，作为一个巨大的数据基盘，以毫秒级�
 
 客户端追踪虽然易于实现，但也存在重大问题。那就是“利用第三方Cookie过度追踪用户”。
 
-用户对在不知情的情况下跨多个网站收集行为记录的隐私担忧日益加剧。以苹果Safari浏览器内置的**ITP（智能防追踪）**为首，各浏览器厂商开始引入强力的追踪限制。
+用户对在不知情的情况下跨多个网站收集行为记录的[隐私担忧](/zh-cn/p/privacy-vs-convenience-big-data/)日益加剧。以苹果Safari浏览器内置的**ITP（智能防追踪）**为首，各浏览器厂商开始引入强力的追踪限制。
 
 ### ITP对联盟营销的影响
 

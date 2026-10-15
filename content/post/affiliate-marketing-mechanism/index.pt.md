@@ -2,7 +2,7 @@
 title: "O Mecanismo de Afiliados: Os Bastidores Técnicos do Rastreamento e Conversão"
 description: "Dos cookies ao postback. A arquitetura de sistemas da publicidade baseada em desempenho."
 slug: "affiliate-marketing-mechanism"
-categories: ["business", "web-marketing"]
+categories: ["business", "marketing"]
 tags: ["tech", "business", "affiliate", "marketing"]
 image: "eyecatch.jpg"
 date: 2026-10-01T21:58:09+09:00
@@ -53,7 +53,7 @@ Quando o usuário clica neste link, ocorrem os seguintes processos:
 1. **Registro do clique**: O servidor da ASP registra o endereço IP, o User-Agent, o timestamp e dados da URL como o ID do afiliado (`aff_id`) e o ID da campanha (`campaign_id`) no banco de dados.
 2. **Geração do ID de clique**: É gerado um "ID de clique" (Click ID) único para identificar este evento.
 3. **Atribuição do Cookie**: A ASP emite um cookie do seu próprio domínio (cookie de terceiros) no navegador do usuário e armazena o Click ID nele.
-4. **Redirecionamento**: Assim que o processo é concluído, o servidor retorna uma resposta HTTP 302 (Found) ou 301 (Moved Permanently), redirecionando o usuário para a página de destino (Landing Page) do anunciante. Muitas vezes, o Click ID é incluído como parâmetro na URL.
+4. **Redirecionamento**: Assim que o processo é concluído, o servidor retorna uma resposta [HTTP 302](/pt/p/history-of-http/) (Found) ou 301 (Moved Permanently), redirecionando o usuário para a página de destino (Landing Page) do anunciante. Muitas vezes, o Click ID é incluído como parâmetro na URL.
 
 ### 2.2. O Papel do Cookie e do LocalStorage
 
@@ -72,7 +72,7 @@ Além disso, para se prevenir contra a expiração ou exclusão dos cookies, tor
 
 O rastreamento do lado do cliente era fácil de implementar, mas apresentava um grande problema: o "rastreamento excessivo do usuário por meio de cookies de terceiros".
 
-Com o aumento da preocupação com a privacidade em relação à coleta de históricos de navegação através de múltiplos sites sem o conhecimento do usuário, os desenvolvedores de navegadores começaram a introduzir fortes restrições de rastreamento, sendo o **ITP (Intelligent Tracking Prevention)** do navegador Safari da Apple o pioneiro.
+Com o aumento da [preocupação com a privacidade](/pt/p/privacy-vs-convenience-big-data/) em relação à coleta de históricos de navegação através de múltiplos sites sem o conhecimento do usuário, os desenvolvedores de navegadores começaram a introduzir fortes restrições de rastreamento, sendo o **ITP (Intelligent Tracking Prevention)** do navegador Safari da Apple o pioneiro.
 
 ### O Impacto do ITP nos Afiliados
 

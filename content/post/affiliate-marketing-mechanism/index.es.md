@@ -2,7 +2,7 @@
 title: "Mecanismo del marketing de afiliación: El trasfondo técnico del seguimiento y la conversión"
 description: "Desde las cookies hasta el postback. La arquitectura del sistema de publicidad basada en resultados."
 slug: "affiliate-marketing-mechanism"
-categories: ["business", "web-marketing"]
+categories: ["business", "marketing"]
 tags: ["tech", "business", "affiliate", "marketing"]
 image: "eyecatch.jpg"
 date: 2026-10-01T21:58:09+09:00
@@ -53,7 +53,7 @@ Cuando un usuario hace clic en este enlace, ocurre el siguiente proceso:
 1. **Registro de clics**: El servidor del ASP registra en su base de datos la dirección IP del usuario que accedió, el User-Agent, la marca de tiempo, así como el ID de afiliado (`aff_id`) y el ID de campaña (`campaign_id`) incluidos en la URL.
 2. **Generación del ID de clic**: Se genera un "ID de clic (Click ID)" para identificar de forma única este evento de clic.
 3. **Asignación de Cookie**: El ASP emite una Cookie de su propio dominio (terceros) al navegador del usuario y guarda el ID de clic en ella.
-4. **Redirección**: Al mismo tiempo que se completa el proceso, se devuelve una respuesta HTTP 302 (Found) o 301 (Moved Permanently), redirigiendo al usuario a la página de destino (LP) del anunciante. En este momento, también se puede agregar el ID de clic como parámetro en la URL.
+4. **Redirección**: Al mismo tiempo que se completa el proceso, se devuelve una respuesta [HTTP 302](/es/p/history-of-http/) (Found) o 301 (Moved Permanently), redirigiendo al usuario a la página de destino (LP) del anunciante. En este momento, también se puede agregar el ID de clic como parámetro en la URL.
 
 ### 2.2. El papel de las Cookies y LocalStorage
 
@@ -72,7 +72,7 @@ Además, en preparación para la expiración o eliminación de las Cookies, el m
 
 El seguimiento en el lado del cliente, aunque fácil de implementar, tenía un problema importante: "el seguimiento excesivo del usuario mediante Cookies de terceros".
 
-A medida que aumentaba la preocupación por la privacidad debido a la recopilación del historial de comportamiento en múltiples sitios sin el conocimiento de los usuarios, cada proveedor de navegadores comenzó a introducir fuertes restricciones de seguimiento, empezando por la **ITP (Prevención de Seguimiento Inteligente)** instalada en el navegador Safari de Apple.
+A medida que aumentaba la [preocupación por la privacidad](/es/p/privacy-vs-convenience-big-data/) debido a la recopilación del historial de comportamiento en múltiples sitios sin el conocimiento de los usuarios, cada proveedor de navegadores comenzó a introducir fuertes restricciones de seguimiento, empezando por la **ITP (Prevención de Seguimiento Inteligente)** instalada en el navegador Safari de Apple.
 
 ### El impacto de ITP en los afiliados
 

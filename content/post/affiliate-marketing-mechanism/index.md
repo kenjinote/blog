@@ -2,7 +2,7 @@
 title: "アフィリエイトの仕組み：トラッキングとコンバージョンの技術的裏側"
 description: "クッキーからポストバックまで。成果報酬型広告のシステムアーキテクチャ。"
 slug: "affiliate-marketing-mechanism"
-categories: ["business", "web-marketing"]
+categories: ["business", "marketing"]
 tags: ["tech", "business", "affiliate", "marketing"]
 image: "eyecatch.jpg"
 date: 2026-10-01T21:58:09+09:00
@@ -53,7 +53,7 @@ ASPは、膨大なトラフィックをリアルタイムで処理し、「誰�
 1. **クリックの記録**: ASPのサーバーは、アクセスしてきたユーザーのIPアドレス、User-Agent、タイムスタンプ、そしてURLに含まれるアフィリエイトID（`aff_id`）やキャンペーンID（`campaign_id`）をデータベースに記録します。
 2. **クリックIDの生成**: このクリックイベントを一意に識別するための「クリックID（Click ID）」が生成されます。
 3. **Cookieの付与**: ASPは、ユーザーのブラウザに対して自社ドメイン（サードパーティ）のCookieを発行し、そこにクリックIDを保存します。
-4. **リダイレクト**: 処理が完了すると同時に、HTTP 302（Found）または 301（Moved Permanently）レスポンスを返し、広告主のランディングページ（LP）へユーザーをリダイレクトさせます。この際、URLのパラメータとしてクリックIDを付与することもあります。
+4. **リダイレクト**: 処理が完了すると同時に、[HTTP 302](/p/history-of-http/)（Found）または 301（Moved Permanently）レスポンスを返し、広告主のランディングページ（LP）へユーザーをリダイレクトさせます。この際、URLのパラメータとしてクリックIDを付与することもあります。
 
 ### 2.2. CookieとLocalStorageの役割
 
@@ -72,7 +72,7 @@ ASPは、膨大なトラフィックをリアルタイムで処理し、「誰�
 
 クライアントサイド・トラッキングは、実装が容易である反面、大きな問題を抱えていました。それが「サードパーティCookieによる過度なユーザー追跡」です。
 
-ユーザーが知らない間に複数のサイトを横断して行動履歴が収集されることへのプライバシー上の懸念が高まり、AppleのSafariブラウザに搭載された**ITP（Intelligent Tracking Prevention）**をはじめ、各ブラウザベンダーが強力なトラッキング制限を導入し始めました。
+ユーザーが知らない間に複数のサイトを横断して行動履歴が収集されることへの[プライバシー上の懸念](/p/privacy-vs-convenience-big-data/)が高まり、AppleのSafariブラウザに搭載された**ITP（Intelligent Tracking Prevention）**をはじめ、各ブラウザベンダーが強力なトラッキング制限を導入し始めました。
 
 ### ITPがアフィリエイトに与えた影響
 

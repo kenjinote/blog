@@ -1,0 +1,366 @@
+[
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "HTTP 302",
+        "url": "/p/history-of-http/"
+      },
+      {
+        "term": "プライバシー上の懸念",
+        "url": "/p/privacy-vs-convenience-big-data/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "categories": "Replace undefined web-marketing with existing marketing; retain business.",
+    "updated_sha256": "14975b3dc9a2261abb92eed57139bc47769b10a13197b613896bd80de0966200"
+  },
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.en.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "HTTP 302",
+        "url": "/en/p/history-of-http/"
+      },
+      {
+        "term": "privacy concerns",
+        "url": "/en/p/privacy-vs-convenience-big-data/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "categories": "Replace undefined web-marketing with existing marketing; retain business.",
+    "updated_sha256": "5639dcca97642ca38783dfc0bbc57d831c71386e0b160b0eef7f11c4053976a7"
+  },
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.de.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "HTTP 302",
+        "url": "/de/p/history-of-http/"
+      },
+      {
+        "term": "Datenschutzbedenken",
+        "url": "/de/p/privacy-vs-convenience-big-data/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "categories": "Replace undefined web-marketing with existing marketing; retain business.",
+    "updated_sha256": "139521e090426df33d59b259dad6989478fec287796cc808aa7bb9c9eab4af5c"
+  },
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.fr.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "HTTP 302",
+        "url": "/fr/p/history-of-http/"
+      },
+      {
+        "term": "préoccupations croissantes en matière de confidentialité",
+        "url": "/fr/p/privacy-vs-convenience-big-data/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "categories": "Replace undefined web-marketing with existing marketing; retain business.",
+    "updated_sha256": "f3766b87534648b761d86cf1c34910eb0009ff3da112480a47b22298b0720706"
+  },
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.es.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "HTTP 302",
+        "url": "/es/p/history-of-http/"
+      },
+      {
+        "term": "preocupación por la privacidad",
+        "url": "/es/p/privacy-vs-convenience-big-data/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "categories": "Replace undefined web-marketing with existing marketing; retain business.",
+    "updated_sha256": "587c6b766fd1edd59d1f03da5b86992a71396d5e933e870ff02c3ad0ad569c0f"
+  },
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.pt.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "HTTP 302",
+        "url": "/pt/p/history-of-http/"
+      },
+      {
+        "term": "preocupação com a privacidade",
+        "url": "/pt/p/privacy-vs-convenience-big-data/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "categories": "Replace undefined web-marketing with existing marketing; retain business.",
+    "updated_sha256": "d37a4d0990d858f07b7a5d193e1e03fee463aafbb50c52b6e26a23e51563de34"
+  },
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.id.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "HTTP 302",
+        "url": "/id/p/history-of-http/"
+      },
+      {
+        "term": "kekhawatiran terkait privasi",
+        "url": "/id/p/privacy-vs-convenience-big-data/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "categories": "Replace undefined web-marketing with existing marketing; retain business.",
+    "updated_sha256": "929668a96cd6d345b34f025ca5873d8e42c93350c5391fbc5e6af2ef15abc969"
+  },
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.ko.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "HTTP 302",
+        "url": "/ko/p/history-of-http/"
+      },
+      {
+        "term": "개인정보 보호 우려",
+        "url": "/ko/p/privacy-vs-convenience-big-data/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "categories": "Replace undefined web-marketing with existing marketing; retain business.",
+    "updated_sha256": "e9d9f3672c97defcd53e824ae825b26ef88373378a28279c5a0784edbcb2cbd7"
+  },
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.zh-cn.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "HTTP 302",
+        "url": "/zh-cn/p/history-of-http/"
+      },
+      {
+        "term": "隐私担忧",
+        "url": "/zh-cn/p/privacy-vs-convenience-big-data/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "categories": "Replace undefined web-marketing with existing marketing; retain business.",
+    "updated_sha256": "2de9b6b5b8416862849ec32a46f43479a7be63466513c1d2278cf937a111981f"
+  },
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.zh-tw.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "HTTP 302",
+        "url": "/zh-tw/p/history-of-http/"
+      },
+      {
+        "term": "隱私疑慮",
+        "url": "/zh-tw/p/privacy-vs-convenience-big-data/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "categories": "Replace undefined web-marketing with existing marketing; retain business.",
+    "updated_sha256": "a4ddd48883706c665f9941a624a3a6d2079765485c3a40cbb40275d398c642a9"
+  },
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.ru.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "HTTP-ответ 302",
+        "url": "/ru/p/history-of-http/"
+      },
+      {
+        "term": "опасения по поводу конфиденциальности",
+        "url": "/ru/p/privacy-vs-convenience-big-data/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "categories": "Replace undefined web-marketing with existing marketing; retain business.",
+    "updated_sha256": "f80aef9d0d0450885bfffa9b476e8b60927c9df47b89ecbe802ae46c9561a56b"
+  },
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.ar.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "HTTP 302",
+        "url": "/ar/p/history-of-http/"
+      },
+      {
+        "term": "المخاوف بشأن الخصوصية",
+        "url": "/ar/p/privacy-vs-convenience-big-data/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "categories": "Replace undefined web-marketing with existing marketing; retain business.",
+    "updated_sha256": "04dbdee0c847ff8fe99e37537f3f240eb75f9b75cd23f2dd006d40fd8eba12ec"
+  },
+  {
+    "path": "content/post/affiliate-marketing-mechanism/index.hi.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "HTTP 302",
+        "url": "/hi/p/history-of-http/"
+      },
+      {
+        "term": "गोपनीयता संबंधी चिंताएँ",
+        "url": "/hi/p/privacy-vs-convenience-big-data/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "category_change": {
+      "before": [
+        "business",
+        "web-marketing"
+      ],
+      "after": [
+        "business",
+        "marketing"
+      ]
+    },
+    "categories": "Replace undefined web-marketing with existing marketing; retain business.",
+    "updated_sha256": "2aadf0988bf4433c551c4b991200146c5997376f735aa14da9e2a4b324f101c2"
+  }
+]

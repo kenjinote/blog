@@ -24612,14 +24612,20 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null,
-      "review_note": "Full biography and mathematical legacy read. Retain mathematics/biography. Self-link cleanup and same-language Euler/Lagrange/Jacobi references pending; inspect missing Galois/Gauss references by language."
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed explicit link/category-only diff, protected content and heading invariants",
+        "hugo": "passed --minify --buildFuture; exit 0; 548228 ms",
+        "browser": "passed baseline comparison, same-language published link HTTP 200, translated category labels and legacy redirects",
+        "categories": "3996 pre-existing errors, down 13 from previous 4009",
+        "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
+      },
+      "batch": "002-abel-remaining",
+      "review_note": "Full body reviewed. Mathematical biography, retain math/biography."
     },
     {
       "path": "content/post/abel/index.de.md",
@@ -24746,14 +24752,20 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null,
-      "review_note": "Full biography and mathematical legacy read. Retain mathematics/biography. Self-link cleanup and same-language Euler/Lagrange/Jacobi references pending; inspect missing Galois/Gauss references by language."
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed explicit link/category-only diff, protected content and heading invariants",
+        "hugo": "passed --minify --buildFuture; exit 0; 548228 ms",
+        "browser": "passed baseline comparison, same-language published link HTTP 200, translated category labels and legacy redirects",
+        "categories": "3996 pre-existing errors, down 13 from previous 4009",
+        "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
+      },
+      "batch": "002-abel-remaining",
+      "review_note": "Full body reviewed. Mathematical biography, retain math/biography."
     },
     {
       "path": "content/post/abel/index.id.md",
@@ -24796,14 +24808,20 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null,
-      "review_note": "Body reviewed; mathematics/biography appropriate. Self links need removal; references to Euler, Lagrange, Jacobi need linking. Korean also lacks contextual Galois/Gauss links. No edits yet."
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed explicit link/category-only diff, protected content and heading invariants",
+        "hugo": "passed --minify --buildFuture; exit 0; 548228 ms",
+        "browser": "passed baseline comparison, same-language published link HTTP 200, translated category labels and legacy redirects",
+        "categories": "3996 pre-existing errors, down 13 from previous 4009",
+        "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
+      },
+      "batch": "002-abel-remaining",
+      "review_note": "Full body reviewed. Mathematical biography, retain math/biography."
     },
     {
       "path": "content/post/abel/index.md",
@@ -24874,14 +24892,20 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null,
-      "review_note": "Full biography and mathematical legacy read. Retain mathematics/biography. Self-link cleanup and same-language Euler/Lagrange/Jacobi references pending; inspect missing Galois/Gauss references by language."
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed explicit link/category-only diff, protected content and heading invariants",
+        "hugo": "passed --minify --buildFuture; exit 0; 548228 ms",
+        "browser": "passed baseline comparison, same-language published link HTTP 200, translated category labels and legacy redirects",
+        "categories": "3996 pre-existing errors, down 13 from previous 4009",
+        "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
+      },
+      "batch": "002-abel-remaining",
+      "review_note": "Full body reviewed. Mathematical biography, retain math/biography."
     },
     {
       "path": "content/post/abel/index.zh-cn.md",
@@ -24896,14 +24920,20 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null,
-      "review_note": "Body reviewed; mathematics/biography appropriate. Self links need removal; references to Euler, Lagrange, Jacobi need linking. Korean also lacks contextual Galois/Gauss links. No edits yet."
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed explicit link/category-only diff, protected content and heading invariants",
+        "hugo": "passed --minify --buildFuture; exit 0; 548228 ms",
+        "browser": "passed baseline comparison, same-language published link HTTP 200, translated category labels and legacy redirects",
+        "categories": "3996 pre-existing errors, down 13 from previous 4009",
+        "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
+      },
+      "batch": "002-abel-remaining",
+      "review_note": "Full body reviewed. Mathematical biography, retain math/biography."
     },
     {
       "path": "content/post/abel/index.zh-tw.md",
@@ -24918,14 +24948,20 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null,
-      "review_note": "Full biography and mathematical legacy read. Retain mathematics/biography. Self-link cleanup and same-language Euler/Lagrange/Jacobi references pending; inspect missing Galois/Gauss references by language."
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed explicit link/category-only diff, protected content and heading invariants",
+        "hugo": "passed --minify --buildFuture; exit 0; 548228 ms",
+        "browser": "passed baseline comparison, same-language published link HTTP 200, translated category labels and legacy redirects",
+        "categories": "3996 pre-existing errors, down 13 from previous 4009",
+        "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
+      },
+      "batch": "002-abel-remaining",
+      "review_note": "Full body reviewed. Mathematical biography, retain math/biography."
     },
     {
       "path": "content/post/accelerometer-sensor-mechanism/index.ar.md",
@@ -25272,11 +25308,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_note": "Full body read: nonlinear acoustics, standing waves, Gorkov potential, phased arrays, size/density/droplet limits and applications. Proposed canonical science/physics/engineering IDs. HTML strong elements require explicit source-span link editing, not blind scanner. Math derivation in section 3.3 appears inconsistent with preceding potential; record for separate factual review, do not change in this audit. Links pending."
     },
     {
       "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.es.md",
@@ -26138,13 +26175,20 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed explicit link/category-only diff, protected content and heading invariants",
+        "hugo": "passed --minify --buildFuture; exit 0; 548228 ms",
+        "browser": "passed baseline comparison, same-language published link HTTP 200, translated category labels and legacy redirects",
+        "categories": "3996 pre-existing errors, down 13 from previous 4009",
+        "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
+      },
+      "batch": "003-affiliate-marketing",
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.de.md",
@@ -26161,14 +26205,20 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null,
-      "review_note": "Full body read: affiliate ecosystem, redirects, cookies, ITP, S2S, privacy and fingerprinting. Proposed existing business/marketing. Link review pending. Existing typo eindeuclease and absolute ITP claim noted for separate editorial review."
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed explicit link/category-only diff, protected content and heading invariants",
+        "hugo": "passed --minify --buildFuture; exit 0; 548228 ms",
+        "browser": "passed baseline comparison, same-language published link HTTP 200, translated category labels and legacy redirects",
+        "categories": "3996 pre-existing errors, down 13 from previous 4009",
+        "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
+      },
+      "batch": "003-affiliate-marketing",
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.en.md",
@@ -26185,14 +26235,20 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null,
-      "review_note": "Full body read: affiliate ecosystem, redirects, cookies, ITP and S2S architecture. Proposed business/marketing using existing marketing instead of undefined web-marketing. Link review and other languages pending. Factual absolutes about ITP immunity are outside this audit and should be separately reviewed."
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed explicit link/category-only diff, protected content and heading invariants",
+        "hugo": "passed --minify --buildFuture; exit 0; 548228 ms",
+        "browser": "passed baseline comparison, same-language published link HTTP 200, translated category labels and legacy redirects",
+        "categories": "3996 pre-existing errors, down 13 from previous 4009",
+        "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
+      },
+      "batch": "003-affiliate-marketing",
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.es.md",
@@ -26209,14 +26265,20 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null,
-      "review_note": "Full body read: affiliate ecosystem, redirects, cookies, ITP, S2S, privacy and fingerprinting. Proposed existing business/marketing. Link review pending. Absolute ITP immunity claim noted for separate editorial review."
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed explicit link/category-only diff, protected content and heading invariants",
+        "hugo": "passed --minify --buildFuture; exit 0; 548228 ms",
+        "browser": "passed baseline comparison, same-language published link HTTP 200, translated category labels and legacy redirects",
+        "categories": "3996 pre-existing errors, down 13 from previous 4009",
+        "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
+      },
+      "batch": "003-affiliate-marketing",
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.fr.md",
@@ -26233,14 +26295,20 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null,
-      "review_note": "Full body read: affiliate ecosystem, redirects, cookies, ITP, S2S, privacy and fingerprinting. Proposed existing business/marketing. Link review pending. Absolute ITP immunity claim noted for separate editorial review."
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed explicit link/category-only diff, protected content and heading invariants",
+        "hugo": "passed --minify --buildFuture; exit 0; 548228 ms",
+        "browser": "passed baseline comparison, same-language published link HTTP 200, translated category labels and legacy redirects",
+        "categories": "3996 pre-existing errors, down 13 from previous 4009",
+        "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
+      },
+      "batch": "003-affiliate-marketing",
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.hi.md",
@@ -26257,13 +26325,20 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed explicit link/category-only diff, protected content and heading invariants",
+        "hugo": "passed --minify --buildFuture; exit 0; 548228 ms",
+        "browser": "passed baseline comparison, same-language published link HTTP 200, translated category labels and legacy redirects",
+        "categories": "3996 pre-existing errors, down 13 from previous 4009",
+        "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
+      },
+      "batch": "003-affiliate-marketing",
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.id.md",
@@ -26280,14 +26355,20 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null,
-      "review_note": "Full body read: affiliate ecosystem, redirects, cookies, ITP, S2S, privacy and fingerprinting. Proposed existing business/marketing. Link review pending. Absolute ITP immunity claim noted for separate editorial review."
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed explicit link/category-only diff, protected content and heading invariants",
+        "hugo": "passed --minify --buildFuture; exit 0; 548228 ms",
+        "browser": "passed baseline comparison, same-language published link HTTP 200, translated category labels and legacy redirects",
+        "categories": "3996 pre-existing errors, down 13 from previous 4009",
+        "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
+      },
+      "batch": "003-affiliate-marketing",
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.ko.md",
@@ -26304,14 +26385,20 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null,
-      "review_note": "Full body read: affiliate ecosystem, redirects, cookies, ITP, S2S, privacy and fingerprinting. Proposed existing business/marketing. Link review pending. Absolute ITP immunity claim noted for separate editorial review."
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed explicit link/category-only diff, protected content and heading invariants",
+        "hugo": "passed --minify --buildFuture; exit 0; 548228 ms",
+        "browser": "passed baseline comparison, same-language published link HTTP 200, translated category labels and legacy redirects",
+        "categories": "3996 pre-existing errors, down 13 from previous 4009",
+        "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
+      },
+      "batch": "003-affiliate-marketing",
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.md",
@@ -26328,14 +26415,20 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null,
-      "review_note": "Full body read: affiliate ecosystem, redirects, cookies, ITP and S2S architecture. Proposed business/marketing using existing marketing instead of undefined web-marketing. Link review and other languages pending. Factual absolutes about ITP immunity are outside this audit and should be separately reviewed."
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed explicit link/category-only diff, protected content and heading invariants",
+        "hugo": "passed --minify --buildFuture; exit 0; 548228 ms",
+        "browser": "passed baseline comparison, same-language published link HTTP 200, translated category labels and legacy redirects",
+        "categories": "3996 pre-existing errors, down 13 from previous 4009",
+        "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
+      },
+      "batch": "003-affiliate-marketing",
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.pt.md",
@@ -26352,14 +26445,20 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null,
-      "review_note": "Full body read: affiliate ecosystem, redirects, cookies, ITP, S2S, privacy and fingerprinting. Proposed existing business/marketing. Link review pending. Absolute ITP immunity claim noted for separate editorial review."
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed explicit link/category-only diff, protected content and heading invariants",
+        "hugo": "passed --minify --buildFuture; exit 0; 548228 ms",
+        "browser": "passed baseline comparison, same-language published link HTTP 200, translated category labels and legacy redirects",
+        "categories": "3996 pre-existing errors, down 13 from previous 4009",
+        "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
+      },
+      "batch": "003-affiliate-marketing",
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.ru.md",
@@ -26376,13 +26475,20 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed explicit link/category-only diff, protected content and heading invariants",
+        "hugo": "passed --minify --buildFuture; exit 0; 548228 ms",
+        "browser": "passed baseline comparison, same-language published link HTTP 200, translated category labels and legacy redirects",
+        "categories": "3996 pre-existing errors, down 13 from previous 4009",
+        "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
+      },
+      "batch": "003-affiliate-marketing",
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.zh-cn.md",
@@ -26399,14 +26505,20 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null,
-      "review_note": "Full body read: affiliate ecosystem, redirects, cookies, ITP, S2S, privacy and fingerprinting. Proposed existing business/marketing. Link review pending. Absolute ITP immunity claim noted for separate editorial review."
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed explicit link/category-only diff, protected content and heading invariants",
+        "hugo": "passed --minify --buildFuture; exit 0; 548228 ms",
+        "browser": "passed baseline comparison, same-language published link HTTP 200, translated category labels and legacy redirects",
+        "categories": "3996 pre-existing errors, down 13 from previous 4009",
+        "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
+      },
+      "batch": "003-affiliate-marketing",
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.zh-tw.md",
@@ -26423,14 +26535,20 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null,
-      "review_note": "Full body read: affiliate ecosystem, redirects, cookies, ITP, S2S, privacy and fingerprinting. Proposed existing business/marketing. Link review pending. Absolute ITP immunity claim noted for separate editorial review."
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed explicit link/category-only diff, protected content and heading invariants",
+        "hugo": "passed --minify --buildFuture; exit 0; 548228 ms",
+        "browser": "passed baseline comparison, same-language published link HTTP 200, translated category labels and legacy redirects",
+        "categories": "3996 pre-existing errors, down 13 from previous 4009",
+        "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
+      },
+      "batch": "003-affiliate-marketing",
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
     },
     {
       "path": "content/post/affine-and-projective-transformations/index.ar.md",

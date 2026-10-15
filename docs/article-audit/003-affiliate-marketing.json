@@ -1,0 +1,331 @@
+{
+  "batch": "003-affiliate-marketing",
+  "review": "Full bodies of all 13 languages read. Business and marketing describe performance advertising and its tracking architecture. Replace undefined web-marketing with existing marketing. Link specific redirect status example to HTTP explainer and the privacy concern passage to privacy/data tradeoffs. Do not change factual statements; separate review needed for ITP immunity assertions.",
+  "articles": [
+    {
+      "path": "content/post/affiliate-marketing-mechanism/index.md",
+      "source_sha256": "9782f20ed871c421c72023bdda6cc885384191f3ea636f9ba248280de8631f3f",
+      "links": [
+        {
+          "term": "HTTP 302",
+          "target": "content/post/history-of-http/index.md"
+        },
+        {
+          "term": "プライバシー上の懸念",
+          "target": "content/post/privacy_big_data/index.md"
+        }
+      ],
+      "categories": {
+        "before": [
+          "business",
+          "web-marketing"
+        ],
+        "after": [
+          "business",
+          "marketing"
+        ]
+      },
+      "category_decision": "Replace undefined web-marketing with existing marketing; retain business."
+    },
+    {
+      "path": "content/post/affiliate-marketing-mechanism/index.en.md",
+      "source_sha256": "abc85680b401c2c38b20d5734f82c846bb0c5b4dde3a86fbcbe4bb0be06d803d",
+      "links": [
+        {
+          "term": "HTTP 302",
+          "target": "content/post/history-of-http/index.en.md"
+        },
+        {
+          "term": "privacy concerns",
+          "target": "content/post/privacy_big_data/index.en.md"
+        }
+      ],
+      "categories": {
+        "before": [
+          "business",
+          "web-marketing"
+        ],
+        "after": [
+          "business",
+          "marketing"
+        ]
+      },
+      "category_decision": "Replace undefined web-marketing with existing marketing; retain business."
+    },
+    {
+      "path": "content/post/affiliate-marketing-mechanism/index.de.md",
+      "source_sha256": "ab717e07a8961eff6dc3787eec440459a2bb86793e7d8d0e6dbaf064f308681d",
+      "links": [
+        {
+          "term": "HTTP 302",
+          "target": "content/post/history-of-http/index.de.md"
+        },
+        {
+          "term": "Datenschutzbedenken",
+          "target": "content/post/privacy_big_data/index.de.md"
+        }
+      ],
+      "categories": {
+        "before": [
+          "business",
+          "web-marketing"
+        ],
+        "after": [
+          "business",
+          "marketing"
+        ]
+      },
+      "category_decision": "Replace undefined web-marketing with existing marketing; retain business."
+    },
+    {
+      "path": "content/post/affiliate-marketing-mechanism/index.fr.md",
+      "source_sha256": "d604214b670fc709244f1cd7075917b3af6292d5d435e0567962620cbd692cf7",
+      "links": [
+        {
+          "term": "HTTP 302",
+          "target": "content/post/history-of-http/index.fr.md"
+        },
+        {
+          "term": "préoccupations croissantes en matière de confidentialité",
+          "target": "content/post/privacy_big_data/index.fr.md"
+        }
+      ],
+      "categories": {
+        "before": [
+          "business",
+          "web-marketing"
+        ],
+        "after": [
+          "business",
+          "marketing"
+        ]
+      },
+      "category_decision": "Replace undefined web-marketing with existing marketing; retain business."
+    },
+    {
+      "path": "content/post/affiliate-marketing-mechanism/index.es.md",
+      "source_sha256": "5065fd04dfd0c88a25bb0b4b7fb6d9d2d86817fced353d31c2ef6d887c1dd4f5",
+      "links": [
+        {
+          "term": "HTTP 302",
+          "target": "content/post/history-of-http/index.es.md"
+        },
+        {
+          "term": "preocupación por la privacidad",
+          "target": "content/post/privacy_big_data/index.es.md"
+        }
+      ],
+      "categories": {
+        "before": [
+          "business",
+          "web-marketing"
+        ],
+        "after": [
+          "business",
+          "marketing"
+        ]
+      },
+      "category_decision": "Replace undefined web-marketing with existing marketing; retain business."
+    },
+    {
+      "path": "content/post/affiliate-marketing-mechanism/index.pt.md",
+      "source_sha256": "5fcafa6e3d470406a43aa6462884d0cc4baf8bbbc949c01784978849261f4a9e",
+      "links": [
+        {
+          "term": "HTTP 302",
+          "target": "content/post/history-of-http/index.pt.md"
+        },
+        {
+          "term": "preocupação com a privacidade",
+          "target": "content/post/privacy_big_data/index.pt.md"
+        }
+      ],
+      "categories": {
+        "before": [
+          "business",
+          "web-marketing"
+        ],
+        "after": [
+          "business",
+          "marketing"
+        ]
+      },
+      "category_decision": "Replace undefined web-marketing with existing marketing; retain business."
+    },
+    {
+      "path": "content/post/affiliate-marketing-mechanism/index.id.md",
+      "source_sha256": "d505cb7bcfbed39e7aa3acb1b812cdff001ccf478481649f492caaec22e67d0a",
+      "links": [
+        {
+          "term": "HTTP 302",
+          "target": "content/post/history-of-http/index.id.md"
+        },
+        {
+          "term": "kekhawatiran terkait privasi",
+          "target": "content/post/privacy_big_data/index.id.md"
+        }
+      ],
+      "categories": {
+        "before": [
+          "business",
+          "web-marketing"
+        ],
+        "after": [
+          "business",
+          "marketing"
+        ]
+      },
+      "category_decision": "Replace undefined web-marketing with existing marketing; retain business."
+    },
+    {
+      "path": "content/post/affiliate-marketing-mechanism/index.ko.md",
+      "source_sha256": "9f9b74879d37ff4db81a5f980830b0a184b5baa2434089489d0a9e84808474ba",
+      "links": [
+        {
+          "term": "HTTP 302",
+          "target": "content/post/history-of-http/index.ko.md"
+        },
+        {
+          "term": "개인정보 보호 우려",
+          "target": "content/post/privacy_big_data/index.ko.md"
+        }
+      ],
+      "categories": {
+        "before": [
+          "business",
+          "web-marketing"
+        ],
+        "after": [
+          "business",
+          "marketing"
+        ]
+      },
+      "category_decision": "Replace undefined web-marketing with existing marketing; retain business."
+    },
+    {
+      "path": "content/post/affiliate-marketing-mechanism/index.zh-cn.md",
+      "source_sha256": "138d0bc07086728670639d07181d970a6a1992d4040c718878420faaf7c7e5e7",
+      "links": [
+        {
+          "term": "HTTP 302",
+          "target": "content/post/history-of-http/index.zh-cn.md"
+        },
+        {
+          "term": "隐私担忧",
+          "target": "content/post/privacy_big_data/index.zh-cn.md"
+        }
+      ],
+      "categories": {
+        "before": [
+          "business",
+          "web-marketing"
+        ],
+        "after": [
+          "business",
+          "marketing"
+        ]
+      },
+      "category_decision": "Replace undefined web-marketing with existing marketing; retain business."
+    },
+    {
+      "path": "content/post/affiliate-marketing-mechanism/index.zh-tw.md",
+      "source_sha256": "7d04698d678dccd394aae4e4b9453a984ef394fdd8de35f138728b2d7e0e4170",
+      "links": [
+        {
+          "term": "HTTP 302",
+          "target": "content/post/history-of-http/index.zh-tw.md"
+        },
+        {
+          "term": "隱私疑慮",
+          "target": "content/post/privacy_big_data/index.zh-tw.md"
+        }
+      ],
+      "categories": {
+        "before": [
+          "business",
+          "web-marketing"
+        ],
+        "after": [
+          "business",
+          "marketing"
+        ]
+      },
+      "category_decision": "Replace undefined web-marketing with existing marketing; retain business."
+    },
+    {
+      "path": "content/post/affiliate-marketing-mechanism/index.ru.md",
+      "source_sha256": "2f8f5ad14243c16fea6e458c996820b6f50a4f44144e3d2e6975b29dd58e0e12",
+      "links": [
+        {
+          "term": "HTTP-ответ 302",
+          "target": "content/post/history-of-http/index.ru.md"
+        },
+        {
+          "term": "опасения по поводу конфиденциальности",
+          "target": "content/post/privacy_big_data/index.ru.md"
+        }
+      ],
+      "categories": {
+        "before": [
+          "business",
+          "web-marketing"
+        ],
+        "after": [
+          "business",
+          "marketing"
+        ]
+      },
+      "category_decision": "Replace undefined web-marketing with existing marketing; retain business."
+    },
+    {
+      "path": "content/post/affiliate-marketing-mechanism/index.ar.md",
+      "source_sha256": "a460cc77226d97b7e533cd26097a09b8b95d590ae6fd7cb673030f54442a55f5",
+      "links": [
+        {
+          "term": "HTTP 302",
+          "target": "content/post/history-of-http/index.ar.md"
+        },
+        {
+          "term": "المخاوف بشأن الخصوصية",
+          "target": "content/post/privacy_big_data/index.ar.md"
+        }
+      ],
+      "categories": {
+        "before": [
+          "business",
+          "web-marketing"
+        ],
+        "after": [
+          "business",
+          "marketing"
+        ]
+      },
+      "category_decision": "Replace undefined web-marketing with existing marketing; retain business."
+    },
+    {
+      "path": "content/post/affiliate-marketing-mechanism/index.hi.md",
+      "source_sha256": "b533c368896d1f7718216f97e03d72ad73f9ed646793d19ad6422f142dbf7884",
+      "links": [
+        {
+          "term": "HTTP 302",
+          "target": "content/post/history-of-http/index.hi.md"
+        },
+        {
+          "term": "गोपनीयता संबंधी चिंताएँ",
+          "target": "content/post/privacy_big_data/index.hi.md"
+        }
+      ],
+      "categories": {
+        "before": [
+          "business",
+          "web-marketing"
+        ],
+        "after": [
+          "business",
+          "marketing"
+        ]
+      },
+      "category_decision": "Replace undefined web-marketing with existing marketing; retain business."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 title: "제휴 마케팅의 구조: 트래킹 및 전환의 기술적 이면"
 description: "쿠키부터 포스트백까지. 성과 보상형 광고의 시스템 아키텍처."
 slug: "affiliate-marketing-mechanism"
-categories: ["business", "web-marketing"]
+categories: ["business", "marketing"]
 tags: ["tech", "business", "affiliate", "marketing"]
 image: "eyecatch.jpg"
 date: 2026-10-01T21:58:09+09:00
@@ -53,7 +53,7 @@ ASP는 방대한 트래픽을 실시간으로 처리하며, '누가' '어떤 광
 1. **클릭 기록**: ASP 서버는 접속한 사용자의 IP 주소, User-Agent, 타임스탬프, 그리고 URL에 포함된 어필리에이트 ID(`aff_id`)나 캠페인 ID(`campaign_id`)를 데이터베이스에 기록합니다.
 2. **클릭 ID 생성**: 이 클릭 이벤트를 고유하게 식별하기 위한 '클릭 ID(Click ID)'가 생성됩니다.
 3. **쿠키 부여**: ASP는 사용자의 브라우저에 대해 자사 도메인(서드 파티)의 쿠키를 발행하고, 그곳에 클릭 ID를 저장합니다.
-4. **리다이렉트**: 처리가 완료됨과 동시에 HTTP 302(Found) 또는 301(Moved Permanently) 응답을 반환하여, 광고주의 랜딩 페이지(LP)로 사용자를 리다이렉트 시킵니다. 이때 URL의 파라미터로 클릭 ID를 부여하기도 합니다.
+4. **리다이렉트**: 처리가 완료됨과 동시에 [HTTP 302](/ko/p/history-of-http/)(Found) 또는 301(Moved Permanently) 응답을 반환하여, 광고주의 랜딩 페이지(LP)로 사용자를 리다이렉트 시킵니다. 이때 URL의 파라미터로 클릭 ID를 부여하기도 합니다.
 
 ### 2.2. 쿠키와 로컬 스토리지의 역할
 
@@ -72,7 +72,7 @@ ASP는 방대한 트래픽을 실시간으로 처리하며, '누가' '어떤 광
 
 클라이언트 사이드 트래킹은 구현이 용이한 반면, 큰 문제를 안고 있었습니다. 바로 '서드 파티 쿠키에 의한 과도한 사용자 추적'입니다.
 
-사용자가 모르는 사이에 여러 사이트를 횡단하며 행동 이력이 수집되는 것에 대한 개인정보 보호 우려가 높아지면서, Apple의 Safari 브라우저에 탑재된 **ITP(Intelligent Tracking Prevention)**를 시작으로 각 브라우저 공급업체들이 강력한 트래킹 제한을 도입하기 시작했습니다.
+사용자가 모르는 사이에 여러 사이트를 횡단하며 행동 이력이 수집되는 것에 대한 [개인정보 보호 우려](/ko/p/privacy-vs-convenience-big-data/)가 높아지면서, Apple의 Safari 브라우저에 탑재된 **ITP(Intelligent Tracking Prevention)**를 시작으로 각 브라우저 공급업체들이 강력한 트래킹 제한을 도입하기 시작했습니다.
 
 ### ITP가 제휴 마케팅에 미친 영향
 

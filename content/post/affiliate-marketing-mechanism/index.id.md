@@ -2,7 +2,7 @@
 title: "Mekanisme Afiliasi: Di Balik Layar Teknologi Pelacakan dan Konversi"
 description: "Dari Cookie hingga Postback. Arsitektur Sistem Iklan Berbasis Kinerja."
 slug: "affiliate-marketing-mechanism"
-categories: ["business", "web-marketing"]
+categories: ["business", "marketing"]
 tags: ["tech", "business", "affiliate", "marketing"]
 image: "eyecatch.jpg"
 date: 2026-10-01T21:58:09+09:00
@@ -53,7 +53,7 @@ Ketika pengguna mengklik tautan ini, proses berikut terjadi:
 1. **Perekaman Klik**: Server ASP mencatat alamat IP pengguna, User-Agent, stempel waktu, serta ID Afiliasi (`aff_id`) dan ID Kampanye (`campaign_id`) yang terdapat di URL ke dalam database.
 2. **Pembuatan ID Klik (Click ID)**: Sebuah "ID Klik (Click ID)" dihasilkan untuk mengidentifikasi peristiwa klik ini secara unik.
 3. **Pemberian Cookie**: ASP menerbitkan Cookie dari domain mereka sendiri (pihak ketiga) ke browser pengguna, dan menyimpan ID Klik di dalamnya.
-4. **Pengalihan (Redirect)**: Begitu proses selesai, server mengembalikan respons HTTP 302 (Found) atau 301 (Moved Permanently) dan mengalihkan pengguna ke Halaman Landas (Landing Page/LP) pengiklan. Pada saat ini, ID Klik juga terkadang ditambahkan sebagai parameter URL.
+4. **Pengalihan (Redirect)**: Begitu proses selesai, server mengembalikan respons [HTTP 302](/id/p/history-of-http/) (Found) atau 301 (Moved Permanently) dan mengalihkan pengguna ke Halaman Landas (Landing Page/LP) pengiklan. Pada saat ini, ID Klik juga terkadang ditambahkan sebagai parameter URL.
 
 ### 2.2. Peran Cookie dan LocalStorage
 
@@ -72,7 +72,7 @@ Selain itu, untuk mengantisipasi kadaluwarsa atau penghapusan Cookie, metode pen
 
 Meskipun pelacakan sisi klien mudah diimplementasikan, hal itu menyimpan masalah besar. Masalah tersebut adalah "pelacakan pengguna yang berlebihan oleh Cookie pihak ketiga".
 
-Seiring dengan meningkatnya kekhawatiran terkait privasi atas pengumpulan riwayat perilaku di berbagai situs tanpa sepengetahuan pengguna, para vendor browser mulai memberlakukan pembatasan pelacakan yang ketat, dipelopori oleh **ITP (Intelligent Tracking Prevention)** yang disematkan pada browser Safari milik Apple.
+Seiring dengan meningkatnya [kekhawatiran terkait privasi](/id/p/privacy-vs-convenience-big-data/) atas pengumpulan riwayat perilaku di berbagai situs tanpa sepengetahuan pengguna, para vendor browser mulai memberlakukan pembatasan pelacakan yang ketat, dipelopori oleh **ITP (Intelligent Tracking Prevention)** yang disematkan pada browser Safari milik Apple.
 
 ### Dampak ITP terhadap Afiliasi
 

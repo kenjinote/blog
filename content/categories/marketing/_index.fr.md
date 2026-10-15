@@ -1,5 +1,8 @@
 ---
 {
-  "title": "Marketing"
+  "title": "Marketing",
+  "aliases": [
+    "/fr/categories/web-marketing/"
+  ]
 }
 ---

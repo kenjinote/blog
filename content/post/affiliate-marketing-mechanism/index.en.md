@@ -2,7 +2,7 @@
 title: "The Mechanism of Affiliate Marketing: The Technical Backend of Tracking and Conversion"
 description: "From cookies to postbacks. The system architecture of performance-based advertising."
 slug: "affiliate-marketing-mechanism"
-categories: ["business", "web-marketing"]
+categories: ["business", "marketing"]
 tags: ["tech", "business", "affiliate", "marketing"]
 image: "eyecatch.jpg"
 date: 2026-10-01T21:58:09+09:00
@@ -53,7 +53,7 @@ When a user clicks this link, the following process occurs:
 1. **Recording the Click**: The ASP's server records the accessing user's IP address, User-Agent, timestamp, as well as the affiliate ID (`aff_id`) and campaign ID (`campaign_id`) included in the URL into its database.
 2. **Generating a Click ID**: A "Click ID" is generated to uniquely identify this click event.
 3. **Assigning a Cookie**: The ASP issues a cookie from its own domain (third-party) to the user's browser and stores the Click ID in it.
-4. **Redirect**: Once the processing is completed, it simultaneously returns an HTTP 302 (Found) or 301 (Moved Permanently) response, redirecting the user to the advertiser's landing page (LP). At this time, the Click ID may also be appended as a URL parameter.
+4. **Redirect**: Once the processing is completed, it simultaneously returns an [HTTP 302](/en/p/history-of-http/) (Found) or 301 (Moved Permanently) response, redirecting the user to the advertiser's landing page (LP). At this time, the Click ID may also be appended as a URL parameter.
 
 ### 2.2. The Role of Cookies and LocalStorage
 
@@ -72,7 +72,7 @@ Furthermore, to prepare for cookie expiration or deletion, the method of backing
 
 While client-side tracking is easy to implement, it faced a major problem: "excessive user tracking via third-party cookies."
 
-Due to growing privacy concerns over behavior histories being collected across multiple sites without the users' knowledge, browser vendors began introducing strict tracking limitations, spearheaded by **ITP (Intelligent Tracking Prevention)** built into Apple's Safari browser.
+Due to growing [privacy concerns](/en/p/privacy-vs-convenience-big-data/) over behavior histories being collected across multiple sites without the users' knowledge, browser vendors began introducing strict tracking limitations, spearheaded by **ITP (Intelligent Tracking Prevention)** built into Apple's Safari browser.
 
 ### The Impact of ITP on Affiliates
 

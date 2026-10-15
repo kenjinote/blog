@@ -2,7 +2,7 @@
 title: "So funktioniert Affiliate-Marketing: Die technische Seite von Tracking und Conversion"
 description: "Von Cookies bis Postback. Die Systemarchitektur der erfolgsbasierten Werbung."
 slug: "affiliate-marketing-mechanism"
-categories: ["business", "web-marketing"]
+categories: ["business", "marketing"]
 tags: ["tech", "business", "affiliate", "marketing"]
 image: "eyecatch.jpg"
 date: 2026-10-01T21:58:09+09:00
@@ -53,7 +53,7 @@ Wenn ein Nutzer auf diesen Link klickt, läuft folgender Prozess ab:
 1. **Klick-Aufzeichnung**: Der Server des ASPs zeichnet IP-Adresse, User-Agent, Zeitstempel des zugreifenden Nutzers sowie die in der URL enthaltene Affiliate-ID (`aff_id`) und Kampagnen-ID (`campaign_id`) in der Datenbank auf.
 2. **Generierung der Click ID**: Zur eindeutigen Identifizierung dieses Klick-Ereignisses wird eine "Click ID" generiert.
 3. **Setzen eines Cookies**: Der ASP stellt ein Cookie seiner eigenen Domain (Third-Party-Cookie) für den Browser des Nutzers aus und speichert darin die Click ID.
-4. **Redirect**: Sobald die Verarbeitung abgeschlossen ist, wird eine HTTP 302 (Found) oder 301 (Moved Permanently) Antwort gesendet und der Nutzer zur Landingpage (LP) des Werbetreibenden weitergeleitet. Zu diesem Zeitpunkt kann die Click ID auch als URL-Parameter angehängt werden.
+4. **Redirect**: Sobald die Verarbeitung abgeschlossen ist, wird eine [HTTP 302](/de/p/history-of-http/) (Found) oder 301 (Moved Permanently) Antwort gesendet und der Nutzer zur Landingpage (LP) des Werbetreibenden weitergeleitet. Zu diesem Zeitpunkt kann die Click ID auch als URL-Parameter angehängt werden.
 
 ### 2.2. Die Rolle von Cookie und LocalStorage
 
@@ -72,7 +72,7 @@ Als Vorbereitung auf den Ablauf oder das Löschen von Cookies war es zudem weit 
 
 Clientseitiges Tracking ist zwar einfach zu implementieren, birgt jedoch ein großes Problem: das "übermäßige Tracking von Nutzern durch Third-Party-Cookies".
 
-Aufgrund wachsender Datenschutzbedenken hinsichtlich der Sammlung von Browserverläufen über mehrere Websites hinweg ohne Wissen der Nutzer, begannen Browserhersteller starke Tracking-Beschränkungen einzuführen, allen voran **ITP (Intelligent Tracking Prevention)** im Safari-Browser von Apple.
+Aufgrund wachsender [Datenschutzbedenken](/de/p/privacy-vs-convenience-big-data/) hinsichtlich der Sammlung von Browserverläufen über mehrere Websites hinweg ohne Wissen der Nutzer, begannen Browserhersteller starke Tracking-Beschränkungen einzuführen, allen voran **ITP (Intelligent Tracking Prevention)** im Safari-Browser von Apple.
 
 ### Die Auswirkungen von ITP auf das Affiliate-Marketing
 

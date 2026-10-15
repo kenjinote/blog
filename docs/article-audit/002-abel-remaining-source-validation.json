@@ -1,0 +1,154 @@
+[
+  {
+    "path": "content/post/abel/index.ko.md",
+    "removed_self_links": 9,
+    "added_links": [
+      {
+        "term": "오일러",
+        "url": "/ko/p/euler/"
+      },
+      {
+        "term": "라그랑주",
+        "url": "/ko/p/lagrange/"
+      },
+      {
+        "term": "야코비",
+        "url": "/ko/p/jacobi/"
+      },
+      {
+        "term": "에바리스트 갈루아",
+        "url": "/ko/p/galois/"
+      },
+      {
+        "term": "칼 프리드리히 가우스",
+        "url": "/ko/p/gauss/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "categories": "Retain mathematics and biography: life history and mathematical legacy.",
+    "updated_sha256": "f8905644baa80540d794762fa4cba6c50c49f921a7f0b7ecb3c26707c6e15201"
+  },
+  {
+    "path": "content/post/abel/index.zh-cn.md",
+    "removed_self_links": 8,
+    "added_links": [
+      {
+        "term": "欧拉",
+        "url": "/zh-cn/p/euler/"
+      },
+      {
+        "term": "拉格朗日",
+        "url": "/zh-cn/p/lagrange/"
+      },
+      {
+        "term": "雅可比",
+        "url": "/zh-cn/p/jacobi/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "categories": "Retain mathematics and biography: life history and mathematical legacy.",
+    "updated_sha256": "8452927e1199db6a8a01f02e20238a2eb3e7b338c1f876325f6a84a957919d72"
+  },
+  {
+    "path": "content/post/abel/index.zh-tw.md",
+    "removed_self_links": 8,
+    "added_links": [
+      {
+        "term": "歐拉",
+        "url": "/zh-tw/p/euler/"
+      },
+      {
+        "term": "拉格朗日",
+        "url": "/zh-tw/p/lagrange/"
+      },
+      {
+        "term": "雅可比",
+        "url": "/zh-tw/p/jacobi/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "categories": "Retain mathematics and biography: life history and mathematical legacy.",
+    "updated_sha256": "9a695a2e6f7c858b05fabdb6da0913595d4d7b06ab00d55a39a6ca83fd7749f0"
+  },
+  {
+    "path": "content/post/abel/index.ru.md",
+    "removed_self_links": 3,
+    "added_links": [
+      {
+        "term": "Эйлер",
+        "url": "/ru/p/euler/"
+      },
+      {
+        "term": "Лагранж",
+        "url": "/ru/p/lagrange/"
+      },
+      {
+        "term": "Якоби",
+        "url": "/ru/p/jacobi/"
+      },
+      {
+        "term": "Эваристом Галуа",
+        "url": "/ru/p/galois/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "categories": "Retain mathematics and biography: life history and mathematical legacy.",
+    "updated_sha256": "a3b0d2f0f40c47ccc97497ec21a52b87eff45408b178d20a116408fe4341edf9"
+  },
+  {
+    "path": "content/post/abel/index.ar.md",
+    "removed_self_links": 3,
+    "added_links": [
+      {
+        "term": "أويلر",
+        "url": "/ar/p/euler/"
+      },
+      {
+        "term": "ولاغرانج",
+        "url": "/ar/p/lagrange/"
+      },
+      {
+        "term": "جاكوبي",
+        "url": "/ar/p/jacobi/"
+      },
+      {
+        "term": "كارل فريدريش غاوس",
+        "url": "/ar/p/gauss/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "categories": "Retain mathematics and biography: life history and mathematical legacy.",
+    "updated_sha256": "f161ab374b4b24c0c02ac9eeff91694e034c7a3cc7405ea84e4973463b0cbba1"
+  },
+  {
+    "path": "content/post/abel/index.hi.md",
+    "removed_self_links": 9,
+    "added_links": [
+      {
+        "term": "यूलर",
+        "url": "/hi/p/euler/"
+      },
+      {
+        "term": "लैग्रेंज",
+        "url": "/hi/p/lagrange/"
+      },
+      {
+        "term": "जैकोबी",
+        "url": "/hi/p/jacobi/"
+      },
+      {
+        "term": "इवारिस्त गैलवा",
+        "url": "/hi/p/galois/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "categories": "Retain mathematics and biography: life history and mathematical legacy.",
+    "updated_sha256": "1af3957be2b39adba73772924024fb1afd5ccbf24dd3cc99bf2ee316b34adfe7"
+  }
+]
