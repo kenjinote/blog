@@ -10,5 +10,18 @@
     "added_links": 18,
     "category_decision": "Retained mathematics/biography after review",
     "next": "Apply 002-abel-remaining.json; then finish affiliate-marketing-mechanism review (ru/ar/hi bodies remaining; all links pending)."
+  },
+  {
+    "batch": "002-abel-remaining + 003-affiliate-marketing",
+    "commit": "6c309385ef2566187d8ae6c7d5e373ee6662d35f",
+    "remote": "origin/main",
+    "verified_remote_sha": "6c309385ef2566187d8ae6c7d5e373ee6662d35f",
+    "date_jst": "2026-10-15",
+    "articles": 19,
+    "removed_body_self_links": 40,
+    "added_links": 49,
+    "reclassified_articles": 13,
+    "localized_category_redirects": 13,
+    "next": "Review remaining acoustic-levitation translations; English full body read, no edits yet."
   }
 ]

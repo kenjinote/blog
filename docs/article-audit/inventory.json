@@ -24612,7 +24612,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -24625,7 +24625,9 @@
         "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
       },
       "batch": "002-abel-remaining",
-      "review_note": "Full body reviewed. Mathematical biography, retain math/biography."
+      "review_note": "Full body reviewed. Mathematical biography, retain math/biography.",
+      "commit": "6c309385ef2566187d8ae6c7d5e373ee6662d35f",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/abel/index.de.md",
@@ -24752,7 +24754,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -24765,7 +24767,9 @@
         "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
       },
       "batch": "002-abel-remaining",
-      "review_note": "Full body reviewed. Mathematical biography, retain math/biography."
+      "review_note": "Full body reviewed. Mathematical biography, retain math/biography.",
+      "commit": "6c309385ef2566187d8ae6c7d5e373ee6662d35f",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/abel/index.id.md",
@@ -24808,7 +24812,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -24821,7 +24825,9 @@
         "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
       },
       "batch": "002-abel-remaining",
-      "review_note": "Full body reviewed. Mathematical biography, retain math/biography."
+      "review_note": "Full body reviewed. Mathematical biography, retain math/biography.",
+      "commit": "6c309385ef2566187d8ae6c7d5e373ee6662d35f",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/abel/index.md",
@@ -24892,7 +24898,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -24905,7 +24911,9 @@
         "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
       },
       "batch": "002-abel-remaining",
-      "review_note": "Full body reviewed. Mathematical biography, retain math/biography."
+      "review_note": "Full body reviewed. Mathematical biography, retain math/biography.",
+      "commit": "6c309385ef2566187d8ae6c7d5e373ee6662d35f",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/abel/index.zh-cn.md",
@@ -24920,7 +24928,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -24933,7 +24941,9 @@
         "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
       },
       "batch": "002-abel-remaining",
-      "review_note": "Full body reviewed. Mathematical biography, retain math/biography."
+      "review_note": "Full body reviewed. Mathematical biography, retain math/biography.",
+      "commit": "6c309385ef2566187d8ae6c7d5e373ee6662d35f",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/abel/index.zh-tw.md",
@@ -24948,7 +24958,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -24961,7 +24971,9 @@
         "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
       },
       "batch": "002-abel-remaining",
-      "review_note": "Full body reviewed. Mathematical biography, retain math/biography."
+      "review_note": "Full body reviewed. Mathematical biography, retain math/biography.",
+      "commit": "6c309385ef2566187d8ae6c7d5e373ee6662d35f",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/accelerometer-sensor-mechanism/index.ar.md",
@@ -26175,7 +26187,7 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -26188,7 +26200,9 @@
         "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
       },
       "batch": "003-affiliate-marketing",
-      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review.",
+      "commit": "6c309385ef2566187d8ae6c7d5e373ee6662d35f",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.de.md",
@@ -26205,7 +26219,7 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -26218,7 +26232,9 @@
         "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
       },
       "batch": "003-affiliate-marketing",
-      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review.",
+      "commit": "6c309385ef2566187d8ae6c7d5e373ee6662d35f",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.en.md",
@@ -26235,7 +26251,7 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -26248,7 +26264,9 @@
         "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
       },
       "batch": "003-affiliate-marketing",
-      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review.",
+      "commit": "6c309385ef2566187d8ae6c7d5e373ee6662d35f",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.es.md",
@@ -26265,7 +26283,7 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -26278,7 +26296,9 @@
         "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
       },
       "batch": "003-affiliate-marketing",
-      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review.",
+      "commit": "6c309385ef2566187d8ae6c7d5e373ee6662d35f",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.fr.md",
@@ -26295,7 +26315,7 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -26308,7 +26328,9 @@
         "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
       },
       "batch": "003-affiliate-marketing",
-      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review.",
+      "commit": "6c309385ef2566187d8ae6c7d5e373ee6662d35f",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.hi.md",
@@ -26325,7 +26347,7 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -26338,7 +26360,9 @@
         "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
       },
       "batch": "003-affiliate-marketing",
-      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review.",
+      "commit": "6c309385ef2566187d8ae6c7d5e373ee6662d35f",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.id.md",
@@ -26355,7 +26379,7 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -26368,7 +26392,9 @@
         "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
       },
       "batch": "003-affiliate-marketing",
-      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review.",
+      "commit": "6c309385ef2566187d8ae6c7d5e373ee6662d35f",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.ko.md",
@@ -26385,7 +26411,7 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -26398,7 +26424,9 @@
         "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
       },
       "batch": "003-affiliate-marketing",
-      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review.",
+      "commit": "6c309385ef2566187d8ae6c7d5e373ee6662d35f",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.md",
@@ -26415,7 +26443,7 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -26428,7 +26456,9 @@
         "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
       },
       "batch": "003-affiliate-marketing",
-      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review.",
+      "commit": "6c309385ef2566187d8ae6c7d5e373ee6662d35f",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.pt.md",
@@ -26445,7 +26475,7 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -26458,7 +26488,9 @@
         "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
       },
       "batch": "003-affiliate-marketing",
-      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review.",
+      "commit": "6c309385ef2566187d8ae6c7d5e373ee6662d35f",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.ru.md",
@@ -26475,7 +26507,7 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -26488,7 +26520,9 @@
         "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
       },
       "batch": "003-affiliate-marketing",
-      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review.",
+      "commit": "6c309385ef2566187d8ae6c7d5e373ee6662d35f",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.zh-cn.md",
@@ -26505,7 +26539,7 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -26518,7 +26552,9 @@
         "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
       },
       "batch": "003-affiliate-marketing",
-      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review.",
+      "commit": "6c309385ef2566187d8ae6c7d5e373ee6662d35f",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/affiliate-marketing-mechanism/index.zh-tw.md",
@@ -26535,7 +26571,7 @@
         "web-marketing"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -26548,7 +26584,9 @@
         "tests": "18 passed: 14 existing scanner tests and 4 reviewed-plan regression tests"
       },
       "batch": "003-affiliate-marketing",
-      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review."
+      "review_note": "Full body reviewed. Performance advertising and tracking architecture; business/marketing. Link HTTP redirect example and privacy concern to same-language explanations. ITP immunity assertions left unchanged and noted for separate factual review.",
+      "commit": "6c309385ef2566187d8ae6c7d5e373ee6662d35f",
+      "push_status": "Verified origin/main contains commit; normal push successful"
     },
     {
       "path": "content/post/affine-and-projective-transformations/index.ar.md",
