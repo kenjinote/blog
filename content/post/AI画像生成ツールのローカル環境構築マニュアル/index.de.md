@@ -22,7 +22,7 @@ Der Aufbau eines KI-Bildgenerierungs-Tools in einer lokalen Umgebung (auf dem ei
 3. **Datenschutz und Sicherheit**: Da keine Daten in die Cloud gesendet werden, ist es ideal für vertrauliche Designaufgaben oder persönliche Projekte.
 4. **Sofortige Einführung der neuesten Technologien**: Sie können die neuesten Modelle und Erweiterungen, die täglich in der Open-Source-Community veröffentlicht werden, sofort ausprobieren.
 
-Dieses Handbuch setzt eine Windows-Umgebung voraus und erklärt ausführlich auf über 10.000 Zeichen den Aufbau der drei derzeit gängigen KI-Bildgenerierungsumgebungen (AUTOMATIC1111 Stable Diffusion WebUI, ComfyUI, Fooocus), die zugrunde liegenden mathematischen Hintergründe und sogar Methoden zur VRAM-Optimierung.
+Dieses Handbuch setzt eine Windows-Umgebung voraus und erklärt ausführlich auf über 10.000 Zeichen den Aufbau der drei derzeit gängigen KI-Bildgenerierungsumgebungen (AUTOMATIC1111 Stable Diffusion WebUI, ComfyUI, Fooocus), die zugrunde liegenden mathematischen Hintergründe und sogar [Methoden zur VRAM-Optimierung](/de/p/ai-gpu-vram-optimization-cpu-offloading/).
 
 ---
 
@@ -34,7 +34,7 @@ Um eine lokale Umgebung aufzubauen und die Parameter entsprechend einzustellen, 
 
 Das Grundprinzip von Diffusionsmodellen besteht aus einem "Forward Process", bei dem den Originaldaten (Bildern) schrittweise Gaußsches Rauschen hinzugefügt wird, um sie schließlich in vollständiges Rauschen zu verwandeln, und einem "Reverse Process", bei dem das Originalbild aus diesem Rauschen wiederhergestellt wird.
 
-Der Forward Process wird als Markov-Kette definiert, und der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) $x_t$ im Schritt $t$ wird durch die folgende Gleichung ausgedrückt:
+Der Forward Process wird als [Markov-Kette](/de/p/markov-chain/) definiert, und der Zustand $x_t$ im Schritt $t$ wird durch die folgende Gleichung ausgedrückt:
 
 $$ q(x_t | x_{t-1}) = \mathcal{N}(x_t; \sqrt{1 - \beta_t} x_{t-1}, \beta_t I) $$
 
@@ -159,7 +159,7 @@ graph TD
     Nach einem Neustart erscheint unten rechts auf der Benutzeroberfläche eine "Manager"-Schaltfläche, über die Sie verschiedene benutzerdefinierte Knoten installieren können.
 
 ### 5.3 Aufbau von Fooocus: Hochwertige Generierung für Anfänger
-Fooocus ist eine Benutzeroberfläche, die mit dem Ziel entwickelt wurde, "mit kurzen Prompts überwältigend schöne Bilder auszugeben", ähnlich wie Midjourney. Sie ist speziell auf SDXL-Modelle abgestimmt und führt intern automatisch komplexe [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s wie GPT-2-basierte Prompt-Erweiterungen durch.
+Fooocus ist eine Benutzeroberfläche, die mit dem Ziel entwickelt wurde, "mit kurzen Prompts überwältigend schöne Bilder auszugeben", ähnlich wie Midjourney. Sie ist speziell auf SDXL-Modelle abgestimmt und führt intern automatisch komplexe Pipelines wie GPT-2-basierte Prompt-Erweiterungen durch.
 
 **Installationsschritte:**
 1.  Laden Sie das Windows-Release-Paket vom offiziellen Fooocus-GitHub herunter und entpacken Sie es.
@@ -265,8 +265,8 @@ Dies sind häufig auftretende Fehler beim Aufbau und Betrieb einer lokalen Umgeb
 
 ## 10. Fazit: Die Zukunft der KI-Bildgenerierung und der Vorteil lokaler Umgebungen
 
-Die Open-Source-Bewegung für die KI-Bildgenerierung, die mit Stable Diffusion begann, entwickelt sich zu Architekturen der nächsten Generation wie SDXL, Stable Diffusion 3 und [Flux](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/).1 weiter. Die Anzahl der Parameter der Modelle wächst in den Milliarden- und Zehnmilliardenbereich, und in Zukunft wird der Bedarf an GPU-Umgebungen mit mehr als 24 GB VRAM wahrscheinlich steigen.
+Die Open-Source-Bewegung für die KI-Bildgenerierung, die mit Stable Diffusion begann, entwickelt sich zu Architekturen der nächsten Generation wie SDXL, Stable Diffusion 3 und Flux.1 weiter. Die Anzahl der Parameter der Modelle wächst in den Milliarden- und Zehnmilliardenbereich, und in Zukunft wird der Bedarf an GPU-Umgebungen mit mehr als 24 GB VRAM wahrscheinlich steigen.
 
 Lokale Optimierungstechnologien wie TensorRT, Quantisierungstechniken (Quantization) und [GGUF](/de/p/llama-cpp-quantization-gguf/) beschleunigen sich jedoch gleichermaßen, und es bildet sich ein Ökosystem heraus, in dem eine ausreichende Inferenz sogar auf Hardware für den allgemeinen Verbraucher möglich wird.
 
-Die Einrichtung von CUDA-Umgebungen, die VRAM-Optimierung und das Verständnis von [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s wie ComfyUI, die in diesem Handbuch erläutert werden, bilden universelles Grundlagenwissen, das nützlich bleibt, egal wie sich KI-Technologie-Trends verändern. Wir hoffen, dass Ihre Kreativität in einer grenzenlosen lokalen Umgebung voll zur Geltung kommt.
+Die Einrichtung von CUDA-Umgebungen, die VRAM-Optimierung und das Verständnis von Pipelines wie ComfyUI, die in diesem Handbuch erläutert werden, bilden universelles Grundlagenwissen, das nützlich bleibt, egal wie sich KI-Technologie-Trends verändern. Wir hoffen, dass Ihre Kreativität in einer grenzenlosen lokalen Umgebung voll zur Geltung kommt.

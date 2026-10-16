@@ -12,6 +12,39 @@ import apply_reviewed_article_links as audit
 
 
 class ReviewedEditTests(unittest.TestCase):
+    def test_reviewed_body_immediately_after_heading_is_safe(self):
+        source = '---\ntitle: Test\n---\n\n### Heading\nA [Workflow](/en/p/cicd/) example.'
+        item = {'link': '[Workflow](/en/p/cicd/)', 'context': 'A [Workflow](/en/p/cicd/) example.', 'reason': 'misleading'}
+        self.assertEqual(audit.unwrap_reviewed_link(source, item, {'/en/p/cicd/'}),
+                         source.replace('[Workflow](/en/p/cicd/)', 'Workflow'))
+        crlf = source.replace('\n', '\r\n')
+        self.assertEqual(audit.unwrap_reviewed_link(crlf, item, {'/en/p/cicd/'}),
+                         crlf.replace('[Workflow](/en/p/cicd/)', 'Workflow'))
+        with self.assertRaises(ValueError):
+            audit.link_reviewed_context(source, 'Heading', 'Heading', '/en/p/cicd/')
+        fenced = source.replace('A [Workflow](/en/p/cicd/) example.', '```\nA [Workflow](/en/p/cicd/) example.\n```')
+        with self.assertRaises(ValueError):
+            audit.unwrap_reviewed_link(fenced, item, {'/en/p/cicd/'})
+
+    def test_heading_unwrap_preserves_explicit_anchor(self):
+        heading = '### GPU ([Graph](/en/p/graph/)ics)'
+        source = '---\ntitle: Test\n---\n\n' + heading + '\n\nBody.'
+        item = {'heading': heading, 'link': '[Graph](/en/p/graph/)', 'old_id': 'gpu-graphenpgraphics'}
+        updated, new_heading = audit.unwrap_reviewed_heading(source, item, {'/en/p/graph/'})
+        self.assertEqual(new_heading, '### GPU (Graphics) {#gpu-graphenpgraphics}')
+        self.assertEqual(updated, source.replace(heading, new_heading))
+
+    def test_heading_unwrap_rejects_fences_and_unsafe_anchors(self):
+        heading = '### [Graph](/en/p/graph/)'
+        item = {'heading': heading, 'link': '[Graph](/en/p/graph/)', 'old_id': 'old-anchor'}
+        prefix = '---\ntitle: Test\n---\n\n'
+        for body in ['```text\n' + heading + '\n```', heading + '\n\n' + heading]:
+            with self.subTest(body=body), self.assertRaises(ValueError):
+                audit.unwrap_reviewed_heading(prefix + body, item, {'/en/p/graph/'})
+        for anchor in ['bad id', 'bad}id', 'bad\"id', '']:
+            with self.subTest(anchor=anchor), self.assertRaises(ValueError):
+                audit.unwrap_reviewed_heading(prefix + heading, dict(item, old_id=anchor), {'/en/p/graph/'})
+
     def test_unwrap_only_reviewed_ordinary_verb(self):
         raw = '[Go](/en/p/languages/)'
         prefix = '---\ntitle: Test\n---\n\n'

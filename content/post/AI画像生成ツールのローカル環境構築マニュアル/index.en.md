@@ -21,7 +21,7 @@ Building AI image generation tools in a local environment (your own PC) has the 
 3. **Privacy and security**: Since data is not sent to the cloud, it is ideal for highly confidential design work or personal projects.
 4. **Immediate adoption of the latest technology**: You can quickly try out the latest models and extensions announced daily by the open-source community.
 
-Assuming a Windows environment, this manual will thoroughly explain in over 10,000 characters the setup methods for the currently mainstream three AI image generation environments (AUTOMATIC1111 Stable Diffusion WebUI, ComfyUI, Fooocus), their underlying mathematical background, and even VRAM optimization techniques.
+Assuming a Windows environment, this manual will thoroughly explain in over 10,000 characters the setup methods for the currently mainstream three AI image generation environments (AUTOMATIC1111 Stable Diffusion WebUI, ComfyUI, Fooocus), their underlying mathematical background, and even [VRAM optimization techniques](/en/p/ai-gpu-vram-optimization-cpu-offloading/).
 
 ---
 
@@ -33,7 +33,7 @@ To build a local environment and appropriately configure parameters, it is highl
 
 The basic principle of diffusion models consists of a "Forward Process" that incrementally adds Gaussian noise to the original data (image) until it eventually becomes complete noise, and a "Reverse Process" that restores the original image from that noise.
 
-The Forward Process is defined as a Markov chain, and the state $x_t$ at step $t$ is expressed by the following equation:
+The Forward Process is defined as a [Markov chain](/en/p/markov-chain/), and the state $x_t$ at step $t$ is expressed by the following equation:
 
 $$ q(x_t | x_{t-1}) = \mathcal{N}(x_t; \sqrt{1 - \beta_t} x_{t-1}, \beta_t I) $$
 
@@ -264,7 +264,7 @@ Frequently occurring errors in local environment setup and operation, along with
 
 ## 10. Conclusion: The Future of AI Image Generation and the Superiority of Local Environments
 
-The open-source AI image generation movement that began with Stable Diffusion continues to evolve into next-generation architectures like SDXL, and Stable Diffusion 3 or [Flux](https://kenji.blog/en/p/state-management-history-redux-context-recoil-zustand/).1. The number of parameters in models has grown immensely from billions to tens of billions, and moving forward, GPU environments with 24GB of VRAM or more will become increasingly necessary.
+The open-source AI image generation movement that began with Stable Diffusion continues to evolve into next-generation architectures like SDXL, and Stable Diffusion 3 or Flux.1. The number of parameters in models has grown immensely from billions to tens of billions, and moving forward, GPU environments with 24GB of VRAM or more will become increasingly necessary.
 
 However, local optimization technologies such as TensorRT, Quantization, and [GGUF](/en/p/llama-cpp-quantization-gguf/) are also accelerating their speed of evolution, and an ecosystem is forming where sufficient inference becomes possible even on hardware for general consumers.
 

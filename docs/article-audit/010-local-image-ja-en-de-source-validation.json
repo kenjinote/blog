@@ -1,0 +1,124 @@
+[
+  {
+    "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "VRAMの最適化手法",
+        "url": "/p/ai-gpu-vram-optimization-cpu-offloading/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [
+      {
+        "link": "[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)",
+        "context": "[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)",
+        "reason": "misleading"
+      },
+      {
+        "link": "[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)",
+        "context": "Fooocusは、Midjourneyのような「短いプロンプトでも圧倒的に美しい画像が出る」ことを目指して作られたUIです。SDXLモデル専用にチューニングされており、内部でGPT-2ベースのプロンプト拡張や複雑な[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)を自動で行います。",
+        "reason": "misleading"
+      },
+      {
+        "link": "[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)",
+        "context": "本マニュアルで解説したCUDA環境の構築、VRAMの最適化、そしてComfyUIなどの[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)理解は、AIの技術トレンドがどのように変化しても通用する普遍的な基盤知識となります。皆様のクリエイティビティが、制限のないローカル環境で最大限に発揮されることを願っています。",
+        "reason": "misleading"
+      },
+      {
+        "link": "[Flux](https://kenji.blog/p/state-management-history-redux-context-recoil-zustand/)",
+        "context": "[Flux](https://kenji.blog/p/state-management-history-redux-context-recoil-zustand/)",
+        "reason": "misleading"
+      }
+    ],
+    "heading_link_repairs": [
+      {
+        "before": "### 3.1 GPU（[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)ィックボード）",
+        "after": "### 3.1 GPU（グラフィックボード） {#31-gpuグラフhttpskenjiblogptree-graph-data-structures-search-dfs-bfs-dijkstraィックボード}",
+        "preserved_id": "31-gpuグラフhttpskenjiblogptree-graph-data-structures-search-dfs-bfs-dijkstraィックボード"
+      }
+    ],
+    "category_change": null,
+    "categories": "Retain ai / image-generation / stable-diffusion: all fit the main subject and have localized definitions.",
+    "updated_sha256": "fcfe7635ca0e22a7e6fc54b6fa0cad2946ab7c85403f1fd42051f2c4afd51241"
+  },
+  {
+    "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.en.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "VRAM optimization techniques",
+        "url": "/en/p/ai-gpu-vram-optimization-cpu-offloading/"
+      },
+      {
+        "term": "Markov chain",
+        "url": "/en/p/markov-chain/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [
+      {
+        "link": "[Flux](https://kenji.blog/en/p/state-management-history-redux-context-recoil-zustand/)",
+        "context": "[Flux](https://kenji.blog/en/p/state-management-history-redux-context-recoil-zustand/)",
+        "reason": "misleading"
+      }
+    ],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain ai / image-generation / stable-diffusion: all fit the main subject and have localized definitions.",
+    "updated_sha256": "8144080197511f986183b73d3779e7b43113a4f686215148555640fc063d0d21"
+  },
+  {
+    "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.de.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Methoden zur VRAM-Optimierung",
+        "url": "/de/p/ai-gpu-vram-optimization-cpu-offloading/"
+      },
+      {
+        "term": "Markov-Kette",
+        "url": "/de/p/markov-chain/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [
+      {
+        "link": "[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)",
+        "context": "[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)",
+        "reason": "misleading"
+      },
+      {
+        "link": "[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)",
+        "context": "Fooocus ist eine Benutzeroberfläche, die mit dem Ziel entwickelt wurde, \"mit kurzen Prompts überwältigend schöne Bilder auszugeben\", ähnlich wie Midjourney. Sie ist speziell auf SDXL-Modelle abgestimmt und führt intern automatisch komplexe [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s wie GPT-2-basierte Prompt-Erweiterungen durch.",
+        "reason": "misleading"
+      },
+      {
+        "link": "[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)",
+        "context": "Die Einrichtung von CUDA-Umgebungen, die VRAM-Optimierung und das Verständnis von [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s wie ComfyUI, die in diesem Handbuch erläutert werden, bilden universelles Grundlagenwissen, das nützlich bleibt, egal wie sich KI-Technologie-Trends verändern. Wir hoffen, dass Ihre Kreativität in einer grenzenlosen lokalen Umgebung voll zur Geltung kommt.",
+        "reason": "misleading"
+      },
+      {
+        "link": "[Flux](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)",
+        "context": "[Flux](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)",
+        "reason": "misleading"
+      }
+    ],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain ai / image-generation / stable-diffusion: all fit the main subject and have localized definitions.",
+    "updated_sha256": "09407876278a06e0933566994bf3840cb6239575076b0c4628b38731cbd5ab66"
+  }
+]

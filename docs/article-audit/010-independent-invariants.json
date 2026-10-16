@@ -1,0 +1,17 @@
+[
+  {
+    "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+    "link_stripped_text_equal_except_explicit_preserved_heading_id": true,
+    "rendered_heading_id_check": "passed browser comparison; all IDs and TOC targets preserved"
+  },
+  {
+    "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.en.md",
+    "link_stripped_text_equal_except_explicit_preserved_heading_id": true,
+    "rendered_heading_id_check": "passed browser comparison; all IDs and TOC targets preserved"
+  },
+  {
+    "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.de.md",
+    "link_stripped_text_equal_except_explicit_preserved_heading_id": true,
+    "rendered_heading_id_check": "passed browser comparison; all IDs and TOC targets preserved"
+  }
+]

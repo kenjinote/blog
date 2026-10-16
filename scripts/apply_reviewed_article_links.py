@@ -36,6 +36,13 @@ def link_reviewed_context(source, term, context, destination, math_literals=(), 
     if any(m.start() < end and m.end() > start for m in tags):
         raise ValueError('Reviewed term overlaps HTML markup')
     masked = re.sub(r'</?(?:strong|br)\b[^>]*>', lambda m: ''.join('\n' if c == '\n' else ' ' for c in m[0]), source, flags=re.I)
+    # The generic scanner protects a whole block beginning with a heading.
+    # For an explicitly reviewed body span, isolate the heading in the probe
+    # without permitting changes to the heading itself or to fenced content.
+    heading_pattern = r'(?m)^ {0,3}#{1,6}[ \t]+[^\r\n]*'
+    if any(m.start() < end and m.end() > start for m in re.finditer(heading_pattern, source)):
+        raise ValueError('Reviewed term overlaps a heading')
+    masked = re.sub(heading_pattern, lambda m: '\n' * len(m[0]), masked)
     # An explicit reviewed math literal may resemble a dollar-denominated price.
     # Keep its delimiters and length, and prohibit edits inside the literal.
     for literal in math_literals:
@@ -74,6 +81,30 @@ def unwrap_reviewed_link(source, item, allowed_paths):
         raise ValueError('Duplicate removal would remove the only target link')
     start = source.index(context) + context.index(raw_link)
     return source[:start] + match[1] + source[start + len(raw_link):]
+
+
+def unwrap_reviewed_heading(source, item, allowed_paths):
+    """Keep a reviewed rendered anchor when removing one misleading heading link.
+
+    The plan supplies the old ID from the baseline HTML. A subsequent browser
+    comparison must confirm that the actual heading IDs remain unchanged.
+    """
+    heading, raw_link, old_id = item['heading'], item['link'], item['old_id']
+    match = re.fullmatch(r'(#{1,6}) ([^\r\n]+)', heading)
+    if (not match or source.splitlines().count(heading) != 1 or source.count(heading) != 1
+            or not re.fullmatch(r'[\w-]+', old_id)
+            or any(c in match[2] for c in '`$<>{}\\')
+            or heading.count(raw_link) != 1
+            or heading[heading.index(raw_link)-1:heading.index(raw_link)] in ('!', '\\')):
+        raise ValueError('Invalid reviewed heading or baseline anchor')
+    # Temporarily remove the heading marker to run the ordinary protected-span
+    # check. Fences, frontmatter and enclosing Markdown still stay protected.
+    probe = source.replace(heading, match[2], 1)
+    removal = {'link': raw_link, 'context': match[2], 'reason': 'misleading'}
+    unwrap_reviewed_link(probe, removal, allowed_paths)
+    link = SIMPLE_LINK.fullmatch(raw_link)
+    updated_heading = heading.replace(raw_link, link[1], 1) + ' {#' + old_id + '}'
+    return source.replace(heading, updated_heading, 1), updated_heading
 
 
 def main():
@@ -146,6 +177,13 @@ def main():
             updated = candidate
             added.append({'term': addition['term'], 'url': destination})
         comparison_source = source
+        heading_repairs = []
+        for heading_item in item.get('heading_unwraps', []):
+            updated, new_heading = unwrap_reviewed_heading(updated, heading_item, allowed_paths)
+            comparison_source = comparison_source.replace(
+                heading_item['heading'], heading_item['heading'] + ' {#' + heading_item['old_id'] + '}', 1)
+            heading_repairs.append({'before': heading_item['heading'], 'after': new_heading,
+                                    'preserved_id': heading_item['old_id']})
         if 'categories' in item:
             before, after = item['categories']['before'], item['categories']['after']
             if len(after) != len(set(after)) or not after:
@@ -167,7 +205,7 @@ def main():
             if fm.count(old_field) != 1:
                 raise ValueError('Category field does not match reviewed plan')
             updated = updated.replace(old_field, new_field, 1)
-            comparison_source = source.replace(old_field, new_field, 1)
+            comparison_source = comparison_source.replace(old_field, new_field, 1)
         repairs = []
         for old_edge in item.get('mermaid_edge_labels', []):
             match = re.fullmatch(r'( +)([A-Za-z][A-Za-z0-9_]*) -->\|([^|"\r\n]+)\| ([A-Za-z][A-Za-z0-9_]*)', old_edge)
@@ -192,6 +230,7 @@ def main():
                        'prose_unchanged': True, 'protected_content_unchanged_except_reviewed_repairs': True,
                        'mermaid_label_repairs': repairs,
                        'reviewed_unwrapped_links': unwrapped,
+                       'heading_link_repairs': heading_repairs,
                        'category_change': item.get('categories'),
                        'categories': item['category_decision'],
                        'updated_sha256': hashlib.sha256(updated.encode('utf-8')).hexdigest()})

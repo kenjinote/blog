@@ -21,7 +21,7 @@ AI画像生成技術は、Stable Diffusionのオープンソース化を皮切�
 3. **プライバシーとセキュリティ**: クラウドにデータを送信しないため、機密性の高いデザイン業務や個人的なプロジェクトに最適です。
 4. **最新技術の即時導入**: オープンソースコミュニティで日々発表される最新のモデルや拡張機能をいち早く試すことができます。
 
-本マニュアルでは、Windows環境を前提とし、現在主流となっている3つのAI画像生成環境（AUTOMATIC1111 Stable Diffusion WebUI、ComfyUI、Fooocus）の構築方法から、基盤となる数学的背景、さらにはVRAMの最適化手法までを10,000文字を超えるボリュームで徹底的に解説します。
+本マニュアルでは、Windows環境を前提とし、現在主流となっている3つのAI画像生成環境（AUTOMATIC1111 Stable Diffusion WebUI、ComfyUI、Fooocus）の構築方法から、基盤となる数学的背景、さらには[VRAMの最適化手法](/p/ai-gpu-vram-optimization-cpu-offloading/)までを10,000文字を超えるボリュームで徹底的に解説します。
 
 ---
 
@@ -76,7 +76,7 @@ graph TD
 
 ローカルAI画像生成において、ハードウェアの選定は最も重要です。
 
-### 3.1 GPU（[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)ィックボード）
+### 3.1 GPU（グラフィックボード） {#31-gpuグラフhttpskenjiblogptree-graph-data-structures-search-dfs-bfs-dijkstraィックボード}
 AI処理の心臓部です。Windows環境でStable Diffusionを動かす場合、NVIDIA製のGPUが事実上の標準（デファクトスタンダード）です。AMDのRadeonでもROCmを利用して動かすことは可能ですが、Windows上での環境構築の難易度や、多くの拡張機能がCUDA（NVIDIAの並列コンピューティングアーキテクチャ）に依存していることを考慮すると、NVIDIA一択と言っても過言ではありません。
 
 *   **最低要件**: VRAM 6GB（GTX 1060 6GB / RTX 2060 など）。※ただし解像度や機能に大きな制限が出ます。
@@ -131,7 +131,7 @@ GitHubからソースコードやモデルを取得するためにGitが必要�
 6.  完了すると `Running on local URL: http://127.0.0.1:7860` と表示されるので、ブラウザでアクセスします。
 
 ### 5.2 ComfyUI の構築とノードベースの利点
-ComfyUIは、生成プロセスを「ノード」と呼ばれるブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)で視覚的に繋ぎ合わせる（Node-based）UIです。VRAMの管理が極めて優秀で、AUTOMATIC1111ではメモリ不足になるような環境でも動作することが多いです。
+ComfyUIは、生成プロセスを「ノード」と呼ばれるブロックで視覚的に繋ぎ合わせる（Node-based）UIです。VRAMの管理が極めて優秀で、AUTOMATIC1111ではメモリ不足になるような環境でも動作することが多いです。
 
 ```mermaid
 graph TD
@@ -158,7 +158,7 @@ graph TD
     再起動するとUI右下に「Manager」ボタンが出現し、ここから様々なカスタムノードをインストール可能になります。
 
 ### 5.3 Fooocus の構築：初心者向けの高画質生成
-Fooocusは、Midjourneyのような「短いプロンプトでも圧倒的に美しい画像が出る」ことを目指して作られたUIです。SDXLモデル専用にチューニングされており、内部でGPT-2ベースのプロンプト拡張や複雑な[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)を自動で行います。
+Fooocusは、Midjourneyのような「短いプロンプトでも圧倒的に美しい画像が出る」ことを目指して作られたUIです。SDXLモデル専用にチューニングされており、内部でGPT-2ベースのプロンプト拡張や複雑なパイプラインを自動で行います。
 
 **インストール手順:**
 1.  Fooocus公式GitHubからWindows用リリースパックをダウンロードし解凍します。
@@ -264,9 +264,9 @@ ControlNetは、学習済みのStable Diffusionモデルの重みを固定した
 
 ## 10. 結びとして：AI画像生成の未来とローカル環境の優位性
 
-Stable Diffusionから始まったオープンソースAI画像生成のムーブメントは、SDXL、そしてStable Diffusion 3や[Flux](https://kenji.blog/p/state-management-history-redux-context-recoil-zustand/).1といった次世代アーキテクチャへと進化を続けています。モデルのパラメータ数は数十億から百億クラスへと巨大化しており、今後はVRAM 24GB以上のGPU環境がさらに求められるようになるでしょう。
+Stable Diffusionから始まったオープンソースAI画像生成のムーブメントは、SDXL、そしてStable Diffusion 3やFlux.1といった次世代アーキテクチャへと進化を続けています。モデルのパラメータ数は数十億から百億クラスへと巨大化しており、今後はVRAM 24GB以上のGPU環境がさらに求められるようになるでしょう。
 
 しかし、TensorRTや量子化技術（Quantization）、[GGUF](/p/llama-cpp-quantization-gguf/)などのローカル最適化技術も同様に進化のスピードを速めており、一般コンシューマー向けのハードウェアでも十分な推論が可能になるエコシステムが形成されつつあります。
 
-本マニュアルで解説したCUDA環境の構築、VRAMの最適化、そしてComfyUIなどの[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)理解は、AIの技術トレンドがどのように変化しても通用する普遍的な基盤知識となります。皆様のクリエイティビティが、制限のないローカル環境で最大限に発揮されることを願っています。
+本マニュアルで解説したCUDA環境の構築、VRAMの最適化、そしてComfyUIなどのパイプライン理解は、AIの技術トレンドがどのように変化しても通用する普遍的な基盤知識となります。皆様のクリエイティビティが、制限のないローカル環境で最大限に発揮されることを願っています。
 

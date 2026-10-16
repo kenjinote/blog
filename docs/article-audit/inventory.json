@@ -1863,13 +1863,19 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 31,
+        "hugo": "exit 0, 590793 ms",
+        "browser": "3 pages before/after passed: exact link multiset, paragraph/list text, heading IDs and TOC, code, math, two Mermaid diagrams per page, images, languages, localized category labels, same-language article links HTTP200 and mobile overflow. Japanese heading and German hero/category screenshots visually checked.",
+        "category_scope": "All three pages retain defined categories; category sources unchanged from previous 4305-error baseline."
+      },
+      "batch": "010-local-image-ja-en-de",
+      "push_status": "pending"
     },
     {
       "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.en.md",
@@ -1885,13 +1891,19 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 31,
+        "hugo": "exit 0, 590793 ms",
+        "browser": "3 pages before/after passed: exact link multiset, paragraph/list text, heading IDs and TOC, code, math, two Mermaid diagrams per page, images, languages, localized category labels, same-language article links HTTP200 and mobile overflow. Japanese heading and German hero/category screenshots visually checked.",
+        "category_scope": "All three pages retain defined categories; category sources unchanged from previous 4305-error baseline."
+      },
+      "batch": "010-local-image-ja-en-de",
+      "push_status": "pending"
     },
     {
       "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.es.md",
@@ -1909,8 +1921,8 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
       "batch": null
@@ -1931,8 +1943,8 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
       "batch": null
@@ -2017,13 +2029,19 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 31,
+        "hugo": "exit 0, 590793 ms",
+        "browser": "3 pages before/after passed: exact link multiset, paragraph/list text, heading IDs and TOC, code, math, two Mermaid diagrams per page, images, languages, localized category labels, same-language article links HTTP200 and mobile overflow. Japanese heading and German hero/category screenshots visually checked.",
+        "category_scope": "All three pages retain defined categories; category sources unchanged from previous 4305-error baseline."
+      },
+      "batch": "010-local-image-ja-en-de",
+      "push_status": "pending"
     },
     {
       "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.pt.md",
@@ -2041,7 +2059,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -2085,8 +2103,8 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
       "batch": null
@@ -2107,8 +2125,8 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
       "batch": null
