@@ -12,6 +12,35 @@ import apply_reviewed_article_links as audit
 
 
 class ReviewedEditTests(unittest.TestCase):
+    def test_explicit_context_preserves_inline_html(self):
+        source = '---\ntitle: Test\n---\n\nAn <strong>Introduction</strong> Euler explained waves.<br>\n'
+        result, count = audit.link_reviewed_context(source, 'Euler', 'Euler explained', '/en/p/euler/')
+        self.assertEqual(count, 1)
+        self.assertEqual(result, source.replace('Euler', '[Euler](/en/p/euler/)'))
+
+    def test_explicit_context_rejects_protected_spans(self):
+        for source in ['# Euler\n', '`Euler`', '$Euler$', '[Euler](/existing/)', '```text\nEuler\n```', '<strong title="Euler">Title</strong>', '<div>Euler</div>']:
+            with self.subTest(source=source), self.assertRaises(ValueError):
+                audit.link_reviewed_context('---\ntitle: Test\n---\n\n' + source, 'Euler', 'Euler', '/en/p/euler/')
+
+    def test_reviewed_math_literal_is_preserved_and_protected(self):
+        source = '---\ntitle: Test\n---\n\nEuler calculated $2 V_0$.'
+        result, _ = audit.link_reviewed_context(source, 'Euler', 'Euler', '/en/p/euler/', ['$2 V_0$'])
+        self.assertEqual(result, source.replace('Euler', '[Euler](/en/p/euler/)'))
+        with self.assertRaises(ValueError):
+            audit.link_reviewed_context(source, 'V_0', 'V_0', '/en/p/euler/', ['$2 V_0$'])
+
+    def test_mermaid_repair_preserves_edge_label(self):
+        edge = '    A -->|Pressure (>140 dB)| B'
+        self.original += '\n```mermaid\nflowchart TD\n' + edge + '\n```\n'
+        self.source.write_text(self.original, encoding='utf-8')
+        self.item['source_sha256'] = hashlib.sha256(self.source.read_bytes()).hexdigest()
+        self.item['mermaid_edge_labels'] = [edge]
+        self.run_plan()
+        updated = self.source.read_text(encoding='utf-8')
+        self.assertIn('    A -- "Pressure (>140 dB)" --> B', updated)
+        self.assertNotIn(edge, updated)
+
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
@@ -70,6 +99,20 @@ class ReviewedEditTests(unittest.TestCase):
             self.run_plan()
         self.assertEqual(self.source.read_text(encoding='utf-8'), self.original)
 
+    def test_multiline_categories_preserve_crlf_and_other_content(self):
+        old_field = 'categories:\n  - "business"\n  - "web-marketing"'
+        self.original = self.original.replace('categories: ["business", "web-marketing"]', old_field).replace('\n', '\r\n')
+        self.source.write_bytes(self.original.encode('utf-8'))
+        self.item['source_sha256'] = hashlib.sha256(self.source.read_bytes()).hexdigest()
+        self.item['links'] = []
+        self.item['categories'] = {'before': ['business', 'web-marketing'], 'after': ['business'], 'source_field': old_field}
+        p = self.root / 'content/categories/business/_index.en.md'
+        p.parent.mkdir(parents=True)
+        p.write_text('---\ntitle: Business\n---\n', encoding='utf-8')
+        self.run_plan()
+        expected = self.original.replace(old_field.replace('\n', '\r\n'), 'categories: ["business"]').replace('[Subject](/en/p/source/) studied', 'Subject studied')
+        self.assertEqual(self.source.read_bytes(), expected.encode('utf-8'))
+
     def test_existing_destination_not_nested_or_duplicated(self):
         self.original = self.original.replace('studied Euler.', 'studied [Euler](/en/p/euler/).')
         self.source.write_text(self.original, encoding='utf-8')
@@ -78,6 +121,25 @@ class ReviewedEditTests(unittest.TestCase):
         updated = self.source.read_text(encoding='utf-8')
         self.assertEqual(updated.count('[Euler](/en/p/euler/)'), 1)
         self.assertEqual(updated, self.original.replace('[Subject](/en/p/source/) studied', 'Subject studied'))
+
+    def test_explicit_quoted_self_link_unwrap_preserves_label(self):
+        broken = "['Subject](/en/p/'source'/)"
+        self.original += '\n' + broken + "' explained.\n"
+        self.source.write_text(self.original, encoding='utf-8')
+        self.item['source_sha256'] = hashlib.sha256(self.source.read_bytes()).hexdigest()
+        self.item['broken_self_links'] = [broken]
+        self.run_plan()
+        self.assertIn("'Subject' explained.", self.source.read_text(encoding='utf-8'))
+
+    def test_quoted_external_link_cannot_be_unwrapped_as_self(self):
+        broken = "[Subject](https://example.com/en/p/'source'/)"
+        self.original += '\n' + broken + '\n'
+        self.source.write_text(self.original, encoding='utf-8')
+        self.item['source_sha256'] = hashlib.sha256(self.source.read_bytes()).hexdigest()
+        self.item['broken_self_links'] = [broken]
+        with self.assertRaisesRegex(ValueError, 'not a quoted self-link'):
+            self.run_plan()
+        self.assertEqual(self.source.read_text(encoding='utf-8'), self.original)
 
 
 if __name__ == '__main__':

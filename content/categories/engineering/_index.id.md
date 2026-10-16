@@ -1,5 +1,6 @@
 ---
 {
-  "title": "Teknik"
+  "title": "Teknik",
+  "aliases": ["/id/categories/teknik/"]
 }
 ---

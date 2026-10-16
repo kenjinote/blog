@@ -1,0 +1,33 @@
+Start building sites …
+hugo v0.139.0-dacef0df92a9a20072b4eaa42003e1a63ace8f41+extended windows/amd64 BuildDate=2024-11-18T16:17:45Z VendorInfo=gohugoio
+
+WARN  found no layout file for "json" for kind "home": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  Failed to get translated string for language "pt" and ID "toggleMenu": %!s(<nil>)
+WARN  Failed to get translated string for language "pt" and ID "darkMode": %!s(<nil>)
+WARN  Failed to get translated string for language "pt" and ID "notFound.title": %!s(<nil>)
+WARN  Failed to get translated string for language "pt" and ID "notFound.subtitle": %!s(<nil>)
+WARN  Failed to get translated string for language "pt" and ID "search.title": %!s(<nil>)
+WARN  Failed to get translated string for language "pt" and ID "search.placeholder": %!s(<nil>)
+WARN  Failed to get translated string for language "pt" and ID "search.resultTitle": %!s(<nil>)
+WARN  Failed to get translated string for language "pt" and ID "footer.builtWith": %!s(<nil>)
+WARN  Failed to get translated string for language "pt" and ID "footer.designedBy": %!s(<nil>)
+WARN  Failed to get translated string for language "pt" and ID "widget.archives.title": %!s(<nil>)
+WARN  Failed to get translated string for language "pt" and ID "widget.categoriesCloud.title": %!s(<nil>)
+WARN  Failed to get translated string for language "pt" and ID "widget.tagCloud.title": %!s(<nil>)
+WARN  Failed to get translated string for language "pt" and ID "list.page": %!s(<nil>)
+WARN  Failed to get translated string for language "pt" and ID "list.section": %!s(<nil>)
+WARN  Failed to get translated string for language "pt" and ID "article.readingTime": %!s(<nil>)
+WARN  Failed to get translated string for language "pt" and ID "article.tableOfContents": %!s(<nil>)
+WARN  Failed to get translated string for language "pt" and ID "article.relatedContent": %!s(<nil>)
+
+                   |  JA   |  EN  | ZH-CN |  ES  |  KO  |  PT  | ZH-TW |  HI  |  FR  |  DE  |  AR  |  RU  |  ID
+-------------------+-------+------+-------+------+------+------+-------+------+------+------+------+------+-------
+  Pages            |  3759 | 3584 |  3755 | 3737 | 3777 | 3744 |  3780 | 3830 | 3742 | 3732 | 3833 | 3764 | 3741
+  Paginator pages  |   313 |  317 |   313 |  311 |  313 |  312 |   315 |  316 |  315 |  310 |  314 |  313 |  312
+  Non-page files   |  1436 | 1436 |  1436 | 1436 | 1436 | 1436 |  1436 | 1436 | 1436 | 1436 | 1436 | 1436 | 1436
+  Static files     |    21 |   21 |    21 |   21 |   21 |   21 |    21 |   21 |   21 |   21 |   21 |   21 |   21
+  Processed images | 76594 |    0 |     0 |    0 |    0 |    0 |     0 |    0 |    0 |    0 |    0 |    0 |    0
+  Aliases          |  2749 | 2570 |  2771 | 2765 | 2781 | 2769 |  2799 | 2875 | 2769 | 2758 | 2874 | 2783 | 2761
+  Cleaned          |     0 |    0 |     0 |    0 |    0 |    0 |     0 |    0 |    0 |    0 |    0 |    0 |    0
+
+Total in 608003 ms

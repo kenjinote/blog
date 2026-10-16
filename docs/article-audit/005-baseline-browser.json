@@ -1,0 +1,901 @@
+[
+  {
+    "lang": "ja",
+    "headings": [
+      {
+        "id": "1-究極の選択交換すべきかせざるべきか",
+        "text": "1. 究極の選択：交換すべきか、せざるべきか？"
+      },
+      {
+        "id": "2-期待値計算が導き出す無限のループ",
+        "text": "2. 期待値計算が導き出す「無限のループ」"
+      },
+      {
+        "id": "3-数学的トリックの解明変数のすり替え",
+        "text": "3. 数学的トリックの解明：変数のすり替え"
+      },
+      {
+        "id": "4-封筒を開けてしまったらどうなる",
+        "text": "4. 封筒を開けてしまったらどうなる？"
+      },
+      {
+        "id": "ベイズ推定による反証事前分布の欠落",
+        "text": "ベイズ推定による反証：「事前分布」の欠落"
+      },
+      {
+        "id": "5-無限の罠サンクトペテルブルクのパラドックスとの繋がり",
+        "text": "5. 無限の罠：サンクトペテルブルクのパラドックスとの繋がり"
+      },
+      {
+        "id": "6-まとめ確率と期待値の恐ろしさ",
+        "text": "6. まとめ：確率と期待値の恐ろしさ"
+      }
+    ],
+    "math": 37,
+    "mathErrors": 0,
+    "diagrams": 2,
+    "diagramErrors": 0,
+    "hero": true,
+    "categories": [
+      {
+        "text": "数学パラドックス",
+        "path": "/categories/mathematical-paradoxes/"
+      },
+      {
+        "text": "確率論",
+        "path": "/categories/probability-theory/"
+      }
+    ],
+    "links": [
+      {
+        "text": "ベイズの定理",
+        "path": "/p/bayes-theorem/"
+      },
+      {
+        "text": "サンクトペテルブルクのパラドックス",
+        "path": "/p/st-petersburg-paradox/"
+      }
+    ],
+    "brokenToc": [],
+    "linkStatus": [
+      {
+        "text": "ベイズの定理",
+        "path": "/p/bayes-theorem/",
+        "status": 200,
+        "sameLanguage": true
+      },
+      {
+        "text": "サンクトペテルブルクのパラドックス",
+        "path": "/p/st-petersburg-paradox/",
+        "status": 200,
+        "sameLanguage": true
+      }
+    ],
+    "mobileOverflow": false,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "headings": [
+      {
+        "id": "1-the-ultimate-choice-to-switch-or-not-to-switch",
+        "text": "1. The Ultimate Choice: To Switch or Not to Switch?"
+      },
+      {
+        "id": "2-the-infinite-loop-derived-from-expected-value-calculations",
+        "text": "2. The “Infinite Loop” Derived from Expected Value Calculations"
+      },
+      {
+        "id": "3-demystifying-the-mathematical-trick-the-swap-of-variables",
+        "text": "3. Demystifying the Mathematical Trick: The Swap of Variables"
+      },
+      {
+        "id": "4-what-if-you-open-the-envelope",
+        "text": "4. What If You Open the Envelope?"
+      },
+      {
+        "id": "the-disproof-by-bayesian-inference-the-missing-prior-distribution",
+        "text": "The Disproof by Bayesian Inference: The Missing “Prior Distribution”"
+      },
+      {
+        "id": "5-the-infinite-trap-connection-to-the-st-petersburg-paradox",
+        "text": "5. The Infinite Trap: Connection to the St. Petersburg Paradox"
+      },
+      {
+        "id": "6-conclusion-the-terrors-of-probability-and-expected-value",
+        "text": "6. Conclusion: The Terrors of Probability and Expected Value"
+      }
+    ],
+    "math": 37,
+    "mathErrors": 0,
+    "diagrams": 2,
+    "diagramErrors": 0,
+    "hero": true,
+    "categories": [
+      {
+        "text": "Mathematical Paradoxes",
+        "path": "/en/categories/mathematical-paradoxes/"
+      },
+      {
+        "text": "Probability Theory",
+        "path": "/en/categories/probability-theory/"
+      }
+    ],
+    "links": [
+      {
+        "text": "Bayes’ theorem",
+        "path": "/en/p/bayes-theorem/"
+      },
+      {
+        "text": "St. Petersburg paradox",
+        "path": "/en/p/st-petersburg-paradox/"
+      }
+    ],
+    "brokenToc": [],
+    "linkStatus": [
+      {
+        "text": "Bayes’ theorem",
+        "path": "/en/p/bayes-theorem/",
+        "status": 200,
+        "sameLanguage": true
+      },
+      {
+        "text": "St. Petersburg paradox",
+        "path": "/en/p/st-petersburg-paradox/",
+        "status": 200,
+        "sameLanguage": true
+      }
+    ],
+    "mobileOverflow": false,
+    "errors": []
+  },
+  {
+    "lang": "de",
+    "headings": [
+      {
+        "id": "1-die-ultimative-wahl-tauschen-oder-nicht-tauschen",
+        "text": "1. Die ultimative Wahl: Tauschen oder nicht tauschen?"
+      },
+      {
+        "id": "2-die-unendliche-schleife-die-durch-die-erwartungswertberechnung-entsteht",
+        "text": "2. Die “unendliche Schleife”, die durch die Erwartungswertberechnung entsteht"
+      },
+      {
+        "id": "3-den-mathematischen-trick-aufklären-der-austausch-von-variablen",
+        "text": "3. Den mathematischen Trick aufklären: Der Austausch von Variablen"
+      },
+      {
+        "id": "4-was-passiert-wenn-sie-den-umschlag-öffnen",
+        "text": "4. Was passiert, wenn Sie den Umschlag öffnen?"
+      },
+      {
+        "id": "widerlegung-durch-bayes-schätzung-die-fehlende-a-priori-verteilung",
+        "text": "Widerlegung durch Bayes-Schätzung: Die fehlende “A-priori-Verteilung”"
+      },
+      {
+        "id": "5-die-falle-der-unendlichkeit-verbindung-zum-sankt-petersburg-paradoxon",
+        "text": "5. Die Falle der Unendlichkeit: Verbindung zum Sankt-Petersburg-Paradoxon"
+      },
+      {
+        "id": "6-fazit-die-schrecken-von-wahrscheinlichkeit-und-erwartungswert",
+        "text": "6. Fazit: Die Schrecken von Wahrscheinlichkeit und Erwartungswert"
+      }
+    ],
+    "math": 36,
+    "mathErrors": 0,
+    "diagrams": 2,
+    "diagramErrors": 0,
+    "hero": true,
+    "categories": [
+      {
+        "text": "Mathematische Paradoxien",
+        "path": "/de/categories/mathematical-paradoxes/"
+      },
+      {
+        "text": "Wahrscheinlichkeitstheorie",
+        "path": "/de/categories/probability-theory/"
+      }
+    ],
+    "links": [],
+    "brokenToc": [],
+    "linkStatus": [],
+    "mobileOverflow": false,
+    "errors": []
+  },
+  {
+    "lang": "fr",
+    "headings": [
+      {
+        "id": "1-le-choix-ultime--échanger-ou-ne-pas-échanger-",
+        "text": "1. Le choix ultime : échanger ou ne pas échanger ?"
+      },
+      {
+        "id": "2-la--boucle-infinie--déduite-par-le-calcul-de-lespérance",
+        "text": "2. La « boucle infinie » déduite par le calcul de l’espérance"
+      },
+      {
+        "id": "3-explication-de-lastuce-mathématique--la-substitution-de-variables",
+        "text": "3. Explication de l’astuce mathématique : la substitution de variables"
+      },
+      {
+        "id": "4-que-se-passe-t-il-si-vous-ouvrez-lenveloppe-",
+        "text": "4. Que se passe-t-il si vous ouvrez l’enveloppe ?"
+      },
+      {
+        "id": "réfutation-par-linférence-bayésienne--labsence-de--distribution-a-priori-",
+        "text": "Réfutation par l’inférence bayésienne : l’absence de « distribution a priori »"
+      },
+      {
+        "id": "5-le-piège-de-linfini--lien-avec-le-paradoxe-de-saint-pétersbourg",
+        "text": "5. Le piège de l’infini : lien avec le paradoxe de Saint-Pétersbourg"
+      },
+      {
+        "id": "6-conclusion--la-terreur-des-probabilités-et-de-lespérance",
+        "text": "6. Conclusion : la terreur des probabilités et de l’espérance"
+      }
+    ],
+    "math": 37,
+    "mathErrors": 0,
+    "diagrams": 2,
+    "diagramErrors": 0,
+    "hero": true,
+    "categories": [
+      {
+        "text": "Paradoxes mathématiques",
+        "path": "/fr/categories/mathematical-paradoxes/"
+      },
+      {
+        "text": "Théorie des probabilités",
+        "path": "/fr/categories/probability-theory/"
+      }
+    ],
+    "links": [
+      {
+        "text": "théorème de Bayes",
+        "path": "/fr/p/bayes-theorem/"
+      }
+    ],
+    "brokenToc": [],
+    "linkStatus": [
+      {
+        "text": "théorème de Bayes",
+        "path": "/fr/p/bayes-theorem/",
+        "status": 200,
+        "sameLanguage": true
+      }
+    ],
+    "mobileOverflow": false,
+    "errors": []
+  },
+  {
+    "lang": "es",
+    "headings": [
+      {
+        "id": "1-la-decisión-definitiva-cambiar-o-no-cambiar",
+        "text": "1. La decisión definitiva: ¿Cambiar o no cambiar?"
+      },
+      {
+        "id": "2-el-bucle-infinito-que-se-deduce-del-cálculo-del-valor-esperado",
+        "text": "2. El “bucle infinito” que se deduce del cálculo del valor esperado"
+      },
+      {
+        "id": "3-aclarando-el-truco-matemático-el-intercambio-de-variables",
+        "text": "3. Aclarando el truco matemático: el intercambio de variables"
+      },
+      {
+        "id": "4-qué-pasa-si-ya-has-abierto-el-sobre",
+        "text": "4. ¿Qué pasa si ya has abierto el sobre?"
+      },
+      {
+        "id": "refutación-por-inferencia-bayesiana-falta-de-distribución-a-priori",
+        "text": "Refutación por inferencia bayesiana: Falta de “distribución a priori”"
+      },
+      {
+        "id": "5-la-trampa-del-infinito-la-conexión-con-la-paradoja-de-san-petersburgo",
+        "text": "5. La trampa del infinito: la conexión con la paradoja de San Petersburgo"
+      },
+      {
+        "id": "6-resumen-los-peligros-de-la-probabilidad-y-el-valor-esperado",
+        "text": "6. Resumen: Los peligros de la probabilidad y el valor esperado"
+      }
+    ],
+    "math": 37,
+    "mathErrors": 0,
+    "diagrams": 2,
+    "diagramErrors": 0,
+    "hero": true,
+    "categories": [
+      {
+        "text": "Paradojas matemáticas",
+        "path": "/es/categories/mathematical-paradoxes/"
+      },
+      {
+        "text": "Teoría de la probabilidad",
+        "path": "/es/categories/probability-theory/"
+      }
+    ],
+    "links": [
+      {
+        "text": "Teorema de Bayes",
+        "path": "/es/p/bayes-theorem/"
+      }
+    ],
+    "brokenToc": [],
+    "linkStatus": [
+      {
+        "text": "Teorema de Bayes",
+        "path": "/es/p/bayes-theorem/",
+        "status": 200,
+        "sameLanguage": true
+      }
+    ],
+    "mobileOverflow": false,
+    "errors": []
+  },
+  {
+    "lang": "pt",
+    "headings": [
+      {
+        "id": "1-a-escolha-definitiva-trocar-ou-não-trocar",
+        "text": "1. A Escolha Definitiva: Trocar ou não trocar?"
+      },
+      {
+        "id": "2-o-loop-infinito-derivado-do-cálculo-do-valor-esperado",
+        "text": "2. O “Loop Infinito” Derivado do Cálculo do Valor Esperado"
+      },
+      {
+        "id": "3-desvendando-o-truque-matemático-a-troca-oculta-de-variáveis",
+        "text": "3. Desvendando o Truque Matemático: A Troca Oculta de Variáveis"
+      },
+      {
+        "id": "4-e-se-você-abrisse-o-envelope",
+        "text": "4. E se você abrisse o envelope?"
+      },
+      {
+        "id": "refutação-por-inferência-bayesiana-a-omissão-da-distribuição-a-priori",
+        "text": "Refutação por Inferência Bayesiana: A Omissão da “Distribuição a Priori”"
+      },
+      {
+        "id": "5-a-armadilha-do-infinito-ligação-com-o-paradoxo-de-são-petersburgo",
+        "text": "5. A Armadilha do Infinito: Ligação com o Paradoxo de São Petersburgo"
+      },
+      {
+        "id": "6-conclusão-o-terror-da-probabilidade-e-do-valor-esperado",
+        "text": "6. Conclusão: O Terror da Probabilidade e do Valor Esperado"
+      }
+    ],
+    "math": 37,
+    "mathErrors": 0,
+    "diagrams": 2,
+    "diagramErrors": 0,
+    "hero": true,
+    "categories": [
+      {
+        "text": "Paradoxos matemáticos",
+        "path": "/pt/categories/mathematical-paradoxes/"
+      },
+      {
+        "text": "Teoria das Probabilidades",
+        "path": "/pt/categories/probability-theory/"
+      }
+    ],
+    "links": [
+      {
+        "text": "Teorema de Bayes",
+        "path": "/pt/p/bayes-theorem/"
+      },
+      {
+        "text": "Paradoxo de São Petersburgo",
+        "path": "/pt/p/st-petersburg-paradox/"
+      }
+    ],
+    "brokenToc": [],
+    "linkStatus": [
+      {
+        "text": "Teorema de Bayes",
+        "path": "/pt/p/bayes-theorem/",
+        "status": 200,
+        "sameLanguage": true
+      },
+      {
+        "text": "Paradoxo de São Petersburgo",
+        "path": "/pt/p/st-petersburg-paradox/",
+        "status": 200,
+        "sameLanguage": true
+      }
+    ],
+    "mobileOverflow": false,
+    "errors": []
+  },
+  {
+    "lang": "id",
+    "headings": [
+      {
+        "id": "1-pilihan-utama-menukar-atau-tidak-menukar",
+        "text": "1. Pilihan Utama: Menukar atau Tidak Menukar?"
+      },
+      {
+        "id": "2-lingkaran-tak-terhingga-yang-dihasilkan-oleh-perhitungan-nilai-harapan",
+        "text": "2. “Lingkaran Tak Terhingga” yang Dihasilkan oleh Perhitungan Nilai Harapan"
+      },
+      {
+        "id": "3-mengungkap-trik-matematis-pertukaran-variabel",
+        "text": "3. Mengungkap Trik Matematis: Pertukaran Variabel"
+      },
+      {
+        "id": "4-apa-yang-terjadi-jika-amplop-dibuka",
+        "text": "4. Apa yang Terjadi Jika Amplop Dibuka?"
+      },
+      {
+        "id": "sanggahan-melalui-inferensi-bayes-hilangnya-distribusi-apriori",
+        "text": "Sanggahan melalui Inferensi Bayes: Hilangnya “Distribusi Apriori”"
+      },
+      {
+        "id": "5-jebakan-tak-terhingga-hubungannya-dengan-paradoks-st-petersburg",
+        "text": "5. Jebakan Tak Terhingga: Hubungannya dengan Paradoks St. Petersburg"
+      },
+      {
+        "id": "6-kesimpulan-kengerian-probabilitas-dan-nilai-harapan",
+        "text": "6. Kesimpulan: Kengerian Probabilitas dan Nilai Harapan"
+      }
+    ],
+    "math": 38,
+    "mathErrors": 0,
+    "diagrams": 2,
+    "diagramErrors": 0,
+    "hero": true,
+    "categories": [
+      {
+        "text": "Paradoks matematika",
+        "path": "/id/categories/mathematical-paradoxes/"
+      },
+      {
+        "text": "Teori Probabilitas",
+        "path": "/id/categories/probability-theory/"
+      }
+    ],
+    "links": [
+      {
+        "text": "Teorema Bayes",
+        "path": "/id/p/bayes-theorem/"
+      },
+      {
+        "text": "Paradoks St. Petersburg",
+        "path": "/id/p/st-petersburg-paradox/"
+      }
+    ],
+    "brokenToc": [],
+    "linkStatus": [
+      {
+        "text": "Teorema Bayes",
+        "path": "/id/p/bayes-theorem/",
+        "status": 200,
+        "sameLanguage": true
+      },
+      {
+        "text": "Paradoks St. Petersburg",
+        "path": "/id/p/st-petersburg-paradox/",
+        "status": 200,
+        "sameLanguage": true
+      }
+    ],
+    "mobileOverflow": false,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "headings": [
+      {
+        "id": "1-궁극의-선택-교환해야-할까-말아야-할까",
+        "text": "1. 궁극의 선택: 교환해야 할까, 말아야 할까?"
+      },
+      {
+        "id": "2-기댓값-계산이-이끌어내는-무한-루프",
+        "text": "2. 기댓값 계산이 이끌어내는 ‘무한 루프’"
+      },
+      {
+        "id": "3-수학적-트릭의-규명-변수의-바꿔치기",
+        "text": "3. 수학적 트릭의 규명: 변수의 바꿔치기"
+      },
+      {
+        "id": "4-봉투를-열어버린다면-어떻게-될까",
+        "text": "4. 봉투를 열어버린다면 어떻게 될까?"
+      },
+      {
+        "id": "베이즈-추정에-의한-반증-사전-분포의-누락",
+        "text": "베이즈 추정에 의한 반증: ‘사전 분포’의 누락"
+      },
+      {
+        "id": "5-무한의-함정-상트페테르부르크의-역설과의-연결고리",
+        "text": "5. 무한의 함정: 상트페테르부르크의 역설과의 연결고리"
+      },
+      {
+        "id": "6-요약-확률과-기댓값의-무서움",
+        "text": "6. 요약: 확률과 기댓값의 무서움"
+      }
+    ],
+    "math": 37,
+    "mathErrors": 0,
+    "diagrams": 2,
+    "diagramErrors": 0,
+    "hero": true,
+    "categories": [
+      {
+        "text": "수학적 역설",
+        "path": "/ko/categories/mathematical-paradoxes/"
+      },
+      {
+        "text": "확률론",
+        "path": "/ko/categories/probability-theory/"
+      }
+    ],
+    "links": [
+      {
+        "text": "베이즈 정리",
+        "path": "/ko/p/bayes-theorem/"
+      },
+      {
+        "text": "상트페테르부르크의 역설",
+        "path": "/ko/p/st-petersburg-paradox/"
+      },
+      {
+        "text": "‘두 개의 봉투 역설",
+        "path": "/ko/p/%27two-envelopes-paradox%27/"
+      }
+    ],
+    "brokenToc": [],
+    "linkStatus": [
+      {
+        "text": "베이즈 정리",
+        "path": "/ko/p/bayes-theorem/",
+        "status": 200,
+        "sameLanguage": true
+      },
+      {
+        "text": "상트페테르부르크의 역설",
+        "path": "/ko/p/st-petersburg-paradox/",
+        "status": 200,
+        "sameLanguage": true
+      },
+      {
+        "text": "‘두 개의 봉투 역설",
+        "path": "/ko/p/%27two-envelopes-paradox%27/",
+        "status": 404,
+        "sameLanguage": true
+      }
+    ],
+    "mobileOverflow": false,
+    "errors": []
+  },
+  {
+    "lang": "zh-cn",
+    "headings": [
+      {
+        "id": "1-终极选择换还是不换",
+        "text": "1. 终极选择：换还是不换？"
+      },
+      {
+        "id": "2-期望值计算导出的无限循环",
+        "text": "2. 期望值计算导出的“无限循环”"
+      },
+      {
+        "id": "3-解密数学戏法变量的偷换",
+        "text": "3. 解密数学戏法：变量的偷换"
+      },
+      {
+        "id": "4-如果把信封打开了会怎么样",
+        "text": "4. 如果把信封打开了会怎么样？"
+      },
+      {
+        "id": "贝叶斯推断的反证先验分布的缺失",
+        "text": "贝叶斯推断的反证：“先验分布”的缺失"
+      },
+      {
+        "id": "5-无限的陷阱与圣彼得堡悖论的联系",
+        "text": "5. 无限的陷阱：与圣彼得堡悖论的联系"
+      },
+      {
+        "id": "6-总结概率与期望值的可怕之处",
+        "text": "6. 总结：概率与期望值的可怕之处"
+      }
+    ],
+    "math": 37,
+    "mathErrors": 0,
+    "diagrams": 2,
+    "diagramErrors": 0,
+    "hero": true,
+    "categories": [
+      {
+        "text": "数学悖论",
+        "path": "/zh-cn/categories/mathematical-paradoxes/"
+      },
+      {
+        "text": "概率论",
+        "path": "/zh-cn/categories/probability-theory/"
+      }
+    ],
+    "links": [
+      {
+        "text": "贝叶斯定理",
+        "path": "/zh-cn/p/bayes-theorem/"
+      },
+      {
+        "text": "圣彼得堡悖论",
+        "path": "/zh-cn/p/st-petersburg-paradox/"
+      }
+    ],
+    "brokenToc": [],
+    "linkStatus": [
+      {
+        "text": "贝叶斯定理",
+        "path": "/zh-cn/p/bayes-theorem/",
+        "status": 200,
+        "sameLanguage": true
+      },
+      {
+        "text": "圣彼得堡悖论",
+        "path": "/zh-cn/p/st-petersburg-paradox/",
+        "status": 200,
+        "sameLanguage": true
+      }
+    ],
+    "mobileOverflow": false,
+    "errors": []
+  },
+  {
+    "lang": "zh-tw",
+    "headings": [
+      {
+        "id": "1-終極的選擇該交換還是不該交換",
+        "text": "1. 終極的選擇：該交換，還是不該交換？"
+      },
+      {
+        "id": "2-期望值計算導出的無限迴圈",
+        "text": "2. 期望值計算導出的「無限迴圈」"
+      },
+      {
+        "id": "3-數學把戲的解密變數的偷換",
+        "text": "3. 數學把戲的解密：變數的偷換"
+      },
+      {
+        "id": "4-如果打開了信封會怎麼樣",
+        "text": "4. 如果打開了信封會怎麼樣？"
+      },
+      {
+        "id": "貝氏推論的有力反證事前分配的缺失",
+        "text": "貝氏推論的有力反證：「事前分配」的缺失"
+      },
+      {
+        "id": "5-無限的陷阱與聖彼得堡悖論的關聯",
+        "text": "5. 無限的陷阱：與聖彼得堡悖論的關聯"
+      },
+      {
+        "id": "6-總結機率與期望值的可怕之處",
+        "text": "6. 總結：機率與期望值的可怕之處"
+      }
+    ],
+    "math": 37,
+    "mathErrors": 0,
+    "diagrams": 2,
+    "diagramErrors": 0,
+    "hero": true,
+    "categories": [
+      {
+        "text": "數學悖論",
+        "path": "/zh-tw/categories/mathematical-paradoxes/"
+      },
+      {
+        "text": "機率論",
+        "path": "/zh-tw/categories/probability-theory/"
+      }
+    ],
+    "links": [
+      {
+        "text": "貝氏定理",
+        "path": "/zh-tw/p/bayes-theorem/"
+      },
+      {
+        "text": "聖彼得堡悖論",
+        "path": "/zh-tw/p/st-petersburg-paradox/"
+      }
+    ],
+    "brokenToc": [],
+    "linkStatus": [
+      {
+        "text": "貝氏定理",
+        "path": "/zh-tw/p/bayes-theorem/",
+        "status": 200,
+        "sameLanguage": true
+      },
+      {
+        "text": "聖彼得堡悖論",
+        "path": "/zh-tw/p/st-petersburg-paradox/",
+        "status": 200,
+        "sameLanguage": true
+      }
+    ],
+    "mobileOverflow": false,
+    "errors": []
+  },
+  {
+    "lang": "ru",
+    "headings": [
+      {
+        "id": "1-главный-выбор-менять-или-не-менять",
+        "text": "1. Главный выбор: менять или не менять?"
+      },
+      {
+        "id": "2-бесконечный-цикл-порожденный-вычислением-математического-ожидания",
+        "text": "2. «Бесконечный цикл», порожденный вычислением математического ожидания"
+      },
+      {
+        "id": "3-разоблачение-математического-трюка-подмена-переменных",
+        "text": "3. Разоблачение математического трюка: подмена переменных"
+      },
+      {
+        "id": "4-что-будет-если-вы-всё-таки-откроете-конверт",
+        "text": "4. Что будет, если вы всё-таки откроете конверт?"
+      },
+      {
+        "id": "опровержение-с-помощью-байесовского-вывода-отсутствие-априорного-распределения",
+        "text": "Опровержение с помощью байесовского вывода: отсутствие «априорного распределения»"
+      },
+      {
+        "id": "5-ловушка-бесконечности-связь-с-санкт-петербургским-парадоксом",
+        "text": "5. Ловушка бесконечности: связь с Санкт-Петербургским парадоксом"
+      },
+      {
+        "id": "6-заключение-коварство-вероятности-и-математического-ожидания",
+        "text": "6. Заключение: коварство вероятности и математического ожидания"
+      }
+    ],
+    "math": 37,
+    "mathErrors": 0,
+    "diagrams": 2,
+    "diagramErrors": 0,
+    "hero": true,
+    "categories": [
+      {
+        "text": "Математические парадоксы",
+        "path": "/ru/categories/mathematical-paradoxes/"
+      },
+      {
+        "text": "Теория вероятностей",
+        "path": "/ru/categories/probability-theory/"
+      }
+    ],
+    "links": [],
+    "brokenToc": [],
+    "linkStatus": [],
+    "mobileOverflow": false,
+    "errors": []
+  },
+  {
+    "lang": "ar",
+    "headings": [
+      {
+        "id": "1-الخيار-النهائي-هل-يجب-التبديل-أم-لا",
+        "text": "1. الخيار النهائي: هل يجب التبديل أم لا؟"
+      },
+      {
+        "id": "2-الحلقة-اللانهائية-التي-يستنتجها-حساب-القيمة-المتوقعة",
+        "text": "2. “الحلقة اللانهائية” التي يستنتجها حساب القيمة المتوقعة"
+      },
+      {
+        "id": "3-كشف-الخدعة-الرياضية-استبدال-المتغيرات",
+        "text": "3. كشف الخدعة الرياضية: استبدال المتغيرات"
+      },
+      {
+        "id": "4-ماذا-لو-فتحت-المظروف",
+        "text": "4. ماذا لو فتحت المظروف؟"
+      },
+      {
+        "id": "الدحض-باستخدام-الاستدلال-البايزي-غياب-التوزيع-المسبق",
+        "text": "الدحض باستخدام الاستدلال البايزي: غياب “التوزيع المسبق”"
+      },
+      {
+        "id": "5-فخ-اللانهاية-الارتباط-بمفارقة-سانت-بطرسبرغ",
+        "text": "5. فخ اللانهاية: الارتباط بمفارقة سانت بطرسبرغ"
+      },
+      {
+        "id": "6-الخلاصة-رعب-الاحتمالات-والقيمة-المتوقعة",
+        "text": "6. الخلاصة: رعب الاحتمالات والقيمة المتوقعة"
+      }
+    ],
+    "math": 37,
+    "mathErrors": 0,
+    "diagrams": 2,
+    "diagramErrors": 0,
+    "hero": true,
+    "categories": [
+      {
+        "text": "مفارقات رياضية",
+        "path": "/ar/categories/mathematical-paradoxes/"
+      },
+      {
+        "text": "نظرية الاحتمالات",
+        "path": "/ar/categories/probability-theory/"
+      }
+    ],
+    "links": [
+      {
+        "text": "مبرهنة بايز",
+        "path": "/ar/p/bayes-theorem/"
+      },
+      {
+        "text": "مفارقة سانت بطرسبرغ",
+        "path": "/ar/p/st-petersburg-paradox/"
+      }
+    ],
+    "brokenToc": [],
+    "linkStatus": [
+      {
+        "text": "مبرهنة بايز",
+        "path": "/ar/p/bayes-theorem/",
+        "status": 200,
+        "sameLanguage": true
+      },
+      {
+        "text": "مفارقة سانت بطرسبرغ",
+        "path": "/ar/p/st-petersburg-paradox/",
+        "status": 200,
+        "sameLanguage": true
+      }
+    ],
+    "mobileOverflow": false,
+    "errors": []
+  },
+  {
+    "lang": "hi",
+    "headings": [
+      {
+        "id": "1-अतम-वकलप-बदल-य-न-बदल",
+        "text": "1. अंतिम विकल्प: बदलें या न बदलें?"
+      },
+      {
+        "id": "2-अपकषत-मलय-क-गणन-स-उतपनन-अनत-लप",
+        "text": "2. अपेक्षित मूल्य की गणना से उत्पन्न “अनंत लूप”"
+      },
+      {
+        "id": "3-गणतय-चल-क-समझन-चर-variables-क-अदल-बदल",
+        "text": "3. गणितीय चाल को समझना: चरों (variables) की अदला-बदली"
+      },
+      {
+        "id": "4-अगर-आप-लफफ-खल-ल-त-कय-हग",
+        "text": "4. अगर आप लिफाफा खोल लें तो क्या होगा?"
+      },
+      {
+        "id": "बयसयन-अनमन-दवर-खडन-परव-वतरण-prior-distribution-क-अभव",
+        "text": "बेयसियन अनुमान द्वारा खंडन: “पूर्व वितरण (Prior Distribution)” का अभाव"
+      },
+      {
+        "id": "5-अनत-क-जल-सट-पटरसबरग-वरधभस-st-petersburg-paradox-स-सबध",
+        "text": "5. अनंत का जाल: सेंट पीटर्सबर्ग विरोधाभास (St. Petersburg paradox) से संबंध"
+      },
+      {
+        "id": "6-नषकरष-परयकत-और-अपकषत-मलय-क-डर",
+        "text": "6. निष्कर्ष: प्रायिकता और अपेक्षित मूल्य का डर"
+      }
+    ],
+    "math": 37,
+    "mathErrors": 0,
+    "diagrams": 2,
+    "diagramErrors": 0,
+    "hero": true,
+    "categories": [
+      {
+        "text": "गणितीय विरोधाभास",
+        "path": "/hi/categories/mathematical-paradoxes/"
+      },
+      {
+        "text": "प्रायिकता सिद्धांत",
+        "path": "/hi/categories/probability-theory/"
+      }
+    ],
+    "links": [],
+    "brokenToc": [],
+    "linkStatus": [],
+    "mobileOverflow": false,
+    "errors": []
+  }
+]

@@ -5,10 +5,7 @@ slug: "acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics"
 image: "eyecatch.jpg"
 math: true
 draft: false
-categories:
-  - "Wissenschaft"
-  - "Physik"
-  - "Ingenieurwesen"
+categories: ["science", "physics", "engineering"]
 tags:
   - "Akustische Levitation"
   - "Stehende Wellen"
@@ -22,7 +19,7 @@ Mitten im freien Raum eines modernen Forschungslabors schwebt ein einzelner Wass
 
 Selbst diamagnetische Stoffe wie Wasser, Holz oder Kunststoffe, die auf gewöhnliche Magnetfelder nicht reagieren, lassen sich so stabil in der Schwebe halten. Diese Technologie, die den Traktorstrahl der Science-Fiction Realität werden lässt, heißt <strong>akustische Levitation (Acoustic Levitation)</strong>.
 
-Alltägliche Schallwellen sind schwache Druckschwankungen der Luft. Im Ultraschallbereich (über 20 kHz) jedoch, wenn kohärente Interferenzstrukturen in Form von <strong>stehenden Wellen (Standing Waves)</strong> erzeugt werden, entfaltet der Schall gewaltige mechanische Kräfte: die <strong>akustische Strahlungskraft (Acoustic Radiation Force)</strong>.
+Alltägliche Schallwellen sind schwache Druckschwankungen der Luft. Im Ultraschallbereich (über 20 kHz) jedoch, wenn kohärente [Interferenzstrukturen](/de/p/physics-noise-cancelling/) in Form von <strong>stehenden Wellen (Standing Waves)</strong> erzeugt werden, entfaltet der Schall gewaltige mechanische Kräfte: die <strong>akustische Strahlungskraft (Acoustic Radiation Force)</strong>.
 
 ---
 

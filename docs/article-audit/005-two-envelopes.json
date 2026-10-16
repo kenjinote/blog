@@ -1,0 +1,133 @@
+{
+  "batch": "005-two-envelopes",
+  "status": "reviewed_not_applied",
+  "review": "All thirteen full bodies read. Existing relevant same-language Bayes and St Petersburg links retained; fill eight missing links. Korean broken quoted-slug self link is explicitly selected for label-preserving unwrap. Source duplicate date, emphasis defects in fr/ru/zh-tw and mathematical claims about proper distributions/infinite expectation recorded separately. Target Japanese introduction/derivations reviewed to verify relevance; translation paths verified against published inventory. Browser/source validation pending.",
+  "articles": [
+    {
+      "path": "content/post/2つの封筒のパラドックス/index.ar.md",
+      "source_sha256": "5db2f673b76489b8c1b003113872260cd6fee00720f738f3bfc330871cb1a042",
+      "links": [],
+      "category_decision": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central."
+    },
+    {
+      "path": "content/post/2つの封筒のパラドックス/index.de.md",
+      "source_sha256": "6e1c631dd3703963e62952fc33493e5157ca87263883c55f2420d08f0c413b17",
+      "links": [
+        {
+          "term": "Satzes von Bayes",
+          "context": "Wenn wir den Erwartungswert unter Annahme einer beliebigen A-priori-Verteilung $P(x)$ und der Anwendung des Satzes von Bayes berechnen, ist mathematisch bewiesen, dass **für keine realistische Wahrscheinlichkeitsverteilung (deren Summe 1 ergibt) eine magische Verteilung existiert, bei der sich ein \"Tausch für alle Beträge $X$ lohnt\"**.",
+          "target": "content/post/bayes-theorem/index.de.md"
+        },
+        {
+          "term": "Sankt-Petersburg-Paradoxon",
+          "context": "Dieser durch einen \"unendlichen Erwartungswert\" verursachte Fehler ist tief verwurzelt mit dem **Sankt-Petersburg-Paradoxon** (dem Problem, wie viel eine Person für ein Glücksspiel mit einem unendlichen Erwartungswert bezahlen würde).",
+          "target": "content/post/サンクトペテルブルクのパラドックス/index.de.md"
+        }
+      ],
+      "category_decision": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central."
+    },
+    {
+      "path": "content/post/2つの封筒のパラドックス/index.en.md",
+      "source_sha256": "2c0da3df52bb26ec0edfefcdb1f95e206444d967779eda89f4eb71f3f947742a",
+      "links": [],
+      "category_decision": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central."
+    },
+    {
+      "path": "content/post/2つの封筒のパラドックス/index.es.md",
+      "source_sha256": "bed465a070ff57f2a490e695757ed461ad086a66444ab1a01c113232e1a6d2ae",
+      "links": [
+        {
+          "term": "Paradoja de San Petersburgo",
+          "context": "El error causado por este \"valor esperado infinito\" está profundamente arraigado en la **Paradoja de San Petersburgo** (el problema de cuánto estaría dispuesta a pagar una persona por una apuesta con un valor esperado infinito).",
+          "target": "content/post/サンクトペテルブルクのパラドックス/index.es.md"
+        }
+      ],
+      "category_decision": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central."
+    },
+    {
+      "path": "content/post/2つの封筒のパラドックス/index.fr.md",
+      "source_sha256": "5d1440eaccff8c52d7d0f36b71d62df50b60eb24fa4b898741bacf1416b9f5e7",
+      "links": [
+        {
+          "term": "paradoxe de Saint-Pétersbourg",
+          "context": "Ce bug provoqué par cette « espérance mathématique infinie » trouve ses racines profondément liées au **paradoxe de Saint-Pétersbourg** (le problème de savoir combien une personne serait prête à payer pour un pari ayant une espérance mathématique infinie).",
+          "target": "content/post/サンクトペテルブルクのパラドックス/index.fr.md"
+        }
+      ],
+      "category_decision": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central."
+    },
+    {
+      "path": "content/post/2つの封筒のパラドックス/index.hi.md",
+      "source_sha256": "387b7832f5887370dd1d03d6abfd30350f2f788c9f4e8fb61f70b6ef8af610c5",
+      "links": [
+        {
+          "term": "बेयस प्रमेय",
+          "context": "जब हम किसी यादृच्छिक पूर्व वितरण $P(x)$ को मानते हैं और बेयस प्रमेय का उपयोग करके अपेक्षित मूल्य की गणना करते हैं, तो यह गणितीय रूप से सिद्ध हो चुका है कि **चाहे कोई भी यथार्थवादी प्रायिकता वितरण (जिसका योग 1 हो) क्यों न हो, ऐसा कोई जादुई वितरण मौजूद नहीं है जहाँ सभी राशियों $X$ के लिए \"बदलना फायदेमंद\" हो** ।",
+          "target": "content/post/bayes-theorem/index.hi.md"
+        },
+        {
+          "term": "सेंट पीटर्सबर्ग विरोधाभास",
+          "context": "यह \"अनंत अपेक्षित मूल्य\" के कारण होने वाली त्रुटि, **सेंट पीटर्सबर्ग विरोधाभास** (एक ऐसी समस्या जिसमें अनंत अपेक्षित मूल्य वाले जुए के लिए कोई व्यक्ति कितना भुगतान कर सकता है) के साथ गहराई से जुड़ी हुई है।",
+          "target": "content/post/サンクトペテルブルクのパラドックス/index.hi.md"
+        }
+      ],
+      "category_decision": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central."
+    },
+    {
+      "path": "content/post/2つの封筒のパラドックス/index.id.md",
+      "source_sha256": "f2d1462915d4a328abaa4fa45fe704be8998146ff24661cb3a92a50717f16f95",
+      "links": [],
+      "category_decision": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central."
+    },
+    {
+      "path": "content/post/2つの封筒のパラドックス/index.ko.md",
+      "source_sha256": "32ade659566c0322d7cd93ce80cbfe4b0fb533eba8737b3436e01ccae2e995d7",
+      "links": [],
+      "category_decision": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central.",
+      "broken_self_links": [
+        "['두 개의 봉투 역설](https://kenji.blog/ko/p/'two-envelopes-paradox'/)"
+      ]
+    },
+    {
+      "path": "content/post/2つの封筒のパラドックス/index.md",
+      "source_sha256": "4fd1b39735df3c1e951b3f5541eaaa4115f832510aacac19c71f06161ea2d6f5",
+      "links": [],
+      "category_decision": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central."
+    },
+    {
+      "path": "content/post/2つの封筒のパラドックス/index.pt.md",
+      "source_sha256": "f5df42e577c1e4a7cf1456c392a0432b870bffa98ae2c04404e16e2ab4a80ae6",
+      "links": [],
+      "category_decision": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central."
+    },
+    {
+      "path": "content/post/2つの封筒のパラドックス/index.ru.md",
+      "source_sha256": "6e1e1f460ba54ea39b7f8494ca005ce3b4059686cb08204ab0d404fdb5c5f42e",
+      "links": [
+        {
+          "term": "теореме Байеса",
+          "context": "Если предположить произвольное априорное распределение $P(x)$ и посчитать математическое ожидание по теореме Байеса, то математически доказано, что **при любом реалистичном распределении вероятностей (сумма которых равна 1) не существует такого \"магического\" распределения, при котором \"поменяться было бы выгодно\" для любой суммы $X$**.",
+          "target": "content/post/bayes-theorem/index.ru.md"
+        },
+        {
+          "term": "Санкт-Петербургским парадоксом",
+          "context": "Этот сбой, вызванный \"бесконечным математическим ожиданием\", имеет глубокие общие корни с **Санкт-Петербургским парадоксом** (задачей о том, сколько человек готов заплатить за участие в игре с бесконечным математическим ожиданием выигрыша).",
+          "target": "content/post/サンクトペテルブルクのパラドックス/index.ru.md"
+        }
+      ],
+      "category_decision": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central."
+    },
+    {
+      "path": "content/post/2つの封筒のパラドックス/index.zh-cn.md",
+      "source_sha256": "991f6d51ef0d0cf17a6f91c8b19b56f29051badb635b237dbbbb25641f492c9d",
+      "links": [],
+      "category_decision": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central."
+    },
+    {
+      "path": "content/post/2つの封筒のパラドックス/index.zh-tw.md",
+      "source_sha256": "e4fa3305caac4bd41e71ee529ce099a0edacea723b879827650ff67d0a3fa2d6",
+      "links": [],
+      "category_decision": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central."
+    }
+  ]
+}

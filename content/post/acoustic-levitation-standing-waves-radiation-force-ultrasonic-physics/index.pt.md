@@ -5,10 +5,7 @@ slug: "acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics"
 image: "eyecatch.jpg"
 math: true
 draft: false
-categories:
-  - "Ciência"
-  - "Física"
-  - "Engenharia"
+categories: ["science", "physics", "engineering"]
 tags:
   - "Levitação acústica"
   - "Ondas estacionárias"
@@ -30,7 +27,7 @@ Os sons usuais são meras vibrações de pressão. Contudo, ao ingressar no regi
 
 Na acústica linear, a média temporal da pressão de uma onda harmônica $p(t) = P_0 \sin(\omega t)$ é estritamente nula: $\langle p \rangle = 0$, assim como a velocidade média das partículas $\langle \mathbf{v} \rangle = \mathbf{0}$.
 
-A sustentação mecânica decorre de <strong>efeitos hidrodinâmicos não lineares de segunda ordem</strong>. Na equação de Euler, a aceleração convectiva $(\mathbf{v} \cdot \nabla) \mathbf{v}$ é quadrática. Ao tomar a média temporal do tensor de fluxo de momento $\Pi_{ij} = p \delta_{ij} + \rho v_i v_j$, os termos lineares se anulam, mas os termos quadráticos $\langle \rho v^2 \rangle$ e $\langle (\rho')^2 \rangle$ persistem como uma força contínua unidirecional: a <strong>pressão de radiação acústica</strong>.
+A sustentação mecânica decorre de <strong>efeitos hidrodinâmicos não lineares de segunda ordem</strong>. Na equação de [Euler](/pt/p/euler/), a [aceleração convectiva](/pt/p/navier-stokes-equations/) $(\mathbf{v} \cdot \nabla) \mathbf{v}$ é quadrática. Ao tomar a média temporal do tensor de fluxo de momento $\Pi_{ij} = p \delta_{ij} + \rho v_i v_j$, os termos lineares se anulam, mas os termos quadráticos $\langle \rho v^2 \rangle$ e $\langle (\rho')^2 \rangle$ persistem como uma força contínua unidirecional: a <strong>pressão de radiação acústica</strong>.
 
 ---
 

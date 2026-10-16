@@ -5,10 +5,7 @@ slug: "acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics"
 image: "eyecatch.jpg"
 math: true
 draft: false
-categories:
-  - "Ciencia"
-  - "Física"
-  - "Ingeniería"
+categories: ["science", "physics", "engineering"]
 tags:
   - "Levitación acústica"
   - "Ondas estacionarias"
@@ -22,7 +19,7 @@ En el aire despejado de un laboratorio moderno, una gota de agua flota inmóvil,
 
 Incluso sustancias no magnéticas como el agua, el plástico o los tejidos biológicos pueden sostenerse contra la gravedad. Esta tecnología, que materializa los rayos tractores de la ciencia ficción, se denomina <strong>levitación acústica (Acoustic Levitation)</strong>.
 
-Los sonidos cotidianos son leves perturbaciones de presión. No obstante, al elevar la frecuencia al dominio ultrasónico (> 20 kHz) y configurar interferencias en forma de <strong>ondas estacionarias (Standing Waves)</strong>, el sonido genera una fuerza mecánica continua: la <strong>fuerza de radiación acústica</strong>.
+Los sonidos cotidianos son leves perturbaciones de presión. No obstante, al elevar la frecuencia al dominio ultrasónico (> 20 kHz) y configurar [interferencias](/es/p/physics-noise-cancelling/) en forma de <strong>ondas estacionarias (Standing Waves)</strong>, el sonido genera una fuerza mecánica continua: la <strong>fuerza de radiación acústica</strong>.
 
 ---
 
@@ -30,7 +27,7 @@ Los sonidos cotidianos son leves perturbaciones de presión. No obstante, al ele
 
 En acústica lineal, el promedio temporal de presión de una onda armónica $p(t) = P_0 \sin(\omega t)$ es cero: $\langle p \rangle = 0$. La velocidad media de partícula también es nula: $\langle \mathbf{v} \rangle = \mathbf{0}$.
 
-La sustentación mecánica nace de los <strong>efectos hidrodinámicos no lineales de segundo orden</strong>. En la ecuación de Euler, la aceleración convectiva $(\mathbf{v} \cdot \nabla) \mathbf{v}$ es cuadrática. Al promediar el tensor de flujo de momento $\Pi_{ij} = p \delta_{ij} + \rho v_i v_j$, los términos lineales oscilatorios se anulan, pero los términos cuadráticos $\langle \rho v^2 \rangle$ y $\langle (\rho')^2 \rangle$ sobreviven como un empuje continuo unidireccional: la <strong>presión de radiación acústica</strong>.
+La sustentación mecánica nace de los <strong>efectos hidrodinámicos no lineales de segundo orden</strong>. En la ecuación de Euler, la [aceleración convectiva](/es/p/navier-stokes-equations/) $(\mathbf{v} \cdot \nabla) \mathbf{v}$ es cuadrática. Al promediar el tensor de flujo de momento $\Pi_{ij} = p \delta_{ij} + \rho v_i v_j$, los términos lineales oscilatorios se anulan, pero los términos cuadráticos $\langle \rho v^2 \rangle$ y $\langle (\rho')^2 \rangle$ sobreviven como un empuje continuo unidireccional: la <strong>presión de radiación acústica</strong>.
 
 ---
 

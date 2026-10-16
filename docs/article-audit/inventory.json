@@ -278,11 +278,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_notes": "Full body read; categories suitable. id/ar already have relevant same-language Bayes and St Petersburg links. ru/hi need both contextual links. No edits yet. Existing duplicate date and claims about proper distributions/infinite expectations require separate editorial review; ru emphasis spacing defects recorded."
     },
     {
       "path": "content/post/2つの封筒のパラドックス/index.de.md",
@@ -299,11 +300,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_notes": "Full body reviewed; categories suitable. Add missing same-language St Petersburg link in both languages and Bayes link in German. French already links Bayes. No edits yet. Existing mathematical factual caveat/duplicate date; French emphasis spacing defects recorded for separate repair."
     },
     {
       "path": "content/post/2つの封筒のパラドックス/index.en.md",
@@ -320,11 +322,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_notes": "Full body reviewed. Existing same-language Bayes and St Petersburg links relevant. Existing mathematical-paradoxes/probability-theory categories appropriate. No edits; target/render validation pending. Existing claims about proper distributions/infinite expectation need separate editorial review; duplicate date fields retained. zh-tw has pre-existing malformed emphasis to track separately."
     },
     {
       "path": "content/post/2つの封筒のパラドックス/index.es.md",
@@ -341,11 +344,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_notes": "Full body read. Existing categories suitable, Bayes links relevant. Spanish needs St Petersburg link in body; Portuguese already links it. No edits yet. Existing mathematical factual caveat and duplicate date as other versions."
     },
     {
       "path": "content/post/2つの封筒のパラドックス/index.fr.md",
@@ -362,11 +366,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_notes": "Full body reviewed; categories suitable. Add missing same-language St Petersburg link in both languages and Bayes link in German. French already links Bayes. No edits yet. Existing mathematical factual caveat/duplicate date; French emphasis spacing defects recorded for separate repair."
     },
     {
       "path": "content/post/2つの封筒のパラドックス/index.hi.md",
@@ -383,11 +388,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_notes": "Full body read; categories suitable. id/ar already have relevant same-language Bayes and St Petersburg links. ru/hi need both contextual links. No edits yet. Existing duplicate date and claims about proper distributions/infinite expectations require separate editorial review; ru emphasis spacing defects recorded."
     },
     {
       "path": "content/post/2つの封筒のパラドックス/index.id.md",
@@ -404,11 +410,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_notes": "Full body read; categories suitable. id/ar already have relevant same-language Bayes and St Petersburg links. ru/hi need both contextual links. No edits yet. Existing duplicate date and claims about proper distributions/infinite expectations require separate editorial review; ru emphasis spacing defects recorded."
     },
     {
       "path": "content/post/2つの封筒のパラドックス/index.ko.md",
@@ -425,11 +432,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_notes": "Full body read; categories retained; existing Bayes/St Petersburg links relevant. Broken self-link in conclusion uses quoted slug /ko/p/'two-envelopes-paradox'/ and must be unwrapped preserving label. No edits yet; duplicate date and mathematical factual caveat as other languages."
     },
     {
       "path": "content/post/2つの封筒のパラドックス/index.md",
@@ -446,11 +454,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_notes": "Full Japanese body read. Existing Bayes/St Petersburg links relevant; mathematical-paradoxes/probability-theory retained provisionally. Editorial follow-up: claims about proper distributions versus infinite expectation require separate mathematical review; do not alter math/prose in link/category audit. Duplicate date fields pre-existing."
     },
     {
       "path": "content/post/2つの封筒のパラドックス/index.pt.md",
@@ -467,11 +476,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_notes": "Full body read. Existing categories suitable, Bayes links relevant. Spanish needs St Petersburg link in body; Portuguese already links it. No edits yet. Existing mathematical factual caveat and duplicate date as other versions."
     },
     {
       "path": "content/post/2つの封筒のパラドックス/index.ru.md",
@@ -488,11 +498,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_notes": "Full body read; categories suitable. id/ar already have relevant same-language Bayes and St Petersburg links. ru/hi need both contextual links. No edits yet. Existing duplicate date and claims about proper distributions/infinite expectations require separate editorial review; ru emphasis spacing defects recorded."
     },
     {
       "path": "content/post/2つの封筒のパラドックス/index.zh-cn.md",
@@ -509,11 +520,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_notes": "Full body reviewed. Existing same-language Bayes and St Petersburg links relevant. Existing mathematical-paradoxes/probability-theory categories appropriate. No edits; target/render validation pending. Existing claims about proper distributions/infinite expectation need separate editorial review; duplicate date fields retained. zh-tw has pre-existing malformed emphasis to track separately."
     },
     {
       "path": "content/post/2つの封筒のパラドックス/index.zh-tw.md",
@@ -530,11 +542,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": null,
+      "review_notes": "Full body reviewed. Existing same-language Bayes and St Petersburg links relevant. Existing mathematical-paradoxes/probability-theory categories appropriate. No edits; target/render validation pending. Existing claims about proper distributions/infinite expectation need separate editorial review; duplicate date fields retained. zh-tw has pre-existing malformed emphasis to track separately."
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.ar.md",
@@ -548,13 +561,21 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "006-ag03",
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.de.md",
@@ -568,13 +589,21 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "006-ag03",
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.en.md",
@@ -588,13 +617,21 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "006-ag03",
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.es.md",
@@ -608,13 +645,21 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "006-ag03",
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.fr.md",
@@ -628,13 +673,21 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "006-ag03",
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.hi.md",
@@ -648,13 +701,21 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "006-ag03",
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.id.md",
@@ -668,13 +729,21 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "006-ag03",
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.ko.md",
@@ -688,13 +757,21 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "006-ag03",
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.md",
@@ -708,13 +785,21 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "006-ag03",
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.pt.md",
@@ -728,13 +813,21 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "006-ag03",
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.ru.md",
@@ -748,13 +841,21 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "006-ag03",
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.zh-cn.md",
@@ -768,13 +869,21 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "006-ag03",
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.zh-tw.md",
@@ -788,13 +897,21 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "006-ag03",
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.ar.md",
@@ -810,11 +927,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
       "validation": null,
-      "batch": null
+      "batch": "007-stable-diffusion-colab",
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.de.md",
@@ -830,11 +948,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
       "validation": null,
-      "batch": null
+      "batch": "007-stable-diffusion-colab",
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.en.md",
@@ -850,11 +969,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
       "validation": null,
-      "batch": null
+      "batch": "007-stable-diffusion-colab",
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.es.md",
@@ -870,11 +990,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
       "validation": null,
-      "batch": null
+      "batch": "007-stable-diffusion-colab",
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.fr.md",
@@ -890,11 +1011,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
       "validation": null,
-      "batch": null
+      "batch": "007-stable-diffusion-colab",
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.hi.md",
@@ -910,11 +1032,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
       "validation": null,
-      "batch": null
+      "batch": "007-stable-diffusion-colab",
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.id.md",
@@ -930,11 +1053,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
       "validation": null,
-      "batch": null
+      "batch": "007-stable-diffusion-colab",
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.ko.md",
@@ -950,11 +1074,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
       "validation": null,
-      "batch": null
+      "batch": "007-stable-diffusion-colab",
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
@@ -970,11 +1095,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
       "validation": null,
-      "batch": null
+      "batch": "007-stable-diffusion-colab",
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.pt.md",
@@ -990,11 +1116,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
       "validation": null,
-      "batch": null
+      "batch": "007-stable-diffusion-colab",
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.ru.md",
@@ -1010,11 +1137,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
       "validation": null,
-      "batch": null
+      "batch": "007-stable-diffusion-colab",
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.zh-cn.md",
@@ -1030,11 +1158,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
       "validation": null,
-      "batch": null
+      "batch": "007-stable-diffusion-colab",
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.zh-tw.md",
@@ -1050,11 +1179,12 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
       "validation": null,
-      "batch": null
+      "batch": "007-stable-diffusion-colab",
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
     },
     {
       "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.ar.md",
@@ -25266,13 +25396,20 @@
         "الهندسة"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "004-acoustic-levitation"
     },
     {
       "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.de.md",
@@ -25292,13 +25429,20 @@
         "Ingenieurwesen"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "004-acoustic-levitation"
     },
     {
       "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.en.md",
@@ -25318,13 +25462,20 @@
         "Engineering"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "004-acoustic-levitation",
       "review_note": "Full body read: nonlinear acoustics, standing waves, Gorkov potential, phased arrays, size/density/droplet limits and applications. Proposed canonical science/physics/engineering IDs. HTML strong elements require explicit source-span link editing, not blind scanner. Math derivation in section 3.3 appears inconsistent with preceding potential; record for separate factual review, do not change in this audit. Links pending."
     },
     {
@@ -25345,13 +25496,20 @@
         "Ingeniería"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "004-acoustic-levitation"
     },
     {
       "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.fr.md",
@@ -25371,13 +25529,20 @@
         "Ingénierie"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "004-acoustic-levitation"
     },
     {
       "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.hi.md",
@@ -25397,13 +25562,20 @@
         "इंजीनियरिंग"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "004-acoustic-levitation"
     },
     {
       "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.id.md",
@@ -25423,13 +25595,20 @@
         "Teknik"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "004-acoustic-levitation"
     },
     {
       "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
@@ -25449,13 +25628,20 @@
         "工学"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "004-acoustic-levitation"
     },
     {
       "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ko.md",
@@ -25475,13 +25661,20 @@
         "공학"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "004-acoustic-levitation"
     },
     {
       "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.pt.md",
@@ -25501,13 +25694,20 @@
         "Engenharia"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "004-acoustic-levitation"
     },
     {
       "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ru.md",
@@ -25527,13 +25727,20 @@
         "Инженерия"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "004-acoustic-levitation"
     },
     {
       "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.zh-cn.md",
@@ -25553,13 +25760,20 @@
         "工程学"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "004-acoustic-levitation"
     },
     {
       "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.zh-tw.md",
@@ -25579,13 +25793,20 @@
         "工程學"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated_pending_push",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "passed exact source invariants; 006 sources unchanged",
+        "hugo": "passed --minify --buildFuture, exit 0, 608003 ms after upstream 1e90f501e",
+        "browser": "all 13 languages per batch passed; rendered body/categories identical after upstream merge; screenshots reviewed",
+        "categories": "004 normalized three categories; 006 retained it-technology; localized titles verified; id teknik redirect verified",
+        "tests": "25 passed",
+        "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
+      },
+      "batch": "004-acoustic-levitation"
     },
     {
       "path": "content/post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ar.md",

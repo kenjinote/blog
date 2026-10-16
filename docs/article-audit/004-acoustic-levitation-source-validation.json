@@ -1,0 +1,450 @@
+[
+  {
+    "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "干渉パターン",
+        "url": "/p/physics-noise-cancelling/"
+      },
+      {
+        "term": "移流項",
+        "url": "/p/navier-stokes-equations/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": {
+      "before": [
+        "科学",
+        "物理学",
+        "工学"
+      ],
+      "after": [
+        "science",
+        "physics",
+        "engineering"
+      ],
+      "source_field": "categories:\n  - \"科学\"\n  - \"物理学\"\n  - \"工学\""
+    },
+    "categories": "Normalize localized category values to science/physics/engineering; retain meaning.",
+    "updated_sha256": "c47e246cdadf5c60f6ed91e020f9cbf86de9f40027e9516c548dafc146054541",
+    "render_note": "Taylor-expansion prose immediately before display math is already omitted by current renderer in baseline. Removed ineffective planned link; render-hook investigation deferred separately."
+  },
+  {
+    "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.en.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "interference",
+        "url": "/en/p/physics-noise-cancelling/"
+      },
+      {
+        "term": "convective acceleration term",
+        "url": "/en/p/navier-stokes-equations/"
+      }
+    ],
+    "protected_content_unchanged": false,
+    "visible_source_unchanged": false,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [
+      {
+        "before": "    Linear -->|High Sound Pressure Levels (>140 dB)| Nonlinear",
+        "after": "    Linear -- \"High Sound Pressure Levels (>140 dB)\" --> Nonlinear"
+      }
+    ],
+    "category_change": {
+      "before": [
+        "Science",
+        "Physics",
+        "Engineering"
+      ],
+      "after": [
+        "science",
+        "physics",
+        "engineering"
+      ],
+      "source_field": "categories:\n  - \"Science\"\n  - \"Physics\"\n  - \"Engineering\""
+    },
+    "categories": "Normalize localized category values to science/physics/engineering; retain meaning.",
+    "updated_sha256": "0abaab25daa31193f49b9307789781c3be4ff8beef409e426d35c8b5619ce83f"
+  },
+  {
+    "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.de.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Interferenzstrukturen",
+        "url": "/de/p/physics-noise-cancelling/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": {
+      "before": [
+        "Wissenschaft",
+        "Physik",
+        "Ingenieurwesen"
+      ],
+      "after": [
+        "science",
+        "physics",
+        "engineering"
+      ],
+      "source_field": "categories:\n  - \"Wissenschaft\"\n  - \"Physik\"\n  - \"Ingenieurwesen\""
+    },
+    "categories": "Normalize localized category values to science/physics/engineering; retain meaning.",
+    "updated_sha256": "236323d19d698b2b933d5963812b234647969e0f39de458b70cf24e6141221e3",
+    "render_note": "Selected text is absent in baseline HTML due to existing display-math-adjacent prose omission; ineffective addition removed. Separate renderer investigation required."
+  },
+  {
+    "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.fr.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "interférences",
+        "url": "/fr/p/physics-noise-cancelling/"
+      },
+      {
+        "term": "terme d'accélération convective",
+        "url": "/fr/p/navier-stokes-equations/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": {
+      "before": [
+        "Science",
+        "Physique",
+        "Ingénierie"
+      ],
+      "after": [
+        "science",
+        "physics",
+        "engineering"
+      ],
+      "source_field": "categories:\n  - \"Science\"\n  - \"Physique\"\n  - \"Ingénierie\""
+    },
+    "categories": "Normalize localized category values to science/physics/engineering; retain meaning.",
+    "updated_sha256": "f25195a0ade8f64360613872ab8a1bae9914209517d469543ef9864e27f7bcef"
+  },
+  {
+    "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.es.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "interferencias",
+        "url": "/es/p/physics-noise-cancelling/"
+      },
+      {
+        "term": "aceleración convectiva",
+        "url": "/es/p/navier-stokes-equations/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": {
+      "before": [
+        "Ciencia",
+        "Física",
+        "Ingeniería"
+      ],
+      "after": [
+        "science",
+        "physics",
+        "engineering"
+      ],
+      "source_field": "categories:\n  - \"Ciencia\"\n  - \"Física\"\n  - \"Ingeniería\""
+    },
+    "categories": "Normalize localized category values to science/physics/engineering; retain meaning.",
+    "updated_sha256": "f65c83d1fe58dc85f6a5e44772cc3121e946f9578d4762557d34e0c4fa9edada"
+  },
+  {
+    "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.pt.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Euler",
+        "url": "/pt/p/euler/"
+      },
+      {
+        "term": "aceleração convectiva",
+        "url": "/pt/p/navier-stokes-equations/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": {
+      "before": [
+        "Ciência",
+        "Física",
+        "Engenharia"
+      ],
+      "after": [
+        "science",
+        "physics",
+        "engineering"
+      ],
+      "source_field": "categories:\n  - \"Ciência\"\n  - \"Física\"\n  - \"Engenharia\""
+    },
+    "categories": "Normalize localized category values to science/physics/engineering; retain meaning.",
+    "updated_sha256": "3a2921695db1507ce143561976d398505c4771de45ee2261d826a7906d2695b3"
+  },
+  {
+    "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.id.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "percepatan konvektif",
+        "url": "/id/p/navier-stokes-equations/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": {
+      "before": [
+        "Sains",
+        "Fisika",
+        "Teknik"
+      ],
+      "after": [
+        "science",
+        "physics",
+        "engineering"
+      ],
+      "source_field": "categories:\n  - \"Sains\"\n  - \"Fisika\"\n  - \"Teknik\""
+    },
+    "categories": "Normalize localized category values to science/physics/engineering; retain meaning.",
+    "updated_sha256": "058506843cdc32058db3a1817dc0bb98d0bd09076de8c23713bedba6add6e182",
+    "render_note": "Selected text is absent in baseline HTML due to existing display-math-adjacent prose omission; ineffective addition removed. Separate renderer investigation required."
+  },
+  {
+    "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ko.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "음파의 간섭",
+        "url": "/ko/p/physics-noise-cancelling/"
+      },
+      {
+        "term": "대류 가속도 항",
+        "url": "/ko/p/navier-stokes-equations/"
+      }
+    ],
+    "protected_content_unchanged": false,
+    "visible_source_unchanged": false,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [
+      {
+        "before": "    Linear -->|강력한 초음파 음압 (>150 dB)| Nonlinear",
+        "after": "    Linear -- \"강력한 초음파 음압 (>150 dB)\" --> Nonlinear"
+      }
+    ],
+    "category_change": {
+      "before": [
+        "과학",
+        "물리학",
+        "공학"
+      ],
+      "after": [
+        "science",
+        "physics",
+        "engineering"
+      ],
+      "source_field": "categories:\n  - \"과학\"\n  - \"물리학\"\n  - \"공학\""
+    },
+    "categories": "Normalize localized category values to science/physics/engineering; retain meaning.",
+    "updated_sha256": "3a3b3d6fd884ceac0e28b94b031aa7fd448778892e7263726b58ac33dbdda737"
+  },
+  {
+    "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.zh-cn.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "声波干涉",
+        "url": "/zh-cn/p/physics-noise-cancelling/"
+      },
+      {
+        "term": "对流项",
+        "url": "/zh-cn/p/navier-stokes-equations/"
+      }
+    ],
+    "protected_content_unchanged": false,
+    "visible_source_unchanged": false,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [
+      {
+        "before": "    Linear -->|超声强声强 (>150 dB)| Nonlinear",
+        "after": "    Linear -- \"超声强声强 (>150 dB)\" --> Nonlinear"
+      }
+    ],
+    "category_change": {
+      "before": [
+        "科学",
+        "物理学",
+        "工程学"
+      ],
+      "after": [
+        "science",
+        "physics",
+        "engineering"
+      ],
+      "source_field": "categories:\n  - \"科学\"\n  - \"物理学\"\n  - \"工程学\""
+    },
+    "categories": "Normalize localized category values to science/physics/engineering; retain meaning.",
+    "updated_sha256": "d98d7621156bf3b49f85b728aa4c1c6224f3996d2ee0369b2b81badea5b4f2f1"
+  },
+  {
+    "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.zh-tw.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "聲波干涉",
+        "url": "/zh-tw/p/physics-noise-cancelling/"
+      },
+      {
+        "term": "對流項",
+        "url": "/zh-tw/p/navier-stokes-equations/"
+      }
+    ],
+    "protected_content_unchanged": false,
+    "visible_source_unchanged": false,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [
+      {
+        "before": "    Linear -->|超聲強聲強 (>150 dB)| Nonlinear",
+        "after": "    Linear -- \"超聲強聲強 (>150 dB)\" --> Nonlinear"
+      }
+    ],
+    "category_change": {
+      "before": [
+        "科學",
+        "物理學",
+        "工程學"
+      ],
+      "after": [
+        "science",
+        "physics",
+        "engineering"
+      ],
+      "source_field": "categories:\n  - \"科學\"\n  - \"物理學\"\n  - \"工程學\""
+    },
+    "categories": "Normalize localized category values to science/physics/engineering; retain meaning.",
+    "updated_sha256": "1fbb080ca29efbeba0fd57af211eea46c56693dce622ef8f997d1b88524c8406"
+  },
+  {
+    "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ru.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "конвективное ускорение",
+        "url": "/ru/p/navier-stokes-equations/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": {
+      "before": [
+        "Наука",
+        "Физика",
+        "Инженерия"
+      ],
+      "after": [
+        "science",
+        "physics",
+        "engineering"
+      ],
+      "source_field": "categories:\n  - \"Наука\"\n  - \"Физика\"\n  - \"Инженерия\""
+    },
+    "categories": "Normalize localized category values to science/physics/engineering; retain meaning.",
+    "updated_sha256": "a7e566b53c1e83ae2516eb565a6a9e6ce10c10f63a88a963081eea6cebd19d62",
+    "render_note": "Selected text is absent in baseline HTML due to existing display-math-adjacent prose omission; ineffective addition removed. Separate renderer investigation required."
+  },
+  {
+    "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ar.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "تسارع الحمل",
+        "url": "/ar/p/navier-stokes-equations/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": {
+      "before": [
+        "العلوم",
+        "الفيزياء",
+        "الهندسة"
+      ],
+      "after": [
+        "science",
+        "physics",
+        "engineering"
+      ],
+      "source_field": "categories:\n  - \"العلوم\"\n  - \"الفيزياء\"\n  - \"الهندسة\""
+    },
+    "categories": "Normalize localized category values to science/physics/engineering; retain meaning.",
+    "updated_sha256": "7ad7ea636276eda33d4f89e6b59d7941d27aebf0b13ed7fb85e754c47d578d61",
+    "render_note": "Selected text is absent in baseline HTML due to existing display-math-adjacent prose omission; ineffective addition removed. Separate renderer investigation required."
+  },
+  {
+    "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.hi.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "संवहनी त्वरण",
+        "url": "/hi/p/navier-stokes-equations/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": {
+      "before": [
+        "विज्ञान",
+        "भौतिकी",
+        "इंजीनियरिंग"
+      ],
+      "after": [
+        "science",
+        "physics",
+        "engineering"
+      ],
+      "source_field": "categories:\n  - \"विज्ञान\"\n  - \"भौतिकी\"\n  - \"इंजीनियरिंग\""
+    },
+    "categories": "Normalize localized category values to science/physics/engineering; retain meaning.",
+    "updated_sha256": "c39d15ac29f59fbf16dc61c95c8d23d328d4a9d45daeda8b5e8557d3aa2e87e6",
+    "render_note": "Selected text is absent in baseline HTML due to existing display-math-adjacent prose omission; ineffective addition removed. Separate renderer investigation required."
+  }
+]

@@ -5,10 +5,7 @@ slug: "acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics"
 image: "eyecatch.jpg"
 math: true
 draft: false
-categories:
-  - "Science"
-  - "Physics"
-  - "Engineering"
+categories: ["science", "physics", "engineering"]
 tags:
   - "Acoustic Levitation"
   - "Standing Waves"
@@ -22,7 +19,7 @@ In the open air of a modern research laboratory, a single droplet of pure water 
 
 Even materials that are completely non-magnetic—water, plastics, wood, and biological tissues—can be held effortlessly aloft. This real-world realization of science fiction's "tractor beam" and "anti-gravity" is known as <strong>Acoustic Levitation</strong>.
 
-The sounds we perceive in our daily lives are mere whispers of pressure: minuscule longitudinal perturbations in air density that gently vibrate our eardrums with micropascal forces. However, when sound is driven past the limits of human hearing into the ultrasonic regime (tens to hundreds of kilohertz) and configured into resonant interference structures known as <strong>standing waves</strong>, sound ceases to be a passive sensory medium. It transforms into an active, formidable physical tool capable of exerting steady mechanical forces: the <strong>acoustic radiation force</strong>.
+The sounds we perceive in our daily lives are mere whispers of pressure: minuscule longitudinal perturbations in air density that gently vibrate our eardrums with micropascal forces. However, when sound is driven past the limits of human hearing into the ultrasonic regime (tens to hundreds of kilohertz) and configured into resonant [interference](/en/p/physics-noise-cancelling/) structures known as <strong>standing waves</strong>, sound ceases to be a passive sensory medium. It transforms into an active, formidable physical tool capable of exerting steady mechanical forces: the <strong>acoustic radiation force</strong>.
 
 In this comprehensive treatise, we explore the deep physics and transformative engineering of acoustic levitation. We will trace why linear acoustic theory fails to predict levitation and how nonlinear hydrodynamics rectifies alternating sound into steady direct-current forces. We will dissect the mathematical derivation of Lev Gor'kov's celebrated acoustic radiation potential, examine how ultrasonic phased arrays synthesize dynamic 3D holographic acoustic traps, analyze the hydroelastic breakdown and atomization limits of liquid droplets, and survey cutting-edge frontiers from containerless pharmaceutical crystallization to acoustic microfluidics and spaceborne materials processing.
 
@@ -52,7 +49,7 @@ flowchart TD
         Linear["Linear Acoustics (Infinitesimal Limit)<br>p(t) = P_0 sin(ωt)<br>Time-averaged force ⟨F⟩ = 0<br>Net mechanical levitation impossible"]
         Nonlinear["Nonlinear Acoustics (Finite Amplitude)<br>Quadratic momentum flux tensor<br>⟨Π⟩ = ⟨p + ρ v²⟩ ≠ 0<br>Non-zero net DC acoustic radiation force"]
     end
-    Linear -->|High Sound Pressure Levels (>140 dB)| Nonlinear
+    Linear -- "High Sound Pressure Levels (>140 dB)" --> Nonlinear
 ```
 
 ### 1.2 Nonlinear Hydrodynamics and the Acoustic Radiation Pressure
@@ -62,7 +59,7 @@ The emergence of a persistent, unidirectional force is a consequence of <strong>
 The exact, non-linear Euler equation governing an inviscid fluid is:
 $$\rho \left( \frac{\partial \mathbf{v}}{\partial t} + (\mathbf{v} \cdot \nabla) \mathbf{v} \right) = -\nabla p$$
 
-The convective acceleration term $(\mathbf{v} \cdot \nabla) \mathbf{v}$ is intrinsically <strong>quadratic (nonlinear)</strong> in the fluid velocity $\mathbf{v}$. In ordinary speech ($60\,\text{dB}$, where $P_0 \sim 0.02\,\text{Pa}$), this term is infinitesimal ($O(10^{-9})$) and safely discarded. But in ultrasonic levitators operating at sound pressure levels (SPL) exceeding $150 \sim 165\,\text{dB}$ ($P_0 > 10^3 \sim 10^4\,\text{Pa}$), this quadratic term becomes massive.
+The [convective acceleration term](/en/p/navier-stokes-equations/) $(\mathbf{v} \cdot \nabla) \mathbf{v}$ is intrinsically <strong>quadratic (nonlinear)</strong> in the fluid velocity $\mathbf{v}$. In ordinary speech ($60\,\text{dB}$, where $P_0 \sim 0.02\,\text{Pa}$), this term is infinitesimal ($O(10^{-9})$) and safely discarded. But in ultrasonic levitators operating at sound pressure levels (SPL) exceeding $150 \sim 165\,\text{dB}$ ($P_0 > 10^3 \sim 10^4\,\text{Pa}$), this quadratic term becomes massive.
 
 The total momentum flux density tensor $\Pi_{ij}$ passing through a fluid control surface is:
 $$\Pi_{ij} = p \delta_{ij} + \rho v_i v_j$$

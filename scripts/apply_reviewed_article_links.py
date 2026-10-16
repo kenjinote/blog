@@ -23,6 +23,38 @@ def protected_material(text):
             re.findall(r'(?s)\\\(.*?\\\)|\\\[.*?\\\]', text))
 
 
+
+def link_reviewed_context(source, term, context, destination, math_literals=()):
+    """Validate one editor-selected text span even in simple inline-HTML articles."""
+    if source.count(context) != 1 or context.count(term) != 1:
+        raise ValueError('Reviewed context must identify exactly one term')
+    start = source.index(context) + context.index(term)
+    end = start + len(term)
+    # Only mask known inline tags for the existing conservative scanner. Unknown
+    # HTML and shortcodes still cause a refusal. Never edit tag text/attributes.
+    tags = list(re.finditer(r'</?(?:strong|br)\b[^>]*>', source, re.I))
+    if any(m.start() < end and m.end() > start for m in tags):
+        raise ValueError('Reviewed term overlaps HTML markup')
+    masked = re.sub(r'</?(?:strong|br)\b[^>]*>', lambda m: ''.join('\n' if c == '\n' else ' ' for c in m[0]), source, flags=re.I)
+    # An explicit reviewed math literal may resemble a dollar-denominated price.
+    # Keep its delimiters and length, and prohibit edits inside the literal.
+    for literal in math_literals:
+        if not re.fullmatch(r'\$[^$\r\n]+\$', literal) or literal not in source:
+            raise ValueError('Invalid reviewed math literal')
+        for match in re.finditer(re.escape(literal), source):
+            if match.start() < end and match.end() > start:
+                raise ValueError('Reviewed term overlaps math')
+        masked = masked.replace(literal, '$' + 'x' * (len(literal) - 2) + '$')
+    token = 'AUDITREVIEWEDTEXTTOKEN'
+    if token in source:
+        raise ValueError('Probe token collision')
+    probe = masked[:start] + token + masked[end:]
+    _, count = link_text(probe, {token: destination})
+    if count != 1:
+        raise ValueError('Reviewed span is protected Markdown, math, code or HTML')
+    return source[:start] + f'[{term}]({destination})' + source[end:], 1
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('plan', type=Path)
@@ -41,6 +73,16 @@ def main():
         if hashlib.sha256(raw).hexdigest() != item['source_sha256']:
             raise ValueError(f'Source changed since review: {path}')
         own = urlsplit(records[path]['permalink']).path
+        if item.get('pending_unwrap'):
+            raise ValueError('Unresolved link review in plan')
+        broken_self_links = item.get('broken_self_links', [])
+        for raw_link in broken_self_links:
+            match = SIMPLE_LINK.fullmatch(raw_link)
+            if not match or source.count(raw_link) != 1:
+                raise ValueError('Broken self-link must identify one exact link')
+            url = urlsplit(match[2])
+            if url.netloc not in ('', 'kenji.blog') or url.fragment or url.query or url.path == own or url.path.replace("'", '') != own:
+                raise ValueError('Reviewed broken link is not a quoted self-link')
         protected = protected_ranges(source, protect_paragraphs=False)
         # Hugo includes Markdown link destinations in generated heading IDs.
         # Preserve heading source so existing fragment URLs remain valid.
@@ -51,11 +93,16 @@ def main():
             if any(a < match.end() and b > match.start() for a, b in protected):
                 return match[0]
             url = urlsplit(match[2])
+            if match[0] in broken_self_links:
+                removed += 1
+                return match[1]
             if url.netloc in ('', 'kenji.blog') and url.path == own and not url.fragment and not url.query:
                 removed += 1
                 return match[1]
             return match[0]
         updated = SIMPLE_LINK.sub(remove_self, source)
+        if any(raw_link in updated for raw_link in broken_self_links):
+            raise ValueError('Broken self-link lies in protected content')
         added = []
         for addition in item['links']:
             target = (ROOT / addition['target']).resolve()
@@ -64,7 +111,10 @@ def main():
             destination = urlsplit(records[target]['permalink']).path
             if any(urlsplit(m[2]).path == destination for m in SIMPLE_LINK.finditer(updated)):
                 continue
-            candidate, count = link_text(updated, {addition['term']: destination})
+            if 'context' in addition:
+                candidate, count = link_reviewed_context(updated, addition['term'], addition['context'], destination, item.get('math_literals', []))
+            else:
+                candidate, count = link_text(updated, {addition['term']: destination})
             if count != 1:
                 raise ValueError(f'Expected one safe occurrence: {path}: {addition["term"]}: {count}')
             updated = candidate
@@ -80,21 +130,41 @@ def main():
                 filename = '_index.md' if language(path) == 'ja' else f'_index.{language(path)}.md'
                 if not (ROOT / 'content/categories' / category / filename).is_file():
                     raise ValueError(f'Missing localized category: {category}')
-            old_field = 'categories: ' + json.dumps(before, ensure_ascii=False)
+            old_field = item['categories'].get('source_field', 'categories: ' + json.dumps(before, ensure_ascii=False))
+            import yaml
+            if yaml.safe_load(old_field) != {'categories': before}:
+                raise ValueError('Category source field differs from planned values')
+            if '\r\n' in source:
+                old_field = old_field.replace('\r\n', '\n').replace('\n', '\r\n')
             new_field = 'categories: ' + json.dumps(after, ensure_ascii=False)
             fm = protected_material(source)[0]
             if fm.count(old_field) != 1:
                 raise ValueError('Category field does not match reviewed plan')
             updated = updated.replace(old_field, new_field, 1)
             comparison_source = source.replace(old_field, new_field, 1)
+        repairs = []
+        for old_edge in item.get('mermaid_edge_labels', []):
+            match = re.fullmatch(r'( +)([A-Za-z][A-Za-z0-9_]*) -->\|([^|"\r\n]+)\| ([A-Za-z][A-Za-z0-9_]*)', old_edge)
+            if not match or source.count(old_edge) != 1:
+                raise ValueError('Invalid reviewed Mermaid edge')
+            if not any(old_edge in block for block in re.findall(r'(?ms)^```mermaid\r?\n.*?^```', source)):
+                raise ValueError('Reviewed edge is not in a Mermaid fence')
+            new_edge = f'{match[1]}{match[2]} -- "{match[3]}" --> {match[4]}'
+            updated = updated.replace(old_edge, new_edge, 1)
+            comparison_source = comparison_source.replace(old_edge, new_edge, 1)
+            repairs.append({'before': old_edge, 'after': new_edge})
         strip = lambda value: SIMPLE_LINK.sub(lambda m: m[1], value)
         if strip(comparison_source) != strip(updated) or protected_material(comparison_source) != protected_material(updated):
             raise ValueError(f'Non-link content changed: {path}')
-        if '\r\n' in source and updated.count('\r\n') != source.count('\r\n'):
+        if re.findall(r'</?[A-Za-z][^>]*>', source) != re.findall(r'</?[A-Za-z][^>]*>', updated):
+            raise ValueError('HTML markup changed')
+        if '\r\n' in source and '\n' in updated.replace('\r\n', ''):
             raise ValueError('Line ending change')
         changes.append((path, raw, updated.encode('utf-8')))
         report.append({'path': item['path'], 'removed_self_links': removed, 'added_links': added,
-                       'protected_content_unchanged': True, 'visible_source_unchanged': True,
+                       'protected_content_unchanged': not bool(repairs), 'visible_source_unchanged': not bool(repairs),
+                       'prose_unchanged': True, 'protected_content_unchanged_except_reviewed_repairs': True,
+                       'mermaid_label_repairs': repairs,
                        'category_change': item.get('categories'),
                        'categories': item['category_decision'],
                        'updated_sha256': hashlib.sha256(updated.encode('utf-8')).hexdigest()})

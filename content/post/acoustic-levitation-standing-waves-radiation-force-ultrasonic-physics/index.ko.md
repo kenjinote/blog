@@ -5,10 +5,7 @@ slug: "acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics"
 image: "eyecatch.jpg"
 math: true
 draft: false
-categories:
-  - "과학"
-  - "물리학"
-  - "공학"
+categories: ["science", "physics", "engineering"]
 tags:
   - "음향 부양"
   - "정재파"
@@ -22,7 +19,7 @@ tags:
 
 자석에 전혀 반응하지 않는 물, 플라스틱, 목재, 생체 조직마저도 중력을 거슬러 공중에 안정적으로 띄울 수 있는 이 기술——SF 영화 속 '반중력 빔'이나 '트랙터 빔(Tractor Beam)'을 현실의 물리 법칙으로 구현한 것이 바로 <strong>음향 부양(Acoustic Levitation)</strong>입니다.
 
-일상에서 귀로 듣는 소리는 공기 매질의 미세한 압력 섭동에 불과하며, 고막을 살짝 떨리게 하는 극히 미약한 현상입니다. 하지만 주파수를 인간의 가청 한계를 넘는 초음파 영역(수십 킬로헤르츠 이상)으로 높이고, 음파의 간섭을 통해 특수한 '정재파(Standing Wave)'를 형성하면, 소리는 물체의 무게를 지탱하고 공간에 가두는 강력한 물리적 힘인 <strong>음향 방사력(Acoustic Radiation Force)</strong>을 발휘하게 됩니다.
+일상에서 귀로 듣는 소리는 공기 매질의 미세한 압력 섭동에 불과하며, 고막을 살짝 떨리게 하는 극히 미약한 현상입니다. 하지만 주파수를 인간의 가청 한계를 넘는 초음파 영역(수십 킬로헤르츠 이상)으로 높이고, [음파의 간섭](/ko/p/physics-noise-cancelling/)을 통해 특수한 '정재파(Standing Wave)'를 형성하면, 소리는 물체의 무게를 지탱하고 공간에 가두는 강력한 물리적 힘인 <strong>음향 방사력(Acoustic Radiation Force)</strong>을 발휘하게 됩니다.
 
 본 글에서는 비선형 음향학과 음향 유체역학의 기초부터 살펴봅니다. 선형 음향학의 역설과 2차 비선형 효과에 의한 직류 음향 방사압의 발생 기구, 소련의 이론물리학자 레프 고르코프(Lev Gor'kov)가 유도한 우아한 음향 방사 포텐셜, 초음파 위상 배열(Phased Array)이 연 3차원 홀로그래픽 트랙터 빔, 공중에서 물방울이 파열하는 물리적 한계, 그리고 무용기 결정화와 바이오칩에 이르는 최첨단 응용까지 음향 부양의 경이로운 과학을 철저하게 해명합니다.
 
@@ -42,13 +39,13 @@ flowchart TD
         Linear["선형 음향학 (미소 진폭)<br>p(t) = P_0 sin(ωt)<br>시간 평균 힘 ⟨F⟩ = 0<br>물체 부양 불가능"]
         Nonlinear["비선형 음향학 (유한 진폭 효과)<br>운동량 플럭스 2차 텐서<br>⟨Π⟩ = ⟨p + ρ v²⟩ ≠ 0<br>직류 음향 방사압 발생 (부양 가능)"]
     end
-    Linear -->|강력한 초음파 음압 (>150 dB)| Nonlinear
+    Linear -- "강력한 초음파 음압 (>150 dB)" --> Nonlinear
 ```
 
 ### 1.2 2차 비선형 유체 효과와 음향 방사압
 
 물체를 공중에 띄우는 힘의 비밀은 바로 <strong>유한 진폭에 의한 2차 비선형 유체역학 효과</strong>에 있습니다.
-유체의 오일러 운동방정식에서 대류 가속도 항 $(\mathbf{v} \cdot \nabla) \mathbf{v}$은 속도의 제곱에 비례하는 2차 비선형 항입니다. 소리의 음압이 $150\,\text{dB}$를 넘어서면 이 2차 항이 거대하게 성장합니다.
+유체의 오일러 운동방정식에서 [대류 가속도 항](/ko/p/navier-stokes-equations/) $(\mathbf{v} \cdot \nabla) \mathbf{v}$은 속도의 제곱에 비례하는 2차 비선형 항입니다. 소리의 음압이 $150\,\text{dB}$를 넘어서면 이 2차 항이 거대하게 성장합니다.
 
 단위 면적을 통과하는 운동량 플럭스 텐서 $\Pi_{ij} = p \delta_{ij} + \rho v_i v_j$의 시간 평균을 취하면, 1차 진동 성분은 상쇄되지만 2차 제곱 성분 $\langle \rho v^2 \rangle$과 $\langle (\rho')^2 \rangle$은 <strong>항상 양의 값을 가지며 소멸하지 않고 살아남습니다</strong>!
 

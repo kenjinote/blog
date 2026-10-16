@@ -1,0 +1,122 @@
+{
+  "batch": "006-ag03",
+  "articles": [
+    {
+      "path": "content/post/AG03ノイズ解消方法/index.ar.md",
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/ag03%D8%B6%D9%88%D8%B6%D8%A7%D8%A1%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "source_sha256": "54bc54a12d3b9d6cdf8dc83b833366bcd32722ae6cc2f8bf5544e991e1bb6849",
+      "category": "it-technology",
+      "category_label": "تكنولوجيا المعلومات",
+      "decision": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+    },
+    {
+      "path": "content/post/AG03ノイズ解消方法/index.de.md",
+      "language": "de",
+      "url": "https://kenji.blog/de/p/ag03rauschen%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "source_sha256": "5cb815d5ef3fba1d5f989118c8fcc29d649f29eec08b72dbd387cc1393bb4f8e",
+      "category": "it-technology",
+      "category_label": "IT und Technologie",
+      "decision": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+    },
+    {
+      "path": "content/post/AG03ノイズ解消方法/index.en.md",
+      "language": "en",
+      "url": "https://kenji.blog/en/p/ag03noise%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "source_sha256": "7fb5a40418a3b0d37065cc7e75c683840cc2cf7654c97156ae0bf43997d12e2f",
+      "category": "it-technology",
+      "category_label": "IT & Technology",
+      "decision": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+    },
+    {
+      "path": "content/post/AG03ノイズ解消方法/index.es.md",
+      "language": "es",
+      "url": "https://kenji.blog/es/p/ag03ruido%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "source_sha256": "4212dbc49ae76dca5da0172030f4f3018676793d014f9c48f7916e4a5b35fcce",
+      "category": "it-technology",
+      "category_label": "TI y tecnología",
+      "decision": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+    },
+    {
+      "path": "content/post/AG03ノイズ解消方法/index.fr.md",
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/ag03bruit%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "source_sha256": "6bf4380b5f2d00cb9ae11024378221985a6ff77e932082114b4b74d422f5678e",
+      "category": "it-technology",
+      "category_label": "Informatique et technologie",
+      "decision": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+    },
+    {
+      "path": "content/post/AG03ノイズ解消方法/index.hi.md",
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/ag03%E0%A4%B6%E0%A5%8B%E0%A4%B0%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "source_sha256": "2c54983bceef0312c6cd66ad593d6ea6eb4a3696b7c148ea2879ae2cf87521bd",
+      "category": "it-technology",
+      "category_label": "आईटी और प्रौद्योगिकी",
+      "decision": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+    },
+    {
+      "path": "content/post/AG03ノイズ解消方法/index.id.md",
+      "language": "id",
+      "url": "https://kenji.blog/id/p/ag03kebisingan%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "source_sha256": "0f4ad347665578bc36e9f732d1de0993861f364a41a78fdff74d10c9adc7237c",
+      "category": "it-technology",
+      "category_label": "TI dan teknologi",
+      "decision": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+    },
+    {
+      "path": "content/post/AG03ノイズ解消方法/index.ko.md",
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/ag03%EB%85%B8%EC%9D%B4%EC%A6%88%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "source_sha256": "b3433a28482a43b5b122cbcbe87f0f8b8d6b201a68defe254970b05048e47a8a",
+      "category": "it-technology",
+      "category_label": "IT·기술",
+      "decision": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+    },
+    {
+      "path": "content/post/AG03ノイズ解消方法/index.md",
+      "language": "ja",
+      "url": "https://kenji.blog/p/ag03%E3%83%8E%E3%82%A4%E3%82%BA%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "source_sha256": "f0d41498266e4bdadc7f0f20d367162572db575f68bfdc5cb30e752333302943",
+      "category": "it-technology",
+      "category_label": "IT・テクノロジー",
+      "decision": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+    },
+    {
+      "path": "content/post/AG03ノイズ解消方法/index.pt.md",
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/ag03ru%C3%ADdo%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "source_sha256": "d43557da06065a28df2641c3ec83904808838b9756300dcc46a65179d7d00d39",
+      "category": "it-technology",
+      "category_label": "TI e tecnologia",
+      "decision": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+    },
+    {
+      "path": "content/post/AG03ノイズ解消方法/index.ru.md",
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/ag03%D1%88%D1%83%D0%BC%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "source_sha256": "1c98baa14e820b7f43deafa1502eef9c79d439b7d653d2b5da6c2a59e4d49485",
+      "category": "it-technology",
+      "category_label": "ИТ и технологии",
+      "decision": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+    },
+    {
+      "path": "content/post/AG03ノイズ解消方法/index.zh-cn.md",
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/ag03%E5%99%AA%E9%9F%B3%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "source_sha256": "77ad140ceed4fb66032421a6bdd59742be55c8f618ff201f22028df9cfcd028e",
+      "category": "it-technology",
+      "category_label": "IT与科技",
+      "decision": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+    },
+    {
+      "path": "content/post/AG03ノイズ解消方法/index.zh-tw.md",
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/ag03%E9%9B%9C%E8%A8%8A%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "source_sha256": "dc7da1113fc1b6d893c797aa929e55adea3d01957d54f426fb9109ea4d657e50",
+      "category": "it-technology",
+      "category_label": "IT與科技",
+      "decision": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+    }
+  ]
+}

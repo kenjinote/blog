@@ -1,0 +1,2617 @@
+[
+  {
+    "lang": "ja",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "1-音はなぜ力を持つのか線形音響学の限界と非線形性",
+          "text": "1. 音はなぜ「力」を持つのか：線形音響学の限界と非線形性"
+        },
+        {
+          "id": "11-線形音響学のパラドックス平均圧力は常にゼロである",
+          "text": "1.1 線形音響学のパラドックス：平均圧力は常にゼロである"
+        },
+        {
+          "id": "12-二次の非線形効果と音響放射圧の発生",
+          "text": "1.2 二次の非線形効果と音響放射圧の発生"
+        },
+        {
+          "id": "13-レイリー放射圧とランジュバン放射圧の定義",
+          "text": "1.3 レイリー放射圧とランジュバン放射圧の定義"
+        },
+        {
+          "id": "2-定在波standing-wavesと音響トラップの幾何学",
+          "text": "2. 定在波（Standing Waves）と音響トラップの幾何学"
+        },
+        {
+          "id": "21-対向波の干渉と定在波の形成",
+          "text": "2.1 対向波の干渉と定在波の形成"
+        },
+        {
+          "id": "22-節nodeと腹antinodeの空間的ズレ",
+          "text": "2.2 節（Node）と腹（Antinode）の空間的ズレ"
+        },
+        {
+          "id": "3-ゴルコフポテンシャルの数理放射力の完全導出",
+          "text": "3. ゴルコフポテンシャルの数理：放射力の完全導出"
+        },
+        {
+          "id": "31-ゴルコフの音響放射ポテンシャルgorkov-potential",
+          "text": "3.1 ゴルコフの音響放射ポテンシャル（Gor’kov Potential）"
+        },
+        {
+          "id": "32-空気中における固体液体のコントラスト係数の評価",
+          "text": "3.2 空気中における固体・液体のコントラスト係数の評価"
+        },
+        {
+          "id": "33-1次元定在波における浮揚力の計算",
+          "text": "3.3 1次元定在波における浮揚力の計算"
+        },
+        {
+          "id": "4-単一軸からフェーズドアレイへ3d音響ホログラムとトラクタービーム",
+          "text": "4. 単一軸からフェーズドアレイへ：3D音響ホログラムとトラクタービーム"
+        },
+        {
+          "id": "41-従来の1次元定在波浮揚の限界",
+          "text": "4.1 従来の1次元定在波浮揚の限界"
+        },
+        {
+          "id": "42-超音波フェーズドアレイphased-arrayの革命",
+          "text": "4.2 超音波フェーズドアレイ（Phased Array）の革命"
+        },
+        {
+          "id": "43-音響ホログラムの逆問題アルゴリズム",
+          "text": "4.3 音響ホログラムの逆問題アルゴリズム"
+        },
+        {
+          "id": "5-浮かせられる物体の物理的制約と極限",
+          "text": "5. 浮かせられる物体の物理的制約と極限"
+        },
+        {
+          "id": "51-粒子サイズの限界レイリー限界",
+          "text": "5.1 粒子サイズの限界（レイリー限界）"
+        },
+        {
+          "id": "52-密度限界と音圧の非線形衝撃波限界",
+          "text": "5.2 密度限界と音圧の非線形衝撃波限界"
+        },
+        {
+          "id": "53-液滴の変形と微粒化限界アコースティックアトマイゼーション",
+          "text": "5.3 液滴の変形と微粒化限界（アコースティック・アトマイゼーション）"
+        },
+        {
+          "id": "6-最先端の応用フロンティア",
+          "text": "6. 最先端の応用フロンティア"
+        },
+        {
+          "id": "61-無容器結晶成長containerless-processing",
+          "text": "6.1 無容器結晶成長（Containerless Processing）"
+        },
+        {
+          "id": "62-宇宙工学と地上シミュレーション",
+          "text": "6.2 宇宙工学と地上シミュレーション"
+        },
+        {
+          "id": "64-マイクロ流体デバイスと音響ピンセット音響流体力学",
+          "text": "6.4 マイクロ流体デバイスと音響ピンセット（音響流体力学）"
+        },
+        {
+          "id": "63-空中ハプティクス音に触れる触覚インターフェース",
+          "text": "6.3 空中ハプティクス：音に触れる触覚インターフェース"
+        },
+        {
+          "id": "7-結論見えない波が切り拓く物質操作の未来",
+          "text": "7. 結論：見えない波が切り拓く物質操作の未来"
+        }
+      ],
+      "math": 103,
+      "mathErrors": 0,
+      "diagrams": 7,
+      "mermaid": 7,
+      "diagramErrors": 0,
+      "hero": true,
+      "categories": [
+        {
+          "text": "科学",
+          "path": "/categories/%E7%A7%91%E5%AD%A6/"
+        },
+        {
+          "text": "物理学",
+          "path": "/categories/%E7%89%A9%E7%90%86%E5%AD%A6/"
+        },
+        {
+          "text": "工学",
+          "path": "/categories/%E5%B7%A5%E5%AD%A6/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "1-音はなぜ力を持つのか線形音響学の限界と非線形性",
+          "text": "1. 音はなぜ「力」を持つのか：線形音響学の限界と非線形性"
+        },
+        {
+          "id": "11-線形音響学のパラドックス平均圧力は常にゼロである",
+          "text": "1.1 線形音響学のパラドックス：平均圧力は常にゼロである"
+        },
+        {
+          "id": "12-二次の非線形効果と音響放射圧の発生",
+          "text": "1.2 二次の非線形効果と音響放射圧の発生"
+        },
+        {
+          "id": "13-レイリー放射圧とランジュバン放射圧の定義",
+          "text": "1.3 レイリー放射圧とランジュバン放射圧の定義"
+        },
+        {
+          "id": "2-定在波standing-wavesと音響トラップの幾何学",
+          "text": "2. 定在波（Standing Waves）と音響トラップの幾何学"
+        },
+        {
+          "id": "21-対向波の干渉と定在波の形成",
+          "text": "2.1 対向波の干渉と定在波の形成"
+        },
+        {
+          "id": "22-節nodeと腹antinodeの空間的ズレ",
+          "text": "2.2 節（Node）と腹（Antinode）の空間的ズレ"
+        },
+        {
+          "id": "3-ゴルコフポテンシャルの数理放射力の完全導出",
+          "text": "3. ゴルコフポテンシャルの数理：放射力の完全導出"
+        },
+        {
+          "id": "31-ゴルコフの音響放射ポテンシャルgorkov-potential",
+          "text": "3.1 ゴルコフの音響放射ポテンシャル（Gor’kov Potential）"
+        },
+        {
+          "id": "32-空気中における固体液体のコントラスト係数の評価",
+          "text": "3.2 空気中における固体・液体のコントラスト係数の評価"
+        },
+        {
+          "id": "33-1次元定在波における浮揚力の計算",
+          "text": "3.3 1次元定在波における浮揚力の計算"
+        },
+        {
+          "id": "4-単一軸からフェーズドアレイへ3d音響ホログラムとトラクタービーム",
+          "text": "4. 単一軸からフェーズドアレイへ：3D音響ホログラムとトラクタービーム"
+        },
+        {
+          "id": "41-従来の1次元定在波浮揚の限界",
+          "text": "4.1 従来の1次元定在波浮揚の限界"
+        },
+        {
+          "id": "42-超音波フェーズドアレイphased-arrayの革命",
+          "text": "4.2 超音波フェーズドアレイ（Phased Array）の革命"
+        },
+        {
+          "id": "43-音響ホログラムの逆問題アルゴリズム",
+          "text": "4.3 音響ホログラムの逆問題アルゴリズム"
+        },
+        {
+          "id": "5-浮かせられる物体の物理的制約と極限",
+          "text": "5. 浮かせられる物体の物理的制約と極限"
+        },
+        {
+          "id": "51-粒子サイズの限界レイリー限界",
+          "text": "5.1 粒子サイズの限界（レイリー限界）"
+        },
+        {
+          "id": "52-密度限界と音圧の非線形衝撃波限界",
+          "text": "5.2 密度限界と音圧の非線形衝撃波限界"
+        },
+        {
+          "id": "53-液滴の変形と微粒化限界アコースティックアトマイゼーション",
+          "text": "5.3 液滴の変形と微粒化限界（アコースティック・アトマイゼーション）"
+        },
+        {
+          "id": "6-最先端の応用フロンティア",
+          "text": "6. 最先端の応用フロンティア"
+        },
+        {
+          "id": "61-無容器結晶成長containerless-processing",
+          "text": "6.1 無容器結晶成長（Containerless Processing）"
+        },
+        {
+          "id": "62-宇宙工学と地上シミュレーション",
+          "text": "6.2 宇宙工学と地上シミュレーション"
+        },
+        {
+          "id": "64-マイクロ流体デバイスと音響ピンセット音響流体力学",
+          "text": "6.4 マイクロ流体デバイスと音響ピンセット（音響流体力学）"
+        },
+        {
+          "id": "63-空中ハプティクス音に触れる触覚インターフェース",
+          "text": "6.3 空中ハプティクス：音に触れる触覚インターフェース"
+        },
+        {
+          "id": "7-結論見えない波が切り拓く物質操作の未来",
+          "text": "7. 結論：見えない波が切り拓く物質操作の未来"
+        }
+      ],
+      "math": 103,
+      "mathErrors": 0,
+      "diagrams": 7,
+      "mermaid": 7,
+      "diagramErrors": 0,
+      "hero": true,
+      "categories": [
+        {
+          "text": "科学",
+          "path": "/categories/science/"
+        },
+        {
+          "text": "物理学",
+          "path": "/categories/physics/"
+        },
+        {
+          "text": "工学",
+          "path": "/categories/engineering/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "干渉パターン",
+          "path": "/p/physics-noise-cancelling/"
+        },
+        {
+          "text": "移流項",
+          "path": "/p/navier-stokes-equations/"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "lang": "en",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "1-why-does-sound-exert-force-from-linear-limits-to-nonlinear-acoustics",
+          "text": "1. Why Does Sound Exert Force? From Linear Limits to Nonlinear Acoustics"
+        },
+        {
+          "id": "11-the-linear-acoustic-paradox-why-the-time-averaged-pressure-is-zero",
+          "text": "1.1 The Linear Acoustic Paradox: Why the Time-Averaged Pressure is Zero"
+        },
+        {
+          "id": "12-nonlinear-hydrodynamics-and-the-acoustic-radiation-pressure",
+          "text": "1.2 Nonlinear Hydrodynamics and the Acoustic Radiation Pressure"
+        },
+        {
+          "id": "13-langevin-vs-rayleigh-radiation-pressure",
+          "text": "1.3 Langevin vs. Rayleigh Radiation Pressure"
+        },
+        {
+          "id": "2-standing-waves-and-the-architecture-of-acoustic-traps",
+          "text": "2. Standing Waves and the Architecture of Acoustic Traps"
+        },
+        {
+          "id": "21-wave-interference-in-a-resonant-cavity",
+          "text": "2.1 Wave Interference in a Resonant Cavity"
+        },
+        {
+          "id": "22-the-spatial-decoupling-of-nodes-and-antinodes",
+          "text": "2.2 The Spatial Decoupling of Nodes and Antinodes"
+        },
+        {
+          "id": "3-the-gorkov-potential-rigorous-analytical-mechanics",
+          "text": "3. The Gor’kov Potential: Rigorous Analytical Mechanics"
+        },
+        {
+          "id": "31-the-gorkov-acoustic-radiation-potential",
+          "text": "3.1 The Gor’kov Acoustic Radiation Potential"
+        },
+        {
+          "id": "32-evaluation-for-condensed-matter-in-air",
+          "text": "3.2 Evaluation for Condensed Matter in Air"
+        },
+        {
+          "id": "33-derivation-of-levitation-force-in-a-1d-standing-wave",
+          "text": "3.3 Derivation of Levitation Force in a 1D Standing Wave"
+        },
+        {
+          "id": "34-the-mechanics-of-stable-equilibrium",
+          "text": "3.4 The Mechanics of Stable Equilibrium"
+        },
+        {
+          "id": "4-ultrasonic-phased-arrays-and-3d-holographic-tractor-beams",
+          "text": "4. Ultrasonic Phased Arrays and 3D Holographic Tractor Beams"
+        },
+        {
+          "id": "41-beyond-the-1d-resonator",
+          "text": "4.1 Beyond the 1D Resonator"
+        },
+        {
+          "id": "42-the-phased-array-revolution",
+          "text": "4.2 The Phased Array Revolution"
+        },
+        {
+          "id": "43-holographic-trapping-modalities",
+          "text": "4.3 Holographic Trapping Modalities"
+        },
+        {
+          "id": "5-physical-limits-of-acoustic-levitation",
+          "text": "5. Physical Limits of Acoustic Levitation"
+        },
+        {
+          "id": "51-the-particle-size-limit-rayleigh-threshold",
+          "text": "5.1 The Particle Size Limit (Rayleigh Threshold)"
+        },
+        {
+          "id": "52-density-threshold-and-acoustic-shock-wave-limits",
+          "text": "5.2 Density Threshold and Acoustic Shock Wave Limits"
+        },
+        {
+          "id": "53-droplet-deformation-and-atomization-limits",
+          "text": "5.3 Droplet Deformation and Atomization Limits"
+        },
+        {
+          "id": "6-cutting-edge-frontiers-of-acoustic-manipulation",
+          "text": "6. Cutting-Edge Frontiers of Acoustic Manipulation"
+        },
+        {
+          "id": "61-containerless-pharmaceutical-processing",
+          "text": "6.1 Containerless Pharmaceutical Processing"
+        },
+        {
+          "id": "62-mid-air-haptic-feedback-and-volumetric-displays",
+          "text": "6.2 Mid-Air Haptic Feedback and Volumetric Displays"
+        },
+        {
+          "id": "7-conclusion-the-invisible-hands-of-wave-mechanics",
+          "text": "7. Conclusion: The Invisible Hands of Wave Mechanics"
+        }
+      ],
+      "math": 103,
+      "mathErrors": 0,
+      "diagrams": 6,
+      "mermaid": 7,
+      "diagramErrors": 8,
+      "hero": true,
+      "categories": [
+        {
+          "text": "Science",
+          "path": "/en/categories/science/"
+        },
+        {
+          "text": "Physics",
+          "path": "/en/categories/physics/"
+        },
+        {
+          "text": "Engineering",
+          "path": "/en/categories/engineering/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "1-why-does-sound-exert-force-from-linear-limits-to-nonlinear-acoustics",
+          "text": "1. Why Does Sound Exert Force? From Linear Limits to Nonlinear Acoustics"
+        },
+        {
+          "id": "11-the-linear-acoustic-paradox-why-the-time-averaged-pressure-is-zero",
+          "text": "1.1 The Linear Acoustic Paradox: Why the Time-Averaged Pressure is Zero"
+        },
+        {
+          "id": "12-nonlinear-hydrodynamics-and-the-acoustic-radiation-pressure",
+          "text": "1.2 Nonlinear Hydrodynamics and the Acoustic Radiation Pressure"
+        },
+        {
+          "id": "13-langevin-vs-rayleigh-radiation-pressure",
+          "text": "1.3 Langevin vs. Rayleigh Radiation Pressure"
+        },
+        {
+          "id": "2-standing-waves-and-the-architecture-of-acoustic-traps",
+          "text": "2. Standing Waves and the Architecture of Acoustic Traps"
+        },
+        {
+          "id": "21-wave-interference-in-a-resonant-cavity",
+          "text": "2.1 Wave Interference in a Resonant Cavity"
+        },
+        {
+          "id": "22-the-spatial-decoupling-of-nodes-and-antinodes",
+          "text": "2.2 The Spatial Decoupling of Nodes and Antinodes"
+        },
+        {
+          "id": "3-the-gorkov-potential-rigorous-analytical-mechanics",
+          "text": "3. The Gor’kov Potential: Rigorous Analytical Mechanics"
+        },
+        {
+          "id": "31-the-gorkov-acoustic-radiation-potential",
+          "text": "3.1 The Gor’kov Acoustic Radiation Potential"
+        },
+        {
+          "id": "32-evaluation-for-condensed-matter-in-air",
+          "text": "3.2 Evaluation for Condensed Matter in Air"
+        },
+        {
+          "id": "33-derivation-of-levitation-force-in-a-1d-standing-wave",
+          "text": "3.3 Derivation of Levitation Force in a 1D Standing Wave"
+        },
+        {
+          "id": "34-the-mechanics-of-stable-equilibrium",
+          "text": "3.4 The Mechanics of Stable Equilibrium"
+        },
+        {
+          "id": "4-ultrasonic-phased-arrays-and-3d-holographic-tractor-beams",
+          "text": "4. Ultrasonic Phased Arrays and 3D Holographic Tractor Beams"
+        },
+        {
+          "id": "41-beyond-the-1d-resonator",
+          "text": "4.1 Beyond the 1D Resonator"
+        },
+        {
+          "id": "42-the-phased-array-revolution",
+          "text": "4.2 The Phased Array Revolution"
+        },
+        {
+          "id": "43-holographic-trapping-modalities",
+          "text": "4.3 Holographic Trapping Modalities"
+        },
+        {
+          "id": "5-physical-limits-of-acoustic-levitation",
+          "text": "5. Physical Limits of Acoustic Levitation"
+        },
+        {
+          "id": "51-the-particle-size-limit-rayleigh-threshold",
+          "text": "5.1 The Particle Size Limit (Rayleigh Threshold)"
+        },
+        {
+          "id": "52-density-threshold-and-acoustic-shock-wave-limits",
+          "text": "5.2 Density Threshold and Acoustic Shock Wave Limits"
+        },
+        {
+          "id": "53-droplet-deformation-and-atomization-limits",
+          "text": "5.3 Droplet Deformation and Atomization Limits"
+        },
+        {
+          "id": "6-cutting-edge-frontiers-of-acoustic-manipulation",
+          "text": "6. Cutting-Edge Frontiers of Acoustic Manipulation"
+        },
+        {
+          "id": "61-containerless-pharmaceutical-processing",
+          "text": "6.1 Containerless Pharmaceutical Processing"
+        },
+        {
+          "id": "62-mid-air-haptic-feedback-and-volumetric-displays",
+          "text": "6.2 Mid-Air Haptic Feedback and Volumetric Displays"
+        },
+        {
+          "id": "7-conclusion-the-invisible-hands-of-wave-mechanics",
+          "text": "7. Conclusion: The Invisible Hands of Wave Mechanics"
+        }
+      ],
+      "math": 103,
+      "mathErrors": 0,
+      "diagrams": 7,
+      "mermaid": 7,
+      "diagramErrors": 0,
+      "hero": true,
+      "categories": [
+        {
+          "text": "Science",
+          "path": "/en/categories/science/"
+        },
+        {
+          "text": "Physics",
+          "path": "/en/categories/physics/"
+        },
+        {
+          "text": "Engineering",
+          "path": "/en/categories/engineering/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "interference",
+          "path": "/en/p/physics-noise-cancelling/"
+        },
+        {
+          "text": "convective acceleration term",
+          "path": "/en/p/navier-stokes-equations/"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "lang": "de",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "1-warum-schall-kräfte-ausübt-nichtlineare-akustik",
+          "text": "1. Warum Schall Kräfte ausübt: Nichtlineare Akustik"
+        },
+        {
+          "id": "2-stehende-wellen-und-die-geometrie-der-schallfalle",
+          "text": "2. Stehende Wellen und die Geometrie der Schallfalle"
+        },
+        {
+          "id": "3-das-gorkov-potenzial",
+          "text": "3. Das Gor’kov-Potenzial"
+        },
+        {
+          "id": "4-phased-arrays-und-3d-traktorstrahlen",
+          "text": "4. Phased Arrays und 3D-Traktorstrahlen"
+        },
+        {
+          "id": "5-physikalische-grenzen-zerstäubung-und-dichte",
+          "text": "5. Physikalische Grenzen: Zerstäubung und Dichte"
+        },
+        {
+          "id": "6-anwendungen-und-fazit",
+          "text": "6. Anwendungen und Fazit"
+        }
+      ],
+      "math": 27,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "mermaid": 0,
+      "diagramErrors": 0,
+      "hero": true,
+      "categories": [
+        {
+          "text": "Wissenschaft",
+          "path": "/de/categories/wissenschaft/"
+        },
+        {
+          "text": "Physik",
+          "path": "/de/categories/physik/"
+        },
+        {
+          "text": "Ingenieurwesen",
+          "path": "/de/categories/ingenieurwesen/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "1-warum-schall-kräfte-ausübt-nichtlineare-akustik",
+          "text": "1. Warum Schall Kräfte ausübt: Nichtlineare Akustik"
+        },
+        {
+          "id": "2-stehende-wellen-und-die-geometrie-der-schallfalle",
+          "text": "2. Stehende Wellen und die Geometrie der Schallfalle"
+        },
+        {
+          "id": "3-das-gorkov-potenzial",
+          "text": "3. Das Gor’kov-Potenzial"
+        },
+        {
+          "id": "4-phased-arrays-und-3d-traktorstrahlen",
+          "text": "4. Phased Arrays und 3D-Traktorstrahlen"
+        },
+        {
+          "id": "5-physikalische-grenzen-zerstäubung-und-dichte",
+          "text": "5. Physikalische Grenzen: Zerstäubung und Dichte"
+        },
+        {
+          "id": "6-anwendungen-und-fazit",
+          "text": "6. Anwendungen und Fazit"
+        }
+      ],
+      "math": 27,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "mermaid": 0,
+      "diagramErrors": 0,
+      "hero": true,
+      "categories": [
+        {
+          "text": "Wissenschaft",
+          "path": "/de/categories/science/"
+        },
+        {
+          "text": "Physik",
+          "path": "/de/categories/physics/"
+        },
+        {
+          "text": "Ingenieurwesen",
+          "path": "/de/categories/engineering/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "Interferenzstrukturen",
+          "path": "/de/p/physics-noise-cancelling/"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "lang": "fr",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "1-origine-de-la-force--lacoustique-non-linéaire",
+          "text": "1. Origine de la force : L’acoustique non linéaire"
+        },
+        {
+          "id": "2-ondes-stationnaires-et-pièges-acoustiques",
+          "text": "2. Ondes stationnaires et pièges acoustiques"
+        },
+        {
+          "id": "3-le-potentiel-de-rayonnement-de-gorkov",
+          "text": "3. Le potentiel de rayonnement de Gor’kov"
+        },
+        {
+          "id": "4-réseaux-phasés-ultrasonores-et-rayons-tracteurs-3d",
+          "text": "4. Réseaux phasés ultrasonores et rayons tracteurs 3D"
+        },
+        {
+          "id": "5-limites-physiques-et-atomisation",
+          "text": "5. Limites physiques et atomisation"
+        },
+        {
+          "id": "6-applications-et-conclusion",
+          "text": "6. Applications et conclusion"
+        }
+      ],
+      "math": 25,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "mermaid": 0,
+      "diagramErrors": 0,
+      "hero": true,
+      "categories": [
+        {
+          "text": "Sciences",
+          "path": "/fr/categories/science/"
+        },
+        {
+          "text": "Physique",
+          "path": "/fr/categories/physique/"
+        },
+        {
+          "text": "Ingénierie",
+          "path": "/fr/categories/ing%C3%A9nierie/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "1-origine-de-la-force--lacoustique-non-linéaire",
+          "text": "1. Origine de la force : L’acoustique non linéaire"
+        },
+        {
+          "id": "2-ondes-stationnaires-et-pièges-acoustiques",
+          "text": "2. Ondes stationnaires et pièges acoustiques"
+        },
+        {
+          "id": "3-le-potentiel-de-rayonnement-de-gorkov",
+          "text": "3. Le potentiel de rayonnement de Gor’kov"
+        },
+        {
+          "id": "4-réseaux-phasés-ultrasonores-et-rayons-tracteurs-3d",
+          "text": "4. Réseaux phasés ultrasonores et rayons tracteurs 3D"
+        },
+        {
+          "id": "5-limites-physiques-et-atomisation",
+          "text": "5. Limites physiques et atomisation"
+        },
+        {
+          "id": "6-applications-et-conclusion",
+          "text": "6. Applications et conclusion"
+        }
+      ],
+      "math": 25,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "mermaid": 0,
+      "diagramErrors": 0,
+      "hero": true,
+      "categories": [
+        {
+          "text": "Sciences",
+          "path": "/fr/categories/science/"
+        },
+        {
+          "text": "Physique",
+          "path": "/fr/categories/physics/"
+        },
+        {
+          "text": "Ingénierie",
+          "path": "/fr/categories/engineering/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "interférences",
+          "path": "/fr/p/physics-noise-cancelling/"
+        },
+        {
+          "text": "terme d’accélération convective",
+          "path": "/fr/p/navier-stokes-equations/"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "lang": "es",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "1-el-origen-de-la-fuerza-acústica-no-lineal",
+          "text": "1. El origen de la fuerza: Acústica no lineal"
+        },
+        {
+          "id": "2-ondas-estacionarias-y-trampa-acústica",
+          "text": "2. Ondas estacionarias y trampa acústica"
+        },
+        {
+          "id": "3-el-potencial-de-gorkov",
+          "text": "3. El potencial de Gor’kov"
+        },
+        {
+          "id": "4-matrices-en-fase-phased-arrays-y-rayos-tractores-3d",
+          "text": "4. Matrices en fase (Phased Arrays) y rayos tractores 3D"
+        },
+        {
+          "id": "5-límites-físicos-tamaño-y-atomización",
+          "text": "5. Límites físicos: Tamaño y atomización"
+        },
+        {
+          "id": "6-aplicaciones-y-conclusiones",
+          "text": "6. Aplicaciones y conclusiones"
+        }
+      ],
+      "math": 25,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "mermaid": 0,
+      "diagramErrors": 0,
+      "hero": true,
+      "categories": [
+        {
+          "text": "Ciencia",
+          "path": "/es/categories/ciencia/"
+        },
+        {
+          "text": "Física",
+          "path": "/es/categories/f%C3%ADsica/"
+        },
+        {
+          "text": "Ingeniería",
+          "path": "/es/categories/ingenier%C3%ADa/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "1-el-origen-de-la-fuerza-acústica-no-lineal",
+          "text": "1. El origen de la fuerza: Acústica no lineal"
+        },
+        {
+          "id": "2-ondas-estacionarias-y-trampa-acústica",
+          "text": "2. Ondas estacionarias y trampa acústica"
+        },
+        {
+          "id": "3-el-potencial-de-gorkov",
+          "text": "3. El potencial de Gor’kov"
+        },
+        {
+          "id": "4-matrices-en-fase-phased-arrays-y-rayos-tractores-3d",
+          "text": "4. Matrices en fase (Phased Arrays) y rayos tractores 3D"
+        },
+        {
+          "id": "5-límites-físicos-tamaño-y-atomización",
+          "text": "5. Límites físicos: Tamaño y atomización"
+        },
+        {
+          "id": "6-aplicaciones-y-conclusiones",
+          "text": "6. Aplicaciones y conclusiones"
+        }
+      ],
+      "math": 25,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "mermaid": 0,
+      "diagramErrors": 0,
+      "hero": true,
+      "categories": [
+        {
+          "text": "Ciencia",
+          "path": "/es/categories/science/"
+        },
+        {
+          "text": "Física",
+          "path": "/es/categories/physics/"
+        },
+        {
+          "text": "Ingeniería",
+          "path": "/es/categories/engineering/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "interferencias",
+          "path": "/es/p/physics-noise-cancelling/"
+        },
+        {
+          "text": "aceleración convectiva",
+          "path": "/es/p/navier-stokes-equations/"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "lang": "pt",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "1-origem-da-força-acústica-não-linear",
+          "text": "1. Origem da força: Acústica não linear"
+        },
+        {
+          "id": "2-ondas-estacionárias-e-armadilhas-acústicas",
+          "text": "2. Ondas estacionárias e armadilhas acústicas"
+        },
+        {
+          "id": "3-o-potencial-de-gorkov",
+          "text": "3. O potencial de Gor’kov"
+        },
+        {
+          "id": "4-matrizes-em-fase-phased-arrays-e-feixes-tratores-3d",
+          "text": "4. Matrizes em Fase (Phased Arrays) e Feixes Tratores 3D"
+        },
+        {
+          "id": "5-limites-físicos-dimensão-e-atomização",
+          "text": "5. Limites físicos: Dimensão e atomização"
+        },
+        {
+          "id": "6-aplicações-e-conclusão",
+          "text": "6. Aplicações e conclusão"
+        }
+      ],
+      "math": 25,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "mermaid": 0,
+      "diagramErrors": 0,
+      "hero": true,
+      "categories": [
+        {
+          "text": "Ciência",
+          "path": "/pt/categories/ci%C3%AAncia/"
+        },
+        {
+          "text": "Física",
+          "path": "/pt/categories/f%C3%ADsica/"
+        },
+        {
+          "text": "Engenharia",
+          "path": "/pt/categories/engenharia/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "1-origem-da-força-acústica-não-linear",
+          "text": "1. Origem da força: Acústica não linear"
+        },
+        {
+          "id": "2-ondas-estacionárias-e-armadilhas-acústicas",
+          "text": "2. Ondas estacionárias e armadilhas acústicas"
+        },
+        {
+          "id": "3-o-potencial-de-gorkov",
+          "text": "3. O potencial de Gor’kov"
+        },
+        {
+          "id": "4-matrizes-em-fase-phased-arrays-e-feixes-tratores-3d",
+          "text": "4. Matrizes em Fase (Phased Arrays) e Feixes Tratores 3D"
+        },
+        {
+          "id": "5-limites-físicos-dimensão-e-atomização",
+          "text": "5. Limites físicos: Dimensão e atomização"
+        },
+        {
+          "id": "6-aplicações-e-conclusão",
+          "text": "6. Aplicações e conclusão"
+        }
+      ],
+      "math": 25,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "mermaid": 0,
+      "diagramErrors": 0,
+      "hero": true,
+      "categories": [
+        {
+          "text": "Ciência",
+          "path": "/pt/categories/science/"
+        },
+        {
+          "text": "Física",
+          "path": "/pt/categories/physics/"
+        },
+        {
+          "text": "Engenharia",
+          "path": "/pt/categories/engineering/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "Euler",
+          "path": "/pt/p/euler/"
+        },
+        {
+          "text": "aceleração convectiva",
+          "path": "/pt/p/navier-stokes-equations/"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "lang": "id",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "1-mengapa-suara-menghasilkan-gaya-akustik-non-linear",
+          "text": "1. Mengapa Suara Menghasilkan Gaya: Akustik Non-linear"
+        },
+        {
+          "id": "2-gelombang-berdiri-dan-perangkap-akustik",
+          "text": "2. Gelombang Berdiri dan Perangkap Akustik"
+        },
+        {
+          "id": "3-potensial-gorkov",
+          "text": "3. Potensial Gor’kov"
+        },
+        {
+          "id": "4-ultrasonic-phased-array-dan-traktor-beam-3d",
+          "text": "4. Ultrasonic Phased Array dan Traktor Beam 3D"
+        },
+        {
+          "id": "5-batasan-fisika-ukuran-dan-atomisasi-tetesan",
+          "text": "5. Batasan Fisika: Ukuran dan Atomisasi Tetesan"
+        },
+        {
+          "id": "6-aplikasi-dan-kesimpulan",
+          "text": "6. Aplikasi dan Kesimpulan"
+        }
+      ],
+      "math": 26,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "mermaid": 0,
+      "diagramErrors": 0,
+      "hero": true,
+      "categories": [
+        {
+          "text": "Sains",
+          "path": "/id/categories/sains/"
+        },
+        {
+          "text": "Fisika",
+          "path": "/id/categories/fisika/"
+        },
+        {
+          "text": "Teknik",
+          "path": "/id/categories/teknik/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "1-mengapa-suara-menghasilkan-gaya-akustik-non-linear",
+          "text": "1. Mengapa Suara Menghasilkan Gaya: Akustik Non-linear"
+        },
+        {
+          "id": "2-gelombang-berdiri-dan-perangkap-akustik",
+          "text": "2. Gelombang Berdiri dan Perangkap Akustik"
+        },
+        {
+          "id": "3-potensial-gorkov",
+          "text": "3. Potensial Gor’kov"
+        },
+        {
+          "id": "4-ultrasonic-phased-array-dan-traktor-beam-3d",
+          "text": "4. Ultrasonic Phased Array dan Traktor Beam 3D"
+        },
+        {
+          "id": "5-batasan-fisika-ukuran-dan-atomisasi-tetesan",
+          "text": "5. Batasan Fisika: Ukuran dan Atomisasi Tetesan"
+        },
+        {
+          "id": "6-aplikasi-dan-kesimpulan",
+          "text": "6. Aplikasi dan Kesimpulan"
+        }
+      ],
+      "math": 26,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "mermaid": 0,
+      "diagramErrors": 0,
+      "hero": true,
+      "categories": [
+        {
+          "text": "Sains",
+          "path": "/id/categories/science/"
+        },
+        {
+          "text": "Fisika",
+          "path": "/id/categories/physics/"
+        },
+        {
+          "text": "Teknik",
+          "path": "/id/categories/engineering/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "percepatan konvektif",
+          "path": "/id/p/navier-stokes-equations/"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "lang": "ko",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "1-소리는-어떻게-힘을-갖는가-비선형-음향학의-비밀",
+          "text": "1. 소리는 어떻게 힘을 갖는가: 비선형 음향학의 비밀"
+        },
+        {
+          "id": "11-선형-음향학의-역설-시간-평균-압력은-0이다",
+          "text": "1.1 선형 음향학의 역설: 시간 평균 압력은 0이다"
+        },
+        {
+          "id": "12-2차-비선형-유체-효과와-음향-방사압",
+          "text": "1.2 2차 비선형 유체 효과와 음향 방사압"
+        },
+        {
+          "id": "2-정재파와-1차원-음향-트랩의-구조",
+          "text": "2. 정재파와 1차원 음향 트랩의 구조"
+        },
+        {
+          "id": "3-고르코프-포텐셜의-수리물리학",
+          "text": "3. 고르코프 포텐셜의 수리물리학"
+        },
+        {
+          "id": "4-초음파-위상-배열과-3d-홀로그래픽-트랙터-빔",
+          "text": "4. 초음파 위상 배열과 3D 홀로그래픽 트랙터 빔"
+        },
+        {
+          "id": "5-음향-부양의-물리적-한계",
+          "text": "5. 음향 부양의 물리적 한계"
+        },
+        {
+          "id": "6-첨단-응용-분야와-결론",
+          "text": "6. 첨단 응용 분야와 결론"
+        }
+      ],
+      "math": 35,
+      "mathErrors": 0,
+      "diagrams": 1,
+      "mermaid": 2,
+      "diagramErrors": 8,
+      "hero": true,
+      "categories": [
+        {
+          "text": "과학",
+          "path": "/ko/categories/%EA%B3%BC%ED%95%99/"
+        },
+        {
+          "text": "물리학",
+          "path": "/ko/categories/%EB%AC%BC%EB%A6%AC%ED%95%99/"
+        },
+        {
+          "text": "공학",
+          "path": "/ko/categories/%EA%B3%B5%ED%95%99/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "1-소리는-어떻게-힘을-갖는가-비선형-음향학의-비밀",
+          "text": "1. 소리는 어떻게 힘을 갖는가: 비선형 음향학의 비밀"
+        },
+        {
+          "id": "11-선형-음향학의-역설-시간-평균-압력은-0이다",
+          "text": "1.1 선형 음향학의 역설: 시간 평균 압력은 0이다"
+        },
+        {
+          "id": "12-2차-비선형-유체-효과와-음향-방사압",
+          "text": "1.2 2차 비선형 유체 효과와 음향 방사압"
+        },
+        {
+          "id": "2-정재파와-1차원-음향-트랩의-구조",
+          "text": "2. 정재파와 1차원 음향 트랩의 구조"
+        },
+        {
+          "id": "3-고르코프-포텐셜의-수리물리학",
+          "text": "3. 고르코프 포텐셜의 수리물리학"
+        },
+        {
+          "id": "4-초음파-위상-배열과-3d-홀로그래픽-트랙터-빔",
+          "text": "4. 초음파 위상 배열과 3D 홀로그래픽 트랙터 빔"
+        },
+        {
+          "id": "5-음향-부양의-물리적-한계",
+          "text": "5. 음향 부양의 물리적 한계"
+        },
+        {
+          "id": "6-첨단-응용-분야와-결론",
+          "text": "6. 첨단 응용 분야와 결론"
+        }
+      ],
+      "math": 35,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "mermaid": 2,
+      "diagramErrors": 0,
+      "hero": true,
+      "categories": [
+        {
+          "text": "과학",
+          "path": "/ko/categories/science/"
+        },
+        {
+          "text": "물리학",
+          "path": "/ko/categories/physics/"
+        },
+        {
+          "text": "공학",
+          "path": "/ko/categories/engineering/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "음파의 간섭",
+          "path": "/ko/p/physics-noise-cancelling/"
+        },
+        {
+          "text": "대류 가속도 항",
+          "path": "/ko/p/navier-stokes-equations/"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "lang": "zh-cn",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "一-声音为何具有力量线性声学的极限与非线性整流",
+          "text": "一、 声音为何具有力量：线性声学的极限与非线性整流"
+        },
+        {
+          "id": "11-线性声学佯谬为什么时间平均声压严格为零",
+          "text": "1.1 线性声学佯谬：为什么时间平均声压严格为零？"
+        },
+        {
+          "id": "12-二次非线性流体效应与声辐射压",
+          "text": "1.2 二次非线性流体效应与声辐射压"
+        },
+        {
+          "id": "二-驻波场与一维声学陷阱的物理几何",
+          "text": "二、 驻波场与一维声学陷阱的物理几何"
+        },
+        {
+          "id": "三-戈尔科夫势的严谨数学解析",
+          "text": "三、 戈尔科夫势的严谨数学解析"
+        },
+        {
+          "id": "四-超声相控阵与3d全息声学牵引光束",
+          "text": "四、 超声相控阵与3D全息声学牵引光束"
+        },
+        {
+          "id": "五-声悬浮的物理限制尺寸与液滴破裂",
+          "text": "五、 声悬浮的物理限制：尺寸与液滴破裂"
+        },
+        {
+          "id": "六-最前沿的应用领域",
+          "text": "六、 最前沿的应用领域"
+        },
+        {
+          "id": "七-结论无形之波重塑物质世界",
+          "text": "七、 结论：无形之波重塑物质世界"
+        }
+      ],
+      "math": 37,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "mermaid": 3,
+      "diagramErrors": 8,
+      "hero": true,
+      "categories": [
+        {
+          "text": "科学",
+          "path": "/zh-cn/categories/%E7%A7%91%E5%AD%A6/"
+        },
+        {
+          "text": "物理学",
+          "path": "/zh-cn/categories/%E7%89%A9%E7%90%86%E5%AD%A6/"
+        },
+        {
+          "text": "工程学",
+          "path": "/zh-cn/categories/%E5%B7%A5%E7%A8%8B%E5%AD%A6/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "一-声音为何具有力量线性声学的极限与非线性整流",
+          "text": "一、 声音为何具有力量：线性声学的极限与非线性整流"
+        },
+        {
+          "id": "11-线性声学佯谬为什么时间平均声压严格为零",
+          "text": "1.1 线性声学佯谬：为什么时间平均声压严格为零？"
+        },
+        {
+          "id": "12-二次非线性流体效应与声辐射压",
+          "text": "1.2 二次非线性流体效应与声辐射压"
+        },
+        {
+          "id": "二-驻波场与一维声学陷阱的物理几何",
+          "text": "二、 驻波场与一维声学陷阱的物理几何"
+        },
+        {
+          "id": "三-戈尔科夫势的严谨数学解析",
+          "text": "三、 戈尔科夫势的严谨数学解析"
+        },
+        {
+          "id": "四-超声相控阵与3d全息声学牵引光束",
+          "text": "四、 超声相控阵与3D全息声学牵引光束"
+        },
+        {
+          "id": "五-声悬浮的物理限制尺寸与液滴破裂",
+          "text": "五、 声悬浮的物理限制：尺寸与液滴破裂"
+        },
+        {
+          "id": "六-最前沿的应用领域",
+          "text": "六、 最前沿的应用领域"
+        },
+        {
+          "id": "七-结论无形之波重塑物质世界",
+          "text": "七、 结论：无形之波重塑物质世界"
+        }
+      ],
+      "math": 37,
+      "mathErrors": 0,
+      "diagrams": 3,
+      "mermaid": 3,
+      "diagramErrors": 0,
+      "hero": true,
+      "categories": [
+        {
+          "text": "科学",
+          "path": "/zh-cn/categories/science/"
+        },
+        {
+          "text": "物理学",
+          "path": "/zh-cn/categories/physics/"
+        },
+        {
+          "text": "工程学",
+          "path": "/zh-cn/categories/engineering/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "声波干涉",
+          "path": "/zh-cn/p/physics-noise-cancelling/"
+        },
+        {
+          "text": "对流项",
+          "path": "/zh-cn/p/navier-stokes-equations/"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "lang": "zh-tw",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "一-聲音為何具有力量線性聲學的極限與非線性整流",
+          "text": "一、 聲音為何具有力量：線性聲學的極限與非線性整流"
+        },
+        {
+          "id": "11-線性聲學佯謬為什麼時間平均聲壓嚴格為零",
+          "text": "1.1 線性聲學佯謬：為什麼時間平均聲壓嚴格為零？"
+        },
+        {
+          "id": "12-二次非線性流體效應與聲輻射壓",
+          "text": "1.2 二次非線性流體效應與聲輻射壓"
+        },
+        {
+          "id": "二-駐波場與一維聲學陷阱的物理幾何",
+          "text": "二、 駐波場與一維聲學陷阱的物理幾何"
+        },
+        {
+          "id": "三-戈爾科夫勢的嚴謹數學解析",
+          "text": "三、 戈爾科夫勢的嚴謹數學解析"
+        },
+        {
+          "id": "四-超聲相控陣與3d全息聲學牽引光束",
+          "text": "四、 超聲相控陣與3D全息聲學牽引光束"
+        },
+        {
+          "id": "五-聲懸浮的物理限制尺寸與液滴破裂",
+          "text": "五、 聲懸浮的物理限制：尺寸與液滴破裂"
+        },
+        {
+          "id": "六-最前沿的應用領域",
+          "text": "六、 最前沿的應用領域"
+        },
+        {
+          "id": "七-結論無形之波重塑物質世界",
+          "text": "七、 結論：無形之波重塑物質世界"
+        }
+      ],
+      "math": 37,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "mermaid": 3,
+      "diagramErrors": 8,
+      "hero": true,
+      "categories": [
+        {
+          "text": "科學",
+          "path": "/zh-tw/categories/%E7%A7%91%E5%AD%B8/"
+        },
+        {
+          "text": "物理學",
+          "path": "/zh-tw/categories/%E7%89%A9%E7%90%86%E5%AD%B8/"
+        },
+        {
+          "text": "工程學",
+          "path": "/zh-tw/categories/%E5%B7%A5%E7%A8%8B%E5%AD%B8/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "一-聲音為何具有力量線性聲學的極限與非線性整流",
+          "text": "一、 聲音為何具有力量：線性聲學的極限與非線性整流"
+        },
+        {
+          "id": "11-線性聲學佯謬為什麼時間平均聲壓嚴格為零",
+          "text": "1.1 線性聲學佯謬：為什麼時間平均聲壓嚴格為零？"
+        },
+        {
+          "id": "12-二次非線性流體效應與聲輻射壓",
+          "text": "1.2 二次非線性流體效應與聲輻射壓"
+        },
+        {
+          "id": "二-駐波場與一維聲學陷阱的物理幾何",
+          "text": "二、 駐波場與一維聲學陷阱的物理幾何"
+        },
+        {
+          "id": "三-戈爾科夫勢的嚴謹數學解析",
+          "text": "三、 戈爾科夫勢的嚴謹數學解析"
+        },
+        {
+          "id": "四-超聲相控陣與3d全息聲學牽引光束",
+          "text": "四、 超聲相控陣與3D全息聲學牽引光束"
+        },
+        {
+          "id": "五-聲懸浮的物理限制尺寸與液滴破裂",
+          "text": "五、 聲懸浮的物理限制：尺寸與液滴破裂"
+        },
+        {
+          "id": "六-最前沿的應用領域",
+          "text": "六、 最前沿的應用領域"
+        },
+        {
+          "id": "七-結論無形之波重塑物質世界",
+          "text": "七、 結論：無形之波重塑物質世界"
+        }
+      ],
+      "math": 37,
+      "mathErrors": 0,
+      "diagrams": 3,
+      "mermaid": 3,
+      "diagramErrors": 0,
+      "hero": true,
+      "categories": [
+        {
+          "text": "科學",
+          "path": "/zh-tw/categories/science/"
+        },
+        {
+          "text": "物理學",
+          "path": "/zh-tw/categories/physics/"
+        },
+        {
+          "text": "工程學",
+          "path": "/zh-tw/categories/engineering/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "聲波干涉",
+          "path": "/zh-tw/p/physics-noise-cancelling/"
+        },
+        {
+          "text": "對流項",
+          "path": "/zh-tw/p/navier-stokes-equations/"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "lang": "ru",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "1-откуда-берется-сила-нелинейная-акустика",
+          "text": "1. Откуда берется сила: нелинейная акустика"
+        },
+        {
+          "id": "2-стоячие-волны-и-акустические-ловушки",
+          "text": "2. Стоячие волны и акустические ловушки"
+        },
+        {
+          "id": "3-акустический-потенциал-горькова",
+          "text": "3. Акустический потенциал Горькова"
+        },
+        {
+          "id": "4-ультразвуковые-фазированные-решетки-и-3d-лучи",
+          "text": "4. Ультразвуковые фазированные решетки и 3D-лучи"
+        },
+        {
+          "id": "5-физические-ограничения-и-распыление-капель",
+          "text": "5. Физические ограничения и распыление капель"
+        },
+        {
+          "id": "6-прикладные-горизонты-и-заключение",
+          "text": "6. Прикладные горизонты и заключение"
+        }
+      ],
+      "math": 26,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "mermaid": 0,
+      "diagramErrors": 0,
+      "hero": true,
+      "categories": [
+        {
+          "text": "Наука",
+          "path": "/ru/categories/%D0%BD%D0%B0%D1%83%D0%BA%D0%B0/"
+        },
+        {
+          "text": "Физика",
+          "path": "/ru/categories/%D1%84%D0%B8%D0%B7%D0%B8%D0%BA%D0%B0/"
+        },
+        {
+          "text": "Инженерия",
+          "path": "/ru/categories/%D0%B8%D0%BD%D0%B6%D0%B5%D0%BD%D0%B5%D1%80%D0%B8%D1%8F/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "1-откуда-берется-сила-нелинейная-акустика",
+          "text": "1. Откуда берется сила: нелинейная акустика"
+        },
+        {
+          "id": "2-стоячие-волны-и-акустические-ловушки",
+          "text": "2. Стоячие волны и акустические ловушки"
+        },
+        {
+          "id": "3-акустический-потенциал-горькова",
+          "text": "3. Акустический потенциал Горькова"
+        },
+        {
+          "id": "4-ультразвуковые-фазированные-решетки-и-3d-лучи",
+          "text": "4. Ультразвуковые фазированные решетки и 3D-лучи"
+        },
+        {
+          "id": "5-физические-ограничения-и-распыление-капель",
+          "text": "5. Физические ограничения и распыление капель"
+        },
+        {
+          "id": "6-прикладные-горизонты-и-заключение",
+          "text": "6. Прикладные горизонты и заключение"
+        }
+      ],
+      "math": 26,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "mermaid": 0,
+      "diagramErrors": 0,
+      "hero": true,
+      "categories": [
+        {
+          "text": "Наука",
+          "path": "/ru/categories/science/"
+        },
+        {
+          "text": "Физика",
+          "path": "/ru/categories/physics/"
+        },
+        {
+          "text": "Инженерия",
+          "path": "/ru/categories/engineering/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "конвективное ускорение",
+          "path": "/ru/p/navier-stokes-equations/"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "lang": "ar",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "1-أصل-القوة-الصوتيات-غير-الخطية",
+          "text": "1. أصل القوة: الصوتيات غير الخطية"
+        },
+        {
+          "id": "2-الموجات-الموقوفة-والمصائد-الصوتية",
+          "text": "2. الموجات الموقوفة والمصائد الصوتية"
+        },
+        {
+          "id": "3-جهد-غوركوف-الرياضي",
+          "text": "3. جهد غوركوف الرياضي"
+        },
+        {
+          "id": "4-المصفوفات-الطورية-والأشعة-الجاذبة-ثلاثية-الأبعاد",
+          "text": "4. المصفوفات الطورية والأشعة الجاذبة ثلاثية الأبعاد"
+        },
+        {
+          "id": "5-الحدود-الفيزيائية-وتفتت-القطرات",
+          "text": "5. الحدود الفيزيائية وتفتت القطرات"
+        },
+        {
+          "id": "6-التطبيقات-والخاتمة",
+          "text": "6. التطبيقات والخاتمة"
+        }
+      ],
+      "math": 24,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "mermaid": 0,
+      "diagramErrors": 0,
+      "hero": true,
+      "categories": [
+        {
+          "text": "العلوم",
+          "path": "/ar/categories/%D8%A7%D9%84%D8%B9%D9%84%D9%88%D9%85/"
+        },
+        {
+          "text": "الفيزياء",
+          "path": "/ar/categories/%D8%A7%D9%84%D9%81%D9%8A%D8%B2%D9%8A%D8%A7%D8%A1/"
+        },
+        {
+          "text": "الهندسة",
+          "path": "/ar/categories/%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D8%A9/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "1-أصل-القوة-الصوتيات-غير-الخطية",
+          "text": "1. أصل القوة: الصوتيات غير الخطية"
+        },
+        {
+          "id": "2-الموجات-الموقوفة-والمصائد-الصوتية",
+          "text": "2. الموجات الموقوفة والمصائد الصوتية"
+        },
+        {
+          "id": "3-جهد-غوركوف-الرياضي",
+          "text": "3. جهد غوركوف الرياضي"
+        },
+        {
+          "id": "4-المصفوفات-الطورية-والأشعة-الجاذبة-ثلاثية-الأبعاد",
+          "text": "4. المصفوفات الطورية والأشعة الجاذبة ثلاثية الأبعاد"
+        },
+        {
+          "id": "5-الحدود-الفيزيائية-وتفتت-القطرات",
+          "text": "5. الحدود الفيزيائية وتفتت القطرات"
+        },
+        {
+          "id": "6-التطبيقات-والخاتمة",
+          "text": "6. التطبيقات والخاتمة"
+        }
+      ],
+      "math": 24,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "mermaid": 0,
+      "diagramErrors": 0,
+      "hero": true,
+      "categories": [
+        {
+          "text": "العلوم",
+          "path": "/ar/categories/science/"
+        },
+        {
+          "text": "الفيزياء",
+          "path": "/ar/categories/physics/"
+        },
+        {
+          "text": "الهندسة",
+          "path": "/ar/categories/engineering/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "تسارع الحمل",
+          "path": "/ar/p/navier-stokes-equations/"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "lang": "hi",
+    "ok": true,
+    "before": {
+      "headings": [
+        {
+          "id": "1-धवन-बल-कस-उतपनन-करत-ह-अरखय-धवनक",
+          "text": "1. ध्वनि बल कैसे उत्पन्न करती है: अरेखीय ध्वनिकी"
+        },
+        {
+          "id": "2-सथर-तरग-और-धवनक-जल",
+          "text": "2. स्थिर तरंगें और ध्वनिक जाल"
+        },
+        {
+          "id": "3-गरकव-क-धवनक-वभव",
+          "text": "3. गोर्कोव का ध्वनिक विभव"
+        },
+        {
+          "id": "4-अलटरसनक-फसड-एर-और-3d-टरकटर-बम",
+          "text": "4. अल्ट्रासोनिक फेस्ड एरे और 3D ट्रैक्टर बीम"
+        },
+        {
+          "id": "5-भतक-समए-और-बद-क-वखडन",
+          "text": "5. भौतिक सीमाएं और बूंदों का विखंडन"
+        },
+        {
+          "id": "6-अनपरयग-और-नषकरष",
+          "text": "6. अनुप्रयोग और निष्कर्ष"
+        }
+      ],
+      "math": 25,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "mermaid": 0,
+      "diagramErrors": 0,
+      "hero": true,
+      "categories": [
+        {
+          "text": "विज्ञान",
+          "path": "/hi/categories/%E0%A4%B5%E0%A4%BF%E0%A4%9C%E0%A5%8D%E0%A4%9E%E0%A4%BE%E0%A4%A8/"
+        },
+        {
+          "text": "भौतिकी",
+          "path": "/hi/categories/%E0%A4%AD%E0%A5%8C%E0%A4%A4%E0%A4%BF%E0%A4%95%E0%A5%80/"
+        },
+        {
+          "text": "इंजीनियरिंग",
+          "path": "/hi/categories/%E0%A4%87%E0%A4%82%E0%A4%9C%E0%A5%80%E0%A4%A8%E0%A4%BF%E0%A4%AF%E0%A4%B0%E0%A4%BF%E0%A4%82%E0%A4%97/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "headings": [
+        {
+          "id": "1-धवन-बल-कस-उतपनन-करत-ह-अरखय-धवनक",
+          "text": "1. ध्वनि बल कैसे उत्पन्न करती है: अरेखीय ध्वनिकी"
+        },
+        {
+          "id": "2-सथर-तरग-और-धवनक-जल",
+          "text": "2. स्थिर तरंगें और ध्वनिक जाल"
+        },
+        {
+          "id": "3-गरकव-क-धवनक-वभव",
+          "text": "3. गोर्कोव का ध्वनिक विभव"
+        },
+        {
+          "id": "4-अलटरसनक-फसड-एर-और-3d-टरकटर-बम",
+          "text": "4. अल्ट्रासोनिक फेस्ड एरे और 3D ट्रैक्टर बीम"
+        },
+        {
+          "id": "5-भतक-समए-और-बद-क-वखडन",
+          "text": "5. भौतिक सीमाएं और बूंदों का विखंडन"
+        },
+        {
+          "id": "6-अनपरयग-और-नषकरष",
+          "text": "6. अनुप्रयोग और निष्कर्ष"
+        }
+      ],
+      "math": 25,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "mermaid": 0,
+      "diagramErrors": 0,
+      "hero": true,
+      "categories": [
+        {
+          "text": "विज्ञान",
+          "path": "/hi/categories/science/"
+        },
+        {
+          "text": "भौतिकी",
+          "path": "/hi/categories/physics/"
+        },
+        {
+          "text": "इंजीनियरिंग",
+          "path": "/hi/categories/engineering/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "संवहनी त्वरण",
+          "path": "/hi/p/navier-stokes-equations/"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  }
+]

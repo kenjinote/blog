@@ -5,10 +5,7 @@ slug: "acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics"
 image: "eyecatch.jpg"
 math: true
 draft: false
-categories:
-  - "科学"
-  - "物理学"
-  - "工程学"
+categories: ["science", "physics", "engineering"]
 tags:
   - "声悬浮"
   - "驻波"
@@ -22,7 +19,7 @@ tags:
 
 即便对于水、塑料、木材等完全不具备铁磁性的抗磁性物质，这项技术同样能让它们对抗重力、稳稳浮起。这一将科幻小说中的“反重力”与“牵引光束（Tractor Beam）”变为现实前沿物理的杰出技术，正是<strong>声学悬浮（Acoustic Levitation，简称声悬浮）</strong>。
 
-在日常生活中，人类耳朵听到的声音不过是空气介质极度微弱的纵波扰动，其压力变化仅在微帕斯卡量级，微弱到只能轻微震动耳膜。然而，当我们将声波频率提升至人类听觉极限之外的超声波波段（几十千赫兹以上），并通过声波干涉构建出特殊的“驻波（Standing Wave）”结构时，声波便展现出惊人的宏观机械力——<strong>声辐射力（Acoustic Radiation Force）</strong>。
+在日常生活中，人类耳朵听到的声音不过是空气介质极度微弱的纵波扰动，其压力变化仅在微帕斯卡量级，微弱到只能轻微震动耳膜。然而，当我们将声波频率提升至人类听觉极限之外的超声波波段（几十千赫兹以上），并通过[声波干涉](/zh-cn/p/physics-noise-cancelling/)构建出特殊的“驻波（Standing Wave）”结构时，声波便展现出惊人的宏观机械力——<strong>声辐射力（Acoustic Radiation Force）</strong>。
 
 本文将带领读者深入非线性声学与声流控学的核心：从线性声学佯谬到二次非线性效应如何将交变声波整流为直流推力；从苏联天才理论物理学家列夫·戈尔科夫（Lev Gor'kov）推导出的优雅声辐射势函数，到超声相控阵打造的3D全息声学牵引光束；从液滴在强声场中的破裂与雾化极限，到无容器药物晶体生长及太空微重力模拟的前沿应用。
 
@@ -46,7 +43,7 @@ flowchart TD
         Linear["线性声学 (微小振幅假设)<br>p(t) = P_0 sin(ωt)<br>时间平均推力 ⟨F⟩ = 0<br>无法实现宏观悬浮"]
         Nonlinear["非线性声学 (有限振幅效应)<br>动量通量二阶非线性张量<br>⟨Π⟩ = ⟨p + ρ v²⟩ ≠ 0<br>产生直流稳态声辐射力 (成功悬浮)"]
     end
-    Linear -->|超声强声强 (>150 dB)| Nonlinear
+    Linear -- "超声强声强 (>150 dB)" --> Nonlinear
 ```
 
 ### 1.2 二次非线性流体效应与声辐射压
@@ -55,7 +52,7 @@ flowchart TD
 无粘性流体的严格欧拉方程为：
 $$\rho \left( \frac{\partial \mathbf{v}}{\partial t} + (\mathbf{v} \cdot \nabla) \mathbf{v} \right) = -\nabla p$$
 
-方程左侧的对流项 $(\mathbf{v} \cdot \nabla) \mathbf{v}$ 是流体速度 $\mathbf{v}$ 的<strong>二次非线性项</strong>。在普通谈话的微弱声波中，该项极小可忽略；但在声压级超过 $150 \sim 165\,\text{dB}$ 的高能超声场中，二次项便占据了显著地位。
+方程左侧的[对流项](/zh-cn/p/navier-stokes-equations/) $(\mathbf{v} \cdot \nabla) \mathbf{v}$ 是流体速度 $\mathbf{v}$ 的<strong>二次非线性项</strong>。在普通谈话的微弱声波中，该项极小可忽略；但在声压级超过 $150 \sim 165\,\text{dB}$ 的高能超声场中，二次项便占据了显著地位。
 
 流体中的总动量通量密度张量为：
 $$\Pi_{ij} = p \delta_{ij} + \rho v_i v_j$$

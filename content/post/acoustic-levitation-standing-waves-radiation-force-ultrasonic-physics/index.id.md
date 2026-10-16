@@ -5,10 +5,7 @@ slug: "acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics"
 image: "eyecatch.jpg"
 math: true
 draft: false
-categories:
-  - "Sains"
-  - "Fisika"
-  - "Teknik"
+categories: ["science", "physics", "engineering"]
 tags:
   - "Levitasi Akustik"
   - "Gelombang Berdiri"
@@ -30,7 +27,7 @@ Suara yang biasa kita dengar hanyalah getaran tekanan udara yang sangat lemah. N
 
 Dalam akustik linear, rata-rata waktu dari tekanan gelombang harmonik $p(t) = P_0 \sin(\omega t)$ adalah tepat nol: $\langle p \rangle = 0$. Kecepatan partikel rata-rata juga nol: $\langle \mathbf{v} \rangle = \mathbf{0}$. Secara teori linear, suara tidak akan pernah bisa menopang berat benda.
 
-Gaya angkat nyata lahir dari <strong>efek hidrodinamika non-linear orde kedua</strong>. Pada persamaan Euler, percepatan konvektif $(\mathbf{v} \cdot \nabla) \mathbf{v}$ bersifat kuadratis. Ketika merata-ratakan tensor fluks momentum $\Pi_{ij} = p \delta_{ij} + \rho v_i v_j$, suku-suku linear saling meniadakan, tetapi suku kuadrat $\langle \rho v^2 \rangle$ dan $\langle (\rho')^2 \rangle$ bertahan sebagai gaya dorong searah yang konstan: <strong>tekanan radiasi akustik</strong>.
+Gaya angkat nyata lahir dari <strong>efek hidrodinamika non-linear orde kedua</strong>. Pada persamaan Euler, [percepatan konvektif](/id/p/navier-stokes-equations/) $(\mathbf{v} \cdot \nabla) \mathbf{v}$ bersifat kuadratis. Ketika merata-ratakan tensor fluks momentum $\Pi_{ij} = p \delta_{ij} + \rho v_i v_j$, suku-suku linear saling meniadakan, tetapi suku kuadrat $\langle \rho v^2 \rangle$ dan $\langle (\rho')^2 \rangle$ bertahan sebagai gaya dorong searah yang konstan: <strong>tekanan radiasi akustik</strong>.
 
 ---
 

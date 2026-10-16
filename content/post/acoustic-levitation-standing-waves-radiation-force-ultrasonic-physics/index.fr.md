@@ -5,10 +5,7 @@ slug: "acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics"
 image: "eyecatch.jpg"
 math: true
 draft: false
-categories:
-  - "Science"
-  - "Physique"
-  - "Ingénierie"
+categories: ["science", "physics", "engineering"]
 tags:
   - "Lévitation acoustique"
   - "Ondes stationnaires"
@@ -22,7 +19,7 @@ Au milieu d'un laboratoire de pointe, une goutte d'eau flotte immobile dans l'ai
 
 Même des corps diamagnétiques comme l'eau, le bois ou les matières plastiques peuvent être suspendus de manière stable. Cette technologie concrétisant le « rayon tracteur » de la science-fiction s'appelle la <strong>lévitation acoustique (Acoustic Levitation)</strong>.
 
-Les sons audibles ordinaires ne sont que d'infimes oscillations de pression. Mais lorsque la fréquence franchit le seuil des ultrasons (> 20 kHz) et que des interférences créent des <strong>ondes stationnaires</strong>, le son engendre une force mécanique macroscopique permanente : la <strong>force de radiation acoustique</strong>.
+Les sons audibles ordinaires ne sont que d'infimes oscillations de pression. Mais lorsque la fréquence franchit le seuil des ultrasons (> 20 kHz) et que des [interférences](/fr/p/physics-noise-cancelling/) créent des <strong>ondes stationnaires</strong>, le son engendre une force mécanique macroscopique permanente : la <strong>force de radiation acoustique</strong>.
 
 ---
 
@@ -30,7 +27,7 @@ Les sons audibles ordinaires ne sont que d'infimes oscillations de pression. Mai
 
 En acoustique linéaire, la moyenne temporelle de la pression d'une onde harmonique $p(t) = P_0 \sin(\omega t)$ est rigoureusement nulle : $\langle p \rangle = 0$. Il en est de même pour la vitesse des particules $\langle \mathbf{v} \rangle = \mathbf{0}$.
 
-La force de sustentation découle des <strong>non-linéarités hydrodynamiques du second ordre</strong>. Dans l'équation d'Euler, le terme d'accélération convective $(\mathbf{v} \cdot \nabla) \mathbf{v}$ est quadratique. En moyennant le tenseur de flux d'impulsion $\Pi_{ij} = p \delta_{ij} + \rho v_i v_j$, les termes linéaires oscillants s'annulent, mais les termes quadratiques $\langle \rho v^2 \rangle$ et $\langle (\rho')^2 \rangle$ subsistent sous la forme d'une composante continue : la <strong>pression de radiation acoustique</strong>.
+La force de sustentation découle des <strong>non-linéarités hydrodynamiques du second ordre</strong>. Dans l'équation d'Euler, le [terme d'accélération convective](/fr/p/navier-stokes-equations/) $(\mathbf{v} \cdot \nabla) \mathbf{v}$ est quadratique. En moyennant le tenseur de flux d'impulsion $\Pi_{ij} = p \delta_{ij} + \rho v_i v_j$, les termes linéaires oscillants s'annulent, mais les termes quadratiques $\langle \rho v^2 \rangle$ et $\langle (\rho')^2 \rangle$ subsistent sous la forme d'une composante continue : la <strong>pression de radiation acoustique</strong>.
 
 ---
 
