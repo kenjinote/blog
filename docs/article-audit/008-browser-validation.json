@@ -1,0 +1,1487 @@
+[
+  {
+    "batch": "008-ai-career-ja-en-de",
+    "language": "ja",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "𝛼\nα: 基底となる人間の生産性係数",
+        "𝑆\n𝑐\n𝑜\n𝑟\n𝑒\nS\ncore\n\t​\n\n: AIに代替されない「人間のコアスキル」（アーキテクチャ設計、ビジネス要件の理解、倫理的判断など）",
+        "𝐴\n(\n𝑡\n)\nA(t): 時刻 \n𝑡\nt におけるAIモデルの絶対的な能力（パラメータ数、コンテキストウィンドウ、推論能力）",
+        "𝛽\nβ: AIツールをどれだけ効果的に引き出せるか（プロンプトエンジニアリングの質や、AIとの協調ワークフローの洗練度）を示す係数",
+        "Predictability\n(\n𝑇\n)\nPredictability(T): タスクの予測可能性（過去のデータにどれだけパターンが存在するか）",
+        "Complexity\n(\n𝑇\n)\nComplexity(T): タスクの複雑性",
+        "Context Dependency\n(\n𝑇\n)\nContext Dependency(T): タスクが依存する「暗黙のコンテキスト（ドメイン固有の知識や人間関係）」の強さ",
+        "𝜆\nλ: AIの技術進歩率",
+        "目的（Why）: なぜこの機能が必要なのか。ビジネス上の価値は何か。",
+        "制約条件（Constraints）: パフォーマンスの要件（レイテンシ、スループット）、セキュリティ要件、コスト制約。",
+        "エッジケース（Edge Cases）: ユーザーが予期せぬ入力を行った場合のフォールバック処理。",
+        "インターフェース（Interfaces）: 既存システムとの連携仕様。",
+        "技術の「基礎」を徹底的に学び直す: フレームワークの使い方はAIに任せればよい。しかし、OSの仕組み、ネットワークプロトコル（TCP/IP, HTTP/3）、データベースの内部構造（B-Tree, トランザクション分離レベル）、データ構造とアルゴリズムに関する深い理解は絶対に必要である。AIの出力が正しいかを判断するためには、コンピュータサイエンスの確固たる基礎が不可欠である。",
+        "クラウド・アーキテクチャと分散システムをマスターする: 個別のコードではなく、AWS, GCP, Azureといったクラウドリソースをどのように組み合わせてスケーラブルなシステムを構築するかに注力する。TerraformなどのIaC（Infrastructure as Code）の概念を理解し、システム全体をコードとして設計する能力を養う。",
+        "ビジネスドメインの専門家になる: 自分が所属する業界のビジネスモデル、法規制、ユーザーの行動心理を深く学ぶ。エンジニアの枠を超え、プロダクトマネージャー（PM）に近い視点を持つこと。",
+        "コミュニケーションとファシリテーションのスキルを磨く: 人間と人間の間にある「曖昧さ」を解決し、合意形成を行うプロセスはAIには代替できない。ステークホルダーと対話し、真の課題を発見するソフトスキルは、最も価値の高いスキルとなる。",
+        "AIを「同僚」として使い倒す: AIツールの進化を恐れるのではなく、最も強力な武器として活用する。最新のLLMやAIコーディングエージェントを日常的に使い、どこでAIが失敗するか、どうプロンプトを工夫すれば最高のパフォーマンスを引き出せるかという「暗黙知」を蓄積する。"
+      ],
+      "headings": [
+        {
+          "id": "ai時代のプログラマーはどう生き残るべきかhttpskenjiblogphow-programmers-survive-in-ai-eraコーディングの終焉と新たなエンジニアリングの幕開け",
+          "text": "AI時代のプログラマーはどう生き残るべきか？コーディングの終焉と新たなエンジニアリングの幕開け"
+        },
+        {
+          "id": "1-抽象化abstractionの歴史とプログラミングの再定義",
+          "text": "1. 抽象化（Abstraction）の歴史と「プログラミング」の再定義"
+        },
+        {
+          "id": "2-生産性の数学的モデル指数関数的成長の波に乗る",
+          "text": "2. 生産性の数学的モデル：指数関数的成長の波に乗る"
+        },
+        {
+          "id": "3-タスクの自動化確率probability-of-automation",
+          "text": "3. タスクの自動化確率（Probability of Automation）"
+        },
+        {
+          "id": "4-シンタックス文法からアーキテクチャ構造への回帰",
+          "text": "4. シンタックス（文法）からアーキテクチャ（構造）への回帰"
+        },
+        {
+          "id": "5-要件定義こそが真のプロンプトエンジニアリングhttpskenjiblogplarge-language-models-llm-transformer-prompt-engineeringである",
+          "text": "5. 要件定義こそが「真のプロンプトエンジニアリング」である"
+        },
+        {
+          "id": "6-ドメイン知識domain-knowledgeの圧倒的優位性",
+          "text": "6. ドメイン知識（Domain Knowledge）の圧倒的優位性"
+        },
+        {
+          "id": "7-ソフトウェア開発のトロッコ問題誰が責任を取るのか",
+          "text": "7. ソフトウェア開発の「トロッコ問題」：誰が責任を取るのか"
+        },
+        {
+          "id": "8-aiペアプログラミングと認知負荷cognitive-loadのマネジメント",
+          "text": "8. AIペアプログラミングと認知負荷（Cognitive Load）のマネジメント"
+        },
+        {
+          "id": "9-具体的な生存戦略明日から何を学ぶべきか",
+          "text": "9. 具体的な生存戦略：明日から何を学ぶべきか"
+        },
+        {
+          "id": "結論恐れるな波を乗りこなせ",
+          "text": "結論：恐れるな、波を乗りこなせ"
+        }
+      ],
+      "paragraphs": [
+        "2026年現在、ソフトウェア開発の現場はかつてないほどの激変期にある。ほんの数年前まで、「AIがコードを書く」という概念は、せいぜいボイラープレート（定型コード）の生成や関数の自動補完といった、プログラマーの「補助ツール」としての役割に留まっていた。しかし、大規模言語モデル（LLM）の驚異的な進化により、事態は根本から覆った。現代のAIは単なる「賢いタイプライター」ではなく、要件定義書を与えれば、フロントエンドからバックエンドのロジック、データベースのスキーマ設計、さらにはCI/CDパイプラインの構築に至るまで、システム全体を瞬時に、かつ自律的に組み上げる能力を持つ「自律型ジュニア・エンジニア」へと変貌を遂げている。",
+        "このような時代において、我々「プログラマー」や「ソフトウェアエンジニア」はどのように生き残るべきだろうか？「コードを書く」という行為自体の経済的価値が急速にデフレ化していく中で、ただ特定のプログラミング言語の文法（シンタックス）を知り、特定のフレームワークのAPIに精通しているだけの「コーダー」は、急速に市場から淘汰されつつある。",
+        "本稿では、AI時代におけるプログラマーの生存戦略について、技術的、数学的、そして哲学的な視点から極めて詳細に考察していく。これは単なるキャリア論ではなく、ソフトウェアエンジニアリングという学問そのものの再定義である。",
+        "ソフトウェアエンジニアリングの歴史を振り返ると、それは常に「抽象化（Abstraction）」の歴史であったことがわかる。我々は常に、より人間に近い言語で、より複雑なシステムを記述するためのレイヤーを構築してきた。",
+        "初期の計算機科学者は、パンチカードを用いて物理的なハードウェアのスイッチを直接操作し、マシン語（0と1の羅列）で計算機に指示を与えていた。その後、アセンブリ言語が登場し、人間が理解しやすいニーモニックでハードウェアを操作できるようになった。さらに時代が進むと、C言語やFortranといった高級言語が登場し、メモリ管理やCPUのレジスタといったハードウェアの複雑な詳細をカプセル化することに成功した。続いて登場したJava, Python, Ruby, TypeScriptなどのモダンな言語により、プログラマーは「計算機をどう動かすか（How）」ではなく、「何を計算機にさせたいか（What）」により集中できるようになった。",
+        "AI（LLM）の登場は、この抽象化の歴史における最新にして最大のパラダイムシフトである。プログラミング言語の進化が「ハードウェアの隠蔽」であったとすれば、LLMの進化は「シンタックス（文法）の隠蔽」である。",
+        "もはや、開発者がメモリリークを心配しながらポインタを操作したり、JSONのパース処理のための定型コードを何百行も書いたりする時代は終わった。自然言語（日本語や英語）という、人類にとって最も抽象度の高い言語を用いてシステムを定義することが、2026年における「プログラミング」のスタンダードとなっている。",
+        "AIがもたらす生産性の向上を、数学的なモデルを用いて定量的に評価してみよう。 従来のソフトウェア開発における個人の生産性 \n𝑃\n𝑡\n𝑟\n𝑎\n𝑑\n𝑖\n𝑡\n𝑖\n𝑜\n𝑛\n𝑎\n𝑙\nP\ntraditional\n\t​\n\n は、個人のスキルレベル \n𝑆\nS、ドメイン経験 \n𝐸\nE、そしてツールの効率 \n𝑇\nT の線形な組み合わせとしてモデル化できた。",
+        "しかし、AIを活用した現代の開発においては、AIの能力 \n𝐴\n(\n𝑡\n)\nA(t) が人間の能力を増幅する「強力なレバレッジ（Multiplier）」として働く。AIの能力は時間の経過 \n𝑡\nt と共に指数関数的に成長（ムーアの法則のAI版）するため、AI時代の生産性 \n𝑃\n𝐴\n𝐼\n(\n𝑡\n)\nP\nAI\n\t​\n\n(t) は以下のような方程式で表すことができる。",
+        "ここで各変数は以下を意味する。",
+        "この数式から導き出される重要な洞察は、 \n𝐴\n(\n𝑡\n)\nA(t) が指数関数的に増大する世界においては、単なるタイピング速度や特定言語の暗記といった従来型のスキルは、全体の生産性に与える影響が極めて小さくなる ということだ。代わりに、指数関数的なAIの成長に乗じるための係数 \n𝛽\nβ と、AIがカバーできない領域である \n𝑆\n𝑐\n𝑜\n𝑟\n𝑒\nS\ncore\n\t​\n\n が、エンジニアの市場価値を決定づける支配的な要因となる。",
+        "では、どのようなタスクが自動化され、どのようなタスクが人間の手に残るのだろうか？ あるタスク \n𝑇\nT がAIによって完全に自動化される確率 \n𝑃\n𝑎\n𝑢\n𝑡\n𝑜\n(\n𝑇\n)\nP\nauto\n\t​\n\n(T) は、次のように定式化できる。",
+        "APIのルーティング処理を書く、単純なCRUD画面を作る、といった予測可能性が高くコンテキスト依存性が低いタスクは、\n𝑃\n𝑎\n𝑢\n𝑡\n𝑜\n≈\n1\nP\nauto\n\t​\n\n≈1 となり、ほぼ完全に自動化される。一方で、「既存のレガシーシステムと新しいマイクロサービスをどう安全に統合するか」「法務部門の要求を満たしつつ、ユーザー体験を損なわない認証フローをどう設計するか」といった、コンテキスト依存性が極めて高いタスクは自動化が難しい。",
+        "AIが得意なことと、人間が得意なことを明確に分離することが生存の絶対条件となる。",
+        "AIは「局所的な最適化」において人間を凌駕している。1つの関数、1つのクラス、あるいは単一のモジュールを記述する速度と正確性において、人間に勝ち目はない。しかし、AIは「大域的な最適化」や「コンテキストの欠落（Missing Context）」に対しては非常に脆弱である。",
+        "これからのプログラマーは「コードを書く労働者」から、「AIが生成した無数のコンポーネントをオーケストレーションするアーキテクト」へと役割を変えなければならない。システム全体を俯瞰し、マイクロサービス境界をどこに引くか、CAP定理における可用性と一貫性のトレードオフをどうビジネスの文脈に合わせて解決するか、技術的負債をどうコントロールするか。これらは、全体像とビジネスゴールを理解している人間にしかできない高度な知的作業である。",
+        "最近よく耳にする「プロンプトエンジニアリング」という言葉は、しばしば「AIを騙して狙った出力を得るためのハック」のように誤解されがちである。しかし、ソフトウェア開発におけるプロンプトエンジニアリングの本質は、紛れもなく 「高度な要件定義（Requirements Engineering）」 である。",
+        "自然言語でAIに指示を出し、意図した通りのソフトウェアを出力させるためには、以下のような要素を厳密に言語化しなければならない。",
+        "曖昧な指示（プロンプト）からは、曖昧で脆弱なシステムしか生まれない。「顧客が本当に欲しかったもの」を深くヒアリングし、矛盾する要件を整理し、論理的な破綻のない仕様書（プロンプト）を作成する能力。これこそが、AI時代における最強の「コーディングスキル」である。プログラマーはコードエディタではなく、NotionやMarkdownファイルに向き合い、システムのあるべき姿をテキストで精緻に記述する時間が増えていく。",
+        "AIは世界中のオープンソースコードや公開ドキュメントを学習しているため、一般的なWeb技術やアルゴリズムには精通している。しかし、AIがアクセスできないデータがある。それは「あなたの会社固有のビジネスルール」であり、「特定の業界（医療、金融、製造など）に深く根付いたドメイン知識」である。",
+        "例えば、ある医療系スタートアップで電子カルテシステムを開発しているとする。AIは「Reactで表組みのUIを作る方法」や「HL7 FHIRの一般的なデータ構造」は知っている。しかし、「A病院の特定の診療科において、医師がどのような順番で患者のデータを閲覧し、どのようなUIであれば医療ミスのリスクを最小化できるか」という暗黙知までは学習していない。",
+        "技術そのものがコモディティ化（汎用品化）する世界において、エンジニアの真の価値は「テクノロジー」と「ビジネス・ドメイン」の交差点に生まれる。技術力だけで勝負するのではなく、医療、金融、物流、エンタメなど、特定のドメインにおける深い専門知識を持ち、そのドメインの課題をAIという強力なツールを使って解決できる人材が、これからの市場を牽引していく。",
+        "AIへの依存度が高まるにつれ、我々は重大な哲学・倫理的問題に直面する。ソフトウェアエンジニアリングにおける「責任の所在」という問題である。",
+        "もし、AIが自律的に生成したコードが本番環境で深刻なバグを引き起こし、企業に数億円の損失を与えたり、人命に関わる医療システムで誤動作を起こしたりした場合、誰がその責任を取るのか？AIモデルを開発した企業か？それとも、プロンプトを入力したエンジニアか？AIを「解雇」したり「逮捕」したりすることはできない。",
+        "システムが社会に与える影響に対する「法的・倫理的責任（Accountability）」を引き受ける主体としての「人間」の役割は、どれほど技術が進化したとしても消滅することはない。むしろ、コードの生成プロセスがブラックボックス化するほど、人間はシステムに対する「最終承認者（Approver）」および「監督者（Supervisor）」としての重い責任を負うことになる。",
+        "AIが提示したアーキテクチャやコードが、セキュリティ基準を満たしているか、倫理的に問題がないか（バイアスが含まれていないか）、コンプライアンスを遵守しているかを監査し、最終的なGOサインを出す。この「責任を負う」という行為自体が、エンジニアの重要な仕事の一部となる。",
+        "AIと共に働く上で、人間の「認知負荷（Cognitive Load）」の性質も変化している。ゼロからコードを書く際の認知負荷と、AIが生成した数百行の未知のコードを「読んでレビューする」際の認知負荷は全く異なる。",
+        "心理学の認知負荷理論によれば、既存のスキーマ（頭の中の知識構造）に合致しない複雑な情報を処理する際、人間のワーキングメモリはすぐに枯渇する。AIが生成したコードは、時に人間が思いつかないような高度な最適化を含んでいる一方で、コンテキストを無視した「幻覚（ハルシネーション）」を含んでいることもある。",
+        "これを防ぐためには、AIに対するレビュープロセスをシステム化する必要がある。",
+        "人間は「書く」スキル以上に、「速読し、論理的欠陥を瞬時に見抜く（Code Reading & Auditing）」スキルを極限まで高める必要がある。テスト駆動開発（TDD）の重要性はAI時代においてさらに増している。AIにコードを書かせる前に、人間または別のAIが厳密なテストコードを書き、そのテストを通過するまでAIにコードを修正させるというアプローチが主流になる。",
+        "ここまでの分析を踏まえ、プログラマーがAI時代を生き残るための具体的なアクションプランを提示する。",
+        "AIによるプログラミングの自動化は、プログラマーという職業の「死」を意味するものではない。むしろ、タイポの修正や環境構築のトラブルシューティング、退屈なボイラープレートの記述といった、ソフトウェア開発における「本質的でない労働」から我々を解放してくれる 「ルネサンス（文芸復興）」 である。",
+        "歴史上、自動織機が登場したときも、表計算ソフト（Excel）が登場したときも、仕事が消滅するという悲観論が蔓延した。しかし現実は、生産性が飛躍的に向上したことで新たな需要が創出され、より高度な仕事が生まれてきた。ソフトウェアの世界でも同じことが起きる。「安価にシステムを作れる」ようになることで、これまでコストが見合わずにIT化されてこなかったあらゆる領域にソフトウェアが浸透し、エンジニアが解決すべき課題（What）は無限に広がっていく。",
+        "我々プログラマーは今、コードを書く職人から、AIという強大な知能を指揮する「オーケストラの指揮者」へと進化するチャンスを与えられている。技術の波に怯えて岸辺に留まるのではなく、その波をいち早く乗りこなし、より大きく、より価値のあるシステムを創造する旅へと漕ぎ出そう。AI時代こそが、真の意味での「エンジニアリング」が始まる時代なのである。"
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/how-programmers-survive-in-ai-era/img/eyecatch_hu1840675025826750370.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 25,
+      "mathErrors": 0,
+      "diagrams": 3,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "IT業界のキャリア",
+          "path": "/categories/tech-career/"
+        },
+        {
+          "text": "AI",
+          "path": "/categories/ai/"
+        },
+        {
+          "text": "ソフトウェア工学",
+          "path": "/categories/software-engineering/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "AI時代のプログラマーはどう生き残るべきか？",
+          "path": "/p/how-programmers-survive-in-ai-era/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "大規模言語モデル",
+          "path": "/p/large-language-models-llm-transformer-prompt-engineering/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "LLM",
+          "path": "/p/large-language-models-llm-transformer-prompt-engineering/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "CI/CD",
+          "path": "/p/cicd-pipeline-github-actions-best-practices/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "パイプライン",
+          "path": "/p/cicd-pipeline-github-actions-best-practices/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "プログラミング言語",
+          "path": "/p/programming-languages-history-paradigm-evolution/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "アセンブリ",
+          "path": "/p/programming-languages-history-paradigm-evolution/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Java",
+          "path": "/p/programming-languages-history-paradigm-evolution/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "LLM",
+          "path": "/p/large-language-models-llm-transformer-prompt-engineering/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "プログラミング言語",
+          "path": "/p/programming-languages-history-paradigm-evolution/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "LLM",
+          "path": "/p/large-language-models-llm-transformer-prompt-engineering/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "ポインタ",
+          "path": "/p/c-language-pointers-memory-management-stack-heap/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "ムーアの法則",
+          "path": "/p/business-moores-law/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "プロンプトエンジニアリング",
+          "path": "/p/large-language-models-llm-transformer-prompt-engineering/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "マイクロサービス",
+          "path": "/p/microservices-architecture-bff-api-gateway/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "認証",
+          "path": "/p/oauth2-oidc-authentication-authorization-difference/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "マイクロサービス",
+          "path": "/p/microservices-architecture-bff-api-gateway/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "CAP定理",
+          "path": "/p/cap-theorem-distributed-systems/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "プロンプトエンジニアリング",
+          "path": "/p/large-language-models-llm-transformer-prompt-engineering/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "TCP",
+          "path": "/p/http3-quic-protocol-tcp-udp/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "トランザクション",
+          "path": "/p/rdbms-transaction-acid-isolation-level-lock/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "分離レベル",
+          "path": "/p/rdbms-transaction-acid-isolation-level-lock/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "分散システム",
+          "path": "/p/cap-theorem-distributed-systems/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "IaC",
+          "path": "/p/iac-infrastructure-as-code-terraform/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "Infrastructure as Code",
+          "path": "/p/iac-infrastructure-as-code-terraform/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "LLM",
+          "path": "/p/large-language-models-llm-transformer-prompt-engineering/",
+          "host": "kenji.blog"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "𝛼\nα: 基底となる人間の生産性係数",
+        "𝑆\n𝑐\n𝑜\n𝑟\n𝑒\nS\ncore\n\t​\n\n: AIに代替されない「人間のコアスキル」（アーキテクチャ設計、ビジネス要件の理解、倫理的判断など）",
+        "𝐴\n(\n𝑡\n)\nA(t): 時刻 \n𝑡\nt におけるAIモデルの絶対的な能力（パラメータ数、コンテキストウィンドウ、推論能力）",
+        "𝛽\nβ: AIツールをどれだけ効果的に引き出せるか（プロンプトエンジニアリングの質や、AIとの協調ワークフローの洗練度）を示す係数",
+        "Predictability\n(\n𝑇\n)\nPredictability(T): タスクの予測可能性（過去のデータにどれだけパターンが存在するか）",
+        "Complexity\n(\n𝑇\n)\nComplexity(T): タスクの複雑性",
+        "Context Dependency\n(\n𝑇\n)\nContext Dependency(T): タスクが依存する「暗黙のコンテキスト（ドメイン固有の知識や人間関係）」の強さ",
+        "𝜆\nλ: AIの技術進歩率",
+        "目的（Why）: なぜこの機能が必要なのか。ビジネス上の価値は何か。",
+        "制約条件（Constraints）: パフォーマンスの要件（レイテンシ、スループット）、セキュリティ要件、コスト制約。",
+        "エッジケース（Edge Cases）: ユーザーが予期せぬ入力を行った場合のフォールバック処理。",
+        "インターフェース（Interfaces）: 既存システムとの連携仕様。",
+        "技術の「基礎」を徹底的に学び直す: フレームワークの使い方はAIに任せればよい。しかし、OSの仕組み、ネットワークプロトコル（TCP/IP, HTTP/3）、データベースの内部構造（B-Tree, トランザクション分離レベル）、データ構造とアルゴリズムに関する深い理解は絶対に必要である。AIの出力が正しいかを判断するためには、コンピュータサイエンスの確固たる基礎が不可欠である。",
+        "クラウド・アーキテクチャと分散システムをマスターする: 個別のコードではなく、AWS, GCP, Azureといったクラウドリソースをどのように組み合わせてスケーラブルなシステムを構築するかに注力する。TerraformなどのIaC（Infrastructure as Code）の概念を理解し、システム全体をコードとして設計する能力を養う。",
+        "ビジネスドメインの専門家になる: 自分が所属する業界のビジネスモデル、法規制、ユーザーの行動心理を深く学ぶ。エンジニアの枠を超え、プロダクトマネージャー（PM）に近い視点を持つこと。",
+        "コミュニケーションとファシリテーションのスキルを磨く: 人間と人間の間にある「曖昧さ」を解決し、合意形成を行うプロセスはAIには代替できない。ステークホルダーと対話し、真の課題を発見するソフトスキルは、最も価値の高いスキルとなる。",
+        "AIを「同僚」として使い倒す: AIツールの進化を恐れるのではなく、最も強力な武器として活用する。最新のLLMやAIコーディングエージェントを日常的に使い、どこでAIが失敗するか、どうプロンプトを工夫すれば最高のパフォーマンスを引き出せるかという「暗黙知」を蓄積する。"
+      ],
+      "headings": [
+        {
+          "id": "ai時代のプログラマーはどう生き残るべきかhttpskenjiblogphow-programmers-survive-in-ai-eraコーディングの終焉と新たなエンジニアリングの幕開け",
+          "text": "AI時代のプログラマーはどう生き残るべきか？コーディングの終焉と新たなエンジニアリングの幕開け"
+        },
+        {
+          "id": "1-抽象化abstractionの歴史とプログラミングの再定義",
+          "text": "1. 抽象化（Abstraction）の歴史と「プログラミング」の再定義"
+        },
+        {
+          "id": "2-生産性の数学的モデル指数関数的成長の波に乗る",
+          "text": "2. 生産性の数学的モデル：指数関数的成長の波に乗る"
+        },
+        {
+          "id": "3-タスクの自動化確率probability-of-automation",
+          "text": "3. タスクの自動化確率（Probability of Automation）"
+        },
+        {
+          "id": "4-シンタックス文法からアーキテクチャ構造への回帰",
+          "text": "4. シンタックス（文法）からアーキテクチャ（構造）への回帰"
+        },
+        {
+          "id": "5-要件定義こそが真のプロンプトエンジニアリングhttpskenjiblogplarge-language-models-llm-transformer-prompt-engineeringである",
+          "text": "5. 要件定義こそが「真のプロンプトエンジニアリング」である"
+        },
+        {
+          "id": "6-ドメイン知識domain-knowledgeの圧倒的優位性",
+          "text": "6. ドメイン知識（Domain Knowledge）の圧倒的優位性"
+        },
+        {
+          "id": "7-ソフトウェア開発のトロッコ問題誰が責任を取るのか",
+          "text": "7. ソフトウェア開発の「トロッコ問題」：誰が責任を取るのか"
+        },
+        {
+          "id": "8-aiペアプログラミングと認知負荷cognitive-loadのマネジメント",
+          "text": "8. AIペアプログラミングと認知負荷（Cognitive Load）のマネジメント"
+        },
+        {
+          "id": "9-具体的な生存戦略明日から何を学ぶべきか",
+          "text": "9. 具体的な生存戦略：明日から何を学ぶべきか"
+        },
+        {
+          "id": "結論恐れるな波を乗りこなせ",
+          "text": "結論：恐れるな、波を乗りこなせ"
+        }
+      ],
+      "paragraphs": [
+        "2026年現在、ソフトウェア開発の現場はかつてないほどの激変期にある。ほんの数年前まで、「AIがコードを書く」という概念は、せいぜいボイラープレート（定型コード）の生成や関数の自動補完といった、プログラマーの「補助ツール」としての役割に留まっていた。しかし、大規模言語モデル（LLM）の驚異的な進化により、事態は根本から覆った。現代のAIは単なる「賢いタイプライター」ではなく、要件定義書を与えれば、フロントエンドからバックエンドのロジック、データベースのスキーマ設計、さらにはCI/CDパイプラインの構築に至るまで、システム全体を瞬時に、かつ自律的に組み上げる能力を持つ「自律型ジュニア・エンジニア」へと変貌を遂げている。",
+        "このような時代において、我々「プログラマー」や「ソフトウェアエンジニア」はどのように生き残るべきだろうか？「コードを書く」という行為自体の経済的価値が急速にデフレ化していく中で、ただ特定のプログラミング言語の文法（シンタックス）を知り、特定のフレームワークのAPIに精通しているだけの「コーダー」は、急速に市場から淘汰されつつある。",
+        "本稿では、AI時代におけるプログラマーの生存戦略について、技術的、数学的、そして哲学的な視点から極めて詳細に考察していく。これは単なるキャリア論ではなく、ソフトウェアエンジニアリングという学問そのものの再定義である。",
+        "ソフトウェアエンジニアリングの歴史を振り返ると、それは常に「抽象化（Abstraction）」の歴史であったことがわかる。我々は常に、より人間に近い言語で、より複雑なシステムを記述するためのレイヤーを構築してきた。",
+        "初期の計算機科学者は、パンチカードを用いて物理的なハードウェアのスイッチを直接操作し、マシン語（0と1の羅列）で計算機に指示を与えていた。その後、アセンブリ言語が登場し、人間が理解しやすいニーモニックでハードウェアを操作できるようになった。さらに時代が進むと、C言語やFortranといった高級言語が登場し、メモリ管理やCPUのレジスタといったハードウェアの複雑な詳細をカプセル化することに成功した。続いて登場したJava, Python, Ruby, TypeScriptなどのモダンな言語により、プログラマーは「計算機をどう動かすか（How）」ではなく、「何を計算機にさせたいか（What）」により集中できるようになった。",
+        "AI（LLM）の登場は、この抽象化の歴史における最新にして最大のパラダイムシフトである。プログラミング言語の進化が「ハードウェアの隠蔽」であったとすれば、LLMの進化は「シンタックス（文法）の隠蔽」である。",
+        "もはや、開発者がメモリリークを心配しながらポインタを操作したり、JSONのパース処理のための定型コードを何百行も書いたりする時代は終わった。自然言語（日本語や英語）という、人類にとって最も抽象度の高い言語を用いてシステムを定義することが、2026年における「プログラミング」のスタンダードとなっている。",
+        "AIがもたらす生産性の向上を、数学的なモデルを用いて定量的に評価してみよう。 従来のソフトウェア開発における個人の生産性 \n𝑃\n𝑡\n𝑟\n𝑎\n𝑑\n𝑖\n𝑡\n𝑖\n𝑜\n𝑛\n𝑎\n𝑙\nP\ntraditional\n\t​\n\n は、個人のスキルレベル \n𝑆\nS、ドメイン経験 \n𝐸\nE、そしてツールの効率 \n𝑇\nT の線形な組み合わせとしてモデル化できた。",
+        "しかし、AIを活用した現代の開発においては、AIの能力 \n𝐴\n(\n𝑡\n)\nA(t) が人間の能力を増幅する「強力なレバレッジ（Multiplier）」として働く。AIの能力は時間の経過 \n𝑡\nt と共に指数関数的に成長（ムーアの法則のAI版）するため、AI時代の生産性 \n𝑃\n𝐴\n𝐼\n(\n𝑡\n)\nP\nAI\n\t​\n\n(t) は以下のような方程式で表すことができる。",
+        "ここで各変数は以下を意味する。",
+        "この数式から導き出される重要な洞察は、 \n𝐴\n(\n𝑡\n)\nA(t) が指数関数的に増大する世界においては、単なるタイピング速度や特定言語の暗記といった従来型のスキルは、全体の生産性に与える影響が極めて小さくなる ということだ。代わりに、指数関数的なAIの成長に乗じるための係数 \n𝛽\nβ と、AIがカバーできない領域である \n𝑆\n𝑐\n𝑜\n𝑟\n𝑒\nS\ncore\n\t​\n\n が、エンジニアの市場価値を決定づける支配的な要因となる。",
+        "では、どのようなタスクが自動化され、どのようなタスクが人間の手に残るのだろうか？ あるタスク \n𝑇\nT がAIによって完全に自動化される確率 \n𝑃\n𝑎\n𝑢\n𝑡\n𝑜\n(\n𝑇\n)\nP\nauto\n\t​\n\n(T) は、次のように定式化できる。",
+        "APIのルーティング処理を書く、単純なCRUD画面を作る、といった予測可能性が高くコンテキスト依存性が低いタスクは、\n𝑃\n𝑎\n𝑢\n𝑡\n𝑜\n≈\n1\nP\nauto\n\t​\n\n≈1 となり、ほぼ完全に自動化される。一方で、「既存のレガシーシステムと新しいマイクロサービスをどう安全に統合するか」「法務部門の要求を満たしつつ、ユーザー体験を損なわない認証フローをどう設計するか」といった、コンテキスト依存性が極めて高いタスクは自動化が難しい。",
+        "AIが得意なことと、人間が得意なことを明確に分離することが生存の絶対条件となる。",
+        "AIは「局所的な最適化」において人間を凌駕している。1つの関数、1つのクラス、あるいは単一のモジュールを記述する速度と正確性において、人間に勝ち目はない。しかし、AIは「大域的な最適化」や「コンテキストの欠落（Missing Context）」に対しては非常に脆弱である。",
+        "これからのプログラマーは「コードを書く労働者」から、「AIが生成した無数のコンポーネントをオーケストレーションするアーキテクト」へと役割を変えなければならない。システム全体を俯瞰し、マイクロサービス境界をどこに引くか、CAP定理における可用性と一貫性のトレードオフをどうビジネスの文脈に合わせて解決するか、技術的負債をどうコントロールするか。これらは、全体像とビジネスゴールを理解している人間にしかできない高度な知的作業である。",
+        "最近よく耳にする「プロンプトエンジニアリング」という言葉は、しばしば「AIを騙して狙った出力を得るためのハック」のように誤解されがちである。しかし、ソフトウェア開発におけるプロンプトエンジニアリングの本質は、紛れもなく 「高度な要件定義（Requirements Engineering）」 である。",
+        "自然言語でAIに指示を出し、意図した通りのソフトウェアを出力させるためには、以下のような要素を厳密に言語化しなければならない。",
+        "曖昧な指示（プロンプト）からは、曖昧で脆弱なシステムしか生まれない。「顧客が本当に欲しかったもの」を深くヒアリングし、矛盾する要件を整理し、論理的な破綻のない仕様書（プロンプト）を作成する能力。これこそが、AI時代における最強の「コーディングスキル」である。プログラマーはコードエディタではなく、NotionやMarkdownファイルに向き合い、システムのあるべき姿をテキストで精緻に記述する時間が増えていく。",
+        "AIは世界中のオープンソースコードや公開ドキュメントを学習しているため、一般的なWeb技術やアルゴリズムには精通している。しかし、AIがアクセスできないデータがある。それは「あなたの会社固有のビジネスルール」であり、「特定の業界（医療、金融、製造など）に深く根付いたドメイン知識」である。",
+        "例えば、ある医療系スタートアップで電子カルテシステムを開発しているとする。AIは「Reactで表組みのUIを作る方法」や「HL7 FHIRの一般的なデータ構造」は知っている。しかし、「A病院の特定の診療科において、医師がどのような順番で患者のデータを閲覧し、どのようなUIであれば医療ミスのリスクを最小化できるか」という暗黙知までは学習していない。",
+        "技術そのものがコモディティ化（汎用品化）する世界において、エンジニアの真の価値は「テクノロジー」と「ビジネス・ドメイン」の交差点に生まれる。技術力だけで勝負するのではなく、医療、金融、物流、エンタメなど、特定のドメインにおける深い専門知識を持ち、そのドメインの課題をAIという強力なツールを使って解決できる人材が、これからの市場を牽引していく。",
+        "AIへの依存度が高まるにつれ、我々は重大な哲学・倫理的問題に直面する。ソフトウェアエンジニアリングにおける「責任の所在」という問題である。",
+        "もし、AIが自律的に生成したコードが本番環境で深刻なバグを引き起こし、企業に数億円の損失を与えたり、人命に関わる医療システムで誤動作を起こしたりした場合、誰がその責任を取るのか？AIモデルを開発した企業か？それとも、プロンプトを入力したエンジニアか？AIを「解雇」したり「逮捕」したりすることはできない。",
+        "システムが社会に与える影響に対する「法的・倫理的責任（Accountability）」を引き受ける主体としての「人間」の役割は、どれほど技術が進化したとしても消滅することはない。むしろ、コードの生成プロセスがブラックボックス化するほど、人間はシステムに対する「最終承認者（Approver）」および「監督者（Supervisor）」としての重い責任を負うことになる。",
+        "AIが提示したアーキテクチャやコードが、セキュリティ基準を満たしているか、倫理的に問題がないか（バイアスが含まれていないか）、コンプライアンスを遵守しているかを監査し、最終的なGOサインを出す。この「責任を負う」という行為自体が、エンジニアの重要な仕事の一部となる。",
+        "AIと共に働く上で、人間の「認知負荷（Cognitive Load）」の性質も変化している。ゼロからコードを書く際の認知負荷と、AIが生成した数百行の未知のコードを「読んでレビューする」際の認知負荷は全く異なる。",
+        "心理学の認知負荷理論によれば、既存のスキーマ（頭の中の知識構造）に合致しない複雑な情報を処理する際、人間のワーキングメモリはすぐに枯渇する。AIが生成したコードは、時に人間が思いつかないような高度な最適化を含んでいる一方で、コンテキストを無視した「幻覚（ハルシネーション）」を含んでいることもある。",
+        "これを防ぐためには、AIに対するレビュープロセスをシステム化する必要がある。",
+        "人間は「書く」スキル以上に、「速読し、論理的欠陥を瞬時に見抜く（Code Reading & Auditing）」スキルを極限まで高める必要がある。テスト駆動開発（TDD）の重要性はAI時代においてさらに増している。AIにコードを書かせる前に、人間または別のAIが厳密なテストコードを書き、そのテストを通過するまでAIにコードを修正させるというアプローチが主流になる。",
+        "ここまでの分析を踏まえ、プログラマーがAI時代を生き残るための具体的なアクションプランを提示する。",
+        "AIによるプログラミングの自動化は、プログラマーという職業の「死」を意味するものではない。むしろ、タイポの修正や環境構築のトラブルシューティング、退屈なボイラープレートの記述といった、ソフトウェア開発における「本質的でない労働」から我々を解放してくれる 「ルネサンス（文芸復興）」 である。",
+        "歴史上、自動織機が登場したときも、表計算ソフト（Excel）が登場したときも、仕事が消滅するという悲観論が蔓延した。しかし現実は、生産性が飛躍的に向上したことで新たな需要が創出され、より高度な仕事が生まれてきた。ソフトウェアの世界でも同じことが起きる。「安価にシステムを作れる」ようになることで、これまでコストが見合わずにIT化されてこなかったあらゆる領域にソフトウェアが浸透し、エンジニアが解決すべき課題（What）は無限に広がっていく。",
+        "我々プログラマーは今、コードを書く職人から、AIという強大な知能を指揮する「オーケストラの指揮者」へと進化するチャンスを与えられている。技術の波に怯えて岸辺に留まるのではなく、その波をいち早く乗りこなし、より大きく、より価値のあるシステムを創造する旅へと漕ぎ出そう。AI時代こそが、真の意味での「エンジニアリング」が始まる時代なのである。"
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/how-programmers-survive-in-ai-era/img/eyecatch_hu1840675025826750370.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 25,
+      "mathErrors": 0,
+      "diagrams": 3,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "IT業界のキャリア",
+          "path": "/categories/tech-career/"
+        },
+        {
+          "text": "AI",
+          "path": "/categories/ai/"
+        },
+        {
+          "text": "ソフトウェア工学",
+          "path": "/categories/software-engineering/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "AI時代のプログラマーはどう生き残るべきか？",
+          "path": "/p/how-programmers-survive-in-ai-era/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "大規模言語モデル",
+          "path": "/p/large-language-models-llm-transformer-prompt-engineering/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "CI/CD",
+          "path": "/p/cicd-pipeline-github-actions-best-practices/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "プログラミング言語",
+          "path": "/p/programming-languages-history-paradigm-evolution/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "アセンブリ",
+          "path": "/p/programming-languages-history-paradigm-evolution/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Java",
+          "path": "/p/programming-languages-history-paradigm-evolution/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "LLM",
+          "path": "/p/large-language-models-llm-transformer-prompt-engineering/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "プログラミング言語",
+          "path": "/p/programming-languages-history-paradigm-evolution/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "LLM",
+          "path": "/p/large-language-models-llm-transformer-prompt-engineering/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "ポインタ",
+          "path": "/p/c-language-pointers-memory-management-stack-heap/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "ムーアの法則",
+          "path": "/p/business-moores-law/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "プロンプトエンジニアリング",
+          "path": "/p/large-language-models-llm-transformer-prompt-engineering/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "マイクロサービス",
+          "path": "/p/microservices-architecture-bff-api-gateway/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "認証",
+          "path": "/p/oauth2-oidc-authentication-authorization-difference/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "マイクロサービス",
+          "path": "/p/microservices-architecture-bff-api-gateway/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "CAP定理",
+          "path": "/p/cap-theorem-distributed-systems/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "プロンプトエンジニアリング",
+          "path": "/p/large-language-models-llm-transformer-prompt-engineering/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "テスト駆動開発",
+          "path": "/p/test-driven-development-tdd-bdd/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "TCP",
+          "path": "/p/http3-quic-protocol-tcp-udp/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "トランザクション",
+          "path": "/p/rdbms-transaction-acid-isolation-level-lock/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "分散システム",
+          "path": "/p/cap-theorem-distributed-systems/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "IaC",
+          "path": "/p/iac-infrastructure-as-code-terraform/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "LLM",
+          "path": "/p/large-language-models-llm-transformer-prompt-engineering/",
+          "host": "kenji.blog"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "008-ai-career-ja-en-de",
+    "language": "en",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "𝛼\nα: The baseline human productivity coefficient",
+        "𝑆\n𝑐\n𝑜\n𝑟\n𝑒\nS\ncore\n\t​\n\n: “Core human skills” that cannot be replaced by AI (architecture design, understanding business requirements, ethical judgment, etc.)",
+        "𝐴\n(\n𝑡\n)\nA(t): The absolute capability of the AI model at time \n𝑡\nt (number of parameters, context window, reasoning ability)",
+        "𝛽\nβ: A coefficient indicating how effectively AI tools can be utilized (the quality of prompt engineering and the refinement of collaborative workflows with AI)",
+        "Predictability\n(\n𝑇\n)\nPredictability(T): The predictability of the task (how much of a pattern exists in past data)",
+        "Complexity\n(\n𝑇\n)\nComplexity(T): The complexity of the task",
+        "Context Dependency\n(\n𝑇\n)\nContext Dependency(T): The strength of “implicit context (domain-specific knowledge or human relationships)” that the task depends on",
+        "𝜆\nλ: The rate of technological advancement of AI",
+        "Purpose (Why): Why is this feature needed? What is the business value?",
+        "Constraints: Performance requirements (latency, throughput), security requirements, cost constraints.",
+        "Edge Cases: Fallback processing when the user provides unexpected input.",
+        "Interfaces: Integration specifications with existing systems.",
+        "Thoroughly Relearn the “Fundamentals” of Technology: You can leave the usage of frameworks to AI. However, a deep understanding of how OS works, network protocols (TCP/IP, HTTP/3), internal database structures (B-Tree, transaction isolation levels), and data structures and algorithms is absolutely necessary. To judge whether AI’s output is correct, a solid foundation in computer science is indispensable.",
+        "Master Cloud Architecture and Distributed Systems: Focus on how to combine cloud resources like AWS, GCP, and Azure to build scalable systems, rather than individual pieces of code. Understand the concept of IaC (Infrastructure as Code) such as Terraform, and cultivate the ability to design an entire system as code.",
+        "Become an Expert in a Business Domain: Deeply study the business models, legal regulations, and behavioral psychology of the users in the industry you belong to. Go beyond the boundaries of an engineer and acquire a perspective closer to that of a Product Manager (PM).",
+        "Polish Communication and Facilitation Skills: The process of resolving the “ambiguity” between humans and building consensus cannot be replaced by AI. Soft skills to communicate with stakeholders and discover real issues will become the most valuable skills.",
+        "Use AI to the Fullest as a “Colleague”: Do not fear the evolution of AI tools, but utilize them as your most powerful weapons. Use the latest LLMs and AI coding agents on a daily basis to accumulate the “tacit knowledge” of where AI fails and how to tweak prompts to draw out the best performance."
+      ],
+      "headings": [
+        {
+          "id": "how-should-programmers-survive-in-the-ai-erahttpskenjiblogenphow-programmers-survive-in-ai-era-the-end-of-coding-and-the-dawn-of-a-new-engineering",
+          "text": "How Should Programmers Survive in the AI Era? The End of Coding and the Dawn of a New Engineering"
+        },
+        {
+          "id": "1-the-history-of-abstraction-and-the-redefinition-of-programming",
+          "text": "1. The History of Abstraction and the Redefinition of “Programming”"
+        },
+        {
+          "id": "2-a-mathematical-model-of-productivity-riding-the-wave-of-exponential-growth",
+          "text": "2. A Mathematical Model of Productivity: Riding the Wave of Exponential Growth"
+        },
+        {
+          "id": "3-probability-of-automation",
+          "text": "3. Probability of Automation"
+        },
+        {
+          "id": "4-return-from-syntax-to-architecture-structure",
+          "text": "4. Return from Syntax to Architecture (Structure)"
+        },
+        {
+          "id": "5-requirements-engineering-is-the-true-prompt-engineeringhttpskenjiblogenplarge-language-models-llm-transformer-prompt-engineering",
+          "text": "5. Requirements Engineering is the “True Prompt Engineering”"
+        },
+        {
+          "id": "6-the-overwhelming-advantage-of-domain-knowledge",
+          "text": "6. The Overwhelming Advantage of Domain Knowledge"
+        },
+        {
+          "id": "7-the-trolley-problem-of-software-development-who-takes-responsibility",
+          "text": "7. The “Trolley Problem” of Software Development: Who Takes Responsibility?"
+        },
+        {
+          "id": "8-ai-pair-programming-and-cognitive-load-management",
+          "text": "8. AI Pair Programming and Cognitive Load Management"
+        },
+        {
+          "id": "9-concrete-survival-strategy-what-you-should-learn-starting-tomorrow",
+          "text": "9. Concrete Survival Strategy: What You Should Learn Starting Tomorrow"
+        },
+        {
+          "id": "conclusion-do-not-fear-ride-the-wave",
+          "text": "Conclusion: Do Not Fear, Ride the Wave"
+        }
+      ],
+      "paragraphs": [
+        "As of 2026, the field of software development is undergoing a period of unprecedented and dramatic change. Until just a few years ago, the concept of “AI writing code” was limited to the role of an “auxiliary tool” for programmers, such as generating boilerplate code or auto-completing functions at best. However, due to the astonishing evolution of Large Language Models (LLMs), the situation has been fundamentally overturned. Modern AI is not just a “smart typewriter,” but has transformed into an “autonomous junior engineer” capable of autonomously assembling an entire system in an instant, from front-end to back-end logic, database schema design, and even building CI/CD pipelines, given a requirements definition document.",
+        "In such an era, how should we “programmers” or “software engineers” survive? As the economic value of the act of “writing code” itself rapidly deflates, a “coder” who merely knows the syntax of a specific programming language and is familiar with the APIs of a specific framework is rapidly being weeded out from the market.",
+        "In this article, we will examine the survival strategy for programmers in the AI era in extreme detail from technical, mathematical, and philosophical perspectives. This is not merely a career theory, but a redefinition of the academic discipline of software engineering itself.",
+        "Looking back at the history of software engineering, it is clear that it has always been a history of “Abstraction.” We have constantly built layers to describe more complex systems in languages closer to human understanding.",
+        "Early computer scientists used punch cards to directly manipulate the physical switches of hardware, giving instructions to computers in machine language (a sequence of 0s and 1s). Later, assembly languages emerged, allowing humans to operate hardware using mnemonics that were easier to understand. As time progressed, high-level languages like C and Fortran appeared, successfully encapsulating complex hardware details such as memory management and CPU registers. With the subsequent emergence of modern languages like Java, Python, Ruby, and TypeScript, programmers could focus more on “What” they wanted the computer to do, rather than “How” to make the computer operate.",
+        "The advent of AI (LLMs) is the latest and greatest paradigm shift in this history of abstraction. If the evolution of programming languages was the “hiding of hardware,” the evolution of LLMs is the “hiding of syntax.”",
+        "The era where developers operated pointers while worrying about memory leaks, or wrote hundreds of lines of boilerplate code to parse JSON, is over. Using natural language (such as English or Japanese), the language with the highest level of abstraction for humanity, to define systems has become the standard of “programming” in 2026.",
+        "Let’s quantitatively evaluate the productivity improvement brought about by AI using a mathematical model. Individual productivity in traditional software development, \n𝑃\n𝑡\n𝑟\n𝑎\n𝑑\n𝑖\n𝑡\n𝑖\n𝑜\n𝑛\n𝑎\n𝑙\nP\ntraditional\n\t​\n\n, could be modeled as a linear combination of an individual’s skill level \n𝑆\nS, domain experience \n𝐸\nE, and tool efficiency \n𝑇\nT.",
+        "However, in modern development utilizing AI, the capability of AI, \n𝐴\n(\n𝑡\n)\nA(t), acts as a “powerful multiplier (Leverage)” that amplifies human capabilities. Because AI capabilities grow exponentially over time \n𝑡\nt (an AI version of Moore’s Law), productivity in the AI era, \n𝑃\n𝐴\n𝐼\n(\n𝑡\n)\nP\nAI\n\t​\n\n(t), can be expressed by the following equation:",
+        "Here, each variable means the following:",
+        "The important insight derived from this formula is that in a world where \n𝐴\n(\n𝑡\n)\nA(t) increases exponentially, traditional skills such as mere typing speed or memorization of a specific language have extremely little impact on overall productivity. Instead, the coefficient \n𝛽\nβ to multiply the exponential growth of AI, and \n𝑆\n𝑐\n𝑜\n𝑟\n𝑒\nS\ncore\n\t​\n\n, which is the domain that AI cannot cover, become the dominant factors determining an engineer’s market value.",
+        "So, what kind of tasks will be automated, and what tasks will remain in human hands? The probability that a certain task \n𝑇\nT will be completely automated by AI, \n𝑃\n𝑎\n𝑢\n𝑡\n𝑜\n(\n𝑇\n)\nP\nauto\n\t​\n\n(T), can be formulated as follows:",
+        "Tasks with high predictability and low context dependency, such as writing API routing logic or creating a simple CRUD screen, will have \n𝑃\n𝑎\n𝑢\n𝑡\n𝑜\n≈\n1\nP\nauto\n\t​\n\n≈1 and be almost completely automated. On the other hand, tasks with extremely high context dependency, such as “how to safely integrate a new microservice with an existing legacy system” or “how to design an authentication flow that satisfies the legal department’s requirements without compromising the user experience,” are difficult to automate.",
+        "Clearly separating what AI is good at and what humans are good at is an absolute condition for survival.",
+        "AI surpasses humans in “local optimization.” There is no way humans can compete with the speed and accuracy of writing a single function, a single class, or a single module. However, AI is extremely vulnerable to “global optimization” and “Missing Context.”",
+        "Future programmers must change their roles from “workers who write code” to “architects who orchestrate the countless components generated by AI.” Having a bird’s-eye view of the entire system, where to draw microservice boundaries, how to resolve the trade-off between availability and consistency in the CAP theorem according to the business context, and how to control technical debt. These are highly intellectual tasks that can only be done by humans who understand the big picture and business goals.",
+        "The term “prompt engineering,” which we hear a lot lately, is often misunderstood as a “hack to trick AI into getting the desired output.” However, the essence of prompt engineering in software development is undeniably “advanced Requirements Engineering.”",
+        "In order to give instructions to AI in natural language and have it output the intended software, the following elements must be strictly verbalized:",
+        "Vague instructions (prompts) can only produce vague and fragile systems. The ability to deeply interview “what the customer really wanted,” sort out conflicting requirements, and create a logically sound specification document (prompt). This is the ultimate “coding skill” in the AI era. Programmers will spend more time facing Notion or Markdown files instead of code editors, elaborately describing what a system should look like in text.",
+        "Because AI has trained on open-source code and public documents from around the world, it is well-versed in general web technologies and algorithms. However, there is data that AI cannot access. That is “your company’s unique business rules” and “domain knowledge deeply rooted in a specific industry (medical, financial, manufacturing, etc.).”",
+        "For example, suppose you are developing an electronic medical record system at a medical startup. AI knows “how to create a tabular UI in React” and the “general data structure of HL7 FHIR.” However, it has not learned the tacit knowledge of “in what order doctors at a specific department of Hospital A view patient data, and what kind of UI can minimize the risk of medical errors.”",
+        "In a world where technology itself becomes commoditized (general-purpose), the true value of an engineer is born at the intersection of “technology” and “business domain.” Rather than competing on technical skills alone, the market will be driven by those who possess deep expertise in a specific domain—such as medical, financial, logistics, or entertainment—and can solve the challenges of that domain using the powerful tool of AI.",
+        "As reliance on AI increases, we face serious philosophical and ethical issues. This is the problem of “where responsibility lies” in software engineering.",
+        "If the code autonomously generated by AI causes a serious bug in a production environment, resulting in hundreds of millions of yen in losses for a company, or causes a malfunction in a life-critical medical system, who will take the responsibility? The company that developed the AI model? Or the engineer who input the prompt? You cannot “fire” or “arrest” AI.",
+        "The role of “human” as the entity that assumes “Accountability (legal and ethical responsibility)” for the impact a system has on society will never disappear, no matter how much technology advances. Rather, as the code generation process becomes more black-boxed, humans will bear a heavier responsibility as the “Approver” and “Supervisor” of the system.",
+        "Auditing whether the architecture or code proposed by AI meets security standards, whether there are ethical issues (e.g., whether it contains bias), and whether it complies with regulations, and then giving the final GO sign. This act of “taking responsibility” itself will become an important part of an engineer’s job.",
+        "When working alongside AI, the nature of human “Cognitive Load” is also changing. The cognitive load of writing code from scratch is completely different from the cognitive load of “reading and reviewing” hundreds of lines of unknown code generated by AI.",
+        "According to cognitive load theory in psychology, human working memory is quickly depleted when processing complex information that does not match existing schemas (knowledge structures in the brain). While the code generated by AI sometimes contains advanced optimizations that humans might not think of, it can also contain “hallucinations” that ignore the context.",
+        "To prevent this, it is necessary to systematize the review process for AI.",
+        "More than the skill of “writing,” humans need to push their skills of “Code Reading & Auditing (reading quickly and instantly spotting logical flaws)” to the limit. The importance of Test-Driven Development (TDD) has increased even further in the AI era. Before letting AI write code, the mainstream approach will be for a human or another AI to write strict test code, and then have AI modify the code until it passes those tests.",
+        "Based on the analysis so far, here is a concrete action plan for programmers to survive in the AI era.",
+        "The automation of programming by AI does not mean the “death” of the programmer profession. Rather, it is a “Renaissance” that liberates us from the “non-essential labor” in software development, such as fixing typos, troubleshooting environment setups, and writing boring boilerplate.",
+        "Historically, when automated looms appeared, and when spreadsheet software (Excel) appeared, pessimism about jobs disappearing was rampant. However, the reality is that the dramatic increase in productivity created new demands, and more advanced jobs were born. The same thing will happen in the software world. By making it possible to “build systems cheaply,” software will penetrate into every area that had not been IT-enabled before due to cost constraints, and the problems (What) that engineers should solve will expand infinitely.",
+        "We programmers are now given the chance to evolve from craftsmen who write code to “orchestra conductors” who direct the mighty intelligence of AI. Instead of staying on the shore out of fear of the technological wave, let’s ride that wave early and set sail on a journey to create larger, more valuable systems. The AI era is the era when “engineering” in the truest sense begins."
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/how-programmers-survive-in-ai-era/img/eyecatch_hu1840675025826750370.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 25,
+      "mathErrors": 0,
+      "diagrams": 3,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Tech Career",
+          "path": "/en/categories/tech-career/"
+        },
+        {
+          "text": "AI",
+          "path": "/en/categories/ai/"
+        },
+        {
+          "text": "Software Engineering",
+          "path": "/en/categories/software-engineering/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "How Should Programmers Survive in the AI Era?",
+          "path": "/en/p/how-programmers-survive-in-ai-era/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Large Language Models",
+          "path": "/en/p/large-language-models-llm-transformer-prompt-engineering/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "CI/CD",
+          "path": "/en/p/cicd-pipeline-github-actions-best-practices/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Java",
+          "path": "/en/p/programming-languages-history-paradigm-evolution/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "pointers",
+          "path": "/en/p/c-language-pointers-memory-management-stack-heap/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "Moore’s Law",
+          "path": "/en/p/business-moores-law/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "Prompt Engineering",
+          "path": "/en/p/large-language-models-llm-transformer-prompt-engineering/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "TCP",
+          "path": "/en/p/http3-quic-protocol-tcp-udp/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "B-Tree",
+          "path": "/en/p/b-tree-database-index-theory/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Distributed System",
+          "path": "/en/p/cap-theorem-distributed-systems/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "IaC",
+          "path": "/en/p/iac-infrastructure-as-code-terraform/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "Infrastructure as Code",
+          "path": "/en/p/iac-infrastructure-as-code-terraform/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "Terraform",
+          "path": "/en/p/iac-infrastructure-as-code-terraform/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Go",
+          "path": "/en/p/programming-languages-history-paradigm-evolution/",
+          "host": "kenji.blog"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "𝛼\nα: The baseline human productivity coefficient",
+        "𝑆\n𝑐\n𝑜\n𝑟\n𝑒\nS\ncore\n\t​\n\n: “Core human skills” that cannot be replaced by AI (architecture design, understanding business requirements, ethical judgment, etc.)",
+        "𝐴\n(\n𝑡\n)\nA(t): The absolute capability of the AI model at time \n𝑡\nt (number of parameters, context window, reasoning ability)",
+        "𝛽\nβ: A coefficient indicating how effectively AI tools can be utilized (the quality of prompt engineering and the refinement of collaborative workflows with AI)",
+        "Predictability\n(\n𝑇\n)\nPredictability(T): The predictability of the task (how much of a pattern exists in past data)",
+        "Complexity\n(\n𝑇\n)\nComplexity(T): The complexity of the task",
+        "Context Dependency\n(\n𝑇\n)\nContext Dependency(T): The strength of “implicit context (domain-specific knowledge or human relationships)” that the task depends on",
+        "𝜆\nλ: The rate of technological advancement of AI",
+        "Purpose (Why): Why is this feature needed? What is the business value?",
+        "Constraints: Performance requirements (latency, throughput), security requirements, cost constraints.",
+        "Edge Cases: Fallback processing when the user provides unexpected input.",
+        "Interfaces: Integration specifications with existing systems.",
+        "Thoroughly Relearn the “Fundamentals” of Technology: You can leave the usage of frameworks to AI. However, a deep understanding of how OS works, network protocols (TCP/IP, HTTP/3), internal database structures (B-Tree, transaction isolation levels), and data structures and algorithms is absolutely necessary. To judge whether AI’s output is correct, a solid foundation in computer science is indispensable.",
+        "Master Cloud Architecture and Distributed Systems: Focus on how to combine cloud resources like AWS, GCP, and Azure to build scalable systems, rather than individual pieces of code. Understand the concept of IaC (Infrastructure as Code) such as Terraform, and cultivate the ability to design an entire system as code.",
+        "Become an Expert in a Business Domain: Deeply study the business models, legal regulations, and behavioral psychology of the users in the industry you belong to. Go beyond the boundaries of an engineer and acquire a perspective closer to that of a Product Manager (PM).",
+        "Polish Communication and Facilitation Skills: The process of resolving the “ambiguity” between humans and building consensus cannot be replaced by AI. Soft skills to communicate with stakeholders and discover real issues will become the most valuable skills.",
+        "Use AI to the Fullest as a “Colleague”: Do not fear the evolution of AI tools, but utilize them as your most powerful weapons. Use the latest LLMs and AI coding agents on a daily basis to accumulate the “tacit knowledge” of where AI fails and how to tweak prompts to draw out the best performance."
+      ],
+      "headings": [
+        {
+          "id": "how-should-programmers-survive-in-the-ai-erahttpskenjiblogenphow-programmers-survive-in-ai-era-the-end-of-coding-and-the-dawn-of-a-new-engineering",
+          "text": "How Should Programmers Survive in the AI Era? The End of Coding and the Dawn of a New Engineering"
+        },
+        {
+          "id": "1-the-history-of-abstraction-and-the-redefinition-of-programming",
+          "text": "1. The History of Abstraction and the Redefinition of “Programming”"
+        },
+        {
+          "id": "2-a-mathematical-model-of-productivity-riding-the-wave-of-exponential-growth",
+          "text": "2. A Mathematical Model of Productivity: Riding the Wave of Exponential Growth"
+        },
+        {
+          "id": "3-probability-of-automation",
+          "text": "3. Probability of Automation"
+        },
+        {
+          "id": "4-return-from-syntax-to-architecture-structure",
+          "text": "4. Return from Syntax to Architecture (Structure)"
+        },
+        {
+          "id": "5-requirements-engineering-is-the-true-prompt-engineeringhttpskenjiblogenplarge-language-models-llm-transformer-prompt-engineering",
+          "text": "5. Requirements Engineering is the “True Prompt Engineering”"
+        },
+        {
+          "id": "6-the-overwhelming-advantage-of-domain-knowledge",
+          "text": "6. The Overwhelming Advantage of Domain Knowledge"
+        },
+        {
+          "id": "7-the-trolley-problem-of-software-development-who-takes-responsibility",
+          "text": "7. The “Trolley Problem” of Software Development: Who Takes Responsibility?"
+        },
+        {
+          "id": "8-ai-pair-programming-and-cognitive-load-management",
+          "text": "8. AI Pair Programming and Cognitive Load Management"
+        },
+        {
+          "id": "9-concrete-survival-strategy-what-you-should-learn-starting-tomorrow",
+          "text": "9. Concrete Survival Strategy: What You Should Learn Starting Tomorrow"
+        },
+        {
+          "id": "conclusion-do-not-fear-ride-the-wave",
+          "text": "Conclusion: Do Not Fear, Ride the Wave"
+        }
+      ],
+      "paragraphs": [
+        "As of 2026, the field of software development is undergoing a period of unprecedented and dramatic change. Until just a few years ago, the concept of “AI writing code” was limited to the role of an “auxiliary tool” for programmers, such as generating boilerplate code or auto-completing functions at best. However, due to the astonishing evolution of Large Language Models (LLMs), the situation has been fundamentally overturned. Modern AI is not just a “smart typewriter,” but has transformed into an “autonomous junior engineer” capable of autonomously assembling an entire system in an instant, from front-end to back-end logic, database schema design, and even building CI/CD pipelines, given a requirements definition document.",
+        "In such an era, how should we “programmers” or “software engineers” survive? As the economic value of the act of “writing code” itself rapidly deflates, a “coder” who merely knows the syntax of a specific programming language and is familiar with the APIs of a specific framework is rapidly being weeded out from the market.",
+        "In this article, we will examine the survival strategy for programmers in the AI era in extreme detail from technical, mathematical, and philosophical perspectives. This is not merely a career theory, but a redefinition of the academic discipline of software engineering itself.",
+        "Looking back at the history of software engineering, it is clear that it has always been a history of “Abstraction.” We have constantly built layers to describe more complex systems in languages closer to human understanding.",
+        "Early computer scientists used punch cards to directly manipulate the physical switches of hardware, giving instructions to computers in machine language (a sequence of 0s and 1s). Later, assembly languages emerged, allowing humans to operate hardware using mnemonics that were easier to understand. As time progressed, high-level languages like C and Fortran appeared, successfully encapsulating complex hardware details such as memory management and CPU registers. With the subsequent emergence of modern languages like Java, Python, Ruby, and TypeScript, programmers could focus more on “What” they wanted the computer to do, rather than “How” to make the computer operate.",
+        "The advent of AI (LLMs) is the latest and greatest paradigm shift in this history of abstraction. If the evolution of programming languages was the “hiding of hardware,” the evolution of LLMs is the “hiding of syntax.”",
+        "The era where developers operated pointers while worrying about memory leaks, or wrote hundreds of lines of boilerplate code to parse JSON, is over. Using natural language (such as English or Japanese), the language with the highest level of abstraction for humanity, to define systems has become the standard of “programming” in 2026.",
+        "Let’s quantitatively evaluate the productivity improvement brought about by AI using a mathematical model. Individual productivity in traditional software development, \n𝑃\n𝑡\n𝑟\n𝑎\n𝑑\n𝑖\n𝑡\n𝑖\n𝑜\n𝑛\n𝑎\n𝑙\nP\ntraditional\n\t​\n\n, could be modeled as a linear combination of an individual’s skill level \n𝑆\nS, domain experience \n𝐸\nE, and tool efficiency \n𝑇\nT.",
+        "However, in modern development utilizing AI, the capability of AI, \n𝐴\n(\n𝑡\n)\nA(t), acts as a “powerful multiplier (Leverage)” that amplifies human capabilities. Because AI capabilities grow exponentially over time \n𝑡\nt (an AI version of Moore’s Law), productivity in the AI era, \n𝑃\n𝐴\n𝐼\n(\n𝑡\n)\nP\nAI\n\t​\n\n(t), can be expressed by the following equation:",
+        "Here, each variable means the following:",
+        "The important insight derived from this formula is that in a world where \n𝐴\n(\n𝑡\n)\nA(t) increases exponentially, traditional skills such as mere typing speed or memorization of a specific language have extremely little impact on overall productivity. Instead, the coefficient \n𝛽\nβ to multiply the exponential growth of AI, and \n𝑆\n𝑐\n𝑜\n𝑟\n𝑒\nS\ncore\n\t​\n\n, which is the domain that AI cannot cover, become the dominant factors determining an engineer’s market value.",
+        "So, what kind of tasks will be automated, and what tasks will remain in human hands? The probability that a certain task \n𝑇\nT will be completely automated by AI, \n𝑃\n𝑎\n𝑢\n𝑡\n𝑜\n(\n𝑇\n)\nP\nauto\n\t​\n\n(T), can be formulated as follows:",
+        "Tasks with high predictability and low context dependency, such as writing API routing logic or creating a simple CRUD screen, will have \n𝑃\n𝑎\n𝑢\n𝑡\n𝑜\n≈\n1\nP\nauto\n\t​\n\n≈1 and be almost completely automated. On the other hand, tasks with extremely high context dependency, such as “how to safely integrate a new microservice with an existing legacy system” or “how to design an authentication flow that satisfies the legal department’s requirements without compromising the user experience,” are difficult to automate.",
+        "Clearly separating what AI is good at and what humans are good at is an absolute condition for survival.",
+        "AI surpasses humans in “local optimization.” There is no way humans can compete with the speed and accuracy of writing a single function, a single class, or a single module. However, AI is extremely vulnerable to “global optimization” and “Missing Context.”",
+        "Future programmers must change their roles from “workers who write code” to “architects who orchestrate the countless components generated by AI.” Having a bird’s-eye view of the entire system, where to draw microservice boundaries, how to resolve the trade-off between availability and consistency in the CAP theorem according to the business context, and how to control technical debt. These are highly intellectual tasks that can only be done by humans who understand the big picture and business goals.",
+        "The term “prompt engineering,” which we hear a lot lately, is often misunderstood as a “hack to trick AI into getting the desired output.” However, the essence of prompt engineering in software development is undeniably “advanced Requirements Engineering.”",
+        "In order to give instructions to AI in natural language and have it output the intended software, the following elements must be strictly verbalized:",
+        "Vague instructions (prompts) can only produce vague and fragile systems. The ability to deeply interview “what the customer really wanted,” sort out conflicting requirements, and create a logically sound specification document (prompt). This is the ultimate “coding skill” in the AI era. Programmers will spend more time facing Notion or Markdown files instead of code editors, elaborately describing what a system should look like in text.",
+        "Because AI has trained on open-source code and public documents from around the world, it is well-versed in general web technologies and algorithms. However, there is data that AI cannot access. That is “your company’s unique business rules” and “domain knowledge deeply rooted in a specific industry (medical, financial, manufacturing, etc.).”",
+        "For example, suppose you are developing an electronic medical record system at a medical startup. AI knows “how to create a tabular UI in React” and the “general data structure of HL7 FHIR.” However, it has not learned the tacit knowledge of “in what order doctors at a specific department of Hospital A view patient data, and what kind of UI can minimize the risk of medical errors.”",
+        "In a world where technology itself becomes commoditized (general-purpose), the true value of an engineer is born at the intersection of “technology” and “business domain.” Rather than competing on technical skills alone, the market will be driven by those who possess deep expertise in a specific domain—such as medical, financial, logistics, or entertainment—and can solve the challenges of that domain using the powerful tool of AI.",
+        "As reliance on AI increases, we face serious philosophical and ethical issues. This is the problem of “where responsibility lies” in software engineering.",
+        "If the code autonomously generated by AI causes a serious bug in a production environment, resulting in hundreds of millions of yen in losses for a company, or causes a malfunction in a life-critical medical system, who will take the responsibility? The company that developed the AI model? Or the engineer who input the prompt? You cannot “fire” or “arrest” AI.",
+        "The role of “human” as the entity that assumes “Accountability (legal and ethical responsibility)” for the impact a system has on society will never disappear, no matter how much technology advances. Rather, as the code generation process becomes more black-boxed, humans will bear a heavier responsibility as the “Approver” and “Supervisor” of the system.",
+        "Auditing whether the architecture or code proposed by AI meets security standards, whether there are ethical issues (e.g., whether it contains bias), and whether it complies with regulations, and then giving the final GO sign. This act of “taking responsibility” itself will become an important part of an engineer’s job.",
+        "When working alongside AI, the nature of human “Cognitive Load” is also changing. The cognitive load of writing code from scratch is completely different from the cognitive load of “reading and reviewing” hundreds of lines of unknown code generated by AI.",
+        "According to cognitive load theory in psychology, human working memory is quickly depleted when processing complex information that does not match existing schemas (knowledge structures in the brain). While the code generated by AI sometimes contains advanced optimizations that humans might not think of, it can also contain “hallucinations” that ignore the context.",
+        "To prevent this, it is necessary to systematize the review process for AI.",
+        "More than the skill of “writing,” humans need to push their skills of “Code Reading & Auditing (reading quickly and instantly spotting logical flaws)” to the limit. The importance of Test-Driven Development (TDD) has increased even further in the AI era. Before letting AI write code, the mainstream approach will be for a human or another AI to write strict test code, and then have AI modify the code until it passes those tests.",
+        "Based on the analysis so far, here is a concrete action plan for programmers to survive in the AI era.",
+        "The automation of programming by AI does not mean the “death” of the programmer profession. Rather, it is a “Renaissance” that liberates us from the “non-essential labor” in software development, such as fixing typos, troubleshooting environment setups, and writing boring boilerplate.",
+        "Historically, when automated looms appeared, and when spreadsheet software (Excel) appeared, pessimism about jobs disappearing was rampant. However, the reality is that the dramatic increase in productivity created new demands, and more advanced jobs were born. The same thing will happen in the software world. By making it possible to “build systems cheaply,” software will penetrate into every area that had not been IT-enabled before due to cost constraints, and the problems (What) that engineers should solve will expand infinitely.",
+        "We programmers are now given the chance to evolve from craftsmen who write code to “orchestra conductors” who direct the mighty intelligence of AI. Instead of staying on the shore out of fear of the technological wave, let’s ride that wave early and set sail on a journey to create larger, more valuable systems. The AI era is the era when “engineering” in the truest sense begins."
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/how-programmers-survive-in-ai-era/img/eyecatch_hu1840675025826750370.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 25,
+      "mathErrors": 0,
+      "diagrams": 3,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Tech Career",
+          "path": "/en/categories/tech-career/"
+        },
+        {
+          "text": "AI",
+          "path": "/en/categories/ai/"
+        },
+        {
+          "text": "Software Engineering",
+          "path": "/en/categories/software-engineering/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "How Should Programmers Survive in the AI Era?",
+          "path": "/en/p/how-programmers-survive-in-ai-era/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Large Language Models",
+          "path": "/en/p/large-language-models-llm-transformer-prompt-engineering/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "CI/CD",
+          "path": "/en/p/cicd-pipeline-github-actions-best-practices/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Java",
+          "path": "/en/p/programming-languages-history-paradigm-evolution/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "pointers",
+          "path": "/en/p/c-language-pointers-memory-management-stack-heap/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "Moore’s Law",
+          "path": "/en/p/business-moores-law/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "Prompt Engineering",
+          "path": "/en/p/large-language-models-llm-transformer-prompt-engineering/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Test-Driven Development",
+          "path": "/en/p/test-driven-development-tdd-bdd/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "TCP",
+          "path": "/en/p/http3-quic-protocol-tcp-udp/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "B-Tree",
+          "path": "/en/p/b-tree-database-index-theory/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Distributed System",
+          "path": "/en/p/cap-theorem-distributed-systems/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "IaC",
+          "path": "/en/p/iac-infrastructure-as-code-terraform/",
+          "host": "127.0.0.1"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "008-ai-career-ja-en-de",
+    "language": "de",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "𝛼\nα: Basiskoeffizient der menschlichen Produktivität",
+        "𝑆\n𝑐\n𝑜\n𝑟\n𝑒\nS\ncore\n\t​\n\n: “Menschliche Kernkompetenzen”, die nicht durch KI ersetzt werden können (z.B. Architekturdesign, Verständnis von Geschäftsanforderungen, ethisches Urteilsvermögen)",
+        "𝐴\n(\n𝑡\n)\nA(t): Absolute Leistungsfähigkeit des KI-Modells zum Zeitpunkt \n𝑡\nt (Parameteranzahl, Kontextfenster, Schlussfolgerungsfähigkeit)",
+        "𝛽\nβ: Ein Koeffizient, der angibt, wie effektiv KI-Werkzeuge genutzt werden können (Qualität des Prompt-Engineerings, Raffinesse des kollaborativen Workflows mit der KI)",
+        "Predictability\n(\n𝑇\n)\nPredictability(T): Vorhersehbarkeit der Aufgabe (wie viele Muster in historischen Daten vorhanden sind)",
+        "Complexity\n(\n𝑇\n)\nComplexity(T): Komplexität der Aufgabe",
+        "Context Dependency\n(\n𝑇\n)\nContext Dependency(T): Stärke des “impliziten Kontexts” (domänenspezifisches Wissen oder menschliche Beziehungen), von dem die Aufgabe abhängt",
+        "𝜆\nλ: Technologische Fortschrittsrate der KI",
+        "Zweck (Why): Warum wird diese Funktion benötigt? Was ist der geschäftliche Wert?",
+        "Einschränkungen (Constraints): Leistungsanforderungen (Latenz, Durchsatz), Sicherheitsanforderungen, Kostenbeschränkungen.",
+        "Sonderfälle (Edge Cases): Fallback-Verarbeitung, wenn der Benutzer unerwartete Eingaben vornimmt.",
+        "Schnittstellen (Interfaces): Spezifikationen für die Integration in bestehende Systeme.",
+        "Die “Grundlagen” der Technologie von Grund auf neu lernen: Die Verwendung von Frameworks kann man der KI überlassen. Ein tiefgreifendes Verständnis der Funktionsweise von Betriebssystemen, Netzwerkprotokollen (TCP/IP, HTTP/3), internen Datenbankstrukturen (B-Tree, Transaktionsisolationsstufen) sowie Datenstrukturen und Algorithmen ist jedoch absolut notwendig. Ein solides Fundament in der Informatik ist unerlässlich, um zu beurteilen, ob die Ausgabe der KI korrekt ist.",
+        "Cloud-Architekturen und verteilte Systeme meistern: Anstatt sich auf einzelnen Code zu konzentrieren, sollten Sie sich darauf fokussieren, wie Sie Cloud-Ressourcen wie AWS, GCP und Azure kombinieren können, um skalierbare Systeme aufzubauen. Verstehen Sie Konzepte von IaC (Infrastructure as Code) wie Terraform und entwickeln Sie die Fähigkeit, ganze Systeme als Code zu entwerfen.",
+        "Ein Experte für Geschäftsdomänen werden: Lernen Sie das Geschäftsmodell, die rechtlichen Rahmenbedingungen und die Verhaltenspsychologie der Benutzer in Ihrer Branche intensiv kennen. Gehen Sie über die Grenzen eines Ingenieurs hinaus und nehmen Sie eine Perspektive ein, die der eines Produktmanagers (PM) nahekommt.",
+        "Kommunikations- und Moderationsfähigkeiten verbessern: Der Prozess der Lösung von “Mehrdeutigkeiten” zwischen Menschen und der Konsensbildung kann nicht durch KI ersetzt werden. Soft Skills im Dialog mit Stakeholdern und zur Identifizierung der wahren Probleme werden zu den wertvollsten Fähigkeiten.",
+        "KI als “Kollegen” voll ausschöpfen: Anstatt sich vor der Entwicklung von KI-Werkzeugen zu fürchten, nutzen Sie sie als Ihre stärkste Waffe. Verwenden Sie im Alltag die neuesten LLMs und KI-Coding-Agenten und sammeln Sie das “implizite Wissen” darüber, wo die KI scheitert und wie Sie Prompts gestalten müssen, um die beste Leistung aus ihr herauszuholen."
+      ],
+      "headings": [
+        {
+          "id": "wie-sollten-programmierer-im-ki-zeitalter-überleben-das-ende-des-codings-und-der-beginn-eines-neuen-engineerings",
+          "text": "Wie sollten Programmierer im KI-Zeitalter überleben? Das Ende des Codings und der Beginn eines neuen Engineerings"
+        },
+        {
+          "id": "1-die-geschichte-der-abstraktion-und-die-neudefinition-des-programmierens",
+          "text": "1. Die Geschichte der Abstraktion und die Neudefinition des “Programmierens”"
+        },
+        {
+          "id": "2-das-mathematische-modell-der-produktivität-auf-der-welle-des-exponentiellen-wachstums-reiten",
+          "text": "2. Das mathematische Modell der Produktivität: Auf der Welle des exponentiellen Wachstums reiten"
+        },
+        {
+          "id": "3-wahrscheinlichkeit-der-aufgabenautomatisierung-probability-of-automation",
+          "text": "3. Wahrscheinlichkeit der Aufgabenautomatisierung (Probability of Automation)"
+        },
+        {
+          "id": "4-rückkehr-von-der-syntax-grammatik-zur-architektur-struktur",
+          "text": "4. Rückkehr von der Syntax (Grammatik) zur Architektur (Struktur)"
+        },
+        {
+          "id": "5-anforderungsdefinition-ist-das-wahre-prompt-engineering",
+          "text": "5. Anforderungsdefinition ist das “wahre Prompt-Engineering”"
+        },
+        {
+          "id": "6-die-überwältigende-überlegenheit-von-domänenwissen-domain-knowledge",
+          "text": "6. Die überwältigende Überlegenheit von Domänenwissen (Domain Knowledge)"
+        },
+        {
+          "id": "7-das-trolley-problem-der-softwareentwicklung-wer-übernimmt-die-verantwortung",
+          "text": "7. Das “Trolley-Problem” der Softwareentwicklung: Wer übernimmt die Verantwortung?"
+        },
+        {
+          "id": "8-ki-pair-programming-und-das-management-der-kognitiven-belastung-cognitive-load",
+          "text": "8. KI-Pair-Programming und das Management der kognitiven Belastung (Cognitive Load)"
+        },
+        {
+          "id": "9-konkrete-überlebensstrategien-was-sie-ab-morgen-lernen-sollten",
+          "text": "9. Konkrete Überlebensstrategien: Was Sie ab morgen lernen sollten"
+        },
+        {
+          "id": "fazit-keine-angst-reiten-sie-die-welle",
+          "text": "Fazit: Keine Angst, reiten Sie die Welle"
+        }
+      ],
+      "paragraphs": [
+        "Im Jahr 2026 befindet sich die Softwareentwicklung in einer beispiellosen Phase des Umbruchs. Bis vor wenigen Jahren beschränkte sich das Konzept “KI schreibt Code” bestenfalls auf die Generierung von Boilerplate-Code (Standardcode) und die automatische Vervollständigung von Funktionen – als “Hilfswerkzeug” für Programmierer. Doch durch die erstaunliche Entwicklung von Large Language Models (LLMs) hat sich die Situation grundlegend geändert. Die moderne KI ist nicht mehr nur eine “schlaue Schreibmaschine”, sondern hat sich zu einem “autonomen Junior-Engineer” entwickelt: Wenn man ihr ein Anforderungsdokument gibt, ist sie in der Lage, autonom und in Sekundenschnelle ein komplettes System aufzubauen – von der Frontend- und Backend-Logik über das Datenbankschema-Design bis hin zur Einrichtung von CI/CD-Pipelines.",
+        "Wie sollten wir “Programmierer” und “Software-Ingenieure” in einem solchen Zeitalter überleben? Während der wirtschaftliche Wert des bloßen “Code-Schreibens” rapide abnimmt, werden “Coder”, die lediglich die Syntax einer bestimmten Programmiersprache kennen und mit der API eines bestimmten Frameworks vertraut sind, schnell vom Markt verdrängt.",
+        "In diesem Artikel werden wir die Überlebensstrategien für Programmierer im KI-Zeitalter aus technischen, mathematischen und philosophischen Perspektiven sehr detailliert untersuchen. Dies ist nicht nur eine Karrieredebatte, sondern eine Neudefinition der Disziplin des Software Engineerings selbst.",
+        "Wenn wir auf die Geschichte des Software Engineerings zurückblicken, erkennen wir, dass es immer eine Geschichte der “Abstraktion” war. Wir haben stets Schichten (Layer) aufgebaut, um komplexere Systeme in einer menschenähnlicheren Sprache beschreiben zu können.",
+        "Frühe Informatiker verwendeten Lochkarten, um physische Hardware-Schalter direkt zu bedienen, und gaben dem Computer Anweisungen in Maschinensprache (einer Reihe von 0en und 1en). Später erschien die Assemblersprache, die es ermöglichte, Hardware mit menschenlesbaren Mnemonics zu steuern. Im Laufe der Zeit kamen höhere Programmiersprachen wie C und Fortran auf, denen es gelang, komplexe Hardware-Details wie Speicherverwaltung und CPU-Register zu kapseln. Moderne Sprachen wie Java, Python, Ruby und TypeScript ermöglichten es Programmierern schließlich, sich mehr darauf zu konzentrieren, “was der Computer tun soll (What)”, anstatt “wie der Computer es tun soll (How)”.",
+        "Das Aufkommen von KI (LLMs) ist der neueste und größte Paradigmenwechsel in dieser Geschichte der Abstraktion. Wenn die Evolution von Programmiersprachen das “Verbergen von Hardware” war, dann ist die Evolution von LLMs das “Verbergen von Syntax (Grammatik)”.",
+        "Die Zeit, in der Entwickler sich um Speicherlecks sorgen, Zeiger manipulieren oder Hunderte von Zeilen Standardcode für das Parsen von JSON schreiben mussten, ist vorbei. Die Verwendung natürlicher Sprache (wie Deutsch oder Englisch) – der für die Menschheit am höchsten abstrahierten Sprache – zur Definition von Systemen ist zum Standard des “Programmierens” im Jahr 2026 geworden.",
+        "Lassen Sie uns die durch KI bedingte Produktivitätssteigerung quantitativ anhand eines mathematischen Modells bewerten. Die individuelle Produktivität in der traditionellen Softwareentwicklung \n𝑃\n𝑡\n𝑟\n𝑎\n𝑑\n𝑖\n𝑡\n𝑖\n𝑜\n𝑛\n𝑎\n𝑙\nP\ntraditional\n\t​\n\n konnte als lineare Kombination aus individuellem Qualifikationsniveau \n𝑆\nS, Domänenerfahrung \n𝐸\nE und Werkzeugeffizienz \n𝑇\nT modelliert werden.",
+        "In der modernen, KI-gestützten Entwicklung wirkt die Fähigkeit der KI \n𝐴\n(\n𝑡\n)\nA(t) jedoch als “starker Hebel (Multiplier)”, der die menschlichen Fähigkeiten verstärkt. Da die Fähigkeiten der KI im Laufe der Zeit \n𝑡\nt exponentiell wachsen (eine KI-Version des mooreschen Gesetzes), kann die Produktivität im KI-Zeitalter \n𝑃\n𝐴\n𝐼\n(\n𝑡\n)\nP\nAI\n\t​\n\n(t) durch die folgende Gleichung dargestellt werden:",
+        "Hierbei haben die Variablen folgende Bedeutung:",
+        "Eine wichtige Erkenntnis aus dieser Formel ist: In einer Welt, in der \n𝐴\n(\n𝑡\n)\nA(t) exponentiell zunimmt, haben traditionelle Fähigkeiten wie bloße Tippgeschwindigkeit oder das Auswendiglernen einer bestimmten Sprache nur noch einen sehr geringen Einfluss auf die Gesamtproduktivität. Stattdessen werden der Multiplikator \n𝛽\nβ, um auf dem exponentiellen KI-Wachstum aufzubauen, und der von der KI nicht abdeckbare Bereich \n𝑆\n𝑐\n𝑜\n𝑟\n𝑒\nS\ncore\n\t​\n\n zu den dominierenden Faktoren, die den Marktwert eines Entwicklers bestimmen.",
+        "Welche Aufgaben werden also automatisiert und welche bleiben in menschlicher Hand? Die Wahrscheinlichkeit \n𝑃\n𝑎\n𝑢\n𝑡\n𝑜\n(\n𝑇\n)\nP\nauto\n\t​\n\n(T), dass eine bestimmte Aufgabe \n𝑇\nT vollständig von einer KI automatisiert wird, lässt sich wie folgt formulieren:",
+        "Aufgaben mit hoher Vorhersehbarkeit und geringer Kontextabhängigkeit, wie das Schreiben von API-Routings oder das Erstellen einfacher CRUD-Bildschirme, haben ein \n𝑃\n𝑎\n𝑢\n𝑡\n𝑜\n≈\n1\nP\nauto\n\t​\n\n≈1 und werden fast vollständig automatisiert. Andererseits sind Aufgaben mit extrem hoher Kontextabhängigkeit schwer zu automatisieren, wie zum Beispiel “Wie integriert man ein bestehendes Legacy-System sicher mit neuen Microservices?” oder “Wie gestaltet man einen Authentifizierungsfluss, der die Anforderungen der Rechtsabteilung erfüllt, ohne die Benutzererfahrung zu beeinträchtigen?”.",
+        "Eine klare Trennung zwischen dem, worin die KI gut ist, und dem, worin der Mensch gut ist, ist eine absolute Überlebensbedingung.",
+        "Die KI übertrifft den Menschen bei der “lokalen Optimierung”. Wenn es um die Geschwindigkeit und Genauigkeit beim Schreiben einer einzigen Funktion, einer einzigen Klasse oder eines einzelnen Moduls geht, hat der Mensch keine Chance. Allerdings ist die KI sehr anfällig, wenn es um “globale Optimierung” oder “fehlenden Kontext (Missing Context)” geht.",
+        "Programmierer der Zukunft müssen ihre Rolle von “Code schreibenden Arbeitern” zu “Architekten, die unzählige von der KI generierte Komponenten orchestrieren” wandeln. Das gesamte System überblicken, entscheiden, wo die Grenzen von Microservices gezogen werden, wie der Kompromiss zwischen Verfügbarkeit und Konsistenz im CAP-Theorem im geschäftlichen Kontext gelöst wird, oder wie man technische Schulden kontrolliert: Dies sind hochgradig intellektuelle Aufgaben, die nur von Menschen ausgeführt werden können, die das Gesamtbild und die Geschäftsziele verstehen.",
+        "Der Begriff “Prompt-Engineering”, den man in letzter Zeit oft hört, wird häufig fälschlicherweise als “Hack, um die KI auszutricksen und die gewünschte Ausgabe zu erhalten” missverstanden. Das Wesen des Prompt-Engineerings in der Softwareentwicklung ist jedoch zweifellos “fortgeschrittene Anforderungsdefinition (Requirements Engineering)”.",
+        "Um der KI Anweisungen in natürlicher Sprache zu geben und sie dazu zu bringen, genau die beabsichtigte Software auszugeben, müssen die folgenden Elemente strikt verbalisiert werden:",
+        "Aus vagen Anweisungen (Prompts) entstehen nur vage und anfällige Systeme. Die Fähigkeit, “was der Kunde wirklich wollte” tiefgehend zu erfragen, widersprüchliche Anforderungen zu ordnen und eine logisch fehlerfreie Spezifikation (Prompt) zu erstellen – das ist die stärkste “Coding-Fähigkeit” im KI-Zeitalter. Programmierer werden mehr Zeit damit verbringen, vor Notion- oder Markdown-Dateien anstatt vor Code-Editoren zu sitzen, und in Textform präzise beschreiben, wie das System idealerweise sein sollte.",
+        "Da die KI auf Open-Source-Code und öffentlichen Dokumenten aus der ganzen Welt trainiert wurde, ist sie mit allgemeinen Webtechnologien und Algorithmen bestens vertraut. Es gibt jedoch Daten, auf die die KI keinen Zugriff hat: “die spezifischen Geschäftsregeln Ihres Unternehmens” und “Domänenwissen, das tief in bestimmten Branchen (wie Medizin, Finanzen, Fertigung usw.) verwurzelt ist”.",
+        "Angenommen, ein medizinisches Startup entwickelt ein System für elektronische Patientenakten. Die KI weiß “wie man mit React ein tabellarisches UI erstellt” oder “die allgemeine Datenstruktur von HL7 FHIR”. Sie hat jedoch nicht das implizite Wissen darüber gelernt, “in welcher Reihenfolge Ärzte in einer bestimmten Fachabteilung von Krankenhaus A die Patientendaten einsehen und wie eine Benutzeroberfläche gestaltet sein muss, um das Risiko von medizinischen Fehlern zu minimieren”.",
+        "In einer Welt, in der Technologie selbst zur Commodity (Massenware) wird, entsteht der wahre Wert eines Ingenieurs an der Schnittstelle von “Technologie” und “Business-Domäne”. Nicht diejenigen, die nur mit technischem Können konkurrieren, werden den zukünftigen Markt anführen, sondern diejenigen, die über tiefes Fachwissen in einer bestimmten Domäne wie Medizin, Finanzen, Logistik oder Unterhaltung verfügen und deren Herausforderungen mit dem mächtigen Werkzeug der KI lösen können.",
+        "Mit zunehmender Abhängigkeit von KI stehen wir vor schwerwiegenden philosophischen und ethischen Problemen. Es geht um die Frage der “Verantwortung” in der Softwareentwicklung.",
+        "Wenn von einer KI autonom generierter Code in einer Produktionsumgebung einen schweren Bug verursacht und einem Unternehmen Verluste in Millionenhöhe beschert, oder wenn er in einem lebenswichtigen medizinischen System eine Fehlfunktion auslöst – wer übernimmt dann die Verantwortung? Das Unternehmen, das das KI-Modell entwickelt hat? Oder der Ingenieur, der den Prompt eingegeben hat? Man kann eine KI weder “entlassen” noch “verhaften”.",
+        "Die Rolle des “Menschen” als Instanz, die die “rechtliche und ethische Verantwortung (Accountability)” für die Auswirkungen eines Systems auf die Gesellschaft übernimmt, wird niemals verschwinden, egal wie weit die Technologie fortschreitet. Im Gegenteil: Je mehr der Prozess der Codegenerierung zur Blackbox wird, desto größere Verantwortung trägt der Mensch als “letzter Genehmiger (Approver)” und “Überwacher (Supervisor)” für das System.",
+        "Die Überprüfung, ob die von der KI vorgeschlagene Architektur und der Code die Sicherheitsstandards erfüllen, ethisch unbedenklich sind (keine Verzerrungen/Bias enthalten) und die Compliance-Richtlinien einhalten, um letztendlich grünes Licht zu geben – dieser Akt des “Verantwortung-Übernehmens” selbst wird zu einem wichtigen Teil der Arbeit eines Ingenieurs.",
+        "In der Zusammenarbeit mit der KI verändert sich auch die Natur der “kognitiven Belastung” (Cognitive Load) des Menschen. Die kognitive Belastung beim Schreiben von Code von Grund auf ist völlig anders als die kognitive Belastung beim “Lesen und Überprüfen” von Hunderten Zeilen unbekannten, von einer KI generierten Codes.",
+        "Nach der Theorie der kognitiven Belastung aus der Psychologie erschöpft sich das Arbeitsgedächtnis des Menschen sehr schnell, wenn es komplexe Informationen verarbeiten muss, die nicht mit bestehenden Schemata (der Wissensstruktur im Kopf) übereinstimmen. Von KI generierter Code enthält manchmal hochgradige Optimierungen, auf die ein Mensch niemals kommen würde, kann aber gleichzeitig kontextignorierende “Halluzinationen” enthalten.",
+        "Um dies zu verhindern, muss der Überprüfungsprozess für die KI systematisiert werden.",
+        "Der Mensch muss seine Fähigkeiten im “schnellen Lesen und sofortigen Erkennen logischer Fehler (Code Reading & Auditing)” noch stärker perfektionieren als seine Fähigkeiten im “Schreiben”. Die Bedeutung der testgetriebenen Entwicklung (TDD) nimmt im KI-Zeitalter noch weiter zu. Der Ansatz, bei dem ein Mensch oder eine andere KI strenge Testcodes schreibt, bevor die KI den eigentlichen Code schreiben darf, und die KI den Code so lange korrigieren lässt, bis er diese Tests besteht, wird sich durchsetzen.",
+        "Basierend auf der bisherigen Analyse präsentieren wir einen konkreten Aktionsplan, wie Programmierer im KI-Zeitalter überleben können.",
+        "Die Automatisierung des Programmierens durch KI bedeutet nicht den “Tod” des Berufs des Programmierers. Vielmehr ist es eine “Renaissance”, die uns von der “unwesentlichen Arbeit” in der Softwareentwicklung befreit – wie dem Korrigieren von Tippfehlern, dem Beheben von Problemen bei der Einrichtung von Umgebungen und dem Schreiben langweiligen Boilerplate-Codes.",
+        "Historisch gesehen verbreitete sich Pessimismus über das Verschwinden von Arbeitsplätzen sowohl bei der Einführung des mechanischen Webstuhls als auch bei der Einführung von Tabellenkalkulationssoftware (Excel). In der Realität wurden jedoch durch die dramatische Steigerung der Produktivität neue Bedürfnisse geweckt und höherwertige Arbeitsplätze geschaffen. Dasselbe wird in der Welt der Software geschehen. Da Systeme “kostengünstiger erstellt werden können”, wird Software in alle Bereiche vordringen, die bisher aufgrund von unzureichender Rentabilität nicht digitalisiert wurden. Die Probleme, die Ingenieure lösen müssen (What), werden sich ins Unendliche ausweiten.",
+        "Uns Programmierern bietet sich nun die Chance, uns von handwerklichen Code-Schreibern zu “Orchesterdirigenten” zu entwickeln, die die mächtige Intelligenz der KI leiten. Anstatt aus Angst vor der technologischen Welle am Ufer zu bleiben, sollten wir sie als Erste reiten und uns auf die Reise begeben, um größere und wertvollere Systeme zu erschaffen. Das KI-Zeitalter ist die Ära, in der “Engineering” im wahrsten Sinne des Wortes beginnt."
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/how-programmers-survive-in-ai-era/img/eyecatch_hu1840675025826750370.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 25,
+      "mathErrors": 0,
+      "diagrams": 3,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "IT-Karriere",
+          "path": "/de/categories/tech-career/"
+        },
+        {
+          "text": "KI",
+          "path": "/de/categories/ai/"
+        },
+        {
+          "text": "Softwareentwicklung",
+          "path": "/de/categories/software-engineering/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "Large Language Models",
+          "path": "/de/p/large-language-models-llm-transformer-prompt-engineering/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Pipeline",
+          "path": "/de/p/cicd-pipeline-github-actions-best-practices/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Java",
+          "path": "/de/p/programming-languages-history-paradigm-evolution/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Zeiger",
+          "path": "/de/p/c-language-pointers-memory-management-stack-heap/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "Workflow",
+          "path": "/de/p/cicd-pipeline-github-actions-best-practices/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Microservices",
+          "path": "/de/p/microservices-architecture-bff-api-gateway/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Microservices",
+          "path": "/de/p/microservices-architecture-bff-api-gateway/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "TCP",
+          "path": "/de/p/http3-quic-protocol-tcp-udp/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "B-Tree",
+          "path": "/de/p/b-tree-database-index-theory/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "verteilte Systeme",
+          "path": "/de/p/cap-theorem-distributed-systems-tradeoff/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "IaC",
+          "path": "/de/p/iac-infrastructure-as-code-terraform/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Infrastructure as Code",
+          "path": "/de/p/iac-infrastructure-as-code-terraform/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "Terraform",
+          "path": "/de/p/iac-infrastructure-as-code-terraform/",
+          "host": "kenji.blog"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "𝛼\nα: Basiskoeffizient der menschlichen Produktivität",
+        "𝑆\n𝑐\n𝑜\n𝑟\n𝑒\nS\ncore\n\t​\n\n: “Menschliche Kernkompetenzen”, die nicht durch KI ersetzt werden können (z.B. Architekturdesign, Verständnis von Geschäftsanforderungen, ethisches Urteilsvermögen)",
+        "𝐴\n(\n𝑡\n)\nA(t): Absolute Leistungsfähigkeit des KI-Modells zum Zeitpunkt \n𝑡\nt (Parameteranzahl, Kontextfenster, Schlussfolgerungsfähigkeit)",
+        "𝛽\nβ: Ein Koeffizient, der angibt, wie effektiv KI-Werkzeuge genutzt werden können (Qualität des Prompt-Engineerings, Raffinesse des kollaborativen Workflows mit der KI)",
+        "Predictability\n(\n𝑇\n)\nPredictability(T): Vorhersehbarkeit der Aufgabe (wie viele Muster in historischen Daten vorhanden sind)",
+        "Complexity\n(\n𝑇\n)\nComplexity(T): Komplexität der Aufgabe",
+        "Context Dependency\n(\n𝑇\n)\nContext Dependency(T): Stärke des “impliziten Kontexts” (domänenspezifisches Wissen oder menschliche Beziehungen), von dem die Aufgabe abhängt",
+        "𝜆\nλ: Technologische Fortschrittsrate der KI",
+        "Zweck (Why): Warum wird diese Funktion benötigt? Was ist der geschäftliche Wert?",
+        "Einschränkungen (Constraints): Leistungsanforderungen (Latenz, Durchsatz), Sicherheitsanforderungen, Kostenbeschränkungen.",
+        "Sonderfälle (Edge Cases): Fallback-Verarbeitung, wenn der Benutzer unerwartete Eingaben vornimmt.",
+        "Schnittstellen (Interfaces): Spezifikationen für die Integration in bestehende Systeme.",
+        "Die “Grundlagen” der Technologie von Grund auf neu lernen: Die Verwendung von Frameworks kann man der KI überlassen. Ein tiefgreifendes Verständnis der Funktionsweise von Betriebssystemen, Netzwerkprotokollen (TCP/IP, HTTP/3), internen Datenbankstrukturen (B-Tree, Transaktionsisolationsstufen) sowie Datenstrukturen und Algorithmen ist jedoch absolut notwendig. Ein solides Fundament in der Informatik ist unerlässlich, um zu beurteilen, ob die Ausgabe der KI korrekt ist.",
+        "Cloud-Architekturen und verteilte Systeme meistern: Anstatt sich auf einzelnen Code zu konzentrieren, sollten Sie sich darauf fokussieren, wie Sie Cloud-Ressourcen wie AWS, GCP und Azure kombinieren können, um skalierbare Systeme aufzubauen. Verstehen Sie Konzepte von IaC (Infrastructure as Code) wie Terraform und entwickeln Sie die Fähigkeit, ganze Systeme als Code zu entwerfen.",
+        "Ein Experte für Geschäftsdomänen werden: Lernen Sie das Geschäftsmodell, die rechtlichen Rahmenbedingungen und die Verhaltenspsychologie der Benutzer in Ihrer Branche intensiv kennen. Gehen Sie über die Grenzen eines Ingenieurs hinaus und nehmen Sie eine Perspektive ein, die der eines Produktmanagers (PM) nahekommt.",
+        "Kommunikations- und Moderationsfähigkeiten verbessern: Der Prozess der Lösung von “Mehrdeutigkeiten” zwischen Menschen und der Konsensbildung kann nicht durch KI ersetzt werden. Soft Skills im Dialog mit Stakeholdern und zur Identifizierung der wahren Probleme werden zu den wertvollsten Fähigkeiten.",
+        "KI als “Kollegen” voll ausschöpfen: Anstatt sich vor der Entwicklung von KI-Werkzeugen zu fürchten, nutzen Sie sie als Ihre stärkste Waffe. Verwenden Sie im Alltag die neuesten LLMs und KI-Coding-Agenten und sammeln Sie das “implizite Wissen” darüber, wo die KI scheitert und wie Sie Prompts gestalten müssen, um die beste Leistung aus ihr herauszuholen."
+      ],
+      "headings": [
+        {
+          "id": "wie-sollten-programmierer-im-ki-zeitalter-überleben-das-ende-des-codings-und-der-beginn-eines-neuen-engineerings",
+          "text": "Wie sollten Programmierer im KI-Zeitalter überleben? Das Ende des Codings und der Beginn eines neuen Engineerings"
+        },
+        {
+          "id": "1-die-geschichte-der-abstraktion-und-die-neudefinition-des-programmierens",
+          "text": "1. Die Geschichte der Abstraktion und die Neudefinition des “Programmierens”"
+        },
+        {
+          "id": "2-das-mathematische-modell-der-produktivität-auf-der-welle-des-exponentiellen-wachstums-reiten",
+          "text": "2. Das mathematische Modell der Produktivität: Auf der Welle des exponentiellen Wachstums reiten"
+        },
+        {
+          "id": "3-wahrscheinlichkeit-der-aufgabenautomatisierung-probability-of-automation",
+          "text": "3. Wahrscheinlichkeit der Aufgabenautomatisierung (Probability of Automation)"
+        },
+        {
+          "id": "4-rückkehr-von-der-syntax-grammatik-zur-architektur-struktur",
+          "text": "4. Rückkehr von der Syntax (Grammatik) zur Architektur (Struktur)"
+        },
+        {
+          "id": "5-anforderungsdefinition-ist-das-wahre-prompt-engineering",
+          "text": "5. Anforderungsdefinition ist das “wahre Prompt-Engineering”"
+        },
+        {
+          "id": "6-die-überwältigende-überlegenheit-von-domänenwissen-domain-knowledge",
+          "text": "6. Die überwältigende Überlegenheit von Domänenwissen (Domain Knowledge)"
+        },
+        {
+          "id": "7-das-trolley-problem-der-softwareentwicklung-wer-übernimmt-die-verantwortung",
+          "text": "7. Das “Trolley-Problem” der Softwareentwicklung: Wer übernimmt die Verantwortung?"
+        },
+        {
+          "id": "8-ki-pair-programming-und-das-management-der-kognitiven-belastung-cognitive-load",
+          "text": "8. KI-Pair-Programming und das Management der kognitiven Belastung (Cognitive Load)"
+        },
+        {
+          "id": "9-konkrete-überlebensstrategien-was-sie-ab-morgen-lernen-sollten",
+          "text": "9. Konkrete Überlebensstrategien: Was Sie ab morgen lernen sollten"
+        },
+        {
+          "id": "fazit-keine-angst-reiten-sie-die-welle",
+          "text": "Fazit: Keine Angst, reiten Sie die Welle"
+        }
+      ],
+      "paragraphs": [
+        "Im Jahr 2026 befindet sich die Softwareentwicklung in einer beispiellosen Phase des Umbruchs. Bis vor wenigen Jahren beschränkte sich das Konzept “KI schreibt Code” bestenfalls auf die Generierung von Boilerplate-Code (Standardcode) und die automatische Vervollständigung von Funktionen – als “Hilfswerkzeug” für Programmierer. Doch durch die erstaunliche Entwicklung von Large Language Models (LLMs) hat sich die Situation grundlegend geändert. Die moderne KI ist nicht mehr nur eine “schlaue Schreibmaschine”, sondern hat sich zu einem “autonomen Junior-Engineer” entwickelt: Wenn man ihr ein Anforderungsdokument gibt, ist sie in der Lage, autonom und in Sekundenschnelle ein komplettes System aufzubauen – von der Frontend- und Backend-Logik über das Datenbankschema-Design bis hin zur Einrichtung von CI/CD-Pipelines.",
+        "Wie sollten wir “Programmierer” und “Software-Ingenieure” in einem solchen Zeitalter überleben? Während der wirtschaftliche Wert des bloßen “Code-Schreibens” rapide abnimmt, werden “Coder”, die lediglich die Syntax einer bestimmten Programmiersprache kennen und mit der API eines bestimmten Frameworks vertraut sind, schnell vom Markt verdrängt.",
+        "In diesem Artikel werden wir die Überlebensstrategien für Programmierer im KI-Zeitalter aus technischen, mathematischen und philosophischen Perspektiven sehr detailliert untersuchen. Dies ist nicht nur eine Karrieredebatte, sondern eine Neudefinition der Disziplin des Software Engineerings selbst.",
+        "Wenn wir auf die Geschichte des Software Engineerings zurückblicken, erkennen wir, dass es immer eine Geschichte der “Abstraktion” war. Wir haben stets Schichten (Layer) aufgebaut, um komplexere Systeme in einer menschenähnlicheren Sprache beschreiben zu können.",
+        "Frühe Informatiker verwendeten Lochkarten, um physische Hardware-Schalter direkt zu bedienen, und gaben dem Computer Anweisungen in Maschinensprache (einer Reihe von 0en und 1en). Später erschien die Assemblersprache, die es ermöglichte, Hardware mit menschenlesbaren Mnemonics zu steuern. Im Laufe der Zeit kamen höhere Programmiersprachen wie C und Fortran auf, denen es gelang, komplexe Hardware-Details wie Speicherverwaltung und CPU-Register zu kapseln. Moderne Sprachen wie Java, Python, Ruby und TypeScript ermöglichten es Programmierern schließlich, sich mehr darauf zu konzentrieren, “was der Computer tun soll (What)”, anstatt “wie der Computer es tun soll (How)”.",
+        "Das Aufkommen von KI (LLMs) ist der neueste und größte Paradigmenwechsel in dieser Geschichte der Abstraktion. Wenn die Evolution von Programmiersprachen das “Verbergen von Hardware” war, dann ist die Evolution von LLMs das “Verbergen von Syntax (Grammatik)”.",
+        "Die Zeit, in der Entwickler sich um Speicherlecks sorgen, Zeiger manipulieren oder Hunderte von Zeilen Standardcode für das Parsen von JSON schreiben mussten, ist vorbei. Die Verwendung natürlicher Sprache (wie Deutsch oder Englisch) – der für die Menschheit am höchsten abstrahierten Sprache – zur Definition von Systemen ist zum Standard des “Programmierens” im Jahr 2026 geworden.",
+        "Lassen Sie uns die durch KI bedingte Produktivitätssteigerung quantitativ anhand eines mathematischen Modells bewerten. Die individuelle Produktivität in der traditionellen Softwareentwicklung \n𝑃\n𝑡\n𝑟\n𝑎\n𝑑\n𝑖\n𝑡\n𝑖\n𝑜\n𝑛\n𝑎\n𝑙\nP\ntraditional\n\t​\n\n konnte als lineare Kombination aus individuellem Qualifikationsniveau \n𝑆\nS, Domänenerfahrung \n𝐸\nE und Werkzeugeffizienz \n𝑇\nT modelliert werden.",
+        "In der modernen, KI-gestützten Entwicklung wirkt die Fähigkeit der KI \n𝐴\n(\n𝑡\n)\nA(t) jedoch als “starker Hebel (Multiplier)”, der die menschlichen Fähigkeiten verstärkt. Da die Fähigkeiten der KI im Laufe der Zeit \n𝑡\nt exponentiell wachsen (eine KI-Version des mooreschen Gesetzes), kann die Produktivität im KI-Zeitalter \n𝑃\n𝐴\n𝐼\n(\n𝑡\n)\nP\nAI\n\t​\n\n(t) durch die folgende Gleichung dargestellt werden:",
+        "Hierbei haben die Variablen folgende Bedeutung:",
+        "Eine wichtige Erkenntnis aus dieser Formel ist: In einer Welt, in der \n𝐴\n(\n𝑡\n)\nA(t) exponentiell zunimmt, haben traditionelle Fähigkeiten wie bloße Tippgeschwindigkeit oder das Auswendiglernen einer bestimmten Sprache nur noch einen sehr geringen Einfluss auf die Gesamtproduktivität. Stattdessen werden der Multiplikator \n𝛽\nβ, um auf dem exponentiellen KI-Wachstum aufzubauen, und der von der KI nicht abdeckbare Bereich \n𝑆\n𝑐\n𝑜\n𝑟\n𝑒\nS\ncore\n\t​\n\n zu den dominierenden Faktoren, die den Marktwert eines Entwicklers bestimmen.",
+        "Welche Aufgaben werden also automatisiert und welche bleiben in menschlicher Hand? Die Wahrscheinlichkeit \n𝑃\n𝑎\n𝑢\n𝑡\n𝑜\n(\n𝑇\n)\nP\nauto\n\t​\n\n(T), dass eine bestimmte Aufgabe \n𝑇\nT vollständig von einer KI automatisiert wird, lässt sich wie folgt formulieren:",
+        "Aufgaben mit hoher Vorhersehbarkeit und geringer Kontextabhängigkeit, wie das Schreiben von API-Routings oder das Erstellen einfacher CRUD-Bildschirme, haben ein \n𝑃\n𝑎\n𝑢\n𝑡\n𝑜\n≈\n1\nP\nauto\n\t​\n\n≈1 und werden fast vollständig automatisiert. Andererseits sind Aufgaben mit extrem hoher Kontextabhängigkeit schwer zu automatisieren, wie zum Beispiel “Wie integriert man ein bestehendes Legacy-System sicher mit neuen Microservices?” oder “Wie gestaltet man einen Authentifizierungsfluss, der die Anforderungen der Rechtsabteilung erfüllt, ohne die Benutzererfahrung zu beeinträchtigen?”.",
+        "Eine klare Trennung zwischen dem, worin die KI gut ist, und dem, worin der Mensch gut ist, ist eine absolute Überlebensbedingung.",
+        "Die KI übertrifft den Menschen bei der “lokalen Optimierung”. Wenn es um die Geschwindigkeit und Genauigkeit beim Schreiben einer einzigen Funktion, einer einzigen Klasse oder eines einzelnen Moduls geht, hat der Mensch keine Chance. Allerdings ist die KI sehr anfällig, wenn es um “globale Optimierung” oder “fehlenden Kontext (Missing Context)” geht.",
+        "Programmierer der Zukunft müssen ihre Rolle von “Code schreibenden Arbeitern” zu “Architekten, die unzählige von der KI generierte Komponenten orchestrieren” wandeln. Das gesamte System überblicken, entscheiden, wo die Grenzen von Microservices gezogen werden, wie der Kompromiss zwischen Verfügbarkeit und Konsistenz im CAP-Theorem im geschäftlichen Kontext gelöst wird, oder wie man technische Schulden kontrolliert: Dies sind hochgradig intellektuelle Aufgaben, die nur von Menschen ausgeführt werden können, die das Gesamtbild und die Geschäftsziele verstehen.",
+        "Der Begriff “Prompt-Engineering”, den man in letzter Zeit oft hört, wird häufig fälschlicherweise als “Hack, um die KI auszutricksen und die gewünschte Ausgabe zu erhalten” missverstanden. Das Wesen des Prompt-Engineerings in der Softwareentwicklung ist jedoch zweifellos “fortgeschrittene Anforderungsdefinition (Requirements Engineering)”.",
+        "Um der KI Anweisungen in natürlicher Sprache zu geben und sie dazu zu bringen, genau die beabsichtigte Software auszugeben, müssen die folgenden Elemente strikt verbalisiert werden:",
+        "Aus vagen Anweisungen (Prompts) entstehen nur vage und anfällige Systeme. Die Fähigkeit, “was der Kunde wirklich wollte” tiefgehend zu erfragen, widersprüchliche Anforderungen zu ordnen und eine logisch fehlerfreie Spezifikation (Prompt) zu erstellen – das ist die stärkste “Coding-Fähigkeit” im KI-Zeitalter. Programmierer werden mehr Zeit damit verbringen, vor Notion- oder Markdown-Dateien anstatt vor Code-Editoren zu sitzen, und in Textform präzise beschreiben, wie das System idealerweise sein sollte.",
+        "Da die KI auf Open-Source-Code und öffentlichen Dokumenten aus der ganzen Welt trainiert wurde, ist sie mit allgemeinen Webtechnologien und Algorithmen bestens vertraut. Es gibt jedoch Daten, auf die die KI keinen Zugriff hat: “die spezifischen Geschäftsregeln Ihres Unternehmens” und “Domänenwissen, das tief in bestimmten Branchen (wie Medizin, Finanzen, Fertigung usw.) verwurzelt ist”.",
+        "Angenommen, ein medizinisches Startup entwickelt ein System für elektronische Patientenakten. Die KI weiß “wie man mit React ein tabellarisches UI erstellt” oder “die allgemeine Datenstruktur von HL7 FHIR”. Sie hat jedoch nicht das implizite Wissen darüber gelernt, “in welcher Reihenfolge Ärzte in einer bestimmten Fachabteilung von Krankenhaus A die Patientendaten einsehen und wie eine Benutzeroberfläche gestaltet sein muss, um das Risiko von medizinischen Fehlern zu minimieren”.",
+        "In einer Welt, in der Technologie selbst zur Commodity (Massenware) wird, entsteht der wahre Wert eines Ingenieurs an der Schnittstelle von “Technologie” und “Business-Domäne”. Nicht diejenigen, die nur mit technischem Können konkurrieren, werden den zukünftigen Markt anführen, sondern diejenigen, die über tiefes Fachwissen in einer bestimmten Domäne wie Medizin, Finanzen, Logistik oder Unterhaltung verfügen und deren Herausforderungen mit dem mächtigen Werkzeug der KI lösen können.",
+        "Mit zunehmender Abhängigkeit von KI stehen wir vor schwerwiegenden philosophischen und ethischen Problemen. Es geht um die Frage der “Verantwortung” in der Softwareentwicklung.",
+        "Wenn von einer KI autonom generierter Code in einer Produktionsumgebung einen schweren Bug verursacht und einem Unternehmen Verluste in Millionenhöhe beschert, oder wenn er in einem lebenswichtigen medizinischen System eine Fehlfunktion auslöst – wer übernimmt dann die Verantwortung? Das Unternehmen, das das KI-Modell entwickelt hat? Oder der Ingenieur, der den Prompt eingegeben hat? Man kann eine KI weder “entlassen” noch “verhaften”.",
+        "Die Rolle des “Menschen” als Instanz, die die “rechtliche und ethische Verantwortung (Accountability)” für die Auswirkungen eines Systems auf die Gesellschaft übernimmt, wird niemals verschwinden, egal wie weit die Technologie fortschreitet. Im Gegenteil: Je mehr der Prozess der Codegenerierung zur Blackbox wird, desto größere Verantwortung trägt der Mensch als “letzter Genehmiger (Approver)” und “Überwacher (Supervisor)” für das System.",
+        "Die Überprüfung, ob die von der KI vorgeschlagene Architektur und der Code die Sicherheitsstandards erfüllen, ethisch unbedenklich sind (keine Verzerrungen/Bias enthalten) und die Compliance-Richtlinien einhalten, um letztendlich grünes Licht zu geben – dieser Akt des “Verantwortung-Übernehmens” selbst wird zu einem wichtigen Teil der Arbeit eines Ingenieurs.",
+        "In der Zusammenarbeit mit der KI verändert sich auch die Natur der “kognitiven Belastung” (Cognitive Load) des Menschen. Die kognitive Belastung beim Schreiben von Code von Grund auf ist völlig anders als die kognitive Belastung beim “Lesen und Überprüfen” von Hunderten Zeilen unbekannten, von einer KI generierten Codes.",
+        "Nach der Theorie der kognitiven Belastung aus der Psychologie erschöpft sich das Arbeitsgedächtnis des Menschen sehr schnell, wenn es komplexe Informationen verarbeiten muss, die nicht mit bestehenden Schemata (der Wissensstruktur im Kopf) übereinstimmen. Von KI generierter Code enthält manchmal hochgradige Optimierungen, auf die ein Mensch niemals kommen würde, kann aber gleichzeitig kontextignorierende “Halluzinationen” enthalten.",
+        "Um dies zu verhindern, muss der Überprüfungsprozess für die KI systematisiert werden.",
+        "Der Mensch muss seine Fähigkeiten im “schnellen Lesen und sofortigen Erkennen logischer Fehler (Code Reading & Auditing)” noch stärker perfektionieren als seine Fähigkeiten im “Schreiben”. Die Bedeutung der testgetriebenen Entwicklung (TDD) nimmt im KI-Zeitalter noch weiter zu. Der Ansatz, bei dem ein Mensch oder eine andere KI strenge Testcodes schreibt, bevor die KI den eigentlichen Code schreiben darf, und die KI den Code so lange korrigieren lässt, bis er diese Tests besteht, wird sich durchsetzen.",
+        "Basierend auf der bisherigen Analyse präsentieren wir einen konkreten Aktionsplan, wie Programmierer im KI-Zeitalter überleben können.",
+        "Die Automatisierung des Programmierens durch KI bedeutet nicht den “Tod” des Berufs des Programmierers. Vielmehr ist es eine “Renaissance”, die uns von der “unwesentlichen Arbeit” in der Softwareentwicklung befreit – wie dem Korrigieren von Tippfehlern, dem Beheben von Problemen bei der Einrichtung von Umgebungen und dem Schreiben langweiligen Boilerplate-Codes.",
+        "Historisch gesehen verbreitete sich Pessimismus über das Verschwinden von Arbeitsplätzen sowohl bei der Einführung des mechanischen Webstuhls als auch bei der Einführung von Tabellenkalkulationssoftware (Excel). In der Realität wurden jedoch durch die dramatische Steigerung der Produktivität neue Bedürfnisse geweckt und höherwertige Arbeitsplätze geschaffen. Dasselbe wird in der Welt der Software geschehen. Da Systeme “kostengünstiger erstellt werden können”, wird Software in alle Bereiche vordringen, die bisher aufgrund von unzureichender Rentabilität nicht digitalisiert wurden. Die Probleme, die Ingenieure lösen müssen (What), werden sich ins Unendliche ausweiten.",
+        "Uns Programmierern bietet sich nun die Chance, uns von handwerklichen Code-Schreibern zu “Orchesterdirigenten” zu entwickeln, die die mächtige Intelligenz der KI leiten. Anstatt aus Angst vor der technologischen Welle am Ufer zu bleiben, sollten wir sie als Erste reiten und uns auf die Reise begeben, um größere und wertvollere Systeme zu erschaffen. Das KI-Zeitalter ist die Ära, in der “Engineering” im wahrsten Sinne des Wortes beginnt."
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/how-programmers-survive-in-ai-era/img/eyecatch_hu1840675025826750370.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 25,
+      "mathErrors": 0,
+      "diagrams": 3,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "IT-Karriere",
+          "path": "/de/categories/tech-career/"
+        },
+        {
+          "text": "KI",
+          "path": "/de/categories/ai/"
+        },
+        {
+          "text": "Softwareentwicklung",
+          "path": "/de/categories/software-engineering/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "Large Language Models",
+          "path": "/de/p/large-language-models-llm-transformer-prompt-engineering/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Pipeline",
+          "path": "/de/p/cicd-pipeline-github-actions-best-practices/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Java",
+          "path": "/de/p/programming-languages-history-paradigm-evolution/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Zeiger",
+          "path": "/de/p/c-language-pointers-memory-management-stack-heap/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "Microservices",
+          "path": "/de/p/microservices-architecture-bff-api-gateway/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Microservices",
+          "path": "/de/p/microservices-architecture-bff-api-gateway/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "testgetriebenen Entwicklung",
+          "path": "/de/p/test-driven-development-tdd-bdd/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "TCP",
+          "path": "/de/p/http3-quic-protocol-tcp-udp/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "B-Tree",
+          "path": "/de/p/b-tree-database-index-theory/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "verteilte Systeme",
+          "path": "/de/p/cap-theorem-distributed-systems-tradeoff/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "IaC",
+          "path": "/de/p/iac-infrastructure-as-code-terraform/",
+          "host": "kenji.blog"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  }
+]

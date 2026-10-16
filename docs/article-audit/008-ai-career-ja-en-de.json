@@ -1,0 +1,103 @@
+{
+  "batch": "008-ai-career-ja-en-de",
+  "status": "validated",
+  "review": "Full bodies reviewed in ja/en/de. Preserve existing headings, categories, prose, math and diagrams. Remove explicitly reviewed adjacent duplicate links and misleading ordinary-word links; add the dedicated TDD explanation. Unsupported AI capability generalizations and model equations require separate editorial review. Other ten translations remain pending.",
+  "articles": [
+    {
+      "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.md",
+      "source_sha256": "d035c9406fc9a92e8f980760cd7ed00be41a6a1eacf8d4be83fdc073168183a2",
+      "unwrap_links": [
+        {
+          "link": "[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)",
+          "context": ")（[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)）の",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)",
+          "context": "/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の構",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[分離レベル](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)",
+          "context": "/)[分離レベル](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)）、",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[Infrastructure as Code](https://kenji.blog/p/iac-infrastructure-as-code-terraform/)",
+          "context": ")（[Infrastructure as Code](https://kenji.blog/p/iac-infrastructure-as-code-terraform/)）の",
+          "reason": "duplicate"
+        }
+      ],
+      "links": [
+        {
+          "term": "テスト駆動開発",
+          "target": "content/post/test-driven-development-tdd-bdd/index.md"
+        }
+      ],
+      "category_decision": "Retain tech-career, ai and software-engineering: the full body discusses programmer careers, AI assistance, and engineering design practices."
+    },
+    {
+      "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.en.md",
+      "source_sha256": "e5734057447b5ea56f5ecba5d0e6d99110e5646b364d0e04751f7e20de6a8488",
+      "unwrap_links": [
+        {
+          "link": "[Infrastructure as Code](/en/p/iac-infrastructure-as-code-terraform/)",
+          "context": " ([Infrastructure as Code](/en/p/iac-infrastructure-as-code-terraform/)) ",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[Terraform](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/)",
+          "context": "s [Terraform](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/), ",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/)",
+          "context": ". [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) b",
+          "reason": "misleading"
+        }
+      ],
+      "links": [
+        {
+          "term": "Test-Driven Development",
+          "target": "content/post/test-driven-development-tdd-bdd/index.en.md"
+        }
+      ],
+      "category_decision": "Retain tech-career, ai and software-engineering: the full body discusses programmer careers, AI assistance, and engineering design practices."
+    },
+    {
+      "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.de.md",
+      "source_sha256": "d4af8dd7f1792c35bf9a37f48efe609dd065f487a31f4e2f44213fecfacd6339",
+      "unwrap_links": [
+        {
+          "link": "[Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)",
+          "context": "n [Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s ",
+          "reason": "misleading"
+        },
+        {
+          "link": "[Infrastructure as Code](/de/p/iac-infrastructure-as-code-terraform/)",
+          "context": " ([Infrastructure as Code](/de/p/iac-infrastructure-as-code-terraform/)) ",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[Terraform](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)",
+          "context": "e [Terraform](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) u",
+          "reason": "duplicate"
+        }
+      ],
+      "links": [
+        {
+          "term": "testgetriebenen Entwicklung",
+          "target": "content/post/test-driven-development-tdd-bdd/index.de.md"
+        }
+      ],
+      "category_decision": "Retain tech-career, ai and software-engineering: the full body discusses programmer careers, AI assistance, and engineering design practices."
+    }
+  ],
+  "validation": {
+    "unit_tests": 28,
+    "hugo": "exit 0, 567027 ms",
+    "browser": "3 pages passed: prose, lists, headings, code, images, math, three Mermaid diagrams, category labels, same-language article targets HTTP200 and mobile comparison",
+    "category_errors": 4305,
+    "category_errors_increase": 0
+  }
+}

@@ -12,6 +12,35 @@ import apply_reviewed_article_links as audit
 
 
 class ReviewedEditTests(unittest.TestCase):
+    def test_unwrap_only_reviewed_ordinary_verb(self):
+        raw = '[Go](/en/p/languages/)'
+        prefix = '---\ntitle: Test\n---\n\n'
+        source = prefix + raw + ' is a language.\n\n' + raw + ' beyond engineering.'
+        item = {'link': raw, 'context': raw + ' beyond engineering.', 'reason': 'misleading'}
+        self.assertEqual(audit.unwrap_reviewed_link(source, item, {'/en/p/languages/'}),
+                         prefix + raw + ' is a language.\n\nGo beyond engineering.')
+
+    def test_unwrap_rejects_protected_or_unpublished_link(self):
+        raw = '[Go](/en/p/languages/)'
+        for source in ['# ' + raw, '`' + raw + '`', '$' + raw + '$',
+                       '```mermaid\n' + raw + '\n```', '<div>' + raw + '</div>']:
+            with self.subTest(source=source), self.assertRaises(ValueError):
+                audit.unwrap_reviewed_link('---\ntitle: Test\n---\n\n' + source, {'link': raw, 'context': raw, 'reason': 'misleading'}, {'/en/p/languages/'})
+        with self.assertRaises(ValueError):
+            audit.unwrap_reviewed_link(raw, {'link': raw, 'context': raw, 'reason': 'misleading'}, {'/de/p/languages/'})
+        with self.assertRaises(ValueError):
+            audit.unwrap_reviewed_link('---\ntitle: Test\n---\n\n' + raw, {'link': raw, 'context': raw, 'reason': 'duplicate'}, {'/en/p/languages/'})
+        external = '[Go](https://example.org/en/p/languages/)'
+        with self.assertRaises(ValueError):
+            audit.unwrap_reviewed_link('---\ntitle: Test\n---\n\n' + external,
+                                       {'link': external, 'context': external, 'reason': 'misleading'}, {'/en/p/languages/'})
+
+    def test_unwrap_retains_suffix_and_other_duplicate_link(self):
+        source = '---\ntitle: Test\n---\n\n[Pipeline](/de/p/cicd/) and [Workflow](/de/p/cicd/)s.'
+        item = {'link': '[Workflow](/de/p/cicd/)', 'context': 'and [Workflow](/de/p/cicd/)s.', 'reason': 'duplicate'}
+        self.assertEqual(audit.unwrap_reviewed_link(source, item, {'/de/p/cicd/'}),
+                         '---\ntitle: Test\n---\n\n[Pipeline](/de/p/cicd/) and Workflows.')
+
     def test_explicit_context_preserves_inline_html(self):
         source = '---\ntitle: Test\n---\n\nAn <strong>Introduction</strong> Euler explained waves.<br>\n'
         result, count = audit.link_reviewed_context(source, 'Euler', 'Euler explained', '/en/p/euler/')

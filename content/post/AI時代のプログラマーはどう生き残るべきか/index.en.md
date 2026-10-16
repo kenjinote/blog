@@ -166,7 +166,7 @@ sequenceDiagram
     H->>H: "Final Approval & Responsibility Assumption"
 ```
 
-More than the skill of "writing," humans need to push their skills of "Code Reading & Auditing (reading quickly and instantly spotting logical flaws)" to the limit. The importance of Test-Driven Development (TDD) has increased even further in the AI era. Before letting AI write code, the mainstream approach will be for a human or another AI to write strict test code, and then have AI modify the code until it passes those tests.
+More than the skill of "writing," humans need to push their skills of "Code Reading & Auditing (reading quickly and instantly spotting logical flaws)" to the limit. The importance of [Test-Driven Development](/en/p/test-driven-development-tdd-bdd/) (TDD) has increased even further in the AI era. Before letting AI write code, the mainstream approach will be for a human or another AI to write strict test code, and then have AI modify the code until it passes those tests.
 
 ---
 
@@ -175,8 +175,8 @@ More than the skill of "writing," humans need to push their skills of "Code Read
 Based on the analysis so far, here is a concrete action plan for programmers to survive in the AI era.
 
 1.  **Thoroughly Relearn the "Fundamentals" of Technology**: You can leave the usage of frameworks to AI. However, a deep understanding of how OS works, network protocols ([TCP](https://kenji.blog/en/p/http3-quic-protocol-tcp-udp/)/IP, HTTP/3), internal database structures ([B-Tree](https://kenji.blog/en/p/b-tree-database-index-theory/), transaction isolation levels), and data structures and algorithms is absolutely necessary. To judge whether AI's output is correct, a solid foundation in computer science is indispensable.
-2.  **Master Cloud Architecture and [Distributed System](https://kenji.blog/en/p/cap-theorem-distributed-systems/)s**: Focus on how to combine cloud resources like AWS, GCP, and Azure to build scalable systems, rather than individual pieces of code. Understand the concept of [IaC](/en/p/iac-infrastructure-as-code-terraform/) ([Infrastructure as Code](/en/p/iac-infrastructure-as-code-terraform/)) such as [Terraform](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/), and cultivate the ability to design an entire system as code.
-3.  **Become an Expert in a Business Domain**: Deeply study the business models, legal regulations, and behavioral psychology of the users in the industry you belong to. [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) beyond the boundaries of an engineer and acquire a perspective closer to that of a Product Manager (PM).
+2.  **Master Cloud Architecture and [Distributed System](https://kenji.blog/en/p/cap-theorem-distributed-systems/)s**: Focus on how to combine cloud resources like AWS, GCP, and Azure to build scalable systems, rather than individual pieces of code. Understand the concept of [IaC](/en/p/iac-infrastructure-as-code-terraform/) (Infrastructure as Code) such as Terraform, and cultivate the ability to design an entire system as code.
+3.  **Become an Expert in a Business Domain**: Deeply study the business models, legal regulations, and behavioral psychology of the users in the industry you belong to. Go beyond the boundaries of an engineer and acquire a perspective closer to that of a Product Manager (PM).
 4.  **Polish Communication and Facilitation Skills**: The process of resolving the "ambiguity" between humans and building consensus cannot be replaced by AI. Soft skills to communicate with stakeholders and discover real issues will become the most valuable skills.
 5.  **Use AI to the Fullest as a "Colleague"**: Do not fear the evolution of AI tools, but utilize them as your most powerful weapons. Use the latest LLMs and AI coding agents on a daily basis to accumulate the "tacit knowledge" of where AI fails and how to tweak prompts to draw out the best performance.
 

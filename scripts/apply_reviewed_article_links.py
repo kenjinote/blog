@@ -24,7 +24,7 @@ def protected_material(text):
 
 
 
-def link_reviewed_context(source, term, context, destination, math_literals=()):
+def link_reviewed_context(source, term, context, destination, math_literals=(), probe_padding=False):
     """Validate one editor-selected text span even in simple inline-HTML articles."""
     if source.count(context) != 1 or context.count(term) != 1:
         raise ValueError('Reviewed context must identify exactly one term')
@@ -48,11 +48,32 @@ def link_reviewed_context(source, term, context, destination, math_literals=()):
     token = 'AUDITREVIEWEDTEXTTOKEN'
     if token in source:
         raise ValueError('Probe token collision')
-    probe = masked[:start] + token + masked[end:]
+    probe = masked[:start] + (' ' + token + ' ' if probe_padding else token) + masked[end:]
     _, count = link_text(probe, {token: destination})
     if count != 1:
         raise ValueError('Reviewed span is protected Markdown, math, code or HTML')
     return source[:start] + f'[{term}]({destination})' + source[end:], 1
+
+
+def unwrap_reviewed_link(source, item, allowed_paths):
+    """Remove only an explicitly reviewed link wrapper in ordinary body text."""
+    raw_link, context = item['link'], item['context']
+    match = SIMPLE_LINK.fullmatch(raw_link)
+    if not match or item['reason'] not in ('duplicate', 'misleading'):
+        raise ValueError('Invalid reviewed link removal')
+    url = urlsplit(match[2])
+    if url.netloc not in ('', 'kenji.blog') or url.query or url.fragment or url.path not in allowed_paths:
+        raise ValueError('Removal target must be a same-language published article')
+    # Probe the whole wrapper, so the scanner still rejects math, code, HTML,
+    # headings and enclosing links. Discard the probe result; keep the label.
+    link_reviewed_context(source, raw_link, context, url.path, probe_padding=True)
+    if item['reason'] == 'duplicate' and sum(
+        urlsplit(m[2]).netloc in ('', 'kenji.blog') and urlsplit(m[2]).path == url.path
+        for m in SIMPLE_LINK.finditer(source)
+    ) < 2:
+        raise ValueError('Duplicate removal would remove the only target link')
+    start = source.index(context) + context.index(raw_link)
+    return source[:start] + match[1] + source[start + len(raw_link):]
 
 
 def main():
@@ -103,6 +124,11 @@ def main():
         updated = SIMPLE_LINK.sub(remove_self, source)
         if any(raw_link in updated for raw_link in broken_self_links):
             raise ValueError('Broken self-link lies in protected content')
+        unwrapped = item.get('unwrap_links', [])
+        allowed_paths = {urlsplit(row['permalink']).path for p, row in records.items()
+                         if language(p) == language(path) and p != path}
+        for removal in unwrapped:
+            updated = unwrap_reviewed_link(updated, removal, allowed_paths)
         added = []
         for addition in item['links']:
             target = (ROOT / addition['target']).resolve()
@@ -165,6 +191,7 @@ def main():
                        'protected_content_unchanged': not bool(repairs), 'visible_source_unchanged': not bool(repairs),
                        'prose_unchanged': True, 'protected_content_unchanged_except_reviewed_repairs': True,
                        'mermaid_label_repairs': repairs,
+                       'reviewed_unwrapped_links': unwrapped,
                        'category_change': item.get('categories'),
                        'categories': item['category_decision'],
                        'updated_sha256': hashlib.sha256(updated.encode('utf-8')).hexdigest()})

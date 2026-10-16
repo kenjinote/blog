@@ -1,0 +1,84 @@
+{
+  "fr": {
+    "unwrap_labels": [
+      "LLM (intro only)",
+      "Infrastructure as Code",
+      "Terraform"
+    ],
+    "add_tdd_term": "développement piloté par les tests",
+    "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.fr.md",
+    "source_sha256": "a14a941bd8af5b2d8a572e7e468e3f538478fc8c5dc34ba7e0e0664e25092222",
+    "category_decision": "Retain tech-career / ai / software-engineering.",
+    "status": "Full body reviewed; not edited or validated. Same unsupported productivity/automation assertions need separate editorial review."
+  },
+  "es": {
+    "unwrap_labels": [
+      "Infrastructure as Code",
+      "Terraform"
+    ],
+    "add_tdd_term": "Desarrollo Guiado por Pruebas",
+    "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.es.md",
+    "source_sha256": "083b4b349f7fe47e0b307d549fb37b441cd4b7cc269a367acbceed5c70e2e9a4",
+    "category_decision": "Retain tech-career / ai / software-engineering.",
+    "status": "Full body reviewed; not edited or validated. Same unsupported productivity/automation assertions need separate editorial review."
+  },
+  "pt": {
+    "unwrap_labels": [
+      "Infrastructure as Code",
+      "Terraform"
+    ],
+    "add_tdd_term": "Desenvolvimento Orientado a Testes",
+    "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.pt.md",
+    "source_sha256": "16d4388f13a773092bd04d742585b191c4cd3df4cbcd01e7cdef0fdd43348f7a",
+    "category_decision": "Retain tech-career / ai / software-engineering.",
+    "status": "Full body reviewed; not edited or validated. Unsupported AI capability and mathematical-model assertions need separate editorial review."
+  },
+  "ko": {
+    "unwrap_labels": [
+      "LLM (intro only)",
+      "Infrastructure as Code",
+      "Terraform (retain IaC)"
+    ],
+    "add_tdd_term": "테스트 주도 개발",
+    "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.ko.md",
+    "source_sha256": "0b7da621dea5fd73e841098af40382e896b07d4c50c2ef6921170e678d98ead8",
+    "category_decision": "Retain tech-career / ai / software-engineering.",
+    "status": "Full body reviewed; not edited or validated. Unsupported AI capability and mathematical-model assertions need separate editorial review."
+  },
+  "zh-cn": {
+    "unwrap_labels": [
+      "LLM (intro only)",
+      "IaC",
+      "Terraform (retain 基础设施即代码)"
+    ],
+    "add_tdd_term": "测试驱动开发",
+    "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.zh-cn.md",
+    "source_sha256": "0303b9bc1b919b3b2088ddea9aa46508d6b41bc5a1a6fb78bfcb749bb4e0ee9d",
+    "category_decision": "Retain tech-career / ai / software-engineering.",
+    "status": "Full body reviewed; not edited or validated. Unsupported AI capability and mathematical-model assertions need separate editorial review."
+  },
+  "zh-tw": {
+    "unwrap_labels": [
+      "LLM (intro only)",
+      "Infrastructure as Code",
+      "Terraform (retain IaC)"
+    ],
+    "add_tdd_term": null,
+    "tdd_decision": "Existing TDD link points to a concrete C++/GoogleTest introduction. Inspect that target and retain if appropriate; do not automatically add an adjacent second TDD link. Preserve section 5 heading link.",
+    "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.zh-tw.md",
+    "source_sha256": "1c89183c61806cbc629c677ca8f6beef4b925b411b33afeb8b684643fbaf266d",
+    "category_decision": "Retain tech-career / ai / software-engineering.",
+    "status": "Full body reviewed; not edited or validated. Unsupported AI capability and mathematical-model assertions need separate editorial review."
+  },
+  "id": {
+    "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.id.md",
+    "source_sha256": "7e205a2de0b9f4e47493794dc6ca4144a468428a629c96d95dc2a8e188e0a314",
+    "unwrap_labels": [
+      "IaC",
+      "Terraform (retain Infrastructure as Code)"
+    ],
+    "add_tdd_term": "Test-Driven Development",
+    "category_decision": "Retain tech-career / ai / software-engineering.",
+    "status": "Full body reviewed; not edited or validated. Preserve section 5 heading link. Unsupported AI capability and model assertions need separate editorial review."
+  }
+}

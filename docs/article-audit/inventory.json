@@ -1482,13 +1482,19 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 28,
+        "hugo": "exit 0, 567027 ms",
+        "browser": "3 pages passed: prose, lists, headings, code, images, math, three Mermaid diagrams, category labels, same-language article targets HTTP200 and mobile comparison",
+        "category_errors": 4305,
+        "category_errors_increase": 0
+      },
+      "batch": "008-ai-career-ja-en-de"
     },
     {
       "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.en.md",
@@ -1504,13 +1510,19 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 28,
+        "hugo": "exit 0, 567027 ms",
+        "browser": "3 pages passed: prose, lists, headings, code, images, math, three Mermaid diagrams, category labels, same-language article targets HTTP200 and mobile comparison",
+        "category_errors": 4305,
+        "category_errors_increase": 0
+      },
+      "batch": "008-ai-career-ja-en-de"
     },
     {
       "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.es.md",
@@ -1528,8 +1540,8 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
       "batch": null
@@ -1550,8 +1562,8 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
       "batch": null
@@ -1594,8 +1606,8 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
       "batch": null
@@ -1616,8 +1628,8 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
       "batch": null
@@ -1636,13 +1648,19 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 28,
+        "hugo": "exit 0, 567027 ms",
+        "browser": "3 pages passed: prose, lists, headings, code, images, math, three Mermaid diagrams, category labels, same-language article targets HTTP200 and mobile comparison",
+        "category_errors": 4305,
+        "category_errors_increase": 0
+      },
+      "batch": "008-ai-career-ja-en-de",
       "review_notes": "Full Japanese body read, including re-reading truncated sections 4-5. Existing tech-career/ai/software-engineering suitable. Heading self-link must remain to preserve anchor ID. Review adjacent duplicate links (LLM, CI/CD + pipeline, transaction + isolation, IaC + expansion), and potential test-driven-development link after checking target. No edits. Unsupported broad AI capability claims and presented productivity/automation equations require separate editorial review; not treated as verified facts."
     },
     {
@@ -1661,8 +1679,8 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
       "batch": null
@@ -1705,8 +1723,8 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
       "batch": null
@@ -1727,8 +1745,8 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
+      "body_reviewed": true,
+      "categories_reviewed": true,
       "links_reviewed": false,
       "validation": null,
       "batch": null
