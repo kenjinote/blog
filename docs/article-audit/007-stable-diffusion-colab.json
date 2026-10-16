@@ -1,6 +1,6 @@
 {
   "batch": "007-stable-diffusion-colab",
-  "status": "validated_pending_push",
+  "status": "pushed",
   "review": "All thirteen full bodies reviewed; add image-generation category, retain programming. No contextually useful internal-link additions identified in prose; code terms and external references preserved. Build/browser validation pending.",
   "articles": [
     {
@@ -198,5 +198,6 @@
       },
       "category_decision": "The complete article demonstrates image generation with Python/diffusers in a Colab notebook; retain programming and add existing image-generation."
     }
-  ]
+  ],
+  "commit": "882c1b704da941862776ed93abbbad1a9d720a66"
 }

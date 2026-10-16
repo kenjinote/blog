@@ -40,5 +40,21 @@
     "hugo": "passed, 608003 ms, exit 0 after upstream merge",
     "browser": "26 pages passed; post-merge rendered bodies/categories unchanged",
     "next": "Apply and validate 005-two-envelopes and 007-stable-diffusion-colab; both fully reviewed and preflight passed, not applied."
+  },
+  {
+    "batch": "005-two-envelopes + 007-stable-diffusion-colab",
+    "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+    "remote": "origin/main",
+    "verified_remote_sha": "882c1b704da941862776ed93abbbad1a9d720a66",
+    "date_jst": "2026-10-16",
+    "articles": 26,
+    "modified_articles": 19,
+    "reviewed_unchanged_articles": 7,
+    "added_links": 8,
+    "broken_self_links_removed": 1,
+    "reclassified_articles": 13,
+    "hugo": "passed, exit 0, 567272 ms",
+    "browser": "26 pages before/after passed; exact Korean closing-quote typography exception documented",
+    "next": "Review remaining 12 translations of how-programmers-survive-in-ai-era; only Japanese full body read, no edits."
   }
 ]

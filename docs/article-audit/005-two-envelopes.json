@@ -1,6 +1,6 @@
 {
   "batch": "005-two-envelopes",
-  "status": "validated_pending_push",
+  "status": "pushed",
   "review": "All thirteen full bodies read. Existing relevant same-language Bayes and St Petersburg links retained; fill eight missing links. Korean broken quoted-slug self link is explicitly selected for label-preserving unwrap. Source duplicate date, emphasis defects in fr/ru/zh-tw and mathematical claims about proper distributions/infinite expectation recorded separately. Target Japanese introduction/derivations reviewed to verify relevance; translation paths verified against published inventory. Browser/source validation pending.",
   "articles": [
     {
@@ -129,5 +129,6 @@
       "links": [],
       "category_decision": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central."
     }
-  ]
+  ],
+  "commit": "882c1b704da941862776ed93abbbad1a9d720a66"
 }

@@ -276,7 +276,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": false,
@@ -290,7 +290,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "005-two-envelopes",
-      "review_notes": "Full body read; categories suitable. id/ar already have relevant same-language Bayes and St Petersburg links. ru/hi need both contextual links. No edits yet. Existing duplicate date and claims about proper distributions/infinite expectations require separate editorial review; ru emphasis spacing defects recorded."
+      "review_notes": "Full body read; categories suitable. id/ar already have relevant same-language Bayes and St Petersburg links. ru/hi need both contextual links. No edits yet. Existing duplicate date and claims about proper distributions/infinite expectations require separate editorial review; ru emphasis spacing defects recorded.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/2つの封筒のパラドックス/index.de.md",
@@ -305,7 +307,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": false,
@@ -319,7 +321,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "005-two-envelopes",
-      "review_notes": "Full body reviewed; categories suitable. Add missing same-language St Petersburg link in both languages and Bayes link in German. French already links Bayes. No edits yet. Existing mathematical factual caveat/duplicate date; French emphasis spacing defects recorded for separate repair."
+      "review_notes": "Full body reviewed; categories suitable. Add missing same-language St Petersburg link in both languages and Bayes link in German. French already links Bayes. No edits yet. Existing mathematical factual caveat/duplicate date; French emphasis spacing defects recorded for separate repair.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/2つの封筒のパラドックス/index.en.md",
@@ -334,7 +338,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": false,
@@ -348,7 +352,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "005-two-envelopes",
-      "review_notes": "Full body reviewed. Existing same-language Bayes and St Petersburg links relevant. Existing mathematical-paradoxes/probability-theory categories appropriate. No edits; target/render validation pending. Existing claims about proper distributions/infinite expectation need separate editorial review; duplicate date fields retained. zh-tw has pre-existing malformed emphasis to track separately."
+      "review_notes": "Full body reviewed. Existing same-language Bayes and St Petersburg links relevant. Existing mathematical-paradoxes/probability-theory categories appropriate. No edits; target/render validation pending. Existing claims about proper distributions/infinite expectation need separate editorial review; duplicate date fields retained. zh-tw has pre-existing malformed emphasis to track separately.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/2つの封筒のパラドックス/index.es.md",
@@ -363,7 +369,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": false,
@@ -377,7 +383,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "005-two-envelopes",
-      "review_notes": "Full body read. Existing categories suitable, Bayes links relevant. Spanish needs St Petersburg link in body; Portuguese already links it. No edits yet. Existing mathematical factual caveat and duplicate date as other versions."
+      "review_notes": "Full body read. Existing categories suitable, Bayes links relevant. Spanish needs St Petersburg link in body; Portuguese already links it. No edits yet. Existing mathematical factual caveat and duplicate date as other versions.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/2つの封筒のパラドックス/index.fr.md",
@@ -392,7 +400,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": false,
@@ -406,7 +414,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "005-two-envelopes",
-      "review_notes": "Full body reviewed; categories suitable. Add missing same-language St Petersburg link in both languages and Bayes link in German. French already links Bayes. No edits yet. Existing mathematical factual caveat/duplicate date; French emphasis spacing defects recorded for separate repair."
+      "review_notes": "Full body reviewed; categories suitable. Add missing same-language St Petersburg link in both languages and Bayes link in German. French already links Bayes. No edits yet. Existing mathematical factual caveat/duplicate date; French emphasis spacing defects recorded for separate repair.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/2つの封筒のパラドックス/index.hi.md",
@@ -421,7 +431,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": false,
@@ -435,7 +445,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "005-two-envelopes",
-      "review_notes": "Full body read; categories suitable. id/ar already have relevant same-language Bayes and St Petersburg links. ru/hi need both contextual links. No edits yet. Existing duplicate date and claims about proper distributions/infinite expectations require separate editorial review; ru emphasis spacing defects recorded."
+      "review_notes": "Full body read; categories suitable. id/ar already have relevant same-language Bayes and St Petersburg links. ru/hi need both contextual links. No edits yet. Existing duplicate date and claims about proper distributions/infinite expectations require separate editorial review; ru emphasis spacing defects recorded.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/2つの封筒のパラドックス/index.id.md",
@@ -450,7 +462,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": false,
@@ -464,7 +476,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "005-two-envelopes",
-      "review_notes": "Full body read; categories suitable. id/ar already have relevant same-language Bayes and St Petersburg links. ru/hi need both contextual links. No edits yet. Existing duplicate date and claims about proper distributions/infinite expectations require separate editorial review; ru emphasis spacing defects recorded."
+      "review_notes": "Full body read; categories suitable. id/ar already have relevant same-language Bayes and St Petersburg links. ru/hi need both contextual links. No edits yet. Existing duplicate date and claims about proper distributions/infinite expectations require separate editorial review; ru emphasis spacing defects recorded.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/2つの封筒のパラドックス/index.ko.md",
@@ -479,7 +493,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": false,
@@ -493,7 +507,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "005-two-envelopes",
-      "review_notes": "Full body read; categories retained; existing Bayes/St Petersburg links relevant. Broken self-link in conclusion uses quoted slug /ko/p/'two-envelopes-paradox'/ and must be unwrapped preserving label. No edits yet; duplicate date and mathematical factual caveat as other languages."
+      "review_notes": "Full body read; categories retained; existing Bayes/St Petersburg links relevant. Broken self-link in conclusion uses quoted slug /ko/p/'two-envelopes-paradox'/ and must be unwrapped preserving label. No edits yet; duplicate date and mathematical factual caveat as other languages.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/2つの封筒のパラドックス/index.md",
@@ -508,7 +524,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": false,
@@ -522,7 +538,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "005-two-envelopes",
-      "review_notes": "Full Japanese body read. Existing Bayes/St Petersburg links relevant; mathematical-paradoxes/probability-theory retained provisionally. Editorial follow-up: claims about proper distributions versus infinite expectation require separate mathematical review; do not alter math/prose in link/category audit. Duplicate date fields pre-existing."
+      "review_notes": "Full Japanese body read. Existing Bayes/St Petersburg links relevant; mathematical-paradoxes/probability-theory retained provisionally. Editorial follow-up: claims about proper distributions versus infinite expectation require separate mathematical review; do not alter math/prose in link/category audit. Duplicate date fields pre-existing.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/2つの封筒のパラドックス/index.pt.md",
@@ -537,7 +555,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": false,
@@ -551,7 +569,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "005-two-envelopes",
-      "review_notes": "Full body read. Existing categories suitable, Bayes links relevant. Spanish needs St Petersburg link in body; Portuguese already links it. No edits yet. Existing mathematical factual caveat and duplicate date as other versions."
+      "review_notes": "Full body read. Existing categories suitable, Bayes links relevant. Spanish needs St Petersburg link in body; Portuguese already links it. No edits yet. Existing mathematical factual caveat and duplicate date as other versions.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/2つの封筒のパラドックス/index.ru.md",
@@ -566,7 +586,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": false,
@@ -580,7 +600,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "005-two-envelopes",
-      "review_notes": "Full body read; categories suitable. id/ar already have relevant same-language Bayes and St Petersburg links. ru/hi need both contextual links. No edits yet. Existing duplicate date and claims about proper distributions/infinite expectations require separate editorial review; ru emphasis spacing defects recorded."
+      "review_notes": "Full body read; categories suitable. id/ar already have relevant same-language Bayes and St Petersburg links. ru/hi need both contextual links. No edits yet. Existing duplicate date and claims about proper distributions/infinite expectations require separate editorial review; ru emphasis spacing defects recorded.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/2つの封筒のパラドックス/index.zh-cn.md",
@@ -595,7 +617,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": false,
@@ -609,7 +631,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "005-two-envelopes",
-      "review_notes": "Full body reviewed. Existing same-language Bayes and St Petersburg links relevant. Existing mathematical-paradoxes/probability-theory categories appropriate. No edits; target/render validation pending. Existing claims about proper distributions/infinite expectation need separate editorial review; duplicate date fields retained. zh-tw has pre-existing malformed emphasis to track separately."
+      "review_notes": "Full body reviewed. Existing same-language Bayes and St Petersburg links relevant. Existing mathematical-paradoxes/probability-theory categories appropriate. No edits; target/render validation pending. Existing claims about proper distributions/infinite expectation need separate editorial review; duplicate date fields retained. zh-tw has pre-existing malformed emphasis to track separately.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/2つの封筒のパラドックス/index.zh-tw.md",
@@ -624,7 +648,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": false,
@@ -638,7 +662,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "005-two-envelopes",
-      "review_notes": "Full body reviewed. Existing same-language Bayes and St Petersburg links relevant. Existing mathematical-paradoxes/probability-theory categories appropriate. No edits; target/render validation pending. Existing claims about proper distributions/infinite expectation need separate editorial review; duplicate date fields retained. zh-tw has pre-existing malformed emphasis to track separately."
+      "review_notes": "Full body reviewed. Existing same-language Bayes and St Petersburg links relevant. Existing mathematical-paradoxes/probability-theory categories appropriate. No edits; target/render validation pending. Existing claims about proper distributions/infinite expectation need separate editorial review; duplicate date fields retained. zh-tw has pre-existing malformed emphasis to track separately.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.ar.md",
@@ -1042,7 +1068,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1056,7 +1082,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "007-stable-diffusion-colab",
-      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.de.md",
@@ -1070,7 +1098,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1084,7 +1112,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "007-stable-diffusion-colab",
-      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.en.md",
@@ -1098,7 +1128,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1112,7 +1142,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "007-stable-diffusion-colab",
-      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.es.md",
@@ -1126,7 +1158,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1140,7 +1172,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "007-stable-diffusion-colab",
-      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.fr.md",
@@ -1154,7 +1188,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1168,7 +1202,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "007-stable-diffusion-colab",
-      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.hi.md",
@@ -1182,7 +1218,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1196,7 +1232,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "007-stable-diffusion-colab",
-      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.id.md",
@@ -1210,7 +1248,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1224,7 +1262,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "007-stable-diffusion-colab",
-      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.ko.md",
@@ -1238,7 +1278,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1252,7 +1292,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "007-stable-diffusion-colab",
-      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
@@ -1266,7 +1308,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1280,7 +1322,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "007-stable-diffusion-colab",
-      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.pt.md",
@@ -1294,7 +1338,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1308,7 +1352,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "007-stable-diffusion-colab",
-      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.ru.md",
@@ -1322,7 +1368,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1336,7 +1382,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "007-stable-diffusion-colab",
-      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.zh-cn.md",
@@ -1350,7 +1398,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1364,7 +1412,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "007-stable-diffusion-colab",
-      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.zh-tw.md",
@@ -1378,7 +1428,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1392,7 +1442,9 @@
         "categories": "4305 existing full-site errors unchanged; reviewed pages use defined categories"
       },
       "batch": "007-stable-diffusion-colab",
-      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current."
+      "review_notes": "Full body reviewed in all languages. Code blocks were read in Japanese and verified byte-for-byte equal after newline normalization across translations; translated surrounding prose read individually. Retain programming and add image-generation for the central application. No useful contextual internal-link addition without touching code/product names or introducing new prose. Preserve code/images/legacy slugs/external references. Dated technical instructions and duplicate date retained; not claimed current.",
+      "commit": "882c1b704da941862776ed93abbbad1a9d720a66",
+      "push_status": "Normal push succeeded; origin/main SHA matched on 2026-10-16"
     },
     {
       "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.ar.md",
