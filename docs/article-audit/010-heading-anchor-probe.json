@@ -1,0 +1,9 @@
+{
+  "status": "Isolated Hugo probe only; production article not edited",
+  "hugo_explicit_heading_id_preserves_anchor": true,
+  "heading_text_equal": true,
+  "before": "### 3.1 GPU（[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)ィックボード）",
+  "candidate_after": "### 3.1 GPU（グラフィックボード） {#31-gpuグラフhttpskenjiblogptree-graph-data-structures-search-dfs-bfs-dijkstraィックボード}",
+  "old_id": "31-gpuグラフhttpskenjiblogptree-graph-data-structures-search-dfs-bfs-dijkstraィックボード",
+  "remaining": "Compare actual article baseline ID, add guarded plan support, and verify full rendered article before applying."
+}

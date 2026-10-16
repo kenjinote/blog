@@ -1,0 +1,54 @@
+{
+  "batch": "010-local-image-generation-review",
+  "articles": [
+    {
+      "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+      "source_sha256": "de6c0de3c8dd6e603950cbe488e9095d24f0dddb7b86d810df498ebbb6af7073",
+      "body_reviewed": true,
+      "status": "review only; not edited",
+      "findings": [
+        "Heading 3.1 links グラフ inside グラフィックボード to graph data structures. Must fix while preserving its existing generated heading anchor, not silently leave a misleading link indefinitely. Requires explicit anchor-preserving edit support and browser verification.",
+        "Body ブロック links substring ロック to SQL locks: unwrap.",
+        "Fooocus and conclusion image-generation パイプライン links point to CI/CD: unwrap both.",
+        "Flux.1 model link points to React state-management Flux: unwrap.",
+        "Gaussian noise points to Gauss biography; consider a probability/normal-distribution explanation after target review.",
+        "Potential useful targets: diffusion model theory, LoRA, GPU memory optimization; inspect targets and add in body only.",
+        "Existing ai/image-generation/stable-diffusion categories need definition check and semantic consolidation after reading all languages.",
+        "Technical setup claims include outdated hard-coded versions and categorical performance/safety assertions; record for separate editorial verification, preserve source in link audit."
+      ],
+      "remaining_languages": "All twelve translations unread."
+    },
+    {
+      "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.en.md",
+      "source_sha256": "b6c3af71b6d35b04f430e74f0da1c378dd50ceb05e5474e537a46b5b43fc154a",
+      "body_reviewed": true,
+      "status": "review only; not edited",
+      "findings": [
+        "Flux.1 model linked to React state-management Flux: unwrap.",
+        "No existing incorrect graph/lock/pipeline links as seen in Japanese.",
+        "Potential explanatory links: diffusion models, Markov chain, LoRA and GPU memory optimization; inspect targets before selecting.",
+        "ai/image-generation/stable-diffusion are appropriate subject categories; stable-diffusion Japanese definition exists, other localized definitions must be checked.",
+        "Preserve commands, model paths, mathematics and two Mermaid diagrams. Technical assertions require separate editorial review."
+      ],
+      "remaining_languages": "Eleven translations unread; Japanese and English fully read."
+    },
+    {
+      "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.de.md",
+      "source_sha256": "b282b0343b3a3dd034bf0abec05ae3d9d3cb472b75802013de9e20ae1b03922c",
+      "body_reviewed": true,
+      "status": "review only; not edited",
+      "findings": [
+        "Ordinary mathematical Zustand linked to React state management; unwrap without changing nearby math. Check whether baseline renderer emits this math-adjacent prose.",
+        "Two image-generation Pipeline links point to CI/CD; unwrap preserving plural suffix s.",
+        "Flux.1 model linked to React state-management Flux: unwrap.",
+        "Consider Markov-Kette and VRAM optimization body links after confirming same-language targets.",
+        "Retain ai/image-generation/stable-diffusion pending localized category checks. Preserve duplicate date fields, math, fenced commands and diagrams."
+      ],
+      "remaining_languages": "Ten translations unread; ja/en/de fully read."
+    }
+  ],
+  "target_review": {
+    "gpu_memory": "Japanese intro and scope read: content/post/AI開発におけるGPUメモリ不足の解消テクニック/index.md covers VRAM bottlenecks, CPU offloading and quantization. Candidate appropriate for VRAM optimization body context.",
+    "diffusion_lora": "No dedicated article found by filename/title search; do not invent a destination."
+  }
+}

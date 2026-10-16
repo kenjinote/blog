@@ -1,0 +1,263 @@
+{
+  "batch": "009-ai-career-remaining",
+  "status": "validated",
+  "review": "All remaining ten full bodies reviewed (Hindi truncated section 5 separately read). Preserve three canonical categories and headings. Remove only reviewed adjacent duplicates or unrelated API/Local links. Retain existing zh-tw/hi TDD implementation guide links after checking target introductions. Add dedicated TDD philosophy links in the other eight languages. Unsupported AI capability generalizations and productivity/automation equations retained for separate editorial review.",
+  "articles": [
+    {
+      "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.fr.md",
+      "source_sha256": "a14a941bd8af5b2d8a572e7e468e3f538478fc8c5dc34ba7e0e0664e25092222",
+      "unwrap_links": [
+        {
+          "link": "[LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)",
+          "context": "En 2026, le domaine du développement logiciel traverse une période de bouleversements sans précédent. Il y a quelques années à peine, le concept d'\"IA qui écrit du code\" se limitait tout au plus à générer du code passe-partout (boilerplate) ou à l'autocomplétion de fonctions, agissant comme un simple \"outil d'assistance\" pour les programmeurs. Cependant, avec l'évolution phénoménale des [grands modèles de langage](/fr/p/large-language-models-llm-transformer-prompt-engineering/) ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)), la situation s'est fondamentalement inversée. L'IA moderne n'est plus une simple \"machine à écrire intelligente\". Si on lui fournit un document de définition des exigences, elle s'est transformée en un \"ingénieur junior autonome\" capable d'assembler instantanément et de manière autonome l'ensemble d'un système, allant du front-end à la logique back-end, la conception du schéma de la base de données, et même la construction de pipelines [CI/CD](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/).",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[Infrastructure as Code](/fr/p/iac-infrastructure-as-code-terraform/)",
+          "context": "[Infrastructure as Code](/fr/p/iac-infrastructure-as-code-terraform/)",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[Terraform](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/)",
+          "context": "[Terraform](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/)",
+          "reason": "duplicate"
+        }
+      ],
+      "links": [
+        {
+          "term": "développement piloté par les tests",
+          "target": "content/post/test-driven-development-tdd-bdd/index.fr.md"
+        }
+      ],
+      "category_decision": "Full body fits existing tech-career, ai, software-engineering; retain all three localized categories."
+    },
+    {
+      "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.es.md",
+      "source_sha256": "083b4b349f7fe47e0b307d549fb37b441cd4b7cc269a367acbceed5c70e2e9a4",
+      "unwrap_links": [
+        {
+          "link": "[Infrastructure as Code](/es/p/iac-infrastructure-as-code-terraform/)",
+          "context": "[Infrastructure as Code](/es/p/iac-infrastructure-as-code-terraform/)",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[Terraform](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/)",
+          "context": "[Terraform](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/)",
+          "reason": "duplicate"
+        }
+      ],
+      "links": [
+        {
+          "term": "Desarrollo Guiado por Pruebas",
+          "target": "content/post/test-driven-development-tdd-bdd/index.es.md"
+        }
+      ],
+      "category_decision": "Full body fits existing tech-career, ai, software-engineering; retain all three localized categories."
+    },
+    {
+      "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.pt.md",
+      "source_sha256": "16d4388f13a773092bd04d742585b191c4cd3df4cbcd01e7cdef0fdd43348f7a",
+      "unwrap_links": [
+        {
+          "link": "[Infrastructure as Code](/pt/p/iac-infrastructure-as-code-terraform/)",
+          "context": "[Infrastructure as Code](/pt/p/iac-infrastructure-as-code-terraform/)",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[Terraform](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/)",
+          "context": "[Terraform](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/)",
+          "reason": "duplicate"
+        }
+      ],
+      "links": [
+        {
+          "term": "Desenvolvimento Orientado a Testes",
+          "target": "content/post/test-driven-development-tdd-bdd/index.pt.md"
+        }
+      ],
+      "category_decision": "Full body fits existing tech-career, ai, software-engineering; retain all three localized categories."
+    },
+    {
+      "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.ko.md",
+      "source_sha256": "0b7da621dea5fd73e841098af40382e896b07d4c50c2ef6921170e678d98ead8",
+      "unwrap_links": [
+        {
+          "link": "[LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)",
+          "context": "2026년 현재, 소프트웨어 개발 현장은 그 어느 때보다 격변기를 맞이하고 있다. 불과 몇 년 전만 해도 'AI가 코드를 작성한다'는 개념은 기껏해야 보일러플레이트(상용구 코드) 생성이나 함수의 자동 완성 같은 프로그래머의 '보조 도구' 역할에 머물러 있었다. 하지만 [대규모 언어 모델](/ko/p/large-language-models-llm-transformer-prompt-engineering/)([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 경이적인 진화로 인해 상황은 근본적으로 뒤집혔다. 현대의 AI는 단순한 '똑똑한 타자기'가 아니라, 요구사항 정의서를 주면 프론트엔드부터 백엔드의 로직, 데이터베이스의 스키마 설계, 심지어 [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) 파이프라인 구축에 이르기까지 시스템 전체를 순식간에, 그리고 자율적으로 조립하는 능력을 갖춘 '자율형 주니어 엔지니어'로 변모했다.",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[Infrastructure as Code](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/)",
+          "context": "[Infrastructure as Code](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/)",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[Terraform](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/)",
+          "context": "[Terraform](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/)",
+          "reason": "duplicate"
+        }
+      ],
+      "links": [
+        {
+          "term": "테스트 주도 개발",
+          "target": "content/post/test-driven-development-tdd-bdd/index.ko.md"
+        }
+      ],
+      "category_decision": "Full body fits existing tech-career, ai, software-engineering; retain all three localized categories."
+    },
+    {
+      "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.zh-cn.md",
+      "source_sha256": "0303b9bc1b919b3b2088ddea9aa46508d6b41bc5a1a6fb78bfcb749bb4e0ee9d",
+      "unwrap_links": [
+        {
+          "link": "[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)",
+          "context": "2026年现在，软件开发领域正处于前所未有的剧变期。就在几年前，“AI写代码”的概念顶多还停留在生成样板代码（Boilerplate）或函数自动补全等作为程序员“辅助工具”的角色。然而，随着[大型语言模型](/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的惊人进化，情况发生了根本性的颠覆。现代的AI不仅仅是一台“聪明的打字机”，只要提供需求定义文档，从前端到后端逻辑、数据库的Schema设计，甚至到[CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)流水线的构建，它都已经蜕变成为能够在瞬间自主组建整个系统的“自主型初级工程师”。",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[IaC](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/)",
+          "context": "[IaC](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/)",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[Terraform](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/)",
+          "context": "[Terraform](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/)",
+          "reason": "duplicate"
+        }
+      ],
+      "links": [
+        {
+          "term": "测试驱动开发",
+          "target": "content/post/test-driven-development-tdd-bdd/index.zh-cn.md"
+        }
+      ],
+      "category_decision": "Full body fits existing tech-career, ai, software-engineering; retain all three localized categories."
+    },
+    {
+      "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.zh-tw.md",
+      "source_sha256": "1c89183c61806cbc629c677ca8f6beef4b925b411b33afeb8b684643fbaf266d",
+      "unwrap_links": [
+        {
+          "link": "[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)",
+          "context": "2026年的今天，軟體開發的現場正處於前所未有的劇變期。就在幾年前，「AI 寫程式」的概念充其量只停留在生成樣板程式碼（Boilerplate）或自動補全函式等程式設計師的「輔助工具」角色。然而，隨著[大型語言模型](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）的驚人進化，情況發生了根本性的翻轉。現代的 AI 已不再只是個「聰明的打字機」，只要提供需求定義文件，它就能化身為「自主型初階工程師」，具備瞬間且自主地將從前端到後端邏輯、資料庫結構設計，甚至是建構 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 管線等整個系統組合起來的能力。",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[Infrastructure as Code](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/)",
+          "context": "[Infrastructure as Code](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/)",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[Terraform](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/)",
+          "context": "[Terraform](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/)",
+          "reason": "duplicate"
+        }
+      ],
+      "links": [],
+      "category_decision": "Full body fits existing tech-career, ai, software-engineering; retain all three localized categories."
+    },
+    {
+      "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.id.md",
+      "source_sha256": "7e205a2de0b9f4e47493794dc6ca4144a468428a629c96d95dc2a8e188e0a314",
+      "unwrap_links": [
+        {
+          "link": "[IaC](/id/p/iac-infrastructure-as-code-terraform/)",
+          "context": "[IaC](/id/p/iac-infrastructure-as-code-terraform/)",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[Terraform](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/)",
+          "context": "[Terraform](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/)",
+          "reason": "duplicate"
+        }
+      ],
+      "links": [
+        {
+          "term": "Test-Driven Development",
+          "target": "content/post/test-driven-development-tdd-bdd/index.id.md"
+        }
+      ],
+      "category_decision": "Full body fits existing tech-career, ai, software-engineering; retain all three localized categories."
+    },
+    {
+      "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.ru.md",
+      "source_sha256": "3e2e084ae37d8a2ecc51bc5dbb21976506c9afd2c95ec52dd78612529235d67e",
+      "unwrap_links": [
+        {
+          "link": "[LLM](https://kenji.blog/ru/p/large-language-models-llm-transformer-prompt-engineering/)",
+          "context": "По состоянию на 2026 год сфера разработки программного обеспечения переживает период беспрецедентных потрясений. Всего несколько лет назад концепция «ИИ пишет код» сводилась, в лучшем случае, к роли «вспомогательного инструмента» программиста: генерации шаблонного кода (boilerplate) и автодополнению функций. Однако благодаря ошеломляющей эволюции [больших языковых моделей](/ru/p/large-language-models-llm-transformer-prompt-engineering/) ([LLM](https://kenji.blog/ru/p/large-language-models-llm-transformer-prompt-engineering/)) ситуация в корне изменилась. Современный ИИ — это не просто «умная пишущая машинка». Стоит лишь дать ему спецификацию требований, и он превращается в «автономного младшего инженера», способного мгновенно и самостоятельно собрать всю систему: от фронтенда до бэкенд-логики, проектирования схемы базы данных и даже настройки пайплайна [CI/CD](https://kenji.blog/ru/p/cicd-pipeline-github-actions-best-practices/).",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[Terraform](https://kenji.blog/ru/p/iac-infrastructure-as-code-terraform/)",
+          "context": "[Terraform](https://kenji.blog/ru/p/iac-infrastructure-as-code-terraform/)",
+          "reason": "duplicate"
+        }
+      ],
+      "links": [
+        {
+          "term": "разработки через тестирование",
+          "target": "content/post/test-driven-development-tdd-bdd/index.ru.md"
+        }
+      ],
+      "category_decision": "Full body fits existing tech-career, ai, software-engineering; retain all three localized categories."
+    },
+    {
+      "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.ar.md",
+      "source_sha256": "caa342109abcf8af1422b5b60c47d9234087c5af33bf1e31b1572542f4253ccd",
+      "unwrap_links": [
+        {
+          "link": "[IaC](https://kenji.blog/ar/p/iac-infrastructure-as-code-terraform/)",
+          "context": "[IaC](https://kenji.blog/ar/p/iac-infrastructure-as-code-terraform/)",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[Terraform](https://kenji.blog/ar/p/iac-infrastructure-as-code-terraform/)",
+          "context": "[Terraform](https://kenji.blog/ar/p/iac-infrastructure-as-code-terraform/)",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[API](/ar/p/chatgpt-gemini-claude-api-comparison/)",
+          "context": "في مثل هذا العصر، كيف يمكننا نحن \"المبرمجين\" و\"مهندسي البرمجيات\" البقاء على قيد الحياة؟ مع الانكماش السريع للقيمة الاقتصادية لفعل \"كتابة الأكواد\" نفسه، فإن \"المبرمج\" الذي يعرف فقط بناء الجملة (الـ syntax) للغة برمجة معينة ويتقن واجهات برمجة التطبيقات ([API](/ar/p/chatgpt-gemini-claude-api-comparison/)) لإطار عمل محدد يتم إقصاؤه سريعًا من السوق.",
+          "reason": "misleading"
+        },
+        {
+          "link": "[API](/ar/p/chatgpt-gemini-claude-api-comparison/)",
+          "context": "المهام التي تتميز بقدرة عالية على التنبؤ واعتماد منخفض على السياق، مثل كتابة عمليات التوجيه (routing) في واجهات برمجة التطبيقات ([API](/ar/p/chatgpt-gemini-claude-api-comparison/)) أو إنشاء شاشات CRUD بسيطة، سيكون لها $P_{auto} \\approx 1$ وسيتم أتمتتها بالكامل تقريبًا. من ناحية أخرى، المهام التي تعتمد بشكل كبير على السياق، مثل \"كيفية دمج الأنظمة القديمة مع الخدمات المصغرة الجديدة بأمان\" أو \"كيفية تصميم تدفق مصادقة يلبي متطلبات الإدارة القانونية دون الإضرار بتجربة المستخدم\"، يصعب أتمتتها.",
+          "reason": "misleading"
+        }
+      ],
+      "links": [
+        {
+          "term": "التطوير القائم على الاختبار",
+          "target": "content/post/test-driven-development-tdd-bdd/index.ar.md"
+        }
+      ],
+      "category_decision": "Full body fits existing tech-career, ai, software-engineering; retain all three localized categories."
+    },
+    {
+      "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.hi.md",
+      "source_sha256": "56b9be24334df77354a734c99ccd481e3d32bc589c3b92217adf0c313c0a5c8a",
+      "unwrap_links": [
+        {
+          "link": "[Infrastructure as Code](https://kenji.blog/hi/p/iac-infrastructure-as-code-terraform/)",
+          "context": "[Infrastructure as Code](https://kenji.blog/hi/p/iac-infrastructure-as-code-terraform/)",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[Local](/hi/p/git%E3%81%A7%E3%82%BF%E3%82%B0%E3%82%92%E6%B6%88%E3%81%99/)",
+          "context": "[Local](/hi/p/git%E3%81%A7%E3%82%BF%E3%82%B0%E3%82%92%E6%B6%88%E3%81%99/)",
+          "reason": "misleading"
+        }
+      ],
+      "links": [],
+      "category_decision": "Full body fits existing tech-career, ai, software-engineering; retain all three localized categories."
+    }
+  ],
+  "validation": {
+    "unit_tests": 28,
+    "hugo": "exit 0, 554288 ms",
+    "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
+    "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
+  }
+}

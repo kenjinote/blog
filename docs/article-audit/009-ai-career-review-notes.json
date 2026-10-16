@@ -9,7 +9,7 @@
     "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.fr.md",
     "source_sha256": "a14a941bd8af5b2d8a572e7e468e3f538478fc8c5dc34ba7e0e0664e25092222",
     "category_decision": "Retain tech-career / ai / software-engineering.",
-    "status": "Full body reviewed; not edited or validated. Same unsupported productivity/automation assertions need separate editorial review."
+    "status": "Review incorporated into applied and validated 009-ai-career-remaining.json; source_sha256 here is the pre-edit review SHA."
   },
   "es": {
     "unwrap_labels": [
@@ -20,7 +20,7 @@
     "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.es.md",
     "source_sha256": "083b4b349f7fe47e0b307d549fb37b441cd4b7cc269a367acbceed5c70e2e9a4",
     "category_decision": "Retain tech-career / ai / software-engineering.",
-    "status": "Full body reviewed; not edited or validated. Same unsupported productivity/automation assertions need separate editorial review."
+    "status": "Review incorporated into applied and validated 009-ai-career-remaining.json; source_sha256 here is the pre-edit review SHA."
   },
   "pt": {
     "unwrap_labels": [
@@ -31,7 +31,7 @@
     "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.pt.md",
     "source_sha256": "16d4388f13a773092bd04d742585b191c4cd3df4cbcd01e7cdef0fdd43348f7a",
     "category_decision": "Retain tech-career / ai / software-engineering.",
-    "status": "Full body reviewed; not edited or validated. Unsupported AI capability and mathematical-model assertions need separate editorial review."
+    "status": "Review incorporated into applied and validated 009-ai-career-remaining.json; source_sha256 here is the pre-edit review SHA."
   },
   "ko": {
     "unwrap_labels": [
@@ -43,7 +43,7 @@
     "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.ko.md",
     "source_sha256": "0b7da621dea5fd73e841098af40382e896b07d4c50c2ef6921170e678d98ead8",
     "category_decision": "Retain tech-career / ai / software-engineering.",
-    "status": "Full body reviewed; not edited or validated. Unsupported AI capability and mathematical-model assertions need separate editorial review."
+    "status": "Review incorporated into applied and validated 009-ai-career-remaining.json; source_sha256 here is the pre-edit review SHA."
   },
   "zh-cn": {
     "unwrap_labels": [
@@ -55,7 +55,7 @@
     "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.zh-cn.md",
     "source_sha256": "0303b9bc1b919b3b2088ddea9aa46508d6b41bc5a1a6fb78bfcb749bb4e0ee9d",
     "category_decision": "Retain tech-career / ai / software-engineering.",
-    "status": "Full body reviewed; not edited or validated. Unsupported AI capability and mathematical-model assertions need separate editorial review."
+    "status": "Review incorporated into applied and validated 009-ai-career-remaining.json; source_sha256 here is the pre-edit review SHA."
   },
   "zh-tw": {
     "unwrap_labels": [
@@ -68,7 +68,7 @@
     "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.zh-tw.md",
     "source_sha256": "1c89183c61806cbc629c677ca8f6beef4b925b411b33afeb8b684643fbaf266d",
     "category_decision": "Retain tech-career / ai / software-engineering.",
-    "status": "Full body reviewed; not edited or validated. Unsupported AI capability and mathematical-model assertions need separate editorial review."
+    "status": "Review incorporated into applied and validated 009-ai-career-remaining.json; source_sha256 here is the pre-edit review SHA."
   },
   "id": {
     "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.id.md",
@@ -79,6 +79,6 @@
     ],
     "add_tdd_term": "Test-Driven Development",
     "category_decision": "Retain tech-career / ai / software-engineering.",
-    "status": "Full body reviewed; not edited or validated. Preserve section 5 heading link. Unsupported AI capability and model assertions need separate editorial review."
+    "status": "Review incorporated into applied and validated 009-ai-career-remaining.json; source_sha256 here is the pre-edit review SHA."
   }
 }

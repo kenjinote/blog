@@ -1,0 +1,2212 @@
+[
+  {
+    "batch": "011-cpp-iso8601",
+    "language": "ar",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "معيار ISO C++ 20 (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "المتطلبات-الأساسية",
+          "text": "المتطلبات الأساسية"
+        },
+        {
+          "id": "الشفرة",
+          "text": "الشفرة"
+        },
+        {
+          "id": "مراجع",
+          "text": "مراجع"
+        }
+      ],
+      "paragraphs": [
+        "هذه كانت طريقة إخراج الوقت الحالي بتنسيق ISO8601 في C++."
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "البرمجة",
+          "path": "/ar/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "معيار ISO C++ 20 (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "المتطلبات-الأساسية",
+          "text": "المتطلبات الأساسية"
+        },
+        {
+          "id": "الشفرة",
+          "text": "الشفرة"
+        },
+        {
+          "id": "مراجع",
+          "text": "مراجع"
+        }
+      ],
+      "paragraphs": [
+        "هذه كانت طريقة إخراج الوقت الحالي بتنسيق ISO8601 في C++."
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "البرمجة",
+          "path": "/ar/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "011-cpp-iso8601",
+    "language": "de",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "ISO C++ 20 Standard (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "voraussetzungen",
+          "text": "Voraussetzungen"
+        },
+        {
+          "id": "code",
+          "text": "Code"
+        },
+        {
+          "id": "referenzen",
+          "text": "Referenzen"
+        }
+      ],
+      "paragraphs": [
+        "So können Sie die aktuelle Zeit im ISO 8601 Format in C++ ausgeben."
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Programmierung",
+          "path": "/de/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "ISO C++ 20 Standard (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "voraussetzungen",
+          "text": "Voraussetzungen"
+        },
+        {
+          "id": "code",
+          "text": "Code"
+        },
+        {
+          "id": "referenzen",
+          "text": "Referenzen"
+        }
+      ],
+      "paragraphs": [
+        "So können Sie die aktuelle Zeit im ISO 8601 Format in C++ ausgeben."
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Programmierung",
+          "path": "/de/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "011-cpp-iso8601",
+    "language": "en",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "ISO C++ 20 Standard (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "prerequisites",
+          "text": "Prerequisites"
+        },
+        {
+          "id": "code",
+          "text": "Code"
+        },
+        {
+          "id": "references",
+          "text": "References"
+        }
+      ],
+      "paragraphs": [
+        "That’s how to output the current time in ISO8601 format in C++."
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Programming",
+          "path": "/en/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "ISO C++ 20 Standard (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "prerequisites",
+          "text": "Prerequisites"
+        },
+        {
+          "id": "code",
+          "text": "Code"
+        },
+        {
+          "id": "references",
+          "text": "References"
+        }
+      ],
+      "paragraphs": [
+        "That’s how to output the current time in ISO8601 format in C++."
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Programming",
+          "path": "/en/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "011-cpp-iso8601",
+    "language": "es",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "Estándar ISO C++ 20 (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "requisitos",
+          "text": "Requisitos"
+        },
+        {
+          "id": "código",
+          "text": "Código"
+        },
+        {
+          "id": "referencias",
+          "text": "Referencias"
+        }
+      ],
+      "paragraphs": [
+        "Esta fue la forma de generar la hora actual en formato ISO8601 en C++."
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Programación",
+          "path": "/es/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "Estándar ISO C++ 20 (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "requisitos",
+          "text": "Requisitos"
+        },
+        {
+          "id": "código",
+          "text": "Código"
+        },
+        {
+          "id": "referencias",
+          "text": "Referencias"
+        }
+      ],
+      "paragraphs": [
+        "Esta fue la forma de generar la hora actual en formato ISO8601 en C++."
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Programación",
+          "path": "/es/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "011-cpp-iso8601",
+    "language": "fr",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "Norme ISO C++ 20 (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "prérequis",
+          "text": "Prérequis"
+        },
+        {
+          "id": "code",
+          "text": "Code"
+        },
+        {
+          "id": "références",
+          "text": "Références"
+        }
+      ],
+      "paragraphs": [
+        "Voici comment afficher l’heure actuelle au format ISO 8601 en C++."
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Programmation",
+          "path": "/fr/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "Norme ISO C++ 20 (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "prérequis",
+          "text": "Prérequis"
+        },
+        {
+          "id": "code",
+          "text": "Code"
+        },
+        {
+          "id": "références",
+          "text": "Références"
+        }
+      ],
+      "paragraphs": [
+        "Voici comment afficher l’heure actuelle au format ISO 8601 en C++."
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Programmation",
+          "path": "/fr/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "011-cpp-iso8601",
+    "language": "hi",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "ISO C++ 20 मानक (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "परव-शरत",
+          "text": "पूर्व शर्तें"
+        },
+        {
+          "id": "कड",
+          "text": "कोड"
+        },
+        {
+          "id": "सदरभ",
+          "text": "संदर्भ"
+        }
+      ],
+      "paragraphs": [
+        "इस प्रकार आप C++ में वर्तमान समय को ISO 8601 प्रारूप में प्रिंट कर सकते हैं।"
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "प्रोग्रामिंग",
+          "path": "/hi/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "ISO C++ 20 मानक (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "परव-शरत",
+          "text": "पूर्व शर्तें"
+        },
+        {
+          "id": "कड",
+          "text": "कोड"
+        },
+        {
+          "id": "सदरभ",
+          "text": "संदर्भ"
+        }
+      ],
+      "paragraphs": [
+        "इस प्रकार आप C++ में वर्तमान समय को ISO 8601 प्रारूप में प्रिंट कर सकते हैं।"
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "प्रोग्रामिंग",
+          "path": "/hi/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "011-cpp-iso8601",
+    "language": "id",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "Standar ISO C++ 20 (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "prasyarat",
+          "text": "Prasyarat"
+        },
+        {
+          "id": "kode",
+          "text": "Kode"
+        },
+        {
+          "id": "referensi",
+          "text": "Referensi"
+        }
+      ],
+      "paragraphs": [
+        "Demikianlah cara menampilkan waktu saat ini dalam format ISO8601 di C++."
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Pemrograman",
+          "path": "/id/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "Standar ISO C++ 20 (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "prasyarat",
+          "text": "Prasyarat"
+        },
+        {
+          "id": "kode",
+          "text": "Kode"
+        },
+        {
+          "id": "referensi",
+          "text": "Referensi"
+        }
+      ],
+      "paragraphs": [
+        "Demikianlah cara menampilkan waktu saat ini dalam format ISO8601 di C++."
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Pemrograman",
+          "path": "/id/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "011-cpp-iso8601",
+    "language": "ko",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "ISO C++ 20 표준 (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "전제-조건",
+          "text": "전제 조건"
+        },
+        {
+          "id": "코드",
+          "text": "코드"
+        },
+        {
+          "id": "참고",
+          "text": "참고"
+        }
+      ],
+      "paragraphs": [
+        "이상, C++에서 현재 시간을 ISO8601 형식으로 출력하는 방법이었습니다."
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "프로그래밍",
+          "path": "/ko/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "ISO C++ 20 표준 (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "전제-조건",
+          "text": "전제 조건"
+        },
+        {
+          "id": "코드",
+          "text": "코드"
+        },
+        {
+          "id": "참고",
+          "text": "참고"
+        }
+      ],
+      "paragraphs": [
+        "이상, C++에서 현재 시간을 ISO8601 형식으로 출력하는 방법이었습니다."
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "프로그래밍",
+          "path": "/ko/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "011-cpp-iso8601",
+    "language": "ja",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "ISO C++ 20 標準 (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "前提",
+          "text": "前提"
+        },
+        {
+          "id": "コード",
+          "text": "コード"
+        },
+        {
+          "id": "参考",
+          "text": "参考"
+        }
+      ],
+      "paragraphs": [
+        "以上、C++で現在時刻をISO8601フォーマットで出力する方法でした。"
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "プログラミング",
+          "path": "/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "ISO C++ 20 標準 (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "前提",
+          "text": "前提"
+        },
+        {
+          "id": "コード",
+          "text": "コード"
+        },
+        {
+          "id": "参考",
+          "text": "参考"
+        }
+      ],
+      "paragraphs": [
+        "以上、C++で現在時刻をISO8601フォーマットで出力する方法でした。"
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "プログラミング",
+          "path": "/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "011-cpp-iso8601",
+    "language": "pt",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "Padrão ISO C++ 20 (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "pré-requisitos",
+          "text": "Pré-requisitos"
+        },
+        {
+          "id": "código",
+          "text": "Código"
+        },
+        {
+          "id": "referências",
+          "text": "Referências"
+        }
+      ],
+      "paragraphs": [
+        "É assim que você imprime a hora atual no formato ISO 8601 em C++."
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Programação",
+          "path": "/pt/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "Padrão ISO C++ 20 (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "pré-requisitos",
+          "text": "Pré-requisitos"
+        },
+        {
+          "id": "código",
+          "text": "Código"
+        },
+        {
+          "id": "referências",
+          "text": "Referências"
+        }
+      ],
+      "paragraphs": [
+        "É assim que você imprime a hora atual no formato ISO 8601 em C++."
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Programação",
+          "path": "/pt/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "011-cpp-iso8601",
+    "language": "ru",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "Стандарт ISO C++ 20 (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "предварительные-условия",
+          "text": "Предварительные условия"
+        },
+        {
+          "id": "код",
+          "text": "Код"
+        },
+        {
+          "id": "ссылки",
+          "text": "Ссылки"
+        }
+      ],
+      "paragraphs": [
+        "Вот как можно вывести текущее время в формате ISO8601 в C++."
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Программирование",
+          "path": "/ru/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "Стандарт ISO C++ 20 (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "предварительные-условия",
+          "text": "Предварительные условия"
+        },
+        {
+          "id": "код",
+          "text": "Код"
+        },
+        {
+          "id": "ссылки",
+          "text": "Ссылки"
+        }
+      ],
+      "paragraphs": [
+        "Вот как можно вывести текущее время в формате ISO8601 в C++."
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Программирование",
+          "path": "/ru/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "011-cpp-iso8601",
+    "language": "zh-cn",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "ISO C++ 20 标准 (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "前提条件",
+          "text": "前提条件"
+        },
+        {
+          "id": "代码",
+          "text": "代码"
+        },
+        {
+          "id": "参考",
+          "text": "参考"
+        }
+      ],
+      "paragraphs": [
+        "以上就是如何在C++中以ISO8601格式输出当前时间的方法。"
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "编程",
+          "path": "/zh-cn/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "ISO C++ 20 标准 (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "前提条件",
+          "text": "前提条件"
+        },
+        {
+          "id": "代码",
+          "text": "代码"
+        },
+        {
+          "id": "参考",
+          "text": "参考"
+        }
+      ],
+      "paragraphs": [
+        "以上就是如何在C++中以ISO8601格式输出当前时间的方法。"
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "编程",
+          "path": "/zh-cn/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "011-cpp-iso8601",
+    "language": "zh-tw",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "ISO C++ 20 標準 (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "先決條件",
+          "text": "先決條件"
+        },
+        {
+          "id": "程式碼",
+          "text": "程式碼"
+        },
+        {
+          "id": "參考資料",
+          "text": "參考資料"
+        }
+      ],
+      "paragraphs": [
+        "以上就是在 C++ 中以 ISO 8601 格式輸出當前時間的方法。"
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "程式設計",
+          "path": "/zh-tw/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "ISO C++ 20 標準 (/std:c++20)",
+        "std::format"
+      ],
+      "headings": [
+        {
+          "id": "先決條件",
+          "text": "先決條件"
+        },
+        {
+          "id": "程式碼",
+          "text": "程式碼"
+        },
+        {
+          "id": "參考資料",
+          "text": "參考資料"
+        }
+      ],
+      "paragraphs": [
+        "以上就是在 C++ 中以 ISO 8601 格式輸出當前時間的方法。"
+      ],
+      "code": [
+        "1\n\n2\n\n3\n\n4\n",
+        "#include <chrono>\n#include <format>\n\nstd::string datetime = std::format(\"{:%FT%TZ}\", system_clock::now());\n"
+      ],
+      "images": [
+        {
+          "src": "/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/img_hu14325398801108400926.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "程式設計",
+          "path": "/zh-tw/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "std::format",
+          "path": "/c++draft/time.format",
+          "host": "eel.is"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  }
+]

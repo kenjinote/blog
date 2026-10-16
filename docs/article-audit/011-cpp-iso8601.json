@@ -1,0 +1,91 @@
+{
+  "batch": "011-cpp-iso8601",
+  "status": "validated",
+  "review": "All thirteen full bodies read during batch 009 build. No source modifications needed for internal links/categories. Existing unqualified system_clock::now() snippet may need a separate code correctness review; code is explicitly preserved by this audit. Existing duplicate date fields also retained.",
+  "articles": [
+    {
+      "path": "content/post/C++で現在時刻をISO8601フォーマットで出力する方法/index.ar.md",
+      "source_sha256": "a5e0662fefcdeb890d868ae4e7bf26eb866511f51a4ef273a5b6725e3601d9f0",
+      "links": [],
+      "category_decision": "Retain programming. A short C++20 time-formatting snippet with a direct standards reference; no contextual internal-link addition needed. Preserve fenced code and external standard link."
+    },
+    {
+      "path": "content/post/C++で現在時刻をISO8601フォーマットで出力する方法/index.de.md",
+      "source_sha256": "f83630f3c70650912a47e2764fddd5356016fc16fdc650c7336d3a6262190b54",
+      "links": [],
+      "category_decision": "Retain programming. A short C++20 time-formatting snippet with a direct standards reference; no contextual internal-link addition needed. Preserve fenced code and external standard link."
+    },
+    {
+      "path": "content/post/C++で現在時刻をISO8601フォーマットで出力する方法/index.en.md",
+      "source_sha256": "1f1ce6e4ffedc38eab7e5a3616cc326081751007a81b1eebf55aac6eac762c48",
+      "links": [],
+      "category_decision": "Retain programming. A short C++20 time-formatting snippet with a direct standards reference; no contextual internal-link addition needed. Preserve fenced code and external standard link."
+    },
+    {
+      "path": "content/post/C++で現在時刻をISO8601フォーマットで出力する方法/index.es.md",
+      "source_sha256": "d5e4450fd0561c6a3d7c015ce2705ada933792dcf3356d3b7119fe57f1796cec",
+      "links": [],
+      "category_decision": "Retain programming. A short C++20 time-formatting snippet with a direct standards reference; no contextual internal-link addition needed. Preserve fenced code and external standard link."
+    },
+    {
+      "path": "content/post/C++で現在時刻をISO8601フォーマットで出力する方法/index.fr.md",
+      "source_sha256": "37c857f6a37aab5dd8839e8aeecd213d3cbcebc54678988a1016faa156b8a21b",
+      "links": [],
+      "category_decision": "Retain programming. A short C++20 time-formatting snippet with a direct standards reference; no contextual internal-link addition needed. Preserve fenced code and external standard link."
+    },
+    {
+      "path": "content/post/C++で現在時刻をISO8601フォーマットで出力する方法/index.hi.md",
+      "source_sha256": "72bd3ccd1e1575bac395a3079f62c71450682da9e469259d764f505e7df0ba49",
+      "links": [],
+      "category_decision": "Retain programming. A short C++20 time-formatting snippet with a direct standards reference; no contextual internal-link addition needed. Preserve fenced code and external standard link."
+    },
+    {
+      "path": "content/post/C++で現在時刻をISO8601フォーマットで出力する方法/index.id.md",
+      "source_sha256": "5b97f1fec166a3cd1edc44385ff09f5b06ae0c48e98042b4f7e1b1b2019290b3",
+      "links": [],
+      "category_decision": "Retain programming. A short C++20 time-formatting snippet with a direct standards reference; no contextual internal-link addition needed. Preserve fenced code and external standard link."
+    },
+    {
+      "path": "content/post/C++で現在時刻をISO8601フォーマットで出力する方法/index.ko.md",
+      "source_sha256": "95a4b5cee95eddb38507f6e6c1e8655a3b4434c0739568c7ec23573882a7ffd5",
+      "links": [],
+      "category_decision": "Retain programming. A short C++20 time-formatting snippet with a direct standards reference; no contextual internal-link addition needed. Preserve fenced code and external standard link."
+    },
+    {
+      "path": "content/post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
+      "source_sha256": "663e723c0c2dee90e1e5670c44088ca1c38b72ad52789b26f9c1c466b111e3df",
+      "links": [],
+      "category_decision": "Retain programming. A short C++20 time-formatting snippet with a direct standards reference; no contextual internal-link addition needed. Preserve fenced code and external standard link."
+    },
+    {
+      "path": "content/post/C++で現在時刻をISO8601フォーマットで出力する方法/index.pt.md",
+      "source_sha256": "9494aa924215e2a3edcb3f7187ef166449c18a50ed447f062012084bd9c8d60f",
+      "links": [],
+      "category_decision": "Retain programming. A short C++20 time-formatting snippet with a direct standards reference; no contextual internal-link addition needed. Preserve fenced code and external standard link."
+    },
+    {
+      "path": "content/post/C++で現在時刻をISO8601フォーマットで出力する方法/index.ru.md",
+      "source_sha256": "962c271389db350fca58b1674a38a687de8f76c3045f9fbe0bed19aac119c3d7",
+      "links": [],
+      "category_decision": "Retain programming. A short C++20 time-formatting snippet with a direct standards reference; no contextual internal-link addition needed. Preserve fenced code and external standard link."
+    },
+    {
+      "path": "content/post/C++で現在時刻をISO8601フォーマットで出力する方法/index.zh-cn.md",
+      "source_sha256": "b722080be6f521d1f08bab24b5e293dde5e8cdb2351e8387a7b153110fe1eac3",
+      "links": [],
+      "category_decision": "Retain programming. A short C++20 time-formatting snippet with a direct standards reference; no contextual internal-link addition needed. Preserve fenced code and external standard link."
+    },
+    {
+      "path": "content/post/C++で現在時刻をISO8601フォーマットで出力する方法/index.zh-tw.md",
+      "source_sha256": "191179e9a1f01ca2f6a03a214575f984c1009af819a9de27811b7b7921922fc7",
+      "links": [],
+      "category_decision": "Retain programming. A short C++20 time-formatting snippet with a direct standards reference; no contextual internal-link addition needed. Preserve fenced code and external standard link."
+    }
+  ],
+  "validation": {
+    "unit_tests": 28,
+    "hugo": "exit 0, 554288 ms",
+    "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
+    "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
+  }
+}
