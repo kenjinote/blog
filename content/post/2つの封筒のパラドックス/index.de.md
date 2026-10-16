@@ -141,7 +141,7 @@ Es stellt sich die Frage: Können wir wirklich sagen, dass 5.000 Yen und 20.000 
 
 Angenommen, das maximale Budget der Sendung beträgt 100 Millionen Yen. Wenn Sie Umschlag A öffnen und "60 Millionen Yen" darin finden, ist die Wahrscheinlichkeit, dass Umschlag B "120 Millionen Yen" enthält, gleich null (da das Budget überschritten wäre). Mit anderen Worten: Je höher der Betrag in Umschlag A ist, desto geringer muss die Wahrscheinlichkeit sein, dass Umschlag B "doppelt" so viel enthält, und desto höher muss die Wahrscheinlichkeit sein, dass er "halb" so viel enthält.
 
-Wenn wir den Erwartungswert unter Annahme einer beliebigen A-priori-Verteilung $P(x)$ und der Anwendung des Satzes von Bayes berechnen, ist mathematisch bewiesen, dass **für keine realistische Wahrscheinlichkeitsverteilung (deren Summe 1 ergibt) eine magische Verteilung existiert, bei der sich ein "Tausch für alle Beträge $X$ lohnt"**.
+Wenn wir den Erwartungswert unter Annahme einer beliebigen A-priori-Verteilung $P(x)$ und der Anwendung des [Satzes von Bayes](/de/p/bayes-theorem/) berechnen, ist mathematisch bewiesen, dass **für keine realistische Wahrscheinlichkeitsverteilung (deren Summe 1 ergibt) eine magische Verteilung existiert, bei der sich ein "Tausch für alle Beträge $X$ lohnt"**.
 
 ---
 
@@ -151,7 +151,7 @@ Es gibt nur einen einzigen Fall, in dem es vorteilhaft wäre, für "alle $X$" zu
 Dies ist nur dann der Fall, wenn das Budget der Sendung **unendlich** ist und wir eine "uneigentliche Wahrscheinlichkeitsverteilung (eine Verteilung, deren Summe unendlich ist)" annehmen, bei der alle Geldbeträge (1 Yen, 2 Yen, 4 Yen, 8 Yen... bis ins Unendliche) mit gleicher Wahrscheinlichkeit auftreten.
 
 In der realen Welt gibt es jedoch keinen Fernsehsender mit unbegrenzten Mitteln.
-Dieser durch einen "unendlichen Erwartungswert" verursachte Fehler ist tief verwurzelt mit dem **Sankt-Petersburg-Paradoxon** (dem Problem, wie viel eine Person für ein Glücksspiel mit einem unendlichen Erwartungswert bezahlen würde).
+Dieser durch einen "unendlichen Erwartungswert" verursachte Fehler ist tief verwurzelt mit dem **[Sankt-Petersburg-Paradoxon](/de/p/st-petersburg-paradox/)** (dem Problem, wie viel eine Person für ein Glücksspiel mit einem unendlichen Erwartungswert bezahlen würde).
 
 ## 6. Fazit: Die Schrecken von Wahrscheinlichkeit und Erwartungswert
 

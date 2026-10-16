@@ -1,0 +1,275 @@
+[
+  {
+    "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.ar.md",
+    "removed_self_links": 0,
+    "added_links": [],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": {
+      "before": [
+        "programming"
+      ],
+      "after": [
+        "programming",
+        "image-generation"
+      ]
+    },
+    "categories": "The complete article demonstrates image generation with Python/diffusers in a Colab notebook; retain programming and add existing image-generation.",
+    "updated_sha256": "fd06a3cc4a9d929b9564b7df115681c5b23ece51be03270df81ab6b74e4afe17"
+  },
+  {
+    "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.de.md",
+    "removed_self_links": 0,
+    "added_links": [],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": {
+      "before": [
+        "programming"
+      ],
+      "after": [
+        "programming",
+        "image-generation"
+      ]
+    },
+    "categories": "The complete article demonstrates image generation with Python/diffusers in a Colab notebook; retain programming and add existing image-generation.",
+    "updated_sha256": "d1e0f18a683b451fad91465cd0465d8364fe6c69daf527bbc65c219eefb964e7"
+  },
+  {
+    "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.en.md",
+    "removed_self_links": 0,
+    "added_links": [],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": {
+      "before": [
+        "programming"
+      ],
+      "after": [
+        "programming",
+        "image-generation"
+      ]
+    },
+    "categories": "The complete article demonstrates image generation with Python/diffusers in a Colab notebook; retain programming and add existing image-generation.",
+    "updated_sha256": "3b11482d77057ca2de3b265fa2ef59b548b8c6c8867daa127ba5256ff4ffcaae"
+  },
+  {
+    "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.es.md",
+    "removed_self_links": 0,
+    "added_links": [],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": {
+      "before": [
+        "programming"
+      ],
+      "after": [
+        "programming",
+        "image-generation"
+      ]
+    },
+    "categories": "The complete article demonstrates image generation with Python/diffusers in a Colab notebook; retain programming and add existing image-generation.",
+    "updated_sha256": "3d48f23c1d81a5a4ddd460ea70db0619bb247893ff77f7686687d35a288243e1"
+  },
+  {
+    "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.fr.md",
+    "removed_self_links": 0,
+    "added_links": [],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": {
+      "before": [
+        "programming"
+      ],
+      "after": [
+        "programming",
+        "image-generation"
+      ]
+    },
+    "categories": "The complete article demonstrates image generation with Python/diffusers in a Colab notebook; retain programming and add existing image-generation.",
+    "updated_sha256": "e0b89c4f6c7163616013410c78e89dc5cf84b086425b0cc400875b24054efb76"
+  },
+  {
+    "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.hi.md",
+    "removed_self_links": 0,
+    "added_links": [],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": {
+      "before": [
+        "programming"
+      ],
+      "after": [
+        "programming",
+        "image-generation"
+      ]
+    },
+    "categories": "The complete article demonstrates image generation with Python/diffusers in a Colab notebook; retain programming and add existing image-generation.",
+    "updated_sha256": "136642d4d6776225d1e543afe035a68fbbd07c281985835d3fd11ba3a78d772c"
+  },
+  {
+    "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.id.md",
+    "removed_self_links": 0,
+    "added_links": [],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": {
+      "before": [
+        "programming"
+      ],
+      "after": [
+        "programming",
+        "image-generation"
+      ]
+    },
+    "categories": "The complete article demonstrates image generation with Python/diffusers in a Colab notebook; retain programming and add existing image-generation.",
+    "updated_sha256": "588873a6c99b90a4d392a6404293d530aacb224c83dfcb35d37a7361bfb82ccc"
+  },
+  {
+    "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.ko.md",
+    "removed_self_links": 0,
+    "added_links": [],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": {
+      "before": [
+        "programming"
+      ],
+      "after": [
+        "programming",
+        "image-generation"
+      ]
+    },
+    "categories": "The complete article demonstrates image generation with Python/diffusers in a Colab notebook; retain programming and add existing image-generation.",
+    "updated_sha256": "3455b768a9562942e90ed82076874733849505396ea3d527cca1a633b2e3886f"
+  },
+  {
+    "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
+    "removed_self_links": 0,
+    "added_links": [],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": {
+      "before": [
+        "programming"
+      ],
+      "after": [
+        "programming",
+        "image-generation"
+      ]
+    },
+    "categories": "The complete article demonstrates image generation with Python/diffusers in a Colab notebook; retain programming and add existing image-generation.",
+    "updated_sha256": "3553d8ea69e15b3eeda0a4550496c8696fd9ed05d02b71aadc168467a735faf5"
+  },
+  {
+    "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.pt.md",
+    "removed_self_links": 0,
+    "added_links": [],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": {
+      "before": [
+        "programming"
+      ],
+      "after": [
+        "programming",
+        "image-generation"
+      ]
+    },
+    "categories": "The complete article demonstrates image generation with Python/diffusers in a Colab notebook; retain programming and add existing image-generation.",
+    "updated_sha256": "7254a46cbda6fa9b65019d8a2277993c1925fc4adc6e31d734e4020f073c77b3"
+  },
+  {
+    "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.ru.md",
+    "removed_self_links": 0,
+    "added_links": [],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": {
+      "before": [
+        "programming"
+      ],
+      "after": [
+        "programming",
+        "image-generation"
+      ]
+    },
+    "categories": "The complete article demonstrates image generation with Python/diffusers in a Colab notebook; retain programming and add existing image-generation.",
+    "updated_sha256": "ecd63930e44d4f5a81a831caaccbc9cce26b9863cdf1246fb65b69f3b0e1d5c7"
+  },
+  {
+    "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.zh-cn.md",
+    "removed_self_links": 0,
+    "added_links": [],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": {
+      "before": [
+        "programming"
+      ],
+      "after": [
+        "programming",
+        "image-generation"
+      ]
+    },
+    "categories": "The complete article demonstrates image generation with Python/diffusers in a Colab notebook; retain programming and add existing image-generation.",
+    "updated_sha256": "cc4bbdf03f44dbe04918aecd0e9b0cdd5809181bbebf485d033ddc5938ffbc83"
+  },
+  {
+    "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.zh-tw.md",
+    "removed_self_links": 0,
+    "added_links": [],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": {
+      "before": [
+        "programming"
+      ],
+      "after": [
+        "programming",
+        "image-generation"
+      ]
+    },
+    "categories": "The complete article demonstrates image generation with Python/diffusers in a Colab notebook; retain programming and add existing image-generation.",
+    "updated_sha256": "c9746461461d216a38324be77375739459a7f814a7b52904d917a3e8fb13ae4a"
+  }
+]

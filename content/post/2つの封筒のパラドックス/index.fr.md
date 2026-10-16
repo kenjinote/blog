@@ -151,7 +151,7 @@ Il n'existe qu'un seul cas où « il est avantageux d'échanger pour tous les $X
 C'est uniquement lorsqu'on suppose une « distribution de probabilité impropre (une distribution dont la somme est infinie) » où le budget du jeu est **infini** et où tous les montants (1 yen, 2 yens, 4 yens, 8 yens... à l'infini) apparaissent de manière équiprobable.
 
 Cependant, il n'existe aucune chaîne de télévision dotée d'actifs infinis dans le monde réel.
-Ce bug provoqué par cette « espérance mathématique infinie » trouve ses racines profondément liées au **paradoxe de Saint-Pétersbourg** (le problème de savoir combien une personne serait prête à payer pour un pari ayant une espérance mathématique infinie).
+Ce bug provoqué par cette « espérance mathématique infinie » trouve ses racines profondément liées au **[paradoxe de Saint-Pétersbourg](/fr/p/st-petersburg-paradox/)** (le problème de savoir combien une personne serait prête à payer pour un pari ayant une espérance mathématique infinie).
 
 ## 6. Conclusion : la terreur des probabilités et de l'espérance
 

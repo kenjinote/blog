@@ -1,6 +1,6 @@
 {
   "batch": "005-two-envelopes",
-  "status": "reviewed_not_applied",
+  "status": "validated_pending_push",
   "review": "All thirteen full bodies read. Existing relevant same-language Bayes and St Petersburg links retained; fill eight missing links. Korean broken quoted-slug self link is explicitly selected for label-preserving unwrap. Source duplicate date, emphasis defects in fr/ru/zh-tw and mathematical claims about proper distributions/infinite expectation recorded separately. Target Japanese introduction/derivations reviewed to verify relevance; translation paths verified against published inventory. Browser/source validation pending.",
   "articles": [
     {

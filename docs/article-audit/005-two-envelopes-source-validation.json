@@ -1,0 +1,209 @@
+[
+  {
+    "path": "content/post/2つの封筒のパラドックス/index.ar.md",
+    "removed_self_links": 0,
+    "added_links": [],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": null,
+    "categories": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central.",
+    "updated_sha256": "5db2f673b76489b8c1b003113872260cd6fee00720f738f3bfc330871cb1a042"
+  },
+  {
+    "path": "content/post/2つの封筒のパラドックス/index.de.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Satzes von Bayes",
+        "url": "/de/p/bayes-theorem/"
+      },
+      {
+        "term": "Sankt-Petersburg-Paradoxon",
+        "url": "/de/p/st-petersburg-paradox/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": null,
+    "categories": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central.",
+    "updated_sha256": "eeacddd3ab29827f85043da4d45117f4bd5665ef53aef9b9a64bf3dc121946de"
+  },
+  {
+    "path": "content/post/2つの封筒のパラドックス/index.en.md",
+    "removed_self_links": 0,
+    "added_links": [],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": null,
+    "categories": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central.",
+    "updated_sha256": "2c0da3df52bb26ec0edfefcdb1f95e206444d967779eda89f4eb71f3f947742a"
+  },
+  {
+    "path": "content/post/2つの封筒のパラドックス/index.es.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Paradoja de San Petersburgo",
+        "url": "/es/p/st-petersburg-paradox/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": null,
+    "categories": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central.",
+    "updated_sha256": "600c6fa5d88ccfae971961194c620373c73377d4f5085fc5bf960b4d8f5f24fa"
+  },
+  {
+    "path": "content/post/2つの封筒のパラドックス/index.fr.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "paradoxe de Saint-Pétersbourg",
+        "url": "/fr/p/st-petersburg-paradox/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": null,
+    "categories": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central.",
+    "updated_sha256": "8c8b77eb1be83f911818125f02224b569ba4c174a17e50a2ab87fc3c4a31b715"
+  },
+  {
+    "path": "content/post/2つの封筒のパラドックス/index.hi.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "बेयस प्रमेय",
+        "url": "/hi/p/bayes-theorem/"
+      },
+      {
+        "term": "सेंट पीटर्सबर्ग विरोधाभास",
+        "url": "/hi/p/st-petersburg-paradox/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": null,
+    "categories": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central.",
+    "updated_sha256": "276f1b830680e7c51ded53d116b18369766ce4f206b438d9b674201fb95c3ffd"
+  },
+  {
+    "path": "content/post/2つの封筒のパラドックス/index.id.md",
+    "removed_self_links": 0,
+    "added_links": [],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": null,
+    "categories": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central.",
+    "updated_sha256": "f2d1462915d4a328abaa4fa45fe704be8998146ff24661cb3a92a50717f16f95"
+  },
+  {
+    "path": "content/post/2つの封筒のパラドックス/index.ko.md",
+    "removed_self_links": 1,
+    "added_links": [],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": null,
+    "categories": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central.",
+    "updated_sha256": "8e81df9b1f06e6f40b17e054469644da8daa005fcd79a66d1573cd70ae569482",
+    "known_render_typography_change": "Unwrapping the malformed quoted-slug self-link lets Hugo Smartypants render the already-present closing apostrophe as right quote instead of left quote. Text source remains identical after removing link wrapper."
+  },
+  {
+    "path": "content/post/2つの封筒のパラドックス/index.md",
+    "removed_self_links": 0,
+    "added_links": [],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": null,
+    "categories": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central.",
+    "updated_sha256": "4fd1b39735df3c1e951b3f5541eaaa4115f832510aacac19c71f06161ea2d6f5"
+  },
+  {
+    "path": "content/post/2つの封筒のパラドックス/index.pt.md",
+    "removed_self_links": 0,
+    "added_links": [],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": null,
+    "categories": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central.",
+    "updated_sha256": "f5df42e577c1e4a7cf1456c392a0432b870bffa98ae2c04404e16e2ab4a80ae6"
+  },
+  {
+    "path": "content/post/2つの封筒のパラドックス/index.ru.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "теореме Байеса",
+        "url": "/ru/p/bayes-theorem/"
+      },
+      {
+        "term": "Санкт-Петербургским парадоксом",
+        "url": "/ru/p/st-petersburg-paradox/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": null,
+    "categories": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central.",
+    "updated_sha256": "17a3304c93fd6c7c679499abf68264e955f0d45b699e5bbfc340481695eb4ac4"
+  },
+  {
+    "path": "content/post/2つの封筒のパラドックス/index.zh-cn.md",
+    "removed_self_links": 0,
+    "added_links": [],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": null,
+    "categories": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central.",
+    "updated_sha256": "991f6d51ef0d0cf17a6f91c8b19b56f29051badb635b237dbbbb25641f492c9d"
+  },
+  {
+    "path": "content/post/2つの封筒のパラドックス/index.zh-tw.md",
+    "removed_self_links": 0,
+    "added_links": [],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "category_change": null,
+    "categories": "Retain mathematical-paradoxes/probability-theory; expected value, conditional probability and infinite-expectation paradox are central.",
+    "updated_sha256": "e4fa3305caac4bd41e71ee529ce099a0edacea723b879827650ff67d0a3fa2d6"
+  }
+]

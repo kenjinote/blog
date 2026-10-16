@@ -1,6 +1,6 @@
 {
   "batch": "007-stable-diffusion-colab",
-  "status": "reviewed_not_applied",
+  "status": "validated_pending_push",
   "review": "All thirteen full bodies reviewed; add image-generation category, retain programming. No contextually useful internal-link additions identified in prose; code terms and external references preserved. Build/browser validation pending.",
   "articles": [
     {

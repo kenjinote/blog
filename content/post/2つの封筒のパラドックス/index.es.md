@@ -151,7 +151,7 @@ Existe un único caso en el que "es más rentable cambiar para todas las cantida
 Eso es solo cuando el presupuesto del programa es **infinito** y asumimos una "distribución de probabilidad impropia (una distribución cuya suma es infinita)" en la que todas las cantidades (1 yen, 2 yenes, 4 yenes, 8 yenes... infinito) aparecen de manera uniforme.
 
 Sin embargo, en el mundo real no existe una cadena de televisión con activos infinitos.
-El error causado por este "valor esperado infinito" está profundamente arraigado en la **Paradoja de San Petersburgo** (el problema de cuánto estaría dispuesta a pagar una persona por una apuesta con un valor esperado infinito).
+El error causado por este "valor esperado infinito" está profundamente arraigado en la **[Paradoja de San Petersburgo](/es/p/st-petersburg-paradox/)** (el problema de cuánto estaría dispuesta a pagar una persona por una apuesta con un valor esperado infinito).
 
 ## 6. Resumen: Los peligros de la probabilidad y el valor esperado
 
