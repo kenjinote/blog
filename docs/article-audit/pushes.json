@@ -89,5 +89,21 @@
     "hugo": "passed, exit 0, 554288 ms",
     "browser": "23 pages before/after passed; exact link changes verified",
     "next": "010 local image-generation setup: ja/en/de full bodies read; ten translations unread; no edits yet. Anchor-preserving unlink approach verified in an isolated Hugo probe."
+  },
+  {
+    "batch": "010-local-image-ja-en-de",
+    "commit": "533afd7dd7740ce328f853c36458719f69bef4b6",
+    "remote": "origin/main",
+    "verified_remote_sha": "533afd7dd7740ce328f853c36458719f69bef4b6",
+    "date_jst": "2026-10-17",
+    "articles": 3,
+    "modified_articles": 3,
+    "added_links": 5,
+    "misleading_links_removed": 10,
+    "preserved_heading_anchors": 1,
+    "reclassified_articles": 0,
+    "hugo": "passed, exit 0, 590793 ms",
+    "browser": "3 pages before/after passed; exact links, heading IDs, TOC and protected rendered contents verified",
+    "next": "Local image setup remaining ten translations: fr/es/zh-cn/zh-tw/pt full bodies reviewed, not edited; ar/hi/id/ko/ru unread."
   }
 ]

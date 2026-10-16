@@ -1863,7 +1863,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1875,7 +1875,8 @@
         "category_scope": "All three pages retain defined categories; category sources unchanged from previous 4305-error baseline."
       },
       "batch": "010-local-image-ja-en-de",
-      "push_status": "pending"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "533afd7dd7740ce328f853c36458719f69bef4b6"
     },
     {
       "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.en.md",
@@ -1891,7 +1892,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1903,7 +1904,8 @@
         "category_scope": "All three pages retain defined categories; category sources unchanged from previous 4305-error baseline."
       },
       "batch": "010-local-image-ja-en-de",
-      "push_status": "pending"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "533afd7dd7740ce328f853c36458719f69bef4b6"
     },
     {
       "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.es.md",
@@ -2029,7 +2031,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -2041,7 +2043,8 @@
         "category_scope": "All three pages retain defined categories; category sources unchanged from previous 4305-error baseline."
       },
       "batch": "010-local-image-ja-en-de",
-      "push_status": "pending"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "533afd7dd7740ce328f853c36458719f69bef4b6"
     },
     {
       "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.pt.md",

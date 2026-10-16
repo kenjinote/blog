@@ -1,6 +1,6 @@
 {
   "batch": "010-local-image-ja-en-de",
-  "status": "validated; pending push",
+  "status": "completed",
   "review": "Full ja/en/de bodies reviewed. Unwrap misleading word-fragment/pipeline/state-management links; explicitly retain Japanese GPU heading ID from baseline HTML. Add same-language VRAM optimization and en/de Markov-chain links. Preserve canonical categories, prose, math, diagrams and code. Remaining ten translations pending.",
   "articles": [
     {
@@ -111,5 +111,7 @@
     "hugo": "exit 0, 590793 ms",
     "browser": "3 pages before/after passed: exact link multiset, paragraph/list text, heading IDs and TOC, code, math, two Mermaid diagrams per page, images, languages, localized category labels, same-language article links HTTP200 and mobile overflow. Japanese heading and German hero/category screenshots visually checked.",
     "category_scope": "All three pages retain defined categories; category sources unchanged from previous 4305-error baseline."
-  }
+  },
+  "commit": "533afd7dd7740ce328f853c36458719f69bef4b6",
+  "push_status": "confirmed origin/main SHA matches content commit"
 }

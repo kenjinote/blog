@@ -5,7 +5,7 @@
       "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
       "source_sha256": "de6c0de3c8dd6e603950cbe488e9095d24f0dddb7b86d810df498ebbb6af7073",
       "body_reviewed": true,
-      "status": "edited and validated in 010-local-image-ja-en-de; pending push",
+      "status": "completed and pushed in 010-local-image-ja-en-de: 533afd7dd7740ce328f853c36458719f69bef4b6",
       "findings": [
         "Heading 3.1 links グラフ inside グラフィックボード to graph data structures. Must fix while preserving its existing generated heading anchor, not silently leave a misleading link indefinitely. Requires explicit anchor-preserving edit support and browser verification.",
         "Body ブロック links substring ロック to SQL locks: unwrap.",
@@ -21,7 +21,7 @@
       "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.en.md",
       "source_sha256": "b6c3af71b6d35b04f430e74f0da1c378dd50ceb05e5474e537a46b5b43fc154a",
       "body_reviewed": true,
-      "status": "edited and validated in 010-local-image-ja-en-de; pending push",
+      "status": "completed and pushed in 010-local-image-ja-en-de: 533afd7dd7740ce328f853c36458719f69bef4b6",
       "findings": [
         "Flux.1 model linked to React state-management Flux: unwrap.",
         "No existing incorrect graph/lock/pipeline links as seen in Japanese.",
@@ -34,7 +34,7 @@
       "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.de.md",
       "source_sha256": "b282b0343b3a3dd034bf0abec05ae3d9d3cb472b75802013de9e20ae1b03922c",
       "body_reviewed": true,
-      "status": "edited and validated in 010-local-image-ja-en-de; pending push",
+      "status": "completed and pushed in 010-local-image-ja-en-de: 533afd7dd7740ce328f853c36458719f69bef4b6",
       "findings": [
         "Ordinary mathematical Zustand linked to React state management; unwrap without changing nearby math. Check whether baseline renderer emits this math-adjacent prose.",
         "Two image-generation Pipeline links point to CI/CD; unwrap preserving plural suffix s.",
