@@ -72,5 +72,22 @@
     "hugo": "passed, exit 0, 567027 ms",
     "browser": "3 pages before/after passed including paragraphs and list items",
     "next": "Seven remaining AI career translations fully read with notes (fr/es/pt/ko/zh-cn/zh-tw/id), not edited; ar/hi/ru unread."
+  },
+  {
+    "batch": "009-ai-career-remaining + 011-cpp-iso8601",
+    "commit": "fc4dae411b16e563ba100110b521064e33618374",
+    "remote": "origin/main",
+    "verified_remote_sha": "fc4dae411b16e563ba100110b521064e33618374",
+    "date_jst": "2026-10-17",
+    "articles": 23,
+    "modified_articles": 10,
+    "reviewed_unchanged_articles": 13,
+    "added_links": 8,
+    "duplicate_links_removed": 23,
+    "misleading_links_removed": 3,
+    "reclassified_articles": 0,
+    "hugo": "passed, exit 0, 554288 ms",
+    "browser": "23 pages before/after passed; exact link changes verified",
+    "next": "010 local image-generation setup: ja/en/de full bodies read; ten translations unread; no edits yet. Anchor-preserving unlink approach verified in an isolated Hugo probe."
   }
 ]

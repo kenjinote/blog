@@ -1460,7 +1460,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1471,7 +1471,9 @@
         "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
         "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
       },
-      "batch": "009-ai-career-remaining"
+      "batch": "009-ai-career-remaining",
+      "commit": "fc4dae411b16e563ba100110b521064e33618374",
+      "push_status": "confirmed origin/main SHA matches content commit"
     },
     {
       "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.de.md",
@@ -1547,7 +1549,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1558,7 +1560,9 @@
         "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
         "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
       },
-      "batch": "009-ai-career-remaining"
+      "batch": "009-ai-career-remaining",
+      "commit": "fc4dae411b16e563ba100110b521064e33618374",
+      "push_status": "confirmed origin/main SHA matches content commit"
     },
     {
       "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.fr.md",
@@ -1574,7 +1578,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1585,7 +1589,9 @@
         "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
         "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
       },
-      "batch": "009-ai-career-remaining"
+      "batch": "009-ai-career-remaining",
+      "commit": "fc4dae411b16e563ba100110b521064e33618374",
+      "push_status": "confirmed origin/main SHA matches content commit"
     },
     {
       "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.hi.md",
@@ -1601,7 +1607,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1612,7 +1618,9 @@
         "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
         "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
       },
-      "batch": "009-ai-career-remaining"
+      "batch": "009-ai-career-remaining",
+      "commit": "fc4dae411b16e563ba100110b521064e33618374",
+      "push_status": "confirmed origin/main SHA matches content commit"
     },
     {
       "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.id.md",
@@ -1628,7 +1636,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1639,7 +1647,9 @@
         "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
         "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
       },
-      "batch": "009-ai-career-remaining"
+      "batch": "009-ai-career-remaining",
+      "commit": "fc4dae411b16e563ba100110b521064e33618374",
+      "push_status": "confirmed origin/main SHA matches content commit"
     },
     {
       "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.ko.md",
@@ -1655,7 +1665,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1666,7 +1676,9 @@
         "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
         "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
       },
-      "batch": "009-ai-career-remaining"
+      "batch": "009-ai-career-remaining",
+      "commit": "fc4dae411b16e563ba100110b521064e33618374",
+      "push_status": "confirmed origin/main SHA matches content commit"
     },
     {
       "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.md",
@@ -1713,7 +1725,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1724,7 +1736,9 @@
         "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
         "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
       },
-      "batch": "009-ai-career-remaining"
+      "batch": "009-ai-career-remaining",
+      "commit": "fc4dae411b16e563ba100110b521064e33618374",
+      "push_status": "confirmed origin/main SHA matches content commit"
     },
     {
       "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.ru.md",
@@ -1740,7 +1754,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1751,7 +1765,9 @@
         "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
         "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
       },
-      "batch": "009-ai-career-remaining"
+      "batch": "009-ai-career-remaining",
+      "commit": "fc4dae411b16e563ba100110b521064e33618374",
+      "push_status": "confirmed origin/main SHA matches content commit"
     },
     {
       "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.zh-cn.md",
@@ -1767,7 +1783,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1778,7 +1794,9 @@
         "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
         "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
       },
-      "batch": "009-ai-career-remaining"
+      "batch": "009-ai-career-remaining",
+      "commit": "fc4dae411b16e563ba100110b521064e33618374",
+      "push_status": "confirmed origin/main SHA matches content commit"
     },
     {
       "path": "content/post/AI時代のプログラマーはどう生き残るべきか/index.zh-tw.md",
@@ -1794,7 +1812,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1805,7 +1823,9 @@
         "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
         "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
       },
-      "batch": "009-ai-career-remaining"
+      "batch": "009-ai-career-remaining",
+      "commit": "fc4dae411b16e563ba100110b521064e33618374",
+      "push_status": "confirmed origin/main SHA matches content commit"
     },
     {
       "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.ar.md",
@@ -3990,7 +4010,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -4001,7 +4021,9 @@
         "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
         "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
       },
-      "batch": "011-cpp-iso8601"
+      "batch": "011-cpp-iso8601",
+      "commit": "fc4dae411b16e563ba100110b521064e33618374",
+      "push_status": "confirmed origin/main SHA matches content commit"
     },
     {
       "path": "content/post/C++で現在時刻をISO8601フォーマットで出力する方法/index.de.md",
@@ -4015,7 +4037,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -4026,7 +4048,9 @@
         "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
         "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
       },
-      "batch": "011-cpp-iso8601"
+      "batch": "011-cpp-iso8601",
+      "commit": "fc4dae411b16e563ba100110b521064e33618374",
+      "push_status": "confirmed origin/main SHA matches content commit"
     },
     {
       "path": "content/post/C++で現在時刻をISO8601フォーマットで出力する方法/index.en.md",
@@ -4040,7 +4064,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -4051,7 +4075,9 @@
         "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
         "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
       },
-      "batch": "011-cpp-iso8601"
+      "batch": "011-cpp-iso8601",
+      "commit": "fc4dae411b16e563ba100110b521064e33618374",
+      "push_status": "confirmed origin/main SHA matches content commit"
     },
     {
       "path": "content/post/C++で現在時刻をISO8601フォーマットで出力する方法/index.es.md",
@@ -4065,7 +4091,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -4076,7 +4102,9 @@
         "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
         "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
       },
-      "batch": "011-cpp-iso8601"
+      "batch": "011-cpp-iso8601",
+      "commit": "fc4dae411b16e563ba100110b521064e33618374",
+      "push_status": "confirmed origin/main SHA matches content commit"
     },
     {
       "path": "content/post/C++で現在時刻をISO8601フォーマットで出力する方法/index.fr.md",
@@ -4090,7 +4118,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -4101,7 +4129,9 @@
         "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
         "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
       },
-      "batch": "011-cpp-iso8601"
+      "batch": "011-cpp-iso8601",
+      "commit": "fc4dae411b16e563ba100110b521064e33618374",
+      "push_status": "confirmed origin/main SHA matches content commit"
     },
     {
       "path": "content/post/C++で現在時刻をISO8601フォーマットで出力する方法/index.hi.md",
@@ -4115,7 +4145,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -4126,7 +4156,9 @@
         "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
         "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
       },
-      "batch": "011-cpp-iso8601"
+      "batch": "011-cpp-iso8601",
+      "commit": "fc4dae411b16e563ba100110b521064e33618374",
+      "push_status": "confirmed origin/main SHA matches content commit"
     },
     {
       "path": "content/post/C++で現在時刻をISO8601フォーマットで出力する方法/index.id.md",
@@ -4140,7 +4172,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -4151,7 +4183,9 @@
         "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
         "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
       },
-      "batch": "011-cpp-iso8601"
+      "batch": "011-cpp-iso8601",
+      "commit": "fc4dae411b16e563ba100110b521064e33618374",
+      "push_status": "confirmed origin/main SHA matches content commit"
     },
     {
       "path": "content/post/C++で現在時刻をISO8601フォーマットで出力する方法/index.ko.md",
@@ -4165,7 +4199,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -4176,7 +4210,9 @@
         "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
         "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
       },
-      "batch": "011-cpp-iso8601"
+      "batch": "011-cpp-iso8601",
+      "commit": "fc4dae411b16e563ba100110b521064e33618374",
+      "push_status": "confirmed origin/main SHA matches content commit"
     },
     {
       "path": "content/post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
@@ -4190,7 +4226,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -4201,7 +4237,9 @@
         "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
         "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
       },
-      "batch": "011-cpp-iso8601"
+      "batch": "011-cpp-iso8601",
+      "commit": "fc4dae411b16e563ba100110b521064e33618374",
+      "push_status": "confirmed origin/main SHA matches content commit"
     },
     {
       "path": "content/post/C++で現在時刻をISO8601フォーマットで出力する方法/index.pt.md",
@@ -4215,7 +4253,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -4226,7 +4264,9 @@
         "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
         "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
       },
-      "batch": "011-cpp-iso8601"
+      "batch": "011-cpp-iso8601",
+      "commit": "fc4dae411b16e563ba100110b521064e33618374",
+      "push_status": "confirmed origin/main SHA matches content commit"
     },
     {
       "path": "content/post/C++で現在時刻をISO8601フォーマットで出力する方法/index.ru.md",
@@ -4240,7 +4280,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -4251,7 +4291,9 @@
         "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
         "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
       },
-      "batch": "011-cpp-iso8601"
+      "batch": "011-cpp-iso8601",
+      "commit": "fc4dae411b16e563ba100110b521064e33618374",
+      "push_status": "confirmed origin/main SHA matches content commit"
     },
     {
       "path": "content/post/C++で現在時刻をISO8601フォーマットで出力する方法/index.zh-cn.md",
@@ -4265,7 +4307,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -4276,7 +4318,9 @@
         "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
         "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
       },
-      "batch": "011-cpp-iso8601"
+      "batch": "011-cpp-iso8601",
+      "commit": "fc4dae411b16e563ba100110b521064e33618374",
+      "push_status": "confirmed origin/main SHA matches content commit"
     },
     {
       "path": "content/post/C++で現在時刻をISO8601フォーマットで出力する方法/index.zh-tw.md",
@@ -4290,7 +4334,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -4301,7 +4345,9 @@
         "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
         "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
       },
-      "batch": "011-cpp-iso8601"
+      "batch": "011-cpp-iso8601",
+      "commit": "fc4dae411b16e563ba100110b521064e33618374",
+      "push_status": "confirmed origin/main SHA matches content commit"
     },
     {
       "path": "content/post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.ar.md",

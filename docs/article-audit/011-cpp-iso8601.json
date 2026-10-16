@@ -1,6 +1,6 @@
 {
   "batch": "011-cpp-iso8601",
-  "status": "validated",
+  "status": "pushed",
   "review": "All thirteen full bodies read during batch 009 build. No source modifications needed for internal links/categories. Existing unqualified system_clock::now() snippet may need a separate code correctness review; code is explicitly preserved by this audit. Existing duplicate date fields also retained.",
   "articles": [
     {
@@ -87,5 +87,6 @@
     "hugo": "exit 0, 554288 ms",
     "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
     "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
-  }
+  },
+  "commit": "fc4dae411b16e563ba100110b521064e33618374"
 }

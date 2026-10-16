@@ -1,6 +1,6 @@
 {
   "batch": "009-ai-career-remaining",
-  "status": "validated",
+  "status": "pushed",
   "review": "All remaining ten full bodies reviewed (Hindi truncated section 5 separately read). Preserve three canonical categories and headings. Remove only reviewed adjacent duplicates or unrelated API/Local links. Retain existing zh-tw/hi TDD implementation guide links after checking target introductions. Add dedicated TDD philosophy links in the other eight languages. Unsupported AI capability generalizations and productivity/automation equations retained for separate editorial review.",
   "articles": [
     {
@@ -259,5 +259,6 @@
     "hugo": "exit 0, 554288 ms",
     "browser": "23 pages before/after passed including paragraphs, lists, headings, code, images, math, Mermaid, translated category labels, internal article URL HTTP200, language and mobile comparison. Exact link multiset matched planned additions/removals.",
     "category_scope": "All 23 pages use unchanged defined categories; global category source unchanged from previous 4305-error baseline."
-  }
+  },
+  "commit": "fc4dae411b16e563ba100110b521064e33618374"
 }
