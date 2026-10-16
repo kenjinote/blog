@@ -56,5 +56,21 @@
     "hugo": "passed, exit 0, 567272 ms",
     "browser": "26 pages before/after passed; exact Korean closing-quote typography exception documented",
     "next": "Review remaining 12 translations of how-programmers-survive-in-ai-era; only Japanese full body read, no edits."
+  },
+  {
+    "batch": "008-ai-career-ja-en-de",
+    "commit": "49a5df57f7302411fcdd0fb8796d490b69c1f158",
+    "remote": "origin/main",
+    "verified_remote_sha": "49a5df57f7302411fcdd0fb8796d490b69c1f158",
+    "date_jst": "2026-10-17",
+    "articles": 3,
+    "modified_articles": 3,
+    "added_links": 3,
+    "duplicate_links_removed": 8,
+    "misleading_links_removed": 2,
+    "reclassified_articles": 0,
+    "hugo": "passed, exit 0, 567027 ms",
+    "browser": "3 pages before/after passed including paragraphs and list items",
+    "next": "Seven remaining AI career translations fully read with notes (fr/es/pt/ko/zh-cn/zh-tw/id), not edited; ar/hi/ru unread."
   }
 ]

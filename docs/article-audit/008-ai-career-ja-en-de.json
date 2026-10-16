@@ -1,6 +1,6 @@
 {
   "batch": "008-ai-career-ja-en-de",
-  "status": "validated",
+  "status": "pushed",
   "review": "Full bodies reviewed in ja/en/de. Preserve existing headings, categories, prose, math and diagrams. Remove explicitly reviewed adjacent duplicate links and misleading ordinary-word links; add the dedicated TDD explanation. Unsupported AI capability generalizations and model equations require separate editorial review. Other ten translations remain pending.",
   "articles": [
     {
@@ -99,5 +99,6 @@
     "browser": "3 pages passed: prose, lists, headings, code, images, math, three Mermaid diagrams, category labels, same-language article targets HTTP200 and mobile comparison",
     "category_errors": 4305,
     "category_errors_increase": 0
-  }
+  },
+  "commit": "49a5df57f7302411fcdd0fb8796d490b69c1f158"
 }
