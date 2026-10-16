@@ -23,5 +23,22 @@
     "reclassified_articles": 13,
     "localized_category_redirects": 13,
     "next": "Review remaining acoustic-levitation translations; English full body read, no edits yet."
+  },
+  {
+    "batch": "004-acoustic-levitation + 006-ag03",
+    "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+    "remote": "origin/main",
+    "verified_remote_sha": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+    "date_jst": "2026-10-16",
+    "articles": 26,
+    "modified_articles": 13,
+    "reviewed_unchanged_articles": 13,
+    "added_links": 21,
+    "reclassified_articles": 13,
+    "mermaid_label_repairs": 4,
+    "localized_category_redirects": 1,
+    "hugo": "passed, 608003 ms, exit 0 after upstream merge",
+    "browser": "26 pages passed; post-merge rendered bodies/categories unchanged",
+    "next": "Apply and validate 005-two-envelopes and 007-stable-diffusion-colab; both fully reviewed and preflight passed, not applied."
   }
 ]

@@ -561,7 +561,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -575,7 +575,9 @@
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
       "batch": "006-ag03",
-      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit.",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.de.md",
@@ -589,7 +591,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -603,7 +605,9 @@
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
       "batch": "006-ag03",
-      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit.",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.en.md",
@@ -617,7 +621,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -631,7 +635,9 @@
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
       "batch": "006-ag03",
-      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit.",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.es.md",
@@ -645,7 +651,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -659,7 +665,9 @@
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
       "batch": "006-ag03",
-      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit.",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.fr.md",
@@ -673,7 +681,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -687,7 +695,9 @@
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
       "batch": "006-ag03",
-      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit.",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.hi.md",
@@ -701,7 +711,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -715,7 +725,9 @@
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
       "batch": "006-ag03",
-      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit.",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.id.md",
@@ -729,7 +741,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -743,7 +755,9 @@
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
       "batch": "006-ag03",
-      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit.",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.ko.md",
@@ -757,7 +771,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -771,7 +785,9 @@
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
       "batch": "006-ag03",
-      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit.",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.md",
@@ -785,7 +801,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -799,7 +815,9 @@
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
       "batch": "006-ag03",
-      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit.",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.pt.md",
@@ -813,7 +831,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -827,7 +845,9 @@
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
       "batch": "006-ag03",
-      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit.",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.ru.md",
@@ -841,7 +861,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -855,7 +875,9 @@
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
       "batch": "006-ag03",
-      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit.",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.zh-cn.md",
@@ -869,7 +891,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -883,7 +905,9 @@
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
       "batch": "006-ag03",
-      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit.",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/AG03ノイズ解消方法/index.zh-tw.md",
@@ -897,7 +921,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -911,7 +935,9 @@
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
       "batch": "006-ag03",
-      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit."
+      "review_notes": "Full body reviewed. Retain it-technology for PC audio driver troubleshooting. No contextually useful internal link addition: the solution is a specific official driver download, not generic acoustic noise cancellation; do not link substrings inside the driver product name. Keep source/affiliate HTML/external references unchanged. Existing localized/non-ASCII slugs, duplicate date, and untranslated affiliate button labels are outside this audit.",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.ar.md",
@@ -25396,7 +25422,7 @@
         "الهندسة"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -25409,7 +25435,9 @@
         "tests": "25 passed",
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
-      "batch": "004-acoustic-levitation"
+      "batch": "004-acoustic-levitation",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.de.md",
@@ -25429,7 +25457,7 @@
         "Ingenieurwesen"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -25442,7 +25470,9 @@
         "tests": "25 passed",
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
-      "batch": "004-acoustic-levitation"
+      "batch": "004-acoustic-levitation",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.en.md",
@@ -25462,7 +25492,7 @@
         "Engineering"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -25476,7 +25506,9 @@
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
       "batch": "004-acoustic-levitation",
-      "review_note": "Full body read: nonlinear acoustics, standing waves, Gorkov potential, phased arrays, size/density/droplet limits and applications. Proposed canonical science/physics/engineering IDs. HTML strong elements require explicit source-span link editing, not blind scanner. Math derivation in section 3.3 appears inconsistent with preceding potential; record for separate factual review, do not change in this audit. Links pending."
+      "review_note": "Full body read: nonlinear acoustics, standing waves, Gorkov potential, phased arrays, size/density/droplet limits and applications. Proposed canonical science/physics/engineering IDs. HTML strong elements require explicit source-span link editing, not blind scanner. Math derivation in section 3.3 appears inconsistent with preceding potential; record for separate factual review, do not change in this audit. Links pending.",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.es.md",
@@ -25496,7 +25528,7 @@
         "Ingeniería"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -25509,7 +25541,9 @@
         "tests": "25 passed",
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
-      "batch": "004-acoustic-levitation"
+      "batch": "004-acoustic-levitation",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.fr.md",
@@ -25529,7 +25563,7 @@
         "Ingénierie"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -25542,7 +25576,9 @@
         "tests": "25 passed",
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
-      "batch": "004-acoustic-levitation"
+      "batch": "004-acoustic-levitation",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.hi.md",
@@ -25562,7 +25598,7 @@
         "इंजीनियरिंग"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -25575,7 +25611,9 @@
         "tests": "25 passed",
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
-      "batch": "004-acoustic-levitation"
+      "batch": "004-acoustic-levitation",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.id.md",
@@ -25595,7 +25633,7 @@
         "Teknik"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -25608,7 +25646,9 @@
         "tests": "25 passed",
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
-      "batch": "004-acoustic-levitation"
+      "batch": "004-acoustic-levitation",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
@@ -25628,7 +25668,7 @@
         "工学"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -25641,7 +25681,9 @@
         "tests": "25 passed",
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
-      "batch": "004-acoustic-levitation"
+      "batch": "004-acoustic-levitation",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ko.md",
@@ -25661,7 +25703,7 @@
         "공학"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -25674,7 +25716,9 @@
         "tests": "25 passed",
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
-      "batch": "004-acoustic-levitation"
+      "batch": "004-acoustic-levitation",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.pt.md",
@@ -25694,7 +25738,7 @@
         "Engenharia"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -25707,7 +25751,9 @@
         "tests": "25 passed",
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
-      "batch": "004-acoustic-levitation"
+      "batch": "004-acoustic-levitation",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ru.md",
@@ -25727,7 +25773,7 @@
         "Инженерия"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -25740,7 +25786,9 @@
         "tests": "25 passed",
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
-      "batch": "004-acoustic-levitation"
+      "batch": "004-acoustic-levitation",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.zh-cn.md",
@@ -25760,7 +25808,7 @@
         "工程学"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -25773,7 +25821,9 @@
         "tests": "25 passed",
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
-      "batch": "004-acoustic-levitation"
+      "batch": "004-acoustic-levitation",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.zh-tw.md",
@@ -25793,7 +25843,7 @@
         "工程學"
       ],
       "frontmatter_error": null,
-      "status": "validated_pending_push",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -25806,7 +25856,9 @@
         "tests": "25 passed",
         "full_site_categories": "4305 existing errors after upstream additions; no undefined categories in these 26 articles"
       },
-      "batch": "004-acoustic-levitation"
+      "batch": "004-acoustic-levitation",
+      "commit": "38c670a5fb4994617fe7f679fb1ee9b7811a0e0d",
+      "push_status": "Verified origin/main SHA equals commit after normal push on 2026-10-16"
     },
     {
       "path": "content/post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ar.md",
