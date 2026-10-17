@@ -95,11 +95,17 @@ def main():
 
     # 2. Google Indexing API への送信
     print(f"\n--- Google Indexing API 送信開始 ({len(URLS_TO_INDEX)}件) ---")
-    for url in URLS_TO_INDEX:
+    failed_index = None
+    for i, url in enumerate(URLS_TO_INDEX):
         success = request_indexing(url, session)
         if not success:
-            remaining_rows.insert(0, [url]) # Failed URLs go back to the top
+            failed_index = i
             break # Stop processing if we hit quota
+
+    if failed_index is not None:
+        # 失敗したURLおよびそれ以降の未送信URLをすべてremaining_rowsの先頭に戻す
+        unprocessed_rows = [[u] for u in URLS_TO_INDEX[failed_index:]]
+        remaining_rows = unprocessed_rows + remaining_rows
 
     # 処理後に残りのURLをCSVに書き戻す
     if remaining_rows:
