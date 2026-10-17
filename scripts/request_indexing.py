@@ -11,6 +11,10 @@ sys.stdout.reconfigure(encoding='utf-8')
 SERVICE_ACCOUNT_FILE = 'service_account.json'
 CSV_FILE = '表.csv'
 
+# IndexNow (Bing / Yandex / etc.) 設定
+INDEXNOW_KEY = 'ae9b3d43b46a41f384be82ed51f7e294'
+INDEXNOW_HOST = 'kenji.blog'
+
 URLS_TO_INDEX = []
 remaining_rows = []
 header = None
@@ -34,6 +38,30 @@ except Exception as e:
 if not URLS_TO_INDEX:
     print("インデックス登録するURLがありません（完了しました）。")
     sys.exit(0)
+
+def request_indexnow(urls):
+    """IndexNow (Bing / Yandex / etc.) にURLリストを一括送信する"""
+    endpoint = "https://api.indexnow.org/indexnow"
+    headers = {
+        "Content-Type": "application/json; charset=utf-8"
+    }
+    payload = {
+        "host": INDEXNOW_HOST,
+        "key": INDEXNOW_KEY,
+        "keyLocation": f"https://{INDEXNOW_HOST}/{INDEXNOW_KEY}.txt",
+        "urlList": urls
+    }
+    try:
+        response = requests.post(endpoint, json=payload, headers=headers, timeout=15)
+        if response.status_code in [200, 202]:
+            print(f"[IndexNow OK] ({response.status_code}) {len(urls)}件のURLをIndexNow(Bing等)へ一括送信しました。")
+            return True
+        else:
+            print(f"[IndexNow ERROR] ({response.status_code}): {response.text}")
+            return False
+    except Exception as e:
+        print(f"[IndexNow EXCEPTION] {e}")
+        return False
 
 def request_indexing(url, session):
     endpoint = "https://indexing.googleapis.com/v3/urlNotifications:publish"
@@ -61,7 +89,12 @@ def main():
     )
     session = AuthorizedSession(credentials)
 
-    print(f"{len(URLS_TO_INDEX)}件のURLのインデックス登録をリクエストします...")
+    # 1. IndexNow (Bing / Yandex等) への一括送信
+    print(f"\n--- IndexNow (Bing) 送信開始 ({len(URLS_TO_INDEX)}件) ---")
+    request_indexnow(URLS_TO_INDEX)
+
+    # 2. Google Indexing API への送信
+    print(f"\n--- Google Indexing API 送信開始 ({len(URLS_TO_INDEX)}件) ---")
     for url in URLS_TO_INDEX:
         success = request_indexing(url, session)
         if not success:
