@@ -2,7 +2,7 @@
 title: "Why Fireflies and Deep-Sea Creatures Glow Without Heat: The Quantum Chemistry of Bioluminescence and Cold Light"
 description: "An in-depth exploration of how living organisms bypass Planck's thermal radiation law to generate visible photons at room temperature. Covering blackbody thermodynamics vs. luminescence, the distinction between bioluminescence, GFP fluorescence, and BRET, the four-step firefly luciferin-luciferase reaction via 1,2-dioxetanone and the CIEEL mechanism, active-site color tuning, convergent evolution across 90+ lineages, and applications from single-cell AkaBLI cancer imaging to self-sustained glowing plants."
 slug: "bioluminescence-luciferin-luciferase-cold-light-quantum-yield-chemiluminescence"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Science"

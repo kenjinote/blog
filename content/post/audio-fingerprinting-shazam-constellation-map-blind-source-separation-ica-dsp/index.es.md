@@ -2,7 +2,7 @@
 title: "¿Cómo identifica Shazam cualquier canción en 3 segundos en una cafetería ruidosa? Huella acústica, mapas de constelaciones y separación ciega de fuentes (ICA)"
 description: "Análisis matemático detallado del algoritmo Shazam de Avery Wang (transformada de Fourier de tiempo corto STFT, principio de incertidumbre de Gabor-Heisenberg, Constellation Map de máximos locales, hashing combinatorio de 32 bits e histograma de desfase temporal) junto con el problema de la fiesta de cóctel y el Análisis de Componentes Independientes (blanqueamiento PCA, no gaussianidad, curtosis, negentropía y FastICA)."
 slug: "audio-fingerprinting-shazam-constellation-map-blind-source-separation-ica-dsp"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Informática y Tecnología"

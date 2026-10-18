@@ -2,7 +2,7 @@
 title: "Mengapa Gaya Gesek Tidak Bergantung pada Luas Kontak? Fisika Mikro-Asperitas, Dinamika Stick-Slip, Pra-Peleburan Es, dan Superlubrisitas"
 description: "Analisis fisika dan matematika mendalam tentang tribologi: memecahkan paradoks Amontons-Coulomb melalui luas kontak nyata (Bowden-Tabor dan Greenwood-Williamson), hukum gesekan laju-dan-keadaan Dieterich-Ruina dari biola hingga gempa bumi, membantah mitos peleburan tekanan es dengan persamaan Clausius-Clapeyron, serta superlubrisitas struktural."
 slug: "tribology-physics-of-friction-amontons-laws-real-contact-area-superlubricity"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Sains"

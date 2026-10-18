@@ -2,7 +2,7 @@
 title: "完全不使用鎖，多執行緒如何同時修改同一份資料？無鎖程式設計與ABA問題的科學"
 description: "從互斥鎖在超低延遲系統中的優先權反轉與鎖護航瓶頸出發，深入解析Herlihy共識數層次定理（CAS與LL/SC的普適性）、Treiber無鎖堆疊中惡名昭彰的ABA問題記憶體破壞機制，以及風險指標（Hazard Pointers）、基於紀元的記憶體回收（EBR）與RCU。"
 slug: "lock-free-programming-compare-and-swap-aba-problem-hazard-pointers-concurrency"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "電腦科學"

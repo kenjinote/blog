@@ -2,7 +2,7 @@
 title: "Comment plusieurs threads peuvent-ils modifier les mêmes données sans aucun verrou ? La science de la programmation Lock-Free et du problème ABA"
 description: "Analyse architecturale et mathématique de la synchronisation non bloquante : défaillances des mutex en très basse latence, hiérarchie du nombre de consensus de Maurice Herlihy (CAS vs LL/SC), anatomie de la corruption mémoire du problème ABA dans la pile de Treiber, et récupération mémoire sûre via Hazard Pointers, EBR et RCU."
 slug: "lock-free-programming-compare-and-swap-aba-problem-hazard-pointers-concurrency"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Informatique"

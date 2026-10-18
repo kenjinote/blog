@@ -2,7 +2,7 @@
 title: "¿Por qué la fuerza de fricción es independiente del área de contacto? Asperezas microscópicas, dinámica stick-slip, prefusión del hielo y superlubricidad"
 description: "Un análisis físico y matemático riguroso de la tribología: resolución de la paradoja de Amontons-Coulomb mediante el área real de contacto (Bowden-Tabor y Greenwood-Williamson), leyes de fricción de velocidad y estado de Dieterich-Ruina desde el violín hasta los terremotos, refutación de la fusión por presión del hielo con la ecuación de Clausius-Clapeyron y superlubricidad estructural."
 slug: "tribology-physics-of-friction-amontons-laws-real-contact-area-superlubricity"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Ciencia"

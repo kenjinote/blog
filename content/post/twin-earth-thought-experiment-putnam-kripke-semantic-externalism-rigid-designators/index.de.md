@@ -2,7 +2,7 @@
 title: "Wenn es wie Wasser aussieht und wirkt, ist es bei anderer Chemie kein ‚Wasser‘? Das Zwillingserde-Gedankenexperiment und der semantische Externalismus"
 description: "Eine fundierte philosophische Analyse von Freges Sinn und Bedeutung sowie Russells Kennzeichnungstheorie über Kripkes starre Designatoren in ‚Name und Notwendigkeit‘, Putnams Zwillingserde-Gedankenexperiment (H2O vs. XYZ) und Burges sozialen Externalismus bis hin zum Symbol-Grounding-Problem moderner Large Language Models."
 slug: "twin-earth-thought-experiment-putnam-kripke-semantic-externalism-rigid-designators"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Philosophie"

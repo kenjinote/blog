@@ -2,7 +2,7 @@
 title: "Warum beim Umrühren von Kaffee immer mindestens ein Punkt am selben Ort bleibt: Fixpunktsätze und die Mathematik des Gleichgewichts"
 description: "Von den alltäglichen Wundern des Brouwerschen Fixpunktsatzes (1911) – dem unbewegten Kaffeemolekül und der zerknüllten Landkarte – über scharfe Gegenbeispiele und drei klassische Beweise (Zwischenwertsatz, Borsuks Nicht-Retraktionssatz mit Homologie und Satz von Stokes, Sperners Lemma) bis zur großen Hierarchie der Fixpunktsätze von Banach, Schauder und Kakutani für das Nash-Gleichgewicht (1950) und das allgemeine Arrow-Debreu-Marktgleichgewicht (1954)."
 slug: "brouwer-fixed-point-theorem-kakutani-nash-equilibrium-algebraic-topology-math"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematik"

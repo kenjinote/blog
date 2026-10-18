@@ -2,7 +2,7 @@
 title: "Por qué al remover una taza de café siempre queda al menos un punto inmóvil: teoremas de punto fijo y las matemáticas del equilibrio"
 description: "Desde los milagros cotidianos del teorema del punto fijo de Brouwer (1911) —la molécula de café inmóvil y el mapa arrugado— hasta contraejemplos precisos, tres demostraciones clásicas (teorema del valor intermedio, no retracción de Borsuk mediante homología y teorema de Stokes, lema de Sperner) y la gran jerarquía de Banach, Schauder y Kakutani que sustenta el equilibrio de Nash (1950) y el equilibrio general de Arrow-Debreu (1954)."
 slug: "brouwer-fixed-point-theorem-kakutani-nash-equilibrium-algebraic-topology-math"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemáticas"

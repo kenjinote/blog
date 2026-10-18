@@ -2,7 +2,7 @@
 title: "Por qué las mariposas Morpho y los escarabajos joya brillan sin pigmentos: La física del color estructural y la interferencia de la luz"
 description: "¿Por qué el ala azul eléctrico de una mariposa Morpho se convierte en polvo marrón al triturarla y pierde su color instantáneamente en acetona? Un tratado riguroso de óptica ondulatoria sobre interferencia de película delgada, reflectores de Bragg (DBR), la paradoja Morpho y los cristales fotónicos 3D."
 slug: "structural-coloration-morpho-butterfly-photonic-crystals-thin-film-interference"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Ciencia"

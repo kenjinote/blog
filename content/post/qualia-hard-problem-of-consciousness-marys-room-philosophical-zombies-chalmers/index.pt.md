@@ -2,7 +2,7 @@
 title: "Se você conhecesse todas as leis físicas da cor, saberia como é ver o vermelho? Qualia e o Problema Difícil da Consciência"
 description: "Criada em um quarto estritamente preto e branco, a brilhante neurocientista Mary aprende todas as verdades físicas sobre a visão humana de cores. Quando ela sai e vê um tomate vermelho maduro pela primeira vez, ela aprende algo novo? Uma análise rigorosa do morcego de Nagel, do argumento do conhecimento de Jackson, dos zumbis filosóficos de Chalmers, da semântica modal bidimensional, das contraofensivas fisicalistas, do monismo russelliano e da teoria da informação integrada (IIT)."
 slug: "qualia-hard-problem-of-consciousness-marys-room-philosophical-zombies-chalmers"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Filosofia"

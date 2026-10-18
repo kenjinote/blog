@@ -2,7 +2,7 @@
 title: "Warum moderne Computer exponentiell explodierende NP-vollständige Probleme in Sekunden lösen: SAT-Solver, CDCL und Phasenübergänge"
 description: "Nach dem Satz von Cook und Levin (1971) war das Erfüllbarkeitsproblem der Aussagenlogik (SAT) das erste als NP-vollständig bewiesene Problem mit einer Worst-Case-Laufzeit von O(2^n). Dennoch lösen moderne industrielle SAT-Solver Formeln mit 10 Millionen Variablen und 50 Millionen Klauseln in Sekunden. Wir analysieren den Weg von DPLL zu Conflict-Driven Clause Learning (CDCL), First-UIP-Resolution, Two-Watched Literals (2WL), VSIDS sowie den Phasenübergang bei α ≈ 4,267 und den 200-Terabyte-Beweis des Pythagoreischen Tripel-Problems."
 slug: "sat-solvers-boolean-satisfiability-dpll-cdcl-two-watched-literals-phase-transition"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Informatik"

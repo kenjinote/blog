@@ -2,7 +2,7 @@
 title: "Comment prouver mathématiquement qu'un programme est 100 % sans bug sans jamais l'exécuter ? La science de la vérification formelle"
 description: "De la maxime de Dijkstra et du théorème de Rice à la logique de Floyd-Hoare, aux solveurs SMT Z3, au Model Checking temporel (TLA+), à l'explosion d'Ariane 5, à l'interprétation abstraite de Cousot (connexions de Galois) et aux assistants de preuve (Coq, Lean 4, CompCert, seL4)."
 slug: "formal-verification-hoare-logic-model-checking-abstract-interpretation-smt-solvers"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Informatique"

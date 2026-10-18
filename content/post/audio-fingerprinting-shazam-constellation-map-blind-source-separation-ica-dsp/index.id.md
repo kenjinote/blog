@@ -2,7 +2,7 @@
 title: "Mengapa Lagu Bisa Dikenali Hanya dalam 3 Detik di Kafe yang Bising? Sidik Jari Akustik (Shazam), Peta Rasi Bintang, dan Pemisahan Sinyal Buta (ICA)"
 description: "Analisis matematis mendalam tentang algoritma Shazam karya Avery Wang (Short-Time Fourier Transform STFT, prinsip ketidakpastian Gabor-Heisenberg, Constellation Map puncak lokal, hashing kombinatorial 32-bit, dan histogram offset waktu) serta Cocktail Party Problem dan Independent Component Analysis (PCA Whitening vs. Non-Gaussianitas, Kurtosis, Negentropi, dan FastICA)."
 slug: "audio-fingerprinting-shazam-constellation-map-blind-source-separation-ica-dsp"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Ilmu Komputer & Pemrosesan Sinyal"

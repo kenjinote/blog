@@ -2,7 +2,7 @@
 title: "为什么人能在水溶淀粉上奔跑：遇强则刚、静置则流的非牛顿流体与流变学科学"
 description: "深入解析为什么人可以在玉米淀粉水溶液（欧不裂/Oobleck）池面上奔跑而不下沉，停下却会陷入其中。从牛顿粘性定律、奥斯特瓦尔德-德瓦勒幂律与赫歇尔-巴尔克利本构方程，到水动力团簇理论、摩擦接触力链与冲击诱导固化锋面，再到血液剪切稀化、魏森贝格爬杆效应、德博拉数及液体防弹衣的工程应用。"
 slug: "non-newtonian-fluids-shear-thickening-oobleck-rheology-viscoelasticity-physics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "科学"

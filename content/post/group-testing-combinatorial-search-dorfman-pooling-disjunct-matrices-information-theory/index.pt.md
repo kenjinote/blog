@@ -2,7 +2,7 @@
 title: "Por que misturar amostras encontra positivos em menos testes: A matemática do Group Testing e da busca combinatória"
 description: "Uma exploração matemática rigorosa do Group Testing e da busca combinatória: do pooling em duas etapas de Robert Dorfman (1943) e do limite inferior de Shannon ao problema das 12 moedas, matrizes disjuntas de Kautz-Singleton, códigos de Reed-Solomon e sensoriamento comprimido (Compressed Sensing)."
 slug: "group-testing-combinatorial-search-dorfman-pooling-disjunct-matrices-information-theory"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemática e Ciência da Computação"

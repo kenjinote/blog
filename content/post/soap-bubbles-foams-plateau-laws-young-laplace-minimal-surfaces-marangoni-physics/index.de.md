@@ -2,7 +2,7 @@
 title: "Warum Seifenblasen rund sind und Schaumwände sich unter 120 Grad treffen: Die Physik der Oberflächenspannung und der Plateau-Gesetze"
 description: "Eine tiefgehende mathematisch-physikalische Analyse von Seifenblasen und Schäumen: von der Thermodynamik der Grenzflächenspannung und der Young-Laplace-Gleichung über Minimalflächen, Ostwald-Reifung, das Lungensurfactant DPPC, die Plateau-Gesetze und den Tetraederwinkel von 109,47 Grad bis zur Weaire-Phelan-Struktur und der selbstheilenden Gibbs-Marangoni-Elastizität."
 slug: "soap-bubbles-foams-plateau-laws-young-laplace-minimal-surfaces-marangoni-physics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Wissenschaft"

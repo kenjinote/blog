@@ -2,7 +2,7 @@
 title: "겉모습과 성질이 똑같아도 성분이 다르면 '물'이 아닐까: '쌍둥이 지구' 사고실험과 의미론적 외재주의"
 description: "프레게의 뜻과 지시체, 러셀과 설의 기술이론부터 크립키 『이름과 필연성』의 고정 지시어, 퍼트넘의 '쌍둥이 지구' 사고실험(H2O와 XYZ), 버지의 사회적 외재주의, 그리고 현대 거대언어모델(LLM)의 기호 접지 문제까지 '의미는 머릿속에 있지 않다'는 언어철학의 패러다임 전환을 심층 해설한다."
 slug: "twin-earth-thought-experiment-putnam-kripke-semantic-externalism-rigid-designators"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "철학"

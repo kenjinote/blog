@@ -2,7 +2,7 @@
 title: "「倍賭けを続ければ必ず勝てる」はなぜ破綻するのか：ギャンブラーの破産問題とマルチンゲールの数学"
 description: "18世紀のカジノを席巻した「マーチンゲール倍賭け法」の甘美な罠から、ホイヘンスとパスカルの「ギャンブラーの破産問題」の吸収壁ランダムウォークによる厳密解、そしてポール・レヴィとジョセフ・ドゥーブが築き上げた現代確率論の金字塔「マルチンゲール理論」と「任意停止定理（Optional Stopping Theorem）」までを完全に導出・解説する。"
 slug: "gamblers-ruin-martingale-betting-doob-optional-stopping-theorem-stochastic-processes"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "数学"

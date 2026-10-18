@@ -2,7 +2,7 @@
 title: "Quelle est la différence entre mentir et induire en erreur par la stricte vérité ? Philosophie du langage du mensonge, de l'implicature de Grice et du « Bullshit » de Frankfurt"
 description: "De saint Athanase sur le Nil à l'arrêt de la Cour suprême américaine Bronston v. United States, nous analysons la définition formelle du mensonge en logique doxastique, les mensonges éhontés (bald-faced lies), le principe de coopération et les implicatures conversationnelles de H. Paul Grice, le modèle bayésien RSA du paltering, le rigorisme de Kant face à sa propre équivoque stratégique envers le roi Frédéric-Guillaume II, la critique éthique de Jennifer Saul et On Bullshit de Harry Frankfurt à l'ère des hallucinations des LLM."
 slug: "philosophy-of-lying-misleading-gricean-implicature-frankfurt-on-bullshit-ethics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Philosophie"

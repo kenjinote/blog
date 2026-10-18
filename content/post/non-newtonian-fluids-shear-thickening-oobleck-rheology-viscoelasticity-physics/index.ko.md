@@ -2,7 +2,7 @@
 title: "전분물 위를 어떻게 달릴 수 있을까: 때리면 굳고 가만히 두면 흐르는 비뉴턴 유체와 유변학의 과학"
 description: "옥수수 전분과 물의 혼합물(우블렉, Oobleck) 위를 달리면 가라앉지 않지만 멈추면 늪처럼 빠지는 이유는 무엇일까요? 뉴턴의 점성 법칙부터 오스트발트-드 발레 거듭제곱 법칙, 허셸-벌클리 모델, 하이드로클러스터와 마찰 접촉 힘 사슬 이론, 혈액의 전단 박화, 바이센베르크 효과, 데보라 수, 액체 방탄복까지 비뉴턴 유체의 물리학을 완벽 해설합니다."
 slug: "non-newtonian-fluids-shear-thickening-oobleck-rheology-viscoelasticity-physics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "과학"

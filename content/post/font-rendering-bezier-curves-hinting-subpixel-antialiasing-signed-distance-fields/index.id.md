@@ -2,7 +2,7 @@
 title: "Mengapa Teks Sangat Kecil Tetap Tajam dan Terbaca: Matematika Rendering Font, Kurva Bézier, VM Hinting, dan Subpixel Antialiasing"
 description: "Kajian mendalam matematika dan rekayasa sistem di balik rendering font modern: polinomial basis Bernstein, geometri kurva Bézier kuadratik vs. kubik, algoritma subdivisi De Casteljau, topologi aturan lilitan tak-nol, integrasi luas trapesium analitik, mesin virtual hinting TrueType, filter FIR 5-tap ClearType, pencampuran alfa linier terkoreksi gamma, hingga Multi-Channel Signed Distance Fields (MSDF) dan shader Bézier GPU langsung (Slug)."
 slug: "font-rendering-bezier-curves-hinting-subpixel-antialiasing-signed-distance-fields"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Ilmu Komputer"

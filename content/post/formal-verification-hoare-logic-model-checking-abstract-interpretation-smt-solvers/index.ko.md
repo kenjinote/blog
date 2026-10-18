@@ -2,7 +2,7 @@
 title: "프로그램을 단 한 번도 실행하지 않고 어떻게 '버그가 절대 없음'을 증명하는가: 형식 검증과 모델 체킹의 과학"
 description: "다익스트라의 격언과 라이스의 결정 불가능성 정리부터 플로이드-호어 논리, Z3 SMT 솔버, 시제 논리와 모델 체킹(TLA+), 아리안 5호 로켓 폭발 사고가 낳은 추상 해석(갈루아 연결), 그리고 대화형 정리 증명기(Coq/Lean 4/CompCert/seL4)까지 수학적 완전 무결성을 달성하는 과학을 해부한다."
 slug: "formal-verification-hoare-logic-model-checking-abstract-interpretation-smt-solvers"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "컴퓨터 과학"

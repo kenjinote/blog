@@ -2,7 +2,7 @@
 title: "为什么零度以下的水有时不会结冰：过冷现象与晶体诞生的瞬间"
 description: "为什么纯净水在0℃时不会自动结冰，甚至能维持液态直抵零下40℃？本文从统计热力学的亚稳态出发，严格推导经典成核理论（CNT）中的临界核半径与自由能势垒，剖析异质成核的接触角几何学、机械冲击触发枝晶生长与约10%结冰率的绝热热力学，并延伸至过热暴沸、云物理、抗冻蛋白及跨越水之无人区的玻璃化转变。"
 slug: "supercooling-nucleation-thermodynamics-metastable-water-crystallization-physics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "科学"

@@ -2,7 +2,7 @@
 title: "小さな文字が潰れずに美しく読めるのはなぜか：フォント描画・ベジェ曲線・サブピクセルレンダリングの技術"
 description: "わずか12×12ピクセルの格子の中に29画の「鬱」や繊細な欧文セリフ体を鮮明に描き出すフォントレンダリングの数理と実装を徹底解説。ベルンシュタイン基底と2次/3次ベジェ曲線、ド・カステリョの分割アルゴリズム、非ゼロ巻数規則と解析的台形面積積分、TrueType仮想マシンによるヒンティング命令、ClearTypeのサブピクセルFIRフィルタとガンマ補正線形ブレンディング、そしてGPU時代のMSDFやSlugシェーダまでを一気通貫で紐解きます。"
 slug: "font-rendering-bezier-curves-hinting-subpixel-antialiasing-signed-distance-fields"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "コンピュータ"

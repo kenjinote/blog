@@ -2,7 +2,7 @@
 title: "为什么埃舍尔的阶梯画得出却造不出？不可能图形与“局部与整体”的数学"
 description: "彭罗斯三角形与M.C.埃舍尔的无限阶梯在每一个局部角落都完全符合三维物理定律，但沿闭合回路拼接时却在三维空间中彻底崩溃。本文深入解析透视投影如何抹除深度纤维、罗杰·彭罗斯如何用层论（Sheaf Theory）与Čech上同调严格定义不可能图形，以及杉原厚吉的反重力实体模型与量子上下文性背后的统一上同调架构。"
 slug: "impossible-figures-penrose-triangle-escher-sheaf-cohomology-local-global-geometry"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "数学"

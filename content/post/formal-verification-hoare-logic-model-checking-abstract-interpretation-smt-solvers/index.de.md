@@ -2,7 +2,7 @@
 title: "Warum lässt sich mathematisch beweisen, dass ein Programm 100 % fehlerfrei ist – ohne es ein einziges Mal auszuführen? Die Wissenschaft der formalen Verifikation"
 description: "Von Dijkstras berühmtem Aphorismus und dem Satz von Rice über die Floyd-Hoare-Logik, Z3-SMT-Solver, temporale Logik und Model Checking (TLA+) bis zur Katastrophe der Ariane 5, abstrakter Interpretation (Galois-Verbindungen) und interaktiven Theorembeweisern (Coq, Lean 4, CompCert, seL4)."
 slug: "formal-verification-hoare-logic-model-checking-abstract-interpretation-smt-solvers"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Informatik"

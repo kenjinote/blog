@@ -2,7 +2,7 @@
 title: "Bagaimana Banyak Pihak Menghitung Jumlah dan Peringkat Tanpa Mengungkap Satu Bit Pun: Komputasi Multi-Pihak Aman (MPC) dan Masalah Jutawan Yao"
 description: "Kupas tuntas matematis Komputasi Multi-Pihak Aman (MPC): dari pembagian rahasia aditif dan Masalah Jutawan Andrew Yao hingga skema ambang batas (t, n) Shamir melalui interpolasi Lagrange, tripel perkalian Beaver, Oblivious Transfer (OT), Garbled Circuits, serta aplikasi nyata di bidang medis dan keuangan."
 slug: "secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Ilmu Komputer & Kriptografi"

@@ -2,7 +2,7 @@
 title: "Mengapa Komputer Modern Menyelesaikan Masalah NP-Complete yang Seharusnya Meledak secara Eksponensial dalam Hitungan Detik: Solver SAT, CDCL, dan Transisi Fase"
 description: "Berdasarkan teorema Cook-Levin (1971), Boolean Satisfiability (SAT) adalah masalah pertama yang terbukti NP-Complete dengan kompleksitas kasus terburuk O(2^n). Namun solver SAT industri modern mampu menyelesaikan formula dengan 10 juta variabel dan 50 juta klausa dalam hitungan detik. Kami membedah perjalanan dari DPLL ke Conflict-Driven Clause Learning (CDCL), resolusi First-UIP (1-UIP), Two-Watched Literals (2WL), VSIDS, transisi fase pada α ≈ 4,267, hingga bukti matematika 200 terabyte masalah Tripel Pythagoras."
 slug: "sat-solvers-boolean-satisfiability-dpll-cdcl-two-watched-literals-phase-transition"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Ilmu Komputer"

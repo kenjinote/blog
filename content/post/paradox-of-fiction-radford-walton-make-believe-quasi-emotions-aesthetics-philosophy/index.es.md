@@ -2,7 +2,7 @@
 title: "¿Por qué lloramos por Anna Karenina y tememos a monstruos que sabemos que no existen? La paradoja de la ficción y la filosofía de la imaginación"
 description: "Un estudio filosófico exhaustivo sobre la paradoja de la ficción de Colin Radford (la tríada inconsistente entre respuesta emocional, creencia existencial y no-creencia), el cognitivismo de las emociones, la suspensión voluntaria de la incredulidad de Coleridge, la teoría del hacer-creer (Make-Believe) y el cuasi-miedo de Kendall Walton, la teoría del pensamiento (Thought Theory), la paradoja de la tragedia, la resistencia imaginativa y la ontología artefactual de las entidades ficticias."
 slug: "paradox-of-fiction-radford-walton-make-believe-quasi-emotions-aesthetics-philosophy"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Filosofía y Arte"

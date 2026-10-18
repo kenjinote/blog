@@ -2,7 +2,7 @@
 title: "Why You Can Run on Cornstarch and Water: The Physics of Non-Newtonian Fluids, Shear Thickening, and Rheology"
 description: "Why does a pool of cornstarch and water (Oobleck) solidify like concrete under a runner's foot yet liquefy into quicksand the moment they stop? Explore the deep physics of rheology: from Newton's law of viscosity and Herschel-Bulkley models to hydroclusters, frictional jamming force chains, impact-activated solidification fronts, hemorheology, the Weissenberg effect, the Deborah number, and liquid body armor."
 slug: "non-newtonian-fluids-shear-thickening-oobleck-rheology-viscoelasticity-physics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Science"

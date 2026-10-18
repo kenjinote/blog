@@ -2,7 +2,7 @@
 title: "ロックを一切使わずに、どうやって複数スレッドで同じデータを書き換えるのか：ロックフリー処理とABA問題の科学"
 description: "ミューテックスが招く優先度逆転とロックコンボイの限界から、ハーリヒの合意数階層定理（CASとLL/SCの普遍性）、トレイバー・スタックに潜むABA問題のメモリ破壊メカニズム、そしてハザードポインタやエポックベース回収（EBR）・RCUによる安全なメモリ管理までを徹底解説する。"
 slug: "lock-free-programming-compare-and-swap-aba-problem-hazard-pointers-concurrency"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "コンピュータ"

@@ -2,7 +2,7 @@
 title: "Por que a água nem sempre congela abaixo de zero: super-resfriamento e a física da nucleação cristalina"
 description: "Por que a água líquida pura pode permanecer líquida até quase -40 °C? Uma análise termodinâmica e cinética rigorosa do estado metaestável, da Teoria Clássica da Nucleação (CNT), do raio crítico, do fator de molhamento de Turnbull, do crescimento dendrítico induzido por choque, do superaquecimento e da vitrificação."
 slug: "supercooling-nucleation-thermodynamics-metastable-water-crystallization-physics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Ciência"

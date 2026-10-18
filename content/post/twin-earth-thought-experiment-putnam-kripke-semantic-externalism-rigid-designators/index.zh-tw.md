@@ -2,7 +2,7 @@
 title: "外觀與性質完全相同，但成分不同就不是『水』嗎？——『孿生地球』思想實驗與語義外在主義"
 description: "從弗雷格的涵義與指稱、羅素與塞爾的摹狀詞理論，到克里普克《命名與必然性》的嚴格指示詞、普特南的『孿生地球』思想實驗（H2O與XYZ）、伯吉的社會外在主義，以及當代大型語言模型（LLM）的符號接地問題，全面解析『意義不在頭腦中』的語言哲學革命。"
 slug: "twin-earth-thought-experiment-putnam-kripke-semantic-externalism-rigid-designators"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "哲學"

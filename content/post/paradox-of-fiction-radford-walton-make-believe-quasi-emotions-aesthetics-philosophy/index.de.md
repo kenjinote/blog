@@ -2,7 +2,7 @@
 title: "Warum weinen wir um Anna Karenina und fürchten Monster, von denen wir wissen, dass sie nicht existieren? Das Paradoxon der Fiktion und die Philosophie der Einbildungskraft"
 description: "Eine tiefgehende philosophische Untersuchung von Colin Radfords Paradoxon der Fiktion (das inkonsistente Trilemma aus emotionaler Reaktion, Existenzüberzeugung und Nicht-Glauben), dem Kognitivismus der Emotionen, Coleridges Willentlicher Aussetzung des Unglaubens, Kendall Waltons Make-Believe-Theorie und Quasi-Furcht, der Thought Theory, dem Paradoxon der Tragödie, dem imaginativen Widerstand und der Artefakt-Ontologie fiktionaler Gegenstände."
 slug: "paradox-of-fiction-radford-walton-make-believe-quasi-emotions-aesthetics-philosophy"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Philosophie & Kunst"

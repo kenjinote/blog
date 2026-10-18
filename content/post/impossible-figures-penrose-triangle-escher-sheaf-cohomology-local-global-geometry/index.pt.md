@@ -2,7 +2,7 @@
 title: "Por que podemos desenhar a escada de Escher, mas nunca construí-la em 3D? Figuras impossíveis e a matemática do local e do global"
 description: "Cada canto individual do triângulo de Penrose e da escada infinita de M.C. Escher é fisicamente válido, mas ao colá-los ao longo de um laço fechado o espaço tridimensional entra em colapso. Descubra como a projeção em perspectiva apaga a profundidade, como Sir Roger Penrose formulou as figuras impossíveis usando teoria de feixes e cohomologia de Čech, e como as esculturas de Kokichi Sugihara e a contextualidade quântica compartilham a mesma estrutura."
 slug: "impossible-figures-penrose-triangle-escher-sheaf-cohomology-local-global-geometry"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemática"

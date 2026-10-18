@@ -2,7 +2,7 @@
 title: "Why Modern Computers Solve Exponentially Explosive NP-Complete Problems in Seconds: Inside SAT Solvers, CDCL, and Phase Transitions"
 description: "By the Cook-Levin theorem (1971), Boolean Satisfiability (SAT) was the very first problem proven NP-Complete, carrying a worst-case complexity of O(2^n). Yet modern industrial SAT solvers routinely crush hardware verification and scheduling formulas with 10 million variables and 50 million clauses in seconds. We dissect the journey from classical DPLL to Conflict-Driven Clause Learning (CDCL), First-UIP resolution, Two-Watched Literals (2WL), VSIDS, the random 3-SAT phase transition at α ≈ 4.267, and the 200-terabyte proof of the Boolean Pythagorean Triples problem."
 slug: "sat-solvers-boolean-satisfiability-dpll-cdcl-two-watched-literals-phase-transition"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Computer Science"

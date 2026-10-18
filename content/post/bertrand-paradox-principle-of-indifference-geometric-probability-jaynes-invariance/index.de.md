@@ -2,7 +2,7 @@
 title: "Warum 'eine Gerade zufällig ziehen' drei verschiedene Antworten liefert: Das Bertrand-Paradoxon und die Grundlagen der Wahrscheinlichkeit"
 description: "Beträgt die Wahrscheinlichkeit, dass eine zufällige Sehne eines Einheitskreises länger als die Seite eines einbeschriebenen gleichseitigen Dreiecks ist, 1/3, 1/2 oder 1/4? Von Joseph Bertrands Paradoxon (1889) über das Scheitern des Laplaceschen Indifferenzprinzips und Keynes' Wein-Wasser-Paradoxon bis zu Kolmogorows Maßtheorie, Jaynes' Transformationsgruppen-Invarianz (Poincaré-Santaló-Maß) und dem Jeffreys-Prior."
 slug: "bertrand-paradox-principle-of-indifference-geometric-probability-jaynes-invariance"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematik"

@@ -2,7 +2,7 @@
 title: "How Does Lying Differ from Deceiving with the Literal Truth? The Philosophy of Language of Lies, Gricean Misleading, and Frankfurtian 'Bullshit'"
 description: "Starting from Saint Athanasius on the Nile and the US Supreme Court's landmark Bronston v. United States perjury ruling, we explore the formal definition of lying in doxastic logic, bald-faced lies, H. Paul Grice's Cooperative Principle and conversational implicatures, Bayesian Rational Speech Act (RSA) models of paltering, Kant's rigorism versus his own strategic equivocation, Jennifer Saul's ethical critique, and Harry Frankfurt's On Bullshit in the age of LLM hallucinations."
 slug: "philosophy-of-lying-misleading-gricean-implicature-frankfurt-on-bullshit-ethics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Philosophy"

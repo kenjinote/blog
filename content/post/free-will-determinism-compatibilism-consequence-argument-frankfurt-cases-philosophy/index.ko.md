@@ -2,7 +2,7 @@
 title: "모든 것이 물리 법칙으로 결정되어 있다면 인간에게 '자유의지'는 있는가: 결정론·양립가능론·도덕적 책임의 철학"
 description: "라플라스의 악마와 인과적 결정론, 피터 판 인바겐의 귀결 논증, 양자역학의 확률과 '운의 논증', 갤런 스트로슨의 기본 논증, 데이비드 흄과 해리 프랑크푸르트의 반례 및 위계적 욕구 이론, P.F. 스트로슨의 반응적 태도, 벤저민 리벳의 준비전위 실험까지 자유의지와 도덕적 책임을 둘러싼 현대 분석형이상학과 신경철학의 최전선을 심층 해부한다."
 slug: "free-will-determinism-compatibilism-consequence-argument-frankfurt-cases-philosophy"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "철학"

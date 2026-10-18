@@ -2,7 +2,7 @@
 title: "Jika Tampak dan Berperilaku Seperti Air, Apakah Kimia Berbeda Membuatnya Bukan 'Air'? Eksperimen Pikiran Bumi Kembar dan Eksternalisme Semantik"
 description: "Eksplorasi filosofis mendalam mulai dari Sinn dan Bedeutung Frege serta teori deskripsi Russell hingga designator kaku Kripke, eksperimen pikiran Bumi Kembar Putnam (H2O vs. XYZ), eksternalisme sosial Burge, dan masalah Symbol Grounding pada Large Language Models (LLM)."
 slug: "twin-earth-thought-experiment-putnam-kripke-semantic-externalism-rigid-designators"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Filsafat"

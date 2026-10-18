@@ -2,7 +2,7 @@
 title: "為什麼混合檢體檢測能用更少的次數找出陽性感染者：群測試（Group Testing）與組合搜尋的數學原理"
 description: "深入解析群測試（Group Testing）與組合搜尋的數學體系：從1943年多夫曼（Dorfman）的二階段混檢突破、香農資訊理論下界、12枚假幣天平問題與自適應二分搜尋，到考茨-辛格爾頓析取矩陣（Disjunct Matrix）、有限體里德-所羅門多項式混檢設計，以及壓縮感知與高通量基因篩檢應用。"
 slug: "group-testing-combinatorial-search-dorfman-pooling-disjunct-matrices-information-theory"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "數學與資訊科學"

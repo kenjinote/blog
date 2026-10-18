@@ -2,7 +2,7 @@
 title: "Why Water Doesn't Always Freeze Below Zero: Supercooling and the Physics of Crystal Nucleation"
 description: "Why can pure liquid water survive down to nearly -40°C without freezing? A rigorous thermodynamic and kinetic exploration of metastability, Classical Nucleation Theory (CNT), critical nucleus radius and activation barriers, heterogeneous wetting geometry, shock-induced dendritic growth, superheating and bubble chambers, atmospheric cloud physics, and vitrification across water's No-Man's Land."
 slug: "supercooling-nucleation-thermodynamics-metastable-water-crystallization-physics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Science"

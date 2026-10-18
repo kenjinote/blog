@@ -2,7 +2,7 @@
 title: "Apa Bedanya Berbohong dengan Mengatakan Fakta yang Menyesatkan? Filsafat Bahasa tentang Kebohongan, Implikatur Grice, dan 'Omong Kosong (Bullshit)' Frankfurt"
 description: "Analisis filosofis dan linguistik mendalam mengenai batas antara kebohongan (lying), penyesatan dengan fakta benar (misleading/paltering), implikatur percakapan H. Paul Grice, rigorisme moral Immanuel Kant, yurisprudensi Bronston v. United States, hingga teori Harry G. Frankfurt tentang 'On Bullshit' dan halusinasi AI."
 slug: "philosophy-of-lying-misleading-gricean-implicature-frankfurt-on-bullshit-ethics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Filsafat & Bahasa"

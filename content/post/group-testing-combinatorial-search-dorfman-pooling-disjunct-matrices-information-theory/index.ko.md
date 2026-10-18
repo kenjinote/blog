@@ -2,7 +2,7 @@
 title: "검체를 섞어서 검사하면 왜 더 적은 횟수로 양성자를 찾을 수 있을까: 그룹 테스팅(Group Testing)과 조합 탐색의 수학"
 description: "1943년 로버트 도프만(Dorfman)의 2단계 풀링(Pooling) 기법부터 섀넌의 정보이론적 하한, 12개의 가짜 동전 양팔저울 문제와 적응형 이진 탐색, 카우츠-싱글턴의 분리 행렬(Disjunct Matrix)과 리드-솔로몬 유한체 다항식 설계, 그리고 압축 센싱(Compressed Sensing)과 코로나19 P-BEST 검사법까지 심층 해설합니다."
 slug: "group-testing-combinatorial-search-dorfman-pooling-disjunct-matrices-information-theory"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "수학 및 정보과학"

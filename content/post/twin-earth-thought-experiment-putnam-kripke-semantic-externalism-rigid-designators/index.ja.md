@@ -2,7 +2,7 @@
 title: "見た目も性質も同じでも、成分が違えば『水』ではないのか：『双子の地球』と意味の外部主義"
 description: "フレーゲの意義と指示対象、ラッセルの記述理論から、クリプキ『名指しと必然性』の固定指示子、パトナムの『双子の地球』思考実験（H2OとXYZ）、そしてバージの社会的外在主義と現代AIの記号接地問題まで、『意味は頭の中にはない』という言語哲学の大転換を徹底解説する。"
 slug: "twin-earth-thought-experiment-putnam-kripke-semantic-externalism-rigid-designators"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "哲学"

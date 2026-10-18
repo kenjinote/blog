@@ -2,7 +2,7 @@
 title: "If Everything Is Determined by the Laws of Physics, Do Humans Have Free Will? Determinism, Compatibilism, and Moral Responsibility"
 description: "An exhaustive philosophical and formal investigation into the problem of free will and moral responsibility: Laplace's Demon and causal determinism, Peter van Inwagen's Consequence Argument, quantum indeterminism and the Luck Argument, Galen Strawson's Basic Argument, Harry Frankfurt's counterexamples to alternate possibilities and hierarchical volitions, P.F. Strawson's reactive attitudes, and Benjamin Libet's readiness potential neuroscience."
 slug: "free-will-determinism-compatibilism-consequence-argument-frankfurt-cases-philosophy"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Philosophy"

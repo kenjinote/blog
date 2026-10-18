@@ -2,7 +2,7 @@
 title: "Mengapa Kunang-Kunang dan Makhluk Laut Dalam Bersinar Tanpa Panas: Kimia Kuantum Bioluminesensi dan Cahaya Dingin"
 description: "Analisis mendalam tentang bagaimana organisme hidup melewati hukum radiasi termal Planck untuk menghasilkan foton tampak pada suhu kamar dengan hasil kuantum tinggi. Membahas radiasi benda hitam vs luminesensi, perbedaan bioluminesensi, fluoresensi (GFP) dan BRET, siklus empat langkah lusiferin-lusiferase melalui 1,2-dioksetanon (mekanisme CIEEL), ekologi laut dalam, hingga pencitraan medis AkaBLI dan tanaman bercahaya mandiri."
 slug: "bioluminescence-luciferin-luciferase-cold-light-quantum-yield-chemiluminescence"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Sains"

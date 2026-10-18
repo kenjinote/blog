@@ -2,7 +2,7 @@
 title: "如果一切都由物理定律决定，人类还有“自由意志”吗？决定论、相容论与道德责任的哲学"
 description: "深入剖析自由意志与道德责任的分析形而上学与神经哲学前沿：拉普拉斯妖与因果决定论、彼得·范·因瓦根的后承论证、量子不确定性与“运气论证”、盖伦·斯特劳森的基本论证、大卫·休谟与哈里·法兰克福的反例及阶层欲望理论、P.F.斯特劳森的反应性态度，以及本杰明·利贝特准备电位实验的当代反驳。"
 slug: "free-will-determinism-compatibilism-consequence-argument-frankfurt-cases-philosophy"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "哲学"

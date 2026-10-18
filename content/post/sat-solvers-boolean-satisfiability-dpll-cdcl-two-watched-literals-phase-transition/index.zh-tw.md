@@ -2,7 +2,7 @@
 title: "為什麼理論上會指數爆炸的NP完全難題，現代電腦卻能瞬間求解：深入解析SAT求解器、CDCL與相變現象"
 description: "根據庫克-列文定理（1971），布林可滿足性問題（SAT）是人類歷史上第一個被證明為NP完全的問題，其最壞時間複雜度高達O(2^n)。然而現代工業級SAT求解器卻能在幾秒內解開包含1000萬個變數和5000萬個子句的硬體設計驗證與套件管理公式。本文深入剖析從DPLL到CDCL（衝突驅動子句學習）、第一唯一蘊含點（1-UIP）、雙文字監視法（2WL）、VSIDS，以及隨機3-SAT在α≈4.267處的相變現象與200TB的畢氏三元組證明。"
 slug: "sat-solvers-boolean-satisfiability-dpll-cdcl-two-watched-literals-phase-transition"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "電腦科學"

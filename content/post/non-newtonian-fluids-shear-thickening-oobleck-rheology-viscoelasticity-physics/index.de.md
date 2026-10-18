@@ -2,7 +2,7 @@
 title: "Warum man über Speisestärke und Wasser laufen kann: Die Physik nicht-newtonscher Fluide und der Rheologie"
 description: "Warum verhärtet sich eine Suspension aus Maisstärke und Wasser (Oobleck) unter den Füßen eines Läufers wie Beton, wird aber sofort zu Treibsand, sobald man stehen bleibt? Eine tiefgehende Analyse von Newtons Viskositätsgesetz, Herschel-Bulkley-Modellen, Hydroclustern, reibungsbasierten Kraftketten, Stoßverfestigungsfronten, Blutrheologie, Weissenberg-Effekt, Deborah-Zahl und flüssiger Körperpanzerung."
 slug: "non-newtonian-fluids-shear-thickening-oobleck-rheology-viscoelasticity-physics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Wissenschaft"

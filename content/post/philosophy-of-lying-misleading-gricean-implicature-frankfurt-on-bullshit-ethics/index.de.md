@@ -2,7 +2,7 @@
 title: "Wie unterscheidet sich das Lügen von der Täuschung durch die buchstäbliche Wahrheit? Sprachphilosophie der Lüge, Gricescher Irreführung und Frankfurts ‚Bullshit‘"
 description: "Ausgehend von Athanasius dem Großen auf dem Nil und dem US-Supreme-Court-Urteil Bronston v. United States untersuchen wir die formale Definition der Lüge in der doxastischen Logik, dreiste Lügen (Bald-Faced Lies), H. Paul Grices Kooperationsprinzip und konversationelle Implikaturen, das Bayessche Rational-Speech-Act-Modell (RSA) des Paltering, Kants Rigorismus im Kontrast zu seiner eigenen strategischen Äquivokation gegenüber König Friedrich Wilhelm II., Jennifer Sauls ethische Kritik sowie Harry Frankfurts On Bullshit im Zeitalter von KI-Halluzinationen."
 slug: "philosophy-of-lying-misleading-gricean-implicature-frankfurt-on-bullshit-ethics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Philosophie"

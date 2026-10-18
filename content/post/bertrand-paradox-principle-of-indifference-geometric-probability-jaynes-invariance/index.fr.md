@@ -2,7 +2,7 @@
 title: "Pourquoi « tracer une droite au hasard » donne trois réponses différentes : le paradoxe de Bertrand et les fondements des probabilités"
 description: "La probabilité qu'une corde choisie au hasard dans un cercle unité soit plus longue que le côté du triangle équilatéral inscrit est-elle 1/3, 1/2 ou 1/4 ? Du paradoxe de Joseph Bertrand (1889) à la crise du principe d'indifférence de Laplace et au paradoxe du vin et de l'eau de Keynes, jusqu'aux axiomes de Kolmogorov, à l'invariance par groupe de transformations de Jaynes (mesure cinématique de Poincaré-Santaló) et à la loi a priori de Jeffreys."
 slug: "bertrand-paradox-principle-of-indifference-geometric-probability-jaynes-invariance"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathématiques"

@@ -2,7 +2,7 @@
 title: "Si mon cerveau est scanné et téléporté sur Mars, est-ce toujours « moi » ? Identité personnelle et philosophie de la survie"
 description: "Exploration philosophique approfondie de l'identité personnelle à travers le temps : le critère mémoriel de John Locke, le paradoxe du brave officier de Thomas Reid, l'objection de circularité de Butler, l'animalisme et la révolution de Derek Parfit (Télétransporteur, fission cérébrale et Relation R)."
 slug: "personal-identity-parfit-teletransporter-locke-memory-fission-psychological-continuity"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Philosophie"

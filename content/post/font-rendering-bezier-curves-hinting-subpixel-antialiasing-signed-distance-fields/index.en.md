@@ -2,7 +2,7 @@
 title: "Why Tiny Text Stays Crisp and Legible: The Mathematics of Font Rendering, Bézier Curves, Hinting VMs, and Subpixel Antialiasing"
 description: "An exhaustive mathematical and systems engineering deep dive into modern font rendering: Bernstein basis polynomials, Quadratic vs. Cubic Bézier geometry, De Casteljau subdivision, non-zero winding topology, exact analytical trapezoidal coverage integration, the TrueType stack-based hinting virtual machine, ClearType 5-tap FIR subpixel filtering, gamma-correct linear alpha blending, and GPU-era Multi-Channel Signed Distance Fields (MSDF) and direct Bézier shaders."
 slug: "font-rendering-bezier-curves-hinting-subpixel-antialiasing-signed-distance-fields"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Computer Science"

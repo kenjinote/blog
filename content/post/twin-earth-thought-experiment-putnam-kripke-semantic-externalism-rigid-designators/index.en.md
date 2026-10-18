@@ -2,7 +2,7 @@
 title: "If It Looks and Acts Like Water, Can Chemistry Make It Not Water? The Twin Earth Thought Experiment and Semantic Externalism"
 description: "An in-depth philosophical exploration from Frege's Sense and Reference and Russell's Theory of Descriptions to Saul Kripke's Rigid Designators, Hilary Putnam's Twin Earth thought experiment (H2O vs. XYZ), Tyler Burge's Social Externalism, and the Symbol Grounding Problem in modern Large Language Models."
 slug: "twin-earth-thought-experiment-putnam-kripke-semantic-externalism-rigid-designators"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Philosophy"

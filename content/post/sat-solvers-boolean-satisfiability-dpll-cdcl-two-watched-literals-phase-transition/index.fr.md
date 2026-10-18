@@ -2,7 +2,7 @@
 title: "Pourquoi les ordinateurs modernes résolvent en quelques secondes des problèmes NP-complets censés exploser : solveurs SAT, CDCL et transitions de phase"
 description: "Par le théorème de Cook-Levin (1971), la satisfaisabilité booléenne (SAT) fut le tout premier problème prouvé NP-complet, avec une complexité dans le pire cas en O(2^n). Pourtant, les solveurs SAT industriels modernes résolvent des formules de 10 millions de variables et 50 millions de clauses en quelques secondes. Plongée au cœur de DPLL, de l'apprentissage de clauses dirigé par les conflits (CDCL), du premier UIP (1-UIP), des deux littéraux surveillés (2WL), de VSIDS, de la transition de phase à α ≈ 4,267 et de la preuve de 200 téraoctets des triplets pythagoriciens."
 slug: "sat-solvers-boolean-satisfiability-dpll-cdcl-two-watched-literals-phase-transition"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Informatique"

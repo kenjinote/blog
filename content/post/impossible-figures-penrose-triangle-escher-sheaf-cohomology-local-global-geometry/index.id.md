@@ -2,7 +2,7 @@
 title: "Mengapa Tangga Escher Bisa Digambar tetapi Tidak Bisa Dibuat dalam 3D? Bangun Mustahil dan Matematika Lokal vs. Global"
 description: "Setiap sudut segitiga Penrose dan tangga tak berujung M.C. Escher sepenuhnya valid secara fisik, namun ketika disambungkan mengelilingi lintasan tertutup, ruang tiga dimensi runtuh. Pelajari bagaimana proyeksi perspektif menghapus kedalaman, bagaimana Sir Roger Penrose memformulasikan bangun mustahil menggunakan teori berkas (Sheaf Theory) dan kohomologi Čech, serta kaitannya dengan patung Kokichi Sugihara dan kontekstualitas kuantum."
 slug: "impossible-figures-penrose-triangle-escher-sheaf-cohomology-local-global-geometry"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matematika"

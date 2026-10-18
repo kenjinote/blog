@@ -2,7 +2,7 @@
 title: "에셔의 계단은 왜 그릴 수는 있는데 입체로 만들 수는 없을까: 불가능 도형과 '국소와 대역'의 수학"
 description: "펜로즈 삼각형과 M.C. 에셔의 무한 계단은 어느 한 구석을 잘라 보아도 물리적으로 완벽하지만, 전체를 하나로 이어 붙이는 순간 3차원 공간에서 파탄에 이른다. 투시 투영이 지워버리는 깊이 정보, 로저 펜로즈의 층(Sheaf)과 체흐 코호몰로지(Čech Cohomology)를 통한 불가능 도형의 엄밀한 정식화, 그리고 스기하라 고키치의 불가능 입체부터 양자 맥락성까지 심층 해설한다."
 slug: "impossible-figures-penrose-triangle-escher-sheaf-cohomology-local-global-geometry"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "수학"

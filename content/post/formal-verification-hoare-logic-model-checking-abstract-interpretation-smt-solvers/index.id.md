@@ -2,7 +2,7 @@
 title: "Mengapa Kita Bisa Membuktikan Program 100% Bebas Bug Tanpa Menjalankannya Sekali Pun? Sains Verifikasi Formal dan Model Checking"
 description: "Dari maksim abadi Dijkstra dan teorema ketidakpastian Rice hingga logika Floyd-Hoare, solver SMT Z3, logika temporal dan Model Checking (TLA+), bencana roket Ariane 5, interpretasi abstrak (koneksi Galois), serta pembukti teorema interaktif (Coq, Lean 4, CompCert, seL4)."
 slug: "formal-verification-hoare-logic-model-checking-abstract-interpretation-smt-solvers"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Ilmu Komputer"

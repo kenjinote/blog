@@ -2,7 +2,7 @@
 title: "¿Por qué se puede correr sobre maicena y agua?: La física de los fluidos no newtonianos y la reología"
 description: "¿Por qué una piscina de almidón de maíz y agua (Oobleck) se solidifica como el hormigón bajo los pies de un corredor pero se licúa como arenas movedizas al detenerse? Exploramos la ley de viscosidad de Newton, el modelo de Herschel-Bulkley, hidroclusters, cadenas de fuerza friccionales, frentes de solidificación, reología sanguínea, el efecto Weissenberg, el número de Deborah y el blindaje líquido."
 slug: "non-newtonian-fluids-shear-thickening-oobleck-rheology-viscoelasticity-physics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Ciencia"

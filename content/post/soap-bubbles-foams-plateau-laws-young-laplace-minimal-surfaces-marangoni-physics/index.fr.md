@@ -2,7 +2,7 @@
 title: "Pourquoi les bulles de savon sont rondes et les parois de mousse se coupent à 120 degrés : la physique de la tension superficielle et des lois de Plateau"
 description: "Une exploration mathématique et physique approfondie des bulles de savon et des mousses : de la thermodynamique de la tension superficielle et de l'équation de Young-Laplace aux surfaces minimales, au mûrissement d'Ostwald, au surfactant pulmonaire DPPC, aux lois de Plateau (120° et 109,47°), à la structure de Weaire-Phelan et à l'élasticité auto-cicatrisante de Gibbs-Marangoni."
 slug: "soap-bubbles-foams-plateau-laws-young-laplace-minimal-surfaces-marangoni-physics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Science"

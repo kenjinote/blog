@@ -2,7 +2,7 @@
 title: "Warum schon ein dritter Stern die Berechenbarkeit der Zukunft zerstört: Das Dreikörperproblem und die Tiefen der Himmelsmechanik"
 description: "Eine mathematisch-physikalische Analyse des Dreikörperproblems: von Newtons integrabler Zweikörperlösung und der Phasenraum-Dimension über die fünf Euler-Lagrange-Punkte (L1–L5, James-Webb-Weltraumteleskop und Trojaner-Asteroiden), Poincarés homoklines Gewirr von 1889 und die Geburt der Chaostheorie bis hin zur Figur-Acht-Choreographie, dem KAM-Theorem und der Stabilität unseres Sonnensystems."
 slug: "three-body-problem-poincare-non-integrability-lagrange-points-kam-theorem-chaos"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematik & Physik"

@@ -2,7 +2,7 @@
 title: "Mengapa Mengaduk Secangkir Kopi Selalu Menyisakan Setidaknya Satu Titik yang Tidak Bergerak: Teorema Titik Tetap dan Matematika Ekuilibrium"
 description: "Dari keajaiban sehari-hari Teorema Titik Tetap Brouwer (1911)—molekul kopi yang diam dan peta kusut di atas meja—hingga contoh penyangkal yang tajam, tiga bukti klasik (Teorema Nilai Antara, Teorema Non-Retraksi Borsuk melalui homologi dan Teorema Stokes, Lema Sperner), serta hierarki agung teorema Banach, Schauder, dan Kakutani yang mendasari Ekuilibrium Nash (1950) dan Ekuilibrium Umum Arrow-Debreu (1954)."
 slug: "brouwer-fixed-point-theorem-kakutani-nash-equilibrium-algebraic-topology-math"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matematika"

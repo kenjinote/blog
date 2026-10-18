@@ -2,7 +2,7 @@
 title: "잠금(Lock)을 전혀 쓰지 않고 어떻게 여러 스레드가 동시에 같은 데이터를 수정할까: 락프리(Lock-Free) 프로그래밍과 ABA 문제의 과학"
 description: "뮤텍스가 초저지연 시스템에서 일으키는 우선순위 역전과 락 호송대(Lock Convoying) 한계부터, 모리스 헐리히의 합의 수 계층 정리(CAS와 LL/SC의 보편성), 트라이버 스택의 치명적인 ABA 문제 메모리 파괴 메커니즘, 그리고 해저드 포인터(Hazard Pointers)·에포크 기반 메모리 회수(EBR)·RCU까지 체계적으로 해부한다."
 slug: "lock-free-programming-compare-and-swap-aba-problem-hazard-pointers-concurrency"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "컴퓨터 과학"

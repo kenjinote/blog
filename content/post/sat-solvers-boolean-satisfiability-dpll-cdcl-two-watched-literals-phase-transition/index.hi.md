@@ -2,7 +2,7 @@
 title: "सैद्धांतिक रूप से चरघातांकी विस्फोट करने वाली NP-Complete समस्याओं को आधुनिक कंप्यूटर सेकंडों में कैसे हल करते हैं: SAT सॉल्वर, CDCL और प्रावस्था संक्रमण"
 description: "कुक-लेविन प्रमेय (1971) के अनुसार, बूलियन संतुष्टि समस्या (SAT) पहली प्रमाणित NP-Complete समस्या थी जिसकी सबसे खराब समय जटिलता O(2^n) है। फिर भी आधुनिक औद्योगिक SAT सॉल्वर 1 करोड़ चरों और 5 करोड़ क्लॉज़ वाले हार्डवेयर सत्यापन सूत्रों को कुछ ही सेकंडों में हल कर देते हैं। हम DPLL से लेकर CDCL (Conflict-Driven Clause Learning), First-UIP (1-UIP), Two-Watched Literals (2WL), VSIDS, α ≈ 4.267 पर रैंडम 3-SAT के प्रावस्था संक्रमण और 200 टेराबाइट के पाइथागोरियन ट्रिपल्स प्रमाण तक का गहन विश्लेषण करते हैं।"
 slug: "sat-solvers-boolean-satisfiability-dpll-cdcl-two-watched-literals-phase-transition"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "कंप्यूटर विज्ञान"

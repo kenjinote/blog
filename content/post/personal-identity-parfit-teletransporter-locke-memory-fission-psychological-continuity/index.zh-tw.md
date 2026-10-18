@@ -2,7 +2,7 @@
 title: "掃描大腦資訊並傳送到火星的我，還是「原來的我」嗎？人格同一性與生存的哲學"
 description: "深入剖析洛克的記憶理論、里德的勇敢軍官悖論、巴特勒的循環論證反駁、身體論與動物主義，以及德瑞克·帕菲特的火星遠距傳送器與大腦半球分裂思想實驗，揭示從數值同一性向心理連續性（關係R）的哲學革命。"
 slug: "personal-identity-parfit-teletransporter-locke-memory-fission-psychological-continuity"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "哲學"

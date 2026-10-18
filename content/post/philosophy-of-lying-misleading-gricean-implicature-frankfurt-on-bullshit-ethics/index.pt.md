@@ -2,7 +2,7 @@
 title: "Qual é a diferença entre mentir e enganar dizendo apenas a verdade literal? Filosofia da linguagem da mentira, da implicatura de Grice e do «Bullshit» de Frankfurt"
 description: "De santo Atanásio no Nilo e da decisão da Suprema Corte dos EUA Bronston v. United States, analisamos a definição formal de mentira na lógica doxástica, as mentiras descaradas (bald-faced lies), o Princípio de Cooperação e as implicaturas conversacionais de H. Paul Grice, o modelo bayesiano RSA do paltering, o rigorismo de Kant em contraste com seu próprio equívoco estratégico perante o rei Frederico Guilherme II, a crítica ética de Jennifer Saul e On Bullshit de Harry Frankfurt na era das alucinações dos LLMs."
 slug: "philosophy-of-lying-misleading-gricean-implicature-frankfurt-on-bullshit-ethics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Filosofia"

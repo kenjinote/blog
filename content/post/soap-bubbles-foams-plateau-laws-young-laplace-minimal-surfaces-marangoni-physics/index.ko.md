@@ -2,7 +2,7 @@
 title: "비눗방울은 왜 둥글고 거품 벽은 왜 120도로 만나는가: 표면장력과 플라토의 법칙의 과학"
 description: "표면장력의 열역학적 기원과 영-라플라스 방정식부터 극소곡면, 작은 거품이 큰 거품에 흡수되는 오스트발트 숙성과 폐 계면활성제(DPPC)의 생리학, 플라토의 법칙과 109.47도 정사면체 각, 켈빈 추측을 107년 만에 깨뜨린 위어-펠란 구조, 그리고 비누막의 자가 치유를 가능케 하는 깁스-마랑고니 탄성까지 미분기하학과 유체역학으로 완벽 해부한다."
 slug: "soap-bubbles-foams-plateau-laws-young-laplace-minimal-surfaces-marangoni-physics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "과학"

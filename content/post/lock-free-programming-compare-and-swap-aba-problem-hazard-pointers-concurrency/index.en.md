@@ -2,7 +2,7 @@
 title: "How Can Multiple Threads Modify the Same Data Without Locks? The Science of Lock-Free Programming and the ABA Problem"
 description: "An exhaustive architectural and mathematical deep dive into non-blocking synchronization: why mutexes fail in ultra-low-latency systems, Maurice Herlihy's Consensus Hierarchy (CAS vs. LL/SC), the exact heap-corrupting timeline of the ABA problem in Treiber's Stack, and Safe Memory Reclamation via Hazard Pointers, Epoch-Based Reclamation (EBR), and RCU."
 slug: "lock-free-programming-compare-and-swap-aba-problem-hazard-pointers-concurrency"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Computer Science"

@@ -2,7 +2,7 @@
 title: "Why Adding a Single Star Shatters Predictability: The Three-Body Problem and the Depths of Celestial Mechanics"
 description: "A rigorous mathematical exploration of the gravitational Three-Body Problem: from Newton's exact integrability of the Two-Body Problem and phase-space degree-of-freedom counting, to Euler and Lagrange's five equilibrium points (L1–L5, the James Webb Space Telescope, and Trojan asteroids), Henri Poincaré's fateful 1889 error that birthed chaos theory, the variational discovery of the Figure-Eight choreography, and the KAM theorem governing the stability of our Solar System."
 slug: "three-body-problem-poincare-non-integrability-lagrange-points-kam-theorem-chaos"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematics & Physics"

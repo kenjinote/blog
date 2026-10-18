@@ -2,7 +2,7 @@
 title: "Jika Otak Saya Dipindai dan Dikirim ke Mars, Apakah Itu Masih 'Saya'? Identitas Personal dan Filsafat Kelangsungan Hidup"
 description: "Analisis filosofis mendalam tentang identitas personal lintas waktu: kriteria memori John Locke, paradoks perwira pemberani Thomas Reid, keberatan sirkularitas Butler, animalisme, serta revolusi Derek Parfit (Teletransporter, fisi otak, dan Relasi R)."
 slug: "personal-identity-parfit-teletransporter-locke-memory-fission-psychological-continuity"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Filsafat"

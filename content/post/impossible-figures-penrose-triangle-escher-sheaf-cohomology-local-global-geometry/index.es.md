@@ -2,7 +2,7 @@
 title: "¿Por qué podemos dibujar la escalera de Escher pero nunca construirla en 3D? Figuras imposibles y la matemática de lo local y lo global"
 description: "Cada esquina individual del triángulo de Penrose y de la escalera infinita de M.C. Escher es físicamente válida, pero al unirlas en un bucle cerrado el espacio tridimensional colapsa. Exploramos cómo la proyección en perspectiva borra la profundidad, cómo Sir Roger Penrose formuló las figuras imposibles mediante la teoría de haces y la cohomología de Čech, y cómo las esculturas de Kokichi Sugihara y la contextualidad cuántica comparten esta misma arquitectura."
 slug: "impossible-figures-penrose-triangle-escher-sheaf-cohomology-local-global-geometry"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemáticas"

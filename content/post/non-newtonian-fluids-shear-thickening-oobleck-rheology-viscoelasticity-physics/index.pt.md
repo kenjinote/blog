@@ -2,7 +2,7 @@
 title: "Por que é possível correr sobre amido de milho e água: A física dos fluidos não newtonianos e da reologia"
 description: "Por que uma piscina de maisena e água (Oobleck) endurece como concreto sob os pés de um corredor, mas vira areia movediça assim que ele para? Explore a lei da viscosidade de Newton, o modelo de Herschel-Bulkley, hidroclusters, cadeias de força friccionais, frentes de solidificação, reologia do sangue, efeito Weissenberg, número de Deborah e coletes à prova de balas líquidos."
 slug: "non-newtonian-fluids-shear-thickening-oobleck-rheology-viscoelasticity-physics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Ciência"

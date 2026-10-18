@@ -2,7 +2,7 @@
 title: "Wie können mehrere Threads dieselben Daten völlig ohne Locks ändern? Die Wissenschaft der Lock-Free-Programmierung und des ABA-Problems"
 description: "Eine fundierte architektonische und mathematische Analyse nicht-blockierender Synchronisation: Warum Mutexe in Ultra-Low-Latency-Systemen versagen, Maurice Herlihys Konsenszahlen-Hierarchie (CAS vs. LL/SC), das ABA-Problem im Treiber-Stack sowie sichere Speicherbereinigung mittels Hazard Pointers, Epoch-Based Reclamation (EBR) und RCU."
 slug: "lock-free-programming-compare-and-swap-aba-problem-hazard-pointers-concurrency"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Informatik"

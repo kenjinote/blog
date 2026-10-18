@@ -2,7 +2,7 @@
 title: "¿Cómo pueden múltiples hilos modificar los mismos datos sin usar bloqueos? La ciencia de la programación Lock-Free y el problema ABA"
 description: "Un análisis arquitectónico y matemático profundo de la sincronización no bloqueante: por qué fallan los mutex en sistemas de latencia ultrabaja, la jerarquía de números de consenso de Maurice Herlihy (CAS vs. LL/SC), la corrupción de memoria del problema ABA en la pila de Treiber y la recuperación segura de memoria mediante Hazard Pointers, EBR y RCU."
 slug: "lock-free-programming-compare-and-swap-aba-problem-hazard-pointers-concurrency"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Ciencias de la Computación"

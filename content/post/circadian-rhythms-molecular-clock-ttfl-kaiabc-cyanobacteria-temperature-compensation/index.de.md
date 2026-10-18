@@ -2,7 +2,7 @@
 title: "Warum halten Lebewesen selbst in völliger Dunkelheit einen 24-Stunden-Rhythmus ein? Die Wissenschaft der inneren Uhr und molekularer Oszillationen"
 description: "Vom Mimosen-Experiment von de Mairan (1729) und der mit dem Nobelpreis 2017 ausgezeichneten transkriptionell-translatorischen Rückkopplungsschleife (CLOCK:BMAL1 und PER:CRY) über die Hopf-Bifurkation des Goodwin-Goldbeter-Oszillators und die KaiABC-Proteinuhr der Cyanobakterien im Reagenzglas bis zum biophysikalischen Rätsel der Temperaturkompensation (Q10 ≈ 1,0)."
 slug: "circadian-rhythms-molecular-clock-ttfl-kaiabc-cyanobacteria-temperature-compensation"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Wissenschaft"

@@ -2,7 +2,7 @@
 title: "Por qué el texto diminuto se mantiene nítido y legible: Matemáticas del renderizado de fuentes, curvas de Bézier, VM de hinting y antialiasing subpíxel"
 description: "Un análisis matemático y de ingeniería de sistemas sobre el renderizado tipográfico moderno: polinomios de Bernstein, curvas de Bézier cuadráticas vs. cúbicas, algoritmo de De Casteljau, topología del número de devanado no nulo, integración analítica de área trapezoidal, la máquina virtual de hinting TrueType, filtrado FIR subpíxel de 5 tomas (ClearType), mezcla alfa lineal con corrección gamma, campos de distancia con signo multicanal (MSDF) y shaders GPU directos (Slug)."
 slug: "font-rendering-bezier-curves-hinting-subpixel-antialiasing-signed-distance-fields"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Ciencias de la Computación"

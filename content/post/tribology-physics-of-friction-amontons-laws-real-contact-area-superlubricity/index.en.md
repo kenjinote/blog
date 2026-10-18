@@ -2,7 +2,7 @@
 title: "Why Friction Is Independent of Contact Area: The Microscopic Physics of Asperities, Stick-Slip Dynamics, Ice Premelting, and Superlubricity"
 description: "A rigorous physical and mathematical exploration of tribology: resolving the classical brick paradox of Amontons-Coulomb friction via Bowden-Tabor plastic adhesion and Greenwood-Williamson multi-asperity contact mechanics, deriving Dieterich-Ruina rate-and-state stick-slip dynamics from violins to megathrust earthquakes, debunking the pressure-melting myth of ice via the Clausius-Clapeyron relation, and achieving near-zero friction through structural superlubricity."
 slug: "tribology-physics-of-friction-amontons-laws-real-contact-area-superlubricity"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Science"

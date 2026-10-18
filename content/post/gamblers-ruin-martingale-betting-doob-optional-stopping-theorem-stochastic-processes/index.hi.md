@@ -2,7 +2,7 @@
 title: "‘जीतने तक दांव दोगुना करने’ की रणनीति हमेशा क्यों विफल होती है: जुआरी की बर्बादी (Gambler's Ruin) और मार्टिंगेल का गणित"
 description: "18वीं सदी के मार्टिंगेल दोगुना दांव भ्रम, क्रिस्टियान ह्यूजेंस और ब्लेज़ पास्कल की 'गैम्बलर्स रुइन' समस्या के सटीक समाधान, और पॉल लेवी तथा जोसेफ लियो डूब के आधुनिक मार्टिंगेल सिद्धांत एवं वैकल्पिक विराम प्रमेय (Optional Stopping Theorem) का गहन गणितीय विश्लेषण।"
 slug: "gamblers-ruin-martingale-betting-doob-optional-stopping-theorem-stochastic-processes"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "गणित"

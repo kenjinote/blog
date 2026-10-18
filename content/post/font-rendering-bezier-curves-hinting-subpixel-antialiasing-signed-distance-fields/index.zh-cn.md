@@ -2,7 +2,7 @@
 title: "为什么极小的文字依然清晰锐利：字体渲染、贝塞尔曲线、微调虚拟机与亚像素抗锯齿的数学原理"
 description: "深入解析现代计算机字体渲染的数学与系统工程：伯恩斯坦基多项式、二次与三次贝塞尔曲线几何、德卡斯特里奥细分算法、非零环绕数规则与解析梯形面积积分、TrueType堆栈式微调虚拟机（Hinting VM）、ClearType五抽头FIR亚像素滤波器与伽马校正线性混合，以及GPU时代的多通道有向距离场（MSDF）与Slug直接贝塞尔着色器。"
 slug: "font-rendering-bezier-curves-hinting-subpixel-antialiasing-signed-distance-fields"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "计算机科学"

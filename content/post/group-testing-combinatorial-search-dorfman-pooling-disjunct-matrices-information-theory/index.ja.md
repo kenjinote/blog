@@ -2,7 +2,7 @@
 title: "検体を混ぜて検査すると、なぜ少ない回数で陽性者を見つけられるのか：グループテストと組合せ探索の数学"
 description: "1943年のドーフマンによるプール検査法の考案から、シャノンの情報理論的下界、12枚の偽コイン天秤問題と適応型二分探索、カウツ・シングルトンの分離行列（Disjunct Matrix）とリード・ソロモン符号による非適応型グループテスト、そして圧縮センシングやPCR検査（P-BEST）への応用までを徹底解説する。"
 slug: "group-testing-combinatorial-search-dorfman-pooling-disjunct-matrices-information-theory"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "数学・情報科学"

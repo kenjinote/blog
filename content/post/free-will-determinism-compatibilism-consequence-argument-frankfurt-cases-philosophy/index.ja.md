@@ -2,7 +2,7 @@
 title: "すべてが物理法則で決まっているなら、人間に「自由意志」はあるのか：決定論・両立論・道徳的責任の哲学"
 description: "ラプラスの悪魔と因果的決定論、ピーター・ヴァン・インワーゲンの帰結論証、量子力学の確率と「運の論証」、デイヴィッド・ヒュームとハリー・フランクファートの両立論、P.F.ストローソンの反応的態度、リベットの準備電位実験まで、自由意志と道徳的責任をめぐる現代分析形而上学と神経哲学の最前線を徹底解説する。"
 slug: "free-will-determinism-compatibilism-consequence-argument-frankfurt-cases-philosophy"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "哲学"

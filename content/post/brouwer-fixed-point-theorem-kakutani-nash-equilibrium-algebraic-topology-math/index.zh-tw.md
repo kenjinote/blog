@@ -2,7 +2,7 @@
 title: "為什麼攪拌咖啡時總有一點留在原位：不動點定理與均衡的數學"
 description: "從布勞威爾不動點定理（1911）在攪拌咖啡與揉皺地圖中的奇妙日常現象出發，深入剖析緊緻性、凸性與連續性的反例，詳解中間值定理、博蘇克無收縮定理（同調群與斯托克斯定理）及斯佩納引理三大證明，並系統對比巴拿赫、紹德爾、角谷不動點定理如何奠定約翰·納許賽局均衡（1950）與阿羅-德布魯一般均衡理論（1954）的數學基石。"
 slug: "brouwer-fixed-point-theorem-kakutani-nash-equilibrium-algebraic-topology-math"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "數學"

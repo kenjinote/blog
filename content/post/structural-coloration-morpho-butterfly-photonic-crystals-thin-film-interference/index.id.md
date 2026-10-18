@@ -2,7 +2,7 @@
 title: "Mengapa Kupu-Kupu Morpho dan Kumbang Permata Berkilau Tanpa Pigmen: Fisika Warna Struktural dan Interferensi Cahaya"
 description: "Mengapa sayap biru elektrik kupu-kupu Morpho berubah menjadi bubuk cokelat kusam saat digerus dan kehilangan warnanya seketika di dalam aseton? Kajian mendalam optika gelombang tentang interferensi lapisan tipis, reflektor Bragg (DBR), paradoks Morpho, dan kristal fotonik 3D."
 slug: "structural-coloration-morpho-butterfly-photonic-crystals-thin-film-interference"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Sains"

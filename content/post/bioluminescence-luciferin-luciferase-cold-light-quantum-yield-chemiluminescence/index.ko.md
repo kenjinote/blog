@@ -2,7 +2,7 @@
 title: "반딧불이와 심해 생물은 어떻게 열을 내지 않고 빛을 낼까: 생물발광과 '차가운 빛'의 양자화학"
 description: "백열전구가 수천 도의 고온을 필요로 하는 반면, 반딧불이와 심해 생물이 실온에서 높은 양자 수율로 빛을 방출하는 원리를 심층 해설합니다. 플랑크 흑체복사와 루미네선스의 통계역학적 차이, 루시페린-루시페레이스 반응의 1,2-다이옥세타논 중간체와 CIEEL 전자 여기 메커니즘, GFP 형광 및 BRET와의 차이, 그리고 AkaBLI 생체 이미징과 자가 발광 식물 응용까지 총망라합니다."
 slug: "bioluminescence-luciferin-luciferase-cold-light-quantum-yield-chemiluminescence"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "과학"

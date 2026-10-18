@@ -2,7 +2,7 @@
 title: "Mengapa Makhluk Hidup Mempertahankan Ritme 24 Jam Bahkan dalam Kegelapan Total? Sains Jam Biologis dan Osilasi Molekuler"
 description: "Dari eksperimen tanaman putri malu Mimosa pudica oleh de Mairan (1729) dan umpan balik transkripsi-translasi (CLOCK:BMAL1 dan PER:CRY, Hadiah Nobel 2017) hingga bifurkasi Hopf pada osilator Goodwin-Goldbeter, jam protein KaiABC sianobakteri di dalam tabung reaksi, serta misteri biofisika kompensasi suhu (Q10 ≈ 1,0)."
 slug: "circadian-rhythms-molecular-clock-ttfl-kaiabc-cyanobacteria-temperature-compensation"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Sains"

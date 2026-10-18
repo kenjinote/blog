@@ -2,7 +2,7 @@
 title: "Pourquoi pleurons-nous sur Anna Karénine et craignons-nous des monstres dont nous savons qu'ils n'existent pas ? Le paradoxe de la fiction et la philosophie de l'imagination"
 description: "Analyse philosophique approfondie du paradoxe de la fiction de Colin Radford (la triade incohérente de la réponse émotionnelle, de la croyance existentielle et de la non-croyance), du cognitivisme des émotions, de la suspension consentie de l'incrédulité de Coleridge, de la théorie du faire-semblant (Make-Believe) et de la quasi-peur de Kendall Walton, de la théorie de la pensée (Thought Theory), du paradoxe de la tragédie, de la résistance imaginative et de l'ontologie artéfactuelle des entités fictionnelles."
 slug: "paradox-of-fiction-radford-walton-make-believe-quasi-emotions-aesthetics-philosophy"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Philosophie & Art"

@@ -2,7 +2,7 @@
 title: "Warum lässt sich Eschers Treppe zeichnen, aber nicht in 3D bauen? Unmögliche Figuren und die Mathematik von Lokal und Global"
 description: "Jede einzelne Ecke des Penrose-Dreiecks und M.C. Eschers Endlostreppe ist physikalisch vollkommen korrekt, doch beim Zusammenfügen entlang einer geschlossenen Schleife kollabiert der dreidimensionale Raum. Eine tiefgehende mathematische Analyse über Zentralprojektion, Sir Roger Penroses Formulierung mittels Garbentheorie und Čech-Kohomologie sowie Kokichi Sugiharas reale unmögliche Körper und Quantenkontextualität."
 slug: "impossible-figures-penrose-triangle-escher-sheaf-cohomology-local-global-geometry"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematik"

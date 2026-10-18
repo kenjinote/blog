@@ -2,7 +2,7 @@
 title: "Pourquoi les petits caractères restent nets et lisibles : Mathématiques du rendu de polices, courbes de Bézier, VM de hinting et antialiasing sous-pixel"
 description: "Exploration mathématique et algorithmique approfondie du rendu typographique moderne : polynômes de Bernstein, courbes de Bézier quadratiques et cubiques, algorithme de De Casteljau, topologie de l'indice d'enroulement non nul, intégration analytique d'aire trapézoïdale, machine virtuelle de hinting TrueType, filtre FIR à 5 coefficients ClearType, fusion alpha linéaire corrigée du gamma, champs de distance signée multi-canaux (MSDF) et shaders GPU directs (Slug)."
 slug: "font-rendering-bezier-curves-hinting-subpixel-antialiasing-signed-distance-fields"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Informatique"

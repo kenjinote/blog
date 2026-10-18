@@ -2,7 +2,7 @@
 title: "If You Knew Every Physical Law of Color, Would You Know What It Is Like to See Red? Qualia and the Hard Problem of Consciousness"
 description: "Raised in a strictly black-and-white room, the brilliant neuroscientist Mary learns every physical truth about human color vision. When she steps outside and sees a ripe red tomato for the first time, does she learn something new? A rigorous exploration of Nagel's Bat, Jackson's Knowledge Argument, Chalmers's Philosophical Zombies, Two-Dimensional Modal Semantics, Physicalist counter-strategies, Russellian Monism, and Integrated Information Theory (IIT)."
 slug: "qualia-hard-problem-of-consciousness-marys-room-philosophical-zombies-chalmers"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Philosophy"

@@ -2,7 +2,7 @@
 title: "Si l'on connaissait toutes les lois physiques de la couleur, saurait-on ce que cela fait de voir du rouge ? Les qualia et le problème difficile de la conscience"
 description: "Élevée dans une chambre strictement en noir et blanc, la brillante neuroscientifique Mary apprend toutes les vérités physiques sur la vision humaine des couleurs. Lorsqu'elle sort et voit une tomate rouge mûre pour la première fois, apprend-elle quelque chose de nouveau ? Une exploration rigoureuse de la chauve-souris de Nagel, de l'argument de la connaissance de Jackson, des zombies philosophiques de Chalmers, de la sémantique modale bidimensionnelle, des contre-offensives physicalistes, du monisme russellien et de la théorie de l'information intégrée (IIT)."
 slug: "qualia-hard-problem-of-consciousness-marys-room-philosophical-zombies-chalmers"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Philosophie"

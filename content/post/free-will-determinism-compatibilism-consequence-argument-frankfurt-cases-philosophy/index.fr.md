@@ -2,7 +2,7 @@
 title: "Si tout est déterminé par les lois de la physique, l'être humain a-t-il un « libre arbitre » ? Déterminisme, compatibilisme et responsabilité morale"
 description: "Analyse approfondie du libre arbitre et de la responsabilité morale en métaphysique analytique et neurophilosophie : le démon de Laplace et le déterminisme causal, l'argument de la conséquence de Peter van Inwagen, l'indéterminisme quantique et l'argument de la chance, l'argument de base de Galen Strawson, David Hume et les cas de Harry Frankfurt, les attitudes réactives de P.F. Strawson et le potentiel de préparation de Benjamin Libet."
 slug: "free-will-determinism-compatibilism-consequence-argument-frankfurt-cases-philosophy"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Philosophie"

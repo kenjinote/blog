@@ -2,7 +2,7 @@
 title: "¿Por qué los seres vivos mantienen un ritmo de 24 horas incluso en total oscuridad? La ciencia del reloj biológico y las oscilaciones moleculares"
 description: "Desde el experimento de de Mairan con la planta Mimosa pudica (1729) y el bucle de retroalimentación transcripción-traducción (CLOCK:BMAL1 y PER:CRY, Premio Nobel 2017), hasta la bifurcación de Hopf del oscilador de Goodwin-Goldbeter, el reloj proteico KaiABC de las cianobacterias en tubo de ensayo y el misterio biofísico de la compensación de temperatura (Q10 ≈ 1,0)."
 slug: "circadian-rhythms-molecular-clock-ttfl-kaiabc-cyanobacteria-temperature-compensation"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Ciencia"

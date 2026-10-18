@@ -2,7 +2,7 @@
 title: "為什麼人能在太白粉水上奔跑：遇強則剛、靜置則流的非牛頓流體與流變學科學"
 description: "深入解析為什麼人可以在太白粉水或玉米澱粉水溶液（歐不裂/Oobleck）池面上奔跑而不下沉，停下卻會陷入其中。從牛頓黏性定律、奧斯特瓦爾德-德瓦勒冪律與赫歇爾-巴爾克利本構方程，到水動力團簇理論、摩擦接觸力鏈與衝擊誘導固化鋒面，再到血液剪切稀化、魏森貝格爬桿效應、德博拉數及液體防彈衣的工程應用。"
 slug: "non-newtonian-fluids-shear-thickening-oobleck-rheology-viscoelasticity-physics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "科學"

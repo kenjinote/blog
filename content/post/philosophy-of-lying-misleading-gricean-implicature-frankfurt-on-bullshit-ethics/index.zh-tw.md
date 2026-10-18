@@ -2,7 +2,7 @@
 title: "撒謊與只說事實卻讓人產生誤解有何不同：謊言、誤導與『扯淡（Bullshit）』的語言哲學"
 description: "從亞歷山大港的亞他那修在尼羅河上的軼事與美國最高法院布朗斯頓偽證案出發，深入剖析信念邏輯中謊言的形式定義、明目張膽的謊言（Bald-Faced Lies）、格賴斯的合作原則與會話含義（Implicature）、貝氏理性言語行為（RSA）模型、康德的絕對主義及其對腓特烈·威廉二世的策略性誤導、珍妮佛·索爾的倫理批判，以及哈里·法蘭克福《論扯淡（On Bullshit）》對當代大型語言模型（LLM）幻覺的深刻啟示。"
 slug: "philosophy-of-lying-misleading-gricean-implicature-frankfurt-on-bullshit-ethics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "哲學與思想"

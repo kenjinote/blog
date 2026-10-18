@@ -2,7 +2,7 @@
 title: "Se o meu cérebro for escaneado e teletransportado para Marte, ainda sou «eu»? Identidade pessoal e a filosofia da sobrevivência"
 description: "Uma análise filosófica profunda da identidade pessoal ao longo do tempo: o critério da memória de John Locke, o paradoxo do oficial valente de Thomas Reid, a objeção de circularidade de Butler, o animalismo e a revolução de Derek Parfit (Teletransportador, fissão cerebral e Relação R)."
 slug: "personal-identity-parfit-teletransporter-locke-memory-fission-psychological-continuity"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Filosofia"

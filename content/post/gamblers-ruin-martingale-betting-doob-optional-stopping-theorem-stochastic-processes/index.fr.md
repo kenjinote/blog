@@ -2,7 +2,7 @@
 title: "Pourquoi « doubler sa mise jusqu'à gagner » échoue toujours : la ruine du joueur et la mathématique des martingales"
 description: "Analyse mathématique rigoureuse du piège de la martingale classique, du problème de la ruine du joueur de Huygens et Pascal par les équations aux différences finies, et de la théorie moderne des martingales et du théorème d'arrêt optionnel de Paul Lévy et Joseph Leo Doob."
 slug: "gamblers-ruin-martingale-betting-doob-optional-stopping-theorem-stochastic-processes"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathématiques"

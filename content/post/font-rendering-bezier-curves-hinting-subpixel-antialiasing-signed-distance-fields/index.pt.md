@@ -2,7 +2,7 @@
 title: "Por que textos minúsculos permanecem nítidos e legíveis: A matemática da renderização de fontes, curvas de Bézier, VM de hinting e antialiasing subpixel"
 description: "Uma análise matemática e de engenharia de sistemas sobre a renderização tipográfica moderna: polinômios de Bernstein, curvas de Bézier quadráticas vs. cúbicas, algoritmo de De Casteljau, topologia do número de giros não nulo, integração analítica de área trapezoidal, a máquina virtual de hinting TrueType, filtragem FIR subpixel de 5 tomadas (ClearType), mistura alfa linear com correção gama, campos de distância com sinal multicanal (MSDF) e shaders GPU diretos (Slug)."
 slug: "font-rendering-bezier-curves-hinting-subpixel-antialiasing-signed-distance-fields"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Ciência da Computação"

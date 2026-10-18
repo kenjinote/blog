@@ -2,7 +2,7 @@
 title: "为什么搅拌咖啡时总有一点留在原位：不动点定理与均衡的数学"
 description: "从布劳威尔不动点定理（1911）在搅拌咖啡与揉皱地图中的奇妙日常现象出发，深入剖析紧致性、凸性与连续性的反例，详解介值定理、博苏克无收缩定理（同调群与斯托克斯定理）及斯佩纳引理三大证明，并系统对比巴拿赫、绍德尔、角谷不动点定理如何奠定约翰·纳什博弈均衡（1950）与阿罗-德布鲁一般均衡理论（1954）的数学基石。"
 slug: "brouwer-fixed-point-theorem-kakutani-nash-equilibrium-algebraic-topology-math"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "数学"

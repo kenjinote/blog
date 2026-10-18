@@ -2,7 +2,7 @@
 title: "Mengapa Air Tidak Selalu Membeku di Bawah Nol Derajat: Supercooling dan Fisika Nukleasi Kristal"
 description: "Mengapa air murni dapat bertahan dalam wujud cair hingga hampir -40 °C? Analisis termodinamika dan kinetika mendalam tentang keadaan metastabil, Teori Nukleasi Klasik (CNT), jari-jari inti kritis, faktor pembasahan Turnbull, pertumbuhan dendritik akibat guncangan, pemanasan lewat jenuh (superheating), serta transisi gelas (vitrifikasi)."
 slug: "supercooling-nucleation-thermodynamics-metastable-water-crystallization-physics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Sains"

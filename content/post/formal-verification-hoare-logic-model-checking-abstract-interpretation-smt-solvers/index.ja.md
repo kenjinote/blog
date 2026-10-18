@@ -2,7 +2,7 @@
 title: "プログラムを1回も動かさずに、なぜ「絶対にバグが起きない」と証明できるのか：形式検証とモデル検査の科学"
 description: "ダイクストラの格言とライスの定理の壁を越え、フロイド＝ホーア論理、Z3 SMTソルバー、時相論理とモデル検査（TLA+）、そしてアリアン5ロケット爆発事故から生まれた抽象解釈（ガロア接続）と定理証明支援系（Coq/Lean 4）がいかに無限の実行経路の安全性を数学的に証明するかを徹底解説する。"
 slug: "formal-verification-hoare-logic-model-checking-abstract-interpretation-smt-solvers"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "コンピュータ科学"
