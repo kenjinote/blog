@@ -2,7 +2,7 @@
 title: "Why Can We Prove a Program Is 100% Bug-Free Without Running It Even Once? The Science of Formal Verification and Model Checking"
 description: "From Dijkstra's maxim and Rice's undecidability theorem to Floyd-Hoare logic, Z3 SMT solvers, temporal logic model checking (TLA+), the Ariane 5 disaster, abstract interpretation via Galois connections, and interactive theorem proving (Coq, Lean 4, CompCert, seL4)."
 slug: "formal-verification-hoare-logic-model-checking-abstract-interpretation-smt-solvers"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Computer Science"

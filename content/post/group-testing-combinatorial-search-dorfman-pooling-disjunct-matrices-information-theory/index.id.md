@@ -2,7 +2,7 @@
 title: "Mengapa Mencampur Sampel Dapat Menemukan Kasus Positif dengan Lebih Sedikit Tes: Matematika Group Testing dan Pencarian Kombinatorial"
 description: "Eksplorasi matematika mendalam tentang Group Testing dan pencarian kombinatorial: dari terobosan pooling dua tahap Robert Dorfman (1943) dan batas bawah teori informasi Shannon, hingga teka-teki 12 koin palsu, matriks disjunct Kautz-Singleton, desain polinomial Reed-Solomon, serta Compressed Sensing."
 slug: "group-testing-combinatorial-search-dorfman-pooling-disjunct-matrices-information-theory"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matematika & Ilmu Komputer"

@@ -2,7 +2,7 @@
 title: "접촉 면적이 달라도 마찰력이 변하지 않는 이유: 미세 돌기(Asperity) 접촉역학, 스틱슬립 진동, 얼음 표면 예융해와 구조 초윤활의 물리학"
 description: "아몽통-쿨롱 법칙의 면적 무관성 역설을 보든-테이버 응착 이론과 그린우드-윌리엄슨 통계 접촉역학으로 규명하고, 바이올린 현에서 거대 지진까지 지배하는 디터리히-루이나 속도-상태 마찰 법칙, 클라우지우스-클라페이롱 방정식을 통한 얼음 압력 융해설의 정량적 반박, 그리고 비정합 결정 격자가 만드는 구조 초윤활(Superlubricity)까지 체계적으로 해설한다."
 slug: "tribology-physics-of-friction-amontons-laws-real-contact-area-superlubricity"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "과학"

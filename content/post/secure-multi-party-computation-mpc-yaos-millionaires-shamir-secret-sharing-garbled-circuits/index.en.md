@@ -2,7 +2,7 @@
 title: "How Multiple Parties Can Compute Sums and Rankings Without Revealing a Single Bit: Secure Multi-Party Computation (MPC) and Yao's Millionaires' Problem"
 description: "An in-depth mathematical exploration of Secure Multi-Party Computation (MPC), from additive secret sharing and Andrew Yao's Millionaires' Problem to Shamir's (t, n) threshold secret sharing via Lagrange interpolation, Donald Beaver's multiplication triples, Rabin's Oblivious Transfer, Garbled Circuits (Free-XOR and Half-Gates), and real-world deployments in finance and genomics."
 slug: "secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Computer Science & Cryptography"

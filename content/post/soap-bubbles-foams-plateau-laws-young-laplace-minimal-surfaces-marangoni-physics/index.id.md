@@ -2,7 +2,7 @@
 title: "Mengapa Gelembung Sabun Bulat dan Dinding Busa Bertemu pada Sudut 120 Derajat: Fisika Tegangan Permukaan dan Hukum Plateau"
 description: "Kajian matematis dan fisis mendalam tentang gelembung sabun dan busa: dari termodinamika tegangan permukaan dan persamaan Young-Laplace hingga permukaan minimal, pematangan Ostwald, surfaktan paru DPPC, hukum Plateau (120° dan 109,47°), struktur Weaire-Phelan, serta elastisitas penyembuhan diri Gibbs-Marangoni."
 slug: "soap-bubbles-foams-plateau-laws-young-laplace-minimal-surfaces-marangoni-physics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Sains"

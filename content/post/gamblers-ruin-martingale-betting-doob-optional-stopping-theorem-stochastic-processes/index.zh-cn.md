@@ -2,7 +2,7 @@
 title: "为什么“输了就翻倍下注”必将破产：赌徒破产问题与鞅论的数学"
 description: "从18世纪风靡欧洲赌场的马丁格尔（Martingale）倍投陷阱出发，严格推导惠更斯与帕斯卡“赌徒破产问题”的吸收壁随机游走精确解，并深入阐述保罗·莱维与约瑟夫·杜布创立的现代鞅论（Martingale Theory）与可选停止定理（Optional Stopping Theorem）。"
 slug: "gamblers-ruin-martingale-betting-doob-optional-stopping-theorem-stochastic-processes"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "数学"

@@ -2,7 +2,7 @@
 title: "Pourquoi le papillon Morpho et le bupreste brillent-ils sans pigments : La physique des couleurs structurelles et de l'interférence lumineuse"
 description: "Pourquoi l'aile bleu électrique d'un papillon Morpho se transforme-t-elle en poudre brune lorsqu'on la broie, et perd-elle instantanément sa couleur dans l'acétone ? Une étude rigoureuse d'optique ondulatoire sur l'interférence des couches minces, les réflecteurs de Bragg (DBR), le paradoxe Morpho et les cristaux photoniques 3D."
 slug: "structural-coloration-morpho-butterfly-photonic-crystals-thin-film-interference"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Science"

@@ -2,7 +2,7 @@
 title: "Pourquoi l'ajout d'une seule étoile brise la prédictibilité du futur : Le problème à trois corps et les abysses de la mécanique céleste"
 description: "Exploration mathématique rigoureuse du problème gravitationnel à trois corps : de l'intégrabilité exacte du problème à deux corps de Newton aux cinq points de Lagrange (L1–L5, télescope James Webb et astéroïdes troyens), de l'erreur féconde d'Henri Poincaré en 1889 (enchevêtrement homocline et théorie du chaos) à la chorégraphie en huit de Chenciner-Montgomery, au théorème KAM et aux travaux de Jacques Laskar sur la stabilité du Système solaire."
 slug: "three-body-problem-poincare-non-integrability-lagrange-points-kam-theorem-chaos"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathématiques & Physique"

@@ -2,7 +2,7 @@
 title: "为什么仅仅“随机画一条直线”就会得出三种答案：贝特兰悖论与概率的定义"
 description: "在单位圆内随机作一条弦，其长度大于内接正三角形边长的概率究竟是1/3、1/2还是1/4？从约瑟夫·贝特兰1889年的经典几何概率悖论出发，深入剖析拉普拉斯不充分理由原则与凯恩斯酒水悖论的崩溃、柯尔莫哥洛夫测度论公理化、杰恩斯变换群不变性与积分几何（庞加莱-桑塔洛运动学测度）以及杰弗里斯先验。"
 slug: "bertrand-paradox-principle-of-indifference-geometric-probability-jaynes-invariance"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "数学"

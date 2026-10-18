@@ -2,7 +2,7 @@
 title: "Jika Anda Mengetahui Semua Hukum Fisika tentang Warna, Apakah Anda Tahu Rasanya Melihat Warna Merah? Qualia dan Masalah Sulit Kesadaran"
 description: "Dibesarkan di ruangan yang sepenuhnya hitam-putih, ilmuwan saraf jenius Mary mempelajari setiap kebenaran fisik tentang penglihatan warna manusia. Ketika ia melangkah keluar dan melihat tomat merah matang untuk pertama kalinya, apakah ia mempelajari sesuatu yang baru? Analisis mendalam tentang kelelawar Nagel, argumen pengetahuan Jackson, zombi filosofis Chalmers, semantik modal dua dimensi, serangan balik fisikalisme, monisme Russellian, dan Teori Informasi Terintegrasi (IIT)."
 slug: "qualia-hard-problem-of-consciousness-marys-room-philosophical-zombies-chalmers"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Filsafat"

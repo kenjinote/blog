@@ -2,7 +2,7 @@
 title: "肥皂泡为何是圆的，泡沫壁为何总以120度相交：界面张力与普拉托定律的科学"
 description: "从表面张力的热力学起源与杨-拉普拉斯方程出发，深入解析极小曲面、小气泡被大气泡吞噬的奥斯特瓦尔德熟化与肺表面活性物质（DPPC）的生理机制、普拉托定律与109.47度正四面体角、打破开尔文猜想百年纪录的威耳-费兰结构，以及赋予薄膜自愈能力的吉布斯-马兰戈尼弹性。"
 slug: "soap-bubbles-foams-plateau-laws-young-laplace-minimal-surfaces-marangoni-physics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "科学"

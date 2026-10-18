@@ -2,7 +2,7 @@
 title: "Por que choramos por Anna Karenina e tememos monstros que sabemos não existir? O Paradoxo da Ficção e a Filosofia da Imaginação"
 description: "Uma investigação filosófica aprofundada sobre o Paradoxo da Ficção de Colin Radford (a tríade inconsistente de resposta emocional, crença existencial e não-crença), o cognitivismo das emoções, a suspensão voluntária da descrença de Coleridge, a teoria do faz-de-conta (Make-Believe) e o quase-medo de Kendall Walton, a teoria do pensamento (Thought Theory), o paradoxo da tragédia, a resistência imaginativa e a ontologia artefatual das entidades ficcionais."
 slug: "paradox-of-fiction-radford-walton-make-believe-quasi-emotions-aesthetics-philosophy"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Filosofia e Arte"

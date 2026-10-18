@@ -2,7 +2,7 @@
 title: "为什么接触面积不同摩擦力却保持不变？微凸体接触力学、粘滑振荡、冰面预融化与结构超润滑的物理学"
 description: "从微观与纳米表面物理学深入解析摩擦学（Tribology）的核心悖论：通过鲍登-泰伯粘着理论与格林伍德-威廉姆森多微凸体统计接触力学解开阿蒙顿-库仑定律的面积无关之谜，推导支配小提琴声学与大地震的迪特里希-鲁伊纳速率-状态摩擦方程，利用克劳修斯-克拉佩龙方程定量证伪冰面“压力融化说”，并揭示非公度摩尔超晶格实现近零摩擦的“结构超润滑”机制。"
 slug: "tribology-physics-of-friction-amontons-laws-real-contact-area-superlubricity"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "科学"

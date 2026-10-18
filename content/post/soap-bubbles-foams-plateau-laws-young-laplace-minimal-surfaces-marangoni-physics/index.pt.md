@@ -2,7 +2,7 @@
 title: "Por que as bolhas de sabão são redondas e as paredes da espuma se encontram a 120 graus: a física da tensão superficial e das leis de Plateau"
 description: "Uma análise matemática e física completa das bolhas de sabão e espumas: da termodinâmica da tensão superficial e da equação de Young-Laplace às superfícies mínimas, amadurecimento de Ostwald, surfactante pulmonar DPPC, leis de Plateau (120° e 109,47°), estrutura de Weaire-Phelan e elasticidade autorregenerativa de Gibbs-Marangoni."
 slug: "soap-bubbles-foams-plateau-laws-young-laplace-minimal-surfaces-marangoni-physics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Ciência"

@@ -2,7 +2,7 @@
 title: "Por qué «doblar la apuesta hasta ganar» siempre fracasa: la ruina del jugador y la matemática de las martingalas"
 description: "Análisis matemático riguroso de la falacia de la martingala clásica, el problema de la ruina del jugador de Huygens y Pascal mediante ecuaciones en diferencias, y la teoría moderna de martingalas y el teorema de parada opcional de Paul Lévy y Joseph Leo Doob."
 slug: "gamblers-ruin-martingale-betting-doob-optional-stopping-theorem-stochastic-processes"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemáticas"

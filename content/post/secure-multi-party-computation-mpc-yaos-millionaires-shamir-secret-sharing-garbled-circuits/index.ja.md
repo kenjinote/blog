@@ -2,7 +2,7 @@
 title: "データを1ビットも明かさずに、なぜ複数人で「合計」や「順位」だけを計算できるのか：秘密計算（MPC）とヤオの億万長者問題"
 description: "誰にも自分の年収を知られずに平均年収だけを計算する加法的秘密分散から、アンドリュー・ヤオの億万長者問題、シャミアの(t,n)閾値秘密分散法とラグランジュ補間、ビーバーの乗算トリプル、紛失通信（OT）とガーブルド・サーキット、さらに完全準同型暗号（FHE）・ゼロ知識証明（ZKP）との違いや医療・金融での実用事例までを数学的に徹底解説します。"
 slug: "secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "コンピュータ・暗号"

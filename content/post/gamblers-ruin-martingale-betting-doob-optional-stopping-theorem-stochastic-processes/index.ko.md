@@ -2,7 +2,7 @@
 title: "‘이길 때까지 배팅을 두 배로 늘리면 무조건 이긴다’는 왜 파탄 나는가: 도박꾼의 파산 문제와 마팅게일의 수학"
 description: "18세기 카지노를 매혹시킨 마틴게일(Martingale) 배액 베팅법의 함정부터, 호이겐스와 파스칼의 ‘도박꾼의 파산 문제’에 대한 흡수벽 랜덤 워크 엄밀해, 그리고 폴 레비와 조지프 두브가 구축한 현대 마팅게일 이론과 선택적 정지 정리(Optional Stopping Theorem)까지 완벽하게 유도하고 해설한다."
 slug: "gamblers-ruin-martingale-betting-doob-optional-stopping-theorem-stochastic-processes"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "수학"

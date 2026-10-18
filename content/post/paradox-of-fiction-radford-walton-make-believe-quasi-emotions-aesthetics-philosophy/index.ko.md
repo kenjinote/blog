@@ -2,7 +2,7 @@
 title: "허구인 줄 알면서도 왜 우리는 이야기에 진심으로 울고 공포를 느끼는가: 허구의 역설과 상상의 철학"
 description: "콜린 래드포드(Colin Radford, 1975)가 제기한 '허구의 역설(세 가지 전제의 비일관적 삼원조)'을 중심으로 정동의 인지주의, 콜리지의 '불신의 자발적 유예', 켄달 월튼(Kendall Walton)의 '가장 놀이(Make-Believe)' 이론과 준공포(Quasi-Fear), 사고 이론(Thought Theory), 비극의 역설, 상상적 저항, 허구적 대상의 인공물 존재론을 심층 분석한다."
 slug: "paradox-of-fiction-radford-walton-make-believe-quasi-emotions-aesthetics-philosophy"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "철학·예술"

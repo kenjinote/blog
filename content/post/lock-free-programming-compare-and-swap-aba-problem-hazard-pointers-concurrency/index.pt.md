@@ -2,7 +2,7 @@
 title: "Como Múltiplas Threads Podem Modificar os Mesmos Dados Sem Usar Locks? A Ciência da Programação Lock-Free e o Problema ABA"
 description: "Uma análise arquitetural e matemática profunda da sincronização não bloqueante: por que mutexes falham em sistemas de latência ultrabaixa, a Hierarquia de Números de Consenso de Maurice Herlihy (CAS vs. LL/SC), a corrupção de memória do Problema ABA na Pilha de Treiber e a recuperação segura de memória via Hazard Pointers, EBR e RCU."
 slug: "lock-free-programming-compare-and-swap-aba-problem-hazard-pointers-concurrency"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Ciência da Computação"

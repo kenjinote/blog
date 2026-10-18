@@ -2,7 +2,7 @@
 title: "Si conocieras todas las leyes físicas del color, ¿sabrías qué se siente al ver el rojo? Los qualia y el problema difícil de la consciencia"
 description: "Criada en una habitación estrictamente en blanco y negro, la brillante neurocientífica Mary aprende todas las verdades físicas sobre la visión humana del color. Cuando sale al exterior y ve un tomate rojo maduro por primera vez, ¿aprende algo nuevo? Un análisis riguroso del murciélago de Nagel, el argumento del conocimiento de Jackson, los zombis filosóficos de Chalmers, la semántica modal bidimensional, las contraofensivas fisicalistas, el monismo russelliano y la teoría de la información integrada (IIT)."
 slug: "qualia-hard-problem-of-consciousness-marys-room-philosophical-zombies-chalmers"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Filosofía"

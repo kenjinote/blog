@@ -2,7 +2,7 @@
 title: "Por que «traçar uma reta ao acaso» produz três respostas diferentes: o Paradoxo de Bertrand e os fundamentos da probabilidade"
 description: "A probabilidade de uma corda escolhida ao acaso em um círculo unitário ser maior que o lado do triângulo equilátero inscrito é 1/3, 1/2 ou 1/4? Do paradoxo de Joseph Bertrand (1889) ao colapso do princípio da indiferença de Laplace e ao paradoxo do vinho e da água de Keynes, exploramos os axiomas de Kolmogorov, a invariância de grupos de transformação de Jaynes (medida cinemática de Poincaré-Santaló) e a distribuição a priori de Jeffreys."
 slug: "bertrand-paradox-principle-of-indifference-geometric-probability-jaynes-invariance"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemática"

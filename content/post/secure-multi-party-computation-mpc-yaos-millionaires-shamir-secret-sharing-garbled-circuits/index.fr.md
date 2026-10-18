@@ -2,7 +2,7 @@
 title: "Comment calculer une somme ou un classement à plusieurs sans révéler un seul bit : Calcul multipartite sécurisé (MPC) et problème des millionnaires de Yao"
 description: "Exploration mathématique approfondie du calcul multipartite sécurisé (MPC) : du partage de secret additif et du problème des millionnaires d'Andrew Yao au partage à seuil (t, n) de Shamir par interpolation de Lagrange, triplets de Beaver, transfert inconscient (OT), circuits brouillés et applications en génomique et finance."
 slug: "secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Informatique et Cryptographie"

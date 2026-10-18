@@ -2,7 +2,7 @@
 title: "झूठ बोलने और सच बोलकर गुमराह करने में क्या अंतर है? झूठ, ग्राइसियन निहितार्थ (Implicature) और फ्रैंकफर्ट के 'बुलशिट (Bullshit)' का भाषा-दर्शन"
 description: "स्पष्ट झूठ (Lying), आंशिक सत्य द्वारा भ्रामक प्रस्तुति (Misleading/Paltering), एच. पॉल ग्राइस के संवादात्मक निहितार्थ सिद्धांत, इमैनुएल कांट के नैतिक कठोरतावाद, ब्रॉन्स्टन बनाम संयुक्त राज्य अमेरिका निर्णय, और हैरी फ्रैंकफर्ट के 'ऑन बुलशिट' तथा आधुनिक AI मतिभ्रम (Hallucinations) का गहन दार्शनिक विश्लेषण।"
 slug: "philosophy-of-lying-misleading-gricean-implicature-frankfurt-on-bullshit-ethics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "दर्शन और भाषा"

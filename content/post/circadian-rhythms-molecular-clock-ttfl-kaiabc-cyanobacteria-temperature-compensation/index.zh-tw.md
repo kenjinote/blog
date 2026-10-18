@@ -2,7 +2,7 @@
 title: "為什麼在看不見太陽的黑暗中，生物依然能維持約24小時的節律？生理時鐘與分子振盪的科學"
 description: "從1729年含羞草暗室實驗與2017年諾貝爾獎的轉錄-轉譯回饋迴路（CLOCK:BMAL1與PER:CRY），到古德溫-戈德貝特振盪器的霍普夫分岔數學原理、試管中無需DNA即可運轉的藍綠菌KaiABC蛋白質時鐘，以及違背阿瑞尼斯定律的溫度補償性（Q10≈1.0）之謎，全面解析晝夜節律的分子生物學、非線性動力學與生物物理學。"
 slug: "circadian-rhythms-molecular-clock-ttfl-kaiabc-cyanobacteria-temperature-compensation"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "科學"

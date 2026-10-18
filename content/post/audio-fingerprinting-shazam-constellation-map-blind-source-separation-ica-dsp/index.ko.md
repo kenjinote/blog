@@ -2,7 +2,7 @@
 title: "시끄러운 카페에서 단 3초만 듣고 어떻게 노래 제목을 즉시 알아낼까? 음향 지문(Shazam)과 맹목 원음 분리(ICA)의 수리"
 description: "Avery Wang이 2003년 발표한 Shazam 음향 지문 알고리즘(단시간 푸리에 변환 STFT, 가보르-하이젠베르크 불확정성 원리, 성좌도 Constellation Map 피크 추출, 32비트 조합 해싱과 시간 오프셋 히스토그램)과 칵테일 파티 효과 및 독립 성분 분석(PCA 백색화의 한계, 중심극한정리의 역이용, 첨도, 네겐트로피, FastICA)의 수학적 원리를 완벽 해부합니다."
 slug: "audio-fingerprinting-shazam-constellation-map-blind-source-separation-ica-dsp"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "컴퓨터·정보통신"

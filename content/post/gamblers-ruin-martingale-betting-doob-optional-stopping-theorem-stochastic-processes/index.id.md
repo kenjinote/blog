@@ -2,7 +2,7 @@
 title: "Mengapa Strategi 'Melipatgandakan Taruhan Sampai Menang' Selalu Gagal: Masalah Kehancuran Penjudi dan Matematika Martingale"
 description: "Analisis matematis mendalam tentang jebakan strategi penggandaan Martingale, solusi eksak Masalah Kehancuran Penjudi (Gambler's Ruin) dari Huygens dan Pascal, serta Teori Martingale modern dan Teorema Penghentian Opsional Doob."
 slug: "gamblers-ruin-martingale-betting-doob-optional-stopping-theorem-stochastic-processes"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matematika"

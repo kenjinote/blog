@@ -2,7 +2,7 @@
 title: "Mengapa Menambahkan Satu Bintang Saja Menghancurkan Prediktabilitas Masa Depan: Masalah Tiga-Benda dan Kedalaman Mekanika Benda Langit"
 description: "Eksplorasi matematis mendalam tentang Masalah Tiga-Benda gravitasi: dari integrabilitas eksak Masalah Dua-Benda Newton dan perhitungan derajat kebebasan ruang fase, hingga lima titik ekuilibrium Euler-Lagrange (L1–L5, Teleskop James Webb, dan asteroid Troya), kesalahan bersejarah Henri Poincaré tahun 1889 yang melahirkan teori chaos, orbit koreografi angka-delapan, teorema KAM, dan waktu Lyapunov Tata Surya sebesar 5 juta tahun."
 slug: "three-body-problem-poincare-non-integrability-lagrange-points-kam-theorem-chaos"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matematika & Fisika"

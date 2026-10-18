@@ -2,7 +2,7 @@
 title: "Warum Wasser unter null Grad nicht immer gefriert: Unterkühlung und die Physik der Kristallkeimbildung"
 description: "Warum bleibt hochreines flüssiges Wasser bis fast -40 °C flüssig? Eine rigorose thermodynamische und kinetische Analyse metastabiler Zustände, der Klassischen Keimbildungstheorie (CNT), des kritischen Keimradius, der heterogenen Benetzungsgeometrie, des schockinduzierten dendritischen Wachstums sowie der Überhitzung und Verglasung am Glasübergang."
 slug: "supercooling-nucleation-thermodynamics-metastable-water-crystallization-physics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Wissenschaft"

@@ -2,7 +2,7 @@
 title: "Pourquoi remuer une tasse de café laisse toujours au moins un point immobile : théorèmes de point fixe et mathématiques de l'équilibre"
 description: "Des miracles quotidiens du théorème du point fixe de Brouwer (1911) — la molécule de café immobile et la carte froissée — aux contre-exemples précis, aux trois démonstrations classiques (théorème des valeurs intermédiaires, non-rétraction de Borsuk via l'homologie et la formule de Stokes, lemme de Sperner) et à la grande hiérarchie de Banach, Schauder et Kakutani fondant l'équilibre de Nash (1950) et l'équilibre général d'Arrow-Debreu (1954)."
 slug: "brouwer-fixed-point-theorem-kakutani-nash-equilibrium-algebraic-topology-math"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathématiques"

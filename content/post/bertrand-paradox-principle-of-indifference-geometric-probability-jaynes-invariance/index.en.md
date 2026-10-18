@@ -2,7 +2,7 @@
 title: "Why 'Drawing a Line at Random' Yields Three Different Answers: Bertrand's Paradox and the Foundations of Probability"
 description: "Is the probability that a random chord of a unit circle exceeds the side of an inscribed equilateral triangle 1/3, 1/2, or 1/4? From Joseph Bertrand's 1889 masterpiece paradox to the collapse of Laplace's Principle of Indifference and Keynes's Wine-Water Paradox, we rigorously explore Kolmogorov's measure-theoretic axioms, E. T. Jaynes's transformation group invariance, the Poincaré-Santaló kinematic measure of integral geometry, and Jeffreys's prior."
 slug: "bertrand-paradox-principle-of-indifference-geometric-probability-jaynes-invariance"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematics"

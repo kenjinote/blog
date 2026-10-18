@@ -2,7 +2,7 @@
 title: "Si todo está determinado por las leyes de la física, ¿tienen los humanos «libre albedrío»? Determinismo, compatibilismo y responsabilidad moral"
 description: "Un análisis exhaustivo del libre albedrío y la responsabilidad moral en la metafísica analítica y la neurofilosofía: el demonio de Laplace y el determinismo causal, el Argumento de la Consecuencia de Peter van Inwagen, el indeterminismo cuántico y el Argumento de la Suerte, el Argumento Básico de Galen Strawson, David Hume y los casos de Harry Frankfurt, las actitudes reactivas de P.F. Strawson y el potencial de preparación de Benjamin Libet."
 slug: "free-will-determinism-compatibilism-consequence-argument-frankfurt-cases-philosophy"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Filosofía"

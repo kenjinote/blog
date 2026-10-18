@@ -2,7 +2,7 @@
 title: "Por qué las luciérnagas y las criaturas abisales brillan sin calor: la química cuántica de la bioluminiscencia"
 description: "Un análisis exhaustivo de cómo los organismos vivos sortean la ley de radiación térmica de Planck para generar fotones visibles a temperatura ambiente. Cubre termodinámica del cuerpo negro vs. luminiscencia, bioluminiscencia vs. fluorescencia (GFP) y BRET, el ciclo de cuatro pasos luciferina-luciferasa vía 1,2-dioxetanona (mecanismo CIEEL), ecología de aguas profundas y aplicaciones desde imagen médica AkaBLI hasta plantas autoluminiscentes."
 slug: "bioluminescence-luciferin-luciferase-cold-light-quantum-yield-chemiluminescence"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Ciencia"

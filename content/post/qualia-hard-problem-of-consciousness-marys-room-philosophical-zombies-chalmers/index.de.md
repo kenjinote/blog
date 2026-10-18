@@ -2,7 +2,7 @@
 title: "Wenn man alle physikalischen Gesetze der Farbe kennt, weiß man dann auch, wie es ist, Rot zu sehen? Qualia und das schwierige Problem des Bewusstseins"
 description: "Die brillante Neurowissenschaftlerin Mary wächst in einem strikt schwarz-weißen Raum auf und lernt jede physikalische Wahrheit über das menschliche Farbsehen. Als sie den Raum verlässt und zum ersten Mal eine reife rote Tomate sieht, lernt sie etwas Neues? Eine tiefgehende Analyse von Nagels Fledermaus, Jacksons Wissensargument, Chalmers' philosophischen Zombies, zweidimensionaler Modalsemantik, physikalistischen Gegenstrategien, Russellschem Monismus und der Integrierten Informationstheorie (IIT)."
 slug: "qualia-hard-problem-of-consciousness-marys-room-philosophical-zombies-chalmers"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Philosophie"

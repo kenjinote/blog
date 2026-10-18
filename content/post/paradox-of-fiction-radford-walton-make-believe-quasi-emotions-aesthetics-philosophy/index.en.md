@@ -2,7 +2,7 @@
 title: "Why Do We Weep for Anna Karenina and Fear Monsters We Know Do Not Exist? The Paradox of Fiction and the Philosophy of Imagination"
 description: "A comprehensive philosophical investigation into Colin Radford's Paradox of Fiction (the inconsistent triad of emotional response, cognitive belief, and fictional non-existence), examining Cognitivism about Emotions, Coleridge's Suspension of Disbelief, Kendall Walton's Make-Believe Theory and Quasi-Fear, Thought Theory, Affective Neuroscience, the Paradox of Tragedy, Imaginative Resistance, and the Ontology of Fictional Entities."
 slug: "paradox-of-fiction-radford-walton-make-believe-quasi-emotions-aesthetics-philosophy"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Philosophy & Art"

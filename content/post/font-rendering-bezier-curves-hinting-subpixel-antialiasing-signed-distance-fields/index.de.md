@@ -2,7 +2,7 @@
 title: "Warum winzige Schrift gestochen scharf bleibt: Die Mathematik von Font-Rendering, Bézierkurven, Hinting-VMs und Subpixel-Antialiasing"
 description: "Eine tiefgehende mathematische und systemtechnische Analyse moderner Schriftdarstellung: Bernstein-Polynome, quadratische vs. kubische Bézierkurven, De-Casteljau-Algorithmus, Non-Zero-Winding-Topologie, analytische Trapezflächenintegration, die stapelbasierte TrueType-Hinting-VM, 5-Tap-FIR-Subpixelfilter (ClearType), gammakorrektes lineares Alpha-Blending sowie GPU-basierte Multi-Channel Signed Distance Fields (MSDF) und direkte Bézier-Shader (Slug)."
 slug: "font-rendering-bezier-curves-hinting-subpixel-antialiasing-signed-distance-fields"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Informatik"

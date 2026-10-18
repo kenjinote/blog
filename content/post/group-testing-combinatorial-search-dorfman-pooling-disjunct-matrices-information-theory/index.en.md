@@ -2,7 +2,7 @@
 title: "Why Mixing Samples Finds Positives in Fewer Tests: The Mathematics of Group Testing and Combinatorial Search"
 description: "A deep mathematical exploration of Group Testing and Combinatorial Search: from Robert Dorfman's 1943 wartime blood-pooling breakthrough and Shannon's information-theoretic lower bounds, to the 12-coin counterfeit balance problem, Kautz-Singleton disjunct matrices, Reed-Solomon pooling designs, and modern connections to compressed sensing and high-throughput genomics."
 slug: "group-testing-combinatorial-search-dorfman-pooling-disjunct-matrices-information-theory"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematics & Computer Science"

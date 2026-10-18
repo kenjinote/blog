@@ -2,7 +2,7 @@
 title: "Pourquoi l'eau ne gèle-t-elle pas toujours sous zéro : surfusion et physique de la nucléation cristalline"
 description: "Pourquoi l'eau liquide pure peut-elle survivre jusqu'à près de -40 °C sans geler ? Une exploration thermodynamique et cinétique rigoureuse de la métastabilité, de la théorie classique de la nucléation (CNT), du rayon critique, du facteur de mouillage de Turnbull, de la croissance dendritique par choc, de la surchauffe et de la vitrification."
 slug: "supercooling-nucleation-thermodynamics-metastable-water-crystallization-physics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Science"

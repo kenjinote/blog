@@ -2,7 +2,7 @@
 title: "為什麼艾雪的階梯畫得出卻造不出？不可能圖形與「局部與整體」的數學"
 description: "潘洛斯三角形與M.C.艾雪的無限階梯在每一個局部角落都完全符合三維物理定律，但沿閉合迴路拼接時卻在三維空間中徹底崩潰。本文深入解析透視投影如何抹除深度纖維、羅傑·潘洛斯如何用層論（Sheaf Theory）與Čech上同調嚴格定義不可能圖形，以及杉原厚吉的反重力實體模型與量子脈絡性背後的統一上同調架構。"
 slug: "impossible-figures-penrose-triangle-escher-sheaf-cohomology-local-global-geometry"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "數學"

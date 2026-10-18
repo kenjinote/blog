@@ -2,7 +2,7 @@
 title: "Wenn alles durch Naturgesetze bestimmt ist, haben Menschen dann einen 'freien Willen'? Determinismus, Kompatibilismus und moralische Verantwortung"
 description: "Eine tiefgehende philosophische und formale Analyse des freien Willens und der moralischen Verantwortung: Der Laplacesche Dämon und kausaler Determinismus, Peter van Inwagens Konsequenzargument, Quantenindeterminismus und das Zufallsargument, Galen Strawsons Basisargument, David Hume und Harry Frankfurts Gegenbeispiele sowie hierarchische Volitionen, P.F. Strawsons reaktive Einstellungen und Benjamin Libets Bereitschaftspotential."
 slug: "free-will-determinism-compatibilism-consequence-argument-frankfurt-cases-philosophy"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Philosophie"

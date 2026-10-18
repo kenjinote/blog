@@ -2,7 +2,7 @@
 title: "萤火虫与深海生物为何能发光却不发热：生物发光与“冷光”的量子化学"
 description: "深入解析生物体如何绕过普朗克黑体热辐射定律，在室温下以极高量子产率将化学键能直接转化为可见光子。涵盖黑体辐射与冷光的统计物理差异、生物发光与GFP荧光及BRET的区别、萤火虫荧光素-荧光素酶四步反应与1,2-二氧杂环丁酮（CIEEL机制）、活性位点颜色调控、深海共进化生态以及AkaBLI活体成像与自发光植物应用。"
 slug: "bioluminescence-luciferin-luciferase-cold-light-quantum-yield-chemiluminescence"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "科学"

@@ -2,7 +2,7 @@
 title: "Why Morpho Butterflies and Jewel Beetles Shine Without Pigments: The Physics of Structural Color and Light Interference"
 description: "Why does crushing a Morpho butterfly wing turn its electric blue into dull brown powder, or dipping it in acetone erase its color instantly? A rigorous wave-optical treatise on thin-film interference, Distributed Bragg Reflectors (DBR), the Morpho order-disorder paradox, and 3D photonic crystal band gaps."
 slug: "structural-coloration-morpho-butterfly-photonic-crystals-thin-film-interference"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Science"

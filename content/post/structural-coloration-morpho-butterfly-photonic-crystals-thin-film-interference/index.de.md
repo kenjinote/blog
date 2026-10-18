@@ -2,7 +2,7 @@
 title: "Warum Morpho-Falter und Prachtkäfer ohne Pigmente leuchten: Die Physik der Strukturfarben und Lichtinterferenz"
 description: "Warum verwandelt sich der elektrisch blaue Flügel eines Morpho-Falters beim Zerreiben in braunes Pulver und verliert in Aceton sofort seine Farbe? Eine tiefgehende wellenoptische Analyse von Dünnschichtinterferenz, Bragg-Spiegeln (DBR), dem Morpho-Paradoxon und dreidimensionalen photonischen Kristallen."
 slug: "structural-coloration-morpho-butterfly-photonic-crystals-thin-film-interference"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Wissenschaft"

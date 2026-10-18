@@ -2,7 +2,7 @@
 title: "Pourquoi peut-on courir sur de l'eau et de la fécule de maïs : La physique des fluides non newtoniens et de la rhéologie"
 description: "Pourquoi un mélange d'eau et de fécule de maïs (Oobleck) se solidifie-t-il comme du béton sous les pas d'un coureur tout en se liquéfiant dès qu'il s'arrête ? Découvrez la loi de viscosité de Newton, le modèle de Herschel-Bulkley, les hydroclusters, les chaînes de force frictionnelles, les fronts de solidification, la rhéologie du sang, l'effet Weissenberg, le nombre de Deborah et les gilets pare-balles liquides."
 slug: "non-newtonian-fluids-shear-thickening-oobleck-rheology-viscoelasticity-physics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Science"

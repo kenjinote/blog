@@ -2,7 +2,7 @@
 title: "不洩露1位元原始資料，多人如何共同計算「總和」與「排名」：安全多方計算（MPC）與姚氏百萬富翁問題"
 description: "從無主管參與的平均薪資加法秘密共享出發，深入解析姚期智百萬富翁問題、沙米爾(t,n)門檻秘密共享與拉格朗日插值、比弗乘法三元組、不經意傳輸（OT）與混淆電路（Garbled Circuits），並對比全同態加密（FHE）與零知識證明（ZKP）在醫療與金融領域的實際應用。"
 slug: "secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "電腦科學與密碼學"

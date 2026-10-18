@@ -2,7 +2,7 @@
 title: "단 1비트의 데이터도 노출하지 않고 여러 사람이 '합계'와 '순위'만 계산하는 법: 다자간 보안 컴퓨팅(MPC)과 야오의 백만장자 문제"
 description: "상사 없이 평균 연봉만 계산하는 가법 비밀 분산부터 앤드류 야오의 백만장자 문제, 샤미르의 (t, n) 임계값 비밀 분산과 라그랑주 보간법, 비버의 곱셈 트리플, 불감 전송(OT)과 가블드 서킷(Garbled Circuits), 그리고 동형암호(FHE)·영지식 증명(ZKP)과의 차이점 및 금융·의료 응용까지 수학적으로 완벽히 해부합니다."
 slug: "secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "컴퓨터 과학 및 암호학"

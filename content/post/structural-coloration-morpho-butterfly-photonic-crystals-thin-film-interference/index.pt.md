@@ -2,7 +2,7 @@
 title: "Por que as borboletas Morpho e os besouros-joia brilham sem pigmentos: A física da cor estrutural e da interferência da luz"
 description: "Por que a asa azul-elétrica de uma borboleta Morpho vira pó marrom ao ser triturada e perde sua cor instantaneamente em acetona? Um tratado rigoroso de óptica ondulatória sobre interferência de filme fino, refletores de Bragg (DBR), o paradoxo Morpho e cristais fotônicos 3D."
 slug: "structural-coloration-morpho-butterfly-photonic-crystals-thin-film-interference"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Ciência"

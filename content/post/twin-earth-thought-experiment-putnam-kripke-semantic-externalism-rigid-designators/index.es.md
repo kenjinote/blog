@@ -2,7 +2,7 @@
 title: "Si tiene el mismo aspecto y propiedades pero distinta química, ¿deja de ser 'agua'? El experimento mental de la Tierra Gemela y el externalismo semántico"
 description: "Un análisis filosófico profundo desde el sentido y la referencia de Frege y las descripciones definidas de Russell hasta los designadores rígidos de Kripke, la Tierra Gemela de Putnam (H2O frente a XYZ), el externalismo social de Burge y el problema del anclaje de símbolos en los modelos de lenguaje (LLM)."
 slug: "twin-earth-thought-experiment-putnam-kripke-semantic-externalism-rigid-designators"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Filosofía"

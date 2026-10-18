@@ -2,7 +2,7 @@
 title: "Mengapa 'Menarik Garis Secara Acak' Menghasilkan Tiga Jawaban Berbeda: Paradoks Bertrand dan Fondasi Probabilitas"
 description: "Apakah probabilitas tali busur acak pada lingkaran satuan lebih panjang dari sisi segitiga sama sisi dalam adalah 1/3, 1/2, atau 1/4? Dari Paradoks Joseph Bertrand (1889) hingga runtuhnya Prinsip Ketidakpedulian Laplace dan Paradoks Anggur-Air Keynes, kita membahas aksioma ukuran Kolmogorov, invariansi grup transformasi Jaynes (ukuran kinematik Poincaré-Santaló), dan prior Jeffreys."
 slug: "bertrand-paradox-principle-of-indifference-geometric-probability-jaynes-invariance"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matematika"

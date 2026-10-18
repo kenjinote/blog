@@ -2,7 +2,7 @@
 title: "Pourquoi les lucioles et les créatures des abysses brillent sans chaleur : la chimie quantique de la bioluminescence"
 description: "Découvrez comment les organismes vivants contournent la loi du corps noir de Planck pour émettre des photons visibles à température ambiante. Analyse physique de l'incandescence vs luminescence, distinction entre bioluminescence, fluorescence (GFP) et BRET, cycle à quatre étapes luciférine-luciférase via la 1,2-dioxétanone (mécanisme CIEEL), écologie des grands fonds et applications de l'imagerie AkaBLI aux plantes autoluminescentes."
 slug: "bioluminescence-luciferin-luciferase-cold-light-quantum-yield-chemiluminescence"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Science"

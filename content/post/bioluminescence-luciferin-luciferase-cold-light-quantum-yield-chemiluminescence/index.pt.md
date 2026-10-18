@@ -2,7 +2,7 @@
 title: "Por que vaga-lumes e criaturas abissais brilham sem calor: a química quântica da bioluminescência"
 description: "Uma análise aprofundada de como os organismos vivos contornam a lei da radiação térmica de Planck para gerar fótons visíveis à temperatura ambiente. Aborda termodinâmica do corpo negro vs. luminescência, bioluminescência vs. fluorescência (GFP) e BRET, o ciclo de quatro etapas luciferina-luciferase via 1,2-dioxetanona (mecanismo CIEEL), ecologia do mar profundo e aplicações desde imagem médica AkaBLI até plantas autoluminescentes."
 slug: "bioluminescence-luciferin-luciferase-cold-light-quantum-yield-chemiluminescence"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Ciência"

@@ -2,7 +2,7 @@
 title: "색소가 없는데도 왜 모르포나비와 비단벌레는 찬란하게 빛나는가: 구조색과 빛의 간섭 물리학"
 description: "모르포나비의 날개를 막자사발에 갈면 왜 칙칙한 갈색 가루가 되고, 아세톤을 떨어뜨리면 즉시 파란색이 사라질까? 박막 간섭, 분포 브래그 반사기(DBR), 모르포나비의 '질서와 무질서의 협주', 그리고 맥스웰 방정식이 유도하는 3차원 광결정과 광밴드갭까지 수천만 년 동안 바래지 않는 구조색(Structural Color)의 파동광학을 완벽 해부합니다."
 slug: "structural-coloration-morpho-butterfly-photonic-crystals-thin-film-interference"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "과학"

@@ -2,7 +2,7 @@
 title: "为什么仅仅增加一颗恒星，未来的轨道就变得无法求解：三体问题与天体力学深渊"
 description: "从牛顿二体问题的完全可积性与相空间自由度计数出发，深入推导欧拉与拉格朗日的五个平衡点（L1–L5、韦伯太空望远镜与木星特洛伊小行星）、庞加莱1889年催生混沌理论的同宿纠缠、8字形周期轨道的变分证明，以及决定太阳系稳定性的KAM定理与拉askar数值积分。"
 slug: "three-body-problem-poincare-non-integrability-lagrange-points-kam-theorem-chaos"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "数学与物理"

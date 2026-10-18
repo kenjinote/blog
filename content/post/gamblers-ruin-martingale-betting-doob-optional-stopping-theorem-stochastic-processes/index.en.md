@@ -2,7 +2,7 @@
 title: "Why 'Doubling Down Until You Win' Always Fails: The Gambler's Ruin Problem and the Mathematics of Martingales"
 description: "A rigorous mathematical exploration of the 18th-century Martingale doubling fallacy, Huygens and Pascal's Gambler's Ruin problem via absorbing Markov chains and linear difference equations, and Paul Lévy and Joseph Leo Doob's modern Martingale Theory and Optional Stopping Theorem."
 slug: "gamblers-ruin-martingale-betting-doob-optional-stopping-theorem-stochastic-processes"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematics"

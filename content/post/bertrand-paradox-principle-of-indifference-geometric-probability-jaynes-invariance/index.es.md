@@ -2,7 +2,7 @@
 title: "Por qué «trazar una línea al azar» produce tres respuestas diferentes: la paradoja de Bertrand y los fundamentos de la probabilidad"
 description: "¿Es la probabilidad de que una cuerda aleatoria de un círculo unitario supere el lado de un triángulo equilátero inscrito igual a 1/3, 1/2 o 1/4? Desde la paradoja de Joseph Bertrand (1889) hasta el colapso del principio de indiferencia de Laplace y la paradoja del vino y el agua de Keynes, exploramos los axiomas de Kolmogórov, la invariancia de grupos de transformación de Jaynes (medida cinemática de Poincaré-Santaló) y la distribución a priori de Jeffreys."
 slug: "bertrand-paradox-principle-of-indifference-geometric-probability-jaynes-invariance"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemáticas"

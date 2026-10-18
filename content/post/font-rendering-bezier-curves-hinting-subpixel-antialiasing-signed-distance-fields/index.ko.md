@@ -2,7 +2,7 @@
 title: "작은 글씨는 왜 뭉개지지 않고 선명하게 읽힐까: 폰트 렌더링, 베지어 곡선, 힌팅 가상머신과 서브픽셀 안티에일리어싱의 수학"
 description: "12×12 픽셀의 좁은 격자 안에 복잡한 한자와 정교한 세리프 글꼴을 선명하게 그려내는 현대 폰트 렌더링의 수리와 시스템 공학: 번스타인 기저 다항식, 2차 및 3차 베지어 곡선, 드 카스텔조 분할 알고리즘, 비제로 와인딩 규칙과 해석적 사다리꼴 면적 적분, TrueType 스택 기반 힌팅 가상머신(VM), ClearType 5탭 FIR 서브픽셀 필터와 감마 보정 선형 블렌딩, 그리고 GPU 시대의 MSDF와 Slug 셰이더까지 완벽 해설."
 slug: "font-rendering-bezier-curves-hinting-subpixel-antialiasing-signed-distance-fields"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "컴퓨터 과학"

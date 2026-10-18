@@ -2,7 +2,7 @@
 title: "Why Do Living Organisms Keep a 24-Hour Rhythm Even in Complete Darkness? The Science of Circadian Clocks and Molecular Oscillations"
 description: "A comprehensive exploration of circadian rhythms across molecular biology, nonlinear dynamics, and biophysics: from de Mairan's 1729 Mimosa experiment and the Nobel Prize-winning CLOCK:BMAL1 / PER:CRY transcription-translation feedback loop (TTFL), to the Goodwin-Goldbeter oscillator's Hopf bifurcation, the test-tube KaiABC post-translational protein clock of cyanobacteria, and the biophysical mystery of temperature compensation (Q10 ≈ 1.0)."
 slug: "circadian-rhythms-molecular-clock-ttfl-kaiabc-cyanobacteria-temperature-compensation"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Science"

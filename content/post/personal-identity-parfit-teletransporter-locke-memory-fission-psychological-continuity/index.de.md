@@ -2,7 +2,7 @@
 title: "Wenn mein Gehirn gescannt und zum Mars gebeamt wird, bin das noch ‚ich‘? Personale Identität und die Philosophie des Überlebens"
 description: "Eine tiefgehende philosophische Analyse der personalen Identität über die Zeit: John Lockes Erinnerungskriterium, Thomas Reids Paradox des tapferen Offiziers, Joseph Butlers Zirkularitätseinwand, Animalismus sowie Derek Parfits Teletransporter- und Gehirnspaltungs-Gedankenexperimente."
 slug: "personal-identity-parfit-teletransporter-locke-memory-fission-psychological-continuity"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Philosophie"

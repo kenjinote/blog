@@ -2,7 +2,7 @@
 title: "Même aspect et mêmes propriétés, mais une chimie différente : est-ce encore de l'« eau » ? L'expérience de pensée de la Terre jumelle et l'externalisme sémantique"
 description: "Analyse philosophique approfondie : du sens et de la dénotation chez Frege et des descriptions définies de Russell aux désignateurs rigides de Kripke, à l'expérience de la Terre jumelle de Putnam (H2O vs XYZ), à l'externalisme social de Burge et au problème de l'ancrage des symboles dans les grands modèles de langage (LLM)."
 slug: "twin-earth-thought-experiment-putnam-kripke-semantic-externalism-rigid-designators"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Philosophie"

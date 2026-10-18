@@ -2,7 +2,7 @@
 title: "Mengapa Kita Menangisi Anna Karenina dan Takut pada Monster yang Kita Tahu Tidak Ada? Paradoks Fiksi dan Filsafat Imajinasi"
 description: "Kajian filosofis mendalam tentang Paradoks Fiksi Colin Radford (triad tak konsisten antara respons emosional, keyakinan eksistensial, dan ketidakpercayaan), kognitivisme emosi, penangguhan ketidakpercayaan Coleridge, teori pura-pura (Make-Believe) dan kuasi-takut Kendall Walton, teori pikiran (Thought Theory), paradoks tragedi, resistensi imajinatif, serta ontologi artefaktual entitas fiksi."
 slug: "paradox-of-fiction-radford-walton-make-believe-quasi-emotions-aesthetics-philosophy"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Filsafat & Seni"

@@ -2,7 +2,7 @@
 title: "Pourquoi mélanger les échantillons permet de détecter les positifs en moins de tests : Mathématiques du Group Testing et de la recherche combinatoire"
 description: "Exploration mathématique approfondie du Group Testing et de la recherche combinatoire : du pooling à deux étapes de Robert Dorfman (1943) et de la borne inférieure de Shannon au problème des 12 pièces, aux matrices disjonctives de Kautz-Singleton, aux codes de Reed-Solomon et à l'acquisition comprimée (Compressed Sensing)."
 slug: "group-testing-combinatorial-search-dorfman-pooling-disjunct-matrices-information-theory"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathématiques et Informatique"

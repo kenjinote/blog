@@ -2,7 +2,7 @@
 title: "Warum das ewige Verdoppeln beim Glücksspiel scheitert: Das Ruinproblem des Spielers und die Mathematik der Martingale"
 description: "Eine strenge mathematische Analyse des Martingal-Verdopplungssystems, des Ruinproblems des Spielers von Huygens und Pascal mittels absorbierender Markow-Ketten sowie der modernen Martingaltheorie und des Optional Stopping Theorems von Paul Lévy und Joseph Leo Doob."
 slug: "gamblers-ruin-martingale-betting-doob-optional-stopping-theorem-stochastic-processes"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematik"

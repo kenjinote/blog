@@ -2,7 +2,7 @@
 title: "Pourquoi la force de frottement est indépendante de la surface de contact : aspérités microscopiques, dynamique stick-slip, préfussion de la glace et superlubricité"
 description: "Exploration physique et mathématique de la tribologie : résolution du paradoxe d'Amontons-Coulomb via l'aire réelle de contact (Bowden-Tabor et Greenwood-Williamson), loi de frottement vitesse-état de Dieterich-Ruina du violon aux séismes, réfutation thermodynamique de la fusion sous pression de la glace par l'équation de Clapeyron, et superlubricité structurelle des réseaux incommensurables."
 slug: "tribology-physics-of-friction-amontons-laws-real-contact-area-superlubricity"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Science"

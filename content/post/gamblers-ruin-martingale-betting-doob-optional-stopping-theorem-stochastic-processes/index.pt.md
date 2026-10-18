@@ -2,7 +2,7 @@
 title: "Por que «dobrar a aposta até ganhar» sempre falha: a ruína do jogador e a matemática dos martingales"
 description: "Uma análise matemática rigorosa da armadilha do sistema Martingale, do problema da ruína do jogador de Huygens e Pascal via equações de diferenças finitas, e da teoria moderna dos martingales e do teorema da parada opcional de Paul Lévy e Joseph Leo Doob."
 slug: "gamblers-ruin-martingale-betting-doob-optional-stopping-theorem-stochastic-processes"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemática"

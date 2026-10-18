@@ -2,7 +2,7 @@
 title: "뇌 정보를 스캔해 화성으로 전송된 나는 '원래의 나'인가: 인격 동일성과 생존의 철학"
 description: "존 로크의 기억 이론과 토머스 리드의 용감한 장교 역설, 버틀러의 순환논법 반박, 신체설과 동물주의, 그리고 데릭 파핏의 텔레트랜스포터 및 뇌 반구 분열 사고실험을 통해 수적 동일성에서 심리적 연속성(관계 R)으로의 철학적 전환을 심층 분석한다."
 slug: "personal-identity-parfit-teletransporter-locke-memory-fission-psychological-continuity"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "철학"

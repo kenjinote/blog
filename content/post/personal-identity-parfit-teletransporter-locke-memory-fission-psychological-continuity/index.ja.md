@@ -2,7 +2,7 @@
 title: "脳の情報をスキャンして火星に転送された私は、「元の私」なのか：人格の同一性と生存の哲学"
 description: "ロックの記憶説とリードの勇敢な将校のパラドックス、身体説と動物主義、そしてデレク・パーフィットのテレトランスポーター思考実験と脳半球の分裂問題を徹底解剖し、数的同一性から心理的連続性（関係R）へのコペルニクス的転換を論じる。"
 slug: "personal-identity-parfit-teletransporter-locke-memory-fission-psychological-continuity"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "哲学"

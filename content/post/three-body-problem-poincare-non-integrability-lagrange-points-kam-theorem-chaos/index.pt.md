@@ -2,7 +2,7 @@
 title: "Por que adicionar uma única estrela destrói a previsibilidade do futuro: O Problema dos Três Corpos e as profundezas da mecânica celeste"
 description: "Uma análise matemática rigorosa do Problema dos Três Corpos: da integrabilidade exata do Problema de Dois Corpos de Newton e contagem de graus de liberdade no espaço de fases aos cinco pontos de Lagrange (L1–L5, telescópio James Webb e asteroides troianos), o erro histórico de Henri Poincaré em 1889 que gerou a teoria do caos, a coreografia em forma de oito, o teorema KAM e o tempo de Lyapunov de 5 milhões de anos do Sistema Solar."
 slug: "three-body-problem-poincare-non-integrability-lagrange-points-kam-theorem-chaos"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemática e Física"

@@ -2,7 +2,7 @@
 title: "Bagaimana Banyak Thread Dapat Memodifikasi Data yang Sama Tanpa Lock Sama Sekali? Sains Pemrograman Lock-Free dan Masalah ABA"
 description: "Analisis arsitektural dan matematis mendalam tentang sinkronisasi non-blocking: mengapa mutex gagal pada sistem berlatensi sangat rendah, Hierarki Bilangan Konsensus Maurice Herlihy (CAS vs. LL/SC), mekanisme kerusakan heap akibat Masalah ABA pada Treiber Stack, serta reklamasi memori aman melalui Hazard Pointers, EBR, dan RCU."
 slug: "lock-free-programming-compare-and-swap-aba-problem-hazard-pointers-concurrency"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Ilmu Komputer"

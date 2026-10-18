@@ -2,7 +2,7 @@
 title: "Warum die Reibungskraft unabhängig von der Kontaktfläche ist: Mikroskopische Asperitäten, Stick-Slip-Dynamik, Eis-Vorschmelzen und strukturelle Superlubrizität"
 description: "Eine tiefgehende physikalische Analyse der Tribologie: Auflösung des klassischen Amontons-Coulomb-Paradoxons über die reale Kontaktfläche (Bowden-Tabor und Greenwood-Williamson), Herleitung der Dieterich-Ruina-Zustandsgesetze für Stick-Slip-Schwingungen von der Violine bis zu Erdbeben, Widerlegung der Druckschmelz-Hypothese von Eis mittels der Clausius-Clapeyron-Gleichung und Erklärung der strukturellen Superlubrizität."
 slug: "tribology-physics-of-friction-amontons-laws-real-contact-area-superlubricity"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Wissenschaft"

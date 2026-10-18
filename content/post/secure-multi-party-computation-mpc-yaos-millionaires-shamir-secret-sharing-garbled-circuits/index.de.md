@@ -2,7 +2,7 @@
 title: "Wie mehrere Parteien Summen und Rangfolgen berechnen, ohne ein einziges Bit preiszugeben: Secure Multi-Party Computation (MPC) und Yaos Millionärsproblem"
 description: "Eine mathematische Tiefenanalyse der sicheren Mehrparteienberechnung (MPC): Von additivem Secret Sharing und Andrew Yaos Millionärsproblem über Shamirs (t, n)-Schwellenwertverfahren mittels Lagrange-Interpolation und Beavers Multiplikationstripeln bis zu Oblivious Transfer, Garbled Circuits und modernen Anwendungen."
 slug: "secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Informatik & Kryptographie"

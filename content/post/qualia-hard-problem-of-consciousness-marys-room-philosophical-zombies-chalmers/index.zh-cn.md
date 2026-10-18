@@ -2,7 +2,7 @@
 title: "如果掌握了关于颜色的一切物理定律，就能懂得“看见红色”的体验吗？感质与意识的难问题"
 description: "在纯黑白房间里长大的天才神经科学家玛丽，在彻底掌握人类色觉的所有物理与神经生物学规律后，第一次走出房间看到熟透的红番茄时，她学到了新的知识吗？本文深入剖析内格尔的蝙蝠、杰克逊的知识论证、查尔默斯的哲学僵尸与二维模态语义学、物理主义的三大反击、罗素一元论以及整合信息理论（IIT）。"
 slug: "qualia-hard-problem-of-consciousness-marys-room-philosophical-zombies-chalmers"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "哲学"

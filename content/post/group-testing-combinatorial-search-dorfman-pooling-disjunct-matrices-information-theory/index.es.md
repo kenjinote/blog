@@ -2,7 +2,7 @@
 title: "Por qué mezclar muestras permite encontrar positivos en menos pruebas: Matemáticas del Group Testing y la búsqueda combinatoria"
 description: "Un recorrido matemático riguroso por el Group Testing y la búsqueda combinatoria: desde el pooling en dos etapas de Robert Dorfman (1943) y la cota inferior de la teoría de la información de Shannon, hasta el problema de las 12 monedas, las matrices disyuntas de Kautz-Singleton, los diseños de Reed-Solomon y el Compressed Sensing."
 slug: "group-testing-combinatorial-search-dorfman-pooling-disjunct-matrices-information-theory"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemáticas e Informática"

@@ -2,7 +2,7 @@
 title: "Por que a força de atrito independe da área de contato? Asperezas microscópicas, dinâmica stick-slip, pré-fusão do gelo e superlubricidade"
 description: "Uma análise física e matemática rigorosa da tribologia: resolução do paradoxo de Amontons-Coulomb pela área real de contato (Bowden-Tabor e Greenwood-Williamson), leis de atrito de taxa e estado de Dieterich-Ruina do violino aos terremotos, refutação da fusão por pressão do gelo via equação de Clausius-Clapeyron e superlubricidade estrutural."
 slug: "tribology-physics-of-friction-amontons-laws-real-contact-area-superlubricity"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Ciência"

@@ -2,7 +2,7 @@
 title: "ホタルや深海生物は、なぜ熱を出さずに光れるのか：生物発光と「冷たい光」の量子化学"
 description: "白熱電球が数千度の高温を必要とするのに対し、ホタルや深海生物が室温のまま高い量子収率で光を放つ理由を徹底解説。プランクの黒体放射とルミネセンスの統計力学的な違い、ルシフェリン・ルシフェラーゼ反応における高エネルギー四員環過酸化物（1,2-ジオキセタノン）の形成、CIEEL機構による電子励起、GFP蛍光やBRETとの違い、そして医療イメージング（AkaBLI）や自発光植物への応用までを網羅します。"
 slug: "bioluminescence-luciferin-luciferase-cold-light-quantum-yield-chemiluminescence"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "科学"

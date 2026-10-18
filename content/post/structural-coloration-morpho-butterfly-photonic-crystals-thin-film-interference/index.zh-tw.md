@@ -2,7 +2,7 @@
 title: "沒有色素，為何大閃蝶與吉丁蟲依然絢麗奪目：結構色與光干涉的物理學"
 description: "為什麼將摩爾福蝶（大閃蝶）翅膀研磨成粉會變成暗褐色，滴上丙酮瞬間就會失去藍色？從薄膜干涉、分佈式布拉格反射器（DBR）、閃蝶「秩序與無序的協奏」，到馬克士威方程組導出的三維光子晶體與光子能隙，深度解析數千萬年不褪色的「結構色（Structural Color）」波動光學。"
 slug: "structural-coloration-morpho-butterfly-photonic-crystals-thin-film-interference"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "科學"

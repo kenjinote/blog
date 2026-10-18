@@ -2,7 +2,7 @@
 title: "太陽が見えない暗闇でも、なぜ生物は約24時間のリズムを刻めるのか：体内時計と分子振動の科学"
 description: "1729年のオジギソウの暗室実験から2017年ノーベル賞の転写翻訳フィードバックループ（CLOCK:BMAL1とPER:CRY）、グッドウィン振動子のホップ分岐と時間遅れの数理、試験管内でDNAなしに時を刻むシアノバクテリアのKaiABCタンパク質時計、そしてアレニウスの法則に逆らう温度補償性（Q10≒1.0）の謎まで、概日リズム（サーカディアンリズム）の分子・数理・生物物理学を徹底解説する。"
 slug: "circadian-rhythms-molecular-clock-ttfl-kaiabc-cyanobacteria-temperature-compensation"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "科学"

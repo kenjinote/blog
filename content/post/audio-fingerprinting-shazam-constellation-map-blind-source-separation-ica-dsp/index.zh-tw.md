@@ -2,7 +2,7 @@
 title: "為什麼在嘈雜的咖啡館裡聽3秒鐘就能瞬間識曲？聲學指紋（Shazam）與盲源分離（ICA）的數學原理"
 description: "深入解析Avery Wang於2003年提出的Shazam聲學指紋演算法（短時傅立葉變換STFT、Gabor-Heisenberg不確定性原理、星座圖局部峰值提取、32位元錨點-目標組合雜湊與時間偏移直方圖），以及雞尾酒會效應與獨立成分分析（PCA白化侷限、中央極限定理逆用、峰度、負熵與FastICA盲源分離）的完整數學機制。"
 slug: "audio-fingerprinting-shazam-constellation-map-blind-source-separation-ica-dsp"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "電腦與資訊科技"

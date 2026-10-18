@@ -2,7 +2,7 @@
 title: "嘘をつくことと、事実だけを言って相手を誤解させることはどう違うのか：嘘・誤誘導・『でたらめ（Bullshit）』の言語哲学"
 description: "アレクサンドリアのアタナシオスの逸話や米最高裁ブロンストン判決から出発し、カントの厳格主義、グライスの協調の原理と会話の含意（Implicature）、嘘と誤誘導（Misleading / Paltering）の形式意味論的・語用論的境界、そしてハリー・フランクファートの『ウンコな議論（On Bullshit）』における真理への無関心と現代AIのハルシネーション問題までを徹底解剖する。"
 slug: "philosophy-of-lying-misleading-gricean-implicature-frankfurt-on-bullshit-ethics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "哲学・思想"

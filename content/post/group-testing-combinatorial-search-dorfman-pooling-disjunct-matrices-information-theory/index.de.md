@@ -2,7 +2,7 @@
 title: "Warum das Mischen von Proben Positive mit weniger Tests findet: Die Mathematik von Group Testing und kombinatorischer Suche"
 description: "Eine fundierte mathematische Analyse von Group Testing und kombinatorischer Suche: von Robert Dorfmans zweistufigem Pooling (1943) und Shannons informationstheoretischer Schranke über das 12-Münzen-Waagenproblem bis hin zu disjunkten Matrizen nach Kautz-Singleton, Reed-Solomon-Designs und Compressed Sensing."
 slug: "group-testing-combinatorial-search-dorfman-pooling-disjunct-matrices-information-theory"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematik & Informatik"

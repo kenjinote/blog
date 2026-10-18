@@ -2,7 +2,7 @@
 title: "거짓말을 하는 것과 사실만을 말해 상대를 오해하게 만드는 것은 어떻게 다른가: 거짓말·오도(Misleading)·‘개소리(Bullshit)’의 언어철학"
 description: "알렉산드리아의 아타나시우스 일화와 미국 연방대법원의 브론스턴 위증 판결에서 출발하여, 신념 논리에서의 거짓말의 형식적 정의, 뻔뻔한 거짓말(Bald-Faced Lies), 그라이스의 협동 원리와 대화 함축(Implicature), 베이즈 합리적 화행(RSA) 모델, 칸트의 엄격주의와 전략적 오도, 제니퍼 솔의 윤리적 비판, 그리고 해리 프랑크푸르트의 『개소리에 대하여(On Bullshit)』가 현대 대규모 언어 모델(LLM)의 환각 문제에 던지는 통찰을 심층 분석한다."
 slug: "philosophy-of-lying-misleading-gricean-implicature-frankfurt-on-bullshit-ethics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "철학·사상"

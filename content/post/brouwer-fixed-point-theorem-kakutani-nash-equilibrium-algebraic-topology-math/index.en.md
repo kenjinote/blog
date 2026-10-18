@@ -2,7 +2,7 @@
 title: "Why Stirring a Cup of Coffee Always Leaves at Least One Point Unmoved: Fixed-Point Theorems and the Mathematics of Equilibrium"
 description: "From the everyday miracles of Brouwer's Fixed-Point Theorem (1911)—the unmoved coffee molecule and the crumpled map on a table—to sharp counterexamples, three classic proofs via the Intermediate Value Theorem, Borsuk's No-Retraction Theorem (homology and Stokes's Theorem), and Sperner's Combinatorial Lemma, and finally the grand hierarchy of Banach, Schauder, and Kakutani Fixed-Point Theorems powering John Nash's Game-Theoretic Equilibrium (1950) and Arrow-Debreu General Competitive Equilibrium (1954)."
 slug: "brouwer-fixed-point-theorem-kakutani-nash-equilibrium-algebraic-topology-math"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematics"

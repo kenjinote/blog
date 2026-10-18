@@ -2,7 +2,7 @@
 title: "為什麼極小的文字依然清晰銳利：字體渲染、貝茲曲線、微調虛擬機與次像素抗鋸齒的數學原理"
 description: "深入解析現代電腦字體渲染的數學與系統工程：伯恩斯坦基底多項式、二次與三次貝茲曲線幾何、德卡斯特里奧細分演算法、非零環繞數規則與解析梯形面積積分、TrueType堆疊式微調虛擬機（Hinting VM）、ClearType五抽頭FIR次像素濾波器與伽瑪校正線性混合，以及GPU時代的多通道有向距離場（MSDF）與Slug直接貝茲著色器。"
 slug: "font-rendering-bezier-curves-hinting-subpixel-antialiasing-signed-distance-fields"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "電腦科學"

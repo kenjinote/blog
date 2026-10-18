@@ -2,7 +2,7 @@
 title: "エッシャーの階段は、なぜ描けるのに立体で作れないのか：不可能図形と「局所と大域」の数学"
 description: "ペンローズの三角形やM.C.エッシャーの無限階段は、どの部分を切り取っても物理的に正しいのに、全体をつなげると三次元空間で破綻する。透視投影が奪う奥行き情報、ロジャー・ペンローズによる層（シーフ）とチェフ・コホモロジーを用いた不可能図形の厳密な定式化、そして杉原厚吉の不可能立体から量子文脈性までを徹底解説する。"
 slug: "impossible-figures-penrose-triangle-escher-sheaf-cohomology-local-global-geometry"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "数学"

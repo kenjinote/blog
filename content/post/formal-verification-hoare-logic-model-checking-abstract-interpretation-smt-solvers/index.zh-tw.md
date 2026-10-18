@@ -2,7 +2,7 @@
 title: "一行程式碼都不執行，為什麼能證明程式「絕對沒有Bug」？形式化驗證與模型檢測的科學"
 description: "從戴克斯特拉的至理名言與萊斯不可判定性定理出發，深入解析弗洛伊德-霍爾邏輯、Z3 SMT求解器、時序邏輯與模型檢測（TLA+）、亞利安5號火箭爆炸催生的抽象解釋理論（伽羅瓦連接），以及互動式定理證明（Coq/Lean 4/CompCert/seL4）如何以數學確定性消除軟體缺陷。"
 slug: "formal-verification-hoare-logic-model-checking-abstract-interpretation-smt-solvers"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "計算機科學"

@@ -2,7 +2,7 @@
 title: "Por que podemos provar matematicamente que um programa é 100% livre de bugs sem executá-lo nem uma única vez? A ciência da verificação formal"
 description: "Da máxima de Dijkstra e do teorema de Rice à lógica de Floyd-Hoare, solucionadores SMT Z3, Model Checking temporal (TLA+), o desastre do foguete Ariane 5, interpretação abstrata (conexões de Galois) e assistentes de prova (Coq, Lean 4, CompCert, seL4)."
 slug: "formal-verification-hoare-logic-model-checking-abstract-interpretation-smt-solvers"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Ciência da Computação"

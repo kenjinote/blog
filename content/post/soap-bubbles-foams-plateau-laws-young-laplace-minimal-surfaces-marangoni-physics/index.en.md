@@ -2,7 +2,7 @@
 title: "Why Soap Bubbles Are Round and Foam Walls Meet at 120 Degrees: The Physics of Surface Tension and Plateau's Laws"
 description: "A rigorous mathematical and physical exploration of soap bubbles and foams: from the thermodynamics of surface tension and the Young-Laplace equation to minimal surfaces, Ostwald ripening, pulmonary surfactant DPPC, Joseph Plateau's laws with Jean Taylor's geometric measure theory proof, the Weaire-Phelan counterexample to Lord Kelvin's conjecture, and self-healing Gibbs-Marangoni elasticity."
 slug: "soap-bubbles-foams-plateau-laws-young-laplace-minimal-surfaces-marangoni-physics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Science"

@@ -2,7 +2,7 @@
 title: "이론상 지수 폭발해야 할 NP-완전 난제를 현대 컴퓨터는 어떻게 순식간에 풀어내는가: SAT 솔버, CDCL, 그리고 상전이 현상"
 description: "쿡-레빈 정리(1971)에 의해 최초로 증명된 NP-완전 문제인 불 충족 가능성 문제(SAT)는 최악 시간 복잡도가 O(2^n)에 달한다. 그러나 현대 산업용 SAT 솔버는 1,000만 개의 변수와 5,000만 개의 절을 가진 반도체 검증 및 패키지 의존성 공식을 단 몇 초 만에 해결한다. 고전적 DPLL의 한계부터 CDCL(충돌 주도 절 학습), 제1 UIP, 2-리터럴 감시법(2WL), VSIDS, 그리고 랜덤 3-SAT의 상전이(α≈4.267)와 200TB 수학 증명까지 완벽 해부한다."
 slug: "sat-solvers-boolean-satisfiability-dpll-cdcl-two-watched-literals-phase-transition"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "컴퓨터 과학"

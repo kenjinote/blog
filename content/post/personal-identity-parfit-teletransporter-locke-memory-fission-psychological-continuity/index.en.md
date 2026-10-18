@@ -2,7 +2,7 @@
 title: "If My Brain Is Scanned and Beamed to Mars, Is That Still 'Me'? Personal Identity and the Philosophy of Survival"
 description: "An in-depth philosophical exploration of personal identity over time: John Locke's memory criterion, Thomas Reid's Brave Officer paradox, Joseph Butler's circularity objection, Animalism, and Derek Parfit's Teletransporter and Fission arguments showing why numerical identity is not what matters in survival."
 slug: "personal-identity-parfit-teletransporter-locke-memory-fission-psychological-continuity"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Philosophy"

@@ -2,7 +2,7 @@
 title: "태양이 보이지 않는 어둠 속에서도 생물은 왜 약 24시간의 리듬을 유지할까: 생체시계와 분자 진동의 과학"
 description: "1729년 미모사 암실 실험과 2017년 노벨상의 전사-번역 피드백 루프(CLOCK:BMAL1 및 PER:CRY)부터 굿윈-골드베터 진동자의 호프 분기 수리모델, 시험관 내에서 DNA 없이 작동하는 시아노박테리아의 KaiABC 단백질 시계, 그리고 아레니우스 법칙을 거스르는 온도 보상성(Q10≈1.0)의 수수께끼까지 일주기 리듬(서카디안 리듬)의 분자생물학·비선형역학·생물물리학을 심층 해설한다."
 slug: "circadian-rhythms-molecular-clock-ttfl-kaiabc-cyanobacteria-temperature-compensation"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "과학"

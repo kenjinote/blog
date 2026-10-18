@@ -2,7 +2,7 @@
 title: "为什么混合样本检测能用更少的次数找出阳性感染者：群测试（Group Testing）与组合搜索的数学原理"
 description: "深入解析群测试（Group Testing）与组合搜索的数学体系：从1943年多夫曼（Dorfman）的二阶段混检突破、香农信息论下界、12枚假币天平问题与自适应二分搜索，到考茨-辛格尔顿析取矩阵（Disjunct Matrix）、有限域里德-所罗门多项式混检设计，以及压缩感知与高通量基因筛查应用。"
 slug: "group-testing-combinatorial-search-dorfman-pooling-disjunct-matrices-information-theory"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "数学与计算机科学"

@@ -2,7 +2,7 @@
 title: "Why Can We Draw Escher's Staircase Yet Never Build It in 3D? Impossible Figures and the Mathematics of Local vs. Global"
 description: "Every individual corner of the Penrose Tribar and M.C. Escher's endless staircase is physically valid, yet gluing them around a closed loop shatters three-dimensional space. Explore how perspective projection erases depth, how Sir Roger Penrose formulated impossible figures using Sheaf Theory and Čech Cohomology, and how Kokichi Sugihara's 'Impossible Motion' sculptures and quantum contextuality share the exact same mathematical architecture."
 slug: "impossible-figures-penrose-triangle-escher-sheaf-cohomology-local-global-geometry"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Mathematics"

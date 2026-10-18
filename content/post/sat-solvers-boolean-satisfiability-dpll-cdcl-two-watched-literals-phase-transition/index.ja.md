@@ -2,7 +2,7 @@
 title: "理論上は爆発するはずの難問を、なぜ現代のコンピュータは瞬時に解けるのか：SATソルバーと論理充足のアルゴリズム"
 description: "クック＝レビンの定理が示した最初のNP完全問題「SAT（充足可能性問題）」は、最悪計算量がO(2^n)で指数爆発するはずの難問である。なぜ現代の産業用SATソルバーは1000万変数・5000万節の論理式を数秒で解き明かすのか？古典的DPLLの限界から、CDCL（矛盾駆動節学習）・第1UIP・2リテラル監視法・VSIDS、そしてランダム3-SATの相転移現象（α≈4.267）と200テラバイトの数学証明まで徹底解剖する。"
 slug: "sat-solvers-boolean-satisfiability-dpll-cdcl-two-watched-literals-phase-transition"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "コンピュータ科学"

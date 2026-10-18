@@ -2,7 +2,7 @@
 title: "영하에서도 물이 얼지 않는 이유: 과냉각과 결정이 탄생하는 순간의 열역학"
 description: "순수한 물은 왜 0°C에서 즉시 얼지 않고 영하 40°C 가까이까지 액체로 존재할 수 있을까? 준안정 상태의 통계열역학, 고전 핵생성 이론(CNT)을 통한 임계 핵 반지름과 자유 에너지 장벽의 수학적 유도, 접촉각 인자와 불균일 핵생성, 충격에 의한 수지상 결정(Dendrite) 성장과 10% 슬러시 법칙, 과열·돌비 및 유리 전이(Tg)까지 심층 해부한다."
 slug: "supercooling-nucleation-thermodynamics-metastable-water-crystallization-physics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "과학"

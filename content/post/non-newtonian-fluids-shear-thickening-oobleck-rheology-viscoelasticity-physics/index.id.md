@@ -2,7 +2,7 @@
 title: "Mengapa Kita Bisa Berlari di Atas Larutan Tepung Maizena: Fisika Fluida Non-Newtonian dan Reologi"
 description: "Mengapa kolam campuran tepung maizena dan air (Oobleck) mengeras seperti beton saat diinjak berlari namun berubah menjadi pasir hisap saat kita berhenti? Pelajari hukum viskositas Newton, model Herschel-Bulkley, hidrokluster, rantai gaya gesek, front pemadatan, reologi darah, efek Weissenberg, bilangan Deborah, dan rompi antipeluru cair."
 slug: "non-newtonian-fluids-shear-thickening-oobleck-rheology-viscoelasticity-physics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Sains"

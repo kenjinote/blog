@@ -2,7 +2,7 @@
 title: "完全不使用锁，多线程如何同时修改同一份数据？无锁编程与ABA问题的科学"
 description: "从互斥锁在超低延迟系统中的优先级反转与锁护航瓶颈出发，深入解析Herlihy共识数层次定理（CAS与LL/SC的普适性）、Treiber无锁栈中臭名昭著的ABA问题内存破坏机制，以及风险指针（Hazard Pointers）、基于纪元的内存回收（EBR）与RCU。"
 slug: "lock-free-programming-compare-and-swap-aba-problem-hazard-pointers-concurrency"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "计算机科学"

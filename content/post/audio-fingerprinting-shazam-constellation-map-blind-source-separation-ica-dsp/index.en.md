@@ -2,7 +2,7 @@
 title: "How Can Shazam Identify Any Song in 3 Seconds Inside a Noisy Cafe? Acoustic Fingerprinting, Constellation Maps, and Blind Source Separation"
 description: "An in-depth mathematical exploration of Avery Wang's Shazam acoustic fingerprinting algorithm (Short-Time Fourier Transform, Gabor-Heisenberg uncertainty, Constellation Map local maxima, 32-bit combinatorial anchor-target hashing, and temporal offset coincidence histograms) alongside the Cocktail Party Problem and Independent Component Analysis (PCA whitening vs. higher-order non-Gaussianity, kurtosis, negentropy, and FastICA)."
 slug: "audio-fingerprinting-shazam-constellation-map-blind-source-separation-ica-dsp"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Computer Science & IT"

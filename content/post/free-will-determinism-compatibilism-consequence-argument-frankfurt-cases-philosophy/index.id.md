@@ -2,7 +2,7 @@
 title: "Jika Segalanya Ditentukan oleh Hukum Fisika, Apakah Manusia Memiliki 'Kehendak Bebas'? Determinisme, Kompatibilisme, dan Tanggung Jawab Moral"
 description: "Investigasi filosofis dan formal mendalam tentang kehendak bebas dan tanggung jawab moral: Iblis Laplace dan determinisme kausal, Argumen Konsekuensi Peter van Inwagen, indeterminisme kuantum dan Argumen Keberuntungan, Argumen Dasar Galen Strawson, David Hume dan kasus Harry Frankfurt, sikap reaktif P.F. Strawson, serta potensial kesiapan Benjamin Libet."
 slug: "free-will-determinism-compatibilism-consequence-argument-frankfurt-cases-philosophy"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Filsafat"

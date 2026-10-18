@@ -2,7 +2,7 @@
 title: "Warum Glühwürmchen und Tiefseewesen ohne Hitze leuchten: Die Quantenchemie der Biolumineszenz und des kalten Lichts"
 description: "Wie lebende Organismen das Plancksche Strahlungsgesetz umgehen, um bei Raumtemperatur sichtbare Photonen mit höchster Quantenausbeute zu erzeugen. Eine fundierte Analyse von Schwarzkörperstrahlung vs. Lumineszenz, Biolumineszenz vs. GFP-Fluoreszenz und BRET, dem vierstufigen Luciferin-Luciferase-Zyklus über 1,2-Dioxetanon (CIEEL-Mechanismus), Farbsteuerung im aktiven Zentrum, Tiefsee-Ökologie sowie AkaBLI-Bildgebung und selbstleuchtenden Pflanzen."
 slug: "bioluminescence-luciferin-luciferase-cold-light-quantum-yield-chemiluminescence"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Wissenschaft"

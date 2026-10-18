@@ -2,7 +2,7 @@
 title: "為什麼僅僅增加一顆恆星，未來的軌道就變得無法求解：三體問題與天體力學深淵"
 description: "從牛頓二體問題的完全可積性與相空間自由度計數出發，深入推導歐拉與拉格朗日的五個平衡點（L1–L5、韋伯太空望遠鏡與木星特洛伊小行星）、龐加萊1889年催生混沌理論的同宿糾纏、8字形週期軌道的變分證明，以及決定太陽系穩定性的KAM定理與Laskar數值積分。"
 slug: "three-body-problem-poincare-non-integrability-lagrange-points-kam-theorem-chaos"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "數學與物理"

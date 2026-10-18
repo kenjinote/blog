@@ -2,7 +2,7 @@
 title: "Cómo calcular sumas y clasificaciones entre varios sin revelar ni un solo bit: Computación Multiparte Segura (MPC) y el problema de los millonarios de Yao"
 description: "Análisis matemático profundo de la Computación Multiparte Segura (MPC): desde la compartición aditiva de secretos y el problema de los millonarios de Andrew Yao hasta el esquema de umbral (t, n) de Shamir mediante interpolación de Lagrange, tripletas de Beaver, transferencia inconsciente (OT), circuitos garbled y aplicaciones reales."
 slug: "secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Ciencias de la Computación y Criptografía"

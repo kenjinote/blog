@@ -2,7 +2,7 @@
 title: "如果掌握了關於顏色的一切物理定律，就能懂得「看見紅色」的體驗嗎？感質與意識的難問題"
 description: "在純黑白房間裡長大的天才神經科學家瑪麗，在徹底掌握人類色覺的所有物理與神經生物學規律後，第一次走出房間看到熟透的紅番茄時，她學到了新的知識嗎？本文深入剖析內格爾的蝙蝠、傑克遜的知識論證、查爾默斯的哲學殭屍與二維模態語義學、物理主義的三大反擊、羅素一元論以及整合資訊理論（IIT）。"
 slug: "qualia-hard-problem-of-consciousness-marys-room-philosophical-zombies-chalmers"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "哲學"

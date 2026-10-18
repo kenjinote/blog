@@ -2,7 +2,7 @@
 title: "明知是虛構的故事，為什麼我們還會真情流淚與恐懼？虛構悖論與想像的哲學"
 description: "圍繞科林·拉德福德（Colin Radford, 1975）提出的「虛構悖論（三個前提的不一致三元組）」，系統剖析情緒認知主義、柯勒律治的「自願擱置懷疑」、肯德爾·沃爾頓（Kendall Walton）的「假裝遊戲（Make-Believe）」理論與準恐懼（Quasi-Fear）、思想理論（Thought Theory）、悲劇悖論、想像性阻抗以及虛構對象的人工物本體論。"
 slug: "paradox-of-fiction-radford-walton-make-believe-quasi-emotions-aesthetics-philosophy"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "哲學與藝術"

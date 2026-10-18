@@ -2,7 +2,7 @@
 title: "Por qué las pompas de jabón son redondas y las paredes de espuma se cruzan a 120 grados: la física de la tensión superficial y las leyes de Plateau"
 description: "Un análisis matemático y físico riguroso de las pompas de jabón y las espumas: desde la termodinámica de la tensión superficial y la ecuación de Young-Laplace hasta las superficies mínimas, la maduración de Ostwald, el surfactante pulmonar DPPC, las leyes de Plateau (120° y 109,47°), la estructura de Weaire-Phelan y la elasticidad autorreparadora de Gibbs-Marangoni."
 slug: "soap-bubbles-foams-plateau-laws-young-laplace-minimal-surfaces-marangoni-physics"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Ciencia"

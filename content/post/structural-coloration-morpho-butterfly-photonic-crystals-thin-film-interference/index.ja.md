@@ -2,7 +2,7 @@
 title: "色素がないのに、なぜモルフォ蝶や玉虫は鮮やかに輝くのか：構造色と光の干渉の物理学"
 description: "モルフォ蝶の翅をすり潰すと茶色い粉になり、アセトンに浸すと瞬時に青色が消えるのはなぜか？薄膜干渉、分布ブラッグ反射器（DBR）、モルフォ蝶の「秩序と乱れの協奏」、そしてマクスウェル方程式が導く3次元フォトニック結晶とバンドギャップまで、数千万年退色しない「構造色（Structural Color）」の波動光学を徹底解剖します。"
 slug: "structural-coloration-morpho-butterfly-photonic-crystals-thin-film-interference"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "科学"

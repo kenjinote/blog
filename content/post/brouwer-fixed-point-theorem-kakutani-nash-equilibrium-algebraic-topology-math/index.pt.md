@@ -2,7 +2,7 @@
 title: "Por que mexer uma xícara de café sempre deixa pelo menos um ponto imóvel: teoremas de ponto fixo e a matemática do equilíbrio"
 description: "Dos milagres cotidianos do teorema do ponto fixo de Brouwer (1911) — a molécula de café imóvel e o mapa amassado — a contraexemplos precisos, três demonstrações clássicas (teorema do valor intermediário, não retração de Borsuk via homologia e teorema de Stokes, lema de Sperner) e a grande hierarquia de Banach, Schauder e Kakutani que fundamenta o equilíbrio de Nash (1950) e o equilíbrio geral de Arrow-Debreu (1954)."
 slug: "brouwer-fixed-point-theorem-kakutani-nash-equilibrium-algebraic-topology-math"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "Matemática"

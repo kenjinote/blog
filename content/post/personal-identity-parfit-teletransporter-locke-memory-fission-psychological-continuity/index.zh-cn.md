@@ -2,7 +2,7 @@
 title: "扫描大脑信息并传送到火星的我，还是“原来的我”吗？人格同一性与生存的哲学"
 description: "深入剖析洛克的记忆理论、里德的勇敢军官悖论、巴特勒的循环论证反驳、身体论与动物主义，以及德里克·帕菲特的火星远程传送器与大脑半球分裂思想实验，揭示从数值同一性向心理连续性（关系R）的哲学革命。"
 slug: "personal-identity-parfit-teletransporter-locke-memory-fission-psychological-continuity"
-date: "2026-10-18T12:00:00+09:00"
+date: "2026-10-18T08:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
   - "哲学"
