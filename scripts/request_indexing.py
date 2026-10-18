@@ -120,6 +120,13 @@ def main():
         except Exception as e:
             print(f"CSVへの書き戻しに失敗しました: {e}")
     else:
+        try:
+            with open(CSV_FILE, 'w', encoding='utf-8', newline='') as f:
+                writer = csv.writer(f)
+                if header:
+                    writer.writerow(header)
+        except Exception as e:
+            pass
         print("すべてのURLの処理が完了しました！")
 
 if __name__ == "__main__":
