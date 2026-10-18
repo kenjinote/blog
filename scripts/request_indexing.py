@@ -78,6 +78,7 @@ def request_indexing(url, session):
         return False
 
 def main():
+    global remaining_rows
     if not os.path.exists(SERVICE_ACCOUNT_FILE):
         print(f"エラー: {SERVICE_ACCOUNT_FILE} が見つかりません。")
         print("Google Cloud ConsoleからサービスアカウントのJSONキーをダウンロードし、配置してください。")
