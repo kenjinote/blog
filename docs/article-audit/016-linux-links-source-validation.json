@@ -1,0 +1,315 @@
+[
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "リーナス・トーバルズ",
+        "url": "/p/biography-linus-torvalds/"
+      },
+      {
+        "term": "UNIX哲学",
+        "url": "/p/philosophy-unix-modular-design/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; depends on batch 015 localized os category definitions.",
+    "updated_sha256": "790446f997b48ad398eaf638eb36ea5d184c322bfd3a74cc63c374874ace8a7a"
+  },
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.en.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Linus Torvalds",
+        "url": "/en/p/biography-linus-torvalds/"
+      },
+      {
+        "term": "UNIX philosophy",
+        "url": "/en/p/philosophy-unix-modular-design/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; depends on batch 015 localized os category definitions.",
+    "updated_sha256": "d2360dcee931cb285337bd5af153a3774fb9bcd4b8c33e46e2224b77323aeb2b"
+  },
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.de.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Linus Torvalds",
+        "url": "/de/p/biography-linus-torvalds/"
+      },
+      {
+        "term": "UNIX-Philosophie",
+        "url": "/de/p/philosophy-unix-modular-design/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; depends on batch 015 localized os category definitions.",
+    "updated_sha256": "5986b5cefb41024295fda20b4bb99bd378d5bcf905531e65ed7fe3cd65d57af0"
+  },
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.fr.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Linus Torvalds",
+        "url": "/fr/p/biography-linus-torvalds/"
+      },
+      {
+        "term": "philosophie UNIX",
+        "url": "/fr/p/philosophy-unix-modular-design/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; depends on batch 015 localized os category definitions.",
+    "updated_sha256": "faef9c9bf6505ac9eb62f64d9d10eeb8f82d40a6363dfa26c12b72dd97c70738"
+  },
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.es.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Linus Torvalds",
+        "url": "/es/p/biography-linus-torvalds/"
+      },
+      {
+        "term": "filosofía UNIX",
+        "url": "/es/p/philosophy-unix-modular-design/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; depends on batch 015 localized os category definitions.",
+    "updated_sha256": "350849cc7487817f4871af0bb91f86d695d9c04bc327de029dc1aa39fb4500ee"
+  },
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.pt.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Linus Torvalds",
+        "url": "/pt/p/biography-linus-torvalds/"
+      },
+      {
+        "term": "Filosofia UNIX",
+        "url": "/pt/p/philosophy-unix-modular-design/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; depends on batch 015 localized os category definitions.",
+    "updated_sha256": "390ebe86f5243835c70e2ef599d92250c3af4751f603f6f0232e74e0547925a1"
+  },
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.id.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Linus Torvalds",
+        "url": "/id/p/biography-linus-torvalds/"
+      },
+      {
+        "term": "Filosofi UNIX",
+        "url": "/id/p/philosophy-unix-modular-design/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; depends on batch 015 localized os category definitions.",
+    "updated_sha256": "2adae22f3e0c5cb68bfa78275369d6afbcda7e94ef7d3e72d558fac207f8fe3d"
+  },
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.ko.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "리누스 토발즈",
+        "url": "/ko/p/biography-linus-torvalds/"
+      },
+      {
+        "term": "'UNIX 철학'",
+        "url": "/ko/p/philosophy-unix-modular-design/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; depends on batch 015 localized os category definitions.",
+    "updated_sha256": "c24845e374fd89c7ff62d99bf91c7ec5f200df15c9fb93291783ae452f30ab2f",
+    "typography_preservation": "Include existing paired single quotes inside link label; isolated Hugo effective-config probe proves exact pre-edit typography."
+  },
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.zh-cn.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "林纳斯·托瓦兹",
+        "url": "/zh-cn/p/biography-linus-torvalds/"
+      },
+      {
+        "term": "UNIX 哲学",
+        "url": "/zh-cn/p/philosophy-unix-modular-design/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; depends on batch 015 localized os category definitions.",
+    "updated_sha256": "6f61eb954043509187c30d82b23652e67a16ac77d1c4b9818add6c95b198e7c3"
+  },
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.zh-tw.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "林納斯·托瓦茲",
+        "url": "/zh-tw/p/biography-linus-torvalds/"
+      },
+      {
+        "term": "UNIX 哲學",
+        "url": "/zh-tw/p/philosophy-unix-modular-design/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; depends on batch 015 localized os category definitions.",
+    "updated_sha256": "98eb1f25a4500848fc3d16b7bf95b3ec7fd8c9ae5d86e1fd11d6362e788eb363"
+  },
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.ru.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Линус Торвальдс",
+        "url": "/ru/p/biography-linus-torvalds/"
+      },
+      {
+        "term": "философию UNIX",
+        "url": "/ru/p/philosophy-unix-modular-design/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; depends on batch 015 localized os category definitions.",
+    "updated_sha256": "c2154949167d9c19fd7eeacc296f398a2ac11749526007f779a5df348f541700"
+  },
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.ar.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "لينوس تورفالدس",
+        "url": "/ar/p/biography-linus-torvalds/"
+      },
+      {
+        "term": "فلسفة UNIX",
+        "url": "/ar/p/philosophy-unix-modular-design/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; depends on batch 015 localized os category definitions.",
+    "updated_sha256": "924e9715007d441044f59e0d1aee0dee4081f5504e9a8159c3f90ec979f498d2"
+  },
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.hi.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "लिनुस टोरवाल्ड्स",
+        "url": "/hi/p/biography-linus-torvalds/"
+      },
+      {
+        "term": "UNIX दर्शन",
+        "url": "/hi/p/philosophy-unix-modular-design/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; depends on batch 015 localized os category definitions.",
+    "updated_sha256": "1a26630f5ab4751cb814810a62f2ec0e8c2a946f15a175b5ac209a7ecdfbc208"
+  }
+]

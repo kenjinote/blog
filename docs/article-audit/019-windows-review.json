@@ -1,0 +1,137 @@
+{
+  "batch": "019-windows-review",
+  "status": "all 13 full bodies and 26 target introductions reviewed; 26 links planned, not applied",
+  "articles": [
+    {
+      "path": "content/post/windows-os-history-architecture/index.ar.md",
+      "source_sha256": "d4e66d4eaa02892cad7a2c92bfcb7b05c3fa83b6946001de53030680f122f37e",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve DOS command example, one Mermaid diagram, bold labels and headings.",
+        "Current software-development/os is appropriate; os labels covered by batch 015. Consider direct NT/virtual-memory/scheduler and registry explainers after target review; avoid linking generic API to unrelated API product comparisons.",
+        "Broad BSOD, registry-size instability, complete protection and compatibility assertions are separate editorial issues; no factual rewrite in this link/category audit."
+      ]
+    },
+    {
+      "path": "content/post/windows-os-history-architecture/index.de.md",
+      "source_sha256": "2a11621fb03e1494bb853bbb3d16864a853099d91bfe1394c6963a605212b219",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve DOS command example, one Mermaid diagram, bold labels and headings.",
+        "Current software-development/os is appropriate; os labels covered by batch 015. Consider direct NT/virtual-memory/scheduler and registry explainers after target review; avoid linking generic API to unrelated API product comparisons.",
+        "Broad BSOD, registry-size instability, complete protection and compatibility assertions are separate editorial issues; no factual rewrite in this link/category audit."
+      ]
+    },
+    {
+      "path": "content/post/windows-os-history-architecture/index.en.md",
+      "source_sha256": "e2157111976135715854c42b742a4cf8a097740e8fb978de1bef57274d2c4158",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve DOS command example, one Mermaid diagram, bold labels and headings.",
+        "Current software-development/os is appropriate; os labels covered by batch 015. Consider direct NT/virtual-memory/scheduler and registry explainers after target review; avoid linking generic API to unrelated API product comparisons.",
+        "Broad BSOD, registry-size instability, complete protection and compatibility assertions are separate editorial issues; no factual rewrite in this link/category audit."
+      ]
+    },
+    {
+      "path": "content/post/windows-os-history-architecture/index.es.md",
+      "source_sha256": "003f4f4cb6f903af4702cf790fb050a4ae695db76d42c9254f7a20255ef71d7b",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve DOS command example, one Mermaid diagram, bold labels and headings.",
+        "Current software-development/os is appropriate; os labels covered by batch 015. Consider direct NT/virtual-memory/scheduler and registry explainers after target review; avoid linking generic API to unrelated API product comparisons.",
+        "Broad BSOD, registry-size instability, complete protection and compatibility assertions are separate editorial issues; no factual rewrite in this link/category audit."
+      ]
+    },
+    {
+      "path": "content/post/windows-os-history-architecture/index.fr.md",
+      "source_sha256": "9b1d3e179b38af8924420a21efe6ea5454334d53595063197693bcfab0307ce0",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve DOS command example, one Mermaid diagram, bold labels and headings.",
+        "Current software-development/os is appropriate; os labels covered by batch 015. Consider direct NT/virtual-memory/scheduler and registry explainers after target review; avoid linking generic API to unrelated API product comparisons.",
+        "Broad BSOD, registry-size instability, complete protection and compatibility assertions are separate editorial issues; no factual rewrite in this link/category audit."
+      ]
+    },
+    {
+      "path": "content/post/windows-os-history-architecture/index.hi.md",
+      "source_sha256": "70d115e43bcbe3fb61d457fd71db9c7cc99fdc0d02d60a865aa0a3ed5ebbb9b2",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve DOS command example, one Mermaid diagram, bold labels and headings.",
+        "Current software-development/os is appropriate; os labels covered by batch 015. Consider direct NT/virtual-memory/scheduler and registry explainers after target review; avoid linking generic API to unrelated API product comparisons.",
+        "Broad BSOD, registry-size instability, complete protection and compatibility assertions are separate editorial issues; no factual rewrite in this link/category audit."
+      ]
+    },
+    {
+      "path": "content/post/windows-os-history-architecture/index.id.md",
+      "source_sha256": "5ddcb721c027f9297024a8dad5bf63e88e94d3103ee3b5d0f7454c0214a242f5",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve DOS command example, one Mermaid diagram, bold labels and headings.",
+        "Current software-development/os is appropriate; os labels covered by batch 015. Consider direct NT/virtual-memory/scheduler and registry explainers after target review; avoid linking generic API to unrelated API product comparisons.",
+        "Broad BSOD, registry-size instability, complete protection and compatibility assertions are separate editorial issues; no factual rewrite in this link/category audit."
+      ]
+    },
+    {
+      "path": "content/post/windows-os-history-architecture/index.ko.md",
+      "source_sha256": "cd5386d7e9d3badbc616d0badff4b70287eb7f7fda82267b691eb91e21dd63d8",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve DOS command example, one Mermaid diagram, bold labels and headings.",
+        "Current software-development/os is appropriate; os labels covered by batch 015. Consider direct NT/virtual-memory/scheduler and registry explainers after target review; avoid linking generic API to unrelated API product comparisons.",
+        "Broad BSOD, registry-size instability, complete protection and compatibility assertions are separate editorial issues; no factual rewrite in this link/category audit."
+      ]
+    },
+    {
+      "path": "content/post/windows-os-history-architecture/index.md",
+      "source_sha256": "3fd98a298e1ac7aaba963fa18839b9df93c47c7ceb770d04dcbed6cd5b94b08b",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve DOS command example, one Mermaid diagram, bold labels and headings.",
+        "Current software-development/os is appropriate; os labels covered by batch 015. Consider direct NT/virtual-memory/scheduler and registry explainers after target review; avoid linking generic API to unrelated API product comparisons.",
+        "Broad BSOD, registry-size instability, complete protection and compatibility assertions are separate editorial issues; no factual rewrite in this link/category audit."
+      ]
+    },
+    {
+      "path": "content/post/windows-os-history-architecture/index.pt.md",
+      "source_sha256": "cbfa3989f6fe0abf19fcdfd8153aa31e2c57eba492927a1b2df0ed18cb448ec1",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve DOS command example, one Mermaid diagram, bold labels and headings.",
+        "Current software-development/os is appropriate; os labels covered by batch 015. Consider direct NT/virtual-memory/scheduler and registry explainers after target review; avoid linking generic API to unrelated API product comparisons.",
+        "Broad BSOD, registry-size instability, complete protection and compatibility assertions are separate editorial issues; no factual rewrite in this link/category audit."
+      ]
+    },
+    {
+      "path": "content/post/windows-os-history-architecture/index.ru.md",
+      "source_sha256": "3f47e80cfd2cb58d080694e008e2b9b554ddd42dd70403a1b69083071fca72de",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve DOS command example, one Mermaid diagram, bold labels and headings.",
+        "Current software-development/os is appropriate; os labels covered by batch 015. Consider direct NT/virtual-memory/scheduler and registry explainers after target review; avoid linking generic API to unrelated API product comparisons.",
+        "Broad BSOD, registry-size instability, complete protection and compatibility assertions are separate editorial issues; no factual rewrite in this link/category audit."
+      ]
+    },
+    {
+      "path": "content/post/windows-os-history-architecture/index.zh-cn.md",
+      "source_sha256": "5c4a5797e584e428c28b2187230f940623674b3ba9dc96a52a2dae157b36f61f",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve DOS command example, one Mermaid diagram, bold labels and headings.",
+        "Current software-development/os is appropriate; os labels covered by batch 015. Consider direct NT/virtual-memory/scheduler and registry explainers after target review; avoid linking generic API to unrelated API product comparisons.",
+        "Broad BSOD, registry-size instability, complete protection and compatibility assertions are separate editorial issues; no factual rewrite in this link/category audit."
+      ]
+    },
+    {
+      "path": "content/post/windows-os-history-architecture/index.zh-tw.md",
+      "source_sha256": "c54638ce203afddc58b235589d5ea0757afe6f6a2009fa51988f4d77e8ffb44c",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve DOS command example, one Mermaid diagram, bold labels and headings.",
+        "Current software-development/os is appropriate; os labels covered by batch 015. Consider direct NT/virtual-memory/scheduler and registry explainers after target review; avoid linking generic API to unrelated API product comparisons.",
+        "Broad BSOD, registry-size instability, complete protection and compatibility assertions are separate editorial issues; no factual rewrite in this link/category audit."
+      ]
+    }
+  ],
+  "target_review": "Virtual memory/paging and Windows registry: first two substantive paragraphs inspected in all 13 languages; direct topical references. Linux CFS excluded for Windows-specific scheduling."
+}

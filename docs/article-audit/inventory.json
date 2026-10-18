@@ -1848,10 +1848,10 @@
       "links_reviewed": true,
       "validation": {
         "unit_tests": 32,
-        "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
-        "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
-        "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
-        "source": "23 updated SHA256 values match independent protected-content validation."
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "013-local-image-final-five",
       "push_status": "pending commit and push"
@@ -1935,10 +1935,10 @@
       "links_reviewed": true,
       "validation": {
         "unit_tests": 32,
-        "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
-        "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
-        "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
-        "source": "23 updated SHA256 values match independent protected-content validation."
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "012-local-image-five-translations",
       "push_status": "pending commit and push"
@@ -1964,10 +1964,10 @@
       "links_reviewed": true,
       "validation": {
         "unit_tests": 32,
-        "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
-        "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
-        "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
-        "source": "23 updated SHA256 values match independent protected-content validation."
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "012-local-image-five-translations",
       "push_status": "pending commit and push"
@@ -1993,10 +1993,10 @@
       "links_reviewed": true,
       "validation": {
         "unit_tests": 32,
-        "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
-        "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
-        "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
-        "source": "23 updated SHA256 values match independent protected-content validation."
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "013-local-image-final-five",
       "push_status": "pending commit and push"
@@ -2022,10 +2022,10 @@
       "links_reviewed": true,
       "validation": {
         "unit_tests": 32,
-        "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
-        "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
-        "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
-        "source": "23 updated SHA256 values match independent protected-content validation."
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "013-local-image-final-five",
       "push_status": "pending commit and push"
@@ -2051,10 +2051,10 @@
       "links_reviewed": true,
       "validation": {
         "unit_tests": 32,
-        "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
-        "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
-        "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
-        "source": "23 updated SHA256 values match independent protected-content validation."
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "013-local-image-final-five",
       "push_status": "pending commit and push"
@@ -2109,10 +2109,10 @@
       "links_reviewed": true,
       "validation": {
         "unit_tests": 32,
-        "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
-        "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
-        "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
-        "source": "23 updated SHA256 values match independent protected-content validation."
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "012-local-image-five-translations",
       "push_status": "pending commit and push"
@@ -2138,10 +2138,10 @@
       "links_reviewed": true,
       "validation": {
         "unit_tests": 32,
-        "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
-        "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
-        "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
-        "source": "23 updated SHA256 values match independent protected-content validation."
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "013-local-image-final-five",
       "push_status": "pending commit and push"
@@ -2167,10 +2167,10 @@
       "links_reviewed": true,
       "validation": {
         "unit_tests": 32,
-        "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
-        "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
-        "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
-        "source": "23 updated SHA256 values match independent protected-content validation."
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "012-local-image-five-translations",
       "push_status": "pending commit and push"
@@ -2196,10 +2196,10 @@
       "links_reviewed": true,
       "validation": {
         "unit_tests": 32,
-        "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
-        "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
-        "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
-        "source": "23 updated SHA256 values match independent protected-content validation."
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "012-local-image-five-translations",
       "push_status": "pending commit and push"
@@ -23972,10 +23972,10 @@
       "links_reviewed": true,
       "validation": {
         "unit_tests": 32,
-        "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
-        "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
-        "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
-        "source": "23 updated SHA256 values match independent protected-content validation."
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
       "push_status": "pending commit and push"
@@ -23999,10 +23999,10 @@
       "links_reviewed": true,
       "validation": {
         "unit_tests": 32,
-        "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
-        "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
-        "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
-        "source": "23 updated SHA256 values match independent protected-content validation."
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
       "push_status": "pending commit and push"
@@ -24026,10 +24026,10 @@
       "links_reviewed": true,
       "validation": {
         "unit_tests": 32,
-        "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
-        "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
-        "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
-        "source": "23 updated SHA256 values match independent protected-content validation."
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
       "push_status": "pending commit and push"
@@ -24053,10 +24053,10 @@
       "links_reviewed": true,
       "validation": {
         "unit_tests": 32,
-        "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
-        "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
-        "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
-        "source": "23 updated SHA256 values match independent protected-content validation."
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
       "push_status": "pending commit and push"
@@ -24080,10 +24080,10 @@
       "links_reviewed": true,
       "validation": {
         "unit_tests": 32,
-        "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
-        "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
-        "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
-        "source": "23 updated SHA256 values match independent protected-content validation."
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
       "push_status": "pending commit and push"
@@ -24107,10 +24107,10 @@
       "links_reviewed": true,
       "validation": {
         "unit_tests": 32,
-        "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
-        "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
-        "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
-        "source": "23 updated SHA256 values match independent protected-content validation."
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
       "push_status": "pending commit and push"
@@ -24134,10 +24134,10 @@
       "links_reviewed": true,
       "validation": {
         "unit_tests": 32,
-        "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
-        "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
-        "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
-        "source": "23 updated SHA256 values match independent protected-content validation."
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
       "push_status": "pending commit and push"
@@ -24161,10 +24161,10 @@
       "links_reviewed": true,
       "validation": {
         "unit_tests": 32,
-        "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
-        "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
-        "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
-        "source": "23 updated SHA256 values match independent protected-content validation."
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
       "push_status": "pending commit and push"
@@ -24188,10 +24188,10 @@
       "links_reviewed": true,
       "validation": {
         "unit_tests": 32,
-        "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
-        "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
-        "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
-        "source": "23 updated SHA256 values match independent protected-content validation."
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
       "push_status": "pending commit and push"
@@ -24215,10 +24215,10 @@
       "links_reviewed": true,
       "validation": {
         "unit_tests": 32,
-        "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
-        "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
-        "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
-        "source": "23 updated SHA256 values match independent protected-content validation."
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
       "push_status": "pending commit and push"
@@ -24242,10 +24242,10 @@
       "links_reviewed": true,
       "validation": {
         "unit_tests": 32,
-        "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
-        "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
-        "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
-        "source": "23 updated SHA256 values match independent protected-content validation."
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
       "push_status": "pending commit and push"
@@ -24269,10 +24269,10 @@
       "links_reviewed": true,
       "validation": {
         "unit_tests": 32,
-        "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
-        "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
-        "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
-        "source": "23 updated SHA256 values match independent protected-content validation."
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
       "push_status": "pending commit and push"
@@ -24296,10 +24296,10 @@
       "links_reviewed": true,
       "validation": {
         "unit_tests": 32,
-        "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
-        "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
-        "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
-        "source": "23 updated SHA256 values match independent protected-content validation."
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
       "push_status": "pending commit and push"
@@ -30312,13 +30312,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "015-android-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/android-os-architecture-history/index.de.md",
@@ -30335,13 +30342,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "015-android-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/android-os-architecture-history/index.en.md",
@@ -30358,13 +30372,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "015-android-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/android-os-architecture-history/index.es.md",
@@ -30381,13 +30402,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "015-android-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/android-os-architecture-history/index.fr.md",
@@ -30404,13 +30432,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "015-android-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/android-os-architecture-history/index.hi.md",
@@ -30427,13 +30462,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "015-android-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/android-os-architecture-history/index.id.md",
@@ -30450,13 +30492,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "015-android-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/android-os-architecture-history/index.ko.md",
@@ -30473,13 +30522,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "015-android-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/android-os-architecture-history/index.md",
@@ -30496,13 +30552,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "015-android-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/android-os-architecture-history/index.pt.md",
@@ -30519,13 +30582,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "015-android-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/android-os-architecture-history/index.ru.md",
@@ -30542,13 +30612,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "015-android-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/android-os-architecture-history/index.zh-cn.md",
@@ -30565,13 +30642,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "015-android-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/android-os-architecture-history/index.zh-tw.md",
@@ -30588,13 +30672,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "015-android-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/antarctica-ice-sheet-ecosystem-polar-exploration-climate-science/index.ar.md",
@@ -144114,7 +144205,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -144137,7 +144228,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -144160,7 +144251,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -144183,7 +144274,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -144206,7 +144297,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -144229,7 +144320,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -144252,7 +144343,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -144275,7 +144366,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -144298,7 +144389,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -144321,7 +144412,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -144344,7 +144435,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -144367,7 +144458,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -144390,7 +144481,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -154785,13 +154876,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "016-linux-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/linux-kernel-history-architecture/index.de.md",
@@ -154808,13 +154906,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "016-linux-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/linux-kernel-history-architecture/index.en.md",
@@ -154831,13 +154936,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "016-linux-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/linux-kernel-history-architecture/index.es.md",
@@ -154854,13 +154966,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "016-linux-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/linux-kernel-history-architecture/index.fr.md",
@@ -154877,13 +154996,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "016-linux-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/linux-kernel-history-architecture/index.hi.md",
@@ -154900,13 +155026,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "016-linux-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/linux-kernel-history-architecture/index.id.md",
@@ -154923,13 +155056,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "016-linux-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/linux-kernel-history-architecture/index.ko.md",
@@ -154946,13 +155086,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "016-linux-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/linux-kernel-history-architecture/index.md",
@@ -154969,13 +155116,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "016-linux-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/linux-kernel-history-architecture/index.pt.md",
@@ -154992,13 +155146,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "016-linux-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/linux-kernel-history-architecture/index.ru.md",
@@ -155015,13 +155176,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "016-linux-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/linux-kernel-history-architecture/index.zh-cn.md",
@@ -155038,13 +155206,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "016-linux-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/linux-kernel-history-architecture/index.zh-tw.md",
@@ -155061,13 +155236,20 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "unit_tests": 32,
+        "hugo": "exit 0; 647754 ms; merged upstream dead0ae1c",
+        "source": "All 49 updated SHA256 values match protected-content validation. Only intended link wrappers/category fields changed.",
+        "browser": "49 before/after comparisons passed; 48 on integrated build and Korean Linux on final build. Exact prose, links, headings, TOC, code, math, Mermaid, images, language links, localized categories, target HTTP200 and mobile overflow preserved.",
+        "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
+      },
+      "batch": "016-linux-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/liouville/index.ar.md",
@@ -158141,7 +158323,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -158164,7 +158346,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -158187,7 +158369,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -158210,7 +158392,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -158233,7 +158415,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -158256,7 +158438,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -158279,7 +158461,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -158302,7 +158484,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -158325,7 +158507,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -158348,7 +158530,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -158371,7 +158553,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -158394,7 +158576,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -158417,7 +158599,7 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
@@ -242431,11 +242613,11 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": "019-windows-review"
     },
     {
       "path": "content/post/windows-os-history-architecture/index.de.md",
@@ -242454,11 +242636,11 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": "019-windows-review"
     },
     {
       "path": "content/post/windows-os-history-architecture/index.en.md",
@@ -242477,11 +242659,11 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": "019-windows-review"
     },
     {
       "path": "content/post/windows-os-history-architecture/index.es.md",
@@ -242500,11 +242682,11 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": "019-windows-review"
     },
     {
       "path": "content/post/windows-os-history-architecture/index.fr.md",
@@ -242523,11 +242705,11 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": "019-windows-review"
     },
     {
       "path": "content/post/windows-os-history-architecture/index.hi.md",
@@ -242546,11 +242728,11 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": "019-windows-review"
     },
     {
       "path": "content/post/windows-os-history-architecture/index.id.md",
@@ -242569,11 +242751,11 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": "019-windows-review"
     },
     {
       "path": "content/post/windows-os-history-architecture/index.ko.md",
@@ -242592,11 +242774,11 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": "019-windows-review"
     },
     {
       "path": "content/post/windows-os-history-architecture/index.md",
@@ -242615,11 +242797,11 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": "019-windows-review"
     },
     {
       "path": "content/post/windows-os-history-architecture/index.pt.md",
@@ -242638,11 +242820,11 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": "019-windows-review"
     },
     {
       "path": "content/post/windows-os-history-architecture/index.ru.md",
@@ -242661,11 +242843,11 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": "019-windows-review"
     },
     {
       "path": "content/post/windows-os-history-architecture/index.zh-cn.md",
@@ -242684,11 +242866,11 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": "019-windows-review"
     },
     {
       "path": "content/post/windows-os-history-architecture/index.zh-tw.md",
@@ -242707,11 +242889,11 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": "019-windows-review"
     },
     {
       "path": "content/post/windows11_msixパッケージ/index.ar.md",

@@ -14,7 +14,7 @@ Em 25 de agosto de 1991, uma mensagem modesta foi postada no grupo de notícias 
 
 > "Hello everybody out there using minix - I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu) for 386(486) AT clones."
 
-O autor desta postagem era Linus Torvalds, então um estudante da Universidade de Helsinque, na Finlândia. Naquela época, o "MINIX", desenvolvido pelo Professor Andrew S. Tanenbaum, era amplamente utilizado para fins educacionais em sistemas operacionais, mas suas funcionalidades e licença eram restritas. Insatisfeito com o design do MINIX, Linus começou a criar um emulador de terminal para aproveitar ao máximo o processador Intel 386 que havia comprado, o que eventualmente se transformou em um kernel completo de sistema operacional (SO).
+O autor desta postagem era [Linus Torvalds](/pt/p/biography-linus-torvalds/), então um estudante da Universidade de Helsinque, na Finlândia. Naquela época, o "MINIX", desenvolvido pelo Professor Andrew S. Tanenbaum, era amplamente utilizado para fins educacionais em sistemas operacionais, mas suas funcionalidades e licença eram restritas. Insatisfeito com o design do MINIX, Linus começou a criar um emulador de terminal para aproveitar ao máximo o processador Intel 386 que havia comprado, o que eventualmente se transformou em um kernel completo de sistema operacional (SO).
 
 O que ele chamou de "apenas um hobby (just a hobby)" cresceu ao longo de mais de 30 anos para se tornar o "Linux", um dos projetos de software mais importantes da história humana, executando 100% dos supercomputadores do mundo, a maioria dos smartphones (Android) e a esmagadora maioria da infraestrutura em nuvem. Este artigo se aprofunda em como o Linux nasceu e quais escolhas arquitetônicas determinaram seu sucesso.
 
@@ -63,7 +63,7 @@ Tanenbaum argumentou que os SOs do futuro deveriam migrar para microkernels de a
 
 # A Herança da Filosofia UNIX: "Everything is a file"
 
-Como o Linux foi desenvolvido como um clone do UNIX, ele herdou a forte "Filosofia UNIX". O conceito mais famoso e importante é o princípio de que "tudo é um arquivo (Everything is a file)".
+Como o Linux foi desenvolvido como um clone do UNIX, ele herdou a forte "[Filosofia UNIX](/pt/p/philosophy-unix-modular-design/)". O conceito mais famoso e importante é o princípio de que "tudo é um arquivo (Everything is a file)".
 
 No Linux, todos os recursos — desde dispositivos de hardware, como discos rígidos, teclados, mouses e impressoras, até informações sobre processos e soquetes de rede — são abstraídos como "arquivos" virtuais.
 

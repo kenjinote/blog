@@ -1,0 +1,1150 @@
+{
+  "headers": [
+    {
+      "route": "/ar/p/android-os-architecture-history/",
+      "language": "ar",
+      "categories": [
+        {
+          "text": "تطوير البرمجيات",
+          "route": "/ar/categories/software-development/"
+        },
+        {
+          "text": "أنظمة التشغيل",
+          "route": "/ar/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/de/p/android-os-architecture-history/",
+      "language": "de",
+      "categories": [
+        {
+          "text": "Softwareentwicklung",
+          "route": "/de/categories/software-development/"
+        },
+        {
+          "text": "Betriebssysteme",
+          "route": "/de/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/en/p/android-os-architecture-history/",
+      "language": "en",
+      "categories": [
+        {
+          "text": "Software Development",
+          "route": "/en/categories/software-development/"
+        },
+        {
+          "text": "Operating Systems",
+          "route": "/en/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/es/p/android-os-architecture-history/",
+      "language": "es",
+      "categories": [
+        {
+          "text": "Desarrollo de software",
+          "route": "/es/categories/software-development/"
+        },
+        {
+          "text": "Sistemas operativos",
+          "route": "/es/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/fr/p/android-os-architecture-history/",
+      "language": "fr",
+      "categories": [
+        {
+          "text": "Développement logiciel",
+          "route": "/fr/categories/software-development/"
+        },
+        {
+          "text": "Systèmes d’exploitation",
+          "route": "/fr/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/hi/p/android-os-architecture-history/",
+      "language": "hi",
+      "categories": [
+        {
+          "text": "सॉफ़्टवेयर विकास",
+          "route": "/hi/categories/software-development/"
+        },
+        {
+          "text": "ऑपरेटिंग सिस्टम",
+          "route": "/hi/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/id/p/android-os-architecture-history/",
+      "language": "id",
+      "categories": [
+        {
+          "text": "Pengembangan Perangkat Lunak",
+          "route": "/id/categories/software-development/"
+        },
+        {
+          "text": "Sistem Operasi",
+          "route": "/id/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/ko/p/android-os-architecture-history/",
+      "language": "ko",
+      "categories": [
+        {
+          "text": "소프트웨어 개발",
+          "route": "/ko/categories/software-development/"
+        },
+        {
+          "text": "운영체제",
+          "route": "/ko/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/p/android-os-architecture-history/",
+      "language": "ja",
+      "categories": [
+        {
+          "text": "ソフトウェア開発",
+          "route": "/categories/software-development/"
+        },
+        {
+          "text": "オペレーティングシステム",
+          "route": "/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/pt/p/android-os-architecture-history/",
+      "language": "pt",
+      "categories": [
+        {
+          "text": "Desenvolvimento de software",
+          "route": "/pt/categories/software-development/"
+        },
+        {
+          "text": "Sistemas operacionais",
+          "route": "/pt/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/ru/p/android-os-architecture-history/",
+      "language": "ru",
+      "categories": [
+        {
+          "text": "Разработка программного обеспечения",
+          "route": "/ru/categories/software-development/"
+        },
+        {
+          "text": "Операционные системы",
+          "route": "/ru/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/zh-cn/p/android-os-architecture-history/",
+      "language": "zh-cn",
+      "categories": [
+        {
+          "text": "软件开发",
+          "route": "/zh-cn/categories/software-development/"
+        },
+        {
+          "text": "操作系统",
+          "route": "/zh-cn/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/zh-tw/p/android-os-architecture-history/",
+      "language": "zh-tw",
+      "categories": [
+        {
+          "text": "軟體開發",
+          "route": "/zh-tw/categories/software-development/"
+        },
+        {
+          "text": "作業系統",
+          "route": "/zh-tw/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/ar/p/ios-architecture-history/",
+      "language": "ar",
+      "categories": [
+        {
+          "text": "تطوير البرمجيات",
+          "route": "/ar/categories/software-development/"
+        },
+        {
+          "text": "أنظمة التشغيل",
+          "route": "/ar/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/de/p/ios-architecture-history/",
+      "language": "de",
+      "categories": [
+        {
+          "text": "Softwareentwicklung",
+          "route": "/de/categories/software-development/"
+        },
+        {
+          "text": "Betriebssysteme",
+          "route": "/de/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/en/p/ios-architecture-history/",
+      "language": "en",
+      "categories": [
+        {
+          "text": "Software Development",
+          "route": "/en/categories/software-development/"
+        },
+        {
+          "text": "Operating Systems",
+          "route": "/en/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/es/p/ios-architecture-history/",
+      "language": "es",
+      "categories": [
+        {
+          "text": "Desarrollo de software",
+          "route": "/es/categories/software-development/"
+        },
+        {
+          "text": "Sistemas operativos",
+          "route": "/es/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/fr/p/ios-architecture-history/",
+      "language": "fr",
+      "categories": [
+        {
+          "text": "Développement logiciel",
+          "route": "/fr/categories/software-development/"
+        },
+        {
+          "text": "Systèmes d’exploitation",
+          "route": "/fr/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/hi/p/ios-architecture-history/",
+      "language": "hi",
+      "categories": [
+        {
+          "text": "सॉफ़्टवेयर विकास",
+          "route": "/hi/categories/software-development/"
+        },
+        {
+          "text": "ऑपरेटिंग सिस्टम",
+          "route": "/hi/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/id/p/ios-architecture-history/",
+      "language": "id",
+      "categories": [
+        {
+          "text": "Pengembangan Perangkat Lunak",
+          "route": "/id/categories/software-development/"
+        },
+        {
+          "text": "Sistem Operasi",
+          "route": "/id/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/ko/p/ios-architecture-history/",
+      "language": "ko",
+      "categories": [
+        {
+          "text": "소프트웨어 개발",
+          "route": "/ko/categories/software-development/"
+        },
+        {
+          "text": "운영체제",
+          "route": "/ko/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/p/ios-architecture-history/",
+      "language": "ja",
+      "categories": [
+        {
+          "text": "ソフトウェア開発",
+          "route": "/categories/software-development/"
+        },
+        {
+          "text": "オペレーティングシステム",
+          "route": "/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/pt/p/ios-architecture-history/",
+      "language": "pt",
+      "categories": [
+        {
+          "text": "Desenvolvimento de software",
+          "route": "/pt/categories/software-development/"
+        },
+        {
+          "text": "Sistemas operacionais",
+          "route": "/pt/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/ru/p/ios-architecture-history/",
+      "language": "ru",
+      "categories": [
+        {
+          "text": "Разработка программного обеспечения",
+          "route": "/ru/categories/software-development/"
+        },
+        {
+          "text": "Операционные системы",
+          "route": "/ru/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/zh-cn/p/ios-architecture-history/",
+      "language": "zh-cn",
+      "categories": [
+        {
+          "text": "软件开发",
+          "route": "/zh-cn/categories/software-development/"
+        },
+        {
+          "text": "操作系统",
+          "route": "/zh-cn/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/zh-tw/p/ios-architecture-history/",
+      "language": "zh-tw",
+      "categories": [
+        {
+          "text": "軟體開發",
+          "route": "/zh-tw/categories/software-development/"
+        },
+        {
+          "text": "作業系統",
+          "route": "/zh-tw/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/ar/p/linux-kernel-history-architecture/",
+      "language": "ar",
+      "categories": [
+        {
+          "text": "تطوير البرمجيات",
+          "route": "/ar/categories/software-development/"
+        },
+        {
+          "text": "أنظمة التشغيل",
+          "route": "/ar/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/de/p/linux-kernel-history-architecture/",
+      "language": "de",
+      "categories": [
+        {
+          "text": "Softwareentwicklung",
+          "route": "/de/categories/software-development/"
+        },
+        {
+          "text": "Betriebssysteme",
+          "route": "/de/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/en/p/linux-kernel-history-architecture/",
+      "language": "en",
+      "categories": [
+        {
+          "text": "Software Development",
+          "route": "/en/categories/software-development/"
+        },
+        {
+          "text": "Operating Systems",
+          "route": "/en/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/es/p/linux-kernel-history-architecture/",
+      "language": "es",
+      "categories": [
+        {
+          "text": "Desarrollo de software",
+          "route": "/es/categories/software-development/"
+        },
+        {
+          "text": "Sistemas operativos",
+          "route": "/es/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/fr/p/linux-kernel-history-architecture/",
+      "language": "fr",
+      "categories": [
+        {
+          "text": "Développement logiciel",
+          "route": "/fr/categories/software-development/"
+        },
+        {
+          "text": "Systèmes d’exploitation",
+          "route": "/fr/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/hi/p/linux-kernel-history-architecture/",
+      "language": "hi",
+      "categories": [
+        {
+          "text": "सॉफ़्टवेयर विकास",
+          "route": "/hi/categories/software-development/"
+        },
+        {
+          "text": "ऑपरेटिंग सिस्टम",
+          "route": "/hi/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/id/p/linux-kernel-history-architecture/",
+      "language": "id",
+      "categories": [
+        {
+          "text": "Pengembangan Perangkat Lunak",
+          "route": "/id/categories/software-development/"
+        },
+        {
+          "text": "Sistem Operasi",
+          "route": "/id/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/ko/p/linux-kernel-history-architecture/",
+      "language": "ko",
+      "categories": [
+        {
+          "text": "소프트웨어 개발",
+          "route": "/ko/categories/software-development/"
+        },
+        {
+          "text": "운영체제",
+          "route": "/ko/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/p/linux-kernel-history-architecture/",
+      "language": "ja",
+      "categories": [
+        {
+          "text": "ソフトウェア開発",
+          "route": "/categories/software-development/"
+        },
+        {
+          "text": "オペレーティングシステム",
+          "route": "/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/pt/p/linux-kernel-history-architecture/",
+      "language": "pt",
+      "categories": [
+        {
+          "text": "Desenvolvimento de software",
+          "route": "/pt/categories/software-development/"
+        },
+        {
+          "text": "Sistemas operacionais",
+          "route": "/pt/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/ru/p/linux-kernel-history-architecture/",
+      "language": "ru",
+      "categories": [
+        {
+          "text": "Разработка программного обеспечения",
+          "route": "/ru/categories/software-development/"
+        },
+        {
+          "text": "Операционные системы",
+          "route": "/ru/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/zh-cn/p/linux-kernel-history-architecture/",
+      "language": "zh-cn",
+      "categories": [
+        {
+          "text": "软件开发",
+          "route": "/zh-cn/categories/software-development/"
+        },
+        {
+          "text": "操作系统",
+          "route": "/zh-cn/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/zh-tw/p/linux-kernel-history-architecture/",
+      "language": "zh-tw",
+      "categories": [
+        {
+          "text": "軟體開發",
+          "route": "/zh-tw/categories/software-development/"
+        },
+        {
+          "text": "作業系統",
+          "route": "/zh-tw/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/ar/p/macos-architecture-history/",
+      "language": "ar",
+      "categories": [
+        {
+          "text": "تطوير البرمجيات",
+          "route": "/ar/categories/software-development/"
+        },
+        {
+          "text": "أنظمة التشغيل",
+          "route": "/ar/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/de/p/macos-architecture-history/",
+      "language": "de",
+      "categories": [
+        {
+          "text": "Softwareentwicklung",
+          "route": "/de/categories/software-development/"
+        },
+        {
+          "text": "Betriebssysteme",
+          "route": "/de/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/en/p/macos-architecture-history/",
+      "language": "en",
+      "categories": [
+        {
+          "text": "Software Development",
+          "route": "/en/categories/software-development/"
+        },
+        {
+          "text": "Operating Systems",
+          "route": "/en/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/es/p/macos-architecture-history/",
+      "language": "es",
+      "categories": [
+        {
+          "text": "Desarrollo de software",
+          "route": "/es/categories/software-development/"
+        },
+        {
+          "text": "Sistemas operativos",
+          "route": "/es/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/fr/p/macos-architecture-history/",
+      "language": "fr",
+      "categories": [
+        {
+          "text": "Développement logiciel",
+          "route": "/fr/categories/software-development/"
+        },
+        {
+          "text": "Systèmes d’exploitation",
+          "route": "/fr/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/hi/p/macos-architecture-history/",
+      "language": "hi",
+      "categories": [
+        {
+          "text": "सॉफ़्टवेयर विकास",
+          "route": "/hi/categories/software-development/"
+        },
+        {
+          "text": "ऑपरेटिंग सिस्टम",
+          "route": "/hi/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/id/p/macos-architecture-history/",
+      "language": "id",
+      "categories": [
+        {
+          "text": "Pengembangan Perangkat Lunak",
+          "route": "/id/categories/software-development/"
+        },
+        {
+          "text": "Sistem Operasi",
+          "route": "/id/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/ko/p/macos-architecture-history/",
+      "language": "ko",
+      "categories": [
+        {
+          "text": "소프트웨어 개발",
+          "route": "/ko/categories/software-development/"
+        },
+        {
+          "text": "운영체제",
+          "route": "/ko/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/p/macos-architecture-history/",
+      "language": "ja",
+      "categories": [
+        {
+          "text": "ソフトウェア開発",
+          "route": "/categories/software-development/"
+        },
+        {
+          "text": "オペレーティングシステム",
+          "route": "/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/pt/p/macos-architecture-history/",
+      "language": "pt",
+      "categories": [
+        {
+          "text": "Desenvolvimento de software",
+          "route": "/pt/categories/software-development/"
+        },
+        {
+          "text": "Sistemas operacionais",
+          "route": "/pt/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/ru/p/macos-architecture-history/",
+      "language": "ru",
+      "categories": [
+        {
+          "text": "Разработка программного обеспечения",
+          "route": "/ru/categories/software-development/"
+        },
+        {
+          "text": "Операционные системы",
+          "route": "/ru/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/zh-cn/p/macos-architecture-history/",
+      "language": "zh-cn",
+      "categories": [
+        {
+          "text": "软件开发",
+          "route": "/zh-cn/categories/software-development/"
+        },
+        {
+          "text": "操作系统",
+          "route": "/zh-cn/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/zh-tw/p/macos-architecture-history/",
+      "language": "zh-tw",
+      "categories": [
+        {
+          "text": "軟體開發",
+          "route": "/zh-tw/categories/software-development/"
+        },
+        {
+          "text": "作業系統",
+          "route": "/zh-tw/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/ar/p/windows-os-history-architecture/",
+      "language": "ar",
+      "categories": [
+        {
+          "text": "تطوير البرمجيات",
+          "route": "/ar/categories/software-development/"
+        },
+        {
+          "text": "أنظمة التشغيل",
+          "route": "/ar/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/de/p/windows-os-history-architecture/",
+      "language": "de",
+      "categories": [
+        {
+          "text": "Softwareentwicklung",
+          "route": "/de/categories/software-development/"
+        },
+        {
+          "text": "Betriebssysteme",
+          "route": "/de/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/en/p/windows-os-history-architecture/",
+      "language": "en",
+      "categories": [
+        {
+          "text": "Software Development",
+          "route": "/en/categories/software-development/"
+        },
+        {
+          "text": "Operating Systems",
+          "route": "/en/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/es/p/windows-os-history-architecture/",
+      "language": "es",
+      "categories": [
+        {
+          "text": "Desarrollo de software",
+          "route": "/es/categories/software-development/"
+        },
+        {
+          "text": "Sistemas operativos",
+          "route": "/es/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/fr/p/windows-os-history-architecture/",
+      "language": "fr",
+      "categories": [
+        {
+          "text": "Développement logiciel",
+          "route": "/fr/categories/software-development/"
+        },
+        {
+          "text": "Systèmes d’exploitation",
+          "route": "/fr/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/hi/p/windows-os-history-architecture/",
+      "language": "hi",
+      "categories": [
+        {
+          "text": "सॉफ़्टवेयर विकास",
+          "route": "/hi/categories/software-development/"
+        },
+        {
+          "text": "ऑपरेटिंग सिस्टम",
+          "route": "/hi/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/id/p/windows-os-history-architecture/",
+      "language": "id",
+      "categories": [
+        {
+          "text": "Pengembangan Perangkat Lunak",
+          "route": "/id/categories/software-development/"
+        },
+        {
+          "text": "Sistem Operasi",
+          "route": "/id/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/ko/p/windows-os-history-architecture/",
+      "language": "ko",
+      "categories": [
+        {
+          "text": "소프트웨어 개발",
+          "route": "/ko/categories/software-development/"
+        },
+        {
+          "text": "운영체제",
+          "route": "/ko/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/p/windows-os-history-architecture/",
+      "language": "ja",
+      "categories": [
+        {
+          "text": "ソフトウェア開発",
+          "route": "/categories/software-development/"
+        },
+        {
+          "text": "オペレーティングシステム",
+          "route": "/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/pt/p/windows-os-history-architecture/",
+      "language": "pt",
+      "categories": [
+        {
+          "text": "Desenvolvimento de software",
+          "route": "/pt/categories/software-development/"
+        },
+        {
+          "text": "Sistemas operacionais",
+          "route": "/pt/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/ru/p/windows-os-history-architecture/",
+      "language": "ru",
+      "categories": [
+        {
+          "text": "Разработка программного обеспечения",
+          "route": "/ru/categories/software-development/"
+        },
+        {
+          "text": "Операционные системы",
+          "route": "/ru/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/zh-cn/p/windows-os-history-architecture/",
+      "language": "zh-cn",
+      "categories": [
+        {
+          "text": "软件开发",
+          "route": "/zh-cn/categories/software-development/"
+        },
+        {
+          "text": "操作系统",
+          "route": "/zh-cn/categories/os/"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "route": "/zh-tw/p/windows-os-history-architecture/",
+      "language": "zh-tw",
+      "categories": [
+        {
+          "text": "軟體開發",
+          "route": "/zh-tw/categories/software-development/"
+        },
+        {
+          "text": "作業系統",
+          "route": "/zh-tw/categories/os/"
+        }
+      ],
+      "ok": true
+    }
+  ],
+  "archives": [
+    {
+      "route": "/categories/os/",
+      "language": "ja",
+      "title": "オペレーティングシステム",
+      "links": [
+        "/p/android-os-architecture-history/",
+        "/p/ios-architecture-history/",
+        "/p/linux-kernel-history-architecture/",
+        "/p/macos-architecture-history/",
+        "/p/windows-os-history-architecture/"
+      ],
+      "ok": true
+    },
+    {
+      "route": "/en/categories/os/",
+      "language": "en",
+      "title": "Operating Systems",
+      "links": [
+        "/en/p/android-os-architecture-history/",
+        "/en/p/ios-architecture-history/",
+        "/en/p/linux-kernel-history-architecture/",
+        "/en/p/macos-architecture-history/",
+        "/en/p/windows-os-history-architecture/"
+      ],
+      "ok": true
+    },
+    {
+      "route": "/de/categories/os/",
+      "language": "de",
+      "title": "Betriebssysteme",
+      "links": [
+        "/de/p/android-os-architecture-history/",
+        "/de/p/ios-architecture-history/",
+        "/de/p/linux-kernel-history-architecture/",
+        "/de/p/macos-architecture-history/",
+        "/de/p/windows-os-history-architecture/"
+      ],
+      "ok": true
+    },
+    {
+      "route": "/fr/categories/os/",
+      "language": "fr",
+      "title": "Systèmes d’exploitation",
+      "links": [
+        "/fr/p/android-os-architecture-history/",
+        "/fr/p/ios-architecture-history/",
+        "/fr/p/linux-kernel-history-architecture/",
+        "/fr/p/macos-architecture-history/",
+        "/fr/p/windows-os-history-architecture/"
+      ],
+      "ok": true
+    },
+    {
+      "route": "/es/categories/os/",
+      "language": "es",
+      "title": "Sistemas operativos",
+      "links": [
+        "/es/p/android-os-architecture-history/",
+        "/es/p/ios-architecture-history/",
+        "/es/p/linux-kernel-history-architecture/",
+        "/es/p/macos-architecture-history/",
+        "/es/p/windows-os-history-architecture/"
+      ],
+      "ok": true
+    },
+    {
+      "route": "/pt/categories/os/",
+      "language": "pt",
+      "title": "Sistemas operacionais",
+      "links": [
+        "/pt/p/android-os-architecture-history/",
+        "/pt/p/ios-architecture-history/",
+        "/pt/p/linux-kernel-history-architecture/",
+        "/pt/p/macos-architecture-history/",
+        "/pt/p/windows-os-history-architecture/"
+      ],
+      "ok": true
+    },
+    {
+      "route": "/id/categories/os/",
+      "language": "id",
+      "title": "Sistem Operasi",
+      "links": [
+        "/id/p/android-os-architecture-history/",
+        "/id/p/ios-architecture-history/",
+        "/id/p/linux-kernel-history-architecture/",
+        "/id/p/macos-architecture-history/",
+        "/id/p/windows-os-history-architecture/"
+      ],
+      "ok": true
+    },
+    {
+      "route": "/ko/categories/os/",
+      "language": "ko",
+      "title": "운영체제",
+      "links": [
+        "/ko/p/android-os-architecture-history/",
+        "/ko/p/ios-architecture-history/",
+        "/ko/p/linux-kernel-history-architecture/",
+        "/ko/p/macos-architecture-history/",
+        "/ko/p/windows-os-history-architecture/"
+      ],
+      "ok": true
+    },
+    {
+      "route": "/zh-cn/categories/os/",
+      "language": "zh-cn",
+      "title": "操作系统",
+      "links": [
+        "/zh-cn/p/android-os-architecture-history/",
+        "/zh-cn/p/ios-architecture-history/",
+        "/zh-cn/p/linux-kernel-history-architecture/",
+        "/zh-cn/p/macos-architecture-history/",
+        "/zh-cn/p/windows-os-history-architecture/"
+      ],
+      "ok": true
+    },
+    {
+      "route": "/zh-tw/categories/os/",
+      "language": "zh-tw",
+      "title": "作業系統",
+      "links": [
+        "/zh-tw/p/android-os-architecture-history/",
+        "/zh-tw/p/ios-architecture-history/",
+        "/zh-tw/p/linux-kernel-history-architecture/",
+        "/zh-tw/p/macos-architecture-history/",
+        "/zh-tw/p/windows-os-history-architecture/"
+      ],
+      "ok": true
+    },
+    {
+      "route": "/ar/categories/os/",
+      "language": "ar",
+      "title": "أنظمة التشغيل",
+      "links": [
+        "/ar/p/android-os-architecture-history/",
+        "/ar/p/ios-architecture-history/",
+        "/ar/p/linux-kernel-history-architecture/",
+        "/ar/p/macos-architecture-history/",
+        "/ar/p/windows-os-history-architecture/"
+      ],
+      "ok": true
+    },
+    {
+      "route": "/hi/categories/os/",
+      "language": "hi",
+      "title": "ऑपरेटिंग सिस्टम",
+      "links": [
+        "/hi/p/android-os-architecture-history/",
+        "/hi/p/ios-architecture-history/",
+        "/hi/p/linux-kernel-history-architecture/",
+        "/hi/p/macos-architecture-history/",
+        "/hi/p/windows-os-history-architecture/"
+      ],
+      "ok": true
+    },
+    {
+      "route": "/ru/categories/os/",
+      "language": "ru",
+      "title": "Операционные системы",
+      "links": [
+        "/ru/p/android-os-architecture-history/",
+        "/ru/p/ios-architecture-history/",
+        "/ru/p/linux-kernel-history-architecture/",
+        "/ru/p/macos-architecture-history/",
+        "/ru/p/windows-os-history-architecture/"
+      ],
+      "ok": true
+    }
+  ]
+}

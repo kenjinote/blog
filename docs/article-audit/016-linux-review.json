@@ -1,6 +1,6 @@
 {
   "batch": "016-linux-review",
-  "status": "all 13 full bodies reviewed; 26 explicit links planned and dry-run passed; not applied",
+  "status": "validated; final Hugo and browser checks passed; push pending",
   "articles": [
     {
       "path": "content/post/linux-kernel-history-architecture/index.md",

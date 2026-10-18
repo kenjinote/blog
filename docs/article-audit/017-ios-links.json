@@ -1,0 +1,293 @@
+{
+  "batch": "017-ios-links",
+  "status": "reviewed; dry-run passed; not applied",
+  "review": "All 13 full bodies read; target introductions and scope reviewed in all languages. Link Steve Jobs biography, macOS architecture/history and SQLite storage explainer at ordinary body mentions. Preserve prose and two Mermaid diagrams. No existing links to unwrap.",
+  "articles": [
+    {
+      "path": "content/post/ios-architecture-history/index.md",
+      "source_sha256": "643ecfbf1f3d996a28156d57b47ccf525fa8b9c1bd9b164b77c233d498489626",
+      "links": [
+        {
+          "term": "スティーブ・ジョブズ",
+          "context": "AppleのモバイルOSである「iOS」は、今日の世界中で数十億台のデバイスを駆動している強力なオペレーティングシステムです。しかし、その根底にあるアーキテクチャは、スティーブ・ジョブズがAppleを離れていた時代に設立したNeXT社の「NeXTSTEP」にまで遡ります。",
+          "target": "content/post/biography-steve-jobs/index.md"
+        },
+        {
+          "term": "macOS",
+          "context": "iOS（初期はiPhone OSと呼ばれました）は、単なる携帯電話向けの軽量OSとしてではなく、Mac OS X（現在のmacOS）のサブセットとして誕生しました。つまり、デスクトップクラスの強力なUnixベースのOSを、手のひらサイズのデバイスに収めるという野心的なプロジェクトだったのです。",
+          "target": "content/post/macos-architecture-history/index.md"
+        },
+        {
+          "term": "SQLite",
+          "context": "*   **Core Data**: アプリケーションのデータモデルを管理し、SQLiteなどのローカルデータベースへの永続化を抽象化するオブジェクトグラフ・フレームワークです。",
+          "target": "content/post/sqlite-internal-architecture/index.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture."
+    },
+    {
+      "path": "content/post/ios-architecture-history/index.en.md",
+      "source_sha256": "bc5149e01599d2334d04fda8820250ead939fbd48d5c420c77b84fdd68fa4187",
+      "links": [
+        {
+          "term": "Steve Jobs",
+          "context": "Apple's mobile OS, \"iOS,\" is a powerful operating system that drives billions of devices worldwide today. However, its underlying architecture traces back to \"NeXTSTEP\" from NeXT, the company Steve Jobs founded during his time away from Apple.",
+          "target": "content/post/biography-steve-jobs/index.en.md"
+        },
+        {
+          "term": "macOS",
+          "context": "iOS (initially called iPhone OS) was not born simply as a lightweight OS for mobile phones, but as a subset of Mac OS X (now macOS). In other words, it was an ambitious project to fit a desktop-class, powerful Unix-based OS into a palm-sized device.",
+          "target": "content/post/macos-architecture-history/index.en.md"
+        },
+        {
+          "term": "SQLite",
+          "context": "*   **Core Data**: An object graph framework that manages an application's data model and abstracts persistence to local databases such as SQLite.",
+          "target": "content/post/sqlite-internal-architecture/index.en.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture."
+    },
+    {
+      "path": "content/post/ios-architecture-history/index.de.md",
+      "source_sha256": "2d78bb25d8c45c03e9fe328e90482ea69f17a0de7ae3d6cc937d92edaa2e7969",
+      "links": [
+        {
+          "term": "Steve Jobs",
+          "context": "Apples mobiles Betriebssystem „iOS“ ist ein leistungsstarkes Betriebssystem, das heute weltweit Milliarden von Geräten antreibt. Die zugrunde liegende Architektur geht jedoch auf „NeXTSTEP“ zurück, ein Betriebssystem, das von NeXT entwickelt wurde, dem Unternehmen, das Steve Jobs während seiner Abwesenheit von Apple gründete.",
+          "target": "content/post/biography-steve-jobs/index.de.md"
+        },
+        {
+          "term": "macOS",
+          "context": "iOS (anfangs als iPhone OS bezeichnet) wurde nicht nur als leichtgewichtiges Betriebssystem für Mobiltelefone konzipiert, sondern als Teilmenge von Mac OS X (dem heutigen macOS). Es handelte sich um ein ambitioniertes Projekt, das darauf abzielte, ein leistungsstarkes, Unix-basiertes Betriebssystem der Desktop-Klasse in ein handtellergroßes Gerät zu integrieren.",
+          "target": "content/post/macos-architecture-history/index.de.md"
+        },
+        {
+          "term": "SQLite",
+          "context": "*   **Core Data**: Ein Objektgraphen-Framework, das das Datenmodell der Anwendung verwaltet und die Persistenz in einer lokalen Datenbank wie SQLite abstrahiert.",
+          "target": "content/post/sqlite-internal-architecture/index.de.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture."
+    },
+    {
+      "path": "content/post/ios-architecture-history/index.fr.md",
+      "source_sha256": "55103bbcb0dab2d6986c78c9a49bb5cc994e37522702c1a3666bc8f09480af68",
+      "links": [
+        {
+          "term": "Steve Jobs",
+          "context": "\"iOS\", le système d'exploitation mobile d'Apple, est un puissant système d'exploitation qui anime des milliards d'appareils dans le monde aujourd'hui. Cependant, son architecture sous-jacente remonte à \"NeXTSTEP\" de la société NeXT, fondée par Steve Jobs à l'époque où il avait quitté Apple.",
+          "target": "content/post/biography-steve-jobs/index.fr.md"
+        },
+        {
+          "term": "macOS",
+          "context": "iOS (initialement appelé iPhone OS) n'est pas né simplement comme un OS léger pour les téléphones portables, mais comme un sous-ensemble de Mac OS X (actuellement macOS). En d'autres termes, il s'agissait d'un projet ambitieux visant à intégrer un puissant OS basé sur Unix de classe bureau dans un appareil tenant dans la paume de la main.",
+          "target": "content/post/macos-architecture-history/index.fr.md"
+        },
+        {
+          "term": "SQLite",
+          "context": "*   **Core Data** : Un framework de graphe d'objets qui gère le modèle de données de l'application et abstrait la persistance vers des bases de données locales telles que SQLite.",
+          "target": "content/post/sqlite-internal-architecture/index.fr.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture."
+    },
+    {
+      "path": "content/post/ios-architecture-history/index.es.md",
+      "source_sha256": "99bf3657bf2e04e6e7a04431f3f9194451410337eb1be890d697405bc541de22",
+      "links": [
+        {
+          "term": "Steve Jobs",
+          "context": "El sistema operativo móvil de Apple, \"iOS\", es un potente sistema operativo que hoy en día impulsa miles de millones de dispositivos en todo el mundo. Sin embargo, su arquitectura subyacente se remonta a \"NeXTSTEP\" de NeXT, la compañía fundada por Steve Jobs durante su ausencia de Apple.",
+          "target": "content/post/biography-steve-jobs/index.es.md"
+        },
+        {
+          "term": "macOS",
+          "context": "iOS (originalmente llamado iPhone OS) no nació simplemente como un sistema operativo ligero para teléfonos móviles, sino como un subconjunto de Mac OS X (ahora macOS). En otras palabras, fue un proyecto ambicioso para empaquetar un potente sistema operativo basado en Unix de clase de escritorio en un dispositivo del tamaño de la palma de la mano.",
+          "target": "content/post/macos-architecture-history/index.es.md"
+        },
+        {
+          "term": "SQLite",
+          "context": "*   **Core Data**: Un framework de grafos de objetos que gestiona el modelo de datos de la aplicación y abstrae la persistencia en bases de datos locales como SQLite.",
+          "target": "content/post/sqlite-internal-architecture/index.es.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture."
+    },
+    {
+      "path": "content/post/ios-architecture-history/index.pt.md",
+      "source_sha256": "e2cf4d1ccfaaf199056a3c53388a3afb1d68e3cc225427392f6a11f067cea55c",
+      "links": [
+        {
+          "term": "Steve Jobs",
+          "context": "O \"iOS\", o sistema operacional móvel da Apple, é um poderoso sistema operacional que impulsiona bilhões de dispositivos em todo o mundo hoje. No entanto, a sua arquitetura subjacente remonta ao \"NeXTSTEP\" da NeXT, empresa fundada por Steve Jobs durante o período em que esteve fora da Apple.",
+          "target": "content/post/biography-steve-jobs/index.pt.md"
+        },
+        {
+          "term": "macOS",
+          "context": "O iOS (inicialmente chamado de iPhone OS) não nasceu simplesmente como um sistema operacional leve para telefones celulares, mas como um subconjunto do Mac OS X (atualmente macOS). Ou seja, foi um projeto ambicioso para encaixar um poderoso sistema operacional baseado em Unix de classe de desktop em um dispositivo que cabe na palma da sua mão.",
+          "target": "content/post/macos-architecture-history/index.pt.md"
+        },
+        {
+          "term": "SQLite",
+          "context": "* **Core Data**: Um framework de gráfico de objetos que gerencia o modelo de dados de um aplicativo e abstrai a persistência para bancos de dados locais, como SQLite.",
+          "target": "content/post/sqlite-internal-architecture/index.pt.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture."
+    },
+    {
+      "path": "content/post/ios-architecture-history/index.id.md",
+      "source_sha256": "4efed2322aab86c7f77ea7d079d7d26933d0e71df54899f2837d9c88c8044ee3",
+      "links": [
+        {
+          "term": "Steve Jobs",
+          "context": "\"iOS\", sistem operasi seluler Apple, adalah sistem operasi kuat yang menggerakkan miliaran perangkat di seluruh dunia saat ini. Namun, arsitektur yang mendasarinya dapat ditelusuri kembali ke \"NeXTSTEP\" milik NeXT, perusahaan yang didirikan oleh Steve Jobs selama masa ketidakhadirannya dari Apple.",
+          "target": "content/post/biography-steve-jobs/index.id.md"
+        },
+        {
+          "term": "macOS",
+          "context": "iOS (awalnya disebut iPhone OS) lahir tidak sekadar sebagai OS ringan untuk ponsel, melainkan sebagai bagian (subset) dari Mac OS X (sekarang macOS). Dengan kata lain, ini adalah proyek ambisius untuk memuat OS berbasis Unix sekelas desktop yang tangguh ke dalam perangkat seukuran telapak tangan.",
+          "target": "content/post/macos-architecture-history/index.id.md"
+        },
+        {
+          "term": "SQLite",
+          "context": "*   **Core Data**: Framework object-graph yang mengelola model data aplikasi dan mengabstraksikan persistensi ke database lokal seperti SQLite.",
+          "target": "content/post/sqlite-internal-architecture/index.id.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture."
+    },
+    {
+      "path": "content/post/ios-architecture-history/index.ko.md",
+      "source_sha256": "172add73ff1324bd954e510d90d7a46008af3b10e0fb603b3a176347d7b60469",
+      "links": [
+        {
+          "term": "스티브 잡스",
+          "context": "Apple의 모바일 OS인 'iOS'는 오늘날 전 세계 수십억 대의 기기를 구동하고 있는 강력한 운영 체제입니다. 하지만 그 근저에 있는 아키텍처는 스티브 잡스가 Apple을 떠나 있던 시절 설립한 NeXT사의 'NeXTSTEP'까지 거슬러 올라갑니다.",
+          "target": "content/post/biography-steve-jobs/index.ko.md"
+        },
+        {
+          "term": "macOS",
+          "context": "iOS(초기에는 iPhone OS라고 불렸습니다)는 단순한 휴대전화용 경량 OS가 아니라, Mac OS X(현재의 macOS)의 서브셋으로 탄생했습니다. 즉, 데스크톱 수준의 강력한 Unix 기반 OS를 손바닥 만한 기기에 담으려는 야심 찬 프로젝트였던 것입니다.",
+          "target": "content/post/macos-architecture-history/index.ko.md"
+        },
+        {
+          "term": "SQLite",
+          "context": "*   **Core Data**: 애플리케이션의 데이터 모델을 관리하고 SQLite와 같은 로컬 데이터베이스에 대한 영속화를 추상화하는 객체 그래프 프레임워크입니다.",
+          "target": "content/post/sqlite-internal-architecture/index.ko.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture."
+    },
+    {
+      "path": "content/post/ios-architecture-history/index.zh-cn.md",
+      "source_sha256": "4e0a270a51afcebe053145b5db82d3f36ccd1660a94331b78b4bc6645acfa2ab",
+      "links": [
+        {
+          "term": "史蒂夫·乔布斯",
+          "context": "Apple 的移动操作系统“iOS”是一个强大的操作系统，如今驱动着全球数十亿台设备。然而，其底层架构可以追溯到史蒂夫·乔布斯离开 Apple 期间创立的 NeXT 公司的“NeXTSTEP”。",
+          "target": "content/post/biography-steve-jobs/index.zh-cn.md"
+        },
+        {
+          "term": "macOS",
+          "context": "iOS（最初称为 iPhone OS）并非仅仅作为一个针对手机的轻量级操作系统诞生，而是作为 Mac OS X（现在的 macOS）的子集而诞生。换句话说，这是一个将桌面级强大的基于 Unix 的操作系统放入手掌大小设备中的野心勃勃的项目。",
+          "target": "content/post/macos-architecture-history/index.zh-cn.md"
+        },
+        {
+          "term": "SQLite",
+          "context": "*   **Core Data**：一个对象图框架，用于管理应用程序的数据模型，并抽象化到本地数据库（如 SQLite）的持久化。",
+          "target": "content/post/sqlite-internal-architecture/index.zh-cn.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture."
+    },
+    {
+      "path": "content/post/ios-architecture-history/index.zh-tw.md",
+      "source_sha256": "d1d28f61d1eb439ce2cb4b42a12970ea48f854f9fe055f9e2e1c0121feaad776",
+      "links": [
+        {
+          "term": "史蒂夫·賈伯斯",
+          "context": "Apple 的行動作業系統「iOS」是如今驅動全球數十億台裝置的強大作業系統。然而，其底層架構可以追溯至史蒂夫·賈伯斯（Steve Jobs）離開 Apple 期間所創立的 NeXT 公司的「NeXTSTEP」。",
+          "target": "content/post/biography-steve-jobs/index.zh-tw.md"
+        },
+        {
+          "term": "macOS",
+          "context": "iOS（早期稱為 iPhone OS）並非僅僅作為一款針對手機的輕量級作業系統而誕生，而是作為 Mac OS X（現為 macOS）的子集（subset）應運而生。也就是說，這是一項將桌面級強大的 Unix 基礎作業系統，放入手掌大小裝置中的野心勃勃的專案。",
+          "target": "content/post/macos-architecture-history/index.zh-tw.md"
+        },
+        {
+          "term": "SQLite",
+          "context": "*   **Core Data**：用來管理應用程式的資料模型，並將 SQLite 等本機資料庫的持久化操作予以抽象化的物件圖框架（Object graph framework）。",
+          "target": "content/post/sqlite-internal-architecture/index.zh-tw.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture."
+    },
+    {
+      "path": "content/post/ios-architecture-history/index.ar.md",
+      "source_sha256": "78d1690ca94a37408e935ce35be8a5b3db7f3c5c396594898b2d5c053c387646",
+      "links": [
+        {
+          "term": "ستيف جوبز",
+          "context": "نظام التشغيل المحمول \"iOS\" من Apple هو نظام تشغيل قوي يشغل مليارات الأجهزة حول العالم اليوم. ومع ذلك، فإن البنية التحتية الأساسية له تعود إلى \"NeXTSTEP\" الخاص بشركة NeXT، والتي أسسها ستيف جوبز خلال فترة ابتعاده عن Apple.",
+          "target": "content/post/biography-steve-jobs/index.ar.md"
+        },
+        {
+          "term": "macOS",
+          "context": "لم يولد iOS (والذي كان يُعرف في البداية باسم iPhone OS) كنظام تشغيل خفيف الوزن مخصص للهواتف المحمولة فحسب، بل ظهر كمجموعة فرعية من نظام Mac OS X (المعروف حالياً بـ macOS). وبعبارة أخرى، كان مشروعاً طموحاً يهدف إلى وضع نظام تشغيل قوي يعتمد على Unix بمستوى أنظمة سطح المكتب في جهاز بحجم راحة اليد.",
+          "target": "content/post/macos-architecture-history/index.ar.md"
+        },
+        {
+          "term": "SQLite",
+          "context": "*   **Core Data**: إطار عمل يعتمد على الرسم البياني للكائنات (Object Graph)، يقوم بإدارة نموذج بيانات التطبيق وتجريد عملية التخزين المستمر (Persisting) إلى قواعد بيانات محلية مثل SQLite.",
+          "target": "content/post/sqlite-internal-architecture/index.ar.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture."
+    },
+    {
+      "path": "content/post/ios-architecture-history/index.hi.md",
+      "source_sha256": "9194c2f792e56e1396c05f1710e0ecfd3bb124c70751982e2760c4b1b79759c9",
+      "links": [
+        {
+          "term": "स्टीव जॉब्स",
+          "context": "Apple का मोबाइल OS, \"iOS\", एक शक्तिशाली ऑपरेटिंग सिस्टम है जो आज दुनिया भर में अरबों उपकरणों को संचालित कर रहा है। हालाँकि, इसके अंतर्निहित आर्किटेक्चर की जड़ें \"NeXTSTEP\" तक जाती हैं, जिसे स्टीव जॉब्स ने Apple से दूर रहने के दौरान स्थापित की गई कंपनी NeXT में विकसित किया था।",
+          "target": "content/post/biography-steve-jobs/index.hi.md"
+        },
+        {
+          "term": "macOS",
+          "context": "iOS (शुरुआत में इसे iPhone OS कहा जाता था) का जन्म केवल मोबाइल फोन के लिए एक हल्के OS के रूप में नहीं हुआ था, बल्कि Mac OS X (अब macOS) के एक सबसेट के रूप में हुआ था। दूसरे शब्दों में, यह डेस्कटॉप-क्लास के शक्तिशाली यूनिक्स-आधारित OS को एक हथेली के आकार के डिवाइस में फिट करने का एक महत्वाकांक्षी प्रोजेक्ट था।",
+          "target": "content/post/macos-architecture-history/index.hi.md"
+        },
+        {
+          "term": "SQLite",
+          "context": "*   **Core Data**: एक ऑब्जेक्ट ग्राफ़ फ्रेमवर्क जो एप्लिकेशन के डेटा मॉडल को प्रबंधित करता है और SQLite जैसे स्थानीय डेटाबेस में परसिस्टेंस (persistence) को एब्स्ट्रेक्ट करता है।",
+          "target": "content/post/sqlite-internal-architecture/index.hi.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture."
+    },
+    {
+      "path": "content/post/ios-architecture-history/index.ru.md",
+      "source_sha256": "6771a0f2c2e28b658dc56f481e202347135546552f34e14b35b713453f5cebd4",
+      "links": [
+        {
+          "term": "Стивом Джобсом",
+          "context": "Мобильная ОС Apple, «iOS», — это мощная операционная система, которая сегодня работает на миллиардах устройств по всему миру. Однако её базовая архитектура восходит к «NeXTSTEP» компании NeXT, основанной Стивом Джобсом в период его ухода из Apple.",
+          "target": "content/post/biography-steve-jobs/index.ru.md"
+        },
+        {
+          "term": "macOS",
+          "context": "iOS (первоначально называвшаяся iPhone OS) создавалась не просто как легковесная ОС для мобильных телефонов, а как подмножество Mac OS X (ныне macOS). Иными словами, это был амбициозный проект по переносу мощной Unix-подобной ОС десктопного класса на устройство размером с ладонь.",
+          "target": "content/post/macos-architecture-history/index.ru.md"
+        },
+        {
+          "term": "SQLite",
+          "context": "*   **Core Data**: Фреймворк объектного графа, который управляет моделью данных приложения и абстрагирует их сохранение в локальные базы данных, такие как SQLite.",
+          "target": "content/post/sqlite-internal-architecture/index.ru.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture."
+    }
+  ]
+}

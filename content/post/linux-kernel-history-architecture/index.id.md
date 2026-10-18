@@ -14,7 +14,7 @@ Pada 25 Agustus 1991, sebuah pesan sederhana diposting di newsgroup `comp.os.min
 
 > "Hello everybody out there using minix - I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu) for 386(486) AT clones."
 
-Penulis postingan tersebut adalah Linus Torvalds, seorang mahasiswa di Universitas Helsinki, Finlandia saat itu. Pada masa itu, "MINIX" yang dikembangkan oleh Profesor Andrew S. Tanenbaum banyak digunakan untuk mempelajari OS. Namun, karena ditujukan untuk tujuan pendidikan, fungsinya terbatas dan lisensinya memiliki pembatasan. Linus tidak puas dengan desain MINIX dan mulai membuat terminal emulator untuk memanfaatkan sepenuhnya prosesor Intel 386 yang ia beli, yang pada akhirnya berkembang menjadi kernel sistem operasi (OS) yang lengkap.
+Penulis postingan tersebut adalah [Linus Torvalds](/id/p/biography-linus-torvalds/), seorang mahasiswa di Universitas Helsinki, Finlandia saat itu. Pada masa itu, "MINIX" yang dikembangkan oleh Profesor Andrew S. Tanenbaum banyak digunakan untuk mempelajari OS. Namun, karena ditujukan untuk tujuan pendidikan, fungsinya terbatas dan lisensinya memiliki pembatasan. Linus tidak puas dengan desain MINIX dan mulai membuat terminal emulator untuk memanfaatkan sepenuhnya prosesor Intel 386 yang ia beli, yang pada akhirnya berkembang menjadi kernel sistem operasi (OS) yang lengkap.
 
 Proyek yang ia sebut "hanya hobi (just a hobby)" ini, setelah lebih dari 30 tahun, telah berkembang menjadi "Linux", salah satu proyek perangkat lunak terpenting dalam sejarah umat manusia yang menjalankan 100% superkomputer dunia, sebagian besar ponsel cerdas (Android), dan mayoritas infrastruktur cloud. Artikel ini akan menggali secara mendalam bagaimana Linux lahir dan pilihan arsitektur apa yang menentukan keberhasilannya.
 
@@ -63,7 +63,7 @@ Tanenbaum berargumen bahwa OS masa depan harus beralih ke mikrokernel yang sanga
 
 # Pewarisan Filosofi UNIX: "Everything is a file"
 
-Karena Linux dikembangkan sebagai klon UNIX, ia mewarisi "Filosofi UNIX" yang kuat. Konsep yang paling terkenal dan penting di dalamnya adalah prinsip "semuanya adalah file (Everything is a file)".
+Karena Linux dikembangkan sebagai klon UNIX, ia mewarisi "[Filosofi UNIX](/id/p/philosophy-unix-modular-design/)" yang kuat. Konsep yang paling terkenal dan penting di dalamnya adalah prinsip "semuanya adalah file (Everything is a file)".
 
 Di Linux, segala sumber daya, mulai dari perangkat keras seperti hard drive, keyboard, mouse, printer, hingga informasi proses dan soket jaringan, diabstraksikan sebagai "file" virtual.
 

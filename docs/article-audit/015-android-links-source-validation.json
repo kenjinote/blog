@@ -1,0 +1,314 @@
+[
+  {
+    "path": "content/post/android-os-architecture-history/index.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Linuxカーネル",
+        "url": "/p/linux-kernel-history-architecture/"
+      },
+      {
+        "term": "ガベージコレクション",
+        "url": "/p/garbage-collection-history-zgc/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject.",
+    "updated_sha256": "dda8b2b5418456330af6bea0e6242e44f4ba2d4a4a1588d862efcc2f9f8939ce"
+  },
+  {
+    "path": "content/post/android-os-architecture-history/index.en.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Linux kernel",
+        "url": "/en/p/linux-kernel-history-architecture/"
+      },
+      {
+        "term": "Garbage Collection",
+        "url": "/en/p/garbage-collection-history-zgc/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject.",
+    "updated_sha256": "061dea96f21b493313e873f4f9bcb2fbdefa1b844c8e2a5d0f7c2b7f8e3fca31"
+  },
+  {
+    "path": "content/post/android-os-architecture-history/index.de.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Linux-Kernel",
+        "url": "/de/p/linux-kernel-history-architecture/"
+      },
+      {
+        "term": "Garbage Collection",
+        "url": "/de/p/garbage-collection-history-zgc/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject.",
+    "updated_sha256": "0b91472fdb4310a6fef1612491671f18eaaee5f7bdf2b1680d5e4ac1907c4e59"
+  },
+  {
+    "path": "content/post/android-os-architecture-history/index.fr.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "noyau Linux",
+        "url": "/fr/p/linux-kernel-history-architecture/"
+      },
+      {
+        "term": "ramasse-miettes",
+        "url": "/fr/p/garbage-collection-history-zgc/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject.",
+    "updated_sha256": "20d339933bf7fd8a3a7d8e32906360cb8f3513e2a5100a3873a4173dd6fb7016"
+  },
+  {
+    "path": "content/post/android-os-architecture-history/index.es.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "kernel de Linux",
+        "url": "/es/p/linux-kernel-history-architecture/"
+      },
+      {
+        "term": "recolección de basura",
+        "url": "/es/p/garbage-collection-history-zgc/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject.",
+    "updated_sha256": "056fbeb0d2cbab385c757f597d0c670f22f9328f0cf21f24c8e24d22502ba146"
+  },
+  {
+    "path": "content/post/android-os-architecture-history/index.pt.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "kernel do Linux",
+        "url": "/pt/p/linux-kernel-history-architecture/"
+      },
+      {
+        "term": "Garbage Collection",
+        "url": "/pt/p/garbage-collection-history-zgc/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject.",
+    "updated_sha256": "e88f31abca4c09e976062aa136892de41c9f9a0af72e259b5ba1025abb9aaddc"
+  },
+  {
+    "path": "content/post/android-os-architecture-history/index.id.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "kernel Linux",
+        "url": "/id/p/linux-kernel-history-architecture/"
+      },
+      {
+        "term": "Pengumpulan Sampah",
+        "url": "/id/p/garbage-collection-history-zgc/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject.",
+    "updated_sha256": "bcce4f94d2ec557c2d0a246e8323015027d38727296f9394d09f50229b5cdcf6"
+  },
+  {
+    "path": "content/post/android-os-architecture-history/index.ko.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "리눅스 커널",
+        "url": "/ko/p/linux-kernel-history-architecture/"
+      },
+      {
+        "term": "가비지 컬렉션",
+        "url": "/ko/p/garbage-collection-history-zgc/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject.",
+    "updated_sha256": "5204d39d26884317ba0ea6f22aea92fb60d0fe12f13c9069385fcb4813d23d2f"
+  },
+  {
+    "path": "content/post/android-os-architecture-history/index.zh-cn.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Linux内核",
+        "url": "/zh-cn/p/linux-kernel-history-architecture/"
+      },
+      {
+        "term": "垃圾回收",
+        "url": "/zh-cn/p/garbage-collection-history-zgc/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject.",
+    "updated_sha256": "68c63468de9c7de1f6bc842698a45fbef7dccfe3e46f12c358da264daa51e861"
+  },
+  {
+    "path": "content/post/android-os-architecture-history/index.zh-tw.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Linux 核心",
+        "url": "/zh-tw/p/linux-kernel-history-architecture/"
+      },
+      {
+        "term": "垃圾回收",
+        "url": "/zh-tw/p/garbage-collection-history-zgc/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject.",
+    "updated_sha256": "e503a4941b17ba28d9141814fa437e6df856f383c487313d3b53b712b4f1cad0"
+  },
+  {
+    "path": "content/post/android-os-architecture-history/index.ar.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "نواة لينكس",
+        "url": "/ar/p/linux-kernel-history-architecture/"
+      },
+      {
+        "term": "جمع القمامة",
+        "url": "/ar/p/garbage-collection-history-zgc/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject.",
+    "updated_sha256": "2e64afe3737ce3bb6cd01c950f069936832878e284065a7c142efb3b253b5922"
+  },
+  {
+    "path": "content/post/android-os-architecture-history/index.hi.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Linux कर्नेल",
+        "url": "/hi/p/linux-kernel-history-architecture/"
+      },
+      {
+        "term": "गार्बेज कलेक्शन",
+        "url": "/hi/p/garbage-collection-history-zgc/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject.",
+    "updated_sha256": "c2b32d8137b6322f1a8420ad69200a3b0b4132c9baaa31766ab28c8ef564eb51"
+  },
+  {
+    "path": "content/post/android-os-architecture-history/index.ru.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "ядро Linux",
+        "url": "/ru/p/linux-kernel-history-architecture/"
+      },
+      {
+        "term": "сборки мусора",
+        "url": "/ru/p/garbage-collection-history-zgc/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject.",
+    "updated_sha256": "43ff70b35c05bc28b43443559ff9f108436d216046c7a6b2d34d5436c6c1e166"
+  }
+]

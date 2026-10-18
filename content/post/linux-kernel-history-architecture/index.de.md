@@ -14,7 +14,7 @@ Am 25. August 1991 wurde eine bescheidene Nachricht in der Newsgruppe `comp.os.m
 
 > "Hello everybody out there using minix - I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu) for 386(486) AT clones."
 
-Der Autor dieses Beitrags war Linus Torvalds, damals Student an der Universität Helsinki in Finnland. Zu dieser Zeit hatte "MINIX", das von Professor Andrew S. Tanenbaum entwickelt und weithin zum Erlernen von Betriebssystemen verwendet wurde, aufgrund seines Bildungszwecks eingeschränkte Funktionen und Lizenzbeschränkungen. Unzufrieden mit dem Design von MINIX begann Linus mit der Entwicklung eines Terminal-Emulators, der die Fähigkeiten des von ihm gekauften Intel 386-Prozessors voll ausschöpfen konnte, was sich schließlich zum Kernel eines vollständigen Betriebssystems (OS) entwickelte.
+Der Autor dieses Beitrags war [Linus Torvalds](/de/p/biography-linus-torvalds/), damals Student an der Universität Helsinki in Finnland. Zu dieser Zeit hatte "MINIX", das von Professor Andrew S. Tanenbaum entwickelt und weithin zum Erlernen von Betriebssystemen verwendet wurde, aufgrund seines Bildungszwecks eingeschränkte Funktionen und Lizenzbeschränkungen. Unzufrieden mit dem Design von MINIX begann Linus mit der Entwicklung eines Terminal-Emulators, der die Fähigkeiten des von ihm gekauften Intel 386-Prozessors voll ausschöpfen konnte, was sich schließlich zum Kernel eines vollständigen Betriebssystems (OS) entwickelte.
 
 Dieses Projekt, das er als "nur ein Hobby" (just a hobby) bezeichnete, wuchs in über 30 Jahren zu einem der wichtigsten Softwareprojekte in der Geschichte der Menschheit heran: "Linux", das 100% der Supercomputer der Welt, die Mehrheit der Smartphones (Android) und die überwältigende Mehrheit der Cloud-Infrastruktur antreibt. In diesem Artikel werden wir tief eintauchen, wie Linux geboren wurde und welche architektonischen Entscheidungen seinen Erfolg bestimmten.
 
@@ -63,7 +63,7 @@ Tanenbaum argumentierte, dass zukünftige Betriebssysteme zu hochzuverlässigen 
 
 # Erbe der UNIX-Philosophie: "Everything is a file"
 
-Da Linux als UNIX-Klon entwickelt wurde, erbte es die mächtige "UNIX-Philosophie". Das bekannteste und wichtigste Konzept ist das Prinzip, dass "alles eine Datei ist" (Everything is a file).
+Da Linux als UNIX-Klon entwickelt wurde, erbte es die mächtige "[UNIX-Philosophie](/de/p/philosophy-unix-modular-design/)". Das bekannteste und wichtigste Konzept ist das Prinzip, dass "alles eine Datei ist" (Everything is a file).
 
 In Linux werden alle Ressourcen, von Hardwaregeräten wie Festplatten, Tastaturen, Mäusen und Druckern bis hin zu Prozessinformationen und Netzwerk-Sockets, als virtuelle "Dateien" abstrahiert.
 

@@ -1,0 +1,236 @@
+[
+  {
+    "path": "content/post/ios-architecture-history/index.ar.md",
+    "source_sha256": "78d1690ca94a37408e935ce35be8a5b3db7f3c5c396594898b2d5c053c387646",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/ios-architecture-history/index.de.md",
+    "source_sha256": "2d78bb25d8c45c03e9fe328e90482ea69f17a0de7ae3d6cc937d92edaa2e7969",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/ios-architecture-history/index.en.md",
+    "source_sha256": "bc5149e01599d2334d04fda8820250ead939fbd48d5c420c77b84fdd68fa4187",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/ios-architecture-history/index.es.md",
+    "source_sha256": "99bf3657bf2e04e6e7a04431f3f9194451410337eb1be890d697405bc541de22",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/ios-architecture-history/index.fr.md",
+    "source_sha256": "55103bbcb0dab2d6986c78c9a49bb5cc994e37522702c1a3666bc8f09480af68",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/ios-architecture-history/index.hi.md",
+    "source_sha256": "9194c2f792e56e1396c05f1710e0ecfd3bb124c70751982e2760c4b1b79759c9",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/ios-architecture-history/index.id.md",
+    "source_sha256": "4efed2322aab86c7f77ea7d079d7d26933d0e71df54899f2837d9c88c8044ee3",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/ios-architecture-history/index.ko.md",
+    "source_sha256": "172add73ff1324bd954e510d90d7a46008af3b10e0fb603b3a176347d7b60469",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/ios-architecture-history/index.md",
+    "source_sha256": "643ecfbf1f3d996a28156d57b47ccf525fa8b9c1bd9b164b77c233d498489626",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/ios-architecture-history/index.pt.md",
+    "source_sha256": "e2cf4d1ccfaaf199056a3c53388a3afb1d68e3cc225427392f6a11f067cea55c",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/ios-architecture-history/index.ru.md",
+    "source_sha256": "6771a0f2c2e28b658dc56f481e202347135546552f34e14b35b713453f5cebd4",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/ios-architecture-history/index.zh-cn.md",
+    "source_sha256": "4e0a270a51afcebe053145b5db82d3f36ccd1660a94331b78b4bc6645acfa2ab",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/ios-architecture-history/index.zh-tw.md",
+    "source_sha256": "d1d28f61d1eb439ce2cb4b42a12970ea48f854f9fe055f9e2e1c0121feaad776",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/macos-architecture-history/index.ar.md",
+    "source_sha256": "66c4d693049b63df687a9e9a670d3d0e3a2d9beefed6b6c8c1631f4bfde936de",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/macos-architecture-history/index.de.md",
+    "source_sha256": "6e3d6ee772cc11742a4660902561e75b2521183c98e972c6f18f4172509d0e07",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/macos-architecture-history/index.en.md",
+    "source_sha256": "2a68474a1ee8d02999a9677ebfb1081ea1b2b0b5b4c767280bf78209ff618271",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/macos-architecture-history/index.es.md",
+    "source_sha256": "8fca35465e786e14772076704a014fb7d435d899b22abe30196c257eea012354",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/macos-architecture-history/index.fr.md",
+    "source_sha256": "75558279460714e08e0efff7f228528ec42c7198e4ab2f22f6cdf4c06a760fe6",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/macos-architecture-history/index.hi.md",
+    "source_sha256": "c6370b5c699ca3e56aa34e0a7e3b616838a8bf0e799e307f4adef676540ad074",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/macos-architecture-history/index.id.md",
+    "source_sha256": "3333ff2fb9411d12c18d86bd0577c4a7b3af932e22e9f7ea7b7661bb3aeb715c",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/macos-architecture-history/index.ko.md",
+    "source_sha256": "c9af9c57c23255cc5e243359fb71ae179dc29b45e2fb25cf6eb4bf7ae8f6f8f3",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/macos-architecture-history/index.md",
+    "source_sha256": "4f65e9cc64f3770eb91b45ff789e209a5ff08494c03e5243690845207580f694",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/macos-architecture-history/index.pt.md",
+    "source_sha256": "adaa5705cf8485385243e527f195454bb4441b7954ca5d1f763ed97d3c3b171f",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/macos-architecture-history/index.ru.md",
+    "source_sha256": "509b5c6c55d6387b02b4d04aa36adaf8ab5d94a0cb39162a071799c5c240c487",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/macos-architecture-history/index.zh-cn.md",
+    "source_sha256": "d7ba7b60b44e3be022febee63b715f03564841f81c4f124a828b35d2a2914088",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/macos-architecture-history/index.zh-tw.md",
+    "source_sha256": "7145b9836f261e2892ab8cc060a7ce1ac5791c7959b83676fd7c02e25c96b4ab",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/windows-os-history-architecture/index.ar.md",
+    "source_sha256": "d4e66d4eaa02892cad7a2c92bfcb7b05c3fa83b6946001de53030680f122f37e",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/windows-os-history-architecture/index.de.md",
+    "source_sha256": "2a11621fb03e1494bb853bbb3d16864a853099d91bfe1394c6963a605212b219",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/windows-os-history-architecture/index.en.md",
+    "source_sha256": "e2157111976135715854c42b742a4cf8a097740e8fb978de1bef57274d2c4158",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/windows-os-history-architecture/index.es.md",
+    "source_sha256": "003f4f4cb6f903af4702cf790fb050a4ae695db76d42c9254f7a20255ef71d7b",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/windows-os-history-architecture/index.fr.md",
+    "source_sha256": "9b1d3e179b38af8924420a21efe6ea5454334d53595063197693bcfab0307ce0",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/windows-os-history-architecture/index.hi.md",
+    "source_sha256": "70d115e43bcbe3fb61d457fd71db9c7cc99fdc0d02d60a865aa0a3ed5ebbb9b2",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/windows-os-history-architecture/index.id.md",
+    "source_sha256": "5ddcb721c027f9297024a8dad5bf63e88e94d3103ee3b5d0f7454c0214a242f5",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/windows-os-history-architecture/index.ko.md",
+    "source_sha256": "cd5386d7e9d3badbc616d0badff4b70287eb7f7fda82267b691eb91e21dd63d8",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/windows-os-history-architecture/index.md",
+    "source_sha256": "3fd98a298e1ac7aaba963fa18839b9df93c47c7ceb770d04dcbed6cd5b94b08b",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/windows-os-history-architecture/index.pt.md",
+    "source_sha256": "cbfa3989f6fe0abf19fcdfd8153aa31e2c57eba492927a1b2df0ed18cb448ec1",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/windows-os-history-architecture/index.ru.md",
+    "source_sha256": "3f47e80cfd2cb58d080694e008e2b9b554ddd42dd70403a1b69083071fca72de",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/windows-os-history-architecture/index.zh-cn.md",
+    "source_sha256": "5c4a5797e584e428c28b2187230f940623674b3ba9dc96a52a2dae157b36f61f",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  },
+  {
+    "path": "content/post/windows-os-history-architecture/index.zh-tw.md",
+    "source_sha256": "c54638ce203afddc58b235589d5ea0757afe6f6a2009fa51988f4d77e8ffb44c",
+    "matches_pre_category_commit": true,
+    "full_body_review_not_implied": true
+  }
+]

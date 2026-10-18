@@ -1,6 +1,6 @@
 {
   "batch": "013-local-image-final-five",
-  "status": "validated; awaiting commit and push",
+  "status": "validated; final Hugo and browser checks passed; push pending",
   "review": "Full bodies reviewed in ko/id/ru/ar/hi. GPU-memory target introductions and Markov-chain definitions inspected in matching languages. Retain categories; unwrap Flux confusion plus Arabic path-length mislink; add eight relevant references. Do not apply while batch 012 full build runs.",
   "articles": [
     {

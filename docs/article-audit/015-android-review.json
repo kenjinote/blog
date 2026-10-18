@@ -1,6 +1,6 @@
 {
   "batch": "015-android-review",
-  "status": "review only; not edited",
+  "status": "validated; final Hugo and browser checks passed; push pending",
   "articles": [
     {
       "path": "content/post/android-os-architecture-history/index.md",
@@ -155,8 +155,8 @@
     "status": "proposal recorded; not applied; validate all affected category headers when implemented"
   },
   "target_review": {
-    "linux-kernel-history-architecture": "Japanese introduction and monolithic/microkernel architecture section inspected; appropriate for Android Linux-kernel term. Other target languages pending.",
-    "garbage-collection-history-zgc": "Japanese introduction inspected; covers automatic memory reclamation and GC algorithm progression, appropriate for Android GC list item. Other target languages pending.",
+    "linux-kernel-history-architecture": "Introductions/scope reviewed in all 13 languages; same-language published Linux-kernel references appropriate.",
+    "garbage-collection-history-zgc": "Introductions/scope reviewed in all 13 languages; same-language published automatic-memory-management references appropriate.",
     "compiler-optimization-ssa": "Japanese introduction inspected; specializes in SSA optimization, not directly JIT/AOT lifecycle. Prefer more directly matching references; no link selected yet.",
     "licensing": "No dedicated licensing explainer found by title search. Do not link to unrelated Windows activation or image-license posts."
   }

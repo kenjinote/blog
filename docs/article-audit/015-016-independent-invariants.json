@@ -1,0 +1,159 @@
+[
+  {
+    "path": "content/post/android-os-architecture-history/index.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "dda8b2b5418456330af6bea0e6242e44f4ba2d4a4a1588d862efcc2f9f8939ce"
+  },
+  {
+    "path": "content/post/android-os-architecture-history/index.en.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "061dea96f21b493313e873f4f9bcb2fbdefa1b844c8e2a5d0f7c2b7f8e3fca31"
+  },
+  {
+    "path": "content/post/android-os-architecture-history/index.de.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "0b91472fdb4310a6fef1612491671f18eaaee5f7bdf2b1680d5e4ac1907c4e59"
+  },
+  {
+    "path": "content/post/android-os-architecture-history/index.fr.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "20d339933bf7fd8a3a7d8e32906360cb8f3513e2a5100a3873a4173dd6fb7016"
+  },
+  {
+    "path": "content/post/android-os-architecture-history/index.es.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "056fbeb0d2cbab385c757f597d0c670f22f9328f0cf21f24c8e24d22502ba146"
+  },
+  {
+    "path": "content/post/android-os-architecture-history/index.pt.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "e88f31abca4c09e976062aa136892de41c9f9a0af72e259b5ba1025abb9aaddc"
+  },
+  {
+    "path": "content/post/android-os-architecture-history/index.id.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "bcce4f94d2ec557c2d0a246e8323015027d38727296f9394d09f50229b5cdcf6"
+  },
+  {
+    "path": "content/post/android-os-architecture-history/index.ko.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "5204d39d26884317ba0ea6f22aea92fb60d0fe12f13c9069385fcb4813d23d2f"
+  },
+  {
+    "path": "content/post/android-os-architecture-history/index.zh-cn.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "68c63468de9c7de1f6bc842698a45fbef7dccfe3e46f12c358da264daa51e861"
+  },
+  {
+    "path": "content/post/android-os-architecture-history/index.zh-tw.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "e503a4941b17ba28d9141814fa437e6df856f383c487313d3b53b712b4f1cad0"
+  },
+  {
+    "path": "content/post/android-os-architecture-history/index.ar.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "2e64afe3737ce3bb6cd01c950f069936832878e284065a7c142efb3b253b5922"
+  },
+  {
+    "path": "content/post/android-os-architecture-history/index.hi.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "c2b32d8137b6322f1a8420ad69200a3b0b4132c9baaa31766ab28c8ef564eb51"
+  },
+  {
+    "path": "content/post/android-os-architecture-history/index.ru.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "43ff70b35c05bc28b43443559ff9f108436d216046c7a6b2d34d5436c6c1e166"
+  },
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "790446f997b48ad398eaf638eb36ea5d184c322bfd3a74cc63c374874ace8a7a"
+  },
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.en.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "d2360dcee931cb285337bd5af153a3774fb9bcd4b8c33e46e2224b77323aeb2b"
+  },
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.de.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "5986b5cefb41024295fda20b4bb99bd378d5bcf905531e65ed7fe3cd65d57af0"
+  },
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.fr.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "faef9c9bf6505ac9eb62f64d9d10eeb8f82d40a6363dfa26c12b72dd97c70738"
+  },
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.es.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "350849cc7487817f4871af0bb91f86d695d9c04bc327de029dc1aa39fb4500ee"
+  },
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.pt.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "390ebe86f5243835c70e2ef599d92250c3af4751f603f6f0232e74e0547925a1"
+  },
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.id.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "2adae22f3e0c5cb68bfa78275369d6afbcda7e94ef7d3e72d558fac207f8fe3d"
+  },
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.ko.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "c24845e374fd89c7ff62d99bf91c7ec5f200df15c9fb93291783ae452f30ab2f",
+    "typography_preserving_wrapper": true
+  },
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.zh-cn.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "6f61eb954043509187c30d82b23652e67a16ac77d1c4b9818add6c95b198e7c3"
+  },
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.zh-tw.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "98eb1f25a4500848fc3d16b7bf95b3ec7fd8c9ae5d86e1fd11d6362e788eb363"
+  },
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.ru.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "c2154949167d9c19fd7eeacc296f398a2ac11749526007f779a5df348f541700"
+  },
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.ar.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "924e9715007d441044f59e0d1aee0dee4081f5504e9a8159c3f90ec979f498d2"
+  },
+  {
+    "path": "content/post/linux-kernel-history-architecture/index.hi.md",
+    "only_planned_link_wrappers_added": true,
+    "protected_material_unchanged": true,
+    "updated_sha256": "1a26630f5ab4751cb814810a62f2ec0e8c2a946f15a175b5ac209a7ecdfbc208"
+  }
+]

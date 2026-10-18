@@ -1,0 +1,228 @@
+{
+  "batch": "018-macos-links",
+  "status": "reviewed; dry-run passed; not applied",
+  "review": "All 13 full bodies read. Link Jobs biography and OOP fundamentals at ordinary body/list mentions. Same-language target introductions and scope reviewed. Avoid forced links from binary translation to generic compiler optimization or ARM/RISC-V comparison. Preserve all prose and two Mermaid diagrams.",
+  "articles": [
+    {
+      "path": "content/post/macos-architecture-history/index.md",
+      "source_sha256": "4f65e9cc64f3770eb91b45ff789e209a5ff08494c03e5243690845207580f694",
+      "links": [
+        {
+          "term": "スティーブ・ジョブズ",
+          "context": "Appleは次世代OSの開発において、自社開発プロジェクト（Copland）の失敗を経て、スティーブ・ジョブズが設立したNeXT社を買収するという歴史的な決断を下しました。NeXTの主力製品であった「NeXTSTEP」こそが、Mac OS Xの基盤となります。",
+          "target": "content/post/biography-steve-jobs/index.md"
+        },
+        {
+          "term": "オブジェクト指向API",
+          "context": "2. **Cocoa**: NeXTSTEPから継承された、Objective-Cベースの純粋なオブジェクト指向API。",
+          "target": "content/post/object-oriented-programming-oop-solid-principles/index.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture."
+    },
+    {
+      "path": "content/post/macos-architecture-history/index.en.md",
+      "source_sha256": "2a68474a1ee8d02999a9677ebfb1081ea1b2b0b5b4c767280bf78209ff618271",
+      "links": [
+        {
+          "term": "Steve Jobs",
+          "context": "In developing their next-generation OS, following the failure of their in-house project (Copland), Apple made the historic decision to acquire NeXT, a company founded by Steve Jobs. NeXT's flagship product, \"NeXTSTEP,\" became the foundation of Mac OS X.",
+          "target": "content/post/biography-steve-jobs/index.en.md"
+        },
+        {
+          "term": "object-oriented",
+          "context": "2. **Cocoa**: A pure object-oriented API based on Objective-C, inherited directly from NeXTSTEP.",
+          "target": "content/post/object-oriented-programming-oop-solid-principles/index.en.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture."
+    },
+    {
+      "path": "content/post/macos-architecture-history/index.de.md",
+      "source_sha256": "6e3d6ee772cc11742a4660902561e75b2521183c98e972c6f18f4172509d0e07",
+      "links": [
+        {
+          "term": "Steve Jobs",
+          "context": "Bei der Entwicklung des Betriebssystems der nächsten Generation traf Apple nach dem Scheitern des internen Entwicklungsprojekts (Copland) die historische Entscheidung, das von Steve Jobs gegründete Unternehmen NeXT zu übernehmen. Das Hauptprodukt von NeXT, 'NeXTSTEP', sollte die Grundlage für Mac OS X bilden.",
+          "target": "content/post/biography-steve-jobs/index.de.md"
+        },
+        {
+          "term": "objektorientierte",
+          "context": "2. **Cocoa**: Eine reine, objektorientierte API basierend auf Objective-C, die aus NeXTSTEP übernommen wurde.",
+          "target": "content/post/object-oriented-programming-oop-solid-principles/index.de.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture."
+    },
+    {
+      "path": "content/post/macos-architecture-history/index.fr.md",
+      "source_sha256": "75558279460714e08e0efff7f228528ec42c7198e4ab2f22f6cdf4c06a760fe6",
+      "links": [
+        {
+          "term": "Steve Jobs",
+          "context": "Lors du développement de son OS de nouvelle génération, après l'échec de son projet interne (Copland), Apple a pris la décision historique de racheter NeXT, la société fondée par Steve Jobs. C'est le produit phare de NeXT, « NeXTSTEP », qui servira de base à Mac OS X.",
+          "target": "content/post/biography-steve-jobs/index.fr.md"
+        },
+        {
+          "term": "orientée objet",
+          "context": "2. **Cocoa** : L'API héritée de NeXTSTEP, purement orientée objet et basée sur Objective-C.",
+          "target": "content/post/object-oriented-programming-oop-solid-principles/index.fr.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture."
+    },
+    {
+      "path": "content/post/macos-architecture-history/index.es.md",
+      "source_sha256": "8fca35465e786e14772076704a014fb7d435d899b22abe30196c257eea012354",
+      "links": [
+        {
+          "term": "Steve Jobs",
+          "context": "En el desarrollo de su sistema operativo de próxima generación, y tras el fracaso de su proyecto interno (Copland), Apple tomó la histórica decisión de adquirir NeXT, la empresa fundada por Steve Jobs. El producto principal de NeXT, \"NeXTSTEP\", se convertiría en la base de Mac OS X.",
+          "target": "content/post/biography-steve-jobs/index.es.md"
+        },
+        {
+          "term": "orientada a objetos",
+          "context": "2. **Cocoa**: Una API puramente orientada a objetos basada en Objective-C, heredada de NeXTSTEP.",
+          "target": "content/post/object-oriented-programming-oop-solid-principles/index.es.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture."
+    },
+    {
+      "path": "content/post/macos-architecture-history/index.pt.md",
+      "source_sha256": "adaa5705cf8485385243e527f195454bb4441b7954ca5d1f763ed97d3c3b171f",
+      "links": [
+        {
+          "term": "Steve Jobs",
+          "context": "No desenvolvimento de seu sistema operacional de próxima geração, a Apple tomou a decisão histórica de adquirir a NeXT, empresa fundada por Steve Jobs, após o fracasso de seu próprio projeto de desenvolvimento (Copland). O principal produto da NeXT, o \"NeXTSTEP\", tornaria-se a base do Mac OS X.",
+          "target": "content/post/biography-steve-jobs/index.pt.md"
+        },
+        {
+          "term": "orientada a objetos",
+          "context": "2. **Cocoa**: Uma API orientada a objetos pura baseada em Objective-C, herdada do NeXTSTEP.",
+          "target": "content/post/object-oriented-programming-oop-solid-principles/index.pt.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture."
+    },
+    {
+      "path": "content/post/macos-architecture-history/index.id.md",
+      "source_sha256": "3333ff2fb9411d12c18d86bd0577c4a7b3af932e22e9f7ea7b7661bb3aeb715c",
+      "links": [
+        {
+          "term": "Steve Jobs",
+          "context": "Dalam pengembangan OS generasi berikutnya, setelah kegagalan proyek internal (Copland), Apple membuat keputusan bersejarah untuk mengakuisisi NeXT, perusahaan yang didirikan oleh Steve Jobs. Produk andalan NeXT, 'NeXTSTEP', menjadi fondasi Mac OS X.",
+          "target": "content/post/biography-steve-jobs/index.id.md"
+        },
+        {
+          "term": "berorientasi objek",
+          "context": "2. **Cocoa**: API berorientasi objek murni berbasis Objective-C, diwarisi dari NeXTSTEP.",
+          "target": "content/post/object-oriented-programming-oop-solid-principles/index.id.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture."
+    },
+    {
+      "path": "content/post/macos-architecture-history/index.ko.md",
+      "source_sha256": "c9af9c57c23255cc5e243359fb71ae179dc29b45e2fb25cf6eb4bf7ae8f6f8f3",
+      "links": [
+        {
+          "term": "스티브 잡스",
+          "context": "Apple은 차세대 OS 개발에 있어, 자체 개발 프로젝트(Copland)의 실패를 겪은 후 스티브 잡스가 설립한 NeXT사를 인수한다는 역사적인 결단을 내렸습니다. NeXT의 주력 제품이었던 'NeXTSTEP'이야말로 Mac OS X의 기반이 됩니다.",
+          "target": "content/post/biography-steve-jobs/index.ko.md"
+        },
+        {
+          "term": "객체 지향",
+          "context": "2. **Cocoa**: NeXTSTEP에서 계승된 Objective-C 기반의 순수 객체 지향 API.",
+          "target": "content/post/object-oriented-programming-oop-solid-principles/index.ko.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture."
+    },
+    {
+      "path": "content/post/macos-architecture-history/index.zh-cn.md",
+      "source_sha256": "d7ba7b60b44e3be022febee63b715f03564841f81c4f124a828b35d2a2914088",
+      "links": [
+        {
+          "term": "史蒂夫·乔布斯",
+          "context": "在下一代 OS 的开发中，Apple 经历了自主开发项目（Copland）的失败，随后做出了历史性的决定——收购史蒂夫·乔布斯创立的 NeXT 公司。NeXT 的核心产品“NeXTSTEP”正是后来 Mac OS X 的基础。",
+          "target": "content/post/biography-steve-jobs/index.zh-cn.md"
+        },
+        {
+          "term": "面向对象",
+          "context": "2. **Cocoa**: 继承自 NeXTSTEP 的基于 Objective-C 的纯面向对象 API。",
+          "target": "content/post/object-oriented-programming-oop-solid-principles/index.zh-cn.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture."
+    },
+    {
+      "path": "content/post/macos-architecture-history/index.zh-tw.md",
+      "source_sha256": "7145b9836f261e2892ab8cc060a7ce1ac5791c7959b83676fd7c02e25c96b4ab",
+      "links": [
+        {
+          "term": "Steve Jobs",
+          "context": "Apple 在開發次世代 OS 時，經歷了內部開發專案 (Copland) 的失敗，隨後做出了收購由 Steve Jobs 創立的 NeXT 公司的歷史性決定。NeXT 的主力產品「NeXTSTEP」正是 Mac OS X 的基礎。",
+          "target": "content/post/biography-steve-jobs/index.zh-tw.md"
+        },
+        {
+          "term": "物件導向",
+          "context": "2. **Cocoa**：繼承自 NeXTSTEP，基於 Objective-C 的純物件導向 API。",
+          "target": "content/post/object-oriented-programming-oop-solid-principles/index.zh-tw.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture."
+    },
+    {
+      "path": "content/post/macos-architecture-history/index.ar.md",
+      "source_sha256": "66c4d693049b63df687a9e9a670d3d0e3a2d9beefed6b6c8c1631f4bfde936de",
+      "links": [
+        {
+          "term": "ستيف جوبز",
+          "context": "عند تطوير نظام التشغيل من الجيل التالي، وبعد فشل مشروع التطوير الداخلي (Copland)، اتخذت Apple القرار التاريخي بالاستحواذ على شركة NeXT، التي أسسها ستيف جوبز. أصبح \"NeXTSTEP\"، المنتج الرئيسي لشركة NeXT، الأساس لنظام Mac OS X.",
+          "target": "content/post/biography-steve-jobs/index.ar.md"
+        },
+        {
+          "term": "كائنية التوجه",
+          "context": "2. **Cocoa**: واجهة برمجة تطبيقات كائنية التوجه (Object-oriented) بحتة مبنية على لغة Objective-C، موروثة من NeXTSTEP.",
+          "target": "content/post/object-oriented-programming-oop-solid-principles/index.ar.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture."
+    },
+    {
+      "path": "content/post/macos-architecture-history/index.hi.md",
+      "source_sha256": "c6370b5c699ca3e56aa34e0a7e3b616838a8bf0e799e307f4adef676540ad074",
+      "links": [
+        {
+          "term": "स्टीव जॉब्स",
+          "context": "अगली पीढ़ी के OS के विकास में, अपने इन-हाउस प्रोजेक्ट (Copland) की विफलता के बाद, Apple ने एक ऐतिहासिक निर्णय लिया और स्टीव जॉब्स (Steve Jobs) द्वारा स्थापित कंपनी NeXT का अधिग्रहण किया। NeXT का प्रमुख उत्पाद \"NeXTSTEP\" Mac OS X की नींव बना।",
+          "target": "content/post/biography-steve-jobs/index.hi.md"
+        },
+        {
+          "term": "ऑब्जेक्ट-ओरिएंटेड",
+          "context": "2. **Cocoa**: NeXTSTEP से विरासत में मिला, यह Objective-C पर आधारित एक शुद्ध ऑब्जेक्ट-ओरिएंटेड API है।",
+          "target": "content/post/object-oriented-programming-oop-solid-principles/index.hi.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture."
+    },
+    {
+      "path": "content/post/macos-architecture-history/index.ru.md",
+      "source_sha256": "509b5c6c55d6387b02b4d04aa36adaf8ab5d94a0cb39162a071799c5c240c487",
+      "links": [
+        {
+          "term": "Стивом Джобсом",
+          "context": "При разработке ОС следующего поколения, после неудачи собственного проекта (Copland), Apple приняла историческое решение купить компанию NeXT, основанную Стивом Джобсом. Именно «NeXTSTEP», флагманский продукт NeXT, стал основой Mac OS X.",
+          "target": "content/post/biography-steve-jobs/index.ru.md"
+        },
+        {
+          "term": "объектно-ориентированный",
+          "context": "2. **Cocoa**: Чистый объектно-ориентированный API на базе Objective-C, унаследованный от NeXTSTEP.",
+          "target": "content/post/object-oriented-programming-oop-solid-principles/index.ru.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture."
+    }
+  ]
+}

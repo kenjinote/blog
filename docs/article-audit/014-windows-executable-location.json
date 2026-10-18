@@ -1,6 +1,6 @@
 {
   "batch": "014-windows-executable-location",
-  "status": "validated; awaiting commit and push",
+  "status": "validated; final Hugo and browser checks passed; push pending",
   "review": "All thirteen full bodies reviewed. Remove seven Paint application links incorrectly targeting browser painting/rendering. Reclassify broad pc-gadgets to existing windows/terminal: the subject is locating executable files through Windows commands. All thirteen category label definitions inspected. No additional links needed in the short two-command recipe. Preserve commands, prose, legacy slugs and duplicate date fields.",
   "editorial_notes": [
     "PowerShell where can resolve to Where-Object rather than where.exe: existing command ambiguity requires a separate content correction, do not alter code in link audit.",

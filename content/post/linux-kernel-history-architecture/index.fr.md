@@ -14,7 +14,7 @@ Le 25 août 1991, un message modeste a été posté sur le groupe de discussion 
 
 > "Hello everybody out there using minix - I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu) for 386(486) AT clones."
 
-L'auteur de ce message était Linus Torvalds, alors étudiant à l'Université d'Helsinki en Finlande. À l'époque, « MINIX », développé par le professeur Andrew S. Tanenbaum et largement utilisé pour l'apprentissage des systèmes d'exploitation, avait des fonctionnalités limitées en raison de son objectif éducatif, ainsi que des restrictions de licence. Insatisfait de la conception de MINIX, Linus a commencé à créer un émulateur de terminal capable de tirer pleinement parti du processeur Intel 386 qu'il avait acheté, ce qui a fini par évoluer vers le noyau d'un système d'exploitation (OS) complet.
+L'auteur de ce message était [Linus Torvalds](/fr/p/biography-linus-torvalds/), alors étudiant à l'Université d'Helsinki en Finlande. À l'époque, « MINIX », développé par le professeur Andrew S. Tanenbaum et largement utilisé pour l'apprentissage des systèmes d'exploitation, avait des fonctionnalités limitées en raison de son objectif éducatif, ainsi que des restrictions de licence. Insatisfait de la conception de MINIX, Linus a commencé à créer un émulateur de terminal capable de tirer pleinement parti du processeur Intel 386 qu'il avait acheté, ce qui a fini par évoluer vers le noyau d'un système d'exploitation (OS) complet.
 
 Ce projet, qu'il a appelé "juste un passe-temps" (just a hobby), est devenu, plus de 30 ans plus tard, l'un des projets logiciels les plus importants de l'histoire de l'humanité : "Linux", qui fait tourner 100 % des supercalculateurs du monde, la majorité des smartphones (Android) et l'écrasante majorité des infrastructures cloud. Dans cet article, nous allons examiner en profondeur comment Linux est né et quels choix d'architecture ont déterminé son succès.
 
@@ -63,7 +63,7 @@ Tanenbaum a fait valoir que les futurs systèmes d'exploitation devraient migrer
 
 # Héritage de la philosophie UNIX : "Everything is a file"
 
-Étant développé comme un clone d'UNIX, Linux hérite de la puissante "philosophie UNIX". Le concept le plus célèbre et le plus important est le principe selon lequel "tout est un fichier" (Everything is a file).
+Étant développé comme un clone d'UNIX, Linux hérite de la puissante "[philosophie UNIX](/fr/p/philosophy-unix-modular-design/)". Le concept le plus célèbre et le plus important est le principe selon lequel "tout est un fichier" (Everything is a file).
 
 Dans Linux, toutes les ressources, des périphériques matériels comme les disques durs, claviers, souris et imprimantes, jusqu'aux informations de processus et sockets réseau, sont abstraites sous forme de "fichiers" virtuels.
 

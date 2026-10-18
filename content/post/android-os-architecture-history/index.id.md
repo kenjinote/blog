@@ -12,7 +12,7 @@ date: 2026-10-01T22:10:11+09:00
 
 Dalam masyarakat digital modern, ponsel cerdas (smartphone) telah menjadi kebutuhan yang sangat penting. Di antaranya, sistem operasi (OS) yang mendominasi sebagian besar pangsa pasar dunia adalah "Android". Android telah berkembang dari sekadar OS ponsel cerdas menjadi platform raksasa yang berjalan pada berbagai perangkat, termasuk tablet, jam tangan pintar, televisi, dan bahkan sistem di dalam mobil.
 
-Artikel ini akan menjelaskan secara rinci tentang arsitektur (struktur hierarki) yang membentuk OS Android yang penyebarannya luar biasa ini, dan bagaimana teknologi intinya telah berevolusi seiring berjalannya waktu, ditinjau dari perspektif teknis mendalam seperti kernel Linux, Hardware Abstraction Layer (HAL), serta transisi dari Dalvik ke ART (Android Runtime).
+Artikel ini akan menjelaskan secara rinci tentang arsitektur (struktur hierarki) yang membentuk OS Android yang penyebarannya luar biasa ini, dan bagaimana teknologi intinya telah berevolusi seiring berjalannya waktu, ditinjau dari perspektif teknis mendalam seperti [kernel Linux](/id/p/linux-kernel-history-architecture/), Hardware Abstraction Layer (HAL), serta transisi dari Dalvik ke ART (Android Runtime).
 
 ## Gambaran Umum Arsitektur Android
 
@@ -72,7 +72,7 @@ Dalam kompilasi AOT, seluruh kode aplikasi sepenuhnya dikompilasi terlebih dahul
 
 1. **Peningkatan Kinerja yang Luar Biasa**: Kecepatan peluncuran aplikasi meningkat secara signifikan, dan animasi serta pengguliran (scrolling) menjadi sangat lancar.
 2. **Masa Pakai Baterai Lebih Lama**: Konsumsi daya berkurang drastis karena beban CPU (pemrosesan kompilasi) selama eksekusi berkurang.
-3. **Optimasi Pengumpulan Sampah (Garbage Collection)**: ART secara mendasar merombak algoritma manajemen memori (proses pembebasan memori yang tidak lagi diperlukan), dan "jeda (freeze)" yang dapat menghentikan pengoperasian aplikasi telah dikurangi hingga batas maksimum.
+3. **Optimasi [Pengumpulan Sampah](/id/p/garbage-collection-history-zgc/) (Garbage Collection)**: ART secara mendasar merombak algoritma manajemen memori (proses pembebasan memori yang tidak lagi diperlukan), dan "jeda (freeze)" yang dapat menghentikan pengoperasian aplikasi telah dikurangi hingga batas maksimum.
 
 Sejak saat itu, ART terus berkembang, dan mulai dari Android 7.0 (Nougat), metode hybrid yang menggabungkan kompilasi AOT, kompilasi JIT, dan Profile-Guided Optimization (PGO) telah diadopsi, mewujudkan keseimbangan sempurna antara waktu instalasi yang lebih singkat, penghematan ruang penyimpanan, dan optimalisasi kecepatan eksekusi.
 

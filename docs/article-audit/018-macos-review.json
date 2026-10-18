@@ -1,0 +1,149 @@
+{
+  "batch": "018-macos-review",
+  "status": "all 13 bodies and target introductions reviewed; 26 links planned; not applied",
+  "articles": [
+    {
+      "path": "content/post/macos-architecture-history/index.ar.md",
+      "source_sha256": "66c4d693049b63df687a9e9a670d3d0e3a2d9beefed6b6c8c1631f4bfde936de",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No body links. Retain software-development/os; localized os definitions are in batch 015.",
+        "Steve Jobs biography is a direct reference and target introductions were reviewed in all languages in batch 017. Possible object-oriented programming / ARM architecture references require target review.",
+        "Preserve all prose, two Mermaid diagrams, headings, inline code and lists.",
+        "Separate editorial issue: wording after the three CPU transitions risks attributing 68k-to-PowerPC compatibility to Rosetta; Rosetta timing/performance and sweeping stability claims require separate fact-checking. No prose rewrite in this audit."
+      ]
+    },
+    {
+      "path": "content/post/macos-architecture-history/index.de.md",
+      "source_sha256": "6e3d6ee772cc11742a4660902561e75b2521183c98e972c6f18f4172509d0e07",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No body links. Retain software-development/os; localized os definitions are in batch 015.",
+        "Steve Jobs biography is a direct reference and target introductions were reviewed in all languages in batch 017. Possible object-oriented programming / ARM architecture references require target review.",
+        "Preserve all prose, two Mermaid diagrams, headings, inline code and lists.",
+        "Separate editorial issue: wording after the three CPU transitions risks attributing 68k-to-PowerPC compatibility to Rosetta; Rosetta timing/performance and sweeping stability claims require separate fact-checking. No prose rewrite in this audit."
+      ]
+    },
+    {
+      "path": "content/post/macos-architecture-history/index.en.md",
+      "source_sha256": "2a68474a1ee8d02999a9677ebfb1081ea1b2b0b5b4c767280bf78209ff618271",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No body links. Retain software-development/os; localized os definitions are in batch 015.",
+        "Steve Jobs biography is a direct reference and target introductions were reviewed in all languages in batch 017. Possible object-oriented programming / ARM architecture references require target review.",
+        "Preserve all prose, two Mermaid diagrams, headings, inline code and lists.",
+        "Separate editorial issue: wording after the three CPU transitions risks attributing 68k-to-PowerPC compatibility to Rosetta; Rosetta timing/performance and sweeping stability claims require separate fact-checking. No prose rewrite in this audit."
+      ]
+    },
+    {
+      "path": "content/post/macos-architecture-history/index.es.md",
+      "source_sha256": "8fca35465e786e14772076704a014fb7d435d899b22abe30196c257eea012354",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No body links. Retain software-development/os; localized os definitions are in batch 015.",
+        "Steve Jobs biography is a direct reference and target introductions were reviewed in all languages in batch 017. Possible object-oriented programming / ARM architecture references require target review.",
+        "Preserve all prose, two Mermaid diagrams, headings, inline code and lists.",
+        "Separate editorial issue: wording after the three CPU transitions risks attributing 68k-to-PowerPC compatibility to Rosetta; Rosetta timing/performance and sweeping stability claims require separate fact-checking. No prose rewrite in this audit."
+      ]
+    },
+    {
+      "path": "content/post/macos-architecture-history/index.fr.md",
+      "source_sha256": "75558279460714e08e0efff7f228528ec42c7198e4ab2f22f6cdf4c06a760fe6",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No body links. Retain software-development/os; localized os definitions are in batch 015.",
+        "Steve Jobs biography is a direct reference and target introductions were reviewed in all languages in batch 017. Possible object-oriented programming / ARM architecture references require target review.",
+        "Preserve all prose, two Mermaid diagrams, headings, inline code and lists.",
+        "Separate editorial issue: wording after the three CPU transitions risks attributing 68k-to-PowerPC compatibility to Rosetta; Rosetta timing/performance and sweeping stability claims require separate fact-checking. No prose rewrite in this audit."
+      ]
+    },
+    {
+      "path": "content/post/macos-architecture-history/index.hi.md",
+      "source_sha256": "c6370b5c699ca3e56aa34e0a7e3b616838a8bf0e799e307f4adef676540ad074",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No body links. Retain software-development/os; localized os definitions are in batch 015.",
+        "Steve Jobs biography is a direct reference and target introductions were reviewed in all languages in batch 017. Possible object-oriented programming / ARM architecture references require target review.",
+        "Preserve all prose, two Mermaid diagrams, headings, inline code and lists.",
+        "Separate editorial issue: wording after the three CPU transitions risks attributing 68k-to-PowerPC compatibility to Rosetta; Rosetta timing/performance and sweeping stability claims require separate fact-checking. No prose rewrite in this audit."
+      ]
+    },
+    {
+      "path": "content/post/macos-architecture-history/index.id.md",
+      "source_sha256": "3333ff2fb9411d12c18d86bd0577c4a7b3af932e22e9f7ea7b7661bb3aeb715c",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No body links. Retain software-development/os; localized os definitions are in batch 015.",
+        "Steve Jobs biography is a direct reference and target introductions were reviewed in all languages in batch 017. Possible object-oriented programming / ARM architecture references require target review.",
+        "Preserve all prose, two Mermaid diagrams, headings, inline code and lists.",
+        "Separate editorial issue: wording after the three CPU transitions risks attributing 68k-to-PowerPC compatibility to Rosetta; Rosetta timing/performance and sweeping stability claims require separate fact-checking. No prose rewrite in this audit."
+      ]
+    },
+    {
+      "path": "content/post/macos-architecture-history/index.ko.md",
+      "source_sha256": "c9af9c57c23255cc5e243359fb71ae179dc29b45e2fb25cf6eb4bf7ae8f6f8f3",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No body links. Retain software-development/os; localized os definitions are in batch 015.",
+        "Steve Jobs biography is a direct reference and target introductions were reviewed in all languages in batch 017. Possible object-oriented programming / ARM architecture references require target review.",
+        "Preserve all prose, two Mermaid diagrams, headings, inline code and lists.",
+        "Separate editorial issue: wording after the three CPU transitions risks attributing 68k-to-PowerPC compatibility to Rosetta; Rosetta timing/performance and sweeping stability claims require separate fact-checking. No prose rewrite in this audit."
+      ]
+    },
+    {
+      "path": "content/post/macos-architecture-history/index.md",
+      "source_sha256": "4f65e9cc64f3770eb91b45ff789e209a5ff08494c03e5243690845207580f694",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No body links. Retain software-development/os; localized os definitions are in batch 015.",
+        "Steve Jobs biography is a direct reference and target introductions were reviewed in all languages in batch 017. Possible object-oriented programming / ARM architecture references require target review.",
+        "Preserve all prose, two Mermaid diagrams, headings, inline code and lists.",
+        "Separate editorial issue: wording after the three CPU transitions risks attributing 68k-to-PowerPC compatibility to Rosetta; Rosetta timing/performance and sweeping stability claims require separate fact-checking. No prose rewrite in this audit."
+      ]
+    },
+    {
+      "path": "content/post/macos-architecture-history/index.pt.md",
+      "source_sha256": "adaa5705cf8485385243e527f195454bb4441b7954ca5d1f763ed97d3c3b171f",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No body links. Retain software-development/os; localized os definitions are in batch 015.",
+        "Steve Jobs biography is a direct reference and target introductions were reviewed in all languages in batch 017. Possible object-oriented programming / ARM architecture references require target review.",
+        "Preserve all prose, two Mermaid diagrams, headings, inline code and lists.",
+        "Separate editorial issue: wording after the three CPU transitions risks attributing 68k-to-PowerPC compatibility to Rosetta; Rosetta timing/performance and sweeping stability claims require separate fact-checking. No prose rewrite in this audit."
+      ]
+    },
+    {
+      "path": "content/post/macos-architecture-history/index.ru.md",
+      "source_sha256": "509b5c6c55d6387b02b4d04aa36adaf8ab5d94a0cb39162a071799c5c240c487",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No body links. Retain software-development/os; localized os definitions are in batch 015.",
+        "Steve Jobs biography is a direct reference and target introductions were reviewed in all languages in batch 017. Possible object-oriented programming / ARM architecture references require target review.",
+        "Preserve all prose, two Mermaid diagrams, headings, inline code and lists.",
+        "Separate editorial issue: wording after the three CPU transitions risks attributing 68k-to-PowerPC compatibility to Rosetta; Rosetta timing/performance and sweeping stability claims require separate fact-checking. No prose rewrite in this audit."
+      ]
+    },
+    {
+      "path": "content/post/macos-architecture-history/index.zh-cn.md",
+      "source_sha256": "d7ba7b60b44e3be022febee63b715f03564841f81c4f124a828b35d2a2914088",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No body links. Retain software-development/os; localized os definitions are in batch 015.",
+        "Steve Jobs biography is a direct reference and target introductions were reviewed in all languages in batch 017. Possible object-oriented programming / ARM architecture references require target review.",
+        "Preserve all prose, two Mermaid diagrams, headings, inline code and lists.",
+        "Separate editorial issue: wording after the three CPU transitions risks attributing 68k-to-PowerPC compatibility to Rosetta; Rosetta timing/performance and sweeping stability claims require separate fact-checking. No prose rewrite in this audit."
+      ]
+    },
+    {
+      "path": "content/post/macos-architecture-history/index.zh-tw.md",
+      "source_sha256": "7145b9836f261e2892ab8cc060a7ce1ac5791c7959b83676fd7c02e25c96b4ab",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No body links. Retain software-development/os; localized os definitions are in batch 015.",
+        "Steve Jobs biography is a direct reference and target introductions were reviewed in all languages in batch 017. Possible object-oriented programming / ARM architecture references require target review.",
+        "Preserve all prose, two Mermaid diagrams, headings, inline code and lists.",
+        "Separate editorial issue: wording after the three CPU transitions risks attributing 68k-to-PowerPC compatibility to Rosetta; Rosetta timing/performance and sweeping stability claims require separate fact-checking. No prose rewrite in this audit."
+      ]
+    }
+  ]
+}

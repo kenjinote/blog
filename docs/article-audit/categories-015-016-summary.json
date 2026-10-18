@@ -1,0 +1,10 @@
+{
+  "checked_pages": 14056,
+  "categories": 136,
+  "languages": 13,
+  "remaining_errors": 4708,
+  "previous_baseline": 4630,
+  "new_upstream_errors": 143,
+  "resolved_os_errors": 65,
+  "note": "All category IDs and URLs retained. 65 article headers and 13 category archives passed localized labels, membership and mobile rendering checks."
+}

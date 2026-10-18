@@ -12,7 +12,7 @@ date: 2026-10-01T22:10:11+09:00
 
 In modern digital society, smartphones have become indispensable. Among them, the operating system (OS) that holds the vast majority of the global market share is "Android". Android has grown into a massive platform that runs on a wide variety of devices, not just smartphone OSs, but also tablets, smartwatches, televisions, and even in-vehicle systems for cars.
 
-In this article, we will explain in detail the architecture (layered structure) of the Android OS, which is experiencing this phenomenal spread, and how its core technologies have evolved alongside its history, from deep technical perspectives such as the Linux kernel, the Hardware Abstraction Layer (HAL), and the transition from Dalvik to ART (Android Runtime).
+In this article, we will explain in detail the architecture (layered structure) of the Android OS, which is experiencing this phenomenal spread, and how its core technologies have evolved alongside its history, from deep technical perspectives such as the [Linux kernel](/en/p/linux-kernel-history-architecture/), the Hardware Abstraction Layer (HAL), and the transition from Dalvik to ART (Android Runtime).
 
 ## Overview of the Android Architecture
 
@@ -72,7 +72,7 @@ In AOT compilation, the entire app code is fully compiled into native machine la
 
 1. **Overwhelming Performance Improvement**: App startup speed has significantly increased, and animations and scrolling have become extremely smooth.
 2. **Extended Battery Life**: Since the CPU load (compilation processing) at runtime is reduced, power consumption is greatly suppressed.
-3. **Optimization of Garbage Collection**: ART fundamentally reviewed the memory management (releasing memory that is no longer needed) algorithm, minimizing "pauses (freezes)" that would stop the app's operation to the absolute limit.
+3. **Optimization of [Garbage Collection](/en/p/garbage-collection-history-zgc/)**: ART fundamentally reviewed the memory management (releasing memory that is no longer needed) algorithm, minimizing "pauses (freezes)" that would stop the app's operation to the absolute limit.
 
 ART continued to evolve thereafter. From Android 7.0 (Nougat) onwards, a hybrid approach combining AOT compilation, JIT compilation, and Profile-Guided Optimization (PGO) has been adopted, achieving a perfect balance of shortened installation times, storage space savings, and optimization of execution speed.
 

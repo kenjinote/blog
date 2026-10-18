@@ -1,6 +1,6 @@
 {
   "batch": "015-android-links",
-  "status": "reviewed; not applied",
+  "status": "validated; final Hugo and browser checks passed; push pending",
   "review": "All thirteen Android bodies reviewed. Add kernel architecture and garbage-collection explanations in matching languages. Target introductions and scopes read in all languages. Define os category labels separately, retaining existing identifiers and category URLs. No source or category files have been edited.",
   "required_category_work": {
     "action": "Add localized definitions for existing os identifier, retaining current article categories and URLs. No alias migrations yet.",
@@ -20,7 +20,7 @@
       "hi": "ऑपरेटिंग सिस्टम",
       "ru": "Операционные системы"
     },
-    "status": "proposal recorded; not applied; validate all affected category headers when implemented"
+    "status": "13 definitions applied; 65 headers and 13 archives pending browser check"
   },
   "articles": [
     {

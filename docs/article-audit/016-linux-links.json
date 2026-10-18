@@ -1,7 +1,7 @@
 {
   "batch": "016-linux-links",
-  "status": "reviewed; not applied",
-  "review": "13 complete bodies reviewed. Add first ordinary biography mention and ordinary UNIX philosophy phrase. Target introductions reviewed in all languages. Do not edit quotations, headings, code or two Mermaid diagrams. More specific syscall/VFS targets were not found; avoid forced broader links.",
+  "status": "validated; final Hugo and browser checks passed; push pending",
+  "review": "13 complete bodies reviewed. Add first ordinary biography mention and ordinary UNIX philosophy phrase. Target introductions reviewed in all languages. Do not edit quotations, headings, code or two Mermaid diagrams. More specific syscall/VFS targets were not found; avoid forced broader links. Korean UNIX philosophy link includes the existing paired single quotes to preserve rendered closing quote.",
   "articles": [
     {
       "path": "content/post/linux-kernel-history-architecture/index.md",
@@ -132,7 +132,7 @@
           "target": "content/post/biography-linus-torvalds/index.ko.md"
         },
         {
-          "term": "UNIX 철학",
+          "term": "'UNIX 철학'",
           "context": "Linux는 UNIX 클론으로 개발되었기 때문에 강력한 'UNIX 철학'을 계승하고 있습니다. 그 중에서 가장 유명하고 중요한 개념이 '모든 것은 파일이다(Everything is a file)'라는 원칙입니다.",
           "target": "content/post/philosophy-unix-modular-design/index.ko.md"
         }

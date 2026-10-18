@@ -14,7 +14,7 @@ image: eyecatch.jpg
 
 > "Hello everybody out there using minix - I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu) for 386(486) AT clones."
 
-이 게시물의 주인공은 당시 핀란드 헬싱키 대학교의 학생이었던 리누스 토발즈(Linus Torvalds)입니다. 당시 OS 학습용으로 널리 사용되던 앤드류 S. 타넨바움(Andrew S. Tanenbaum) 교수의 'MINIX'는 교육 목적이었기 때문에 기능이 제한적이었고 라이선스에도 제약이 있었습니다. 리누스는 MINIX의 설계에 불만을 품고 자신이 구매한 Intel 386 프로세서의 기능을 완전히 끌어낼 수 있는 터미널 에뮬레이터를 만들기 시작했으며, 이것이 이윽고 완전한 운영 체제(OS)의 커널로 발전하게 되었습니다.
+이 게시물의 주인공은 당시 핀란드 헬싱키 대학교의 학생이었던 [리누스 토발즈](/ko/p/biography-linus-torvalds/)(Linus Torvalds)입니다. 당시 OS 학습용으로 널리 사용되던 앤드류 S. 타넨바움(Andrew S. Tanenbaum) 교수의 'MINIX'는 교육 목적이었기 때문에 기능이 제한적이었고 라이선스에도 제약이 있었습니다. 리누스는 MINIX의 설계에 불만을 품고 자신이 구매한 Intel 386 프로세서의 기능을 완전히 끌어낼 수 있는 터미널 에뮬레이터를 만들기 시작했으며, 이것이 이윽고 완전한 운영 체제(OS)의 커널로 발전하게 되었습니다.
 
 그가 '단순한 취미(just a hobby)'라고 불렀던 이 프로젝트는 그 후 30년 이상의 세월이 흘러 전 세계 슈퍼컴퓨터의 100%, 스마트폰의 대다수(Android), 그리고 클라우드 인프라의 압도적 다수를 구동하는, 인류 역사상 가장 중요한 소프트웨어 프로젝트 중 하나인 'Linux'로 성장하게 됩니다. 본 기사에서는 이 Linux가 어떻게 탄생했으며, 어떠한 아키텍처의 선택이 그 성공을 결정지었는지 깊이 파헤쳐 보겠습니다.
 
@@ -63,7 +63,7 @@ OS의 주요 기능(메모리 관리, 프로세스 스케줄링, 파일 시스�
 
 # UNIX 철학의 계승: "Everything is a file"
 
-Linux는 UNIX 클론으로 개발되었기 때문에 강력한 'UNIX 철학'을 계승하고 있습니다. 그 중에서 가장 유명하고 중요한 개념이 '모든 것은 파일이다(Everything is a file)'라는 원칙입니다.
+Linux는 UNIX 클론으로 개발되었기 때문에 강력한 ['UNIX 철학'](/ko/p/philosophy-unix-modular-design/)을 계승하고 있습니다. 그 중에서 가장 유명하고 중요한 개념이 '모든 것은 파일이다(Everything is a file)'라는 원칙입니다.
 
 Linux에서는 하드 드라이브, 키보드, 마우스, 프린터 등의 하드웨어 디바이스부터 프로세스 정보, 네트워크 소켓에 이르기까지 모든 리소스가 가상의 '파일'로 추상화됩니다.
 

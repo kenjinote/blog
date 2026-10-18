@@ -14,7 +14,7 @@ On August 25, 1991, a modest message was posted to the newsgroup `comp.os.minix`
 
 > "Hello everybody out there using minix - I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu) for 386(486) AT clones."
 
-The author of this post was Linus Torvalds, then a student at the University of Helsinki in Finland. At the time, "MINIX", created by Professor Andrew S. Tanenbaum and widely used for studying operating systems, was limited in functionality due to its educational purpose and had licensing restrictions. Dissatisfied with MINIX's design, Linus began creating a terminal emulator to fully utilize the capabilities of his newly purchased Intel 386 processor, which eventually evolved into the kernel of a complete operating system (OS).
+The author of this post was [Linus Torvalds](/en/p/biography-linus-torvalds/), then a student at the University of Helsinki in Finland. At the time, "MINIX", created by Professor Andrew S. Tanenbaum and widely used for studying operating systems, was limited in functionality due to its educational purpose and had licensing restrictions. Dissatisfied with MINIX's design, Linus began creating a terminal emulator to fully utilize the capabilities of his newly purchased Intel 386 processor, which eventually evolved into the kernel of a complete operating system (OS).
 
 This project, which he called "just a hobby," has grown over more than 30 years into "Linux," one of the most important software projects in human history, powering 100% of the world's supercomputers, the vast majority of smartphones (Android), and the overwhelming majority of cloud infrastructure. In this article, we will delve deep into how Linux was born and what architectural choices determined its success.
 
@@ -63,7 +63,7 @@ Tanenbaum argued that future OSes should transition to highly reliable microkern
 
 # Inheriting the UNIX Philosophy: "Everything is a file"
 
-Because Linux was developed as a UNIX clone, it inherits the powerful "UNIX philosophy." The most famous and important concept among them is the principle that "Everything is a file."
+Because Linux was developed as a UNIX clone, it inherits the powerful "[UNIX philosophy](/en/p/philosophy-unix-modular-design/)." The most famous and important concept among them is the principle that "Everything is a file."
 
 In Linux, all resources, from hardware devices like hard drives, keyboards, mice, and printers, to process information and network sockets, are abstracted as virtual "files."
 

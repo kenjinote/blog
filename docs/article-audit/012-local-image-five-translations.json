@@ -1,6 +1,6 @@
 {
   "batch": "012-local-image-five-translations",
-  "status": "validated; awaiting commit and push",
+  "status": "validated; final Hugo and browser checks passed; push pending",
   "review": "Five full bodies reviewed; unwrap Flux model / React Flux confusion and French Go capacity / programming-language confusion. Add same-language VRAM optimization and Markov definition references. Preserve prose, categories, math, diagrams, commands and headings.",
   "articles": [
     {

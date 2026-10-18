@@ -1,0 +1,228 @@
+{
+  "batch": "019-windows-links",
+  "status": "reviewed; dry-run passed; not applied",
+  "review": "All 13 full bodies and both target introductions reviewed. Link virtual memory in NT memory protection list and registry in ordinary introduction paragraph. Do not link Windows scheduling to Linux-specific CFS. Preserve category IDs, all prose, DOS code and Mermaid. Korean paired quotes included in registry link to preserve typographer output.",
+  "articles": [
+    {
+      "path": "content/post/windows-os-history-architecture/index.md",
+      "source_sha256": "3fd98a298e1ac7aaba963fa18839b9df93c47c7ceb770d04dcbed6cd5b94b08b",
+      "links": [
+        {
+          "term": "仮想メモリ空間",
+          "context": "1. **完全なメモリ保護:** アプリケーションごとに独立した仮想メモリ空間が割り当てられ、他のプログラムやOSのコア部分（カーネル空間）を破壊できないようになっています。",
+          "target": "content/post/virtual-memory-paging-mmu-architecture/index.md"
+        },
+        {
+          "term": "レジストリ",
+          "context": "現代のWindowsを理解する上で欠かせない2つの要素が「Win32 API」と「レジストリ」です。",
+          "target": "content/post/windows_registry/index.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; operating-system history and architecture, os localized in batch 015."
+    },
+    {
+      "path": "content/post/windows-os-history-architecture/index.en.md",
+      "source_sha256": "e2157111976135715854c42b742a4cf8a097740e8fb978de1bef57274d2c4158",
+      "links": [
+        {
+          "term": "virtual memory space",
+          "context": "1. **Complete Memory Protection:** Each application is assigned an independent virtual memory space, preventing it from corrupting other programs or the core part of the OS (kernel space).",
+          "target": "content/post/virtual-memory-paging-mmu-architecture/index.en.md"
+        },
+        {
+          "term": "Registry",
+          "context": "Two essential elements for understanding modern Windows are the \"Win32 API\" and the \"Registry.\"",
+          "target": "content/post/windows_registry/index.en.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; operating-system history and architecture, os localized in batch 015."
+    },
+    {
+      "path": "content/post/windows-os-history-architecture/index.de.md",
+      "source_sha256": "2a11621fb03e1494bb853bbb3d16864a853099d91bfe1394c6963a605212b219",
+      "links": [
+        {
+          "term": "virtueller Speicherbereich",
+          "context": "1. **Vollständiger Speicherschutz:** Jeder Anwendung wird ein isolierter, virtueller Speicherbereich zugewiesen, der verhindert, dass andere Programme oder der OS-Kern (Kernel-Bereich) beschädigt werden.",
+          "target": "content/post/virtual-memory-paging-mmu-architecture/index.de.md"
+        },
+        {
+          "term": "Registry",
+          "context": "Zwei wesentliche Elemente zum Verständnis des modernen Windows sind die „Win32 API“ und die „Registry“.",
+          "target": "content/post/windows_registry/index.de.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; operating-system history and architecture, os localized in batch 015."
+    },
+    {
+      "path": "content/post/windows-os-history-architecture/index.fr.md",
+      "source_sha256": "9b1d3e179b38af8924420a21efe6ea5454334d53595063197693bcfab0307ce0",
+      "links": [
+        {
+          "term": "mémoire virtuelle",
+          "context": "1. **Protection complète de la mémoire :** Chaque application se voit attribuer un espace de mémoire virtuelle indépendant, ce qui l'empêche de détruire d'autres programmes ou les parties centrales du système d'exploitation (espace noyau).",
+          "target": "content/post/virtual-memory-paging-mmu-architecture/index.fr.md"
+        },
+        {
+          "term": "Registre",
+          "context": "Deux éléments sont essentiels pour comprendre le Windows moderne : l'« API Win32 » et le « Registre ».",
+          "target": "content/post/windows_registry/index.fr.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; operating-system history and architecture, os localized in batch 015."
+    },
+    {
+      "path": "content/post/windows-os-history-architecture/index.es.md",
+      "source_sha256": "003f4f4cb6f903af4702cf790fb050a4ae695db76d42c9254f7a20255ef71d7b",
+      "links": [
+        {
+          "term": "memoria virtual",
+          "context": "1. **Protección completa de la memoria:** A cada aplicación se le asigna un espacio de memoria virtual independiente, evitando que pueda corromper otros programas o las partes centrales del sistema operativo (el espacio del kernel).",
+          "target": "content/post/virtual-memory-paging-mmu-architecture/index.es.md"
+        },
+        {
+          "term": "Registro",
+          "context": "Hay dos elementos esenciales para comprender el Windows moderno: la \"API Win32\" y el \"Registro\".",
+          "target": "content/post/windows_registry/index.es.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; operating-system history and architecture, os localized in batch 015."
+    },
+    {
+      "path": "content/post/windows-os-history-architecture/index.pt.md",
+      "source_sha256": "cbfa3989f6fe0abf19fcdfd8153aa31e2c57eba492927a1b2df0ed18cb448ec1",
+      "links": [
+        {
+          "term": "memória virtual",
+          "context": "1. **Proteção de Memória Completa:** A cada aplicativo é alocado um espaço de memória virtual independente, garantindo que ele não possa corromper outros programas ou o núcleo do sistema operacional (espaço do kernel).",
+          "target": "content/post/virtual-memory-paging-mmu-architecture/index.pt.md"
+        },
+        {
+          "term": "Registro",
+          "context": "Dois elementos essenciais para entender o Windows moderno são a \"Win32 API\" e o \"Registro\".",
+          "target": "content/post/windows_registry/index.pt.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; operating-system history and architecture, os localized in batch 015."
+    },
+    {
+      "path": "content/post/windows-os-history-architecture/index.id.md",
+      "source_sha256": "5ddcb721c027f9297024a8dad5bf63e88e94d3103ee3b5d0f7454c0214a242f5",
+      "links": [
+        {
+          "term": "memori virtual",
+          "context": "1. **Perlindungan Memori Penuh:** Setiap aplikasi dialokasikan ruang memori virtual independen, sehingga mereka tidak dapat merusak program lain atau bagian inti dari OS (ruang kernel).",
+          "target": "content/post/virtual-memory-paging-mmu-architecture/index.id.md"
+        },
+        {
+          "term": "Registry",
+          "context": "Dua elemen yang sangat penting untuk memahami Windows modern adalah \"Win32 API\" dan \"Registry\".",
+          "target": "content/post/windows_registry/index.id.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; operating-system history and architecture, os localized in batch 015."
+    },
+    {
+      "path": "content/post/windows-os-history-architecture/index.ko.md",
+      "source_sha256": "cd5386d7e9d3badbc616d0badff4b70287eb7f7fda82267b691eb91e21dd63d8",
+      "links": [
+        {
+          "term": "가상 메모리 공간",
+          "context": "1. **완벽한 메모리 보호:** 애플리케이션마다 독립된 가상 메모리 공간이 할당되어, 다른 프로그램이나 OS의 핵심 부분(커널 공간)을 파괴할 수 없게 되어 있습니다.",
+          "target": "content/post/virtual-memory-paging-mmu-architecture/index.ko.md"
+        },
+        {
+          "term": "'레지스트리'",
+          "context": "현대 Windows를 이해하는 데 빼놓을 수 없는 두 가지 요소가 바로 'Win32 API'와 '레지스트리'입니다.",
+          "target": "content/post/windows_registry/index.ko.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; operating-system history and architecture, os localized in batch 015."
+    },
+    {
+      "path": "content/post/windows-os-history-architecture/index.zh-cn.md",
+      "source_sha256": "5c4a5797e584e428c28b2187230f940623674b3ba9dc96a52a2dae157b36f61f",
+      "links": [
+        {
+          "term": "虚拟内存空间",
+          "context": "1. **完整的内存保护:** 为每个应用程序分配独立的虚拟内存空间，防止其破坏其他程序或操作系统的核心部分（内核空间）。",
+          "target": "content/post/virtual-memory-paging-mmu-architecture/index.zh-cn.md"
+        },
+        {
+          "term": "注册表",
+          "context": "在理解现代Windows时，不可或缺的两个元素是“Win32 API”和“注册表”。",
+          "target": "content/post/windows_registry/index.zh-cn.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; operating-system history and architecture, os localized in batch 015."
+    },
+    {
+      "path": "content/post/windows-os-history-architecture/index.zh-tw.md",
+      "source_sha256": "c54638ce203afddc58b235589d5ea0757afe6f6a2009fa51988f4d77e8ffb44c",
+      "links": [
+        {
+          "term": "虛擬記憶體空間",
+          "context": "1. **完全的記憶體保護：** 為每個應用程式分配獨立的虛擬記憶體空間，使其無法破壞其他程式或OS的核心部分（核心空間）。",
+          "target": "content/post/virtual-memory-paging-mmu-architecture/index.zh-tw.md"
+        },
+        {
+          "term": "登錄檔",
+          "context": "在理解現代Windows時，不可或缺的兩個要素是「Win32 API」與「登錄檔（Registry）」。",
+          "target": "content/post/windows_registry/index.zh-tw.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; operating-system history and architecture, os localized in batch 015."
+    },
+    {
+      "path": "content/post/windows-os-history-architecture/index.ru.md",
+      "source_sha256": "3f47e80cfd2cb58d080694e008e2b9b554ddd42dd70403a1b69083071fca72de",
+      "links": [
+        {
+          "term": "виртуальное адресное пространство",
+          "context": "1. **Полная защита памяти:** Каждому приложению выделяется независимое виртуальное адресное пространство, что не позволяет ему разрушать другие программы или ядро ОС.",
+          "target": "content/post/virtual-memory-paging-mmu-architecture/index.ru.md"
+        },
+        {
+          "term": "Реестр",
+          "context": "Два элемента, без которых невозможно понять современную Windows, — это «Win32 API» и «Реестр».",
+          "target": "content/post/windows_registry/index.ru.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; operating-system history and architecture, os localized in batch 015."
+    },
+    {
+      "path": "content/post/windows-os-history-architecture/index.ar.md",
+      "source_sha256": "d4e66d4eaa02892cad7a2c92bfcb7b05c3fa83b6946001de53030680f122f37e",
+      "links": [
+        {
+          "term": "ذاكرة افتراضية",
+          "context": "1. **حماية كاملة للذاكرة:** يتم تخصيص مساحة ذاكرة افتراضية مستقلة لكل تطبيق، مما يمنعها من تدمير البرامج الأخرى أو الجزء الأساسي من نظام التشغيل (مساحة النواة).",
+          "target": "content/post/virtual-memory-paging-mmu-architecture/index.ar.md"
+        },
+        {
+          "term": "سجل النظام",
+          "context": "هناك عنصران لا غنى عنهما لفهم نظام Windows الحديث وهما \"Win32 API\" و\"سجل النظام (Registry)\".",
+          "target": "content/post/windows_registry/index.ar.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; operating-system history and architecture, os localized in batch 015."
+    },
+    {
+      "path": "content/post/windows-os-history-architecture/index.hi.md",
+      "source_sha256": "70d115e43bcbe3fb61d457fd71db9c7cc99fdc0d02d60a865aa0a3ed5ebbb9b2",
+      "links": [
+        {
+          "term": "वर्चुअल मेमोरी स्पेस",
+          "context": "1. **संपूर्ण मेमोरी सुरक्षा:** प्रत्येक एप्लिकेशन को एक अलग वर्चुअल मेमोरी स्पेस दिया जाता है ताकि वह अन्य प्रोग्रामों या OS के मुख्य हिस्से (कर्नेल स्पेस) को नुकसान न पहुँचा सके।",
+          "target": "content/post/virtual-memory-paging-mmu-architecture/index.hi.md"
+        },
+        {
+          "term": "रजिस्ट्री",
+          "context": "आधुनिक Windows को समझने के लिए \"Win32 API\" और \"रजिस्ट्री\" दो महत्वपूर्ण तत्व हैं।",
+          "target": "content/post/windows_registry/index.hi.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; operating-system history and architecture, os localized in batch 015."
+    }
+  ]
+}

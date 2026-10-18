@@ -12,7 +12,7 @@ date: 2026-10-01T22:10:11+09:00
 
 Dans la société numérique moderne, les smartphones sont devenus indispensables. Parmi eux, le système d'exploitation (OS) qui détient la majorité de la part de marché mondiale est "Android". Android n'est pas seulement un système d'exploitation pour smartphones, mais est devenu une immense plateforme fonctionnant sur une grande variété d'appareils, allant des tablettes, montres intelligentes, téléviseurs, jusqu'aux systèmes embarqués des automobiles.
 
-Cet article explique en détail l'architecture (structure hiérarchique) sur laquelle repose cet OS Android incroyablement populaire, ainsi que la manière dont ses technologies de base ont évolué au fil de l'histoire, d'un point de vue technique approfondi tel que le noyau Linux, la couche d'abstraction matérielle (HAL) et la transition de Dalvik à ART (Android Runtime).
+Cet article explique en détail l'architecture (structure hiérarchique) sur laquelle repose cet OS Android incroyablement populaire, ainsi que la manière dont ses technologies de base ont évolué au fil de l'histoire, d'un point de vue technique approfondi tel que le [noyau Linux](/fr/p/linux-kernel-history-architecture/), la couche d'abstraction matérielle (HAL) et la transition de Dalvik à ART (Android Runtime).
 
 ## Vue d'ensemble de l'architecture Android
 
@@ -72,7 +72,7 @@ Avec la compilation AOT, l'ensemble du code de l'application est entièrement co
 
 1. **Amélioration impressionnante des performances** : La vitesse de lancement des applications a considérablement augmenté, et les animations ainsi que le défilement sont devenus extrêmement fluides.
 2. **Prolongation de la durée de vie de la batterie** : Étant donné que la charge du CPU (processus de compilation) lors de l'exécution est réduite, la consommation d'énergie est considérablement diminuée.
-3. **Optimisation du ramasse-miettes (Garbage Collection)** : Les algorithmes de gestion de la mémoire (processus de libération de la mémoire qui n'est plus nécessaire) d'ART ont été fondamentalement revus, et les "pauses (blocages)" qui arrêtaient le fonctionnement de l'application ont été réduites à l'extrême.
+3. **Optimisation du [ramasse-miettes](/fr/p/garbage-collection-history-zgc/) (Garbage Collection)** : Les algorithmes de gestion de la mémoire (processus de libération de la mémoire qui n'est plus nécessaire) d'ART ont été fondamentalement revus, et les "pauses (blocages)" qui arrêtaient le fonctionnement de l'application ont été réduites à l'extrême.
 
 Depuis lors, ART a continué d'évoluer, et à partir d'Android 7.0 (Nougat), une approche hybride combinant la compilation AOT, la compilation JIT et la compilation guidée par le profil (PGO) a été adoptée, atteignant un équilibre parfait entre un temps d'installation plus court, une économie d'espace de stockage et une optimisation de la vitesse d'exécution.
 

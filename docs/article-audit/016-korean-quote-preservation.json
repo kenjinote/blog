@@ -1,0 +1,7 @@
+{
+  "path": "content/post/linux-kernel-history-architecture/index.ko.md",
+  "issue": "Linking bare UNIX 철학 changed existing rendered closing quote from right to left under Hugo typographer.",
+  "fix": "Place existing paired single quotes inside link label; source text unchanged.",
+  "probe": "Isolated effective-config Hugo and final full-build browser comparison passed. Rendered paragraphs, lists and protected content match baseline exactly.",
+  "other_languages": "Remaining 12 Linux languages passed before/after comparison."
+}

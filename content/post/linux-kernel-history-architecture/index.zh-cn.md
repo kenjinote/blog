@@ -14,7 +14,7 @@ image: eyecatch.jpg
 
 > "Hello everybody out there using minix - I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu) for 386(486) AT clones."
 
-这篇帖子的作者，正是当时芬兰赫尔辛基大学的学生林纳斯·托瓦兹（Linus Torvalds）。当时，Andrew S. Tanenbaum 教授编写的“MINIX”作为操作系统学习工具被广泛使用，但由于其教育目的，功能受到限制，且许可证也有约束。林纳斯对 MINIX 的设计感到不满，于是为了完全发挥他购买的 Intel 386 处理器的性能，开始编写一个终端模拟器，这最终发展成为一个完整的操作系统（OS）内核。
+这篇帖子的作者，正是当时芬兰赫尔辛基大学的学生[林纳斯·托瓦兹](/zh-cn/p/biography-linus-torvalds/)（Linus Torvalds）。当时，Andrew S. Tanenbaum 教授编写的“MINIX”作为操作系统学习工具被广泛使用，但由于其教育目的，功能受到限制，且许可证也有约束。林纳斯对 MINIX 的设计感到不满，于是为了完全发挥他购买的 Intel 386 处理器的性能，开始编写一个终端模拟器，这最终发展成为一个完整的操作系统（OS）内核。
 
 他当时称之为“只是一个业余爱好（just a hobby）”的项目，在经过30多年的发展后，成长为人类历史上最重要的软件项目之一——“Linux”，它运行着世界上100%的超级计算机、绝大多数的智能手机（Android），以及绝大部分的云基础设施。本文将深入探讨Linux是如何诞生的，以及哪些架构选择决定了它的成功。
 
@@ -63,7 +63,7 @@ Tanenbaum 主张，未来的操作系统应该向高可靠性的微内核转型�
 
 # UNIX 哲学的传承："Everything is a file"
 
-因为 Linux 是作为 UNIX 克隆开发的，所以它继承了强大的“UNIX 哲学”。其中最著名且重要的概念就是“一切皆文件（Everything is a file）”的原则。
+因为 Linux 是作为 UNIX 克隆开发的，所以它继承了强大的“[UNIX 哲学](/zh-cn/p/philosophy-unix-modular-design/)”。其中最著名且重要的概念就是“一切皆文件（Everything is a file）”的原则。
 
 在 Linux 中，从硬盘、键盘、鼠标、打印机等硬件设备，到进程信息、网络套接字，所有的资源都被抽象为虚拟的“文件”。
 
