@@ -1,0 +1,163 @@
+{
+  "batch": "015-android-review",
+  "status": "review only; not edited",
+  "articles": [
+    {
+      "path": "content/post/android-os-architecture-history/index.md",
+      "source_sha256": "e546fda7ccf5b788e5e26ed7ea2b6b93c170eaa5f43e68fc348ec027c6f6a5c0",
+      "body_reviewed": true,
+      "findings": [
+        "Full Japanese body reviewed. os is undefined; software-development is defined. Select consistent existing OS architecture category after reading translations.",
+        "No existing body links; consider Linux kernel introduction, compiler/JIT explanation, garbage collection and open-source licensing after target review. Preserve headings, emphasis, one Mermaid architecture diagram and prose.",
+        "Technical claims about LMK and ART need separate version-aware editorial review; preserve content during audit."
+      ]
+    },
+    {
+      "path": "content/post/android-os-architecture-history/index.en.md",
+      "source_sha256": "4c1b819a7a0269dbdb032aedd10a17e722537288f1ab4b24853f0001ce591f4b",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. Existing software-development/os; os undefined. No body links, no existing link cleanup needed.",
+        "Consider same-language Linux kernel, compiler/JIT, garbage collection and open-source licensing references after target review. Preserve headings, one Mermaid diagram, bold text and prose.",
+        "Version-specific LMK/ART and broad performance assertions left for separate editorial review."
+      ]
+    },
+    {
+      "path": "content/post/android-os-architecture-history/index.de.md",
+      "source_sha256": "1bf1e210954b2b743731a5fb516f752a0cdf5bab384f7b24573df83c525611cd",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. Existing software-development/os; os undefined. No body links, no existing link cleanup needed.",
+        "Consider same-language Linux kernel, compiler/JIT, garbage collection and open-source licensing references after target review. Preserve headings, one Mermaid diagram, bold text and prose.",
+        "Version-specific LMK/ART and broad performance assertions left for separate editorial review."
+      ]
+    },
+    {
+      "path": "content/post/android-os-architecture-history/index.fr.md",
+      "source_sha256": "45649a6accde08b75e8daccb2cdbe8151567d05a56ebc66946125fd0392f4fbd",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed; no body links. Existing os category is undefined. software-development is appropriate.",
+        "Potential Linux-kernel, compiler/JIT, garbage-collection and licensing references require same-language target review; preserve one Mermaid diagram and all prose.",
+        "Version-specific LMK/ART and performance assertions are separate editorial issues."
+      ]
+    },
+    {
+      "path": "content/post/android-os-architecture-history/index.es.md",
+      "source_sha256": "8bf5e1e7806b1ed2f4e40718a5193abf2045dd1b01d2f64fe1ea7378d893d36d",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed; no body links. Existing os category is undefined. software-development is appropriate.",
+        "Potential Linux-kernel, compiler/JIT, garbage-collection and licensing references require same-language target review; preserve one Mermaid diagram and all prose.",
+        "Version-specific LMK/ART and performance assertions are separate editorial issues."
+      ]
+    },
+    {
+      "path": "content/post/android-os-architecture-history/index.pt.md",
+      "source_sha256": "a52d1fa5eb291f2c61a53589c634daf822d03a722ee9569a370dd05ee7002db5",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed; no body links. os undefined, software-development appropriate.",
+        "Potential Linux-kernel, compiler/JIT, garbage collection and licensing references need translated-target review. Keep one Mermaid architecture diagram, all emphasis, prose and headings.",
+        "Separate editorial review needed for version-specific LMK/ART and broad performance assertions."
+      ]
+    },
+    {
+      "path": "content/post/android-os-architecture-history/index.id.md",
+      "source_sha256": "747641c1f502799e4178ce24175b839f17cc781ae6d8c02b056796201be9a279",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed; no body links. os undefined, software-development appropriate.",
+        "Potential Linux-kernel, compiler/JIT, garbage collection and licensing references need translated-target review. Keep one Mermaid architecture diagram, all emphasis, prose and headings.",
+        "Separate editorial review needed for version-specific LMK/ART and broad performance assertions."
+      ]
+    },
+    {
+      "path": "content/post/android-os-architecture-history/index.zh-cn.md",
+      "source_sha256": "5f044c403784abc99be478e91e289bfc3d9f777d84071e2c03d51bc81e7dfaeb",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed; no body links. os undefined, software-development appropriate.",
+        "Potential Linux-kernel, compiler/JIT, garbage collection and licensing references need translated-target review. Keep one Mermaid architecture diagram, all emphasis, prose and headings.",
+        "Separate editorial review needed for version-specific LMK/ART and broad performance assertions."
+      ]
+    },
+    {
+      "path": "content/post/android-os-architecture-history/index.zh-tw.md",
+      "source_sha256": "aff6e9515b2aee46ce370e4046df5619fef7df4ca534fd0789112a532d70c3ca",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed; no body links. Undefined os category needs consistent replacement, software-development appropriate.",
+        "Consider Linux-kernel, compiler/JIT, garbage-collection and licensing links after translated target review. Preserve diagram, headings and emphasis.",
+        "Version-specific LMK/ART and absolute performance claims are separate editorial concerns."
+      ]
+    },
+    {
+      "path": "content/post/android-os-architecture-history/index.ko.md",
+      "source_sha256": "8609439b3861d2cf0dd61d034f560b12e0f51f558914d93c036c1311b4bb91f6",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed; no body links. Undefined os category needs consistent replacement, software-development appropriate.",
+        "Consider Linux-kernel, compiler/JIT, garbage-collection and licensing links after translated target review. Preserve diagram, headings and emphasis.",
+        "Version-specific LMK/ART and absolute performance claims are separate editorial concerns."
+      ]
+    },
+    {
+      "path": "content/post/android-os-architecture-history/index.ru.md",
+      "source_sha256": "9ff0ba2c8249309998729cb23aa1d0f14c4e8413204b74ec45894f1f70d8b85c",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed; no body links. os undefined, software-development appropriate.",
+        "Potential same-language Linux-kernel, JIT/compiler, garbage collection and open-source licensing links; target review pending. Preserve one Mermaid diagram, headings and prose.",
+        "LMK/ART version specifics and absolute performance claims recorded as separate editorial issues."
+      ]
+    },
+    {
+      "path": "content/post/android-os-architecture-history/index.ar.md",
+      "source_sha256": "6744848b50d2ce3a0ce4533cffb405e126e175b7503755cd356ee532c92294e3",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed; no body links. os undefined; software-development appropriate.",
+        "Potential same-language Linux kernel, JIT/compiler, garbage collection and licensing links need target review. Preserve one Mermaid diagram and full prose.",
+        "Version-specific LMK/ART and broad performance assertions left for separate editorial review."
+      ]
+    },
+    {
+      "path": "content/post/android-os-architecture-history/index.hi.md",
+      "source_sha256": "220ac8b0a23ed8f4fc4a15ba04929ac59a7982492fd9794d4291e245bd6cb1a2",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed; no body links. os undefined; software-development appropriate.",
+        "Potential same-language Linux kernel, JIT/compiler, garbage collection and licensing links need target review. Preserve one Mermaid diagram and full prose.",
+        "Version-specific LMK/ART and broad performance assertions left for separate editorial review."
+      ]
+    }
+  ],
+  "unread_languages": [],
+  "category_proposal": {
+    "action": "Add localized definitions for existing os identifier, retaining current article categories and URLs. No alias migrations yet.",
+    "rationale": "Initial snapshot has exactly five operating-system platform bundles (Android, iOS, Linux, macOS, Windows), 65 translations using os. Existing os concept is appropriate; missing category labels cause untranslated/undefined display. Other bundles still require full-body audit and must not be marked complete by category definition alone.",
+    "labels": {
+      "ja": "オペレーティングシステム",
+      "en": "Operating Systems",
+      "de": "Betriebssysteme",
+      "fr": "Systèmes d’exploitation",
+      "es": "Sistemas operativos",
+      "pt": "Sistemas operacionais",
+      "id": "Sistem Operasi",
+      "ko": "운영체제",
+      "zh-cn": "操作系统",
+      "zh-tw": "作業系統",
+      "ar": "أنظمة التشغيل",
+      "hi": "ऑपरेटिंग सिस्टम",
+      "ru": "Операционные системы"
+    },
+    "status": "proposal recorded; not applied; validate all affected category headers when implemented"
+  },
+  "target_review": {
+    "linux-kernel-history-architecture": "Japanese introduction and monolithic/microkernel architecture section inspected; appropriate for Android Linux-kernel term. Other target languages pending.",
+    "garbage-collection-history-zgc": "Japanese introduction inspected; covers automatic memory reclamation and GC algorithm progression, appropriate for Android GC list item. Other target languages pending.",
+    "compiler-optimization-ssa": "Japanese introduction inspected; specializes in SSA optimization, not directly JIT/AOT lifecycle. Prefer more directly matching references; no link selected yet.",
+    "licensing": "No dedicated licensing explainer found by title search. Do not link to unrelated Windows activation or image-license posts."
+  }
+}

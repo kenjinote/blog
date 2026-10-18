@@ -1,0 +1,248 @@
+{
+  "batch": "015-android-links",
+  "status": "reviewed; not applied",
+  "review": "All thirteen Android bodies reviewed. Add kernel architecture and garbage-collection explanations in matching languages. Target introductions and scopes read in all languages. Define os category labels separately, retaining existing identifiers and category URLs. No source or category files have been edited.",
+  "required_category_work": {
+    "action": "Add localized definitions for existing os identifier, retaining current article categories and URLs. No alias migrations yet.",
+    "rationale": "Initial snapshot has exactly five operating-system platform bundles (Android, iOS, Linux, macOS, Windows), 65 translations using os. Existing os concept is appropriate; missing category labels cause untranslated/undefined display. Other bundles still require full-body audit and must not be marked complete by category definition alone.",
+    "labels": {
+      "ja": "オペレーティングシステム",
+      "en": "Operating Systems",
+      "de": "Betriebssysteme",
+      "fr": "Systèmes d’exploitation",
+      "es": "Sistemas operativos",
+      "pt": "Sistemas operacionais",
+      "id": "Sistem Operasi",
+      "ko": "운영체제",
+      "zh-cn": "操作系统",
+      "zh-tw": "作業系統",
+      "ar": "أنظمة التشغيل",
+      "hi": "ऑपरेटिंग सिस्टम",
+      "ru": "Операционные системы"
+    },
+    "status": "proposal recorded; not applied; validate all affected category headers when implemented"
+  },
+  "articles": [
+    {
+      "path": "content/post/android-os-architecture-history/index.md",
+      "source_sha256": "e546fda7ccf5b788e5e26ed7ea2b6b93c170eaa5f43e68fc348ec027c6f6a5c0",
+      "links": [
+        {
+          "term": "Linuxカーネル",
+          "context": "本記事では、この驚異的な普及を見せるAndroid OSが、どのようなアーキテクチャ（階層構造）で成り立っているのか、そしてその中核となる技術が歴史と共にどのように進化してきたのかを、Linuxカーネル、ハードウェアアブストラクションレイヤー（HAL）、そしてDalvikからART（Android Runtime）への変遷といった深い技術的視点から詳細に解説します。",
+          "target": "content/post/linux-kernel-history-architecture/index.md"
+        },
+        {
+          "term": "ガベージコレクション",
+          "context": "3. **ガベージコレクションの最適化**: ARTはメモリ管理（不要になったメモリの解放処理）のアルゴリズムが根本的に見直され、アプリの動作を停止させてしまうような「一時停止（フリーズ）」が極限まで削減されました。",
+          "target": "content/post/garbage-collection-history-zgc/index.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject."
+    },
+    {
+      "path": "content/post/android-os-architecture-history/index.en.md",
+      "source_sha256": "4c1b819a7a0269dbdb032aedd10a17e722537288f1ab4b24853f0001ce591f4b",
+      "links": [
+        {
+          "term": "Linux kernel",
+          "context": "In this article, we will explain in detail the architecture (layered structure) of the Android OS, which is experiencing this phenomenal spread, and how its core technologies have evolved alongside its history, from deep technical perspectives such as the Linux kernel, the Hardware Abstraction Layer (HAL), and the transition from Dalvik to ART (Android Runtime).",
+          "target": "content/post/linux-kernel-history-architecture/index.en.md"
+        },
+        {
+          "term": "Garbage Collection",
+          "context": "3. **Optimization of Garbage Collection**: ART fundamentally reviewed the memory management (releasing memory that is no longer needed) algorithm, minimizing \"pauses (freezes)\" that would stop the app's operation to the absolute limit.",
+          "target": "content/post/garbage-collection-history-zgc/index.en.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject."
+    },
+    {
+      "path": "content/post/android-os-architecture-history/index.de.md",
+      "source_sha256": "1bf1e210954b2b743731a5fb516f752a0cdf5bab384f7b24573df83c525611cd",
+      "links": [
+        {
+          "term": "Linux-Kernel",
+          "context": "In diesem Artikel werden wir im Detail aus einer tiefgreifenden technischen Perspektive erläutern, aus welcher Architektur (hierarchischen Struktur) dieses erstaunlich weit verbreitete Android-Betriebssystem besteht und wie sich seine Kerntechnologien im Laufe der Geschichte entwickelt haben – vom Linux-Kernel über den Hardware Abstraction Layer (HAL) bis hin zum Übergang von Dalvik zur ART (Android Runtime).",
+          "target": "content/post/linux-kernel-history-architecture/index.de.md"
+        },
+        {
+          "term": "Garbage Collection",
+          "context": "3. **Optimierung der Garbage Collection**: Der Algorithmus für das Speichermanagement (Freigabe nicht mehr benötigten Speichers) von ART wurde grundlegend überarbeitet, wodurch \"Pausen\" (Freezes), die den Betrieb einer App zum Stillstand brachten, auf das Äußerste reduziert wurden.",
+          "target": "content/post/garbage-collection-history-zgc/index.de.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject."
+    },
+    {
+      "path": "content/post/android-os-architecture-history/index.fr.md",
+      "source_sha256": "45649a6accde08b75e8daccb2cdbe8151567d05a56ebc66946125fd0392f4fbd",
+      "links": [
+        {
+          "term": "noyau Linux",
+          "context": "Cet article explique en détail l'architecture (structure hiérarchique) sur laquelle repose cet OS Android incroyablement populaire, ainsi que la manière dont ses technologies de base ont évolué au fil de l'histoire, d'un point de vue technique approfondi tel que le noyau Linux, la couche d'abstraction matérielle (HAL) et la transition de Dalvik à ART (Android Runtime).",
+          "target": "content/post/linux-kernel-history-architecture/index.fr.md"
+        },
+        {
+          "term": "ramasse-miettes",
+          "context": "3. **Optimisation du ramasse-miettes (Garbage Collection)** : Les algorithmes de gestion de la mémoire (processus de libération de la mémoire qui n'est plus nécessaire) d'ART ont été fondamentalement revus, et les \"pauses (blocages)\" qui arrêtaient le fonctionnement de l'application ont été réduites à l'extrême.",
+          "target": "content/post/garbage-collection-history-zgc/index.fr.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject."
+    },
+    {
+      "path": "content/post/android-os-architecture-history/index.es.md",
+      "source_sha256": "8bf5e1e7806b1ed2f4e40718a5193abf2045dd1b01d2f64fe1ea7378d893d36d",
+      "links": [
+        {
+          "term": "kernel de Linux",
+          "context": "En este artículo, explicaremos detalladamente la arquitectura (estructura jerárquica) en la que se basa este asombrosamente popular sistema operativo Android, y cómo sus tecnologías principales han evolucionado a lo largo de la historia, desde una profunda perspectiva técnica que incluye el kernel de Linux, la Capa de Abstracción de Hardware (HAL) y la transición de Dalvik a ART (Android Runtime).",
+          "target": "content/post/linux-kernel-history-architecture/index.es.md"
+        },
+        {
+          "term": "recolección de basura",
+          "context": "3. **Optimización de la recolección de basura**: ART revisó radicalmente los algoritmos de gestión de memoria (liberación de la memoria que ya no se necesita), reduciendo al mínimo las \"pausas (congelamientos)\" que detenían el funcionamiento de la aplicación.",
+          "target": "content/post/garbage-collection-history-zgc/index.es.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject."
+    },
+    {
+      "path": "content/post/android-os-architecture-history/index.pt.md",
+      "source_sha256": "a52d1fa5eb291f2c61a53589c634daf822d03a722ee9569a370dd05ee7002db5",
+      "links": [
+        {
+          "term": "kernel do Linux",
+          "context": "Neste artigo, explicaremos detalhadamente a arquitetura (estrutura hierárquica) que compõe este incrivelmente popular Android OS, e como suas tecnologias centrais evoluíram ao longo da história, sob uma profunda perspectiva técnica que vai desde o kernel do Linux, a Hardware Abstraction Layer (HAL), até a transição do Dalvik para o ART (Android Runtime).",
+          "target": "content/post/linux-kernel-history-architecture/index.pt.md"
+        },
+        {
+          "term": "Garbage Collection",
+          "context": "3. **Otimização do Garbage Collection**: Os algoritmos de gerenciamento de memória do ART (processo de liberação de memória não utilizada) foram fundamentalmente revisados, e as \"pausas (congelamentos)\" que paralisavam a operação do aplicativo foram reduzidas ao máximo.",
+          "target": "content/post/garbage-collection-history-zgc/index.pt.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject."
+    },
+    {
+      "path": "content/post/android-os-architecture-history/index.id.md",
+      "source_sha256": "747641c1f502799e4178ce24175b839f17cc781ae6d8c02b056796201be9a279",
+      "links": [
+        {
+          "term": "kernel Linux",
+          "context": "Artikel ini akan menjelaskan secara rinci tentang arsitektur (struktur hierarki) yang membentuk OS Android yang penyebarannya luar biasa ini, dan bagaimana teknologi intinya telah berevolusi seiring berjalannya waktu, ditinjau dari perspektif teknis mendalam seperti kernel Linux, Hardware Abstraction Layer (HAL), serta transisi dari Dalvik ke ART (Android Runtime).",
+          "target": "content/post/linux-kernel-history-architecture/index.id.md"
+        },
+        {
+          "term": "Pengumpulan Sampah",
+          "context": "3. **Optimasi Pengumpulan Sampah (Garbage Collection)**: ART secara mendasar merombak algoritma manajemen memori (proses pembebasan memori yang tidak lagi diperlukan), dan \"jeda (freeze)\" yang dapat menghentikan pengoperasian aplikasi telah dikurangi hingga batas maksimum.",
+          "target": "content/post/garbage-collection-history-zgc/index.id.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject."
+    },
+    {
+      "path": "content/post/android-os-architecture-history/index.ko.md",
+      "source_sha256": "8609439b3861d2cf0dd61d034f560b12e0f51f558914d93c036c1311b4bb91f6",
+      "links": [
+        {
+          "term": "리눅스 커널",
+          "context": "본 기사에서는 이렇게 경이적인 보급률을 보이는 안드로이드 OS가 어떠한 아키텍처(계층 구조)로 이루어져 있는지, 그리고 그 핵심 기술이 역사와 함께 어떻게 진화해 왔는지를 리눅스 커널, 하드웨어 추상화 계층(HAL), 그리고 Dalvik에서 ART(Android Runtime)로의 변천이라는 깊이 있는 기술적 관점에서 상세히 해설합니다.",
+          "target": "content/post/linux-kernel-history-architecture/index.ko.md"
+        },
+        {
+          "term": "가비지 컬렉션",
+          "context": "3. **가비지 컬렉션 최적화**: ART는 메모리 관리(불필요해진 메모리를 해제하는 처리) 알고리즘을 근본적으로 재검토하여, 앱의 동작을 멈추게 하는 '일시 정지(프리즈)' 현상을 극한까지 줄였습니다.",
+          "target": "content/post/garbage-collection-history-zgc/index.ko.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject."
+    },
+    {
+      "path": "content/post/android-os-architecture-history/index.zh-cn.md",
+      "source_sha256": "5f044c403784abc99be478e91e289bfc3d9f777d84071e2c03d51bc81e7dfaeb",
+      "links": [
+        {
+          "term": "Linux内核",
+          "context": "本文将从深度技术视角详细解析这款普及惊人的Android OS是由怎样的架构（层次结构）构成的，以及其核心技术是如何随着历史演进的，包括Linux内核、硬件抽象层（HAL），以及从Dalvik到ART（Android Runtime）的演变。",
+          "target": "content/post/linux-kernel-history-architecture/index.zh-cn.md"
+        },
+        {
+          "term": "垃圾回收",
+          "context": "3. **优化垃圾回收**：ART从根本上重新设计了内存管理（释放不再需要的内存的处理）算法，将导致应用停止响应的“暂时冻结”减少到了极限。",
+          "target": "content/post/garbage-collection-history-zgc/index.zh-cn.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject."
+    },
+    {
+      "path": "content/post/android-os-architecture-history/index.zh-tw.md",
+      "source_sha256": "aff6e9515b2aee46ce370e4046df5619fef7df4ca534fd0789112a532d70c3ca",
+      "links": [
+        {
+          "term": "Linux 核心",
+          "context": "本文將從深度的技術視角，詳細解說這款驚人普及的 Android 作業系統是由什麼樣的架構（階層結構）所構成，以及其核心技術在歷史中是如何演進的，涵蓋 Linux 核心、硬體抽象層（HAL），以及從 Dalvik 到 ART（Android Runtime）的變遷。",
+          "target": "content/post/linux-kernel-history-architecture/index.zh-tw.md"
+        },
+        {
+          "term": "垃圾回收",
+          "context": "3. **垃圾回收（Garbage Collection）的最佳化**：ART 根本性地重新設計了記憶體管理（釋放不需要的記憶體）的演算法，將會導致應用程式停止運作的「短暫停頓（凍結）」減少到了極限。",
+          "target": "content/post/garbage-collection-history-zgc/index.zh-tw.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject."
+    },
+    {
+      "path": "content/post/android-os-architecture-history/index.ar.md",
+      "source_sha256": "6744848b50d2ce3a0ce4533cffb405e126e175b7503755cd356ee532c92294e3",
+      "links": [
+        {
+          "term": "نواة لينكس",
+          "context": "في هذه المقالة، سنشرح بالتفصيل البنية المعمارية (الهيكل الهرمي) التي يقوم عليها نظام تشغيل أندرويد ذو الانتشار المذهل، وكيف تطورت تقنياته الأساسية عبر التاريخ. سنلقي نظرة من منظور تقني عميق على نواة لينكس (Linux Kernel)، وطبقة تجريد الأجهزة (HAL)، وتطور بيئة التشغيل من Dalvik إلى ART (Android Runtime).",
+          "target": "content/post/linux-kernel-history-architecture/index.ar.md"
+        },
+        {
+          "term": "جمع القمامة",
+          "context": "3. **تحسين جمع القمامة (Garbage Collection)**: قامت ART بإعادة تصميم خوارزميات إدارة الذاكرة (عملية تحرير الذاكرة غير المستخدمة) من الصفر، مما قلل بشكل كبير من \"التوقفات المؤقتة (Freezes)\" التي كانت توقف عمل التطبيقات.",
+          "target": "content/post/garbage-collection-history-zgc/index.ar.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject."
+    },
+    {
+      "path": "content/post/android-os-architecture-history/index.hi.md",
+      "source_sha256": "220ac8b0a23ed8f4fc4a15ba04929ac59a7982492fd9794d4291e245bd6cb1a2",
+      "links": [
+        {
+          "term": "Linux कर्नेल",
+          "context": "इस लेख में, हम विस्तार से बताएंगे कि यह अविश्वसनीय रूप से लोकप्रिय Android OS किस आर्किटेक्चर (पदानुक्रमित संरचना) से बना है, और इसकी मुख्य तकनीकें समय के साथ कैसे विकसित हुई हैं। हम इसे Linux कर्नेल, हार्डवेयर एब्स्ट्रैक्शन लेयर (HAL), और Dalvik से ART (Android Runtime) में संक्रमण जैसे गहरे तकनीकी दृष्टिकोणों से समझाएंगे।",
+          "target": "content/post/linux-kernel-history-architecture/index.hi.md"
+        },
+        {
+          "term": "गार्बेज कलेक्शन",
+          "context": "3. **गार्बेज कलेक्शन का अनुकूलन (Optimization)**: ART ने मेमोरी प्रबंधन एल्गोरिदम (अनावश्यक मेमोरी को खाली करने की प्रक्रिया) को मौलिक रूप से नया रूप दिया, जिससे ऐप के संचालन को रोकने वाले \"विराम (freezes)\" काफी हद तक कम हो गए।",
+          "target": "content/post/garbage-collection-history-zgc/index.hi.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject."
+    },
+    {
+      "path": "content/post/android-os-architecture-history/index.ru.md",
+      "source_sha256": "9ff0ba2c8249309998729cb23aa1d0f14c4e8413204b74ec45894f1f70d8b85c",
+      "links": [
+        {
+          "term": "ядро Linux",
+          "context": "В этой статье мы подробно рассмотрим, на какой архитектуре (иерархической структуре) построена получившая невероятное распространение ОС Android, и как со временем развивались ее ключевые технологии. Мы исследуем ядро Linux, уровень аппаратных абстракций (HAL) и эволюцию от Dalvik к ART (Android Runtime) с глубокой технической точки зрения.",
+          "target": "content/post/linux-kernel-history-architecture/index.ru.md"
+        },
+        {
+          "term": "сборки мусора",
+          "context": "3. **Оптимизация сборки мусора**: Алгоритмы управления памятью (процесс освобождения неиспользуемой памяти) в ART были фундаментально переработаны, и \"приостановки\" (зависания), которые могли бы остановить работу приложения, были сведены к абсолютному минимуму.",
+          "target": "content/post/garbage-collection-history-zgc/index.ru.md"
+        }
+      ],
+      "category_decision": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject."
+    }
+  ]
+}

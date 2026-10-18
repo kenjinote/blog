@@ -9,7 +9,7 @@ date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "path", "archivo ejecutable", "símbolo del sistema"]
 draft: false
 image: "img.webp"
-categories: ["pc-gadgets"]
+categories: ["windows", "terminal"]
 description: 'Explicamos cómo averiguar fácilmente la ubicación de guardado (ruta completa) de un archivo ejecutable usando el Símbolo del sistema o PowerShell en Windows. Presentamos un truco práctico para localizar rápidamente la ubicación exacta de las aplicaciones en el path utilizando el comando ''where''.'
 ---
 
@@ -24,7 +24,7 @@ Al ejecutar un comando especificando un archivo ejecutable, a veces quieres sabe
 where <nombre_del_archivo_ejecutable>
 ```
 
-Por ejemplo, si quieres saber la ubicación de [Paint](https://kenji.blog/es/p/browser-rendering-mechanism-dom-paint/) (mspaint.exe), debes hacerlo de la siguiente manera.
+Por ejemplo, si quieres saber la ubicación de Paint (mspaint.exe), debes hacerlo de la siguiente manera.
 
 ```powershell
 where mspaint.exe

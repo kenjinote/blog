@@ -21,7 +21,7 @@ Construir una herramienta de generación de imágenes por IA en un entorno local
 3. **Privacidad y seguridad**: Como los datos no se envían a la nube, es ideal para tareas de diseño altamente confidenciales o proyectos personales.
 4. **Introducción inmediata de las últimas tecnologías**: Puede probar los últimos modelos y extensiones que la comunidad de código abierto publica diariamente.
 
-Este manual asume un entorno de Windows y explicará a fondo (con un volumen de más de 10,000 caracteres) desde cómo construir los tres principales entornos de generación de imágenes por IA (AUTOMATIC1111 Stable Diffusion WebUI, ComfyUI, Fooocus), hasta los antecedentes matemáticos fundamentales e incluso métodos de optimización de VRAM.
+Este manual asume un entorno de Windows y explicará a fondo (con un volumen de más de 10,000 caracteres) desde cómo construir los tres principales entornos de generación de imágenes por IA (AUTOMATIC1111 Stable Diffusion WebUI, ComfyUI, Fooocus), hasta los antecedentes matemáticos fundamentales e incluso [métodos de optimización de VRAM](/es/p/ai-gpu-vram-optimization-cpu-offloading/).
 
 ---
 
@@ -33,7 +33,7 @@ Para construir un entorno local y configurar los parámetros adecuadamente, es m
 
 El principio básico del modelo de difusión consiste en un "Forward Process" que agrega ruido gaussiano gradualmente a los datos originales (imagen) hasta convertirlo en ruido completo, y un "Reverse Process" que restaura la imagen original a partir de ese ruido.
 
-El Forward Process se define como una cadena de Markov, y el estado $x_t$ en el paso $t$ se expresa mediante la siguiente ecuación:
+El Forward Process se define como una [cadena de Markov](/es/p/markov-chain/), y el estado $x_t$ en el paso $t$ se expresa mediante la siguiente ecuación:
 
 $$ q(x_t | x_{t-1}) = \mathcal{N}(x_t; \sqrt{1 - \beta_t} x_{t-1}, \beta_t I) $$
 
@@ -264,7 +264,7 @@ Errores frecuentes y sus soluciones en la construcción y operación de entornos
 
 ## 10. Conclusión: El futuro de la generación de imágenes por IA y la superioridad del entorno local
 
-El movimiento de generación de imágenes por IA de código abierto, que comenzó con Stable Diffusion, continúa evolucionando hacia arquitecturas de próxima generación como SDXL, Stable Diffusion 3 y [Flux](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/).1. La cantidad de parámetros de los modelos se está volviendo enorme, pasando de miles de millones a decenas de miles de millones, por lo que en el futuro los entornos de GPU con más de 24 GB de VRAM serán aún más solicitados.
+El movimiento de generación de imágenes por IA de código abierto, que comenzó con Stable Diffusion, continúa evolucionando hacia arquitecturas de próxima generación como SDXL, Stable Diffusion 3 y Flux.1. La cantidad de parámetros de los modelos se está volviendo enorme, pasando de miles de millones a decenas de miles de millones, por lo que en el futuro los entornos de GPU con más de 24 GB de VRAM serán aún más solicitados.
 
 Sin embargo, tecnologías de optimización local como TensorRT, cuantización (Quantization) y [GGUF](/es/p/llama-cpp-quantization-gguf/) también están acelerando su evolución a la misma velocidad, y se está formando un ecosistema donde la inferencia suficiente es posible incluso con hardware para consumidores en general.
 

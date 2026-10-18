@@ -1,0 +1,37 @@
+[
+  {
+    "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.fr.md",
+    "text_without_link_wrappers_identical": true,
+    "frontmatter_math_code_identical": true,
+    "git_crlf_normalized_for_comparison": true,
+    "updated_sha256": "dc762c7e24a95a8eae60a57a7919e91b20264c0f137681193db55b8b50977de0"
+  },
+  {
+    "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.es.md",
+    "text_without_link_wrappers_identical": true,
+    "frontmatter_math_code_identical": true,
+    "git_crlf_normalized_for_comparison": true,
+    "updated_sha256": "7a464da19f31724f84c3cdfb471d908efdf344c1ea803723a0f61529d339408d"
+  },
+  {
+    "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.pt.md",
+    "text_without_link_wrappers_identical": true,
+    "frontmatter_math_code_identical": true,
+    "git_crlf_normalized_for_comparison": true,
+    "updated_sha256": "b16fd030841feba609fad3856772cb4ead0374486947c9d05015de4ae4e26edd"
+  },
+  {
+    "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.zh-cn.md",
+    "text_without_link_wrappers_identical": true,
+    "frontmatter_math_code_identical": true,
+    "git_crlf_normalized_for_comparison": true,
+    "updated_sha256": "5577f26c2d05ef215d20f9d3a2ccf163ac4383893c205814af073c34af4be460"
+  },
+  {
+    "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.zh-tw.md",
+    "text_without_link_wrappers_identical": true,
+    "frontmatter_math_code_identical": true,
+    "git_crlf_normalized_for_comparison": true,
+    "updated_sha256": "faeb4027c279f713daecfc92bc95fd7402a26f67c93d65c07644fa13f54d182f"
+  }
+]

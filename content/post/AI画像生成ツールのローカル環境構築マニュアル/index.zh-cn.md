@@ -21,7 +21,7 @@ AI图像生成技术以Stable Diffusion的开源为契机，取得了爆发式�
 3. **隐私与安全性** ：因为不会将数据发送到云端，非常适合机密性高的设计工作或个人项目。
 4. **即刻引入最新技术** ：可以第一时间尝试开源社区每天发布的最新模型和扩展功能。
 
-本指南以Windows环境为前提，针对目前主流的三种AI图像生成环境（AUTOMATIC1111 Stable Diffusion WebUI、ComfyUI、Fooocus），从搭建方法到基础的数学背景，甚至是VRAM的优化方法，将以超过一万字的篇幅进行彻底的讲解。
+本指南以Windows环境为前提，针对目前主流的三种AI图像生成环境（AUTOMATIC1111 Stable Diffusion WebUI、ComfyUI、Fooocus），从搭建方法到基础的数学背景，甚至是[VRAM的优化方法](/zh-cn/p/ai-gpu-vram-optimization-cpu-offloading/)，将以超过一万字的篇幅进行彻底的讲解。
 
 ---
 
@@ -264,7 +264,7 @@ ControlNet 具有这样一种架构：在保持预训练的 Stable Diffusion 模
 
 ## 10. 结语：AI图像生成的未来与本地环境的优势
 
-以 Stable Diffusion 为开端的开源 AI 图像生成运动，正持续向 SDXL，以及 Stable Diffusion 3、[Flux](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/).1 等次世代架构进化。模型的参数量已经从数十亿扩大到了百亿级别，未来对 24GB 以上 VRAM 的 GPU 环境的需求将进一步增加。
+以 Stable Diffusion 为开端的开源 AI 图像生成运动，正持续向 SDXL，以及 Stable Diffusion 3、Flux.1 等次世代架构进化。模型的参数量已经从数十亿扩大到了百亿级别，未来对 24GB 以上 VRAM 的 GPU 环境的需求将进一步增加。
 
 然而，TensorRT 以及量化技术（Quantization）、[GGUF](/zh-cn/p/llama-cpp-quantization-gguf/) 等本地优化技术也在同样加快其进化的步伐，一个即使在面向普通消费者的硬件上也能进行充分推理的生态系统正在形成。
 

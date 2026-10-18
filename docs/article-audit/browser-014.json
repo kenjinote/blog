@@ -1,0 +1,2257 @@
+[
+  {
+    "batch": "014-windows-executable-location",
+    "language": "ar",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "كيفية-العثور-على-موقع-ملف-تنفيذي-في-مسار-windows",
+          "text": "كيفية العثور على موقع ملف تنفيذي في مسار Windows"
+        },
+        {
+          "id": "المراجع",
+          "text": "المراجع"
+        }
+      ],
+      "paragraphs": [
+        "عند تشغيل أمر بتحديد ملف تنفيذي، قد ترغب في معرفة مكان هذا الملف التنفيذي. في مثل هذه الحالات، يمكنك استخدام الأمر أدناه للتحقق من موقع الملف التنفيذي.",
+        "على سبيل المثال، إذا كنت تريد معرفة موقع برنامج الرسام (mspaint.exe)، افعل ما يلي:"
+      ],
+      "code": [
+        "1\n",
+        "where <اسم الملف التنفيذي>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "الكمبيوتر والأجهزة الذكية",
+          "path": "/ar/categories/pc-gadgets/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "كيفية-العثور-على-موقع-ملف-تنفيذي-في-مسار-windows",
+          "text": "كيفية العثور على موقع ملف تنفيذي في مسار Windows"
+        },
+        {
+          "id": "المراجع",
+          "text": "المراجع"
+        }
+      ],
+      "paragraphs": [
+        "عند تشغيل أمر بتحديد ملف تنفيذي، قد ترغب في معرفة مكان هذا الملف التنفيذي. في مثل هذه الحالات، يمكنك استخدام الأمر أدناه للتحقق من موقع الملف التنفيذي.",
+        "على سبيل المثال، إذا كنت تريد معرفة موقع برنامج الرسام (mspaint.exe)، افعل ما يلي:"
+      ],
+      "code": [
+        "1\n",
+        "where <اسم الملف التنفيذي>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Windows",
+          "path": "/ar/categories/windows/"
+        },
+        {
+          "text": "الطرفية",
+          "path": "/ar/categories/terminal/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "014-windows-executable-location",
+    "language": "de",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "so-finden-sie-den-speicherort-einer-ausführbaren-datei-im-path-unter-windows",
+          "text": "So finden Sie den Speicherort einer ausführbaren Datei im PATH unter Windows"
+        },
+        {
+          "id": "referenzen",
+          "text": "Referenzen"
+        }
+      ],
+      "paragraphs": [
+        "Wenn Sie einen Befehl ausführen, indem Sie eine ausführbare Datei angeben, möchten Sie manchmal wissen, wo sich diese ausführbare Datei befindet. In solchen Fällen können Sie den Speicherort der ausführbaren Datei mit dem folgenden Befehl ermitteln.",
+        "Wenn Sie beispielsweise den Speicherort von Paint (mspaint.exe) wissen möchten, gehen Sie wie folgt vor:"
+      ],
+      "code": [
+        "1\n",
+        "where <name_der_ausführbaren_datei>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "PC und Gadgets",
+          "path": "/de/categories/pc-gadgets/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "Paint",
+          "path": "/de/p/browser-rendering-mechanism-dom-paint/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "so-finden-sie-den-speicherort-einer-ausführbaren-datei-im-path-unter-windows",
+          "text": "So finden Sie den Speicherort einer ausführbaren Datei im PATH unter Windows"
+        },
+        {
+          "id": "referenzen",
+          "text": "Referenzen"
+        }
+      ],
+      "paragraphs": [
+        "Wenn Sie einen Befehl ausführen, indem Sie eine ausführbare Datei angeben, möchten Sie manchmal wissen, wo sich diese ausführbare Datei befindet. In solchen Fällen können Sie den Speicherort der ausführbaren Datei mit dem folgenden Befehl ermitteln.",
+        "Wenn Sie beispielsweise den Speicherort von Paint (mspaint.exe) wissen möchten, gehen Sie wie folgt vor:"
+      ],
+      "code": [
+        "1\n",
+        "where <name_der_ausführbaren_datei>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Windows",
+          "path": "/de/categories/windows/"
+        },
+        {
+          "text": "Terminal",
+          "path": "/de/categories/terminal/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "014-windows-executable-location",
+    "language": "en",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "how-to-find-the-location-of-an-executable-in-windows",
+          "text": "How to find the location of an executable in Windows"
+        },
+        {
+          "id": "references",
+          "text": "References"
+        }
+      ],
+      "paragraphs": [
+        "Sometimes when you execute a command by specifying an executable file, you want to know where that executable file is located. In such cases, you can find the location of the executable file using the following command.",
+        "For example, if you want to know the location of Paint (mspaint.exe), you can do it as follows."
+      ],
+      "code": [
+        "1\n",
+        "where <executable_file_name>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "PC & Gadgets",
+          "path": "/en/categories/pc-gadgets/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "Paint",
+          "path": "/en/p/browser-rendering-mechanism-dom-paint/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "how-to-find-the-location-of-an-executable-in-windows",
+          "text": "How to find the location of an executable in Windows"
+        },
+        {
+          "id": "references",
+          "text": "References"
+        }
+      ],
+      "paragraphs": [
+        "Sometimes when you execute a command by specifying an executable file, you want to know where that executable file is located. In such cases, you can find the location of the executable file using the following command.",
+        "For example, if you want to know the location of Paint (mspaint.exe), you can do it as follows."
+      ],
+      "code": [
+        "1\n",
+        "where <executable_file_name>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Windows",
+          "path": "/en/categories/windows/"
+        },
+        {
+          "text": "Terminal",
+          "path": "/en/categories/terminal/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "014-windows-executable-location",
+    "language": "es",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "cómo-encontrar-la-ubicación-de-un-archivo-ejecutable-en-el-path-en-windows",
+          "text": "Cómo encontrar la ubicación de un archivo ejecutable en el path en Windows"
+        },
+        {
+          "id": "referencias",
+          "text": "Referencias"
+        }
+      ],
+      "paragraphs": [
+        "Al ejecutar un comando especificando un archivo ejecutable, a veces quieres saber dónde está ubicado ese archivo. En esos casos, puedes averiguar la ubicación del archivo ejecutable con el siguiente comando.",
+        "Por ejemplo, si quieres saber la ubicación de Paint (mspaint.exe), debes hacerlo de la siguiente manera."
+      ],
+      "code": [
+        "1\n",
+        "where <nombre_del_archivo_ejecutable>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "PC y gadgets",
+          "path": "/es/categories/pc-gadgets/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "Paint",
+          "path": "/es/p/browser-rendering-mechanism-dom-paint/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "cómo-encontrar-la-ubicación-de-un-archivo-ejecutable-en-el-path-en-windows",
+          "text": "Cómo encontrar la ubicación de un archivo ejecutable en el path en Windows"
+        },
+        {
+          "id": "referencias",
+          "text": "Referencias"
+        }
+      ],
+      "paragraphs": [
+        "Al ejecutar un comando especificando un archivo ejecutable, a veces quieres saber dónde está ubicado ese archivo. En esos casos, puedes averiguar la ubicación del archivo ejecutable con el siguiente comando.",
+        "Por ejemplo, si quieres saber la ubicación de Paint (mspaint.exe), debes hacerlo de la siguiente manera."
+      ],
+      "code": [
+        "1\n",
+        "where <nombre_del_archivo_ejecutable>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Windows",
+          "path": "/es/categories/windows/"
+        },
+        {
+          "text": "Terminal",
+          "path": "/es/categories/terminal/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "014-windows-executable-location",
+    "language": "fr",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "comment-trouver-lemplacement-dun-fichier-exécutable-dans-le-path-sous-windows",
+          "text": "Comment trouver l’emplacement d’un fichier exécutable dans le PATH sous Windows"
+        },
+        {
+          "id": "références",
+          "text": "Références"
+        }
+      ],
+      "paragraphs": [
+        "Lorsque vous exécutez une commande en spécifiant un fichier exécutable, il peut arriver que vous souhaitiez savoir où ce fichier exécutable se trouve. Dans ce cas, vous pouvez trouver l’emplacement du fichier exécutable avec la commande suivante.",
+        "Par exemple, si vous souhaitez connaître l’emplacement de Paint (mspaint.exe), procédez comme suit :"
+      ],
+      "code": [
+        "1\n",
+        "where <nom_du_fichier_exécutable>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "PC et gadgets",
+          "path": "/fr/categories/pc-gadgets/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "Paint",
+          "path": "/fr/p/browser-rendering-mechanism-dom-paint/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "comment-trouver-lemplacement-dun-fichier-exécutable-dans-le-path-sous-windows",
+          "text": "Comment trouver l’emplacement d’un fichier exécutable dans le PATH sous Windows"
+        },
+        {
+          "id": "références",
+          "text": "Références"
+        }
+      ],
+      "paragraphs": [
+        "Lorsque vous exécutez une commande en spécifiant un fichier exécutable, il peut arriver que vous souhaitiez savoir où ce fichier exécutable se trouve. Dans ce cas, vous pouvez trouver l’emplacement du fichier exécutable avec la commande suivante.",
+        "Par exemple, si vous souhaitez connaître l’emplacement de Paint (mspaint.exe), procédez comme suit :"
+      ],
+      "code": [
+        "1\n",
+        "where <nom_du_fichier_exécutable>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Windows",
+          "path": "/fr/categories/windows/"
+        },
+        {
+          "text": "Terminal",
+          "path": "/fr/categories/terminal/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "014-windows-executable-location",
+    "language": "hi",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "windows-म-path-म-मजद-एकजकयटबल-फइल-क-सथन-कस-खज",
+          "text": "Windows में PATH में मौजूद एक्ज़ीक्यूटेबल फ़ाइल का स्थान कैसे खोजें"
+        },
+        {
+          "id": "सदरभ",
+          "text": "संदर्भ"
+        }
+      ],
+      "paragraphs": [
+        "जब आप किसी एक्ज़ीक्यूटेबल फ़ाइल को निर्दिष्ट करके कमांड चलाते हैं, तो कभी-कभी आप जानना चाहते हैं कि वह एक्ज़ीक्यूटेबल फ़ाइल कहाँ स्थित है। ऐसे मामलों में, आप निम्न कमांड से एक्ज़ीक्यूटेबल फ़ाइल का स्थान जान सकते हैं।",
+        "उदाहरण के लिए, यदि आप पेंट (mspaint.exe) का स्थान जानना चाहते हैं, तो आप निम्न कार्य कर सकते हैं:"
+      ],
+      "code": [
+        "1\n",
+        "where <एक्ज़ीक्यूटेबल_फ़ाइल_का_नाम>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "पीसी और गैजेट",
+          "path": "/hi/categories/pc-gadgets/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": ".exe",
+          "path": "/hi/p/%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A5%8D%E0%A4%AA%E0%A4%BE%E0%A4%A6%E0%A4%A8-%E0%A4%AF%E0%A5%8B%E0%A4%97%E0%A5%8D%E0%A4%AF-%E0%A4%AB%E0%A4%BC%E0%A4%BE%E0%A4%87%E0%A4%B2exe%E3%81%AE%E4%B8%AD%E8%BA%AB%E3%82%92%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%8D%E0%A4%B2%E0%A5%87%E0%A4%B7%E0%A4%A3%E3%81%99%E3%82%8B%E0%A4%9F%E0%A5%82%E0%A4%B2/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "windows-म-path-म-मजद-एकजकयटबल-फइल-क-सथन-कस-खज",
+          "text": "Windows में PATH में मौजूद एक्ज़ीक्यूटेबल फ़ाइल का स्थान कैसे खोजें"
+        },
+        {
+          "id": "सदरभ",
+          "text": "संदर्भ"
+        }
+      ],
+      "paragraphs": [
+        "जब आप किसी एक्ज़ीक्यूटेबल फ़ाइल को निर्दिष्ट करके कमांड चलाते हैं, तो कभी-कभी आप जानना चाहते हैं कि वह एक्ज़ीक्यूटेबल फ़ाइल कहाँ स्थित है। ऐसे मामलों में, आप निम्न कमांड से एक्ज़ीक्यूटेबल फ़ाइल का स्थान जान सकते हैं।",
+        "उदाहरण के लिए, यदि आप पेंट (mspaint.exe) का स्थान जानना चाहते हैं, तो आप निम्न कार्य कर सकते हैं:"
+      ],
+      "code": [
+        "1\n",
+        "where <एक्ज़ीक्यूटेबल_फ़ाइल_का_नाम>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Windows",
+          "path": "/hi/categories/windows/"
+        },
+        {
+          "text": "टर्मिनल",
+          "path": "/hi/categories/terminal/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": ".exe",
+          "path": "/hi/p/%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A5%8D%E0%A4%AA%E0%A4%BE%E0%A4%A6%E0%A4%A8-%E0%A4%AF%E0%A5%8B%E0%A4%97%E0%A5%8D%E0%A4%AF-%E0%A4%AB%E0%A4%BC%E0%A4%BE%E0%A4%87%E0%A4%B2exe%E3%81%AE%E4%B8%AD%E8%BA%AB%E3%82%92%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%8D%E0%A4%B2%E0%A5%87%E0%A4%B7%E0%A4%A3%E3%81%99%E3%82%8B%E0%A4%9F%E0%A5%82%E0%A4%B2/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "014-windows-executable-location",
+    "language": "id",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "cara-menemukan-lokasi-file-executable-di-path-windows",
+          "text": "Cara Menemukan Lokasi File Executable di Path Windows"
+        },
+        {
+          "id": "referensi",
+          "text": "Referensi"
+        }
+      ],
+      "paragraphs": [
+        "Saat menjalankan perintah dengan menentukan file executable, kadang-kadang Anda ingin tahu di mana file executable itu berada. Dalam kasus seperti itu, Anda dapat menggunakan perintah di bawah ini untuk memeriksa lokasi file executable.",
+        "Misalnya, jika Anda ingin mengetahui lokasi Paint (mspaint.exe), lakukan hal berikut:"
+      ],
+      "code": [
+        "1\n",
+        "where <nama file executable>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "PC dan gawai",
+          "path": "/id/categories/pc-gadgets/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "Paint",
+          "path": "/id/p/browser-rendering-mechanism-dom-paint/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "cara-menemukan-lokasi-file-executable-di-path-windows",
+          "text": "Cara Menemukan Lokasi File Executable di Path Windows"
+        },
+        {
+          "id": "referensi",
+          "text": "Referensi"
+        }
+      ],
+      "paragraphs": [
+        "Saat menjalankan perintah dengan menentukan file executable, kadang-kadang Anda ingin tahu di mana file executable itu berada. Dalam kasus seperti itu, Anda dapat menggunakan perintah di bawah ini untuk memeriksa lokasi file executable.",
+        "Misalnya, jika Anda ingin mengetahui lokasi Paint (mspaint.exe), lakukan hal berikut:"
+      ],
+      "code": [
+        "1\n",
+        "where <nama file executable>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Windows",
+          "path": "/id/categories/windows/"
+        },
+        {
+          "text": "Terminal",
+          "path": "/id/categories/terminal/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "014-windows-executable-location",
+    "language": "ko",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "windows에서-환경-변수-경로가-설정된-실행-파일의-위치를-찾는-방법",
+          "text": "Windows에서 환경 변수 경로가 설정된 실행 파일의 위치를 찾는 방법"
+        },
+        {
+          "id": "참고",
+          "text": "참고"
+        }
+      ],
+      "paragraphs": [
+        "실행 파일을 지정하여 명령을 실행할 때, 그 실행 파일이 어디에 있는지 알고 싶을 때가 있습니다. 그럴 때는 다음 명령어로 실행 파일의 위치를 확인할 수 있습니다.",
+        "예를 들어, 그림판(mspaint.exe)의 위치를 알고 싶을 때는 다음과 같이 합니다."
+      ],
+      "code": [
+        "1\n",
+        "where <실행 파일명>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "PC·가젯",
+          "path": "/ko/categories/pc-gadgets/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "windows에서-환경-변수-경로가-설정된-실행-파일의-위치를-찾는-방법",
+          "text": "Windows에서 환경 변수 경로가 설정된 실행 파일의 위치를 찾는 방법"
+        },
+        {
+          "id": "참고",
+          "text": "참고"
+        }
+      ],
+      "paragraphs": [
+        "실행 파일을 지정하여 명령을 실행할 때, 그 실행 파일이 어디에 있는지 알고 싶을 때가 있습니다. 그럴 때는 다음 명령어로 실행 파일의 위치를 확인할 수 있습니다.",
+        "예를 들어, 그림판(mspaint.exe)의 위치를 알고 싶을 때는 다음과 같이 합니다."
+      ],
+      "code": [
+        "1\n",
+        "where <실행 파일명>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Windows",
+          "path": "/ko/categories/windows/"
+        },
+        {
+          "text": "터미널",
+          "path": "/ko/categories/terminal/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "014-windows-executable-location",
+    "language": "ja",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "windowsでパスの通った実行ファイルの場所を見つける方法",
+          "text": "Windowsでパスの通った実行ファイルの場所を見つける方法"
+        },
+        {
+          "id": "参考",
+          "text": "参考"
+        }
+      ],
+      "paragraphs": [
+        "実行ファイルを指定してコマンドを実行するとき、その実行ファイルががどこにあるのかを知りたいときがあります。そんな時は下記のコマンドで実行ファイルの場所を調べることができます。",
+        "例えば、ペイント(mspaint.exe)の場所を知りたい場合は下記のようにします。"
+      ],
+      "code": [
+        "1\n",
+        "where <実行ファイル名>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "PC・ガジェット",
+          "path": "/categories/pc-gadgets/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "windowsでパスの通った実行ファイルの場所を見つける方法",
+          "text": "Windowsでパスの通った実行ファイルの場所を見つける方法"
+        },
+        {
+          "id": "参考",
+          "text": "参考"
+        }
+      ],
+      "paragraphs": [
+        "実行ファイルを指定してコマンドを実行するとき、その実行ファイルががどこにあるのかを知りたいときがあります。そんな時は下記のコマンドで実行ファイルの場所を調べることができます。",
+        "例えば、ペイント(mspaint.exe)の場所を知りたい場合は下記のようにします。"
+      ],
+      "code": [
+        "1\n",
+        "where <実行ファイル名>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Windows",
+          "path": "/categories/windows/"
+        },
+        {
+          "text": "ターミナル",
+          "path": "/categories/terminal/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "014-windows-executable-location",
+    "language": "pt",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "como-encontrar-a-localização-de-um-arquivo-executável-no-path-do-windows",
+          "text": "Como encontrar a localização de um arquivo executável no PATH do Windows"
+        },
+        {
+          "id": "referências",
+          "text": "Referências"
+        }
+      ],
+      "paragraphs": [
+        "Quando você executa um comando especificando um arquivo executável, há momentos em que deseja saber onde esse arquivo executável está localizado. Nesses casos, você pode descobrir a localização do arquivo executável com o seguinte comando.",
+        "Por exemplo, se você quiser saber a localização do Paint (mspaint.exe), faça o seguinte:"
+      ],
+      "code": [
+        "1\n",
+        "where <nome_do_arquivo_executável>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "PC e gadgets",
+          "path": "/pt/categories/pc-gadgets/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "Paint",
+          "path": "/pt/p/browser-rendering-mechanism-dom-paint/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "como-encontrar-a-localização-de-um-arquivo-executável-no-path-do-windows",
+          "text": "Como encontrar a localização de um arquivo executável no PATH do Windows"
+        },
+        {
+          "id": "referências",
+          "text": "Referências"
+        }
+      ],
+      "paragraphs": [
+        "Quando você executa um comando especificando um arquivo executável, há momentos em que deseja saber onde esse arquivo executável está localizado. Nesses casos, você pode descobrir a localização do arquivo executável com o seguinte comando.",
+        "Por exemplo, se você quiser saber a localização do Paint (mspaint.exe), faça o seguinte:"
+      ],
+      "code": [
+        "1\n",
+        "where <nome_do_arquivo_executável>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Windows",
+          "path": "/pt/categories/windows/"
+        },
+        {
+          "text": "Terminal",
+          "path": "/pt/categories/terminal/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "014-windows-executable-location",
+    "language": "ru",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "как-найти-расположение-исполняемого-файла-в-пути-windows",
+          "text": "Как найти расположение исполняемого файла в пути Windows"
+        },
+        {
+          "id": "ссылки",
+          "text": "Ссылки"
+        }
+      ],
+      "paragraphs": [
+        "При выполнении команды с указанием исполняемого файла иногда хочется узнать, где находится этот исполняемый файл. В таких случаях можно использовать команду ниже, чтобы проверить расположение исполняемого файла.",
+        "Например, если вы хотите узнать расположение Paint (mspaint.exe), сделайте следующее:"
+      ],
+      "code": [
+        "1\n",
+        "where <имя исполняемого файла>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "ПК и гаджеты",
+          "path": "/ru/categories/pc-gadgets/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "Paint",
+          "path": "/ru/p/browser-rendering-mechanism-dom-paint/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "как-найти-расположение-исполняемого-файла-в-пути-windows",
+          "text": "Как найти расположение исполняемого файла в пути Windows"
+        },
+        {
+          "id": "ссылки",
+          "text": "Ссылки"
+        }
+      ],
+      "paragraphs": [
+        "При выполнении команды с указанием исполняемого файла иногда хочется узнать, где находится этот исполняемый файл. В таких случаях можно использовать команду ниже, чтобы проверить расположение исполняемого файла.",
+        "Например, если вы хотите узнать расположение Paint (mspaint.exe), сделайте следующее:"
+      ],
+      "code": [
+        "1\n",
+        "where <имя исполняемого файла>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Windows",
+          "path": "/ru/categories/windows/"
+        },
+        {
+          "text": "Терминал",
+          "path": "/ru/categories/terminal/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "014-windows-executable-location",
+    "language": "zh-cn",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "在-windows-中查找已添加到-path-路径的可执行文件位置的方法",
+          "text": "在 Windows 中查找已添加到 PATH 路径的可执行文件位置的方法"
+        },
+        {
+          "id": "参考",
+          "text": "参考"
+        }
+      ],
+      "paragraphs": [
+        "在指定可执行文件并运行命令时，有时我们会想知道该可执行文件到底在哪里。这种情况下，可以使用以下命令来查找可执行文件的位置。",
+        "例如，如果想知道画图程序 (mspaint.exe) 的位置，可以像下面这样做。"
+      ],
+      "code": [
+        "1\n",
+        "where <可执行文件名>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "电脑与数码",
+          "path": "/zh-cn/categories/pc-gadgets/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "在-windows-中查找已添加到-path-路径的可执行文件位置的方法",
+          "text": "在 Windows 中查找已添加到 PATH 路径的可执行文件位置的方法"
+        },
+        {
+          "id": "参考",
+          "text": "参考"
+        }
+      ],
+      "paragraphs": [
+        "在指定可执行文件并运行命令时，有时我们会想知道该可执行文件到底在哪里。这种情况下，可以使用以下命令来查找可执行文件的位置。",
+        "例如，如果想知道画图程序 (mspaint.exe) 的位置，可以像下面这样做。"
+      ],
+      "code": [
+        "1\n",
+        "where <可执行文件名>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Windows",
+          "path": "/zh-cn/categories/windows/"
+        },
+        {
+          "text": "终端",
+          "path": "/zh-cn/categories/terminal/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "014-windows-executable-location",
+    "language": "zh-tw",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "如何在-windows-中尋找路徑中的執行檔位置",
+          "text": "如何在 Windows 中尋找路徑中的執行檔位置"
+        },
+        {
+          "id": "參考",
+          "text": "參考"
+        }
+      ],
+      "paragraphs": [
+        "當您指定一個執行檔來執行命令時，有時您會想知道該執行檔的確切位置。在這種情況下，您可以使用以下命令來找出執行檔的位置。",
+        "例如，如果您想知道小畫家 (mspaint.exe) 的位置，請執行以下操作："
+      ],
+      "code": [
+        "1\n",
+        "where <執行檔名稱>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "電腦與數位裝置",
+          "path": "/zh-tw/categories/pc-gadgets/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "How do I find the location of an executable in Windows?"
+      ],
+      "headings": [
+        {
+          "id": "如何在-windows-中尋找路徑中的執行檔位置",
+          "text": "如何在 Windows 中尋找路徑中的執行檔位置"
+        },
+        {
+          "id": "參考",
+          "text": "參考"
+        }
+      ],
+      "paragraphs": [
+        "當您指定一個執行檔來執行命令時，有時您會想知道該執行檔的確切位置。在這種情況下，您可以使用以下命令來找出執行檔的位置。",
+        "例如，如果您想知道小畫家 (mspaint.exe) 的位置，請執行以下操作："
+      ],
+      "code": [
+        "1\n",
+        "where <執行檔名稱>\n",
+        "1\n",
+        "where mspaint.exe\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-%E3%81%A7%E3%83%91%E3%82%B9%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%E5%AE%9F%E8%A1%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/img_hu3980690835672910555.webp",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 0,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Windows",
+          "path": "/zh-tw/categories/windows/"
+        },
+        {
+          "text": "終端機",
+          "path": "/zh-tw/categories/terminal/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "How do I find the location of an executable in Windows?",
+          "path": "/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows",
+          "host": "superuser.com"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  }
+]

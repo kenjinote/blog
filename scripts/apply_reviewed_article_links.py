@@ -30,12 +30,24 @@ def link_reviewed_context(source, term, context, destination, math_literals=(), 
         raise ValueError('Reviewed context must identify exactly one term')
     start = source.index(context) + context.index(term)
     end = start + len(term)
+    # HTML-like command placeholders inside complete fences are code, not
+    # enclosing HTML. Mask only their contents in the scanner probe, retaining
+    # line lengths and fence markers; never permit editing inside the fence.
+    fence_pattern = r'(?ms)^(`{3,}|~{3,})[^\r\n]*\r?\n.*?^\1[ \t]*(?=\r?$)'
+    fenced = list(re.finditer(fence_pattern, source))
+    if any(m.start() < end and m.end() > start for m in fenced):
+        raise ValueError('Reviewed term overlaps fenced code')
+    def mask_fence(match):
+        lines = match[0].splitlines(keepends=True)
+        middle = ''.join(lines[1:-1])
+        return lines[0] + re.sub(r'[^\r\n]', ' ', middle) + lines[-1]
+    probe_source = re.sub(fence_pattern, mask_fence, source)
     # Only mask known inline tags for the existing conservative scanner. Unknown
     # HTML and shortcodes still cause a refusal. Never edit tag text/attributes.
     tags = list(re.finditer(r'</?(?:strong|br)\b[^>]*>', source, re.I))
     if any(m.start() < end and m.end() > start for m in tags):
         raise ValueError('Reviewed term overlaps HTML markup')
-    masked = re.sub(r'</?(?:strong|br)\b[^>]*>', lambda m: ''.join('\n' if c == '\n' else ' ' for c in m[0]), source, flags=re.I)
+    masked = re.sub(r'</?(?:strong|br)\b[^>]*>', lambda m: ''.join('\n' if c == '\n' else ' ' for c in m[0]), probe_source, flags=re.I)
     # The generic scanner protects a whole block beginning with a heading.
     # For an explicitly reviewed body span, isolate the heading in the probe
     # without permitting changes to the heading itself or to fenced content.

@@ -21,7 +21,7 @@ Membangun alat pembuatan gambar AI di lingkungan lokal (PC Anda sendiri) memilik
 3. **Privasi dan Keamanan**: Karena tidak ada data yang dikirim ke cloud, ini sangat ideal untuk pekerjaan desain yang sangat rahasia atau proyek pribadi.
 4. **Penerapan Teknologi Terbaru Secara Instan**: Anda dapat dengan cepat menguji model terbaru dan ekstensi yang dirilis setiap hari oleh komunitas sumber terbuka.
 
-Panduan ini berasumsi menggunakan lingkungan Windows dan menjelaskan secara menyeluruh cara membangun tiga lingkungan pembuatan gambar AI utama saat ini (AUTOMATIC1111 Stable Diffusion WebUI, ComfyUI, dan Fooocus), serta latar belakang matematika yang mendasarinya dan bahkan metode pengoptimalan VRAM, dengan volume melebihi 10.000 karakter (dalam bahasa Jepang).
+Panduan ini berasumsi menggunakan lingkungan Windows dan menjelaskan secara menyeluruh cara membangun tiga lingkungan pembuatan gambar AI utama saat ini (AUTOMATIC1111 Stable Diffusion WebUI, ComfyUI, dan Fooocus), serta latar belakang matematika yang mendasarinya dan bahkan [metode pengoptimalan VRAM](/id/p/ai-gpu-vram-optimization-cpu-offloading/), dengan volume melebihi 10.000 karakter (dalam bahasa Jepang).
 
 ---
 
@@ -264,7 +264,7 @@ Berikut adalah kesalahan umum dan solusinya selama pembangunan dan pengoperasian
 
 ## 10. Kesimpulan: Masa Depan Pembuatan Gambar AI dan Keunggulan Lingkungan Lokal
 
-Gerakan pembuatan gambar AI sumber terbuka, yang dimulai dengan Stable Diffusion, terus berkembang menjadi SDXL dan arsitektur generasi mendatang seperti Stable Diffusion 3 dan [Flux](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/).1. Jumlah parameter model telah berkembang pesat dari miliaran menjadi puluhan miliar, dan di masa depan, lingkungan GPU dengan VRAM 24GB atau lebih akan semakin dibutuhkan.
+Gerakan pembuatan gambar AI sumber terbuka, yang dimulai dengan Stable Diffusion, terus berkembang menjadi SDXL dan arsitektur generasi mendatang seperti Stable Diffusion 3 dan Flux.1. Jumlah parameter model telah berkembang pesat dari miliaran menjadi puluhan miliar, dan di masa depan, lingkungan GPU dengan VRAM 24GB atau lebih akan semakin dibutuhkan.
 
 Namun, teknologi optimalisasi lokal seperti TensorRT, kuantisasi (Quantization), dan [GGUF](/id/p/llama-cpp-quantization-gguf/) juga mempercepat evolusi mereka, membentuk ekosistem yang memungkinkan inferensi yang memadai bahkan pada perangkat keras untuk konsumen umum.
 

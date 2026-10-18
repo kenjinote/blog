@@ -6,7 +6,7 @@ date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "Caminho", "Arquivo executável", "Prompt de Comando"]
 draft: false
 image: "img.webp"
-categories: ["pc-gadgets"]
+categories: ["windows", "terminal"]
 description: 'Explicamos como verificar facilmente o local de salvamento (caminho completo) do arquivo executável no Prompt de Comando do Windows ou no PowerShell. Apresentamos um truque útil para localizar rapidamente o local exato do aplicativo no caminho usando o comando ''where''.'
 ---
 
@@ -18,7 +18,7 @@ Quando você executa um comando especificando um arquivo executável, há moment
 where <nome_do_arquivo_executável>
 ```
 
-Por exemplo, se você quiser saber a localização do [Paint](https://kenji.blog/pt/p/browser-rendering-mechanism-dom-paint/) (mspaint.exe), faça o seguinte:
+Por exemplo, se você quiser saber a localização do Paint (mspaint.exe), faça o seguinte:
 
 ```powershell
 where mspaint.exe

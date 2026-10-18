@@ -21,7 +21,7 @@ AI圖像生成技術以Stable Diffusion的開源為開端，實現了爆發性�
 3. **隱私與安全性** ：因為不會將資料傳送到雲端，最適合機密性高的設計業務或個人專案。
 4. **即時導入最新技術** ：可以搶先體驗開源社群每天發表的最新模型與擴充功能。
 
-本手冊以Windows環境為前提，從目前主流的3個AI圖像生成環境（AUTOMATIC1111 Stable Diffusion WebUI、ComfyUI、Fooocus）的建置方法，到作為基礎的數學背景，乃至於VRAM的最佳化手法，以超過10,000字的篇幅為您進行徹底解說。
+本手冊以Windows環境為前提，從目前主流的3個AI圖像生成環境（AUTOMATIC1111 Stable Diffusion WebUI、ComfyUI、Fooocus）的建置方法，到作為基礎的數學背景，乃至於[VRAM的最佳化手法](/zh-tw/p/ai-gpu-vram-optimization-cpu-offloading/)，以超過10,000字的篇幅為您進行徹底解說。
 
 ---
 
@@ -264,7 +264,7 @@ ControlNet 的架構是保持已經訓練好的 Stable Diffusion 模型的權重
 
 ## 10. 結語：AI圖像生成的未來與本機環境的優勢
 
-從 Stable Diffusion 開始的開源 AI 圖像生成運動，正持續向 SDXL，以及 Stable Diffusion 3、[Flux](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/).1 等次世代架構進化。模型的參數數量已從數十億巨大化至百億等級，未來對於具備 24GB 以上 VRAM 的 GPU 環境的需求將會更加迫切。
+從 Stable Diffusion 開始的開源 AI 圖像生成運動，正持續向 SDXL，以及 Stable Diffusion 3、Flux.1 等次世代架構進化。模型的參數數量已從數十億巨大化至百億等級，未來對於具備 24GB 以上 VRAM 的 GPU 環境的需求將會更加迫切。
 
 然而，TensorRT、量化技術（Quantization）、[GGUF](/zh-tw/p/llama-cpp-quantization-gguf/)等本機最佳化技術也同樣在加快進化速度，一個能讓一般消費者級別的硬體也能進行充分推論的生態系統正在形成中。
 

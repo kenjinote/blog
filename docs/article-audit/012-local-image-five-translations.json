@@ -1,0 +1,149 @@
+{
+  "batch": "012-local-image-five-translations",
+  "status": "validated; awaiting commit and push",
+  "review": "Five full bodies reviewed; unwrap Flux model / React Flux confusion and French Go capacity / programming-language confusion. Add same-language VRAM optimization and Markov definition references. Preserve prose, categories, math, diagrams, commands and headings.",
+  "articles": [
+    {
+      "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.fr.md",
+      "source_sha256": "a169c9de858b5f21bebf5f864fb9417a65247aa996eb587aacdd37389d51f9d7",
+      "unwrap_links": [
+        {
+          "link": "[Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/)",
+          "context": "*   **Exigences minimales** : VRAM 6 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) (GTX 1060 6 Go / RTX 2060, etc.). ※Cependant, il y aura d'importantes restrictions de résolution et de fonctionnalités.",
+          "reason": "misleading"
+        },
+        {
+          "link": "[Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/)",
+          "context": "*   `--medvram` : Pour les environnements avec 6 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) à 8 Go de VRAM. Divise le traitement de U-Net pour économiser de la mémoire, mais la vitesse diminue légèrement.",
+          "reason": "misleading"
+        },
+        {
+          "link": "[Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/)",
+          "context": "*   `--lowvram` : Pour les environnements avec 4 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) de VRAM ou moins. Déplace constamment les modules dans et hors de la VRAM, ce qui réduit considérablement la vitesse mais permet de forcer l'exécution.",
+          "reason": "misleading"
+        },
+        {
+          "link": "[Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/)",
+          "context": "**R3 :** Il y a probablement une incohérence dans les bibliothèques de dépendances. Supprimez complètement le dossier `venv` situé dans le répertoire de WebUI, puis exécutez à nouveau `webui-user.bat`. L'environnement virtuel sera reconstruit proprement (un re-téléchargement de plusieurs [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) sera nécessaire).",
+          "reason": "misleading"
+        },
+        {
+          "link": "[Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/)",
+          "context": "Le mouvement de la génération d'images par IA open source, qui a commencé avec Stable Diffusion, continue d'évoluer vers des architectures de nouvelle génération telles que SDXL, puis Stable Diffusion 3 et [Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/).1. Le nombre de paramètres des modèles est devenu gigantesque, passant de quelques milliards à plusieurs dizaines de milliards, ce qui nécessitera de plus en plus des environnements GPU avec 24 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) de VRAM ou plus à l'avenir.",
+          "reason": "misleading"
+        },
+        {
+          "link": "[Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/)",
+          "context": "[Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/)",
+          "reason": "misleading"
+        }
+      ],
+      "links": [
+        {
+          "term": "méthodes d'optimisation de la VRAM",
+          "context": "Ce manuel, basé sur un environnement Windows, explique en détail (avec plus de 10 000 caractères) comment configurer les trois environnements de génération d'images par IA actuellement dominants (AUTOMATIC1111 Stable Diffusion WebUI, ComfyUI, Fooocus), ainsi que les bases mathématiques sous-jacentes et les méthodes d'optimisation de la VRAM.",
+          "target": "content/post/AI開発におけるGPUメモリ不足の解消テクニック/index.fr.md"
+        },
+        {
+          "term": "chaîne de Markov",
+          "context": "Le Forward Process est défini comme une chaîne de Markov, et l'état $x_t$ à l'étape $t$ est exprimé par l'équation suivante :",
+          "target": "content/post/markov-chain/index.fr.md"
+        }
+      ],
+      "category_decision": "Retain ai/image-generation/stable-diffusion: all describe the primary subject and localized category definitions exist."
+    },
+    {
+      "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.es.md",
+      "source_sha256": "a63ca60e0d3b558796f48e424577c3889eb0c2a5a46dd1b6272c5afffffe952c",
+      "unwrap_links": [
+        {
+          "link": "[Flux](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/)",
+          "context": "[Flux](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/)",
+          "reason": "misleading"
+        }
+      ],
+      "links": [
+        {
+          "term": "métodos de optimización de VRAM",
+          "context": "Este manual asume un entorno de Windows y explicará a fondo (con un volumen de más de 10,000 caracteres) desde cómo construir los tres principales entornos de generación de imágenes por IA (AUTOMATIC1111 Stable Diffusion WebUI, ComfyUI, Fooocus), hasta los antecedentes matemáticos fundamentales e incluso métodos de optimización de VRAM.",
+          "target": "content/post/AI開発におけるGPUメモリ不足の解消テクニック/index.es.md"
+        },
+        {
+          "term": "cadena de Markov",
+          "context": "El Forward Process se define como una cadena de Markov, y el estado $x_t$ en el paso $t$ se expresa mediante la siguiente ecuación:",
+          "target": "content/post/markov-chain/index.es.md"
+        }
+      ],
+      "category_decision": "Retain ai/image-generation/stable-diffusion: all describe the primary subject and localized category definitions exist."
+    },
+    {
+      "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.pt.md",
+      "source_sha256": "149282707976770bac54d8c6fa973e942b31273e90d60bf89b8d5659b8aedc56",
+      "unwrap_links": [
+        {
+          "link": "[Flux](https://kenji.blog/pt/p/state-management-history-redux-context-recoil-zustand/)",
+          "context": "[Flux](https://kenji.blog/pt/p/state-management-history-redux-context-recoil-zustand/)",
+          "reason": "misleading"
+        }
+      ],
+      "links": [
+        {
+          "term": "métodos de otimização de VRAM",
+          "context": "Neste manual, presumindo um ambiente Windows, explicaremos de forma minuciosa, em mais de 10.000 caracteres, os métodos de configuração dos 3 principais ambientes de geração de imagens por IA atuais (AUTOMATIC1111 Stable Diffusion WebUI, ComfyUI, Fooocus), o contexto matemático subjacente e até os métodos de otimização de VRAM.",
+          "target": "content/post/AI開発におけるGPUメモリ不足の解消テクニック/index.pt.md"
+        },
+        {
+          "term": "cadeia de Markov",
+          "context": "O Forward Process é definido como uma cadeia de Markov, e o estado $x_t$ no passo $t$ é expresso pela seguinte fórmula.",
+          "target": "content/post/markov-chain/index.pt.md"
+        }
+      ],
+      "category_decision": "Retain ai/image-generation/stable-diffusion: all describe the primary subject and localized category definitions exist."
+    },
+    {
+      "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.zh-cn.md",
+      "source_sha256": "351d3b082a4499b0fc973d49d692d36b5898c537571e639de85f5b60e8e43f6a",
+      "unwrap_links": [
+        {
+          "link": "[Flux](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/)",
+          "context": "[Flux](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/)",
+          "reason": "misleading"
+        }
+      ],
+      "links": [
+        {
+          "term": "VRAM的优化方法",
+          "context": "本指南以Windows环境为前提，针对目前主流的三种AI图像生成环境（AUTOMATIC1111 Stable Diffusion WebUI、ComfyUI、Fooocus），从搭建方法到基础的数学背景，甚至是VRAM的优化方法，将以超过一万字的篇幅进行彻底的讲解。",
+          "target": "content/post/AI開発におけるGPUメモリ不足の解消テクニック/index.zh-cn.md"
+        }
+      ],
+      "category_decision": "Retain ai/image-generation/stable-diffusion: all describe the primary subject and localized category definitions exist."
+    },
+    {
+      "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.zh-tw.md",
+      "source_sha256": "add16161f04cdd76c9a17a9eba5008e343fcd52200a95d2cb1209874684577a1",
+      "unwrap_links": [
+        {
+          "link": "[Flux](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/)",
+          "context": "[Flux](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/)",
+          "reason": "misleading"
+        }
+      ],
+      "links": [
+        {
+          "term": "VRAM的最佳化手法",
+          "context": "本手冊以Windows環境為前提，從目前主流的3個AI圖像生成環境（AUTOMATIC1111 Stable Diffusion WebUI、ComfyUI、Fooocus）的建置方法，到作為基礎的數學背景，乃至於VRAM的最佳化手法，以超過10,000字的篇幅為您進行徹底解說。",
+          "target": "content/post/AI開発におけるGPUメモリ不足の解消テクニック/index.zh-tw.md"
+        }
+      ],
+      "category_decision": "Retain ai/image-generation/stable-diffusion: all describe the primary subject and localized category definitions exist."
+    }
+  ],
+  "validation": {
+    "unit_tests": 32,
+    "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
+    "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
+    "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
+    "source": "23 updated SHA256 values match independent protected-content validation."
+  }
+}

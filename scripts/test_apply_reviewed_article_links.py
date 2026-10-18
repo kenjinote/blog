@@ -12,6 +12,21 @@ import apply_reviewed_article_links as audit
 
 
 class ReviewedEditTests(unittest.TestCase):
+    def test_command_placeholders_do_not_block_reviewed_body_unwrap(self):
+        raw = '[Paint](/en/p/rendering/)'
+        item = {'link': raw, 'context': raw, 'reason': 'misleading'}
+        for newline in ['\n', '\r\n']:
+            for fence in ['```', '~~~']:
+                source = ('---\ntitle: Test\n---\n\n' + fence +
+                          'powershell\nwhere <executable>\n' + fence +
+                          '\n\nFind ' + raw + '.\n').replace('\n', newline)
+                self.assertEqual(audit.unwrap_reviewed_link(source, item, {'/en/p/rendering/'}),
+                                 source.replace(raw, 'Paint'))
+                with self.assertRaises(ValueError):
+                    audit.link_reviewed_context(source, 'executable', 'executable', '/en/p/rendering/')
+                with self.assertRaises(ValueError):
+                    audit.unwrap_reviewed_link(source + '<div>HTML</div>', item, {'/en/p/rendering/'})
+
     def test_reviewed_body_immediately_after_heading_is_safe(self):
         source = '---\ntitle: Test\n---\n\n### Heading\nA [Workflow](/en/p/cicd/) example.'
         item = {'link': '[Workflow](/en/p/cicd/)', 'context': 'A [Workflow](/en/p/cicd/) example.', 'reason': 'misleading'}

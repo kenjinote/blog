@@ -47,7 +47,7 @@
       "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.fr.md",
       "source_sha256": "a169c9de858b5f21bebf5f864fb9417a65247aa996eb587aacdd37389d51f9d7",
       "body_reviewed": true,
-      "status": "review only; not edited",
+      "status": "validated in 012-local-image-five-translations; awaiting push",
       "findings": [
         "Five Go links mean gigaoctets (memory/storage capacity), not the programming language: unwrap all five in their reviewed contexts.",
         "Flux.1 model linked to React state management: unwrap.",
@@ -59,7 +59,7 @@
       "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.es.md",
       "source_sha256": "a63ca60e0d3b558796f48e424577c3889eb0c2a5a46dd1b6272c5afffffe952c",
       "body_reviewed": true,
-      "status": "review only; not edited",
+      "status": "validated in 012-local-image-five-translations; awaiting push",
       "findings": [
         "Flux.1 model linked to React state management: unwrap.",
         "No Go/unit or pipeline false links in this translation.",
@@ -71,7 +71,7 @@
       "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.zh-cn.md",
       "source_sha256": "351d3b082a4499b0fc973d49d692d36b5898c537571e639de85f5b60e8e43f6a",
       "body_reviewed": true,
-      "status": "review only; not edited",
+      "status": "validated in 012-local-image-five-translations; awaiting push",
       "findings": [
         "Flux.1 model linked to React state management: unwrap.",
         "Existing 马尔可夫链, Meta and GGUF links are relevant; retain.",
@@ -83,7 +83,7 @@
       "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.zh-tw.md",
       "source_sha256": "add16161f04cdd76c9a17a9eba5008e343fcd52200a95d2cb1209874684577a1",
       "body_reviewed": true,
-      "status": "review only; not edited",
+      "status": "validated in 012-local-image-five-translations; awaiting push",
       "findings": [
         "Flux.1 model linked to React state management: unwrap.",
         "Existing 馬可夫鏈, Meta and GGUF links are relevant; retain.",
@@ -96,7 +96,7 @@
       "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.pt.md",
       "source_sha256": "149282707976770bac54d8c6fa973e942b31273e90d60bf89b8d5659b8aedc56",
       "body_reviewed": true,
-      "status": "review only; not edited",
+      "status": "validated in 012-local-image-five-translations; awaiting push",
       "findings": [
         "Full body reviewed. Flux.1 incorrectly links to React state-management Flux; unwrap. Existing GGUF link is relevant and should remain.",
         "Candidate same-language additions after target review: cadeia de Markov and introductory métodos de otimização de VRAM. No wrong SQL lock or CI/CD pipeline links found.",
@@ -104,24 +104,78 @@
         "Broad technical safety/performance and hard-coded setup version claims require separate editorial verification; preserve prose in this audit.",
         "Portuguese GPU-memory target introduction and Markov-chain definition inspected; both match proposed terms. No edits applied."
       ]
+    },
+    {
+      "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.ko.md",
+      "source_sha256": "93a09205d1c40afe96ce73cf8b2f2ff1e7db11a454a011926790d59968b1d47e",
+      "body_reviewed": true,
+      "status": "validated in 013-local-image-final-five; awaiting push",
+      "findings": [
+        "Flux.1 links to React Flux: unwrap. Existing Meta and GGUF links relevant; retain.",
+        "Candidate additions after target review: introductory VRAM 최적화 방법 and 마르코프 연쇄.",
+        "Full body reviewed; retain ai/image-generation/stable-diffusion categories. Preserve two Mermaid diagrams, math, commands and directory tree.",
+        "Technical performance/security and version-specific setup assertions left for separate editorial review; do not rewrite prose during link audit."
+      ]
+    },
+    {
+      "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.id.md",
+      "source_sha256": "04762230725144d4b5db6fe5a616af432c079ac5ccccdee06cad0d80f5d70c1c",
+      "body_reviewed": true,
+      "status": "validated in 013-local-image-final-five; awaiting push",
+      "findings": [
+        "Flux.1 links to React Flux: unwrap. Existing rantai Markov and GGUF links relevant; retain.",
+        "Candidate addition after target review: introductory metode pengoptimalan VRAM.",
+        "Full body reviewed; retain ai/image-generation/stable-diffusion categories. Preserve two Mermaid diagrams, math, commands and directory tree.",
+        "Technical performance/security and version-specific setup assertions left for separate editorial review; do not rewrite prose during link audit."
+      ]
+    },
+    {
+      "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.ru.md",
+      "source_sha256": "8add70460bc3336bb165bc7e9b25d056fd0ed8e37f7ea9658e2ed63cb14387b5",
+      "body_reviewed": true,
+      "status": "validated in 013-local-image-final-five; awaiting push",
+      "findings": [
+        "Flux.1 links to React Flux: unwrap. Existing GGUF link relevant; retain.",
+        "Candidate additions after target review: introductory методы оптимизации VRAM and марковская цепь.",
+        "Full body reviewed; retain ai/image-generation/stable-diffusion categories. Preserve two Mermaid diagrams, math, commands and directory tree.",
+        "Technical performance/security and version-specific setup assertions left for separate editorial review; do not rewrite prose during link audit."
+      ]
+    },
+    {
+      "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.ar.md",
+      "source_sha256": "fd5a53687b49859ef8b15a906b440cca9506202528bc8ec9ddb738231eb7d37f",
+      "body_reviewed": true,
+      "status": "validated in 013-local-image-final-five; awaiting push",
+      "findings": [
+        "Flux.1 links to React Flux: unwrap. Existing GGUF is relevant.",
+        "Windows path-length restriction links مسار to an executable-location/where command article. Target full body reviewed: it does not explain path-length limits; unwrap this misleading link.",
+        "Candidate additions after target review: introductory تقنيات تحسين VRAM and سلسلة ماركوف (retain attached ك prefix).",
+        "Full body reviewed; retain ai/image-generation/stable-diffusion. Preserve math, two Mermaid diagrams, fenced commands and directory tree. Technical claims remain separate editorial review."
+      ]
+    },
+    {
+      "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.hi.md",
+      "source_sha256": "14b7d90808fbe553512ac411a09c45ed72a90c2f0fe21c6f384097fb60238bfb",
+      "body_reviewed": true,
+      "status": "validated in 013-local-image-final-five; awaiting push",
+      "findings": [
+        "Flux.1 links to React Flux: unwrap. Existing मार्कोव चेन and GGUF links are relevant; retain.",
+        "Candidate addition after target review: introductory VRAM ऑप्टिमाइज़ेशन तकनीकों.",
+        "Pre-existing Bengali fragments डान rendered as ডান in sections 5 and 7.4, unmatched emphasis marker in minimum hardware bullet, and introduction claiming 10000 words: record separately and preserve prose in link audit.",
+        "Full body reviewed; retain ai/image-generation/stable-diffusion. Preserve math, two Mermaid diagrams, fenced commands and directory tree. Technical claims remain separate editorial review."
+      ]
     }
   ],
   "target_review": {
     "gpu_memory": "Japanese intro and scope read: content/post/AI開発におけるGPUメモリ不足の解消テクニック/index.md covers VRAM bottlenecks, CPU offloading and quantization. Candidate appropriate for VRAM optimization body context.",
     "diffusion_lora": "No dedicated article found by filename/title search; do not invent a destination."
   },
-  "remaining_languages_unread": [
-    "ar",
-    "hi",
-    "id",
-    "ko",
-    "ru"
-  ],
+  "remaining_languages_unread": [],
   "reviewed_unedited_languages": [
-    "fr",
-    "es",
-    "zh-cn",
-    "zh-tw",
-    "pt"
+    "ko",
+    "id",
+    "ru",
+    "ar",
+    "hi"
   ]
 }

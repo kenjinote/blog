@@ -1,0 +1,150 @@
+{
+  "batch": "016-linux-review",
+  "status": "all 13 full bodies reviewed; 26 explicit links planned and dry-run passed; not applied",
+  "articles": [
+    {
+      "path": "content/post/linux-kernel-history-architecture/index.md",
+      "source_sha256": "386a88e80aab67177907ad52443f97c64eb9c2e275fdfe4d2ea951e475225e93",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve historical quotation, inline code, headings, two Mermaid diagrams and prose.",
+        "software-development is appropriate; os needs the localized definitions planned in batch 015.",
+        "Candidates after target review: Linus biography, UNIX history, system calls and filesystem/VFS. No links approved or applied yet.",
+        "Separate editorial issues: worldwide supercomputer percentage requires scope qualification, syscall mode transition differs from process context switch, monolithic superiority is asserted too broadly. Preserve during link/category audit."
+      ]
+    },
+    {
+      "path": "content/post/linux-kernel-history-architecture/index.en.md",
+      "source_sha256": "2d075f31771e7a55ddc789a998744a89c30902ca8c1978be89abe9baf63122da",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve historical quotation, inline code, headings, two Mermaid diagrams and prose.",
+        "software-development is appropriate; os needs the localized definitions planned in batch 015.",
+        "Candidates after target review: Linus biography, UNIX history, system calls and filesystem/VFS. No links approved or applied yet.",
+        "Separate editorial issues: worldwide supercomputer percentage requires scope qualification, syscall mode transition differs from process context switch, monolithic superiority is asserted too broadly. Preserve during link/category audit."
+      ]
+    },
+    {
+      "path": "content/post/linux-kernel-history-architecture/index.de.md",
+      "source_sha256": "e634a4a9f88efca99dc1d0db7558d1de0f7b5dd655f66016ea66c08b868725d6",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve historical quotation, inline code, headings, two Mermaid diagrams and prose.",
+        "software-development is appropriate; os needs the localized definitions planned in batch 015.",
+        "Candidates after target review: Linus biography, UNIX history, system calls and filesystem/VFS. No links approved or applied yet.",
+        "Separate editorial issues: worldwide supercomputer percentage requires scope qualification, syscall mode transition differs from process context switch, monolithic superiority is asserted too broadly. Preserve during link/category audit."
+      ]
+    },
+    {
+      "path": "content/post/linux-kernel-history-architecture/index.fr.md",
+      "source_sha256": "cec778a38d70dc48b423045cef05b0d49d7708f92b635fbe7cda28779a56ecee",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve historical quotation, inline code, headings, two Mermaid diagrams and prose.",
+        "software-development is appropriate; os needs the localized definitions planned in batch 015.",
+        "Candidates after target review: Linus biography, UNIX history, system calls and filesystem/VFS. No links approved or applied yet.",
+        "Separate editorial issues: worldwide supercomputer percentage requires scope qualification, syscall mode transition differs from process context switch, monolithic superiority is asserted too broadly. Preserve during link/category audit."
+      ]
+    },
+    {
+      "path": "content/post/linux-kernel-history-architecture/index.es.md",
+      "source_sha256": "f5bfd19cd4d5887069baec6ece3b81ce71e6837dd361c11770a86872b8180f97",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve historical quotation, inline code, headings, two Mermaid diagrams and prose.",
+        "software-development is appropriate; os needs the localized definitions planned in batch 015.",
+        "Candidates after target review: Linus biography, UNIX history, system calls and filesystem/VFS. No links approved or applied yet.",
+        "Separate editorial issues: worldwide supercomputer percentage requires scope qualification, syscall mode transition differs from process context switch, monolithic superiority is asserted too broadly. Preserve during link/category audit."
+      ]
+    },
+    {
+      "path": "content/post/linux-kernel-history-architecture/index.pt.md",
+      "source_sha256": "3a0a4577c840e52d6781990793dd0b5573f1e367ab580a1bf6079b14e414211f",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve historical quotation, inline code, headings, two Mermaid diagrams and prose.",
+        "software-development is appropriate; os needs the localized definitions planned in batch 015.",
+        "Candidates after target review: Linus biography, UNIX history, system calls and filesystem/VFS. No links approved or applied yet.",
+        "Separate editorial issues: worldwide supercomputer percentage requires scope qualification, syscall mode transition differs from process context switch, monolithic superiority is asserted too broadly. Preserve during link/category audit."
+      ]
+    },
+    {
+      "path": "content/post/linux-kernel-history-architecture/index.id.md",
+      "source_sha256": "bc8c40138bcf3c9d365e44c31d759466b50fb11f03df4e81d0d7e5fdad10f153",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve historical quotation, inline code, headings, two Mermaid diagrams and prose.",
+        "software-development is appropriate; os needs the localized definitions planned in batch 015.",
+        "Candidates after target review: Linus biography, UNIX history, system calls and filesystem/VFS. No links approved or applied yet.",
+        "Separate editorial issues: worldwide supercomputer percentage requires scope qualification, syscall mode transition differs from process context switch, monolithic superiority is asserted too broadly. Preserve during link/category audit."
+      ]
+    },
+    {
+      "path": "content/post/linux-kernel-history-architecture/index.zh-cn.md",
+      "source_sha256": "ed1f84633fad980a8eaa7755be34fed0f9f3b908802d8bef4aecf0ca2f39ba0e",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve historical quotation, inline code, headings, two Mermaid diagrams and prose.",
+        "software-development is appropriate; os needs the localized definitions planned in batch 015.",
+        "Candidates after target review: Linus biography, UNIX history, system calls and filesystem/VFS. No links approved or applied yet.",
+        "Separate editorial issues: worldwide supercomputer percentage requires scope qualification, syscall mode transition differs from process context switch, monolithic superiority is asserted too broadly. Preserve during link/category audit."
+      ]
+    },
+    {
+      "path": "content/post/linux-kernel-history-architecture/index.zh-tw.md",
+      "source_sha256": "132a4e5c740cb9d4c8573368bf5477af5beaae4091514a8b85d6945a800aa458",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve historical quotation, inline code, headings, two Mermaid diagrams and prose.",
+        "software-development is appropriate; os needs the localized definitions planned in batch 015.",
+        "Candidates after target review: Linus biography, UNIX history, system calls and filesystem/VFS. No links approved or applied yet.",
+        "Separate editorial issues: worldwide supercomputer percentage requires scope qualification, syscall mode transition differs from process context switch, monolithic superiority is asserted too broadly. Preserve during link/category audit."
+      ]
+    },
+    {
+      "path": "content/post/linux-kernel-history-architecture/index.ko.md",
+      "source_sha256": "16a927f71f15b042cce56256d2a61d621e948f0a9641fc33b8086fd641d1f12b",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve historical quotation, inline code, headings, two Mermaid diagrams and prose.",
+        "software-development is appropriate; os needs the localized definitions planned in batch 015.",
+        "Candidates after target review: Linus biography, UNIX history, system calls and filesystem/VFS. No links approved or applied yet.",
+        "Separate editorial issues: worldwide supercomputer percentage requires scope qualification, syscall mode transition differs from process context switch, monolithic superiority is asserted too broadly. Preserve during link/category audit."
+      ]
+    },
+    {
+      "path": "content/post/linux-kernel-history-architecture/index.ru.md",
+      "source_sha256": "1171de0ed46942e9e9449c6defdee9943349d17c9eaf56e1f430fa4bcc326f83",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve historical quotation, inline code, headings, two Mermaid diagrams and prose.",
+        "software-development is appropriate; os needs the localized definitions planned in batch 015.",
+        "Candidates after target review: Linus biography, UNIX history, system calls and filesystem/VFS. No links approved or applied yet.",
+        "Separate editorial issues: worldwide supercomputer percentage requires scope qualification, syscall mode transition differs from process context switch, monolithic superiority is asserted too broadly. Preserve during link/category audit."
+      ]
+    },
+    {
+      "path": "content/post/linux-kernel-history-architecture/index.ar.md",
+      "source_sha256": "c656aeff3175050f195583ad26406e2fc2a4c536e86580ee8284b3b52c8463b6",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve historical quotation, inline code, headings, two Mermaid diagrams and prose.",
+        "software-development is appropriate; os needs the localized definitions planned in batch 015.",
+        "Candidates after target review: Linus biography, UNIX history, system calls and filesystem/VFS. No links approved or applied yet.",
+        "Separate editorial issues: worldwide supercomputer percentage requires scope qualification, syscall mode transition differs from process context switch, monolithic superiority is asserted too broadly. Preserve during link/category audit."
+      ]
+    },
+    {
+      "path": "content/post/linux-kernel-history-architecture/index.hi.md",
+      "source_sha256": "bd93849340f7c588852fca66a0a7ae349e9117e82d24940685ae3f347637785f",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed. No existing body links. Preserve historical quotation, inline code, headings, two Mermaid diagrams and prose.",
+        "software-development is appropriate; os needs the localized definitions planned in batch 015.",
+        "Candidates after target review: Linus biography, UNIX history, system calls and filesystem/VFS. No links approved or applied yet.",
+        "Separate editorial issues: worldwide supercomputer percentage requires scope qualification, syscall mode transition differs from process context switch, monolithic superiority is asserted too broadly. Preserve during link/category audit."
+      ]
+    }
+  ],
+  "target_review": "biography-linus-torvalds and philosophy-unix-modular-design: introductions and subject reviewed in all 13 languages; published same-language targets checked by dry-run"
+}

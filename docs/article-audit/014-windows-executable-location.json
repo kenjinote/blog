@@ -1,0 +1,269 @@
+{
+  "batch": "014-windows-executable-location",
+  "status": "validated; awaiting commit and push",
+  "review": "All thirteen full bodies reviewed. Remove seven Paint application links incorrectly targeting browser painting/rendering. Reclassify broad pc-gadgets to existing windows/terminal: the subject is locating executable files through Windows commands. All thirteen category label definitions inspected. No additional links needed in the short two-command recipe. Preserve commands, prose, legacy slugs and duplicate date fields.",
+  "editorial_notes": [
+    "PowerShell where can resolve to Where-Object rather than where.exe: existing command ambiguity requires a separate content correction, do not alter code in link audit.",
+    "Japanese duplicated particle and Chinese description duplicated character retained as separate editorial issues.",
+    "Hindi existing .exe reference points to executable-analysis tools; related to executable files, not a wrong-entity Paint link. Retain pending future broader related-link review."
+  ],
+  "articles": [
+    {
+      "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.ar.md",
+      "source_sha256": "de3986c878d423bcc13e213fbc4326a46c09b896b19fe96befc33b9a7e2fe276",
+      "unwrap_links": [],
+      "links": [],
+      "category_decision": "Use existing windows and terminal for this command-line Windows task; both have labels in all thirteen languages.",
+      "categories": {
+        "before": [
+          "pc-gadgets"
+        ],
+        "after": [
+          "windows",
+          "terminal"
+        ]
+      }
+    },
+    {
+      "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.de.md",
+      "source_sha256": "566881a4f19d7c4339bf4caafbbfdbe45fac683385974a98843ed7fdee759e61",
+      "unwrap_links": [
+        {
+          "link": "[Paint](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/)",
+          "context": "[Paint](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/)",
+          "reason": "misleading"
+        }
+      ],
+      "links": [],
+      "category_decision": "Use existing windows and terminal for this command-line Windows task; both have labels in all thirteen languages.",
+      "categories": {
+        "before": [
+          "pc-gadgets"
+        ],
+        "after": [
+          "windows",
+          "terminal"
+        ]
+      }
+    },
+    {
+      "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.en.md",
+      "source_sha256": "d89dfb9dd33a6f7a760d1ba8bc1c0081377fb895c20053bf6870d772674fc608",
+      "unwrap_links": [
+        {
+          "link": "[Paint](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/)",
+          "context": "[Paint](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/)",
+          "reason": "misleading"
+        }
+      ],
+      "links": [],
+      "category_decision": "Use existing windows and terminal for this command-line Windows task; both have labels in all thirteen languages.",
+      "categories": {
+        "before": [
+          "pc-gadgets"
+        ],
+        "after": [
+          "windows",
+          "terminal"
+        ]
+      }
+    },
+    {
+      "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.es.md",
+      "source_sha256": "e44227163f8ad89af564831f74fcf31c8457d926093baed0a29d23206e3e6e5e",
+      "unwrap_links": [
+        {
+          "link": "[Paint](https://kenji.blog/es/p/browser-rendering-mechanism-dom-paint/)",
+          "context": "[Paint](https://kenji.blog/es/p/browser-rendering-mechanism-dom-paint/)",
+          "reason": "misleading"
+        }
+      ],
+      "links": [],
+      "category_decision": "Use existing windows and terminal for this command-line Windows task; both have labels in all thirteen languages.",
+      "categories": {
+        "before": [
+          "pc-gadgets"
+        ],
+        "after": [
+          "windows",
+          "terminal"
+        ]
+      }
+    },
+    {
+      "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.fr.md",
+      "source_sha256": "3055fdbf0e1fb52ddeead6c20650ab1cb8d2a1b1caa1bb7a67341d4007456876",
+      "unwrap_links": [
+        {
+          "link": "[Paint](https://kenji.blog/fr/p/browser-rendering-mechanism-dom-paint/)",
+          "context": "[Paint](https://kenji.blog/fr/p/browser-rendering-mechanism-dom-paint/)",
+          "reason": "misleading"
+        }
+      ],
+      "links": [],
+      "category_decision": "Use existing windows and terminal for this command-line Windows task; both have labels in all thirteen languages.",
+      "categories": {
+        "before": [
+          "pc-gadgets"
+        ],
+        "after": [
+          "windows",
+          "terminal"
+        ]
+      }
+    },
+    {
+      "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.hi.md",
+      "source_sha256": "27b7167df3455c633bb3c43357090571aec5c0cd7742b9ade47582887017cecd",
+      "unwrap_links": [],
+      "links": [],
+      "category_decision": "Use existing windows and terminal for this command-line Windows task; both have labels in all thirteen languages.",
+      "categories": {
+        "before": [
+          "pc-gadgets"
+        ],
+        "after": [
+          "windows",
+          "terminal"
+        ]
+      }
+    },
+    {
+      "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.id.md",
+      "source_sha256": "cc43367e87bb9ac6b4be0c3f88d03a13f45bc14912cce695ec08f8536bc36407",
+      "unwrap_links": [
+        {
+          "link": "[Paint](https://kenji.blog/id/p/browser-rendering-mechanism-dom-paint/)",
+          "context": "[Paint](https://kenji.blog/id/p/browser-rendering-mechanism-dom-paint/)",
+          "reason": "misleading"
+        }
+      ],
+      "links": [],
+      "category_decision": "Use existing windows and terminal for this command-line Windows task; both have labels in all thirteen languages.",
+      "categories": {
+        "before": [
+          "pc-gadgets"
+        ],
+        "after": [
+          "windows",
+          "terminal"
+        ]
+      }
+    },
+    {
+      "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.ko.md",
+      "source_sha256": "d797019e15fb97031072ba260cdf8849e9e5d9822e6c8b7da94658f1905aadd0",
+      "unwrap_links": [],
+      "links": [],
+      "category_decision": "Use existing windows and terminal for this command-line Windows task; both have labels in all thirteen languages.",
+      "categories": {
+        "before": [
+          "pc-gadgets"
+        ],
+        "after": [
+          "windows",
+          "terminal"
+        ]
+      }
+    },
+    {
+      "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+      "source_sha256": "e8e4983e7a68ba3e9a1b76e0735769a8dc86059fbd569f64ca661f612404f0bc",
+      "unwrap_links": [],
+      "links": [],
+      "category_decision": "Use existing windows and terminal for this command-line Windows task; both have labels in all thirteen languages.",
+      "categories": {
+        "before": [
+          "pc-gadgets"
+        ],
+        "after": [
+          "windows",
+          "terminal"
+        ]
+      }
+    },
+    {
+      "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.pt.md",
+      "source_sha256": "f40262c3c115af2151431c14be24264781973f1e17a1c9807c7501249e9ac8e0",
+      "unwrap_links": [
+        {
+          "link": "[Paint](https://kenji.blog/pt/p/browser-rendering-mechanism-dom-paint/)",
+          "context": "[Paint](https://kenji.blog/pt/p/browser-rendering-mechanism-dom-paint/)",
+          "reason": "misleading"
+        }
+      ],
+      "links": [],
+      "category_decision": "Use existing windows and terminal for this command-line Windows task; both have labels in all thirteen languages.",
+      "categories": {
+        "before": [
+          "pc-gadgets"
+        ],
+        "after": [
+          "windows",
+          "terminal"
+        ]
+      }
+    },
+    {
+      "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.ru.md",
+      "source_sha256": "c77300c2358cbb8f8c7ba28ea82a0cc97b6b68920b6a1ba1ea7112b5ef8452b1",
+      "unwrap_links": [
+        {
+          "link": "[Paint](https://kenji.blog/ru/p/browser-rendering-mechanism-dom-paint/)",
+          "context": "[Paint](https://kenji.blog/ru/p/browser-rendering-mechanism-dom-paint/)",
+          "reason": "misleading"
+        }
+      ],
+      "links": [],
+      "category_decision": "Use existing windows and terminal for this command-line Windows task; both have labels in all thirteen languages.",
+      "categories": {
+        "before": [
+          "pc-gadgets"
+        ],
+        "after": [
+          "windows",
+          "terminal"
+        ]
+      }
+    },
+    {
+      "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.zh-cn.md",
+      "source_sha256": "3807b516ca70f25991c392a21cd2cb0a682e7eb3f0802a4b77aa91ee8175c6af",
+      "unwrap_links": [],
+      "links": [],
+      "category_decision": "Use existing windows and terminal for this command-line Windows task; both have labels in all thirteen languages.",
+      "categories": {
+        "before": [
+          "pc-gadgets"
+        ],
+        "after": [
+          "windows",
+          "terminal"
+        ]
+      }
+    },
+    {
+      "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.zh-tw.md",
+      "source_sha256": "9a600255cc817af70fc6547dfbc49aaed0814386f446b6bd130b2abbffe08a95",
+      "unwrap_links": [],
+      "links": [],
+      "category_decision": "Use existing windows and terminal for this command-line Windows task; both have labels in all thirteen languages.",
+      "categories": {
+        "before": [
+          "pc-gadgets"
+        ],
+        "after": [
+          "windows",
+          "terminal"
+        ]
+      }
+    }
+  ],
+  "validation": {
+    "unit_tests": 32,
+    "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
+    "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
+    "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
+    "source": "23 updated SHA256 values match independent protected-content validation."
+  }
+}

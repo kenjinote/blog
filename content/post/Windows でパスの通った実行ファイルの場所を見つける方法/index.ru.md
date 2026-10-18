@@ -6,7 +6,7 @@ date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "путь", "исполняемый файл", "командная строка"]
 draft: false
 image: "img.webp"
-categories: ["pc-gadgets"]
+categories: ["windows", "terminal"]
 description: 'Объясняем, как легко узнать место сохранения (полный путь) исполняемого файла в командной строке Windows или PowerShell. Представлен полезный трюк для быстрого определения точного расположения приложения с помощью команды «where».'
 ---
 
@@ -18,7 +18,7 @@ description: 'Объясняем, как легко узнать место со
 where <имя исполняемого файла>
 ```
 
-Например, если вы хотите узнать расположение [Paint](https://kenji.blog/ru/p/browser-rendering-mechanism-dom-paint/) (mspaint.exe), сделайте следующее:
+Например, если вы хотите узнать расположение Paint (mspaint.exe), сделайте следующее:
 
 ```powershell
 where mspaint.exe

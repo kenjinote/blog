@@ -1,0 +1,149 @@
+[
+  {
+    "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.ko.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "VRAM 최적화 방법",
+        "url": "/ko/p/ai-gpu-vram-optimization-cpu-offloading/"
+      },
+      {
+        "term": "마르코프 연쇄",
+        "url": "/ko/p/markov-chain/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [
+      {
+        "link": "[Flux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)",
+        "context": "[Flux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)",
+        "reason": "misleading"
+      }
+    ],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain ai/image-generation/stable-diffusion; topic is local image-generation setup. Verify localized category labels in browser.",
+    "updated_sha256": "3d3f68fcc19bc280f02ec897c31e2f015b0b633793ae66ea5ef4c12358566de5"
+  },
+  {
+    "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.id.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "metode pengoptimalan VRAM",
+        "url": "/id/p/ai-gpu-vram-optimization-cpu-offloading/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [
+      {
+        "link": "[Flux](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/)",
+        "context": "[Flux](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/)",
+        "reason": "misleading"
+      }
+    ],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain ai/image-generation/stable-diffusion; topic is local image-generation setup. Verify localized category labels in browser.",
+    "updated_sha256": "e72663fe53d3b82c5f4ec7ba9d21e9793dd67c103fbe9356751f10635f4583c6"
+  },
+  {
+    "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.ru.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "методы оптимизации VRAM",
+        "url": "/ru/p/ai-gpu-vram-optimization-cpu-offloading/"
+      },
+      {
+        "term": "марковская цепь",
+        "url": "/ru/p/markov-chain/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [
+      {
+        "link": "[Flux](https://kenji.blog/ru/p/state-management-history-redux-context-recoil-zustand/)",
+        "context": "[Flux](https://kenji.blog/ru/p/state-management-history-redux-context-recoil-zustand/)",
+        "reason": "misleading"
+      }
+    ],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain ai/image-generation/stable-diffusion; topic is local image-generation setup. Verify localized category labels in browser.",
+    "updated_sha256": "e2e39ee401b0fd94d0c4853ed72365f893344a2b4c570967ba13ef7fba972555"
+  },
+  {
+    "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.ar.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "تقنيات تحسين VRAM",
+        "url": "/ar/p/ai-gpu-vram-optimization-cpu-offloading/"
+      },
+      {
+        "term": "كسلسلة ماركوف",
+        "url": "/ar/p/markov-chain/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [
+      {
+        "link": "[Flux](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/)",
+        "context": "[Flux](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/)",
+        "reason": "misleading"
+      },
+      {
+        "link": "[مسار](/ar/p/windows-%E3%81%A7%D9%85%D8%B3%D8%A7%D8%B1%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%D9%85%D9%84%D9%81-%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/)",
+        "context": "[مسار](/ar/p/windows-%E3%81%A7%D9%85%D8%B3%D8%A7%D8%B1%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%D9%85%D9%84%D9%81-%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/)",
+        "reason": "misleading"
+      }
+    ],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain ai/image-generation/stable-diffusion; topic is local image-generation setup. Verify localized category labels in browser.",
+    "updated_sha256": "32c42f01fd44db3b902adc52f0a3cd34512b5cc16728a9fa16b15618dd0e0210"
+  },
+  {
+    "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.hi.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "VRAM ऑप्टिमाइज़ेशन तकनीकों",
+        "url": "/hi/p/ai-gpu-vram-optimization-cpu-offloading/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [
+      {
+        "link": "[Flux](https://kenji.blog/hi/p/state-management-history-redux-context-recoil-zustand/)",
+        "context": "[Flux](https://kenji.blog/hi/p/state-management-history-redux-context-recoil-zustand/)",
+        "reason": "misleading"
+      }
+    ],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain ai/image-generation/stable-diffusion; topic is local image-generation setup. Verify localized category labels in browser.",
+    "updated_sha256": "21f37504d0107754f1ff0adf7383e6d3615757e71c3bdce02f9aa02c28dc82b5"
+  }
+]

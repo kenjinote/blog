@@ -6,7 +6,7 @@ date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "Path", "Executable", "Command Prompt"]
 draft: false
 image: "img.webp"
-categories: ["pc-gadgets"]
+categories: ["windows", "terminal"]
 description: 'Explains how to easily find the save location (full path) of an executable file using the Windows Command Prompt or PowerShell. Introduces a handy trick to quickly identify the exact location of an app in your path using the ''where'' command.'
 ---
 
@@ -18,7 +18,7 @@ Sometimes when you execute a command by specifying an executable file, you want 
 where <executable_file_name>
 ```
 
-For example, if you want to know the location of [Paint](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/) (mspaint.exe), you can do it as follows.
+For example, if you want to know the location of Paint (mspaint.exe), you can do it as follows.
 
 ```powershell
 where mspaint.exe

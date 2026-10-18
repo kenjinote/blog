@@ -6,7 +6,7 @@ date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "مسار", "ملف تنفيذي", "موجه الأوامر"]
 draft: false
 image: "img.webp"
-categories: ["pc-gadgets"]
+categories: ["windows", "terminal"]
 description: 'نشرح كيفية العثور بسهولة على موقع حفظ الملفات التنفيذية (المسار الكامل) باستخدام موجه الأوامر أو PowerShell في Windows. نقدم حيلة مفيدة لتحديد الموقع الدقيق للتطبيقات الموجودة في المسار بسرعة باستخدام أمر "where".'
 ---
 

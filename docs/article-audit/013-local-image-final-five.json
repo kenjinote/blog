@@ -1,0 +1,130 @@
+{
+  "batch": "013-local-image-final-five",
+  "status": "validated; awaiting commit and push",
+  "review": "Full bodies reviewed in ko/id/ru/ar/hi. GPU-memory target introductions and Markov-chain definitions inspected in matching languages. Retain categories; unwrap Flux confusion plus Arabic path-length mislink; add eight relevant references. Do not apply while batch 012 full build runs.",
+  "articles": [
+    {
+      "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.ko.md",
+      "source_sha256": "93a09205d1c40afe96ce73cf8b2f2ff1e7db11a454a011926790d59968b1d47e",
+      "unwrap_links": [
+        {
+          "link": "[Flux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)",
+          "context": "[Flux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)",
+          "reason": "misleading"
+        }
+      ],
+      "links": [
+        {
+          "term": "VRAM 최적화 방법",
+          "context": "본 매뉴얼에서는 Windows 환경을 전제로, 현재 주류가 되고 있는 3가지 AI 이미지 생성 환경(AUTOMATIC1111 Stable Diffusion WebUI, ComfyUI, Fooocus)의 구축 방법부터, 기반이 되는 수학적 배경, 나아가 VRAM 최적화 방법까지 10,000자가 넘는 분량으로 철저하게 해설합니다.",
+          "target": "content/post/AI開発におけるGPUメモリ不足の解消テクニック/index.ko.md"
+        },
+        {
+          "term": "마르코프 연쇄",
+          "context": "Forward Process는 마르코프 연쇄로 정의되며, 단계 $t$에서의 상태 $x_t$는 다음 수식으로 표현됩니다.",
+          "target": "content/post/markov-chain/index.ko.md"
+        }
+      ],
+      "category_decision": "Retain ai/image-generation/stable-diffusion; topic is local image-generation setup. Verify localized category labels in browser."
+    },
+    {
+      "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.id.md",
+      "source_sha256": "04762230725144d4b5db6fe5a616af432c079ac5ccccdee06cad0d80f5d70c1c",
+      "unwrap_links": [
+        {
+          "link": "[Flux](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/)",
+          "context": "[Flux](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/)",
+          "reason": "misleading"
+        }
+      ],
+      "links": [
+        {
+          "term": "metode pengoptimalan VRAM",
+          "context": "Panduan ini berasumsi menggunakan lingkungan Windows dan menjelaskan secara menyeluruh cara membangun tiga lingkungan pembuatan gambar AI utama saat ini (AUTOMATIC1111 Stable Diffusion WebUI, ComfyUI, dan Fooocus), serta latar belakang matematika yang mendasarinya dan bahkan metode pengoptimalan VRAM, dengan volume melebihi 10.000 karakter (dalam bahasa Jepang).",
+          "target": "content/post/AI開発におけるGPUメモリ不足の解消テクニック/index.id.md"
+        }
+      ],
+      "category_decision": "Retain ai/image-generation/stable-diffusion; topic is local image-generation setup. Verify localized category labels in browser."
+    },
+    {
+      "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.ru.md",
+      "source_sha256": "8add70460bc3336bb165bc7e9b25d056fd0ed8e37f7ea9658e2ed63cb14387b5",
+      "unwrap_links": [
+        {
+          "link": "[Flux](https://kenji.blog/ru/p/state-management-history-redux-context-recoil-zustand/)",
+          "context": "[Flux](https://kenji.blog/ru/p/state-management-history-redux-context-recoil-zustand/)",
+          "reason": "misleading"
+        }
+      ],
+      "links": [
+        {
+          "term": "методы оптимизации VRAM",
+          "context": "В этом руководстве, предполагающем использование среды Windows, мы подробно, объемом более 10 000 символов, рассмотрим процесс настройки трех основных современных сред генерации ИИ-изображений (AUTOMATIC1111 Stable Diffusion WebUI, ComfyUI, Fooocus), математические основы, а также методы оптимизации VRAM.",
+          "target": "content/post/AI開発におけるGPUメモリ不足の解消テクニック/index.ru.md"
+        },
+        {
+          "term": "марковская цепь",
+          "context": "Forward Process определяется как марковская цепь, где состояние $x_t$ на шаге $t$ выражается следующим уравнением:",
+          "target": "content/post/markov-chain/index.ru.md"
+        }
+      ],
+      "category_decision": "Retain ai/image-generation/stable-diffusion; topic is local image-generation setup. Verify localized category labels in browser."
+    },
+    {
+      "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.ar.md",
+      "source_sha256": "fd5a53687b49859ef8b15a906b440cca9506202528bc8ec9ddb738231eb7d37f",
+      "unwrap_links": [
+        {
+          "link": "[Flux](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/)",
+          "context": "[Flux](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/)",
+          "reason": "misleading"
+        },
+        {
+          "link": "[مسار](/ar/p/windows-%E3%81%A7%D9%85%D8%B3%D8%A7%D8%B1%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%D9%85%D9%84%D9%81-%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/)",
+          "context": "[مسار](/ar/p/windows-%E3%81%A7%D9%85%D8%B3%D8%A7%D8%B1%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%D9%85%D9%84%D9%81-%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/)",
+          "reason": "misleading"
+        }
+      ],
+      "links": [
+        {
+          "term": "تقنيات تحسين VRAM",
+          "context": "في هذا الدليل، وعلى افتراض استخدام بيئة Windows، سنقوم بشرح شامل يتجاوز 10,000 حرف لكيفية إعداد ثلاث بيئات رئيسية حالية لتوليد الصور بالذكاء الاصطناعي (AUTOMATIC1111 Stable Diffusion WebUI، و ComfyUI، و Fooocus)، بدءاً من الخلفية الرياضية الأساسية، وصولاً إلى تقنيات تحسين VRAM.",
+          "target": "content/post/AI開発におけるGPUメモリ不足の解消テクニック/index.ar.md"
+        },
+        {
+          "term": "كسلسلة ماركوف",
+          "context": "يتم تعريف Forward Process كسلسلة ماركوف، ويتم التعبير عن الحالة $x_t$ في الخطوة $t$ بالمعادلة التالية:",
+          "target": "content/post/markov-chain/index.ar.md"
+        }
+      ],
+      "category_decision": "Retain ai/image-generation/stable-diffusion; topic is local image-generation setup. Verify localized category labels in browser.",
+      "review_note": "Include attached Arabic preposition ك in the link label to preserve the full word boundary. Visible text remains unchanged."
+    },
+    {
+      "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.hi.md",
+      "source_sha256": "14b7d90808fbe553512ac411a09c45ed72a90c2f0fe21c6f384097fb60238bfb",
+      "unwrap_links": [
+        {
+          "link": "[Flux](https://kenji.blog/hi/p/state-management-history-redux-context-recoil-zustand/)",
+          "context": "[Flux](https://kenji.blog/hi/p/state-management-history-redux-context-recoil-zustand/)",
+          "reason": "misleading"
+        }
+      ],
+      "links": [
+        {
+          "term": "VRAM ऑप्टिमाइज़ेशन तकनीकों",
+          "context": "यह मैनुअल विंडोज़ एनवायरनमेंट को आधार मानकर, 10,000 से अधिक शब्दों की मात्रा में, वर्तमान में मुख्यधारा के तीन एआई इमेज जनरेशन एनवायरनमेंट (AUTOMATIC1111 Stable Diffusion WebUI, ComfyUI, Fooocus) को सेटअप करने की विधियों से लेकर, आधारभूत गणितीय पृष्ठभूमि, और यहाँ तक कि VRAM ऑप्टिमाइज़ेशन तकनीकों तक सब कुछ विस्तार से समझाता है।",
+          "target": "content/post/AI開発におけるGPUメモリ不足の解消テクニック/index.hi.md"
+        }
+      ],
+      "category_decision": "Retain ai/image-generation/stable-diffusion; topic is local image-generation setup. Verify localized category labels in browser."
+    }
+  ],
+  "validation": {
+    "unit_tests": 32,
+    "hugo": "exit 0; 616701 ms; integrated with upstream 4374f31ae",
+    "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
+    "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
+    "source": "23 updated SHA256 values match independent protected-content validation."
+  }
+}

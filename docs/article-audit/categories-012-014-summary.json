@@ -1,0 +1,8 @@
+{
+  "summary": "Checked 13913 pages, 135 categories, 13 languages; 4630 errors.",
+  "new_upstream_content_errors": 325,
+  "prior_baseline_errors": 4305,
+  "audit_category_definitions_changed": false,
+  "changed_article_categories": "pc-gadgets -> windows/terminal; all existing definitions",
+  "source_hashes_verified": 23
+}

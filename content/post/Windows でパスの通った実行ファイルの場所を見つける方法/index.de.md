@@ -6,7 +6,7 @@ date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "Pfad", "Ausführbare Datei", "Eingabeaufforderung"]
 draft: false
 image: "img.webp"
-categories: ["pc-gadgets"]
+categories: ["windows", "terminal"]
 description: 'Wir erklären, wie Sie den Speicherort (vollständigen Pfad) von ausführbaren Dateien in der Windows-Eingabeaufforderung oder PowerShell einfach überprüfen können. Wir stellen einen nützlichen Trick vor, um mit dem Befehl „where“ schnell den genauen Speicherort von Apps im Pfad zu ermitteln.'
 ---
 
@@ -18,7 +18,7 @@ Wenn Sie einen Befehl ausführen, indem Sie eine ausführbare Datei angeben, mö
 where <name_der_ausführbaren_datei>
 ```
 
-Wenn Sie beispielsweise den Speicherort von [Paint](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/) (mspaint.exe) wissen möchten, gehen Sie wie folgt vor:
+Wenn Sie beispielsweise den Speicherort von Paint (mspaint.exe) wissen möchten, gehen Sie wie folgt vor:
 
 ```powershell
 where mspaint.exe

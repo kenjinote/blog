@@ -21,7 +21,7 @@ Construir ferramentas de geração de imagens por IA em um ambiente local (seu p
 3. **Privacidade e segurança**: Como os dados não são enviados para a nuvem, é ideal para trabalhos de design altamente confidenciais e projetos pessoais.
 4. **Adoção imediata de novas tecnologias**: Você pode ser o primeiro a testar os modelos e extensões mais recentes lançados diariamente pela comunidade de código aberto.
 
-Neste manual, presumindo um ambiente Windows, explicaremos de forma minuciosa, em mais de 10.000 caracteres, os métodos de configuração dos 3 principais ambientes de geração de imagens por IA atuais (AUTOMATIC1111 Stable Diffusion WebUI, ComfyUI, Fooocus), o contexto matemático subjacente e até os métodos de otimização de VRAM.
+Neste manual, presumindo um ambiente Windows, explicaremos de forma minuciosa, em mais de 10.000 caracteres, os métodos de configuração dos 3 principais ambientes de geração de imagens por IA atuais (AUTOMATIC1111 Stable Diffusion WebUI, ComfyUI, Fooocus), o contexto matemático subjacente e até os [métodos de otimização de VRAM](/pt/p/ai-gpu-vram-optimization-cpu-offloading/).
 
 ---
 
@@ -33,7 +33,7 @@ Para construir um ambiente local e configurar parâmetros adequadamente, é muit
 
 O princípio básico do modelo de difusão consiste no "Forward Process", que adiciona gradualmente ruído gaussiano aos dados originais (imagem) até transformá-los completamente em ruído, e o "Reverse Process", que restaura a imagem original a partir desse ruído.
 
-O Forward Process é definido como uma cadeia de Markov, e o estado $x_t$ no passo $t$ é expresso pela seguinte fórmula.
+O Forward Process é definido como uma [cadeia de Markov](/pt/p/markov-chain/), e o estado $x_t$ no passo $t$ é expresso pela seguinte fórmula.
 
 $$ q(x_t | x_{t-1}) = \mathcal{N}(x_t; \sqrt{1 - \beta_t} x_{t-1}, \beta_t I) $$
 
@@ -264,7 +264,7 @@ Estes são erros frequentes e suas soluções relacionadas com as configuraçõe
 
 ## 10. Conclusão: O Futuro da Geração de Imagens de IA e os Benefícios do Local
 
-O movimento de geração de imagens de IA baseada em open source, que teve largada a partir do Stable Diffusion, continua a florescer em arquiteturas de próximas gerações como o SDXL, e Stable Diffusion 3 ou [Flux](https://kenji.blog/pt/p/state-management-history-redux-context-recoil-zustand/).1. Como os parâmetros contidos nesses modelos aumentaram a ordem de bilhões à ordem de dezenas de bilhões, os futuros hardwares tenderão a exigir, ainda mais, placas de vídeo a partir de 24GB de VRAM.
+O movimento de geração de imagens de IA baseada em open source, que teve largada a partir do Stable Diffusion, continua a florescer em arquiteturas de próximas gerações como o SDXL, e Stable Diffusion 3 ou Flux.1. Como os parâmetros contidos nesses modelos aumentaram a ordem de bilhões à ordem de dezenas de bilhões, os futuros hardwares tenderão a exigir, ainda mais, placas de vídeo a partir de 24GB de VRAM.
 
 No entanto, o progresso tecnológico nas adaptações do funcionamento local, usando processamento em Quantização (Quantization), o uso do formato [GGUF](/pt/p/llama-cpp-quantization-gguf/) ou os recursos avançados baseados em TensorRT continuam sua aceleração exponencial e já formam ecossistemas para rodar inferências até mesmo nos computadores voltados à massa.
 

@@ -1,0 +1,128 @@
+[
+  {
+    "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.ko.md",
+    "text_without_link_wrappers_identical_except_planned_categories": true,
+    "protected_content_unchanged_except_planned_categories": true,
+    "git_crlf_normalized_for_comparison": true,
+    "updated_sha256": "3d3f68fcc19bc280f02ec897c31e2f015b0b633793ae66ea5ef4c12358566de5"
+  },
+  {
+    "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.id.md",
+    "text_without_link_wrappers_identical_except_planned_categories": true,
+    "protected_content_unchanged_except_planned_categories": true,
+    "git_crlf_normalized_for_comparison": true,
+    "updated_sha256": "e72663fe53d3b82c5f4ec7ba9d21e9793dd67c103fbe9356751f10635f4583c6"
+  },
+  {
+    "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.ru.md",
+    "text_without_link_wrappers_identical_except_planned_categories": true,
+    "protected_content_unchanged_except_planned_categories": true,
+    "git_crlf_normalized_for_comparison": true,
+    "updated_sha256": "e2e39ee401b0fd94d0c4853ed72365f893344a2b4c570967ba13ef7fba972555"
+  },
+  {
+    "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.ar.md",
+    "text_without_link_wrappers_identical_except_planned_categories": true,
+    "protected_content_unchanged_except_planned_categories": true,
+    "git_crlf_normalized_for_comparison": true,
+    "updated_sha256": "32c42f01fd44db3b902adc52f0a3cd34512b5cc16728a9fa16b15618dd0e0210"
+  },
+  {
+    "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.hi.md",
+    "text_without_link_wrappers_identical_except_planned_categories": true,
+    "protected_content_unchanged_except_planned_categories": true,
+    "git_crlf_normalized_for_comparison": true,
+    "updated_sha256": "21f37504d0107754f1ff0adf7383e6d3615757e71c3bdce02f9aa02c28dc82b5"
+  },
+  {
+    "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.ar.md",
+    "text_without_link_wrappers_identical_except_planned_categories": true,
+    "protected_content_unchanged_except_planned_categories": true,
+    "git_crlf_normalized_for_comparison": true,
+    "updated_sha256": "8c132f33787479fb6e22830ac15dabc91aee116cb70844d206c863f7a161f2e2"
+  },
+  {
+    "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.de.md",
+    "text_without_link_wrappers_identical_except_planned_categories": true,
+    "protected_content_unchanged_except_planned_categories": true,
+    "git_crlf_normalized_for_comparison": true,
+    "updated_sha256": "3a3f132f9627a2ebfc2b42b13fbce6cb27b6c32e8f783157b5ee53086af93efb"
+  },
+  {
+    "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.en.md",
+    "text_without_link_wrappers_identical_except_planned_categories": true,
+    "protected_content_unchanged_except_planned_categories": true,
+    "git_crlf_normalized_for_comparison": true,
+    "updated_sha256": "b079bed499d112695a19861de190719ebffa25ebbf48b890601fa427de52b053"
+  },
+  {
+    "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.es.md",
+    "text_without_link_wrappers_identical_except_planned_categories": true,
+    "protected_content_unchanged_except_planned_categories": true,
+    "git_crlf_normalized_for_comparison": true,
+    "updated_sha256": "2c998ce49351939d636f6f5a033497c1fcee2912967d5d37014c6361ac0f476f"
+  },
+  {
+    "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.fr.md",
+    "text_without_link_wrappers_identical_except_planned_categories": true,
+    "protected_content_unchanged_except_planned_categories": true,
+    "git_crlf_normalized_for_comparison": true,
+    "updated_sha256": "e8ff5c3f8c9ebc1b3292182c585df03310b8a87fb24879de95adc99ccc7f14ea"
+  },
+  {
+    "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.hi.md",
+    "text_without_link_wrappers_identical_except_planned_categories": true,
+    "protected_content_unchanged_except_planned_categories": true,
+    "git_crlf_normalized_for_comparison": true,
+    "updated_sha256": "c710700ef95554788bcea173600b2adecdc8c814414780d08ffb67223cc97fd8"
+  },
+  {
+    "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.id.md",
+    "text_without_link_wrappers_identical_except_planned_categories": true,
+    "protected_content_unchanged_except_planned_categories": true,
+    "git_crlf_normalized_for_comparison": true,
+    "updated_sha256": "86c64fb8a4e4466ef3b6774e2599cdf06cec4b5e1a3f7092998e3253a303c598"
+  },
+  {
+    "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.ko.md",
+    "text_without_link_wrappers_identical_except_planned_categories": true,
+    "protected_content_unchanged_except_planned_categories": true,
+    "git_crlf_normalized_for_comparison": true,
+    "updated_sha256": "1bdb2e6571b2628dd3e254f8445a4db96a73d82ec8e5f397fb043d53be31687b"
+  },
+  {
+    "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+    "text_without_link_wrappers_identical_except_planned_categories": true,
+    "protected_content_unchanged_except_planned_categories": true,
+    "git_crlf_normalized_for_comparison": true,
+    "updated_sha256": "75906c15e33fb12391606a4f8fc8b7fb89d1b5417f73f9de6f157b28890c19bb"
+  },
+  {
+    "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.pt.md",
+    "text_without_link_wrappers_identical_except_planned_categories": true,
+    "protected_content_unchanged_except_planned_categories": true,
+    "git_crlf_normalized_for_comparison": true,
+    "updated_sha256": "072dbff5173278775d2ea1b7b75f2bea5b800f5fc93c7e47e0ef430a791972c4"
+  },
+  {
+    "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.ru.md",
+    "text_without_link_wrappers_identical_except_planned_categories": true,
+    "protected_content_unchanged_except_planned_categories": true,
+    "git_crlf_normalized_for_comparison": true,
+    "updated_sha256": "b3f392f3850e35d9d2194f931f6f6c6b2244889bf6e0b4e0153e55d6dd6be1f1"
+  },
+  {
+    "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.zh-cn.md",
+    "text_without_link_wrappers_identical_except_planned_categories": true,
+    "protected_content_unchanged_except_planned_categories": true,
+    "git_crlf_normalized_for_comparison": true,
+    "updated_sha256": "c566ee9754579468299d11e922761af2c88f30cf5757456ddf15282398404afc"
+  },
+  {
+    "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.zh-tw.md",
+    "text_without_link_wrappers_identical_except_planned_categories": true,
+    "protected_content_unchanged_except_planned_categories": true,
+    "git_crlf_normalized_for_comparison": true,
+    "updated_sha256": "e20c5f83503f319a5b6d3aeb8565f5f840bdd75316ce493865aae794b9efe1cd"
+  }
+]

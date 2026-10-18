@@ -21,7 +21,7 @@ AI 이미지 생성 기술은 Stable Diffusion의 오픈소스화를 시작으�
 3. **프라이버시와 보안**: 클라우드에 데이터를 전송하지 않기 때문에, 기밀성이 높은 디자인 업무나 개인적인 프로젝트에 최적입니다.
 4. **최신 기술의 즉각적인 도입**: 오픈소스 커뮤니티에서 매일 발표되는 최신 모델이나 확장 기능을 가장 먼저 테스트해 볼 수 있습니다.
 
-본 매뉴얼에서는 Windows 환경을 전제로, 현재 주류가 되고 있는 3가지 AI 이미지 생성 환경(AUTOMATIC1111 Stable Diffusion WebUI, ComfyUI, Fooocus)의 구축 방법부터, 기반이 되는 수학적 배경, 나아가 VRAM 최적화 방법까지 10,000자가 넘는 분량으로 철저하게 해설합니다.
+본 매뉴얼에서는 Windows 환경을 전제로, 현재 주류가 되고 있는 3가지 AI 이미지 생성 환경(AUTOMATIC1111 Stable Diffusion WebUI, ComfyUI, Fooocus)의 구축 방법부터, 기반이 되는 수학적 배경, 나아가 [VRAM 최적화 방법](/ko/p/ai-gpu-vram-optimization-cpu-offloading/)까지 10,000자가 넘는 분량으로 철저하게 해설합니다.
 
 ---
 
@@ -33,7 +33,7 @@ AI 이미지 생성 기술은 Stable Diffusion의 오픈소스화를 시작으�
 
 확산 모델의 기본 원리는, 원본 데이터(이미지)에 단계적으로 가우스 노이즈를 더해 최종적으로 완전한 노이즈로 만드는 'Forward Process'와, 그 노이즈로부터 원본 이미지를 복원하는 'Reverse Process'로 구성됩니다.
 
-Forward Process는 마르코프 연쇄로 정의되며, 단계 $t$에서의 상태 $x_t$는 다음 수식으로 표현됩니다.
+Forward Process는 [마르코프 연쇄](/ko/p/markov-chain/)로 정의되며, 단계 $t$에서의 상태 $x_t$는 다음 수식으로 표현됩니다.
 
 $$ q(x_t | x_{t-1}) = \mathcal{N}(x_t; \sqrt{1 - \beta_t} x_{t-1}, \beta_t I) $$
 
@@ -264,7 +264,7 @@ ControlNet은 학습된 Stable Diffusion 모델의 가중치를 고정한 채로
 
 ## 10. 맺음말: AI 이미지 생성의 미래와 로컬 환경의 우위성
 
-Stable Diffusion에서 시작된 오픈소스 AI 이미지 생성의 움직임은 SDXL, 그리고 Stable Diffusion 3나 [Flux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/).1과 같은 차세대 아키텍처로 진화를 거듭하고 있습니다. 모델의 파라미터 수는 수십억에서 백억 개 수준으로 거대해지고 있으며, 앞으로는 VRAM 24GB 이상의 GPU 환경이 더욱 요구될 것입니다.
+Stable Diffusion에서 시작된 오픈소스 AI 이미지 생성의 움직임은 SDXL, 그리고 Stable Diffusion 3나 Flux.1과 같은 차세대 아키텍처로 진화를 거듭하고 있습니다. 모델의 파라미터 수는 수십억에서 백억 개 수준으로 거대해지고 있으며, 앞으로는 VRAM 24GB 이상의 GPU 환경이 더욱 요구될 것입니다.
 
 하지만 TensorRT나 양자화 기술(Quantization), [GGUF](/ko/p/llama-cpp-quantization-gguf/) 등의 로컬 최적화 기술 역시 빠르게 발전하고 있어, 일반 소비자용 하드웨어에서도 충분한 추론이 가능해지는 생태계가 형성되고 있습니다.
 
