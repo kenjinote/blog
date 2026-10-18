@@ -1,6 +1,6 @@
 {
   "batch": "012-local-image-five-translations",
-  "status": "validated; final Hugo and browser checks passed; push pending",
+  "status": "completed; validated and pushed",
   "review": "Five full bodies reviewed; unwrap Flux model / React Flux confusion and French Go capacity / programming-language confusion. Add same-language VRAM optimization and Markov definition references. Preserve prose, categories, math, diagrams, commands and headings.",
   "articles": [
     {
@@ -145,5 +145,6 @@
     "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
     "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
     "source": "23 updated SHA256 values match independent protected-content validation."
-  }
+  },
+  "commit": "3315d5640a2893126b56980430d78ea43f076edd"
 }

@@ -1841,7 +1841,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1854,7 +1854,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "013-local-image-final-five",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.de.md",
@@ -1928,7 +1929,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1941,7 +1942,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "012-local-image-five-translations",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.fr.md",
@@ -1957,7 +1959,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1970,7 +1972,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "012-local-image-five-translations",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.hi.md",
@@ -1986,7 +1989,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -1999,7 +2002,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "013-local-image-final-five",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.id.md",
@@ -2015,7 +2019,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -2028,7 +2032,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "013-local-image-final-five",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.ko.md",
@@ -2044,7 +2049,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -2057,7 +2062,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "013-local-image-final-five",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
@@ -2102,7 +2108,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -2115,7 +2121,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "012-local-image-five-translations",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.ru.md",
@@ -2131,7 +2138,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -2144,7 +2151,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "013-local-image-final-five",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.zh-cn.md",
@@ -2160,7 +2168,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -2173,7 +2181,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "012-local-image-five-translations",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/AI画像生成ツールのローカル環境構築マニュアル/index.zh-tw.md",
@@ -2189,7 +2198,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -2202,7 +2211,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "012-local-image-five-translations",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/AI開発におけるGPUメモリ不足の解消テクニック/index.ar.md",
@@ -23965,7 +23975,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -23978,7 +23988,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.de.md",
@@ -23992,7 +24003,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -24005,7 +24016,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.en.md",
@@ -24019,7 +24031,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -24032,7 +24044,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.es.md",
@@ -24046,7 +24059,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -24059,7 +24072,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.fr.md",
@@ -24073,7 +24087,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -24086,7 +24100,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.hi.md",
@@ -24100,7 +24115,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -24113,7 +24128,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.id.md",
@@ -24127,7 +24143,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -24140,7 +24156,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.ko.md",
@@ -24154,7 +24171,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -24167,7 +24184,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
@@ -24181,7 +24199,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -24194,7 +24212,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.pt.md",
@@ -24208,7 +24227,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -24221,7 +24240,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.ru.md",
@@ -24235,7 +24255,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -24248,7 +24268,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.zh-cn.md",
@@ -24262,7 +24283,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -24275,7 +24296,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/Windows でパスの通った実行ファイルの場所を見つける方法/index.zh-tw.md",
@@ -24289,7 +24311,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -24302,7 +24324,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "014-windows-executable-location",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/Windows のショートカット・小技集/index.ar.md",
@@ -30312,7 +30335,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -30325,7 +30348,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "015-android-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/android-os-architecture-history/index.de.md",
@@ -30342,7 +30366,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -30355,7 +30379,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "015-android-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/android-os-architecture-history/index.en.md",
@@ -30372,7 +30397,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -30385,7 +30410,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "015-android-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/android-os-architecture-history/index.es.md",
@@ -30402,7 +30428,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -30415,7 +30441,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "015-android-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/android-os-architecture-history/index.fr.md",
@@ -30432,7 +30459,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -30445,7 +30472,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "015-android-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/android-os-architecture-history/index.hi.md",
@@ -30462,7 +30490,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -30475,7 +30503,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "015-android-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/android-os-architecture-history/index.id.md",
@@ -30492,7 +30521,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -30505,7 +30534,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "015-android-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/android-os-architecture-history/index.ko.md",
@@ -30522,7 +30552,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -30535,7 +30565,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "015-android-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/android-os-architecture-history/index.md",
@@ -30552,7 +30583,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -30565,7 +30596,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "015-android-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/android-os-architecture-history/index.pt.md",
@@ -30582,7 +30614,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -30595,7 +30627,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "015-android-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/android-os-architecture-history/index.ru.md",
@@ -30612,7 +30645,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -30625,7 +30658,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "015-android-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/android-os-architecture-history/index.zh-cn.md",
@@ -30642,7 +30676,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -30655,7 +30689,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "015-android-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/android-os-architecture-history/index.zh-tw.md",
@@ -30672,7 +30707,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -30685,7 +30720,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "015-android-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/antarctica-ice-sheet-ecosystem-polar-exploration-climate-science/index.ar.md",
@@ -154876,7 +154912,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -154889,7 +154925,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "016-linux-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/linux-kernel-history-architecture/index.de.md",
@@ -154906,7 +154943,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -154919,7 +154956,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "016-linux-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/linux-kernel-history-architecture/index.en.md",
@@ -154936,7 +154974,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -154949,7 +154987,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "016-linux-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/linux-kernel-history-architecture/index.es.md",
@@ -154966,7 +155005,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -154979,7 +155018,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "016-linux-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/linux-kernel-history-architecture/index.fr.md",
@@ -154996,7 +155036,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -155009,7 +155049,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "016-linux-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/linux-kernel-history-architecture/index.hi.md",
@@ -155026,7 +155067,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -155039,7 +155080,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "016-linux-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/linux-kernel-history-architecture/index.id.md",
@@ -155056,7 +155098,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -155069,7 +155111,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "016-linux-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/linux-kernel-history-architecture/index.ko.md",
@@ -155086,7 +155129,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -155099,7 +155142,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "016-linux-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/linux-kernel-history-architecture/index.md",
@@ -155116,7 +155160,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -155129,7 +155173,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "016-linux-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/linux-kernel-history-architecture/index.pt.md",
@@ -155146,7 +155191,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -155159,7 +155204,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "016-linux-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/linux-kernel-history-architecture/index.ru.md",
@@ -155176,7 +155222,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -155189,7 +155235,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "016-linux-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/linux-kernel-history-architecture/index.zh-cn.md",
@@ -155206,7 +155253,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -155219,7 +155266,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "016-linux-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/linux-kernel-history-architecture/index.zh-tw.md",
@@ -155236,7 +155284,7 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -155249,7 +155297,8 @@
         "category_scope": "65 os article headers and 13 archives passed; 65 undefined category errors resolved. Global remaining 4708 errors includes new upstream articles."
       },
       "batch": "016-linux-links",
-      "push_status": "pending commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "3315d5640a2893126b56980430d78ea43f076edd"
     },
     {
       "path": "content/post/liouville/index.ar.md",

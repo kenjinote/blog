@@ -1,6 +1,6 @@
 {
   "batch": "015-android-review",
-  "status": "validated; final Hugo and browser checks passed; push pending",
+  "status": "completed; validated and pushed",
   "articles": [
     {
       "path": "content/post/android-os-architecture-history/index.md",
@@ -159,5 +159,6 @@
     "garbage-collection-history-zgc": "Introductions/scope reviewed in all 13 languages; same-language published automatic-memory-management references appropriate.",
     "compiler-optimization-ssa": "Japanese introduction inspected; specializes in SSA optimization, not directly JIT/AOT lifecycle. Prefer more directly matching references; no link selected yet.",
     "licensing": "No dedicated licensing explainer found by title search. Do not link to unrelated Windows activation or image-license posts."
-  }
+  },
+  "commit": "3315d5640a2893126b56980430d78ea43f076edd"
 }

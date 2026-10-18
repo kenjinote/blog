@@ -1,6 +1,6 @@
 {
   "batch": "015-android-links",
-  "status": "validated; final Hugo and browser checks passed; push pending",
+  "status": "completed; validated and pushed",
   "review": "All thirteen Android bodies reviewed. Add kernel architecture and garbage-collection explanations in matching languages. Target introductions and scopes read in all languages. Define os category labels separately, retaining existing identifiers and category URLs. No source or category files have been edited.",
   "required_category_work": {
     "action": "Add localized definitions for existing os identifier, retaining current article categories and URLs. No alias migrations yet.",
@@ -244,5 +244,6 @@
       ],
       "category_decision": "Retain software-development/os; add localized os definition files before final validation, because OS architecture is the primary subject."
     }
-  ]
+  ],
+  "commit": "3315d5640a2893126b56980430d78ea43f076edd"
 }

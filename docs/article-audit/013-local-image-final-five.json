@@ -1,6 +1,6 @@
 {
   "batch": "013-local-image-final-five",
-  "status": "validated; final Hugo and browser checks passed; push pending",
+  "status": "completed; validated and pushed",
   "review": "Full bodies reviewed in ko/id/ru/ar/hi. GPU-memory target introductions and Markov-chain definitions inspected in matching languages. Retain categories; unwrap Flux confusion plus Arabic path-length mislink; add eight relevant references. Do not apply while batch 012 full build runs.",
   "articles": [
     {
@@ -126,5 +126,6 @@
     "browser": "23 before/after pages passed; exact link multiset, visible prose/lists, headings/TOC, math, Mermaid, code, images, language switch, localized categories, same-language link HTTP200 and mobile overflow verified. Arabic RTL and English mobile screenshots visually checked.",
     "category_baseline": "4630 existing errors: prior 4305 plus 325 on newly merged upstream articles. No new errors from audit changes.",
     "source": "23 updated SHA256 values match independent protected-content validation."
-  }
+  },
+  "commit": "3315d5640a2893126b56980430d78ea43f076edd"
 }

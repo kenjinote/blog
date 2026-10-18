@@ -1,6 +1,6 @@
 {
   "batch": "016-linux-links",
-  "status": "validated; final Hugo and browser checks passed; push pending",
+  "status": "completed; validated and pushed",
   "review": "13 complete bodies reviewed. Add first ordinary biography mention and ordinary UNIX philosophy phrase. Target introductions reviewed in all languages. Do not edit quotations, headings, code or two Mermaid diagrams. More specific syscall/VFS targets were not found; avoid forced broader links. Korean UNIX philosophy link includes the existing paired single quotes to preserve rendered closing quote.",
   "articles": [
     {
@@ -224,5 +224,6 @@
       ],
       "category_decision": "Retain software-development/os; depends on batch 015 localized os category definitions."
     }
-  ]
+  ],
+  "commit": "3315d5640a2893126b56980430d78ea43f076edd"
 }

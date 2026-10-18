@@ -1,6 +1,6 @@
 {
   "batch": "016-linux-review",
-  "status": "validated; final Hugo and browser checks passed; push pending",
+  "status": "completed; validated and pushed",
   "articles": [
     {
       "path": "content/post/linux-kernel-history-architecture/index.md",
@@ -146,5 +146,6 @@
       ]
     }
   ],
-  "target_review": "biography-linus-torvalds and philosophy-unix-modular-design: introductions and subject reviewed in all 13 languages; published same-language targets checked by dry-run"
+  "target_review": "biography-linus-torvalds and philosophy-unix-modular-design: introductions and subject reviewed in all 13 languages; published same-language targets checked by dry-run",
+  "commit": "3315d5640a2893126b56980430d78ea43f076edd"
 }

@@ -105,5 +105,22 @@
     "hugo": "passed, exit 0, 590793 ms",
     "browser": "3 pages before/after passed; exact links, heading IDs, TOC and protected rendered contents verified",
     "next": "Local image setup remaining ten translations: fr/es/zh-cn/zh-tw/pt full bodies reviewed, not edited; ar/hi/id/ko/ru unread."
+  },
+  {
+    "batch": "012-016 local image setup, Windows executable location, Android and Linux",
+    "commit": "3315d5640a2893126b56980430d78ea43f076edd",
+    "remote": "origin/main",
+    "verified_remote_sha": "3315d5640a2893126b56980430d78ea43f076edd",
+    "date_jst": "2026-10-18",
+    "articles": 49,
+    "modified_articles": 49,
+    "added_links": 68,
+    "misleading_links_removed": 23,
+    "reclassified_articles": 13,
+    "localized_os_category_languages": 13,
+    "localized_os_category_affected_pages": 65,
+    "hugo": "passed, exit 0, 647754 ms",
+    "browser": "49 before/after pages passed; 65 category headers and 13 archives verified; Korean quote wrapping preserves exact rendered text.",
+    "next": "017 iOS, 018 macOS, 019 Windows: all 39 full bodies and targets reviewed; 91 link additions planned, dry-run passed; not applied."
   }
 ]
