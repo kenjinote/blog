@@ -39,7 +39,7 @@ graph TD
 
 ## Mac OS Xの誕生：UNIXのパワーとプリエンプティブ・マルチタスク
 
-Appleは次世代OSの開発において、自社開発プロジェクト（Copland）の失敗を経て、スティーブ・ジョブズが設立したNeXT社を買収するという歴史的な決断を下しました。NeXTの主力製品であった「NeXTSTEP」こそが、Mac OS Xの基盤となります。
+Appleは次世代OSの開発において、自社開発プロジェクト（Copland）の失敗を経て、[スティーブ・ジョブズ](/p/biography-steve-jobs/)が設立したNeXT社を買収するという歴史的な決断を下しました。NeXTの主力製品であった「NeXTSTEP」こそが、Mac OS Xの基盤となります。
 
 Mac OS X（後のmacOS）は、内部に**Darwin**と呼ばれるUNIX系オペレーティングシステム（FreeBSDおよびMachマイクロカーネルベース）を搭載していました。これにより、Classic Mac OSの弱点は根本から解決されました。
 
@@ -56,7 +56,7 @@ OS Xがもたらした最大の恩恵の一つが、**プリエンプティブ�
 Mac OS Xへの移行は、開発者にとっても大きなパラダイムシフトでした。Appleは、開発者が新しいOS向けにアプリケーションを構築するためのAPIとして、大きく分けて2つの選択肢を提供しました。それが**Carbon**と**Cocoa**です。
 
 1. **Carbon**: Classic Mac OSのAPIをC言語ベースでOS X向けに移植・適応させたもの。既存のアプリケーション（PhotoshopやMicrosoft Officeなど）を比較的容易にOS X対応させるための架け橋でした。
-2. **Cocoa**: NeXTSTEPから継承された、Objective-Cベースの純粋なオブジェクト指向API。
+2. **Cocoa**: NeXTSTEPから継承された、Objective-Cベースの純粋な[オブジェクト指向API](/p/object-oriented-programming-oop-solid-principles/)。
 
 Cocoaは、NeXTSTEP時代のフレームワーク（FoundationやAppKit）をそのまま受け継いでいます。現在でもmacOS開発で使われるクラスの多くが `NS`（NeXTSTEPの略）というプレフィックスを持っているのは、この名残です（例：`NSString`, `NSArray`）。最終的にAppleはCarbonを非推奨とし、Cocoa（およびその後のSwiftUI）をmacOS開発の中心に据えることになります。
 

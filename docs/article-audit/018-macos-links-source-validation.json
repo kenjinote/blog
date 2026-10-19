@@ -1,0 +1,314 @@
+[
+  {
+    "path": "content/post/macos-architecture-history/index.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "スティーブ・ジョブズ",
+        "url": "/p/biography-steve-jobs/"
+      },
+      {
+        "term": "オブジェクト指向API",
+        "url": "/p/object-oriented-programming-oop-solid-principles/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture.",
+    "updated_sha256": "05e2bdf3e53a9056468f8b9ee94a1e397cf5179c00f9b938060f142879379559"
+  },
+  {
+    "path": "content/post/macos-architecture-history/index.en.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Steve Jobs",
+        "url": "/en/p/biography-steve-jobs/"
+      },
+      {
+        "term": "object-oriented",
+        "url": "/en/p/object-oriented-programming-oop-solid-principles/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture.",
+    "updated_sha256": "a158ad5f5188286f80b85309e7305dc8865d0007303af6641d60312a971e63c7"
+  },
+  {
+    "path": "content/post/macos-architecture-history/index.de.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Steve Jobs",
+        "url": "/de/p/biography-steve-jobs/"
+      },
+      {
+        "term": "objektorientierte",
+        "url": "/de/p/object-oriented-programming-oop-solid-principles/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture.",
+    "updated_sha256": "751e283dcdc077cbf51b7a0fd64f21b3e7b50fbc1bf29fcab69bc3eaa5171ec8"
+  },
+  {
+    "path": "content/post/macos-architecture-history/index.fr.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Steve Jobs",
+        "url": "/fr/p/biography-steve-jobs/"
+      },
+      {
+        "term": "orientée objet",
+        "url": "/fr/p/object-oriented-programming-oop-solid-principles/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture.",
+    "updated_sha256": "c1a633e2b90eb90b967b0cff3cb1b368bf309b078f4d614f22932e351082e4f6"
+  },
+  {
+    "path": "content/post/macos-architecture-history/index.es.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Steve Jobs",
+        "url": "/es/p/biography-steve-jobs/"
+      },
+      {
+        "term": "orientada a objetos",
+        "url": "/es/p/object-oriented-programming-oop-solid-principles/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture.",
+    "updated_sha256": "fddc659634580e75eecb5fbe5e0bde84067d0bae79fa2a7285137e0734eef45a"
+  },
+  {
+    "path": "content/post/macos-architecture-history/index.pt.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Steve Jobs",
+        "url": "/pt/p/biography-steve-jobs/"
+      },
+      {
+        "term": "orientada a objetos",
+        "url": "/pt/p/object-oriented-programming-oop-solid-principles/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture.",
+    "updated_sha256": "8d1384a65b476a13a6f8bab606429cdc527ffff583b07d02488345c86fac2242"
+  },
+  {
+    "path": "content/post/macos-architecture-history/index.id.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Steve Jobs",
+        "url": "/id/p/biography-steve-jobs/"
+      },
+      {
+        "term": "berorientasi objek",
+        "url": "/id/p/object-oriented-programming-oop-solid-principles/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture.",
+    "updated_sha256": "88d2703a74e54654b2d088428b7cd536c3af49d3e70babcc4cd9944dd203e8cd"
+  },
+  {
+    "path": "content/post/macos-architecture-history/index.ko.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "스티브 잡스",
+        "url": "/ko/p/biography-steve-jobs/"
+      },
+      {
+        "term": "객체 지향",
+        "url": "/ko/p/object-oriented-programming-oop-solid-principles/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture.",
+    "updated_sha256": "e53f72073cd3fadf6070fad7d44a6b4923e8c6390a417f6a83083d9a7460f7f2"
+  },
+  {
+    "path": "content/post/macos-architecture-history/index.zh-cn.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "史蒂夫·乔布斯",
+        "url": "/zh-cn/p/biography-steve-jobs/"
+      },
+      {
+        "term": "面向对象",
+        "url": "/zh-cn/p/object-oriented-programming-oop-solid-principles/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture.",
+    "updated_sha256": "e0c7bd739d5f2fdc79ea538fd01c1bc0f33c0d50a6b69c3366420592172a19f5"
+  },
+  {
+    "path": "content/post/macos-architecture-history/index.zh-tw.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Steve Jobs",
+        "url": "/zh-tw/p/biography-steve-jobs/"
+      },
+      {
+        "term": "物件導向",
+        "url": "/zh-tw/p/object-oriented-programming-oop-solid-principles/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture.",
+    "updated_sha256": "757db01d0d3664c7a46e005467936108b9e9f0b3b1cf6f407b74953e8c263c79"
+  },
+  {
+    "path": "content/post/macos-architecture-history/index.ar.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "ستيف جوبز",
+        "url": "/ar/p/biography-steve-jobs/"
+      },
+      {
+        "term": "كائنية التوجه",
+        "url": "/ar/p/object-oriented-programming-oop-solid-principles/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture.",
+    "updated_sha256": "96469daca5672d3eb5c3b90ed99fbb04c6669c33543325dacf7dce0d209e6e90"
+  },
+  {
+    "path": "content/post/macos-architecture-history/index.hi.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "स्टीव जॉब्स",
+        "url": "/hi/p/biography-steve-jobs/"
+      },
+      {
+        "term": "ऑब्जेक्ट-ओरिएंटेड",
+        "url": "/hi/p/object-oriented-programming-oop-solid-principles/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture.",
+    "updated_sha256": "9183db9b96fd2b3eed4111d77ef1d9a4f7e7cc61af74b78c8174a392be370e3a"
+  },
+  {
+    "path": "content/post/macos-architecture-history/index.ru.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Стивом Джобсом",
+        "url": "/ru/p/biography-steve-jobs/"
+      },
+      {
+        "term": "объектно-ориентированный",
+        "url": "/ru/p/object-oriented-programming-oop-solid-principles/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture.",
+    "updated_sha256": "d508b33cf7ac6567a2a40de01a5367d89f105ced3e31b7ed70ce225a04dd5917"
+  }
+]

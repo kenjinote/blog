@@ -1,6 +1,6 @@
 {
   "batch": "017-ios-links",
-  "status": "reviewed; dry-run passed; not applied",
+  "status": "validated; pending commit and push",
   "review": "All 13 full bodies read; target introductions and scope reviewed in all languages. Link Steve Jobs biography, macOS architecture/history and SQLite storage explainer at ordinary body mentions. Preserve prose and two Mermaid diagrams. No existing links to unwrap.",
   "articles": [
     {

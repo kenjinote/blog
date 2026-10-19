@@ -39,7 +39,7 @@ Si la aplicación A fallaba o entraba en un bucle infinito y no devolvía el con
 
 ## El nacimiento de Mac OS X: El poder de UNIX y la multitarea preventiva
 
-En el desarrollo de su sistema operativo de próxima generación, y tras el fracaso de su proyecto interno (Copland), Apple tomó la histórica decisión de adquirir NeXT, la empresa fundada por Steve Jobs. El producto principal de NeXT, "NeXTSTEP", se convertiría en la base de Mac OS X.
+En el desarrollo de su sistema operativo de próxima generación, y tras el fracaso de su proyecto interno (Copland), Apple tomó la histórica decisión de adquirir NeXT, la empresa fundada por [Steve Jobs](/es/p/biography-steve-jobs/). El producto principal de NeXT, "NeXTSTEP", se convertiría en la base de Mac OS X.
 
 Mac OS X (posteriormente macOS) incluía en su interior un sistema operativo tipo UNIX llamado **Darwin** (basado en FreeBSD y el microkernel Mach). Esto solucionó de raíz las debilidades de Classic Mac OS.
 
@@ -56,7 +56,7 @@ Además, con la introducción de la **protección de memoria (Memory Protection)
 La transición a Mac OS X también supuso un gran cambio de paradigma para los desarrolladores. Apple ofreció principalmente dos opciones de API para que los desarrolladores crearan aplicaciones para el nuevo SO: **Carbon** y **Cocoa**.
 
 1. **Carbon**: Una adaptación de la API de Classic Mac OS, basada en C, para OS X. Sirvió como un puente para adaptar relativamente fácil las aplicaciones existentes (como Photoshop o Microsoft Office) a OS X.
-2. **Cocoa**: Una API puramente orientada a objetos basada en Objective-C, heredada de NeXTSTEP.
+2. **Cocoa**: Una API puramente [orientada a objetos](/es/p/object-oriented-programming-oop-solid-principles/) basada en Objective-C, heredada de NeXTSTEP.
 
 Cocoa heredó los frameworks de la era NeXTSTEP (Foundation y AppKit) tal cual. El hecho de que muchas clases utilizadas en el desarrollo actual de macOS tengan el prefijo `NS` (abreviatura de NeXTSTEP) es un remanente de esto (ej. `NSString`, `NSArray`). Finalmente, Apple desaprobó Carbon y posicionó a Cocoa (y su sucesor SwiftUI) en el centro del desarrollo de macOS.
 

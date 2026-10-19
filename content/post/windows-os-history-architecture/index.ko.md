@@ -59,7 +59,7 @@ Windows 95, 98, Me는 '9x 계열'로 불리며 소비자 시장에서 큰 성공
 
 ### NT 커널의 주요 특징
 
-1. **완벽한 메모리 보호:** 애플리케이션마다 독립된 가상 메모리 공간이 할당되어, 다른 프로그램이나 OS의 핵심 부분(커널 공간)을 파괴할 수 없게 되어 있습니다.
+1. **완벽한 메모리 보호:** 애플리케이션마다 독립된 [가상 메모리 공간](/ko/p/virtual-memory-paging-mmu-architecture/)이 할당되어, 다른 프로그램이나 OS의 핵심 부분(커널 공간)을 파괴할 수 없게 되어 있습니다.
 2. **선점형 멀티태스킹:** OS의 스케줄러가 각 프로세스에 CPU 시간을 엄격하게 할당하기 때문에, 하나의 앱이 멈춰도 시스템 전체가 영향을 받지 않습니다.
 3. **하드웨어 추상화(HAL):** 하드웨어 추상화 계층(Hardware Abstraction Layer)을 통해 OS 본체와 하드웨어가 분리되어, 다양한 CPU 아키텍처(x86, MIPS, Alpha, PowerPC, 훗날 ARM)로 쉽게 이식할 수 있게 되었습니다.
 
@@ -72,7 +72,7 @@ Windows NT는 매우 우수했지만 요구 사양이 높고, 게임이나 멀�
 
 ## 아키텍처의 심연: Win32 API와 레지스트리
 
-현대 Windows를 이해하는 데 빼놓을 수 없는 두 가지 요소가 바로 'Win32 API'와 '레지스트리'입니다.
+현대 Windows를 이해하는 데 빼놓을 수 없는 두 가지 요소가 바로 'Win32 API'와 ['레지스트리'](/ko/p/windows-registry-safe-programmable-editing/)입니다.
 
 ### Win32 API: 애플리케이션과 OS의 대화
 Win32 API(Application Programming Interface)는 Windows에서 동작하는 프로그램이 OS의 기능(창 그리기, 파일 읽고 쓰기, 네트워크 통신 등)을 사용하기 위한 표준 함수들의 모음입니다.

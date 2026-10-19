@@ -1,0 +1,366 @@
+[
+  {
+    "path": "content/post/ios-architecture-history/index.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "スティーブ・ジョブズ",
+        "url": "/p/biography-steve-jobs/"
+      },
+      {
+        "term": "macOS",
+        "url": "/p/macos-architecture-history/"
+      },
+      {
+        "term": "SQLite",
+        "url": "/p/sqlite-internal-architecture/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture.",
+    "updated_sha256": "4868751249a333c2f426c7d208fae72d7bbde7df2d55e5a180adae065b04d56b"
+  },
+  {
+    "path": "content/post/ios-architecture-history/index.en.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Steve Jobs",
+        "url": "/en/p/biography-steve-jobs/"
+      },
+      {
+        "term": "macOS",
+        "url": "/en/p/macos-architecture-history/"
+      },
+      {
+        "term": "SQLite",
+        "url": "/en/p/sqlite-internal-architecture/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture.",
+    "updated_sha256": "73ed06fd9c0336f536ff951dacf3555cc47d30b601b3a9a346176dd460716617"
+  },
+  {
+    "path": "content/post/ios-architecture-history/index.de.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Steve Jobs",
+        "url": "/de/p/biography-steve-jobs/"
+      },
+      {
+        "term": "macOS",
+        "url": "/de/p/macos-architecture-history/"
+      },
+      {
+        "term": "SQLite",
+        "url": "/de/p/sqlite-internal-architecture/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture.",
+    "updated_sha256": "2cb78f2239460128cfa72e95d1aaf15e68aa12fe5394b65f5817142a2474b495"
+  },
+  {
+    "path": "content/post/ios-architecture-history/index.fr.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Steve Jobs",
+        "url": "/fr/p/biography-steve-jobs/"
+      },
+      {
+        "term": "macOS",
+        "url": "/fr/p/macos-architecture-history/"
+      },
+      {
+        "term": "SQLite",
+        "url": "/fr/p/sqlite-internal-architecture/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture.",
+    "updated_sha256": "3846789ecf721b85d7cf269cd12f824d66968de6e6bc00cdc3ef6fdf8dbd2dc9"
+  },
+  {
+    "path": "content/post/ios-architecture-history/index.es.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Steve Jobs",
+        "url": "/es/p/biography-steve-jobs/"
+      },
+      {
+        "term": "macOS",
+        "url": "/es/p/macos-architecture-history/"
+      },
+      {
+        "term": "SQLite",
+        "url": "/es/p/sqlite-internal-architecture/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture.",
+    "updated_sha256": "0bdc1d3e11cc32f387d3832d23e833bd9f5465358e2f7d13b5c42e991a85355b"
+  },
+  {
+    "path": "content/post/ios-architecture-history/index.pt.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Steve Jobs",
+        "url": "/pt/p/biography-steve-jobs/"
+      },
+      {
+        "term": "macOS",
+        "url": "/pt/p/macos-architecture-history/"
+      },
+      {
+        "term": "SQLite",
+        "url": "/pt/p/sqlite-internal-architecture/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture.",
+    "updated_sha256": "913bb1fbbe857f70fecfcef3805d31203db7ad9c638a3402eb98a566b3b5cfa6"
+  },
+  {
+    "path": "content/post/ios-architecture-history/index.id.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Steve Jobs",
+        "url": "/id/p/biography-steve-jobs/"
+      },
+      {
+        "term": "macOS",
+        "url": "/id/p/macos-architecture-history/"
+      },
+      {
+        "term": "SQLite",
+        "url": "/id/p/sqlite-internal-architecture/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture.",
+    "updated_sha256": "0b3f56c32806a3c29fe96b94d622eacab265a8b6b6a0857e6b60386aae67c9e9"
+  },
+  {
+    "path": "content/post/ios-architecture-history/index.ko.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "스티브 잡스",
+        "url": "/ko/p/biography-steve-jobs/"
+      },
+      {
+        "term": "macOS",
+        "url": "/ko/p/macos-architecture-history/"
+      },
+      {
+        "term": "SQLite",
+        "url": "/ko/p/sqlite-internal-architecture/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture.",
+    "updated_sha256": "66679e7b93f189e6ec362f4d6a46aae4eb10acc1d46d92ff33c88a320880df38"
+  },
+  {
+    "path": "content/post/ios-architecture-history/index.zh-cn.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "史蒂夫·乔布斯",
+        "url": "/zh-cn/p/biography-steve-jobs/"
+      },
+      {
+        "term": "macOS",
+        "url": "/zh-cn/p/macos-architecture-history/"
+      },
+      {
+        "term": "SQLite",
+        "url": "/zh-cn/p/sqlite-internal-architecture/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture.",
+    "updated_sha256": "a8328099ce38ef04f639f4bacd83545f76868dd0e775df69fb6bf26ff735b11b"
+  },
+  {
+    "path": "content/post/ios-architecture-history/index.zh-tw.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "史蒂夫·賈伯斯",
+        "url": "/zh-tw/p/biography-steve-jobs/"
+      },
+      {
+        "term": "macOS",
+        "url": "/zh-tw/p/macos-architecture-history/"
+      },
+      {
+        "term": "SQLite",
+        "url": "/zh-tw/p/sqlite-internal-architecture/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture.",
+    "updated_sha256": "a4cf769ceffaebc54b16977c86b858a0329f28a2c7e0bdc36b4dbb92ed6548aa"
+  },
+  {
+    "path": "content/post/ios-architecture-history/index.ar.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "ستيف جوبز",
+        "url": "/ar/p/biography-steve-jobs/"
+      },
+      {
+        "term": "macOS",
+        "url": "/ar/p/macos-architecture-history/"
+      },
+      {
+        "term": "SQLite",
+        "url": "/ar/p/sqlite-internal-architecture/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture.",
+    "updated_sha256": "57b1040de6f13a2489f584a06704157e22f6781437dae312452bad9870c098d2"
+  },
+  {
+    "path": "content/post/ios-architecture-history/index.hi.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "स्टीव जॉब्स",
+        "url": "/hi/p/biography-steve-jobs/"
+      },
+      {
+        "term": "macOS",
+        "url": "/hi/p/macos-architecture-history/"
+      },
+      {
+        "term": "SQLite",
+        "url": "/hi/p/sqlite-internal-architecture/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture.",
+    "updated_sha256": "8834aa64ffd1e4fb7945d23031560120194457e4cb4f57e32bb28822afb04324"
+  },
+  {
+    "path": "content/post/ios-architecture-history/index.ru.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Стивом Джобсом",
+        "url": "/ru/p/biography-steve-jobs/"
+      },
+      {
+        "term": "macOS",
+        "url": "/ru/p/macos-architecture-history/"
+      },
+      {
+        "term": "SQLite",
+        "url": "/ru/p/sqlite-internal-architecture/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture.",
+    "updated_sha256": "ecd603a53321775e377a12781a16606686f57233aabda3232767ea733da89891"
+  }
+]

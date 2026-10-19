@@ -59,7 +59,7 @@ Windows 95、98、Me被称为“9x系列”，在面向消费者的市场中取�
 
 ### NT内核的主要特征
 
-1. **完整的内存保护:** 为每个应用程序分配独立的虚拟内存空间，防止其破坏其他程序或操作系统的核心部分（内核空间）。
+1. **完整的内存保护:** 为每个应用程序分配独立的[虚拟内存空间](/zh-cn/p/virtual-memory-paging-mmu-architecture/)，防止其破坏其他程序或操作系统的核心部分（内核空间）。
 2. **抢占式多任务处理:** 操作系统的调度程序会严格地为每个进程分配CPU时间，因此即使一个应用程序无响应（冻结），也不会导致整个系统崩溃。
 3. **硬件抽象层 (HAL):** 通过硬件抽象层 (Hardware Abstraction Layer)，操作系统主体与硬件分离开来，使得其更容易移植到各种CPU架构（x86、MIPS、Alpha、PowerPC，以及后来的ARM）上。
 
@@ -72,7 +72,7 @@ Windows NT虽然非常优秀，但由于其要求配置高，且在游戏和多�
 
 ## 架构的深渊：Win32 API与注册表
 
-在理解现代Windows时，不可或缺的两个元素是“Win32 API”和“注册表”。
+在理解现代Windows时，不可或缺的两个元素是“Win32 API”和“[注册表](/zh-cn/p/windows-registry-safe-programmable-editing/)”。
 
 ### Win32 API：应用程序与OS的对话
 Win32 API (Application Programming Interface) 是一组标准函数，供在Windows上运行的程序调用操作系统的功能（如绘制窗口、读写文件、网络通信等）。

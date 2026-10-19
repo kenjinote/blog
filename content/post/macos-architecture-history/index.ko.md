@@ -39,7 +39,7 @@ graph TD
 
 ## Mac OS X의 탄생: UNIX의 파워와 선점형 멀티태스킹
 
-Apple은 차세대 OS 개발에 있어, 자체 개발 프로젝트(Copland)의 실패를 겪은 후 스티브 잡스가 설립한 NeXT사를 인수한다는 역사적인 결단을 내렸습니다. NeXT의 주력 제품이었던 'NeXTSTEP'이야말로 Mac OS X의 기반이 됩니다.
+Apple은 차세대 OS 개발에 있어, 자체 개발 프로젝트(Copland)의 실패를 겪은 후 [스티브 잡스](/ko/p/biography-steve-jobs/)가 설립한 NeXT사를 인수한다는 역사적인 결단을 내렸습니다. NeXT의 주력 제품이었던 'NeXTSTEP'이야말로 Mac OS X의 기반이 됩니다.
 
 Mac OS X(이후 macOS)는 내부에 **Darwin**이라 불리는 UNIX 계열 운영 체제(FreeBSD 및 Mach 마이크로커널 기반)를 탑재하고 있었습니다. 이로써 Classic Mac OS의 약점은 근본적으로 해결되었습니다.
 
@@ -56,7 +56,7 @@ OS X가 가져다준 가장 큰 혜택 중 하나는 **선점형 멀티태스킹
 Mac OS X로의 전환은 개발자들에게도 큰 패러다임 전환이었습니다. Apple은 개발자가 새로운 OS용 애플리케이션을 구축하기 위한 API로 크게 두 가지 선택지를 제공했습니다. 그것이 **Carbon**과 **Cocoa**입니다.
 
 1. **Carbon**: Classic Mac OS의 API를 C 언어 기반으로 OS X용으로 이식 및 적응시킨 것. 기존 애플리케이션(Photoshop이나 Microsoft Office 등)을 비교적 쉽게 OS X에 대응시키기 위한 가교 역할을 했습니다.
-2. **Cocoa**: NeXTSTEP에서 계승된 Objective-C 기반의 순수 객체 지향 API.
+2. **Cocoa**: NeXTSTEP에서 계승된 Objective-C 기반의 순수 [객체 지향](/ko/p/object-oriented-programming-oop-solid-principles/) API.
 
 Cocoa는 NeXTSTEP 시절의 프레임워크(Foundation이나 AppKit)를 그대로 물려받았습니다. 현재에도 macOS 개발에 사용되는 클래스 다수가 `NS`(NeXTSTEP의 약자)라는 접두사를 가지고 있는 것은 이 흔적입니다(예: `NSString`, `NSArray`). 최종적으로 Apple은 Carbon을 사용 중단 처리하고, Cocoa(그리고 이후의 SwiftUI)를 macOS 개발의 중심으로 자리 잡게 합니다.
 

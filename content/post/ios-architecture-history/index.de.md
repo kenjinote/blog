@@ -10,9 +10,9 @@ date: 2026-10-01T22:22:58+09:00
 
 ## Einführung: Die Abstammung von NeXT und die Geburt von iOS
 
-Apples mobiles Betriebssystem „iOS“ ist ein leistungsstarkes Betriebssystem, das heute weltweit Milliarden von Geräten antreibt. Die zugrunde liegende Architektur geht jedoch auf „NeXTSTEP“ zurück, ein Betriebssystem, das von NeXT entwickelt wurde, dem Unternehmen, das Steve Jobs während seiner Abwesenheit von Apple gründete.
+Apples mobiles Betriebssystem „iOS“ ist ein leistungsstarkes Betriebssystem, das heute weltweit Milliarden von Geräten antreibt. Die zugrunde liegende Architektur geht jedoch auf „NeXTSTEP“ zurück, ein Betriebssystem, das von NeXT entwickelt wurde, dem Unternehmen, das [Steve Jobs](/de/p/biography-steve-jobs/) während seiner Abwesenheit von Apple gründete.
 
-iOS (anfangs als iPhone OS bezeichnet) wurde nicht nur als leichtgewichtiges Betriebssystem für Mobiltelefone konzipiert, sondern als Teilmenge von Mac OS X (dem heutigen macOS). Es handelte sich um ein ambitioniertes Projekt, das darauf abzielte, ein leistungsstarkes, Unix-basiertes Betriebssystem der Desktop-Klasse in ein handtellergroßes Gerät zu integrieren.
+iOS (anfangs als iPhone OS bezeichnet) wurde nicht nur als leichtgewichtiges Betriebssystem für Mobiltelefone konzipiert, sondern als Teilmenge von Mac OS X (dem heutigen [macOS](/de/p/macos-architecture-history/)). Es handelte sich um ein ambitioniertes Projekt, das darauf abzielte, ein leistungsstarkes, Unix-basiertes Betriebssystem der Desktop-Klasse in ein handtellergroßes Gerät zu integrieren.
 
 In diesem Artikel werden wir die tiefgreifende Architektur von iOS, die aus NeXTSTEP hervorgegangen ist, im Detail analysieren – vom untersten Kernel bis hin zum obersten UI-Framework.
 
@@ -52,7 +52,7 @@ Der Core Services Layer ist die Schicht, die grundlegende Systemdienste bereitst
 Zu den wichtigsten Frameworks gehören:
 
 *   **Foundation / Core Foundation**: Bietet die zugrunde liegenden Funktionen für Objective-C und Swift, angefangen bei grundlegenden Datentypen wie Zeichenketten (NSString / String), Arrays (NSArray / Array) und Wörterbüchern (NSDictionary / Dictionary) bis hin zur Thread-Verwaltung, Netzwerkkommunikation (URLSession) und Dateiverwaltung.
-*   **Core Data**: Ein Objektgraphen-Framework, das das Datenmodell der Anwendung verwaltet und die Persistenz in einer lokalen Datenbank wie SQLite abstrahiert.
+*   **Core Data**: Ein Objektgraphen-Framework, das das Datenmodell der Anwendung verwaltet und die Persistenz in einer lokalen Datenbank wie [SQLite](/de/p/sqlite-internal-architecture/) abstrahiert.
 *   **CloudKit**: Bietet Zugriff auf Backend-Dienste, um Daten geräteübergreifend über iCloud zu synchronisieren.
 *   **Grand Central Dispatch (GCD)**: Eine C-basierte API für die effiziente parallele Verarbeitung auf Multi-Core-Prozessoren. Es befreit Entwickler von der Komplexität der direkten Thread-Verwaltung; durch einfaches Einreihen von Aufgaben in eine Warteschlange (Queue) nimmt das System die optimale Thread-Zuweisung vor.
 

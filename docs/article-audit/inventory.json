@@ -144239,13 +144239,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "017-ios-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/ios-architecture-history/index.de.md",
@@ -144262,13 +144268,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "017-ios-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/ios-architecture-history/index.en.md",
@@ -144285,13 +144297,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "017-ios-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/ios-architecture-history/index.es.md",
@@ -144308,13 +144326,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "017-ios-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/ios-architecture-history/index.fr.md",
@@ -144331,13 +144355,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "017-ios-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/ios-architecture-history/index.hi.md",
@@ -144354,13 +144384,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "017-ios-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/ios-architecture-history/index.id.md",
@@ -144377,13 +144413,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "017-ios-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/ios-architecture-history/index.ko.md",
@@ -144400,13 +144442,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "017-ios-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/ios-architecture-history/index.md",
@@ -144423,13 +144471,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "017-ios-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/ios-architecture-history/index.pt.md",
@@ -144446,13 +144500,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "017-ios-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/ios-architecture-history/index.ru.md",
@@ -144469,13 +144529,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "017-ios-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/ios-architecture-history/index.zh-cn.md",
@@ -144492,13 +144558,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "017-ios-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/ios-architecture-history/index.zh-tw.md",
@@ -144515,13 +144587,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "017-ios-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/iron-corrosion-rust-science-cathodic-protection-guide/index.ar.md",
@@ -158370,13 +158448,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "018-macos-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/macos-architecture-history/index.de.md",
@@ -158393,13 +158477,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "018-macos-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/macos-architecture-history/index.en.md",
@@ -158416,13 +158506,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "018-macos-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/macos-architecture-history/index.es.md",
@@ -158439,13 +158535,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "018-macos-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/macos-architecture-history/index.fr.md",
@@ -158462,13 +158564,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "018-macos-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/macos-architecture-history/index.hi.md",
@@ -158485,13 +158593,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "018-macos-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/macos-architecture-history/index.id.md",
@@ -158508,13 +158622,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "018-macos-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/macos-architecture-history/index.ko.md",
@@ -158531,13 +158651,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "018-macos-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/macos-architecture-history/index.md",
@@ -158554,13 +158680,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "018-macos-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/macos-architecture-history/index.pt.md",
@@ -158577,13 +158709,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "018-macos-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/macos-architecture-history/index.ru.md",
@@ -158600,13 +158738,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "018-macos-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/macos-architecture-history/index.zh-cn.md",
@@ -158623,13 +158767,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "018-macos-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/macos-architecture-history/index.zh-tw.md",
@@ -158646,13 +158796,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "018-macos-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法/index.ar.md",
@@ -242660,13 +242816,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": "019-windows-review"
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "019-windows-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/windows-os-history-architecture/index.de.md",
@@ -242683,13 +242845,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": "019-windows-review"
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "019-windows-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/windows-os-history-architecture/index.en.md",
@@ -242706,13 +242874,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": "019-windows-review"
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "019-windows-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/windows-os-history-architecture/index.es.md",
@@ -242729,13 +242903,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": "019-windows-review"
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "019-windows-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/windows-os-history-architecture/index.fr.md",
@@ -242752,13 +242932,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": "019-windows-review"
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "019-windows-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/windows-os-history-architecture/index.hi.md",
@@ -242775,13 +242961,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": "019-windows-review"
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "019-windows-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/windows-os-history-architecture/index.id.md",
@@ -242798,13 +242990,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": "019-windows-review"
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "019-windows-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/windows-os-history-architecture/index.ko.md",
@@ -242821,13 +243019,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": "019-windows-review"
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "019-windows-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/windows-os-history-architecture/index.md",
@@ -242844,13 +243048,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": "019-windows-review"
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "019-windows-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/windows-os-history-architecture/index.pt.md",
@@ -242867,13 +243077,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": "019-windows-review"
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "019-windows-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/windows-os-history-architecture/index.ru.md",
@@ -242890,13 +243106,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": "019-windows-review"
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "019-windows-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/windows-os-history-architecture/index.zh-cn.md",
@@ -242913,13 +243135,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": "019-windows-review"
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "019-windows-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/windows-os-history-architecture/index.zh-tw.md",
@@ -242936,13 +243164,19 @@
         "os"
       ],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": "019-windows-review"
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "hugo": "exit 0; 636007 ms",
+        "source": "39 independent byte-exact inverse-link comparisons; protected material unchanged. Effective-markup isolated renders identical except anchors.",
+        "browser": "39 before/after pages passed: exact link changes, paragraphs/lists, headings and TOC, code, math, Mermaid, images, language switch, categories and target HTTP200, mobile overflow. Arabic iOS and English Windows screenshots visually inspected.",
+        "upstream": "971ec1806 merged fast-forward; only request_indexing.py changed, not a Hugo input; indexing script not executed."
+      },
+      "batch": "019-windows-links",
+      "push_status": "pending commit and push"
     },
     {
       "path": "content/post/windows11_msixパッケージ/index.ar.md",
@@ -243409,11 +243643,11 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": "020-windows-registry-review"
     },
     {
       "path": "content/post/windows_registry/index.pt.md",

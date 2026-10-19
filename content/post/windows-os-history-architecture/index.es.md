@@ -59,7 +59,7 @@ Lanzado en 1993, Windows NT 3.1 fue diseñado desde cero pensando en servidores 
 
 ### Características principales del kernel NT
 
-1. **Protección completa de la memoria:** A cada aplicación se le asigna un espacio de memoria virtual independiente, evitando que pueda corromper otros programas o las partes centrales del sistema operativo (el espacio del kernel).
+1. **Protección completa de la memoria:** A cada aplicación se le asigna un espacio de [memoria virtual](/es/p/virtual-memory-paging-mmu-architecture/) independiente, evitando que pueda corromper otros programas o las partes centrales del sistema operativo (el espacio del kernel).
 2. **Multitarea preventiva:** El programador del sistema operativo (scheduler) asigna estrictamente el tiempo de CPU a cada proceso, de modo que si una aplicación se congela, no arrastra consigo a todo el sistema.
 3. **Capa de Abstracción de Hardware (HAL):** Separaba el núcleo del sistema operativo del hardware, facilitando su adaptación a diversas arquitecturas de CPU (x86, MIPS, Alpha, PowerPC, y posteriormente ARM).
 
@@ -72,7 +72,7 @@ Tenía la apariencia amigable de una interfaz de usuario para el consumidor, per
 
 ## Las profundidades de la arquitectura: La API Win32 y el Registro
 
-Hay dos elementos esenciales para comprender el Windows moderno: la "API Win32" y el "Registro".
+Hay dos elementos esenciales para comprender el Windows moderno: la "API Win32" y el "[Registro](/es/p/windows-registry-safe-programmable-editing/)".
 
 ### API Win32: El diálogo entre la aplicación y el sistema operativo
 La API Win32 (Interfaz de Programación de Aplicaciones) es un conjunto de funciones estándar que los programas que se ejecutan en Windows utilizan para acceder a las funciones del sistema operativo (dibujar ventanas, leer y escribir archivos, comunicación de red, etc.).

@@ -39,7 +39,7 @@ If Application A crashes or falls into an infinite loop and fails to return cont
 
 ## The Birth of Mac OS X: UNIX Power and Preemptive Multitasking
 
-In developing their next-generation OS, following the failure of their in-house project (Copland), Apple made the historic decision to acquire NeXT, a company founded by Steve Jobs. NeXT's flagship product, "NeXTSTEP," became the foundation of Mac OS X.
+In developing their next-generation OS, following the failure of their in-house project (Copland), Apple made the historic decision to acquire NeXT, a company founded by [Steve Jobs](/en/p/biography-steve-jobs/). NeXT's flagship product, "NeXTSTEP," became the foundation of Mac OS X.
 
 Mac OS X (later macOS) was built on a UNIX-like operating system called **Darwin** (based on FreeBSD and the Mach microkernel). This fundamentally resolved the weaknesses of Classic Mac OS.
 
@@ -56,7 +56,7 @@ Furthermore, with the introduction of **Memory Protection**, each application wa
 The transition to Mac OS X was also a massive paradigm shift for developers. Apple primarily provided two API options for developers to build applications for the new OS: **Carbon** and **Cocoa**.
 
 1. **Carbon**: An adaptation and port of the Classic Mac OS API for OS X, based in C. It served as a bridge to relatively easily bring existing applications (like Photoshop and Microsoft Office) to OS X.
-2. **Cocoa**: A pure object-oriented API based on Objective-C, inherited directly from NeXTSTEP.
+2. **Cocoa**: A pure [object-oriented](/en/p/object-oriented-programming-oop-solid-principles/) API based on Objective-C, inherited directly from NeXTSTEP.
 
 Cocoa directly carries forward the frameworks from the NeXTSTEP era (Foundation and AppKit). This is why many classes still used in macOS development today carry the `NS` prefix (standing for NeXTSTEP) (e.g., `NSString`, `NSArray`). Ultimately, Apple deprecated Carbon, positioning Cocoa (and later SwiftUI) at the center of macOS development.
 

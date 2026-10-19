@@ -10,9 +10,9 @@ date: 2026-10-01T22:22:58+09:00
 
 ## 引言：NeXT 的谱系与 iOS 的诞生
 
-Apple 的移动操作系统“iOS”是一个强大的操作系统，如今驱动着全球数十亿台设备。然而，其底层架构可以追溯到史蒂夫·乔布斯离开 Apple 期间创立的 NeXT 公司的“NeXTSTEP”。
+Apple 的移动操作系统“iOS”是一个强大的操作系统，如今驱动着全球数十亿台设备。然而，其底层架构可以追溯到[史蒂夫·乔布斯](/zh-cn/p/biography-steve-jobs/)离开 Apple 期间创立的 NeXT 公司的“NeXTSTEP”。
 
-iOS（最初称为 iPhone OS）并非仅仅作为一个针对手机的轻量级操作系统诞生，而是作为 Mac OS X（现在的 macOS）的子集而诞生。换句话说，这是一个将桌面级强大的基于 Unix 的操作系统放入手掌大小设备中的野心勃勃的项目。
+iOS（最初称为 iPhone OS）并非仅仅作为一个针对手机的轻量级操作系统诞生，而是作为 Mac OS X（现在的 [macOS](/zh-cn/p/macos-architecture-history/)）的子集而诞生。换句话说，这是一个将桌面级强大的基于 Unix 的操作系统放入手掌大小设备中的野心勃勃的项目。
 
 在本文中，我们将详细剖析从 NeXTSTEP 继承下来的 iOS 深层架构，从最底层的内核到最高层的 UI 框架。
 
@@ -52,7 +52,7 @@ Core Services 层是提供所有应用程序所需的基本系统服务的层。
 主要框架包括：
 
 *   **Foundation / Core Foundation**：从字符串（NSString / String）、数组（NSArray / Array）、字典（NSDictionary / Dictionary）等基本数据类型，到线程管理、网络通信（URLSession）和文件管理，提供了 Objective-C 和 Swift 的基础功能。
-*   **Core Data**：一个对象图框架，用于管理应用程序的数据模型，并抽象化到本地数据库（如 SQLite）的持久化。
+*   **Core Data**：一个对象图框架，用于管理应用程序的数据模型，并抽象化到本地数据库（如 [SQLite](/zh-cn/p/sqlite-internal-architecture/)）的持久化。
 *   **CloudKit**：提供对后端服务的访问，以便通过 iCloud 在设备之间同步数据。
 *   **Grand Central Dispatch (GCD)**：一个基于 C 语言的 API，用于在多核处理器上高效执行并发处理。它将开发者从直接管理线程的复杂性中解放出来，只需将任务排入队列，系统就会进行最佳的线程分配。
 

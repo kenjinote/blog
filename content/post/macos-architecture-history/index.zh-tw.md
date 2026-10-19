@@ -39,7 +39,7 @@ graph TD
 
 ## Mac OS X 的誕生：UNIX 的威力與搶占式多工 (Preemptive Multitasking)
 
-Apple 在開發次世代 OS 時，經歷了內部開發專案 (Copland) 的失敗，隨後做出了收購由 Steve Jobs 創立的 NeXT 公司的歷史性決定。NeXT 的主力產品「NeXTSTEP」正是 Mac OS X 的基礎。
+Apple 在開發次世代 OS 時，經歷了內部開發專案 (Copland) 的失敗，隨後做出了收購由 [Steve Jobs](/zh-tw/p/biography-steve-jobs/) 創立的 NeXT 公司的歷史性決定。NeXT 的主力產品「NeXTSTEP」正是 Mac OS X 的基礎。
 
 Mac OS X（後來的 macOS）內部搭載了稱為 **Darwin** 的類 UNIX 作業系統（基於 FreeBSD 和 Mach 微核心）。這從根本上解決了 Classic Mac OS 的弱點。
 
@@ -56,7 +56,7 @@ OS X 帶來的最大好處之一就是**搶占式多工 (Preemptive Multitasking
 向 Mac OS X 的過渡對開發者來說也是一次重大的典範轉移。Apple 為了讓開發者能為新 OS 構建應用程式，提供了兩個主要的 API 選擇。這就是 **Carbon** 和 **Cocoa**。
 
 1. **Carbon**：將 Classic Mac OS 的 API 移植並調整為 OS X 適用的 C 語言基礎 API。這是為了讓現有應用程式（如 Photoshop 和 Microsoft Office）相對容易地支援 OS X 的橋樑。
-2. **Cocoa**：繼承自 NeXTSTEP，基於 Objective-C 的純物件導向 API。
+2. **Cocoa**：繼承自 NeXTSTEP，基於 Objective-C 的純[物件導向](/zh-tw/p/object-oriented-programming-oop-solid-principles/) API。
 
 Cocoa 原封不動地繼承了 NeXTSTEP 時代的框架 (Foundation 和 AppKit)。直到現在，許多在 macOS 開發中使用的類別仍帶有 `NS` (NeXTSTEP 的縮寫) 的前綴，這正是當時的遺跡（例如：`NSString`、`NSArray`）。最終，Apple 廢棄了 Carbon，並將 Cocoa（以及後來的 SwiftUI）置於 macOS 開發的核心。
 

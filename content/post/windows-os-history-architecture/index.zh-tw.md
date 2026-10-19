@@ -59,7 +59,7 @@ Windows 95、98、Me被稱為「9x系列」，在消費市場上取得了巨大�
 
 ### NT核心的主要特徵
 
-1. **完全的記憶體保護：** 為每個應用程式分配獨立的虛擬記憶體空間，使其無法破壞其他程式或OS的核心部分（核心空間）。
+1. **完全的記憶體保護：** 為每個應用程式分配獨立的[虛擬記憶體空間](/zh-tw/p/virtual-memory-paging-mmu-architecture/)，使其無法破壞其他程式或OS的核心部分（核心空間）。
 2. **搶佔式多工（Preemptive multitasking）：** OS的排程器會嚴格地將CPU時間分配給各個處理程序，因此就算一個應用程式當機，也不會連累整個系統。
 3. **硬體抽象化 (HAL)：** 透過硬體抽象層 (Hardware Abstraction Layer)，將OS本體與硬體分離，使其更容易移植到各種CPU架構（x86、MIPS、Alpha、PowerPC，以及後來的ARM）。
 
@@ -72,7 +72,7 @@ Windows NT雖然非常優秀，但由於對硬體規格的要求較高，且在�
 
 ## 架構的深淵：Win32 API與登錄檔
 
-在理解現代Windows時，不可或缺的兩個要素是「Win32 API」與「登錄檔（Registry）」。
+在理解現代Windows時，不可或缺的兩個要素是「Win32 API」與「[登錄檔](/zh-tw/p/windows-registry-safe-programmable-editing/)（Registry）」。
 
 ### Win32 API：應用程式與OS的對話
 Win32 API (Application Programming Interface) 是讓在Windows上運行的程式，能夠利用OS功能（視窗繪製、檔案讀寫、網路通訊等）的標準函式集合。

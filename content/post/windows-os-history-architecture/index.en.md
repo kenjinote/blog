@@ -59,7 +59,7 @@ Introduced in 1993, Windows NT 3.1 was designed from scratch for business profes
 
 ### Key Features of the NT Kernel
 
-1. **Complete Memory Protection:** Each application is assigned an independent virtual memory space, preventing it from corrupting other programs or the core part of the OS (kernel space).
+1. **Complete Memory Protection:** Each application is assigned an independent [virtual memory space](/en/p/virtual-memory-paging-mmu-architecture/), preventing it from corrupting other programs or the core part of the OS (kernel space).
 2. **Preemptive Multitasking:** The OS scheduler strictly allocates CPU time to each process, ensuring that if one app freezes, the entire system is not taken down with it.
 3. **Hardware Abstraction Layer (HAL):** By separating the main OS from the hardware, HAL made it easier to port the OS to various CPU architectures (x86, MIPS, Alpha, PowerPC, and later ARM).
 
@@ -72,7 +72,7 @@ It featured an approachable, consumer-friendly UI on the outside, while internal
 
 ## The Depths of Architecture: The Win32 API and the Registry
 
-Two essential elements for understanding modern Windows are the "Win32 API" and the "Registry."
+Two essential elements for understanding modern Windows are the "Win32 API" and the "[Registry](/en/p/windows-registry-safe-programmable-editing/)."
 
 ### The Win32 API: Communication Between Applications and the OS
 The Win32 API (Application Programming Interface) is a collection of standard functions that programs running on Windows use to access OS features (such as drawing windows, reading/writing files, and network communication).

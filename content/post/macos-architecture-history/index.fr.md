@@ -39,7 +39,7 @@ Si l'application A plante ou entre dans une boucle infinie sans rendre le contr�
 
 ## La naissance de Mac OS X : la puissance d'UNIX et le multitâche préemptif
 
-Lors du développement de son OS de nouvelle génération, après l'échec de son projet interne (Copland), Apple a pris la décision historique de racheter NeXT, la société fondée par Steve Jobs. C'est le produit phare de NeXT, « NeXTSTEP », qui servira de base à Mac OS X.
+Lors du développement de son OS de nouvelle génération, après l'échec de son projet interne (Copland), Apple a pris la décision historique de racheter NeXT, la société fondée par [Steve Jobs](/fr/p/biography-steve-jobs/). C'est le produit phare de NeXT, « NeXTSTEP », qui servira de base à Mac OS X.
 
 Mac OS X (plus tard macOS) intégrait en son cœur un système d'exploitation de type UNIX appelé **Darwin** (basé sur FreeBSD et le micro-noyau Mach). Cela a permis de résoudre à la racine les points faibles de Classic Mac OS.
 
@@ -56,7 +56,7 @@ De plus, grâce à l'introduction de la **protection de la mémoire (Memory Prot
 La transition vers Mac OS X a également été un changement de paradigme majeur pour les développeurs. Apple a proposé deux grands choix d'API pour permettre aux développeurs de créer des applications pour le nouvel OS : **Carbon** et **Cocoa**.
 
 1. **Carbon** : L'API de Classic Mac OS, basée sur le langage C, portée et adaptée pour OS X. Elle servait de passerelle pour permettre de rendre les applications existantes (comme Photoshop ou Microsoft Office) relativement facilement compatibles avec OS X.
-2. **Cocoa** : L'API héritée de NeXTSTEP, purement orientée objet et basée sur Objective-C.
+2. **Cocoa** : L'API héritée de NeXTSTEP, purement [orientée objet](/fr/p/object-oriented-programming-oop-solid-principles/) et basée sur Objective-C.
 
 Cocoa conserve en grande partie les frameworks de l'ère NeXTSTEP (Foundation et AppKit). Le fait que de nombreuses classes encore utilisées aujourd'hui dans le développement macOS portent le préfixe `NS` (pour NeXTSTEP) en est le vestige (par exemple, `NSString`, `NSArray`). Apple a finalement rendu Carbon obsolète, plaçant Cocoa (et plus tard SwiftUI) au cœur du développement macOS.
 

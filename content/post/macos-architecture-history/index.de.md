@@ -39,7 +39,7 @@ Wenn Anwendung A abstürzte oder in eine Endlosschleife geriet und die Steuerung
 
 ## Die Geburt von Mac OS X: Die Leistung von UNIX und präemptives Multitasking
 
-Bei der Entwicklung des Betriebssystems der nächsten Generation traf Apple nach dem Scheitern des internen Entwicklungsprojekts (Copland) die historische Entscheidung, das von Steve Jobs gegründete Unternehmen NeXT zu übernehmen. Das Hauptprodukt von NeXT, 'NeXTSTEP', sollte die Grundlage für Mac OS X bilden.
+Bei der Entwicklung des Betriebssystems der nächsten Generation traf Apple nach dem Scheitern des internen Entwicklungsprojekts (Copland) die historische Entscheidung, das von [Steve Jobs](/de/p/biography-steve-jobs/) gegründete Unternehmen NeXT zu übernehmen. Das Hauptprodukt von NeXT, 'NeXTSTEP', sollte die Grundlage für Mac OS X bilden.
 
 Mac OS X (später macOS) enthielt im Kern ein UNIX-basiertes Betriebssystem (basierend auf FreeBSD und dem Mach-Mikrokernel) namens **Darwin**. Dadurch wurden die Schwachstellen von Classic Mac OS grundlegend behoben.
 
@@ -56,7 +56,7 @@ Darüber hinaus führte die Einführung des **Speicherschutzes (Memory Protectio
 Der Übergang zu Mac OS X war auch für Entwickler ein großer Paradigmenwechsel. Apple bot Entwicklern zwei Hauptoptionen als APIs zur Erstellung von Anwendungen für das neue Betriebssystem an: **Carbon** und **Cocoa**.
 
 1. **Carbon**: Eine C-basierte Portierung und Anpassung der Classic Mac OS-API für OS X. Es diente als Brücke, um bestehenden Anwendungen (wie Photoshop und Microsoft Office) die relativ einfache Unterstützung von OS X zu ermöglichen.
-2. **Cocoa**: Eine reine, objektorientierte API basierend auf Objective-C, die aus NeXTSTEP übernommen wurde.
+2. **Cocoa**: Eine reine, [objektorientierte](/de/p/object-oriented-programming-oop-solid-principles/) API basierend auf Objective-C, die aus NeXTSTEP übernommen wurde.
 
 Cocoa hat die Frameworks aus der NeXTSTEP-Ära (Foundation und AppKit) direkt übernommen. Die Tatsache, dass viele der heute noch in der macOS-Entwicklung verwendeten Klassen das Präfix `NS` (Abkürzung für NeXTSTEP) tragen, ist ein Relikt aus dieser Zeit (z. B. `NSString`, `NSArray`). Letztendlich hat Apple Carbon als veraltet markiert und Cocoa (und später SwiftUI) in den Mittelpunkt der macOS-Entwicklung gestellt.
 

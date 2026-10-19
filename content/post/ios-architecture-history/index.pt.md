@@ -10,9 +10,9 @@ date: 2026-10-01T22:22:58+09:00
 
 ## Introdução: A linhagem da NeXT e o nascimento do iOS
 
-O "iOS", o sistema operacional móvel da Apple, é um poderoso sistema operacional que impulsiona bilhões de dispositivos em todo o mundo hoje. No entanto, a sua arquitetura subjacente remonta ao "NeXTSTEP" da NeXT, empresa fundada por Steve Jobs durante o período em que esteve fora da Apple.
+O "iOS", o sistema operacional móvel da Apple, é um poderoso sistema operacional que impulsiona bilhões de dispositivos em todo o mundo hoje. No entanto, a sua arquitetura subjacente remonta ao "NeXTSTEP" da NeXT, empresa fundada por [Steve Jobs](/pt/p/biography-steve-jobs/) durante o período em que esteve fora da Apple.
 
-O iOS (inicialmente chamado de iPhone OS) não nasceu simplesmente como um sistema operacional leve para telefones celulares, mas como um subconjunto do Mac OS X (atualmente macOS). Ou seja, foi um projeto ambicioso para encaixar um poderoso sistema operacional baseado em Unix de classe de desktop em um dispositivo que cabe na palma da sua mão.
+O iOS (inicialmente chamado de iPhone OS) não nasceu simplesmente como um sistema operacional leve para telefones celulares, mas como um subconjunto do Mac OS X (atualmente [macOS](/pt/p/macos-architecture-history/)). Ou seja, foi um projeto ambicioso para encaixar um poderoso sistema operacional baseado em Unix de classe de desktop em um dispositivo que cabe na palma da sua mão.
 
 Neste artigo, dissecaremos detalhadamente a profunda arquitetura do iOS herdada do NeXTSTEP, desde o kernel no nível mais baixo até as estruturas de interface de usuário (UI) no nível mais alto.
 
@@ -52,7 +52,7 @@ A Core Services Layer é a camada que fornece os serviços básicos do sistema e
 Os principais frameworks incluem:
 
 * **Foundation / Core Foundation**: Fornece as funções fundamentais para Objective-C e Swift, desde tipos de dados básicos como strings (NSString / String), matrizes (NSArray / Array) e dicionários (NSDictionary / Dictionary) até gerenciamento de threads, comunicação de rede (URLSession) e gerenciamento de arquivos.
-* **Core Data**: Um framework de gráfico de objetos que gerencia o modelo de dados de um aplicativo e abstrai a persistência para bancos de dados locais, como SQLite.
+* **Core Data**: Um framework de gráfico de objetos que gerencia o modelo de dados de um aplicativo e abstrai a persistência para bancos de dados locais, como [SQLite](/pt/p/sqlite-internal-architecture/).
 * **CloudKit**: Fornece acesso a serviços de back-end para sincronizar dados entre dispositivos por meio do iCloud.
 * **Grand Central Dispatch (GCD)**: Uma API baseada em C para executar de forma eficiente o processamento simultâneo em processadores de vários núcleos. Ele libera os desenvolvedores da complexidade de gerenciar threads diretamente; basta enfileirar tarefas em uma fila e o sistema faz a alocação de threads ideal.
 

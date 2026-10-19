@@ -59,7 +59,7 @@ Windows NT 3.1, lancé en 1993, a été conçu à partir de zéro, principalemen
 
 ### Principales caractéristiques du noyau NT
 
-1. **Protection complète de la mémoire :** Chaque application se voit attribuer un espace de mémoire virtuelle indépendant, ce qui l'empêche de détruire d'autres programmes ou les parties centrales du système d'exploitation (espace noyau).
+1. **Protection complète de la mémoire :** Chaque application se voit attribuer un espace de [mémoire virtuelle](/fr/p/virtual-memory-paging-mmu-architecture/) indépendant, ce qui l'empêche de détruire d'autres programmes ou les parties centrales du système d'exploitation (espace noyau).
 2. **Multitâche préemptif :** Le planificateur du système d'exploitation alloue strictement le temps du processeur à chaque processus, de sorte que si une application se bloque, elle n'entraîne pas tout le système avec elle.
 3. **Abstraction matérielle (HAL) :** La couche d'abstraction matérielle (Hardware Abstraction Layer) sépare le système d'exploitation lui-même du matériel, ce qui facilite son portage vers diverses architectures de processeur (x86, MIPS, Alpha, PowerPC, et plus tard ARM).
 
@@ -72,7 +72,7 @@ Tout en ayant l'apparence familière d'une interface utilisateur pour les consom
 
 ## Les profondeurs de l'architecture : l'API Win32 et le Registre
 
-Deux éléments sont essentiels pour comprendre le Windows moderne : l'« API Win32 » et le « Registre ».
+Deux éléments sont essentiels pour comprendre le Windows moderne : l'« API Win32 » et le « [Registre](/fr/p/windows-registry-safe-programmable-editing/) ».
 
 ### L'API Win32 : Le dialogue entre l'application et le système d'exploitation
 L'API Win32 (Application Programming Interface) est un ensemble de fonctions standard permettant aux programmes fonctionnant sous Windows d'utiliser les fonctionnalités du système d'exploitation (dessiner des fenêtres, lire et écrire des fichiers, communiquer sur le réseau, etc.).

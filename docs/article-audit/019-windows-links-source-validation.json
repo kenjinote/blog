@@ -1,0 +1,314 @@
+[
+  {
+    "path": "content/post/windows-os-history-architecture/index.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "仮想メモリ空間",
+        "url": "/p/virtual-memory-paging-mmu-architecture/"
+      },
+      {
+        "term": "レジストリ",
+        "url": "/p/windows-registry-safe-programmable-editing/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; operating-system history and architecture, os localized in batch 015.",
+    "updated_sha256": "ba3cc514283524908d4f00fd4ca5da16c77dbbb35fede01e98fdb152c4f716ae"
+  },
+  {
+    "path": "content/post/windows-os-history-architecture/index.en.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "virtual memory space",
+        "url": "/en/p/virtual-memory-paging-mmu-architecture/"
+      },
+      {
+        "term": "Registry",
+        "url": "/en/p/windows-registry-safe-programmable-editing/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; operating-system history and architecture, os localized in batch 015.",
+    "updated_sha256": "eb4704e2f4bffa2b4a33559288c98f6f26b270545939b135ff84c9c3bdb65fb8"
+  },
+  {
+    "path": "content/post/windows-os-history-architecture/index.de.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "virtueller Speicherbereich",
+        "url": "/de/p/virtual-memory-paging-mmu-architecture/"
+      },
+      {
+        "term": "Registry",
+        "url": "/de/p/windows-registry-safe-programmable-editing/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; operating-system history and architecture, os localized in batch 015.",
+    "updated_sha256": "a744b0d3f9a456a3da65f9301eb613380f87114ae496c40332009f0d2188710e"
+  },
+  {
+    "path": "content/post/windows-os-history-architecture/index.fr.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "mémoire virtuelle",
+        "url": "/fr/p/virtual-memory-paging-mmu-architecture/"
+      },
+      {
+        "term": "Registre",
+        "url": "/fr/p/windows-registry-safe-programmable-editing/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; operating-system history and architecture, os localized in batch 015.",
+    "updated_sha256": "b032f3919f90c6c5736e3f28bf5a9ae1c71700955bcb544801f85028641b9fb7"
+  },
+  {
+    "path": "content/post/windows-os-history-architecture/index.es.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "memoria virtual",
+        "url": "/es/p/virtual-memory-paging-mmu-architecture/"
+      },
+      {
+        "term": "Registro",
+        "url": "/es/p/windows-registry-safe-programmable-editing/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; operating-system history and architecture, os localized in batch 015.",
+    "updated_sha256": "41ede58a116a098fa09dd2ccce7baaa99694f8c43e9fede99b585deb5f925335"
+  },
+  {
+    "path": "content/post/windows-os-history-architecture/index.pt.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "memória virtual",
+        "url": "/pt/p/virtual-memory-paging-mmu-architecture/"
+      },
+      {
+        "term": "Registro",
+        "url": "/pt/p/windows-registry-safe-programmable-editing/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; operating-system history and architecture, os localized in batch 015.",
+    "updated_sha256": "9fd89ab68f805812f6282a2a34c372ff80a55c3683ed2b7f40f7a4f2eaa2582a"
+  },
+  {
+    "path": "content/post/windows-os-history-architecture/index.id.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "memori virtual",
+        "url": "/id/p/virtual-memory-paging-mmu-architecture/"
+      },
+      {
+        "term": "Registry",
+        "url": "/id/p/windows-registry-safe-programmable-editing/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; operating-system history and architecture, os localized in batch 015.",
+    "updated_sha256": "32f2012f263f3e1a1606a6367712bede398ddc4ab09dda86ee2c7394a9021275"
+  },
+  {
+    "path": "content/post/windows-os-history-architecture/index.ko.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "가상 메모리 공간",
+        "url": "/ko/p/virtual-memory-paging-mmu-architecture/"
+      },
+      {
+        "term": "'레지스트리'",
+        "url": "/ko/p/windows-registry-safe-programmable-editing/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; operating-system history and architecture, os localized in batch 015.",
+    "updated_sha256": "4188123b2bf67b8c96e5525bee17b6d4ca87f29b33a7294d81d2127d5e90b680"
+  },
+  {
+    "path": "content/post/windows-os-history-architecture/index.zh-cn.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "虚拟内存空间",
+        "url": "/zh-cn/p/virtual-memory-paging-mmu-architecture/"
+      },
+      {
+        "term": "注册表",
+        "url": "/zh-cn/p/windows-registry-safe-programmable-editing/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; operating-system history and architecture, os localized in batch 015.",
+    "updated_sha256": "00c3fb2551c16b98beaa279a5c6a549718babc0281c9a58983e99577944e8ea0"
+  },
+  {
+    "path": "content/post/windows-os-history-architecture/index.zh-tw.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "虛擬記憶體空間",
+        "url": "/zh-tw/p/virtual-memory-paging-mmu-architecture/"
+      },
+      {
+        "term": "登錄檔",
+        "url": "/zh-tw/p/windows-registry-safe-programmable-editing/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; operating-system history and architecture, os localized in batch 015.",
+    "updated_sha256": "3fa9e2b2e996382f3f7700980f126babc14c332d6f58f4399f8e4e5226b15933"
+  },
+  {
+    "path": "content/post/windows-os-history-architecture/index.ru.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "виртуальное адресное пространство",
+        "url": "/ru/p/virtual-memory-paging-mmu-architecture/"
+      },
+      {
+        "term": "Реестр",
+        "url": "/ru/p/windows-registry-safe-programmable-editing/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; operating-system history and architecture, os localized in batch 015.",
+    "updated_sha256": "4d22269a568d325bb206787b4c1fa8a897464c75849159c7311705249999be9c"
+  },
+  {
+    "path": "content/post/windows-os-history-architecture/index.ar.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "ذاكرة افتراضية",
+        "url": "/ar/p/virtual-memory-paging-mmu-architecture/"
+      },
+      {
+        "term": "سجل النظام",
+        "url": "/ar/p/windows-registry-safe-programmable-editing/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; operating-system history and architecture, os localized in batch 015.",
+    "updated_sha256": "a0dca3e0bfc51b97b3d2815a65bb5768e59d71738de00f8de3c3c24ca74665fe"
+  },
+  {
+    "path": "content/post/windows-os-history-architecture/index.hi.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "वर्चुअल मेमोरी स्पेस",
+        "url": "/hi/p/virtual-memory-paging-mmu-architecture/"
+      },
+      {
+        "term": "रजिस्ट्री",
+        "url": "/hi/p/windows-registry-safe-programmable-editing/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain software-development/os; operating-system history and architecture, os localized in batch 015.",
+    "updated_sha256": "c7c9b0ec13eaef313fba518f916272f77802e344819b00fa6a5d6dfddf682132"
+  }
+]

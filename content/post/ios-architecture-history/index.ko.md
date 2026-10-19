@@ -10,9 +10,9 @@ date: 2026-10-01T22:22:58+09:00
 
 ## 들어가며: NeXT의 계보와 iOS의 탄생
 
-Apple의 모바일 OS인 'iOS'는 오늘날 전 세계 수십억 대의 기기를 구동하고 있는 강력한 운영 체제입니다. 하지만 그 근저에 있는 아키텍처는 스티브 잡스가 Apple을 떠나 있던 시절 설립한 NeXT사의 'NeXTSTEP'까지 거슬러 올라갑니다.
+Apple의 모바일 OS인 'iOS'는 오늘날 전 세계 수십억 대의 기기를 구동하고 있는 강력한 운영 체제입니다. 하지만 그 근저에 있는 아키텍처는 [스티브 잡스](/ko/p/biography-steve-jobs/)가 Apple을 떠나 있던 시절 설립한 NeXT사의 'NeXTSTEP'까지 거슬러 올라갑니다.
 
-iOS(초기에는 iPhone OS라고 불렸습니다)는 단순한 휴대전화용 경량 OS가 아니라, Mac OS X(현재의 macOS)의 서브셋으로 탄생했습니다. 즉, 데스크톱 수준의 강력한 Unix 기반 OS를 손바닥 만한 기기에 담으려는 야심 찬 프로젝트였던 것입니다.
+iOS(초기에는 iPhone OS라고 불렸습니다)는 단순한 휴대전화용 경량 OS가 아니라, Mac OS X(현재의 [macOS](/ko/p/macos-architecture-history/))의 서브셋으로 탄생했습니다. 즉, 데스크톱 수준의 강력한 Unix 기반 OS를 손바닥 만한 기기에 담으려는 야심 찬 프로젝트였던 것입니다.
 
 이 글에서는 NeXTSTEP으로부터 물려받은 iOS의 심연과도 같은 아키텍처를 최하단 커널부터 최상위 UI 프레임워크까지 상세히 해부해 보겠습니다.
 
@@ -52,7 +52,7 @@ Core Services Layer는 모든 애플리케이션이 필요로 하는 기본적�
 주요 프레임워크에는 다음이 있습니다:
 
 *   **Foundation / Core Foundation**: 문자열(NSString / String), 배열(NSArray / Array), 딕셔너리(NSDictionary / Dictionary) 등의 기본적인 데이터 타입부터 스레드 관리, 네트워크 통신(URLSession), 파일 관리까지 Objective-C 및 Swift의 기반이 되는 기능을 제공합니다.
-*   **Core Data**: 애플리케이션의 데이터 모델을 관리하고 SQLite와 같은 로컬 데이터베이스에 대한 영속화를 추상화하는 객체 그래프 프레임워크입니다.
+*   **Core Data**: 애플리케이션의 데이터 모델을 관리하고 [SQLite](/ko/p/sqlite-internal-architecture/)와 같은 로컬 데이터베이스에 대한 영속화를 추상화하는 객체 그래프 프레임워크입니다.
 *   **CloudKit**: iCloud를 통해 기기 간 데이터를 동기화하기 위한 백엔드 서비스에 대한 접근을 제공합니다.
 *   **Grand Central Dispatch (GCD)**: 멀티 코어 프로세서에서 동시성 처리를 효율적으로 수행하기 위한 C 언어 기반 API입니다. 스레드를 직접 관리하는 복잡성에서 개발자를 해방시키고, 작업을 큐에 넣기만 하면 시스템이 최적의 스레드 할당을 수행합니다.
 

@@ -10,9 +10,9 @@ date: 2026-10-01T22:22:58+09:00
 
 ## Introduction: The Genealogy of NeXT and the Birth of iOS
 
-Apple's mobile OS, "iOS," is a powerful operating system that drives billions of devices worldwide today. However, its underlying architecture traces back to "NeXTSTEP" from NeXT, the company Steve Jobs founded during his time away from Apple.
+Apple's mobile OS, "iOS," is a powerful operating system that drives billions of devices worldwide today. However, its underlying architecture traces back to "NeXTSTEP" from NeXT, the company [Steve Jobs](/en/p/biography-steve-jobs/) founded during his time away from Apple.
 
-iOS (initially called iPhone OS) was not born simply as a lightweight OS for mobile phones, but as a subset of Mac OS X (now macOS). In other words, it was an ambitious project to fit a desktop-class, powerful Unix-based OS into a palm-sized device.
+iOS (initially called iPhone OS) was not born simply as a lightweight OS for mobile phones, but as a subset of Mac OS X (now [macOS](/en/p/macos-architecture-history/)). In other words, it was an ambitious project to fit a desktop-class, powerful Unix-based OS into a palm-sized device.
 
 In this article, we will thoroughly dissect the profound architecture of iOS inherited from NeXTSTEP, from the lowest-level kernel to the highest-level UI framework.
 
@@ -52,7 +52,7 @@ The Core Services Layer provides fundamental system services required by all app
 Key frameworks include:
 
 *   **Foundation / Core Foundation**: Provides the foundational functionalities for Objective-C and Swift, ranging from basic data types like strings (NSString / String), arrays (NSArray / Array), and dictionaries (NSDictionary / Dictionary), to thread management, network communication (URLSession), and file management.
-*   **Core Data**: An object graph framework that manages an application's data model and abstracts persistence to local databases such as SQLite.
+*   **Core Data**: An object graph framework that manages an application's data model and abstracts persistence to local databases such as [SQLite](/en/p/sqlite-internal-architecture/).
 *   **CloudKit**: Provides access to backend services for syncing data across devices via iCloud.
 *   **Grand Central Dispatch (GCD)**: A C-based API for efficient concurrent processing on multi-core processors. It frees developers from the complexities of directly managing threads; simply queueing tasks allows the system to perform optimal thread allocation.
 

@@ -39,7 +39,7 @@ Se o Aplicativo A travasse ou entrasse em um loop infinito e não retornasse o c
 
 ## O Nascimento do Mac OS X: O Poder do UNIX e a Multitarefa Preemptiva
 
-No desenvolvimento de seu sistema operacional de próxima geração, a Apple tomou a decisão histórica de adquirir a NeXT, empresa fundada por Steve Jobs, após o fracasso de seu próprio projeto de desenvolvimento (Copland). O principal produto da NeXT, o "NeXTSTEP", tornaria-se a base do Mac OS X.
+No desenvolvimento de seu sistema operacional de próxima geração, a Apple tomou a decisão histórica de adquirir a NeXT, empresa fundada por [Steve Jobs](/pt/p/biography-steve-jobs/), após o fracasso de seu próprio projeto de desenvolvimento (Copland). O principal produto da NeXT, o "NeXTSTEP", tornaria-se a base do Mac OS X.
 
 O Mac OS X (mais tarde macOS) foi construído sobre um sistema operacional do tipo UNIX chamado **Darwin** (baseado no FreeBSD e no microkernel Mach). Com isso, os pontos fracos do Classic Mac OS foram fundamentalmente resolvidos.
 
@@ -56,7 +56,7 @@ Além disso, com a introdução da **proteção de memória (Memory Protection)*
 A transição para o Mac OS X também foi uma grande mudança de paradigma para os desenvolvedores. A Apple ofereceu duas opções principais de APIs para os desenvolvedores criarem aplicativos para o novo SO: **Carbon** e **Cocoa**.
 
 1. **Carbon**: Uma adaptação da API do Classic Mac OS, baseada em C, portada para o OS X. Era uma ponte para tornar aplicativos existentes (como o Photoshop e o Microsoft Office) compatíveis com o OS X com relativa facilidade.
-2. **Cocoa**: Uma API orientada a objetos pura baseada em Objective-C, herdada do NeXTSTEP.
+2. **Cocoa**: Uma API [orientada a objetos](/pt/p/object-oriented-programming-oop-solid-principles/) pura baseada em Objective-C, herdada do NeXTSTEP.
 
 A Cocoa herdou as estruturas (como Foundation e AppKit) da era NeXTSTEP como estavam. É um vestígio disso que muitas das classes usadas no desenvolvimento do macOS ainda hoje tenham o prefixo `NS` (abreviação de NeXTSTEP) (ex: `NSString`, `NSArray`). Por fim, a Apple descontinuou a Carbon e colocou a Cocoa (e, posteriormente, o SwiftUI) no centro do desenvolvimento do macOS.
 

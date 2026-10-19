@@ -1,0 +1,3499 @@
+[
+  {
+    "batch": "018-macos-links",
+    "language": "ja",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "Carbon: Classic Mac OSのAPIをC言語ベースでOS X向けに移植・適応させたもの。既存のアプリケーション（PhotoshopやMicrosoft Officeなど）を比較的容易にOS X対応させるための架け橋でした。",
+        "Cocoa: NeXTSTEPから継承された、Objective-Cベースの純粋なオブジェクト指向API。",
+        "Motorola 68k → PowerPC (1990年代)",
+        "PowerPC → Intel x86 (2006年)",
+        "Intel x86 → Apple Silicon (ARM) (2020年)"
+      ],
+      "headings": [
+        {
+          "id": "macosとはclassic-mac-osからmac-os-xへの壮大な移行",
+          "text": "macOSとは：Classic Mac OSからMac OS Xへの壮大な移行"
+        },
+        {
+          "id": "classic-mac-osの限界協調的マルチタスク",
+          "text": "Classic Mac OSの限界：協調的マルチタスク"
+        },
+        {
+          "id": "協調的マルチタスクとは何か",
+          "text": "協調的マルチタスクとは何か？"
+        },
+        {
+          "id": "mac-os-xの誕生unixのパワーとプリエンプティブマルチタスク",
+          "text": "Mac OS Xの誕生：UNIXのパワーとプリエンプティブ・マルチタスク"
+        },
+        {
+          "id": "プリエンプティブマルチタスクによる安定性",
+          "text": "プリエンプティブ・マルチタスクによる安定性"
+        },
+        {
+          "id": "nextstepの遺産cocoa-apiの台頭",
+          "text": "NeXTSTEPの遺産：Cocoa APIの台頭"
+        },
+        {
+          "id": "アーキテクチャの変遷を支えた魔法rosetta",
+          "text": "アーキテクチャの変遷を支えた魔法：Rosetta"
+        },
+        {
+          "id": "rosetta-powerpcからintelへ",
+          "text": "Rosetta (PowerPCからIntelへ)"
+        },
+        {
+          "id": "rosetta-2-intelからapple-siliconへ",
+          "text": "Rosetta 2 (IntelからApple Siliconへ)"
+        },
+        {
+          "id": "結び",
+          "text": "結び"
+        }
+      ],
+      "paragraphs": [
+        "AppleのデスクトップオペレーティングシステムであるmacOSは、世界中で何億人ものユーザーに愛用されています。しかし、現在の洗練されたmacOSが存在する背後には、オペレーティングシステムの歴史における最も劇的で、技術的に困難な移行劇がありました。",
+        "本記事では、Classic Mac OS（Mac OS 9まで）からMac OS X（現在のmacOS）への壮大な移行プロセスと、それを支えた中核技術について深く掘り下げます。",
+        "1984年に初代Macintoshと共に登場したMac OSは、当時としては革新的なグラフィカルユーザーインターフェース（GUI）を提供していました。しかし、時代が下るにつれて、その基盤アーキテクチャの限界が露呈し始めます。",
+        "その最大の要因が協調的マルチタスク（Cooperative Multitasking）とメモリ保護の欠如でした。",
+        "協調的マルチタスクでは、OSではなくアプリケーション自身がCPUの制御権を管理します。アプリケーションAが処理を行っている間、アプリケーションBはAが自発的に「CPUをOSに返還する（Yield）」まで待たなければなりません。",
+        "もしアプリケーションAがクラッシュしたり、無限ループに陥って制御を返さなかったりした場合、OS全体がフリーズしてしまいます。ユーザーは強制再起動を余儀なくされ、保存していないデータは失われていました。当時のMacユーザーにとって、爆弾マークのシステムエラーは日常茶飯事だったのです。",
+        "Appleは次世代OSの開発において、自社開発プロジェクト（Copland）の失敗を経て、スティーブ・ジョブズが設立したNeXT社を買収するという歴史的な決断を下しました。NeXTの主力製品であった「NeXTSTEP」こそが、Mac OS Xの基盤となります。",
+        "Mac OS X（後のmacOS）は、内部にDarwinと呼ばれるUNIX系オペレーティングシステム（FreeBSDおよびMachマイクロカーネルベース）を搭載していました。これにより、Classic Mac OSの弱点は根本から解決されました。",
+        "OS Xがもたらした最大の恩恵の一つが、**プリエンプティブ・マルチタスク（Preemptive Multitasking）**です。",
+        "プリエンプティブ・マルチタスクでは、OSのカーネルが絶対的な権限を持ち、各アプリケーションにミリ秒単位でCPU時間を割り当てます。アプリケーションがフリーズしても、カーネルは強制的にCPUの制御を奪い、他のアプリケーションに割り当てることができます。",
+        "さらに、**メモリ保護（Memory Protection）**の導入により、各アプリケーションは互いに独立したメモリ空間を持つようになりました。一つのアプリがクラッシュしても、他のアプリやOS全体を巻き込むことはありません。",
+        "Mac OS Xへの移行は、開発者にとっても大きなパラダイムシフトでした。Appleは、開発者が新しいOS向けにアプリケーションを構築するためのAPIとして、大きく分けて2つの選択肢を提供しました。それがCarbonとCocoaです。",
+        "Cocoaは、NeXTSTEP時代のフレームワーク（FoundationやAppKit）をそのまま受け継いでいます。現在でもmacOS開発で使われるクラスの多くが NS（NeXTSTEPの略）というプレフィックスを持っているのは、この名残です（例：NSString, NSArray）。最終的にAppleはCarbonを非推奨とし、Cocoa（およびその後のSwiftUI）をmacOS開発の中心に据えることになります。",
+        "macOSの歴史において特筆すべきは、ソフトウェアアーキテクチャだけでなく、ハードウェア（CPU）のアーキテクチャ移行を何度も成功させている点です。",
+        "これらの移行をシームレスに実現したのが、動的バイナリトランスレーション技術である**Rosetta（ロゼッタ）**です。",
+        "2006年、AppleはMacのプロセッサをPowerPCからIntel製へ移行しました。この時、既存のPowerPC向けアプリをIntel Mac上でそのまま動かすためのエミュレータが初代「Rosetta」です。OSがバックグラウンドで命令をリアルタイムに翻訳するため、ユーザーはアプリがどちらのアーキテクチャ向けかを意識することなく利用できました。",
+        "2020年のApple Silicon（M1チップ）への移行時に登場した「Rosetta 2」は、さらに進化していました。実行時のリアルタイム翻訳（JITコンパイル）に加え、インストール時（または初回起動時）に事前コンパイル（AOTコンパイル）を行うことで、パフォーマンスの低下を極限まで抑えることに成功しました。これにより、x86向けに書かれた重いアプリケーションであっても、ネイティブのARMプロセッサ上で驚異的な速度で動作します。",
+        "Classic Mac OSからMac OS Xへの移行は、単なるソフトウェアのアップデートではなく、コンピュータサイエンスの歴史において最も成功した「心臓移植」とも言える出来事です。",
+        "協調的マルチタスクと頻繁なクラッシュから、UNIXベースの強固な安定性と洗練されたGUIへの進化。そして、NeXTSTEPの遺産を引き継いだ開発環境と、複数回にわたるCPUアーキテクチャの移行劇。現在のmacOSが持つ圧倒的なパフォーマンスとユーザー体験は、このような壮大な技術的挑戦と進化の上に成り立っているのです。"
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "ソフトウェア開発",
+          "path": "/categories/software-development/"
+        },
+        {
+          "text": "オペレーティングシステム",
+          "path": "/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "Carbon: Classic Mac OSのAPIをC言語ベースでOS X向けに移植・適応させたもの。既存のアプリケーション（PhotoshopやMicrosoft Officeなど）を比較的容易にOS X対応させるための架け橋でした。",
+        "Cocoa: NeXTSTEPから継承された、Objective-Cベースの純粋なオブジェクト指向API。",
+        "Motorola 68k → PowerPC (1990年代)",
+        "PowerPC → Intel x86 (2006年)",
+        "Intel x86 → Apple Silicon (ARM) (2020年)"
+      ],
+      "headings": [
+        {
+          "id": "macosとはclassic-mac-osからmac-os-xへの壮大な移行",
+          "text": "macOSとは：Classic Mac OSからMac OS Xへの壮大な移行"
+        },
+        {
+          "id": "classic-mac-osの限界協調的マルチタスク",
+          "text": "Classic Mac OSの限界：協調的マルチタスク"
+        },
+        {
+          "id": "協調的マルチタスクとは何か",
+          "text": "協調的マルチタスクとは何か？"
+        },
+        {
+          "id": "mac-os-xの誕生unixのパワーとプリエンプティブマルチタスク",
+          "text": "Mac OS Xの誕生：UNIXのパワーとプリエンプティブ・マルチタスク"
+        },
+        {
+          "id": "プリエンプティブマルチタスクによる安定性",
+          "text": "プリエンプティブ・マルチタスクによる安定性"
+        },
+        {
+          "id": "nextstepの遺産cocoa-apiの台頭",
+          "text": "NeXTSTEPの遺産：Cocoa APIの台頭"
+        },
+        {
+          "id": "アーキテクチャの変遷を支えた魔法rosetta",
+          "text": "アーキテクチャの変遷を支えた魔法：Rosetta"
+        },
+        {
+          "id": "rosetta-powerpcからintelへ",
+          "text": "Rosetta (PowerPCからIntelへ)"
+        },
+        {
+          "id": "rosetta-2-intelからapple-siliconへ",
+          "text": "Rosetta 2 (IntelからApple Siliconへ)"
+        },
+        {
+          "id": "結び",
+          "text": "結び"
+        }
+      ],
+      "paragraphs": [
+        "AppleのデスクトップオペレーティングシステムであるmacOSは、世界中で何億人ものユーザーに愛用されています。しかし、現在の洗練されたmacOSが存在する背後には、オペレーティングシステムの歴史における最も劇的で、技術的に困難な移行劇がありました。",
+        "本記事では、Classic Mac OS（Mac OS 9まで）からMac OS X（現在のmacOS）への壮大な移行プロセスと、それを支えた中核技術について深く掘り下げます。",
+        "1984年に初代Macintoshと共に登場したMac OSは、当時としては革新的なグラフィカルユーザーインターフェース（GUI）を提供していました。しかし、時代が下るにつれて、その基盤アーキテクチャの限界が露呈し始めます。",
+        "その最大の要因が協調的マルチタスク（Cooperative Multitasking）とメモリ保護の欠如でした。",
+        "協調的マルチタスクでは、OSではなくアプリケーション自身がCPUの制御権を管理します。アプリケーションAが処理を行っている間、アプリケーションBはAが自発的に「CPUをOSに返還する（Yield）」まで待たなければなりません。",
+        "もしアプリケーションAがクラッシュしたり、無限ループに陥って制御を返さなかったりした場合、OS全体がフリーズしてしまいます。ユーザーは強制再起動を余儀なくされ、保存していないデータは失われていました。当時のMacユーザーにとって、爆弾マークのシステムエラーは日常茶飯事だったのです。",
+        "Appleは次世代OSの開発において、自社開発プロジェクト（Copland）の失敗を経て、スティーブ・ジョブズが設立したNeXT社を買収するという歴史的な決断を下しました。NeXTの主力製品であった「NeXTSTEP」こそが、Mac OS Xの基盤となります。",
+        "Mac OS X（後のmacOS）は、内部にDarwinと呼ばれるUNIX系オペレーティングシステム（FreeBSDおよびMachマイクロカーネルベース）を搭載していました。これにより、Classic Mac OSの弱点は根本から解決されました。",
+        "OS Xがもたらした最大の恩恵の一つが、**プリエンプティブ・マルチタスク（Preemptive Multitasking）**です。",
+        "プリエンプティブ・マルチタスクでは、OSのカーネルが絶対的な権限を持ち、各アプリケーションにミリ秒単位でCPU時間を割り当てます。アプリケーションがフリーズしても、カーネルは強制的にCPUの制御を奪い、他のアプリケーションに割り当てることができます。",
+        "さらに、**メモリ保護（Memory Protection）**の導入により、各アプリケーションは互いに独立したメモリ空間を持つようになりました。一つのアプリがクラッシュしても、他のアプリやOS全体を巻き込むことはありません。",
+        "Mac OS Xへの移行は、開発者にとっても大きなパラダイムシフトでした。Appleは、開発者が新しいOS向けにアプリケーションを構築するためのAPIとして、大きく分けて2つの選択肢を提供しました。それがCarbonとCocoaです。",
+        "Cocoaは、NeXTSTEP時代のフレームワーク（FoundationやAppKit）をそのまま受け継いでいます。現在でもmacOS開発で使われるクラスの多くが NS（NeXTSTEPの略）というプレフィックスを持っているのは、この名残です（例：NSString, NSArray）。最終的にAppleはCarbonを非推奨とし、Cocoa（およびその後のSwiftUI）をmacOS開発の中心に据えることになります。",
+        "macOSの歴史において特筆すべきは、ソフトウェアアーキテクチャだけでなく、ハードウェア（CPU）のアーキテクチャ移行を何度も成功させている点です。",
+        "これらの移行をシームレスに実現したのが、動的バイナリトランスレーション技術である**Rosetta（ロゼッタ）**です。",
+        "2006年、AppleはMacのプロセッサをPowerPCからIntel製へ移行しました。この時、既存のPowerPC向けアプリをIntel Mac上でそのまま動かすためのエミュレータが初代「Rosetta」です。OSがバックグラウンドで命令をリアルタイムに翻訳するため、ユーザーはアプリがどちらのアーキテクチャ向けかを意識することなく利用できました。",
+        "2020年のApple Silicon（M1チップ）への移行時に登場した「Rosetta 2」は、さらに進化していました。実行時のリアルタイム翻訳（JITコンパイル）に加え、インストール時（または初回起動時）に事前コンパイル（AOTコンパイル）を行うことで、パフォーマンスの低下を極限まで抑えることに成功しました。これにより、x86向けに書かれた重いアプリケーションであっても、ネイティブのARMプロセッサ上で驚異的な速度で動作します。",
+        "Classic Mac OSからMac OS Xへの移行は、単なるソフトウェアのアップデートではなく、コンピュータサイエンスの歴史において最も成功した「心臓移植」とも言える出来事です。",
+        "協調的マルチタスクと頻繁なクラッシュから、UNIXベースの強固な安定性と洗練されたGUIへの進化。そして、NeXTSTEPの遺産を引き継いだ開発環境と、複数回にわたるCPUアーキテクチャの移行劇。現在のmacOSが持つ圧倒的なパフォーマンスとユーザー体験は、このような壮大な技術的挑戦と進化の上に成り立っているのです。"
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "ソフトウェア開発",
+          "path": "/categories/software-development/"
+        },
+        {
+          "text": "オペレーティングシステム",
+          "path": "/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "スティーブ・ジョブズ",
+          "path": "/p/biography-steve-jobs/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "オブジェクト指向API",
+          "path": "/p/object-oriented-programming-oop-solid-principles/",
+          "host": "127.0.0.1"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "018-macos-links",
+    "language": "en",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "Carbon: An adaptation and port of the Classic Mac OS API for OS X, based in C. It served as a bridge to relatively easily bring existing applications (like Photoshop and Microsoft Office) to OS X.",
+        "Cocoa: A pure object-oriented API based on Objective-C, inherited directly from NeXTSTEP.",
+        "Motorola 68k → PowerPC (1990s)",
+        "PowerPC → Intel x86 (2006)",
+        "Intel x86 → Apple Silicon (ARM) (2020)"
+      ],
+      "headings": [
+        {
+          "id": "what-is-macos-the-epic-transition-from-classic-mac-os-to-mac-os-x",
+          "text": "What is macOS: The Epic Transition from Classic Mac OS to Mac OS X"
+        },
+        {
+          "id": "the-limitations-of-classic-mac-os-cooperative-multitasking",
+          "text": "The Limitations of Classic Mac OS: Cooperative Multitasking"
+        },
+        {
+          "id": "what-is-cooperative-multitasking",
+          "text": "What is Cooperative Multitasking?"
+        },
+        {
+          "id": "the-birth-of-mac-os-x-unix-power-and-preemptive-multitasking",
+          "text": "The Birth of Mac OS X: UNIX Power and Preemptive Multitasking"
+        },
+        {
+          "id": "stability-through-preemptive-multitasking",
+          "text": "Stability Through Preemptive Multitasking"
+        },
+        {
+          "id": "the-legacy-of-nextstep-the-rise-of-the-cocoa-api",
+          "text": "The Legacy of NeXTSTEP: The Rise of the Cocoa API"
+        },
+        {
+          "id": "the-magic-behind-architectural-transitions-rosetta",
+          "text": "The Magic Behind Architectural Transitions: Rosetta"
+        },
+        {
+          "id": "rosetta-powerpc-to-intel",
+          "text": "Rosetta (PowerPC to Intel)"
+        },
+        {
+          "id": "rosetta-2-intel-to-apple-silicon",
+          "text": "Rosetta 2 (Intel to Apple Silicon)"
+        },
+        {
+          "id": "conclusion",
+          "text": "Conclusion"
+        }
+      ],
+      "paragraphs": [
+        "Apple’s desktop operating system, macOS, is beloved by hundreds of millions of users worldwide. However, behind the refined macOS of today lies one of the most dramatic and technically challenging transition stories in the history of operating systems.",
+        "In this article, we delve deep into the epic transition process from Classic Mac OS (up to Mac OS 9) to Mac OS X (the current macOS), and the core technologies that supported it.",
+        "Introduced alongside the original Macintosh in 1984, Mac OS provided what was, at the time, an innovative graphical user interface (GUI). However, as time passed, the limitations of its underlying architecture began to show.",
+        "The biggest factors were Cooperative Multitasking and the lack of memory protection.",
+        "In cooperative multitasking, the applications themselves, rather than the OS, manage CPU control. While Application A is processing, Application B must wait until A voluntarily “yields” the CPU back to the OS.",
+        "If Application A crashes or falls into an infinite loop and fails to return control, the entire OS freezes. Users were forced to perform hard reboots, and unsaved data was lost. For Mac users at the time, the bomb icon signifying a system error was an everyday occurrence.",
+        "In developing their next-generation OS, following the failure of their in-house project (Copland), Apple made the historic decision to acquire NeXT, a company founded by Steve Jobs. NeXT’s flagship product, “NeXTSTEP,” became the foundation of Mac OS X.",
+        "Mac OS X (later macOS) was built on a UNIX-like operating system called Darwin (based on FreeBSD and the Mach microkernel). This fundamentally resolved the weaknesses of Classic Mac OS.",
+        "One of the greatest benefits brought by OS X was Preemptive Multitasking.",
+        "In preemptive multitasking, the OS kernel has absolute authority, allocating CPU time to each application in milliseconds. Even if an application freezes, the kernel can forcibly seize control of the CPU and allocate it to other applications.",
+        "Furthermore, with the introduction of Memory Protection, each application was given its own isolated memory space. If one app crashes, it does not take down other apps or the entire OS with it.",
+        "The transition to Mac OS X was also a massive paradigm shift for developers. Apple primarily provided two API options for developers to build applications for the new OS: Carbon and Cocoa.",
+        "Cocoa directly carries forward the frameworks from the NeXTSTEP era (Foundation and AppKit). This is why many classes still used in macOS development today carry the NS prefix (standing for NeXTSTEP) (e.g., NSString, NSArray). Ultimately, Apple deprecated Carbon, positioning Cocoa (and later SwiftUI) at the center of macOS development.",
+        "A particularly notable aspect of macOS history is its successful execution of not just software architecture transitions, but multiple hardware (CPU) architecture transitions as well.",
+        "What seamlessly enabled these transitions was Rosetta, a dynamic binary translation technology.",
+        "In 2006, Apple transitioned Mac processors from PowerPC to Intel. The original “Rosetta” was an emulator that allowed existing PowerPC apps to run unchanged on Intel Macs. Because the OS translated instructions in real-time in the background, users could use apps without worrying about which architecture they were built for.",
+        "“Rosetta 2,” introduced during the 2020 transition to Apple Silicon (the M1 chip), was even more advanced. In addition to real-time translation during execution (JIT compilation), it successfully minimized performance degradation by performing ahead-of-time (AOT) compilation upon installation (or at first launch). This allowed even heavy applications written for x86 to run at astonishing speeds on native ARM processors.",
+        "The transition from Classic Mac OS to Mac OS X was not merely a software update, but arguably the most successful “heart transplant” in computer science history.",
+        "From cooperative multitasking and frequent crashes to the robust stability of a UNIX base and a refined GUI. This was followed by a development environment inherited from NeXTSTEP and multiple CPU architecture transitions. The overwhelming performance and user experience of today’s macOS are built upon these epic technical challenges and evolutions."
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Software Development",
+          "path": "/en/categories/software-development/"
+        },
+        {
+          "text": "Operating Systems",
+          "path": "/en/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "Carbon: An adaptation and port of the Classic Mac OS API for OS X, based in C. It served as a bridge to relatively easily bring existing applications (like Photoshop and Microsoft Office) to OS X.",
+        "Cocoa: A pure object-oriented API based on Objective-C, inherited directly from NeXTSTEP.",
+        "Motorola 68k → PowerPC (1990s)",
+        "PowerPC → Intel x86 (2006)",
+        "Intel x86 → Apple Silicon (ARM) (2020)"
+      ],
+      "headings": [
+        {
+          "id": "what-is-macos-the-epic-transition-from-classic-mac-os-to-mac-os-x",
+          "text": "What is macOS: The Epic Transition from Classic Mac OS to Mac OS X"
+        },
+        {
+          "id": "the-limitations-of-classic-mac-os-cooperative-multitasking",
+          "text": "The Limitations of Classic Mac OS: Cooperative Multitasking"
+        },
+        {
+          "id": "what-is-cooperative-multitasking",
+          "text": "What is Cooperative Multitasking?"
+        },
+        {
+          "id": "the-birth-of-mac-os-x-unix-power-and-preemptive-multitasking",
+          "text": "The Birth of Mac OS X: UNIX Power and Preemptive Multitasking"
+        },
+        {
+          "id": "stability-through-preemptive-multitasking",
+          "text": "Stability Through Preemptive Multitasking"
+        },
+        {
+          "id": "the-legacy-of-nextstep-the-rise-of-the-cocoa-api",
+          "text": "The Legacy of NeXTSTEP: The Rise of the Cocoa API"
+        },
+        {
+          "id": "the-magic-behind-architectural-transitions-rosetta",
+          "text": "The Magic Behind Architectural Transitions: Rosetta"
+        },
+        {
+          "id": "rosetta-powerpc-to-intel",
+          "text": "Rosetta (PowerPC to Intel)"
+        },
+        {
+          "id": "rosetta-2-intel-to-apple-silicon",
+          "text": "Rosetta 2 (Intel to Apple Silicon)"
+        },
+        {
+          "id": "conclusion",
+          "text": "Conclusion"
+        }
+      ],
+      "paragraphs": [
+        "Apple’s desktop operating system, macOS, is beloved by hundreds of millions of users worldwide. However, behind the refined macOS of today lies one of the most dramatic and technically challenging transition stories in the history of operating systems.",
+        "In this article, we delve deep into the epic transition process from Classic Mac OS (up to Mac OS 9) to Mac OS X (the current macOS), and the core technologies that supported it.",
+        "Introduced alongside the original Macintosh in 1984, Mac OS provided what was, at the time, an innovative graphical user interface (GUI). However, as time passed, the limitations of its underlying architecture began to show.",
+        "The biggest factors were Cooperative Multitasking and the lack of memory protection.",
+        "In cooperative multitasking, the applications themselves, rather than the OS, manage CPU control. While Application A is processing, Application B must wait until A voluntarily “yields” the CPU back to the OS.",
+        "If Application A crashes or falls into an infinite loop and fails to return control, the entire OS freezes. Users were forced to perform hard reboots, and unsaved data was lost. For Mac users at the time, the bomb icon signifying a system error was an everyday occurrence.",
+        "In developing their next-generation OS, following the failure of their in-house project (Copland), Apple made the historic decision to acquire NeXT, a company founded by Steve Jobs. NeXT’s flagship product, “NeXTSTEP,” became the foundation of Mac OS X.",
+        "Mac OS X (later macOS) was built on a UNIX-like operating system called Darwin (based on FreeBSD and the Mach microkernel). This fundamentally resolved the weaknesses of Classic Mac OS.",
+        "One of the greatest benefits brought by OS X was Preemptive Multitasking.",
+        "In preemptive multitasking, the OS kernel has absolute authority, allocating CPU time to each application in milliseconds. Even if an application freezes, the kernel can forcibly seize control of the CPU and allocate it to other applications.",
+        "Furthermore, with the introduction of Memory Protection, each application was given its own isolated memory space. If one app crashes, it does not take down other apps or the entire OS with it.",
+        "The transition to Mac OS X was also a massive paradigm shift for developers. Apple primarily provided two API options for developers to build applications for the new OS: Carbon and Cocoa.",
+        "Cocoa directly carries forward the frameworks from the NeXTSTEP era (Foundation and AppKit). This is why many classes still used in macOS development today carry the NS prefix (standing for NeXTSTEP) (e.g., NSString, NSArray). Ultimately, Apple deprecated Carbon, positioning Cocoa (and later SwiftUI) at the center of macOS development.",
+        "A particularly notable aspect of macOS history is its successful execution of not just software architecture transitions, but multiple hardware (CPU) architecture transitions as well.",
+        "What seamlessly enabled these transitions was Rosetta, a dynamic binary translation technology.",
+        "In 2006, Apple transitioned Mac processors from PowerPC to Intel. The original “Rosetta” was an emulator that allowed existing PowerPC apps to run unchanged on Intel Macs. Because the OS translated instructions in real-time in the background, users could use apps without worrying about which architecture they were built for.",
+        "“Rosetta 2,” introduced during the 2020 transition to Apple Silicon (the M1 chip), was even more advanced. In addition to real-time translation during execution (JIT compilation), it successfully minimized performance degradation by performing ahead-of-time (AOT) compilation upon installation (or at first launch). This allowed even heavy applications written for x86 to run at astonishing speeds on native ARM processors.",
+        "The transition from Classic Mac OS to Mac OS X was not merely a software update, but arguably the most successful “heart transplant” in computer science history.",
+        "From cooperative multitasking and frequent crashes to the robust stability of a UNIX base and a refined GUI. This was followed by a development environment inherited from NeXTSTEP and multiple CPU architecture transitions. The overwhelming performance and user experience of today’s macOS are built upon these epic technical challenges and evolutions."
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Software Development",
+          "path": "/en/categories/software-development/"
+        },
+        {
+          "text": "Operating Systems",
+          "path": "/en/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "Steve Jobs",
+          "path": "/en/p/biography-steve-jobs/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "object-oriented",
+          "path": "/en/p/object-oriented-programming-oop-solid-principles/",
+          "host": "127.0.0.1"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "018-macos-links",
+    "language": "de",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "Carbon: Eine C-basierte Portierung und Anpassung der Classic Mac OS-API für OS X. Es diente als Brücke, um bestehenden Anwendungen (wie Photoshop und Microsoft Office) die relativ einfache Unterstützung von OS X zu ermöglichen.",
+        "Cocoa: Eine reine, objektorientierte API basierend auf Objective-C, die aus NeXTSTEP übernommen wurde.",
+        "Motorola 68k → PowerPC (1990er Jahre)",
+        "PowerPC → Intel x86 (2006)",
+        "Intel x86 → Apple Silicon (ARM) (2020)"
+      ],
+      "headings": [
+        {
+          "id": "was-ist-macos-der-epische-übergang-von-classic-mac-os-zu-mac-os-x",
+          "text": "Was ist macOS: Der epische Übergang von Classic Mac OS zu Mac OS X"
+        },
+        {
+          "id": "die-grenzen-von-classic-mac-os-kooperatives-multitasking",
+          "text": "Die Grenzen von Classic Mac OS: Kooperatives Multitasking"
+        },
+        {
+          "id": "was-ist-kooperatives-multitasking",
+          "text": "Was ist kooperatives Multitasking?"
+        },
+        {
+          "id": "die-geburt-von-mac-os-x-die-leistung-von-unix-und-präemptives-multitasking",
+          "text": "Die Geburt von Mac OS X: Die Leistung von UNIX und präemptives Multitasking"
+        },
+        {
+          "id": "stabilität-durch-präemptives-multitasking",
+          "text": "Stabilität durch präemptives Multitasking"
+        },
+        {
+          "id": "das-erbe-von-nextstep-der-aufstieg-der-cocoa-api",
+          "text": "Das Erbe von NeXTSTEP: Der Aufstieg der Cocoa-API"
+        },
+        {
+          "id": "die-magie-die-den-architekturwandel-unterstützte-rosetta",
+          "text": "Die Magie, die den Architekturwandel unterstützte: Rosetta"
+        },
+        {
+          "id": "rosetta-von-powerpc-zu-intel",
+          "text": "Rosetta (Von PowerPC zu Intel)"
+        },
+        {
+          "id": "rosetta-2-von-intel-zu-apple-silicon",
+          "text": "Rosetta 2 (Von Intel zu Apple Silicon)"
+        },
+        {
+          "id": "fazit",
+          "text": "Fazit"
+        }
+      ],
+      "paragraphs": [
+        "Das Desktop-Betriebssystem von Apple, macOS, wird von Hunderten Millionen Benutzern weltweit geschätzt. Hinter dem heutigen, raffinierten macOS verbirgt sich jedoch einer der dramatischsten und technisch anspruchsvollsten Übergänge in der Geschichte der Betriebssysteme.",
+        "In diesem Artikel werden wir uns eingehend mit dem epischen Übergangsprozess von Classic Mac OS (bis Mac OS 9) zu Mac OS X (dem heutigen macOS) und den Kerntechnologien befassen, die ihn ermöglicht haben.",
+        "Mac OS, das 1984 zusammen mit dem ersten Macintosh eingeführt wurde, bot eine für die damalige Zeit revolutionäre grafische Benutzeroberfläche (GUI). Im Laufe der Zeit begannen sich jedoch die Grenzen seiner zugrunde liegenden Architektur abzuzeichnen.",
+        "Die Hauptgründe dafür waren kooperatives Multitasking (Cooperative Multitasking) und das Fehlen von Speicherschutz.",
+        "Beim kooperativen Multitasking verwaltet nicht das Betriebssystem, sondern die Anwendung selbst die CPU-Steuerung. Während Anwendung A die Verarbeitung durchführt, muss Anwendung B warten, bis A freiwillig ‘die CPU an das Betriebssystem zurückgibt (Yield)’.",
+        "Wenn Anwendung A abstürzte oder in eine Endlosschleife geriet und die Steuerung nicht zurückgab, fror das gesamte Betriebssystem ein. Die Benutzer waren zu einem erzwungenen Neustart gezwungen, und ungespeicherte Daten gingen verloren. Für damalige Mac-Benutzer waren Systemfehler mit dem Bomben-Symbol an der Tagesordnung.",
+        "Bei der Entwicklung des Betriebssystems der nächsten Generation traf Apple nach dem Scheitern des internen Entwicklungsprojekts (Copland) die historische Entscheidung, das von Steve Jobs gegründete Unternehmen NeXT zu übernehmen. Das Hauptprodukt von NeXT, ‘NeXTSTEP’, sollte die Grundlage für Mac OS X bilden.",
+        "Mac OS X (später macOS) enthielt im Kern ein UNIX-basiertes Betriebssystem (basierend auf FreeBSD und dem Mach-Mikrokernel) namens Darwin. Dadurch wurden die Schwachstellen von Classic Mac OS grundlegend behoben.",
+        "Einer der größten Vorteile von OS X ist das präemptive Multitasking (Preemptive Multitasking).",
+        "Beim präemptiven Multitasking hat der Kernel des Betriebssystems absolute Autorität und weist jeder Anwendung CPU-Zeit im Millisekundenbereich zu. Selbst wenn eine Anwendung einfriert, kann der Kernel gewaltsam die Kontrolle über die CPU übernehmen und sie anderen Anwendungen zuweisen.",
+        "Darüber hinaus führte die Einführung des Speicherschutzes (Memory Protection) dazu, dass jede Anwendung über einen eigenen, unabhängigen Speicherplatz verfügte. Wenn eine App abstürzte, wirkte sich dies nicht auf andere Apps oder das gesamte Betriebssystem aus.",
+        "Der Übergang zu Mac OS X war auch für Entwickler ein großer Paradigmenwechsel. Apple bot Entwicklern zwei Hauptoptionen als APIs zur Erstellung von Anwendungen für das neue Betriebssystem an: Carbon und Cocoa.",
+        "Cocoa hat die Frameworks aus der NeXTSTEP-Ära (Foundation und AppKit) direkt übernommen. Die Tatsache, dass viele der heute noch in der macOS-Entwicklung verwendeten Klassen das Präfix NS (Abkürzung für NeXTSTEP) tragen, ist ein Relikt aus dieser Zeit (z. B. NSString, NSArray). Letztendlich hat Apple Carbon als veraltet markiert und Cocoa (und später SwiftUI) in den Mittelpunkt der macOS-Entwicklung gestellt.",
+        "Ein bemerkenswerter Aspekt in der Geschichte von macOS ist die Tatsache, dass nicht nur die Softwarearchitektur, sondern auch die Hardwarearchitektur (CPU) mehrfach erfolgreich umgestellt wurde.",
+        "Diese Übergänge wurden durch Rosetta, eine Technologie zur dynamischen Binärübersetzung, nahtlos realisiert.",
+        "Im Jahr 2006 stellte Apple die Mac-Prozessoren von PowerPC auf Intel um. Zu dieser Zeit war das erste ‘Rosetta’ ein Emulator, der es ermöglichte, vorhandene PowerPC-Anwendungen direkt auf Intel-Macs auszuführen. Da das Betriebssystem Anweisungen im Hintergrund in Echtzeit übersetzte, konnten Benutzer Anwendungen nutzen, ohne sich Gedanken darüber machen zu müssen, für welche Architektur sie entwickelt wurden.",
+        "‘Rosetta 2’, das beim Übergang zu Apple Silicon (M1-Chip) im Jahr 2020 eingeführt wurde, war noch weiterentwickelt. Neben der Echtzeitübersetzung zur Laufzeit (JIT-Kompilierung) wurde durch Vorkompilierung (AOT-Kompilierung) bei der Installation (oder beim ersten Start) der Leistungsabfall auf ein absolutes Minimum reduziert. Dadurch laufen selbst rechenintensive, für x86 geschriebene Anwendungen mit erstaunlicher Geschwindigkeit nativ auf dem ARM-Prozessor.",
+        "Der Übergang von Classic Mac OS zu Mac OS X war nicht nur ein einfaches Software-Update, sondern kann als die erfolgreichste ‘Herztransplantation’ in der Geschichte der Informatik bezeichnet werden.",
+        "Von kooperativem Multitasking und häufigen Abstürzen hin zu der robusten Stabilität einer UNIX-Basis und einer raffinierten GUI. Und dann die Entwicklungsumgebung, die das Erbe von NeXTSTEP übernahm, sowie die mehrfachen Übergänge der CPU-Architektur. Die überwältigende Leistung und das Benutzererlebnis, das das heutige macOS bietet, beruhen auf diesen epischen technischen Herausforderungen und Entwicklungen."
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Softwareentwicklung",
+          "path": "/de/categories/software-development/"
+        },
+        {
+          "text": "Betriebssysteme",
+          "path": "/de/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "Carbon: Eine C-basierte Portierung und Anpassung der Classic Mac OS-API für OS X. Es diente als Brücke, um bestehenden Anwendungen (wie Photoshop und Microsoft Office) die relativ einfache Unterstützung von OS X zu ermöglichen.",
+        "Cocoa: Eine reine, objektorientierte API basierend auf Objective-C, die aus NeXTSTEP übernommen wurde.",
+        "Motorola 68k → PowerPC (1990er Jahre)",
+        "PowerPC → Intel x86 (2006)",
+        "Intel x86 → Apple Silicon (ARM) (2020)"
+      ],
+      "headings": [
+        {
+          "id": "was-ist-macos-der-epische-übergang-von-classic-mac-os-zu-mac-os-x",
+          "text": "Was ist macOS: Der epische Übergang von Classic Mac OS zu Mac OS X"
+        },
+        {
+          "id": "die-grenzen-von-classic-mac-os-kooperatives-multitasking",
+          "text": "Die Grenzen von Classic Mac OS: Kooperatives Multitasking"
+        },
+        {
+          "id": "was-ist-kooperatives-multitasking",
+          "text": "Was ist kooperatives Multitasking?"
+        },
+        {
+          "id": "die-geburt-von-mac-os-x-die-leistung-von-unix-und-präemptives-multitasking",
+          "text": "Die Geburt von Mac OS X: Die Leistung von UNIX und präemptives Multitasking"
+        },
+        {
+          "id": "stabilität-durch-präemptives-multitasking",
+          "text": "Stabilität durch präemptives Multitasking"
+        },
+        {
+          "id": "das-erbe-von-nextstep-der-aufstieg-der-cocoa-api",
+          "text": "Das Erbe von NeXTSTEP: Der Aufstieg der Cocoa-API"
+        },
+        {
+          "id": "die-magie-die-den-architekturwandel-unterstützte-rosetta",
+          "text": "Die Magie, die den Architekturwandel unterstützte: Rosetta"
+        },
+        {
+          "id": "rosetta-von-powerpc-zu-intel",
+          "text": "Rosetta (Von PowerPC zu Intel)"
+        },
+        {
+          "id": "rosetta-2-von-intel-zu-apple-silicon",
+          "text": "Rosetta 2 (Von Intel zu Apple Silicon)"
+        },
+        {
+          "id": "fazit",
+          "text": "Fazit"
+        }
+      ],
+      "paragraphs": [
+        "Das Desktop-Betriebssystem von Apple, macOS, wird von Hunderten Millionen Benutzern weltweit geschätzt. Hinter dem heutigen, raffinierten macOS verbirgt sich jedoch einer der dramatischsten und technisch anspruchsvollsten Übergänge in der Geschichte der Betriebssysteme.",
+        "In diesem Artikel werden wir uns eingehend mit dem epischen Übergangsprozess von Classic Mac OS (bis Mac OS 9) zu Mac OS X (dem heutigen macOS) und den Kerntechnologien befassen, die ihn ermöglicht haben.",
+        "Mac OS, das 1984 zusammen mit dem ersten Macintosh eingeführt wurde, bot eine für die damalige Zeit revolutionäre grafische Benutzeroberfläche (GUI). Im Laufe der Zeit begannen sich jedoch die Grenzen seiner zugrunde liegenden Architektur abzuzeichnen.",
+        "Die Hauptgründe dafür waren kooperatives Multitasking (Cooperative Multitasking) und das Fehlen von Speicherschutz.",
+        "Beim kooperativen Multitasking verwaltet nicht das Betriebssystem, sondern die Anwendung selbst die CPU-Steuerung. Während Anwendung A die Verarbeitung durchführt, muss Anwendung B warten, bis A freiwillig ‘die CPU an das Betriebssystem zurückgibt (Yield)’.",
+        "Wenn Anwendung A abstürzte oder in eine Endlosschleife geriet und die Steuerung nicht zurückgab, fror das gesamte Betriebssystem ein. Die Benutzer waren zu einem erzwungenen Neustart gezwungen, und ungespeicherte Daten gingen verloren. Für damalige Mac-Benutzer waren Systemfehler mit dem Bomben-Symbol an der Tagesordnung.",
+        "Bei der Entwicklung des Betriebssystems der nächsten Generation traf Apple nach dem Scheitern des internen Entwicklungsprojekts (Copland) die historische Entscheidung, das von Steve Jobs gegründete Unternehmen NeXT zu übernehmen. Das Hauptprodukt von NeXT, ‘NeXTSTEP’, sollte die Grundlage für Mac OS X bilden.",
+        "Mac OS X (später macOS) enthielt im Kern ein UNIX-basiertes Betriebssystem (basierend auf FreeBSD und dem Mach-Mikrokernel) namens Darwin. Dadurch wurden die Schwachstellen von Classic Mac OS grundlegend behoben.",
+        "Einer der größten Vorteile von OS X ist das präemptive Multitasking (Preemptive Multitasking).",
+        "Beim präemptiven Multitasking hat der Kernel des Betriebssystems absolute Autorität und weist jeder Anwendung CPU-Zeit im Millisekundenbereich zu. Selbst wenn eine Anwendung einfriert, kann der Kernel gewaltsam die Kontrolle über die CPU übernehmen und sie anderen Anwendungen zuweisen.",
+        "Darüber hinaus führte die Einführung des Speicherschutzes (Memory Protection) dazu, dass jede Anwendung über einen eigenen, unabhängigen Speicherplatz verfügte. Wenn eine App abstürzte, wirkte sich dies nicht auf andere Apps oder das gesamte Betriebssystem aus.",
+        "Der Übergang zu Mac OS X war auch für Entwickler ein großer Paradigmenwechsel. Apple bot Entwicklern zwei Hauptoptionen als APIs zur Erstellung von Anwendungen für das neue Betriebssystem an: Carbon und Cocoa.",
+        "Cocoa hat die Frameworks aus der NeXTSTEP-Ära (Foundation und AppKit) direkt übernommen. Die Tatsache, dass viele der heute noch in der macOS-Entwicklung verwendeten Klassen das Präfix NS (Abkürzung für NeXTSTEP) tragen, ist ein Relikt aus dieser Zeit (z. B. NSString, NSArray). Letztendlich hat Apple Carbon als veraltet markiert und Cocoa (und später SwiftUI) in den Mittelpunkt der macOS-Entwicklung gestellt.",
+        "Ein bemerkenswerter Aspekt in der Geschichte von macOS ist die Tatsache, dass nicht nur die Softwarearchitektur, sondern auch die Hardwarearchitektur (CPU) mehrfach erfolgreich umgestellt wurde.",
+        "Diese Übergänge wurden durch Rosetta, eine Technologie zur dynamischen Binärübersetzung, nahtlos realisiert.",
+        "Im Jahr 2006 stellte Apple die Mac-Prozessoren von PowerPC auf Intel um. Zu dieser Zeit war das erste ‘Rosetta’ ein Emulator, der es ermöglichte, vorhandene PowerPC-Anwendungen direkt auf Intel-Macs auszuführen. Da das Betriebssystem Anweisungen im Hintergrund in Echtzeit übersetzte, konnten Benutzer Anwendungen nutzen, ohne sich Gedanken darüber machen zu müssen, für welche Architektur sie entwickelt wurden.",
+        "‘Rosetta 2’, das beim Übergang zu Apple Silicon (M1-Chip) im Jahr 2020 eingeführt wurde, war noch weiterentwickelt. Neben der Echtzeitübersetzung zur Laufzeit (JIT-Kompilierung) wurde durch Vorkompilierung (AOT-Kompilierung) bei der Installation (oder beim ersten Start) der Leistungsabfall auf ein absolutes Minimum reduziert. Dadurch laufen selbst rechenintensive, für x86 geschriebene Anwendungen mit erstaunlicher Geschwindigkeit nativ auf dem ARM-Prozessor.",
+        "Der Übergang von Classic Mac OS zu Mac OS X war nicht nur ein einfaches Software-Update, sondern kann als die erfolgreichste ‘Herztransplantation’ in der Geschichte der Informatik bezeichnet werden.",
+        "Von kooperativem Multitasking und häufigen Abstürzen hin zu der robusten Stabilität einer UNIX-Basis und einer raffinierten GUI. Und dann die Entwicklungsumgebung, die das Erbe von NeXTSTEP übernahm, sowie die mehrfachen Übergänge der CPU-Architektur. Die überwältigende Leistung und das Benutzererlebnis, das das heutige macOS bietet, beruhen auf diesen epischen technischen Herausforderungen und Entwicklungen."
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Softwareentwicklung",
+          "path": "/de/categories/software-development/"
+        },
+        {
+          "text": "Betriebssysteme",
+          "path": "/de/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "Steve Jobs",
+          "path": "/de/p/biography-steve-jobs/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "objektorientierte",
+          "path": "/de/p/object-oriented-programming-oop-solid-principles/",
+          "host": "127.0.0.1"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "018-macos-links",
+    "language": "fr",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "Carbon : L’API de Classic Mac OS, basée sur le langage C, portée et adaptée pour OS X. Elle servait de passerelle pour permettre de rendre les applications existantes (comme Photoshop ou Microsoft Office) relativement facilement compatibles avec OS X.",
+        "Cocoa : L’API héritée de NeXTSTEP, purement orientée objet et basée sur Objective-C.",
+        "Motorola 68k → PowerPC (années 1990)",
+        "PowerPC → Intel x86 (2006)",
+        "Intel x86 → Apple Silicon (ARM) (2020)"
+      ],
+      "headings": [
+        {
+          "id": "quest-ce-que-macos--la-transition-épique-de-classic-mac-os-à-mac-os-x",
+          "text": "Qu’est-ce que macOS : la transition épique de Classic Mac OS à Mac OS X"
+        },
+        {
+          "id": "les-limites-de-classic-mac-os--le-multitâche-coopératif",
+          "text": "Les limites de Classic Mac OS : le multitâche coopératif"
+        },
+        {
+          "id": "quest-ce-que-le-multitâche-coopératif-",
+          "text": "Qu’est-ce que le multitâche coopératif ?"
+        },
+        {
+          "id": "la-naissance-de-mac-os-x--la-puissance-dunix-et-le-multitâche-préemptif",
+          "text": "La naissance de Mac OS X : la puissance d’UNIX et le multitâche préemptif"
+        },
+        {
+          "id": "la-stabilité-grâce-au-multitâche-préemptif",
+          "text": "La stabilité grâce au multitâche préemptif"
+        },
+        {
+          "id": "lhéritage-de-nextstep--lessor-de-lapi-cocoa",
+          "text": "L’héritage de NeXTSTEP : l’essor de l’API Cocoa"
+        },
+        {
+          "id": "la-magie-derrière-lévolution-de-larchitecture--rosetta",
+          "text": "La magie derrière l’évolution de l’architecture : Rosetta"
+        },
+        {
+          "id": "rosetta-de-powerpc-vers-intel",
+          "text": "Rosetta (de PowerPC vers Intel)"
+        },
+        {
+          "id": "rosetta-2-dintel-vers-apple-silicon",
+          "text": "Rosetta 2 (d’Intel vers Apple Silicon)"
+        },
+        {
+          "id": "conclusion",
+          "text": "Conclusion"
+        }
+      ],
+      "paragraphs": [
+        "Le système d’exploitation de bureau d’Apple, macOS, est utilisé par des centaines de millions d’utilisateurs à travers le monde. Cependant, derrière l’actuel et élégant macOS se cache la transition la plus spectaculaire et techniquement difficile de l’histoire des systèmes d’exploitation.",
+        "Dans cet article, nous plongerons au cœur de la transition épique de Classic Mac OS (jusqu’à Mac OS 9) à Mac OS X (le macOS actuel) et des technologies de base qui l’ont soutenue.",
+        "Mac OS, apparu avec le premier Macintosh en 1984, offrait une interface utilisateur graphique (GUI) innovante pour l’époque. Cependant, au fil du temps, les limites de son architecture sous-jacente ont commencé à apparaître.",
+        "Les facteurs principaux de ces limites étaient le multitâche coopératif (Cooperative Multitasking) et l’absence de protection de la mémoire.",
+        "Dans le multitâche coopératif, ce sont les applications elles-mêmes, et non l’OS, qui gèrent le contrôle du CPU. Pendant que l’application A effectue un traitement, l’application B doit attendre que l’application A « rende le CPU à l’OS (Yield) » de son plein gré.",
+        "Si l’application A plante ou entre dans une boucle infinie sans rendre le contrôle, tout l’OS se fige. Les utilisateurs étaient alors contraints de forcer le redémarrage, perdant ainsi leurs données non sauvegardées. À l’époque, l’icône de la bombe signalant une erreur système était monnaie courante pour les utilisateurs Mac.",
+        "Lors du développement de son OS de nouvelle génération, après l’échec de son projet interne (Copland), Apple a pris la décision historique de racheter NeXT, la société fondée par Steve Jobs. C’est le produit phare de NeXT, « NeXTSTEP », qui servira de base à Mac OS X.",
+        "Mac OS X (plus tard macOS) intégrait en son cœur un système d’exploitation de type UNIX appelé Darwin (basé sur FreeBSD et le micro-noyau Mach). Cela a permis de résoudre à la racine les points faibles de Classic Mac OS.",
+        "L’un des plus grands avantages apportés par OS X est le multitâche préemptif (Preemptive Multitasking).",
+        "Dans le multitâche préemptif, le noyau de l’OS dispose d’une autorité absolue et alloue du temps CPU à chaque application à la milliseconde près. Même si une application plante, le noyau peut forcer la récupération du contrôle du CPU pour l’allouer à d’autres applications.",
+        "De plus, grâce à l’introduction de la protection de la mémoire (Memory Protection), chaque application dispose désormais de son propre espace mémoire indépendant. Le plantage d’une application n’entraîne plus avec elle d’autres applications ni l’ensemble de l’OS.",
+        "La transition vers Mac OS X a également été un changement de paradigme majeur pour les développeurs. Apple a proposé deux grands choix d’API pour permettre aux développeurs de créer des applications pour le nouvel OS : Carbon et Cocoa.",
+        "Cocoa conserve en grande partie les frameworks de l’ère NeXTSTEP (Foundation et AppKit). Le fait que de nombreuses classes encore utilisées aujourd’hui dans le développement macOS portent le préfixe NS (pour NeXTSTEP) en est le vestige (par exemple, NSString, NSArray). Apple a finalement rendu Carbon obsolète, plaçant Cocoa (et plus tard SwiftUI) au cœur du développement macOS.",
+        "Ce qui est remarquable dans l’histoire de macOS, ce n’est pas seulement l’architecture logicielle, mais le fait d’avoir réussi à plusieurs reprises la transition de l’architecture matérielle (CPU).",
+        "Ce qui a rendu ces transitions transparentes, c’est Rosetta, une technologie de traduction binaire dynamique.",
+        "En 2006, Apple a migré les processeurs de ses Mac du PowerPC vers Intel. La première version de « Rosetta » était l’émulateur permettant d’exécuter telles quelles les applications PowerPC existantes sur les Mac Intel. Puisque l’OS traduisait les instructions en temps réel en arrière-plan, les utilisateurs pouvaient utiliser leurs applications sans se soucier de l’architecture pour laquelle elles avaient été conçues.",
+        "Lancée en 2020 lors de la transition vers Apple Silicon (la puce M1), « Rosetta 2 » a évolué de manière significative. En plus de la traduction en temps réel lors de l’exécution (compilation JIT), la précompilation (compilation AOT) effectuée lors de l’installation (ou du premier démarrage) a permis de limiter au maximum la baisse de performances. Ainsi, même les applications lourdes écrites pour l’architecture x86 s’exécutent à une vitesse impressionnante sur les processeurs ARM natifs.",
+        "La transition de Classic Mac OS à Mac OS X n’était pas une simple mise à jour logicielle, mais peut être considérée comme la « transplantation cardiaque » la plus réussie de l’histoire de l’informatique.",
+        "Du multitâche coopératif et de ses fréquents plantages, à la solide stabilité de la base UNIX et à une interface utilisateur graphique raffinée. Puis, de l’environnement de développement hérité de NeXTSTEP à la transition de l’architecture du CPU à de multiples reprises. Les performances exceptionnelles et l’expérience utilisateur offertes par le macOS actuel reposent sur d’immenses défis et évolutions technologiques."
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Développement logiciel",
+          "path": "/fr/categories/software-development/"
+        },
+        {
+          "text": "Systèmes d’exploitation",
+          "path": "/fr/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "Carbon : L’API de Classic Mac OS, basée sur le langage C, portée et adaptée pour OS X. Elle servait de passerelle pour permettre de rendre les applications existantes (comme Photoshop ou Microsoft Office) relativement facilement compatibles avec OS X.",
+        "Cocoa : L’API héritée de NeXTSTEP, purement orientée objet et basée sur Objective-C.",
+        "Motorola 68k → PowerPC (années 1990)",
+        "PowerPC → Intel x86 (2006)",
+        "Intel x86 → Apple Silicon (ARM) (2020)"
+      ],
+      "headings": [
+        {
+          "id": "quest-ce-que-macos--la-transition-épique-de-classic-mac-os-à-mac-os-x",
+          "text": "Qu’est-ce que macOS : la transition épique de Classic Mac OS à Mac OS X"
+        },
+        {
+          "id": "les-limites-de-classic-mac-os--le-multitâche-coopératif",
+          "text": "Les limites de Classic Mac OS : le multitâche coopératif"
+        },
+        {
+          "id": "quest-ce-que-le-multitâche-coopératif-",
+          "text": "Qu’est-ce que le multitâche coopératif ?"
+        },
+        {
+          "id": "la-naissance-de-mac-os-x--la-puissance-dunix-et-le-multitâche-préemptif",
+          "text": "La naissance de Mac OS X : la puissance d’UNIX et le multitâche préemptif"
+        },
+        {
+          "id": "la-stabilité-grâce-au-multitâche-préemptif",
+          "text": "La stabilité grâce au multitâche préemptif"
+        },
+        {
+          "id": "lhéritage-de-nextstep--lessor-de-lapi-cocoa",
+          "text": "L’héritage de NeXTSTEP : l’essor de l’API Cocoa"
+        },
+        {
+          "id": "la-magie-derrière-lévolution-de-larchitecture--rosetta",
+          "text": "La magie derrière l’évolution de l’architecture : Rosetta"
+        },
+        {
+          "id": "rosetta-de-powerpc-vers-intel",
+          "text": "Rosetta (de PowerPC vers Intel)"
+        },
+        {
+          "id": "rosetta-2-dintel-vers-apple-silicon",
+          "text": "Rosetta 2 (d’Intel vers Apple Silicon)"
+        },
+        {
+          "id": "conclusion",
+          "text": "Conclusion"
+        }
+      ],
+      "paragraphs": [
+        "Le système d’exploitation de bureau d’Apple, macOS, est utilisé par des centaines de millions d’utilisateurs à travers le monde. Cependant, derrière l’actuel et élégant macOS se cache la transition la plus spectaculaire et techniquement difficile de l’histoire des systèmes d’exploitation.",
+        "Dans cet article, nous plongerons au cœur de la transition épique de Classic Mac OS (jusqu’à Mac OS 9) à Mac OS X (le macOS actuel) et des technologies de base qui l’ont soutenue.",
+        "Mac OS, apparu avec le premier Macintosh en 1984, offrait une interface utilisateur graphique (GUI) innovante pour l’époque. Cependant, au fil du temps, les limites de son architecture sous-jacente ont commencé à apparaître.",
+        "Les facteurs principaux de ces limites étaient le multitâche coopératif (Cooperative Multitasking) et l’absence de protection de la mémoire.",
+        "Dans le multitâche coopératif, ce sont les applications elles-mêmes, et non l’OS, qui gèrent le contrôle du CPU. Pendant que l’application A effectue un traitement, l’application B doit attendre que l’application A « rende le CPU à l’OS (Yield) » de son plein gré.",
+        "Si l’application A plante ou entre dans une boucle infinie sans rendre le contrôle, tout l’OS se fige. Les utilisateurs étaient alors contraints de forcer le redémarrage, perdant ainsi leurs données non sauvegardées. À l’époque, l’icône de la bombe signalant une erreur système était monnaie courante pour les utilisateurs Mac.",
+        "Lors du développement de son OS de nouvelle génération, après l’échec de son projet interne (Copland), Apple a pris la décision historique de racheter NeXT, la société fondée par Steve Jobs. C’est le produit phare de NeXT, « NeXTSTEP », qui servira de base à Mac OS X.",
+        "Mac OS X (plus tard macOS) intégrait en son cœur un système d’exploitation de type UNIX appelé Darwin (basé sur FreeBSD et le micro-noyau Mach). Cela a permis de résoudre à la racine les points faibles de Classic Mac OS.",
+        "L’un des plus grands avantages apportés par OS X est le multitâche préemptif (Preemptive Multitasking).",
+        "Dans le multitâche préemptif, le noyau de l’OS dispose d’une autorité absolue et alloue du temps CPU à chaque application à la milliseconde près. Même si une application plante, le noyau peut forcer la récupération du contrôle du CPU pour l’allouer à d’autres applications.",
+        "De plus, grâce à l’introduction de la protection de la mémoire (Memory Protection), chaque application dispose désormais de son propre espace mémoire indépendant. Le plantage d’une application n’entraîne plus avec elle d’autres applications ni l’ensemble de l’OS.",
+        "La transition vers Mac OS X a également été un changement de paradigme majeur pour les développeurs. Apple a proposé deux grands choix d’API pour permettre aux développeurs de créer des applications pour le nouvel OS : Carbon et Cocoa.",
+        "Cocoa conserve en grande partie les frameworks de l’ère NeXTSTEP (Foundation et AppKit). Le fait que de nombreuses classes encore utilisées aujourd’hui dans le développement macOS portent le préfixe NS (pour NeXTSTEP) en est le vestige (par exemple, NSString, NSArray). Apple a finalement rendu Carbon obsolète, plaçant Cocoa (et plus tard SwiftUI) au cœur du développement macOS.",
+        "Ce qui est remarquable dans l’histoire de macOS, ce n’est pas seulement l’architecture logicielle, mais le fait d’avoir réussi à plusieurs reprises la transition de l’architecture matérielle (CPU).",
+        "Ce qui a rendu ces transitions transparentes, c’est Rosetta, une technologie de traduction binaire dynamique.",
+        "En 2006, Apple a migré les processeurs de ses Mac du PowerPC vers Intel. La première version de « Rosetta » était l’émulateur permettant d’exécuter telles quelles les applications PowerPC existantes sur les Mac Intel. Puisque l’OS traduisait les instructions en temps réel en arrière-plan, les utilisateurs pouvaient utiliser leurs applications sans se soucier de l’architecture pour laquelle elles avaient été conçues.",
+        "Lancée en 2020 lors de la transition vers Apple Silicon (la puce M1), « Rosetta 2 » a évolué de manière significative. En plus de la traduction en temps réel lors de l’exécution (compilation JIT), la précompilation (compilation AOT) effectuée lors de l’installation (ou du premier démarrage) a permis de limiter au maximum la baisse de performances. Ainsi, même les applications lourdes écrites pour l’architecture x86 s’exécutent à une vitesse impressionnante sur les processeurs ARM natifs.",
+        "La transition de Classic Mac OS à Mac OS X n’était pas une simple mise à jour logicielle, mais peut être considérée comme la « transplantation cardiaque » la plus réussie de l’histoire de l’informatique.",
+        "Du multitâche coopératif et de ses fréquents plantages, à la solide stabilité de la base UNIX et à une interface utilisateur graphique raffinée. Puis, de l’environnement de développement hérité de NeXTSTEP à la transition de l’architecture du CPU à de multiples reprises. Les performances exceptionnelles et l’expérience utilisateur offertes par le macOS actuel reposent sur d’immenses défis et évolutions technologiques."
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Développement logiciel",
+          "path": "/fr/categories/software-development/"
+        },
+        {
+          "text": "Systèmes d’exploitation",
+          "path": "/fr/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "Steve Jobs",
+          "path": "/fr/p/biography-steve-jobs/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "orientée objet",
+          "path": "/fr/p/object-oriented-programming-oop-solid-principles/",
+          "host": "127.0.0.1"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "018-macos-links",
+    "language": "es",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "Carbon: Una adaptación de la API de Classic Mac OS, basada en C, para OS X. Sirvió como un puente para adaptar relativamente fácil las aplicaciones existentes (como Photoshop o Microsoft Office) a OS X.",
+        "Cocoa: Una API puramente orientada a objetos basada en Objective-C, heredada de NeXTSTEP.",
+        "Motorola 68k → PowerPC (década de 1990)",
+        "PowerPC → Intel x86 (2006)",
+        "Intel x86 → Apple Silicon (ARM) (2020)"
+      ],
+      "headings": [
+        {
+          "id": "qué-es-macos-la-épica-transición-de-classic-mac-os-a-mac-os-x",
+          "text": "¿Qué es macOS?: La épica transición de Classic Mac OS a Mac OS X"
+        },
+        {
+          "id": "las-limitaciones-de-classic-mac-os-multitarea-cooperativa",
+          "text": "Las limitaciones de Classic Mac OS: Multitarea cooperativa"
+        },
+        {
+          "id": "qué-es-la-multitarea-cooperativa",
+          "text": "¿Qué es la multitarea cooperativa?"
+        },
+        {
+          "id": "el-nacimiento-de-mac-os-x-el-poder-de-unix-y-la-multitarea-preventiva",
+          "text": "El nacimiento de Mac OS X: El poder de UNIX y la multitarea preventiva"
+        },
+        {
+          "id": "estabilidad-gracias-a-la-multitarea-preventiva",
+          "text": "Estabilidad gracias a la multitarea preventiva"
+        },
+        {
+          "id": "el-legado-de-nextstep-el-auge-de-la-api-cocoa",
+          "text": "El legado de NeXTSTEP: El auge de la API Cocoa"
+        },
+        {
+          "id": "la-magia-detrás-de-la-evolución-de-la-arquitectura-rosetta",
+          "text": "La magia detrás de la evolución de la arquitectura: Rosetta"
+        },
+        {
+          "id": "rosetta-de-powerpc-a-intel",
+          "text": "Rosetta (De PowerPC a Intel)"
+        },
+        {
+          "id": "rosetta-2-de-intel-a-apple-silicon",
+          "text": "Rosetta 2 (De Intel a Apple Silicon)"
+        },
+        {
+          "id": "conclusión",
+          "text": "Conclusión"
+        }
+      ],
+      "paragraphs": [
+        "macOS, el sistema operativo de escritorio de Apple, es utilizado por cientos de millones de usuarios en todo el mundo. Sin embargo, detrás de la elegante existencia del macOS actual, se esconde uno de los procesos de transición más dramáticos y técnicamente desafiantes en la historia de los sistemas operativos.",
+        "En este artículo, profundizaremos en el épico proceso de transición desde Classic Mac OS (hasta Mac OS 9) a Mac OS X (el macOS actual) y las tecnologías centrales que lo sustentaron.",
+        "Mac OS, que debutó con la primera Macintosh en 1984, ofrecía una interfaz gráfica de usuario (GUI) revolucionaria para su época. Sin embargo, con el paso del tiempo, las limitaciones de su arquitectura base comenzaron a hacerse evidentes.",
+        "Los factores principales fueron la multitarea cooperativa (Cooperative Multitasking) y la falta de protección de memoria.",
+        "En la multitarea cooperativa, no es el SO sino la propia aplicación la que gestiona el control de la CPU. Mientras la aplicación A está procesando, la aplicación B debe esperar hasta que la aplicación A decida voluntariamente “devolver el control de la CPU al SO (Yield)”.",
+        "Si la aplicación A fallaba o entraba en un bucle infinito y no devolvía el control, todo el sistema operativo se congelaba. Los usuarios se veían obligados a forzar un reinicio, perdiendo los datos no guardados. Para los usuarios de Mac de esa época, el error del sistema con el icono de la bomba era algo cotidiano.",
+        "En el desarrollo de su sistema operativo de próxima generación, y tras el fracaso de su proyecto interno (Copland), Apple tomó la histórica decisión de adquirir NeXT, la empresa fundada por Steve Jobs. El producto principal de NeXT, “NeXTSTEP”, se convertiría en la base de Mac OS X.",
+        "Mac OS X (posteriormente macOS) incluía en su interior un sistema operativo tipo UNIX llamado Darwin (basado en FreeBSD y el microkernel Mach). Esto solucionó de raíz las debilidades de Classic Mac OS.",
+        "Uno de los mayores beneficios que trajo OS X fue la multitarea preventiva (Preemptive Multitasking).",
+        "En la multitarea preventiva, el kernel del SO tiene la autoridad absoluta y asigna tiempo de CPU a cada aplicación en milisegundos. Incluso si una aplicación se congela, el kernel puede arrebatarle el control de la CPU a la fuerza y asignarlo a otra aplicación.",
+        "Además, con la introducción de la protección de memoria (Memory Protection), cada aplicación pasó a tener un espacio de memoria independiente. Si una aplicación falla, no afecta a las demás ni al sistema operativo en su conjunto.",
+        "La transición a Mac OS X también supuso un gran cambio de paradigma para los desarrolladores. Apple ofreció principalmente dos opciones de API para que los desarrolladores crearan aplicaciones para el nuevo SO: Carbon y Cocoa.",
+        "Cocoa heredó los frameworks de la era NeXTSTEP (Foundation y AppKit) tal cual. El hecho de que muchas clases utilizadas en el desarrollo actual de macOS tengan el prefijo NS (abreviatura de NeXTSTEP) es un remanente de esto (ej. NSString, NSArray). Finalmente, Apple desaprobó Carbon y posicionó a Cocoa (y su sucesor SwiftUI) en el centro del desarrollo de macOS.",
+        "Lo más destacable de la historia de macOS es que ha logrado con éxito no solo transiciones en la arquitectura de software, sino también en la de hardware (CPU) en múltiples ocasiones.",
+        "Lo que hizo posibles estas transiciones de forma fluida fue Rosetta, una tecnología de traducción dinámica de binarios.",
+        "En 2006, Apple hizo la transición de los procesadores de Mac de PowerPC a Intel. En ese momento, la primera versión de “Rosetta” fue el emulador que permitía ejecutar aplicaciones diseñadas para PowerPC directamente en los Mac con Intel. Dado que el SO traducía las instrucciones en tiempo real en segundo plano, los usuarios podían utilizar las aplicaciones sin siquiera notar para qué arquitectura estaban diseñadas.",
+        "“Rosetta 2”, que apareció durante la transición a Apple Silicon (chip M1) en 2020, había evolucionado aún más. Además de la traducción en tiempo real durante la ejecución (compilación JIT), logró minimizar la pérdida de rendimiento al realizar una compilación previa (compilación AOT) durante la instalación (o en el primer inicio). Gracias a esto, incluso las aplicaciones pesadas escritas para x86 funcionan a velocidades asombrosas de forma nativa en los procesadores ARM.",
+        "La transición de Classic Mac OS a Mac OS X no fue una simple actualización de software, sino que se podría considerar como el “trasplante de corazón” más exitoso en la historia de la informática.",
+        "La evolución desde la multitarea cooperativa y los constantes bloqueos, hacia la sólida estabilidad basada en UNIX y una GUI refinada. Todo esto, junto al entorno de desarrollo heredado de NeXTSTEP y las múltiples transiciones de arquitectura de CPU. El rendimiento abrumador y la experiencia de usuario que posee el macOS actual se sustentan sobre estos épicos desafíos y evoluciones tecnológicas."
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Desarrollo de software",
+          "path": "/es/categories/software-development/"
+        },
+        {
+          "text": "Sistemas operativos",
+          "path": "/es/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "Carbon: Una adaptación de la API de Classic Mac OS, basada en C, para OS X. Sirvió como un puente para adaptar relativamente fácil las aplicaciones existentes (como Photoshop o Microsoft Office) a OS X.",
+        "Cocoa: Una API puramente orientada a objetos basada en Objective-C, heredada de NeXTSTEP.",
+        "Motorola 68k → PowerPC (década de 1990)",
+        "PowerPC → Intel x86 (2006)",
+        "Intel x86 → Apple Silicon (ARM) (2020)"
+      ],
+      "headings": [
+        {
+          "id": "qué-es-macos-la-épica-transición-de-classic-mac-os-a-mac-os-x",
+          "text": "¿Qué es macOS?: La épica transición de Classic Mac OS a Mac OS X"
+        },
+        {
+          "id": "las-limitaciones-de-classic-mac-os-multitarea-cooperativa",
+          "text": "Las limitaciones de Classic Mac OS: Multitarea cooperativa"
+        },
+        {
+          "id": "qué-es-la-multitarea-cooperativa",
+          "text": "¿Qué es la multitarea cooperativa?"
+        },
+        {
+          "id": "el-nacimiento-de-mac-os-x-el-poder-de-unix-y-la-multitarea-preventiva",
+          "text": "El nacimiento de Mac OS X: El poder de UNIX y la multitarea preventiva"
+        },
+        {
+          "id": "estabilidad-gracias-a-la-multitarea-preventiva",
+          "text": "Estabilidad gracias a la multitarea preventiva"
+        },
+        {
+          "id": "el-legado-de-nextstep-el-auge-de-la-api-cocoa",
+          "text": "El legado de NeXTSTEP: El auge de la API Cocoa"
+        },
+        {
+          "id": "la-magia-detrás-de-la-evolución-de-la-arquitectura-rosetta",
+          "text": "La magia detrás de la evolución de la arquitectura: Rosetta"
+        },
+        {
+          "id": "rosetta-de-powerpc-a-intel",
+          "text": "Rosetta (De PowerPC a Intel)"
+        },
+        {
+          "id": "rosetta-2-de-intel-a-apple-silicon",
+          "text": "Rosetta 2 (De Intel a Apple Silicon)"
+        },
+        {
+          "id": "conclusión",
+          "text": "Conclusión"
+        }
+      ],
+      "paragraphs": [
+        "macOS, el sistema operativo de escritorio de Apple, es utilizado por cientos de millones de usuarios en todo el mundo. Sin embargo, detrás de la elegante existencia del macOS actual, se esconde uno de los procesos de transición más dramáticos y técnicamente desafiantes en la historia de los sistemas operativos.",
+        "En este artículo, profundizaremos en el épico proceso de transición desde Classic Mac OS (hasta Mac OS 9) a Mac OS X (el macOS actual) y las tecnologías centrales que lo sustentaron.",
+        "Mac OS, que debutó con la primera Macintosh en 1984, ofrecía una interfaz gráfica de usuario (GUI) revolucionaria para su época. Sin embargo, con el paso del tiempo, las limitaciones de su arquitectura base comenzaron a hacerse evidentes.",
+        "Los factores principales fueron la multitarea cooperativa (Cooperative Multitasking) y la falta de protección de memoria.",
+        "En la multitarea cooperativa, no es el SO sino la propia aplicación la que gestiona el control de la CPU. Mientras la aplicación A está procesando, la aplicación B debe esperar hasta que la aplicación A decida voluntariamente “devolver el control de la CPU al SO (Yield)”.",
+        "Si la aplicación A fallaba o entraba en un bucle infinito y no devolvía el control, todo el sistema operativo se congelaba. Los usuarios se veían obligados a forzar un reinicio, perdiendo los datos no guardados. Para los usuarios de Mac de esa época, el error del sistema con el icono de la bomba era algo cotidiano.",
+        "En el desarrollo de su sistema operativo de próxima generación, y tras el fracaso de su proyecto interno (Copland), Apple tomó la histórica decisión de adquirir NeXT, la empresa fundada por Steve Jobs. El producto principal de NeXT, “NeXTSTEP”, se convertiría en la base de Mac OS X.",
+        "Mac OS X (posteriormente macOS) incluía en su interior un sistema operativo tipo UNIX llamado Darwin (basado en FreeBSD y el microkernel Mach). Esto solucionó de raíz las debilidades de Classic Mac OS.",
+        "Uno de los mayores beneficios que trajo OS X fue la multitarea preventiva (Preemptive Multitasking).",
+        "En la multitarea preventiva, el kernel del SO tiene la autoridad absoluta y asigna tiempo de CPU a cada aplicación en milisegundos. Incluso si una aplicación se congela, el kernel puede arrebatarle el control de la CPU a la fuerza y asignarlo a otra aplicación.",
+        "Además, con la introducción de la protección de memoria (Memory Protection), cada aplicación pasó a tener un espacio de memoria independiente. Si una aplicación falla, no afecta a las demás ni al sistema operativo en su conjunto.",
+        "La transición a Mac OS X también supuso un gran cambio de paradigma para los desarrolladores. Apple ofreció principalmente dos opciones de API para que los desarrolladores crearan aplicaciones para el nuevo SO: Carbon y Cocoa.",
+        "Cocoa heredó los frameworks de la era NeXTSTEP (Foundation y AppKit) tal cual. El hecho de que muchas clases utilizadas en el desarrollo actual de macOS tengan el prefijo NS (abreviatura de NeXTSTEP) es un remanente de esto (ej. NSString, NSArray). Finalmente, Apple desaprobó Carbon y posicionó a Cocoa (y su sucesor SwiftUI) en el centro del desarrollo de macOS.",
+        "Lo más destacable de la historia de macOS es que ha logrado con éxito no solo transiciones en la arquitectura de software, sino también en la de hardware (CPU) en múltiples ocasiones.",
+        "Lo que hizo posibles estas transiciones de forma fluida fue Rosetta, una tecnología de traducción dinámica de binarios.",
+        "En 2006, Apple hizo la transición de los procesadores de Mac de PowerPC a Intel. En ese momento, la primera versión de “Rosetta” fue el emulador que permitía ejecutar aplicaciones diseñadas para PowerPC directamente en los Mac con Intel. Dado que el SO traducía las instrucciones en tiempo real en segundo plano, los usuarios podían utilizar las aplicaciones sin siquiera notar para qué arquitectura estaban diseñadas.",
+        "“Rosetta 2”, que apareció durante la transición a Apple Silicon (chip M1) en 2020, había evolucionado aún más. Además de la traducción en tiempo real durante la ejecución (compilación JIT), logró minimizar la pérdida de rendimiento al realizar una compilación previa (compilación AOT) durante la instalación (o en el primer inicio). Gracias a esto, incluso las aplicaciones pesadas escritas para x86 funcionan a velocidades asombrosas de forma nativa en los procesadores ARM.",
+        "La transición de Classic Mac OS a Mac OS X no fue una simple actualización de software, sino que se podría considerar como el “trasplante de corazón” más exitoso en la historia de la informática.",
+        "La evolución desde la multitarea cooperativa y los constantes bloqueos, hacia la sólida estabilidad basada en UNIX y una GUI refinada. Todo esto, junto al entorno de desarrollo heredado de NeXTSTEP y las múltiples transiciones de arquitectura de CPU. El rendimiento abrumador y la experiencia de usuario que posee el macOS actual se sustentan sobre estos épicos desafíos y evoluciones tecnológicas."
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Desarrollo de software",
+          "path": "/es/categories/software-development/"
+        },
+        {
+          "text": "Sistemas operativos",
+          "path": "/es/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "Steve Jobs",
+          "path": "/es/p/biography-steve-jobs/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "orientada a objetos",
+          "path": "/es/p/object-oriented-programming-oop-solid-principles/",
+          "host": "127.0.0.1"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "018-macos-links",
+    "language": "pt",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "Carbon: Uma adaptação da API do Classic Mac OS, baseada em C, portada para o OS X. Era uma ponte para tornar aplicativos existentes (como o Photoshop e o Microsoft Office) compatíveis com o OS X com relativa facilidade.",
+        "Cocoa: Uma API orientada a objetos pura baseada em Objective-C, herdada do NeXTSTEP.",
+        "Motorola 68k → PowerPC (anos 1990)",
+        "PowerPC → Intel x86 (2006)",
+        "Intel x86 → Apple Silicon (ARM) (2020)"
+      ],
+      "headings": [
+        {
+          "id": "o-que-é-o-macos-a-épica-transição-do-classic-mac-os-para-o-mac-os-x",
+          "text": "O que é o macOS: A Épica Transição do Classic Mac OS para o Mac OS X"
+        },
+        {
+          "id": "as-limitações-do-classic-mac-os-multitarefa-cooperativa",
+          "text": "As Limitações do Classic Mac OS: Multitarefa Cooperativa"
+        },
+        {
+          "id": "o-que-é-multitarefa-cooperativa",
+          "text": "O que é Multitarefa Cooperativa?"
+        },
+        {
+          "id": "o-nascimento-do-mac-os-x-o-poder-do-unix-e-a-multitarefa-preemptiva",
+          "text": "O Nascimento do Mac OS X: O Poder do UNIX e a Multitarefa Preemptiva"
+        },
+        {
+          "id": "estabilidade-através-da-multitarefa-preemptiva",
+          "text": "Estabilidade através da Multitarefa Preemptiva"
+        },
+        {
+          "id": "o-legado-do-nextstep-a-ascensão-da-api-cocoa",
+          "text": "O Legado do NeXTSTEP: A Ascensão da API Cocoa"
+        },
+        {
+          "id": "a-magia-por-trás-da-evolução-da-arquitetura-rosetta",
+          "text": "A Magia por Trás da Evolução da Arquitetura: Rosetta"
+        },
+        {
+          "id": "rosetta-do-powerpc-para-o-intel",
+          "text": "Rosetta (Do PowerPC para o Intel)"
+        },
+        {
+          "id": "rosetta-2-do-intel-para-o-apple-silicon",
+          "text": "Rosetta 2 (Do Intel para o Apple Silicon)"
+        },
+        {
+          "id": "conclusão",
+          "text": "Conclusão"
+        }
+      ],
+      "paragraphs": [
+        "O macOS, sistema operacional de desktop da Apple, é amado por centenas de milhões de usuários em todo o mundo. No entanto, por trás da existência do elegante macOS atual, houve o drama de transição mais dramático e tecnicamente desafiador da história dos sistemas operacionais.",
+        "Neste artigo, vamos nos aprofundar no épico processo de transição do Classic Mac OS (até o Mac OS 9) para o Mac OS X (atual macOS) e nas tecnologias centrais que o sustentaram.",
+        "O Mac OS, lançado com o primeiro Macintosh em 1984, oferecia uma interface gráfica de usuário (GUI) revolucionária para a época. No entanto, com o passar do tempo, as limitações da sua arquitetura base começaram a ser expostas.",
+        "O maior fator foi a multitarefa cooperativa (Cooperative Multitasking) e a falta de proteção de memória.",
+        "Na multitarefa cooperativa, o próprio aplicativo gerencia o controle da CPU, em vez do sistema operacional. Enquanto o Aplicativo A está processando, o Aplicativo B deve esperar até que o A voluntariamente “devolva a CPU ao SO (Yield)”.",
+        "Se o Aplicativo A travasse ou entrasse em um loop infinito e não retornasse o controle, todo o sistema operacional congelaria. Os usuários eram forçados a realizar uma reinicialização forçada, e os dados não salvos eram perdidos. Para os usuários de Mac daquela época, o erro de sistema com o ícone de bomba era uma ocorrência diária.",
+        "No desenvolvimento de seu sistema operacional de próxima geração, a Apple tomou a decisão histórica de adquirir a NeXT, empresa fundada por Steve Jobs, após o fracasso de seu próprio projeto de desenvolvimento (Copland). O principal produto da NeXT, o “NeXTSTEP”, tornaria-se a base do Mac OS X.",
+        "O Mac OS X (mais tarde macOS) foi construído sobre um sistema operacional do tipo UNIX chamado Darwin (baseado no FreeBSD e no microkernel Mach). Com isso, os pontos fracos do Classic Mac OS foram fundamentalmente resolvidos.",
+        "Um dos maiores benefícios trazidos pelo OS X foi a multitarefa preemptiva (Preemptive Multitasking).",
+        "Na multitarefa preemptiva, o kernel do SO tem autoridade absoluta e aloca tempo de CPU para cada aplicativo em milissegundos. Mesmo se um aplicativo travar, o kernel pode forçar a tomada de controle da CPU e alocá-lo a outros aplicativos.",
+        "Além disso, com a introdução da proteção de memória (Memory Protection), cada aplicativo passou a ter um espaço de memória independente. Mesmo que um aplicativo travasse, ele não afetaria outros aplicativos ou o sistema operacional como um todo.",
+        "A transição para o Mac OS X também foi uma grande mudança de paradigma para os desenvolvedores. A Apple ofereceu duas opções principais de APIs para os desenvolvedores criarem aplicativos para o novo SO: Carbon e Cocoa.",
+        "A Cocoa herdou as estruturas (como Foundation e AppKit) da era NeXTSTEP como estavam. É um vestígio disso que muitas das classes usadas no desenvolvimento do macOS ainda hoje tenham o prefixo NS (abreviação de NeXTSTEP) (ex: NSString, NSArray). Por fim, a Apple descontinuou a Carbon e colocou a Cocoa (e, posteriormente, o SwiftUI) no centro do desenvolvimento do macOS.",
+        "O que é notável na história do macOS não é apenas a arquitetura de software, mas também o fato de que eles conseguiram realizar transições de arquitetura de hardware (CPU) várias vezes com sucesso.",
+        "O que tornou essas transições perfeitas possíveis foi o Rosetta, uma tecnologia de tradução binária dinâmica.",
+        "Em 2006, a Apple mudou os processadores do Mac do PowerPC para os da Intel. Naquela época, o “Rosetta” original era um emulador para executar aplicativos PowerPC existentes como estavam em Macs Intel. Como o SO traduzia as instruções em tempo real em segundo plano, os usuários podiam usar os aplicativos sem ter que se preocupar com a arquitetura para a qual foram construídos.",
+        "O “Rosetta 2”, que apareceu durante a transição para o Apple Silicon (chip M1) em 2020, era ainda mais avançado. Além da tradução em tempo real na execução (compilação JIT), ele conseguiu minimizar a degradação de desempenho realizando a compilação antecipada (compilação AOT) no momento da instalação (ou na primeira inicialização). Graças a isso, mesmo aplicativos pesados escritos para x86 operam em velocidades incríveis no processador ARM nativo.",
+        "A transição do Classic Mac OS para o Mac OS X não foi apenas uma simples atualização de software, mas sim um evento que poderia ser considerado o “transplante de coração” mais bem-sucedido da história da ciência da computação.",
+        "Evoluindo da multitarefa cooperativa e travamentos frequentes para a forte estabilidade e GUI elegante baseada em UNIX. Além disso, o ambiente de desenvolvimento herdou o legado do NeXTSTEP e as transições de arquitetura de CPU ao longo de várias ocasiões. O desempenho esmagador e a experiência do usuário que o macOS atual possui são construídos sobre esses desafios tecnológicos épicos e evolução."
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Desenvolvimento de software",
+          "path": "/pt/categories/software-development/"
+        },
+        {
+          "text": "Sistemas operacionais",
+          "path": "/pt/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "Carbon: Uma adaptação da API do Classic Mac OS, baseada em C, portada para o OS X. Era uma ponte para tornar aplicativos existentes (como o Photoshop e o Microsoft Office) compatíveis com o OS X com relativa facilidade.",
+        "Cocoa: Uma API orientada a objetos pura baseada em Objective-C, herdada do NeXTSTEP.",
+        "Motorola 68k → PowerPC (anos 1990)",
+        "PowerPC → Intel x86 (2006)",
+        "Intel x86 → Apple Silicon (ARM) (2020)"
+      ],
+      "headings": [
+        {
+          "id": "o-que-é-o-macos-a-épica-transição-do-classic-mac-os-para-o-mac-os-x",
+          "text": "O que é o macOS: A Épica Transição do Classic Mac OS para o Mac OS X"
+        },
+        {
+          "id": "as-limitações-do-classic-mac-os-multitarefa-cooperativa",
+          "text": "As Limitações do Classic Mac OS: Multitarefa Cooperativa"
+        },
+        {
+          "id": "o-que-é-multitarefa-cooperativa",
+          "text": "O que é Multitarefa Cooperativa?"
+        },
+        {
+          "id": "o-nascimento-do-mac-os-x-o-poder-do-unix-e-a-multitarefa-preemptiva",
+          "text": "O Nascimento do Mac OS X: O Poder do UNIX e a Multitarefa Preemptiva"
+        },
+        {
+          "id": "estabilidade-através-da-multitarefa-preemptiva",
+          "text": "Estabilidade através da Multitarefa Preemptiva"
+        },
+        {
+          "id": "o-legado-do-nextstep-a-ascensão-da-api-cocoa",
+          "text": "O Legado do NeXTSTEP: A Ascensão da API Cocoa"
+        },
+        {
+          "id": "a-magia-por-trás-da-evolução-da-arquitetura-rosetta",
+          "text": "A Magia por Trás da Evolução da Arquitetura: Rosetta"
+        },
+        {
+          "id": "rosetta-do-powerpc-para-o-intel",
+          "text": "Rosetta (Do PowerPC para o Intel)"
+        },
+        {
+          "id": "rosetta-2-do-intel-para-o-apple-silicon",
+          "text": "Rosetta 2 (Do Intel para o Apple Silicon)"
+        },
+        {
+          "id": "conclusão",
+          "text": "Conclusão"
+        }
+      ],
+      "paragraphs": [
+        "O macOS, sistema operacional de desktop da Apple, é amado por centenas de milhões de usuários em todo o mundo. No entanto, por trás da existência do elegante macOS atual, houve o drama de transição mais dramático e tecnicamente desafiador da história dos sistemas operacionais.",
+        "Neste artigo, vamos nos aprofundar no épico processo de transição do Classic Mac OS (até o Mac OS 9) para o Mac OS X (atual macOS) e nas tecnologias centrais que o sustentaram.",
+        "O Mac OS, lançado com o primeiro Macintosh em 1984, oferecia uma interface gráfica de usuário (GUI) revolucionária para a época. No entanto, com o passar do tempo, as limitações da sua arquitetura base começaram a ser expostas.",
+        "O maior fator foi a multitarefa cooperativa (Cooperative Multitasking) e a falta de proteção de memória.",
+        "Na multitarefa cooperativa, o próprio aplicativo gerencia o controle da CPU, em vez do sistema operacional. Enquanto o Aplicativo A está processando, o Aplicativo B deve esperar até que o A voluntariamente “devolva a CPU ao SO (Yield)”.",
+        "Se o Aplicativo A travasse ou entrasse em um loop infinito e não retornasse o controle, todo o sistema operacional congelaria. Os usuários eram forçados a realizar uma reinicialização forçada, e os dados não salvos eram perdidos. Para os usuários de Mac daquela época, o erro de sistema com o ícone de bomba era uma ocorrência diária.",
+        "No desenvolvimento de seu sistema operacional de próxima geração, a Apple tomou a decisão histórica de adquirir a NeXT, empresa fundada por Steve Jobs, após o fracasso de seu próprio projeto de desenvolvimento (Copland). O principal produto da NeXT, o “NeXTSTEP”, tornaria-se a base do Mac OS X.",
+        "O Mac OS X (mais tarde macOS) foi construído sobre um sistema operacional do tipo UNIX chamado Darwin (baseado no FreeBSD e no microkernel Mach). Com isso, os pontos fracos do Classic Mac OS foram fundamentalmente resolvidos.",
+        "Um dos maiores benefícios trazidos pelo OS X foi a multitarefa preemptiva (Preemptive Multitasking).",
+        "Na multitarefa preemptiva, o kernel do SO tem autoridade absoluta e aloca tempo de CPU para cada aplicativo em milissegundos. Mesmo se um aplicativo travar, o kernel pode forçar a tomada de controle da CPU e alocá-lo a outros aplicativos.",
+        "Além disso, com a introdução da proteção de memória (Memory Protection), cada aplicativo passou a ter um espaço de memória independente. Mesmo que um aplicativo travasse, ele não afetaria outros aplicativos ou o sistema operacional como um todo.",
+        "A transição para o Mac OS X também foi uma grande mudança de paradigma para os desenvolvedores. A Apple ofereceu duas opções principais de APIs para os desenvolvedores criarem aplicativos para o novo SO: Carbon e Cocoa.",
+        "A Cocoa herdou as estruturas (como Foundation e AppKit) da era NeXTSTEP como estavam. É um vestígio disso que muitas das classes usadas no desenvolvimento do macOS ainda hoje tenham o prefixo NS (abreviação de NeXTSTEP) (ex: NSString, NSArray). Por fim, a Apple descontinuou a Carbon e colocou a Cocoa (e, posteriormente, o SwiftUI) no centro do desenvolvimento do macOS.",
+        "O que é notável na história do macOS não é apenas a arquitetura de software, mas também o fato de que eles conseguiram realizar transições de arquitetura de hardware (CPU) várias vezes com sucesso.",
+        "O que tornou essas transições perfeitas possíveis foi o Rosetta, uma tecnologia de tradução binária dinâmica.",
+        "Em 2006, a Apple mudou os processadores do Mac do PowerPC para os da Intel. Naquela época, o “Rosetta” original era um emulador para executar aplicativos PowerPC existentes como estavam em Macs Intel. Como o SO traduzia as instruções em tempo real em segundo plano, os usuários podiam usar os aplicativos sem ter que se preocupar com a arquitetura para a qual foram construídos.",
+        "O “Rosetta 2”, que apareceu durante a transição para o Apple Silicon (chip M1) em 2020, era ainda mais avançado. Além da tradução em tempo real na execução (compilação JIT), ele conseguiu minimizar a degradação de desempenho realizando a compilação antecipada (compilação AOT) no momento da instalação (ou na primeira inicialização). Graças a isso, mesmo aplicativos pesados escritos para x86 operam em velocidades incríveis no processador ARM nativo.",
+        "A transição do Classic Mac OS para o Mac OS X não foi apenas uma simples atualização de software, mas sim um evento que poderia ser considerado o “transplante de coração” mais bem-sucedido da história da ciência da computação.",
+        "Evoluindo da multitarefa cooperativa e travamentos frequentes para a forte estabilidade e GUI elegante baseada em UNIX. Além disso, o ambiente de desenvolvimento herdou o legado do NeXTSTEP e as transições de arquitetura de CPU ao longo de várias ocasiões. O desempenho esmagador e a experiência do usuário que o macOS atual possui são construídos sobre esses desafios tecnológicos épicos e evolução."
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Desenvolvimento de software",
+          "path": "/pt/categories/software-development/"
+        },
+        {
+          "text": "Sistemas operacionais",
+          "path": "/pt/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "Steve Jobs",
+          "path": "/pt/p/biography-steve-jobs/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "orientada a objetos",
+          "path": "/pt/p/object-oriented-programming-oop-solid-principles/",
+          "host": "127.0.0.1"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "018-macos-links",
+    "language": "id",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "Carbon: Adaptasi dan porting API Classic Mac OS berbasis bahasa C untuk OS X. Ini adalah jembatan untuk membuat aplikasi yang ada (seperti Photoshop dan Microsoft Office) kompatibel dengan OS X dengan relatif mudah.",
+        "Cocoa: API berorientasi objek murni berbasis Objective-C, diwarisi dari NeXTSTEP.",
+        "Motorola 68k → PowerPC (tahun 1990-an)",
+        "PowerPC → Intel x86 (2006)",
+        "Intel x86 → Apple Silicon (ARM) (2020)"
+      ],
+      "headings": [
+        {
+          "id": "apa-itu-macos-transisi-epik-dari-classic-mac-os-ke-mac-os-x",
+          "text": "Apa itu macOS: Transisi Epik dari Classic Mac OS ke Mac OS X"
+        },
+        {
+          "id": "keterbatasan-classic-mac-os-multitasking-kooperatif",
+          "text": "Keterbatasan Classic Mac OS: Multitasking Kooperatif"
+        },
+        {
+          "id": "apa-itu-multitasking-kooperatif",
+          "text": "Apa itu Multitasking Kooperatif?"
+        },
+        {
+          "id": "lahirnya-mac-os-x-kekuatan-unix-dan-multitasking-preemptive",
+          "text": "Lahirnya Mac OS X: Kekuatan UNIX dan Multitasking Preemptive"
+        },
+        {
+          "id": "stabilitas-berkat-multitasking-preemptive",
+          "text": "Stabilitas berkat Multitasking Preemptive"
+        },
+        {
+          "id": "warisan-nextstep-kebangkitan-api-cocoa",
+          "text": "Warisan NeXTSTEP: Kebangkitan API Cocoa"
+        },
+        {
+          "id": "keajaiban-di-balik-evolusi-arsitektur-rosetta",
+          "text": "Keajaiban di Balik Evolusi Arsitektur: Rosetta"
+        },
+        {
+          "id": "rosetta-dari-powerpc-ke-intel",
+          "text": "Rosetta (Dari PowerPC ke Intel)"
+        },
+        {
+          "id": "rosetta-2-dari-intel-ke-apple-silicon",
+          "text": "Rosetta 2 (Dari Intel ke Apple Silicon)"
+        },
+        {
+          "id": "kesimpulan",
+          "text": "Kesimpulan"
+        }
+      ],
+      "paragraphs": [
+        "Sistem operasi desktop Apple, macOS, disukai oleh ratusan juta pengguna di seluruh dunia. Namun, di balik keberadaan macOS yang elegan saat ini, terdapat drama transisi yang paling dramatis dan menantang secara teknis dalam sejarah sistem operasi.",
+        "Pada artikel ini, kita akan menggali lebih dalam proses transisi epik dari Classic Mac OS (hingga Mac OS 9) ke Mac OS X (macOS saat ini), dan teknologi inti yang mendukungnya.",
+        "Mac OS, yang diperkenalkan bersama Macintosh pertama pada tahun 1984, menawarkan antarmuka pengguna grafis (GUI) yang revolusioner pada masanya. Namun, seiring berjalannya waktu, keterbatasan arsitektur dasarnya mulai terlihat.",
+        "Faktor terbesarnya adalah Multitasking Kooperatif (Cooperative Multitasking) dan kurangnya proteksi memori.",
+        "Dalam multitasking kooperatif, aplikasi itu sendiri, bukan OS, yang mengelola hak kontrol CPU. Sementara Aplikasi A sedang memproses, Aplikasi B harus menunggu hingga A secara sukarela ‘mengembalikan CPU ke OS (Yield)’.",
+        "Jika Aplikasi A crash atau jatuh ke dalam loop tak terbatas dan tidak mengembalikan kontrol, seluruh OS akan freeze (membeku). Pengguna terpaksa melakukan restart paksa, dan data yang belum disimpan akan hilang. Bagi pengguna Mac saat itu, error sistem dengan ikon bom adalah kejadian sehari-hari.",
+        "Dalam pengembangan OS generasi berikutnya, setelah kegagalan proyek internal (Copland), Apple membuat keputusan bersejarah untuk mengakuisisi NeXT, perusahaan yang didirikan oleh Steve Jobs. Produk andalan NeXT, ‘NeXTSTEP’, menjadi fondasi Mac OS X.",
+        "Mac OS X (kemudian menjadi macOS) secara internal dilengkapi dengan sistem operasi berbasis UNIX yang disebut Darwin (berbasis FreeBSD dan mikrokernel Mach). Hal ini secara fundamental menyelesaikan kelemahan Classic Mac OS.",
+        "Salah satu manfaat terbesar yang dibawa oleh OS X adalah Multitasking Preemptive (Preemptive Multitasking).",
+        "Dalam multitasking preemptive, kernel OS memiliki otoritas mutlak dan mengalokasikan waktu CPU ke setiap aplikasi dalam hitungan milidetik. Bahkan jika sebuah aplikasi membeku, kernel dapat secara paksa mengambil kontrol CPU dan mengalokasikannya ke aplikasi lain.",
+        "Selain itu, dengan pengenalan Proteksi Memori (Memory Protection), setiap aplikasi kini memiliki ruang memorinya sendiri yang independen. Jika satu aplikasi crash, itu tidak akan memengaruhi aplikasi lain atau keseluruhan OS.",
+        "Transisi ke Mac OS X juga merupakan pergeseran paradigma yang besar bagi para pengembang. Apple menyediakan dua pilihan utama API bagi pengembang untuk membangun aplikasi pada OS baru: Carbon dan Cocoa.",
+        "Cocoa mewarisi framework dari era NeXTSTEP (Foundation dan AppKit) apa adanya. Banyak kelas yang digunakan dalam pengembangan macOS saat ini masih memiliki awalan NS (singkatan dari NeXTSTEP), yang merupakan peninggalan dari masa ini (contoh: NSString, NSArray). Pada akhirnya, Apple menghentikan dukungan (deprecated) Carbon dan menjadikan Cocoa (dan kemudian SwiftUI) sebagai pusat pengembangan macOS.",
+        "Hal yang patut dicatat dalam sejarah macOS adalah bahwa Apple telah berhasil melakukan transisi tidak hanya pada arsitektur perangkat lunak, tetapi juga pada arsitektur perangkat keras (CPU) berkali-kali.",
+        "Teknologi terjemahan biner dinamis yang memungkinkan transisi mulus ini adalah Rosetta.",
+        "Pada tahun 2006, Apple mengalihkan prosesor Mac dari PowerPC ke Intel. Pada saat ini, emulator yang memungkinkan aplikasi PowerPC yang ada berjalan sebagaimana adanya di Intel Mac adalah ‘Rosetta’ generasi pertama. Karena OS menerjemahkan instruksi secara real-time di latar belakang, pengguna dapat menggunakan aplikasi tanpa menyadari arsitektur apa yang dituju oleh aplikasi tersebut.",
+        "‘Rosetta 2’, yang diperkenalkan pada saat transisi ke Apple Silicon (chip M1) pada tahun 2020, telah berevolusi lebih jauh. Selain terjemahan real-time saat eksekusi (kompilasi JIT), Rosetta 2 berhasil menekan penurunan performa hingga batas maksimal dengan melakukan praprakompilasi (kompilasi AOT) pada saat instalasi (atau saat pertama kali dijalankan). Akibatnya, bahkan aplikasi berat yang ditulis untuk x86 dapat berjalan dengan kecepatan luar biasa pada prosesor ARM native.",
+        "Transisi dari Classic Mac OS ke Mac OS X bukan sekadar pembaruan perangkat lunak, tetapi bisa dikatakan sebagai ’transplantasi jantung’ paling sukses dalam sejarah ilmu komputer.",
+        "Evolusi dari multitasking kooperatif dan crash yang sering terjadi, menuju stabilitas UNIX yang kuat dan GUI yang elegan. Kemudian, lingkungan pengembangan yang mewarisi warisan NeXTSTEP, dan drama transisi arsitektur CPU yang terjadi berkali-kali. Performa luar biasa dan pengalaman pengguna yang dimiliki macOS saat ini dibangun di atas tantangan dan evolusi teknis yang epik ini."
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Pengembangan Perangkat Lunak",
+          "path": "/id/categories/software-development/"
+        },
+        {
+          "text": "Sistem Operasi",
+          "path": "/id/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "Carbon: Adaptasi dan porting API Classic Mac OS berbasis bahasa C untuk OS X. Ini adalah jembatan untuk membuat aplikasi yang ada (seperti Photoshop dan Microsoft Office) kompatibel dengan OS X dengan relatif mudah.",
+        "Cocoa: API berorientasi objek murni berbasis Objective-C, diwarisi dari NeXTSTEP.",
+        "Motorola 68k → PowerPC (tahun 1990-an)",
+        "PowerPC → Intel x86 (2006)",
+        "Intel x86 → Apple Silicon (ARM) (2020)"
+      ],
+      "headings": [
+        {
+          "id": "apa-itu-macos-transisi-epik-dari-classic-mac-os-ke-mac-os-x",
+          "text": "Apa itu macOS: Transisi Epik dari Classic Mac OS ke Mac OS X"
+        },
+        {
+          "id": "keterbatasan-classic-mac-os-multitasking-kooperatif",
+          "text": "Keterbatasan Classic Mac OS: Multitasking Kooperatif"
+        },
+        {
+          "id": "apa-itu-multitasking-kooperatif",
+          "text": "Apa itu Multitasking Kooperatif?"
+        },
+        {
+          "id": "lahirnya-mac-os-x-kekuatan-unix-dan-multitasking-preemptive",
+          "text": "Lahirnya Mac OS X: Kekuatan UNIX dan Multitasking Preemptive"
+        },
+        {
+          "id": "stabilitas-berkat-multitasking-preemptive",
+          "text": "Stabilitas berkat Multitasking Preemptive"
+        },
+        {
+          "id": "warisan-nextstep-kebangkitan-api-cocoa",
+          "text": "Warisan NeXTSTEP: Kebangkitan API Cocoa"
+        },
+        {
+          "id": "keajaiban-di-balik-evolusi-arsitektur-rosetta",
+          "text": "Keajaiban di Balik Evolusi Arsitektur: Rosetta"
+        },
+        {
+          "id": "rosetta-dari-powerpc-ke-intel",
+          "text": "Rosetta (Dari PowerPC ke Intel)"
+        },
+        {
+          "id": "rosetta-2-dari-intel-ke-apple-silicon",
+          "text": "Rosetta 2 (Dari Intel ke Apple Silicon)"
+        },
+        {
+          "id": "kesimpulan",
+          "text": "Kesimpulan"
+        }
+      ],
+      "paragraphs": [
+        "Sistem operasi desktop Apple, macOS, disukai oleh ratusan juta pengguna di seluruh dunia. Namun, di balik keberadaan macOS yang elegan saat ini, terdapat drama transisi yang paling dramatis dan menantang secara teknis dalam sejarah sistem operasi.",
+        "Pada artikel ini, kita akan menggali lebih dalam proses transisi epik dari Classic Mac OS (hingga Mac OS 9) ke Mac OS X (macOS saat ini), dan teknologi inti yang mendukungnya.",
+        "Mac OS, yang diperkenalkan bersama Macintosh pertama pada tahun 1984, menawarkan antarmuka pengguna grafis (GUI) yang revolusioner pada masanya. Namun, seiring berjalannya waktu, keterbatasan arsitektur dasarnya mulai terlihat.",
+        "Faktor terbesarnya adalah Multitasking Kooperatif (Cooperative Multitasking) dan kurangnya proteksi memori.",
+        "Dalam multitasking kooperatif, aplikasi itu sendiri, bukan OS, yang mengelola hak kontrol CPU. Sementara Aplikasi A sedang memproses, Aplikasi B harus menunggu hingga A secara sukarela ‘mengembalikan CPU ke OS (Yield)’.",
+        "Jika Aplikasi A crash atau jatuh ke dalam loop tak terbatas dan tidak mengembalikan kontrol, seluruh OS akan freeze (membeku). Pengguna terpaksa melakukan restart paksa, dan data yang belum disimpan akan hilang. Bagi pengguna Mac saat itu, error sistem dengan ikon bom adalah kejadian sehari-hari.",
+        "Dalam pengembangan OS generasi berikutnya, setelah kegagalan proyek internal (Copland), Apple membuat keputusan bersejarah untuk mengakuisisi NeXT, perusahaan yang didirikan oleh Steve Jobs. Produk andalan NeXT, ‘NeXTSTEP’, menjadi fondasi Mac OS X.",
+        "Mac OS X (kemudian menjadi macOS) secara internal dilengkapi dengan sistem operasi berbasis UNIX yang disebut Darwin (berbasis FreeBSD dan mikrokernel Mach). Hal ini secara fundamental menyelesaikan kelemahan Classic Mac OS.",
+        "Salah satu manfaat terbesar yang dibawa oleh OS X adalah Multitasking Preemptive (Preemptive Multitasking).",
+        "Dalam multitasking preemptive, kernel OS memiliki otoritas mutlak dan mengalokasikan waktu CPU ke setiap aplikasi dalam hitungan milidetik. Bahkan jika sebuah aplikasi membeku, kernel dapat secara paksa mengambil kontrol CPU dan mengalokasikannya ke aplikasi lain.",
+        "Selain itu, dengan pengenalan Proteksi Memori (Memory Protection), setiap aplikasi kini memiliki ruang memorinya sendiri yang independen. Jika satu aplikasi crash, itu tidak akan memengaruhi aplikasi lain atau keseluruhan OS.",
+        "Transisi ke Mac OS X juga merupakan pergeseran paradigma yang besar bagi para pengembang. Apple menyediakan dua pilihan utama API bagi pengembang untuk membangun aplikasi pada OS baru: Carbon dan Cocoa.",
+        "Cocoa mewarisi framework dari era NeXTSTEP (Foundation dan AppKit) apa adanya. Banyak kelas yang digunakan dalam pengembangan macOS saat ini masih memiliki awalan NS (singkatan dari NeXTSTEP), yang merupakan peninggalan dari masa ini (contoh: NSString, NSArray). Pada akhirnya, Apple menghentikan dukungan (deprecated) Carbon dan menjadikan Cocoa (dan kemudian SwiftUI) sebagai pusat pengembangan macOS.",
+        "Hal yang patut dicatat dalam sejarah macOS adalah bahwa Apple telah berhasil melakukan transisi tidak hanya pada arsitektur perangkat lunak, tetapi juga pada arsitektur perangkat keras (CPU) berkali-kali.",
+        "Teknologi terjemahan biner dinamis yang memungkinkan transisi mulus ini adalah Rosetta.",
+        "Pada tahun 2006, Apple mengalihkan prosesor Mac dari PowerPC ke Intel. Pada saat ini, emulator yang memungkinkan aplikasi PowerPC yang ada berjalan sebagaimana adanya di Intel Mac adalah ‘Rosetta’ generasi pertama. Karena OS menerjemahkan instruksi secara real-time di latar belakang, pengguna dapat menggunakan aplikasi tanpa menyadari arsitektur apa yang dituju oleh aplikasi tersebut.",
+        "‘Rosetta 2’, yang diperkenalkan pada saat transisi ke Apple Silicon (chip M1) pada tahun 2020, telah berevolusi lebih jauh. Selain terjemahan real-time saat eksekusi (kompilasi JIT), Rosetta 2 berhasil menekan penurunan performa hingga batas maksimal dengan melakukan praprakompilasi (kompilasi AOT) pada saat instalasi (atau saat pertama kali dijalankan). Akibatnya, bahkan aplikasi berat yang ditulis untuk x86 dapat berjalan dengan kecepatan luar biasa pada prosesor ARM native.",
+        "Transisi dari Classic Mac OS ke Mac OS X bukan sekadar pembaruan perangkat lunak, tetapi bisa dikatakan sebagai ’transplantasi jantung’ paling sukses dalam sejarah ilmu komputer.",
+        "Evolusi dari multitasking kooperatif dan crash yang sering terjadi, menuju stabilitas UNIX yang kuat dan GUI yang elegan. Kemudian, lingkungan pengembangan yang mewarisi warisan NeXTSTEP, dan drama transisi arsitektur CPU yang terjadi berkali-kali. Performa luar biasa dan pengalaman pengguna yang dimiliki macOS saat ini dibangun di atas tantangan dan evolusi teknis yang epik ini."
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Pengembangan Perangkat Lunak",
+          "path": "/id/categories/software-development/"
+        },
+        {
+          "text": "Sistem Operasi",
+          "path": "/id/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "Steve Jobs",
+          "path": "/id/p/biography-steve-jobs/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "berorientasi objek",
+          "path": "/id/p/object-oriented-programming-oop-solid-principles/",
+          "host": "127.0.0.1"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "018-macos-links",
+    "language": "ko",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "Carbon: Classic Mac OS의 API를 C 언어 기반으로 OS X용으로 이식 및 적응시킨 것. 기존 애플리케이션(Photoshop이나 Microsoft Office 등)을 비교적 쉽게 OS X에 대응시키기 위한 가교 역할을 했습니다.",
+        "Cocoa: NeXTSTEP에서 계승된 Objective-C 기반의 순수 객체 지향 API.",
+        "Motorola 68k → PowerPC (1990년대)",
+        "PowerPC → Intel x86 (2006년)",
+        "Intel x86 → Apple Silicon (ARM) (2020년)"
+      ],
+      "headings": [
+        {
+          "id": "macos란-classic-mac-os에서-mac-os-x로의-장대한-여정",
+          "text": "macOS란: Classic Mac OS에서 Mac OS X로의 장대한 여정"
+        },
+        {
+          "id": "classic-mac-os의-한계-협동형-멀티태스킹",
+          "text": "Classic Mac OS의 한계: 협동형 멀티태스킹"
+        },
+        {
+          "id": "협동형-멀티태스킹이란-무엇인가",
+          "text": "협동형 멀티태스킹이란 무엇인가?"
+        },
+        {
+          "id": "mac-os-x의-탄생-unix의-파워와-선점형-멀티태스킹",
+          "text": "Mac OS X의 탄생: UNIX의 파워와 선점형 멀티태스킹"
+        },
+        {
+          "id": "선점형-멀티태스킹을-통한-안정성",
+          "text": "선점형 멀티태스킹을 통한 안정성"
+        },
+        {
+          "id": "nextstep의-유산-cocoa-api의-대두",
+          "text": "NeXTSTEP의 유산: Cocoa API의 대두"
+        },
+        {
+          "id": "아키텍처의-변천을-뒷받침한-마법-rosetta",
+          "text": "아키텍처의 변천을 뒷받침한 마법: Rosetta"
+        },
+        {
+          "id": "rosetta-powerpc에서-intel로",
+          "text": "Rosetta (PowerPC에서 Intel로)"
+        },
+        {
+          "id": "rosetta-2-intel에서-apple-silicon으로",
+          "text": "Rosetta 2 (Intel에서 Apple Silicon으로)"
+        },
+        {
+          "id": "맺음말",
+          "text": "맺음말"
+        }
+      ],
+      "paragraphs": [
+        "Apple의 데스크탑 운영 체제인 macOS는 전 세계 수억 명의 사용자들에게 사랑받고 있습니다. 하지만 현재의 세련된 macOS가 존재하기까지, 운영 체제 역사상 가장 극적이고 기술적으로 어려웠던 전환의 과정이 있었습니다.",
+        "이 글에서는 Classic Mac OS(Mac OS 9까지)에서 Mac OS X(현재의 macOS)로의 장대한 전환 과정과 이를 뒷받침한 핵심 기술에 대해 깊이 파헤쳐 봅니다.",
+        "1984년 초대 Macintosh와 함께 등장한 Mac OS는 당시로서는 혁신적인 그래픽 사용자 인터페이스(GUI)를 제공했습니다. 하지만 시대가 흐르면서 그 기반 아키텍처의 한계가 드러나기 시작했습니다.",
+        "그 가장 큰 요인은 **협동형 멀티태스킹(Cooperative Multitasking)**과 메모리 보호의 부재였습니다.",
+        "협동형 멀티태스킹에서는 OS가 아닌 애플리케이션 자신이 CPU 제어권을 관리합니다. 애플리케이션 A가 처리를 수행하는 동안, 애플리케이션 B는 A가 자발적으로 “CPU를 OS에 반환(Yield)“할 때까지 기다려야 합니다.",
+        "만약 애플리케이션 A가 크래시되거나 무한 루프에 빠져 제어권을 반환하지 않으면, OS 전체가 프리즈(멈춤) 상태가 됩니다. 사용자는 강제 재부팅을 해야만 했고, 저장하지 않은 데이터는 손실되었습니다. 당시 Mac 사용자들에게 폭탄 모양의 시스템 에러는 일상다반사였습니다.",
+        "Apple은 차세대 OS 개발에 있어, 자체 개발 프로젝트(Copland)의 실패를 겪은 후 스티브 잡스가 설립한 NeXT사를 인수한다는 역사적인 결단을 내렸습니다. NeXT의 주력 제품이었던 ‘NeXTSTEP’이야말로 Mac OS X의 기반이 됩니다.",
+        "Mac OS X(이후 macOS)는 내부에 Darwin이라 불리는 UNIX 계열 운영 체제(FreeBSD 및 Mach 마이크로커널 기반)를 탑재하고 있었습니다. 이로써 Classic Mac OS의 약점은 근본적으로 해결되었습니다.",
+        "OS X가 가져다준 가장 큰 혜택 중 하나는 **선점형 멀티태스킹(Preemptive Multitasking)**입니다.",
+        "선점형 멀티태스킹에서는 OS의 커널이 절대적인 권한을 가지며, 각 애플리케이션에 밀리초 단위로 CPU 시간을 할당합니다. 애플리케이션이 멈추더라도 커널은 강제로 CPU 제어권을 빼앗아 다른 애플리케이션에 할당할 수 있습니다.",
+        "더욱이 **메모리 보호(Memory Protection)**의 도입으로 각 애플리케이션은 서로 독립된 메모리 공간을 갖게 되었습니다. 하나의 앱이 크래시되더라도 다른 앱이나 OS 전체에 영향을 미치지 않습니다.",
+        "Mac OS X로의 전환은 개발자들에게도 큰 패러다임 전환이었습니다. Apple은 개발자가 새로운 OS용 애플리케이션을 구축하기 위한 API로 크게 두 가지 선택지를 제공했습니다. 그것이 Carbon과 Cocoa입니다.",
+        "Cocoa는 NeXTSTEP 시절의 프레임워크(Foundation이나 AppKit)를 그대로 물려받았습니다. 현재에도 macOS 개발에 사용되는 클래스 다수가 NS(NeXTSTEP의 약자)라는 접두사를 가지고 있는 것은 이 흔적입니다(예: NSString, NSArray). 최종적으로 Apple은 Carbon을 사용 중단 처리하고, Cocoa(그리고 이후의 SwiftUI)를 macOS 개발의 중심으로 자리 잡게 합니다.",
+        "macOS의 역사에서 특기할 만한 점은 소프트웨어 아키텍처뿐만 아니라, 하드웨어(CPU) 아키텍처의 전환을 여러 번 성공시켰다는 것입니다.",
+        "이러한 전환을 매끄럽게 실현한 것이 동적 바이너리 변환 기술인 **Rosetta(로제타)**입니다.",
+        "2006년, Apple은 Mac의 프로세서를 PowerPC에서 Intel 제품으로 전환했습니다. 이때 기존의 PowerPC용 앱을 Intel Mac에서 그대로 실행하기 위한 에뮬레이터가 1세대 ‘Rosetta’입니다. OS가 백그라운드에서 명령어를 실시간으로 번역하기 때문에, 사용자는 앱이 어느 아키텍처용인지 의식하지 않고 사용할 수 있었습니다.",
+        "2020년 Apple Silicon(M1 칩)으로 전환할 때 등장한 ‘Rosetta 2’는 더욱 진화해 있었습니다. 실행 시의 실시간 번역(JIT 컴파일)에 더해, 설치 시(또는 최초 실행 시)에 사전 컴파일(AOT 컴파일)을 수행함으로써 성능 저하를 극한으로 억제하는 데 성공했습니다. 이로 인해 x86용으로 작성된 무거운 애플리케이션이라도 네이티브 ARM 프로세서 위에서 경이적인 속도로 동작합니다.",
+        "Classic Mac OS에서 Mac OS X로의 전환은 단순한 소프트웨어 업데이트가 아니라, 컴퓨터 과학 역사상 가장 성공적인 ‘심장 이식’이라고 할 수 있는 사건입니다.",
+        "협동형 멀티태스킹과 빈번한 크래시에서, UNIX 기반의 강력한 안정성과 세련된 GUI로의 진화. 그리고 NeXTSTEP의 유산을 이어받은 개발 환경과 여러 번에 걸친 CPU 아키텍처의 전환 과정. 현재의 macOS가 가진 압도적인 성능과 사용자 경험은 이러한 장대한 기술적 도전과 진화 위에 성립되어 있는 것입니다."
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "소프트웨어 개발",
+          "path": "/ko/categories/software-development/"
+        },
+        {
+          "text": "운영체제",
+          "path": "/ko/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "Carbon: Classic Mac OS의 API를 C 언어 기반으로 OS X용으로 이식 및 적응시킨 것. 기존 애플리케이션(Photoshop이나 Microsoft Office 등)을 비교적 쉽게 OS X에 대응시키기 위한 가교 역할을 했습니다.",
+        "Cocoa: NeXTSTEP에서 계승된 Objective-C 기반의 순수 객체 지향 API.",
+        "Motorola 68k → PowerPC (1990년대)",
+        "PowerPC → Intel x86 (2006년)",
+        "Intel x86 → Apple Silicon (ARM) (2020년)"
+      ],
+      "headings": [
+        {
+          "id": "macos란-classic-mac-os에서-mac-os-x로의-장대한-여정",
+          "text": "macOS란: Classic Mac OS에서 Mac OS X로의 장대한 여정"
+        },
+        {
+          "id": "classic-mac-os의-한계-협동형-멀티태스킹",
+          "text": "Classic Mac OS의 한계: 협동형 멀티태스킹"
+        },
+        {
+          "id": "협동형-멀티태스킹이란-무엇인가",
+          "text": "협동형 멀티태스킹이란 무엇인가?"
+        },
+        {
+          "id": "mac-os-x의-탄생-unix의-파워와-선점형-멀티태스킹",
+          "text": "Mac OS X의 탄생: UNIX의 파워와 선점형 멀티태스킹"
+        },
+        {
+          "id": "선점형-멀티태스킹을-통한-안정성",
+          "text": "선점형 멀티태스킹을 통한 안정성"
+        },
+        {
+          "id": "nextstep의-유산-cocoa-api의-대두",
+          "text": "NeXTSTEP의 유산: Cocoa API의 대두"
+        },
+        {
+          "id": "아키텍처의-변천을-뒷받침한-마법-rosetta",
+          "text": "아키텍처의 변천을 뒷받침한 마법: Rosetta"
+        },
+        {
+          "id": "rosetta-powerpc에서-intel로",
+          "text": "Rosetta (PowerPC에서 Intel로)"
+        },
+        {
+          "id": "rosetta-2-intel에서-apple-silicon으로",
+          "text": "Rosetta 2 (Intel에서 Apple Silicon으로)"
+        },
+        {
+          "id": "맺음말",
+          "text": "맺음말"
+        }
+      ],
+      "paragraphs": [
+        "Apple의 데스크탑 운영 체제인 macOS는 전 세계 수억 명의 사용자들에게 사랑받고 있습니다. 하지만 현재의 세련된 macOS가 존재하기까지, 운영 체제 역사상 가장 극적이고 기술적으로 어려웠던 전환의 과정이 있었습니다.",
+        "이 글에서는 Classic Mac OS(Mac OS 9까지)에서 Mac OS X(현재의 macOS)로의 장대한 전환 과정과 이를 뒷받침한 핵심 기술에 대해 깊이 파헤쳐 봅니다.",
+        "1984년 초대 Macintosh와 함께 등장한 Mac OS는 당시로서는 혁신적인 그래픽 사용자 인터페이스(GUI)를 제공했습니다. 하지만 시대가 흐르면서 그 기반 아키텍처의 한계가 드러나기 시작했습니다.",
+        "그 가장 큰 요인은 **협동형 멀티태스킹(Cooperative Multitasking)**과 메모리 보호의 부재였습니다.",
+        "협동형 멀티태스킹에서는 OS가 아닌 애플리케이션 자신이 CPU 제어권을 관리합니다. 애플리케이션 A가 처리를 수행하는 동안, 애플리케이션 B는 A가 자발적으로 “CPU를 OS에 반환(Yield)“할 때까지 기다려야 합니다.",
+        "만약 애플리케이션 A가 크래시되거나 무한 루프에 빠져 제어권을 반환하지 않으면, OS 전체가 프리즈(멈춤) 상태가 됩니다. 사용자는 강제 재부팅을 해야만 했고, 저장하지 않은 데이터는 손실되었습니다. 당시 Mac 사용자들에게 폭탄 모양의 시스템 에러는 일상다반사였습니다.",
+        "Apple은 차세대 OS 개발에 있어, 자체 개발 프로젝트(Copland)의 실패를 겪은 후 스티브 잡스가 설립한 NeXT사를 인수한다는 역사적인 결단을 내렸습니다. NeXT의 주력 제품이었던 ‘NeXTSTEP’이야말로 Mac OS X의 기반이 됩니다.",
+        "Mac OS X(이후 macOS)는 내부에 Darwin이라 불리는 UNIX 계열 운영 체제(FreeBSD 및 Mach 마이크로커널 기반)를 탑재하고 있었습니다. 이로써 Classic Mac OS의 약점은 근본적으로 해결되었습니다.",
+        "OS X가 가져다준 가장 큰 혜택 중 하나는 **선점형 멀티태스킹(Preemptive Multitasking)**입니다.",
+        "선점형 멀티태스킹에서는 OS의 커널이 절대적인 권한을 가지며, 각 애플리케이션에 밀리초 단위로 CPU 시간을 할당합니다. 애플리케이션이 멈추더라도 커널은 강제로 CPU 제어권을 빼앗아 다른 애플리케이션에 할당할 수 있습니다.",
+        "더욱이 **메모리 보호(Memory Protection)**의 도입으로 각 애플리케이션은 서로 독립된 메모리 공간을 갖게 되었습니다. 하나의 앱이 크래시되더라도 다른 앱이나 OS 전체에 영향을 미치지 않습니다.",
+        "Mac OS X로의 전환은 개발자들에게도 큰 패러다임 전환이었습니다. Apple은 개발자가 새로운 OS용 애플리케이션을 구축하기 위한 API로 크게 두 가지 선택지를 제공했습니다. 그것이 Carbon과 Cocoa입니다.",
+        "Cocoa는 NeXTSTEP 시절의 프레임워크(Foundation이나 AppKit)를 그대로 물려받았습니다. 현재에도 macOS 개발에 사용되는 클래스 다수가 NS(NeXTSTEP의 약자)라는 접두사를 가지고 있는 것은 이 흔적입니다(예: NSString, NSArray). 최종적으로 Apple은 Carbon을 사용 중단 처리하고, Cocoa(그리고 이후의 SwiftUI)를 macOS 개발의 중심으로 자리 잡게 합니다.",
+        "macOS의 역사에서 특기할 만한 점은 소프트웨어 아키텍처뿐만 아니라, 하드웨어(CPU) 아키텍처의 전환을 여러 번 성공시켰다는 것입니다.",
+        "이러한 전환을 매끄럽게 실현한 것이 동적 바이너리 변환 기술인 **Rosetta(로제타)**입니다.",
+        "2006년, Apple은 Mac의 프로세서를 PowerPC에서 Intel 제품으로 전환했습니다. 이때 기존의 PowerPC용 앱을 Intel Mac에서 그대로 실행하기 위한 에뮬레이터가 1세대 ‘Rosetta’입니다. OS가 백그라운드에서 명령어를 실시간으로 번역하기 때문에, 사용자는 앱이 어느 아키텍처용인지 의식하지 않고 사용할 수 있었습니다.",
+        "2020년 Apple Silicon(M1 칩)으로 전환할 때 등장한 ‘Rosetta 2’는 더욱 진화해 있었습니다. 실행 시의 실시간 번역(JIT 컴파일)에 더해, 설치 시(또는 최초 실행 시)에 사전 컴파일(AOT 컴파일)을 수행함으로써 성능 저하를 극한으로 억제하는 데 성공했습니다. 이로 인해 x86용으로 작성된 무거운 애플리케이션이라도 네이티브 ARM 프로세서 위에서 경이적인 속도로 동작합니다.",
+        "Classic Mac OS에서 Mac OS X로의 전환은 단순한 소프트웨어 업데이트가 아니라, 컴퓨터 과학 역사상 가장 성공적인 ‘심장 이식’이라고 할 수 있는 사건입니다.",
+        "협동형 멀티태스킹과 빈번한 크래시에서, UNIX 기반의 강력한 안정성과 세련된 GUI로의 진화. 그리고 NeXTSTEP의 유산을 이어받은 개발 환경과 여러 번에 걸친 CPU 아키텍처의 전환 과정. 현재의 macOS가 가진 압도적인 성능과 사용자 경험은 이러한 장대한 기술적 도전과 진화 위에 성립되어 있는 것입니다."
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "소프트웨어 개발",
+          "path": "/ko/categories/software-development/"
+        },
+        {
+          "text": "운영체제",
+          "path": "/ko/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "스티브 잡스",
+          "path": "/ko/p/biography-steve-jobs/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "객체 지향",
+          "path": "/ko/p/object-oriented-programming-oop-solid-principles/",
+          "host": "127.0.0.1"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "018-macos-links",
+    "language": "zh-cn",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "Carbon: 将 Classic Mac OS 的 API 基于 C 语言移植并适配到 OS X 的产物。它主要是为了让现有的应用程序（如 Photoshop 或 Microsoft Office 等）能相对容易地兼容 OS X 而搭建的桥梁。",
+        "Cocoa: 继承自 NeXTSTEP 的基于 Objective-C 的纯面向对象 API。",
+        "Motorola 68k → PowerPC (20世纪90年代)",
+        "PowerPC → Intel x86 (2006年)",
+        "Intel x86 → Apple Silicon (ARM) (2020年)"
+      ],
+      "headings": [
+        {
+          "id": "什么是-macos从-classic-mac-os-到-mac-os-x-的宏大过渡",
+          "text": "什么是 macOS：从 Classic Mac OS 到 Mac OS X 的宏大过渡"
+        },
+        {
+          "id": "classic-mac-os-的局限性协作式多任务处理",
+          "text": "Classic Mac OS 的局限性：协作式多任务处理"
+        },
+        {
+          "id": "什么是协作式多任务处理",
+          "text": "什么是协作式多任务处理？"
+        },
+        {
+          "id": "mac-os-x-的诞生unix-的力量与抢占式多任务处理",
+          "text": "Mac OS X 的诞生：UNIX 的力量与抢占式多任务处理"
+        },
+        {
+          "id": "抢占式多任务处理带来的稳定性",
+          "text": "抢占式多任务处理带来的稳定性"
+        },
+        {
+          "id": "nextstep-的遗产cocoa-api-的崛起",
+          "text": "NeXTSTEP 的遗产：Cocoa API 的崛起"
+        },
+        {
+          "id": "支撑架构变迁的魔法rosetta",
+          "text": "支撑架构变迁的魔法：Rosetta"
+        },
+        {
+          "id": "rosetta-从-powerpc-到-intel",
+          "text": "Rosetta (从 PowerPC 到 Intel)"
+        },
+        {
+          "id": "rosetta-2-从-intel-到-apple-silicon",
+          "text": "Rosetta 2 (从 Intel 到 Apple Silicon)"
+        },
+        {
+          "id": "结语",
+          "text": "结语"
+        }
+      ],
+      "paragraphs": [
+        "作为 Apple 的桌面操作系统，macOS 受到全球数亿用户的喜爱。然而，在目前精致的 macOS 背后，有着操作系统历史上最具戏剧性且技术上最为困难的过渡期。",
+        "在本文中，我们将深入探讨从 Classic Mac OS（至 Mac OS 9）到 Mac OS X（现在的 macOS）的宏大过渡过程，以及支撑它的核心技术。",
+        "1984 年与初代 Macintosh 一同登场的 Mac OS，在当时提供了革命性的图形用户界面（GUI）。然而，随着时代的推移，其底层架构的局限性开始暴露无遗。",
+        "其最大的原因就是协作式多任务处理（Cooperative Multitasking）以及缺乏内存保护。",
+        "在协作式多任务处理中，由应用程序自身而不是 OS 来管理 CPU 的控制权。当应用程序 A 正在处理时，应用程序 B 必须等待，直到 A 自发地将“CPU 归还给 OS（Yield）”。",
+        "如果应用程序 A 崩溃，或者陷入无限循环而不返还控制权，整个 OS 都会冻结。用户被迫强制重启，未保存的数据也会丢失。对于当时的 Mac 用户来说，带有炸弹图标的系统错误可谓家常便饭。",
+        "在下一代 OS 的开发中，Apple 经历了自主开发项目（Copland）的失败，随后做出了历史性的决定——收购史蒂夫·乔布斯创立的 NeXT 公司。NeXT 的核心产品“NeXTSTEP”正是后来 Mac OS X 的基础。",
+        "Mac OS X（后来的 macOS）内部搭载了一个名为 Darwin 的类 UNIX 操作系统（基于 FreeBSD 和 Mach 微内核）。这从根本上解决了 Classic Mac OS 的弱点。",
+        "OS X 带来的最大恩惠之一，就是抢占式多任务处理（Preemptive Multitasking）。",
+        "在抢占式多任务处理中，OS 内核拥有绝对的权限，以毫秒为单位向各个应用程序分配 CPU 时间。即使应用程序冻结，内核也能强行剥夺 CPU 的控制权，并将其分配给其他应用程序。",
+        "此外，由于引入了内存保护（Memory Protection），每个应用程序都拥有彼此独立的内存空间。即使一个应用崩溃，也不会牵连其他应用或整个 OS。",
+        "向 Mac OS X 的过渡，对开发者而言也是一次巨大的范式转变。Apple 为开发者提供了两个主要的 API 选择，用于构建面向新 OS 的应用程序。它们就是 Carbon 和 Cocoa。",
+        "Cocoa 完整地保留了 NeXTSTEP 时代的框架（Foundation 和 AppKit）。至今，在 macOS 开发中使用的许多类都带有 NS（NeXTSTEP 的缩写）前缀，这就是当时的遗迹（例如：NSString, NSArray）。最终，Apple 弃用了 Carbon，将 Cocoa（以及后来的 SwiftUI）置于 macOS 开发的核心地位。",
+        "在 macOS 的历史中值得特书一笔的是，它不仅成功实现了软件架构的过渡，还多次成功地进行了硬件（CPU）架构的迁移。",
+        "而无缝实现这些过渡的，正是动态二进制翻译技术——Rosetta。",
+        "2006 年，Apple 将 Mac 的处理器从 PowerPC 迁移到了 Intel。当时，为了让现有的面向 PowerPC 的应用程序直接在 Intel Mac 上运行，初代“Rosetta”模拟器应运而生。因为 OS 在后台实时翻译指令，用户可以在不意识到应用是面向哪种架构的情况下使用它们。",
+        "2020 年，在向 Apple Silicon（M1 芯片）迁移时登场的“Rosetta 2”则进化得更为强大。除了运行时的实时翻译（JIT 编译）外，它还在安装时（或首次启动时）进行提前编译（AOT 编译），成功地将性能下降抑制到了极限。因此，即使是面向 x86 编写的繁重应用程序，也能在原生的 ARM 处理器上以惊人的速度运行。",
+        "从 Classic Mac OS 到 Mac OS X 的过渡，不仅仅是一次单纯的软件更新，更可以说是计算机科学史上最成功的“心脏移植”事件。",
+        "从协作式多任务处理和频繁崩溃，进化为基于 UNIX 的坚如磐石的稳定性和精致的 GUI。再加上继承了 NeXTSTEP 遗产的开发环境，以及多次的 CPU 架构变迁大戏。现在的 macOS 所拥有的压倒性性能和用户体验，正是建立在这样宏大的技术挑战与进化之上的。"
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "软件开发",
+          "path": "/zh-cn/categories/software-development/"
+        },
+        {
+          "text": "操作系统",
+          "path": "/zh-cn/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "Carbon: 将 Classic Mac OS 的 API 基于 C 语言移植并适配到 OS X 的产物。它主要是为了让现有的应用程序（如 Photoshop 或 Microsoft Office 等）能相对容易地兼容 OS X 而搭建的桥梁。",
+        "Cocoa: 继承自 NeXTSTEP 的基于 Objective-C 的纯面向对象 API。",
+        "Motorola 68k → PowerPC (20世纪90年代)",
+        "PowerPC → Intel x86 (2006年)",
+        "Intel x86 → Apple Silicon (ARM) (2020年)"
+      ],
+      "headings": [
+        {
+          "id": "什么是-macos从-classic-mac-os-到-mac-os-x-的宏大过渡",
+          "text": "什么是 macOS：从 Classic Mac OS 到 Mac OS X 的宏大过渡"
+        },
+        {
+          "id": "classic-mac-os-的局限性协作式多任务处理",
+          "text": "Classic Mac OS 的局限性：协作式多任务处理"
+        },
+        {
+          "id": "什么是协作式多任务处理",
+          "text": "什么是协作式多任务处理？"
+        },
+        {
+          "id": "mac-os-x-的诞生unix-的力量与抢占式多任务处理",
+          "text": "Mac OS X 的诞生：UNIX 的力量与抢占式多任务处理"
+        },
+        {
+          "id": "抢占式多任务处理带来的稳定性",
+          "text": "抢占式多任务处理带来的稳定性"
+        },
+        {
+          "id": "nextstep-的遗产cocoa-api-的崛起",
+          "text": "NeXTSTEP 的遗产：Cocoa API 的崛起"
+        },
+        {
+          "id": "支撑架构变迁的魔法rosetta",
+          "text": "支撑架构变迁的魔法：Rosetta"
+        },
+        {
+          "id": "rosetta-从-powerpc-到-intel",
+          "text": "Rosetta (从 PowerPC 到 Intel)"
+        },
+        {
+          "id": "rosetta-2-从-intel-到-apple-silicon",
+          "text": "Rosetta 2 (从 Intel 到 Apple Silicon)"
+        },
+        {
+          "id": "结语",
+          "text": "结语"
+        }
+      ],
+      "paragraphs": [
+        "作为 Apple 的桌面操作系统，macOS 受到全球数亿用户的喜爱。然而，在目前精致的 macOS 背后，有着操作系统历史上最具戏剧性且技术上最为困难的过渡期。",
+        "在本文中，我们将深入探讨从 Classic Mac OS（至 Mac OS 9）到 Mac OS X（现在的 macOS）的宏大过渡过程，以及支撑它的核心技术。",
+        "1984 年与初代 Macintosh 一同登场的 Mac OS，在当时提供了革命性的图形用户界面（GUI）。然而，随着时代的推移，其底层架构的局限性开始暴露无遗。",
+        "其最大的原因就是协作式多任务处理（Cooperative Multitasking）以及缺乏内存保护。",
+        "在协作式多任务处理中，由应用程序自身而不是 OS 来管理 CPU 的控制权。当应用程序 A 正在处理时，应用程序 B 必须等待，直到 A 自发地将“CPU 归还给 OS（Yield）”。",
+        "如果应用程序 A 崩溃，或者陷入无限循环而不返还控制权，整个 OS 都会冻结。用户被迫强制重启，未保存的数据也会丢失。对于当时的 Mac 用户来说，带有炸弹图标的系统错误可谓家常便饭。",
+        "在下一代 OS 的开发中，Apple 经历了自主开发项目（Copland）的失败，随后做出了历史性的决定——收购史蒂夫·乔布斯创立的 NeXT 公司。NeXT 的核心产品“NeXTSTEP”正是后来 Mac OS X 的基础。",
+        "Mac OS X（后来的 macOS）内部搭载了一个名为 Darwin 的类 UNIX 操作系统（基于 FreeBSD 和 Mach 微内核）。这从根本上解决了 Classic Mac OS 的弱点。",
+        "OS X 带来的最大恩惠之一，就是抢占式多任务处理（Preemptive Multitasking）。",
+        "在抢占式多任务处理中，OS 内核拥有绝对的权限，以毫秒为单位向各个应用程序分配 CPU 时间。即使应用程序冻结，内核也能强行剥夺 CPU 的控制权，并将其分配给其他应用程序。",
+        "此外，由于引入了内存保护（Memory Protection），每个应用程序都拥有彼此独立的内存空间。即使一个应用崩溃，也不会牵连其他应用或整个 OS。",
+        "向 Mac OS X 的过渡，对开发者而言也是一次巨大的范式转变。Apple 为开发者提供了两个主要的 API 选择，用于构建面向新 OS 的应用程序。它们就是 Carbon 和 Cocoa。",
+        "Cocoa 完整地保留了 NeXTSTEP 时代的框架（Foundation 和 AppKit）。至今，在 macOS 开发中使用的许多类都带有 NS（NeXTSTEP 的缩写）前缀，这就是当时的遗迹（例如：NSString, NSArray）。最终，Apple 弃用了 Carbon，将 Cocoa（以及后来的 SwiftUI）置于 macOS 开发的核心地位。",
+        "在 macOS 的历史中值得特书一笔的是，它不仅成功实现了软件架构的过渡，还多次成功地进行了硬件（CPU）架构的迁移。",
+        "而无缝实现这些过渡的，正是动态二进制翻译技术——Rosetta。",
+        "2006 年，Apple 将 Mac 的处理器从 PowerPC 迁移到了 Intel。当时，为了让现有的面向 PowerPC 的应用程序直接在 Intel Mac 上运行，初代“Rosetta”模拟器应运而生。因为 OS 在后台实时翻译指令，用户可以在不意识到应用是面向哪种架构的情况下使用它们。",
+        "2020 年，在向 Apple Silicon（M1 芯片）迁移时登场的“Rosetta 2”则进化得更为强大。除了运行时的实时翻译（JIT 编译）外，它还在安装时（或首次启动时）进行提前编译（AOT 编译），成功地将性能下降抑制到了极限。因此，即使是面向 x86 编写的繁重应用程序，也能在原生的 ARM 处理器上以惊人的速度运行。",
+        "从 Classic Mac OS 到 Mac OS X 的过渡，不仅仅是一次单纯的软件更新，更可以说是计算机科学史上最成功的“心脏移植”事件。",
+        "从协作式多任务处理和频繁崩溃，进化为基于 UNIX 的坚如磐石的稳定性和精致的 GUI。再加上继承了 NeXTSTEP 遗产的开发环境，以及多次的 CPU 架构变迁大戏。现在的 macOS 所拥有的压倒性性能和用户体验，正是建立在这样宏大的技术挑战与进化之上的。"
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "软件开发",
+          "path": "/zh-cn/categories/software-development/"
+        },
+        {
+          "text": "操作系统",
+          "path": "/zh-cn/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "史蒂夫·乔布斯",
+          "path": "/zh-cn/p/biography-steve-jobs/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "面向对象",
+          "path": "/zh-cn/p/object-oriented-programming-oop-solid-principles/",
+          "host": "127.0.0.1"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "018-macos-links",
+    "language": "zh-tw",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "Carbon：將 Classic Mac OS 的 API 移植並調整為 OS X 適用的 C 語言基礎 API。這是為了讓現有應用程式（如 Photoshop 和 Microsoft Office）相對容易地支援 OS X 的橋樑。",
+        "Cocoa：繼承自 NeXTSTEP，基於 Objective-C 的純物件導向 API。",
+        "Motorola 68k → PowerPC (1990 年代)",
+        "PowerPC → Intel x86 (2006 年)",
+        "Intel x86 → Apple Silicon (ARM) (2020 年)"
+      ],
+      "headings": [
+        {
+          "id": "什麼是-macos從-classic-mac-os-到-mac-os-x-的史詩級過渡",
+          "text": "什麼是 macOS：從 Classic Mac OS 到 Mac OS X 的史詩級過渡"
+        },
+        {
+          "id": "classic-mac-os-的極限協同式多工-cooperative-multitasking",
+          "text": "Classic Mac OS 的極限：協同式多工 (Cooperative Multitasking)"
+        },
+        {
+          "id": "什麼是協同式多工",
+          "text": "什麼是協同式多工？"
+        },
+        {
+          "id": "mac-os-x-的誕生unix-的威力與搶占式多工-preemptive-multitasking",
+          "text": "Mac OS X 的誕生：UNIX 的威力與搶占式多工 (Preemptive Multitasking)"
+        },
+        {
+          "id": "搶占式多工帶來的穩定性",
+          "text": "搶占式多工帶來的穩定性"
+        },
+        {
+          "id": "nextstep-的遺產cocoa-api-的崛起",
+          "text": "NeXTSTEP 的遺產：Cocoa API 的崛起"
+        },
+        {
+          "id": "支撐架構演進的魔法rosetta",
+          "text": "支撐架構演進的魔法：Rosetta"
+        },
+        {
+          "id": "rosetta-從-powerpc-到-intel",
+          "text": "Rosetta (從 PowerPC 到 Intel)"
+        },
+        {
+          "id": "rosetta-2-從-intel-到-apple-silicon",
+          "text": "Rosetta 2 (從 Intel 到 Apple Silicon)"
+        },
+        {
+          "id": "結語",
+          "text": "結語"
+        }
+      ],
+      "paragraphs": [
+        "Apple 的桌上型作業系統 macOS 受到全球數億使用者的喜愛。然而，在如今精緻的 macOS 背後，隱藏著作業系統歷史上最引人注目且技術上充滿挑戰的過渡期。",
+        "本文將深入探討從 Classic Mac OS（直到 Mac OS 9）到 Mac OS X（現在的 macOS）的史詩級過渡過程，以及支撐它的核心技術。",
+        "1984 年與第一代 Macintosh 一同登場的 Mac OS，提供了當時革命性的圖形使用者介面 (GUI)。然而，隨著時代的推移，其底層架構的極限開始顯露。",
+        "最大的原因在於協同式多工 (Cooperative Multitasking) 和缺乏記憶體保護 (Memory Protection)。",
+        "在協同式多工中，是由應用程式本身而非 OS 來管理 CPU 的控制權。當應用程式 A 正在處理時，應用程式 B 必須等待 A 自願「將 CPU 交還給 OS (Yield)」為止。",
+        "如果應用程式 A 當機或陷入無限迴圈而未交還控制權，整個 OS 就會凍結。使用者不得不強制重新啟動，未儲存的資料也會跟著遺失。對於當時的 Mac 使用者來說，帶有炸彈圖示的系統錯誤是家常便飯。",
+        "Apple 在開發次世代 OS 時，經歷了內部開發專案 (Copland) 的失敗，隨後做出了收購由 Steve Jobs 創立的 NeXT 公司的歷史性決定。NeXT 的主力產品「NeXTSTEP」正是 Mac OS X 的基礎。",
+        "Mac OS X（後來的 macOS）內部搭載了稱為 Darwin 的類 UNIX 作業系統（基於 FreeBSD 和 Mach 微核心）。這從根本上解決了 Classic Mac OS 的弱點。",
+        "OS X 帶來的最大好處之一就是搶占式多工 (Preemptive Multitasking)。",
+        "在搶占式多工中，OS 的核心 (Kernel) 擁有絕對的權限，會以毫秒為單位將 CPU 時間分配給每個應用程式。即使應用程式凍結，核心也能強制奪取 CPU 的控制權，並將其分配給其他應用程式。",
+        "此外，透過導入記憶體保護 (Memory Protection)，每個應用程式都擁有了獨立的記憶體空間。即使一個應用程式當機，也不會牽連其他應用程式或整個 OS。",
+        "向 Mac OS X 的過渡對開發者來說也是一次重大的典範轉移。Apple 為了讓開發者能為新 OS 構建應用程式，提供了兩個主要的 API 選擇。這就是 Carbon 和 Cocoa。",
+        "Cocoa 原封不動地繼承了 NeXTSTEP 時代的框架 (Foundation 和 AppKit)。直到現在，許多在 macOS 開發中使用的類別仍帶有 NS (NeXTSTEP 的縮寫) 的前綴，這正是當時的遺跡（例如：NSString、NSArray）。最終，Apple 廢棄了 Carbon，並將 Cocoa（以及後來的 SwiftUI）置於 macOS 開發的核心。",
+        "在 macOS 的歷史中，值得一提的不僅是軟體架構，還成功地進行了多次硬體 (CPU) 架構的過渡：",
+        "無縫實現這些過渡的，正是動態二進位翻譯技術 Rosetta。",
+        "2006 年，Apple 將 Mac 的處理器從 PowerPC 轉換為 Intel 製。當時，為了讓現有的 PowerPC 應用程式能直接在 Intel Mac 上執行，初代「Rosetta」模擬器應運而生。因為 OS 會在背景即時翻譯指令，所以使用者在不需意識到應用程式是針對哪種架構開發的情況下，就能直接使用。",
+        "2020 年轉換到 Apple Silicon (M1 晶片) 時登場的「Rosetta 2」又進一步進化了。除了執行時的即時翻譯 (JIT 編譯) 之外，在安裝時（或首次啟動時）也會進行事前編譯 (AOT 編譯)，成功地將效能的降低抑制到極限。這使得即使是為 x86 撰寫的重型應用程式，也能在原生的 ARM 處理器上以驚人的速度運行。",
+        "從 Classic Mac OS 到 Mac OS X 的過渡，不僅僅是單純的軟體更新，更可以說是電腦科學史上最成功的「心臟移植」事件。",
+        "從協同式多工和頻繁的當機，進化到基於 UNIX 的強大穩定性和精緻的 GUI。接著，繼承了 NeXTSTEP 遺產的開發環境，以及多次的 CPU 架構過渡。現在的 macOS 所擁有的壓倒性效能與使用者體驗，正是建立在這些史詩般的技術挑戰與進化之上的。"
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "軟體開發",
+          "path": "/zh-tw/categories/software-development/"
+        },
+        {
+          "text": "作業系統",
+          "path": "/zh-tw/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "Carbon：將 Classic Mac OS 的 API 移植並調整為 OS X 適用的 C 語言基礎 API。這是為了讓現有應用程式（如 Photoshop 和 Microsoft Office）相對容易地支援 OS X 的橋樑。",
+        "Cocoa：繼承自 NeXTSTEP，基於 Objective-C 的純物件導向 API。",
+        "Motorola 68k → PowerPC (1990 年代)",
+        "PowerPC → Intel x86 (2006 年)",
+        "Intel x86 → Apple Silicon (ARM) (2020 年)"
+      ],
+      "headings": [
+        {
+          "id": "什麼是-macos從-classic-mac-os-到-mac-os-x-的史詩級過渡",
+          "text": "什麼是 macOS：從 Classic Mac OS 到 Mac OS X 的史詩級過渡"
+        },
+        {
+          "id": "classic-mac-os-的極限協同式多工-cooperative-multitasking",
+          "text": "Classic Mac OS 的極限：協同式多工 (Cooperative Multitasking)"
+        },
+        {
+          "id": "什麼是協同式多工",
+          "text": "什麼是協同式多工？"
+        },
+        {
+          "id": "mac-os-x-的誕生unix-的威力與搶占式多工-preemptive-multitasking",
+          "text": "Mac OS X 的誕生：UNIX 的威力與搶占式多工 (Preemptive Multitasking)"
+        },
+        {
+          "id": "搶占式多工帶來的穩定性",
+          "text": "搶占式多工帶來的穩定性"
+        },
+        {
+          "id": "nextstep-的遺產cocoa-api-的崛起",
+          "text": "NeXTSTEP 的遺產：Cocoa API 的崛起"
+        },
+        {
+          "id": "支撐架構演進的魔法rosetta",
+          "text": "支撐架構演進的魔法：Rosetta"
+        },
+        {
+          "id": "rosetta-從-powerpc-到-intel",
+          "text": "Rosetta (從 PowerPC 到 Intel)"
+        },
+        {
+          "id": "rosetta-2-從-intel-到-apple-silicon",
+          "text": "Rosetta 2 (從 Intel 到 Apple Silicon)"
+        },
+        {
+          "id": "結語",
+          "text": "結語"
+        }
+      ],
+      "paragraphs": [
+        "Apple 的桌上型作業系統 macOS 受到全球數億使用者的喜愛。然而，在如今精緻的 macOS 背後，隱藏著作業系統歷史上最引人注目且技術上充滿挑戰的過渡期。",
+        "本文將深入探討從 Classic Mac OS（直到 Mac OS 9）到 Mac OS X（現在的 macOS）的史詩級過渡過程，以及支撐它的核心技術。",
+        "1984 年與第一代 Macintosh 一同登場的 Mac OS，提供了當時革命性的圖形使用者介面 (GUI)。然而，隨著時代的推移，其底層架構的極限開始顯露。",
+        "最大的原因在於協同式多工 (Cooperative Multitasking) 和缺乏記憶體保護 (Memory Protection)。",
+        "在協同式多工中，是由應用程式本身而非 OS 來管理 CPU 的控制權。當應用程式 A 正在處理時，應用程式 B 必須等待 A 自願「將 CPU 交還給 OS (Yield)」為止。",
+        "如果應用程式 A 當機或陷入無限迴圈而未交還控制權，整個 OS 就會凍結。使用者不得不強制重新啟動，未儲存的資料也會跟著遺失。對於當時的 Mac 使用者來說，帶有炸彈圖示的系統錯誤是家常便飯。",
+        "Apple 在開發次世代 OS 時，經歷了內部開發專案 (Copland) 的失敗，隨後做出了收購由 Steve Jobs 創立的 NeXT 公司的歷史性決定。NeXT 的主力產品「NeXTSTEP」正是 Mac OS X 的基礎。",
+        "Mac OS X（後來的 macOS）內部搭載了稱為 Darwin 的類 UNIX 作業系統（基於 FreeBSD 和 Mach 微核心）。這從根本上解決了 Classic Mac OS 的弱點。",
+        "OS X 帶來的最大好處之一就是搶占式多工 (Preemptive Multitasking)。",
+        "在搶占式多工中，OS 的核心 (Kernel) 擁有絕對的權限，會以毫秒為單位將 CPU 時間分配給每個應用程式。即使應用程式凍結，核心也能強制奪取 CPU 的控制權，並將其分配給其他應用程式。",
+        "此外，透過導入記憶體保護 (Memory Protection)，每個應用程式都擁有了獨立的記憶體空間。即使一個應用程式當機，也不會牽連其他應用程式或整個 OS。",
+        "向 Mac OS X 的過渡對開發者來說也是一次重大的典範轉移。Apple 為了讓開發者能為新 OS 構建應用程式，提供了兩個主要的 API 選擇。這就是 Carbon 和 Cocoa。",
+        "Cocoa 原封不動地繼承了 NeXTSTEP 時代的框架 (Foundation 和 AppKit)。直到現在，許多在 macOS 開發中使用的類別仍帶有 NS (NeXTSTEP 的縮寫) 的前綴，這正是當時的遺跡（例如：NSString、NSArray）。最終，Apple 廢棄了 Carbon，並將 Cocoa（以及後來的 SwiftUI）置於 macOS 開發的核心。",
+        "在 macOS 的歷史中，值得一提的不僅是軟體架構，還成功地進行了多次硬體 (CPU) 架構的過渡：",
+        "無縫實現這些過渡的，正是動態二進位翻譯技術 Rosetta。",
+        "2006 年，Apple 將 Mac 的處理器從 PowerPC 轉換為 Intel 製。當時，為了讓現有的 PowerPC 應用程式能直接在 Intel Mac 上執行，初代「Rosetta」模擬器應運而生。因為 OS 會在背景即時翻譯指令，所以使用者在不需意識到應用程式是針對哪種架構開發的情況下，就能直接使用。",
+        "2020 年轉換到 Apple Silicon (M1 晶片) 時登場的「Rosetta 2」又進一步進化了。除了執行時的即時翻譯 (JIT 編譯) 之外，在安裝時（或首次啟動時）也會進行事前編譯 (AOT 編譯)，成功地將效能的降低抑制到極限。這使得即使是為 x86 撰寫的重型應用程式，也能在原生的 ARM 處理器上以驚人的速度運行。",
+        "從 Classic Mac OS 到 Mac OS X 的過渡，不僅僅是單純的軟體更新，更可以說是電腦科學史上最成功的「心臟移植」事件。",
+        "從協同式多工和頻繁的當機，進化到基於 UNIX 的強大穩定性和精緻的 GUI。接著，繼承了 NeXTSTEP 遺產的開發環境，以及多次的 CPU 架構過渡。現在的 macOS 所擁有的壓倒性效能與使用者體驗，正是建立在這些史詩般的技術挑戰與進化之上的。"
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "軟體開發",
+          "path": "/zh-tw/categories/software-development/"
+        },
+        {
+          "text": "作業系統",
+          "path": "/zh-tw/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "Steve Jobs",
+          "path": "/zh-tw/p/biography-steve-jobs/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "物件導向",
+          "path": "/zh-tw/p/object-oriented-programming-oop-solid-principles/",
+          "host": "127.0.0.1"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "018-macos-links",
+    "language": "ar",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "Carbon: نسخة معدلة من واجهة برمجة تطبيقات Classic Mac OS مبنية على لغة C لتتوافق مع OS X. كان بمثابة جسر لتسهيل توافق التطبيقات الحالية (مثل Photoshop و Microsoft Office) مع OS X.",
+        "Cocoa: واجهة برمجة تطبيقات كائنية التوجه (Object-oriented) بحتة مبنية على لغة Objective-C، موروثة من NeXTSTEP.",
+        "Motorola 68k → PowerPC (في التسعينيات)",
+        "PowerPC → Intel x86 (عام 2006)",
+        "Intel x86 → Apple Silicon (ARM) (عام 2020)"
+      ],
+      "headings": [
+        {
+          "id": "ما-هو-نظام-macos-الانتقال-الملحمي-من-classic-mac-os-إلى-mac-os-x",
+          "text": "ما هو نظام macOS: الانتقال الملحمي من Classic Mac OS إلى Mac OS X"
+        },
+        {
+          "id": "قيود-classic-mac-os-المهام-المتعددة-التعاونية",
+          "text": "قيود Classic Mac OS: المهام المتعددة التعاونية"
+        },
+        {
+          "id": "ما-هي-المهام-المتعددة-التعاونية",
+          "text": "ما هي المهام المتعددة التعاونية؟"
+        },
+        {
+          "id": "ولادة-mac-os-x-قوة-unix-والمهام-المتعددة-الاستباقية",
+          "text": "ولادة Mac OS X: قوة UNIX والمهام المتعددة الاستباقية"
+        },
+        {
+          "id": "الاستقرار-بفضل-المهام-المتعددة-الاستباقية",
+          "text": "الاستقرار بفضل المهام المتعددة الاستباقية"
+        },
+        {
+          "id": "إرث-nextstep-صعود-واجهة-برمجة-تطبيقات-cocoa",
+          "text": "إرث NeXTSTEP: صعود واجهة برمجة تطبيقات Cocoa"
+        },
+        {
+          "id": "السحر-الذي-دعم-تطور-البنية-rosetta",
+          "text": "السحر الذي دعم تطور البنية: Rosetta"
+        },
+        {
+          "id": "rosetta-من-powerpc-إلى-intel",
+          "text": "Rosetta (من PowerPC إلى Intel)"
+        },
+        {
+          "id": "rosetta-2-من-intel-إلى-apple-silicon",
+          "text": "Rosetta 2 (من Intel إلى Apple Silicon)"
+        },
+        {
+          "id": "خاتمة",
+          "text": "خاتمة"
+        }
+      ],
+      "paragraphs": [
+        "يحظى نظام التشغيل macOS لأجهزة سطح المكتب من Apple بإعجاب مئات الملايين من المستخدمين حول العالم. ومع ذلك، وراء نظام macOS الأنيق الحالي تكمن إحدى أكثر عمليات الانتقال دراماتيكية وتحديًا تقنيًا في تاريخ أنظمة التشغيل.",
+        "في هذا المقال، سنتعمق في عملية الانتقال الملحمية من Classic Mac OS (حتى Mac OS 9) إلى Mac OS X (نظام macOS الحالي) والتقنيات الأساسية التي دعمتها.",
+        "قدم نظام Mac OS، الذي ظهر مع أول جهاز Macintosh في عام 1984، واجهة مستخدم رسومية (GUI) مبتكرة في ذلك الوقت. ومع ذلك، مع مرور الوقت، بدأت قيود بنيته الأساسية في الظهور.",
+        "السببان الرئيسيان لذلك هما المهام المتعددة التعاونية (Cooperative Multitasking) و الافتقار إلى حماية الذاكرة (Memory Protection).",
+        "في نظام المهام المتعددة التعاونية، تقوم التطبيقات نفسها، وليس نظام التشغيل، بإدارة التحكم في وحدة المعالجة المركزية (CPU). أثناء قيام التطبيق A بالمعالجة، يجب أن ينتظر التطبيق B حتى يقوم التطبيق A “بإعادة وحدة المعالجة المركزية إلى نظام التشغيل (Yield)” طواعية.",
+        "إذا تعطل التطبيق A أو دخل في حلقة لا نهائية (infinite loop) ولم يُرجع التحكم، سيتجمد نظام التشغيل بأكمله. كان المستخدمون يُجبرون على إعادة التشغيل قسريًا، وتُفقد البيانات غير المحفوظة. بالنسبة لمستخدمي Mac في ذلك الوقت، كانت أخطاء النظام المصحوبة برمز القنبلة حدثًا يوميًا.",
+        "عند تطوير نظام التشغيل من الجيل التالي، وبعد فشل مشروع التطوير الداخلي (Copland)، اتخذت Apple القرار التاريخي بالاستحواذ على شركة NeXT، التي أسسها ستيف جوبز. أصبح “NeXTSTEP”، المنتج الرئيسي لشركة NeXT، الأساس لنظام Mac OS X.",
+        "احتوى Mac OS X (الذي أصبح لاحقًا macOS) على نظام تشغيل من عائلة UNIX يسمى Darwin (مبني على FreeBSD ونواة Mach الصغيرة). وبفضل هذا، تم حل نقاط ضعف Classic Mac OS من الجذور.",
+        "واحدة من أكبر الفوائد التي جلبها OS X هي المهام المتعددة الاستباقية (Preemptive Multitasking).",
+        "في نظام المهام المتعددة الاستباقية، تمتلك نواة نظام التشغيل (Kernel) سلطة مطلقة وتخصص وقت وحدة المعالجة المركزية (CPU) لكل تطبيق بالمللي ثانية. حتى لو تجمد أحد التطبيقات، يمكن للنواة انتزاع التحكم في وحدة المعالجة المركزية قسريًا وتخصيصه لتطبيقات أخرى.",
+        "علاوة على ذلك، مع إدخال حماية الذاكرة (Memory Protection)، أصبح لكل تطبيق مساحة ذاكرة مستقلة عن غيره. إذا تعطل أحد التطبيقات، فإنه لا يؤثر على التطبيقات الأخرى أو على نظام التشغيل ككل.",
+        "كان الانتقال إلى Mac OS X بمثابة تحول نموذجي كبير للمطورين أيضًا. قدمت Apple خيارين رئيسيين للمطورين كواجهات برمجة تطبيقات (API) لإنشاء تطبيقات لنظام التشغيل الجديد. هما Carbon و Cocoa.",
+        "ورثت Cocoa إطارات العمل (مثل Foundation و AppKit) من عصر NeXTSTEP كما هي. حتى يومنا هذا، فإن العديد من الفئات (Classes) المستخدمة في تطوير macOS تحمل البادئة NS (اختصار لـ NeXTSTEP) كبقايا من ذلك العصر (مثال: NSString، NSArray). في النهاية، قامت Apple بإهمال Carbon وجعلت Cocoa (ولاحقًا SwiftUI) مركزًا لتطوير macOS.",
+        "ما يلفت النظر في تاريخ macOS ليس فقط الانتقال في بنية البرمجيات، بل النجاح في الانتقال ببنية الأجهزة (وحدة المعالجة المركزية) عدة مرات.",
+        "ما جعل هذه التحولات سلسة هي تقنية الترجمة الثنائية الديناميكية (Dynamic Binary Translation) المعروفة باسم Rosetta.",
+        "في عام 2006، نقلت Apple معالجات Mac من PowerPC إلى Intel. في ذلك الوقت، كان أول إصدار من “Rosetta” عبارة عن محاكي لتشغيل تطبيقات PowerPC الحالية كما هي على أجهزة Mac بمعالجات Intel. نظرًا لأن نظام التشغيل كان يترجم التعليمات في الوقت الفعلي في الخلفية، تمكن المستخدمون من استخدام التطبيقات دون الحاجة إلى معرفة البنية التي صُممت من أجلها.",
+        "كان إصدار “Rosetta 2”، الذي ظهر أثناء الانتقال إلى Apple Silicon (شريحة M1) في عام 2020، أكثر تطورًا. بالإضافة إلى الترجمة في الوقت الفعلي أثناء التشغيل (JIT Compilation)، نجح في الحد من انخفاض الأداء إلى أقصى حد من خلال إجراء تجميع مسبق (AOT Compilation) وقت التثبيت (أو عند التشغيل الأول). وبفضل ذلك، حتى التطبيقات الثقيلة المكتوبة لمعمارية x86 تعمل بسرعة مذهلة على معالجات ARM الأصلية.",
+        "الانتقال من Classic Mac OS إلى Mac OS X لم يكن مجرد تحديث برمجي، بل يمكن اعتباره “عملية زرع قلب” الأكثر نجاحًا في تاريخ علوم الحاسوب.",
+        "من المهام المتعددة التعاونية والانهيارات المتكررة، إلى الاستقرار القوي المبني على UNIX وواجهة المستخدم الرسومية الأنيقة. ومن بيئة التطوير التي ورثت إرث NeXTSTEP، إلى التحولات المتعددة في بنية وحدة المعالجة المركزية. إن الأداء الساحق وتجربة المستخدم التي يوفرها نظام macOS الحالي مبنية على هذه التحديات التقنية الملحمية والتطور المستمر."
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "تطوير البرمجيات",
+          "path": "/ar/categories/software-development/"
+        },
+        {
+          "text": "أنظمة التشغيل",
+          "path": "/ar/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "Carbon: نسخة معدلة من واجهة برمجة تطبيقات Classic Mac OS مبنية على لغة C لتتوافق مع OS X. كان بمثابة جسر لتسهيل توافق التطبيقات الحالية (مثل Photoshop و Microsoft Office) مع OS X.",
+        "Cocoa: واجهة برمجة تطبيقات كائنية التوجه (Object-oriented) بحتة مبنية على لغة Objective-C، موروثة من NeXTSTEP.",
+        "Motorola 68k → PowerPC (في التسعينيات)",
+        "PowerPC → Intel x86 (عام 2006)",
+        "Intel x86 → Apple Silicon (ARM) (عام 2020)"
+      ],
+      "headings": [
+        {
+          "id": "ما-هو-نظام-macos-الانتقال-الملحمي-من-classic-mac-os-إلى-mac-os-x",
+          "text": "ما هو نظام macOS: الانتقال الملحمي من Classic Mac OS إلى Mac OS X"
+        },
+        {
+          "id": "قيود-classic-mac-os-المهام-المتعددة-التعاونية",
+          "text": "قيود Classic Mac OS: المهام المتعددة التعاونية"
+        },
+        {
+          "id": "ما-هي-المهام-المتعددة-التعاونية",
+          "text": "ما هي المهام المتعددة التعاونية؟"
+        },
+        {
+          "id": "ولادة-mac-os-x-قوة-unix-والمهام-المتعددة-الاستباقية",
+          "text": "ولادة Mac OS X: قوة UNIX والمهام المتعددة الاستباقية"
+        },
+        {
+          "id": "الاستقرار-بفضل-المهام-المتعددة-الاستباقية",
+          "text": "الاستقرار بفضل المهام المتعددة الاستباقية"
+        },
+        {
+          "id": "إرث-nextstep-صعود-واجهة-برمجة-تطبيقات-cocoa",
+          "text": "إرث NeXTSTEP: صعود واجهة برمجة تطبيقات Cocoa"
+        },
+        {
+          "id": "السحر-الذي-دعم-تطور-البنية-rosetta",
+          "text": "السحر الذي دعم تطور البنية: Rosetta"
+        },
+        {
+          "id": "rosetta-من-powerpc-إلى-intel",
+          "text": "Rosetta (من PowerPC إلى Intel)"
+        },
+        {
+          "id": "rosetta-2-من-intel-إلى-apple-silicon",
+          "text": "Rosetta 2 (من Intel إلى Apple Silicon)"
+        },
+        {
+          "id": "خاتمة",
+          "text": "خاتمة"
+        }
+      ],
+      "paragraphs": [
+        "يحظى نظام التشغيل macOS لأجهزة سطح المكتب من Apple بإعجاب مئات الملايين من المستخدمين حول العالم. ومع ذلك، وراء نظام macOS الأنيق الحالي تكمن إحدى أكثر عمليات الانتقال دراماتيكية وتحديًا تقنيًا في تاريخ أنظمة التشغيل.",
+        "في هذا المقال، سنتعمق في عملية الانتقال الملحمية من Classic Mac OS (حتى Mac OS 9) إلى Mac OS X (نظام macOS الحالي) والتقنيات الأساسية التي دعمتها.",
+        "قدم نظام Mac OS، الذي ظهر مع أول جهاز Macintosh في عام 1984، واجهة مستخدم رسومية (GUI) مبتكرة في ذلك الوقت. ومع ذلك، مع مرور الوقت، بدأت قيود بنيته الأساسية في الظهور.",
+        "السببان الرئيسيان لذلك هما المهام المتعددة التعاونية (Cooperative Multitasking) و الافتقار إلى حماية الذاكرة (Memory Protection).",
+        "في نظام المهام المتعددة التعاونية، تقوم التطبيقات نفسها، وليس نظام التشغيل، بإدارة التحكم في وحدة المعالجة المركزية (CPU). أثناء قيام التطبيق A بالمعالجة، يجب أن ينتظر التطبيق B حتى يقوم التطبيق A “بإعادة وحدة المعالجة المركزية إلى نظام التشغيل (Yield)” طواعية.",
+        "إذا تعطل التطبيق A أو دخل في حلقة لا نهائية (infinite loop) ولم يُرجع التحكم، سيتجمد نظام التشغيل بأكمله. كان المستخدمون يُجبرون على إعادة التشغيل قسريًا، وتُفقد البيانات غير المحفوظة. بالنسبة لمستخدمي Mac في ذلك الوقت، كانت أخطاء النظام المصحوبة برمز القنبلة حدثًا يوميًا.",
+        "عند تطوير نظام التشغيل من الجيل التالي، وبعد فشل مشروع التطوير الداخلي (Copland)، اتخذت Apple القرار التاريخي بالاستحواذ على شركة NeXT، التي أسسها ستيف جوبز. أصبح “NeXTSTEP”، المنتج الرئيسي لشركة NeXT، الأساس لنظام Mac OS X.",
+        "احتوى Mac OS X (الذي أصبح لاحقًا macOS) على نظام تشغيل من عائلة UNIX يسمى Darwin (مبني على FreeBSD ونواة Mach الصغيرة). وبفضل هذا، تم حل نقاط ضعف Classic Mac OS من الجذور.",
+        "واحدة من أكبر الفوائد التي جلبها OS X هي المهام المتعددة الاستباقية (Preemptive Multitasking).",
+        "في نظام المهام المتعددة الاستباقية، تمتلك نواة نظام التشغيل (Kernel) سلطة مطلقة وتخصص وقت وحدة المعالجة المركزية (CPU) لكل تطبيق بالمللي ثانية. حتى لو تجمد أحد التطبيقات، يمكن للنواة انتزاع التحكم في وحدة المعالجة المركزية قسريًا وتخصيصه لتطبيقات أخرى.",
+        "علاوة على ذلك، مع إدخال حماية الذاكرة (Memory Protection)، أصبح لكل تطبيق مساحة ذاكرة مستقلة عن غيره. إذا تعطل أحد التطبيقات، فإنه لا يؤثر على التطبيقات الأخرى أو على نظام التشغيل ككل.",
+        "كان الانتقال إلى Mac OS X بمثابة تحول نموذجي كبير للمطورين أيضًا. قدمت Apple خيارين رئيسيين للمطورين كواجهات برمجة تطبيقات (API) لإنشاء تطبيقات لنظام التشغيل الجديد. هما Carbon و Cocoa.",
+        "ورثت Cocoa إطارات العمل (مثل Foundation و AppKit) من عصر NeXTSTEP كما هي. حتى يومنا هذا، فإن العديد من الفئات (Classes) المستخدمة في تطوير macOS تحمل البادئة NS (اختصار لـ NeXTSTEP) كبقايا من ذلك العصر (مثال: NSString، NSArray). في النهاية، قامت Apple بإهمال Carbon وجعلت Cocoa (ولاحقًا SwiftUI) مركزًا لتطوير macOS.",
+        "ما يلفت النظر في تاريخ macOS ليس فقط الانتقال في بنية البرمجيات، بل النجاح في الانتقال ببنية الأجهزة (وحدة المعالجة المركزية) عدة مرات.",
+        "ما جعل هذه التحولات سلسة هي تقنية الترجمة الثنائية الديناميكية (Dynamic Binary Translation) المعروفة باسم Rosetta.",
+        "في عام 2006، نقلت Apple معالجات Mac من PowerPC إلى Intel. في ذلك الوقت، كان أول إصدار من “Rosetta” عبارة عن محاكي لتشغيل تطبيقات PowerPC الحالية كما هي على أجهزة Mac بمعالجات Intel. نظرًا لأن نظام التشغيل كان يترجم التعليمات في الوقت الفعلي في الخلفية، تمكن المستخدمون من استخدام التطبيقات دون الحاجة إلى معرفة البنية التي صُممت من أجلها.",
+        "كان إصدار “Rosetta 2”، الذي ظهر أثناء الانتقال إلى Apple Silicon (شريحة M1) في عام 2020، أكثر تطورًا. بالإضافة إلى الترجمة في الوقت الفعلي أثناء التشغيل (JIT Compilation)، نجح في الحد من انخفاض الأداء إلى أقصى حد من خلال إجراء تجميع مسبق (AOT Compilation) وقت التثبيت (أو عند التشغيل الأول). وبفضل ذلك، حتى التطبيقات الثقيلة المكتوبة لمعمارية x86 تعمل بسرعة مذهلة على معالجات ARM الأصلية.",
+        "الانتقال من Classic Mac OS إلى Mac OS X لم يكن مجرد تحديث برمجي، بل يمكن اعتباره “عملية زرع قلب” الأكثر نجاحًا في تاريخ علوم الحاسوب.",
+        "من المهام المتعددة التعاونية والانهيارات المتكررة، إلى الاستقرار القوي المبني على UNIX وواجهة المستخدم الرسومية الأنيقة. ومن بيئة التطوير التي ورثت إرث NeXTSTEP، إلى التحولات المتعددة في بنية وحدة المعالجة المركزية. إن الأداء الساحق وتجربة المستخدم التي يوفرها نظام macOS الحالي مبنية على هذه التحديات التقنية الملحمية والتطور المستمر."
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "تطوير البرمجيات",
+          "path": "/ar/categories/software-development/"
+        },
+        {
+          "text": "أنظمة التشغيل",
+          "path": "/ar/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "ستيف جوبز",
+          "path": "/ar/p/biography-steve-jobs/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "كائنية التوجه",
+          "path": "/ar/p/object-oriented-programming-oop-solid-principles/",
+          "host": "127.0.0.1"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "018-macos-links",
+    "language": "hi",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "Carbon: क्लासिक Mac OS API का C-आधारित संस्करण जिसे OS X के लिए पोर्ट और अनुकूलित किया गया था। यह मौजूदा एप्लिकेशन (जैसे Photoshop और Microsoft Office) को OS X के अनुकूल बनाने के लिए एक पुल (bridge) था।",
+        "Cocoa: NeXTSTEP से विरासत में मिला, यह Objective-C पर आधारित एक शुद्ध ऑब्जेक्ट-ओरिएंटेड API है।",
+        "Motorola 68k → PowerPC (1990 का दशक)",
+        "PowerPC → Intel x86 (2006)",
+        "Intel x86 → Apple Silicon (ARM) (2020)"
+      ],
+      "headings": [
+        {
+          "id": "macos-कय-ह-कलसक-mac-os-स-mac-os-x-तक-क-शनदर-सफर",
+          "text": "macOS क्या है: क्लासिक Mac OS से Mac OS X तक का शानदार सफर"
+        },
+        {
+          "id": "कलसक-mac-os-क-समए-कऑपरटव-मलटटसकग",
+          "text": "क्लासिक Mac OS की सीमाएँ: कोऑपरेटिव मल्टीटास्किंग"
+        },
+        {
+          "id": "कऑपरटव-मलटटसकग-कय-ह",
+          "text": "कोऑपरेटिव मल्टीटास्किंग क्या है?"
+        },
+        {
+          "id": "mac-os-x-क-जनम-unix-क-शकत-और-परएमपटव-मलटटसकग",
+          "text": "Mac OS X का जन्म: UNIX की शक्ति और प्रिएम्प्टिव मल्टीटास्किंग"
+        },
+        {
+          "id": "परएमपटव-मलटटसकग-क-मधयम-स-सथरत",
+          "text": "प्रिएम्प्टिव मल्टीटास्किंग के माध्यम से स्थिरता"
+        },
+        {
+          "id": "nextstep-क-वरसत-cocoa-api-क-उदय",
+          "text": "NeXTSTEP की विरासत: Cocoa API का उदय"
+        },
+        {
+          "id": "आरकटकचर-क-वकस-क-समरथन-करन-वल-जद-rosetta",
+          "text": "आर्किटेक्चर के विकास का समर्थन करने वाला जादू: Rosetta"
+        },
+        {
+          "id": "rosetta-powerpc-स-intel-तक",
+          "text": "Rosetta (PowerPC से Intel तक)"
+        },
+        {
+          "id": "rosetta-2-intel-स-apple-silicon-तक",
+          "text": "Rosetta 2 (Intel से Apple Silicon तक)"
+        },
+        {
+          "id": "नषकरष",
+          "text": "निष्कर्ष"
+        }
+      ],
+      "paragraphs": [
+        "Apple का डेस्कटॉप ऑपरेटिंग सिस्टम, macOS, दुनिया भर के करोड़ों उपयोगकर्ताओं द्वारा पसंद किया जाता है। हालाँकि, आज के परिष्कृत macOS के पीछे, ऑपरेटिंग सिस्टम के इतिहास में सबसे नाटकीय और तकनीकी रूप से चुनौतीपूर्ण बदलावों में से एक है।",
+        "इस लेख में, हम क्लासिक Mac OS (Mac OS 9 तक) से Mac OS X (वर्तमान macOS) तक के शानदार संक्रमण प्रक्रिया और इसके पीछे की मुख्य तकनीकों पर गहराई से चर्चा करेंगे।",
+        "1984 में पहले Macintosh के साथ पेश किया गया, Mac OS उस समय के लिए एक क्रांतिकारी ग्राफिकल यूजर इंटरफेस (GUI) प्रदान करता था। हालाँकि, जैसे-जैसे समय बीता, इसके अंतर्निहित आर्किटेक्चर की सीमाएँ स्पष्ट होने लगीं।",
+        "इसका सबसे बड़ा कारण कोऑपरेटिव मल्टीटास्किंग (Cooperative Multitasking) और मेमोरी प्रोटेक्शन (Memory Protection) की कमी थी।",
+        "कोऑपरेटिव मल्टीटास्किंग में, OS के बजाय एप्लिकेशन स्वयं CPU के नियंत्रण का प्रबंधन करते हैं। जब एप्लिकेशन A प्रोसेसिंग कर रहा होता है, तो एप्लिकेशन B को तब तक प्रतीक्षा करनी पड़ती है जब तक कि एप्लिकेशन A स्वेच्छा से “CPU को OS को वापस (Yield)” नहीं कर देता।",
+        "अगर एप्लिकेशन A क्रैश हो जाता है, या अनंत लूप में फंस जाता है और नियंत्रण वापस नहीं करता है, तो पूरा OS फ्रीज हो जाता है। उपयोगकर्ताओं को फोर्स रिबूट (force reboot) करने के लिए मजबूर होना पड़ता था, और बिना सेव किया गया डेटा खो जाता था। उस समय के मैक उपयोगकर्ताओं के लिए, बम (bomb) चिह्न वाली सिस्टम त्रुटियां रोजमर्रा की बात थीं।",
+        "अगली पीढ़ी के OS के विकास में, अपने इन-हाउस प्रोजेक्ट (Copland) की विफलता के बाद, Apple ने एक ऐतिहासिक निर्णय लिया और स्टीव जॉब्स (Steve Jobs) द्वारा स्थापित कंपनी NeXT का अधिग्रहण किया। NeXT का प्रमुख उत्पाद “NeXTSTEP” Mac OS X की नींव बना।",
+        "Mac OS X (बाद में macOS) अपने कोर में Darwin नामक एक UNIX-आधारित ऑपरेटिंग सिस्टम (FreeBSD और Mach माइक्रोकर्नेल पर आधारित) से सुसज्जित था। इससे क्लासिक Mac OS की कमजोरियां पूरी तरह से हल हो गईं।",
+        "OS X द्वारा लाए गए सबसे बड़े लाभों में से एक प्रिएम्प्टिव मल्टीटास्किंग (Preemptive Multitasking) है।",
+        "प्रिएम्प्टिव मल्टीटास्किंग में, OS के कर्नेल के पास पूर्ण अधिकार होता है और यह प्रत्येक एप्लिकेशन को मिलीसेकंड में CPU समय आवंटित करता है। भले ही कोई एप्लिकेशन फ्रीज हो जाए, कर्नेल बलपूर्वक CPU का नियंत्रण छीन सकता है और इसे अन्य एप्लिकेशनों को आवंटित कर सकता है।",
+        "इसके अलावा, मेमोरी प्रोटेक्शन (Memory Protection) की शुरुआत के साथ, प्रत्येक एप्लिकेशन की अपनी स्वतंत्र मेमोरी स्पेस हो गई। यदि कोई एक ऐप क्रैश हो जाता है, तो यह अन्य ऐप्स या पूरे OS को प्रभावित नहीं करता है।",
+        "Mac OS X में परिवर्तन डेवलपर्स के लिए भी एक बड़ा पैराडाइम शिफ्ट (paradigm shift) था। Apple ने डेवलपर्स को नए OS के लिए एप्लिकेशन बनाने के लिए API के रूप में मुख्य रूप से दो विकल्प प्रदान किए: Carbon और Cocoa।",
+        "Cocoa ने NeXTSTEP युग के फ्रेमवर्क (Foundation और AppKit) को वैसे ही अपना लिया। यही कारण है कि आज भी macOS विकास में उपयोग की जाने वाली कई क्लास में NS (NeXTSTEP का संक्षिप्त रूप) उपसर्ग (prefix) होता है (उदाहरण: NSString, NSArray)। अंततः, Apple ने Carbon को हटा दिया और Cocoa (और बाद में SwiftUI) को macOS विकास के केंद्र में रखा।",
+        "macOS के इतिहास में जो बात उल्लेखनीय है वह केवल सॉफ्टवेयर आर्किटेक्चर ही नहीं, बल्कि हार्डवेयर (CPU) आर्किटेक्चर के संक्रमण को कई बार सफलतापूर्वक अंजाम देना है।",
+        "जिस तकनीक ने इन संक्रमणों को निर्बाध (seamless) रूप से संभव बनाया, वह Rosetta है, जो एक डायनेमिक बाइनरी ट्रांसलेशन तकनीक है।",
+        "2006 में, Apple ने मैक प्रोसेसर को PowerPC से Intel में बदल दिया। उस समय, मौजूदा PowerPC ऐप्स को सीधे Intel Mac पर चलाने के लिए जो एमुलेटर इस्तेमाल किया गया था, वह पहला “Rosetta” था। चूंकि OS पृष्ठभूमि में वास्तविक समय में (real-time) निर्देशों का अनुवाद करता था, उपयोगकर्ता इस बात की परवाह किए बिना ऐप्स का उपयोग कर सकते थे कि ऐप किस आर्किटेक्चर के लिए बनाया गया था।",
+        "2020 में Apple Silicon (M1 चिप) में संक्रमण के दौरान पेश किया गया “Rosetta 2” और भी उन्नत था। रनटाइम पर रीयल-टाइम अनुवाद (JIT संकलन) के अलावा, यह स्थापना (या पहले लॉन्च) के दौरान पूर्व-संकलन (AOT संकलन) करता है, जिससे प्रदर्शन में होने वाली गिरावट को कम से कम किया जा सके। इसके परिणामस्वरूप, x86 के लिए लिखे गए भारी एप्लिकेशन भी नेटिव ARM प्रोसेसर पर आश्चर्यजनक गति से चलते हैं।",
+        "क्लासिक Mac OS से Mac OS X में परिवर्तन केवल एक सॉफ्टवेयर अपडेट नहीं था, बल्कि इसे कंप्यूटर विज्ञान के इतिहास में सबसे सफल “हृदय प्रत्यारोपण (heart transplant)” कहा जा सकता है।",
+        "कोऑपरेटिव मल्टीटास्किंग और लगातार क्रैश होने से लेकर UNIX-आधारित मजबूत स्थिरता और परिष्कृत GUI में विकास। और विकास का माहौल जिसने NeXTSTEP की विरासत को अपनाया, और कई CPU आर्किटेक्चर संक्रमण। वर्तमान macOS का शानदार प्रदर्शन और उपयोगकर्ता अनुभव इन भव्य तकनीकी चुनौतियों और विकास पर आधारित है।"
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "सॉफ़्टवेयर विकास",
+          "path": "/hi/categories/software-development/"
+        },
+        {
+          "text": "ऑपरेटिंग सिस्टम",
+          "path": "/hi/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "Carbon: क्लासिक Mac OS API का C-आधारित संस्करण जिसे OS X के लिए पोर्ट और अनुकूलित किया गया था। यह मौजूदा एप्लिकेशन (जैसे Photoshop और Microsoft Office) को OS X के अनुकूल बनाने के लिए एक पुल (bridge) था।",
+        "Cocoa: NeXTSTEP से विरासत में मिला, यह Objective-C पर आधारित एक शुद्ध ऑब्जेक्ट-ओरिएंटेड API है।",
+        "Motorola 68k → PowerPC (1990 का दशक)",
+        "PowerPC → Intel x86 (2006)",
+        "Intel x86 → Apple Silicon (ARM) (2020)"
+      ],
+      "headings": [
+        {
+          "id": "macos-कय-ह-कलसक-mac-os-स-mac-os-x-तक-क-शनदर-सफर",
+          "text": "macOS क्या है: क्लासिक Mac OS से Mac OS X तक का शानदार सफर"
+        },
+        {
+          "id": "कलसक-mac-os-क-समए-कऑपरटव-मलटटसकग",
+          "text": "क्लासिक Mac OS की सीमाएँ: कोऑपरेटिव मल्टीटास्किंग"
+        },
+        {
+          "id": "कऑपरटव-मलटटसकग-कय-ह",
+          "text": "कोऑपरेटिव मल्टीटास्किंग क्या है?"
+        },
+        {
+          "id": "mac-os-x-क-जनम-unix-क-शकत-और-परएमपटव-मलटटसकग",
+          "text": "Mac OS X का जन्म: UNIX की शक्ति और प्रिएम्प्टिव मल्टीटास्किंग"
+        },
+        {
+          "id": "परएमपटव-मलटटसकग-क-मधयम-स-सथरत",
+          "text": "प्रिएम्प्टिव मल्टीटास्किंग के माध्यम से स्थिरता"
+        },
+        {
+          "id": "nextstep-क-वरसत-cocoa-api-क-उदय",
+          "text": "NeXTSTEP की विरासत: Cocoa API का उदय"
+        },
+        {
+          "id": "आरकटकचर-क-वकस-क-समरथन-करन-वल-जद-rosetta",
+          "text": "आर्किटेक्चर के विकास का समर्थन करने वाला जादू: Rosetta"
+        },
+        {
+          "id": "rosetta-powerpc-स-intel-तक",
+          "text": "Rosetta (PowerPC से Intel तक)"
+        },
+        {
+          "id": "rosetta-2-intel-स-apple-silicon-तक",
+          "text": "Rosetta 2 (Intel से Apple Silicon तक)"
+        },
+        {
+          "id": "नषकरष",
+          "text": "निष्कर्ष"
+        }
+      ],
+      "paragraphs": [
+        "Apple का डेस्कटॉप ऑपरेटिंग सिस्टम, macOS, दुनिया भर के करोड़ों उपयोगकर्ताओं द्वारा पसंद किया जाता है। हालाँकि, आज के परिष्कृत macOS के पीछे, ऑपरेटिंग सिस्टम के इतिहास में सबसे नाटकीय और तकनीकी रूप से चुनौतीपूर्ण बदलावों में से एक है।",
+        "इस लेख में, हम क्लासिक Mac OS (Mac OS 9 तक) से Mac OS X (वर्तमान macOS) तक के शानदार संक्रमण प्रक्रिया और इसके पीछे की मुख्य तकनीकों पर गहराई से चर्चा करेंगे।",
+        "1984 में पहले Macintosh के साथ पेश किया गया, Mac OS उस समय के लिए एक क्रांतिकारी ग्राफिकल यूजर इंटरफेस (GUI) प्रदान करता था। हालाँकि, जैसे-जैसे समय बीता, इसके अंतर्निहित आर्किटेक्चर की सीमाएँ स्पष्ट होने लगीं।",
+        "इसका सबसे बड़ा कारण कोऑपरेटिव मल्टीटास्किंग (Cooperative Multitasking) और मेमोरी प्रोटेक्शन (Memory Protection) की कमी थी।",
+        "कोऑपरेटिव मल्टीटास्किंग में, OS के बजाय एप्लिकेशन स्वयं CPU के नियंत्रण का प्रबंधन करते हैं। जब एप्लिकेशन A प्रोसेसिंग कर रहा होता है, तो एप्लिकेशन B को तब तक प्रतीक्षा करनी पड़ती है जब तक कि एप्लिकेशन A स्वेच्छा से “CPU को OS को वापस (Yield)” नहीं कर देता।",
+        "अगर एप्लिकेशन A क्रैश हो जाता है, या अनंत लूप में फंस जाता है और नियंत्रण वापस नहीं करता है, तो पूरा OS फ्रीज हो जाता है। उपयोगकर्ताओं को फोर्स रिबूट (force reboot) करने के लिए मजबूर होना पड़ता था, और बिना सेव किया गया डेटा खो जाता था। उस समय के मैक उपयोगकर्ताओं के लिए, बम (bomb) चिह्न वाली सिस्टम त्रुटियां रोजमर्रा की बात थीं।",
+        "अगली पीढ़ी के OS के विकास में, अपने इन-हाउस प्रोजेक्ट (Copland) की विफलता के बाद, Apple ने एक ऐतिहासिक निर्णय लिया और स्टीव जॉब्स (Steve Jobs) द्वारा स्थापित कंपनी NeXT का अधिग्रहण किया। NeXT का प्रमुख उत्पाद “NeXTSTEP” Mac OS X की नींव बना।",
+        "Mac OS X (बाद में macOS) अपने कोर में Darwin नामक एक UNIX-आधारित ऑपरेटिंग सिस्टम (FreeBSD और Mach माइक्रोकर्नेल पर आधारित) से सुसज्जित था। इससे क्लासिक Mac OS की कमजोरियां पूरी तरह से हल हो गईं।",
+        "OS X द्वारा लाए गए सबसे बड़े लाभों में से एक प्रिएम्प्टिव मल्टीटास्किंग (Preemptive Multitasking) है।",
+        "प्रिएम्प्टिव मल्टीटास्किंग में, OS के कर्नेल के पास पूर्ण अधिकार होता है और यह प्रत्येक एप्लिकेशन को मिलीसेकंड में CPU समय आवंटित करता है। भले ही कोई एप्लिकेशन फ्रीज हो जाए, कर्नेल बलपूर्वक CPU का नियंत्रण छीन सकता है और इसे अन्य एप्लिकेशनों को आवंटित कर सकता है।",
+        "इसके अलावा, मेमोरी प्रोटेक्शन (Memory Protection) की शुरुआत के साथ, प्रत्येक एप्लिकेशन की अपनी स्वतंत्र मेमोरी स्पेस हो गई। यदि कोई एक ऐप क्रैश हो जाता है, तो यह अन्य ऐप्स या पूरे OS को प्रभावित नहीं करता है।",
+        "Mac OS X में परिवर्तन डेवलपर्स के लिए भी एक बड़ा पैराडाइम शिफ्ट (paradigm shift) था। Apple ने डेवलपर्स को नए OS के लिए एप्लिकेशन बनाने के लिए API के रूप में मुख्य रूप से दो विकल्प प्रदान किए: Carbon और Cocoa।",
+        "Cocoa ने NeXTSTEP युग के फ्रेमवर्क (Foundation और AppKit) को वैसे ही अपना लिया। यही कारण है कि आज भी macOS विकास में उपयोग की जाने वाली कई क्लास में NS (NeXTSTEP का संक्षिप्त रूप) उपसर्ग (prefix) होता है (उदाहरण: NSString, NSArray)। अंततः, Apple ने Carbon को हटा दिया और Cocoa (और बाद में SwiftUI) को macOS विकास के केंद्र में रखा।",
+        "macOS के इतिहास में जो बात उल्लेखनीय है वह केवल सॉफ्टवेयर आर्किटेक्चर ही नहीं, बल्कि हार्डवेयर (CPU) आर्किटेक्चर के संक्रमण को कई बार सफलतापूर्वक अंजाम देना है।",
+        "जिस तकनीक ने इन संक्रमणों को निर्बाध (seamless) रूप से संभव बनाया, वह Rosetta है, जो एक डायनेमिक बाइनरी ट्रांसलेशन तकनीक है।",
+        "2006 में, Apple ने मैक प्रोसेसर को PowerPC से Intel में बदल दिया। उस समय, मौजूदा PowerPC ऐप्स को सीधे Intel Mac पर चलाने के लिए जो एमुलेटर इस्तेमाल किया गया था, वह पहला “Rosetta” था। चूंकि OS पृष्ठभूमि में वास्तविक समय में (real-time) निर्देशों का अनुवाद करता था, उपयोगकर्ता इस बात की परवाह किए बिना ऐप्स का उपयोग कर सकते थे कि ऐप किस आर्किटेक्चर के लिए बनाया गया था।",
+        "2020 में Apple Silicon (M1 चिप) में संक्रमण के दौरान पेश किया गया “Rosetta 2” और भी उन्नत था। रनटाइम पर रीयल-टाइम अनुवाद (JIT संकलन) के अलावा, यह स्थापना (या पहले लॉन्च) के दौरान पूर्व-संकलन (AOT संकलन) करता है, जिससे प्रदर्शन में होने वाली गिरावट को कम से कम किया जा सके। इसके परिणामस्वरूप, x86 के लिए लिखे गए भारी एप्लिकेशन भी नेटिव ARM प्रोसेसर पर आश्चर्यजनक गति से चलते हैं।",
+        "क्लासिक Mac OS से Mac OS X में परिवर्तन केवल एक सॉफ्टवेयर अपडेट नहीं था, बल्कि इसे कंप्यूटर विज्ञान के इतिहास में सबसे सफल “हृदय प्रत्यारोपण (heart transplant)” कहा जा सकता है।",
+        "कोऑपरेटिव मल्टीटास्किंग और लगातार क्रैश होने से लेकर UNIX-आधारित मजबूत स्थिरता और परिष्कृत GUI में विकास। और विकास का माहौल जिसने NeXTSTEP की विरासत को अपनाया, और कई CPU आर्किटेक्चर संक्रमण। वर्तमान macOS का शानदार प्रदर्शन और उपयोगकर्ता अनुभव इन भव्य तकनीकी चुनौतियों और विकास पर आधारित है।"
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "सॉफ़्टवेयर विकास",
+          "path": "/hi/categories/software-development/"
+        },
+        {
+          "text": "ऑपरेटिंग सिस्टम",
+          "path": "/hi/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "स्टीव जॉब्स",
+          "path": "/hi/p/biography-steve-jobs/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "ऑब्जेक्ट-ओरिएंटेड",
+          "path": "/hi/p/object-oriented-programming-oop-solid-principles/",
+          "host": "127.0.0.1"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "018-macos-links",
+    "language": "ru",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "Carbon: Адаптация и портирование API Classic Mac OS для OS X на базе языка C. Это был мост для относительно легкой адаптации существующих приложений (таких как Photoshop или Microsoft Office) к OS X.",
+        "Cocoa: Чистый объектно-ориентированный API на базе Objective-C, унаследованный от NeXTSTEP.",
+        "Motorola 68k → PowerPC (1990-е)",
+        "PowerPC → Intel x86 (2006 год)",
+        "Intel x86 → Apple Silicon (ARM) (2020 год)"
+      ],
+      "headings": [
+        {
+          "id": "что-такое-macos-грандиозный-переход-от-classic-mac-os-к-mac-os-x",
+          "text": "Что такое macOS: Грандиозный переход от Classic Mac OS к Mac OS X"
+        },
+        {
+          "id": "ограничения-classic-mac-os-кооперативная-многозадачность",
+          "text": "Ограничения Classic Mac OS: Кооперативная многозадачность"
+        },
+        {
+          "id": "что-такое-кооперативная-многозадачность",
+          "text": "Что такое кооперативная многозадачность?"
+        },
+        {
+          "id": "рождение-mac-os-x-мощь-unix-и-вытесняющая-многозадачность",
+          "text": "Рождение Mac OS X: Мощь UNIX и вытесняющая многозадачность"
+        },
+        {
+          "id": "стабильность-благодаря-вытесняющей-многозадачности",
+          "text": "Стабильность благодаря вытесняющей многозадачности"
+        },
+        {
+          "id": "наследие-nextstep-появление-api-cocoa",
+          "text": "Наследие NeXTSTEP: Появление API Cocoa"
+        },
+        {
+          "id": "магия-поддержавшая-архитектурную-эволюцию-rosetta",
+          "text": "Магия, поддержавшая архитектурную эволюцию: Rosetta"
+        },
+        {
+          "id": "rosetta-от-powerpc-к-intel",
+          "text": "Rosetta (от PowerPC к Intel)"
+        },
+        {
+          "id": "rosetta-2-от-intel-к-apple-silicon",
+          "text": "Rosetta 2 (от Intel к Apple Silicon)"
+        },
+        {
+          "id": "заключение",
+          "text": "Заключение"
+        }
+      ],
+      "paragraphs": [
+        "macOS, настольная операционная система Apple, любима сотнями миллионов пользователей по всему миру. Однако за нынешней утонченной macOS стоит один из самых драматичных и технически сложных переходов в истории операционных систем.",
+        "В этой статье мы подробно рассмотрим процесс грандиозного перехода от Classic Mac OS (до Mac OS 9) к Mac OS X (нынешней macOS) и основные технологии, которые его поддерживали.",
+        "Mac OS, появившаяся вместе с первым Macintosh в 1984 году, предлагала инновационный для своего времени графический интерфейс пользователя (GUI). Однако с течением времени начали проявляться ограничения ее базовой архитектуры.",
+        "Главной причиной этого была кооперативная многозадачность (Cooperative Multitasking) и отсутствие защиты памяти.",
+        "При кооперативной многозадачности не операционная система, а само приложение управляет контролем над процессором. Пока Приложение А выполняет обработку, Приложение Б должно ждать, пока А добровольно не “вернет процессор ОС (Yield)”.",
+        "Если Приложение А дает сбой или попадает в бесконечный цикл и не возвращает управление, зависает вся ОС целиком. Пользователи были вынуждены делать принудительную перезагрузку, а несохраненные данные терялись. Для пользователей Mac того времени системные ошибки с символом бомбы были обычным делом.",
+        "При разработке ОС следующего поколения, после неудачи собственного проекта (Copland), Apple приняла историческое решение купить компанию NeXT, основанную Стивом Джобсом. Именно «NeXTSTEP», флагманский продукт NeXT, стал основой Mac OS X.",
+        "Mac OS X (позже macOS) включала в себя UNIX-подобную операционную систему под названием Darwin (основанную на FreeBSD и микроядре Mach). Это в корне решило слабые места Classic Mac OS.",
+        "Одним из самых больших преимуществ, которые принесла OS X, стала вытесняющая многозадачность (Preemptive Multitasking).",
+        "При вытесняющей многозадачности ядро ОС обладает абсолютными полномочиями и выделяет процессорное время каждому приложению в миллисекундах. Даже если приложение зависает, ядро может принудительно забрать контроль над процессором и передать его другому приложению.",
+        "Кроме того, благодаря внедрению защиты памяти (Memory Protection), каждое приложение получило собственное независимое пространство памяти. Сбой одного приложения больше не затрагивал другие приложения или всю ОС.",
+        "Переход на Mac OS X стал значительным сдвигом парадигмы и для разработчиков. Apple предложила разработчикам два основных варианта API для создания приложений под новую ОС. Это Carbon и Cocoa.",
+        "Cocoa унаследовала фреймворки времен NeXTSTEP (Foundation и AppKit) в их первозданном виде. Тот факт, что многие классы, используемые сегодня в разработке для macOS, имеют префикс NS (сокращение от NeXTSTEP), является отголоском этого (например, NSString, NSArray). В конечном итоге Apple объявила Carbon устаревшим, сделав Cocoa (и впоследствии SwiftUI) центром разработки для macOS.",
+        "Особого внимания в истории macOS заслуживает не только архитектура программного обеспечения, но и тот факт, что она неоднократно и успешно проходила через переходы архитектуры аппаратного обеспечения (CPU).",
+        "Бесшовность этих переходов была обеспечена технологией динамической двоичной трансляции под названием Rosetta.",
+        "В 2006 году Apple перевела процессоры Mac с PowerPC на Intel. В это время был выпущен первый эмулятор «Rosetta», позволявший запускать существующие приложения для PowerPC на Intel Mac без изменений. Поскольку ОС переводила инструкции в фоновом режиме в реальном времени, пользователи могли работать с приложениями, даже не задумываясь о том, для какой архитектуры они предназначены.",
+        "Появившаяся при переходе на Apple Silicon (чип M1) в 2020 году, «Rosetta 2» была еще более продвинутой. В дополнение к трансляции в реальном времени во время выполнения (JIT-компиляция), ей удалось минимизировать потерю производительности за счет предварительной компиляции (AOT-компиляции) во время установки (или при первом запуске). Благодаря этому даже тяжелые приложения, написанные для x86, работают с поразительной скоростью на нативных процессорах ARM.",
+        "Переход от Classic Mac OS к Mac OS X был не просто обновлением программного обеспечения; это событие можно назвать самой успешной «пересадкой сердца» в истории компьютерных наук.",
+        "Эволюция от кооперативной многозадачности и частых сбоев к надежной стабильности на базе UNIX и утонченному графическому интерфейсу. А также среда разработки, унаследовавшая наследие NeXTSTEP, и многократные переходы архитектуры процессоров. Потрясающая производительность и пользовательский опыт нынешней macOS построены на этих грандиозных технологических вызовах и эволюции."
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Разработка программного обеспечения",
+          "path": "/ru/categories/software-development/"
+        },
+        {
+          "text": "Операционные системы",
+          "path": "/ru/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "Carbon: Адаптация и портирование API Classic Mac OS для OS X на базе языка C. Это был мост для относительно легкой адаптации существующих приложений (таких как Photoshop или Microsoft Office) к OS X.",
+        "Cocoa: Чистый объектно-ориентированный API на базе Objective-C, унаследованный от NeXTSTEP.",
+        "Motorola 68k → PowerPC (1990-е)",
+        "PowerPC → Intel x86 (2006 год)",
+        "Intel x86 → Apple Silicon (ARM) (2020 год)"
+      ],
+      "headings": [
+        {
+          "id": "что-такое-macos-грандиозный-переход-от-classic-mac-os-к-mac-os-x",
+          "text": "Что такое macOS: Грандиозный переход от Classic Mac OS к Mac OS X"
+        },
+        {
+          "id": "ограничения-classic-mac-os-кооперативная-многозадачность",
+          "text": "Ограничения Classic Mac OS: Кооперативная многозадачность"
+        },
+        {
+          "id": "что-такое-кооперативная-многозадачность",
+          "text": "Что такое кооперативная многозадачность?"
+        },
+        {
+          "id": "рождение-mac-os-x-мощь-unix-и-вытесняющая-многозадачность",
+          "text": "Рождение Mac OS X: Мощь UNIX и вытесняющая многозадачность"
+        },
+        {
+          "id": "стабильность-благодаря-вытесняющей-многозадачности",
+          "text": "Стабильность благодаря вытесняющей многозадачности"
+        },
+        {
+          "id": "наследие-nextstep-появление-api-cocoa",
+          "text": "Наследие NeXTSTEP: Появление API Cocoa"
+        },
+        {
+          "id": "магия-поддержавшая-архитектурную-эволюцию-rosetta",
+          "text": "Магия, поддержавшая архитектурную эволюцию: Rosetta"
+        },
+        {
+          "id": "rosetta-от-powerpc-к-intel",
+          "text": "Rosetta (от PowerPC к Intel)"
+        },
+        {
+          "id": "rosetta-2-от-intel-к-apple-silicon",
+          "text": "Rosetta 2 (от Intel к Apple Silicon)"
+        },
+        {
+          "id": "заключение",
+          "text": "Заключение"
+        }
+      ],
+      "paragraphs": [
+        "macOS, настольная операционная система Apple, любима сотнями миллионов пользователей по всему миру. Однако за нынешней утонченной macOS стоит один из самых драматичных и технически сложных переходов в истории операционных систем.",
+        "В этой статье мы подробно рассмотрим процесс грандиозного перехода от Classic Mac OS (до Mac OS 9) к Mac OS X (нынешней macOS) и основные технологии, которые его поддерживали.",
+        "Mac OS, появившаяся вместе с первым Macintosh в 1984 году, предлагала инновационный для своего времени графический интерфейс пользователя (GUI). Однако с течением времени начали проявляться ограничения ее базовой архитектуры.",
+        "Главной причиной этого была кооперативная многозадачность (Cooperative Multitasking) и отсутствие защиты памяти.",
+        "При кооперативной многозадачности не операционная система, а само приложение управляет контролем над процессором. Пока Приложение А выполняет обработку, Приложение Б должно ждать, пока А добровольно не “вернет процессор ОС (Yield)”.",
+        "Если Приложение А дает сбой или попадает в бесконечный цикл и не возвращает управление, зависает вся ОС целиком. Пользователи были вынуждены делать принудительную перезагрузку, а несохраненные данные терялись. Для пользователей Mac того времени системные ошибки с символом бомбы были обычным делом.",
+        "При разработке ОС следующего поколения, после неудачи собственного проекта (Copland), Apple приняла историческое решение купить компанию NeXT, основанную Стивом Джобсом. Именно «NeXTSTEP», флагманский продукт NeXT, стал основой Mac OS X.",
+        "Mac OS X (позже macOS) включала в себя UNIX-подобную операционную систему под названием Darwin (основанную на FreeBSD и микроядре Mach). Это в корне решило слабые места Classic Mac OS.",
+        "Одним из самых больших преимуществ, которые принесла OS X, стала вытесняющая многозадачность (Preemptive Multitasking).",
+        "При вытесняющей многозадачности ядро ОС обладает абсолютными полномочиями и выделяет процессорное время каждому приложению в миллисекундах. Даже если приложение зависает, ядро может принудительно забрать контроль над процессором и передать его другому приложению.",
+        "Кроме того, благодаря внедрению защиты памяти (Memory Protection), каждое приложение получило собственное независимое пространство памяти. Сбой одного приложения больше не затрагивал другие приложения или всю ОС.",
+        "Переход на Mac OS X стал значительным сдвигом парадигмы и для разработчиков. Apple предложила разработчикам два основных варианта API для создания приложений под новую ОС. Это Carbon и Cocoa.",
+        "Cocoa унаследовала фреймворки времен NeXTSTEP (Foundation и AppKit) в их первозданном виде. Тот факт, что многие классы, используемые сегодня в разработке для macOS, имеют префикс NS (сокращение от NeXTSTEP), является отголоском этого (например, NSString, NSArray). В конечном итоге Apple объявила Carbon устаревшим, сделав Cocoa (и впоследствии SwiftUI) центром разработки для macOS.",
+        "Особого внимания в истории macOS заслуживает не только архитектура программного обеспечения, но и тот факт, что она неоднократно и успешно проходила через переходы архитектуры аппаратного обеспечения (CPU).",
+        "Бесшовность этих переходов была обеспечена технологией динамической двоичной трансляции под названием Rosetta.",
+        "В 2006 году Apple перевела процессоры Mac с PowerPC на Intel. В это время был выпущен первый эмулятор «Rosetta», позволявший запускать существующие приложения для PowerPC на Intel Mac без изменений. Поскольку ОС переводила инструкции в фоновом режиме в реальном времени, пользователи могли работать с приложениями, даже не задумываясь о том, для какой архитектуры они предназначены.",
+        "Появившаяся при переходе на Apple Silicon (чип M1) в 2020 году, «Rosetta 2» была еще более продвинутой. В дополнение к трансляции в реальном времени во время выполнения (JIT-компиляция), ей удалось минимизировать потерю производительности за счет предварительной компиляции (AOT-компиляции) во время установки (или при первом запуске). Благодаря этому даже тяжелые приложения, написанные для x86, работают с поразительной скоростью на нативных процессорах ARM.",
+        "Переход от Classic Mac OS к Mac OS X был не просто обновлением программного обеспечения; это событие можно назвать самой успешной «пересадкой сердца» в истории компьютерных наук.",
+        "Эволюция от кооперативной многозадачности и частых сбоев к надежной стабильности на базе UNIX и утонченному графическому интерфейсу. А также среда разработки, унаследовавшая наследие NeXTSTEP, и многократные переходы архитектуры процессоров. Потрясающая производительность и пользовательский опыт нынешней macOS построены на этих грандиозных технологических вызовах и эволюции."
+      ],
+      "code": [],
+      "images": [
+        {
+          "src": "/p/macos-architecture-history/eyecatch_hu6952539806844193752.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 0,
+      "mathErrors": 0,
+      "diagrams": 2,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Разработка программного обеспечения",
+          "path": "/ru/categories/software-development/"
+        },
+        {
+          "text": "Операционные системы",
+          "path": "/ru/categories/os/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "Стивом Джобсом",
+          "path": "/ru/p/biography-steve-jobs/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "объектно-ориентированный",
+          "path": "/ru/p/object-oriented-programming-oop-solid-principles/",
+          "host": "127.0.0.1"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  }
+]

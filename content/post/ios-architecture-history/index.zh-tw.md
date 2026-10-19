@@ -10,9 +10,9 @@ date: 2026-10-01T22:22:58+09:00
 
 ## 前言：NeXT 的系譜與 iOS 的誕生
 
-Apple 的行動作業系統「iOS」是如今驅動全球數十億台裝置的強大作業系統。然而，其底層架構可以追溯至史蒂夫·賈伯斯（Steve Jobs）離開 Apple 期間所創立的 NeXT 公司的「NeXTSTEP」。
+Apple 的行動作業系統「iOS」是如今驅動全球數十億台裝置的強大作業系統。然而，其底層架構可以追溯至[史蒂夫·賈伯斯](/zh-tw/p/biography-steve-jobs/)（Steve Jobs）離開 Apple 期間所創立的 NeXT 公司的「NeXTSTEP」。
 
-iOS（早期稱為 iPhone OS）並非僅僅作為一款針對手機的輕量級作業系統而誕生，而是作為 Mac OS X（現為 macOS）的子集（subset）應運而生。也就是說，這是一項將桌面級強大的 Unix 基礎作業系統，放入手掌大小裝置中的野心勃勃的專案。
+iOS（早期稱為 iPhone OS）並非僅僅作為一款針對手機的輕量級作業系統而誕生，而是作為 Mac OS X（現為 [macOS](/zh-tw/p/macos-architecture-history/)）的子集（subset）應運而生。也就是說，這是一項將桌面級強大的 Unix 基礎作業系統，放入手掌大小裝置中的野心勃勃的專案。
 
 在本文中，我們將從最底層的核心（Kernel）到最頂層的 UI 框架，詳細解剖這套繼承自 NeXTSTEP 的 iOS 深奧架構。
 
@@ -52,7 +52,7 @@ Core Services Layer 提供了所有應用程式都需要的基礎系統服務。
 主要的框架包含以下幾種：
 
 *   **Foundation / Core Foundation**：從字串（NSString / String）、陣列（NSArray / Array）、字典（NSDictionary / Dictionary）等基本資料型態，到執行緒管理、網路通訊（URLSession）、檔案管理等，為 Objective-C 與 Swift 提供了基礎功能。
-*   **Core Data**：用來管理應用程式的資料模型，並將 SQLite 等本機資料庫的持久化操作予以抽象化的物件圖框架（Object graph framework）。
+*   **Core Data**：用來管理應用程式的資料模型，並將 [SQLite](/zh-tw/p/sqlite-internal-architecture/) 等本機資料庫的持久化操作予以抽象化的物件圖框架（Object graph framework）。
 *   **CloudKit**：提供後端服務存取，讓裝置之間能夠透過 iCloud 進行資料同步。
 *   **Grand Central Dispatch (GCD)**：為了在多核心處理器上高效執行並行處理（Concurrency）而設計的 C 語言基礎 API。它將開發者從直接管理執行緒的複雜性中解放出來，只需將任務推入佇列（Queue），系統就會自動進行最佳的執行緒分配。
 

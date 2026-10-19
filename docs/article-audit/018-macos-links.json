@@ -1,6 +1,6 @@
 {
   "batch": "018-macos-links",
-  "status": "reviewed; dry-run passed; not applied",
+  "status": "validated; pending commit and push",
   "review": "All 13 full bodies read. Link Jobs biography and OOP fundamentals at ordinary body/list mentions. Same-language target introductions and scope reviewed. Avoid forced links from binary translation to generic compiler optimization or ARM/RISC-V comparison. Preserve all prose and two Mermaid diagrams.",
   "articles": [
     {

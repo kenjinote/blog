@@ -10,9 +10,9 @@ date: 2026-10-01T22:22:58+09:00
 
 ## Pengantar: Silsilah NeXT dan Kelahiran iOS
 
-"iOS", sistem operasi seluler Apple, adalah sistem operasi kuat yang menggerakkan miliaran perangkat di seluruh dunia saat ini. Namun, arsitektur yang mendasarinya dapat ditelusuri kembali ke "NeXTSTEP" milik NeXT, perusahaan yang didirikan oleh Steve Jobs selama masa ketidakhadirannya dari Apple.
+"iOS", sistem operasi seluler Apple, adalah sistem operasi kuat yang menggerakkan miliaran perangkat di seluruh dunia saat ini. Namun, arsitektur yang mendasarinya dapat ditelusuri kembali ke "NeXTSTEP" milik NeXT, perusahaan yang didirikan oleh [Steve Jobs](/id/p/biography-steve-jobs/) selama masa ketidakhadirannya dari Apple.
 
-iOS (awalnya disebut iPhone OS) lahir tidak sekadar sebagai OS ringan untuk ponsel, melainkan sebagai bagian (subset) dari Mac OS X (sekarang macOS). Dengan kata lain, ini adalah proyek ambisius untuk memuat OS berbasis Unix sekelas desktop yang tangguh ke dalam perangkat seukuran telapak tangan.
+iOS (awalnya disebut iPhone OS) lahir tidak sekadar sebagai OS ringan untuk ponsel, melainkan sebagai bagian (subset) dari Mac OS X (sekarang [macOS](/id/p/macos-architecture-history/)). Dengan kata lain, ini adalah proyek ambisius untuk memuat OS berbasis Unix sekelas desktop yang tangguh ke dalam perangkat seukuran telapak tangan.
 
 Dalam artikel ini, kita akan membedah secara mendetail arsitektur mendalam iOS yang diwarisi dari NeXTSTEP, mulai dari lapisan kernel terbawah hingga framework UI teratas.
 
@@ -52,7 +52,7 @@ Core Services Layer adalah lapisan yang menyediakan layanan sistem dasar yang di
 Framework utama pada lapisan ini meliputi:
 
 *   **Foundation / Core Foundation**: Menyediakan fungsionalitas dasar untuk Objective-C dan Swift, mulai dari tipe data dasar seperti string (NSString / String), array (NSArray / Array), dan kamus (NSDictionary / Dictionary), hingga manajemen thread, komunikasi jaringan (URLSession), dan manajemen file.
-*   **Core Data**: Framework object-graph yang mengelola model data aplikasi dan mengabstraksikan persistensi ke database lokal seperti SQLite.
+*   **Core Data**: Framework object-graph yang mengelola model data aplikasi dan mengabstraksikan persistensi ke database lokal seperti [SQLite](/id/p/sqlite-internal-architecture/).
 *   **CloudKit**: Menyediakan akses ke layanan backend untuk menyinkronkan data di seluruh perangkat melalui iCloud.
 *   **Grand Central Dispatch (GCD)**: API berbasis bahasa C untuk melakukan pemrosesan bersamaan (concurrent processing) secara efisien pada prosesor multi-core. Ini membebaskan pengembang dari kerumitan mengelola thread secara langsung; pengembang hanya perlu menempatkan tugas ke dalam antrean (queue), dan sistem akan mengalokasikan thread secara optimal.
 

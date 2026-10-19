@@ -59,7 +59,7 @@ Das 1993 erschienene Windows NT 3.1 wurde von Grund auf für Business-Profis, Se
 
 ### Hauptmerkmale des NT-Kernels
 
-1. **Vollständiger Speicherschutz:** Jeder Anwendung wird ein isolierter, virtueller Speicherbereich zugewiesen, der verhindert, dass andere Programme oder der OS-Kern (Kernel-Bereich) beschädigt werden.
+1. **Vollständiger Speicherschutz:** Jeder Anwendung wird ein isolierter, [virtueller Speicherbereich](/de/p/virtual-memory-paging-mmu-architecture/) zugewiesen, der verhindert, dass andere Programme oder der OS-Kern (Kernel-Bereich) beschädigt werden.
 2. **Präemptives Multitasking:** Der Scheduler des Betriebssystems teilt jedem Prozess strikt CPU-Zeit zu, sodass das Einfrieren einer Applikation nicht das gesamte System in den Abgrund reißt.
 3. **Hardware-Abstraktion (HAL):** Durch den Hardware Abstraction Layer wurden das eigentliche Betriebssystem und die Hardware getrennt, was die Portierung auf verschiedene CPU-Architekturen (x86, MIPS, Alpha, PowerPC, später ARM) vereinfachte.
 
@@ -72,7 +72,7 @@ Im Jahr 2001 wurden diese beiden Welten endlich vereint – das Resultat war **W
 
 ## Die Tiefen der Architektur: Win32 API und die Registry
 
-Zwei wesentliche Elemente zum Verständnis des modernen Windows sind die „Win32 API“ und die „Registry“.
+Zwei wesentliche Elemente zum Verständnis des modernen Windows sind die „Win32 API“ und die „[Registry](/de/p/windows-registry-safe-programmable-editing/)“.
 
 ### Win32 API: Die Kommunikation zwischen Anwendung und Betriebssystem
 Die Win32 API (Application Programming Interface) ist eine standardisierte Sammlung von Funktionen für Programme, die auf Windows laufen, um Betriebssystemfunktionen (wie das Zeichnen von Fenstern, das Lesen und Schreiben von Dateien, Netzwerkkommunikation usw.) nutzen zu können.

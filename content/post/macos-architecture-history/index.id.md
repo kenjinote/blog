@@ -39,7 +39,7 @@ Jika Aplikasi A crash atau jatuh ke dalam loop tak terbatas dan tidak mengembali
 
 ## Lahirnya Mac OS X: Kekuatan UNIX dan Multitasking Preemptive
 
-Dalam pengembangan OS generasi berikutnya, setelah kegagalan proyek internal (Copland), Apple membuat keputusan bersejarah untuk mengakuisisi NeXT, perusahaan yang didirikan oleh Steve Jobs. Produk andalan NeXT, 'NeXTSTEP', menjadi fondasi Mac OS X.
+Dalam pengembangan OS generasi berikutnya, setelah kegagalan proyek internal (Copland), Apple membuat keputusan bersejarah untuk mengakuisisi NeXT, perusahaan yang didirikan oleh [Steve Jobs](/id/p/biography-steve-jobs/). Produk andalan NeXT, 'NeXTSTEP', menjadi fondasi Mac OS X.
 
 Mac OS X (kemudian menjadi macOS) secara internal dilengkapi dengan sistem operasi berbasis UNIX yang disebut **Darwin** (berbasis FreeBSD dan mikrokernel Mach). Hal ini secara fundamental menyelesaikan kelemahan Classic Mac OS.
 
@@ -56,7 +56,7 @@ Selain itu, dengan pengenalan **Proteksi Memori (Memory Protection)**, setiap ap
 Transisi ke Mac OS X juga merupakan pergeseran paradigma yang besar bagi para pengembang. Apple menyediakan dua pilihan utama API bagi pengembang untuk membangun aplikasi pada OS baru: **Carbon** dan **Cocoa**.
 
 1. **Carbon**: Adaptasi dan porting API Classic Mac OS berbasis bahasa C untuk OS X. Ini adalah jembatan untuk membuat aplikasi yang ada (seperti Photoshop dan Microsoft Office) kompatibel dengan OS X dengan relatif mudah.
-2. **Cocoa**: API berorientasi objek murni berbasis Objective-C, diwarisi dari NeXTSTEP.
+2. **Cocoa**: API [berorientasi objek](/id/p/object-oriented-programming-oop-solid-principles/) murni berbasis Objective-C, diwarisi dari NeXTSTEP.
 
 Cocoa mewarisi framework dari era NeXTSTEP (Foundation dan AppKit) apa adanya. Banyak kelas yang digunakan dalam pengembangan macOS saat ini masih memiliki awalan `NS` (singkatan dari NeXTSTEP), yang merupakan peninggalan dari masa ini (contoh: `NSString`, `NSArray`). Pada akhirnya, Apple menghentikan dukungan (deprecated) Carbon dan menjadikan Cocoa (dan kemudian SwiftUI) sebagai pusat pengembangan macOS.
 

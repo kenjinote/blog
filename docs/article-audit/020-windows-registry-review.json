@@ -1,0 +1,17 @@
+{
+  "batch": "020-windows-registry-review",
+  "status": "Japanese full body reviewed; other 12 languages unread; not edited",
+  "articles": [
+    {
+      "path": "content/post/windows_registry/index.md",
+      "source_sha256": "3cfc69aeb30cf12f714e8229606d8c84434a0e7b20beb447c9138ec88e52c3f9",
+      "body_reviewed": true,
+      "findings": [
+        "Whole Japanese article read including code, math and three Mermaid diagrams. Heading self-link uses legacy URL; if unwrapped preserve heading ID.",
+        "Two links on ロック within ブロック incorrectly point to database locking: unwrap both. Adjacent B-Tree/B木 duplicate link and later repeated pointer, transaction and IaC links should be reviewed for reduction.",
+        "Candidate Windows NT history link is directly relevant; target already fully reviewed in batch 019. Retain windows/programming; administration taxonomy requires existing-definition check before decision.",
+        "Preserve all code and maths. Existing factual issues (DEFAULT profile explanation, automatic REG_EXPAND_SZ expansion, simplistic registry performance/failure model, HKCR drive assumptions) require separate editorial review, not source rewriting in this audit."
+      ]
+    }
+  ]
+}

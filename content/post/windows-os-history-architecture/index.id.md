@@ -59,7 +59,7 @@ Windows NT 3.1 yang dirilis pada tahun 1993 dirancang dari nol dengan menargetka
 
 ### Fitur Utama Kernel NT
 
-1. **Perlindungan Memori Penuh:** Setiap aplikasi dialokasikan ruang memori virtual independen, sehingga mereka tidak dapat merusak program lain atau bagian inti dari OS (ruang kernel).
+1. **Perlindungan Memori Penuh:** Setiap aplikasi dialokasikan ruang [memori virtual](/id/p/virtual-memory-paging-mmu-architecture/) independen, sehingga mereka tidak dapat merusak program lain atau bagian inti dari OS (ruang kernel).
 2. **Preemptive Multitasking:** Penjadwal OS secara ketat mengalokasikan waktu CPU ke setiap proses, sehingga ketika satu aplikasi hang, sistem secara keseluruhan tidak akan ikut mati.
 3. **Abstraksi Perangkat Keras (HAL):** Melalui Hardware Abstraction Layer, sistem operasi dipisahkan dari perangkat keras, membuatnya lebih mudah untuk di-porting ke berbagai arsitektur CPU (x86, MIPS, Alpha, PowerPC, dan kemudian ARM).
 
@@ -72,7 +72,7 @@ Di luarnya, ia memiliki antarmuka yang ramah bagi konsumen, namun di dalamnya te
 
 ## Kedalaman Arsitektur: Win32 API dan Registry
 
-Dua elemen yang sangat penting untuk memahami Windows modern adalah "Win32 API" dan "Registry".
+Dua elemen yang sangat penting untuk memahami Windows modern adalah "Win32 API" dan "[Registry](/id/p/windows-registry-safe-programmable-editing/)".
 
 ### Win32 API: Komunikasi antara Aplikasi dan OS
 Win32 API (Application Programming Interface) adalah kumpulan fungsi standar bagi program yang berjalan di Windows untuk menggunakan fitur sistem operasi (seperti menggambar jendela, membaca/menulis file, komunikasi jaringan, dll.).
