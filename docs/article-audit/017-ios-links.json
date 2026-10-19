@@ -1,6 +1,6 @@
 {
   "batch": "017-ios-links",
-  "status": "validated; pending commit and push",
+  "status": "completed; validated and pushed",
   "review": "All 13 full bodies read; target introductions and scope reviewed in all languages. Link Steve Jobs biography, macOS architecture/history and SQLite storage explainer at ordinary body mentions. Preserve prose and two Mermaid diagrams. No existing links to unwrap.",
   "articles": [
     {
@@ -289,5 +289,6 @@
       ],
       "category_decision": "Retain software-development/os; os localized by batch 015. Subject is operating-system architecture."
     }
-  ]
+  ],
+  "commit": "fcb56a0e9e3bda72b93c3acbdc54013a6599a3cb"
 }

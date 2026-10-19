@@ -1,6 +1,6 @@
 {
   "batch": "018-macos-links",
-  "status": "validated; pending commit and push",
+  "status": "completed; validated and pushed",
   "review": "All 13 full bodies read. Link Jobs biography and OOP fundamentals at ordinary body/list mentions. Same-language target introductions and scope reviewed. Avoid forced links from binary translation to generic compiler optimization or ARM/RISC-V comparison. Preserve all prose and two Mermaid diagrams.",
   "articles": [
     {
@@ -224,5 +224,6 @@
       ],
       "category_decision": "Retain software-development/os. Localized os definitions added in batch 015; topic is operating-system history and architecture."
     }
-  ]
+  ],
+  "commit": "fcb56a0e9e3bda72b93c3acbdc54013a6599a3cb"
 }

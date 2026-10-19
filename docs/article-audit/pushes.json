@@ -122,5 +122,19 @@
     "hugo": "passed, exit 0, 647754 ms",
     "browser": "49 before/after pages passed; 65 category headers and 13 archives verified; Korean quote wrapping preserves exact rendered text.",
     "next": "017 iOS, 018 macOS, 019 Windows: all 39 full bodies and targets reviewed; 91 link additions planned, dry-run passed; not applied."
+  },
+  {
+    "batch": "017-ios + 018-macos + 019-windows",
+    "commit": "fcb56a0e9e3bda72b93c3acbdc54013a6599a3cb",
+    "remote": "origin/main",
+    "verified_remote_sha": "fcb56a0e9e3bda72b93c3acbdc54013a6599a3cb",
+    "date_jst": "2026-10-19",
+    "articles": 39,
+    "modified_articles": 39,
+    "added_links": 91,
+    "reclassified_articles": 0,
+    "hugo": "passed, exit 0, 636007 ms",
+    "browser": "39 before/after pages passed, same-language links HTTP200, protected contents, headings/TOC, localized categories and mobile verified",
+    "next": "020 Windows registry Japanese full body reviewed; 12 remaining translations unread; no edits"
   }
 ]

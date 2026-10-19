@@ -1,6 +1,6 @@
 {
   "batch": "019-windows-links",
-  "status": "validated; pending commit and push",
+  "status": "completed; validated and pushed",
   "review": "All 13 full bodies and both target introductions reviewed. Link virtual memory in NT memory protection list and registry in ordinary introduction paragraph. Do not link Windows scheduling to Linux-specific CFS. Preserve category IDs, all prose, DOS code and Mermaid. Korean paired quotes included in registry link to preserve typographer output.",
   "articles": [
     {
@@ -224,5 +224,6 @@
       ],
       "category_decision": "Retain software-development/os; operating-system history and architecture, os localized in batch 015."
     }
-  ]
+  ],
+  "commit": "fcb56a0e9e3bda72b93c3acbdc54013a6599a3cb"
 }
