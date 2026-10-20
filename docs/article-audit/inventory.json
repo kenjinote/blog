@@ -243526,7 +243526,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -243539,7 +243539,8 @@
         "browser": "3 before/after pages passed including links, headings/TOC, prose, code, math, diagrams, images, translated categories, language switch, target HTTP200 and mobile; English screenshot visually inspected"
       },
       "batch": "020-windows-registry-ja-en-de",
-      "push_status": "ready to commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "8f1bdd779a080d0256cabecd1e4c5bf9ee0f9f33"
     },
     {
       "path": "content/post/windows_registry/index.en.md",
@@ -243555,7 +243556,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -243568,7 +243569,8 @@
         "browser": "3 before/after pages passed including links, headings/TOC, prose, code, math, diagrams, images, translated categories, language switch, target HTTP200 and mobile; English screenshot visually inspected"
       },
       "batch": "020-windows-registry-ja-en-de",
-      "push_status": "ready to commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "8f1bdd779a080d0256cabecd1e4c5bf9ee0f9f33"
     },
     {
       "path": "content/post/windows_registry/index.es.md",
@@ -243694,7 +243696,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -243707,7 +243709,8 @@
         "browser": "3 before/after pages passed including links, headings/TOC, prose, code, math, diagrams, images, translated categories, language switch, target HTTP200 and mobile; English screenshot visually inspected"
       },
       "batch": "020-windows-registry-ja-en-de",
-      "push_status": "ready to commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "8f1bdd779a080d0256cabecd1e4c5bf9ee0f9f33"
     },
     {
       "path": "content/post/windows_registry/index.pt.md",

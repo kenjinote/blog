@@ -136,5 +136,21 @@
     "hugo": "passed, exit 0, 636007 ms",
     "browser": "39 before/after pages passed, same-language links HTTP200, protected contents, headings/TOC, localized categories and mobile verified",
     "next": "020 Windows registry Japanese full body reviewed; 12 remaining translations unread; no edits"
+  },
+  {
+    "batch": "020-windows-registry-ja-en-de",
+    "commit": "8f1bdd779a080d0256cabecd1e4c5bf9ee0f9f33",
+    "remote": "origin/main",
+    "verified_remote_sha": "8f1bdd779a080d0256cabecd1e4c5bf9ee0f9f33",
+    "date_jst": "2026-10-20",
+    "articles": 3,
+    "modified_articles": 3,
+    "added_links": 3,
+    "unwrapped_links": 14,
+    "repaired_urls": 1,
+    "reclassified_articles": 0,
+    "hugo": "passed, exit 0, 592246 ms",
+    "browser": "3 before/after pages passed; English mobile screenshot visually inspected",
+    "next": "021/022/023 plans validated but not applied; registry ar/hi unread"
   }
 ]

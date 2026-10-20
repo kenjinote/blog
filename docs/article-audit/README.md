@@ -103,9 +103,9 @@ iOS・macOS・Windowsの39ページに91リンク追加。カテゴリーID・�
 
 ## 現在の再開位置（020〜023、2026-10-20）
 
-公開済み195ページ、本文確認済み206ページ。Windowsレジストリはja/en/de/fr/es/pt/id/ko/zh-cn/zh-tw/ruを全文確認済み、ar/hiは未読。全監査は未完了。対象一覧はinventory.jsonを継続使用し、開始時点の範囲を拡大しない。
+公開済み198ページ、本文確認済み206ページ。Windowsレジストリはja/en/de/fr/es/pt/id/ko/zh-cn/zh-tw/ruを全文確認済み、ar/hiは未読。全監査は未完了。対象一覧はinventory.jsonを継続使用し、開始時点の範囲を拡大しない。
 
-020の日本語・英語・ドイツ語は適用済み、未push。Windows NTリンク3件追加、誤リンク・重複リンク12件と壊れた見出し自己リンク2件を解除し、見出しIDを保持。日本語の既存ソート404は、導入確認済みのsorting-algorithms-visualized-bubble-quick-mergeへURLのみ修復。カテゴリwindows/administration/programmingを維持。
+020の日本語・英語・ドイツ語は適用・検証・push済み。Windows NTリンク3件追加、誤リンク・重複リンク12件と壊れた見出し自己リンク2件を解除し、見出しIDを保持。日本語の既存ソート404は、導入確認済みのsorting-algorithms-visualized-bubble-quick-mergeへURLのみ修復。カテゴリwindows/administration/programmingを維持。
 
 保護スクリプトはインラインXMLコード例とコード中のドル記号を実HTML・本文数式と区別し、コード自体は不変性比較で保護する。35テスト成功。実効markupの事前比較で3ページのHTMLはリンク以外一致。020-independent-source-proof.jsonで、変更前バイト列へのレビュー済み操作だけから現在の3ページを完全再現できること、Frontmatter・コード・数式・Mermaidの不変性、SHA一致を確認済み。
 
@@ -118,3 +118,5 @@ iOS・macOS・Windowsの39ページに91リンク追加。カテゴリーID・�
 次は020最終ビルド・表示検証・pushを完了し、その後021以降の変更前表示を保存して順に適用する。レジストリ残りar/hiの全文確認も続ける。既存の技術的主張や翻訳品質の問題は別の編集課題として記録し、本リンク監査では本文を改変しない。
 
 020は全検証成功、commit/push準備完了。検証ログと表示比較結果を保存済み。
+
+020を8f1bdd779a080d0256cabecd1e4c5bf9ee0f9f33でorigin/mainへ通常pushし、リモートSHA一致を確認。累計198ページ完了（変更不要33を含む）。021以降は未適用であり、次回は変更前表示保存から再開する。
